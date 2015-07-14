@@ -7,7 +7,7 @@ control: Accordion
 documentation: ug
 ---
 
-## Enabling RTL Support
+# Enabling RTL Support
 
 The following steps explains you in enabling the right-to-left property for an Accordion.
 
@@ -69,7 +69,7 @@ Output for accordion when “EnableRTL” is set to “true” is as follows,
 
 
 
-{ ![](Enabling-RTL-Support_images/Enabling-RTL-Support_img1.png) | markdownify }
+ ![](Enabling-RTL-Support_images/Enabling-RTL-Support_img1.png) 
 {:.image }
 
 

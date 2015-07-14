@@ -7,9 +7,9 @@ control: AutoComplete
 documentation: ug
 ---
 
-## Integration
+# Integration
 
-### AngularJS
+## AngularJS
 
 AutoComplete control is availed with two types of angular support namely, 
 
@@ -154,11 +154,11 @@ In the Script section, define the data to be bid and by using angular support, m
 
 The following screenshot is the output of AutoComplete control with two way angular binding.
 
-{ ![](Integration_images/Integration_img1.png) | markdownify }
+![](Integration_images/Integration_img1.png)
 {:.image }
 
 
-### KnockoutJs
+## KnockoutJs
 
 Knockout support allows you to bind the html elements against any of the available data models.
 
@@ -353,7 +353,7 @@ In the script section, add the code to bind observable values by using Knockout 
 
 The following screenshot is the result of the above code examples.
 
-{ ![](Integration_images/Integration_img2.png) | markdownify }
+![](Integration_images/Integration_img2.png) 
 {:.image }
 
 

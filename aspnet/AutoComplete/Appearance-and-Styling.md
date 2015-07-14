@@ -7,13 +7,13 @@ control: AutoComplete
 documentation: ug
 ---
 
-## Appearance and Styling
+# Appearance and Styling
 
-### Adjusting AutoComplete size
+## Adjusting AutoComplete size
 
 AutoComplete control allows you to set the height and width of the textbox element in AutoComplete. The Height and Width property takes pixel values, to set the dimension accordingly.
 
-#### Define height and width for autocomplete textbox
+### Define height and width for autocomplete textbox
 
 In the design page define the AutoComplete control and configure its dimensions by using Height and Width properties.
 
@@ -33,15 +33,15 @@ In the design page define the AutoComplete control and configure its dimensions 
 
 The following image is the output for AutoComplete textbox with customized dimensions.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 {:.image }
 
 
-### Rounded corner
+## Rounded corner
 
 By enabling the ShowRoundedCorner property, you can customize the shape of the AutoComplete control, from a regular rectangular shape to a rounded rectangle shape that is set to False by default.
 
-#### Enabling Rounded corner property
+### Enabling Rounded corner property
 
 In the design page, define the AutoComplete control and configure the ShowRoundedCornerproperty for it
 
@@ -59,15 +59,15 @@ In the design page, define the AutoComplete control and configure the ShowRounde
 
 The following screenshot is the output for AutoComplete when ShowRoundedCorner is set to true.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 {:.image }
 
 
-### Watermark text
+## Watermark text
 
 Watermark text property provides with an option to display a faded text in the AutoComplete textbox when the textbox is empty.
 
-#### Defining Watermark text 
+### Defining Watermark text 
 
 In the design page, define the AutoComplete control and set a text value for WatermarkTextproperty
 
@@ -87,15 +87,15 @@ In the design page, define the AutoComplete control and set a text value for Wat
 
 The following screenshot is the output for AutoComplete when WatermarkText is defined.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) | markdownify 
 {:.image }
 
 
-### Adjusting Suggestion list size	
+## Adjusting Suggestion list size	
 
 AutoComplete control provides you with a property to define the dimensions of the popup panel that holds the suggestions list items. The PopupHeight and PopupWidth properties, allow you to set the maximum height and width of the popup element, for use when the content exceeds the default dimensions.
 
-#### Configure dimensions of PopUp panel
+### Configure dimensions of PopUp panel
 
 In the design page, define the AutoComplete control and set the value for PopupHeightand PopupWidthproperty
 
@@ -111,15 +111,15 @@ In the design page, define the AutoComplete control and set the value for PopupH
 
 The following screenshot is the output for AutoComplete, after configuring the height and width of the popup panel.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 {:.image }
 
 
-### PopUp Time Delay
+## PopUp Time Delay
 
 AutoComplete control allows you to set the time delay to fetch the list items. The value of DelaySuggestionTimeout is set in milliseconds, so that the data search time can be configured. This enhances the turnaround time to populate the list items.
 
-#### Configure dimensions of PopUp panel
+### Configure dimensions of PopUp panel
 
 In the design page, define the AutoComplete control and set the value for DelaySuggestionTimeout property.
 
@@ -135,7 +135,7 @@ In the design page, define the AutoComplete control and set the value for DelayS
 
 The following image is the output for AutoComplete, this takes 1000ms to display the popup panel list items.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png) 
 {:.image }
 
 
@@ -143,7 +143,7 @@ The following image is the output for AutoComplete, this takes 1000ms to display
 
 
 
-### Theme
+## Theme
 
 AutoComplete control’s style and appearance can be controlled based on CSS classes. In order to apply styles to the AutoComplete control, refer to 2 files namely, ej.widgets.core.min.css and ej.theme.min.css. When you refer ej.widgets.all.min.css file, it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project, as ej.widgets.all.min.css is the combination of these two. 
 
@@ -162,12 +162,12 @@ By default, there are 13 theme support available for AutoComplete control, namel
 * gradient-saffron
 * gradient-saffron-dark
 * bootstrap
-### CSS Class
 
+## CSS Class
 
 CSS class can be used to customize the AutoComplete control’s appearance. Define a CSS class, as per requirement and assign the class name to CssClass property.
 
-#### Configure AutoComplete textbox using CSS class
+### Configure AutoComplete textbox using CSS class
 
 Define CSS class to customize the AutoComplete control.
 
@@ -231,7 +231,7 @@ In the design page, define the AutoComplete control and set the value for CssCla
 
 The following screenshot is the output of an AutoComplete textbox configured based on CSS class.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
 {:.image }
 
 

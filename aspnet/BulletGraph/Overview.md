@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-BulletGraphs are easy to interpret and also it conveys much more information to the user by visualizing the data in a small amount of space. It is generally used to compare a primary measure to one or more other measures in the context of qualitative ranges of performance. Occasionally, the BulletGraphsare also used to compare the same measure across multiple categories.
+BulletGraphs are easy to interpret and also it conveys much more information to the user by visualizing the data in a small amount of space. It is generally used to compare a primary measure to one or more other measures in the context of qualitative ranges of performance. Occasionally, the BulletGraphs are also used to compare the same measure across multiple categories.
 
 Key Features
 

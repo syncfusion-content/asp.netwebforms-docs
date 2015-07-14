@@ -7,11 +7,11 @@ control: AutoComplete
 documentation: ug
 ---
 
-## State Persistence
+# State Persistence
 
 AutoComplete control can store the model value in the browser’s cookies. Every time after initial rendering, the control gets the model from the cookie only. By using EnablePersistence property, you can store the model value in cookies. So when any changes are made dynamically, the values are updated in the cookie. On refreshing the page, the previous state of the AutoComplete control is maintained in the cookie and the control is rendered from it.
 
-### Configure state persistence of AutoComplete	
+## Configure state persistence of AutoComplete	
 
 The following steps explain how to enable state maintenance for AutoComplete.
 
@@ -31,15 +31,15 @@ In the design page, add an AutoComplete element from ToolBox and set EnablePersi
 
 The following screenshot is the output for AutoComplete when EnablePersistence is set to True.
 
-{ ![](State-Persistence_images/State-Persistence_img1.png) | markdownify }
+![](State-Persistence_images/State-Persistence_img1.png)
 {:.image }
 
 
-### Templates
+## Templates
 
 You can provide a template for customizing the appearance of the AutoComplete textbox suggestions. This is achieved by assigning a string template to the Template property.
 
-Configuring Templates
+### Configuring Templates
 
 The following steps explain how to define a template to display a text and image for an AutoComplete textbox.
 
@@ -307,7 +307,7 @@ Configure the template structure for AutoComplete control by including a &lt;div
 
 The following image is the output for AutoComplete control with template support.
 
-{ ![](State-Persistence_images/State-Persistence_img2.png) | markdownify }
+![](State-Persistence_images/State-Persistence_img2.png)
 {:.image }
 
 

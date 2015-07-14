@@ -7,7 +7,7 @@ control: AutoComplete
 documentation: ug
 ---
 
-## MultiSelection modes
+# MultiSelection modes
 
 AutoComplete control allows you to select multiple values from the suggestions list by using the MultiSelectMode property. Multiple values can be selected when MultiSelectMode value is set to VisualMode or Delimiter. 
 
@@ -15,7 +15,7 @@ Delimiter mode separates multiple items by using a separator character defined. 
 
 Visual mode selects multiple items by enclosing the item in a rounded rectangle with a close icon to remove item from the selection.
 
-### Configuring MultiSelection Mode
+## Configuring MultiSelection Mode
 
 The following steps explain the configuration of the MultiSelectMode for an AutoComplete textbox.
 
@@ -75,15 +75,15 @@ MultiSelectMode="None"/>
 
 The following screenshot is the output for AutoComplete control with configured multiple selection.
 
-{ ![](MultiSelection-modes_images/MultiSelection-modes_img1.png) | markdownify }
+![](MultiSelection-modes_images/MultiSelection-modes_img1.png)
 {:.image }
 
 
-### Grouping
+## Grouping
 
 AutoComplete control provides grouping support for the suggestions list based on the category specified in the dataSource. By default AllowGrouping is set to False. To enable grouping for your AutoComplete control, set the value to True.
 
-Configuring Grouping for AutoComplete
+### Configuring Grouping for AutoComplete
 
 The following steps explain how to configure grouping for an AutoComplete textbox by using ObjectDataSource.
 
@@ -193,19 +193,19 @@ cars.Add(new ObjectData { ID = 13, Text = "Volvo P1800", Category = "Volvo" });
 
 In the Design page, add an AutoComplete element from ToolBox and assign values for DataTextField, DataUniqueKeyField and DataCategoryField. Category field allows you to configure grouping. Set the AllowGrouping property to true
 
-[ASPX]
+{% highlight html %}
 
 &lt;ej:Autocomplete ID="AutoComplete" runat="server" DataSourceID="ObjectDataSource1" DataTextField="Text" DataUniqueKeyField="ID" DataCategoryField="Category" AllowGrouping="true" FilterType="Contains" /&gt;
 
         &lt;asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetGroupingData" TypeName="ASP_896.ObjectData"&gt;&lt;/asp:ObjectDataSource&gt;
 
 
-
+{% endhighlight %}
 
 
 The following screenshot is the output for AutoComplete control that provides grouping.
 
-{ ![](MultiSelection-modes_images/MultiSelection-modes_img2.png) | markdownify }
+![](MultiSelection-modes_images/MultiSelection-modes_img2.png)
 {:.image }
 
 

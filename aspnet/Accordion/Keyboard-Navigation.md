@@ -7,7 +7,7 @@ control: Accordion
 documentation: ug
 ---
 
-## Keyboard Navigation
+# Keyboard Navigation
 
 You can use Keyboard shortcut keys as an alternative to the mouse while using Accordion control by using AllowKeyboardNavigation property. You have to focus the control to enable the keyboard navigation. Accordion control allows you to perform all kind of actions by using keyboard shortcuts.
 

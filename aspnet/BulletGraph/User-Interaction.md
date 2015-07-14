@@ -9,10 +9,10 @@ documentation: ug
 
 ## User Interaction
 
-Animation
+## Animation
 
 Bullet Graph supports animation that makes the performance measure bar to animate when rendering the Bullet Graph. Animation is enabled or disabled using EnableAnimation property. By default, Animation is enabled in Bullet Graph. 
-
+{% highlight html %}
 [ASP.NET]
 
 
@@ -22,11 +22,11 @@ Bullet Graph supports animation that makes the performance measure bar to animat
 
 
         &lt;/ej:BulletGraph&gt;
-
-Responsiveness during browser resize
+{% endhighlight  %}
+## Responsiveness during browser resize
 
 Bullet Graph is made responsive when resizing the browser by using EnableResizing property. By default the value of this property is true in Bullet Graph. 
-
+{% highlight html %}
 [ASP.NET]
 
 
@@ -36,11 +36,11 @@ Bullet Graph is made responsive when resizing the browser by using EnableResizin
 
 
         &lt;/ej:BulletGraph&gt;
-
-Applying same color to all ticks and labels in a range
+{% endhighlight %}
+## Applying same color to all ticks and labels in a range
 
 Background color for qualitative range is applied to major ticks and minor ticks of the Bullet Graph using ApplyRangeStrokeToTicks property. The range colors are applied to labels using ApplyRangeStrokeToLabels property. By default same colors are not applied to a qualitative range and its corresponding ticks or labels. 
-
+{% highlight html %}
 [ASP.NET]
 
 
@@ -62,20 +62,21 @@ Background color for qualitative range is applied to major ticks and minor ticks
             &lt;/QualitativeRanges&gt;
 
         &lt;/ej:BulletGraph&gt;
-
-{ ![](User-Interaction_images/User-Interaction_img1.png) | markdownify }
+{% endhighlight %}
+![](User-Interaction_images/User-Interaction_img1.png)
 {:.image }
 
 
-Tooltip
+## Tooltip
 
 By default Bullet Graph displays Tooltip when mouse is hovered over feature measure bar. Tooltip is enabled or disabled using Visible property in TooltipSettings.
 
-{ ![](User-Interaction_images/User-Interaction_img2.png) | markdownify }
+![](User-Interaction_images/User-Interaction_img2.png)
 {:.image }
 
 
 Bullet Graph supports Tooltip template instead of defaultTooltip to customize the appearance and contents of Tooltip. The Tooltip template should be a &lt;div&gt; element with display set to ‘none’, so it is displayed only when mouse is placed on feature measure bar. The id value of the &lt;div&gt; element should be provided as value to the Template property in TooltipSettings of Bullet Graph to display the customized &lt;div&gt; element as Tooltip instead of default Tooltip. The values displayed in default Tooltip such as current value, target value and category are accessed in template &lt;div&gt; element by using {{currentValue}}, {{targetValue}} and {{category}} respectively.
+{% highlight html %}
 [ASP.NET]
 
 
@@ -86,11 +87,11 @@ Bullet Graph supports Tooltip template instead of defaultTooltip to customize th
 
         &lt;/ej:BulletGraph&gt;
 
-
+{% endhighlight %}
 
 The following screenshot displays Bullet Graph with a customized Tooltip including a header and contents such as current value and target value in different colors.
 
-{ ![](User-Interaction_images/User-Interaction_img3.png) | markdownify }
+![](User-Interaction_images/User-Interaction_img3.png) 
 {:.image }
 
 

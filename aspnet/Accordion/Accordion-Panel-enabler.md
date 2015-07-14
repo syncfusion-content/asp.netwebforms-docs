@@ -7,9 +7,9 @@ control: Accordion
 documentation: ug
 ---
 
-## Accordion Panel enabler
+# Accordion Panel enabler
 
-Enable or Disable control
+## Enable or Disable control
 
 You can enable or disable the Accordion control on initial rendering by using the Enabled property. By default Enabled property is set to true and the Accordion panels are active always. 
 
@@ -69,11 +69,11 @@ You can enable or disable the Accordion control on initial rendering by using th
 
 Output for disabled Accordion control is as follows.
 
-{ ![](Accordion-Panel-enabler_images/Accordion-Panel-enabler_img1.png) | markdownify }
+ ![](Accordion-Panel-enabler_images/Accordion-Panel-enabler_img1.png) 
 {:.image }
 
 
-Enable panel items
+## Enable panel items
 
 You can enable the Accordion control items on initial loading by using EnabledItems property. This property takes array of indices that has to be enabled in Accordion control. 
 
@@ -163,11 +163,11 @@ Output for Accordion control with some enabled and disabled items, where first p
 
 
 
-{ ![](Accordion-Panel-enabler_images/Accordion-Panel-enabler_img2.png) | markdownify }
+ ![](Accordion-Panel-enabler_images/Accordion-Panel-enabler_img2.png) 
 {:.image }
 
 
-State Maintenance
+## State Maintenance
 
 Accordion control can store the model value in the browser cookies and on every time after initial rendering, the control get the model from the cookie only. By using EnablePersistence property you can store the model value in cookies. Thus when any changes are made dynamically then those values are updated in cookie. On refreshing the page, the past state of the Accordion control is maintained in cookie and control is rendered from it
 
@@ -233,7 +233,7 @@ In an ASPX page, define a &lt;div&gt; element that is a container for Accordi
 
 Output after page refresh maintaining the previous state of Accordion control is as follows.
 
-{ ![](Accordion-Panel-enabler_images/Accordion-Panel-enabler_img3.png) | markdownify }
+ ![](Accordion-Panel-enabler_images/Accordion-Panel-enabler_img3.png)
 {:.image }
 
 

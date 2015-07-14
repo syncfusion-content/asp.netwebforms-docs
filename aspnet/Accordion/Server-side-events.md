@@ -7,7 +7,7 @@ control: Accordion
 documentation: ug
 ---
 
-## Server-side events
+# Server-side events
 
 <table>
 <tr>

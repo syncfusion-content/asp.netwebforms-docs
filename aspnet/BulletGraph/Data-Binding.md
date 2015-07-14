@@ -11,7 +11,7 @@ documentation: ug
 
 Bullet Graph supports binding JSON data from a remote server or data created in client-side. You can use the Fields property to customize the data bound with Bullet Graph.
 
-Local Data
+## Local Data
 
 Data available in client-side (local data) can be bound with Bullet Graph using Fields property. This property provides option to specify data source, fields representing progress measure bar value, comparative measure value and category value. 
 
@@ -75,11 +75,11 @@ Data available in client-side (local data) can be bound with Bullet Graph using 
 
 The following screenshot displays Bullet Graph with local data generated in code-behind.
 
-{ ![](Data-Binding_images/Data-Binding_img1.png) | markdownify }
+![](Data-Binding_images/Data-Binding_img1.png)
 {:.image }
 
 
-Remote Data
+## Remote Data
 
 Bullet Graph provides option to bind data from a remote server using ejDataManager as data source in fields property. A query object should also be passed to query property when using data manager as data source.
 
@@ -157,7 +157,7 @@ Bullet Graph provides option to bind data from a remote server using ejDataManag
 
 The following screenshot displays a Bullet Graph bounded with data from a remote server
 
-{ ![](Data-Binding_images/Data-Binding_img2.png) | markdownify }
+![](Data-Binding_images/Data-Binding_img2.png) 
 {:.image }
 
 

@@ -7,9 +7,9 @@ control: Accordion
 documentation: ug
 ---
 
-## Appearance and Styling
+# Appearance and Styling
 
-Adjusting Accordion size
+## Adjusting Accordion size
 
 You can customize the Accordion panel height by using HeightAdjustMode property. It can be set to Enum values like Content, Fill or Auto. By default HeightAdjustMode is set to Content so the panel height is adjusted to the content size.
 
@@ -31,7 +31,8 @@ Panel height set to the largest content height among the panels</td></tr>
 Fill</td><td>
 Panel height is set to fill the content of the panel</td></tr>
 </table>
-Configure Height of Accordion panel
+
+## Configure Height of Accordion panel
 
 The following steps explains you on how to configure Accordion panel height.
 
@@ -147,15 +148,15 @@ Output for Accordion control when panel height is set to Auto so that the maximu
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) | markdownify }
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 {:.image }
 
 
-Rounded corner
+### Rounded corner
 
 You can customize the shape of the Accordion control from regular rectangular shape to rounded rectangle shape enabling ShowRoundedCorner property that is set to false by default.
 
-Enabling Rounded corner property
+### Enabling Rounded corner property
 
 The following steps explains you in enabling the ShowRoundedCorner property for an Accordion control.
 
@@ -218,15 +219,15 @@ In an ASPX page, define the Accordion control and add the contents correspondin
 Output for accordion control when “ShowRoundedCorner” is set to “true” is as follows.
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) | markdownify }
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 {:.image }
 
 
-Customize Accordion icon
+### Customize Accordion icon
 
 Accordion control allows you to customize the icons by using CustomIcon option that has two properties Header and SelectedHeader. By default, the classes of Header and SelectedHeader are e-collapse and e-expand respectively. By setting the desired CSS class names for these properties as required overrides the default icons with customized icons.
 
-Configuring custom icon for Accordion
+## Configuring custom icon for Accordion
 
 The following steps explains you the configuration of icon for an Accordion control.
 
@@ -290,13 +291,13 @@ Output for Accordion control with customized icons is as follows.
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) | markdownify }
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
 {:.image }
 
 
-Animation Options
+## Animation Options
 
-Set animation
+### Set animation
 
 By default the Animation for expanding and collapsing is enabled. To remove the Animation you can set the EnableAnimation property to false. This restricts customizing animations as well. By default EnableAnimation is set to true.
 
@@ -352,7 +353,7 @@ Following code disables Animation for Accordion.
 
 {% endhighlight %}
 
-Expand and collapse speed
+### Expand and collapse speed
 
 This feature allows you to set the speed for expanding and collapsing the Accordion panels. By default it is set to 300 in milliseconds. By configuring the animation speed you can optimize the delay in loading the panel content.
 
@@ -410,7 +411,7 @@ The following code example sets value for ExpandSpeed and CollapseSpeed properti
 
 {% endhighlight %}
 
-Theme
+### Theme
 
 You can control the style and appearance of Accordion control based on CSS classes. To apply styles to the Accordion control, refer to two files, ej.widgets.core.min.css and ej.theme.min.css. When you refer to ej.widgets.all.min.css file, then it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project, as ej.widgets.all.min.css is the combination of these two. 
 
@@ -430,7 +431,7 @@ By default, there are 13 themes support available for Accordion control namely
 * gradient-saffron-dark
 * bootstrap-theme
 
-CSS class
+### CSS class
 
 CSS class can be used to customize the Accordion control appearance. Define a CSS class as per your requirement and assign the class name to CssClass property. The custom CSS class must override the predefined CSS styles applied in the Accordion control.
 
@@ -560,7 +561,7 @@ Define CSS class for customizing the Accordion. Here the “customCss” class i
 
 Output for Accordion with customized CSS property to hide the Accordion icon and format its content is as follows.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png) | markdownify }
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 {:.image }
 
 
