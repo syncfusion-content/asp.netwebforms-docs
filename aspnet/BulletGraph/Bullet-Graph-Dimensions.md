@@ -142,6 +142,8 @@ The following screenshot displays Bullet Graph in a backward direction.
 
 Size of the Qualitativerange is customized using QualitativeRangeSize property. Default value of this property is 32. 
 
+{% highlight html %}
+
 [ASP.NET]
 
 
@@ -152,7 +154,7 @@ Size of the Qualitativerange is customized using QualitativeRangeSize property. 
 
         &lt;/ej:BulletGraph&gt;
 
-
+{% endhighlight %}
 
 The following screenshot displays Bullet Graph with Qualitative range of size 50
 
@@ -164,6 +166,8 @@ The following screenshot displays Bullet Graph with Qualitative range of size 50
 
 Length of the Quantitativescale is customized using QuantitativeScaleLength property. Default value of this property is 475. 
 
+{% highlight html %}
+
 [ASP.NET]
 
 
@@ -174,7 +178,7 @@ Length of the Quantitativescale is customized using QuantitativeScaleLength prop
 
 &lt;/ej:BulletGraph&gt;
 
-
+{% highlight %}
 
 The following screenshot displays Bullet Graph with Quantitative scale length of 500
 

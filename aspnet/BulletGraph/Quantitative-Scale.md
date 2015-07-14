@@ -7,7 +7,7 @@ control: BulletGraph
 documentation: ug
 ---
 
-## Quantitative Scale
+# Quantitative Scale
 
 The Quantitative Scale appearance is customized using QuantitativeScaleSettings property. It has properties to customize labels, major ticks, minor ticks, comparative measure and performance measure of the bullet graph
 
@@ -15,7 +15,7 @@ The Quantitative Scale appearance is customized using QuantitativeScaleSettings 
 
 Quantitative Scale range is set using the properties Minimum, Maximum and Interval of QuantitativeScaleSettings property. Minimum specifies the start range of the scale, Maximum specifies the end range of scale and Interval specifies the number of intervals between start and end range. Default values of Minimum, Maximum and Interval are 0, 10 and 1 respectively. The number of minor ticks (ticks between intervals) are specified using MinorTicksPerInterval property.
 
-
+{% highlight html %}
 
 [ASP.NET]
 
@@ -27,7 +27,7 @@ Quantitative Scale range is set using the properties Minimum, Maximum and Interv
 
         &lt;/ej:BulletGraph&gt;
 
-
+{% endhighlight %}
 
 The following screenshot displays a Bullet Graph with start range 0, end range 10 and interval 1 with 4 minor ticks per interval
 
@@ -39,7 +39,7 @@ The following screenshot displays a Bullet Graph with start range 0, end range 1
 
 Bullet Graph does not position Quantitativescale automatically based on its size or space required for caption text, etc. By default Quantitative scale is positioned at 10 pixels from left and 10 pixels from top. Quantitative scale location is customized as per the requirement using the Location property available in QuantitativeScaleSettings.
 
-
+{% highlight html %}
 
 [ASP.NET]
 
@@ -55,7 +55,7 @@ Bullet Graph does not position Quantitativescale automatically based on its size
 
         &lt;/ej:BulletGraph&gt;
 
-
+{% endhighlight %}
 
 The following screenshot displays Bullet Graph with Quantitative scale at 20 pixels from left and 20 pixels from top
 
@@ -67,7 +67,7 @@ The following screenshot displays Bullet Graph with Quantitative scale at 20 pix
 
 Color, size and width of Major tick lines are customized using MajorTickSettings property in QuantitativeScaleSettings. Default value of Size and Width properties are 13 and 2 respectively. Ticks are drawn in black color by default. The property Size represents the height of tick lines and Width represents the width of tick lines and ticks color are customized using Stroke property.
 
-
+{% highlight html %}
 
 [ASP.NET]
 
@@ -83,7 +83,7 @@ Color, size and width of Major tick lines are customized using MajorTickSettings
 
         &lt;/ej:BulletGraph&gt;
 
-
+{% endhighlight %}
 
 The following screenshot displays Major ticks in gray color with a width of 3 pixels and height 15 pixels
 
@@ -95,9 +95,9 @@ The following screenshot displays Major ticks in gray color with a width of 3 pi
 
 Minor ticks can also be customized similar to major ticks. The properties Stroke, Width and Size of MinorTickSettings are used to customize Minor ticks in quantitative scale. Stroke specifies the color of ticks, Width specifies the width of ticks and Size specifies the height of the ticks. 
 
+{% highlight html %}
+
 [ASP.NET]
-
-
 
         &lt;ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server"&gt;                        
 
@@ -109,7 +109,7 @@ Minor ticks can also be customized similar to major ticks. The properties Stroke
 
         &lt;/ej:BulletGraph&gt;
 
-
+{% endhighlight %}
 
 The following screenshot displays Bullet Graph with customized Minor ticks in quantitative scale
 
@@ -120,6 +120,8 @@ The following screenshot displays Bullet Graph with customized Minor ticks in qu
 ## Tick position
 
 Ticks are positioned below, above or inside the quantitative scale. By default ticks are positioned below the quantitative scale. The TickPosition property is used to customize the position of ticks in quantitative scale. Ticks can be placed inside the quantitative scale by setting TickPosition to Cross. 
+
+{% highlight html %}
 
 [ASP.NET]
 
@@ -133,7 +135,7 @@ Ticks are positioned below, above or inside the quantitative scale. By default t
 
         &lt;/ej:BulletGraph&gt;
 
-
+{% endhighlight %}
 
 The following screenshot displays Bullet Graph with ticks positioned above quantitative scale
 
@@ -144,6 +146,8 @@ The following screenshot displays Bullet Graph with ticks positioned above quant
 ## Tick Placement
 
 Quantitativescaleticks can be placed either inside or outside the scale using “TickPlacement” property. By default ticks are placed outside the scale.
+
+{% highlight html %}
 
 [ASP.NET]
 
@@ -173,7 +177,7 @@ Quantitativescaleticks can be placed either inside or outside the scale using �
 
     &lt;/ej:BulletGraph&gt;
 
-
+{% endhighlight %}
 
 The following screenshot displays Bullet Graph ticks inside Quantitative Scale
 
@@ -185,7 +189,7 @@ The following screenshot displays Bullet Graph ticks inside Quantitative Scale
 
 Quantitativescalelabels are customized with prefix, suffix, font, color and size using LabelSettings property. By default, label text is displayed in black color with 12 pixel ‘Segoe UI’ font and there is a padding of 20 pixels space between quantitative scale and labels.
 
-
+{% highlight html %}
 
 [ASP.NET]
 
@@ -205,7 +209,7 @@ Quantitativescalelabels are customized with prefix, suffix, font, color and size
 
         &lt;/ej:BulletGraph&gt;
 
-
+{% endhighlight %}
 
 The following screenshot displays Bullet Graph labels in blue color
 
@@ -220,6 +224,8 @@ _Figure 32: Bullet Graph quantitative scale with customized labels_
 ## Label Placement
 
 Quantitativescalelabels can be placed either inside or outside the scale using “LabelPlacement” property. By default labels are placed 15 pixels outside the scale. 
+
+{% highlight html %}
 
 [ASP.NET]
 
@@ -251,7 +257,7 @@ Quantitativescalelabels can be placed either inside or outside the scale using �
 
     &lt;/ej:BulletGraph&gt;
 
-
+{% endhighlight %}
 
 The following screenshot displays Bullet Graph labels inside Quantitative Scale
 
@@ -262,6 +268,8 @@ The following screenshot displays Bullet Graph labels inside Quantitative Scale
 ## Performance measure bar
 
 Performancemeasurebar is customized using FeaturedMeasureSettings in QuantitativeScaleSettings property. Color of the bar is customized using Stroke property and width using Width property. By default bar is drawn in black color with 6 pixels of width. 
+
+{% highlight html %}
 
 [ASP.NET]
 
@@ -277,7 +285,7 @@ Performancemeasurebar is customized using FeaturedMeasureSettings in Quantitativ
 
         &lt;/ej:BulletGraph&gt;
 
-
+{% endhighlight %}
 
 The following screenshot displays Bullet Graph with customized Performance measure bar.
 
@@ -288,6 +296,8 @@ The following screenshot displays Bullet Graph with customized Performance measu
 ## Comparative measure symbol
 
 Comparative symbol color and width are customized using ComparativeMeasureSettings through QuantitativeScaleSettings property. Color of the symbol is customized using Stroke property and width using Width property. By default Comparative measure symbol is displayed in black color with a width of 5 pixels. 
+
+{% highlight html %}
 
 [ASP.NET]
 
@@ -303,7 +313,7 @@ Comparative symbol color and width are customized using ComparativeMeasureSettin
 
         &lt;/ej:BulletGraph&gt;
 
-
+{% endhighlight %}
 
 The following screenshot displays Bullet Graph with customized Comparative measure value.
 
@@ -315,8 +325,9 @@ The following screenshot displays Bullet Graph with customized Comparative measu
 
 Bullet Graph supports comparing more than one performance at a time, given that all the comparisons are related using FeatureMeasure in QuantitativeScaleSettings property. 
 
-[ASP.NET]
+{% highlight html %}
 
+[ASP.NET]
 
 
         &lt;ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server"&gt;                        
@@ -339,7 +350,7 @@ Bullet Graph supports comparing more than one performance at a time, given that 
 
         &lt;/ej:BulletGraph&gt;
 
-
+{% endhighlight %}
 
 The following screenshot displays Bullet Graph that compares 3 related performance measures.
 

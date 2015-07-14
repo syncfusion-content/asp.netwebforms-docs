@@ -45,7 +45,7 @@ You can customize the values of feature and comparative measure bars in a Bullet
 
 Assign the data in BulletLocalDataBind variable to the DataSource property of BulletGraph as illustrated in the following code example. 
 
-{% highlight cs %}
+{% highlight c# %}
 
 [CS]
 
@@ -113,7 +113,7 @@ List<BulletLocalDataBind> data = new List<BulletLocalDataBind>();
 
 Once the DataSource property is assigned with the required values, you can bind the variable names used in the JSON data to the corresponding fields of the BulletGraph as shown in the following code example.
 
-{% highlight aspx %}
+{% highlight html %}
 
 [ASPX]
 
@@ -136,7 +136,7 @@ By default, the BulletGraph is rendered in the horizontal orientation with its f
 Minimum, Maximum and Interval values for the QuantitativeScale of the BulletGraph are set, as illustrated in the following code example. The ticks and labels within the scale are also positioned.
 
 
-{% highlight aspnet %}
+{% highlight html %}
 [ASP.NET]
 
 
@@ -171,7 +171,7 @@ The above image illustrates the BulletGraph without any ranges displayed in the 
 
 By default, 3 ranges are displayed in the BulletGraph control during the initial rendering of the control with its default values. To customize it, you can set appropriate values for the RangeEnd and RangeStroke properties.  Any number of QualitativeRanges can be added to the control.
 
-{% highlight aspnet %}
+{% highlight html %}
 
 [ASP.NET]
 
@@ -226,7 +226,8 @@ After adding QualitativeRanges to the BulletGraph, the control appears as follow
 ## Ticks and Measure Bars Customization
 
 You can do the following code changes in the quantitative scale to customize the tick size, the color of the feature bar and the comparative measure symbols.
-{% highlight aspnet %}
+
+{% highlight html %}
 [ASP.NET]
 
 
@@ -284,7 +285,7 @@ When you customize the ticks and measure bar, the BulletGraph appears as follows
 You can add the following code example to display an appropriate Caption and Subtitle to the BulletGraph.
 
 
-{% highlight aspnet %}
+{% highlight html %}
 [ASP.NET]
 
 
@@ -346,7 +347,7 @@ The following screenshot displays a BulletGraph with a Caption and Subtitle.
 You can use a Tooltip in your application to display the values of forecasted rainfall, actual rainfall received in millimeter and also the appropriate year. The Tooltip Visible property is set to True to enable the Tooltip option. To set the template Tooltip, you can pass the template id to it as illustrated in the following code example.
 
 
-{% highlight aspnet %}
+{% highlight html %}
 [ASP.NET]
 
 

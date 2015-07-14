@@ -63,6 +63,7 @@ Background color for qualitative range is applied to major ticks and minor ticks
 
         &lt;/ej:BulletGraph&gt;
 {% endhighlight %}
+
 ![](User-Interaction_images/User-Interaction_img1.png)
 {:.image }
 
@@ -76,10 +77,9 @@ By default Bullet Graph displays Tooltip when mouse is hovered over feature meas
 
 
 Bullet Graph supports Tooltip template instead of defaultTooltip to customize the appearance and contents of Tooltip. The Tooltip template should be a &lt;div&gt; element with display set to ‘none’, so it is displayed only when mouse is placed on feature measure bar. The id value of the &lt;div&gt; element should be provided as value to the Template property in TooltipSettings of Bullet Graph to display the customized &lt;div&gt; element as Tooltip instead of default Tooltip. The values displayed in default Tooltip such as current value, target value and category are accessed in template &lt;div&gt; element by using {{currentValue}}, {{targetValue}} and {{category}} respectively.
+
 {% highlight html %}
 [ASP.NET]
-
-
 
 &lt;ej:BulletGraph ID="BulletGraph1" Value="8" ComparativeMeasureValue="6" Width="600px" Height="120px" runat="server"&gt;                        
 
