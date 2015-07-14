@@ -7,11 +7,11 @@ control: Checkbox
 documentation: ug
 ---
 
-## Easy customization
+# Easy customization
 
 By default, Checkbox contains two states; checked and unchecked. It allows you to make a binary choice. The Checkbox control allows you to check an option for performing action. Checkbox control allows you to set selected, unselected or an indeterminate option. Here, ASP check box control is rendered as Essential Checkbox control
 
-### Checked status
+## Checked status
 
 By using Checked property, you can set the state of Checkbox. When checked property is true, then tick mark is displayed and Checkbox is in checked state. When it is false, the tick mark is not displayed and Checkbox is in unchecked state. When you want to use this Checked property, then checkbox should be in non Tri-state and EnableTriState property should be false.
 
@@ -41,11 +41,11 @@ Run the above code to render the following output.
 
 
 
-{ ![](Easy-customization_images/Easy-customization_img1.png) | markdownify }
+![](Easy-customization_images/Easy-customization_img1.png)
 {:.image }
 
 
-### Enable Tri-State
+## Enable Tri-State
 
 Sometimes, it is essential for you to represent the answer in partially true state. To represent the partially true types, an indeterminate state option is present. The state between checked and unchecked state is called indeterminate state. For example, a Checkbox presented to select files to send via FTP can use a TreeView so that files can be selected one at a time, or by folder. When only some of the files in a folder are selected, then the checkbox for that folder can be in indeterminate state.
 
@@ -73,11 +73,11 @@ In the ASPX page, add the following input elements to configure Checkbox.
 
 Run the above code to render the following output.
 
-{ ![](Easy-customization_images/Easy-customization_img2.png) | markdownify }
+![](Easy-customization_images/Easy-customization_img2.png)
 {:.image }
 
 
-### Check State
+## Check State
 
 An option is required to set indeterminate state for Checkbox. By using CheckState property, you can set any state that is illustrated in the following table. Before using this property, enable the Tri-state for Checkbox by using EnableTriState property as true.
 
@@ -125,11 +125,11 @@ In the ASPX page, add the following input elements to configure Checkbox.
 
 Run the above code to render the following output.
 
-{ ![](Easy-customization_images/Easy-customization_img3.png) | markdownify }
+![](Easy-customization_images/Easy-customization_img3.png)
 {:.image }
 
 
-### Checkbox Size
+## Checkbox Size
 
 You can render Checkbox in different sizes. The following table contains some predefined size option for rendering a Checkbox in easiest way. Each size option has different heights and widths. Mainly, it avoids the complexity in rendering the Checkbox with complex CSS class. 
 
@@ -168,11 +168,11 @@ In the ASPX page, add the following input elements to configure Checkbox.
 Run the above code to render the following output.
 
 
-{ ![](Easy-customization_images/Easy-customization_img4.png) | markdownify }
+![](Easy-customization_images/Easy-customization_img4.png)
 {:.image }
 
 
-### Text
+## Text
 
 It specifies the text content for the Checkbox. In previous programs, separate label for each Checkbox is created. You can also set the text for Checkbox by using Text property. Therefore, it is not essential to add label tag for each checkbox in HTML code.
 
@@ -194,11 +194,11 @@ In the ASPX page, add the following input elements to configure Checkbox.
 
 Run the above code to render the following output.
 
-{ ![](Easy-customization_images/Easy-customization_img5.png) | markdownify }
+![](Easy-customization_images/Easy-customization_img5.png)
 {:.image }
 
 
-### Rounded corner for checkbox
+## Rounded corner for checkbox
 
 Specifies the corner of Checkbox in rounded shape. Checkbox does not have rounded corner by default. To set rounded corner, you can enable ShowRoundedCorner property.
 
