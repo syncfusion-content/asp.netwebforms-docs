@@ -1,0 +1,95 @@
+---
+layout: post
+title: Gauge-Position
+description: gauge position
+platform: aspnet
+control: Circular Gauge
+documentation: ug
+---
+
+## Gauge Position
+
+Semi-circular Gauge can be positioned within the canvas element which provides better appearance for the gauge in the canvas.
+
+Positioning
+
+* Semi-circular Gauge can be positioned with the help of the attribute called gaugePosition. It is an enumerable value. You can position the gauge away from the corner with the help of the distanceFromCorner attribute. 
+* The possible enum values for the gaugePosition are as follows:
+1. Topleft
+2. Topcenter
+3. Topright
+4. Middleleft
+5. Center
+6. Middleright
+7. Bottomleft
+8. Bottomcenter
+9. Bottomright
+
+
+
+[ASPX]
+
+<ej:CircularGauge runat="server" ID="SemiCircularGauge" Value="60"
+
+
+
+&lt;%--setting basic dimension-- %&gt;
+
+BackgroundColor="transparent" Width="500" Height="500" Radius="100"
+
+
+
+&lt;%--setting gauge position-- %&gt;
+
+GaugePosition="TopLeft"
+
+
+
+&lt;%--setting gauge distance from corner-- %&gt;
+
+DistanceFromCorner="25">
+
+
+
+&lt;%--&lt;setting frame values--%&gt;
+
+<Frame FrameType="HalfCircle"
+
+HalfCircleFrameEndAngle="90"
+
+HalfCircleFrameStartAngle="270"/>
+
+
+
+&lt;%--setting gauge distance from corner-- %&gt;
+
+&lt;Scales&gt;
+
+<ej:CircularScales SweepAngle="180" StartAngle="270" Radius="100"
+
+ShowScaleBar="true" Size="1" Maximum="120"
+
+MajorIntervalValue="20" MinorIntervalValue="10">
+
+
+
+&lt;%--setting scale border-- %&gt;
+
+&lt;Border Width="0.5"&gt;
+
+&lt;/Border&gt;
+
+&lt;/ej:CircularScales&gt;
+
+&lt;/Scales&gt;
+
+&lt;/ej:CircularGauge&gt;
+
+
+
+Execute the above code to render the following output.
+
+{ ![](Gauge-Position_images/Gauge-Position_img1.png) | markdownify }
+{:.image }
+
+

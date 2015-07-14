@@ -1,0 +1,664 @@
+---
+layout: post
+title: Integration
+description: integration
+platform: aspnet
+control: Toolbar
+documentation: ug
+---
+
+## Integration
+
+### Angular Js
+
+The Toolbar is availed with two types of angular JS support namely, 
+
+* One way binding
+* Two way binding 
+
+One way binding refers to the process of applying scope values to all the available properties of the Toolbar, but the changes made in the Toolbar widget does not reflect or get triggered in turn to the scope collection. This kind of binding applies to all the properties of the Toolbar.
+
+Two-way binding supports both the processes – it applies the scope values to the Toolbar properties as well as the changes made in the Toolbar widget is also reflected back and triggered within the angular scope change function.
+
+To know more detail about the Angular binding, refer to the following link location,
+
+[http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
+
+> _Note: Add the following script files as given in the following example to access the angular binding. They provide JS library for angular binding._
+
+* _angular-min.js_
+* _ej.widget.angular.min.js_
+
+The following code example explains the way to bind the data to the Toolbar widget through angular support.
+
+Add the following code example into the corresponding ASPX page to render the ToolBar Control
+
+{% highlight html %}
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+
+    <title>Essential Studio for JavaScript :Angular JS Support for Toolbar</title>
+
+    <link href=" http://cdn.syncfusion.com/ {{site.releaseversion}}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+
+    <!--scripts-->
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+
+    <script src="http://cdn.syncfusion.com/ {{site.releaseversion}}/js/web/ej.web.all.min.js"></script>
+
+   <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
+
+    <script src="http://cdn.syncfusion.com/ {{site.releaseversion}}/js/web/ej.unobtrusive.min.js"> </script>
+
+    <script src="http://cdn.syncfusion.com/ {{site.releaseversion}}/js/ej.widget.angular.min.js"> </script>
+
+</head>
+
+<body>
+
+   <div ng-app="toolApp">
+
+                <div ng-controller="ToolCtrl">
+
+                    <div id="toolbar1" ej-toolbar e-datasource="dataList" e-width="210px"
+
+                        e-fields-id="empid" e-fields-spritecssclass="spriteCss">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+</body>
+
+</html>
+
+
+
+
+
+{% endhighlight %}
+
+
+
+{% highlight js %}
+
+
+
+     <script>
+
+         var list = [
+
+    {
+
+        empid: "1",
+
+        spriteCss: "mailtools movetofolder",
+
+
+
+    }, {
+
+        empid: "2",
+
+        spriteCss: "mailtools categorize",
+
+
+
+    }, {
+
+        empid: "3",
+
+        spriteCss: "mailtools flag",
+
+
+
+    }, {
+
+        empid: "4",
+
+        spriteCss: "mailtools forward",
+
+
+
+    }, {
+
+        empid: "5",
+
+        spriteCss: "mailtools newmail",
+
+
+
+    },
+
+     {
+
+         empid: "6",
+
+         spriteCss: "mailtools reply",
+
+
+
+     },
+
+     {
+
+         empid: "7",
+
+         spriteCss: "mailtools done",
+
+
+
+     }
+
+         ];
+
+
+
+         angular.module('toolApp', ['ejangular']).controller('ToolCtrl', function ($scope) {
+
+             $scope.dataList = list;
+
+         });
+
+    </script>
+
+
+
+
+
+{% endhighlight %}
+
+
+
+{% highlight css %}
+
+
+
+    <style type="text/css">
+
+         .darktheme .cols-sample-area .e-tooltxt .mailtools {
+
+            background-image: url('../images/toolbar/maild.png');
+
+        }
+
+
+
+        .cols-sample-area .e-tooltxt .mailtools {
+
+            display: block;
+
+            background-image: url('../images/toolbar/maill.png');
+
+            height: 24px;
+
+            width: 24px;
+
+            background-repeat: no-repeat;
+
+        }
+
+
+
+        .e-tooltxt:hover .mailtools, .darktheme .cols-sample-area .e-tooltxt:hover .mailtools {
+
+            background-image: url('../images/toolbar/mailh.png');
+
+        }
+
+
+
+        .mailtools.done {
+
+            background-position: -11px -140px;
+
+        }
+
+
+
+        .mailtools.movetofolder {
+
+            background-position: -12px -40px;
+
+        }
+
+
+
+        .mailtools.categorize {
+
+            background-position: -14px -248px;
+
+        }
+
+
+
+        .mailtools.flag {
+
+            background-position: -13px -282px;
+
+        }
+
+
+
+        .mailtools.forward {
+
+            background-position: -14px -314px;
+
+        }
+
+
+
+        .mailtools.newmail {
+
+            background-position: -14px -348px;
+
+        }
+
+
+
+        .mailtools.reply {
+
+            background-position: -14px -388px;
+
+        }
+
+    </style>
+
+
+
+
+
+{% endhighlight %}
+
+
+
+The following screenshot displays the output of the above code.
+
+
+
+{ ![](Integration_images/Integration_img1.png) | markdownify }
+{:.image }
+
+
+### KnockoutJs
+
+Knockout support allows you to bind the html elements against any of the available data models.
+
+Two types of knockout binding is supported,
+
+* One-way binding
+* Two-way binding
+
+One way binding refers to the process of applying observable values to all the available properties of the Toolbar, but the changes made in the Toolbar widget is not reflected and triggered in turn to the observable collection. This kind of binding applies to all the properties of the Toolbar.
+
+Two-way binding supports both the processes – it applies the observable values to the Toolbar properties as well as the changes made in the Toolbar widget is also reflected back and triggered within the observable collections. 
+
+For more information about the knockout binding, refer to the following online documentation in the following link location,
+
+[http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
+
+> _Note: Add the following script files along with the given code to access the knockout binding. They provide JS library for knockout binding._
+
+* _knockout-min.js_
+* _ej.widget.ko-latest.min.js_
+
+The link for those script files are as follows:
+
+[http://cdn.syncfusion.com/js/assets/external/knockout.min.js](http://cdn.syncfusion.com/js/assets/external/knockout.min.js)
+
+[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js)
+
+The following code example explains how to bind data to the Toolbar through the knockout support. 
+
+Add the following code example into the corresponding ASPX page to render the Toolbar control
+
+{% highlight html %}
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+
+    <title>Essential Studio for JavaScript :Angular JS Support for Toolbar</title>
+
+    <link href=" http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+
+    <!--scripts-->
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+
+    <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/ej.web.all.min.js"></script>
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"> </script>
+
+    <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/ej.unobtrusive.min.js"> </script>
+
+    <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/ej.widget.ko.min.js"> </script>
+
+</head>
+
+<body>
+
+    <div class="frame">
+
+        <div class="control">
+
+            <div id="toolbar1" data-bind="ejToolbar: { dataSource: dataList, fields: { id: 'edid', spriteCssClass: 'spriteCss', text: 'text' }, width: width }"></div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+
+
+{% endhighlight %}
+
+
+
+{% highlight js %}
+
+
+
+    <script>
+
+        $(function () {
+
+            var tool = [
+
+        {
+
+            edid: "1",
+
+            spriteCss: "editTools cursor",
+
+            text: "Cursor",
+
+        }, {
+
+            edid: "2",
+
+            spriteCss: "editTools select",
+
+            text: "Select",
+
+        }, {
+
+            edid: "3",
+
+            spriteCss: "editTools move",
+
+            text: "Move",
+
+        }, {
+
+            edid: "4",
+
+            spriteCss: "editTools rectselect",
+
+            text: "Rectangle Select",
+
+        }, {
+
+            edid: "5",
+
+            spriteCss: "editTools roundselect",
+
+            text: "Round Select",
+
+        }, {
+
+            edid: "6",
+
+            spriteCss: "editTools brush",
+
+            text: "Brushes",
+
+        }, {
+
+            edid: "7",
+
+            spriteCss: "editTools pen",
+
+            text: "Pen",
+
+        }, {
+
+            edid: "8",
+
+            spriteCss: "editTools gradient",
+
+            text: "Gradients",
+
+        }, {
+
+            edid: "9",
+
+            spriteCss: "editTools crop",
+
+            text: "Crop",
+
+        }, {
+
+            edid: "10",
+
+            spriteCss: "editTools symbols",
+
+            text: "Symbols",
+
+        }
+
+
+
+            ];
+
+
+
+            window.viewModel = {
+
+                dataList: ko.observableArray(tool),
+
+                width: ko.observable("100%"),
+
+            };
+
+            ko.applyBindings(viewModel);
+
+        });
+
+    </script>
+
+
+
+{% endhighlight %}
+
+
+
+{% highlight css %}
+
+
+
+<style type="text/css" > .darktheme .cols-sample-area .e-tooltxt .editTools {
+
+    background-image: url('../images/toolbar/editToolbar.png');
+
+}
+
+
+
+.cols-sample-area .e-tooltxt .editTools {
+
+    display: block;
+
+    background-image: url('../images/toolbar/editToolbarl.png');
+
+    height: 26px;
+
+    width: 26px;
+
+    background-repeat: no-repeat;
+
+}
+
+
+
+.e-tooltxt:hover .editTools, .darktheme .cols-sample-area .e-tooltxt:hover .editTools {
+
+    background-image: url('../images/toolbar/editToolbarh.png');
+
+}
+
+
+
+.editTools.cursor {
+
+    background-position: -0px -0px;
+
+}
+
+
+
+.editTools.select {
+
+    background-position: -0px -36px;
+
+}
+
+
+
+.editTools.move {
+
+    background-position: -0px -72px;
+
+}
+
+
+
+.editTools.rectselect {
+
+    background-position: -0px -108px;
+
+}
+
+
+
+.editTools.roundselect {
+
+    background-position: -0px -144px;
+
+}
+
+
+
+.editTools.brush {
+
+    background-position: -0px -180px;
+
+}
+
+
+
+.editTools.pen {
+
+    background-position: -0px -216px;
+
+}
+
+
+
+.editTools.gradient {
+
+    background-position: -0px -252px;
+
+}
+
+
+
+.editTools.crop {
+
+    background-position: -0px -288px;
+
+}
+
+
+
+.editTools.symbols {
+
+    background-position: -0px -324px;
+
+}
+
+
+
+.frame {
+
+    height: 280px;
+
+    width: 90%;
+
+    border-radius: none;
+
+    margin-left: 80px;
+
+    margin-top: 40px;
+
+    padding: 0;
+
+}
+
+
+
+.control {
+
+    margin: 120px 120px 0;
+
+}
+
+
+
+</style >
+
+
+
+
+
+{% endhighlight %}
+
+
+
+The following screenshot displays the output of the above code.
+
+{ ![](Integration_images/Integration_img2.png) | markdownify }
+{:.image }
+
+
+
+
+
+
+
+
+

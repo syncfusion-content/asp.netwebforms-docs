@@ -1,0 +1,991 @@
+---
+layout: post
+title: Pointers
+description: pointers
+platform: aspnet
+control: Circular Gauge
+documentation: ug
+---
+
+## Pointers
+
+Pointer value points out the actual value set in the Circular Gauge. You can customize the pointers to improve the appearance of Gauge.
+
+
+
+### Adding Pointer Collection
+
+Pointer collection is directly added to the scale object. To add pointer collection in a Gauge control refer the following code example.  
+
+
+
+[A[ASP]
+
+&lt;%--For Circular Gauge rendering-- %&gt;
+
+&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+
+&lt;Scales&gt;
+
+&lt;ej:CircularScales&gt;
+
+&lt;PointerCollection&gt;
+
+&lt;ej:Pointers value="30"&gt;&lt;/ej:Pointers&gt;
+
+&lt;/PointerCollection&gt;
+
+&lt;/ej:CircularScales&gt;
+
+&lt;/Scales&gt;
+
+&lt;/ej:CircularGauge&gt;
+
+Execute the above code to render the following output.
+
+{ ![C:/Users/karthigeyan/Desktop/q.png](Pointers_images/Pointers_img1.png) | markdownify }
+{:.image }
+
+
+_Figure_ _20__(a): Circular Gauge with  pointer collection_
+
+### Adding Pointer Value
+
+Pointer value is the important element in the Circular Gauge that indicates the Gauge value. Real purpose of the Circular Gauge is based on the pointer value. You can set the pointer value either directly during rendering the control or it can be achieved by public method too.
+
+
+
+[   [ASP]
+
+&lt;%--For Circular Gauge rendering-- %&gt;
+
+&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+
+&lt;Scales&gt;
+
+&lt;ej:CircularScales ShowRanges="true" ShowScalebar="true" Size="2" radius="150" MajorIntervalValue="10" MinorIntervalValue="2" &gt;
+
+&lt;RangeCollection&gt;
+
+&lt;ej:CircularRanges StartValue="20" EndValue="80" BackgroundColor="green"&gt;&lt;/ej:CircularRanges&gt;
+
+&lt;/RangeCollection&gt;
+
+&lt;%--For setting ponter value-- %&gt;
+
+&lt;PointerCollection&gt;
+
+&lt;ej:Pointers Value="30"&gt;&lt;/ej:Pointers&gt;
+
+&lt;/PointerCollection&gt;
+
+&lt;/ej:CircularScales&gt;
+
+&lt;/Scales&gt;
+
+&lt;/ej:CircularGauge&gt;
+
+
+
+
+
+Execute the above code to render the following output.
+
+
+
+{ ![](Pointers_images/Pointers_img2.png) | markdownify }
+{:.image }
+
+
+_Figure_ _21__(b): Circular Gauge with customized pointer value_
+
+
+
+### Pointer Styles
+
+Colors and Border
+
+* The Pointers border is modified with the object called border as in scales. It has two border property called color and width which are used to customize the border color of the pointer and border width of the pointer. 
+* You can set the background color to improve the look of the Circular Gauge and you can customize the background color of the scale using backgroundColor.
+
+
+
+[ASP]
+
+
+
+&lt;%--For Circular Gauge rendering-- %&gt;
+
+&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+
+&lt;Scales&gt;
+
+&lt;ej:CircularScales ShowScalebar="true" radius="110"&gt;
+
+&lt;PointerCollection&gt;
+
+&lt;%--For setting pointer width, background color, pointer value, length -- %&gt;
+
+
+
+&lt;ej:Pointers Value="45" width="16" Opacity="0.6" BackgroundColor="yellow" Length="80"&gt;&lt;/ej:Pointers&gt;
+
+&lt;/PointerCollection&gt;
+
+&lt;/ej:CircularScales&gt;
+
+&lt;/Scales&gt;
+
+&lt;/ej:CircularGauge&gt;
+
+
+
+Execute the above code to render the following output.
+
+
+
+{ ![](Pointers_images/Pointers_img3.png) | markdownify }
+{:.image }
+
+
+Appearance
+
+* Based on the value, thepointer point out the label value. You can set the pointer length and width using length and width property respectively. 
+* And you can also adjust the opacity of the pointer using the property opacity which holds the value between 0 and 1. You can add the gradient effects to the pointer using gradient object.
+
+
+
+
+
+[ASP]
+
+
+
+&lt;%--For Circular Gauge rendering-- %&gt;
+
+&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+
+&lt;Scales&gt;
+
+&lt;ej:CircularScales ShowscaleBar="true" BackgroundColor="orange" radius="110"&gt;
+
+&lt;Border Width="2" Color="red" /&gt;
+
+&lt;%--For setting pointer value.length, width and background color-- %&gt;
+
+&lt;PointerCollection&gt;
+
+&lt;ej:Pointers Value="45" width="16" Opacity="0.6" BackgroundColor="orange" ShowBackNeedle="true" Length="80" BackNeedleLength="0"&gt;&lt;/ej:Pointers&gt;
+
+&lt;/PointerCollection&gt;
+
+&lt;/ej:CircularScales&gt;
+
+&lt;/Scales&gt;
+
+&lt;/ej:CircularGauge&gt;
+
+
+
+
+
+Execute the above code to render the following output.
+
+
+
+{ ![](Pointers_images/Pointers_img4.png) | markdownify }
+{:.image }
+
+
+Position the pointer
+
+* Pointer can be positioned with the help of two properties such as distanceFromScale and placement. distanceFromScale property defines the distance between the scale and pointer.  Placement property is used to locate the pointer with respect to scale either inside the scale or outside the scale or along the scale. 
+* It is an enumerable data type. Both the property is applied only if pointer type is marker. For needle type marker, it renders with default position that is unchangeable.
+
+
+
+[ASP]
+
+&lt;%--For Circular Gauge rendering-- %&gt;
+
+&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+
+&lt;Scales&gt;
+
+&lt;ej:CircularScales ShowscaleBar="true" BackgroundColor="#DCEBF9" Size="10" radius="110"&gt;
+
+&lt;Border Width="2" Color="blue" /&gt;
+
+&lt;%--For setting pointer type, placement, marker type, distance from scale-- %&gt;
+
+&lt;PointerCollection&gt;
+
+&lt;ej:Pointers Value="40" length="20" width="20" BackgroundColor="#DCEBF9" ShowBackNeedle="true" BackNeedleLength="0" DistanceFromScale="20" Placement="Near" Type="Marker" MarkerType="Triangle"&gt;&lt;/ej:Pointers&gt;
+
+&lt;/PointerCollection&gt;
+
+&lt;/ej:CircularScales&gt;
+
+&lt;/Scales&gt;
+
+&lt;/ej:CircularGauge&gt;
+
+
+Execute the above code to render the following output.
+
+
+
+{ ![C:/Users/ApoorvahR/Desktop/1.png](Pointers_images/Pointers_img5.png) | markdownify }
+{:.image }
+
+
+Types
+
+* Circular gauge pointer has two types such as,
+1. Needle
+2. Marker
+* Needle type pointers are the default pointers that cannot be positioned and that is located at the center of the gauge. There are four different shapes of needle pointers such as 
+1. Rectangle
+2. Triangle
+3. Trapezoid 
+4. Arrow
+* For marker pointer, the available dimensions are 
+1. Rectangle
+2. Triangle
+3. Ellipse
+4. Diamond
+5. Pentagon
+6. Circle 
+7. Slider
+8. Pointer
+9. Wedge
+10. Trapezoid
+11. Rounded Rectangle
+
+Pointer Image
+
+In ASP Circular Gauge, it is possible to replace the pointer with some images. You can fix an image instead of rendering the pointer.
+
+ImageUrl
+
+To implement the pointer image we need to give the API called ImageUrl. It is a string datatype. Image type pointer is applicable for both marker and needle type pointers and it is possible to combine the normal marker pointer type with an image type. The three possibilities are
+
+1. Needle Image
+2. Marker Image
+3. Marker pointer with Image
+
+Needle Image 
+
+In this type, needle pointer is completely replaced by image. You can implement it with the help of thr following example.
+
+[aspx]
+
+&lt;ej:CircularGauge runat="server" ID="CircularGauge1"&gt;
+
+
+
+&lt;%-- To set the Frame type as half circle --%&gt;
+
+&lt;Frame FrameType="HalfCircle" /&gt;
+
+
+
+&lt;%-- To set the scale options --%&gt;
+
+&lt;Scales&gt;
+
+&lt;ej:CircularScales ShowRanges="true" SweepAngle="180" StartAngle="180" Radius="130" ShowScaleBar="false" ShowLabels="false"&gt;
+
+
+
+&lt;%-- To set the pointer options --%&gt;
+
+&lt;PointerCollection&gt;
+
+
+
+&lt;%-- To set the pointer type as needle --%&gt;
+
+<ej:Pointers Type="Needle"
+
+
+
+&lt;%-- To set the needle type as image --%&gt;
+
+NeedleType="Image"
+
+
+
+&lt;%-- To set the image url --%&gt;
+
+ImageUrl="nib.png"
+
+
+
+&lt;%-- To set the pointer value --%&gt;
+
+Value="60"
+
+
+
+&lt;%-- To set the pointer dimension --%&gt;
+
+Width="160" Length="30">
+
+
+
+&lt;/ej:Pointers&gt;
+
+&lt;/PointerCollection&gt;
+
+
+
+&lt;%-- To set the ticks options --%&gt;
+
+&lt;TickCollection&gt;
+
+&lt;ej:CircularTicks Height="0" Width="0" /&gt;
+
+&lt;/TickCollection&gt;
+
+
+
+&lt;%-- To set the range options --%&gt;
+
+&lt;RangeCollection&gt;
+
+<ej:CircularRanges DistanceFromScale="-30"
+
+StartValue="0" EndValue="70" Size="40">
+
+&lt;/ej:CircularRanges&gt;
+
+
+
+<ej:CircularRanges BackgroundColor="#fc0606"
+
+DistanceFromScale="-30" Size="40"
+
+StartValue="70" EndValue="100">
+
+&lt;Border Color="#fc0606"&gt;&lt;/Border&gt;
+
+&lt;/ej:CircularRanges&gt;
+
+&lt;/RangeCollection&gt;
+
+&lt;/ej:CircularScales&gt;
+
+&lt;/Scales&gt;
+
+&lt;/ej:CircularGauge&gt;
+
+
+
+{ ![](Pointers_images/Pointers_img6.png) | markdownify }
+{:.image }
+
+
+Marker Image 
+
+In this type, the marker pointer is completely replaced by the image. You can implement it with the help of the following example.
+
+[aspx]
+
+&lt;ej:CircularGauge runat="server" ID="CircularGauge1"&gt;
+
+
+
+&lt;%-- To set the Frame type as half circle --%&gt;
+
+&lt;Frame FrameType="HalfCircle" /&gt;
+
+
+
+&lt;%-- To set the scale options --%&gt;
+
+&lt;Scales&gt;
+
+&lt;ej:CircularScales ShowRanges="true" SweepAngle="180" StartAngle="180" Radius="130" ShowScaleBar="false" ShowLabels="false"&gt;
+
+
+
+&lt;%-- To set the pointer options --%&gt;
+
+&lt;PointerCollection&gt;
+
+
+
+&lt;%-- To set the pointer type as marker --%&gt;
+
+<ej:Pointers Type="Marker"
+
+
+
+&lt;%-- To set the needle type as image --%&gt;
+
+MarkerType="Image"
+
+
+
+&lt;%-- To set the image url --%&gt;
+
+ImageUrl="ball.png"
+
+
+
+&lt;%-- To set the pointer value --%&gt;
+
+Value="60"
+
+
+
+&lt;%-- To set the pointer dimension --%&gt;
+
+Width="160" Length="30">
+
+
+
+&lt;/ej:Pointers&gt;
+
+&lt;/PointerCollection&gt;
+
+
+
+&lt;%-- To set the ticks options --%&gt;
+
+&lt;TickCollection&gt;
+
+&lt;ej:CircularTicks Height="0" Width="0" /&gt;
+
+&lt;/TickCollection&gt;
+
+
+
+&lt;%-- To set the range options --%&gt;
+
+&lt;RangeCollection&gt;
+
+<ej:CircularRanges DistanceFromScale="-30"
+
+StartValue="0" EndValue="70" Size="40">
+
+&lt;/ej:CircularRanges&gt;
+
+
+
+<ej:CircularRanges BackgroundColor="#fc0606"
+
+DistanceFromScale="-30" Size="40"
+
+StartValue="70" EndValue="100">
+
+&lt;Border Color="#fc0606"&gt;&lt;/Border&gt;
+
+&lt;/ej:CircularRanges&gt;
+
+&lt;/RangeCollection&gt;
+
+&lt;/ej:CircularScales&gt;
+
+&lt;/Scales&gt;
+
+&lt;/ej:CircularGauge&gt;
+
+
+
+{ ![](Pointers_images/Pointers_img7.png) | markdownify }
+{:.image }
+
+
+Marker pointer with Image 
+
+In this type, marker pointer is drawn first and then the image is loaded. You can implement it with the help of following example.
+
+[aspx]
+
+&lt;ej:CircularGauge runat="server" ID="CircularGauge1"&gt;
+
+
+
+            &lt;%-- To set the Frame type as half circle --%&gt;
+
+            &lt;Frame FrameType="HalfCircle" /&gt;
+
+
+
+            &lt;%-- To set the scale options --%&gt;
+
+            &lt;Scales&gt;
+
+                &lt;ej:CircularScales ShowRanges="true" SweepAngle="180" StartAngle="180" Radius="130" ShowScaleBar="false" ShowLabels="false"&gt;
+
+
+
+                   &lt;%-- To set the pointer options --%&gt;
+
+                    &lt;PointerCollection&gt;
+
+
+
+                        &lt;%-- To set the pointer type as marker --%&gt;
+
+                        <ej:Pointers Type="Marker" 
+
+
+
+                         &lt;%-- To set the needle type as rectangle --%&gt;
+
+                         MarkerType="Rectangle" 
+
+
+
+                         &lt;%-- To set the image url --%&gt;
+
+                         ImageUrl="ball.png" 
+
+
+
+                         &lt;%-- To set the pointer value --%&gt;
+
+                         Value="50" 
+
+
+
+                         &lt;%-- To set the pointer dimension --%&gt;
+
+                         Width="160" Length="30">
+
+                         &lt;Border Color="Black" Width="3" &gt;&lt;/Border&gt;
+
+                        &lt;/ej:Pointers&gt;
+
+                    &lt;/PointerCollection&gt;
+
+
+
+                    &lt;%-- To set the ticks options --%&gt;
+
+                    &lt;TickCollection&gt;
+
+                        &lt;ej:CircularTicks Height="0" Width="0" /&gt;
+
+                    &lt;/TickCollection&gt;
+
+
+
+                    &lt;%-- To set the range options --%&gt;
+
+                    &lt;RangeCollection&gt;
+
+                        <ej:CircularRanges DistanceFromScale="-30" 
+
+                                 StartValue="0" EndValue="70" Size="40">
+
+                        &lt;/ej:CircularRanges&gt;
+
+
+
+                        <ej:CircularRanges BackgroundColor="#fc0606"  
+
+                                  DistanceFromScale="-30" Size="40" 
+
+                                  StartValue="70" EndValue="100">
+
+                        &lt;Border Color="#fc0606"&gt;&lt;/Border&gt;
+
+                        &lt;/ej:CircularRanges&gt;
+
+                    &lt;/RangeCollection&gt;
+
+                &lt;/ej:CircularScales&gt;
+
+            &lt;/Scales&gt;
+
+        &lt;/ej:CircularGauge&gt;
+
+
+
+{ ![](Pointers_images/Pointers_img8.png) | markdownify }
+{:.image }
+
+
+### Multiple Pointers
+
+Circular Gauge can have multiple pointers on it. You can use any combination and any number of pointers in a Gauge. That is, a Gauge can contain any number of marker pointer and any number of needle pointers. Refer the following code example containing two pointers.
+
+
+
+[ASP]
+
+&lt;%--For Circular Gauge rendering-- %&gt;
+
+&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+
+&lt;Scales&gt;
+
+&lt;ej:CircularScales ShowscaleBar="true" BackgroundColor="#DCEBF9" Size="10" radius="110"&gt;
+
+&lt;Border Width="2" Color="green" /&gt;
+
+&lt;%--For setting pointer1-- %&gt;
+
+&lt;PointerCollection&gt;
+
+&lt;ej:Pointers Value="40" length="80" width="16" Opacity="0.6" BackgroundColor="#DCEBF9" &gt;&lt;/ej:Pointers&gt;
+
+&lt;/PointerCollection&gt;
+
+&lt;%--For setting pointer2-- %&gt;
+
+&lt;PointerCollection&gt;
+
+&lt;ej:Pointers placement="Near" Type="Marker" distanceFromScale="20"  MarkerType="Triangle" Length="20" Width="20" Value="60" backgroundColor="#DCEBF9"&gt;&lt;/ej:Pointers&gt;
+
+&lt;/PointerCollection&gt;
+
+&lt;/ej:CircularScales&gt;
+
+&lt;/Scales&gt;
+
+&lt;/ej:CircularGauge&gt;
+
+
+
+Execute the above code to render the following output.
+
+{ ![](Pointers_images/Pointers_img9.png) | markdownify }
+{:.image }
+
+
+
+
+### Pointer Value Text
+
+Gauge Pointer valuetext is used to display the current value of the pointer in the Circular Gauge control.
+
+Positioning the text
+
+You can position the Circular Gauge pointer value with the gauge as center by using the API called distance. You can Disable/ Enable these pointers value by using the API showValue.
+
+[ASPX]
+
+
+
+&lt;%--Setting basic properties -- %&gt;
+
+&lt;ej:CircularGauge runat="server" ID="CoreCircularGauge" Radius= "100" Value= "55" BackgroundColor= "transparent"&gt;
+
+
+
+&lt;%-- Setting scale properties-- %&gt;
+
+
+
+&lt;Scales&gt;
+
+&lt;ej:CircularScalesShowRanges= "true"&gt;
+
+
+
+&lt;%-- Setting ticks properties-- %&gt;
+
+
+
+&lt;TickCollection&gt;
+
+&lt;ej:CircularTicks Height= "0" Width= "0"/&gt;
+
+&lt;/TickCollection&gt;
+
+
+
+&lt;%-- Setting pointers properties -- %&gt;
+
+&lt;PointerCollection&gt;
+
+&lt;ej:Pointers&gt;
+
+<PointerValueText
+
+Color="#8c8c8c"
+
+
+
+&lt;%-- setting distance property -- %&gt;
+
+Distance="10"
+
+
+
+&lt;%--enable showValue property--%&gt;
+
+ShowValue="true">
+
+&lt;/PointerValueText&gt;
+
+&lt;/ej:Pointers&gt;
+
+&lt;/PointerCollection&gt;
+
+
+
+&lt;%--Setting range properties-- %&gt;
+
+&lt;RangeCollection&gt;
+
+&lt;ej:CircularRanges Size= "40" StartValue= "0" EndValue= "50" BackgroundColor= "#1B4279"&gt;
+
+&lt;Border Color= "#1B4279"&gt;&lt;/Border&gt;
+
+&lt;/ej:CircularRanges&gt;
+
+&lt;ej:CircularRanges Size= "40" StartValue= "50" EndValue= "100" BackgroundColor= "#91B8F3"&gt;
+
+&lt;Border Color="#91B8F3"&gt;&lt;/Border&gt;
+
+&lt;/ej:CircularRanges&gt;
+
+&lt;/RangeCollection&gt;
+
+&lt;/ej:CircularScales&gt;
+
+&lt;/Scales&gt;
+
+&lt;/ej:CircularGauge&gt;
+
+
+
+Run the above code to render the output as follows.
+
+
+
+{ ![](Pointers_images/Pointers_img10.png) | markdownify }
+{:.image }
+
+
+
+
+### Appearance
+
+Appearance of the Circular Gaugepointer value text is adjusted by using four properties. Such as color, angle, autoAngle and opacity.
+
+* Color property is used to set the color of the pointer value text.
+* Angle property is used to set the angle in which the text is displayed.
+* Auto Angle is used to display the text in certain angle based on pointer position angle.
+* Opacity is used to customize the brightness of the text. 
+
+
+
+
+
+[ASPX]
+
+&lt;%-- Setting basic properties-- %&gt;
+
+&lt;ej:CircularGauge runat="server" ID="CoreCircularGauge" Radius= "100" Value= "55" BackgroundColor= "transparent"&gt;
+
+
+
+&lt;%-- Setting scale properties -- %&gt;
+
+&lt;Scales&gt;
+
+&lt;ej:CircularScales ShowRanges= "true"&gt;
+
+
+
+&lt;%-- Setting ticks properties-- %&gt;
+
+&lt;TickCollection&gt;
+
+&lt;ej:CircularTicks Height= "0" Width= "0"/&gt;
+
+&lt;/TickCollection&gt;
+
+
+
+&lt;%-- Setting pointers properties-- %&gt;
+
+&lt;PointerCollection&gt;
+
+&lt;ej:Pointers&gt;
+
+<PointerValueText
+
+Distance="-5"
+
+ShowValue="true"
+
+
+
+&lt;%-- Setting color property-- %&gt;
+
+Color="red"
+
+
+
+&lt;%-- Setting opacity property-- %&gt;
+
+Opacity= "0.7"
+
+
+
+&lt;%--Setting angle property-- %&gt;
+
+Angle="20"
+
+
+
+&lt;%-- Setting auto angle property-- %&gt;
+
+AutoAngle="false" >
+
+&lt;/PointerValueText&gt;
+
+&lt;/ej:Pointers&gt;
+
+&lt;/PointerCollection&gt;
+
+
+
+&lt;%--Setting range properties-- %&gt;
+
+&lt;RangeCollection&gt;
+
+&lt;ej:CircularRanges Size= "40" StartValue= "0" EndValue= "50" BackgroundColor= "#1B4279"&gt;
+
+&lt;Border Color= "#1B4279"&gt;&lt;/Border&gt;
+
+&lt;/ej:CircularRanges&gt;
+
+&lt;ej:CircularRanges Size= "40" StartValue= "50" EndValue= "100" BackgroundColor= "#91B8F3"&gt;
+
+&lt;Border Color="#91B8F3"&gt;&lt;/Border&gt;
+
+&lt;/ej:CircularRanges&gt;
+
+&lt;/RangeCollection&gt;
+
+&lt;/ej:CircularScales&gt;
+
+&lt;/Scales&gt;
+
+&lt;/ej:CircularGauge&gt;
+
+
+
+Run the above code to render the output as follows.
+
+
+
+{ ![](Pointers_images/Pointers_img11.png) | markdownify }
+{:.image }
+
+
+
+
+### Font Options
+
+Similar to other collection, font option is also available in this pointer value text such as size, fontFamily and fontStyle. 
+
+[ASPX]
+
+// Setting basic properties
+
+&lt;ej:CircularGauge runat="server" ID="CoreCircularGauge" Radius= "100" Value= "55" BackgroundColor= "transparent"&gt;
+
+
+
+// Setting scale properties
+
+&lt;Scales&gt;
+
+&lt;ej:CircularScales ShowRanges= "true"&gt;
+
+
+
+// Setting ticks properties
+
+&lt;TickCollection&gt;
+
+&lt;ej:CircularTicks Height= "0" Width= "0"/&gt;
+
+&lt;/TickCollection&gt;
+
+
+
+// Setting pointers properties
+
+&lt;PointerCollection&gt;
+
+&lt;ej:Pointers&gt;
+
+<PointerValueText
+
+Distance="-5"
+
+ShowValue="true"
+
+Color="red"
+
+Opacity= "0.7"
+
+Angle="20"
+
+AutoAngle="false" >
+
+
+
+
+
+// Setting font option
+
+&lt;Font FontFamily="Arial" FontStyle="Normal" Size="15px"&gt;&lt;/Font&gt;
+
+&lt;/PointerValueText&gt;
+
+&lt;/ej:Pointers&gt;
+
+&lt;/PointerCollection&gt;
+
+
+
+// Setting range properties
+
+&lt;RangeCollection&gt;
+
+&lt;ej:CircularRanges Size= "40" StartValue= "0" EndValue= "50" BackgroundColor= "#1B4279"&gt;
+
+&lt;Border Color= "#1B4279"&gt;&lt;/Border&gt;
+
+&lt;/ej:CircularRanges&gt;
+
+&lt;ej:CircularRanges Size= "40" StartValue= "50" EndValue= "100" BackgroundColor= "#91B8F3"&gt;
+
+&lt;Border Color="#91B8F3"&gt;&lt;/Border&gt;
+
+&lt;/ej:CircularRanges&gt;
+
+&lt;/RangeCollection&gt;
+
+&lt;/ej:CircularScales&gt;
+
+&lt;/Scales&gt;
+
+&lt;/ej:CircularGauge&gt;
+
+
+
+Run the above code to render the output as follows.
+
+
+
+
+
+{ ![](Pointers_images/Pointers_img12.png) | markdownify }
+{:.image }
+
+
+Figure 31: Circular Gauge with customized font option in pointer value text.
+

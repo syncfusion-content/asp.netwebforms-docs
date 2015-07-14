@@ -1,0 +1,309 @@
+---
+layout: post
+title: Integration
+description: integration
+platform: aspnet
+control: PercentageTextBox
+documentation: ug
+---
+
+## Integration
+
+### Knockout Support
+
+Knockout support allows you to bind the HTML elements against any of the available data models. It is of two types.
+
+* One-way binding
+* Two-way binding
+
+One-way binding refers to the process of applying observable values to all the available properties of the PercentageTextbox control, but the changes made in PercentageTextbox control are not reflected and triggered in turn to the observable collection. This kind of binding applies to all the properties of the PercentageTextbox control.
+
+Two-way binding supports both the processes; it applies the observable values to the PercentageTextbox control properties as well as the changes made in the PercentageTextbox control are also reflected back and triggered within the observable collections.
+
+For more information about the Knockout Binding, refer to the following online documentation link.
+
+[http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
+
+The following example depicts the way to bind data to the PercentageTextbox control through Knockout Support that enables and populates data to the PercentageTextbox control based on the value set to the other PercentageTextbox control.
+
+{% highlight html %}
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <title></title>
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
+    <link href=" http://cdn.syncfusion.com/ {{site.releaseversion}}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>
+
+    <script src="http://cdn.syncfusion.com/ {{site.releaseversion}}/js/web/ej.web.all.min.js"></script>
+
+    <script src=" http://cdn.syncfusion.com/ {{site.releaseversion}}/js/web/ej.unobtrusive.min.js "></script>
+
+    <script src="http://cdn.syncfusion.com/ {{site.releaseversion}}/js/ej.widget.ko.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="center">
+
+        <table cellpadding="10">
+
+            <tbody>
+
+                <tr>
+
+
+
+                    <td>
+
+
+
+                        <label for="percent">Percent</label>
+
+
+
+                    </td>
+
+
+
+                    <td>
+
+
+
+                        <input id="percent" type="text" data-bind="ejPercentageTextbox: { value: pvalue }" />
+
+
+
+                    </td>
+
+
+
+                    <td>
+
+
+
+                        <input type="text" class="input ejinputtext" data-bind="value: pvalue" />
+
+
+
+                    </td>
+
+
+
+                </tr>
+
+
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script type="text/javascript">
+
+        var percentobject;
+
+        window.viewModel = {
+
+            pvalue: ko.observable(50)
+
+        }
+
+        jQuery(function ($) {
+
+            ko.applyBindings(viewModel);
+
+            percentobject = $("#percent").data("ejPercentageTextbox");
+
+
+
+            $(".input").blur(function () {
+
+                var val = parseInt(this.value);
+
+                if (!isNaN(val)) {
+
+                    percentobject.option(this.id, val);
+
+                }
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html> 
+
+
+
+{% endhighlight %}
+
+
+
+The output of Knockout binding in PercentageTextbox.
+
+{ ![http://help.syncfusion.com/ug/js/ImagesExt/image73_40.jpg](Integration_images/Integration_img1.jpeg) | markdownify }
+{:.image }
+
+
+{ ![http://help.syncfusion.com/ug/js/ImagesExt/image73_41.jpg](Integration_images/Integration_img2.jpeg) | markdownify }
+{:.image }
+
+
+### Angular Support
+
+The PercentageTextbox control supports two types of Angular JS support namely,
+
+* One-way binding
+* Two-way binding
+
+One-way binding refers to the process of applying scope values to all the available properties of the PercentageTextbox control, but the changes made in PercentageTextbox control are not reflected or triggered in turn to the scope collection. This kind of binding applies to all the properties of the PercentageTextbox control.
+
+Two-way binding supports both the processes; it applies the scope values to the PercentageTextbox properties as well as the changes made in the PercentageTextbox control also get reflected back and triggered within the angular scope change function.
+
+Apply the plugin and property assigning to the PercentageTextbox control element through the directive that starts with the letter “e-“.
+
+To know more details about the Angular binding, refer to the following link location,
+
+[http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
+
+The following example depicts the way to bind data to the PercentageTextbox control through Angular Support.
+
+{% highlight html %}
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="TextCtrl">
+
+<head>
+
+    <title></title>
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
+    <link href=" http://cdn.syncfusion.com/ {{site.releaseversion}}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>  
+
+    <script src="http://cdn.syncfusion.com/ {{site.releaseversion}}/js/web/ej.web.all.min.js"></script>
+
+    <script src="http://cdn.syncfusion.com/ {{site.releaseversion}}/js/web/ej.unobtrusive.min.js"></script>
+
+    <script src="http://cdn.syncfusion.com/ {{site.releaseversion}}/js/ej.widget.angular.min.js"></script>
+
+</head>
+
+<body ng-controller="TextboxCtrl">
+
+    <div id="center">
+
+        <table cellpadding="10">
+
+            <tbody>
+
+                 <tr>
+
+
+
+                    <td>
+
+
+
+                        <label for="percent">Percent</label>
+
+
+
+                    </td>
+
+
+
+                    <td>
+
+
+
+                        <input id="percent" type="text" ej-percentagetextbox e-value="pvalue" />
+
+
+
+                    </td>
+
+
+
+                    <td>
+
+
+
+                        <input type="text" class="input ejinputtext" ng-model="pvalue" />
+
+
+
+                    </td>
+
+
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script type="text/javascript">
+
+        angular.module('TextCtrl', ['ejangular'])
+
+           .controller('TextboxCtrl', function ($scope) {
+
+               $scope.pvalue = 400;
+
+           });
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+{% endhighlight %}
+
+
+
+The output of PercentageTextbox controls with two-way angular bindingis as follows.
+
+{ ![http://help.syncfusion.com/ug/js/ImagesExt/image73_42.jpg](Integration_images/Integration_img3.jpeg) | markdownify }
+{:.image }
+
+
+
+
+__
+

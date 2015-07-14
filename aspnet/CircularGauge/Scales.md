@@ -1,0 +1,269 @@
+---
+layout: post
+title: Scales
+description: scales
+platform: aspnet
+control: Circular Gauge
+documentation: ug
+---
+
+## Scales
+
+Scales are the basic functional block of the Circular Gauge. By customizing the scales, the appearance of the Gauge can be improved. The functional blocks of Circular Gauge are 
+
+* Pointers
+* Labels
+* CustomLabels
+* Indicators
+* Ticks
+* Ranges
+* Subgauges.
+
+
+
+### Adding Scale Collection
+
+Scale collection is directly added to the Gauge object. Refer the following code example to add scale collection in Gauge control.
+
+
+
+[ASP]
+
+
+
+&lt;%--For Circular Gauge rendering-- %&gt;
+
+&lt;ej:CircularGauge runat="server" Id="CircularGauge1"&gt;
+
+&lt;Scales&gt;
+
+&lt;ej:CircularScales  Radius="130"&gt;
+
+&lt;/ej:CircularScales&gt;
+
+&lt;/Scales&gt;
+
+&lt;/ej:CircularGauge&gt;
+
+
+
+Execute the above code to render the following output.
+
+{ ![](Scales_images/Scales_img1.png) | markdownify }
+{:.image }
+
+
+
+
+### Scale Customization
+
+Colors and Border
+
+* The Scale border is modified with the object called border. It has two border property namely color and width which are used to customize the border color of the scale and border width of the scale. 
+* Setting the background color improves the look and feel of the Circular Gauge. You can customize the background color of the scale using backgroundColor. 
+
+
+[ASP]
+
+
+
+&lt;%--For Circular Gauge rendering-- %&gt;
+
+&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+
+&lt;Scales&gt;
+
+&lt;ej:CircularScales ShowScaleBar="true" Radius="110" BackgroundColor="Red"&gt;
+
+&lt;%--For setting scale border width and color-- %&gt;
+
+&lt;Border Width="3" Color="blue" /&gt;
+
+&lt;PointerCollection&gt;
+
+&lt;ej:Pointers Length="80"&gt;&lt;/ej:Pointers&gt;
+
+&lt;/PointerCollection&gt;
+
+&lt;/ej:CircularScales&gt;
+
+&lt;/Scales&gt;
+
+&lt;/ej:CircularGauge&gt;
+
+
+
+Execute the above code to render the following output.
+
+
+
+{ ![](Scales_images/Scales_img2.png) | markdownify }
+{:.image }
+
+
+
+
+
+
+Pointer Cap
+
+* Pointer cap is a circular shape element that is located at the center of the Circular Gauge. The pointer cap is one of the cynosure of the Circular Gauge. By customizing the pointer cap, Gauge style is improved. The pointer cap is modified with the object pointerCap. 
+* It contains radius, borderColor, bordrWidth, interiorGradient and backgroundColor properties. The property radius is used to set the radius for the pointer cap. interiorGradient is used to provide the gradient effects to the pointer cap.
+
+
+
+
+
+
+
+
+
+[ASP]
+
+
+
+&lt;%--For Circular Gauge rendering-- %&gt;
+
+&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+
+&lt;Scales&gt;
+
+&lt;ej:CircularScales&gt;
+
+<PointerCap Radius="10" BackgroundColor="Red"
+
+BorderColor="Blue" BorderWidth="4">
+
+&lt;/PointerCap&gt;
+
+&lt;/ej:CircularScales&gt;
+
+&lt;/Scales&gt;
+
+&lt;/ej:CircularGauge&gt;
+
+
+
+Execute the above code to render the following output.
+
+{ ![](Scales_images/Scales_img3.png) | markdownify }
+{:.image }
+
+
+Appearance
+
+* Circular Gauge contains two types of scale direction such as clockwise and counter clockwise. You can set them by enumerable property called direction. And you can set the minimum and maximum values for the scale with the properties minimum and maximum. The two properties minorIntervalValue and majorIntervalValue are the values used to set interval value for the ticks and labels. 
+* The radius property is used to set the radius value for the circular scale and the size property is used to set the scale bar width. You can also adjust the Opacity of the scale with the property opacity. The value for opacity lies between 0 and 1. You can also give some shadow effects for the scale by using the property shadowOffset. The property startAngle is used to set starting position of the scale at certain angle and sweepAngle is used to shrink or expand the scale to certain angle. 
+
+
+
+
+
+[ASP]
+
+
+
+&lt;%--For Circular Gauge rendering-- %&gt;
+
+&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+
+&lt;%--For setting scale bar size, scale radius, minimum value, maximum value, majorinterval value, minorinterval value and direction-- %&gt;
+
+&lt;Scales&gt;
+
+&lt;ej:CircularScales Size="30" BackgroundColor="red" opacity="0.5" ShadowOffset="20" minimum="20" Maximum="120" MajorIntervalValue="20" MinorIntervalValue="5" Direction="CounterClockwise"&gt;
+
+&lt;/ej:CircularScales&gt;
+
+&lt;/Scales&gt;
+
+&lt;/ej:CircularGauge&gt;
+
+
+
+Execute the above code to render the following output.
+
+{ ![C:/Users/karthigeyan/Desktop/1.png](Scales_images/Scales_img4.png) | markdownify }
+{:.image }
+
+
+
+
+Enable/Disable properties
+
+You can enable / disable properties in Circular Gauge using some properties in scale collection. The showIndicators property is used to enable/disable the indicators. ShowLabels, showTicks, showRanges, showPointers ans showScaleBar are used to enable/ disable labels, ticks, ranges, pointers and scale bar respectively. 
+
+
+
+### Multiple Scales
+
+You can set Multiple scales for a single Circular Gauge control by using an array of scale objects. Each scale object is independent of each other. The following code example refers to two scale objects in a Gauge.
+
+
+
+[ASP]
+
+
+
+&lt;%--For Circular Gauge rendering-- %&gt;
+
+&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+
+&lt;Scales&gt;
+
+&lt;%--For setting scale1 -- %&gt;
+
+&lt;ej:CircularScales ShowScalebar="true" Size="10" radius="150" ShadowOffset="20" minimum="20" Maximum="120" MajorIntervalValue="20" MinorIntervalValue="5" Direction="Clockwise"&gt;
+
+&lt;PointerCollection&gt;
+
+&lt;ej:Pointers Value="50" ShowBackNeedle="true" Length="120" Width="7" BackNeedleLength="0"&gt;&lt;/ej:Pointers&gt;
+
+&lt;/PointerCollection&gt;
+
+&lt;/ej:CircularScales&gt;
+
+&lt;%--For setting scale2 -- %&gt;
+
+
+
+&lt;ej:CircularScales ShowScalebar="false" Size="10" radius="80" opacity="0.5" ShadowOffset="5" MajorIntervalValue="10"  Direction="CounterClockwise"&gt;
+
+&lt;labelCollection&gt;
+
+&lt;ej:CircularLabels DistanceFromScale="-40" Color="red"&gt;&lt;/ej:CircularLabels&gt;
+
+&lt;/labelCollection&gt;
+
+&lt;TickCollection&gt;
+
+&lt;ej:CircularTicks Color="red"/&gt;
+
+&lt;/TickCollection&gt;
+
+&lt;PointerCollection&gt;
+
+&lt;ej:Pointers Value="40" distanceFromScale="-30" Length="50"&gt;&lt;/ej:Pointers&gt;
+
+&lt;/PointerCollection&gt;
+
+&lt;/ej:CircularScales&gt;
+
+&lt;/Scales&gt;
+
+&lt;/ej:CircularGauge&gt;
+
+
+
+
+
+
+
+Execute the above code to render the following output.
+
+{ ![](Scales_images/Scales_img5.png) | markdownify }
+{:.image }
+
+
+
+

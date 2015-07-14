@@ -1,0 +1,119 @@
+---
+layout: post
+title: Tooltip
+description: tooltip
+platform: aspnet
+control: RangeNavigator
+documentation: ug
+---
+
+## Tooltip
+
+RangeNavigator provides Tooltip support for sliders. Sliders are used to select data at particular range in the RangeNavigator control. Tooltips for sliders display the selected start and end DateTime values.
+
+Customization
+
+RangeNavigator provides support for you to customize the text display in the tooltip and background using TooltipSettings property. You can change font family, font color, font style, font weight. By default “Segoe UI” font family is set to tooltip text.
+
+
+ [ASP.NET]
+
+&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" Locale="fr-FR"&gt;
+
+&lt;TooltipSettings Visible="True" BackgroundColor="black" TooltipDisplayMode="ondemand"&gt;        
+
+        &lt;Font Color="red"  Family="Segoe UI" Style="Normal" FontSize="12px"  Opacity="1" Weight="Regular"&gt;&lt;/Font&gt;
+
+&lt;/TooltipSettings&gt;
+
+  &lt;%--Code --%&gt;
+
+  &lt;%--Code --%&gt;
+
+&lt;/ej:RangeNavigator&gt;
+
+
+
+{ ![](Tooltip_images/Tooltip_img1.png) | markdownify }
+{:.image }
+
+
+Label Format
+
+By default, the tooltip texts are automatically determined based on the data points.  To make it readable and understandable you can format the tooltip text. For DateTime data, all globalized format are supported. By default the LabelFormat is "MM/dd/yyyy".
+
+Some of the LabelFormat for DateTime data are as follows:
+
+* 'MMM, yyyy'
+* 'dd, MMM'
+* 'dd/MM/yyyy'
+* 'dd, hh:mm'
+* 'hh:mm:ss'
+* 'hh:mm:ss:tt'
+
+
+
+
+[ASP.NET]
+
+
+
+        &lt;ej:RangeNavigator ID="Range1" runat="server"&gt;
+
+            &lt;TooltipSettings LabelFormat="MMM, yyyy"&gt;&lt;/TooltipSettings&gt;
+
+            . . . . . . .
+
+            . . . . . . .
+
+        &lt;/ej:RangeNavigator&gt;
+
+
+
+
+{ ![](Tooltip_images/Tooltip_img2.png) | markdownify }
+{:.image }
+
+
+Tooltip display mode
+
+By default the tooltip for RangeNavigator gets displayed. You can change this behavior using the TooltipDisplayMode property in the tooltip and it takes the following values.
+
+_Table_ _1__: Tooltip values_
+
+<table>
+<tr>
+<td>
+Value</td><td>
+Description</td></tr>
+<tr>
+<td>
+always</td><td>
+Tooltip get displayed for RangeNavigator always.</td></tr>
+<tr>
+<td>
+ondemand</td><td>
+Tooltip get displayed only when we move the slider.</td></tr>
+</table>
+
+
+[ASP.NET]
+
+&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" Locale="fr-FR"&gt;
+
+&lt;TooltipSettings Visible="True" TooltipDisplayMode="ondemand"&gt;   
+
+&lt;/TooltipSettings&gt;
+
+  &lt;%--Code --%&gt;
+
+  &lt;%--Code --%&gt;
+
+&lt;/ej:RangeNavigator&gt;
+
+
+
+{ ![](Tooltip_images/Tooltip_img3.png) | markdownify }
+{:.image }
+
+
