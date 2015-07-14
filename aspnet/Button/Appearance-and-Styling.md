@@ -7,9 +7,9 @@ control: Button
 documentation: ug
 ---
 
-## Appearance and Styling 
+# Appearance and Styling 
 
-### Theme support
+## Theme support
 
 You can control the style and appearance of Button control based on CSS classes. In order to apply styles to the Button control, you can refer two files namely, ej.widgets.core.min.css and ej.theme.min.css. When you refer the ej.widgets.all.min.cssfile, then it is not necessary to include the files ej.widgets.core.min.cssand ej.theme.min.cssin your project as ej.widgets.all.min.css is the combination of these two. 
 
@@ -28,7 +28,8 @@ By default, there are 13 themes support available for Button control.
 * gradient-saffron
 * gradient-saffron-dark
 * bootstrap-theme
-### Custom CSS
+
+## Custom CSS
 
 
 You can customize the appearance of Button control by using the CSS class. Define a CSS class as per requirement and assign the class name to CssClass property.
@@ -58,8 +59,6 @@ In the ASPX page, add the CssClass property in button elements for get the custo
 <ej:Button ID="Button_CustomCss5" runat="server" Type="Button" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-uiLight e-handup" CssClass="customCss5">
 
 </ej:Button>
-
-
 
 {% endhighlight %}
 
@@ -153,7 +152,7 @@ Configure the CSS styles to apply on buttons.
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 {:.image }
 
 

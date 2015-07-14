@@ -7,7 +7,7 @@ control: Button
 documentation: ug
 ---
 
-## Repeat Button
+# Repeat Button
 
 When you press button continuously, click event is raised at each specific time interval. This type of button is called Repeat Button. This functionality repeatedly raises the click event of button in both button click and from button in pressed state to the released state. TimeIntervalproperty is used to specify the time Interval for triggering click event, when the button is in pressed state.RepeatButtonproperty is used to set the button in repeat mode.
 
@@ -87,7 +87,7 @@ Configure the CSS styles to apply on button
 
 
 
-{ ![](Repeat-Button_images/Repeat-Button_img1.png) | markdownify }
+![](Repeat-Button_images/Repeat-Button_img1.png)
 {:.image }
 
 

@@ -7,7 +7,7 @@ control: Button
 documentation: ug
 ---
 
-## Button Type
+# Button Type
 
 Button is used as normal clickable button, submitting form data, resetting the form data to its initial value. According to the usage of button, you can render the button in three types. By using the Typeproperty, you can easily render the button in following types.
 
@@ -61,7 +61,7 @@ In the ASPX page, add the following button elements to configure Button with var
 
 
 
-{ ![](Button-Type_images/Button-Type_img1.png) | markdownify }
+![](Button-Type_images/Button-Type_img1.png)
 {:.image }
 
 

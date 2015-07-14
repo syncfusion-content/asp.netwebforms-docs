@@ -7,7 +7,7 @@ control: Button
 documentation: ug
 ---
 
-## Server Side Events
+# Server Side Events
 
 The following server side event is available in Button control.
 

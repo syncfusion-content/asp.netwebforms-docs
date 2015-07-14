@@ -7,11 +7,11 @@ control: Button
 documentation: ug
 ---
 
-## Easy Customization
+# Easy Customization
 
 Button is used in all applications. Button size, content and content location is varied according to each application. Here, you can see some customizable option for button that can perform easily. 
 
-### Button Size	
+## Button Size	
 
 You can render the button in different sizes. Here, you have some predefined size options for rendering a button with different sizes in easiest way. Each size option has different height and width. Mainly it avoids the complexity in rendering button with complex CSS class. 
 
@@ -87,11 +87,11 @@ In the ASPX page, add the following button elements to configure button for conf
 
 
 
-{ ![](Easy-Customization_images/Easy-Customization_img1.png) | markdownify }
+![](Easy-Customization_images/Easy-Customization_img1.png)
 {:.image }
 
 
-### Content Type
+## Content Type
 
 The content of the Button is mainly text and images. Instead of using complex CSS classes to render Button with different content types, you can use some predefined content type options provided for Button control. By using these content types, you can easily add different types of content for button. Button supports the following content types.
 
@@ -117,7 +117,8 @@ Supports image with the text content.</td></tr>
 ImageTextImage</td><td>
 Supports image with both ends and middle in text.</td></tr>
 </table>
-### Prefix and suffix icons
+
+## Prefix and suffix icons
 
 Icons inside the Button are added easily by using the PrefixIcon andSuffixIconproperty. Location of the icon in button is necessary and you can easily customize it by using the following mentioned options.
 
@@ -133,12 +134,13 @@ For example, the following mentioned build-in CSS class are used to show the fon
 * e-mediaclose
 * e-mediapause
 * e-mediaplay
-#### Prefix Icon
+
+### Prefix Icon
 
 
 It inserts the icon at the starting position of button. After this prefix icon, you can use text or suffix icon.
 
-#### Suffix Icon
+### Suffix Icon
 
 It inserts the icon at the ending position of button. Before this suffix icon, you can use text or prefix icon.
 
@@ -212,11 +214,11 @@ SuffixIcon="e-uiLight e-palette">
 
 
 
-{ ![](Easy-Customization_images/Easy-Customization_img2.png) | markdownify }
+![](Easy-Customization_images/Easy-Customization_img2.png)
 {:.image }
 
 
-### Image Position
+## Image Position
 
 To provide the best look and feel for Button, position of button images is an important customizable option. With ImagePositionproperty, you can easily customize the position of images inside the button without using any complex CSS. ImagePosition property is applicable only with the TextAndImage ContentType property. This property supports the following values.
 
@@ -322,7 +324,7 @@ In the ASPX page, add the following button elements to configure Button image po
 
 
 
-{ ![](Easy-Customization_images/Easy-Customization_img3.png) | markdownify }
+![](Easy-Customization_images/Easy-Customization_img3.png)
 {:.image }
 
 
