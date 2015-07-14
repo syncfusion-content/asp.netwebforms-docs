@@ -11,9 +11,9 @@ documentation: ug
 
 This section explains you briefly on how to create a Barcode in your application with ASP.NET.
 
-Control Structure
+## Control Structure
 
-{ ![Description: C:/Users/labuser/Desktop/barcode.png](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+![Description: C:/Users/labuser/Desktop/barcode.png](Getting-Started_images/Getting-Started_img1.png) 
 {:.image }
 
 
@@ -25,13 +25,13 @@ The following guideline explains you on how to create a QR barcode for a real ti
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img2.png) 
 {:.image }
 
 
 By default, ASP.NET Barcode renders gray scale colors with predefined Quiet zone. Quiet zone is the blank margin on the side(s) that denotes the start and stop of the Barcode. It also provides you flexible API’s to customize the appearance of the Barcode. 
 
-Referencing Assemblies
+### Referencing Assemblies
 
 You can create a Web Project, add necessary assemblies and Scripts with the help of the following Getting Started Documentation.
 
@@ -45,7 +45,7 @@ These Syncfusion assemblies can either be referenced from Global Assembly Cache 
 
 [Installed Drive]:\Program Files (x86)\Syncfusion\Essential Studio\X.X.X.X\precompiledassemblies\X.X.X.X
 
-Configuring Web.Config
+### Configuring Web.Config
 
 Web.config file is configured according to the referenced assemblies. The steps to configure the file are as follows.
 
@@ -87,8 +87,7 @@ Web.config file is configured according to the referenced assemblies. The steps 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
-{:.image }
+
 _Note: X.X.X.X in the above code corresponds to the correct version number of the Essential Studio version that you are currently using._
 
 
@@ -160,7 +159,7 @@ _Note: X.X.X.X in the above code corresponds to the correct version number of th
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img4.png) 
 {:.image }
 
 

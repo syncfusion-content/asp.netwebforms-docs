@@ -7,7 +7,7 @@ control: Barcode
 documentation: ug
 ---
 
-## Two Dimensional Barcodes
+# Two Dimensional Barcodes
 
 QR Barcode
 

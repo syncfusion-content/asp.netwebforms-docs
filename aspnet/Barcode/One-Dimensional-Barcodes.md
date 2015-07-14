@@ -7,7 +7,7 @@ control: Barcode
 documentation: ug
 ---
 
-## One Dimensional Barcodes
+# One Dimensional Barcodes
 
 Code 39
 

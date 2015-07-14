@@ -7,7 +7,7 @@ control: Barcode
 documentation: ug
 ---
 
-## Barcode types and supported characters
+# Barcode types and supported characters
 
 The following table contains the supported types and associated valid characters.
 
