@@ -17,17 +17,17 @@ This section encompasses the details on how to configure the RangeNavigator and 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img1.png)
 {:.image }
 
 
-Create a simple ASP.NET Application for RangeNavigator
+## Create a simple ASP.NET Application for RangeNavigator
 
  You can create a new ASP.NET Rangenavigator using Syncfusion ASP.NET website template.
 
 1. On the File menu, click NewWeb Site. The New Web Site dialog box opens.
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img2.png)
 {:.image }
 
 
@@ -75,46 +75,46 @@ Create a simple ASP.NET Application for RangeNavigator
 
 10. Syncfusion .CSS  and Script files are added in Content and Script folder
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img3.png)
 {:.image }
 
 
 11. ASP Script Manager, Syncfusion CSS and Scripts file references are added from the respective folder in Site.Master page.
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img4.png)
 {:.image }
 
 
 12. Syncfusion EJ and EJ.Web dll added in website property page
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img5.png)
 {:.image }
 
 
 13. Now you can find Rangenavigator custom control in the Syncfusion Toolbox.
 14. Click on Rangenavigator icon and drag and drop in your web page.
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img6.png)
 {:.image }
 
 
 15. In designer page now RangeNavigator designer image will be created.
 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+![C:/Users/ApoorvahR/Desktop/Note.png](Getting-Started_images/Getting-Started_img7.png)
 {:.image }
 _Note: If you use web application, you will need to follow the above steps manually to use the Syncfusion controls._
 
-Configure RangeNavigator
+## Configure RangeNavigator
 
 Getting started with your ASP RangeNavigator is simple; all you need to do is initialize the RangeNavigator by setting range values.
 
 The following Screen shot displays the RangeNavigator with a range from 2010 January 1st to December 31st.
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img8.png)
 {:.image }
 
 
-Add series
+## Add series
 
 To add a series to RangeNavigator, you need to set DataSource property, as given in the following code example. 
 
@@ -122,7 +122,7 @@ You can add JSON data to the Range Navigator using the Datasource property.
 
 In Default.ASPX.cs specify the data for data source.
 
-[CS]
+{% highlight c# %}
 
 
 
@@ -198,11 +198,11 @@ class NavigatorData
 
         }
 
-
+{% endhighlight %}
 
 In Default.ASPX specify the type of series you want to render using “Type” property. And specify the Datasource to the series of RangeNavigator.
 
-[ASP.NET]
+{% highlight html %}
 
 
 
@@ -219,14 +219,14 @@ The following screenshot displays the RangeNavigator with the type series as “
 { ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
 {:.image }
 
+{% endhighlight %}
 
-Enable tooltip
+## Enable tooltip
 
 Tooltip can be customized for RangeNavigator using Tooltip option. You can also use ToolipDisplayMode option in Tooltip to display the tooltip “always” or “ondemand” (displays tooltip only while dragging the sliders). You can also specify label format for tooltip using LabelFormat.
 
-[ASP.NET]
 
-
+{% highlight html %}
 
 &lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" XName="xDate" YName="yValue"&gt;
 
@@ -238,13 +238,13 @@ Tooltip can be customized for RangeNavigator using Tooltip option. You can also 
 
 The following screen shot displays the label format Tooltip in RangeNavigator:
 
+{% endhighlight %}
 
-
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img10.png)
 {:.image }
 
 
-Update Chart
+## Update Chart
 
 RangeNavigator is used along with the controls like chart and grid to view the range of data selected in RangeNavigator. 
 
@@ -252,7 +252,7 @@ In order to update chart, whenever the selected range changes in RangeNavigator,
 
 Now, add the DataSource to the series and provide the field name to get the values from the DataSource in XName and YName options and also trigger the RangeChanged event for updating the chart.
 
-[CS]
+{% highlight c# %}
 
 List<NavigatorData> dataTable = new List<NavigatorData>();
 
@@ -277,8 +277,10 @@ List<NavigatorData> dataTable = new List<NavigatorData>();
             this.RangeNavigator1.DataSource = dataTable;
 
             this.RangeNavigator1.DataBind();
+			
+			{% endhighlight %}
 
-[ASP.NET]
+{% highlight html %}
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;
 
@@ -306,10 +308,11 @@ List<NavigatorData> dataTable = new List<NavigatorData>();
 
 &lt;/ej:RangeNavigator&gt;
 
+{% endhighlight %}
 
 The following code example illustrates how to use the RangeChanged event of RangeNavigator for updating the chart with the selected data.
 
-[JavaScript]
+{% highlight js %}
 
 &lt;script type="text/javascript" language="javascript"&gt;
 
@@ -329,22 +332,21 @@ function onrangechanged(sender) {
 
 &lt;/script&gt;
 
+{% endhighlight %}
 
 The following screenshot displays how the RangeNavigator is updated when the selected range is changed.
 
-{ ![](Getting-Started_images/Getting-Started_img11.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img11.png)
 {:.image }
 
 
-Set value type
+## Set value type
 
 RangeNavigator can also be used with numerical values. You can specify the data type using ValueType option. 
 
 First let’s create a DataSource for Chart Series with integer Values. 
 
-[CS] 
-
-
+{% highlight c# %} 
 
 List<NavigatorData> dataTable = new List<NavigatorData>();
 
@@ -416,10 +418,11 @@ List<NavigatorData> dataTable = new List<NavigatorData>();
 
         }
 
-
+		{% endhighlight %}
+		
 In Default.ASPX specify the DataSource to the series and provide the field name to get the values from the DataSource in XName and YName options series and also set the ValueType property to “numeric” as given in the following code example. 
 
-[ASP.NET]
+{% highlight html %}
 
 
 
@@ -433,10 +436,11 @@ In Default.ASPX specify the DataSource to the series and provide the field name 
 
 &lt;/ej:RangeNavigator&gt;       
 
+{% endhighlight %}
 
 The following screenshot displays the RangeNavigator with numerical values:
 
-{ ![](Getting-Started_images/Getting-Started_img12.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img12.png) 
 {:.image }
 
 

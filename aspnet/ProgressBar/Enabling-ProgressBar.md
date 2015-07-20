@@ -7,7 +7,7 @@ control: ProgressBar
 documentation: ug
 ---
 
-## Enabling ProgressBar
+# Enabling ProgressBar
 
 You can enable the Progressbar by using the Enabled Property. When this property set to false, it disables the ProgressBar control. By default, Enabled property is set to true.
 
@@ -27,7 +27,7 @@ Add the following code example to the corresponding ASPX page to disable the Pro
 
 The following screenshot displays the Enabled property.
 
-{ ![](Enabling-ProgressBar_images/Enabling-ProgressBar_img1.png) | markdownify }
+![](Enabling-ProgressBar_images/Enabling-ProgressBar_img1.png)
 {:.image }
 
 

@@ -7,10 +7,9 @@ control: ColorPicker
 documentation: ug
 ---
 
-## Server Side Events
+# Server Side Events
 
 The server side events present in the ColorPicker control are as follows.
-
 
 
 <table>
@@ -25,7 +24,6 @@ OnSelect</td><td>
 triggers on selecting any color</td><td>
 e.Value– Value of the Colorpickere.EventType – Event Namee.Arguments – Contain keys and value of Colorpicker</td></tr>
 </table>
-
 
 
 

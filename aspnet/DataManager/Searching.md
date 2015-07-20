@@ -7,9 +7,11 @@ control: DataManager
 documentation: ug
 ---
 
-## Searching
+# Searching
 
 Searching is a basic query technique in data manager. It is used to filter the records from the entire data source based on the search key parameter.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -41,11 +43,11 @@ Searching is a basic query technique in data manager. It is used to filter the r
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of above code example is illustrated as follows.
 
-{ ![](Searching_images/Searching_img1.png) | markdownify }
+![](Searching_images/Searching_img1.png)
 {:.image }
 
 

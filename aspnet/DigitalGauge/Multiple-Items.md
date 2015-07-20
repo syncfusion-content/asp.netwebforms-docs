@@ -7,7 +7,7 @@ control: Digital Gauge
 documentation: ug
 ---
 
-## Multiple Items 
+# Multiple Items 
 
 The text in the Digital Gauge is positioned with position object. This object contains two attributes such as x and y. The x variable positions the text in the horizontal axis and y variable positions the text in the vertical axis.
 
@@ -15,7 +15,7 @@ The text in the Digital Gauge is positioned with position object. This object co
 
 
 
-[ASP]
+{% highlight html %}
 
 &lt;ej:DigitalGauge runat="server" ID="DigitalGauge1" Width="500" Height="300"&gt;
 
@@ -100,14 +100,14 @@ The text in the Digital Gauge is positioned with position object. This object co
 &lt;/ej:DigitalGauge&gt;
 
 
-
+{% endhighlight %}
 
 
 Execute the above code example to render the DigitalGauge as follows.
 
 
 
-{ ![](Multiple-Items_images/Multiple-Items_img1.png) | markdownify }
+![](Multiple-Items_images/Multiple-Items_img1.png)
 {:.image }
 
 

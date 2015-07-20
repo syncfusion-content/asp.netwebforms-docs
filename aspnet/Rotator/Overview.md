@@ -11,7 +11,7 @@ documentation: ug
 
 The Essential JavaScript and ASP.NET MVCRotator control displays a set of slides. Each slide contains images or images with content or content with user-defined transition between them. It supports Data Binding, Thumbnail, Pager, dynamic number of slide move options, and all custom animations. It supports all types of image formats (JPEG, GIF, and so on).
 
-Key Features
+## Key Features
 
 * Data Binding: Supports data binding with JSON data as well as remote data.
 * Image with Content: Support to render an image, content, or image with content.

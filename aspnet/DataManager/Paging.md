@@ -7,15 +7,17 @@ control: DataManager
 documentation: ug
 ---
 
-## Paging
+# Paging
 
 Paging is a very important query in DataManager that is used to display only some records from the large data source. 
 
-Default
+## Default
 
 The paging index and the paging size parameters of the paging query determines the number of records to be retrieved from the data source of the DataManager.
 
 Refer to the following code example for the paging options.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -53,17 +55,19 @@ Refer to the following code example for the paging options.
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result for the above code example is illustrated as follows.
 
-{ ![](Paging_images/Paging_img1.png) | markdownify }
+![](Paging_images/Paging_img1.png)
 {:.image }
 
 
-Dynamic Paging
+## Dynamic Paging
 
 The paging operation can be dynamically performed by using the DataManager. With the help of an external button click event, the required page records can be obtained and processed accordingly. The following code example illustrates the dynamic paging.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -131,17 +135,19 @@ The paging operation can be dynamically performed by using the DataManager. With
 
  &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of above code example is illustrated as follows.
 
-{ ![](Paging_images/Paging_img2.png) | markdownify }
+![](Paging_images/Paging_img2.png)
 {:.image }
 
 
-Custom paging
+## Custom paging
 
 In this section, you can learn how to use customized paging. The following code example illustrates the custom paging.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -183,17 +189,19 @@ In this section, you can learn how to use customized paging. The following code 
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of above code example is illustrated as follows.
 
-{ ![](Paging_images/Paging_img3.png) | markdownify }
+![](Paging_images/Paging_img3.png)
 {:.image }
 
 
-Skip
+## Skip
 
 The skip query is used to skip some number of records.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -233,17 +241,19 @@ The skip query is used to skip some number of records.
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
-{ ![](Paging_images/Paging_img4.png) | markdownify }
+![](Paging_images/Paging_img4.png)
 {:.image }
 
 
-Take
+## Take
 
 The take query is used to get some certain number of records from the data source of the DataManager.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -281,17 +291,19 @@ The take query is used to get some certain number of records from the data sourc
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
-{ ![](Paging_images/Paging_img5.png) | markdownify }
+![](Paging_images/Paging_img5.png)
 {:.image }
 
 
-RequiresCount
+## RequiresCount
 
 The requiresCount query is used to get the count of the total number of records in the data source of the DataManager.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -331,17 +343,19 @@ The requiresCount query is used to get the count of the total number of records 
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
-{ ![](Paging_images/Paging_img6.png) | markdownify }
+![](Paging_images/Paging_img6.png)
 {:.image }
 
 
-Range
+## Range
 
 The range query is used to get some particular range of records from the data source of the DataManager.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -379,11 +393,11 @@ The range query is used to get some particular range of records from the data so
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
-{ ![](Paging_images/Paging_img7.png) | markdownify }
+![](Paging_images/Paging_img7.png)
 {:.image }
 
 

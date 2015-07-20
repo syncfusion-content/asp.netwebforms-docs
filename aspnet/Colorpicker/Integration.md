@@ -7,9 +7,9 @@ control: ColorPicker
 documentation: ug
 ---
 
-## Integration
+# Integration
 
-### Angular Binding
+## Angular Binding
 
 The ColorPicker control is availed with two types of angular JS support namely, 
 
@@ -130,11 +130,11 @@ The following code example explains how to bind data to the ColorPicker control 
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Integration_images/Integration_img1.png) | markdownify }
+![](Integration_images/Integration_img1.png)
 {:.image }
 
 
-### Knockout Binding
+## Knockout Binding
 
 Knockout support allows you to bind the HTML elements against any of the available data models.
 
@@ -253,7 +253,7 @@ The following code example explains how you can bind data to the ColorPicker con
 
 The following screenshot displays the output of the above code.
 
-{ ![](Integration_images/Integration_img2.png) | markdownify }
+![](Integration_images/Integration_img2.png)
 {:.image }
 
 

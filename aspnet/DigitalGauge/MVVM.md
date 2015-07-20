@@ -7,17 +7,19 @@ control: Digital Gauge
 documentation: ug
 ---
 
-## MVVM
+# MVVM
 
-Angular JS
+## Angular JS
 
 Digital Gauge contains angular support. It is possible to add object as well as array object in the Digital Gauge. The two way binding support is given to the value for displaying the text. 
 
 
 
-### Rendering the Digital Gauge
+## Rendering the Digital Gauge
 
 ej-DigitalGauge is the control tag, where ej is tag prefix and DigitalGauge is the control name.Digital Gauge is rendered with the following code example.
+
+{% highlight html %}
 
 &lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
 
@@ -53,21 +55,23 @@ $scope.nvalue = "text";
 
 &lt;/script&gt;
 
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
-{ ![](MVVM_images/MVVM_img1.png) | markdownify }
+![](MVVM_images/MVVM_img1.png)
 {:.image }
 
 
 Figure 38: Default Digital Gauge in Angular JS
 
-### Adding the Digital Gauge Items
+## Adding the Digital Gauge Items
 
 Digital Gauge is rendered with the following code example. You can extend the Object in the array collection such as, position, characterSetting, segmentSetting, etc. with hyphen in the same tag.
 
 Example: e-position-x. 
+
+{% highlight html %}
 
 &lt;!--To Render the Digital gauge--&gt;
 
@@ -104,12 +108,14 @@ Finally while running the above codes, the following output will be rendered.
 { ![](MVVM_images/MVVM_img2.png) | markdownify }
 {:.image }
 
+{% endhighlight %}
 
 
-
-### Two Way Binding
+## Two Way Binding
 
 Digital Gauge supports the two way biding for the property value as mentioned earlier. Following code example explains how to achieve the two way binding to the Digital Gauge.
+
+{% highlight html %}
 
 &lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
 
@@ -162,18 +168,18 @@ $scope.nvalue = "Syncfusion";
 &lt;/script&gt;
 
 
-
+{% endhighlight %}
 
 
 Execute the above code to render the following output.
 
-{ ![](MVVM_images/MVVM_img3.png) | markdownify }
+![](MVVM_images/MVVM_img3.png)
 {:.image }
 
 
 
 
-### Knockout Binding
+## Knockout Binding
 
 
 
@@ -187,7 +193,7 @@ Execute the above code to render the following output.
 
 
 
-[ASPX]
+{% highlight html %}
 
 &lt;%--For Linear Gauge rendering-- %&gt;
 
@@ -219,12 +225,13 @@ $("#sampleProperties").ejPropertiesPanel();
 
 &lt;/script&gt;
 
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
 
 
-{ ![C:/Users/karthigeyan/Desktop/q.png](MVVM_images/MVVM_img4.png) | markdownify }
+![C:/Users/karthigeyan/Desktop/q.png](MVVM_images/MVVM_img4.png)
 {:.image }
 
 
@@ -252,7 +259,7 @@ Execute the above code to render the following output.
 
 
 
-_Figure_ _4__1: Digital Gauge with Knockout binding_
+_Figure_ _4_1: Digital Gauge with Knockout binding_
 
 
 

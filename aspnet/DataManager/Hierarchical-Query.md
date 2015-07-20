@@ -7,15 +7,17 @@ control: DataManager
 documentation: ug
 ---
 
-## Hierarchical Query
+# Hierarchical Query
 
 The DataManager contains support to manage the hierarchical query. The hierarchical queries are commonly required when you use foreign key binding. The hierarchical query can be provided by using the hierarchical function. This method accepts two parameters such as the query and the selector function. 
 
-foreignKey
+## foreignKey
 
 The foreignkey method of ej.Query can be used to refer to another table fields. The foreignkey method accepts one parameter that is the foreign key value. 
 
 The following code example illustrates the hierarchical query and foreignkey method. 
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -75,11 +77,11 @@ The following code example illustrates the hierarchical query and foreignkey met
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 The result for the above code example is illustrated as follows.
 
-{ ![](Hierarchical-Query_images/Hierarchical-Query_img1.png) | markdownify }
+![](Hierarchical-Query_images/Hierarchical-Query_img1.png) 
 {:.image }
 
 

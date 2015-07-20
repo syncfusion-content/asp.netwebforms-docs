@@ -7,7 +7,7 @@ control: ProgressBar
 documentation: ug
 ---
 
-## Progress control by using the length of the Password Field
+# Progress control by using the length of the Password Field
 
 In real-time scenario, the progress of ProgressBar is changed according to the length of text in the password field by binding the change in the properties of control and checking the length of the password field.
 
@@ -105,19 +105,19 @@ You can also change the themes or appearance of the ProgressBar as required.
 
 The following screenshots display the output when password length less than 5, password length less than 7, and password length greater than 7.                          .
 
-{ ![](Progress-control-by-using-the-length-of-the-Password-Field_images/Progress-control-by-using-the-length-of-the-Password-Field_img1.png) | markdownify }
+![](Progress-control-by-using-the-length-of-the-Password-Field_images/Progress-control-by-using-the-length-of-the-Password-Field_img1.png)
 {:.image }
 
 
 
 
-{ ![](Progress-control-by-using-the-length-of-the-Password-Field_images/Progress-control-by-using-the-length-of-the-Password-Field_img2.png) | markdownify }
+![](Progress-control-by-using-the-length-of-the-Password-Field_images/Progress-control-by-using-the-length-of-the-Password-Field_img2.png)
 {:.image }
 
 
 
 
-{ ![](Progress-control-by-using-the-length-of-the-Password-Field_images/Progress-control-by-using-the-length-of-the-Password-Field_img3.png) | markdownify }
+![](Progress-control-by-using-the-length-of-the-Password-Field_images/Progress-control-by-using-the-length-of-the-Password-Field_img3.png)
 {:.image }
 
 

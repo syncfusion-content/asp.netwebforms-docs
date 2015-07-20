@@ -7,25 +7,25 @@ control: DataManager
 documentation: ug
 ---
 
-## Helper Functions
+# Helper Functions
 
-ej.parseJSON
+## ej.parseJSON
 
 This method is used to parse the string to JSON. 
 
-ej.parseTable
+## ej.parseTable
 
 This method is used to parse the HTML element into the JSON Array and is used commonly in element binding using DataManager.
 
-ej.getGuid
+## ej.getGuid
 
 This method returns the globally unique identifier and it generates unique identifier with the prefix provided as parameter.
 
-ej.merge
+## ej.merge
 
 The ej.merge is used to merge two arrays and the result is merged in the first array. 
 
-ej.support
+## ej.support
 
 The ej.support property contains a collection of properties representing different browser features or bugs. The property are as follows.
 
@@ -34,7 +34,7 @@ The ej.support property contains a collection of properties representing differe
 3. stableSort – enables stable sort operation.
 4. outerHTML – represents the outerHTML support.
 
-ej.swap
+## ej.swap
 
 This method is used to swap the position of element in an array. It accepts three arguments such as input array and two swap positions.
 

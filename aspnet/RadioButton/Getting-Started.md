@@ -15,11 +15,11 @@ Create your first RadioButton in ASP.NET
 
 By using ASP.NET WebForms Radio Button supports RTL, custom skins and events to display customized Radio Buttons.  In this example, you can learn how to use Radio Button in a Quiz application. The following guidelines illustrate you on how to use the Radio Button to select the answers in the application and get the selected items. The following screenshot shows a sample Quiz application.
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image94_7.png](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image94_7.png](Getting-Started_images/Getting-Started_img1.png) 
 {:.image }
 
 
-Create a RadioButton in a Quiz Application
+## Create a RadioButton in a Quiz Application
 
 ASP.NET WebForms Radio Button provides support to display the Radio Button within your webpage and allows you to pick your choice. By using the following guidelines, you can customize the Radio Button for a real-time QuizApp and RegistrationApp scenarios. This allows you to select the corresponding choice for each question.
 
@@ -209,7 +209,7 @@ Add the following code to render Radio Button.
 
 {% endhighlight %}
 
-Configure Style
+## Configure Style
 
 Add the following styles.
 
@@ -245,13 +245,13 @@ Add the following styles.
 
 
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image94_8.png](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image94_8.png](Getting-Started_images/Getting-Started_img2.png) 
 {:.image }
 
 
-Create RegistrationApp
+## Create RegistrationApp
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image94_9.png](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image94_9.png](Getting-Started_images/Getting-Started_img3.png) 
 {:.image }
 
 
@@ -431,7 +431,7 @@ Add the following code to render the Radio Button. 
 
 {% endhighlight %}
 
-Add Script
+## Add Script
 
 Add the following ClientSide event for submit button to get the selected items. 
 
@@ -465,7 +465,7 @@ Add the following ClientSide event for submit button to get the selected items.�
 
 {% endhighlight %}
 
-Configure Style
+## Configure Style
 
  Add the following styles. 
 
@@ -489,11 +489,11 @@ Configure Style
 
 
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image94_9.png](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image94_9.png](Getting-Started_images/Getting-Started_img4.png) 
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image94_10.png](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image94_10.png](Getting-Started_images/Getting-Started_img5.png) 
 {:.image }
 
 

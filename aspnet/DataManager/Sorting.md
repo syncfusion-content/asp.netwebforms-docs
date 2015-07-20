@@ -7,11 +7,13 @@ control: DataManager
 documentation: ug
 ---
 
-## Sorting
+# Sorting
 
-Default 
+## Default 
 
 Sorting is basic query in DataManager. It enables you to view the items or records in ascending or descending order based on particular field and sorting direction specified. The query parameter of DataManager enables you to retrieve the data in the sorted fashion and thus utilizing the resultant data obtained.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -45,17 +47,19 @@ Sorting is basic query in DataManager. It enables you to view the items or recor
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
-{ ![](Sorting_images/Sorting_img1.png) | markdownify }
+![](Sorting_images/Sorting_img1.png)
 {:.image }
 
 
-SortByDesc
+## SortByDesc
 
 The sortByDesc query of the data manager is used to sort the specified field in descending order by default. You can use the following code example for sortByDesc query.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -89,17 +93,19 @@ The sortByDesc query of the data manager is used to sort the specified field in 
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
-{ ![](Sorting_images/Sorting_img2.png) | markdownify }
+![](Sorting_images/Sorting_img2.png)
 {:.image }
 
 
-Dynamic sorting
+## Dynamic sorting
 
 The table can be dynamically sorted by using an external button click event. You can sort the value of the column by using the sortBy query and thus the sorted data is retrieved and bounded to the table. The following code example illustrates you to dynamically sort the data source.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -167,17 +173,19 @@ The table can be dynamically sorted by using an external button click event. You
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of above code example is illustrated as follows.
 
-{ ![](Sorting_images/Sorting_img3.png) | markdownify }
+![](Sorting_images/Sorting_img3.png)
 {:.image }
 
 
-Multi sorting
+## Multi sorting
 
 Multi sorting is a special technique, where you can sort multiple fields by adding multiple sorting queries to DataManager.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -209,11 +217,11 @@ Multi sorting is a special technique, where you can sort multiple fields by addi
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of above code example is illustrated as follows.
 
-{ ![](Sorting_images/Sorting_img4.png) | markdownify }
+![](Sorting_images/Sorting_img4.png)
 {:.image }
 
 

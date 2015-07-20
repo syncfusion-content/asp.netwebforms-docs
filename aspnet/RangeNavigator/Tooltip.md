@@ -7,16 +7,16 @@ control: RangeNavigator
 documentation: ug
 ---
 
-## Tooltip
+# Tooltip
 
 RangeNavigator provides Tooltip support for sliders. Sliders are used to select data at particular range in the RangeNavigator control. Tooltips for sliders display the selected start and end DateTime values.
 
-Customization
+## Customization
 
 RangeNavigator provides support for you to customize the text display in the tooltip and background using TooltipSettings property. You can change font family, font color, font style, font weight. By default “Segoe UI” font family is set to tooltip text.
 
 
- [ASP.NET]
+{% highlight html %}
 
 &lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" Locale="fr-FR"&gt;
 
@@ -32,13 +32,13 @@ RangeNavigator provides support for you to customize the text display in the too
 
 &lt;/ej:RangeNavigator&gt;
 
+{% endhighlight %}
 
-
-{ ![](Tooltip_images/Tooltip_img1.png) | markdownify }
+![](Tooltip_images/Tooltip_img1.png)
 {:.image }
 
 
-Label Format
+## Label Format
 
 By default, the tooltip texts are automatically determined based on the data points.  To make it readable and understandable you can format the tooltip text. For DateTime data, all globalized format are supported. By default the LabelFormat is "MM/dd/yyyy".
 
@@ -54,7 +54,7 @@ Some of the LabelFormat for DateTime data are as follows:
 
 
 
-[ASP.NET]
+{% highlight html %}
 
 
 
@@ -68,18 +68,18 @@ Some of the LabelFormat for DateTime data are as follows:
 
         &lt;/ej:RangeNavigator&gt;
 
+{% endhighlight %}
 
 
-
-{ ![](Tooltip_images/Tooltip_img2.png) | markdownify }
+![](Tooltip_images/Tooltip_img2.png)
 {:.image }
 
 
-Tooltip display mode
+## Tooltip display mode
 
 By default the tooltip for RangeNavigator gets displayed. You can change this behavior using the TooltipDisplayMode property in the tooltip and it takes the following values.
 
-_Table_ _1__: Tooltip values_
+_Table_ _1_: Tooltip values_
 
 <table>
 <tr>
@@ -97,7 +97,7 @@ Tooltip get displayed only when we move the slider.</td></tr>
 </table>
 
 
-[ASP.NET]
+{% highlight html %}
 
 &lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" Locale="fr-FR"&gt;
 
@@ -111,9 +111,9 @@ Tooltip get displayed only when we move the slider.</td></tr>
 
 &lt;/ej:RangeNavigator&gt;
 
+{% endhighlight %}
 
-
-{ ![](Tooltip_images/Tooltip_img3.png) | markdownify }
+![](Tooltip_images/Tooltip_img3.png) 
 {:.image }
 
 

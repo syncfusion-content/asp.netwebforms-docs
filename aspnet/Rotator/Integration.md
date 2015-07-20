@@ -7,35 +7,35 @@ control: Rotator
 documentation: ug
 ---
 
-## Integration
+# Integration
 
 Rotator provides a flexible approach for binding the data from various DataSources. There are various properties in the Rotator for Data Binding. The value set to this property is object type.
 
-### Data fields and Configuration
+## Data fields and Configuration
 
 The following sub-properties provide a way to bind the data either locally/remotely to the Rotator control. The value set to this property is object type.
 
-#### DataSource
+### DataSource
 
 This property specifies the list of data that contains a set of data fields. Each data value is used to render an item for the Rotator. The value set to this property is object type.
 
-#### Fields
+### Fields
 
 It defines mapping fields for the data items of the Rotator. The value set to this property is object type.
 
-#### Text
+### Text
 
 It specifies the text content of the tag. The value set to this property is string type.
 
-#### URL
+### URL
 
 This property specifies the URL for an image. The value set to this property is string type.
 
-#### Query
+### Query
 
 This property retrieves data from remote data. This property is applicable only when a remote DataSource is used. Each data value is used to render an item for the Rotator. The value set to this property is object type.
 
-### Local data binding
+## Local data binding
 
 Rotator provides the data binding support for the Rotatoritem. So, you can bind the data from JSONData. For this behavior, you need to map the corresponding filed with their column names. The data can be bound as a list and it is assigned to the DataSource property. 
 
@@ -127,11 +127,11 @@ protected void Page_Load(object sender, EventArgs e)
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Integration_images/Integration_img1.png) | markdownify }
+![](Integration_images/Integration_img1.png)
 {:.image }
 
 
-### Knockout support
+## Knockout support
 
 Knockout support allows you to bind the HTML elements against any of the available data model.
 
@@ -264,12 +264,11 @@ Add the following script to achieve knockout.
 The following screenshot displays the output of the above code example.
 
 
-
-{ ![](Integration_images/Integration_img2.png) | markdownify }
+ ![](Integration_images/Integration_img2.png)
 {:.image }
 
 
-### Angular support
+## Angular support
 
 Rotator is availed with two types of AngularJS support namely,
 
@@ -381,7 +380,7 @@ The following screenshot displays the output of the above code example.
 
 
 
-{ ![](Integration_images/Integration_img3.png) | markdownify }
+![](Integration_images/Integration_img3.png)
 {:.image }
 
 

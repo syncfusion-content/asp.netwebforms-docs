@@ -19,7 +19,7 @@ DataManager supports different type of data binding, such as:
 
 Basically, all services that have JSON acts as a transport.
 
-Key Features
+## Key Features
 
 Some important features of the DataManager for ASP.NET are:
 

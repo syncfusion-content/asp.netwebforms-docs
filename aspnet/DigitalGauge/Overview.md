@@ -17,13 +17,13 @@ Digital Gauge for Essential Studio encompasses the visualization of the segmente
 * EightCrossEightDotMatrix
 * EightCrossEightSquareMatrix
 
-{ ![](Overview_images/Overview_img1.png) | markdownify }
+![](Overview_images/Overview_img1.png)
 {:.image }
 
 
 There are several other properties available in Digital Gauge which enable you to peform various customizations such as changing the space between the characters, segment width, segment length, spacing between the segments, and other customizations.
 
-Key Features
+## Key Features
 
 * Character Types – Provide support for five different character types.
 * Background Image - Provide support to add images as the background for the Digital Gauge.

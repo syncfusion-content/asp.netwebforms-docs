@@ -7,7 +7,7 @@ control: Rotator
 documentation: ug
 ---
 
-## Orientation
+# Orientation
 
 The Rotator control supports both vertical and horizontal orientations, allowing it to fit into any scenario. The Rotator property, Orientation, defines the orientation where the control is rendered. The value set to this property is enum or string type. It accepts the following values.
 
@@ -17,13 +17,13 @@ The Rotator control supports both vertical and horizontal orientations, allowi
 
 The following steps explain how to set orientation for the Rotator.
 
-### Horizontal
+## Horizontal
 
 This property sets the Rotator in the horizontalorientation. You can refer to the following steps to set horizontalorientation for Rotator control.
 
 In an ASPX page, add the following code example and set the Orientation property as Horizontal.
 
-
+{% highlight html %}
 
 <ej:Rotator ID="sliderContent" SlideWidth="200px"
 
@@ -77,15 +77,15 @@ In an ASPX page, add the following code example and set the Orientation property
 
             &lt;/ej:Rotator&gt;
 
-
+{% endhighlight %}
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Orientation_images/Orientation_img1.png) | markdownify }
+![](Orientation_images/Orientation_img1.png) 
 {:.image }
 
 
-### Vertical
+## Vertical
 
 This property sets the Rotator in verticalorientation. You can refer to the following steps to set the verticalorientation for  Rotator control.
 
@@ -149,7 +149,7 @@ In an ASPX page, add the following code example and set the Orientation property
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Orientation_images/Orientation_img2.png) | markdownify }
+![](Orientation_images/Orientation_img2.png)
 {:.image }
 
 

@@ -7,13 +7,15 @@ control: DataManager
 documentation: ug
 ---
 
-## Query
+# Query
 
 DataManager provides support for multiple queries to perform various operations like filtering, sorting, cloning, expanding, searching, grouping etc., in the data source. Here, you can learn the query options in detail.
 
-Select
+## Select
 
 The “select” query of the data manager is used to select only some particular fields or columns from the data source. The following code example illustrates on how to select only particular fields using the select query.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -45,19 +47,21 @@ The “select” query of the data manager is used to select only some particula
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
 
 
-{ ![](Query_images/Query_img1.png) | markdownify }
+![](Query_images/Query_img1.png)
 {:.image }
 
 
-From
+## From
 
 The “from” query of the data manager is used to select the table from where the data is retrieved and bound to the table. The following code example illustrates on how to use the “from” query.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -87,17 +91,19 @@ The “from” query of the data manager is used to select the table from where 
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
-{ ![](Query_images/Query_img2.png) | markdownify }
+![](Query_images/Query_img2.png)
 {:.image }
 
 
-Clone
+## Clone
 
 The “clone” query of the data manager is used to duplicate the query. The following code example illustrates on how to clone a query.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -161,17 +167,19 @@ The “clone” query of the data manager is used to duplicate the query. The fo
 
 &lt;/asp:Content&gt;
 
-
+{%  endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
-{ ![](Query_images/Query_img3.png) | markdownify }
+![](Query_images/Query_img3.png)
 {:.image }
 
 
-Expand
+## Expand
 
 The “expand” query of the data manager is used to perform complex data binding.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -207,13 +215,13 @@ The “expand” query of the data manager is used to perform complex data bindi
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
 
 
-{ ![](Query_images/Query_img4.png) | markdownify }
+![](Query_images/Query_img4.png)
 {:.image }
 
 

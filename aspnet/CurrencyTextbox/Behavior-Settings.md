@@ -7,13 +7,13 @@ control: Currency TextBox
 documentation: ug
 ---
 
-## Behavior Settings
+# Behavior Settings
 
-### Decimal Places
+## Decimal Places
 
 The DecimalPlaces declares the decimal point to the value of the CurrencyTextbox control. The default value of the DecimalPlaces is 0 in the CurrencyTextbox control.
 
-#### Configure Decimal Places
+### Configure Decimal Places
 
 Add the following code in your ASPX page to render the CurrencyTextbox control with DecimalPlaces.
 
@@ -31,15 +31,15 @@ Add the following code in your ASPX page to render the CurrencyTextbox control w
 
 The following screenshot is the output of the above code.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img1.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img1.png) 
 {:.image }
-__
 
-### Persistence Support
+
+## Persistence Support
 
 The CurrencyTextbox control provides state maintenance support. You can maintain the previous changes made in the control after the page load while the EnablePersistence property is enabled. EnablePersistence accepts Boolean values. By default, the value is false.
 
-#### Configure Persistence Support 
+### Configure Persistence Support 
 
 Add the following code in your ASPX page to render the CurrencyTextbox control with state maintenance by using the EnablePersistenceproperty.
 
@@ -55,19 +55,19 @@ Add the following code in your ASPX page to render the CurrencyTextbox control w
 
 
 
-The output for the CurrencyTextbox with EnablePersistencebefore the page load and after changing the value and page load are as follows.__
+The output for the CurrencyTextbox with EnablePersistencebefore the page load and after changing the value and page load are as follows.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img2.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img2.png)
 {:.image }
-{ ![](Behavior-Settings_images/Behavior-Settings_img3.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img3.png) 
 {:.image }
 
 
-### Strict Mode Support
+## Strict Mode Support
 
 The CurrencyTextbox control provides strict mode option by setting the EnableStrictMode property. You have to set the MinValue and MaxValue to the control to enable strict mode function. When the CurrencyTextbox value exceeds the MaxValue, it restricts the exceeded value and returns the MaxValue. Likewise, when the CurrencyTextbox value goes below the MinValue, it restricts the new value and returns the MinValue. When the EnableStrictMode property is enabled, it highlights the CurrencyTextbox in red color.
 
-#### Configure Strict Mode Support 
+### Configure Strict Mode Support 
 
 Add the following code in your ASPX page to render THE CurrencyTextbox control with strictmode by using the EnableStrictMode property.
 
@@ -93,17 +93,16 @@ Add the following code in your ASPX page to render THE CurrencyTextbox control w
 
 The output for CurrencyTextbox with and without the EnableStrictMode.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img4.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img4.png)
 {:.image }
-{ ![](Behavior-Settings_images/Behavior-Settings_img5.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img5.png) 
 {:.image }
-__
 
-### Enabled or Disabled
+## Enabled or Disabled
 
 The CurrencyTextbox control has an option to enable or disable its elements. You can set the Enabled property to true to enable the CurrencyTextbox control. Enabled property accepts Boolean value. By default, the value of the Enabled is set to true.
 
-#### Configure Enabled or Disabled 
+### Configure Enabled or Disabled 
 
 The following steps explain the implementation of Enabled in the CurrencyTextbox.
 
@@ -123,17 +122,17 @@ Add the following code to your ASPX page to render the CurrencyTextbox control.
 
 The output for CurrencyTextbox when Enabled is true and Enabled is false.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img6.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img6.png)
 {:.image }
-{ ![](Behavior-Settings_images/Behavior-Settings_img7.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img7.png)
 {:.image }
 
 
-### Adjusting TextBox Size
+## Adjusting TextBox Size
 
 The CurrencyTextbox size can be modified by using Height and Width properties. You can customize the size of the CurrencyTextbox by using these properties.
 
-#### Configure Height and Width 
+### Configure Height and Width 
 
 Add the following code to your ASPX page to render the CurrencyTextbox control with customized dimension. 
 
@@ -151,15 +150,15 @@ Add the following code to your ASPX page to render the CurrencyTextbox control w
 
 The output for Textbox after setting Height and Width.
 
-__{ ![](Behavior-Settings_images/Behavior-Settings_img8.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img8.png)
 {:.image }
 
 
-### Increment Step
+## Increment Step
 
 The IncrementStep property is used to increase or decrease the amount of value in the CurrencyTextbox control. 
 
-#### Configure Increment Step
+### Configure Increment Step
 
 Add the following code to your ASPX page to render the CurrencyTextbox control with incrementStep.
 
@@ -177,17 +176,17 @@ Add the following code to your ASPX page to render the CurrencyTextbox control w
 
 The output for CurrencyTextbox with IncrementStep on initial load and after increasing one step.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img9.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img9.png)
 {:.image }
-{ ![](Behavior-Settings_images/Behavior-Settings_img10.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img10.png)
 {:.image }
 
 
-### Define Name
+## Define Name
 
 When you have placed the CurrencyTextbox in a form, the Name property is used to send the field value at form submission. The default value of Name property is null.
 
-#### Configure Name
+### Configure Name
 
 Add the following code to your ASPX page to render the CurrencyTextbox control with Name.
 
@@ -203,17 +202,17 @@ Add the following code to your ASPX page to render the CurrencyTextbox control w
 
 
 
-The output for CurrencyTextbox with Name.__
+The output for CurrencyTextbox with Name.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img11.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img11.png)
 {:.image }
-__
 
-### Define Value
+
+## Define Value
 
 The value of the CurrencyTextbox can be assigned by using the Value property. The default value for Value property is null.
 
-#### Configure Value
+### Configure Value
 
 Add the following code to your ASPX page to render the CurrencyTextbox control with Value.
 
@@ -229,23 +228,23 @@ Add the following code to your ASPX page to render the CurrencyTextbox control w
 
 The output for CurrencyTextbox with Values.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img12.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img12.png)
 {:.image }
 
 
-### Basic Properties
+## Basic Properties
 
 The CurrencyTextbox contains basic behaviors like Name, Value, MaxValue, and MinValue.
 
-#### maxValue
+### maxValue
 
 The maximum value limit can be assigned to the CurrencyTextbox by using the MaxValue property. The default value of MaxValue property is 1.7976931348623157e+308. 
 
-#### minValue
+### minValue
 
 The minimum value limit can be assigned to the CurrencyTextbox by using the MinValue property. The default value of MinValue property is -1.7976931348623157e+308.
 
-#### Configure Basic Properties
+### Configure Basic Properties
 
 Add the following code to your ASPX page to render the CurrencyTextbox control with MaxValue and MinValue.
 
@@ -261,15 +260,15 @@ Add the following code to your ASPX page to render the CurrencyTextbox control w
 
  The output represents CurrencyTextbox with basic properties.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img13.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img13.png)
 {:.image }
 
 
-### Read Only Support
+## Read Only Support
 
 The CurrencyTextbox supports read only option. When enabling read only property to the control, the value cannot be changed or edited in the CurrencyTextbox. You can set the ReadOnly property to true to enable this option.
 
-#### Configure Read Only
+### Configure Read Only
 
 Add the following code to your ASPX page to render the CurrencyTextbox control with ReadOnly mode.
 
@@ -285,7 +284,7 @@ Add the following code to your ASPX page to render the CurrencyTextbox control w
 
 The output when ReadOnly is set to true.The CurrencyTextbox values cannot be edited or changed.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img14.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img14.png)
 {:.image }
 
 

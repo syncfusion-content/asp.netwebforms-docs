@@ -11,7 +11,7 @@ documentation: ug
 
 RangeNavigator is a data visualization control.  It allows you to scroll and navigate through the data. This control easily combines with other controls such as Chart, GridView, etc., to create rich and powerful dashboards.
 
-Key Features
+## Key Features
 
 The RangeNavigator is composed of the following features: 
 

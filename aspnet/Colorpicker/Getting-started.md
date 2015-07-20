@@ -9,13 +9,13 @@ documentation: ug
 
 # Getting started
 
-Create your first ColorPicker in ASP.NET
+## Create your first ColorPicker in ASP.NET
 
 The Essential ASP.NET WebForms ColorPicker control provides you support for selecting the colors in different sources such as palettes, picker or custom palettes. You can also rend the color value from control in three formats such as RGB, HSV and HEXCODE.
 
 In this example, you can learn how to customize the ColorPicker control in a category Application.
 
-{ ![](Getting-started_images/Getting-started_img1.png) | markdownify }
+![](Getting-started_images/Getting-started_img1.png)
 {:.image }
 
 
@@ -25,7 +25,7 @@ In the following sections you can learn, How to:
 * Initialize the other widgets
 * Add Value to ListBox Control
 
-Create ColorPicker Control
+## Create ColorPicker Control
 
 Use the following steps to create the ColorPicker control.
 
@@ -47,11 +47,11 @@ Create the ASPX page and add the following code to it for ColorPicker creati
 
  Run this code to render the resultant output of the above steps.
 
-{ ![](Getting-started_images/Getting-started_img2.png) | markdownify }
+![](Getting-started_images/Getting-started_img2.png)
 {:.image }
 
 
-Initialize the other widgets
+## Initialize the other widgets
 
 To add the priority value to the ListBox, the text value is obtained from the input element and color for each priority is received by the ColorPicker control. To add each new priority value to the ListBox control, click the Add button.
 
@@ -289,11 +289,11 @@ Initialize the element in &lt;script&gt; tag. 
 
 Run the above code to render the following output.
 
-{ ![](Getting-started_images/Getting-started_img3.png) | markdownify }
+![](Getting-started_images/Getting-started_img3.png)
 {:.image }
 
 
-Add value to ListBox Control
+## Add value to ListBox Control
 
 You can add the value to the ListBox with selected color by performing the button click event. The following script section define the click event for the button element.
 
@@ -325,7 +325,7 @@ Initialize the click event to button element in the &lt;script&gt; tag.
 
 The following screenshot illustrates the resultant output after you click Add button.
 
-{ ![](Getting-started_images/Getting-started_img4.png) | markdownify }
+![](Getting-started_images/Getting-started_img4.png)
 {:.image }
 
 

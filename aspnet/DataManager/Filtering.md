@@ -7,11 +7,11 @@ control: DataManager
 documentation: ug
 ---
 
-## Filtering
+# Filtering
 
 Filtering is a basic technique in DataManager query. The “where” query is used to filter some particular or related records from the data source to review details of records. 
 
-Filter Operators
+## Filter Operators
 
 Filter operators are used to specify the filter type. The various filter operators corresponding to the type of the column is listed in the following table.
 
@@ -39,9 +39,11 @@ ej.FilterOperators.greaterThanej.FilterOperators.greaterThanOrEqualej.FilterOper
 </table>
 
 
-lessThan
+## lessThan
 
 This operator is used to get the records with values less than that of the filter value.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -73,17 +75,19 @@ This operator is used to get the records with values less than that of the filte
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
-{ ![](Filtering_images/Filtering_img1.png) | markdownify }
+![](Filtering_images/Filtering_img1.png)
 {:.image }
 
 
-greaterThan
+## greaterThan
 
 This operator is used to get the records with values greater than that of the filter value.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -115,19 +119,21 @@ This operator is used to get the records with values greater than that of the fi
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
 
 
-{ ![](Filtering_images/Filtering_img2.png) | markdownify }
+![](Filtering_images/Filtering_img2.png)
 {:.image }
 
 
-lessThanOrEqual
+## lessThanOrEqual
 
 This operator is used to get the records with values less than or equal to the filter value.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -159,19 +165,21 @@ This operator is used to get the records with values less than or equal to the f
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
 
 
-{ ![](Filtering_images/Filtering_img3.png) | markdownify }
+![](Filtering_images/Filtering_img3.png)
 {:.image }
 
 
-greaterThanOrEqual
+## greaterThanOrEqual
 
 This operator is used to get the records with values greater than or equal to the filter value.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -203,17 +211,19 @@ This operator is used to get the records with values greater than or equal to th
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
-{ ![](Filtering_images/Filtering_img4.png) | markdownify }
+![](Filtering_images/Filtering_img4.png)
 {:.image }
 
 
-equal
+## equal
 
 This operator is used to get the records with values equal to that of the filter value.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -245,17 +255,19 @@ This operator is used to get the records with values equal to that of the filter
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
-{ ![](Filtering_images/Filtering_img5.png) | markdownify }
+![](Filtering_images/Filtering_img5.png)
 {:.image }
 
 
-notEqual
+## notEqual
 
 This operator is used to get the records with values not equal to that of the filter value specified.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -287,17 +299,19 @@ This operator is used to get the records with values not equal to that of the fi
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
-{ ![](Filtering_images/Filtering_img6.png) | markdownify }
+![](Filtering_images/Filtering_img6.png)
 {:.image }
 
 
-contains
+## contains
 
 This operator is used to get the records that contains the filter value.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -329,17 +343,19 @@ This operator is used to get the records that contains the filter value.
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
-{ ![](Filtering_images/Filtering_img7.png) | markdownify }
+![](Filtering_images/Filtering_img7.png)
 {:.image }
 
 
-startswith
+## startswith
 
 This operator is used to get the records that starts with the filter value specified.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -371,17 +387,19 @@ This operator is used to get the records that starts with the filter value speci
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
-{ ![](Filtering_images/Filtering_img8.png) | markdownify }
+![](Filtering_images/Filtering_img8.png)
 {:.image }
 
 
-endswith
+## endswith
 
 This operator is used to get the records that ends with the filter value specified.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -413,19 +431,21 @@ This operator is used to get the records that ends with the filter value specifi
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
-{ ![](Filtering_images/Filtering_img9.png) | markdownify }
+![](Filtering_images/Filtering_img9.png)
 {:.image }
 
 
-Predicate
+## Predicate
 
-and predicate
+### and predicate
 
 The “and” predicate is used to add n-number of predicates with “and” condition and filter the data.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -459,18 +479,20 @@ The “and” predicate is used to add n-number of predicates with “and” con
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
-{ ![](Filtering_images/Filtering_img10.png) | markdownify }
+![](Filtering_images/Filtering_img10.png)
 {:.image }
 
 
-or predicate
+### or predicate
 
  By using this method you can add n-number of predicates with “or” condition and filter the data.
 
+ {% highlight html %}
+ 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
 
@@ -503,11 +525,11 @@ or predicate
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
-{ ![](Filtering_images/Filtering_img11.png) | markdownify }
+![](Filtering_images/Filtering_img11.png)
 {:.image }
 
 

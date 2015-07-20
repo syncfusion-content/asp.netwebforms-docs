@@ -7,7 +7,7 @@ control: Digital Gauge
 documentation: ug
 ---
 
-## Exporting the Digital Gauge
+# Exporting the Digital Gauge
 
 Digital Gauge has an exporting feature where Gauge control is converted into image format and then exported to client-side. The method API exportImage exports the Digital Gauge. It has two arguments such as filename and file format. For exporting, you can refer the following code example.
 
@@ -19,7 +19,7 @@ Digital Gauge has an exporting feature where Gauge control is converted into ima
 
 
 
-[ASP]
+{% highlight html %}
 
 &lt;%-- Adding Digital Gauge control --%&gt;
 
@@ -35,13 +35,13 @@ $("# DigitalGauge1").ejDigitalGauge("exportImage", "Digital", "PNG");
 
 &lt;script/&gt;
 
-
+{% endhighlight %}
 
 Execute the above code examples to render the DigitalGauge as follows.
 
 
 
-{ ![](Exporting-the-Digital-Gauge_images/Exporting-the-Digital-Gauge_img1.png) | markdownify }
+![](Exporting-the-Digital-Gauge_images/Exporting-the-Digital-Gauge_img1.png)
 {:.image }
 
 

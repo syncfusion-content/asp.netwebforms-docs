@@ -7,13 +7,13 @@ control: Digital Gauge
 documentation: ug
 ---
 
-## Frames
+# Frames
 
-### Inner and Outer Width Customization
+## Inner and Outer Width Customization
 
 Frames are space that enclose the Digital Gauge. The inner width of the Frame is the distance between the canvas element and the frame. The outer width is the distance from the frame. The code example to set frame’s innerWidth and outerWidth is as follow. 
 
-[ASP]
+{% highlight html %}
 
 &lt;ej:DigitalGauge runat="server" ID="DigitalGauge1" Value="WELCOME"&gt;
 
@@ -25,25 +25,25 @@ Frames are space that enclose the Digital Gauge. The inner width of the Frame is
 
 &lt;/ej:DigitalGauge&gt;
 
-
+{% endhighlight %}
 
 Execute the above code examples to render the DigitalGauge as follows.
 
 
 
-{ ![](Frames_images/Frames_img1.png) | markdownify }
+![](Frames_images/Frames_img1.png)
 {:.image }
 
 
 
 
-### Setting Background Image
+## Setting Background Image
 
 For a better appearance, you can set the backgroundimage for the Digital Gauge using the property backgroundImageUrl. 
 
 
 
-[ASP]
+{% highlight html %}
 
 &lt;ej:DigitalGauge runat="server" ID="DigitalGauge1" Value="RADAR"&gt;
 
@@ -75,7 +75,7 @@ For a better appearance, you can set the backgroundimage for the Digital Gauge u
 
 &lt;/ej:DigitalGauge&gt;
 
-
+{% endhighlight %}
 
 Execute the above code examples to render the DigitalGauge as follows.
 
@@ -83,7 +83,7 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 
 
-{ ![](Frames_images/Frames_img2.png) | markdownify }
+![](Frames_images/Frames_img2.png)
 {:.image }
 
 

@@ -7,9 +7,10 @@ control: Currency TextBox
 documentation: ug
 ---
 
-## Server Side Events
+# Server Side Events
 
 The server side event present in the CurrencyTextbox control is listed:
+
 
 <table>
 <tr>
