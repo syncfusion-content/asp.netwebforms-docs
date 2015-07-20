@@ -7,19 +7,19 @@ control: Circular Gauge
 documentation: ug
 ---
 
-## Pointers
+# Pointers
 
 Pointer value points out the actual value set in the Circular Gauge. You can customize the pointers to improve the appearance of Gauge.
 
 
 
-### Adding Pointer Collection
+## Adding Pointer Collection
 
 Pointer collection is directly added to the scale object. To add pointer collection in a Gauge control refer the following code example.  
 
 
 
-[A[ASP]
+{% highlight html %}
 
 &lt;%--For Circular Gauge rendering-- %&gt;
 
@@ -41,21 +41,23 @@ Pointer collection is directly added to the scale object. To add pointer collect
 
 &lt;/ej:CircularGauge&gt;
 
+{% endhighlight %}
+
 Execute the above code to render the following output.
 
-{ ![C:/Users/karthigeyan/Desktop/q.png](Pointers_images/Pointers_img1.png) | markdownify }
+ ![C:/Users/karthigeyan/Desktop/q.png](Pointers_images/Pointers_img1.png) 
 {:.image }
 
 
-_Figure_ _20__(a): Circular Gauge with  pointer collection_
+_Figure_ _20_(a): Circular Gauge with  pointer collection_
 
-### Adding Pointer Value
+## Adding Pointer Value
 
 Pointer value is the important element in the Circular Gauge that indicates the Gauge value. Real purpose of the Circular Gauge is based on the pointer value. You can set the pointer value either directly during rendering the control or it can be achieved by public method too.
 
 
 
-[   [ASP]
+{% highlight html %}
 
 &lt;%--For Circular Gauge rendering-- %&gt;
 
@@ -85,7 +87,7 @@ Pointer value is the important element in the Circular Gauge that indicates the 
 
 &lt;/ej:CircularGauge&gt;
 
-
+{% endhighlight %}
 
 
 
@@ -93,25 +95,24 @@ Execute the above code to render the following output.
 
 
 
-{ ![](Pointers_images/Pointers_img2.png) | markdownify }
+ ![](Pointers_images/Pointers_img2.png)
 {:.image }
 
 
-_Figure_ _21__(b): Circular Gauge with customized pointer value_
+_Figure_ _21_(b): Circular Gauge with customized pointer value_
 
 
 
-### Pointer Styles
+## Pointer Styles
 
-Colors and Border
+### Colors and Border
 
 * The Pointers border is modified with the object called border as in scales. It has two border property called color and width which are used to customize the border color of the pointer and border width of the pointer. 
 * You can set the background color to improve the look of the Circular Gauge and you can customize the background color of the scale using backgroundColor.
 
 
 
-[ASP]
-
+{% highlight html %}
 
 
 &lt;%--For Circular Gauge rendering-- %&gt;
@@ -138,17 +139,17 @@ Colors and Border
 
 &lt;/ej:CircularGauge&gt;
 
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
 
 
-{ ![](Pointers_images/Pointers_img3.png) | markdownify }
+ ![](Pointers_images/Pointers_img3.png)
 {:.image }
 
 
-Appearance
+### Appearance
 
 * Based on the value, thepointer point out the label value. You can set the pointer length and width using length and width property respectively. 
 * And you can also adjust the opacity of the pointer using the property opacity which holds the value between 0 and 1. You can add the gradient effects to the pointer using gradient object.
@@ -157,7 +158,7 @@ Appearance
 
 
 
-[ASP]
+{% highlight html %}
 
 
 
@@ -185,7 +186,7 @@ Appearance
 
 &lt;/ej:CircularGauge&gt;
 
-
+{% endhighlight %}
 
 
 
@@ -197,14 +198,14 @@ Execute the above code to render the following output.
 {:.image }
 
 
-Position the pointer
+### Position the pointer
 
 * Pointer can be positioned with the help of two properties such as distanceFromScale and placement. distanceFromScale property defines the distance between the scale and pointer.  Placement property is used to locate the pointer with respect to scale either inside the scale or outside the scale or along the scale. 
 * It is an enumerable data type. Both the property is applied only if pointer type is marker. For needle type marker, it renders with default position that is unchangeable.
 
 
 
-[ASP]
+{% highlight html %}
 
 &lt;%--For Circular Gauge rendering-- %&gt;
 
@@ -230,16 +231,16 @@ Position the pointer
 
 &lt;/ej:CircularGauge&gt;
 
-
+{% endhighlight %}
 Execute the above code to render the following output.
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Pointers_images/Pointers_img5.png) | markdownify }
+ ![C:/Users/ApoorvahR/Desktop/1.png](Pointers_images/Pointers_img5.png)
 {:.image }
 
 
-Types
+### Types
 
 * Circular gauge pointer has two types such as,
 1. Needle
@@ -262,11 +263,11 @@ Types
 10. Trapezoid
 11. Rounded Rectangle
 
-Pointer Image
+### Pointer Image
 
 In ASP Circular Gauge, it is possible to replace the pointer with some images. You can fix an image instead of rendering the pointer.
 
-ImageUrl
+### ImageUrl
 
 To implement the pointer image we need to give the API called ImageUrl. It is a string datatype. Image type pointer is applicable for both marker and needle type pointers and it is possible to combine the normal marker pointer type with an image type. The three possibilities are
 
@@ -274,11 +275,11 @@ To implement the pointer image we need to give the API called ImageUrl. It is a 
 2. Marker Image
 3. Marker pointer with Image
 
-Needle Image 
+### Needle Image 
 
 In this type, needle pointer is completely replaced by image. You can implement it with the help of thr following example.
 
-[aspx]
+{% highlight html %}
 
 &lt;ej:CircularGauge runat="server" ID="CircularGauge1"&gt;
 
@@ -380,17 +381,17 @@ StartValue="70" EndValue="100">
 
 &lt;/ej:CircularGauge&gt;
 
-
+{% endhighlight %}
 
 { ![](Pointers_images/Pointers_img6.png) | markdownify }
 {:.image }
 
 
-Marker Image 
+### Marker Image 
 
 In this type, the marker pointer is completely replaced by the image. You can implement it with the help of the following example.
 
-[aspx]
+{% highlight html %}
 
 &lt;ej:CircularGauge runat="server" ID="CircularGauge1"&gt;
 
@@ -492,17 +493,17 @@ StartValue="70" EndValue="100">
 
 &lt;/ej:CircularGauge&gt;
 
+{% endhighlight %}
 
-
-{ ![](Pointers_images/Pointers_img7.png) | markdownify }
+ ![](Pointers_images/Pointers_img7.png)
 {:.image }
 
 
-Marker pointer with Image 
+### Marker pointer with Image 
 
 In this type, marker pointer is drawn first and then the image is loaded. You can implement it with the help of following example.
 
-[aspx]
+{% highlight html %}
 
 &lt;ej:CircularGauge runat="server" ID="CircularGauge1"&gt;
 
@@ -605,18 +606,18 @@ In this type, marker pointer is drawn first and then the image is loaded. You ca
         &lt;/ej:CircularGauge&gt;
 
 
-
-{ ![](Pointers_images/Pointers_img8.png) | markdownify }
+{% endhighlight %}
+ ![](Pointers_images/Pointers_img8.png)
 {:.image }
 
 
-### Multiple Pointers
+## Multiple Pointers
 
 Circular Gauge can have multiple pointers on it. You can use any combination and any number of pointers in a Gauge. That is, a Gauge can contain any number of marker pointer and any number of needle pointers. Refer the following code example containing two pointers.
 
 
 
-[ASP]
+{% highlight html %}
 
 &lt;%--For Circular Gauge rendering-- %&gt;
 
@@ -650,17 +651,17 @@ Circular Gauge can have multiple pointers on it. You can use any combination and
 
 &lt;/ej:CircularGauge&gt;
 
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
-{ ![](Pointers_images/Pointers_img9.png) | markdownify }
+ ![](Pointers_images/Pointers_img9.png)
 {:.image }
 
 
 
 
-### Pointer Value Text
+## Pointer Value Text
 
 Gauge Pointer valuetext is used to display the current value of the pointer in the Circular Gauge control.
 
@@ -668,7 +669,7 @@ Positioning the text
 
 You can position the Circular Gauge pointer value with the gauge as center by using the API called distance. You can Disable/ Enable these pointers value by using the API showValue.
 
-[ASPX]
+{% highlight html %}
 
 
 
@@ -754,19 +755,19 @@ ShowValue="true">
 
 &lt;/ej:CircularGauge&gt;
 
-
+{% endhighlight %}
 
 Run the above code to render the output as follows.
 
 
 
-{ ![](Pointers_images/Pointers_img10.png) | markdownify }
+ ![](Pointers_images/Pointers_img10.png)
 {:.image }
 
 
 
 
-### Appearance
+## Appearance
 
 Appearance of the Circular Gaugepointer value text is adjusted by using four properties. Such as color, angle, autoAngle and opacity.
 
@@ -779,7 +780,7 @@ Appearance of the Circular Gaugepointer value text is adjusted by using four pro
 
 
 
-[ASPX]
+{% highlight html %}
 
 &lt;%-- Setting basic properties-- %&gt;
 
@@ -873,7 +874,7 @@ AutoAngle="false" >
 
 &lt;/ej:CircularGauge&gt;
 
-
+{% endhighlight %}
 
 Run the above code to render the output as follows.
 
@@ -885,11 +886,11 @@ Run the above code to render the output as follows.
 
 
 
-### Font Options
+## Font Options
 
 Similar to other collection, font option is also available in this pointer value text such as size, fontFamily and fontStyle. 
 
-[ASPX]
+{% highlight html %}
 
 // Setting basic properties
 
@@ -975,7 +976,7 @@ AutoAngle="false" >
 
 &lt;/ej:CircularGauge&gt;
 
-
+{% endhighlight %}
 
 Run the above code to render the output as follows.
 
@@ -983,7 +984,7 @@ Run the above code to render the output as follows.
 
 
 
-{ ![](Pointers_images/Pointers_img12.png) | markdownify }
+ ![](Pointers_images/Pointers_img12.png)
 {:.image }
 
 

@@ -7,17 +7,17 @@ control: Circular Gauge
 documentation: ug
 ---
 
-##  Ranges and Frames
+#  Ranges and Frames
 
 Ranges are used to specify or group the scale values. By using ranges, you can describe the values in the pointers. 
 
-### Adding Range Collection
+## Adding Range Collection
 
 Range collection is directly added to the scale object. Refer the following code example to add range collection in a Gauge control. 
 
 
 
-[ASP]
+{% highlight html %}
 
 
 
@@ -43,18 +43,18 @@ Range collection is directly added to the scale object. Refer the following code
 
 &lt;/ej:CircularGauge&gt;
 
+{% endhighlight %}
 
+### Range Customization
 
-Range Customization
-
-Appearance
+### Appearance
 
 * The API size is used to specify the width of the ranges.  The major attributes for ranges are startValue and endValue. startValue defines the start position of the ranges and endValue defines the end position of the ranges.
 * StartWidth and endWidth are used to specify the range width at the starting and ending position of the ranges. You can add the gradient effects to the ranges by using gradient object.
 
 
 
-[ASP]
+{% highlight html %}
 
 
 
@@ -93,16 +93,16 @@ Appearance
 &lt;/ej:CircularGauge&gt;
 
 
-
+{% endhighlight %}
 
 
 Execute the above code to render the following output.
 
-{ ![](Ranges-and-Frames_images/Ranges-and-Frames_img1.png) | markdownify }
+ ![](Ranges-and-Frames_images/Ranges-and-Frames_img1.png)
 {:.image }
 
 
-Colors and Border
+### Colors and Border
 
 * By customizing the ranges, the appearance of the Gauge can be improved. The range border is modified with the object called border. It has two border property such as color and width. These are used to customize the border color of the ranges and border width of the ranges. 
 * You can set the background color to improve the look and feel of the Circular Gauge. For customizing the background color of the ranges, backgroundColor is used.
@@ -115,7 +115,7 @@ Colors and Border
 
 
 
-[ASP]
+{% highlight html %}
 
 &lt;%--For Circular Gauge rendering-- %&gt;
 
@@ -143,11 +143,11 @@ Colors and Border
 
 &lt;/ej:CircularGauge&gt;
 
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
-{ ![](Ranges-and-Frames_images/Ranges-and-Frames_img2.png) | markdownify }
+ ![](Ranges-and-Frames_images/Ranges-and-Frames_img2.png)
 {:.image }
 
 
@@ -155,7 +155,7 @@ Execute the above code to render the following output.
 
 
 
-Position the ranges
+### Position the ranges
 
 * You can position ranges using two properties such as distanceFromScale and placement. 
 * distanceFromScale property defines the distance between the scale and range. 
@@ -163,7 +163,7 @@ Position the ranges
 
 
 
-[ASP]
+{% highlight html %}
 
 
 
@@ -193,13 +193,13 @@ Position the ranges
 
 &lt;/ej:CircularGauge&gt;
 
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
 
 
-{ ![](Ranges-and-Frames_images/Ranges-and-Frames_img3.png) | markdownify }
+ ![](Ranges-and-Frames_images/Ranges-and-Frames_img3.png) 
 {:.image }
 
 
@@ -211,7 +211,7 @@ You can set multiple ranges by adding an array of ranges objects. Refer the foll
 
 
 
-[ASP]
+{% highlight html %}
 
 
 
@@ -251,13 +251,13 @@ You can set multiple ranges by adding an array of ranges objects. Refer the foll
 
 &lt;/ej:CircularGauge&gt;
 
-
+{% endhighlight %}
 
 
 
 Execute the above code to render the following output.
 
-{ ![](Ranges-and-Frames_images/Ranges-and-Frames_img4.png) | markdownify }
+ ![](Ranges-and-Frames_images/Ranges-and-Frames_img4.png)
 {:.image }
 
 
@@ -278,7 +278,7 @@ Execute the above code to render the following output.
 
 
 
-[ASP]
+{% highlight html %}
 
 
 
@@ -309,12 +309,12 @@ Execute the above code to render the following output.
 &lt;/ej:CircularGauge&gt;
 
 
-
+{% endhighlight %}
 
 
 Execute the above code to render the following output.
 
-{ ![](Ranges-and-Frames_images/Ranges-and-Frames_img5.png) | markdownify }
+ ![](Ranges-and-Frames_images/Ranges-and-Frames_img5.png)
 {:.image }
 
 

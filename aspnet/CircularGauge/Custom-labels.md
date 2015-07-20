@@ -7,20 +7,19 @@ control: Circular Gauge
 documentation: ug
 ---
 
-## Custom labels
+# Custom labels
 
 Custom labels are the texts that you can use them in any location of the Gauge.
 
 
 
-### Adding Custom Label Collection
+## Adding Custom Label Collection
 
 Custom labels collection is directly added to the scale object. Refer the following code to add custom labels collection in a Gauge control.
 
 
 
 [ASP]
-
 
 
 &lt;%--For Circular Gauge rendering-- %&gt;
@@ -51,7 +50,7 @@ Custom labels collection is directly added to the scale object. Refer the follow
 
 &lt;/ej:CircularGauge&gt;
 
-Basic Customization
+### Basic Customization
 
 * You can customize Customlabels using the properties such as textAngle, color and font. textAngle attribute is used to display the custom labels in the specified angles and color attribute is used to display the custom labels in specified color. 
 * You can use Value attribute to set the text value in the customlabels. To display the custom labels, set showCustomLabels as ‘true’. To set the location of the custom label in Circular Gauge, location property is used. By using x and y axis you can adjust the position of the custom labels.
@@ -96,7 +95,7 @@ Execute the above code to render the following output.
 
 
 
-{ ![](Custom-labels_images/Custom-labels_img1.png) | markdownify }
+ ![](Custom-labels_images/Custom-labels_img1.png)
 {:.image }
 
 
@@ -104,7 +103,7 @@ Execute the above code to render the following output.
 
 
 
-### Multiple Custom Labels
+## Multiple Custom Labels
 
 You can set multiple custom labels in a single Circular Gauge by adding an array of custom label objects. Refer the following code example for multiple custom label functionality.
 
@@ -156,7 +155,7 @@ You can set multiple custom labels in a single Circular Gauge by adding an array
 
 Execute the above code to render the following output.
 
-{ ![](Custom-labels_images/Custom-labels_img2.png) | markdownify }
+ ![](Custom-labels_images/Custom-labels_img2.png)
 {:.image }
 
 
@@ -166,7 +165,7 @@ Figure 48: Circular Gauge with multiple custom labels
 
 
 
-### Outer Custom Label
+## Outer Custom Label
 
 * Outer Custom Label is used to show custom labels outside the gauge control. The Outer Custom Label can be positioned with API called outerCustomLabelPosition. The value for this API is enumerable type and its possible values are,
 1. Right
@@ -243,7 +242,7 @@ OuterCutomLabelPosition="Right">
 
 Execute the above code to render the following output.
 
-{ ![](Custom-labels_images/Custom-labels_img3.png) | markdownify }
+ ![](Custom-labels_images/Custom-labels_img3.png)
 {:.image }
 
 

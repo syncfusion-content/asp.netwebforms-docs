@@ -7,9 +7,9 @@ control: Circular Gauge
 documentation: ug
 ---
 
-## MVVM
+# MVVM
 
-Angular JS
+## Angular JS
 
 Circular Gauge contains angular support. You can add object as well as array object in the Circular Gauge. The two way binding support is given to the pointer value, minimum scale value and maximum scale value. 
 
@@ -18,6 +18,8 @@ Circular Gauge contains angular support. You can add object as well as array obj
 ### Rendering the Circular Gauge
 
 ej-CircularGauge is the control tag in which ej is tag prefix and CircularGauge is the control name.The following code example helps you to render Circular Gauge.
+
+{% highlight html %}
 
 &lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
 
@@ -63,13 +65,13 @@ $scope.nmaximum = 120;
 
 &lt;/script&gt;
 
-
+{% endhighlight %}
 
 
 
 Execute the above code to render the output as follows.
 
-{ ![](MVVM_images/MVVM_img1.png) | markdownify }
+ ![](MVVM_images/MVVM_img1.png)
 {:.image }
 
 
@@ -82,6 +84,8 @@ Execute the above code to render the output as follows.
 Scale is an array object and you can use the inner tag for it. Object in the array collection (i.e. border) is extended with hyphen in the same tag.
 
 Example: e-border-width and e-border-color. 
+
+{% highlight html %}
 
 &lt;!--To Render the Circular gauge--&gt;
 
@@ -116,12 +120,12 @@ e-border-width="0.5">
 &lt;/ej-CircularGauge&gt;
 
 
-
+{% endhighlight %}
 
 
 Execute the above code to render the following output.
 
-{ ![](MVVM_images/MVVM_img2.png) | markdownify }
+ ![](MVVM_images/MVVM_img2.png)
 {:.image }
 
 
@@ -132,6 +136,8 @@ Execute the above code to render the following output.
 Pointer is an array object and you can use the inner tag for it. Object in the array collection (i.e. pointer cap) is extended with hyphen in the same tag.
 
 Example: e-pointerCap-radius. 
+
+{% highlight html %}
 
 &lt;!--To Render the Circular gauge--&gt;
 
@@ -176,12 +182,12 @@ e-pointerCap-radius="12">
 &lt;/ej-CircularGauge&gt;
 
 
-
+{% endhighlight %}
 
 
 Execute the above code to render the output as follows.
 
-{ ![](MVVM_images/MVVM_img3.png) | markdownify }
+ ![](MVVM_images/MVVM_img3.png)
 {:.image }
 
 
@@ -190,6 +196,8 @@ Execute the above code to render the output as follows.
 ### Adding Label Collection
 
 Label is also an array object. You can use the inner tag for it. 
+
+{% highlight html %}
 
 &lt;!--To Render the Circular gauge--&gt;
 
@@ -233,13 +241,13 @@ Label is also an array object. You can use the inner tag for it.
 
 &lt;/ej-CircularGauge&gt;
 
-
+{% endhighlight %}
 
 
 
 Execute the above code to render the following output.
 
-{ ![](MVVM_images/MVVM_img4.png) | markdownify }
+ ![](MVVM_images/MVVM_img4.png)
 {:.image }
 
 
@@ -252,6 +260,8 @@ Execute the above code to render the following output.
 ### Adding Tick Colection
 
 Tick is an array object. You can use the inner tag for it. 
+
+{% highlight html %}
 
 &lt;!--To Render the Circular gauge--&gt;
 
@@ -308,12 +318,12 @@ e-width="1" e-color="#8c8c8c">
 &lt;/ej-CircularGauge&gt;
 
 
-
+{% endhighlight %}
 
 
 Execute the above code to render the following output.
 
-{ ![](MVVM_images/MVVM_img5.png) | markdownify }
+ ![](MVVM_images/MVVM_img5.png)
 {:.image }
 
 
@@ -326,6 +336,8 @@ Execute the above code to render the following output.
 Range is an array object. You can use the inner tag for it. Object in the array collection (i.e. border) is extended with hyphen in the same tag.
 
 Example: e-border-color. 
+
+{% highlight html %}
 
 &lt;!--To Render the Circular gauge--&gt;
 
@@ -394,12 +406,12 @@ e-border-color="#f5b43f">
 &lt;/ej-CircularGauge&gt;
 
 
-
+{% endhighlight %}
 
 
 Execute the above code to render the following output.
 
-{ ![](MVVM_images/MVVM_img6.png) | markdownify }
+ ![](MVVM_images/MVVM_img6.png)
 {:.image }
 
 
@@ -408,6 +420,8 @@ Execute the above code to render the following output.
 ### Two Way Binding 
 
 Circular Gauge support the two way binding for the property value, minimum and maximum as mentioned earlier. The following code example explains how to achieve the two way binding in Circular Gauge.
+
+{% highlight html %}
 
 &lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
 
@@ -539,11 +553,11 @@ $scope.nmaximum = 120;
 
 &lt;/script&gt;
 
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
-{ ![](MVVM_images/MVVM_img7.png) | markdownify }
+ ![](MVVM_images/MVVM_img7.png)
 {:.image }
 
 
@@ -564,7 +578,7 @@ Execute the above code to render the following output.
 
 
 
-[ASP]
+{% highlight html %}
 
 &lt;%--content section to refer script files-- %&gt;
 
@@ -662,11 +676,11 @@ $("#sampleProperties").ejPropertiesPanel();
 
 &lt;/script&gt;
 
-
+{% endhighlight %}
 
 Execute the above code to render the following output. The following screenshot is the output of ASP.
 
-{ ![](MVVM_images/MVVM_img8.png) | markdownify }
+ ![](MVVM_images/MVVM_img8.png)
 {:.image }
 
 
