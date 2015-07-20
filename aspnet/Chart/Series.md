@@ -7,14 +7,14 @@ control: Chart
 documentation: ug
 ---
 
-## Series
+# Series
 
 The Series property provides access to a collection of all series that are defined explicitly within a Chart control. Each series is assigned with series type and name. It contains collection of data point and each point contains x value and y value(s).
 
-### Multiple Series
+## Multiple Series
 
 You can plot multipleseries on the same Chart. Series are defined by adding them to the "series" array and rendering order of each series can be controlled using the ZOrder properties of the series. Series with 0 as ZOrder renders first. 
-
+{% highlight html %}
 [ASP.NET] 
 
 &lt;ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true"&gt;
@@ -80,17 +80,17 @@ You can plot multipleseries on the same Chart. Series are defined by adding them
       &lt;/ej:Chart&gt;
 
 
+{% endhighlight  %}
 
 
-
-{ ![](Series_images/Series_img1.png) | markdownify }
+![](Series_images/Series_img1.png)
 {:.image }
 
 
 CommonSeriesOptions
 
 You can specify the properties common to all series of the Chart in CommonSeriesOptions.
-
+{% highlight html %}
  [ASP.NET] 
 
 &lt;ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true"&gt;
@@ -156,14 +156,14 @@ You can specify the properties common to all series of the Chart in CommonSeries
       &lt;/ej:Chart&gt;
 
 
+{% endhighlight %}
 
 
-
-{ ![](Series_images/Series_img2.png) | markdownify }
+![](Series_images/Series_img2.png)
 {:.image }
 
 
-### Combination Series
+## Combination Series
 
 A combination Chart combines two or more Charts types in single Charts. For example, column series with line/spline series. There are some limitations in the combination series.
 
@@ -171,7 +171,7 @@ A combination Chart combines two or more Charts types in single Charts. For exam
 2. Pie, Doughnut Series cannot be used with other series types.
 
 
-
+{% highlight html %}
 [ASP.NET] 
 
 &lt;ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true"&gt;
@@ -201,7 +201,8 @@ A combination Chart combines two or more Charts types in single Charts. For exam
         &lt;/ej:Chart&gt;
 
 
-
+{% endhighlight %}
+{% highlight c# %}
 [CS]
 
            List<CombinationChartData> data = new List<CombinationChartData>();
@@ -278,16 +279,16 @@ A combination Chart combines two or more Charts types in single Charts. For exam
 
     }
 
+{% endhighlight  %}
 
-
-{ ![](Series_images/Series_img3.png) | markdownify }
+![](Series_images/Series_img3.png)
 {:.image }
 
 
-### Customize Series
+## Customize Series
 
 You can customize the Chart series using fill, border width and border color. You can customize the series color using ‘Fill’ property of series, the stroke-width of the line, spline series using ‘Width’ property of series, the border color and width of the column/bar using ‘Border’ property of series and rect in the column/bar Chart using the ‘Fill’ and ‘Border’ property of each point.
-
+{% highlight html %}
  [ASP.NET] 
 
 &lt;ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true"&gt;
@@ -328,16 +329,16 @@ You can customize the Chart series using fill, border width and border color. Yo
 
 
 
+{% endhighlight  %}
 
-
-{ ![](Series_images/Series_img4.png) | markdownify }
+![](Series_images/Series_img4.png)
 {:.image }
 
 
-### Data Labels
+## Data Labels
 
 Data labels refer to the y values of data points that appear on each point. You can also display category names or custom text in data label by applying template for the dataLabel. HorizontalTextAlignment and VerticalTextAlignment in dataLabel is used to align the label. 
-
+{% highlight html %}
  [ASP.NET] 
 
 
@@ -397,17 +398,17 @@ Data labels refer to the y values of data points that appear on each point. You 
         &lt;/ej:Chart&gt;
 
 
+{% endhighlight %}
 
 
-
-{ ![](Series_images/Series_img5.png) | markdownify }
+![](Series_images/Series_img5.png)
 {:.image }
 
 
 ConnectorLine:
 
 ConnectorLine in data Label is used to customize the line that connects the outside labels of the pie series in terms of color, height, width and type of line. 
-
+{% highlight html %}
 [ASP.NET] 
 
 &lt;ej:Chart ID="Chart1" runat="server&gt;           
@@ -442,9 +443,9 @@ ConnectorLine in data Label is used to customize the line that connects the outs
 
 
 
+{% endhighlight %}
 
-
-{ ![](Series_images/Series_img6.png) | markdownify }
+![](Series_images/Series_img6.png)
 {:.image }
 
 
@@ -454,10 +455,10 @@ _Data labels_ refer to the y values of data points, which appear on each point. 
 
 
 
-{ ![](Series_images/Series_img7.png) | markdownify }
+![](Series_images/Series_img7.png)
 {:.image }
 
-
+{% highlight html %}
 [ASP.NET]
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;
@@ -511,6 +512,6 @@ _Data labels_ refer to the y values of data points, which appear on each point. 
 
 
  &lt;/ej:Chart&gt;
-
+{% endhighlight %}
 
 

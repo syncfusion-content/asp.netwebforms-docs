@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-## Context Menu
+# Context Menu
 
 Context Menu is one of the user interaction controls related with Grid. It is handy to use the Context Menu to trigger more actions. The default Context Menu items created for Grid are:
 
@@ -25,13 +25,14 @@ Context Menu is one of the user interaction controls related with Grid. It is ha
 2. Last Page
 3. Previous Page
 4. First Page
-### Context Menu action
+
+## Context Menu action
 
 
 To enable Context Menu in Grid use EnableContextMenu property in ContextMenuSettings at Grid initialize. The following code example illustrates you on how to set Context Menu.
 
 
-
+{% highlight html %}
 [ASPX]
 
         &lt;ej:Grid ID="Grid" runat="server" DataSourceID="ObjectData" AllowScrolling="True" AllowGrouping="True" AllowSorting="True" AllowPaging="True"  &gt;
@@ -55,7 +56,8 @@ To enable Context Menu in Grid use EnableContextMenu property in ContextMenuSett
 &lt;ContextMenuSettings EnableContextMenu="true” &gt;&lt;/ContextMenuSettings&gt;
 
         &lt;/ej:Grid&gt;
-
+{% endhighlight %}
+{% highlight c#%}
 [CS]
 
 using System;
@@ -165,12 +167,12 @@ namespace WebSampleBrowser.Grid
 }
 
 
-
+{% endhighlight  %}
 The following output is displayed as a result of the above code example.
 
 Content
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Context-Menu_images/Context-Menu_img1.png) | markdownify }
+![C:/Users/ApoorvahR/Desktop/1.png](Context-Menu_images/Context-Menu_img1.png)
 {:.image }
 
 
@@ -178,7 +180,7 @@ _Figure 112: Context Menu in content_
 
 Header
 
-{ ![C:/Users/ApoorvahR/Desktop/2.png](Context-Menu_images/Context-Menu_img2.png) | markdownify }
+![C:/Users/ApoorvahR/Desktop/2.png](Context-Menu_images/Context-Menu_img2.png)
 {:.image }
 
 
@@ -186,7 +188,7 @@ _Figure 113: Context Menu in Header_
 
 Footer
 
-{ ![](Context-Menu_images/Context-Menu_img3.png) | markdownify }
+![](Context-Menu_images/Context-Menu_img3.png)
 {:.image }
 
 

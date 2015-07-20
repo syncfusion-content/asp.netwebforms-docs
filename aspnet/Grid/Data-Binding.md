@@ -7,15 +7,15 @@ control: Grid
 documentation: ug
 ---
 
-## Data Binding
+# Data Binding
 
-### Local data
+## Local data
 
 Grid data source can be set List collection and local datasource. It has full support for List binding and local datasource binding binding. 
 
 
 
-
+{% highlight html %}
 
 [ASP]
 
@@ -37,7 +37,8 @@ Grid data source can be set List collection and local datasource. It has full su
 
 &lt;/ej:Grid&gt;
 
-
+{% endhighlight %}
+{% highlight c# %}
 
 [cs]
 
@@ -110,25 +111,25 @@ public partial class _Default : System.Web.UI.Page
 }
 
 
-
+{% endhighlight %}
 
 
 Result of the above code example.
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img1.png) | markdownify }
+![](Data-Binding_images/Data-Binding_img1.png)
 {:.image }
 
 
-### Remote data
+## Remote data
 
-#### oData Binding	
+### oData Binding	
 
 oData is standardized protocol for creating and consuming data. You can retrieve data from oDataservice using DataManager. The following code is a simple example of remote data binding using oDataservice.
 
 
-
+{% highlight html %}
 [ASP]
 
 
@@ -154,30 +155,28 @@ oData is standardized protocol for creating and consuming data. You can retrieve
 &lt;/ej:Grid&gt;
 
 
-
+{% endhighlight %}
 
 
 The following output is the result of the above code example.
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img2.png) | markdownify }
+![](Data-Binding_images/Data-Binding_img2.png) 
 {:.image }
 
 
 
 
-> { ![](Data-Binding_images/Data-Binding_img3.png) | markdownify }
-{:.image }
-_Note: For information about DataManager with Grid check DataAdaptors concept._
+> _Note: For information about DataManager with Grid check DataAdaptors concept._
 
-#### Load at once
+### Load at once
 
 Through this load at once technique, you can load all remote data from the server to the Grid and process records in client-side. The following code example shows load at once with Grid. To enable load at once feature we need to set offline property of DataManager as true.
 
 
 
-
+{% highlight html %}
 
 [ASP]
 
@@ -202,24 +201,24 @@ Through this load at once technique, you can load all remote data from the serve
 &lt;/ej:Grid&gt;
 
 
-
+{% endhighlight %}
 
 
 The following output is the result of the above code example.
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img4.png) | markdownify }
+![](Data-Binding_images/Data-Binding_img4.png)
 {:.image }
 
 
-#### Load on demand
+### Load on demand
 
 Load on demand is a powerful technique that is used to reduce bandwidth size of consuming data. In Grid, you have support to use load on demand. In the following example, oDataservice is used. At load time, it retrieves required data from service, only for the visible page and not for all records. And if you move to another page, it loads for current page. You do not have to configure Grid to enable load on demand, since load on demand is enabled by default in Grid. The following code example shows you how load on demand works with Grid.
 
 
 
-
+{% highlight html %}
 
 
 
@@ -249,13 +248,13 @@ Load on demand is a powerful technique that is used to reduce bandwidth size of 
 
 
 
-
+{% endhighlight %}
 
 The following screenshot is the result of the above code example.
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img5.png) | markdownify }
+![](Data-Binding_images/Data-Binding_img5.png)
 {:.image }
 
 
@@ -263,11 +262,11 @@ If you have developer tools, you can capture network transfer to check Grid cons
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img6.png) | markdownify }
+![](Data-Binding_images/Data-Binding_img6.png)
 {:.image }
 
 
-#### Cross domain
+### Cross domain
 
 Grid can use cross domain data service with the help of DataManager. The given configuration is for configuring in client-side. You must configure the server as well, to retrieve data from server code. For server configuration, you can refer this link ([https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)). The following code example shows you how to use or retrieve cross domain data from Grid.
 
@@ -275,7 +274,7 @@ Grid can use cross domain data service with the help of DataManager. The given c
 
 
 
-
+{% highlight html %}
 
 [ASP]
 
@@ -305,24 +304,24 @@ Grid can use cross domain data service with the help of DataManager. The given c
 
 
 
-
+{% endhighlight  %}
 
 The following screenshot is the result of the above code example.
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img7.png) | markdownify }
+![](Data-Binding_images/Data-Binding_img7.png)
 {:.image }
 
 
-#### HTTP additional parameters
+### HTTP additional parameters
 
 In this section, you can learn how to customize or add an extra parameter for HTTP request. You can add parameter to oDataserviceURL using the Query property in Grid. DataManager uses this Query internally in Grid.
 
 
 
 
-
+{% highlight html %}
 
 
 [ASP]
@@ -351,20 +350,20 @@ In this section, you can learn how to customize or add an extra parameter for HT
 
 
 
-
+{% endhighlight  %}
 
 The following screenshot is the result of the above code example.
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img8.png) | markdownify }
+![](Data-Binding_images/Data-Binding_img8.png) 
 {:.image }
 
 
-#### Supported DataTypes
+### Supported DataTypes
 
 Grid supports various DataTypes such as string, number, datetime and Boolean. By default, Grid reads DataTypes from Grid data source. Using these data types, Grid uses it at to edit, add, save, filter and other such operations. You can also customize these DataTypes through column property type. It can override default data type reading.
-
+{% highlight html %}
 &lt;ej:Grid ID="FlatGrid" runat="server"&gt;
 
        &lt;Columns&gt;
@@ -380,18 +379,18 @@ Grid supports various DataTypes such as string, number, datetime and Boolean. By
   &lt;/ej:Grid&gt;
 
 
+{% endhighlight %}
 
 
 
 
-
-### HTML binding
+## HTML binding
 
 Grid provides support to form Grid from HTML table. It is flexible to convert from table to Grid with the help of the DataManager.
 
 
 
-
+{% highlight html %}
 
 [ASP]
 
@@ -563,11 +562,11 @@ Grid provides support to form Grid from HTML table. It is flexible to convert fr
 
 
 
-
+{% endhighlight %}
 
 The following screenshot is the result of the above code example.
 
-{ ![](Data-Binding_images/Data-Binding_img9.png) | markdownify }
+![](Data-Binding_images/Data-Binding_img9.png)
 {:.image }
 
 

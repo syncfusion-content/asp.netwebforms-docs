@@ -7,9 +7,9 @@ control: MaskEdit
 documentation: ug
 ---
 
-## Appearance and styling
+# Appearance and styling
 
-### Theme
+## Theme
 
 The MaskEditTextbox control’s style and appearance can be controlled based on CSS classes. In order to apply styles to the MaskEditTextbox control, you need to refer two files namely; ej.widgets.core.min.css and ej.theme.min.css. When the file ej.widgets.all.min.cssis referred, then it is not necessary to include the files ej.widgets.core.min.cssand ej.theme.min.cssin your project, as ej.widgets.all.min.css is the combination of these two. 
 
@@ -31,11 +31,11 @@ By default, there are 13 themes support available for MaskEditTextbox control na
 
 
 
-### CSS Class
+## CSS Class
 
 The CSS properties can be customized by using the CssClass in the MaskEditTextbox. You can customize the MaskEditTextbox with various CSS properties to appear like your likable control.
 
-#### Configure CSS Class
+### Configure CSS Class
 
 The following steps explains the implementation of CssClass in the MaskEditTextbox.
 
@@ -87,17 +87,17 @@ Customize the CSS properties in custom CSS class.
 
 The output for MaskEditTextbox after applying “CssClass”.
 
-{ ![C:/Users/giftline.jebamani/Desktop/aa.png](Appearance-and-styling_images/Appearance-and-styling_img1.png) | markdownify }
+![C:/Users/giftline.jebamani/Desktop/aa.png](Appearance-and-styling_images/Appearance-and-styling_img1.png)
 {:.image }
 
 
 
 
-#### Rounded Corner Support
+### Rounded Corner Support
 
 The MaskEditTextbox provides you with rounded corner support that the appearance differs from normal MaskEditTextbox control. The default value for ShowRoundedCorner property is false in the MaskEditTextbox.
 
-#### Configure Rounded Corner Support
+### Configure Rounded Corner Support
 
 The following steps explains the implementation of ShowRoundedCorner in the MaskEditTextbox.
 
@@ -117,15 +117,14 @@ The following steps explains the implementation of ShowRoundedCorner in the Mask
 
 The output for MaskEditTextbox when “ShowRoundedCorner” is “true”.
 
-{ ![C:/Users/giftline.jebamani/Desktop/bb.png](Appearance-and-styling_images/Appearance-and-styling_img2.png) | markdownify }
+![C:/Users/giftline.jebamani/Desktop/bb.png](Appearance-and-styling_images/Appearance-and-styling_img2.png)
 {:.image }
-__
 
-#### Water Mark Text Support
+### Water Mark Text Support
 
 The MaskEditTextbox provides water mark text support that you can display the initial value in the control by water mark. The default value for WatermarkText property is the empty string (“”) in the MaskEditTextbox.
 
-##### Configure Water Mark Text
+#### Configure Water Mark Text
 
 The following steps explains the implementation of WatermarkText in theMaskEditTextbox.
 
@@ -147,17 +146,15 @@ Add the following code in your ASPX page to render the MaskEditTextbox control.
 
 The output for the MaskEditTextbox after applying “WatermarkText”.
 
-{ ![C:/Users/giftline.jebamani/Desktop/cc.png](Appearance-and-styling_images/Appearance-and-styling_img3.png) | markdownify }
+![C:/Users/giftline.jebamani/Desktop/cc.png](Appearance-and-styling_images/Appearance-and-styling_img3.png) 
 {:.image }
 
 
-__
-
-#### Text Alignment Support
+### Text Alignment Support
 
 The Mask Edit Textbox provides the text alignment support that you can set the alignment of text in the control by using TextAlign property. The default value for TextAlign property is left in the MaskEditTextbox.
 
-##### Configure Text Alignment
+#### Configure Text Alignment
 
 The following steps explains the implementation of TextAlign in the MaskEditTextbox.
 
@@ -177,7 +174,7 @@ Add the following code in your ASPX page to render the Textbox control.
 
 The output for MaskEditTextbox when “TextAlign”is“right”.
 
-{ ![C:/Users/giftline.jebamani/Desktop/dd.png](Appearance-and-styling_images/Appearance-and-styling_img4.png) | markdownify }
+![C:/Users/giftline.jebamani/Desktop/dd.png](Appearance-and-styling_images/Appearance-and-styling_img4.png) 
 {:.image }
 
 

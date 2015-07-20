@@ -7,12 +7,12 @@ control: Chart
 documentation: ug
 ---
 
-## Exporting
+# Exporting
 
 Essential Chart supports client-side exporting when rendered in canvas mode. The following code snippet illustrates client-side exporting using Essential Chart. 
 
 Code: 
-
+{% highlight html %}
 [ASP.NET] 
 
    &lt;img alt="Export Chart" src="../Content/images/chart/export.png" onclick="onExport()"  title="Export Chart" style="float: right" /&gt;
@@ -47,7 +47,7 @@ Code:
 
 &lt;/script&gt;
 
-
+{% endhighlight  %}
 
 
 

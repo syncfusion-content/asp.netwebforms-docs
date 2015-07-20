@@ -7,16 +7,16 @@ control: Grid
 documentation: ug
 ---
 
-## Columns
+# Columns
 
 Colums are a key feature in Grid to define schema in a control based on datasource. It is useful to map field to datasource values.
 
-### Formatting
+## Formatting
 
 Formatting is used to convert data values to human readable formats using specific culture settings. In Grid, you have an option to format a particular column through the Format property. For more details about globalize.js, refer to the link ([https://github.com/jquery/globalize](https://github.com/jquery/globalize)). The following code example shows you how to use formatting in Grid.
 
 
-
+{% highlight html %}
 [ASP]
 
 
@@ -37,8 +37,8 @@ Formatting is used to convert data values to human readable formats using specif
 
     &lt;/ej:Grid&gt;
 
-
-
+{% endhighlight %}
+{% highlight c# %}
 [cs]
 
   public partial class ColumnFormatting : System.Web.UI.Page
@@ -129,7 +129,7 @@ Formatting is used to convert data values to human readable formats using specif
 
 
 
-
+{% endhighlight  %}
 
 
 
@@ -137,14 +137,14 @@ The following is the result of column formatting.
 
 
 
-{ ![](Columns_images/Columns_img1.png) | markdownify }
+![](Columns_images/Columns_img1.png)
 {:.image }
 
 
-### Template
+## Template
 
 A Template is used to render a specific template to a particular column using Template and TemplateID property. These columns are not bound to Grid.
-
+{% highlight html %}
 [ASP]
 
 
@@ -192,7 +192,8 @@ A Template is used to render a specific template to a particular column using Te
     &lt;/script&gt;
 
 &lt;/asp:Content&gt;
-
+{% endhighlight  %}
+{% highlight c# %}
 [cs]
 
   public partial class ColumnTemplate : System.Web.UI.Page
@@ -289,7 +290,7 @@ A Template is used to render a specific template to a particular column using Te
 
 
 
-
+{% endhighlight %}
 
 
 
@@ -297,14 +298,14 @@ The following output is displayed as a result of the above code example.
 
 
 
-{ ![](Columns_images/Columns_img2.png) | markdownify }
+![](Columns_images/Columns_img2.png) 
 {:.image }
 
 
-### Custom Attribute
+## Custom Attribute
 
 Custom attribute is a powerful feature of Columns. This is used to modify the styles and appearance of a particular column. Using CustomAttribute property of Columns to achieve custom attribute feature.
-
+{% highlight html %}
 [ASP]
 
 
@@ -358,21 +359,21 @@ Custom attribute is a powerful feature of Columns. This is used to modify the st
     &lt;/ej:Grid&gt; 
 
 
-
+{% endhighlight  %}
 
 
 The following output is displayed as a result of the above code example.
 
 
 
-{ ![](Columns_images/Columns_img3.png) | markdownify }
+![](Columns_images/Columns_img3.png)
 {:.image }
 
 
-### Read only
+## Read only
 
 AllowEditing enables you to edit a column, but it prevents the fields from showing it as editable. If you want to make a column as read-only then set AllowEditing as False for that column. The following code example shows Essential Javascript column as read-only.
-
+{% highlight html %}
 [ASP]
 
 
@@ -411,20 +412,20 @@ Width="90" />
 
 
 
-
+{% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
 
 
-{ ![](Columns_images/Columns_img4.png) | markdownify }
+![](Columns_images/Columns_img4.png) 
 {:.image }
 
 
-### Controlling Grid actions
+## Controlling Grid actions
 
 In Grid, you can control Grid actions through AllowSorting, AllowGrouping, AllowFiltering. The following code example shows you how to disable a particular column. The following example has controlled grouping action in CustomerID column, filtering in EmployeeID column and sorting in Freight column.
-
+{% highlight html %}
 [ASP]
 
 [aspx]
@@ -456,19 +457,19 @@ In Grid, you can control Grid actions through AllowSorting, AllowGrouping, Allow
 
 
 
-
+{% endhighlight %}
 The following output is displayed as a result of the above code example.
 
 
 
-{ ![](Columns_images/Columns_img5.png) | markdownify }
+![](Columns_images/Columns_img5.png) 
 {:.image }
 
 
-### Auto-generate column
+## Auto-generate column
 
 The columns are automatically generated from the datasource and you do not need specific column declarations. The following code example shows auto-generate column behavior with Grid.
-
+{% highlight html %}
 [ASP]
 
 
@@ -486,9 +487,9 @@ The columns are automatically generated from the datasource and you do not need 
         &lt;/ej:Grid&gt;
 
 &lt;/div&gt;
+{% endhighlight %}
 
-
-
+{% highlight c# %}
 [cs]
 
 namespace WebSampleBrowser.Grid
@@ -515,20 +516,20 @@ namespace WebSampleBrowser.Grid
 
 }
 
-
+{% endhighlight  %}
 
 The following output is displayed as a result of the above code example.
 
 
 
-{ ![](Columns_images/Columns_img6.png) | markdownify }
+![](Columns_images/Columns_img6.png)
 {:.image }
 
 
-### Foreign key columns
+## Foreign key columns
 
 Foreign key is a field in relational table. It matches the specific key columns of another table. Foreign key column feature can be achived using ForeignKeyField and FoeriegnKeyValue property of Columns.
-
+{% highlight html %}
 [ASP]
 
 [aspx]
@@ -554,9 +555,9 @@ ForeignKeyValue="FirstName" TextAlign="Left" Width="90" />
             &lt;/Columns&gt;
 
         &lt;/ej:Grid&gt;
+{% endhighlight  %}
 
-
-
+{% highlight c# %}
 [cs]
 
     public partial class ForeignKeyColumn : System.Web.UI.Page
@@ -717,7 +718,7 @@ ForeignKeyValue="FirstName" TextAlign="Left" Width="90" />
 
     }
 
-
+{% endhighlight  %}
 
 
 
@@ -725,14 +726,14 @@ The following output is displayed as a result of the above code example.
 
 
 
-{ ![](Columns_images/Columns_img7.png) | markdownify }
+![](Columns_images/Columns_img7.png)
 {:.image }
 
 
-### Cell Merging
+## Cell Merging
 
 Cell merging feature enables to merge cells based on your requirement. The following code example illustrates Cell Merging. Using AllowCellMerging propertyand MergeCellInfo event to achieve cell merging feature.
-
+{% highlight html %}
 [ASP.NET]
 
 
@@ -786,7 +787,9 @@ Cell merging feature enables to merge cells based on your requirement. The follo
     	}
 
 &lt;/script&gt;
+{% endhighlight  %}
 
+{% highlight c# %}
 [ASP.NET CS]
 
 
@@ -901,22 +904,22 @@ this.ShipName = ShipName;
 
 }
 
-
+{% endhighlight  %}
 
 Execute the above code to render the following output.
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Columns_images/Columns_img8.png) | markdownify }
+![C:/Users/ApoorvahR/Desktop/1.png](Columns_images/Columns_img8.png) 
 {:.image }
 
 
 _Figure 29: Cell Merging_
 
-### AutoWrap Column Cells
+## AutoWrap Column Cells
 
 AutoWrap feature allows you to wrap cell content to next line when the content exceeds the boundary of the Column cells. Use the following code example for Auto wrap in column cells. AtutoWrap feature was enabled by setting AutoTextWrap property as true.
-
+{% highlight html %}
 [ASP.NET]
 
 
@@ -943,8 +946,8 @@ AutoWrap feature allows you to wrap cell content to next line when the content e
 
     &lt;/div&gt;
 
-
-
+{% endhighlight %}
+{% highlight c# %}
 [ASP.NET CS]
 
 
@@ -1060,17 +1063,17 @@ namespace WebSampleBrowser.Grid
 }
 
 
-
+{% endhighlight %}
 Execute the above code to render the following output.
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Columns_images/Columns_img9.png) | markdownify }
+![C:/Users/ApoorvahR/Desktop/1.png](Columns_images/Columns_img9.png)
 {:.image }
 
 
-### Column Chooser
+## Column Chooser
 
 Column Chooser is used to view or hide particular column. To enable column chooser set ShowColumnChooser property as true. Use the following code example to enable column Chooser.
-
+{% highlight html %}
 
 
 [ASP]
@@ -1104,7 +1107,8 @@ Column Chooser is used to view or hide particular column. To enable column choos
         &lt;/ej:Grid&gt;
 
 
-
+{% endhighlight %}
+{% highlight c# %}
 
 
 [CS]
@@ -1205,11 +1209,11 @@ public partial class ColumnChooser : System.Web.UI.Page
 
     }
 
-
+{% endhighlight  %}
 
 Execute the above code to render the following output.
 
-{ ![](Columns_images/Columns_img10.png) | markdownify }
+![](Columns_images/Columns_img10.png)
 {:.image }
 
 
@@ -1217,12 +1221,12 @@ _Figure 31: Grid with Column chooser_
 
 
 
-### DisableHtmlEncode
+## DisableHtmlEncode
 
 DisableHtmlEncode property helps you show the encoded HTML view of Grid content and header elements. 
 
 The following code example shows you how to set DisableHtmlEncode:
-
+{% highlight html %}
 [ASPX]
 
         &lt;ej:Grid ID="Grid" runat="server" DataSourceID="ObjectData" AllowScrolling="True"&gt;
@@ -1246,9 +1250,9 @@ The following code example shows you how to set DisableHtmlEncode:
             &lt;EditSettings AllowEditing="True” AllowAdding="True” AllowDeleting="True”  &gt;&lt;/EditSettings&gt;
 
         &lt;/ej:Grid&gt;
+{% endhighlight %}
 
-
-
+{% highlight c# %}
 [CS]
 
 
@@ -1364,19 +1368,19 @@ namespace WebSampleBrowser.Grid
     }
 
 }
-
+{% endhighlight  %}
 
 
 The following output is displayed as a result of the above code example.
 
-{ ![](Columns_images/Columns_img11.png) | markdownify }
+![](Columns_images/Columns_img11.png) 
 {:.image }
 
 
-### Stacked Header
+## Stacked Header
 
 The Stacked Header feature allows additional header rows that span across the grid columns. Columns can be grouped under such headers. You can effectively group extensive data with the help of multilevel Stacked Headers as well. Enable the Stacked Header by setting the ShowStackedHeader property to true and set the stacked header row by using the StakedHeaderRows property. The Stacked Header feature also supports all other grid features including Grouping, Sorting, Filtering, Reordering, etc. 
-
+{% highlight html %}
 [ASP]
 
 
@@ -1423,15 +1427,15 @@ The Stacked Header feature allows additional header rows that span across the gr
 
             SelectCommand=”SELECT * FROM [Orders]”>&lt;/asp:SqlDataSource&gt;
 
-
+{% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-{ ![](Columns_images/Columns_img12.png) | markdownify }
+![](Columns_images/Columns_img12.png) 
 {:.image }
 
 
-{ ![](Columns_images/Columns_img13.png) | markdownify }
+![](Columns_images/Columns_img13.png) 
 {:.image }
 
 

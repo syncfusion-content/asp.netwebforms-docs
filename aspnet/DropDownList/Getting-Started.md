@@ -17,13 +17,13 @@ In this example, you can learn how to customize the DropDownList in a real-time 
 
 The following screenshot illustrates the functionality of DropDownList with a Cascading Feature.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img1.png)
 {:.image }
 
 
 In the above screenshot, you can select a group from the first DropDownList control. After you select the group, the corresponding countries for that group are listed in the second DropDownList widget.Then, you can select a country and press the Vote option.  
 
-Create DropDownList control 
+## Create DropDownList control 
 
 The ASP.NET DropDownList control basically renders with built-in features.
 
@@ -199,11 +199,11 @@ Run the code to render the following output.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img2.png)
 {:.image }
 
 
-Configure Data Source 
+## Configure Data Source 
 
 You can configure the DropDownList controls by using online services. Two different online data services for the two DropDownList controls are created. They are as follows, groups’ data service for the group selection DropDownList and countries data service for the country selection DropDownList. Both the data services are referred from the following service location.
 [http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/](http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/)
@@ -256,15 +256,15 @@ The following code example explains how to configure the Data Source.
 
 Execute the code to render the following output.
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img3.png)
 {:.image }
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img4.png)
 {:.image }
 
 
-Configure DropDownList with Sprite Icons
+## Configure DropDownList with Sprite Icons
 
 To style the DropDownList popup with the Country flag, you can create the Sprite CSS styles by using the flag icons from the following image source location.  You can add the following location in the URL path for the background image.
 
@@ -660,11 +660,11 @@ You can load the spirit image icons for the countries in a DropDownList by addin
 
 Run the above code example to render the following DropDownList with Data sources.
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img5.png) 
 {:.image }
 
 
-Set the Cascading Option 
+## Set the Cascading Option 
 
 In the above scenario, you have to select the group in the first DropDownList and the corresponding countries for that group are listed in the country DropDownList. You can achieve this by setting the “cascadeTo” that points the DropDownList, where the data is loaded dynamically. You can disable the second DropDownList till the data is loaded dynamically.
 
@@ -708,13 +708,13 @@ The following code example explains how to set the Cascading Option.
 
 Run this code to render the DropDownList with Cascading Option.  
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img6.png)
 {:.image }
 
 
 Initially, you can select the group from the popup of the first DropDownList. After you select the option, selected value is loaded. 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img7.png) 
 {:.image }
 
 
@@ -722,17 +722,17 @@ Initially, you can select the group from the popup of the first DropDownList. Af
 
 Based on the group selection in the first DropDownList, the Data Source in the second DropDownList is loaded and the corresponding Countries are shown on clicking the DropDown button as follows.
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img8.png)
 {:.image }
 
 
 From the “Country” DropDownList, you can select your desired country.
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img9.png)
 {:.image }
 
 
-Set the Vote process in the DropDownList Widget
+## Set the Vote process in the DropDownList Widget
 
 The voting process is done by clicking the Vote button. A button is customized to support the voting process. For more information about the button, you can refer to the following link: [http://help.syncfusion.com/ug/js/default.htm#!Documents/gettingstarted4.htm](http://help.syncfusion.com/ug/js/default.htm)
 
@@ -774,7 +774,7 @@ The following code example explains how to set the Vote process in the DropDownL
 
 When you run the above code example, it displays the DropDownList controls. You can select the value and click the Vote button. The button click event is processed and the values are displayed as follows.
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img10.png)
 {:.image }
 
 

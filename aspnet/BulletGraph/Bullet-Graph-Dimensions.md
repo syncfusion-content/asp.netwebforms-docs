@@ -7,7 +7,7 @@ control: BulletGraph
 documentation: ug
 ---
 
-## Bullet Graph Dimensions
+# Bullet Graph Dimensions
 
 This section explains you on how to change the dimensions of the Bullet Graph. You can change various dimensions and properties of Bullet Graph like width, height, quantitative scale length, qualitative range size etc. By default, Bullet Graph uses 595 pixel width and 90 pixel height. You can customize width and height of a Bullet Graph using Width and Height properties of Bullet Graph respectively.
 
@@ -22,10 +22,11 @@ This section explains you on how to change the dimensions of the Bullet Graph. Y
         &lt;/ej:BulletGraph&gt;
 
 
+{% endhighlight  %}
 
 In the above code example, width is set as 500 pixel and height is set as 100 pixel. The output of the above code example with dimension 500 * 100 is as follows.
 
-{% endhighlight  %}
+
 
 ![](Bullet-Graph-Dimensions_images/Bullet-Graph-Dimensions_img1.png) 
 {:.image }
@@ -141,9 +142,7 @@ The following screenshot displays Bullet Graph in a backward direction.
 ## Qualitative range size
 
 Size of the Qualitativerange is customized using QualitativeRangeSize property. Default value of this property is 32. 
-
 {% highlight html %}
-
 [ASP.NET]
 
 
@@ -154,8 +153,8 @@ Size of the Qualitativerange is customized using QualitativeRangeSize property. 
 
         &lt;/ej:BulletGraph&gt;
 
-{% endhighlight %}
 
+{% endhighlight  %}
 The following screenshot displays Bullet Graph with Qualitative range of size 50
 
 ![](Bullet-Graph-Dimensions_images/Bullet-Graph-Dimensions_img6.png)
@@ -165,9 +164,7 @@ The following screenshot displays Bullet Graph with Qualitative range of size 50
 ## Quantitative scale length
 
 Length of the Quantitativescale is customized using QuantitativeScaleLength property. Default value of this property is 475. 
-
 {% highlight html %}
-
 [ASP.NET]
 
 
@@ -178,7 +175,7 @@ Length of the Quantitativescale is customized using QuantitativeScaleLength prop
 
 &lt;/ej:BulletGraph&gt;
 
-{% highlight %}
+{% endhighlight %}
 
 The following screenshot displays Bullet Graph with Quantitative scale length of 500
 
