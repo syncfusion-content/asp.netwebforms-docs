@@ -25,18 +25,19 @@ In the following screenshot, a BulletGraph is used to compare the actual monsoon
 
 1. Create simple BulletGraph.
 
+   {% highlight html %}
 
+   <ej:Bulletgraph ID="BulletGraph1" runat="server">
 
-&lt;ej:Bulletgraph ID="BulletGraph1" runat="server"&gt;
+   </ej:Bulletgraph>
 
-&lt;/ej:Bulletgraph&gt;
-
+   {% endhighlight %}
 
 
 2. Execute the above code to display the BulletGraph. To customize the measure bars in the BulletGraph, you can pass the data either locally or remotely.
 
-![](Getting-Started_images/Getting-Started_img2.png)
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img2.png)
+   {:.image }
 
 
 ## Provide Required Data
@@ -119,11 +120,11 @@ Once the DataSource property is assigned with the required values, you can bind 
 
 
 
-&lt;ej:Bulletgraph ID="BulletGraph1" runat="server" Height="540" Width="850" QualitativeRangeSize="800"  QuantitativeScaleLength="425"  &gt;
+<ej:Bulletgraph ID="BulletGraph1" runat="server" Height="540" Width="850" QualitativeRangeSize="800"  QuantitativeScaleLength="425"  >
 
-&lt;Fields CategoryField="category" ComparativeMeasureField="comparitiveMeasureValue" FeatureMeasureField="value" /&gt;
+<Fields CategoryField="category" ComparativeMeasureField="comparitiveMeasureValue" FeatureMeasureField="value" />
 
-&lt;/ej:Bulletgraph&gt;
+</ej:Bulletgraph>
 
 {% endhighlight  %}
 
@@ -141,23 +142,23 @@ Minimum, Maximum and Interval values for the QuantitativeScale of the BulletGrap
 
 
 
-&lt;ej:Bulletgraph ID="BulletGraph1" runat="server" Height="540" Width="850" QualitativeRangeSize="800"  QuantitativeScaleLength="425" Orientation="Vertical" FlowDirection="Backward" &gt;
+<ej:Bulletgraph ID="BulletGraph1" runat="server" Height="540" Width="850" QualitativeRangeSize="800"  QuantitativeScaleLength="425" Orientation="Vertical" FlowDirection="Backward" >
 
-&lt;TooltipSettings Visible="true" Template="Tooltip"   /&gt;
+<TooltipSettings Visible="true" Template="Tooltip"   />
 
-&lt;QuantitativeScaleSettings Minimum="50" Maximum="130" Interval="10" TickPosition="Above" MinorTicksPerInterval="4"&gt;
+<QuantitativeScaleSettings Minimum="50" Maximum="130" Interval="10" TickPosition="Above" MinorTicksPerInterval="4">
 
-&lt;LabelSettings Position="Above"&gt;&lt;/LabelSettings&gt;
+<LabelSettings Position="Above"></LabelSettings>
 
-&lt;MinorTickSettings Width="1" Size="7" /&gt;
+<MinorTickSettings Width="1" Size="7" />
 
-&lt;MajorTickSettings Size="10" Width="1" /&gt;
+<MajorTickSettings Size="10" Width="1" />
 
-&lt;/QuantitativeScaleSettings&gt;
+</QuantitativeScaleSettings>
 
-&lt;Fields CategoryField="category" ComparativeMeasureField="comparitiveMeasureValue" FeatureMeasureField="value" /&gt;
+<Fields CategoryField="category" ComparativeMeasureField="comparitiveMeasureValue" FeatureMeasureField="value" />
 
-&lt;/ej:Bulletgraph&gt;
+</ej:Bulletgraph>
 
 {% endhighlight %}
 
@@ -177,47 +178,45 @@ By default, 3 ranges are displayed in the BulletGraph control during the initial
 
 
 
-&lt;ej:Bulletgraph ID="BulletGraph1" runat="server" Height="540" Width="850" QualitativeRangeSize="800"  QuantitativeScaleLength="425" Orientation="Vertical" FlowDirection="Backward" &gt;
+<ej:Bulletgraph ID="BulletGraph1" runat="server" Height="540" Width="850" QualitativeRangeSize="800"  QuantitativeScaleLength="425" Orientation="Vertical" FlowDirection="Backward" >
 
-&lt;TooltipSettings Visible="true" Template="Tooltip"   /&gt;
+<TooltipSettings Visible="true" Template="Tooltip"   />
 
-&lt;QuantitativeScaleSettings Minimum="50" Maximum="130" Interval="10" TickPosition="Above" MinorTicksPerInterval="4"&gt;
+<QuantitativeScaleSettings Minimum="50" Maximum="130" Interval="10" TickPosition="Above" MinorTicksPerInterval="4">
 
-&lt;LabelSettings Position="Above"&gt;&lt;/LabelSettings&gt;
+<LabelSettings Position="Above"></LabelSettings>
 
-&lt;MinorTickSettings Width="1" Size="7" /&gt;
+<MinorTickSettings Width="1" Size="7" />
 
-&lt;MajorTickSettings Size="10" Width="1" /&gt;
+<MajorTickSettings Size="10" Width="1" />
 
-&lt;/QuantitativeScaleSettings&gt;
+</QuantitativeScaleSettings>
 
-&lt;Fields CategoryField="category" ComparativeMeasureField="comparitiveMeasureValue" FeatureMeasureField="value" /&gt;
+<Fields CategoryField="category" ComparativeMeasureField="comparitiveMeasureValue" FeatureMeasureField="value" />
 
-&lt;QualitativeRanges&gt;
+<QualitativeRanges>
 
-&lt;ej:QualitativeRanges RangeEnd="90" /&gt;
+<ej:QualitativeRanges RangeEnd="90" />
 
-&lt;ej:QualitativeRanges RangeEnd="110" /&gt;
+<ej:QualitativeRanges RangeEnd="110" />
 
-&lt;ej:QualitativeRanges RangeEnd="130" RangeStroke="lightgray" /&gt;
+<ej:QualitativeRanges RangeEnd="130" RangeStroke="lightgray" />
 
 
 
-&lt;/QualitativeRanges&gt;
+</QualitativeRanges>
 
-&lt;CaptionSettings Text="Monsoon Rainfall - Actual vs Forecast" TextAngle="90" Location-X="470" Location-Y="270" Font-FontFamily="Segoe UI" Font-FontStyle="normal" Font-Size="20px" Font-FontWeight="Normal" Font-Opacity="1"&gt;
+<CaptionSettings Text="Monsoon Rainfall - Actual vs Forecast" TextAngle="90" Location-X="470" Location-Y="270" Font-FontFamily="Segoe UI" Font-FontStyle="normal" Font-Size="20px" Font-FontWeight="Normal" Font-Opacity="1">
 
-&lt;SubTitle Text= "Rainfall (mm)" Location-X="180" Location-Y="4" Font-FontColor="null" Font-FontFamily="Segoe UI" Font-FontStyle="normal" Font-Size="14px" Font-FontWeight="Normal" Font-Opacity="1" /&gt;
+<SubTitle Text= "Rainfall (mm)" Location-X="180" Location-Y="4" Font-FontColor="null" Font-FontFamily="Segoe UI" Font-FontStyle="normal" Font-Size="14px" Font-FontWeight="Normal" Font-Opacity="1" />
 
-&lt;/CaptionSettings&gt;
+</CaptionSettings>
 
-&lt;/ej:Bulletgraph&gt;
+</ej:Bulletgraph>
 
 {% endhighlight  %}
 
 After adding QualitativeRanges to the BulletGraph, the control appears as follows.
-
-
 
 ![](Getting-Started_images/Getting-Started_img4.png)
 {:.image }
@@ -232,43 +231,43 @@ You can do the following code changes in the quantitative scale to customize the
 
 
 
-&lt;ej:Bulletgraph ID="BulletGraph1" runat="server" Height="540" Width="850" QualitativeRangeSize="800"  QuantitativeScaleLength="425" Orientation="Vertical" FlowDirection="Backward" &gt;
+<ej:Bulletgraph ID="BulletGraph1" runat="server" Height="540" Width="850" QualitativeRangeSize="800"  QuantitativeScaleLength="425" Orientation="Vertical" FlowDirection="Backward" >
 
-&lt;TooltipSettings Visible="true" Template="Tooltip"   /&gt;
+<TooltipSettings Visible="true" Template="Tooltip"   />
 
-&lt;QuantitativeScaleSettings Minimum="50" Maximum="130" Interval="10" TickPosition="Above" MinorTicksPerInterval="4"&gt;
+<QuantitativeScaleSettings Minimum="50" Maximum="130" Interval="10" TickPosition="Above" MinorTicksPerInterval="4">
 
-&lt;LabelSettings Position="Above"&gt;&lt;/LabelSettings&gt;
+<LabelSettings Position="Above"></LabelSettings>
 
-&lt;MinorTickSettings Width="1" Size="7" /&gt;
+<MinorTickSettings Width="1" Size="7" />
 
-&lt;MajorTickSettings Size="10" Width="1" /&gt;
+<MajorTickSettings Size="10" Width="1" />
 
-&lt;ComparativeMeasureSettings Stroke="gray" /&gt;
+<ComparativeMeasureSettings Stroke="gray" />
 
-&lt;FeaturedMeasureSettings Stroke="cadetblue" /&gt;
+<FeaturedMeasureSettings Stroke="cadetblue" />
 
-&lt;/QuantitativeScaleSettings&gt;
+</QuantitativeScaleSettings>
 
-&lt;Fields CategoryField="category" ComparativeMeasureField="comparitiveMeasureValue" FeatureMeasureField="value" /&gt;
+<Fields CategoryField="category" ComparativeMeasureField="comparitiveMeasureValue" FeatureMeasureField="value" />
 
-&lt;QualitativeRanges&gt;
+<QualitativeRanges>
 
-&lt;ej:QualitativeRanges RangeEnd="90" /&gt;
+<ej:QualitativeRanges RangeEnd="90" />
 
-&lt;ej:QualitativeRanges RangeEnd="110" /&gt;
+<ej:QualitativeRanges RangeEnd="110" />
 
-&lt;ej:QualitativeRanges RangeEnd="130" RangeStroke="lightgray" /&gt;
+<ej:QualitativeRanges RangeEnd="130" RangeStroke="lightgray" />
 
-&lt;/QualitativeRanges&gt;
+</QualitativeRanges>
 
-&lt;CaptionSettings Text="Monsoon Rainfall - Actual vs Forecast" TextAngle="90" Location-X="470" Location-Y="270" Font-FontFamily="Segoe UI" Font-FontStyle="normal" Font-Size="20px" Font-FontWeight="Normal" Font-Opacity="1"&gt;
+<CaptionSettings Text="Monsoon Rainfall - Actual vs Forecast" TextAngle="90" Location-X="470" Location-Y="270" Font-FontFamily="Segoe UI" Font-FontStyle="normal" Font-Size="20px" Font-FontWeight="Normal" Font-Opacity="1">
 
-&lt;SubTitle Text= "Rainfall (mm)" Location-X="180" Location-Y="4" Font-FontColor="null" Font-FontFamily="Segoe UI" Font-FontStyle="normal" Font-Size="14px" Font-FontWeight="Normal" Font-Opacity="1" /&gt;
+<SubTitle Text= "Rainfall (mm)" Location-X="180" Location-Y="4" Font-FontColor="null" Font-FontFamily="Segoe UI" Font-FontStyle="normal" Font-Size="14px" Font-FontWeight="Normal" Font-Opacity="1" />
 
-&lt;/CaptionSettings&gt;
+</CaptionSettings>
 
-&lt;/ej:Bulletgraph&gt;
+</ej:Bulletgraph>
 
 {% endhighlight  %}
 
@@ -290,43 +289,43 @@ You can add the following code example to display an appropriate Caption and Sub
 
 
 
-&lt;ej:Bulletgraph ID="BulletGraph1" runat="server" Height="540" Width="850" QualitativeRangeSize="800"  QuantitativeScaleLength="425" Orientation="Vertical" FlowDirection="Backward" &gt;
+<ej:Bulletgraph ID="BulletGraph1" runat="server" Height="540" Width="850" QualitativeRangeSize="800"  QuantitativeScaleLength="425" Orientation="Vertical" FlowDirection="Backward" >
 
-&lt;TooltipSettings Visible="true" Template="Tooltip"   /&gt;
+<TooltipSettings Visible="true" Template="Tooltip"   />
 
-&lt;QuantitativeScaleSettings Minimum="50" Maximum="130" Interval="10" TickPosition="Above"&gt;
+<QuantitativeScaleSettings Minimum="50" Maximum="130" Interval="10" TickPosition="Above">
 
-&lt;LabelSettings Position="Above"&gt;&lt;/LabelSettings&gt;
+<LabelSettings Position="Above"></LabelSettings>
 
-&lt;MinorTickSettings Width="1" /&gt;
+<MinorTickSettings Width="1" />
 
-&lt;MajorTickSettings Size="7" Width="1" /&gt;
+<MajorTickSettings Size="7" Width="1" />
 
-&lt;ComparativeMeasureSettings Stroke="gray" /&gt;
+<ComparativeMeasureSettings Stroke="gray" />
 
-&lt;FeaturedMeasureSettings Stroke="cadetblue" /&gt;
+<FeaturedMeasureSettings Stroke="cadetblue" />
 
-&lt;/QuantitativeScaleSettings&gt;
+</QuantitativeScaleSettings>
 
-&lt;Fields CategoryField="category" ComparativeMeasureField="comparitiveMeasureValue" FeatureMeasureField="value" /&gt;
+<Fields CategoryField="category" ComparativeMeasureField="comparitiveMeasureValue" FeatureMeasureField="value" />
 
-&lt;QualitativeRanges&gt;
+<QualitativeRanges>
 
-&lt;ej:QualitativeRanges RangeEnd="90" /&gt;
+<ej:QualitativeRanges RangeEnd="90" />
 
-&lt;ej:QualitativeRanges RangeEnd="110" /&gt;
+<ej:QualitativeRanges RangeEnd="110" />
 
-&lt;ej:QualitativeRanges RangeEnd="130" RangeStroke="lightgray" /&gt;
+<ej:QualitativeRanges RangeEnd="130" RangeStroke="lightgray" />
 
-&lt;/QualitativeRanges&gt;
+</QualitativeRanges>
 
-&lt;CaptionSettings Text="Monsoon Rainfall - Actual vs Forecast" TextAngle="90" Location-X="470" Location-Y="270" Font-FontFamily="Segoe UI" Font-FontStyle="normal" Font-Size="20px" Font-FontWeight="Normal" Font-Opacity="1"&gt;
+<CaptionSettings Text="Monsoon Rainfall - Actual vs Forecast" TextAngle="90" Location-X="470" Location-Y="270" Font-FontFamily="Segoe UI" Font-FontStyle="normal" Font-Size="20px" Font-FontWeight="Normal" Font-Opacity="1">
 
-&lt;SubTitle Text= "Rainfall (mm)" Location-X="180" Location-Y="4" Font-FontColor="null" Font-FontFamily="Segoe UI" Font-FontStyle="normal" Font-Size="14px" Font-FontWeight="Normal" Font-Opacity="1" /&gt;
+<SubTitle Text= "Rainfall (mm)" Location-X="180" Location-Y="4" Font-FontColor="null" Font-FontFamily="Segoe UI" Font-FontStyle="normal" Font-Size="14px" Font-FontWeight="Normal" Font-Opacity="1" />
 
-&lt;/CaptionSettings&gt;
+</CaptionSettings>
 
-&lt;/ej:Bulletgraph&gt;
+</ej:Bulletgraph>
 
 {% endhighlight %}
 
@@ -352,43 +351,43 @@ You can use a Tooltip in your application to display the values of forecasted ra
 
 
 
-&lt;ej:Bulletgraph ID="BulletGraph1" runat="server" Height="540" Width="850" QualitativeRangeSize="800"  QuantitativeScaleLength="425" Orientation="Vertical" FlowDirection="Backward" &gt;
+<ej:Bulletgraph ID="BulletGraph1" runat="server" Height="540" Width="850" QualitativeRangeSize="800"  QuantitativeScaleLength="425" Orientation="Vertical" FlowDirection="Backward" >
 
-&lt;TooltipSettings Visible="true" Template="Tooltip"   /&gt;
+<TooltipSettings Visible="true" Template="Tooltip"   />
 
-&lt;QuantitativeScaleSettings Minimum="50" Maximum="130" Interval="10" TickPosition="Above"&gt;
+<QuantitativeScaleSettings Minimum="50" Maximum="130" Interval="10" TickPosition="Above">
 
-&lt;LabelSettings Position="Above"&gt;&lt;/LabelSettings&gt;
+<LabelSettings Position="Above"></LabelSettings>
 
-&lt;MinorTickSettings Width="1" /&gt;
+<MinorTickSettings Width="1" />
 
-&lt;MajorTickSettings Size="7" Width="1" /&gt;
+<MajorTickSettings Size="7" Width="1" />
 
-&lt;ComparativeMeasureSettings Stroke="gray" /&gt;
+<ComparativeMeasureSettings Stroke="gray" />
 
-&lt;FeaturedMeasureSettings Stroke="cadetblue" /&gt;
+<FeaturedMeasureSettings Stroke="cadetblue" />
 
-&lt;/QuantitativeScaleSettings&gt;
+</QuantitativeScaleSettings>
 
-&lt;Fields CategoryField="category" ComparativeMeasureField="comparitiveMeasureValue" FeatureMeasureField="value" /&gt;
+<Fields CategoryField="category" ComparativeMeasureField="comparitiveMeasureValue" FeatureMeasureField="value" />
 
-&lt;QualitativeRanges&gt;
+<QualitativeRanges>
 
-&lt;ej:QualitativeRanges RangeEnd="90" /&gt;
+<ej:QualitativeRanges RangeEnd="90" />
 
-&lt;ej:QualitativeRanges RangeEnd="110" /&gt;
+<ej:QualitativeRanges RangeEnd="110" />
 
-&lt;ej:QualitativeRanges RangeEnd="130" RangeStroke="lightgray" /&gt;
+<ej:QualitativeRanges RangeEnd="130" RangeStroke="lightgray" />
 
-&lt;/QualitativeRanges&gt;
+</QualitativeRanges>
 
-&lt;CaptionSettings Text="Monsoon Rainfall - Actual vs Forecast" TextAngle="90" Location-X="470" Location-Y="270" Font-FontFamily="Segoe UI" Font-FontStyle="normal" Font-Size="20px" Font-FontWeight="Normal" Font-Opacity="1"&gt;
+<CaptionSettings Text="Monsoon Rainfall - Actual vs Forecast" TextAngle="90" Location-X="470" Location-Y="270" Font-FontFamily="Segoe UI" Font-FontStyle="normal" Font-Size="20px" Font-FontWeight="Normal" Font-Opacity="1">
 
-&lt;SubTitle Text= "Rainfall (mm)" Location-X="180" Location-Y="4" Font-FontColor="null" Font-FontFamily="Segoe UI" Font-FontStyle="normal" Font-Size="14px" Font-FontWeight="Normal" Font-Opacity="1" /&gt;
+<SubTitle Text= "Rainfall (mm)" Location-X="180" Location-Y="4" Font-FontColor="null" Font-FontFamily="Segoe UI" Font-FontStyle="normal" Font-Size="14px" Font-FontWeight="Normal" Font-Opacity="1" />
 
-&lt;/CaptionSettings&gt;
+</CaptionSettings>
 
-&lt;/ej:Bulletgraph&gt;
+</ej:Bulletgraph>
 
 
 
@@ -396,31 +395,31 @@ You can use a Tooltip in your application to display the values of forecasted ra
 
 
 
-&lt;divid="Tooltip"style="display:none; width:125px;padding-top: 10px;padding-bottom:10px"&gt;
+<divid="Tooltip"style="display:none; width:125px;padding-top: 10px;padding-bottom:10px">
 
 
 
-&lt;divalign="center"style="font-weight:bold"&gt;
+<divalign="center"style="font-weight:bold">
 
-           Rainfall &lt;/div&gt;
+           Rainfall </div>
 
-&lt;table&gt;
+<table>
 
-&lt;tr&gt;<td>Actual</td>
+<tr><td>Actual</td>
 
-&lt;td&gt;: {{:currentValue}}mm</td>&lt;/tr&gt;
+<td>: {{:currentValue}}mm</td></tr>
 
-&lt;tr&gt;<td>Forecast</td>
+<tr><td>Forecast</td>
 
-&lt;td&gt;: {{:targetValue}}mm</td>&lt;/tr&gt;
+<td>: {{:targetValue}}mm</td></tr>
 
-&lt;tr&gt;<td>Year</td>
+<tr><td>Year</td>
 
-&lt;td&gt;: {{:category}}&lt;/td&gt;&lt;/tr&gt;
+<td>: {{:category}}</td></tr>
 
-&lt;/table&gt;
+</table>
 
-&lt;/div&gt;
+</div>
 
 {% endhighlight %}
 
