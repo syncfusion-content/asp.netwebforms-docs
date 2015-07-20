@@ -7,7 +7,7 @@ control: NumericTextbox
 documentation: ug
 ---
 
-## Server Side Events
+# Server Side Events
 
 The server side events present in the NumericTextbox control are as follows.
 

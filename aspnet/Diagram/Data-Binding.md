@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-## Data Binding
+# Data Binding
 
 Diagram can be populated with the node and connector based on information from an external data source by using data binding. Diagram supports binding data sources containing hierarchical data and also supports both local data and remote data for retrieving data from a specified data source. Diagram exposes its specific data-related properties allowing you to specify the data source fields from where the node information has to be retrieved.
 
@@ -59,7 +59,7 @@ Specifies the parent ID of the table.</td></tr>
 </table>
 
 
-### Local Data
+## Local Data
 
 To bind the Local Data to the Diagram control, map the user-defined JSON data names with its appropriate data source field. You can bind data to the Diagram by mapping fields such as DataSource, ID, and Parent.
 
@@ -155,11 +155,11 @@ Diagram.Model.DefaultSettings.Connector = new Connector() {
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img1.png) | markdownify }
+ ![](Data-Binding_images/Data-Binding_img1.png) 
 {:.image }
 
 
-### Remote Data
+## Remote Data
 
 You can bind the Diagram to Remote Data by using dataManager and the query in fields is used to retrieve the data. dataManager supports the following types of data-binding: JSON, Web Services, oData. It uses two different classes; ej.DataManager for processing, and ej.Query for serving data. ej.DataManager communicates with data source and ej.Query generates data queries that are read by the dataManager. The following link explains in detail the way to create dataManager.
 
@@ -167,6 +167,8 @@ You can bind the Diagram to Remote Data by using dataManager and the query in fi
 
 The following code illustrates how to bind remote data to the Diagram.
 
+
+{% highlight html %}
 //Initializes Automatic Layout
 
 DiagramWebControl1.Model.Layout.Type = LayoutTypes.HierarchicalTree;   
@@ -201,7 +203,7 @@ DiagramWebControl1.Model.DefaultSettings.Connector = new Connector() {
 
 DiagramWebControl1.Model.NodeTemplate = "nodeTemplate";
 
-
+{% endhighlight %}
 
 
 
@@ -253,11 +255,11 @@ $(window).load(function () {
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img2.png) | markdownify }
+ ![](Data-Binding_images/Data-Binding_img2.png) 
 {:.image }
 
 
-Root
+### Root
 
 During automatic layout, node without parent is treated as root of the layout. You can specify this root by using the data source settings.
 
@@ -281,11 +283,11 @@ Diagram.Model.DataSourceSettings.Id = "Id";
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img3.png) | markdownify }
+![](Data-Binding_images/Data-Binding_img3.png) 
 {:.image }
 
 
-### SQL data for ASP.NET
+## SQL data for ASP.NET
 
 The SqlDataSource control enables you to use a web server control to access data that is located in a relational database. It can work with any database that contains an associated ADO.NET provider including Microsoft SQL Server, Oracle, ODBC, or OLE DB databases such as Microsoft Access.
 
@@ -330,11 +332,11 @@ The following code example illustrates how to create SQL binding.
 
 The following screenshot illustrates the SQL binding.
 
-{ ![](Data-Binding_images/Data-Binding_img4.png) | markdownify }
+ ![](Data-Binding_images/Data-Binding_img4.png) 
 {:.image }
 
 
-### HTML Binding
+## HTML Binding
 
 The Diagram provides support to form diagram from the HTML table. It is easy to convert HTML table to Diagram by using Data Manager.
 
@@ -526,7 +528,7 @@ Diagram.Model.DataSourceSettings.Id = "Id";
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img5.png) | markdownify }
+![](Data-Binding_images/Data-Binding_img5.png) 
 {:.image }
 
 

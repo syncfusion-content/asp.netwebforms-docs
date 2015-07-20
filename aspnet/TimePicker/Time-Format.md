@@ -7,11 +7,11 @@ control: TimePicker
 documentation: ug
 ---
 
-## Time Format
+# Time Format
 
 TimePicker control provides an option to change the time format.
 
-### Change Time Format of TimePicker control
+## Change Time Format of TimePicker control
 
 In the ASPX page, include the following TimePicker control and configure the TimeFormat property.
 
@@ -29,7 +29,7 @@ In the ASPX page, include the following TimePicker control and configure the Tim
 
 Run the above code to render the following output.
 
-{ ![](Time-Format_images/Time-Format_img1.png) | markdownify }
+ ![](Time-Format_images/Time-Format_img1.png) 
 {:.image }
 
 

@@ -15,13 +15,13 @@ This section explains briefly how to create a Tab Control in your application wi
 
 The ASP.NET Tab control is an interface that displays the content in multiple sections. Each TabPanel consists of HeaderText or HeaderTemplate as well as a ContentTemplate. Tab is useful for a dashboard that contains limited space. The following section guides you to customize the Tab for displaying Hotel menu items, its rating details, and ingredients.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img1.png) 
 {:.image }
 
 
 
 
-Create Tab control
+### Create Tab control
 
 You can create an ASP Project and add the necessary Dll and scripts with the help of the given [ASP-Getting Started](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm) Documentation.
 
@@ -83,11 +83,11 @@ Output of the above steps.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img2.png)
 {:.image }
 
 
-Configure content
+### Configure content
 
 In this application, a detailed description is provided to each item. You can specify the contents in the Tab section within the &lt;ContentSection &gt; by using the following format. 
 
@@ -121,11 +121,11 @@ You can provide more customization to the Tab with rating control as the content
 
 The following screenshot is the output of the above code example:
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img3.png) 
 {:.image }
 
 
-Create the rating in the Tab
+### Create the rating in the Tab
 
 The ASP.NET Rating control provides an intuitive rating experience that allows you to select the number of stars that represents the rating. The following code example explains he rating control creation. Render the rating control by using the &lt;ej:Rating&gt; tag. The code example is placed within the content description( &lt;ContentSection &gt; ) element to declare the rating control and description in the Tab section and it can be appended with the control initialization code section &lt;ej:Tab&gt; element by using the following format.
 
@@ -169,11 +169,11 @@ The ASP.NET Rating control provides an intuitive rating experience that allows y
 
 The following screenshot is the output of the above code example:
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+ ![](Getting-Started_images/Getting-Started_img4.png) 
 {:.image }
 
 
-Sub Tab with content 
+### Sub Tab with content 
 
 Each item has a variety of options and these options are also specified in the limited space. So, you can choose the Tab control that is used within the root Tab to specify more details.
 
@@ -182,6 +182,8 @@ The following code example illustrates how to create the Tab control within the 
 The sub Tab control rendering is represented in the following code example.
 
 &lt;!--Use the following codes with in the  above Html --&gt;
+
+{% highlight html %}
 
 &lt;ej:Tab ID="DishType" runat="server" Width="500px"&gt;
 
@@ -264,6 +266,7 @@ The sub Tab control rendering is represented in the following code example.
                 &lt;/Items&gt;
 
             &lt;/ej:Tab&gt;
+{% endhighlight %}
 
 The following code example positions the image and content.
 
@@ -293,7 +296,7 @@ The following code example positions the image and content.
 
 The following screenshot illustrates the first Tab with the sub Tab control.
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img5.png) 
 {:.image }
 
 
@@ -391,11 +394,11 @@ The following gives details on how to set the sub Tab orientation to vertical. B
 
 The following screenshot is the output of the above steps.
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img6.png) 
 {:.image }
 
 
-Header Image Customization
+### Header Image Customization
 
 In this application, the Tab header image is set for each Tab item to specify image in ImageCssClass property during the Tab header declaration time.
 
@@ -463,7 +466,7 @@ The following code example is used to add the header image for the root tab head
 
 The following screenshot illustrates the Tab with the customized header image.
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img7.png) 
 {:.image }
 
 
@@ -472,6 +475,8 @@ Configure contents to the remaining Tab items
 The second and third Tab contents are declared in the same method the first Tab content declaration. These Tabs also consist of rating and sub Tab controls. Add the second Tab content with header image in the &lt;ej:Tab &gt; element during initialization.
 
 &lt;!--Use the following codes with in the  above Html --&gt;                 
+
+{% highlight html %}
 
 &lt;ej:TabItem Id="SandwichType" Text="Sandwich Menu" ImageCssClass="dish sandwichImg"&gt;
 
@@ -572,10 +577,12 @@ The second and third Tab contents are declared in the same method the first Tab 
                 &lt;/Items&gt;
 
             &lt;/ej:Tab&gt;
-
+{% endhighlight %}
 
 
 Add the third Tab content with the header image in the &lt;ej:Tab &gt; element during initialization.
+
+{% highlight html%}
 
 &lt;ej:TabItem Id="PastaType" Text="Pasta Menu" ImageCssClass="dish pastaImg"&gt;
 
@@ -709,11 +716,11 @@ Apply the following styles to the Tab.
 
         }      
 
-
+{% endhighlight %}
 
 The following screenshot illustrates the second Tab contents and the final hotel menu with rating, description, and ingredients of the item in the Tab interface.
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+ ![](Getting-Started_images/Getting-Started_img8.png) 
 {:.image }
 
 

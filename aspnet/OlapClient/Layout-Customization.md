@@ -7,7 +7,7 @@ control: OLAP Client
 documentation: ug
 ---
 
-## Layout Customization
+# Layout Customization
 
 OLAP Client UI comes with options to customize the Grid and Chart layout, such as:
 
@@ -16,7 +16,8 @@ OLAP Client UI comes with options to customize the Grid and Chart layout, such a
 3. Hide Grid/Chart - Hides any one of the control by default. 
 4. Toggle Panel – Turns On/Off the visibility of Cube Browser and Axis Element Builder panels.  
 5. Maximized/Fullscreen view of the control(s) providing a precise view.
-### Display View
+
+## Display View
 
 
 Tile View
@@ -24,6 +25,7 @@ Tile View
 In Tile View representation, both Grid and Chart will be displayed one over the other, in the same layout. 
 
 
+{% highlight html %}
 
 [ASP.NET]
 
@@ -33,9 +35,10 @@ In Tile View representation, both Grid and Chart will be displayed one over the 
 
 &lt;/ej:OlapClient&gt;
 
+{% endhighlight  %}
 
 
-{ ![](Layout-Customization_images/Layout-Customization_img1.png) | markdownify }
+![](Layout-Customization_images/Layout-Customization_img1.png) 
 {:.image }
 
 
@@ -44,6 +47,7 @@ Tab View
 In Tab View representation, both Grid and Chart will be displayed in a separate tab.
 
 
+{% highlight html %}
 
 [ASP.NET]
 
@@ -55,13 +59,14 @@ In Tab View representation, both Grid and Chart will be displayed in a separate 
 
  &lt;/ej:OlapClient&gt;
 
+{% endhighlight %}
 
 
-{ ![](Layout-Customization_images/Layout-Customization_img2.png) | markdownify }
+![](Layout-Customization_images/Layout-Customization_img2.png) 
 {:.image }
 
 
-### Default View
+## Default View
 
 After you set defaultView property either to Chart or Grid, the corresponding control is selected for initial view/visualization, within the layout when the OLAPClient control is loaded for the first time. 
 
@@ -69,6 +74,8 @@ Chart View
 
 To display/visualize Chart control by default, set defaultView to Chart.
 
+
+{% highlight html %}
 
 [ASP.NET]
 
@@ -79,8 +86,9 @@ To display/visualize Chart control by default, set defaultView to Chart.
 &lt;/ej:OlapClient&gt;
 
 
+{% endhighlight %}
 
-{ ![](Layout-Customization_images/Layout-Customization_img3.png) | markdownify }
+ ![](Layout-Customization_images/Layout-Customization_img3.png) 
 {:.image }
 
 
@@ -89,6 +97,7 @@ Grid View
 To display/visualize Grid control by default, set defaultView to Grid.
 
 
+{% highlight html %}
 
 [ASP.NET]
 
@@ -98,19 +107,22 @@ To display/visualize Grid control by default, set defaultView to Grid.
 
 &lt;/ej:OlapClient&gt;
 
+{% endhighlight  %}
 
 
-{ ![](Layout-Customization_images/Layout-Customization_img4.png) | markdownify }
+![](Layout-Customization_images/Layout-Customization_img4.png) 
 {:.image }
 
 
-### Hide Grid/Chart
+## Hide Grid/Chart
 
 Grid Only
 
 After you set the displayMode option to GridOnly, the Chart is hidden and the data is displayed only in Grid.
 
 
+
+{% highlight html %}
 
 [ASP.NET]
 
@@ -120,9 +132,10 @@ After you set the displayMode option to GridOnly, the Chart is hidden and the d
 
 &lt;/ej:OlapClient&gt;
 
+{% endhighlight  %}
 
 
-{ ![](Layout-Customization_images/Layout-Customization_img5.png) | markdownify }
+![](Layout-Customization_images/Layout-Customization_img5.png) 
 {:.image }
 
 
@@ -131,6 +144,8 @@ Chart Only
 After you set the displayMode option to ChartOnly, the Grid is hidden and data is displayed only in Chart.
 
 
+
+{% highlight html %}
 
 [ASP.NET]
 
@@ -141,8 +156,9 @@ After you set the displayMode option to ChartOnly, the Grid is hidden and data 
 &lt;/ej:OlapClient&gt;
 
 
+{% endhighlight %}
 
-{ ![](Layout-Customization_images/Layout-Customization_img6.png) | markdownify }
+![](Layout-Customization_images/Layout-Customization_img6.png) 
 {:.image }
 
 
@@ -151,6 +167,7 @@ Both Grid and Chart
 After you set the displayMode option to ChartAndGrid, data is displayed in both Grid and Chart.
 
 
+{% highlight html %}
 
 [ASP.NET]
 
@@ -160,17 +177,19 @@ After you set the displayMode option to ChartAndGrid, data is displayed in both
 
 &lt;/ej:OlapClient&gt;
 
+{% endhighlight %}
 
 
-{ ![](Layout-Customization_images/Layout-Customization_img7.png) | markdownify }
+![](Layout-Customization_images/Layout-Customization_img7.png) 
 {:.image }
 
 
-### Toggle Panel
+## Toggle Panel
 
 You are provided with an option to toggle the visibility of Axis Element Builder and Cube Dimension Browser panels in OLAPClient.
 
 
+{% highlight html %}
 
 [ASP.NET]
 
@@ -182,23 +201,24 @@ You are provided with an option to toggle the visibility of Axis Element Builder
 
  &lt;/ej:OlapClient&gt;
 
+{% endhighlight %}
 
 
-{ ![](Layout-Customization_images/Layout-Customization_img8.png) | markdownify }
+![](Layout-Customization_images/Layout-Customization_img8.png) 
 {:.image }
 
 
-### Maximized/Full Screen View
+## Maximized/Full Screen View
 
 You can maximize OLAP Grid and OLAP Chart to full screen mode inside OLAP Client for a precise view. By selecting Full Screen icon in the toolbar, OLAP Grid and OLAP Chart are maximized depending on the current tab. You can also perform drilldown action in both OLAP Grid and OLAP Chart in the maximized view.
 
 
 
-{ ![](Layout-Customization_images/Layout-Customization_img9.png) | markdownify }
+ ![](Layout-Customization_images/Layout-Customization_img9.png) 
 {:.image }
 
 
-__
+{% highlight html %}
 
 [ASP.NET]
 
@@ -208,6 +228,7 @@ __
 
 &lt;/ej:OlapClient&gt;
 
+{% endhighlight  %}
 
 
 
@@ -215,7 +236,7 @@ The following screenshot shows the maximized view of OLAP Grid and OLAP Chart.
 
 
 
-{ ![](Layout-Customization_images/Layout-Customization_img10.png) | markdownify }
+![](Layout-Customization_images/Layout-Customization_img10.png) 
 {:.image }
 
 

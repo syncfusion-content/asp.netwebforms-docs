@@ -7,7 +7,7 @@ control: DateTimePicker
 documentation: ug
 ---
 
-## Server Side Events
+# Server Side Events
 
 The following server side even_ts_ are available in the__DateTimePicker control.
 

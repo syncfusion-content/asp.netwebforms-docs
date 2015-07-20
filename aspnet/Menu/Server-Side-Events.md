@@ -7,7 +7,7 @@ control: Menu
 documentation: ug
 ---
 
-## Server Side Events
+# Server Side Events
 
 <table>
 <tr>

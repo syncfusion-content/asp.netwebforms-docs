@@ -7,9 +7,9 @@ control: WaitingPopup
 documentation: ug
 ---
 
-## Appearance and Styling 	
+# Appearance and Styling 	
 
-### Custom Text
+## Custom Text
 
 There is support for Custom Text to mention any message in the pop-up panel.  You can specify a custom text via the option Text that is displayed when the Waiting Popup is loading.
 
@@ -53,11 +53,11 @@ Add the following styles to render the WaitingPopup control
 
 The following screenshot displays the output for the above code.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) | markdownify }
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 {:.image }
 
 
-### Template
+## Template
 
 Provides support for the template to customize the appearance of the WaitingPopup such as including HTML content instead of the default image.
 
@@ -207,11 +207,11 @@ _Note: Images for this sample are available at ‘installed location/Content/ima
 
 Run the above code for the following output.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
 {:.image }
 
 
-### CSS Class
+## CSS Class
 
 The CSS class can be used to customize the WaitingPopup control’s appearance. Define a CSS class as per the requirement and assign the class name to CssClass property.
 
@@ -273,7 +273,7 @@ Define the CSS class for customizing the WaitingPopup control.
 
 The following screenshot displays the output for the above code.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
 {:.image }
 
 

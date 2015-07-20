@@ -7,11 +7,11 @@ control: Diagram
 documentation: ug
 ---
 
-## Group
+# Group
 
 Diagram provides support to Group and Ungroup nodes. Group is a composite node that has a set of child nodes/connector and it is a container for its children. All the operations performed on a Group also affect an individual child in that particular Group. You can edit any node/connector in the group individually. On Ungrouping, the children in the group is an individual node/connector of the Diagram model. 
 
-### Create Group
+## Create Group
 
 You can create Group like node and add it to the Diagram model by using diagram model’s Nodes property. You can set IsGroup property as true to differentiate the group from node.You can set the array of children (nodes/connectors) names to Children property. The group’s children nodes/connectors are added to the node array before adding the group to nodes array. 
 
@@ -57,17 +57,17 @@ Diagram1.Model.Nodes.Add(group);
 
 
 
-{ ![](Group_images/Group_img1.png) | markdownify }
+![](Group_images/Group_img1.png) 
 {:.image }
 
 
-### Select a Group
+## Select a Group
 
 You can select a group by clicking on any one of its child node. Consecutive clicks on a child object select the parent groups in the order of their creation. In a similar manner, consecutive clicks on a child object lead to the selection of inner groups and eventually the object itself and this cycle continues.
 
 The following steps illustrate how to select an object that has two groups.
 
-{ ![](Group_images/Group_img2.png) | markdownify }
+ ![](Group_images/Group_img2.png) 
 {:.image }
 
 
@@ -76,7 +76,7 @@ The following steps illustrate how to select an object that has two groups.
 
 
 
-{ ![](Group_images/Group_img3.png) | markdownify }
+![](Group_images/Group_img3.png) 
 {:.image }
 
 
@@ -84,11 +84,11 @@ The following steps illustrate how to select an object that has two groups.
 
 
 
-{ ![](Group_images/Group_img4.png) | markdownify }
+ ![](Group_images/Group_img4.png) 
 {:.image }
 
 
-### Edit a Group
+## Edit a Group
 
 To edit a group, select the corresponding group. You can apply the following features on Group for editing.
 
@@ -105,20 +105,16 @@ After</td></tr>
 <tr>
 <td>
 Resize</td><td>
-![](Group_images/Group_img5.png)
-{:.image }
+{{ '![](Group_images/Group_img5.png)' | markdownify }}
 </td><td>
-![](Group_images/Group_img6.png)
-{:.image }
+{{ '![](Group_images/Group_img6.png)' | markdownify }}
 </td></tr>
 <tr>
 <td>
 Rotate</td><td>
-![](Group_images/Group_img7.png)
-{:.image }
+{{ '![](Group_images/Group_img7.png)' | markdownify }}
 </td><td>
-![](Group_images/Group_img8.png)
-{:.image }
+{{ '![](Group_images/Group_img8.png)' | markdownify }}
 </td></tr>
 </table>
 

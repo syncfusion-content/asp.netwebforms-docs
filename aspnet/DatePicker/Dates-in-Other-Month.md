@@ -7,7 +7,7 @@ control: DatePicker
 documentation: ug
 ---
 
-## Dates in Other Month
+# Dates in Other Month
 
 Dates from the previous and next month are showed in the DatePicker calendar. 
 
@@ -20,16 +20,16 @@ In the ASPX page, include the following DatePicker control code example to acces
 
 
 
+{% highlight html %}
 
 &lt;ej:DatePicker ID="datepicker" runat="server"  ShowOtherMonths="false"&gt; &lt;/ej:DatePicker&gt;
 
-
-
+{% endhighlight %}
 
 
 The following screenshot displays the output for the above code.
 
-{ ![](Dates-in-Other-Month_images/Dates-in-Other-Month_img1.png) | markdownify }
+![](Dates-in-Other-Month_images/Dates-in-Other-Month_img1.png) 
 {:.image }
 
 

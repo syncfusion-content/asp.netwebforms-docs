@@ -7,7 +7,7 @@ control: TagCloud
 documentation: ug
 ---
 
-## Server Side Events
+# Server Side Events
 
 The following list of Individual server side event is available in the TagCloud control.
 

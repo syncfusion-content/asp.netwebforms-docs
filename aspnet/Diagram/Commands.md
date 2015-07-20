@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-## Commands
+# Commands
 
 There are several commands available in the Diagram. They are listed as follows.
 
@@ -20,7 +20,9 @@ There are several commands available in the Diagram. They are listed as follows.
 * Zoom
 * Nudge
 * Undo/Redo
-### Alignment Command
+
+
+## Alignment Command
 
 
 Alignment commands are used to align selected nodes/connectors on the Diagram page. The alignment is based on the selection boundary. The alignment command is as follows.
@@ -71,7 +73,7 @@ diagram.align("center");
 
 
 
-{ ![](Commands_images/Commands_img1.png) | markdownify }
+![](Commands_images/Commands_img1.png) 
 {:.image }
 
 
@@ -101,11 +103,11 @@ diagram.align("middle");
 
 
 
-{ ![](Commands_images/Commands_img2.png) | markdownify }
+![](Commands_images/Commands_img2.png) 
 {:.image }
 
 
-### Spacing Command
+## Spacing Command
 
 Spacing commands are used to place selected nodes on the Diagram at equal intervals from each other. The objects are spaced within the bounds of the first and last objects in the selection.
 
@@ -148,7 +150,7 @@ diagram.spaceAcross();
 
 
 
-{ ![](Commands_images/Commands_img3.png) | markdownify }
+![](Commands_images/Commands_img3.png) 
 {:.image }
 
 
@@ -173,11 +175,11 @@ diagram.spaceDown();
 
 
 
-{ ![](Commands_images/Commands_img4.png) | markdownify }
+![](Commands_images/Commands_img4.png) 
 {:.image }
 
 
-### Sizing Command
+## Sizing Command
 
 Sizingcommands are used to size the selected nodes on the Diagram.
 
@@ -235,11 +237,11 @@ diagram.sameWidth();
 
 
 
-{ ![](Commands_images/Commands_img5.png) | markdownify }
+![](Commands_images/Commands_img5.png) 
 {:.image }
 
 
-### Clipboard commands 
+## Clipboard commands 
 
 Clipboardcommands are used to cut, copy, and paste the selected elements on Diagram. The following are the Clipboardcommands.
 
@@ -307,11 +309,11 @@ diagram.paste();
 
 
 
-{ ![](Commands_images/Commands_img6.png) | markdownify }
+![](Commands_images/Commands_img6.png) 
 {:.image }
 
 
-### Grouping Commands
+## Grouping Commands
 
 Grouping commands are used to group/ungroup the selected elements on Diagram.
 
@@ -347,7 +349,7 @@ diagram.ungroup();
 
 {% endhighlight %}
 
-### Z-Order Commands
+## Z-Order Commands
 
 Z-order commands are used to move the selected elements to the front of other elements. To send it back, move it one step (z-index) forward and move it one step (z-index) backward. These commands provide support to control overlapping objects.
 
@@ -376,7 +378,7 @@ diagram.bringToFront();
 
 
 
-{ ![](Commands_images/Commands_img7.png) | markdownify }
+![](Commands_images/Commands_img7.png) 
 {:.image }
 
 
@@ -400,7 +402,7 @@ diagram.sendToBack();
 
 
 
-{ ![](Commands_images/Commands_img8.png) | markdownify }
+![](Commands_images/Commands_img8.png) 
 {:.image }
 
 
@@ -424,7 +426,7 @@ diagram.moveForward();
 
 
 
-{ ![](Commands_images/Commands_img9.png) | markdownify }
+![](Commands_images/Commands_img9.png) 
 {:.image }
 
 
@@ -448,11 +450,11 @@ diagram.sendBackward();
 
 
 
-{ ![](Commands_images/Commands_img10.png) | markdownify }
+![](Commands_images/Commands_img10.png) 
 {:.image }
 
 
-### Zoom Commands
+## Zoom Commands
 
 Zoom feature is used to zoom-in and zoom-out of the Diagram view and also zooming based on the center of the current Diagram view. 
 
@@ -506,7 +508,7 @@ function ZoomOut()
 
 {% endhighlight %}
 
-### Nudge Commands
+## Nudge Commands
 
 Nudge commands move selected elements on the Diagram up, down, left, or right by 1 pixel. The Nudge command is as follows.
 
@@ -543,13 +545,13 @@ Nudge by using Arrow Keys
 
 The corresponding arrow keys are used to move the selected elements up, down, left, or right by 1 pixel.
 
-{ ![http://help.syncfusion.com/ug/wpf/diagram/ImagesExt/image69_163.png](Commands_images/Commands_img11.png) | markdownify }
+![http://help.syncfusion.com/ug/wpf/diagram/ImagesExt/image69_163.png](Commands_images/Commands_img11.png) 
 {:.image }
 
 
 Nudge commands are particularly useful for accurate placement of Diagram elements on the Diagram as it allows you to move by 1 pixel each time.
 
-### FitToPage commands
+## FitToPage commands
 
 FitToPage command fits the Diagram content into the view with respect to width, height, or the whole.
 

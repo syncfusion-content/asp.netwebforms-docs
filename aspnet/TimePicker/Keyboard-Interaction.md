@@ -7,7 +7,7 @@ control: TimePicker
 documentation: ug
 ---
 
-## Keyboard Interaction
+# Keyboard Interaction
 
 You can use Keyboardshortcut keys as an alternative to the mouse on using TimePicker control. TimePicker control allows you to perform all kinds of actions by using keyboard shortcuts.
 
@@ -18,7 +18,7 @@ Shortcut Key</td><td>
 Description</td></tr>
 <tr>
 <td>
-{ [Access key](http://en.wikipedia.org/wiki/Access_key) | markdownify } + j</td><td>
+{{'[Access key](http://en.wikipedia.org/wiki/Access_key)' | markdownify }} + j</td><td>
 Focuses onto the Timepicker control.</td></tr>
 <tr>
 <td>
@@ -63,7 +63,8 @@ Moves to the first / last item.</td></tr>
 Esc</td><td>
 Closes the pop up.</td></tr>
 </table>
-### Configure Keyboard Interaction
+
+## Configure Keyboard Interaction
 
 In the ASPX page, include the following TimePicker control and enable keyboard interaction by setting the accesskey property.
 
@@ -113,7 +114,7 @@ Run the code example, press Alt + J to focus on the TimePicker control that enab
 
 
 
-{ ![](Keyboard-Interaction_images/Keyboard-Interaction_img1.png) | markdownify }
+![](Keyboard-Interaction_images/Keyboard-Interaction_img1.png) 
 {:.image }
 
 

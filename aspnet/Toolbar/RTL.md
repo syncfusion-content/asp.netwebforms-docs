@@ -7,7 +7,7 @@ control: Toolbar
 documentation: ug
 ---
 
-## RTL
+# RTL
 
 This feature supports to change the left-to-right alignment of the Toolbar to right-to-left (RTL). That is, set the Toolbar to do their actions from right to left. The property EnableRTL sets the Toolbar from right to left. The value set to this property is a Boolean type. 
 
@@ -27,7 +27,7 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 {% endhighlight %}
 
-{ ![](RTL_images/RTL_img1.png) | markdownify }
+ ![](RTL_images/RTL_img1.png) 
 {:.image }
 
 

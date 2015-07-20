@@ -7,7 +7,7 @@ control: Tab
 documentation: ug
 ---
 
-## Integration with other controls
+#  Integration with other controls
 
 You can provide more customization to the Tab with rating control as content for describing the item rating value.
 
@@ -111,7 +111,7 @@ Add the following styles to render the Tab.
 
 The following screenshot illustrates the Tab content with rating control. 
 
-{ ![](Integration-with-other-controls_images/Integration-with-other-controls_img1.png) | markdownify }
+![](Integration-with-other-controls_images/Integration-with-other-controls_img1.png) 
 {:.image }
 
 

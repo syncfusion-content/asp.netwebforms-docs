@@ -7,11 +7,11 @@ control: Toolbar
 documentation: ug
 ---
 
-## Appearance and Styling 
+# Appearance and Styling 
 
-### Adjusting Toolbar size
+## Adjusting Toolbar size
 
-#### Height
+### Height
 
 The Toolbar property Height is used to set the Height of the Toolbar. The value set to this property is string type. 
 
@@ -35,7 +35,7 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 
 
-#### Width
+### Width
 
 The Toolbar property Width is used to set the Width of the Toolbar. The value set to this property is a string type. 
 
@@ -57,7 +57,7 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 
 
-### Enabling Rounded Corner 
+## Enabling Rounded Corner 
 
 The Toolbar property ShowRoundedCorner is used to enable the rounded corner for the Toolbar. The value set to this property is a Boolean type.
 
@@ -83,13 +83,13 @@ The following screenshot displays the output of the above code.
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 {:.image }
 
 
 
 
-### Enabling Separator 
+## Enabling Separator 
 
 The Toolbar property EnableSeparator is used to set separator between the Toolbar items. It separates one or more list items. The property IsSeparator is set to true to enable the separator for the particular Toolbar item. If it is not set, then the separator is enabled for all the Toolbar items. Here, separator is used only for “Justify” Toolbar item. The value set to this property is a Boolean type. 
 
@@ -141,13 +141,13 @@ The following screenshot displays the output of the above code.
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) | markdownify }
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
 {:.image }
 
 
 
 
-### Themes
+## Themes
 
 Toolbar control’s style and appearance can be controlled based on CSS classes. In order to apply styles to the Toolbar control, you need to refer two files namely, ej.widgets.core.min.css and ej.theme.min.css. If the file ej.widgets.all.min.cssis referred, then it is not necessary to include the files ej.widgets.core.min.cssand ej.theme.min.cssin your project, as ej.widgets.all.min.css is the combination of these two. 
 
@@ -166,7 +166,8 @@ By default, there are 13 themes support available for Toolbar control namely
 * gradient-saffron
 * gradient-saffron-dark
 * bootstrap
-### CssClass 
+
+## CssClass 
 
 
 The Toolbar property CssClass is used to set the root class for the Toolbar control theme. The value set to this property is a string type. 
@@ -207,7 +208,7 @@ Add the following code example to render the ToolBar Control
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
 {:.image }
 
 

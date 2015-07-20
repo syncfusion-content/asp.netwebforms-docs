@@ -11,15 +11,15 @@ documentation: ug
 
 
 
-Create your first Editor in ASP.NET
+## Create your first Editor in ASP.NET
 
 The Essential ASP.NET WebForms Editors control includes numeric, percentage, currency and maskedit textbox controls. Here, you can learn how to use ASP.NET Textboxes controls in the Electricity bill calculator Application. This guides you to use the wide range of TextBoxfunctionalities to complete this application.
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image73_8.jpg](Getting-Started_images/Getting-Started_img1.jpeg) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image73_8.jpg](Getting-Started_images/Getting-Started_img1.jpeg) 
 {:.image }
 
 
-Create Textboxes Controls
+## Create Textboxes Controls
 
 You can create a WebForms Project and add the necessary Dll’s and Scripts with the help of the given [WebForms-Getting Started](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm) Documentation.
 
@@ -261,11 +261,11 @@ The following styles are added to arrange the TextBox.  You can add the follow
 
 Run the above code to render a TextBox control as follows
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image73_8.jpg](Getting-Started_images/Getting-Started_img2.jpeg) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image73_8.jpg](Getting-Started_images/Getting-Started_img2.jpeg)
 {:.image }
 
 
-Set the MinValue, MaxValue and value in Textboxes
+## Set the MinValue, MaxValue and value in Textboxes
 
 In the above mentioned use case scenario, you can set the MinValue, MaxValue and Value in Numeric, percentage and Currency TextBox for maintaining the range in TextBox controls. You can also enter the values between the ranges that are set as default. You can get the phone number from the user in the Maskedit control by using the MaskFormat property. You can get the decimal values for CurrencyTextBox control by using the DecimalPlaces property. The following code example illustrates how to achieve this scenario.
 
@@ -375,11 +375,11 @@ In the above mentioned use case scenario, you can set the MinValue, MaxValue 
 
 Run the above code to render the resultant output of the above steps
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image73_9.jpg](Getting-Started_images/Getting-Started_img3.jpeg) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image73_9.jpg](Getting-Started_images/Getting-Started_img3.jpeg) 
 {:.image }
 
 
-Set the Strict Mode Option
+## Set the Strict Mode Option
 
 You can set the “EnableStrictMode” optionto restrict entering values defined outside the range. The following code example illustrates how to set strict mode option.
 
@@ -495,7 +495,7 @@ You can set the “EnableStrictMode” optionto restrict entering values define
 
 Run the above code example and you can see that it restricts entering a value exceeding the MinValue and MaxValue range mentioned in the NumericTextBox.
 
-Set Calculation process with TextBox Control
+## Set Calculation process with TextBox Control
 
 You can use events to calculate the total amount and display the value. This is achieved by using the Click event in the button control. The calculation steps are written in the call back function of Click event button.
 
@@ -567,7 +567,7 @@ To customize the button, set the ContentType as TextAndImage to include the 
 
 Run the above code to render the TextBox control. Fill the required Textbox fields and click the Calculate button. The values are displayed and an alert message is shown. The following screenshot illustrates the final output of the Electricity bill calculator.
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image73_10.jpg](Getting-Started_images/Getting-Started_img4.jpeg) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image73_10.jpg](Getting-Started_images/Getting-Started_img4.jpeg) 
 {:.image }
 
 

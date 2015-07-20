@@ -17,13 +17,13 @@ The following screenshot illustrates the structure of the Diagram control.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img1.png) 
 {:.image }
 
 
 ## Create your first Diagram in ASP.NET
 
-Initialize Diagram
+### Initialize Diagram
 
 1. Create an ASPX file and add the necessary script and CSS files in the &lt;Head&gt; tag as shown in the following code example.
 {% highlight html %}
@@ -88,11 +88,11 @@ Initialize Diagram
 
 3. This creates an empty Diagram. In the following section, you can learn how to add employee details in the Diagram.
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image147_3.png](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+ ![http://help.syncfusion.com/ug/js/ImagesExt/image147_3.png](Getting-Started_images/Getting-Started_img2.png) 
 {:.image }
 
 
-Initialize Data
+### Initialize Data
 
 Initially, you can create hierarchical employee information, JSONData, and assign it to a variable data.
 
@@ -144,7 +144,7 @@ Initially, you can create hierarchical employee information, JSONData, and assig
 
 {% endhighlight %}
 
-Populate Organizational Chart
+### Populate Organizational Chart
 
 You can populate the organizational chart by specifying the necessary fields of data source.
 
@@ -262,7 +262,7 @@ The employee data is displayed in the following Diagram.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img3.png) 
 {:.image }
 
 

@@ -7,11 +7,11 @@ control: Diagram
 documentation: ug
 ---
 
-## Swim lane 
+# Swim lane 
 
 A swim lane is a visual element used in a process flow diagrams or flowcharts. A typical swim lane contains a header, and a collection of lanes that can be arranged horizontally or vertically.
 
-{ ![](Swim-lane_images/Swim-lane_img1.png) | markdownify }
+ ![](Swim-lane_images/Swim-lane_img1.png) 
 {:.image }
 
 
@@ -76,7 +76,9 @@ Phases</td><td>
 Array</td><td>
 Gets or sets the phases as collection.</td></tr>
 </table>
-### Lane
+
+
+## Lane
 
 The lane is an object that controls the diagram elements in the swim lane. Lane has the following properties.
 
@@ -109,7 +111,9 @@ Orientation</td><td>
 String</td><td>
 Gets or sets the orientation of the swim lane.</td></tr>
 </table>
-### Header
+
+
+## Header
 
 This is used to define header of a swim lane. It has the following properties.
 
@@ -132,7 +136,9 @@ Text</td><td>
 String</td><td>
 Gets or sets the text value for the header.</td></tr>
 </table>
-### Phase
+
+
+## Phase
 
 A Phase is a line that separates the swim lane. Phase has the following properties.
 

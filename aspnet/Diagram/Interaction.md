@@ -7,9 +7,9 @@ control: Diagram
 documentation: ug
 ---
 
-## Interaction
+# Interaction
 
-### Tool
+## Tool
 
 There are many interactive features on Diagram surface. A collection of predefined tools are available in Diagram.
 
@@ -73,7 +73,7 @@ diagram.deactivateTool();
 
 {% endhighlight %}
 
-### Selection
+## Selection
 
 Selection feature allows you to select single or multiple Nodes/Connectors.
 
@@ -114,7 +114,7 @@ diagram.addSelection(node);
 
 
 
-{ ![](Interaction_images/Interaction_img1.png) | markdownify }
+![](Interaction_images/Interaction_img1.png) 
 {:.image }
 
 
@@ -128,11 +128,11 @@ Rubber band selection is done by clicking and dragging mouse pointer on the Diag
 
 
 
-{ ![](Interaction_images/Interaction_img2.png) | markdownify }
+![](Interaction_images/Interaction_img2.png) 
 {:.image }
 
 
-### User Handle
+## User Handle
 
 Diagram has an option to create additional selection handles around the selector called User handles. You can create additional handles and assign their command/tool to the desired handles.
 
@@ -326,11 +326,11 @@ $(“#Diagram”).ejDiagram({ userHandles: userHandles });
 
 
 
-{ ![](Interaction_images/Interaction_img3.png) | markdownify }
+ ![](Interaction_images/Interaction_img3.png) 
 {:.image }
 
 
-### Zoom 
+## Zoom 
 
 The Diagram is zoomed in and out. Zooming is achieved in the following two ways.
 
@@ -357,7 +357,7 @@ ZoomCommands
 
 Refer to the link ZoomCommand.
 
-### Keyboard
+## Keyboard
 
 Diagram has several keyboard functions support and they are listed as follows.
 
@@ -421,7 +421,7 @@ nudgeRight (move the selected elements towards right by one pixel).</td></tr>
 Ctrl+MouseScroll</td><td>
 Zoom(Zoom in/Zoom out the diagram).</td></tr>
 </table>
-### Touch
+## Touch
 
 Touch support for Diagram view has the following features:
 
@@ -431,7 +431,7 @@ Touch support for Diagram view has the following features:
 * Multiple selection.
 * Contextmenu (touch and hold).
 * Text Editing (double tap).
-### Snapping
+## Snapping
 
 
 Snapping feature handles snapping operation with gridlines and Nodes/Connectors.
@@ -439,7 +439,7 @@ Snapping feature handles snapping operation with gridlines and Nodes/Connectors.
 * snapToGrid
 * snapToObject
 
-SnapToGrid
+### SnapToGrid
 
 The snap-to-grid feature allows diagram objects to snap the nearest intersection of gridlines when being dragged or resized. This feature enables easier alignment during layout or design. 
 
@@ -521,13 +521,13 @@ Diagram1.SnapSettings.HorizontalGridlines.SnapInterval = interval;
 
 {% endhighlight %}
 
-SnapToObject
+### SnapToObject
 
 The snap-to-object feature provides visual cues to assist with aligning and spacing diagram nodes. You can snap a node with its neighboring objects based on its size and position. Such alignments are visually represented as guidelines.
 
 
 
-{ ![](Interaction_images/Interaction_img4.png) | markdownify }
+![](Interaction_images/Interaction_img4.png) 
 {:.image }
 
 

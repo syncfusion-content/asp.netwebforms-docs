@@ -7,7 +7,7 @@ control: OLAP Client
 documentation: ug
 ---
 
-## Localization 
+# Localization 
 
 Localization is theprocess of customizing the UI (User Interface) as locale-specific, in order to display regional data. Using this feature, data can be displayed in a specific language and culture, of a particular country or region. The ASP.NET OLAP Client control provides inherent support to localize its UI.
 
@@ -213,15 +213,20 @@ And</td><td>
 
 The following code example shows how to localize OLAP Client’s User Interface (UI) based on French culture.
 
+{% highlight html %}
+
 [ASP.NET]
 
 &lt;ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc" Locale="fr-FR"&gt;
 
 &lt;/ej:OlapClient&gt;
 
+{% endhighlight  %}
 
 
 
+
+{% highlight html%}
 
 [HTML]    
 
@@ -349,10 +354,10 @@ The following code example shows how to localize OLAP Client’s User Interface 
 
  &lt;/script&gt;           
 
+{% endhighlight  %}
 
 
-{ ![C:/Users/labuser/Desktop/note.jpg](Localization_images/Localization_img1.jpeg) | markdownify }
-{:.image }
+
 _Note: In order to render the localized OLAP Client, we need to reset the content available in both OLAP Client Control and OLAP Cube_
 
 Localizing Control Information
@@ -360,6 +365,7 @@ Localizing Control Information
 To apply control side localization, use the following code example.
 
 
+{% highlight html %}
 
 [HTML]
 
@@ -370,12 +376,15 @@ To apply control side localization, use the following code example.
 }
 
 
+{% endhighlight %}
 
 Localizing Cube Information
 
 To get the localized Cube information, set LocaleIdentifier__in the connection string.
 
 
+
+{% highlight C# %}
 
 [C#]
 
@@ -389,13 +398,14 @@ DataManager.Culture = new System.Globalization.CultureInfo(1036);
 
 DataManager.OverrideDefaultFormatStrings = true;
 
+{% endhighlight  %}
 
 
 The following screenshot shows the OLAP Client with French localization.
 
 
 
-{ ![Description: http://help.syncfusion.com/ug/js/ImagesExt/image49_140.png](Localization_images/Localization_img2.png) | markdownify }
+ ![Description: http://help.syncfusion.com/ug/js/ImagesExt/image49_140.png](Localization_images/Localization_img2.png) 
 {:.image }
 
 

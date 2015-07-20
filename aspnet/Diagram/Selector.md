@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-## Selector
+# Selector
 
 Selector behaves like a container for the selected elements and enables you to update the size, position, and rotation angle of the selected elements.
 

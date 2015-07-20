@@ -7,15 +7,15 @@ control: Diagram
 documentation: ug
 ---
 
-## Symbol Palette
+# Symbol Palette
 
 The SymbolPalette displays a collection of palettes. The Palette shows nodes and connectors. It allows you to drag and drop the nodes and connectors on the Diagram. The Palette has a header that displays the name and also has an option that allows you to expand or collapse its items. Each node or connector in the palette is called a Palette Item.
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image147_82.jpg](Symbol-Palette_images/Symbol-Palette_img1.jpeg) | markdownify }
+ ![http://help.syncfusion.com/ug/js/ImagesExt/image147_82.jpg](Symbol-Palette_images/Symbol-Palette_img1.jpeg) 
 {:.image }
 
 
-### Create and Add Symbols in the Palette
+## Create and Add Symbols in the Palette
 
 Node and Connector are added to the Palette as Palette Items.
 
@@ -79,15 +79,15 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endhighlight %}
 
-### Add Nodes and Connectors
+## Add Nodes and Connectors
 
 The Diagram provides support to add nodes and connectors through the Symbol Palette. To add a node to the Diagram, drag the desired symbol from the SymbolPalette to the drawing area and release the pointer. The desired palette item clicked is added to the Diagram when you set the desired Diagram ID to the Symbol Palette’s DiagramId.
 
-{ ![](Symbol-Palette_images/Symbol-Palette_img2.png) | markdownify }
+![](Symbol-Palette_images/Symbol-Palette_img2.png) 
 {:.image }
 
 
-### Appearance
+## Appearance
 
 The following properties are used to customize the appearance of the Symbol Palette.
 
@@ -190,11 +190,11 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endhighlight %}
 
-### Preview for Drag and Drop
+## Preview for Drag and Drop
 
 Diagram provides preview support to Paletteitem during drag and drop. When you drag an item from the palette to Diagram, a preview of the dragged item is displayed.
 
-Preview Appearance
+### Preview Appearance
 
 You can customize the preview size and position by using the following properties.
 

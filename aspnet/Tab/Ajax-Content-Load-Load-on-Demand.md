@@ -7,13 +7,13 @@ control: Tab
 documentation: ug
 ---
 
-## Ajax Content Load (Load on Demand)
+# Ajax Content Load (Load on Demand)
 
 You can change the contents in the sub Tab element periodically and you are provided with a support to change the content without any problem. To achieve the content load, use the Load on Demand concept.
 
 In the Load On-Demand, the external HTML file with the necessary details is referred in URL section during Tab header declaration section. Include the DataType, ContentType, and Anync also in the script like the following example when rendering the control. When you click the Tab header, the Ajax automatically calls the content from the external files and displays in a Tab content section. 
 
-### Sub Tab with Ajax Content
+## Sub Tab with Ajax Content
 
 Each item has a variety of options and these options are also specified in the limited space. You can choose the Tab control that is used within the root Tab to specify more details.
 
@@ -90,16 +90,11 @@ Add the following ASPX to render sub Tab with Ajax content.
     </Items>
 
 </ej:Tab>
-
-
-
-
-
-
-
 {% endhighlight %}
 
 The file cornSpinach.html content is as follows. 
+
+{% highlight html %}
 
 &lt;!DOCTYPE html&gt;
 
@@ -151,6 +146,7 @@ The file cornSpinach.html content is as follows.
 
 &lt;/html&gt;
 
+{% endhighlight %}
 
 
 At the time of Ajax call, the content is fetched from the external file.
@@ -159,7 +155,7 @@ At the time of Ajax call, the content is fetched from the external file.
 
 The following screenshot illustrates the First Tab with the sub Tab control by using Load on Demand. 
 
-{ ![](Ajax-Content-Load-Load-on-Demand_images/Ajax-Content-Load-Load-on-Demand_img1.png) | markdownify }
+![](Ajax-Content-Load-Load-on-Demand_images/Ajax-Content-Load-Load-on-Demand_img1.png) 
 {:.image }
 
 

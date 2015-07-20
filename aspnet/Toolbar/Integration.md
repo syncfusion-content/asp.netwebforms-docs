@@ -7,9 +7,9 @@ control: Toolbar
 documentation: ug
 ---
 
-## Integration
+# Integration
 
-### Angular Js
+## Angular Js
 
 The Toolbar is availed with two types of angular JS support namely, 
 
@@ -289,7 +289,8 @@ The following screenshot displays the output of the above code.
 
 
 
-{ ![](Integration_images/Integration_img1.png) | markdownify }
+ ![](Integration_images/Integration_img1.png) 
+ 
 {:.image }
 
 
@@ -651,7 +652,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
 The following screenshot displays the output of the above code.
 
-{ ![](Integration_images/Integration_img2.png) | markdownify }
+![](Integration_images/Integration_img2.png) 
 {:.image }
 
 

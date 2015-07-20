@@ -7,13 +7,13 @@ control: TagCloud
 documentation: ug
 ---
 
-## Appearance and Styling
+# Appearance and Styling
 
-### Minimum and maximum Font size
+## Minimum and maximum Font size
 
 The TagCloud content is set to different font sizes from minimum to maximum based on its frequency values. By default, MinFontSize is “10px” and MaxFontSize is “40px”. By using these properties, you can customize the minimum and maximum font sizes.
 
-#### Customizing font sizes of TagCloud
+### Customizing font sizes of TagCloud
 
 To configure font sizes for the TagCloud, in the ASPX page, include the following TagCloud control code example.
 
@@ -129,15 +129,15 @@ protected void Page_Load(object sender, EventArgs e)
 
 The following screenshot illustrates the TagCloud control with customized font sizes.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) | markdownify }
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 {:.image }
 
 
-### Tag format
+## Tag format
 
 You can set theTagCloud content display format by using Format property. By default, format is set to the cloud, that displays the content in TagCloud. The format can be set as a list that displays the content in linear format.
 
-#### Defining Cloud and List format
+### Defining Cloud and List format
 
 In the ASPX page, include the following code example to define Cloud and List format.
 
@@ -159,11 +159,11 @@ In the ASPX page, include the following code example to define Cloud and List fo
 
 The following screenshot illustrates customized formats.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 {:.image }
 
 
-### Theme
+## Theme
 
 You can control the style and appearance ofthe TagCloud based on the CSS classes. To apply styles to the TagCloud control, refer to the files, ej.widgets.core.min.css and ej.theme.min.css. When you refer to ej.widgets.all.min.css file, it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project as ej.widgets.all.min.css is the combination of these two files. 
 
@@ -182,12 +182,13 @@ By default, there are 13 themes supported by the TagCloud control,
 * gradient-saffron
 * gradient-saffron-dark
 * bootstrap-theme
-### CSS Class
+
+## CSS Class
 
 
 You can use the CSS class to customize the TagCloud appearance. Any of the CSS properties can be used to modify the look and feel of the TagCloud based on the requirement. Define a CSS class as per the requirement and assign the class name to the CssClass property.
 
-#### Configure TagCloud by using CSS class
+### Configure TagCloud by using CSS class
 
 To configure the CSS class for the TagCloud, include the following TagCloud control code example in the ASPX page.
 
@@ -331,7 +332,7 @@ Define the CSS class for customizing the TagCloud control.
 
 The following screenshot illustrates the TagCloud with customized CSS class.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
 {:.image }
 
 

@@ -7,13 +7,13 @@ control: OLAP Client
 documentation: ug
 ---
 
-## OLAP Client: Elements 
+# OLAP Client: Elements 
 
-### Cube Selector
+## Cube Selector
 
 Cube Selector allows you to browse and select a cube from the entire collection, populated by the data source.
 
-#### Change the Cube
+### Change the Cube
 
 Cube can be changed by selecting a cube name from the list of names available within the Cube Selector drop-down list. When a cube is changed, the following elements refresh according to the new cube.
 
@@ -53,11 +53,11 @@ A grid is a tabular representation of data, arranged in the form of rows and col
 </table>
 
 
-{ ![](OLAP-Client-Elements_images/OLAP-Client-Elements_img1.png) | markdownify }
+![](OLAP-Client-Elements_images/OLAP-Client-Elements_img1.png) 
 {:.image }
 
 
-### Cube Dimension Browser
+## Cube Dimension Browser
 
 Cube Dimension Browser is a tree-view-like structure that organizes the dimensions, hierarchies, measures etc… from the selected cube into independent, logical groups.
 
@@ -118,14 +118,14 @@ _Table: Differentiating Attribute hierarchy and User-defined hierarchy_
 <table>
 <tr>
 <td>
-![](OLAP-Client-Elements_images/OLAP-Client-Elements_img2.png)
-{:.image }
+{{ '![](OLAP-Client-Elements_images/OLAP-Client-Elements_img2.png)' | markdownify }}
 </td><td>
 Attribute Hierarchy, contains only one level.</td></tr>
 <tr>
 <td>
-![](OLAP-Client-Elements_images/OLAP-Client-Elements_img3.png)
-{:.image }
+{{ '![](OLAP-Client-Elements_images/OLAP-Client-Elements_img3.png)' | markdownify }}
+
+
 </td><td>
 User Defined Hierarchy and its levels are mentioned with a similar image. It contains one or more levels.</td></tr>
 </table>
@@ -142,38 +142,35 @@ Icon</th><th>
 Name</th></tr>
 <tr>
 <td>
-![](OLAP-Client-Elements_images/OLAP-Client-Elements_img4.png)
-{:.image }
+{{ '![](OLAP-Client-Elements_images/OLAP-Client-Elements_img4.png)' | markdownify }}
+
 </td><td>
 Display Folder</td></tr>
 <tr>
 <td>
-![](OLAP-Client-Elements_images/OLAP-Client-Elements_img5.png)
-{:.image }
+{{ '![](OLAP-Client-Elements_images/OLAP-Client-Elements_img5.png)' | markdownify }}
+
 </td><td>
 Measure</td></tr>
 <tr>
 <td>
-![](OLAP-Client-Elements_images/OLAP-Client-Elements_img6.png)
-{:.image }
+{{ '![](OLAP-Client-Elements_images/OLAP-Client-Elements_img6.png)' | markdownify }}
+
 </td><td>
 Dimension</td></tr>
 <tr>
 <td>
-![](OLAP-Client-Elements_images/OLAP-Client-Elements_img7.png)
-{:.image }
+{{ '![](OLAP-Client-Elements_images/OLAP-Client-Elements_img7.png)' | markdownify }}
 </td><td>
 User Defined Hierarchy</td></tr>
 <tr>
 <td>
-![](OLAP-Client-Elements_images/OLAP-Client-Elements_img8.png)
-{:.image }
+{{ '![](OLAP-Client-Elements_images/OLAP-Client-Elements_img8.png)' | markdownify }}
 </td><td>
 Attribute Hierarchy</td></tr>
 <tr>
 <td>
-![](OLAP-Client-Elements_images/OLAP-Client-Elements_img9.png)
-{:.image }
+{{ '![](OLAP-Client-Elements_images/OLAP-Client-Elements_img9.png)' | markdownify }}
 </td><td>
 Level Element</td></tr>
 </table>
@@ -192,7 +189,8 @@ The nodes that are not allowed to be dragged are:
 
 * Cube
 * Display Folder
-### Axis Element Builder
+
+## Axis Element Builder
 
 
 Axis Element Builder allows you to build the element in an axis of the OLAP Client. It supports three axes namely: Categorical, Series and Slicer. Based on the elements constructed OLAP Grid and OLAP Chart will display the resultant data.
@@ -211,31 +209,31 @@ The slicer axis is used as a filter to narrow the focus of the multidimensional
 
 
 
-.{ ![](OLAP-Client-Elements_images/OLAP-Client-Elements_img10.png) | markdownify }
+ ![](OLAP-Client-Elements_images/OLAP-Client-Elements_img10.png) 
 {:.image }
 
 
-#### Addition of Elements to an Axis Element Builder
+### Addition of Elements to an Axis Element Builder
 
-##### Add Dimension, Hierarchy and Level to an Axis Element Builder 
+#### Add Dimension, Hierarchy and Level to an Axis Element Builder 
 
 The dimension, hierarchy and level elements can be dragged from the Cube Dimension Browser and dropped into the Axis Element Builder using the drag-and-drop operation. Also you can move the dimension, hierarchy and level elements from one axis to another by moving the appropriate Split Button.
 
 
 
-{ ![Description: C:/Users/Tamilarasu .M/Pictures/document/adding measure.png](OLAP-Client-Elements_images/OLAP-Client-Elements_img11.png) | markdownify }
+![Description: C:/Users/Tamilarasu .M/Pictures/document/adding measure.png](OLAP-Client-Elements_images/OLAP-Client-Elements_img11.png) 
 {:.image }
 
 
-##### Add Measure to an Axis Element Builder
+#### Add Measure to an Axis Element Builder
 
 The measure elements can be dragged from Cube Dimension Browser and dropped into Axis Element Builder using drag-and-drop operation. Also user can move the measure elements from one axis to another by moving the Split Button named Measures.
 
-{ ![Description: C:/Users/Tamilarasu .M/Pictures/document/adding measure.png](OLAP-Client-Elements_images/OLAP-Client-Elements_img12.png) | markdownify }
+![Description: C:/Users/Tamilarasu .M/Pictures/document/adding measure.png](OLAP-Client-Elements_images/OLAP-Client-Elements_img12.png) 
 {:.image }
 
 
-#### Remove Elements from an Axis Element Builder
+### Remove Elements from an Axis Element Builder
 
 Remove Dimension, Hierarchy and Level from an Axis Element Builder
 
@@ -243,62 +241,62 @@ In order to remove dimension, hierarchy and level element from the Axis Element 
 
 
 
-{ ![Description: C:/Users/Tamilarasu .M/Pictures/document/remove.png](OLAP-Client-Elements_images/OLAP-Client-Elements_img13.png) | markdownify }
+![Description: C:/Users/Tamilarasu .M/Pictures/document/remove.png](OLAP-Client-Elements_images/OLAP-Client-Elements_img13.png) 
 {:.image }
 
 
-##### Remove Measure from an Axis Element Builder
+#### Remove Measure from an Axis Element Builder
 
 To remove the measure element from the Axis Element Builder, click the Remove symbol available next to the Measures Split Button while hovering over it.
 
 
 
-{ ![](OLAP-Client-Elements_images/OLAP-Client-Elements_img14.png) | markdownify }
+![](OLAP-Client-Elements_images/OLAP-Client-Elements_img14.png) 
 {:.image }
 
 
-#### Rearrange Elements in an Axis Element Builder
+### Rearrange Elements in an Axis Element Builder
 
 Rearranging can be done by dragging an element one below the other.
 
 
 
-{ ![](OLAP-Client-Elements_images/OLAP-Client-Elements_img15.png) | markdownify }
+![](OLAP-Client-Elements_images/OLAP-Client-Elements_img15.png) 
 {:.image }
 
 
 
 
-{ ![](OLAP-Client-Elements_images/OLAP-Client-Elements_img16.png) | markdownify }
+ ![](OLAP-Client-Elements_images/OLAP-Client-Elements_img16.png) 
 {:.image }
 
 
-### Split Button
+## Split Button
 
 Split Button highlights the elements in the Axis Element Builder. It holds dimensions/measures. When you drag and drop a node from Cube Dimensional Browser into Axis Element Builder, a Split Button is created, displaying the dimension name.
 
-{ ![](OLAP-Client-Elements_images/OLAP-Client-Elements_img17.png) | markdownify }
+![](OLAP-Client-Elements_images/OLAP-Client-Elements_img17.png) 
 {:.image }
 
 
 When you drag and drop a measure, the Axis Element Builder will create a Split Button only for the first measure. The next time a measure is added, it maintains the same single Split Button to hold the entire measure collection. 
 
 
-{ ![](OLAP-Client-Elements_images/OLAP-Client-Elements_img18.png) | markdownify }
+![](OLAP-Client-Elements_images/OLAP-Client-Elements_img18.png) 
 {:.image }
 
 
-##### Remove Split Button
+### Remove Split Button
 
 Split Button can be removed with the help of the Remove option available while hovering over it.
 
 
 
-{ ![](OLAP-Client-Elements_images/OLAP-Client-Elements_img19.png) | markdownify }
+![](OLAP-Client-Elements_images/OLAP-Client-Elements_img19.png) 
 {:.image }
 
 
-### Elements Editor
+## Elements Editor
 
 Measure Editor 
 
@@ -306,7 +304,7 @@ Measure Editor is a dialog that displays the collection of measures in the curre
 
 
 
-{ ![](OLAP-Client-Elements_images/OLAP-Client-Elements_img20.png) | markdownify }
+![](OLAP-Client-Elements_images/OLAP-Client-Elements_img20.png) 
 {:.image }
 
 
@@ -316,7 +314,7 @@ To remove a measure, click the Remove button next to the corresponding measure
 
 
 
-{ ![](OLAP-Client-Elements_images/OLAP-Client-Elements_img21.png) | markdownify }
+![](OLAP-Client-Elements_images/OLAP-Client-Elements_img21.png) 
 {:.image }
 
 
@@ -326,7 +324,7 @@ Member Editor is a tree-view control that displays the member elements of the cu
 
 
 
-{ ![](OLAP-Client-Elements_images/OLAP-Client-Elements_img22.png) | markdownify }
+![](OLAP-Client-Elements_images/OLAP-Client-Elements_img22.png) 
 {:.image }
 
 
@@ -345,7 +343,7 @@ Unchecking the check box option is provided in such a way that on deselecting th
 
 
 
-{ ![](OLAP-Client-Elements_images/OLAP-Client-Elements_img23.png) | markdownify }
+![](OLAP-Client-Elements_images/OLAP-Client-Elements_img23.png) 
 {:.image }
 
 
@@ -356,15 +354,15 @@ Check All and Uncheck All
 
 
 
-{ ![Description: C:/Users/Tamilarasu .M/Pictures/document/check all.png](OLAP-Client-Elements_images/OLAP-Client-Elements_img24.png) | markdownify }
+ ![Description: C:/Users/Tamilarasu .M/Pictures/document/check all.png](OLAP-Client-Elements_images/OLAP-Client-Elements_img24.png) 
 {:.image }
 
 
-### Toolbar
+## Toolbar
 
 
 
-{ ![](OLAP-Client-Elements_images/OLAP-Client-Elements_img25.png) | markdownify }
+![](OLAP-Client-Elements_images/OLAP-Client-Elements_img25.png) 
 {:.image }
 
 
@@ -420,31 +418,33 @@ Filters/Sorts the data in the OlapReport with respect to Row.</td></tr>
 Full Screen View</td><td>
 This option is used to display Grid and Chart in a maximized view, according to the browsers height and width.</td></tr>
 </table>
-### Report List
+
+
+## Report List
 
 Report List will hold all the reports of the current session of the OLAP Client control.
 
 
 
-{ ![](OLAP-Client-Elements_images/OLAP-Client-Elements_img26.png) | markdownify }
+ ![](OLAP-Client-Elements_images/OLAP-Client-Elements_img26.png) 
 {:.image }
 
 
 
 
-{ ![](OLAP-Client-Elements_images/OLAP-Client-Elements_img27.png) | markdownify }
+![](OLAP-Client-Elements_images/OLAP-Client-Elements_img27.png) 
 {:.image }
 
 
 When a change is made in the report, OLAP visualization controls and Axis Element Builder get re-populated with the data contained in the selected report.
 
-### OLAP Grid
+## OLAP Grid
 
 The OLAP Grid control for ASP.NET is easily configurable, presentation-quality business control that reads OLAP data from a Microsoft SQL Server Analysis Services database, an offline cube or XMLA. The OLAP data is displayed with drill-up and drill-down capabilities and features exceptional performance. 
 
 For further information please refer the following link. [http://help.syncfusion.com/ug/js/default.htm#!Documents/overview25.htm](http://help.syncfusion.com/ug/js/default.htm)
 
-### OLAP Chart
+## OLAP Chart
 
 The OLAP Chart control for ASP.NET is a lightweight control that reads OLAP information and visualizes it in graphical format with the ability to drill up and down. 
 

@@ -7,9 +7,10 @@ control: Dialog
 documentation: ug
 ---
 
-## Keyboard Interaction
+# Keyboard Interaction
 
 The Dialog allows you to interact with the keyboard actions instead of mouse actions. All the Dialog actions can be achieved by using Keyboard shortcuts.
+
 
 <table>
 <tr>
@@ -18,7 +19,7 @@ Shortcut Keys</td><td>
 Description</td></tr>
 <tr>
 <td>
-Alt{ [](http://en.wikipedia.org/wiki/Access_key) | markdownify } + j	</td><td>
+Alt + j	</td><td>
 Focuses the Dialog control.</td></tr>
 <tr>
 <td>
@@ -41,7 +42,8 @@ Dialog moves left.</td></tr>
 Esc</td><td>
 Dialog window closes.</td></tr>
 </table>
-### Configure Keyboard Interaction
+
+## Configure Keyboard Interaction
 
 The following steps explain how to enable keyboard interaction for Dialog control.
 

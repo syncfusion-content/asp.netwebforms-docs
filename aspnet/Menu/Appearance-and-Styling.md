@@ -7,9 +7,9 @@ control: Menu
 documentation: ug
 ---
 
-## Appearance and Styling
+# Appearance and Styling
 
-### Theme
+## Theme
 
 Essential Studio ASP.NET controls feature 13 built-in themes, six flat and gradient effects, and also supports custom skin options for user-defined themes.
 
@@ -187,11 +187,11 @@ Add the following code in your style section.
 
 Following screenshot displays the output of the above code example.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 {:.image }
 
 
-### Background Template
+## Background Template
 
 Menu control also provide the support for template support. Normally menu control can be created by using UL and LI tags in the preferred way. In template supporting, you can customize the appearance of sub menu items rendering. 
 
@@ -533,7 +533,7 @@ Add the following code example in your style section
 
 Execute the above code example to render the following output.                       
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 {:.image }
 
 

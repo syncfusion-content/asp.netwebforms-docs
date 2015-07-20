@@ -7,7 +7,7 @@ control: Tile
 documentation: ug
 ---
 
-## Customize size
+# Customize size
 
 You can customize the size of the Tile by using the “data-ej-tileSize” attribute. The following built-in tile sizes are supported.
 
@@ -46,7 +46,7 @@ Refer to the following code examples.
 
 
 
-{ ![](Customize-size_images/Customize-size_img1.png) | markdownify }
+ ![](Customize-size_images/Customize-size_img1.png) 
 {:.image }
 
 

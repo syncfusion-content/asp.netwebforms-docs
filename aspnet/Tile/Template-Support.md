@@ -7,7 +7,7 @@ control: Tile
 documentation: ug
 ---
 
-## Template Support
+# Template Support
 
 The“data-ej-imagetemplateid” attribute is used to customize the image of Tile with template feature by setting the id. The“data-ej-captiontemplateid” attribute is used to customize the text of Tile with template feature by setting the id. 
 
@@ -102,7 +102,7 @@ Add the following code example.
 
 
 
-{ ![](Template-Support_images/Template-Support_img1.png) | markdownify }
+![](Template-Support_images/Template-Support_img1.png) 
 {:.image }
 
 

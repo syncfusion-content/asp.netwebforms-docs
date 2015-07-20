@@ -7,7 +7,7 @@ control: Toggle Button
 documentation: ug
 ---
 
-## RTL support
+# RTL support
 
 In some cases, it is necessary to use right-to-left alignment. You can render RTL support by using the EnableRTL property. In RTL mode, when there is more than one content (image/text, image/image) in button, the content is aligned in the right-to-left format. For example, when text is in the left and image is in the right positions, after applying right to left alignment these positions are interchanged.
 
@@ -31,7 +31,7 @@ In above mentioned code example, PrefixIcon property is used and the icon that i
 
 The output of the above,
 
-{ ![](RTL-support_images/RTL-support_img1.png) | markdownify }
+![](RTL-support_images/RTL-support_img1.png) 
 {:.image }
 
 

@@ -7,7 +7,7 @@ control: Tile
 documentation: ug
 ---
 
-## Add Group Tiles
+# Add Group Tiles
 
 To make a Tile as grouped tile, you can use the following mentioned pre-defined classes.
 
@@ -245,7 +245,7 @@ To render small-col-2 grouped tile, you need to render the number of tiles insid
 
 
 
-{ ![](Add-Group-Tiles_images/Add-Group-Tiles_img1.png) | markdownify }
+![](Add-Group-Tiles_images/Add-Group-Tiles_img1.png) 
 {:.image }
 
 

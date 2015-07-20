@@ -7,7 +7,7 @@ control: TreeMap
 documentation: ug
 ---
 
-## TreeMap Elements
+# TreeMap Elements
 
 TreeMap contains various elements such as,
 
@@ -31,7 +31,7 @@ You can customize the labels of the legenditem using LegendLabel property of Ran
 
 
 
-
+{% highlight html %}
 
 [ASP]
 
@@ -88,8 +88,9 @@ You can customize the labels of the legenditem using LegendLabel property of Ran
     &lt;/div&gt;
 
 
+{% endhighlight %}
 
-{ ![](TreeMap-Elements_images/TreeMap-Elements_img1.png) | markdownify }
+ ![](TreeMap-Elements_images/TreeMap-Elements_img1.png)
 {:.image }
 
 
@@ -101,6 +102,7 @@ You can set headers for each level by setting the ShowHeader propery of the each
 
 
 
+{% highlight html %}
 
 
 [ASP]
@@ -157,9 +159,10 @@ You can set headers for each level by setting the ShowHeader propery of the each
 
     &lt;/div&gt; 
 
+{% endhighlight %}
 
 
-{ ![](TreeMap-Elements_images/TreeMap-Elements_img2.png) | markdownify }
+ ![](TreeMap-Elements_images/TreeMap-Elements_img2.png) 
 {:.image }
 
 
@@ -172,6 +175,7 @@ You can also set labels for the leaf nodes by setting the ShowLabels property as
 
 
 
+{% highlight html %}
 
 [ASP]
 
@@ -229,9 +233,11 @@ You can also set labels for the leaf nodes by setting the ShowLabels property as
 
     &lt;/div&gt;
 
+	
+{% endhighlight %}
 
 
-{ ![](TreeMap-Elements_images/TreeMap-Elements_img3.png) | markdownify }
+![](TreeMap-Elements_images/TreeMap-Elements_img3.png) 
 {:.image }
 
 

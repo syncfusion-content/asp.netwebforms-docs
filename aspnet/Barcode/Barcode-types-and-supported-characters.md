@@ -11,7 +11,7 @@ documentation: ug
 
 The following table contains the supported types and associated valid characters.
 
-_Table 1: Table of Barcode types and supported character_
+_Table_ _1__: Table of Barcode types and supported character_
 
 <table>
 <tr>

@@ -7,11 +7,11 @@ control: TagCloud
 documentation: ug
 ---
 
-## RTL Support
+# RTL Support
 
 This feature allows you to change the left-to-right alignment of the TagCloud control to right-to-left (RTL) alignment. This displays the content from right to left in the control. You can achieve this by using the EnableRTL property that is set to false, by default.
 
-### Enabling RTL Support
+## Enabling RTL Support
 
 To enable the right-to-left property in TagCloud, include the following TagCloud control code example in the ASPX page.
 
@@ -135,7 +135,7 @@ The following screenshot illustrates the TagCloud control with RTL support.
 
 
 
-{ ![](RTL-Support_images/RTL-Support_img1.png) | markdownify }
+![](RTL-Support_images/RTL-Support_img1.png) 
 {:.image }
 
 

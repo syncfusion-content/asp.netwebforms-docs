@@ -7,11 +7,11 @@ control: Dialog
 documentation: ug
 ---
 
-## RTL Support
+# RTL Support
 
 The Dialog supports Right-To-Left feature. The alignment of Dialog content can be changed from Left-To-Right to Right-To-Left alignment.
 
-### Enable RTL Support
+## Enable RTL Support
 
 The following steps explain enabling the right-to-left property of the Dialog control.
 
@@ -47,7 +47,7 @@ In the ASPX page, add the Dialog control and set the EnableRTL to true.
 
 The screenshot displays Dialog when EnabelRTL is set to true.
 
-{ ![](RTL-Support_images/RTL-Support_img1.png) | markdownify }
+![](RTL-Support_images/RTL-Support_img1.png) 
 {:.image }
 
 

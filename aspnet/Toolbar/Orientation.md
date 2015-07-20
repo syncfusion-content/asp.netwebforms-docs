@@ -7,7 +7,7 @@ control: Toolbar
 documentation: ug
 ---
 
-## Orientation
+# Orientation
 
 The toolbar control supports both vertical and horizontal orientations, allowing it to fit into any scenario. The Toolbar property Orientation defines the orientation by which the control is rendered. The value set to this property is a string type. It accepts the following values.
 
@@ -16,7 +16,7 @@ The toolbar control supports both vertical and horizontal orientations, allowing
 
 The following section explains how to set orientation for the toolbar.
 
-### Horizontal
+## Horizontal
 
 This property sets the Toolbar in horizontal orientation.
 
@@ -44,11 +44,11 @@ Build and run the application.
 
 The following screenshot displays the Toolbar output with a horizontal orientation.
 
-{ ![](Orientation_images/Orientation_img1.png) | markdownify }
+ ![](Orientation_images/Orientation_img1.png) 
 {:.image }
 
 
-### Vertical
+## Vertical
 
 This property sets the Toolbar in vertical orientation. Add the following code example to the corresponding ASPX page to render the ToolBar Control
 
@@ -70,7 +70,7 @@ This property sets the Toolbar in vertical orientation. Add the following code e
 
 The following screenshot displays the Toolbar output with a vertical orientation.
 
-{ ![](Orientation_images/Orientation_img2.png) | markdownify }
+ ![](Orientation_images/Orientation_img2.png) 
 {:.image }
 
 

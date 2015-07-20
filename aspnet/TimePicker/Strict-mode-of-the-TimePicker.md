@@ -7,11 +7,11 @@ control: TimePicker
 documentation: ug
 ---
 
-## Strict mode of the TimePicker
+# Strict mode of the TimePicker
 
 TimePicker control provides you an option to set default value when there is no default value between minTime and maxTime by using EnableStrictMode property.
 
-### StrictMode property
+## StrictMode property
 
 The following code explains you how to use the strict mode property.
 
@@ -30,7 +30,7 @@ The following code explains you how to use the strict mode property.
 Run the above code to render the following output.
 
 
-{ ![](Strict-mode-of-the-TimePicker_images/Strict-mode-of-the-TimePicker_img1.png) | markdownify }
+![](Strict-mode-of-the-TimePicker_images/Strict-mode-of-the-TimePicker_img1.png) 
 {:.image }
 
 

@@ -7,9 +7,9 @@ control: WaitingPopup
 documentation: ug
 ---
 
-## Behavior and Settings
+# Behavior and Settings
 
-### Automatic Initializing WaitingPopup Control
+## Automatic Initializing WaitingPopup Control
 
 WaitingPopup control provides the ShowOnInit property to allow the waiting popup to display over target on page load automatically. You can use the Target property to map the exact element to show the WaitingPopup. By default, showOnInit property is set to false.
 
@@ -31,6 +31,8 @@ Add the following code example to the corresponding ASPX page to render the Wait
 
 Add the following styles to render the WaitingPopup control
 
+{% highlight css %}
+
   &lt;style type="text/css"&gt;
 
         #targetelement {
@@ -43,15 +45,15 @@ Add the following styles to render the WaitingPopup control
 
    &lt;/style&gt;
 
-
+{% endhighlight %}
 
 Output for the WaitingPopup when showOnInit is set to true.
 
-{ ![](Behavior-and-Settings_images/Behavior-and-Settings_img1.png) | markdownify }
+![](Behavior-and-Settings_images/Behavior-and-Settings_img1.png)
 {:.image }
 
 
-### Enable or Disable Popup Indicator
+## Enable or Disable Popup Indicator
 
 You can show or hide the popup indicator of the WaitingPopup control by using the ShowImage property. By default, the ShowImage property is set to true.
 
@@ -60,6 +62,8 @@ The following steps explain how to enable or disable the popup indicator in the 
 Add the following code example to the corresponding ASPX page to enable or disable the popup indicator in the WaitingPopup control.
 
 Enable popup indicator:
+
+{% highlight html %}
 
 &lt;div id="targetelement"&gt;&lt;/div&gt;
 
@@ -71,7 +75,7 @@ Disable popup indicator:
 
     &lt;ej:WaitingPopup ID="target1" runat="server" Target="#targetelement1" ShowOnInit="True" ShowImage="false" Text="Loading... Please wait..."&gt;&lt;/ej:WaitingPopup&gt;    
 
-
+{% endhighlight %}
 
 
 
@@ -99,15 +103,15 @@ Add the following styles to render the WaitingPopup control.
 
 The following screenshots display the enabled and disabled popup indicator WaitingPopup control.
 
-{ ![](Behavior-and-Settings_images/Behavior-and-Settings_img2.png) | markdownify }
+![](Behavior-and-Settings_images/Behavior-and-Settings_img2.png) 
 {:.image }
 
 
-{ ![](Behavior-and-Settings_images/Behavior-and-Settings_img3.png) | markdownify }
+![](Behavior-and-Settings_images/Behavior-and-Settings_img3.png) 
 {:.image }
 
 
-### Show or Hide WaitingPopup
+## Show or Hide WaitingPopup
 
 By using the show() or hide() method, you can display or hide the WaitingPopup control over the target area.
 
@@ -203,7 +207,7 @@ Add the following styles to render the WaitingPopup control.
 
 Output for WaitingPopup when invoking the show() method.
 
-{ ![](Behavior-and-Settings_images/Behavior-and-Settings_img4.png) | markdownify }
+![](Behavior-and-Settings_images/Behavior-and-Settings_img4.png) 
 {:.image }
 
 

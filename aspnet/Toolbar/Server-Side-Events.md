@@ -7,7 +7,7 @@ control: Toolbar
 documentation: ug
 ---
 
-## Server Side Events
+# Server Side Events
 
 The server side events present in the Toolbar control are listed as follows.
 

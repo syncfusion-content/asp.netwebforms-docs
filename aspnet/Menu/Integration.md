@@ -7,9 +7,9 @@ control: Menu
 documentation: ug
 ---
 
-## Integration 
+# Integration 
 
-### Angular binding
+## Angular binding
 
 AngularJS is an open-source web application framework. AngularJS extends HTML with new attributes. AngularJS is a JavaScript framework. You can add it to an ASPX page with a &lt;script&gt; tag. AngularJS extends HTML attributes with Directives, and binds data to HTML with Expressions. The support is achieved by an integration JS library file. You can know more about the Angular support in the following link location.
 
@@ -289,11 +289,11 @@ Add the following code example in your style section.
 
 The following screenshot displays the output of the above code example.      
 
-{ ![](Integration_images/Integration_img1.png) | markdownify }
+![](Integration_images/Integration_img1.png) 
 {:.image }
 
 
-### Knockout binding
+## Knockout binding
 
 KnockoutJS is a MVVM library that allows the separation of concerns. Essential ASP.NET WebForm provides full support for KnockoutJS. The Knockout support is achieved by an integration JS library file. Add the following code example for knockout binding Menu rendering.
 
@@ -408,7 +408,7 @@ Add the following script code to provide KO support .
 
 The following screenshot displays the output of the above code example.             
 
-{ ![](Integration_images/Integration_img2.png) | markdownify }
+![](Integration_images/Integration_img2.png) 
 {:.image }
 
 

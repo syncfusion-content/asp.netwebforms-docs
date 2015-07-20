@@ -7,9 +7,9 @@ control: TagCloud
 documentation: ug
 ---
 
-## Integration 
+# Integration 
 
-### Angular binding
+## Angular binding
 
 TagCloud control is availed with two types of Angular JS support namely, 
 
@@ -134,11 +134,11 @@ The following example shows the way to bind data to the TagCloud control by usin
 
 The following screenshot illustrates the TagCloud control with Angular data binding.
 
-{ ![](Integration_images/Integration_img1.png) | markdownify }
+![](Integration_images/Integration_img1.png) 
 {:.image }
 
 
-### Knockout binding
+## Knockout binding
 
 Two types of knockout binding are supported by TagCloud,
 
@@ -279,7 +279,7 @@ var tagview = [
 
 Run the above code to render the following output.
 
-{ ![](Integration_images/Integration_img2.png) | markdownify }
+![](Integration_images/Integration_img2.png) 
 {:.image }
 
 

@@ -7,11 +7,11 @@ control: Dialog
 documentation: ug
 ---
 
-## Model Dialog Support
+# Model Dialog Support
 
 The Model Dialog is like an alert window that disables the main window and allows exploration of its content to interact with others. 
 
-### Configure Modal Dialog
+## Configure Modal Dialog
 
 The following steps explain how to implement Model Dialog. 
 
@@ -85,7 +85,7 @@ In the ASPX page, add the Dialog control and set the EnableModel to true.
 
 The following screenshot displays Model Dialog control.                                     
 
-{ ![](Model-Dialog-Support_images/Model-Dialog-Support_img1.png) | markdownify }
+![](Model-Dialog-Support_images/Model-Dialog-Support_img1.png) 
 {:.image }
 
 

@@ -7,11 +7,11 @@ control: TreeGrid
 documentation: ug
 ---
 
-## Rows
+# Rows
 
 The TreeGrid rows displays the information of each row from the bounded data source.
 
-### Row Template
+## Row Template
 
 Row template is used to customize the TreeGrid rows based on requirements. In TreeGrid, RowTemplateID and AltRowTemplateID properties are used for customizing the row.
 
@@ -327,11 +327,11 @@ The output of TreeGrid with Row Template is as follows.
 
 
 
-{ ![](Rows_images/Rows_img1.png) | markdownify }
+![](Rows_images/Rows_img1.png) 
 {:.image }
 
 
-### Row Drag and Drop
+## Row Drag and Drop
 
 It is possible to dynamically re-arrange the rows in the TreeGrid control by using the AllowDragAndDrop property. With this property, row drag can be enabled or disabled. Rows can be inserted above, below as a sibling or as a child to the existing row with the help of this feature. A default tooltip is rendered while dragging the TreeGrid row and this tooltip can be customized by the DragTooltip property. This propertyhas inner properties such as ShowTooltip, TooltipItems and TooltipTemplate.
 
@@ -339,7 +339,7 @@ The ShowTooltip property is used to enable or disable the tooltip. By default, t
 
 The following code explains about enabling the row drag and drop with the default tooltip in the TreeGrid.
 
-
+{% highlight html %}
 
 
 
@@ -360,16 +360,16 @@ The following code explains about enabling the row drag and drop with the defaul
    &lt;/ej:TreeGrid&gt;
 
 
-
+{% endhighlight %}
 
 
 The following screenshot depicts a row drag and drop in the TreeGrid.
 
-{ ![](Rows_images/Rows_img2.png) | markdownify }
+ ![](Rows_images/Rows_img2.png) 
 {:.image }
 
 
-### Customizing Drag tooltip
+## Customizing Drag tooltip
 
 The TooltipItems property is used to customize the tooltip items. By using this property, specific fields can be rendered in the tooltip. By default this property value is null, and all the defined field items are rendered in the tooltip.
 
@@ -457,7 +457,7 @@ The following code shows how to render row drag tooltip with tooltip template.
 
 
 
-{ ![](Rows_images/Rows_img3.png) | markdownify }
+ ![](Rows_images/Rows_img3.png) 
 {:.image }
 
 

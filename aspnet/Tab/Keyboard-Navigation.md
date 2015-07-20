@@ -7,7 +7,7 @@ control: Tab
 documentation: ug
 ---
 
-## Keyboard Navigation
+# Keyboard Navigation
 
 Tab control provides keyboard interaction support. By using this functionality, you can interact with the control with the keyboard. This is achieved by setting the AllowKeyboardNavigation to true. By default, this property value is set to true.
 
@@ -119,7 +119,7 @@ $("#<%=dishtype.ClientID%> ul a").focus();
 
 The following screenshot illustrates the Tab with keyboard navigation.
 
-{ ![](Keyboard-Navigation_images/Keyboard-Navigation_img1.png) | markdownify }
+![](Keyboard-Navigation_images/Keyboard-Navigation_img1.png) 
 {:.image }
 
 

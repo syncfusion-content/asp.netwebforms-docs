@@ -7,11 +7,11 @@ control: Toolbar
 documentation: ug
 ---
 
-## Behavior settings
+# Behavior settings
 
 The following are some miscellaneous properties that helps to change the behavior of the Toolbar control. The Toolbar items can be given directly without using database. It can be achieved by Items tag.
 
-### Enabling Toolbar
+## Enabling Toolbar
 
 The Toolbar property enabled is used to enable or disable the Toolbar. The value set to this property is Boolean type. Refer to the following code.
 
@@ -63,7 +63,7 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 
 
-### Hiding Toolbar 
+## Hiding Toolbar 
 
 The Toolbar property Hide is used to show or hide the Toolbar. The value set to this property is Boolean type.  Add the following code example in your ASPX page.
 

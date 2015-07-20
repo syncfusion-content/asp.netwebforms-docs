@@ -7,19 +7,19 @@ control: Diagram
 documentation: ug
 ---
 
-## Connector
+# Connector
 
 Connectors are objects used to create a link between two nodes. A connector is a line that has connection points at the end of the line and stays connected to the elements that you attach it to.
 
 
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image59_20.jpg](Connector_images/Connector_img1.jpeg) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image59_20.jpg](Connector_images/Connector_img1.jpeg) 
 {:.image }
 
 
 _Connector_
 
-### Create Connector
+## Create Connector
 
 Connector is created and added to the Diagram model by using Diagram Model’s Connectors property. The connector’s name must be unique. 
 
@@ -51,13 +51,13 @@ Diagram1.Connectors.Add(connector);
 
 
 
-{ ![](Connector_images/Connector_img2.png) | markdownify }
+ ![](Connector_images/Connector_img2.png) 
 {:.image }
 
 
 _Connector_
 
-### Segments
+## Segments
 
 The connector has three types of segments.
 
@@ -108,7 +108,7 @@ Diagram1.Connectors.Add(connector);
 
 
 
-{ ![](Connector_images/Connector_img3.png) | markdownify }
+ ![](Connector_images/Connector_img3.png)
 {:.image }
 
 
@@ -161,7 +161,7 @@ Diagram1.Connectors.Add(connector);
 
 
 
-{ ![](Connector_images/Connector_img4.png) | markdownify }
+ ![](Connector_images/Connector_img4.png) 
 {:.image }
 
 
@@ -228,13 +228,13 @@ Diagram1.Connectors.Add(connector);
 
 
 
-{ ![C:/Users/lakshmipriya/Desktop/IMG_07112014_125619.png](Connector_images/Connector_img5.png) | markdownify }
+![C:/Users/lakshmipriya/Desktop/IMG_07112014_125619.png](Connector_images/Connector_img5.png) 
 {:.image }
 
 
 _Polyline_
 
-{ ![](Connector_images/Connector_img6.png) | markdownify }
+![](Connector_images/Connector_img6.png) 
 {:.image }
 
 
@@ -297,7 +297,7 @@ Diagram1.Connectors.Add(connector);
 
 
 
-{ ![](Connector_images/Connector_img7.png) | markdownify }
+![](Connector_images/Connector_img7.png) 
 {:.image }
 
 
@@ -351,7 +351,7 @@ DiagramContent.Connectors.Add(connector);
 
 
 
-{ ![](Connector_images/Connector_img8.png) | markdownify }
+![](Connector_images/Connector_img8.png)
 {:.image }
 
 
@@ -363,13 +363,13 @@ The segments can be edited during runtime by dragging control thumbs. Segments c
 
 
 
-{ ![](Connector_images/Connector_img9.png) | markdownify }
+![](Connector_images/Connector_img9.png) 
 {:.image }
 
 
 _Segment Editing_ 
 
-### Connector Padding
+## Connector Padding
 
 Connector Padding allows you to adjust the space between the connector’s end point and the object where it is connected (Node, Group, or Port). 
 
@@ -395,7 +395,7 @@ connector.TargetPadding = 20;
 
 
 
-{ ![](Connector_images/Connector_img10.png) | markdownify }
+![](Connector_images/Connector_img10.png) 
 {:.image }
 
 
@@ -417,7 +417,7 @@ node.ConnectorPadding = 20;
 
 
 
-{ ![](Connector_images/Connector_img11.png) | markdownify }
+![](Connector_images/Connector_img11.png) 
 {:.image }
 
 
@@ -441,11 +441,11 @@ port.ConnectorPadding = 20;
 
 
 
-{ ![](Connector_images/Connector_img12.png) | markdownify }
+![](Connector_images/Connector_img12.png) 
 {:.image }
 
 
-### Line Bridging
+## Line Bridging
 
 Line Bridging creates a bridge for lines to smartly cross over other lines, at points of intersection. When two line connectors meet each other, the line with the higher z-order draws an arc over the line with lower z-order.
 
@@ -499,7 +499,7 @@ DiagramContent.Constraints = DiagramConstraints.Default | DiagramConstraints.Bri
 
 
 
-{ ![](Connector_images/Connector_img13.png) | markdownify }
+![](Connector_images/Connector_img13.png) 
 {:.image }
 
 
@@ -548,7 +548,7 @@ DiagramContent.Model.BridgeDirection = BridgeDirection.Top;
 
 
 
-{ ![](Connector_images/Connector_img14.png) | markdownify }
+![](Connector_images/Connector_img14.png) 
 {:.image }
 
 
@@ -571,7 +571,7 @@ DiagramContent.Model.BridgeDirection = BridgeDirection.Left;
 
 
 
-{ ![](Connector_images/Connector_img15.png) | markdownify }
+ ![](Connector_images/Connector_img15.png) 
 {:.image }
 
 
@@ -595,7 +595,7 @@ diagram.update({ bridgeDirection: ej.datavisualization.Diagram.BridgeDirection.T
 
 {% endhighlight %}
 
-### Corner Radius
+## Corner Radius
 
 CornerRadius support enables you to create connectors with rounded corners. 
 
@@ -619,13 +619,13 @@ Connector.CornerRadius=20;
 
 
 
-{ ![](Connector_images/Connector_img16.png) | markdownify }
+![](Connector_images/Connector_img16.png) 
 {:.image }
 
 
 _Corner Radius_
 
-### Connecting Nodes
+## Connecting Nodes
 
 Connector is connected to the bounds of the node at a specific point on the node .You are required to assign the source node’s name to connector’s SourceNode property and target node’s name to the connector’s TargetNode property, in order to establish the connection. The port to port connection between specific points on node is established by assigning the name of the node’s port to connector’s TargetPort /SourcePort. At runtime, you can change the point of connection while dragging or rotating node.
 
@@ -649,7 +649,7 @@ connector.TargetNode = "tailnode"; //Sets name of targetNode
 
 
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image59_22.jpg](Connector_images/Connector_img17.jpeg) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image59_22.jpg](Connector_images/Connector_img17.jpeg) 
 {:.image }
 
 
@@ -657,13 +657,13 @@ _Node to Node Connection_
 
 The point of connection is changed optimally at runtime while performing operations such as Rotating and Dragging on Source/Target Node of Connector. In case of static or specific point connection at runtime, the Port assists to maintain specific point connection between Nodes.
 
-### Connecting Ports
+## Connecting Ports
 
 The Port establishes the connection with nodes at a specific point.
 
 For creating specific port connection, refer to the link [Port to Port Connection.](http://help.syncfusion.com/ug/js/default.htm)
 
-### Appearance
+## Appearance
 
 You can customize the appearance of the connector by setting a desired value to the appropriate appearance properties. The following code illustrates how to customize the appearance of connector.
 
@@ -722,7 +722,7 @@ connector.TargetPoint = new DiagramPoint(70, 40);
 
 {% endhighlight %}
 
-### Decorator
+## Decorator
 
 You can decorate the source point and target point of the connector by using decorator shape. The SourceDecorator and TargetDecorator properties are used to add decorators to connector.The following code illustrates how decorator is created and added at connector’s target point.
 
@@ -829,13 +829,13 @@ connector.SourceDecorator.FillColor = "yellow";
 
 
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image59_23.jpg](Connector_images/Connector_img18.jpeg) | markdownify }
+ ![http://help.syncfusion.com/ug/js/ImagesExt/image59_23.jpg](Connector_images/Connector_img18.jpeg) 
 {:.image }
 
 
 _Decorator Shape_
 
-### Constraints
+## Constraints
 
 Connector Constraints
 
@@ -915,7 +915,6 @@ connector.Constraints = connector.Constraints &~(ConnectorConstraints.Select);
 
 
 
-> { ![Description: C:/Users/labuser/Desktop/note.jpg](Connector_images/Connector_img19.jpeg) | markdownify }
-{:.image }
+
 _Note: Connector’s constraints property is manipulated by using bitwise operations. For more information about bitwise operations, see_ [Bitwise Operations](http://help.syncfusion.com/ug/js/documents/bitwiseoperations.htm)_._ 
 

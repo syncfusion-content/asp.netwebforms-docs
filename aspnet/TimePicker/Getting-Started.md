@@ -19,11 +19,11 @@ The following screenshot illustrates the functionality of a TimePicker with a ti
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img1.png) 
 {:.image }
 
 
-Create a TimePicker 
+### Create a TimePicker 
 
 You can create an ASP.NET Web Forms Project and add necessary Dll’s and scripts with the help of the given [ASP.NET WebForms-Getting Started](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm) Documentation.
 
@@ -173,11 +173,11 @@ The following screenshot displays the TimePicker control.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img2.png) 
 {:.image }
 
 
-Set the Min and Max Values
+### Set the Min and Max Values
 
 In a real-time hotel table booking scenario, the booking is open only for a limited time and limited number of days. You have to select a time and date from the given range. This is achieved by using the properties MinTime and MaxTime, MinDate and MaxDate. By this way, times ranging between MinTime and MaxTime, MinDate and MaxDate are enabled in the TimePicker.
 
@@ -207,11 +207,11 @@ In a real-time hotel table booking scenario, the booking is open only for a limi
 
 The above code example displays the following output.
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img3.png) 
 {:.image }
 
 
-Set Time Interval
+### Set Time Interval
 
 You can select the Time in the TimePicker with the interval of one hour. You need to set the property Interval as 60.
 
@@ -233,11 +233,11 @@ The following code example shows how to set Time interval.
 
 Run the above code to achieve the desired result. You can select the date and time in the TimePicker within the given range of one hour interval. This scenario is illustrated in the following screenshot.
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img4.png) 
 {:.image }
 
 
-Display the Acknowledgement Message
+### Display the Acknowledgement Message
 
 The acknowledgement message is displayed when you click the Book button.
 
@@ -269,11 +269,11 @@ The following code example shows how to display the acknowledgement message.
 
 The following screenshot displays the acknowledgement message.
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img5.png) 
 {:.image }
 
 
-Create Two TimePickers
+### Create Two TimePickers
 
 You can select the Start time in the first TimePicker and then the End time in the second TimePicker. The validation process is done after the selection of Start time and the changes are reflected in the End time selection TimePicker. You can manipulate this process in the Select event of Start Time selection TimePicker. 
 
@@ -459,7 +459,7 @@ Display the acknowledge message by using following script.
 
 Run the above code to achieve the desired result. By selecting the Start Time in the first TimePicker, you can select the End Time within the given range. This restricts you from selecting false time. This scenario is illustrated in the following screenshot.
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img6.png) 
 {:.image }
 
 

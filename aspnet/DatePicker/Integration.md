@@ -7,9 +7,9 @@ control: DatePicker
 documentation: ug
 ---
 
-## Integration
+# Integration
 
-### Angular Binding
+## Angular Binding
 
 DatePicker control is availed with two types of Angular JS supports namely, 
 
@@ -24,8 +24,7 @@ To know more detail about the Angular binding, you can refer to the following li
 
 [http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
 
-{ ![](Integration_images/Integration_img1.jpeg) | markdownify }
-{:.image }
+
 _Note: Add the following script files along with the given code to access the Angular binding. They have JS library for Angular binding._
 
 * angular-min.js
@@ -115,11 +114,11 @@ The following example depicts the way to bind data to the DatePicker control thr
 
 
 
-{ ![](Integration_images/Integration_img2.png) | markdownify }
+![](Integration_images/Integration_img2.png) 
 {:.image }
 
 
-### Knockout Binding
+## Knockout Binding
 
 Knockout support allows you to bind the HTML elements against any of the available data model.
 
@@ -136,7 +135,7 @@ For more information about the Knockout binding, you can refer to the following 
 
 [http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
 
-{ ![](Integration_images/Integration_img3.jpeg) | markdownify }
+![](Integration_images/Integration_img3.jpeg) 
 {:.image }
 _Note: Add the following script files along with the given code to access Knockout binding. They have JS library for Knockout binding._
 
@@ -249,7 +248,7 @@ The following example depicts the way to bind data to the DatePicker control thr
 
 
 
-{ ![](Integration_images/Integration_img4.png) | markdownify }
+![](Integration_images/Integration_img4.png) 
 {:.image }
 
 

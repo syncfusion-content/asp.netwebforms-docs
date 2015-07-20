@@ -7,7 +7,7 @@ control: TreeMap
 documentation: ug
 ---
 
-## Layout
+# Layout
 
 You can decide on the visual representation of nodes belonging to all the treemap levels using the ItemsLayoutMode property of the TreeMap.
 
@@ -25,6 +25,7 @@ Squarifiedlayout creates rectangles with best aspect ratio.
 
 
 
+{% highlight html %}
 
 [ASP]
 
@@ -55,6 +56,7 @@ Squarifiedlayout creates rectangles with best aspect ratio.
 &lt;/div&gt;
 
 
+{% endhighlight %}
 
 
 
@@ -71,6 +73,7 @@ SliceAndDiceAuto layout creates rectangles with high aspect ratio and displays t
 
 
 
+{% highlight html %}
 
 [ASPX]
 
@@ -87,8 +90,9 @@ SliceAndDiceAuto layout creates rectangles with high aspect ratio and displays t
 &lt;/div&gt; 
 
 
+{% endhighlight %}
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Layout_images/Layout_img2.png) | markdownify }
+ ![C:/Users/ApoorvahR/Desktop/1.png](Layout_images/Layout_img2.png) 
 {:.image }
 
 
@@ -99,6 +103,7 @@ SliceAndDiceHorizontal layout creates rectangles with high aspect ratio and disp
 
 
 
+{% highlight html %}
 
  [ASPX]
 
@@ -114,9 +119,10 @@ SliceAndDiceHorizontal layout creates rectangles with high aspect ratio and disp
 
 
 
+{% endhighlight %}
 
 
-{ ![](Layout_images/Layout_img3.png) | markdownify }
+ ![](Layout_images/Layout_img3.png) 
 {:.image }
 
 
@@ -127,6 +133,7 @@ SliceAndDiceVertical layout creates rectangles with high aspect ratio and displa
 
 
 
+{% highlight html %}
 
 [ASPX]
 
@@ -140,9 +147,10 @@ SliceAndDiceVertical layout creates rectangles with high aspect ratio and displa
 
 
 
+{% endhighlight  %}
 
 
-{ ![](Layout_images/Layout_img4.png) | markdownify }
+![](Layout_images/Layout_img4.png) 
 {:.image }
 
 
