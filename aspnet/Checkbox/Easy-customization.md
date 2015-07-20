@@ -57,7 +57,7 @@ In the ASPX page, add the following input elements to configure Checkbox.
 
 {% highlight html %}
 
-<%--Enables or disables the Tri-state by using EnableTriState property --%>
+	<%--Enables or disables the Tri-state by using EnableTriState property --%>
 
     <ej:CheckBox ID="NonTriState_CheckBox" runat="server" EnableTriState="false"> Music</ej:CheckBox>
 
@@ -134,14 +134,14 @@ Run the above code to render the following output.
 You can render Checkbox in different sizes. The following table contains some predefined size option for rendering a Checkbox in easiest way. Each size option has different heights and widths. Mainly, it avoids the complexity in rendering the Checkbox with complex CSS class. 
 
 <table>
-<tr>
-<td>
-Small</td><td>
-Creates Checkbox with in-built small size height, width specified.</td></tr>
-<tr>
-<td>
-Medium</td><td>
-Creates Checkbox with in-built medium size height, width specified.</td></tr>
+	<tr>
+		<td>Small</td>
+		<td>Creates Checkbox with in-built small size height, width specified.</td>
+	</tr>
+	<tr>
+		<td>Medium</td>
+		<td>Creates Checkbox with in-built medium size height, width specified.</td>
+	</tr>
 </table>
 
 
@@ -158,8 +158,6 @@ In the ASPX page, add the following input elements to configure Checkbox.
     <br />
 
     <ej:CheckBox ID="MediumSize_Checkbox" runat="server" Size="Medium">Medium size</ej:CheckBox>
-
-
 
 {% endhighlight %}
 
@@ -182,11 +180,9 @@ In the ASPX page, add the following input elements to configure Checkbox.
 
 {% highlight html %}
 
-<%--set text for checkbox using Text property--%>
+	<%--set text for checkbox using Text property--%>
 
     <ej:CheckBox ID="CheckBox_Text" runat="server" Text="Music"> </ej:CheckBox>
-
-
 
 {% endhighlight %}
 
@@ -208,7 +204,7 @@ In the ASPX page, add the following input elements to configure Checkbox.
 
 {% highlight html %}
 
-<%--Sets the rounded corner for Checkbox--%>
+	<%--Sets the rounded corner for Checkbox--%>
 
     <ej:CheckBox ID="NormalCorner_Checkbox" runat="server" ShowRoundedCorner="false" Text="checkbox without rounded corner"> </ej:CheckBox>
 
@@ -216,14 +212,12 @@ In the ASPX page, add the following input elements to configure Checkbox.
 
     <ej:CheckBox ID="RoundedCorner_Checkbox" runat="server" ShowRoundedCorner="true" Text="checkbox with rounded corner"></ej:CheckBox>
 
-
-
 {% endhighlight %}
 
 
 Run the above code to render the following output.
 
-{ ![](Easy-customization_images/Easy-customization_img6.png) | markdownify }
+![](Easy-customization_images/Easy-customization_img6.png)
 {:.image }
 
 

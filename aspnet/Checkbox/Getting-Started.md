@@ -49,9 +49,7 @@ Create an ASPX file and add ejCheckBox element to render the Checkbox.
 
                     </ej:CheckBox>
 
-                    <label for="Checkbox1">
-
-                        Music</label>
+                    <label for="Checkbox1">Music</label>
 
                 </td>
 
@@ -61,9 +59,7 @@ Create an ASPX file and add ejCheckBox element to render the Checkbox.
 
                     </ej:CheckBox>
 
-                    <label for="Checkbox3">
-
-                        Sports</label>
+                    <label for="Checkbox3">Sports</label>
 
                 </td>
 
@@ -73,9 +69,7 @@ Create an ASPX file and add ejCheckBox element to render the Checkbox.
 
                     </ej:CheckBox>
 
-                    <label for="Checkbox4" class="clslab">
-
-                        Bike Riding</label>
+                    <label for="Checkbox4" class="clslab">Bike Riding</label>
 
                 </td>
 
@@ -101,9 +95,7 @@ Create an ASPX file and add ejCheckBox element to render the Checkbox.
 
                     </ej:CheckBox>
 
-                    <label for="Checkbox9">
-
-                        Playing Games</label>
+                    <label for="Checkbox9">Playing Games</label>
 
                 </td>
 
@@ -113,9 +105,7 @@ Create an ASPX file and add ejCheckBox element to render the Checkbox.
 
                     </ej:CheckBox>
 
-                    <label for="Checkbox5">
-
-                        Hearing Songs</label>
+                    <label for="Checkbox5">Hearing Songs</label>
 
                 </td>
 
@@ -125,9 +115,7 @@ Create an ASPX file and add ejCheckBox element to render the Checkbox.
 
                     </ej:CheckBox>
 
-                    <label for="Checkbox6">
-
-                        Watching Tv</label>
+                    <label for="Checkbox6">Watching Tv</label>
 
                 </td>
 
