@@ -7,9 +7,9 @@ control: Captcha
 documentation: ug
 ---
 
-## Enabling Validation
+# Enabling Validation
 
-### Auto Validation
+## Auto Validation
 
 You can validate the Captcha characters by default, when you click the submit button without adding any validation code. You can achieve this by enabling EnableAutoValidation propertyto true. By default, this property is set to false. When this property is set to true,Captcha renders with textbox.  Here, you can also customize the error message by using the CustomErrorMessage property that accepts the string value. 
 
@@ -39,11 +39,11 @@ In the ASPX page, include the following Captcha control code example for auto va
 
 The following screenshot illustrates the Captcha with Auto-Validation support. 
 
-{ ![C:/Users/ApoorvahR/Desktop/3.png](Enabling-Validation_images/Enabling-Validation_img1.png) | markdownify }
+![C:/Users/ApoorvahR/Desktop/3.png](Enabling-Validation_images/Enabling-Validation_img1.png)
 {:.image }
 
 
-### Validation by Method
+## Validation by Method
 
 Validation by method is used when EnableAutoValidation is set to false. Here, you can include the TargetButton to validate the Captcha. CaptchaService.IsValid() method is used to validate the Captcha. It requires three arguments namely as captcha, textbox, case sensitivity.
 
@@ -71,11 +71,11 @@ In the ASPX page, include the following Captcha control code example for manual 
 
 The following screenshot illustrates the Captcha with manual validation support. 
 
-{ ![](Enabling-Validation_images/Enabling-Validation_img2.png) | markdownify }
+![](Enabling-Validation_images/Enabling-Validation_img2.png)
 {:.image }
 
 
-### Case Sensitive Validation 
+## Case Sensitive Validation 
 
 Captcha supports to check case sensitivity (Upper case and lower case) of the Captcha characters at the time of validation. You can achieve this by enabling EnableCaseSensitivity propertyto true. By default this value is set as true.
 
@@ -107,7 +107,7 @@ In the ASPX page, include the following Captcha control code-snippet for case se
 
 The following screenshot illustrates the Captcha with Case sensitive validation support. 
 
-{ ![C:/Users/ApoorvahR/Desktop/3.png](Enabling-Validation_images/Enabling-Validation_img3.png) | markdownify }
+![C:/Users/ApoorvahR/Desktop/3.png](Enabling-Validation_images/Enabling-Validation_img3.png)
 {:.image }
 
 
