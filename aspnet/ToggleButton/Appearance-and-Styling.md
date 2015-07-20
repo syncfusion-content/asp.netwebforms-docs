@@ -7,9 +7,9 @@ control: Toggle Button
 documentation: ug
 ---
 
-## Appearance and Styling
+# Appearance and Styling
 
-### Theme support
+## Theme support
 
 You can control the style and appearance of the Toggle Button based on the CSS classes. To apply styles to the Toggle Button control, you can refer to the files, ej.widgets.core.min.css and ej.theme.min.css. When you refer to ej.widgets.all.min.css file, it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project, as ej.widgets.all.min.css is the combination of these two files                 . 
 
@@ -28,7 +28,8 @@ By default, there are 13 themes available for Toggle Button control namely,
 * gradient-saffron
 * gradient-saffron-dark
 * bootstrap-theme
-### Custom CSS
+
+## Custom CSS
 
 
 You can use the CSS to customize the appearance of the Toggle Button control. Define a CSS class as per the requirement and assign the class name to the CssClass property.
@@ -183,7 +184,7 @@ Configure the CSS styles to apply on buttons.
 
 Run the above code to render the following output.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) | markdownify }
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 {:.image }
 
 

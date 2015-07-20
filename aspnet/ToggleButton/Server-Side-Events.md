@@ -7,7 +7,7 @@ control: Toggle Button
 documentation: ug
 ---
 
-## Server Side Events
+# Server Side Events
 
 The following given server side even is available in the ToggleButton control.
 

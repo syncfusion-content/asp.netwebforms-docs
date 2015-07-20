@@ -7,11 +7,11 @@ control: TreeGrid
 documentation: ug
 ---
 
-## Editing
+# Editing
 
 The TreeGrid control provides built-in support for Editing cell items. 
 
-Cell Editing
+## Cell Editing
 
 Update the task details through grid Cell Editing by setting EditMode as CellEditing.
 
@@ -47,7 +47,7 @@ The output of TreeGrid with CellEditing is as follows.
 
 
 
-{ ![](Editing_images/Editing_img1.png) | markdownify }
+ ![](Editing_images/Editing_img1.png) 
 {:.image }
 
 

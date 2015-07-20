@@ -7,9 +7,9 @@ control: TimePicker
 documentation: ug
 ---
 
-## Integration
+# Integration
 
-### Angular Support
+## Angular Support
 
 TimePicker control is availed with two types of Angular JS supports namely, 
 
@@ -151,11 +151,11 @@ The following code example depicts you the way to bind data to the TimePicker co
 
 Run the above code to render the following output.
 
-{ ![](Integration_images/Integration_img1.png) | markdownify }
+![](Integration_images/Integration_img1.png) 
 {:.image }
 
 
-### Knockout Support
+## Knockout Support
 
 Knockout support allows you to bind the ASPX elements against any of the available data model.
 
@@ -316,7 +316,7 @@ window.viewModel = {
 
 Run the above code to render the following output.
 
-{ ![](Integration_images/Integration_img2.png) | markdownify }
+![](Integration_images/Integration_img2.png) 
 {:.image }
 
 

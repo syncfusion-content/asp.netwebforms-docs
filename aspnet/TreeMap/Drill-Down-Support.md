@@ -7,7 +7,7 @@ control: TreeMap
 documentation: ug
 ---
 
-## Drill Down Support
+# Drill Down Support
 
 Treemap enables drill down to expose the hierarchy achieved by clicking on a node and this results in enabling the Treemap to move to the next level or sub level and can return back to the normal Treemap view by clicking on the node header. Only a single level of the Treemap is visible at once.
 
@@ -44,6 +44,7 @@ Gets or sets a color for highlighting tree map item during drill down.</td></tr>
 
 
 
+{% highlight html %}
 
 [ASP]
 
@@ -84,14 +85,15 @@ protected void Page_Load(object sender, EventArgs e)
     &lt;/div&gt;
 
 
+{% endhighlight  %}
 
-{ ![C:/Users/NitishS/Desktop/Screenshot (106).png](Drill-Down-Support_images/Drill-Down-Support_img1.png) | markdownify }
+![C:/Users/NitishS/Desktop/Screenshot (106).png](Drill-Down-Support_images/Drill-Down-Support_img1.png) 
 {:.image }
 
 
 
 
-{ ![DrillDown](Drill-Down-Support_images/Drill-Down-Support_img2.png) | markdownify }
+![DrillDown](Drill-Down-Support_images/Drill-Down-Support_img2.png) 
 {:.image }
 
 

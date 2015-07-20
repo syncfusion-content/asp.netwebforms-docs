@@ -7,7 +7,7 @@ control: NumericTextbox
 documentation: ug
 ---
 
-## Localization Support
+# Localization Support
 
 Localization is a language support based on the culture in the NumericTextbox. You can achieve Localization by using the “Locale” property in the NumericTextbox.
 
@@ -29,7 +29,7 @@ You can get the script file of various cultures from the following path:
 
 You can dynamically change the language based on their culture.
 
-### Configuring Localization
+## Configuring Localization
 
 Add the following code example in your ASPX page to render the NumericTextbox control.
 
@@ -47,9 +47,9 @@ Add the following code example in your ASPX page to render the NumericTextbox co
 
 The following screenshot displays the output of the NumericTextbox with localization.
 
-{ ![C:/Users/giftline.jebamani/Desktop/n.png](Localization-Support_images/Localization-Support_img1.png) | markdownify }
+![C:/Users/giftline.jebamani/Desktop/n.png](Localization-Support_images/Localization-Support_img1.png) 
 {:.image }
-{ ![C:/Users/giftline.jebamani/Desktop/na.png](Localization-Support_images/Localization-Support_img2.png) | markdownify }
+![C:/Users/giftline.jebamani/Desktop/na.png](Localization-Support_images/Localization-Support_img2.png) 
 {:.image }
 
 

@@ -7,7 +7,7 @@ control: Tile
 documentation: ug
 ---
 
-## Text Configuration
+# Text Configuration
 
 The “data-ej-showtext” attribute is used to show or hide the Tile caption. By default, the “data-ej-showtext” attribute is to true on initialization. The“data-ej-text” attribute is used to set the caption of a Tile as a Text on initialization. The “data-ej-textalignment” attribute is used to align the Tile text as normal on initialization. The possible position values for “data-ej-textalignment” are as follows: 
 
@@ -40,7 +40,7 @@ Refer to the following code examples.
 
 
 
-{ ![](Text-Configuration_images/Text-Configuration_img1.png) | markdownify }
+![](Text-Configuration_images/Text-Configuration_img1.png) 
 {:.image }
 
 

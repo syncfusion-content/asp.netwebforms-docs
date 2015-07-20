@@ -7,7 +7,7 @@ control: DateTimePicker
 documentation: ug
 ---
 
-## Date Range
+# Date Range
 
 Date Range between two dates is achieved by MinDateTime, MaxDateTime property of DateTimePicker.
 
@@ -39,7 +39,7 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 
 
-{ ![](Date-Range_images/Date-Range_img1.png) | markdownify }
+![](Date-Range_images/Date-Range_img1.png) 
 {:.image }
 
 

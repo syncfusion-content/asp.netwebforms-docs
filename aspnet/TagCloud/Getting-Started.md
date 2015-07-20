@@ -113,11 +113,11 @@ public class TagCloudData
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img1.png) 
 {:.image }
 
 
-Set Min and Max Font Sizes
+## Set Min and Max Font Sizes
 
 In the above code example, the Frequency properties are used to set the min and max font sizes to the TagCloud list item.
 
@@ -147,7 +147,7 @@ List<TagCloudData> sites = new List<TagCloudData>() ;
 
 In the above code, the min font size is 5 and max font size is 20.
 
-Set event to perform an operation
+## Set event to perform an operation
 
 Here, you can set the TagCloud server side click event.
 

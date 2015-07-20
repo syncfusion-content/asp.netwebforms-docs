@@ -7,7 +7,7 @@ control: DatePicker
 documentation: ug
 ---
 
-## Server Side Events
+# Server Side Events
 
 The following are the server side events available in the DatePicker control.
 

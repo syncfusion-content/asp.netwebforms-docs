@@ -7,7 +7,7 @@ control: Menu
 documentation: ug
 ---
 
-## Icons and navigating
+# Icons and navigating
 
 Icons are the images that are to be displayed in the Menu control. To specify the menu with icons, you can use sprite property to display the icons. 
 
@@ -161,7 +161,7 @@ Add the following code example in your style section.
 
 The following screenshot displays the output for the above code example on Menu with Icons.  
 
-{ ![](Icons-and-navigating_images/Icons-and-navigating_img1.png) | markdownify }
+![](Icons-and-navigating_images/Icons-and-navigating_img1.png) 
 {:.image }
 
 

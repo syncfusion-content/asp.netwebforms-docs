@@ -7,7 +7,7 @@ control: DateTimePicker
 documentation: ug
 ---
 
-## Localization
+# Localization
 
 You can globalize your DateTimePicker control. People of different culture can make use of it. All culture files are supported by Syncfusion components
 
@@ -68,7 +68,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 
 
-{ ![](Localization_images/Localization_img1.png) | markdownify }
+![](Localization_images/Localization_img1.png) 
 {:.image }
 
 

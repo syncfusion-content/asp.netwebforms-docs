@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-## Page Settings
+# Page Settings
 
 Page settings enable you to customize the width and height of the Diagram page. The properties of PageSetting are listed as follows.
 
@@ -97,19 +97,19 @@ Diagram1.PageSettings.PageOrientation = PageOrientation.Portrait;
 
 
 
-{ ![](Page-Settings_images/Page-Settings_img1.png) | markdownify }
+ ![](Page-Settings_images/Page-Settings_img1.png) 
 {:.image }
 
 
-### MultiplePage and PageBreaks
+## MultiplePage and PageBreaks
 
 When MultiplePage is enabled, size of the page dynamically increases or decreases in multiples of page width and height and completely fits the Diagram within the page boundaries. PageBreaks is used as a visual guide to see how pages are split into multiple pages.
 
-{ ![](Page-Settings_images/Page-Settings_img2.png) | markdownify }
+![](Page-Settings_images/Page-Settings_img2.png) 
 {:.image }
 
 
-### AutoScroll
+## AutoScroll
 
 Autoscroll feature automatically scrolls the Diagram whenever the node or connector is beyond the boundary of the diagram, so that, it is always visible during dragging, resizing, and multiple selection operations.
 
@@ -174,9 +174,7 @@ The scroll limit allows you to scroll the diagram page along X and Y axes based 
 * By default, the value is set to infinity to scroll in all directions without any restriction. 
 * When scroll limit is set as diagram, you are restricted to scroll the page beyond the diagram content. 
 * By specifying the value as limited, you can set the limit of the scrollable area through scrollable area property. 
-> 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Page-Settings_images/Page-Settings_img3.png) | markdownify }
-{:.image }
+
 _Note: Refer to the scrollable area for more details._
 
 The following code example illustrates how to specify scroll limit. 
@@ -223,7 +221,7 @@ DiagramContent.PageSettings.ScrollLimit=
 
 
 
-{ ![](Page-Settings_images/Page-Settings_img4.png) | markdownify }
+ ![](Page-Settings_images/Page-Settings_img4.png) 
 {:.image }
 
 

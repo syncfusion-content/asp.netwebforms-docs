@@ -7,7 +7,7 @@ control: TreeMap
 documentation: ug
 ---
 
-## Customization
+# Customization
 
 TreeMap control supports color customization to determine the exact combination of colors for tree nodes displayed in TreeMap and tooltip support to display additional information of treemap data.
 
@@ -30,6 +30,7 @@ You can color, all the leaf nodes with the same color by setting the color value
 
 
 
+{% highlight html %}
 
  [ASPX]
 
@@ -39,9 +40,10 @@ You can color, all the leaf nodes with the same color by setting the color value
 
 &lt;/ej:Treemap&gt;
 
+{% endhighlight  %}
 
 
-{ ![](Customization_images/Customization_img1.png) | markdownify }
+![](Customization_images/Customization_img1.png) 
 {:.image }
 
 
@@ -54,6 +56,7 @@ You can group the leaf nodes based on the range of the data’s color values. Yo
 
 
 
+{% highlight html %}
 
 [ASP]
 
@@ -78,8 +81,9 @@ You can group the leaf nodes based on the range of the data’s color values. Yo
 &lt;/ej:Treemap&gt;
 
 
+{% endhighlight  %}
 
-{ ![](Customization_images/Customization_img2.png) | markdownify }
+![](Customization_images/Customization_img2.png) 
 {:.image }
 
 
@@ -92,6 +96,7 @@ You can differentiate all the leaf nodes using the DesaturationColorMapping prop
 
 
 
+{% highlight html %}
 
 [ASP]
 
@@ -105,10 +110,10 @@ You can differentiate all the leaf nodes using the DesaturationColorMapping prop
 
 &lt;/ej:TreeMap&gt;
 
+{% endhighlight %}
 
 
-{ ![](Customization_images/Customization_img3.png) | markdownify }
-{:.image }
+![](Customization_images/Customization_img3.png)
 
 
 Tooltip
@@ -122,6 +127,7 @@ You can customize the Leaf level TreeMapitems using LeafItemsSetting. The Label 
 
 
 
+{% highlight html %}
 
 [ASP]
 
@@ -178,8 +184,8 @@ You can customize the Leaf level TreeMapitems using LeafItemsSetting. The Label 
     &lt;/div&gt;
 
 
+{% endhighlight %}
 
-{ ![](Customization_images/Customization_img4.png) | markdownify }
-{:.image }
+![](Customization_images/Customization_img4.png)
 
 

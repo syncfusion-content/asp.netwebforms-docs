@@ -17,11 +17,11 @@ The ASP.NET DatePicker provides you support to display a calendar within your we
 
 The following screenshot illustrates the functionality of a DatePicker with date range of maximum 60 days. You can select a date for Onward and Return journeys ranging for a period of 60 days from the current day. This avoids selecting a journey date prior to the current date.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img1.png) 
 {:.image }
 
 
-Create a DatePicker 
+### Create a DatePicker 
 
 ASP.NET DatePicker control basically renders with built-in features such as keyboard navigation, months navigation with animations and flexible API’s. You can easily create the DatePicker control by using simple input textbox element as follows.
 
@@ -143,11 +143,11 @@ The following screenshot displays the DatePicker control.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img2.png) 
 {:.image }
 
 
-Set the Min and Max Date
+### Set the Min and Max Date
 
 In a real-time ticket booking scenario, the booking is open only for a limited number of days. You have to select a date from the given range. This can be achieved by using the properties MinDate and MaxDate. In this way, only those dates ranging between the MinDate and MaxDate are enabled in the DatePicker.
 
@@ -197,17 +197,17 @@ The following screenshot displays the output of the above code example.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img3.png) 
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img4.png) 
 {:.image }
 
 
-Set Event to Process the Min and Max Date Validations
+### Set Event to Process the Min and Max Date Validations
 
 You can select the “Onward journey date” in the first DatePicker and then the “Return journey date” in the second DatePicker. The validation process is done after the selection of “Onward Journey date” and the changes are reflected in the “Return Date” selection DatePicker. You can manipulate this process in the “ClientSideOnSelect” Event of Onward Date Selection DatePicker. 
 
@@ -295,7 +295,7 @@ You can run the above code and achieve the desired result. By selecting the onwa
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img5.png) 
 {:.image }
 
 
@@ -303,7 +303,7 @@ By using the min/max date range property, you can select a date within a given r
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img6.png) 
 {:.image }
 
 

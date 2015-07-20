@@ -7,9 +7,9 @@ control: DatePicker
 documentation: ug
 ---
 
-## Miscellaneous
+# Miscellaneous
 
-### Define height
+## Define height
 
 It specifies the Height of the DatePicker input text. The Height property allows you to set the maximum Height of the DatePicker. The value set to this property should be string or Numer type.
 
@@ -25,7 +25,7 @@ In the ASPX page, include the following DatePicker control code example to confi
 
 {% endhighlight %}
 
-### Define width
+## Define width
 
 It specifies the Width of the DatePicker input text. The Width property allows you to set the maximum Width of the DatePicker. The value set to this property should be string or Numer type
 
@@ -45,7 +45,7 @@ In the ASPX page, include the following DatePicker control code example to confi
 
 {% endhighlight %}
 
-### Highlight Section
+## Highlight Section
 
 Highlight section highlights the current month, current week, current workdays. You can highlight a week, month, and work days by using HighlightSection property.
 
@@ -85,13 +85,13 @@ In the ASPX page, include the following DatePicker control code example to highl
 
 The following screenshot displays the output for the above code.   
 
-{ ![](Miscellaneous_images/Miscellaneous_img1.png) | markdownify }
+![](Miscellaneous_images/Miscellaneous_img1.png) 
 {:.image }
 
 
 
 
-### ReadOnly
+## ReadOnly
 
 Readonly property indicates that the DatePicker value can only be read. You cannot edit the value in DatePicker and also the DatePicker calendar popup is not shown. By default, ReadOnly Boolean value is set to false.
 
@@ -109,7 +109,7 @@ In the ASPX page, include the following DatePicker control code example to enabl
 
 {% endhighlight %}
 
-### Show Footer
+## Show Footer
 
 It allows to Show Footer in the DatePicker calendar to select today date. By default, ShowFooter property is set to true in the DatePicker control. You can hide footer in the DatePicker when this property is set to false.
 
@@ -131,11 +131,11 @@ In the ASPX page, include the following DatePicker control code example to hide 
 
 
 
-{ ![](Miscellaneous_images/Miscellaneous_img2.png) | markdownify }
+![](Miscellaneous_images/Miscellaneous_img2.png) 
 {:.image }
 
 
-### Show popup button
+## Show popup button
 
 It shows the date icon button at right side of the textbox and the DatePicker popup by clicking on it. This can be achieved by using the ShowPopupButton property. By default, ShowPopupButton property is set to true in the DatePicker control. 
 
@@ -157,11 +157,11 @@ The following screenshot displays the output for the above code.
 
 
 
-{ ![](Miscellaneous_images/Miscellaneous_img3.png) | markdownify }
+![](Miscellaneous_images/Miscellaneous_img3.png)
 {:.image }
 
 
-### Show rounded corner
+## Show rounded corner
 
 DatePicker input is displayed in a rounded corner style, when this property is set to true. By default, ShowRoundedCorner property is set to false in the DatePicker control.
 
@@ -181,11 +181,11 @@ In the ASPX page, include the following DatePicker control code example to enabl
 
 The following screenshot displays the output for the above code.
 
-{ ![](Miscellaneous_images/Miscellaneous_img4.png) | markdownify }
+ ![](Miscellaneous_images/Miscellaneous_img4.png)
 {:.image }
 
 
-### Show ToolTip
+## Show ToolTip
 
 DatePicker Tooltip is displayed while you hover the date. By default, ShowTooltip property is set to true in the DatePicker control.
 
@@ -207,7 +207,7 @@ The following screenshot displays the output for the above code.
 
 
 
-{ ![](Miscellaneous_images/Miscellaneous_img5.png) | markdownify }
+![](Miscellaneous_images/Miscellaneous_img5.png)
 {:.image }
 
 

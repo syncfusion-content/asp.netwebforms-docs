@@ -7,7 +7,7 @@ control: TreeGrid
 documentation: ug
 ---
 
-## Toolbar
+# Toolbar
 
 TreeGrid control contains toolbar options for adding, deleting and editing the records. You can customize the TreeGrid Toolbar tools by using ToolbarSettings API. 
 
@@ -52,7 +52,7 @@ You can enable toolbar for TreeGrid, using the following code example.
 
 The following screenshot displays the toolbar option in TreeGrid control
 
-{ ![](Toolbar_images/Toolbar_img1.png) | markdownify }
+![](Toolbar_images/Toolbar_img1.png) 
 {:.image }
 
 

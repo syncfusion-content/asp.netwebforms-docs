@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-## Localization 
+# Localization 
 
 Localization is the process of providing controls in different cultures to help you set your own culture easily.
 
@@ -61,7 +61,7 @@ ej.datavisualization.Diagram.Locale["es-ES"] = {
 
 
 
-{ ![](Localization_images/Localization_img1.png) | markdownify }
+![](Localization_images/Localization_img1.png) 
 {:.image }
 
 

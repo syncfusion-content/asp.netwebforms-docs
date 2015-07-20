@@ -7,9 +7,9 @@ control: Menu
 documentation: ug
 ---
 
-## Behavior Settings 
+# Behavior Settings 
 
-### Height
+## Height
 
 Specifies the Height of the root menu. You can customize the height of the Menu control by using height property. 
 
@@ -135,7 +135,7 @@ You can specify the height of the Menu control in the ASPX page as follows.
 
 
 
-### Width
+## Width
 
 Specifies the Width of the main menu. You can customize the height of the Menu control by using width property.
 
@@ -259,7 +259,7 @@ You can specify the width of the Menu control in the ASPX page as follows.
 
 {% endhighlight %}
 
-### Open on click
+## Open on click
 
 Specifies the sub menu items to show or open only on click operation. It accepts the Boolean value. Its default value is false. When you set “OpenOnClick” property to true then the submenu items open only on click. By default the submenu opens when you hover on menu items.
 
@@ -387,11 +387,11 @@ Add the following code example in the ASPX page.
 
 Output screenshot for the above code example is as follows.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img1.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img1.png) 
 {:.image }
 
 
-### Animation
+## Animation
 
 AnimationType is used to enable or disable the Animation while hover or click on menu items. Its value type is string. It accepts two values such as “None” and “Default”. Support to disable the Animation Type while hover or click on menu items is none. Support to enable the AnimationType while hover or click on menu items is default. 
 
@@ -519,11 +519,11 @@ Add the following code example in the ASPX page.
 
 Output screenshot for the above code example is as follows.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img2.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img2.png) 
 {:.image }
 
 
-### Title text
+## Title text
 
 Specifies the title to the responsive menu. You can provide title to the Menu control by using TitleText property. 
 
@@ -651,11 +651,11 @@ You can specify the title of the Menu control in the ASPX page as follows.
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img3.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img3.png) 
 {:.image }
 
 
-### Show root level arrows
+## Show root level arrows
 
 Specifies the main menu items arrows only to be displayed when it contains child menu items. You can use “ShowRooltLevelArrows” property to show the arrows of main menu items only when it contains child menu items. This property accepts Boolean value. Its default value is true. 
 
@@ -783,11 +783,11 @@ Add the following code example in the ASPX page.
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img4.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img4.png) 
 {:.image }
 
 
-### Show sub level arrows
+## Show sub level arrows
 
 Specifies the sub menu items arrows only to be displayed when it contains child menu items. You can use “ShowSubLevelArrows” property to show the arrows of sub menu items only when it contains child menu items. This property accepts Boolean value. Its default value is true. 
 
@@ -917,7 +917,7 @@ Add the following code example in the ASPX page.
 
 The following screenshot display the output of the above code example.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img5.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img5.png) 
 {:.image }
 
 

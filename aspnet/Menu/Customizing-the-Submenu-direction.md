@@ -7,7 +7,7 @@ control: Menu
 documentation: ug
 ---
 
-## Customizing the Submenu direction
+# Customizing the Submenu direction
 
 You can customize the direction to open the sub menu items by using SubMenuDirection property. SubMenuDirection accepts the type as string or enum. It accepts the value as “Left” and “Right”. 
 
@@ -415,7 +415,7 @@ Add the following code example in your ASPX page.
 
 The output for the above code example is as follows.
 
-{ ![](Customizing-the-Submenu-direction_images/Customizing-the-Submenu-direction_img1.png) | markdownify }
+![](Customizing-the-Submenu-direction_images/Customizing-the-Submenu-direction_img1.png) 
 {:.image }
 
 
@@ -551,7 +551,7 @@ Add the following code example in your style section.
 
 The output for the above code example is as follows.
 
-{ ![](Customizing-the-Submenu-direction_images/Customizing-the-Submenu-direction_img2.png) | markdownify }
+![](Customizing-the-Submenu-direction_images/Customizing-the-Submenu-direction_img2.png) 
 {:.image }
 
 

@@ -7,7 +7,7 @@ control: Tab
 documentation: ug
 ---
 
-## Server Side Event
+# Server Side Event
 
 The following server side event is available in the Tab control.
 

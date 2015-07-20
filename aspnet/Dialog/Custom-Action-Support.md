@@ -7,11 +7,11 @@ control: Dialog
 documentation: ug
 ---
 
-## Custom Action Support
+# Custom Action Support
 
 The Dialog provides custom action buttons such as close, collapsible, maximize, minimize, and pin. You can set the action buttons as per your requirement in the Dialog.
 
-### Configure Custom Action
+## Configure Custom Action
 
 The following steps show how to implement custom action. 
 
@@ -45,7 +45,7 @@ In the ASPX page, add the Dialog control and assign the ActionButtons value.
 
 The following is the output of ActionButtons in Dialog control.
 
-{ ![](Custom-Action-Support_images/Custom-Action-Support_img1.png) | markdownify }
+![](Custom-Action-Support_images/Custom-Action-Support_img1.png)
 {:.image }
 
 

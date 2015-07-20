@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-## Tools
+# Tools
 
 When interacting on a diagram’s surface, the Tool property decides the action to be performed. When more than one tool is applied by using bitwise, OR, the necessary tool is picked based on the interaction gesture, the value of Tool property and precedence.
 
@@ -98,7 +98,7 @@ DiagramContent.Tool = Tool.SingleSelect| Tool.ZoomPan;
 
 {% endhighlight %}
 
-### Drawing Tools
+## Drawing Tools
 
 Drawing tool allows you to draw any node during runtime by clicking and dragging the diagram page. To draw a node by using the drawing tool, the required node is assigned to the drawType property.
 
@@ -148,7 +148,7 @@ tool: ej.datavisualization.Diagram.Tool.DrawOnce
 
 
 
-{ ![](Tools_images/Tools_img1.png) | markdownify }
+ ![](Tools_images/Tools_img1.png) 
 {:.image }
 
 
@@ -200,7 +200,7 @@ tool: ej.datavisualization.Diagram.Tool.DrawOnce
 
 
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image682_23.jpg](Tools_images/Tools_img2.jpeg) | markdownify }
+ ![http://help.syncfusion.com/ug/js/ImagesExt/image682_23.jpg](Tools_images/Tools_img2.jpeg) 
 {:.image }
 
 

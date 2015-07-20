@@ -7,7 +7,7 @@ control: Tab
 documentation: ug
 ---
 
-## Appearance and Styling
+# Appearance and Styling
 
 ### Header Image Customization
 
@@ -101,11 +101,11 @@ Add the following CSS for header image customization.
 
 The following screenshot illustrates the Tab with the customized header image. 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 {:.image }
 
 
-### Rounded corners
+## Rounded corners
 
 By enabling the ShowRoundedCorner property, you can customize the shape of the Tab control from regular rectangular shape to rounded rectangle shape that is set to false, by default. 
 
@@ -157,11 +157,11 @@ Add the following ASPX to render Tab with Rounder corners.
 
 The following screenshot illustrates the Tab with Rounded corners.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
 {:.image }
 
 
-### Enable/Disable
+## Enable/Disable
 
 You can Enable or Disable the Tab control by the Enabled property. By default, the property set to true.
 
@@ -201,11 +201,11 @@ Add the following ASPX to render the Tab with Enable/Disable.
 
 The following screenshot illustrates the Tab with disabled format.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
 {:.image }
 
 
-### Enabling Reload Icon
+## Enabling Reload Icon
 
 Without refreshing/reloading the whole page, you can reload a particular Tab by using the Reload icon. The Reload icon appears at the right corner of the Tab by enabling the property, ShowReloadIcon to true. When you move the cursor over the Tab headers, the Reload icon is displayed. By default, the property value is set to false.   
 
@@ -251,11 +251,11 @@ Add the following ASPX to render the Tab with Reload icon.
 
 The following screenshot illustrates the Tab with reload icon.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 {:.image }
 
 
-### Collapsible Tabs
+## Collapsible Tabs
 
 You can collapse the Tab content by setting the Collapsible property to true. When the property is set to true, click the active Tab header, and the Tab contents are hidden. By default, the property value is set to false.
 
@@ -299,13 +299,13 @@ Add the following ASPX to render Tab with customized Collapsible mode.
 
 The following screenshot illustrates the Tab with customized collapsible mode.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png) 
 {:.image }
 
 
-### Adjusting Tab Size
+## Adjusting Tab Size
 
-#### Height Adjust Mode and Height
+### Height Adjust Mode and Height
 
 The height of the Tab control is customized by Height property. The Tab control’s Height depends on the HeightAdjustMode property. By using the HeightAdjustMode property, you can adjust the Height by Content, Auto, and Fill. By default, the HeightAdjustMode is set to content.
 
@@ -357,11 +357,11 @@ Add the following ASPX to render Tab with customized height and height adjust mo
 
 The following screenshot illustrates the Tab with customized height and height adjust mode.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png) 
 {:.image }
 
 
-#### Width
+### Width
 
 The Width of the Tab control is customized by using the Width property that accepts only the pixel values.
 
@@ -405,11 +405,11 @@ Add the following ASPX to render the Tab with customized Width.
 
 The following screenshot illustrates the Tab with customized Width.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img7.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img7.png) 
 {:.image }
 
 
-### Theme
+## Theme
 
 Tab control’s style and appearance are controlled based on the CSS classes. In order to apply styles to the Tab control, you can refer to the files, ej.controls.core.min.css and ej.theme.min.css. When the file ej.controls.all.min.css is referred, it is not necessary to include the files ej.controls.core.min.css and ej.theme.min.css in your project, as ej.controls.all.min.css is the combination of these two files. 
 
@@ -429,7 +429,8 @@ By default, there are 13 themes available for Tab control,
 * gradient-saffron
 * gradient-saffron-dark
 * bootstrap-theme
-### Custom styles
+
+## Custom styles
 
 
 The style of the Tab control is customized by the CssClass property. 
@@ -494,7 +495,7 @@ Add the following styles
 
 The following screenshot illustrates the Tab with customized style.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img8.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img8.png) 
 {:.image }
 
 

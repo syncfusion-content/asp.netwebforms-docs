@@ -7,7 +7,7 @@ control: Tab
 documentation: ug
 ---
 
-## RTL Support
+# RTL Support
 
 Tab control provides support to load contents in the right to left format. This is achieved by setting the EnableRTL property to true.
 
@@ -57,7 +57,7 @@ Add the following ASPX to render the Tab with the RTL format.
 
 The following screenshot illustrates the Tab with the RTL format.
 
-{ ![](RTL-Support_images/RTL-Support_img1.png) | markdownify }
+![](RTL-Support_images/RTL-Support_img1.png) 
 {:.image }
 
 

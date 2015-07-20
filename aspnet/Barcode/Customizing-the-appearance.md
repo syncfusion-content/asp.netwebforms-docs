@@ -51,7 +51,7 @@ Execute the above code to render the following output.
 {:.image }
 
 
-_Figure 4: Customized Barcode_
+_Figure_ _4: Customized Barcode_
 
 The height of the barcode can be changed using the BarHeight property. The equivalent property to change the block size for two dimensional barcode is XDimension.
 
@@ -88,7 +88,7 @@ Execute the above code to render the following output.
 {:.image }
 
 
-_Figure 5: Barcode with customized height_
+_Figure_ _5: Barcode with customized height_
 
 
 

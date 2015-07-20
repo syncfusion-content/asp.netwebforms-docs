@@ -7,9 +7,9 @@ control: TimePicker
 documentation: ug
 ---
 
-## Behaviour Settings
+# Behaviour Settings
 
-### Set value of the TimePicker Control
+## Set value of the TimePicker Control
 
 You can use Value property to set default time for the TimePicker.
 
@@ -31,11 +31,11 @@ In the ASPX page, include the following TimePicker control code example.
 
 Run the above code to render the following output.
 
-{ ![](Behaviour-Settings_images/Behaviour-Settings_img1.png) | markdownify }
+ ![](Behaviour-Settings_images/Behaviour-Settings_img1.png) 
 {:.image }
 
 
-### Enable/Disable TimePicker Control
+## Enable/Disable TimePicker Control
 
 TimePicker control provides you an option to enable /disable the control. You can disable the TimePicker by setting the Enabled property value to false.
 
@@ -61,18 +61,17 @@ Run the above code to render the following output.
 <table>
 <tr>
 <td>
-![](Behaviour-Settings_images/Behaviour-Settings_img2.png)
-{:.image }
+{{ '![](Behaviour-Settings_images/Behaviour-Settings_img2.png)' | markdownify }}
 </td><td>
-![](Behaviour-Settings_images/Behaviour-Settings_img3.png)
-{:.image }
+{{ '![](Behaviour-Settings_images/Behaviour-Settings_img3.png)' | markdownify }}
 </td></tr>
 </table>
-### Restrict editing
+
+## Restrict editing
 
 TimePicker control provides ReadOnly property to disable editing in the control. Therefore, you can only read the value that is set to the TimePicker and cannot modify it. The value property allows you to set the default value for the TimePicker control when it is created.
 
-#### Configure TimePicker textbox to restrict editing
+### Configure TimePicker textbox to restrict editing
 
 The following step allows you to disable editing value in the TimePicker.
 
@@ -92,11 +91,11 @@ In the ASPX page, include the following TimePicker control code example.
 
 The following screenshot illustrates aTimePicker textbox configured to restrict editing.
 
-{ ![](Behaviour-Settings_images/Behaviour-Settings_img4.png) | markdownify }
+![](Behaviour-Settings_images/Behaviour-Settings_img4.png) 
 {:.image }
 
 
-### Localization
+## Localization
 
 Localization is a language support based on the culture in the TimePicker. You can achieve Localization by using Locale property in the TimePicker.
 
@@ -112,7 +111,7 @@ You can refer to the following online link reference for globalize.culture.js,
 
 You can dynamically change the language based on their culture.
 
-### Enable Localization Support
+## Enable Localization Support
 
 The following step explains you how to enable Localization property for the TimePicker.
 
@@ -132,7 +131,7 @@ In the ASPX page, include the following TimePicker control and configure the Loc
 
 Run the above code to render the following output.
 
-{ ![](Behaviour-Settings_images/Behaviour-Settings_img5.png) | markdownify }
+![](Behaviour-Settings_images/Behaviour-Settings_img5.png) 
 {:.image }
 
 
@@ -140,7 +139,7 @@ Run the above code to render the following output.
 
 You can customize the shape of the TimePicker control from regular rectangular shape to rounded rectangle shape by using the ShowRoundedCornerproperty set to false by default.
 
-#### Configure Rounded corner to TimePicker Text box
+### Configure Rounded corner to TimePicker Text box
 
 In the ASPX page, include the following TimePicker control code example to enable the rounded corner.
 
@@ -160,7 +159,7 @@ The following screenshot illustrates a TimePicker when ShowRoundedCorner is set 
 
 
 
-{ ![](Behaviour-Settings_images/Behaviour-Settings_img6.png) | markdownify }
+![](Behaviour-Settings_images/Behaviour-Settings_img6.png) 
 {:.image }
 
 

@@ -7,13 +7,13 @@ control: Toggle Button
 documentation: ug
 ---
 
-## Easy Customization
+# Easy Customization
 
 The Toggle Button allows you to perform the toggle option by using checked and unchecked state. You can also provide image with text or image alone for a Toggle Button by using the properties of ToggleButton. The Toggle Button control displays images by using the sprite CSS and Image Position properties.
 
 Toggle Button is used in all applications. Toggle Button size, content, and content location varies according to each application. The following section contains some customizable options for the Toggle Button. 
 
-### Toggle State
+## Toggle State
 
 Toggle Button has two states, off and on, in a switch. By default, you can set any state initially and then you can move from one state to another by clicking the Toggle Button. These two states are Default and Active. ToggleState property is used toset the state of Toggle Button as default state or active state.
 
@@ -43,13 +43,13 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
 Run the above code to render the following output.
 
-{ ![](Easy-Customization_images/Easy-Customization_img1.png) | markdownify }
+ ![](Easy-Customization_images/Easy-Customization_img1.png) 
 {:.image }
 
 
-### Toggle state with icons
+## Toggle state with icons
 
-#### Prefix and Suffix Icons
+### Prefix and Suffix Icons
 
 You can add prefix and suffix icons to the Toggle Button. Location of Icon is customized easily by using the following mentioned option. This is applicable for the content type’s ImageOnly, TextAndImage, ImageTextImage and ImageBoth.
 
@@ -65,12 +65,13 @@ For example, the following mentioned build-in CSS classes are used to show the f
 * e-mediaclose
 * e-mediapause
 * e-mediaplay
-##### Prefix Icon
+
+#### Prefix Icon
 
 
 It inserts the icon at the start of the Toggle Button. After this prefix icon, you can use text or suffix icon.
 
-##### Suffix Icon
+#### Suffix Icon
 
 It inserts the icon at the end of the Toggle Button. Before this suffix icon, you can use text or prefix icon.
 
@@ -132,15 +133,15 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
 Run the above code to render the following output.
 
-{ ![](Easy-Customization_images/Easy-Customization_img2.png) | markdownify }
+![](Easy-Customization_images/Easy-Customization_img2.png)
 {:.image }
 
 
-{ ![](Easy-Customization_images/Easy-Customization_img3.png) | markdownify }
+ ![](Easy-Customization_images/Easy-Customization_img3.png) 
 {:.image }
 
 
-### Toggle Button size
+## Toggle Button size
 
 You can render the Toggle Button in different sizes. You can use some predefined size options for rendering a Toggle Button easily. Each size option has different height and width. It mainly avoids the complexity in rendering Toggle Button with complex CSS class. You can mention the Size of the Toggle Button by using the following five predefined size options. 
 
@@ -220,11 +221,11 @@ ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIco
 
 Run the above code to render the following output.
 
-{ ![](Easy-Customization_images/Easy-Customization_img4.png) | markdownify }
+![](Easy-Customization_images/Easy-Customization_img4.png) 
 {:.image }
 
 
-### Content type
+## Content type
 
 The content of the Toggle Button is mainly text and images. Instead of using complex CSS classes to render the Toggle Button with different content types, you can use some predefined content type options as listed in the following table. Using this content type you can easily add different types of content for Toggle Button. The Toggle Button supports the following content types.
 
@@ -368,7 +369,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
 Execute the above code to render the following output.
 
-{ ![](Easy-Customization_images/Easy-Customization_img5.png) | markdownify }
+[](Easy-Customization_images/Easy-Customization_img5.png) 
 {:.image }
 
 
@@ -536,7 +537,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
 Run the above code to render the following output.
 
-{ ![](Easy-Customization_images/Easy-Customization_img6.png) | markdownify }
+![](Easy-Customization_images/Easy-Customization_img6.png) 
 {:.image }
 
 

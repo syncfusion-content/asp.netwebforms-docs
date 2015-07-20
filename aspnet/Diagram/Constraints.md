@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-## Constraints
+# Constraints
 
 Diagram provides support to enable or disable certain Diagram behaviors.
 

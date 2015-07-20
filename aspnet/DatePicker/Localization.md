@@ -7,7 +7,7 @@ control: DatePicker
 documentation: ug
 ---
 
-## Localization
+# Localization
 
 Localization is a language support based on the culture in the DatePicker. You can achieve the Localization by using Locale property in the DatePicker.
 
@@ -43,7 +43,7 @@ The following screenshot displays the output for the above code.
 
 
 
-{ ![](Localization_images/Localization_img1.png) | markdownify }
+![](Localization_images/Localization_img1.png)
 {:.image }
 
 

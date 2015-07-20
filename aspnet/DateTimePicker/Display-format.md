@@ -7,9 +7,9 @@ control: DateTimePicker
 documentation: ug
 ---
 
-## Display format
+# Display format
 
-### DateTime format
+## DateTime format
 
 DateTimePicker allows you to define the text representation of a date and time value to be displayed in the DateTimePicker control. The format specified is achieved by the DateTimeFormat property. Default value of this property is M/d/yyyy h: mm tt. To change the Time Popup display format, TimeDisplayFormat is used here. The default value of this property is h:mm t. 
 
@@ -74,13 +74,13 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 
 
-{ ![](Display-format_images/Display-format_img1.png) | markdownify }
+![](Display-format_images/Display-format_img1.png) 
 {:.image }
 
 
 
 
-### Day Header format
+## Day Header format
 
 You can change the format for the days of the week by using the Day Header format property. By default, in our DateTimePicker, day of the week format is in the ShowHeaderMin format. For example, Sun for Sunday. To know the different types of day format refer to the following table.
 
@@ -122,7 +122,7 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 
 
-{ ![](Display-format_images/Display-format_img2.png) | markdownify }
+![](Display-format_images/Display-format_img2.png) 
 {:.image }
 
 

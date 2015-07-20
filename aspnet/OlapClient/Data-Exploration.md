@@ -7,7 +7,7 @@ control: OLAP Client
 documentation: ug
 ---
 
-## Data Exploration
+# Data Exploration
 
 OLAP Client component allows its members to be sliced and diced. 
 
@@ -17,7 +17,7 @@ Sorting: Members can be arranged by their value based on condition resulting in 
 
 Grouping: Allows you to place more than one dimension on rows or columns. You can see one row for every combination of the members from each of the dimensions. 
 
-### Filtering 
+## Filtering 
 
 Filtering by Member
 
@@ -25,7 +25,7 @@ After you click Split Button, Member Editor Dialog opens and through that you ca
 
 
 
-{ ![](Data-Exploration_images/Data-Exploration_img1.png) | markdownify }
+![](Data-Exploration_images/Data-Exploration_img1.png) 
 {:.image }
 
 
@@ -67,13 +67,13 @@ The following screenshot displays the Filtering Dialog box.
 
 
 
-{ ![Description: http://help.syncfusion.com/ug/js/ImagesExt/image19_31.png](Data-Exploration_images/Data-Exploration_img2.png) | markdownify }
+![Description: http://help.syncfusion.com/ug/js/ImagesExt/image19_31.png](Data-Exploration_images/Data-Exploration_img2.png) 
 {:.image }
 
 
 The following screenshot displays data before Filtering.
 
-{ ![](Data-Exploration_images/Data-Exploration_img3.png) | markdownify }
+![](Data-Exploration_images/Data-Exploration_img3.png) 
 {:.image }
 
 
@@ -81,11 +81,11 @@ The following screenshot displays the data after Filtering.
 
 
 
-{ ![](Data-Exploration_images/Data-Exploration_img4.png) | markdownify }
+![](Data-Exploration_images/Data-Exploration_img4.png) 
 {:.image }
 
 
-### Sorting
+## Sorting
 
 Sorting By Value
 
@@ -115,7 +115,7 @@ The following screenshot displays the Sorting and Filtering dialog box.
 
 
 
-{ ![Description: http://help.syncfusion.com/ug/js/ImagesExt/image19_28.png](Data-Exploration_images/Data-Exploration_img5.png) | markdownify }
+![Description: http://help.syncfusion.com/ug/js/ImagesExt/image19_28.png](Data-Exploration_images/Data-Exploration_img5.png) 
 {:.image }
 
 
@@ -157,11 +157,11 @@ The following screenshot displays the Sorting and Filtering dialog box.
 
 The following screenshot displays the data before sorting.
 
-{ ![](Data-Exploration_images/Data-Exploration_img6.png) | markdownify }
+ ![](Data-Exploration_images/Data-Exploration_img6.png) 
 {:.image }
 
 
-__
+
 
 
 
@@ -193,17 +193,17 @@ __
 
 The following screenshot displays the data after sorting.
 
-{ ![](Data-Exploration_images/Data-Exploration_img7.png) | markdownify }
+![](Data-Exploration_images/Data-Exploration_img7.png) 
 {:.image }
 
 
-### Grouping
+## Grouping
 
 The data can be grouped when more than one dimension element is dropped into Categorical or Series in Axis Element Builder based on the order of addition, data is grouped and the report is updated. In the following example, the customer dimension values get grouped, with respect to date dimension values, likewise you can group multiple dimension values by dragging the elements from Cube Dimension Browsers to Axis Element Builder and the report values get updated according to it.
 
 
 
-{ ![](Data-Exploration_images/Data-Exploration_img8.png) | markdownify }
+![](Data-Exploration_images/Data-Exploration_img8.png) 
 {:.image }
 
 

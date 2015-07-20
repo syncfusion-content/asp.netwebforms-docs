@@ -7,13 +7,14 @@ control: OLAP Client
 documentation: ug
 ---
 
-## Exporting
+# Exporting
 
 The content in the OLAP Client control can be exported to Excel, Word and PDF documents.
 
-{ ![](Exporting_images/Exporting_img1.png) | markdownify }
+ ![](Exporting_images/Exporting_img1.png) 
 {:.image }
 
+{% highlight html %}
 
 Exporting feature provides you a mode option that allows you to export either OlapChart or PivotGrid or both. The following code example explains the same. 
 
@@ -23,7 +24,7 @@ Exporting feature provides you a mode option that allows you to export either Ol
 
 &lt;/ej:OlapClient&gt;
 
-
+{% endhighlight %}
 
 The ClientExportModeproperty takes any one of the following value:
 
@@ -32,6 +33,8 @@ The ClientExportModeproperty takes any one of the following value:
 3. GridOnly – Exports the PivotGrid control alone.
 
 The following code example of service method needs to be added in-order to perform exporting in the OlapClient.
+
+{% highlight C#%}
 
 public void Export(Stream stream)
 
@@ -51,17 +54,18 @@ public void Export(Stream stream)
 
 }
 
+{% endhighlight %}
 
 
-{ ![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/OlapClientExcelWeb.png](Exporting_images/Exporting_img2.png) | markdownify }
+![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/OlapClientExcelWeb.png](Exporting_images/Exporting_img2.png) 
 {:.image }
 
 
-{ ![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/OlapClientWordWeb.png](Exporting_images/Exporting_img3.png) | markdownify }
+![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/OlapClientWordWeb.png](Exporting_images/Exporting_img3.png) 
 {:.image }
 
 
-{ ![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/OlapClientPdfWeb.png](Exporting_images/Exporting_img4.png) | markdownify }
+![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/OlapClientPdfWeb.png](Exporting_images/Exporting_img4.png) 
 {:.image }
 
 

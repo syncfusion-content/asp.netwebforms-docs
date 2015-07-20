@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-## Serialization
+# Serialization
 
 Serialization is the process of saving and loading for state persistence of the Diagram.
 

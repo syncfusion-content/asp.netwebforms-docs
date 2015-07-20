@@ -7,11 +7,11 @@ control: Dialog
 documentation: ug
 ---
 
-## Multiple Dialog Support
+# Multiple Dialog Support
 
 The Dialog supports multiple controls in the same web page. You can use more number of Dialog controls with different content and different functionalities in the same web page.
 
-### Configure Multiple Dialog
+## Configure Multiple Dialog
 
 The following steps explain how to apply multiple Dialogs in the same web page. 
 
@@ -99,7 +99,7 @@ The following screenshot is displays multiple Dialog controls in the same page.
 
 
 
-{ ![](Multiple-Dialog-Support_images/Multiple-Dialog-Support_img1.png) | markdownify }
+![](Multiple-Dialog-Support_images/Multiple-Dialog-Support_img1.png) 
 {:.image }
 
 

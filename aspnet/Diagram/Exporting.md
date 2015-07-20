@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-## Exporting
+# Exporting
 
 You can export the Diagram to the following formats.
 
@@ -134,7 +134,7 @@ Format specifies the type/format of the exported file.
 
 It includes jpg, png, bmp, and svg.
 
-{ ![](Exporting_images/Exporting_img1.png) | markdownify }
+ ![](Exporting_images/Exporting_img1.png) 
 {:.image }
 
 

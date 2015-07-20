@@ -7,11 +7,11 @@ control: Menu
 documentation: ug
 ---
 
-## Orientation
+# Orientation
 
 Gets or sets the direction to render the Menu control.  Specifies the orientation of the normal menu.  According to the orientation property the Menu control renders in horizontal or vertical.
 
-### Horizontal Menu
+## Horizontal Menu
 
 Horizontal orientation displays the menu items horizontally and it is the default orientation behavior of menu control. The following steps explains the Horizontal orientation of Menu.
 
@@ -143,11 +143,11 @@ In the ASPX page, add the following code example to configure Menu control.
 
 The following screenshot displays the output of the above code example.        
 
-{ ![](Orientation_images/Orientation_img1.png) | markdownify }
+![](Orientation_images/Orientation_img1.png) 
 {:.image }
 
 
-### Vertical Menu
+## Vertical Menu
 
 Menu can also be rendered in vertical direction by using orientation. To set the vertical orientation of Menu control, replace the following script in the above code example.
 
@@ -275,7 +275,7 @@ Add the following code example in the ASPX page.
 
 The following screen shot displays the output of the above code example.                       
 
-{ ![](Orientation_images/Orientation_img2.png) | markdownify }
+![](Orientation_images/Orientation_img2.png) 
 {:.image }
 
 
