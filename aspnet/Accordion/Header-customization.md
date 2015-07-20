@@ -7,13 +7,13 @@ control: Accordion
 documentation: ug
 ---
 
-## Header customization
+# Header customization
 
-Collapsible
+## Collapsible
 
 Accordion control allows you to set Collapsible state for an Accordion header. Thus you can expand and collapse accordion contents. By default Collapsible is set to false.
 
-Enable Collapsible settings
+## Enable Collapsible settings
 
 The following steps explains to enable Collapsible state for Accordion.
 
@@ -78,15 +78,15 @@ In an ASPX page, define the Accordion control and add the contents correspondin
  Output for Accordion control with collapsible headers.
 
 
-{ ![](Header-customization_images/Header-customization_img1.png) | markdownify }
+ ![](Header-customization_images/Header-customization_img1.png)
 {:.image }
 
 
-Enable Header expand
+## Enable Header expand
 
 Accordion control provides you support to set the event, where the headers should expand and collapse. The Events properties takes default events like mouseout, mouseover, and click.
 
-Configure header expand event
+## Configure header expand event
 
 The following steps explains you to configure header expand event for Accordion.
 
@@ -147,17 +147,15 @@ In an ASPX page, define the Accordion control and add the contents correspond
 Output for Accordion control that expands header on mouseout event is as follows.
 
 
-{ ![](Header-customization_images/Header-customization_img2.png) | markdownify }
+ ![](Header-customization_images/Header-customization_img2.png)
 {:.image }
 
 
-Set selected header
-
-Single selection
+## Single selection
 
 BY using SelectedItemIndex property you can modify the expanded panel when the control is rendered. By default SelectedItemIndex is ‘0’ that always activate the first Accordion panel.
 
-Specify the selected item in Accordion panel
+### Specify the selected item in Accordion panel
 
 The following steps explains you to configure selected item for Accordion.
 
@@ -215,15 +213,15 @@ In an ASPX page, define the Accordion control and add the contents correspond
 
 Output for Accordion control with the selected item by index is as follows.
 
-{ ![](Header-customization_images/Header-customization_img3.png) | markdownify }
+ ![](Header-customization_images/Header-customization_img3.png)
 {:.image }
 
 
-Multiple selection
+## Multiple selection
 
 In Accordion control you can select multiple panel items by using SelectedItems property. It takes array of indices that needs to be selected on rendering the control. To select multiple items, you have to set EnableMultipleOpen to true.
 
-Configure multiple selection in Accordion panel
+### Configure multiple selection in Accordion panel
 
 The following steps explains to configure selected items for Accordion.
 
@@ -299,7 +297,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 Output for Accordion control with the multiple selected items is as follows.
 
-{ ![](Header-customization_images/Header-customization_img4.png) | markdownify }
+ ![](Header-customization_images/Header-customization_img4.png)
 {:.image }
 
 

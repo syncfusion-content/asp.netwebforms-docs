@@ -7,9 +7,9 @@ control: Button
 documentation: ug
 ---
 
-## Miscellaneous
+# Miscellaneous
 
-### Text
+## Text
 
 You can display your own text for Button. By using the Textproperty, you can easily set text content for button. This text property overwrites the text that is provided on input button element.
 
@@ -33,11 +33,11 @@ In the ASPX page, add the following button elements to configure Button with tex
 
 In the above code, the content of button “button” is replaced by the text value “Enter” that is given using the text property.
 
-{ ![](Miscellaneous_images/Miscellaneous_img1.png) | markdownify }
+![](Miscellaneous_images/Miscellaneous_img1.png)
 {:.image }
 
 
-### Show Rounded Corner
+## Show Rounded Corner
 
 Specifies the corner of button in round shape. By default button doesn’t have rounded corner. To set rounded corner, you can enable theShowRoundedCornerproperty.
 
@@ -59,7 +59,7 @@ ShowRoundedCorner="true">
 
 
 
-{ ![](Miscellaneous_images/Miscellaneous_img2.png) | markdownify }
+![](Miscellaneous_images/Miscellaneous_img2.png)
 {:.image }
 
 

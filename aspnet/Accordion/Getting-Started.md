@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started
 
-Create your first Accordion in ASP.NET
+## Create your first Accordion in ASP.NET
 
 The ASP.NET WebForms Accordion control allows you to provide multiple panes and display them one at a time. In this section, you can learn how the Accordion control is configured and how to customize it with various properties such as multiple open, rounded corner and icons for the Accordion header according to your requirement.
 
-Create a Simple Accordion
+## Create a Simple Accordion
 
 The following steps describe the creation of Accordion control.
 
@@ -177,11 +177,11 @@ The following steps describe the creation of Accordion control.
 
 Execute the above code sample to display the Accordion control with simple control list.
 
-{ ![C:/Users/Rajaveni/Desktop/JS Docs/Accordion/new/simple.PNG](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+ ![C:/Users/Rajaveni/Desktop/JS Docs/Accordion/new/simple.PNG](Getting-Started_images/Getting-Started_img1.png)
 {:.image }
 
 
-Configure Multiple Open
+## Configure Multiple Open
 
 You can open multiple Accordion tabs to view all products at a time. To render this, set the EnableMultipleOpen property of the Accordion control to true.
 
@@ -343,11 +343,11 @@ You can also open all the panels during initialization by using the SelectedItem
 
 Accordion control with EnableMultipleOpen property with value as true is illustrated in the following screenshot.
 
-{ ![C:/Users/Rajaveni/Desktop/JS Docs/Accordion/new/nround.PNG](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+ ![C:/Users/Rajaveni/Desktop/JS Docs/Accordion/new/nround.PNG](Getting-Started_images/Getting-Started_img2.png)
 {:.image }
 
 
-Setting Rounded corner
+## Setting Rounded corner
 
 Accordion control by default is renders in a regular rectangle. You can modify the regular rectangles with rounded corners by setting the ShowRoundedCorner property to “True”.
 
@@ -509,11 +509,11 @@ Accordion control by default is renders in a regular rectangle. You can modify t
 
 The following screenshot illustrates the Accordion control with rounded corners.
 
-{ ![C:/Users/Rajaveni/Desktop/JS Docs/Accordion/new/multt.PNG](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+ ![C:/Users/Rajaveni/Desktop/JS Docs/Accordion/new/multt.PNG](Getting-Started_images/Getting-Started_img3.png)
 {:.image }
 
 
-Customize Icon
+## Customize Icon
 
 You can customize the Header icon by using CustomIcon property. This property is having two features such as Header and SelectedHeader. By default, the classes of Header and SelectedHeader are e-collapse and e-expand respectively.
 
@@ -677,7 +677,7 @@ Up/Down arrow icons are available in e-arrowheadup and e- arrowheaddown classes 
 
 The following screenshot illustrates the customization of SelectedHeader and Header of the Accordion control.
 
-{ ![C:/Users/Rajaveni/Desktop/JS Docs/Accordion/ssssssssssssss.PNG](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+ ![C:/Users/Rajaveni/Desktop/JS Docs/Accordion/ssssssssssssss.PNG](Getting-Started_images/Getting-Started_img4.png)
 {:.image }
 
 

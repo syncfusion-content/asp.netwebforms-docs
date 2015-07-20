@@ -17,7 +17,7 @@ In this ASP.NET section use the flat-lime as the default theme.
 
 The following screenshot illustrates the AutoComplete control that searches the list of components available in the database.
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image88_12.png](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+[http://help.syncfusion.com/ug/js/ImagesExt/image88_12.png](Getting-Started_images/Getting-Started_img1.png) 
 {:.image }
 
 
@@ -49,15 +49,15 @@ Execute the above code to create the AutoComplete textbox as illustrated in th
 
 
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image88_13.png](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image88_13.png](Getting-Started_images/Getting-Started_img2.png)
 {:.image }
 
 
-### Populate Data to AutoComplete
+## Populate Data to AutoComplete
 
 The data provided to the AutoComplete customizes the list of Data either locally or remotely. 
 
-#### Remote Data Binding
+### Remote Data Binding
 
 You can assign the required Data from the remote URL to the DataSource property in codebehind file. You can also generate a query to get the required Data from the remote file by using Queryproperty and define the query to get the remote Data. By using DataTextFieldandDataUniqueKeyField property, you can map the Data fields to the textbox as illustrated in the following code example.
 
@@ -107,13 +107,13 @@ DataTextField="ComponentName" DataUniqueKeyField="ComponentId"Width="500px"></e
 
 Run this code to render the AutoComplete with components list.
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image88_14.png](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image88_14.png](Getting-Started_images/Getting-Started_img3.png)
 {:.image }
 
 
 You can also set common customization changes to the AutoComplete textbox like enabling multiple-selection, highlight search and add dropdown icon in order to get the desired result.
 
-#### Configure Visual Mode with filter option
+### Configure Visual Mode with filter option
 
 By default, the AutoComplete is rendered with single-value selection that is set to multiple-value selection by using the property MultiSelectMode as VisualMode that allows you to select multiple data. You can set the FilterType option as StartsWith to sort the suggestion list based on the starting character.
 
@@ -139,11 +139,11 @@ Select a component/s:
 
 The following screenshot displays the AutoCompletetextbox with selection visual mode.
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image88_15.png](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image88_15.png](Getting-Started_images/Getting-Started_img4.png) 
 {:.image }
 
 
-#### Configure Highlight Search and Rounded corners
+### Configure Highlight Search and Rounded corners
 
 {% highlight html %}
 
@@ -167,11 +167,11 @@ When you set the HighlightSearch property to ‘true’, the characters typed
 
 The following screenshot displays the AutoCompletetextbox with highlight search enabled.
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image88_16.png](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image88_16.png](Getting-Started_images/Getting-Started_img5.png) 
 {:.image }
 
 
-#### Configure Popup button
+### Configure Popup button
 
 To enable the Popup button, you can set ShowPopupButton property to ‘true’ that displays the PopupButton icon at the end of textbox. By default, search icon replaces other icons and so you need to override the CSS classes and replace the content toDropDown arrow icon available in core CSS file as follows.
 
@@ -223,7 +223,7 @@ The following screenshot displays the AutoCompletetextbox with dropdown icon.
 
 
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image88_12.png](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image88_12.png](Getting-Started_images/Getting-Started_img6.png)
 {:.image }
 
 

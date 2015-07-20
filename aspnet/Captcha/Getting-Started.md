@@ -13,11 +13,11 @@ documentation: ug
 
 This section enables you to configure the Captcha control in your ASP.NET WEB application and also in learning how to use Captcha with auto validation in web forms.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img1.png)
 {:.image }
 
 
-Create Captcha Control
+### Create Captcha Control
 
 The Captcha is one of the ways to prevent dictionary attacks. It basically comes with the random text. 
 
@@ -33,15 +33,7 @@ Add the following code to the corresponding ASPX page for Captcha rendering.
 
 {% highlight html %}
 
-
-
     <ej:Captcha ID="SignUpCaptcha" runat="server"></ej:Captcha>
-
-
-
-
-
-
 
 {% endhighlight %}
 
@@ -97,11 +89,11 @@ Note: Version= {{ site.450esreleaseversion }} - It will vary depend up on .Net f
 
 The following screenshot displays the output of the above codes.
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img2.png)
 {:.image }
 
 
-Show AudioButton and Refresh
+### Show AudioButton and Refresh
 
 The Captcha controlsupports captcha in the form of audio. When you click the audio button, it readouts the captcha characters. You can achieve this by setting the ShowAudioButton property to true. ShowRefreshButton is used to refresh or change the captcha image without full page refresh. This is achieved by adding the ShowRefreshButton property to true. Also include Mapper to refresh support.
 
@@ -149,11 +141,11 @@ This method is used to handle Ajax post when refresh and validation actions are 
 
 The following screenshot displays the output of the above codes.
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image36_2.png](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image36_2.png](Getting-Started_images/Getting-Started_img3.png)
 {:.image }
 
 
-Auto Validation   
+### Auto Validation   
 
 The Captcha supports automatic validation by enabling the property EnableAutoValidation. When this property is set to true, captcha validation is done automatically. When the validation fails, CustomErrorMessage property supports to display the customized error message.
 
@@ -443,7 +435,7 @@ Add the following code example to the corresponding CS page for Captcha with Aut
 
 The following screenshot is the output for the above code example.
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image36_3.jpg](Getting-Started_images/Getting-Started_img4.jpeg) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image36_3.jpg](Getting-Started_images/Getting-Started_img4.jpeg)
 {:.image }
 
 

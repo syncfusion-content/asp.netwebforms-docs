@@ -7,13 +7,13 @@ control: AutoComplete
 documentation: ug
 ---
 
-## Search Customization
+# Search Customization
 
-### HighlightSearch
+## HighlightSearch
 
 AutoComplete control allows you to highlight the search text in the AutoComplete suggestions list by using the HighlightSearch property. When this property is set to True, the suggestions list appears, with the search text it contains, highlighted.
 
-#### Enabling highlightSearch option
+### Enabling highlightSearch option
 
 The following steps explain how you can enable the highlightSearch property for an AutoComplete textbox.
 
@@ -35,15 +35,15 @@ In the design page define the AutoComplete control and enable the HightlightSear
 
 The following screenshot is the output for AutoComplete when HighlightSearch is set to True.
 
-{ ![](Search-Customization_images/Search-Customization_img1.png) | markdownify }
+![](Search-Customization_images/Search-Customization_img1.png)
 {:.image }
 
 
-### Case sensitive Search
+## Case sensitive Search
 
 AutoComplete allows you to enable case sensitivity, to filter the suggest list items based on the entered text casing. This property enables strict filtering of list items, based on entered text. To enable it, set CaseSensitiveSearch value as True. It is False, by default.
 
-#### Configure case sensitivity for AutoComplete
+### Configure case sensitivity for AutoComplete
 
 The following steps explain how to enable the CaseSensitiveSearch property for an AutoComplete textbox.
 
@@ -67,7 +67,7 @@ In the design page, define the AutoComplete control and enable the CaseSensitive
 
 The following screenshot is the output for AutoComplete when CaseSensitiveSearch is set to True.
 
-{ ![](Search-Customization_images/Search-Customization_img2.png) | markdownify }
+![](Search-Customization_images/Search-Customization_img2.png) 
 {:.image }
 
 

@@ -11,17 +11,17 @@ documentation: ug
 
 This section explains you briefly on how to create a Button in your application with ASP.NET
 
-Create your first Button in ASP.NET
+## Create your first Button in ASP.NET
 
 Essential JavaScript Button helps to display a Button widget within a webpage and allows you to Click, Toggle Click, Reset, and Submit. The following example illustrates how to customize Button control in a Media Player and Office Ribbon Application. 
 
 The following screenshot illustrates the functionality of a Button control in Media Player and Office Ribbon Application.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img1.png)
 {:.image }
 
 
-Create Button control
+## Create Button control
 
 ASP.NET Button control has different functionalities such as Display as Only Image Content or Image Content with Text.
 
@@ -175,11 +175,11 @@ Add the following styles to show the Button control in the center of a webpage
 
 
 
-{ ![C:/Users/jeganprakash/Desktop/Documentation/Images/Button/1.PNG](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+![C:/Users/jeganprakash/Desktop/Documentation/Images/Button/1.PNG](Getting-Started_images/Getting-Started_img2.png)
 {:.image }
 
 
-Create Office Ribbon Control
+## Create Office Ribbon Control
 
 In a real-time scenario, MS Office Bold and Italic options work as a Toggle Button and Underline option works as a Split Button. Here, you can learn how to use Button control feature by using the Office Ribbon options.
 
@@ -336,12 +336,12 @@ Add Function Definition from click event to Button function. 
 <table>
 <tr>
 <td>
-![C:/Users/jeganprakash/Desktop/Documentation/Images/Button/3.PNG](Getting-Started_images/Getting-Started_img3.png)
+{{ '![C:/Users/jeganprakash/Desktop/Documentation/Images/Button/3.PNG](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 </td></tr>
 <tr>
 <td>
-![http://help.syncfusion.com/ug/js/ImagesExt/image47_11.png](Getting-Started_images/Getting-Started_img4.png)
+{{ '![http://help.syncfusion.com/ug/js/ImagesExt/image47_11.png](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 </td></tr>
 </table>

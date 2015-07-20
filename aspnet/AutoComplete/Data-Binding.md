@@ -7,41 +7,41 @@ control: AutoComplete
 documentation: ug
 ---
 
-## Data-Binding
+# Data-Binding
 
 In order to render the AutoComplete control, the data needs to be bound to it in a proper way. The following sub-properties provide a way to bind, either the local or remote data, to the AutoComplete control, by binding the appropriate data fields to the corresponding options.
 
-Fields
+## Fields
 
-DataSource 
+### DataSource 
 
 This property assigns the local json data or remote data, that is the url binding, to the AutoComplete control.
 
-Query 
+### Query 
 
 It accepts the data of object type, usually the query string, to fetch the required data from a specific table based on certain condition. This property is optional, if it is not specified, the entire records that are initially assigned through dataSource are taken into consideration.
 
-DataUniqueKeyField
+### DataUniqueKeyField
 
 It maps the corresponding key field name from the data table or json data that is assigned to the dataSource, with the key property of the AutoComplete control. The key value that is fetched from the table has to be unique for each records.
 
-DataTextField
+### DataTextField
 
 It maps the corresponding text field name from the data table or json data that is assigned to the dataSource, with the text property of the AutoComplete control. The text value that is fetched from the table gets the value to be displayed in the AutoComplete textbox.
 
-DataCategoryField
+### DataCategoryField
 
 It maps the category field name from the data table or json data that is assigned to the dataSource. The category value that is fetched from the table is made available when Grouping is enabled.
 
-DataHtmlAttributesField
+### DataHtmlAttributesField
 
 This allows you to map the CSS styles or classes to the corresponding data from table or json data with the AutoComplete items. The DataHtmlAttributesField value customizes the AutoComplete items, based on html styling or class assigned to it. 
 
-### Local data
+## Local data
 
 AutoComplete provides data binding support to populate AutoComplete items, so that the values can be mapped to the AutoComplete fields, namely DataUniqueKeyField and DataTextField. DataBinding helps you bind a key value pair to AutoComplete textbox. DataUniqueKeyField takes the unique id of the dataSource elements. DataTextField gets the value to be displayed in the AutoComplete textbox.
 
-Defining the Local data for AutoComplete
+## Defining the Local data for AutoComplete
 
 The following steps explain local data binding of a list data to an AutoComplete textbox.
 
@@ -207,7 +207,7 @@ The following screenshot is the output for AutoComplete control with local data 
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img1.png) | markdownify }
+![](Data-Binding_images/Data-Binding_img1.png)
 {:.image }
 
 
@@ -222,11 +222,11 @@ The following screenshot is the output for AutoComplete control with local data 
 
 
 
-### Remote data
+## Remote data
 
 AutoComplete provides remote data binding support to populate AutoComplete items, so that the values can be mapped to the AutoComplete fields from a remote web service by using DataSource and Query. 
 
-Configuring remote data for AutoComplete
+### Configuring remote data for AutoComplete
 
 The following steps explain the remote data binding to an AutoComplete textbox.
 
@@ -234,7 +234,7 @@ In CodeBehind assign the DataSource property with corresponding web host service
 
 
 
-{% highlight html %}
+{% highlight c# %}
 
         protected void Page_Load(object sender, EventArgs e)
 
@@ -255,22 +255,22 @@ this.AutoComplete.DataSource="http://mvc.syncfusion.com/Services/Northwnd.svc/";
 In the Design page, add an AutoComplete element from ToolBox and assign values for DataTextField and DataUniqueKeyField. By using Query property, extract the corresponding data table.
 
 
-
+{% highlight html %}
 
 
        <ej:Autocomplete ID="AutoComplete" runat="server" Query="ej.Query().from('Suppliers').select('SupplierID', 'ContactName')"
 
             DataTextField="ContactName" DataUniqueKeyField="SupplierID" />
 
-
+{% endhighlight %}
 
 The following screenshot is the output for AutoComplete control with remote data binding.
 
-{ ![](Data-Binding_images/Data-Binding_img2.png) | markdownify }
+![](Data-Binding_images/Data-Binding_img2.png)
 {:.image }
 
 
-### SQL data
+## SQL data
 
 The [SqlDataSource](http://msdn.microsoft.com/en-us/library/vstudio/system.web.ui.webcontrols.sqldatasource(v=vs.100).aspx) control enables you to use a Web server control to access data that is located in a relational database. It can work with any database that has an associated ADO.NET provider including Microsoft SQL Server, Oracle, ODBC, or OLE DB databases such as Microsoft Access. 
 
@@ -282,7 +282,7 @@ To retrieve data from a database by using the [SqlDataSource](http://msdn.micro
 
 AutoComplete provides an extensive data binding support to populate AutoComplete items, so that the values can be mapped to the AutoComplete fields from an existing SQL data source. You can achieve this by using DataSourceID property. 
 
-Configuring SQL data for AutoComplete
+### Configuring SQL data for AutoComplete
 
 The following steps explain the SQL data binding to an AutoComplete textbox.
 
@@ -292,7 +292,7 @@ The following steps explain local data binding of a list data to an AutoComplete
 * In the following code example, an SQL data table with a ProductID in integer type and ProductName in varchar type is created.
 * The following screenshot illustrates the sample database used.
 
-{ ![C:/Users/apoorvah.ramanathan/Desktop/1.png](Data-Binding_images/Data-Binding_img3.png) | markdownify }
+![C:/Users/apoorvah.ramanathan/Desktop/1.png](Data-Binding_images/Data-Binding_img3.png) 
 {:.image }
 
 
@@ -316,11 +316,11 @@ In the Design page, add an AutoComplete element from ToolBox and assign values f
 
 The following screenshot is the output for AutoComplete control with SQL data binding.
 
-{ ![](Data-Binding_images/Data-Binding_img4.png) | markdownify }
+![](Data-Binding_images/Data-Binding_img4.png) 
 {:.image }
 
 
-### Object DataSource
+## Object DataSource
 
 The ObjectDataSource control allows you to bind a specific data layer, in a similar manner to which other controls bind to the database. The ObjectDataSource control can bind to any method that returns a DataSet or an IEnumerable object (for example, a DataReader or a collection of Classes). The major advantage of binding through ObjectDataSource is, only the records that are required in the current view are retrieved from the database, greatly optimizing the performance and runtime memory usage.
 
@@ -332,7 +332,7 @@ TypeName[](http://msdn.microsoft.com/en-us/library/vstudio/system.web.ui.webcont
 
 AutoComplete provides ObjectDataSource data binding support to populate AutoComplete items, so that the values can be mapped to the AutoComplete fields from an existing ObjectDataSource. You can achieve this by using DataSourceID property.
 
-Configuring ObjectDataSource for AutoComplete
+### Configuring ObjectDataSource for AutoComplete
 
 The following steps explain the ObjectDataSource data binding to an AutoComplete textbox.
 
@@ -488,11 +488,11 @@ DataTextField="Text" DataUniqueKeyField="ID" />
 
 The following screenshot is the output for AutoComplete control with ObjectDataSource data binding.
 
-{ ![](Data-Binding_images/Data-Binding_img5.png) | markdownify }
+![](Data-Binding_images/Data-Binding_img5.png) 
 {:.image }
 
 
-### Linq-to-SQL data
+## Linq-to-SQL data
 
 The [LinqDataSource](http://msdn.microsoft.com/en-us/library/vstudio/system.web.ui.webcontrols.linqdatasource(v=vs.100).aspx) control exposes Language-Integrated Query (LINQ) to Web developers through the ASP.NET data-source control architecture. It doesn’t connect directly to the database, instead, interacts with entity classes that represent the database and the tables. You can generate the entity classes with one class that represents the database and one class for each table in the database and it is typically be located in the App_Code folder of the Web application. 
 
@@ -506,7 +506,7 @@ To retrieve data from Entity classes by using LinqDataSource, define the followi
 
 AutoComplete provides an extensive data binding support to populate AutoComplete items, so that the values can be mapped to the AutoComplete fields from an existing Linq-to-SQL data source. You can achieve this by using DataSourceID property.
 
-Configuring Linq-to-SQL data for AutoComplete
+### Configuring Linq-to-SQL data for AutoComplete
 
 The following steps explain the SQL data binding to an AutoComplete textbox.
 
@@ -514,7 +514,7 @@ The following steps explain local data binding of a list data to an AutoComplete
 
 Define a Linq-to-SQL data source in the web page and configure the data source as per your requirement by using the database. In the following code example, an SQL table with TerritoryID and TerritoryDescription in varchar type is used, to create a DBML class.
 
-{ ![](Data-Binding_images/Data-Binding_img6.png) | markdownify }
+![](Data-Binding_images/Data-Binding_img6.png)
 {:.image }
 
 
@@ -554,7 +554,7 @@ DataTextField="TerritoryDescription" DataUniqueKeyField="TerritoryID" />
 
 The following screenshot is the output for AutoComplete control with Linq-to-SQL data binding.
 
-{ ![](Data-Binding_images/Data-Binding_img7.png) | markdownify }
+![](Data-Binding_images/Data-Binding_img7.png) 
 {:.image }
 
 

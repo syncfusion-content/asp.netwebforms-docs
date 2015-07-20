@@ -11,7 +11,7 @@ documentation: ug
 
 Captcha is a popular technique that is used to prevent computer programs from sending automated requests and is used for meta-searching search engines, performing dictionary attacks in login pages, or sending spam by using mail servers. Captcha is validated at the time of form submission.
 
-Key Features
+## Key Features
 
 * Auto validation - It compares the input field with captcha image and thrown validation message. Also it prevents submission of forms when validation gets fail. 
 * Case sensitive text - It checks for case sensitive (Upper case and lower case) at the time of validation.

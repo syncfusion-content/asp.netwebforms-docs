@@ -7,7 +7,7 @@ control: Accordion
 documentation: ug
 ---
 
-## Configure keyboard interaction
+# Configure keyboard interaction
 
 The following steps explains you on how to enable keyboard interaction for an Accordion control.
 
@@ -93,7 +93,7 @@ In an ASPX page, define the Accordion control and add the contents correspondi
 
 Output for Accordion control focused and navigated to last item by using Keyboard navigation is as follows.
 
-{ ![](Configure-keyboard-interaction_images/Configure-keyboard-interaction_img1.png) | markdownify }
+ ![](Configure-keyboard-interaction_images/Configure-keyboard-interaction_img1.png)
 {:.image }
 
 

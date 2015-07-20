@@ -7,11 +7,11 @@ control: AutoComplete
 documentation: ug
 ---
 
-## RTL Support
+# RTL Support
 
 This feature allows you to change the alignment of the AutoComplete textbox control from left-to-right to right-to-left (RTL). The custom template AutoComplete textbox also supports RTL. 
 
-### Enabling RTL Support
+## Enabling RTL Support
 
 In the design page, define the AutoComplete control and configure the EnableRTL property
 
@@ -31,11 +31,11 @@ In the design page, define the AutoComplete control and configure the EnableRTL 
 
 The following screenshot is the output for AutoComplete when EnableRTL is set to True.
 
-{ ![](RTL-Support_images/RTL-Support_img1.png) | markdownify }
+![](RTL-Support_images/RTL-Support_img1.png)
 {:.image }
 
 
-### Keyboard interaction
+## Keyboard interaction
 
 You can use keyboard shortcut keys as an alternative to the mouse while using the AutoComplete control. The AutoComplete control allows you to perform all kinds of actions using keyboard shortcuts.
 
@@ -67,7 +67,7 @@ Closes the popup</td></tr>
 </table>
 
 
-Configure keyboard interaction
+### Configure keyboard interaction
 
 In the design page, define the AutoComplete control with corresponding data fields.
 
@@ -117,7 +117,7 @@ Define the Java Script to focus the AutoComplete Textbox on Alt + J key press.
 
 Run the sample, press AccessKey + J to focus in the AutoComplete control, and you can navigate by using the arrow keys. Use the Escape key to close the popup.
 
-{ ![](RTL-Support_images/RTL-Support_img2.png) | markdownify }
+![](RTL-Support_images/RTL-Support_img2.png) 
 {:.image }
 
 
