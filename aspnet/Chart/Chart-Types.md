@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Chart Types
+## Chart Types
 
 Essential ASP.NET Chart control supports more than 20 types of Chart for your business requirements. Each one is highly and easily configurable with built-in support for creating stunning visual effects.
 
@@ -15,7 +15,7 @@ Chart types are specified on each series through the Type property. All the Char
 
 You can combine several Chart types in one Chart using the Type property on series to set different Chart types for each series.
 
-{% highlight html %}
+
 
 [ASP.NET] 
 
@@ -35,10 +35,10 @@ You can combine several Chart types in one Chart using the Type property on seri
 
 
 
-{% endhighlight %}
+
 
 In multiple series case, you can use CommonSeriesOptions property to specify the properties that are common for all series in Chart. 
-{% highlight html %}
+
 
 [ASP.NET] 
 
@@ -54,9 +54,9 @@ In multiple series case, you can use CommonSeriesOptions property to specify the
 
  &lt;/ej:Chart&gt;
 
-{% endhighlight %}
 
-## Line Chart
+
+### Line Chart
 
 Line Charts join points on a plot using straight lines showing trends in data at equal intervals. Line Charts treats the input as non-numeric, categorical information, equally spaced along the x-axis.
 
@@ -64,12 +64,12 @@ You can configure the appearance of the lines and the points with options Fill u
 
 
 
-![](Chart-Types_images/Chart-Types_img1.png)
+{ ![](Chart-Types_images/Chart-Types_img1.png) | markdownify }
 {:.image }
 
 
 _Figure_ 107: Line Chart
-{% highlight html %}
+
  [ASP.NET] 
 
   &lt;ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true"&gt;
@@ -104,19 +104,19 @@ _Figure_ 107: Line Chart
 
  &lt;/ej:Chart&gt;
 
-{% endhighlight  %}
 
-## StepLine Chart
+
+### StepLine Chart
 
 Step Line Charts use horizontal and vertical lines to connect data points resulting in a step like progression. You can configure the appearance of line using Fill and Width property in series.
 
 
 
-![](Chart-Types_images/Chart-Types_img2.png)
+{ ![](Chart-Types_images/Chart-Types_img2.png) | markdownify }
 {:.image }
 
 
-{% highlight html %}
+
 
 [ASP.NET] 
 
@@ -152,18 +152,18 @@ Step Line Charts use horizontal and vertical lines to connect data points result
 
  &lt;/ej:Chart&gt;
 
-{% endhighlight %}
 
-## Area Chart
+
+### Area Chart
 
 Area Chart is rendered using a collection of line segments connected to form a closed-loop area filled with a specified color.You can plot multiple series on the same Chart. You can use Fill in series to customize the series color and the Border to customize the series border color and width.
 
 
 
-![](Chart-Types_images/Chart-Types_img3.png) 
+{ ![](Chart-Types_images/Chart-Types_img3.png) | markdownify }
 {:.image }
 
-{% highlight html %}
+
 [ASP.NET] 
 
   &lt;ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true"&gt;
@@ -220,19 +220,19 @@ Area Chart is rendered using a collection of line segments connected to form a c
 
  &lt;/ej:Chart&gt;
 
-{% endhighlight  %}
 
-## Range Area Chart
+
+### Range Area Chart
 
 Range Area Charts are similar to regular area Charts except that, each area is rendered over a range.  Specify the y-axis high and low values for each point for the Range Area Chart. You can customize the series color and borderusing Fill and Border properties in series.
 
 
 
-![](Chart-Types_images/Chart-Types_img4.png)
+{ ![](Chart-Types_images/Chart-Types_img4.png) | markdownify }
 {:.image }
 
 
-{% highlight html %}
+
 
 [ASP.NET] 
 
@@ -294,18 +294,18 @@ Range Area Charts are similar to regular area Charts except that, each area is r
 
 
 
-{% endhighlight  %}
 
-## StepArea Chart
+
+### StepArea Chart
 
 Step Area Charts are similar to regular area Charts except that, instead of a straight line tracing the shortest path between points, the values are connected by continuous vertical and horizontal lines forming a step like progression. You can use the Fill and Border properties in series to customize the series color and border.
 
 
 
-![](Chart-Types_images/Chart-Types_img5.png)
+{ ![](Chart-Types_images/Chart-Types_img5.png) | markdownify }
 {:.image }
 
-{% highlight html %}
+
 [ASP.NET] 
 
   &lt;ej:Chart ID="Chart1" runat="server"&gt;
@@ -349,19 +349,19 @@ Step Area Charts are similar to regular area Charts except that, instead of a st
      &lt;/Series&gt;
 
  &lt;/ej:Chart&gt;
-{% endhighlight  %}
 
 
-## SplineArea Chart
+
+### SplineArea Chart
 
 Spline Area Chart is similar to an Area Chart except the difference in the way the points of a series are connected. It connects each series of points by a smooth spline curve. You can plot multiple series on the same Chart. To customize the series color and border, use the Fill and Border properties in series.
 
 
 
-![](Chart-Types_images/Chart-Types_img6.png)
+{ ![](Chart-Types_images/Chart-Types_img6.png) | markdownify }
 {:.image }
 
-{% highlight html %}
+
 [ASP.NET] 
 
   &lt;ej:Chart ID="Chart1" runat="server" &gt;
@@ -435,17 +435,17 @@ Spline Area Chart is similar to an Area Chart except the difference in the way t
  &lt;/ej:Chart&gt;
 
 
-{% endhighlight %}
-## StackingArea Chart
+
+### StackingArea Chart
 
 Stacking Area Charts are similar to regular area Charts except that the Y values stack on top of each other in the specified series order. This enables you to visualize the relationship of parts to the whole. You can customize the series color and border using Fill and Border properties in series.
 
 
 
-![](Chart-Types_images/Chart-Types_img7.png) 
+{ ![](Chart-Types_images/Chart-Types_img7.png) | markdownify }
 {:.image }
 
-{% highlight html %}
+
 [ASP.NET] 
 
   &lt;ej:Chart ID="Chart1" runat="server"&gt;
@@ -518,13 +518,13 @@ Stacking Area Charts are similar to regular area Charts except that the Y values
 
  &lt;/ej:Chart&gt;
 
-{% endhighlight %}
 
-## 100% Stacking area chart  
+
+### 100% Stacking area chart  
 
 100% Stacking area is similar to the stacking area chart. But here, the series display multiple data series as stacked areas and the cumulative portion of each stacked element is summed to 100%. 
 
-{% highlight html %}
+
 
 [ASP.NET]
 
@@ -584,24 +584,24 @@ Stacking Area Charts are similar to regular area Charts except that the Y values
 
 &lt;/ej:Chart&gt;
 
-{% endhighlight %}
+
 
 The following screenshot displays the 100% Stacking area chart.
 
-![C:/Users/Giftline/Desktop/a.png](Chart-Types_images/Chart-Types_img8.png)
+{ ![C:/Users/Giftline/Desktop/a.png](Chart-Types_images/Chart-Types_img8.png) | markdownify }
 {:.image }
 
 
-## Column Chart
+### Column Chart
 
 Column Charts are among the most common Chart types that are used. It uses vertical bars (columns) to display different values of one or more items. It is similar to a bar Chart except that the bars are vertical and not horizontal as in bar Chart. Points from adjacent series are drawn as bars next to each other. You can customize the series color and borderusing Fill and Border properties in series and each segment of series using Fill and Border properties in point.
 
 
 
-![](Chart-Types_images/Chart-Types_img9.png) 
+{ ![](Chart-Types_images/Chart-Types_img9.png) | markdownify }
 {:.image }
 
-{% highlight html %}
+
 [ASP.NET] 
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;
@@ -660,18 +660,18 @@ Column Charts are among the most common Chart types that are used. It uses verti
 
       &lt;/ej:Chart&gt;
 
-{% endhighlight %}
 
-## RangeColumn Chart
+
+### RangeColumn Chart
 
 RangeColumn Chart is similar to the Column Chart except that each column is rendered over a range. Specify the y-axis Starting and Ending values for each point for the RangeColumn Chart. You can customize the series color and borderusing Fill and Border properties in series and each segment of series using Fill and Border properties in point.
 
 
 
-![](Chart-Types_images/Chart-Types_img10.png)
+{ ![](Chart-Types_images/Chart-Types_img10.png) | markdownify }
 {:.image }
 
-{% highlight html %}
+
 [ASP.NET] 
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;
@@ -718,18 +718,18 @@ RangeColumn Chart is similar to the Column Chart except that each column is rend
 
  &lt;/ej:Chart&gt;
 
-{% endhighlight %}
 
-## StackingColumn Chart
+
+### StackingColumn Chart
 
 Stacking Column Charts are similar to regular column Charts except that the Y values stack on top of each other in the specified series order. This enables you to visualize the relationship of parts to the whole.You can customize the series color and borderusing Fill and Border properties in series and each segment of series using Fill and Border properties in point.
 
 
 
-![](Chart-Types_images/Chart-Types_img11.png)
+{ ![](Chart-Types_images/Chart-Types_img11.png) | markdownify }
 {:.image }
 
-{% highlight html %}
+
 [ASP.NET] 
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;
@@ -794,13 +794,13 @@ Stacking Column Charts are similar to regular column Charts except that the Y va
 
  &lt;/ej:Chart&gt;
 
-{% endhighlight  %}
 
-## 100% Stacking column chart 
+
+### 100% Stacking column chart 
 
 100% Stacking column is similar to the stacking column charts. But here, the combined contribution of Y values is the combined total of the vertical column with 100 percent.
 
-{% highlight html %}
+
 
 [ASP.NET]
 
@@ -853,25 +853,25 @@ Stacking Column Charts are similar to regular column Charts except that the Y va
 &lt;/ej:Chart&gt;
 
 
-{% endhighlight  %}
+
 
 
 The following screenshot displays the 100% Stacking column chat.
 
-![C:/Users/Giftline/Desktop/a.png](Chart-Types_images/Chart-Types_img12.png)
+{ ![C:/Users/Giftline/Desktop/a.png](Chart-Types_images/Chart-Types_img12.png) | markdownify }
 {:.image }
 
 
-## Bar Chart
+### Bar Chart
 
 Bar Chart is the simplest and most versatile of statistical diagrams. It displays horizontal bars for each point in the series and points from adjacent series are drawn as bars next to each other. Bar Charts are used to compare values across categories, to display variations in the value of an item over time or to display the values of several items at a single point in time.You can customize the series color and borderusing Fill and Border properties in series and each segment of series using Fill and Border properties in point.
 
 
 
-![](Chart-Types_images/Chart-Types_img13.png) 
+{ ![](Chart-Types_images/Chart-Types_img13.png) | markdownify }
 {:.image }
 
-{% highlight html %}
+
 [ASP.NET] 
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;
@@ -928,19 +928,19 @@ Bar Chart is the simplest and most versatile of statistical diagrams. It display
 
  &lt;/ej:Chart&gt;
 
-{% endhighlight  %}
 
-## Stackingbar Chart
+
+### Stackingbar Chart
 
 Stacking Bar Charts are similar to regular bar Charts except that the Y values stack on top of each other in the specified series order. This enables you to visualize the relationship of parts to the whole. You can customize the series color and borderusing Fill and Border properties in series and each segment of series using Fill and Border properties in point.
 
 
 
-![](Chart-Types_images/Chart-Types_img14.png) 
+{ ![](Chart-Types_images/Chart-Types_img14.png) | markdownify }
 {:.image }
 
 
-{% highlight html %}
+
 
 [ASP.NET] 
 
@@ -996,14 +996,14 @@ Stacking Bar Charts are similar to regular bar Charts except that the Y values s
 
  &lt;/ej:Chart&gt;
 
-{% endhighlight  %}
 
-## 100% Stacking bar chart 
+
+### 100% Stacking bar chart 
 
 
 
 100% Stacking bar is similar to stacking bar charts. Here, the combined contribution of Y values is the combined total of the horizontal bar with 100 percent.
-{% highlight html %}
+
 [ASP.NET]
 
 &lt;ej:Chart ID="Chart1" runat="server" &gt;   
@@ -1059,24 +1059,24 @@ Stacking Bar Charts are similar to regular bar Charts except that the Y values s
 &lt;/ej:Chart&gt;
 
 
-{% endhighlight  %}
+
 The following screenshot displays the 100% Stackingbar chart.
 
-![C:/Users/Giftline/Desktop/a.png](Chart-Types_images/Chart-Types_img15.png)
+{ ![C:/Users/Giftline/Desktop/a.png](Chart-Types_images/Chart-Types_img15.png) | markdownify }
 {:.image }
 
 
-## Spline Chart
+### Spline Chart
 
 Spline Chart is similar to a Line Chart except that it connects the different data points using splines instead of straight lines. You can configure the appearance of the lines and the points with options Fill used and the Width of lines.
 
 
 
-![](Chart-Types_images/Chart-Types_img16.png)
+{ ![](Chart-Types_images/Chart-Types_img16.png) | markdownify }
 {:.image }
 
 
-{% highlight html %}
+
 
 [ASP.NET] 
 
@@ -1133,16 +1133,16 @@ Spline Chart is similar to a Line Chart except that it connects the different da
  &lt;/ej:Chart&gt;
 
 
-{% endhighlight %}
-## Pie Chart
+
+### Pie Chart
 
 A Pie Chart renders y values as slices in a pie. The slices are rendered in proportion to the whole that is the sum of all the y values in the series. Consequently, Pie Charts are used to visualize the proportional contribution in terms of percentage or fraction of categories of data to the whole data set. The x values in the data series are treated only as nominal in categorical, qualitative data. The Pie Chart displays only one Data Series at a time. You can customize the series color and borderusing Fill and Border properties in series and each slice of series using Fill and Border properties in point.
 
 
 
-![](Chart-Types_images/Chart-Types_img17.png) 
+{ ![](Chart-Types_images/Chart-Types_img17.png) | markdownify }
 {:.image }
-{% highlight html %}
+
 
 [ASP.NET] 
 
@@ -1186,18 +1186,18 @@ A Pie Chart renders y values as slices in a pie. The slices are rendered in prop
 
  &lt;/ej:Chart&gt;
 
-{% endhighlight %}
 
-## Doughnut Chart
+
+### Doughnut Chart
 
 Doughnut Charts are pie Charts with a hole, whose value is specified as the doughnut coefficient. The Doughnut Chart is best suited for presenting data in proportions. You can customize the series color and borderusing Fill and Border properties in series and each slice of series using Fill and Border properties in point.
 
 
 
-![](Chart-Types_images/Chart-Types_img18.png) 
+{ ![](Chart-Types_images/Chart-Types_img18.png) | markdownify }
 {:.image }
 
-{% highlight html %}
+
 [ASP.NET] 
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;
@@ -1238,9 +1238,9 @@ Doughnut Charts are pie Charts with a hole, whose value is specified as the doug
 
  &lt;/ej:Chart&gt;
 
-{% endhighlight %}
 
-## Semi Pie and Doughnut Chart
+
+### Semi Pie and Doughnut Chart
 
 The semi pie and doughnut chart is a semicircular chart. Data are represented in different sectors within a semi-circle.
 
@@ -1249,7 +1249,9 @@ Essential Chart allows you to create semi pie and doughnut chart using StartAngl
 
 
 
-{% highlight html %}
+
+
+
 [ASP.NET]
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;
@@ -1289,25 +1291,25 @@ Essential Chart allows you to create semi pie and doughnut chart using StartAngl
  &lt;/ej:Chart&gt;
 
 
-{% endhighlight  %}
-![C:/Users/balachandar/Desktop/semi doughnut.JPG](Chart-Types_images/Chart-Types_img19.jpeg)
+
+{ ![C:/Users/balachandar/Desktop/semi doughnut.JPG](Chart-Types_images/Chart-Types_img19.jpeg) | markdownify }
 {:.image }
 
 
-![C:/Users/balachandar/Desktop/semi pie.JPG](Chart-Types_images/Chart-Types_img20.jpeg) 
+{ ![C:/Users/balachandar/Desktop/semi pie.JPG](Chart-Types_images/Chart-Types_img20.jpeg) | markdownify }
 {:.image }
 
 
-## Pyramid Chart
+### Pyramid Chart
 
 The Pyramid Chart type displays the data that when totalled renders 100%. This type of Chart is a single series Chart representing the data as portions of 100%, and this Chart does not use any axes. You can customize the series color and borderusing Fill and Border properties in series and each slice of series using Fill and Forder properties in point.
 
 
 
-![](Chart-Types_images/Chart-Types_img21.png)
+{ ![](Chart-Types_images/Chart-Types_img21.png) | markdownify }
 {:.image }
 
-{% highlight html %}
+
 [ASP.NET] 
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;
@@ -1344,18 +1346,18 @@ The Pyramid Chart type displays the data that when totalled renders 100%. This t
 
  &lt;/ej:Chart&gt;
 
-{% endhighlight  %}
 
-## Funnel Chart
+
+### Funnel Chart
 
 The Funnel chart is a single series chart representing the data as portions of 100%, and this chart does not use any axes. Funnel charts are often used to represent stages in a sales process and expresses the amount of potential revenue for each stage. This type of chart can also be useful in identifying potential problem area in an organization’s sales process. You can customize the funnel width and height using FunnelWidth and FunnelHeight properties.
 
-![](Chart-Types_images/Chart-Types_img22.png) 
+{ ![](Chart-Types_images/Chart-Types_img22.png) | markdownify }
 {:.image }
 
 
 
-{% highlight html %}
+
 [ASP.NET]
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;
@@ -1389,18 +1391,18 @@ The Funnel chart is a single series chart representing the data as portions of 1
              &lt;/ej:Series&gt;
 
  &lt;/ej:Chart&gt;
-{% endhighlight  %}
-## Bubble Chart
+
+### Bubble Chart
 
 Bubble Chart is an extension of the Scatter Chart (or XY-Chart) where each data marker is represented by a circle whose dimension forms a third variable. Consequently, bubble Charts allow three-variable comparisons allowing for easy visualization of complex interdependencies that are not apparent in two-variable Charts. Bubble Charts are frequently used in market and product comparison studies.
 
 
 
-![](Chart-Types_images/Chart-Types_img23.png)
+{ ![](Chart-Types_images/Chart-Types_img23.png) | markdownify }
 {:.image }
 
 
-{% highlight html %}
+
 
 [ASP.NET] 
 
@@ -1448,16 +1450,16 @@ Bubble Chart is an extension of the Scatter Chart (or XY-Chart) where each data 
 
   &lt;/ej:Chart&gt;
 
-{% endhighlight %}
 
-## Scatter
+
+### Scatter
 
 In Scatter Series, each data point is represented as an ellipse, and the width and height of each ellipse is set using the Size, Width and Height properties of marker. You can also change the color, stroke, and stroke thickness of the series using the Fill, border color, and Width properties of marker respectively.
 
 The following code example is used to create a simple scatter series.
 
 
-{% highlight html %}
+
 [ASP.NET] 
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;
@@ -1489,18 +1491,18 @@ The following code example is used to create a simple scatter series.
   &lt;/ej:Chart&gt;
 
 
-{% endhighlight  %}
-![](Chart-Types_images/Chart-Types_img24.png) 
+
+{ ![](Chart-Types_images/Chart-Types_img24.png) | markdownify }
 {:.image }
 
 
-## HiLoOpenCloseSeries 
+### HiLoOpenCloseSeries 
 
 A HiLoOpenCloseSeries displays each data point as a group of two horizontal lines and one vertical line. The height of the vertical line depends on the difference between the high value and low value of the data point. The width of the horizontal lines depends on the time span interval. The line indicating the open value is at the left side of the vertical line, and the line indicating the closed value is at its right side. You can also change the color, and stroke thickness of the series using the Fill, borderwidth properties respectively.
 
 The following properties are useful in mapping the value of each data point in a HiLoOpenCloseSeries: 
 
-_Table2: Property Table_
+_Table_ _2__: Property Table_
 
 <table>
 <tr>
@@ -1530,7 +1532,7 @@ Represents the close values</td></tr>
 </table>
 
 
-![](Chart-Types_images/Chart-Types_img25.png)
+{ ![](Chart-Types_images/Chart-Types_img25.png) | markdownify }
 {:.image }
 
 
@@ -1552,7 +1554,7 @@ DrawMode is used to specify the open and close draw mode to hiloopenclose series
 
  To create a simple HiLoOpenCloseSeries use the following code example.
 
-{% highlight html %}
+
 
 [ASP.NET] 
 
@@ -1567,8 +1569,7 @@ DrawMode is used to specify the open and close draw mode to hiloopenclose series
             &lt;/Series&gt;
 
         &lt;/ej:Chart&gt;
-{% endhighlight %}
-{% highlight c# %}
+
 [CS]
 
 List<HiloOpenCloseChartData> data = new List<HiloOpenCloseChartData>();
@@ -1700,14 +1701,14 @@ public class HiloOpenCloseChartData
 
 
     }
-{% endhighlight  %}
-## Candle
+
+### Candle
 
 A CandleSeries displays each data point with a combination of a vertical column and a vertical line. The height of the vertical line represents the difference between high and low value of a datapoint, whereas the height of the vertical column represents the difference between the Open and Close values of a data point. You can also change the color and stroke thickness of the series using the Fill, borderwidth properties respectively.
 
 The following properties are useful in mapping the value of each data point in a Candle.
 
-_Table3: Property Table_
+_Table_ _3__: Property Table_
 
 <table>
 <tr>
@@ -1737,7 +1738,7 @@ Represents the close values</td></tr>
 </table>
 
 
-![](Chart-Types_images/Chart-Types_img26.png)
+{ ![](Chart-Types_images/Chart-Types_img26.png) | markdownify }
 {:.image }
 
 
@@ -1750,7 +1751,7 @@ BearFillColor
 BearFillColor is used to specify a fill color for the segment that indicates a decrease in stock price in the measured time interval.
 
 To create a simple Candle series use the following code example.
-{% highlight html %}
+
  [ASP.NET] 
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;   
@@ -1767,8 +1768,8 @@ To create a simple Candle series use the following code example.
 
         &lt;/ej:Chart&gt;
 
-{% endhighlight  %}
-{% highlight c# %}
+
+
 [CS]
 
 
@@ -1866,14 +1867,14 @@ public class CandleChartData
 
 
     }
-{% endhighlight %}
-## Hilo
+
+### Hilo
 
 Ina HiLoSeries, each segment is represented by a line. The height of the line depends on the difference between the high value and low value of the data point. You can also change the color and stroke thickness of the series using the Fill, borderwidth properties respectively.
 
 The following properties are useful in mapping the value of each data point in a Hilo.
 
-_Table4: Property Table_
+_Table_ _4__: Property Table_
 
 <table>
 <tr>
@@ -1895,12 +1896,12 @@ Represents the low values</td></tr>
 </table>
 
 
-![C:/Users/ApoorvahR/Desktop/3.png](Chart-Types_images/Chart-Types_img27.png) 
+{ ![C:/Users/ApoorvahR/Desktop/3.png](Chart-Types_images/Chart-Types_img27.png) | markdownify }
 {:.image }
 
 
 To create a simple Hilo series use the following code example. 
-{% highlight html %}
+
 [ASP.NET] 
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;   
@@ -1916,8 +1917,7 @@ To create a simple Hilo series use the following code example.
             &lt;/Series&gt;
 
         &lt;/ej:Chart&gt;
-{% endhighlight %}
-{% highlight c# %}
+
 [CS]
 
           List<HiloData> data = new List<HiloData>(); 
@@ -1991,27 +1991,26 @@ public class HiloData
 
 
     }
-{% endhighlight  %}
 
-## Polar
+### Polar
 
 A Polar Chart is a circular graph on which data is displayed in terms of values and angles. The x values define the angles at which the data points are plotted. The y value defines the distance of the data points from the center of the graph, with the center of the graph usually starting at 0. You can customize the series color and borderusing Fill and Border properties in series. You can use IsClosed property in series to specify whether the series drawn is in closed form. It supports three types of rendering such as Line, Area and Column.
 
 LineType
 
-![](Chart-Types_images/Chart-Types_img28.png)
+{ ![](Chart-Types_images/Chart-Types_img28.png) | markdownify }
 {:.image }
 
 
 Area Type
 
-![](Chart-Types_images/Chart-Types_img29.png) 
+{ ![](Chart-Types_images/Chart-Types_img29.png) | markdownify }
 {:.image }
 
 
 Column Type
 
-![](Chart-Types_images/Chart-Types_img30.png)
+{ ![](Chart-Types_images/Chart-Types_img30.png) | markdownify }
 {:.image }
 
 
@@ -2019,7 +2018,7 @@ Column Type
 
 To create a simple Polar series use the following code example.
 
-{% highlight html %}
+
 
 [ASP.NET] 
 
@@ -2055,32 +2054,32 @@ To create a simple Polar series use the following code example.
 
  &lt;/ej:Chart&gt;
 
-{% endhighlight  %}
 
-## RadarSeries 
+
+### RadarSeries 
 
 RadarSeries is a x, y Chart of three or more quantitative variables represented on multiple axis lines originating from the same point. You can customize the series color and borderusing Fill and Border properties in series. You can use IsClosed property in series to specify whether the series drawn is in closed form. It supports three types of rendering such as Line, Area and Column.
 
 Area Type
 
-![](Chart-Types_images/Chart-Types_img31.png)
+{ ![](Chart-Types_images/Chart-Types_img31.png) | markdownify }
 {:.image }
 
 
 Line type
 
-![](Chart-Types_images/Chart-Types_img32.png)
+{ ![](Chart-Types_images/Chart-Types_img32.png) | markdownify }
 {:.image }
 
 
 Column type
 
-![](Chart-Types_images/Chart-Types_img33.png)
+{ ![](Chart-Types_images/Chart-Types_img33.png) | markdownify }
 {:.image }
 
 
 To create simple RadarSeries use the following code example. 
-{% highlight html %}
+
 [ASP.NET] 
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;
@@ -2116,6 +2115,6 @@ To create simple RadarSeries use the following code example.
  &lt;/ej:Chart&gt;
 
 
-{% endhighlight  %}
+
 
 

@@ -7,7 +7,7 @@ control: DropDownList
 documentation: ug
 ---
 
-# Keyboard Interaction
+## Keyboard Interaction
 
 You can use Keyboard shortcut keys as an alternative to the mouse by using the DropDown widget. DropDown widget allows you to perform all kind of actions by using keyboard shortcuts.
 
@@ -18,7 +18,7 @@ Shortcut Key</td><td>
 Description</td></tr>
 <tr>
 <td>
-<a href="http://en.wikipedia.org/wiki/Access_key">Access key</a> + j	</td><td>
+{ [Access key](http://en.wikipedia.org/wiki/Access_key) | markdownify } + j	</td><td>
 Focuses into the DropDown text box.</td></tr>
 <tr>
 <td>
@@ -61,9 +61,7 @@ Closes the popup window.</td></tr>
 Alt +down </td><td>
 Opens the popup window.</td></tr>
 </table>
-
-
-## Configure Keyboard Interaction
+### Configure Keyboard Interaction
 
 In an ASPX page, add an element to configure the DropDownList widget and enable keyboard interaction by setting the accesskey property
 
@@ -108,7 +106,7 @@ In an ASPX page, add an element to configure the DropDownList widget and enable 
 Run the sample, press Alt + J to focus in the DropDownList widget that enables it and you can navigate by using arrow keys and Esc key to close the popup.
 
 
-![](Keyboard-Interaction_images/Keyboard-Interaction_img1.png) 
+{ ![](Keyboard-Interaction_images/Keyboard-Interaction_img1.png) | markdownify }
 {:.image }
 
 

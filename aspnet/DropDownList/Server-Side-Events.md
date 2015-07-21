@@ -7,7 +7,7 @@ control: DropDownList
 documentation: ug
 ---
 
-# Server Side Events
+## Server Side Events
 
 The following are the server side events available in the DropDownList control.
 
@@ -64,7 +64,7 @@ In the ASPX page, add the DropDownList control to configure the DropDownList eve
 
 {% endhighlight %}
 
-The code Define dropdownlist ValueSelect server side event in behind.
+The code Define dropdownlist___ValueSelect server side event in behind.
 
 {% highlight c# %}
 

@@ -7,12 +7,13 @@ control: Chart
 documentation: ug
 ---
 
-# Chart Elements
+## Chart Elements
 
 A Chart is composed of various sub elements such as legends, areas, series, and axis. The following screenshot illustrates the elements of the Chart control.
 
 
-![](Chart-Elements_images/Chart-Elements_img1.png) 
+
+{ ![](Chart-Elements_images/Chart-Elements_img1.png) | markdownify }
 {:.image }
 
 

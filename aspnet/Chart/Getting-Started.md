@@ -19,11 +19,11 @@ This section encompasses how to configure the ASP.NET Charts for your business n
 
 
 
-![](Getting-Started_images/Getting-Started_img1.png) 
+{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
 {:.image }
 
 
-## Configure Chart
+Configure Chart
 
 Getting started with your ASP.NET Chart is very easy.  You can start by creating a simple line Chart.
 
@@ -31,7 +31,7 @@ Create an ASP Project and add necessary Dll’s and Scripts by referring [ASP-Ge
 
 Create the web form named as default and add the following template
 
-{% highlight html %}
+
 
 &lt;%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Chart_ASP.Chart._default" %&gt;
 
@@ -58,11 +58,11 @@ Create the web form named as default and add the following template
     &lt;script src="../Scripts/ej/ej.web.all.js" type="text/javascript"&gt;&lt;/script&gt;
 
 &lt;/head&gt;
-{% endhighlight  %}
+
 
 Initialize the Chart like below code snippet
 
-{% highlight html %}
+
 
 //...    
 
@@ -75,7 +75,7 @@ Initialize the Chart like below code snippet
 &lt;div&gt;
 
 //...  
-{% endhighlight  %}
+
 
 The above code example renders a Chart with the default Columnseries type and some random values assigned to the column series. 
 
@@ -83,11 +83,11 @@ The following screenshot displays the Chart.
 
 
 
-![](Getting-Started_images/Getting-Started_img2.png)
+{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
 {:.image }
 
 
-## Add a Chart Series
+Add a Chart Series
 
 By default, line series is used. To create a series, you need to add the following code example to the scripts. For example, the following steps illustrate how to add a column series to the Chart.
 
@@ -95,7 +95,7 @@ By default, line series is used. To create a series, you need to add the followi
 2. Then, you need to specify the type of series you want to render using “type” property.
 3. You can add x and y points to the series as in the following code example.
 
-{% highlight html %}
+
 
 &lt;ej:Chart ID="Chart1" runat="server&gt;
 
@@ -144,21 +144,21 @@ By default, line series is used. To create a series, you need to add the followi
         &lt;/ej:Chart&gt; 
 
 
-{% endhighlight %}
+
 
 The following screenshot displays a Chart series:
 
-![](Getting-Started_images/Getting-Started_img3.png)
+{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
 {:.image }
 
 
-## Add JSON data to the Chart
+Add JSON data to the Chart
 
 You can add JSON data to the Chart using the datasource property in Chart.
 
 In aspx.cs
 
-{% highlight c# %}
+
 [CS]
 
 
@@ -261,10 +261,10 @@ public class chartData
 
     }
 
-{% endhighlight %}
+
 In aspx
 
-{% highlight html %}
+
 
 &lt;ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true"&gt;
 
@@ -280,16 +280,16 @@ In aspx
 
    &lt;/ej:Chart&gt;
 
-{% endhighlight  %}
+
 The following screenshot displays the Chart when JSON data is added.
 
 
 
-![](Getting-Started_images/Getting-Started_img4.png) 
+{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
 {:.image }
 
 
-## Add Chart Axis of your choice
+Add Chart Axis of your choice
 
 In the Chart when data source is added, the axes are provided explicitly and the Chart initializes the right axis based on the data type. You can also specify the axis type of your choice using ValueType option and customize the options available in the axis. The following axis types are supported:
 
@@ -305,7 +305,7 @@ Since the values are in Farenheit for Temperature and Inches for Precipetation, 
 In order to add additional Axes to the Chart other than PrimaryXAxis and PrimaryYAxis, you need to initialize axes option with collection of axis and set Name for axis in the Axes collection.
 
 The following code example illustrates how to add Chart axis.
-{% highlight html %}
+
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;
 
@@ -324,11 +324,11 @@ The following code example illustrates how to add Chart axis.
             &lt;/Axes&gt;         
 
  &lt;/ej:Chart&gt;
-{% endhighlight  %}
+
 Assign the axis to the respective series
 
 To assign the axis to the respective series you can set YAxisName property of the series. In the following code example, YAxisName of Column series is set to “Precipitation”. This is the name set to the axis in the above code example.
-{% highlight html %}
+
 
    &lt;ej:Chart ID="Chart1" runat="server" CanResize="true"&gt;   
 
@@ -346,22 +346,22 @@ To assign the axis to the respective series you can set YAxisName property of th
 
     &lt;/ej:Chart&gt;
 
-{% endhighlight  %}
+
 
 The following screenshot displays a Chart with desired output.
 
 
 
-![](Getting-Started_images/Getting-Started_img5.png)
+{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
 {:.image }
 
 
-## Add Data Labels
+Add Data Labels
 
 Data Labels display the series points in Chart. To display the data labels, you need to enable the “Visible” property of DataLabel in the Marker of specific series. By default, it displays the Y value with label format provided in axis (For example: 4.88 inch). The following code example shows how to add DataLabels.
 
 
-{% highlight html %}
+
 &lt;ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true"&gt;
 
 
@@ -379,19 +379,19 @@ Data Labels display the series points in Chart. To display the data labels, you 
         &lt;/ej:Chart&gt;
 
 
-{% endhighlight %}
+
 The following screenshot displays the Chart when data Labels are enabled.
 
 
 
-![C:/Users/labuser/Desktop/label.png](Getting-Started_images/Getting-Started_img6.png) 
+{ ![C:/Users/labuser/Desktop/label.png](Getting-Started_images/Getting-Started_img6.png) | markdownify }
 {:.image }
 
 
-## Enable ToolTip
+Enable ToolTip
 
 To display the tooltip of Chart series, you can enable the “Visible” property of “Tooltip” in the specific series. By default, it displays XandY value of points on mouse over the points. The following code example shows how to enable Tooltip.
-{% highlight html %}
+
 
   &lt;ej:Chart ID="Chart1" runat="server"&gt;
 
@@ -403,12 +403,12 @@ To display the tooltip of Chart series, you can enable the “Visible” propert
 
          &lt;/ej:Chart&gt;
 
-{% endhighlight %}
+
 The following screenshot displays the Chart when tooltip is enabled.
 
 
 
-![C:/Users/labuser/Desktop/tool.png](Getting-Started_images/Getting-Started_img7.png) 
+{ ![C:/Users/labuser/Desktop/tool.png](Getting-Started_images/Getting-Started_img7.png) | markdownify }
 {:.image }
 
 

@@ -7,11 +7,11 @@ control: DropDownList
 documentation: ug
 ---
 
-# Animation with DropDown list 
+## Animation with DropDown list 
 
 This feature adds some animation effect to DropDown widget to show /hide the popup list. This is achieved by setting the Boolean value to the EnableAnimationproperty.
 
-## Defining the Animation property
+### Defining the Animation property
 
 The following step explains the configuration of the EnableAnimationproperty in the DropDownList.
 

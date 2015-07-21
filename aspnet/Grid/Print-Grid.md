@@ -7,12 +7,12 @@ control: Grid
 documentation: ug
 ---
 
-# Print Grid
+## Print Grid
 
 Printing is easy with Grid control by using Print Grid feature. Toolbar has the Print icon, it allows to print the Grid records. When you click the Print icon, it internally calls the public print() method of Grid object to print the Grid. You can also use print() method manually to print.
 
 
-{% highlight html %}
+
 [ASP]
 
 
@@ -41,8 +41,8 @@ Printing is easy with Grid control by using Print Grid feature. Toolbar has the 
 
         &lt;/ej:Grid&gt;
 
-{% endhighlight  %}
-{% highlight c# %}
+
+
 [CS]
 
 public partial class PrintGrid : System.Web.UI.Page
@@ -140,10 +140,10 @@ public partial class PrintGrid : System.Web.UI.Page
     }
 
 
-{% endhighlight %}
+
 The following output is displayed as a result of the above code example.
 
-![](Print-Grid_images/Print-Grid_img1.png)
+{ ![](Print-Grid_images/Print-Grid_img1.png) | markdownify }
 {:.image }
 
 

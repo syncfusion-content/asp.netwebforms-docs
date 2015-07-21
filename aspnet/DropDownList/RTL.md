@@ -7,11 +7,11 @@ control: DropDownList
 documentation: ug
 ---
 
-# RTL
+## RTL
 
 This feature supports to change the left-to-right alignment of the DropDown widget to right-to-left (RTL). 
 
-## Defining the RTL property
+### Defining the RTL property
 
 The following step explains the configuration of EnableRTL property in the DropDownList. 
 
@@ -60,7 +60,7 @@ The following step explains the configuration of EnableRTL property in the DropD
 Output of the above step.
 
 
-![](RTL_images/RTL_img1.png)
+{ ![](RTL_images/RTL_img1.png) | markdownify }
 {:.image }
 
 

@@ -7,7 +7,7 @@ control: Gantt
 documentation: ug
 ---
 
-# Toolbar
+## Toolbar
 
 Gantt control contains toolbar options for editing, searching, expanding and collapsing all records, indent, out dent, delete and add task. You can enable toolbar using the following code example.
 
@@ -37,7 +37,7 @@ The following screenshot shows the toolbar option in Gantt control.
 
 
 
-![](Toolbar_images/Toolbar_img1.png)
+{ ![](Toolbar_images/Toolbar_img1.png) | markdownify }
 {:.image }
 
 

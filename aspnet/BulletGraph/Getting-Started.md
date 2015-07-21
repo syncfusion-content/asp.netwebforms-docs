@@ -25,13 +25,13 @@ In the following screenshot, a BulletGraph is used to compare the actual monsoon
 
 1. Create simple BulletGraph.
 
-{% highlight html %}
+
 
 &lt;ej:Bulletgraph ID="BulletGraph1" runat="server"&gt;
 
 &lt;/ej:Bulletgraph&gt;
 
-{% endhighlight  %}
+
 
 2. Execute the above code to display the BulletGraph. To customize the measure bars in the BulletGraph, you can pass the data either locally or remotely.
 
@@ -45,8 +45,8 @@ You can customize the values of feature and comparative measure bars in a Bullet
 
 Assign the data in BulletLocalDataBind variable to the DataSource property of BulletGraph as illustrated in the following code example. 
 
-
 {% highlight c# %}
+
 [CS]
 
 List<BulletLocalDataBind> data = new List<BulletLocalDataBind>();
@@ -108,7 +108,9 @@ List<BulletLocalDataBind> data = new List<BulletLocalDataBind>();
             this.BulletGraph1.DataBind();
 
 
+
 {% endhighlight %}
+
 Once the DataSource property is assigned with the required values, you can bind the variable names used in the JSON data to the corresponding fields of the BulletGraph as shown in the following code example.
 
 {% highlight html %}
@@ -224,6 +226,7 @@ After adding QualitativeRanges to the BulletGraph, the control appears as follow
 ## Ticks and Measure Bars Customization
 
 You can do the following code changes in the quantitative scale to customize the tick size, the color of the feature bar and the comparative measure symbols.
+
 {% highlight html %}
 [ASP.NET]
 
@@ -386,6 +389,7 @@ You can use a Tooltip in your application to display the values of forecasted ra
 &lt;/CaptionSettings&gt;
 
 &lt;/ej:Bulletgraph&gt;
+
 
 
 [Template content]

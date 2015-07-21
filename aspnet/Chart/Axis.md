@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Axis
+## Axis
 
 Charts typically have two axes that are used to measure and categorize data: a vertical (y) axis, and a horizontal (x) axis. To make a Chart easier to understand, you can add axis titles, tick marks, and labels. You can also change the alignment of axis title and format the labels that are displayed on axes. By default horizontal (x) axis and vertical (y) axis gets added to the Chart with axis labels, gridlines, and tick lines. You can also customize these axis explicitly by adding axis title or removing gridlines, tick lines that are added to the axis by default.
 
@@ -19,7 +19,7 @@ Chart Axis supports the following types:
 * Logarithmic
 
 You can choose any of the Chart axis type using the” ValueType” property in axis. Axis calculates the range and interval automatically based on the series data points.
-{% highlight html %}
+
 [ASP.NET]
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;
@@ -30,21 +30,21 @@ You can choose any of the Chart axis type using the” ValueType” property in 
 
  &lt;/ej:Chart&gt;
 
-{% endhighlight %}
 
 
 
 
 
-![](Axis_images/Axis_img1.png) 
+
+{ ![](Axis_images/Axis_img1.png) | markdownify }
 {:.image }
 
 
-## Double 
+### Double 
 
 By default the ValueType of the axis is double and it represents the numerical data.
 
-{% highlight html %}
+
 [ASP.NET]
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;
@@ -85,7 +85,7 @@ By default the ValueType of the axis is double and it represents the numerical d
 
 
 
-{% endhighlight %}
+
 
 
 
@@ -101,7 +101,7 @@ The following screenshot displays a Chart’s x-axis with RangePadding set to No
 
 
 
-![](Axis_images/Axis_img2.png)
+{ ![](Axis_images/Axis_img2.png) | markdownify }
 {:.image }
 
 
@@ -113,7 +113,7 @@ The following screenshot illustrates a Chart’s x-axis with RangePadding set to
 
 
 
-![](Axis_images/Axis_img3.png)
+{ ![](Axis_images/Axis_img3.png) | markdownify }
 {:.image }
 
 
@@ -125,7 +125,7 @@ The following screenshot illustrates a Chart’s y-axis with RangePadding set to
 
 
 
-![](Axis_images/Axis_img4.png)
+{ ![](Axis_images/Axis_img4.png) | markdownify }
 {:.image }
 
 
@@ -137,11 +137,11 @@ The following screenshot illustrates a Chart’s x-axis with RangePadding set to
 
 
 
-![](Axis_images/Axis_img5.png)
+{ ![](Axis_images/Axis_img5.png) | markdownify }
 {:.image }
 
 
-## DateTime Axis
+### DateTime Axis
 
 The DateTime Axis has a property IntervalType that sets the DateTime interval to one of the following:
 
@@ -154,7 +154,7 @@ The DateTime Axis has a property IntervalType that sets the DateTime interval to
 * Years
 
 The Interval property of DateTime Axis can be any double value based on the IntervalType.
-{% highlight html %}
+
 [ASP.NET]
 
 &lt;ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true"&gt;
@@ -171,10 +171,9 @@ The Interval property of DateTime Axis can be any double value based on the Inte
 
         &lt;/ej:Chart&gt;
 
-{% endhighlight  %}
 
-{% highlight c# %}
-[CS]
+
+
 
      this.Chart1.PrimaryXAxis.Range.Min = new DateTime(2000, 6, 1);
 
@@ -251,10 +250,10 @@ The Interval property of DateTime Axis can be any double value based on the Inte
     }
 
 
-{% endhighlight %}
 
 
-![](Axis_images/Axis_img6.png)
+
+{ ![](Axis_images/Axis_img6.png) | markdownify }
 {:.image }
 
 
@@ -270,7 +269,7 @@ The following screenshot illustrates a Chart’s x-axis with RangePadding set to
 
 
 
-![](Axis_images/Axis_img7.png)
+{ ![](Axis_images/Axis_img7.png) | markdownify }
 {:.image }
 
 
@@ -282,7 +281,7 @@ The following screenshot illustrates a Chart’s x-axis with RangePadding set to
 
 
 
-![](Axis_images/Axis_img8.png)
+{ ![](Axis_images/Axis_img8.png) | markdownify }
 {:.image }
 
 
@@ -294,14 +293,14 @@ The following screenshot illustrates a Chart’s x-axis with RangePadding set to
 
 
 
-![](Axis_images/Axis_img9.png)
+{ ![](Axis_images/Axis_img9.png) | markdownify }
 {:.image }
 
 
-## Category Axis
+### Category Axis
 
 Category (x) axis displays text labels instead of numerical intervals. By default, the interval is 1 for which all the labels are displayed. To display every nth label, you can set that in Interval property. For example, to display every 2nd label, you can set Interval as 2
-{% highlight html %}
+
 [ASP.NET]
 
 &lt;ej:Chart ID="Chart1" runat="server" &gt;
@@ -339,10 +338,10 @@ Category (x) axis displays text labels instead of numerical intervals. By defaul
       &lt;/ej:Chart&gt;
 
 
-{% endhighlight %}
 
-{% highlight c# %}
-[CS]
+
+
+
 
       this.Chart1.PrimaryYAxis.Range.Min =0;
 
@@ -351,17 +350,17 @@ Category (x) axis displays text labels instead of numerical intervals. By defaul
       this.Chart1.PrimaryYAxis.Range.Interval = 20; 
 
 
-{% endhighlight  %}
 
 
-![](Axis_images/Axis_img10.png) 
+
+{ ![](Axis_images/Axis_img10.png) | markdownify }
 {:.image }
 
 
-## Logarithmic Axis
+### Logarithmic Axis
 
 An axis displaying a logarithmic scale is very useful when your data values span orders of magnitude. Log axis is enabled using ValueType property.
-{% highlight html %}
+
 [ASP.NET]
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;
@@ -410,15 +409,19 @@ An axis displaying a logarithmic scale is very useful when your data values span
 
       &lt;/ej:Chart&gt;
 
-{% endhighlight  %}
 
 
-![](Axis_images/Axis_img11.png) 
+
+
+
+
+{ ![](Axis_images/Axis_img11.png) | markdownify }
 {:.image }
+
 
 Chart Axis Properties:
 
-_Table1: Chart Axis Properties Table_
+_Table_ _1__: Chart Axis Properties Table_
 
 <table>
 <tr>
@@ -434,14 +437,10 @@ An integer property used to indicate the preferred total number of intervals to 
 MaximumLabels</td><td>
 An Integer property used to indicate number of labels per 100 pixels. By default, 3 labels renders for 100 pixels of length.</td></tr>
 </table>
-
-
-
-
-## Multiple Axis
+### Multiple Axis
 
 In cases of multiple series, a Chart can have multiple x and y axes to represent each series. The axes can be arranged in stacking or side-by-side mode. By default, the axes are arranged in side-by-side mode. In order to arrange the axis in a stacking mode, you can split the Chart into number of rows or columns using RowDefinitions and ColumnDefinitions and then you can place the required axis in the desired row and column. Heights of the vertical axes are customized using the RowHeight property in RowDefinitions and the widths of the horizontal axes are customized using ColumnWidth property in ColumnDefinitions. 
-{% highlight html %}
+
 [ASP.NET]
 
 &lt;ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true"&gt;
@@ -529,10 +528,10 @@ In cases of multiple series, a Chart can have multiple x and y axes to represent
 
 
 
-{% endhighlight  %}
 
 
-![](Axis_images/Axis_img12.png)
+
+{ ![](Axis_images/Axis_img12.png) | markdownify }
 {:.image }
 
 
@@ -540,14 +539,14 @@ In the above code, you can remove the RowDefinition and RowIndex from axis to ar
 
 
 
-![](Axis_images/Axis_img13.png)
+{ ![](Axis_images/Axis_img13.png) | markdownify }
 {:.image }
 
 
 Spanning Axis:
 
 Charts having multiple series have multiple x and y axis to represent each series. By default, the axes are arranged in the corresponding row/column position. Spanning feature allows you to span the axis across multiple panes/rows. 
-{% highlight html %}
+
 [ASP.NET]
 
 &lt;ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true" &gt;
@@ -658,20 +657,20 @@ Charts having multiple series have multiple x and y axis to represent each serie
 
 
 
-{% endhighlight %}
 
 
 
-![](Axis_images/Axis_img14.png)
+
+{ ![](Axis_images/Axis_img14.png) | markdownify }
 {:.image }
 
 
-## Axis Title
+### Axis Title
 
 You can customize the ejChart Axis title text, font styles and color using “Title” property of axis.
 
 
-{% highlight html %}
+
 [ASP.NET]
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;
@@ -684,27 +683,27 @@ You can customize the ejChart Axis title text, font styles and color using “Ti
 
 
 
-{% endhighlight %}
 
 
 
-![](Axis_images/Axis_img15.png)
+
+{ ![](Axis_images/Axis_img15.png) | markdownify }
 {:.image }
 
 
-### Trim Title
+#### Trim Title
 
 Essential Chart supports TrimmingAxisTitles with the properties, EnableTrim and MaximumTitleWidth. These are useful for shortening the lengthy titles. On hovering with the mouse, you can see the full title in the tooltip.
 
-![](Axis_images/Axis_img16.png)
+{ ![](Axis_images/Axis_img16.png) | markdownify }
 {:.image }
 
 
-![](Axis_images/Axis_img17.png)
+{ ![](Axis_images/Axis_img17.png) | markdownify }
 {:.image }
 
 
-{% highlight html %}
+
 
 [ASP.NET]
 
@@ -737,12 +736,12 @@ Essential Chart supports TrimmingAxisTitles with the properties, EnableTrim and 
 &lt;/ ej:Chart&gt;
 
 
-{% endhighlight %}
-## Labels
+
+### Labels
 
 The axis labels are present along the axis showing the value of the data it corresponds to. You can further customize the Chart axis labels using “Font” and “LabelFormat” properties of the axis.  
 
-{% highlight html %}
+
 
 [ASP.NET]
 
@@ -760,9 +759,9 @@ The axis labels are present along the axis showing the value of the data it corr
 
 
 
-{% endhighlight %}
 
-![](Axis_images/Axis_img18.png)
+
+{ ![](Axis_images/Axis_img18.png) | markdownify }
 {:.image }
 
 
@@ -775,7 +774,7 @@ There are two types of LabelPlacement:
 * BetweenTicks
 * OnTicks
 
-{% highlight html %}
+
 
 [ASP.NET]
 
@@ -790,23 +789,23 @@ There are two types of LabelPlacement:
 
 
 
-{% endhighlight %}
 
 
-![](Axis_images/Axis_img19.png)
+
+{ ![](Axis_images/Axis_img19.png) | markdownify }
 {:.image }
 
 
 
 
-![](Axis_images/Axis_img20.png)
+{ ![](Axis_images/Axis_img20.png) | markdownify }
 {:.image }
 
 
 Label Position
 
 Axis labels can further be customized to render inside the chart area using the property LabelPosition. By default, it is set as Outside. This helps to display labels in a proper manner while multiple axes are used in the chart.
-{% highlight html %}
+
 [ASP.NET]
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;
@@ -817,9 +816,9 @@ Axis labels can further be customized to render inside the chart area using the 
 
 &lt;/ej:Chart&gt;
 
-{% endhighlight %}
 
-![](Axis_images/Axis_img21.png) 
+
+{ ![](Axis_images/Axis_img21.png) | markdownify }
 {:.image }
 
 
@@ -853,16 +852,16 @@ Axis labels can further be customized to render inside the chart area using the 
 
 
 
-_Figure46: Label inside Chart_
+_Figure_ _46__: Label inside Chart_
 
 
 
-Axis label trimming
+Axis label trimming 
 
 Chart provides support for trimming y axis labels and x axis labels by using the properties EnableTrim and MaximumLabelWidth. These are used to show the lengthy labels in a shorter form. On mouse hover, it shows the full label in the tooltip.
 
 
-{% highlight html %}
+
 [ASP.NET] 
 
 &lt;ej:Chart ID="Chart1" runat="server" &gt;
@@ -875,15 +874,15 @@ Chart provides support for trimming y axis labels and x axis labels by using the
 
 
 
-{% endhighlight  %}
+
 
 The following screenshot displays the Chart Axis with trimming
 
-![](Axis_images/Axis_img22.png)
+{ ![](Axis_images/Axis_img22.png) | markdownify }
 {:.image }
 
 
-## Tick Marks
+### Tick Marks
 
 Tick lines are displayed horizontally and vertically in Chart axis based on the orientation of the axis.
 
@@ -893,7 +892,7 @@ It is rendered in Chart axis for each interval of axis range. By default, it is 
 Minor Tick Lines
 
 It is rendered between the major tick lines of Chart axis. To display MinorTickLines in Chart axis enable Visible property of “MinorTickLines” and set values to “MinorTicksPerInterval” in the respective axis. By default, it is invisible. You can customize the minor tick lines width, and color.
-{% highlight html %}
+
  [ASP.NET]
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;
@@ -905,10 +904,10 @@ It is rendered between the major tick lines of Chart axis. To display MinorTickL
  &lt;/ej:Chart&gt;
 
 
-{% endhighlight %}
 
 
-![](Axis_images/Axis_img23.png)
+
+{ ![](Axis_images/Axis_img23.png) | markdownify }
 {:.image }
 
 
@@ -916,7 +915,7 @@ Tick lines placement
 
 You can customize tick lines and render them inside the chart area using the property TickLinesPosition. By default, it is set as outside. This property will be used when labels are inside.
 
-{% highlight html %}
+
 
 [ASP.NET]
 
@@ -929,12 +928,12 @@ You can customize tick lines and render them inside the chart area using the pro
 &lt;/ej:Chart&gt;
 
 
-{% endhighlight %}
-![](Axis_images/Axis_img24.png)
+
+{ ![](Axis_images/Axis_img24.png) | markdownify }
 {:.image }
 
 
-## Grid Lines	
+### Grid Lines	
 
 Grid lines are displayed in horizontal and vertical position in Chart area based on the intervals.
 
@@ -945,7 +944,7 @@ It is rendered in Chart area for each interval of axis range. By default, it is 
 Minor Grid Lines
 
 It is rendered between the major gridlines of Chart area.To display minor grid lines in Chart area enable Visible property of “MinorGridLines” and set values to “MinorTicksPerInterval” in the respective axis. By default, ‘Visibile’ property is set to “false”. You can customize the minor grid lines width, and dashArray of gridline.
-{% highlight html %}
+
  [ASP.NET]
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;
@@ -965,10 +964,10 @@ It is rendered between the major gridlines of Chart area.To display minor grid l
       &lt;/ej:Chart&gt;
 
 
-{% endhighlight %}
 
 
-![](Axis_images/Axis_img25.png) 
+
+{ ![](Axis_images/Axis_img25.png) | markdownify }
 {:.image }
 
 
@@ -983,7 +982,7 @@ Even Grid Band are counted from axes lines, i.e the band which is immediate adja
 Odd Grid Band
 
 Immediate adjacent band of every even grid bands are Odd Grid Bands. You can discriminate the odd grid band from even by setting Fill property of Odd. You can customize the Opacity of the odd grid band color.
-{% highlight html %}
+
  [ASP.NET]
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;
@@ -1016,11 +1015,11 @@ Immediate adjacent band of every even grid bands are Odd Grid Bands. You can dis
 
 &lt;/ej:Chart&gt;
 
-{% endhighlight  %}
 
-_Figure48: Chart explaining grid band_
 
-![C:/Users/dineshkumarn/Desktop/ug line.png](Axis_images/Axis_img26.png)
+_Figure_ _48__: Chart explaining grid band_
+
+{ ![C:/Users/dineshkumarn/Desktop/ug line.png](Axis_images/Axis_img26.png) | markdownify }
 {:.image }
 
 
@@ -1052,10 +1051,10 @@ _Figure48: Chart explaining grid band_
 
 
 
-## Inversed Axis
+### Inversed Axis
 
 You can display the Chart series in to inversed position using “IsInversed” property of Chart Axis. This is illustrated in the following code. 
-{% highlight html %}
+
 [ASP.NET]
 
 &lt;ej:Chart ID="Chart1" runat="server"&gt;          
@@ -1064,18 +1063,18 @@ You can display the Chart series in to inversed position using “IsInversed” 
 
  &lt;/ej:Chart&gt;
 
-{% endhighlight  %}
 
 
 
-![](Axis_images/Axis_img27.png)
+
+{ ![](Axis_images/Axis_img27.png) | markdownify }
 {:.image }
 
 
-## Opposed Position
+### Opposed Position
 
 By default, the x-axis is arranged horizontally at the bottom of the Chart and the y-axis is arranged vertically at the left side of the Chart. You can change the alignment of the axis by setting OpposedPosition to true, which arranges the x-axis at the top and the y-axis at the right of the Chart.  
-{% highlight html %}
+
 [ASP.NET]
 
   &lt;ej:Chart ID="Chart1" runat="server"&gt;       
@@ -1087,14 +1086,14 @@ By default, the x-axis is arranged horizontally at the bottom of the Chart and t
    &lt;/ej:Chart&gt;
 
 
-{% endhighlight  %}
 
 
-![](Axis_images/Axis_img28.png)
+
+{ ![](Axis_images/Axis_img28.png) | markdownify }
 {:.image }
 
 
-## Smart Axis Labels
+### Smart Axis Labels
 
 Sometimes the Chart dimensions could cause the labels to intersect. You can avoid overlapping labels using “LabelIntersectAction” property of char axis. The Chart by default renders the texts one over the other. But, it also has some built-in capabilities to work around this overlap and lets you dictate the technique to follow. Refer to the following properties.
 
@@ -1104,7 +1103,7 @@ Sometimes the Chart dimensions could cause the labels to intersect. You can avoi
 * MultipleRows – Split the intersecting labels in to multiple rows and display on the axis
 * Wrap – Wrap the intersecting text and display
 * Hide – It doesn’t display the intersecting label texts on the axis.
-{% highlight html %}
+
  [ASP.NET] 
 
   &lt;ej:Chart ID="Chart1" runat="server"&gt;       
@@ -1116,10 +1115,10 @@ Sometimes the Chart dimensions could cause the labels to intersect. You can avoi
      &lt;/ej:Chart&gt;
 
 
-{% endhighlight %}
 
 
-![](Axis_images/Axis_img29.png)
+
+{ ![](Axis_images/Axis_img29.png) | markdownify }
 {:.image }
 
 

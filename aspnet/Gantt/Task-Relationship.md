@@ -7,7 +7,7 @@ control: Gantt
 documentation: ug
 ---
 
-# Task Relationship
+## Task Relationship
 
 You can show the relationship between two tasks in Gantt control. These relationships are categorized into four types based on the start and finish date of the task.
 
@@ -15,7 +15,7 @@ You can show the relationship between two tasks in Gantt control. These relation
 
               You cannot start a task until the other task also starts.
 
-![C:/Users/Rajasekar/Desktop/SS.png](Task-Relationship_images/Task-Relationship_img1.png) 
+{ ![C:/Users/Rajasekar/Desktop/SS.png](Task-Relationship_images/Task-Relationship_img1.png) | markdownify }
 {:.image }
 
 
@@ -23,7 +23,7 @@ You can show the relationship between two tasks in Gantt control. These relation
 
 You cannot finish a task until the other task is started.
 
-![C:/Users/Rajasekar/Desktop/SF.png](Task-Relationship_images/Task-Relationship_img2.png)
+{ ![C:/Users/Rajasekar/Desktop/SF.png](Task-Relationship_images/Task-Relationship_img2.png) | markdownify }
 {:.image }
 
 
@@ -31,7 +31,7 @@ You cannot finish a task until the other task is started.
 
              You cannot start a task until the other task is completed.
 
-![C:/Users/Rajasekar/Desktop/FS.png](Task-Relationship_images/Task-Relationship_img3.png)
+{ ![C:/Users/Rajasekar/Desktop/FS.png](Task-Relationship_images/Task-Relationship_img3.png) | markdownify }
 {:.image }
 
 
@@ -41,7 +41,7 @@ You cannot finish a task until the other task is started.
 
     You cannot finish a task until the other task is completed.
 
-![C:/Users/Rajasekar/Desktop/FF.png](Task-Relationship_images/Task-Relationship_img4.png)
+{ ![C:/Users/Rajasekar/Desktop/FF.png](Task-Relationship_images/Task-Relationship_img4.png) | markdownify }
 {:.image }
 
 
@@ -73,7 +73,7 @@ The following screenshot displays the output of the above code.
 
 
 
-![](Task-Relationship_images/Task-Relationship_img5.png)
+{ ![](Task-Relationship_images/Task-Relationship_img5.png) | markdownify }
 {:.image }
 
 

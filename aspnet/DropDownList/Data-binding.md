@@ -7,9 +7,9 @@ control: DropDownList
 documentation: ug
 ---
 
-# Data-binding 
+## Data-binding 
 
-## Data fields and configuration 
+### Data fields and configuration 
 
 The following sub-properties provide a way to bind the data either locally or remotly to the DropDown control.
 
@@ -123,16 +123,14 @@ It defines the table name for tag value or displays text while rendering remote 
 Null</td><td>
 object</td></tr>
 </table>
-
-
-## Local data
+### Local data
 
 DropDown provides data binding support for DropDownList. Thus you can bind the data from JSON Data. To achieve this, map the corresponding file with their column names
 
 Also, provide support to add and customize the images and list item by using the appropriate data fields. 
 
 In an ASPX page, add an element to configure DropDownList.
-{% highlight html %}
+
 <table>
 <tr>
 <td>
@@ -142,7 +140,7 @@ In an ASPX page, add an element to configure DropDownList.
 </td></tr>
 </table>
 
-{% endhighlight  %}
+
 {% highlight c# %}
 
   protected void Page_Load(object sender, EventArgs e)
@@ -193,11 +191,11 @@ In an ASPX page, add an element to configure DropDownList.
 
 Output of the above step.
 
-![C:/Users/ApoorvahR/Desktop/1.png](Data-binding_images/Data-binding_img1.png)
+{ ![C:/Users/ApoorvahR/Desktop/1.png](Data-binding_images/Data-binding_img1.png) | markdownify }
 {:.image }
 
 
-## SQLDataSource
+### SQLDataSource
 
 SqlDataSource is designed to work with SQL Server databases. It uses internally, the SQL Server .NET data provider. SQL Server .NET data provider classes are defined in the System.Data.SqlClient namespace. 
 
@@ -224,13 +222,16 @@ In the ASPX page, add DropDownList.
  Create a data table in .mdf format with the following structure and add it in APP_Data folder 
 
 
-![](Data-binding_images/Data-binding_img2.png)
+
+{ ![](Data-binding_images/Data-binding_img2.png) | markdownify }
 {:.image }
 
 
 Add connection string in the Web.config file.
 
-> _Note: Change the username with your system name in the following connection string._ 
+> { ![](Data-binding_images/Data-binding_img3.jpeg) | markdownify }
+{:.image }
+_Note: Change the username with your system name in the following connection string._ 
 
 
 
@@ -258,11 +259,11 @@ Add connection string in the Web.config file.
 
 Output of the above steps.
 
-![](Data-binding_images/Data-binding_img4.png)
+{ ![](Data-binding_images/Data-binding_img4.png) | markdownify }
 {:.image }
 
 
-## LINQDataSource
+### LINQDataSource
 
 LinqDataSource is designed to work with DataContext. It uses internally, the data model (dbml) file. Data model contains list of tables from specific database. 
 
@@ -300,14 +301,17 @@ Create a table in .mdf format by using the following table structure. Create a d
 
 
 
-![](Data-binding_images/Data-binding_img5.png)
+{ ![](Data-binding_images/Data-binding_img5.png) | markdownify }
 {:.image }
 
 
 Add connection String in the Web.config file.
 
+> 
 
-> _Note: Change the username with your system name in the following connection string._
+> { ![](Data-binding_images/Data-binding_img6.jpeg) | markdownify }
+{:.image }
+_Note: Change the username with your system name in the following connection string._
 
 
 
@@ -333,11 +337,11 @@ Add connection String in the Web.config file.
 
 Output of the above steps
 
-![](Data-binding_images/Data-binding_img7.png)
+{ ![](Data-binding_images/Data-binding_img7.png) | markdownify }
 {:.image }
 
 
-## ObjectDataSource
+### ObjectDataSource
 
 The ObjectDataSource control allows you to bind a specific data layer in a similar manner where other controls bind to the database.The ObjectDataSource control can bind to any method that returns a DataSet or an IEnumerable object. For example, a DataReader or a collection of Classes. The major advantage of binding via ObjectDataSource is only the records required in the current view are retrieved from the database, greatly optimizing the performance and runtime memory usage. 
 
@@ -475,11 +479,11 @@ public class TabData
 
 Output of the above steps.
 
-![](Data-binding_images/Data-binding_img8.png)
+{ ![](Data-binding_images/Data-binding_img8.png) | markdownify }
 {:.image }
 
 
-## XMLDataSource
+### XMLDataSource
 
 XmlDataSource is used to work with XML documents. The following steps explain the details about the data binding from XmlDataSource.
 
@@ -539,11 +543,11 @@ Create new xml file in App_Data folder as ‘XMLData.xml’ and add the followin
 
 Output of the above steps
 
-![](Data-binding_images/Data-binding_img9.png)
+{ ![](Data-binding_images/Data-binding_img9.png) | markdownify }
 {:.image }
 
 
-## Remote data 
+### Remote data 
 
 You can bind the data for the DropDownList from remote that can fetch the data from any other server located as remote web service. By using Query options, you can pass the query string to filter the data that helps to avoid the extensive properties look up. 
 
@@ -591,7 +595,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 Output of the above step.
 
-![C:/Users/ApoorvahR/Desktop/2.png](Data-binding_images/Data-binding_img10.png)
+{ ![C:/Users/ApoorvahR/Desktop/2.png](Data-binding_images/Data-binding_img10.png) | markdownify }
 {:.image }
 
 

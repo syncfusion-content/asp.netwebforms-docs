@@ -7,7 +7,7 @@ control: Maps
 documentation: ug
 ---
 
-# Layers
+## Layers
 
 Map is maintained through Layers and it can accommodate one or more layers.
 
@@ -79,7 +79,7 @@ In this example, World Map shape is used as shape data by utilizing the “World
 
 
 
-![](Layers_images/Layers_img1.png)
+{ ![](Layers_images/Layers_img1.png) | markdownify }
 {:.image }
 
 

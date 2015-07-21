@@ -7,7 +7,7 @@ control: Gantt
 documentation: ug
 ---
 
-# Columns
+## Columns
 
 The TreeGrid column displays the information from a bounded data source and it will be editable to update the task details through TreeGrid.
 
@@ -39,7 +39,7 @@ The following code example shows you how to display the icon in the TreeGrid col
 
 
 
-{% highlight c# %}
+{% highlight html %}
 
 Gantt.aspx.cs 
 
@@ -277,8 +277,8 @@ namespace ASP_Doc.Gantt
 
     }
 
-{% endhighlight %}
-{% highlight html %}
+
+
 Gantt.aspx
 
 
@@ -461,7 +461,7 @@ The following screenshot displays the customized column in Gantt control.
 
 
 
-![](Columns_images/Columns_img1.png)
+{ ![](Columns_images/Columns_img1.png) | markdownify }
 {:.image }
 
 
@@ -471,7 +471,7 @@ Column Chooser
 
 Gantt supports enabling and disabling the visibility of the columns dynamically with the ShowColumnChooser property. The visibility of the custom columns can also be toggled with this property. Column chooser option is rendered as a sub menu item within the column menu in the Gantt columns. 
 
-![](Columns_images/Columns_img2.png)
+{ ![](Columns_images/Columns_img2.png) | markdownify }
 {:.image }
 
 
@@ -507,7 +507,7 @@ Sort Ascending and Sort Descending options can be enabled or disabled with the A
 
 The following screenshot displays the column chooser in the Gantt control.
 
-![](Columns_images/Columns_img3.png)
+{ ![](Columns_images/Columns_img3.png) | markdownify }
 {:.image }
 
 

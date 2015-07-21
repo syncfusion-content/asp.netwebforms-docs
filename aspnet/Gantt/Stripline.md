@@ -7,7 +7,7 @@ control: Gantt
 documentation: ug
 ---
 
-# Stripline
+## Stripline
 
 Stripline in Gantt control is used to highlight the important event in Gantt chart part. By using this feature, you can add the Striplines to highlight important days in your project. The following code example shows you how to add the Stripline in Gantt control.
 
@@ -59,7 +59,7 @@ The following screenshot shows Stripline in Gantt control.
 
 
 
-![](Stripline_images/Stripline_img1.png) 
+{ ![](Stripline_images/Stripline_img1.png) | markdownify }
 {:.image }
 
 

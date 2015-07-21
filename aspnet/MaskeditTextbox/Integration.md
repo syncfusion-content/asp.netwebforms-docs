@@ -7,9 +7,9 @@ control: MaskEdit
 documentation: ug
 ---
 
-# Integration
+## Integration
 
-## Angular Support
+### Angular Support
 
 The MaskEditTextbox control supports two types of Angular JS support namely,
 
@@ -120,17 +120,17 @@ The following example explains the how to bind data to the MaskEditTextbox cont
 
 The output of NumericTextbox controls with two-way angular bindingis as follows.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image73_42.jpg](Integration_images/Integration_img1.jpeg) 
+{ ![http://help.syncfusion.com/ug/js/ImagesExt/image73_42.jpg](Integration_images/Integration_img1.jpeg) | markdownify }
 {:.image }
 
 
 
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image73_43.jpg](Integration_images/Integration_img2.jpeg)
+{ ![http://help.syncfusion.com/ug/js/ImagesExt/image73_43.jpg](Integration_images/Integration_img2.jpeg) | markdownify }
 {:.image }
 
 
-## Knockout Support
+### Knockout Support
 
 Knockout support allows you to bind the HTML elements against any of the available data models. It is of two types.
 
@@ -269,7 +269,7 @@ The following example explains the how to bind data to the MaskEditTextbox cont
 
 The output of Knockout binding in MaskEditTextbox.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image73_41.jpg](Integration_images/Integration_img3.jpeg)
+{ ![http://help.syncfusion.com/ug/js/ImagesExt/image73_41.jpg](Integration_images/Integration_img3.jpeg) | markdownify }
 {:.image }
 
 

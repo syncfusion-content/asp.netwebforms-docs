@@ -7,7 +7,7 @@ control: Maps
 documentation: ug
 ---
 
-# AngularJS Support
+## AngularJS Support
 
 AngularJS is a JavaScript framework added to a HTML page with a &lt;script&gt; tag. It extends HTML attributes with directives and binds data to HTML with expressions. AngularJS directives allow you to specify custom and reusable HTML tags that moderate the behavior of certain elements. Angularbinding uses directives to plug its action into the page. Directives, all prefaced with ng-, are placed in HTML attributes. To know more about Angular binding refer to: [http://help.syncfusion.com/ug/js/#!documents/angularjs.htm](http://help.syncfusion.com/ug/js/)
 
@@ -66,7 +66,8 @@ Apply the plugin and property assigning the Map element through the directive 
 {% endhighlight %}
 
 
-![1](AngularJS-Support_images/AngularJS-Support_img1.png)
+
+{ ![1](AngularJS-Support_images/AngularJS-Support_img1.png) | markdownify }
 {:.image }
 
 

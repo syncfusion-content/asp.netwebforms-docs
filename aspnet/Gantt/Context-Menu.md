@@ -7,7 +7,7 @@ control: Gantt
 documentation: ug
 ---
 
-# Context Menu
+## Context Menu
 
 Default Context Menu
 
@@ -43,7 +43,7 @@ The following screenshot shows the Default Context Menu in Gantt control.
 
 
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image72_8.png](Context-Menu_images/Context-Menu_img1.png)
+{ ![http://help.syncfusion.com/ug/js/ImagesExt/image72_8.png](Context-Menu_images/Context-Menu_img1.png) | markdownify }
 {:.image }
 
 
@@ -57,7 +57,7 @@ You can add custom context menu option in Gantt control. The following code exam
 
 
 
-{% highlight js %}
+{% highlight html %}
 
 
 
@@ -85,8 +85,7 @@ You can add custom context menu option in Gantt control. The following code exam
 
           </script>
 
-{% endhighlight %}
-{% highlight html %}
+
 
 <ej:Gantt ID="GanttContainer" runat="server" EnableContextMenu="true" ContextMenuOpen="contextMenuOpen">
 
@@ -100,7 +99,7 @@ The screenshot of the Custom Context Menu items in Gantt control is as follows.
 
 
 
-![C:/Users/Rajasekar/Desktop/IMG_17062014_121224.png](Context-Menu_images/Context-Menu_img2.png)
+{ ![C:/Users/Rajasekar/Desktop/IMG_17062014_121224.png](Context-Menu_images/Context-Menu_img2.png) | markdownify }
 {:.image }
 
 

@@ -7,12 +7,12 @@ control: Grid
 documentation: ug
 ---
 
-# Row
+## Row
 
-## Details Template
+### Details Template
 
 Details Template feature provides a detailed view about additional information of each row. If you want to view the detailed information, you can expand a row. Using DetailsTemplate property to achieve detail template feature.
-{% highlight html %}
+
 [ASP]
 
 [aspx]
@@ -58,8 +58,7 @@ Details Template feature provides a detailed view about additional information o
     &lt;/Columns&gt;
 
 &lt;/ej:Grid&gt;
-{% endhighlight  %}
-{% highlight c# %}
+
 [cs]
 
 protected void Page_Load(object sender, EventArgs e)
@@ -73,20 +72,20 @@ protected void Page_Load(object sender, EventArgs e)
     }
 
 
-{% endhighlight %}
+
 The following output is displayed as a result of the above code example.
 
 
 
-![](Row_images/Row_img1.png)
+{ ![](Row_images/Row_img1.png) | markdownify }
 {:.image }
 
 
-## Hierarchy
+### Hierarchy
 
 In this section, you can learn how to use the Hierachytree in GridView. The following code example is of HierachyGrid.
 
-{% highlight html %}
+
 
 [ASP]
 
@@ -164,8 +163,8 @@ In this section, you can learn how to use the Hierachytree in GridView. The foll
 
 &lt;/script&gt;
 
-{% endhighlight %}
-{% highlight c# %}
+
+
 [cs]
 
 public partial class DetailTemplate : System.Web.UI.Page
@@ -263,19 +262,19 @@ public partial class DetailTemplate : System.Web.UI.Page
     }
 
 
-{% endhighlight %}
+
 The following output is displayed as a result of the above code example.
 
 
 
-![](Row_images/Row_img2.png)
+{ ![](Row_images/Row_img2.png) | markdownify }
 {:.image }
 
 
-## Row Template
+### Row Template
 
 Row template is used to render your template in every row. It is used to place elements inside Grid rows. This feature makes it easier to customise Grid rows with HTML elements. Using RowTemplate property achieve row template feature.
-{% highlight html %}
+
 [ASP]
 
 [aspx]
@@ -381,8 +380,7 @@ Row template is used to render your template in every row. It is used to place e
     &lt;/Columns&gt;
 
 &lt;/ej:Grid&gt;
-{% endhighlight %}
-{% highlight c# %}
+
 [CS]
 
 public partial class RowTemplate : System.Web.UI.Page
@@ -481,21 +479,21 @@ public partial class RowTemplate : System.Web.UI.Page
 
     }
 
-{% endhighlight  %}
+
 
 The following output is displayed as a result of the above code example.
 
 
 
-![](Row_images/Row_img3.png)
+{ ![](Row_images/Row_img3.png) | markdownify }
 {:.image }
 
 
-## Customize Hover and AltRow 
+### Customize Hover and AltRow 
 
 EnableAltRow and EnableRowHover are graphical features in Grid that are used to enable alternate row color in Grid and enable hover effects while hovering over row cells. By default, these two features are enabled in Grid. In this section, you can learn how to cutomize alternative rows color and hover color in the Grid controls.
 
-{% highlight html %}
+
 
 [ASP]
 
@@ -531,8 +529,8 @@ EnableAltRow and EnableRowHover are graphical features in Grid that are used to 
 
 &lt;/ej:Grid&gt;
 
-{% endhighlight  %}
-{% highlight c# %}
+
+
 [cs]
 
 protected void Page_Load(object sender, EventArgs e)
@@ -545,13 +543,13 @@ protected void Page_Load(object sender, EventArgs e)
 
     }
 
-{% endhighlight %}
+
 
 The following output is displayed as a result of the above code example.
 
 
 
-![](Row_images/Row_img4.png) 
+{ ![](Row_images/Row_img4.png) | markdownify }
 {:.image }
 
 

@@ -7,7 +7,7 @@ control: Maps
 documentation: ug
 ---
 
-# Map Elements
+## Map Elements
 
 Map control contains a set of map elements, including shapes, bubbles, markers, legend, labels and data items that can be visualized with customized appearance showing additional information on the map using databound datas.
 
@@ -24,12 +24,17 @@ Markers
 
 The Markers property has a list of objects that contains the data for Annotation. You can visualize these data by using MarkerTemplate property.
 
-{% highlight c# %}
- [ASP]
- [ASPX.CS]   
- public class Syncfusion_LocationData    {        public static List<MapMarker> GetSyncfusionLocationData()        {            List<MapMarker> syncfusionLocationData = new List<MapMarker>            {                new LocationData {Name = "Chennai", Country = "India", Latitude =13.0839 , Longitude = 80.27 , Description = "Syncfusion's branch office is located in AnnaNagar, Chennai", Address ="EYMARD Complex AJ 217 4th Avenue Shanthi Colony Anna Nagar Chennai-40 India" },                new LocationData {Name = "North Carolina", Country = "United States", Latitude =35.5 , Longitude = -80 , Description = "Syncfusion's corporate office is located in Research Triangle Park North Carolina", Address ="Company Headquarters 2501 Aerial Center Parkway Suite 200 Morrisville NC 27560 USA" },            };            return syncfusionLocationData;        }    }                protected void Page_Load(object sender, EventArgs e)        {            (this.map.Layers[0] as ShapeLayer).ShapeData = GetWorldMap();            (this.map.Layers[0] as ShapeLayer).Markers = Syncfusion_LocationData.GetSyncfusionLocationData();        }</td></tr>
 
-{% endhighlight %}
+
+<table>
+<tr>
+<td>
+ [ASP][ASPX.CS]    public class Syncfusion_LocationData    {        public static List<MapMarker> GetSyncfusionLocationData()        {            List<MapMarker> syncfusionLocationData = new List<MapMarker>            {                new LocationData {Name = "Chennai", Country = "India", Latitude =13.0839 , Longitude = 80.27 , Description = "Syncfusion's branch office is located in AnnaNagar, Chennai", Address ="EYMARD Complex AJ 217 4th Avenue Shanthi Colony Anna Nagar Chennai-40 India" },                new LocationData {Name = "North Carolina", Country = "United States", Latitude =35.5 , Longitude = -80 , Description = "Syncfusion's corporate office is located in Research Triangle Park North Carolina", Address ="Company Headquarters 2501 Aerial Center Parkway Suite 200 Morrisville NC 27560 USA" },            };            return syncfusionLocationData;        }    }                protected void Page_Load(object sender, EventArgs e)        {            (this.map.Layers[0] as ShapeLayer).ShapeData = GetWorldMap();            (this.map.Layers[0] as ShapeLayer).Markers = Syncfusion_LocationData.GetSyncfusionLocationData();        }</td></tr>
+<tr>
+<td>
+</td></tr>
+</table>
+
 
 {% highlight html %}
 
@@ -79,7 +84,7 @@ The Markers property has a list of objects that contains the data for Annotation
 
 {% endhighlight %}
 
-![](Map-Elements_images/Map-Elements_img1.png)
+{ ![](Map-Elements_images/Map-Elements_img1.png) | markdownify }
 {:.image }
 
 
@@ -139,7 +144,7 @@ Without Datasource, n number of markers can be added to shape layers with Marker
 
 
 
-![](Map-Elements_images/Map-Elements_img2.png)
+{ ![](Map-Elements_images/Map-Elements_img2.png) | markdownify }
 {:.image }
 
 
@@ -246,7 +251,7 @@ To add bubbles to a map, the bubble marker setting is added to the shape file la
 
 
 
-![](Map-Elements_images/Map-Elements_img3.png) 
+{ ![](Map-Elements_images/Map-Elements_img3.png) | markdownify }
 {:.image }
 
 
@@ -331,7 +336,7 @@ The Layer shape type legends can be generated for each color mappings in shape s
 
 
 
-![](Map-Elements_images/Map-Elements_img4.png)
+{ ![](Map-Elements_images/Map-Elements_img4.png) | markdownify }
 {:.image }
 
 
@@ -381,7 +386,7 @@ You can provide the left and right labels to interactive legend by using LeftLab
 
 
 
-![](Map-Elements_images/Map-Elements_img5.png)
+{ ![](Map-Elements_images/Map-Elements_img5.png) | markdownify }
 {:.image }
 
 
@@ -447,7 +452,7 @@ A bubble legend feature is used to provide the key (legend) for another map elem
 
 {% endhighlight %}
 
-![1](Map-Elements_images/Map-Elements_img6.png)
+{ ![1](Map-Elements_images/Map-Elements_img6.png) | markdownify }
 {:.image }
 
 

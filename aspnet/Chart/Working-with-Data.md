@@ -7,14 +7,14 @@ control: Chart
 documentation: ug
 ---
 
-# Working with Data
+## Working with Data
 
 Chart gets data either locally or remotely. To populate the Chart with data, you can use the DataSource in series properties.
 
-## Local Data
+### Local Data
 
 Essential Chart provides you an option to bind the data to the Chart using the DataSource property of the series. 
-{% highlight html %}
+
 [ASP.NET] 
 
 // xName:  xName specifies the field in the datasource that provide the arguments for series.
@@ -36,8 +36,7 @@ Essential Chart provides you an option to bind the data to the Chart using the D
 
 
         &lt;/ej:Chart&gt;
-{% endhighlight  %}
-{% highlight c# %}
+
 [CS]
 
           List<ChartData> data = new List<ChartData>();
@@ -127,14 +126,14 @@ public class ChartData
 
 
     }
-{% endhighlight %}
 
 
-![](Working-with-Data_images/Working-with-Data_img1.png)
+
+{ ![](Working-with-Data_images/Working-with-Data_img1.png) | markdownify }
 {:.image }
 
 
-## Remote Data
+### Remote Data
 
 You can bind the Essential Chart to remote data using DataManager and the Query in series that is used to retrieve the data by creating queries. Data manager supports the following types of data binding.
 
@@ -143,7 +142,7 @@ You can bind the Essential Chart to remote data using DataManager and the Query 
 3. oData
 
 The following code example illustrates binding Essential Chart to oData service.   
-{% highlight html %}
+
 [ASP.NET] 
 
 &lt;ej:Chart ID="Chart1" OnClientLoad="onchartload"&gt;
@@ -193,8 +192,8 @@ The following code example illustrates binding Essential Chart to oData service.
 
 
 
-{% endhighlight  %}
-![](Working-with-Data_images/Working-with-Data_img2.png)
+
+{ ![](Working-with-Data_images/Working-with-Data_img2.png) | markdownify }
 {:.image }
 
 

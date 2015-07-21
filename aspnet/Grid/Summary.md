@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# Summary 
+## Summary 
 
 Summary is a key feature of Grid that is used to aggregate a particular column. This is useful to analyse the details of a particular column. It has the following types:
 
@@ -17,14 +17,13 @@ Summary is a key feature of Grid that is used to aggregate a particular column. 
 * Minimum
 * Maximum
 * Custom
-
-## Default Summary
+### Default Summary
 
 
 There are some default summary types available for basic summary formula. The following code example is for Default Summary Types. We can render summary ro for grid using ShowSummary and SummaryRows property of Grid.
 
 
-{% highlight html %}
+
 
 
 [ASP]
@@ -80,8 +79,8 @@ There are some default summary types available for basic summary formula. The fo
             &lt;/Columns&gt;
 
  &lt;/ej:Grid&gt;
-{% endhighlight %}
-{% highlight c# %}
+
+
 
 [CS]
 
@@ -181,19 +180,19 @@ public partial class DefaultFunctionalities : System.Web.UI.Page
 
     }
 
-{% endhighlight %}
+
 
 The following output is displayed as a result of the above code example.
 
-![](Summary_images/Summary_img1.png)
+{ ![](Summary_images/Summary_img1.png) | markdownify }
 {:.image }
 
 
-## Custom Summary by String
+### Custom Summary by String
 
 This property helps you to create custom summary formula for summary. The following code example is for custom summary using Essential Asp.Net. We can achieve custom summary using CustomSummaryValue property.
 
-{% highlight html %}
+
 
 [ASP]
 
@@ -236,21 +235,21 @@ This property helps you to create custom summary formula for summary. The follow
 &lt;/ej:Grid&gt;
 
 
-{% endhighlight  %}
+
 
 
 The following output is displayed as a result of the above code example.
 
 
 
-![](Summary_images/Summary_img2.png)
+{ ![](Summary_images/Summary_img2.png) | markdownify }
 {:.image }
 
 
-## Custom Summary by Function
+### Custom Summary by Function
 
 Custom Summary is used to create custom summary formula for summary. The following code example is for custom summary using Essential Asp.Net.
-{% highlight html %}
+
 [ASP]
 
 [aspx]
@@ -314,9 +313,9 @@ Custom Summary is used to create custom summary formula for summary. The followi
 
 
 
-{% endhighlight  %}
 
-{% highlight c# %}
+
+
 [aspx.cs]
 
 
@@ -415,18 +414,18 @@ namespace WebSampleBrowser.Grid
 
 }}
 
-{% endhighlight  %}
 
-![](Summary_images/Summary_img3.png)
+
+{ ![](Summary_images/Summary_img3.png) | markdownify }
 {:.image }
 
 
-## Group Summary
+### Group Summary
 
 This property helps you to enable the group summary column in Grid. The following code example is for Group summary.
 
 
-{% highlight html %}
+
 [ASP]
 
 [aspx]
@@ -469,8 +468,8 @@ This property helps you to enable the group summary column in Grid. The followin
 
 &lt;/ej:Grid&gt;
 
-{% endhighlight  %}
-{% highlight c# %}
+
+
 [CS]
 
 public partial class DefaultFunctionalities : System.Web.UI.Page
@@ -569,24 +568,24 @@ public partial class DefaultFunctionalities : System.Web.UI.Page
 
     }
 
-{% endhighlight %}
+
 
 The following output is displayed as a result of the above code example.
 
 
 
-![](Summary_images/Summary_img4.png)
+{ ![](Summary_images/Summary_img4.png) | markdownify }
 {:.image }
 
 
-## Caption Summary
+### Caption Summary
 
 This property is used to create Caption Summary column in Grid. The following code example is for Caption Summary.
 
 ShowCaptionSummary property used to achieve caption summary feature.
 
 
-{% highlight html %}
+
 [ASP]
 
 [aspx]
@@ -632,8 +631,7 @@ ShowCaptionSummary property used to achieve caption summary feature.
 &lt;/ej:Grid&gt;
 
 
-{% endhighlight  %}
-{% highlight c# %}
+
 [CS]
 
 public partial class DefaultFunctionalities : System.Web.UI.Page
@@ -732,13 +730,13 @@ public partial class DefaultFunctionalities : System.Web.UI.Page
 
     }
 
-{% endhighlight  %}
+
 
 The following output is displayed as a result of the above code example.
 
 
 
-![](Summary_images/Summary_img5.png)
+{ ![](Summary_images/Summary_img5.png) | markdownify }
 {:.image }
 
 

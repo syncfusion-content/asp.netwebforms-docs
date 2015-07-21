@@ -7,11 +7,11 @@ control: Grid
 documentation: ug
 ---
 
-# Selection
+## Selection
 
 The Selection property is used to highlight a row that you select. 
 
-## Types of selection
+### Types of selection
 
  There are two types of Selections. 
 
@@ -20,16 +20,16 @@ The Selection property is used to highlight a row that you select.
 
 Single selection is used to select a single row, cell or column in Grid. In Multiple selection you can select more than one row, cell or column. Refer to the following code examples of Selection types.
 
-### Single Selection
+#### Single Selection
 
 By default, the selection type is “Single”.
 
-#### Selection Modes
+##### Selection Modes
 
 Row
 
 By default, the selection mode of the grid is “Row”. This enables you to select the row in the grid. Refer to the following code example. Using SelectionMode property in SelectionSettings used to avhieve row selection mode.
-{% highlight html %}
+
 [ASP]
 
 [Aspx]
@@ -57,8 +57,7 @@ By default, the selection mode of the grid is “Row”. This enables you to sel
 &lt;SelectionSettings SelectionMode="Row" /&gt;
 
 &lt;/ej:Grid&gt;
-{% endhighlight  %}
-{% highlight c# %}
+
 [CS]
 
 public partial class BasicSelection : System.Web.UI.Page
@@ -161,11 +160,11 @@ public partial class BasicSelection : System.Web.UI.Page
 
         }
 
-{% endhighlight %}
+
 
 The following screenshot displays the result of the above code.
 
-![](Selection_images/Selection_img1.png) 
+{ ![](Selection_images/Selection_img1.png) | markdownify }
 {:.image }
 
 
@@ -174,7 +173,7 @@ Cell
 Cell selection can be enabled using the SelectionMode property. This enables you to select a cell in the grid. Refer to the following code example.
 
 
-{% highlight html %}
+
 [ASP]
 
 [Aspx]
@@ -202,8 +201,7 @@ Cell selection can be enabled using the SelectionMode property. This enables you
 &lt;SelectionSettings SelectionMode="Cell" /&gt;
 
 &lt;/ej:Grid&gt;
-{% endhighlight %}
-{% highlight c# %}
+
 [CS]
 
 public partial class BasicSelection : System.Web.UI.Page
@@ -306,20 +304,20 @@ public partial class BasicSelection : System.Web.UI.Page
 
         }
 
-{% endhighlight  %}
+
 
 
 
 The following screenshot displays the result of the above code.
 
-![](Selection_images/Selection_img2.png)
+{ ![](Selection_images/Selection_img2.png) | markdownify }
 {:.image }
 
 
 Column
 
 Column selection can be enabled using the SelectionMode property. This enables you to select a particular column in the grid. Refer to the following code example.
-{% highlight html %}
+
 [ASP]
 
 [Aspx]
@@ -347,8 +345,7 @@ Column selection can be enabled using the SelectionMode property. This enables y
 &lt;SelectionSettings SelectionMode="Column" /&gt;
 
 &lt;/ej:Grid&gt;
-{% endhighlight %}
-{% highlight c# %}
+
 [CS]
 
 public partial class BasicSelection : System.Web.UI.Page
@@ -453,19 +450,19 @@ public partial class BasicSelection : System.Web.UI.Page
 
 
 
-{% endhighlight  %}
+
 
 The following screenshot displays the result of the above code.
 
-![](Selection_images/Selection_img3.png)
+{ ![](Selection_images/Selection_img3.png) | markdownify }
 {:.image }
 
 
-### Multiple Selection
+#### Multiple Selection
 
 Multiple selection can be enabled using SelectionType property. This allows you to select more than one row, cell and column at a time.
 
-#### Selection Modes
+##### Selection Modes
 
 Row
 
@@ -473,7 +470,7 @@ By default, the selection mode of the grid is “Row”. This enable you to sele
 
 
 
-{% highlight html %}
+
 
 [Aspx]
 
@@ -500,8 +497,7 @@ By default, the selection mode of the grid is “Row”. This enable you to sele
 &lt;SelectionSettings SelectionMode="Row" /&gt;
 
 &lt;/ej:Grid&gt;
-{% endhighlight %}
-{% highlight c# %}
+
 [CS]
 
 public partial class BasicSelection : System.Web.UI.Page
@@ -604,11 +600,11 @@ public partial class BasicSelection : System.Web.UI.Page
 
         }
 
-{% endhighlight  %}
+
 
 The following screenshot displays the result of the above code.
 
-![](Selection_images/Selection_img4.png)
+{ ![](Selection_images/Selection_img4.png) | markdownify }
 {:.image }
 
 
@@ -618,7 +614,7 @@ Cell selection can be enabled using the SelectionMode property. This enables you
 
 
 
-{% highlight html %}
+
 
 [Aspx]
 
@@ -645,8 +641,7 @@ Cell selection can be enabled using the SelectionMode property. This enables you
 &lt;SelectionSettings SelectionMode="Cell" /&gt;
 
 &lt;/ej:Grid&gt;
-{% endhighlight  %}
-{% highlight c# %}
+
 [CS]
 
 public partial class BasicSelection : System.Web.UI.Page
@@ -750,10 +745,10 @@ public partial class BasicSelection : System.Web.UI.Page
         }
 
 
-{% endhighlight %}
+
 The following screenshot displays the result of the above code.
 
-![](Selection_images/Selection_img5.png)
+{ ![](Selection_images/Selection_img5.png) | markdownify }
 {:.image }
 
 
@@ -763,7 +758,7 @@ Column selection can be enabled using the SelectionMode property. This enables y
 
 
 
-{% highlight html %}
+
 
 [Aspx]
 
@@ -790,8 +785,7 @@ Column selection can be enabled using the SelectionMode property. This enables y
 &lt;SelectionSettings SelectionMode="Column" /&gt;
 
 &lt;/ej:Grid&gt;
-{% endhighlight  %}
-{% highlight c#  %}
+
 [CS]
 
 public partial class BasicSelection : System.Web.UI.Page
@@ -895,18 +889,18 @@ public partial class BasicSelection : System.Web.UI.Page
         }
 
 
-{% endhighlight %}
+
 The following screenshot displays the result of the above code.
 
-![](Selection_images/Selection_img6.png)
+{ ![](Selection_images/Selection_img6.png) | markdownify }
 {:.image }
 
 
-## Enable All Modes of selection
+### Enable All Modes of selection
 
 You can also enable all the three modes of selection. Refer to the following code example. . Using SelectionMode property in SelectionSettings used to enable all modes of selection.
 
-{% highlight html %}
+
 
 [Aspx]
 
@@ -933,8 +927,7 @@ You can also enable all the three modes of selection. Refer to the following cod
 &lt;SelectionSettings SelectionMode="Row" SelectionMode="Cell" SelectionMode="Column"/&gt;
 
 &lt;/ej:Grid&gt;
-{% endhighlight  %}
-{% highlight c#  %}
+
 [CS]
 
 public partial class BasicSelection : System.Web.UI.Page
@@ -1038,18 +1031,18 @@ public partial class BasicSelection : System.Web.UI.Page
         }
 
 
-{% endhighlight %}
+
 The following screenshot displays the result of the above code.
 
-![](Selection_images/Selection_img7.png)
+{ ![](Selection_images/Selection_img7.png) | markdownify }
 {:.image }
 
 
-## Enable toggle
+### Enable toggle
 
 You can toggle the selection using the EnableToggle property. This provides support to toggle selection based on the Boolean value specified to the property. By default the EnableToggle property is set to disabled. Refer to the following code example.
 
-{% highlight html %}
+
 
 [Aspx]
 
@@ -1076,8 +1069,7 @@ You can toggle the selection using the EnableToggle property. This provides supp
 &lt;SelectionSettings SelectionMode="Row" EnableToggle="true" /&gt;
 
 &lt;/ej:Grid&gt;
-{% endhighlight %}
-{% highlight c# %}
+
 [CS]
 
 public partial class BasicSelection : System.Web.UI.Page
@@ -1181,22 +1173,22 @@ public partial class BasicSelection : System.Web.UI.Page
         }
 
 
-{% endhighlight  %}
+
 The following screenshot displays the result of the above code.
 
-![](Selection_images/Selection_img8.png)
+{ ![](Selection_images/Selection_img8.png) | markdownify }
 {:.image }
 
 
-![](Selection_images/Selection_img9.png)
+{ ![](Selection_images/Selection_img9.png) | markdownify }
 {:.image }
 
 
-## Customize Selection Color
+### Customize Selection Color
 
 In this section, you can learn how to customize or override selection background color through css. The following code example is for Selection color customization.
 
-{% highlight html %}
+
 
 [ASP]
 
@@ -1225,21 +1217,21 @@ background-color:lightseagreen !important;
 
 
 
-{% endhighlight  %}
+
 
 
 The following output is displayed as a result of the above code example.
 
 
 
-![](Selection_images/Selection_img10.png)
+{ ![](Selection_images/Selection_img10.png) | markdownify }
 {:.image }
 
 
-## Get selected record data
+### Get selected record data
 
 In this section, you can learn how to get selected records from one Grid and how this selected record is used to update datasource of another Grid. 
-{% highlight html %}
+
 [ASP]
 
 [aspx]
@@ -1283,8 +1275,7 @@ In this section, you can learn how to get selected records from one Grid and how
             &lt;/Columns&gt;
 
         &lt;/ej:Grid&gt; 
-{% endhighlight %}
-{% highlight js %}
+
  [javascript]
 
 &lt;script type="text/javascript"&gt;
@@ -1316,8 +1307,7 @@ In this section, you can learn how to get selected records from one Grid and how
         });
 
     &lt;/script&gt;
-{% endhighlight  %}
-{% highlight c# %}
+
 [CS]
 
 public partial class MasterDetails : System.Web.UI.Page
@@ -1492,11 +1482,11 @@ public partial class MasterDetails : System.Web.UI.Page
 
     }
 
-{% endhighlight  %}
+
 
 The following output is displayed as a result of the above code example.
 
-![](Selection_images/Selection_img11.png)
+{ ![](Selection_images/Selection_img11.png) | markdownify }
 {:.image }
 
 

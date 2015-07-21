@@ -7,7 +7,7 @@ control: Gantt
 documentation: ug
 ---
 
-# Data Binding
+## Data Binding
 
 Data binding is the process that establishes a connection between the application and different kinds of data sources such as business objects.
 
@@ -21,7 +21,7 @@ The following code example shows how to bind the hierarchical local data into th
 
 
 
-{% highlight c# %}
+{% highlight html %}
 
 Gantt.aspx.cs
 
@@ -235,8 +235,8 @@ namespace ASP_Doc.Gantt
 
 }
 
-{% endhighlight %}
-{% highlight html %}
+
+
 Gantt.aspx
 
 
@@ -299,7 +299,7 @@ The output of the above steps is as follows.
 
 
 
-![](Data-Binding_images/Data-Binding_img1.png)
+{ ![](Data-Binding_images/Data-Binding_img1.png) | markdownify }
 {:.image }
 
 
@@ -316,7 +316,7 @@ Gantt can be rendered from self-referential data structures, by providing two fi
 
 
 
-{% highlight c# %}
+{% highlight html %}
 
 Gantt.aspx.cs
 
@@ -680,8 +680,8 @@ namespace ASP_Doc.Gantt
 
 }
 
-{% endhighlight %}
-{% highlight html %}
+
+
 Gantt.aspx
 
 
@@ -752,7 +752,7 @@ The following screenshot shows the output of the above steps.
 
 
 
-![](Data-Binding_images/Data-Binding_img2.png)
+{ ![](Data-Binding_images/Data-Binding_img2.png) | markdownify }
 {:.image }
 
 

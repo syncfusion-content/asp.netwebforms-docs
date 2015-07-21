@@ -7,9 +7,9 @@ control: DropDownList
 documentation: ug
 ---
 
-# Grouping Support
+## Grouping Support
 
-## Grouping Support using DataSource
+### Grouping Support using DataSource
 
 Grouping DropDownList items can be done by using the category field. Set the category field and define it in the DataSource. Then, map the fields for the data items of the DropDownList and set AllowGrouping property value to true.
 
@@ -95,7 +95,7 @@ In an ASPX page, add an element to configure the DropDownList widget.
 
 
 
-![](Grouping-Support_images/Grouping-Support_img1.png)
+{ ![](Grouping-Support_images/Grouping-Support_img1.png) | markdownify }
 {:.image }
 
 

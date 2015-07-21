@@ -7,11 +7,11 @@ control: Chart
 documentation: ug
 ---
 
-# Real-Time Charts
+## Real-Time Charts
 
 Essential Chart allows you to create dynamic Charts that update at given interval. They are highly useful in network monitoring applications, stock/finance monitoring applications and manufacturing process indicators where the most up-to-date data are displayed. Dynamic updates are supported by all Chart types including line, area, column, spline, spline area, polar and radar series.
 
-{% highlight html %}
+
 
 [ASP.NET] 
 
@@ -91,11 +91,11 @@ var chartobj;
 
 
 
-{% endhighlight  %}
 
 
 
-![C:/Users/ApoorvahR/Desktop/2.png](Real-Time-Charts_images/Real-Time-Charts_img1.png)
+
+{ ![C:/Users/ApoorvahR/Desktop/2.png](Real-Time-Charts_images/Real-Time-Charts_img1.png) | markdownify }
 {:.image }
 
 

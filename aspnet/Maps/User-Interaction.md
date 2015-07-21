@@ -7,7 +7,7 @@ control: Maps
 documentation: ug
 ---
 
-# User Interaction
+## User Interaction
 
 Options like zooming, panning and map selection enables the effective interaction on map elements.
 
@@ -53,7 +53,7 @@ You can select the shape by tapping on the shape. The Single selection is enable
 
 
 
-![](User-Interaction_images/User-Interaction_img1.png)
+{ ![](User-Interaction_images/User-Interaction_img1.png) | markdownify }
 {:.image }
 
 
@@ -156,7 +156,7 @@ When the map is double-tapped using mouse, the zoom in operation is performed.
 
 
 
-![](User-Interaction_images/User-Interaction_img2.png) 
+{ ![](User-Interaction_images/User-Interaction_img2.png) | markdownify }
 {:.image }
 
 
@@ -259,7 +259,7 @@ Navigation control is built-in with Maps control. With Navigation control, Maps 
 
 Structure of Navigation Control
 
-![a](User-Interaction_images/User-Interaction_img3.png)
+{ ![a](User-Interaction_images/User-Interaction_img3.png) | markdownify }
 {:.image }
 
 

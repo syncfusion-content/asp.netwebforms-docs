@@ -7,15 +7,15 @@ control: Grid
 documentation: ug
 ---
 
-# Scrolling
+## Scrolling
 
-## Default Scrolling
+### Default Scrolling
 
 Scrolling is an important feature in Grid. It makes Grid more compatible with layout and design. The AllowScrolling property is used to enable scrolling functionality to the Grid. The default value for AllowScrolling is false.
 
 In this following code example, ScrollSettings property is used to adjust the Grid width and height. 
 
-{% highlight html %}
+
 
 [ASP]
 
@@ -55,8 +55,7 @@ In this following code example, ScrollSettings property is used to adjust the G
 
     &lt;/ej:Grid&gt;
 
-{% endhighlight %}
-{% highlight c# %}
+
 
 [C#]
 
@@ -177,20 +176,20 @@ public partial class _Default : Page
 }
 
 
-{% endhighlight %}
+
 
 
 The following output is displayed as a result of the above code example.
 
-![](Scrolling_images/Scrolling_img1.png)
+{ ![](Scrolling_images/Scrolling_img1.png) | markdownify }
 {:.image }
 
 
-## Scroll Settings
+### Scroll Settings
 
 The ScrollSettings contains the properties to enable scrolling related functionalities in the Grid.
 
-### To Enable Vertical Scrolling
+#### To Enable Vertical Scrolling
 
 The Height property in the ScrollSettings is used to enable the vertical scroll bar in the Grid. The scroll height should be less than the Grid content height. That is, total rows height for enabling vertical scroll bar.
 
@@ -198,7 +197,7 @@ The Height property can support percentage, pixel and auto values in scrollSetti
 
 The following code example illustrates how to enable vertical scrolling in the Grid. 
 
-{% highlight html %}
+
 
 [ASP]
 
@@ -239,16 +238,16 @@ The following code example illustrates how to enable vertical scrolling in the G
     &lt;/ej:Grid&gt;
 
 
-{% endhighlight  %}
+
 
 
 The following output is displayed as a result of the above code example.
 
-![](Scrolling_images/Scrolling_img2.png)
+{ ![](Scrolling_images/Scrolling_img2.png) | markdownify }
 {:.image }
 
 
-### To Enable Horizontal Scrolling
+#### To Enable Horizontal Scrolling
 
 The Width property in the ScrollSettings is used to enable the horizontal scroll bar in the Grid. The scroll width should be less than the Grid content width. That is, total columns width for enabling horizontal scroll bar.
 
@@ -257,7 +256,7 @@ The Width property can support percentage, pixel and auto values in ScrollSettin
 When you set Width as auto, it renders Grid with browser calculate value.
 
 The following code example illustrates how to enable horizontal scrolling in the Grid. 
-{% highlight html %}
+
 [ASP]
 
 
@@ -298,15 +297,15 @@ The following code example illustrates how to enable horizontal scrolling in the
 
 
 
-{% endhighlight  %}
+
 
 The following output is displayed as a result of the above code example.
 
-![](Scrolling_images/Scrolling_img3.png)
+{ ![](Scrolling_images/Scrolling_img3.png) | markdownify }
 {:.image }
 
 
-## Virtual scrolling on demand
+### Virtual scrolling on demand
 
 Virtual scrolling is powerful technique in Grid. It makes Grid more compatible with layout and its loading record performance is high. The AllowVirtualScrolling property in ScrollSettings is used to enable virtual scroll functionality in the Grid. The default value for AllowVirtualScrolling is false.
 
@@ -314,12 +313,11 @@ Essential Asp.NetGrid supports two mode of virtualization. They are,
 
 * Normal Mode
 * Continuous Mode
-
-### Normal Mode
+#### Normal Mode
 
 
 This feature allows you to load the Grid with data while scrolling. The following code example illustrates how to set VirtualScrollMode as Normal. 
-{% highlight html %}
+
 [ASP]
 
 
@@ -349,9 +347,9 @@ This feature allows you to load the Grid with data while scrolling. The followin
       &lt;ScrollSettings AllowVirtualScrolling="True" Height="0" Width="300" VirtualScollMode="Normal"&gt;&lt;/ScrollSettings&gt;
 
 &lt;/ej:Grid&gt;
-{% endhighlight  %}
 
-{% highlight c# %}
+
+
 [C#]
 
 
@@ -372,24 +370,24 @@ public partial class _Default : Page
 
 }
 
-{% endhighlight %}
+
 
 The following screenshot displays the Grid while scrolling. The request is sent to the server to fetch data.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image229_108.png](Scrolling_images/Scrolling_img4.png)
+{ ![http://help.syncfusion.com/ug/js/ImagesExt/image229_108.png](Scrolling_images/Scrolling_img4.png) | markdownify }
 {:.image }
 
 
 The following screenshot displays the Grid after it is loaded with data.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image229_109.png](Scrolling_images/Scrolling_img5.png)
+{ ![http://help.syncfusion.com/ug/js/ImagesExt/image229_109.png](Scrolling_images/Scrolling_img5.png) | markdownify }
 {:.image }
 
 
-### Continuous Mode
+#### Continuous Mode
 
 You can enable the continuous mode by setting the VirtualScrollMode property as Continuous. In Continuous mode, the data is loaded in Grid when the scrollbar reaches the end. The following code example illustrates how to set the continuous mode in virtualization. 
-{% highlight html %}
+
 [ASP]
 
 
@@ -422,8 +420,8 @@ You can enable the continuous mode by setting the VirtualScrollMode property a
 
 &lt;/ej:Grid&gt;
 
-{% endhighlight %}
-{% highlight c# %}
+
+
 [C#]
 
 
@@ -443,16 +441,16 @@ public partial class _Default : Page
         }
 
 }
-{% endhighlight  %}
+
 The following screenshot illustrates the request made to fetch the data after the Grid scrollbar touches the end.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image229_110.png](Scrolling_images/Scrolling_img6.png)
+{ ![http://help.syncfusion.com/ug/js/ImagesExt/image229_110.png](Scrolling_images/Scrolling_img6.png) | markdownify }
 {:.image }
 
 
 The following screenshot illustrates the Grid after the data is loaded.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image229_111.png](Scrolling_images/Scrolling_img7.png)
+{ ![http://help.syncfusion.com/ug/js/ImagesExt/image229_111.png](Scrolling_images/Scrolling_img7.png) | markdownify }
 {:.image }
 
 

@@ -7,9 +7,9 @@ control: Grid
 documentation: ug
 ---
 
-# Toolbar 
+## Toolbar 
 
-## Default buttons
+### Default buttons
 
 Toolbar is one of the user interaction controls related with Grid. It is handy to use the Toolbar to trigger more actions. The default toolbar items created for Grid are:
 
@@ -22,11 +22,11 @@ Toolbar is one of the user interaction controls related with Grid. It is handy t
 
 If you want Toolbar items other than the above items, you can make it using customToolBarItems.
 
-## Custom Toolbar action
+### Custom Toolbar action
 
 Custom Toolbar is a key functionality, used to customize Toolbar elements. Here you can learn in detail about the Toolbar template and its actions in the Custom Toolbar category. In the following code example, ejDropDownList is used to filter records by category.
 
-{% highlight html %}
+
 
 [ASP]
 
@@ -83,8 +83,7 @@ Custom Toolbar is a key functionality, used to customize Toolbar elements. Here 
         &lt;/ToolbarSettings&gt;
 
     &lt;/ej:Grid&gt;
-{% endhighlight  %}
-{% highlight js %}
+
  [javascript]
 
 
@@ -125,13 +124,13 @@ Custom Toolbar is a key functionality, used to customize Toolbar elements. Here 
 
     &lt;/script&gt;
 
-{% endhighlight  %}
+
 
 The following output is displayed as a result of the above code example.
 
 
 
-![](Toolbar_images/Toolbar_img1.png)
+{ ![](Toolbar_images/Toolbar_img1.png) | markdownify }
 {:.image }
 
 

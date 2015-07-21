@@ -7,21 +7,21 @@ control: MaskEdit
 documentation: ug
 ---
 
-# Mask Edit Properties
+## Mask Edit Properties
 
-## Setting Custom Character
+### Setting Custom Character
 
 The MaskEdit provides the option to use custom character. The specified character can be allowed to enter in the Mask Edit Textbox by using the CustomCharacter property.
 
-## HidePromptOnLeave
+### HidePromptOnLeave
 
 The MaskEdit Textbox provides the option to hide the prompt when focus out from the control. The mask prompt is visible when you focus again to the control. The default value of HidePromptOnLeave is false.
 
-## Defining Input Mode
+### Defining Input Mode
 
 The MaskEdit supports two type of inputs such as text and password that have been assigned by using the enum values ej.InputMode.Text and ej.InputMode.Password. The default value for InputMode is text in MaskEdit.
 
-## Setting Mask Format
+### Setting Mask Format
 
 The MaskEdit provides the option to define the MaskFormat to the value. The default value for MaskFormat property is empty string.
 
@@ -95,25 +95,27 @@ Add the following code example in your ASPX page to render the Textbox control.
 
 The output for Mask Edit Textbox with its properties.
 
-![C:/Users/giftline.jebamani/Desktop/a.png](Mask-Edit-Properties_images/Mask-Edit-Properties_img1.png) 
+{ ![C:/Users/giftline.jebamani/Desktop/a.png](Mask-Edit-Properties_images/Mask-Edit-Properties_img1.png) | markdownify }
 {:.image }
-![C:/Users/giftline.jebamani/Desktop/b.png](Mask-Edit-Properties_images/Mask-Edit-Properties_img2.png)
-{:.image }
-
-
-
-
-![C:/Users/giftline.jebamani/Desktop/c.png](Mask-Edit-Properties_images/Mask-Edit-Properties_img3.png) 
-{:.image }
-![C:/Users/giftline.jebamani/Desktop/d.png](Mask-Edit-Properties_images/Mask-Edit-Properties_img4.png)
+{ ![C:/Users/giftline.jebamani/Desktop/b.png](Mask-Edit-Properties_images/Mask-Edit-Properties_img2.png) | markdownify }
 {:.image }
 
 
 
 
-![C:/Users/giftline.jebamani/Desktop/e.png](Mask-Edit-Properties_images/Mask-Edit-Properties_img5.png) 
+{ ![C:/Users/giftline.jebamani/Desktop/c.png](Mask-Edit-Properties_images/Mask-Edit-Properties_img3.png) | markdownify }
+{:.image }
+{ ![C:/Users/giftline.jebamani/Desktop/d.png](Mask-Edit-Properties_images/Mask-Edit-Properties_img4.png) | markdownify }
 {:.image }
 
+
+
+
+{ ![C:/Users/giftline.jebamani/Desktop/e.png](Mask-Edit-Properties_images/Mask-Edit-Properties_img5.png) | markdownify }
+{:.image }
+
+
+__
 
 
 

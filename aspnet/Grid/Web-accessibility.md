@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# Web accessibility
+## Web accessibility
 
 Web accessibility is an easy way to create a website or application by world wide users, including disabled users. You can develop sites with the help of assistive technologies. Essential Javascript supports the Web UI accessibility resources. They are:
 

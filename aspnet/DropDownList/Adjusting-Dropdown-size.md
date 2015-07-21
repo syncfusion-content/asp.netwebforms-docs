@@ -7,17 +7,17 @@ control: DropDownList
 documentation: ug
 ---
 
-# Adjusting Dropdown size
+## Adjusting Dropdown size
 
-## Width
+### Width
 
 DropDownList widget provides support to customize the dimensions of the DropDown textbox. By using the Width property, you can set the width of the DropDown textbox. Its data type is string.
 
-## Height
+### Height
 
 DropDownList widget provides support to customize the dimensions of the DropDown textbox. By using the Height property, you can set the height of the DropDown textbox. Its data type is string.
 
-## Defining the DropDown size properties
+### Defining the DropDown size properties
 
 The following step explains the configuration of Height and Width properties in the DropDownList.
 
@@ -66,15 +66,15 @@ In an ASPX page, add an element to configure the DropDownList.
 Output of the above step.
 
 
-![](Adjusting-Dropdown-size_images/Adjusting-Dropdown-size_img1.png)
+{ ![](Adjusting-Dropdown-size_images/Adjusting-Dropdown-size_img1.png) | markdownify }
 {:.image }
 
 
-## Water Mark 
+### Water Mark 
 
 DropDownList widget provides the support to water mark of the DropDown textbox. The WaterMarkText defines the text displayed on a page load. Its data type is string.
 
-### Defining the Water Mark property
+#### Defining the Water Mark property
 
 The following step explains the configuration of WaterMarkText properties in the DropDownList. 
 
@@ -118,11 +118,11 @@ In an ASPX page, add an element to configure the DropDownList.
 
 Output of the above step.
 
-![](Adjusting-Dropdown-size_images/Adjusting-Dropdown-size_img2.png) 
+{ ![](Adjusting-Dropdown-size_images/Adjusting-Dropdown-size_img2.png) | markdownify }
 {:.image }
 
 
-## Enabling Rounded corner
+### Enabling Rounded corner
 
 DropDownList widget provides support to change the appearance of DropDown textbox. By using the ShowRoundedCorner, you can create a rounded corner on the DropDown textbox. Its data type is Boolean.
 
@@ -173,7 +173,7 @@ In an ASPX page, add an element to configure the DropDownList.
 Output of the above step.
 
 
-![](Adjusting-Dropdown-size_images/Adjusting-Dropdown-size_img3.png)
+{ ![](Adjusting-Dropdown-size_images/Adjusting-Dropdown-size_img3.png) | markdownify }
 {:.image }
 
 

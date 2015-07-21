@@ -7,9 +7,9 @@ control: DropDownList
 documentation: ug
 ---
 
-# Integration
+## Integration
 
-## Angular Binding 
+### Angular Binding 
 
 DropDownList widget contains two types of Angular JS supports namely, 
 
@@ -26,7 +26,9 @@ To know more detail about the Angular binding, you can refer to the following li
 
 The following example depicts the way to bind data to the DropDownList through Angular support.
 
-> _Note: You need to include “ej.widget.angular.min.js” file library to achieve this behaviour and you need to pass the control properties as data attribute in input tag itself like data role behaviour._
+> { ![](Integration_images/Integration_img1.jpeg) | markdownify }
+{:.image }
+_Note: You need to include “ej.widget.angular.min.js” file library to achieve this behaviour and you need to pass the control properties as data attribute in input tag itself like data role behaviour._
 
 In the ASPX page, add an element to configure the DropDownList
 
@@ -136,11 +138,11 @@ In the ASPX page, add an element to configure the DropDownList
 
 Output of the above step.
 
-![](Integration_images/Integration_img2.png) 
+{ ![](Integration_images/Integration_img2.png) | markdownify }
 {:.image }
 
 
-## Knockout Binding
+### Knockout Binding
 
 Knockout support allows you to bind the other elements against any of the available data model.
 
@@ -161,7 +163,9 @@ The following example depicts the way to bind data to the DropDownList through t
 
 
 
-> _Note: You need to include the “ej.widget.knockout.min.js” file library to achieve this behaviour and you need to pass the control properties as data attribute in input tag itself like data role behaviour._
+{ ![](Integration_images/Integration_img3.jpeg) | markdownify }
+{:.image }
+_Note: You need to include the “ej.widget.knockout.min.js” file library to achieve this behaviour and you need to pass the control properties as data attribute in input tag itself like data role behaviour._
 
 In an ASPX page, add an element to configure the DropDownList.
 
@@ -279,7 +283,7 @@ Configure the styles.
 
 Output of the above steps.
 
-![](Integration_images/Integration_img4.png)
+{ ![](Integration_images/Integration_img4.png) | markdownify }
 {:.image }
 
 

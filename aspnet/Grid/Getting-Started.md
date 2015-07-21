@@ -17,7 +17,7 @@ You can create a Grid with a highly customizable look and feel. You can use Gr
 
 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
 {:.image }
 
 
@@ -26,7 +26,7 @@ You can create a Grid with a highly customizable look and feel. You can use Gr
 
 
 
-![](Getting-Started_images/Getting-Started_img2.png)
+{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
 {:.image }
 
 
@@ -34,12 +34,12 @@ You can create a Grid with a highly customizable look and feel. You can use Gr
 
 
 
-![](Getting-Started_images/Getting-Started_img3.png)
+{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
 {:.image }
 
 
 
-{% highlight html%}
+
 [ASPX]
 
 
@@ -53,12 +53,15 @@ You can create a Grid with a highly customizable look and feel. You can use Gr
 &lt;asp:SqlDataSource runat="server" ID="SqlData" ConnectionString="&lt;%$ ConnectionStrings:SQLConnectionString %&gt;" SelectCommand="SELECT * FROM [Orders]">&lt;/asp:SqlDataSource&gt;
 
 
-{% endhighlight %}
 
 
-> _Note: Create a connection string in Web.config file using SQL database._
 
-{% highlight html %}
+> { ![](Getting-Started_images/Getting-Started_img4.jpeg) | markdownify }
+{:.image }
+ _Note: Create a connection string in Web.config file using SQL database._
+
+> __
+
 [Web.config]
 
 
@@ -81,7 +84,7 @@ You can create a Grid with a highly customizable look and feel. You can use Gr
 
 
 
-{% endhighlight %}
+
 
 For more information about SQL data source configuration refer the following link: [http://msdn.microsoft.com/en-us/library/vstudio/w1kdt8w2(v=vs.100).aspx](http://msdn.microsoft.com/en-us/library/vstudio/w1kdt8w2(v=vs.100).aspx)
 
@@ -89,11 +92,11 @@ For more information about SQL data source configuration refer the following lin
 
 
 
-![](Getting-Started_images/Getting-Started_img5.png) 
+{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
 {:.image }
 
 
-{% highlight html %}
+
 
 [ASPX]
 
@@ -129,13 +132,13 @@ For more information about SQL data source configuration refer the following lin
 
 
 
-{% endhighlight %}
+
 
 The following screenshot displays a Grid with the sales data.
 
 
 
-![](Getting-Started_images/Getting-Started_img6.png) 
+{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
 {:.image }
 
 
@@ -144,7 +147,7 @@ Enable Paging
 The Paging feature in Grid offers complete navigation support to easily switch between the pages, using the page bar available at the bottom of the Grid control. To enable paging, use AllowPaging property of Grid as follows.
 
 
-{% highlight html %}
+
 [ASPX]
 
 
@@ -180,14 +183,14 @@ AllowPaging="true">
 &lt;/ej:Grid&gt;
 
 
-{% endhighlight %}
+
 
 
 The following screenshot displays a Grid withpaging.
 
 
 
-![](Getting-Started_images/Getting-Started_img7.jpeg)
+{ ![](Getting-Started_images/Getting-Started_img7.jpeg) | markdownify }
 {:.image }
 
 
@@ -197,7 +200,7 @@ The Filtering feature in Grid is usedto facilitate the extraction of a subset
 
 To enable filtering, use the AllowFiltering property of Grid as follows.
 
-{% highlight html %}
+
 
 [ASPX]
 
@@ -237,14 +240,15 @@ To enable filtering, use the AllowFiltering property of Grid as follows.
 
 
 
-{% endhighlight  %}
+
 
 
 
 The following screenshot shows Grid with filtering option.
 
 
-![](Getting-Started_images/Getting-Started_img8.jpeg)
+
+{ ![](Getting-Started_images/Getting-Started_img8.jpeg) | markdownify }
 {:.image }
 
 
@@ -256,11 +260,11 @@ To enable grouping, use the AllowGrouping property of Grid as follows.
 
 
 
-![](Getting-Started_images/Getting-Started_img9.png) 
+{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
 {:.image }
 
 
-{% highlight html %}
+
 
 [ASPX]
 
@@ -304,14 +308,15 @@ AllowGrouping="true">
 
 
 
-{% endhighlight %}
+
 
 
 
 The following screenshot shows the analysis of shipment details by grouping ShipName.
 
 
-![](Getting-Started_images/Getting-Started_img10.png)
+
+{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
 {:.image }
 
 
@@ -323,10 +328,10 @@ The following code example shows how you can enable ShowSummary.
 
 
 
-![](Getting-Started_images/Getting-Started_img11.png)
+{ ![](Getting-Started_images/Getting-Started_img11.png) | markdownify }
 {:.image }
 
-{% highlight html %}
+
 
 
 [ASPX]
@@ -384,12 +389,12 @@ The following code example shows how you can enable ShowSummary.
 &lt;/ej:Grid&gt;
 
 
-{% endhighlight %}
+
 
 
 The following screenshot shows the group summary.
 
-![](Getting-Started_images/Getting-Started_img12.png) 
+{ ![](Getting-Started_images/Getting-Started_img12.png) | markdownify }
 {:.image }
 
 
