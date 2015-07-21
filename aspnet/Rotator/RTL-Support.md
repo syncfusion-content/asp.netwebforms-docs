@@ -7,7 +7,7 @@ control: Rotator
 documentation: ug
 ---
 
-## RTL Support
+# RTL Support
 
 This feature supports changing the left-to-right alignment of the Rotator to right-to-left (RTL). This sets the Rotator to do its actions from right to left. The property EnableRTL sets the Rotator from right to left. The value set to this property is Boolean type.
 

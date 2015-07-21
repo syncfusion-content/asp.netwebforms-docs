@@ -7,9 +7,9 @@ control: ColorPicker
 documentation: ug
 ---
 
-## Miscellaneous
+# Miscellaneous
 
-### getValue
+## getValue
 
 The getValue() method in the ColorPicker returns the hexadecimal value.
 
@@ -55,7 +55,7 @@ Add the following code in the script section.
 
 
 
-### setValue
+## setValue
 
 The setValue() method in ColorPicker is used to set the color value. The given value is hexadecimal form.
 
@@ -101,7 +101,7 @@ Add the following code in the script section.
 
 
 
-### getColor
+## getColor
 
 The getColor() method in ColorPicker control returns the color value in r,g,b form.
 

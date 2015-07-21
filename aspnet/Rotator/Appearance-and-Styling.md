@@ -7,11 +7,11 @@ control: Rotator
 documentation: ug
 ---
 
-## Appearance and Styling
+# Appearance and Styling
 
-### Adjusting rotator item size
+## Adjusting rotator item size
 
-#### Slide width
+### Slide width
 
 This property sets the width of a Rotator Item. The value set to this property is string or number.
 
@@ -31,7 +31,7 @@ In an ASPX page, add the following code example and set the SlideWidth property 
 
 {% endhighlight %}
 
-#### Slide height
+### Slide height
 
 This property sets the height of a Rotator Item. The value set to this property is string or number.
 

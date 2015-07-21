@@ -7,7 +7,7 @@ control: DataManager
 documentation: ug
 ---
 
-## Data Adaptors
+# Data Adaptors
 
 DataManger uses adaptors to process data. There are three types of adaptors in DataManger. They are
 
@@ -15,11 +15,11 @@ DataManger uses adaptors to process data. There are three types of adaptors in D
 * Url Adaptor
 * OData Adaptor
 
-JSON Adaptor
+## JSON Adaptor
 
 JSONAdaptor is used to process JSON data. It contains methods to process the given JSON data based on the queries. The following code example illustrates on how to use JSONAdaptor.
 
-[ASPX]
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -53,7 +53,10 @@ JSONAdaptor is used to process JSON data. It contains methods to process the giv
 
 &lt;/asp:Content&gt;
 
-[CS]
+{% endhighlight %}
+
+
+{% highlight C# %}
 
 public partial class DataManager : System.Web.UI.Page
 
@@ -149,17 +152,19 @@ public partial class DataManager : System.Web.UI.Page
 
     }
 
-
+{% endhighlight %}
 
 The result of above code example is illustrated as follows.
 
-{ ![](Data-Adaptors_images/Data-Adaptors_img1.png) | markdownify }
+![](Data-Adaptors_images/Data-Adaptors_img1.png)
 {:.image }
 
 
-URL Adaptor
+## URL Adaptor
 
 Url Adaptor of DataManager can be used when you want to use remote service to retrieve data. It interacts with server-side for all DataManager Queries and CRUD operations. Now, in the following code example the data is retrived from MVC Controller. 
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -189,9 +194,9 @@ Url Adaptor of DataManager can be used when you want to use remote service to re
 
 &lt;/asp:Content&gt;
 
+{% endhighlight %}
 
-
-[ASPX.CS]
+{% highlight C# %}
 
 public partial class DataManager : System.Web.UI.Page
 
@@ -231,17 +236,19 @@ public partial class DataManager : System.Web.UI.Page
 
     }
 
-
+{% endhighlight %}
 
 The result of the above code example is illustrated as follows.
 
-{ ![](Data-Adaptors_images/Data-Adaptors_img2.png) | markdownify }
+![](Data-Adaptors_images/Data-Adaptors_img2.png)
 {:.image }
 
 
-OData Adaptor
+## OData Adaptor
 
 Odata Adaptor that is extended from Url Adaptor, is used for consuming data through oData Service. You can use the following code example to use oData adaptor.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -271,15 +278,17 @@ Odata Adaptor that is extended from Url Adaptor, is used for consuming data thro
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 The result of the above code example is illustrated as follows.
 
-{ ![](Data-Adaptors_images/Data-Adaptors_img3.png) | markdownify }
+![](Data-Adaptors_images/Data-Adaptors_img3.png)
 {:.image }
 
 
-WebAPI Adaptor
+## WebAPI Adaptor
+
+{% highlight html %}
 
 WebApi Adaptor, extended from UrlAdaptor, of DataManager is used for retrieving data from WebApi service. Refer to the following code example.
 
@@ -311,19 +320,21 @@ WebApi Adaptor, extended from UrlAdaptor, of DataManager is used for retrieving 
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
 
 
-{ ![](Data-Adaptors_images/Data-Adaptors_img4.png) | markdownify }
+![](Data-Adaptors_images/Data-Adaptors_img4.png)
 {:.image }
 
 
-RemoteSave Adaptor
+## RemoteSave Adaptor
 
 RemoteSaveAdaptor, extended from JsonAdaptor of DataManager, is used for binding local data and performs all DataManager queries in client-side. It interacts with server-side only for CRUD operations to pass the modified records. Refer to the following code example.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -357,6 +368,9 @@ RemoteSaveAdaptor, extended from JsonAdaptor of DataManager, is used for binding
 
 &lt;/asp:Content&gt;
 
+{% endhighlight %}
+
+{% highlight C# %}
 
 
 public partial class DataManager : System.Web.UI.Page
@@ -453,19 +467,21 @@ public partial class DataManager : System.Web.UI.Page
 
     }
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
 
 
-{ ![](Data-Adaptors_images/Data-Adaptors_img5.png) | markdownify }
+![](Data-Adaptors_images/Data-Adaptors_img5.png)
 {:.image }
 
 
-Custom Adaptor
+## Custom Adaptor
 
 Custom adaptor is a key technique to customize adaptors in DataManager. Normally ej.Adaptor is base class for all the adaptors. Therefore, first inherit ej.Adaptor to develop customized one and then you can override the functionality in custom adaptor with base class. Refer to the following code example.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -543,11 +559,11 @@ Custom adaptor is a key technique to customize adaptors in DataManager. Normally
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of above code example is as follows.
 
-{ ![](Data-Adaptors_images/Data-Adaptors_img6.png) | markdownify }
+![](Data-Adaptors_images/Data-Adaptors_img6.png)
 {:.image }
 
 

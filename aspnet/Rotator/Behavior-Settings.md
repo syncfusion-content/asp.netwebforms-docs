@@ -7,9 +7,9 @@ control: Rotator
 documentation: ug
 ---
 
-## Behavior Settings
+# Behavior Settings
 
-### Enabling Rotator
+## Enabling Rotator
 
 Enabled property enables or disables the Rotator control. The default value is true. The value set to this property is Boolean type. The Rotator items are given directly without data base. It is achieved by Items tag under the Rotator. The properties, Caption and URL can be used in the items. The tag RotatorItem is used to set the Rotator items under the tag name, Items.
 
@@ -49,7 +49,7 @@ In an ASPX page, add the following code example and set the Enabled property to 
 
 
 
-### Responsive Rotator
+## Responsive Rotator
 
 EnableResize property resizes the Rotator when the browser window is resized. The default value is false. The value set to this property is Boolean.
 
@@ -67,7 +67,7 @@ In an ASPX page, add the following code example and set the Enabled property to 
 
 {% endhighlight %}
 
-### Auto Play
+## Auto Play
 
 The Rotator Items continuously rotate without user interference by enabling the EnableAutoPlay property. The default value is false. The value set to this property is Boolean.
 
@@ -89,7 +89,7 @@ In an ASPX page, add the following code example and set the EnableAutoPlay prope
 
 {% endhighlight %}
 
-### Stop on Hover
+## Stop on Hover
 
 StopOnHover property pauses the auto play while hovering on the Rotator content. The default value is false. The value set to this property is Boolean.
 
@@ -105,9 +105,9 @@ In an ASPX page, add the following code example and set the StopOnHover property
 
 
 
-### Pager settings
+## Pager settings
 
-#### Pager position
+### Pager position
 
 This property specifies the position of the showPager in the Rotator Item. The default value is outside. The value set to this property is string or enum. The table showcases the PagerPosition.
 
@@ -141,6 +141,7 @@ Pager displays the top left position of the splitter.</td></tr>
 TopRight</td><td>
 Pager displays the top right position of the splitter.</td></tr>
 </table>
+
 In an ASPX page, add the following code example and set the PagerPosition property as required.
 
 {% highlight html %}
@@ -161,11 +162,11 @@ In an ASPX page, add the following code example and set the PagerPosition proper
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img1.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img1.png)
 {:.image }
 
 
-#### Show pager
+### Show pager
 
 This property turns on or off the pager support in the Rotator control. The Pager is used to navigate the Rotator Items. The default value is true. The value set to this property is Boolean.
 
@@ -189,19 +190,19 @@ In an ASPX page, add the following code example and set the ShowPager property t
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img2.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img2.png)
 {:.image }
 
 
-### Show options
+## Show options
 
-#### Show play button
+### Show play button
 
 This property enables play or pause button in the Rotator. The default value is false. The value set to this property is Boolean.
 
 In an ASPX page, add the following code example and set the ShowPlayButton property to true.
 
-
+{% highlight html %}
 
 // Refers to the Local Data section for style and data bound for rotator items.
 
@@ -210,22 +211,22 @@ In an ASPX page, add the following code example and set the ShowPlayButton prope
 &lt;ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" SlideHeight="350px" ShowPlayButton="true" DataCaptionField="Caption" DataUrlField="Url"&gt;&lt;/ej:Rotator&gt;
 
 
-
+{% endhighlight %}
 
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img3.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img3.png)
 {:.image }
 
 
-#### Show navigate button
+### Show navigate button
 
 This property turns on or off the slide buttons (next and previous) in the Rotator Items. Slide buttons are used to navigate the Rotator Items. The default value is false. The value set to this property is Boolean.
 
 In an ASPX page, add the following code example and set the ShowNavigateButton property to false.
 
-
+{% highlight html %}
 
 // Refers to the Local Data section for style and data bound for rotator items.
 
@@ -233,23 +234,23 @@ In an ASPX page, add the following code example and set the ShowNavigateButton p
 
 &lt;ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" SlideHeight="350px" ShowNavigateButton="false" DataCaptionField="Caption" DataUrlField="Url"&gt;&lt;/ej:Rotator&gt;
 
-
+{% endhighlight %}
 
 The following screenshot displays the output of the above code example.
 
 
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img4.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img4.png)
 {:.image }
-__
 
-#### Show caption
+
+### Show caption
 
 When the Rotator Item is an image, you can specify a caption for the Rotator Item. The caption text for each Rotator Item is set by using the title attribute of the respective &lt;image&gt; tag. The caption cannot be displayed when multiple Rotator Items are present. The default value is false. The value set to this property is Boolean.
 
 In an ASPX page, add the following code example and set the ShowCaption property to true.
 
-
+{% highlight html %}
 
 // Refers to the Local Data section for style and data bound for rotator items.
 
@@ -257,11 +258,11 @@ In an ASPX page, add the following code example and set the ShowCaption property
 
 &lt;ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" SlideHeight="350px" ShowCaption="true" DataCaptionField="Caption" DataUrlField="Url"&gt;&lt;/ej:Rotator&gt;
 
-
+{% endhighlight %}
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img5.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img5.png)
 {:.image }
 
 

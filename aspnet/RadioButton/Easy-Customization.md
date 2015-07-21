@@ -7,9 +7,9 @@ control: Radio Button
 documentation: ug
 ---
 
-## Easy Customization
+# Easy Customization
 
-Checked status
+## Checked status
 
 You have options to set the state of the radio button as either checked or unchecked. When you select any option from the group of radio buttons, a dot mark appears inside the circle. This is called the Checkedstate. Previously selected radio buttons in this group are unselected that is they go to the unChecked state. The Checked property is used to set the state of the radio button.
 
@@ -67,11 +67,11 @@ Configure the CSS styles to align the radio buttons.
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/IMG_14102014_123941.png](Easy-Customization_images/Easy-Customization_img1.png) | markdownify }
+![C:/Users/ApoorvahR/Desktop/IMG_14102014_123941.png](Easy-Customization_images/Easy-Customization_img1.png)
 {:.image }
 
 
-Text
+## Text
 
 Specifies the text content for the radio button. In previous programs, separate labels were created for each radio button. But now you have the option to set the text for radio button by using the Text property. So here you do not have to add a label tag for each radio button in the HTML code.
 
@@ -123,11 +123,11 @@ Configure the CSS styles to align the radio buttons.
 
 
 
-{ ![](Easy-Customization_images/Easy-Customization_img2.png) | markdownify }
+![](Easy-Customization_images/Easy-Customization_img2.png)
 {:.image }
 
 
-Size
+## Size
 
 You can render the Radio Button in different sizes. There are some predefined size options available for rendering a Radio Button in an easy way. Each size option has different height and width. It mainly avoids the complexity in rendering Radio Button with complex CSS class. 
 
@@ -231,11 +231,11 @@ Configure the CSS styles to align the radio buttons
 
 
 
-{ ![](Easy-Customization_images/Easy-Customization_img3.png) | markdownify }
+![](Easy-Customization_images/Easy-Customization_img3.png)
 {:.image }
 
 
-RTL Support 
+## RTL Support 
 
 In some cases, you need to use right-to-left alignment. You can give RTL support by using EnableRTL property.  RTL mode works when you use the Text property in Radio Button. The Radio Buttons and text are aligned in the right-to-left format. For example, when text is right-aligned and Radio button is left-aligned, after you apply right-to-left alignment, these positions are interchanged. 
 
@@ -323,7 +323,7 @@ Configure the CSS styles to align the RadioButtons.
 
 
 
-{ ![](Easy-Customization_images/Easy-Customization_img4.png) | markdownify }
+![](Easy-Customization_images/Easy-Customization_img4.png)
 {:.image }
 
 

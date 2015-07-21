@@ -135,15 +135,13 @@ ASP.NET ProgressBar control is created by using the &lt;ej:ProgressBar&gt; ta
 
         });
 
-
-
 {% endhighlight %}
 
 
 
 The following screenshot displays the ProgressBar control.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img1.png)
 {:.image }
-__
+
 

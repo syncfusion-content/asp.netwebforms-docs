@@ -7,7 +7,7 @@ control: Rotator
 documentation: ug
 ---
 
-## Thumbnail
+# Thumbnail
 
 This feature implements the Thumbnail in the Rotator control. You can view or access any of the Rotator items instantly. All the images are given as Thumb Element to use this feature.
 
@@ -96,7 +96,7 @@ In an ASPX page, add the following code example to render the Rotator control.
 Define the style for the Rotator control.
 
 
-
+{% highlight css %}
 
 
         #&lt;%=sliderContent.ClientID%&gt; > li .image {
@@ -107,13 +107,13 @@ Define the style for the Rotator control.
 
         }
 
-
+{% endhighlight %}
 
 
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Thumbnail_images/Thumbnail_img1.png) | markdownify }
+![](Thumbnail_images/Thumbnail_img1.png)
 {:.image }
 
 

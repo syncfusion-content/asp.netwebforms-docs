@@ -11,7 +11,7 @@ documentation: ug
 
 Essential ASP.NET ProgressBar control is a [graphical control element](http://en.wikipedia.org/wiki/Graphical_control_element) used to visualize the changing status of an extended operation. ProgressBar provides an interactive way to display the progression of the task. You can configure the item size, orientation, and the display text of the ProgressBar control.
 
-Key Features
+## Key Features
 
 Some important features of the ProgressBar are as follows:
 

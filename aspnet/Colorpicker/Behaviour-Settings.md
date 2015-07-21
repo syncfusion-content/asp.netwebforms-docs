@@ -7,9 +7,9 @@ control: ColorPicker
 documentation: ug
 ---
 
-## Behaviour Settings
+# Behaviour Settings
 
-### ShowPreview
+## ShowPreview
 
 The ColorPicker control provides live preview support for current cursor selection color and selected color. “ShowPreview” property allows you to preview the selected color in the picker or from the palette.
 
@@ -39,11 +39,11 @@ The following screenshot displays the output of the above code example
 
 
 
-{ ![](Behaviour-Settings_images/Behaviour-Settings_img1.png) | markdownify }
+![](Behaviour-Settings_images/Behaviour-Settings_img1.png)
 {:.image }
 
 
-### ShowRecentColors
+## ShowRecentColors
 
 The ColorPicker Control allows you to store the color values in custom list by using “ShowRecentColors” property. The ColorPicker keeps up to 11 colors in a custom list.  By clicking the add button, the selected color from picker or palette gets added in the recent color list.  
 
@@ -65,11 +65,11 @@ Add the following code example to the corresponding ASPX page to render the Colo
 
 The following screenshot displays the output of the above code example.  
 
-{ ![](Behaviour-Settings_images/Behaviour-Settings_img2.png) | markdownify }
+![](Behaviour-Settings_images/Behaviour-Settings_img2.png)
 {:.image }
 
 
-### EnableOpacity
+## EnableOpacity
 
 
 
@@ -95,11 +95,11 @@ Add the following code example to the corresponding ASPX page to render ColorPic
 
 The following screenshot displays the output of the above code example.  
 
-{ ![](Behaviour-Settings_images/Behaviour-Settings_img3.png) | markdownify }
+![](Behaviour-Settings_images/Behaviour-Settings_img3.png)
 {:.image }
 
 
-### Columns
+## Columns
 
 The Palette model consists of color values in the rows and columns order. Palette consists of predefined colors and allows you to select anyone color from it. The “Columns” property allow you to modify the number of columns in palette model. 
 
@@ -127,13 +127,13 @@ The following screenshot displays the output of the above code example.
 
 
 
-{ ![](Behaviour-Settings_images/Behaviour-Settings_img4.png) | markdownify }
+![](Behaviour-Settings_images/Behaviour-Settings_img4.png) 
 {:.image }
 
 
-#### Configure Values
+### Configure Values
 
-##### OpacityValue
+### OpacityValue
 
 The ColorPicker control allows you to change the opacity value by using the “OpacityValue“ property. The selected color opacity is adjusted by using the OpacityValue. 
 
@@ -159,18 +159,17 @@ Add the following code example to the corresponding ASPX page to render the Colo
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Behaviour-Settings_images/Behaviour-Settings_img5.png) | markdownify }
+![](Behaviour-Settings_images/Behaviour-Settings_img5.png)
 {:.image }
 
 
-#### Button and TooltipText
+### Button and TooltipText
 
-##### ButtonText
+### ButtonText
 
 The ColorPicker control allows you to define the text to be displayed in button elements. You can specify the text by using the “ButtonText” property. In the ColorPicker control, the popup contains two button elements “Apply” and “Cancel”.
 
 To configure the ButtonText property for the button elements, use the corresponding default values listed in the following table. 
-
 
 
 <table>
@@ -187,12 +186,13 @@ Apply</td></tr>
 cancel</td><td>
 Cancel</td></tr>
 </table>
-##### TooltipText
+
+
+### TooltipText
 
 The ColorPicker control consists of more number of sub controls and elements. To provide some information about each element and sub control you can use the tooltip concept and you can achieve this by using the “TooltipText” property.
 
 To configure the TooltipText, use the following listed elements and its corresponding default value.
-
 
 
 <table>
@@ -297,9 +297,9 @@ The following screenshot displays the output of the above code example.
 {:.image }
 
 
-### Appearance and Styling
+## Appearance and Styling
 
-#### ModelType
+### ModelType
 
 The ColorPicker allows you to define the model type to be displayed in control at initial time by using the property called “ModelType”. 
 
@@ -331,6 +331,7 @@ Control rendered with palette model only.</td></tr>
 </table>
 
 
+
 In the following code example, the ColorPicker popup model type is set as palette when you drop down the ColorPicker popup.
 
 Add the following code example to the corresponding ASPX page to render the ColorPicker control.
@@ -353,13 +354,15 @@ Add the following code example to the corresponding ASPX page to render the Colo
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Behaviour-Settings_images/Behaviour-Settings_img7.png) | markdownify }
+![](Behaviour-Settings_images/Behaviour-Settings_img7.png)
 {:.image }
 
 
-##### Palette
+### Palette
 
 The ColorPicker allows you to define the palette type to be displayed in control at initial time by using the “palette” property. The “Palette” property is Enum type and its default value is “BasicPalette”.
+
+
 
 <table>
 <tr>
@@ -382,16 +385,15 @@ The palette model rendered with user specified custom color values.</td></tr>
 </table>
 
 
-###### BasicPalette
+### BasicPalette
 
 The BasicPalette type rendered with predefined color values. The BasicPalette model has 12 different preset patterns. Each pattern consists of 50 colors, over 600 colors are available by default. 
 
-###### PresetType
+### PresetType
 
 The ColorPicker control allows you to define the preset model to be rendered initially in palette type. This can be achieved by using the “PresetType” property. Totally 12 types of presets available.
 
 The “_PresetType_” property is Enum type and its default value is “basic”.
-
 
 
 <table>
@@ -472,11 +474,11 @@ Add the following code example to the corresponding ASPX page to render the Colo
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Behaviour-Settings_images/Behaviour-Settings_img8.png) | markdownify }
+![](Behaviour-Settings_images/Behaviour-Settings_img8.png)
 {:.image }
 
 
-###### CustomPalette
+### CustomPalette
 
 The ColorPicker control allows you to define the custom colors in the palette model by using the “Palette” property. Custom palettes are created by passing a comma delimited string of HEX values or an array of colors in “custom” property. The CustomPalette model is only applicable when you set ModelType as “Palette”.
 
@@ -498,11 +500,11 @@ The CustomPalette property dependent property of “Palette” and “ModelType�
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Behaviour-Settings_images/Behaviour-Settings_img9.png) | markdownify }
+![](Behaviour-Settings_images/Behaviour-Settings_img9.png)
 {:.image }
 
 
-#### DisplayInline
+### DisplayInline
 
 The ColorPicker control allows to embed the popup in the order of DOM element flow by using the property called “DisplayInline”. By using DisplayInline property to make ColorPicker popup always in visible state. Also associate ColorPicker with &lt;div&gt; element instead of input. 
 
@@ -522,11 +524,11 @@ The “DisplayInline” property is Boolean type and its default value is false.
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Behaviour-Settings_images/Behaviour-Settings_img10.png) | markdownify }
+![](Behaviour-Settings_images/Behaviour-Settings_img10.png)
 {:.image }
 
 
-#### Theme Support
+### Theme Support
 
 The ColorPicker control support rich appearance. The ColorPicker supports 13 different themes of EssentialJavaSscript and bootstrap themes. To use these twelve themes, refer to the themes files in HTML page. 
 
@@ -600,13 +602,13 @@ The following screenshot displays the output of the above code example.
 
 
 
-{ ![](Behaviour-Settings_images/Behaviour-Settings_img11.png) | markdownify }
+![](Behaviour-Settings_images/Behaviour-Settings_img11.png)
 {:.image }
 
 
 
 
-#### CustomCss
+### CustomCss
 
 The ColorPicker control also allows you to customize its appearance by using the user-defined CSS and custom skin options such as colors and backgrounds. To apply custom themes, you have a property called CssClass. CssClass property sets the root class for ColorPicker theme.
 
@@ -656,7 +658,7 @@ Custom Css Styles.
 
 The following screenshot displays the output of above steps.
 
-{ ![](Behaviour-Settings_images/Behaviour-Settings_img12.png) | markdownify }
+![](Behaviour-Settings_images/Behaviour-Settings_img12.png)
 {:.image }
 
 

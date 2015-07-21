@@ -7,7 +7,7 @@ control: ProgressBar
 documentation: ug
 ---
 
-## Server Side Events
+# Server Side Events
 
 The server side event present in the Dialog control is as follows.
 

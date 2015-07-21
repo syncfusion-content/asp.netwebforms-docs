@@ -7,7 +7,7 @@ control: Rotator
 documentation: ug
 ---
 
-## Image with Contents
+# Image with Contents
 
 This feature allows you to add text along with the image in the Rotator control. This is achieved by splitting the content into two panels. In the following code example, image is given in the left panel and text is given in the right panel.
 
@@ -353,13 +353,13 @@ Define the style for the Rotator control.
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Image-with-Contents_images/Image-with-Contents_img1.png) | markdownify }
+![](Image-with-Contents_images/Image-with-Contents_img1.png) 
 {:.image }
 
 
-### Display items
+## Display items
 
-#### Display Items count
+### Display Items count
 
 This property specifies the number of Rotator items to be displayed. The default value is 1. The value set to this property is string or number.
 
@@ -383,11 +383,11 @@ In an ASPX page, add the following code example and set the DisplayItemCount pro
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Image-with-Contents_images/Image-with-Contents_img2.png) | markdownify }
+![](Image-with-Contents_images/Image-with-Contents_img2.png)
 {:.image }
 
 
-#### Navigate Steps
+### Navigate Steps
 
 This property specifies the number of Rotator Items to navigate on a single click (next/previous/play buttons). The NavigateSteps property value must be less than or equal to the displayItemsCount property value. The default value is 1. The value set to this property is string or number.
 
@@ -411,11 +411,11 @@ In an ASPX page, add the following code example and set the NavigateSteps prope
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Image-with-Contents_images/Image-with-Contents_img3.png) | markdownify }
+![](Image-with-Contents_images/Image-with-Contents_img3.png) 
 {:.image }
 
 
-#### Start index
+### Start index
 
 This property sets the index of the slide that is displayed first. The default value is 1. The value set to this property is string or number.
 
@@ -439,11 +439,11 @@ In an ASPX page, add the following code example and set the StartIndex property
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Image-with-Contents_images/Image-with-Contents_img4.png) | markdownify }
+![](Image-with-Contents_images/Image-with-Contents_img4.png)
 {:.image }
 
 
-#### Frame space
+### Frame space
 
 This property sets the space between the Rotator Items. The value set to this property is string or number.
 
@@ -463,13 +463,13 @@ In an ASPX page, add the following code example and set the FrameSpace property
 
 {% endhighlight %}
 
-### Animation
+## Animation
 
 AnimationType property specifies the Animation type for the Rotator items. AnimationType options include slide, fastSlide, slowSlide, and other custom easing animationTypes. The default value is slide. The value set to this property is string.
 
 In an ASPX page, add the following code example and set the AnimationType property as required.
 
-
+{% highlight html %}
 
 // Refer Local Data section for style and data bound for rotator items
 
@@ -477,15 +477,15 @@ In an ASPX page, add the following code example and set the AnimationType prope
 
 &lt;ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" SlideHeight="350px" AnimationType="fastSlide" DataCaptionField="Caption" DataUrlField="Url"&gt;&lt;/ej:Rotator&gt;
 
+{% endhighlight %}
 
-
-#### Animation speed
+### Animation speed
 
 This property sets the speed of slide transition. The default value is 60. The value set to this property is string or number.
 
 In an ASPX page, add the following code example and set the AnimationSpeed property as required.
 
-
+{% highlight html %}
 
 // Refers to the Local Data section for style and data bound for rotator items.
 
@@ -493,13 +493,16 @@ In an ASPX page, add the following code example and set the AnimationSpeed prop
 
 &lt;ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" SlideHeight="350px" AnimationSpeed="2000" DataCaptionField="Caption" DataUrlField="Url"&gt;&lt;/ej:Rotator&gt;
 
-#### Delay
+{% endhighlight %}
+
+## Delay
 
 This property sets the delay between the Rotator Items to move after the slide transition. The default value is 500. The value set to this property is string or number.
 
 In an ASPX page, add the following code example and set the Delay  property as required.
 
 
+{% highlight html %}
 
 // Refers to the Local Data section for style and data bound for rotator items.
 
@@ -507,9 +510,9 @@ In an ASPX page, add the following code example and set the Delay  property as 
 
 &lt;ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" SlideHeight="350px" Delay="5000" EnableAutoPlay="true"  AnimationSpeed="2000" DataCaptionField="Caption" DataUrlField="Url"&gt;&lt;/ej:Rotator&gt;
 
+{% endhighlight %}
 
-
-### Theme
+## Theme
 
 Rotator control’s style and appearance are controlled based on CSSclasses. In order to apply styles to the Rotator control, refer to the files,ej.widgets.core.min.css and ej.theme.min.css. When the file ej.widgets.all.min.css is referred, then it is not necessary to include the filesej.widgets.core.min.css and ej.theme.min.css in your project, as ej.widgets.all.min.css is the combination of these.
 
@@ -528,7 +531,8 @@ By default, there are 13-theme supports available for the Rotator control,
 * gradient-lime-dark
 * gradient-saffron
 * gradient-saffron-dark
-### CSS class
+
+## CSS class
 
 
 This property is used to set rootclass for the Rotator control theme. The value set to this property is string type.
@@ -587,7 +591,7 @@ Define the style for the Rotator control.
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Image-with-Contents_images/Image-with-Contents_img5.png) | markdownify }
+![](Image-with-Contents_images/Image-with-Contents_img5.png) 
 {:.image }
 
 

@@ -61,6 +61,8 @@ Add the following code example to the corresponding ASPX page to render the Rota
 
   Add the following styles to the corresponding view page.
 
+{% highlight css %}
+
 .frame {
 
         width: 600px;
@@ -74,10 +76,12 @@ Add the following code example to the corresponding ASPX page to render the Rota
         width: 610px;
 
     }
+	
+{% endhighlight %}
 
   The following banner is displayed as output.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img1.png)
 {:.image }
 
 

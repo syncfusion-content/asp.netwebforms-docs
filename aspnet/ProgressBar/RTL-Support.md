@@ -7,7 +7,7 @@ control: ProgressBar
 documentation: ug
 ---
 
-## RTL Support
+# RTL Support
 
 Right-to-Left starts from the right side of the page and continues to the left. By default, this option is set to false in the ProgressBar control. The EnableRTL option allows the ProgressBar control to display it in the right to left direction.
 
@@ -27,7 +27,7 @@ Add the following code example to the corresponding ASPX page to render Progress
 
 The following screenshot displays the ProgressBar set from Right-to-Left.               
 
-{ ![](RTL-Support_images/RTL-Support_img1.png) | markdownify }
+![](RTL-Support_images/RTL-Support_img1.png)
 {:.image }
 
 

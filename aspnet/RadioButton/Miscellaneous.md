@@ -7,9 +7,9 @@ control: Radio Button
 documentation: ug
 ---
 
-## Miscellaneous
+# Miscellaneous
 
-Radio Button ID
+## Radio Button ID
 
 Radio Button ID is not shown in the user interface. Here ID denotes the ID attribute of the root element of RadioButton control. This ID value is unique. You can give ID through element and through the ID property. When you use two IDs for a single radio button at initialization, the element ID is considered.
 
@@ -33,7 +33,7 @@ Set ID for RadioButton control as follows.
 
 {% endhighlight %}
 
-Radio Button Prefix id
+## Radio Button Prefix id
 
 Id prefix value is appended to id value. It is used to mention the prefix for the wrapper’s id attribute. When you assign a value for IdPrefix property, the older prefix id gets replaced by the new prefix id. 
 
@@ -61,13 +61,13 @@ Setting a new prefix id for RadioButton control is as follows.
 
 {% endhighlight %}
 
-Radio Button Name
+## Radio Button Name
 
 The Name setting tells you where a RadioButton belongs. When you select one button, all other buttons in the same group are unselected. You can have only one group of RadioButtons on each page.
 
 The Name attribute is also used to identify form data after it has been submitted to the server, or for reference of form data using JavaScript on the client’s side. Only form elements with a Name attribute have their values passed, when submitting a form.
 
-Radio Button Value
+## Radio Button Value
 
 The Value setting defines what can be submitted when checked.
 
@@ -101,7 +101,7 @@ Value="male">
 
 {% endhighlight %}
 
-Server Side Events
+## Server Side Events
 
 The following server side event is available in Radio Button control.__
 

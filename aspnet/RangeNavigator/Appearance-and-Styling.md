@@ -7,15 +7,16 @@ control: RangeNavigator
 documentation: ug
 ---
 
-## Appearance and Styling
+# Appearance and Styling
 
 RangeNavigator is enriched with lots of customization options for labels, gridlines and slider to develop high quality graphic rich control.
 
-Customize labels
+## Customize labels
 
 The labels are found along the range, displaying the value of the data it correspond, both on (higher level label) and below (lower level label) the RangeNavigator. RangeNavigator labels are further customized using “Font” property in label Settings. 
 
- [ASP.NET]
+
+{% highlight html %}
 
 &lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="onchartloaded"&gt;
 
@@ -43,21 +44,21 @@ The labels are found along the range, displaying the value of the data it corres
 
 &lt;/ej:RangeNavigator&gt;
 
+{% endhighlight %}
 
-
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 {:.image }
 
 
 _Figure 22: Customize labels_
 
-Label Placement:
+## Label Placement:
 
 Labels in RangeNavigator are placed inside or outside of the control. You can customize both the higher and lower level labels using LabelPlacement property in LabelSettings of RangeNavigator. By default LabelPlacement is “outside” for the both higher and lower level labels.
 
 The following screen shot illustrates both the lower and higher level labels that are placed outside the control with LabelPlacement specified as outside. 
 
-[ASP.NET]
+{% highlight html %}
 
 &lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="onchartloaded"&gt;
 
@@ -79,20 +80,21 @@ The following screen shot illustrates both the lower and higher level labels tha
 
 &lt;/ej:RangeNavigator&gt;
 
+{% endhighlight %}
 
 The following screenshot illustrates a RangeNavigator with labels inside the control after specifying the labelPlacement as inside.
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 {:.image }
 
 
-Customize RangeNavigator
+## Customize RangeNavigator
 
 RangeNavigator is customized using NavigatorStyleSettings properties. You can customize the selected and unselected region color using SelectedRegionColor, UnselectedRegionColor in NavigatorStyleSettings and the thumb of the slider using ThumbColor, ThumbRadius and ThumbStorke in NavigatorStyleSettings.  MajorGridLineStyle and MinorGridLineStyle are used to customize the grid line color and visibility. 
 
- [ASP.NET]
+{% highlight html %}
 
 &lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="onchartloaded"&gt;
 
@@ -130,13 +132,13 @@ RangeNavigator is customized using NavigatorStyleSettings properties. You can cu
 
 &lt;/ej:RangeNavigator&gt;
 
+{% endhighlight %}
 
-
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 {:.image }
 
 
-Themes
+## Themes
 
 RangeNavigator theme is a set of pre-defined options that are applied to the control before each RangeNavigator is instantiated. Following predefined themes are available in ASP.NET RangeNavigator.
 
@@ -158,7 +160,7 @@ RangeNavigator theme is a set of pre-defined options that are applied to the con
 16. gradientsaffrondark
 
 
- [ASP.NET]
+{% highlight html %}
 
 &lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" Theme="azuredark"&gt;
 
@@ -168,9 +170,9 @@ RangeNavigator theme is a set of pre-defined options that are applied to the con
 
 &lt;/ej:RangeNavigator&gt;
 
+{% endhighlight %}
 
-
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png) 
 {:.image }
 
 

@@ -7,15 +7,15 @@ control: RangeNavigator
 documentation: ug
 ---
 
-## Populate Data
+# Populate Data
 
 When you provide data to RangeNavigator, it produces limited set of data. You can populate the RangeNavigator with data using the DataSource and Series properties.
 
-Add series to the RangeNavigator
+## Add series to the RangeNavigator
 
 The Series property provides access to a collection of all series that are defined explicitly within a RangeNavigator control. Each series is assigned with type and name. It contains collection of data point, each point contains x value and y values. You can add data points to the series through DataSource property.
 
-[ASP.NET]
+{% highlight html %}
 
 &lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideLoad="loadingdata"&gt;
 
@@ -29,9 +29,9 @@ The Series property provides access to a collection of all series that are defin
 
 &lt;/ej:RangeNavigator&gt;
 
+{% endhighlight %}
 
-
-[JS]
+{% highlight js %}
 
 &lt;script type="text/javascript"&gt;
 
@@ -93,10 +93,11 @@ function GetData() {
 
       &lt;/script&gt;         
 
+	  {% endhighlight %}
 
 The following screenshot illustrates the RangeNavigator that is populated with data using DataSource property in series.
 
-{ ![](Populate-Data_images/Populate-Data_img1.png) | markdownify }
+![](Populate-Data_images/Populate-Data_img1.png)
 {:.image }
 
 

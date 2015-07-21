@@ -7,15 +7,15 @@ control: RangeNavigator
 documentation: ug
 ---
 
-## Behavior Customization
+# Behavior Customization
 
 RangeNavigator allows you to customize the control using events. You can change the range for selected data of the RangeNavigator using events.
 
-Deferred update
+## Deferred update
 
 If you set EnableDeferredUpdate to true, the RangeChanged event gets fired after dragging and dropping the slider. By default the EnableDeferredUpdate is true. If EnableDeferredUpdate is false then the RangeChanged event gets fired while dragging the slider. 
 
- [ASP.NET]
+{% highlight html %}
 
 &lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" EnableDeferredUpdate="True" &gt;
 
@@ -25,20 +25,22 @@ If you set EnableDeferredUpdate to true, the RangeChanged event gets fired after
 
 &lt;/ej:RangeNavigator&gt;
 
+{% endhighlight %}
 
-{ ![](Behavior-Customization_images/Behavior-Customization_img1.png) | markdownify }
+![](Behavior-Customization_images/Behavior-Customization_img1.png)
 {:.image }
 
 
 _Figure 19: Deferred update_
 
-Handle Events
+## Handle Events
 
-Loaded: function
+### Loaded: function
 
 This event is handled when the RangeNavigator gets loaded. A parameter sender is passed to the handler. Using sender.model, you can access the RangeNavigator properties. 
 
- [ASP.NET]
+
+{% highlight html %}
 
 &lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideLoaded="loadingdata"&gt;
 
@@ -48,7 +50,9 @@ This event is handled when the RangeNavigator gets loaded. A parameter sender is
 
 &lt;/ej:RangeNavigator&gt;
 
-[JS]
+{% endhighlight %}
+
+{% highlight js %}
 
 &lt;script type="text/javascript"&gt;
 
@@ -60,12 +64,14 @@ This event is handled when the RangeNavigator gets loaded. A parameter sender is
 
   &lt;/script&gt;         
 
-
-RangeChanged: function
+{% endhighlight %}
+  
+### RangeChanged: function
 
 This event gets fired whenever the selected range changes in RangeNavigator. A parameter sender is passed to the handler. Using sender.selectedRangeSettings, you can access the start and end value of range for the selected region. 
 
- [ASP.NET]
+
+{% highlight html %}
 
 &lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="onchartload"&gt;
 
@@ -75,7 +81,9 @@ This event gets fired whenever the selected range changes in RangeNavigator. A p
 
 &lt;/ej:RangeNavigator&gt;
 
-[JS]
+{% endhighlight %}
+
+{% highlight js %}
 
 &lt;script type="text/javascript"&gt;
 
@@ -85,15 +93,18 @@ This event gets fired whenever the selected range changes in RangeNavigator. A p
 
          }  
 
-&lt;/script&gt;         
+&lt;/script&gt;     
 
-Use of ZoomCoordinates
+{% endhighlight %}    
+
+## Use of ZoomCoordinates
 
 RangeNavigator is used along with the controls like chart and grid to view the selected data. To update chart/grid, whenever the selected range changes in RangeNavigator, you can use RangeChanged event of RangeNavigator and then update the chart/grid with the selected data in this event. 
 
 You can easily update the data for chart by assigning the ZoomFactor and ZoomPosition of the RangeNavigator to the chart axis. 
 
- [ASP.NET]
+
+{% highlight html %}
 
 &lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="loadingdata"&gt;
 
@@ -103,7 +114,9 @@ You can easily update the data for chart by assigning the ZoomFactor and ZoomPos
 
 &lt;/ej:RangeNavigator&gt;
 
-[JS]
+{% endhighlight %} 
+
+{% highlight js %}
 
 &lt;script type="text/javascript"&gt;
 
@@ -127,17 +140,18 @@ You can easily update the data for chart by assigning the ZoomFactor and ZoomPos
 
       &lt;/script&gt;         
 
+{% endhighlight %} 
 
-
-{ ![](Behavior-Customization_images/Behavior-Customization_img2.png) | markdownify }
+![](Behavior-Customization_images/Behavior-Customization_img2.png)
 {:.image }
 
 
-Thumb Template
+## Thumb Template
 
 You can customize Thumb template by using LeftThumbTemplate and RightThumbTemplate property. You can add the required template as a “div” element with an “id” to the web page and assign the id or assign the html string to this property under NavigatorStyleSettings. 
 
-[ASP]
+
+{% highlight html %}
 
 &lt;script type="text/x-jsrender" id="left" &gt;
 
@@ -159,7 +173,9 @@ You can customize Thumb template by using LeftThumbTemplate and RightThumbTempla
 
 &lt;/script&gt;
 
-[CS] 
+{% endhighlight %} 
+
+{% highlight c# %}
 
  &lt;ej:RangeNavigator ID="Range1" runat="server"&gt; 
 
@@ -179,11 +195,11 @@ You can customize Thumb template by using LeftThumbTemplate and RightThumbTempla
 
  &lt;/ej:RangeNavigator&gt;
 
-
+{% endhighlight %} 
 
 The following screenshot displays the RangeNavigator using thumb template.
 
-{ ![D:/TRUNK LOCATION/Feature Tool/Image/aspnet/ejrangenavigator/Chart-Customization.png](Behavior-Customization_images/Behavior-Customization_img3.png) | markdownify }
+![D:/TRUNK LOCATION/Feature Tool/Image/aspnet/ejrangenavigator/Chart-Customization.png](Behavior-Customization_images/Behavior-Customization_img3.png)
 {:.image }
 
 

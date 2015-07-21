@@ -7,7 +7,7 @@ control: DataManager
 documentation: ug
 ---
 
-## Summary 
+# Summary 
 
 Summary is a key feature in DataManager that helps to aggregate any data. DataManager provides several summary type by default, they are as follows.
 
@@ -19,9 +19,11 @@ Summary is a key feature in DataManager that helps to aggregate any data. DataMa
 
 The ej provided several data utilization methods to achieve summary. 
 
-Sum
+## Sum
 
 The Sum summary type provides the sum of the data. The Sum data utilization method accepts two parameters, they are JSON data and the field name where the sum is calculated. The following code example illustrates the Default Summary Types.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -79,19 +81,21 @@ The Sum summary type provides the sum of the data. The Sum data utilization meth
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 The result of the above code example is illustrated as follows.
 
-{ ![](Summary_images/Summary_img1.png) | markdownify }
+![](Summary_images/Summary_img1.png)
 {:.image }
 
 
-Min
+## Min
 
 The Minimum of a particular field can be calculated by using the ej.min data utilization method and this method accepts the arguments such as JSON data/array, field name and the comparer used for the comparison. When the data to the min method is a JSON array then the whole record is returned.
 
 The minimum of particular field can be calculated as follows.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -149,19 +153,21 @@ The minimum of particular field can be calculated as follows.
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 The result of the above code example is illustrated as follows.
 
-{ ![](Summary_images/Summary_img2.png) | markdownify }
+![](Summary_images/Summary_img2.png)
 {:.image }
 
 
-Max
+## Max
 
 The Maximum of a particular field can be calculated by using the ej.max data utilization method and this method accepts the arguments such as JSON data/array, field name and the comparer used for the comparison. When the data to the max method is a JSON array then the whole record is returned.
 
 The maximum of particular field can be calculated as follows.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -219,17 +225,19 @@ The maximum of particular field can be calculated as follows.
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 The result for the above code example is illustrated as follows.
 
-{ ![](Summary_images/Summary_img3.png) | markdownify }
+![](Summary_images/Summary_img3.png)
 {:.image }
 
 
-Avg
+## Avg
 
 The Average summary type provides the average of the given data. The Average data utilization method accepts two parameters, JSON/Array data and the field name where the sum is calculated. Use the following code example for calculating the average of given JSON data.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -287,19 +295,21 @@ The Average summary type provides the average of the given data. The Average dat
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 The result of the above code example is illustrated as follows.
 
-{ ![](Summary_images/Summary_img4.png) | markdownify }
+![](Summary_images/Summary_img4.png)
 {:.image }
 
 
-Distinct
+## Distinct
 
 In a data, a field may contain many duplicate values; and sometimes to list the different (distinct) values you can use the ej.distinct method. This method accepts three parameters such as JSON/Array data, fieldname that you want to fetch as distinct and the third boolean parameter when set as true, returns the whole record when the data is a JSON array. 
 
 The following code example illustrates how to use the ej.distinct method. 
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -357,11 +367,11 @@ The following code example illustrates how to use the ej.distinct method.
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 The result for the above code example is illustrated as follows.
 
-{ ![](Summary_images/Summary_img5.png) | markdownify }
+![](Summary_images/Summary_img5.png)
 {:.image }
 
 

@@ -7,9 +7,11 @@ control: DataManager
 documentation: ug
 ---
 
-## Grouping
+# Grouping
 
 Grouping technique is also supported in DataManager. When you want to analyse any particular record based on its category, you can simply group that column and analyze the records based on category. The following code example illustrates the grouping behavior in table.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -45,11 +47,11 @@ Grouping technique is also supported in DataManager. When you want to analyse an
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
-{ ![](Grouping_images/Grouping_img1.png) | markdownify }
+![](Grouping_images/Grouping_img1.png)
 {:.image }
 
 

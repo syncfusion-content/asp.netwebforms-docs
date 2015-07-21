@@ -7,11 +7,11 @@ control: Currency TextBox
 documentation: ug
 ---
 
-## RTL Support
+# RTL Support
 
 The CurrencyTextbox provides RTL (Right-To-Left) support. The alignment of the CurrencyTextbox can be changed from Left-To-Right into Right-To-Left. It accepts Boolean values. The default value is false.
 
-### Enable RTL 
+## Enable RTL 
 
 Add the following code to your ASPX page to render the CurrencyTextbox control with RTL.
 
@@ -27,7 +27,7 @@ Add the following code to your ASPX page to render the CurrencyTextbox control w
 
 The output when the EnableRTListrue. 
 
-{ ![](RTL-Support_images/RTL-Support_img1.png) | markdownify }
+![](RTL-Support_images/RTL-Support_img1.png)
 {:.image }
 
 

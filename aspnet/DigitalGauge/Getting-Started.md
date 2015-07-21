@@ -23,13 +23,13 @@ documentation: ug
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img1.png) 
 {:.image }
 
 
 
 
-Creating a Digital Gauge
+## Creating a Digital Gauge
 
 ASP.NET Digital Gauge widget basically renders flexible API’s. You can easily create the Digital Gauge widget by using simple code example as follows.
 
@@ -40,21 +40,21 @@ ASP.NET Digital Gauge widget basically renders flexible API’s. You can easily 
 
 
 
-[aspx]
+{% highlight html %}
 
 
 
 &lt;ej:DigitalGauge runat="server" ID="digital"&gt;&lt;/ej:DigitalGauge&gt;
 
 
-
+{% endhighlight %}
 
 
 Run the above code example and you will get a default Digital Gauge as follows.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img2.png)
 {:.image }
 
 
@@ -70,7 +70,7 @@ Run the above code example and you will get a default Digital Gauge as follows.
 
 
 
-Set Height and Width values
+## Set Height and Width values
 
 Basic attributes of each canvas elements are height and width. You can set the height and width of the gauge. 
 
@@ -78,7 +78,7 @@ Basic attributes of each canvas elements are height and width. You can set the h
 
 Code:
 
-[aspx]
+{% highlight html %}
 
 
 
@@ -94,17 +94,17 @@ Run the above code example and you will see a default gauge with the specified h
 {:.image }
 
 
+{% endhighlight %}
 
 
 
-
-Set Items Property
+## Set Items Property
 
 Items have different properties to customize the Digital Gauge.
 
 
 
-Adding Segment and Character Properties
+### Adding Segment and Character Properties
 
 * In the welcome board, the text color is attentive in nature. You are required to give some segment properties such as segment spacing, segment width, segment color, segment length and segment opacity.
 * Character type is used to define the Digital representation of the character. The five types of character representation available are,
@@ -116,7 +116,7 @@ Adding Segment and Character Properties
 
 Code:
 
-[aspx]
+{% highlight html %}
 
 
 
@@ -136,17 +136,17 @@ Code:
 
 &lt;/ej:DigitalGauge&gt;
 
-
+{% endhighlight %}
 
 Execute this code to render a gauge as follows.
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img4.png)
 {:.image }
 
 
 
 
-Adding Background Image
+## Adding Background Image
 
 * Add a div element to set the background for the Digital gauge.
 * Add a style tag in the View page to display the background image for the Digital gauge. 
@@ -164,7 +164,7 @@ Important: The background image path is given in background-image url.
 
 Code:
 
-[aspx]
+{% highlight html %}
 
 
 
@@ -210,13 +210,13 @@ background-repeat :no-repeat;
 
 &lt;/style&gt;
 
-
+{% endhighlight %}
 
 Execute this code to render a gauge as follows.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img5.png)
 {:.image }
 
 
@@ -224,13 +224,13 @@ Execute this code to render a gauge as follows.
 
 
 
-Adding Location
+## Adding Location
 
 Position property is used to positioning the digital letters inside the canvas element.
 
 Code:
 
-[aspx]
+{% highlight html %}
 
 
 
@@ -255,14 +255,14 @@ Code:
 &lt;/ej:DigitalGauge&gt;
 
 
-
+{% endhighlight %}
 
 
 Execute this code to render a Gauge as follows.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img6.png)
 {:.image }
 
 
@@ -270,13 +270,13 @@ Execute this code to render a Gauge as follows.
 
 
 
-Adding the Items collection 
+## Adding the Items collection 
 
 Similarly adding the further item collection will display the temperature value as in the Digital thermometer value.
 
 Code:
 
-[aspx]
+{% highlight html %}
 
 
 
@@ -349,14 +349,14 @@ Code:
 &lt;/ej:DigitalGauge&gt;
 
 
-
+{% endhighlight %}
 
 
 Execute this code to render a Digital thermometer as follows.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img7.png)
 {:.image }
 
 

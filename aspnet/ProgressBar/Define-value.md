@@ -7,9 +7,9 @@ control: ProgressBar
 documentation: ug
 ---
 
-## Define value
+# Define value
 
-### Value
+## Value
 
 Sets the ProgressBar value. By default, value is set to 0 (number). You can set the value for ProgressBar by using Value property. The value should be in between min and max values (number) of the ProgressBar. By default, MinValue is 0 and MaxValue is 100.
 
@@ -27,11 +27,12 @@ Add the following code in the ASPX page in order to render the ProgressBar contr
 
 {% endhighlight %}
 
-The following screenshot displays the Assigning value to ProgressBar.               { ![](Define-value_images/Define-value_img1.png) | markdownify }
+The following screenshot displays the Assigning value to ProgressBar.            
+![](Define-value_images/Define-value_img1.png)
 {:.image }
 
 
-### Percentage
+## Percentage
 
 Sets the ProgressBar value in percentage. By default, percentage is set to 0 (number). You can set the ProgressBar value in percentage by using the Percentage property. The value should be in between min and max values (number) of the ProgressBar. By default, MinValue is 0 and MaxValue is 100.
 
@@ -57,11 +58,11 @@ The following screenshot displays the Progress bar with Percentage.
 
 
 
-{ ![](Define-value_images/Define-value_img2.png) | markdownify }
+![](Define-value_images/Define-value_img2.png) 
 {:.image }
 
 
-### Setting Range
+## Setting Range
 
 It allows you to set the range to the ProgressBar control. The range of the ProgressBar can be set by using the minimum and maximum values. The Minimum value specifies the value where the progress bar shows the start of the process. The Maximum value specifies the value where the progress bar shows the completion of the process. You can set the range by using MinValue and MaxValues properties.
 
@@ -83,13 +84,15 @@ Add the following code example in the ASPX page to render Minimum and Maximum va
 
 {% endhighlight %}
 
-The following screenshot displays the Minimum and Maximum values.{ ![](Define-value_images/Define-value_img3.png) | markdownify }
+The following screenshot displays the Minimum and Maximum values. 
+
+![](Define-value_images/Define-value_img3.png)
 {:.image }
 
 
-#### Appearance and Styling
+## Appearance and Styling
 
-##### Adjusting ProgressBar size
+### Adjusting ProgressBar size
 
 ProgressBar control provides ability to change/adjust the bar size. The Height and Width property allows you to set the maximum height and maximum width for the ProgressBar. The value set to this property should be stringtype.
 
@@ -111,11 +114,11 @@ Add the following code example to the ASPX page.
 
 The following screenshot displays the maximum height and maximum width.                         
 
-{ ![](Define-value_images/Define-value_img4.png) | markdownify }
+![](Define-value_images/Define-value_img4.png)
 {:.image }
 
 
-### Custom text
+## Custom text
 
 Allows custom text like percentage or any other message in the ProgressBar. You can set the custom text that is displayed when the progress bar shows different levels of progress.
 
@@ -135,11 +138,11 @@ Add the following code example in the ASPX page.
 
 The following screenshot displays the custom text.
 
-{ ![](Define-value_images/Define-value_img5.png) | markdownify }
+![](Define-value_images/Define-value_img5.png) 
 {:.image }
 
 
-### Theme
+## Theme
 
 ProgressBar control’s style and appearance can be controlled based on the CSS classes. In order to apply Theme to the ProgressBar control, refer to the files, ej.widgets.core.min.css and ej.theme.min.css. When the file ej.widgets.all.min.css is referred, it is not necessary to include the ej.widgets.core.min.css and ej.theme.min.css files in your project, as ej.widgets.all.min.css is the combination of these two files. 
 
@@ -158,7 +161,8 @@ By default, there are 13 themes supported by the ProgressBar control,
 * gradient-lime-dark
 * gradient-saffron
 * gradient-saffron-dark
-#### CSS class
+
+## CSS class
 
 
 To apply custom styles to the ProgressBar control, specify the CssClass property. The specified CSS name is added to the root of the ProgressBar control.
@@ -195,7 +199,7 @@ Add the following code example to the corresponding ASPX page to render Progress
 
 The following screenshot displays the customized style.
 
-{ ![](Define-value_images/Define-value_img6.png) | markdownify }
+![](Define-value_images/Define-value_img6.png) 
 {:.image }
 
 

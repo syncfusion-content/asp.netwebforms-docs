@@ -7,11 +7,12 @@ control: ColorPicker
 documentation: ug
 ---
 
-## Keyboard Interaction
+# Keyboard Interaction
 
 You can use keyboard shortcut keys as an alternative to the mouse while using the ColorPicker control. The ColorPicker control allows you to perform all kinds of actions by using keyboard shortcuts.
 
-_Keyboard shortcut keys_
+## _Keyboard shortcut keys_
+
 
 <table>
 <tr>
@@ -65,7 +66,7 @@ Upwards to value 100</td></tr>
 </table>
 
 
-### Configure Keyboard Interaction
+## Configure Keyboard Interaction
 
 The following steps explain how you can enable keyboard interaction for the ColorPicker textbox.
 
@@ -123,7 +124,7 @@ Add the following code in the script section.
 
 The following screenshot displays the output of the above code snippet.
 
-{ ![](Keyboard-Interaction_images/Keyboard-Interaction_img1.png) | markdownify }
+![](Keyboard-Interaction_images/Keyboard-Interaction_img1.png)
 {:.image }
 
 

@@ -7,13 +7,15 @@ control: DataManager
 documentation: ug
 ---
 
-## Editing
+# Editing
 
 Editing is a key feature in DataManager and it provides support to add a new record, edit an existing record and remove a record from the table. 
 
-Batch Edit
+## Batch Edit
 
 Batch Editing is a unique feature, where requests to add, remove and change are handled altogether at a time rather than passing the request separately for each operation.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -127,17 +129,19 @@ Batch Editing is a unique feature, where requests to add, remove and change are 
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
-{ ![](Editing_images/Editing_img1.png) | markdownify }
+![](Editing_images/Editing_img1.png)
 {:.image }
 
 
-Insert
+## Insert
 
 The insert method of the data manager is used to add a new record to the table. The JSON data passed as a parameter to the insert method that is inserted to the data source of the data manager.
+
+{% highlight html %}
 
 &lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
 
@@ -195,19 +199,19 @@ The insert method of the data manager is used to add a new record to the table. 
 
 &lt;/asp:Content&gt;
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
-{ ![](Editing_images/Editing_img2.png) | markdownify }
+![](Editing_images/Editing_img2.png)
 {:.image }
 
 
-Update
+## Update
 
 The update method is used to update the modified changes made to a record in the data source of the DataManager.
 
-[ASPX]
+{% highlight html %}
 
 
 
@@ -271,9 +275,9 @@ The update method is used to update the modified changes made to a record in the
 
 &lt;/asp:Content&gt;
 
+{% endhighlight %}
 
-
-[CS]
+{% highlight C# %}
 
 public partial class DataManager : System.Web.UI.Page
 
@@ -371,19 +375,19 @@ public partial class DataManager : System.Web.UI.Page
 
     }
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
-{ ![](Editing_images/Editing_img3.png) | markdownify }
+![](Editing_images/Editing_img3.png)
 {:.image }
 
 
-Remove
+## Remove
 
 The “remove” method is used to delete a record from the data source of the DataManager.
 
-[ASPX]
+{% highlight html %}
 
 
 
@@ -447,9 +451,9 @@ The “remove” method is used to delete a record from the data source of the D
 
 &lt;/asp:Content&gt;
 
+{% endhighlight %}
 
-
-[CS]
+{% highlight C# %}
 
 public partial class DataManager : System.Web.UI.Page
 
@@ -547,11 +551,11 @@ public partial class DataManager : System.Web.UI.Page
 
     }
 
-
+{% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
-{ ![](Editing_images/Editing_img4.png) | markdownify }
+![](Editing_images/Editing_img4.png)
 {:.image }
 
 

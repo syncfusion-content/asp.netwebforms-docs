@@ -7,7 +7,7 @@ control: Rotator
 documentation: ug
 ---
 
-## Keyboard interaction
+# Keyboard interaction
 
 The Rotator property, AllowKeyboardNavigation, turns on the keyboardinteraction with the Rotator items. You must set this property to true to access the keyboard shortcuts. The default value is true. The value set to this property is Boolean.
 
@@ -169,7 +169,7 @@ In an ASPX page, add the following code example and set the AllowKeyboardNavigat
 
 Add the following code in your JavaScript to focus the control.
 
-
+{% highlight js %}
 
         $(function () {
 
@@ -190,12 +190,12 @@ Add the following code in your JavaScript to focus the control.
         });
 
 
-
+{% endhighlight %}
 
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Keyboard-interaction_images/Keyboard-interaction_img1.png) | markdownify }
+![](Keyboard-interaction_images/Keyboard-interaction_img1.png)
 {:.image }
 
 

@@ -7,7 +7,7 @@ control: Currency TextBox
 documentation: ug
 ---
 
-## Localization Support
+# Localization Support
 
 Localization is the language support based on the culture. You can achieve the Localization by using the Locale property in the CurrencyTextbox.
 
@@ -29,7 +29,7 @@ You can get the script file of various cultures from the following path also:
 
 You can dynamically change the language based on their culture.
 
-### Configuring Localization
+## Configuring Localization
 
 Add the following code to your ASPX page to render the CurrencyTextbox control.
 
@@ -45,11 +45,11 @@ Add the following code to your ASPX page to render the CurrencyTextbox control.
 
 The screenshots of the CurrencyTextbox with es-ES locale and en-US locale.
 
-{ ![](Localization-Support_images/Localization-Support_img1.png) | markdownify }
+![](Localization-Support_images/Localization-Support_img1.png)
 {:.image }
 
 
-__{ ![](Localization-Support_images/Localization-Support_img2.png) | markdownify }
+![](Localization-Support_images/Localization-Support_img2.png)
 {:.image }
-__
+
 
