@@ -7,12 +7,12 @@ control: Grid
 documentation: ug
 ---
 
-## Enable Persistence
+# Enable Persistence
 
 EnablePersistence is used to maintain the current state of the Grid model. When you refresh the page, the current grid state is stored in localStorage and it renders from stored model. 
 
 
-
+{% highlight html %}
 [ASP.NET]
 
 
@@ -44,7 +44,8 @@ EnablePersistence is used to maintain the current state of the Grid model. When 
         &lt;/ej:Grid&gt;
 
     &lt;/div&gt;
-
+{% endhighlight  %}
+{% highlight c#  %}
 [ASP.NET CS]
 
 
@@ -172,10 +173,10 @@ namespace WebSampleBrowser.Grid
 }
 
 
-
+{% endhighlight  %}
 The following output is displayed as a result of the above code example.
 
-{ ![](Enable-Persistence_images/Enable-Persistence_img1.png) | markdownify }
+![](Enable-Persistence_images/Enable-Persistence_img1.png)
 {:.image }
 
 

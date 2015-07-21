@@ -7,11 +7,11 @@ control: Grid
 documentation: ug
 ---
 
-## Style and Appearance
+# Style and Appearance
 
 Style and appearance of Grid are based on CSS class. You need two style sheets to apply styles to Grid control; one ej.widgets.core.min.css and one ej.theme.min.css. If you use ej.widgets.all.min.css then you don’t need to use ej.widgets.core.min.css and ej.theme.min.css because ej.widgets.all.min.css is a combination of these two. 
 
-### Customize styles
+## Customize styles
 
 In some scenarios, you may want to change colour or design of Grid control’s appearance. In that situation, you can override default styles of Grid control using its class names. The following are specific class names you can use to modify styles and appearance in Grid.
 

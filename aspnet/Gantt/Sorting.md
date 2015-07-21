@@ -7,7 +7,7 @@ control: Gantt
 documentation: ug
 ---
 
-## Sorting
+# Sorting
 
 The Gantt control for JavaScript has built-in support for sorting one or more columns.
 
@@ -53,7 +53,7 @@ The following screenshot shows the output of multicolumn sorting in Gantt contro
 
 
 
-{ ![](Sorting_images/Sorting_img1.png) | markdownify }
+![](Sorting_images/Sorting_img1.png)
 {:.image }
 
 

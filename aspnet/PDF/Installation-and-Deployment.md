@@ -7,9 +7,9 @@ control: PDF
 documentation: ug
 ---
 
-## Installation and Deployment
+# Installation and Deployment
 
-### System Requirements
+## System Requirements
 
 To produce and manipulate PDF documents, the machine where Essential PDF runs on does not require Adobe Acrobat to be installed. Essential PDF is a PDF document creation engine. To view PDF documents produced by Essential PDF, the machine requires at least an Adobe Acrobat Reader.
 
@@ -38,9 +38,11 @@ Compatibility
 Operating Systems</td><td>
 * Windows 8.1 (32 bit and 64 bit)* Windows 8 (32 bit and 64 bit)* Windows Server 2008 (32 bit and 64 bit)* Windows 7 (32 bit and 64 bit)* Windows Vista (32 bit and 64 bit)* Windows XP* Windows 2003</td></tr>
 </table>
-### Deploy Essential PDF
 
-#### Assemblies
+
+## Deploy Essential PDF
+
+### Assemblies
 
 
 The following assemblies are to be referenced in your application for the usage of Essential PDF.
@@ -78,7 +80,8 @@ ASP.NET MVC – PDF (Partial-Trust) – MVC
 * Syncfusion.Core.dll
 * Syncfusion.Compression.Base.dll
 * Syncfusion.Pdf.MVC.dll
-#### Referencing Syncfusion.Pdf.Base from a .Net project
+
+### Referencing Syncfusion.Pdf.Base from a .Net project
 
 
 To use a component in your application, you need to add a reference to it

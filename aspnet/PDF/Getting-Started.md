@@ -17,7 +17,7 @@ Creating a Console Application
 
 1. Open Microsoft Visual Studio. Open File menu and click New Project. In the New Project dialog, select Console Application template, name the project and click OK.
 
-{ '![C:/Users/SURESH/Desktop/CreateProject.png](Getting-Started_images/Getting-Started_img1.png)' | markdownify }
+![C:/Users/SURESH/Desktop/CreateProject.png](Getting-Started_images/Getting-Started_img1.png)
 {:.image }
 
 
@@ -30,7 +30,7 @@ Creating a Console Application
 
 
 
-{ '![C:/Users/SURESH/Desktop/AddingReference.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }
+![C:/Users/SURESH/Desktop/AddingReference.png](Getting-Started_images/Getting-Started_img2.png)
 {:.image }
 
 
@@ -221,9 +221,7 @@ document.Save("Sample.pdf")
 Essential PDF can read, write, and merge PDF files using asynchronous methods. This is a new approach introduced in Framework 4.5 or greater that enables applications to use asynchronous programming in Windows store apps (WinRT) and in WindowsPhone (WP). The following list of public APIs in Essential PDF support asynchronous programming.
 
 
-{ '![http://help.syncfusion.com/ug/windows%20forms/pdf/ImagesExt/image517_36.jpg](Getting-Started_images/Getting-Started_img3.jpeg)' | markdownify }
-{:.image }
-_Note: Asynchronous support is applicable to Windows Store apps and Windows Phone_
+> _Note: Asynchronous support is applicable to Windows Store apps and Windows Phone_
 
 <table>
 <tr>
@@ -234,72 +232,74 @@ Overloads</th><th>
 <tr>
 <th rowspan = "6">
 OpenAsync</th><th>
-async Task<bool> OpenAsync(StorageFile stFile)</th><th>
+async Task&lt;bool&gt; OpenAsync(StorageFile stFile)</th><th>
 Opens an existing PDF document as a storage file.</th></tr>
 <tr>
 <th>
-async Task<bool> OpenAsync(StorageFile stFile,string password)</th><th>
+async Task&lt;bool&gt; OpenAsync(StorageFile stFile,string password)</th><th>
 Opens a secure existing PDF document with password.</th></tr>
 <tr>
 <th>
-async Task<bool> OpenAsync(byte[] bytes)</th><th>
+async Task&lt;bool&gt; OpenAsync(byte[] bytes)</th><th>
 Opens an existing PDF document as byte array.</th></tr>
 <tr>
 <th>
-async Task<bool> OpenAsync(byte[] bytes, stringpassword)</th><th>
+async Task&lt;bool&gt; OpenAsync(byte[] bytes, stringpassword)</th><th>
 Opens a secured existing PDF document with password.</th></tr>
 <tr>
 <th>
-async Task<bool> OpenAsync(Stream stream)</th><th>
+async Task&lt;bool&gt; OpenAsync(Stream stream)</th><th>
 Opens an existing PDF document as stream.</th></tr>
 <tr>
 <th>
-async Task<bool> OpenAsync(Stream stream, stringpassword)</th><th>
+async Task&lt;bool&gt; OpenAsync(Stream stream, stringpassword)</th><th>
 Opens a secured existing PDF document with password.</th></tr>
 <tr>
 <th>
 SaveAsync</th><th>
-async Task<bool> SaveAsync(Stream stream)</th><th>
+async Task&lt;bool&gt; SaveAsync(Stream stream)</th><th>
 Saves the document to a stream in asynchronous mode.</th></tr>
 <tr>
 <th>
 SaveAsync</th><th>
-async Task<bool> SaveAsync(StorageFile stFile)</th><th>
+async Task&lt;bool&gt; SaveAsync(StorageFile stFile)</th><th>
 Saves the PDF file as storage file.</th></tr>
 <tr>
 <th>
 Save</th><th>
-async Task<bool> Save()</th><th>
+async Task&lt;bool&gt; Save()</th><th>
 Saves the modified document.</th></tr>
 <tr>
 <th rowspan = "2">
 ImportPageAsync</th><th>
-async Task<PdfPageBase> ImportPageAsync(PdfLoadedDocument ldDoc, intpageIndex)</th><th rowspan = "2">
+async Task&lt;PdfPageBase&gt; ImportPageAsync(PdfLoadedDocument ldDoc, intpageIndex)</th><th rowspan = "2">
 Imports a page in asynchronous mode.</th></tr>
 <tr>
 <th>
-async Task<PdfPageBase> ImportPageAsync(PdfLoadedDocument ldDoc,PdfPageBase page)</th></tr>
+async Task&lt;PdfPageBase&gt; ImportPageAsync(PdfLoadedDocument ldDoc,PdfPageBase page)</th></tr>
 <tr>
 <th>
 ImportPageRangeAsync</th><th>
-async Task<PdfPageBase> ImportPageRangeAsync(PdfLoadedDocument ldDoc,int startIndex, int endIndex)</th><th>
+async Task&lt;PdfPageBase&gt; ImportPageRangeAsync(PdfLoadedDocument ldDoc,int startIndex, int endIndex)</th><th>
 Imports page range in asynchronous mode.</th></tr>
 <tr>
 <th>
 AppendAsync</th><th>
-async Task<bool> AppendAsync(PdfLoadedDocument ldDoc)</th><th>
+async Task&lt;bool&gt; AppendAsync(PdfLoadedDocument ldDoc)</th><th>
 Appends documents in asynchronous mode.</th></tr>
 <tr>
 <th>
 MergeAsync</th><th>
-async static Task<PdfDocumentBase> MergeAsync(PdfDocumentBase dest,PdfLoadedDocument src)</th><th>
+async static Task&lt;PdfDocumentBase&gt; MergeAsync(PdfDocumentBase dest,PdfLoadedDocument src)</th><th>
 Merges documents in asynchronous mode.</th></tr>
 </table>
+
+
 ## Class Diagram
 
 The following illustration displays the Class Diagram for Essential PDF.
 
-{ ![C:/Users/Suresh/Desktop/DesktopItems/UGRevamp/ClassDiagram.png](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+![C:/Users/Suresh/Desktop/DesktopItems/UGRevamp/ClassDiagram.png](Getting-Started_images/Getting-Started_img4.png)
 {:.image }
 
 
@@ -308,9 +308,8 @@ The following illustration displays the Class Diagram for Essential PDF.
 You can view the PDF files generated by Essential PDF using Adobe Acrobat Reader 7.x or later versions. Other conforming Readers that strictly follow Adobe’s PDF specification 1.4 or later also can be used.
 
 
-{ '![http://help.syncfusion.com/ug/windows%20forms/pdf/ImagesExt/image517_8.jpg](Getting-Started_images/Getting-Started_img5.jpeg)' | markdownify }
-{:.image }
-_Note: Adobe Reader is free software; hence, the most recent version can be downloaded easily._
+
+> _Note: Adobe Reader is free software; hence, the most recent version can be downloaded easily._
 
 
 
@@ -319,9 +318,8 @@ Essential PDF allows you to control the version of PDF files using the Version p
 * Version (property)-Specifies the version of the PDF document.
 * CrossReferenceType (property)-Specifies the type of the cross-reference in the file. This property allows you to present a cross-reference with a standard format in a cross-reference table. The cross-references can also be presented as a cross-reference stream using the CrossReferenceStream property. This format is supported by the PDF 1.5 and higher versions. The files using this format are more compact, especially when compression is used. However, generating such a file takes more time.
 
-{ '![http://help.syncfusion.com/ug/windows%20forms/pdf/ImagesExt/image517_8.jpg](Getting-Started_images/Getting-Started_img6.jpeg)' | markdownify }
-{:.image }
-_Note: This property marks the file by the specified version only. It does not control the compatibility of the features used in the file._
+
+> _Note: This property marks the file by the specified version only. It does not control the compatibility of the features used in the file._
 
 
 
@@ -493,7 +491,7 @@ document.Close()
 
 Supported and non-supported elements of Essential PDF for Windows, ASP.NET, WPF, ASP.NET MVC, Silverlight, and Windows Store apps are listed in the following table.
 
-_Table_ _2__: List of supported and non-supported elements of Essential PDF_
+_Table2: List of supported and non-supported elements of Essential PDF_
 
 <table>
 <tr>
@@ -988,9 +986,8 @@ Yes</td><td colspan = "2">
 No</td><td colspan = "3">
 Yes</td></tr>
 </table>
-{ ![Description: http://help.syncfusion.com/ug_92/Reporting/PDF/ASP.NET/ImagesExt/image9_2.png](Getting-Started_images/Getting-Started_img7.jpeg) | markdownify }
-{:.image }
-_Note:*Only .Jpeg format images are supported for Silverlight version._
+
+> _Note:*Only .Jpeg format images are supported for Silverlight version._
 _**Supported only in PdfGrid class_
 
 ## Usage of Essential PDF in realtime scenario
@@ -999,7 +996,7 @@ This article explains you the various steps required to create a basic invoice d
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img8.png)
 {:.image }
 
 
@@ -1074,7 +1071,7 @@ The above code creates a landscape PDF and sets the four margins of the pages as
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img9.png)
 {:.image }
 
 
@@ -1082,7 +1079,7 @@ The above code creates a landscape PDF and sets the four margins of the pages as
 
 As you can see in the Simple Invoice image, a logo is added at the top-right corner of the document. To add the logo at a very top position of the page, the following code sample allows you to load an image using the Essential Pdf API and draw it on the PDF page. 
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -1103,8 +1100,8 @@ PdfImage img = PdfImage.FromStream(imgStream);
 //Draws the image on to the PDF page graphics.
 
 page.Graphics.DrawImage(img, new RectangleF(g.ClientSize.Width - img.Width, 0, img.Width, img.Height));
-
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -1126,13 +1123,13 @@ Dim img As PdfImage = PdfImage.FromStream(imgStream)
 
 page.Graphics.DrawImage(img, New RectangleF(g.ClientSize.Width - img.Width, 0, img.Width, img.Height))
 
-
+{% endhighlight %}
 
 In the above code, the X- coordinate of the image is chosen from the right corner of the page by calculating the difference of the page width and the image width. The following screenshot illustrates how the document appears after adding the logo.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img10.png) 
 {:.image }
 
 
@@ -1206,8 +1203,7 @@ Dim result As PdfLayoutResult = element.Draw(page, New RectangleF(0, 0, page.Gra
 
 Specify the essential properties of the text such as font, brush, etc., and draw the text to the left most corner (0,0 – coordinate) of the page. Note that the PdfTextElement returns the layout result of the text element that helps you to add the next element without overlapping. The following screenshot displays the document after adding the sender’s address.
 
-
-{ ![](Getting-Started_images/Getting-Started_img11.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img11.png)
 {:.image }
 
 
@@ -1367,7 +1363,7 @@ The invoice document appears like the following screenshot with the added invoic
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img12.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img12.png) 
 {:.image }
 
 
@@ -1519,7 +1515,7 @@ The following screenshot displays a PDF document with content.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img13.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img13.png)
 {:.image }
 
 
@@ -1957,7 +1953,7 @@ Dim gridResult As PdfGridLayoutResult = grid.Draw(page, New RectangleF(New Point
 
 The invoice document appears like the following image after drawing the table to the page.
 
-{ ![](Getting-Started_images/Getting-Started_img14.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img14.png) 
 {:.image }
 
 
@@ -2049,7 +2045,7 @@ gridResult.Page.Graphics.DrawString(totalDue.ToString("C"), font, New PdfSolidBr
 
 Now the document appears as the following screenshot.
 
-{ ![](Getting-Started_images/Getting-Started_img15.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img15.png)
 {:.image }
 
 
@@ -2181,7 +2177,7 @@ document.Save("Invoice.pdf")
 
 The following screenshot illustrates the completed document that is ready to be distributed.
 
-{ '![](Getting-Started_images/Getting-Started_img16.png)' | markdownify }
+![](Getting-Started_images/Getting-Started_img16.png)
 {:.image }
 
 

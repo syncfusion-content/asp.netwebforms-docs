@@ -7,14 +7,14 @@ control: Chart
 documentation: ug
 ---
 
-## Appearance and Styling
+# Appearance and Styling
 
 Essential Chart is enriched with lots of customization options to develop high quality graphic rich Charts.
 
-### Tooltip Template
+## Tooltip Template
 
 You can customize a tooltip with required template by adding a “div” element with an “id” to the web page and assigning the “id” to the property “Template” under “Tooltip” as illustrated in the following code example.
-
+{% highlight js %}
 &lt;div id="Tooltip" style="display: none;"&gt;
 
 &lt;div id="icon"&gt;
@@ -39,8 +39,8 @@ You can customize a tooltip with required template by adding a “div” element
 
     &lt;/div&gt;
 
-
-
+{% endhighlight %}
+{% highlight css %}
 &lt;style class="cssStyles"&gt;
 
         .tooltipDiv {
@@ -117,8 +117,8 @@ font-weight: bold;
 
     &lt;/style&gt;
 
-
-
+{% endhighlight  %}
+{% highlight html %}
 [ASP.NET] 
 
   &lt;ej:Chart ID="Chart1" runat="server"&gt;       
@@ -161,17 +161,17 @@ font-weight: bold;
 
   &lt;/ej:Chart&gt;
 
+{% endhighlight %}
 
-
-{ ![F:/Skype Download/IMG_14052014_050616.png](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) | markdownify }
+![F:/Skype Download/IMG_14052014_050616.png](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 {:.image }
 
 
-### Label Template
+## Label Template
 
 You customize a data label with required template by adding a “div” element with an “id” to the web page and assigning the “id” to the property “Template” under “DataLabel” as illustrated in the following code example.
 
-
+{% highlight js %}
 
 &lt;div id="template"&gt;
 
@@ -189,8 +189,8 @@ You customize a data label with required template by adding a “div” element 
 
     &lt;/div&gt;
 
-
-
+{% endhighlight  %}
+{% highlight css %}
     &lt;style&gt;
 
         #point {
@@ -245,8 +245,8 @@ You customize a data label with required template by adding a “div” element 
 
     &lt;/style&gt;
 
-
-
+{% endhighlight  %}
+{% highlight html %}
 [ASP.NET] 
 
   &lt;ej:Chart ID="Chart1" runat="server"&gt;       
@@ -277,19 +277,19 @@ You customize a data label with required template by adding a “div” element 
 
   &lt;/ej:Chart&gt;
 
+{% endhighlight %}
 
-
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 {:.image }
 
 
-### Label Formatting
+## Label Formatting
 
 Numerical Axis:
 
 By default, the label texts are automatically determined based on the axis data points and the generated intervals. You can make the Chart readable and understandable by formatting axes labels. For example, add "$" prefix when values are given in dollars and add "°F" postfix when values are given in Fahrenheit degrees. To achieve this “LabelFormat” property in axis is used.
 
-
+{% highlight html %}
 
 [ASP.NET] 
 
@@ -298,7 +298,7 @@ By default, the label texts are automatically determined based on the axis data 
          &lt;PrimaryYAxis LabelFormat="{value}%" /&gt;
 
   &lt;/ej:Chart&gt;
-
+{% endhighlight %}
 Date time Axis:
 
 For datetime axis, all globalized date time formats are supported. By default, based on the interval type the LabelFormat is calculated. When the IntervalType is “Year” then the LabelFormat is 'MMM, yyyy'.
@@ -312,7 +312,7 @@ Some of the LabelFormat for datetime axis:
 * 'hh:mm:ss'
 * 'hh:mm:ss:tt'
 
-
+{% highlight html %}
 
 [ASP.NET] 
 
@@ -322,18 +322,18 @@ Some of the LabelFormat for datetime axis:
 
   &lt;/ej:Chart&gt;
 
+{% endhighlight  %}
 
-
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 {:.image }
 
 
 
 
-### Title and Subtitle
+## Title and Subtitle
 
 Essential Chart provides Title and Subtitle support that is used to give additional information about the chart data. It also has various options to customize the font alignment of the Title and Subtitle. 
-
+{% highlight html %}
 [ASP.NET]
 
 
@@ -351,14 +351,14 @@ Essential Chart provides Title and Subtitle support that is used to give additio
           &lt;/Title&gt;&lt;/ej:Chart&gt;
 
 
-
+{% endhighlight  %}
 The following screenshot shows the Title and Subtitle in Chart control.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png) 
 {:.image }
 
 
-### Chart Background and Foreground
+## Chart Background and Foreground
 
 You can customize the background for different portion of Chart.
 
@@ -367,7 +367,7 @@ To Chart:
 Using the Background property you can customize the background color of the Chart.
 
 Code: 
-
+{% highlight html %}
 [ASP.NET] 
 
   &lt;ej:Chart ID="Chart1" runat="server" Background="#1E90FF"&gt;       
@@ -375,8 +375,8 @@ Code:
   &lt;/ej:Chart&gt;
 
 
-
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png) | markdownify }
+{% endhighlight %}
+![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
 {:.image }
 
 
@@ -385,7 +385,7 @@ To Chart Area:
 Using Background property in ChartArea you can customize the background color of the Chart area.
 
 Code: 
-
+{% highlight html %}
 [ASP.NET] 
 
 &lt;ej:Chart ID="Chart1" runat="server" Background="#1E90FF"&gt;       
@@ -394,9 +394,9 @@ Code:
 
 &lt;/ej:Chart&gt;
 
+{% endhighlight  %}
 
-
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
 {:.image }
 
 
@@ -404,7 +404,7 @@ BackGround Image:
 
 Essential Chart allows you to add background image for your Chart using BackGroundImageUrl property.
 
-
+{% highlight html %}
 
 [ASP.NET] 
 
@@ -415,12 +415,12 @@ Essential Chart allows you to add background image for your Chart using BackGrou
          </ej:Chart
 
 
-
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img7.png) | markdownify }
+{% endhighlight %}
+![](Appearance-and-Styling_images/Appearance-and-Styling_img7.png)
 {:.image }
 
 
-### Theme
+## Theme
 
 Chart has built-in theme support. The theme configures the colors of following Chart element.
 
@@ -432,7 +432,7 @@ Chart has built-in theme support. The theme configures the colors of following C
 6. Background
 
 Code: 
-
+{% highlight html %}
 [ASP.NET] 
 
  &lt;ej:Chart ID="Chart1" runat="server" Theme="GradientLight"&gt;       
@@ -442,7 +442,7 @@ Code:
  &lt;/ej:Chart&gt;
 
 
-
+{% endhighlight  %}
 Following predefined themes are available in JS Chart.
 
 1. FlatLight     
@@ -456,25 +456,25 @@ Following predefined themes are available in JS Chart.
 9. Saffron
 10. SaffronDark
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img8.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img8.png)
 {:.image }
 
 
-### Custom Color palette 
+## Custom Color palette 
 
 Apart from the themes, to define custom set of color you can use “Palette” property. Palette customizes the color of series in the Chart. 
 
 
-
+{% highlight html %}
 [ASP.NET]
 
         &lt;ej:Chart ID="Chart1" Palette="#69D2E7, #E27F2D, #6A4B82" runat="server"&gt;            
 
         &lt;/ej:Chart&gt;
 
+{% endhighlight %}
 
-
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img9.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img9.png) 
 {:.image }
 
 

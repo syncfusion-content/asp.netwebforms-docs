@@ -7,7 +7,7 @@ control: Gantt
 documentation: ug
 ---
 
-## Holidays
+# Holidays
 
 Holidays in Gantt control is used to highlight the non-working days in Gantt control and it can be initialized with Gantt control by using the following code example.
 
@@ -59,7 +59,7 @@ The following screenshot shows the output of Holidays in Gantt control.
 
 
 
-{ ![](Holidays_images/Holidays_img1.png) | markdownify }
+![](Holidays_images/Holidays_img1.png) 
 {:.image }
 
 

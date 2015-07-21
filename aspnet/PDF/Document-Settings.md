@@ -7,9 +7,9 @@ control: PDF
 documentation: ug
 ---
 
-## Document Settings
+# Document Settings
 
-### Document information
+## Document information
 
 Essential PDF allows you to set and read a file or document information of a PDF like Author, CreationDate, Subject, Title, etc. The document information property of the PdfDocument or PdfLoadedDocument provides access to this information. 
 
@@ -23,7 +23,7 @@ The following are the list of attributes available under PdfDocumentInformation 
 * Title and so on
 
  The following code example illustrates how to read the document information.
-
+{% highlight c# %}
 [C#]
 
 
@@ -43,8 +43,8 @@ Console.WriteLine(document.DocumentInformation.Keywords);
 Console.WriteLine(document.DocumentInformation.Creator);
 
 Console.WriteLine(document.DocumentInformation.Producer);
-
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -66,12 +66,12 @@ Console.WriteLine(document.DocumentInformation.Creator)
 
 Console.WriteLine(document.DocumentInformation.Producer)
 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Document-Settings_images/Document-Settings_img1.png) | markdownify }
-{:.image }
-_Note: You can write the document information with the newly created document._
+{% endhighlight %}
+
+> _Note: You can write the document information with the newly created document._
 
 The following code example illustrates how to write the document information.
-
+{% highlight c# %}
 [C#]
 
 
@@ -118,7 +118,9 @@ document.Save("Output.pdf");
 
 document.Close(true);
 
+{% endhighlight  %}
 
+{% highlight vbnet %}
 
 [VB]
 
@@ -166,23 +168,20 @@ document.Save("Output.pdf")
 
 document.Close(True)
 
-
+{% endhighlight %}
 
 The Document settings help in storing information about the document. It can also control the way they are displayed when they are open in the viewer.
 
-{ ![C:/Users/george/Desktop/UGScreenShots/DocumentInformation.png](Document-Settings_images/Document-Settings_img2.png) | markdownify }
+![C:/Users/george/Desktop/UGScreenShots/DocumentInformation.png](Document-Settings_images/Document-Settings_img2.png)
 {:.image }
 
-
-{ ![http://help.syncfusion.com/ug/windows%20forms/pdf/ImagesExt/image517_36.jpg](Document-Settings_images/Document-Settings_img3.jpeg) | markdownify }
-{:.image }
-_Note: You cannot overwrite the existing metadata information._
+> _Note: You cannot overwrite the existing metadata information._
 
 ### Viewer Preference
 
 A PDF file can control the way the document is presented on the screen when it is opened in the viewer. Essential PDF allows you to set these preferences using the PdfViewerPreferences class. You can perform the following customizations of the viewer when the document is open.
 
-_Table_ _3__: List of customizations_
+_Table3: List of customizations_
 
 <table>
 <tr>
@@ -223,7 +222,7 @@ The page layout to be used when the document is opened.* OneColumn - Displays t
 <br>An option to be selected when a print dialog is displayed for this document* AppDefault – Indicates the conforming reader’s default print scaling* None – Indicates no page scaling.</td></tr>
 </table>
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -276,9 +275,9 @@ document.Save("Sample.pdf");
 //Closes the document.
 
 document.Close(true);
+{% endhighlight %}
 
-
-
+{% highlight vbnet %}
 [VB]
 
 
@@ -331,7 +330,9 @@ document.Save("Sample.pdf")
 
 document.Close(True)
 
-{ ![](Document-Settings_images/Document-Settings_img4.png) | markdownify }
+{% endhighlight %}
+
+![](Document-Settings_images/Document-Settings_img4.png)
 {:.image }
 
 

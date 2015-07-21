@@ -7,7 +7,7 @@ control: PDF
 documentation: ug
 ---
 
-## Working with Header and footer template
+# Working with Header and footer template
 
 Headers and footers can be placed in the pages of the PDF document.
 
@@ -23,7 +23,7 @@ You can dock the header or footer to any position.
 
 The following code example illustrates you on how to create a Header and Footer.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -92,8 +92,8 @@ pdfDocument.Template.Bottom = footer;
 pdfDocument.Save("Output.pdf");
 
 pdfDocument.Close(true);
-
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -163,5 +163,5 @@ pdfDocument.Save("Output.pdf")
 
 pdfDocument.Close(True)
 
-
+{% endhighlight  %}
 

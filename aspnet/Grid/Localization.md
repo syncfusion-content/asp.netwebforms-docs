@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-## Localization
+# Localization
 
 The Localization concept in Grid supports switching the control language with various cultures. The Locale property in Grid is a string type used to define the culture code that has been declared by JQuery globalize script file. The default value for Locale in Grid is en-US.
 
@@ -21,7 +21,7 @@ The globalize.culture.en-US.min.js scripts are changeable based on the culture n
 The following code example demonstrates how to switch the culture of Grid as de-DE (German - Germany).
 
 
-
+{% highlight html %}
 [ASP]
 
 
@@ -60,8 +60,8 @@ The following code example demonstrates how to switch the culture of Grid as de-
 
         &lt;/ej:Grid&gt;
 
-
-
+{% endhighlight %}
+{% highlight c# %}
 [C#]
 
 
@@ -168,10 +168,10 @@ public partial class Localization : System.Web.UI.Page
 
     }
 
-
+{% endhighlight  %}
 
 The Grid and Pager has its own locale labels for applying the information about specific fields in its control. You can set them in the sample side for each culture based translation. The following code example is applied in the sample side for all the above platforms.
-
+{% highlight js %}
 &lt;script type="text/javascript"&gt;
 
         // Locale labels for ejGrid
@@ -219,18 +219,20 @@ ej.Pager.locale["de-DE"] = {
     &lt;/script&gt;
 
 
-
+{% endhighlight  %}
 
 
 The output for the above code example is displayed as the following screenshot.
 
-{ ![](Localization_images/Localization_img1.png) | markdownify }
+![](Localization_images/Localization_img1.png)
 {:.image }
 
 
 
 
 The default values of locale labels in Grid and ejPager are listed out in the following code example. You can change the label values based on the cultures with its corresponding meaning of words.
+
+{% highlight c# %}
 
 ej.Grid.locale["en-US"] = {
 
@@ -360,9 +362,7 @@ ej.Pager.locale["en-US"] = {
 
 
 
+{% endhighlight %}
 
-
-> { ![C:/Users/Giftline/Desktop/img.jpg](Localization_images/Localization_img2.jpeg) | markdownify }
-{:.image }
-_Note: You can get the various minified and unminified formatted culture script files from the local folder “C:\Program Files (x86)\Syncfusion\Essential Studio\xx.x.x.xx\JavaScript\assets\external\cultures”. xx.x.x.xx denotes the current version of Essential Studio, for example 12.4.0.34._
+> _Note: You can get the various minified and unminified formatted culture script files from the local folder “C:\Program Files (x86)\Syncfusion\Essential Studio\xx.x.x.xx\JavaScript\assets\external\cultures”. xx.x.x.xx denotes the current version of Essential Studio, for example 12.4.0.34._
 

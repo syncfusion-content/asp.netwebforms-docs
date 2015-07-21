@@ -17,7 +17,7 @@ The following screenshot illustrates the functionality of a MaskEdit. Here, Mob
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img1.png) 
 {:.image }
 
 
@@ -231,7 +231,7 @@ The following code example is used to set mask value.
 
 Execute the above code to render the following output.
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image61_6.png](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image61_6.png](Getting-Started_images/Getting-Started_img2.png)
 {:.image }
 
 
@@ -289,7 +289,7 @@ The following screenshot shows the output for the above code example.
 
 
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image61_7.png](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image61_7.png](Getting-Started_images/Getting-Started_img3.png) 
 {:.image }
 
 

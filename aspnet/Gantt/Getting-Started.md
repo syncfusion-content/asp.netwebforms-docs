@@ -21,7 +21,7 @@ Gantt chart is used to edit and visualize project schedule and also to track pro
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img1.png) 
 {:.image }
 
 
@@ -29,7 +29,7 @@ Gantt chart is used to edit and visualize project schedule and also to track pro
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img2.png)
 {:.image }
 
 
@@ -44,7 +44,7 @@ Gantt chart is used to edit and visualize project schedule and also to track pro
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img3.png)
 {:.image }
 
 
@@ -52,7 +52,7 @@ Gantt chart is used to edit and visualize project schedule and also to track pro
 
 In this tutorial, you will learn how to create a simple Gantt chart, add tasks and subtasks, and set relationship between tasks for design phase of software project. The following screen shot displays the output after completing this tutorial.
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img4.png)
 {:.image }
 
 
@@ -322,14 +322,14 @@ protected void Page_Load(object sender, EventArgs e)
 
 The following screenshot displays the Gantt.
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img5.png)
 {:.image }
 
 
 Enable Toolbar
 
 Gantt control contains the toolbar options to edit, search, expand and collapse all records, indent, outdent, delete, and add a task. You can enable toolbar using Toolbar option.
-
+{% highlight html %}
 
 <ej:Gantt ID="GanttControlDefault" 
 
@@ -340,16 +340,14 @@ Gantt control contains the toolbar options to edit, search, expand and collapse 
     &lt;ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel,indent,outdent"/&gt;
 
 &lt;/ej:Gantt&gt;            
-
+{% endhighlight %}
 The following screen shot displays a Tool bar in Gantt.
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img6.png)
 {:.image }
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.jpeg) | markdownify }
-{:.image }
-_Note:__add, edit, delete options are enabled when enabling the allowEditing, allowAdding, allowDelete in the edit Settings._
+> _Note:__add, edit, delete options are enabled when enabling the allowEditing, allowAdding, allowDelete in the edit Settings._
 
 Enable sorting 
 
@@ -413,13 +411,11 @@ Modify the task details through user interaction like resizing and dragging the 
 
 The following screen shot displays the Gantt control with Enable Editing options.
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img8.png)
 {:.image }
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.jpeg) | markdownify }
-{:.image }
-_Note: Both cellEditing and normal editing operations are performed through double click action._
+> _Note: Both cellEditing and normal editing operations are performed through double click action._
 
 Enable Context Menu
 
@@ -443,7 +439,7 @@ The following screen shot displays Gantt chart with Enable Context menu option.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img10.png) 
 {:.image }
 
 
@@ -489,7 +485,7 @@ You can show the relationship in tasks by using the PredecessorMapping as follow
 
 The following screen shot displays the relationship between tasks.
 
-{ ![](Getting-Started_images/Getting-Started_img11.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img11.png)
 {:.image }
 
 
@@ -566,7 +562,7 @@ public class ResourceList
 
 {% endhighlight %}
 
-
+{% highlight html %}
 
 Default.aspx
 
@@ -583,12 +579,12 @@ Default.aspx
 &lt;/ej:Gantt&gt;            
 
 
-
+{% endhighlight %}
 The following screen shot displays resource allocation for tasks in Gantt.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img12.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img12.png)
 {:.image }
 
 

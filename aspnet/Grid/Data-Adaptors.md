@@ -7,20 +7,21 @@ control: Grid
 documentation: ug
 ---
 
-## Data Adaptors
+# Data Adaptors
 
 DataManager consists of three concepts, commonly called as adaptors, that are used to manipulate data. There are four types of adaptors in DataManager. They are
 
 * OData Adaptor
 * Cache Adaptor
-### OData Adaptor
+
+## OData Adaptor
 
 
 Nowadays oData is a very useful technique in consuming data. You can use oData protocol through DataManager’s ODataadaptor. The following code example demonstrates how you can use oDataadaptor with Grid.
 
 
 
-
+{% highlight html %}
 
 
 
@@ -50,22 +51,22 @@ Nowadays oData is a very useful technique in consuming data. You can use oData p
 
 
 
-
+{% endhighlight  %}
 
 The following screenshot is the result of the above code example.
 
 
 
-{ ![](Data-Adaptors_images/Data-Adaptors_img1.png) | markdownify }
+![](Data-Adaptors_images/Data-Adaptors_img1.png) 
 {:.image }
 
 
-### Cache Adaptor
+## Cache Adaptor
 
 Cache Adaptor is a technique used to cache multiple page data by using the property EnableCaching. You can provide the number of pages that is required to cache in single request using CachingPageSize property. It enables you to reduce multiple request to server. You can use any type of adaptor with multiple page caching by using cache adaptor. The following code illustrates how to create cache adaptor and use it with grid.
 
 
-
+{% highlight html %}
 [ASP]
 
 
@@ -98,7 +99,8 @@ Cache Adaptor is a technique used to cache multiple page data by using the prope
 
         &lt;/ej:Grid&gt;    
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [CS]
 
@@ -120,13 +122,13 @@ public partial class CachingAdaptor : System.Web.UI.Page
 
 
 
-
+{% endhighlight  %}
 
 The following screenshot is the result of the above code example.
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Data-Adaptors_images/Data-Adaptors_img2.png) | markdownify }
+![C:/Users/ApoorvahR/Desktop/1.png](Data-Adaptors_images/Data-Adaptors_img2.png)
 {:.image }
 
 

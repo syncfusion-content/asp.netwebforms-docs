@@ -7,12 +7,12 @@ control: Chart
 documentation: ug
 ---
 
-## Empty Points
+# Empty Points
 
 The data that is passed to the Chart can have null or undefined values that are considered as empty points. Series type like line, spline, area, splinearea, stepline, steparea, column, bar, bubble, scatter, hilo, hiloopenclose, candle, rangecolumn and stacking series having empty point support.
 
 
-
+{% highlight html %}
 [ASP.NET] 
 
   &lt;ej:Chart ID="Chart1" runat="server"&gt;       
@@ -48,8 +48,8 @@ The data that is passed to the Chart can have null or undefined values that are 
   &lt;/ej:Chart&gt;
 
 
-
-{ ![](Empty-Points_images/Empty-Points_img1.png) | markdownify }
+{% endhighlight %}
+![](Empty-Points_images/Empty-Points_img1.png)
 {:.image }
 
 
