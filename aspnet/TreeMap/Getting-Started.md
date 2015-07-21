@@ -15,25 +15,26 @@ This section explains briefly about how to create a TreeMap in your application 
 
 This section explains briefly on how to create a TreeMap in your application.
 
-Configure a TreeMap
+### Configure a TreeMap
 
 You can configure ASP.NET TreeMap in simple steps. This manual provides instructions on how to configure TreeMap with grouping of populated datum based on population growth in population in each continent.  It also provides a walk-through on some of the customization feature available in TreeMap control.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img1.png)
 {:.image }
 
 
-Create a simple ASP.Net Application
+### Create a simple ASP.Net Application
 
 You can create a new ASP.NET project application by adding the necessary dll's and scripts.
 
-Add Data
+#### Add Data
 
 You can populate the TreeMap data inside the TreeMap .For example, you can populate data of few countries from the following location.
 
 TreeMap/ TreeMap.aspx.cs
 
 
+{% highlight C# %}
 
 [TreeMap.aspx.cs]
 
@@ -95,17 +96,16 @@ public class TreeMapPopulationData
 
     }
 
+{% endhighlight %}
 
-
-{ ![](Getting-Started_images/Getting-Started_img2.jpeg) | markdownify }
-{:.image }
 _Note: Population data is referred from_ [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population).
 
-Initialize TreeMap
+### Initialize TreeMap
 
 1. Create an HTML file and add necessary script and CSS files in Head tag as illustrated in the following code example.
 
 
+{% highlight html %}
 
 [ASPX]          
 
@@ -142,10 +142,13 @@ ej.widgets.all.min.js">&lt;/script&gt;
 &lt;/html&gt;
 
 
+{% endhighlight %}
 
 2. Create a &lt;div&gt; tag and set the height and width to determine the TreeMap size to be rendered in “TreeMap.aspx” file in body tag.
 
 
+
+{% highlight html %}
 
 &lt;html&gt;   
 
@@ -163,11 +166,13 @@ ej.widgets.all.min.js">&lt;/script&gt;
 &lt;/html&gt;
 
 
+{% endhighlight  %}
 
 3. Add the following code in “TreeMap.aspx” file to initialize the TreeMap.
 
 
 
+{% highlight html %}
 [TreeMap.aspx]
 
 &lt;html&gt;   
@@ -192,11 +197,13 @@ ej.widgets.all.min.js">&lt;/script&gt;
 &lt;/html&gt;
 
 
+{% endhighlight %}
 
 4. Add the DataSource in “TreeMap.aspx.cs” as illustrated in the following code sample.
 
 
 
+{% highlight html %}
 [TreeMap.aspx.cs]
 
  protected void Page_Load(object sender, EventArgs e)
@@ -209,7 +216,9 @@ ej.widgets.all.min.js">&lt;/script&gt;
 
         }
 
-DataSource
+{% endhighlight  %}
+
+### DataSource
 
 The DataSource property accepts the collection values as input. For example, you can provide the list of objects as input.
 
@@ -221,6 +230,7 @@ You can calculate the size of the object using WeightValuePath of TreeMap.
 
 
 
+{% highlight html %}
 [ASP]
 
 [ASPX.CS]
@@ -248,14 +258,15 @@ You can calculate the size of the object using WeightValuePath of TreeMap.
 &lt;/div&gt;            
 
 
+{% endhighlight %}
 
 The following image displays a TreeMap with default properties using the above code. 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img3.png) 
 {:.image }
 
 
-GroupTreeMap Items using Levels
+### GroupTreeMap Items using Levels
 
 You can group TreeMapItems using levels in TreeMap.
 
@@ -270,6 +281,7 @@ You can use GroupGap property to separate the items from every flat level and t
 The following code sample explains how to group TreeMap Items using ‘Levels’.
 
 
+{% highlight html %}
 
 [ASP]
 
@@ -310,14 +322,15 @@ The following code sample explains how to group TreeMap Items using ‘Levels’
 &lt;/div&gt;        
 
 
+{% endhighlight %}
 
 The following screenshot displays grouping of TreeMapItems using Levels
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img4.png) 
 {:.image }
 
 
-Customizing TreeMap Appearance by Range
+### Customizing TreeMap Appearance by Range
 
 You can differentiate the nodes based on its value and color ranges using Range color. You can also define the color value range using From and To properties. 
 
@@ -329,6 +342,7 @@ The following code sample explains how to customize TreeMap Appearance by Range.
 
 
 
+{% highlight html %}
 [ASP]
 
 [ASPX.CS]
@@ -377,15 +391,16 @@ The following code sample explains how to customize TreeMap Appearance by Range.
 
 &lt;/ej:Treemap&gt;
 
+{% endhighlight  %}
 
 
 The following screenshot displays customized TreeMap Appearance by Range.
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img5.png) 
 {:.image }
 
 
-Enable Tooltip
+### Enable Tooltip
 
 You can enable the tooltip by setting ShowTooltip to ‘True’. By default, it takes the property of the bound object that is referred in the WeightValuePath and displays its content when the corresponding node is hovered. You can customize the template for tooltip using TooltipTemplate property.
 
@@ -397,6 +412,7 @@ The following code sample displays how the tooltip is enabled.
 
 
 
+{% highlight html %}
 [ASP]
 
 [ASPX.CS]
@@ -452,16 +468,17 @@ The following code sample displays how the tooltip is enabled.
 &lt;/ej:Treemap&gt;
 
 
+{% endhighlight %}
 
 The following screenshot displays the TreeMap when the Tooltip is enabled.
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+ ![](Getting-Started_images/Getting-Started_img6.png) 
 {:.image }
 
 
 _Figure_ _17__: TreeMap with tooltip option_
 
-Legend
+### Legend
 
 You can set the color value of leaf nodes using TreeMapLegend. This legend is appropriate only for the TreeMap whose leaf nodes are colored using RangeColorMapping.
 
@@ -474,6 +491,7 @@ You can customize the labels of the legenditem using LegendLabel property of Ran
 The following code sample displays how to add labels for legend in a TreeMap.
 
 
+{% highlight html %}
 
 [ASP]
 
@@ -532,12 +550,13 @@ The following code sample displays how to add labels for legend in a TreeMap.
 &lt;/ej:Treemap&gt;
 
 
+{% endhighlight %}
 
 The following screenshot displays the TreeMap when Legends are enabled.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img7.png) 
 {:.image }
 
 

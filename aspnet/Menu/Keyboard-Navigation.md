@@ -7,7 +7,7 @@ control: Menu
 documentation: ug
 ---
 
-## Keyboard Navigation
+# Keyboard Navigation
 
 The menu control also provides the support for keyboard navigation. In the menu control, it is possible to control the entire menu control items by using the provided shortcut keys. 
 
@@ -193,13 +193,14 @@ jQuery(function ($) {
 
 Following screenshot displays the output of the above code example. 
 
-{ ![](Keyboard-Navigation_images/Keyboard-Navigation_img1.png) | markdownify }
+![](Keyboard-Navigation_images/Keyboard-Navigation_img1.png) 
 {:.image }
 
 
 When you press Alt+J the first item, the Menu control only gets focused as illustrated in the following screenshot.
 
-{ ![](Keyboard-Navigation_images/Keyboard-Navigation_img2.png) | markdownify }
+![](Keyboard-Navigation_images/Keyboard-Navigation_img2.png) 
+
 {:.image }
 
 

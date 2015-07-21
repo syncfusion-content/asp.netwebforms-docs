@@ -7,11 +7,11 @@ control: Menu
 documentation: ug
 ---
 
-## Data binding
+# Data binding
 
 Data binding enables you to synchronize the elements with different sources of data. You can bind data by using two ways, Local data and remote data. 
 
-### Field Members
+## Field Members
 
 Field is a property that includes the object type. Fields are used to bind the data source and it includes the following field members to make binding easier.
 
@@ -67,7 +67,7 @@ Specifies the image URL to “img” tag inside item list. </td></tr>
 </table>
 
 
-### Remote data
+## Remote data
 
 The menu control also provides supports for Remote data binding. Here the remote data is placed in a Web service. Here the menu items are fetched from the web service by using Service URL. The data comes in the format of JSON. 
 
@@ -111,11 +111,11 @@ protected void Page_Load(object sender, EventArgs e)
 
 The following screenshot displays the output of the above code example. 
 
-{ ![](Data-binding_images/Data-binding_img1.png) | markdownify }
+![](Data-binding_images/Data-binding_img1.png) 
 {:.image }
 
 
-### SQL Data binding
+## SQL Data binding
 
 SqlDataSource is designed to work with SQL Server databases. It uses the SQL Server .NET data provider internally. SQL Server .NET data provider classes are defined in the System.Data.SqlClient namespace. To bind the SqlDataSource to Menu, DataSourceID should be the id of SqlDataSource. You can select the table from SelectCommand. 
 
@@ -145,11 +145,11 @@ SelectCommand="SELECT * FROM [TreeBind]"></asp:SqlDataSource>
 
 The following screenshot displays the output for the above code example.                                                                                                       
 
-{ ![](Data-binding_images/Data-binding_img2.png) | markdownify }
+![](Data-binding_images/Data-binding_img2.png) 
 {:.image }
 
 
-### Object Data binding
+## Object Data binding
 
 The ObjectDataSource control lets you bind a specific data layer in the same manner by which you bind to the database by using other controls. The ObjectDataSource control can bind to any method that returns a DataSet or an IEnumerable object (for example, a DataReader or a collection of Classes). The major advantage of binding via ObjectDataSource is, only records that are required in the current view are retrieved from the database, greatly optimizing the performance and runtime memory usage.
 
@@ -347,11 +347,12 @@ public class MenuSource
 
 
 
-The following screenshot displays the output for the above code example.        { ![](Data-binding_images/Data-binding_img3.png) | markdownify }
+The following screenshot displays the output for the above code example.      
+![](Data-binding_images/Data-binding_img3.png) 
 {:.image }
 
 
-### XML Data binding
+## XML Data binding
 
 XmlDataSource is used to work with XML documents. To bind the XmlDataSource to Menu, DataSourceID of the menu has to be the id of XmlDataSource.
 
@@ -443,7 +444,7 @@ Load the menu items in the xml data as illustrated in the following code example
 
 The following screenshot displays the output for the XML Databinding.                                                                                                       
 
-{ ![](Data-binding_images/Data-binding_img4.png) | markdownify }
+![](Data-binding_images/Data-binding_img4.png) 
 {:.image }
 
 
@@ -477,7 +478,7 @@ In the Design page, assign values for DataTextField, DataIdField, DataParentIdFi
 
 The following screenshot displays the output for the above code example.                                                                                                       
 
-{ ![](Data-binding_images/Data-binding_img5.png) | markdownify }
+![](Data-binding_images/Data-binding_img5.png) 
 {:.image }
 
 

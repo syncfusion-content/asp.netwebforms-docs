@@ -7,9 +7,9 @@ control: DateTimePicker
 documentation: ug
 ---
 
-## Start and Depth level
+# Start and Depth level
 
-### Start Level
+## Start Level
 
 DateTimePicker allows you to change the starting level view of Calendar inside the DateTimePicker popup. Consider you are creating a login form for your blog. When the “Birth date” field in the form starts from year, it is easy to select date from year, month and date. By default, the Start Level of DateTimePicker is “Month” level view. Refer to the following table to know the different types of start level.
 
@@ -62,13 +62,13 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 
 
-{ ![](Start-and-Depth-level_images/Start-and-Depth-level_img1.png) | markdownify }
+![](Start-and-Depth-level_images/Start-and-Depth-level_img1.png) 
 {:.image }
 
 
 
 
-### Depth Level
+## Depth Level
 
 DateTimePicker enables you to set the drill down level of the DateTimePicker. Consider, you are going to take the monthly report of sales in your company. In that case, there is no need for selecting date from month view. You can restrict the drill-down of DateTimePicker popup to month view.
 
@@ -92,7 +92,7 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 
 
-{ ![](Start-and-Depth-level_images/Start-and-Depth-level_img2.png) | markdownify }
+![](Start-and-Depth-level_images/Start-and-Depth-level_img2.png) 
 {:.image }
 
 

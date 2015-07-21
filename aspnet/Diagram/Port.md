@@ -7,11 +7,11 @@ control: Diagram
 documentation: ug
 ---
 
-## Port
+# Port
 
 Port is a specific connection point on node to make a static connection with nodes. You can define any number of ports on a node. 
 
-### Create Port
+## Create Port
 
 The following code illustrates how to create a port and add it to nodes port array.
 
@@ -38,11 +38,11 @@ node.Ports.Add(port);
 
 
 
-{ ![](Port_images/Port_img1.png) | markdownify }
+![](Port_images/Port_img1.png)
 {:.image }
 
 
-### Connecting Ports
+## Connecting Ports
 
 The connection between specific ports on the node is established by assigning the name of the node’s port to the connector’s TargetPort/SourcePort.
 
@@ -110,11 +110,11 @@ private Port GetPort(float offsetX, float offsetY, string name){
 
 
 
-{ ![](Port_images/Port_img2.png) | markdownify }
+ ![](Port_images/Port_img2.png) 
 {:.image }
 
 
-### Appearance
+## Appearance
 
 You can customize the Port’s appearance by setting desired values to the appropriate appearance property.
 
@@ -190,7 +190,7 @@ port.BorderWidth = 2;
 
 {% endhighlight %}
 
-### Constraints
+## Constraints
 
 You can enable or disable certain behaviors of Port by using Port’s Constraints property. 
 
@@ -230,7 +230,5 @@ port.Constraints = PortConstraints.Connect;
 
 
 
-> { ![C:/Users/labuser/Desktop/note.jpg](Port_images/Port_img3.jpeg) | markdownify }
-{:.image }
 _Note: Port’s constraints property is manipulated by using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations_._
 

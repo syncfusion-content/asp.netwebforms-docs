@@ -7,17 +7,17 @@ control: Diagram
 documentation: ug
 ---
 
-## Node
+# Node
 
 Nodes are graphical object that represent visual data to be placed on the page.
 
 
 
-{ ![C:/Users/labuser/Desktop/a.png](Node_images/Node_img1.png) | markdownify }
+ ![C:/Users/labuser/Desktop/a.png](Node_images/Node_img1.png) 
 {:.image }
 
 
-### Create Node
+## Create Node
 
 Node is created and added to the Diagram model by using diagram model’s Nodes property. The node’s name must be unique. The following code illustrates how to create a node and add it to the Diagram.
 
@@ -49,13 +49,13 @@ model.Nodes.Add(node);
 
 
 
-{ ![](Node_images/Node_img2.png) | markdownify }
+ ![](Node_images/Node_img2.png) 
 {:.image }
 
 
 List of preloaded nodes from symbol palette are added to the Diagram by clicking the palette nodes or by dragging a node and dropping on the Diagram. The method to add node/connector to palette and drag and drop on Diagram is explained in palette section
 
-### Node Shapes
+## Node Shapes
 
 The Diagram has a collection of predefined shapes. The shape to be drawn can be set by using specific properties. The most commonly used shapes are:
 
@@ -103,7 +103,7 @@ node.Shape = BasicShapes.Ellipse;
 
 
 
-{ ![](Node_images/Node_img3.png) | markdownify }
+ ![](Node_images/Node_img3.png) 
 {:.image }
 
 
@@ -157,7 +157,7 @@ node.Value="button";
 
 
 
-{ ![](Node_images/Node_img4.png) | markdownify }
+![](Node_images/Node_img4.png) 
 {:.image }
 
 
@@ -187,7 +187,7 @@ node.TextBlock = block;
 
 
 
-{ ![](Node_images/Node_img5.png) | markdownify }
+ ![](Node_images/Node_img5.png) 
 {:.image }
 
 
@@ -213,7 +213,7 @@ node.PathData = "M 67.2947 100 L 67.2947 0.00102291 L 59.138 0.00102291 M 100 50
 
 
 
-{ ![C:/Users/labuser/Desktop/a.png](Node_images/Node_img6.png) | markdownify }
+ ![C:/Users/labuser/Desktop/a.png](Node_images/Node_img6.png) 
 {:.image }
 
 
@@ -265,7 +265,7 @@ node.Points = points;
 
 
 
-{ ![](Node_images/Node_img7.png) | markdownify }
+![](Node_images/Node_img7.png) 
 {:.image }
 
 
@@ -325,12 +325,11 @@ node.Text="Mail";
 
 
 
-{ ![](Node_images/Node_img8.png) | markdownify }
+![](Node_images/Node_img8.png) 
 {:.image }
 
 
-> { ![](Node_images/Node_img9.png) | markdownify }
-{:.image }
+
 _Note:_ 
 
 > _Shapes of type Node or HTML cannot be exported to an image format, like JPEG, PNG and BMP. It is by design that while exporting, Diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas from all possible HTML and SVG elements is not feasible. So, this limitation._ 
@@ -372,16 +371,15 @@ node.Source = "sample/Syncfusion.PNG";
 {% endhighlight %}
 
 
-
-{ ![](Node_images/Node_img10.png) | markdownify }
+ ![](Node_images/Node_img10.png) 
 {:.image }
 
 
-### Shadow
+## Shadow
 
 Dropshadoweffect for a node can be enabled or disabled by using the NodeConstraints.Shadow. The following image represents the drop shadow effect for a Node.
 
-{ ![](Node_images/Node_img11.png) | markdownify }
+![](Node_images/Node_img11.png) 
 {:.image }
 
 
@@ -427,11 +425,11 @@ node.Shadow.Angle = 50;
 
 
 
-{ ![](Node_images/Node_img12.png) | markdownify }
+![](Node_images/Node_img12.png) 
 {:.image }
 
 
-### Appearance
+## Appearance
 
 You can customize the appearance of the shapes by using node customization properties.
 
@@ -535,11 +533,11 @@ node.LinearGradient = gradient;
 
 
 
-{ ![](Node_images/Node_img13.png) | markdownify }
+![](Node_images/Node_img13.png) 
 {:.image }
 
 
-### Constraints
+## Constraints
 
 NodeConstraints
 
@@ -649,7 +647,7 @@ node.Constraints = NodeConstraints.Select| NodeConstraints.Rotate;
 
 {% endhighlight %}
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image59_17.jpg](Node_images/Node_img14.jpeg) | markdownify }
+ ![http://help.syncfusion.com/ug/js/ImagesExt/image59_17.jpg](Node_images/Node_img14.jpeg) 
 {:.image }
 
 
@@ -671,11 +669,9 @@ node.Constraints = node.Constraints &~ NodeConstraints.Rotate;
 
 
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image59_18.jpg](Node_images/Node_img15.jpeg) | markdownify }
+ ![http://help.syncfusion.com/ug/js/ImagesExt/image59_18.jpg](Node_images/Node_img15.jpeg) 
 {:.image }
 
 
-> { ![C:/Users/labuser/Desktop/note.jpg](Node_images/Node_img16.jpeg) | markdownify }
-{:.image }
 _Note: Node’s constraints property is manipulated by using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations.
 

@@ -7,7 +7,7 @@ control: BulletGraph
 documentation: ug
 ---
 
-## Data Binding
+# Data Binding
 
 Bullet Graph supports binding JSON data from a remote server or data created in client-side. You can use the Fields property to customize the data bound with Bullet Graph.
 
@@ -18,8 +18,6 @@ Data available in client-side (local data) can be bound with Bullet Graph using 
 {% highlight c# %}
 
 [ASP.NET]
-
-
 
 [C#]
 
@@ -55,24 +53,26 @@ Data available in client-side (local data) can be bound with Bullet Graph using 
 
             this.BulletGraph1.DataBind();
 
+
 {% endhighlight %}
 
 {% highlight html %}
-
+			
 [ASPX]
 
 
-&lt;ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server"&gt;                        
 
-            &lt;QuantitativeScaleSettings&gt;
+<ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server">                        
 
-                &lt;Location X="50" Y="20" /&gt;
+            <QuantitativeScaleSettings>
 
-            &lt;/QuantitativeScaleSettings&gt;
+                <Location X="50" Y="20" />
 
-            &lt;Fields CategoryField="Category" ComparativeMeasureField="ComparisonValue" FeatureMeasureField="BulletValue" /&gt;
+            </QuantitativeScaleSettings>
 
-        &lt;/ej:BulletGraph&gt;
+            <Fields CategoryField="Category" ComparativeMeasureField="ComparisonValue" FeatureMeasureField="BulletValue" />
+
+        </ej:BulletGraph>
 
 {% endhighlight %}
 
@@ -92,31 +92,31 @@ Bullet Graph provides option to bind data from a remote server using ejDataManag
 
 
 
-        &lt;ej:BulletGraph ID="BulletGraph1" QualitativeRangeSize="60" Width="600px" Height="120px" runat="server"&gt;                        
+        <ej:BulletGraph ID="BulletGraph1" QualitativeRangeSize="60" Width="600px" Height="120px" runat="server">                        
 
-            &lt;QuantitativeScaleSettings Minimum="5" Maximum="45" Interval="10"&gt;
+            <QuantitativeScaleSettings Minimum="5" Maximum="45" Interval="10">
 
-                &lt;Location X="50" Y="20" /&gt;
+                <Location X="50" Y="20" />
 
-            &lt;/QuantitativeScaleSettings&gt;
+            </QuantitativeScaleSettings>
 
-            &lt;QualitativeRanges&gt;
+            <QualitativeRanges>
 
-                &lt;ej:QualitativeRanges RangeEnd="25" /&gt;
+                <ej:QualitativeRanges RangeEnd="25" />
 
-                &lt;ej:QualitativeRanges RangeEnd="37" /&gt;
+                <ej:QualitativeRanges RangeEnd="37" />
 
-                &lt;ej:QualitativeRanges RangeEnd="45" /&gt;
+                <ej:QualitativeRanges RangeEnd="45" />
 
-            &lt;/QualitativeRanges&gt;
+            </QualitativeRanges>
 
-            &lt;Fields CategoryField="ProductID" ComparativeMeasureField="Quantity" FeatureMeasureField="UnitPrice" /&gt;
+            <Fields CategoryField="ProductID" ComparativeMeasureField="Quantity" FeatureMeasureField="UnitPrice" />
 
-        &lt;/ej:BulletGraph&gt;
+        </ej:BulletGraph>
 
 
 
-        &lt;script type="text/javascript"&gt;
+        <script type="text/javascript">
 
             //Creating data manager instance
 
@@ -154,7 +154,7 @@ Bullet Graph provides option to bind data from a remote server using ejDataManag
 
             });
 
-        &lt;/script&gt;
+        </script>
 
 {% endhighlight %}
 

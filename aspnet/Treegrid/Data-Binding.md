@@ -7,11 +7,11 @@ control: TreeGrid
 documentation: ug
 ---
 
-## Data Binding
+# Data Binding
 
 Data Binding is the process that establishes a connection between the application and different kinds of data sources such as business objects.
 
-Local Data Binding
+## Local Data Binding
 
 In Local Data Binding, datasource for rendering the TreeGrid control is retrieved from the same application locally.
 
@@ -20,7 +20,7 @@ Two types of Data Binding are possible with TreeGrid control,
 * Hierarchical Datasource Binding
 * Self-Referential Data Binding (Flat Data)
 
-Hierarchy Datasource Binding
+### Hierarchy Datasource Binding
 
 The following code example shows you how to bind the Hierarchical local data into the TreeGrid control.
 
@@ -324,11 +324,11 @@ TreeGrid.aspx
 
 The output of the above steps is as follows:
 
-{ ![](Data-Binding_images/Data-Binding_img1.png) | markdownify }
+ ![](Data-Binding_images/Data-Binding_img1.png)
 {:.image }
 
 
-Self-Referential Data Binding (Flat Data)
+### Self-Referential Data Binding (Flat Data)
 
 TreeGrid is rendered from Self-Referential data structures by providing two fields: ID field and parent ID field.
 
@@ -662,7 +662,7 @@ TreeGrid.aspx
 
 The following screenshot shows the output of the above steps,
 
-{ ![](Data-Binding_images/Data-Binding_img2.png) | markdownify }
+![](Data-Binding_images/Data-Binding_img2.png) 
 {:.image }
 
 

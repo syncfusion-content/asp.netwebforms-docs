@@ -21,11 +21,11 @@ Quantitative Scale range is set using the properties Minimum, Maximum and Interv
 
 
 
-        &lt;ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server"&gt;                        
+        <ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server">                        
 
-           &lt;QuantitativeScaleSettings Minimum="0" Maximum="10" MinorTicksPerInterval="4" Interval="1"&gt;&lt;/QuantitativeScaleSettings&gt;
+           <QuantitativeScaleSettings Minimum="0" Maximum="10" MinorTicksPerInterval="4" Interval="1"></QuantitativeScaleSettings>
 
-        &lt;/ej:BulletGraph&gt;
+        </ej:BulletGraph>
 
 {% endhighlight %}
 
@@ -45,15 +45,15 @@ Bullet Graph does not position Quantitativescale automatically based on its size
 
 
 
-&lt;ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server"&gt;                        
+<ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server">                        
 
-           &lt;QuantitativeScaleSettings&gt;
+           <QuantitativeScaleSettings>
 
-               &lt;Location X="20" Y="20" /&gt;
+               <Location X="20" Y="20" />
 
-           &lt;/QuantitativeScaleSettings&gt;
+           </QuantitativeScaleSettings>
 
-        &lt;/ej:BulletGraph&gt;
+        </ej:BulletGraph>
 
 {% endhighlight %}
 
@@ -73,15 +73,15 @@ Color, size and width of Major tick lines are customized using MajorTickSettings
 
 
 
-        &lt;ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server"&gt;                        
+        <ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server">                        
 
-           &lt;QuantitativeScaleSettings&gt;
+           <QuantitativeScaleSettings>
 
-               &lt;MajorTickSettings Size="13" Width="3" Stroke="gray" /&gt;
+               <MajorTickSettings Size="13" Width="3" Stroke="gray" />
 
-           &lt;/QuantitativeScaleSettings&gt;
+           </QuantitativeScaleSettings>
 
-        &lt;/ej:BulletGraph&gt;
+        </ej:BulletGraph>
 
 {% endhighlight %}
 
@@ -99,15 +99,16 @@ Minor ticks can also be customized similar to major ticks. The properties Stroke
 
 [ASP.NET]
 
-        &lt;ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server"&gt;                        
 
-           &lt;QuantitativeScaleSettings&gt;
+        <ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server">                        
 
-               &lt;MinorTickSettings Size="7" Width="3" Stroke="gray" /&gt;
+           <QuantitativeScaleSettings>
 
-           &lt;/QuantitativeScaleSettings&gt;
+               <MinorTickSettings Size="7" Width="3" Stroke="gray" />
 
-        &lt;/ej:BulletGraph&gt;
+           </QuantitativeScaleSettings>
+
+        </ej:BulletGraph>
 
 {% endhighlight %}
 
@@ -125,15 +126,13 @@ Ticks are positioned below, above or inside the quantitative scale. By default t
 
 [ASP.NET]
 
+        <ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server">                        
 
+           <QuantitativeScaleSettings TickPosition="Above">               
 
-        &lt;ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server"&gt;                        
+           </QuantitativeScaleSettings>
 
-           &lt;QuantitativeScaleSettings TickPosition="Above"&gt;               
-
-           &lt;/QuantitativeScaleSettings&gt;
-
-        &lt;/ej:BulletGraph&gt;
+        </ej:BulletGraph>
 
 {% endhighlight %}
 
@@ -153,29 +152,29 @@ Quantitativescaleticks can be placed either inside or outside the scale using â€
 
 
 
-        &lt;ej:BulletGraph ID="BulletGraph1" runat="server" Value="8" ComparativeMeasureValue="5" QualitativeRangeSize="50"&gt;
+        <ej:BulletGraph ID="BulletGraph1" runat="server" Value="8" ComparativeMeasureValue="5" QualitativeRangeSize="50">
 
-        &lt;QuantitativeScaleSettings TickPlacement="Inside"&gt;
+        <QuantitativeScaleSettings TickPlacement="Inside">
 
-            &lt;Location X="108" Y="10" /&gt;
+            <Location X="108" Y="10" />
 
-            &lt;LabelSettings Offset="5" LabelPrefix="$" LabelSuffix="K" Size="10"&gt;&lt;/LabelSettings&gt;            
+            <LabelSettings Offset="5" LabelPrefix="$" LabelSuffix="K" Size="10"></LabelSettings>            
 
-        &lt;/QuantitativeScaleSettings&gt;
+        </QuantitativeScaleSettings>
 
-        &lt;CaptionSettings Text="Revenue YTD"&gt;
+        <CaptionSettings Text="Revenue YTD">
 
-            &lt;Location X="17" Y="28" /&gt;
+            <Location X="17" Y="28" />
 
-            &lt;SubTitle Text="$ in Thousands"&gt;
+            <SubTitle Text="$ in Thousands">
 
-                &lt;Location X="10" Y="42" /&gt;
+                <Location X="10" Y="42" />
 
-            &lt;/SubTitle&gt;
+            </SubTitle>
 
-        &lt;/CaptionSettings&gt;
+        </CaptionSettings>
 
-    &lt;/ej:BulletGraph&gt;
+    </ej:BulletGraph>
 
 {% endhighlight %}
 
@@ -195,19 +194,19 @@ Quantitativescalelabels are customized with prefix, suffix, font, color and size
 
 
 
-        &lt;ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server"&gt;                        
+        <ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server">                        
 
-           &lt;QuantitativeScaleSettings&gt;
+           <QuantitativeScaleSettings>
 
-               &lt;LabelSettings LabelPrefix="$" LabelSuffix="K"  Stroke="blue" Offset="15" Size="12"&gt;
+               <LabelSettings LabelPrefix="$" LabelSuffix="K"  Stroke="blue" Offset="15" Size="12">
 
-                   &lt;Font Opacity="0.8" FontStyle="bold"&gt;&lt;/Font&gt;
+                   <Font Opacity="0.8" FontStyle="bold"></Font>
 
-               &lt;/LabelSettings&gt;
+               </LabelSettings>
 
-           &lt;/QuantitativeScaleSettings&gt;
+           </QuantitativeScaleSettings>
 
-        &lt;/ej:BulletGraph&gt;
+        </ej:BulletGraph>
 
 {% endhighlight %}
 
@@ -229,33 +228,33 @@ Quantitativescalelabels can be placed either inside or outside the scale using â
 
 [ASP.NET]
 
-        &lt;ej:BulletGraph ID="BulletGraph1" runat="server" Value="8" Width="620" ComparativeMeasureValue="5" QualitativeRangeSize="50"&gt;
+        <ej:BulletGraph ID="BulletGraph1" runat="server" Value="8" Width="620" ComparativeMeasureValue="5" QualitativeRangeSize="50">
 
-        &lt;QuantitativeScaleSettings&gt;
+        <QuantitativeScaleSettings>
 
-            &lt;Location X="108" Y="10" /&gt;
+            <Location X="108" Y="10" />
 
-            &lt;LabelSettings Offset="5" LabelPrefix="$" LabelSuffix="K" LabelPlacement="Inside" Size="10"&gt;
+            <LabelSettings Offset="5" LabelPrefix="$" LabelSuffix="K" LabelPlacement="Inside" Size="10">
 
-                &lt;Font FontWeight="bold"&gt;&lt;/Font&gt;
+                <Font FontWeight="bold"></Font>
 
-            &lt;/LabelSettings&gt;            
+            </LabelSettings>            
 
-        &lt;/QuantitativeScaleSettings&gt;
+        </QuantitativeScaleSettings>
 
-        &lt;CaptionSettings Text="Revenue YTD"&gt;
+        <CaptionSettings Text="Revenue YTD">
 
-            &lt;Location X="17" Y="28" /&gt;
+            <Location X="17" Y="28" />
 
-            &lt;SubTitle Text="$ in Thousands"&gt;
+            <SubTitle Text="$ in Thousands">
 
-                &lt;Location X="10" Y="42" /&gt;
+                <Location X="10" Y="42" />
 
-            &lt;/SubTitle&gt;
+            </SubTitle>
 
-        &lt;/CaptionSettings&gt;
+        </CaptionSettings>
 
-    &lt;/ej:BulletGraph&gt;
+    </ej:BulletGraph>
 
 {% endhighlight %}
 
@@ -275,15 +274,15 @@ Performancemeasurebar is customized using FeaturedMeasureSettings in Quantitativ
 
 
 
-&lt;ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server"&gt;                        
+<ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server">                        
 
-           &lt;QuantitativeScaleSettings&gt;
+           <QuantitativeScaleSettings>
 
-              &lt;FeaturedMeasureSettings Stroke="blue" Width="4" /&gt;
+              <FeaturedMeasureSettings Stroke="blue" Width="4" />
 
-           &lt;/QuantitativeScaleSettings&gt;
+           </QuantitativeScaleSettings>
 
-        &lt;/ej:BulletGraph&gt;
+        </ej:BulletGraph>
 
 {% endhighlight %}
 
@@ -303,15 +302,15 @@ Comparative symbol color and width are customized using ComparativeMeasureSettin
 
 
 
-&lt;ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server"&gt;                        
+<ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server">                        
 
-           &lt;QuantitativeScaleSettings&gt;
+           <QuantitativeScaleSettings>
 
-              &lt;ComparativeMeasureSettings Width="4" Stroke="blue" /&gt;
+              <ComparativeMeasureSettings Width="4" Stroke="blue" />
 
-           &lt;/QuantitativeScaleSettings&gt;
+           </QuantitativeScaleSettings>
 
-        &lt;/ej:BulletGraph&gt;
+        </ej:BulletGraph>
 
 {% endhighlight %}
 
@@ -330,25 +329,26 @@ Bullet Graph supports comparing more than one performance at a time, given that 
 [ASP.NET]
 
 
-        &lt;ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server"&gt;                        
 
-            &lt;QuantitativeScaleSettings&gt;
+        <ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server">                        
 
-                &lt;Location X="50" Y="10" /&gt;
+            <QuantitativeScaleSettings>
 
-                &lt;FeatureMeasures&gt;
+                <Location X="50" Y="10" />
 
-                    &lt;ej:FeatureMeasures Category="2010" ComparativeMeasure="3" Value="6" /&gt;
+                <FeatureMeasures>
 
-                    &lt;ej:FeatureMeasures Category="2011" ComparativeMeasure="6" Value="9" /&gt;
+                    <ej:FeatureMeasures Category="2010" ComparativeMeasure="3" Value="6" />
 
-                    &lt;ej:FeatureMeasures Category="2012" ComparativeMeasure="5" Value="5" /&gt;
+                    <ej:FeatureMeasures Category="2011" ComparativeMeasure="6" Value="9" />
 
-                &lt;/FeatureMeasures&gt;
+                    <ej:FeatureMeasures Category="2012" ComparativeMeasure="5" Value="5" />
 
-            &lt;/QuantitativeScaleSettings&gt;
+                </FeatureMeasures>
 
-        &lt;/ej:BulletGraph&gt;
+            </QuantitativeScaleSettings>
+
+        </ej:BulletGraph>
 
 {% endhighlight %}
 

@@ -7,13 +7,15 @@ control: Diagram
 documentation: ug
 ---
 
-## Automatic Layout
+# Automatic Layout
 
 Diagram automatically provides support to layout nodes. It includes the following:
 
 * Hierarchical Layout
 * Organization Chart
-### Hierarchical Layout
+
+
+## Hierarchical Layout
 
 
 The Hierarchical Tree Layout arranges nodes in a tree-like structure, where the nodes in the hierarchical layout may have multiple parents. There is no need to specify the layout root.
@@ -102,7 +104,7 @@ The following example illustrates the horizontal and vertical spacing of the Hie
 
 
 
-{ ![](Automatic-Layout_images/Automatic-Layout_img1.png) | markdownify }
+![](Automatic-Layout_images/Automatic-Layout_img1.png) 
 {:.image }
 
 
@@ -119,11 +121,11 @@ The following image displays Bottom to Top orientation of layout.
 
 
 
-{ ![](Automatic-Layout_images/Automatic-Layout_img2.png) | markdownify }
+![](Automatic-Layout_images/Automatic-Layout_img2.png) 
 {:.image }
 
 
-### Organizational Chart
+## Organizational Chart
 
 An organizational chart is a Diagram that displays the structure of an organization and the relationships. Diagram provides support to layout the nodes automatically. 
 
@@ -245,7 +247,7 @@ Diagram.model.DataSourceSettings.Parent = "Supervisor";
 
 
 
-{ ![](Automatic-Layout_images/Automatic-Layout_img3.png) | markdownify }
+![](Automatic-Layout_images/Automatic-Layout_img3.png) 
 {:.image }
 
 
@@ -443,7 +445,7 @@ function getLayoutInfo(diagram, node, options) {
 
 
 
-{ ![](Automatic-Layout_images/Automatic-Layout_img10.png) | markdownify }
+![](Automatic-Layout_images/Automatic-Layout_img10.png)
 {:.image }
 
 
@@ -485,7 +487,7 @@ function getLayoutInfo(diagram, node, options) {
 
 
 
-{ ![](Automatic-Layout_images/Automatic-Layout_img11.png) | markdownify }
+![](Automatic-Layout_images/Automatic-Layout_img11.png) 
 {:.image }
 
 

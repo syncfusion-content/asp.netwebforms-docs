@@ -7,61 +7,66 @@ control: BulletGraph
 documentation: ug
 ---
 
-## User Interaction
+# User Interaction
 
 ## Animation
 
 Bullet Graph supports animation that makes the performance measure bar to animate when rendering the Bullet Graph. Animation is enabled or disabled using EnableAnimation property. By default, Animation is enabled in Bullet Graph. 
+
 {% highlight html %}
 [ASP.NET]
 
 
 
-        &lt;ej:BulletGraph ID="BulletGraph1" EnableAnimation="true" Width="600px" Height="120px" runat="server"&gt;                        
+        <ej:BulletGraph ID="BulletGraph1" EnableAnimation="true" Width="600px" Height="120px" runat="server">                        
 
 
 
-        &lt;/ej:BulletGraph&gt;
+        </ej:BulletGraph>
 {% endhighlight  %}
+
 ## Responsiveness during browser resize
 
 Bullet Graph is made responsive when resizing the browser by using EnableResizing property. By default the value of this property is true in Bullet Graph. 
+
 {% highlight html %}
 [ASP.NET]
 
 
 
-        &lt;ej:BulletGraph ID="BulletGraph1" EnableResizing="false" Width="600px" Height="120px" runat="server"&gt;                        
+        <ej:BulletGraph ID="BulletGraph1" EnableResizing="false" Width="600px" Height="120px" runat="server">                        
 
 
 
-        &lt;/ej:BulletGraph&gt;
+        </ej:BulletGraph>
 {% endhighlight %}
+
 ## Applying same color to all ticks and labels in a range
 
 Background color for qualitative range is applied to major ticks and minor ticks of the Bullet Graph using ApplyRangeStrokeToTicks property. The range colors are applied to labels using ApplyRangeStrokeToLabels property. By default same colors are not applied to a qualitative range and its corresponding ticks or labels. 
+
 {% highlight html %}
 [ASP.NET]
 
 
 
-&lt;ej:BulletGraph ID="BulletGraph1" ApplyRangeStrokeToLabels="true" ApplyRangeStrokeToTicks="true" Value="8" ComparativeMeasureValue="5" Width="600px" Height="120px" runat="server"&gt;                        
+<ej:BulletGraph ID="BulletGraph1" ApplyRangeStrokeToLabels="true" ApplyRangeStrokeToTicks="true" Value="8" ComparativeMeasureValue="5" Width="600px" Height="120px" runat="server">                        
 
-            &lt;QualitativeRanges&gt;
+            <QualitativeRanges>
 
-                &lt;ej:QualitativeRanges RangeEnd="3.5" RangeStroke="darkred" RangeOpacity="0.5"&gt;&lt;/ej:QualitativeRanges&gt;
+                <ej:QualitativeRanges RangeEnd="3.5" RangeStroke="darkred" RangeOpacity="0.5"></ej:QualitativeRanges>
 
-                &lt;ej:QualitativeRanges RangeEnd="5" RangeStroke="red" RangeOpacity="1"&gt;&lt;/ej:QualitativeRanges&gt;
+                <ej:QualitativeRanges RangeEnd="5" RangeStroke="red" RangeOpacity="1"></ej:QualitativeRanges>
 
-                &lt;ej:QualitativeRanges RangeEnd="7.5" RangeStroke="blue" RangeOpacity="0.7"&gt;&lt;/ej:QualitativeRanges&gt;
+                <ej:QualitativeRanges RangeEnd="7.5" RangeStroke="blue" RangeOpacity="0.7"></ej:QualitativeRanges>
 
-                &lt;ej:QualitativeRanges RangeEnd="9" RangeStroke="lightgreen" RangeOpacity="1"&gt;&lt;/ej:QualitativeRanges&gt;
+                <ej:QualitativeRanges RangeEnd="9" RangeStroke="lightgreen" RangeOpacity="1"></ej:QualitativeRanges>
 
-                &lt;ej:QualitativeRanges RangeEnd="10" RangeStroke="green" RangeOpacity="1"&gt;&lt;/ej:QualitativeRanges&gt;
+                <ej:QualitativeRanges RangeEnd="10" RangeStroke="green" RangeOpacity="1"></ej:QualitativeRanges>
 
-            &lt;/QualitativeRanges&gt;
+            </QualitativeRanges>
 
-        &lt;/ej:BulletGraph&gt;
+        </ej:BulletGraph>
 {% endhighlight %}
 
 ![](User-Interaction_images/User-Interaction_img1.png)
@@ -76,16 +81,18 @@ By default Bullet Graph displays Tooltip when mouse is hovered over feature meas
 {:.image }
 
 
-Bullet Graph supports Tooltip template instead of defaultTooltip to customize the appearance and contents of Tooltip. The Tooltip template should be a &lt;div&gt; element with display set to ‘none’, so it is displayed only when mouse is placed on feature measure bar. The id value of the &lt;div&gt; element should be provided as value to the Template property in TooltipSettings of Bullet Graph to display the customized &lt;div&gt; element as Tooltip instead of default Tooltip. The values displayed in default Tooltip such as current value, target value and category are accessed in template &lt;div&gt; element by using {{currentValue}}, {{targetValue}} and {{category}} respectively.
+Bullet Graph supports Tooltip template instead of defaultTooltip to customize the appearance and contents of Tooltip. The Tooltip template should be a <div> element with display set to ‘none’, so it is displayed only when mouse is placed on feature measure bar. The id value of the <div> element should be provided as value to the Template property in TooltipSettings of Bullet Graph to display the customized <div> element as Tooltip instead of default Tooltip. The values displayed in default Tooltip such as current value, target value and category are accessed in template <div> element by using {{currentValue}}, {{targetValue}} and {{category}} respectively.
 
 {% highlight html %}
 [ASP.NET]
 
-&lt;ej:BulletGraph ID="BulletGraph1" Value="8" ComparativeMeasureValue="6" Width="600px" Height="120px" runat="server"&gt;                        
 
-           &lt;TooltipSettings Template="BulletGraphTooltip" /&gt;
 
-        &lt;/ej:BulletGraph&gt;
+<ej:BulletGraph ID="BulletGraph1" Value="8" ComparativeMeasureValue="6" Width="600px" Height="120px" runat="server">                        
+
+           <TooltipSettings Template="BulletGraphTooltip" />
+
+        </ej:BulletGraph>
 
 {% endhighlight %}
 

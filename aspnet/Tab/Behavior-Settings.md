@@ -7,9 +7,9 @@ control: Tab
 documentation: ug
 ---
 
-## Behavior Settings
+# Behavior Settings
 
-### Close Button
+## Close Button
 
 By default, Tab contents are rendered without Close Button. You can add the Close Button by setting the ShowCloseButton property to true. When you move the cursor over the Tab headers, the Close Button is displayed.   
 
@@ -63,7 +63,7 @@ Add the following ASPX for simple Tab creation with Close Button.
 
 The following screenshot illustrates the Tab with Close Button. 
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img1.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img1.png) 
 {:.image }
 
 
@@ -76,6 +76,7 @@ The following code example is used to render the sub Tab control in the vertical
 Add the following ASPX for Tab orientation.
 
 
+{% highlight html %}
 
 &lt;ej:Tab ID="dishtype" runat="server" HeaderPosition="Left" Width="600px"&gt;
 
@@ -108,10 +109,11 @@ Add the following ASPX for Tab orientation.
     &lt;/Items&gt;
 
 &lt;/ej:Tab&gt;
+{% endhighlight %}
 
 The following screenshot illustrates the sub Tab with vertical orientation. 
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img2.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img2.png) 
 {:.image }
 
 

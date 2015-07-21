@@ -7,7 +7,7 @@ control: Tab
 documentation: ug
 ---
 
-## Template Support
+# Template Support
 
 In the ASP.NET, you can use the &lt;contentsection&gt; tag to load the contents to the Tab control.
 
@@ -92,8 +92,7 @@ In the ASP.NET, you can use the &lt;contentsection&gt; tag to load the contents 
 
 
 {% endhighlight %}
-
-{ ![](Template-Support_images/Template-Support_img1.png) | markdownify }
+![](Template-Support_images/Template-Support_img1.png) 
 {:.image }
 
 

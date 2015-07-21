@@ -15,11 +15,11 @@ The ASP.NET Dialog displays a Dialog window within your web page. The Dialo
 
 
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image76_9.png](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image76_9.png](Getting-Started_images/Getting-Started_img1.png) 
 {:.image }
 
 
-Create a Dialog
+### Create a Dialog
 
 You can create an ASP Project and add the necessary Dlls and scripts with the help of the given [ASP-Getting Started](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm) documentation.
 
@@ -47,7 +47,7 @@ You can add the following code example to the corresponding ASPX page to rende
 
 The following screenshot displays a Dialog control without any content.
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image76_10.png](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image76_10.png](Getting-Started_images/Getting-Started_img2.png) 
 {:.image }
 
 
@@ -55,7 +55,7 @@ The following screenshot displays a Dialog control without any content.
 
 By default, the Dialog control shows the header element. You can use the title text from the Dialog element.
 
-Set content
+### Set content
 
 To display the content in the Dialog control, you can add the content in th Dialog element and design the login page by using the Dialog control. You can createHTML content for login page and add it in the Dialog element.
 
@@ -313,11 +313,11 @@ You can use the following styles to customize the styles of sign up form. You ca
 
 Run the above code example to render the following output. The screenshot displays the Dialog control with header and resizable option. These options are enabled in the Dialog control, by default.
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image76_11.png](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image76_11.png](Getting-Started_images/Getting-Started_img3.png) 
 {:.image }
 
 
-Configure a Dialog
+### Configure a Dialog
 
 To remove the header and resizable options from the Dialog, you can use the EnableResize and ShowHeader properties. By default, the width of the Dialog control is based on the content in it. You can also set the width of the Dialog control by using the Width property. To render the appearance of sign up control, you can set the width of the Dialog control.
 
@@ -343,13 +343,13 @@ Initialize the Dialog control by using the following code example.
 
 Run the code example to render the following output. 
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image76_9.png](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image76_9.png](Getting-Started_images/Getting-Started_img4.png) 
 {:.image }
 
 
-You can also add additional functions to Dialog control such as Ajax content, list of header icon actions such as close, minimize, maximize actions, and model Dialog.__
+You can also add additional functions to Dialog control such as Ajax content, list of header icon actions such as close, minimize, maximize actions, and model Dialog.
 
-Add Validation
+### Add Validation
 
 This section explains how to set the validation to each form element in the Dialog control. To validate each form element, click sign up button. The Dialog closes when you click the sign up button raising the ClientSideOnBeforeClose event. The ClientSideOnBeforeClose event validates each and every form element manually. Once the validation succeeds, the Dialog closes. When the validation fails, set args.cancel value to True. This prevents the Dialog from closing.
 
@@ -479,6 +479,7 @@ Initialize the Dialog control with the following code example.
 
  You can add the following styles to customize the styles of error message.
 
+{% highlight css %}
         .errormsg li
 
         {
@@ -503,7 +504,7 @@ Initialize the Dialog control with the following code example.
 
         }
 
-
+{% endhighlight %}
 
  Run the code example to render the following output.
 
@@ -525,7 +526,7 @@ Initialize the Dialog control with the following code example.
 
 
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image76_12.png](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image76_12.png](Getting-Started_images/Getting-Started_img5.png) 
 {:.image }
 
 

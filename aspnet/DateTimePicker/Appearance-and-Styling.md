@@ -7,9 +7,9 @@ control: DateTimePicker
 documentation: ug
 ---
 
-## Appearance and Styling
+# Appearance and Styling
 
-### Theme
+## Theme
 
 DateTimePicker control support rich appearance. This control consist of six flat themes and six gradient themes. To use these twelve themes, refer to the themes files in ASPX file. 
 
@@ -35,11 +35,11 @@ The following 13 themes are supported by the DateTimePicker:
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 {:.image }
 
 
-### Css Class
+## Css Class
 
 DateTimePicker control also allows you to customize its appearance by using user-defined CSS and custom skin options such as colors and backgrounds. To apply custom themes, you have a property CssClass. CssClass property sets the root class for DateTimePicker theme.
 
@@ -143,7 +143,7 @@ Add the following code in your style section. In the following CSS style, exitin
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) | markdownify }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
 {:.image }
 
 

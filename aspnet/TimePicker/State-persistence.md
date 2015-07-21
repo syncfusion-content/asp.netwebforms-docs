@@ -7,11 +7,11 @@ control: TimePicker
 documentation: ug
 ---
 
-## State persistence
+# State persistence
 
 TimePicker control provides options to maintain the selected value after you refresh the page by using State persistence property.
 
-### State persistence of the TimePicker
+## State persistence of the TimePicker
 
 The following code explains you how to use theEnablePersistence property.
 

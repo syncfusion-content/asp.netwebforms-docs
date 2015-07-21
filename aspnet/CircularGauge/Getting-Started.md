@@ -7,7 +7,7 @@ control: Circular Gauge
 documentation: ug
 ---
 
-##  Getting Started
+#  Getting Started
 
 
 
@@ -15,13 +15,13 @@ documentation: ug
 * You will learn how to provide data for a Circular Gauge and to display that data in the required way. In addition, you will learn how to customize the default Circular Gauge appearance to your requirements. 
 * As a result, you will get a Circular Gauge that shows how the Automobile speedometer works with rpm (Rotation per Minute), KmpH (Kilometer per hour) and denotes the speed level indication (Safe, Caution and Danger). 
 
-Speedometer Gauge
+## Speedometer Gauge
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+ ![](Getting-Started_images/Getting-Started_img1.png)
 {:.image }
 
 
-Create a Circular Gauge
+## Create a Circular Gauge
 
 ASP.NET Circular Gauge widget basically renders with animation and flexible API’s. You can easily create the Circular Gauge widget by using simple code example as follows.
 
@@ -46,11 +46,11 @@ Run the above code to get a default CircularGauge with default values as follows
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+ ![](Getting-Started_images/Getting-Started_img2.png)
 {:.image }
 
 
-Set Height and Width values
+### Set Height and Width values
 
 Pointers have different height and width range so you can set the height and width of the gauge according to your requirements.Set the basic values of the gauge such as height and width of the canvas element.
 
@@ -72,11 +72,11 @@ Run the above code to get the following output.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+ ![](Getting-Started_images/Getting-Started_img3.png)
 {:.image }
 
 
-Set Background Color
+### Set Background Color
 
 You can draw the speedometer with dark background and to vary the speed of the pointer you can set ReadOnly to ‘false’ for user Interaction. 
 
@@ -98,11 +98,11 @@ Run the above code to get the following output.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+ ![](Getting-Started_images/Getting-Started_img4.png)
 {:.image }
 
 
-Provide scale values
+### Provide scale values
 
 * The pointer cap is customized with the following options. Cap radius, cap border color, cap background color, pointer cap border width are some of the properties that are customizable.
 * The speed limit in the gauge has maximum value of 200KmpH.So you can set maximum value for the gauge as 200.
@@ -142,11 +142,11 @@ Run the above code to get the following output.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+ ![](Getting-Started_images/Getting-Started_img5.png)
 {:.image }
 
 
-Add Label Customization
+## Add Label Customization
 
 To display the value around the scale, labels are used. By customizing the label color it displays as specified 
 
@@ -202,13 +202,13 @@ Run the above code to get the following output.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+ ![](Getting-Started_images/Getting-Started_img6.png)
 {:.image }
 
 
 
 
-Add pointers data
+## Add pointers data
 
 Here, you have three pointers that denote the kilometer value, rotation per minute value and torque value.The torque value pointer needs not to be similar to the other two pointers. You can set torque pointer as marker pointer. And you can set other attributes for pointer such as background color, border color, Length, width and distance from scale.
 
@@ -292,7 +292,7 @@ Run the above code to get the following output.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+ ![](Getting-Started_images/Getting-Started_img7.png)
 {:.image }
 
 
@@ -368,7 +368,7 @@ Run the above code to get the following output.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+ ![](Getting-Started_images/Getting-Started_img8.png)
 {:.image }
 
 
@@ -462,7 +462,7 @@ Run the above code to get the following output.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+ ![](Getting-Started_images/Getting-Started_img9.png)
 {:.image }
 
 
@@ -609,7 +609,7 @@ Run the above code to get the following output.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+ ![](Getting-Started_images/Getting-Started_img10.png)
 {:.image }
 
 
@@ -699,7 +699,7 @@ The final output is as follows.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img11.png) | markdownify }
+ ![](Getting-Started_images/Getting-Started_img11.png)
 {:.image }
 
 

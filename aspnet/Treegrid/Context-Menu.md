@@ -7,7 +7,7 @@ control: TreeGrid
 documentation: ug
 ---
 
-## Context Menu
+# Context Menu
 
 Context menu in TreeGrid control is used to manipulate (add, edit and delete) the tree grid rows. In TreeGrid, context menu can be enabled with ContextMenuSettings API. The ContextMenuSettings property contains two inner properties ShowContextMenu and ContextMenuItems.
 
@@ -47,11 +47,11 @@ The ContextMenuItems property is used to add the menu items to context menu, thi
 
 The following screenshot displays the Context menu in TreeGrid control.
 
-{ ![D:/IMG_28112014_150551.png](Context-Menu_images/Context-Menu_img1.png) | markdownify }
+ ![D:/IMG_28112014_150551.png](Context-Menu_images/Context-Menu_img1.png) 
 {:.image }
 
 
-### ContextMenu Customization
+## ContextMenu Customization
 
 Context menu can be customized by adding a new custom menu item to it. In TreeGrid, context menu can be customized using ContextMenuOpen client side event. This event is triggered when the context menu is rendered with mouse right click action. The following properties are available in the event,
 
@@ -127,7 +127,7 @@ Context menu can be customized by adding a new custom menu item to it. In TreeGr
 
 The following screenshot displays the customization of Context menu in TreeGrid control.
 
-{ ![](Context-Menu_images/Context-Menu_img2.png) | markdownify }
+![](Context-Menu_images/Context-Menu_img2.png) 
 {:.image }
 
 

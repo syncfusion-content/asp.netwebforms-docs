@@ -7,9 +7,9 @@ control: DatePicker
 documentation: ug
 ---
 
-## Behavior Settings
+# Behavior Settings
 
-### Button Text
+## Button Text
 
 Set the display text for the Button in the DatePicker popup. By default, ButtonText is set Today (String). Change this default value by using the ButtonText property to the Button Text.
 
@@ -37,13 +37,13 @@ The following screenshot displays the output for the above code.
 
 
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img1.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img1.png) 
 {:.image }
 
 
 
 
-### Display Default Date
+## Display Default Date
 
 You can display the default date value in input textbox. By default, DisplayDefaultDate property is set to true in the DatePicker Control. 
 
@@ -61,7 +61,7 @@ In the ASPX page, include the following DatePicker control code example to turno
 
 {% endhighlight %}
 
-### Enabled
+## Enabled
 
 You can Enable or Disable the DatePicker control. By default, Enabled property is set to true in the DatePicker control. You can disable the DatePicker control by setting Enabled property to false.
 
@@ -87,13 +87,13 @@ The following screenshot displays the output for the above code.
 
 
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img2.png) | markdownify }
+[](Behavior-Settings_images/Behavior-Settings_img2.png) 
 {:.image }
 
 
 
 
-### Enable strict mode
+## Enable strict mode
 
 When EnableStrictMode is set to true, DatePicker does not allow the value out of the range. By default, EnableStrictMode property is set to false in the DatePicker.
 
@@ -115,7 +115,7 @@ In the ASPX page, include the following DatePicker control code example to enabl
 
 
 
-### Fields
+## Fields
 
 You can specify the fields mapping in the DatePicker. You can also provide the support to add image, image styles, sprite css class, query, and HTML attributes.
 
@@ -200,8 +200,7 @@ In the ASPX page, include the following DatePicker control code example.
 
 Add the following styles to specify the fields mapping in DatePicker control.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img4.jpeg) | markdownify }
-{:.image }
+
 _Note: Images for this example are available in ‘installed location /Content/images’ and you need to define images in the mentioned CSS. Henceforth, the images are displayed._
 
 
@@ -242,11 +241,11 @@ _Note: Images for this example are available in ‘installed location /Content/i
 
 The following screenshot displays the output for the above code.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img5.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img5.png) 
 {:.image }
 
 
-### Define start day of the week
+## Define start day of the week
 
 It specifies the start day of the week in the DatePicker calendar. By default, Value is set to 0 (Sunday). 
 
@@ -270,11 +269,11 @@ In the ASPX page, include the following DatePicker control code example to speci
 
 The following screenshot displays the output for the above code.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img6.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img6.png) 
 {:.image }
 
 
-### Step months
+## Step months
 
 It specifies the number of months to navigate at one click in next and previous buttons achieved by StepMonths property. You can change the Step months on changing the default value by using the StepMonths property. 
 
@@ -294,7 +293,7 @@ In the ASPX page, include the following DatePicker control code example to speci
 
 {% endhighlight %}
 
-### Define value
+## Define value
 
 It specifies the selected date value. You can specify the selected date value by using the Value property.
 
@@ -314,11 +313,11 @@ In the ASPX page, include the following DatePicker control code example to speci
 
  The following screenshot displays the output for the above code.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img7.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img7.png) 
 {:.image }
 
 
-### Watermark Text
+## Watermark Text
 
 It specifies the Watermark Text to display the input text in the DatePicker. By default, WatermarkText property is set as “select date” in the DatePicker. 
 
@@ -344,13 +343,13 @@ The following screenshot displays the output for the above code.
 
 
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img8.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img8.png) 
 {:.image }
 
 
-### Display Format
+## Display Format
 
-#### Date format
+### Date format
 
 Date format defines a format or structure of the displayed date in the textbox. You can change the date format by using DateFormat property.
 
@@ -406,11 +405,11 @@ The following screenshot displays the output for the above code.
 
 
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img9.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img9.png) 
 {:.image }
 
 
-#### Day header format
+### Day header format
 
 It specifies the header format of days in short, long or min types. You can set the DatePicker day header format by using the DayHeaderFormat property. By default, DayHeaderFormat property is set as ShowHeaderMin in the DatePicker control. 
 
@@ -460,11 +459,11 @@ In the ASPX page, include the following DatePicker control code example to set t
 
 The following screenshot displays the output for the above code.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img10.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img10.png) 
 {:.image }
 
 
-#### Header format
+### Header format
 
 It specifies the Header format to be displayed in the pop up of the DatePicker. The header in the DatePicker popup is displayed in the specified format. By default HeaderFormat property is set as “MMMM/yyyy” in the DatePicker control. 
 
@@ -488,7 +487,7 @@ The following screenshot displays the output for the above code.
 
 
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img11.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img11.png) 
 {:.image }
 
 

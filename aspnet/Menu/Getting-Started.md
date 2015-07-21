@@ -13,7 +13,7 @@ documentation: ug
 
 The ASP.NET Menu supports you to display a Menu of list-out items. This Menu is based on UL-LI hierarchy, where the sub-list items can be rendered as the sub-menu items. You can also render the Menu control with local and remote data source.  From the following guideline, you can learn how to customize the Menu control for a website. In this case, Syncfusion’s website Menu is used to explain this topic. The following screenshot displays the appearance of Menu.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img1.png) 
 {:.image }
 
 
@@ -73,7 +73,7 @@ Initialize the Menu control with the following CSS.
 
 Output of above steps
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img2.png) 
 {:.image }
 
 
@@ -129,7 +129,7 @@ Every Menu contains a list of Menu items with list of sub level Menu items. From
 
 The following screenshot displays the resultant output Menu without sub menu item.
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img3.png) 
 {:.image }
 
 
@@ -531,7 +531,7 @@ To initialize multiple level sub menu items use the following code example.
 
 The following screenshot is the resultant output Menu with multiple level sub menu item.
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img5.png) 
 {:.image }
 
 

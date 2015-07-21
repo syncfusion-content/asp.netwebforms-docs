@@ -7,9 +7,9 @@ control: Dialog
 documentation: ug
 ---
 
-## Appearance and Styling 
+# Appearance and Styling 
 
-### Theme
+## Theme
 
 The Dialog control’s style and appearance can be controlled based on CSS classes. In order to apply the styles to the Dialog control, refer to the files, ej.widgets.core.min.css and ej.theme.min.css. When the file ej.widgets.all.min.css is referred, it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project, as ej.widgets.all.min.css is the combination of these two files. 
 
@@ -28,7 +28,7 @@ By default, there are 13 themes available for the Dialog control,
 * gradient-lime-dark
 * gradient-saffron
 * gradient-saffron-dark
-### CSS Class
+## CSS Class
 
 
 The CSS properties can be customized by using CSS Class in the Dialog control. The following steps explain the implementation of CSS Class option in the Dialog control.
@@ -93,7 +93,7 @@ Customize the CSS class by setting CSS properties.
 
 The output of Dialog control after customizing the CssClass.
 
-{ ![C:/Users/ApoorvahR/Desktop/13.png](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) | markdownify }
+![C:/Users/ApoorvahR/Desktop/13.png](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 {:.image }
 
 
@@ -101,9 +101,6 @@ The output of Dialog control after customizing the CssClass.
 
 
 
-__
-
-__
 
 
 

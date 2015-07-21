@@ -7,11 +7,11 @@ control: Diagram
 documentation: ug
 ---
 
-## Label
+# Label
 
 Label is a block of text that is displayed over a node or a connector. Label is used to textually represent an object with a string that can be edited at run time. Label has properties for text appearance, customization, and alignment. You can add MultipleLabels to a node/connector.
 
-### Create Label
+## Create Label
 
 Node’s/Connector’s Labels property holds an array of Label objects.
 
@@ -41,11 +41,11 @@ connector.Labels.Add(label);
 
 
 
-{ ![](Label_images/Label_img1.png) | markdownify }
+![](Label_images/Label_img1.png) 
 {:.image }
 
 
-### Displacement
+## Displacement
 
 A Label can be displaced from its original position, by dragging and programmatically. The following code illustrates how to enable Label Displacement through interaction.
 
@@ -73,7 +73,7 @@ connector.Constraints = ConnectorConstraints.Default| ConnectorConstraints.DragL
 
 
 
-{ ![](Label_images/Label_img2.png) | markdownify }
+![](Label_images/Label_img2.png)
 {:.image }
 
 
@@ -117,11 +117,11 @@ Node node = new Node()
 
 
 
-{ ![](Label_images/Label_img3.png) | markdownify }
+![](Label_images/Label_img3.png) 
 {:.image }
 
 
-### Label Rotation
+## Label Rotation
 
 Diagram provides support to rotate labels. You can rotate labels to some specified angles. The following code illustrates how to specify the rotation angle for labels.
 
@@ -145,15 +145,14 @@ label.RotateAngle = 45;
 
 
 
-{ ![](Label_images/Label_img4.png) | markdownify }
+ ![](Label_images/Label_img4.png) 
 {:.image }
 
 
-> { ![](Label_images/Label_img5.png) | markdownify }
-{:.image }
+
 _Note: No built-in support is added to rotate labels interactively._
 
-### Appearance 
+## Appearance 
 
 You cancustomizethe Labelappearance and position by using its properties.
 
@@ -191,11 +190,11 @@ label.TextDecoration = TextDecorations.LineThrough;
 
 
 
-{ ![](Label_images/Label_img6.png) | markdownify }
+![](Label_images/Label_img6.png) 
 {:.image }
 
 
-### Label Editing
+## Label Editing
 
 Labelcan be edited at runtime, programmatically or interactively. By default, label is in View mode. But, it can be brought to edit mode in two ways; by double clicking on the label, or by programmatically setting the mode to Edit as shown in the following code example. Label editing is automatically terminated when the Edit box loses its focus or by setting its mode back to View.
 
@@ -221,11 +220,11 @@ label.Mode = LabelEditMode.View;
 
 
 
-{ ![](Label_images/Label_img7.png) | markdownify }
+![](Label_images/Label_img7.png) 
 {:.image }
 
 
-### Read-only Label
+## Read-only Label
 
 To prevent label editing, set Label’s ReadOnly property as True. After setting the Label to ReadOnly mode, when you double click the Label, it does not move to Edit mode. However, even after ReadOnly is set as true, you can programmatically move the label to edit mode.
 
@@ -241,7 +240,7 @@ label.ReadOnly = true;
 
 {% endhighlight %}
 
-### Label Alignment
+## Label Alignment
 
 You can align the Label by using its alignment properties.
 
@@ -337,17 +336,17 @@ Bottom</td><td>
 </table>
 
 
-{ ![](Label_images/Label_img11.png) | markdownify }
+![](Label_images/Label_img11.png) 
 {:.image }
 
 
 
 
-{ ![](Label_images/Label_img12.png) | markdownify }
+![](Label_images/Label_img12.png) 
 {:.image }
 
 
-Text Wrapping
+### Text Wrapping
 
 Wrapping property of label allows you to specify whether or not to wrap the text when it reaches the edge of the containing node. 
 
@@ -365,7 +364,7 @@ label.Wrapping = WrapText.Wrap;
 
 
 
-{ ![](Label_images/Label_img13.png) | markdownify }
+ ![](Label_images/Label_img13.png) 
 {:.image }
 
 
@@ -417,7 +416,7 @@ label.Width = 50;
 
 {% endhighlight %}
 
-### Multiple Labels 
+## Multiple Labels 
 
 You can add Multiple Labels to the node /connector.
 
@@ -463,7 +462,7 @@ node.Labels.Add(label);
 
 
 
-{ ![](Label_images/Label_img17.png) | markdownify }
+![](Label_images/Label_img17.png) 
 {:.image }
 
 

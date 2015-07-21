@@ -7,9 +7,9 @@ control: NumericTextbox
 documentation: ug
 ---
 
-## Integration
+# Integration
 
-### Angular Support
+## Angular Support
 
 The NumericTextbox control supports two types of Angular JS support namely,
 
@@ -122,11 +122,11 @@ The following screenshot displays the output of the NumericTextbox controls wit
 
 
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image73_43.jpg](Integration_images/Integration_img1.jpeg) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image73_43.jpg](Integration_images/Integration_img1.jpeg) 
 {:.image }
 
 
-### Knockout Support
+## Knockout Support
 
 Knockout support allows you to bind the HTML elements against any of the available data models. It is of two types.
 
@@ -257,7 +257,7 @@ The following example explains how to bind data to the NumericTextbox control t
 
 The following screenshot displays the output of the Knockout binding in the NumericTextbox .
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image73_41.jpg](Integration_images/Integration_img2.jpeg) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image73_41.jpg](Integration_images/Integration_img2.jpeg) 
 {:.image }
 
 

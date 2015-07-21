@@ -13,25 +13,25 @@ This section explains briefly about how to create an OLAP Client in your applica
 
 ## Create your first OLAP Client in ASP.NET
 
-Control Structure
+### Control Structure
 
 The following screenshot displays the OLAP Client Control.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img1.png) 
 {:.image }
 
 
-Syncfusion OLAP Controls – Architecture
+### Syncfusion OLAP Controls – Architecture
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+ ![](Getting-Started_images/Getting-Started_img2.png) 
 {:.image }
 
 
 As per the architecture, control rendering takes place at the client-side and all the analytical operations on each action takes place at the server-side.
 
-Service for OLAP Controls
+### Service for OLAP Controls
 
 The primary reasons for using service in an OLAP processing are as follows:
 
@@ -57,13 +57,13 @@ This process keeps the OlapReport always updated. You cannot operate serialized 
 5. Saving and Loading Report in Database:  you can save and load the reports available in OlapClient control via service only. This is not applicable at the client-side. You can serialize the OlapReport class in the Syncfusion.Olap.Base assembly and save to database as stream.  Also you can load back from database via service. 
 6. Exporting: You can export OLAP values and information to excel sheet via service only. So this provides feasible option to save and view OLAP information.  
 
-Create an application
+### Create an application
 
 This section encompasses on how to configure the OLAP Client control in an application. You can also pass the required data to OLAPClient and customize it according to your requirements.
 
 In this example you can see how OLAPClient component plots the data about Customer Count over different fiscal years.
 
-{ ![C:/Users/Narendhran Muthuvel/Desktop/screenshots/Capture.PNG](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+ ![C:/Users/Narendhran Muthuvel/Desktop/screenshots/Capture.PNG](Getting-Started_images/Getting-Started_img3.png) 
 {:.image }
 
 
@@ -73,17 +73,17 @@ Open the Visual Studio and create a new project by clicking New Project. Select 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img4.png) 
 {:.image }
 
 
-Add Control in Application
+### Add Control in Application
 
 1. Right-click the project and select Add > New Folder.  Name the folder as olapclient.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img5.png) 
 {:.image }
 
 
@@ -91,7 +91,7 @@ Add Control in Application
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img6.png) 
 {:.image }
 
 
@@ -99,7 +99,7 @@ Add Control in Application
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+ ![](Getting-Started_images/Getting-Started_img7.png) 
 {:.image }
 
 
@@ -107,21 +107,20 @@ Add Control in Application
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img8.png) 
 {:.image }
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img9.png) 
 {:.image }
 
 
 5. Enter the service URL value after dragging and dropping the control.
-> 
-{ ![C:/Users/labuser/Desktop/note.jpg](Getting-Started_images/Getting-Started_img10.jpeg) | markdownify }
-{:.image }
+
+
 _Note: Instructions to create a service is explained briefly in the upcoming sections._
 
-{ ![](Getting-Started_images/Getting-Started_img11.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img11.png) 
 {:.image }
 
 
@@ -129,11 +128,11 @@ Initialize the control using below code snippet.
 
 
 
-> { ![C:/Users/labuser/Desktop/note.jpg](Getting-Started_images/Getting-Started_img12.jpeg) | markdownify }
-{:.image }
+
 _Note: URL value needs to be defined in order to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately._ 
 
-> 
+
+{% highlight html %}
 
 [ASPX]
 
@@ -159,21 +158,24 @@ _Note: URL value needs to be defined in order to fetch the data from the service
 
 &lt;/body&gt;
 
-Adding References, Scripts, Styles and Control
 
-Adding References
+{% endhighlight %}
+
+### Adding References, Scripts, Styles and Control
+
+#### Adding References
 
 1. In the Solution Explorer, right-click the References folder and then click Add Reference.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img13.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img13.png) 
 {:.image }
 
 
 
 
-{ ![C:/Users/Narendhran Muthuvel/Desktop/screenshots/sshot-4.png](Getting-Started_images/Getting-Started_img14.png) | markdownify }
+![C:/Users/Narendhran Muthuvel/Desktop/screenshots/sshot-4.png](Getting-Started_images/Getting-Started_img14.png)
 {:.image }
 
 
@@ -189,22 +191,19 @@ Adding References
 * System.Data.SqlServerCe.dll (Version: 4.0.0.0).
 3. Click OK.
 
-Adding Scripts and Styles
+#### Adding Scripts and Styles
 
 Add the script files and CSS files in the head tag of the Default.aspx page.
 
 
-> { ![](Getting-Started_images/Getting-Started_img15.jpeg) | markdownify }
-{:.image }
-_Note: 1. Use the following code sample while adding scripts and styles._             
 
->                   _2. Same files can also acquire from the following location._ 
-
-> _C:\Users\&lt;UserName&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version&gt;\JavaScript\assets\_
-
->                   _3. Please download jquery.globalize.min.js from jQuery site to local machine and refer in the sample like below._
+_Note: 1. Use the following code sample while adding scripts and styles.            
+       2. Same files can also acquire from the following location.
+       C:\Users\&lt;UserName&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version&gt;\JavaScript\assets\
+       3. Please download jquery.globalize.min.js from jQuery site to local machine and refer in the sample like below.
 
 
+{% highlight html %}
 
 [ASPX]
 
@@ -224,17 +223,18 @@ _Note: 1. Use the following code sample while adding scripts and styles._
 
 &lt;/head&gt;
 
+{% endhighlight  %}
 
 
-Adding WCF service for OLAP Client
+### Adding WCF service for OLAP Client
 
-Creating WCF Services
+#### WCF Services
 
 1. Right click the project and select Add > New Folder.  Name the folder as wcf.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img16.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img16.png) 
 {:.image }
 
 
@@ -242,7 +242,7 @@ Creating WCF Services
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img17.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img17.png) 
 {:.image }
 
 
@@ -250,15 +250,16 @@ Creating WCF Services
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img18.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img18.png) 
 {:.image }
 
 
-Adding service methods inside Interface
+#### Adding service methods inside Interface
 
 Add the following code sample inside the IOlapClientService interface available in an IOlapClientService.cs file.
 
 
+{% highlight C# %}
 
 [C#]
 
@@ -346,10 +347,14 @@ Add the following code sample inside the IOlapClientService interface available 
 
     }
 
-Add Namespaces
+{% endhighlight %}
+
+#### Add Namespaces
 
 Add the following necessary namespaces required to implement the service methods.
 
+
+{% highlight C# %}
 
 [C#]
 
@@ -393,6 +398,7 @@ using Syncfusion.JavaScript;
 
 using Syncfusion.JavaScript.Olap;
 
+{% endhighlight  %}
 
 
 Creating Class in Service file
@@ -400,6 +406,8 @@ Creating Class in Service file
 You can create the OlapClientService class to implement the service methods. You can inherit the class from the IOlapClientService interface that is created automatically while adding any new service.
 
 
+
+{% highlight C# %}
 
 [C#]
 
@@ -419,12 +427,17 @@ namespace Sample
 
 }
 
-Implementing Service Methods
+
+{% endhighlight  %}
+
+#### Implementing Service Methods
 
 You can add the following methods to the service that are invoked for any server-side operations to be performed in OlapClient.
 
 1. Initialize the OlapClient and OlapChart helper class.
 
+
+{% highlight C# %}
 
 [C#]
 
@@ -442,11 +455,13 @@ You can add the following methods to the service that are invoked for any server
 
         string conStringforDB = "DataSource=" + HttpContext.Current.Server.MapPath(".").Split(new string[] { "\\wcf" }, StringSplitOptions.None)[0] + "\\database\\ReportsTable.sdf; Persist Security Info=False", reportTableName = "ReportsTable";
 
+{% endhighlight %}
 
 
 2. Add the following relevant service methods.
 
 
+{% highlight C# %}
 
 [C#]
 
@@ -862,9 +877,11 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
 
         }
 
+		
+{% endhighlight  %}
 
 
-Configuring Web.Config
+#### Configuring Web.Config
 
 1. You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "Sample.OlapClientService" where "OlapClientService" is the service class name and “Sample" is the namespace name where service class appears.The following are the properties that meet the appropriate endpoint.  
 * contract: This property indicates the contract of the endpoint is exposing. Here you are referring IOlapClientService contract and hence it is "Sample.IOlapClientService".
@@ -872,6 +889,8 @@ Configuring Web.Config
 * behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint. endpointBehaviors are illustrated as follows
 
 
+
+{% highlight html %}
 
 [web.config]
 
@@ -891,11 +910,13 @@ Configuring Web.Config
 
 &lt;/system.serviceModel&gt;
 
+{% endhighlight %}
 
 
 2. The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property. In the following code sample "Sample.OlapClientServiceAspNetAjaxBehavior" points the OlapClientService class under the namespace Sample in OlapClientService.svc.cs file that is the appropriate behavior for the endpoint. 
 
 
+{% highlight html %}
 
 [web.config]
 
@@ -918,10 +939,13 @@ Configuring Web.Config
 &lt;/system.serviceModel&gt;
 
 
+{% endhighlight %}
 
 3. Register the assemblies in web.config file by adding the following codes.
 
 
+
+{% highlight html %}
 
 [web.config]
 
@@ -943,16 +967,18 @@ Configuring Web.Config
 
  &lt;/system.web&gt; 
 
+{% endhighlight %}
 
 
-> { ![C:/Users/labuser/Desktop/note.jpg](Getting-Started_images/Getting-Started_img19.jpeg) | markdownify }
-{:.image }
+
 _Note: x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system._
 
 
 4. Register the namespace in web.config file by adding the following codes
 
 
+
+{% highlight html%}
 
 [web.config]
 
@@ -970,15 +996,15 @@ _Note: x.x.x.x in the above code example refers to the current version of the E
 
 &lt;/system.web&gt; 
 
-> { ![](Getting-Started_images/Getting-Started_img20.jpeg) | markdownify }
-{:.image }
+{% endhighlight  %}
+
 _Note: In this example, “Sample” indicates the name of the project and “OlapClientService” indicates the name of the WCF service created. And x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system._
 
 
 
 In summary, this getting started tutorial gives you an overview of OlapClient, its architecture, process flow, how to configure and integrate with a VS application through a simple example that is self-explanatory.
 
-{ ![](Getting-Started_images/Getting-Started_img21.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img21.png) 
 {:.image }
 
 

@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-## Model
+# Model
 
 The Diagram model represents data for rendering the Diagram and manipulating the Diagram elements.
 
@@ -69,7 +69,7 @@ The following code illustrates how to create a Diagram with some model propertie
 
 
 
-{ ![](Model_images/Model_img1.png) | markdownify }
+![](Model_images/Model_img1.png) 
 {:.image }
 
 

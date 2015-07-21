@@ -7,7 +7,7 @@ control: NumericTextbox
 documentation: ug
 ---
 
-## Keyboard Interaction
+# Keyboard Interaction
 
 With the keyboard navigation enabled in the NumericTextbox control, you can control the actions of the NumericTextbox with the provided shortcut keys. Almost all the NumericTextbox actions that are done through mouse can be controlled with shortcut keys.
 
@@ -37,7 +37,9 @@ Decrements the value</td></tr>
 Tab</td><td>
 Focuses the next element</td></tr>
 </table>
-### Configuring Keyboard Navigation
+
+
+## Configuring Keyboard Navigation
 
 The following steps explain the implementation of the keyboard interaction in the NumericTextbox.
 
@@ -77,7 +79,7 @@ $(document).on("keydown", function (e)
 
 Run the sample and press [Access key](http://en.wikipedia.org/wiki/Access_key) + j key to focus the NumericTextbox control. Perform provided functionality by using the keyboard shortcuts.
 
-{ ![C:/Users/giftline.jebamani/Desktop/p.png](Keyboard-Interaction_images/Keyboard-Interaction_img1.png) | markdownify }
+![C:/Users/giftline.jebamani/Desktop/p.png](Keyboard-Interaction_images/Keyboard-Interaction_img1.png) 
 {:.image }
 
 

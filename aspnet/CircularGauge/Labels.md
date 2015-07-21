@@ -7,13 +7,13 @@ control: Circular Gauge
 documentation: ug
 ---
 
-##  Labels
+#  Labels
 
 Labels are units that are used to display the values in the scales. You can customize Labels with the properties like angle, color, font, opacity, etc.
 
 
 
-### Adding Label Collection 
+## Adding Label Collection 
 
 Label collection is directly added to the scale object. Refer the following code example to add label collection in a Gauge.
 
@@ -47,15 +47,15 @@ Label collection is directly added to the scale object. Refer the following code
 
 Execute the above code to render the following output.
 
-{ ![C:/Users/karthigeyan/Desktop/Untitled.png](Labels_images/Labels_img1.png) | markdownify }
+ ![C:/Users/karthigeyan/Desktop/Untitled.png](Labels_images/Labels_img1.png)
 {:.image }
 
 
         Figure 32(a): Circular Gauge with  label collection
 
-### Label Customization
+## Label Customization
 
-Appearance
+### Appearance
 
 * Theattribute angle is used to display the labels in the specified angles and color attribute is used to display the labels in specified color. You can adjust the opacity of the label with the property opacity and the values of it lies between 0 and 1.
 * You can adjust the labels based on the tick’s direction by setting autoAngle as true. includeFirstValue is an special property especially used in some special scenarios such as in clock, where the value 0 needs to be replaced with that of 12. By enabling this property the first value of the label is not rendered.
@@ -111,7 +111,7 @@ Execute the above code to render the following output.
 {:.image }
 
 
-Unit text and Position
+### Unit text and Position
 
 * unitText is used to add some text along with the labels. For example, in speedometer, you need to mention the units in kmph. You can also add the unit text in front of the labels. You can achieve this by using an enumerable property unitTextPosition. With this you can position the unit text in front or back.
 * Labels can be positioned with the help of two properties such as distanceFromScale and placement. distanceFromScale property defines the distance between the scale and labels.  Placement property is used to locate the labels with respect to scale either inside the scale or outside the scale or along the scale. It is an enumerable data type.
@@ -178,7 +178,7 @@ Execute the above code to render the following output.
 
 
 
-### Multiple Labels
+## Multiple Labels
 
 You can achieve multiple labels such as minor and major in a Gauge sample scale. Refer the following code example for multiple labels variation.
 
@@ -230,7 +230,7 @@ You can achieve multiple labels such as minor and major in a Gauge sample scale.
 
 Execute the above code to render the following output.
 
-{ ![](Labels_images/Labels_img4.png) | markdownify }
+ ![](Labels_images/Labels_img4.png)
 {:.image }
 
 

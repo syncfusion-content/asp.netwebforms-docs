@@ -7,7 +7,7 @@ control: Toolbar
 documentation: ug
 ---
 
-## Template Support
+# Template Support
 
 Templates allows you to insert custom or ASP.NET controls inside the toolbar items. You can also design simple dropdown buttons listing the items and radio button inside the Toolbar.
 
@@ -75,7 +75,7 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 The following screenshot displays the Toolbar output with the embedded controls.
 
-{ ![](Template-Support_images/Template-Support_img1.png) | markdownify }
+ ![](Template-Support_images/Template-Support_img1.png) 
 {:.image }
 
 

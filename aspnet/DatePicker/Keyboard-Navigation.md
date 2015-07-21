@@ -7,7 +7,7 @@ control: DatePicker
 documentation: ug
 ---
 
-## Keyboard Navigation
+# Keyboard Navigation
 
 With the Keyboard Navigation enabled in the DatePicker control, it is possible to control the actions of the DatePicker with the provided shortcut keys. Almost all the DatePicker actions that are done through mouse are controlled with shortcut keys. By default, the keyboard navigation is set to true for the control and it is controlled with the property AllowKeyboardNavigation.
 
@@ -20,7 +20,7 @@ Keys</td><td>
 Function</td></tr>
 <tr>
 <td>
-{ [Access key](http://en.wikipedia.org/wiki/Access_key) | markdownify } +j</td><td>
+Alt +j</td><td>
 Focuses the control.</td></tr>
 <tr>
 <td>
@@ -115,7 +115,7 @@ In the ASPX page, add the DatePicker control to enable keyboard interaction by s
 
 Run the sample, press Alt + J to focus in the DatePicker control that enables it and you can navigate by using arrow keys and Esc key to close the popup.
 
-{ ![](Keyboard-Navigation_images/Keyboard-Navigation_img1.png) | markdownify }
+![](Keyboard-Navigation_images/Keyboard-Navigation_img1.png) 
 {:.image }
 
 

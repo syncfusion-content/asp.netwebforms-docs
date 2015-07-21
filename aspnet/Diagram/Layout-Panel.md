@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-## Layout Panel
+# Layout Panel
 
 The Container property of Group can be set to any of the available layout panel. It is used to control the size and position of the Group’s children.
 
@@ -77,7 +77,9 @@ PaddingRight</td><td>
 Int</td><td>
 Gets or sets the right padding value of the group.</td></tr>
 </table>
-### Canvas Panel
+
+
+## Canvas Panel
 
 The Canvas panel supports absolute positioning and provides the least layout functionality to its contained diagram elements. Canvas allows you to position contained elements at an offset and also elements can be arranged either horizontally or vertically.
 
@@ -175,11 +177,11 @@ private Node CreateNode(string name, int marginTop, int marginLeft, string color
 
 
 
-{ ![](Layout-Panel_images/Layout-Panel_img1.png) | markdownify }
+ ![](Layout-Panel_images/Layout-Panel_img1.png) 
 {:.image }
 
 
-### Stack panel
+## Stack panel
 
 Stack panel is used to arrange its children in a single line or stack order, either vertically or horizontally. It controls spacing by setting Margin properties of child and Padding properties of a group. By default, a Stack Panel’s orientation is vertical.
 
@@ -265,7 +267,7 @@ private Node CreateNode(string name, string color, HorizontalAlignment alignment
 
 
 
-{ ![](Layout-Panel_images/Layout-Panel_img2.png) | markdownify }
+ ![](Layout-Panel_images/Layout-Panel_img2.png)
 {:.image }
 
 

@@ -7,13 +7,13 @@ control: Dialog
 documentation: ug
 ---
 
-## Behavior Settings 
+# Behavior Settings 
 
-### Resize Support
+## Resize Support
 
 The Dialog control can be resized by using this feature. You can resize the Dialog by dragging the bottom right corner area. EnableResize accepts Boolean value. 
 
-#### Enable Resize Option
+### Enable Resize Option
 
 The following steps explain the implementation of resize option in the Dialog control. 
 
@@ -47,15 +47,15 @@ In the ASPX page, add the Dialog control and set the EnableResize as true.
 
 The output of the Dialog control when EnableResize is true.                                  
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img1.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img1.png) 
 {:.image }
 
 
-### Drag Support
+## Drag Support
 
 The Dialog control supports the drag function. You can click the Dialog header and drag the control anywhere in the web page.
 
-#### Allow Drag Option
+### Allow Drag Option
 
 The following steps explain the implementation of drag option in the Dialog control. 
 
@@ -87,15 +87,15 @@ In the ASPX page, add the Dialog control and set the AllowDraggable to true.
 
 The output of Dialog control when AllowDraggable is true.                                         
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img2.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img2.png) 
 {:.image }
 
 
-### Close Icon ToolTip Support
+## Close Icon ToolTip Support
 
 You can change the close icon ToolTip in the Dialog control by using the CloseIconTooltip property. The default value for CloseIconTooltip is close.
 
-#### Define Close Icon ToolTip
+### Define Close Icon ToolTip
 
 The following steps explain how to implement close icon ToolTip option in the Dialog control. 
 
@@ -131,15 +131,15 @@ The output of Dialog control when CloseIconTooltip is close.
 
 
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img3.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img3.png) 
 {:.image }
 
 
-### Persistence Support
+## Persistence Support
 
 The Dialog control supports state maintenance where you can maintain the state of the Dialog control in the web page. The default value for EnablePersistence is false.
 
-#### Enable Persistence Option
+### Enable Persistence Option
 
 The following steps explain the implementation of persistence support in the Dialog control. 
 
@@ -173,15 +173,15 @@ You can resize and reload the web page. The state is maintained in the Dialog co
 
 
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img4.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img4.png) 
 {:.image }
 
 
-### Enabled or Disabled
+## Enabled or Disabled
 
 The Dialog control supports enabled and disabled options that allow you to enable or disable the Dialog control in the web page.
 
-#### Enable Dialog Control
+### Enable Dialog Control
 
 The following steps explain how to implement the enable option in the Dialog control. 
 
@@ -215,11 +215,11 @@ In the ASPX page, add the Dialog control and set Enabled to true.
 
 The output of the Dialog control when Enabled is true.          
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img5.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img5.png) 
 {:.image }
 
 
-#### Disable Dialog Control
+### Disable Dialog Control
 
 The following steps explain the implementation of disable option in the Dialog control. 
 
@@ -253,11 +253,11 @@ In the ASPX page, add the Dialog control and set Enabled to false.
 
 The following is the output when Enabled is set to false.            
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img6.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img6.png) 
 {:.image }
 
 
-### Dialog Position
+## Dialog Position
 
 The Dialog provides the option to place the control based on its X axis and Y axis positions in the web page. The following steps explain how to position the Dialog.
 
@@ -303,15 +303,15 @@ In the ASPX page, add the Dialog control and set Position values.
 
 The output of the Dialog control after setting X axis and Y axis values.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img7.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img7.png) 
 {:.image }
 
 
-### Header Option
+## Header Option
 
 You can show or hide the Dialog header by setting the ShowHeader property. The following steps explains how to set the header option.
 
-#### Show Header
+### Show Header
 
 In the ASPX page, add the Dialog control and set the ShowHeader to true.
 
@@ -343,11 +343,11 @@ In the ASPX page, add the Dialog control and set the ShowHeader to true.
 
 The following screenshot displays the Dialog control when ShowHeader is true.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img8.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img8.png) 
 {:.image }
 
 
-#### Hide Header
+### Hide Header
 
 In the ASPX page, add the Dialog control and set the ShowHeader to false.
 
@@ -379,15 +379,15 @@ In the ASPX page, add the Dialog control and set the ShowHeader to false.
 
 The following screenshot displays the Dialog control when ShowHeader is set to false.
 
-{ ![C:/Users/ApoorvahR/Desktop/9.png](Behavior-Settings_images/Behavior-Settings_img9.png) | markdownify }
+![C:/Users/ApoorvahR/Desktop/9.png](Behavior-Settings_images/Behavior-Settings_img9.png) 
 {:.image }
 
 
 
 
-__
 
-### Show at Initial
+
+## Show at Initial
 
 The Dialog control contains an option to be visible or hidden at initialization. The default value for ShowOnInit is true. Setting it to false hides the dialog control at initialization.
 
@@ -419,11 +419,11 @@ In the ASPX page, add the Dialog control and set the ShowOnInit to true.
 
 The output when ShowOnInit is set to true.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img10.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img10.png) 
 {:.image }
 
 
-### Rounded Corner Support
+## Rounded Corner Support
 
 The Dialog supports rounded corners. The default value for ShowRoundedCorner is false. 
 
@@ -459,7 +459,7 @@ The output of Dialog control when ShowRoundedCorner is true.
 
 
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img11.png) | markdownify }
+![](Behavior-Settings_images/Behavior-Settings_img11.png) 
 {:.image }
 
 

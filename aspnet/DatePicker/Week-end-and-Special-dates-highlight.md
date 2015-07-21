@@ -7,7 +7,7 @@ control: DatePicker
 documentation: ug
 ---
 
-## Week end and Special dates highlight
+# Week end and Special dates highlight
 
 Week end and special dates are highlighted in the DatePicker control for identification based on your requirement.
 
@@ -97,7 +97,7 @@ The following screenshot displays the output for the above code.
 
 
 
-{ ![](Week-end-and-Special-dates-highlight_images/Week-end-and-Special-dates-highlight_img1.png) | markdownify }
+![](Week-end-and-Special-dates-highlight_images/Week-end-and-Special-dates-highlight_img1.png)
 {:.image }
 
 

@@ -7,13 +7,13 @@ control: TagCloud
 documentation: ug
 ---
 
-## Title Customization
+# Title Customization
 
-### Show title
+## Show title
 
 The TagCloud items are displayed with a Title element, by default. To hide the title, you can use the ShowTitle property that is set to true, by default.
 
-#### How to disable title in the TagCloud
+### How to disable title in the TagCloud
 
 In the ASPX page, include the following TagCloud control code example.
 
@@ -135,15 +135,15 @@ protected void Page_Load(object sender, EventArgs e)
 
 The following screenshot illustrates the TagCloud control when the title is disabled.
 
-{ ![](Title-Customization_images/Title-Customization_img1.png) | markdownify }
+ ![](Title-Customization_images/Title-Customization_img1.png) 
 {:.image }
 
 
-### Title text
+## Title text
 
 TagCloud control allows you to set a custom title text by using the TitleText property. By default, the TitleText property is set to string value, Title.
 
-#### Defining title text for TagCloud
+### Defining title text for TagCloud
 
 To configure TitleText for a TagCloud, in the ASPX page, include the following TagCloud control code example.
 
@@ -265,15 +265,15 @@ protected void Page_Load(object sender, EventArgs e)
 
 The following screenshot illustrates the TagCloud control with customized title text.
 
-{ ![](Title-Customization_images/Title-Customization_img2.png) | markdownify }
+![](Title-Customization_images/Title-Customization_img2.png) 
 {:.image }
 
 
-### Title image
+## Title image
 
 TagCloud control provides TitleImage to set an image for the title. You can set the desired image URL to the TitleImage property.
 
-#### Defining title text for TagCloud
+### Defining title text for TagCloud
 
 To configure TitleImage, in the ASPX page, include the following TagCloud control code example.
 
@@ -413,7 +413,7 @@ By using the CSS class, you can resize the image content as follows.
 
 The following screenshot illustrates the TagCloud control with customized title image.
 
-{ ![](Title-Customization_images/Title-Customization_img3.png) | markdownify }
+![](Title-Customization_images/Title-Customization_img3.png) 
 {:.image }
 
 

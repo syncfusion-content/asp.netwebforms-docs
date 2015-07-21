@@ -7,37 +7,37 @@ control: TagCloud
 documentation: ug
 ---
 
-## Data-Binding
+# Data-Binding
 
 To render the TagCloud control, it is necessary to bind the data to it correctly. The following sub-properties provides a way to bind local or remote data to the TagCloud control by binding the appropriate data fields to the corresponding options.
 
-### Fields 
+## Fields 
 
-DataSource 
+### DataSource 
 
 This property assigns the local JSON data or remote (URL binding) data to the TagCloud control.
 
-Query 
+### Query 
 
 It accepts the data of the object type that is usually the Query string, to fetch the required data from a specific table based on certain conditions. As this property is optional, when it is not specified, all the records initially assigned through DataSource is taken into consideration.
 
-DataTextField
+### DataTextField
 
 It maps the corresponding text field name from the data table or JSON data that is assigned to the DataSource with the text property of the TagCloud control. The text value that is fetched from the table renders the value to be displayed in the TagCloud.
 
-DataUrlField
+### DataUrlField
 
 URL field in the data table or JSON data assigned the DataSource is mapped to the DataUrlField property of the TagCloud control. The DataUrlField property defines the link to be navigated on clicking the corresponding text item.
 
-DataFrequencyField
+### DataFrequencyField
 
 It maps the DataFrequencyField name from the data table or JSON data that is assigned to the DataSource. The frequency value fetched from the table should be a number to categorize the font size.
 
-### Local Binding
+## Local Binding
 
 Local databinding allows you to map JSON data to TagCloud that the corresponding DataTextField, DataUrlField, and DataFrequencyField are assigned with the respective local JSON data.
 
-#### Defining the Local data for TagCloud
+### Defining the Local data for TagCloud
 
 The following explains the local data binding to the TagCloud control. In the ASPX page, include the TagCloud control code example.
 
@@ -162,12 +162,11 @@ protected void Page_Load(object sender, EventArgs e)
 
 
 The following screenshot displays the TagCloud control with local data binding.
-
-{ ![](Data-Binding_images/Data-Binding_img1.png) | markdownify }
+ ![](Data-Binding_images/Data-Binding_img1.png) 
 {:.image }
 
 
-### Remote Binding
+## Remote Binding
 
 TagCloud provides remote data binding support to populate the TagCloud items and the values that can be mapped to the TagCloud fields from a remote web service by using the DataManager and Query. 
 
@@ -209,7 +208,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 The following screenshot displays the TagCloud control with remote data binding.
 
-{ ![](Data-Binding_images/Data-Binding_img2.png) | markdownify }
+![](Data-Binding_images/Data-Binding_img2.png) 
 {:.image }
 
 

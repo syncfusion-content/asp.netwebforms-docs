@@ -7,11 +7,11 @@ control: TimePicker
 documentation: ug
 ---
 
-## Interval
+# Interval
 
 TimePicker control provides an option to change the interval of the hour, minute and seconds. 
 
-### Change the Time interval of the TimePicker control
+## Change the Time interval of the TimePicker control
 
 The following code explains you how to change the Time Interval of the TimePicker.
 

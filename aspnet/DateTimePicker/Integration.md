@@ -7,9 +7,9 @@ control: DateTimePicker
 documentation: ug
 ---
 
-## Integration
+# Integration
 
-### Angular Support
+## Angular Support
 
 AngularJS is an open-source web application framework. AngularJS extends HTML with new attributes. AngularJS is a JavaScript framework. It can be added to an ASPX page with a &lt;script&gt; tag. AngularJS extends HTML attributes with Directives, and binds data to HTML with Expressions. The support is achieved by an integration JS library file. You can know more about the Angular support in our documentation. You can find the online documentation in the following link location. 
 
@@ -61,11 +61,11 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 
 
-{ ![](Integration_images/Integration_img1.png) | markdownify }
+![](Integration_images/Integration_img1.png) 
 {:.image }
 
 
-### Knockout Support
+## Knockout Support
 
 KnockoutJS is a MVVM library that allows the separation of concerns. Essential JavaScript has full support for KnockoutJS. Knockout support is achieved by an integrated JS library file. Add the following code for Knockout Binding menu rendering.
 
@@ -78,7 +78,7 @@ When you use KO with your applications, you can get following benefits:
 In the ASPX page, include the following DateTimePicker control code example.
 
 
-
+{% highlight html %}
 
 
   &lt;div id="datetime"&gt;
@@ -105,7 +105,7 @@ In the ASPX page, include the following DateTimePicker control code example.
 
     &lt;/div&gt;
 
-
+{% endhighlight %}
 
 
 
@@ -131,7 +131,7 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 
 
-{ ![](Integration_images/Integration_img2.png) | markdownify }
+![](Integration_images/Integration_img2.png) 
 {:.image }
 
 

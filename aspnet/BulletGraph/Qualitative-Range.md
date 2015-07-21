@@ -7,7 +7,7 @@ control: BulletGraph
 documentation: ug
 ---
 
-## Qualitative Range
+# Qualitative Range
 
 Qualitative Range represents the quality of a specific range in quantitative scale like good, bad and satisfactory. Color for each qualitative range is customized using RangeStroke property. The RangeEnd property specifies the ending point of the qualitative range. Minimum value of quantitative scale is considered as the starting point of first qualitative range and previous end points are considered as starting point for other qualitative ranges. 
 
@@ -15,43 +15,41 @@ Qualitative Range represents the quality of a specific range in quantitative sca
 
 [ASP.NET]
 
+<ej:BulletGraph ID="BulletGraph1" QualitativeRangeSize="60" Value="8" ComparativeMeasureValue="5" Width="600px" Height="120px" runat="server">                        
 
+            <QualitativeRanges>
 
-&lt;ej:BulletGraph ID="BulletGraph1" QualitativeRangeSize="60" Value="8" ComparativeMeasureValue="5" Width="600px" Height="120px" runat="server"&gt;                        
+                <ej:QualitativeRanges RangeEnd="35" RangeStroke="darkred" RangeOpacity="0.5"></ej:QualitativeRanges>
 
-            &lt;QualitativeRanges&gt;
+                <ej:QualitativeRanges RangeEnd="50" RangeStroke="red" RangeOpacity="1"></ej:QualitativeRanges>
 
-                &lt;ej:QualitativeRanges RangeEnd="35" RangeStroke="darkred" RangeOpacity="0.5"&gt;&lt;/ej:QualitativeRanges&gt;
+                <ej:QualitativeRanges RangeEnd="75" RangeStroke="blue" RangeOpacity="0.7"></ej:QualitativeRanges>
 
-                &lt;ej:QualitativeRanges RangeEnd="50" RangeStroke="red" RangeOpacity="1"&gt;&lt;/ej:QualitativeRanges&gt;
+                <ej:QualitativeRanges RangeEnd="90" RangeStroke="lightgreen" RangeOpacity="1"></ej:QualitativeRanges>
 
-                &lt;ej:QualitativeRanges RangeEnd="75" RangeStroke="blue" RangeOpacity="0.7"&gt;&lt;/ej:QualitativeRanges&gt;
+                <ej:QualitativeRanges RangeEnd="100" RangeStroke="green" RangeOpacity="1"></ej:QualitativeRanges>
 
-                &lt;ej:QualitativeRanges RangeEnd="90" RangeStroke="lightgreen" RangeOpacity="1"&gt;&lt;/ej:QualitativeRanges&gt;
-
-                &lt;ej:QualitativeRanges RangeEnd="100" RangeStroke="green" RangeOpacity="1"&gt;&lt;/ej:QualitativeRanges&gt;
-
-            &lt;/QualitativeRanges&gt;
+            </QualitativeRanges>
 
 
 
-            &lt;QuantitativeScaleSettings Minimum="0" Maximum="100" Interval="10"&gt;
+            <QuantitativeScaleSettings Minimum="0" Maximum="100" Interval="10">
 
-                &lt;Location X="50" Y="20" /&gt;
+                <Location X="50" Y="20" />
 
-                &lt;FeatureMeasures&gt;
+                <FeatureMeasures>
 
-                    &lt;ej:FeatureMeasures Category="Year 1" ComparativeMeasure="75" Value="55" /&gt;
+                    <ej:FeatureMeasures Category="Year 1" ComparativeMeasure="75" Value="55" />
 
-                    &lt;ej:FeatureMeasures Category="Year 2" ComparativeMeasure="70" Value="65" /&gt;
+                    <ej:FeatureMeasures Category="Year 2" ComparativeMeasure="70" Value="65" />
 
-                    &lt;ej:FeatureMeasures Category="Year 3" ComparativeMeasure="65" Value="80" /&gt;
+                    <ej:FeatureMeasures Category="Year 3" ComparativeMeasure="65" Value="80" />
 
-                &lt;/FeatureMeasures&gt;
+                </FeatureMeasures>
 
-            &lt;/QuantitativeScaleSettings&gt;
+            </QuantitativeScaleSettings>
 
-        &lt;/ej:BulletGraph&gt;
+        </ej:BulletGraph>
 
 {% endhighlight %}
 

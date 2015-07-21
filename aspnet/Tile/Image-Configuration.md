@@ -7,7 +7,7 @@ control: Tile
 documentation: ug
 ---
 
-## Image Configuration
+# Image Configuration
 
 The “data-ej-imageposition” attribute is used to adjust the position of Tile image at the center on initialization. The possible values for the “data-ej-imageposition” are as follows
 
@@ -45,7 +45,7 @@ Refer to the following code examples.
 
 
 
-{ ![](Image-Configuration_images/Image-Configuration_img1.png) | markdownify }
+![](Image-Configuration_images/Image-Configuration_img1.png) 
 {:.image }
 
 
@@ -85,7 +85,7 @@ Refer to the following code examples.
 
 
 
-{ ![](Image-Configuration_images/Image-Configuration_img2.png) | markdownify }
+![](Image-Configuration_images/Image-Configuration_img2.png) 
 {:.image }
 
 

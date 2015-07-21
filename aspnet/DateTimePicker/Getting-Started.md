@@ -17,11 +17,11 @@ ASP.NET DateTimePicker provides support to display a calendar within a webpage a
 
 The following screenshot illustrates the functionality of a DateTimePicker with date range of maximum one week.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img1.png)
 {:.image }
 
 
-Create DateTimePicker 
+### Create DateTimePicker 
 
 You can create an ASP.NET Project and add necessary Dll and script with the help of the given [ASP-Getting Started](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm) Documentation.
 
@@ -87,11 +87,11 @@ Add the following styles to show the DateTimePicker control in a horizontal orde
 
 The following screenshot displays a DateTimePicker control.
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img2.png) 
 {:.image }
 
 
-Set the Min and Max Date with Time Interval
+### Set the Min and Max Date with Time Interval
 
 In a real-time appointment scenario, the appointment is open only for a limited number of days. You have to select a date and time within the given range. This can be achieved by using the properties MinDateTime and MaxDateTime that enable the specified date range in the DateTimePicker control.
 
@@ -117,7 +117,7 @@ The following screenshot shows the output for the above code example.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img3.png) 
 {:.image }
 
 

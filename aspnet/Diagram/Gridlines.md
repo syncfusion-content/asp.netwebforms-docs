@@ -7,15 +7,15 @@ control: Diagram
 documentation: ug
 ---
 
-## Gridlines
+# Gridlines
 
 Gridlines are horizontal and vertical lines behind the Diagram elements. They provide visual guidance when dragging or arranging objects on the Diagram surface.
 
-{ ![](Gridlines_images/Gridlines_img1.png) | markdownify }
+![](Gridlines_images/Gridlines_img1.png) 
 {:.image }
 
 
-### SnapConstraints
+## SnapConstraints
 
 The Diagram model’s SnapSettings.SnapContraints property is used to control snap to grid behavior and visibility of gridlines. 
 
@@ -85,7 +85,7 @@ Diagram1.SnapSettings.SnapConstraints = SnapConstraints.None;
 
 {% endhighlight %}
 
-### Appearance
+## Appearance
 
 You can customize the Appearance of the gridlines by using following properties.
 
@@ -162,7 +162,7 @@ diagram.Model.SnapSettings.HorizontalGridlines.Strokes.LineDashArray = "2 2";
 
 
 
-{ ![](Gridlines_images/Gridlines_img2.png) | markdownify }
+![](Gridlines_images/Gridlines_img2.png) 
 {:.image }
 
 

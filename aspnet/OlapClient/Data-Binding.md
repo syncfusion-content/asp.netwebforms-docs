@@ -7,16 +7,18 @@ control: OLAP Client
 documentation: ug
 ---
 
-## Data Binding
+# Data Binding
 
 OLAP Client control enables you to retrieve multidimensional data either from SSAS or from any XMLA provider and present the OLAP information in a meaningful way.
 
-### SSAS
+## SSAS
 
 Bind OLAP Client to the Offline Cube
 
 The following code example illustrates how to connect to an offline cube.
 
+
+{% highlight C# %}
 
 [C#]
 
@@ -24,10 +26,14 @@ string connectionString = @"DataSource= C:\Users\&lt;UserName&gt;\appdata\loca
 
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 
+{% endhighlight %}
+
 Bind OLAP Client to the SQL Server (Local)
 
 The following code example illustrates how to connect to a local cube in SQL Server.
 
+
+{% highlight C# %}
 
 [C#]
 
@@ -35,7 +41,9 @@ string connectionString = "Data source=localhost; Initial Catalog=Adventure Work
 
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 
-### XML/A
+{% endhighlight %}
+
+## XML/A
 
 XML for Analysis (XML/A) is a standard that allows the client applications to transfer multi-dimensional or OLAP data sources from an OLAP Server which is available online. The back and forth communication is done using the web standards – HTTP, SOAP, and XML. The query language used is MDX, which is most widely supported for reporting from multi-dimensional data stores.
 
@@ -49,18 +57,22 @@ The following code example illustrates how to connect to the SSAS server availab
 
 
 
+{% highlight C# %}
+
 [C#]
 
 static string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";   
 
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 
+{% endhighlight %}
+
 Connect to Mondrian Server
 
 The following code example illustrates how to connect to the Mondrian Server.
 
 
-{ ![Description: http://help.syncfusion.com/ug/js/ImagesExt/image49_125.png](Data-Binding_images/Data-Binding_img1.png) | markdownify }
+![Description: http://help.syncfusion.com/ug/js/ImagesExt/image49_125.png](Data-Binding_images/Data-Binding_img1.png) 
 {:.image }
 
 
@@ -70,7 +82,7 @@ Add a new report along with the existing report collection.
 
 
 
-{ ![Description: http://help.syncfusion.com/ug/js/ImagesExt/image49_126.png](Data-Binding_images/Data-Binding_img2.png) | markdownify }
+![Description: http://help.syncfusion.com/ug/js/ImagesExt/image49_126.png](Data-Binding_images/Data-Binding_img2.png) 
 {:.image }
 
 
@@ -78,7 +90,7 @@ Replace the existing report name with the altered report name.
 
 
 
-{ ![Description: http://help.syncfusion.com/ug/js/ImagesExt/image49_127.png](Data-Binding_images/Data-Binding_img3.png) | markdownify }
+![Description: http://help.syncfusion.com/ug/js/ImagesExt/image49_127.png](Data-Binding_images/Data-Binding_img3.png) 
 {:.image }
 
 
@@ -88,7 +100,7 @@ Removes the current report from the report collection. If only one report is ava
 
 
 
-{ ![Description: http://help.syncfusion.com/ug/js/ImagesExt/image49_128.png](Data-Binding_images/Data-Binding_img4.png) | markdownify }
+![Description: http://help.syncfusion.com/ug/js/ImagesExt/image49_128.png](Data-Binding_images/Data-Binding_img4.png) 
 {:.image }
 
 
@@ -98,7 +110,7 @@ The OLAPReport collection bound to the OLAPClient component can be passed to a w
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img5.png) | markdownify }
+ ![](Data-Binding_images/Data-Binding_img5.png)
 {:.image }
 
 
@@ -106,7 +118,7 @@ On clicking the Save icon, a dialog is displayed to enter the name with which th
 
 
 
-{ ![Description: http://help.syncfusion.com/ug/js/ImagesExt/image49_130.png](Data-Binding_images/Data-Binding_img6.png) | markdownify }
+![Description: http://help.syncfusion.com/ug/js/ImagesExt/image49_130.png](Data-Binding_images/Data-Binding_img6.png) 
 {:.image }
 
 
@@ -114,7 +126,7 @@ Similarly, on clicking the load icon, a pop-up window is displayed, containing a
 
 
 
-{ ![Description: http://help.syncfusion.com/ug/js/ImagesExt/image49_131.png](Data-Binding_images/Data-Binding_img7.png) | markdownify }
+![Description: http://help.syncfusion.com/ug/js/ImagesExt/image49_131.png](Data-Binding_images/Data-Binding_img7.png) 
 {:.image }
 
 

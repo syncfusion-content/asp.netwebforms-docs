@@ -13,7 +13,7 @@ This section explains briefly on how to create a Tile control in your applicatio
 
 ## Create your first Tile in JavaScript
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img1.png) 
 {:.image }
 
 
@@ -93,7 +93,7 @@ Create a div element that acts as a container for Tile control. Initialize ejTil
 
 Run the above code to render the following output. 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img2.png) 
 {:.image }
 
 
@@ -197,7 +197,7 @@ Refer to the following code example.
 
 Run the above code to render the following output.
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img3.png)
 {:.image }
 
 

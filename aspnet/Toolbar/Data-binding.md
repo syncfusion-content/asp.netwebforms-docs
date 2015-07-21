@@ -7,11 +7,11 @@ control: Toolbar
 documentation: ug
 ---
 
-## Data binding
+# Data binding
 
 Toolbar provides a flexible approach for binding data from various data sources. There are various properties in Toolbar for Data Binding.
 
-### Data fields and configuration 
+## Data fields and configuration 
 
 The following sub-properties helps to bind either the local/remote data to the Toolbar control.
 
@@ -84,7 +84,7 @@ This property is used to assign the tag name in which the Toolbar items can be d
 </table>
 
 
-### Local data
+## Local data
 
 Toolbar provides extensive data binding support to generate Toolbar items so that the values can be mapped to the ToolBar fields, namely key and text.
 
@@ -282,11 +282,12 @@ Refer to the following code example to render the Toolbar Control
 
 The following screenshot displays the output of the above code.
 
-{ ![](Data-binding_images/Data-binding_img1.png) | markdownify }
+![](Data-binding_images/Data-binding_img1.png) 
+
 {:.image }
 
 
-### Remote Data
+## Remote Data
 
 You can bind the data of the Toolbar items from remote. That is, you can access the data from any other server that is located as remote web service. Then the online link should be given in the DataSource property. 
 
@@ -326,15 +327,15 @@ protected void Page_Load(object sender, EventArgs e)
 
 The following screenshot displays the output of the above code. 
 
-{ ![](Data-binding_images/Data-binding_img2.png) | markdownify }
+ ![](Data-binding_images/Data-binding_img2.png) 
 {:.image }
 
 
-### Sql Data
+## Sql Data
 
 SqlDataSource is designed to work with SQL Server databases. It uses the SQL Server .NET data provider internally. SQL Server .NET data provider classes are defined in the System.Data.SqlClient namespace. To bind the SqlDataSource to ToolBar, DataSourceID should be the id of sqldatasource. You can select the table from the selectcommand. Create a table with given fields in Sql and refer that in the connectionstring to run the given sample.Refer to the following screenshot for the fields and its corresponding data types.
 
-{ ![C:/Users/jeganprakash/Desktop/IMG_22092014_162354.png](Data-binding_images/Data-binding_img3.png) | markdownify }
+![C:/Users/jeganprakash/Desktop/IMG_22092014_162354.png](Data-binding_images/Data-binding_img3.png) 
 {:.image }
 
 
@@ -364,11 +365,11 @@ The following screenshot displays the output of the above code.
 
 
 
-{ ![](Data-binding_images/Data-binding_img4.png) | markdownify }
+![](Data-binding_images/Data-binding_img4.png)
 {:.image }
 
 
-### Object Data
+## Object Data
 
 The objectdatasource control lets you to bind a specific data layer in the same manner by which you bind to the database by using other controls. The objectdatasource control can bind to any method that returns a DataSet or an IEnumerable object (for example, a DataReader or a collection of Classes). The major advantage of binding via objectdatasource is, only records that are required in the current view are retrieved from the database. To bind the objectdatasource to ToolBar, refer to the following code example.
 
@@ -504,11 +505,11 @@ return data;
 
 The following screenshot displays the output of the above code.
 
-{ ![](Data-binding_images/Data-binding_img5.png) | markdownify }
+ ![](Data-binding_images/Data-binding_img5.png)
 {:.image }
 
 
-### Xml Data
+## Xml Data
 
 XmlDataSource is used to work with XML documents. To bind the XmlDataSource to ToolBar, DataSourceID of the toolbar should be the id of XmlDataSource. Refer to the following code example.
 
@@ -594,7 +595,7 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 
 
-{ ![](Data-binding_images/Data-binding_img6.png) | markdownify }
+![](Data-binding_images/Data-binding_img6.png) 
 {:.image }
 
 
@@ -626,7 +627,7 @@ The LinqDataSource is used to bind the Toolbar data via Linq to Sql. The propert
 
 
 
-{ ![](Data-binding_images/Data-binding_img7.png) | markdownify }
+![](Data-binding_images/Data-binding_img7.png) |
 {:.image }
 
 

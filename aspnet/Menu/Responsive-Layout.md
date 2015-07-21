@@ -7,7 +7,7 @@ control: Menu
 documentation: ug
 ---
 
-## Responsive Layout
+# Responsive Layout
 
 Responsive Layout is aimed at crafting sites to provide an optimal viewing experience—easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from mobile phones to desktop computer monitors). In order to get responsive layout, add ej.responsive.css file in your sample. CDN link for the responsive CSS file is as follows.
 
@@ -139,7 +139,7 @@ Add the following code example in your ASPX page.
 
 The following screenshot displays the output for the above code example. 
 
-{ ![](Responsive-Layout_images/Responsive-Layout_img1.png) | markdownify }
+![](Responsive-Layout_images/Responsive-Layout_img1.png) 
 {:.image }
 
 

@@ -7,7 +7,7 @@ control: Tile
 documentation: ug
 ---
 
-## Configure Badge
+# Configure Badge
 
 The -badge property handles badge specific functionalities like enable or disable the badge and setting badge value for Tile.
 
@@ -41,7 +41,7 @@ Refer to the following code examples.
 
 
 
-{ ![](Configure-Badge_images/Configure-Badge_img1.png) | markdownify }
+![](Configure-Badge_images/Configure-Badge_img1.png) 
 {:.image }
 
 

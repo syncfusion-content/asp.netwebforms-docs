@@ -7,7 +7,7 @@ control: TreeMap
 documentation: ug
 ---
 
-## DataBinding
+# DataBinding
 
 TreeMap control supports Data Binding and it can be achieved using DataSource property.
 
@@ -18,6 +18,7 @@ The DataSource property accepts the collection values as input. For example, you
 
 
 
+{% highlight html %}
 
 [ASP]
 
@@ -102,6 +103,7 @@ public class TreeMapPopulationData
 &lt;/ej:Treemap&gt;
 
 
+{% endhighlight %}
 
 
 

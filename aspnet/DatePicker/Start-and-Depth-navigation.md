@@ -7,9 +7,9 @@ control: DatePicker
 documentation: ug
 ---
 
-## Start and Depth navigation
+# Start and Depth navigation
 
-### Start Level
+## Start Level
 
 It specifies the Start Level view in the DatePicker calendar. By default, StartLevel property is set to Month.
 
@@ -57,11 +57,11 @@ In the ASPX page, include the following DatePicker control code example to speci
 
 The following screenshot displays the output for the above code.
 
-{ ![](Start-and-Depth-navigation_images/Start-and-Depth-navigation_img1.png) | markdownify }
+![](Start-and-Depth-navigation_images/Start-and-Depth-navigation_img1.png) 
 {:.image }
 
 
-### Depth Level
+## Depth Level
 
 It specifies the drill down level of the DatePicker. You can restrict the drill down Depth Level by using the DepthLevel property. 
 
@@ -111,7 +111,7 @@ In the ASPX page, include the following DatePicker control code example to speci
 
 The following screenshot displays the output for the above code.
 
-{ ![](Start-and-Depth-navigation_images/Start-and-Depth-navigation_img2.png) | markdownify }
+![](Start-and-Depth-navigation_images/Start-and-Depth-navigation_img2.png)
 {:.image }
 
 

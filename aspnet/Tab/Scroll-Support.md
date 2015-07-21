@@ -7,7 +7,7 @@ control: Tab
 documentation: ug
 ---
 
-## Scroll Support
+# Scroll Support
 
 The Tab control provides scrolling support to display a large number of Tabs with scroll buttons to get rid of extending the page size. The enabled Scroll buttons can be used to traverse through the elements.
 
@@ -109,7 +109,7 @@ Add the following ASPX code to create a simple Tab with scroll button.
 
 The following screenshot illustrates the Tab control with scroll button. 
 
-{ ![](Scroll-Support_images/Scroll-Support_img1.png) | markdownify }
+![](Scroll-Support_images/Scroll-Support_img1.png) 
 {:.image }
 
 

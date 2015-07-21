@@ -7,7 +7,7 @@ control: BulletGraph
 documentation: ug
 ---
 
-## Bullet Graph Caption
+# Bullet Graph Caption
 
 Bullet Graph supports title and subtitle to convey what is represented in Bullet Graph. They are customized using CaptionSettings property.
 
@@ -20,23 +20,23 @@ Title is set to Bullet Graph using text property in CaptionSettings. Caption set
 
 
 
-&lt;ej:BulletGraph ID="BulletGraph1" Width="600px" Height="700px" runat="server"&gt;
+<ej:BulletGraph ID="BulletGraph1" Width="600px" Height="700px" runat="server">
 
-            &lt;QuantitativeScaleSettings Minimum="0" Maximum="5" Interval="1"&gt;
+            <QuantitativeScaleSettings Minimum="0" Maximum="5" Interval="1">
 
-                &lt;Location x="110" Y="200"/&gt;
+                <Location x="110" Y="200"/>
 
-            &lt;/QuantitativeScaleSettings&gt;
+            </QuantitativeScaleSettings>
 
-            &lt;CaptionSettings Text="Revenue YTD"&gt;
+            <CaptionSettings Text="Revenue YTD">
 
-                &lt;Location Y="220" /&gt;
+                <Location Y="220" />
 
-                &lt;Font FontStyle="bold" FontColor="gray" Size="14px"&gt;&lt;/Font&gt;
+                <Font FontStyle="bold" FontColor="gray" Size="14px"></Font>
 
-            &lt;/CaptionSettings&gt;
+            </CaptionSettings>
 
-        &lt;/ej:BulletGraph&gt;
+        </ej:BulletGraph>
 
 {% endhighlight %}
 
@@ -52,39 +52,40 @@ Subtitle is added to Bullet Braph using Text property of Subtitle in CaptionSett
 
 
 {% highlight html %}
+
 [ASP.NET]
 
 
 
-        &lt;ej:BulletGraph ID="BulletGraph1" Width="600px" Height="700px" runat="server"&gt;            
+        <ej:BulletGraph ID="BulletGraph1" Width="600px" Height="700px" runat="server">            
 
-            &lt;CaptionSettings Text="Revenue YTD"&gt;
-
-
-
-                &lt;SubTitle Text="Subtitle"&gt;
-
-                    &lt;Location X="20" Y="225" /&gt;
-
-                    &lt;Font FontStyle="italic" Size="16px"&gt;&lt;/Font&gt;
-
-                &lt;/SubTitle&gt;
+            <CaptionSettings Text="Revenue YTD">
 
 
 
-                &lt;Location Y="210" /&gt;
+                <SubTitle Text="Subtitle">
 
-                &lt;Font FontStyle="bold" FontColor="gray" Size="14px"&gt;&lt;/Font&gt;
+                    <Location X="20" Y="225" />
 
-            &lt;/CaptionSettings&gt;
+                    <Font FontStyle="italic" Size="16px"></Font>
 
-            &lt;QuantitativeScaleSettings Minimum="0" Maximum="5" Interval="1"&gt;
+                </SubTitle>
 
-                &lt;Location x="110" Y="200"/&gt;
 
-            &lt;/QuantitativeScaleSettings&gt;
 
-        &lt;/ej:BulletGraph&gt;
+                <Location Y="210" />
+
+                <Font FontStyle="bold" FontColor="gray" Size="14px"></Font>
+
+            </CaptionSettings>
+
+            <QuantitativeScaleSettings Minimum="0" Maximum="5" Interval="1">
+
+                <Location x="110" Y="200"/>
+
+            </QuantitativeScaleSettings>
+
+        </ej:BulletGraph>
 
 
 {% endhighlight %}
@@ -106,51 +107,51 @@ Indicator displays a symbol along with text which is different from caption and 
 
 
 
-      &lt;ej:BulletGraph ID="BulletGraph1" Width="600px" Height="700px" runat="server"&gt;            
+      <ej:BulletGraph ID="BulletGraph1" Width="600px" Height="700px" runat="server">            
 
-            &lt;CaptionSettings Text="Revenue YTD"&gt;
-
-
-
-                &lt;Indicator Visible="true" Text="+ $0.5 K"&gt;
-
-                    &lt;Location X="15" Y="240" /&gt;
-
-                    &lt;Symbol Shape="Triangle" Color="green"&gt;
-
-                        &lt;Border width="1" Color="green" /&gt;
-
-                    &lt;/Symbol&gt;
+            <CaptionSettings Text="Revenue YTD">
 
 
 
-                &lt;/Indicator&gt;
+                <Indicator Visible="true" Text="+ $0.5 K">
+
+                    <Location X="15" Y="240" />
+
+                    <Symbol Shape="Triangle" Color="green">
+
+                        <Border width="1" Color="green" />
+
+                    </Symbol>
 
 
 
-                &lt;SubTitle Text="Subtitle"&gt;
+                </Indicator>
 
-                    &lt;Location X="20" Y="225" /&gt;
 
-                    &lt;Font FontStyle="italic" Size="16px"&gt;&lt;/Font&gt;
 
-                &lt;/SubTitle&gt;
+                <SubTitle Text="Subtitle">
 
-                &lt;Location Y="210" /&gt;
+                    <Location X="20" Y="225" />
 
-                &lt;Font FontStyle="bold" FontColor="gray" Size="14px"&gt;&lt;/Font&gt;
+                    <Font FontStyle="italic" Size="16px"></Font>
 
-            &lt;/CaptionSettings&gt;
+                </SubTitle>
 
-            &lt;QuantitativeScaleSettings Minimum="0" Maximum="5" Interval="1"&gt;
+                <Location Y="210" />
 
-                &lt;Location x="110" Y="200"/&gt;
+                <Font FontStyle="bold" FontColor="gray" Size="14px"></Font>
 
-                &lt;LabelSettings LabelPrefix="$" LabelSuffix="K"&gt;&lt;/LabelSettings&gt;
+            </CaptionSettings>
 
-            &lt;/QuantitativeScaleSettings&gt;
+            <QuantitativeScaleSettings Minimum="0" Maximum="5" Interval="1">
 
-        &lt;/ej:BulletGraph&gt;
+                <Location x="110" Y="200"/>
+
+                <LabelSettings LabelPrefix="$" LabelSuffix="K"></LabelSettings>
+
+            </QuantitativeScaleSettings>
+
+        </ej:BulletGraph>
 
 
 {% endhighlight  %}
@@ -170,11 +171,11 @@ The title, subtitle and indicator text can be overlapped to the scale group. You
 
 
 
-&lt;ej:BulletGraph Value="8" ComparativeMeasureValue="8" Width="650" Height="150" runat="server"&gt;
+<ej:BulletGraph Value="8" ComparativeMeasureValue="8" Width="650" Height="150" runat="server">
 
-      &lt;CaptionSettings Text="Bullet Graph Title" EnableTrim=True /&gt;
+      <CaptionSettings Text="Bullet Graph Title" EnableTrim=True />
 
-&lt;/ej:BulletGraph&gt;
+</ej:BulletGraph>
 
 
 {% endhighlight %}
@@ -199,21 +200,21 @@ The property, TextPosition, is used to position the text at the top, bottom, lef
 
 
 
-&lt;ej:BulletGraph Value="8" ComparativeMeasureValue="8" Width="650" Height="150" runat="server"&gt;
+<ej:BulletGraph Value="8" ComparativeMeasureValue="8" Width="650" Height="150" runat="server">
 
-        &lt;QuantitativeScaleSettings&gt;
+        <QuantitativeScaleSettings>
 
-            &lt;Location X="120" Y="40" /&gt;
+            <Location X="120" Y="40" />
 
-        &lt;/QuantitativeScaleSettings&gt;
+        </QuantitativeScaleSettings>
 
-        &lt;CaptionSettings Text="Bullet Graph Title" TextPosition="Top"&gt;
+        <CaptionSettings Text="Bullet Graph Title" TextPosition="Top">
 
-            &lt;Font FontWeight="bold" Size="20px" &gt;&lt;/Font&gt;
+            <Font FontWeight="bold" Size="20px" ></Font>
 
-        &lt;/CaptionSettings&gt;
+        </CaptionSettings>
 
-    &lt;/ej:BulletGraph&gt;
+    </ej:BulletGraph>
 
 {% endhighlight  %}
 
@@ -223,7 +224,7 @@ The following screenshot displays the Bullet Graph with the title positioned abo
 {:.image }
 
 
-Text Alignment
+## Text Alignment
 
 Alignment of text at different positions with respect to scale can be customized by using the TextAlignment property. Text can be aligned in the Near, Center, and Far locations of the scale. Text alignment depends upon TextPosition property and is not applicable when the value of the TextPosition property is Float. The default value of the TextAlignment property is Near. 
 
@@ -232,27 +233,27 @@ Alignment of text at different positions with respect to scale can be customized
 
 
 
-    &lt;ej:BulletGraph Value="8" ComparativeMeasureValue="8" Width="650" Height="150" runat="server"&gt;
+    <ej:BulletGraph Value="8" ComparativeMeasureValue="8" Width="650" Height="150" runat="server">
 
-        &lt;QuantitativeScaleSettings&gt;
+        <QuantitativeScaleSettings>
 
-            &lt;Location X="120" Y="40" /&gt;
+            <Location X="120" Y="40" />
 
-        &lt;/QuantitativeScaleSettings&gt;
+        </QuantitativeScaleSettings>
 
-        &lt;CaptionSettings Text="Revenue" TextPosition="Left" TextAnchor="Middle"&gt;
+        <CaptionSettings Text="Revenue" TextPosition="Left" TextAnchor="Middle">
 
-            &lt;Font FontWeight="bold" Size="16px" &gt;&lt;/Font&gt;
+            <Font FontWeight="bold" Size="16px" ></Font>
 
-            &lt;SubTitle Text="$ in thousands" TextPosition="Left" TextAlignment="Center"&gt;
+            <SubTitle Text="$ in thousands" TextPosition="Left" TextAlignment="Center">
 
-                &lt;Font FontWeight="bold" Size="12px" &gt;&lt;/Font&gt;
+                <Font FontWeight="bold" Size="12px" ></Font>
 
-            &lt;/SubTitle&gt;
+            </SubTitle>
 
-        &lt;/CaptionSettings&gt;
+        </CaptionSettings>
 
-    &lt;/ej:BulletGraph&gt;
+    </ej:BulletGraph>
 
 
 {% endhighlight %}
@@ -263,7 +264,7 @@ The following screenshot displays the Bullet Graph with the title and subtitle a
 {:.image }
 
 
-Text Anchor
+## Text Anchor
 
 Text elements aligned at the same position are anchored by using the TextAnchor property. These can be anchored at the Start, Middle, and End. The default value of this property is Start and applicable only when two or more text elements are aligned at the same position. 
 
@@ -272,27 +273,27 @@ Text elements aligned at the same position are anchored by using the TextAnchor 
 
 
 
-    &lt;ej:BulletGraph Value="8" ComparativeMeasureValue="8" Width="650" Height="150" runat="server"&gt;
+    <ej:BulletGraph Value="8" ComparativeMeasureValue="8" Width="650" Height="150" runat="server">
 
-        &lt;QuantitativeScaleSettings&gt;
+        <QuantitativeScaleSettings>
 
-            &lt;Location X="120" Y="40" /&gt;
+            <Location X="120" Y="40" />
 
-        &lt;/QuantitativeScaleSettings&gt;
+        </QuantitativeScaleSettings>
 
-        &lt;CaptionSettings Text="Revenue" TextPosition="Left" TextAnchor="Middle"&gt;
+        <CaptionSettings Text="Revenue" TextPosition="Left" TextAnchor="Middle">
 
-            &lt;Font FontWeight="bold" Size="16px" &gt;&lt;/Font&gt;
+            <Font FontWeight="bold" Size="16px" ></Font>
 
-            &lt;SubTitle Text="$ in thousands" TextPosition="Left" TextAlignment="Center"&gt;
+            <SubTitle Text="$ in thousands" TextPosition="Left" TextAlignment="Center">
 
-                &lt;Font FontWeight="bold" Size="12px" &gt;&lt;/Font&gt;
+                <Font FontWeight="bold" Size="12px" ></Font>
 
-            &lt;/SubTitle&gt;
+            </SubTitle>
 
-        &lt;/CaptionSettings&gt;
+        </CaptionSettings>
 
-    &lt;/ej:BulletGraph&gt;
+    </ej:BulletGraph>
 
 {% endhighlight %}
 
@@ -300,7 +301,7 @@ Text elements aligned at the same position are anchored by using the TextAnchor 
 {:.image }
 
 
-Padding
+## Padding
 
 The space required between text and quantitative scale is customized by using the Padding property. The default value of this property is 5 and not applicable when the value of the TextPosition property is Float. 
 
@@ -309,21 +310,21 @@ The space required between text and quantitative scale is customized by using th
 
 
 
-&lt;ej:BulletGraph Value="8" ComparativeMeasureValue="5" Width="650" Height="150" runat="server"&gt;
+<ej:BulletGraph Value="8" ComparativeMeasureValue="5" Width="650" Height="150" runat="server">
 
-        &lt;QuantitativeScaleSettings&gt;
+        <QuantitativeScaleSettings>
 
-            &lt;Location X="120" Y="40" /&gt;
+            <Location X="120" Y="40" />
 
-        &lt;/QuantitativeScaleSettings&gt;
+        </QuantitativeScaleSettings>
 
-        &lt;CaptionSettings Text="Profit in %" TextPosition="Left" TextAlignment="Center" Padding="10"&gt;
+        <CaptionSettings Text="Profit in %" TextPosition="Left" TextAlignment="Center" Padding="10">
 
-            &lt;Font FontWeight="bold" Size="16px" &gt;&lt;/Font&gt;            
+            <Font FontWeight="bold" Size="16px" ></Font>            
 
-        &lt;/CaptionSettings&gt;
+        </CaptionSettings>
 
-    &lt;/ej:BulletGraph&gt;
+    </ej:BulletGraph>
 
 {% endhighlight %}
 

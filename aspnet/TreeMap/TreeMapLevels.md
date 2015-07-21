@@ -7,14 +7,14 @@ control: TreeMap
 documentation: ug
 ---
 
-## TreeMapLevels
+# TreeMapLevels
 
 The levels of TreeMap can be categorized into two types as,
 
 * FlatLevel
 * Hierarchical Level
 
-Flat Level
+## Flat Level
 
 Group Path
 
@@ -27,7 +27,7 @@ You can use GroupGap property to separate the items from every flat level and t
 
 
 
-
+{% highlight html%}
 
 
 [ASP]
@@ -64,20 +64,20 @@ You can use GroupGap property to separate the items from every flat level and t
 
 &lt;/ej:Treemap&gt;
 
+{% endhighlight %}
 
-
-{ ![](TreeMapLevels_images/TreeMapLevels_img1.png) | markdownify }
+![](TreeMapLevels_images/TreeMapLevels_img1.png)
 {:.image }
 
 
-HierarchicalLevel
+## HierarchicalLevel
 
 TreeMap Hierarchical level is used to define levels for hierarchical data collection that contains tree-structured data.
 
 
 
 
-
+{% highlight html %}
 
 
 [ASP]
@@ -162,9 +162,9 @@ public class SalesData
 
 &lt;/ej:Treemap&gt;       
 
+{% endhighlight %}
 
-
-{ ![C:/Users/ApoorvahR/Desktop/1.png](TreeMapLevels_images/TreeMapLevels_img2.png) | markdownify }
+![C:/Users/ApoorvahR/Desktop/1.png](TreeMapLevels_images/TreeMapLevels_img2.png) 
 {:.image }
 
 

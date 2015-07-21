@@ -7,7 +7,7 @@ control: Tab
 documentation: ug
 ---
 
-## State Maintenance
+# State Maintenance
 
 When the page is refreshed or reloaded, the Tab state is changed, that is, the focus is moved to the start Tab. You can maintain the state of the Tab by using the EnablePersistence property. When this property is set to true, it retains the state. 
 
@@ -63,11 +63,11 @@ Add the following ASPX for Tab state maintenance.
 
 The following screenshots illustrate the Tab with State maintenance before and after page refresh.
 
-{ ![](State-Maintenance_images/State-Maintenance_img1.png) | markdownify }
+![](State-Maintenance_images/State-Maintenance_img1.png) 
 {:.image }
 
 
-{ ![](State-Maintenance_images/State-Maintenance_img2.png) | markdownify }
+![](State-Maintenance_images/State-Maintenance_img2.png) 
 {:.image }
 
 

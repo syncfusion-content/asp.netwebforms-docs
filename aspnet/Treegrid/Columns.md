@@ -7,11 +7,11 @@ control: TreeGrid
 documentation: ug
 ---
 
-## Columns
+# Columns
 
 The TreeGrid column displays the information from a bounded data source and it is editable to update the task details through TreeGrid.
 
-### Column Resizing
+## Column Resizing
 
 You can change the width of the column in TreeGrid to show the entire text of the column by resizing the column. The following code example shows you how to enable the Column Resize feature at Gantt initialize.
 
@@ -35,7 +35,7 @@ You can change the width of the column in TreeGrid to show the entire text of 
 
 {% endhighlight %}
 
-### Column Template
+## Column Template
 
 Column Template is used to customize the column’s look and feel based on requirement.
 
@@ -349,11 +349,11 @@ TreeGrid.aspx
 
 The following screenshot displays the customized column in TreeGrid control.
 
-{ ![](Columns_images/Columns_img1.png) | markdownify }
+![](Columns_images/Columns_img1.png) 
 {:.image }
 
 
-### Column Filtering
+## Column Filtering
 
 Column Filtering in TreeGrid is used to filter the records by single or multiple column conditions. In TreeGrid control, column filtering can be enabled with AllowFiltering property, by setting this property to ‘true’, a filter bar is rendered in all available columns, providing filtering support to every columns. You can also limit filtering to specific column by setting ‘false’ to AllowFiltering property in each column object.
 
@@ -413,15 +413,15 @@ FilterEditType:
 
 The following screenshot displays the column filtering in TreeGrid control.
 
-{ ![](Columns_images/Columns_img2.png) | markdownify }
+![](Columns_images/Columns_img2.png) 
 {:.image }
 
 
-### Column Chooser
+## Column Chooser
 
 TreeGrid supports enabling and disabling the visibility of the columns dynamically with the ShowColumnChooser property. By using this property, the visibility of the custom columns can also be toggled. The Column chooser option is rendered as sub menu item within column menu in the TreeGrid columns.
 
-{ ![](Columns_images/Columns_img3.png) | markdownify }
+ ![](Columns_images/Columns_img3.png) 
 {:.image }
 
 
@@ -469,7 +469,7 @@ You can also disable the visibility of the particular column in column collectio
 
 
 
-{ ![](Columns_images/Columns_img4.png) | markdownify }
+![](Columns_images/Columns_img4.png) 
 {:.image }
 
 

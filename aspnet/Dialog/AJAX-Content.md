@@ -7,11 +7,11 @@ control: Dialog
 documentation: ug
 ---
 
-## AJAX Content
+# AJAX Content
 
 The Dialog provides AJAX content support where you can add the HTML content to the Dialog content. 
 
-### Configure AJAX Content
+## Configure AJAX Content
 
 The following steps explains how to implement AJAX content in the Dialog control. 
 
@@ -219,7 +219,7 @@ Content in the twitter.html.
 
 The output of Dialog with AJAX content.
 
-{ ![](AJAX-Content_images/AJAX-Content_img1.png) | markdownify }
+![](AJAX-Content_images/AJAX-Content_img1.png) 
 {:.image }
 
 

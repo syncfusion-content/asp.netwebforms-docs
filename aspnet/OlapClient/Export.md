@@ -7,24 +7,24 @@ control: OLAP Client
 documentation: ug
 ---
 
-## Export
+# Export
 
 The OLAP Grid inside the OLAP Client component can be exported to an Excel worksheet. A toolbar icon has been added for the implementation of the Excel export feature. On clicking the icon, the OLAP Grid is exported in cell mode to the worksheet of an Excel workbook. The workbook can be saved from the browser to the local disk drive.
 
 
-{ ![](Export_images/Export_img1.png) | markdownify }
+ ![](Export_images/Export_img1.png) 
 {:.image }
 
 
-__
 
-{ ![Description: Description: excelexport2](Export_images/Export_img2.png) | markdownify }
+
+![Description: Description: excelexport2](Export_images/Export_img2.png)
 {:.image }
 
 
 The following code example illustrates how to save the document to Excel via a service.
 
-
+{% highlight C#%}
 
 [C#]
 
@@ -40,5 +40,5 @@ olapGridHelper.ExportToExcel(DataManager,Â newStreamReader(stream).ReadToEnd(),Â
 
 }
 
-
+{% endhighlight %}
 

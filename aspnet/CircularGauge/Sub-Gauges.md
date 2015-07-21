@@ -7,15 +7,15 @@ control: Circular Gauge
 documentation: ug
 ---
 
-## Sub Gauges
+# Sub Gauges
 
 A Circular Gauge containing another circular gauge is said to be Sub Gauges. Inorder to make  a sample like watch that has second gauge, minute gauge and hour gauge, sub gauges are used.
 
-### Adding Sub Gauges
+## Adding Sub Gauges
 
 Sub gauge collection is directly added to the scale object. Refer the following code example to add custom sub gauge collection in a Gauge control
 
-
+{% highlight html %}
 
 [ASP]
 
@@ -63,13 +63,13 @@ Sub gauge collection is directly added to the scale object. Refer the following 
 
 &lt;/ej:CircularGauge&gt;
 
+{% endhighlight %}
 
-
-Basic Customization
+### Basic Customization
 
 Basic attributes such as height and width property are used to set height and width of the sub gauge. You can easily position the gauge in another gauge using the position object and by giving the X and Y Coordinates value. controlID attribute is used to specify the sub gauge ID.
 
-
+{% highlight html %}
 
 [ASP]
 
@@ -119,7 +119,7 @@ Basic attributes such as height and width property are used to set height and wi
 
 &lt;/ej:CircularGauge&gt;
 
-
+{% endhighlight %}
 
 
 
@@ -137,7 +137,7 @@ Basic attributes such as height and width property are used to set height and wi
 
 Execute the above code to render the following output.
 
-{ ![](Sub-Gauges_images/Sub-Gauges_img1.png) | markdownify }
+ ![](Sub-Gauges_images/Sub-Gauges_img1.png)
 {:.image }
 
 
@@ -147,7 +147,7 @@ Execute the above code to render the following output.
 
 You can set multiple sub gauges in a single Circular Gauge by adding an array of sub gauge objects. Refer the following code example for multiple sub gauges functionality.
 
-
+{% highlight html %}
 
 [ASP]
 
@@ -195,11 +195,11 @@ You can set multiple sub gauges in a single Circular Gauge by adding an array of
 
 &lt;/ej:CircularGauge&gt;
 
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
-{ ![](Sub-Gauges_images/Sub-Gauges_img2.png) | markdownify }
+ ![](Sub-Gauges_images/Sub-Gauges_img2.png)
 {:.image }
 
 

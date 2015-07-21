@@ -7,7 +7,7 @@ control: Menu
 documentation: ug
 ---
 
-## Context Menu
+# Context Menu
 
 A context menu is a type of menu in a graphical user interface (GUI) that appears when you perform right click operation. In this menu control you can use a context menu by specifying the type of menu as ContextMenu. A context also provides the supports for nested level of menu items.
 
@@ -135,11 +135,11 @@ Add the following code example in your style section
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Context-Menu_images/Context-Menu_img1.png) | markdownify }
+![](Context-Menu_images/Context-Menu_img1.png) 
 {:.image }
 
 
-### HideContextMenu
+## HideContextMenu
 
 Hides the context menu control. 
 
@@ -287,7 +287,7 @@ Add the following script code in the sample in order to hide the context menu.
 
 
 
-### ShowContextMenu
+## ShowContextMenu
 
 Shows the context menu control.
 
@@ -431,7 +431,7 @@ Add the following script code in the sample in order to show the context menu.
 
 {% endhighlight %}
 
-### Center Menu
+## Center Menu
 
 You can align the Menu items to center by setting “EnableCenterAlign” property as true. “EnableCenterAlign” property accepts Boolean value. By default, its value is false. When you set to true, the root menu items are aligned in center.
 
@@ -559,11 +559,11 @@ Add the following code example in ASPX section.
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Context-Menu_images/Context-Menu_img2.png) | markdownify }
+![](Context-Menu_images/Context-Menu_img2.png) 
 {:.image }
 
 
-### RTL Support
+## RTL Support
 
 The EnableRTL option allows the Menu control to display it in the right to left direction. By default, this option is set to “false” in the Menu control.
 
@@ -695,11 +695,11 @@ The following screenshot displays the output for the above code example.
 
 
 
-{ ![](Context-Menu_images/Context-Menu_img3.png) | markdownify }
+![](Context-Menu_images/Context-Menu_img3.png) 
 {:.image }
 
 
-### Separators
+## Separators
 
 Menus may also contain separators that are horizontal bars between menu items. You cannot select a separator. Separators are somewhat similar to [borders](http://docs.oracle.com/javase/tutorial/uiswing/components/border.html), except that they are genuine components and, as such, are drawn inside a control, rather than around the edges of the Menu control. “EnableSeparator” is the property that is used to display the separators in the Menu control. It accepts the Boolean type value. Its default value is true. 
 
@@ -829,7 +829,7 @@ Add the following code example in the ASPX page.
 
 The following screenshot displays the output for the above code example.
 
-{ ![](Context-Menu_images/Context-Menu_img4.png) | markdownify }
+![](Context-Menu_images/Context-Menu_img4.png) 
 {:.image }
 
 
@@ -957,7 +957,7 @@ Add the following code example in the ASPX page to display the Menu control with
 
 The following screenshot displays the output for the above code example. 
 
-{ ![](Context-Menu_images/Context-Menu_img5.png) | markdownify }
+![](Context-Menu_images/Context-Menu_img5.png)
 {:.image }
 
 

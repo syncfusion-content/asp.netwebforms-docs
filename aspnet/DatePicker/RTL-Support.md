@@ -7,7 +7,7 @@ control: DatePicker
 documentation: ug
 ---
 
-## RTL Support
+# RTL Support
 
 Right-to-left starts from the right of the page and continues to the left. By default, this option is set to false in the DatePicker control. 
 
@@ -31,7 +31,7 @@ In the ASPX page, include the following DatePicker control code example to enabl
 
 The following screenshot displays the output for the above code.
 
-{ ![](RTL-Support_images/RTL-Support_img1.png) | markdownify }
+![](RTL-Support_images/RTL-Support_img1.png) 
 {:.image }
 
 

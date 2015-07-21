@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-## Diagram Elements
+# Diagram Elements
 
 * Node: Visual element that represents an object.
 * Connector: Visual element that is used to make a connection between nodes or groups.
@@ -19,7 +19,7 @@ documentation: ug
 
 
 
-{ ![C:/Users/labuser/Desktop/a.png](Diagram-Elements_images/Diagram-Elements_img1.png) | markdownify }
+![C:/Users/labuser/Desktop/a.png](Diagram-Elements_images/Diagram-Elements_img1.png) 
 {:.image }
 
 
