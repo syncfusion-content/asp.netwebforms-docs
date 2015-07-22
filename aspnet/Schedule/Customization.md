@@ -7,9 +7,9 @@ control: Schedule
 documentation: ug
 ---
 
-## Customization
+# Customization
 
-### Customized Appointment window 
+## Customized Appointment window 
 
 * You can display your own customized appointment window instead of the default appointment window while double-clicking on the cells. To achieve this, you can use the event appointmentWindowOpen. 
 * The customized window is designed with the dialog control separately.
@@ -17,144 +17,144 @@ documentation: ug
 This example explains you on how to add the customized appointment window using the following code example.
 
 
-
-[ASP]
-
+{% highlight html %}
 
 
-&lt;asp:Content ID="Content1" ContentPlaceHolderID="SampleHeading" runat="server"&gt;
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SampleHeading" runat="server">
 
 <span class="sampleName">Schedule / Custom Window</span>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
 
-&lt;div&gt;
+<div>
 
-&lt;ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014" AppointmentWindowOpen="onAppointmentWindowOpen"&gt;
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014" AppointmentWindowOpen="onAppointmentWindowOpen">
 
-&lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/&gt;
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
 
-&lt;/ej:Schedule&gt;
+</ej:Schedule>
 
-&lt;/div&gt;
+</div>
 
 
 
-&lt;div id="customWindow" style="display: none"&gt;
+<div id="customWindow" style="display: none">
 
-&lt;div&gt;
+<div>
 
-&lt;div id="custom"&gt;
+<div id="custom">
 
-&lt;table width="100%" cellpadding="5"&gt;
+<table width="100%" cellpadding="5">
 
-&lt;tbody&gt;
+<tbody>
 
-&lt;tr style="display: none"&gt;
+<tr style="display: none">
 
 <td>Id:
 
-&lt;/td&gt;
+</td>
 
-&lt;td colspan="2"&gt;
+<td colspan="2">
 
-&lt;input id="customId" type="text" name="Id" /&gt;
+<input id="customId" type="text" name="Id" />
 
-&lt;/td&gt;
+</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;tr&gt;
+<tr>
 
 <td>Subject:
 
-&lt;/td&gt;
+</td>
 
-&lt;td colspan="2"&gt;
+<td colspan="2">
 
-&lt;input id="subject" type="text" value="" name="Subject" onfocus="temp()" style="width: 100%" /&gt;
+<input id="subject" type="text" value="" name="Subject" onfocus="temp()" style="width: 100%" />
 
-&lt;/td&gt;
+</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;tr&gt;
+<tr>
 
 <td>Description:
 
-&lt;/td&gt;
+</td>
 
-&lt;td colspan="2"&gt;
+<td colspan="2">
 
-&lt;textarea id="customdescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"&gt;&lt;/textarea&gt;
+<textarea id="customdescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
 
-&lt;/td&gt;
+</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;tr&gt;
+<tr>
 
 <td>StartTime:
 
-&lt;/td&gt;
+</td>
 
-&lt;td&gt;
+<td>
 
-&lt;ej:DateTimePicker runat="server" ID="StartTime" Width="150"&gt;&lt;/ej:DateTimePicker&gt;
+<ej:DateTimePicker runat="server" ID="StartTime" Width="150"></ej:DateTimePicker>
 
-&lt;/td&gt;
+</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;tr&gt;
+<tr>
 
 <td>EndTime:
 
-&lt;/td&gt;
+</td>
 
-&lt;td&gt;
+<td>
 
-&lt;ej:DateTimePicker runat="server" ID="EndTime" Width="150"&gt;&lt;/ej:DateTimePicker&gt;
+<ej:DateTimePicker runat="server" ID="EndTime" Width="150"></ej:DateTimePicker>
 
-&lt;/td&gt;
+</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;tr&gt;
+<tr>
 
-&lt;td colspan="3"&gt;
+<td colspan="3">
 
-<div class="customcheck">AllDay:&lt;/div&gt;
+<div class="customcheck">AllDay:</div>
 
-&lt;div class="customcheck"&gt;
+<div class="customcheck">
 
-&lt;input id="allday" type="checkbox" name="AllDay" /&gt;
+<input id="allday" type="checkbox" name="AllDay" />
 
-&lt;/div&gt;
+</div>
 
-<div class="customcheck">Recurrence:&lt;/div&gt;
+<div class="customcheck">Recurrence:</div>
 
-&lt;div&gt;
+<div>
 
-&lt;input id="recurrence" type="checkbox" name="Recurrence" onchange="recurCheck()" /&gt;
+<input id="recurrence" type="checkbox" name="Recurrence" onchange="recurCheck()" />
 
-&lt;/div&gt;
+</div>
 
-&lt;/td&gt;
+</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;tr class="recurrence" style="display: none"&gt;
+<tr class="recurrence" style="display: none">
 
 <td>Type:
 
-&lt;/td&gt;
+</td>
 
-&lt;td&gt;
+<td>
 
-&lt;select id="rType" name="freq"&gt;
+<select id="rType" name="freq">
 
 <option value="daily">Daily</option>
 
@@ -164,43 +164,43 @@ This example explains you on how to add the customized appointment window using 
 
 <option value="yearly">Yearly</option>
 
-&lt;/select&gt;
+</select>
 
-&lt;/td&gt;
+</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;/tbody&gt;
+</tbody>
 
-&lt;/table&gt;
+</table>
 
-&lt;/div&gt;
+</div>
 
-&lt;div&gt;
+<div>
 
-&lt;button type="submit" onclick="save()"&gt;
+<button type="submit" onclick="save()">
 
 Submit</button>
 
-&lt;button type="submit" onclick="cancel()"&gt;
+<button type="submit" onclick="cancel()">
 
 Cancel</button>
 
-&lt;/div&gt;
+</div>
 
-&lt;/div&gt;
+</div>
 
-&lt;/div&gt;
+</div>
 
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
 
-SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
+SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection"&gt;
+<asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
 $(function () {
 
@@ -408,13 +408,13 @@ $("#customWindow").ejDialog("close");
 
 }
 
-&lt;/script&gt;
+</script>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content runat="server" ID="Style" ContentPlaceHolderID="StyleSection"&gt;
+<asp:Content runat="server" ID="Style" ContentPlaceHolderID="StyleSection">
 
-&lt;style type="text/css"&gt;
+<style type="text/css">
 
 .customcheck {
 
@@ -432,25 +432,24 @@ background-color: #FF8A8A;
 
 }
 
-&lt;/style&gt;
+</style>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-
+{% endhighlight %}
 
 Execute the above code and then double-click on the required Schedule cells. The customized appointment window is opened instead of the default appointment window as follows.
 
 
 
-{ ![](Customization_images/Customization_img1.png) | markdownify }
-{:.image }
+![](Customization_images/Customization_img1.png)
 
 
 * Add the required details on the above displayed appointment window and then click Submit button to save the appointment.
 
 
 
-### Editing Customized Appointment window
+## Editing Customized Appointment window
 
 * To edit the appointments in customized appointment window, you can use appointmentWindowOpen event to avoid displaying the default appointment window when you double-click the appointments. 
 * The customized window is designed with the dialog control separately and it is display when you double-click appointments. 
@@ -458,142 +457,142 @@ Execute the above code and then double-click on the required Schedule cells. The
 The following code example is added to the previous code example of appointment creation for Customized Appointment window.
 
 
-
+{% highlight html %}
 [ASP]
 
-&lt;asp:Content ID="Content1" ContentPlaceHolderID="SampleHeading" runat="server"&gt;
+<asp:Content ID="Content1" ContentPlaceHolderID="SampleHeading" runat="server">
 
 <span class="sampleName">Schedule / Custom Window</span>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
 
-&lt;div&gt;
+<div>
 
-&lt;ej:Schedule ClientIDMode="Static"  runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014" AppointmentWindowOpen="onAppointmentWindowOpen"&gt;
+<ej:Schedule ClientIDMode="Static"  runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014" AppointmentWindowOpen="onAppointmentWindowOpen">
 
-&lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/&gt;
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
 
-&lt;/ej:Schedule&gt;
+</ej:Schedule>
 
-&lt;/div&gt;
+</div>
 
 
 
-&lt;div id="customWindow" style="display: none"&gt;
+<div id="customWindow" style="display: none">
 
-&lt;div&gt;
+<div>
 
-&lt;div id="custom"&gt;
+<div id="custom">
 
-&lt;table width="100%" cellpadding="5"&gt;
+<table width="100%" cellpadding="5">
 
-&lt;tbody&gt;
+<tbody>
 
-&lt;tr style="display: none"&gt;
+<tr style="display: none">
 
 <td>Id:
 
-&lt;/td&gt;
+</td>
 
-&lt;td colspan="2"&gt;
+<td colspan="2">
 
-&lt;input id="customId" type="text" name="Id" /&gt;
+<input id="customId" type="text" name="Id" />
 
-&lt;/td&gt;
+</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;tr&gt;
+<tr>
 
 <td>Subject:
 
-&lt;/td&gt;
+</td>
 
-&lt;td colspan="2"&gt;
+<td colspan="2">
 
-&lt;input id="subject" type="text" value="" name="Subject" onfocus="temp()" style="width: 100%" /&gt;
+<input id="subject" type="text" value="" name="Subject" onfocus="temp()" style="width: 100%" />
 
-&lt;/td&gt;
+</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;tr&gt;
+<tr>
 
 <td>Description:
 
-&lt;/td&gt;
+</td>
 
-&lt;td colspan="2"&gt;
+<td colspan="2">
 
-&lt;textarea id="customdescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"&gt;&lt;/textarea&gt;
+<textarea id="customdescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
 
-&lt;/td&gt;
+</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;tr&gt;
+<tr>
 
 <td>StartTime:
 
-&lt;/td&gt;
+</td>
 
-&lt;td&gt;
+<td>
 
-&lt;ej:DateTimePicker runat="server" ID="StartTime" Width="150"&gt;&lt;/ej:DateTimePicker&gt;
+<ej:DateTimePicker runat="server" ID="StartTime" Width="150"></ej:DateTimePicker>
 
-&lt;/td&gt;
+</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;tr&gt;
+<tr>
 
 <td>EndTime:
 
-&lt;/td&gt;
+</td>
 
-&lt;td&gt;
+<td>
 
-&lt;ej:DateTimePicker runat="server" ID="EndTime" Width="150"&gt;&lt;/ej:DateTimePicker&gt;
+<ej:DateTimePicker runat="server" ID="EndTime" Width="150"></ej:DateTimePicker>
 
-&lt;/td&gt;
+</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;tr&gt;
+<tr>
 
-&lt;td colspan="3"&gt;
+<td colspan="3">
 
-<div class="customcheck">AllDay:&lt;/div&gt;
+<div class="customcheck">AllDay:</div>
 
-&lt;div class="customcheck"&gt;
+<div class="customcheck">
 
-&lt;input id="allday" type="checkbox" name="AllDay" /&gt;
+<input id="allday" type="checkbox" name="AllDay" />
 
-&lt;/div&gt;
+</div>
 
-<div class="customcheck">Recurrence:&lt;/div&gt;
+<div class="customcheck">Recurrence:</div>
 
-&lt;div&gt;
+<div>
 
-&lt;input id="recurrence" type="checkbox" name="Recurrence" onchange="recurCheck()" /&gt;
+<input id="recurrence" type="checkbox" name="Recurrence" onchange="recurCheck()" />
 
-&lt;/div&gt;
+</div>
 
-&lt;/td&gt;
+</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;tr class="recurrence" style="display: none"&gt;
+<tr class="recurrence" style="display: none">
 
 <td>Type:
 
-&lt;/td&gt;
+</td>
 
-&lt;td&gt;
+<td>
 
-&lt;select id="rType" name="freq"&gt;
+<select id="rType" name="freq">
 
 <option value="daily">Daily</option>
 
@@ -603,43 +602,43 @@ The following code example is added to the previous code example of appointment 
 
 <option value="yearly">Yearly</option>
 
-&lt;/select&gt;
+</select>
 
-&lt;/td&gt;
+</td>
 
-&lt;/tr&gt;
+</tr>
 
-&lt;/tbody&gt;
+</tbody>
 
-&lt;/table&gt;
+</table>
 
-&lt;/div&gt;
+</div>
 
-&lt;div&gt;
+<div>
 
-&lt;button type="submit" onclick="save()"&gt;
+<button type="submit" onclick="save()">
 
 Submit</button>
 
-&lt;button type="submit" onclick="cancel()"&gt;
+<button type="submit" onclick="cancel()">
 
 Cancel</button>
 
-&lt;/div&gt;
+</div>
 
-&lt;/div&gt;
+</div>
 
-&lt;/div&gt;
+</div>
 
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
 
-SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
+SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection"&gt;
+<asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
 $(function () {
 
@@ -847,13 +846,13 @@ $("#customWindow").ejDialog("close");
 
 }
 
-&lt;/script&gt;
+</script>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content runat="server" ID="Style" ContentPlaceHolderID="StyleSection"&gt;
+<asp:Content runat="server" ID="Style" ContentPlaceHolderID="StyleSection">
 
-&lt;style type="text/css"&gt;
+<style type="text/css">
 
 .customcheck {
 
@@ -871,29 +870,28 @@ background-color: #FF8A8A;
 
 }
 
-&lt;/style&gt;
+</style>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 
-
+{% endhighlight %}
 
 
 * Only the bolded texts in the above code examples are added to open the custom appointment window when you double-click the appointments. Execute the above code and then double-click on the appointment, the custom appointment window is displayed as follows.
 
 
 
-{ ![](Customization_images/Customization_img2.png) | markdownify }
-{:.image }
+![](Customization_images/Customization_img2.png)
 
 
-_Figure_ _68__: schedule with appointment using customized appointment window._
+_Figure_ _68_: schedule with appointment using customized appointment window._
 
 * You can change the details in the above window and then click Submit button to save the updated values.
 
 
 
-### Hour Customization
+## Hour Customization
 
 Schedule Start/End Hour
 
@@ -908,12 +906,13 @@ endHour
 * Specify the end hour to set for the Schedule control.
 
 
-
+{% highlight html %}
 [ASP]
 
 
 
 // setting the schedule start and end hour
+
 
 <ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData"
 
@@ -923,40 +922,39 @@ StartHour="4"
 
 EndHour="24">
 
-&lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/&gt;
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
 
-&lt;/ej:Schedule&gt;
-
-
-
-&lt;/div&gt;
-
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
-
-SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
+</ej:Schedule>
 
 
+
+</div>
+
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
+
+SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+{% endhighlight %}
 
 Execute the above code to render the output as follows with the Schedule control beginning with 08.00am and ending with 06.00pm.
 
 
 
-{ ![](Customization_images/Customization_img3.png) | markdownify }
-{:.image }
+![](Customization_images/Customization_img3.png)
 
 
-_Figure_ _107__:  schedule with hour customization._
+_Figure_ _107_:  schedule with hour customization._
 
-Business hours
+##Business hours
 
 * There is an option highlightBusinessHours in the Schedule control to enable/disable the action of highlighting the business hours. 
 * It is controlled with two additional options businessStartHour and businessEndHour to specify the time range to be defined as the business hours. By default, the business hours are highlighted in the Schedule control.
 
-businessStartHour
+##businessStartHour
 
 * It allows you to specify the start time to indicate the business start hour.
 
-businessEndHour
+##businessEndHour
 
 * It allows you to specify the end time to indicate the business end hour.
 
@@ -967,8 +965,8 @@ businessEndHour
 * To enable the highlightBusinessHours and to customize the business start and end hours, refer the following code example.
 
 
+{% highlight html %}
 
-[ASP]
 
 
 
@@ -984,35 +982,33 @@ ShowQuickWindow="True"
 
 Width="100%">
 
-&lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/&gt;
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
 
-&lt;/ej:Schedule&gt;
-
-
-
-&lt;/div&gt;
-
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
-
-SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
+</ej:Schedule>
 
 
 
+</div>
+
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
+
+SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+
+{% endhighlight %}
 Execute the above code to render the following output that explains the highlighting of business hours in the Schedule control from 10.00am to 3.00pm.
 
-{ ![](Customization_images/Customization_img4.png) | markdownify }
-{:.image }
+![](Customization_images/Customization_img4.png)
 
-
-   _Figure_ _108__:  schedule with Business hours_
+   _Figure_ _108_:  schedule with Business hours_
 
 
 
 
 
-### Date/Time Customization
+## Date/Time Customization
 
-Current date
+###Current date
 
 * By default, the Schedule control displays the current system date. 
 * You can change the current date of the Schedule control by setting the currentDate option with the required date value. 
@@ -1020,8 +1016,9 @@ Current date
 The following code example explains how to change the current date of the Schedule control.
 
 
+{% highlight html %}
 
-[ASP]
+
 
 <ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData"
 
@@ -1031,29 +1028,28 @@ CurrentDate="5/4/2014">
 
 
 
-&lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/&gt;
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
 
-&lt;/ej:Schedule&gt;
-
-
-
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
-
-SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
+</ej:Schedule>
 
 
+
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
+
+SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+{% endhighlight %}
 
 Execute the above code and the following screenshot displays the Schedule control with the current date set to (May 05, 2014).
 
 
 
-{ ![](Customization_images/Customization_img5.png) | markdownify }
-{:.image }
+![](Customization_images/Customization_img5.png)
 
 
-  _Figure_ _118__:  schedule with current time_
+  _Figure_ _118_:  schedule with current time_
 
-Date Format
+###Date Format
 
 * The Schedule control uses different types of date formats to denote the dates used in it. You can specify your required format for the dates by using the dateFormat property. 
 * When the date format is explicitly defined with particular value such as “dd-MM-yyyy”, then the datepicker control that is used within the Schedule control make use of this specific format.
@@ -1061,42 +1057,41 @@ Date Format
 The following code example explains how to change the dateFormat of the Schedule control.  
 
 
-
-[ASP]
-
-
-
-&lt;%-- Setting the DateFormat to the schedule -- %&gt;
+{% highlight html %}
 
 
 
 
-
-&lt;ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014" DateFormat="dd-MM-yyyy"&gt;
-
-&lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/&gt;
-
-&lt;/ej:Schedule&gt;
+<%-- Setting the DateFormat to the schedule -- %>
 
 
 
-&lt;/div&gt;
-
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
-
-SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
 
 
+<ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014" DateFormat="dd-MM-yyyy">
+
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
+
+</ej:Schedule>
+
+
+
+</div>
+
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
+
+SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+{% endhighlight %}
 
 The following screenshot displays the Schedule control with the dateFormat set as “dd-MM-yyyy”.
 
 
 
-{ ![C:/Users/karthigeyan/Desktop/a.png](Customization_images/Customization_img6.png) | markdownify }
-{:.image }
+![C:/Users/karthigeyan/Desktop/a.png](Customization_images/Customization_img6.png)
 
 
-Minimum and Maximum Dates
+###Minimum and Maximum Dates
 
 * This feature allows you to specify the minimum and maximum dates for the Schedule control. It can be defined with the minDate and maxDate properties. 
 * Specifying minimum and maximum dates is especially useful when scheduling appointments for a project with fixed start and end dates.
@@ -1114,35 +1109,34 @@ The following code example explains how to set the minimum and maximum date of t
 
 
 
+{% highlight html %}
 
 
-[ASP]
 
 
 
-&lt;%-- Sets the minimum and maximum date to the schedule -- %&gt;
+<%-- Sets the minimum and maximum date to the schedule -- %>
 
-&lt;ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/12/2014" MinDate="5/5/2014" MaxDate="5/25/2014" &gt;
+<ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/12/2014" MinDate="5/5/2014" MaxDate="5/25/2014" >
 
-&lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/&gt;
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
 
-&lt;/ej:Schedule&gt;
+</ej:Schedule>
 
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
 
-SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
+SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 
-
+{% endhighlight %}
 
 The following screenshot displays the Schedule control with MinDate and MaxDate set to 11/25/2014 and 12/4/2014, respectively.
 
-{ ![](Customization_images/Customization_img7.png) | markdownify }
-{:.image }
+![](Customization_images/Customization_img7.png)
 
 
 
 
-Timemode
+###Timemode
 
 * You can set two types of time mode, either 12 or 24 hour format for the Schedule control.  It accepts the following enum values,
 1. ej.Schedule.TimeMode.Hour12
@@ -1152,10 +1146,11 @@ Timemode
 
 
 
+{% highlight html %}
 
-[ASP]
 
 // setting the 24 hour mode for the schedule
+
 
 <ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px"
 
@@ -1163,29 +1158,28 @@ TimeMode="Hour24">
 
 
 
-&lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/&gt;
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
 
-&lt;/ej:Schedule&gt;
-
-
-
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
-
-SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
+</ej:Schedule>
 
 
+
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
+
+SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+{% endhighlight %}
 
 The following screenshot displays the Schedule control when time mode is set to 24 hour mode.
 
 
 
-{ ![](Customization_images/Customization_img8.png) | markdownify }
-{:.image }
+![](Customization_images/Customization_img8.png)
 
 
-   _Figure_ _114__:  schedule time customization._
+   _Figure_ _114_:  schedule time customization._
 
-TimeZone
+###TimeZone
 
 * Appointments within the Schedule control is displayed based on the provided timezone. 
 * If no specific timezones are set for the Schedule control, then it takes the local system timezone into consideration.
@@ -1201,43 +1195,43 @@ You can set the timezone to the Schedule control as follows.
 
 
 
+{% highlight html %}
 
 
-[ASP]
 
 
 
-&lt;asp:Content ID="Content1" ContentPlaceHolderID="SampleHeading" runat="server"&gt;
+<asp:Content ID="Content1" ContentPlaceHolderID="SampleHeading" runat="server">
 
 <span class="sampleName">Schedule / Template</span>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 
 
-&lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
 
-&lt;div&gt;
+<div>
 
-&lt;ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" AppointmentTemplateId="#MyTemplate" TimeZone="UTC +3:00"  CurrentDate="5/2/2014"&gt;
+<ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" AppointmentTemplateId="#MyTemplate" TimeZone="UTC +3:00"  CurrentDate="5/2/2014">
 
-&lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/&gt;
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
 
-&lt;/ej:Schedule&gt;
+</ej:Schedule>
 
 
 
-&lt;/div&gt;
+</div>
 
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
 
-SelectCommand="SELECT * FROM [Template]">&lt;/asp:SqlDataSource&gt;
+SelectCommand="SELECT * FROM [Template]"></asp:SqlDataSource>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content ID="styleContent" runat="server" ContentPlaceHolderID="StyleSection"&gt;
+<asp:Content ID="styleContent" runat="server" ContentPlaceHolderID="StyleSection">
 
-&lt;style type="text/css"&gt;
+<style type="text/css">
 
 .e-monthappointment
 
@@ -1257,33 +1251,33 @@ width:30px;
 
 }
 
-&lt;/style&gt;
+</style>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection"&gt;
+<asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
 
-&lt;script id="MyTemplate" type="text/x-jsrender"&gt;
+<script id="MyTemplate" type="text/x-jsrender">
 
-&lt;div style="height: 100%"&gt;
+<div style="height: 100%">
 
-&lt;div style="float: left; width: 24px;"&gt;
+<div style="float: left; width: 24px;">
 
 {{:~format(StartTime)}}
 
-&lt;/div&gt;
+</div>
 
-&lt;div&gt;
+<div>
 
-&lt;div&gt;{{:"UTC +3:00"}}&lt;/div&gt;
+<div>{{:"UTC +3:00"}}</div>
 
-&lt;/div&gt;
+</div>
 
-&lt;/div&gt;
+</div>
 
-&lt;/script&gt;
+</script>
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
 function _getImages(date) {
 
@@ -1291,43 +1285,43 @@ switch (new Date(date).getDay()) {
 
 case 0:
 
-return "&lt;img src='../Content/images/Schedule/cake.png' /&gt;"
+return "<img src='../Content/images/Schedule/cake.png' />"
 
 break;
 
 case 1:
 
-return "&lt;img src='../Content/images/Schedule/basketball.png'/&gt;"
+return "<img src='../Content/images/Schedule/basketball.png'/>"
 
 break;
 
 case 2:
 
-return "&lt;img src='../Content/images/Schedule/rugby.png'/&gt;"
+return "<img src='../Content/images/Schedule/rugby.png'/>"
 
 break;
 
 case 3:
 
-return "&lt;img src='../Content/images/Schedule/guitar.png'/&gt;"
+return "<img src='../Content/images/Schedule/guitar.png'/>"
 
 break;
 
 case 4:
 
-return "&lt;img src='../Content/images/Schedule/music.png'/&gt;"
+return "<img src='../Content/images/Schedule/music.png'/>"
 
 break;
 
 case 5:
 
-return "&lt;img src='../Content/images/Schedule/doctor.png'/&gt;"
+return "<img src='../Content/images/Schedule/doctor.png'/>"
 
 break;
 
 case 6:
 
-return "&lt;img src='../Content/images/Schedule/beach.png'/&gt;"
+return "<img src='../Content/images/Schedule/beach.png'/>"
 
 break;
 
@@ -1337,11 +1331,11 @@ break;
 
 $.views.helpers({ format: _getImages });
 
-&lt;/script&gt;
+</script>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-
+{% endhighlight %}
 
 * Add new appointments to the Schedule control. The appointments are rendered based on the time difference that tends to the timezone set to it.
 
@@ -1363,11 +1357,10 @@ $.views.helpers({ format: _getImages });
 
 
 
-{ ![](Customization_images/Customization_img9.png) | markdownify }
-{:.image }
+![](Customization_images/Customization_img9.png)
 
 
-  _Figure_ _115__:  schedule with timezone._
+  _Figure_ _115_:  schedule with timezone._
 
 * In the above output, an appointment is initially created in the time-range 7.00am - 8.30am, it is saved in the timeslot between 9.00am – 10.30 am due to the time zone set to “UTC +2:00” in the Schedule control.
 
@@ -1375,7 +1368,7 @@ $.views.helpers({ format: _getImages });
 
 
 
-Current Time indicator
+##Current Time indicator
 
 * The current time indicator denotes the current system time and it is marked on the Schedule control with a horizontal line drawn across the current date. 
 * The showCurrentTimeIndicator property allows you to show/hide the time indicator on the Schedule control.
@@ -1384,17 +1377,17 @@ The following screenshot displays the Schedule control with the current time ind
 
 
 
-{ ![](Customization_images/Customization_img10.png) | markdownify }
-{:.image }
+![](Customization_images/Customization_img10.png)
 
 
- _Figure_ _116__:  schedule time customization_
+ _Figure_ _116_:  schedule time customization_
 
 The following code example explains how to disable the current time indicator from the Schedule control. 
 
 
+{% highlight html %}
 
-[ASP]
+
 
 <ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData"
 
@@ -1404,27 +1397,26 @@ ShowCurrentTimeIndicator="false">
 
 
 
-&lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/&gt;
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
 
-&lt;/ej:Schedule&gt;
-
-
-
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
-
-SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
+</ej:Schedule>
 
 
+
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
+
+SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+{% endhighlight %}
 
 * After setting showCurrentTimeIndicator property to ‘false’, the Schedule control is displayed without the current time indicator as follows.
 
 
 
-{ ![](Customization_images/Customization_img11.png) | markdownify }
-{:.image }
+![](Customization_images/Customization_img11.png)
 
 
-_Figure_ _117__:  schedule with show current time indicator._
+_Figure_ _117_:  schedule with show current time indicator._
 
 
 

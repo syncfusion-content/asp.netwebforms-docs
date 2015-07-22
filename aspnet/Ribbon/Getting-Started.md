@@ -15,30 +15,27 @@ This section explains briefly how to create a _Ribbon_ in your application with
 
 You can create a _Ribbon_ with highly customizable look and feel. The _Ribbon_control displays the controls in multiple tabs. This section explains the ribbon tabs, adding controls to the groups, expand/collapse ribbon option, and the control separator.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
 1. Create a _Syncfusion ASP.NET Web_ form application.
 2. Drag and drop the _Ribbon_ control in the Index.aspx page from the toolbox.
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img2.png)
 
 
-### Application Tabs
+## Application Tabs
 
 _Application menu_ support has been provided in the ribbon control _ApplicationTab_. Use _ApplicationTab_ tag to define the application tab with menu. In _ApplicationTab_ attributes, _Type_ property to define the ApplicationMenu and the value is _ApplicationMenu_,_ItemID_ property to specify ID of the _UL_ list for the application menu and the _MenuSettings_ property to specify all the members and events of the menu.
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
 
 {% highlight html %}
 
-[ASPX]
+
 
 
 
@@ -92,8 +89,7 @@ _Application menu_ support has been provided in the ribbon control _ApplicationT
 
 The following screenshot illustrates Ribbon control with Application Tab.
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
@@ -102,19 +98,18 @@ The following screenshot illustrates Ribbon control with Application Tab.
 
 
 
-### Contextual Tabs
+## Contextual Tabs
 
 You can add _contextual tabs_ in the _Ribbon_ control. Inside _ContextualTabs_ tag use _ContextualTab_ tag to add a single or set of _contextual tabs_. In the _ContextualTab_ tag, use _BackgroundColor_ property to apply background color to the contextual tabs. Use _BorderColor_ property to apply border color to the contextualTab.
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
 
 
 
 
 {% highlight html %}
 
-[ASPX]
+
 
 
 
@@ -216,23 +211,21 @@ You can add _contextual tabs_ in the _Ribbon_ control. Inside _ContextualTabs_ t
 
 The following screenshot illustrates Ribbon control with Contextual tabs.
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img6.png)
 
 
-### Tabs
+## Tabs
 
 _Tabs_ can be created by using _RibbonTab_ property. In _RibbonTab_, define the _TabGroupCollection_ property that allows you to create one or more _TabGroups_ in the _RibbonTab_.
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img7.png)
 
 
 
 
 {% highlight html %}
 
-[ASPX]
+
 
 
 
@@ -410,7 +403,7 @@ _Tabs_ can be created by using _RibbonTab_ property. In _RibbonTab_, define the�
 
 {% highlight c# %}
 
-[CS]
+
 
 
 
@@ -434,11 +427,10 @@ protected void Page_Load(object sender, EventArgs e)
 
 The following screenshot illustrates _Ribbon_ with Tab Group Collections.
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img8.png)
 
 
-### Create Ribbon Control 
+## Create Ribbon Control 
 
 1. Create a _Master_ file and add the following references to the required libraries. 
 
@@ -492,7 +484,7 @@ The following screenshot illustrates _Ribbon_ with Tab Group Collections.
 
 {% highlight html %}
 
-[ASPX]
+
 
 
 
@@ -518,7 +510,7 @@ The following screenshot illustrates _Ribbon_ with Tab Group Collections.
 
 {% highlight html %}
 
-[ASPX]
+
 
 
 
@@ -620,13 +612,12 @@ The following screenshot illustrates _Ribbon_ with Tab Group Collections.
 
 4. The following screenshot illustrates the _Ribbon_ control.
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img9.png)
 
 
 
 
-### Add Controls
+## Add Controls
 
 Add controls to each _Ribbon_ tab by using the tag _ContentCollection_. You can also add custom controls by using the property _ContentID_. The property _AlignType_ is used to align the groups in row or column order._Button, Split button, DropdownLlist_ and _Toggle button_, _Gallery_, and _Custom_ controls support have provided in the _Ribbon_ control.The default _AlignType_ is _rows_.
 
@@ -634,7 +625,7 @@ Add controls to each _Ribbon_ tab by using the tag _ContentCollection_. You can 
 
 {% highlight html %}
 
-[ASPX]
+
 
 
 
@@ -824,7 +815,7 @@ Add controls to each _Ribbon_ tab by using the tag _ContentCollection_. You can 
 
 {% highlight c# %}
 
-[CS]
+
 
 
 
@@ -848,31 +839,28 @@ protected void Page_Load(object sender, EventArgs e)
 
 The following screenshot illustrates Ribbon with controls,
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img10.png)
 
 
 
 
-### Expand/Collapse
+## Expand/Collapse
 
 The _expand/collapse_ support has been provided to the _Ribbon_.
 
 The following screenshot illustrates _Ribbon_ in the expanded state.
 
-{ ![](Getting-Started_images/Getting-Started_img11.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img11.png)
 
 
 
 
 The following screenshot illustrates _Ribbon_ in the collapsed state,
 
-{ ![](Getting-Started_images/Getting-Started_img12.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img12.png)
 
 
-### Separator for Controls
+## Separator for Controls
 
 The control _Separator_ support is provided in the _Ribbon_ control. Set _EnableSeparator_ value to _true_ to enable the separator after a control. _Control Separator_ supports only row type group.
 
@@ -880,7 +868,7 @@ The control _Separator_ support is provided in the _Ribbon_ control. Set _Enable
 
 {% highlight html %}
 
-[ASPX]
+
 
 
 
@@ -1076,7 +1064,7 @@ The control _Separator_ support is provided in the _Ribbon_ control. Set _Enable
 
 {% highlight c# %}
 
-[CS]
+
 
 
 
@@ -1100,8 +1088,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 The following screenshot illustrates the control Separator after the Italic Button control.
 
-{ ![](Getting-Started_images/Getting-Started_img13.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img13.png)
 
 
 

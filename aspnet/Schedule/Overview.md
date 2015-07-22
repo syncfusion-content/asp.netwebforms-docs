@@ -15,13 +15,13 @@ documentation: ug
 
 
 
-{ ![](Overview_images/Overview_img1.png) | markdownify }
+{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 
-Key Features
+##Key Features
 
-Below are the key features of Schedule control:
+##Below are the key features of Schedule control:
 
 * Timemode – Allows you to set either 12/24 hour format for the Schedule control.
 * Timezone - Allows the Schedule control to make the appointments to be displayed in an appropriate time that belongs to the respective timezone set to it.

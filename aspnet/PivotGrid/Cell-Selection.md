@@ -7,21 +7,21 @@ control: PivotGrid
 documentation: ug
 ---
 
-## Cell Selection
+# Cell Selection
 
 The PivotGrid control provides support to select specific ranges of value cells and display them in a format based on your requirement. The selection can be done through simple mouse down and drag operation. This functionality is not available by default. To enable this, you need to set the “enableCellSelection” property to “true”.
 
 The following code example explains on how to enable cell selection in the PivotGrid control.
 
-&lt;asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
+<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection">
 
-    &lt;ej:PivotGrid ID="PivotGrid1" IsResponsive="true" runat="server" url="../wcf/OLAPService.svc" ClientIDMode="Static" EnableCellSelection="true"&gt;
+    <ej:PivotGrid ID="PivotGrid1" IsResponsive="true" runat="server" url="../wcf/OLAPService.svc" ClientIDMode="Static" EnableCellSelection="true">
 
-        &lt;clientsideevents cellselection="valueCellClick" /&gt;
+        <clientsideevents cellselection="valueCellClick" />
 
-    &lt;/ej:PivotGrid&gt;
+    </ej:PivotGrid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 
 
@@ -37,12 +37,12 @@ valueCellClick = function (evt) {
 
 }
 
-{ ![C:/Users/labuser/Desktop/cellselectionasp.net.png](Cell-Selection_images/Cell-Selection_img1.png) | markdownify }
-{:.image }
+ ![C:/Users/labuser/Desktop/cellselectionasp.net.png](Cell-Selection_images/Cell-Selection_img1.png) 
 
 
-{ ![C:/Users/labuser/Desktop/chart series.png](Cell-Selection_images/Cell-Selection_img2.png) | markdownify }
-{:.image }
+
+ ![C:/Users/labuser/Desktop/chart series.png](Cell-Selection_images/Cell-Selection_img2.png) 
+
 
 
 

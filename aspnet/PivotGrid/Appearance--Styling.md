@@ -7,7 +7,7 @@ control: PivotGrid
 documentation: ug
 ---
 
-## Appearance & Styling
+# Appearance & Styling
 
 The PivotGrid control customizes its appearance using user-defined CSS. The custom CSS is applied to the control by referring the custom theme CSS next to ej.widgets.all.min.css in the view page.
 
@@ -15,23 +15,23 @@ The PivotGrid control customizes its appearance using user-defined CSS. The cust
 
 You can refer to custom CSS in Layout.Master page under shared folder.
 
-
-
-[ASP]
-
-&lt;head&gt;
-
-    &lt;link href="Content/ej/ej.widgets.core.min.css" rel="stylesheet" /&gt;
-
-    &lt;link href="Content/ej/flat-lime/ej.theme.min.css" rel="stylesheet" /&gt;
-
-    &lt;link href="/Content/Custom-theme/ej.customtheme.css" rel="stylesheet" /&gt;
-
-&lt;/head&gt;
+{% highlight html %}
 
 
 
-[CSS]
+<head>
+
+    <link href="Content/ej/ej.widgets.core.min.css" rel="stylesheet" />
+
+    <link href="Content/ej/flat-lime/ej.theme.min.css" rel="stylesheet" />
+
+    <link href="/Content/Custom-theme/ej.customtheme.css" rel="stylesheet" />
+
+</head>
+
+
+
+
 
 /*-----------------------For PivotGrid control definition-----------------*/
 
@@ -991,11 +991,11 @@ You can refer to custom CSS in Layout.Master page under shared folder.
 
 }
 
+{% endhighlight %}
 
 
 
+![C:/Users/Tamilarasu .M/Pictures/document/Customtheme.png](Appearance--Styling_images/Appearance--Styling_img1.png)
 
-{ ![C:/Users/Tamilarasu .M/Pictures/document/Customtheme.png](Appearance--Styling_images/Appearance--Styling_img1.png) | markdownify }
-{:.image }
 
 

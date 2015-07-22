@@ -7,9 +7,9 @@ control: Schedule
 documentation: ug
 ---
 
-## Navigation
+# Navigation
 
-Appointment Navigation
+##Appointment Navigation
 
 * The enableAppointmentNavigation option allows the Schedule control to show/hide the previous and next appointment navigation tabs that is usually rendered parallel to each other when it is set to ‘true’. 
 * When you click on the previous/next appointment tab, it takes you to the previous/next corresponding closest date on the Schedule that contains appointments on that particular day. By default, it is set to ‘true’.
@@ -17,34 +17,33 @@ Appointment Navigation
 The following code example explains how to set the value for enableAppointmentNavigation property.
 
 
-
-[ASP]
-
-&lt;ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014" EnableAppointmentNavigation="true"&gt;
+{% highlight html %}
 
 
-
-&lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/&gt;
-
-&lt;/ej:Schedule&gt;
+<ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014" EnableAppointmentNavigation="true">
 
 
 
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
 
-SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
+</ej:Schedule>
 
 
+
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
+
+SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+{% endhighlight %}
 
 * The Schedule control with the appointment navigation tabs (marked with a box) enabled looks like the following screenshot.
 
-{ ![](Navigation_images/Navigation_img1.png) | markdownify }
-{:.image }
+![](Navigation_images/Navigation_img1.png)
 
 
-_Figure_ _101__:  schedule with Appointment Navigation._
+_Figure_ _101_:  schedule with Appointment Navigation._
 
-Calendar Navigation
+##Calendar Navigation
 
 * The dates on the Schedule control is navigated randomly to another date with the help of calendar available within the Schedule control. To open the calendar, click on the date value displayed in the header bar. You will see the calendar pops down.
 * You can click on any dates on the calendar, so that the Schedule control navigates to the selected date in the calendar.
@@ -53,15 +52,14 @@ The following screenshot displays the calendar that pops down on clicking the da
 
 
 
-{ ![](Navigation_images/Navigation_img2.png) | markdownify }
-{:.image }
+![](Navigation_images/Navigation_img2.png)
 
 
- _Figure_ _102__:  schedule with Calendar Navigation._
+ _Figure_ _102_:  schedule with Calendar Navigation._
 
 
 
-Keyboard navigation
+##Keyboard navigation
 
 * By enabling the keyboard navigation in the Schedule control, you can control the actions of the Schedule with the provided shortcut keys. Almost all the Schedule actions that are done using mouse are controlled with shortcut keys. 
 * By default, the keyboard navigation is set to ‘true’ for the control and it is controlled with the property allowKeyboardNavigation.
@@ -70,8 +68,9 @@ The various keyboard shortcuts available within the Schedule control are as foll
 
 
 
-_Table_ _1__: List of keys and its usage_
+_Table_ _1_: List of keys and its usage_
 
+{% highlight html %}
 <table>
 <tr>
 <td>
@@ -138,7 +137,7 @@ Traverse forward through the appointments</td></tr>
 Shift + tab</td><td>
 Traverse backward through the appointments.</td></tr>
 </table>
-
+{% endhighlight %}
 
 
 
@@ -153,8 +152,10 @@ ii. Make initial selection at any of the cell. Now by pressing and holding the S
 Once the required cells are selected, then a new appointment can be created for a selected time range either by pressing (ALT + N) key combination or by simply pressing Enter key to create appointments through quick window.
 
 
-
+{% highlight html %}
 [ASP]
+
+
 
 <ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014" AllowKeyboardNavigation="true"
 
@@ -162,25 +163,24 @@ CurrentView="Month">
 
 
 
-&lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/&gt;
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
 
-&lt;/ej:Schedule&gt;
-
-
-
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
-
-SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
+</ej:Schedule>
 
 
+
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
+
+SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+{% endhighlight %}
 
 * Since the keyboard navigation functionality is enabled by default, the Schedule control below indicates the multiple cell selection through the shift + right arrow key combination as follows.
 
 
 
-{ ![](Navigation_images/Navigation_img3.png) | markdownify }
-{:.image }
+![](Navigation_images/Navigation_img3.png)
 
 
-   _Figure_ _103__:  schedule with keyboard Navigation._
+   _Figure_ _103_:  schedule with keyboard Navigation._
 

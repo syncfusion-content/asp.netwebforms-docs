@@ -7,7 +7,7 @@ control: Ribbon
 documentation: ug
 ---
 
-## Custom Tooltip
+# Custom Tooltip
 
 The _Ribbon_ control has _Custom Tooltip_ support that is displayed when you move the mouse over the control elements. You can define the CustomTooltip under the ContentGroup, GalleryItem, and CustomGalleryItem etc... CustomTooltip contains _Title, Content, PrefixIcon_ properties that are used to set Title, Content and placing the icon into this.
 
@@ -15,9 +15,8 @@ The _Ribbon_ control has _Custom Tooltip_ support that is displayed when you mov
 
 {% highlight html %}
 
-[ASP.NET]
 
-[ASPX]
+
 
   <ej:Ribbon ID="defaultRibbon" runat="server" Width="100%">
 
@@ -85,7 +84,6 @@ The _Ribbon_ control has _Custom Tooltip_ support that is displayed when you mov
 
 The following output is displayed as a result of the above code example.
 
-{ ![](Custom-Tooltip_images/Custom-Tooltip_img1.png) | markdownify }
-{:.image }
+![](Custom-Tooltip_images/Custom-Tooltip_img1.png)
 
 

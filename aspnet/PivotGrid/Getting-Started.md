@@ -17,11 +17,11 @@ Control Structure
 
 The following screenshot displays the PivotGrid Control.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img1.png)
 
 
-Create an application
+
+##Create an application
 
 This section encompasses on how to configure the PivotGrid component in an application.
 
@@ -29,8 +29,8 @@ You can also pass the required data to PivotGrid and customize it according to y
 
 In this example you can see how PivotGrid component tabulates the Internet Sales Amount over a period of fiscal years across different Customer Geographic locations. 
 
-{ ![Capture](Getting-Started_images/Getting-Started_img2.png) | markdownify }
-{:.image }
+ ![Capture](Getting-Started_images/Getting-Started_img2.png) 
+
 
 
 Open Visual Studio and create a new project by clicking New Project. You can select the Web category. Select the ASP.NET Empty Web Application template and then click OK.  
@@ -39,102 +39,100 @@ The following screenshot displays project creation wizard.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
+
 
 
 Add Control in Application
 
 1. Right click the project and select Add > New Folder.  Name the folder as olapgrid.
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img4.png)
+
 
 
 2. Now right-click on the pivotgrid folder that is newly created and select Add > New Item.
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img5.png) 
+
 
 
 3. Select Web Form and name it as Default.aspx.
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img6.png) 
+
 
 
 4. Drag the PivotGrid control from the Syncfusion BI Web Toolbox into the Design page.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img7.png) 
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
-{:.image }
+
+ ![](Getting-Started_images/Getting-Started_img8.png) 
+
 
 
 5. Enter the service URL value after dragging and dropping the control.
-> 
 
 
-> _Note: Instructions to create a service is explained briefly in the upcoming sections._
 
-> 
+Note: Instructions to create a service is explained briefly in the upcoming sections.
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
-{:.image }
+
+![](Getting-Started_images/Getting-Started_img9.png) 
+
 
 
 6. Initialize the control using below code snippet.
-> 
 
 
-> _Note: URL value needs to be defined in order to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately._
-
-> 
-
-[ASPX]
+Note: URL value needs to be defined in order to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately.
+{% highlight html %} 
 
 
 
-&lt;body&gt;
-
-    &lt;form id="form1" runat="server"&gt;
 
 
+<body>
 
-    &lt;div&gt;   
-
-      &lt;ej:PivotGrid ID="PivotGrid1" Url="../wcf/PivotGridService.svc" runat="server"&gt;
+    <form id="form1" runat="server">
 
 
 
-       &lt;/ej:PivotGrid&gt;
+    <div>   
+
+      <ej:PivotGrid ID="PivotGrid1" Url="../wcf/PivotGridService.svc" runat="server">
 
 
 
-    &lt;/div&gt;
+       </ej:PivotGrid>
 
-    &lt;/form&gt;
 
-&lt;/body&gt;
 
-Add References, Scripts, Styles 
+    </div>
 
-Add References
+    </form>
+
+</body>
+{% endhighlight %}
+
+##Add References, Scripts, Styles 
+
+###Add References
 
 1. In the Solution Explorer, right-click the References folder and then click Add Reference.
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img10.png) 
 
 
 
-{ ![sshot-4](Getting-Started_images/Getting-Started_img11.png) | markdownify }
-{:.image }
+
+ ![sshot-4](Getting-Started_images/Getting-Started_img11.png) 
+
 
 
 2. Select the following assemblies: 
@@ -154,63 +152,61 @@ Add References
 
 Add Scripts and Styles
 
-1. Add the script files and CSS files in the &lt;head&gt; tag of the Default.aspx page.
-> 
+1. Add the script files and CSS files in the <head> tag of the Default.aspx page. 
 
 
-> _Note:_ 
+Note:
 
-1. _Use the following code example while adding scripts and styles_             
-2. _Same files can also be acquired from the following location_ 
-> 
-_C:\Users\&lt;UserName&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version&gt;\JavaScript\assets\_
+1. Use the following code example while adding scripts and styles             
+2. Same files can also be acquired from the following location
+C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScript\assets\
 
-> 
+{% highlight html %}
 
-[ASPX]
 
-&lt;head&gt;
+<head>
 
-&lt;link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" /&gt;
+<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
-&lt;script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"&gt; &lt;/script&gt;
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
 
-&lt;script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"&gt; &lt;/script&gt;
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
 
-&lt;script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"&gt; &lt;/script&gt;
+<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
 
-&lt;/head&gt;
+</head>
 
-> 
+{% endhighlight %}
 
-Add WCF service for PivotGrid
+##Add WCF service for PivotGrid
 
-Create WCF Services
+###Create WCF Services
 
 1. Right-click the project and select Add > New Folder. Name the folder as wcf.
 
-{ ![](Getting-Started_images/Getting-Started_img12.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img12.png) 
+
 
 
 2. Now right-click the wcf folder created and select Add > New Item.
 
-{ ![](Getting-Started_images/Getting-Started_img13.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img13.png)
+
 
 
 3. In the Add New Item window, select WCF Service and name it as PivotGridService.svc. 
 4. Click Add.
 
-{ ![](Getting-Started_images/Getting-Started_img14.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img14.png) 
 
 
-Add service methods inside Interface
+
+##Add service methods inside Interface
 
 Add the following code example inside the IPivotGridService interface available in an IPivotGridService.cs file.
+{% highlight C# %}
 
-[C#]
+
 
 [ServiceContract(SessionMode = SessionMode.Allowed)]
 
@@ -264,11 +260,11 @@ public interface IPivotGridService
 
     }}
 
-Add Namespaces
+##Add Namespaces
 
 Add the following necessary namespaces required to implement the service methods.
 
-[C#]
+
 
 using System;
 
@@ -298,7 +294,7 @@ Create Class in Service file
 
 You can create the PivotGridService class to implement the service methods. You can inherit the class from the IPivotGridService interface that is created automatically while adding any new service.
 
-[C#]
+
 
 
 
@@ -322,7 +318,7 @@ You can add the following methods to the service that are invoked for any server
 
 1. Initialize the PivotGrid helper class. 
 
-[C#]
+
 
 PivotGrid htmlHelper = new PivotGrid();        
 
@@ -336,7 +332,7 @@ PivotGrid htmlHelper = new PivotGrid();
 
 2. Add the following relevant service methods.
 
-[C#]
+
 
 
 
@@ -511,31 +507,33 @@ PivotGrid htmlHelper = new PivotGrid();
             return olapReport;
 
         }  
+{% endhighlight %}
 
-Configure Web.Config
+##Configure Web.Config
 
 1. You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "Sample.PivotGridService" where "PivotGridService" is the service class name and “Sample" is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.  
 1. contract: This property indicates the contract of the endpoint is exposing. Here you are referring IPivotGridService contract and hence it is "Sample.IPivotGridService".
 2. binding: In your application, you use webHttpBinding to post and receive the requests and responses between the client-end and the service-end.
 3. behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint. endpointBehaviors are illustrated as follows.
 
+{% highlight html %}
 [web.config]
 
-&lt;system.serviceModel&gt;
+<system.serviceModel>
 
-    &lt;services&gt;
+    <services>
 
-      &lt;service name="Sample.PivotGridService"&gt;
+      <service name="Sample.PivotGridService">
 
         <endpoint address="" behaviorConfiguration="Sample.PivotGridServiceAspNetAjaxBehavior"
 
           binding="webHttpBinding" contract="Sample.IPivotGridService" />
 
-      &lt;/service&gt;
+      </service>
 
-    &lt;/services&gt;
+    </services>
 
-&lt;/system.serviceModel&gt;
+</system.serviceModel>
 
 
 
@@ -543,23 +541,23 @@ Configure Web.Config
 
 [web.config]
 
-&lt;system.serviceModel&gt;
+<system.serviceModel>
 
-    &lt;behaviors&gt;
+    <behaviors>
 
-      &lt;endpointBehaviors&gt;
+      <endpointBehaviors>
 
-        &lt;behavior name="Sample.PivotGridServiceAspNetAjaxBehavior"&gt;
+        <behavior name="Sample.PivotGridServiceAspNetAjaxBehavior">
 
-          &lt;enableWebScript /&gt;
+          <enableWebScript />
 
-        &lt;/behavior&gt;
+        </behavior>
 
-      &lt;/endpointBehaviors&gt;
+      </endpointBehaviors>
 
-    &lt;/behaviors&gt;
+    </behaviors>
 
-&lt;/system.serviceModel&gt;
+</system.serviceModel>
 
 
 
@@ -567,70 +565,66 @@ Configure Web.Config
 
 [web.config]
 
-&lt;system.web&gt;
+<system.web>
 
-      &lt;compilation debug="true" targetFramework="4.5" &gt;
+      <compilation debug="true" targetFramework="4.5" >
 
-        &lt;assemblies&gt;
+        <assemblies>
 
-          &lt;add assembly="Syncfusion.EJ, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /&gt;
+          <add assembly="Syncfusion.EJ, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
 
-          &lt;add assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /&gt;
+          <add assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
 
-          &lt;add assembly="Syncfusion.PivotAnalysis.Base, Version= X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /&gt;
+          <add assembly="Syncfusion.PivotAnalysis.Base, Version= X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
 
-          &lt;add assembly="Syncfusion.Olap.Base, Version=X.X.X.X, Culture=neutral,      PublicKeyToken=3D67ED1F87D44C89"/&gt;
+          <add assembly="Syncfusion.Olap.Base, Version=X.X.X.X, Culture=neutral,      PublicKeyToken=3D67ED1F87D44C89"/>
 
-        &lt;/assemblies&gt;
+        </assemblies>
 
-      &lt;/compilation&gt;
+      </compilation>
 
- &lt;/system.web&gt; 
+ </system.web> 
 
-> 
-
-> _Note:__x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system._
+Note: x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
 
 4. Register the namespace in web.config file by adding the following code example.
 
 [web.config]
 
-&lt;system.web&gt;
+<system.web>
 
- &lt;pages validateRequest="false"&gt;
+ <pages validateRequest="false">
 
-      &lt;controls&gt;
+      <controls>
 
-          &lt;add  namespace="Syncfusion.JavaScript.Web.Olap" assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/&gt;
+          <add  namespace="Syncfusion.JavaScript.Web.Olap" assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/>
 
-      &lt;/controls&gt;
+      </controls>
 
-   &lt;/pages&gt;
+   </pages>
 
-&lt;/system.web&gt;
+</system.web>
+ 
 
-> 
-
-
-> _Note: In this example, “Sample” indicates the name of the project and “PivotGridService” indicates the name of the WCF service created. And x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system._
+Note: In this example, “Sample” indicates the name of the project and “PivotGridService” indicates the name of the WCF service created. And x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
 
 In summary, this getting started tutorial gives you an overview of PivotGrid, its architecture, process flow, how to configure and integrate with a VS application through a simple example that is self-explanatory.
 
-{ ![Capture](Getting-Started_images/Getting-Started_img15.png) | markdownify }
-{:.image }
+ ![Capture](Getting-Started_images/Getting-Started_img15.png) 
+ 
 
 
-Relational
+##Relational
 
-Control Structure
+##Control Structure
 
 The following screenshot displays the PivotGrid Control.
 
-{ ![](Getting-Started_images/Getting-Started_img16.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img16.png) 
 
 
-Create an application
+
+##Create an application
 
 This section encompasses on how to configure the PivotGrid component in an application.
 
@@ -638,105 +632,104 @@ You can also pass the required data to PivotGrid and customize it according to y
 
 This example illustrates how the PivotGrid component tabulates the sales/revenue amount over a period of fiscal years across different geographic locations. 
 
-{ ![](Getting-Started_images/Getting-Started_img17.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img17.png) 
+
 
 
 Open Visual Studio and create a new project by clicking New Project. You can select the Web category. Select the ASP.NET Empty Web Application template and then click OK.  
 
 The following screenshot displays project creation wizard
 
-{ ![](Getting-Started_images/Getting-Started_img18.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img18.png) 
 
 
-Add Control in Application
+
+##Add Control in Application
 
 1. Right click the project and select Add > New Folder.  Name the folder as pivotgrid.
 
-{ ![](Getting-Started_images/Getting-Started_img19.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img19.png) 
+
 
 
 2. Now right-click on the pivotgrid folder that is newly created and select Add > New Item.
 
-{ ![](Getting-Started_images/Getting-Started_img20.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img20.png) 
+
 
 
 3. Select Web Form and name it as Default.aspx.
 
-{ ![](Getting-Started_images/Getting-Started_img21.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img21.png) 
+
 
 
 4. Drag the PivotGrid control from the Syncfusion BI Web Toolbox into the Design page.
 
-{ ![](Getting-Started_images/Getting-Started_img22.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img22.png) 
 
 
-{ ![](Getting-Started_images/Getting-Started_img23.png) | markdownify }
-{:.image }
+
+ ![](Getting-Started_images/Getting-Started_img23.png) 
+
 
 
 5. Enter the service URL value after dragging and dropping the control.
-> 
 
 
-> _Note: Instructions to create a service is explained briefly in the upcoming sections._
+Note: Instructions to create a service is explained briefly in the upcoming sections.
 
-> 
+ 
 
 
-{ ![](Getting-Started_images/Getting-Started_img24.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img24.png) 
+
 
 
 6. Initialize the control using below code snippet.
-> 
-_Note: URL value needs to be defined in order to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately._
+ 
+Note: URL value needs to be defined in order to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately.
 
-> 
+ 
 
 [ASPX]
 
-&lt;body&gt;
+<body>
 
-    &lt;form id="form1" runat="server"&gt;
-
-
-
-    &lt;div&gt;   
-
-      &lt;ej:PivotGrid ID="PivotGrid1" Url="../wcf/PivotGridService.svc" runat="server"&gt;
+    <form id="form1" runat="server">
 
 
 
-       &lt;/ej:PivotGrid&gt;
+    <div>   
+
+      <ej:PivotGrid ID="PivotGrid1" Url="../wcf/PivotGridService.svc" runat="server">
 
 
 
-    &lt;/div&gt;
+       </ej:PivotGrid>
 
-    &lt;/form&gt;
 
-&lt;/body&gt;
 
-Add References, Scripts, Styles 
+    </div>
 
-Add References
+    </form>
+
+</body>
+
+##Add References, Scripts, Styles 
+
+###Add References
 
 1. In the Solution Explorer, right-click the References folder and then click Add Reference.
 
 
-{ ![](Getting-Started_images/Getting-Started_img25.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img25.png) 
 
 
 
-{ ![sshot-4](Getting-Started_images/Getting-Started_img26.png) | markdownify }
-{:.image }
+
+ ![sshot-4](Getting-Started_images/Getting-Started_img26.png) 
+
 
 
 2. Select the following assemblies: 
@@ -753,51 +746,51 @@ Add References
 
 3. Click OK.
 
-Add Scripts and Styles
+##Add Scripts and Styles
 
-1. Add the script files and CSS files in the &lt;head&gt; tag of the Default.aspx page.
+1. Add the script files and CSS files in the <head> tag of the Default.aspx page.
 
 
 
-> _Note:_ 
+Note: 
 
-3. _Use the following code example while adding scripts and styles_             
-4. _Same files can also be acquired from the following location_ 
+3. Use the following code example while adding scripts and styles             
+4. Same files can also be acquired from the following location 
 > 
-_C:\Users\&lt;UserName&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version&gt;\JavaScript\assets\_
+C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScript\assets\
 
-Add WCF Service for PivotGrid
-
-[ASPX]
+##Add WCF Service for PivotGrid
 
 
 
-&lt;head&gt;
-
-&lt;link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" /&gt;
-
-&lt;script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"&gt; &lt;/script&gt;
-
-&lt;script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"&gt; &lt;/script&gt;
-
-&lt;script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"&gt; &lt;/script&gt;
-
-&lt;/head&gt;
 
 
+<head>
 
-Create WCF Services
+<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
+
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
+
+<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
+
+</head>
+
+
+{% endhighlight %}
+##Create WCF Services
 
 1. Right-click the project and select Add > New Folder. Name the folder as wcf.
 
-{ ![](Getting-Started_images/Getting-Started_img27.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img27.png) 
+
 
 
 2. Now right-click the wcf folder created and select Add > New Item.
 
-{ ![](Getting-Started_images/Getting-Started_img28.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img28.png) 
+
 
 
 3. In the Add New Item window, select WCF Service and name it as PivotGridService.svc. 
@@ -805,15 +798,16 @@ Create WCF Services
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img29.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img29.png) 
 
 
-Add service methods inside Interface
+
+##Add service methods inside Interface
 
 Add the following code example inside the IPivotGridService interface available in an IPivotGridService.cs file.
 
-[[C#]
+{% highlight C# %}
+
 
 [ServiceContract]
 
@@ -843,11 +837,11 @@ Add the following code example inside the IPivotGridService interface available 
 
     }
 
-Add Namespaces
+##Add Namespaces
 
 Add the following necessary namespaces required to implement the service methods.
 
-[C#]
+
 
 using System;
 
@@ -877,7 +871,7 @@ Create Class in Service file
 
 You can create the PivotGridService class to implement the service methods. You can inherit the class from the IPivotGridService interface that is created automatically while adding any new service.
 
-[C#]
+
 
 
 
@@ -895,13 +889,13 @@ namespace Sample
 
 }
 
-Implement Service Methods
+##Implement Service Methods
 
 You can add the following methods to the service that are invoked for any server-side operations to be performed in PivotGrid.
 
 1. Initialize the PivotGrids helper class. 
 
-[C#]
+
 
       PivotGrid htmlHelper = new PivotGrid();
 
@@ -917,7 +911,7 @@ You can add the following methods to the service that are invoked for any server
 
 
 
-[C#]
+
 
 
 
@@ -1011,7 +1005,7 @@ You can add the following methods to the service that are invoked for any server
 
 
 
-[C#]
+
 
 namespace WebApplication2
 
@@ -1223,7 +1217,8 @@ namespace WebApplication2
 
 }
 
-Configure Web.Config
+{% endhighlight %}
+##Configure Web.Config
 
 1. You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "Sample.PivotGridService" where "PivotGridService" is the service class name and “Sample" is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.  
 1. contract: This property indicates the contract of the endpoint is exposing. Here you are referring IPivotGridService contract and hence it is "Sample.IPivotGridService".
@@ -1231,24 +1226,24 @@ Configure Web.Config
 3. behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint. endpointBehaviors are illustrated as follows.
 
 
-
+{% highlight html %}
 [web.config]
 
-&lt;system.serviceModel&gt;
+<system.serviceModel>
 
-    &lt;services&gt;
+    <services>
 
-      &lt;service name="Sample.PivotGridService"&gt;
+      <service name="Sample.PivotGridService">
 
         <endpoint address="" behaviorConfiguration="Sample.PivotGridServiceAspNetAjaxBehavior"
 
           binding="webHttpBinding" contract="Sample.IPivotGridService" />
 
-      &lt;/service&gt;
+      </service>
 
-    &lt;/services&gt;
+    </services>
 
-&lt;/system.serviceModel&gt;
+</system.serviceModel>
 
 
 
@@ -1256,23 +1251,23 @@ Configure Web.Config
 
 [web.config]
 
-&lt;system.serviceModel&gt;
+<system.serviceModel>
 
-    &lt;behaviors&gt;
+    <behaviors>
 
-      &lt;endpointBehaviors&gt;
+      <endpointBehaviors>
 
-        &lt;behavior name="Sample.PivotGridServiceAspNetAjaxBehavior"&gt;
+        <behavior name="Sample.PivotGridServiceAspNetAjaxBehavior">
 
-          &lt;enableWebScript /&gt;
+          <enableWebScript />
 
-        &lt;/behavior&gt;
+        </behavior>
 
-      &lt;/endpointBehaviors&gt;
+      </endpointBehaviors>
 
-    &lt;/behaviors&gt;
+    </behaviors>
 
-&lt;/system.serviceModel&gt;
+</system.serviceModel>
 
 
 
@@ -1280,55 +1275,55 @@ Configure Web.Config
 
 [web.config]
 
-&lt;system.web&gt;
+<system.web>
 
-      &lt;compilation debug="true" targetFramework="4.5" &gt;
+      <compilation debug="true" targetFramework="4.5" >
 
-        &lt;assemblies&gt;
+        <assemblies>
 
-          &lt;add assembly="Syncfusion.EJ, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /&gt;
+          <add assembly="Syncfusion.EJ, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
 
-          &lt;add assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /&gt;
+          <add assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
 
-          &lt;add assembly="Syncfusion.PivotAnalysis.Base, Version= X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /&gt;
+          <add assembly="Syncfusion.PivotAnalysis.Base, Version= X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
 
-          &lt;add assembly="Syncfusion.Olap.Base, Version=X.X.X.X, Culture=neutral,      PublicKeyToken=3D67ED1F87D44C89"/&gt;
+          <add assembly="Syncfusion.Olap.Base, Version=X.X.X.X, Culture=neutral,      PublicKeyToken=3D67ED1F87D44C89"/>
 
-        &lt;/assemblies&gt;
+        </assemblies>
 
-      &lt;/compilation&gt;
+      </compilation>
 
- &lt;/system.web&gt; 
+ </system.web> 
 
 > 
 
-> _Note: xx.x.x.xx in the above code example refers to the current version of the Essential Studio running in your system._
+Note: xx.x.x.xx in the above code example refers to the current version of the Essential Studio running in your system.
 
 4. Register the namespace in web.config file by adding the following code example.
 
 [web.config]
 
-&lt;system.web&gt;
+<system.web>
 
- &lt;pages validateRequest="false"&gt;
+ <pages validateRequest="false">
 
-      &lt;controls&gt;
+      <controls>
 
-          &lt;add  namespace="Syncfusion.JavaScript.Web.Olap" assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/&gt;
+          <add  namespace="Syncfusion.JavaScript.Web.Olap" assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/>
 
-      &lt;/controls&gt;
+      </controls>
 
-   &lt;/pages&gt;
+   </pages>
 
-&lt;/system.web&gt;
+</system.web>
 
-> 
+{% endhighlight %} 
 
-> _Note: In this example, “Sample” indicates the name of the project and “PivotGridService” indicates the name of the WCF service created. And xx.x.x.xx in the above code example refers to the current version of the Essential Studio running in your system._
+Note: In this example, “Sample” indicates the name of the project and “PivotGridService” indicates the name of the WCF service created. And xx.x.x.xx in the above code example refers to the current version of the Essential Studio running in your system.
 
 In summary, this getting started tutorial gives you an overview of PivotGrid, its architecture, process flow, how to configure and integrate with a VS application through a simple example that is self-explanatory.
 
-{ ![](Getting-Started_images/Getting-Started_img30.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img30.png) 
+
 
 

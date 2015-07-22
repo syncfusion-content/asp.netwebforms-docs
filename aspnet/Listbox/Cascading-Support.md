@@ -261,9 +261,8 @@ Configure the styles as follows.
 
 Output of the above steps.
 
+![](Cascading-Support_images/Cascading-Support_img1.png)
 
-
- ![](Cascading-Support_images/Cascading-Support_img1.png)
 
 
 

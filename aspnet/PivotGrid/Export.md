@@ -7,17 +7,18 @@ control: PivotGrid
 documentation: ug
 ---
 
-## Export
+# Export
 
-> _Note:__This feature is applicable only for OLAP datasource._
+ Note: This feature is applicable only for OLAP datasource.
 
 The PivotGrid is exported from cell mode to a worksheet of an Excel Workbook. The Excel Workbook is saved from the browser to the local disk drive.
 
 The following code example illustrates how to save the document to Excel via service.
 
 For PivotGrid
+{% highlight C# %}
 
-[C#]
+
 
 public void ExportOptions(Stream stream)
 
@@ -30,22 +31,22 @@ OlapDataManager DataManager=new OlapDataManager(connectionString);
 pivotGridHelper.ExportToExcel(DataManager, newStreamReader(stream).ReadToEnd(), "Sample.xls",HttpContext.Current.Response);
 
 }
+{% endhighlight %}
+
+{% highlight html %}
 
 
+<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection">
 
-[ASP.NET]
+    <ej:button ID="Button1" runat="server" ClientSideOnClick="btnClick" Text="Export PivotGrid"></ej:button> 
 
-&lt;asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
+    <ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc"></ej:PivotGrid>
 
-    &lt;ej:button ID="Button1" runat="server" ClientSideOnClick="btnClick" Text="Export PivotGrid"&gt;&lt;/ej:button&gt; 
+</asp:Content>
 
-    &lt;ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc"&gt;&lt;/ej:PivotGrid&gt;
+<asp:Content ID="Content3" runat="server" ContentPlaceHolderID="ScriptSection">
 
-&lt;/asp:Content&gt;
-
-&lt;asp:Content ID="Content3" runat="server" ContentPlaceHolderID="ScriptSection"&gt;
-
-    &lt;script type="text/javascript"&gt;
+    <script type="text/javascript">
 
         function btnClick(e) {
 
@@ -55,15 +56,15 @@ pivotGridHelper.ExportToExcel(DataManager, newStreamReader(stream).ReadToEnd(),
 
         }
 
-    &lt;/script&gt;    
+    </script>    
 
-&lt;/asp:Content&gt;
+</asp:Content>
+
+{% endhighlight %}
 
 
 
+ ![Description: excelexport2](Export_images/Export_img1.png) 
 
-
-{ ![Description: excelexport2](Export_images/Export_img1.png) | markdownify }
-{:.image }
 
 

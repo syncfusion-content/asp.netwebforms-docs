@@ -411,7 +411,7 @@ Initialize the Dialog control with the following code example.
 
             $('#loginForm input.name[type=text]').each(function (n, element) {
 
-                if (($(element).val() == ''))
+                if (($(element).val() == '))
 
                     error.push('Please enter your ' + element.name);
 
@@ -425,7 +425,7 @@ Initialize the Dialog control with the following code example.
 
             $('#loginForm input.email[type=text]').each(function (n, element) {
 
-                if (($(element).val() == ''))
+                if (($(element).val() == '))
 
                     error.push('Please enter your ' + element.name + ' address');
 
@@ -439,7 +439,7 @@ Initialize the Dialog control with the following code example.
 
 
 
-            if ($("#loginForm  input#password").val() == '')
+            if ($("#loginForm  input#password").val() == ')
 
                 error.push('Please provide a password');
 

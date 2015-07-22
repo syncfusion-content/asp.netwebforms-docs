@@ -7,9 +7,9 @@ control: Schedule
 documentation: ug
 ---
 
-## Appointment 
+# Appointment 
 
-### Read Only
+## Read Only
 
 * The interaction with appointments of the Schedule can be enabled/disabled through the ReadOnly property. When the ReadOnly property is set to true, we can’t be able to do any actions with the appointments, but simply we can navigate between the schedule dates, views and can also able to see the appointments detail in the quick window. 
 * To enable the appointments interaction, we need to set the ReadOnly property to true. By default, the ReadOnly property is set as false.
@@ -19,43 +19,43 @@ The following code example explains how to enable ReadOnly property in the Sched
 
 
 
-
-[ASP]
-
-
-
-&lt;%-- Enables ReadOnly property to the schedule -- %&gt;
+{% highlight html %}
 
 
 
-&lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
 
-&lt;div&gt;
-
-
-
-&lt;ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/12/2014" ReadOnly="true"&gt;
+<%-- Enables ReadOnly property to the schedule -- %>
 
 
 
-&lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/&gt;
 
-&lt;/ej:Schedule&gt;
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
+
+<div>
 
 
 
-&lt;/div&gt;
+<ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/12/2014" ReadOnly="true">
 
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
 
-SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
 
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
+
+</ej:Schedule>
+
+
+
+</div>
+
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
+
+SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+{% endhighlight %}
 
 
 The following screenshot displays the Schedule control with ReadOnly property set to true,
 
-{ ![C:/Users/maheshp/Pictures/sshot-3.png](Appointment_images/Appointment_img1.png) | markdownify }
-{:.image }
+![C:/Users/maheshp/Pictures/sshot-3.png](Appointment_images/Appointment_img1.png)
 
 
 _Figure 1: Schedule with Read Only property_
@@ -64,12 +64,12 @@ _Figure 1: Schedule with Read Only property_
 
 
 
-### Appointment Creation
+## Appointment Creation
 
 * Appointments play a vital role within the Schedule control with which you can interact. You can manipulate (add/edit/delete) the required appointments that reveals one of the main purposes of the Schedule control. 
 * The appointments can be of normal type or recurrence type that avails with additional template customization options. The all-Day appointment available within the Schedule control that indicates the full day appointment or an appointment with duration greater than 24 hours.
 
-Using Normal Appointment window
+###Using Normal Appointment window
 
 * You can create the appointments by double-clicking on the Schedule cells across the required time slots. The appointment is created for the selected time cells.
 * You can also change the start and end time and other appointment related details like its subject, description, time-zone in the appointment window before saving those details.  
@@ -78,37 +78,33 @@ The following screenshot displays the appointment window filled with the specifi
 
 
 
-{ ![](Appointment_images/Appointment_img2.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img2.png)
 
 
 * When you fill the other details like Subject, Description and the recurrence details manually as per your requirements click Done to save the appointment details. The Schedule control is displayed as follows.
 
 
 
-{ ![](Appointment_images/Appointment_img3.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img3.png)
 
 
 
 
 
 
-Using quick appointment window
+###Using quick appointment window
 
 * You can manipulate appointments using quick appointment window that provides an easier and quicker way to proceed with the appointment creation. To create appointments using quick appointment window, click on the required cell and fill in the appointment Subject. Click “CreateAppointment” button.
 * You can open the normal appointment window while the quick window is in open state by choosing the “Detailed” option present within the quick appointment window.The quick appointment window is displayed as follows.
 
 
 
-{ ![](Appointment_images/Appointment_img4.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img4.png)
 
 
 * When the appointment is saved, the Schedule control displays the created appointment as follows,
 
-{ ![](Appointment_images/Appointment_img5.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img5.png)
 
 
 
@@ -117,7 +113,7 @@ Important: We have a property named showQuickWindow that accepts Boolean value a
 
 
 
-Using Context menu
+###Using Context menu
 
 * You can also easily manipulate appointments using the Context menu feature. By default the Context menu contains the menu items for adding, opening and deleting appointment.You can view the menu by right-clicking on the Schedule cells or on the appointments.
 * To create an appointment using Context menu, right-click on the required Schedule cells and then select the “New Appointment” menu item in the Context menu. The new appointment window is opened and the appointment is saved in a usual manner followed in the previous methods.
@@ -126,33 +122,30 @@ The following screenshot displays the Contextmenu with a “New Appointment” o
 
 
 
-{ ![](Appointment_images/Appointment_img6.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img6.png)
 
 
 
 
 
 
-### Appointment Editing
+## Appointment Editing
 
-Using Normal Appointment window
+###Using Normal Appointment window
 
 * To edit the appointments created in the above specified steps, double-click on the required appointment to open the edit appointment window. You can change the required values and then click Done button to update those new values.
 
 The following screenshot depicts the edit appointment window with its filled-in details.
 
-{ ![](Appointment_images/Appointment_img7.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img7.png)
 
 
 * In the above image, the end time has been changed from 8.00 AM to 7.00 AM, and once the changes are done, click the Done button. The appointment duration is changed and looks as follows.
 
-{ ![](Appointment_images/Appointment_img8.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img8.png)
 
 
-Using quick appointment window
+###Using quick appointment window
 
 * To edit the appointments using quick appointment window, click on the appointment to be edited. Click on the Edit Appointment option to open the edit appointment window. In case of normal appointments, only the Edit Appointment label is enabled.
 * When you click on a recurrence appointment, Edit Appointment and Edit Series options are enabled.  To edit the single occurrence of that recurrence appointment, choose Edit Appointment. Choose the EditSeries option to edit the entire series of that recurrence appointment.
@@ -161,109 +154,99 @@ The following screenshot displays the Schedule control with the quick appointmen
 
 
 
-{ ![](Appointment_images/Appointment_img9.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img9.png)
 
 
 * Click on the Edit Appointment option to open the edit appointment window as follows.
 
 
-{ ![](Appointment_images/Appointment_img10.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img10.png)
 
 
 * In the above screenshot, the end-time is changed to 8.00 AM from 7.00 AM. Once it is saved, the above appointment is displayed in the Schedule as displayed in the following screenshot.
 
 
 
-{ ![](Appointment_images/Appointment_img11.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img11.png)
 
 
-_Figure_ _65__: schedule with open the editing appointment window_
+_Figure_ _65_: schedule with open the editing appointment window_
 
-Using Context menu
+###Using Context menu
 
 * To edit the appointments using context menu option, right-click on the appointment to be edited and then select Open Appointment option from the context menu that pops up as displayed in the following screenshot.
 
-{ ![](Appointment_images/Appointment_img12.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img12.png)
 
 
-_Figure_ _66__:  schedule with open appointment using context menu._
+_Figure_ _66_:  schedule with open appointment using context menu._
 
 * The following screenshot displays the Edit Appointment window that opens when you click OpenAppointment option.
 
 
 
-{ ![](Appointment_images/Appointment_img13.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img13.png)
 
 
-_Figure_ _67__: schedule with display the edit appointment window._
+_Figure_ _67_: schedule with display the edit appointment window._
 
 * Click Done button to save the updated values.
 
 
 
-### Appointment Deletion
+## Appointment Deletion
 
-Using quick appointment window
+###Using quick appointment window
 
 * The delete option is available in the quick appointment window which will be opened when you single-click the appointments. To delete an appointment, click on the required appointment and then click the delete icon present in the quick appointment window as follows.
 
 
 
-{ ![](Appointment_images/Appointment_img14.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img14.png)
 
 
-_Figure_ _69__: schedule with Appointment deletion._
+_Figure_ _69_: schedule with Appointment deletion._
 
 * When you click the delete icon, the appointment is deleted as displayed in the following screenshot.
 
 
 
-{ ![](Appointment_images/Appointment_img15.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img15.png)
 
 
-_Figure_ _70__: schedule with after the appointment deletion._
+_Figure_ _70_: schedule with after the appointment deletion._
 
-Using Context menu
+###Using Context menu
 
 * To delete the appointments using Context menu option, select the Delete Appointment from the context menu that pops up when you right-click the appointment to be deleted. It is displayed in the following screenshot.
 
 
 
-{ ![](Appointment_images/Appointment_img16.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img16.png)
 
 
-_Figure_ _71__: schedule with appointment deletion using context menu._
+_Figure_ _71_: schedule with appointment deletion using context menu._
 
 
 
-### All-day Appointments
+## All-day Appointments
 
 * The All-day appointments is created and edited like normal appointments described in the above steps. You can achieve this by selecting the “All-day” checkbox in the appointment window. 
 * The All-day appointments denotes that it is scheduled for the entire day and normally rendered in the allday row that is present above all the workcells.Check the “All-day” checkbox in the appointment window as follows.
 
 
 
-{ ![](Appointment_images/Appointment_img17.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img17.png)
 
 
 * Save the appointment so that the All-day appointment will be displayed in the All-day row as follows.
 
-{ ![](Appointment_images/Appointment_img18.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img18.png)
 
 
 
 
-### Appointment Resizing
+## Appointment Resizing
 
 * The enableAppointmentResize option allows you to resize the appointment in order to change its start or end time faster. To start resizing the appointment, hover the mouse on it, so that the resizing handles are displayed on either sides of the appointment. 
 * Click on any one of the handles and start dragging it towards top/bottom direction. 
@@ -271,9 +254,9 @@ _Figure_ _71__: schedule with appointment deletion using context menu._
 
 The following code explains how the appointment resizing option is enabled for the Schedule control.
 
+{% highlight html %}
 
 
-[ASP]
 
 
 
@@ -285,47 +268,45 @@ CurrentView="Month"
 
 EnableAppointmentResize="true">
 
-&lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/&gt;
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
 
-&lt;/ej:Schedule&gt;
-
-
-
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
-
-SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
+</ej:Schedule>
 
 
+
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
+
+SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+{% endhighlight %}
 
 * In the following screenshot of the Schedule control, the appointment with the Subject Daily Planet is hovered for resizing.And you can see the resizing handle at both the ends of the appointment.
 
 
 
-{ ![](Appointment_images/Appointment_img19.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img19.png)
 
 
-_Figure_ _75__: schedule with appointment resize._
+_Figure_ _75_: schedule with appointment resize._
 
 * Once the resizing is stopped, the resized appointment with its new start time is displayed as follows.
 
 
 
-{ ![](Appointment_images/Appointment_img20.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img20.png)
 
 
-_Figure_ _76__: schedule with after the appointment resized._
+_Figure_ _76_: schedule with after the appointment resized._
 
 
 
-### Appointment Search
+## Appointment Search
 
 * Schedule control is available with appointment search option. Appointment search can be done in two ways. 
 1. Using Search string
 2. Using Filters
 
-Using Search string
+###Using Search string
 
 * Schedule control contains list of appointments. When you want to check some appointment that exist in the schedule, it is possible to search the appointment in the schedule datasource. 
 * The public method searchAppointment is used to search the appointment in the schedule data source. It contains four arguments such as search string, search field, filter operator and ignorecase.
@@ -338,35 +319,35 @@ Use the following code example to search the appointment on the schedule datasou
 
 
 
-[ASPX]
+{% highlight html %}
 
-&lt;input id="txtSearch" type="text" /&gt;
+<input id="txtSearch" type="text" />
 
-&lt;input id="btnSearch" class="searchApp" type="button" value="Search" /&gt;
+<input id="btnSearch" class="searchApp" type="button" value="Search" />
 
-&lt;div&gt;
+<div>
 
 
 
-&lt;ej:Schedule runat="server" ID="Schedule1" DataSourceID="objectDataSource1"&gt;
+<ej:Schedule runat="server" ID="Schedule1" DataSourceID="objectDataSource1">
 
-&lt;%--Add the necessary schedule properties here-- %&gt;
+<%--Add the necessary schedule properties here-- %>
 
-&lt;/ej:Schedule&gt;
+</ej:Schedule>
 
-&lt;/div&gt;
+</div>
 
 <asp:ObjectDataSource ID="objectDataSource1" runat="server"
 
 TypeName="ScheduleAppointmentsObjDatum" SelectMethod="GetRecords">
 
-&lt;/asp:ObjectDataSource&gt;
+</asp:ObjectDataSource>
 
 
 
-&lt;div id="grid1"&gt;&lt;/div&gt;
+<div id="grid1"></div>
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
 
 
@@ -446,19 +427,18 @@ allowPaging: true,
 
 }
 
-&lt;/script&gt;
+</script>
 
 
-
+{% endhighlight %}
 
 
 Execute the above code to render the following output.
 
-{ ![](Appointment_images/Appointment_img21.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img21.png)
 
 
-_Figure_ _125__: Schedule with appointment search_
+_Figure_ _125_: Schedule with appointment search_
 
 
 
@@ -466,42 +446,41 @@ _Figure_ _125__: Schedule with appointment search_
 
 
 
-{ ![](Appointment_images/Appointment_img22.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img22.png)
 
 
-_Figure_ _126__: Grid with appointment search result_
+_Figure_ _126_: Grid with appointment search result_
 
-Using Filters
+###Using Filters
 
 * In Appointment search you can filter the data instead of typing in the search box. You can pass the filter object with four properties such as field, operator, value and predicate. With that you can shortlist the appointments.
 * The attribute value is used to search the string in the appointments. The attribute field is used to search the given string in certain fields. 
 
-[ASPX]
+{% highlight html %}
 
 
 
-&lt;input id="btnSearch" class="searchApp" type="button" value="Search" /&gt;
+<input id="btnSearch" class="searchApp" type="button" value="Search" />
 
-&lt;div&gt;
+<div>
 
-&lt;ej:Schedule runat="server" ID="Schedule1" DataSourceID="objectDataSource1"&gt;
+<ej:Schedule runat="server" ID="Schedule1" DataSourceID="objectDataSource1">
 
-&lt;%--Add the Necessary properties here -- %&gt;
+<%--Add the Necessary properties here -- %>
 
-&lt;/ej:Schedule&gt;
+</ej:Schedule>
 
-&lt;/div&gt;
+</div>
 
-&lt;asp:ObjectDataSource ID="objectDataSource1" runat="server" TypeName="ScheduleAppointmentsObjDatum" SelectMethod="GetRecords"&gt;
+<asp:ObjectDataSource ID="objectDataSource1" runat="server" TypeName="ScheduleAppointmentsObjDatum" SelectMethod="GetRecords">
 
-&lt;/asp:ObjectDataSource&gt;
+</asp:ObjectDataSource>
 
-&lt;div id="grid1"&gt;
+<div id="grid1">
 
-&lt;/div&gt;
+</div>
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
 
 
@@ -627,40 +606,38 @@ allowPaging: true,
 
 
 
-&lt;/script&gt;
+</script>
 
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
-{ ![](Appointment_images/Appointment_img23.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img23.png)
 
 
-_Figure_ _127__: Schedule with search appointment filters_
+_Figure_ _127_: Schedule with search appointment filters_
 
 * Click the search button to enable the filter option.
 
 
 
-{ ![](Appointment_images/Appointment_img24.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img24.png)
 
 
-_Figure_ _128__: Grid with appointment search result_
+_Figure_ _128_: Grid with appointment search result_
 
 
 
-### Drag and Drop
+## Drag and Drop
 
 
 
 * You can enable/disable the drag and drop functionality by setting ‘true’ or ‘false’ for the allowDragDrop property. By default it is set to ‘true’. 
 * When you drag and drop the appointment to the new location, the starttime and endtime of the appointment gets changed automatically.
 
+{% highlight html %}
 
 
-[ASP]
 
 
 
@@ -674,53 +651,50 @@ AllowDragDrop="true">
 
 
 
-&lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/&gt;
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
 
-&lt;/ej:Schedule&gt;
-
-
-
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
-
-SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
+</ej:Schedule>
 
 
 
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
 
+SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+
+
+{% endhighlight %}
 
 * In the following screenshot, the Schedule control is displayed with the appointments in an order before the drag and drop action takes place.
 
 
 
-{ ![](Appointment_images/Appointment_img25.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img25.png)
 
 
-_Figure_ _72__: schedule with appointment drag and drop._
+_Figure_ _72_: schedule with appointment drag and drop._
 
 * When the appointment with the Subject “Daily Planet” is being dragged from its original location, it looks as the one following screenshot with the shadow of the appointment casting behind it.
 
 
 
-{ ![](Appointment_images/Appointment_img26.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img26.png)
 
 
-_Figure_ _73__: schedule with appointment while dragging in the cell._
+_Figure_ _73_: schedule with appointment while dragging in the cell._
 
 * The following screenshot displays the appointment with the subject “Daily Planet” in the timeline 1.00 AM – 2.00 AM (02 May, 2014) is dropped to the new location to the date 29th April, 2014 in the timeline between 3.00 AM – 4.00 AM.
 
 
 
-{ ![](Appointment_images/Appointment_img27.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img27.png)
 
 
-_Figure_ _74__:  schedule with appointment dropped in the cell._
+_Figure_ _74_:  schedule with appointment dropped in the cell._
 
 
 
-### Recurrence Options
+## Recurrence Options
 
 * There are scenarios where you require the same appointments to be repeatedly created for multiple days on the basis of daily, weekly, monthly or yearly. 
 * This can be achieved with the help of in-built recurrence options available within the Schedule control that enforces the quicker creation of repeated appointments on the required days. 
@@ -741,48 +715,43 @@ _Figure_ _74__:  schedule with appointment dropped in the cell._
 
 * To create a recurrence appointment, you can select (check) the repeat option in the normal appointment window else you can select the New Recurring Appointment option from the Contextmenu that pops up when you right-click on the Schedule cells as follows.
 
-{ ![](Appointment_images/Appointment_img28.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img28.png)
 
 
-_Figure_ _77__: schedule with new recurrence appointment._
+_Figure_ _77_: schedule with new recurrence appointment._
 
 * On clicking the New Recurring Appointment option opens the recurrence appointment window as displayed in the following screenshot.
 
 
 
-{ ![](Appointment_images/Appointment_img29.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img29.png)
 
 
-_Figure_ _78__: schedule with creating the new recurrence._
+_Figure_ _78_: schedule with creating the new recurrence._
 
 * Once the required options are selected in the recurrence window click the Done button.It navigates you to its parent window with the appointment details. Fill-in those required details and click Done to save it.
 
 
 
-{ ![](Appointment_images/Appointment_img30.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img30.png)
 
 
-_Figure_ _79__: schedule with after created the new recurrence._
+_Figure_ _79_: schedule with after created the new recurrence._
 
 * The recurrence appointment after getting saved to the Schedule is displayed as follows.
 
-{ ![](Appointment_images/Appointment_img31.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img31.png)
 
 
-_Figure_ _80__: schedule with after created the new recurrence appointment in week view._
+_Figure_ _80_: schedule with after created the new recurrence appointment in week view._
 
 * Since, you have chosen the option to end the recurrence after 10 occurrences on daily basis, the appointments repeat for continuous 10 days and then end. 
 * This is viewed clearly by navigating to the month view, where the appointment with subject Automated testing saved for 10 days from 12 Aug 2014 to 21 Aug 2014.
 
 
 
-{ ![](Appointment_images/Appointment_img32.png) | markdownify }
-{:.image }
+![](Appointment_images/Appointment_img32.png)
 
 
-_Figure_ _81__:  schedule with created recurrence appointment in month view._
+_Figure_ _81_:  schedule with created recurrence appointment in month view._
 

@@ -7,9 +7,9 @@ control: Rating
 documentation: ug
 ---
 
-## Appearance and Styling
+# Appearance and Styling
 
-### Show ToolTip
+## Show ToolTip
 
 Rating control provides support for Tooltip values. This is achieved by enabling the ShowTooltip property to True. When you move the mouse over the Rating control, it displays the Tooltip value as rating value. By default, this property value is set to True.
 
@@ -49,13 +49,13 @@ Add the following code example to the corresponding ASPX to render the Rating�
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) | markdownify }
-{:.image }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 
-### Adjusting Rating Size
 
-#### Adjust Shape Width and Shape Height
+## Adjusting Rating Size
+
+## Adjust Shape Width and Shape Height
 
 You can customize the width and height of the Rating by ShapeWidth and ShapeHeight properties. These properties completely depend on rating image’s size. The ShapeWidth and ShapeHeight are adjusted within the rating image size.
 
@@ -95,6 +95,7 @@ Add the following code example to the corresponding ASPX to render the Rating
 
 Add the following styles for Rating.
 
+{% highlight css %}
 
 
    .e-rating {
@@ -157,15 +158,15 @@ Add the following styles for Rating.
 
     }    
 
-
+{% endhighlight %}
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) | markdownify }
-{:.image }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 
-### Theme
+
+## Theme
 
 Rating control’s style and appearance are controlled based on CSS classes. In order to apply styles to the Rating control, refer to 2 files namely, ej.widgets.core.min.css and ej.theme.min.css. When the file ej.widgets.all.min.css is referred, then it is not necessary to include the files, ej.widgets.core.min.css and ej.theme.min.css in your project, as ej.widgets.all.min.css is the combination of these both.
 
@@ -187,7 +188,7 @@ By default, there are 13 themes support available for Rating control namely:
 
 
 
-### Custom styles
+## Custom styles
 
 The style of the Rating control is customized by CssClass property.
 
@@ -227,7 +228,7 @@ Add the following code example to the corresponding ASPX page to render the R
 
 Define the style for the Rating control.
 
-
+{% highlight css %}
 
 .custom {
 
@@ -235,11 +236,11 @@ Define the style for the Rating control.
 
  }
 
-
+{% endhighlight %}
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) | markdownify }
-{:.image }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
+
 
 

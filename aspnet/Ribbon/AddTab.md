@@ -7,7 +7,7 @@ control: Ribbon
 documentation: ug
 ---
 
-## AddTab
+# AddTab
 
 This method is used to add tab dynamically in the _Ribbon_ control. This method requires three arguments _addTab(Tabname,TabGroupcollection,index)_
 
@@ -19,11 +19,7 @@ This method is used to add tab dynamically in the _Ribbon_ control. This method 
 
 {% highlight html %}
 
-[ASP.NET]
 
-
-
-[ASPX]
 
 <ej:Ribbon ID="Defaultribbon" runat="server" Width="800">
 
@@ -113,8 +109,7 @@ ribbonObj.addTab("AddTab", tabGroup, 2);
 
 The following screenshot displays the output of the above code example.
 
-{ ![](AddTab_images/AddTab_img1.png) | markdownify }
-{:.image }
+![](AddTab_images/AddTab_img1.png)
 
 
 

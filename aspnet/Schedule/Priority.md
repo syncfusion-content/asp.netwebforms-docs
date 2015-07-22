@@ -7,11 +7,11 @@ control: Schedule
 documentation: ug
 ---
 
-## Priority
+# Priority
 
 * This feature allows you to prioritize the appointments with various priority options each differentiated with its individual icons/images. 
 * You can also denote the priority of the appointments using this priority option and can specify your own user-defined priority collection.
-### Priority settings
+## Priority settings
 
 * The prioritySettings is an object collection that holds the priority related information. 
 * For example enable property enables/disables the priority value to be displayed.
@@ -47,23 +47,24 @@ value
 The following code example illustrates on how to render priority feature in the Schedule control.
 
 
-
-[ASP.NET]
-
-&lt;ej:Schedule ID="Schedule1" Width="100%" runat="server" DataSourceID="ScheduleData"&gt;
-
-&lt;PrioritySettings Enable="true" Id="id" Value="value" Text="text"&gt;
-
-&lt;/PrioritySettings&gt;   // To display the Priority field in the appointment Window need to enable this property
-
-&lt;/ej:Schedule&gt;
-
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
-
-SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
+{% highlight html %}
 
 
 
+<ej:Schedule ID="Schedule1" Width="100%" runat="server" DataSourceID="ScheduleData">
+
+<PrioritySettings Enable="true" Id="id" Value="value" Text="text">
+
+</PrioritySettings>   // To display the Priority field in the appointment Window need to enable this property
+
+</ej:Schedule>
+
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
+
+SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+
+{% endhighlight %}
 
 
   On executing the above specified code the Priority field will be added in the create appointment window as follows:
@@ -72,15 +73,14 @@ SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
 
 
 
-{ ![C:/Users/karthigeyan/Desktop/p1.png](Priority_images/Priority_img1.png) | markdownify }
-{:.image }
+![C:/Users/karthigeyan/Desktop/p1.png](Priority_images/Priority_img1.png)
 
 
 
 
 
 
-template
+##template
 
 * The Priority option can be customized based on the user- defined datasource. 
 * You need to mention the “template” value also while passing the user-defined datasource. 
@@ -90,26 +90,27 @@ template
 The following code example illustrates on how to render priority feature with user- defined datasource in the Schedule control. 
 
 
-
-[ASP.NET]
-
-&lt;ej:Schedule ID="Schedule1" Width="100%" runat="server" DataSourceID="ScheduleData" ShowLocationField="true"&gt;
-
-&lt;PrioritySettings Enable="true" Id="id" Value="value" Text="text" Template="&lt;div class='${value}'&gt;&lt;/div&gt;">  // To display the Priority option in the appointment window while passing custom datasource we need to mention the Template and DataSource like this
-
-&lt;/PrioritySettings&gt;
-
-&lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" Categorize="Categorize" Priority="Priority"/&gt;
-
-&lt;/ej:Schedule&gt;
-
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
-
-SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
+{% highlight html %}
 
 
+<ej:Schedule ID="Schedule1" Width="100%" runat="server" DataSourceID="ScheduleData" ShowLocationField="true">
 
-[ASP.NET CS]
+<PrioritySettings Enable="true" Id="id" Value="value" Text="text" Template="<div class='${value}'></div>">  // To display the Priority option in the appointment window while passing custom datasource we need to mention the Template and DataSource like this
+
+</PrioritySettings>
+
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" Categorize="Categorize" Priority="Priority"/>
+
+</ej:Schedule>
+
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
+
+SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
 
 
 
@@ -155,10 +156,10 @@ public string value { set; get; }
 
 }
 
-
+{% endhighlight %}
 
 * And then need to define the styles to display the “priority icon/images (you can use your desired images)” with the priority options. 
-* The class name (while defining styles) should be the field name in template. For example if you define the template (ex: Template ("&lt;div class='${value}'&gt;&lt;/div&gt;")) then you need to define class with “value field and its value should be a class name (ex: critical)”. 
+* The class name (while defining styles) should be the field name in template. For example if you define the template (ex: Template ("<div class='${value}'></div>")) then you need to define class with “value field and its value should be a class name (ex: critical)”. 
 
 
 
@@ -168,9 +169,9 @@ The following code example illustrates how to define the css style while using t
 
 // Her we are defining the style of the “custom priority icon”
 
+{% highlight css %}
 
-
-&lt;style&gt;
+<style>
 
 .critical,
 
@@ -214,36 +215,38 @@ background-position: 2px;
 
 }
 
-&lt;/style&gt;
+</style>
 
 
 
-
+{% endhighlight %}
 
 * Similarly you can use the image tag directly in the template. Following code snippets illustrates the image tag usage in the template.
 
 
-
-[ASP.NET]
-
-&lt;ej:Schedule ID="Schedule1" Width="100%" runat="server" DataSourceID="ScheduleData" ShowLocationField="true"&gt;
-
-&lt;PrioritySettings Enable="true" Id="id" Value="value" Text="text" Template="&lt;img class='eimg' src='.../images/schedule/${value}.png' height='20px' width='20px'/&gt;"> // We can use the image tag directly to display the priority icon/image
+{% highlight html %}
 
 
 
-&lt;/PrioritySettings&gt;
 
-&lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" Categorize="Categorize" Priority="Priority"/&gt;
+<ej:Schedule ID="Schedule1" Width="100%" runat="server" DataSourceID="ScheduleData" ShowLocationField="true">
 
-&lt;/ej:Schedule&gt;
-
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
-
-SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
+<PrioritySettings Enable="true" Id="id" Value="value" Text="text" Template="<img class='eimg' src='.../images/schedule/${value}.png' height='20px' width='20px'/>"> // We can use the image tag directly to display the priority icon/image
 
 
 
+</PrioritySettings>
+
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" Categorize="Categorize" Priority="Priority"/>
+
+</ej:Schedule>
+
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
+
+SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+
+{% endhighlight %}
 
 
 On excuting the above mentioned codes will render the same output as follows.
@@ -252,8 +255,7 @@ On excuting the above mentioned codes will render the same output as follows.
 
 
 
-{ ![](Priority_images/Priority_img2.png) | markdownify }
-{:.image }
+![](Priority_images/Priority_img2.png)
 
 
 
@@ -261,9 +263,7 @@ On excuting the above mentioned codes will render the same output as follows.
 
 
 
-
-{ ![](Priority_images/Priority_img3.png) | markdownify }
-{:.image }
+![](Priority_images/Priority_img3.png)
 
 
 

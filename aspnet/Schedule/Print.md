@@ -7,7 +7,7 @@ control: Schedule
 documentation: ug
 ---
 
-## Print
+# Print
 
 Schedule control is provided with the Print feature. You can print the entire Schedule control or separately print the appointment based on your requirement.
 
@@ -16,28 +16,28 @@ Schedule Print
 You can print the Schedule control by using print() method. Use the following code example to print the Schedule control.
 
 
-
-[ASPX]
-
+{% highlight html %}
 
 
-&lt;div&gt;
 
-&lt;input class="print" type="button" value="Print" /&gt;
 
-&lt;ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData"&gt;
+<div>
 
-&lt;%--Add the Necessary properties here -- %&gt;
+<input class="print" type="button" value="Print" />
 
-&lt;/ej:Schedule&gt;
+<ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData">
 
-&lt;/div&gt;
+<%--Add the Necessary properties here -- %>
 
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
+</ej:Schedule>
 
-SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
+</div>
 
-&lt;script type="text/javascript"&gt;
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
+
+SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+<script type="text/javascript">
 
 $(document).ready(function () {
 
@@ -69,77 +69,76 @@ obj.print();
 
 });
 
-&lt;/script&gt;
+</script>
 
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
-{ ![](Print_images/Print_img1.png) | markdownify }
-{:.image }
+![](Print_images/Print_img1.png)
 
 
-_Figure_ _121__: Schedule with print button_
+_Figure_ _121_: Schedule with print button_
 
 Click the print button to render the following output.
 
 
 
-{ ![](Print_images/Print_img2.png) | markdownify }
-{:.image }
+![](Print_images/Print_img2.png)
 
 
 _Figure_ _122__: Schedule with Print window_
 
-Appointment Print
+##Appointment Print
 
 * In Schedule control, you can print the appointment alone by using context menu. Add print as menu item in the context menu settings as in the following code example. 
 
-[ASPX]
+{% highlight html %}
 
 
 
-&lt;ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData"&gt;
 
-&lt;%--To Add the Context menu setting-- %&gt;
+<ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData">
 
-&lt;ContextMenuSettings Enable="true"&gt;
+<%--To Add the Context menu setting-- %>
 
-&lt;%--To Add the Context menu setting-- %&gt;
+<ContextMenuSettings Enable="true">
 
-&lt;MenuItems&gt;
+<%--To Add the Context menu setting-- %>
 
-&lt;AppointmentCollection&gt;
+<MenuItems>
 
-&lt;ej:Appointment Id="open" Text="Open Appointment" /&gt;
+<AppointmentCollection>
 
-&lt;ej:Appointment Id="delete" Text="Delete Appointment" /&gt;
+<ej:Appointment Id="open" Text="Open Appointment" />
 
-&lt;%--To Add the print item in that collection-- %&gt;
+<ej:Appointment Id="delete" Text="Delete Appointment" />
 
-&lt;ej:Appointment Id="print" Text="Print Appointment" /&gt;
+<%--To Add the print item in that collection-- %>
 
-&lt;/AppointmentCollection&gt;
+<ej:Appointment Id="print" Text="Print Appointment" />
 
-&lt;/MenuItems&gt;
+</AppointmentCollection>
 
-&lt;/ContextMenuSettings&gt;
+</MenuItems>
 
-&lt;%--Add the necessary schedule properties here-- %&gt;
+</ContextMenuSettings>
 
-&lt;/ej:Schedule&gt;
+<%--Add the necessary schedule properties here-- %>
 
-&lt;div id="reminder"&gt;
+</ej:Schedule>
 
-&lt;a class="pull-left" href="#" style="margin-top: 9px; outline: medium none;"&gt;
+<div id="reminder">
 
-&lt;div class="reminder-icon e-btn e-select /"&gt;
+<a class="pull-left" href="#" style="margin-top: 9px; outline: medium none;">
 
-&lt;/a&gt;
+<div class="reminder-icon e-btn e-select /">
 
-&lt;/div&gt;
+</a>
 
-&lt;style type="text/css"&gt;
+</div>
+
+<style type="text/css">
 
 #reminder
 
@@ -173,9 +172,9 @@ width: 28px;
 
 }
 
-&lt;/style&gt;
+</style>
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
 $(function () {
 
@@ -193,27 +192,25 @@ obj.print();
 
 
 
-&lt;/script&gt;
+</script>
 
-
+{% endhighlight %}
 
 * Right click on the appointment and select print appointment in the context menu as follows.
 
 
 
-{ ![](Print_images/Print_img3.png) | markdownify }
-{:.image }
+![](Print_images/Print_img3.png)
 
 
-_Figure_ _123__: Schedule with Print option in Context Menu_
+_Figure_ _123_: Schedule with Print option in Context Menu_
 
 * Now, the widow is promoted to new document with appointment details and print window opens.
 
 
 
-{ ![](Print_images/Print_img4.png) | markdownify }
-{:.image }
+![](Print_images/Print_img4.png)
 
 
-_Figure_ _124__: Schedule with Appointment Print_
+_Figure_ _124_: Schedule with Appointment Print_
 

@@ -7,17 +7,18 @@ control: Schedule
 documentation: ug
 ---
 
-## Localization
+# Localization
 
 * You can set any of the cultures to the Schedule control by using locale property. It is necessary to define all the localized words used in the Schedule control separately, as per the culture that isused within it. 
 * By default, en-US culture is set to the Schedule control.
 
-Localization String for Schedule control
+##Localization String for Schedule control
 
 * The following table contains the Key values and its corresponding localized String values for en-US culture. Therefore, to apply your localization/culture to the schedule control, change the “value (string value)” against the “each Key”.
 
-_Table_ _2__: List of keys and string values_
+_Table_ _2_: List of keys and string values_
 
+{% highlight html %}
 <table>
 <tr>
 <td>
@@ -348,47 +349,48 @@ _Table_ _2__: List of keys and string values_
     Resources</td><td>
     RESOURCES</td></tr>
 </table>
-
+{% endhighlight %}
 
 * To learn about localizing in the Schedule control on your required culture, refer the following code example. 
 
 
+{% highlight html %}
 
-[ASP]
 
-&lt;asp:Content ID="Content1" ContentPlaceHolderID="SampleHeading" runat="server"&gt;
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SampleHeading" runat="server">
 
 <span class="sampleName">Schedule / Localization</span>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 
 
-&lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
 
-&lt;div&gt;
+<div>
 
-&lt;ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Locale="fr-FR" Width="100%" Height="525px" CurrentDate="5/2/2014"&gt;
+<ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Locale="fr-FR" Width="100%" Height="525px" CurrentDate="5/2/2014">
 
-&lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/&gt;
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
 
-&lt;/ej:Schedule&gt;
-
-
-
-&lt;/div&gt;
-
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
-
-SelectCommand="SELECT * FROM [Localization]">&lt;/asp:SqlDataSource&gt;
-
-&lt;/asp:Content&gt;
+</ej:Schedule>
 
 
 
-&lt;asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection"&gt;
+</div>
 
-&lt;script type="text/javascript"&gt;
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
+
+SelectCommand="SELECT * FROM [Localization]"></asp:SqlDataSource>
+
+</asp:Content>
+
+
+
+<asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
+
+<script type="text/javascript">
 
 $(function () {
 
@@ -560,53 +562,53 @@ $("#Schedule1").ejSchedule({ locale: args.value });
 
 }
 
-&lt;/script&gt;
+</script>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content ID="Content2" runat="server" ContentPlaceHolderID="PropertySection"&gt;
+<asp:Content ID="Content2" runat="server" ContentPlaceHolderID="PropertySection">
 
-&lt;div id="sampleProperties"&gt;
+<div id="sampleProperties">
 
-&lt;div class="prop-grid"&gt;
+<div class="prop-grid">
 
-&lt;div class="row"&gt;
+<div class="row">
 
-&lt;div class="col-md-3"&gt;
+<div class="col-md-3">
 
 Select Culture
 
-&lt;/div&gt;
+</div>
 
-&lt;div class="col-md-3"&gt;
+<div class="col-md-3">
 
-&lt;ej:DropDownList runat="server" ID="ddlLocale" Width="115px" SelectedItemIndex="1" ClientSideOnChange="onChange" ClientSideOnSelect="onChange"&gt;
+<ej:DropDownList runat="server" ID="ddlLocale" Width="115px" SelectedItemIndex="1" ClientSideOnChange="onChange" ClientSideOnSelect="onChange">
 
-&lt;Items&gt;
+<Items>
 
-&lt;ej:DropDownListItem  Text="fr-FR" Value="fr-FR"/&gt;
+<ej:DropDownListItem  Text="fr-FR" Value="fr-FR"/>
 
-&lt;ej:DropDownListItem  Text="en-US" Value="en-US"/&gt;
+<ej:DropDownListItem  Text="en-US" Value="en-US"/>
 
-&lt;ej:DropDownListItem  Text="vi-VN" Value="vi-VN"/&gt;
+<ej:DropDownListItem  Text="vi-VN" Value="vi-VN"/>
 
-&lt;/Items&gt;
+</Items>
 
-&lt;/ej:DropDownList&gt;
+</ej:DropDownList>
 
-&lt;/div&gt;
+</div>
 
-&lt;/div&gt;
+</div>
 
-&lt;/div&gt;
+</div>
 
-&lt;/div&gt;
+</div>
 
-&lt;/asp:Content&gt;
-
-
+</asp:Content>
 
 
+
+{% endhighlight %}
 
 
 
@@ -622,11 +624,10 @@ Important: An important note while making use of localization in the schedule co
 
 
 
-{ ![](Localization_images/Localization_img1.png) | markdownify }
-{:.image }
+![](Localization_images/Localization_img1.png)
 
 
-  _Figure_ _104__:  schedule with localization._
+  _Figure_ _104_:  schedule with localization._
 
 RTL
 
@@ -635,8 +636,8 @@ RTL
 The following code example explains how to enable the rtl property of the Schedule control.
 
 
+{% highlight html %}
 
-[ASP]
 
 
 
@@ -648,23 +649,22 @@ EnableRTL="true">
 
 
 
-&lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/&gt;
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
 
-&lt;/ej:Schedule&gt;
-
-
-
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
-
-SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
+</ej:Schedule>
 
 
+
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
+
+SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+{% endhighlight %}
 
 * When the rtl is set to ‘true’, the Schedule control is displayed as follows.
 
-{ ![](Localization_images/Localization_img2.png) | markdownify }
-{:.image }
+![](Localization_images/Localization_img2.png)
 
 
-   _Figure_ _105__:  schedule with RTL._
+   _Figure_ _105_:  schedule with RTL._
 

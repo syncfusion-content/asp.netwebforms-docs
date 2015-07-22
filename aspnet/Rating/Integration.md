@@ -7,9 +7,9 @@ control: Rating
 documentation: ug
 ---
 
-## Integration
+# Integration
 
-### Angular Binding
+## Angular Binding
 
 For Angular Binding, you can include angular.min.js, ej.unobtrusive.min.js, and ej.widget.angular.min.js files.
 
@@ -90,11 +90,11 @@ Include the following Script to achieve the angular binding.
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Integration_images/Integration_img1.png) | markdownify }
-{:.image }
+![](Integration_images/Integration_img1.png)
 
 
-### Konckout Binding
+
+## Konckout Binding
 
 Knockout support allows you to bind the HTML elements with any of the available data models.
 
@@ -205,7 +205,7 @@ Add the following scripts to render the Rating with Knockout support.
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Integration_images/Integration_img2.png) | markdownify }
-{:.image }
+![](Integration_images/Integration_img2.png)
+
 
 
