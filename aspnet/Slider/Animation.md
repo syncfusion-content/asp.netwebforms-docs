@@ -7,11 +7,11 @@ control: Slider
 documentation: ug
 ---
 
-## Animation
+# Animation
 
 This feature includes the animation effect for the Slider while moving the Slider handle.
 
-### Enabling Animation
+## Enabling Animation
 
 By default, animation is enabled in the Slider. By using the EnableAnimation property, you can enable/disable the animation effects. Data type of this property is “Boolean”.
 
@@ -31,7 +31,7 @@ In an ASPX page, define the Slider control and set the EnableAnimation property 
 
 
 
-### Customizing Animation speed
+## Customizing Animation speed
 
 Animation speed of the Slider indicates the speed where the Slider handle can be moved. Higher the value specified for this property decreases the rate of speed where the Slider handle can be moved. You can customize the animation speed of the Slider by using the AnimationSpeed property. Default value of this property is 500.
 

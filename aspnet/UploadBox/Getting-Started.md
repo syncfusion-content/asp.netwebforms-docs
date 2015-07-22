@@ -13,38 +13,38 @@ documentation: ug
 
 ASP.NET WebForms UploadBox provides support to upload the files or photos within your webpage. From the following guidelines, you can learn how to upload the file by using Resume Upload scenario. This helps you to restrict some file extensions while uploading the resume in the server by using UploadBox control. The following screenshot demonstrates the functionality of UploadBox with file extension.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
+
 
 
 In the above screenshot, you can upload a resume with .png and .docx file extensions. This stops unsupported resume formats from being uploaded to the server.
 
-Create UploadBox widgets
+### Create UploadBox widgets
 
 ASP.NET UploadBox widget has built-in features like Upload multiple files, Delete files, check the status of the file, whether it shows complete or failed, and retry uploading the files.  You can easily create the UploadBox by using the following steps.
 
-You can create a Web project and add the necessary assemblies, styles, and scripts with the help of the given [ASP-Getting Started](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm) Documentation.{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
-{:.image }
+You can create a Web project and add the necessary assemblies, styles, and scripts with the help of the given [ASP-Getting Started](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm) Documentation.![](Getting-Started_images/Getting-Started_img2.png)
+
  Add the following code example to the ASPX page to render the UploadBox.
 
 
 
 
-
-&lt;div class="posupload"&gt;
+{% highlight html %}
+<div class="posupload">
 
 <b>Select a file to upload</b>
 
-&lt;br /&gt;&lt;br /&gt;
+<br /><br />
 
-&lt;ej:UploadBox ID="Upload1" runat="server" SaveUrl="saveFiles.ashx" RemoveUrl="removeFiles.ashx" AutoUpload="false"&gt;&lt;/ej:UploadBox&gt;
+<ej:UploadBox ID="Upload1" runat="server" SaveUrl="saveFiles.ashx" RemoveUrl="removeFiles.ashx" AutoUpload="false"></ej:UploadBox>
 
-&lt;/div&gt;
+</div>
 
-
+{% endhighlight %}
 
 Add the given styles to show the UploadBox with margin alignments.
-
+{% highlight c# %}
         .posupload
 
         {
@@ -63,10 +63,10 @@ Add the given styles to show the UploadBox with margin alignments.
 
         }
 
-
+{% endhighlight %}
 
 Add the handlers to save and remove the files uploaded by using the UploadBox. Create a new handler file .ashx and save as saveFile.ashx and add the following code to it. 
-
+{% highlight c# %}
 public void ProcessRequest(HttpContext context)
 
     {
@@ -121,12 +121,12 @@ public void ProcessRequest(HttpContext context)
 
     }    
 
-
+{% endhighlight %}
 
 
 
 Create a new handler file .ashx and save as removeFile.ashx and add the following code to it. 
-
+{% highlight c# %}
 public void ProcessRequest(HttpContext context)
 
     {
@@ -157,33 +157,33 @@ public void ProcessRequest(HttpContext context)
 
     }
 
-
+{% endhighlight %}
 
 Run the code to render the following output.
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
+
 
 
 Run the project to see the following output for the given steps. The file is uploaded. 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
-Set Restrictions to File Extensions
+
+## Set Restrictions to File Extensions
 
 In a real-time scenario, some file extensions are restricted. You can allow files or restrict files by using the following properties, fileallow and filedeny enabled in the UploadBox. 
 
-> _Note: The SaveUrl and RemoveUrl are the same as above._
+> Note: The SaveUrl and RemoveUrl are the same as above.
 
 Add the following code example to the script section.
-
+{% highlight c# %}
         var uploadobject;
 
         function allowfiletype() {
 
-            uploadobject = $("#&lt;%=Upload1.ClientID%&gt;").data("ejUploadbox");
+            uploadobject = $("#<%=Upload1.ClientID%>").data("ejUploadbox");
 
             uploadobject.option('extensionsAllow', $("#fileallow").val());
 
@@ -195,7 +195,7 @@ Add the following code example to the script section.
 
         function denyfiletype() {
 
-            uploadobject = $("#&lt;%=Upload1.ClientID%&gt;").data("ejUploadbox");
+            uploadobject = $("#<%=Upload1.ClientID%>").data("ejUploadbox");
 
             uploadobject.option('extensionsAllow', "");
 
@@ -205,104 +205,104 @@ Add the following code example to the script section.
 
         }
 
-
+{% endhighlight %}
 
 Add input elements to create elements for file extensions.
 
-_Note: Add the following input elements and two button elements to give file extensions that should support uploading._
+> Note: Add the following input elements and two button elements to give file extensions that should support uploading.
 
+{% highlight html %}
 
-
-    &lt;div class="posupload"&gt;
+    <div class="posupload">
 
         <b>Select a file to upload</b>
 
-        &lt;br /&gt;
+        <br />
 
-        &lt;br /&gt;
+        <br />
 
         <ej:UploadBox ID="Upload1" SaveUrl="saveFiles.ashx" RemoveUrl="removeFiles.ashx"
 
             ExtensionsAllow=".docx" ExtensionsDeny=".pdf" runat="server">
 
-        &lt;/ej:UploadBox&gt;
+        </ej:UploadBox>
 
-        &lt;label id="extdetails"&gt;
+        <label id="extdetails">
 
             By default, it allow .docx format and deny .pdf format files
 
-        &lt;/label&gt;
+        </label>
 
-    &lt;/div&gt;
+    </div>
 
-    &lt;br /&gt;
+    <br />
 
-    &lt;br /&gt;
+    <br />
 
-    &lt;div style="margin-left: 15px"&gt;
+    <div style="margin-left: 15px">
 
-        <b>Setting Restriction</b>&lt;/div&gt;
+        <b>Setting Restriction</b></div>
 
-    &lt;div class="allow_deny"&gt;
+    <div class="allow_deny">
 
-        &lt;div class="row"&gt;
+        <div class="row">
 
-            &lt;div class="col-md-3"&gt;
+            <div class="col-md-3">
 
                 Extensions:
 
-            &lt;/div&gt;
+            </div>
 
-        &lt;/div&gt;
+        </div>
 
-        &lt;div class="row"&gt;
+        <div class="row">
 
-            &lt;div class="col-md-3"&gt;
+            <div class="col-md-3">
 
-                &lt;input type="text" id="fileallow" class="tb6 ejinputtext" /&gt;
+                <input type="text" id="fileallow" class="tb6 ejinputtext" />
 
-            &lt;/div&gt;
+            </div>
 
-            &lt;div class="col-md-3"&gt;
+            <div class="col-md-3">
 
                 <ej:Button ID="upbutton1" Type="Button" CssClass="e-btn" Text="Allow" ClientSideOnClick="allowfiletype"
 
                     runat="server">
 
-                &lt;/ej:Button&gt;
+                </ej:Button>
 
-            &lt;/div&gt;
+            </div>
 
-        &lt;/div&gt;
+        </div>
 
-        &lt;div class="row"&gt;
+        <div class="row">
 
-            &lt;div class="col-md-3"&gt;
+            <div class="col-md-3">
 
-                &lt;input type="text" id="filedeny" class="tb6 ejinputtext" /&gt;
+                <input type="text" id="filedeny" class="tb6 ejinputtext" />
 
-            &lt;/div&gt;
+            </div>
 
-            &lt;div class="col-md-3"&gt;
+            <div class="col-md-3">
 
                 <ej:Button ID="upbutton2" Type="Button" CssClass="e-btn" Text="Deny" ClientSideOnClick="denyfiletype"
 
                     runat="server">
 
-                &lt;/ej:Button&gt;
+                </ej:Button>
 
-            &lt;/div&gt;
+            </div>
 
-        &lt;/div&gt;
+        </div>
 
-    &lt;/div&gt;
+    </div>
 
 
-
+{% endhighlight %}
 
 
 1. Add the following Styles in the ASPX page to allow or deny files.
-
+{% highlight c# %}
         .posupload
 
         {
@@ -359,29 +359,29 @@ _Note: Add the following input elements and two button elements to give file ext
 
         }
 
-
+{% endhighlight %}
 
 
 
 Run the code to render the following output with the file extensions.
 
-> _Note: You can restrict one or more files at a time by giving it as .html,.txt._
+> Note: You can restrict one or more files at a time by giving it as .html,.txt.
 
 In the UploadBox control, you can either allow files with specified extension only by using the ExtensionAllow property or deny files with specified extension only by using the ExtensionDeny property.
 
 The following screenshot displays an UploadBox control with the file extension.
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
 
 
-Upload Multiple Files
+
+## Upload Multiple Files
 
 To upload multiple files in the UploadBox control, click the Browse button to select files. The selected files appear in the UploadBox control and you can upload those files.
 
 The following screenshot displays an UploadBox control with multiple files selected.
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img6.png)
+
 
 

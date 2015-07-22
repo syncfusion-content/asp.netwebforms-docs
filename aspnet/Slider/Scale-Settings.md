@@ -7,11 +7,11 @@ control: Slider
 documentation: ug
 ---
 
-## Scale Settings
+# Scale Settings
 
 Slider control includes option to display the scale on the Slider. Scale in Slider supports you to easily identify the current value/values of the Slider. Scale contains small ticks and large ticks. Values of the Slider are displayed above each large ticks.
 
-### Show Scale
+## Show Scale
 
 This property enables the scale in the Slider. By default, its value is false. Data type of this property is Boolean.
 
@@ -39,17 +39,17 @@ The following screenshot displays the output of the above code example.
 
 Default Slider
 
-{ ![](Scale-Settings_images/Scale-Settings_img1.png) | markdownify }
-{:.image }
+ ![](Scale-Settings_images/Scale-Settings_img1.png)
+
 
 
 Range Slider
 
-{ ![](Scale-Settings_images/Scale-Settings_img2.png) | markdownify }
-{:.image }
+ ![](Scale-Settings_images/Scale-Settings_img2.png)
 
 
-### Enable Small Ticks
+
+## Enable Small Ticks
 
 Slider control provides you an option to enable/disable the small ticks present in the scale. By default, when you enable showScale property, small ticks are displayed in the scale. Use the ShowSmallTicks property to disable the small ticks present in the scale. Data type of this property is Boolean.
 
@@ -77,21 +77,21 @@ The following screenshot displays the output of the above code example.
 
 Default Slider
 
-{ ![](Scale-Settings_images/Scale-Settings_img3.png) | markdownify }
-{:.image }
+![](Scale-Settings_images/Scale-Settings_img3.png)
+
 
 
 Range Slider
 
-{ ![](Scale-Settings_images/Scale-Settings_img4.png) | markdownify }
-{:.image }
+![](Scale-Settings_images/Scale-Settings_img4.png)
 
 
-### Small step
+
+## Small step
 
 This property specifies the distance between two small ticks present in the scale and the position of the small ticks in the Slider scale. Data type of this property is number.
 
-### Large step
+## Large step
 
 This property specifies the distance between the two small ticks present in the scale and the position of the large ticks in the Slider scale. Data type of this property is number.
 
@@ -121,14 +121,14 @@ The following screenshot displays the output of the above code example.
 
 Default Slider
 
-{ ![](Scale-Settings_images/Scale-Settings_img5.png) | markdownify }
-{:.image }
+![](Scale-Settings_images/Scale-Settings_img5.png)
+
 
 
    Range Slider
 
-{ ![](Scale-Settings_images/Scale-Settings_img6.png) | markdownify }
-{:.image }
+![](Scale-Settings_images/Scale-Settings_img6.png)
+
 
 
 In the above example, for Default Slider, the SmallStep value is specified as 5, so for each 5 values from the starting value, small ticks are enabled. Also, LargeStep value is specified as 20, so for each 20 values from the starting value, large ticks are enabled.

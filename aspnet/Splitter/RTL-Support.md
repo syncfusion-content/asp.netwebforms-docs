@@ -7,11 +7,11 @@ control: Splitter
 documentation: ug
 ---
 
-## RTL Support
+# RTL Support
 
 The Splitter provides RTL (Right-To-Left) support. The alignment of Splitter can be changed from Left-To-Right and Right-To-Left.
 
-### Enable RTL
+## Enable RTL
 
 The following steps explain enabling the right-to-left property for Splitter control.
 
@@ -117,7 +117,7 @@ In an ASPX page, define the Splitter control and add the contents corresponding
 
 The following screenshot displays the output of the above code example.
 
-{ ![](RTL-Support_images/RTL-Support_img1.png) | markdownify }
-{:.image }
+{{ '![](RTL-Support_images/RTL-Support_img1.png)' | markdownify }}
+
 
 

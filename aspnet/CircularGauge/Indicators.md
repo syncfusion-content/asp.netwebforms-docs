@@ -11,54 +11,44 @@ documentation: ug
 
 Indicators simply indicates the current status of the pointer. Indicators are in several formats such as in shape format, textual format and image format.
 
-
-
 ## Adding Indicator Collection 
-
-
 
 Indicators collection is directly added to the scale object. Refer the following code to add indicator collection in a Gauge control.
 
 
-
-[ASP]
-
+{% highlight html %}
 
 
-&lt;%--For Circular Gauge rendering-- %&gt;
+<%--For Circular Gauge rendering-- %>
 
-&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-&lt;Scales&gt;
+<Scales>
 
-&lt;ej:CircularScales Showindicators="true" &gt;
+<ej:CircularScales Showindicators="true" >
 
-&lt;IndicatorCollection&gt;
+<IndicatorCollection>
 
-&lt;ej:CircularIndicators Height="10" width="10" Type="Circle"&gt;
+<ej:CircularIndicators Height="10" width="10" Type="Circle">
 
-&lt;Position X="185" Y="300" /&gt;
+<Position X="185" Y="300" />
 
-&lt;/ej:CircularIndicators&gt;
+</ej:CircularIndicators>
 
-&lt;/IndicatorCollection&gt;
+</IndicatorCollection>
 
-&lt;/ej:CircularScales&gt;
+</ej:CircularScales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
-
-
+{% endhighlight %}
 
 
 Execute the above code to render the following output.
 
  ![C:/Users/karthigeyan/Desktop/das.png](Indicators_images/Indicators_img1.png)
-{:.image }
-
-
 
 
 ## Basic Customization
@@ -67,55 +57,52 @@ Execute the above code to render the following output.
 * Indicators are of several types such as, circle, rectangle, rounded rectangle, text and image. By using the type property you can avail those shapes. For image type imageUrl property is used. 
 
 
-
-[ASP]
-
-&lt;%--For Circular Gauge rendering-- %&gt;
-
-&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
-
-&lt;Scales&gt;
-
-&lt;ej:CircularScales Showindicators="true" backgroundColor="#5DF243" ShowscaleBar="true"  Size="5" radius="120" MinorIntervalValue="5" &gt;
-
-&lt;Border Width="1.5" Color="black" /&gt;
-
-&lt;PointerCollection&gt;
-
-&lt;ej:Pointers BackgroundColor="#5DF243" length="110"&gt;&lt;/ej:Pointers&gt;
-
-&lt;/PointerCollection&gt;
-
-&lt;labelCollection&gt;
-
-&lt;ej:CircularLabels type="major" /&gt;
-
-&lt;/labelCollection&gt;
-
-&lt;IndicatorCollection&gt;
-
-&lt;ej:CircularIndicators Height="10" width="10" Type="Circle" &gt;
-
-&lt;Position X="185" Y="300" /&gt;
-
-&lt;/ej:CircularIndicators&gt;
-
-&lt;/IndicatorCollection&gt;
-
-&lt;/ej:CircularScales&gt;
-
-&lt;/Scales&gt;
-
-&lt;/ej:CircularGauge&gt;
+{% highlight html %}
 
 
+<%--For Circular Gauge rendering-- %>
+
+<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
+
+<Scales>
+
+<ej:CircularScales Showindicators="true" backgroundColor="#5DF243" ShowscaleBar="true"  Size="5" radius="120" MinorIntervalValue="5" >
+
+<Border Width="1.5" Color="black" />
+
+<PointerCollection>
+
+<ej:Pointers BackgroundColor="#5DF243" length="110"></ej:Pointers>
+
+</PointerCollection>
+
+<labelCollection>
+
+<ej:CircularLabels type="major" />
+
+</labelCollection>
+
+<IndicatorCollection>
+
+<ej:CircularIndicators Height="10" width="10" Type="Circle" >
+
+<Position X="185" Y="300" />
+
+</ej:CircularIndicators>
+
+</IndicatorCollection>
+
+</ej:CircularScales>
+
+</Scales>
+
+</ej:CircularGauge>
+
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
  ![](Indicators_images/Indicators_img2.png)
-{:.image }
-
-
 
 
 ## State Ranges
@@ -124,55 +111,48 @@ Execute the above code to render the following output.
 * The backgroundColor and borderColor sets the appearance behavior for the indicators. For text type indicators you can give value for text. And text can be changed whenever the pointer crosses its state range area. There are many basic font options available for the text in the state range such as size, fontStyle and fontFamily.
 
 
-
-[ASP]
-
+{% highlight html %}
 
 
-&lt;%--For Circular Gauge rendering-- %&gt;
+<%--For Circular Gauge rendering-- %>
 
-&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-&lt;Scales&gt;
+<Scales>
 
-&lt;ej:CircularScales Showindicators="true" backgroundColor="#5DF243" ShowscaleBar="true"  Size="5" radius="150" MinorIntervalValue="5" &gt;
+<ej:CircularScales Showindicators="true" backgroundColor="#5DF243" ShowscaleBar="true"  Size="5" radius="150" MinorIntervalValue="5" >
 
-&lt;Border Width="1.5" Color="black" /&gt;
+<Border Width="1.5" Color="black" />
 
-&lt;PointerCollection&gt;
+<PointerCollection>
 
-&lt;ej:Pointers BackgroundColor="#5DF243" length="110"&gt;&lt;/ej:Pointers&gt;
+<ej:Pointers BackgroundColor="#5DF243" length="110"></ej:Pointers>
 
-&lt;/PointerCollection&gt;
+</PointerCollection>
 
-&lt;IndicatorCollection&gt;
+<IndicatorCollection>
 
+<ej:CircularIndicators Height="10" width="10" Type="Circle" >
 
+<Position X="185" Y="300" />
 
-&lt;ej:CircularIndicators Height="10" width="10" Type="Circle" &gt;
+<StateRangeCollection> <ej: CircularStateRanges EndValue="100" startValue="0" text="" TextColor="#870505" BackgroundColor="#5DF243" BorderColor="black"></ej: CircularStateRanges></StateRangeCollection><%--For setting state range end value, start value, text, text color, background color and bordercolor-- %>
 
-&lt;Position X="185" Y="300" /&gt;
+</ej:CircularIndicators>
 
-&lt;StateRangeCollection&gt; &lt;ej: CircularStateRanges EndValue="100" startValue="0" text="" TextColor="#870505" BackgroundColor="#5DF243" BorderColor="black"&gt;&lt;/ej: CircularStateRanges&gt;&lt;/StateRangeCollection&gt;&lt;%--For setting state range end value, start value, text, text color, background color and bordercolor-- %&gt;
+</IndicatorCollection>
 
-&lt;/ej:CircularIndicators&gt;
+</ej:CircularScales>
 
-&lt;/IndicatorCollection&gt;
+</Scales>
 
-&lt;/ej:CircularScales&gt;
+</ej:CircularGauge>
 
-&lt;/Scales&gt;
-
-&lt;/ej:CircularGauge&gt;
-
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
  ![](Indicators_images/Indicators_img3.png)
-{:.image }
-
-
 
 
 ## Multiple Indicators
@@ -180,75 +160,75 @@ Execute the above code to render the following output.
 You can use multiple indicators for a single Gauge. Each indicator have a list of state ranges. Refer the following code example for multiple Indicators.
 
 
+{% highlight html %}
 
-[ASP]
 
-&lt;%--For Circular Gauge rendering-- %&gt;
+<%--For Circular Gauge rendering-- %>
 
-&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-&lt;Scales&gt;
+<Scales>
 
-&lt;ej:CircularScales Showindicators="true" ShowRanges="true"  ShowscaleBar="true"  Size="5" radius="150" MinorIntervalValue="5" &gt;
+<ej:CircularScales Showindicators="true" ShowRanges="true"  ShowscaleBar="true"  Size="5" radius="150" MinorIntervalValue="5" >
 
-&lt;PointerCollection&gt;
+<PointerCollection>
 
-&lt;ej:Pointers  Value="70"  length="110"&gt;&lt;/ej:Pointers&gt;
+<ej:Pointers  Value="70"  length="110"></ej:Pointers>
 
-&lt;/PointerCollection&gt;
+</PointerCollection>
 
-&lt;IndicatorCollection&gt;
+<IndicatorCollection>
 
-&lt;%--indicator1 -- %&gt;
+<%--indicator1 -- %>
 
 <ej:CircularIndicators Height="10" width="10" Type="Circle"
 
-&lt;Position X="165" Y="300" /&gt;
+<Position X="165" Y="300" />
 
-&lt;StateRangeCollection&gt;
+<StateRangeCollection>
 
-&lt;ej:CircularStateRanges EndValue="50" startValue="0" BackgroundColor="#24F92F" BorderColor="black"&gt;&lt;/ej:CircularStateRanges&gt;
+<ej:CircularStateRanges EndValue="50" startValue="0" BackgroundColor="#24F92F" BorderColor="black"></ej:CircularStateRanges>
 
-&lt;ej:CircularStateRanges EndValue="50" startValue="100" BackgroundColor="#322C04" BorderColor="black"&gt;&lt;/ej:CircularStateRanges&gt;&lt;/StateRangeCollection&gt;
+<ej:CircularStateRanges EndValue="50" startValue="100" BackgroundColor="#322C04" BorderColor="black"></ej:CircularStateRanges></StateRangeCollection>
 
-&lt;/ej:CircularIndicators&gt;
+</ej:CircularIndicators>
 
-&lt;%--indicator2-- %&gt;
+<%--indicator2-- %>
 
-&lt;ej:CircularIndicators Height="10" width="10" Type="Circle" &gt;
+<ej:CircularIndicators Height="10" width="10" Type="Circle" >
 
-&lt;Position X="215" Y="300" /&gt;
+<Position X="215" Y="300" />
 
-&lt;StateRangeCollection&gt;
+<StateRangeCollection>
 
-&lt;ej:CircularStateRanges EndValue="50" startValue="0" BackgroundColor="#600000" BorderColor="black"&gt;&lt;/ej:CircularStateRanges&gt;
+<ej:CircularStateRanges EndValue="50" startValue="0" BackgroundColor="#600000" BorderColor="black"></ej:CircularStateRanges>
 
-&lt;ej:CircularStateRanges EndValue="100" startValue="50" BackgroundColor="#FF4F2A" BorderColor="black"&gt;&lt;/ej:CircularStateRanges&gt;&lt;/StateRangeCollection&gt;
+<ej:CircularStateRanges EndValue="100" startValue="50" BackgroundColor="#FF4F2A" BorderColor="black"></ej:CircularStateRanges></StateRangeCollection>
 
-&lt;/ej:CircularIndicators&gt;
+</ej:CircularIndicators>
 
-&lt;/IndicatorCollection&gt;
+</IndicatorCollection>
 
-&lt;RangeCollection&gt;
+<RangeCollection>
 
-&lt;ej:CircularRanges DistanceFromScale="-30" startvalue="0" EndValue="50" BackgroundColor="green" Placement="Far"&gt;&lt;/ej:CircularRanges&gt;
+<ej:CircularRanges DistanceFromScale="-30" startvalue="0" EndValue="50" BackgroundColor="green" Placement="Far"></ej:CircularRanges>
 
-&lt;ej:CircularRanges DistanceFromScale="-30" StartValue="50" EndValue="100" BackgroundColor="red" Placement="Far"&gt;&lt;/ej:CircularRanges&gt;
+<ej:CircularRanges DistanceFromScale="-30" StartValue="50" EndValue="100" BackgroundColor="red" Placement="Far"></ej:CircularRanges>
 
-&lt;/RangeCollection&gt;
+</RangeCollection>
 
-&lt;/ej:CircularScales&gt;
+</ej:CircularScales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
  ![](Indicators_images/Indicators_img4.png)
-{:.image }
+
 
 
 Figure 41: Circular Gauge with multiple indicators

@@ -7,13 +7,13 @@ control: Control Name undefined
 documentation: ug
 ---
 
-## Multiple Selection
+# Multiple Selection
 
-### Allow multiple selections
+## Allow multiple selections
 
 ListBox widget allows you to select multiple values from the list Items by using AllowMultiSelection property. You can select multiple list items along with Control key and Shift key press. To select multiple values, set AllowMultiSelection value to true.
 
-#### Configuring multiple selection
+### Configuring multiple selection
 
 The following steps explain you the configuration of the AllowMultiSelection for a ListBox.
 
@@ -114,11 +114,11 @@ protected void Page_Load(object sender, EventArgs e)
 Output for ListBox control that provides multiple selections is as follows.
 
 
-{ ![](Multiple-Selection_images/Multiple-Selection_img1.png) | markdownify }
-{:.image }
+ ![](Multiple-Selection_images/Multiple-Selection_img1.png)
 
 
-#### Multiple selections through index 
+
+### Multiple selections through index 
 
 You can select the list of items from the ListBox by using SelectedItemlist property. Its data type is array. To achieve this, set AllowMultiSelection property as true in ListBox. 
 
@@ -228,7 +228,7 @@ listboxsample.selectedItemlist = indexList;
 Output of the above steps.
 
 
-{ ![](Multiple-Selection_images/Multiple-Selection_img2.png) | markdownify }
-{:.image }
+ ![](Multiple-Selection_images/Multiple-Selection_img2.png)
+
 
 

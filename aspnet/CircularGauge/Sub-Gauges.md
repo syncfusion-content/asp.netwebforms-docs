@@ -17,51 +17,51 @@ Sub gauge collection is directly added to the scale object. Refer the following 
 
 {% highlight html %}
 
-[ASP]
-
-&lt;%--For Circular Gauge rendering-- %&gt;
-
-&lt;%--For setting sub gauge -- %&gt;
-
-&lt;ej:CircularGauge  runat="server" ID="Subgauge1" value="50" BackgroundColor="blue"  Radius="150"&gt;&lt;/ej:CircularGauge&gt;
 
 
+<%--For Circular Gauge rendering-- %>
 
-&lt;ej:CircularGauge runat="server" Value="50" ID="CircularGauge1"&gt;
+<%--For setting sub gauge -- %>
 
-&lt;Scales&gt;
-
-&lt;ej:CircularScales radius="190"&gt;
-
-&lt;PointerCollection&gt;
-
-&lt;ej:Pointers  Value="0"  length="110"&gt;&lt;/ej:Pointers&gt;
-
-&lt;/PointerCollection&gt;
-
-&lt;labelCollection&gt;
-
-&lt;ej:CircularLabels type="major" /&gt;
-
-&lt;/labelCollection&gt;
-
-&lt;SubGaugeCollection&gt;
-
-&lt;ej:SubGauge ControlID="Subgauge1" Height="200"  Width="200"&gt;
-
-&lt;Position X="100" Y="120"/&gt;
-
-&lt;/ej:SubGauge&gt;
-
-&lt;/SubGaugeCollection&gt;
+<ej:CircularGauge  runat="server" ID="Subgauge1" value="50" BackgroundColor="blue"  Radius="150"></ej:CircularGauge>
 
 
 
-&lt;/ej:CircularScales&gt;
+<ej:CircularGauge runat="server" Value="50" ID="CircularGauge1">
 
-&lt;/Scales&gt;
+<Scales>
 
-&lt;/ej:CircularGauge&gt;
+<ej:CircularScales radius="190">
+
+<PointerCollection>
+
+<ej:Pointers  Value="0"  length="110"></ej:Pointers>
+
+</PointerCollection>
+
+<labelCollection>
+
+<ej:CircularLabels type="major" />
+
+</labelCollection>
+
+<SubGaugeCollection>
+
+<ej:SubGauge ControlID="Subgauge1" Height="200"  Width="200">
+
+<Position X="100" Y="120"/>
+
+</ej:SubGauge>
+
+</SubGaugeCollection>
+
+
+
+</ej:CircularScales>
+
+</Scales>
+
+</ej:CircularGauge>
 
 {% endhighlight %}
 
@@ -71,77 +71,60 @@ Basic attributes such as height and width property are used to set height and wi
 
 {% highlight html %}
 
-[ASP]
-
-&lt;%--For Circular Gauge rendering-- %&gt;
-
-&lt;ej:CircularGauge  runat="server" ID="Subgauge1" value="50" BackgroundColor="blue" radius="110"&gt;
-
-&lt;Scales&gt;
-
-&lt;ej:CircularScales radius="110"&gt;
-
-&lt;/ej:CircularScales&gt;
-
-&lt;/Scales&gt;
 
 
+<%--For Circular Gauge rendering-- %>
 
-&lt;/ej:CircularGauge&gt;
+<ej:CircularGauge  runat="server" ID="Subgauge1" value="50" BackgroundColor="blue" radius="110">
+
+<Scales>
+
+<ej:CircularScales radius="110">
+
+</ej:CircularScales>
+
+</Scales>
 
 
 
-&lt;ej:CircularGauge runat="server" ID="CircularGauge1" Height="500" Width="500" Value="50"&gt;
-
-&lt;Scales&gt;
-
-&lt;ej:CircularScales radius="190"&gt;
+</ej:CircularGauge>
 
 
 
-&lt;SubGaugeCollection&gt;
+<ej:CircularGauge runat="server" ID="CircularGauge1" Height="500" Width="500" Value="50">
 
-&lt;%--For enabling animation and setting animation speed-- %&gt;
+<Scales>
 
-&lt;ej:SubGauge ControlID="Subgauge1" Height="200"  Width="200"&gt;
-
-&lt;Position X="200" Y="150"/&gt;
-
-&lt;/ej:SubGauge&gt;
-
-&lt;/SubGaugeCollection&gt;
+<ej:CircularScales radius="190">
 
 
 
-&lt;/ej:CircularScales&gt;
+<SubGaugeCollection>
 
-&lt;/Scales&gt;
+<%--For enabling animation and setting animation speed-- %>
 
-&lt;/ej:CircularGauge&gt;
+<ej:SubGauge ControlID="Subgauge1" Height="200"  Width="200">
+
+<Position X="200" Y="150"/>
+
+</ej:SubGauge>
+
+</SubGaugeCollection>
+
+
+
+</ej:CircularScales>
+
+</Scales>
+
+</ej:CircularGauge>
 
 {% endhighlight %}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Execute the above code to render the following output.
 
  ![](Sub-Gauges_images/Sub-Gauges_img1.png)
-{:.image }
-
-
-
 
 ### Multiple Sub Gauges
 
@@ -149,58 +132,58 @@ You can set multiple sub gauges in a single Circular Gauge by adding an array of
 
 {% highlight html %}
 
-[ASP]
 
 
 
-&lt;%--For Circular Gauge rendering-- %&gt;
 
-&lt;ej:CircularGauge  runat="server" ID="Subgauge1"  BackgroundColor="#f5b43f" &gt;
+<%--For Circular Gauge rendering-- %>
 
-&lt;/ej:CircularGauge&gt;
+<ej:CircularGauge  runat="server" ID="Subgauge1"  BackgroundColor="#f5b43f" >
 
-&lt;ej:CircularGauge  runat="server" ID="Subgauge2"  BackgroundColor="#f5b43f" &gt;
+</ej:CircularGauge>
 
-&lt;/ej:CircularGauge&gt;
+<ej:CircularGauge  runat="server" ID="Subgauge2"  BackgroundColor="#f5b43f" >
 
-&lt;ej:CircularGauge runat="server" ID="CircularGauge1" Height="500" Width="500" &gt;
+</ej:CircularGauge>
 
-&lt;Scales&gt;
+<ej:CircularGauge runat="server" ID="CircularGauge1" Height="500" Width="500" >
 
-&lt;ej:CircularScales ShowRanges="true"  ShowscaleBar="false" radius="250" Size="5" Maximum="100"&gt;
+<Scales>
 
-&lt;SubGaugeCollection&gt;
+<ej:CircularScales ShowRanges="true"  ShowscaleBar="false" radius="250" Size="5" Maximum="100">
 
-&lt;%--subgauge1--%&gt;
+<SubGaugeCollection>
 
-&lt;ej:SubGauge ControlID="Subgauge1" Height="200"  Width="200"&gt;
+<%--subgauge1--%>
 
-&lt;Position X="200" Y="150"/&gt;
+<ej:SubGauge ControlID="Subgauge1" Height="200"  Width="200">
 
-&lt;/ej:SubGauge&gt;
+<Position X="200" Y="150"/>
 
-&lt;%--subgauge2-- %&gt;
+</ej:SubGauge>
 
-&lt;ej:SubGauge ControlID="Subgauge2" Height="200"  Width="200"&gt;
+<%--subgauge2-- %>
 
-&lt;Position X="50" Y="200"/&gt;
+<ej:SubGauge ControlID="Subgauge2" Height="200"  Width="200">
 
-&lt;/ej:SubGauge&gt;
+<Position X="50" Y="200"/>
 
-&lt;/SubGaugeCollection&gt;
+</ej:SubGauge>
 
-&lt;/ej:CircularScales&gt;
+</SubGaugeCollection>
 
-&lt;/Scales&gt;
+</ej:CircularScales>
 
-&lt;/ej:CircularGauge&gt;
+</Scales>
+
+</ej:CircularGauge>
 
 {% endhighlight %}
 
 Execute the above code to render the following output.
 
  ![](Sub-Gauges_images/Sub-Gauges_img2.png)
-{:.image }
+
 
 
 

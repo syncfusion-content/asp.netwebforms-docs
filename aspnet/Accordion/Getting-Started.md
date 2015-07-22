@@ -178,14 +178,14 @@ The following steps describe the creation of Accordion control.
 Execute the above code sample to display the Accordion control with simple control list.
 
  ![C:/Users/Rajaveni/Desktop/JS Docs/Accordion/new/simple.PNG](Getting-Started_images/Getting-Started_img1.png)
-{:.image }
+
 
 
 ## Configure Multiple Open
 
 You can open multiple Accordion tabs to view all products at a time. To render this, set the EnableMultipleOpen property of the Accordion control to true.
 
-> _Note: EnableMultipleOpen_ _property is_ _false_ _by default__._ 
+> Note: EnableMultipleOpen _property is_ _false_ by default. 
 
 You can also open all the panels during initialization by using the SelectedItems property of the Accordion control. The following code sample illustrates the opening of multiple tabs by passing the tab index values to SelectedItems property.
 
@@ -344,16 +344,14 @@ You can also open all the panels during initialization by using the SelectedItem
 Accordion control with EnableMultipleOpen property with value as true is illustrated in the following screenshot.
 
  ![C:/Users/Rajaveni/Desktop/JS Docs/Accordion/new/nround.PNG](Getting-Started_images/Getting-Started_img2.png)
-{:.image }
+
 
 
 ## Setting Rounded corner
 
 Accordion control by default is renders in a regular rectangle. You can modify the regular rectangles with rounded corners by setting the ShowRoundedCorner property to “True”.
 
-> _Note:_ _ShowRoundedCorner_ _property is_ _False_ _by default._
-
-> 
+> Note: ShowRoundedCorner _property is False by default.
 
 {% highlight html %}
 
@@ -510,7 +508,7 @@ Accordion control by default is renders in a regular rectangle. You can modify t
 The following screenshot illustrates the Accordion control with rounded corners.
 
  ![C:/Users/Rajaveni/Desktop/JS Docs/Accordion/new/multt.PNG](Getting-Started_images/Getting-Started_img3.png)
-{:.image }
+
 
 
 ## Customize Icon
@@ -678,6 +676,6 @@ Up/Down arrow icons are available in e-arrowheadup and e- arrowheaddown classes 
 The following screenshot illustrates the customization of SelectedHeader and Header of the Accordion control.
 
  ![C:/Users/Rajaveni/Desktop/JS Docs/Accordion/ssssssssssssss.PNG](Getting-Started_images/Getting-Started_img4.png)
-{:.image }
+
 
 

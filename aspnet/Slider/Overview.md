@@ -11,7 +11,7 @@ documentation: ug
 
 The EssentialASP.NETSlider provides support to select a value from a particular range as well as a range value. The Slider has a sliding base from where the handles are moved. There are three types of Sliders such as default Slider, min-range Slider and range Slider.
 
-Key Features
+### Key Features
 
 * Orientation—Slider control is displayed in a horizontal or vertical direction.
 * Animation—Supports handle movement with animation.

@@ -7,7 +7,7 @@ control: UploadBox
 documentation: ug
 ---
 
-## RTL Support 
+# RTL Support 
 
 This feature supports the change of left-to-right alignment of the UploadBox control to right-to-left (RTL). That is, it sets the UploadBox to right-to-left actions.
 
@@ -27,11 +27,11 @@ In the ASPX page, add the UploadBox element.
 
 {% endhighlight %}
 
-> _Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section)._
+> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 The following screenshot displays the output for RTL support.
 
-{ ![](RTL-Support_images/RTL-Support_img1.png) | markdownify }
-{:.image }
+ ![](RTL-Support_images/RTL-Support_img1.png)
+
 
 

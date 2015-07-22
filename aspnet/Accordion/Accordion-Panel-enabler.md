@@ -70,7 +70,7 @@ You can enable or disable the Accordion control on initial rendering by using th
 Output for disabled Accordion control is as follows.
 
  ![](Accordion-Panel-enabler_images/Accordion-Panel-enabler_img1.png) 
-{:.image }
+
 
 
 ## Enable panel items
@@ -164,7 +164,7 @@ Output for Accordion control with some enabled and disabled items, where first p
 
 
  ![](Accordion-Panel-enabler_images/Accordion-Panel-enabler_img2.png) 
-{:.image }
+
 
 
 ## State Maintenance
@@ -234,6 +234,6 @@ In an ASPX page, define a &lt;div&gt; element that is a container for Accordi
 Output after page refresh maintaining the previous state of Accordion control is as follows.
 
  ![](Accordion-Panel-enabler_images/Accordion-Panel-enabler_img3.png)
-{:.image }
+
 
 

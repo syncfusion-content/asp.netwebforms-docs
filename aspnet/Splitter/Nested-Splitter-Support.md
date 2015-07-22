@@ -7,15 +7,15 @@ control: Splitter
 documentation: ug
 ---
 
-## Nested Splitter Support
+# Nested Splitter Support
 
 The Splitter provides nested pane support that allows you to add a pane between two pane elements.
 
-### Configure Nested Splitter
+## Configure Nested Splitter
 
 The following steps explain the implementation of the “nestedsplitter”option.
 
-In an ASPX page set the corresponding &lt;div&gt; elements for outer and inner Splitter control.
+In an ASPX page set the corresponding <div> elements for outer and inner Splitter control.
 
 {% highlight html %}
 
@@ -115,7 +115,7 @@ The following screenshot displays the output of the above code example.
 
 
 
-{ ![](Nested-Splitter-Support_images/Nested-Splitter-Support_img1.png) | markdownify }
-{:.image }
+ ![](Nested-Splitter-Support_images/Nested-Splitter-Support_img1.png)
+
 
 

@@ -12,41 +12,39 @@ documentation: ug
 Pointer value points out the actual value set in the Circular Gauge. You can customize the pointers to improve the appearance of Gauge.
 
 
-
 ## Adding Pointer Collection
 
 Pointer collection is directly added to the scale object. To add pointer collection in a Gauge control refer the following code example.  
 
 
-
 {% highlight html %}
 
-&lt;%--For Circular Gauge rendering-- %&gt;
+<%--For Circular Gauge rendering-- %>
 
-&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-&lt;Scales&gt;
+<Scales>
 
-&lt;ej:CircularScales&gt;
+<ej:CircularScales>
 
-&lt;PointerCollection&gt;
+<PointerCollection>
 
-&lt;ej:Pointers value="30"&gt;&lt;/ej:Pointers&gt;
+<ej:Pointers value="30"></ej:Pointers>
 
-&lt;/PointerCollection&gt;
+</PointerCollection>
 
-&lt;/ej:CircularScales&gt;
+</ej:CircularScales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
 {% endhighlight %}
 
 Execute the above code to render the following output.
 
  ![C:/Users/karthigeyan/Desktop/q.png](Pointers_images/Pointers_img1.png) 
-{:.image }
+
 
 
 _Figure_ _20_(a): Circular Gauge with  pointer collection_
@@ -59,33 +57,33 @@ Pointer value is the important element in the Circular Gauge that indicates the 
 
 {% highlight html %}
 
-&lt;%--For Circular Gauge rendering-- %&gt;
+<%--For Circular Gauge rendering-- %>
 
-&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-&lt;Scales&gt;
+<Scales>
 
-&lt;ej:CircularScales ShowRanges="true" ShowScalebar="true" Size="2" radius="150" MajorIntervalValue="10" MinorIntervalValue="2" &gt;
+<ej:CircularScales ShowRanges="true" ShowScalebar="true" Size="2" radius="150" MajorIntervalValue="10" MinorIntervalValue="2" >
 
-&lt;RangeCollection&gt;
+<RangeCollection>
 
-&lt;ej:CircularRanges StartValue="20" EndValue="80" BackgroundColor="green"&gt;&lt;/ej:CircularRanges&gt;
+<ej:CircularRanges StartValue="20" EndValue="80" BackgroundColor="green"></ej:CircularRanges>
 
-&lt;/RangeCollection&gt;
+</RangeCollection>
 
-&lt;%--For setting ponter value-- %&gt;
+<%--For setting ponter value-- %>
 
-&lt;PointerCollection&gt;
+<PointerCollection>
 
-&lt;ej:Pointers Value="30"&gt;&lt;/ej:Pointers&gt;
+<ej:Pointers Value="30"></ej:Pointers>
 
-&lt;/PointerCollection&gt;
+</PointerCollection>
 
-&lt;/ej:CircularScales&gt;
+</ej:CircularScales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
 {% endhighlight %}
 
@@ -96,7 +94,7 @@ Execute the above code to render the following output.
 
 
  ![](Pointers_images/Pointers_img2.png)
-{:.image }
+
 
 
 _Figure_ _21_(b): Circular Gauge with customized pointer value_
@@ -115,29 +113,29 @@ _Figure_ _21_(b): Circular Gauge with customized pointer value_
 {% highlight html %}
 
 
-&lt;%--For Circular Gauge rendering-- %&gt;
+<%--For Circular Gauge rendering-- %>
 
-&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-&lt;Scales&gt;
+<Scales>
 
-&lt;ej:CircularScales ShowScalebar="true" radius="110"&gt;
+<ej:CircularScales ShowScalebar="true" radius="110">
 
-&lt;PointerCollection&gt;
+<PointerCollection>
 
-&lt;%--For setting pointer width, background color, pointer value, length -- %&gt;
+<%--For setting pointer width, background color, pointer value, length -- %>
 
 
 
-&lt;ej:Pointers Value="45" width="16" Opacity="0.6" BackgroundColor="yellow" Length="80"&gt;&lt;/ej:Pointers&gt;
+<ej:Pointers Value="45" width="16" Opacity="0.6" BackgroundColor="yellow" Length="80"></ej:Pointers>
 
-&lt;/PointerCollection&gt;
+</PointerCollection>
 
-&lt;/ej:CircularScales&gt;
+</ej:CircularScales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
 {% endhighlight %}
 
@@ -146,7 +144,7 @@ Execute the above code to render the following output.
 
 
  ![](Pointers_images/Pointers_img3.png)
-{:.image }
+
 
 
 ### Appearance
@@ -155,36 +153,32 @@ Execute the above code to render the following output.
 * And you can also adjust the opacity of the pointer using the property opacity which holds the value between 0 and 1. You can add the gradient effects to the pointer using gradient object.
 
 
-
-
-
 {% highlight html %}
 
 
+<%--For Circular Gauge rendering-- %>
 
-&lt;%--For Circular Gauge rendering-- %&gt;
+<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+<Scales>
 
-&lt;Scales&gt;
+<ej:CircularScales ShowscaleBar="true" BackgroundColor="orange" radius="110">
 
-&lt;ej:CircularScales ShowscaleBar="true" BackgroundColor="orange" radius="110"&gt;
+<Border Width="2" Color="red" />
 
-&lt;Border Width="2" Color="red" /&gt;
+<%--For setting pointer value.length, width and background color-- %>
 
-&lt;%--For setting pointer value.length, width and background color-- %&gt;
+<PointerCollection>
 
-&lt;PointerCollection&gt;
+<ej:Pointers Value="45" width="16" Opacity="0.6" BackgroundColor="orange" ShowBackNeedle="true" Length="80" BackNeedleLength="0"></ej:Pointers>
 
-&lt;ej:Pointers Value="45" width="16" Opacity="0.6" BackgroundColor="orange" ShowBackNeedle="true" Length="80" BackNeedleLength="0"&gt;&lt;/ej:Pointers&gt;
+</PointerCollection>
 
-&lt;/PointerCollection&gt;
+</ej:CircularScales>
 
-&lt;/ej:CircularScales&gt;
+</Scales>
 
-&lt;/Scales&gt;
-
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
 {% endhighlight %}
 
@@ -194,8 +188,8 @@ Execute the above code to render the following output.
 
 
 
-{ ![](Pointers_images/Pointers_img4.png) | markdownify }
-{:.image }
+ ![](Pointers_images/Pointers_img4.png)
+
 
 
 ### Position the pointer
@@ -207,29 +201,29 @@ Execute the above code to render the following output.
 
 {% highlight html %}
 
-&lt;%--For Circular Gauge rendering-- %&gt;
+<%--For Circular Gauge rendering-- %>
 
-&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-&lt;Scales&gt;
+<Scales>
 
-&lt;ej:CircularScales ShowscaleBar="true" BackgroundColor="#DCEBF9" Size="10" radius="110"&gt;
+<ej:CircularScales ShowscaleBar="true" BackgroundColor="#DCEBF9" Size="10" radius="110">
 
-&lt;Border Width="2" Color="blue" /&gt;
+<Border Width="2" Color="blue" />
 
-&lt;%--For setting pointer type, placement, marker type, distance from scale-- %&gt;
+<%--For setting pointer type, placement, marker type, distance from scale-- %>
 
-&lt;PointerCollection&gt;
+<PointerCollection>
 
-&lt;ej:Pointers Value="40" length="20" width="20" BackgroundColor="#DCEBF9" ShowBackNeedle="true" BackNeedleLength="0" DistanceFromScale="20" Placement="Near" Type="Marker" MarkerType="Triangle"&gt;&lt;/ej:Pointers&gt;
+<ej:Pointers Value="40" length="20" width="20" BackgroundColor="#DCEBF9" ShowBackNeedle="true" BackNeedleLength="0" DistanceFromScale="20" Placement="Near" Type="Marker" MarkerType="Triangle"></ej:Pointers>
 
-&lt;/PointerCollection&gt;
+</PointerCollection>
 
-&lt;/ej:CircularScales&gt;
+</ej:CircularScales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
 {% endhighlight %}
 Execute the above code to render the following output.
@@ -237,7 +231,7 @@ Execute the above code to render the following output.
 
 
  ![C:/Users/ApoorvahR/Desktop/1.png](Pointers_images/Pointers_img5.png)
-{:.image }
+
 
 
 ### Types
@@ -281,85 +275,85 @@ In this type, needle pointer is completely replaced by image. You can implement 
 
 {% highlight html %}
 
-&lt;ej:CircularGauge runat="server" ID="CircularGauge1"&gt;
+<ej:CircularGauge runat="server" ID="CircularGauge1">
 
 
 
-&lt;%-- To set the Frame type as half circle --%&gt;
+<%-- To set the Frame type as half circle --%>
 
-&lt;Frame FrameType="HalfCircle" /&gt;
-
-
-
-&lt;%-- To set the scale options --%&gt;
-
-&lt;Scales&gt;
-
-&lt;ej:CircularScales ShowRanges="true" SweepAngle="180" StartAngle="180" Radius="130" ShowScaleBar="false" ShowLabels="false"&gt;
+<Frame FrameType="HalfCircle" />
 
 
 
-&lt;%-- To set the pointer options --%&gt;
+<%-- To set the scale options --%>
 
-&lt;PointerCollection&gt;
+<Scales>
+
+<ej:CircularScales ShowRanges="true" SweepAngle="180" StartAngle="180" Radius="130" ShowScaleBar="false" ShowLabels="false">
 
 
 
-&lt;%-- To set the pointer type as needle --%&gt;
+<%-- To set the pointer options --%>
+
+<PointerCollection>
+
+
+
+<%-- To set the pointer type as needle --%>
 
 <ej:Pointers Type="Needle"
 
 
 
-&lt;%-- To set the needle type as image --%&gt;
+<%-- To set the needle type as image --%>
 
 NeedleType="Image"
 
 
 
-&lt;%-- To set the image url --%&gt;
+<%-- To set the image url --%>
 
 ImageUrl="nib.png"
 
 
 
-&lt;%-- To set the pointer value --%&gt;
+<%-- To set the pointer value --%>
 
 Value="60"
 
 
 
-&lt;%-- To set the pointer dimension --%&gt;
+<%-- To set the pointer dimension --%>
 
 Width="160" Length="30">
 
 
 
-&lt;/ej:Pointers&gt;
+</ej:Pointers>
 
-&lt;/PointerCollection&gt;
-
-
-
-&lt;%-- To set the ticks options --%&gt;
-
-&lt;TickCollection&gt;
-
-&lt;ej:CircularTicks Height="0" Width="0" /&gt;
-
-&lt;/TickCollection&gt;
+</PointerCollection>
 
 
 
-&lt;%-- To set the range options --%&gt;
+<%-- To set the ticks options --%>
 
-&lt;RangeCollection&gt;
+<TickCollection>
+
+<ej:CircularTicks Height="0" Width="0" />
+
+</TickCollection>
+
+
+
+<%-- To set the range options --%>
+
+<RangeCollection>
 
 <ej:CircularRanges DistanceFromScale="-30"
 
 StartValue="0" EndValue="70" Size="40">
 
-&lt;/ej:CircularRanges&gt;
+</ej:CircularRanges>
 
 
 
@@ -369,22 +363,22 @@ DistanceFromScale="-30" Size="40"
 
 StartValue="70" EndValue="100">
 
-&lt;Border Color="#fc0606"&gt;&lt;/Border&gt;
+<Border Color="#fc0606"></Border>
 
-&lt;/ej:CircularRanges&gt;
+</ej:CircularRanges>
 
-&lt;/RangeCollection&gt;
+</RangeCollection>
 
-&lt;/ej:CircularScales&gt;
+</ej:CircularScales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
 {% endhighlight %}
 
-{ ![](Pointers_images/Pointers_img6.png) | markdownify }
-{:.image }
+{{ '![](Pointers_images/Pointers_img6.png)' | markdownify }}
+
 
 
 ### Marker Image 
@@ -393,85 +387,85 @@ In this type, the marker pointer is completely replaced by the image. You can im
 
 {% highlight html %}
 
-&lt;ej:CircularGauge runat="server" ID="CircularGauge1"&gt;
+<ej:CircularGauge runat="server" ID="CircularGauge1">
 
 
 
-&lt;%-- To set the Frame type as half circle --%&gt;
+<%-- To set the Frame type as half circle --%>
 
-&lt;Frame FrameType="HalfCircle" /&gt;
-
-
-
-&lt;%-- To set the scale options --%&gt;
-
-&lt;Scales&gt;
-
-&lt;ej:CircularScales ShowRanges="true" SweepAngle="180" StartAngle="180" Radius="130" ShowScaleBar="false" ShowLabels="false"&gt;
+<Frame FrameType="HalfCircle" />
 
 
 
-&lt;%-- To set the pointer options --%&gt;
+<%-- To set the scale options --%>
 
-&lt;PointerCollection&gt;
+<Scales>
+
+<ej:CircularScales ShowRanges="true" SweepAngle="180" StartAngle="180" Radius="130" ShowScaleBar="false" ShowLabels="false">
 
 
 
-&lt;%-- To set the pointer type as marker --%&gt;
+<%-- To set the pointer options --%>
+
+<PointerCollection>
+
+
+
+<%-- To set the pointer type as marker --%>
 
 <ej:Pointers Type="Marker"
 
 
 
-&lt;%-- To set the needle type as image --%&gt;
+<%-- To set the needle type as image --%>
 
 MarkerType="Image"
 
 
 
-&lt;%-- To set the image url --%&gt;
+<%-- To set the image url --%>
 
 ImageUrl="ball.png"
 
 
 
-&lt;%-- To set the pointer value --%&gt;
+<%-- To set the pointer value --%>
 
 Value="60"
 
 
 
-&lt;%-- To set the pointer dimension --%&gt;
+<%-- To set the pointer dimension --%>
 
 Width="160" Length="30">
 
 
 
-&lt;/ej:Pointers&gt;
+</ej:Pointers>
 
-&lt;/PointerCollection&gt;
-
-
-
-&lt;%-- To set the ticks options --%&gt;
-
-&lt;TickCollection&gt;
-
-&lt;ej:CircularTicks Height="0" Width="0" /&gt;
-
-&lt;/TickCollection&gt;
+</PointerCollection>
 
 
 
-&lt;%-- To set the range options --%&gt;
+<%-- To set the ticks options --%>
 
-&lt;RangeCollection&gt;
+<TickCollection>
+
+<ej:CircularTicks Height="0" Width="0" />
+
+</TickCollection>
+
+
+
+<%-- To set the range options --%>
+
+<RangeCollection>
 
 <ej:CircularRanges DistanceFromScale="-30"
 
 StartValue="0" EndValue="70" Size="40">
 
-&lt;/ej:CircularRanges&gt;
+</ej:CircularRanges>
 
 
 
@@ -481,22 +475,22 @@ DistanceFromScale="-30" Size="40"
 
 StartValue="70" EndValue="100">
 
-&lt;Border Color="#fc0606"&gt;&lt;/Border&gt;
+<Border Color="#fc0606"></Border>
 
-&lt;/ej:CircularRanges&gt;
+</ej:CircularRanges>
 
-&lt;/RangeCollection&gt;
+</RangeCollection>
 
-&lt;/ej:CircularScales&gt;
+</ej:CircularScales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
 {% endhighlight %}
 
  ![](Pointers_images/Pointers_img7.png)
-{:.image }
+
 
 
 ### Marker pointer with Image 
@@ -505,85 +499,85 @@ In this type, marker pointer is drawn first and then the image is loaded. You ca
 
 {% highlight html %}
 
-&lt;ej:CircularGauge runat="server" ID="CircularGauge1"&gt;
+<ej:CircularGauge runat="server" ID="CircularGauge1">
 
 
 
-            &lt;%-- To set the Frame type as half circle --%&gt;
+            <%-- To set the Frame type as half circle --%>
 
-            &lt;Frame FrameType="HalfCircle" /&gt;
-
-
-
-            &lt;%-- To set the scale options --%&gt;
-
-            &lt;Scales&gt;
-
-                &lt;ej:CircularScales ShowRanges="true" SweepAngle="180" StartAngle="180" Radius="130" ShowScaleBar="false" ShowLabels="false"&gt;
+            <Frame FrameType="HalfCircle" />
 
 
 
-                   &lt;%-- To set the pointer options --%&gt;
+            <%-- To set the scale options --%>
 
-                    &lt;PointerCollection&gt;
+            <Scales>
+
+                <ej:CircularScales ShowRanges="true" SweepAngle="180" StartAngle="180" Radius="130" ShowScaleBar="false" ShowLabels="false">
 
 
 
-                        &lt;%-- To set the pointer type as marker --%&gt;
+                   <%-- To set the pointer options --%>
+
+                    <PointerCollection>
+
+
+
+                        <%-- To set the pointer type as marker --%>
 
                         <ej:Pointers Type="Marker" 
 
 
 
-                         &lt;%-- To set the needle type as rectangle --%&gt;
+                         <%-- To set the needle type as rectangle --%>
 
                          MarkerType="Rectangle" 
 
 
 
-                         &lt;%-- To set the image url --%&gt;
+                         <%-- To set the image url --%>
 
                          ImageUrl="ball.png" 
 
 
 
-                         &lt;%-- To set the pointer value --%&gt;
+                         <%-- To set the pointer value --%>
 
                          Value="50" 
 
 
 
-                         &lt;%-- To set the pointer dimension --%&gt;
+                         <%-- To set the pointer dimension --%>
 
                          Width="160" Length="30">
 
-                         &lt;Border Color="Black" Width="3" &gt;&lt;/Border&gt;
+                         <Border Color="Black" Width="3" ></Border>
 
-                        &lt;/ej:Pointers&gt;
+                        </ej:Pointers>
 
-                    &lt;/PointerCollection&gt;
-
-
-
-                    &lt;%-- To set the ticks options --%&gt;
-
-                    &lt;TickCollection&gt;
-
-                        &lt;ej:CircularTicks Height="0" Width="0" /&gt;
-
-                    &lt;/TickCollection&gt;
+                    </PointerCollection>
 
 
 
-                    &lt;%-- To set the range options --%&gt;
+                    <%-- To set the ticks options --%>
 
-                    &lt;RangeCollection&gt;
+                    <TickCollection>
+
+                        <ej:CircularTicks Height="0" Width="0" />
+
+                    </TickCollection>
+
+
+
+                    <%-- To set the range options --%>
+
+                    <RangeCollection>
 
                         <ej:CircularRanges DistanceFromScale="-30" 
 
                                  StartValue="0" EndValue="70" Size="40">
 
-                        &lt;/ej:CircularRanges&gt;
+                        </ej:CircularRanges>
 
 
 
@@ -593,22 +587,22 @@ In this type, marker pointer is drawn first and then the image is loaded. You ca
 
                                   StartValue="70" EndValue="100">
 
-                        &lt;Border Color="#fc0606"&gt;&lt;/Border&gt;
+                        <Border Color="#fc0606"></Border>
 
-                        &lt;/ej:CircularRanges&gt;
+                        </ej:CircularRanges>
 
-                    &lt;/RangeCollection&gt;
+                    </RangeCollection>
 
-                &lt;/ej:CircularScales&gt;
+                </ej:CircularScales>
 
-            &lt;/Scales&gt;
+            </Scales>
 
-        &lt;/ej:CircularGauge&gt;
+        </ej:CircularGauge>
 
 
 {% endhighlight %}
  ![](Pointers_images/Pointers_img8.png)
-{:.image }
+
 
 
 ## Multiple Pointers
@@ -619,46 +613,43 @@ Circular Gauge can have multiple pointers on it. You can use any combination and
 
 {% highlight html %}
 
-&lt;%--For Circular Gauge rendering-- %&gt;
+<%--For Circular Gauge rendering-- %>
 
-&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-&lt;Scales&gt;
+<Scales>
 
-&lt;ej:CircularScales ShowscaleBar="true" BackgroundColor="#DCEBF9" Size="10" radius="110"&gt;
+<ej:CircularScales ShowscaleBar="true" BackgroundColor="#DCEBF9" Size="10" radius="110">
 
-&lt;Border Width="2" Color="green" /&gt;
+<Border Width="2" Color="green" />
 
-&lt;%--For setting pointer1-- %&gt;
+<%--For setting pointer1-- %>
 
-&lt;PointerCollection&gt;
+<PointerCollection>
 
-&lt;ej:Pointers Value="40" length="80" width="16" Opacity="0.6" BackgroundColor="#DCEBF9" &gt;&lt;/ej:Pointers&gt;
+<ej:Pointers Value="40" length="80" width="16" Opacity="0.6" BackgroundColor="#DCEBF9" ></ej:Pointers>
 
-&lt;/PointerCollection&gt;
+</PointerCollection>
 
-&lt;%--For setting pointer2-- %&gt;
+<%--For setting pointer2-- %>
 
-&lt;PointerCollection&gt;
+<PointerCollection>
 
-&lt;ej:Pointers placement="Near" Type="Marker" distanceFromScale="20"  MarkerType="Triangle" Length="20" Width="20" Value="60" backgroundColor="#DCEBF9"&gt;&lt;/ej:Pointers&gt;
+<ej:Pointers placement="Near" Type="Marker" distanceFromScale="20"  MarkerType="Triangle" Length="20" Width="20" Value="60" backgroundColor="#DCEBF9"></ej:Pointers>
 
-&lt;/PointerCollection&gt;
+</PointerCollection>
 
-&lt;/ej:CircularScales&gt;
+</ej:CircularScales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
 {% endhighlight %}
 
 Execute the above code to render the following output.
 
  ![](Pointers_images/Pointers_img9.png)
-{:.image }
-
-
 
 
 ## Pointer Value Text
@@ -673,39 +664,39 @@ You can position the Circular Gauge pointer value with the gauge as center by us
 
 
 
-&lt;%--Setting basic properties -- %&gt;
+<%--Setting basic properties -- %>
 
-&lt;ej:CircularGauge runat="server" ID="CoreCircularGauge" Radius= "100" Value= "55" BackgroundColor= "transparent"&gt;
-
-
-
-&lt;%-- Setting scale properties-- %&gt;
+<ej:CircularGauge runat="server" ID="CoreCircularGauge" Radius= "100" Value= "55" BackgroundColor= "transparent">
 
 
 
-&lt;Scales&gt;
-
-&lt;ej:CircularScalesShowRanges= "true"&gt;
+<%-- Setting scale properties-- %>
 
 
 
-&lt;%-- Setting ticks properties-- %&gt;
+<Scales>
+
+<ej:CircularScalesShowRanges= "true">
 
 
 
-&lt;TickCollection&gt;
-
-&lt;ej:CircularTicks Height= "0" Width= "0"/&gt;
-
-&lt;/TickCollection&gt;
+<%-- Setting ticks properties-- %>
 
 
 
-&lt;%-- Setting pointers properties -- %&gt;
+<TickCollection>
 
-&lt;PointerCollection&gt;
+<ej:CircularTicks Height= "0" Width= "0"/>
 
-&lt;ej:Pointers&gt;
+</TickCollection>
+
+
+
+<%-- Setting pointers properties -- %>
+
+<PointerCollection>
+
+<ej:Pointers>
 
 <PointerValueText
 
@@ -713,47 +704,47 @@ Color="#8c8c8c"
 
 
 
-&lt;%-- setting distance property -- %&gt;
+<%-- setting distance property -- %>
 
 Distance="10"
 
 
 
-&lt;%--enable showValue property--%&gt;
+<%--enable showValue property--%>
 
 ShowValue="true">
 
-&lt;/PointerValueText&gt;
+</PointerValueText>
 
-&lt;/ej:Pointers&gt;
+</ej:Pointers>
 
-&lt;/PointerCollection&gt;
+</PointerCollection>
 
 
 
-&lt;%--Setting range properties-- %&gt;
+<%--Setting range properties-- %>
 
-&lt;RangeCollection&gt;
+<RangeCollection>
 
-&lt;ej:CircularRanges Size= "40" StartValue= "0" EndValue= "50" BackgroundColor= "#1B4279"&gt;
+<ej:CircularRanges Size= "40" StartValue= "0" EndValue= "50" BackgroundColor= "#1B4279">
 
-&lt;Border Color= "#1B4279"&gt;&lt;/Border&gt;
+<Border Color= "#1B4279"></Border>
 
-&lt;/ej:CircularRanges&gt;
+</ej:CircularRanges>
 
-&lt;ej:CircularRanges Size= "40" StartValue= "50" EndValue= "100" BackgroundColor= "#91B8F3"&gt;
+<ej:CircularRanges Size= "40" StartValue= "50" EndValue= "100" BackgroundColor= "#91B8F3">
 
-&lt;Border Color="#91B8F3"&gt;&lt;/Border&gt;
+<Border Color="#91B8F3"></Border>
 
-&lt;/ej:CircularRanges&gt;
+</ej:CircularRanges>
 
-&lt;/RangeCollection&gt;
+</RangeCollection>
 
-&lt;/ej:CircularScales&gt;
+</ej:CircularScales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
 {% endhighlight %}
 
@@ -762,9 +753,6 @@ Run the above code to render the output as follows.
 
 
  ![](Pointers_images/Pointers_img10.png)
-{:.image }
-
-
 
 
 ## Appearance
@@ -777,40 +765,37 @@ Appearance of the Circular Gaugepointer value text is adjusted by using four pro
 * Opacity is used to customize the brightness of the text. 
 
 
-
-
-
 {% highlight html %}
 
-&lt;%-- Setting basic properties-- %&gt;
+<%-- Setting basic properties-- %>
 
-&lt;ej:CircularGauge runat="server" ID="CoreCircularGauge" Radius= "100" Value= "55" BackgroundColor= "transparent"&gt;
-
-
-
-&lt;%-- Setting scale properties -- %&gt;
-
-&lt;Scales&gt;
-
-&lt;ej:CircularScales ShowRanges= "true"&gt;
+<ej:CircularGauge runat="server" ID="CoreCircularGauge" Radius= "100" Value= "55" BackgroundColor= "transparent">
 
 
 
-&lt;%-- Setting ticks properties-- %&gt;
+<%-- Setting scale properties -- %>
 
-&lt;TickCollection&gt;
+<Scales>
 
-&lt;ej:CircularTicks Height= "0" Width= "0"/&gt;
-
-&lt;/TickCollection&gt;
+<ej:CircularScales ShowRanges= "true">
 
 
 
-&lt;%-- Setting pointers properties-- %&gt;
+<%-- Setting ticks properties-- %>
 
-&lt;PointerCollection&gt;
+<TickCollection>
 
-&lt;ej:Pointers&gt;
+<ej:CircularTicks Height= "0" Width= "0"/>
+
+</TickCollection>
+
+
+
+<%-- Setting pointers properties-- %>
+
+<PointerCollection>
+
+<ej:Pointers>
 
 <PointerValueText
 
@@ -820,59 +805,59 @@ ShowValue="true"
 
 
 
-&lt;%-- Setting color property-- %&gt;
+<%-- Setting color property-- %>
 
 Color="red"
 
 
 
-&lt;%-- Setting opacity property-- %&gt;
+<%-- Setting opacity property-- %>
 
 Opacity= "0.7"
 
 
 
-&lt;%--Setting angle property-- %&gt;
+<%--Setting angle property-- %>
 
 Angle="20"
 
 
 
-&lt;%-- Setting auto angle property-- %&gt;
+<%-- Setting auto angle property-- %>
 
 AutoAngle="false" >
 
-&lt;/PointerValueText&gt;
+</PointerValueText>
 
-&lt;/ej:Pointers&gt;
+</ej:Pointers>
 
-&lt;/PointerCollection&gt;
+</PointerCollection>
 
 
 
-&lt;%--Setting range properties-- %&gt;
+<%--Setting range properties-- %>
 
-&lt;RangeCollection&gt;
+<RangeCollection>
 
-&lt;ej:CircularRanges Size= "40" StartValue= "0" EndValue= "50" BackgroundColor= "#1B4279"&gt;
+<ej:CircularRanges Size= "40" StartValue= "0" EndValue= "50" BackgroundColor= "#1B4279">
 
-&lt;Border Color= "#1B4279"&gt;&lt;/Border&gt;
+<Border Color= "#1B4279"></Border>
 
-&lt;/ej:CircularRanges&gt;
+</ej:CircularRanges>
 
-&lt;ej:CircularRanges Size= "40" StartValue= "50" EndValue= "100" BackgroundColor= "#91B8F3"&gt;
+<ej:CircularRanges Size= "40" StartValue= "50" EndValue= "100" BackgroundColor= "#91B8F3">
 
-&lt;Border Color="#91B8F3"&gt;&lt;/Border&gt;
+<Border Color="#91B8F3"></Border>
 
-&lt;/ej:CircularRanges&gt;
+</ej:CircularRanges>
 
-&lt;/RangeCollection&gt;
+</RangeCollection>
 
-&lt;/ej:CircularScales&gt;
+</ej:CircularScales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
 {% endhighlight %}
 
@@ -880,8 +865,8 @@ Run the above code to render the output as follows.
 
 
 
-{ ![](Pointers_images/Pointers_img11.png) | markdownify }
-{:.image }
+ ![](Pointers_images/Pointers_img11.png)
+
 
 
 
@@ -894,33 +879,33 @@ Similar to other collection, font option is also available in this pointer value
 
 // Setting basic properties
 
-&lt;ej:CircularGauge runat="server" ID="CoreCircularGauge" Radius= "100" Value= "55" BackgroundColor= "transparent"&gt;
+<ej:CircularGauge runat="server" ID="CoreCircularGauge" Radius= "100" Value= "55" BackgroundColor= "transparent">
 
 
 
 // Setting scale properties
 
-&lt;Scales&gt;
+<Scales>
 
-&lt;ej:CircularScales ShowRanges= "true"&gt;
+<ej:CircularScales ShowRanges= "true">
 
 
 
 // Setting ticks properties
 
-&lt;TickCollection&gt;
+<TickCollection>
 
-&lt;ej:CircularTicks Height= "0" Width= "0"/&gt;
+<ej:CircularTicks Height= "0" Width= "0"/>
 
-&lt;/TickCollection&gt;
+</TickCollection>
 
 
 
 // Setting pointers properties
 
-&lt;PointerCollection&gt;
+<PointerCollection>
 
-&lt;ej:Pointers&gt;
+<ej:Pointers>
 
 <PointerValueText
 
@@ -942,39 +927,39 @@ AutoAngle="false" >
 
 // Setting font option
 
-&lt;Font FontFamily="Arial" FontStyle="Normal" Size="15px"&gt;&lt;/Font&gt;
+<Font FontFamily="Arial" FontStyle="Normal" Size="15px"></Font>
 
-&lt;/PointerValueText&gt;
+</PointerValueText>
 
-&lt;/ej:Pointers&gt;
+</ej:Pointers>
 
-&lt;/PointerCollection&gt;
+</PointerCollection>
 
 
 
 // Setting range properties
 
-&lt;RangeCollection&gt;
+<RangeCollection>
 
-&lt;ej:CircularRanges Size= "40" StartValue= "0" EndValue= "50" BackgroundColor= "#1B4279"&gt;
+<ej:CircularRanges Size= "40" StartValue= "0" EndValue= "50" BackgroundColor= "#1B4279">
 
-&lt;Border Color= "#1B4279"&gt;&lt;/Border&gt;
+<Border Color= "#1B4279"></Border>
 
-&lt;/ej:CircularRanges&gt;
+</ej:CircularRanges>
 
-&lt;ej:CircularRanges Size= "40" StartValue= "50" EndValue= "100" BackgroundColor= "#91B8F3"&gt;
+<ej:CircularRanges Size= "40" StartValue= "50" EndValue= "100" BackgroundColor= "#91B8F3">
 
-&lt;Border Color="#91B8F3"&gt;&lt;/Border&gt;
+<Border Color="#91B8F3"></Border>
 
-&lt;/ej:CircularRanges&gt;
+</ej:CircularRanges>
 
-&lt;/RangeCollection&gt;
+</RangeCollection>
 
-&lt;/ej:CircularScales&gt;
+</ej:CircularScales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
 {% endhighlight %}
 
@@ -985,7 +970,7 @@ Run the above code to render the output as follows.
 
 
  ![](Pointers_images/Pointers_img12.png)
-{:.image }
+
 
 
 Figure 31: Circular Gauge with customized font option in pointer value text.

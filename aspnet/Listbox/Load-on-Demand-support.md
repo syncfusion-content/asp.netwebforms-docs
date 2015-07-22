@@ -7,7 +7,7 @@ control: Control Name undefined
 documentation: ug
 ---
 
-## Load-on-Demand support 
+# Load-on-Demand support 
 
 ListBox widget provides the Load-onDemand support, when binding the remote data for the ListBox. It loads partially, only a set of data from remote server loaded initially, and imports data further upon loading. To enable Load-onDemand support, set the EnableLoadOnDemand property as true. You can set ItemsCount that specifies number of items in the ListBox. You can load any number of items upon request with ItemRequest ClientSide Event.
 
@@ -84,7 +84,7 @@ function itemRequested(args) {
 Output of the above steps.
 
 
-{ ![C:/Users/Rajaveni/Desktop/docs/LD/LD.png](Load-on-Demand-support_images/Load-on-Demand-support_img1.png) | markdownify }
-{:.image }
+ ![C:/Users/Rajaveni/Desktop/docs/LD/LD.png](Load-on-Demand-support_images/Load-on-Demand-support_img1.png)
+
 
 

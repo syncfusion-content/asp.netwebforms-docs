@@ -7,19 +7,19 @@ control: Control Name undefined
 documentation: ug
 ---
 
-## Appearance and Styling
+# Appearance and Styling
 
-### Adjusting ListBox size
+## Adjusting ListBox size
 
-#### Width
+### Width
 
 ListBox widget provides you support to customize the dimensions of the ListBox. By using Width property you can set the width of the ListBox. Its data type is string.
 
-#### Height
+### Height
 
 ListBox widget provides you support to customize the dimensions of the ListBox. By using Height property, you can set the height of the ListBox. Its data type is string.
 
-#### Defining the ListBox size properties
+### Defining the ListBox size properties
 
 The following steps explains you the configuration of Height & Width properties in ListBox.
 
@@ -119,11 +119,11 @@ In an ASPX page, add an element to configure ListBox.
 Output of the above steps
 
 
-{ ![C:/Users/Rajaveni/Desktop/docs/UG images/heightwidth.PNG](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) | markdownify }
-{:.image }
+ ![C:/Users/Rajaveni/Desktop/docs/UG images/heightwidth.PNG](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 
-#### Enabling Rounded corner
+
+### Enabling Rounded corner
 
 ListBox widget provides you support to change the appearance of ListBox. By using ShowRoundedCorner,you can create a rounded corner on the ListBox. Its data type is Boolean.
 
@@ -225,11 +225,11 @@ In an ASPX page, add an elementto configure ListBox.
 Output of the above steps.
 
 
-{ ![C:/Users/Rajaveni/Desktop/docs/UG images/round.PNG](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) | markdownify }
-{:.image }
+ ![C:/Users/Rajaveni/Desktop/docs/UG images/round.PNG](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 
-### Theme
+
+## Theme
 
 ListBox control’s style and appearance can be controlled based on CSS classes. In order to apply styles to the ListBox control, you can refer to two files namely, ej.widgets.core.min.css and ej.theme.min.css. When you refer to the file ej.widgets.all.min.css, it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project, as ej.widgets.all.min.css is the combination of these two. 
 
@@ -251,19 +251,19 @@ By default, there are 13 themes support available for ListBox control namely,
 
 The following screenshot illustrates the ListBox with Flat-lime and Flat-Saffron built-in themes.
 
-{ ![C:/Users/Rajaveni/Desktop/docs/UG images/blog/flatlime.png](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) | markdownify }
-{:.image }
+ ![C:/Users/Rajaveni/Desktop/docs/UG images/blog/flatlime.png](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 
-{ ![C:/Users/Rajaveni/Desktop/docs/UG images/blog/flatsaffron.png](Appearance-and-Styling_images/Appearance-and-Styling_img4.png) | markdownify }
-{:.image }
+
+ ![C:/Users/Rajaveni/Desktop/docs/UG images/blog/flatsaffron.png](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 
 
-### Custom class with ListBox 
+
+## Custom class with ListBox 
 
 CSS class can be used to customize the ListBox control appearance. Define a CSS class as per your requirement and assign the class name to CssClass property. The data type of CssClass property is string. 
 
-#### Configuring the Custom CSS property
+### Configuring the Custom CSS property
 
 The following steps explains you the configuration of CssClassproperties in ListBox.
 
@@ -385,7 +385,7 @@ Configure the CSS styles to apply on ListBox.
 Output of the above steps.
 
 
-{ ![C:/Users/Rajaveni/Desktop/docs/UG images/cssclass.PNG](Appearance-and-Styling_images/Appearance-and-Styling_img5.png) | markdownify }
-{:.image }
+ ![C:/Users/Rajaveni/Desktop/docs/UG images/cssclass.PNG](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
+
 
 

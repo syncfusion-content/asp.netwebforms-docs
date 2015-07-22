@@ -26,32 +26,31 @@ Semi-circular Gauge can be positioned within the canvas element which provides b
 9. Bottomright
 
 
-
-[ASPX]
+{% highlight html %}
 
 <ej:CircularGauge runat="server" ID="SemiCircularGauge" Value="60"
 
 
 
-&lt;%--setting basic dimension-- %&gt;
+<%--setting basic dimension-- %>
 
 BackgroundColor="transparent" Width="500" Height="500" Radius="100"
 
 
 
-&lt;%--setting gauge position-- %&gt;
+<%--setting gauge position-- %>
 
 GaugePosition="TopLeft"
 
 
 
-&lt;%--setting gauge distance from corner-- %&gt;
+<%--setting gauge distance from corner-- %>
 
 DistanceFromCorner="25">
 
 
 
-&lt;%--&lt;setting frame values--%&gt;
+<%--<setting frame values--%>
 
 <Frame FrameType="HalfCircle"
 
@@ -61,9 +60,9 @@ HalfCircleFrameStartAngle="270"/>
 
 
 
-&lt;%--setting gauge distance from corner-- %&gt;
+<%--setting gauge distance from corner-- %>
 
-&lt;Scales&gt;
+<Scales>
 
 <ej:CircularScales SweepAngle="180" StartAngle="270" Radius="100"
 
@@ -73,23 +72,23 @@ MajorIntervalValue="20" MinorIntervalValue="10">
 
 
 
-&lt;%--setting scale border-- %&gt;
+<%--setting scale border-- %>
 
-&lt;Border Width="0.5"&gt;
+<Border Width="0.5">
 
-&lt;/Border&gt;
+</Border>
 
-&lt;/ej:CircularScales&gt;
+</ej:CircularScales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
  ![](Gauge-Position_images/Gauge-Position_img1.png)
-{:.image }
+
 
 

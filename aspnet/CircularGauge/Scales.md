@@ -27,30 +27,30 @@ Scale collection is directly added to the Gauge object. Refer the following code
 
 
 {% highlight html %}
-[ASP]
 
 
 
-&lt;%--For Circular Gauge rendering-- %&gt;
 
-&lt;ej:CircularGauge runat="server" Id="CircularGauge1"&gt;
+<%--For Circular Gauge rendering-- %>
 
-&lt;Scales&gt;
+<ej:CircularGauge runat="server" Id="CircularGauge1">
 
-&lt;ej:CircularScales  Radius="130"&gt;
+<Scales>
 
-&lt;/ej:CircularScales&gt;
+<ej:CircularScales  Radius="130">
 
-&lt;/Scales&gt;
+</ej:CircularScales>
 
-&lt;/ej:CircularGauge&gt;
+</Scales>
+
+</ej:CircularGauge>
 
 {% endhighlight %}
 
 Execute the above code to render the following output.
 
  ![](Scales_images/Scales_img1.png)
-{:.image }
+
 
 
 
@@ -63,33 +63,33 @@ Execute the above code to render the following output.
 * Setting the background color improves the look and feel of the Circular Gauge. You can customize the background color of the scale using backgroundColor. 
 
 {% highlight html %}
-[ASP]
 
 
 
-&lt;%--For Circular Gauge rendering-- %&gt;
 
-&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+<%--For Circular Gauge rendering-- %>
 
-&lt;Scales&gt;
+<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-&lt;ej:CircularScales ShowScaleBar="true" Radius="110" BackgroundColor="Red"&gt;
+<Scales>
 
-&lt;%--For setting scale border width and color-- %&gt;
+<ej:CircularScales ShowScaleBar="true" Radius="110" BackgroundColor="Red">
 
-&lt;Border Width="3" Color="blue" /&gt;
+<%--For setting scale border width and color-- %>
 
-&lt;PointerCollection&gt;
+<Border Width="3" Color="blue" />
 
-&lt;ej:Pointers Length="80"&gt;&lt;/ej:Pointers&gt;
+<PointerCollection>
 
-&lt;/PointerCollection&gt;
+<ej:Pointers Length="80"></ej:Pointers>
 
-&lt;/ej:CircularScales&gt;
+</PointerCollection>
 
-&lt;/Scales&gt;
+</ej:CircularScales>
 
-&lt;/ej:CircularGauge&gt;
+</Scales>
+
+</ej:CircularGauge>
 
 {% endhighlight %}
 
@@ -98,11 +98,6 @@ Execute the above code to render the following output.
 
 
  ![](Scales_images/Scales_img2.png)
-{:.image }
-
-
-
-
 
 
 ### Pointer Cap
@@ -118,36 +113,36 @@ Execute the above code to render the following output.
 
 
 {% highlight html %}
-[ASP]
 
 
 
-&lt;%--For Circular Gauge rendering-- %&gt;
 
-&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+<%--For Circular Gauge rendering-- %>
 
-&lt;Scales&gt;
+<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-&lt;ej:CircularScales&gt;
+<Scales>
+
+<ej:CircularScales>
 
 <PointerCap Radius="10" BackgroundColor="Red"
 
 BorderColor="Blue" BorderWidth="4">
 
-&lt;/PointerCap&gt;
+</PointerCap>
 
-&lt;/ej:CircularScales&gt;
+</ej:CircularScales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
 {% endhighlight %}
 
 Execute the above code to render the following output.
 
  ![](Scales_images/Scales_img3.png) 
-{:.image }
+
 
 
 ### Appearance
@@ -159,32 +154,32 @@ Execute the above code to render the following output.
 
 
 {% highlight html %}
-[ASP]
 
 
 
-&lt;%--For Circular Gauge rendering-- %&gt;
 
-&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+<%--For Circular Gauge rendering-- %>
 
-&lt;%--For setting scale bar size, scale radius, minimum value, maximum value, majorinterval value, minorinterval value and direction-- %&gt;
+<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-&lt;Scales&gt;
+<%--For setting scale bar size, scale radius, minimum value, maximum value, majorinterval value, minorinterval value and direction-- %>
 
-&lt;ej:CircularScales Size="30" BackgroundColor="red" opacity="0.5" ShadowOffset="20" minimum="20" Maximum="120" MajorIntervalValue="20" MinorIntervalValue="5" Direction="CounterClockwise"&gt;
+<Scales>
 
-&lt;/ej:CircularScales&gt;
+<ej:CircularScales Size="30" BackgroundColor="red" opacity="0.5" ShadowOffset="20" minimum="20" Maximum="120" MajorIntervalValue="20" MinorIntervalValue="5" Direction="CounterClockwise">
 
-&lt;/Scales&gt;
+</ej:CircularScales>
 
-&lt;/ej:CircularGauge&gt;
+</Scales>
+
+</ej:CircularGauge>
 
 {% endhighlight %}
 
 Execute the above code to render the following output.
 
  ![C:/Users/karthigeyan/Desktop/1.png](Scales_images/Scales_img4.png)
-{:.image }
+
 
 
 
@@ -201,57 +196,57 @@ You can set Multiple scales for a single Circular Gauge control by using an arra
 
 
 {% highlight html %}
-[ASP]
 
 
 
-&lt;%--For Circular Gauge rendering-- %&gt;
 
-&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+<%--For Circular Gauge rendering-- %>
 
-&lt;Scales&gt;
+<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-&lt;%--For setting scale1 -- %&gt;
+<Scales>
 
-&lt;ej:CircularScales ShowScalebar="true" Size="10" radius="150" ShadowOffset="20" minimum="20" Maximum="120" MajorIntervalValue="20" MinorIntervalValue="5" Direction="Clockwise"&gt;
+<%--For setting scale1 -- %>
 
-&lt;PointerCollection&gt;
+<ej:CircularScales ShowScalebar="true" Size="10" radius="150" ShadowOffset="20" minimum="20" Maximum="120" MajorIntervalValue="20" MinorIntervalValue="5" Direction="Clockwise">
 
-&lt;ej:Pointers Value="50" ShowBackNeedle="true" Length="120" Width="7" BackNeedleLength="0"&gt;&lt;/ej:Pointers&gt;
+<PointerCollection>
 
-&lt;/PointerCollection&gt;
+<ej:Pointers Value="50" ShowBackNeedle="true" Length="120" Width="7" BackNeedleLength="0"></ej:Pointers>
 
-&lt;/ej:CircularScales&gt;
+</PointerCollection>
 
-&lt;%--For setting scale2 -- %&gt;
+</ej:CircularScales>
+
+<%--For setting scale2 -- %>
 
 
 
-&lt;ej:CircularScales ShowScalebar="false" Size="10" radius="80" opacity="0.5" ShadowOffset="5" MajorIntervalValue="10"  Direction="CounterClockwise"&gt;
+<ej:CircularScales ShowScalebar="false" Size="10" radius="80" opacity="0.5" ShadowOffset="5" MajorIntervalValue="10"  Direction="CounterClockwise">
 
-&lt;labelCollection&gt;
+<labelCollection>
 
-&lt;ej:CircularLabels DistanceFromScale="-40" Color="red"&gt;&lt;/ej:CircularLabels&gt;
+<ej:CircularLabels DistanceFromScale="-40" Color="red"></ej:CircularLabels>
 
-&lt;/labelCollection&gt;
+</labelCollection>
 
-&lt;TickCollection&gt;
+<TickCollection>
 
-&lt;ej:CircularTicks Color="red"/&gt;
+<ej:CircularTicks Color="red"/>
 
-&lt;/TickCollection&gt;
+</TickCollection>
 
-&lt;PointerCollection&gt;
+<PointerCollection>
 
-&lt;ej:Pointers Value="40" distanceFromScale="-30" Length="50"&gt;&lt;/ej:Pointers&gt;
+<ej:Pointers Value="40" distanceFromScale="-30" Length="50"></ej:Pointers>
 
-&lt;/PointerCollection&gt;
+</PointerCollection>
 
-&lt;/ej:CircularScales&gt;
+</ej:CircularScales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
 
 {% endhighlight %}
@@ -262,7 +257,7 @@ You can set Multiple scales for a single Circular Gauge control by using an arra
 Execute the above code to render the following output.
 
  ![](Scales_images/Scales_img5.png)
-{:.image }
+
 
 
 

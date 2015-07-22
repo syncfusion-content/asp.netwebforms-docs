@@ -7,11 +7,11 @@ control: Slider
 documentation: ug
 ---
 
-## RTL support
+# RTL support
 
 Slider includes the Right to Left alignment support. Operations in the Slider are performed from Right to Left.
 
-### Enabling RTL 
+## Enabling RTL 
 
 Use the EnableRTL property to enable the RTL support. By default this property is disabled. Data type of this property is Boolean.
 
@@ -33,7 +33,7 @@ In an ASPX page, define the Slider control and set the EnableRTL property to tru
 
 The following screenshot displays the output of the above code example.
 
-{ ![](RTL-support_images/RTL-support_img1.png) | markdownify }
-{:.image }
+ ![](RTL-support_images/RTL-support_img1.png)
+
 
 

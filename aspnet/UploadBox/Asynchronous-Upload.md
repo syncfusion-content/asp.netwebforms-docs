@@ -7,7 +7,7 @@ control: UploadBox
 documentation: ug
 ---
 
-## Asynchronous Upload
+# Asynchronous Upload
 
 This feature allows you to upload and remove files asynchronously. To achieve this, set the AsyncUpload property to true. The default value of AsyncUpload property is true. The data type is Boolean.
 

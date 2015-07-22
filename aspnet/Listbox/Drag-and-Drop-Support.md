@@ -7,7 +7,7 @@ control: Control Name undefined
 documentation: ug
 ---
 
-## Drag and Drop Support
+# Drag and Drop Support
 
 ListBox widget provides the Drag and Drop support. A list item can be dragged from a ListBox control and can be dropped in any droppable element. To enable Drag and Drop support, set the AllowDragAndDropproperty as true. In control, enable the AllowDragAndDropproperty where you want to drop list Item.
 
@@ -152,7 +152,7 @@ Add the following class in CSS.
 
 Output of the above steps.
 
-{ ![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img1.png) | markdownify }
-{:.image }
+ ![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img1.png)
+
 
 

@@ -7,13 +7,13 @@ control: Splitter
 documentation: ug
 ---
 
-## Appearance and Styling
+# Appearance and Styling
 
-### Responsive
+## Responsive
 
 The EnableAutoResize option allows the Splitter control to adapt its rendering based on the parent container where it is actually placed. When this option is set to true, the Splitter control adjusts its height and width based on the outer container that contains it, and also the sub-elements within it adjust to its height, width and position, appropriately.
 
-### Enable Auto Resize
+## Enable Auto Resize
 
 In an ASPX page, define the Splitter control and add the contents correspondingly. Set the EnableAutoResize property as true.
 
@@ -89,23 +89,23 @@ The following screenshot displays the output of the above code example.
 
 The output for Splitter when EnableAutoResize is “True”.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) | markdownify }
-{:.image }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+
 
 
 The output for Splitter when EnableAutoResize is “False”.
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) | markdownify }
-{:.image }
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 
-### Animation Support
+
+## Animation Support
 
 The Splitter provides animation support when you expand or collapse the pane. The animation speed can be modified by using the AnimationSpeed property that has values in milliseconds.
 
-### Enabling Animation with Animation speed
+## Enabling Animation with Animation speed
 
 The following steps explain the implementation of EnableAnimation option in the Splitter control.
 
@@ -149,33 +149,33 @@ In an ASPX page, define the Splitter control and add the contents corresponding
 
 The output for Splitter when EnableAnimation is “True”. Expanding or collapsing the outer pane in the Splitter produces the animation effect with the animation speed.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) | markdownify }
-{:.image }
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 
-#### Adjusting Splitter Size
 
-##### Height
+### Adjusting Splitter Size
+
+### Height
 
 The height of Splitter can be modified by using the Height property. The default value for Height property is null in Splitter. You can set the Height property by pixel or percentage values.
 
-##### Width
+### Width
 
 The width of Splitter can be modified by using the Width property. The default value for Width property is null in Splitter. You can set the Width property by pixel or percentage values.
 
-##### Max Size
+### Max Size
 
 Defines the maximum resizable size of the pane when you resize the Splitter control. The default value of MaxSize is null in Splitter. You can set the MaxSize property by pixel values.
 
-##### Min Size
+### Min Size
 
 Defines the minimum resizable size of the pane when you resize the Splitter control. The default value of MinSize is 10 in Splitter. You can set the MinSize property by pixel values.
 
-##### Pane Size
+### Pane Size
 
 Defines the pane size in the Splitter control. The default value of PaneSize is 0px in Splitter. You can set the PaneSize property by pixel or percentage values.
 
-##### Resizable
+### Resizable
 
 Defines whether the pane in the Splitter is resizable or not. Setting the Resizable property as “False” disables the resize option to the pane. The default value of Resizable property is true in Splitter.
 
@@ -241,23 +241,23 @@ In an ASPX page, define the Splitter control and add the contents corresponding
 
 The output for Splitter after adding the properties.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png) | markdownify }
-{:.image }
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png) | markdownify }
-{:.image }
+
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png) | markdownify }
-{:.image }
+
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img7.png) | markdownify }
-{:.image }
+
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img7.png)
 
 
-#### Theme
+
+## Theme
 
 Splitter control’s style and appearance can be controlled based on CSS classes. In order to apply styles to the Splitter control, refer to 2 files namely: ej.widgets.core.min.css and ej.theme.min.css. When you refer to ej.widgets.all.min.css file, it is not necessary to include the filesej.widgets.core.min.css and ej.theme.min.css in your project, as ej.widgets.all.min.css is the combination of these two.
 
@@ -276,7 +276,8 @@ By default, there are 13 themes support available for Splitter control namely
 * gradient-lime-dark
 * gradient-saffron
 * gradient-saffron-dark
-#### CSS Class
+
+## CSS Class
 
 
 The CSS properties can be customized by using CssClass in the Splitter control. The following steps explain the implementation of CssClass option in the Splitter control.
@@ -399,11 +400,11 @@ Define CSS class for customizing the Splitter.
 
 The output for Splitter after customizing the CSS class.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img8.png) | markdownify }
-{:.image }
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img8.png)
 
 
-### Keyboard Navigation
+
+## Keyboard Navigation
 
 With the keyboard navigation enabled in the Splitter control, it is possible to control the actions of the Splitter with the provided shortcut keys. Almost all the Splitter actions that are performed by mouse can be controlled with shortcut keys.
 
@@ -411,9 +412,9 @@ The various keyboard shortcuts available within the Splitter control are discu
 
 <table>
 <tr>
-<td>
-Shortcut Key</td><td>
-Description</td></tr>
+<th>
+Shortcut Key</th><th>
+Description</th></tr>
 <tr>
 <td>
 Left</td><td>
@@ -457,7 +458,7 @@ Focuses out from the Splitbar.</td></tr>
 </table>
 
 
-#### Configuring Keyboard Navigation
+### Configuring Keyboard Navigation
 
 The following steps explain to enable keyboard interaction for Splitter control.
 
@@ -559,7 +560,7 @@ In an ASPX page, define the Splitter control and add the contents corresponding
 
 Run the sample and press Alt + J to focus the Splitter control. Perform provided functionality by using keyboard shortcuts.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img9.png) | markdownify }
-{:.image }
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img9.png)
+
 
 

@@ -15,9 +15,9 @@ You can customize the Accordion panel height by using HeightAdjustMode property.
 
 <table>
 <tr>
-<td>
-Height adjust modes</td><td>
-Description</td></tr>
+<th>
+Height adjust modes</th><th>
+Description</th></tr>
 <tr>
 <td>
 Content</td><td>
@@ -149,7 +149,7 @@ Output for Accordion control when panel height is set to Auto so that the maximu
 
 
  ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
-{:.image }
+
 
 
 ### Rounded corner
@@ -220,7 +220,7 @@ Output for accordion control when “ShowRoundedCorner” is set to “true” i
 
 
  ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
-{:.image }
+
 
 
 ### Customize Accordion icon
@@ -292,7 +292,7 @@ Output for Accordion control with customized icons is as follows.
 
 
  ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
-{:.image }
+
 
 
 ## Animation Options
@@ -437,9 +437,9 @@ CSS class can be used to customize the Accordion control appearance. Define a CS
 
 <table>
 <tr>
-<td>
-Class or Element name</td><td>
-Description</td></tr>
+<th>
+Class or Element name</th><th>
+Description</th></tr>
 <tr>
 <td>
 .e-acrdn</td><td>
@@ -562,6 +562,6 @@ Define CSS class for customizing the Accordion. Here the “customCss” class i
 Output for Accordion with customized CSS property to hide the Accordion icon and format its content is as follows.
 
  ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
-{:.image }
+
 
 

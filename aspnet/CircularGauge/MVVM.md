@@ -13,19 +13,17 @@ documentation: ug
 
 Circular Gauge contains angular support. You can add object as well as array object in the Circular Gauge. The two way binding support is given to the pointer value, minimum scale value and maximum scale value. 
 
-
-
 ### Rendering the Circular Gauge
 
 ej-CircularGauge is the control tag in which ej is tag prefix and CircularGauge is the control name.The following code example helps you to render Circular Gauge.
 
 {% highlight html %}
 
-&lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
 
-&lt;div ng-app="syncApp"&gt;
+<div ng-app="syncApp">
 
-&lt;div ng-controller="CircularGauge"&gt;
+<div ng-controller="CircularGauge">
 
 <ej-CircularGauge id="CircularGauge1" e-backgroundColor="transparent" e-value="50"
 
@@ -33,19 +31,19 @@ e-width="500" e-readOnly="false" e-load= "loadGaugeTheme"
 
 e-enableAnimation="false">
 
-&lt;/ej-CircularGauge&gt;
+</ej-CircularGauge>
 
-&lt;asp:Content&gt;
+<asp:Content>
 
-&lt;/div&gt;
+</div>
 
-&lt;/div&gt;
+</div>
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
 
 
-&lt;!—binding the value to the scope variables in application controller--&gt;
+<!—binding the value to the scope variables in application controller-->
 
 
 
@@ -63,7 +61,7 @@ $scope.nmaximum = 120;
 
 });
 
-&lt;/script&gt;
+</script>
 
 {% endhighlight %}
 
@@ -72,11 +70,6 @@ $scope.nmaximum = 120;
 Execute the above code to render the output as follows.
 
  ![](MVVM_images/MVVM_img1.png)
-{:.image }
-
-
-
-
 
 
 ### Adding Scale Collection
@@ -87,19 +80,19 @@ Example: e-border-width and e-border-color.
 
 {% highlight html %}
 
-&lt;!--To Render the Circular gauge--&gt;
+<!--To Render the Circular gauge-->
 
 
 
-&lt;ej-CircularGauge id="CircularGauge1"&gt;
+<ej-CircularGauge id="CircularGauge1">
 
 
 
-&lt;!--Adding Scale collection to the Circular gauge--&gt;
+<!--Adding Scale collection to the Circular gauge-->
 
 
 
-&lt;e-scales&gt;
+<e-scales>
 
 <e-scale e-showRanges="true" e-startAngle="122" e-sweepAngle="296"
 
@@ -111,13 +104,13 @@ e-border-width="0.5">
 
 
 
-&lt;/e-scale&gt;
+</e-scale>
 
-&lt;/e-scales&gt;
+</e-scales>
 
 
 
-&lt;/ej-CircularGauge&gt;
+</ej-CircularGauge>
 
 
 {% endhighlight %}
@@ -126,7 +119,7 @@ e-border-width="0.5">
 Execute the above code to render the following output.
 
  ![](MVVM_images/MVVM_img2.png)
-{:.image }
+
 
 
 
@@ -139,27 +132,27 @@ Example: e-pointerCap-radius.
 
 {% highlight html %}
 
-&lt;!--To Render the Circular gauge--&gt;
+<!--To Render the Circular gauge-->
 
 
 
-&lt;ej-CircularGauge id="CircularGauge1"&gt;
+<ej-CircularGauge id="CircularGauge1">
 
 
 
-&lt;!--Adding Scale collection to the Circular gauge--&gt;
+<!--Adding Scale collection to the Circular gauge-->
 
 
 
-&lt;e-scales&gt;
+<e-scales>
 
-&lt;e-scale&gt;
+<e-scale>
 
-&lt;!--Adding pointer collection to the scale collection--&gt;
+<!--Adding pointer collection to the scale collection-->
 
 
 
-&lt;e-pointers&gt;
+<e-pointers>
 
 <e-pointer e-showBackNeedle="true" e-backNeedleLength="20"
 
@@ -167,19 +160,19 @@ e-length="95" e-width="7" e-value="80"
 
 e-pointerCap-radius="12">
 
-&lt;/e-pointer&gt;
+</e-pointer>
 
-&lt;/e-pointers&gt;
-
-
-
-&lt;/e-scale&gt;
-
-&lt;/e-scales&gt;
+</e-pointers>
 
 
 
-&lt;/ej-CircularGauge&gt;
+</e-scale>
+
+</e-scales>
+
+
+
+</ej-CircularGauge>
 
 
 {% endhighlight %}
@@ -188,7 +181,7 @@ e-pointerCap-radius="12">
 Execute the above code to render the output as follows.
 
  ![](MVVM_images/MVVM_img3.png)
-{:.image }
+
 
 
 
@@ -199,47 +192,47 @@ Label is also an array object. You can use the inner tag for it.
 
 {% highlight html %}
 
-&lt;!--To Render the Circular gauge--&gt;
+<!--To Render the Circular gauge-->
 
 
 
-&lt;ej-CircularGauge id="CircularGauge1"&gt;
+<ej-CircularGauge id="CircularGauge1">
 
 
 
-&lt;!--Adding Scale collection to the Circular gauge--&gt;
+<!--Adding Scale collection to the Circular gauge-->
 
 
 
-&lt;e-scales&gt;
+<e-scales>
 
-&lt;e-scale&gt;
+<e-scale>
 
-&lt;!--Adding pointer collection to the scale collection--&gt;
+<!--Adding pointer collection to the scale collection-->
 
-&lt;e-pointers&gt;…&lt;/e-pointers&gt;
+<e-pointers>…</e-pointers>
 
-&lt;!--Adding labels collection to the scale collection--&gt;
-
-
-
-&lt;e-labels&gt;
-
-&lt;e-label e-color="#8c8c8c"&gt;
-
-&lt;/e-label&gt;
-
-&lt;/e-labels&gt;
+<!--Adding labels collection to the scale collection-->
 
 
 
-&lt;/e-scale&gt;
+<e-labels>
 
-&lt;/e-scales&gt;
+<e-label e-color="#8c8c8c">
+
+</e-label>
+
+</e-labels>
 
 
 
-&lt;/ej-CircularGauge&gt;
+</e-scale>
+
+</e-scales>
+
+
+
+</ej-CircularGauge>
 
 {% endhighlight %}
 
@@ -248,14 +241,6 @@ Label is also an array object. You can use the inner tag for it.
 Execute the above code to render the following output.
 
  ![](MVVM_images/MVVM_img4.png)
-{:.image }
-
-
-
-
-
-
-
 
 ### Adding Tick Colection
 
@@ -263,59 +248,59 @@ Tick is an array object. You can use the inner tag for it.
 
 {% highlight html %}
 
-&lt;!--To Render the Circular gauge--&gt;
+<!--To Render the Circular gauge-->
 
 
 
-&lt;ej-CircularGauge id="CircularGauge1"&gt;
+<ej-CircularGauge id="CircularGauge1">
 
 
 
-&lt;!--Adding Scale collection to the Circular gauge--&gt;
+<!--Adding Scale collection to the Circular gauge-->
 
 
 
-&lt;e-scales&gt;
+<e-scales>
 
-&lt;e-scale&gt;
+<e-scale>
 
-&lt;!--Adding pointer collection to the scale collection--&gt;
+<!--Adding pointer collection to the scale collection-->
 
-&lt;e-pointers&gt;…&lt;/e-pointers&gt;
+<e-pointers>…</e-pointers>
 
-&lt;!--Adding labels collection to the scale collection--&gt;
+<!--Adding labels collection to the scale collection-->
 
-&lt;e-labels&gt;…&lt;/e-labels&gt;
+<e-labels>…</e-labels>
 
-&lt;!--Adding ticks collection to the scale collection--&gt;
+<!--Adding ticks collection to the scale collection-->
 
 
 
-&lt;e-ticks&gt;
+<e-ticks>
 
 <e-tick e-type="major" e-distanceFromScale="2" e-height="16"
 
 e-width="1" e-color="#8c8c8c">
 
-&lt;/e-tick&gt;
+</e-tick>
 
 <e-tick e-type="minor" e-distanceFromScale="2" e-height="8"
 
 e-width="1" e-color="#8c8c8c">
 
-&lt;/e-tick&gt;
+</e-tick>
 
-&lt;/e-ticks&gt;
-
-
-
-&lt;/e-scale&gt;
-
-&lt;/e-scales&gt;
+</e-ticks>
 
 
 
-&lt;/ej-CircularGauge&gt;
+</e-scale>
+
+</e-scales>
+
+
+
+</ej-CircularGauge>
 
 
 {% endhighlight %}
@@ -324,12 +309,6 @@ e-width="1" e-color="#8c8c8c">
 Execute the above code to render the following output.
 
  ![](MVVM_images/MVVM_img5.png)
-{:.image }
-
-
-
-
-
 
 ### Adding Range Collection
 
@@ -339,43 +318,43 @@ Example: e-border-color.
 
 {% highlight html %}
 
-&lt;!--To Render the Circular gauge--&gt;
+<!--To Render the Circular gauge-->
 
 
 
-&lt;ej-CircularGauge id="CircularGauge1"&gt;
+<ej-CircularGauge id="CircularGauge1">
 
 
 
-&lt;!--Adding Scale collection to the Circular gauge--&gt;
+<!--Adding Scale collection to the Circular gauge-->
 
 
 
-&lt;e-scales&gt;
+<e-scales>
 
-&lt;e-scale&gt;
+<e-scale>
 
-&lt;!--Adding pointer collection to the scale collection--&gt;
+<!--Adding pointer collection to the scale collection-->
 
-&lt;e-pointers&gt;…&lt;/e-pointers&gt;
+<e-pointers>…</e-pointers>
 
-&lt;!--Adding labels collection to the scale collection--&gt;
+<!--Adding labels collection to the scale collection-->
 
-&lt;e-labels&gt;…&lt;/e-labels&gt;
+<e-labels>…</e-labels>
 
-&lt;!--Adding ticks collection to the scale collection--&gt;
+<!--Adding ticks collection to the scale collection-->
 
-&lt;e-ticks&gt;…&lt;/e-ticks&gt;
+<e-ticks>…</e-ticks>
 
-&lt;!--Adding ranges collection to the scale collection--&gt;
+<!--Adding ranges collection to the scale collection-->
 
 
 
-&lt;e-ranges&gt;
+<e-ranges>
 
-&lt;e-range e-distanceFromScale="-30" e-startValue="0" e-endValue="70"&gt;
+<e-range e-distanceFromScale="-30" e-startValue="0" e-endValue="70">
 
-&lt;/e-range&gt;
+</e-range>
 
 <e-range e-distanceFromScale="-30" e-startValue="70"
 
@@ -383,7 +362,7 @@ e-endValue="110" e-backgroundColor="#fc0606"
 
 e-border-color="#fc0606">
 
-&lt;/e-range&gt;
+</e-range>
 
 <e-range e-distanceFromScale="-30" e-startValue="110"
 
@@ -391,19 +370,18 @@ e-endValue="120" e-backgroundColor="#f5b43f"
 
 e-border-color="#f5b43f">
 
-&lt;/e-range&gt;
+</e-range>
 
-&lt;/e-ranges&gt;
-
-
-
-&lt;/e-scale&gt;
-
-&lt;/e-scales&gt;
+</e-ranges>
 
 
+</e-scale>
 
-&lt;/ej-CircularGauge&gt;
+</e-scales>
+
+
+
+</ej-CircularGauge>
 
 
 {% endhighlight %}
@@ -412,9 +390,6 @@ e-border-color="#f5b43f">
 Execute the above code to render the following output.
 
  ![](MVVM_images/MVVM_img6.png)
-{:.image }
-
-
 
 
 ### Two Way Binding 
@@ -423,25 +398,25 @@ Circular Gauge support the two way binding for the property value, minimum and m
 
 {% highlight html %}
 
-&lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
 
-&lt;div ng-app="syncApp"&gt;
+<div ng-app="syncApp">
 
-&lt;div ng-controller="CircularGauge"&gt;
+<div ng-controller="CircularGauge">
 
-&lt;ej-CircularGauge id="CircularGauge1" e-backgroundColor="transparent" e-value="nvalue" e-width="500" e-readOnly="false" e-load= "loadGaugeTheme" e-enableAnimation="false"&gt;
+<ej-CircularGauge id="CircularGauge1" e-backgroundColor="transparent" e-value="nvalue" e-width="500" e-readOnly="false" e-load= "loadGaugeTheme" e-enableAnimation="false">
 
-&lt;e-scales&gt;
+<e-scales>
 
 <e-scale e-showRanges="true" e-startAngle="122" e-sweepAngle="296"
 
 e-radius="130" e-showScaleBar="true" e-size="1"
 
-&lt;!—binding maximum value using angular JS --&gt;
+<!—binding maximum value using angular JS -->
 
 e-maximum="nmaximum"
 
-&lt;!—binding minimum value using angular JS --&gt;
+<!—binding minimum value using angular JS -->
 
 e-minimum="nminimum"
 
@@ -449,49 +424,49 @@ e-majorIntervalValue="20"
 
 e-minorIntervalValue="10" e-border-width="0.5">
 
-&lt;e-pointers&gt;
+<e-pointers>
 
 <e-pointer e-showBackNeedle="true" e-backNeedleLength="20"
 
 e-length="95" e-width="7"
 
-&lt;!—binding pointer value using angular JS --&gt;
+<!—binding pointer value using angular JS -->
 
 e-value="nvalue"
 
 e-pointerCap-radius="12">
 
-&lt;/e-pointer&gt;
+</e-pointer>
 
-&lt;/e-pointers&gt;
+</e-pointers>
 
-&lt;e-labels&gt;
+<e-labels>
 
-&lt;e-label e-color="#8c8c8c"&gt;&lt;/e-label&gt;
+<e-label e-color="#8c8c8c"></e-label>
 
-&lt;/e-labels&gt;
+</e-labels>
 
-&lt;e-ticks&gt;
+<e-ticks>
 
 <e-tick e-type="major" e-distanceFromScale="2" e-height="16"
 
 e-width="1" e-color="#8c8c8c">
 
-&lt;/e-tick&gt;
+</e-tick>
 
 <e-tick e-type="minor" e-distanceFromScale="2" e-height="8"
 
 e-width="1" e-color="#8c8c8c">
 
-&lt;/e-tick&gt;
+</e-tick>
 
-&lt;/e-ticks&gt;
+</e-ticks>
 
-&lt;e-ranges&gt;
+<e-ranges>
 
-&lt;e-range e-distanceFromScale="-30" e-startValue="0" e-endValue="70"&gt;
+<e-range e-distanceFromScale="-30" e-startValue="0" e-endValue="70">
 
-&lt;/e-range&gt;
+</e-range>
 
 <e-range e-distanceFromScale="-30" e-startValue="70"
 
@@ -499,7 +474,7 @@ e-endValue="110" e-backgroundColor="#fc0606"
 
 e-border-color="#fc0606">
 
-&lt;/e-range&gt;
+</e-range>
 
 <e-range e-distanceFromScale="-30" e-startValue="110"
 
@@ -507,33 +482,33 @@ e-endValue="120" e-backgroundColor="#f5b43f"
 
 e-border-color="#f5b43f">
 
-&lt;/e-range&gt;
+</e-range>
 
-&lt;/e-ranges&gt;
+</e-ranges>
 
-&lt;/e-scale&gt;
+</e-scale>
 
-&lt;/e-scales&gt;
+</e-scales>
 
-&lt;/ej-CircularGauge&gt;
-
-
-
-&lt;input type="text" id="txtMax" e-value="nvalue" ej-numerictextbox ng-model="nvalue"  e-decimalplaces="2" e-showspinbutton="false" Style="width:110px"/&gt;
-
-&lt;/asp:Content&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
+</ej-CircularGauge>
 
 
 
-&lt;script type="text/javascript"&gt;
+<input type="text" id="txtMax" e-value="nvalue" ej-numerictextbox ng-model="nvalue"  e-decimalplaces="2" e-showspinbutton="false" Style="width:110px"/>
+
+</asp:Content>
+
+</div>
+
+</div>
 
 
 
-&lt;!—binding the value to the scope variables in application controller--&gt;
+<script type="text/javascript">
+
+
+
+<!—binding the value to the scope variables in application controller-->
 
 
 
@@ -551,14 +526,14 @@ $scope.nmaximum = 120;
 
 });
 
-&lt;/script&gt;
+</script>
 
 {% endhighlight %}
 
 Execute the above code to render the following output.
 
  ![](MVVM_images/MVVM_img7.png)
-{:.image }
+
 
 
 
@@ -580,11 +555,11 @@ Execute the above code to render the following output.
 
 {% highlight html %}
 
-&lt;%--content section to refer script files-- %&gt;
+<%--content section to refer script files-- %>
 
 
 
-&lt;%--control section-- %&gt;
+<%--control section-- %>
 
 <div id="circularCore" data-bind="ejCircularGauge:({value:samplevalue,minimum:sampleminimum,maximum:samplemaximum,readOnly:false,enableAnimation:false,backgroundColor: 'transparent', width: 500, height:360,
 
@@ -652,9 +627,9 @@ endValue: 120
 
 }]})">
 
-&lt;/div&gt;
+</div>
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
 window.viewModel = {
 
@@ -674,14 +649,14 @@ $("#sampleProperties").ejPropertiesPanel();
 
 });
 
-&lt;/script&gt;
+</script>
 
 {% endhighlight %}
 
 Execute the above code to render the following output. The following screenshot is the output of ASP.
 
  ![](MVVM_images/MVVM_img8.png)
-{:.image }
+
 
 
 

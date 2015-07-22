@@ -7,13 +7,13 @@ control: Control Name undefined
 documentation: ug
 ---
 
-## Behaviour Settings
+# Behaviour Settings
 
 The following are some miscellaneous properties that helps you to change the behaviour of ListBox control.
 
-### Target ID
+## Target ID
 
-You can append a list with ListBox by using targetId property. Define a &lt;ul&gt;, &lt; li&gt; tag that you want to display on ListBox and then set the id of parent &lt;ul&gt; tag to targetId property. And its data type is string. 
+You can append a list with ListBox by using targetId property. Define a <ul>, < li> tag that you want to display on ListBox and then set the id of parent <ul> tag to targetId property. And its data type is string. 
 
 The following steps explains you the configuration of targetID property in ListBox.
 
@@ -79,11 +79,11 @@ Output of the above steps.
 
 
 
-{ ![C:/Users/Rajaveni/Desktop/docs/UG images/targetid.PNG](Behaviour-Settings_images/Behaviour-Settings_img1.png) | markdownify }
-{:.image }
+ ![C:/Users/Rajaveni/Desktop/docs/UG images/targetid.PNG](Behaviour-Settings_images/Behaviour-Settings_img1.png)
 
 
-### Select the value by index 
+
+## Select the value by index 
 
 ListBox widget provides you support to select an item by mentioning the index of the item. The SelectedItemIndex property helps you to select the particular item from the list. Its date type is number. 
 
@@ -184,11 +184,11 @@ In an ASPX page, add an element to configure ListBox.
 Output of the above steps.
 
 
-{ ![](Behaviour-Settings_images/Behaviour-Settings_img2.png) | markdownify }
-{:.image }
+ ![](Behaviour-Settings_images/Behaviour-Settings_img2.png)
 
 
-### Enable or Disable the ListBox Control
+
+## Enable or Disable the ListBox Control
 
 This features enables you to set the enable or disable options for ListBox by setting Boolean type value to Enabled property. 
 
@@ -288,7 +288,7 @@ protected void Page_Load(object sender, EventArgs e)
 Output of the above steps.
 
 
-{ ![C:/Users/Rajaveni/Desktop/docs/UG images/enabled.PNG](Behaviour-Settings_images/Behaviour-Settings_img3.png) | markdownify }
-{:.image }
+ ![C:/Users/Rajaveni/Desktop/docs/UG images/enabled.PNG](Behaviour-Settings_images/Behaviour-Settings_img3.png)
+
 
 

@@ -7,20 +7,20 @@ control: UploadBox
 documentation: ug
 ---
 
-## Appearance and styling 
+# Appearance and styling 
 
 The UploadBox control provides support to customize the dialog box text and button text. 
 
-### Customizing Button Text
+## Customizing Button Text
 
 The following table contains the subproperties available under the UploadboxButtonText property. To customize the text, pass the alternate text with the corresponding subproperties. 
 
 <table>
 <tr>
-<td>
-Names</td><td>
-Description</td><td>
-Data Type</td></tr>
+<th>
+Names</th><th>
+Description</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 Browse</td><td>
@@ -61,21 +61,21 @@ In the ASPX page, add the UploadBox element and configure the texts in code behi
 
 {% endhighlight %}
 
-> _Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section)._
+> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
-The following screenshot displays the output UploadBox with customized button text.{ ![](Appearance-and-styling_images/Appearance-and-styling_img1.png) | markdownify }
-{:.image }
+The following screenshot displays the output UploadBox with customized button text.![](Appearance-and-styling_images/Appearance-and-styling_img1.png)
 
 
-### Customizing Upload Dialog
+
+## Customizing Upload Dialog
 
 The following table contains the sub properties available under the UploadBoxDialogText property. To customize the text, pass the alternate text with the corresponding sub properties 
 
 <table>
 <tr>
-<td>
-Names</td><td>
-Description</td></tr>
+<th>
+Names</th><th>
+Description</th></tr>
 <tr>
 <td>
 Title</td><td>
@@ -115,15 +115,15 @@ In the ASPX page, add the UploadBox element and configure the DialogText in code
 
 {% endhighlight %}
 
-> _Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section)._ 
+> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 The following screenshot displays the output.
 
-{ ![](Appearance-and-styling_images/Appearance-and-styling_img2.png) | markdownify }
-{:.image }
+![](Appearance-and-styling_images/Appearance-and-styling_img2.png)
 
 
-### Show or Hide File details 
+
+## Show or Hide File details 
 
 You have an option to show or hidefiledetails in the uploaded file listdialog. By using this property, the uploaded file dialog does not display the file details once selected. To enable this, set the ShowFileDetails to false. By default, its value is set to true. The data type is Boolean.
 
@@ -141,13 +141,13 @@ In the ASPX page, add the UploadBox element and set the ShowFileDetails property
 
 {% endhighlight %}
 
-> _Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section)._
+> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
+ 
+The following screenshot displays the output.![](Appearance-and-styling_images/Appearance-and-styling_img3.png)
 
-The following screenshot displays the output.{ ![](Appearance-and-styling_images/Appearance-and-styling_img3.png) | markdownify }
-{:.image }
 
 
-### Customize the file details 
+## Customize the file details 
 
 You have an option to customize the defaultfiledetails in the uploaded file listdialog. By using this, you can configure the CustomFileDetails to modify the file upload dialog.
 
@@ -169,17 +169,17 @@ In the ASPX page, add the UploadBox element and set the CustomFileDetails to cus
 
 {% endhighlight %}
 
-> _Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section)._
+> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 The following screenshot displays the output.
 
 
 
-{ ![](Appearance-and-styling_images/Appearance-and-styling_img4.png) | markdownify }
-{:.image }
+![](Appearance-and-styling_images/Appearance-and-styling_img4.png)
 
 
-### Customize the Upload file Dialog actions and position 
+
+## Customize the Upload file Dialog actions and position 
 
 You have an option to customize the uploaded file dialog actions. By using the DialogAction property, you can configure the file upload dialog box behaviors with CloseOnComplete, content and drag attribute values.  By using the DialogPosition, you can customize the X and Y coordinate on where the dialog must appear
 
@@ -201,19 +201,19 @@ In the ASPX page, add the UploadBox element and set the DialogAction and DialogP
 
 {% endhighlight %}
 
-> _Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section)._
+> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 The following screenshot displays the output. Here the dialog behaves as Modal and cannot be dragged or repositioned and closes when upload is complete
 
-{ ![](Appearance-and-styling_images/Appearance-and-styling_img5.png) | markdownify }
-{:.image }
+![](Appearance-and-styling_images/Appearance-and-styling_img5.png)
 
 
 
 
-### Look and Feel
 
-#### Theme
+## Look and Feel
+
+### Theme
 
 The UploadBox control’s style and appearance are controlled based on CSS classes. In order to apply styles to the UploadBox control, you can refer to two files, ej.widgets.core.min.css and ej.theme.min.css. When the file, ej.widgets.all.min.css is referred, it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project, as ej.widgets.all.min.css is the combination of both these files. 
 
@@ -235,33 +235,33 @@ By default, there are 13-theme supports available for the UploadBox control name
 
 Add the following code to your Master &ASPX page to initialize the Uploadbox with gradient-azure-dark theme. 
 
-&lt;head&gt;
+<head>
 
-&lt;link href="Content/ej/gradient-azure-dark/ej.web.all.min.css" rel="stylesheet" /&gt;
+<link href="Content/ej/gradient-azure-dark/ej.web.all.min.css" rel="stylesheet" />
 
-&lt;/head&gt;
+</head>
 
 
 
-&lt;ej:UploadBox ID="Upload1" runat="server" SaveUrl="saveFiles.ashx" RemoveUrl="removeFiles.ashx"&gt;&lt;/ej:UploadBox&gt;
+<ej:UploadBox ID="Upload1" runat="server" SaveUrl="saveFiles.ashx" RemoveUrl="removeFiles.ashx"></ej:UploadBox>
 
 
 
 Run the code to get the following output.
 
-{ ![](Appearance-and-styling_images/Appearance-and-styling_img6.png) | markdownify }
-{:.image }
+![](Appearance-and-styling_images/Appearance-and-styling_img6.png)
 
 
-#### CSS Class
+
+### CSS Class
 
 CSSclass customizes the UploadBox control’s appearance. Define a CSS class as per the requirement and assign the class name to CssClass property. The data type is string. 
 
 <table>
 <tr>
-<td>
-Class/Element names</td><td>
-Description</td></tr>
+<th>
+Class/Element names</th><th>
+Description</th></tr>
 <tr>
 <td>
 .uploadbox</td><td>
@@ -353,11 +353,11 @@ In CSS, configure Custom Styles for the UploadBox. Here custom CSS is defined to
 
 {% endhighlight %}
 
-> _Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section)._
+> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 The following screenshot displays the output.
 
-{ ![](Appearance-and-styling_images/Appearance-and-styling_img7.png) | markdownify }
-{:.image }
+![](Appearance-and-styling_images/Appearance-and-styling_img7.png)
+
 
 

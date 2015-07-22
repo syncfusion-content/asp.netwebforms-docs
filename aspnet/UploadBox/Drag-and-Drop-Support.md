@@ -7,17 +7,17 @@ control: UploadBox
 documentation: ug
 ---
 
-## Drag and Drop Support
+# Drag and Drop Support
 
 The UploadBox control provides the drag and drop support. You can simply drag-and-drop files, directly from the computer to the droppable area. A list of files can be dragged and dropped when you enable the MultipleFilesSelection.
 
 The following screenshot displays the drag and drop support.
 
-{ ![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img1.png) | markdownify }
-{:.image }
+ ![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img1.png)
 
 
-### Enable drag and drop 
+
+## Enable drag and drop 
 
 You can enable or disable drag and drop by using the AllowDragAndDrop property. By default, the AllowDragAndDrop property is set to False in the UploadBox control. You can enable drag and drop by setting the AllowDragAndDrop property to True. When you want to drag and drop multiple files, you can enable multiple file selection by setting MultipleFilesSelection to True in the UploadBox control.
 
@@ -47,7 +47,7 @@ In the ASPX page, configure element UploadBox element to enable the drag and dro
 
 {% endhighlight %}
 
-> _Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section)._
+> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 In CSS, configure the custom styles for drag and drop.
 
@@ -81,11 +81,11 @@ In CSS, configure the custom styles for drag and drop.
 
 The following screenshot displays the output for the above code.
 
-{ ![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img2.png) | markdownify }
-{:.image }
+ ![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img2.png)
 
 
-### Drag Area text
+
+## Drag Area text
 
 You can change the drag area text by using the DragAreaText property.  By default, the DragAreaText (string) property is Drop files or click to upload in the UploadBox control.
 
@@ -159,11 +159,11 @@ In CSS, configure the custom styles for drag and drop.
 
  The following screenshot displays the output for the above code.
 
-{ ![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img3.png) | markdownify }
-{:.image }
+ ![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img3.png)
 
 
-### Adjust Drop area size
+
+## Adjust Drop area size
 
 The UploadBox control provides the ability to change or adjust the drop area size. The DropAreaHeight andDropAreaWidth properties in the UploadBox control allow you to set the maximum height and maximum width for the drop area. The value set to this property is stringornumber type.
 
@@ -187,11 +187,11 @@ In the ASPX page, configure UploadBox element to enable the drag and drop in the
 
 The following screenshot displays the output for the above code.
 
-{ ![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img4.png) | markdownify }
-{:.image }
+ ![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img4.png)
 
 
-### Drop area with Browse button behavior
+
+## Drop area with Browse button behavior
 
 You can click anywhere in the droppable area to browse and upload the files. The droppable area behaves like a browse button.
 
@@ -273,7 +273,7 @@ The following screenshot displays the output for the above code.
 
 
 
-{ ![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img5.png) | markdownify }
-{:.image }
+ ![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img5.png)
+
 
 

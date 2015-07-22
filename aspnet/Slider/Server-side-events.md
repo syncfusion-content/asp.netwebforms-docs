@@ -7,14 +7,14 @@ control: Slider
 documentation: ug
 ---
 
-## Server-side events
+# Server-side events
 
 <table>
 <tr>
-<td>
-Event Name</td><td>
-Description</td><td>
-Parameters </td></tr>
+<th>
+Event Name</th><th>
+Description</th><th>
+Parameters </th></tr>
 <tr>
 <td>
 OnChangeEvent</td><td>

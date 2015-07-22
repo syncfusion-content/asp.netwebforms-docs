@@ -105,14 +105,14 @@ The following screenshot displays the output of the above code example.
 
 Default Slider
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) | markdownify }
-{:.image }
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+
 
 
 Range Slider
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) | markdownify }
-{:.image }
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+
 
 
 ### Css Class
@@ -217,8 +217,8 @@ Define CSS class for customizing the Slider.
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) | markdownify }
-{:.image }
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
+
 
 
 ### Show Tooltip
@@ -229,7 +229,7 @@ In an ASPX page, define the Slider control and set the ShowSmallTicks property t
 
 
 
-&lt;ej:Slider ID="BasicSlider" runat="server" Width="500" Value="60" ShowTooltip="false"&gt; &lt;/ej:Slider&gt;
+<ej:Slider ID="BasicSlider" runat="server" Width="500" Value="60" ShowTooltip="false"> </ej:Slider>
 
 
 
@@ -257,7 +257,7 @@ In an ASPX page, define the Slider control and set the ShowRoundedCorner proper
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png) | markdownify }
-{:.image }
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
+
 
 

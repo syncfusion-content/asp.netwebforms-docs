@@ -42,14 +42,11 @@ Create an ASPX file and add the following code example to ASPX file for ejSplit
 {% endhighlight %}
 
 
-
-{ ![](Getting-Started_images/Getting-Started_img1.jpeg) | markdownify }
-{:.image }
-_Note: Add menu items of the Split Button inside &lt;Items&gt; that is displayed when you click on the Split Button._ 
+Note: Add menu items of the Split Button inside <Items> that is displayed when you click on the Split Button.
 
 Output of above steps.
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img2.png)
+
 
 

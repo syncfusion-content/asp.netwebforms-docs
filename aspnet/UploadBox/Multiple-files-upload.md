@@ -7,11 +7,11 @@ control: UploadBox
 documentation: ug
 ---
 
-## Multiple files upload
+# Multiple files upload
 
 The UploadBox control provides support to upload multiple files spontaneously. The MultipleFilesSelection property enables you to select multiple files while browsing.  To achieve this, set the MultipleFilesSelection property to true. The data type is Boolean.
 
-_Note: The Multiple file selection supports all the latest versions of browser except Internet Explorer 9 and its previous versions__._
+Note: The Multiple file selection supports all the latest versions of browser except Internet Explorer 9 and its previous versions__.
 
 
 
@@ -39,13 +39,13 @@ The following screenshot displays the output.
 
 
 
-{ ![](Multiple-files-upload_images/Multiple-files-upload_img1.png) | markdownify }
-{:.image }
+![](Multiple-files-upload_images/Multiple-files-upload_img1.png)
 
 
 
 
-{ ![](Multiple-files-upload_images/Multiple-files-upload_img2.png) | markdownify }
-{:.image }
+
+ ![](Multiple-files-upload_images/Multiple-files-upload_img2.png)
+
 
 

@@ -7,162 +7,161 @@ control: Circular Gauge
 documentation: ug
 ---
 
-## Tooltip
+# Tooltip
 
 * Tooltip feature has been added to the Circular Gauge. Circular Gauge has several elements such as pointers, label, customLabel, scales, etc.  
 * There is a need for Tooltip feature in the Circular Gauge control because whenever the text hides or overrides with other gauge elements, it may not be fully visible. For resolving those problems Tooltip feature has been implemented in the Circular Gauge control.
-### Default Tooltip
+
+## Default Tooltip
 
 * Tooltip has three attributes in it. The first two attributes such as showLabelTooltip and showCustomLabelTooltip are for enabling the Tooltip for label as well as custom label in default appearance. 
 * ShowLabelTooltip is to enable the Tooltip for labels and showCustomLabelTooltip is for enabling the Tooltip option for customLabels.
 
 
+{% highlight html %}
 
-[ASPX]
-
-&lt;ej:circulargauge runat=”server” id=”circularGaugeTooltip” backgroundcolor=”transparent” enableAnimation=”false”&gt;
-
-
-
-&lt;%-- Defines the tooltip object-- %&gt;
-
-&lt;Tooltip ShowCustomLabelTooltip=”true” ShowLabelTooltip=”true” /&gt;
+<ej:circulargauge runat=”server” id=”circularGaugeTooltip” backgroundcolor=”transparent” enableAnimation=”false”>
 
 
 
-&lt;%-- Customizes the scale options-- %&gt;
+<%-- Defines the tooltip object-- %>
 
-&lt;Scales&gt;
-
-&lt;ej:CircularScales ShowLabels=”true” Radius="130" &gt;
+<Tooltip ShowCustomLabelTooltip=”true” ShowLabelTooltip=”true” />
 
 
 
-&lt;PointerCollection&gt;
+<%-- Customizes the scale options-- %>
 
-&lt;ej:Pointers Value=”60” Length=”95” &gt;
+<Scales>
 
-&lt;/ej:Pointers&gt;
-
-&lt;/PointerCollection&gt;
+<ej:CircularScales ShowLabels=”true” Radius="130" >
 
 
 
-&lt;%-- Customizes the custom label options-- %&gt;
+<PointerCollection>
 
-&lt;CustomLabelCollection&gt;
+<ej:Pointers Value=”60” Length=”95” >
 
-&lt;ej:CircularCustomLabel Value=”0 9 5 3 4 5”&gt;
+</ej:Pointers>
 
-&lt;Font FontFamily ="Arial" FontStyle="Bold" Size="20px" /&gt;
-
-&lt;Position X ="180" Y="200" /&gt;
-
-&lt;/ej:CircularCustomLabel&gt;
-
-&lt;/CustomLabelCollection&gt;
-
-&lt;/ej:CircularScales&gt;
-
-&lt;/Scales&gt;
-
-&lt;/ej:circulargauge&gt;
+</PointerCollection>
 
 
+
+<%-- Customizes the custom label options-- %>
+
+<CustomLabelCollection>
+
+<ej:CircularCustomLabel Value=”0 9 5 3 4 5”>
+
+<Font FontFamily ="Arial" FontStyle="Bold" Size="20px" />
+
+<Position X ="180" Y="200" />
+
+</ej:CircularCustomLabel>
+
+</CustomLabelCollection>
+
+</ej:CircularScales>
+
+</Scales>
+
+</ej:circulargauge>
+
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
-{ ![](Tooltip_images/Tooltip_img1.png) | markdownify }
-{:.image }
+ ![](Tooltip_images/Tooltip_img1.png)
 
 
 
 
-### Tooltip Template
+
+## Tooltip Template
 
 In Tooltip option, you can customize the Tooltip window by adding the tooltip template on that page with the help of API TemplateID. Refer to the following code example to know more about Tooltip template.
 
 
-
-[ASPX]
-
-
-
-&lt;ej:circulargauge runat=”server” id=”circularGaugeTooltip” backgroundcolor=”transparent” nableAnimation=”false”&gt;
+{% highlight html %}
 
 
 
-&lt;%-- Defines the tooltip object-- %&gt;
+<ej:circulargauge runat=”server” id=”circularGaugeTooltip” backgroundcolor=”transparent” nableAnimation=”false”>
+
+
+
+<%-- Defines the tooltip object-- %>
 
 <Tooltip
 
 
 
-&lt;%-- Enables the custom label tooltip-- %&gt;
+<%-- Enables the custom label tooltip-- %>
 
 ShowCustomLabelTooltip=”true”
 
 
 
-&lt;%-- Enables the label tooltip-- %&gt;
+<%-- Enables the label tooltip-- %>
 
 ShowLabelTooltip=”true”
 
 
 
-&lt;%-- Enables the Tooltip Template-- %&gt;
+<%-- Enables the Tooltip Template-- %>
 
 TemplateID=”Tooltip”/>
 
 
 
-&lt;%-- Customizes the scale options-- %&gt;
+<%-- Customizes the scale options-- %>
 
-&lt;Scales&gt;
+<Scales>
 
-&lt;ej:CircularScales ShowLabels=”true” Radius="130" &gt;
-
-
-
-&lt;%-- Customizes the pointers options-- %&gt;
-
-&lt;PointerCollection&gt;
-
-&lt;ej:Pointers Value=”60” Length=”95” &gt;
-
-&lt;/ej:Pointers&gt;
-
-&lt;/PointerCollection&gt;
+<ej:CircularScales ShowLabels=”true” Radius="130" >
 
 
 
-&lt;%-- Customizes the custom label options-- %&gt;
+<%-- Customizes the pointers options-- %>
 
-&lt;CustomLabelCollection&gt;
+<PointerCollection>
 
-&lt;ej:CircularCustomLabel Value=”0 9 5 3 4 5”&gt;
+<ej:Pointers Value=”60” Length=”95” >
 
-&lt;Font FontFamily ="Arial" FontStyle="Bold" Size="20px" /&gt;
+</ej:Pointers>
 
-&lt;Position X ="180" Y="200" /&gt;
-
-&lt;/ej:CircularCustomLabel&gt;
-
-&lt;/CustomLabelCollection&gt;
-
-&lt;/ej:CircularScales&gt;
-
-&lt;/Scales&gt;
-
-&lt;/ej:circulargauge&gt;
+</PointerCollection>
 
 
+
+<%-- Customizes the custom label options-- %>
+
+<CustomLabelCollection>
+
+<ej:CircularCustomLabel Value=”0 9 5 3 4 5”>
+
+<Font FontFamily ="Arial" FontStyle="Bold" Size="20px" />
+
+<Position X ="180" Y="200" />
+
+</ej:CircularCustomLabel>
+
+</CustomLabelCollection>
+
+</ej:CircularScales>
+
+</Scales>
+
+</ej:circulargauge>
+
+{% endhighlight %}
 Execute the above code to render the following output.
 
 
+ ![](Tooltip_images/Tooltip_img2.png)
 
-{ ![](Tooltip_images/Tooltip_img2.png) | markdownify }
-{:.image }
+
 
 
 

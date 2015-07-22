@@ -7,7 +7,7 @@ control: Slider
 documentation: ug
 ---
 
-## Persistence Support
+# Persistence Support
 
 This feature supports you to save current model value to browser cookies for state maintenance. When you refresh the web page, the Slider control retains the model value applied from browser cookies. The data type of the EnablePersistence is Boolean.
 

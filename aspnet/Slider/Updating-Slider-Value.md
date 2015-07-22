@@ -7,15 +7,15 @@ control: Slider
 documentation: ug
 ---
 
-## Updating Slider Value
+# Updating Slider Value
 
 Slider control includes an option to specify/update its value. Also, you can specify the starting and ending value for the Slider by using the MinValue and MaxValue properties.
 
-### Value
+## Value
 
 This property is used to set the value in the Default and Min-Range Sliders. By default, its value is null when no value is specified. Data type of this property is number.
 
-### Values
+## Values
 
 This property is used to set the value in Range Slider. By default, range values are from 0 to 100. The property is of Array data type.
 
@@ -47,21 +47,21 @@ The following screenshot displays the output of the above code example.
 
 Default Slider
 
-{ ![](Updating-Slider-Value_images/Updating-Slider-Value_img1.png) | markdownify }
-{:.image }
+![](Updating-Slider-Value_images/Updating-Slider-Value_img1.png)
+
 
 
 Range Slider
 
-{ ![](Updating-Slider-Value_images/Updating-Slider-Value_img2.png) | markdownify }
-{:.image }
+![](Updating-Slider-Value_images/Updating-Slider-Value_img2.png)
 
 
-### MinValue
+
+## MinValue
 
 To set the minimum/starting value of the Slider, you can use the MinValue property. By default, its value is 0. Data type of this property is number.
 
-### MaxValue
+## MaxValue
 
 To set the maximum/ending value of the Slider, you can use the MaxValue property. By default, its value is 100. Data type of this property is number.
 
@@ -89,14 +89,13 @@ The following screenshot displays the output of the above code example.
 
 Default Slider
 
-{ ![](Updating-Slider-Value_images/Updating-Slider-Value_img3.png) | markdownify }
-{:.image }
+![](Updating-Slider-Value_images/Updating-Slider-Value_img3.png)
+
 
 
 Range Slider
 
-{ ![](Updating-Slider-Value_images/Updating-Slider-Value_img4.png) | markdownify }
-{:.image }
+![](Updating-Slider-Value_images/Updating-Slider-Value_img4.png)
 
 
 In the above example, for Default Slider, the slider value starts from 40 (min value) and ends at 80 (max value). So, the Sliderhandle is placed at the center of the Slider while specifying the value as 60.

@@ -7,7 +7,7 @@ control: Control Name undefined
 documentation: ug
 ---
 
-## Persistence support 
+# Persistence support 
 
 This feature enables you to save current model value to browser cookies for state maintains. When you refresh the ListBox control page, it retains the model value apply from browser cookies. The date type of EnablePersistence is Boolean type. 
 

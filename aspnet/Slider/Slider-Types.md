@@ -7,7 +7,7 @@ control: Slider
 documentation: ug
 ---
 
-## Slider Types
+# Slider Types
 
 This feature allows you to specify the type of Slider. There are three different types of Sliders; Default Slider, Min-Range Slider and Range Slider. Default Slider is rendered, by default. You can use the SliderType property to choose the type of Slider. Data type of this property is Enum.
 
@@ -17,10 +17,10 @@ Possible Slider types are as follows,
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Allowed values</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Allowed values</th><th>
+Description</th></tr>
 <tr>
 <td rowspan = "3">
 SliderType</td><td>
@@ -61,13 +61,13 @@ The following screenshot displays the output of the above code example.
 
 MinRange
 
-{ ![](Slider-Types_images/Slider-Types_img1.png) | markdownify }
-{:.image }
+![](Slider-Types_images/Slider-Types_img1.png)
+
 
 
 Range
 
-{ ![](Slider-Types_images/Slider-Types_img2.png) | markdownify }
-{:.image }
+![](Slider-Types_images/Slider-Types_img2.png)
+
 
 

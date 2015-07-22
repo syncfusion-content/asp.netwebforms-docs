@@ -7,15 +7,15 @@ control: Control Name undefined
 documentation: ug
 ---
 
-## Keyboard interaction
+# Keyboard interaction
 
 You can use Keyboard shortcut keys as an alternative to the mouse on using ListBox widget. ListBox Widget allows you to perform all kind of actions by using keyboard shortcuts.
 
 <table>
 <tr>
-<td>
-Shortcut Key</td><td>
-Description</td></tr>
+<th>
+Shortcut Key</th><th>
+Description</th></tr>
 <tr>
 <td>
 Access key + j</td><td>
@@ -49,6 +49,7 @@ Navigates to the starting item </td></tr>
 End</td><td>
 Navigates to the end item </td></tr>
 </table>
+
 ### Configure keyboard interaction
 
 The following steps explain you to enable keyboard interaction for a ListBox.
@@ -180,7 +181,7 @@ $(function () {
 Run the sample, press Alt + J to focus in the ListBox widget that enables it and you can navigate by using arrow keys.
 
 
-{ ![](Keyboard-interaction_images/Keyboard-interaction_img1.png) | markdownify }
-{:.image }
+ ![](Keyboard-interaction_images/Keyboard-interaction_img1.png)
+
 
 

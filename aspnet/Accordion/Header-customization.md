@@ -13,17 +13,13 @@ documentation: ug
 
 Accordion control allows you to set Collapsible state for an Accordion header. Thus you can expand and collapse accordion contents. By default Collapsible is set to false.
 
-## Enable Collapsible settings
+### Enable Collapsible settings
 
 The following steps explains to enable Collapsible state for Accordion.
 
 In an ASPX page, define the Accordion control and add the contents correspondingly. Set the Collapsible property as true.
 
-
-
 {% highlight html %}
-
-
 
 <div style="width:400px">     
 
@@ -67,10 +63,6 @@ In an ASPX page, define the Accordion control and add the contents correspondin
 
 </div>
 
-
-
-
-
 {% endhighlight %}
 
 
@@ -79,14 +71,12 @@ In an ASPX page, define the Accordion control and add the contents correspondin
 
 
  ![](Header-customization_images/Header-customization_img1.png)
-{:.image }
-
 
 ## Enable Header expand
 
 Accordion control provides you support to set the event, where the headers should expand and collapse. The Events properties takes default events like mouseout, mouseover, and click.
 
-## Configure header expand event
+### Configure header expand event
 
 The following steps explains you to configure header expand event for Accordion.
 
@@ -148,7 +138,6 @@ Output for Accordion control that expands header on mouseout event is as follows
 
 
  ![](Header-customization_images/Header-customization_img2.png)
-{:.image }
 
 
 ## Single selection
@@ -271,8 +260,6 @@ In an ASPX page, define the Accordion control and add the contents correspondin
 
 </div>
 
-
-
 {% endhighlight %}
 
 Set the items that are to be selected on initial loading in code behind
@@ -294,10 +281,8 @@ protected void Page_Load(object sender, EventArgs e)
 {% endhighlight %}
 
 
-
 Output for Accordion control with the multiple selected items is as follows.
 
  ![](Header-customization_images/Header-customization_img4.png)
-{:.image }
 
 

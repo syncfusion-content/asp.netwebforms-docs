@@ -12,85 +12,67 @@ documentation: ug
 * Circular Gauge has an exporting feature that converts Gauge control into image format and then export in client side. The method API exportImage is used to export the Circular Gauge. 
 * It has two arguments such as file name and file format to specify the file name and file formats. For exporting refer the following code example.
 
+{% highlight html %}
 
+<asp:Button ID="Button1" runat="server" Text="Button" OnClientClick="buttonclickevent()" />
 
+<ej:CircularGauge runat="server" ID="CoreExportGauge" BackgroundColor="transparent">
 
+<Scales>
 
-[ASP]
+<ej:CircularScales ShowRanges="true" SweepAngle="296" StartAngle="122" Radius="130" ShowScaleBar="true" Size="1" Maximum="120" MajorIntervalValue="20" MinorIntervalValue="10">
 
+<PointerCap Radius="12"></PointerCap>
 
+<Border Width="0.5"></Border>
 
-&lt;asp:Button ID="Button1" runat="server" Text="Button" OnClientClick="buttonclickevent()" /&gt;
+<PointerCollection>
 
+<ej:Pointers Value="60" ShowBackNeedle="true" Length="95" Width="7" BackNeedleLength="20"></ej:Pointers>
 
+</PointerCollection>
 
-&lt;ej:CircularGauge runat="server" ID="CoreExportGauge" BackgroundColor="transparent"&gt;
+<TickCollection>
 
-&lt;Scales&gt;
+<ej:CircularTicks Type="Major" Height="16" Width="1" DistanceFromScale="2" />
 
-&lt;ej:CircularScales ShowRanges="true" SweepAngle="296" StartAngle="122" Radius="130" ShowScaleBar="true" Size="1" Maximum="120" MajorIntervalValue="20" MinorIntervalValue="10"&gt;
+<ej:CircularTicks Type="Minor" Height="8" Width="1" DistanceFromScale="2" />
 
-&lt;PointerCap Radius="12"&gt;&lt;/PointerCap&gt;
+</TickCollection>
 
-&lt;Border Width="0.5"&gt;&lt;/Border&gt;
+<LabelCollection>
 
-&lt;PointerCollection&gt;
+<ej:CircularLabels Type="Major"></ej:CircularLabels>
 
-&lt;ej:Pointers Value="60" ShowBackNeedle="true" Length="95" Width="7" BackNeedleLength="20"&gt;&lt;/ej:Pointers&gt;
+</LabelCollection>
 
-&lt;/PointerCollection&gt;
+<RangeCollection>
 
-&lt;TickCollection&gt;
+<ej:CircularRanges DistanceFromScale="-30" StartValue="0" EndValue="70">
 
-&lt;ej:CircularTicks Type="Major" Height="16" Width="1" DistanceFromScale="2" /&gt;
+</ej:CircularRanges>
 
-&lt;ej:CircularTicks Type="Minor" Height="8" Width="1" DistanceFromScale="2" /&gt;
+<ej:CircularRanges BackgroundColor="#fc0606" DistanceFromScale="-30" StartValue="70" EndValue="110">
 
-&lt;/TickCollection&gt;
+<Border Color="#fc0606"></Border>
 
+</ej:CircularRanges>
 
+<ej:CircularRanges BackgroundColor="#f5b43f" DistanceFromScale="-30" StartValue="110" EndValue="120">
 
+<Border Color="#f5b43f"></Border>
 
+</ej:CircularRanges>
 
-&lt;LabelCollection&gt;
+</RangeCollection>
 
-&lt;ej:CircularLabels Type="Major"&gt;&lt;/ej:CircularLabels&gt;
+</ej:CircularScales>
 
+</Scales>
 
+</ej:CircularGauge>
 
-&lt;/LabelCollection&gt;
-
-
-
-&lt;RangeCollection&gt;
-
-&lt;ej:CircularRanges DistanceFromScale="-30" StartValue="0" EndValue="70"&gt;
-
-&lt;/ej:CircularRanges&gt;
-
-&lt;ej:CircularRanges BackgroundColor="#fc0606" DistanceFromScale="-30" StartValue="70" EndValue="110"&gt;
-
-&lt;Border Color="#fc0606"&gt;&lt;/Border&gt;
-
-&lt;/ej:CircularRanges&gt;
-
-&lt;ej:CircularRanges BackgroundColor="#f5b43f" DistanceFromScale="-30" StartValue="110" EndValue="120"&gt;
-
-&lt;Border Color="#f5b43f"&gt;&lt;/Border&gt;
-
-&lt;/ej:CircularRanges&gt;
-
-&lt;/RangeCollection&gt;
-
-&lt;/ej:CircularScales&gt;
-
-&lt;/Scales&gt;
-
-&lt;/ej:CircularGauge&gt;
-
-
-
-&lt;script type="text/javascript" class="jsScript"&gt;
+<script type="text/javascript" class="jsScript">
 
 $(function () {
 
@@ -110,15 +92,11 @@ $("#CoreExportGauge").ejCircularGauge("exportImage", FileName, FileFormat);
 
 }
 
-&lt;/script&gt;
-
-
-
-
-
+</script>
+{% endhighlight %}
 Execute the above code to render the following output.
 
  ![](Exporting_images/Exporting_img1.png) 
-{:.image }
+
 
 

@@ -16,32 +16,30 @@ Ranges are used to specify or group the scale values. By using ranges, you can d
 Range collection is directly added to the scale object. Refer the following code example to add range collection in a Gauge control. 
 
 
-
 {% highlight html %}
 
 
+<%--For Circular Gauge rendering-- %>
 
-&lt;%--For Circular Gauge rendering-- %&gt;
+<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+<Scales>
 
-&lt;Scales&gt;
+<ej:CircularScales ShowRanges="true">
 
-&lt;ej:CircularScales ShowRanges="true"&gt;
+<RangeCollection>
 
-&lt;RangeCollection&gt;
+<ej:CircularRanges StartValue="20" EndValue="80" BackgroundColor="green" Placement="far">
 
-&lt;ej:CircularRanges StartValue="20" EndValue="80" BackgroundColor="green" Placement="far"&gt;
+</ej:CircularRanges>
 
-&lt;/ej:CircularRanges&gt;
+</RangeCollection>
 
-&lt;/RangeCollection&gt;
+</ej:CircularScales>
 
-&lt;/ej:CircularScales&gt;
+</Scales>
 
-&lt;/Scales&gt;
-
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
 {% endhighlight %}
 
@@ -57,40 +55,39 @@ Range collection is directly added to the scale object. Refer the following code
 {% highlight html %}
 
 
+<%--For Circular Gauge rendering-- %>
 
-&lt;%--For Circular Gauge rendering-- %&gt;
+<ej:CircularGauge runat="server" ID="CircularGauge1">
 
-&lt;ej:CircularGauge runat="server" ID="CircularGauge1"&gt;
+<Scales>
 
-&lt;Scales&gt;
+<ej:CircularScales ShowRanges="true"  ShowscaleBar="true" radius="150" Size="5">
 
-&lt;ej:CircularScales ShowRanges="true"  ShowscaleBar="true" radius="150" Size="5"&gt;
+<PointerCollection>
 
-&lt;PointerCollection&gt;
+<ej:Pointers  Value="0"  length="110"></ej:Pointers>
 
-&lt;ej:Pointers  Value="0"  length="110"&gt;&lt;/ej:Pointers&gt;
+</PointerCollection>
 
-&lt;/PointerCollection&gt;
+<labelCollection>
 
-&lt;labelCollection&gt;
+<ej:CircularLabels type="major" />
 
-&lt;ej:CircularLabels type="major" /&gt;
+</labelCollection>
 
-&lt;/labelCollection&gt;
+<RangeCollection>
 
-&lt;RangeCollection&gt;
+<ej:CircularRanges StartValue="20" endValue="80" BackgroundColor="green" Placement="far">
 
-&lt;ej:CircularRanges StartValue="20" endValue="80" BackgroundColor="green" Placement="far"&gt;
+</ej:CircularRanges>
 
-&lt;/ej:CircularRanges&gt;
+</RangeCollection>
 
-&lt;/RangeCollection&gt;
+</ej:CircularScales>
 
-&lt;/ej:CircularScales&gt;
+</Scales>
 
-&lt;/Scales&gt;
-
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
 
 {% endhighlight %}
@@ -99,7 +96,7 @@ Range collection is directly added to the scale object. Refer the following code
 Execute the above code to render the following output.
 
  ![](Ranges-and-Frames_images/Ranges-and-Frames_img1.png)
-{:.image }
+
 
 
 ### Colors and Border
@@ -108,52 +105,39 @@ Execute the above code to render the following output.
 * You can set the background color to improve the look and feel of the Circular Gauge. For customizing the background color of the ranges, backgroundColor is used.
 
 
-
-
-
-
-
-
-
 {% highlight html %}
 
-&lt;%--For Circular Gauge rendering-- %&gt;
+<%--For Circular Gauge rendering-- %>
 
-&lt;ej:CircularGauge runat="server" ID="CircularGauge1"&gt;
+<ej:CircularGauge runat="server" ID="CircularGauge1">
 
-&lt;Scales&gt;
+<Scales>
 
-&lt;ej:CircularScales ShowRanges="true"  ShowscaleBar="true" radius="150" Size="2"&gt;
+<ej:CircularScales ShowRanges="true"  ShowscaleBar="true" radius="150" Size="2">
 
-&lt;%--For setting range start value, end value, background color and border color-- %&gt;
+<%--For setting range start value, end value, background color and border color-- %>
 
-&lt;RangeCollection&gt;
+<RangeCollection>
 
-&lt;ej:CircularRanges StartValue="20" endValue="80" BackgroundColor="yellow" Placement="far"&gt;
+<ej:CircularRanges StartValue="20" endValue="80" BackgroundColor="yellow" Placement="far">
 
-&lt;Border Color="green" Width="2" /&gt;
+<Border Color="green" Width="2" />
 
-&lt;/ej:CircularRanges&gt;
+</ej:CircularRanges>
 
-&lt;/RangeCollection&gt;
+</RangeCollection>
 
-&lt;/ej:CircularScales&gt;
+</ej:CircularScales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
 {% endhighlight %}
 
 Execute the above code to render the following output.
 
  ![](Ranges-and-Frames_images/Ranges-and-Frames_img2.png)
-{:.image }
-
-
-
-
-
 
 ### Position the ranges
 
@@ -166,44 +150,38 @@ Execute the above code to render the following output.
 {% highlight html %}
 
 
+<%--For Circular Gauge rendering-- %>
 
-&lt;%--For Circular Gauge rendering-- %&gt;
+<ej:CircularGauge runat="server" ID="CircularGauge1">
 
-&lt;ej:CircularGauge runat="server" ID="CircularGauge1"&gt;
+<Scales>
 
-&lt;Scales&gt;
+<ej:CircularScales ShowRanges="true"  ShowscaleBar="true" radius="150" Size="2">
 
-&lt;ej:CircularScales ShowRanges="true"  ShowscaleBar="true" radius="150" Size="2"&gt;
+<%--For setting range start value, end value, distance between scale and ranges-- %> 
 
-&lt;%--For setting range start value, end value, distance between scale and ranges-- %&gt; 
+<RangeCollection>
 
-&lt;RangeCollection&gt;
+<ej:CircularRanges StartValue="0" endValue="100" BackgroundColor="green" Placement="far" DistanceFromScale="-30">
 
-&lt;ej:CircularRanges StartValue="0" endValue="100" BackgroundColor="green" Placement="far" DistanceFromScale="-30"&gt;
+<Border width="2" Color="black" />
 
-&lt;Border width="2" Color="black" /&gt;
+</ej:CircularRanges>
 
-&lt;/ej:CircularRanges&gt;
+</RangeCollection>
 
-&lt;/RangeCollection&gt;
+</ej:CircularScales>
 
-&lt;/ej:CircularScales&gt;
+</Scales>
 
-&lt;/Scales&gt;
-
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
 {% endhighlight %}
 
 Execute the above code to render the following output.
 
 
-
  ![](Ranges-and-Frames_images/Ranges-and-Frames_img3.png) 
-{:.image }
-
-
-
 
 ### Multiple Ranges
 
@@ -213,43 +191,41 @@ You can set multiple ranges by adding an array of ranges objects. Refer the foll
 
 {% highlight html %}
 
+<%--For Circular Gauge rendering-- %>
 
+<ej:CircularGauge runat="server" ID="CircularGauge1">
 
-&lt;%--For Circular Gauge rendering-- %&gt;
+<Scales>
 
-&lt;ej:CircularGauge runat="server" ID="CircularGauge1"&gt;
+<ej:CircularScales ShowRanges="true"  ShowscaleBar="true" radius="150" Size="2" Maximum="100">
 
-&lt;Scales&gt;
+<PointerCollection>
 
-&lt;ej:CircularScales ShowRanges="true"  ShowscaleBar="true" radius="150" Size="2" Maximum="100"&gt;
+<ej:Pointers  Value="40" showbackneedle="true" length="100"></ej:Pointers>
 
-&lt;PointerCollection&gt;
+</PointerCollection>
 
-&lt;ej:Pointers  Value="40" showbackneedle="true" length="100"&gt;&lt;/ej:Pointers&gt;
+<RangeCollection>
 
-&lt;/PointerCollection&gt;
+<%--For setting range1-- %>
 
-&lt;RangeCollection&gt;
+<ej:CircularRanges StartValue="0" endValue="50" BackgroundColor="green" Placement="far" DistanceFromScale="-30"></ej:CircularRanges>
 
-&lt;%--For setting range1-- %&gt;
+<%--For setting range2 -- %>
 
-&lt;ej:CircularRanges StartValue="0" endValue="50" BackgroundColor="green" Placement="far" DistanceFromScale="-30"&gt;&lt;/ej:CircularRanges&gt;
+<ej:CircularRanges StartValue="50" endValue="80" BackgroundColor="yellow" Placement="far" DistanceFromScale="-30"> </ej:CircularRanges>
 
-&lt;%--For setting range2 -- %&gt;
+<%--For setting range3--%>
 
-&lt;ej:CircularRanges StartValue="50" endValue="80" BackgroundColor="yellow" Placement="far" DistanceFromScale="-30"&gt; &lt;/ej:CircularRanges&gt;
+<ej:CircularRanges StartValue="80" endValue="100" BackgroundColor="red" Placement="far" DistanceFromScale="-30"></ej:CircularRanges>
 
-&lt;%--For setting range3--%&gt;
+</RangeCollection>
 
-&lt;ej:CircularRanges StartValue="80" endValue="100" BackgroundColor="red" Placement="far" DistanceFromScale="-30"&gt;&lt;/ej:CircularRanges&gt;
+</ej:CircularScales>
 
-&lt;/RangeCollection&gt;
+</Scales>
 
-&lt;/ej:CircularScales&gt;
-
-&lt;/Scales&gt;
-
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
 {% endhighlight %}
 
@@ -258,12 +234,6 @@ You can set multiple ranges by adding an array of ranges objects. Refer the foll
 Execute the above code to render the following output.
 
  ![](Ranges-and-Frames_images/Ranges-and-Frames_img4.png)
-{:.image }
-
-
-
-
-
 
 ### Frames
 
@@ -271,42 +241,33 @@ Execute the above code to render the following output.
 * frameType is used to specify whether frame is a half circle frame or full circle frame. halfCircleFrameStartAngle and halfCircleFrameEndAngle are used to specify the angle for Gauge with frame type as half circle. backgroundUrl is used to set the background image for the frame.
 
 
-
-
-
-
-
-
-
 {% highlight html %}
 
+<%--For Circular Gauge rendering-- %>
 
+<ej:CircularGauge runat="server" ID="CircularGauge1" backgroundColor="#FFCCCC">
 
-&lt;%--For Circular Gauge rendering-- %&gt;
+<Scales>
 
-&lt;ej:CircularGauge runat="server" ID="CircularGauge1" backgroundColor="#FFCCCC"&gt;
+<ej:CircularScales startAngle="180" SweepAngle="180">
 
-&lt;Scales&gt;
+<PointerCap Radius="8" />
 
-&lt;ej:CircularScales startAngle="180" SweepAngle="180"&gt;
+<PointerCollection>
 
-&lt;PointerCap Radius="8" /&gt;
+<ej:Pointers  type="Needle" needleType="Rectangle" Value="40" width="1" length="120"></ej:Pointers>
 
-&lt;PointerCollection&gt;
+</PointerCollection>
 
-&lt;ej:Pointers  type="Needle" needleType="Rectangle" Value="40" width="1" length="120"&gt;&lt;/ej:Pointers&gt;
+</ej:CircularScales>
 
-&lt;/PointerCollection&gt;
+</Scales>
 
-&lt;/ej:CircularScales&gt;
+<%--For setting halfcircle frame start angle and end angle-- %>
 
-&lt;/Scales&gt;
+<Frame FrameType="HalfCircle" HalfCircleFrameStartAngle="205" HalfCircleFrameEndAngle="335" />
 
-&lt;%--For setting halfcircle frame start angle and end angle-- %&gt;
-
-&lt;Frame FrameType="HalfCircle" HalfCircleFrameStartAngle="205" HalfCircleFrameEndAngle="335" /&gt;
-
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
 
 {% endhighlight %}
@@ -315,7 +276,7 @@ Execute the above code to render the following output.
 Execute the above code to render the following output.
 
  ![](Ranges-and-Frames_images/Ranges-and-Frames_img5.png)
-{:.image }
+
 
 
 

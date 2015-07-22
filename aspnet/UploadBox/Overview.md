@@ -11,7 +11,7 @@ documentation: ug
 
 The UploadBox control supports uploading files into the designated server, regardless of the file format or size. The UploadBox control helps you with the selection of files to upload to the server. The UploadBox control has theme support.
 
-Key Features
+### Key Features
 
 Modern look: Rich appearance with theme support.
 

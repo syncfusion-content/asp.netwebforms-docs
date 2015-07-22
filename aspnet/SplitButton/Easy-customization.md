@@ -7,11 +7,11 @@ control: Split Button
 documentation: ug
 ---
 
-## Easy customization
+# Easy customization
 
 Split Button is used in many applications. Split Button Size, Content and content location are varied according to each application. The following sections describe you some customizable options for the Split Button.
 
-### Content for Split button 
+## Content for Split button 
 
 The Items tag is a mandatory one. Without this field, Split Button acts as normal button on two sides. This is used to specify the list of contents for the Split Button. The list of contents is rendered as a vertical menu list. This vertical menu list is opened, when you click on the down arrow of the Split Button.
 
@@ -57,11 +57,11 @@ In an ASPX page, define the Split Button control and add the contents for the Sp
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Easy-customization_images/Easy-customization_img1.png) | markdownify }
-{:.image }
+ ![](Easy-customization_images/Easy-customization_img1.png)
 
 
-### Button Size
+
+## Button Size
 
 You can render the Split Button in different sizes. The following table contains some predefined size options for rendering a Split Button in an easiest way. Each size option has different heights and widths. Mainly it avoids the complexity in rendering Split Button with complex CSS class.
 
@@ -223,11 +223,11 @@ In an ASPX page, define the Split Button control and set the different size type
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Easy-customization_images/Easy-customization_img2.png) | markdownify }
-{:.image }
+![](Easy-customization_images/Easy-customization_img2.png) 
 
 
-### Content Type
+
+## Content Type
 
 The content of the Split Button is mainly rendered as text and images. Instead of using the complex CSS classes to render the Split Button with different content types, you can use some predefined content type options listed in the following table. By using this content types, you can easily add different types of content for the Split Button. Split Button supports the following content types.
 
@@ -253,7 +253,8 @@ Supports image with the text content.</td></tr>
 Imagetextimage</td><td>
 Supports image for both ends and middle in the text.</td></tr>
 </table>
-### Prefix and Suffix icons
+
+## Prefix and Suffix icons
 
 Icons inside the Split Button are added easily by using the PrefixIcon and SuffixIcon properties. Location of the icon in the Split Button is a necessary thing. You can customize the location of Icon easily by using the following mentioned options.
 
@@ -269,12 +270,13 @@ For example, the following build-in CSS class is used to display the font icons 
 * e-mediaclose
 * e-mediapause
 * e-mediaplay
-#### Prefix Icon
+
+### Prefix Icon
 
 
 It inserts the icon at the starting position of the Split Button. After this prefix icon, you can use text or suffix icon.
 
-#### Suffix Icon
+### Suffix Icon
 
 It inserts the icon at the ending position of the Split Button. Before this suffix icon, you can use text or prefix icon.
 
@@ -390,11 +392,11 @@ In an ASPX page, define the Split Button control. Set the different content type
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Easy-customization_images/Easy-customization_img3.png) | markdownify }
-{:.image }
+ ![](Easy-customization_images/Easy-customization_img3.png) 
 
 
-### Image Position
+
+## Image Position
 
 To provide the best look and feel for the Split Button, position of images in the Split Button is important. By using ImagePosition property, you can easily customize the position of images inside the Split Button without by using any complex CSS. ImagePosition property is applicable only with the textandimage content type property. This property represents the position of images with respect to text.
 
@@ -421,231 +423,231 @@ The following steps explain the details on rendering the Split Button with abo
 
 In an ASPX page, define the Split Button control. Set the different image position.
 
+{% highlight html %}
 
+<table>
 
-&lt;table&gt;
+        <tr>
 
-        &lt;tr&gt;
+            <td>
 
-            &lt;td&gt;
+                <ej:SplitButton ID="NormalSptButton_ImageLeft" runat="server" Text="login" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageLeft">
 
-                &lt;ej:SplitButton ID="NormalSptButton_ImageLeft" runat="server" Text="login" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageLeft"&gt;
+                    <Items>
 
-                    &lt;Items&gt;
+                        <ej:SplitItem Text="User"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="User"&gt;&lt;/ej:SplitItem&gt;
+                        <ej:SplitItem Text="Guest"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="Guest"&gt;&lt;/ej:SplitItem&gt;
+                        <ej:SplitItem Text="Admin"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="Admin"&gt;&lt;/ej:SplitItem&gt;
+                    </Items>
 
-                    &lt;/Items&gt;
+                </ej:SplitButton>
 
-                &lt;/ej:SplitButton&gt;
+            </td>
 
-            &lt;/td&gt;
+            <td>
 
-            &lt;td&gt;
+                <ej:SplitButton ID="SmallSptButton_ImageLeft" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageLeft">
 
-                &lt;ej:SplitButton ID="SmallSptButton_ImageLeft" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageLeft"&gt;
+                    <Items>
 
-                    &lt;Items&gt;
+                        <ej:SplitItem Text="User"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="User"&gt;&lt;/ej:SplitItem&gt;
+                        <ej:SplitItem Text="Guest"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="Guest"&gt;&lt;/ej:SplitItem&gt;
+                        <ej:SplitItem Text="Admin"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="Admin"&gt;&lt;/ej:SplitItem&gt;
+                    </Items>
 
-                    &lt;/Items&gt;
+                </ej:SplitButton>
 
-                &lt;/ej:SplitButton&gt;
+            </td>
 
-            &lt;/td&gt;
+            <td>
 
-            &lt;td&gt;
+                <ej:SplitButton ID="MediumSptButton_ImageLeft" runat="server" Text="login" Size="Medium" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageLeft">
 
-                &lt;ej:SplitButton ID="MediumSptButton_ImageLeft" runat="server" Text="login" Size="Medium" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageLeft"&gt;
+                    <Items>
 
-                    &lt;Items&gt;
+                        <ej:SplitItem Text="User"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="User"&gt;&lt;/ej:SplitItem&gt;
+                        <ej:SplitItem Text="Guest"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="Guest"&gt;&lt;/ej:SplitItem&gt;
+                        <ej:SplitItem Text="Admin"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="Admin"&gt;&lt;/ej:SplitItem&gt;
+                    </Items>
 
-                    &lt;/Items&gt;
+                </ej:SplitButton>
 
-                &lt;/ej:SplitButton&gt;
+            </td>
 
-            &lt;/td&gt;
+            <td>
 
-            &lt;td&gt;
+                <ej:SplitButton ID="LargeSptButton_ImageLeft" runat="server" Text="login" Size="Large" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageLeft">
 
-                &lt;ej:SplitButton ID="LargeSptButton_ImageLeft" runat="server" Text="login" Size="Large" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageLeft"&gt;
+                    <Items>
 
-                    &lt;Items&gt;
+                        <ej:SplitItem Text="User"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="User"&gt;&lt;/ej:SplitItem&gt;
+                        <ej:SplitItem Text="Guest"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="Guest"&gt;&lt;/ej:SplitItem&gt;
+                        <ej:SplitItem Text="Admin"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="Admin"&gt;&lt;/ej:SplitItem&gt;
+                    </Items>
 
-                    &lt;/Items&gt;
+                </ej:SplitButton>
 
-                &lt;/ej:SplitButton&gt;
+            </td>
 
-            &lt;/td&gt;
+        </tr>
 
-        &lt;/tr&gt;
+</table>
 
-&lt;/table&gt;
+<br />
 
-&lt;br /&gt;
 
 
+<table>
 
-&lt;table&gt;
+        <tr>
 
-        &lt;tr&gt;
+            <td>
 
-            &lt;td&gt;
+                <ej:SplitButton ID="NormalSptButton_ImageRight" runat="server" Text="login" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageRight">
 
-                &lt;ej:SplitButton ID="NormalSptButton_ImageRight" runat="server" Text="login" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageRight"&gt;
+                    <Items>
 
-                    &lt;Items&gt;
+                        <ej:SplitItem Text="User"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="User"&gt;&lt;/ej:SplitItem&gt;
+                        <ej:SplitItem Text="Guest"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="Guest"&gt;&lt;/ej:SplitItem&gt;
+                        <ej:SplitItem Text="Admin"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="Admin"&gt;&lt;/ej:SplitItem&gt;
+                    </Items>
 
-                    &lt;/Items&gt;
+                </ej:SplitButton>
 
-                &lt;/ej:SplitButton&gt;
+            </td>
 
-            &lt;/td&gt;
+            <td>
 
-            &lt;td&gt;
+                <ej:SplitButton ID="SmallSptButton_ImageRight" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageRight">
 
-                &lt;ej:SplitButton ID="SmallSptButton_ImageRight" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageRight"&gt;
+                    <Items>
 
-                    &lt;Items&gt;
+                        <ej:SplitItem Text="User"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="User"&gt;&lt;/ej:SplitItem&gt;
+                        <ej:SplitItem Text="Guest"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="Guest"&gt;&lt;/ej:SplitItem&gt;
+                        <ej:SplitItem Text="Admin"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="Admin"&gt;&lt;/ej:SplitItem&gt;
+                    </Items>
 
-                    &lt;/Items&gt;
+                </ej:SplitButton>
 
-                &lt;/ej:SplitButton&gt;
+            </td>
 
-            &lt;/td&gt;
+            <td>
 
-            &lt;td&gt;
+                <ej:SplitButton ID="MediumSptButton_ImageRight" runat="server" Text="login" Size="Medium" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageRight">
 
-                &lt;ej:SplitButton ID="MediumSptButton_ImageRight" runat="server" Text="login" Size="Medium" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageRight"&gt;
+                    <Items>
 
-                    &lt;Items&gt;
+                        <ej:SplitItem Text="User"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="User"&gt;&lt;/ej:SplitItem&gt;
+                        <ej:SplitItem Text="Guest"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="Guest"&gt;&lt;/ej:SplitItem&gt;
+                        <ej:SplitItem Text="Admin"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="Admin"&gt;&lt;/ej:SplitItem&gt;
+                    </Items>
 
-                    &lt;/Items&gt;
+                </ej:SplitButton>
 
-                &lt;/ej:SplitButton&gt;
+            </td>
 
-            &lt;/td&gt;
+            <td>
 
-            &lt;td&gt;
+                <ej:SplitButton ID="LargeSptButton_ImageRight" runat="server" Text="login" Size="Large" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageRight">
 
-                &lt;ej:SplitButton ID="LargeSptButton_ImageRight" runat="server" Text="login" Size="Large" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageRight"&gt;
+                    <Items>
 
-                    &lt;Items&gt;
+                        <ej:SplitItem Text="User"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="User"&gt;&lt;/ej:SplitItem&gt;
+                        <ej:SplitItem Text="Guest"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="Guest"&gt;&lt;/ej:SplitItem&gt;
+                        <ej:SplitItem Text="Admin"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="Admin"&gt;&lt;/ej:SplitItem&gt;
+                    </Items>
 
-                    &lt;/Items&gt;
+                </ej:SplitButton>
 
-                &lt;/ej:SplitButton&gt;
+            </td>
 
-            &lt;/td&gt;
+        </tr>
 
-        &lt;/tr&gt;
+</table>
 
-&lt;/table&gt;
+<br />
 
-&lt;br /&gt;
 
 
+<table>
 
-&lt;table&gt;
+        <tr>
 
-        &lt;tr&gt;
+            <td>
 
-            &lt;td&gt;
+                <ej:SplitButton ID="SplitButton_ImageTop" runat="server" Text="login" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageTop" Height="60" Width="84">
 
-                &lt;ej:SplitButton ID="SplitButton_ImageTop" runat="server" Text="login" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageTop" Height="60" Width="84"&gt;
+                    <Items>
 
-                    &lt;Items&gt;
+                        <ej:SplitItem Text="User"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="User"&gt;&lt;/ej:SplitItem&gt;
+                        <ej:SplitItem Text="Guest"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="Guest"&gt;&lt;/ej:SplitItem&gt;
+                        <ej:SplitItem Text="Admin"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="Admin"&gt;&lt;/ej:SplitItem&gt;
+                    </Items>
 
-                    &lt;/Items&gt;
+                </ej:SplitButton>
 
-                &lt;/ej:SplitButton&gt;
+            </td>
 
-            &lt;/td&gt;
+            <td>
 
-            &lt;td&gt;
+                <ej:SplitButton ID="SplitButton_ImageBottom" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageBottom" Height="60" Width="84">
 
-                &lt;ej:SplitButton ID="SplitButton_ImageBottom" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageBottom" Height="60" Width="84"&gt;
+                    <Items>
 
-                    &lt;Items&gt;
+                        <ej:SplitItem Text="User"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="User"&gt;&lt;/ej:SplitItem&gt;
+                        <ej:SplitItem Text="Guest"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="Guest"&gt;&lt;/ej:SplitItem&gt;
+                        <ej:SplitItem Text="Admin"></ej:SplitItem>
 
-                        &lt;ej:SplitItem Text="Admin"&gt;&lt;/ej:SplitItem&gt;
+                    </Items>
 
-                    &lt;/Items&gt;
+                </ej:SplitButton>
 
-                &lt;/ej:SplitButton&gt;
+            </td>
 
-            &lt;/td&gt;
+        </tr>
 
-        &lt;/tr&gt;
+</table>
 
-&lt;/table&gt;
 
-
-
+{% endhighlight %}
 
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Easy-customization_images/Easy-customization_img4.png) | markdownify }
-{:.image }
+ ![](Easy-customization_images/Easy-customization_img4.png)
+
 __
 
-### Theme support
+## Theme support
 
 You can control the style and appearance ofthe Split Button based on CSS classes. In order to apply styles to the Split Button control, you can refer to two files namely, ej.widgets.core.min.css and ej.theme.min.css. When you refer to the ej.widgets.all.min.css file, then it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project, as ej.widgets.all.min.css is the combination of these two.
 
@@ -664,7 +666,8 @@ By default, there are 13 themes support available for the Split Button control
 * gradient-lime-dark
 * gradient-saffron
 * gradient-saffron-dark
-### Custom CSS
+
+## Custom CSS
 
 
 You can use the CSS class to customize the Split Button control appearance. Define a CSS class as per requirement and assign the class name to CssClass property.
@@ -784,7 +787,7 @@ In an ASPX page, define the Split Button control and set custom CSS class.
 Define the style for the Split Button control.
 
 
-
+{% highlight html %}
        // Customizes the button background 
 
 
@@ -900,12 +903,12 @@ Define the style for the Split Button control.
         }
 
 
-
+{% endhighlight %}
 
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Easy-customization_images/Easy-customization_img5.png) | markdownify }
-{:.image }
+ ![](Easy-customization_images/Easy-customization_img5.png)
+
 
 

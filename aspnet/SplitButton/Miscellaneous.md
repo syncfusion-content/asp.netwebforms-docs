@@ -7,9 +7,9 @@ control: Split Button
 documentation: ug
 ---
 
-## Miscellaneous
+# Miscellaneous
 
-### Text
+## Text
 
 It is necessary to display the user-defined text for the Split Button. By using the Text property, you can easily set text content for the Split Button. This Text property overwrites the text that is provided on input button element.
 
@@ -83,11 +83,11 @@ Define the style for the Split Button control.
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Miscellaneous_images/Miscellaneous_img1.png) | markdownify }
-{:.image }
+ ![](Miscellaneous_images/Miscellaneous_img1.png)
 
 
-### Show Rounded Corner
+
+## Show Rounded Corner
 
 Specifies the corner of the Split Button in a rounded shape. By default, the edges of the Split Button are not rounded. To set rounded corner, you can enable the ShowRoundedCorner property.
 
@@ -159,7 +159,7 @@ Define the style for the Split Button control.
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Miscellaneous_images/Miscellaneous_img2.png) | markdownify }
-{:.image }
+ ![](Miscellaneous_images/Miscellaneous_img2.png) 
+
 
 

@@ -7,9 +7,9 @@ control: UploadBox
 documentation: ug
 ---
 
-## File Actions
+# File Actions
 
-### Save File Action 
+## Save File Action 
 
 To save the uploaded file, create the handlers class and trigger the same in the SaveUrl property.  In those handlers, save and specify the target location for the uploaded files. Its data type is string type.
 
@@ -18,13 +18,14 @@ The following steps explain the configuration of the SaveUrl property in the Upl
 In the ASPX page, add the UploadBox element.
 
 
-
-&lt;ej:UploadBox ID="Uploadbox" runat="server" SaveUrl="SaveFiles.ashx" &gt; &lt;/ej:UploadBox&gt;
-
+{% highlight html %}
+<ej:UploadBox ID="Uploadbox" runat="server" SaveUrl="SaveFiles.ashx" > </ej:UploadBox>
+{% endhighlight %}
 
 
 Configure the handler to save the file as SaveFiles.ashx. Create a folder (for example, uploadfiles) and save the uploaded files into this folder.  
 
+{% highlight c# %}
 public class SaveFiles : IHttpHandler {
 
 
@@ -93,15 +94,15 @@ public class SaveFiles : IHttpHandler {
 
 }
 
-
+{% endhighlight %}
 
 The following screenshot displays the output. 
 
-{ ![](File-Actions_images/File-Actions_img1.png) | markdownify }
-{:.image }
+ ![](File-Actions_images/File-Actions_img1.png)
 
 
-### Remove File Action 
+
+## Remove File Action 
 
 To remove the uploaded file, create the handlers class and trigger the same in the RemoveUrl property.  In the handlers, remove the file where you have saved the uploaded file. This can be achieved by clicking the remove button on upload dialog. Its data type is string type.
 
@@ -109,14 +110,15 @@ The following steps explains the configuration of the RemoveUrl property in the 
 
 In the ASPX page, add the UploadBox element.
 
+{% highlight html %}
 
+<ej:UploadBox ID="Uploadbox" runat="server" SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx"> </ej:UploadBox>  
 
-&lt;ej:UploadBox ID="Uploadbox" runat="server" SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx"&gt; &lt;/ej:UploadBox&gt;  
-
-
+{% endhighlight %}
 
 Configure the handlers to remove the file from the target location named, RemoveFiles.ashx. From that location, the file is searched and removed from the uploadfiles folder.
 
+{% highlight c# %}
 public class RemoveFiles : IHttpHandler {
 
 
@@ -171,13 +173,13 @@ public class RemoveFiles : IHttpHandler {
 
 }
 
-
+{% endhighlight %}
 
 
 
 The following screenshot displays the output. 
 
-{ ![](File-Actions_images/File-Actions_img2.png) | markdownify }
-{:.image }
+ ![](File-Actions_images/File-Actions_img2.png)
+
 
 

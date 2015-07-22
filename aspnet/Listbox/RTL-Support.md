@@ -7,11 +7,11 @@ control: Control Name undefined
 documentation: ug
 ---
 
-## RTL Support
+# RTL Support
 
 This feature supports to change the left-to-right alignment of the ListBox widget to right-to-left (RTL). 
 
-### Defining the RTL property
+## Defining the RTL property
 
 The following steps explains you the configuration of EnableRTL properties in ListBox.
 
@@ -109,7 +109,7 @@ In an ASPX page, add an elementto configure ListBox.
 Output of the above steps.
 
 
-{ ![C:/Users/Rajaveni/Desktop/docs/UG images/rtl.PNG](RTL-Support_images/RTL-Support_img1.png) | markdownify }
-{:.image }
+ ![C:/Users/Rajaveni/Desktop/docs/UG images/rtl.PNG](RTL-Support_images/RTL-Support_img1.png)
+
 
 

@@ -7,7 +7,7 @@ control: Control Name undefined
 documentation: ug
 ---
 
-## Cascading Support 
+# Cascading Support 
 
 By using cascade option, you can create a behaviour of cascade between ListBox controls. For this, create a database with single field that is common between two ListBox data fields and then mention that column id in value field. With this, you can set second ListBox id in CascadeTo property in first ListBox. 
 
@@ -245,7 +245,7 @@ Configure the styles as follows.
 
 [CSS]  
 
-&lt;style&gt;
+<style>
 
     .controlitem {
 
@@ -255,7 +255,7 @@ Configure the styles as follows.
 
     }
 
-&lt;/style&gt;
+</style>
 
 
 
@@ -263,7 +263,7 @@ Output of the above steps.
 
 
 
-{ ![](Cascading-Support_images/Cascading-Support_img1.png) | markdownify }
-{:.image }
+ ![](Cascading-Support_images/Cascading-Support_img1.png)
+
 
 

@@ -13,23 +13,23 @@ This section explains briefly about how to create an OLAP Gauge in your applicat
 
 ## Create your first OLAP Gauge in ASP.NET
 
-Control Structure
+### Control Structure
 
 The following screenshot shows the structure of an OLAP Gauge control.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
-Syncfusion OLAP Controls – Architecture
 
-{ ![Description: C:/Users/Narendhran Muthuvel/Desktop/blockdiagram.PNG](Getting-Started_images/Getting-Started_img2.png) | markdownify }
-{:.image }
+## Syncfusion OLAP Controls – Architecture
+
+ ![Description: C:/Users/Narendhran Muthuvel/Desktop/blockdiagram.PNG](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 As shown in an above architecture, control rendering takes place at client-side and all other analytical operations on each action takes place at server-side.
 
-Service for OLAP Controls
+## Service for OLAP Controls
 
 The primary reasons for using service in an OLAP processing are:
 
@@ -52,7 +52,7 @@ Further operations are carried with updated OlapReports only and you can send th
 
 This process has the OlapReport always updated. You cannot operate serialized OlapReport in client-side and hence it is carried to service having its class in Syncfusion.Olap.Base assembly to perform the update operation_._
 
-Create an application
+## Create an application
 
 This section encompasses on how to configure the OLAP Gauge control in applications. You can also learn how to pass the required data to OLAP Gauge and to customize its various options according to your requirements. 
 
@@ -60,145 +60,141 @@ In the following example, OLAP Gauge is used to visualize the Revenue for Resell
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img3.png)
+
 
 
 Open Visual Studio and create a new project by clicking New Project. Select the Web category, select the ASP.NET Empty Web Application template, and then click OK.
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img4.png)
 
 
-Add Control in Application
+
+## Add Control in Application
 
 1. Right click the project and select Add > New Folder.  Name the folder as olapgauge.
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img5.png)
+
 
 
 2. Now right click on the olapgauge folder newly created and select Add > New Item.
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img6.png)
+
 
 
 3. Select Web Form and name it as Default.aspx.
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
-{:.image }
+ '![](Getting-Started_images/Getting-Started_img7.png)
+
 
 
 4. Drag the OLAP Guage control from the Syncfusion BI Web Toolbox into the Design page.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img8.png)
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
-{:.image }
+
+![](Getting-Started_images/Getting-Started_img9.png)
+
 
 
 5. Initialize the control using below code snippet.
-> 
-{ ![note](Getting-Started_images/Getting-Started_img10.jpeg) | markdownify }
-{:.image }
-_Note: URL value needs to be defined in order to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately._ 
 
-> 
+> Note: URL value needs to be defined in order to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately.
 
-[ASPX]
+{% highlight html %}
+ 
+  <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
-  &lt;ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent"&gt;
+        <Scales>
 
-        &lt;Scales&gt;
+            <ej:CircularScales ShowRanges="true" Radius="150" ShowScaleBar="true" Size="1"  ShowIndicators="true" ShowLabels="true">
 
-            &lt;ej:CircularScales ShowRanges="true" Radius="150" ShowScaleBar="true" Size="1"  ShowIndicators="true" ShowLabels="true"&gt;
+                <Border Width ="0.5" />
 
-                &lt;Border Width ="0.5" /&gt;
+                <PointerCollection>                    
 
-                &lt;PointerCollection&gt;                    
+                    <ej:Pointers ShowBackNeedle="true" BackNeedleLength="20"  Length="125" Width="7" ></ej:Pointers>
 
-                    &lt;ej:Pointers ShowBackNeedle="true" BackNeedleLength="20"  Length="125" Width="7" &gt;&lt;/ej:Pointers&gt;
+                    <ej:Pointers Type="Marker" MarkerType="Diamond" DistanceFromScale="5" Placement="Center" BackgroundColor="#29A4D9" Length="25" Width="15"></ej:Pointers>
 
-                    &lt;ej:Pointers Type="Marker" MarkerType="Diamond" DistanceFromScale="5" Placement="Center" BackgroundColor="#29A4D9" Length="25" Width="15"&gt;&lt;/ej:Pointers&gt;
+                </PointerCollection>
 
-                &lt;/PointerCollection&gt;
+                <TickCollection>
 
-                &lt;TickCollection&gt;
+                    <ej:CircularTicks Type="Major" DistanceFromScale="2" Height="16" Width="1" Color="#8c8c8c" />
 
-                    &lt;ej:CircularTicks Type="Major" DistanceFromScale="2" Height="16" Width="1" Color="#8c8c8c" /&gt;
+                    <ej:CircularTicks Type="Minor" Height="6" Width="1" DistanceFromScale="2" Color="#8c8c8c" />
 
-                    &lt;ej:CircularTicks Type="Minor" Height="6" Width="1" DistanceFromScale="2" Color="#8c8c8c" /&gt;
+                </TickCollection>
 
-                &lt;/TickCollection&gt;
+                <LabelCollection>
 
-                &lt;LabelCollection&gt;
+                    <ej:CircularLabels Color="#8c8c8c"></ej:CircularLabels>
 
-                    &lt;ej:CircularLabels Color="#8c8c8c"&gt;&lt;/ej:CircularLabels&gt;
+                </LabelCollection>
 
-                &lt;/LabelCollection&gt;
+                <RangeCollection>
 
-                &lt;RangeCollection&gt;
+                    <ej:CircularRanges DistanceFromScale="-5" BackgroundColor="#fc0606">
 
-                    &lt;ej:CircularRanges DistanceFromScale="-5" BackgroundColor="#fc0606"&gt;
+                        <Border Color="#fc0606"/></ej:CircularRanges>
 
-                        &lt;Border Color="#fc0606"/&gt;&lt;/ej:CircularRanges&gt;
+                    <ej:CircularRanges DistanceFromScale="-5"></ej:CircularRanges>
 
-                    &lt;ej:CircularRanges DistanceFromScale="-5"&gt;&lt;/ej:CircularRanges&gt;
+                </RangeCollection>
 
-                &lt;/RangeCollection&gt;
+                <CustomLabelCollection>
 
-                &lt;CustomLabelCollection&gt;
+                    <ej:CircularCustomLabel Color="#666666">
 
-                    &lt;ej:CircularCustomLabel Color="#666666"&gt;
+                        <Position X="180" Y="290" />
 
-                        &lt;Position X="180" Y="290" /&gt;
+                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
 
-                        &lt;Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"&gt;&lt;/Font&gt;
+                    </ej:CircularCustomLabel>
 
-                    &lt;/ej:CircularCustomLabel&gt;
+                    <ej:CircularCustomLabel Color="#666666">
 
-                    &lt;ej:CircularCustomLabel Color="#666666"&gt;
+                        <Position X="180" Y="320" />
 
-                        &lt;Position X="180" Y="320" /&gt;
+                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
 
-                        &lt;Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"&gt;&lt;/Font&gt;
+                    </ej:CircularCustomLabel>
 
-                    &lt;/ej:CircularCustomLabel&gt;
+                    <ej:CircularCustomLabel Color="#666666">
 
-                    &lt;ej:CircularCustomLabel Color="#666666"&gt;
+                        <Position X="180" Y="150" />
 
-                        &lt;Position X="180" Y="150" /&gt;
+                        <Font Size="12px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
 
-                        &lt;Font Size="12px" FontFamily="Segoe UI" FontStyle="Normal"&gt;&lt;/Font&gt;
+                    </ej:CircularCustomLabel>
 
-                    &lt;/ej:CircularCustomLabel&gt;
+                </CustomLabelCollection>   
 
-                &lt;/CustomLabelCollection&gt;   
+            </ej:CircularScales>
 
-            &lt;/ej:CircularScales&gt;
+        </Scales>
 
-        &lt;/Scales&gt;
+    </ej:OlapGauge>
+{% endhighlight %}
+## Add References, Scripts, Styles and Control
 
-    &lt;/ej:OlapGauge&gt;
-
-Add References, Scripts, Styles and Control
-
-Add References
+### Add References
 
 1. In the Solution Explorer, right click the References folder and then click Add Reference.
 
-{ ![](Getting-Started_images/Getting-Started_img11.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img11.png)
 
 
-{ ![Description: C:/Users/Narendhran Muthuvel/Desktop/screenshots/sshot-4.png](Getting-Started_images/Getting-Started_img12.png) | markdownify }
-{:.image }
+
+![Description: C:/Users/Narendhran Muthuvel/Desktop/screenshots/sshot-4.png](Getting-Started_images/Getting-Started_img12.png)
+
 
 
 1. Select the following assemblies: 
@@ -220,62 +216,60 @@ Add Scripts and Styles
 
 Add the script files and CSS files in the head tag of the Default.aspx page.
 
-> { ![](Getting-Started_images/Getting-Started_img13.jpeg) | markdownify }
-{:.image }
-_Note: 1. Follow the given order while adding scripts and styles._
+ ![](Getting-Started_images/Getting-Started_img13.jpeg)
 
->    _2. Apart from cdn files rest of them can be acquired from the following location._
+> Note:
+> 
+>  1. Follow the given order while adding scripts and styles.
+>  2. Apart from cdn files rest of them can be acquired from the following location.
 
-C:\Users\&lt;UserName&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version&gt;\JavaScript\assets\
+C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScript\assets\
+{% highlight html %}
 
-[ASPX]
+<head>
 
-&lt;head&gt;
+<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
-&lt;link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" /&gt;
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
 
-&lt;script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"&gt; &lt;/script&gt;
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
 
-&lt;script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"&gt; &lt;/script&gt;
+<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
 
-&lt;script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"&gt; &lt;/script&gt;
+</head>
 
-&lt;/head&gt;
+{% endhighlight %}
 
+## Add WCF service for OLAP Gauge
 
-
-Add WCF service for OLAP Gauge
-
-Create WCF Services
+### Create WCF Services
 
 1. Right click on the project and select Add > New Folder.  Name the folder as wcf.
 
-{ ![](Getting-Started_images/Getting-Started_img14.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img14.png)
+
 
 
 2. Now right click the wcf folder created and select Add > New Item. 
 
-{ ![](Getting-Started_images/Getting-Started_img15.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img15.png)
+
 
 
 3. In the Add New Item window, select WCF Service and name it OlapGaugeService.svc. Click Add.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img16.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img16.png)
 
 
-Add service methods inside Interface
+
+### Add service methods inside Interface
 
 Add the following code inside the IOlapGaugeService interface available in the IOlapGaugeService.cs file.
+ 
 
-[C#]
-
-[ServiceContract]
-
+{% highlight c# %}
     public interface IOlapGaugeService
 
     {
@@ -284,12 +278,12 @@ Add the following code inside the IOlapGaugeService interface available in the I
 
         Dictionary<string, object> InitializeGauge(string action,string customObject);                    }
 
+{% endhighlight %}
 Add Namespaces
 
 Add the following necessary namespaces required to implement the service methods.
-
-[C#]
-
+{% highlight c# %}
+ 
 using System;
 
 using System.Collections.Generic;
@@ -311,13 +305,12 @@ using System.Web.Script.Serialization;
 using Syncfusion.Olap.Manager;
 
 using Syncfusion.Olap.Reports;
-
+{% endhighlight %}
 Create Class in Service file
 
 Create the OlapGaugeService class to implement the service methods. Inherit the class from the IOlapGaugeService interface created automatically when any new service is added.
-
-[C#]
-
+{% highlight html %}
+ 
 namespace Sample
 
 {
@@ -331,15 +324,14 @@ namespace Sample
     }
 
 }
-
+{% endhighlight %}
 Implement Service Methods
 
 Add the following methods to the service invoked for any server-side operations to be performed in OlapGauge.
 
 1. Initialize the OlapGauges helper class.
-
-[C#]
-
+{% highlight html %}
+ 
         OlapGauge htmlHelper = new OlapGauge();       
 
         static string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
@@ -347,13 +339,12 @@ Add the following methods to the service invoked for any server-side operations 
         JavaScriptSerializer serializer = new JavaScriptSerializer();
 
 
-
+{% endhighlight %}
 
 
 2. Initialize the following relevant service methods need to be added.
-
-[C#]
-
+{% highlight html %}
+ 
 
 
          //This method provides the required information from the server side for initializing the OlapGauge.
@@ -443,8 +434,9 @@ public Dictionary<string, object> InitializeGauge(string action,string customObj
             return report;
 
         }
+{% endhighlight %}
 
-Configuring Web.Config
+## Configuring Web.Config
 
 1. You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "Sample.OlapGaugeService" where "OlapGaugeService" is the service class name and “Sample" is the namespace name where service class appears.The following are the properties are that meet the appropriate endpoint.  
 
@@ -455,104 +447,96 @@ binding: In your application, you use webHttpBinding to post and receive the req
 behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint. endpointBehaviors are illustrated as follows
 
 
+{% highlight html %}
 
-[web.config]
+<system.serviceModel>
 
-&lt;system.serviceModel&gt;
+    <services>
 
-    &lt;services&gt;
-
-      &lt;service name="Sample.OlapGaugeService"&gt;
+      <service name="Sample.OlapGaugeService">
 
         <endpoint address="" behaviorConfiguration="Sample.OlapGaugeServiceAspNetAjaxBehavior"
 
           binding="webHttpBinding" contract="Sample.IOlapGaugeService" />
 
-      &lt;/service&gt;
+      </service>
 
-    &lt;/services&gt;
+    </services>
 
-&lt;/system.serviceModel&gt;
+</system.serviceModel>
 
-
+{% endhighlight %}
 
 2. The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property. In the following code sample "Sample.OlapGaugeServiceAspNetAjaxBehavior" would point the OlapGaugeService class under the namespace Sample in OlapGaugeService.svc.cs file that is the appropriate behavior for the endpoint. 
+{% highlight html %}
 
-[web.config]
+<system.serviceModel>
 
-&lt;system.serviceModel&gt;
+    <behaviors>
 
-    &lt;behaviors&gt;
+      <endpointBehaviors>
 
-      &lt;endpointBehaviors&gt;
+        <behavior name="Sample.OlapGaugeServiceAspNetAjaxBehavior">
 
-        &lt;behavior name="Sample.OlapGaugeServiceAspNetAjaxBehavior"&gt;
+          <enableWebScript />
 
-          &lt;enableWebScript /&gt;
+        </behavior>
 
-        &lt;/behavior&gt;
+      </endpointBehaviors>
 
-      &lt;/endpointBehaviors&gt;
+    </behaviors>
 
-    &lt;/behaviors&gt;
+</system.serviceModel>
 
-&lt;/system.serviceModel&gt;
-
-
+{% endhighlight %}
 
 3. Register the assembly in web.config file by adding the following codes.
+{% highlight html %}
 
-[web.config]
+<system.web>
 
-&lt;system.web&gt;
+      <compilation debug="true" targetFramework="4.5" >
 
-      &lt;compilation debug="true" targetFramework="4.5" &gt;
+        <assemblies>
 
-        &lt;assemblies&gt;
+          <add assembly="Syncfusion.EJ, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
 
-          &lt;add assembly="Syncfusion.EJ, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /&gt;
+          <add assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
 
-          &lt;add assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /&gt;
+           <add assembly="Syncfusion.Olap.Base, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3D67ED1F87D44C89"/>
 
-           &lt;add assembly="Syncfusion.Olap.Base, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3D67ED1F87D44C89"/&gt;
+        </assemblies>
 
-        &lt;/assemblies&gt;
+      </compilation>
 
-      &lt;/compilation&gt;
+ </system.web> 
+{% endhighlight %}
 
- &lt;/system.web&gt; 
-
-> 
-
-> { ![note](Getting-Started_images/Getting-Started_img17.jpeg) | markdownify }
-{:.image }
-_Note:__x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system._
+Note:__x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
 
 4. Register the namespace in web.config file by adding the following codes.
+{% highlight html %}
 
-[web.config]
+<system.web>
 
-&lt;system.web&gt;
+ <pages validateRequest="false">
 
- &lt;pages validateRequest="false"&gt;
+      <controls>
 
-      &lt;controls&gt;
+          <add  namespace="Syncfusion.JavaScript.Web.Olap" assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/>
 
-          &lt;add  namespace="Syncfusion.JavaScript.Web.Olap" assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/&gt;
+          <add  namespace="Syncfusion.JavaScript.Web" assembly="Syncfusion.EJ.Web, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/>
 
-          &lt;add  namespace="Syncfusion.JavaScript.Web" assembly="Syncfusion.EJ.Web, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/&gt;
+          <add  namespace="Syncfusion.JavaScript.DataVisualization.Models" assembly="Syncfusion.EJ, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/>
 
-          &lt;add  namespace="Syncfusion.JavaScript.DataVisualization.Models" assembly="Syncfusion.EJ, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/&gt;
+      </controls>
 
-      &lt;/controls&gt;
+   </pages>
 
-   &lt;/pages&gt;
+</system.web> 
 
-&lt;/system.web&gt; 
+{% endhighlight %}
 
-> 
 
-> { ![](Getting-Started_images/Getting-Started_img18.jpeg) | markdownify }
-{:.image }
-_Note: In this example, “Sample” indicates the name of the project and “OlapGaugeService” indicates the name of the WCF service created. And_ x.x.x.x _in the above code example refers to the current version of the Essential Studio running in your system._
+Note: In this example, “Sample” indicates the name of the project and “OlapGaugeService” indicates the name of the WCF service created. And_ x.x.x.x _in the above code example refers to the current version of the Essential Studio running in your system.
 

@@ -15,7 +15,7 @@ By default Accordion allows only one panel to be in expanded state. You can enab
 
 The following steps explains you to enable multiple panel for Accordion.
 
-In an ASPX page, define a &lt;div&gt; element that is a container for Accordion control and add the contents correspondingly.
+In an ASPX page, define a <div> element that is a container for Accordion control and add the contents correspondingly.
 
 {% highlight html %}
 
@@ -70,7 +70,7 @@ In an ASPX page, define a &lt;div&gt; element that is a container for Accordi
 Following screenshot is the output for Accordion control on EnableMultipleOpen set to true.
 
  ![](View-multiple-contents_images/View-multiple-contents_img1.png)
-{:.image }
+
 
 
 

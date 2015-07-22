@@ -7,9 +7,9 @@ control: Control Name undefined
 documentation: ug
 ---
 
-## Checkbox Support
+# Checkbox Support
 
-### Show Checkbox 
+## Show Checkbox 
 
 You can enable the checkbox in the ListBox with this property. The data type of ShowCheckbox value is Boolean type. It maintains multiple selections and gets the checked items on its ListBox client side events.  
 
@@ -112,11 +112,11 @@ Output of the above steps.
 
 
 
-{ ![C:/Users/Rajaveni/Desktop/docs/UG images/checkbox.PNG](Checkbox-Support_images/Checkbox-Support_img1.png) | markdownify }
-{:.image }
+ ![C:/Users/Rajaveni/Desktop/docs/UG images/checkbox.PNG](Checkbox-Support_images/Checkbox-Support_img1.png)
 
 
-### Check All 
+
+## Check All 
 
 You can check all the check box in the list by using this property. The data type of CheckAll is Boolean type. To achieve this, set ShowCheckbox property as true.
 
@@ -217,11 +217,10 @@ Output of the above steps.
 
 
 
-{ ![](Checkbox-Support_images/Checkbox-Support_img2.png) | markdownify }
-{:.image }
+ ![](Checkbox-Support_images/Checkbox-Support_img2.png)
 
 
-### Uncheck All
+## Uncheck All
 
 You can uncheck all the check box in the list by using this property. The data type of UnCheckAll is Boolean type. To achieve this, set ShowCheckbox property as true.
 

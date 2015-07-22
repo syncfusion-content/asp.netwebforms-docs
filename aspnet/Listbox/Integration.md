@@ -7,9 +7,9 @@ control: Control Name undefined
 documentation: ug
 ---
 
-## Integration
+# Integration
 
-### Angular binding 
+## Angular binding 
 
 ListBox widget contains two types of angular JS support namely, 
 
@@ -158,11 +158,11 @@ Add the following styles in your sample
 
 Output of the above steps.
 
-{ ![](Integration_images/Integration_img1.png) | markdownify }
-{:.image }
+![](Integration_images/Integration_img1.png)
 
 
-### Knockout binding
+
+## Knockout binding
 
 Knockout support allows you to bind the other elements against any of the available data models.
 
@@ -308,7 +308,7 @@ Output of the above steps.
 
 
 
-{ ![](Integration_images/Integration_img2.png) | markdownify }
-{:.image }
+ ![](Integration_images/Integration_img2.png)
+
 
 

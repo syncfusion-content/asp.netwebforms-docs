@@ -7,7 +7,7 @@ control: Control Name undefined
 documentation: ug
 ---
 
-## Template Support
+# Template Support
 
 ListBox widget provides the template support, when binding the data for the ListBox. For this behaviour, set the common syntax /element in template property. You can add any HTML mark-up element inside the ListBox using this property.
 
@@ -26,7 +26,7 @@ Note: Images for this sample are available in ‘installed location/images/Emplo
 
         Template Support</div>
 
-    <ej:listbox id="selectExperts" runat="server" Height="240" ItemsCount="5" Template="&lt;img class='eimg' src='/Content/images/Employee/${eimg}.png' alt='employee' height='50px' width='50px'/><div class='ename'> ${text} </div><div class='desig'> ${desig} </div><div class='cont'> ${country} </div>">
+    <ej:listbox id="selectExperts" runat="server" Height="240" ItemsCount="5" Template="<img class='eimg' src='/Content/images/Employee/${eimg}.png' alt='employee' height='50px' width='50px'/><div class='ename'> ${text} </div><div class='desig'> ${desig} </div><div class='cont'> ${country} </div>">
 
                         </ej:listbox>
 
@@ -156,7 +156,7 @@ Output of the above steps.
 
 
 
-{ ![C:/Users/Rajaveni/Desktop/docs/UG images/moditemplate.PNG](Template-Support_images/Template-Support_img1.png) | markdownify }
-{:.image }
+ ![C:/Users/Rajaveni/Desktop/docs/UG images/moditemplate.PNG](Template-Support_images/Template-Support_img1.png)
+
 
 

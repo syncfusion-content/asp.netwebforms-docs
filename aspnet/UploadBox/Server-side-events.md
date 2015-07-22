@@ -7,14 +7,14 @@ control: UploadBox
 documentation: ug
 ---
 
-## Server side events
+# Server side events
 
 <table>
 <tr>
-<td>
-Event Names</td><td>
-Description</td><td>
-Parameters</td></tr>
+<th>
+Event Names</th><th>
+Description</th><th>
+Parameters</th></tr>
 <tr>
 <td>
 OnComplete</td><td>
@@ -45,7 +45,7 @@ In the ASPX page, add the UploadBox element.
 
 {% endhighlight %}
 
-> _Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section)._
+> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 Define the corresponding server side handlers in code behind
 

@@ -17,8 +17,8 @@ From the following guidelines, you can create a Splitter, add TreeView in the 
 
 
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image84_4.png](Getting-Started_images/Getting-Started_img1.png) | markdownify }
-{:.image }
+ ![http://help.syncfusion.com/ug/js/ImagesExt/image84_4.png](Getting-Started_images/Getting-Started_img1.png)
+
 
 
 ### Create Splitter Control
@@ -263,7 +263,7 @@ Add the following code example in the ASPX page to set the action to view the 
 
 The following screenshot is the output for the above code.
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image84_4.png](Getting-Started_images/Getting-Started_img2.png) | markdownify }
-{:.image }
+ ![http://help.syncfusion.com/ug/js/ImagesExt/image84_4.png](Getting-Started_images/Getting-Started_img2.png)
+
 
 

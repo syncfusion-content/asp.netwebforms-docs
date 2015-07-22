@@ -7,7 +7,7 @@ control: Control Name undefined
 documentation: ug
 ---
 
-## Tooltip Support
+# Tooltip Support
 
 The following steps explain you the configuration of tooltip properties in ListBox.
 
@@ -107,7 +107,7 @@ protected void Page_Load(object sender, EventArgs e)
 Output of the above steps.
 
 
-{ ![](Tooltip-Support_images/Tooltip-Support_img1.png) | markdownify }
-{:.image }
+![](Tooltip-Support_images/Tooltip-Support_img1.png)
+
 
 

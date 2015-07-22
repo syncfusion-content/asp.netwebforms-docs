@@ -7,13 +7,13 @@ control: Slider
 documentation: ug
 ---
 
-## Behavior Settings 
+# Behavior Settings 
 
-### Height
+## Height
 
 By default, Slider renders a height of 14px. You can change the Slider height by using the Height property. Specify the value for this property in a string format.
 
-### Width
+## Width
 
 By default, Slider control renders 100% width. You can customize the width of the Slider by using the Width property. Specify the value for this property in a string format.
 
@@ -37,8 +37,8 @@ In an ASPX page, define the Slider control and configure the Height and Width pr
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img1.png) | markdownify }
-{:.image }
+ ![](Behavior-Settings_images/Behavior-Settings_img1.png)
+
 
 
 ### IncrementStep
@@ -65,8 +65,8 @@ In an ASPX page, define the Slider control and configure the IncrementStep prope
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img2.png) | markdownify }
-{:.image }
+ ![](Behavior-Settings_images/Behavior-Settings_img2.png)
+
 
 
 ### ReadOnly

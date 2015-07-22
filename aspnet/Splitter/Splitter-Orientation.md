@@ -7,11 +7,11 @@ control: Splitter
 documentation: ug
 ---
 
-## Splitter Orientation
+# Splitter Orientation
 
 The Splitter supports both vertical and horizontal orientation of the pane. You can declare the orientation by using enum, Vertical or Horizontal, that has corresponding value of vertical and horizontal as a string.
 
-### Configure Splitter Orientation
+## Configure Splitter Orientation
 
 The following steps explain the implementation of Splitter orientation option.
 
@@ -53,11 +53,11 @@ In an ASPX page, define the Splitter control and add the contents correspondingl
 
 The following screenshots display the Splitter with horizontal and vertical orientation. 
 
-{ ![](Splitter-Orientation_images/Splitter-Orientation_img1.png) | markdownify }
-{:.image }
+ ![](Splitter-Orientation_images/Splitter-Orientation_img1.png)
 
 
-{ ![](Splitter-Orientation_images/Splitter-Orientation_img2.png) | markdownify }
-{:.image }
+
+ ![](Splitter-Orientation_images/Splitter-Orientation_img2.png)
+
 
 

@@ -7,9 +7,9 @@ control: Slider
 documentation: ug
 ---
 
-## Integration
+# Integration
 
-### Angular binding
+## Angular binding
 
 Angular JS is structural Framework to create dynamic web apps. It is distributed as a JavaScript file. It extends HTML attributes with Directives, and binds data to HTML with Expressions. To learn more about Angular JS, refer to the following link
 
@@ -83,11 +83,11 @@ Include the following Script to achieve the angular binding.
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Integration_images/Integration_img1.png) | markdownify }
-{:.image }
+ ![](Integration_images/Integration_img1.png)
 
 
-### Knockout binding
+
+## Knockout binding
 
 KnockOutJS is a JavaScript library that follows the MVVM pattern to build sophisticated user interface with a clean underlying data model. It supports to update the UI dynamically. Refer to the following link to know more about KnockOutJS.
 
@@ -163,8 +163,8 @@ In JavaScript, specify the value property as observable in the ViewModel to enab
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Integration_images/Integration_img2.png) | markdownify }
-{:.image }
+ ![](Integration_images/Integration_img2.png)
+
 
 
 

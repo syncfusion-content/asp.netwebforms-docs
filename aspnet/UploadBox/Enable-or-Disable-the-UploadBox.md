@@ -7,7 +7,7 @@ control: UploadBox
 documentation: ug
 ---
 
-## Enable or Disable the UploadBox 
+# Enable or Disable the UploadBox 
 
 This features helps to set the Enable or Disable option for UploadBox by setting the Boolean type value to Enabled property. For Enable or Disable option, set the Enabled property to false. The data type is Boolean.
 
@@ -27,11 +27,11 @@ In the ASPX page, add the UploadBox element.
 
 {% endhighlight %}
 
-> _Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section)._
+>Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 The following screenshot displays the output for Disabled UploadBox.
 
-{ ![](Enable-or-Disable-the-UploadBox_images/Enable-or-Disable-the-UploadBox_img1.png) | markdownify }
-{:.image }
+![](Enable-or-Disable-the-UploadBox_images/Enable-or-Disable-the-UploadBox_img1.png)
+
 
 

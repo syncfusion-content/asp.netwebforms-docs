@@ -18,37 +18,38 @@ Custom labels are the texts that you can use them in any location of the Gauge.
 Custom labels collection is directly added to the scale object. Refer the following code to add custom labels collection in a Gauge control.
 
 
+{% highlight html %}
 
-[ASP]
 
+<%--For Circular Gauge rendering-- %>
 
-&lt;%--For Circular Gauge rendering-- %&gt;
+<ej:CircularGauge runat="server" ID="CircularGauge1"  >
 
-&lt;ej:CircularGauge runat="server" ID="CircularGauge1"  &gt;
+<Scales>
 
-&lt;Scales&gt;
+<ej:CircularScales showLabels="true">
 
-&lt;ej:CircularScales showLabels="true"&gt;
+<%--custom label -- %>
 
-&lt;%--custom label -- %&gt;
+<CustomLabelCollection>
 
-&lt;CustomLabelCollection&gt;
+<ej:CircularCustomLabel TextAngle="10" Color="red" Value="CustomLabel1">
 
-&lt;ej:CircularCustomLabel TextAngle="10" Color="red" Value="CustomLabel1"&gt;
+<Font Size="20px" FontStyle="bold" FontFamily="arial" />
 
-&lt;Font Size="20px" FontStyle="bold" FontFamily="arial" /&gt;
+<Position X="180" Y="100" />
 
-&lt;Position X="180" Y="100" /&gt;
+</ej:CircularCustomLabel>
 
-&lt;/ej:CircularCustomLabel&gt;
+</CustomLabelCollection>
 
-&lt;/CustomLabelCollection&gt;
+</ej:CircularScales>
 
-&lt;/ej:CircularScales&gt;
+</Scales>
 
-&lt;/Scales&gt;
+</ej:CircularGauge>
 
-&lt;/ej:CircularGauge&gt;
+{% endhighlight %}
 
 ### Basic Customization
 
@@ -58,112 +59,98 @@ Custom labels collection is directly added to the scale object. Refer the follow
 
 
 
+{% highlight html %}
 
-[ASP]
+<%--For Circular Gauge rendering-- %>
 
-&lt;%--For Circular Gauge rendering-- %&gt;
+<ej:CircularGauge runat="server" ID="CircularGauge1"  >
 
-&lt;ej:CircularGauge runat="server" ID="CircularGauge1"  &gt;
+<Scales>
 
-&lt;Scales&gt;
+<ej:CircularScales size="2" ShadowOffset="10" showRanges="true" ShowScaleBar="true" radius="150" showLabels="true">
 
-&lt;ej:CircularScales size="2" ShadowOffset="10" showRanges="true" ShowScaleBar="true" radius="150" showLabels="true"&gt;
+<%--For setting custom label text angle, color, font option, position-- %>
 
-&lt;%--For setting custom label text angle, color, font option, position-- %&gt;
+<CustomLabelCollection>
 
-&lt;CustomLabelCollection&gt;
+<ej:CircularCustomLabel TextAngle="10" Color="red" Value="CustomLabel1">
 
-&lt;ej:CircularCustomLabel TextAngle="10" Color="red" Value="CustomLabel1"&gt;
+<Font Size="20px" FontStyle="bold" FontFamily="arial" />
 
-&lt;Font Size="20px" FontStyle="bold" FontFamily="arial" /&gt;
+<Position X="180" Y="100" />
 
-&lt;Position X="180" Y="100" /&gt;
+</ej:CircularCustomLabel>
 
-&lt;/ej:CircularCustomLabel&gt;
+</CustomLabelCollection>
 
-&lt;/CustomLabelCollection&gt;
+</ej:CircularScales>
 
-&lt;/ej:CircularScales&gt;
+</Scales>
 
-&lt;/Scales&gt;
+</ej:CircularGauge>
 
-&lt;/ej:CircularGauge&gt;
-
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
 
 
  ![](Custom-labels_images/Custom-labels_img1.png)
-{:.image }
-
-
-
-
 
 
 ## Multiple Custom Labels
 
 You can set multiple custom labels in a single Circular Gauge by adding an array of custom label objects. Refer the following code example for multiple custom label functionality.
 
+{% highlight html %}
 
 
 
+<%--For Circular Gauge rendering-- %>
 
-[ASP]
+<ej:CircularGauge runat="server" ID="CircularGauge1"  >
 
+<Scales>
 
+<ej:CircularScales size="2" ShadowOffset="10" showRanges="true" ShowScaleBar="true" radius="150" showLabels="true">
 
-&lt;%--For Circular Gauge rendering-- %&gt;
+<CustomLabelCollection>
 
-&lt;ej:CircularGauge runat="server" ID="CircularGauge1"  &gt;
+<ej:CircularCustomLabel TextAngle="10" Color="red" Value="CustomLabel1">
 
-&lt;Scales&gt;
+<Font Size="20px" FontStyle="bold" FontFamily="arial" />
 
-&lt;ej:CircularScales size="2" ShadowOffset="10" showRanges="true" ShowScaleBar="true" radius="150" showLabels="true"&gt;
+<Position X="180" Y="100" />
 
-&lt;CustomLabelCollection&gt;
+</ej:CircularCustomLabel>
 
-&lt;ej:CircularCustomLabel TextAngle="10" Color="red" Value="CustomLabel1"&gt;
+<ej:CircularCustomLabel TextAngle="10" Color="green" Value="CustomLabel2">
 
-&lt;Font Size="20px" FontStyle="bold" FontFamily="arial" /&gt;
+<Font Size="20px" FontStyle="bold" FontFamily="arial" />
 
-&lt;Position X="180" Y="100" /&gt;
+<Position X="180" Y="250" />
 
-&lt;/ej:CircularCustomLabel&gt;
-
-&lt;ej:CircularCustomLabel TextAngle="10" Color="green" Value="CustomLabel2"&gt;
-
-&lt;Font Size="20px" FontStyle="bold" FontFamily="arial" /&gt;
-
-&lt;Position X="180" Y="250" /&gt;
-
-&lt;/ej:CircularCustomLabel&gt;
+</ej:CircularCustomLabel>
 
 
 
-&lt;/CustomLabelCollection&gt;
+</CustomLabelCollection>
 
-&lt;/ej:CircularScales&gt;
+</ej:CircularScales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
  ![](Custom-labels_images/Custom-labels_img2.png)
-{:.image }
+
 
 
 Figure 48: Circular Gauge with multiple custom labels
-
-
-
-
 
 ## Outer Custom Label
 
@@ -174,11 +161,7 @@ Figure 48: Circular Gauge with multiple custom labels
 4. Bottom
 * When a custom label is to be displayed as an Outer Custom Label, set the API customLabelType as Outer. Refer to the following code example to get the Outer Custom Label.
 
-
-
-
-
-[ASPX]
+{% highlight html %}
 
 
 
@@ -188,62 +171,62 @@ OuterCutomLabelPosition="Right">
 
 
 
-&lt;%-- Defines the tooltip object-- %&gt;
+<%-- Defines the tooltip object-- %>
 
-&lt;Tooltip ShowCustomLabelTooltip="true" ShowLabelTooltip="true" /&gt;
-
-
-
-&lt;%-- Customizes the scale options-- %&gt;
-
-&lt;Scales&gt;
-
-&lt;ej:CircularScales ShowLabels="true" Radius="130" &gt;
+<Tooltip ShowCustomLabelTooltip="true" ShowLabelTooltip="true" />
 
 
 
-&lt;%-- Customizes the pointers options-- %&gt;
+<%-- Customizes the scale options-- %>
 
-&lt;PointerCollection&gt;
+<Scales>
 
-&lt;ej:Pointers Value="60" Length="95" &gt;
-
-&lt;/ej:Pointers&gt;
-
-&lt;/PointerCollection&gt;
+<ej:CircularScales ShowLabels="true" Radius="130" >
 
 
 
-&lt;%-- Customizes the custom label options-- %&gt;
+<%-- Customizes the pointers options-- %>
 
-&lt;CustomLabelCollection&gt;
+<PointerCollection>
 
-&lt;ej:CircularCustomLabel Value="Average Speed"&gt;
+<ej:Pointers Value="60" Length="95" >
 
-&lt;Font FontFamily ="Arial" FontStyle="Bold" Size="20px" /&gt;
+</ej:Pointers>
 
-&lt;Position X ="360" Y="30" /&gt;
-
-
+</PointerCollection>
 
 
 
-&lt;/ej:CircularCustomLabel&gt;
+<%-- Customizes the custom label options-- %>
 
-&lt;/CustomLabelCollection&gt;
+<CustomLabelCollection>
 
-&lt;/ej:CircularScales&gt;
+<ej:CircularCustomLabel Value="Average Speed">
 
-&lt;/Scales&gt;
+<Font FontFamily ="Arial" FontStyle="Bold" Size="20px" />
 
-&lt;/ej:circulargauge&gt;
+<Position X ="360" Y="30" />
 
 
+
+
+
+</ej:CircularCustomLabel>
+
+</CustomLabelCollection>
+
+</ej:CircularScales>
+
+</Scales>
+
+</ej:circulargauge>
+
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
  ![](Custom-labels_images/Custom-labels_img3.png)
-{:.image }
+
 
 
 

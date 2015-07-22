@@ -16,35 +16,35 @@ Ticks are used to mark some values on the scale. Based on the tick’s value you
 Tick collection is directly added to the scale object. Refer the following code example to add tick collection in a Gauge control.
 
 
-
-[ASP]
-
+{% highlight html %}
 
 
-&lt;%--For Circular Gauge rendering-- %&gt;
+<%--For Circular Gauge rendering-- %>
 
-&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-&lt;Scales&gt;
+<Scales>
 
-&lt;ej:CircularScales&gt;
+<ej:CircularScales>
 
-&lt;TickCollection&gt;
+<TickCollection>
 
-&lt;ej:CircularTicks Type="major" Color="red" /&gt;
+<ej:CircularTicks Type="major" Color="red" />
 
-&lt;/TickCollection&gt;
+</TickCollection>
 
-&lt;/ej:CircularScales&gt;
+</ej:CircularScales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
+
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
-{ ![C:/Users/karthigeyan/Desktop/sa.png](Ticks_images/Ticks_img1.png) | markdownify }
-{:.image }
+ ![C:/Users/karthigeyan/Desktop/sa.png](Ticks_images/Ticks_img1.png)
+
 
 
 
@@ -55,42 +55,41 @@ Execute the above code to render the following output.
 * Major type ticks are for major interval values and minor type ticks are for minor interval values.You can position ticks with the help of two properties such as distanceFromScale and placement. distanceFromScale property defines the distance between the scale and ticks.  Placement property is used to locate the ticks with respect to scale either inside the scale or outside the scale or along the scale. It is an enumerable data type.
 
 
-
-[ASP]
-
+{% highlight html %}
 
 
-&lt;%--For Circular Gauge rendering-- %&gt;
+<%--For Circular Gauge rendering-- %>
 
-&lt;ej:CircularGauge runat="server" ID="ScaleCircularGauge"&gt;
+<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-&lt;Scales&gt;
+<Scales>
 
-&lt;ej:CircularScales &gt;
+<ej:CircularScales >
 
-&lt;TickCollection&gt;
+<TickCollection>
 
-&lt;%--For setting tick1-- %&gt;
+<%--For setting tick1-- %>
 
-&lt;ej:CircularTicks Type="major" Color="red" placement="Near"  DistanceFromScale="5"/&gt;
+<ej:CircularTicks Type="major" Color="red" placement="Near"  DistanceFromScale="5"/>
 
-&lt;%--For setting tick2-- %&gt;
+<%--For setting tick2-- %>
 
-&lt;ej:CircularTicks Type="minor" Color="yellow" placement="Near" DistanceFromScale="5"/&gt;
+<ej:CircularTicks Type="minor" Color="yellow" placement="Near" DistanceFromScale="5"/>
 
-&lt;/TickCollection&gt;
+</TickCollection>
 
-&lt;/ej:CircularScales&gt;
+</ej:CircularScales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:CircularGauge&gt;
+</ej:CircularGauge>
 
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
-{ ![](Ticks_images/Ticks_img2.png) | markdownify }
-{:.image }
+![](Ticks_images/Ticks_img2.png)
+
 
 
 

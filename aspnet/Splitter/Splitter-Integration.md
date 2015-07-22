@@ -7,11 +7,11 @@ control: Splitter
 documentation: ug
 ---
 
-## Splitter Integration
+# Splitter Integration
 
 The Splitter allows you to use other Essential JavaScript products inside the pane. The integrated function of those controls can be used in other panes of the Splitter.
 
-### Configuring other controls in Splitter
+## Configuring other controls in Splitter
 
 The following steps explain the implementation of Splitter integration.
 
@@ -157,7 +157,7 @@ In an ASPX page, define the Splitter control with two panes. The first pane h
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Splitter-Integration_images/Splitter-Integration_img1.png) | markdownify }
-{:.image }
+ ![](Splitter-Integration_images/Splitter-Integration_img1.png)
+
 
 

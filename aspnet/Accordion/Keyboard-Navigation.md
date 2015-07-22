@@ -13,12 +13,12 @@ You can use Keyboard shortcut keys as an alternative to the mouse while using 
 
 <table>
 <tr>
-<td>
-Shortcut Key</td><td>
-Description</td></tr>
+<th>
+Shortcut Key</th><th>
+Description</th></tr>
 <tr>
 <td>
-{ [Access key](http://en.wikipedia.org/wiki/Access_key) | markdownify } + j	</td><td>
+{{ '[Access key](http://en.wikipedia.org/wiki/Access_key)' | markdownify }} + j	</td><td>
 Focuses into the accordion control</td></tr>
 <tr>
 <td>

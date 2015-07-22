@@ -7,19 +7,19 @@ control: Control Name undefined
 documentation: ug
 ---
 
-## Data-binding 
+# Data-binding 
 
 The ListBox is populated with the node information taken from a data source. The ListBox supports binding data sources containing hierarchical data and supports Object data, Remote data, XML Data, SQL Data and LinqToSql Data, for retrieving data from a specified data source.
 
-### Data fields and configuration 
+## Data fields and configuration 
 
 The following sub-properties provide you a way to bind either the local or remote data to the ListBox control.
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 DataSource</td><td>
@@ -69,7 +69,8 @@ It specifies the Tooltip text  of the tag</td></tr>
 DataTableNameField</td><td>
 It defines the table name for tag value or display text while render with remote data</td></tr>
 </table>
-### Object Data
+
+## Object Data
 
 ListBox provides ObjectDataSource data binding support to populate ListBox. Therefore, the values can be mapped to the ListBox fields from an existing ObjectDataSource by using DataSourceID property.
 
@@ -175,11 +176,11 @@ The following screenshot is the output for ListBox control with ObjectDataSource
 
 
 
-{ ![](Data-binding_images/Data-binding_img1.png) | markdownify }
-{:.image }
+ ![](Data-binding_images/Data-binding_img1.png)
 
 
-### Remote data 
+
+## Remote data 
 
 You can bind the data for the ListBox from remote that can fetch the data from remote web service. You can pass the query string to filter the data that helps to avoid the extensive properties look up by using Query options. 
 
@@ -233,11 +234,11 @@ Output of the above steps.
 
 
 
-{ ![C:/Users/Rajaveni/Desktop/docs/UG images/remoteLB.PNG](Data-binding_images/Data-binding_img2.png) | markdownify }
-{:.image }
+ ![C:/Users/Rajaveni/Desktop/docs/UG images/remoteLB.PNG](Data-binding_images/Data-binding_img2.png)
 
+ 
 
-### SQL Data
+## SQL Data
 
 ListBox provides extensive data binding support to populate ListBox nodes. Therefore the values can be mapped to the ListBox fields from an existing SQL data source by using DataSourceID property.
 
@@ -247,8 +248,8 @@ Define an SQL data source in the web page and configure the data source as per y
 
 The following screenshot illustrates the sample database used.
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Data-binding_images/Data-binding_img3.png) | markdownify }
-{:.image }
+ ![C:/Users/ApoorvahR/Desktop/1.png](Data-binding_images/Data-binding_img3.png)
+
 
 
 In the Design page, assign the values for DataTextField, DataValueField. In DataSourceID field assign the ID of the existing SQL data source.
@@ -285,11 +286,11 @@ The following screenshot is the output for ListBox control with SQLdata binding.
 
 
 
-{ ![](Data-binding_images/Data-binding_img4.png) | markdownify }
-{:.image }
+ ![](Data-binding_images/Data-binding_img4.png)
 
 
-### LinqToSQL Data
+
+## LinqToSQL Data
 
 ListBox provides data binding support. Thus, you can bind the data from LinqToSQLData source. To achieve this, map the corresponding fields with their column names.
 
@@ -303,8 +304,8 @@ The following screenshot illustrates the sample database used.
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/1.jpg](Data-binding_images/Data-binding_img5.jpeg) | markdownify }
-{:.image }
+ ![C:/Users/ApoorvahR/Desktop/1.jpg](Data-binding_images/Data-binding_img5.jpeg)
+
 
 
 In the Design page, assign values for DataTextField, DataValueField. In DataSourceID field assign the ID of the existing Linq-to-SQL data source.
@@ -338,11 +339,11 @@ Output of the above steps
 
 
 
-{ ![](Data-binding_images/Data-binding_img6.png) | markdownify }
-{:.image }
+![](Data-binding_images/Data-binding_img6.png)
 
 
-### XML Data
+
+## XML Data
 
 ListBox provides XML data binding support to populate ListBox content. Therefore, the values can be mapped to the ListBox fields from an existing XML data by using DataSourceID property.
 
@@ -506,7 +507,7 @@ The following screenshot is the output for ListBox control with XMLdata binding.
 
 
 
-{ ![](Data-binding_images/Data-binding_img7.png) | markdownify }
-{:.image }
+![](Data-binding_images/Data-binding_img7.png)
+
 
 

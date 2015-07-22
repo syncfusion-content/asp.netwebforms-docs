@@ -7,15 +7,15 @@ control: Slider
 documentation: ug
 ---
 
-## Keyboard Interaction
-
+# Keyboard Interaction
+ 
 You can use Keyboard shortcut keys as an alternative to the mouse for using the Slider control. All options in the Slider can be accessed by using keyboard shortcuts. The following table explains the keyboard shortcut keys and the operations that can be performed by using the corresponding keys.
 
 <table>
 <tr>
-<td>
-Shortcut Key</td><td>
-Description</td></tr>
+<th>
+Shortcut Key</th><th>
+Description</th></tr>
 <tr>
 <td>
 Alt + j                           </td><td>
@@ -41,7 +41,8 @@ Slider handle moves to the end value.</td></tr>
 Esc</td><td>
 Focuses out from the Slider handle.</td></tr>
 </table>
-### Configure keyboard interaction
+
+## Configure keyboard interaction
 
 The following steps explain you how to enable keyboard support in the Slider.
 

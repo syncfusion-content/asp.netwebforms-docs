@@ -7,97 +7,96 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-## Tooltip
+# Tooltip
 
 Tooltip provides the information about the OlapGauge when you move the mouse pointer over the control. You can enable it using “showtooltip”property.
 
 
+{% highlight html %}
+ 
+<ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent" >
 
-[ASP.NET]
+        <Scales>
 
-&lt;ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent" &gt;
+            <ej:CircularScales ShowRanges="true" Radius="150" ShowScaleBar="true" Size="1"  ShowIndicators="true" ShowLabels="true" sho>
 
-        &lt;Scales&gt;
+                <Border Width ="0.5" />
 
-            &lt;ej:CircularScales ShowRanges="true" Radius="150" ShowScaleBar="true" Size="1"  ShowIndicators="true" ShowLabels="true" sho&gt;
+                <PointerCollection>                    
 
-                &lt;Border Width ="0.5" /&gt;
+                    <ej:Pointers Type="Needle" ShowBackNeedle="true" BackNeedleLength="20"  Length="120" Width="7" NeedleType="Triangle" ></ej:Pointers>
 
-                &lt;PointerCollection&gt;                    
+                    <ej:Pointers Type="Marker" MarkerType="Diamond" DistanceFromScale="5" Placement="Center" BackgroundColor="#29A4D9" Length="25" Width="15"></ej:Pointers>
 
-                    &lt;ej:Pointers Type="Needle" ShowBackNeedle="true" BackNeedleLength="20"  Length="120" Width="7" NeedleType="Triangle" &gt;&lt;/ej:Pointers&gt;
+                </PointerCollection>
 
-                    &lt;ej:Pointers Type="Marker" MarkerType="Diamond" DistanceFromScale="5" Placement="Center" BackgroundColor="#29A4D9" Length="25" Width="15"&gt;&lt;/ej:Pointers&gt;
+                <TickCollection>
 
-                &lt;/PointerCollection&gt;
+                    <ej:CircularTicks Type="Major" DistanceFromScale="15" Height="16" Width="1" Color="#8c8c8c" />
 
-                &lt;TickCollection&gt;
+                    <ej:CircularTicks Type="Minor" DistanceFromScale="2" Height="6" Width="1" Color="#8c8c8c" />
 
-                    &lt;ej:CircularTicks Type="Major" DistanceFromScale="15" Height="16" Width="1" Color="#8c8c8c" /&gt;
+                </TickCollection>
 
-                    &lt;ej:CircularTicks Type="Minor" DistanceFromScale="2" Height="6" Width="1" Color="#8c8c8c" /&gt;
+                <LabelCollection>
 
-                &lt;/TickCollection&gt;
+                    <ej:CircularLabels Color="#8c8c8c"></ej:CircularLabels>
 
-                &lt;LabelCollection&gt;
+                </LabelCollection>
 
-                    &lt;ej:CircularLabels Color="#8c8c8c"&gt;&lt;/ej:CircularLabels&gt;
+                <RangeCollection>
 
-                &lt;/LabelCollection&gt;
+                    <ej:CircularRanges DistanceFromScale="-10" BackgroundColor="black" Size="7">
 
-                &lt;RangeCollection&gt;
+                        <Border Color="red"/></ej:CircularRanges>
 
-                    &lt;ej:CircularRanges DistanceFromScale="-10" BackgroundColor="black" Size="7"&gt;
+                    <ej:CircularRanges DistanceFromScale="-10" Size="7"></ej:CircularRanges>
 
-                        &lt;Border Color="red"/&gt;&lt;/ej:CircularRanges&gt;
+                </RangeCollection>
 
-                    &lt;ej:CircularRanges DistanceFromScale="-10" Size="7"&gt;&lt;/ej:CircularRanges&gt;
+                <CustomLabelCollection>
 
-                &lt;/RangeCollection&gt;
+                    <ej:CircularCustomLabel Color="red">
 
-                &lt;CustomLabelCollection&gt;
+                        <Position X="180" Y="290" />
 
-                    &lt;ej:CircularCustomLabel Color="red"&gt;
+                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
 
-                        &lt;Position X="180" Y="290" /&gt;
+                    </ej:CircularCustomLabel>
 
-                        &lt;Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"&gt;&lt;/Font&gt;
+                    <ej:CircularCustomLabel Color="red">
 
-                    &lt;/ej:CircularCustomLabel&gt;
+                        <Position X="180" Y="320" />
 
-                    &lt;ej:CircularCustomLabel Color="red"&gt;
+                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
 
-                        &lt;Position X="180" Y="320" /&gt;
+                    </ej:CircularCustomLabel>
 
-                        &lt;Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"&gt;&lt;/Font&gt;
+                    <ej:CircularCustomLabel Color="red">
 
-                    &lt;/ej:CircularCustomLabel&gt;
+                        <Position X="180" Y="150" />
 
-                    &lt;ej:CircularCustomLabel Color="red"&gt;
+                        <Font Size="12px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
 
-                        &lt;Position X="180" Y="150" /&gt;
+                    </ej:CircularCustomLabel>
 
-                        &lt;Font Size="12px" FontFamily="Segoe UI" FontStyle="Normal"&gt;&lt;/Font&gt;
+                </CustomLabelCollection>   
 
-                    &lt;/ej:CircularCustomLabel&gt;
+            </ej:CircularScales>
 
-                &lt;/CustomLabelCollection&gt;   
+        </Scales>
 
-            &lt;/ej:CircularScales&gt;
+    </ej:OlapGauge>
+{% endhighlight %}
 
-        &lt;/Scales&gt;
-
-    &lt;/ej:OlapGauge&gt;
-
-### Customizing the tooltip using CSS
+## Customizing the tooltip using CSS
 
 You can customize the Tooltip by overriding the existing style attributes and referring it in web page.
 
 
-
-[CSS]
-
-&lt;style&gt;
+{% highlight css %}
+ 
+<style>
 
 .e-olapgauge-tooltip {
 
@@ -119,13 +118,13 @@ You can customize the Tooltip by overriding the existing style attributes and re
 
 }
 
-&lt;/style&gt;
+</style>
+
+{% endhighlight %}
 
 
 
+{{ '![](Tooltip_images/Tooltip_img1.png)' | markdownify }}
 
-
-{ ![](Tooltip_images/Tooltip_img1.png) | markdownify }
-{:.image }
 
 

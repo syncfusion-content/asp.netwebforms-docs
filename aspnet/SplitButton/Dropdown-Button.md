@@ -41,7 +41,7 @@ In an ASPX page, define the Split Button control.
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Dropdown-Button_images/Dropdown-Button_img1.png) | markdownify }
-{:.image }
+ ![](Dropdown-Button_images/Dropdown-Button_img1.png)
+
 
 

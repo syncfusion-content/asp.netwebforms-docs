@@ -7,7 +7,7 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-## Knockout Binding
+# Knockout Binding
 
 Knockout binding system provides a concise and powerful way to link data to the UI. It’s generally easy and obvious to bind to simple data properties.
 

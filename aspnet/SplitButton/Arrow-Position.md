@@ -101,7 +101,7 @@ In an ASPX page, define the Split Button control and configure the ArrowPosition
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Arrow-Position_images/Arrow-Position_img1.png) | markdownify }
-{:.image }
+ ![](Arrow-Position_images/Arrow-Position_img1.png)
+
 
 

@@ -7,13 +7,13 @@ control: UploadBox
 documentation: ug
 ---
 
-## Restricting uploading files based on its extension
+# Restricting uploading files based on its extension
 
-### Allow Extension
+## Allow Extension
 
 Files are filtered before they are uploaded. You can select the files to be filtered by using the Browse button. The ExtensionAllow property allows upload of the selected extensions only. You can give multiple extensions by using comma (,).  The data type is string.
 
-_Note: Prepend dot (.) symbol with extension like “.pdf”._
+Note: Prepend dot (.) symbol with extension like “.pdf”.
 
 
 
@@ -25,25 +25,25 @@ In the ASPX page, add the UploadBox element.
 
 
 
-&lt;ej:UploadBox ID="UploadBox" runat="server" SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx" ExtensionsAllow=".docx,.pdf" MultipleFilesSelection="true"&gt; 
+<ej:UploadBox ID="UploadBox" runat="server" SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx" ExtensionsAllow=".docx,.pdf" MultipleFilesSelection="true"> 
 
-&lt;/ej:UploadBox&gt;
+</ej:UploadBox>
 
 
 
-> _Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section)._
+> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
  The following screenshot displays the output when multiple files of different file types are selected and only the allowed file extensions are uploaded.
 
-{ ![](Restricting-uploading-files-based-on-its-extension_images/Restricting-uploading-files-based-on-its-extension_img1.png) | markdownify }
-{:.image }
+![](Restricting-uploading-files-based-on-its-extension_images/Restricting-uploading-files-based-on-its-extension_img1.png)
 
 
-### Deny Extension
+
+## Deny Extension
 
 Files are filtered before they are uploaded. You can select the files to be filtered by using the Browse button. The ExtensionDeny property denies upload of the selected extensions. You can give multiple extensions by using comma (,).  The data type is string.
 
-_Note: Prepend dot (.) symbol with extension like “.pdf”._
+> Note: Prepend dot (.) symbol with extension like “.pdf”.
 
 
 
@@ -53,15 +53,15 @@ In the ASPX page, add the UploadBox element.
 
 
 
-&lt;ej:UploadBox ID="UploadBox" runat="server" SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx" ExtensionsDeny=".docx,.pdf" MultipleFilesSelection="true"&gt;&lt;/ej:UploadBox&gt;
+<ej:UploadBox ID="UploadBox" runat="server" SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx" ExtensionsDeny=".docx,.pdf" MultipleFilesSelection="true"></ej:UploadBox>
 
 
 
-> _Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section)._
+> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 The following screenshot displays the output when multiple files of different file types are selected and the denied file extensions are not uploaded.
 
-{ ![](Restricting-uploading-files-based-on-its-extension_images/Restricting-uploading-files-based-on-its-extension_img2.png) | markdownify }
-{:.image }
+![](Restricting-uploading-files-based-on-its-extension_images/Restricting-uploading-files-based-on-its-extension_img2.png)
+
 
 

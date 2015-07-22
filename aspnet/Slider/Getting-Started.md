@@ -15,8 +15,8 @@ ASP.NET Slider control provides support to display a Slider within the webpag
 
 The following screenshot demonstrates the functionality of Slider control. By selecting mobile model in the dropdown, you can purchase a mobile at any rate specified in the MobilePriceSlider. In addition, you can also specify the number of mobiles required by using the MobileCountSlider. Simultaneously, you can observe the changes in the Mobile Price and Count by using Sliders.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img1.png)
+
 
 
 ## Create a Slider
@@ -209,8 +209,8 @@ Add the following script to the Slider.
 
 The following screenshot illustrates the final output in the Slider creation.
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 ## Create EMI Calculator
@@ -475,7 +475,7 @@ Include the following Script to calculate the EMI amount.
 
  The following screenshot displays the calculated EMI amount by using Slider.
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img3.png)
+
 
 

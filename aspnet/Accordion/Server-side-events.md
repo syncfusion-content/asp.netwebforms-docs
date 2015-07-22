@@ -11,10 +11,10 @@ documentation: ug
 
 <table>
 <tr>
-<td>
-Event Name</td><td>
-Description</td><td>
-Parameters</td></tr>
+<th>
+Event Name</th><td>
+Description</th><th>
+Parameters</th></tr>
 <tr>
 <td>
 OnAccordionPaneClick</td><td>

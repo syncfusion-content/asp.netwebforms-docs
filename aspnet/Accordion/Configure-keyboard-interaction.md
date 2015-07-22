@@ -94,6 +94,6 @@ In an ASPX page, define the Accordion control and add the contents correspondi
 Output for Accordion control focused and navigated to last item by using Keyboard navigation is as follows.
 
  ![](Configure-keyboard-interaction_images/Configure-keyboard-interaction_img1.png)
-{:.image }
+
 
 

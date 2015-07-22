@@ -7,11 +7,11 @@ control: Slider
 documentation: ug
 ---
 
-## Enable/Disable the Slider
+# Enable/Disable the Slider
 
 Slider control includes an option to enable/disable it. When you disable the Slider, it is displayed in a blur state and you cannot perform any operations in it.
 
-### Enabled     
+## Enabled     
 
 By using this Enabled property, you can enable/disable the Slider. Data type of this property is Boolean.
 
@@ -31,7 +31,7 @@ In an ASPX page, define the Slider control and set the Enabled property to false
 
 The following screenshot displays the output of the above code example.
 
-{ ![](EnableDisable-the-Slider_images/EnableDisable-the-Slider_img1.png) | markdownify }
-{:.image }
+ ![](EnableDisable-the-Slider_images/EnableDisable-the-Slider_img1.png)
+
 
 
