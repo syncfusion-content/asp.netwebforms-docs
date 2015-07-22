@@ -7,7 +7,7 @@ control: Gantt
 documentation: ug
 ---
 
-## Editing
+# Editing
 
 The Gantt control provides built-in support to add, insert and update the task inside Gantt. Gantt provides three types of editing, they are:
 
@@ -46,7 +46,7 @@ The output of Gantt with CellEditing is as follows.
 
 
 
-{ ![](Editing_images/Editing_img1.png) | markdownify }
+![](Editing_images/Editing_img1.png)
 {:.image }
 
 
@@ -76,7 +76,7 @@ The following screenshot shows the output of normal editing.
 
 
 
-{ ![C:/Users/pongeetha/Desktop/NormalEditing.png](Editing_images/Editing_img2.png) | markdownify }
+![C:/Users/pongeetha/Desktop/NormalEditing.png](Editing_images/Editing_img2.png)
 {:.image }
 
 
@@ -132,9 +132,9 @@ Update the predecessor details of a task using mouse interactions. The following
 
 The following screen shot shows the predecessor editing in Gantt control.
 
-{ ![C:/Users/labuser/Desktop/hello.png](Editing_images/Editing_img3.png) | markdownify }
+![C:/Users/labuser/Desktop/hello.png](Editing_images/Editing_img3.png)
 {:.image }
 
 
-_Figure_ _39__: Predecessor Editing_
+_Figure39: Predecessor Editing_
 

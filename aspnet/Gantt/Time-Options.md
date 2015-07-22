@@ -7,7 +7,7 @@ control: Gantt
 documentation: ug
 ---
 
-## Time Options
+# Time Options
 
 Start date and End date in the datasource defines the starting point and ending point of a task in the project. It can be of two data types,
 
@@ -39,7 +39,7 @@ Use the following code example for including time options in start date and end 
 
 
 
-{% highlight html %}
+{% highlight c# %}
 
 Gantt.aspx.cs
 
@@ -214,7 +214,8 @@ namespace ASP_Doc.Gantt
     }
 
 }
-
+{% endhighlight  %}
+{% highlight html %}
 Gantt.aspx
 
 
@@ -281,7 +282,7 @@ Execute the above code to render the following output.
 
 
 
-{ ![](Time-Options_images/Time-Options_img1.png) | markdownify }
+![](Time-Options_images/Time-Options_img1.png)
 {:.image }
 
 

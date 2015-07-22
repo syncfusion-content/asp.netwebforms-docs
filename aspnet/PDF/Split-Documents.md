@@ -7,13 +7,13 @@ control: PDF
 documentation: ug
 ---
 
-## Split Documents
+# Split Documents
 
 Splitting operation is used to generate a set of PDF documents, each of which is made of one page from the base document. Each new document is saved with a unique name that is generated from the pattern specified. 
 
 The pattern should be in .NET format (for example: "myfile {0:000}.pdf") or just a pdf name. In latter case, the unique name have numbers before ".pdf".
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -31,7 +31,8 @@ const string destFilePattern = "Output" + "split{0:00}.pdf";
 
 loadedDocument.Split(destFilePattern);
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -48,16 +49,14 @@ Const destFilePattern As String = "Output" + "split{0:00}.pdf"
 'Splits document.
 
 loadedDocument.Split(destFilePattern)
+{% endhighlight  %}
 
-
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](Split-Documents_images/Split-Documents_img1.png) | markdownify }
-{:.image }
-_Note: Splitting algorithm uses Import Page methods, so the result would be similar to it._
+> _Note: Splitting algorithm uses Import Page methods, so the result would be similar to it._
 
 
 Essential PDF also allows you to split pages as per your wish. The following code example illustrates this.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -100,8 +99,8 @@ document2.Save("Document2.pdf");
 document1.Close(true);
 
 document2.Close(true);
-
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -145,5 +144,5 @@ document1.Close(True)
 
 document2.Close(True)
 
-
+{% endhighlight %}
 

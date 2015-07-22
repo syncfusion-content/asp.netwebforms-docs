@@ -15,7 +15,7 @@ This section explains briefly about how to create Maps in your application with 
 
 You can configure an Essential ASP.NET Map with simple steps. In this example, you can learn how to configure USA population map with customized appearance and tooltip.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img1.png)
 {:.image }
 
 
@@ -377,8 +377,7 @@ ej.widgets.all.min.js"></script>
 The above code renders a map with default properties and shape input provided through data in layers.
 
 
-
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img2.png)
 {:.image }
 
 
@@ -405,32 +404,30 @@ ShapePropertyPath
 The ShapePropertyPath property is similar to the ShapeDataPath that refers the column name in the Data property of shape layers to identify the shape. When the values of the ShapeDataPath property in the DataSource property and the value of ShapePropertyPath in the Data property match, then the associated object from the DataSource is bound to the corresponding shape.
 
 
+{% highlight html %}
 
-<table>
-<tr>
-<td colspan = "2">
 [Map.aspx]     &lt;ej:Map ID=“map” runat="server"  EnableAnimation ="true" &gt;        &lt;Layers&gt;            &lt;ej:ShapeLayer LayerType="Geometry" ShapeDataPath = "name" ShapePropertyPath= "name"&gt;            &lt;/ej:ShapeLayer&gt;        &lt;/Layers&gt;      &lt;/ej:Map&gt;</td></tr>
-<tr>
-<td>
-[Map.aspx.cs]    public partial class Default: Page    {        protected void Page_Load(object sender, EventArgs e)        {            (this.map.Layers[0] as ShapeLayer).DataSource = Election_Result.GetUSPopulationData();            (this.map.Layers[0] as ShapeLayer).ShapeData = this.GetUSA();        }    }</td></tr>
-</table>
+
+{% endhighlight %}
+{% highlight c# %}
+[Map.aspx.cs]    
+     public partial class Default: Page    {        protected void Page_Load(object sender, EventArgs e)        {            (this.map.Layers[0] as ShapeLayer).DataSource = Election_Result.GetUSPopulationData();            (this.map.Layers[0] as ShapeLayer).ShapeData = this.GetUSA();        }    }</td></tr>
+{% endhighlight %}
 Customizing Map Appearance 
 
 You can customize the shape’s color by using Fill, Stroke and StrokeThickness properties in ShapeSettings.
 
+{% highlight html %}
+[Map.aspx]      
+    &lt;ej:Map ID=“map” runat="server"  EnableAnimation ="true" &gt;        &lt;Layers&gt;       &lt;ej:ShapeLayer LayerType="Geometry" EnableSelection = "false" ShapeDataPath = "name" ShapePropertyPath= "name" EnableMouseHover = "true"&gt;         &lt;ShapeSettings Fill = "Gray" StrokeThickness = "0.5" Stroke = "white" ValuePath = "name" HightlightStroke = "White" HightlightColor = "#BC5353" HightlightBorderWidth = "1"&gt;                &lt;/ShapeSettings&gt;           &lt;/ej:ShapeLayer&gt;             &lt;/Layers&gt;    &lt;/ej:Map&gt;</td></tr>
+{% endhighlight %}
+{% highlight c# %}
+[Map.aspx.cs]        
+    protected void Page_Load(object sender, EventArgs e)        {            (this.map.Layers[0] as ShapeLayer).DataSource = Election_Result.GetUSPopulationData();            (this.map.Layers[0] as ShapeLayer).ShapeData = this.GetUSA();        }</td></tr>
 
+{% endhighlight%}
 
-<table>
-<tr>
-<td>
-[Map.aspx]        &lt;ej:Map ID=“map” runat="server"  EnableAnimation ="true" &gt;        &lt;Layers&gt;       &lt;ej:ShapeLayer LayerType="Geometry" EnableSelection = "false" ShapeDataPath = "name" ShapePropertyPath= "name" EnableMouseHover = "true"&gt;         &lt;ShapeSettings Fill = "Gray" StrokeThickness = "0.5" Stroke = "white" ValuePath = "name" HightlightStroke = "White" HightlightColor = "#BC5353" HightlightBorderWidth = "1"&gt;                &lt;/ShapeSettings&gt;           &lt;/ej:ShapeLayer&gt;             &lt;/Layers&gt;    &lt;/ej:Map&gt;</td></tr>
-<tr>
-<td>
-[Map.aspx.cs]        protected void Page_Load(object sender, EventArgs e)        {            (this.map.Layers[0] as ShapeLayer).DataSource = Election_Result.GetUSPopulationData();            (this.map.Layers[0] as ShapeLayer).ShapeData = this.GetUSA();        }</td></tr>
-</table>
-
-
-{ ![IMG_22042014_095149](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+![IMG_22042014_095149](Getting-Started_images/Getting-Started_img3.png)
 {:.image }
 
 
@@ -514,7 +511,7 @@ The following screenshot illustrates a map with gradient color property enable.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img4.png)
 {:.image }
 
 
@@ -582,7 +579,7 @@ The following screenshot illustrates a Map control displaying a Tooltip.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img5.png)
 {:.image }
 
 
@@ -660,7 +657,7 @@ The following screenshot illustrates a map displaying an interactive legend.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+![](Getting-Started_images/Getting-Started_img6.png)
 {:.image }
 
 

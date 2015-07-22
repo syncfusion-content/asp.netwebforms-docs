@@ -7,11 +7,11 @@ control: Grid
 documentation: ug
 ---
 
-## Paging
+# Paging
 
 Paging is a powerful technique in Grid that is used to navigate from one page to another. Using this pager, you can implement load on demand concept that loads only required data to Grid. To enable paging in Grid set AllowPaging as True at Grid Initialize.
 
-### Default Paging
+## Default Paging
 
 When the AllowPaging property is set as True, the properties in the pagesettings take the following default values.
 
@@ -21,7 +21,7 @@ When the AllowPaging property is set as True, the properties in the pagesettings
 
 The following code example is for the Grid with default options.
 
-
+{% highlight html %}
 
 [ASP]
 
@@ -37,7 +37,7 @@ The following code example is for the Grid with default options.
 
 
 
-
+{% endhighlight  %}
 
 
 
@@ -45,15 +45,15 @@ The following output is displayed as a result of the above code example.
 
 
 
-{ ![](Paging_images/Paging_img1.png) | markdownify }
+![](Paging_images/Paging_img1.png)
 {:.image }
 
 
-### External Paging
+## External Paging
 
 In this section, you can see how to use external paging. The following code example is for external paging.
 
-
+{% highlight html %}
 
 [ASP]
 
@@ -92,20 +92,20 @@ In this section, you can see how to use external paging. The following code exam
 
 
 
-
+{% endhighlight %}
 The following output is displayed as a result of the above code example.
 
 
 
-{ ![](Paging_images/Paging_img2.png) | markdownify }
+![](Paging_images/Paging_img2.png)
 {:.image }
 
 
-### Pager Templates
+## Pager Templates
 
 Pager Templates feature provide support to render a specific custom template to a Grid pager using EnableTemplates and Template properties of PageSettings. ShowDefaults property is used to show/hide default pager for Grid.
 
-
+{% highlight html %}
 
 [ASP]
 
@@ -151,8 +151,8 @@ Pager Templates feature provide support to render a specific custom template to 
 
     &lt;/script&gt; 
 
-
-
+{% endhighlight %}
+{% highlight c# %}
  [CS]
 
 
@@ -251,17 +251,17 @@ public partial class PrintGrid : System.Web.UI.Page
 
     }
 
+{% endhighlight  %}
 
 
 
 
 
-
-{ ![](Paging_images/Paging_img3.png) | markdownify }
+![](Paging_images/Paging_img3.png) 
 {:.image }
 
 
-### Methods
+## Methods
 
 The following are the public methods of pager.
 
@@ -269,7 +269,7 @@ The following are the public methods of pager.
 * refreshPager
 
 In this section, you can see how to use paging methods in Grid control. The following code example is for paging methods. 
-
+{% highlight html %}
 [ASP]
 
 [aspx]
@@ -417,7 +417,8 @@ function setPageValue(val) {
         }
 
 &lt;/script&gt;
-
+{% endhighlight  %}
+{% highlight c# %}
 [CS]
 
 public partial class DefaultFunctionalities : System.Web.UI.Page
@@ -519,7 +520,7 @@ public partial class DefaultFunctionalities : System.Web.UI.Page
 
 
 
-
+{% endhighlight %}
 
 
 
@@ -528,11 +529,11 @@ The following output is displayed as a result of the above code example.
 
 
 
-{ ![](Paging_images/Paging_img4.png) | markdownify }
+![](Paging_images/Paging_img4.png) 
 {:.image }
 
 
-### Localization for paging
+## Localization for paging
 
 Localization is the process of customizing the user interface (UI) as locale-specific, inorder to display regional data. With this feature, data can be displayed in a language and culture specific to a particular country or region. The Asp.Net Grid control provides inherent support to localize its UI.
 
@@ -558,7 +559,7 @@ previousPagerTooltip: "Go to previous pager "
 
 In this section, you can see how to use Globilzation in Grid pager. The following code example is for pager localization in German and Spanish. 
 
-
+{% highlight html %}
 
 [ASP]
 
@@ -679,14 +680,14 @@ ej.Pager.locale["de-DE"] = {
     &lt;/script&gt;
 
 
-
+{% endhighlight %}
 
 
 The following output is displayed as a result of the above code example.
 
 
 
-{ ![](Paging_images/Paging_img5.png) | markdownify }
+![](Paging_images/Paging_img5.png)
 {:.image }
 
 

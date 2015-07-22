@@ -7,24 +7,24 @@ control: PDF
 documentation: ug
 ---
 
-## Booklets
+# Booklets
 
 Booklets are documents with multiple pages arranged on sheets of paper. When folded, the paper represents the correct page order. Essential PDF provides support for creating booklets that produces the resulting PDF document that can be printed and stapled in the center to form a booklet. 
 
 For example, assume that you have a 13-page document. Creating a booklet of the document results in a PDF file with 7 pages (page 1, null), (page2, page13), (page3, page12), (page7, page8).
 
 
-{ ![http://help.syncfusion.com/ug/wpf/pdf/ImagesExt/image517_77.jpg](Booklets_images/Booklets_img1.jpeg) | markdownify }
+![http://help.syncfusion.com/ug/wpf/pdf/ImagesExt/image517_77.jpg](Booklets_images/Booklets_img1.jpeg)
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug/wpf/pdf/ImagesExt/image517_78.jpg](Booklets_images/Booklets_img2.jpeg) | markdownify }
+![http://help.syncfusion.com/ug/wpf/pdf/ImagesExt/image517_78.jpg](Booklets_images/Booklets_img2.jpeg)
 {:.image }
 
 
 
 
-{ ![http://help.syncfusion.com/ug/wpf/pdf/ImagesExt/image517_79.jpg](Booklets_images/Booklets_img3.jpeg) | markdownify }
+![http://help.syncfusion.com/ug/wpf/pdf/ImagesExt/image517_79.jpg](Booklets_images/Booklets_img3.jpeg)
 {:.image }
 
 
@@ -32,7 +32,7 @@ Pages Printed and Folded into New Booklet
 
 PdfBookletCreator class is used for creating Booklets. The following code example illustrates how to create the Booklet.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -50,7 +50,9 @@ PdfDocument doc = PdfBookletCreator.CreateBooklet(ldoc, new SizeF(500, 500), tru
 
 doc.Save("Sample.pdf");
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
 [VB]
 
@@ -68,9 +70,11 @@ Dim doc As PdfDocument = PdfBookletCreator.CreateBooklet(ldoc, New SizeF(500, 50
 
 doc.Save("Sample.pdf")
 
+{% endhighlight %}
 
 The following code example illustrates the overloads of the CreateBooklet method.
 
+{% highlight c# %}
 
 [C#]
 
@@ -89,7 +93,9 @@ You can also apply margins to the booklets at the time of creating the booklet b
 
  The following code example illustrates how to create a booklet with the following overload: CreateBooklet (PdfLoadedDocument, SizeF, Boolean, PdfMargins).
 
+{% endhighlight %}
 
+{% highlight c# %}
 
 [C#]
 
@@ -113,8 +119,9 @@ PdfDocument doc = PdfBookletCreator.CreateBooklet(ldoc, new SizeF(500, 500), tru
 
 doc.Save("Sample.pdf");
 
+{% endhighlight c# %}
 
-
+{% highlight vbnet %}
 [VB]
 
 
@@ -138,4 +145,4 @@ Dim doc As PdfDocument = PdfBookletCreator.CreateBooklet(ldoc, New SizeF(500, 50
 doc.Save("Sample.pdf")
 
 
-
+{% endhighlight %}

@@ -7,13 +7,13 @@ control: PDF
 documentation: ug
 ---
 
-## Portfolio
+# Portfolio
 
 PDF Portfolio allows you to bring together content from a variety of sources (for example, PDF, Word, Excel, JPEG files) into one unified container. The original files retain their individual identities, but are assembled into a PDF Portfolio file. You can open, read, edit, and format each component file independently. 
 
 PdfPortfolioInformation class is used to create the PDF portfolio. PdfPortfolioViewMode used to specify the view mode of the portfolio.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -71,8 +71,8 @@ document.Save("Sample.pdf");
 
 document.Close(true);
 
-
-
+{% endhighlight  %}
+{% highlight vbnet %}
 [VB]
 
 
@@ -128,14 +128,15 @@ document.Pages.Add()
 document.Save("Sample.pdf")
 
 document.Close(True)
+{% endhighlight  %}
 
-#### Schema Field
+## Schema Field
 
 Schema field is used to specify the file property such as Name, Description, and Size. You can create the custom shema using the PdfPortfolioSchema class and add the custom field into the schema using PdfPortfolioSchemaField class. Once the custom field is created, you must provide the attributes to the fields by using the PdfPortfolioAttributes class.
 
 Please refer the following code sample.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -250,8 +251,8 @@ document.Pages.Add();
 document.Save("Sample.pdf");
 
 document.Close(true);
-
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -367,5 +368,5 @@ document.Save("Sample.pdf")
 
 document.Close(True)
 
-
+{% endhighlight  %}
 

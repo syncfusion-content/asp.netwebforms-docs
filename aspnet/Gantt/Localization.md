@@ -7,7 +7,7 @@ control: Gantt
 documentation: ug
 ---
 
-## Localization
+# Localization
 
 Localization is the process of customizing the User Interface (UI) based on a culture, specific to a particular country or region, in order to display regional data. The culture is represented by a unique string like “en-US” for US English and “fr-FR” for French.
 
@@ -15,7 +15,7 @@ Localization is the key feature that provides solutions to global customers with
 
 The following UIs are provided to localize based on culture. The default English Localization UIs are listed as follows:
 
-_Table_ _1__: Localization_
+_Table1: Localization_
 
 <table>
 <tr>
@@ -68,7 +68,7 @@ The following screenshot shows Gantt with French culture.
 
 
 
-{ ![](Localization_images/Localization_img1.png) | markdownify }
+![](Localization_images/Localization_img1.png)
 {:.image }
 
 

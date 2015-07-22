@@ -7,16 +7,16 @@ control: Chart
 documentation: ug
 ---
 
-## Behaviour Customization
+# Behaviour Customization
 
 Essential Chart allows you to customize the Chart through events. For example, you can add custom marker for highest and lowest data point using the events.
 
-### Select a point
+## Select a point
 
 You can acquire the information related to a particular data point of series by moving mouse over the point or by clicking the point using PointRegionMouseMove or PointRegionClick event. PointRegionMouseMove event gets triggered when you move the mouse over the point and the PointRegionClick event gets triggered when you click the point. The following code example illustrates that x and y values of a point gets displayed when you move the mouse over the point or click the point.
 
 
-
+{% highlight html %}
 [ASP.NET] 
 
  &lt;ej:Chart ID="Chart1"  OnClientPointRegionClick="pointDetails" OnClientPointRegionMouseMove="pointDetails" runat="server"&gt;
@@ -28,7 +28,8 @@ You can acquire the information related to a particular data point of series by 
 
 
  &lt;/ej:Chart&gt;
-
+ {% endhighlight  %}
+{% highlight js %}
 [JS]
 
   &lt;script type="text/javascript"&gt;
@@ -47,13 +48,13 @@ You can acquire the information related to a particular data point of series by 
 
   &lt;/script&gt;
 
+{% endhighlight  %}
 
-
-{ ![](Behaviour-Customization_images/Behaviour-Customization_img1.png) | markdownify }
+![](Behaviour-Customization_images/Behaviour-Customization_img1.png)
 {:.image }
 
 
-### Handle Events
+## Handle Events
 
 Chart Events:
 
@@ -61,14 +62,15 @@ Load: function
 
 This event is handled when the Chart gets loaded; a parameter sender is passed to the handler. Using sender.model, you can access the Chart properties except series that were passed to the chart. 
 
-
+{% highlight html %}
 
 [ASP.NET] 
 
   &lt;ej:Chart ID="Chart1" OnClientLoad="onload" runat="server"&gt;
 
   &lt;/ej:Chart&gt;
-
+{% endhighlight %}
+{% highlight js %}
 [JS]
 
      &lt;script type="text/javascript"&gt;
@@ -82,12 +84,12 @@ This event is handled when the Chart gets loaded; a parameter sender is passed t
       &lt;/script&gt;       
 
 
-
+{% endhighlight  %}
 PreRender: function
 
 This event is handled before the Chart gets rendered; a parameter sender is passed to the handler. Using sender.model, you can access the Chart properties that were passed to the Chart. 
 
-
+{% highlight html %}
 
 [ASP.NET] 
 
@@ -96,6 +98,8 @@ This event is handled before the Chart gets rendered; a parameter sender is pass
 
 
     &lt;/ej:Chart&gt;
+{% endhighlight %}
+{% highlight js %}
 
  [JS]
 
@@ -110,7 +114,7 @@ This event is handled before the Chart gets rendered; a parameter sender is pass
  &lt;/script&gt;         
 
 
-
+{% endhighlight  %}
 
 
 TitleRendering: function
@@ -118,7 +122,7 @@ TitleRendering: function
 This event is handled before the Chart title gets rendered; a parameter sender is passed to the handler. Using sender.data.title, you can change the title of the Chart after the Chart is loaded.
 
 
-
+{% highlight html %}
 [ASP.NET] 
 
 &lt;ej:Chart ID="Chart1" OnClientTitleRendering="ontitleRendering" runat="server"&gt;
@@ -126,7 +130,8 @@ This event is handled before the Chart title gets rendered; a parameter sender i
 
 
     &lt;/ej:Chart&gt;
-
+{% endhighlight  %}
+{% highlight js %}
  [JS]
 
      &lt;script type="text/javascript"&gt;
@@ -139,7 +144,7 @@ This event is handled before the Chart title gets rendered; a parameter sender i
 
 &lt;/script&gt;         
 
-
+{% endhighlight  %}
 
 
 
@@ -150,7 +155,7 @@ AxesLabelsInitialize: function
 This event is handled before the Chart axis gets rendered; a parameter sender is passed to the handler. Using sender.data.axes, you can change the axis related properties after the Chart is loaded.
 
 
-
+{% highlight html %}
 [ASP.NET] 
 
 &lt;ej:Chart ID="Chart1 OnClientAxesLabelsInitialize="onaxesLabelsInitialize" runat="server"&gt;
@@ -158,7 +163,8 @@ This event is handled before the Chart axis gets rendered; a parameter sender is
 
 
     &lt;/ej:Chart&gt;
-
+{% endhighlight  %}
+{% highlight js %}
  [JS]
 
      &lt;script type="text/javascript"&gt;
@@ -171,7 +177,7 @@ This event is handled before the Chart axis gets rendered; a parameter sender is
 
 &lt;/script&gt;         
 
-
+{% endhighlight  %}
 
 
 
@@ -180,7 +186,7 @@ AxesRangeCalculate: function
 This event is handled after the Chart axis range gets calculated; a parameter sender is passed to the handler. Using sender.data.range, you can change the range calculated for the Chart axis.
 
 
-
+{% highlight html %}
 [ASP.NET] 
 
 &lt;ej:Chart ID="Chart1"  OnClientAxesRangeCalculate="onaxesRangeCalculate"  runat="server"&gt;
@@ -188,7 +194,8 @@ This event is handled after the Chart axis range gets calculated; a parameter se
 
 
    &lt;/ej:Chart&gt;
-
+{% endhighlight %}
+{% highlight js %}
  [JS]
 
      &lt;script type="text/javascript"&gt;
@@ -203,14 +210,14 @@ This event is handled after the Chart axis range gets calculated; a parameter se
 
 
 
-
+{% endhighlight  %}
 
 AxesTitleRendering: function
 
 This event is handled before the Chart axis title gets rendered; a parameter sender is passed to the handler. Using sender.data.Title, you can change the axis title after the Chart is loaded.
 
 
-
+{% highlight html %}
 [ASP.NET] 
 
   &lt;ej:Chart ID="Chart1" OnClientTitleRendering="onaxesTitleRendering" runat="server"&gt;
@@ -218,7 +225,8 @@ This event is handled before the Chart axis title gets rendered; a parameter sen
 
 
     &lt;/ej:Chart&gt;
-
+{% endhighlight  %}
+{% highlight js %}
  [JS]
 
      &lt;script type="text/javascript"&gt;
@@ -232,14 +240,14 @@ This event is handled before the Chart axis title gets rendered; a parameter sen
 &lt;/script&gt;         
 
 
-
+{% endhighlight  %}
 
 
 AxesLabelRendering: function
 
 This event is handled before the Chart axis label gets rendered; a parameter sender is passed to the handler. Using sender.data.label.Text, you can change the axis labels after the Chart is loaded.
 
-
+{% highlight html %}
 
 [ASP.NET] 
 
@@ -248,7 +256,8 @@ This event is handled before the Chart axis label gets rendered; a parameter sen
 
 
     &lt;/ej:Chart&gt;
-
+{% endhighlight  %}
+{% highlight js  %}
 [JS]
 
      &lt;script type="text/javascript"&gt;
@@ -261,7 +270,7 @@ This event is handled before the Chart axis label gets rendered; a parameter sen
 
       &lt;/script&gt;
 
-
+{% endhighlight  %}
 
 Series Events:
 
@@ -269,7 +278,7 @@ SeriesRendering: function
 
 This event is handled before the Chart series gets rendered; a parameter sender is passed to the handler. Using sender.data.series, you can get access to the series properties.
 
-
+{% highlight html %}
 
 [ASP.NET] 
 
@@ -278,7 +287,8 @@ This event is handled before the Chart series gets rendered; a parameter sender 
 
 
    &lt;/ej:Chart&gt;
-
+{% endhighlight  %}
+{% highlight js  %}
 [JS]
 
      &lt;script type="text/javascript"&gt;
@@ -292,14 +302,14 @@ This event is handled before the Chart series gets rendered; a parameter sender 
       &lt;/script&gt;
 
 
-
+{% endhighlight  %}
 
 
 SymbolRendering: function
 
 This event is handled before the marker of each series point gets rendered; a parameter sender is passed to the handler. Using sender.data you can get access style and location of the symbol.
 
-
+{% highlight html %}
 
 [ASP.NET] 
 
@@ -308,7 +318,8 @@ This event is handled before the marker of each series point gets rendered; a pa
 
 
     &lt;/ej:Chart&gt;
-
+{% endhighlight  %}
+{% highlight js  %}
 [JS]
 
      &lt;script type="text/javascript"&gt;
@@ -323,13 +334,13 @@ This event is handled before the marker of each series point gets rendered; a pa
 
 
 
-
+{% endhighlight  %}
 
 DisplayTextRendering: function
 
 This event is handled before the dataLabel of each series points gets rendered; a parameter sender is passed to the handler. Using sender.data.text you can change the dataLabel of each point in the series.
 
-
+{% highlight html %}
 
 [ASP.NET] 
 
@@ -338,7 +349,8 @@ This event is handled before the dataLabel of each series points gets rendered; 
 
 
  &lt;/ej:Chart&gt;
-
+{% endhighlight %}
+{% highlight js %}
  [JS]
 
      &lt;script type="text/javascript"&gt;
@@ -352,7 +364,7 @@ This event is handled before the dataLabel of each series points gets rendered; 
       &lt;/script&gt;
 
 
-
+{% endhighlight  %}
 
 
 AnimationComplete: function
@@ -361,7 +373,7 @@ This event is handled after the series animation is completed; a parameter sende
 
 
 
-
+{% highlight html %}
 
 [ASP.NET] 
 
@@ -370,7 +382,8 @@ This event is handled after the series animation is completed; a parameter sende
 
 
  &lt;/ej:Chart&gt;
-
+{% endhighlight  %}
+{% highlight js %}
  [JS]
 
      &lt;script type="text/javascript"&gt;
@@ -383,7 +396,7 @@ This event is handled after the series animation is completed; a parameter sende
 
       &lt;/script&gt;
 
-
+{% endhighlight  %}
 
 Legend Events:
 
@@ -391,7 +404,7 @@ LegendItemRendering: function
 
 This event is handled before the legend of each series points gets rendered; a parameter sender is passed to the handler. Using sender.data.legendItem.Text you can change the text of each legend text.
 
-
+{% highlight html %}
 
 [ASP.NET] 
 
@@ -400,7 +413,8 @@ This event is handled before the legend of each series points gets rendered; a p
 
 
     &lt;/ej:Chart&gt;
-
+{% endhighlight %}
+{% highlight js %}
  [JS]
 
      &lt;script type="text/javascript"&gt;
@@ -415,7 +429,7 @@ This event is handled before the legend of each series points gets rendered; a p
 
       &lt;/script&gt;
 
-
+{% endhighlight  %}
 
 
 
@@ -423,7 +437,7 @@ LegendItemClick: function
 
 This event is handled when you click the legend item; a parameter sender is passed to the handler.  
 
-
+{% highlight html %}
 
 [ASP.NET] 
 
@@ -432,7 +446,8 @@ This event is handled when you click the legend item; a parameter sender is pass
 
 
 &lt;/ej:Chart&gt;
-
+{% endhighlight  %}
+{% highlight js %}
  [JS]
 
      &lt;script type="text/javascript"&gt;
@@ -447,13 +462,13 @@ This event is handled when you click the legend item; a parameter sender is pass
 
 
 
-
+{% endhighlight  %}
 
 LegendItemMouseMove: function
 
 This event is handled when you move the mouse over the legend item; a parameter sender is passed to the handler. Using sender.data.legendItem.Text you can change the text of each legend text.
 
-
+{% highlight html %}
 
 [ASP.NET] 
 
@@ -462,7 +477,8 @@ This event is handled when you move the mouse over the legend item; a parameter 
 
 
     &lt;/ej:Chart&gt;
-
+{% endhighlight %}
+{% highlight js %}
  [JS]
 
      &lt;script type="text/javascript"&gt;
@@ -477,13 +493,13 @@ This event is handled when you move the mouse over the legend item; a parameter 
 
 
 
-
+{% endhighlight  %}
 
 LengendBoundsCalculate: function
 
 This event is handled after the bounds for legend is calculated.  A parameter sender is passed to the handler.  Using sender.data.legendBound, you can access the bounds of the Chartlegend.
 
-
+{% highlight html %}
 
 [ASP.NET] 
 
@@ -492,7 +508,8 @@ This event is handled after the bounds for legend is calculated.  A parameter se
 
 
     &lt;/ej:Chart&gt;
-
+{% endhighlight  %}
+{% highlight js %}
  [JS]
 
      &lt;script type="text/javascript"&gt;
@@ -505,7 +522,7 @@ This event is handled after the bounds for legend is calculated.  A parameter se
 
       &lt;/script&gt;
 
-
+{% endhighlight  %}
 
 
 
@@ -516,7 +533,7 @@ ToolTipInitialize: function
 This event is handled before the tooltip gets rendered.  A parameter sender is passed to the handler.  Using sender.data.currentText, you can change the tooltip text.
 
 
-
+{% highlight html %}
 [ASP.NET] 
 
 &lt;ej:Chart ID="Chart1" OnClientToolTipInitialize="ontoolTipInitialize" runat="server"&gt;
@@ -524,7 +541,8 @@ This event is handled before the tooltip gets rendered.  A parameter sender is p
 
 
     &lt;/ej:Chart&gt;
-
+{% endhighlight %}
+{% highlight js %}
  [JS]
 
      &lt;script type="text/javascript"&gt;
@@ -538,14 +556,14 @@ This event is handled before the tooltip gets rendered.  A parameter sender is p
       &lt;/script&gt;
 
 
-
+{% endhighlight  %}
 
 
 TrackAxisToolTip: function
 
 This event is handled before the tooltip for axis gets rendered when crosshair is enabled.  A parameter sender is passed to the handler.  Using sender.data.currentTrackText, you can change the tooltip text.
 
-
+{% highlight html %}
 
 [ASP.NET] 
 
@@ -554,7 +572,8 @@ This event is handled before the tooltip for axis gets rendered when crosshair i
 
 
   &lt;/ej:Chart&gt;
-
+{% endhighlight  %}
+{% highlight js %}
  [JS]
 
      &lt;script type="text/javascript"&gt;
@@ -569,7 +588,7 @@ This event is handled before the tooltip for axis gets rendered when crosshair i
 
 
 
-
+{% endhighlight  %}
 
 TrackToolTip: function
 
@@ -577,7 +596,7 @@ This event is handled before the tooltip for trackball get rendered when trackba
 
 
 
-
+{% highlight html %}
 
 [ASP.NET] 
 
@@ -586,7 +605,8 @@ This event is handled before the tooltip for trackball get rendered when trackba
 
 
  &lt;/ej:Chart&gt;
-
+{% endhighlight  %}
+{% highlight html %}
  [JS]
 
      &lt;script type="text/javascript"&gt;
@@ -599,7 +619,7 @@ This event is handled before the tooltip for trackball get rendered when trackba
 
       &lt;/script&gt;
 
-
+{% endhighlight  %}
 
 
 

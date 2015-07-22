@@ -7,7 +7,7 @@ control: DropDownList
 documentation: ug
 ---
 
-## Template Support
+# Template Support
 
 DropDown widget provides the template support for the DropDownList, when binding the data for the DropDown. For this behaviour, you need to set the common syntax /element in the template property. You can add any Html mark-up element inside DropDown list by using this property.
 
@@ -15,9 +15,7 @@ The following steps explain the behaviour of template support with DropDownList.
 
 In an ASPX page, add an element to configure the DropDownList widget.
 
-> { ![](Template-Support_images/Template-Support_img1.jpeg) | markdownify }
-{:.image }
-_Note: Images for this sample are available in the ‘installed location /themes/images’._ 
+> _Note: Images for this sample are available in the ‘installed location /themes/images’._ 
 
 
 {% highlight html %}
@@ -110,7 +108,7 @@ Customize the template in CSS.
 
 Output of the above steps.
 
-{ ![](Template-Support_images/Template-Support_img2.png) | markdownify }
+![](Template-Support_images/Template-Support_img2.png)
 {:.image }
 
 

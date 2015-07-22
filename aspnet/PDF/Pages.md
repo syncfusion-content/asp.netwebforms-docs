@@ -7,11 +7,11 @@ control: PDF
 documentation: ug
 ---
 
-## Pages
+# Pages
 
 PdfPage is a class that represents the page of the PDF document where you can include all the visual elements of a PDF document like text, shapes, annotations, formfield, etc. Essential PDF provides complete control of the page that includes modifying the page settings such as size, orientation, adding or removing pages, and importing pages from one document to another. 
 
-### Page settings	
+## Page settings	
 
 Essential PDF supports various page setting options to control the page display. They are as follows.
 
@@ -36,7 +36,7 @@ Some of the page sizes supported is as follows:
 
 The following code sample illustrate the various page settings.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -78,7 +78,9 @@ document.Save("Output.pdf");
 
 document.Close(true);
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
 [VB]
 
@@ -120,11 +122,15 @@ document.Save("Output.pdf")
 
 document.Close(True)
 
+{% endhighlight %}
+
+
 ### Add a Page
 
 Add method of the PdfPage Collection class allows you to add an empty page in a PDF document. Pages can be added to any part of the document using the Essential PDF APIs.
 
 The following code sample explains you on how to add a page in a PDF file. The Add() method of the PdfPageCollection class adds the page at the end.
+{% highlight c# %}
 
 [C#]
 
@@ -158,7 +164,9 @@ graphics.DrawString("Hello world!", font, brush, new PointF(20, 20));
 
 document.Save("Sample.pdf");
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
 [VB]
 
@@ -192,13 +200,13 @@ graphics.DrawString("Hello world!", font, brush,new PointF(20,20)) 
 
 document.Save("Sample.pdf")
 
-
+{% endhighlight %}
 
 You can add new pages to an existing document in the front, middle, or at the end.
 
 The following code sample illustrates how to insert a new page by specifying the index.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -230,7 +238,9 @@ loadedDocument.Save("Output.pdf");
 
 loadedDocument.Close();
 
+{% endhighlight  %}
 
+{% highlight vbnet %}
 
 [VB]
 
@@ -262,6 +272,8 @@ loadedDocument.Save("Output.pdf")
 
 loadedDocument.Close()
 
+{% endhighlight %}
+
 Removing a page
 
 You can also remove pages from an existing PDF document by using following methods of the PdfLoadedPageCollection class.
@@ -270,6 +282,8 @@ You can also remove pages from an existing PDF document by using following metho
 * RemoveAt -  This method allows you to remove the page at the specified index
 
 The following code sample illustrates how to remove an existing page from the PDF document.
+
+{% highlight c# %}
 
 [C#]
 
@@ -293,7 +307,9 @@ loadedDocument.Save("Output.pdf");
 
 loadedDocument.Close(true);
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
 [VB]
 
@@ -317,11 +333,13 @@ loadedDocument.Save("Sample.pdf")
 
 loadedDocument.Close(True)
 
-### Import pages
+{% endhighlight %}
+
+## Import pages
 
 Essential PDF allows you to import a page or import a range of pages from one document to the other. The following code sample illustrates how to import a page to the existing document.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -353,7 +371,9 @@ loadedDocument.Close();
 
 document.Close();
 
+{% endhighlight  %}
 
+{% highlight vbnet %}
 
 [VB]
 
@@ -385,11 +405,11 @@ loadedDocument.Close()
 
 document.Close()
 
-
+{% endhighlight %}
 
 The following code sample illustrates how to import a page to the existing document using ImportPagemethod.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -417,7 +437,9 @@ loadedDocument.Close();
 
 document.Close();
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
 [VB]
 
@@ -445,6 +467,8 @@ loadedDocument.Close()
 
 document.Close()
 
+{% endhighlight %}
+
 Implementation Note
 
 Importing is done by converting the page content into PdfTemplate object that is, the new page does not inherit the possible complex layer structure, so that, only one default layer can be seen and something can be placed beneath that layer. However, you can not manipulate the "old" layers as they do not exist.
@@ -456,19 +480,17 @@ Restrictions
 * The bookmark tree might not appear like the original document if just part of it is copied, as it is hard to recreate the tree with parts of the bookmark.
 * Some of the contents are usually imported from the original document to the final document during saving process. Hence, the original document should be closed only after the final document is saved.
 
-{ ![http://help.syncfusion.com/ug/windows%20forms/pdf/ImagesExt/image517_36.jpg](Pages_images/Pages_img1.jpeg) | markdownify }
-{:.image }
-_Note: To import the document asynchronously for Windows Store apps, refer the_ [Asynchronous Support](http://help.syncfusion.com/ug/windows%20forms/pdf/documents/asynchronoussupport.htm) _section._
+> _Note: To import the document asynchronously for Windows Store apps, refer the_ [Asynchronous Support](http://help.syncfusion.com/ug/windows%20forms/pdf/documents/asynchronoussupport.htm) _section._
 
-### TextElement
+## TextElement
 
-### Drawing Text
+## Drawing Text
 
-PDF provides higher-level facilities that permit an application to describe, select, and render glyphs conveniently and efficiently.  Drawing Text in a PDF document is made simpler and similar to .NET GDI API. This section demonstrates you on how a string is drawn in a PDF page by using Essential PDF.
+PDF provides higher-level facilities that permit an application to describe, select, and render glyphs conveniently and efficiently.  Drawing Text in a PDF document is made simpler and similar to .NET GDI API. This section demonstrates you on how a string is drawn in a PDF page by using Essential PDF.
 
 The DrawString method draws the text string at the specified location with the selected Brush and Font.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -502,7 +524,9 @@ graphics.DrawString("Hello world!", font, brush, new PointF(20, 20));
 
 doc.Save("Sample.pdf");
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
 [VB]
 
@@ -537,4 +561,4 @@ graphics.DrawString("Hello world!", font, brush,new PointF(20,20))
 doc.Save("Sample.pdf")
 
 
-
+{% endhighlight %}
