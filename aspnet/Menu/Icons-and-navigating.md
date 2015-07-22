@@ -162,6 +162,6 @@ Add the following code example in your style section.
 The following screenshot displays the output for the above code example on Menu with Icons.  
 
 ![](Icons-and-navigating_images/Icons-and-navigating_img1.png) 
-{:.image }
+
 
 

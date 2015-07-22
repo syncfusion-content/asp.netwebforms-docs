@@ -9,7 +9,7 @@ documentation: ug
 
 # AngularJS Support
 
-AngularJS is a JavaScript framework added to a HTML page with a &lt;script&gt; tag. It extends HTML attributes with directives and binds data to HTML with expressions. AngularJS directives allow you to specify custom and reusable HTML tags that moderate the behavior of certain elements. Angularbinding uses directives to plug its action into the page. Directives, all prefaced with ng-, are placed in HTML attributes. To know more about Angular binding refer to: [http://help.syncfusion.com/ug/js/#!documents/angularjs.htm](http://help.syncfusion.com/ug/js/)
+AngularJS is a JavaScript framework added to a HTML page with a <script> tag. It extends HTML attributes with directives and binds data to HTML with expressions. AngularJS directives allow you to specify custom and reusable HTML tags that moderate the behavior of certain elements. Angularbinding uses directives to plug its action into the page. Directives, all prefaced with ng-, are placed in HTML attributes. To know more about Angular binding refer to: [http://help.syncfusion.com/ug/js/#!documents/angularjs.htm](http://help.syncfusion.com/ug/js/)
 
 
 
@@ -19,7 +19,7 @@ Apply the plugin and property assigning the Treemap element through the direct
 
 {% highlight html %}
 
- &lt;script&gt;
+ <script>
 
 
 
@@ -55,7 +55,7 @@ Apply the plugin and property assigning the Treemap element through the direct
 
 
 
-&lt;/script&gt;
+</script>
 
 
 
@@ -63,7 +63,6 @@ Apply the plugin and property assigning the Treemap element through the direct
 
 
 
-[ASPX.CS]
 
 
 
@@ -85,65 +84,62 @@ public partial class AngularTreemap : Page
 
 
 
- [ASP]
-
-[ASPX]
 
 //References to be added for angular support.
 
 
 
-    &lt;script src=" https:/ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"&gt;
+    <script src=" https:/ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js">
 
-    &lt;/script&gt;
+    </script>
 
-    &lt;script src=" http://cdn.syncfusion.com/js/ej.widget.angular-latest.min.js"&gt;&lt;/script&gt;
-
-//Initializes controller
-
-&lt;div ng-app="SyncApp"&gt;
+    <script src=" http://cdn.syncfusion.com/js/ej.widget.angular-latest.min.js"></script>
 
 //Initializes controller
 
-&lt;div ng-controller="TreeMapcontroller"&gt;
+<div ng-app="SyncApp">
+
+//Initializes controller
+
+<div ng-controller="TreeMapcontroller">
 
 
 
     //Initializes TreeMap
 
-    &lt;div id="treemap" ej-treemap e-datasource="ndatasource" e-uniColorMapping-color="ncolor" e-weightvaluepath="nweightValuePath" e-colorvaluepath="ncolorValuePath" e-leafitemsettings-labelpath="nlabelPath" style="width: 700px;height:370px;"&gt;
+    <div id="treemap" ej-treemap e-datasource="ndatasource" e-uniColorMapping-color="ncolor" e-weightvaluepath="nweightValuePath" e-colorvaluepath="ncolorValuePath" e-leafitemsettings-labelpath="nlabelPath" style="width: 700px;height:370px;">
 
 
 
-                    &lt;e-levels&gt;
+                    <e-levels>
 
-                  &lt;e-level e-grouppath="ngroupPath" e-groupgap="ngroupGap"                    e-showheader="nshowHeader"&gt;          
+                  <e-level e-grouppath="ngroupPath" e-groupgap="ngroupGap"                    e-showheader="nshowHeader">          
 
-                  &lt;/e-level&gt;
+                  </e-level>
 
-                    &lt;/e-levels&gt;
+                    </e-levels>
 
 
 
-     &lt;/div&gt; 
+     </div> 
 
     //Renders a checkbox to change the header visibility
 
-    &lt;div&gt;
+    <div>
 
-        Show Header:  &lt;input type="checkbox" ng-model="nshowHeader" style="outline: none;"/&gt;   
+        Show Header:  <input type="checkbox" ng-model="nshowHeader" style="outline: none;"/>   
 
-   &lt;/div&gt; 
+   </div> 
 
    //Renders a textbox to change the groupGap value
 
-   &lt;div&gt;
+   <div>
 
-        Group Gap:  &lt;input type="text" id="Text11" ng-model="ngroupGap" style="width: 110px" /&gt;
+        Group Gap:  <input type="text" id="Text11" ng-model="ngroupGap" style="width: 110px" />
 
-  &lt;/div&gt; 
+  </div> 
 
-    &lt;script&gt;
+    <script>
 
        angular.module('syncApp', ['ejangular'])      
 
@@ -173,13 +169,13 @@ $scope.ncolor = "#2380BB";
 
 });
 
-    &lt;/script&gt; 
+    </script> 
 
-&lt;/div&gt;
+</div>
 
-&lt;/div&gt;
+</div>
 
-[Controller]
+
 
 
 
@@ -200,10 +196,9 @@ public partial class TreeMapController : Controller
 
 {% endhighlight %}
 
-
-
 ![](AngularJS-Support_images/AngularJS-Support_img1.png) 
-{:.image }
+
+
 
 
 

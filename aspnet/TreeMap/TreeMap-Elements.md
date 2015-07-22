@@ -33,9 +33,6 @@ You can customize the labels of the legenditem using LegendLabel property of Ran
 
 {% highlight html %}
 
-[ASP]
-
-[ASPX.CS]
 
   protected void Page_Load(object sender, EventArgs e)
 
@@ -47,51 +44,51 @@ You can customize the labels of the legenditem using LegendLabel property of Ran
 
         }
 
- [ASPX]
+ 
 
 
 
-&lt;div style="min-height:404px"&gt;
+<div style="min-height:404px">
 
-    &lt;ej:Treemap ID="treemap" runat="server" ColorValuePath = "Growth" WeightValuePath = "Population" ShowLegend = "true" &gt;
+    <ej:Treemap ID="treemap" runat="server" ColorValuePath = "Growth" WeightValuePath = "Population" ShowLegend = "true" >
 
-       &lt;TreeMapLegend IconHeight = "17" IconWidth = "17"&gt;&lt;/TreeMapLegend&gt;
+       <TreeMapLegend IconHeight = "17" IconWidth = "17"></TreeMapLegend>
 
-        &lt;LeafItemSettings LabelPath = "Country"&gt;&lt;/LeafItemSettings&gt;
-
-
-
-         &lt;TreeMapRangeColorMappings&gt;
-
-             &lt;ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
-
-             &lt;ej:TreeMapRangeColorMapping Color = "#AED960" Legendlabel = "2% Growth" From = "0" To = "2"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
-
-             &lt;ej:TreeMapRangeColorMapping Color = "#FFAF51" Legendlabel = "3% Growth" From = "0" To = "3"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
-
-             &lt;ej:TreeMapRangeColorMapping Color = "#F3D240" Legendlabel = "4% Growth" From = "0" To = "4"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
-
-        &lt;/TreeMapRangeColorMappings&gt;
+        <LeafItemSettings LabelPath = "Country"></LeafItemSettings>
 
 
 
-        &lt;Levels&gt;
+         <TreeMapRangeColorMappings>
 
-            &lt;ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25"&gt;&lt;/ej:TreeMapLevel&gt;
+             <ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"></ej:TreeMapRangeColorMapping>
 
-        &lt;/Levels&gt;
+             <ej:TreeMapRangeColorMapping Color = "#AED960" Legendlabel = "2% Growth" From = "0" To = "2"></ej:TreeMapRangeColorMapping>
+
+             <ej:TreeMapRangeColorMapping Color = "#FFAF51" Legendlabel = "3% Growth" From = "0" To = "3"></ej:TreeMapRangeColorMapping>
+
+             <ej:TreeMapRangeColorMapping Color = "#F3D240" Legendlabel = "4% Growth" From = "0" To = "4"></ej:TreeMapRangeColorMapping>
+
+        </TreeMapRangeColorMappings>
 
 
 
-    &lt;/ej:Treemap&gt;
+        <Levels>
 
-    &lt;/div&gt;
+            <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25"></ej:TreeMapLevel>
+
+        </Levels>
+
+
+
+    </ej:Treemap>
+
+    </div>
 
 
 {% endhighlight %}
 
- ![](TreeMap-Elements_images/TreeMap-Elements_img1.png)
-{:.image }
+  ![](TreeMap-Elements_images/TreeMap-Elements_img1.png)
+
 
 
 Header
@@ -105,9 +102,7 @@ You can set headers for each level by setting the ShowHeader propery of the each
 {% highlight html %}
 
 
-[ASP]
 
-[ASPX.CS]
 
   protected void Page_Load(object sender, EventArgs e)
 
@@ -119,51 +114,48 @@ You can set headers for each level by setting the ShowHeader propery of the each
 
         }
 
- [ASPX]
+ 
+
+<div style="min-height:404px">
+
+    <ej:Treemap ID="treemap" runat="server" ColorValuePath = "Growth" WeightValuePath = "Population" ShowLegend = "true" >
+
+       <TreeMapLegend IconHeight = "17" IconWidth = "17"></TreeMapLegend>
+
+        <LeafItemSettings LabelPath = "Country"></LeafItemSettings>
 
 
 
-&lt;div style="min-height:404px"&gt;
+         <TreeMapRangeColorMappings>
 
-    &lt;ej:Treemap ID="treemap" runat="server" ColorValuePath = "Growth" WeightValuePath = "Population" ShowLegend = "true" &gt;
+             <ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"></ej:TreeMapRangeColorMapping>
 
-       &lt;TreeMapLegend IconHeight = "17" IconWidth = "17"&gt;&lt;/TreeMapLegend&gt;
+             <ej:TreeMapRangeColorMapping Color = "#AED960" Legendlabel = "2% Growth" From = "0" To = "2"></ej:TreeMapRangeColorMapping>
 
-        &lt;LeafItemSettings LabelPath = "Country"&gt;&lt;/LeafItemSettings&gt;
+             <ej:TreeMapRangeColorMapping Color = "#FFAF51" Legendlabel = "3% Growth" From = "0" To = "3"></ej:TreeMapRangeColorMapping>
 
+             <ej:TreeMapRangeColorMapping Color = "#F3D240" Legendlabel = "4% Growth" From = "0" To = "4"></ej:TreeMapRangeColorMapping>
 
-
-         &lt;TreeMapRangeColorMappings&gt;
-
-             &lt;ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
-
-             &lt;ej:TreeMapRangeColorMapping Color = "#AED960" Legendlabel = "2% Growth" From = "0" To = "2"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
-
-             &lt;ej:TreeMapRangeColorMapping Color = "#FFAF51" Legendlabel = "3% Growth" From = "0" To = "3"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
-
-             &lt;ej:TreeMapRangeColorMapping Color = "#F3D240" Legendlabel = "4% Growth" From = "0" To = "4"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
-
-        &lt;/TreeMapRangeColorMappings&gt;
+        </TreeMapRangeColorMappings>
 
 
 
-        &lt;Levels&gt;
+        <Levels>
 
-            &lt;ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25"&gt;&lt;/ej:TreeMapLevel&gt;
+            <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25"></ej:TreeMapLevel>
 
-        &lt;/Levels&gt;
+        </Levels>
 
 
 
-    &lt;/ej:Treemap&gt;
+    </ej:Treemap>
 
-    &lt;/div&gt; 
+    </div> 
 
 {% endhighlight %}
 
+![](TreeMap-Elements_images/TreeMap-Elements_img2.png)
 
- ![](TreeMap-Elements_images/TreeMap-Elements_img2.png) 
-{:.image }
 
 
 Label
@@ -177,9 +169,6 @@ You can also set labels for the leaf nodes by setting the ShowLabels property as
 
 {% highlight html %}
 
-[ASP]
-
-[ASPX.CS]
 
   protected void Page_Load(object sender, EventArgs e)
 
@@ -193,51 +182,46 @@ You can also set labels for the leaf nodes by setting the ShowLabels property as
 
 
 
-[ASPX]
+
+<div style="min-height:404px">
+
+    <ej:Treemap ID="treemap" runat="server" ColorValuePath = "Growth" WeightValuePath = "Population" ShowLegend = "true" >
+
+       <TreeMapLegend IconHeight = "17" IconWidth = "17"></TreeMapLegend>
+
+        <LeafItemSettings LabelPath = "Country"></LeafItemSettings>
 
 
 
-&lt;div style="min-height:404px"&gt;
+         <TreeMapRangeColorMappings>
 
-    &lt;ej:Treemap ID="treemap" runat="server" ColorValuePath = "Growth" WeightValuePath = "Population" ShowLegend = "true" &gt;
+             <ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"></ej:TreeMapRangeColorMapping>
 
-       &lt;TreeMapLegend IconHeight = "17" IconWidth = "17"&gt;&lt;/TreeMapLegend&gt;
+             <ej:TreeMapRangeColorMapping Color = "#AED960" Legendlabel = "2% Growth" From = "0" To = "2"></ej:TreeMapRangeColorMapping>
 
-        &lt;LeafItemSettings LabelPath = "Country"&gt;&lt;/LeafItemSettings&gt;
+             <ej:TreeMapRangeColorMapping Color = "#FFAF51" Legendlabel = "3% Growth" From = "0" To = "3"></ej:TreeMapRangeColorMapping>
 
+             <ej:TreeMapRangeColorMapping Color = "#F3D240" Legendlabel = "4% Growth" From = "0" To = "4"></ej:TreeMapRangeColorMapping>
 
-
-         &lt;TreeMapRangeColorMappings&gt;
-
-             &lt;ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
-
-             &lt;ej:TreeMapRangeColorMapping Color = "#AED960" Legendlabel = "2% Growth" From = "0" To = "2"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
-
-             &lt;ej:TreeMapRangeColorMapping Color = "#FFAF51" Legendlabel = "3% Growth" From = "0" To = "3"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
-
-             &lt;ej:TreeMapRangeColorMapping Color = "#F3D240" Legendlabel = "4% Growth" From = "0" To = "4"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
-
-        &lt;/TreeMapRangeColorMappings&gt;
+        </TreeMapRangeColorMappings>
 
 
 
-        &lt;Levels&gt;
+        <Levels>
 
-            &lt;ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25"&gt;&lt;/ej:TreeMapLevel&gt;
+            <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25"></ej:TreeMapLevel>
 
-        &lt;/Levels&gt;
+        </Levels>
 
 
 
-    &lt;/ej:Treemap&gt;
+    </ej:Treemap>
 
-    &lt;/div&gt;
+    </div>
 
 	
 {% endhighlight %}
 
-
-![](TreeMap-Elements_images/TreeMap-Elements_img3.png) 
-{:.image }
+ ![](TreeMap-Elements_images/TreeMap-Elements_img3.png) 
 
 

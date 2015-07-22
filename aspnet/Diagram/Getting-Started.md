@@ -16,9 +16,7 @@ This section explains briefly how to create the Diagram in your application with
 The following screenshot illustrates the structure of the Diagram control.
 
 
-
 ![](Getting-Started_images/Getting-Started_img1.png) 
-{:.image }
 
 
 ## Create your first Diagram in ASP.NET
@@ -87,9 +85,8 @@ The following screenshot illustrates the structure of the Diagram control.
 
 
 3. This creates an empty Diagram. In the following section, you can learn how to add employee details in the Diagram.
+ ![http://help.syncfusion.com/ug/js/ImagesExt/image147_3.png](Getting-Started_images/Getting-Started_img2.png)  
 
- ![http://help.syncfusion.com/ug/js/ImagesExt/image147_3.png](Getting-Started_images/Getting-Started_img2.png) 
-{:.image }
 
 
 ### Initialize Data
@@ -260,10 +257,7 @@ function nodeTemplate(diagram, node) {
 
 The employee data is displayed in the following Diagram.
 
-
-
-![](Getting-Started_images/Getting-Started_img3.png) 
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img3.png)  
 
 
 _Diagram_

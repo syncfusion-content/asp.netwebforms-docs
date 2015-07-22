@@ -25,7 +25,7 @@ AltRowTemplateID is used to customize the alternative rows in TreeGrid. For this
 
 {% highlight html %}
 
- [ASPX]
+ 
 
 <ej:TreeGrid runat="server" ID="TreeGridControlRowTemplate" ChildMapping="Children" RowTemplateId="rowTemplateScript" AltRowTemplateId="altRowTemplateScript">
 
@@ -207,7 +207,7 @@ AltRowTemplateID is used to customize the alternative rows in TreeGrid. For this
 
 
 
-[ASPX.CS]
+
 
 public class TemplateData
 
@@ -327,8 +327,9 @@ The output of TreeGrid with Row Template is as follows.
 
 
 
-![](Rows_images/Rows_img1.png) 
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png) 
+
+
 
 
 ## Row Drag and Drop
@@ -343,21 +344,21 @@ The following code explains about enabling the row drag and drop with the defaul
 
 
 
-&lt;ej:TreeGrid runat="server" ID="TreeGridControlDragAndDrop" … AllowDragAndDrop="true"&gt;	 //...
+<ej:TreeGrid runat="server" ID="TreeGridControlDragAndDrop" … AllowDragAndDrop="true">	 //...
 
-         &lt;columns&gt;
+         <columns>
 
-                &lt;ej:TreeGridColumn HeaderText="Task Id" Field="TaskID" /&gt;
+                <ej:TreeGridColumn HeaderText="Task Id" Field="TaskID" />
 
-                &lt;ej:TreeGridColumn HeaderText="Task Name" Field="TaskName" /&gt;//…
+                <ej:TreeGridColumn HeaderText="Task Name" Field="TaskName" />//…
 
-         &lt;/columns&gt;
+         </columns>
 
-          &lt;DragTooltip ShowTooltip="true"/&gt;
+          <DragTooltip ShowTooltip="true"/>
 
         //...
 
-   &lt;/ej:TreeGrid&gt;
+   </ej:TreeGrid>
 
 
 {% endhighlight %}
@@ -365,8 +366,8 @@ The following code explains about enabling the row drag and drop with the defaul
 
 The following screenshot depicts a row drag and drop in the TreeGrid.
 
- ![](Rows_images/Rows_img2.png) 
-{:.image }
+ ![](Rows_images/Rows_img2.png)  
+
 
 
 ## Customizing Drag tooltip
@@ -457,8 +458,7 @@ The following code shows how to render row drag tooltip with tooltip template.
 
 
 
- ![](Rows_images/Rows_img3.png) 
-{:.image }
+![](Rows_images/Rows_img3.png) 
 
 
 

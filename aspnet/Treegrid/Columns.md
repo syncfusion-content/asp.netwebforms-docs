@@ -349,8 +349,8 @@ TreeGrid.aspx
 
 The following screenshot displays the customized column in TreeGrid control.
 
-![](Columns_images/Columns_img1.png) 
-{:.image }
+
+![](Columns_images/Columns_img1.png)  
 
 
 ## Column Filtering
@@ -413,16 +413,17 @@ FilterEditType:
 
 The following screenshot displays the column filtering in TreeGrid control.
 
+
 ![](Columns_images/Columns_img2.png) 
-{:.image }
 
 
 ## Column Chooser
 
 TreeGrid supports enabling and disabling the visibility of the columns dynamically with the ShowColumnChooser property. By using this property, the visibility of the custom columns can also be toggled. The Column chooser option is rendered as sub menu item within column menu in the TreeGrid columns.
 
- ![](Columns_images/Columns_img3.png) 
-{:.image }
+![](Columns_images/Columns_img3.png) 
+
+
 
 
 The column menu is enabled with the ShowColumnChooser property and the default value for this property is false
@@ -468,8 +469,6 @@ You can also disable the visibility of the particular column in column collectio
 {% endhighlight %}
 
 
-
-![](Columns_images/Columns_img4.png) 
-{:.image }
+![](Columns_images/Columns_img4.png)  
 
 

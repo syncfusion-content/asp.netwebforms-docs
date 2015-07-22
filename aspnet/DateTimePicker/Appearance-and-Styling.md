@@ -36,7 +36,7 @@ The following 13 themes are supported by the DateTimePicker:
 
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
-{:.image }
+
 
 
 ## Css Class
@@ -144,6 +144,6 @@ Add the following code in your style section. In the following CSS style, exitin
 
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
-{:.image }
+
 
 

@@ -7,89 +7,91 @@ control: OLAP Chart
 documentation: ug
 ---
 
-## Chart Axes 
+# Chart Axes 
 
 OlapChart typically have two axes that are used to measure and categorize data: a vertical (y) axis and a horizontal (x) axis. By default horizontal (x) axis and vertical (y) axis is added to the Chart with axis labels, gridlines, and tick lines. You can also customize this axis explicitly by adding axis title or removing gridlines, tick lines that are added to the axis by default.
 
+{% highlight html %}
 
 
-[ASP.NET]
+<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc">
 
-&lt;ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc"&gt;
+     <primaryxaxis majorticklines-visible="false" />
 
-     &lt;primaryxaxis majorticklines-visible="false" /&gt;
+     <primaryyaxis majorticklines-visible="false" />
 
-     &lt;primaryyaxis majorticklines-visible="false" /&gt;
+</ej:OlapChart>
+{% endhighlight %}
 
-&lt;/ej:OlapChart&gt;
 
-Axis Title Customization
+## Axis Title Customization
 
 Primary axis title font appearance is further customized with the help of the following code example.
 
 
-
-[ASP.NET]
-
-&lt;ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc"&gt;
-
-     &lt;primaryxaxis  Title-Text="Primary X title customization" Title-Font-Color="red" Title-Font-FontFamily="Segoe UI" Title-Font-FontStyle="Italic" Title-Font-FontSize="18px" Title-Font-Opacity=1 Title-Font-FontWeight="lighter"/&gt;
-
-     &lt;primaryyaxis Title-Text="Primary Y title customization" Title-Font-Color="red" Title-Font-FontFamily="Segoe UI" Title-Font-FontStyle="Italic" Title-Font-FontSize="18px" Title-Font-Opacity=1 Title-Font-FontWeight="lighter"/&gt;
-
-&lt;/ej:OlapChart&gt;
+{% highlight html %}
 
 
+<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc">
 
-{ ![](Chart-Axes_images/Chart-Axes_img1.png) | markdownify }
-{:.image }
+     <primaryxaxis  Title-Text="Primary X title customization" Title-Font-Color="red" Title-Font-FontFamily="Segoe UI" Title-Font-FontStyle="Italic" Title-Font-FontSize="18px" Title-Font-Opacity=1 Title-Font-FontWeight="lighter"/>
+
+     <primaryyaxis Title-Text="Primary Y title customization" Title-Font-Color="red" Title-Font-FontFamily="Segoe UI" Title-Font-FontStyle="Italic" Title-Font-FontSize="18px" Title-Font-Opacity=1 Title-Font-FontWeight="lighter"/>
+
+</ej:OlapChart>
+{% endhighlight %}
 
 
-Axis Line
+![](Chart-Axes_images/Chart-Axes_img1.png) 
+
+
+
+## Axis Line
 
 Axis line is drawn in Chart to represent the end of the axis in ChartArea. It is customized with the help of following code example.
 
 
-
-[ASP.NET]
-
-&lt;ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc"&gt;
-
-         &lt;primaryxaxis AxisLine-Visible="true" AxisLine-Offset=1 AxisLine-Width=3.5/&gt;
-
-         &lt;primaryyaxis AxisLine-DashArray="2,3"/&gt;
-
-&lt;/ej:OlapChart&gt;
+{% highlight html %}
 
 
+<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc">
 
-{ ![](Chart-Axes_images/Chart-Axes_img2.png) | markdownify }
-{:.image }
+         <primaryxaxis AxisLine-Visible="true" AxisLine-Offset=1 AxisLine-Width=3.5/>
+
+         <primaryyaxis AxisLine-DashArray="2,3"/>
+
+</ej:OlapChart>
+{% endhighlight %}
 
 
-Position Opposed
+![](Chart-Axes_images/Chart-Axes_img2.png) 
+
+
+
+## Position Opposed
 
 Position of the primary X and Y axis is set to the top with the help opposedPosition property.
 
 
 
-[ASP.NET]
-
-&lt;ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc"&gt;
-
-     &lt;primaryxaxis OpposedPosition="true" /&gt;
-
-     &lt;primaryyaxis OpposedPosition="true"/&gt;
-
-&lt;/ej:OlapChart&gt;
+{% highlight html %}
 
 
+<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc">
 
-{ ![](Chart-Axes_images/Chart-Axes_img3.png) | markdownify }
-{:.image }
+     <primaryxaxis OpposedPosition="true" />
+
+     <primaryyaxis OpposedPosition="true"/>
+
+</ej:OlapChart>
+{% endhighlight%}
 
 
-Appearance Customization 
+![](Chart-Axes_images/Chart-Axes_img3.png) 
+
+
+
+## Appearance Customization 
 
 Background, border color and outer width of the Chart Area is customized with the help of following properties.
 
@@ -102,26 +104,26 @@ Width – sets the width for the border.
 
 
 
-
-[ASP.NET]
-
-&lt;asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
-
-&lt;ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Title-Text="OLAP Chart in Essential Studio"&gt;
-
-    &lt;chartarea&gt;
-
-        &lt;border color = "red" width= "2" background="aqua"&gt;&lt;/border&gt;
-
-    &lt;/chartarea&gt;
-
-&lt;/ej:OlapChart&gt;
-
-&lt;/asp:Content&gt;
+{% highlight html %}
 
 
+<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection">
 
-{ ![C:/Users/Tamilarasu .M/Pictures/document/Chart/chartArea.png](Chart-Axes_images/Chart-Axes_img4.png) | markdownify }
-{:.image }
+<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Title-Text="OLAP Chart in Essential Studio">
+
+    <chartarea>
+
+        <border color = "red" width= "2" background="aqua"></border>
+
+    </chartarea>
+
+</ej:OlapChart>
+
+</asp:Content>
+{% endhighlight %}
+
+
+![C:/Users/Tamilarasu .M/Pictures/document/Chart/chartArea.png](Chart-Axes_images/Chart-Axes_img4.png) 
+
 
 

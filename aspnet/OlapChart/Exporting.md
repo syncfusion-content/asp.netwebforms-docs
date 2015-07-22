@@ -7,7 +7,7 @@ control: OLAP Chart
 documentation: ug
 ---
 
-## Exporting
+# Exporting
 
 The OLAP Chart control can be exported to the following formats:
 
@@ -22,12 +22,12 @@ The OLAP Chart control can be exported to the following formats:
 * BMP
 
 
-
+{% highlight html %}
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc"
 
-        IsResponsive="true">&lt;/ej:OlapChart&gt;
+        IsResponsive="true"></ej:OlapChart>
 
-&lt;ej:Button runat="server" ClientSideOnClick="ExportBtnClick" Text="Export"&gt;&lt;/ej:Button&gt;
+<ej:Button runat="server" ClientSideOnClick="ExportBtnClick" Text="Export"></ej:Button>
 
 
 
@@ -38,7 +38,7 @@ function ExportBtnClick(args) {
     chartObj.exportOlapChart(ej.olap.OlapChart.ExportOptions.Excel);   
 
 }
-
+{% endhighlight %}
 
 
 The Export type that is to be mentioned in the parameter takes any one of the following enumerated values.
@@ -55,6 +55,7 @@ The Export type that is to be mentioned in the parameter takes any one of the fo
 
 The following code example of the service method needs to be added in-order to perform exporting in the OlapChart.
 
+{% highlight C# %}
 public void Export(System.IO.Stream stream)
 
 {
@@ -72,26 +73,26 @@ public void Export(System.IO.Stream stream)
     System.Web.HttpContext.Current.Response);
 
 }
+{% endhighlight  %}
+
+
+![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/OlapChartExcelJS.png](Exporting_images/Exporting_img1.png) 
 
 
 
-{ ![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/OlapChartExcelJS.png](Exporting_images/Exporting_img1.png) | markdownify }
-{:.image }
 
 
+![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/OlapChartWordJS.png](Exporting_images/Exporting_img2.png)
 
-
-{ ![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/OlapChartWordJS.png](Exporting_images/Exporting_img2.png) | markdownify }
-{:.image }
 
 
 { ![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/OlapChartPdfJS.png](Exporting_images/Exporting_img3.png) | markdownify }
-{:.image }
 
 
 
 
-{ ![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/OlapChartImageJS.png](Exporting_images/Exporting_img4.png) | markdownify }
-{:.image }
+
+![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/OlapChartImageJS.png](Exporting_images/Exporting_img4.png) 
+
 
 

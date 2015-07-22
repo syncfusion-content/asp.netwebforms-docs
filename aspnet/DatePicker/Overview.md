@@ -11,7 +11,7 @@ documentation: ug
 
 The DatePicker control for ASP.NET provides support for displaying a calendar within a webpage and allows you to pick a date. The DatePicker displays the dates of the current month with the current date highlighted. You can customize the date format, restrict the selectable date ranges, localize the culture to change the language of the DatePicker calendar, and drill down to month, decades, and centuries. A Today button option in the footer helps navigation and sets the current system day in the DatePicker.
 
-## Key Features
+ Key Features
 
 * Previous and next button: The DatePicker control contains the previous and next buttons to navigate to other months, decades, and centuries.
 * Min and Max date range: These feature allows the selectable date ranges to be restricted.

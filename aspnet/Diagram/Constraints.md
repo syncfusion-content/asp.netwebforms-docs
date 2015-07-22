@@ -15,9 +15,9 @@ _Constraints_
 
 <table>
 <tr>
-<td>
-Constraints</td><td>
-Description</td></tr>
+<th>
+Constraints</th><th>
+Description</th></tr>
 <tr>
 <td>
 None</td><td>

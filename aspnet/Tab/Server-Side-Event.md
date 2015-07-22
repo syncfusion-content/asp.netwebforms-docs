@@ -13,10 +13,10 @@ The following server side event is available in the Tab control.
 
 <table>
 <tr>
-<td>
-Event</td><td>
-Event Description</td><td>
-Argument Details</td></tr>
+<th>
+Event</th><th>
+Event Description</th><th>
+Argument Details</th></tr>
 <tr>
 <td>
 OnTabItemActive</td><td>

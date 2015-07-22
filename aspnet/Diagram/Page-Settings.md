@@ -15,10 +15,10 @@ _Page settings_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Data Type</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Data Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 PageWidth</td><td>
@@ -95,18 +95,16 @@ Diagram1.PageSettings.PageOrientation = PageOrientation.Portrait;
 
 {% endhighlight %}
 
-
-
- ![](Page-Settings_images/Page-Settings_img1.png) 
-{:.image }
+  ![](Page-Settings_images/Page-Settings_img1.png) 
 
 
 ## MultiplePage and PageBreaks
 
 When MultiplePage is enabled, size of the page dynamically increases or decreases in multiples of page width and height and completely fits the Diagram within the page boundaries. PageBreaks is used as a visual guide to see how pages are split into multiple pages.
 
-![](Page-Settings_images/Page-Settings_img2.png) 
-{:.image }
+  ![](Page-Settings_images/Page-Settings_img2.png) 
+
+
 
 
 ## AutoScroll
@@ -125,10 +123,10 @@ _Properties table_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Data Type</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Data Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 ScrollLimit</td><td>
@@ -175,7 +173,7 @@ The scroll limit allows you to scroll the diagram page along X and Y axes based 
 * When scroll limit is set as diagram, you are restricted to scroll the page beyond the diagram content. 
 * By specifying the value as limited, you can set the limit of the scrollable area through scrollable area property. 
 
-_Note: Refer to the scrollable area for more details._
+_Note: Refer to the scrollable area for more details.
 
 The following code example illustrates how to specify scroll limit. 
 
@@ -220,8 +218,7 @@ DiagramContent.PageSettings.ScrollLimit=
 {% endhighlight %}
 
 
+ ![](Page-Settings_images/Page-Settings_img4.png)  
 
- ![](Page-Settings_images/Page-Settings_img4.png) 
-{:.image }
 
 

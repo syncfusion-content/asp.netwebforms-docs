@@ -16,7 +16,7 @@ Essential ASP.NET Waiting Popup provides support to display a Waiting Popup 
 The following screenshot illustrates the functionality of a Waiting Popup with login page scenario.
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image17_7.jpg](Getting-Started_images/Getting-Started_img1.jpeg) 
-{:.image }
+
 
 
 You can give the Username and Password in the login page. When you click the Login button, you get the Waiting Popup. After loading, the alert box pops up with the message Signed in successfully.
@@ -145,8 +145,7 @@ You can create a WEB Project and add the necessary assemblies, styles, and scr
 
 The following screenshot displays the Userlogin.
 
- ![http://help.syncfusion.com/ug/js/ImagesExt/image17_8.png](Getting-Started_images/Getting-Started_img2.png) 
-{:.image }
+![http://help.syncfusion.com/ug/js/ImagesExt/image17_8.png](Getting-Started_images/Getting-Started_img2.png)  
 
 
 ### Add Waiting Popup Widget
@@ -187,13 +186,14 @@ In a real-time login page scenario, when you click the Login button, the Wait
 
 The following screenshot shows the output of the code example.
 
- ![http://help.syncfusion.com/ug/js/ImagesExt/image17_9.png](Getting-Started_images/Getting-Started_img3.png) 
-{:.image }
+
+![http://help.syncfusion.com/ug/js/ImagesExt/image17_9.png](Getting-Started_images/Getting-Started_img3.png)  
 
 
 The following screenshot displays an alert box displayed with the message signed in successfully after loading.
 
+
 ![http://help.syncfusion.com/ug/js/ImagesExt/image17_10.jpg](Getting-Started_images/Getting-Started_img4.jpeg) 
-{:.image }
+
 
 

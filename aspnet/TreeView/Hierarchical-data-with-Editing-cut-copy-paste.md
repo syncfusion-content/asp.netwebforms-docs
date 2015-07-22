@@ -7,7 +7,7 @@ control: TreeView
 documentation: ug
 ---
 
-## Hierarchical data with Editing-cut-copy-paste
+# Hierarchical data with Editing-cut-copy-paste
 
 The TreeView control permits you to edit a node and also allows you to cut, copy and paste the node in TreeView. You can edit the tree node name when it is required. This is achieved by using the AllowEditing property. By setting the property as “True”, you can select a node and press F2 or double click the node to initiate editing.
 
@@ -127,8 +127,8 @@ In the ASPX page, add an elements to configure TreeView.
 
 
 
-{ ![](Hierarchical-data-with-Editing-cut-copy-paste_images/Hierarchical-data-with-Editing-cut-copy-paste_img1.png) | markdownify }
-{:.image }
+![](Hierarchical-data-with-Editing-cut-copy-paste_images/Hierarchical-data-with-Editing-cut-copy-paste_img1.png)  
+
 
 
 

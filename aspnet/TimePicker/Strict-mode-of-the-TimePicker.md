@@ -31,6 +31,6 @@ Run the above code to render the following output.
 
 
 ![](Strict-mode-of-the-TimePicker_images/Strict-mode-of-the-TimePicker_img1.png) 
-{:.image }
+
 
 

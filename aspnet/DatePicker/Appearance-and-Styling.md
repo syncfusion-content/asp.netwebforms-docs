@@ -66,6 +66,6 @@ The following screenshot displays the output for the above code.
 
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
-{:.image }
+
 
 

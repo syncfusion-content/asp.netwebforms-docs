@@ -7,9 +7,9 @@ control: TreeView
 documentation: ug
 ---
 
-## Behavior settings
+# Behavior settings
 
-### Enabled
+## Enabled
 
 You can enable or disable the TreeView control by using the property Enabled. You can enable the TreeView control by setting the property Enabled to “True” and you can specify the property Enabled in the controls section as follows.
 
@@ -123,7 +123,7 @@ You can enable or disable the TreeView control by using the property Enabled. Yo
 
 {% endhighlight %}
 
-### Expanded Nodes
+## Expanded Nodes
 
 You can specify the expanded node level in TreeView by using the property ExpandedNodes. Expanded nodes index collection is given to integer array. Add the following code in your controls section.
 
@@ -263,7 +263,7 @@ public partial class Checkbox : System.Web.UI.Page
 
 {% endhighlight %}
 
-### Expand On
+## Expand On
 
 Node can be expanded for specified events. You can specify the property ExpandOn in TreeView control in the controls section as follows.
 

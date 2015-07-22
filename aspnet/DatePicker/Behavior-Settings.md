@@ -38,7 +38,7 @@ The following screenshot displays the output for the above code.
 
 
 ![](Behavior-Settings_images/Behavior-Settings_img1.png) 
-{:.image }
+
 
 
 
@@ -87,8 +87,8 @@ The following screenshot displays the output for the above code.
 
 
 
-[](Behavior-Settings_images/Behavior-Settings_img2.png) 
-{:.image }
+![](Behavior-Settings_images/Behavior-Settings_img2.png) 
+
 
 
 
@@ -125,11 +125,11 @@ The DatePicker control provides support to customize the particular date. You ca
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td><td>
-Default value</td><td>
-Data type</td></tr>
+<th>
+Name</th><th>
+Description</th><th>
+Default value</th><th>
+Data type</th></tr>
 <tr>
 <td>
 Date</td><td>
@@ -146,15 +146,14 @@ String </td></tr>
 <td>
 Icon </td><td>
 you can set the customized css with this property.
-{{'![] (Behavior-Settings_images/Behavior-Settings_img3.jpeg)' | markdownify }}
-{{':.image' | markdownify }}
-{{ '_Note: You need to set the image as background url and its styles within this class_' | markdownify }}</td><td>
+
+'_Note: You need to set the image as background url and its styles within this class</td><td>
 Null </td><td>
 String</td></tr>
 </table>
 
 
-The following steps explain you how to specify the fields mapping in the DatePicker control.
+The  steps explain you how to specify the fields mapping in the DatePicker control.
 
 In the ASPX page, include the following DatePicker control code example.
 
@@ -242,7 +241,7 @@ _Note: Images for this example are available in ‘installed location /Content/i
 The following screenshot displays the output for the above code.
 
 ![](Behavior-Settings_images/Behavior-Settings_img5.png) 
-{:.image }
+
 
 
 ## Define start day of the week
@@ -270,7 +269,7 @@ In the ASPX page, include the following DatePicker control code example to speci
 The following screenshot displays the output for the above code.
 
 ![](Behavior-Settings_images/Behavior-Settings_img6.png) 
-{:.image }
+
 
 
 ## Step months
@@ -314,7 +313,7 @@ In the ASPX page, include the following DatePicker control code example to speci
  The following screenshot displays the output for the above code.
 
 ![](Behavior-Settings_images/Behavior-Settings_img7.png) 
-{:.image }
+
 
 
 ## Watermark Text
@@ -344,7 +343,7 @@ The following screenshot displays the output for the above code.
 
 
 ![](Behavior-Settings_images/Behavior-Settings_img8.png) 
-{:.image }
+
 
 
 ## Display Format
@@ -357,9 +356,9 @@ The standard formats are listed as follows,
 
 <table>
 <tr>
-<td>
-Format Name</td><td>
-   Formats</td></tr>
+<th>
+Format Name</th><th>
+   Formats</th></tr>
 <tr>
 <td>
 Default</td><td>
@@ -406,7 +405,7 @@ The following screenshot displays the output for the above code.
 
 
 ![](Behavior-Settings_images/Behavior-Settings_img9.png) 
-{:.image }
+
 
 
 ### Day header format
@@ -417,9 +416,9 @@ Enum for DatePicker startLevel and depthLevel.
 
 <table>
 <tr>
-<td>
-Day header</td><td>
-Description</td></tr>
+<th>
+Day header</th><th>
+Description</th></tr>
 <tr>
 <td>
 ShowHeaderShort</td><td>
@@ -460,7 +459,7 @@ In the ASPX page, include the following DatePicker control code example to set t
 The following screenshot displays the output for the above code.
 
 ![](Behavior-Settings_images/Behavior-Settings_img10.png) 
-{:.image }
+
 
 
 ### Header format
@@ -488,6 +487,6 @@ The following screenshot displays the output for the above code.
 
 
 ![](Behavior-Settings_images/Behavior-Settings_img11.png) 
-{:.image }
+
 
 

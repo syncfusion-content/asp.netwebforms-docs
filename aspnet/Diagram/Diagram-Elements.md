@@ -19,7 +19,6 @@ documentation: ug
 
 
 
-![C:/Users/labuser/Desktop/a.png](Diagram-Elements_images/Diagram-Elements_img1.png) 
-{:.image }
+ ![C:/Users/labuser/Desktop/a.png](Diagram-Elements_images/Diagram-Elements_img1.png)  
 
 

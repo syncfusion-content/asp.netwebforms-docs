@@ -17,9 +17,9 @@ _Tool_
 
 <table>
 <tr>
-<td>
-Tool name</td><td>
-Description</td></tr>
+<th>
+Tool name</th><th>
+Description</th></tr>
 <tr>
 <td>
 panTool </td><td>
@@ -55,7 +55,6 @@ The following code illustrates how to activate and deactivate the desired tool
 
 {% highlight js %}
 
-[JS]
 
 //Activates pan tool
 
@@ -98,7 +97,7 @@ The following code illustrates how to add node/connector to selection.
 
 {% highlight js %}
 
-[JS]
+
 
 
 
@@ -113,10 +112,7 @@ diagram.addSelection(node);
 {% endhighlight %}
 
 
-
 ![](Interaction_images/Interaction_img1.png) 
-{:.image }
-
 
 Multiple Selections
 
@@ -127,9 +123,8 @@ Rubber band Selection
 Rubber band selection is done by clicking and dragging mouse pointer on the Diagram canvas and rectangle helper appears during Rubber band selection. The Diagram Nodes/Connectors that intersect in the selection rectangle bounds are added to the selection list.
 
 
+ ![](Interaction_images/Interaction_img2.png) 
 
-![](Interaction_images/Interaction_img2.png) 
-{:.image }
 
 
 ## User Handle
@@ -142,10 +137,10 @@ _User Handle_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Data Type</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Data Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 Name</td><td>
@@ -216,7 +211,7 @@ The following code illustrates how to create Delete User handle
 
 {% highlight js %}
 
-[JS]
+
 
 
 
@@ -240,7 +235,7 @@ The following code illustrates how to create tool for Delete User handle.
 
 {% highlight js %}
 
-[JS]
+
 
 
 
@@ -314,7 +309,7 @@ The following code illustrates how to add Delete handle in Diagram.
 
 {% highlight js %}
 
-[JS]
+
 
 //Adds user handles to diagram
 
@@ -324,10 +319,8 @@ $(“#Diagram”).ejDiagram({ userHandles: userHandles });
 
 {% endhighlight %}
 
+![](Interaction_images/Interaction_img3.png)  
 
-
- ![](Interaction_images/Interaction_img3.png) 
-{:.image }
 
 
 ## Zoom 
@@ -365,9 +358,9 @@ _Keyboard_
 
 <table>
 <tr>
-<td>
-Shortcut Keys</td><td>
-Description</td></tr>
+<th>
+Shortcut Keys</th><th>
+Description</th></tr>
 <tr>
 <td>
 Ctrl + A</td><td>
@@ -421,6 +414,8 @@ nudgeRight (move the selected elements towards right by one pixel).</td></tr>
 Ctrl+MouseScroll</td><td>
 Zoom(Zoom in/Zoom out the diagram).</td></tr>
 </table>
+
+
 ## Touch
 
 Touch support for Diagram view has the following features:
@@ -431,6 +426,7 @@ Touch support for Diagram view has the following features:
 * Multiple selection.
 * Contextmenu (touch and hold).
 * Text Editing (double tap).
+
 ## Snapping
 
 
@@ -449,10 +445,10 @@ _SnapToGrid_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Data Type</td><td>
-Descriptions</td></tr>
+<th>
+Properties</th><th>
+Data Type</th><th>
+Descriptions</th></tr>
 <tr>
 <td>
 HorizontalGridLines</td><td>
@@ -525,10 +521,7 @@ Diagram1.SnapSettings.HorizontalGridlines.SnapInterval = interval;
 
 The snap-to-object feature provides visual cues to assist with aligning and spacing diagram nodes. You can snap a node with its neighboring objects based on its size and position. Such alignments are visually represented as guidelines.
 
-
-
-![](Interaction_images/Interaction_img4.png) 
-{:.image }
+![](Interaction_images/Interaction_img4.png)
 
 
 Enabling and Disabling snapping to objects

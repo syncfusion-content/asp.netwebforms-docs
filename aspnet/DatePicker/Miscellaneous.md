@@ -51,9 +51,9 @@ Highlight section highlights the current month, current week, current workdays. 
 
 <table>
 <tr>
-<td>
-Name </td><td>
-Description</td></tr>
+<th>
+Name </th><th>
+Description</th></tr>
 <tr>
 <td>
 Month</td><td>
@@ -77,7 +77,7 @@ In the ASPX page, include the following DatePicker control code example to highl
 
 
 
-&lt;ej:DatePicker ID="datepicker" runat="server" HighlightSection="Week"&gt;&lt;/ej:DatePicker&gt;
+<ej:DatePicker ID="datepicker" runat="server" HighlightSection="Week"></ej:DatePicker>
 
 
 
@@ -86,7 +86,7 @@ In the ASPX page, include the following DatePicker control code example to highl
 The following screenshot displays the output for the above code.   
 
 ![](Miscellaneous_images/Miscellaneous_img1.png) 
-{:.image }
+
 
 
 
@@ -132,7 +132,7 @@ In the ASPX page, include the following DatePicker control code example to hide 
 
 
 ![](Miscellaneous_images/Miscellaneous_img2.png) 
-{:.image }
+
 
 
 ## Show popup button
@@ -158,7 +158,7 @@ The following screenshot displays the output for the above code.
 
 
 ![](Miscellaneous_images/Miscellaneous_img3.png)
-{:.image }
+
 
 
 ## Show rounded corner
@@ -182,7 +182,7 @@ In the ASPX page, include the following DatePicker control code example to enabl
 The following screenshot displays the output for the above code.
 
  ![](Miscellaneous_images/Miscellaneous_img4.png)
-{:.image }
+
 
 
 ## Show ToolTip
@@ -208,6 +208,6 @@ The following screenshot displays the output for the above code.
 
 
 ![](Miscellaneous_images/Miscellaneous_img5.png)
-{:.image }
+
 
 

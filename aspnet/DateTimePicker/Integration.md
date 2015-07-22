@@ -11,7 +11,7 @@ documentation: ug
 
 ## Angular Support
 
-AngularJS is an open-source web application framework. AngularJS extends HTML with new attributes. AngularJS is a JavaScript framework. It can be added to an ASPX page with a &lt;script&gt; tag. AngularJS extends HTML attributes with Directives, and binds data to HTML with Expressions. The support is achieved by an integration JS library file. You can know more about the Angular support in our documentation. You can find the online documentation in the following link location. 
+AngularJS is an open-source web application framework. AngularJS extends HTML with new attributes. AngularJS is a JavaScript framework. It can be added to an ASPX page with a <script> tag. AngularJS extends HTML attributes with Directives, and binds data to HTML with Expressions. The support is achieved by an integration JS library file. You can know more about the Angular support in our documentation. You can find the online documentation in the following link location. 
 
 [http://help.syncfusion.com/ug/js/default.htm#!documents/angularjs.htm](http://help.syncfusion.com/ug/js/default.htm)
 
@@ -62,7 +62,7 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 
 ![](Integration_images/Integration_img1.png) 
-{:.image }
+
 
 
 ## Knockout Support
@@ -81,29 +81,29 @@ In the ASPX page, include the following DateTimePicker control code example.
 {% highlight html %}
 
 
-  &lt;div id="datetime"&gt;
+  <div id="datetime">
 
-        &lt;table&gt;
+        <table>
 
-            &lt;tr&gt;
+            <tr>
 
-                <td>Select Show Date Time &lt;/td&gt;
+                <td>Select Show Date Time </td>
 
-                &lt;td&gt;<label>Select Show Date Time &lt;/label&gt;&lt;/td&gt;
+                <td><label>Select Show Date Time </label></td>
 
-            &lt;/tr&gt;
+            </tr>
 
-            &lt;tr&gt;
+            <tr>
 
-                &lt;td&gt;&lt;input type="text" id="dateTime" data-bind="ejDateTimePicker: { value: value, width: '160px' }" /&gt;&lt;/td&gt;
+                <td><input type="text" id="dateTime" data-bind="ejDateTimePicker: { value: value, width: '160px' }" /></td>
 
-                &lt;td&gt;&lt;input type="text" id="Text1" data-bind="ejDateTimePicker: { value: value, width: '160px' }" /&gt;&lt;/td&gt;
+                <td><input type="text" id="Text1" data-bind="ejDateTimePicker: { value: value, width: '160px' }" /></td>
 
-            &lt;/tr&gt;
+            </tr>
 
-        &lt;/table&gt;
+        </table>
 
-    &lt;/div&gt;
+    </div>
 
 {% endhighlight %}
 
@@ -132,7 +132,7 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 
 ![](Integration_images/Integration_img2.png) 
-{:.image }
+
 
 
 

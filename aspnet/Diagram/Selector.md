@@ -17,10 +17,10 @@ _Selector Properties_
 
 <table>
 <tr>
-<td>
-Names</td><td>
-Type </td><td>
-Description</td></tr>
+<th>
+Names</th><th>
+Type </th><th>
+Description</th></tr>
 <tr>
 <td>
 offsetX</td><td>
@@ -68,7 +68,7 @@ The following code example is used to update the size and position of the select
 
 {% highlight js %}
 
-[JS]
+
 
 
 
@@ -90,7 +90,6 @@ The following code example is used to get the selected elements.
 
 {% highlight js %}
 
-[JS]
 
 
 
@@ -116,7 +115,7 @@ The following code example is used to draw custom handles on the selected elemen
 
 {% highlight js %}
 
-[JS]
+
 
 var userHandle= [];
 

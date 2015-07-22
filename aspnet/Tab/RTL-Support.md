@@ -56,8 +56,7 @@ Add the following ASPX to render the Tab with the RTL format.
 {% endhighlight %}
 
 The following screenshot illustrates the Tab with the RTL format.
+![](RTL-Support_images/RTL-Support_img1.png)
 
-![](RTL-Support_images/RTL-Support_img1.png) 
-{:.image }
 
 

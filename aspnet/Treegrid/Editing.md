@@ -47,8 +47,8 @@ The output of TreeGrid with CellEditing is as follows.
 
 
 
- ![](Editing_images/Editing_img1.png) 
-{:.image }
+![](Editing_images/Editing_img1.png) 
+
 
 
 

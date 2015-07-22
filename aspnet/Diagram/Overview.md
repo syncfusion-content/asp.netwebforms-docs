@@ -12,9 +12,7 @@ documentation: ug
 The EssentialDiagramASP.NET creates rich Visio-like applications. Its framework comprises of many elements that help you to create an application easily. The rich feature set of the Diagram control includes Snapping, Guidelines, Gridlines, Serialization, and Zooming.
 
 
-
- ![](Overview_images/Overview_img1.png) 
-{:.image }
+ ![](Overview_images/Overview_img1.png)  
 
 
 The list of features of the Diagram control in ASP.NET are as follows.

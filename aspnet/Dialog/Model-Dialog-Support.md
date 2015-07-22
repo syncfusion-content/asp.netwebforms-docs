@@ -86,6 +86,6 @@ In the ASPX page, add the Dialog control and set the EnableModel to true.
 The following screenshot displays Model Dialog control.                                     
 
 ![](Model-Dialog-Support_images/Model-Dialog-Support_img1.png) 
-{:.image }
+
 
 

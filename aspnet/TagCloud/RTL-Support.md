@@ -136,6 +136,6 @@ The following screenshot illustrates the TagCloud control with RTL support.
 
 
 ![](RTL-Support_images/RTL-Support_img1.png) 
-{:.image }
+
 
 

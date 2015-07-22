@@ -32,7 +32,7 @@ In the ASPX page, include the following TimePicker control code example.
 Run the above code to render the following output.
 
  ![](Behaviour-Settings_images/Behaviour-Settings_img1.png) 
-{:.image }
+
 
 
 ## Enable/Disable TimePicker Control
@@ -92,7 +92,7 @@ In the ASPX page, include the following TimePicker control code example.
 The following screenshot illustrates aTimePicker textbox configured to restrict editing.
 
 ![](Behaviour-Settings_images/Behaviour-Settings_img4.png) 
-{:.image }
+
 
 
 ## Localization
@@ -132,7 +132,7 @@ In the ASPX page, include the following TimePicker control and configure the Loc
 Run the above code to render the following output.
 
 ![](Behaviour-Settings_images/Behaviour-Settings_img5.png) 
-{:.image }
+
 
 
 ### Rounded Corner
@@ -160,6 +160,6 @@ The following screenshot illustrates a TimePicker when ShowRoundedCorner is set 
 
 
 ![](Behaviour-Settings_images/Behaviour-Settings_img6.png) 
-{:.image }
+
 
 

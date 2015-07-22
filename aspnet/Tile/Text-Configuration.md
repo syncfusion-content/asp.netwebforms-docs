@@ -39,8 +39,7 @@ Refer to the following code examples.
 {% endhighlight %}
 
 
+![](Text-Configuration_images/Text-Configuration_img1.png)  
 
-![](Text-Configuration_images/Text-Configuration_img1.png) 
-{:.image }
 
 

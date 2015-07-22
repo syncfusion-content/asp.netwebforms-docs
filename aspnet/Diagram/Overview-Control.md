@@ -38,8 +38,8 @@ The following code illustrates how to create overview control.
 {% endhighlight %}
 
 
+  ![C:/Users/swarneshk/AppData/Local/Microsoft/Windows/INetCache/Content.Word/overview final.png](Overview-Control_images/Overview-Control_img1.png)
 
- ![C:/Users/swarneshk/AppData/Local/Microsoft/Windows/INetCache/Content.Word/overview final.png](Overview-Control_images/Overview-Control_img1.png)
-{:.image }
+
 
 

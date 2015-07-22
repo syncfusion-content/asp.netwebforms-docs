@@ -15,11 +15,11 @@ _Table_ _1__: Table of Barcode types and supported character_
 
 <table>
 <tr>
-<td>
-Symbol</td><td>
-Enum Value</td><td>
-Supported characters</td><td>
-Length</td></tr>
+<th>
+Symbol</th><th>
+Enum Value</th><th>
+Supported characters</th><th>
+Length</th></tr>
 <tr>
 <td>
 QR Barcode</td><td>
@@ -78,13 +78,13 @@ variable</td></tr>
 <td>
 Code 128 A</td><td>
 Code128A</td><td>
-NUL (0x00) SOH (0x01) STX (0x02) ETX (0x03) EOT(0x04) ENQ (0x05) ACK (0x06) BEL (0x07) BS (0x08) HT (0x09) LF (0x0A) VT(0x0B) FF (0x0C) CR (0x0D) SO (0x0E) SI (0x0F) DLE (0x10) DC1 (0x11) DC2(0x12) DC3 (0x13) DC4 (0x14) NAK (0x15) SYN (0x16) ETB (0x17) CAN(0x18) EM (0x19) SUB (0x1A) ESC (0x1B) FS (0x1C) GS (0x1D) RS (0x1E) US(0x1F) SPACE (0x20) " ! # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ? @ AB C D E F G H I J K L M N O P Q R S T U V W X Y Z [ / ]^ _</td><td>
+NUL (0x00) SOH (0x01) STX (0x02) ETX (0x03) EOT(0x04) ENQ (0x05) ACK (0x06) BEL (0x07) BS (0x08) HT (0x09) LF (0x0A) VT(0x0B) FF (0x0C) CR (0x0D) SO (0x0E) SI (0x0F) DLE (0x10) DC1 (0x11) DC2(0x12) DC3 (0x13) DC4 (0x14) NAK (0x15) SYN (0x16) ETB (0x17) CAN(0x18) EM (0x19) SUB (0x1A) ESC (0x1B) FS (0x1C) GS (0x1D) RS (0x1E) US(0x1F) SPACE (0x20) " ! # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ AB C D E F G H I J K L M N O P Q R S T U V W X Y Z [ / ]^ _</td><td>
 variable</td></tr>
 <tr>
 <td>
 Code 128 B</td><td>
 Code128B</td><td>
-SPACE (0x20) ! " # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 :; &lt; = &gt; ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ / ]^ _ ` ab c d e f g h i j k l m n o p q r s t u v w x y z { | } ~ DEL (•)</td><td>
+SPACE (0x20) ! " # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 :; < = > ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ / ]^ _ ` ab c d e f g h i j k l m n o p q r s t u v w x y z { | } ~ DEL (•)</td><td>
 variable</td></tr>
 <tr>
 <td>

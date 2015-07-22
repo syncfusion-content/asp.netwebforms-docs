@@ -84,7 +84,7 @@ The following screenshot displays the output of the above code.
 
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
-{:.image }
+
 
 
 
@@ -142,7 +142,7 @@ The following screenshot displays the output of the above code.
 
 
  ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
-{:.image }
+
 
 
 
@@ -209,6 +209,6 @@ Add the following code example to render the ToolBar Control
 
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
-{:.image }
+
 
 

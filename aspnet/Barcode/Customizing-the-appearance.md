@@ -19,9 +19,6 @@ _Note: This color customization is possible only for one dimensional barcodes an
 
 {% highlight html %}
 
-Default.aspx
-
-
 
 
 
@@ -48,7 +45,7 @@ Execute the above code to render the following output.
 
 
 ![](Customizing-the-appearance_images/Customizing-the-appearance_img2.png) 
-{:.image }
+
 
 
 _Figure_ _4: Customized Barcode_
@@ -85,7 +82,7 @@ Execute the above code to render the following output.
 
 
 ![](Customizing-the-appearance_images/Customizing-the-appearance_img3.png) 
-{:.image }
+
 
 
 _Figure_ _5: Barcode with customized height_

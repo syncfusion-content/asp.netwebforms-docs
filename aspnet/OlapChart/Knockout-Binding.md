@@ -7,7 +7,7 @@ control: OLAP Chart
 documentation: ug
 ---
 
-## Knockout Binding
+# Knockout Binding
 
 KnockoutBinding system provides a concise and powerful way to link data to the UI. It is generally easy and obvious to bind to simple data properties.
 

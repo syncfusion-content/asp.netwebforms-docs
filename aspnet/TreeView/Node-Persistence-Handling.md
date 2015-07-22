@@ -7,7 +7,7 @@ control: TreeView
 documentation: ug
 ---
 
-## Node Persistence Handling
+# Node Persistence Handling
 
 The TreeView allows for Persistence of its expanded and collapsed state across page view. When you want to maintain the state of the node, like expand or collapse the node, check or uncheck the node, or node display arrangement after a post back, this behavior is achieved by using the EnablePersistence property.
 
@@ -128,9 +128,8 @@ In the ASPX page, add an elements to configure TreeView.
 {% endhighlight %}
 
 
+![](Node-Persistence-Handling_images/Node-Persistence-Handling_img1.png)
 
-{ ![](Node-Persistence-Handling_images/Node-Persistence-Handling_img1.png) | markdownify }
-{:.image }
 
 
 

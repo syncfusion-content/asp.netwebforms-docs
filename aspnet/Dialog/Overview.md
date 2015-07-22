@@ -11,7 +11,7 @@ documentation: ug
 
 The Dialog control displays a Dialog window within a webpage. The Dialog enables a message to be displayed, such as supplementary content like images and text and interactive content like forms. The control can be used to display content on a modal Dialog, but the users cannot interact with other items on the page while the Dialog is open. The Dialog can also be dragged and resized.
 
-## Key Features
+ Key Features
 
 * Drag support: Drags the Dialog within the page.
 * AJAX Load: Loads AJAX content in the Dialog content panel.

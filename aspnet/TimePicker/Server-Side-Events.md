@@ -13,14 +13,16 @@ The following are the server side events available in the TimePicker control.
 
 <table>
 <tr>
-<td>
-Event</td><td>
-Event Description</td><td>
-Event Description</td></tr>
+<th>
+Event</th><th>
+Event Description</th><th>
+Event Description</th></tr>
 <tr>
 <td>
 OnSelect</td><td>
-Occurs when selecting the time value in{{ '![fdgfdhtd](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img1.png)' | markdownify }}</td><td>
+Occurs when selecting the time value in
+{{ '![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img1.png)' | markdownify }}
+</td><td>
 Event Argument contains parameters aree.EventType – Event Name.e.{{ '_Value_' | markdownify }} – It holds current selected time value.e.Arguments – Contain keys and values for event args.</td></tr>
 </table>
 

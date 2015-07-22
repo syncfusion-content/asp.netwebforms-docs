@@ -60,8 +60,5 @@ ej.datavisualization.Diagram.Locale["es-ES"] = {
 {% endhighlight %}
 
 
-
-![](Localization_images/Localization_img1.png) 
-{:.image }
-
+ ![](Localization_images/Localization_img1.png)  
 

@@ -28,6 +28,6 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 
 ![](Right-to-Left_images/Right-to-Left_img1.png) 
-{:.image }
+
 
 

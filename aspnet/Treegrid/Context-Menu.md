@@ -46,9 +46,7 @@ The ContextMenuItems property is used to add the menu items to context menu, thi
 
 
 The following screenshot displays the Context menu in TreeGrid control.
-
- ![D:/IMG_28112014_150551.png](Context-Menu_images/Context-Menu_img1.png) 
-{:.image }
+![D:/IMG_28112014_150551.png](Context-Menu_images/Context-Menu_img1.png)  
 
 
 ## ContextMenu Customization
@@ -127,8 +125,7 @@ Context menu can be customized by adding a new custom menu item to it. In TreeGr
 
 The following screenshot displays the customization of Context menu in TreeGrid control.
 
-![](Context-Menu_images/Context-Menu_img2.png) 
-{:.image }
+ ![](Context-Menu_images/Context-Menu_img2.png)  
 
 
 

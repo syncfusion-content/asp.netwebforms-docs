@@ -61,10 +61,10 @@ The default value is Overlay.
 The following screenshot illustrates the output.
 
 ![](Animations_images/Animations_img2.png) 
-{:.image }
+
 
 
 ![](Animations_images/Animations_img3.png) 
-{:.image }
+
 
 

@@ -33,7 +33,7 @@ Add the following styles to render the WaitingPopup control
 
 {% highlight css %}
 
-  &lt;style type="text/css"&gt;
+  <style type="text/css">
 
         #targetelement {
 
@@ -43,15 +43,13 @@ Add the following styles to render the WaitingPopup control
 
         }
 
-   &lt;/style&gt;
+   </style>
 
 {% endhighlight %}
 
 Output for the WaitingPopup when showOnInit is set to true.
 
-![](Behavior-and-Settings_images/Behavior-and-Settings_img1.png)
-{:.image }
-
+![](Behavior-and-Settings_images/Behavior-and-Settings_img1.png)' 
 
 ## Enable or Disable Popup Indicator
 
@@ -65,15 +63,15 @@ Enable popup indicator:
 
 {% highlight html %}
 
-&lt;div id="targetelement"&gt;&lt;/div&gt;
+<div id="targetelement"></div>
 
-    &lt;ej:WaitingPopup ID="target" runat="server" Target="#targetelement" ShowOnInit="True" ShowImage="true" Text="Loading... Please wait..."&gt;&lt;/ej:WaitingPopup&gt;
+    <ej:WaitingPopup ID="target" runat="server" Target="#targetelement" ShowOnInit="True" ShowImage="true" Text="Loading... Please wait..."></ej:WaitingPopup>
 
 Disable popup indicator:
 
-&lt;div id="targetelement1"&gt;&lt;/div&gt;
+<div id="targetelement1"></div>
 
-    &lt;ej:WaitingPopup ID="target1" runat="server" Target="#targetelement1" ShowOnInit="True" ShowImage="false" Text="Loading... Please wait..."&gt;&lt;/ej:WaitingPopup&gt;    
+    <ej:WaitingPopup ID="target1" runat="server" Target="#targetelement1" ShowOnInit="True" ShowImage="false" Text="Loading... Please wait..."></ej:WaitingPopup>    
 
 {% endhighlight %}
 
@@ -103,12 +101,13 @@ Add the following styles to render the WaitingPopup control.
 
 The following screenshots display the enabled and disabled popup indicator WaitingPopup control.
 
+
 ![](Behavior-and-Settings_images/Behavior-and-Settings_img2.png) 
-{:.image }
 
 
 ![](Behavior-and-Settings_images/Behavior-and-Settings_img3.png) 
-{:.image }
+
+
 
 
 ## Show or Hide WaitingPopup
@@ -208,6 +207,5 @@ Add the following styles to render the WaitingPopup control.
 Output for WaitingPopup when invoking the show() method.
 
 ![](Behavior-and-Settings_images/Behavior-and-Settings_img4.png) 
-{:.image }
 
 

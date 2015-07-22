@@ -13,8 +13,7 @@ documentation: ug
 
 This section explains how to create a TreeGrid control in your application with hierarchical data source and enable sorting and editing in TreeGrid control using ASP.NET. The following screenshot displays the output.
 
-![](Getting-Started_images/Getting-Started_img1.png)
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png) 
 
 
 1.First create a new ASP.NET Web Form project; please refer the [ASP-Getting Started documentation](http://help.syncfusion.com/ug/js/default.htm) to create new project and add necessary DLL’s and script files.
@@ -91,10 +90,8 @@ This section explains how to create a TreeGrid control in your application with 
 
 {% endhighlight %}
 
-
-
 ![](Getting-Started_images/Getting-Started_img2.png) 
-{:.image }
+
 
 
 4.Create data  source in default.aspx.cs file and assign the data source to the TreeGrid control
@@ -362,9 +359,8 @@ public class TaskDetails
 A TreeGrid is displayed as the output in the following screenshot.
 
 
+![](Getting-Started_images/Getting-Started_img3.png) 
 
-![](Getting-Started_images/Getting-Started_img3.png)
-{:.image }
 
 
 
@@ -393,9 +389,9 @@ Enable the multicolumn sorting in TreeGrid by setting AllowMultiSorting as True.
 {% endhighlight %}
 
 
-
 ![](Getting-Started_images/Getting-Started_img4.png) 
-{:.image }
+
+
 
 
 Enable Editing
@@ -462,7 +458,8 @@ You can set the editor type for a particular column as follows.
 
 The output of the DateTimePicker editor in TreeGrid control is as follows.
 
-![](Getting-Started_images/Getting-Started_img5.png) 
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
+ 
+
 
 

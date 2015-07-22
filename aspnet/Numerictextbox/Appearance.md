@@ -82,14 +82,14 @@ Customize the CSS properties in custom CSS class.
 The following screenshot displays the output of the NumericTextbox after applying “CssClass”.
 
 ![C:/Users/giftline.jebamani/Desktop/j.png](Appearance_images/Appearance_img1.png) 
-{:.image }
+
 
 
 ## Rounded Corner Support
 
 The NumericTextbox provides you with rounded corner support that the appearance is different from the normal NumericTextbox control. The default value of ShowRoundedCorner property is false in the NumericTextbox.
 
-## Configure Rounded Corner Support
+### Configure Rounded Corner Support
 
 Add the following code example in your ASPX page to render the NumericTextbox control with rounded corner.
 
@@ -106,14 +106,14 @@ Add the following code example in your ASPX page to render the NumericTextbox co
 The following screenshot displays the output of the NumericTextbox when the “ShowRoundedCorner” is set to “true”.
 
 ![C:/Users/giftline.jebamani/Desktop/k.png](Appearance_images/Appearance_img2.png) 
-{:.image }
+
 
 
 ## Spin Button Support
 
 The NumericTextbox provides the option whether to display the split button in the widget or remove it from the control by using the ShowSpinButton property. The default value of the ShowSpinButton property is true in the NumericTextbox.
 
-## Configure Spin Button
+### Configure Spin Button
 
 Add the following code example in your ASPX page to render the NumericTextbox control with the SpinButton.
 
@@ -134,16 +134,16 @@ Add the following code example in your ASPX page to render the NumericTextbox co
 The following screenshot displays the output of the NumericTextbox when the “ShowSpinButton” is set to “true”.
 
 ![C:/Users/giftline.jebamani/Desktop/l.png](Appearance_images/Appearance_img3.png) 
-{:.image }
+
 ![C:/Users/giftline.jebamani/Desktop/la.png](Appearance_images/Appearance_img4.png) 
-{:.image }
+
 
 
 ## Water Mark Text Support
 
 The NumericTextbox provides water mark text support that helps you to display the initial value in the control by water mark. The default value of WatermarkText property is empty string (“”) in the NumericTextbox.
 
-## Configure Water Mark Text
+### Configure Water Mark Text
 
 Add the following code example in your ASPX page to render the NumericTextbox control with the water mark text.
 
@@ -160,6 +160,6 @@ Add the following code example in your ASPX page to render the NumericTextbox co
 The following screenshot displays the output of the NumericTextbox after applying “WatermarkText”.
 
 ![C:/Users/giftline.jebamani/Desktop/m.png](Appearance_images/Appearance_img5.png) 
-{:.image }
+
 
 

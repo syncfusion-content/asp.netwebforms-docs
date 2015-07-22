@@ -30,6 +30,6 @@ The following code explains you how to change the Range of the TimePicker.
 Run the above code to render the following output.
 
  ![](Range_images/Range_img1.png) 
-{:.image }
+
 
 

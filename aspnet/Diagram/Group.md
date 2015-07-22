@@ -55,11 +55,9 @@ Diagram1.Model.Nodes.Add(group);
 
 {% endhighlight %}
 
+![](Group_images/Group_img1.png)
 
-
-![](Group_images/Group_img1.png) 
-{:.image }
-
+ 
 
 ## Select a Group
 
@@ -67,25 +65,21 @@ You can select a group by clicking on any one of its child node. Consecutive cli
 
 The following steps illustrate how to select an object that has two groups.
 
+
  ![](Group_images/Group_img2.png) 
-{:.image }
 
 
 1. Click the Node1 to select the outer group.
 2. Click again to select the inner group where it belongs.
 
 
-
-![](Group_images/Group_img3.png) 
-{:.image }
+ ![](Group_images/Group_img3.png)
 
 
 3. Click again to select the child node after all groups have been traversed.
 
 
-
- ![](Group_images/Group_img4.png) 
-{:.image }
+ ![](Group_images/Group_img4.png)
 
 
 ## Edit a Group
@@ -98,10 +92,10 @@ _Editing a Group_
 
 <table>
 <tr>
-<td>
-Editing Options</td><td>
-Before </td><td>
-After</td></tr>
+<th>
+Editing Options</th><th>
+Before </th><th>
+After</th></tr>
 <tr>
 <td>
 Resize</td><td>

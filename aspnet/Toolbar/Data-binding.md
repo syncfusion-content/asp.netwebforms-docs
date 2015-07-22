@@ -17,10 +17,10 @@ The following sub-properties helps to bind either the local/remote data to the 
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Value Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Value Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 DataSource</td><td>
@@ -284,7 +284,7 @@ The following screenshot displays the output of the above code.
 
 ![](Data-binding_images/Data-binding_img1.png) 
 
-{:.image }
+
 
 
 ## Remote Data
@@ -328,7 +328,7 @@ protected void Page_Load(object sender, EventArgs e)
 The following screenshot displays the output of the above code. 
 
  ![](Data-binding_images/Data-binding_img2.png) 
-{:.image }
+
 
 
 ## Sql Data
@@ -336,7 +336,7 @@ The following screenshot displays the output of the above code.
 SqlDataSource is designed to work with SQL Server databases. It uses the SQL Server .NET data provider internally. SQL Server .NET data provider classes are defined in the System.Data.SqlClient namespace. To bind the SqlDataSource to ToolBar, DataSourceID should be the id of sqldatasource. You can select the table from the selectcommand. Create a table with given fields in Sql and refer that in the connectionstring to run the given sample.Refer to the following screenshot for the fields and its corresponding data types.
 
 ![C:/Users/jeganprakash/Desktop/IMG_22092014_162354.png](Data-binding_images/Data-binding_img3.png) 
-{:.image }
+
 
 
 Refer to the following code example to bind Sql data in the Toolbar.
@@ -366,7 +366,7 @@ The following screenshot displays the output of the above code.
 
 
 ![](Data-binding_images/Data-binding_img4.png)
-{:.image }
+
 
 
 ## Object Data
@@ -506,7 +506,7 @@ return data;
 The following screenshot displays the output of the above code.
 
  ![](Data-binding_images/Data-binding_img5.png)
-{:.image }
+
 
 
 ## Xml Data
@@ -596,7 +596,7 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 
 ![](Data-binding_images/Data-binding_img6.png) 
-{:.image }
+
 
 
 ### Linq to Sql Data
@@ -628,6 +628,6 @@ The LinqDataSource is used to bind the Toolbar data via Linq to Sql. The propert
 
 
 ![](Data-binding_images/Data-binding_img7.png) |
-{:.image }
+
 
 

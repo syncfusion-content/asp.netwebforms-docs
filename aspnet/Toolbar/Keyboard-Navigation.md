@@ -13,9 +13,9 @@ The entire Toolbar commands can be accessed via the keyboard by specifying the K
 
 <table>
 <tr>
-<td>
-KeyboardShortcut</td><td>
-Function</td></tr>
+<th>
+KeyboardShortcut</th><th>
+Function</th></tr>
 <tr>
 <td>
 Alt + j</td><td>
@@ -108,6 +108,6 @@ The following screenshot displays the output of the above code.
 
 
 ![](Keyboard-Navigation_images/Keyboard-Navigation_img1.png) 
-{:.image }
+
 
 
