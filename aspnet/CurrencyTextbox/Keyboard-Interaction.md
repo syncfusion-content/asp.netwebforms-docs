@@ -16,12 +16,12 @@ The various keyboard shortcuts available within the CurrencyTextbox control are 
 
 <table>
 <tr>
-<td>
-Shortcut Keys</td><td>
-Description</td></tr>
+<th>
+Shortcut Keys</th><th>
+Description</th></tr>
 <tr>
 <td>
-{ [Access key](http://en.wikipedia.org/wiki/Access_key) | markdownify } + j</td><td>
+{{ '[Access key](http://en.wikipedia.org/wiki/Access_key)' | markdownify }} + j</td><td>
 Focuses the control</td></tr>
 <tr>
 <td>
@@ -44,7 +44,7 @@ The following steps explain the implementation of the keyboard interaction in th
 
 {% highlight html %}
 
-&lt;ej:CurrencyTextBox ID="currency" Value="33" runat="server"&gt; &lt;/ej:CurrencyTextBox&gt; 
+<ej:CurrencyTextBox ID="currency" Value="33" runat="server"> </ej:CurrencyTextBox> 
 
 {% endhighlight %}
 
@@ -73,6 +73,6 @@ $(document).on("keydown", function (e)
 Run the sample and press [Access key](http://en.wikipedia.org/wiki/Access_key) + j key to focus the Textbox control. Perform provided functionality by using the keyboard shortcuts.
 
 ![](Keyboard-Interaction_images/Keyboard-Interaction_img1.png)
-{:.image }
+
 
 

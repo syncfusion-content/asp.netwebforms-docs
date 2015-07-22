@@ -19,13 +19,13 @@ RangeNavigator is also used with numeric data and the ValueType for this data is
 
 {% highlight html %}
 
-&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" ValueType="numeric"&gt;
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" ValueType="numeric">
 
-&lt;%--Code --%&gt;
+<%--Code --%>
 
-&lt;%--Code --%&gt;
+<%--Code --%>
 
- &lt;/ej:RangeNavigator&gt;
+ </ej:RangeNavigator>
 
  {% endhighlight %}
 
@@ -34,7 +34,7 @@ The following screenshot displays the RangeNavigator with numeric data.
 
 
 ![](Range-Types_images/Range-Types_img1.png)
-{:.image }
+
 
 
 ## DateTime
@@ -43,18 +43,18 @@ By default the ValueType of the RangeNavigator is “datetime” and represents 
 
 {% highlight html %}
 
-&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" ValueType="datetime"&gt;
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" ValueType="datetime">
 
-&lt;%--Code --%&gt;
+<%--Code --%>
 
-&lt;%--Code --%&gt;
+<%--Code --%>
 
- &lt;/ej:RangeNavigator&gt;
+ </ej:RangeNavigator>
 
 {% endhighlight %}
 
 ![](Range-Types_images/Range-Types_img2.png) 
-{:.image }
+
 
 
 ### DateTime Intervals
@@ -72,25 +72,25 @@ The DateTime range type contains an IntervalType property that sets the DateTime
 
 {% highlight html %}
 
-&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server"&gt;
+<ej:RangeNavigator ID="RangeNavigator1" runat="server">
 
-         &lt;LabelSettings&gt;
+         <LabelSettings>
 
-                &lt;HigherLevel IntervalType="Years"&gt;&lt;/HigherLevel&gt;
+                <HigherLevel IntervalType="Years"></HigherLevel>
 
-                &lt;LowerLevel IntervalType="Quarters"&gt;&lt;/LowerLevel&gt;
+                <LowerLevel IntervalType="Quarters"></LowerLevel>
 
-         &lt;/LabelSettings&gt;
+         </LabelSettings>
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
- &lt;/ej:RangeNavigator&gt;
+ </ej:RangeNavigator>
 
 
 {% endhighlight %}
 
 
 ![](Range-Types_images/Range-Types_img3.png)
-{:.image }
+
 
 

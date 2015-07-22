@@ -7,23 +7,23 @@ control: ReportViewer
 documentation: ug
 ---
 
-## Report Controller
+# Report Controller
 
 The ReportViewer uses Web API services to process the report file, process the request from control, and to return the processed data to control. The Syncfusion.EJ.ReportViewer assembly has helper APIs to define the service actions and process the service requests. 
 
-IReportController
+## IReportController
 
 The interface IReportController has the declaration of action methods that is defined in WebApi Controller for processing the RDL/RDLC files and for processing request from ReportViewer control. The IReportController has the following action methods declaration. 
 
 
 
-_Table_ _1__: Report Controller methods_
+_Table_ _1_: _Report Controller methods_
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 GetResource</td><td>
@@ -41,17 +41,18 @@ Report initialization method that is triggered when report begins to be processe
 OnReportLoaded</td><td>
 Report loaded method that is triggered when report and sub report begin loading.</td></tr>
 </table>
-ReportHelper
+
+### ReportHelper
 
 The class ReportHelper contains helper methods that helps process Post/Get request from ReportViewer control and returns the response to ReportViewer control. The ReportHelper has the following methods. 
 
-_Table_ _2__: Report Helper methods_
+_Table_ _2_: _Report Helper methods_
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 GetResource</td><td>
@@ -63,7 +64,7 @@ Processes the report request and returns the result.</td></tr>
 </table>
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -71,19 +72,19 @@ public class ReportsController : ApiController, IReportController
 
     {
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Action (HttpGet) method for getting resource for report.
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
-        /// <param name="key">The unique key to get the required resource.&lt;/param&gt;
+        /// <param name="key">The unique key to get the required resource.</param>
 
-        /// <param name="resourceType">The type of the requested resource.&lt;/param&gt;
+        /// <param name="resourceType">The type of the requested resource.</param>
 
-        /// <param name="isPrinting">If set to &lt;see langword="true"/&gt;, then the resource is generated for printing.&lt;/param&gt;
+        /// <param name="isPrinting">If set to <see langword="true"/>, then the resource is generated for printing.</param>
 
-        /// <returns>The object data.&lt;/returns&gt;
+        /// <returns>The object data.</returns>
 
         public object GetResource(string key, string resourceType, bool isPrinting)
 
@@ -97,13 +98,13 @@ public class ReportsController : ApiController, IReportController
 
 
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Report Initialization method that is triggered when report begin processed.
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
-        /// <param name="reportOptions">The ReportViewer options.&lt;/param&gt;
+        /// <param name="reportOptions">The ReportViewer options.</param>
 
         public void OnInitReportOptions(ReportViewerOptions reportOptions)
 
@@ -115,13 +116,13 @@ public class ReportsController : ApiController, IReportController
 
 
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Report loaded method that is triggered when report and sub report begins to be loaded.
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
-        /// <param name="reportOptions">The ReportViewer options.&lt;/param&gt;
+        /// <param name="reportOptions">The ReportViewer options.</param>
 
         public void OnReportLoaded(ReportViewerOptions reportOptions)
 
@@ -133,15 +134,15 @@ public class ReportsController : ApiController, IReportController
 
 
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Action (HttpPost) method for posting the request for report process. 
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
-        /// <param name="jsonData">The JSON data posted for processing report.&lt;/param&gt;
+        /// <param name="jsonData">The JSON data posted for processing report.</param>
 
-        /// <returns>The object data.&lt;/returns&gt;
+        /// <returns>The object data.</returns>
 
         public object PostReportAction(Dictionary<string, object> jsonData)
 
@@ -155,5 +156,5 @@ public class ReportsController : ApiController, IReportController
 
     }
 
-
+{% endhighlight %}
 

@@ -197,7 +197,7 @@ In the Design page, add an AutoComplete element from ToolBox and assign values f
 
 
 
-&lt;ej:Autocomplete ID="AutoComplete" runat="server" DataTextField="Text" DataUniqueKeyField="ID" /&gt;
+<ej:Autocomplete ID="AutoComplete" runat="server" DataTextField="Text" DataUniqueKeyField="ID" />
 
 
 
@@ -208,7 +208,7 @@ The following screenshot is the output for AutoComplete control with local data 
 
 
 ![](Data-Binding_images/Data-Binding_img1.png)
-{:.image }
+
 
 
 
@@ -267,7 +267,7 @@ In the Design page, add an AutoComplete element from ToolBox and assign values f
 The following screenshot is the output for AutoComplete control with remote data binding.
 
 ![](Data-Binding_images/Data-Binding_img2.png)
-{:.image }
+
 
 
 ## SQL data
@@ -293,7 +293,7 @@ The following steps explain local data binding of a list data to an AutoComplete
 * The following screenshot illustrates the sample database used.
 
 ![C:/Users/apoorvah.ramanathan/Desktop/1.png](Data-Binding_images/Data-Binding_img3.png) 
-{:.image }
+
 
 
 In the Design page, add an AutoComplete element from ToolBox and assign values for DataTextField and DataUniqueKeyField. In DataSourceID field, assign the ID of the existing SQL data source 
@@ -302,13 +302,13 @@ In the Design page, add an AutoComplete element from ToolBox and assign values f
 
             DataTextField="ProductName" DataUniqueKeyField="ProductID" />
 
-       &lt;%--DataBase configured for AutoComplete control--%&gt;
+       <%--DataBase configured for AutoComplete control--%>
 
         <asp:SqlDataSource ID="NorthWind" runat="server"
 
-            ConnectionString="&lt;%$ ConnectionStrings:ConnectionString %&gt;"
+            ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
 
-            SelectCommand="SELECT [ProductID], [ProductName] FROM [Alphabetical list of products]">&lt;/asp:SqlDataSource&gt;
+            SelectCommand="SELECT [ProductID], [ProductName] FROM [Alphabetical list of products]"></asp:SqlDataSource>
 
 
 
@@ -317,7 +317,7 @@ In the Design page, add an AutoComplete element from ToolBox and assign values f
 The following screenshot is the output for AutoComplete control with SQL data binding.
 
 ![](Data-Binding_images/Data-Binding_img4.png) 
-{:.image }
+
 
 
 ## Object DataSource
@@ -489,7 +489,7 @@ DataTextField="Text" DataUniqueKeyField="ID" />
 The following screenshot is the output for AutoComplete control with ObjectDataSource data binding.
 
 ![](Data-Binding_images/Data-Binding_img5.png) 
-{:.image }
+
 
 
 ## Linq-to-SQL data
@@ -515,7 +515,7 @@ The following steps explain local data binding of a list data to an AutoComplete
 Define a Linq-to-SQL data source in the web page and configure the data source as per your requirement by using the database. In the following code example, an SQL table with TerritoryID and TerritoryDescription in varchar type is used, to create a DBML class.
 
 ![](Data-Binding_images/Data-Binding_img6.png)
-{:.image }
+
 
 
 
@@ -555,6 +555,6 @@ DataTextField="TerritoryDescription" DataUniqueKeyField="TerritoryID" />
 The following screenshot is the output for AutoComplete control with Linq-to-SQL data binding.
 
 ![](Data-Binding_images/Data-Binding_img7.png) 
-{:.image }
+
 
 

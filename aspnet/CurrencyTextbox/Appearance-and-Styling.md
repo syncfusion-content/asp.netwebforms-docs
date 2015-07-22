@@ -79,7 +79,7 @@ Customize the CSS properties in custom CSS class.
 The output after applying the CssClass.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
-{:.image }
+
 
 ## Rounded Corner Support
 
@@ -100,6 +100,6 @@ Add the following code to your ASPX page to render the CurrencyTextbox control w
 The output when the ShowRoundedCorner is set to true.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
-{:.image }
+
 
 

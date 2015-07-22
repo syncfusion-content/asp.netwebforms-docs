@@ -101,7 +101,7 @@ In an ASPX page, add the following code example and set the StopOnHover property
 
 
 
-&lt;ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" SlideHeight="350px" EnableAutoPlay="true" StopOnHover="true" DataCaptionField="Caption" DataUrlField="Url"&gt;&lt;/ej:Rotator&gt;
+<ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" SlideHeight="350px" EnableAutoPlay="true" StopOnHover="true" DataCaptionField="Caption" DataUrlField="Url"></ej:Rotator>
 
 
 
@@ -113,9 +113,9 @@ This property specifies the position of the showPager in the Rotator Item. T
 
 <table>
 <tr>
-<td>
-PagerPosition</td><td>
-Description</td></tr>
+<th>
+PagerPosition</th><th>
+Description</th></tr>
 <tr>
 <td>
 BottomLeft</td><td>
@@ -163,7 +163,7 @@ In an ASPX page, add the following code example and set the PagerPosition proper
 The following screenshot displays the output of the above code example.
 
 ![](Behavior-Settings_images/Behavior-Settings_img1.png)
-{:.image }
+
 
 
 ### Show pager
@@ -191,7 +191,7 @@ In an ASPX page, add the following code example and set the ShowPager property t
 The following screenshot displays the output of the above code example.
 
 ![](Behavior-Settings_images/Behavior-Settings_img2.png)
-{:.image }
+
 
 
 ## Show options
@@ -208,7 +208,7 @@ In an ASPX page, add the following code example and set the ShowPlayButton prope
 
 
 
-&lt;ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" SlideHeight="350px" ShowPlayButton="true" DataCaptionField="Caption" DataUrlField="Url"&gt;&lt;/ej:Rotator&gt;
+<ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" SlideHeight="350px" ShowPlayButton="true" DataCaptionField="Caption" DataUrlField="Url"></ej:Rotator>
 
 
 {% endhighlight %}
@@ -217,7 +217,7 @@ In an ASPX page, add the following code example and set the ShowPlayButton prope
 The following screenshot displays the output of the above code example.
 
 ![](Behavior-Settings_images/Behavior-Settings_img3.png)
-{:.image }
+
 
 
 ### Show navigate button
@@ -232,7 +232,7 @@ In an ASPX page, add the following code example and set the ShowNavigateButton p
 
 
 
-&lt;ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" SlideHeight="350px" ShowNavigateButton="false" DataCaptionField="Caption" DataUrlField="Url"&gt;&lt;/ej:Rotator&gt;
+<ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" SlideHeight="350px" ShowNavigateButton="false" DataCaptionField="Caption" DataUrlField="Url"></ej:Rotator>
 
 {% endhighlight %}
 
@@ -241,7 +241,7 @@ The following screenshot displays the output of the above code example.
 
 
 ![](Behavior-Settings_images/Behavior-Settings_img4.png)
-{:.image }
+
 
 
 ### Show caption
@@ -256,13 +256,13 @@ In an ASPX page, add the following code example and set the ShowCaption property
 
 
 
-&lt;ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" SlideHeight="350px" ShowCaption="true" DataCaptionField="Caption" DataUrlField="Url"&gt;&lt;/ej:Rotator&gt;
+<ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" SlideHeight="350px" ShowCaption="true" DataCaptionField="Caption" DataUrlField="Url"></ej:Rotator>
 
 {% endhighlight %}
 
 The following screenshot displays the output of the above code example.
 
 ![](Behavior-Settings_images/Behavior-Settings_img5.png)
-{:.image }
+
 
 

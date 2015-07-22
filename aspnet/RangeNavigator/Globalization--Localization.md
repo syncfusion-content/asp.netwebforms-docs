@@ -39,18 +39,18 @@ Localization is the key feature that provides solutions globally with the help o
 
 {% highlight html %}
 
-&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" Locale="fr-FR"&gt;
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" Locale="fr-FR">
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-&lt;/ej:RangeNavigator&gt;
+</ej:RangeNavigator>
 
 {% endhighlight %}
 
 ![](Globalization--Localization_images/Globalization--Localization_img1.png)
-{:.image }
+
 
 
 ## RTL
@@ -59,18 +59,18 @@ Right-to-Left or RTL describes the ability of application to handle and responds
 
 {% highlight html %}
 
-&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" EnableRTL="true"&gt;
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" EnableRTL="true">
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-&lt;/ej:RangeNavigator&gt;
+</ej:RangeNavigator>
 
 {% endhighlight %}
 
 ![](Globalization--Localization_images/Globalization--Localization_img2.png)
-{:.image }
+
 
 
 

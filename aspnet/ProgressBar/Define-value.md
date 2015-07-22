@@ -29,7 +29,7 @@ Add the following code in the ASPX page in order to render the ProgressBar contr
 
 The following screenshot displays the Assigning value to ProgressBar.            
 ![](Define-value_images/Define-value_img1.png)
-{:.image }
+
 
 
 ## Percentage
@@ -59,7 +59,7 @@ The following screenshot displays the Progress bar with Percentage.
 
 
 ![](Define-value_images/Define-value_img2.png) 
-{:.image }
+
 
 
 ## Setting Range
@@ -87,7 +87,7 @@ Add the following code example in the ASPX page to render Minimum and Maximum va
 The following screenshot displays the Minimum and Maximum values. 
 
 ![](Define-value_images/Define-value_img3.png)
-{:.image }
+
 
 
 ## Appearance and Styling
@@ -115,7 +115,7 @@ Add the following code example to the ASPX page.
 The following screenshot displays the maximum height and maximum width.                         
 
 ![](Define-value_images/Define-value_img4.png)
-{:.image }
+
 
 
 ## Custom text
@@ -139,7 +139,7 @@ Add the following code example in the ASPX page.
 The following screenshot displays the custom text.
 
 ![](Define-value_images/Define-value_img5.png) 
-{:.image }
+
 
 
 ## Theme
@@ -200,6 +200,6 @@ Add the following code example to the corresponding ASPX page to render Progress
 The following screenshot displays the customized style.
 
 ![](Define-value_images/Define-value_img6.png) 
-{:.image }
+
 
 

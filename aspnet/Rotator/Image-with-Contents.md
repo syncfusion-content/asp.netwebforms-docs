@@ -354,7 +354,7 @@ Define the style for the Rotator control.
 The following screenshot displays the output of the above code example.
 
 ![](Image-with-Contents_images/Image-with-Contents_img1.png) 
-{:.image }
+
 
 
 ## Display items
@@ -384,7 +384,7 @@ In an ASPX page, add the following code example and set the DisplayItemCount pro
 The following screenshot displays the output of the above code example.
 
 ![](Image-with-Contents_images/Image-with-Contents_img2.png)
-{:.image }
+
 
 
 ### Navigate Steps
@@ -412,7 +412,7 @@ In an ASPX page, add the following code example and set the NavigateSteps prope
 The following screenshot displays the output of the above code example.
 
 ![](Image-with-Contents_images/Image-with-Contents_img3.png) 
-{:.image }
+
 
 
 ### Start index
@@ -440,7 +440,7 @@ In an ASPX page, add the following code example and set the StartIndex property
 The following screenshot displays the output of the above code example.
 
 ![](Image-with-Contents_images/Image-with-Contents_img4.png)
-{:.image }
+
 
 
 ### Frame space
@@ -475,7 +475,7 @@ In an ASPX page, add the following code example and set the AnimationType prope
 
 
 
-&lt;ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" SlideHeight="350px" AnimationType="fastSlide" DataCaptionField="Caption" DataUrlField="Url"&gt;&lt;/ej:Rotator&gt;
+<ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" SlideHeight="350px" AnimationType="fastSlide" DataCaptionField="Caption" DataUrlField="Url"></ej:Rotator>
 
 {% endhighlight %}
 
@@ -491,7 +491,7 @@ In an ASPX page, add the following code example and set the AnimationSpeed prop
 
 
 
-&lt;ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" SlideHeight="350px" AnimationSpeed="2000" DataCaptionField="Caption" DataUrlField="Url"&gt;&lt;/ej:Rotator&gt;
+<ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" SlideHeight="350px" AnimationSpeed="2000" DataCaptionField="Caption" DataUrlField="Url"></ej:Rotator>
 
 {% endhighlight %}
 
@@ -508,7 +508,7 @@ In an ASPX page, add the following code example and set the Delay  property as 
 
 
 
-&lt;ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" SlideHeight="350px" Delay="5000" EnableAutoPlay="true"  AnimationSpeed="2000" DataCaptionField="Caption" DataUrlField="Url"&gt;&lt;/ej:Rotator&gt;
+<ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" SlideHeight="350px" Delay="5000" EnableAutoPlay="true"  AnimationSpeed="2000" DataCaptionField="Caption" DataUrlField="Url"></ej:Rotator>
 
 {% endhighlight %}
 
@@ -592,6 +592,6 @@ Define the style for the Rotator control.
 The following screenshot displays the output of the above code example.
 
 ![](Image-with-Contents_images/Image-with-Contents_img5.png) 
-{:.image }
+
 
 

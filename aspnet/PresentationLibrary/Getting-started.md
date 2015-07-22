@@ -20,7 +20,7 @@ In this section, you can learn how to create a simple PowerPoint presentation wi
 Initially, you can learn how to create a slide as follows.
 
 ![](Getting-started_images/Getting-started_img1.png)
-{:.image }
+
 
 
 ## Create an instance of IPresentationinterface as follows. Instance of IPresentation represents the root element of Presentation that in turn contains the collections of slides.
@@ -92,7 +92,7 @@ textPart.Font.Bold = true;
 Refer to the following scrennshot.
 
 ![](Getting-started_images/Getting-started_img2.png)
-{:.image }
+
 
 
 
@@ -144,13 +144,13 @@ textPart.Font.FontSize = 40;
 On saving the Presentation at this instance will result with the PowerPoint Presentation with one slide and its contents are follows. 
 
 ![](Getting-started_images/Getting-started_img3.png)
-{:.image }
+
 
 
 Now this section demonstrates how to create a bulleted and numbered list in the second slide as follows.
 
 ![](Getting-started_images/Getting-started_img4.png) 
-{:.image }
+
 
 
 Add three textbox shape in the slide. A textbox shape to hold the title “Bulleted & Numbered List”, a textbox to hold the bulleted list in the left side of the slide and another textbox to hold the numbered list in the right side.
@@ -217,9 +217,9 @@ The ListFormat property of the paragraph represents all the list information. So
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Short Description</td></tr>
+<th>
+Property Name</th><th>
+Short Description</th></tr>
 <tr>
 <td>
 Type</td><td>
@@ -328,7 +328,7 @@ paragraph.FirstLineIndent = -20;
 Refer to the following screenshot.
 
 ![](Getting-started_images/Getting-started_img5.png)
-{:.image }
+
 
 
 
@@ -402,7 +402,7 @@ paragraph.FirstLineIndent = -20;
 On saving the presentation, the second slide with the list is as follows.
 
 ![](Getting-started_images/Getting-started_img6.png)
-{:.image }
+
 
 
 
@@ -498,7 +498,7 @@ paragraph.FirstLineIndent = -20;
 On saving the presentation, the slide looks like the following screenshot.
 
 ![](Getting-started_images/Getting-started_img7.png)
-{:.image }
+
 
 
 
@@ -554,7 +554,7 @@ picture = thirdSlide.Shapes.AddPicture(new MemoryStream(image.ImageData), 485, 1
 After adding the images into the slide, the slide looks like the following screenshot. 
 
 ![](Getting-started_images/Getting-started_img8.png) 
-{:.image }
+
 
 
 
@@ -613,7 +613,7 @@ chart.ChartTitleArea.Bold = true;
 
 The chart type is specified with the help of ChartType property of IOfficeChart interface. 
 
-_Note: 3D charts are not supported in image & PDF conversion._
+> Note: 3D charts are not supported in image & PDF conversion.
 
 
 
@@ -698,7 +698,7 @@ chart.ChartData.SetValue(7, 4, 30);
 After filling these data, the embedded excel sheet looks like the following screenshot. 
 
 ![](Getting-started_images/Getting-started_img10.png)
-{:.image }
+
 
 
 Once the chart data is added, you need to specify the Chart serie and category for chart creation. IOfficeChartSerie interface represents the chart serie and Collection of chart serie that is accessed by the Series property of IOfficeChart interface. The following code example creates three series and set its data range.
@@ -756,7 +756,7 @@ presentation.Close();
 Now the chart added in the slide looks like chart in the following screenshot.
 
 ![](Getting-started_images/Getting-started_img11.png) 
-{:.image }
+
 
 
 
@@ -898,9 +898,9 @@ A slide can be converted to image by using the ConvertToImage method of ISlide i
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Short description</td></tr>
+<th>
+Method Name</th><th>
+Short description</th></tr>
 <tr>
 <td>
 ConvertToImage(Syncfusion.Drawing.ImageType imageType)</td><td>

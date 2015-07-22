@@ -43,46 +43,46 @@ In an ASPX page, add the following code example and set the Orientation property
 
                 runat="server">
 
-                &lt;Items&gt;
+                <Items>
 
-                    &lt;ej:RotatorItem Caption="Nature" Url="../images/rotator/nature.jpg"&gt;&lt;/ej:RotatorItem&gt;
+                    <ej:RotatorItem Caption="Nature" Url="../images/rotator/nature.jpg"></ej:RotatorItem>
 
-                &lt;/Items&gt;
+                </Items>
 
-                &lt;Items&gt;
+                <Items>
 
-                    &lt;ej:RotatorItem Caption="Beautiful Bird" Url="../images/rotator/bird.jpg"&gt;&lt;/ej:RotatorItem&gt;
+                    <ej:RotatorItem Caption="Beautiful Bird" Url="../images/rotator/bird.jpg"></ej:RotatorItem>
 
-                &lt;/Items&gt;
+                </Items>
 
-                &lt;Items&gt;
+                <Items>
 
-                    &lt;ej:RotatorItem Caption="Amazing Sculptures" Url="../images/rotator/sculpture.jpg"&gt;&lt;/ej:RotatorItem&gt;
+                    <ej:RotatorItem Caption="Amazing Sculptures" Url="../images/rotator/sculpture.jpg"></ej:RotatorItem>
 
-                &lt;/Items&gt;
+                </Items>
 
-                &lt;Items&gt;
+                <Items>
 
-                    &lt;ej:RotatorItem Caption="Sea-View" Url="../images/rotator/seaview.jpg"&gt;&lt;/ej:RotatorItem&gt;
+                    <ej:RotatorItem Caption="Sea-View" Url="../images/rotator/seaview.jpg"></ej:RotatorItem>
 
-                &lt;/Items&gt;
+                </Items>
 
-                &lt;Items&gt;
+                <Items>
 
-                    &lt;ej:RotatorItem Caption="Snow Fall" Url="../images/rotator/snowfall.jpg"&gt;&lt;/ej:RotatorItem&gt;
+                    <ej:RotatorItem Caption="Snow Fall" Url="../images/rotator/snowfall.jpg"></ej:RotatorItem>
 
-                &lt;/Items&gt;
+                </Items>
 
-                &lt;Items&gt;
+                <Items>
 
-            &lt;/ej:Rotator&gt;
+            </ej:Rotator>
 
 {% endhighlight %}
 
 The following screenshot displays the output of the above code example.
 
 ![](Orientation_images/Orientation_img1.png) 
-{:.image }
+
 
 
 ## Vertical
@@ -150,6 +150,6 @@ In an ASPX page, add the following code example and set the Orientation property
 The following screenshot displays the output of the above code example.
 
 ![](Orientation_images/Orientation_img2.png)
-{:.image }
+
 
 

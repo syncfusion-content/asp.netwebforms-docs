@@ -68,7 +68,7 @@ Configure the CSS styles to align the radio buttons.
 
 
 ![C:/Users/ApoorvahR/Desktop/IMG_14102014_123941.png](Easy-Customization_images/Easy-Customization_img1.png)
-{:.image }
+
 
 
 ## Text
@@ -124,7 +124,7 @@ Configure the CSS styles to align the radio buttons.
 
 
 ![](Easy-Customization_images/Easy-Customization_img2.png)
-{:.image }
+
 
 
 ## Size
@@ -133,9 +133,9 @@ You can render the Radio Button in different sizes. There are some predefined si
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Small</td><td>
@@ -232,7 +232,7 @@ Configure the CSS styles to align the radio buttons
 
 
 ![](Easy-Customization_images/Easy-Customization_img3.png)
-{:.image }
+
 
 
 ## RTL Support 
@@ -324,6 +324,6 @@ Configure the CSS styles to align the RadioButtons.
 
 
 ![](Easy-Customization_images/Easy-Customization_img4.png)
-{:.image }
+
 
 

@@ -26,8 +26,8 @@ Add the following code to your ASPX page to render the CurrencyTextbox control w
 The output when ShowSpinButton is set to true and false.
 
 ![](Spin-Button-Support_images/Spin-Button-Support_img1.png)
-{:.image }
+
 ![](Spin-Button-Support_images/Spin-Button-Support_img2.png) 
-{:.image }
+
 
 

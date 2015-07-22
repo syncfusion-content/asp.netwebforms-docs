@@ -76,7 +76,7 @@ MultiSelectMode="None"/>
 The following screenshot is the output for AutoComplete control with configured multiple selection.
 
 ![](MultiSelection-modes_images/MultiSelection-modes_img1.png)
-{:.image }
+
 
 
 ## Grouping
@@ -195,9 +195,9 @@ In the Design page, add an AutoComplete element from ToolBox and assign values f
 
 {% highlight html %}
 
-&lt;ej:Autocomplete ID="AutoComplete" runat="server" DataSourceID="ObjectDataSource1" DataTextField="Text" DataUniqueKeyField="ID" DataCategoryField="Category" AllowGrouping="true" FilterType="Contains" /&gt;
+<ej:Autocomplete ID="AutoComplete" runat="server" DataSourceID="ObjectDataSource1" DataTextField="Text" DataUniqueKeyField="ID" DataCategoryField="Category" AllowGrouping="true" FilterType="Contains" />
 
-        &lt;asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetGroupingData" TypeName="ASP_896.ObjectData"&gt;&lt;/asp:ObjectDataSource&gt;
+        <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetGroupingData" TypeName="ASP_896.ObjectData"></asp:ObjectDataSource>
 
 
 {% endhighlight %}
@@ -206,6 +206,6 @@ In the Design page, add an AutoComplete element from ToolBox and assign values f
 The following screenshot is the output for AutoComplete control that provides grouping.
 
 ![](MultiSelection-modes_images/MultiSelection-modes_img2.png)
-{:.image }
+
 
 

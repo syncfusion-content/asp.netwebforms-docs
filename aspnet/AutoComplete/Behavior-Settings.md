@@ -38,7 +38,7 @@ In the design page, define the AutoComplete control and configure the FilterType
 The following screenshot is the output for AutoComplete control that filters the list items based on the GreaterThanOrEqual option.
 
 ![](Behavior-Settings_images/Behavior-Settings_img1.png)
-{:.image }
+
 
 
 ## AutoFill
@@ -72,7 +72,7 @@ In the design page define the AutoComplete control and enable the AutoFill for i
 The following screenshot is the output for AutoComplete when EnableAutoFill is set to True.
 
 ![](Behavior-Settings_images/Behavior-Settings_img2.png)
-{:.image }
+
 
 
 ## Sorting Items
@@ -104,7 +104,7 @@ In the design page, define the AutoComplete control and configure the sorting fo
 The following screenshot is the output for AutoComplete when “SortOrder” is configured.
 
 ![](Behavior-Settings_images/Behavior-Settings_img3.png)
-{:.image }
+
 
 
 ## Distinct List items
@@ -166,7 +166,7 @@ EnableDistinct="true"/>
 The following screenshot is the output for AutoComplete when EnableDistinct is set to True.
 
 ![](Behavior-Settings_images/Behavior-Settings_img4.png)
-{:.image }
+
 
 
 ## Show Popup button
@@ -198,7 +198,7 @@ In the design page, define the AutoComplete control and configure the ShowPopupB
 The following screenshot is the output for AutoComplete when ShowPopupButton is enabled.
 
 ![](Behavior-Settings_images/Behavior-Settings_img5.png)
-{:.image }
+
 
 
 ## Restrict editing
@@ -230,7 +230,7 @@ In the design page, define the AutoComplete control and configure ReadOnlyproper
 The following screenshot is the output for the AutoComplete textbox configured to restrict editing.
 
 ![](Behavior-Settings_images/Behavior-Settings_img6.png)
-{:.image }
+
 
 
 ## Empty Result settings
@@ -258,6 +258,6 @@ In the design page, define the AutoComplete control and set the text for EmptyRe
 The following screenshot is the output of the AutoComplete textbox, when the list doesn’t return any value.
 
 ![](Behavior-Settings_images/Behavior-Settings_img7.png) 
-{:.image }
+
 
 

@@ -15,9 +15,9 @@ The entire Rotator commands are accessed through the keyboard by specifying 
 
 <table>
 <tr>
-<td>
-KeyboardShortcut               </td><td>
-Functionx</td></tr>
+<th>
+KeyboardShortcut               </th><th>
+Functionx</th></tr>
 <tr>
 <td>
 Alt + j</td><td>
@@ -181,7 +181,7 @@ Add the following code in your JavaScript to focus the control.
 
                 if (e.altKey && e.keyCode === 74) { // j- key code.
 
-                    $("#&lt;%=Keyboardevent.ClientID%&gt;")[0].focus();
+                    $("#<%=Keyboardevent.ClientID%>")[0].focus();
 
                 }
 
@@ -196,6 +196,6 @@ Add the following code in your JavaScript to focus the control.
 The following screenshot displays the output of the above code example.
 
 ![](Keyboard-interaction_images/Keyboard-interaction_img1.png)
-{:.image }
+
 
 

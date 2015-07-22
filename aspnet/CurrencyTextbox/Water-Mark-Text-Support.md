@@ -26,5 +26,5 @@ Add the following code to your ASPX page to render the CurrencyTextbox control w
 The output after applying the WatermarkText.
 
 ![](Water-Mark-Text-Support_images/Water-Mark-Text-Support_img1.png)
-{:.image }
+
 

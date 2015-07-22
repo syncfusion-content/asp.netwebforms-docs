@@ -141,11 +141,11 @@ The following example shows the way to bind data to the CurrencyTextbox control
 The following is the output of CurrencyTextbox control with two-way Angular binding.
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image73_42.jpg](Integration_images/Integration_img1.jpeg)
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image73_43.jpg](Integration_images/Integration_img2.jpeg)
-{:.image }
+
 
 
 ## Knockout Support
@@ -300,9 +300,9 @@ The following example depicts the way to bind data to the CurrencyTextbox contr
 The output of Knockout binding in the CurrencyTextbox.
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image73_40.jpg](Integration_images/Integration_img3.jpeg)
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image73_41.jpg](Integration_images/Integration_img4.jpeg)
-{:.image }
+
 

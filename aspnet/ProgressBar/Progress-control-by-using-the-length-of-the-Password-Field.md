@@ -106,19 +106,19 @@ You can also change the themes or appearance of the ProgressBar as required.
 The following screenshots display the output when password length less than 5, password length less than 7, and password length greater than 7.                          .
 
 ![](Progress-control-by-using-the-length-of-the-Password-Field_images/Progress-control-by-using-the-length-of-the-Password-Field_img1.png)
-{:.image }
+
 
 
 
 
 ![](Progress-control-by-using-the-length-of-the-Password-Field_images/Progress-control-by-using-the-length-of-the-Password-Field_img2.png)
-{:.image }
+
 
 
 
 
 ![](Progress-control-by-using-the-length-of-the-Password-Field_images/Progress-control-by-using-the-length-of-the-Password-Field_img3.png)
-{:.image }
+
 
 
 You can also bind an event at the start and finish of a ProgressBar by using the start, complete, and change properties of the ProgressBar.

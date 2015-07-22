@@ -7,7 +7,7 @@ control: ReportViewer
 documentation: ug
 ---
 
-## Report DataSources
+# Report DataSources
 
 The ReportViewer has support to add data sources to ReportViewer for RDLC reports at runtime. You can add SQL Server, Oracle, MS Azure, XML, Business Object, and SQL Server Compact DataSources to ReportViewer. The ReportViewer has DataSources property that is the list of ReportDataSource type to add collection of DataSources to it. You can add DataSources either through ReportViewer model when creating ReportViewer control or through Web API.
 
@@ -17,19 +17,19 @@ The following code example illustrates how to add DataSource at control creation
 
 
 
+{% highlight html %}
+
 [EJWEB]
 
-[ASPX]
+        <ej:ReportViewer ID="viewer" runat="server" ReportServiceUrl="/api/ReportApi" ReportPath="~/App_Data/Product List.rdlc" ProcessingMode="Local">
 
-        &lt;ej:ReportViewer ID="viewer" runat="server" ReportServiceUrl="/api/ReportApi" ReportPath="~/App_Data/Product List.rdlc" ProcessingMode="Local"&gt;
-
-        &lt;/ej:ReportViewer&gt;
+        </ej:ReportViewer>
 
 
+{% endhighlight %}
 
 
-
-[C#]
+{% highlight c# %}
 
 public partial class ProductListDemo : System.Web.UI.Page
 
@@ -103,11 +103,11 @@ public partial class ProductListDemo : System.Web.UI.Page
 
     }
 
-
+{% endhighlight %}
 
 The following code example illustrates how to add DataSource in Web API.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -115,13 +115,13 @@ public class ReportsController : ApiController, IReportController
 
     {
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Report loaded method that is triggered when report and sub report are loaded.
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
-        /// <param name="reportOptions">The ReportViewer options.&lt;/param&gt;
+        /// <param name="reportOptions">The ReportViewer options.</param>
 
         public void OnReportLoaded(ReportViewerOptions reportOptions)
 
@@ -189,23 +189,23 @@ public class ProductList
 
     }
 
+{% endhighlight %}
 
-
-DataSource Credentials
+## DataSource Credentials
 
 The DataSource credentials can be given at Web API Controller to connect data source.
 
-[CS]
+{% highlight c# %}
 
 
 
-                   /// &lt;summary&gt;
+                   /// <summary>
 
         /// Report Initialization method that is triggered when report begins to process.
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
-        /// <param name="reportOptions">The ReportViewer options.&lt;/param&gt;
+        /// <param name="reportOptions">The ReportViewer options.</param>
 
         public void OnInitReportOptions(ReportViewerOptions reportOptions)
 
@@ -219,5 +219,5 @@ The DataSource credentials can be given at Web API Controller to connect data so
 
         }
 
-
+{% endhighlight %}
 

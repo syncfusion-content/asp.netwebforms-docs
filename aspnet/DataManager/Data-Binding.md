@@ -15,9 +15,9 @@ A data source can be bound to a Grid through DataManager control. The DataManage
 
 {% highlight html %}
 
-&lt;%--connection local reference--%&gt;
+<%--connection local reference--%>
 
-&lt;ej:DataManager runat="server" ID="FlatData" URL="Default.aspx/Data"/&gt;
+<ej:DataManager runat="server" ID="FlatData" URL="Default.aspx/Data"/>
 
 
 
@@ -27,21 +27,21 @@ A data source can be bound to a Grid through DataManager control. The DataManage
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
 {% endhighlight %}
 
@@ -90,7 +90,7 @@ public partial class DataManager : System.Web.UI.Page
 The result of the above code example is illustrated as follows.
 
 ![](Data-Binding_images/Data-Binding_img1.png)
-{:.image }
+
 
 
 ## REST Services
@@ -101,7 +101,7 @@ OData is standardized protocol for creating and consuming data. You can retrieve
 
 {% highlight html %}
 
-&lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" /&gt;
+<ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" />
 
 
 
@@ -111,28 +111,28 @@ OData is standardized protocol for creating and consuming data. You can retrieve
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 {% endhighlight %}
 
 The result of the above code example is illustrated as follows.
 
 ![](Data-Binding_images/Data-Binding_img2.png)
-{:.image }
+
 
 
 ### OData V4
@@ -144,7 +144,7 @@ You can refer to the following code example for consuming OData v4 services and 
 
 {% highlight html %}
 
-&lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" CrossDomain="true" /&gt;
+<ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" CrossDomain="true" />
 
 
 
@@ -154,28 +154,28 @@ You can refer to the following code example for consuming OData v4 services and 
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 {% endhighlight %}
 
 The request and response to the service from the DataManager is illustrated as follows.
 
 ![C:/Users/apoorvah.ramanathan/Desktop/1.png](Data-Binding_images/Data-Binding_img3.png)
-{:.image }
+
 
 
 
@@ -183,7 +183,7 @@ The request and response to the service from the DataManager is illustrated as f
 The result of the above code example is illustrated as follows.
 
 ![](Data-Binding_images/Data-Binding_img4.png)
-{:.image }
+
 
 
 ## WebAPI binding
@@ -195,7 +195,7 @@ Refer to the following code example for consuming Web API data using DataManager
 
 {% highlight html %}
 
-&lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Adaptor="WebApiAdaptor"/&gt;
+<ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Adaptor="WebApiAdaptor"/>
 
 
 
@@ -205,34 +205,34 @@ Refer to the following code example for consuming Web API data using DataManager
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
 {% endhighlight %}
 
 The request to the Web API and response is illustrated as follows.
 
 ![C:/Users/apoorvah.ramanathan/Desktop/1.png](Data-Binding_images/Data-Binding_img5.png)
-{:.image }
+
 
 
 The result for the above code example is illustrated as follows.
 
 ![](Data-Binding_images/Data-Binding_img6.png)
-{:.image }
+
 
 
 Other Web Services binding
@@ -244,9 +244,9 @@ Refer to the following code example to know how the DataManager can be used to c
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="WebService1.asmx/getData"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="WebService1.asmx/getData"/>
 
         <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData" 
 
@@ -254,30 +254,30 @@ Refer to the following code example to know how the DataManager can be used to c
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
 
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 ![](Data-Binding_images/Data-Binding_img7.png)
-{:.image }
+
 
 
 ## Offline Mode
@@ -288,9 +288,9 @@ In the following code example, the offline property of the DataManager is set as
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"/>
 
 
 
@@ -300,32 +300,32 @@ In the following code example, the offline property of the DataManager is set as
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
 
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 The result of the above code example is illustrated as follows.
 
 ![](Data-Binding_images/Data-Binding_img8.png)
-{:.image }
+
 
 
 ## Load on demand
@@ -336,9 +336,9 @@ You can use the following code example for implementing load on demand using Dat
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" CrossDomain="true"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" CrossDomain="true"/>
 
         <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData" 
 
@@ -346,35 +346,35 @@ You can use the following code example for implementing load on demand using Dat
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-    pageIndex: &lt;input id="pageindx" type="text" placeholder="pageindex" /&gt;
+    pageIndex: <input id="pageindx" type="text" placeholder="pageindex" />
 
-    pageSize:  &lt;input id="pagesize" type="text" placeholder="pagesize" /&gt;
+    pageSize:  <input id="pagesize" type="text" placeholder="pagesize" />
 
-    &lt;ej:Button runat="server" Type="Button" Text="Loadondemand" ClientSideOnClick="onClick" ID="submit"&gt;&lt;/ej:Button&gt;
+    <ej:Button runat="server" Type="Button" Text="Loadondemand" ClientSideOnClick="onClick" ID="submit"></ej:Button>
 
 
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server"&gt;
+<asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server">
 
-&lt;script type="text/javascript" class="jsScript"&gt;
+<script type="text/javascript" class="jsScript">
 
     function onClick(e)
 
@@ -398,22 +398,22 @@ You can use the following code example for implementing load on demand using Dat
 
     }
 
-&lt;/script&gt;
+</script>
 
- &lt;/asp:Content&gt;
+ </asp:Content>
 
 {% endhighlight %}
 
 The result of the above code example is illustrated as follows.
 
 ![](Data-Binding_images/Data-Binding_img9.png)
-{:.image }
+
 
 
 The request and the response for the above code is as follows.
 
 ![](Data-Binding_images/Data-Binding_img10.png)
-{:.image }
+
 
 
 ## Custom Request Headers
@@ -424,9 +424,9 @@ You can add custom request headers to every request made by the DataManager by u
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Headers="[{'DataServiceVersion':'1.0','MaxDataServiceVersion':'1.0'}]"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Headers="[{'DataServiceVersion':'1.0','MaxDataServiceVersion':'1.0'}]"/>
 
 
 
@@ -436,30 +436,30 @@ You can add custom request headers to every request made by the DataManager by u
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 The above method generates the request header with custom header as follows.
 
 ![](Data-Binding_images/Data-Binding_img11.png)
-{:.image }
+
 
 
 ## Cross domain & JSONP
@@ -468,9 +468,9 @@ The DataManager contains support for creating cross domain request, you can achi
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" CrossDomain="true"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" CrossDomain="true"/>
 
 
 
@@ -480,23 +480,23 @@ The DataManager contains support for creating cross domain request, you can achi
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
@@ -505,7 +505,7 @@ Result of above code example is illustrated as follows.
 
 
 ![](Data-Binding_images/Data-Binding_img12.png) 
-{:.image }
+
 
 
 ## Html Table
@@ -516,15 +516,15 @@ Refer to the following code example.
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
-    &lt;script id="_table1" type="text/template"&gt;
+    <script id="_table1" type="text/template">
 
-        &lt;table id="datasource" style="display:none"&gt;
+        <table id="datasource" style="display:none">
 
-            &lt;thead&gt;
+            <thead>
 
-                &lt;tr&gt;
+                <tr>
 
                     <th>OrderID</th>
 
@@ -532,49 +532,49 @@ Refer to the following code example.
 
                     <th>CustomerID</th>
 
-                &lt;/tr&gt;
+                </tr>
 
-            &lt;/thead&gt;
+            </thead>
 
-            &lt;tbody&gt;
+            <tbody>
 
-                &lt;tr&gt;<td>10248</td><td>VINET</td><td>5</td>&lt;/tr&gt;
+                <tr><td>10248</td><td>VINET</td><td>5</td></tr>
 
-                &lt;tr&gt;<td>10249</td><td>TOMSP</td><td>6</td>&lt;/tr&gt;
+                <tr><td>10249</td><td>TOMSP</td><td>6</td></tr>
 
-                &lt;tr&gt;<td>10250</td><td>HANAR</td><td>4</td>&lt;/tr&gt;
+                <tr><td>10250</td><td>HANAR</td><td>4</td></tr>
 
-                &lt;tr&gt;<td>10251</td><td>VICTE</td><td>3</td>&lt;/tr&gt;
+                <tr><td>10251</td><td>VICTE</td><td>3</td></tr>
 
-                &lt;tr&gt;<td>10252</td><td>SUPRD</td><td>4</td>&lt;/tr&gt;
+                <tr><td>10252</td><td>SUPRD</td><td>4</td></tr>
 
-            &lt;/tbody&gt;
+            </tbody>
 
-        &lt;/table&gt;
+        </table>
 
-    &lt;/script&gt;
+    </script>
 
-&lt;ej:DataManager ID="FlatData" runat="server" Table="#_table1" /&gt;
+<ej:DataManager ID="FlatData" runat="server" Table="#_table1" />
 
-        &lt;ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData"&gt;
-
-
-
-            &lt;Columns&gt;
-
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
-
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
-
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" /&gt;
+        <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData">
 
 
 
-            &lt;/Columns&gt;
+            <Columns>
 
-        &lt;/ej:Grid&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-&lt;/asp:Content&gt; 
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
+
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" />
+
+
+
+            </Columns>
+
+        </ej:Grid>
+
+</asp:Content> 
 
 {% endhighlight %}
 
@@ -583,6 +583,6 @@ The result of the above code example is illustrated as follows.
 
 
 ![](Data-Binding_images/Data-Binding_img13.png)
-{:.image }
+
 
 

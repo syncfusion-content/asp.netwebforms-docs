@@ -18,24 +18,24 @@ RangeNavigator provides support for you to customize the text display in the too
 
 {% highlight html %}
 
-&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" Locale="fr-FR"&gt;
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" Locale="fr-FR">
 
-&lt;TooltipSettings Visible="True" BackgroundColor="black" TooltipDisplayMode="ondemand"&gt;        
+<TooltipSettings Visible="True" BackgroundColor="black" TooltipDisplayMode="ondemand">        
 
-        &lt;Font Color="red"  Family="Segoe UI" Style="Normal" FontSize="12px"  Opacity="1" Weight="Regular"&gt;&lt;/Font&gt;
+        <Font Color="red"  Family="Segoe UI" Style="Normal" FontSize="12px"  Opacity="1" Weight="Regular"></Font>
 
-&lt;/TooltipSettings&gt;
+</TooltipSettings>
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-&lt;/ej:RangeNavigator&gt;
+</ej:RangeNavigator>
 
 {% endhighlight %}
 
 ![](Tooltip_images/Tooltip_img1.png)
-{:.image }
+
 
 
 ## Label Format
@@ -58,34 +58,34 @@ Some of the LabelFormat for DateTime data are as follows:
 
 
 
-        &lt;ej:RangeNavigator ID="Range1" runat="server"&gt;
+        <ej:RangeNavigator ID="Range1" runat="server">
 
-            &lt;TooltipSettings LabelFormat="MMM, yyyy"&gt;&lt;/TooltipSettings&gt;
-
-            . . . . . . .
+            <TooltipSettings LabelFormat="MMM, yyyy"></TooltipSettings>
 
             . . . . . . .
 
-        &lt;/ej:RangeNavigator&gt;
+            . . . . . . .
+
+        </ej:RangeNavigator>
 
 {% endhighlight %}
 
 
 ![](Tooltip_images/Tooltip_img2.png)
-{:.image }
+
 
 
 ## Tooltip display mode
 
 By default the tooltip for RangeNavigator gets displayed. You can change this behavior using the TooltipDisplayMode property in the tooltip and it takes the following values.
 
-_Table_ _1_: Tooltip values_
+_Table_ _1_: _Tooltip values_
 
 <table>
 <tr>
-<td>
-Value</td><td>
-Description</td></tr>
+<th>
+Value</th><th>
+Description</th></tr>
 <tr>
 <td>
 always</td><td>
@@ -99,21 +99,21 @@ Tooltip get displayed only when we move the slider.</td></tr>
 
 {% highlight html %}
 
-&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" Locale="fr-FR"&gt;
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" Locale="fr-FR">
 
-&lt;TooltipSettings Visible="True" TooltipDisplayMode="ondemand"&gt;   
+<TooltipSettings Visible="True" TooltipDisplayMode="ondemand">   
 
-&lt;/TooltipSettings&gt;
+</TooltipSettings>
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-&lt;/ej:RangeNavigator&gt;
+</ej:RangeNavigator>
 
 {% endhighlight %}
 
 ![](Tooltip_images/Tooltip_img3.png) 
-{:.image }
+
 
 

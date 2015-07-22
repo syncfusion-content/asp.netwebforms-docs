@@ -14,10 +14,10 @@ The server side events present in the ColorPicker control are as follows.
 
 <table>
 <tr>
-<td>
-Event Name</td><td>
-Description</td><td>
-Arguments</td></tr>
+<th>
+Event Name</th><th>
+Description</th><th>
+Arguments</th></tr>
 <tr>
 <td>
 OnSelect</td><td>

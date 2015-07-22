@@ -99,7 +99,7 @@ Define the style for the Rotator control.
 {% highlight css %}
 
 
-        #&lt;%=sliderContent.ClientID%&gt; > li .image {
+        #<%=sliderContent.ClientID%> > li .image {
 
             width: 600px;
 
@@ -114,6 +114,6 @@ Define the style for the Rotator control.
 The following screenshot displays the output of the above code example.
 
 ![](Thumbnail_images/Thumbnail_img1.png)
-{:.image }
+
 
 
