@@ -94,9 +94,9 @@ _Exporting modes_
 
 <table>
 <tr>
-<th>
-Modes</th><th>
-Description</th></tr>
+<td>
+Modes</td><td>
+Description</td></tr>
 <tr>
 <td>
 Download</td><td>
@@ -116,9 +116,9 @@ _Diagram Region_
 
 <table>
 <tr>
-<th>
-Regions</th><th>
-Description</th></tr>
+<td>
+Regions</td><td>
+Description</td></tr>
 <tr>
 <td>
 Content</td><td>
@@ -134,8 +134,7 @@ Format specifies the type/format of the exported file.
 
 It includes jpg, png, bmp, and svg.
 
- ![](Exporting_images/Exporting_img1.png)
-
-
+ ![](Exporting_images/Exporting_img1.png) 
+{:.image }
 
 

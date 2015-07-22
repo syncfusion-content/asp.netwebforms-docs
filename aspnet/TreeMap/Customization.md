@@ -32,19 +32,19 @@ You can color, all the leaf nodes with the same color by setting the color value
 
 {% highlight html %}
 
+ [ASPX]
 
+&lt;ej:Treemap ID="treemap" runat="server" &gt;
 
-<ej:Treemap ID="treemap" runat="server" >
+        &lt;TreeMapUniColorMapping Color = "#D73028"&gt;&lt;/TreeMapUniColorMapping&gt;
 
-        <TreeMapUniColorMapping Color = "#D73028"></TreeMapUniColorMapping>
-
-</ej:Treemap>
+&lt;/ej:Treemap&gt;
 
 {% endhighlight  %}
 
 
-![](Customization_images/Customization_img1.png)  
-
+![](Customization_images/Customization_img1.png) 
+{:.image }
 
 
 Range Color Mapping
@@ -58,31 +58,33 @@ You can group the leaf nodes based on the range of the data’s color values. Yo
 
 {% highlight html %}
 
+[ASP]
+
+[ASPX]
+
+&lt;ej:Treemap ID="treemap" runat="server"&gt;
 
 
-<ej:Treemap ID="treemap" runat="server">
 
+         &lt;TreeMapRangeColorMappings&gt;
 
+             &lt;ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
 
-         <TreeMapRangeColorMappings>
+             &lt;ej:TreeMapRangeColorMapping Color = "#AED960" Legendlabel = "2% Growth" From = "0" To = "2"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
 
-             <ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"></ej:TreeMapRangeColorMapping>
+             &lt;ej:TreeMapRangeColorMapping Color = "#FFAF51" Legendlabel = "3% Growth" From = "0" To = "3"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
 
-             <ej:TreeMapRangeColorMapping Color = "#AED960" Legendlabel = "2% Growth" From = "0" To = "2"></ej:TreeMapRangeColorMapping>
+             &lt;ej:TreeMapRangeColorMapping Color = "#F3D240" Legendlabel = "4% Growth" From = "0" To = "4"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
 
-             <ej:TreeMapRangeColorMapping Color = "#FFAF51" Legendlabel = "3% Growth" From = "0" To = "3"></ej:TreeMapRangeColorMapping>
+        &lt;/TreeMapRangeColorMappings&gt;
 
-             <ej:TreeMapRangeColorMapping Color = "#F3D240" Legendlabel = "4% Growth" From = "0" To = "4"></ej:TreeMapRangeColorMapping>
-
-        </TreeMapRangeColorMappings>
-
-</ej:Treemap>
+&lt;/ej:Treemap&gt;
 
 
 {% endhighlight  %}
 
 ![](Customization_images/Customization_img2.png) 
- 
+{:.image }
 
 
 Desaturation Color Mapping
@@ -96,18 +98,22 @@ You can differentiate all the leaf nodes using the DesaturationColorMapping prop
 
 {% highlight html %}
 
-<ej:TreeMap ID="treemap" runat="server">
+[ASP]
 
-<TreeMapDesaturationColorMapping From = "1" To ="0.5" Color="#41B8C4" RangeMinimum="2000" RangeMaximum = "8000">
+[ASPX]
 
-        </TreeMapDesaturationColorMapping>
+&lt;ej:TreeMap ID="treemap" runat="server"&gt;
 
-</ej:TreeMap>
+&lt;TreeMapDesaturationColorMapping From = "1" To ="0.5" Color="#41B8C4" RangeMinimum="2000" RangeMaximum = "8000"&gt;
+
+        &lt;/TreeMapDesaturationColorMapping&gt;
+
+&lt;/ej:TreeMap&gt;
 
 {% endhighlight %}
 
-![](Customization_images/Customization_img3.png)
 
+![](Customization_images/Customization_img3.png)
 
 
 Tooltip
@@ -123,6 +129,9 @@ You can customize the Leaf level TreeMapitems using LeafItemsSetting. The Label 
 
 {% highlight html %}
 
+[ASP]
+
+[ASPX.CS]
 
   protected void Page_Load(object sender, EventArgs e)
 
@@ -134,49 +143,49 @@ You can customize the Leaf level TreeMapitems using LeafItemsSetting. The Label 
 
         }
 
+ [ASPX]
 
 
 
-<div style="min-height:404px">
+&lt;div style="min-height:404px"&gt;
 
-    <ej:Treemap ID="treemap" runat="server" ColorValuePath = "Growth" WeightValuePath = "Population" ShowLegend = "true" >
+    &lt;ej:Treemap ID="treemap" runat="server" ColorValuePath = "Growth" WeightValuePath = "Population" ShowLegend = "true" &gt;
 
-       <TreeMapLegend IconHeight = "17" IconWidth = "17"></TreeMapLegend>
+       &lt;TreeMapLegend IconHeight = "17" IconWidth = "17"&gt;&lt;/TreeMapLegend&gt;
 
-        <LeafItemSettings LabelPath = "Country"></LeafItemSettings>
-
-
-
-         <TreeMapRangeColorMappings>
-
-             <ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"></ej:TreeMapRangeColorMapping>
-
-             <ej:TreeMapRangeColorMapping Color = "#AED960" Legendlabel = "2% Growth" From = "0" To = "2"></ej:TreeMapRangeColorMapping>
-
-             <ej:TreeMapRangeColorMapping Color = "#FFAF51" Legendlabel = "3% Growth" From = "0" To = "3"></ej:TreeMapRangeColorMapping>
-
-             <ej:TreeMapRangeColorMapping Color = "#F3D240" Legendlabel = "4% Growth" From = "0" To = "4"></ej:TreeMapRangeColorMapping>
-
-        </TreeMapRangeColorMappings>
+        &lt;LeafItemSettings LabelPath = "Country"&gt;&lt;/LeafItemSettings&gt;
 
 
 
-        <Levels>
+         &lt;TreeMapRangeColorMappings&gt;
 
-            <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25"></ej:TreeMapLevel>
+             &lt;ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
 
-        </Levels>
+             &lt;ej:TreeMapRangeColorMapping Color = "#AED960" Legendlabel = "2% Growth" From = "0" To = "2"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
+
+             &lt;ej:TreeMapRangeColorMapping Color = "#FFAF51" Legendlabel = "3% Growth" From = "0" To = "3"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
+
+             &lt;ej:TreeMapRangeColorMapping Color = "#F3D240" Legendlabel = "4% Growth" From = "0" To = "4"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
+
+        &lt;/TreeMapRangeColorMappings&gt;
 
 
 
-    </ej:Treemap>
+        &lt;Levels&gt;
 
-    </div>
+            &lt;ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25"&gt;&lt;/ej:TreeMapLevel&gt;
+
+        &lt;/Levels&gt;
+
+
+
+    &lt;/ej:Treemap&gt;
+
+    &lt;/div&gt;
 
 
 {% endhighlight %}
+
 ![](Customization_images/Customization_img4.png)
-
-
 
 

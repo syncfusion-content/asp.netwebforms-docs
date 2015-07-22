@@ -1,3 +1,5 @@
+---
+layout: post
 title: Keyboard-Navigation
 description: keyboard navigation
 platform: aspnet
@@ -13,9 +15,9 @@ The following table illustrates the accessible keys and their usage
 
 <table>
 <tr>
-<th>
-Keys</th><th>
-Behavior</th></tr>
+<td>
+Keys</td><td>
+Behavior</td></tr>
 <tr>
 <td>
 Up</td><td>
@@ -118,5 +120,6 @@ $("#<%=dishtype.ClientID%> ul a").focus();
 The following screenshot illustrates the Tab with keyboard navigation.
 
 ![](Keyboard-Navigation_images/Keyboard-Navigation_img1.png) 
+{:.image }
 
 

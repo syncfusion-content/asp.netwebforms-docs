@@ -17,9 +17,9 @@ _Table: List of default English localization User Interface based on French cult
 
 <table>
 <tr>
-<th>
-KEYWORDS</th><th>
-VALUES</th></tr>
+<td>
+KEYWORDS</td><td>
+VALUES</td></tr>
 <tr>
 <td>
 Column</td><td>
@@ -215,10 +215,11 @@ The following code example shows how to localize OLAP Client’s User Interface 
 
 {% highlight html %}
 
+[ASP.NET]
 
-<ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc" Locale="fr-FR">
+&lt;ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc" Locale="fr-FR"&gt;
 
-</ej:OlapClient>
+&lt;/ej:OlapClient&gt;
 
 {% endhighlight  %}
 
@@ -227,7 +228,9 @@ The following code example shows how to localize OLAP Client’s User Interface 
 
 {% highlight html%}
 
-<script type="text/javascript">
+[HTML]    
+
+&lt;script type="text/javascript"&gt;
 
     {
 
@@ -349,7 +352,7 @@ The following code example shows how to localize OLAP Client’s User Interface 
 
   }
 
- </script>           
+ &lt;/script&gt;           
 
 {% endhighlight  %}
 
@@ -364,6 +367,7 @@ To apply control side localization, use the following code example.
 
 {% highlight html %}
 
+[HTML]
 
  ej.olap.OlapClient.locale["zh-CN"] = {
 
@@ -382,6 +386,7 @@ To get the localized Cube information, set LocaleIdentifier__in the connection 
 
 {% highlight C# %}
 
+[C#]
 
 //1036 refers to“fr-FR” culture.
 
@@ -401,6 +406,6 @@ The following screenshot shows the OLAP Client with French localization.
 
 
  ![Description: http://help.syncfusion.com/ug/js/ImagesExt/image49_140.png](Localization_images/Localization_img2.png) 
-
+{:.image }
 
 

@@ -11,10 +11,10 @@ documentation: ug
 
 <table>
 <tr>
-<th>
-Event Name</th><th>
-Description</th><th>
-Parameters</th></tr>
+<td>
+Event Name</td><td>
+Description</td><td>
+Parameters</td></tr>
 <tr>
 <td>
 OnItemClick</td><td>

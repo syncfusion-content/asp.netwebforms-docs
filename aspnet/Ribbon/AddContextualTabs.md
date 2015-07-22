@@ -7,7 +7,7 @@ control: Ribbon
 documentation: ug
 ---
 
-## AddContextualTabs
+# AddContextualTabs
 
 This method is used to add contextual tabs dynamically.This method has two arguments _addContextualTabs(Contextualtabs,index)_
 
@@ -18,11 +18,8 @@ This method is used to add contextual tabs dynamically.This method has two argum
 
 {% highlight html %}
 
-[ASP.NET]
 
 
-
-[ASPX]
 
 <ej:Ribbon ID="Defaultribbon" runat="server" Width="800">
 
@@ -122,8 +119,7 @@ ribbonObj.addContextualTabs(contextualTab, 2);
 
 The following screenshot displays the output of the above code example.
 
-{ ![C:/Users/Giftline/Desktop/a.png](AddContextualTabs_images/AddContextualTabs_img1.png) | markdownify }
-{:.image }
+![C:/Users/Giftline/Desktop/a.png](AddContextualTabs_images/AddContextualTabs_img1.png)
 
 
 

@@ -13,10 +13,10 @@ The following server side even_ts_ are available in the__DateTimePicker control.
 
 <table>
 <tr>
-<th>
-Event</th><th>
-Event Description</th><th>
-Event Description</th></tr>
+<td>
+Event</td><td>
+Event Description</td><td>
+Event Description</td></tr>
 <tr>
 <td>
 OnFocusOut</td><td>

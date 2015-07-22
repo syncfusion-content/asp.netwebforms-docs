@@ -7,25 +7,27 @@ control: Schedule
 documentation: ug
 ---
 
-## MVVM
+# MVVM
 
-Angular JS
+##Angular JS
 
 * Schedule contains angular support. You can add object as well as array object in the Schedule.
 * The two way binding support is given to the currentView, currentDate and datasource properties. 
 * ej-Schedule is the control tag in which ej is tag prefix and Schedule is the control name.
 
-Rendering the Schedule
+##Rendering the Schedule
 
 You can render the Schedule by using the following code example. Object in the array collection such as appointmentSetting, contextMenuSettings, etc. are extended with hyphen in the same tag.
 
 Example: e-contextMenuSettings-enable.
 
-&lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
+{% highlight html %}
 
-&lt;div ng-app="syncApp"&gt;
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
 
-&lt;div ng-controller="ScheduleCtrl"&gt;
+<div ng-app="syncApp">
+
+<div ng-controller="ScheduleCtrl">
 
 <ej-Schedule style="float: left" id="Schedule1"
 
@@ -53,55 +55,58 @@ e-currentdate="setDate" e-contextMenuSettings-enable="true">
 
 
 
-&lt;/ej-Schedule&gt;
+</ej-Schedule>
 
-&lt;/div&gt;
+</div>
 
-&lt;/div&gt;
+</div>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-Adding Context menu settings
+{% endhighlight %}
+
+##Adding Context menu settings
 
 * Context menu is an object type that has inner array object. 
 * contextMenuSettings contains an object called menuItem.
 * Menu item has two types of array objects for cells and appointment respectively.
 
-&lt;!--To Render the Schedule--&gt;
+{% highlight html %}
+<!--To Render the Schedule-->
 
 
 
-&lt;ej-Schedule style="float: left" id="Schedule1"&gt;
+<ej-Schedule style="float: left" id="Schedule1">
 
 
 
-&lt;!--Adding content menu item for appointment --&gt;
+<!--Adding content menu item for appointment -->
 
 
 
-&lt;e-contextMenuSettings-menuItems-appointment&gt;
+<e-contextMenuSettings-menuItems-appointment>
 
-&lt; e-appointment e-id="open" e-text="Open Appointment"&gt;&lt;/ e-appointment&gt;
+< e-appointment e-id="open" e-text="Open Appointment"></ e-appointment>
 
-&lt; e-appointment e-id="delete" e-text="Delete Appointment"&gt;&lt;/ e-appointment&gt;
+< e-appointment e-id="delete" e-text="Delete Appointment"></ e-appointment>
 
-&lt; e-appointment e-id="categorize" e-text="Delete Appointment"&gt;
+< e-appointment e-id="categorize" e-text="Delete Appointment">
 
-&lt;/ e-appointment&gt;
+</ e-appointment>
 
-&lt;/e-contextMenuSettings-menuItems-appointment&gt;
+</e-contextMenuSettings-menuItems-appointment>
 
 
 
-&lt;!--Adding content menu item for cells --&gt;
+<!--Adding content menu item for cells -->
 
-&lt;e-contextMenuSettings-menuItems-cells&gt;
+<e-contextMenuSettings-menuItems-cells>
 
 <e-contextMenuSettings-menuItems-cell
 
 e-id="new" e-text="Create New Appointment">
 
-&lt;/e-contextMenuSettings-menuItems-cell&gt;
+</e-contextMenuSettings-menuItems-cell>
 
 
 
@@ -109,23 +114,26 @@ e-id="new" e-text="Create New Appointment">
 
 e-id="recurrence" e-text="Create recurrence Appointment">
 
-&lt;/e-contextMenuSettings-menuItems-cell&gt;
+</e-contextMenuSettings-menuItems-cell>
 
 
 
-&lt;/e-contextMenuSettings-menuItems-cells&gt;
+</e-contextMenuSettings-menuItems-cells>
 
 
 
-&lt;/ej-Schedule&gt;
+</ej-Schedule>
 
-Adding Categorize option
+{% endhighlight %}
+
+##Adding Categorize option
 
 * Categorizeoption is an array object. 
 * contextMenuSettings contains an object called menuItem.
 * Menu item has two types of array objects for cells and appointment respectively.
 
-&lt;!--To Render the Schedule--&gt;
+{% highlight html %}
+<!--To Render the Schedule-->
 
 
 
@@ -139,25 +147,25 @@ e-categorizesetting-fontcolor="fontcolor" e-categorizesetting-id="id">
 
 
 
-&lt;!--Adding content menu item for appointment --&gt;
+<!--Adding content menu item for appointment -->
 
-&lt;e-contextMenuSettings-menuItems-appointment&gt;
+<e-contextMenuSettings-menuItems-appointment>
 
-&lt;/e-contextMenuSettings-menuItems-appointment&gt;
-
-
-
-&lt;!--Adding content menu item for cells --&gt;
+</e-contextMenuSettings-menuItems-appointment>
 
 
 
-&lt;e-contextMenuSettings-menuItems-cells&gt;
-
-&lt;/e-contextMenuSettings-menuItems-cells&gt;
+<!--Adding content menu item for cells -->
 
 
 
-&lt;e-categorizesetting-datasource&gt;
+<e-contextMenuSettings-menuItems-cells>
+
+</e-contextMenuSettings-menuItems-cells>
+
+
+
+<e-categorizesetting-datasource>
 
 
 
@@ -165,7 +173,7 @@ e-categorizesetting-fontcolor="fontcolor" e-categorizesetting-id="id">
 
 color="Blue" fontcolor="Red" id="1">
 
-&lt;/e-categorizesetting-datasource&gt;
+</e-categorizesetting-datasource>
 
 
 
@@ -173,7 +181,7 @@ color="Blue" fontcolor="Red" id="1">
 
 color="yellow" fontcolor="Red" id="2">
 
-&lt;/e-categorizesetting-datasource&gt;
+</e-categorizesetting-datasource>
 
 
 
@@ -181,7 +189,7 @@ color="yellow" fontcolor="Red" id="2">
 
 fontcolor="Red" id="3">
 
-&lt;/e-categorizesetting-datasource&gt;
+</e-categorizesetting-datasource>
 
 
 
@@ -189,55 +197,54 @@ fontcolor="Red" id="3">
 
 fontcolor="Red" id="4">
 
-&lt;/e-categorizesetting-datasource&gt;
+</e-categorizesetting-datasource>
 
 
 
-&lt;/e-categorizesetting-datasource&gt;
+</e-categorizesetting-datasource>
 
 
 
-&lt;/ej-Schedule&gt;
+</ej-Schedule>
 
 
 
-
+{% endhighlight %}
 
 Execute the above codes to render the Resultant schedule as follows.
 
-{ ![](MVVM_images/MVVM_img1.png) | markdownify }
-{:.image }
+![](MVVM_images/MVVM_img1.png)
 
 
-Two Way Binding 
+##Two Way Binding 
 
 * Schedule control supports two way binding for the property currentView , currentDate and datasource as mentioned earlier. 
 * [Click here](http://asp.syncfusion.com/demos/web/schedule/angular.aspx) to see how Angular JS works with schedule.
 * The following code example explains how to achieve the two way binding to the Schedule control.
 
 
+{% highlight html %}
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
 
-&lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
+<div ng-app="syncApp">
 
-&lt;div ng-app="syncApp"&gt;
+<div ng-controller="ScheduleCtrl">
 
-&lt;div ng-controller="ScheduleCtrl"&gt;
-
-&lt;div&gt;
+<div>
 
 Current View
 
-&lt;/div&gt;
+</div>
 
-&lt;input id="ddlView" ej-dropdownlist e-datasource="dataList" e-value="drpvalue" e-width="107px" /&gt;
+<input id="ddlView" ej-dropdownlist e-datasource="dataList" e-value="drpvalue" e-width="107px" />
 
-&lt;div&gt;
+<div>
 
 Current Date
 
-&lt;/div&gt;
+</div>
 
-&lt;input id="datepick1" ej-datepicker e-value="setDate" e-width="107px" /&gt;
+<input id="datepick1" ej-datepicker e-value="setDate" e-width="107px" />
 
 
 
@@ -269,63 +276,63 @@ e-categorizesetting-text="text" e-categorizesetting-color="color"
 
 e-categorizesetting-fontcolor="fontcolor" e-categorizesetting-id="id">
 
-&lt;e-categorizesetting-datasource&gt;
+<e-categorizesetting-datasource>
 
-&lt;e-categorizesetting-datasource text="Blue category" color="Blue" fontcolor="Red" id="1"&gt;&lt;/e-categorizesetting-datasource&gt;
+<e-categorizesetting-datasource text="Blue category" color="Blue" fontcolor="Red" id="1"></e-categorizesetting-datasource>
 
-&lt;e-categorizesetting-datasource text="yellow category" color="yellow" fontcolor="Red" id="2"&gt;&lt;/e-categorizesetting-datasource&gt;
+<e-categorizesetting-datasource text="yellow category" color="yellow" fontcolor="Red" id="2"></e-categorizesetting-datasource>
 
-&lt;e-categorizesetting-datasource text="red category" color="red" fontcolor="Red" id="3"&gt;&lt;/e-categorizesetting-datasource&gt;
+<e-categorizesetting-datasource text="red category" color="red" fontcolor="Red" id="3"></e-categorizesetting-datasource>
 
-&lt;e-categorizesetting-datasource text="orange category" color="orange" fontcolor="Red" id="4"&gt;&lt;/e-categorizesetting-datasource&gt;
+<e-categorizesetting-datasource text="orange category" color="orange" fontcolor="Red" id="4"></e-categorizesetting-datasource>
 
-&lt;/e-categorizesetting-datasource&gt;
+</e-categorizesetting-datasource>
 
-&lt;e-contextMenuSettings-menuItems-appointment&gt;             &lt;appointment e-id="open" e-text="Open Appointment"&gt;&lt;/appointment&gt;
+<e-contextMenuSettings-menuItems-appointment>             <appointment e-id="open" e-text="Open Appointment"></appointment>
 
-&lt;appointment e-id="delete" e-text="Delete Appointment"&gt;&lt;/appointment&gt;
+<appointment e-id="delete" e-text="Delete Appointment"></appointment>
 
-&lt;/e-contextMenuSettings-menuItems-appointment&gt;
+</e-contextMenuSettings-menuItems-appointment>
 
-&lt;e-contextMenuSettings-menuItems-cells&gt;
+<e-contextMenuSettings-menuItems-cells>
 
 <e-contextMenuSettings-menuItems-cell
 
 e-id="new" e-text="Create New Appointment">
 
-&lt;/e-contextMenuSettings-menuItems-cell&gt;
+</e-contextMenuSettings-menuItems-cell>
 
 <e-contextMenuSettings-menuItems-cell
 
 e-id="recurrence" e-text="Create recurrence Appointment">
 
-&lt;/e-contextMenuSettings-menuItems-cell&gt;
+</e-contextMenuSettings-menuItems-cell>
 
 <e-contextMenuSettings-menuItems-cell
 
 e-id="today" e-text="Today">
 
-&lt;/e-contextMenuSettings-menuItems-cell&gt;
+</e-contextMenuSettings-menuItems-cell>
 
 <e-contextMenuSettings-menuItems-cell
 
 e-id="gotodate" -text="Go to date">
 
-&lt;/e-contextMenuSettings-menuItems-cell&gt;
+</e-contextMenuSettings-menuItems-cell>
 
-&lt;/e-contextMenuSettings-menuItems-cells&gt;
+</e-contextMenuSettings-menuItems-cells>
 
-&lt;/ej-Schedule&gt;
+</ej-Schedule>
 
-&lt;/div&gt;
+</div>
 
-&lt;/div&gt;
+</div>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;script&gt;
+<script>
 
-&lt;!—binding the value to the scope variables in application controller--&gt;
+<!—binding the value to the scope variables in application controller-->
 
 var data = [
 
@@ -357,17 +364,16 @@ $scope.setDate = new Date();
 
 $("#sampleProperties").ejPropertiesPanel();
 
-&lt;/script&gt;
+</script>
 
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
-{ ![](MVVM_images/MVVM_img2.png) | markdownify }
-{:.image }
+![](MVVM_images/MVVM_img2.png)
 
 
-Knockout binding
+##Knockout binding
 
 * Knockoutsupport allows you to bind the html elements against the available data models.Two types of knockoutbinding are supported,
 1. one-way binding
@@ -383,38 +389,41 @@ Knockout binding
 
 
 
+{% highlight html %}
 
-[ASP]
 
-&lt;asp:Content ID="Content1" ContentPlaceHolderID="SampleHeading" runat="server"&gt;
+
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SampleHeading" runat="server">
 
 <span class="sampleName">Schedule / Knockout Binding</span>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 
 
-&lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
 
-&lt;div&gt;
+<div>
 
-&lt;div style="float: left" id="Schedule1" data-bind="ejSchedule: { width: '100%', height: '525px', appointmentSettings: { dataSource: appointments, id: 'Id', subject: 'Subject', location: 'Location', description: 'Description', startTime: 'StartTime', endTime: 'EndTime', allDay: 'AllDay', recurrence: 'Recurrence', recurrenceRule: 'RecurrenceRule' }, currentView: view, currentDate: date }"&gt;
+<div style="float: left" id="Schedule1" data-bind="ejSchedule: { width: '100%', height: '525px', appointmentSettings: { dataSource: appointments, id: 'Id', subject: 'Subject', location: 'Location', description: 'Description', startTime: 'StartTime', endTime: 'EndTime', allDay: 'AllDay', recurrence: 'Recurrence', recurrenceRule: 'RecurrenceRule' }, currentView: view, currentDate: date }">
 
-&lt;/div&gt;
+</div>
 
-&lt;/div&gt;
+</div>
 
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
 
-SelectCommand="SELECT * FROM [Localization]">&lt;/asp:SqlDataSource&gt;
+SelectCommand="SELECT * FROM [Localization]"></asp:SqlDataSource>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 
 
-&lt;asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection"&gt;
+<asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
 $(function () {
 
@@ -454,61 +463,61 @@ $("#sampleProperties").ejPropertiesPanel();
 
 });
 
-&lt;/script&gt;
+</script>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content ID="Content2" runat="server" ContentPlaceHolderID="PropertySection"&gt;
+<asp:Content ID="Content2" runat="server" ContentPlaceHolderID="PropertySection">
 
-&lt;div id="sampleProperties"&gt;
+<div id="sampleProperties">
 
-&lt;div class="row"&gt;
+<div class="row">
 
-&lt;div class="col-md-3"&gt;
+<div class="col-md-3">
 
 Current View
 
-&lt;/div&gt;
+</div>
 
-&lt;div class="row"&gt;&lt;/div&gt;
+<div class="row"></div>
 
-&lt;div class="col-md-3"&gt;
+<div class="col-md-3">
 
-&lt;input type="text" name="view" value="" style="width: 100px" data-bind="value: view" /&gt;
+<input type="text" name="view" value="" style="width: 100px" data-bind="value: view" />
 
-&lt;/div&gt;
+</div>
 
-&lt;div class="row"&gt;&lt;/div&gt;
+<div class="row"></div>
 
-&lt;/div&gt;
+</div>
 
-&lt;div class="row"&gt;
+<div class="row">
 
-&lt;div class="col-md-3"&gt;
+<div class="col-md-3">
 
 Current Date
 
-&lt;/div&gt;
+</div>
 
-&lt;div class="col-md-3"&gt;&lt;/div&gt;
+<div class="col-md-3"></div>
 
-&lt;div class="col-md-3"&gt;
+<div class="col-md-3">
 
-&lt;input id="datepick" data-bind="ejDatePicker: { value: date, width: '107px' }" /&gt;
+<input id="datepick" data-bind="ejDatePicker: { value: date, width: '107px' }" />
 
-&lt;/div&gt;
+</div>
 
-&lt;div class="col-md-3"&gt;&lt;/div&gt;
+<div class="col-md-3"></div>
 
-&lt;/div&gt;
+</div>
 
-&lt;/div&gt;
+</div>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content ID="styleSection" ContentPlaceHolderID="StyleSection" runat="server"&gt;
+<asp:Content ID="styleSection" ContentPlaceHolderID="StyleSection" runat="server">
 
-&lt;style type="text/css"&gt;
+<style type="text/css">
 
 b {
 
@@ -516,15 +525,14 @@ white-space: nowrap;
 
 }
 
-&lt;/style&gt;
+</style>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-
+{% endhighlight %}
 
 Output of the above code example is as follows.
 
-{ ![](MVVM_images/MVVM_img3.png) | markdownify }
-{:.image }
+![](MVVM_images/MVVM_img3.png)
 Figure 134: Schedule with Knockout Binding
 

@@ -21,11 +21,11 @@ _Field properties_
 
 <table>
 <tr>
-<th>
-Name</th><th>
-Type</th><th>
-Default</th><th>
-Description</th></tr>
+<td>
+Name</td><td>
+Type</td><td>
+Default</td><td>
+Description</td></tr>
 <tr>
 <td>
 DataSource</td><td>
@@ -154,8 +154,9 @@ Diagram.Model.DefaultSettings.Connector = new Connector() {
 {% endhighlight %}
 
 
- ![](Data-Binding_images/Data-Binding_img1.png)  
 
+ ![](Data-Binding_images/Data-Binding_img1.png) 
+{:.image }
 
 
 ## Remote Data
@@ -252,7 +253,10 @@ $(window).load(function () {
 
 {% endhighlight %}
 
- ![](Data-Binding_images/Data-Binding_img2.png)  
+
+
+ ![](Data-Binding_images/Data-Binding_img2.png) 
+{:.image }
 
 
 ### Root
@@ -277,9 +281,10 @@ Diagram.Model.DataSourceSettings.Id = "Id";
 
 {% endhighlight %}
 
-![](Data-Binding_images/Data-Binding_img3.png)' 
 
 
+![](Data-Binding_images/Data-Binding_img3.png) 
+{:.image }
 
 
 ## SQL data for ASP.NET
@@ -328,7 +333,7 @@ The following code example illustrates how to create SQL binding.
 The following screenshot illustrates the SQL binding.
 
  ![](Data-Binding_images/Data-Binding_img4.png) 
-
+{:.image }
 
 
 ## HTML Binding
@@ -521,7 +526,9 @@ Diagram.Model.DataSourceSettings.Id = "Id";
 
 {% endhighlight %}
 
-![](Data-Binding_images/Data-Binding_img5.png)  
 
+
+![](Data-Binding_images/Data-Binding_img5.png) 
+{:.image }
 
 

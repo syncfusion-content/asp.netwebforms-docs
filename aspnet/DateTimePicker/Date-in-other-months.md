@@ -30,6 +30,6 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 
 ![](Date-in-other-months_images/Date-in-other-months_img1.png) 
-
+{:.image }
 
 

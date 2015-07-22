@@ -7,9 +7,9 @@ control: Ribbon
 documentation: ug
 ---
 
-## Collapse and Expand
+# Collapse and Expand
 
-### Collapse
+## Collapse
 
 _Collapse_ method is used to minimize the ribbon control tab contents.You can minimize the_Ribbon_ tab content by using the client side method _collapse()._
 
@@ -17,11 +17,8 @@ _Collapse_ method is used to minimize the ribbon control tab contents.You can mi
 
 {% highlight html %}
 
-[ASP.NET]
 
 
-
-[ASPX]
 
 <ej:Ribbon ID="Defaultribbon" runat="server" Width="800">
 
@@ -103,11 +100,10 @@ ribbonObj.collapse();
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Collapse-and-Expand_images/Collapse-and-Expand_img1.png) | markdownify }
-{:.image }
+![](Collapse-and-Expand_images/Collapse-and-Expand_img1.png)
 
 
-### Expand
+## Expand
 
 
 
@@ -117,11 +113,8 @@ _Expand_ method is used to expand the minimized ribbon control tab contents.You 
 
 {% highlight html %}
 
-[ASP.NET]
 
 
-
-[ASPX]
 
 <ej:Ribbon ID="Defaultribbon" runat="server" Width="800">
 
@@ -199,7 +192,6 @@ ribbonObj.expand();
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Collapse-and-Expand_images/Collapse-and-Expand_img2.png) | markdownify }
-{:.image }
+![](Collapse-and-Expand_images/Collapse-and-Expand_img2.png)
 
 

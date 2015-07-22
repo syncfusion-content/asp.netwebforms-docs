@@ -15,10 +15,10 @@ The server side events present in the NumericTextbox control are as follows.
 
 <table>
 <tr>
-<th>
-Event Name</th><th>
-Description</th><th>
-Arguments</th></tr>
+<td>
+Event Name</td><td>
+Description</td><td>
+Arguments</td></tr>
 <tr>
 <td>
 OnFocusOut</td><td>

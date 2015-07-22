@@ -7,7 +7,7 @@ control: TreeView
 documentation: ug
 ---
 
-# Load on Demand
+## Load on Demand
 
 Load on Demand option is useful when the full content of the TreeView is too large to be loaded completely, up front. The mechanism lets the nodes load their child nodes as you expand the parent by clicking the expand icon. While clicking on the parent node it first loads their particular child nodes and then loads the first level of nodes.
 
@@ -175,6 +175,9 @@ public partial class LoadOnDemand : System.Web.UI.Page
 
 {% endhighlight %}
 
-![](Load-on-Demand_images/Load-on-Demand_img1.png)  
+
+
+{ ![](Load-on-Demand_images/Load-on-Demand_img1.png) | markdownify }
+{:.image }
 
 

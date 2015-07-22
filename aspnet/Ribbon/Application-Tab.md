@@ -7,7 +7,7 @@ control: Ribbon
 documentation: ug
 ---
 
-## Application Tab
+# Application Tab
 
 The_application menu_ support is provided in the _Ribbon_ control _ApplicationTab_. Use _ApplicationTab_ property to define the application tab with menu. In _ApplicationTab_ definition, _Type_ property defines the application menu and the value is _ApplicationMenu_,_ItemID_ property to specify ID of UL list for application menu and _MenuSettings_ tag to specify all the members and events of the menu.
 
@@ -15,9 +15,7 @@ The_application menu_ support is provided in the _Ribbon_ control _ApplicationTa
 
 {% highlight html %}
 
-[ASP]
 
-[Aspx]
 
 
 
@@ -75,7 +73,6 @@ The_application menu_ support is provided in the _Ribbon_ control _ApplicationTa
 
 The following screenshot illustrates _Ribbon_ with application menu.
 
-{ ![](Application-Tab_images/Application-Tab_img1.png) | markdownify }
-{:.image }
+![](Application-Tab_images/Application-Tab_img1.png)
 
 

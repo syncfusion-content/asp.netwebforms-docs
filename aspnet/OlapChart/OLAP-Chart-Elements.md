@@ -7,12 +7,12 @@ control: OLAP Chart
 documentation: ug
 ---
 
-# OLAP Chart: Elements
+## OLAP Chart: Elements
 
 
 
-![](OLAP-Chart-Elements_images/OLAP-Chart-Elements_img1.png) 
-
+{ ![](OLAP-Chart-Elements_images/OLAP-Chart-Elements_img1.png) | markdownify }
+{:.image }
 
 
 * Title: The Chart title is the area on top of the Chart control that displays the text about the OlapChart.

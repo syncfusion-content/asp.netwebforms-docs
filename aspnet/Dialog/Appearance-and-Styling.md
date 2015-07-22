@@ -94,7 +94,7 @@ Customize the CSS class by setting CSS properties.
 The output of Dialog control after customizing the CssClass.
 
 ![C:/Users/ApoorvahR/Desktop/13.png](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
-
+{:.image }
 
 
 

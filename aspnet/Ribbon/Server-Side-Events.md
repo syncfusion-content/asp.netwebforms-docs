@@ -7,9 +7,11 @@ control: Ribbon
 documentation: ug
 ---
 
-## Server Side Events
+# Server Side Events
 
 The server side events for the _Ribbon_ control are as follows.
+
+{% highlight html %}
 
 <table>
 <tr>
@@ -33,7 +35,7 @@ The selected items are passed as arguments.Arguments:1. {{ '_Control ID_' | mark
 The event is triggered when the gallery items get clicked.</td><td>
 The selected items are passed as arguments. Arguments:1. Control ID: selected gallery Item ID. 2. Gallery model.</td></tr>
 </table>
-
+{% endhighlight %}
 
 
 
@@ -44,9 +46,8 @@ The following code example demonstrates how to handle the _TabSelect_event to ge
 
 {% highlight html %}
 
-[ASP.NET]
 
-[ASPX]
+
 
 <ej:Ribbon ID="Ribbon" runat="server" Width="100%" OnTabSelect="OnTabSelect">
 
@@ -108,7 +109,7 @@ Add the following code example in code behind.
 
 {% highlight c# %}
 
-[CS]
+
 
 protected void OnTabSelect(object sender, RibbonEventArgs e)
 

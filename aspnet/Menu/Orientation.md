@@ -144,7 +144,7 @@ In the ASPX page, add the following code example to configure Menu control.
 The following screenshot displays the output of the above code example.        
 
 ![](Orientation_images/Orientation_img1.png) 
-
+{:.image }
 
 
 ## Vertical Menu
@@ -276,6 +276,6 @@ Add the following code example in the ASPX page.
 The following screen shot displays the output of the above code example.                       
 
 ![](Orientation_images/Orientation_img2.png) 
-
+{:.image }
 
 

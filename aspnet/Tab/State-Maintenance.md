@@ -64,10 +64,10 @@ Add the following ASPX for Tab state maintenance.
 The following screenshots illustrate the Tab with State maintenance before and after page refresh.
 
 ![](State-Maintenance_images/State-Maintenance_img1.png) 
+{:.image }
 
 
 ![](State-Maintenance_images/State-Maintenance_img2.png) 
-
-
+{:.image }
 
 

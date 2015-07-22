@@ -17,8 +17,8 @@ ASP.NET Rating helps you to select the number of stars that represent Rating. H
 
 The following screenshot demonstrates the functionality of a Rating control with a Rating range of 0 to 5.
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image82_9.jpg](Getting-Started_images/Getting-Started_img1.jpeg) | markdownify }
-{:.image }
+![http://help.syncfusion.com/ug/js/ImagesExt/image82_9.jpg](Getting-Started_images/Getting-Started_img1.jpeg)
+
 
 
 In the above screenshot, you can rate the movie by selecting a corresponding movie.
@@ -241,17 +241,17 @@ Add the following code example to the corresponding ASPX page to render Ratin
 
 Execute the above code to render the following output.
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image82_9.jpg](Getting-Started_images/Getting-Started_img2.jpeg) | markdownify }
-{:.image }
+![http://help.syncfusion.com/ug/js/ImagesExt/image82_9.jpg](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.jpeg) | markdownify }
-{:.image }
-_Note: Add necessary images to the mentioned directory._
 
-                _&lt;project directory&gt;/Images/rating/yourimage.png_
+![](Getting-Started_images/Getting-Started_img3.jpeg)
 
-### Set Min and Max Value  
+Note: Add necessary images to the mentioned directory.
+
+                _<project directory>/Images/rating/yourimage.png_
+
+## Set Min and Max Value  
 
 In a real-time movie Rating scenario, you can extend the range by using the properties MinValue and MaxValue. Only rates ranging between the MinValueand MaxValue appear in the Rating.
 
@@ -291,11 +291,11 @@ Add the following code example to the corresponding ASPX page to set MinValue
 
  Execute the above code to render the following output.
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
-### Set Precision
+
+## Set Precision
 
 In a real-time movie Rating scenario, you can rate the Rating between two whole numbers, such as 2.5 or 3.7 by using the Precision property. You can also add additional functionalities such as Orientation and APIs to the Rating.
 
@@ -373,7 +373,7 @@ Add the following code example to the corresponding view page to set Precision t
 
 Execute the above code to render the following output.
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
+
 
 

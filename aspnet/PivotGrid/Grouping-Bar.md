@@ -7,23 +7,24 @@ control: PivotGrid
 documentation: ug
 ---
 
-## Grouping Bar
+# Grouping Bar
 
-> _Note: This feature is applicable only for Relational datasource._
+Note: This feature is applicable only for Relational datasource.
 
 The PivotGrid control supports Grouping bar that allows you to filter, sort, and remove members of the relational data loaded in the PivotGrid control. The grouped report can also be changed dynamically by using the drag and drop operations.
 
 The following code example explains on how to enable Grouping bar within the PivotGrid control.
+{% highlight html %}
 
-&lt;ej:PivotGrid ID="PivotGrid1" runat=server url="../wcf/RelationalService.svc"    EnableGroupingBar="true"  ClientIDMode="Static"&gt;
+<ej:PivotGrid ID="PivotGrid1" runat=server url="../wcf/RelationalService.svc"    EnableGroupingBar="true"  ClientIDMode="Static">
 
-    &lt;ClientSideEvents   AfterServiceInvoke="OnAfterServiceInvoke"/&gt;
+    <ClientSideEvents   AfterServiceInvoke="OnAfterServiceInvoke"/>
 
-&lt;/ej:PivotGrid&gt;
+</ej:PivotGrid>
 
-&lt;ej:PivotSchemaDesigner ID="PivotSchemaDesigner" runat=server&gt;
+<ej:PivotSchemaDesigner ID="PivotSchemaDesigner" runat=server>
 
-&lt;/ej:PivotSchemaDesigner&gt;
+</ej:PivotSchemaDesigner>
 
 
 
@@ -52,9 +53,8 @@ OnAfterServiceInvoke = function (evt) {
 
 
 { ![](Grouping-Bar_images/Grouping-Bar_img1.png) | markdownify }
-{:.image }
 
-
+{% endhighlight %}
 
 
 The following operations can be achieved by using the Grouping bar:

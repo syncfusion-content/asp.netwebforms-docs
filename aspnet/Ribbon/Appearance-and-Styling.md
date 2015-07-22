@@ -7,19 +7,15 @@ control: Ribbon
 documentation: ug
 ---
 
-## Appearance and Styling
+# Appearance and Styling
 
-### SelectedItemIndex
+## SelectedItemIndex
 
 Specifies the index of the _Ribbon_ tab to select the given index tab item in the _Ribbon_ control
 
 
-
 {% highlight html %}
 
-[ASP.NET]
-
-[ASPX]
 
 
 
@@ -110,7 +106,6 @@ $(function()
 {
 
 ribbonObj = $("#Defaultribbon").data("ejRibbon");
-
 ribbonObj.option({ selectedItemIndex: 2 });
 
 });
@@ -145,11 +140,10 @@ The following output is displayed as a result of the above code example.
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) | markdownify }
-{:.image }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 
-### DisabledItemIndex
+## DisabledItemIndex
 
 Specifies the index or indexes to disable the corresponding tabs in the _Ribbon_ control.
 
@@ -157,11 +151,8 @@ Specifies the index or indexes to disable the corresponding tabs in the _Ribbon_
 
 {% highlight html %}
 
-[ASP.NET]
 
 
-
-[ASPX]
 
 <ej:Ribbon ID="Defaultribbon" runat="server" Width="800px">
 
@@ -293,11 +284,10 @@ top: -4px;
 
 The following output is displayed as a result of the above code example.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) | markdownify }
-{:.image }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 
-### EnableItemIndex
+## EnableItemIndex
 
 Specifies the index or indexes to enable the corresponding tabs in the _Ribbon_ control.
 
@@ -305,11 +295,8 @@ Specifies the index or indexes to enable the corresponding tabs in the _Ribbon_ 
 
 {% highlight html %}
 
-[ASP.NET]
 
 
-
-[ASPX]
 
 <ej:Ribbon ID="Defaultribbon" runat="server" Width="800px">
 
@@ -433,11 +420,10 @@ top: -4px;
 
 The following output is displayed as a result of the above code example.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) | markdownify }
-{:.image }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 
-### HideTab
+## HideTab
 
 This method is used to hide the given text tab in the _Ribbon_ control.
 
@@ -445,11 +431,8 @@ This method is used to hide the given text tab in the _Ribbon_ control.
 
 {% highlight html %}
 
-[ASP.NET]
 
 
-
-[ASPX]
 
 <ej:Ribbon ID="Defaultribbon" runat="server" Width="800px">
 
@@ -571,11 +554,10 @@ top: -4px;
 
 The following output is displayed as a result of the above code example.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png) | markdownify }
-{:.image }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 
 
-### ShowTab
+## ShowTab
 
 This method is used to show the given text tab in the _Ribbon_ control.
 
@@ -583,11 +565,8 @@ This method is used to show the given text tab in the _Ribbon_ control.
 
 {% highlight html %}
 
-[ASP.NET]
 
 
-
-[ASPX]
 
 <ej:Ribbon ID="Defaultribbon" runat="server" Width="800px">
 
@@ -711,13 +690,12 @@ top: -4px;
 
 The following output is displayed as a result of the above code example.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png) | markdownify }
-{:.image }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
 
 
 
 
-### RemoveTab
+## RemoveTab
 
 This method is used to remove the given index tab item from the _Ribbon_ control.
 
@@ -725,11 +703,8 @@ This method is used to remove the given index tab item from the _Ribbon_ control
 
 {% highlight html %}
 
-[ASP.NET]
 
 
-
-[ASPX]
 
 <ej:Ribbon ID="Defaultribbon" runat="server" Width="800px">
 
@@ -851,11 +826,10 @@ top: -4px;
 
 The following output is displayed as a result of the above code example.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png) | markdownify }
-{:.image }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
 
 
-### Width
+## Width
 
 Specifies the _Width_ to the _Ribbon_ control.
 
@@ -863,11 +837,9 @@ Specifies the _Width_ to the _Ribbon_ control.
 
 {% highlight html %}
 
-[ASP.NET]
 
 
 
-[ASPX]
 
 <ej:Ribbon ID="Defaultribbon" runat="server" Width="800">
 
@@ -971,13 +943,12 @@ top: -4px;
 
 The following output is displayed as a result of the above code example.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img7.png) | markdownify }
-{:.image }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img7.png)
 
 
 
 
-### Add Tab Group
+## Add Tab Group
 
 This method is used to add Ribbon Group dynamically in the _Ribbon_ control. This method needs three arguments _addTabGroup(Tab index, Groupcollection, Group index)_
 
@@ -991,11 +962,9 @@ _Group Index_: Index of ribbon group, where the group is to be added. It is opti
 
 {% highlight html %}
 
-[ASP.NET]
 
 
 
-[ASPX]
 
 <ej:Ribbon ID="Ribbon" ClientIDMode="Static" runat="server" Width="100%">
 
@@ -1099,11 +1068,10 @@ $(function(){
 
 The following output is displayed as a result of the above code example.
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img8.png) | markdownify }
-{:.image }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img8.png)
 
 
-### Add Tab Group Content
+## Add Tab Group Content
 
 This method is used to add group content dynamically in the ribbon. This method contains five arguments _addTabGroupContent(Tab index, Group index, Subgroup index, Content, Content index)_
 
@@ -1121,11 +1089,9 @@ _Content Index_: Ribbon content index, this is optional argument. When this argu
 
 {% highlight html %}
 
-[ASP.NET]
 
 
 
-[ASPX]
 
 <ej:Ribbon ID="Ribbon" ClientIDMode="Static" runat="server" Width="100%">
 
@@ -1207,8 +1173,8 @@ $(function(){
 
 The following output is displayed as a result of the above code example.
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Appearance-and-Styling_images/Appearance-and-Styling_img9.png) | markdownify }
-{:.image }
+![C:/Users/ApoorvahR/Desktop/1.png](Appearance-and-Styling_images/Appearance-and-Styling_img9.png)
+
 
 
 

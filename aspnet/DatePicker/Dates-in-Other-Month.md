@@ -22,7 +22,7 @@ In the ASPX page, include the following DatePicker control code example to acces
 
 {% highlight html %}
 
-<ej:DatePicker ID="datepicker" runat="server"  ShowOtherMonths="false"> </ej:DatePicker>
+&lt;ej:DatePicker ID="datepicker" runat="server"  ShowOtherMonths="false"&gt; &lt;/ej:DatePicker&gt;
 
 {% endhighlight %}
 
@@ -30,6 +30,6 @@ In the ASPX page, include the following DatePicker control code example to acces
 The following screenshot displays the output for the above code.
 
 ![](Dates-in-Other-Month_images/Dates-in-Other-Month_img1.png) 
-
+{:.image }
 
 

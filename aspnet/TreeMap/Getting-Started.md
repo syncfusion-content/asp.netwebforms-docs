@@ -20,7 +20,7 @@ This section explains briefly on how to create a TreeMap in your application.
 You can configure ASP.NET TreeMap in simple steps. This manual provides instructions on how to configure TreeMap with grouping of populated datum based on population growth in population in each continent.  It also provides a walk-through on some of the customization feature available in TreeMap control.
 
 ![](Getting-Started_images/Getting-Started_img1.png)
-
+{:.image }
 
 
 ### Create a simple ASP.Net Application
@@ -35,6 +35,9 @@ TreeMap/ TreeMap.aspx.cs
 
 
 {% highlight C# %}
+
+[TreeMap.aspx.cs]
+
 
 
 
@@ -106,61 +109,61 @@ _Note: Population data is referred from_ [List of continents by population](http
 
 [ASPX]          
 
-    <html xmlns="http://www.w3.org/1999/xhtml">
+    &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 
-<head>
+&lt;head&gt;
 
-	    <title> Getting Started with Maps </title>    
+	    &lt;title&gt; Getting Started with Maps &lt;/title&gt;    
 
-<!--  jquery script  -->
+&lt;!--  jquery script  --&gt;
 
-                <script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
+                &lt;script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"&gt;&lt;/script&gt;
 
 
 
-                <!-- Essential JS UI widget -->
+                &lt;!-- Essential JS UI widget --&gt;
 
                <script src="http://cdn.syncfusion.com/13.1.0.21/js/
 
-ej.widgets.all.min.js"></script>
+ej.widgets.all.min.js">&lt;/script&gt;
 
 
 
-               <!-- JS Render widget -->
+               &lt;!-- JS Render widget --&gt;
 
-               <script src="http://cdn.jsdelivr.net/jsrender/1.0pre35/jsrender.min.js" type="text/javascript"></script>   
+               &lt;script src="http://cdn.jsdelivr.net/jsrender/1.0pre35/jsrender.min.js" type="text/javascript"&gt;&lt;/script&gt;   
 
 
 
-</head>
+&lt;/head&gt;
 
-      <body>
-      </body>
-</html>
+      &lt;body&gt;
+      &lt;/body&gt;
+&lt;/html&gt;
 
 
 {% endhighlight %}
 
-2. Create a <div> tag and set the height and width to determine the TreeMap size to be rendered in “TreeMap.aspx” file in body tag.
+2. Create a &lt;div&gt; tag and set the height and width to determine the TreeMap size to be rendered in “TreeMap.aspx” file in body tag.
 
 
 
 {% highlight html %}
 
-<html>   
+&lt;html&gt;   
 
-      <body> 
-
-
-
-            <div style="min-height:404px">
-
-         </div> 
+      &lt;body&gt; 
 
 
-      </body>      
 
-</html>
+            &lt;div style="min-height:404px"&gt;
+
+         &lt;/div&gt; 
+
+
+      &lt;/body&gt;      
+
+&lt;/html&gt;
 
 
 {% endhighlight  %}
@@ -170,28 +173,28 @@ ej.widgets.all.min.js"></script>
 
 
 {% highlight html %}
+[TreeMap.aspx]
 
+&lt;html&gt;   
 
-<html>   
+      &lt;body&gt; 
 
-      <body> 
-
-         <div style="min-height:404px">
-
-
-
-             <ej:Treemap ID="treemap" runat="server">     
-
-                </ej:Treemap>
+         &lt;div style="min-height:404px"&gt;
 
 
 
-          </div> 
+             &lt;ej:Treemap ID="treemap" runat="server"&gt;     
+
+                &lt;/ej:Treemap&gt;
 
 
-      </body>      
 
-</html>
+          &lt;/div&gt; 
+
+
+      &lt;/body&gt;      
+
+&lt;/html&gt;
 
 
 {% endhighlight %}
@@ -201,7 +204,7 @@ ej.widgets.all.min.js"></script>
 
 
 {% highlight html %}
-
+[TreeMap.aspx.cs]
 
  protected void Page_Load(object sender, EventArgs e)
 
@@ -228,6 +231,9 @@ You can calculate the size of the object using WeightValuePath of TreeMap.
 
 
 {% highlight html %}
+[ASP]
+
+[ASPX.CS]
 
   protected void Page_Load(object sender, EventArgs e)
 
@@ -239,26 +245,25 @@ You can calculate the size of the object using WeightValuePath of TreeMap.
 
         }
 
+[ASPX]
+
+&lt;div style="min-height:404px"&gt;
+
+&lt;ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population"&gt;
 
 
-<div style="min-height:404px">
 
-<ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population">
+&lt;/ej:Treemap&gt;
 
-
-
-</ej:Treemap>
-
-</div>            
+&lt;/div&gt;            
 
 
 {% endhighlight %}
 
 The following image displays a TreeMap with default properties using the above code. 
 
-
 ![](Getting-Started_images/Getting-Started_img3.png) 
-
+{:.image }
 
 
 ### GroupTreeMap Items using Levels
@@ -278,6 +283,9 @@ The following code sample explains how to group TreeMap Items using ‘Levels’
 
 {% highlight html %}
 
+[ASP]
+
+[ASPX.CS]
 
   protected void Page_Load(object sender, EventArgs e)
 
@@ -289,29 +297,29 @@ The following code sample explains how to group TreeMap Items using ‘Levels’
 
         }
 
+[ASPX]
 
+&lt;div style="min-height:404px"&gt;
 
-<div style="min-height:404px">
-
-<ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population">
-
-
-
-<Levels>
-
-       <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25">
+&lt;ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population"&gt;
 
 
 
-       </ej:TreeMapLevel>
+&lt;Levels&gt;
 
-</Levels>
+       &lt;ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25"&gt;
 
 
 
-</ej:Treemap>
+       &lt;/ej:TreeMapLevel&gt;
 
-</div>        
+&lt;/Levels&gt;
+
+
+
+&lt;/ej:Treemap&gt;
+
+&lt;/div&gt;        
 
 
 {% endhighlight %}
@@ -319,6 +327,7 @@ The following code sample explains how to group TreeMap Items using ‘Levels’
 The following screenshot displays grouping of TreeMapItems using Levels
 
 ![](Getting-Started_images/Getting-Started_img4.png) 
+{:.image }
 
 
 ### Customizing TreeMap Appearance by Range
@@ -334,7 +343,9 @@ The following code sample explains how to customize TreeMap Appearance by Range.
 
 
 {% highlight html %}
+[ASP]
 
+[ASPX.CS]
 
   protected void Page_Load(object sender, EventArgs e)
 
@@ -346,45 +357,47 @@ The following code sample explains how to customize TreeMap Appearance by Range.
 
         }
 
+[ASPX] 
 
-<ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth">
-
-
-
-<TreeMapRangeColorMappings>
-
-             <ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"></ej:TreeMapRangeColorMapping>
-
-             <ej:TreeMapRangeColorMapping Color = "#AED960" Legendlabel = "2% Growth" From = "0" To = "2"></ej:TreeMapRangeColorMapping>
-
-             <ej:TreeMapRangeColorMapping Color = "#FFAF51" Legendlabel = "3% Growth" From = "0" To = "3"></ej:TreeMapRangeColorMapping>
-
-             <ej:TreeMapRangeColorMapping Color = "#F3D240" Legendlabel = "4% Growth" From = "0" To = "4"></ej:TreeMapRangeColorMapping>
-
-</TreeMapRangeColorMappings>
+&lt;ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth"&gt;
 
 
 
-<Levels>
+&lt;TreeMapRangeColorMappings&gt;
 
-       <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25">
+             &lt;ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
+
+             &lt;ej:TreeMapRangeColorMapping Color = "#AED960" Legendlabel = "2% Growth" From = "0" To = "2"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
+
+             &lt;ej:TreeMapRangeColorMapping Color = "#FFAF51" Legendlabel = "3% Growth" From = "0" To = "3"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
+
+             &lt;ej:TreeMapRangeColorMapping Color = "#F3D240" Legendlabel = "4% Growth" From = "0" To = "4"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
+
+&lt;/TreeMapRangeColorMappings&gt;
 
 
 
-       </ej:TreeMapLevel>
+&lt;Levels&gt;
 
-</Levels>
+       &lt;ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25"&gt;
 
 
 
-</ej:Treemap>
+       &lt;/ej:TreeMapLevel&gt;
+
+&lt;/Levels&gt;
+
+
+
+&lt;/ej:Treemap&gt;
 
 {% endhighlight  %}
 
 
 The following screenshot displays customized TreeMap Appearance by Range.
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![](Getting-Started_images/Getting-Started_img5.png) 
+{:.image }
 
 
 ### Enable Tooltip
@@ -400,7 +413,9 @@ The following code sample displays how the tooltip is enabled.
 
 
 {% highlight html %}
+[ASP]
 
+[ASPX.CS]
 
   protected void Page_Load(object sender, EventArgs e)
 
@@ -412,44 +427,45 @@ The following code sample displays how the tooltip is enabled.
 
         }
 
+[ASPX]
 
-<ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth">
-
-
-
-<LeafItemSettings LabelPath = "Country">
-
-</LeafItemSettings>
+&lt;ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth"&gt;
 
 
 
-<TreeMapRangeColorMappings>
+&lt;LeafItemSettings LabelPath = "Country"&gt;
 
-             <ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"></ej:TreeMapRangeColorMapping>
-
-             <ej:TreeMapRangeColorMapping Color = "#AED960" Legendlabel = "2% Growth" From = "0" To = "2"></ej:TreeMapRangeColorMapping>
-
-             <ej:TreeMapRangeColorMapping Color = "#FFAF51" Legendlabel = "3% Growth" From = "0" To = "3"></ej:TreeMapRangeColorMapping>
-
-             <ej:TreeMapRangeColorMapping Color = "#F3D240" Legendlabel = "4% Growth" From = "0" To = "4"></ej:TreeMapRangeColorMapping>
-
-</TreeMapRangeColorMappings>
+&lt;/LeafItemSettings&gt;
 
 
 
-<Levels>
+&lt;TreeMapRangeColorMappings&gt;
 
-       <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25">
+             &lt;ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
+
+             &lt;ej:TreeMapRangeColorMapping Color = "#AED960" Legendlabel = "2% Growth" From = "0" To = "2"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
+
+             &lt;ej:TreeMapRangeColorMapping Color = "#FFAF51" Legendlabel = "3% Growth" From = "0" To = "3"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
+
+             &lt;ej:TreeMapRangeColorMapping Color = "#F3D240" Legendlabel = "4% Growth" From = "0" To = "4"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
+
+&lt;/TreeMapRangeColorMappings&gt;
 
 
 
-       </ej:TreeMapLevel>
+&lt;Levels&gt;
 
-</Levels>
+       &lt;ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25"&gt;
 
 
 
-</ej:Treemap>
+       &lt;/ej:TreeMapLevel&gt;
+
+&lt;/Levels&gt;
+
+
+
+&lt;/ej:Treemap&gt;
 
 
 {% endhighlight %}
@@ -457,6 +473,7 @@ The following code sample displays how the tooltip is enabled.
 The following screenshot displays the TreeMap when the Tooltip is enabled.
 
  ![](Getting-Started_images/Getting-Started_img6.png) 
+{:.image }
 
 
 _Figure_ _17__: TreeMap with tooltip option_
@@ -490,46 +507,47 @@ The following code sample displays how to add labels for legend in a TreeMap.
 
         }
 
+[ASPX]
 
-<ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth" ShowLegend = "true">
-
-
-
-<LeafItemSettings LabelPath = "Country"></LeafItemSettings>
-
-<TreeMapLegend IconHeight = "17" IconWidth = "17"></TreeMapLegend>
+&lt;ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth" ShowLegend = "true"&gt;
 
 
 
+&lt;LeafItemSettings LabelPath = "Country"&gt;&lt;/LeafItemSettings&gt;
 
-
-<TreeMapRangeColorMappings>
-
-             <ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"></ej:TreeMapRangeColorMapping>
-
-             <ej:TreeMapRangeColorMapping Color = "#AED960" Legendlabel = "2% Growth" From = "0" To = "2"></ej:TreeMapRangeColorMapping>
-
-             <ej:TreeMapRangeColorMapping Color = "#FFAF51" Legendlabel = "3% Growth" From = "0" To = "3"></ej:TreeMapRangeColorMapping>
-
-             <ej:TreeMapRangeColorMapping Color = "#F3D240" Legendlabel = "4% Growth" From = "0" To = "4"></ej:TreeMapRangeColorMapping>
-
-</TreeMapRangeColorMappings>
+&lt;TreeMapLegend IconHeight = "17" IconWidth = "17"&gt;&lt;/TreeMapLegend&gt;
 
 
 
-<Levels>
-
-       <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25">
 
 
+&lt;TreeMapRangeColorMappings&gt;
 
-       </ej:TreeMapLevel>
+             &lt;ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
 
-</Levels>
+             &lt;ej:TreeMapRangeColorMapping Color = "#AED960" Legendlabel = "2% Growth" From = "0" To = "2"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
+
+             &lt;ej:TreeMapRangeColorMapping Color = "#FFAF51" Legendlabel = "3% Growth" From = "0" To = "3"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
+
+             &lt;ej:TreeMapRangeColorMapping Color = "#F3D240" Legendlabel = "4% Growth" From = "0" To = "4"&gt;&lt;/ej:TreeMapRangeColorMapping&gt;
+
+&lt;/TreeMapRangeColorMappings&gt;
 
 
 
-</ej:Treemap>
+&lt;Levels&gt;
+
+       &lt;ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25"&gt;
+
+
+
+       &lt;/ej:TreeMapLevel&gt;
+
+&lt;/Levels&gt;
+
+
+
+&lt;/ej:Treemap&gt;
 
 
 {% endhighlight %}
@@ -539,6 +557,6 @@ The following screenshot displays the TreeMap when Legends are enabled.
 
 
 ![](Getting-Started_images/Getting-Started_img7.png) 
-
+{:.image }
 
 

@@ -68,6 +68,8 @@ The following code illustrates how to create a Diagram with some model propertie
 {% endhighlight %}
 
 
- ![](Model_images/Model_img1.png) 
+
+![](Model_images/Model_img1.png) 
+{:.image }
 
 

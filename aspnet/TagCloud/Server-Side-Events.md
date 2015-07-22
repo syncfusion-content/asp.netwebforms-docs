@@ -13,10 +13,10 @@ The following list of Individual server side event is available in the TagCloud 
 
 <table>
 <tr>
-<th>
-Event</th><th>
-Description</th><th>
-Arguments</th></tr>
+<td>
+Event</td><td>
+Description</td><td>
+Arguments</td></tr>
 <tr>
 <td>
 OnSelect</td><td>

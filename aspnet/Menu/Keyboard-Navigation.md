@@ -15,9 +15,9 @@ The various keyboard shortcuts available within the Menu control are discussed i
 
 <table>
 <tr>
-<th>
-Keys</th><th>
-Usage</th></tr>
+<td>
+Keys</td><td>
+Usage</td></tr>
 <tr>
 <td>
 Esc</td><td>
@@ -194,14 +194,14 @@ jQuery(function ($) {
 Following screenshot displays the output of the above code example. 
 
 ![](Keyboard-Navigation_images/Keyboard-Navigation_img1.png) 
-
+{:.image }
 
 
 When you press Alt+J the first item, the Menu control only gets focused as illustrated in the following screenshot.
 
 ![](Keyboard-Navigation_images/Keyboard-Navigation_img2.png) 
 
-
+{:.image }
 
 
 Similarly you can access the Menu control by using keyboard itself.

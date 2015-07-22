@@ -7,7 +7,7 @@ control: Ribbon
 documentation: ug
 ---
 
-## Controls Support
+# Controls Support
 
 In _Ribbon_ control, Button,SplitButton,DropDownList Toggle button,Custom controls provide support to the groups.
 
@@ -39,11 +39,8 @@ The _default type is Button_.
 
 {% highlight html %}
 
-[ASP.NET]
 
 
-
-[ASPX]
 
 <ej:Ribbon ID="defaultRibbon" runat="server" Width="800px" ClientSideOnCreate="createControl">
 
@@ -285,7 +282,7 @@ right: 10px;
 
 {% highlight c# %}
 
-[CS]
+
 
 
 
@@ -339,7 +336,6 @@ this.text = ctext;
 
 The following output is displayed as a result of the above code example.
 
-{ ![](Controls-Support_images/Controls-Support_img1.png) | markdownify }
-{:.image }
+![](Controls-Support_images/Controls-Support_img1.png)
 
 

@@ -98,6 +98,6 @@ The following screenshot displays the output for the above code.
 
 
 ![](Week-end-and-Special-dates-highlight_images/Week-end-and-Special-dates-highlight_img1.png)
-
+{:.image }
 
 

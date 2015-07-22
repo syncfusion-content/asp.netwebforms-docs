@@ -31,10 +31,10 @@ _Alignment Command_
 
 <table>
 <tr>
-<th>
-Command</th><th>
-Parameter</th><th>
-Description</th></tr>
+<td>
+Command</td><td>
+Parameter</td><td>
+Description</td></tr>
 <tr>
 <td>
 align</td><td>
@@ -71,7 +71,10 @@ diagram.align("center");
 
 {% endhighlight %}
 
-{{ '![](Commands_images/Commands_img1.png)  ' | markdownify }}
+
+
+![](Commands_images/Commands_img1.png) 
+{:.image }
 
 
 Horizontal Alignment commands
@@ -99,8 +102,9 @@ diagram.align("middle");
 {% endhighlight %}
 
 
-{{ '![](Commands_images/Commands_img2.png)   ' | markdownify }}
 
+![](Commands_images/Commands_img2.png) 
+{:.image }
 
 
 ## Spacing Command
@@ -144,8 +148,10 @@ diagram.spaceAcross();
 
 {% endhighlight %}
 
-{{ '![](Commands_images/Commands_img3.png)    ' | markdownify }}
 
+
+![](Commands_images/Commands_img3.png) 
+{:.image }
 
 
 spaceDown Command
@@ -168,8 +174,9 @@ diagram.spaceDown();
 {% endhighlight %}
 
 
-{{ '![](Commands_images/Commands_img4.png)    ' | markdownify }}
 
+![](Commands_images/Commands_img4.png) 
+{:.image }
 
 
 ## Sizing Command
@@ -228,7 +235,10 @@ diagram.sameWidth();
 
 {% endhighlight %}
 
-{{ '![](Commands_images/Commands_img5.png)  ' | markdownify }}
+
+
+![](Commands_images/Commands_img5.png) 
+{:.image }
 
 
 ## Clipboard commands 
@@ -297,8 +307,10 @@ diagram.paste();
 
 {% endhighlight %}
 
-{{ '![](Commands_images/Commands_img6.png)   ' | markdownify }}
 
+
+![](Commands_images/Commands_img6.png) 
+{:.image }
 
 
 ## Grouping Commands
@@ -364,8 +376,10 @@ diagram.bringToFront();
 
 {% endhighlight %}
 
-{{ '![](Commands_images/Commands_img7.png) ' | markdownify }}
 
+
+![](Commands_images/Commands_img7.png) 
+{:.image }
 
 
 sendToBack Commands
@@ -387,7 +401,9 @@ diagram.sendToBack();
 {% endhighlight %}
 
 
-{{ '![](Commands_images/Commands_img8.png)  ' | markdownify }}
+
+![](Commands_images/Commands_img8.png) 
+{:.image }
 
 
 moveForward Commands
@@ -409,8 +425,9 @@ diagram.moveForward();
 {% endhighlight %}
 
 
-{{ '![](Commands_images/Commands_img9.png)  ' | markdownify }}
 
+![](Commands_images/Commands_img9.png) 
+{:.image }
 
 
 sendBackwardCommands
@@ -432,8 +449,9 @@ diagram.sendBackward();
 {% endhighlight %}
 
 
-{{ '![](Commands_images/Commands_img10.png)  ' | markdownify }}
 
+![](Commands_images/Commands_img10.png) 
+{:.image }
 
 
 ## Zoom Commands
@@ -527,8 +545,8 @@ Nudge by using Arrow Keys
 
 The corresponding arrow keys are used to move the selected elements up, down, left, or right by 1 pixel.
 
-
-{{ '![http://help.syncfusion.com/ug/wpf/diagram/ImagesExt/image69_163.png](Commands_images/Commands_img11.png) ' | markdownify }}
+![http://help.syncfusion.com/ug/wpf/diagram/ImagesExt/image69_163.png](Commands_images/Commands_img11.png) 
+{:.image }
 
 
 Nudge commands are particularly useful for accurate placement of Diagram elements on the Diagram as it allows you to move by 1 pixel each time.
@@ -611,7 +629,6 @@ Specifies the region covered by the Diagram elements </td></tr>
 PageSettings</td><td>
 Specifies the region based on page settings</td></tr>
 </table>
-
-### Undo/Redo
+Undo/Redo
 Refer to the Link for Undo/Redo Commands.
 

@@ -13,10 +13,10 @@ The following are the server side events available in the DatePicker control.
 
 <table>
 <tr>
-<th>
-Event</th><th>
-Event Description</th><th>
-Event Description</th></tr>
+<td>
+Event</td><td>
+Event Description</td><td>
+Event Description</td></tr>
 <tr>
 <td>
 OnValueSelect</td><td>

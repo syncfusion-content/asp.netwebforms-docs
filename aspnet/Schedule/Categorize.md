@@ -7,7 +7,7 @@ control: Schedule
 documentation: ug
 ---
 
-## Categorize	
+# Categorize	
 
 * This feature allows you to differentiate the appointments with various categorize options and individual colors. You can also denote the status of the appointments using this categorize option and can specify your own user-defined category collection.
 
@@ -16,16 +16,20 @@ You can use the following code example to include the categorize option.
 
 
 
+{% highlight html %}
 
-[ASP.NET]
 
-&lt;ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014"&gt;
 
-&lt;CategorizeSettings Enable="true" AllowMultiple="true" Id="id" Color="color" FontColor="fontColor" Text="text"&gt;
 
-&lt;/CategorizeSettings&gt;
+<ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014">
 
-&lt;/ej:Schedule&gt;
+<CategorizeSettings Enable="true" AllowMultiple="true" Id="id" Color="color" FontColor="fontColor" Text="text">
+
+</CategorizeSettings>
+
+</ej:Schedule>
+
+{% endhighlight %}
 
 Categorize Settings
 
@@ -66,34 +70,36 @@ The following code example illustrates on how to render categorize feature in th
 
 
 
-
-[Asp.net]
-
-&lt;ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData CurrentDate="5/2/2014" CurrentView="Month"&gt;
-
-&lt;CategorizeSettings Enable="true" AllowMultiple="true" Id="id" Color="color" FontColor="fontColor" Text="text"&gt;
-
-&lt;/CategorizeSettings&gt;
-
-&lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description" Categorize="Categorize"/&gt;
-
-&lt;/ej:Schedule&gt;
+{% highlight html %}
 
 
 
-&lt;/div&gt;
+<ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData CurrentDate="5/2/2014" CurrentView="Month">
 
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
+<CategorizeSettings Enable="true" AllowMultiple="true" Id="id" Color="color" FontColor="fontColor" Text="text">
 
-SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
+</CategorizeSettings>
+
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description" Categorize="Categorize"/>
+
+</ej:Schedule>
 
 
 
+</div>
+
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
+
+SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+{% endhighlight %}
 
 
 
+{% highlight C# %}
 
-[Asp.net cs]
+
+
 
 namespace WebSampleBrowser.Schedule
 
@@ -139,11 +145,10 @@ public string color { set; get; }
 
 }
 
-
+{% endhighlight %}
 
 The output of the above code is illustrated as follows.
 
-{ ![C:/Users/hariprasanths/Desktop/imagess/123/Capture1.PNG](Categorize_images/Categorize_img1.png) | markdownify }
-{:.image }
+![C:/Users/hariprasanths/Desktop/imagess/123/Capture1.PNG](Categorize_images/Categorize_img1.png)
 
 

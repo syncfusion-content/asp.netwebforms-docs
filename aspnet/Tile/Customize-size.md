@@ -44,8 +44,9 @@ Refer to the following code examples.
 
 {% endhighlight %}
 
-![](Customize-size_images/Customize-size_img1.png)
 
 
+ ![](Customize-size_images/Customize-size_img1.png) 
+{:.image }
 
 

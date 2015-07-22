@@ -17,9 +17,9 @@ Field is a property that includes the object type. Fields are used to bind the d
 
 <table>
 <tr>
-<th>
-Name</th><th>
-Description</th></tr>
+<td>
+Name</td><td>
+Description</td></tr>
 <tr>
 <td>
 DataSource</td><td>
@@ -112,7 +112,7 @@ protected void Page_Load(object sender, EventArgs e)
 The following screenshot displays the output of the above code example. 
 
 ![](Data-binding_images/Data-binding_img1.png) 
-
+{:.image }
 
 
 ## SQL Data binding
@@ -146,7 +146,7 @@ SelectCommand="SELECT * FROM [TreeBind]"></asp:SqlDataSource>
 The following screenshot displays the output for the above code example.                                                                                                       
 
 ![](Data-binding_images/Data-binding_img2.png) 
-
+{:.image }
 
 
 ## Object Data binding
@@ -349,7 +349,7 @@ public class MenuSource
 
 The following screenshot displays the output for the above code example.      
 ![](Data-binding_images/Data-binding_img3.png) 
-
+{:.image }
 
 
 ## XML Data binding
@@ -445,10 +445,10 @@ Load the menu items in the xml data as illustrated in the following code example
 The following screenshot displays the output for the XML Databinding.                                                                                                       
 
 ![](Data-binding_images/Data-binding_img4.png) 
+{:.image }
 
 
-
-## Linq-to-SQL Data binding
+### Linq-to-SQL Data binding
 
 The linq data source is used to bind Menu data via Linq to Sql. The property ContextTypeName indicates the location of the data source. You have to mention exact table name of your data base in TableName property. The id of LinqDataSource must be provided to DataSourceID of Menu. Define a Linq-to-SQL data source in the web page and configure the data source as per your requirement by using the database.
 
@@ -479,6 +479,6 @@ In the Design page, assign values for DataTextField, DataIdField, DataParentIdFi
 The following screenshot displays the output for the above code example.                                                                                                       
 
 ![](Data-binding_images/Data-binding_img5.png) 
-
+{:.image }
 
 

@@ -28,6 +28,6 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 
 ![](Time-Interval_images/Time-Interval_img1.png) 
-
+{:.image }
 
 

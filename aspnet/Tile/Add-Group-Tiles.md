@@ -13,9 +13,9 @@ To make a Tile as grouped tile, you can use the following mentioned pre-defined 
 
 <table>
 <tr>
-<th>
-Class Name</th><th>
-Explanation</th></tr>
+<td>
+Class Name</td><td>
+Explanation</td></tr>
 <tr>
 <td>
 group</td><td>
@@ -55,9 +55,9 @@ To render group tile, refer to the following code example.
 
 
 
-To render column grouped tile, you need to render the number of tiles inside a <div> element with class ‘column’. Then that column group element is appended to a <div> with class ‘group’.     
+To render column grouped tile, you need to render the number of tiles inside a &lt;div&gt; element with class ‘column’. Then that column group element is appended to a &lt;div&gt; with class ‘group’.     
 
-To render small-col-2 grouped tile, you need to render the number of tiles inside a <div> element with class ‘small-col-2’. Then that small-col-2 group element is appended to a <div> with class ‘column’. Then you need to append those column inside the main group <div> element.                                                     
+To render small-col-2 grouped tile, you need to render the number of tiles inside a &lt;div&gt; element with class ‘small-col-2’. Then that small-col-2 group element is appended to a &lt;div&gt; with class ‘column’. Then you need to append those column inside the main group &lt;div&gt; element.                                                     
 
  Refer to the following code examples.
 
@@ -243,12 +243,10 @@ To render small-col-2 grouped tile, you need to render the number of tiles insid
 
 {% endhighlight %}
 
+
+
 ![](Add-Group-Tiles_images/Add-Group-Tiles_img1.png) 
-
-
-
- 
-
+{:.image }
 
 
 _Tile - Group Tiles_

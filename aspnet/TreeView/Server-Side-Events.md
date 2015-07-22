@@ -7,16 +7,16 @@ control: TreeView
 documentation: ug
 ---
 
-# Server Side Events
+## Server Side Events
 
 You can specify the server side events of TreeView in ASP. To set server side event, you can enable any of the following events.
 
 <table>
 <tr>
-<th>
-Event</th><th>
-Event Description</th><th>
-Event Description</th></tr>
+<td>
+Event</td><td>
+Event Description</td><td>
+Event Description</td></tr>
 <tr>
 <td>
 OnNodeChecked</td><td>

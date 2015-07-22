@@ -30,6 +30,6 @@ In the ASPX page, include the following DatePicker control code example to speci
 The following screenshot displays the output for the above code.
 
 ![](Date-Range_images/Date-Range_img1.png) 
-
+{:.image }
 
 

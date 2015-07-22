@@ -27,6 +27,9 @@ Squarifiedlayout creates rectangles with best aspect ratio.
 
 {% highlight html %}
 
+[ASP]
+
+[ASPX.CS]
 
   protected void Page_Load(object sender, EventArgs e)
 
@@ -38,23 +41,27 @@ Squarifiedlayout creates rectangles with best aspect ratio.
 
         }
 
-
-<div style="min-height:404px">
-
-<ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth" ItemsLayoutMode=” squarified”>
+[ASPX]
 
 
 
-</ej:Treemap>
+&lt;div style="min-height:404px"&gt;
 
-</div>
+&lt;ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth" ItemsLayoutMode=” squarified”&gt;
+
+
+
+&lt;/ej:Treemap&gt;
+
+&lt;/div&gt;
 
 
 {% endhighlight %}
 
 
 
-![](Layout_images/Layout_img1.png)
+{ ![](Layout_images/Layout_img1.png) | markdownify }
+{:.image }
 
 
 SliceAndDiceAuto Layout
@@ -68,24 +75,25 @@ SliceAndDiceAuto layout creates rectangles with high aspect ratio and displays t
 
 {% highlight html %}
 
-
-
-<div style="min-height:404px">
-
-<ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth" ItemsLayoutMode = “sliceanddiceauto” >
+[ASPX]
 
 
 
-</ej:Treemap>
+&lt;div style="min-height:404px"&gt;
 
-</div> 
+&lt;ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth" ItemsLayoutMode = “sliceanddiceauto” &gt;
+
+
+
+&lt;/ej:Treemap&gt;
+
+&lt;/div&gt; 
 
 
 {% endhighlight %}
 
-
-![C:/Users/ApoorvahR/Desktop/1.png](Layout_images/Layout_img2.png) 
-
+ ![C:/Users/ApoorvahR/Desktop/1.png](Layout_images/Layout_img2.png) 
+{:.image }
 
 
 SliceAndDiceHorizontal Layout
@@ -97,23 +105,25 @@ SliceAndDiceHorizontal layout creates rectangles with high aspect ratio and disp
 
 {% highlight html %}
 
+ [ASPX]
 
-<div style="min-height:404px">
+&lt;div style="min-height:404px"&gt;
 
-<ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth" ItemsLayoutMode= “sliceanddicehorizontal”>
+&lt;ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth" ItemsLayoutMode= “sliceanddicehorizontal”&gt;
 
 
 
-</ej:Treemap>
+&lt;/ej:Treemap&gt;
 
-</div> 
+&lt;/div&gt; 
 
 
 
 {% endhighlight %}
 
 
- ![](Layout_images/Layout_img3.png)
+ ![](Layout_images/Layout_img3.png) 
+{:.image }
 
 
 SliceAndDiceVertical Layout
@@ -125,19 +135,22 @@ SliceAndDiceVertical layout creates rectangles with high aspect ratio and displa
 
 {% highlight html %}
 
+[ASPX]
 
-<div style="min-height:404px">
+&lt;div style="min-height:404px"&gt;
 
-<ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth" ItemsLayoutMode= “sliceanddicevertical”>
+&lt;ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth" ItemsLayoutMode= “sliceanddicevertical”&gt;
 
-</ej:Treemap>
+&lt;/ej:Treemap&gt;
 
-</div> 
+&lt;/div&gt; 
 
 
 
 {% endhighlight  %}
 
- ![](Layout_images/Layout_img4.png)
+
+![](Layout_images/Layout_img4.png) 
+{:.image }
 
 

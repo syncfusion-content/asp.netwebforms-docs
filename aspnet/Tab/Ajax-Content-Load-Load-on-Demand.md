@@ -96,55 +96,55 @@ The file cornSpinach.html content is as follows.
 
 {% highlight html %}
 
-<!DOCTYPE html>
+&lt;!DOCTYPE html&gt;
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 
-<body>
+&lt;body&gt;
 
-    <div class="e-content">
+    &lt;div class="e-content"&gt;
 
-        <img src="http://js.syncfusion.com/demos/web/images/accordion/corn-and-spinach-05.png" alt="corn-spinach">
+        &lt;img src="http://js.syncfusion.com/demos/web/images/accordion/corn-and-spinach-05.png" alt="corn-spinach"&gt;
 
-        <div class="ingredients">
+        &lt;div class="ingredients"&gt;
 
             Rate    : $70<br/> Ingredients : cheese, sweet corn &amp; green capsicums.
 
-            <br />
+            &lt;br /&gt;
 
-            Description: Small pizza bases are topped with spinach and paneer and fresh cream, a nice layer of mozzarella cheese. This is baked until the cheese is all hot and gooey.                    </div>
+            Description: Small pizza bases are topped with spinach and paneer and fresh cream, a nice layer of mozzarella cheese. This is baked until the cheese is all hot and gooey.                    &lt;/div&gt;
 
-    </div>   
+    &lt;/div&gt;   
 
-</body>
+&lt;/body&gt;
 
-</html>
+&lt;/html&gt;
 
  The file chickenDelite.html content is as follows.
 
-<!DOCTYPE html>
+&lt;!DOCTYPE html&gt;
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 
-<body>
+&lt;body&gt;
 
-    <div class="e-content">
+    &lt;div class="e-content"&gt;
 
-        <img src="http://js.syncfusion.com/demos/web/images/accordion/chicken-delite.png" alt="chicken-delite">
+        &lt;img src="http://js.syncfusion.com/demos/web/images/accordion/chicken-delite.png" alt="chicken-delite"&gt;
 
-        <div class="ingredients">
+        &lt;div class="ingredients"&gt;
 
-            Rate    : $100<br /> Ingredients : cheese, chicken chunks, onions &amp; pineapple chunks.   <br /> 
+            Rate    : $100<br /> Ingredients : cheese, chicken chunks, onions &amp; pineapple chunks.   &lt;br /&gt; 
 
              Description: This is a tasty, elegant chicken dish that is easy to prepare.
 
-        </div>
+        &lt;/div&gt;
 
-    </div>
+    &lt;/div&gt;
 
-</body>
+&lt;/body&gt;
 
-</html>
+&lt;/html&gt;
 
 {% endhighlight %}
 
@@ -154,8 +154,8 @@ At the time of Ajax call, the content is fetched from the external file.
 
 
 The following screenshot illustrates the First Tab with the sub Tab control by using Load on Demand. 
+
 ![](Ajax-Content-Load-Load-on-Demand_images/Ajax-Content-Load-Load-on-Demand_img1.png) 
-
-
+{:.image }
 
 

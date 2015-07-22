@@ -17,9 +17,9 @@ When your company’s website is used all over the world, following the UTC time
 
 <table>
 <tr>
-<th>
-Format</th><th>
-Display in DateTimePicker</th></tr>
+<td>
+Format</td><td>
+Display in DateTimePicker</td></tr>
 <tr>
 <td>
 Short Date and Time– d/M/yy h:mm tt</td><td>
@@ -75,7 +75,7 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 
 ![](Display-format_images/Display-format_img1.png) 
-
+{:.image }
 
 
 
@@ -86,9 +86,9 @@ You can change the format for the days of the week by using the Day Header forma
 
 <table>
 <tr>
-<th>
-Header Format types</th><th>
-Description</th></tr>
+<td>
+Header Format types</td><td>
+Description</td></tr>
 <tr>
 <td>
 ShowHeaderNone</td><td>
@@ -123,6 +123,6 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 
 ![](Display-format_images/Display-format_img2.png) 
-
+{:.image }
 
 

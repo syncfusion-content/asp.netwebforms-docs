@@ -7,9 +7,9 @@ control: PivotGrid
 documentation: ug
 ---
 
-## Knockout Binding
+# Knockout Binding
 
-> _Note:__This feature is applicable only for OLAP datasource._
+Note: This feature is applicable only for OLAP datasource.
 
 Knockout’sbinding system provides a concise and powerful way to link data to the UI. It’s generally easy and obvious to bind to simple data properties.
 

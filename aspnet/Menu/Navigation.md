@@ -92,12 +92,12 @@ Add the following code example in your ASPX page.
 The following screenshot displays the output for the above code example.  
 
 ![](Navigation_images/Navigation_img1.png) 
-
+{:.image }
 
 
 When you click on “Google” that is present under “Search engine”, it navigates to the link that you have specified in the code example. Then the output is as follows.
 
 ![](Navigation_images/Navigation_img2.png) 
-
+{:.image }
 
 

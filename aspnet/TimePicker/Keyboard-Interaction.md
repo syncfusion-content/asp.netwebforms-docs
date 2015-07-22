@@ -13,9 +13,9 @@ You can use Keyboardshortcut keys as an alternative to the mouse on using TimePi
 
 <table>
 <tr>
-<th>
-Shortcut Key</th><th>
-Description</th></tr>
+<td>
+Shortcut Key</td><td>
+Description</td></tr>
 <tr>
 <td>
 {{'[Access key](http://en.wikipedia.org/wiki/Access_key)' | markdownify }} + j</td><td>
@@ -43,9 +43,9 @@ When popup is open
 
 <table>
 <tr>
-<th>
-Shortcut Key</th><th>
-Description</th></tr>
+<td>
+Shortcut Key</td><td>
+Description</td></tr>
 <tr>
 <td>
 Up</td><td>
@@ -115,6 +115,6 @@ Run the code example, press Alt + J to focus on the TimePicker control that enab
 
 
 ![](Keyboard-Interaction_images/Keyboard-Interaction_img1.png) 
-
+{:.image }
 
 

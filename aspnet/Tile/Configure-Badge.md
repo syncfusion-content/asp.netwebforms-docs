@@ -39,10 +39,9 @@ Refer to the following code examples.
 
 {% endhighlight %}
 
-![](Configure-Badge_images/Configure-Badge_img1.png)
 
 
-
-
+![](Configure-Badge_images/Configure-Badge_img1.png) 
+{:.image }
 
 

@@ -15,10 +15,10 @@ _Tools_
 
 <table>
 <tr>
-<th>
-Precedence</th><th>
-Tools</th><th>
-Description</th></tr>
+<td>
+Precedence</td><td>
+Tools</td><td>
+Description</td></tr>
 <tr>
 <td>
 1st </td><td>
@@ -147,9 +147,9 @@ tool: ej.datavisualization.Diagram.Tool.DrawOnce
 {% endhighlight %}
 
 
- ![](Tools_images/Tools_img1.png)  
 
-
+ ![](Tools_images/Tools_img1.png) 
+{:.image }
 
 
 
@@ -199,7 +199,8 @@ tool: ej.datavisualization.Diagram.Tool.DrawOnce
 {% endhighlight %}
 
 
- ![http://help.syncfusion.com/ug/js/ImagesExt/image682_23.jpg](Tools_images/Tools_img2.jpeg)  
 
+ ![http://help.syncfusion.com/ug/js/ImagesExt/image682_23.jpg](Tools_images/Tools_img2.jpeg) 
+{:.image }
 
 

@@ -7,7 +7,7 @@ control: TreeView
 documentation: ug
 ---
 
-# Checkbox Support
+## Checkbox Support
 
 TreeView allows you to check or uncheck the nodes. When you check the parent node of TreeView, the corresponding child nodes are automatically moved to checked state. A parent node check state is automatically set to indeterminate when it has checked and unchecked child nodes. To enable this feature, set the ShowCheckbox property to “True”.
 
@@ -126,10 +126,12 @@ In the ASPX page, add an element to configure TreeView.
 {% endhighlight %}
 
 
-![](Checkbox-Support_images/Checkbox-Support_img1.png) 
+
+{ ![](Checkbox-Support_images/Checkbox-Support_img1.png) | markdownify }
+{:.image }
 
 
-## Auto Check Parent Node
+### Auto Check Parent Node
 
 To overcome the default functionality of TreeView, that is, when you don’t require the parent node check state being moved to indeterminate state and when you check the corresponding child node, you can enable the property AutoCheckParentNode. By using this functionality, you can check the single parent node as well as the corresponding child nodes. You can specify the property AutoCheckParentNode in TreeView as follows.
 
@@ -243,7 +245,7 @@ To overcome the default functionality of TreeView, that is, when you don’t req
 
 {% endhighlight %}
 
-## Checked Nodes
+### Checked Nodes
 
 You can specify the Checked Nodes in TreeView initially by using the property CheckedNodes.To achieve this, set ShowCheckbox property as true in TreeView.
 
@@ -393,11 +395,11 @@ public partial class Checkbox : System.Web.UI.Page
 
 <table>
 <tr>
-<th>
-Properties</th><th>
-Description</th><th>
-Default value</th><th>
-Data type</th></tr>
+<td>
+Properties</td><td>
+Description</td><td>
+Default value</td><td>
+Data type</td></tr>
 <tr>
 <td>
 DataSource</td><td>

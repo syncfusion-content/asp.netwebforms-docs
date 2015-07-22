@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance and Styling
 
-## Header Image Customization
+### Header Image Customization
 
 To set the Tab Header image for each Tab item, you need to specify image in the ImageCssClass property during the TabItem declaration.
 
@@ -102,7 +102,7 @@ Add the following CSS for header image customization.
 The following screenshot illustrates the Tab with the customized header image. 
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
-
+{:.image }
 
 
 ## Rounded corners
@@ -158,6 +158,7 @@ Add the following ASPX to render Tab with Rounder corners.
 The following screenshot illustrates the Tab with Rounded corners.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
+{:.image }
 
 
 ## Enable/Disable
@@ -168,41 +169,40 @@ The following code example is used to render the Tab control with Enable/Disable
 
 Add the following ASPX to render the Tab with Enable/Disable.
 
-    <ej:Tab ID="dishtype" runat="server" Enabled="false" Width="600px">
+    &lt;ej:Tab ID="dishtype" runat="server" Enabled="false" Width="600px"&gt;
 
-        <Items>
+        &lt;Items&gt;
 
-            <ej:TabItem Id="pizzatype" Text="Pizza Menu">
+            &lt;ej:TabItem Id="pizzatype" Text="Pizza Menu"&gt;
 
-                <ContentSection>
+                &lt;ContentSection&gt;
 
-                    <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+                    <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;
 
-                </ContentSection>
+                &lt;/ContentSection&gt;
 
-            </ej:TabItem>
+            &lt;/ej:TabItem&gt;
 
-            <ej:TabItem Id="sandwichtype" Text="Sandwich Menu">
+            &lt;ej:TabItem Id="sandwichtype" Text="Sandwich Menu"&gt;
 
-                <ContentSection>
+                &lt;ContentSection&gt;
 
-                    <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+                    <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;
 
-                </ContentSection>
+                &lt;/ContentSection&gt;
 
-            </ej:TabItem>
+            &lt;/ej:TabItem&gt;
 
-        </Items>
+        &lt;/Items&gt;
 
-    </ej:Tab>
+    &lt;/ej:Tab&gt;
 
 
 
 The following screenshot illustrates the Tab with disabled format.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)  
-
-
+![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
+{:.image }
 
 
 ## Enabling Reload Icon
@@ -251,9 +251,8 @@ Add the following ASPX to render the Tab with Reload icon.
 
 The following screenshot illustrates the Tab with reload icon.
 
-
-![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png) 
-
+![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
+{:.image }
 
 
 ## Collapsible Tabs
@@ -264,45 +263,44 @@ The following code example is used to render the Tab control with customized Col
 
 Add the following ASPX to render Tab with customized Collapsible mode.
 
-<ej:Tab ID="dishtype" runat="server" Collapsible="true" Width="600px">
+&lt;ej:Tab ID="dishtype" runat="server" Collapsible="true" Width="600px"&gt;
 
-    <Items>
+    &lt;Items&gt;
 
-        <ej:TabItem ID="pizzatype" Text="Pizza Menu">
+        &lt;ej:TabItem ID="pizzatype" Text="Pizza Menu"&gt;
 
-            <ContentSection>
+            &lt;ContentSection&gt;
 
-                <p>
+                &lt;p&gt;
 
-                    Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+                    Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;
 
-            </ContentSection>
+            &lt;/ContentSection&gt;
 
-        </ej:TabItem>
+        &lt;/ej:TabItem&gt;
 
-        <ej:TabItem ID="sandwichtype" Text="Sandwich Menu">
+        &lt;ej:TabItem ID="sandwichtype" Text="Sandwich Menu"&gt;
 
-            <ContentSection>
+            &lt;ContentSection&gt;
 
-                <p>
+                &lt;p&gt;
 
-                    Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+                    Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;
 
-            </ContentSection>
+            &lt;/ContentSection&gt;
 
-        </ej:TabItem>
+        &lt;/ej:TabItem&gt;
 
-    </Items>
+    &lt;/Items&gt;
 
-</ej:Tab>
+&lt;/ej:Tab&gt;
 
 
 
 The following screenshot illustrates the Tab with customized collapsible mode.
 
-
-
-![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
+![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png) 
+{:.image }
 
 
 ## Adjusting Tab Size
@@ -360,7 +358,7 @@ Add the following ASPX to render Tab with customized height and height adjust mo
 The following screenshot illustrates the Tab with customized height and height adjust mode.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png) 
-
+{:.image }
 
 
 ### Width
@@ -407,9 +405,8 @@ Add the following ASPX to render the Tab with customized Width.
 
 The following screenshot illustrates the Tab with customized Width.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img7.png)  
-
-
+![](Appearance-and-Styling_images/Appearance-and-Styling_img7.png) 
+{:.image }
 
 
 ## Theme
@@ -498,8 +495,7 @@ Add the following styles
 
 The following screenshot illustrates the Tab with customized style.
 
-
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img8.png) 
-
+{:.image }
 
 

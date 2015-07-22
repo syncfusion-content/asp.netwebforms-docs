@@ -105,7 +105,7 @@ The following example illustrates the horizontal and vertical spacing of the Hie
 
 
 ![](Automatic-Layout_images/Automatic-Layout_img1.png) 
-
+{:.image }
 
 
 Orientation
@@ -119,9 +119,10 @@ The Orientation property, LayoutOrientations, of layout is used to specify the t
 
 The following image displays Bottom to Top orientation of layout.
 
+
+
 ![](Automatic-Layout_images/Automatic-Layout_img2.png) 
-
-
+{:.image }
 
 
 ## Organizational Chart
@@ -244,10 +245,13 @@ Diagram.model.DataSourceSettings.Parent = "Supervisor";
 
 {% endhighlight %}
 
-![](Automatic-Layout_images/Automatic-Layout_img3.png)  
 
 
-### Customizing the organizational chart
+![](Automatic-Layout_images/Automatic-Layout_img3.png) 
+{:.image }
+
+
+Customizing the organizational chart
 
 Organizational chart layout starts parsing from root and iterates through all its child elements. getLayoutInfo method provides necessary information of a node’s children and the way to arrange (direction, orientation, offsets, etc.,) them. You can customize the arrangements by overriding this function, explained as follows.
 
@@ -307,10 +311,10 @@ _Properties of argument "option"_
 
 <table>
 <tr>
-<th>
-Properties</th><th>
-Description</th><th>
-Default Value</th></tr>
+<td>
+Properties</td><td>
+Description</td><td>
+Default Value</td></tr>
 <tr>
 <td>
 options.children</td><td>
@@ -352,8 +356,7 @@ options.enableRouting</td><td>
 By default, Connections are routed based on the chart type and orientations.This property gets or sets whether default routing is to be enabled or disabled.</td><td>
 true</td></tr>
 </table>
-
-### Orientations
+Orientations
 
 Diagram provides the following orientation options.
 
@@ -366,35 +369,31 @@ _Chart orientations and Chart types_
 
 <table>
 <tr>
-<th>
-Orientation</th><th>
-Type</th><th>
-Description</th><th>
-Example</th></tr>
+<td>
+Orientation</td><td>
+Type</td><td>
+Description</td><td>
+Example</td></tr>
 <tr>
 <td rowspan = "3">
 Horizontal</td><td>
 Left</td><td>
 Arranges the child nodes horizontally at the left side of parent.</td><td>
-
-{{ '![](Automatic-Layout_images/Automatic-Layout_img4.png)' | markdownify }}
-
+![](Automatic-Layout_images/Automatic-Layout_img4.png)
 {:.image }
 </td></tr>
 <tr>
 <td>
 Right</td><td>
 Arranges the child nodes horizontally at the right side of parent.</td><td>
-{{ '![](Automatic-Layout_images/Automatic-Layout_img5.png)' | markdownify }}
-
+![](Automatic-Layout_images/Automatic-Layout_img5.png)
 {:.image }
 </td></tr>
 <tr>
 <td>
 Center</td><td>
 Arranges the children at the bottom/left/right/top center of parent based on layout orientation.</td><td>
-{{ '![](Automatic-Layout_images/Automatic-Layout_img6.png)' | markdownify }}
-
+![](Automatic-Layout_images/Automatic-Layout_img6.png)
 {:.image }
 </td></tr>
 <tr>
@@ -402,23 +401,21 @@ Arranges the children at the bottom/left/right/top center of parent based on lay
 Vertical</td><td>
 Left</td><td>
 Vertically arranges the children at the left side of parent.</td><td>
-{{ '![](Automatic-Layout_images/Automatic-Layout_img7.png)' | markdownify }}
-
+![](Automatic-Layout_images/Automatic-Layout_img7.png)
 {:.image }
 </td></tr>
 <tr>
 <td>
 Right</td><td>
 Vertically arranges the children at the right side of parent.</td><td>
-{{ '![](Automatic-Layout_images/Automatic-Layout_img8.png)' | markdownify }}
-
+![](Automatic-Layout_images/Automatic-Layout_img8.png)
 {:.image }
 </td></tr>
 <tr>
 <td>
 Alternate</td><td>
 Vertically arranges the children at both left and right sides of parent.</td><td>
-{{ '![](Automatic-Layout_images/Automatic-Layout_img9.png)' | markdownify }}
+![](Automatic-Layout_images/Automatic-Layout_img9.png)
 {:.image }
 </td></tr>
 </table>
@@ -446,9 +443,13 @@ function getLayoutInfo(diagram, node, options) {
 
 {% endhighlight %}
 
-![](Automatic-Layout_images/Automatic-Layout_img10.png) 
 
-### Assistant Support
+
+![](Automatic-Layout_images/Automatic-Layout_img10.png)
+{:.image }
+
+
+Assistant Support
 
 Diagram provides support to layout assistant nodes.
 
@@ -485,7 +486,8 @@ function getLayoutInfo(diagram, node, options) {
 {% endhighlight %}
 
 
-![](Automatic-Layout_images/Automatic-Layout_img11.png)  
 
+![](Automatic-Layout_images/Automatic-Layout_img11.png) 
+{:.image }
 
 

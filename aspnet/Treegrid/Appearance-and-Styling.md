@@ -84,6 +84,7 @@ You can apply the theme (Gradient lime) to the TreeGrid control by using the s
 The following screenshot shows the TreeGrid control with Gradient-lime theme.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
+{:.image }
 
 
 

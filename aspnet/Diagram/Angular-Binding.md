@@ -96,7 +96,8 @@ angular.module('syncApp', ['ejangular'])
 {% endhighlight %}
 
 
-![](Angular-Binding_images/Angular-Binding_img1.png)
 
+![](Angular-Binding_images/Angular-Binding_img1.png)
+{:.image }
 
 

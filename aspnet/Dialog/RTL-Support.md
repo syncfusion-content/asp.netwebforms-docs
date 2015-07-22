@@ -48,6 +48,6 @@ In the ASPX page, add the Dialog control and set the EnableRTL to true.
 The screenshot displays Dialog when EnabelRTL is set to true.
 
 ![](RTL-Support_images/RTL-Support_img1.png) 
-
+{:.image }
 
 

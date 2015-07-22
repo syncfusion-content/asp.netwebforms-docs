@@ -13,10 +13,10 @@ The following given server side even is available in the ToggleButton control.
 
 <table>
 <tr>
-<th>
-Event</th><th>
-Event Description</th><th>
-Argument Details</th></tr>
+<td>
+Event</td><td>
+Event Description</td><td>
+Argument Details</td></tr>
 <tr>
 <td>
 OnChange</td><td>

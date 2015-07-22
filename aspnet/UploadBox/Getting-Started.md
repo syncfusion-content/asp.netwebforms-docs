@@ -189,7 +189,7 @@ Add the following code example to the script section.
 
             uploadobject.option('extensionsDeny', "");
 
-            $("#filedeny").val('');
+            $("#filedeny").val(');
 
         }
 
@@ -201,7 +201,7 @@ Add the following code example to the script section.
 
             uploadobject.option('extensionsDeny', $("#filedeny").val());
 
-            $("#fileallow").val('');
+            $("#fileallow").val(');
 
         }
 

@@ -7,59 +7,62 @@ control: PivotGrid
 documentation: ug
 ---
 
-## Paging
+# Paging
 
 
 
-> _Note:__This feature is applicable only for OLAP datasource._
+Note: This feature is applicable only for OLAP datasource.
 
-Pager
+##Pager
 
 The PivotGrid is viewed page-by-page through Pager option. The Pager is set to PivotGrid using following code example.
 
 
+{% highlight html %}
 
-[ASP]
 
-&lt;ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc"  &gt;
+<ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc"  >
 
-&lt;/ej:PivotGrid&gt;
+</ej:PivotGrid>
 
-&lt;ej:PivotPager ID="PivotPager1" runat="server"  Mode="Both" TargetControlID="PivotGrid1" &gt; &lt;/ej:PivotPager&gt;
+<ej:PivotPager ID="PivotPager1" runat="server"  Mode="Both" TargetControlID="PivotGrid1" > </ej:PivotPager>
 
+{% endhighlight %}
 
 
 The page size for categorical and series axes are set in the OlapReport. Pager is loaded with current page and total pages of PivotGrid is automatically displayed as illustrated in the following screenshot. The icons to move pages to next, last, previous and first are added.  Also you can directly navigate to the desired page by entering the appropriate numeric value into the text box.
 
 
 
-{ ![](Paging_images/Paging_img1.png) | markdownify }
-{:.image }
+ ![](Paging_images/Paging_img1.png) 
 
 
-Virtual Scrolling
+
+##Virtual Scrolling
 
 The large PivotGrid data content is viewed page-by-page using VirtualScrolling. The page size for categorical and series axes are set in OlapReport. By enabling VirtualScrolling, the number of rows and columns for the PivotGrid are set as entered in the OlapReport. By scrolling the horizontal and vertical scrollbars, the categorical and series page numbers are obtained and PivotGrid contents are refreshed accordingly.
 
-[ASP]
-
-&lt;ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc"  EnableVirtualScrolling="true"&gt;
+{% highlight html %}
 
 
+<ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc"  EnableVirtualScrolling="true">
 
-{ ![](Paging_images/Paging_img2.png) | markdownify }
-{:.image }
+{% endhighlight %}
 
-
-
-
-{ ![Description: C:/Users/Narendhran Muthuvel/Pictures/sshot-1.png](Paging_images/Paging_img3.png) | markdownify }
-{:.image }
+ ![](Paging_images/Paging_img2.png) 
 
 
-OLAP Report for Paging and Virtual Scrolling
 
-[C#]
+
+
+ ![Description: C:/Users/Narendhran Muthuvel/Pictures/sshot-1.png](Paging_images/Paging_img3.png)
+
+
+
+##OLAP Report for Paging and Virtual Scrolling
+
+{% highlight html %}
+
 
 
 
@@ -112,6 +115,6 @@ measureElementColumn.Elements.Add(new MeasureElement { Name = "Sales Amount"}
 olapReport.CategoricalElements.Add(measureElementColumn);
 
 
-
+{% endhighlight %}
 
 

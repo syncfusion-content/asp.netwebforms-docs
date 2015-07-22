@@ -11,7 +11,10 @@ documentation: ug
 
 Nodes are graphical object that represent visual data to be placed on the page.
 
+
+
  ![C:/Users/labuser/Desktop/a.png](Node_images/Node_img1.png) 
+{:.image }
 
 
 ## Create Node
@@ -44,9 +47,10 @@ model.Nodes.Add(node);
 
 {% endhighlight %}
 
-  ![](Node_images/Node_img2.png)  
 
 
+ ![](Node_images/Node_img2.png) 
+{:.image }
 
 
 List of preloaded nodes from symbol palette are added to the Diagram by clicking the palette nodes or by dragging a node and dropping on the Diagram. The method to add node/connector to palette and drag and drop on Diagram is explained in palette section
@@ -97,8 +101,10 @@ node.Shape = BasicShapes.Ellipse;
 
 {% endhighlight %}
 
-  ![](Node_images/Node_img3.png)  
 
+
+ ![](Node_images/Node_img3.png) 
+{:.image }
 
 
 Html
@@ -150,7 +156,9 @@ node.Value="button";
 {% endhighlight %}
 
 
- ![](Node_images/Node_img4.png)  
+
+![](Node_images/Node_img4.png) 
+{:.image }
 
 
 Text Node
@@ -179,8 +187,8 @@ node.TextBlock = block;
 
 
 
-![](Node_images/Node_img5.png)
-
+ ![](Node_images/Node_img5.png) 
+{:.image }
 
 
 Path
@@ -202,7 +210,11 @@ node.PathData = "M 67.2947 100 L 67.2947 0.00102291 L 59.138 0.00102291 M 100 50
 
 
 {% endhighlight %}
-  ![C:/Users/labuser/Desktop/a.png](Node_images/Node_img6.png)  
+
+
+
+ ![C:/Users/labuser/Desktop/a.png](Node_images/Node_img6.png) 
+{:.image }
 
 
 Polygon
@@ -252,8 +264,9 @@ node.Points = points;
 {% endhighlight %}
 
 
- ![](Node_images/Node_img7.png)  
 
+![](Node_images/Node_img7.png) 
+{:.image }
 
 
 Native 
@@ -311,8 +324,9 @@ node.Text="Mail";
 {% endhighlight %}
 
 
-![](Node_images/Node_img8.png)  
 
+![](Node_images/Node_img8.png) 
+{:.image }
 
 
 
@@ -357,7 +371,8 @@ node.Source = "sample/Syncfusion.PNG";
 {% endhighlight %}
 
 
-  ![](Node_images/Node_img10.png)  
+ ![](Node_images/Node_img10.png) 
+{:.image }
 
 
 ## Shadow
@@ -365,7 +380,7 @@ node.Source = "sample/Syncfusion.PNG";
 Dropshadoweffect for a node can be enabled or disabled by using the NodeConstraints.Shadow. The following image represents the drop shadow effect for a Node.
 
 ![](Node_images/Node_img11.png) 
-
+{:.image }
 
 
 {% highlight c# %}
@@ -408,7 +423,10 @@ node.Shadow.Angle = 50;
 
 {% endhighlight %}
 
-![](Node_images/Node_img12.png)
+
+
+![](Node_images/Node_img12.png) 
+{:.image }
 
 
 ## Appearance
@@ -419,10 +437,10 @@ _Appearance_
 
 <table>
 <tr>
-<th>
-Properties</th><th>
-Data Type</th><th>
-Description</th></tr>
+<td>
+Properties</td><td>
+Data Type</td><td>
+Description</td></tr>
 <tr>
 <td>
 Visible</td><td>
@@ -515,8 +533,8 @@ node.LinearGradient = gradient;
 
 
 
- ![](Node_images/Node_img13.png) 
-
+![](Node_images/Node_img13.png) 
+{:.image }
 
 
 ## Constraints
@@ -529,9 +547,9 @@ _Constraints_
 
 <table>
 <tr>
-<th>
-Constraints</th><th>
-Description</th></tr>
+<td>
+Constraints</td><td>
+Description</td></tr>
 <tr>
 <td>
 Select</td><td>
@@ -628,8 +646,9 @@ node.Constraints = NodeConstraints.Select| NodeConstraints.Rotate;
 
 
 {% endhighlight %}
- ![http://help.syncfusion.com/ug/js/ImagesExt/image59_17.jpg](Node_images/Node_img14.jpeg) 
 
+ ![http://help.syncfusion.com/ug/js/ImagesExt/image59_17.jpg](Node_images/Node_img14.jpeg) 
+{:.image }
 
 
 The following code illustrates how to disable rotate constraints. Disabling rotate constraint does not allow you to rotate the node.
@@ -649,7 +668,9 @@ node.Constraints = node.Constraints &~ NodeConstraints.Rotate;
 {% endhighlight %}
 
 
+
  ![http://help.syncfusion.com/ug/js/ImagesExt/image59_18.jpg](Node_images/Node_img15.jpeg) 
+{:.image }
 
 
 _Note: Node’s constraints property is manipulated by using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations.

@@ -53,8 +53,8 @@ Add the following styles to render the WaitingPopup control
 
 The following screenshot displays the output for the above code.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
-
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
+{:.image }
 
 
 ## Template
@@ -207,8 +207,9 @@ _Note: Images for this sample are available at ‘installed location/Content/ima
 
 Run the above code for the following output.
 
+![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
+{:.image }
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 ## CSS Class
 
@@ -272,7 +273,8 @@ Define the CSS class for customizing the WaitingPopup control.
 
 The following screenshot displays the output for the above code.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
+![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
+{:.image }
 
 
 

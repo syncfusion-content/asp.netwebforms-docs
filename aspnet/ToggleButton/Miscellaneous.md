@@ -30,7 +30,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 Run the above code to render the following output.
 
 ![](Miscellaneous_images/Miscellaneous_img1.png) 
-
+{:.image }
 
 
 ## Prevent Toggle
@@ -54,6 +54,6 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 Run the above code to render the following output.
 
 ![](Miscellaneous_images/Miscellaneous_img2.png) 
-
+{:.image }
 
 

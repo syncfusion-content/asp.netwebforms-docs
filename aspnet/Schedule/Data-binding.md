@@ -7,7 +7,7 @@ control: Schedule
 documentation: ug
 ---
 
-## Data-binding
+# Data-binding
 
 * To render appointments to the Schedule control, you are required to bind the appointment data. The following sub-properties helps you to bind either the local/remote data to the Schedule control by binding the appropriate appointment data fields to the corresponding options.
 
@@ -79,39 +79,39 @@ The Schedule control provides support to observe the Daylight Saving Time (DST).
 
 The following code example explains how to include the Daylight saving time option.
 
+{% highlight html %}
 
-
- &lt;%-- enables the Daylight Saving time property to the schedule --%&gt;
-
-
-
-&lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
-
-    &lt;div&gt;
+ <%-- enables the Daylight Saving time property to the schedule --%>
 
 
 
-&lt;ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/12/2014" IsDST = "true"&gt;
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
 
-    &lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/&gt;
-
-&lt;/ej:Schedule&gt;
+    <div>
 
 
 
-    &lt;/div&gt;
+<ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/12/2014" IsDST = "true">
 
-    &lt;asp:SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings:ScheduleConnectionString %&gt;"
+    <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
 
-            SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
-
-
+</ej:Schedule>
 
 
 
-appointment settings:
+    </div>
 
-location
+    <asp:SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings:ScheduleConnectionString %>"
+
+            SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+
+
+{% endhighlight %}
+
+##appointment settings:
+
+###location
 
 * It maps the corresponding location field name from the data table or JSON data, to the location property of the Schedule control.
 * To display the “location field” enable the property “showLocationField”. ShowLocationField is used to display/show the appointments/events location details.
@@ -119,40 +119,44 @@ location
 
 
 
+{% highlight html %}
 
 
-[ASP.NET]
-
-&lt;ej:Schedule ID="Schedule1" Width="100%" runat="server" DataSourceID="ScheduleData" ShowLocationField="true"&gt; // To display the Location field in the appointment Window need to enable this property
-
-&lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" Location="Location"/&gt; // To display the Location value need to bind the property like this
-
-&lt;/ej:Schedule&gt;
-
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
-
-SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
 
 
+
+<ej:Schedule ID="Schedule1" Width="100%" runat="server" DataSourceID="ScheduleData" ShowLocationField="true"> // To display the Location field in the appointment Window need to enable this property
+
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" Location="Location"/> // To display the Location value need to bind the property like this
+
+</ej:Schedule>
+
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
+
+SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+{% endhighlight %}
 
 On executing the above specified code the Location field will be added in the create appointment window as follows:
 
-{ ![C:/Users/karthigeyan/Desktop/a.png](Data-binding_images/Data-binding_img1.png) | markdownify }
-{:.image }
+![C:/Users/karthigeyan/Desktop/a.png](Data-binding_images/Data-binding_img1.png)
 
 
-priority
+###priority
 
 * It maps the corresponding priority field name from the data table or JSON data, to the priority property of the Schedule control.
 
 
 
-Local data
+###Local data
 
 * You can locally assign the data to Scheduler control. Inorder to define the local data to the Scheduler control, map the user-defined json data names with its appropriate dataSource column names. 
 * Specify the valid array of appointment objects to the dataSource property of the Schedule control as shown in the below code. 
 
+{% highlight html %}
 [ASP]
+
+
 
 <ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData"              Width="100%"
 
@@ -162,78 +166,75 @@ CurrentView="Month">
 
 
 
-&lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/&gt;
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
 
-&lt;/ej:Schedule&gt;
-
-
-
-&lt;asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="&lt;%$ ConnectionStrings: ScheduleConnectionString %&gt;"
-
-SelectCommand="SELECT * FROM [DefaultSchedule]">&lt;/asp:SqlDataSource&gt;
+</ej:Schedule>
 
 
+
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
+
+SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+{% endhighlight %}
 
 On executing the above specified code the Scheduler displays the appointments across the specific timeslots as follows:
 
 
 
-{ ![](Data-binding_images/Data-binding_img2.png) | markdownify }
-{:.image }
+![](Data-binding_images/Data-binding_img2.png)
 
 
-_Figure_ _50__: schedule with Local Data Binding_
-
-
+_Figure_ _50_: schedule with Local Data Binding_
 
 
 
 
 
-Remote data
+
+
+###Remote data
 
 * Apart from assinging the local data you can bind the remote data to the Schedule control using service url.
 * Inorder to avail that option refer the following steps:
 
 
-
-[ASP]
-
+{% highlight html %}
 
 
-&lt;ej:Schedule runat="server" ID="Schedule1" Width="100%" Height="525px" AllowDragDrop="false" EnableAppointmentResize="false" CurrentDate="5/6/2014" Create="onCreate"&gt;
-
-&lt;%--query to fetch the records from the specified table “Events”-- %&gt;
-
-&lt;AppointmentSettings Id="Id" Subject="Subject" StartTime="StartTime" EndTime="EndTime" AllDay="AllDay" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule"/&gt;
-
-&lt;%--referring data from remote service url binding-- %&gt;
-
-&lt;DataManager CrossDomain="true" URL="http://mvc.syncfusion.com/OdataServices/Northwnd.svc/Events"/&gt;
-
-&lt;/ej:Schedule&gt;
 
 
+<ej:Schedule runat="server" ID="Schedule1" Width="100%" Height="525px" AllowDragDrop="false" EnableAppointmentResize="false" CurrentDate="5/6/2014" Create="onCreate">
+
+<%--query to fetch the records from the specified table “Events”-- %>
+
+<AppointmentSettings Id="Id" Subject="Subject" StartTime="StartTime" EndTime="EndTime" AllDay="AllDay" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule"/>
+
+<%--referring data from remote service url binding-- %>
+
+<DataManager CrossDomain="true" URL="http://mvc.syncfusion.com/OdataServices/Northwnd.svc/Events"/>
+
+</ej:Schedule>
+
+{% endhighlight %}
 
 The following screenshot displays the remote data bound to the Schedule control.
 
 
-{ ![](Data-binding_images/Data-binding_img3.png) | markdownify }
-{:.image }
+![](Data-binding_images/Data-binding_img3.png)
 
 
 Figure 51: Schedule with Remote Data Binding
 
-Load On Demand
+##Load On Demand
 
 * Load on demand is a powerful technique that is used to reduce the bandwidth size of consuming data. Load on demand support has been added in our Schedule control, so that, it retrieves only the required appointment data from service/database during loading time, and that too for the current view. 
-* The__enableLoadOnDemand property is used to enable or disable the load on demand functionality of the schedule.
+* The_enableLoadOnDemand property is used to enable or disable the load on demand functionality of the schedule.
 * If you have developer tools, you can capture the network transfer to check the consumed data of the Schedule. The following screnshot shows the data being loaded in Schedule.
 
 
 
-{ ![C:/Users/maheshp/Pictures/a2.PNG](Data-binding_images/Data-binding_img4.png) | markdownify }
-{:.image }
+![C:/Users/maheshp/Pictures/a2.PNG](Data-binding_images/Data-binding_img4.png)
 
 
 _Figure 3: Schedule demanded data_
@@ -243,25 +244,24 @@ _Figure 3: Schedule demanded data_
 The following code example shows you how load on demand works with Schedule.
 
 
-
+{% highlight html %}
 
 
 <table>
 <tr>
 <td>
-[ASPX]&lt;%-- Enable load on demand property to the schedule -- %&gt;&lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;&lt;div&gt;&lt;ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" Width="100%" Height="525px" EnableLoadOnDemand="true" EnableAppointmentNavigation="false" CurrentDate="5/2/2014"&gt;&lt;DataManager  URL="LoadOnDemand.aspx/Data" Adaptor="UrlAdaptor" /&gt;&lt;AppointmentSettings Id="ID" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" /&gt;&lt;/ej:Schedule&gt;&lt;/div&gt;&lt;/asp:Content&gt;</td></tr>
+[ASPX]<%-- Enable load on demand property to the schedule -- %><asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"><div><ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" Width="100%" Height="525px" EnableLoadOnDemand="true" EnableAppointmentNavigation="false" CurrentDate="5/2/2014"><DataManager  URL="LoadOnDemand.aspx/Data" Adaptor="UrlAdaptor" /><AppointmentSettings Id="ID" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" /></ej:Schedule></div></asp:Content></td></tr>
 <tr>
 <td>
-[ASPX.CS]//Refer the required namespacepublic partial class LoadOnDemand : System.Web.UI.Page{protected void Page_Load(object sender, EventArgs e){HttpContext.Current.Session["Appointments"] = null;}//To Get the records from database then filter the collection and return appointment list with count details.[WebMethod][ScriptMethod(ResponseFormat = ResponseFormat.Json)]public static object Data(String CurrentView, String CurrentAction, DateTime CurrentDate){var data = FilterAppointment(CurrentDate, CurrentAction, CurrentView);BatchDataResult result = new BatchDataResult();result.result = data;result.count = GetAllRecords ().ToList ().Count > 0? GetAllRecords().ToList().Max(p => p.ID) : 1;return result;}public class BatchDataResult{public IEnumerable result { get; set; }public int count { get; set; }}public static ScheduleAppointmentsObjData GetObjectValue(Dictionary<string, object> objValue){Dictionary<string, object> KeyVal = objValue;ScheduleAppointmentsObjData appointValue = new ScheduleAppointmentsObjData();foreach (KeyValuePair<string, object> keyval in KeyVal){if (keyval.Key == "ID")appointValue.ID = Convert.ToInt32(keyval.Value);else if (keyval.Key == "Subject")appointValue.Subject = Convert.ToString(keyval.Value);else if (keyval.Key == "Location")appointValue.Location = Convert.ToString(keyval.Value);else if (keyval.Key == "StartTime")appointValue.StartTime = Convert.ToDateTime(keyval.Value).ToString("MM'/'dd'/'yyyy hh:mm:ss tt");else if (keyval.Key == "EndTime")appointValue.EndTime = Convert.ToDateTime(keyval.Value).ToString("MM'/'dd'/'yyyy hh:mm:ss tt");else if (keyval.Key == "Description")appointValue.Description = Convert.ToString(keyval.Value);else if (keyval.Key == "AllDay")appointValue.AllDay = Convert.ToBoolean(keyval.Value);else if (keyval.Key == "Recurrence")appointValue.Recurrence = Convert.ToBoolean(keyval.Value);else if (keyval.Key == "RecurrenceRule")appointValue.RecurrenceRule = Convert.ToString(keyval.Value);}return appointValue;}public static IList<ScheduleAppointmentsObjData> GetAllRecords(){IList<ScheduleAppointmentsObjData> appoint = (IList<ScheduleAppointmentsObjData>)HttpContext.Current.Session["Appointments"];ScheduleAppointmentsObjDatum obj = new ScheduleAppointmentsObjDatum();if (appoint == null)HttpContext.Current.Session["Appointments"] = appoint = obj.GetRecords().ToList();return appoint;}//To filter the appointment based on current date, current action and current viewpublic static List<ScheduleAppointmentsObjData> FilterAppointment(DateTime CurrentDate, String CurrentAction, String CurrentView){DateTime CurrDate = Convert.ToDateTime(CurrentDate);DateTime StartDate = FirstWeekDate(CurrDate.Date);DateTime EndDate = FirstWeekDate(CurrDate.Date);List<ScheduleAppointmentsObjData> appointmentList = GetAllRecords().ToList();switch (CurrentView){case "day":StartDate = CurrentDate;EndDate = CurrentDate;break;case "week":EndDate = EndDate.AddDays(7);break;case "workweek":EndDate = EndDate.AddDays(5);break;case "month":StartDate = CurrDate.Date.AddDays(-CurrDate.Day + 1);EndDate = StartDate.AddMonths(1);break;}appointmentList = GetAllRecords().ToList().Where(app =>((DateTime.ParseExact(app.StartTime.ToString(), "MM/dd/yyyy hh:mm:ss tt", CultureInfo.InvariantCulture).ToLocalTime().Date >= Convert.ToDateTime(StartDate.Date)) &&(DateTime.ParseExact(app.StartTime.ToString(), "MM/dd/yyyy hh:mm:ss tt", CultureInfo.InvariantCulture).ToLocalTime().Date <= Convert.ToDateTime(EndDate.Date)) || app.Recurrence == true)).ToList();return appointmentList;}//To Get first day of schedule based on current dateinternal static DateTime FirstWeekDate(DateTime CurrentDate){try{DateTime FirstDayOfWeek = CurrentDate;DayOfWeek WeekDay = FirstDayOfWeek.DayOfWeek;switch (WeekDay){case DayOfWeek.Sunday:break;case DayOfWeek.Monday:FirstDayOfWeek = FirstDayOfWeek.AddDays(-1);break;case DayOfWeek.Tuesday:FirstDayOfWeek = FirstDayOfWeek.AddDays(-2);break;case DayOfWeek.Wednesday:FirstDayOfWeek = FirstDayOfWeek.AddDays(-3);break;case DayOfWeek.Thursday:FirstDayOfWeek = FirstDayOfWeek.AddDays(-4);break;case DayOfWeek.Friday:FirstDayOfWeek = FirstDayOfWeek.AddDays(-5);break;case DayOfWeek.Saturday:FirstDayOfWeek = FirstDayOfWeek.AddDays(-6);break;}return (FirstDayOfWeek);}catch{return DateTime.Now;}}}</td></tr>
+[ASPX.CS]//Refer the required namespacepublic partial class LoadOnDemand : System.Web.UI.Page{protected void Page_Load(object sender, EventArgs e){HttpContext.Current.Session["Appointments"] = null;}//To Get the records from database then filter the collection and return appointment list with count details.[WebMethod][ScriptMethod(ResponseFormat = ResponseFormat.Json)]public static object Data(String CurrentView, String CurrentAction, DateTime CurrentDate){var data = FilterAppointment(CurrentDate, CurrentAction, CurrentView);BatchDataResult result = new BatchDataResult();result.result = data;result.count = GetAllRecords ().ToList ().Count > 0? GetAllRecords().ToList().Max(p => p.ID) : 1;return result;}public class BatchDataResult{public IEnumerable result { get; set; }public int count { get; set; }}public static ScheduleAppointmentsObjData GetObjectValue(Dictionary<string, object> objValue){Dictionary<string, object> KeyVal = objValue;ScheduleAppointmentsObjData appointValue = new ScheduleAppointmentsObjData();foreach (KeyValuePair<string, object> keyval in KeyVal){if (keyval.Key == "ID")appointValue.ID = Convert.ToInt32(keyval.Value);else if (keyval.Key == "Subject")appointValue.Subject = Convert.ToString(keyval.Value);else if (keyval.Key == "Location")appointValue.Location = Convert.ToString(keyval.Value);else if (keyval.Key == "StartTime")appointValue.StartTime = Convert.ToDateTime(keyval.Value).ToString("MM'/'dd'/'yyyy hh:mm:ss tt");else if (keyval.Key == "EndTime")appointValue.EndTime = Convert.ToDateTime(keyval.Value).ToString("MM'/'dd'/'yyyy hh:mm:ss tt");else if (keyval.Key == "Description")appointValue.Description = Convert.ToString(keyval.Value);else if (keyval.Key == "AllDay")appointValue.AllDay = Convert.ToBoolean(keyval.Value);else if (keyval.Key == "Recurrence")appointValue.Recurrence = Convert.ToBoolean(keyval.Value);else if (keyval.Key == "RecurrenceRule")appointValue.RecurrenceRule = Convert.ToString(keyval.Value);}return appointValue;}public static IList<ScheduleAppointmentsObjData> GetAllRecords(){IList<ScheduleAppointmentsObjData> appoint = (IList<ScheduleAppointmentsObjData>)HttpContext.Current.Session["Appointments"];ScheduleAppointmentsObjDatum obj = new ScheduleAppointmentsObjDatum();if (appoint == null)HttpContext.Current.Session["Appointments"] = appoint = obj.GetRecords().ToList();return appoint;}//To filter the appointment based on current date, current action and current viewpublic static List<ScheduleAppointmentsObjData> FilterAppointment(DateTime CurrentDate, String CurrentAction, String CurrentView){DateTime CurrDate = Convert.ToDateTime(CurrentDate);DateTime StartDate = FirstWeekDate(CurrDate.Date);DateTime EndDate = FirstWeekDate(CurrDate.Date);List<ScheduleAppointmentsObjData> appointmentList = GetAllRecords().ToList();switch (CurrentView){case "day":StartDate = CurrentDate;EndDate = CurrentDate;break;case "week":EndDate = EndDate.AddDays(7);break;case "workweek":EndDate = EndDate.AddDays(5);break;case "month":StartDate = CurrDate.Date.AddDays(-CurrDate.Day + 1);EndDate = StartDate.AddMonths(1);break;}appointmentList = GetAllRecords().ToList().Where(app =>((DateTime.ParseExact(app.StartTime.ToString(), "MM/dd/yyyy hh:mm:ss tt", CultureInfo.InvariantCulture).ToLocalTime().Date >= Convert.ToDateTime(StartDate.Date)) &&(DateTime.ParseExact(app.StartTime.ToString(), "MM/dd/yyyy hh:mm:ss tt", CultureInfo.InvariantCulture).ToLocalTime().Date <= Convert.ToDateTime(EndDate.Date)) || app.Recurrence == true)).ToList();return appointmentList;}//To Get first day of schedule based on current dateinternal static DateTime FirstWeekDate(DateTime CurrentDate){try{DateTime FirstDayOfWeek = CurrentDate;DayOfWeek WeekDay = FirstDayOfWeek.DayOfWeek;switch (WeekDay){case DayOfWeek.Sunday:break;case DayOfWeek.Monday:FirstDayOfWeek = FirstDayOfWeek.AddDays(-1);break;case DayOfWeek.Tuesday:FirstDayOfWeek = FirstDayOfWeek.AddDays(-2);break;case DayOfWeek.Wednesday:FirstDayOfWeek = FirstDayOfWeek.AddDays(-3);break;case DayOfWeek.Thursday:FirstDayOfWeek = FirstDayOfWeek.AddDays(-4);break;case DayOfWeek.Friday:FirstDayOfWeek = FirstDayOfWeek.AddDays(-5);break;case DayOfWeek.Saturday:FirstDayOfWeek = FirstDayOfWeek.AddDays(-6);break;}return (FirstDayOfWeek);}catch{return DateTime.Now;}}</td></tr>
 </table>
 
 
-
+{% endhighlight %}
 
 The following screenshot is the result of the above code example.
 
-{ ![C:/Users/maheshp/Pictures/s1.PNG](Data-binding_images/Data-binding_img5.png) | markdownify }
-{:.image }
+![C:/Users/maheshp/Pictures/s1.PNG](Data-binding_images/Data-binding_img5.png)
 
 
 _Figure 4: Schedule with load on demand_

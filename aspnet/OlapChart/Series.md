@@ -7,11 +7,11 @@ control: OLAP Chart
 documentation: ug
 ---
 
-# Series
+## Series
 
 Series is a collection of series items that contain the actual data points to be displayed on the chart. Series type allows you to customize the chart type whose appearance/style is customized.
 
-## Series Type Customization
+Series Type Customization
 
 A combination Chart combines two or more series types in a single Chart. But there are some limitations in the combination Chart. They are:
 
@@ -19,24 +19,24 @@ A combination Chart combines two or more series types in a single Chart. But the
 2. Pie Chart can’t be used with other series types.
 
 
-(% highlight html%}
+
 [ASP.NET]
 
-<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection">
+&lt;asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
 
-    <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc">
+    &lt;ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc"&gt;
 
-        <CommonSeriesOptions Type="Column" Tooltip-Visible="true"/>
+        &lt;CommonSeriesOptions Type="Column" Tooltip-Visible="true"/&gt;
 
-        <ClientSideEvents SeriesRendering="onSeriesRenders"/>
+        &lt;ClientSideEvents SeriesRendering="onSeriesRenders"/&gt;
 
-    </ej:OlapChart>
+    &lt;/ej:OlapChart&gt;
 
-</asp:Content>
+&lt;/asp:Content&gt;
 
-<asp:Content ID="Content3" runat="server" ContentPlaceHolderID="ScriptSection">
+&lt;asp:Content ID="Content3" runat="server" ContentPlaceHolderID="ScriptSection"&gt;
 
-    <script type="text/javascript">
+    &lt;script type="text/javascript"&gt;
 
         function onSeriesRenders(args) {
 
@@ -46,39 +46,39 @@ A combination Chart combines two or more series types in a single Chart. But the
 
         }
 
-</script>
+&lt;/script&gt;
 
-</asp:Content>
-(% endhighlight %}
-
-
-![C:/Users/Tamilarasu .M/Pictures/document/Chart/Customizingchartseries.png](Series_images/Series_img1.png) 
+&lt;/asp:Content&gt;
 
 
 
-## Series Points Customization
+{ ![C:/Users/Tamilarasu .M/Pictures/document/Chart/Customizingchartseries.png](Series_images/Series_img1.png) | markdownify }
+{:.image }
+
+
+Series Points Customization
 
 OlapChart series is customized using fill, border width and border color. The stroke-width of the line, spline series is customized using width property of series.  The series color is customized using fill property of series. The border color and width of the column/bar is customized using border property of series. And the column/bar chart are customized using the ‘fill’ and ‘border’ property of each point.
 
 
-(% highlight html%}
+
 [ASP.NET]
 
-<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection">
+&lt;asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
 
-     <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc">
+     &lt;ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc"&gt;
 
-        <CommonSeriesOptions Type="Column"/>
+        &lt;CommonSeriesOptions Type="Column"/&gt;
 
-        <ClientSideEvents SeriesRendering="onSeriesRenders" />
+        &lt;ClientSideEvents SeriesRendering="onSeriesRenders" /&gt;
 
-    </ej:OlapChart>
+    &lt;/ej:OlapChart&gt;
 
-</asp:Content>
+&lt;/asp:Content&gt;
 
-<asp:Content ID="Content3" runat="server" ContentPlaceHolderID="ScriptSection">
+&lt;asp:Content ID="Content3" runat="server" ContentPlaceHolderID="ScriptSection"&gt;
 
-<script type="text/javascript">
+&lt;script type="text/javascript"&gt;
 
         function onSeriesRenders(args) {
 
@@ -88,9 +88,9 @@ OlapChart series is customized using fill, border width and border color. The st
 
         }
 
-</script>
+&lt;/script&gt;
 
-</asp:Content>
-(% endhighlight %}
+&lt;/asp:Content&gt;
+
 
 

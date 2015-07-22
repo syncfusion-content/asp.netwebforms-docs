@@ -12,7 +12,7 @@ documentation: ug
 The content in the OLAP Client control can be exported to Excel, Word and PDF documents.
 
  ![](Exporting_images/Exporting_img1.png) 
-
+{:.image }
 
 {% highlight html %}
 
@@ -22,7 +22,7 @@ Exporting feature provides you a mode option that allows you to export either Ol
 
          ClientExportMode="ChartAndGrid">
 
-</ej:OlapClient>
+&lt;/ej:OlapClient&gt;
 
 {% endhighlight %}
 
@@ -58,15 +58,15 @@ public void Export(Stream stream)
 
 
 ![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/OlapClientExcelWeb.png](Exporting_images/Exporting_img2.png) 
-
+{:.image }
 
 
 ![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/OlapClientWordWeb.png](Exporting_images/Exporting_img3.png) 
-
+{:.image }
 
 
 ![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/OlapClientPdfWeb.png](Exporting_images/Exporting_img4.png) 
-
+{:.image }
 
 
 

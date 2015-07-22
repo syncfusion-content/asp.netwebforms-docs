@@ -7,17 +7,17 @@ control: TreeView
 documentation: ug
 ---
 
-# Data Binding 
+## Data Binding 
 
 The TreeView is populated with the node information taken from a data source. The TreeView supports binding data sources containing hierarchical data and supports both local data and remote data, for retrieving data from a specified data source. You can also display the hierarchical data in TreeView. TreeView exposes its specific data-related properties allowing you to specify from which data source field the node information is to be retrieved from.
 
 You can populate TreeView items by using data binding support such as JSON and OData services. 
 
-## Fields
+### Fields
 
 The Field property in TreeView includes the data source fields and it can be set with appropriate values as follows.
 
-## Local Data
+### Local Data
 
 To bind the Local Data to the TreeView control, map the user-defined json data names with its appropriate data source field. You can bind data to TreeView by mapping fields such as dataSource,id, parentId, text, hasChild and expanded. 
 
@@ -183,11 +183,11 @@ public class TreeLocalDataSource
 
 
 
- ![](Data-Binding_images/Data-Binding_img1.png) 
+{ ![](Data-Binding_images/Data-Binding_img1.png) | markdownify }
+{:.image }
 
 
-
-## Remote Data
+### Remote Data
 
 You can bind TreeView to Remote Data by using dataManager and the query in fields is used to retrieve the data. dataManager supports the following types of data-binding: JSON, Web Services, oData. It uses two different classes; ej.DataManager for processing, and ej.Query for serving data. ej.DataManager communicates with data source and ej.Query generates data queries that are read by the dataManager. In the following link, how to create dataManager is explained in full detail.
 
@@ -234,12 +234,12 @@ protected void Page_Load(object sender, EventArgs e)
 {% endhighlight %}
 
 
- ![D:/RESPONSE/UG DOC/remotedata.PNG](Data-Binding_images/Data-Binding_img2.png)
+
+{ ![D:/RESPONSE/UG DOC/remotedata.PNG](Data-Binding_images/Data-Binding_img2.png) | markdownify }
+{:.image }
 
 
-
-
-## SQL Data
+### SQL Data
 
 TreeView provides extensive data binding support to populate TreeView nodes, so that the values can be mapped to the TreeView fields from an existing SQL data source by using DataSourceID property. 
 
@@ -252,11 +252,11 @@ The following image displays the sample database used.
 <table>
 <tr>
 <td>
-{{'![](Data-Binding_images/Data-Binding_img3.png)' | markdownify }}
-
+![](Data-Binding_images/Data-Binding_img3.png)
+{:.image }
 </td><td>
-{{'![](Data-Binding_images/Data-Binding_img4.png)' | markdownify }}
-
+![](Data-Binding_images/Data-Binding_img4.png)
+{:.image }
 </td></tr>
 </table>
 In the Design page, assign the values for DataTextField, DataIdField, DataParentIdField, DataHasChildField. In DataSourceID field assign the ID of the existing SQL data source
@@ -279,14 +279,11 @@ In the Design page, assign the values for DataTextField, DataIdField, DataParent
 
 {% endhighlight %}
 
-
- ![](Data-Binding_images/Data-Binding_img5.png) 
-
-
+{ ![](Data-Binding_images/Data-Binding_img5.png) | markdownify }
+{:.image }
 
 
-
-## Object DataSource
+### Object DataSource
 
 TreeView provides ObjectDataSource data binding support to populate TreeView nodes, so that the values can be mapped to the TreeView fields from an existing ObjectDataSource by using DataSourceID property. 
 
@@ -461,12 +458,12 @@ In the Design page, assign the values for DataTextField, DataIdField, DataParent
 {% endhighlight %}
 
 
- ![](Data-Binding_images/Data-Binding_img6.png)  
+
+{ ![](Data-Binding_images/Data-Binding_img6.png) | markdownify }
+{:.image }
 
 
-
-
-## Linq-to-SQL Data
+### Linq-to-SQL Data
 
 TreeView provides extensive data binding support to populate TreeView nodes, so that the values can be mapped to the TreeView fields from an existing Linq-to-SQL data source by using DataSourceID property. 
 
@@ -479,11 +476,11 @@ Define a Linq-to-SQL data source in the web page and configure the data source a
 <table>
 <tr>
 <td>
-{{'![](Data-Binding_images/Data-Binding_img7.png)' | markdownify }}
-
+![](Data-Binding_images/Data-Binding_img7.png)
+{:.image }
 </td><td>
-{{'![](Data-Binding_images/Data-Binding_img8.png)' | markdownify }}
-
+![](Data-Binding_images/Data-Binding_img8.png)
+{:.image }
 </td></tr>
 </table>
 In the Design page, assign values for DataTextField, DataIdField, DataParentIdField DataHasChildField. In DataSourceID field assign the ID of the existing Linq-to-SQL data source.
@@ -507,11 +504,12 @@ DataExpandedField="Expanded">
 {% endhighlight %}
 
 
- ![](Data-Binding_images/Data-Binding_img9.png)  
+
+{ ![](Data-Binding_images/Data-Binding_img9.png) | markdownify }
+{:.image }
 
 
-
-## XML Data
+### XML Data
 
 TreeView provides XML data binding support to populate TreeeView nodes, so that the values can be mapped to the TreeView fields from an existing XML data by using DataSourceID property. 
 
@@ -605,8 +603,10 @@ Load the nodes of TreeView in the xml data as follows.
 
 {% endhighlight %}
 
- ![](Data-Binding_images/Data-Binding_img10.png)  
 
+
+{ ![](Data-Binding_images/Data-Binding_img10.png) | markdownify }
+{:.image }
 
 
 

@@ -7,7 +7,7 @@ control: Rating
 documentation: ug
 ---
 
-## Orientation
+# Orientation
 
 Rating provides support for the vertical orientation. By default, Rating renders with horizontal orientation. You can the change the orientation by the orientation property.
 
@@ -47,7 +47,7 @@ Add the following code example to the corresponding ASPX page to render the Ra
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Orientation_images/Orientation_img1.png) | markdownify }
-{:.image }
+![](Orientation_images/Orientation_img1.png)
+
 
 

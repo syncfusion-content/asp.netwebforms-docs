@@ -25,7 +25,7 @@ You can refer to the following online link reference for globalize.culture.js
 
 You can get the script file of various cultures from the following path:
 
-"<Installed Location>\Syncfusion\Essential Studio\<version>\JavaScript\assets\external\cultures"
+"&lt;Installed Location&gt;\Syncfusion\Essential Studio\&lt;version&gt;\JavaScript\assets\external\cultures"
 
 You can dynamically change the language based on their culture.
 
@@ -48,8 +48,8 @@ Add the following code example in your ASPX page to render the NumericTextbox co
 The following screenshot displays the output of the NumericTextbox with localization.
 
 ![C:/Users/giftline.jebamani/Desktop/n.png](Localization-Support_images/Localization-Support_img1.png) 
-
+{:.image }
 ![C:/Users/giftline.jebamani/Desktop/na.png](Localization-Support_images/Localization-Support_img2.png) 
-
+{:.image }
 
 

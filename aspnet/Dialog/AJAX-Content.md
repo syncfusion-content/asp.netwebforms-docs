@@ -220,6 +220,6 @@ Content in the twitter.html.
 The output of Dialog with AJAX content.
 
 ![](AJAX-Content_images/AJAX-Content_img1.png) 
-
+{:.image }
 
 

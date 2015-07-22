@@ -7,9 +7,9 @@ control: TreeView
 documentation: ug
 ---
 
-# Appearance and Styling
+## Appearance and Styling
 
-## Theme
+### Theme
 
 TreeView control’s style and appearance can be controlled based on CSS classes. In order to apply styles to the TreeView control, you can refer to two files namely, ej.widgets.core.min.css and ej.theme.min.css. When you refer to the file ej.widgets.all.min.css, it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project, as ej.widgets.all.min.css is the combination of these two. 
 
@@ -31,7 +31,7 @@ By default, there are 13 themes support available for TreeView control namely,
 
 
 
-## Css Class
+### Css Class
 
 Sets the root class for TreeView theme. This cssClass API helps you to use custom skinning option for TreeView control. By defining the root class by using this API, you can include this root class in CSS.
 
@@ -176,15 +176,16 @@ Define CSS class for customizing the TreeView.
 {% endhighlight %}
 
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
+
+{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) | markdownify }
+{:.image }
 
 
-
-## Adjusting TreeView Size
+### Adjusting TreeView Size
 
 You can adjust the TreeView size, height and width, by using the properties width and height.
 
-### Height
+#### Height
 
 You can customize the height of the TreeView control by using the Height property.
 
@@ -303,11 +304,12 @@ In the ASPX page, add elements to configure TreeView.
 {% endhighlight %}
 
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
+
+{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) | markdownify }
+{:.image }
 
 
-
-### Width
+#### Width
 
 You can customize the width of the TreeView control by using the Width property. By specifying the Width property, you can change the Width value in the document.
 
@@ -426,7 +428,9 @@ In the ASPX page, add elements to configure TreeView.
 {% endhighlight %}
 
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
+
+{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) | markdownify }
+{:.image }
 
 
 

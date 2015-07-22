@@ -100,6 +100,6 @@ The following screenshot is displays multiple Dialog controls in the same page.
 
 
 ![](Multiple-Dialog-Support_images/Multiple-Dialog-Support_img1.png) 
-
+{:.image }
 
 

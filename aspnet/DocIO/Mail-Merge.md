@@ -2348,13 +2348,13 @@ document.Save("sample.doc")
 
 End Sub
 
-'''&lt;summary&gt;
+''&lt;summary&gt;
 
-'''This is called when mail merge engine encounters Image:XXX merge field in a document.
+''This is called when mail merge engine encounters Image:XXX merge field in a document.
 
-'''You have a chance to return an Image object, file name or a stream that contains the image.
+''You have a chance to return an Image object, file name or a stream that contains the image.
 
-'''&lt;/summary&gt;
+''&lt;/summary&gt;
 
 Private Sub MergeField_ProductImage(ByVal sender As Object, ByVal args As MergeImageFieldEventArgs)
 
@@ -2370,11 +2370,11 @@ End If
 
 End Sub
 
-'''&lt;summary&gt;
+''&lt;summary&gt;
 
-'''Creates DataTable and fills it with data.
+''Creates DataTable and fills it with data.
 
-'''&lt;/summary&gt;
+''&lt;/summary&gt;
 
 Private Shared Function GetDataTable() As DataTable
 

@@ -32,6 +32,6 @@ In the ASPX page, include the following DatePicker control code example to enabl
 The following screenshot displays the output for the above code.
 
 ![](RTL-Support_images/RTL-Support_img1.png) 
-
+{:.image }
 
 

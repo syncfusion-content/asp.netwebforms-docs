@@ -263,7 +263,7 @@ Output of the above steps.
 
 
 
-{ ![](Cascading-Support_images/Cascading-Support_img1.png) | markdownify }
+![](Cascading-Support_images/Cascading-Support_img1.png)
 {:.image }
 
 

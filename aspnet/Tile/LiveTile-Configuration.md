@@ -7,7 +7,7 @@ control: Tile
 documentation: ug
 ---
 
-# LiveTile Configuration
+## LiveTile Configuration
 
 Live Tiles are used to display the current or up to date information like scores, stocks, weather, etc. You can enable Live Tile using “data-ej-livetile-enabled” attribute by setting it to true. The “data-ej-livetile-type” attribute allows you to specify the type of animation while updating the information in Tile. There are three types of Tile animation supported: Flip, Slide and Carousel.
 

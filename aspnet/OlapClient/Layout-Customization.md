@@ -27,19 +27,19 @@ In Tile View representation, both Grid and Chart will be displayed one over the 
 
 {% highlight html %}
 
+[ASP.NET]
 
+&lt;ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc"&gt;
 
-<ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc">
+    &lt;DisplaySettings ControlPlacement="Tile" /&gt;
 
-    <DisplaySettings ControlPlacement="Tile" />
-
-</ej:OlapClient>
+&lt;/ej:OlapClient&gt;
 
 {% endhighlight  %}
 
 
 ![](Layout-Customization_images/Layout-Customization_img1.png) 
-
+{:.image }
 
 
 Tab View
@@ -49,19 +49,21 @@ In Tab View representation, both Grid and Chart will be displayed in a separate 
 
 {% highlight html %}
 
+[ASP.NET]
 
 
-<ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc">
 
-     <DisplaySettings ControlPlacement="Tab" />
+&lt;ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc"&gt;
 
- </ej:OlapClient>
+     &lt;DisplaySettings ControlPlacement="Tab" /&gt;
+
+ &lt;/ej:OlapClient&gt;
 
 {% endhighlight %}
 
 
 ![](Layout-Customization_images/Layout-Customization_img2.png) 
-
+{:.image }
 
 
 ## Default View
@@ -75,19 +77,19 @@ To display/visualize Chart control by default, set defaultView to Chart.
 
 {% highlight html %}
 
+[ASP.NET]
 
+&lt;ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc"&gt;
 
-<ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc">
+    &lt;DisplaySettings DefaultView="Chart"/&gt;
 
-    <DisplaySettings DefaultView="Chart"/>
-
-</ej:OlapClient>
+&lt;/ej:OlapClient&gt;
 
 
 {% endhighlight %}
 
  ![](Layout-Customization_images/Layout-Customization_img3.png) 
-
+{:.image }
 
 
 Grid View
@@ -97,18 +99,19 @@ To display/visualize Grid control by default, set defaultView to Grid.
 
 {% highlight html %}
 
+[ASP.NET]
 
- <ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc">
+ &lt;ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc"&gt;
 
-    <DisplaySettings DefaultView="Grid"/>
+    &lt;DisplaySettings DefaultView="Grid"/&gt;
 
-</ej:OlapClient>
+&lt;/ej:OlapClient&gt;
 
 {% endhighlight  %}
 
 
 ![](Layout-Customization_images/Layout-Customization_img4.png) 
-
+{:.image }
 
 
 ## Hide Grid/Chart
@@ -121,19 +124,19 @@ After you set the displayMode option to GridOnly, the Chart is hidden and the d
 
 {% highlight html %}
 
+[ASP.NET]
 
+ &lt;ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc"&gt;
 
- <ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc">
+    &lt;DisplaySettings Mode="GridOnly"/&gt;
 
-    <DisplaySettings Mode="GridOnly"/>
-
-</ej:OlapClient>
+&lt;/ej:OlapClient&gt;
 
 {% endhighlight  %}
 
 
 ![](Layout-Customization_images/Layout-Customization_img5.png) 
-
+{:.image }
 
 
 Chart Only
@@ -144,18 +147,19 @@ After you set the displayMode option to ChartOnly, the Grid is hidden and data 
 
 {% highlight html %}
 
+[ASP.NET]
 
-<ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc">
+&lt;ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc"&gt;
 
-    <DisplaySettings Mode="ChartOnly"/>
+    &lt;DisplaySettings Mode="ChartOnly"/&gt;
 
-</ej:OlapClient>
+&lt;/ej:OlapClient&gt;
 
 
 {% endhighlight %}
 
 ![](Layout-Customization_images/Layout-Customization_img6.png) 
-
+{:.image }
 
 
 Both Grid and Chart
@@ -165,19 +169,19 @@ After you set the displayMode option to ChartAndGrid, data is displayed in both
 
 {% highlight html %}
 
+[ASP.NET]
 
+&lt;ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc" Title="Olap Browser"&gt;
 
-<ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc" Title="Olap Browser">
+    &lt;DisplaySettings Mode="ChartAndGrid"/&gt;
 
-    <DisplaySettings Mode="ChartAndGrid"/>
-
-</ej:OlapClient>
+&lt;/ej:OlapClient&gt;
 
 {% endhighlight %}
 
 
 ![](Layout-Customization_images/Layout-Customization_img7.png) 
-
+{:.image }
 
 
 ## Toggle Panel
@@ -187,20 +191,21 @@ You are provided with an option to toggle the visibility of Axis Element Builder
 
 {% highlight html %}
 
+[ASP.NET]
 
 
 
 <ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc" Title="Olap Browser"
 
-     <DisplaySettings EnableTogglePanel="true"/>
+     &lt;DisplaySettings EnableTogglePanel="true"/&gt;
 
- </ej:OlapClient>
+ &lt;/ej:OlapClient&gt;
 
 {% endhighlight %}
 
 
 ![](Layout-Customization_images/Layout-Customization_img8.png) 
-
+{:.image }
 
 
 ## Maximized/Full Screen View
@@ -210,18 +215,18 @@ You can maximize OLAP Grid and OLAP Chart to full screen mode inside OLAP Client
 
 
  ![](Layout-Customization_images/Layout-Customization_img9.png) 
-
+{:.image }
 
 
 {% highlight html %}
 
+[ASP.NET]
 
+&lt;ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc" Title="Olap Browser"&gt;
 
-<ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc" Title="Olap Browser">
+    &lt;DisplaySettings EnableFullScreen="true"/&gt;
 
-    <DisplaySettings EnableFullScreen="true"/>
-
-</ej:OlapClient>
+&lt;/ej:OlapClient&gt;
 
 {% endhighlight  %}
 
@@ -232,6 +237,6 @@ The following screenshot shows the maximized view of OLAP Grid and OLAP Chart.
 
 
 ![](Layout-Customization_images/Layout-Customization_img10.png) 
-
+{:.image }
 
 

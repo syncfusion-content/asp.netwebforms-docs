@@ -388,7 +388,7 @@ Add the following code example in the ASPX page.
 Output screenshot for the above code example is as follows.
 
 ![](Behavior-Settings_images/Behavior-Settings_img1.png) 
-
+{:.image }
 
 
 ## Animation
@@ -520,7 +520,7 @@ Add the following code example in the ASPX page.
 Output screenshot for the above code example is as follows.
 
 ![](Behavior-Settings_images/Behavior-Settings_img2.png) 
-
+{:.image }
 
 
 ## Title text
@@ -652,7 +652,7 @@ You can specify the title of the Menu control in the ASPX page as follows.
 The following screenshot displays the output of the above code example.
 
 ![](Behavior-Settings_images/Behavior-Settings_img3.png) 
-
+{:.image }
 
 
 ## Show root level arrows
@@ -784,7 +784,7 @@ Add the following code example in the ASPX page.
 The following screenshot displays the output of the above code example.
 
 ![](Behavior-Settings_images/Behavior-Settings_img4.png) 
-
+{:.image }
 
 
 ## Show sub level arrows
@@ -918,6 +918,6 @@ Add the following code example in the ASPX page.
 The following screenshot display the output of the above code example.
 
 ![](Behavior-Settings_images/Behavior-Settings_img5.png) 
-
+{:.image }
 
 

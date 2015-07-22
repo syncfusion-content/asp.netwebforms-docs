@@ -185,6 +185,6 @@ Configure the CSS styles to apply on buttons.
 Run the above code to render the following output.
 
  ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
-
+{:.image }
 
 

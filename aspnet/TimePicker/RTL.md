@@ -30,6 +30,6 @@ The following screenshot illustrates aTimePickercontrol whenEnableRTL is set to 
 
 
  ![](RTL_images/RTL_img1.png) 
-
+{:.image }
 
 

@@ -50,6 +50,6 @@ Position property is used to specify the position whether it is in fixed or rela
 The following screenshot illustrates the output by swiping from left to right at the left end of the screen.
 
 ![](Customize-Position_images/Customize-Position_img1.png) 
-
+{:.image }
 
 

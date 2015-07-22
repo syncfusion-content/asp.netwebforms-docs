@@ -130,7 +130,7 @@ protected void Page_Load(object sender, EventArgs e)
 The following screenshot illustrates the TagCloud control with customized font sizes.
 
  ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
-
+{:.image }
 
 
 ## Tag format
@@ -160,7 +160,7 @@ In the ASPX page, include the following code example to define Cloud and List fo
 The following screenshot illustrates customized formats.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
-
+{:.image }
 
 
 ## Theme
@@ -333,6 +333,6 @@ Define the CSS class for customizing the TagCloud control.
 The following screenshot illustrates the TagCloud with customized CSS class.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
-
+{:.image }
 
 

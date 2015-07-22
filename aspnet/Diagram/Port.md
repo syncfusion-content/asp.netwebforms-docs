@@ -37,7 +37,9 @@ node.Ports.Add(port);
 {% endhighlight %}
 
 
-![](Port_images/Port_img1.png) 
+
+![](Port_images/Port_img1.png)
+{:.image }
 
 
 ## Connecting Ports
@@ -106,8 +108,10 @@ private Port GetPort(float offsetX, float offsetY, string name){
 
 {% endhighlight %}
 
- ![](Port_images/Port_img2.png) 
 
+
+ ![](Port_images/Port_img2.png) 
+{:.image }
 
 
 ## Appearance
@@ -118,10 +122,10 @@ _Properties_
 
 <table>
 <tr>
-<th>
-Properties</th><th>
-Data Type</th><th>
-Description </th></tr>
+<td>
+Properties</td><td>
+Data Type</td><td>
+Description </td></tr>
 <tr>
 <td>
  Visibility</td><td>
@@ -194,9 +198,9 @@ _Constraints_
 
 <table>
 <tr>
-<th>
-Constraints</th><th>
-Description</th></tr>
+<td>
+Constraints</td><td>
+Description</td></tr>
 <tr>
 <td>
 None</td><td>

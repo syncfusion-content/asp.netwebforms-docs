@@ -108,7 +108,8 @@ Add the following ASPX code to create a simple Tab with scroll button.
 
 
 The following screenshot illustrates the Tab control with scroll button. 
-![](Scroll-Support_images/Scroll-Support_img1.png) 
 
+![](Scroll-Support_images/Scroll-Support_img1.png) 
+{:.image }
 
 

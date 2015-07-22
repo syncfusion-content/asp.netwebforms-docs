@@ -25,7 +25,7 @@ AltRowTemplateID is used to customize the alternative rows in TreeGrid. For this
 
 {% highlight html %}
 
- 
+ [ASPX]
 
 <ej:TreeGrid runat="server" ID="TreeGridControlRowTemplate" ChildMapping="Children" RowTemplateId="rowTemplateScript" AltRowTemplateId="altRowTemplateScript">
 
@@ -207,7 +207,7 @@ AltRowTemplateID is used to customize the alternative rows in TreeGrid. For this
 
 
 
-
+[ASPX.CS]
 
 public class TemplateData
 
@@ -327,9 +327,8 @@ The output of TreeGrid with Row Template is as follows.
 
 
 
-![](Getting-Started_images/Getting-Started_img2.png) 
-
-
+![](Rows_images/Rows_img1.png) 
+{:.image }
 
 
 ## Row Drag and Drop
@@ -344,21 +343,21 @@ The following code explains about enabling the row drag and drop with the defaul
 
 
 
-<ej:TreeGrid runat="server" ID="TreeGridControlDragAndDrop" … AllowDragAndDrop="true">	 //...
+&lt;ej:TreeGrid runat="server" ID="TreeGridControlDragAndDrop" … AllowDragAndDrop="true"&gt;	 //...
 
-         <columns>
+         &lt;columns&gt;
 
-                <ej:TreeGridColumn HeaderText="Task Id" Field="TaskID" />
+                &lt;ej:TreeGridColumn HeaderText="Task Id" Field="TaskID" /&gt;
 
-                <ej:TreeGridColumn HeaderText="Task Name" Field="TaskName" />//…
+                &lt;ej:TreeGridColumn HeaderText="Task Name" Field="TaskName" /&gt;//…
 
-         </columns>
+         &lt;/columns&gt;
 
-          <DragTooltip ShowTooltip="true"/>
+          &lt;DragTooltip ShowTooltip="true"/&gt;
 
         //...
 
-   </ej:TreeGrid>
+   &lt;/ej:TreeGrid&gt;
 
 
 {% endhighlight %}
@@ -366,8 +365,8 @@ The following code explains about enabling the row drag and drop with the defaul
 
 The following screenshot depicts a row drag and drop in the TreeGrid.
 
- ![](Rows_images/Rows_img2.png)  
-
+ ![](Rows_images/Rows_img2.png) 
+{:.image }
 
 
 ## Customizing Drag tooltip
@@ -458,7 +457,8 @@ The following code shows how to render row drag tooltip with tooltip template.
 
 
 
-![](Rows_images/Rows_img3.png) 
+ ![](Rows_images/Rows_img3.png) 
+{:.image }
 
 
 

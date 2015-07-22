@@ -152,7 +152,7 @@ The following code example depicts you the way to bind data to the TimePicker co
 Run the above code to render the following output.
 
 ![](Integration_images/Integration_img1.png) 
-
+{:.image }
 
 
 ## Knockout Support
@@ -317,6 +317,6 @@ window.viewModel = {
 Run the above code to render the following output.
 
 ![](Integration_images/Integration_img2.png) 
-
+{:.image }
 
 

@@ -7,13 +7,15 @@ control: Ribbon
 documentation: ug
 ---
 
-## Ribbon Dependencies
+# Ribbon Dependencies
 
 _ej.web.all.js_ is a bundle of all _ASP.NET_controls. When you use _ej.web.all.js_ in your application, you can leave this section or else you can try to render _Ribbon_ in your application by using _ej.ribbon_ file. You can refer to the following frameworks and controls in your project.
 
 
 
 _Table 1: Ribbon Dependency_
+
+{% highlight html %}
 
 <table>
 <tr>
@@ -63,4 +65,4 @@ ej.button.min.js</td></tr>
 ej.togglebutton.min.js</td></tr>
 </table>
 
-
+{% endhighlight %}

@@ -12,7 +12,7 @@ documentation: ug
 Gridlines are horizontal and vertical lines behind the Diagram elements. They provide visual guidance when dragging or arranging objects on the Diagram surface.
 
 ![](Gridlines_images/Gridlines_img1.png) 
-
+{:.image }
 
 
 ## SnapConstraints
@@ -23,9 +23,9 @@ _SnapConstraints_
 
 <table>
 <tr>
-<th>
-Constraints</th><th>
-Description</th></tr>
+<td>
+Constraints</td><td>
+Description</td></tr>
 <tr>
 <td>
 SnapToHorizontalLines</td><td>
@@ -93,10 +93,10 @@ _Appearance_
 
 <table>
 <tr>
-<th>
-Properties</th><th>
-Data Type</th><th>
-Description</th></tr>
+<td>
+Properties</td><td>
+Data Type</td><td>
+Description</td></tr>
 <tr>
 <td>
 LineInterval</td><td>
@@ -161,7 +161,8 @@ diagram.Model.SnapSettings.HorizontalGridlines.Strokes.LineDashArray = "2 2";
 {% endhighlight %}
 
 
-![](Gridlines_images/Gridlines_img2.png)  
 
+![](Gridlines_images/Gridlines_img2.png) 
+{:.image }
 
 

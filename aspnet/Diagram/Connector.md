@@ -12,10 +12,9 @@ documentation: ug
 Connectors are objects used to create a link between two nodes. A connector is a line that has connection points at the end of the line and stays connected to the elements that you attach it to.
 
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image59_20.jpg](Connector_images/Connector_img1.jpeg)
 
-
- 
+![http://help.syncfusion.com/ug/js/ImagesExt/image59_20.jpg](Connector_images/Connector_img1.jpeg) 
+{:.image }
 
 
 _Connector_
@@ -52,8 +51,8 @@ Diagram1.Connectors.Add(connector);
 
 
 
-![](Connector_images/Connector_img2.png) 
-
+ ![](Connector_images/Connector_img2.png) 
+{:.image }
 
 
 _Connector_
@@ -109,7 +108,8 @@ Diagram1.Connectors.Add(connector);
 
 
 
-![](Connector_images/Connector_img3.png) 
+ ![](Connector_images/Connector_img3.png)
+{:.image }
 
 
 _Orthogonal Segment_
@@ -159,7 +159,10 @@ Diagram1.Connectors.Add(connector);
 
 {% endhighlight %}
 
- ![](Connector_images/Connector_img4.png)  
+
+
+ ![](Connector_images/Connector_img4.png) 
+{:.image }
 
 
 _Orthogonal Segment_
@@ -223,12 +226,17 @@ Diagram1.Connectors.Add(connector);
 
 {% endhighlight %}
 
- ![C:/Users/lakshmipriya/Desktop/IMG_07112014_125619.png](Connector_images/Connector_img5.png)   
+
+
+![C:/Users/lakshmipriya/Desktop/IMG_07112014_125619.png](Connector_images/Connector_img5.png) 
+{:.image }
 
 
 _Polyline_
 
- ![](Connector_images/Connector_img6.png) 
+![](Connector_images/Connector_img6.png) 
+{:.image }
+
 
 _Single Line_
 
@@ -288,7 +296,9 @@ Diagram1.Connectors.Add(connector);
 {% endhighlight %}
 
 
- ![](Connector_images/Connector_img7.png) 
+
+![](Connector_images/Connector_img7.png) 
+{:.image }
 
 
 _Bezier Segments_
@@ -339,7 +349,10 @@ DiagramContent.Connectors.Add(connector);
 
 {% endhighlight %}
 
+
+
 ![](Connector_images/Connector_img8.png)
+{:.image }
 
 
 _Bezier segment with vectors_
@@ -349,8 +362,9 @@ Editing Segments
 The segments can be edited during runtime by dragging control thumbs. Segments can be updated when neighboring segments are adjusted.
 
 
-![](Connector_images/Connector_img9.png)
 
+![](Connector_images/Connector_img9.png) 
+{:.image }
 
 
 _Segment Editing_ 
@@ -379,7 +393,10 @@ connector.TargetPadding = 20;
 
 {% endhighlight %}
 
-![](Connector_images/Connector_img10.png)  
+
+
+![](Connector_images/Connector_img10.png) 
+{:.image }
 
 
 Endpoint adjustment specific to nodes
@@ -398,8 +415,10 @@ node.ConnectorPadding = 20;
 
 {% endhighlight %}
 
-![](Connector_images/Connector_img11.png)
 
+
+![](Connector_images/Connector_img11.png) 
+{:.image }
 
 
 Endpoint adjustment specific to ports
@@ -421,7 +440,9 @@ port.ConnectorPadding = 20;
 {% endhighlight %}
 
 
-![](Connector_images/Connector_img12.png)
+
+![](Connector_images/Connector_img12.png) 
+{:.image }
 
 
 ## Line Bridging
@@ -479,7 +500,7 @@ DiagramContent.Constraints = DiagramConstraints.Default | DiagramConstraints.Bri
 
 
 ![](Connector_images/Connector_img13.png) 
-
+{:.image }
 
 
 _Line Bridging_
@@ -496,10 +517,10 @@ _BridgeDirection Property_
 
 <table>
 <tr>
-<th>
- Properties</th><th>
-Description</th><th>
-Value</th></tr>
+<td>
+ Properties</td><td>
+Description</td><td>
+Value</td></tr>
 <tr>
 <td>
 BridgeDirection</td><td>
@@ -526,7 +547,9 @@ DiagramContent.Model.BridgeDirection = BridgeDirection.Top;
 {% endhighlight %}
 
 
-{{ '![](Connector_images/Connector_img14.png)  ' | markdownify }}
+
+![](Connector_images/Connector_img14.png) 
+{:.image }
 
 
 _BridgeDirection.Top_
@@ -547,10 +570,9 @@ DiagramContent.Model.BridgeDirection = BridgeDirection.Left;
 {% endhighlight %}
 
 
+
  ![](Connector_images/Connector_img15.png) 
-
-
-
+{:.image }
 
 
 _BridgeDirection.Left_
@@ -595,9 +617,10 @@ Connector.CornerRadius=20;
 
 {% endhighlight %}
 
+
+
 ![](Connector_images/Connector_img16.png) 
-
-
+{:.image }
 
 
 _Corner Radius_
@@ -625,8 +648,9 @@ connector.TargetNode = "tailnode"; //Sets name of targetNode
 {% endhighlight %}
 
 
- ![http://help.syncfusion.com/ug/js/ImagesExt/image59_22.jpg](Connector_images/Connector_img17.jpeg)  
 
+![http://help.syncfusion.com/ug/js/ImagesExt/image59_22.jpg](Connector_images/Connector_img17.jpeg) 
+{:.image }
 
 
 _Node to Node Connection_
@@ -647,10 +671,10 @@ _Appearance_
 
 <table>
 <tr>
-<th>
-Properties</th><th>
-Data Type</th><th>
-Description</th></tr>
+<td>
+Properties</td><td>
+Data Type</td><td>
+Description</td></tr>
 <tr>
 <td>
 LineWidth</td><td>
@@ -736,10 +760,10 @@ _Decorator Appearance_
 
 <table>
 <tr>
-<th>
-Properties</th><th>
-Data Type</th><th>
-Description</th></tr>
+<td>
+Properties</td><td>
+Data Type</td><td>
+Description</td></tr>
 <tr>
 <td>
  Width</td><td>
@@ -803,7 +827,10 @@ connector.SourceDecorator.FillColor = "yellow";
 
 {% endhighlight %}
 
- ![http://help.syncfusion.com/ug/js/ImagesExt/image59_23.jpg](Connector_images/Connector_img18.jpeg)   
+
+
+ ![http://help.syncfusion.com/ug/js/ImagesExt/image59_23.jpg](Connector_images/Connector_img18.jpeg) 
+{:.image }
 
 
 _Decorator Shape_
@@ -812,15 +839,15 @@ _Decorator Shape_
 
 Connector Constraints
 
-You can enable or disable certain behaviors of the Connectors by using the constraints property.
+You can enable or disable certain behaviors of the Connectors by using the constraints property.__
 
 _Constraints_
 
 <table>
 <tr>
-<th>
-Constraints</th><th>
-Description</th></tr>
+<td>
+Constraints</td><td>
+Description</td></tr>
 <tr>
 <td>
 None</td><td>

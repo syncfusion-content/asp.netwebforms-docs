@@ -323,7 +323,9 @@ TreeGrid.aspx
 
 
 The output of the above steps is as follows:
-![](Data-Binding_images/Data-Binding_img1.png) 
+
+ ![](Data-Binding_images/Data-Binding_img1.png)
+{:.image }
 
 
 ### Self-Referential Data Binding (Flat Data)
@@ -660,8 +662,8 @@ TreeGrid.aspx
 
 The following screenshot shows the output of the above steps,
 
- ![](Data-Binding_images/Data-Binding_img2.png) 
-
+![](Data-Binding_images/Data-Binding_img2.png) 
+{:.image }
 
 
 

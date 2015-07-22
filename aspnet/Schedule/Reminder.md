@@ -7,7 +7,7 @@ control: Schedule
 documentation: ug
 ---
 
-## Reminder
+# Reminder
 
 * Reminder option provides the list of reminder appointments and you can use those appointments for your own customized scenarios like displaying it as an end-user notification. To enable the reminder settings for the Schedule control, you can set the enable property as ‘true’ within the reminderSettings option. 
 * The reminderSettings option includes another optional property alertBefore that accepts integer value to denote the time before how long the reminder is notified to the user.
@@ -18,70 +18,70 @@ The following code example explains how to get the reminder list and display it 
 
 
 
-
-[ASP]
-
+{% highlight html %}
 
 
-&lt;asp:Content ID="Content1" ContentPlaceHolderID="SampleHeading" runat="server"&gt;
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SampleHeading" runat="server">
 
 <span class="sampleName">Schedule / Reminder</span>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 
 
-&lt;asp:Content ID="Header" ContentPlaceHolderID="HeadSection" runat="server"&gt;
+<asp:Content ID="Header" ContentPlaceHolderID="HeadSection" runat="server">
 
-&lt;script src='&lt;%= Page.ResolveClientUrl("~/Scripts/bootstrap.min.js")%&gt;' type="text/javascript">&lt;/script&gt;
+<script src='<%= Page.ResolveClientUrl("~/Scripts/bootstrap.min.js")%>' type="text/javascript"></script>
 
-&lt;script src='&lt;%= Page.ResolveClientUrl("~/Scripts/bootstrap-notify.js")%&gt;' type="text/javascript">&lt;/script&gt;
+<script src='<%= Page.ResolveClientUrl("~/Scripts/bootstrap-notify.js")%>' type="text/javascript"></script>
 
-&lt;link href=".../Content/bootstrap-notify.css" rel="stylesheet" /&gt;
+<link href=".../Content/bootstrap-notify.css" rel="stylesheet" />
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
 
-&lt;!-- Reminder list div elements--&gt;
+<!-- Reminder list div elements-->
 
-&lt;div id="reminder" class="media" data-content=" "&gt;
+<div id="reminder" class="media" data-content=" ">
 
-&lt;a class="pull-left" href="#" style="margin-top: 9px; outline: medium none;"&gt;
+<a class="pull-left" href="#" style="margin-top: 9px; outline: medium none;">
 
-&lt;div class="reminder-icon"&gt;
+<div class="reminder-icon">
 
-&lt;/div&gt;
+</div>
 
-<span id="reminderCount" class="badge badge-success pull-right">0</span> &lt;/a&gt;
+<span id="reminderCount" class="badge badge-success pull-right">0</span> </a>
 
-&lt;/div&gt;
+</div>
 
-&lt;!-- Notification div element--&gt;
+<!-- Notification div element-->
 
-&lt;div class='notifications bottom-right'&gt;
+<div class='notifications bottom-right'>
 
-&lt;/div&gt;
+</div>
 
-&lt;div&gt;
+<div>
 
-&lt;ej:Schedule runat="server" ID="Schedule1" Width="100%" Height="525px" Reminder="ongetReminderList" Create="onCreate"&gt;
+<ej:Schedule runat="server" ID="Schedule1" Width="100%" Height="525px" Reminder="ongetReminderList" Create="onCreate">
 
-&lt;ReminderSettings Enable="true" AlertBefore="6"/&gt;
+<ReminderSettings Enable="true" AlertBefore="6"/>
 
-&lt;AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/&gt;
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
 
-&lt;/ej:Schedule&gt;
+</ej:Schedule>
 
-&lt;/div&gt;
+</div>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 
 
-&lt;asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection"&gt;
+<asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
 function onCreate() {
 
@@ -153,17 +153,17 @@ $("#reminderCount").html(parseInt($("#reminderCount").text()) + 1);
 
 checkList();
 
-$_remList += "&lt;div class='outerDiv'&gt;&lt;span class='e-quicksubject'&gt;" + args.reminderAppointment.Subject +
+$_remList += "<div class='outerDiv'><span class='e-quicksubject'>" + args.reminderAppointment.Subject +
 
-"&lt;/span&gt;&lt;div class='e-quickstartendtime'&gt;" + args.reminderAppointment.StartTime +
+"</span><div class='e-quickstartendtime'>" + args.reminderAppointment.StartTime +
 
-"&lt;/div&gt;&lt;a class='close pull-right' href='#' style='margin-top: -56px;display: none;'&gt;×&lt;/a&gt;&lt;/div&gt;";
+"</div><a class='close pull-right' href='#' style='margin-top: -56px;display: none;'>×</a></div>";
 
-var notifiList = "&lt;div&gt;&lt;span class='e-quicksubject'&gt;" + args.reminderAppointment.Subject +
+var notifiList = "<div><span class='e-quicksubject'>" + args.reminderAppointment.Subject +
 
-"&lt;/span&gt;&lt;div class='e-quickstartendtime'&gt;" + args.reminderAppointment.StartTime +
+"</span><div class='e-quickstartendtime'>" + args.reminderAppointment.StartTime +
 
-"&lt;/div&gt;&lt;/div&gt;";
+"</div></div>";
 
 // Show the notification div
 
@@ -183,13 +183,13 @@ enabled: false
 
 }
 
-&lt;/script&gt;
+</script>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content ID="styleSection" ContentPlaceHolderID="StyleSection" runat="server"&gt;
+<asp:Content ID="styleSection" ContentPlaceHolderID="StyleSection" runat="server">
 
-&lt;style type="text/css"&gt;
+<style type="text/css">
 
 #reminderCount
 
@@ -271,21 +271,20 @@ top: 25% !important;
 
 }
 
-&lt;/style&gt;
+</style>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
 
 
-{ ![](Reminder_images/Reminder_img1.png) | markdownify }
-{:.image }
+![](Reminder_images/Reminder_img1.png)
 
 
-   _Figure_ _106__:  schedule with Reminder._
+   _Figure_ _106_:  schedule with Reminder._
 
 
 

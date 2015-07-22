@@ -44,10 +44,9 @@ Refer to the following code examples.
 {% endhighlight %}
 
 
-![](Image-Configuration_images/Image-Configuration_img1.png)   
 
-
-
+![](Image-Configuration_images/Image-Configuration_img1.png) 
+{:.image }
 
 
 You can give images for each tile through css classes by using the data-ej-imageclass attribute. You can define your desired styles in the specified class.
@@ -84,10 +83,9 @@ Refer to the following code examples.
 
 
 
+
+
 ![](Image-Configuration_images/Image-Configuration_img2.png) 
-
-
-
-
+{:.image }
 
 

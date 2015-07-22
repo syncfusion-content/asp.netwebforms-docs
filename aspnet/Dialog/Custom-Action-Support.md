@@ -46,6 +46,6 @@ In the ASPX page, add the Dialog control and assign the ActionButtons value.
 The following is the output of ActionButtons in Dialog control.
 
 ![](Custom-Action-Support_images/Custom-Action-Support_img1.png)
-
+{:.image }
 
 

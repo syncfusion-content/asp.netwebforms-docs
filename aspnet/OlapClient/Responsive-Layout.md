@@ -18,19 +18,21 @@ Responsive layout is aimed at crafting sites to provide an optimal viewing exper
 {% highlight html %}
 
 
-<%@ Register Assembly="Syncfusion.EJ.Olap" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
+[ASPX]
+
+&lt;%@ Register Assembly="Syncfusion.EJ.Olap" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %&gt;
 
 
 
-<ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc" IsResponsive="true">
+&lt;ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc" IsResponsive="true"&gt;
 
-        <ClientSideEvents  ChartLoad="setChartProperties" />
+        &lt;ClientSideEvents  ChartLoad="setChartProperties" /&gt;
 
-</ej:OlapClient>
+&lt;/ej:OlapClient&gt;
 
 
 
-<script type="text/javascript">
+&lt;script type="text/javascript"&gt;
 
         function setChartProperties(args) {
 
@@ -38,28 +40,28 @@ Responsive layout is aimed at crafting sites to provide an optimal viewing exper
 
         }
 
-</script>
+&lt;/script&gt;
 
 
 {% endhighlight %}
 
 ![](Responsive-Layout_images/Responsive-Layout_img1.png) 
-
+{:.image }
 
 
 ![](Responsive-Layout_images/Responsive-Layout_img2.png) 
-
+{:.image }
 
 
 
 
 ![](Responsive-Layout_images/Responsive-Layout_img3.png) 
-
+{:.image }
 
 
 
 
  ![](Responsive-Layout_images/Responsive-Layout_img4.png) 
-
+{:.image }
 
 

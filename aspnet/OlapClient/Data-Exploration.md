@@ -26,7 +26,7 @@ After you click Split Button, Member Editor Dialog opens and through that you ca
 
 
 ![](Data-Exploration_images/Data-Exploration_img1.png) 
-
+{:.image }
 
 
 The above filter illustrates that the members France and Germany, along with Queensland and South Australia are filtered from the Grid and Chart view.  
@@ -68,13 +68,13 @@ The following screenshot displays the Filtering Dialog box.
 
 
 ![Description: http://help.syncfusion.com/ug/js/ImagesExt/image19_31.png](Data-Exploration_images/Data-Exploration_img2.png) 
-
+{:.image }
 
 
 The following screenshot displays data before Filtering.
 
 ![](Data-Exploration_images/Data-Exploration_img3.png) 
-
+{:.image }
 
 
 The following screenshot displays the data after Filtering.
@@ -82,7 +82,7 @@ The following screenshot displays the data after Filtering.
 
 
 ![](Data-Exploration_images/Data-Exploration_img4.png) 
-
+{:.image }
 
 
 ## Sorting
@@ -116,7 +116,7 @@ The following screenshot displays the Sorting and Filtering dialog box.
 
 
 ![Description: http://help.syncfusion.com/ug/js/ImagesExt/image19_28.png](Data-Exploration_images/Data-Exploration_img5.png) 
-
+{:.image }
 
 
 
@@ -158,7 +158,7 @@ The following screenshot displays the Sorting and Filtering dialog box.
 The following screenshot displays the data before sorting.
 
  ![](Data-Exploration_images/Data-Exploration_img6.png) 
-
+{:.image }
 
 
 
@@ -194,7 +194,7 @@ The following screenshot displays the data before sorting.
 The following screenshot displays the data after sorting.
 
 ![](Data-Exploration_images/Data-Exploration_img7.png) 
-
+{:.image }
 
 
 ## Grouping
@@ -204,6 +204,6 @@ The data can be grouped when more than one dimension element is dropped into Cat
 
 
 ![](Data-Exploration_images/Data-Exploration_img8.png) 
-
+{:.image }
 
 

@@ -15,10 +15,10 @@ The server side events present in the Toolbar control are listed as follows.
 
 <table>
 <tr>
-<th>
-Event Name</th><th>
-Description</th><th>
-Arguments</th></tr>
+<td>
+Event Name</td><td>
+Description</td><td>
+Arguments</td></tr>
 <tr>
 <td>
 OnItemClick</td><td>

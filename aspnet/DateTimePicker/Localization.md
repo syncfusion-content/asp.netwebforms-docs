@@ -16,7 +16,7 @@ Globalize.js is a simple JavaScript library that allows you to format and parse 
 [http://cdnjs.com/libraries/globalize/](http://cdnjs.com/libraries/globalize/)
 
 You can get the script file of various cultures from the following path also:
-"<Installed Location>\Syncfusion\Essential Studio\{{site.releaseversion}}\JavaScript\assets\external\cultures"
+"&lt;Installed Location&gt;\Syncfusion\Essential Studio\{{site.releaseversion}}\JavaScript\assets\external\cultures"
 
 To use any cultures, add the script files of those corresponding culture in the sample. In order to add UK Culture in the DateTimePicker, you can refer to a script file globalize.culture.es-ES.js. 
 
@@ -69,7 +69,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 
 ![](Localization_images/Localization_img1.png) 
-
+{:.image }
 
 
 

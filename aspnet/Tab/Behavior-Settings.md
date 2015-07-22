@@ -64,6 +64,7 @@ Add the following ASPX for simple Tab creation with Close Button.
 The following screenshot illustrates the Tab with Close Button. 
 
 ![](Behavior-Settings_images/Behavior-Settings_img1.png) 
+{:.image }
 
 
 ### Orientation
@@ -77,41 +78,42 @@ Add the following ASPX for Tab orientation.
 
 {% highlight html %}
 
-<ej:Tab ID="dishtype" runat="server" HeaderPosition="Left" Width="600px">
+&lt;ej:Tab ID="dishtype" runat="server" HeaderPosition="Left" Width="600px"&gt;
 
-    <Items>
+    &lt;Items&gt;
 
-        <ej:TabItem ID="pizzatype" Text="Pizza Menu">
+        &lt;ej:TabItem ID="pizzatype" Text="Pizza Menu"&gt;
 
-            <ContentSection>
+            &lt;ContentSection&gt;
 
-                <p>
+                &lt;p&gt;
 
-                    Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+                    Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;
 
-            </ContentSection>
+            &lt;/ContentSection&gt;
 
-        </ej:TabItem>
+        &lt;/ej:TabItem&gt;
 
-        <ej:TabItem ID="sandwichtype" Text="Sandwich Menu">
+        &lt;ej:TabItem ID="sandwichtype" Text="Sandwich Menu"&gt;
 
-            <ContentSection>
+            &lt;ContentSection&gt;
 
-                <p>
+                &lt;p&gt;
 
-                    Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+                    Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;
 
-            </ContentSection>
+            &lt;/ContentSection&gt;
 
-        </ej:TabItem>
+        &lt;/ej:TabItem&gt;
 
-    </Items>
+    &lt;/Items&gt;
 
-</ej:Tab>
+&lt;/ej:Tab&gt;
 {% endhighlight %}
 
 The following screenshot illustrates the sub Tab with vertical orientation. 
 
 ![](Behavior-Settings_images/Behavior-Settings_img2.png) 
+{:.image }
 
 

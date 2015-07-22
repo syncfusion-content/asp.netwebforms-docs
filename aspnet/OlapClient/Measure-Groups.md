@@ -16,8 +16,11 @@ In Cube Dimension Browser tree-view can be viewed in a filtered manner through t
 
 {% highlight html %}
 
+[ASP.NET]
 
-<ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc" EnableMeasureGroups="true" ></ej:OlapClient>
+
+
+&lt;ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc" EnableMeasureGroups="true" &gt;&lt;/ej:OlapClient&gt;
 
 {% endhighlight %}
 
@@ -28,10 +31,10 @@ On selecting a measure group from the drop-down list, the Cube Dimension Browser
 
 
 ![C:/Users/Narendhran Muthuvel/Desktop/Capture7.PNG](Measure-Groups_images/Measure-Groups_img1.png) 
-
+{:.image }
 
 
 ![C:/Users/Narendhran Muthuvel/Desktop/Capture44.PNG](Measure-Groups_images/Measure-Groups_img2.png) 
-
+{:.image }
 
 

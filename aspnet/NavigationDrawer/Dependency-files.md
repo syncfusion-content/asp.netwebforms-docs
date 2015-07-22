@@ -15,9 +15,9 @@ _List of Script files_
 
 <table>
 <tr>
-<th>
-File</th><th>
-Description/Usage</th></tr>
+<td>
+File</td><td>
+Description/Usage</td></tr>
 <tr>
 <td>
 ej.core.min.js</td><td>

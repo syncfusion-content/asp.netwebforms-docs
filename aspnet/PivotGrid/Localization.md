@@ -7,13 +7,14 @@ control: PivotGrid
 documentation: ug
 ---
 
-## Localization
+# Localization
 
-> _Note:__This feature is currently not applicable for PivotTable Field List._
+Note: This feature is currently not applicable for PivotTable Field List.
 
 Localization is the process of customizing the user interface (UI) as locale-specific in order to display regional data. Using this feature, data is displayed in a specific language and culture of a particular country or region. The ASP.NETPivotGrid control provides inherent support to localize its UI.The following table lists the default English localization user interface based on French culture. 
 
 _List of default English localization user interface based on French culture_
+{% highlight html %}
 
 <table>
 <tr>
@@ -53,25 +54,25 @@ RenderingSucceeded</td><td>
 RenderingFailed</td><td>
 "Rendant pas"</td></tr>
 </table>
-
+{% endhighlight %}
 
 The following code example illustrates how to localize PivotGrid’s user interface based on “French” culture.
 
 
-
-[ASP.NET] 
-
-&lt;asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
-
-    &lt;ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc" Locale="fr-FR"&gt;&lt;/ej:PivotGrid&gt;
-
-&lt;/asp:Content&gt;
+{% highlight html %}
 
 
+<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection">
 
-&lt;asp:Content ID="Content2" runat="server" ContentPlaceHolderID="ScriptSection"&gt;
+    <ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc" Locale="fr-FR"></ej:PivotGrid>
 
-     &lt;script type="text/javascript"&gt;
+</asp:Content>
+
+
+
+<asp:Content ID="Content2" runat="server" ContentPlaceHolderID="ScriptSection">
+
+     <script type="text/javascript">
 
          ej.PivotGrid.locale["fr-FR"] = {
 
@@ -101,38 +102,40 @@ The following code example illustrates how to localize PivotGrid’s user interf
 
          };
 
-     &lt;/script&gt;
+     </script>
 
-&lt;/asp:Content&gt;
-
-
+</asp:Content>
 
 
+{% endhighlight %}
 
-_Note: In order to render the localized PivotGrid, you can reset the content available in both_
 
-1. _OLAP Grid Control_
-2. _OLAP Cube_
+Note: In order to render the localized PivotGrid, you can reset the content available in both
 
-Localizing Control Information: 
+1. OLAP Grid Control
+2. OLAP Cube
+
+##Localizing Control Information: 
 
 To apply control side Localization, you can refer the following code example.
 
-[HTML]
+{% highlight html %}
+
 
 ej.PivotGrid.locale["zh-CN"] = {
 
 //Corresponding keyword values needs to be set here.
 
 } 
+{% endhighlight %}
 
-Localizing Cube Information
+##Localizing Cube Information
 
 To get the LocalizedCubeInformation, “_Locale__Identifier__"_ is set in the connection string
 
 
+{% highlight C# %}
 
-[C#]
 
 //1036 refers to “fr-FR” culture.
 
@@ -143,13 +146,13 @@ DataManager = new OlapDataManager(connectionString);
 DataManager.Culture = new System.Globalization.CultureInfo(1036);
 
 DataManager.OverrideDefaultFormatStrings = true;
-
+{% endhighlight %}
 
 
 The following screenshot displays the PivotGrid with French localization:
 
-{ ![](Localization_images/Localization_img1.png) | markdownify }
-{:.image }
+ ![](Localization_images/Localization_img1.png) 
+
 
 
 _Localized PivotGrid_

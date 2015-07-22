@@ -54,12 +54,12 @@ This property is used to define the target Id for Navigation Drawer. The drawer 
 The following screenshots illustrates the output.
 
 ![](TargetId_images/TargetId_img1.png) 
-
+{:.image }
 
 
 
 
 ![](TargetId_images/TargetId_img2.png) 
-
+{:.image }
 
 

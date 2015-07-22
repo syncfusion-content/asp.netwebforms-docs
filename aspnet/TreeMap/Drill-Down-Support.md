@@ -19,10 +19,10 @@ _Table_ _1__: Drill down Properties_
 
 <table>
 <tr>
-<th>
-Property</th><th>
-Type</th><th>
-Description</th></tr>
+<td>
+Property</td><td>
+Type</td><td>
+Description</td></tr>
 <tr>
 <td>
 enableDrillDown</td><td>
@@ -46,6 +46,11 @@ Gets or sets a color for highlighting tree map item during drill down.</td></tr>
 
 {% highlight html %}
 
+[ASP]
+
+
+
+[ASPX.CS]
 
 protected void Page_Load(object sender, EventArgs e)
 
@@ -55,37 +60,41 @@ protected void Page_Load(object sender, EventArgs e)
 
         }
 
+[ASPX]
 
 
-    <div style="min-height:404px">
 
-    <ej:TreeMap ID="treemap" runat="server"  EnableDrillDown = "true" DrillDownHeaderColor= "#199DAF" drillDownSelectionColor = "#199DAF" WeightValuePath="Population" >
+    &lt;div style="min-height:404px"&gt;
 
-        <TreeMapUniColorMapping Color = "#CCDFE3"></TreeMapUniColorMapping>
+    &lt;ej:TreeMap ID="treemap" runat="server"  EnableDrillDown = "true" DrillDownHeaderColor= "#199DAF" drillDownSelectionColor = "#199DAF" WeightValuePath="Population" &gt;
 
-        <Levels>
+        &lt;TreeMapUniColorMapping Color = "#CCDFE3"&gt;&lt;/TreeMapUniColorMapping&gt;
 
-            <ej:TreeMapLevel GroupPath = "Continent" ShowLabels = "true" GroupGap = "5" HeaderHeight = "25"></ej:TreeMapLevel>
+        &lt;Levels&gt;
 
-            <ej:TreeMapLevel GroupPath = "Country" ShowLabels = "true" GroupGap = "0" HeaderHeight = "25"></ej:TreeMapLevel>
+            &lt;ej:TreeMapLevel GroupPath = "Continent" ShowLabels = "true" GroupGap = "5" HeaderHeight = "25"&gt;&lt;/ej:TreeMapLevel&gt;
 
-            <ej:TreeMapLevel GroupPath = "Name" ShowLabels = "true" GroupGap = "0" HeaderHeight = "25"></ej:TreeMapLevel>
+            &lt;ej:TreeMapLevel GroupPath = "Country" ShowLabels = "true" GroupGap = "0" HeaderHeight = "25"&gt;&lt;/ej:TreeMapLevel&gt;
 
-        </Levels>
+            &lt;ej:TreeMapLevel GroupPath = "Name" ShowLabels = "true" GroupGap = "0" HeaderHeight = "25"&gt;&lt;/ej:TreeMapLevel&gt;
 
-    </ej:TreeMap>
+        &lt;/Levels&gt;
 
-    </div>
+    &lt;/ej:TreeMap&gt;
+
+    &lt;/div&gt;
 
 
 {% endhighlight  %}
-![C:/Users/NitishS/Desktop/Screenshot (106).png](Drill-Down-Support_images/Drill-Down-Support_img1.png)
+
+![C:/Users/NitishS/Desktop/Screenshot (106).png](Drill-Down-Support_images/Drill-Down-Support_img1.png) 
+{:.image }
 
 
 
 
 ![DrillDown](Drill-Down-Support_images/Drill-Down-Support_img2.png) 
-
+{:.image }
 
 
 

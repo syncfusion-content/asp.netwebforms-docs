@@ -39,7 +39,10 @@ connector.Labels.Add(label);
 
 {% endhighlight %}
 
-![](Label_images/Label_img1.png)   
+
+
+![](Label_images/Label_img1.png) 
+{:.image }
 
 
 ## Displacement
@@ -69,7 +72,9 @@ connector.Constraints = ConnectorConstraints.Default| ConnectorConstraints.DragL
 {% endhighlight %}
 
 
-![](Label_images/Label_img2.png) 
+
+![](Label_images/Label_img2.png)
+{:.image }
 
 
 
@@ -111,7 +116,9 @@ Node node = new Node()
 {% endhighlight %}
 
 
+
 ![](Label_images/Label_img3.png) 
+{:.image }
 
 
 ## Label Rotation
@@ -137,7 +144,10 @@ label.RotateAngle = 45;
 {% endhighlight %}
 
 
-![](Label_images/Label_img4.png) 
+
+ ![](Label_images/Label_img4.png) 
+{:.image }
+
 
 
 _Note: No built-in support is added to rotate labels interactively._
@@ -177,8 +187,11 @@ label.TextDecoration = TextDecorations.LineThrough;
 
 
 {% endhighlight %}
-![](Label_images/Label_img6.png)  
 
+
+
+![](Label_images/Label_img6.png) 
+{:.image }
 
 
 ## Label Editing
@@ -206,7 +219,10 @@ label.Mode = LabelEditMode.View;
 {% endhighlight %}
 
 
+
 ![](Label_images/Label_img7.png) 
+{:.image }
+
 
 ## Read-only Label
 
@@ -232,10 +248,10 @@ _Label Alignment_
 
 <table>
 <tr>
-<th>
-Name</th><th>
-Type</th><th>
-Description</th></tr>
+<td>
+Name</td><td>
+Type</td><td>
+Description</td></tr>
 <tr>
 <td>
  TextAlign</td><td>
@@ -289,41 +305,45 @@ _Alignment_
 <table>
 <tr>
 <td>
-Horizontal Alignment</th><th>
-Vertical Alignment</th><th>
-Offset</th><th>
-   Image</th></tr>
+Horizontal Alignment</td><td>
+Vertical Alignment</td><td>
+Offset</td><td>
+   Image</td></tr>
 <tr>
 <td>
 Center</td><td>
 Top</td><td>
 (0.2,1)</td><td>
-{{ '![](Label_images/Label_img8.png)' | markdownify }}
-
-
+![](Label_images/Label_img8.png)
+{:.image }
 </td></tr>
 <tr>
 <td>
 Right</td><td>
 Middle</td><td>
 (0.5,0.3)</td><td>
-{{ '![](Label_images/Label_img9.png)' | markdownify }}
-
+![](Label_images/Label_img9.png)
+{:.image }
 </td></tr>
 <tr>
 <td>
 Left</td><td>
 Bottom</td><td>
 (0.5,0.7)</td><td>
-{{ '![](Label_images/Label_img10.png)' | markdownify }}
-
+![](Label_images/Label_img10.png)
+{:.image }
 </td></tr>
 </table>
 
 
-![](Label_images/Label_img11.png)
+![](Label_images/Label_img11.png) 
+{:.image }
 
-![](Label_images/Label_img12.png)   
+
+
+
+![](Label_images/Label_img12.png) 
+{:.image }
 
 
 ### Text Wrapping
@@ -343,38 +363,39 @@ label.Wrapping = WrapText.Wrap;
 {% endhighlight %}
 
 
-![](Label_images/Label_img13.png)
- 
+
+ ![](Label_images/Label_img13.png) 
+{:.image }
 
 
 _Text Wrapping_
 
 <table>
 <tr>
-<th>
-Values</th><th>
-Description</th><th>
-Image</th></tr>
+<td>
+Values</td><td>
+Description</td><td>
+Image</td></tr>
 <tr>
 <td>
 NoWrap</td><td>
 Text is not wrapped.</td><td>
-{{ '![](Label_images/Label_img14.png)' | markdownify }}
-
+![](Label_images/Label_img14.png)
+{:.image }
 </td></tr>
 <tr>
 <td>
 Wrap (Default)</td><td>
 Text-wrapping occurs when the text overflows beyond the available node width.</td><td>
-{{ '![](Label_images/Label_img15.png)' | markdownify }}
-
+![](Label_images/Label_img15.png)
+{:.image }
 </td></tr>
 <tr>
 <td>
 WrapWithOverflow</td><td>
 Text-wrapping occurs when the text overflows beyond the available node width. However, the text may overflow beyond the node width in the case of a very long word.</td><td>
-{{ '![](Label_images/Label_img16.png)' | markdownify }}
-
+![](Label_images/Label_img16.png)
+{:.image }
 </td></tr>
 </table>
 Width
@@ -439,7 +460,9 @@ node.Labels.Add(label);
 
 {% endhighlight %}
 
- ![](Label_images/Label_img17.png)   
 
+
+![](Label_images/Label_img17.png) 
+{:.image }
 
 
