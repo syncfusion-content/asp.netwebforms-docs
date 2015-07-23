@@ -29,27 +29,27 @@ The Grid initialization is as follows.
 
 [aspx]
 
-&lt;ej:Grid ID="Grid" runat="server" AllowPaging="true"&gt;
+<ej:Grid ID="Grid" runat="server" AllowPaging="true">
 
-        &lt;DataManager URL="Default.aspx/GetData" InsertURL="Default.aspx/PerformInsert" UpdateURL="Default.aspx/PerformUpdate" RemoveURL="Default.aspx/PerformDelete" Adaptor="UrlAdaptor" /&gt;
+        <DataManager URL="Default.aspx/GetData" InsertURL="Default.aspx/PerformInsert" UpdateURL="Default.aspx/PerformUpdate" RemoveURL="Default.aspx/PerformDelete" Adaptor="UrlAdaptor" />
 
-        &lt;EditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" EditMode="Normal" /&gt;
+        <EditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" EditMode="Normal" />
 
-        &lt;ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel" /&gt;
+        <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel" />
 
-        &lt;Columns&gt;
+        <Columns>
 
-            &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" IsPrimaryKey="true" TextAlign="Right" /&gt;
+            <ej:Column Field="EmployeeID" HeaderText="Employee ID" IsPrimaryKey="true" TextAlign="Right" />
 
-            &lt;ej:Column Field="FirstName" HeaderText="First Name" /&gt;
+            <ej:Column Field="FirstName" HeaderText="First Name" />
 
-            &lt;ej:Column Field="LastName" HeaderText="Last Name" /&gt;
+            <ej:Column Field="LastName" HeaderText="Last Name" />
 
-            &lt;ej:Column Field="Designation" HeaderText="Designation" /&gt;
+            <ej:Column Field="Designation" HeaderText="Designation" />
 
-        &lt;/Columns&gt;
+        </Columns>
 
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 
 
@@ -248,7 +248,7 @@ public static class AppSession
 
 
 > { ![C:/Users/ApoorvahR/Desktop/Note.png](Use-NHibernate-with-Grid_images/Use-NHibernate-with-Grid_img1.png) | markdownify }
-{:.image }
+
 _Note: In the above code example, the ORM mapping is performed by using the xml-documents and the mapping files are Employee.cfg.xml and EmployeeMap.hbm.xml_
 
 

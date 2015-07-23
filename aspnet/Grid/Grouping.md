@@ -19,17 +19,15 @@ In Grid, there is an option to group columns at Grid Initialize that is rendered
 
 {% highlight html %}
 
-[ASP]
 
-[aspx]
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True"&gt;
+<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True">
 
-&lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"&gt;&lt;/DataManager&gt;
+<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"></DataManager>
 
-&lt;GroupSettings GroupedColumns="ShipCity"&gt;&lt;/GroupSettings&gt;
+<GroupSettings GroupedColumns="ShipCity"></GroupSettings>
 
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 
 {% endhighlight %}
@@ -39,8 +37,8 @@ The following output is displayed as a result of the above code example.
 
 
 
-![](Grouping_images/Grouping_img1.png) 
-{:.image }
+![](Grouping_images/Grouping_img1.png)  
+
 
 
 ## Group Buttons
@@ -49,25 +47,21 @@ Group buttons is one of the features under Grouping. It is helpful to do Groupin
 
 
 {% highlight html %}
-[ASP]
+
+
+<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True">
+
+<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"></DataManager>
 
 
 
-[aspx]
-
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True"&gt;
-
-&lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"&gt;&lt;/DataManager&gt;
+    <GroupSettings ShowToggleButton="True" GroupedColumns="ShipCity">
 
 
 
-    &lt;GroupSettings ShowToggleButton="True" GroupedColumns="ShipCity"&gt;
+    </GroupSettings>
 
-
-
-    &lt;/GroupSettings&gt;
-
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 
 {% endhighlight %}
@@ -76,7 +70,7 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Grouping_images/Grouping_img2.png)
-{:.image }
+
 
 
 ## Hide Ungroup Button
@@ -85,27 +79,23 @@ In GroupDropArea, grouped columns have an option to ungroup a column using Group
 
 
 
-![](Grouping_images/Grouping_img3.png)
-{:.image }
+![](Grouping_images/Grouping_img3.png) 
+
 
 
 
 {% highlight html %}
-[ASP]
 
 
+<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True" >
 
-[aspx]
+<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"></DataManager>
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True" &gt;
+   <GroupSettings ShowUngroupButton="False" GroupedColumns="ShipCity">
 
-&lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"&gt;&lt;/DataManager&gt;
+   </GroupSettings>
 
-   &lt;GroupSettings ShowUngroupButton="False" GroupedColumns="ShipCity"&gt;
-
-   &lt;/GroupSettings&gt;
-
- &lt;/ej:Grid&gt;
+ </ej:Grid>
 
 
 {% endhighlight %}
@@ -114,28 +104,23 @@ In GroupDropArea, grouped columns have an option to ungroup a column using Group
 The following output is displayed as a result of the above code example.
 
 
-
 ![](Grouping_images/Grouping_img4.png) 
-{:.image }
+
 
 
 ## AutoSize Drop Area
 
 If you drag any header to Group column in Grid, it expands smoothly its Group Drop Area portion. In some scenarios, you need to stop this type of animation while grouping. You can use the EnableDropAreaAutoSizing property to stop animation in Group Drop Area.
 {% highlight html %}
-[ASP]
 
 
+<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True">
 
- [aspx]
+<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"></DataManager>
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True"&gt;
+    <GroupSettings EnableDropAreaAutoSizing="False"></GroupSettings>
 
-&lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"&gt;&lt;/DataManager&gt;
-
-    &lt;GroupSettings EnableDropAreaAutoSizing="False"&gt;&lt;/GroupSettings&gt;
-
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 
 
@@ -148,7 +133,7 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Grouping_images/Grouping_img5.png)
-{:.image }
+
 
 
 ## Hide Group Drop Area from Grid
@@ -159,17 +144,15 @@ When the ShowDropArea property is set to false, the GroupDropArea is hidden.
 
 {% highlight html %}
 
-[ASP]
 
-[aspx]
 
-&lt;ej:Grid ID="Grid" runat="server" DataSourceID="ObjectData" AllowGrouping="True"&gt;
+<ej:Grid ID="Grid" runat="server" DataSourceID="ObjectData" AllowGrouping="True">
 
-        &lt;GroupSettings EnableDropAreaAutoSizing="False" GroupedColumns="ShipCountry" ShowDropArea="false"&gt;&lt;/GroupSettings&gt;  
+        <GroupSettings EnableDropAreaAutoSizing="False" GroupedColumns="ShipCountry" ShowDropArea="false"></GroupSettings>  
 
 
 
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 
 
@@ -177,7 +160,7 @@ When the ShowDropArea property is set to false, the GroupDropArea is hidden.
 
 The following output is displayed as a result of the above code example.
 
-![C:/Users/NandhiniK/Desktop/Capture.PNG](Grouping_images/Grouping_img6.png) 
-{:.image }
+![C:/Users/NandhiniK/Desktop/Capture.PNG](Grouping_images/Grouping_img6.png)
+
 
 

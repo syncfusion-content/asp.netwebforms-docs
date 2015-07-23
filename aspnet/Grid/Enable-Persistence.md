@@ -13,40 +13,40 @@ EnablePersistence is used to maintain the current state of the Grid model. When 
 
 
 {% highlight html %}
-[ASP.NET]
 
 
 
-   &lt;div&gt;
+
+   <div>
 
         <ej:Grid ID="OrdersGrid" runat="server" AllowSorting="true" AllowPaging="True" AllowGrouping="True"
 
             EnableAltRow="True" EnablePersistence="True">
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" />
 
-                &lt;ej:Column Field="OrderDate" HeaderText="Order Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" /&gt;
+                <ej:Column Field="OrderDate" HeaderText="Order Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-            &lt;PageSettings PageSize="9" /&gt;
+            <PageSettings PageSize="9" />
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-    &lt;/div&gt;
+    </div>
 {% endhighlight  %}
 {% highlight c#  %}
-[ASP.NET CS]
+
 
 
 
@@ -177,6 +177,6 @@ namespace WebSampleBrowser.Grid
 The following output is displayed as a result of the above code example.
 
 ![](Enable-Persistence_images/Enable-Persistence_img1.png)
-{:.image }
+
 
 

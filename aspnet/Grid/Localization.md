@@ -22,47 +22,43 @@ The following code example demonstrates how to switch the culture of Grid as de-
 
 
 {% highlight html %}
-[ASP]
-
-
-
-[Site.Master]
-
-&lt;script src='&lt;%= Page.ResolveClientUrl("~/Scripts/jquery.globalize.min.js")%&gt;'>&lt;/script&gt;
-
-&lt;script src='&lt;%= Page.ResolveClientUrl("~/Scripts/globalize.culture.de-DE.min.js")%&gt;'>&lt;/script&gt;
 
 
 
 
+<script src='<%= Page.ResolveClientUrl("~/Scripts/jquery.globalize.min.js")%>'></script>
 
-[aspx]   
+<script src='<%= Page.ResolveClientUrl("~/Scripts/globalize.culture.de-DE.min.js")%>'></script>
 
 
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True" AllowPaging="True" Locale="de-DE"&gt;
+   
 
-            &lt;GroupSettings EnableDropAreaAutoSizing="False"&gt;&lt;/GroupSettings&gt;
 
-            &lt;Columns&gt;
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True" AllowPaging="True" Locale="de-DE">
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90" /&gt;
+            <GroupSettings EnableDropAreaAutoSizing="False"></GroupSettings>
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="80" /&gt;
+            <Columns>
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="90" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90" />
 
-            &lt;/Columns&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="80" />
 
-        &lt;/ej:Grid&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />
+
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="90" />
+
+            </Columns>
+
+        </ej:Grid>
 
 {% endhighlight %}
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -172,7 +168,7 @@ public partial class Localization : System.Web.UI.Page
 
 The Grid and Pager has its own locale labels for applying the information about specific fields in its control. You can set them in the sample side for each culture based translation. The following code example is applied in the sample side for all the above platforms.
 {% highlight js %}
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
         // Locale labels for ejGrid
 
@@ -216,7 +212,7 @@ ej.Pager.locale["de-DE"] = {
 
         };
 
-    &lt;/script&gt;
+    </script>
 
 
 {% endhighlight  %}
@@ -224,8 +220,8 @@ ej.Pager.locale["de-DE"] = {
 
 The output for the above code example is displayed as the following screenshot.
 
-![](Localization_images/Localization_img1.png)
-{:.image }
+![](Localization_images/Localization_img1.png) 
+
 
 
 

@@ -67,7 +67,7 @@ Output of the above step.
 
 
 ![](Adjusting-Dropdown-size_images/Adjusting-Dropdown-size_img1.png)
-{:.image }
+
 
 
 ## Water Mark 
@@ -118,8 +118,8 @@ In an ASPX page, add an element to configure the DropDownList.
 
 Output of the above step.
 
-![](Adjusting-Dropdown-size_images/Adjusting-Dropdown-size_img2.png) 
-{:.image }
+![](Adjusting-Dropdown-size_images/Adjusting-Dropdown-size_img2.png)  
+
 
 
 ## Enabling Rounded corner
@@ -172,8 +172,7 @@ In an ASPX page, add an element to configure the DropDownList.
 
 Output of the above step.
 
-
 ![](Adjusting-Dropdown-size_images/Adjusting-Dropdown-size_img3.png)
-{:.image }
+
 
 

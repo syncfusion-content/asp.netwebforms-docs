@@ -17,22 +17,22 @@ You can acquire the information related to a particular data point of series by 
 
 
 {% highlight html %}
-[ASP.NET] 
-
- &lt;ej:Chart ID="Chart1"  OnClientPointRegionClick="pointDetails" OnClientPointRegionMouseMove="pointDetails" runat="server"&gt;
 
 
-
-     &lt;CommonSeriesOptions Type="Column"&gt;&lt;/CommonSeriesOptions&gt;        
+ <ej:Chart ID="Chart1"  OnClientPointRegionClick="pointDetails" OnClientPointRegionMouseMove="pointDetails" runat="server">
 
 
 
- &lt;/ej:Chart&gt;
+     <CommonSeriesOptions Type="Column"></CommonSeriesOptions>        
+
+
+
+ </ej:Chart>
  {% endhighlight  %}
 {% highlight js %}
-[JS]
 
-  &lt;script type="text/javascript"&gt;
+
+  <script type="text/javascript">
 
  function pointDetails(sender) {
 
@@ -46,12 +46,12 @@ You can acquire the information related to a particular data point of series by 
 
     }
 
-  &lt;/script&gt;
+  </script>
 
 {% endhighlight  %}
 
 ![](Behaviour-Customization_images/Behaviour-Customization_img1.png)
-{:.image }
+
 
 
 ## Handle Events
@@ -64,16 +64,16 @@ This event is handled when the Chart gets loaded; a parameter sender is passed t
 
 {% highlight html %}
 
-[ASP.NET] 
 
-  &lt;ej:Chart ID="Chart1" OnClientLoad="onload" runat="server"&gt;
 
-  &lt;/ej:Chart&gt;
+  <ej:Chart ID="Chart1" OnClientLoad="onload" runat="server">
+
+  </ej:Chart>
 {% endhighlight %}
 {% highlight js %}
 [JS]
 
-     &lt;script type="text/javascript"&gt;
+     <script type="text/javascript">
 
                function onload (sender) {
 
@@ -81,7 +81,7 @@ This event is handled when the Chart gets loaded; a parameter sender is passed t
 
                }
 
-      &lt;/script&gt;       
+      </script>       
 
 
 {% endhighlight  %}
@@ -91,19 +91,18 @@ This event is handled before the Chart gets rendered; a parameter sender is pass
 
 {% highlight html %}
 
-[ASP.NET] 
-
-  &lt;ej:Chart ID="Chart1"  OnClientPreRender="onprerender" runat="server"&gt;
 
 
+  <ej:Chart ID="Chart1"  OnClientPreRender="onprerender" runat="server">
 
-    &lt;/ej:Chart&gt;
+
+
+    </ej:Chart>
 {% endhighlight %}
 {% highlight js %}
 
- [JS]
 
-     &lt;script type="text/javascript"&gt;
+     <script type="text/javascript">
 
          function onprerender (sender) {
 
@@ -111,7 +110,7 @@ This event is handled before the Chart gets rendered; a parameter sender is pass
 
          }     
 
- &lt;/script&gt;         
+ </script>         
 
 
 {% endhighlight  %}
@@ -123,18 +122,18 @@ This event is handled before the Chart title gets rendered; a parameter sender i
 
 
 {% highlight html %}
-[ASP.NET] 
-
-&lt;ej:Chart ID="Chart1" OnClientTitleRendering="ontitleRendering" runat="server"&gt;
 
 
+<ej:Chart ID="Chart1" OnClientTitleRendering="ontitleRendering" runat="server">
 
-    &lt;/ej:Chart&gt;
+
+
+    </ej:Chart>
 {% endhighlight  %}
 {% highlight js %}
- [JS]
+ 
 
-     &lt;script type="text/javascript"&gt;
+     <script type="text/javascript">
 
          function ontitleRendering(sender) {
 
@@ -142,7 +141,7 @@ This event is handled before the Chart title gets rendered; a parameter sender i
 
                }
 
-&lt;/script&gt;         
+</script>         
 
 {% endhighlight  %}
 
@@ -156,18 +155,18 @@ This event is handled before the Chart axis gets rendered; a parameter sender is
 
 
 {% highlight html %}
-[ASP.NET] 
-
-&lt;ej:Chart ID="Chart1 OnClientAxesLabelsInitialize="onaxesLabelsInitialize" runat="server"&gt;
 
 
+<ej:Chart ID="Chart1 OnClientAxesLabelsInitialize="onaxesLabelsInitialize" runat="server">
 
-    &lt;/ej:Chart&gt;
+
+
+    </ej:Chart>
 {% endhighlight  %}
 {% highlight js %}
- [JS]
 
-     &lt;script type="text/javascript"&gt;
+
+     <script type="text/javascript">
 
          function onaxesLabelsInitialize(sender) {
 
@@ -175,7 +174,7 @@ This event is handled before the Chart axis gets rendered; a parameter sender is
 
                }
 
-&lt;/script&gt;         
+</script>         
 
 {% endhighlight  %}
 
@@ -187,18 +186,18 @@ This event is handled after the Chart axis range gets calculated; a parameter se
 
 
 {% highlight html %}
-[ASP.NET] 
-
-&lt;ej:Chart ID="Chart1"  OnClientAxesRangeCalculate="onaxesRangeCalculate"  runat="server"&gt;
 
 
+<ej:Chart ID="Chart1"  OnClientAxesRangeCalculate="onaxesRangeCalculate"  runat="server">
 
-   &lt;/ej:Chart&gt;
+
+
+   </ej:Chart>
 {% endhighlight %}
 {% highlight js %}
- [JS]
 
-     &lt;script type="text/javascript"&gt;
+
+     <script type="text/javascript">
 
          function onaxesRangeCalculate(sender) {
 
@@ -206,7 +205,7 @@ This event is handled after the Chart axis range gets calculated; a parameter se
 
                }
 
-&lt;/script&gt;         
+</script>         
 
 
 
@@ -218,18 +217,18 @@ This event is handled before the Chart axis title gets rendered; a parameter sen
 
 
 {% highlight html %}
-[ASP.NET] 
-
-  &lt;ej:Chart ID="Chart1" OnClientTitleRendering="onaxesTitleRendering" runat="server"&gt;
 
 
+  <ej:Chart ID="Chart1" OnClientTitleRendering="onaxesTitleRendering" runat="server">
 
-    &lt;/ej:Chart&gt;
+
+
+    </ej:Chart>
 {% endhighlight  %}
 {% highlight js %}
- [JS]
 
-     &lt;script type="text/javascript"&gt;
+
+     <script type="text/javascript">
 
            function onaxesTitleRendering(sender) {
 
@@ -237,7 +236,7 @@ This event is handled before the Chart axis title gets rendered; a parameter sen
 
              }
 
-&lt;/script&gt;         
+</script>         
 
 
 {% endhighlight  %}
@@ -249,18 +248,17 @@ This event is handled before the Chart axis label gets rendered; a parameter sen
 
 {% highlight html %}
 
-[ASP.NET] 
 
-&lt;ej:Chart ID="Chart1" OnClientAxesLabelRendering="onaxesLabelRendering"  runat="server"&gt;
-
+<ej:Chart ID="Chart1" OnClientAxesLabelRendering="onaxesLabelRendering"  runat="server">
 
 
-    &lt;/ej:Chart&gt;
+
+    </ej:Chart>
 {% endhighlight  %}
 {% highlight js  %}
-[JS]
 
-     &lt;script type="text/javascript"&gt;
+
+     <script type="text/javascript">
 
          function onaxesLabelRendering(sender) {
 
@@ -268,7 +266,7 @@ This event is handled before the Chart axis label gets rendered; a parameter sen
 
                }
 
-      &lt;/script&gt;
+      </script>
 
 {% endhighlight  %}
 
@@ -280,18 +278,18 @@ This event is handled before the Chart series gets rendered; a parameter sender 
 
 {% highlight html %}
 
-[ASP.NET] 
+ 
 
-  &lt;ej:Chart ID="Chart1"  OnClientSeriesRendering="onseriesRendering" runat="server"&gt;
+  <ej:Chart ID="Chart1"  OnClientSeriesRendering="onseriesRendering" runat="server">
 
 
 
-   &lt;/ej:Chart&gt;
+   </ej:Chart>
 {% endhighlight  %}
 {% highlight js  %}
-[JS]
 
-     &lt;script type="text/javascript"&gt;
+
+     <script type="text/javascript">
 
         function onseriesRendering(sender) {
 
@@ -299,7 +297,7 @@ This event is handled before the Chart series gets rendered; a parameter sender 
 
           }
 
-      &lt;/script&gt;
+      </script>
 
 
 {% endhighlight  %}
@@ -311,18 +309,17 @@ This event is handled before the marker of each series point gets rendered; a pa
 
 {% highlight html %}
 
-[ASP.NET] 
-
-  &lt;ej:Chart ID="Chart1" OnClientSymbolRendering="onsymbolRendering" runat="server"&gt;
 
 
+  <ej:Chart ID="Chart1" OnClientSymbolRendering="onsymbolRendering" runat="server">
 
-    &lt;/ej:Chart&gt;
+
+
+    </ej:Chart>
 {% endhighlight  %}
 {% highlight js  %}
-[JS]
 
-     &lt;script type="text/javascript"&gt;
+     <script type="text/javascript">
 
          function onsymbolRendering(sender) {
 
@@ -330,7 +327,7 @@ This event is handled before the marker of each series point gets rendered; a pa
 
           }
 
-      &lt;/script&gt;
+      </script>
 
 
 
@@ -342,18 +339,17 @@ This event is handled before the dataLabel of each series points gets rendered; 
 
 {% highlight html %}
 
-[ASP.NET] 
 
-&lt;ej:Chart ID="Chart1" OnClientDisplayTextRendering="ondisplayTextRendering" runat="server"&gt;
-
+<ej:Chart ID="Chart1" OnClientDisplayTextRendering="ondisplayTextRendering" runat="server">
 
 
- &lt;/ej:Chart&gt;
+
+ </ej:Chart>
 {% endhighlight %}
 {% highlight js %}
- [JS]
 
-     &lt;script type="text/javascript"&gt;
+
+     <script type="text/javascript">
 
         function ondisplayTextRendering(sender) {
 
@@ -361,7 +357,7 @@ This event is handled before the dataLabel of each series points gets rendered; 
 
            }
 
-      &lt;/script&gt;
+      </script>
 
 
 {% endhighlight  %}
@@ -375,18 +371,18 @@ This event is handled after the series animation is completed; a parameter sende
 
 {% highlight html %}
 
-[ASP.NET] 
-
-&lt;ej:Chart ID="Chart1" OnClientAnimationComplete="onanimationComplete" runat="server"&gt;
 
 
+<ej:Chart ID="Chart1" OnClientAnimationComplete="onanimationComplete" runat="server">
 
- &lt;/ej:Chart&gt;
+
+
+ </ej:Chart>
 {% endhighlight  %}
 {% highlight js %}
- [JS]
 
-     &lt;script type="text/javascript"&gt;
+
+     <script type="text/javascript">
 
      function onanimationComplete(sender) {
 
@@ -394,7 +390,7 @@ This event is handled after the series animation is completed; a parameter sende
 
        }
 
-      &lt;/script&gt;
+      </script>
 
 {% endhighlight  %}
 
@@ -406,18 +402,18 @@ This event is handled before the legend of each series points gets rendered; a p
 
 {% highlight html %}
 
-[ASP.NET] 
+ 
 
-&lt;ej:Chart ID="Chart1" OnClientLegendItemRendering=" onlegendItemRendering " runat="server"&gt;
+<ej:Chart ID="Chart1" OnClientLegendItemRendering=" onlegendItemRendering " runat="server">
 
 
 
-    &lt;/ej:Chart&gt;
+    </ej:Chart>
 {% endhighlight %}
 {% highlight js %}
- [JS]
 
-     &lt;script type="text/javascript"&gt;
+
+     <script type="text/javascript">
 
          function onlegendItemRendering(sender) {
 
@@ -427,7 +423,7 @@ This event is handled before the legend of each series points gets rendered; a p
 
 
 
-      &lt;/script&gt;
+      </script>
 
 {% endhighlight  %}
 
@@ -439,18 +435,18 @@ This event is handled when you click the legend item; a parameter sender is pass
 
 {% highlight html %}
 
-[ASP.NET] 
-
-&lt;ej:Chart ID="Chart1"  OnClientLegendItemClick="onlegendItemClick" runat="server"&gt;
 
 
+<ej:Chart ID="Chart1"  OnClientLegendItemClick="onlegendItemClick" runat="server">
 
-&lt;/ej:Chart&gt;
+
+
+</ej:Chart>
 {% endhighlight  %}
 {% highlight js %}
- [JS]
 
-     &lt;script type="text/javascript"&gt;
+
+     <script type="text/javascript">
 
          function onlegendItemClick(sender) {
 
@@ -458,7 +454,7 @@ This event is handled when you click the legend item; a parameter sender is pass
 
          }
 
-     &lt;/script&gt;
+     </script>
 
 
 
@@ -470,18 +466,18 @@ This event is handled when you move the mouse over the legend item; a parameter 
 
 {% highlight html %}
 
-[ASP.NET] 
-
-&lt;ej:Chart ID="Chart1"  OnClientLegendItemMouseMove="onlegendItemMouseMove" runat="server"&gt;
 
 
+<ej:Chart ID="Chart1"  OnClientLegendItemMouseMove="onlegendItemMouseMove" runat="server">
 
-    &lt;/ej:Chart&gt;
+
+
+    </ej:Chart>
 {% endhighlight %}
 {% highlight js %}
- [JS]
 
-     &lt;script type="text/javascript"&gt;
+
+     <script type="text/javascript">
 
          function onlegendItemMouseMove(sender) {
 
@@ -489,7 +485,7 @@ This event is handled when you move the mouse over the legend item; a parameter 
 
          }
 
-      &lt;/script&gt;
+      </script>
 
 
 
@@ -501,18 +497,18 @@ This event is handled after the bounds for legend is calculated.  A parameter se
 
 {% highlight html %}
 
-[ASP.NET] 
-
-&lt;ej:Chart ID="Chart1" OnClientLengendBoundsCalculate="onlegendBoundsCalculate" runat="server"&gt;
 
 
+<ej:Chart ID="Chart1" OnClientLengendBoundsCalculate="onlegendBoundsCalculate" runat="server">
 
-    &lt;/ej:Chart&gt;
+
+
+    </ej:Chart>
 {% endhighlight  %}
 {% highlight js %}
- [JS]
 
-     &lt;script type="text/javascript"&gt;
+
+     <script type="text/javascript">
 
          function onlegendBoundsCalculate(sender) {
 
@@ -520,7 +516,7 @@ This event is handled after the bounds for legend is calculated.  A parameter se
 
          }
 
-      &lt;/script&gt;
+      </script>
 
 {% endhighlight  %}
 
@@ -536,16 +532,16 @@ This event is handled before the tooltip gets rendered.  A parameter sender is p
 {% highlight html %}
 [ASP.NET] 
 
-&lt;ej:Chart ID="Chart1" OnClientToolTipInitialize="ontoolTipInitialize" runat="server"&gt;
+<ej:Chart ID="Chart1" OnClientToolTipInitialize="ontoolTipInitialize" runat="server">
 
 
 
-    &lt;/ej:Chart&gt;
+    </ej:Chart>
 {% endhighlight %}
 {% highlight js %}
- [JS]
 
-     &lt;script type="text/javascript"&gt;
+
+     <script type="text/javascript">
 
         function ontoolTipInitialize(sender) {
 
@@ -553,7 +549,7 @@ This event is handled before the tooltip gets rendered.  A parameter sender is p
 
          }
 
-      &lt;/script&gt;
+      </script>
 
 
 {% endhighlight  %}
@@ -565,18 +561,18 @@ This event is handled before the tooltip for axis gets rendered when crosshair i
 
 {% highlight html %}
 
-[ASP.NET] 
-
-&lt;ej:Chart ID="Chart1" OnClientTrackAxisToolTip="ontrackAxisToolTip" runat="server"&gt;
 
 
+<ej:Chart ID="Chart1" OnClientTrackAxisToolTip="ontrackAxisToolTip" runat="server">
 
-  &lt;/ej:Chart&gt;
+
+
+  </ej:Chart>
 {% endhighlight  %}
 {% highlight js %}
- [JS]
 
-     &lt;script type="text/javascript"&gt;
+
+     <script type="text/javascript">
 
          function ontrackAxisToolTip(sender) {
 
@@ -584,7 +580,7 @@ This event is handled before the tooltip for axis gets rendered when crosshair i
 
          }
 
-      &lt;/script&gt;         
+      </script>         
 
 
 
@@ -598,18 +594,18 @@ This event is handled before the tooltip for trackball get rendered when trackba
 
 {% highlight html %}
 
-[ASP.NET] 
-
-  &lt;ej:Chart ID="Chart1"  OnClientTrackToolTip="ontrackToolTip" runat="server"&gt;
 
 
+  <ej:Chart ID="Chart1"  OnClientTrackToolTip="ontrackToolTip" runat="server">
 
- &lt;/ej:Chart&gt;
+
+
+ </ej:Chart>
 {% endhighlight  %}
 {% highlight html %}
- [JS]
 
-     &lt;script type="text/javascript"&gt;
+
+     <script type="text/javascript">
 
         function ontrackToolTip(sender) {
 
@@ -617,7 +613,7 @@ This event is handled before the tooltip for trackball get rendered when trackba
 
          }
 
-      &lt;/script&gt;
+      </script>
 
 {% endhighlight  %}
 

@@ -19,43 +19,43 @@ For instance, consider a textbox above Grid and depending on its value, you can 
 
 
 
-&lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
 
-    &lt;div&gt;
+    <div>
 
         Enter EmployeeID Field Value:
 
-        &lt;input type="text" id="colValue" /&gt;
+        <input type="text" id="colValue" />
 
-        &lt;ej:Button ID="customButton" runat="server" Size="Normal" ClientSideOnClick="btnClick" Text="Change DataSource"&gt;&lt;/ej:Button&gt;
+        <ej:Button ID="customButton" runat="server" Size="Normal" ClientSideOnClick="btnClick" Text="Change DataSource"></ej:Button>
 
-        &lt;ej:Grid ID="FlatGrid" runat="server" AllowSorting="True" AllowPaging="True"&gt;
+        <ej:Grid ID="FlatGrid" runat="server" AllowSorting="True" AllowPaging="True">
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />
 
-                &lt;ej:Column Field="OrderDate" HeaderText="Order Date" TextAlign="Right" Width="80" Format="{0:MM/dd/yyyy}" /&gt;
+                <ej:Column Field="OrderDate" HeaderText="Order Date" TextAlign="Right" Width="80" Format="{0:MM/dd/yyyy}" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="110" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="110" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-    &lt;/div&gt;
+    </div>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
 
 
@@ -97,7 +97,7 @@ function btnClick(args) { //updating dataSource in an external button click even
 
 }
 
-&lt;/script&gt;
+</script>
 
 
 
@@ -136,6 +136,6 @@ public static object GetData(int EmployeeID)
 The following screenshot illustrates the output.
 
 { ![C:/Users/ApoorvahR/Desktop/1.png](Set-Dynamic-DataSource-to-Grid_images/Set-Dynamic-DataSource-to-Grid_img1.png) | markdownify }
-{:.image }
+
 
 

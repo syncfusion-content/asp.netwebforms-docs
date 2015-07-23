@@ -241,7 +241,7 @@ Output of the above step.
 
 
 
-![](Icons-Support_images/Icons-Support_img2.png) 
-{:.image }
+![](Icons-Support_images/Icons-Support_img2.png)  
+
 
 

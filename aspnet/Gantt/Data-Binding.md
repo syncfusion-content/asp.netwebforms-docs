@@ -23,7 +23,6 @@ The following code example shows how to bind the hierarchical local data into th
 
 {% highlight c# %}
 
-Gantt.aspx.cs
 
 
 
@@ -237,7 +236,7 @@ namespace ASP_Doc.Gantt
 
 {% endhighlight %}
 {% highlight html %}
-Gantt.aspx
+
 
 
 
@@ -300,7 +299,7 @@ The output of the above steps is as follows.
 
 
 ![](Data-Binding_images/Data-Binding_img1.png)
-{:.image }
+
 
 
 Self-Referential Data Binding (Flat Data)
@@ -317,8 +316,6 @@ Gantt can be rendered from self-referential data structures, by providing two fi
 
 
 {% highlight c# %}
-
-Gantt.aspx.cs
 
 
 
@@ -682,7 +679,7 @@ namespace ASP_Doc.Gantt
 
 {% endhighlight %}
 {% highlight html %}
-Gantt.aspx
+
 
 
 
@@ -752,7 +749,7 @@ The following screenshot shows the output of the above steps.
 
 
 
-![](Data-Binding_images/Data-Binding_img2.png)
-{:.image }
+![](Data-Binding_images/Data-Binding_img2.png) 
+
 
 

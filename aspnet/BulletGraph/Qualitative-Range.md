@@ -10,11 +10,7 @@ documentation: ug
 # Qualitative Range
 
 Qualitative Range represents the quality of a specific range in quantitative scale like good, bad and satisfactory. Color for each qualitative range is customized using RangeStroke property. The RangeEnd property specifies the ending point of the qualitative range. Minimum value of quantitative scale is considered as the starting point of first qualitative range and previous end points are considered as starting point for other qualitative ranges. 
-
 {% highlight html %}
-
-[ASP.NET]
-
 <ej:BulletGraph ID="BulletGraph1" QualitativeRangeSize="60" Value="8" ComparativeMeasureValue="5" Width="600px" Height="120px" runat="server">                        
 
             <QualitativeRanges>
@@ -51,11 +47,11 @@ Qualitative Range represents the quality of a specific range in quantitative sca
 
         </ej:BulletGraph>
 
-{% endhighlight %}
+{% endhighlight  %}
 
 The following screenshot displays Bullet Graph with different qualitative ranges in different colors. In this image, range 0 to 35 represents bad performance, 35 to 50 represents average performance, 50 to 75 represents that the performance is above average, 75 to 90 represents good performance and above 90 represents excellent performance.
 
 ![](Qualitative-Range_images/Qualitative-Range_img1.png)
-{:.image }
+
 
 

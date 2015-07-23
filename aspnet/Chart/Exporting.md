@@ -15,13 +15,13 @@ Code:
 {% highlight html %}
 [ASP.NET] 
 
-   &lt;img alt="Export Chart" src="../Content/images/chart/export.png" onclick="onExport()"  title="Export Chart" style="float: right" /&gt;
+   <img alt="Export Chart" src="../Content/images/chart/export.png" onclick="onExport()"  title="Export Chart" style="float: right" />
 
-        &lt;ej:Chart ID="Chart1" EnableCanvasRendering="true" runat="server"&gt;            
+        <ej:Chart ID="Chart1" EnableCanvasRendering="true" runat="server">            
 
-        &lt;/ej:Chart&gt; 
+        </ej:Chart> 
 
-&lt;script&gt;
+<script>
 
         function onExport() {
 
@@ -45,7 +45,7 @@ Code:
 
     }
 
-&lt;/script&gt;
+</script>
 
 {% endhighlight  %}
 

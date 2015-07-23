@@ -61,6 +61,6 @@ Output of the above step.
 
 
 ![](RTL_images/RTL_img1.png)
-{:.image }
+
 
 

@@ -7,7 +7,7 @@ control: PercentageTextBox
 documentation: ug
 ---
 
-## Keyboard Interaction
+# Keyboard Interaction
 
 With the keyboard navigation enabled in the PercentageTextbox control, it is possible to control the actions of the PercentageTextbox with the provided shortcut keys. Almost all the PercentageTextbox actions that are done through mouse can be controlled with shortcut keys.
 
@@ -37,7 +37,7 @@ Decrements the value</td></tr>
 Tab</td><td>
 Focus the next element</td></tr>
 </table>
-### Configuring Keyboard Navigation
+## Configuring Keyboard Navigation
 
 The following steps explain the implementation of keyboard interaction in PercentageTextbox.
 
@@ -80,10 +80,8 @@ $(document).on("keydown", function (e)
 {% endhighlight %}
 
 
+![](Keyboard-Interaction_images/Keyboard-Interaction_img1.png)
 
-{ ![](Keyboard-Interaction_images/Keyboard-Interaction_img1.png) | markdownify }
-{:.image }
 Run the sample and press [Access key](http://en.wikipedia.org/wiki/Access_key) + j key to focus the PercentageTextbox control. Perform provided functionality by using the keyboard shortcuts.
 
-__
 

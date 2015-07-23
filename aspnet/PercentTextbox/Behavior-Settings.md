@@ -7,13 +7,13 @@ control: PercentageTextBox
 documentation: ug
 ---
 
-## Behavior Settings
+# Behavior Settings
 
-### Decimal Places
+## Decimal Places
 
 The DecimalPlaces declares the decimal point to the value of PercentageTextbox control. The default value of DecimalPlaces is 0 in PercentageTextbox control.
 
-#### Configure Decimal Places
+### Configure Decimal Places
 
 Add the following code example in your ASPX page to render PercentageTextbox control with DecimalPlaces
 
@@ -21,29 +21,21 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 <ej:PercentageTextBox ID="percentage" DecimalPlaces="2" Value="22" runat="server"> </ej:PercentageTextBox>
 
-
-
 {% endhighlight %}
 
 
 
-The output for the above code { ![](Behavior-Settings_images/Behavior-Settings_img1.png) | markdownify }
-{:.image }
+The output for the above code 
+![](Behavior-Settings_images/Behavior-Settings_img1.png)
+
 example is as follows.
 
 
-
-
-
-
-
-
-
-### Persistence Support
+## Persistence Support
 
 The PercentageTextbox control provides state maintenance support. You can maintain the previous changes made in the control after the page load while the EnablePersistence property is in enabled state. EnablePersistence accepts Boolean values, by default the value is false.
 
-#### Configure Persistence Support 
+### Configure Persistence Support 
 
 Add the following code example in your ASPX page to render PercentageTextbox control with state maintenance by using EnablePersistence.
 
@@ -51,41 +43,34 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 <ej:PercentageTextBox ID="percentage"  Value="22" EnablePersistence="true" runat="server"> </ej:PercentageTextBox>
 
-
-
 {% endhighlight %}
 
 
 
 The output for PercentageTextbox with EnablePersistencebefore page load and after page load is as follows.
 
-{ ![C:/Users/apoorvah.ramanathan/Desktop/1.png](Behavior-Settings_images/Behavior-Settings_img2.png) | markdownify }
-{:.image }
+![C:/Users/apoorvah.ramanathan/Desktop/1.png](Behavior-Settings_images/Behavior-Settings_img2.png) 
 
 
-### Strict Mode Support
+
+## Strict Mode Support
 
 The PercentageTextbox control provides you the strict mode option by setting EnableStrictMode property. You have to set the MinValue and MaxValue to the control for enabling strict mode functionality. When the PercentageTextbox value exceeds the MaxValue, it restricts the exceeded value and returns the MaxValue. Likewise when the PercentageTextbox value goes below MinValue, it restricts the new value and returns the MinValue. When the EnableStrictMode property is enabled then it highlights the PercentageTextbox in red color.
 
-#### Configure Strict Mode Support 
+### Configure Strict Mode Support 
 
 Add the following code example in your ASPX page to render PercentageTextbox control with strict mode.
 
 {% highlight html %}
 
 <div id="disable">
-
-        <ej:PercentageTextBox ID="PercentageTextBox1" MinValue="5" MaxValue="8" EnableStrictMode="false" runat="server"></ej:PercentageTextBox>
-
-    </div>
-
-    <div id="enable">
-
-        <ej:PercentageTextBox ID="percentage" MinValue="5" MaxValue="8" EnableStrictMode="true" runat="server"></ej:PercentageTextBox>
-
-    </div>
-
-
+    <ej:percentagetextbox id="PercentageTextBox1" minvalue="5" maxvalue="8" enablestrictmode="false"
+        runat="server"></ej:percentagetextbox>
+</div>
+<div id="enable">
+    <ej:percentagetextbox id="percentage" minvalue="5" maxvalue="8" enablestrictmode="true"
+        runat="server"></ej:percentagetextbox>
+</div>
 
 {% endhighlight %}
 
@@ -94,20 +79,17 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 The output for PercentageTextbox with and without EnableStrictMode.
 
 
+![](Behavior-Settings_images/Behavior-Settings_img3.png) 
 
-
-
-{ ![](Behavior-Settings_images/Behavior-Settings_img3.png) | markdownify }
-{:.image }
 
 
    _PercentageTextbox without EnableStrictMode 	                    PercentageTextbox with EnableStrictMode_ 	
 
-### Enabled or Disabled
+## Enabled or Disabled
 
 The PercentageTextbox control contains an option to enable or disable its element. You can set the Enabled property as true to enable the PercentageTextbox control. Enabled property accepts Boolean value. By default the value of enabled is set as true.
 
-##### Configure Enabled or Disabled 
+### Configure Enabled or Disabled 
 
 Add the following code example in your ASPX page to render PercentageTextbox control with enabled.
 
@@ -123,10 +105,10 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img4.png) | markdownify }
-{:.image }
-{ ![](Behavior-Settings_images/Behavior-Settings_img5.png) | markdownify }
-{:.image }
+![](Behavior-Settings_images/Behavior-Settings_img4.png)
+
+![](Behavior-Settings_images/Behavior-Settings_img5.png) 
+
 The output for PercentageTextbox when Enabled is “true” and Enabled is “false”.
 
 
@@ -135,11 +117,11 @@ The output for PercentageTextbox when Enabled is “true” and Enabled is “fa
 
                 _PercentageTextbox with enabled as true	                                                PercentageTextbox with enabled as false_
 
-### Adjusting Textbox Size
+## Adjusting Textbox Size
 
 The PercentageTextbox size can be modified by using Height and Width property. You can customize the size of PercentageTextbox by using these properties.
 
-#### Configure Height and Width 
+### Configure Height and Width 
 
 Add the following code example in your ASPX page to render PercentageTextbox control with custom height and width.
 
@@ -157,19 +139,15 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 The output for PercentageTextbox after setting Height and Width.
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img6.png) | markdownify }
-{:.image }
-
-
-__
+![](Behavior-Settings_images/Behavior-Settings_img6.png) 
 
 
 
-### Increment Step
+## Increment Step
 
 The IncrementStep property is used to increase or decrease the amount of value in the PercentageTextbox control. 
 
-#### Configure Increment Step
+### Configure Increment Step
 
 Add the following code example in your ASPX page to render PercentageTextbox control with IncrementStep.
 
@@ -187,21 +165,20 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 The output for PercentageTextbox with IncrementStep.
 
-__
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img7.png) | markdownify }
-{:.image }
-{ ![](Behavior-Settings_images/Behavior-Settings_img8.png) | markdownify }
-{:.image }
+![](Behavior-Settings_images/Behavior-Settings_img7.png) 
+
+![](Behavior-Settings_images/Behavior-Settings_img8.png) 
+
 
 
           _PercentageTextbox at initial load	                              PercentageTextbox after increasing one step_
 
-### Define Name
+## Define Name
 
 When you place the PercentageTextbox in a form, the Name property is used to send the field value at form submission. The default value of Name property is null.
 
-#### Configure Name
+### Configure Name
 
 Add the following code example in your ASPX page to render PercentageTextbox control with Name.
 
@@ -217,19 +194,20 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 
 
-The output for PercentageTextbox with Name.{ ![](Behavior-Settings_images/Behavior-Settings_img9.png) | markdownify }
-{:.image }
+The output for PercentageTextbox with Name. 
+![](Behavior-Settings_images/Behavior-Settings_img9.png) 
 
 
 
 
 
 
-### Define Value
+
+## Define Value
 
 The value of PercentageTextbox can be assigned by using Value property. The default value for value property is null.
 
-#### Configure Value
+### Configure Value
 
 Add the following code example in your ASPX page to render PercentageTextbox control with Value.
 
@@ -245,43 +223,30 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 
 
-The output for PercentageTextbox with Value.{ ![](Behavior-Settings_images/Behavior-Settings_img10.png) | markdownify }
-{:.image }
+The output for PercentageTextbox with Value.
+![](Behavior-Settings_images/Behavior-Settings_img10.png) 
 
 
 
-
-
-
-
-
-
-
-### Basic Properties
+## Basic Properties
 
 The PercentageTextbox contain basic behaviors like Name, Value, MaxValue and MinValue.
 
-#### maxValue
+### maxValue
 
 The maximum value limit can be assigned to the PercentageTextbox by using MaxValue property. The default value of MaxValue property is 1.7976931348623157e+308. 
 
-#### minValue
+### minValue
 
 The minimum value limit can be assigned to the PercentageTextbox by using MinValue property. The default value of MinValue property is -1.7976931348623157e+308.
 
-#### Configure Basic Properties
+### Configure Basic Properties
 
 Add the following code in your ASPX page to render PercentageTextbox control with MaxValue and MinValue
 
 {% highlight html %}
 
-
-
 <ej:PercentageTextBox ID="percentage"  Value="2" MinValue="-2" MaxValue="3" runat="server"></ej:PercentageTextBox>
-
-
-
-
 
 {% endhighlight %}
 
@@ -289,55 +254,41 @@ Add the following code in your ASPX page to render PercentageTextbox control wit
 
 The output for PercentageTextbox with basic properties.
 
-__
+![](Behavior-Settings_images/Behavior-Settings_img11.png) 
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img11.png) | markdownify }
-{:.image }
-{ ![](Behavior-Settings_images/Behavior-Settings_img12.png) | markdownify }
-{:.image }
+![](Behavior-Settings_images/Behavior-Settings_img12.png)
+
 
 
                      _PercentageTextbox with Value		            PercentageTextbox with MaxValue_
 
-{ ![](Behavior-Settings_images/Behavior-Settings_img13.png) | markdownify }
-{:.image }
-__
+![](Behavior-Settings_images/Behavior-Settings_img13.png) 
+
 
 
 
                                                                      _PercentageTextbox with MinValue_
 
-### Read Only Support
+## Read Only Support
 
 The PercentageTextbox supports read only option. When enabling read only property to the control, the value can’t be changed or editable in the PercentageTextbox. You can set the ReadOnly property as true to enable this option.
 
-#### Configure Read Only
+### Configure Read Only
 
 Add the following code example in your ASPX page to render PercentageTextbox control with ReadOnly mode.
 
 {% highlight html %}
 
-
-
 <ej:PercentageTextBox ID="percentage"  Value="2" ReadOnly="true" runat="server"> </ej:PercentageTextBox>
-
-
-
-
 
 {% endhighlight %}
 
 
 
-The output for PercentageTextbox when ReadOnly is true.The PercentageTextbox values cannot be edited or changed.{ ![](Behavior-Settings_images/Behavior-Settings_img14.png) | markdownify }
-{:.image }
-
-
-__
+The output for PercentageTextbox when ReadOnly is true.The PercentageTextbox values cannot be edited or changed.
+![](Behavior-Settings_images/Behavior-Settings_img14.png)
 
 
 
 
-
-__
 

@@ -25,15 +25,14 @@ Markers
 The Markers property has a list of objects that contains the data for Annotation. You can visualize these data by using MarkerTemplate property.
 
 {% highlight c# %}
- [ASP]
- [ASPX.CS]   
+   
  public class Syncfusion_LocationData    {        public static List<MapMarker> GetSyncfusionLocationData()        {            List<MapMarker> syncfusionLocationData = new List<MapMarker>            {                new LocationData {Name = "Chennai", Country = "India", Latitude =13.0839 , Longitude = 80.27 , Description = "Syncfusion's branch office is located in AnnaNagar, Chennai", Address ="EYMARD Complex AJ 217 4th Avenue Shanthi Colony Anna Nagar Chennai-40 India" },                new LocationData {Name = "North Carolina", Country = "United States", Latitude =35.5 , Longitude = -80 , Description = "Syncfusion's corporate office is located in Research Triangle Park North Carolina", Address ="Company Headquarters 2501 Aerial Center Parkway Suite 200 Morrisville NC 27560 USA" },            };            return syncfusionLocationData;        }    }                protected void Page_Load(object sender, EventArgs e)        {            (this.map.Layers[0] as ShapeLayer).ShapeData = GetWorldMap();            (this.map.Layers[0] as ShapeLayer).Markers = Syncfusion_LocationData.GetSyncfusionLocationData();        }</td></tr>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-[ASPX]
+
 
 
 
@@ -53,7 +52,7 @@ The Markers property has a list of objects that contains the data for Annotation
 
 
 
-[ASPX]
+
 
 <div  id="template" style="display: none;">
 
@@ -80,7 +79,7 @@ The Markers property has a list of objects that contains the data for Annotation
 {% endhighlight %}
 
 ![](Map-Elements_images/Map-Elements_img1.png)
-{:.image }
+
 
 
 Adding Marker objects to map
@@ -95,7 +94,7 @@ Without Datasource, n number of markers can be added to shape layers with Marker
 
 {% highlight c# %}
 
-  [ASPX.CS]
+  
 
 
 
@@ -140,7 +139,7 @@ Without Datasource, n number of markers can be added to shape layers with Marker
 
 
 ![](Map-Elements_images/Map-Elements_img2.png)
-{:.image }
+
 
 
 Bubbles 
@@ -155,10 +154,10 @@ _Property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 MaxValue</td><td>
@@ -210,11 +209,7 @@ To add bubbles to a map, the bubble marker setting is added to the shape file la
 
 {% highlight html %}
 
-[ASP]
 
-
-
-[ASPX]
 
   <ej:Map ID="map" runat="server" >    
 
@@ -247,7 +242,7 @@ To add bubbles to a map, the bubble marker setting is added to the shape file la
 
 
 ![](Map-Elements_images/Map-Elements_img3.png) 
-{:.image }
+
 
 
 Legend
@@ -301,11 +296,7 @@ The Layer shape type legends can be generated for each color mappings in shape s
 
 {% highlight html %}
 
-[ASP]
 
-
-
-[ASPX]
 
     <ej:Map ID="map" runat="server" >    
 
@@ -332,7 +323,7 @@ The Layer shape type legends can be generated for each color mappings in shape s
 
 
 ![](Map-Elements_images/Map-Elements_img4.png)
-{:.image }
+
 
 
 Interactive Legend
@@ -353,11 +344,7 @@ You can provide the left and right labels to interactive legend by using LeftLab
 
 {% highlight html %}
 
- [ASP]
 
-
-
-[ASPX]
 
     <ej:Map ID="map" runat="server" >    
 
@@ -382,7 +369,7 @@ You can provide the left and right labels to interactive legend by using LeftLab
 
 
 ![](Map-Elements_images/Map-Elements_img5.png)
-{:.image }
+
 
 
 Bubble Legend
@@ -395,11 +382,6 @@ A bubble legend feature is used to provide the key (legend) for another map elem
 
 {% highlight html %}
 
-[ASP]
-
-
-
-[ASPX]
 
     <ej:Map ID="map" runat="server" >    
 
@@ -448,6 +430,6 @@ A bubble legend feature is used to provide the key (legend) for another map elem
 {% endhighlight %}
 
 ![1](Map-Elements_images/Map-Elements_img6.png)
-{:.image }
+
 
 

@@ -96,7 +96,7 @@ In an ASPX page, add an element to configure the DropDownList widget.
 
 
 ![](Grouping-Support_images/Grouping-Support_img1.png)
-{:.image }
+
 
 
 

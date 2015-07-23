@@ -17,7 +17,7 @@ In this section, you can learn how to customize drag and drop element. This drag
 
 [aspx]
 
-&lt;style type="text/css"&gt;
+<style type="text/css">
 
 .e-grid .e-cloneproperties {
 
@@ -25,15 +25,15 @@ In this section, you can learn how to customize drag and drop element. This drag
 
         }
 
-&lt;/style&gt;
+</style>
 
 
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True"&gt;
+<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True">
 
-&lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"&gt;&lt;/DataManager&gt;
+<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"></DataManager>
 
- &lt;/ej:Grid&gt;
+ </ej:Grid>
 
 
 
@@ -46,6 +46,6 @@ In this section, you can learn how to customize drag and drop element. This drag
 The following output is displayed as a result of the above code example.
 
 { ![](Customize-Drag-and-Drop-element-while-grouping_images/Customize-Drag-and-Drop-element-while-grouping_img1.png) | markdownify }
-{:.image }
+
 
 

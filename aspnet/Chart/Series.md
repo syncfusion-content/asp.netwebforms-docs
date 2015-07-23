@@ -15,152 +15,152 @@ The Series property provides access to a collection of all series that are defin
 
 You can plot multipleseries on the same Chart. Series are defined by adding them to the "series" array and rendering order of each series can be controlled using the ZOrder properties of the series. Series with 0 as ZOrder renders first. 
 {% highlight html %}
-[ASP.NET] 
-
-&lt;ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true"&gt;
 
 
-
-           &lt;Series&gt;
-
-             &lt;ej:Series Name="Gold"&gt;
-
-                   &lt;Points&gt;
-
-                        &lt;ej:Points  X="USA" Y="50"/&gt;
-
-                        &lt;ej:Points  X="China" Y="40"/&gt;
-
-                        &lt;ej:Points  X="Japan" Y="70"/&gt;
-
-                        &lt;ej:Points  X="Australia" Y="60"/&gt;
-
-                        &lt;ej:Points  X="France" Y="50"/&gt;
-
-                        &lt;ej:Points  X="Germany" Y="40"/&gt;
-
-                        &lt;ej:Points  X="Italy" Y="40"/&gt;
-
-                        &lt;ej:Points  X="Sweden" Y="30"/&gt;
-
-                    &lt;/Points&gt;
-
-             &lt;/ej:Series&gt;
-
-                &lt;ej:Series Name="Silver"&gt;
-
-                   &lt;Points&gt;
-
-                        &lt;ej:Points  X="USA" Y="70"/&gt;
-
-                        &lt;ej:Points  X="China" Y="60"/&gt;
-
-                        &lt;ej:Points  X="Japan" Y="40"/&gt;
-
-                        &lt;ej:Points  X="Australia" Y="36"/&gt;
-
-                        &lt;ej:Points  X="France" Y="25"/&gt;
-
-                        &lt;ej:Points  X="Germany" Y="30"/&gt;
-
-                        &lt;ej:Points  X="Italy" Y="35"/&gt;
-
-                        &lt;ej:Points  X="Sweden" Y="30"/&gt;
-
-                    &lt;/Points&gt;
-
-             &lt;/ej:Series&gt;
+<ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true">
 
 
 
-         &lt;/Series&gt;
+           <Series>
+
+             <ej:Series Name="Gold">
+
+                   <Points>
+
+                        <ej:Points  X="USA" Y="50"/>
+
+                        <ej:Points  X="China" Y="40"/>
+
+                        <ej:Points  X="Japan" Y="70"/>
+
+                        <ej:Points  X="Australia" Y="60"/>
+
+                        <ej:Points  X="France" Y="50"/>
+
+                        <ej:Points  X="Germany" Y="40"/>
+
+                        <ej:Points  X="Italy" Y="40"/>
+
+                        <ej:Points  X="Sweden" Y="30"/>
+
+                    </Points>
+
+             </ej:Series>
+
+                <ej:Series Name="Silver">
+
+                   <Points>
+
+                        <ej:Points  X="USA" Y="70"/>
+
+                        <ej:Points  X="China" Y="60"/>
+
+                        <ej:Points  X="Japan" Y="40"/>
+
+                        <ej:Points  X="Australia" Y="36"/>
+
+                        <ej:Points  X="France" Y="25"/>
+
+                        <ej:Points  X="Germany" Y="30"/>
+
+                        <ej:Points  X="Italy" Y="35"/>
+
+                        <ej:Points  X="Sweden" Y="30"/>
+
+                    </Points>
+
+             </ej:Series>
 
 
 
-      &lt;/ej:Chart&gt;
+         </Series>
+
+
+
+      </ej:Chart>
 
 
 {% endhighlight  %}
 
 
 ![](Series_images/Series_img1.png)
-{:.image }
+
 
 
 CommonSeriesOptions
 
 You can specify the properties common to all series of the Chart in CommonSeriesOptions.
 {% highlight html %}
- [ASP.NET] 
-
-&lt;ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true"&gt;
-
-       &lt;CommonSeriesOptions Type="Column" Border-Width="2" Border-Color="black" /&gt;
-
-           &lt;Series&gt;
-
-             &lt;ej:Series Name="Gold"&gt;
-
-                   &lt;Points&gt;
-
-                        &lt;ej:Points  X="USA" Y="50"/&gt;
-
-                        &lt;ej:Points  X="China" Y="40"/&gt;
-
-                        &lt;ej:Points  X="Japan" Y="70"/&gt;
-
-                        &lt;ej:Points  X="Australia" Y="60"/&gt;
-
-                        &lt;ej:Points  X="France" Y="50"/&gt;
-
-                        &lt;ej:Points  X="Germany" Y="40"/&gt;
-
-                        &lt;ej:Points  X="Italy" Y="40"/&gt;
-
-                        &lt;ej:Points  X="Sweden" Y="30"/&gt;
-
-                    &lt;/Points&gt;
-
-             &lt;/ej:Series&gt;
-
-             &lt;ej:Series Name="Silver"&gt;
-
-                   &lt;Points&gt;
-
-                        &lt;ej:Points  X="USA" Y="70"/&gt;
-
-                        &lt;ej:Points  X="China" Y="60"/&gt;
-
-                        &lt;ej:Points  X="Japan" Y="40"/&gt;
-
-                        &lt;ej:Points  X="Australia" Y="36"/&gt;
-
-                        &lt;ej:Points  X="France" Y="25"/&gt;
-
-                        &lt;ej:Points  X="Germany" Y="30"/&gt;
-
-                        &lt;ej:Points  X="Italy" Y="35"/&gt;
-
-                        &lt;ej:Points  X="Sweden" Y="30"/&gt;
-
-                    &lt;/Points&gt;
-
-             &lt;/ej:Series&gt;
 
 
+<ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true">
 
-         &lt;/Series&gt;
+       <CommonSeriesOptions Type="Column" Border-Width="2" Border-Color="black" />
+
+           <Series>
+
+             <ej:Series Name="Gold">
+
+                   <Points>
+
+                        <ej:Points  X="USA" Y="50"/>
+
+                        <ej:Points  X="China" Y="40"/>
+
+                        <ej:Points  X="Japan" Y="70"/>
+
+                        <ej:Points  X="Australia" Y="60"/>
+
+                        <ej:Points  X="France" Y="50"/>
+
+                        <ej:Points  X="Germany" Y="40"/>
+
+                        <ej:Points  X="Italy" Y="40"/>
+
+                        <ej:Points  X="Sweden" Y="30"/>
+
+                    </Points>
+
+             </ej:Series>
+
+             <ej:Series Name="Silver">
+
+                   <Points>
+
+                        <ej:Points  X="USA" Y="70"/>
+
+                        <ej:Points  X="China" Y="60"/>
+
+                        <ej:Points  X="Japan" Y="40"/>
+
+                        <ej:Points  X="Australia" Y="36"/>
+
+                        <ej:Points  X="France" Y="25"/>
+
+                        <ej:Points  X="Germany" Y="30"/>
+
+                        <ej:Points  X="Italy" Y="35"/>
+
+                        <ej:Points  X="Sweden" Y="30"/>
+
+                    </Points>
+
+             </ej:Series>
 
 
 
-      &lt;/ej:Chart&gt;
+         </Series>
+
+
+
+      </ej:Chart>
 
 
 {% endhighlight %}
 
 
 ![](Series_images/Series_img2.png)
-{:.image }
+
 
 
 ## Combination Series
@@ -172,38 +172,38 @@ A combination Chart combines two or more Charts types in single Charts. For exam
 
 
 {% highlight html %}
-[ASP.NET] 
-
-&lt;ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true"&gt;
-
-            &lt;PrimaryXAxis Title-Text="Month" /&gt;
-
-            &lt;PrimaryYAxis Title-Text="Unit Sold" /&gt;
-
-            &lt;CommonSeriesOptions Tooltip-Visible="true" EnableAnimation="True"/&gt;
-
-            &lt;Axes&gt;
-
-                &lt;ej:Axis MajorGridLines-Visible="false" OpposedPosition="true" AxisLine-Visible="false" RangePadding="Normal" Name="yAxis" LabelFormat="${value}" Title-Text="Total Transactions" /&gt;
-
-            &lt;/Axes&gt;
 
 
+<ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true">
 
-            &lt;Series&gt;
+            <PrimaryXAxis Title-Text="Month" />
 
-                &lt;ej:Series Name="Unit Sold" XName="Xvalue" YName="YValue1"  Type="Column" EnableAnimation="True"&gt;&lt;/ej:Series&gt;
+            <PrimaryYAxis Title-Text="Unit Sold" />
 
-                &lt;ej:Series Name="Total Transaction" XName="Xvalue" YName="YValue2" Type="Line" EnableAnimation="True" YAxisName="yAxis"&gt;&lt;/ej:Series&gt;
+            <CommonSeriesOptions Tooltip-Visible="true" EnableAnimation="True"/>
 
-            &lt;/Series&gt;
+            <Axes>
 
-        &lt;/ej:Chart&gt;
+                <ej:Axis MajorGridLines-Visible="false" OpposedPosition="true" AxisLine-Visible="false" RangePadding="Normal" Name="yAxis" LabelFormat="${value}" Title-Text="Total Transactions" />
+
+            </Axes>
+
+
+
+            <Series>
+
+                <ej:Series Name="Unit Sold" XName="Xvalue" YName="YValue1"  Type="Column" EnableAnimation="True"></ej:Series>
+
+                <ej:Series Name="Total Transaction" XName="Xvalue" YName="YValue2" Type="Line" EnableAnimation="True" YAxisName="yAxis"></ej:Series>
+
+            </Series>
+
+        </ej:Chart>
 
 
 {% endhighlight %}
 {% highlight c# %}
-[CS]
+
 
            List<CombinationChartData> data = new List<CombinationChartData>();
 
@@ -282,48 +282,48 @@ A combination Chart combines two or more Charts types in single Charts. For exam
 {% endhighlight  %}
 
 ![](Series_images/Series_img3.png)
-{:.image }
+
 
 
 ## Customize Series
 
 You can customize the Chart series using fill, border width and border color. You can customize the series color using ‘Fill’ property of series, the stroke-width of the line, spline series using ‘Width’ property of series, the border color and width of the column/bar using ‘Border’ property of series and rect in the column/bar Chart using the ‘Fill’ and ‘Border’ property of each point.
 {% highlight html %}
- [ASP.NET] 
-
-&lt;ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true"&gt;
-
-       &lt;CommonSeriesOptions Type="Column" Border-Width="2" Border-Color="black" /&gt;
-
-           &lt;Series&gt;
-
-             &lt;ej:Series Name="Gold" Fill="#69D2E7"&gt;
-
-                   &lt;Points&gt;
-
-                        &lt;ej:Points  X="Jan" Y="45"/&gt;
-
-                        &lt;ej:Points  X="Feb" Y="100" Border-Width="2" Border-Color="red"/&gt;
-
-                        &lt;ej:Points  X="Mar" Y="25"/&gt;
-
-                        &lt;ej:Points  X="Apr" Y="100"/&gt;
-
-                        &lt;ej:Points  X="May" Y="85"/&gt;
-
-                        &lt;ej:Points  X="June" Y="140"/&gt;
 
 
+<ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true">
 
-                    &lt;/Points&gt;
+       <CommonSeriesOptions Type="Column" Border-Width="2" Border-Color="black" />
 
-             &lt;/ej:Series&gt;
+           <Series>
 
-         &lt;/Series&gt;
+             <ej:Series Name="Gold" Fill="#69D2E7">
+
+                   <Points>
+
+                        <ej:Points  X="Jan" Y="45"/>
+
+                        <ej:Points  X="Feb" Y="100" Border-Width="2" Border-Color="red"/>
+
+                        <ej:Points  X="Mar" Y="25"/>
+
+                        <ej:Points  X="Apr" Y="100"/>
+
+                        <ej:Points  X="May" Y="85"/>
+
+                        <ej:Points  X="June" Y="140"/>
 
 
 
-      &lt;/ej:Chart&gt;
+                    </Points>
+
+             </ej:Series>
+
+         </Series>
+
+
+
+      </ej:Chart>
 
 
 
@@ -332,112 +332,112 @@ You can customize the Chart series using fill, border width and border color. Yo
 {% endhighlight  %}
 
 ![](Series_images/Series_img4.png)
-{:.image }
+
 
 
 ## Data Labels
 
 Data labels refer to the y values of data points that appear on each point. You can also display category names or custom text in data label by applying template for the dataLabel. HorizontalTextAlignment and VerticalTextAlignment in dataLabel is used to align the label. 
 {% highlight html %}
- [ASP.NET] 
 
 
 
-&lt;div id="template"&gt;
 
-     &lt;div id="point"&gt;#point.x#:#point.y#%&lt;/div&gt;
+<div id="template">
 
- &lt;/div&gt;
+     <div id="point">#point.x#:#point.y#%</div>
+
+ </div>
 
 <ej:Chart ID="Chart1" runat="server
 
-              &lt;Series&gt;
+              <Series>
 
-             &lt;ej:Series Name="India" Fill="#8CC640" Marker-Visible="true" Marker-DataLabel-Visible="true" Marker-DataLabel-Template="template"&gt;
+             <ej:Series Name="India" Fill="#8CC640" Marker-Visible="true" Marker-DataLabel-Visible="true" Marker-DataLabel-Template="template">
 
-                    &lt;Points &gt;
+                    <Points >
 
-                      &lt;ej:Points X="2006" Y="29.2"/&gt;  
+                      <ej:Points X="2006" Y="29.2"/>  
 
-                        &lt;ej:Points X="2007" Y="33.9"/&gt;  
+                        <ej:Points X="2007" Y="33.9"/>  
 
-                        &lt;ej:Points X="2008" Y="36"/&gt;  
+                        <ej:Points X="2008" Y="36"/>  
 
-                        &lt;ej:Points X="2009" Y="32.4"/&gt;
+                        <ej:Points X="2009" Y="32.4"/>
 
-                        &lt;ej:Points X="2010" Y="32"/&gt; 
-
-
-
-                 &lt;/Points&gt;
-
-             &lt;/ej:Series&gt;
-
-             &lt;ej:Series Name="Singapore" Fill="#CBA4C7" Marker-Visible="true" Marker-DataLabel-Visible="true" Marker-DataLabel-Shape="Rectangle"&gt;
-
-                    &lt;Points &gt;
-
-                        &lt;ej:Points  X="2006" Y="21.8"/&gt;  
-
-                        &lt;ej:Points  X="2007" Y="24.9"/&gt;  
-
-                        &lt;ej:Points  X="2008" Y="28.5"/&gt;  
-
-                        &lt;ej:Points  X="2009" Y="27.2"/&gt;
-
-                        &lt;ej:Points  X="2010" Y="23.4"/&gt;  
-
-                    &lt;/Points&gt;
-
-             &lt;/ej:Series&gt;        
-
-         &lt;/Series&gt;
+                        <ej:Points X="2010" Y="32"/> 
 
 
 
-        &lt;/ej:Chart&gt;
+                 </Points>
+
+             </ej:Series>
+
+             <ej:Series Name="Singapore" Fill="#CBA4C7" Marker-Visible="true" Marker-DataLabel-Visible="true" Marker-DataLabel-Shape="Rectangle">
+
+                    <Points >
+
+                        <ej:Points  X="2006" Y="21.8"/>  
+
+                        <ej:Points  X="2007" Y="24.9"/>  
+
+                        <ej:Points  X="2008" Y="28.5"/>  
+
+                        <ej:Points  X="2009" Y="27.2"/>
+
+                        <ej:Points  X="2010" Y="23.4"/>  
+
+                    </Points>
+
+             </ej:Series>        
+
+         </Series>
+
+
+
+        </ej:Chart>
 
 
 {% endhighlight %}
 
 
 ![](Series_images/Series_img5.png)
-{:.image }
+
 
 
 ConnectorLine:
 
 ConnectorLine in data Label is used to customize the line that connects the outside labels of the pie series in terms of color, height, width and type of line. 
 {% highlight html %}
-[ASP.NET] 
 
-&lt;ej:Chart ID="Chart1" runat="server&gt;           
 
-        &lt;Series&gt;
+<ej:Chart ID="Chart1" runat="server>           
 
-                &lt;ej:Series EnableAnimation="True" Marker-DataLabel-Visible="True" Marker-DataLabel-Shape="None" Marker-DataLabel-ConnectorLine-Type="Bezier" Marker-DataLabel-ConnectorLine-Color="Black" Name="Expenses" XName="Xvalue" YName="YValue1" Type="Pie" LabelPosition="OutsideExtended" EnableSmartLabels="True" StartAngle="145"&gt;
+        <Series>
 
-                &lt;Points&gt;
+                <ej:Series EnableAnimation="True" Marker-DataLabel-Visible="True" Marker-DataLabel-Shape="None" Marker-DataLabel-ConnectorLine-Type="Bezier" Marker-DataLabel-ConnectorLine-Color="Black" Name="Expenses" XName="Xvalue" YName="YValue1" Type="Pie" LabelPosition="OutsideExtended" EnableSmartLabels="True" StartAngle="145">
 
-                 &lt;ej:points Text="Other Personal, 88.47%" X="Other Personnal" Y="94658" /&gt;
+                <Points>
 
-                 &lt;ej:points Text="Medical care, 8.49%" X="Medical care" Y="9090"/&gt;
+                 <ej:points Text="Other Personal, 88.47%" X="Other Personnal" Y="94658" />
 
-                 &lt;ej:points Text="Housing, 2.40%" X="Housing" Y="2577"/&gt;
+                 <ej:points Text="Medical care, 8.49%" X="Medical care" Y="9090"/>
 
-                  &lt;ej:points Text="Transportation, 0.44%" X="Transportation" Y="473"/&gt;
+                 <ej:points Text="Housing, 2.40%" X="Housing" Y="2577"/>
 
-                  &lt;ej:points Text="Education, 0.11%" X="Education" Y="120"/&gt;
+                  <ej:points Text="Transportation, 0.44%" X="Transportation" Y="473"/>
 
-                  &lt;ej:points Text="Electronics, 0.06%" X="Electronics" Y="70"/&gt;
+                  <ej:points Text="Education, 0.11%" X="Education" Y="120"/>
 
-                    &lt;/Points&gt;
+                  <ej:points Text="Electronics, 0.06%" X="Electronics" Y="70"/>
 
-                &lt;/ej:Series&gt;
+                    </Points>
 
-            &lt;/Series&gt;
+                </ej:Series>
 
-        &lt;/ej:Chart&gt;
+            </Series>
+
+        </ej:Chart>
 
 
 
@@ -446,7 +446,7 @@ ConnectorLine in data Label is used to customize the line that connects the outs
 {% endhighlight %}
 
 ![](Series_images/Series_img6.png)
-{:.image }
+
 
 
 Data labels Rotation
@@ -456,62 +456,62 @@ _Data labels_ refer to the y values of data points, which appear on each point. 
 
 
 ![](Series_images/Series_img7.png)
-{:.image }
+
 
 {% highlight html %}
-[ASP.NET]
-
-&lt;ej:Chart ID="Chart1" runat="server"&gt;
 
 
-
-&lt;CommonSeriesOptions Type="Column" EnableAnimation="True" Marker-Border-Width="2" Marker-DataLabel-Visible="True" Marker-DataLabel-TextPosition="Middle" Marker-DataLabel-Angle="90" Marker-DataLabel-Font-Color="white" Marker-DataLabel-FontSize="16px" &gt;
+<ej:Chart ID="Chart1" runat="server">
 
 
 
-
-
-&lt;/CommonSeriesOptions&gt;
-
-
-
-   &lt;Series&gt;
+<CommonSeriesOptions Type="Column" EnableAnimation="True" Marker-Border-Width="2" Marker-DataLabel-Visible="True" Marker-DataLabel-TextPosition="Middle" Marker-DataLabel-Angle="90" Marker-DataLabel-Font-Color="white" Marker-DataLabel-FontSize="16px" >
 
 
 
-&lt;ej:Series Name="Marketing"&gt;
+
+
+</CommonSeriesOptions>
 
 
 
-&lt;Points &gt;   
+   <Series>
 
 
 
- &lt;ej:Points X="Print Ads" Y="110"/&gt; 
+<ej:Series Name="Marketing">
 
 
 
- &lt;ej:Points X="Online Ads" Y="125"/&gt; 
+<Points >   
 
 
 
- &lt;ej:Points X="Content Marketing" Y="95"/&gt; 
+ <ej:Points X="Print Ads" Y="110"/> 
 
 
 
- &lt;ej:Points X="Tradeshows" Y="60"/&gt;
+ <ej:Points X="Online Ads" Y="125"/> 
 
 
 
- &lt;/Points&gt;
+ <ej:Points X="Content Marketing" Y="95"/> 
 
 
 
-&lt;/ej:Series&gt;
+ <ej:Points X="Tradeshows" Y="60"/>
 
 
 
- &lt;/ej:Chart&gt;
+ </Points>
+
+
+
+</ej:Series>
+
+
+
+ </ej:Chart>
 {% endhighlight %}
 
 

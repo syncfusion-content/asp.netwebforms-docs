@@ -13,10 +13,10 @@ The following are the server side events available in the DropDownList control.
 
 <table>
 <tr>
-<td>
-Event</td><td>
-Event Description</td><td>
-Event Description</td></tr>
+<th>
+Event</th><th>
+Event Description</th><th>
+Event Description</th></tr>
 <tr>
 <td>
 OnCheckChange</td><td>

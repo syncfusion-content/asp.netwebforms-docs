@@ -23,8 +23,6 @@ You can enable this feature by setting the LayerType property value as "OSM".
 
 {% highlight html %}
 
-[ASP]
-
 
 
     <ej:Map ID="osmMap" runat="server" >    
@@ -52,7 +50,7 @@ The UrlTemplate property determines the format of tile map. You can specify the 
 
 
 ![](Map-Providers_images/Map-Providers_img1.png)
-{:.image }
+
 
 
 Bing Map
@@ -66,8 +64,6 @@ You can enable this feature by defining the LayerType as “bing”.
 
 
 {% highlight html %}
-
- [ASP]
 
 
 
@@ -98,6 +94,6 @@ The bing Map Key is provided as input to this key property. The Bing Map key can
 
 
 ![bing](Map-Providers_images/Map-Providers_img2.png)
-{:.image }
+
 
 

@@ -15,38 +15,34 @@ Exporting feature provides support to export Grid data into excel, word and pdf 
 
 In ASP, exporting is achieved by using Grid control server side method. Using Export() server method in Grid server side event, you can export the Grid into excel, pdf and word documents.
 {% highlight html %}
-[ASP]
 
 
 
-[ASPX]
 
+<ej:Grid ID="FlatGrid" runat="server" AllowSorting="True" OnServerWordExporting="FlatGrid_ServerWordExporting" OnServerPdfExporting="FlatGrid_ServerPdfExporting" OnServerExcelExporting="FlatGrid_ServerExcelExporting" AllowPaging="True">
 
+            <ToolbarSettings ShowToolbar="true" ToolbarItems="excelExport,wordExport,pdfExport"></ToolbarSettings>
 
-&lt;ej:Grid ID="FlatGrid" runat="server" AllowSorting="True" OnServerWordExporting="FlatGrid_ServerWordExporting" OnServerPdfExporting="FlatGrid_ServerPdfExporting" OnServerExcelExporting="FlatGrid_ServerExcelExporting" AllowPaging="True"&gt;
+            <Columns>
 
-            &lt;ToolbarSettings ShowToolbar="true" ToolbarItems="excelExport,wordExport,pdfExport"&gt;&lt;/ToolbarSettings&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right"/>
 
-            &lt;Columns&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" />
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right"/&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" /&gt;
+                <ej:Column Field="OrderDate" HeaderText="Order Date" TextAlign="Right" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" />
 
-                &lt;ej:Column Field="OrderDate" HeaderText="Order Date" TextAlign="Right" /&gt;
+            </Columns>
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" /&gt;
-
-            &lt;/Columns&gt;
-
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 {% endhighlight  %}
 {% highlight c# %}
-[CS]
+
 
 
 
@@ -183,6 +179,6 @@ public partial class ExcelExporting : System.Web.UI.Page
 
 
 ![](Exporting_images/Exporting_img1.png)
-{:.image }
+
 
 

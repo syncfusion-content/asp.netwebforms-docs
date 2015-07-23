@@ -25,7 +25,7 @@ Step 3: The name of the field, which contains the actual resources assigned for 
 
 {% highlight c# %}
 
-Gantt.aspx.cs 
+
 
 
 
@@ -78,7 +78,6 @@ public class Resource
 {% endhighlight  %}
 
 {% highlight html %}
-Gantt.aspx
 
 <ej:Gantt ID="GanttContainer" runat="server" 
 
@@ -102,7 +101,7 @@ The following screenshot shows Gantt control with Resources.
 
 
 
-![](Resources_images/Resources_img1.png) 
-{:.image }
+{{'![](Resources_images/Resources_img1.png)'| markdownify}}  
+
 
 

@@ -15,33 +15,33 @@ Essential Chart is enriched with lots of customization options to develop high q
 
 You can customize a tooltip with required template by adding a “div” element with an “id” to the web page and assigning the “id” to the property “Template” under “Tooltip” as illustrated in the following code example.
 {% highlight js %}
-&lt;div id="Tooltip" style="display: none;"&gt;
+<div id="Tooltip" style="display: none;">
 
-&lt;div id="icon"&gt;
+<div id="icon">
 
-       &lt;div id="grain"&gt;&lt;/div&gt;
+       <div id="grain"></div>
 
-&lt;/div&gt;
+</div>
 
-        &lt;div id="value"&gt;
+        <div id="value">
 
-            &lt;div&gt;
+            <div>
 
-            &lt;div id="efpercentage"&gt;#point.x#&lt;/div&gt;
+            <div id="efpercentage">#point.x#</div>
 
-                &lt;div id="ef"&gt;#point.y#&lt;/div&gt;
+                <div id="ef">#point.y#</div>
 
-             &lt;/div&gt;
+             </div>
 
-        &lt;/div&gt;
+        </div>
 
 
 
-    &lt;/div&gt;
+    </div>
 
 {% endhighlight %}
 {% highlight css %}
-&lt;style class="cssStyles"&gt;
+<style class="cssStyles">
 
         .tooltipDiv {
 
@@ -115,56 +115,56 @@ font-weight: bold;
 
         }
 
-    &lt;/style&gt;
+    </style>
 
 {% endhighlight  %}
 {% highlight html %}
-[ASP.NET] 
-
-  &lt;ej:Chart ID="Chart1" runat="server"&gt;       
-
-  &lt;Series&gt;
-
-              &lt;ej:Series Name="India" Tooltip-Visible="true" Tooltip-Template="Tooltip"&gt;
-
-                  &lt;Points&gt;
-
-                        &lt;ej:Points X="2002" Y="1.61" /&gt;
-
-                    &lt;ej:Points X="2003" Y="2.31" /&gt;
-
-                    &lt;ej:Points X="2004" Y="2.16" /&gt;
-
-                    &lt;ej:Points X="2005" Y="2.10"/&gt;
-
-                    &lt;ej:Points X="2006" Y="2.81" /&gt;
-
-                    &lt;ej:Points X="2007" Y="2.05" /&gt;
-
-                    &lt;ej:Points X="2008" Y="2.50" /&gt;
-
-                    &lt;ej:Points X="2009" Y="2.22" /&gt;
-
-                    &lt;ej:Points X="2010" Y="2.21" /&gt;
-
-                    &lt;ej:Points X="2011" Y="2.00" /&gt;
-
-                    &lt;ej:Points X="2012" Y="2.27" /&gt;
-
-                  &lt;/Points&gt;
 
 
+  <ej:Chart ID="Chart1" runat="server">       
 
-              &lt;/ej:Series&gt;
+  <Series>
 
-     &lt;/Series&gt;
+              <ej:Series Name="India" Tooltip-Visible="true" Tooltip-Template="Tooltip">
 
-  &lt;/ej:Chart&gt;
+                  <Points>
+
+                        <ej:Points X="2002" Y="1.61" />
+
+                    <ej:Points X="2003" Y="2.31" />
+
+                    <ej:Points X="2004" Y="2.16" />
+
+                    <ej:Points X="2005" Y="2.10"/>
+
+                    <ej:Points X="2006" Y="2.81" />
+
+                    <ej:Points X="2007" Y="2.05" />
+
+                    <ej:Points X="2008" Y="2.50" />
+
+                    <ej:Points X="2009" Y="2.22" />
+
+                    <ej:Points X="2010" Y="2.21" />
+
+                    <ej:Points X="2011" Y="2.00" />
+
+                    <ej:Points X="2012" Y="2.27" />
+
+                  </Points>
+
+
+
+              </ej:Series>
+
+     </Series>
+
+  </ej:Chart>
 
 {% endhighlight %}
 
 ![F:/Skype Download/IMG_14052014_050616.png](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
-{:.image }
+
 
 
 ## Label Template
@@ -173,25 +173,25 @@ You customize a data label with required template by adding a “div” element 
 
 {% highlight js %}
 
-&lt;div id="template"&gt;
+<div id="template">
 
-        &lt;div id="left"&gt;
+        <div id="left">
 
-            &lt;img src="../images/chart/icon_investments.png"/&gt;
+            <img src="../images/chart/icon_investments.png"/>
 
-        &lt;/div&gt;
+        </div>
 
-        &lt;div id="right"&gt;
+        <div id="right">
 
-            &lt;div id="point"&gt;#point.y#%&lt;/div&gt;
+            <div id="point">#point.y#%</div>
 
-        &lt;/div&gt;
+        </div>
 
-    &lt;/div&gt;
+    </div>
 
 {% endhighlight  %}
 {% highlight css %}
-    &lt;style&gt;
+    <style>
 
         #point {
 
@@ -243,44 +243,44 @@ You customize a data label with required template by adding a “div” element 
 
         }
 
-    &lt;/style&gt;
+    </style>
 
 {% endhighlight  %}
 {% highlight html %}
-[ASP.NET] 
+ 
 
-  &lt;ej:Chart ID="Chart1" runat="server"&gt;       
+  <ej:Chart ID="Chart1" runat="server">       
 
-    &lt;Series&gt;
+    <Series>
 
-             &lt;ej:Series Name="India" Fill="#8CC640" Marker-Visible="true" Marker-DataLabel-Visible="true" Marker-DataLabel-Template="template"&gt;
+             <ej:Series Name="India" Fill="#8CC640" Marker-Visible="true" Marker-DataLabel-Visible="true" Marker-DataLabel-Template="template">
 
-            &lt;Points &gt;
+            <Points >
 
-            &lt;ej:Points X="2005" Y="28.1" Marker-DataLabel-Visible="false" Marker-Fill="" /&gt;    
+            <ej:Points X="2005" Y="28.1" Marker-DataLabel-Visible="false" Marker-Fill="" />    
 
-            &lt;ej:Points X="2006" Y="29.2"/&gt;  
+            <ej:Points X="2006" Y="29.2"/>  
 
-            &lt;ej:Points X="2007" Y="33.9"/&gt;  
+            <ej:Points X="2007" Y="33.9"/>  
 
-            &lt;ej:Points X="2008" Y="36"/&gt;  
+            <ej:Points X="2008" Y="36"/>  
 
-            &lt;ej:Points X="2009" Y="32.4"/&gt;
+            <ej:Points X="2009" Y="32.4"/>
 
-           &lt;ej:Points X="2010" Y="32"/&gt; 
+           <ej:Points X="2010" Y="32"/> 
 
            <ej:Points X="2011" Y="32.8" Marker-DataLabel-Visible="false" Marker-Fill="" /                 
 
-           &lt;/Points&gt;
+           </Points>
 
-         &lt;/ej:Series&gt;
+         </ej:Series>
 
-  &lt;/ej:Chart&gt;
+  </ej:Chart>
 
 {% endhighlight %}
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
-{:.image }
+
 
 
 ## Label Formatting
@@ -291,13 +291,13 @@ By default, the label texts are automatically determined based on the axis data 
 
 {% highlight html %}
 
-[ASP.NET] 
 
-  &lt;ej:Chart ID="Chart1" runat="server"&gt;       
 
-         &lt;PrimaryYAxis LabelFormat="{value}%" /&gt;
+  <ej:Chart ID="Chart1" runat="server">       
 
-  &lt;/ej:Chart&gt;
+         <PrimaryYAxis LabelFormat="{value}%" />
+
+  </ej:Chart>
 {% endhighlight %}
 Date time Axis:
 
@@ -314,18 +314,18 @@ Some of the LabelFormat for datetime axis:
 
 {% highlight html %}
 
-[ASP.NET] 
+ 
 
-  &lt;ej:Chart ID="Chart1" runat="server"&gt;       
+  <ej:Chart ID="Chart1" runat="server">       
 
-    &lt;PrimaryXAxis ValueType="Datetime" LabelFormat="MMM-yyyy"/&gt;
+    <PrimaryXAxis ValueType="Datetime" LabelFormat="MMM-yyyy"/>
 
-  &lt;/ej:Chart&gt;
+  </ej:Chart>
 
 {% endhighlight  %}
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
-{:.image }
+
 
 
 
@@ -338,24 +338,24 @@ Essential Chart provides Title and Subtitle support that is used to give additio
 
 
 
-&lt;ej:Chart ID="Chart1" runat="server"&gt;
+<ej:Chart ID="Chart1" runat="server">
 
-&lt;Title Text="Efficiency of oil-fired power production"&gt;
+<Title Text="Efficiency of oil-fired power production">
 
-              &lt;SubTitle Text="(in a week)" TextAlignment="Far"&gt;
+              <SubTitle Text="(in a week)" TextAlignment="Far">
 
-                  &lt;Font Color="green" FontSize="14px"&gt;&lt;/Font&gt;
+                  <Font Color="green" FontSize="14px"></Font>
 
-              &lt;/SubTitle&gt;
+              </SubTitle>
 
-          &lt;/Title&gt;&lt;/ej:Chart&gt;
+          </Title></ej:Chart>
 
 
 {% endhighlight  %}
 The following screenshot shows the Title and Subtitle in Chart control.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png) 
-{:.image }
+
 
 
 ## Chart Background and Foreground
@@ -370,14 +370,14 @@ Code:
 {% highlight html %}
 [ASP.NET] 
 
-  &lt;ej:Chart ID="Chart1" runat="server" Background="#1E90FF"&gt;       
+  <ej:Chart ID="Chart1" runat="server" Background="#1E90FF">       
 
-  &lt;/ej:Chart&gt;
+  </ej:Chart>
 
 
 {% endhighlight %}
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
-{:.image }
+
 
 
 To Chart Area:
@@ -388,16 +388,16 @@ Code:
 {% highlight html %}
 [ASP.NET] 
 
-&lt;ej:Chart ID="Chart1" runat="server" Background="#1E90FF"&gt;       
+<ej:Chart ID="Chart1" runat="server" Background="#1E90FF">       
 
-         &lt;ChartArea Background="#cc3333" /&gt;
+         <ChartArea Background="#cc3333" />
 
-&lt;/ej:Chart&gt;
+</ej:Chart>
 
 {% endhighlight  %}
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
-{:.image }
+
 
 
 BackGround Image:
@@ -408,7 +408,7 @@ Essential Chart allows you to add background image for your Chart using BackGrou
 
 [ASP.NET] 
 
- &lt;ej:Chart ID="Chart1" runat="server"                                           BackgroundImgUrl="../images/chart/wheat.png"&gt;       
+ <ej:Chart ID="Chart1" runat="server"                                           BackgroundImgUrl="../images/chart/wheat.png">       
 
 
 
@@ -417,7 +417,7 @@ Essential Chart allows you to add background image for your Chart using BackGrou
 
 {% endhighlight %}
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img7.png)
-{:.image }
+
 
 
 ## Theme
@@ -435,11 +435,11 @@ Code:
 {% highlight html %}
 [ASP.NET] 
 
- &lt;ej:Chart ID="Chart1" runat="server" Theme="GradientLight"&gt;       
+ <ej:Chart ID="Chart1" runat="server" Theme="GradientLight">       
 
 
 
- &lt;/ej:Chart&gt;
+ </ej:Chart>
 
 
 {% endhighlight  %}
@@ -457,7 +457,7 @@ Following predefined themes are available in JS Chart.
 10. SaffronDark
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img8.png)
-{:.image }
+
 
 
 ## Custom Color palette 
@@ -468,13 +468,13 @@ Apart from the themes, to define custom set of color you can use “Palette” p
 {% highlight html %}
 [ASP.NET]
 
-        &lt;ej:Chart ID="Chart1" Palette="#69D2E7, #E27F2D, #6A4B82" runat="server"&gt;            
+        <ej:Chart ID="Chart1" Palette="#69D2E7, #E27F2D, #6A4B82" runat="server">            
 
-        &lt;/ej:Chart&gt;
+        </ej:Chart>
 
 {% endhighlight %}
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img9.png) 
-{:.image }
+
 
 

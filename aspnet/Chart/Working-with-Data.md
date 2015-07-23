@@ -15,30 +15,30 @@ Chart gets data either locally or remotely. To populate the Chart with data, you
 
 Essential Chart provides you an option to bind the data to the Chart using the DataSource property of the series. 
 {% highlight html %}
-[ASP.NET] 
+
 
 // xName:  xName specifies the field in the datasource that provide the arguments for series.
 
 // yName:  yName specifies the field in the datasource that provide the values for series.
 
-  &lt;ej:Chart ID="Chart1" runat="server" Width="970" CanResize="true" Height="600"&gt;
+  <ej:Chart ID="Chart1" runat="server" Width="970" CanResize="true" Height="600">
 
-            &lt;Series&gt;
+            <Series>
 
-                &lt;ej:Series Name="Product A" XName="Xvalue" YName="YValue1" &gt;&lt;/ej:Series&gt;
+                <ej:Series Name="Product A" XName="Xvalue" YName="YValue1" ></ej:Series>
 
-               &lt;ej:Series Name="Product B" XName="Xvalue" YName="YValue2"&gt; &lt;/ej:Series&gt;
+               <ej:Series Name="Product B" XName="Xvalue" YName="YValue2"> </ej:Series>
 
-               &lt;ej:Series Name="Product C" XName="Xvalue" YName="YValue3"&gt;&lt;/ej:Series&gt;
+               <ej:Series Name="Product C" XName="Xvalue" YName="YValue3"></ej:Series>
 
-               &lt;/Series&gt;
+               </Series>
 
 
 
-        &lt;/ej:Chart&gt;
+        </ej:Chart>
 {% endhighlight  %}
 {% highlight c# %}
-[CS]
+
 
           List<ChartData> data = new List<ChartData>();
 
@@ -131,7 +131,7 @@ public class ChartData
 
 
 ![](Working-with-Data_images/Working-with-Data_img1.png)
-{:.image }
+
 
 
 ## Remote Data
@@ -146,19 +146,19 @@ The following code example illustrates binding Essential Chart to oData service.
 {% highlight html %}
 [ASP.NET] 
 
-&lt;ej:Chart ID="Chart1" OnClientLoad="onchartload"&gt;
+<ej:Chart ID="Chart1" OnClientLoad="onchartload">
 
-        &lt;Series&gt;
+        <Series>
 
-            &lt;ej:Series Name="Country" Type="Column"/&gt;
+            <ej:Series Name="Country" Type="Column"/>
 
-        &lt;/Series&gt;
+        </Series>
 
-    &lt;/ej:Chart&gt;
+    </ej:Chart>
 
 [Script] 
 
-    &lt;script type="text/javascript" language="javascript"&gt;
+    <script type="text/javascript" language="javascript">
 
 
 
@@ -188,13 +188,13 @@ The following code example illustrates binding Essential Chart to oData service.
 
             }
 
- &lt;/script&gt;
+ </script>
 
 
 
 
 {% endhighlight  %}
 ![](Working-with-Data_images/Working-with-Data_img2.png)
-{:.image }
+
 
 

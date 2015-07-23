@@ -7,11 +7,11 @@ control: PercentageTextBox
 documentation: ug
 ---
 
-## RTL Support
+# RTL Support
 
 The PercentageTextbox provides you RTL (Right-To-Left) support. The alignment of PercentageTextbox can be changed from Left-To-Right into Right-To-Left. It accepts Boolean values. The default value is false.
 
-### Enable RTL 
+## Enable RTL 
 
 Add the following code example in your ASPX page to render PercentageTextbox control with RTL
 
@@ -27,7 +27,7 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 
 
-{ ![](RTL-Support_images/RTL-Support_img1.png) | markdownify }
-{:.image }
+![](RTL-Support_images/RTL-Support_img1.png)
+
 The output for PercentageTextbox when “EnableRTL” is “true”. 
 

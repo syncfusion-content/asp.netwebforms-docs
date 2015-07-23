@@ -107,8 +107,7 @@ Customize the template in CSS.
 
 
 Output of the above steps.
+![](Template-Support_images/Template-Support_img2.png) 
 
-![](Template-Support_images/Template-Support_img2.png)
-{:.image }
 
 

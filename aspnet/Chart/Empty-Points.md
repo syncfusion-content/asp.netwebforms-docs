@@ -13,43 +13,43 @@ The data that is passed to the Chart can have null or undefined values that are 
 
 
 {% highlight html %}
-[ASP.NET] 
-
-  &lt;ej:Chart ID="Chart1" runat="server"&gt;       
-
-         &lt;Series&gt;
-
-            &lt;ej:Series Name="Course" Type="Column"&gt;
 
 
+  <ej:Chart ID="Chart1" runat="server">       
 
-                &lt;Points&gt;
+         <Series>
 
-                       &lt;ej:Points X="1" Y="210" /&gt;
+            <ej:Series Name="Course" Type="Column">
 
-                    &lt;ej:Points X="2" Y="150" /&gt;
 
-                    &lt;ej:Points X="3" Y="200" /&gt;
 
-                    &lt;ej:Points X="4" Y="23" IsEmpty="true"/&gt;
+                <Points>
 
-                    &lt;ej:Points X="5" Y="170" /&gt;
+                       <ej:Points X="1" Y="210" />
 
-                    &lt;ej:Points X="6" Y="230" /&gt;
+                    <ej:Points X="2" Y="150" />
 
-                    &lt;ej:Points X="7" Y="1200" /&gt;
+                    <ej:Points X="3" Y="200" />
 
-                    &lt;/Points&gt;
+                    <ej:Points X="4" Y="23" IsEmpty="true"/>
 
-            &lt;/ej:Series&gt;
+                    <ej:Points X="5" Y="170" />
 
-        &lt;/Series&gt;  
+                    <ej:Points X="6" Y="230" />
 
-  &lt;/ej:Chart&gt;
+                    <ej:Points X="7" Y="1200" />
+
+                    </Points>
+
+            </ej:Series>
+
+        </Series>  
+
+  </ej:Chart>
 
 
 {% endhighlight %}
 ![](Empty-Points_images/Empty-Points_img1.png)
-{:.image }
+
 
 

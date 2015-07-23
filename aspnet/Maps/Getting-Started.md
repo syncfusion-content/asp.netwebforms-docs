@@ -16,7 +16,7 @@ This section explains briefly about how to create Maps in your application with 
 You can configure an Essential ASP.NET Map with simple steps. In this example, you can learn how to configure USA population map with customized appearance and tooltip.
 
 ![](Getting-Started_images/Getting-Started_img1.png)
-{:.image }
+
 
 
 Create a simple ASP.NET Application 
@@ -37,7 +37,7 @@ You can store the “United States of America.json” file in App_Data folder as
 
 {% highlight c# %}
 
-[Map.aspx.cs]
+
 
 
 
@@ -67,7 +67,7 @@ The dataSource is populated with USA population data inside the controller relat
 
 {% highlight c# %}
 
-[Map.aspx.cs]
+
 
        public List<CountyPopulationData> GetUSPopulationData()
 
@@ -225,7 +225,7 @@ new CountyPopulationData(){ Name= "Wyoming", Population=582658}
 
 
 
-[ASPX.CS]
+
 
 
 
@@ -252,8 +252,7 @@ Initializing Map
 
 
 {% highlight html %}
-
-[ASPX]          
+        
 
     <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -295,13 +294,12 @@ ej.widgets.all.min.js"></script>
 
 
 
-2. Create a &lt;div&gt; tag and set the height and width to determine the map size and add map element to render Maps in body tag.
+2. Create a <div> tag and set the height and width to determine the map size and add map element to render Maps in body tag.
 
 
 
 {% highlight html %}
 
-[ASPX] 
 
 <html>   
 
@@ -332,7 +330,7 @@ ej.widgets.all.min.js"></script>
 
 {% highlight c# %}
 
- [ASPX.CS]
+
 
 
 
@@ -378,7 +376,7 @@ The above code renders a map with default properties and shape input provided th
 
 
 ![](Getting-Started_images/Getting-Started_img2.png)
-{:.image }
+
 
 
 Data Binding in Map
@@ -405,12 +403,11 @@ The ShapePropertyPath property is similar to the ShapeDataPath that refers the c
 
 
 {% highlight html %}
-
-[Map.aspx]     &lt;ej:Map ID=“map” runat="server"  EnableAnimation ="true" &gt;        &lt;Layers&gt;            &lt;ej:ShapeLayer LayerType="Geometry" ShapeDataPath = "name" ShapePropertyPath= "name"&gt;            &lt;/ej:ShapeLayer&gt;        &lt;/Layers&gt;      &lt;/ej:Map&gt;</td></tr>
+     <ej:Map ID=“map” runat="server"  EnableAnimation ="true" >        <Layers>            <ej:ShapeLayer LayerType="Geometry" ShapeDataPath = "name" ShapePropertyPath= "name">            </ej:ShapeLayer>        </Layers>      </ej:Map></td></tr>
 
 {% endhighlight %}
 {% highlight c# %}
-[Map.aspx.cs]    
+   
      public partial class Default: Page    {        protected void Page_Load(object sender, EventArgs e)        {            (this.map.Layers[0] as ShapeLayer).DataSource = Election_Result.GetUSPopulationData();            (this.map.Layers[0] as ShapeLayer).ShapeData = this.GetUSA();        }    }</td></tr>
 {% endhighlight %}
 Customizing Map Appearance 
@@ -418,17 +415,17 @@ Customizing Map Appearance
 You can customize the shape’s color by using Fill, Stroke and StrokeThickness properties in ShapeSettings.
 
 {% highlight html %}
-[Map.aspx]      
-    &lt;ej:Map ID=“map” runat="server"  EnableAnimation ="true" &gt;        &lt;Layers&gt;       &lt;ej:ShapeLayer LayerType="Geometry" EnableSelection = "false" ShapeDataPath = "name" ShapePropertyPath= "name" EnableMouseHover = "true"&gt;         &lt;ShapeSettings Fill = "Gray" StrokeThickness = "0.5" Stroke = "white" ValuePath = "name" HightlightStroke = "White" HightlightColor = "#BC5353" HightlightBorderWidth = "1"&gt;                &lt;/ShapeSettings&gt;           &lt;/ej:ShapeLayer&gt;             &lt;/Layers&gt;    &lt;/ej:Map&gt;</td></tr>
+    
+    <ej:Map ID=“map” runat="server"  EnableAnimation ="true" >        <Layers>       <ej:ShapeLayer LayerType="Geometry" EnableSelection = "false" ShapeDataPath = "name" ShapePropertyPath= "name" EnableMouseHover = "true">         <ShapeSettings Fill = "Gray" StrokeThickness = "0.5" Stroke = "white" ValuePath = "name" HightlightStroke = "White" HightlightColor = "#BC5353" HightlightBorderWidth = "1">                </ShapeSettings>           </ej:ShapeLayer>             </Layers>    </ej:Map></td></tr>
 {% endhighlight %}
 {% highlight c# %}
-[Map.aspx.cs]        
+       
     protected void Page_Load(object sender, EventArgs e)        {            (this.map.Layers[0] as ShapeLayer).DataSource = Election_Result.GetUSPopulationData();            (this.map.Layers[0] as ShapeLayer).ShapeData = this.GetUSA();        }</td></tr>
 
 {% endhighlight%}
 
 ![IMG_22042014_095149](Getting-Started_images/Getting-Started_img3.png)
-{:.image }
+
 
 
 Customizing Map Appearance by Range
@@ -441,7 +438,7 @@ The Range color mapping is used to differentiate the shape’s fill based on its
 
 {% highlight html %}
 
-[Map.aspx]    
+   
 
 
 
@@ -485,7 +482,8 @@ The Range color mapping is used to differentiate the shape’s fill based on its
 
     </ej:Map>        
 
-[Map.aspx.cs]
+{% endhighlight  %}
+{% highlight c# %}
 
         protected void Page_Load(object sender, EventArgs e)
 
@@ -512,7 +510,7 @@ The following screenshot illustrates a map with gradient color property enable.
 
 
 ![](Getting-Started_images/Getting-Started_img4.png)
-{:.image }
+
 
 
 Enable Tooltip
@@ -523,7 +521,7 @@ The tooltip is displayed only when ShowTooltip is set to ‘True’ in the shape
 
 {% highlight html %}
 
-[Map.aspx] 
+
 
     <ej:Map ID=“map” runat="server"  EnableAnimation ="true" >
 
@@ -555,7 +553,7 @@ The tooltip is displayed only when ShowTooltip is set to ‘True’ in the shape
 
 {% highlight c# %}
 
-[Map.aspx.cs]
+
 
         protected void Page_Load(object sender, EventArgs e)
 
@@ -580,7 +578,7 @@ The following screenshot illustrates a Map control displaying a Tooltip.
 
 
 ![](Getting-Started_images/Getting-Started_img5.png)
-{:.image }
+
 
 
 Legend
@@ -603,7 +601,7 @@ You can use LeftLabel and RightLabel property to provide left and right labels f
 
 {% highlight html %}
 
-[ASPX]
+
 
 <ej:Map ID=“map” runat="server"  EnableAnimation ="true" >
 
@@ -633,8 +631,6 @@ You can use LeftLabel and RightLabel property to provide left and right labels f
 
 {% highlight c# %}
 
-[Map.aspx.cs]
-
         protected void Page_Load(object sender, EventArgs e)
 
         {
@@ -658,6 +654,6 @@ The following screenshot illustrates a map displaying an interactive legend.
 
 
 ![](Getting-Started_images/Getting-Started_img6.png)
-{:.image }
+
 
 

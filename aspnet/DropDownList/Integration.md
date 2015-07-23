@@ -136,8 +136,8 @@ In the ASPX page, add an element to configure the DropDownList
 
 Output of the above step.
 
-![](Integration_images/Integration_img2.png) 
-{:.image }
+![](Integration_images/Integration_img2.png)  
+
 
 
 ## Knockout Binding
@@ -280,6 +280,6 @@ Configure the styles.
 Output of the above steps.
 
 ![](Integration_images/Integration_img4.png)
-{:.image }
+
 
 

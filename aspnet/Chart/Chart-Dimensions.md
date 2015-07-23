@@ -19,9 +19,9 @@ Setting size
 {% highlight html %}
 [ASP.NET]
 
-&lt;ej:Chart ID="Chart1" runat="server" Width="600" Height="800" CanResize="true"&gt;
+<ej:Chart ID="Chart1" runat="server" Width="600" Height="800" CanResize="true">
 
-&lt;/ej:Chart&gt;
+</ej:Chart>
 
 
 {% endhighlight  %}
@@ -32,7 +32,7 @@ In the above code, the width is set as 800px and height as 600px that displays t
 
 
 ![](Chart-Dimensions_images/Chart-Dimensions_img1.png)
-{:.image }
+
 
 
 Setting dimension in percentage values:
@@ -43,11 +43,11 @@ Setting size in percentage
 
 
 {% highlight html %}
-[ASP.NET]
 
-&lt;ej:Chart ID="Chart1" runat="server" Width="90%" Height="80%"&gt;
 
-&lt;/ej:Chart&gt;
+<ej:Chart ID="Chart1" runat="server" Width="90%" Height="80%">
+
+</ej:Chart>
 
 
 {% endhighlight  %}
@@ -56,6 +56,6 @@ Setting size in percentage
 
 
 ![](Chart-Dimensions_images/Chart-Dimensions_img2.png)
-{:.image }
+
 
 

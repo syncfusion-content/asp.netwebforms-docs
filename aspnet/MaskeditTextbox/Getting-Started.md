@@ -18,7 +18,7 @@ The following screenshot illustrates the functionality of a MaskEdit. Here, Mob
 
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
-{:.image }
+
 
 
 ## Create a MaskEdit control
@@ -232,14 +232,14 @@ The following code example is used to set mask value.
 Execute the above code to render the following output.
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image61_6.png](Getting-Started_images/Getting-Started_img2.png)
-{:.image }
+
 
 
 Create Product Key Validation App using Mask Edit Control
 
 In real-time, when you install Microsoft applications, you need to enter the product key for security. The value of product key format is predefined and that is done by using MaskEditcontrol.
 
-Add the following code example in the &lt;body&gt; tag.
+Add the following code example in the <body> tag.
 
 {% highlight html %}
 
@@ -290,7 +290,7 @@ The following screenshot shows the output for the above code example.
 
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image61_7.png](Getting-Started_images/Getting-Started_img3.png) 
-{:.image }
+
 
 
 

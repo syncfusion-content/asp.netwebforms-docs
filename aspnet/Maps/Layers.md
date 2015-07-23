@@ -35,11 +35,6 @@ In this example, World Map shape is used as shape data by utilizing the “World
 
 {% highlight html %}
 
-[ASP]
-
-
-
-[ASPX]
 
   <ej:Map ID="map" runat="server" >
 
@@ -80,6 +75,6 @@ In this example, World Map shape is used as shape data by utilizing the “World
 
 
 ![](Layers_images/Layers_img1.png)
-{:.image }
+
 
 

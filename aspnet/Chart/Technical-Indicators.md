@@ -17,35 +17,35 @@ The following are the Technical indicators supported by Essential Chart.
 
 Accumulation distribution indicator is one of the technical indicator supported by Essential Chart. The indicator rendered is called signal line. Essential Chartalso provides options to customize the width and color of the signal line. 
 {% highlight html %}
-[ASP.NET] 
+ 
 
- &lt;ej:Chart ID="Chart1" runat="server" EnableCanvasRendering="true"&gt;   
+ <ej:Chart ID="Chart1" runat="server" EnableCanvasRendering="true">   
 
 
 
       // ...
 
-  &lt;Axes&gt;
+  <Axes>
 
-  &lt;ej:Axis Name="indicator" OpposedPosition="true" Orientation="vertical"&gt;
+  <ej:Axis Name="indicator" OpposedPosition="true" Orientation="vertical">
 
-  &lt;/ej:Axis&gt;
+  </ej:Axis>
 
-  &lt;/Axes&gt;
+  </Axes>
 
  // ...
 
-  &lt;Indicators&gt;
+  <Indicators>
 
-  &lt;ej:ChartIndicator Type="AccumulationDistribution" YAxisName="yAxis"          		SeriesName="indicator"&gt;
+  <ej:ChartIndicator Type="AccumulationDistribution" YAxisName="yAxis"          		SeriesName="indicator">
 
-  &lt;/ej:ChartIndicator&gt;
+  </ej:ChartIndicator>
 
-  &lt;/Indicators&gt;
+  </Indicators>
 
         // ...
 
-  &lt;/ej:Chart&gt;
+  </ej:Chart>
 
 {% endhighlight  %}
 
@@ -54,90 +54,90 @@ The following screenshot displays Accumulation Distribution indicator.
 
 
 ![](Technical-Indicators_images/Technical-Indicators_img1.png) 
-{:.image }
+
 
 
 ## Average True Range Indicator
 
 Average true range Indicator is one of the technical indicator supported by Essential Chart. The indicator rendered is called as signal line. You can also customize the width and color of the signal line. 
 {% highlight html %}
-[ASP.NET] 
 
-  &lt;ej:Chart ID="Chart1" runat="server" EnableCanvasRendering="true"&gt;   
+
+  <ej:Chart ID="Chart1" runat="server" EnableCanvasRendering="true">   
 
 
 
       // ...
 
-&lt;Axes&gt;
+<Axes>
 
-    &lt;ej:Axis Name="indicator" OpposedPosition="true" Orientation="vertical"&gt;
+    <ej:Axis Name="indicator" OpposedPosition="true" Orientation="vertical">
 
-    &lt;/ej:Axis&gt;
+    </ej:Axis>
 
-&lt;/Axes&gt;
+</Axes>
 
  // ...
 
-&lt;Indicators&gt;
+<Indicators>
 
-     &lt;ej:ChartIndicator Type="Atr” YAxisName="yAxis" SeriesName="indicator" Period="14"&gt;
+     <ej:ChartIndicator Type="Atr” YAxisName="yAxis" SeriesName="indicator" Period="14">
 
-      &lt;/ej:ChartIndicator&gt;
+      </ej:ChartIndicator>
 
-&lt;/Indicators&gt;
+</Indicators>
 
         // ...
 
-&lt;/ej:Chart&gt;
+</ej:Chart>
 {% endhighlight  %}
 
 The following screenshot displays the Average true range indicator.
 
 ![](Technical-Indicators_images/Technical-Indicators_img2.png)
-{:.image }
+
 
 
 ## Bollinger Band Indicator
 
 Bollinger Band Indicator is one of the technical indicator supported by Essential Chart. It contains three lines namely upper band, lower band and signal line. Upper band, lower band are calculated based on the standard deviations value. Signal band is calculated based on the simple moving average. You can also customize the width and color of the upper band, lower band and signal line. The default value of period is 14.The default value of standardDeviations is 2. 
 {% highlight html %}
-[ASP.NET] 
 
-  &lt;ej:Chart ID="Chart1" runat="server" EnableCanvasRendering="true"&gt;   
+
+  <ej:Chart ID="Chart1" runat="server" EnableCanvasRendering="true">   
 
 
 
       // ...
 
-  &lt;Axes&gt;
+  <Axes>
 
-  &lt;ej:Axis Name="indicator" OpposedPosition="true" Orientation="vertical"&gt;
+  <ej:Axis Name="indicator" OpposedPosition="true" Orientation="vertical">
 
-  &lt;/ej:Axis&gt;
+  </ej:Axis>
 
-  &lt;/Axes&gt;
+  </Axes>
 
  // ...
 
-  &lt;Indicators&gt;
+  <Indicators>
 
-  &lt;ej:ChartIndicator Type="Bollingerband" YAxisName="yAxis" SeriesName="indicator"    			Period="4" StandardDeviations="2"&gt;
+  <ej:ChartIndicator Type="Bollingerband" YAxisName="yAxis" SeriesName="indicator"    			Period="4" StandardDeviations="2">
 
-  &lt;/ej:ChartIndicator&gt;
+  </ej:ChartIndicator>
 
-  &lt;/Indicators&gt;
+  </Indicators>
 
         // ...
 
-  &lt;/ej:Chart&gt;
+  </ej:Chart>
 
 
 {% endhighlight  %}
 The following screenshot displays the Bollinger Band indicator.
 
 ![](Technical-Indicators_images/Technical-Indicators_img3.png) 
-{:.image }
+
 
 
 ## Exponential Moving Average Indicator
@@ -146,80 +146,80 @@ Exponential Moving Average Indicator is one of the technical indicator supported
 
 
 {% highlight html %}
-[ASP.NET] 
-
-&lt;ej:Chart ID="Chart1" runat="server" EnableCanvasRendering="true"&gt;   
 
 
-
-    &lt;Axes&gt;
-
-      &lt;ej:Axis Name="indicator" OpposedPosition="true" Orientation="vertical"&gt;
-
-      &lt;/ej:Axis&gt;
-
-    &lt;/Axes&gt;
-
-    &lt;Indicators&gt;
-
-      &lt;ej:ChartIndicator Type="ema" YAxisName="yAxis" SeriesName="indicator" Period="14"&gt;
-
-      &lt;/ej:ChartIndicator&gt;
-
-    &lt;/Indicators&gt;
+<ej:Chart ID="Chart1" runat="server" EnableCanvasRendering="true">   
 
 
 
-&lt;/ej:Chart&gt;
+    <Axes>
+
+      <ej:Axis Name="indicator" OpposedPosition="true" Orientation="vertical">
+
+      </ej:Axis>
+
+    </Axes>
+
+    <Indicators>
+
+      <ej:ChartIndicator Type="ema" YAxisName="yAxis" SeriesName="indicator" Period="14">
+
+      </ej:ChartIndicator>
+
+    </Indicators>
+
+
+
+</ej:Chart>
 
 {% endhighlight %}
 
 The following screenshot displays the Exponential Moving Average Indicator
 
 ![C:/Users/ApoorvahR/Desktop/1.png](Technical-Indicators_images/Technical-Indicators_img4.png) 
-{:.image }
+
 
 
 ## Momentum Technical Indicator
 
 Momentum is one of the technical indicator supported by Essential Chart. The indicator renders two lines namely upper band and signal line. Upper band always render at value 100 and signal band is calculated based on the momentum formula. Essential Chartalso provide options to customize the width and color of the upper band and signal line. You can also change the value for period. The default value of period is 14. 
 {% highlight html %}
-[ASP.NET] 
 
-  &lt;ej:Chart ID="Chart1" runat="server" EnableCanvasRendering="true"&gt;   
+
+  <ej:Chart ID="Chart1" runat="server" EnableCanvasRendering="true">   
 
 
 
       // ...
 
-&lt;Axes&gt;
+<Axes>
 
-    &lt;ej:Axis Name="indicator" OpposedPosition="true" Orientation="vertical"&gt;
+    <ej:Axis Name="indicator" OpposedPosition="true" Orientation="vertical">
 
-    &lt;/ej:Axis&gt;
+    </ej:Axis>
 
-&lt;/Axes&gt;
+</Axes>
 
  // ...
 
-&lt;Indicators&gt;
+<Indicators>
 
-     &lt;ej:ChartIndicator Type="Momentum" YAxisName="yAxis" SeriesName="indicator" Period="4"&gt;
+     <ej:ChartIndicator Type="Momentum" YAxisName="yAxis" SeriesName="indicator" Period="4">
 
-      &lt;/ej:ChartIndicator&gt;
+      </ej:ChartIndicator>
 
-&lt;/Indicators&gt;
+</Indicators>
 
         // ...
 
-&lt;/ej:Chart&gt;
+</ej:Chart>
 
 {% endhighlight %}
 
 The following screenshot displays the momentum technical indicator.
 
 ![C:/Users/ApoorvahR/Desktop/1.png](Technical-Indicators_images/Technical-Indicators_img5.png)
-{:.image }
+
 
 
 ## Moving Average Convergence Divergence Indicator
@@ -228,102 +228,102 @@ MACD is one of the technical indicator supported by Essential Chart. It contains
 
 {% highlight html %}
 
-[ASP.NET] 
+ 
 
-  &lt;ej:Chart ID="Chart1" runat="server"&gt;   
+  <ej:Chart ID="Chart1" runat="server">   
 
 
 
       // ...
 
-&lt;Axes&gt;
+<Axes>
 
-    &lt;ej:Axis Name=" yAxis1" OpposedPosition="true" Orientation="vertical"&gt;
+    <ej:Axis Name=" yAxis1" OpposedPosition="true" Orientation="vertical">
 
-    &lt;/ej:Axis&gt;
+    </ej:Axis>
 
-&lt;/Axes&gt;
+</Axes>
 
  // ...
 
-&lt;Indicators&gt;
+<Indicators>
 
    <ej:ChartIndicator Type="Macd" YAxisName="yAxis1" MacdType="Both" 
 
             ShortPeriod="12" LongPeriod="26" Trigger="9" SeriesName="Hilo">
 
-                 &lt;Histogram Fill="red" Opacity="1"&gt;
+                 <Histogram Fill="red" Opacity="1">
 
-                        &lt;Border Color="red" Width="1" /&gt;
+                        <Border Color="red" Width="1" />
 
-                 &lt;/Histogram&gt;
+                 </Histogram>
 
-    &lt;/ej:ChartIndicator&gt;
+    </ej:ChartIndicator>
 
-&lt;/Indicators&gt;
+</Indicators>
 
 // ...
 
-&lt;/ej:Chart&gt;
+</ej:Chart>
 
 {% endhighlight %}
 
 The following screenshot displays the MACD technical indicator
 
 ![C:/Users/ApoorvahR/Desktop/1.png](Technical-Indicators_images/Technical-Indicators_img6.png) 
-{:.image }
+
 
 
 ## Relative Strength Index Indicator
 
 RSI is one of the technical indicator supported by Essential Chart. It contains three lines namely upper band, lower band and signal line. Upper and lower band always render at value 70 and 30 respectively and signal band is calculated based on the RSI formula. You can alsocustomize the width and color of the upper band, lower band and signal line with tooltip and animation options. 
 {% highlight html %}
-[ASP.NET]
 
 
 
-  &lt;ej:Chart ID="Chart1" runat="server"&gt;   
+
+  <ej:Chart ID="Chart1" runat="server">   
 
 
 
       // ...
 
-&lt;Axes&gt;
+<Axes>
 
-    &lt;ej:Axis Name=" yAxis1" OpposedPosition="true" Orientation="vertical"&gt;
+    <ej:Axis Name=" yAxis1" OpposedPosition="true" Orientation="vertical">
 
-    &lt;/ej:Axis&gt;
+    </ej:Axis>
 
-&lt;/Axes&gt;
+</Axes>
 
  // ...
 
-&lt;Indicators&gt;
+<Indicators>
 
   <ej:ChartIndicator Type="Rsi" EnableAnimation="false" Period="14" 
 
             Fill="darkblue" Width="1" SeriesName="Hilo" YAxisName="yAxis1">
 
-                    &lt;UpperLine Fill="green" Width="1" /&gt;
+                    <UpperLine Fill="green" Width="1" />
 
-                    &lt;LowerLine Fill="red" Width="1" /&gt;
+                    <LowerLine Fill="red" Width="1" />
 
-                    &lt;Tooltip Visible="true"&gt;&lt;/Tooltip&gt;
+                    <Tooltip Visible="true"></Tooltip>
 
 
 
-&lt;/Indicators&gt;        
+</Indicators>        
 
 // ...
 
-&lt;/ej:Chart&gt;
+</ej:Chart>
 
 {% endhighlight  %}
 
 The following screenshot displays the RSI technical indicator
 
 ![C:/Users/ApoorvahR/Desktop/1.png](Technical-Indicators_images/Technical-Indicators_img7.png)
-{:.image }
+
 
 
 ## Simple Moving Average Indicator
@@ -332,7 +332,6 @@ Simple Moving Average Indicator is one of the technical indicators supported by 
 
 {% highlight html %}
 
-[ASP.NET]
 
 
 
@@ -340,13 +339,14 @@ Simple Moving Average Indicator is one of the technical indicators supported by 
 
 
 
-  &lt;ej:Chart ID="Chart1" runat="server" EnableCanvasRendering="true"&gt;   
+
+  <ej:Chart ID="Chart1" runat="server" EnableCanvasRendering="true">   
 
 
 
       // ...
 
-    &lt;Axes&gt;
+    <Axes>
 
 
 
@@ -354,17 +354,17 @@ Simple Moving Average Indicator is one of the technical indicators supported by 
 
        Orientation="vertical">
 
-      &lt;/ej:Axis&gt;
+      </ej:Axis>
 
 
 
-    &lt;/Axes&gt;
+    </Axes>
 
 
 
 // ...
 
-    &lt;Indicators&gt;
+    <Indicators>
 
 
 
@@ -372,24 +372,24 @@ Simple Moving Average Indicator is one of the technical indicators supported by 
 
        SeriesName="indicator" Period="14">
 
-      &lt;/ej:ChartIndicator&gt;
+      </ej:ChartIndicator>
 
 
 
-    &lt;/Indicators&gt;
+    </Indicators>
 
 
 
       // ...
 
-  &lt;/ej:Chart&gt;
+  </ej:Chart>
 
 {% endhighlight  %}
 
 The following screenshot displays the Simple Moving Average Indicator.
 
 ![](Technical-Indicators_images/Technical-Indicators_img8.png) 
-{:.image }
+
 
 
 ## Stochastic Technical Indicator
@@ -397,20 +397,20 @@ The following screenshot displays the Simple Moving Average Indicator.
 Stochastic technical indicator is one of the most common indicators used in technical analysis. The indicators render four lines namely upper line, lower line, stochastic line and signal line. Upper line always render at value 80 and lower line is render at value 20. Stochastic and Signal Lines are calculated based on stochastic formulas. You can also customize the width and color of the all lines. 
 
 ![C:/Users/ApoorvahR/Desktop/1.png](Technical-Indicators_images/Technical-Indicators_img9.png)
-{:.image }
+
 
 {% highlight html %}
- [ASP.NET]
 
 
 
-  &lt;ej:Chart ID="Chart1" runat="server" EnableCanvasRendering="true"&gt;   
+
+  <ej:Chart ID="Chart1" runat="server" EnableCanvasRendering="true">   
 
 
 
         // ...
 
-       &lt;Axes&gt;
+       <Axes>
 
             <ej:Axis Name="indicator" 
 
@@ -418,9 +418,9 @@ Stochastic technical indicator is one of the most common indicators used in tech
 
                 Orientation="vertical">
 
-            &lt;/ej:Axis&gt;
+            </ej:Axis>
 
-     &lt;/Axes&gt;
+     </Axes>
 
 
 
@@ -428,7 +428,7 @@ Stochastic technical indicator is one of the most common indicators used in tech
 
 
 
-     &lt;Indicators&gt;
+     <Indicators>
 
           <ej:ChartIndicator Type="Stochastic"   
 
@@ -442,9 +442,9 @@ Stochastic technical indicator is one of the most common indicators used in tech
 
              DPeriod="3">
 
-         &lt;/ej:ChartIndicator&gt;
+         </ej:ChartIndicator>
 
-    &lt;/Indicators&gt;
+    </Indicators>
 
 
 
@@ -452,51 +452,51 @@ Stochastic technical indicator is one of the most common indicators used in tech
 
 
 
-&lt;/ej:Chart&gt;
+</ej:Chart>
 {% endhighlight %}
 ## Triangular Moving Average Indicator
 
 Triangular Moving Average Indicator is one of the technical indicator supported by ejChart. The indicator rendered is called as signal line. You can also customize the width and color of the signal line. 
 {% highlight html %}
-[ASP.NET]
 
 
 
-  &lt;ej:Chart ID="Chart1" runat="server" EnableCanvasRendering="true"&gt;   
+
+  <ej:Chart ID="Chart1" runat="server" EnableCanvasRendering="true">   
 
 
 
       // ...
 
-  &lt;Axes&gt;
+  <Axes>
 
-  &lt;ej:Axis Name="indicator" OpposedPosition="true" Orientation="vertical"&gt;
+  <ej:Axis Name="indicator" OpposedPosition="true" Orientation="vertical">
 
-  &lt;/ej:Axis&gt;
+  </ej:Axis>
 
-  &lt;/Axes&gt;
+  </Axes>
 
  // ...
 
-  &lt;Indicators&gt;
+  <Indicators>
 
   <ej:ChartIndicator Type="TMA" YAxisName="yAxis" SeriesName="indicator"   
 
               	Period="14">
 
-  &lt;/ej:ChartIndicator&gt;
+  </ej:ChartIndicator>
 
-  &lt;/Indicators&gt;
+  </Indicators>
 
         // ...
 
-  &lt;/ej:Chart&gt;
+  </ej:Chart>
 
 {% endhighlight  %}
 
 The following screenshot displays the Triangular Moving Average indicator.
 
 ![](Technical-Indicators_images/Technical-Indicators_img10.png)
-{:.image }
+
 
 

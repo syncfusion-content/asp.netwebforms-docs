@@ -27,63 +27,59 @@ There are some default summary types available for basic summary formula. The fo
 {% highlight html %}
 
 
-[ASP]
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" ShowSummary="True">
 
-[aspx]
-
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" ShowSummary="True"&gt;
-
-&lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"&gt;&lt;/DataManager&gt;
+<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"></DataManager>
 
 
 
-            &lt;PageSettings PageSize="10"&gt;&lt;/PageSettings&gt;
+            <PageSettings PageSize="10"></PageSettings>
 
-            &lt;SummaryRows&gt;
+            <SummaryRows>
 
-                &lt;ej:SummaryRow Title="Sum"&gt;
+                <ej:SummaryRow Title="Sum">
 
-                    &lt;SummaryColumn&gt;
+                    <SummaryColumn>
 
-                       &lt;ej:SummaryColumn SummaryType="Sum" Format="{0:C}" DisplayColumn="Freight" DataMember="Freight" /&gt;
+                       <ej:SummaryColumn SummaryType="Sum" Format="{0:C}" DisplayColumn="Freight" DataMember="Freight" />
 
-                    &lt;/SummaryColumn&gt;
+                    </SummaryColumn>
 
-                &lt;/ej:SummaryRow&gt;
+                </ej:SummaryRow>
 
-                &lt;ej:SummaryRow Title="Average"&gt;
+                <ej:SummaryRow Title="Average">
 
-                    &lt;SummaryColumn&gt;
+                    <SummaryColumn>
 
-                       &lt;ej:SummaryColumn SummaryType="Average" Format="{0:C}" DisplayColumn="Freight" DataMember="Freight" /&gt;
+                       <ej:SummaryColumn SummaryType="Average" Format="{0:C}" DisplayColumn="Freight" DataMember="Freight" />
 
-                    &lt;/SummaryColumn&gt;
+                    </SummaryColumn>
 
-                 &lt;/ej:SummaryRow&gt;
+                 </ej:SummaryRow>
 
-           &lt;/SummaryRows&gt;
+           </SummaryRows>
 
-              &lt;Columns&gt;
+              <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="80" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="80" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="80" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="80" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="90" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="90" />
 
-                &lt;ej:Column Field="ShipName" HeaderText="Ship Name" Width="110"/&gt;
+                <ej:Column Field="ShipName" HeaderText="Ship Name" Width="110"/>
 
-                &lt;ej:Column Field="ShipCountry" HeaderText="Ship Country" Width="100" /&gt;
+                <ej:Column Field="ShipCountry" HeaderText="Ship Country" Width="100" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="80" Format="{0:C}" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="80" Format="{0:C}" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
- &lt;/ej:Grid&gt;
+ </ej:Grid>
 {% endhighlight %}
 {% highlight c# %}
 
-[CS]
+
 
 public partial class DefaultFunctionalities : System.Web.UI.Page
 
@@ -186,7 +182,7 @@ public partial class DefaultFunctionalities : System.Web.UI.Page
 The following output is displayed as a result of the above code example.
 
 ![](Summary_images/Summary_img1.png)
-{:.image }
+
 
 
 ## Custom Summary by String
@@ -195,45 +191,42 @@ This property helps you to create custom summary formula for summary. The follow
 
 {% highlight html %}
 
-[ASP]
-
-[aspx]
 
 
 
-  &lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" ShowSummary="True"&gt;
+  <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" ShowSummary="True">
 
-            &lt;PageSettings PageSize="5"&gt;&lt;/PageSettings&gt;
+            <PageSettings PageSize="5"></PageSettings>
 
-            &lt;SummaryRows&gt;
+            <SummaryRows>
 
-                &lt;ej:SummaryRow Title="Currency"&gt;
+                <ej:SummaryRow Title="Currency">
 
-                    &lt;SummaryColumn&gt;
+                    <SummaryColumn>
 
-                        &lt;ej:SummaryColumn SummaryType="Custom" Format="{0:C}" DisplayColumn="Freight" DataMember="Freight" CustomSummaryValue="CustomValue" /&gt;
+                        <ej:SummaryColumn SummaryType="Custom" Format="{0:C}" DisplayColumn="Freight" DataMember="Freight" CustomSummaryValue="CustomValue" />
 
-                    &lt;/SummaryColumn&gt;
+                    </SummaryColumn>
 
-                &lt;/ej:SummaryRow&gt;
+                </ej:SummaryRow>
 
-            &lt;/SummaryRows&gt;
+            </SummaryRows>
 
-              &lt;Columns&gt;
+              <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="80" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="80" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="80" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="80" />
 
-                &lt;ej:Column Field="Customer ID" HeaderText="Customer ID" TextAlign="Right" Width="80" /&gt;
+                <ej:Column Field="Customer ID" HeaderText="Customer ID" TextAlign="Right" Width="80" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="90" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="90" />
 
-               &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="80" Format="{0:C}" /&gt;
+               <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="80" Format="{0:C}" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 
 {% endhighlight  %}
@@ -244,60 +237,58 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Summary_images/Summary_img2.png)
-{:.image }
+
 
 
 ## Custom Summary by Function
 
 Custom Summary is used to create custom summary formula for summary. The following code example is for custom summary using Essential Asp.Net.
 {% highlight html %}
-[ASP]
-
-[aspx]
 
 
 
-    &lt;div&gt;
 
-        &lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" ShowSummary="True"&gt;
+    <div>
+
+        <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" ShowSummary="True">
 
 
 
-             &lt;SummaryRows&gt;
+             <SummaryRows>
 
-                &lt;ej:SummaryRow Title="Currency" &gt;
+                <ej:SummaryRow Title="Currency" >
 
-                    &lt;SummaryColumn&gt;
+                    <SummaryColumn>
 
                         <ej:SummaryColumn SummaryType="Custom" CustomSummaryValue="currency" DisplayColumn="Freight"
 
                             Format="{0:C2}" />
 
-                    &lt;/SummaryColumn&gt;
+                    </SummaryColumn>
 
-                &lt;/ej:SummaryRow&gt;
+                </ej:SummaryRow>
 
-            &lt;/SummaryRows&gt;
+            </SummaryRows>
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="80" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="80" />
 
-                 &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="80" /&gt;
+                 <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="80" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="90" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="90" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="80" Format="{0:C}" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="80" Format="{0:C}" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-    &lt;/div&gt;
+    </div>
 
 
 
-    &lt;script type="text/javascript"&gt;
+    <script type="text/javascript">
 
         function currency() {
 
@@ -309,7 +300,7 @@ Custom Summary is used to create custom summary formula for summary. The followi
 
         }
 
-    &lt;/script&gt;
+    </script>
 
 
 
@@ -317,7 +308,7 @@ Custom Summary is used to create custom summary formula for summary. The followi
 {% endhighlight  %}
 
 {% highlight c# %}
-[aspx.cs]
+
 
 
 
@@ -418,7 +409,7 @@ namespace WebSampleBrowser.Grid
 {% endhighlight  %}
 
 ![](Summary_images/Summary_img3.png)
-{:.image }
+
 
 
 ## Group Summary
@@ -427,51 +418,49 @@ This property helps you to enable the group summary column in Grid. The followin
 
 
 {% highlight html %}
-[ASP]
-
-[aspx]
 
 
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True" ShowSummary="True"&gt;
 
-            &lt;PageSettings PageSize="10"&gt;&lt;/PageSettings&gt;
+<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True" ShowSummary="True">
 
- &lt;GroupSettings GroupedColumns="CustomerID"&gt;&lt;/GroupSettings&gt;
+            <PageSettings PageSize="10"></PageSettings>
 
-            &lt;SummaryRows&gt;
+ <GroupSettings GroupedColumns="CustomerID"></GroupSettings>
 
-                &lt;ej:SummaryRow ShowTotalSummary="False"&gt;
+            <SummaryRows>
 
-                    &lt;SummaryColumn&gt;
+                <ej:SummaryRow ShowTotalSummary="False">
 
-                       &lt;ej:SummaryColumn SummaryType="Average" Format="{0:C}" DisplayColumn="Freight" DataMember="Freight" Prefix="Average = " /&gt;
+                    <SummaryColumn>
 
-                    &lt;/SummaryColumn&gt;
+                       <ej:SummaryColumn SummaryType="Average" Format="{0:C}" DisplayColumn="Freight" DataMember="Freight" Prefix="Average = " />
 
-                 &lt;/ej:SummaryRow&gt;
+                    </SummaryColumn>
 
-            &lt;/SummaryRows&gt;
+                 </ej:SummaryRow>
 
-            &lt;Columns&gt;
+            </SummaryRows>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="80" /&gt;
+            <Columns>
 
-                    &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="80" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="90" /&gt;
+                    <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="80" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="90" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="80" TextAlign="Right"  Format="{0:C}" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="80" />
 
-            &lt;/Columns&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="80" TextAlign="Right"  Format="{0:C}" />
 
-&lt;/ej:Grid&gt;
+            </Columns>
+
+</ej:Grid>
 
 {% endhighlight  %}
 {% highlight c# %}
-[CS]
+
 
 public partial class DefaultFunctionalities : System.Web.UI.Page
 
@@ -576,7 +565,7 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Summary_images/Summary_img4.png)
-{:.image }
+
 
 
 ## Caption Summary
@@ -587,54 +576,51 @@ ShowCaptionSummary property used to achieve caption summary feature.
 
 
 {% highlight html %}
-[ASP]
-
-[aspx]
 
 
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True" ShowSummary="True"&gt;
+<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True" ShowSummary="True">
 
 
 
-    &lt;PageSettings PageSize="10"&gt;&lt;/PageSettings&gt;
+    <PageSettings PageSize="10"></PageSettings>
 
-    &lt;SummaryRows&gt;
+    <SummaryRows>
 
-  &lt;ej:SummaryRow ShowCaptionSummary="True" ShowTotalSummary="False"&gt;
+  <ej:SummaryRow ShowCaptionSummary="True" ShowTotalSummary="False">
 
-          &lt;SummaryColumn&gt;
+          <SummaryColumn>
 
-  &lt;ej:SummaryColumn SummaryType="Average" DisplayColumn="Freight" DataMember="Freight" Format="{0:C}" Prefix="Average = " /&gt;
+  <ej:SummaryColumn SummaryType="Average" DisplayColumn="Freight" DataMember="Freight" Format="{0:C}" Prefix="Average = " />
 
-          &lt;/SummaryColumn&gt;
+          </SummaryColumn>
 
-       &lt;/ej:SummaryRow&gt;
+       </ej:SummaryRow>
 
-    &lt;/SummaryRows&gt;
+    </SummaryRows>
 
-    &lt;GroupSettings GroupedColumns="CustomerID"&gt;&lt;/GroupSettings&gt;
+    <GroupSettings GroupedColumns="CustomerID"></GroupSettings>
 
-    &lt;Columns&gt;
+    <Columns>
 
-     &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True"   TextAlign="Right" Width="80" /&gt;
+     <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True"   TextAlign="Right" Width="80" />
 
-         &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" /&gt;
+         <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
 
-         &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="90" /&gt;
+         <ej:Column Field="ShipCity" HeaderText="Ship City" Width="90" />
 
-        &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" /&gt;
+        <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" />
 
-    &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="120" Format="{0:C}" /&gt;
+    <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="120" Format="{0:C}" />
 
-    &lt;/Columns&gt;
+    </Columns>
 
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 
 {% endhighlight  %}
 {% highlight c# %}
-[CS]
+
 
 public partial class DefaultFunctionalities : System.Web.UI.Page
 
@@ -739,6 +725,6 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Summary_images/Summary_img5.png)
-{:.image }
+
 
 

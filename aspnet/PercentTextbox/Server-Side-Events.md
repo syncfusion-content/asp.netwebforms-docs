@@ -7,7 +7,7 @@ control: PercentageTextBox
 documentation: ug
 ---
 
-## Server Side Events
+# Server Side Events
 
 The server side events present in the PercentageTextbox control are listed as follows.
 

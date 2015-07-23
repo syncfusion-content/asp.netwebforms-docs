@@ -7,7 +7,7 @@ control: PercentageTextBox
 documentation: ug
 ---
 
-## Localization Support
+# Localization Support
 
 Localization is language support based on the culture in PercentageTextbox. You can achieve the Localization by using “Locale” property in PercentageTextbox.
 
@@ -25,11 +25,11 @@ You can refer to the following online link reference for globalize.culture.js
 
 You can get the script file of various cultures from the following path also:
 
-"&lt;Installed Location&gt;\Syncfusion\Essential Studio\ {{site.releaseversion}} \JavaScript\assets\external\cultures"
+"<Installed Location>\Syncfusion\Essential Studio\ {{site.releaseversion}} \JavaScript\assets\external\cultures"
 
 You can dynamically change the language based on their culture.
 
-### Configuring Localization
+## Configuring Localization
 
 Add the following code example in your ASPX page to render PercentageTextbox control.
 
@@ -43,15 +43,14 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 
 
-{ ![](Localization-Support_images/Localization-Support_img1.png) | markdownify }
-{:.image }
+![](Localization-Support_images/Localization-Support_img1.png)
+
 The output for PercentageTextbox with localization.
 
 _PercentageTextbox with es-ES locale_
 
 _PercentageTextbox with en-US locale_
 
-{ ![](Localization-Support_images/Localization-Support_img2.png) | markdownify }
-{:.image }
-__
+![](Localization-Support_images/Localization-Support_img2.png)
+
 

@@ -13,54 +13,51 @@ documentation: ug
 
 Details Template feature provides a detailed view about additional information of each row. If you want to view the detailed information, you can expand a row. Using DetailsTemplate property to achieve detail template feature.
 {% highlight html %}
-[ASP]
 
-[aspx]
+<asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
 
-&lt;asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent"&gt;
+    <script id="tabGridContents" type="text/x-jsrender">
 
-    &lt;script id="tabGridContents" type="text/x-jsrender"&gt;
+    <div id="contact{{:EmployeeID}}" style="font-weight: bold; padding: 5px;">
 
-    &lt;div id="contact{{:EmployeeID}}" style="font-weight: bold; padding: 5px;"&gt;
+        <div id="cont">
 
-        &lt;div id="cont"&gt;
+            contact:{{:Address}}<br />
 
-            contact:{{:Address}}&lt;br /&gt;
+            city:{{:City}}<br />
 
-            city:{{:City}}&lt;br /&gt;
+            Country:{{:Country}}<br />
 
-            Country:{{:Country}}&lt;br /&gt;
+            phone:{{:HomePhone}}<br />
 
-            phone:{{:HomePhone}}&lt;br /&gt;
+        </div>
 
-        &lt;/div&gt;
+    </div>
 
-    &lt;/div&gt;
-
-&lt;/script&gt;
+</script>
 
 
 
-&lt;ej:Grid ID="DetailTemplate" runat="server" DetailsTemplate="#tabGridContents"&gt;
+<ej:Grid ID="DetailTemplate" runat="server" DetailsTemplate="#tabGridContents">
 
-    &lt;Columns&gt;
+    <Columns>
 
-        &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" /&gt;
+        <ej:Column Field="EmployeeID" HeaderText="Employee ID" />
 
-        &lt;ej:Column Field="FirstName" HeaderText="First Name" /&gt;
+        <ej:Column Field="FirstName" HeaderText="First Name" />
 
-        &lt;ej:Column Field="Title" HeaderText="Title" /&gt;
+        <ej:Column Field="Title" HeaderText="Title" />
 
-        &lt;ej:Column Field="City" HeaderText="City" /&gt;
+        <ej:Column Field="City" HeaderText="City" />
 
-        &lt;ej:Column Field="Country" HeaderText="Country" /&gt;
+        <ej:Column Field="Country" HeaderText="Country" />
 
-    &lt;/Columns&gt;
+    </Columns>
 
-&lt;/ej:Grid&gt;
+</ej:Grid>
 {% endhighlight  %}
 {% highlight c# %}
-[cs]
+
 
 protected void Page_Load(object sender, EventArgs e)
 
@@ -79,7 +76,7 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Row_images/Row_img1.png)
-{:.image }
+
 
 
 ## Hierarchy
@@ -88,51 +85,49 @@ In this section, you can learn how to use the Hierachytree in GridView. The foll
 
 {% highlight html %}
 
-[ASP]
 
-[aspx]
 
-&lt;ej:Grid ID="DetailTemplate" runat="server" DetailsTemplate="#tabGridContents" &gt;
+<ej:Grid ID="DetailTemplate" runat="server" DetailsTemplate="#tabGridContents" >
 
-  &lt;ClientSideEvents DetailsDataBound="detailGridData" /&gt;
+  <ClientSideEvents DetailsDataBound="detailGridData" />
 
-    &lt;Columns&gt;
+    <Columns>
 
-        &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" /&gt;
+        <ej:Column Field="EmployeeID" HeaderText="Employee ID" />
 
-        &lt;ej:Column Field="FirstName" HeaderText="First Name" /&gt;
+        <ej:Column Field="FirstName" HeaderText="First Name" />
 
-        &lt;ej:Column Field="Title" HeaderText="Title" /&gt;
+        <ej:Column Field="Title" HeaderText="Title" />
 
-        &lt;ej:Column Field="City" HeaderText="City" /&gt;
+        <ej:Column Field="City" HeaderText="City" />
 
-        &lt;ej:Column Field="Country" HeaderText="Country" /&gt;
+        <ej:Column Field="Country" HeaderText="Country" />
 
-    &lt;/Columns&gt;
+    </Columns>
 
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 
 
-&lt;script src="Scripts/jsondata.min.js"&gt;&lt;/script&gt;
+<script src="Scripts/jsondata.min.js"></script>
 
-&lt;script id="tabGridContents" type="text/x-jsrender"&gt;
+<script id="tabGridContents" type="text/x-jsrender">
 
-    &lt;div class="tabcontrol" id="Test"&gt;
+    <div class="tabcontrol" id="Test">
 
-        &lt;div id="detailGrid"&gt;
+        <div id="detailGrid">
 
-        &lt;/div&gt;
+        </div>
 
-        &lt;label id="employeeDet" style="display: none"&gt;{{:EmployeeID}}&lt;/label&gt;
+        <label id="employeeDet" style="display: none">{{:EmployeeID}}</label>
 
-    &lt;/div&gt;
+    </div>
 
-&lt;/script&gt;
+</script>
 
 
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
     function detailGridData(e) {
 
@@ -162,11 +157,11 @@ In this section, you can learn how to use the Hierachytree in GridView. The foll
 
     }
 
-&lt;/script&gt;
+</script>
 
 {% endhighlight %}
 {% highlight c# %}
-[cs]
+
 
 public partial class DetailTemplate : System.Web.UI.Page
 
@@ -269,90 +264,89 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Row_images/Row_img2.png)
-{:.image }
 
 
 ## Row Template
 
 Row template is used to render your template in every row. It is used to place elements inside Grid rows. This feature makes it easier to customise Grid rows with HTML elements. Using RowTemplate property achieve row template feature.
-{% highlight html %}
-[ASP]
+{% highlight js %}
 
-[aspx]
 
-&lt;script id="templateData" type="text/x-jsrender"&gt;
+<script id="templateData" type="text/x-jsrender">
 
-    &lt;tr&gt;
+    <tr>
 
-        &lt;td class="photo"&gt;
+        <td class="photo">
 
-            &lt;img style="width: 130px; height: 160px" src="http://js.syncfusion.com/demos/web/themes/images/Employees//{{:EmployeeID}}.png" alt="{{:EmployeeID}}" /&gt;
+            <img style="width: 130px; height: 160px" src="http://js.syncfusion.com/demos/web/themes/images/Employees//{{:EmployeeID}}.png" alt="{{:EmployeeID}}" />
 
-        &lt;/td&gt;
+        </td>
 
-        &lt;td class="details"&gt;
+        <td class="details">
 
-            &lt;table class="CardTable" cellpadding="3" cellspacing="6"&gt;
+            <table class="CardTable" cellpadding="3" cellspacing="6">
 
-                &lt;colgroup&gt;
+                <colgroup>
 
-                    &lt;col width="50%"&gt;
+                    <col width="50%">
 
-                    &lt;col width="50%"&gt;
+                    <col width="50%">
 
-                &lt;/colgroup&gt;
+                </colgroup>
 
-                &lt;tbody&gt;
+                <tbody>
 
-                    &lt;tr&gt;
+                    <tr>
 
-                        <td class="CardHeader">First Name: &lt;/td&gt;
+                        <td class="CardHeader">First Name: </td>
 
-                        &lt;td style="padding: 20px"&gt;{{:FirstName}} &lt;/td&gt;
+                        <td style="padding: 20px">{{:FirstName}} </td>
 
-                    &lt;/tr&gt;
+                    </tr>
 
-                    &lt;tr&gt;
+                    <tr>
 
 
 
                         <td class="CardHeader">Birth Date:
 
-                        &lt;/td&gt;
+                        </td>
 
-                        &lt;td style="padding: 20px"&gt;{{:BirthDate.toLocaleDateString()}}
+                        <td style="padding: 20px">{{:BirthDate.toLocaleDateString()}}
 
-                        &lt;/td&gt;
+                        </td>
 
-                    &lt;/tr&gt;
+                    </tr>
 
-                    &lt;tr&gt;
+                    <tr>
 
 
 
                         <td class="CardHeader">Hire Date:
 
-                        &lt;/td&gt;
+                        </td>
 
-                        &lt;td style="padding: 20px"&gt;{{:HireDate.toLocaleDateString()}}
+                        <td style="padding: 20px">{{:HireDate.toLocaleDateString()}}
 
-                        &lt;/td&gt;
+                        </td>
 
-                    &lt;/tr&gt;
+                    </tr>
 
-                &lt;/tbody&gt;
+                </tbody>
 
-            &lt;/table&gt;
+            </table>
 
-        &lt;/td&gt;
+        </td>
 
-    &lt;/tr&gt;
+    </tr>
 
-&lt;/script&gt;
+</script>
 
+{% endhighlight %}
 
+{% highlight css %}
 
-&lt;style&gt;
+<style>
 
     .CardHeader {
 
@@ -364,26 +358,26 @@ Row template is used to render your template in every row. It is used to place e
 
     }
 
-&lt;/style&gt;
+</style>
+{% endhighlight  %}
+{% highlight html %}
 
+<ej:Grid ID="Grid" runat="server" AllowScrolling="True" RowTemplate="#templateData">
 
+    <ScrollSettings Height="480" Width="500" />
 
-&lt;ej:Grid ID="Grid" runat="server" AllowScrolling="True" RowTemplate="#templateData"&gt;
+    <Columns>
 
-    &lt;ScrollSettings Height="480" Width="500" /&gt;
+        <ej:Column HeaderText="Photo" Width="30" />
 
-    &lt;Columns&gt;
+        <ej:Column HeaderText="Employee Details" Width="70" />
 
-        &lt;ej:Column HeaderText="Photo" Width="30" /&gt;
+    </Columns>
 
-        &lt;ej:Column HeaderText="Employee Details" Width="70" /&gt;
-
-    &lt;/Columns&gt;
-
-&lt;/ej:Grid&gt;
+</ej:Grid>
 {% endhighlight %}
 {% highlight c# %}
-[CS]
+
 
 public partial class RowTemplate : System.Web.UI.Page
 
@@ -488,24 +482,18 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Row_images/Row_img3.png)
-{:.image }
+
 
 
 ## Customize Hover and AltRow 
 
 EnableAltRow and EnableRowHover are graphical features in Grid that are used to enable alternate row color in Grid and enable hover effects while hovering over row cells. By default, these two features are enabled in Grid. In this section, you can learn how to cutomize alternative rows color and hover color in the Grid controls.
 
-{% highlight html %}
-
-[ASP]
-
-[aspx]
 
 
+{% highlight css %}
 
-@*custom style*@
-
-&lt;style&gt;
+<style>
 
     .e-grid .e-alt_row {
 
@@ -521,19 +509,19 @@ EnableAltRow and EnableRowHover are graphical features in Grid that are used to 
 
     }
 
-&lt;/style&gt;
+</style>
 
+{% endhighlight  %}
+{% highlight html %}
+<ej:Grid ID="Grid" runat="server" AllowPaging="True" EnableAltRow="True" EnableRowHover="True">
 
+    <PageSettings PageSize="5"></PageSettings>
 
-&lt;ej:Grid ID="Grid" runat="server" AllowPaging="True" EnableAltRow="True" EnableRowHover="True"&gt;
-
-    &lt;PageSettings PageSize="5"&gt;&lt;/PageSettings&gt;
-
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 {% endhighlight  %}
 {% highlight c# %}
-[cs]
+
 
 protected void Page_Load(object sender, EventArgs e)
 
@@ -550,8 +538,7 @@ protected void Page_Load(object sender, EventArgs e)
 The following output is displayed as a result of the above code example.
 
 
+![](Row_images/Row_img4.png)
 
-![](Row_images/Row_img4.png) 
-{:.image }
 
 

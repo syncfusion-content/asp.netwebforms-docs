@@ -23,17 +23,15 @@ The following code example is for the Grid with default options.
 
 {% highlight html %}
 
-[ASP]
 
-[aspx]
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True"&gt;
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
 
-&lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"&gt;&lt;/DataManager&gt;
+<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"></DataManager>
 
 
 
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 
 
@@ -46,7 +44,7 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Paging_images/Paging_img1.png)
-{:.image }
+
 
 
 ## External Paging
@@ -55,29 +53,27 @@ In this section, you can see how to use external paging. The following code exam
 
 {% highlight html %}
 
-[ASP]
 
-[aspx]
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True"&gt; &lt;/ej:Grid&gt;
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True"> </ej:Grid>
 
 
 
- &lt;div class="row"&gt;
+ <div class="row">
 
-        &lt;div class="col-md-3"&gt; goto &lt;/div&gt;
+        <div class="col-md-3"> goto </div>
 
-        &lt;div class="col-md-3"&gt;
+        <div class="col-md-3">
 
-          &lt;ej:NumericTextBox ID="goto" runat="server" Value="1" MinValue="1" MaxValue="10" ClientSideOnChange="pageChange" Width="100px" /&gt;
+          <ej:NumericTextBox ID="goto" runat="server" Value="1" MinValue="1" MaxValue="10" ClientSideOnChange="pageChange" Width="100px" />
 
-        &lt;/div&gt;
+        </div>
 
- &lt;/div&gt;
+ </div>
 
 
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
     function pageChange(args) {
 
@@ -87,7 +83,7 @@ In this section, you can see how to use external paging. The following code exam
 
     }
 
-&lt;/script&gt;
+</script>
 
 
 
@@ -98,7 +94,7 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Paging_images/Paging_img2.png)
-{:.image }
+
 
 
 ## Pager Templates
@@ -107,53 +103,47 @@ Pager Templates feature provide support to render a specific custom template to 
 
 {% highlight html %}
 
-[ASP]
+
+
+<ej:Grid ID="FlatGrid" runat="server">
+
+            <PageSettings ShowDefaults="false" EnableTemplates="true" Template="#template" />
+
+            <Columns>
+
+                <ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right” />
+
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" />
+
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" />
+
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" />
+
+                <ej:Column Field="OrderDate" HeaderText="Order Date" TextAlign="Right" />
+
+                <ej:Column Field="ShipCity" HeaderText="Ship City" />
+
+            </Columns>
+
+        </ej:Grid>
 
 
 
-[ASPX]
-
-
-
-&lt;ej:Grid ID="FlatGrid" runat="server"&gt;
-
-            &lt;PageSettings ShowDefaults="false" EnableTemplates="true" Template="#template" /&gt;
-
-            &lt;Columns&gt;
-
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right” /&gt;
-
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" /&gt;
-
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" /&gt;
-
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" /&gt;
-
-                &lt;ej:Column Field="OrderDate" HeaderText="Order Date" TextAlign="Right" /&gt;
-
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" /&gt;
-
-            &lt;/Columns&gt;
-
-        &lt;/ej:Grid&gt;
-
-
-
-    &lt;script type="text/x-jsrender" id="template"&gt;
+    <script type="text/x-jsrender" id="template">
 
         <a id="prev" value="Prev">Prev</a>
 
-        &lt;input type="text"/&gt;
+        <input type="text"/>
 
-        &lt;input type="button" value="Go"/&gt;
+        <input type="button" value="Go"/>
 
         <a>Next</a>
 
-    &lt;/script&gt; 
+    </script> 
 
 {% endhighlight %}
 {% highlight c# %}
- [CS]
+
 
 
 
@@ -257,8 +247,8 @@ public partial class PrintGrid : System.Web.UI.Page
 
 
 
-![](Paging_images/Paging_img3.png) 
-{:.image }
+![](Paging_images/Paging_img3.png)
+
 
 
 ## Methods
@@ -270,73 +260,71 @@ The following are the public methods of pager.
 
 In this section, you can see how to use paging methods in Grid control. The following code example is for paging methods. 
 {% highlight html %}
-[ASP]
 
-[aspx]
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True"&gt;
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
 
-&lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"&gt;&lt;/DataManager&gt;
+<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"></DataManager>
 
 
 
-            &lt;PageSettings PageSize="5"&gt;&lt;/PageSettings&gt;
+            <PageSettings PageSize="5"></PageSettings>
 
-&lt;/ej:Grid&gt;
-
-
-
-&lt;div class="row"&gt;
-
-     &lt;div class="col-md-3"&gt; Allow Paging &lt;/div&gt;
-
-     &lt;div class="col-md-3"&gt;
-
-          &lt;ej:CheckBox ID="allowCheck" runat="server" Checked="True" ClientSideOnChange="onClick"&gt;&lt;/ej:CheckBox&gt;
-
-     &lt;/div&gt;
-
- &lt;/div&gt;
-
- &lt;div class="row"&gt;
-
-     &lt;div class="col-md-3"&gt; goto &lt;/div&gt;
-
-     &lt;div class="col-md-3"&gt;
-
-          &lt;ej:NumericTextBox ID="currentpage" runat="server" Value="1" MinValue="1" MaxValue="4" ClientSideOnChange="pageValChange" Width="100px" /&gt;
-
-       &lt;/div&gt;
-
- &lt;/div&gt;
-
- &lt;div class="row"&gt;
-
-     &lt;div class="col-md-3"&gt; Page Size &lt;/div&gt;
-
-     &lt;div class="col-md-3"&gt;
-
-        &lt;ej:NumericTextBox ID="pagesize" runat="server" Value="12" MinValue="1" MaxValue="20" ClientSideOnChange="sizeValChange" Width="100px" /&gt;
-
-     &lt;/div&gt;
-
- &lt;/div&gt;
-
- &lt;div class="row"&gt;
-
-   &lt;div class="col-md-3"&gt; Page Count &lt;/div&gt;
-
-   &lt;div class="col-md-3"&gt;
-
-       &lt;ej:NumericTextBox ID="pagecount" runat="server" Value="4" MinValue="1" MaxValue="4" ClientSideOnChange="countValChange" Width="100px" /&gt;
-
-   &lt;/div&gt;
-
- &lt;/div&gt;
+</ej:Grid>
 
 
 
- &lt;script type="text/javascript"&gt;
+<div class="row">
+
+     <div class="col-md-3"> Allow Paging </div>
+
+     <div class="col-md-3">
+
+          <ej:CheckBox ID="allowCheck" runat="server" Checked="True" ClientSideOnChange="onClick"></ej:CheckBox>
+
+     </div>
+
+ </div>
+
+ <div class="row">
+
+     <div class="col-md-3"> goto </div>
+
+     <div class="col-md-3">
+
+          <ej:NumericTextBox ID="currentpage" runat="server" Value="1" MinValue="1" MaxValue="4" ClientSideOnChange="pageValChange" Width="100px" />
+
+       </div>
+
+ </div>
+
+ <div class="row">
+
+     <div class="col-md-3"> Page Size </div>
+
+     <div class="col-md-3">
+
+        <ej:NumericTextBox ID="pagesize" runat="server" Value="12" MinValue="1" MaxValue="20" ClientSideOnChange="sizeValChange" Width="100px" />
+
+     </div>
+
+ </div>
+
+ <div class="row">
+
+   <div class="col-md-3"> Page Count </div>
+
+   <div class="col-md-3">
+
+       <ej:NumericTextBox ID="pagecount" runat="server" Value="4" MinValue="1" MaxValue="4" ClientSideOnChange="countValChange" Width="100px" />
+
+   </div>
+
+ </div>
+
+
+
+ <script type="text/javascript">
 
  function onClick(args) {
 
@@ -416,10 +404,10 @@ function setPageValue(val) {
 
         }
 
-&lt;/script&gt;
+</script>
 {% endhighlight  %}
 {% highlight c# %}
-[CS]
+
 
 public partial class DefaultFunctionalities : System.Web.UI.Page
 
@@ -530,7 +518,7 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Paging_images/Paging_img4.png) 
-{:.image }
+
 
 
 ## Localization for paging
@@ -561,47 +549,44 @@ In this section, you can see how to use Globilzation in Grid pager. The followin
 
 {% highlight html %}
 
-[ASP]
 
-[aspx]
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" Locale="de-DE">
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" Locale="de-DE"&gt;
-
-  &lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"&gt; &lt;/DataManager&gt;
+  <DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"> </DataManager>
 
 
 
-      &lt;/ej:Grid&gt;
+      </ej:Grid>
 
 
 
- &lt;div class="row"&gt;
+ <div class="row">
 
-    &lt;div class="col-md-3"&gt; Selection Type &lt;/div&gt;
+    <div class="col-md-3"> Selection Type </div>
 
-    &lt;div class="col-md-3"&gt;
+    <div class="col-md-3">
 
-        &lt;ej:DropDownList ID="language" runat="server" SelectedItemIndex="1" Width="120px" ClientSideOnChange="onChange"&gt;
+        <ej:DropDownList ID="language" runat="server" SelectedItemIndex="1" Width="120px" ClientSideOnChange="onChange">
 
-            &lt;Items&gt;
+            <Items>
 
-              &lt;ej:DropDownListItem Text="English" Value="0" /&gt;
+              <ej:DropDownListItem Text="English" Value="0" />
 
-              &lt;ej:DropDownListItem Text="Deutsch" Value="1" /&gt;
+              <ej:DropDownListItem Text="Deutsch" Value="1" />
 
-              &lt;ej:DropDownListItem Text="Español" Value="2" /&gt;
+              <ej:DropDownListItem Text="Español" Value="2" />
 
-            &lt;/Items&gt;
+            </Items>
 
-        &lt;/ej:DropDownList&gt;
+        </ej:DropDownList>
 
-     &lt;/div&gt;
+     </div>
 
- &lt;/div&gt;
+ </div>
 
 
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
    $(function () {
 
@@ -677,7 +662,7 @@ ej.Pager.locale["de-DE"] = {
 
         };
 
-    &lt;/script&gt;
+    </script>
 
 
 {% endhighlight %}
@@ -688,6 +673,6 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Paging_images/Paging_img5.png)
-{:.image }
+
 
 

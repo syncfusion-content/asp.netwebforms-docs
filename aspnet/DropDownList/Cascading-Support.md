@@ -173,7 +173,7 @@ protected void Page_Load(object sender, EventArgs e)
 Output of the above step.
 
 ![](Cascading-Support_images/Cascading-Support_img2.png)
-{:.image }
+
 
 
 ## Multiple Cascading support
@@ -385,6 +385,6 @@ protected void Page_Load(object sender, EventArgs e)
 The following screenshot displays the output of the above code example.
 
 ![](Cascading-Support_images/Cascading-Support_img4.png)
-{:.image }
+
 
 

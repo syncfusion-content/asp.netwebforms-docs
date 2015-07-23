@@ -23,12 +23,6 @@ You can select the shape by tapping on the shape. The Single selection is enable
 
 {% highlight html %}
 
- [ASP]
-
-
-
-[ASPX]
-
 
 
     <ej:Map ID="map" runat="server" >    
@@ -54,7 +48,7 @@ You can select the shape by tapping on the shape. The Single selection is enable
 
 
 ![](User-Interaction_images/User-Interaction_img1.png)
-{:.image }
+
 
 
 Zooming
@@ -90,11 +84,6 @@ The MaxValue property is used to set the maximum zoom level of the map.
 
 {% highlight html %}
 
- [ASP]
-
-
-
-[ASPX]
 
 
 
@@ -136,7 +125,7 @@ You can zoom the Maps using zoom method. The zoom method contains parameter zoom
 
 {% highlight html %}
 
- [ASP]
+
 
 $("#map").ejMap("zoom", 2);
 
@@ -157,7 +146,7 @@ When the map is double-tapped using mouse, the zoom in operation is performed.
 
 
 ![](User-Interaction_images/User-Interaction_img2.png) 
-{:.image }
+
 
 
 Using Shape Selection
@@ -172,7 +161,7 @@ When EnableZoomOnSelection property is set to true, then, zoom on double click i
 
 {% highlight html %}
 
- [ASP]
+
 
 	<ej:Map ID="map" runat="server" >    
 
@@ -194,10 +183,10 @@ _Attribute Table_
 
 <table>
 <tr>
-<td>
-Attribute</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Attribute</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 Latitude</td><td>
@@ -218,7 +207,7 @@ Zoom level of the map</td></tr>
 
 {% highlight html %}
 
- [ASPX]
+
 
 <script type="text/javascript">
 
@@ -241,17 +230,12 @@ Panning
 The panning feature enables map navigation. The EnablePan property is used to enable or disable the panning support.
 
 
-[ASP]
 
 
 
-[ASPX]
+    <ej:Map ID="map" runat="server" EnablePan=”true”>    
 
-
-
-    &lt;ej:Map ID="map" runat="server" EnablePan=”true”&gt;    
-
-    &lt;/ej:Map&gt; 
+    </ej:Map> 
 
 Navigation Control
 
@@ -260,18 +244,14 @@ Navigation control is built-in with Maps control. With Navigation control, Maps 
 Structure of Navigation Control
 
 ![a](User-Interaction_images/User-Interaction_img3.png)
-{:.image }
+
 
 
 
 
 {% highlight html %}
 
- [ASP]
 
-
-
-[ASPX]
 
     <ej:Map ID="map" runat="server" >    
 
@@ -328,7 +308,7 @@ You can set this option by using DockPosition property in NavigationControl.
 
 {% highlight html %}
 
- [ASP]
+
 
 
 

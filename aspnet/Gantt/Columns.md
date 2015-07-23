@@ -462,7 +462,7 @@ The following screenshot displays the customized column in Gantt control.
 
 
 ![](Columns_images/Columns_img1.png)
-{:.image }
+
 
 
 
@@ -472,7 +472,7 @@ Column Chooser
 Gantt supports enabling and disabling the visibility of the columns dynamically with the ShowColumnChooser property. The visibility of the custom columns can also be toggled with this property. Column chooser option is rendered as a sub menu item within the column menu in the Gantt columns. 
 
 ![](Columns_images/Columns_img2.png)
-{:.image }
+
 
 
 The column menu is enabled with the ShowColumnChooser property, where the default value for this property is false.
@@ -508,7 +508,7 @@ Sort Ascending and Sort Descending options can be enabled or disabled with the A
 The following screenshot displays the column chooser in the Gantt control.
 
 ![](Columns_images/Columns_img3.png)
-{:.image }
+
 
 
 

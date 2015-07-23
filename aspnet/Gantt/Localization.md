@@ -19,8 +19,8 @@ _Table1: Localization_
 
 <table>
 <tr>
-<td colspan = "2">
-Localized string value for en-US culture</td></tr>
+<th colspan = "2">
+Localized string value for en-US culture</th></tr>
 <tr>
 <td>
 Empty Record</td><td>
@@ -69,6 +69,6 @@ The following screenshot shows Gantt with French culture.
 
 
 ![](Localization_images/Localization_img1.png)
-{:.image }
+
 
 

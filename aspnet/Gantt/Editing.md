@@ -46,8 +46,8 @@ The output of Gantt with CellEditing is as follows.
 
 
 
-![](Editing_images/Editing_img1.png)
-{:.image }
+{{'![](Editing_images/Editing_img1.png)'| markdownify}} 
+
 
 
 Normal Editing
@@ -76,8 +76,8 @@ The following screenshot shows the output of normal editing.
 
 
 
-![C:/Users/pongeetha/Desktop/NormalEditing.png](Editing_images/Editing_img2.png)
-{:.image }
+{{'![C:/Users/pongeetha/Desktop/NormalEditing.png](Editing_images/Editing_img2.png)'| markdownify}} 
+
 
 
 Taskbar Editing
@@ -132,8 +132,8 @@ Update the predecessor details of a task using mouse interactions. The following
 
 The following screen shot shows the predecessor editing in Gantt control.
 
-![C:/Users/labuser/Desktop/hello.png](Editing_images/Editing_img3.png)
-{:.image }
+{{'![C:/Users/labuser/Desktop/hello.png](Editing_images/Editing_img3.png)'| markdownify}} 
+
 
 
 _Figure39: Predecessor Editing_

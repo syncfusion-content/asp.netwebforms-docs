@@ -13,37 +13,33 @@ Printing is easy with Grid control by using Print Grid feature. Toolbar has the 
 
 
 {% highlight html %}
-[ASP]
 
 
+<ej:Grid ID="FlatGrid" runat="server" AllowSorting="True" AllowPaging="True">
 
-[ASPX]
+            <ToolbarSettings ShowToolbar="true" ToolbarItems="printGrid"></ToolbarSettings>
 
-&lt;ej:Grid ID="FlatGrid" runat="server" AllowSorting="True" AllowPaging="True"&gt;
+            <Columns>
 
-            &lt;ToolbarSettings ShowToolbar="true" ToolbarItems="printGrid"&gt;&lt;/ToolbarSettings&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID” TextAlign="Right"/>
 
-            &lt;Columns&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" />
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID” TextAlign="Right"/&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" /&gt;
+                <ej:Column Field="OrderDate" HeaderText="Order Date" TextAlign="Right"/>
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="110" />
 
-                &lt;ej:Column Field="OrderDate" HeaderText="Order Date" TextAlign="Right"/&gt;
+            </Columns>
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="110" /&gt;
-
-            &lt;/Columns&gt;
-
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
 {% endhighlight  %}
 {% highlight c# %}
-[CS]
+
 
 public partial class PrintGrid : System.Web.UI.Page
 
@@ -144,6 +140,6 @@ public partial class PrintGrid : System.Web.UI.Page
 The following output is displayed as a result of the above code example.
 
 ![](Print-Grid_images/Print-Grid_img1.png)
-{:.image }
+
 
 

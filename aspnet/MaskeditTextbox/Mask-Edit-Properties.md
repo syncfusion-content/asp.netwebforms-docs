@@ -29,9 +29,9 @@ The following table contains new mask characters and its functionalities.
 
 <table>
 <tr>
-<td>
-Mask Character</td><td>
-Functionalities</td></tr>
+<th>
+Mask Character</th><th>
+Functionalities</th></tr>
 <tr>
 <td>
 A</td><td>
@@ -96,23 +96,23 @@ Add the following code example in your ASPX page to render the Textbox control.
 The output for Mask Edit Textbox with its properties.
 
 ![C:/Users/giftline.jebamani/Desktop/a.png](Mask-Edit-Properties_images/Mask-Edit-Properties_img1.png) 
-{:.image }
+
 ![C:/Users/giftline.jebamani/Desktop/b.png](Mask-Edit-Properties_images/Mask-Edit-Properties_img2.png)
-{:.image }
+
 
 
 
 
 ![C:/Users/giftline.jebamani/Desktop/c.png](Mask-Edit-Properties_images/Mask-Edit-Properties_img3.png) 
-{:.image }
+
 ![C:/Users/giftline.jebamani/Desktop/d.png](Mask-Edit-Properties_images/Mask-Edit-Properties_img4.png)
-{:.image }
+
 
 
 
 
 ![C:/Users/giftline.jebamani/Desktop/e.png](Mask-Edit-Properties_images/Mask-Edit-Properties_img5.png) 
-{:.image }
+
 
 
 
