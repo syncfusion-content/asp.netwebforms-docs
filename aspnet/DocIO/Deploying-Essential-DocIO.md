@@ -7,15 +7,15 @@ control: DocIO
 documentation: ug
 ---
 
-## Deploying Essential DocIO
+# Deploying Essential DocIO
 
-### Assemblies
+## Assemblies
 
 The following assemblies need to be referenced in your application for the usage of Essential DocIO.
 
 
 
-Full Trust Mode
+### Full Trust Mode
 
 In Full Trust Mode, add references to the following assemblies corresponding to the platform.
 
@@ -77,7 +77,7 @@ DocIO – Windows Phone 8.1 WinRT
 
 
 
-Medium or Partial Trust Mode
+### Medium or Partial Trust Mode
 
 In Medium or Partial Trust Mode, add references to the following assemblies corresponding to the platform.
 

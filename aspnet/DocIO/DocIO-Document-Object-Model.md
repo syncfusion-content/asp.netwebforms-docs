@@ -7,19 +7,19 @@ control: DocIO
 documentation: ug
 ---
 
-## DocIO Document Object Model
+# DocIO Document Object Model
 
 This section shows a Document Object Model of DocIO that helps you to interact with a Word document.
 
-### Object Model Structure
+## Object Model Structure
 
 The following illustration shows the Class Diagram for Essential DocIO.
 
-{ ![](DocIO-Document-Object-Model_images/DocIO-Document-Object-Model_img1.png) | markdownify }
-{:.image }
+![](DocIO-Document-Object-Model_images/DocIO-Document-Object-Model_img1.png)
 
 
-_Figure_ _11__: Class Diagram for Essential DocIO_
+
+_Figure_ _11_: _Class Diagram for Essential DocIO_
 
 
 

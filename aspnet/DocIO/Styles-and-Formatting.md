@@ -7,7 +7,7 @@ control: DocIO
 documentation: ug
 ---
 
-## Styles and Formatting
+# Styles and Formatting
 
 Styles and Formatting make a Word document a full fledged and well formatted one. Word document and document elements have their own styles and formatting.
 
@@ -23,37 +23,35 @@ The following are the types of formattings supported by DocIO.
 * Paragraph formatting
 * List style fromatting
 
-{ ![](Styles-and-Formatting_images/Styles-and-Formatting_img1.jpeg) | markdownify }
-{:.image }
-_Note: DocIO currently does not support table styles._
+
+> Note: DocIO currently does not support table styles.
 
 
 
-Introduction to styles and formatting in DocIO
+## Introduction to styles and formatting in DocIO
 
 DocIO allows you to create your own paragraph style and list styles (user-defined style), which can be applied to any paragraph or list item. Refer to the Paragraph formatting section to know more about the user-defined styles.
 
-{ ![](Styles-and-Formatting_images/Styles-and-Formatting_img2.jpeg) | markdownify }
-{:.image }
-_Note: In a Word document style hierarchy, “Normal” is the base style and is the default style for paragraphs and tables, if the user has not specified style definition._
+
+> Note: In a Word document style hierarchy, “Normal” is the base style and is the default style for paragraphs and tables, if the user has not specified style definition.
 
 
 
 Collection of DocIO Character and Paragraph styles are accessible through the WordDocument.Styles property. Collection of List styles is accessible through the WordDocument.ListStyles property.
 
-Style Class
+## Style Class
 
 DocIO Style class is a base class for the other style classes. Style is an abstract class. CharacterFormat property of Style class specifies character formatting. This property returns the instance of WCharacterFormat type. Name property specifies the name of the style. BaseStyle property specifies the base style (style inherits formatting of base style). User can apply one of the built-in Word styles by using the WParagraph.ApplyStyle method. The built-in styles are accessible through the BuiltinStyle enumeration.
 
-Public Properties
+### Public Properties
 
-_Table_ _109__: Public Properties_
+_Table_ _109_: _Public Properties_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 CharacterFormat</td><td>
@@ -71,15 +69,16 @@ Gets the type of style.  </td></tr>
 IsPrimaryStyle</td><td>
 Gets or sets the Primary style definition. If you set this to true, then the corresponding style will be displayed in Syles ribbon of Microsoft Word.</td></tr>
 </table>
-Public Methods
 
-_Table_ _110__: Public Methods_
+### Public Methods
+
+_Table_ _110_: _Public Methods_
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 ApplyBaseStyle</td><td>
@@ -91,13 +90,14 @@ Clones itself.</td></tr>
 </table>
 
 
-Acessing Styles
+## Acessing Styles
 
 You can access the collection of styles defined in the document by using the Styles property. This collection holds both the built-in and user-defined styles in a document. A particular style can be obtained by its name or index.
 
 The following code example illustrates how to access the collection of styles defined in the Word document.
 
-[C#]
+
+{% highlight C# %}
 
 
 
@@ -117,9 +117,9 @@ IStyle style= coll.FindByName(string Stylename,StyleType styleType) ;
 
 IStyle style1=coll[0];
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -139,17 +139,18 @@ Dim style As IStyle= coll.FindByName(String Stylename,StyleType styleType)
 
 Dim style1 As IStyle = coll(0)
 
-### Character Formatting Properties
+{% endhighlight %}
 
-Character Styles
+## Character Formatting Properties
+
+### Character Styles
 
 This sections elaborates how to deal with the Character Styles. The class CharacterStyle takes resposibilty for handling the character styles. 
 
-> { ![http://help.syncfusion.com/ug/windows%20forms/docio/ImagesExt/image9_7.png](Styles-and-Formatting_images/Styles-and-Formatting_img3.png) | markdownify }
-{:.image }
-_Note: DocIO does not provide support to add user-defined character styles to the document_
 
-Class Hierarchy
+> Note: DocIO does not provide support to add user-defined character styles to the document
+
+### Class Hierarchy
 
 Style
 
@@ -159,17 +160,17 @@ Style
 
 
 
-Public Properties
+### Public Properties
 
 
 
-_Table_ _111__: Public Properties_
+_Table_ _111_: _Public Properties_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 BaseStyle</td><td>
@@ -201,15 +202,15 @@ Gets or sets the stylistic set type (Microsoft Word 2010 specific property).</td
 </table>
 
 
-Public Methods
+### Public Methods
 
-_Table_ _112__: Public Methods_
+_Table_ _112_: _Public Methods_
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 Clone</td><td>
@@ -219,11 +220,12 @@ Clones itself.</td></tr>
 NameToBuiltIn</td><td>
 Converts string style names to BuiltinStyle.</td></tr>
 </table>
-Character Formatting
+
+### Character Formatting
 
 The class WCharacterFormat represents the character formats in Essential DocIO. It is used to get or set the formatting for text chunks, special symbol, or marker (for example marker of picture, text box, footnote, etc.). WCharacterFormat customizes the appearance of the element (for example text chunk or symbol) in the document, starting with font name to the style of texture and spacing between characters.
 
-Class Hierarchy
+### Class Hierarchy
 
 FormatBase
 
@@ -233,15 +235,15 @@ FormatBase
 
 
 
-Public Constructor
+### Public Constructor
 
-_Table_ _113__: Public Constructor_
+_Table_ _113_: _Public Constructors_
 
 <table>
 <tr>
-<td>
-Constructor </td><td>
-Description</td></tr>
+<th>
+Constructor </th><th>
+Description</th></tr>
 <tr>
 <td>
 WCharacterFormat.WCharacterFormat (IWordDocument)</td><td>
@@ -249,9 +251,9 @@ Initializes a new instance of the WCharacterFormat class.</td></tr>
 </table>
 
 
-Public Properties
+### Public Properties
 
-_Table_ _114__: Public Properties_
+_Table_ _114_: _Public Properties_
 
 <table>
 <tr>
@@ -259,131 +261,131 @@ _Table_ _114__: Public Properties_
 Properties</th><th>
 Description</th></tr>
 <tr>
-<th>
-AllCaps</th><th>
-Gets or sets the AllCaps property of text.</th></tr>
+<td>
+AllCaps</td><td>
+Gets or sets the AllCaps property of text.</td></tr>
 <tr>
-<th>
-Bidi</th><th>
-Gets or sets the right-to-left property of text.  </th></tr>
+<td>
+Bidi</td><td>
+Gets or sets the right-to-left property of text.  </td></tr>
 <tr>
-<th>
-Bold</th><th>
-Gets or sets the bold style of text.</th></tr>
+<td>
+Bold</td><td>
+Gets or sets the bold style of text.</td></tr>
 <tr>
-<th>
-BoldBidi</th><th>
-Gets or sets the bold property for right-to-left text.  </th></tr>
+<td>
+BoldBidi</td><td>
+Gets or sets the bold property for right-to-left text.  </td></tr>
 <tr>
-<th>
-Border</th><th>
-Gets the border for text.</th></tr>
+<td>
+Border</td><td>
+Gets the border for text.</td></tr>
 <tr>
-<th>
-CharacterSpacing</th><th>
-Gets or sets the space width between characters in text.  </th></tr>
+<td>
+CharacterSpacing</td><td>
+Gets or sets the space width between characters in text.  </td></tr>
 <tr>
-<th>
-DoubleStrike</th><th>
-Gets or sets the doublestrikeout style to text.  </th></tr>
+<td>
+DoubleStrike</td><td>
+Gets or sets the doublestrikeout style to text.  </td></tr>
 <tr>
-<th>
-Emboss           </th><th>
-Gets or sets the emboss property of text.  </th></tr>
+<td>
+Emboss           </td><td>
+Gets or sets the emboss property of text.  </td></tr>
 <tr>
-<th>
-Engrave</th><th>
-Gets or sets the engrave property of text.  </th></tr>
+<td>
+Engrave</td><td>
+Gets or sets the engrave property of text.  </td></tr>
 <tr>
-<th>
-Font</th><th>
-Gets or sets the font as System.Drawing.Font. </th></tr>
+<td>
+Font</td><td>
+Gets or sets the font as System.Drawing.Font. </td></tr>
 <tr>
-<th>
-FontName</th><th>
-Gets or sets the font name for text.</th></tr>
+<td>
+FontName</td><td>
+Gets or sets the font name for text.</td></tr>
 <tr>
-<th>
-FontNameBidi</th><th>
-Gets or sets the font name for right-to-left text.  </th></tr>
+<td>
+FontNameBidi</td><td>
+Gets or sets the font name for right-to-left text.  </td></tr>
 <tr>
-<th>
-FontSize</th><th>
-Gets or sets the font size (in points).</th></tr>
+<td>
+FontSize</td><td>
+Gets or sets the font size (in points).</td></tr>
 <tr>
-<th>
-FontSizeBidi</th><th>
-Gets or sets the font size of the right-to-left text (in points).  </th></tr>
+<td>
+FontSizeBidi</td><td>
+Gets or sets the font size of the right-to-left text (in points).  </td></tr>
 <tr>
-<th>
-Hidden</th><th>
-Gets or sets the hidden property of text.  </th></tr>
+<td>
+Hidden</td><td>
+Gets or sets the hidden property of text.  </td></tr>
 <tr>
-<th>
-HighlightColor</th><th>
-Gets or sets the highlight color of text.  </th></tr>
+<td>
+HighlightColor</td><td>
+Gets or sets the highlight color of text.  </td></tr>
 <tr>
-<th>
-Italic</th><th>
-Gets or sets the italic style to text.  </th></tr>
+<td>
+Italic</td><td>
+Gets or sets the italic style to text.  </td></tr>
 <tr>
-<th>
-ItalicBidi</th><th>
-Gets or sets the italic property for right-to-left text.  </th></tr>
+<td>
+ItalicBidi</td><td>
+Gets or sets the italic property for right-to-left text.  </td></tr>
 <tr>
-<th>
-LineBreak</th><th>
-Gets or sets the line break after the text.  </th></tr>
+<td>
+LineBreak</td><td>
+Gets or sets the line break after the text.  </td></tr>
 <tr>
-<th>
-OutLine</th><th>
-Gets or sets the outline character property.  </th></tr>
+<td>
+OutLine</td><td>
+Gets or sets the outline character property.  </td></tr>
 <tr>
-<th>
-Position</th><th>
-Gets or sets the text vertical position.  </th></tr>
+<td>
+Position</td><td>
+Gets or sets the text vertical position.  </td></tr>
 <tr>
-<th>
-Shadow</th><th>
-Gets or sets the shadow property of text.  </th></tr>
+<td>
+Shadow</td><td>
+Gets or sets the shadow property of text.  </td></tr>
 <tr>
-<th>
-SmallCaps</th><th>
-Gets or sets the SmallCaps property of text.  </th></tr>
+<td>
+SmallCaps</td><td>
+Gets or sets the SmallCaps property of text.  </td></tr>
 <tr>
-<th>
-Strikeout</th><th>
-Gets or sets the strikeout style to text.  </th></tr>
+<td>
+Strikeout</td><td>
+Gets or sets the strikeout style to text.  </td></tr>
 <tr>
-<th>
-SubSuperScript</th><th>
-Gets or sets the subscript/superscript mode to text.  </th></tr>
+<td>
+SubSuperScript</td><td>
+Gets or sets the subscript/superscript mode to text.  </td></tr>
 <tr>
-<th>
-TextBackgroundColor</th><th>
-Gets or sets the text background color.  </th></tr>
+<td>
+TextBackgroundColor</td><td>
+Gets or sets the text background color.  </td></tr>
 <tr>
-<th>
-TextColor</th><th>
-Gets or sets the text color.  </th></tr>
+<td>
+TextColor</td><td>
+Gets or sets the text color.  </td></tr>
 <tr>
-<th>
-UnderlineStyle</th><th>
-Gets or sets the underline style to text.</th></tr>
+<td>
+UnderlineStyle</td><td>
+Gets or sets the underline style to text.</td></tr>
 <tr>
-<th>
-LocaleIdASCII</th><th>
-Gets or sets the localeidentifier (language) of the formatted characters.</th></tr>
+<td>
+LocaleIdASCII</td><td>
+Gets or sets the localeidentifier (language) of the formatted characters.</td></tr>
 <tr>
-<th>
-LocaleIdFarEast</th><th>
-Gets or sets the the localeidentifier (language) of the formatted Asian characters.</th></tr>
+<td>
+LocaleIdFarEast</td><td>
+Gets or sets the the localeidentifier (language) of the formatted Asian characters.</td></tr>
 </table>
 
 
 The following code example illustrates how to use the WCharacterFormat class.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -508,9 +510,9 @@ textRange.CharacterFormat.LocaleIdASCII = 1093;
 
 textRange.CharacterFormat.LocaleIdFarEast = 2052
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -636,25 +638,25 @@ textRange.CharacterFormat.LocaleIdASCII = 1093
 
 textRange.CharacterFormat.LocaleIdFarEast = 2052
 
+{% endhighlight %}
 
+## Paragraph Formatting Properties
 
-### Paragraph Formatting Properties
-
-Paragraph Style
+###Paragraph Style
 
 WParagraphStyle class represents paragraph style in DocIO. Paragraph Style is a pattern of paragraph formatting. You can also apply custom paragraph styles to the paragraph. The following screenshot illustrates how to achieve this in Microsoft Word.
 
-{ ![](Styles-and-Formatting_images/Styles-and-Formatting_img4.png) | markdownify }
-{:.image }
+![](Styles-and-Formatting_images/Styles-and-Formatting_img4.png)
 
 
-_Figure_ _50__: Setting Paragraph Style_
+
+_Figure_ _50_: _Setting Paragraph Style_
 
 
 
 DocIO also lets you add your own paragraph styles to the document. A collection of DocIOParagraph Styles is accessible through WordDocument.Styles property. You can apply one of the built-in Word paragraph styles by using the WParagraph.ApplyStyle method. You can also use the ApplyBaseStyle method to apply the base style for the current paragraph style.
 
-Class Hierarchy
+### Class Hierarchy
 
 Style
 
@@ -664,15 +666,15 @@ Style
 
 
 
-Public Constructors
+### Public Constructors
 
-_Table_ _115__: Public Constructor_
+_Table_ _115_: _Public Constructors_
 
 <table>
 <tr>
-<td>
-Constructor </td><td>
-Description</td></tr>
+<th>
+Constructor </th><th>
+Description</th></tr>
 <tr>
 <td>
 WParagraphStyle.WParagraphStyle (IWordDocument)</td><td>
@@ -680,15 +682,15 @@ Initializes a new instance of the WParagraphStyle class.  </td></tr>
 </table>
 
 
-Public Properties
+### Public Properties
 
-_Table_ _116__: Public Properties_
+_Table_ _116_: _Public Properties_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 BaseStyle</td><td>
@@ -704,15 +706,15 @@ Gets the type of the style.</td></tr>
 </table>
 
 
-Public Methods
+### Public Methods
 
-_Table_ _117__: Public Methods_
+_Table_ _117_: _Public Methods_
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 ApplyBaseStyle</td><td>
@@ -726,7 +728,7 @@ Clones itself.</td></tr>
 
 The following code example illustrates how to create user-defined Paragraph Styles by using DocIO.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -788,9 +790,9 @@ section.AddParagraph();
 
 doc.Save("UserStyle.doc");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -858,11 +860,11 @@ section.AddParagraph()
 
 doc.Save("UserStyle.doc")
 
-
+{% endhighlight %}
 
 The following code illustrates how to apply built-in paragraph styles to the Word document.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -902,21 +904,21 @@ doc.LastParagraph.ApplyStyle(BuiltinStyle.Heading1)
 
 doc.Save("BuiltinStyle.doc")
 
+{% endhighlight %}
 
-
-Paragraph Format
+## Paragraph Format
 
 WParagraphFormat class represents paragraph formatting in Essential DocIO. The following screenshot illustrates how to define Paragraph Format to a paragraph in Microsoft Word.
 
-{ ![](Styles-and-Formatting_images/Styles-and-Formatting_img5.png) | markdownify }
-{:.image }
-
-
-_Figure_ _51__: Paragraph Formatting_
+![](Styles-and-Formatting_images/Styles-and-Formatting_img5.png) 
 
 
 
-Class Hierarchy
+_Figure_ _51_: _Paragraph Formatting_
+
+
+
+### Class Hierarchy
 
 FormatBase
 
@@ -924,17 +926,17 @@ FormatBase
 
             WParagraphFormat 
 
-Public Constructors
+### Public Constructors
 
 
 
-_Table_ _118__: Public Constructors_
+_Table_ _118_: _Public Constructors_
 
 <table>
 <tr>
-<td>
-Constructors </td><td>
-Description</td></tr>
+<th>
+Constructors </th><th>
+Description</th></tr>
 <tr>
 <td>
 WParagraphFormat.WParagraphFormat ()</td><td>
@@ -944,15 +946,16 @@ Initializes a new instance of WParagraphFormat class. </td></tr>
 WParagraphFormat.WParagraphFormat (IWordDocument)</td><td>
 Initializes a new instance of WParagraphFormat class.</td></tr>
 </table>
-Public Properties
 
-_Table_ _119__: Public Properties_
+### Public Properties
+
+_Table_ _119_: _Public Properties_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 AfterSpacing</td><td>
@@ -1040,27 +1043,27 @@ Gets or sets a value indicating whether the indentation type is mirror indents (
 </table>
 
 
-[C#]
+{% highlight C# %}
 
 
 
 para.ParagraphFormat.OutlineLevel = OutlineLevel.Level8;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 para.ParagraphFormat.OutlineLevel = OutlineLevel.Level8
 
+{% endhighlight %}
 
-
-Tabs
+## Tabs
 
 Tabs class represents a tab collection within a paragraph. Tab class represents a single tab within the tab collection.
 
-Class Hierarchy
+### Class Hierarchy
 
 WParagraphFormat
 
@@ -1068,15 +1071,15 @@ WParagraphFormat
 
     Tabs
 
-Public Properties
+### Public Properties
 
-_Table_ _120__: Public Properties_
+_Table_ _120_: _Public Properties_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 Justification</td><td>
@@ -1096,17 +1099,17 @@ Gets or sets the Clear tab position.</td></tr>
 </table>
 
 
-Public Methods
+### Public Methods
 
 
 
-_Table_ _121__: Public Methods_
+_Table_ _121_: _Public Methods_
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 AddTab()</td><td>
@@ -1132,7 +1135,7 @@ Removes tab at specified tab position from the tab collection.</td></tr>
 
 The following code example illustrates how to add the tab to a paragraph and delete the tab from a paragraph.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -1184,9 +1187,9 @@ paragraph.AppendText("Tabs are added and removed");
 
 document .Save ("Sample.doc",FormatType.Doc  );
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1238,13 +1241,13 @@ paragraph.AppendText("Tabs are added and removed")
 
 document.Save("Sample.doc", FormatType.Doc)
 
+{% endhighlight %}
 
-
-### List Style Properties
+## List Style Properties
 
 List is one of the popular features available in Word document. It lets you arrange the contents in an arranged and sequential representation. This section elaborates how DocIO handles List and list items effectively.
 
-List Style
+### List Style
 
 ListStyle class represents list properties in the Paragraph style. Collection of list styles is accessible through the WordDocument.ListStyles property.
 
@@ -1257,23 +1260,23 @@ You can specify the type of the list style by using the ListType property. Eve
 
 The following screenshot demonstrates how to create list styles by using Microsoft Word.
 
-{ ![](Styles-and-Formatting_images/Styles-and-Formatting_img6.png) | markdownify }
-{:.image }
-
-
-_Figure_ _52__: Creating List Styles_
+![](Styles-and-Formatting_images/Styles-and-Formatting_img6.png) 
 
 
 
-Public Properties
+_Figure_ _52_: _Creating List Styles_
 
-_Table_ _122__: Public Properties_
+
+
+### Public Properties
+
+_Table_ _122_: _Public Properties_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 Levels</td><td>
@@ -1295,15 +1298,16 @@ Gets the type of the style.  </td></tr>
 ListStyle.ListStyle (IWordDocument, ListType)</td><td>
 Initializes a new instance of the ListStyle class.</td></tr>
 </table>
-Public Methods
 
-_Table_ _123__: Public Methods_
+### Public Methods
+
+_Table_ _123_: _Public Methods_
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 Clone</td><td>
@@ -1317,15 +1321,15 @@ Static method. Creates empty list style.</td></tr>
 
 WListLevel class represents list level in Essential DocIO. By using the WListLevel class, you can customize the list level options.
 
-Public Constructor
+### Public Constructor
 
-_Table_ _124__: Public Constructor_
+_Table_ _124_: _Public Constructors_
 
 <table>
 <tr>
-<td>
-Constructor </td><td>
-Description</td></tr>
+<th>
+Constructor </th><th>
+Description</th></tr>
 <tr>
 <td>
 WListLevel.WListLevel (ListStyle)</td><td>
@@ -1333,13 +1337,13 @@ Initializes new instance of WListLevel class.</td></tr>
 </table>
 Public Methods
 
-_Table_ _125__: Public Methods_
+_Table_ _125_: _Public Methods_
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 Clone</td><td>
@@ -1351,13 +1355,13 @@ Gets list symbol for specified item index.</td></tr>
 </table>
 Public Properties
 
-_Table_ _126__: Public Properties_
+_Table_ _126_: _Public Properties_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 BulletCharacter</td><td>
@@ -1423,7 +1427,7 @@ When true, number generated will include previous levels (used for legal numberi
 
 The following code example illustrates how to create user-defined list styles and apply it to a paragraph.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -1547,9 +1551,9 @@ paragraph.ListFormat.ContinueListNumbering();
 
 paragraph.ListFormat.ListLevelNumber = 0;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1673,7 +1677,9 @@ paragraph.ListFormat.ContinueListNumbering()
 
 paragraph.ListFormat.ListLevelNumber = 0
 
-List Format
+{% endhighlight %}
+
+## List Format
 
 WListFormat class specifies the formatting for DocIO list paragraph. The type of the list is specified by using the ListType property of WListFormat. ListLevelNumber property specifies the level number for the list paragraph. CurrentListStyle property specifies the list style, applied for the current list paragraph. CurrentListLevel property returns the instance of the WListLevel type, which specifies the formatting for the list level (paragraph). For example, a value that the list starts at (for numbered lists), list symbols, alignment of list text, and so forth.
 
@@ -1685,7 +1691,7 @@ WListFormat class specifies the formatting for DocIO list paragraph. The type of
 * Use IncreaseIndentLevel or DecreaseIndentLevel to increase or decrease indent for the level.
 * To remove list from the paragraph, use RemoveList method.
 
-Class Hierarchy
+### Class Hierarchy
 
 FormatBase
 
@@ -1693,29 +1699,30 @@ FormatBase
 
             WListFormat 
 
-Public Constructor
+### Public Constructor
 
-_Table_ _127__: Public Constructors_
+_Table_ _127_: _Public Constructors_
 
 <table>
 <tr>
-<td>
-Constructor </td><td>
-Description</td></tr>
+<th>
+Constructor </th><th>
+Description</th></tr>
 <tr>
 <td>
 WListFormat.WListFormat (IWParagraph)</td><td>
 Initializes new instance of WListFormat class.</td></tr>
 </table>
+
  Public Properties
 
-_Table_ _128__: Public Properties_
+_Table_ _128_: _Public Properties_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 CurrentListLevel</td><td>
@@ -1741,15 +1748,16 @@ Gets or sets the type of the list.</td></tr>
 RestartNumbering</td><td>
 Gets or sets whether numbering of the list must restart from previous list.</td></tr>
 </table>
- Public Methods
 
-_Table_ _129__: Public Methods_
+### Public Methods
+
+_Table_ _129_: _Public Methods_
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 ApplyDefBulletStyle</td><td>
@@ -1783,7 +1791,7 @@ Removes the list from current paragraph.  </td></tr>
 
 The following code example illustrates how to use the WListFormat and List Styles in DocIO.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -1927,9 +1935,9 @@ section.AddParagraph();
 
 section.AddParagraph();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2073,21 +2081,21 @@ section.AddParagraph()
 
 section.AddParagraph()
 
+{% endhighlight %}
 
-
-### Text Box Format
+## Text Box Format
 
 Text Box control is a container that provides support to insert text, images, and so on. DocIO supports text box and its methods. The WTextBoxFormat class specifies formatting for the Text Box.
 
-{ ![](Styles-and-Formatting_images/Styles-and-Formatting_img7.png) | markdownify }
-{:.image }
-
-
-_Figure_ _53__: Formatting Text Box_
+![](Styles-and-Formatting_images/Styles-and-Formatting_img7.png) 
 
 
 
-Position
+_Figure_ _53_: Formatting Text Box_
+
+
+
+## Position
 
 Absolute positioning of Text Box is defined by using the VerticalPosition and HorizontalPosition properties. Measure unit is point. Relative positioning is defined by using the HorizontalAlignment and VerticalAlignment properties.
 
@@ -2128,7 +2136,7 @@ VerticalOrigin property returns a value of type, VerticalOrigin. The following 
 * Paragraph
 * Line
 
- Border Style
+## Border Style
 
 You can specify the style of the border line of the text box by using the LineStyle property. It provides the following options.
 
@@ -2138,7 +2146,7 @@ You can specify the style of the border line of the text box by using the LineS
 * ThinThick
 * Triple 
 
-Class Hierarchy
+### Class Hierarchy
 
  FormatBase
 
@@ -2146,15 +2154,15 @@ Class Hierarchy
 
             WTextBoxFormat
 
-Public Constructor
+### Public Constructor
 
-_Table_ _130__: Public Constructor_
+_Table_ _130_: _Public Constructors_
 
 <table>
 <tr>
-<td>
-Constructor Name</td><td>
-Description</td></tr>
+<th>
+Constructor Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 WTextBoxFormat.WTextBoxFormat (IWordDocument)</td><td>
@@ -2162,15 +2170,15 @@ Initializes a new instance of the WTextBoxFormat class.</td></tr>
 </table>
 
 
-Public Properties
+### Public Properties
 
-_Table_ _131__: Public Properties_
+_Table_ _131_: _Public Properties_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 FillColor</td><td>
@@ -2236,15 +2244,16 @@ Gets or sets  the textbox vertical position (in points).  </td></tr>
 Width</td><td>
 Gets or sets  the textbox width (in points).  </td></tr>
 </table>
-Public Methods
 
-_Table_ _132__: Public Methods_
+### Public Methods
+
+_Table_ _132_: _Public Methods_
 
 <table>
 <tr>
-<td>
-Method </td><td>
-Description</td></tr>
+<th>
+Method </th><th>
+Description</th></tr>
 <tr>
 <td>
 Clone</td><td>
@@ -2254,7 +2263,7 @@ Clones textbox format.</td></tr>
 
 The following code example illustrates how to use the WTextBox and TextBoxFormat classes.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -2378,9 +2387,9 @@ section.HeadersFooters.FirstPageFooter.Paragraphs.Add(paragraph);
 
 doc.Save("TextBoxes.doc");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2506,9 +2515,9 @@ section.HeadersFooters.FirstPageFooter.Paragraphs.Add(paragraph)
 
 doc.Save("TextBoxes.doc")
 
+{% endhighlight %}
 
-
-### Importing and Exporting
+## Importing and Exporting
 
 This section lets you to deal with the conversion process of one file format to another using Essential DocIO. The following are the possible conversions using Essential DocIO.
 
@@ -2518,6 +2527,7 @@ This section lets you to deal with the conversion process of one file format to 
 * Saving a Word document as PDF.
 * Saving a Word document as EPub file.
 * Saving a Word document as Image.
+
 ### Loading and Saving an RTF Document 
 
 
@@ -2525,39 +2535,43 @@ This section shows you how to load and save an RTFdocument using Essential DocIO
 
 The following code example illustrates how to open an RTF file.
 
-<table>
-<tr>
-<td>
-[C#]//Opens the RTF file through WordDocument constructor.WordDocument doc = new WordDocument("Sample.rtf", FormatType.Rtf);</td></tr>
-<tr>
-<td>
-[VB.NET]'Opens the RTF file through WordDocument constructor.Dim doc As New WordDocument("Sample.rtf", FormatType.Rtf)</td></tr>
-</table>
+{% highlight c# %}
+
+//Opens the RTF file through WordDocument constructor.WordDocument doc = new WordDocument("Sample.rtf", FormatType.Rtf);
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+'Opens the RTF file through WordDocument constructor.Dim doc As New WordDocument("Sample.rtf", FormatType.Rtf)
+
+{% endhighlight %}
+
 The following code example lets you to save as RTF.
 
+{% highlight c# %}
+
+doc.Save("samplertf.rtf",FormatType.Rtf );
+{% endhighlight %}
+
+{% highlight vbnet %}
+doc.Save("samplertf.rtf",FormatType.Rtf )</td></tr>
+{% endhighlight %}
+
+
+### Supported and Unsupported Elements
+
+### DocIO Supports the following document elements.
+
+_Table_ _133_: Document Elements_
+
 <table>
 <tr>
-<td>
-[C#]doc.Save("samplertf.rtf",FormatType.Rtf );</td></tr>
-<tr>
-<td>
-[VB.NET]doc.Save("samplertf.rtf",FormatType.Rtf )</td></tr>
-</table>
-
-
-Supported and Unsupported Elements
-
-DocIO Supports the following document elements.
-
-_Table_ _133__: Document Elements_
-
-<table>
-<tr>
-<td>
-Element</td><td>
-Support in RTF Reader</td><td>
-Support in RTF Writer</td><td>
-Known Limitations</td></tr>
+<th>
+Element</th><th>
+Support in RTF Reader</th><th>
+Support in RTF Writer</th><th>
+Known Limitations</th></tr>
 <tr>
 <td>
 Document Properties</td><td>
@@ -2715,7 +2729,7 @@ No</td><td>
 
 This section shows you how to Load and Save a HTML document by using Essential DocIO.
 
-#### Loading a HTML Document
+### Loading a HTML Document
 
 This option enables to insert a whole HTML document with the following limitations:
 
@@ -2734,29 +2748,37 @@ The following references enable to validate the HTML string for XHTML compliance
 
 The following code example illustrates how to load a HTML file.
 
-<table>
-<tr>
-<td>
-[C#]//Opens the HTML file through WordDocument constructor.WordDocument doc = new WordDocument("Sample.html", FormatType.Html);</td></tr>
-<tr>
-<td>
-[VB.NET]'Opens the HTML file through WordDocument constructor.Dim doc As New WordDocument("Sample.html", FormatType.Html)</td></tr>
-</table>
+{% highlight c# %}
+
+//Opens the HTML file through WordDocument constructor.WordDocument doc = new WordDocument("Sample.html", FormatType.Html);
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+'Opens the HTML file through WordDocument constructor.Dim doc As New WordDocument("Sample.html", FormatType.Html)
+
+{% endhighlight %}
+
 You can also use the Open method of WordDocument class to load a XHTML file into WordDocument class.
 
-<table>
-<tr>
-<td>
-[C#]//Opens the HTML file through Open method.doc.Open("Sample.html", FormatType.Html, XHTMLValidationType.Strict);</td></tr>
-<tr>
-<td>
-[VB.NET]'Opens the HTML file through Open method.doc.Open("Sample.html", FormatType.Html, XHTMLValidationType.Strict)</td></tr>
-</table>
+{% highlight c# %}
+
+//Opens the HTML file through Open method.doc.Open("Sample.html", FormatType.Html, XHTMLValidationType.Strict);
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+'Opens the HTML file through Open method.doc.Open("Sample.html", FormatType.Html, XHTMLValidationType.Strict)
+
+{% endhighlight %}
+
 Here the Parameter XHTMLValidationType denotes the validation schema against the input XHTML document. Please refer to the XHTML Validaiton section to know more about the XHTML schema definition.
 
 
 
-Support for Partial Path of an Image
+### Support for Partial Path of an Image
 
 Currently Essential DocIO provides support for the partial path of an image only when directly loading the HTML file into the Word document using document.Open() method.
 
@@ -2769,7 +2791,7 @@ The following are the two overloaded methods:
 
 
 
-Parameter Definition
+## Parameter Definition
 
 * filename: Denotes the resultant file name.
 * formatType: Denotes the file format type of resultant document.
@@ -2780,82 +2802,94 @@ Parameter Definition
 
 The following code example illustrates loading the HTML file containing the partial path of an image. 
 
-<table>
-<tr>
-<td>
-[C#]//Creates a new instance for a Word document.WordDocument document = new WordDocument();//Sets the base folder path.string basePath=@"C:\InputFolder\";//Opens the HTML file along with the base path of the HTML file.document.Open(Path .Combine (basePath ,"Input.html"), Syncfusion.DocIO.FormatType.Automatic, XHTMLValidationType.None, basePath);            </td></tr>
-<tr>
-<td>
-[VB.NET]'Creates a new instance for a Word document.Dim document As New WordDocument()'Sets the base folder path.Dim basePath As String = "C:\InputFolder\"'Opens the HTML file along with the base path of the HTML file.document.Open(Path.Combine(basePath, "Input.html"), Syncfusion.DocIO.FormatType.Automatic, XHTMLValidationType.None, basePath) </td></tr>
-</table>
+{% highlight c# %}
 
+//Creates a new instance for a Word document.WordDocument document = new WordDocument();//Sets the base folder path.string basePath=@"C:\InputFolder\";//Opens the HTML file along with the base path of the HTML file.document.Open(Path .Combine (basePath ,"Input.html"), Syncfusion.DocIO.FormatType.Automatic, XHTMLValidationType.None, basePath);   
 
-#### Inserting a HTML Formatted String
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+'Creates a new instance for a Word document.Dim document As New WordDocument()'Sets the base folder path.Dim basePath As String = "C:\InputFolder\"'Opens the HTML file along with the base path of the HTML file.document.Open(Path.Combine(basePath, "Input.html"), Syncfusion.DocIO.FormatType.Automatic, XHTMLValidationType.None, basePath)
+
+{% endhighlight %}
+
+### Inserting a HTML Formatted String
 
 This section elaborates how to insert a valid HTML string into the body or paragraph of a WordDocument class instance.
 
 The following code illustrates how to insert a HTML string into the body part of a section
 
-<table>
-<tr>
-<td>
-[C#]//Inserts XHTML String.section.Body.InsertXHTML(“&lt;html&gt;&lt;body&gt;<p>Welcome</p>&lt;/body&gt;&lt;/html&gt;”);</td></tr>
-<tr>
-<td>
-[VB.NET]'Inserts XHTML String.section.Body.InsertXHTML(“&lt;html&gt;&lt;body&gt;<p>Welcome</p>&lt;/body&gt;&lt;/html&gt;”)</td></tr>
-</table>
+{% highlight c# %}
+
+//Inserts XHTML String.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”);
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+'Inserts XHTML String.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”)
+
+{% endhighlight %}
+
 You can also insert the HTML string in the particular position of the document by specifying the index of the paragraph in the InsertXHTML overload of the TextBody class.
 
-<table>
-<tr>
-<td>
-[C#]//Inserts XHTML with Paragraph index.section.Body.InsertXHTML(“&lt;html&gt;&lt;body&gt;<p>Welcome</p>&lt;/body&gt;&lt;/html&gt;”,1);</td></tr>
-<tr>
-<td>
-[VB.NET]'Inserts XHTML with Paragraph index.section.Body.InsertXHTML(“&lt;html&gt;&lt;body&gt;<p>Welcome</p>&lt;/body&gt;&lt;/html&gt;”,1)</td></tr>
-</table>
+{% highlight vbnet %}
 
+//Inserts XHTML with Paragraph index.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”,1);
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+'Inserts XHTML with Paragraph index.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”,1)
+
+{% endhighlight %}
 
 You can also insert the HTML string in the particular position of the document by specifying the index of the paragraph and paragraph item in the InsertXHTML overload of the TextBody class.
 
+{% highlight c# %}
 
-<table>
-<tr>
-<td>
-[C#]//Inserts XHTML with Paragraph and Paragraph item index.section.Body.InsertXHTML(“&lt;html&gt;&lt;body&gt;<p>Welcome</p>&lt;/body&gt;&lt;/html&gt;”,1,2);</td></tr>
-<tr>
-<td>
-[VB.NET]'Inserts XHTML with Paragraph and Paragraph item index.section.Body.InsertXHTML(“&lt;html&gt;&lt;body&gt;<p>Welcome</p>&lt;/body&gt;&lt;/html&gt;”,1,2)</td></tr>
-</table>
+//Inserts XHTML with Paragraph and Paragraph item index.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”,1,2);
 
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+'Inserts XHTML with Paragraph and Paragraph item index.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”,1,2)
+
+{% endhighlight %}
 
 It is possible to insert XHTML formatted text inside a Paragraph with the following limitations:
 
-* The content is placed inside a &lt;p&gt; tag, to validate against the XHTML schemas as explained before.
-* This HTML example cannot contain any block elements like div, and so on, and results in an exception being thrown otherwise. The only exception to this case is a single &lt;p&gt; tag.
+* The content is placed inside a <p> tag, to validate against the XHTML schemas as explained before.
+* This HTML example cannot contain any block elements like div, and so on, and results in an exception being thrown otherwise. The only exception to this case is a single <p> tag.
 * Among the supported XHTML tags, only the inline tags are used for formatting text.
 
 
 
 The following code example illustrates, appending a HTML formatted string into a paragraph.
 
-<table>
-<tr>
-<td>
-[C#]//Adds a new paragraph to the section.IWParagraph paragraph = section.AddParagraph();//Appends XHTML in the Paragraph.paragraph.AppendXHTML(htmlstring);</td></tr>
-<tr>
-<td>
-[VB.NET]'Adds a new paragraph to the section.Dim paragraph As IWParagraph = section.AddParagraph()'Appends XHTML in the Paragraph.paragraph.AppendXHTML(htmlstring)</td></tr>
-</table>
+{% highlight vbnet %}
+
+//Adds a new paragraph to the section.IWParagraph paragraph = section.AddParagraph();//Appends XHTML in the Paragraph.paragraph.AppendXHTML(htmlstring);
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Adds a new paragraph to the section.Dim paragraph As IWParagraph = section.AddParagraph()'Appends XHTML in the Paragraph.paragraph.AppendXHTML(htmlstring)
+
+{% endhighlight %}
 
 
-{ ![](Styles-and-Formatting_images/Styles-and-Formatting_img8.jpeg) | markdownify }
-{:.image }
-_Notes: Currently inserting XHTML formatted string in the Word document is not supported in Silverlight and Windows Phone 8 applications._
+![](Styles-and-Formatting_images/Styles-and-Formatting_img8.jpeg)
+
+> Note: Currently inserting XHTML formatted string in the Word document is not supported in Silverlight and Windows Phone 8 applications.
 
 
 
-XHTML Validation
+## XHTML Validation
 
 You can validate the given XHTML string by invoking the IsValidXHTML method of TextBody class. It returns true when the given XHTML string should meet any one of the following validation types.
 
@@ -2873,17 +2907,18 @@ The None type provides the feature to manipulate the XHTML without using Strict 
 
 The following table illustrates the basic comparison between the Transitional and Strict validation types.
 
-_Table_ _134__: Validation Types_
+_Table_ _134_: Validation Types_
 
 <table>
 <tr>
-<td>
-XHTML Type</td><td>
-Description</td></tr>
+<th>
+XHTML Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 Strict</td><td>
-The strict type validation does not support any HTML presentation elements (such as &lt;p&gt;, &lt;a&gt;, &lt;b&gt;, etc.). This is the low-featured XHTML validation type.</td></tr>
+The strict type validation does not support any HTML presentation elements (such as &lt;p&gt;, &lt;a&gt;, &lt;b&gt;, etc.).
+This is the low-featured XHTML validation type.</td></tr>
 <tr>
 <td>
 Transitional</td><td>
@@ -2891,120 +2926,161 @@ The Transitional type DTD adds support for HTML presentation elements. That me
 </table>
 The following code illustrates how to validate a HTML string.
 
-<table>
-<tr>
-<td>
-[C#]//Checks the valid XHTML.section.Body.IsValidXHTML(htmlString, XHTMLValidationType.Strict);</td></tr>
-<tr>
-<td>
-[VB.NET]'Checks the valid XHTML.section.Body.IsValidXHTML(htmlString, XHTMLValidationType.Strict)</td></tr>
-</table>
+{% highlight c# %}
+
+//Checks the valid XHTML.section.Body.IsValidXHTML(htmlString, XHTMLValidationType.Strict);
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+'Checks the valid XHTML.section.Body.IsValidXHTML(htmlString, XHTMLValidationType.Strict)
+
+{% endhighlight %}
 
 
-Parameter Description
+### Parameter Description
 
 1. htmlString: The desired HTML string to be validated.
 2. XHTMLValidationType: It defines the validation type. It could be Strict, Transitional, or None.
-> 
-{ ![](Styles-and-Formatting_images/Styles-and-Formatting_img9.jpeg) | markdownify }
-{:.image }
-_Notes: Currently XHTML Validation is not supported in Windows Store applications._
+   ![](Styles-and-Formatting_images/Styles-and-Formatting_img9.jpeg)
+
+Notes: Currently XHTML Validation is not supported in Windows Store applications.
 
 
 
-#### Saving a HTML Document
+## Saving a HTML Document
 
 The following code example shows how to save a HTML document.
 
-<table>
-<tr>
-<td>
-[C#]HTMLExport htmlExport = new HTMLExport();//Saves the document as HTML file in local storage.htmlExport.SaveAsXhtml(doc,  "doctohtml_res.html");</td></tr>
-<tr>
-<td>
-[VB.NET]Dim htmlExport As New HTMLExport()'Saves the document as HTML file in local storage.htmlExport.SaveAsXhtml(doc, "doctohtml_res.html")</td></tr>
-</table>
+{% highlight html %}
+
+HTMLExport htmlExport = new HTMLExport();
+//Saves the document as HTML file in local storage.htmlExport.SaveAsXhtml(doc,  "doctohtml_res.html");
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Dim htmlExport As New HTMLExport()
+'Saves the document as HTML file in local storage.htmlExport.SaveAsXhtml(doc, "doctohtml_res.html")
+
+{% endhighlight %}
+
 The following code shows how to save a HTML document in a stream.
 
-<table>
-<tr>
-<td>
-[C#]MemoryStream stream = new MemoryStream();HTMLExport htmlExport = new HTMLExport();//Saves the document as HTML file in a stream.htmlExport.SaveAsXhtml(doc,stream);</td></tr>
-<tr>
-<td>
-[VB.NET]Dim stream As New MemoryStream()Dim htmlExport As New HTMLExport()'Saves the document as HTML file in a stream.htmlExport.SaveAsXhtml(doc,stream)</td></tr>
-</table>
+{% highlight c# %}
+
+MemoryStream stream = new MemoryStream();
+HTMLExport htmlExport = new HTMLExport();
+//Saves the document as HTML file in a stream.htmlExport.SaveAsXhtml(doc,stream);
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Dim stream As New MemoryStream()
+Dim htmlExport As New HTMLExport()
+'Saves the document as HTML file in a stream.htmlExport.SaveAsXhtml(doc,stream)
+
+{% endhighlight %}
+
 You can also use the overload of Save method in WordDocument class to export the HTML document.
 
-<table>
-<tr>
-<td>
-[C#]document.Save(fileName,FormatType.Html);</td></tr>
-<tr>
-<td>
-[VB.NET]document.Save(fileName,FormatType.Html)</td></tr>
-</table>
+{% highlight c# %}
+
+document.Save(fileName,FormatType.Html);
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+document.Save(fileName,FormatType.Html)
+
+{% endhighlight %}
+
 The following code example saves the exported XHTML file into a stream.
 
-<table>
-<tr>
-<td>
-[C#]document.Save(stream,FormatType.Html);</td></tr>
-<tr>
-<td>
-[VB.NET]document.Save(stream,FormatType.Html)</td></tr>
-</table>
 
+{% highlight c# %}
 
-SaveOptions Class
+document.Save(stream,FormatType.Html);</td></tr>
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+document.Save(stream,FormatType.Html)</td></tr>
+
+{% endhighlight %}
+
+### SaveOptions Class
 
 It provides some more flexibility and some extra features when exporting the HTML documents. 
 
 The following code example shows how to save the style sheet as internal style sheet and save the images as base 64 string using SaveOptions class. While using this there is no separate folder created to save images and all the contents are stored within the HTML file itself.
 
-<table>
-<tr>
-<td>
-[C#]WordDocument doc = new WordDocument(@"..\..\DocToHTML.doc");HTMLExport htmlExport = new HTMLExport();//Sets style sheet type as internal.doc.SaveOptions.HtmlExportCssStyleSheetType = CssStyleSheetType.Internal;//Specifies image folder. This will store the image as base 64 string.doc.SaveOptions.HtmlExportImagesFolder = "\\";     htmlExport.SaveAsXhtml(doc,  "doctohtml_res.html");</td></tr>
-<tr>
-<td>
-[VB.NET]Dim doc As New WordDocument("..\..\DocToHTML.doc")Dim htmlExport As New HTMLExport()'Sets style sheet type as internal.doc.SaveOptions.HtmlExportCssStyleSheetType = CssStyleSheetType.Internal'Specifies image folder. This will store image as base 64 string.doc.SaveOptions.HtmlExportImagesFolder = "\"htmlExport.SaveAsXhtml(doc, "doctohtml_res.html")</td></tr>
-</table>
+{% highlight c# %}
+
+WordDocument doc = new WordDocument(@"..\..\DocToHTML.doc");
+HTMLExport htmlExport = new HTMLExport();
+//Sets style sheet type as internal.doc.SaveOptions.HtmlExportCssStyleSheetType = CssStyleSheetType.Internal;
+//Specifies image folder. This will store the image as base 64 string.doc.SaveOptions.HtmlExportImagesFolder = "\\"; 
+htmlExport.SaveAsXhtml(doc,  "doctohtml_res.html");
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Dim doc As New WordDocument("..\..\DocToHTML.doc")
+Dim htmlExport As New HTMLExport()
+'Sets style sheet type as internal.doc.SaveOptions.HtmlExportCssStyleSheetType = CssStyleSheetType.Internal
+'Specifies image folder. This will store image as base 64 string.doc.SaveOptions.HtmlExportImagesFolder = "\"htmlExport.SaveAsXhtml(doc, "doctohtml_res.html")
+
+{% endhighlight %}
+
+
 The following code example shows how to preserve the TextFormField’s text as normal text while exporting to HTML document. When you set the property HtmlExportTextInputFormFieldAsText to true then the content of the TextFormField is preserved as normal text. Otherwise it is preserved as editable TextFormField.
 
-<table>
-<tr>
-<td>
-[C#]document.SaveOptions.HtmlExportTextInputFormFieldAsText = true;</td></tr>
-<tr>
-<td>
-[VB.NET]document.SaveOptions.HtmlExportTextInputFormFieldAsText = True</td></tr>
-</table>
+{% highlight c# %}
+
+document.SaveOptions.HtmlExportTextInputFormFieldAsText = true;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+document.SaveOptions.HtmlExportTextInputFormFieldAsText = True
+
+{% endhighlight %}
+
 You can turn off the Header and Footer contents in the exported HTML document by using the HtmlExportHeadersFooters property of SaveOptions class. The following code illustrates the same.
 
-<table>
-<tr>
-<td>
-[C#]document.SaveOptions.HtmlExportHeadersFooters = false;</td></tr>
-<tr>
-<td>
-[VB.NET]document.SaveOptions.HtmlExportHeadersFooters = False</td></tr>
-</table>
+{% highlight c# %}
 
+document.SaveOptions.HtmlExportHeadersFooters = false;
 
-Supported Document Elements
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+document.SaveOptions.HtmlExportHeadersFooters = False
+
+{% endhighlight %}
+
+### Supported Document Elements
 
 DocIO supports the following document elements.
 
-_Table_ _135__: Document Elements_
+_Table_ _135_: _Document Elements_
 
 <table>
 <tr>
-<td>
-Document Element</td><td>
-Attribute</td><td>
-Support Status</td><td>
-Notes</td></tr>
+<th>
+Document Element</th><th>
+Attribute</th><th>
+Support Status</th><th>
+Notes</th></tr>
 <tr>
 <td>
 Bookmark</td><td>
@@ -3363,50 +3439,56 @@ Underline</td><td>
 Partial</td><td>
 Underline types and colors are ignored.</td></tr>
 </table>
-> { ![](Styles-and-Formatting_images/Styles-and-Formatting_img10.jpeg) | markdownify }
-{:.image }
-_Notes: Currently Doc to Html conversion and vice-versa is not supported in Silverlight and Windows Phone 8 applications._
 
 
+Notes: Currently Doc to Html conversion and vice-versa is not supported in Silverlight and Windows Phone 8 applications.
 
-### Loading and Saving a Text Document 
+
+## Loading and Saving a Text Document 
 
 This section shows you how to Load and Save a Text document using Essential DocIO. You can create new Word document or open Word document and save to Text format. 
 
 The following code example lets you to load a Text document.
 
-<table>
-<tr>
-<td>
-[C#]WordDocument doc = new WordDocument(@"..\..\Document.txt");</td></tr>
-<tr>
-<td>
-[VB.NET]Dim doc As New WordDocument("..\..\Document.txt")</td></tr>
-</table>
+{% highlight c# %}
+
+WordDocument doc = new WordDocument(@"..\..\Document.txt");
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+doc.Save( "sample.txt", FormatType.Txt )
+
+{% endhighlight %}
+
 The following code example lets you to save as Text file.
 
-<table>
-<tr>
-<td>
-[C#]doc.Save( "sample.txt", FormatType.Txt );</td></tr>
-<tr>
-<td>
-[VB.NET]doc.Save( "sample.txt", FormatType.Txt )</td></tr>
-</table>
+{% highlight c# %}
+
+doc.Save( "sample.txt", FormatType.Txt );
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+doc.Save( "sample.txt", FormatType.Txt )
+
+{% endhighlight %}
 
 
-Supported Document Elements
+### Supported Document Elements
 
 DocIO supports the following document elements.
 
-_Table_ _136__: Document Elements_
+_Table_ _136_: _Document Elements_
 
 <table>
 <tr>
-<td>
-Element</td><td>
-Support Status</td><td>
-Note</td></tr>
+<th>
+Element</th><th>
+Support Status</th><th>
+Note</th></tr>
 <tr>
 <td>
 Paragraph</td><td>
@@ -3433,6 +3515,7 @@ Symbols</td><td>
 Yes</td><td>
 Limited support</td></tr>
 </table>
+
 ### Saving a Word Document as PDF
 
 Essential DocIO allows you to export the word document as PDF document. You can create a word document from scratch or load a template Word document then export the document to PDF using DocIO. 
@@ -3452,40 +3535,46 @@ Assembly Dependencies for this Conversion
 * Syncfusion.DocIO.Base.dll
 * Syncfusion.Pdf.Base.dll
 * Syncfusion.Core.dll
-* Syncfusion.Compression.Base.dll
-> 
-{ ![](Styles-and-Formatting_images/Styles-and-Formatting_img11.jpeg) | markdownify }
-{:.image }
-_Note:_ 
+* Syncfusion.Compression.Base.dll 
 
-> * _You need to have Essential PDF and Essential DocIO installed in your system. Since "Syncfusion.DocToPDFConverter.Base.dll" is conditionally shipped when both DocIO.Base and Pdf.Base is installed._
-> * _Layouting the contents of a Word document as pages in Essential DocIO is not exactly the same as layouting of Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word._
-> * _Currently,_ [Word to PDF](http://help.syncfusion.com/ug/windows%20forms/default.htm) _conversion is not supported in Silverlight, WinRT and Windows Phone applications._
+> Note:
+
+> * You need to have Essential PDF and Essential DocIO installed in your system. Since "Syncfusion.DocToPDFConverter.Base.dll" is conditionally shipped when both DocIO.Base and Pdf.Base is installed.
+> * Layouting the contents of a Word document as pages in Essential DocIO is not exactly the same as layouting of Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word.
+> * Currently,_ [Word to PDF](http://help.syncfusion.com/ug/windows%20forms/default.htm) _conversion is not supported in Silverlight, WinRT and Windows Phone applications.
 
 The following code example lets you to convert a Word document to PDF.
 
-<table>
-<tr>
-<td>
-[C#]WordDocument wordDoc = new WordDocument("sample.doc");DocToPDFConverter converter = new DocToPDFConverter();//Converts a Word document into a PDF document.PdfDocument pdfDoc = converter.ConvertToPDF(wordDoc);//Saves the PDF file.pdfDoc.Save("DoctoPDF.pdf");</td></tr>
-<tr>
-<td>
-[VB.NET]Dim wordDoc As New WordDocument("sample.doc")Dim converter As New DocToPDFConverter()'Converts a Word document into a PDF document.Dim pdfDoc As PdfDocument = converter.ConvertToPDF(wordDoc)'Saves the PDF file.pdfDoc.Save("DoctoPDF.pdf")</td></tr>
-</table>
+{% highlight c# %}
 
+WordDocument wordDoc = new WordDocument("sample.doc");
+DocToPDFConverter converter = new DocToPDFConverter();
+//Converts a Word document into a PDF document.PdfDocument pdfDoc = converter.ConvertToPDF(wordDoc);
+//Saves the PDF file.pdfDoc.Save("DoctoPDF.pdf");
 
-Supported and Unsupported Elements 
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Dim wordDoc As New WordDocument("sample.doc")
+Dim converter As New DocToPDFConverter()
+'Converts a Word document into a PDF document.Dim pdfDoc As PdfDocument = converter.ConvertToPDF(wordDoc)
+'Saves the PDF file.pdfDoc.Save("DoctoPDF.pdf")
+
+{% endhighlight %}
+
+### Supported and Unsupported Elements 
 
 Word to PDF conversion feature provides support for the following elements.
 
-_Table_ _137__: Supported and Unsupported Elements_
+_Table_ _137_: _Supported and Unsupported Elements_
 
 <table>
 <tr>
-<td>
-Element</td><td>
-Support Description</td><td>
-Known limitations</td></tr>
+<th>
+Element</th><th>
+Support Description</th><th>
+Known limitations</th></tr>
 <tr>
 <td>
 Paragraph and Character formatting</td><td>
@@ -3603,9 +3692,8 @@ Essential DocIO supports conversion of Microsoft Word documents to EPub v2.0.1. 
 
 By default, Table of Contents (TOC) is enabled in the EPub document. It is generated based on the built-in heading styles or custom styles mentioned in the TOC field. 
 
-> { ![](Styles-and-Formatting_images/Styles-and-Formatting_img12.jpeg) | markdownify }
-{:.image }
-_Note: You need to have an EPub reader installed in the machine to view the resultant EPub document._
+
+> Note: You need to have an EPub reader installed in the machine to view the resultant EPub document.
 
 
 
@@ -3620,53 +3708,65 @@ The following platforms support the EPub conversion process:
 
 The following code example illustrates how to convert a Word document to EPub file format.
 
-<table>
-<tr>
-<td>
-[C#]//Loads any .doc or .docx file.WordDocument document = new WordDocument(filename);         //Saves the EPub file.document.Save("Sample.epub", FormatType.EPub);</td></tr>
-<tr>
-<td>
-[VB.NET]'Loads any .doc or .docx file.Dim document As WordDocument = New WordDocument(filename)'Saves the EPub file.document.Save("Sample.epub", FormatType.EPub)</td></tr>
-</table>
+{% highlight c# %}
 
+//Loads any .doc or .docx file.WordDocument document = new WordDocument(filename); 
+//Saves the EPub file.document.Save("Sample.epub", FormatType.EPub);
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+'Loads any .doc or .docx file.
+Dim document As WordDocument = New WordDocument(filename)
+'Saves the EPub file.document.Save("Sample.epub", FormatType.EPub)
+
+{% endhighlight %}
 
 The following screenshot illustrates the resultant EPub document.
 
-{ ![](Styles-and-Formatting_images/Styles-and-Formatting_img13.png) | markdownify }
-{:.image }
-
-
-_Figure_ _54__: Word document converted to EPub File Format_
+![](Styles-and-Formatting_images/Styles-and-Formatting_img13.png) 
 
 
 
-EmbeddingFont
+_Figure_ _54_: Word document converted to EPub File Format_
+
+
+
+## EmbeddingFont
 
 Conversion of EPub by using default options does not embed font files. Hence, the targeted device uses its own default font for the texts in the document that may vary depending on the reader being used. To read the texts in the same font as used in the input word document, you should embed the font files into the generated EPub. This is achieved by turning on EPubExportFont property. By default, this property is set to false_,_ since this actually embeds the exact font file from the machine that may increase the size of the EPub document.
 
 The following code example illustrates how to embed font file.
 
-<table>
-<tr>
-<td>
-[C#]//Loads any .doc or .docx file.WordDocument document = new WordDocument(filename);          //Turns on embedding font files.document.SaveOptions.EPubExportFont = true;//Saves the EPub file.document.Save("Sample.epub", FormatType.EPub);</td></tr>
-<tr>
-<td>
-[VB.NET]'Loads any .doc or .docx file.Dim document As WordDocument = New WordDocument(filename)'Turns on embedding font files.document.SaveOptions.EPubExportFont = True'Saves the EPub file.document.Save("Sample.epub", FormatType.EPub)</td></tr>
-</table>
+{% highlight c# %}
 
+//Loads any .doc or .docx file.WordDocument document = new WordDocument(filename);
+//Turns on embedding font files.document.SaveOptions.EPubExportFont = true;
+//Saves the EPub file.document.Save("Sample.epub", FormatType.EPub);
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+'Loads any .doc or .docx file.
+Dim document As WordDocument = New WordDocument(filename)
+'Turns on embedding font files.document.SaveOptions.EPubExportFont = True
+'Saves the EPub file.document.Save("Sample.epub", FormatType.EPub)
+
+{% endhighlight %}
 
 The following screenshot illustrates the resultant EPub document.
 
-{ ![](Styles-and-Formatting_images/Styles-and-Formatting_img14.png) | markdownify }
-{:.image }
-
-
-_Figure_ _55__: Embedding fonts in an EPub File_
+![](Styles-and-Formatting_images/Styles-and-Formatting_img14.png)
 
 
 
-Exporting Header and Footer
+_Figure_ _55_: Embedding fonts in an EPub File_
+
+
+
+## Exporting Header and Footer
 
 
 
@@ -3674,27 +3774,33 @@ Header and Footer in the Word document are helpful in placing specific informati
 
 The following code example illustrates how to export header and footer.
 
-<table>
-<tr>
-<td>
-[C#]//Loads any .doc or .docx file.WordDocument document = new WordDocument(filename);//Turns on exporting headers and footers.document.SaveOptions.HtmlExportHeadersFooters = true;//Saves the EPub file.document.Save("Sample.epub", FormatType.EPub);</td></tr>
-<tr>
-<td>
-[VB.NET]'Loads any .doc or .docx file.Dim document As WordDocument = New WordDocument(filename)'Turns on exporting headers and footers.document.SaveOptions.HtmlExportHeadersFooters = True'Saves the EPub file.   document.Save("Sample.epub", FormatType.EPub)</td></tr>
-</table>
+{% highlight c# %}
 
+//Loads any .doc or .docx file.
+WordDocument document = new WordDocument(filename);
+//Turns on exporting headers and footers.document.SaveOptions.HtmlExportHeadersFooters = true;
+//Saves the EPub file.document.Save("Sample.epub", FormatType.EPub);
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+'Loads any .doc or .docx file.
+Dim document As WordDocument = New WordDocument(filename)
+'Turns on exporting headers and footers.document.SaveOptions.HtmlExportHeadersFooters = True
+'Saves the EPub file.   document.Save("Sample.epub", FormatType.EPub)
+
+{% endhighlight %}
 
 The following is the screenshot of the resultant EPub document with the disabled header and footer contents.
 
-{ ![](Styles-and-Formatting_images/Styles-and-Formatting_img15.png) | markdownify }
-{:.image }
+![](Styles-and-Formatting_images/Styles-and-Formatting_img15.png) 
 
-
-_Figure_ _56__: Exporting Header and Footer_
+_Figure_ _56_: _Exporting Header and Footer_
 
 
 
-Supported Elements
+### Supported Elements
 
 The following are the Supported Elements:
 
@@ -3710,16 +3816,14 @@ The following are the Supported Elements:
 
 
 
-Known Limitations
+### Known Limitations
 
 The following are the known limitations:
 
 * Embedding font files can increase the size of the EPub document
 * Embedding font files is not supported in medium trust
-> 
-{ ![](Styles-and-Formatting_images/Styles-and-Formatting_img16.jpeg) | markdownify }
-{:.image }
-_Note: Currently Doc to EPub conversion is not supported in Silverlight application._
+
+> Note: Currently Doc to EPub conversion is not supported in Silverlight application.
 
 ### Saving a Word Document as an Image
 
@@ -3732,24 +3836,29 @@ The following overloads of the RenderAsImages method can be used to convert a Wo
 * WordDocument.RenderAsImages(pageIndex, imageType): This is used to render/convert a particular page of the document into an image; it returns the resultant image of type Image.
 * WordDocument.RenderAsImages(pageIndex, noOfPages, imageType): This is used to render/convert multiple number of pages in the document, starting from the specified page index. It returns the resultant image of type Image[] array.
 
-{ ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image21_0.jpg](Styles-and-Formatting_images/Styles-and-Formatting_img17.jpeg) | markdownify }
-{:.image }
-_Note:_
+> Note:
 
-> * _Parameter "pageIndex" is a zero based index._
-> * _Layouting the contents of a Word document as pages in the Essential DocIO is not exactly the same as the layouting in Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word._
-> * _Currently, Word to Image conversion is not supported in Silverlight, WinRT and Windows Phone applications._
-> * _You can refer to the_ [Word to PDF](http://help.syncfusion.com/ug/windows%20forms/default.htm) _Conversion for supported and unsupported elements in Word to Image conversion._
+> * Parameter "pageIndex" is a zero based index.
+> * Layouting the contents of a Word document as pages in the Essential DocIO is not exactly the same as the layouting in Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word.
+> * Currently, Word to Image conversion is not supported in Silverlight, WinRT and Windows Phone applications.
+> * You can refer to the_ [Word to PDF](http://help.syncfusion.com/ug/windows%20forms/default.htm) _Conversion for supported and unsupported elements in Word to Image conversion.
 
 The following code example lets you to render a Word document as image.
 
-<table>
-<tr>
-<td>
-[C#]Image[] images = document.RenderAsImages(ImageType.Metafile);Stream stream = document.RenderAsImages(0, ImageFormat.Emf);Image image = document.RenderAsImages(5, ImageType.Metafile);//This converts pages 2, 3, 4 in the document into images.Image[] images = document.RenderAsImages(1, 3, ImageType.Metafile);</td></tr>
-<tr>
-<td>
-[VB.NET]Dim images() As Image = document.RenderAsImages(ImageType.Metafile)Dim stream As Stream = document.RenderAsImages(0, ImageFormat.Emf)Dim image As Image = document.RenderAsImages(5, ImageType.Metafile)'This converts pages 2, 3, 4 in the document into images.Dim images() As Image = document.RenderAsImages(1, 3, ImageType.Metafile)</td></tr>
-</table>
+{% highlight c# %}
 
+Image[] images = document.RenderAsImages(ImageType.Metafile);
+Stream stream = document.RenderAsImages(0, ImageFormat.Emf);
+Image image = document.RenderAsImages(5, ImageType.Metafile);
+//This converts pages 2, 3, 4 in the document into images.Image[] images = document.RenderAsImages(1, 3, ImageType.Metafile);
 
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Dim images() As Image = document.RenderAsImages(ImageType.Metafile)
+Dim stream As Stream = document.RenderAsImages(0, ImageFormat.Emf)
+Dim image As Image = document.RenderAsImages(5, ImageType.Metafile)
+'This converts pages 2, 3, 4 in the document into images.Dim images() As Image = document.RenderAsImages(1, 3, ImageType.Metafile)
+
+{% endhighlight %}

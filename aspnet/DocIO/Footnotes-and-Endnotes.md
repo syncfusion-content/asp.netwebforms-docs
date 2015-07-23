@@ -7,13 +7,13 @@ control: DocIO
 documentation: ug
 ---
 
-## Footnotes and Endnotes
+# Footnotes and Endnotes
 
-Footnote
+## Footnote
 
 A Footnote is a note of text placed at the bottom of a page in a book or document. It is normally flagged by a superscript number followed by the text where it is referenced to the document content.
 
-Endnote
+## Endnote
 
 An Endnote is a note or reference given at the end of a text or a major text section. Endnotes are similar to footnotes, but the only difference is that they are listed together at the end of a chapter or at the end of work.
 
@@ -25,11 +25,11 @@ Following are the steps to add a footnote or endnote to a Word document in Micro
 
 3.   Point to Footnotes and then click Footnotes in the Microsoft Word menu.
 
-{ ![](Footnotes-and-Endnotes_images/Footnotes-and-Endnotes_img1.png) | markdownify }
-{:.image }
+![](Footnotes-and-Endnotes_images/Footnotes-and-Endnotes_img1.png)
 
 
-_Figure_ _49__: Footnote and Endnote dialog box_
+
+_Figure_ _49_: _Footnote and Endnote dialog box_
 
 
 
@@ -52,15 +52,15 @@ Class Hierarchy
 
 
 
-Public Constructors
+### Public Constructors
 
-_Table_ _105__: Public Constructors_
+_Table_ _105_: _Public Constructors_
 
 <table>
 <tr>
-<td>
-Constructor </td><td>
-Description</td></tr>
+<th>
+Constructor </th><th>
+Description</th></tr>
 <tr>
 <td>
 WFootnote.WFootnote (IWordDocument)</td><td>
@@ -68,15 +68,15 @@ Initializes a new instance of the WFootnote class  </td></tr>
 </table>
 
 
-Public Properties
+### Public Properties
 
-_Table_ _106__: Public Properties_
+_Table_ _106_: _Public Properties_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 EntityType</td><td>
@@ -110,7 +110,7 @@ Specifies custom (string) marker for footnote. If footnote is autonumbered, this
 
 The following code example illustrates how to create a Footnote and an Endnote by using Essential DocIO.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -170,9 +170,9 @@ paragraph.AppendText("Essential DocIO is a .NET library that has a simple yet an
 
 document.Save("Sample.doc", Syncfusion.DocIO.FormatType.Doc);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -230,21 +230,21 @@ paragraph.AppendText("Essential DocIO is a .NET library that has a simple yet an
 
 document.Save("Sample.doc", Syncfusion.DocIO.FormatType.Doc)
 
+{% endhighlight %}
 
-
-Footnote and Endnote Separators
+## Footnote and Endnote Separators
 
 A Footnote or Endnote separator is a line preserved between the body and the endnotes or footnotes in a Microsoft Word document. A footnote or endnote continuation separator is a line running across the top section indicating that the footnotes or endnotes are carried over from the preceding page if they run over to the second page. A footnote or endnote continuation notice is a special character or word preserved at the bottom of the footer area to indicate that the footnotes or endnotes continue to the next page.
 
-Public Constructors
+### Public Constructors
 
-_Table_ _107__: Public Constructors_
+_Table_ _107_: _Public Constructors_
 
 <table>
 <tr>
-<td>
-Constructors</td><td>
-Description</td></tr>
+<th>
+Constructors</th><th>
+Description</th></tr>
 <tr>
 <td>
 Footnote.Footnote(WordDocument)</td><td>
@@ -256,15 +256,15 @@ Initializes a new instance of the Endnote class.</td></tr>
 </table>
 
 
-Public Properties 
+### Public Properties 
 
-_Table_ _108__: Public Properties_
+_Table_ _108_: _Public Properties_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 Separator</td><td>

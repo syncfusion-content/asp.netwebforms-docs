@@ -7,7 +7,7 @@ control: DocIO
 documentation: ug
 ---
 
-## Mail Merge
+# Mail Merge
 
 The ExecuteMailMerge method allows you to fill a template document with data from the data source. It is represented by the MailMerge class. The various types of data sources are used in Mail Merge such as String Arrays, DataTable, DataReader, or DataView class objects. You can create the template of a document by using the MergeFields of Microsoft Word.
 
@@ -15,23 +15,23 @@ The following steps illustrate how to perform Mail Merge:
 
 1. On the Insert menu, point to the Fields, and then click MergeField.
 
-{ ![](Mail-Merge_images/Mail-Merge_img1.png) | markdownify }
-{:.image }
+![](Mail-Merge_images/Mail-Merge_img1.png)
+
 
 
 
 
 2. Enter the merge field name, and the text to be inserted before and after the field. Note that the merge field name should match the field name of the data source.
 
-{ ![](Mail-Merge_images/Mail-Merge_img2.png) | markdownify }
-{:.image }
+![](Mail-Merge_images/Mail-Merge_img2.png)
+
 
 
 
 
 Mail Merge operations are performed by the Execute or ExecuteGroup method. There are several overloads of these methods for different data sources.
 
-Execute
+### Execute
 
 * void Execute(string[ ] fieldNames, string[ ] fieldValues): Performs replacements of every merge field in the document in which field name matches one of the values from fieldNames string array with the corresponding value from fieldValues string array.
 * void Execute (DataTable table): Performs replacements of merge fields in which field names match the table column names with the corresponding values of table cell. These replacements are performed for every row contained in the table.
@@ -41,15 +41,15 @@ Execute
 * void Execute(OleDbDataReader dataReader): Works similarly with IDataRader parameter.
 * void Execute(IEnumerable dataSource): Performs replacement of merge fields, in which field names match the enumerable instance names in DataSource.
 
-Public Methods
+### Public Methods
 
-_Table_ _92__: Public Methods_
+_Table_ _92_: _Public Methods_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Description</td></tr>
+<th>
+Method Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Execute</td><td>
@@ -67,11 +67,12 @@ Gets a collection of mergefield names found in the document. </td></tr>
 ExecuteNestedGroup</td><td>
 Executes nested mail merge for a group(Region or tables).</td></tr>
 </table>
-### Mail Merge
+
+## Mail Merge
 
 The following code example illustrates how to create a new Word document to perform a simple mail merge.
 
-[C#]
+{% highlight C# %}
 
 //Opens a Word document.
 
@@ -113,9 +114,9 @@ wordDoc.MailMerge.Execute(fieldNames,fieldValues);
 
 wordDoc.Save(“Sample.docx”);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 'Opens a Word document.
 
@@ -157,7 +158,9 @@ wordDoc.MailMerge.Execute(fieldNames, fieldValues)
 
 wordDoc.Save("Sample.docx")
 
-### Mail Merge for a Group
+{% endhighlight %}
+
+## Mail Merge for a Group
 
 Mail Merge operations have been performed between regions by invoking the ExecuteGroup method.
 
@@ -178,7 +181,7 @@ You have to insert three MergeFields in the document with the following field na
 
 The following code example illustrates how to perform mail merge for a group.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -220,9 +223,9 @@ document.MailMerge.ExecuteGroup(table);
 
 document.Save("Sample.doc", FormatType.Doc);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -264,13 +267,16 @@ document.MailMerge.ExecuteGroup(table)
 
 document.Save("Sample.doc", FormatType.Doc)
 
+{% endhighlight %}
+
+
 ### Nested Mail Merge 
 
 By using the WordDocument.MailMerge.ExecuteNestedGroup method, you can perform nested mail merge. Each item of "command" Arraylist must contain one or more DictionaryEntry objects. Each DictionaryEntry instance must contain the Table Name (DataTable name) and String Command with command, which must be applied to the table. You can use the following expression for getting the current value of specified column in a table: %TableName.ColumnName%.
 
 The following code example illustrates how a nested mail merge for a region or table is implemented by using DocIO. 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -308,9 +314,9 @@ commands.Add(entry);
 
 doc.MailMerge.ExecuteNestedGroup(conn, commands);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -346,31 +352,31 @@ commands.Add(entry)
 
 doc.MailMerge.ExecuteNestedGroup(conn, commands)
 
+{% endhighlight %}
 
-
-Merge outer group fields placed within inner nested group
+## Merge outer group fields placed within inner nested group
 
 You can merge outer group fields placed within inner nested group using Nested Mail Merge functionality of Essential DocIO. Also it is possible to merge data from outer group implicitly based on nested hierarchy or explicitly from a specified outer group. The mail merge fields in the Word document template should be in the following format:
 
 1. Implicit group:
 
-&lt;&lt;FieldName&gt;>
+	<<FieldName>>
 
-&lt;&lt;Image:FieldName &gt;>
+	<<Image:FieldName >>
 
 2. Explicit group:
 
-&lt;&lt;TableName:FieldName&gt;>
+	<<TableName:FieldName>>
 
-&lt;&lt; Image:TableName:FieldName &gt;>
+	<< Image:TableName:FieldName >>
 
 
 
-Nested Mail Merge with relational Objects
+## Nested Mail Merge with relational Objects
 
 By using the overload WordDocument.MailMerge.ExecuteNestedGroup (MailMergeDataTable dataTable) method, you can perform nested mail merge with implicit relational data objects without any explicit relational commands. Please refer to the following example for relational business objects.
 
-
+{% highlight C# %}
 
 1. class EmployeeDetails
 
@@ -416,53 +422,51 @@ string customerID;
 
 }
 
-
+{% endhighlight %}
 
 In the above example, the customers property in EmployeeDetails has customers related to the particular employee. It does not require any common property employeeID in EmployeeDetails and CustomerDetails. Also it does not require relational commands to relate the EmployeeDetails and CustomerDetails.
 
 
 
-{ ![](Mail-Merge_images/Mail-Merge_img3.jpeg) | markdownify }
-{:.image }
-_Note:_
 
-* _Nested mail merge for a region works when the group start and end is BeginGroup and EndGroup respectively._
-* _Nested mail merge for a table works when the group start and end is TableStart and TableEnd respectively._
-* _The commands list to retrieve the DataTable from the data source must be in the same order of Group which is preserved in the input WordDocument._
 
-Public Methods
+> Note:
 
-_Table_ _93__: Public Methods_
+> * Nested mail merge for a region works when the group start and end is BeginGroup and EndGroup respectively.
+> * Nested mail merge for a table works when the group start and end is TableStart and TableEnd respectively.
+> * The commands list to retrieve the DataTable from the data source must be in the same order of Group which is preserved in the input WordDocument.
+
+### Public Methods
+
+_Table_ _93_: _Public Methods_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Description</td></tr>
+<th>
+Method Name</th><th>
+Description</th></tr>
 <tr>
 <td>
-ExecuteNestedGroup(DataSet dataSet, ArrayList commands)</td><td>
-Runs nested mail merge within a Group for the specified data from the Data Set.</td></tr>
+ExecuteNestedGroup(DataSet dataSet, ArrayList commands) </td><td>
+Runs nested mail merge within a Group for the specified data from the Data Set. </td></tr>
 <tr>
 <td>
-ExecuteNestedGroup(DbConnection conn, ArrayList commands)</td><td>
-Runs nested mail merge within a Group for the specified data from the Database.</td></tr>
+ExecuteNestedGroup(DbConnection conn, ArrayList commands) </td><td>
+Runs nested mail merge within a Group for the specified data from the Database. </td></tr>
 <tr>
 <td>
-ExecuteNestedGroup(DbConnection conn, ArrayList commands, bool isSqlConnection)</td><td>
-Runs nested mail merge within a Group for the specified data from the Database. If it is an SQL connection, then set to True.</td></tr>
+ExecuteNestedGroup(DbConnection conn, ArrayList commands, bool isSqlConnection) </td><td>
+Runs nested mail merge within a Group for the specified data from the MailMergeDataSet. </td></tr>
 <tr>
 <td>
-ExecuteNestedGroup(MailMergeDataSet dataSource, List<Dictionaryentry> commands)</td><td>
-Runs nested mail merge within a Group for the specified data from the MailMergeDataSet.</td></tr>
-<tr>
-<td>
-ExecuteNestedGroup(MailMergeDataTable dataTable)</td><td>
-Runs nested mail merge within a Group for the specified data from the MailMergeDataTable</td></tr>
+ExecuteNestedGroup(MailMergeDataTable dataTable) </td><td>
+Runs nested mail merge within a Group for the specified data from the MailMergeDataTable </td></tr>
 </table>
+
 The following code example illustrates how to implement a nested mail merge for a region or table by using a Data Set. 
 
-[C#]
+
+{% highlight C# %}
 
 
 
@@ -530,15 +534,15 @@ System.Diagnostics.Process.Start( "NestedMailMerge.doc" );
 
 
 
-///&lt;summary&gt;
+///<summary>
 
 ///Gets the table
 
-///&lt;/summary&gt;
+///</summary>
 
-///&lt;param name="sqlQuery"&gt;&lt;/param&gt;
+///<param name="sqlQuery"></param>
 
-///&lt;returns&gt;&lt;/returns&gt;
+///<returns></returns>
 
 private DataTable GetNestedDataTable( string sqlQuery )
 
@@ -590,9 +594,9 @@ conn.Close();
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -654,15 +658,15 @@ System.Diagnostics.Process.Start("NestedMailMerge.doc")
 
 End Sub
 
-'/ &lt;summary&gt;
+'/ <summary>
 
 '/ Get the table
 
-'/ &lt;/summary&gt;
+'/ </summary>
 
-'/ &lt;param name="sqlQuery"&gt;&lt;/param&gt;
+'/ <param name="sqlQuery"></param>
 
-'/ &lt;returns&gt;&lt;/returns&gt;
+'/ <returns></returns>
 
 Private Function GetNestedDataTable(ByVal sqlQuery As String) As DataTable
 
@@ -700,13 +704,14 @@ End Try
 
 End Function
 
+{% endhighlight %}
 
 
-### Mail Merge with Business Objects
+## Mail Merge with Business Objects
 
 The following code example illustrates how to perform mail merge with business objects.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -1358,9 +1363,9 @@ this.Fax = Fax;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1530,11 +1535,11 @@ stream.Close()
 
 End If
 
-For Each customer__1 As Customer In Customers
+For Each customer_1 As Customer In Customers
 
-If customer__1.CustomerID = comboBox1.SelectedItem.ToString() Then
+If customer_1.CustomerID = comboBox1.SelectedItem.ToString() Then
 
-customerDetails = New Customer(customer__1.CustomerID, customer__1.CompanyName, customer__1.ContactName, customer__1.ContactTitle, customer__1.Address, customer__1.City,   customer__1.PostalCode, customer__1.Country, customer__1.Phone, customer__1.Fax)
+customerDetails = New Customer(customer_1.CustomerID, customer_1.CompanyName, customer_1.ContactName, customer_1.ContactTitle, customer_1.Address, customer_1.City,   customer_1.PostalCode, customer_1.Country, customer_1.Phone, customer_1.Fax)
 
 'comboBox1.Items.Add(customer.CustomerID);
 
@@ -1542,11 +1547,11 @@ End If
 
 Next
 
-Dim Customer__2 As New List(Of Customer)()
+Dim Customer_2 As New List(Of Customer)()
 
-Customer__2.Add(customerDetails)
+Customer_2.Add(customerDetails)
 
-document.MailMerge.Execute(Customer__2)
+document.MailMerge.Execute(Customer_2)
 
 
 
@@ -1788,7 +1793,7 @@ prevTagWasElement = False
 
 ElementName = String.Empty
 
-While readOn AndAlso Me.reader.NodeType &lt;&gt; XmlNodeType.Text
+While readOn AndAlso Me.reader.NodeType <> XmlNodeType.Text
 
 'If the current element is empty, stop reading and return false.
 
@@ -1820,7 +1825,7 @@ End Class
 
 
 
-Public Class Customer
+### Public Class Customer
 
 #Region "fields"
 
@@ -2014,6 +2019,7 @@ End Property
 
 
 
+
 #Region "Constructors"
 
 Public Sub New(CustomerID As String, CompanyName As String, ContactName As String, ContactTitle As String, Address As String, City As String, _
@@ -2046,13 +2052,18 @@ End Sub
 
 End Class
 
+{% endhighlight %}
+
+
 ### Event Support for Mail Merge
+
+
 
 The MailMerge class provides two events to expand the mail merge capabilities. The MergeField and MergeImageField events are used to implement custom control logic over the mail merge process.
 
 The MergeField event occurs during mail merge when a simple mail merge field is encountered in the document. This allows implementation of further control over the mail merge and perform any action when the event occurs. You can use the MergeFieldEventHandler delegate to reference the method that handles the MergeField. This method accepts a MergeFieldEventArgs instance that provides data for the MergeField event.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -2088,7 +2099,7 @@ document.Save("sample.doc");
 
 
 
-///&lt;summary&gt;
+///<summary>
 
 ///Called for every merge field encountered in the document.
 
@@ -2096,7 +2107,7 @@ document.Save("sample.doc");
 
 ///else with the document. In this case we modify cell formatting.
 
-///&lt;/summary&gt;     
+///</summary>     
 
 
 
@@ -2118,11 +2129,11 @@ args.CharacterFormat.TextColor = Color.FromArgb( 255 , 102 ,0 );
 
 
 
-///&lt;summary&gt;
+///<summary>
 
 ///Creates DataTable and fills it with data.
 
-///&lt;/summary&gt;
+///</summary>
 
 private static DataTable GetDataTable()
 
@@ -2152,9 +2163,9 @@ return dataTable;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2176,7 +2187,7 @@ document.Save("sample.doc")
 
 End Sub
 
-'&lt;summary&gt;
+'<summary>
 
 'Called for every merge field encountered in the document.
 
@@ -2184,7 +2195,7 @@ End Sub
 
 'else with the document. In this case we modify cell formatting.
 
-'&lt;/summary&gt;     
+'</summary>     
 
 Private Sub AlternateRows_MergeField(ByVal sender As Object, ByVal args As MergeFieldEventArgs)
 
@@ -2198,11 +2209,11 @@ End If
 
 End Sub
 
-'&lt;summary&gt;
+'<summary>
 
 'Creates DataTable and fills it with data.
 
-'&lt;/summary&gt;
+'</summary>
 
 Private Shared Function GetDataTable() As DataTable
 
@@ -2228,13 +2239,17 @@ Return dataTable
 
 End Function
 
-MergeImageField Events
+{% endhighlight %}
+
+
+## MergeImageField Events
+
 
 The MailMerge.MergeImageField occurs during mail merge when an image mail merge field is encountered in the document. Image mail merge field is a merge field, with format, Image:MyFieldName. You can respond to this event to return a file name, stream, or an Image instance to the mail merge engine so that it is inserted into the document.
 
 You can use the MergeImageFieldEventHandler delegate representing the method to handle the MergeImageField event. The event handler receives an argument of type MergeImageFieldEventArgs.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -2266,13 +2281,13 @@ document.Save("sample.doc");
 
 }
 
-///&lt;summary&gt;
+///<summary>
 
 ///This is called when mail merge engine encounters Image:XXX merge field in the document.
 
 ///You have a chance to return an image object, file name, or a stream that contains an image.
 
-///&lt;/summary&gt;
+///</summary>
 
 private void MergeField_ProductImage(object sender, MergeImageFieldEventArgs args)
 
@@ -2292,11 +2307,11 @@ args.Image = Image.FromFile (ProductFileName ) );
 
 }
 
-//&lt;summary&gt;
+//<summary>
 
 ///Creates DataTable and fills it with data.
 
-///&lt;/summary&gt;
+///</summary>
 
 private static DataTable GetDataTable()
 
@@ -2326,9 +2341,9 @@ return dataTable;
 
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2348,13 +2363,13 @@ document.Save("sample.doc")
 
 End Sub
 
-'''&lt;summary&gt;
+'<summary>
 
-'''This is called when mail merge engine encounters Image:XXX merge field in a document.
+'This is called when mail merge engine encounters Image:XXX merge field in a document.
 
-'''You have a chance to return an Image object, file name or a stream that contains the image.
+'You have a chance to return an Image object, file name or a stream that contains the image.
 
-'''&lt;/summary&gt;
+'</summary>
 
 Private Sub MergeField_ProductImage(ByVal sender As Object, ByVal args As MergeImageFieldEventArgs)
 
@@ -2370,11 +2385,11 @@ End If
 
 End Sub
 
-'''&lt;summary&gt;
+'<summary>
 
-'''Creates DataTable and fills it with data.
+'Creates DataTable and fills it with data.
 
-'''&lt;/summary&gt;
+'</summary>
 
 Private Shared Function GetDataTable() As DataTable
 
@@ -2400,89 +2415,100 @@ Return dataTable
 
 End Function
 
+{% endhighlight %}
 
 
-### Additional Mail Merge Features
+## Additional Mail Merge Features
 
-Mapped Fields
+
+### Mapped Fields
+
 
 The MailMerge class allows automatic mapping between the names of fields in the data source and names of mail merge fields in a document. To achieve this, you can use the MappedDataFields property that returns a MappedDataFields instance. MappedDataFields is a collection of string keys into string values. The keys are the names of mail merge fields in a document, and the values are the names of fields in your data source.
 
 The following code example illustrates how to add mapping when a merge field in a document and a data field in a data source have different names.
 
-[C#] 
+{% highlight C# %}
 
 
 
 doc.MailMerge.MappedDataFields.Add("FieldName_InDocument", "FieldName_InDataSource");
 
+{% endhighlight %}
 
-
-[VB.NET] 
+{% highlight C# %}
 
 
 
 doc.MailMerge.MappedDataFields.Add("FieldName_InDocument", "FieldName_InDataSource")
 
-Obtaining Merge Field Names
+{% endhighlight %}
+
+
+## Obtaining Merge Field Names
+
 
 You can get the collection of the merge field names available in the document by using the GetFieldNames method. This returns an array of string that contains the names. 
 
 The following code example illustrates how to get the names of all the merge fields in a document.
 
-[C#] 
+{% highlight C# %} 
 
 
 
 string[] fieldNames = doc.MailMerge.GetMergeFieldNames();
 
+{% endhighlight %}
 
-
-[VB.NET] 
+{% highlight vbnet %}
 
 
 
 Dim fieldNames As String() = doc.MailMerge.GetMergeFieldNames()
 
+{% endhighlight %}
 
 
-Obtaining Merge Field Group Names
+## Obtaining Merge Field Group Names
+
 
 You can get the collection of the Merge Field Group names available in a document by using the GetMergeGroupNames method. This returns an array of string that contains the names. 
 
-<table>
-<tr>
-<td>
-[C#] string[] groupNames =  doc.MailMerge.GetMergeGroupNames() </td></tr>
-<tr>
-<td>
-[VB.NET]Dim filednames As String() = doc.MailMerge. GetMergeGroupNames()</td></tr>
-</table>
+{% highlight c# %}
+ string[] groupNames =  doc.MailMerge.GetMergeGroupNames() 
+{% endhighlight %} 
+
+{% highlight vbnet %}
+Dim filednames As String() = doc.MailMerge. GetMergeGroupNames()
+{% endhighlight %}
 
 
-Obtaining Merge Fields for a Specific Group
+
+## Obtaining Merge Fields for a Specific Group
+
 
 You can get the collection of the Merge Fields for a specific group in a document by using the GetMergeFieldNames(String groupName) method. This returns an array of string that contains the field names.
 
-[C#] 
-
+{% highlight C# %}
 
 
 string[] filednames = doc.MailMerge.GetMergeFieldNames(groupName);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 Dim filednames As String() = doc.MailMerge.GetMergeFieldNames(groupName)
 
-Removing Empty Paragraphs
+{% endhighlight %}
+
+## Removing Empty Paragraphs
 
 To remove paragraphs that contain empty mail merge fields from the document, set the doc.MailMerge.RemoveEmptyParagraphs to _true_. The following code example illustrates how to remove paragraphs that contain empty mail merge fields.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -2496,30 +2522,36 @@ doc.MailMerge.RemoveEmptyParagraphs = true;
 
 doc.MailMerge.RemoveEmptyParagraphs = True
 
-Removing Empty Groups
+{% endhighlight %}
+
+## Removing Empty Groups
 
 To remove empty groups from a document during mail merge, set the RemoveEmptyGroup to _true_. The default value of RemoveEmptyGroup is set to _false_. The following code example illustrates how to remove empty groups from a document.
 
-[C#]
+{% highlight C# %}
 
 
 
 document.MailMerge.RemoveEmptyGroup = true;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
 document.MailMerge.RemoveEmptyGroup = True
 
-Clear Fields
+{% endhighlight %}
+
+
+## Clear Fields
+
 
 To remove empty mail merge fields from a document, set the MailMerge.ClearField property to _true_.
 
-[C#]
 
+{% highlight C# %}
 
 
 WordDocument doc = new WordDocument("Sample.doc");
@@ -2532,9 +2564,9 @@ doc.MailMerge.ClearFields = false;
 
 doc.MailMerge.Execute(fieldname, fieldvalues);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2548,25 +2580,56 @@ doc.MailMerge.ClearFields = False
 
 doc.MailMerge.Execute(fieldname, fieldvalues)
 
-### Mail Merge with ExpandoObjects
+{% endhighlight %}
+
+
+## Mail Merge with ExpandoObjects
+
 
 [ExpandoObject](https://msdn.microsoft.com/en-us/library/system.dynamic.expandoobject(v=vs.110).aspx) is used to add or remove its items dynamically. At runtime, you can add properties to these dynamic collection.
 
 The following code example explains how to use ExpandoObject with Mail Merge.
 
-<table>
-<tr>
-<td>
-[C#]WordDocument document = new WordDocument("Template.docx");//Creating DataSet from the DataTables' (Customer and Order)MailMergeDataSet dataSet = new MailMergeDataSet();//Create mail merge data table in order to perform mail mergingMailMergeDataTable dataTable = new MailMergeDataTable("Customers", GetCustomers());dataSet.Add(dataTable);dataTable = new MailMergeDataTable("Orders", GetOrders());dataSet.Add(dataTable);List<DictionaryEntry> commands = new List<DictionaryEntry>();// DictionaryEntry contain "Source table" (KEY) and "Command" (VALUE)DictionaryEntry entry = new DictionaryEntry("Customers", string.Empty);commands.Add(entry);// To retrive customer detailsentry = new DictionaryEntry("Orders", "CustomerID = %Customer.CustomerID%");commands.Add(entry);//Performing the mail merge operation with the dynamic collectiondocument.MailMerge.ExecuteNestedGroup(dataSet, commands);//Saving the documentdocument.Save("Sample.docx", FormatType.Docx);</td></tr>
-<tr>
-<td>
-[VB]Dim document As New WordDocument("Template.docx")'Creating DataSet from the DataTables' (Customer and Order)Dim dataSet As New MailMergeDataSet()'Create mail merge data table in order to perform mail mergingDim dataTable As New MailMergeDataTable("Customers", GetCustomers())dataSet.Add(dataTable)dataTable = New MailMergeDataTable("Orders", GetOrders())dataSet.Add(dataTable)Dim commands As New List(Of DictionaryEntry)()' DictionaryEntry contain "Source table" (KEY) and "Command" (VALUE)Dim entry As New DictionaryEntry("Customers", String.Empty)commands.Add(entry)' To retrive customer detailsentry = New DictionaryEntry("Orders", "CustomerID = %Customer.CustomerID%")commands.Add(entry)'Performing the mail merge operation with the dynamic collectiondocument.MailMerge.ExecuteNestedGroup(dataSet, commands)'Saving the documentdocument.Save("Sample.docx", FormatType.Docx)</td></tr>
-</table>
+
+{% highlight c# %}
+
+WordDocument document = new WordDocument("Template.docx");
+//Creating DataSet from the DataTables' 
+(Customer and Order)MailMergeDataSet dataSet = new MailMergeDataSet();
+//Create mail merge data table in order to perform mail merging
+MailMergeDataTable dataTable = new MailMergeDataTable("Customers", GetCustomers());
+dataSet.Add(dataTable);
+dataTable = new MailMergeDataTable("Orders", GetOrders());dataSet.Add(dataTable);
+List<DictionaryEntry> commands = new List<DictionaryEntry>();
+// DictionaryEntry contain "Source table" (KEY) and "Command" 
+VALUE)DictionaryEntry entry = new DictionaryEntry("Customers", string.Empty);commands.Add(entry);
+// To retrive customer detailsentry = new DictionaryEntry("Orders", "CustomerID = %Customer.CustomerID%");
+commands.Add(entry);//Performing the mail merge operation with the dynamic collectiondocument.MailMerge.ExecuteNestedGroup(dataSet, commands);
+//Saving the documentdocument.Save("Sample.docx", FormatType.Docx);
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Dim document As New WordDocument("Template.docx")
+'Creating DataSet from the DataTables' 
+(Customer and Order)Dim dataSet As New MailMergeDataSet()
+'Create mail merge data table in order to perform mail merging
+Dim dataTable As New MailMergeDataTable("Customers", GetCustomers())dataSet.Add(dataTable)dataTable = New MailMergeDataTable("Orders", GetOrders())dataSet.Add(dataTable)
+Dim commands As New List(Of DictionaryEntry)()
+' DictionaryEntry contain "Source table" (KEY) and "Command" (VALUE)
+Dim entry As New DictionaryEntry("Customers", String.Empty)commands.Add(entry)
+' To retrive customer detailsentry = New DictionaryEntry("Orders", "CustomerID = %Customer.CustomerID%")commands.Add(entry)
+'Performing the mail merge operation with the dynamic collectiondocument.MailMerge.ExecuteNestedGroup(dataSet, commands)
+'Saving the documentdocument.Save("Sample.docx", FormatType.Docx)
+
+{% endhighlight %}
 
 
 The following code example illustrate how to create the ExpandoObjects for the Customers table that is used in the above code examples and similarly you can create the ExpandoObjects for Orders table.
 
-[C#]
+
+{% highlight C# %}
 
 //Gets the List of ExpandoObjects of the Customers
 
@@ -2610,7 +2673,10 @@ private dynamic GetDynamicCustomer(Customer customer)
 
 } 
 
-[VB]
+{% endhighlight %}
+
+
+{% highlight vbnet %}
 
 'Gets the List of ExpandoObjects of the Customers
 
@@ -2652,5 +2718,5 @@ Return dynamicCust
 
 End Function
 
-
+{% endhighlight %}
 

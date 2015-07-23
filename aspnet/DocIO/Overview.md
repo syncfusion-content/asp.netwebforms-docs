@@ -17,13 +17,13 @@ Essential DocIO is a native .NET Word library that is used by developers to easi
 
 
 
-Use Case Scenario
+### Use Case Scenario
 
 Essential DocIO is used to generate Envelopes, Resumes, Newsletters, and Invoice and Letter Creations.
 
 
 
-Key Features
+### Key Features
 
 Important features of Essential DocIO are as follows.
 
@@ -44,7 +44,7 @@ Important features of Essential DocIO are as follows.
 
 
 
-User Guide Organization
+## User Guide Organization
 
 The product comes with numerous samples as well as an extensive documentation to guide you. This User Guide provides detailed information on the features and methodologies of Essential DocIO. It is organized into the following sections:
 
@@ -56,25 +56,25 @@ The product comes with numerous samples as well as an extensive documentation to
 
 
 
-Document Conventions
+## Document Conventions
 
 The following conventions helps you quickly to identify the important sections of information while using the content.
 
-_Table 1: Document Conventions_
+_Table 1_: Document Conventions
 
 <table>
 <tr>
-<td>
-Convention</td><td>
-Icon</td><td>
-Description</td></tr>
+<th>
+Convention</th><th>
+Icon</th><th>
+Description</th></tr>
 <tr>
 <td>
 Note</td><td>
-![](Overview_images/Overview_img1.jpeg)
-{:.image }
-{{ '_Note:_' | markdownify }}</td><td>
-{{ '_Represents important information_' | markdownify }}</td></tr>
+{{' ![](Overview_images/Overview_img1.jpeg)' | markdownify }}
+
+</td><td>Note:
+Represents important information</td></tr>
 <tr>
 <td>
 Example</td><td>
@@ -83,15 +83,15 @@ Represents an example</td></tr>
 <tr>
 <td>
 Tip</td><td>
-![](Overview_images/Overview_img2.jpeg)
-{:.image }
+{{' ![](Overview_images/Overview_img2.jpeg)' | markdownify }}
+
 </td><td>
 Represents useful hints that helps you in using the controls/features</td></tr>
 <tr>
 <td>
 Additional Information</td><td>
-![](Overview_images/Overview_img3.jpeg)
-{:.image }
+{{' ![](Overview_images/Overview_img3.jpeg)' | markdownify }}
+
 </td><td>
 Represents additional information on the topic</td></tr>
 </table>
