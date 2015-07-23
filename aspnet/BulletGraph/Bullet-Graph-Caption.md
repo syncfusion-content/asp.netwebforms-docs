@@ -180,7 +180,7 @@ The following screenshot displays the BulletGraph with Trim.
 
 All the caption group elements (caption, subtitle, and indicator) in the Bullet Graph support text positioning by using the property TextPosition available in all caption group elements. The properties, TextAlignment and TextAnchor are used to customize text placement further.
 
-Text Position
+### Text Position
 
 The property, TextPosition, is used to position the text at the top, bottom, left, and right side of the quantitative scale. The default value of this property is float. By default, text can be placed at any desired location by using the Location property. 
 {% highlight html %}
@@ -211,7 +211,7 @@ The following screenshot displays the Bullet Graph with the title positioned abo
 
 
 
-Text Alignment
+### Text Alignment
 
 Alignment of text at different positions with respect to scale can be customized by using the TextAlignment property. Text can be aligned in the Near, Center, and Far locations of the scale. Text alignment depends upon TextPosition property and is not applicable when the value of the TextPosition property is Float. The default value of the TextAlignment property is Near. 
 {% highlight html %}
@@ -248,7 +248,7 @@ The following screenshot displays the Bullet Graph with the title and subtitle a
 
 
 
-Text Anchor
+### Text Anchor
 
 Text elements aligned at the same position are anchored by using the TextAnchor property. These can be anchored at the Start, Middle, and End. The default value of this property is Start and applicable only when two or more text elements are aligned at the same position. 
 {% highlight html %}
@@ -283,7 +283,7 @@ Text elements aligned at the same position are anchored by using the TextAnchor 
 
 
 
-Padding
+### Padding
 
 The space required between text and quantitative scale is customized by using the Padding property. The default value of this property is 5 and not applicable when the value of the TextPosition property is Float. 
 {% highlight html %}

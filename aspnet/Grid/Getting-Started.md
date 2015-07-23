@@ -56,7 +56,7 @@ You can create a Grid with a highly customizable look and feel. You can use Gr
 {% endhighlight %}
 
 
-> _Note: Create a connection string in Web.config file using SQL database._
+> Note: Create a connection string in Web.config file using SQL database.
 
 {% highlight html %}
 
@@ -139,7 +139,7 @@ The following screenshot displays a Grid with the sales data.
 
 
 
-Enable Paging
+### Enable Paging
 
 The Paging feature in Grid offers complete navigation support to easily switch between the pages, using the page bar available at the bottom of the Grid control. To enable paging, use AllowPaging property of Grid as follows.
 
@@ -190,7 +190,7 @@ The following screenshot displays a Grid withpaging.
 
 
 
-Enable Filtering
+### Enable Filtering
 
 The Filtering feature in Grid is usedto facilitate the extraction of a subset of records that meet a certain criteria. You can apply Filters to one or more columns. This feature is used to filter particular sales data, in order to review the details.
 
@@ -247,7 +247,7 @@ The following screenshot shows Grid with filtering option.
 
 
 
-Enable Grouping
+### Enable Grouping
 
 The Grouping feature in Grid is used to consolidate the Grid data into groups. Grouping allows the categorization of records based on specified columns. You can easily group a particular column by simply dragging the column to the upper portion of the Grid. The Grid data is automatically grouped when you drop a particular column.  In this example, the Grouping feature is used to analyze the shipment details of products.
 
@@ -314,7 +314,7 @@ The following screenshot shows the analysis of shipment details by grouping Ship
 
 
 
-Enable Group Summary
+### Enable Group Summary
 
 The Show Summary property allows you to summarize the grid data into groups. Grouping allows the categorization of records based on specified columns. Group Summary summarizes the data present in the group. In the following example, Group Summary is used to summarize freight data of grouped ShipName category.
 

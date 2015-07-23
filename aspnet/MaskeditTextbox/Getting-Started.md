@@ -213,7 +213,7 @@ Refer to the following link to know details on TextBoxes controls.
 
 {% endhighlight %}
 
-Set Mask Value
+### Set Mask Value
 
 The following code example is used to set mask value.
 

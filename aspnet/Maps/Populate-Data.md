@@ -11,7 +11,7 @@ documentation: ug
 
 In this section you can learn how to populate shape data for providing Data input to Map control and usage of DataSource property.
 
-Shape Data
+## Shape Data
 
 The Shape Data collection describing geographical shape information can be obtained from [GEOJSON format shapes](http://www.syncfusion.com/uploads/user/uploads/Maps_GeoJSON.zip). 
 
@@ -43,11 +43,11 @@ public object GetUSA()
 
 {% endhighlight %}
 
-Data Binding
+## Data Binding
 
 The Maps control supports data binding with the DataSource property in the shape layers. 
 
-Properties required
+## Properties required
 
 The following properties in shape layers is be used for binding datas in Maps control,
 
@@ -55,15 +55,15 @@ The following properties in shape layers is be used for binding datas in Maps co
 * ShapeDataPath
 * ShapePropertyPath
 
-Data Source
+## Data Source
 
 The DataSource property accepts the collection values as input. For example, you can provide the list of objects as input.
 
-Shape Data Path 
+## Shape Data Path 
 
 The ShapeDataPath property is used to refer the data ID in DataSource. For example, population MapData contains data ids ‘Name’ and ‘Population’. The ShapeDataPath and the ShapePropertyPath properties are related to each other (refer to ShapePropertyPath for more details).
 
-Shape Property Path
+## Shape Property Path
 
 The ShapePropertyPath property is similar to the ShapeDataPath that refers to the column name in the Data property of shape layers to identify the shape. Wen the values of the ShapeDataPath property in the DataSource property and the value of ShapePropertyPath in the Data property match, then the associated object from the DataSource is bound to the corresponding shape.
 

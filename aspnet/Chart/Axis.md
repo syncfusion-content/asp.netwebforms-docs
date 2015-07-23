@@ -11,7 +11,7 @@ documentation: ug
 
 Charts typically have two axes that are used to measure and categorize data: a vertical (y) axis, and a horizontal (x) axis. To make a Chart easier to understand, you can add axis titles, tick marks, and labels. You can also change the alignment of axis title and format the labels that are displayed on axes. By default horizontal (x) axis and vertical (y) axis gets added to the Chart with axis labels, gridlines, and tick lines. You can also customize these axis explicitly by adding axis title or removing gridlines, tick lines that are added to the axis by default.
 
-Chart Axis supports the following types:
+## Chart Axis supports the following types:
 
 * Double
 * DateTime
@@ -91,9 +91,9 @@ By default the ValueType of the axis is double and it represents the numerical d
 
 With the default auto range calculation, the range padding properties allows you to customize the automatic range calculation.
 
-Range Padding:
+### Range Padding:
 
-None:
+### None:
 
 By default, the RangePadding for Numerical Axis is none.
 
@@ -105,7 +105,7 @@ The following screenshot displays a Chart’s x-axis with RangePadding set to No
 
 
 
-Additional:
+### Additional:
 
 If RangePadding for Numerical Axis is set to Additional, the interval of the axis is added as padding.
 
@@ -117,7 +117,7 @@ The following screenshot illustrates a Chart’s x-axis with RangePadding set to
 
 
 
-Normal:
+### Normal:
 
 Normal RangePadding for a Numerical Axis is used mostly for the y-axis to have padding based on the Range calculation.
 
@@ -129,7 +129,7 @@ The following screenshot illustrates a Chart’s y-axis with RangePadding set to
 
 
 
-Round:
+### Round:
 
 Round RangePadding for a Numerical Axis rounds the range of the Chart axis to the nearest possible value divisible by the interval.
 
@@ -260,9 +260,9 @@ The Interval property of DateTime Axis can be any double value based on the Inte
 
 With the default auto range calculation, the RangePadding properties for date-time axis allow you to customize the automatic range calculation.
 
-Range Padding:
+### Range Padding:
 
-None:
+### None:
 
 By default, the RangePadding for a DateTime Axis is None.
 
@@ -274,7 +274,7 @@ The following screenshot illustrates a Chart’s x-axis with RangePadding set to
 
 
 
-Additional:
+### Additional:
 
 If RangePadding for DateTime Axis is set to Additional, the DateTime interval of the axis is added as padding.
 
@@ -286,7 +286,7 @@ The following screenshot illustrates a Chart’s x-axis with RangePadding set to
 
 
 
-Round:
+### Round:
 
 Round RangePadding for a DateTime Axis rounds the range of the Chart axis to the nearest possible Date Time value.
 
@@ -416,14 +416,14 @@ An axis displaying a logarithmic scale is very useful when your data values span
 ![](Axis_images/Axis_img11.png) 
 
 
-Chart Axis Properties:
+### Chart Axis Properties:
 
 _Table1: Chart Axis Properties Table_
 
 <table>
 <tr>
 <th>
-Chart Axis Properties</th><tdh>
+Chart Axis Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -544,7 +544,7 @@ In the above code, you can remove the RowDefinition and RowIndex from axis to ar
 
 
 
-Spanning Axis:
+### Spanning Axis:
 
 Charts having multiple series have multiple x and y axis to represent each series. By default, the axes are arranged in the corresponding row/column position. Spanning feature allows you to span the axis across multiple panes/rows. 
 {% highlight html %}
@@ -760,11 +760,11 @@ The axis labels are present along the axis showing the value of the data it corr
 
 
 
-LabelPlacement:
+### LabelPlacement:
 
 The category axis includes the LabelPlacement property that is used to set the labels of the axis between the tick lines or on the tick lines of the category axis. By default the LabelPlacement value for the category axis is BetweenTicks.
 
-There are two types of LabelPlacement:
+### There are two types of LabelPlacement:
 
 * BetweenTicks
 * OnTicks
@@ -795,7 +795,7 @@ There are two types of LabelPlacement:
 
 
 
-Label Position
+### Label Position
 
 Axis labels can further be customized to render inside the chart area using the property LabelPosition. By default, it is set as Outside. This helps to display labels in a proper manner while multiple axes are used in the chart.
 {% highlight html %}
@@ -849,13 +849,13 @@ _Figure46: Label inside Chart_
 
 
 
-Axis label trimming
+### Axis label trimming
 
 Chart provides support for trimming y axis labels and x axis labels by using the properties EnableTrim and MaximumLabelWidth. These are used to show the lengthy labels in a shorter form. On mouse hover, it shows the full label in the tooltip.
 
 
 {% highlight html %}
-[ASP.NET] 
+ 
 
 <ej:Chart ID="Chart1" runat="server" >
 
@@ -879,14 +879,14 @@ The following screenshot displays the Chart Axis with trimming
 
 Tick lines are displayed horizontally and vertically in Chart axis based on the orientation of the axis.
 
-Major Tick Lines
+### Major Tick Lines
 It is rendered in Chart axis for each interval of axis range. By default, it is visible. You can collapse it by setting ‘Visible’ as false. You can customize the major tick lines width, opacity, and color.
 
-Minor Tick Lines
+### Minor Tick Lines
 
 It is rendered between the major tick lines of Chart axis. To display MinorTickLines in Chart axis enable Visible property of “MinorTickLines” and set values to “MinorTicksPerInterval” in the respective axis. By default, it is invisible. You can customize the minor tick lines width, and color.
 {% highlight html %}
- [ASP.NET]
+
 
 <ej:Chart ID="Chart1" runat="server">
 
@@ -904,13 +904,13 @@ It is rendered between the major tick lines of Chart axis. To display MinorTickL
 
 
 
-Tick lines placement
+### Tick lines placement
 
 You can customize tick lines and render them inside the chart area using the property TickLinesPosition. By default, it is set as outside. This property will be used when labels are inside.
 
 {% highlight html %}
 
-[ASP.NET]
+
 
 <ej:Chart ID="Chart1" runat="server">
 
@@ -930,15 +930,15 @@ You can customize tick lines and render them inside the chart area using the pro
 
 Grid lines are displayed in horizontal and vertical position in Chart area based on the intervals.
 
-Major Grid Lines
+### Major Grid Lines
 
 It is rendered in Chart area for each interval of axis range. By default, it is visible. You can collapse it by setting ‘Visible’ property to false. You can customize the major gridlines width, opacity, and dashArray of gridline.
 
-Minor Grid Lines
+### Minor Grid Lines
 
 It is rendered between the major gridlines of Chart area.To display minor grid lines in Chart area enable Visible property of “MinorGridLines” and set values to “MinorTicksPerInterval” in the respective axis. By default, ‘Visibile’ property is set to “false”. You can customize the minor grid lines width, and dashArray of gridline.
 {% highlight html %}
- [ASP.NET]
+
 
 <ej:Chart ID="Chart1" runat="server">
 
@@ -964,19 +964,19 @@ It is rendered between the major gridlines of Chart area.To display minor grid l
 
 
 
-Alternate Grid Band
+### Alternate Grid Band
 
 Grid Band is the distance between two adjacent major grid lines which are displayed in horizontal and vertical position.
 
-Even Grid Band
+### Even Grid Band
 
 Even Grid Band are counted from axes lines, i.e the band which is immediate adjacent for axes lines. By default, the even grid band color is transparent. You can highlight the even grid band by setting Fill property of Even. You can customize the Opacity of the even grid band color.
 
-Odd Grid Band
+### Odd Grid Band
 
 Immediate adjacent band of every even grid bands are Odd Grid Bands. You can discriminate the odd grid band from even by setting Fill property of Odd. You can customize the Opacity of the odd grid band color.
 {% highlight html %}
- [ASP.NET]
+
 
 <ej:Chart ID="Chart1" runat="server">
 
@@ -1048,7 +1048,7 @@ _Figure48: Chart explaining grid band_
 
 You can display the Chart series in to inversed position using “IsInversed” property of Chart Axis. This is illustrated in the following code. 
 {% highlight html %}
-[ASP.NET]
+
 
 <ej:Chart ID="Chart1" runat="server">          
 
@@ -1068,7 +1068,7 @@ You can display the Chart series in to inversed position using “IsInversed” 
 
 By default, the x-axis is arranged horizontally at the bottom of the Chart and the y-axis is arranged vertically at the left side of the Chart. You can change the alignment of the axis by setting OpposedPosition to true, which arranges the x-axis at the top and the y-axis at the right of the Chart.  
 {% highlight html %}
-[ASP.NET]
+
 
   <ej:Chart ID="Chart1" runat="server">       
 
@@ -1097,7 +1097,7 @@ Sometimes the Chart dimensions could cause the labels to intersect. You can avoi
 * Wrap – Wrap the intersecting text and display
 * Hide – It doesn’t display the intersecting label texts on the axis.
 {% highlight html %}
- [ASP.NET] 
+
 
   <ej:Chart ID="Chart1" runat="server">       
 

@@ -169,7 +169,7 @@ namespace WebSampleBrowser.Grid
 {% endhighlight  %}
 The following output is displayed as a result of the above code example.
 
-Content
+### Content
 
 ![C:/Users/ApoorvahR/Desktop/1.png](Context-Menu_images/Context-Menu_img1.png)
 
@@ -177,7 +177,7 @@ Content
 
 _Figure 112: Context Menu in content_
 
-Header
+### Header
 
 ![C:/Users/ApoorvahR/Desktop/2.png](Context-Menu_images/Context-Menu_img2.png)
 
@@ -185,7 +185,7 @@ Header
 
 _Figure 113: Context Menu in Header_
 
-Footer
+### Footer
 
 ![](Context-Menu_images/Context-Menu_img3.png)
 

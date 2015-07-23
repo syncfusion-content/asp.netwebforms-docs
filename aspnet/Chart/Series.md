@@ -87,7 +87,7 @@ You can plot multipleseries on the same Chart. Series are defined by adding them
 
 
 
-CommonSeriesOptions
+### CommonSeriesOptions
 
 You can specify the properties common to all series of the Chart in CommonSeriesOptions.
 {% highlight html %}
@@ -405,7 +405,7 @@ Data labels refer to the y values of data points that appear on each point. You 
 
 
 
-ConnectorLine:
+### ConnectorLine:
 
 ConnectorLine in data Label is used to customize the line that connects the outside labels of the pie series in terms of color, height, width and type of line. 
 {% highlight html %}
@@ -449,7 +449,7 @@ ConnectorLine in data Label is used to customize the line that connects the outs
 
 
 
-Data labels Rotation
+### Data labels Rotation
 
 _Data labels_ refer to the y values of data points, which appear on each point. You can rotate data labels with positive and negative angles using Angle property.
 

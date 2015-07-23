@@ -36,7 +36,7 @@ The following output is displayed as a result of the above code example.
 
 
 
-> _Note: Grid also has support to sort more than one column. This behavior is called as multi sorting. To enable this behavior in Grid then use allowMultiSorting in Grid._
+> Note: Grid also has support to sort more than one column. This behavior is called as multi sorting. To enable this behavior in Grid then use allowMultiSorting in Grid.
 
 ## External Sorting
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Context Menu
 
-Default Context Menu
+## Default Context Menu
 
 The default context menu contains the following options.
 
@@ -47,7 +47,7 @@ The following screenshot shows the Default Context Menu in Gantt control.
 
 
 
-Custom Context Menu
+## Custom Context Menu
 
 You can add custom context menu option in Gantt control. The following code example shows you how to add the custom context menu option in Gantt control.
 
@@ -100,7 +100,7 @@ The screenshot of the Custom Context Menu items in Gantt control is as follows.
 
 
 
-{{'![C:/Users/Rajasekar/Desktop/IMG_17062014_121224.png](Context-Menu_images/Context-Menu_img2.png)'| markdownify}} 
+![C:/Users/Rajasekar/Desktop/IMG_17062014_121224.png](Context-Menu_images/Context-Menu_img2.png)
 
 
 

@@ -615,15 +615,15 @@ Output for DropDown control that provides multiple selection is as follows.
 
 ### Popup Customization  
 
-Popup Height
+#### Popup Height
 
 DropDownList widget provides support to customize the dimensions of the DropDown popup. By using the PopupHeight property, you can set the height of the popup list. Its data type is string. 
 
-Popup Width
+#### Popup Width
 
 DropDownList widget provides support to customize the dimensions of the DropDown popup. By using the PopupWidth property, you can set the width of the popup list. Its data type is string. 
 
-Defining the popup customizing properties
+#### Defining the popup customizing properties
 
 The following step explains the configuration of the PopupHeight and PopupWidth properties in the DropDownList
 

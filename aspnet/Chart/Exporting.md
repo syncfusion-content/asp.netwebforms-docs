@@ -11,9 +11,9 @@ documentation: ug
 
 Essential Chart supports client-side exporting when rendered in canvas mode. The following code snippet illustrates client-side exporting using Essential Chart. 
 
-Code: 
+## Code: 
 {% highlight html %}
-[ASP.NET] 
+
 
    <img alt="Export Chart" src="../Content/images/chart/export.png" onclick="onExport()"  title="Export Chart" style="float: right" />
 

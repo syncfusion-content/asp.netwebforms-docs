@@ -924,7 +924,7 @@ AutoWrap feature allows you to wrap cell content to next line when the content e
 
 {% endhighlight %}
 {% highlight c# %}
-[ASP.NET CS]
+
 
 
 

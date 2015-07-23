@@ -15,7 +15,7 @@ When you deal with a large amount of data, you require interactions like Tooltip
 
 Essential Chart provides you an option tooltip to display a pop up with the point values, on mouse move over the appropriate point. Essential Chart also allows you to customize its border color, border width, opacity, fill color, animation, duration, rx, ry, font size, font family, font style, font color, font weight, etc. You can change the tooltip properties for each series in Chart to change its appearance. When you require the same tooltip for all the series in Chart, you can specify the Tooltip in CommonSeriesOptions. You can also modify the default template for the tooltip using Template property.
 
-Tooltip visibility: 
+### Tooltip visibility: 
 
 By default the visibility of Tooltip is set to false, but you can change the visibility. When format or template is not specified for Tooltip, then it displays the x and y values of the point. 
 {% highlight html %}
@@ -35,7 +35,7 @@ By default the visibility of Tooltip is set to false, but you can change the vis
 
 
 
-Tooltip format:
+### Tooltip format:
 
 Essential Chart provides you support to change the format of the text displayed in the tooltip that allows you to use the data point information in desired format.
 
@@ -65,7 +65,7 @@ format: " #point.x# #series.name# #point.high# #point.low# #point.open# #point.c
 
 
 
-Customize the tooltip border: 
+### Customize the tooltip border: 
 
 Essential Chart provides you options to customize the Border of the Tooltip. You can change the width and color of the Border. By default the border width is set to 1.
 
@@ -87,7 +87,7 @@ Essential Chart provides you options to customize the Border of the Tooltip. You
 
 
 
-Changing the tooltip fill color:
+### Changing the tooltip fill color:
 
 You can modify the Fill color of Tooltip. By default the Tooltip renders with the appropriate series color as background color.
 
@@ -109,7 +109,7 @@ You can modify the Fill color of Tooltip. By default the Tooltip renders with th
 
 
 
-Customize the tooltip font:
+### Customize the tooltip font:
 
 Essential Chart provides you support to customize the text display in the Tooltip. You can change font family, font color, font style, font weight. By default “Segoe UI” font family is set to tooltip text.
 
@@ -135,7 +135,7 @@ Essential Chart provides you support to customize the text display in the Toolti
 
 
 
-Tooltip Animation
+### Tooltip Animation
 
 Essential Chart provides you animation support for tooltip template. You can enable this by setting “EnableAnimation” to true. The “Duration” property in tooltip specificies the time taken to animate the tooltip, by default the duration is set to “500ms”.
 
@@ -153,7 +153,7 @@ Essential Chart provides you animation support for tooltip template. You can ena
 
 {% endhighlight  %}
 
-Understanding the RX and RY in tooltip:
+### Understanding the RX and RY in tooltip:
 
 Essential Chart has RX and RY property in Tooltip to customize the corners radius of the tooltip.
 {% highlight html %}
@@ -175,7 +175,7 @@ Essential Chart has RX and RY property in Tooltip to customize the corners radiu
 
 Essential Chart provides you an option to zoom the Chart. Using this option you can clearly view the points and data in Chart. Zooming is done by dragging the mouse on the Chart or by scrolling the mouse wheel. During runtime, you can simply select the range you want to zoom with the mouse and the Chart zooms-in accordingly.
 
-Enable zooming:
+### Enable zooming:
 
 By default zooming is not enabled. You can enable it using the “Enable” option in “zooming” property.
 
@@ -193,7 +193,7 @@ By default zooming is not enabled. You can enable it using the “Enable” opti
 
 {% endhighlight  %}
 
-Before zooming:
+### Before zooming:
 
 
 
@@ -201,7 +201,7 @@ Before zooming:
 
 
 
-Selection for zooming:
+### Selection for zooming:
 
 
 
@@ -209,7 +209,7 @@ Selection for zooming:
 
 
 
-After zooming:
+### After zooming:
 
 
 
@@ -217,11 +217,11 @@ After zooming:
 
 
 
-Programmatic Zooming
+### Programmatic Zooming
 
 Programmatically the Chart can be zoomed using ZoomPosition and ZoomFactor properties.Both the properties are usually between 0 and 1. When you set the zoomFactor to 1, the Chart isn't zoomed. When you set it to 0.5, the Chart is double its usual size. The ZoomPosition is used to set the starting position of the zoomed axis. For example, when both the properties are set to 0.5 for horizontal axis then the Chart is zoomed to double its size and the view port of the horizontal axis start from half of the axis. 
 
-Enable zoom via mouse wheel: 
+### Enable zoom via mouse wheel: 
 
 Essential Chart provides you support to zoom the Chart by scrolling the mouse wheel. By default it is not enabled, you can enable it with the EnableMouseWheel property in zooming.
 
@@ -235,7 +235,7 @@ Essential Chart provides you support to zoom the Chart by scrolling the mouse wh
 
  </ej:Chart>
 {% endhighlight %}
-Types of zooming: 
+### Types of zooming: 
 
 Essential Chart supports three types of zooming. You can zoom only the x axis or can zoom only the y axis or can zoom both x and y axis respectively. This is achieved using Type property in zooming.
 
@@ -259,7 +259,7 @@ Essential Chart supports three types of zooming. You can zoom only the x axis or
 
 To enable tracking of data points in a Chart, you can use Crosshair and Trackball.
 
-Crosshair:
+### Crosshair:
 
 In order to view the value at mouse position or touch contact point, you can use the Crosshair property. You can customize the appearance further using the Crosshair.Line properties. 
 
@@ -283,7 +283,7 @@ The following code example illustrates you on how to enable the Crosshair.
 
 
 
-Trackball:
+### Trackball:
 
 In order to track a data point closer to the mouse position or touch contact point, you can use trackball. You can customize the track ball appearance using the Marker and Line property in the crosshair. To display a label containing the relevant data point value information, you can enable the CrosshairLabel.Visible property in the corresponding axis of the Chart. For example, to display the x-axis label, set the Visible property of CrosshairLabel inthe PrimaryAxis to true. 
 {% highlight html %}
@@ -458,7 +458,7 @@ Drill Down allows you to view the data’s in depth, for example yearly data to 
 
 
 
-Details about the first segment/slice in pie Chart:
+### Details about the first segment/slice in pie Chart:
 
 
 

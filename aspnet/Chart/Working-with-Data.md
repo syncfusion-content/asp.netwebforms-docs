@@ -144,7 +144,7 @@ You can bind the Essential Chart to remote data using DataManager and the Query 
 
 The following code example illustrates binding Essential Chart to oData service.   
 {% highlight html %}
-[ASP.NET] 
+
 
 <ej:Chart ID="Chart1" OnClientLoad="onchartload">
 
@@ -156,7 +156,8 @@ The following code example illustrates binding Essential Chart to oData service.
 
     </ej:Chart>
 
-[Script] 
+{% endhighlight %}
+{% highlight js %}
 
     <script type="text/javascript" language="javascript">
 

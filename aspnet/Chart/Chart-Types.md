@@ -1531,15 +1531,15 @@ Represents the close values</td></tr>
 
 
 
-BullFillColor
+### BullFillColor
 
 BullFillColor is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval.
 
-BearFillColor
+### BearFillColor
 
 BearFillColor is used to specify a fill color for the segments that indicate a decrease in stock price in the measured time interval.
 
-DrawMode
+### DrawMode
 
 DrawMode is used to specify the open and close draw mode to hiloopenclose series.
 
@@ -1737,11 +1737,11 @@ Represents the close values</td></tr>
 
 
 
-BullFillColor
+### BullFillColor
 
 BullFillColor is used to specify a fill color for the segment that indicates an increase in stock price in the measured time interval.
 
-BearFillColor
+### BearFillColor
 
 BearFillColor is used to specify a fill color for the segment that indicates a decrease in stock price in the measured time interval.
 
@@ -1993,19 +1993,19 @@ public class HiloData
 
 A Polar Chart is a circular graph on which data is displayed in terms of values and angles. The x values define the angles at which the data points are plotted. The y value defines the distance of the data points from the center of the graph, with the center of the graph usually starting at 0. You can customize the series color and borderusing Fill and Border properties in series. You can use IsClosed property in series to specify whether the series drawn is in closed form. It supports three types of rendering such as Line, Area and Column.
 
-LineType
+### LineType
 
 ![](Chart-Types_images/Chart-Types_img28.png)
 
 
 
-Area Type
+### Area Type
 
 ![](Chart-Types_images/Chart-Types_img29.png) 
 
 
 
-Column Type
+### Column Type
 
 ![](Chart-Types_images/Chart-Types_img30.png)
 
@@ -2057,19 +2057,19 @@ To create a simple Polar series use the following code example.
 
 RadarSeries is a x, y Chart of three or more quantitative variables represented on multiple axis lines originating from the same point. You can customize the series color and borderusing Fill and Border properties in series. You can use IsClosed property in series to specify whether the series drawn is in closed form. It supports three types of rendering such as Line, Area and Column.
 
-Area Type
+### Area Type
 
 ![](Chart-Types_images/Chart-Types_img31.png)
 
 
 
-Line type
+### Line type
 
 ![](Chart-Types_images/Chart-Types_img32.png)
 
 
 
-Column type
+### Column type
 
 ![](Chart-Types_images/Chart-Types_img33.png)
 

@@ -285,7 +285,7 @@ You customize a data label with required template by adding a “div” element 
 
 ## Label Formatting
 
-Numerical Axis:
+### Numerical Axis:
 
 By default, the label texts are automatically determined based on the axis data points and the generated intervals. You can make the Chart readable and understandable by formatting axes labels. For example, add "$" prefix when values are given in dollars and add "°F" postfix when values are given in Fahrenheit degrees. To achieve this “LabelFormat” property in axis is used.
 
@@ -299,7 +299,7 @@ By default, the label texts are automatically determined based on the axis data 
 
   </ej:Chart>
 {% endhighlight %}
-Date time Axis:
+### Date time Axis:
 
 For datetime axis, all globalized date time formats are supported. By default, based on the interval type the LabelFormat is calculated. When the IntervalType is “Year” then the LabelFormat is 'MMM, yyyy'.
 
@@ -334,7 +334,7 @@ Some of the LabelFormat for datetime axis:
 
 Essential Chart provides Title and Subtitle support that is used to give additional information about the chart data. It also has various options to customize the font alignment of the Title and Subtitle. 
 {% highlight html %}
-[ASP.NET]
+
 
 
 
@@ -362,13 +362,13 @@ The following screenshot shows the Title and Subtitle in Chart control.
 
 You can customize the background for different portion of Chart.
 
-To Chart:
+### To Chart:
 
 Using the Background property you can customize the background color of the Chart.
 
-Code: 
+### Code: 
 {% highlight html %}
-[ASP.NET] 
+
 
   <ej:Chart ID="Chart1" runat="server" Background="#1E90FF">       
 
@@ -380,13 +380,13 @@ Code:
 
 
 
-To Chart Area:
+### To Chart Area:
 
 Using Background property in ChartArea you can customize the background color of the Chart area.
 
-Code: 
+### Code: 
 {% highlight html %}
-[ASP.NET] 
+
 
 <ej:Chart ID="Chart1" runat="server" Background="#1E90FF">       
 
@@ -400,13 +400,13 @@ Code:
 
 
 
-BackGround Image:
+### BackGround Image:
 
 Essential Chart allows you to add background image for your Chart using BackGroundImageUrl property.
 
 {% highlight html %}
 
-[ASP.NET] 
+
 
  <ej:Chart ID="Chart1" runat="server"                                           BackgroundImgUrl="../images/chart/wheat.png">       
 
@@ -431,9 +431,9 @@ Chart has built-in theme support. The theme configures the colors of following C
 5. Tooltip
 6. Background
 
-Code: 
+### Code: 
 {% highlight html %}
-[ASP.NET] 
+ 
 
  <ej:Chart ID="Chart1" runat="server" Theme="GradientLight">       
 
@@ -466,7 +466,7 @@ Apart from the themes, to define custom set of color you can use “Palette” p
 
 
 {% highlight html %}
-[ASP.NET]
+
 
         <ej:Chart ID="Chart1" Palette="#69D2E7, #E27F2D, #6A4B82" runat="server">            
 

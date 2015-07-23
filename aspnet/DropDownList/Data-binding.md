@@ -230,7 +230,7 @@ In the ASPX page, add DropDownList.
 
 Add connection string in the Web.config file.
 
-> _Note: Change the username with your system name in the following connection string._ 
+> Note: Change the username with your system name in the following connection string.
 
 
 
@@ -307,7 +307,7 @@ Create a table in .mdf format by using the following table structure. Create a d
 Add connection String in the Web.config file.
 
 
-> _Note: Change the username with your system name in the following connection string._
+> Note: Change the username with your system name in the following connection string.
 
 
 

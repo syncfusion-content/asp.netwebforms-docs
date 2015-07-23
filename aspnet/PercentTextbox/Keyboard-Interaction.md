@@ -22,7 +22,7 @@ Shortcut Key</td><td>
 Description</td></tr>
 <tr>
 <td>
-{ [Access key](http://en.wikipedia.org/wiki/Access_key) | markdownify } + j</td><td>
+<a href="http://en.wikipedia.org/wiki/Access_key">Access key</a> + j</td><td>
 Focuses the control</td></tr>
 <tr>
 <td>
@@ -37,6 +37,7 @@ Decrements the value</td></tr>
 Tab</td><td>
 Focus the next element</td></tr>
 </table>
+
 ## Configuring Keyboard Navigation
 
 The following steps explain the implementation of keyboard interaction in PercentageTextbox.

@@ -51,7 +51,7 @@ You can position the legend at top, bottom, left or right position of the Chart.
 
 ## Customization
 
-Legend border and shape:
+### Legend border and shape:
 
 In Essential Chart, you can customize the legend shape with different symbols like rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc. Default value of legend “Shape” is “Rectangle”. And you can draw and customize the outline of Chart legends using Border property of Legend. Default value of legend border color is “Transparent”. 
 {% highlight html %}
@@ -69,7 +69,7 @@ In Essential Chart, you can customize the legend shape with different symbols li
 
 
 
-Legend rowCount and columnCount:
+### Legend rowCount and columnCount:
 
 Essential Chart allows you to display the legend items for row and column wise using “RowCount” and “ColumnCount” property. This is used to avoid overlapping between legends and Chart area when using more legends in Chart area.
 
@@ -91,7 +91,7 @@ Essential Chart allows you to display the legend items for row and column wise u
 
 
 
-Legend item style and border customization:
+### Legend item style and border customization:
 
 Essential Chart allows you to customize the legend item size, and border color and width using “ItemStyle” property. Default value of legend item size is (10, 10), and legend item border color is “Transparent”.
 
@@ -109,7 +109,7 @@ Essential Chart allows you to customize the legend item size, and border color a
 
 
 
-Legend font
+### Legend font
 
 You can customize the legend font family, font style, font weight and size and font styles using “Font” property of Legend. This is illustrated in the following code example.
 
@@ -135,7 +135,7 @@ You can customize the legend font family, font style, font weight and size and f
 
 
 
-Legend opacity and item padding:
+### Legend opacity and item padding:
 
 Essential Chart allows you to set “Opacity” for Chart legends. And you can define the spacing between the legend items using “ItemPadding” property of legend. Default value of ItemPadding size is 10.
 
@@ -153,7 +153,7 @@ Essential Chart allows you to set “Opacity” for Chart legends. And you can d
 
 
 
-Scrollbar for legends:
+### Scrollbar for legends:
 
 Essential Chart allows you to customize the legend Height and Width using Size property. Default value of the Height and Width are null and it varies depending upon the legend position. If the legend is in top or bottom of the chart, default value of Height is 20% of chart height and Width is 100% of chart width. Similarly if it is in the left or right side of the chart, default value of Height is 100% of chart height and Width is 20% of chart width.
 
@@ -187,7 +187,7 @@ Scrollbar is enabled for the legends, when the legend size is greater than the u
 
 
 
-Custom Legend Icons:
+### Custom Legend Icons:
 
 You can customize the shape of the legend icon. Normally the available shapes are circle, rectangle, star, wedge, uparrow, downarrow, pentagon, etc. By default, the shape of the legend icon is rectangle, you can modify this by setting Shape property of Legend. If you want series type as icon then set the Shape property value as “SeriesType”. You can customize the height and width of the icon by setting ItemStyle property. 
 

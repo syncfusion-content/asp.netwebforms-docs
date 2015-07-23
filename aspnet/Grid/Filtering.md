@@ -20,7 +20,7 @@ Filtering is used to filter particular or related records in Grid to review deta
 
 After you enable Filter Menu in Grid, it shows filter menu to filter records. This menu contains filtering options based on column type.
 
-Filter menu types
+### Filter menu types
 
 * String menu filtering 
 * Numeric menu filtering

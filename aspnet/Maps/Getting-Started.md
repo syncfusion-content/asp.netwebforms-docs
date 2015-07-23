@@ -19,11 +19,11 @@ You can configure an Essential ASP.NET Map with simple steps. In this example, y
 
 
 
-Create a simple ASP.NET Application 
+## Create a simple ASP.NET Application 
 
 To begin, create a new ASP.NET Web application with necessary Dll’s and Scripts.
 
-Preparing Shape Data
+### Preparing Shape Data
 
 The Shape Data collection describing geographical shape information can be obtained from [GEOJSON format shapes](http://www.syncfusion.com/uploads/user/uploads/Maps_GeoJSON.zip). 
 
@@ -59,7 +59,7 @@ You can store the “United States of America.json” file in App_Data folder as
 
 {% endhighlight %}
 
-Prepare DataSource
+### Prepare DataSource
 
 The dataSource is populated with USA population data inside the controller relative to shape data. For your better understanding, “Map.aspx.cs” is populated with datas of USA Population in “Map.aspx.cs”. Refer to both shape data and datasource as illustrated in the following “Map.aspx.cs”,
 
@@ -245,7 +245,7 @@ new CountyPopulationData(){ Name= "Wyoming", Population=582658}
 
 {% endhighlight %}
 
-Initializing Map
+### Initializing Map
 
 1. Create an HTML file and add necessary script and CSS files in Head tag as illustrated in the following code example.
 
@@ -379,25 +379,25 @@ The above code renders a map with default properties and shape input provided th
 
 
 
-Data Binding in Map
+### Data Binding in Map
 
 The following properties in shape layers is used for binding datas in Maps control.
 
-DataSource
+### DataSource
 
 ShapeDataPath
 
 ShapePropertyPath
 
-DataSource
+### DataSource
 
 The DataSource property accepts collection values as input. For example, you can provide the list of objects as input.
 
-ShapeDataPath 
+### ShapeDataPath 
 
 The ShapeDataPath property is used to refer the data ID in DataSource. For example, population MapData contains data ids ‘Name’ and ‘Population’. The ShapeDataPath and the ShapePropertyPath properties are related to each other (refer to ShapePropertyPath for more details).
 
-ShapePropertyPath
+### ShapePropertyPath
 
 The ShapePropertyPath property is similar to the ShapeDataPath that refers the column name in the Data property of shape layers to identify the shape. When the values of the ShapeDataPath property in the DataSource property and the value of ShapePropertyPath in the Data property match, then the associated object from the DataSource is bound to the corresponding shape.
 
@@ -410,7 +410,7 @@ The ShapePropertyPath property is similar to the ShapeDataPath that refers the c
    
      public partial class Default: Page    {        protected void Page_Load(object sender, EventArgs e)        {            (this.map.Layers[0] as ShapeLayer).DataSource = Election_Result.GetUSPopulationData();            (this.map.Layers[0] as ShapeLayer).ShapeData = this.GetUSA();        }    }</td></tr>
 {% endhighlight %}
-Customizing Map Appearance 
+### Customizing Map Appearance 
 
 You can customize the shape’s color by using Fill, Stroke and StrokeThickness properties in ShapeSettings.
 
@@ -428,11 +428,11 @@ You can customize the shape’s color by using Fill, Stroke and StrokeThickness 
 
 
 
-Customizing Map Appearance by Range
+### Customizing Map Appearance by Range
 
 The Range color mapping is used to differentiate the shape’s fill based on its underlying value and color ranges. The From and To properties defines the value ranges and the GradientColors property defines the equivalent color ranges respective to their value ranges.
 
-> _Note: The EnableGradient property value should be true to apply gradient colors for maps._
+> Note: The EnableGradient property value should be true to apply gradient colors for maps.
 
 
 
@@ -513,7 +513,7 @@ The following screenshot illustrates a map with gradient color property enable.
 
 
 
-Enable Tooltip
+### Enable Tooltip
 
 The tooltip is displayed only when ShowTooltip is set to ‘True’ in the shape layers. By default, it takes the property of the bound object that is referred in the ValuePath and displays its content on hovering the corresponding shape. The TooltipTemplate property is used for customizing the template for tooltip.
 
@@ -581,19 +581,19 @@ The following screenshot illustrates a Map control displaying a Tooltip.
 
 
 
-Legend
+### Legend
 
 A Legend can be made visible by setting the ShowLegend property in LegendSettings. 
 
-Interactive Legend
+### Interactive Legend
 
 The legends can be made interactive with an arrow mark indicating the exact range color in the legend, when the mouse hovers the corresponding shapes. You can enable this option by setting Mode property in LegendSettings value as _‘_Interactive’. The default value of Mode property is ‘Default’ to enable the normal legend.
 
-Title for Interactive Legend
+### Title for Interactive Legend
 
 You can use Title property to provide title for interactive legend.
 
-Label for Interactive Legend
+### Label for Interactive Legend
 
 You can use LeftLabel and RightLabel property to provide left and right labels for interactive legend. 
 

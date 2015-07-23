@@ -156,7 +156,6 @@ The following screenshot displays a Chart series:
 
 You can add JSON data to the Chart using the datasource property in Chart.
 
-In aspx.cs
 
 {% highlight c# %}
 
@@ -262,7 +261,7 @@ public class chartData
     }
 
 {% endhighlight %}
-In aspx
+
 
 {% highlight html %}
 

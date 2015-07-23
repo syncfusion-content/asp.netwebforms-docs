@@ -11,7 +11,7 @@ documentation: ug
 
 Map control contains a set of map elements, including shapes, bubbles, markers, legend, labels and data items that can be visualized with customized appearance showing additional information on the map using databound datas.
 
-Markers 
+## Markers 
 
 Markers are notes that is used to leave some message on the map. 
 
@@ -20,7 +20,7 @@ There are two ways to set marker for map.
 1. Using markers and marker template
 2. Adding marker objects to map.
 
-Markers 
+### Markers 
 
 The Markers property has a list of objects that contains the data for Annotation. You can visualize these data by using MarkerTemplate property.
 
@@ -82,7 +82,7 @@ The Markers property has a list of objects that contains the data for Annotation
 
 
 
-Adding Marker objects to map
+### Adding Marker objects to map
 
 Without Datasource, n number of markers can be added to shape layers with Markers property. Each marker object contains the following list of properties.
 
@@ -142,7 +142,7 @@ Without Datasource, n number of markers can be added to shape layers with Marker
 
 
 
-Bubbles 
+## Bubbles 
 
 Bubbles in the Maps control represent the underlying data values of the map. Bubbles are scattered throughout the map shapes that contain bound values.
 
@@ -203,7 +203,7 @@ Adding Bubbles to a Map
 
 To add bubbles to a map, the bubble marker setting is added to the shape file layer. Create the Model and ViewModel as illustrated in the Data Binding topic and add the following code. Also set the MaxValue, MinValue, and ValuePath properties as illustrated in the following code sample.
 
-> _Note: Tooltip and Color Mappings for bubble is to be set as similar to tooltip and color mappings set in layers and ShapeSettings. For more details, refer Tooltip and Color Mappings section._
+> Note: Tooltip and Color Mappings for bubble is to be set as similar to tooltip and color mappings set in layers and ShapeSettings. For more details, refer Tooltip and Color Mappings section.
 
 
 
@@ -245,26 +245,26 @@ To add bubbles to a map, the bubble marker setting is added to the shape file la
 
 
 
-Legend
+## Legend
 
 A legend is a key used on a map, contains swatches of symbols with descriptions. It provides valuable information for interpreting what the map is displaying you, and can be represented in various colors, shapes or other identifiers based on the data. It gives a breakdown of what each symbol represents throughout the map.
 
-Visibility of Legend
+### Visibility of Legend
 
 The Legends can be made visible by setting the ShowLegend property of LegendSettings. 
 
-Positioning of Legend
+### Positioning of Legend
 
 The legend can be positioned in two ways.
 
 1. Absolute Position.
 2. Dock Position.
 
-Absolute Position
+### Absolute Position
 
 Based on the margin values of X and Y-axes, the Map legends can be positioned with the support of PositionX and PositionY properties available in LegendSettings. For positioning the legend based on margins corresponding to a map, Position value is set as _‘_None’.
 
-Dock Position
+### Dock Position
 
 The map legends can be positioned in following locations within the container.
 
@@ -282,15 +282,15 @@ The map legends can be positioned in following locations within the container.
 
 You can set this option by using Position property in LegendSettings.
 
-Legend Size
+### Legend Size
 
 The map legend size can be modified using Height and Width properties in LegendSettings.
 
-Legend for Shapes
+### Legend for Shapes
 
 The Layer shape type legends can be generated for each color mappings in shape settings. 
 
-> _Note:  Here, Equal Color Mapping code sample for shapeSettings with color mappings is referred._
+> Note:  Here, Equal Color Mapping code sample for shapeSettings with color mappings is referred.
 
 
 
@@ -326,19 +326,19 @@ The Layer shape type legends can be generated for each color mappings in shape s
 
 
 
-Interactive Legend
+### Interactive Legend
 
 The legends can be made interactive with an arrow mark indicating the exact range color in the legend when the mouse hovers over the corresponding shapes. You can enable this option by setting Mode property in LegendSettings value as “Interactive” and default value of Mode property is “Default” to enable the normal legend.
 
-Title for Interactive Legend
+### Title for Interactive Legend
 
 You can provide the title for interactive legend by using Title property in LegendSettings.
 
-Label for Interactive Legend
+### Label for Interactive Legend
 
 You can provide the left and right labels to interactive legend by using LeftLabel and RightLabel properties in LegendSettings. 
 
-> _Note:  Here, Range Color Mapping code snippet for shapeSettings with color mappings is referred._
+> Note:  Here, Range Color Mapping code snippet for shapeSettings with color mappings is referred.
 
 
 
@@ -372,7 +372,7 @@ You can provide the left and right labels to interactive legend by using LeftLab
 
 
 
-Bubble Legend
+### Bubble Legend
 
 A bubble legend feature is used to provide the key (legend) for another map element bubble. You can activate the Bubble legend by setting the enum “Type” in LegendSettings as “bubble” and this enables you to easily identify what value a particular bubble is representing.
 

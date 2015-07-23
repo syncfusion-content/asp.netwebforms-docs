@@ -11,7 +11,7 @@ documentation: ug
 
 Gantt contains built-in support to switch over to various schedule mode. You can achieve this by defining a schedule header type for the Gantt.
 
-Schedule Header Types
+## Schedule Header Types
 
 Gantt contains the following built-in schedule header types:
 

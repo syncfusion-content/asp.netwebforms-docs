@@ -41,7 +41,7 @@ Use the following code example for including time options in start date and end 
 
 {% highlight c# %}
 
-Gantt.aspx.cs
+
 
 
 
@@ -216,7 +216,7 @@ namespace ASP_Doc.Gantt
 }
 {% endhighlight  %}
 {% highlight html %}
-Gantt.aspx
+
 
 
 

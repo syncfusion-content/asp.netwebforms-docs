@@ -11,7 +11,7 @@ documentation: ug
 
 Maps control supports color customization to determine the exact combination of colors for shapes displayed in Maps and tooltip support to display additional information of shape data.
 
-Shapes Color Customization
+## Shapes Color Customization
 
 The Map control highly supports the customization of the shape’s color. The shape’s color can be customized using the following ways:
 
@@ -19,7 +19,7 @@ The Map control highly supports the customization of the shape’s color. The sh
 2. Color Mapping support.
 3. Color Palette support.
 
-Shape Settings 
+## Shape Settings 
 
 The ShapeSettings defines the basic customization settings of shapes in the map. 
 
@@ -65,7 +65,7 @@ The above properties of ShapeSettings are applied only when AutoFill property va
 
 
 
-Color Mapping
+## Color Mapping
 
 The Color Mapping support enables the customization of shape colors based on the underlying value of shape received from bounded data.
 
@@ -250,11 +250,11 @@ Here “Map.aspx.cs” is populated with datas of USA Election in “Map.aspx.cs
 
 
 
-ColorPalette
+## ColorPalette
 
 When AutoFill property is set to true, shapes are filled with default colors from built-in palettes or custom palette.
 
-ColorPalette
+## ColorPalette
 
 The ColorPalette property determines whether the auto fill colors are fetched from built-in color palettes or custom palette.
 
@@ -294,7 +294,7 @@ The ColorPalette property can be set with Palette1, Palette2, Palette3 and Custo
 
 
 
-CustomPalette
+## CustomPalette
 
 The CustomPalette property is used to set an array of colors to be auto filled in shapes.
 
@@ -350,7 +350,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 
 
-Tooltip
+## Tooltip
 
 The tooltip is displayed only when you set ShowTooltip to “True” in the shape layers. By default, it takes the property of the bound object that is referred in the ValuePath and displays its content on hovering the corresponding shape. 
 
@@ -383,7 +383,7 @@ The tooltip is displayed only when you set ShowTooltip to “True” in the shap
 
 
 
-Tooltip Template
+## Tooltip Template
 
 The TooltipTemplate property is used for customizing the template for tooltip.
 

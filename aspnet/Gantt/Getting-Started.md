@@ -326,7 +326,7 @@ The following screenshot displays the Gantt.
 
 
 
-Enable Toolbar
+#### Enable Toolbar
 
 Gantt control contains the toolbar options to edit, search, expand and collapse all records, indent, outdent, delete, and add a task. You can enable toolbar using Toolbar option.
 {% highlight html %}
@@ -347,13 +347,13 @@ The following screen shot displays a Tool bar in Gantt.
 
 
 
-> _Note:add, edit, delete options are enabled when enabling the allowEditing, allowAdding, allowDelete in the edit Settings._
+> Note:add, edit, delete options are enabled when enabling the allowEditing, allowAdding, allowDelete in the edit Settings.
 
-Enable sorting 
+#### Enable sorting 
 
 Gantt control has the sorting functionality for arranging the tasks in ascending or descending based on the particular column.
 
-Multicolumn sorting:
+#### Multicolumn sorting:
 
 Enable the multicolumn sorting in Gantt by setting AllowMultiSorting to “True”. You can sort multiple columns in Gantt by selecting the desired column header while holding the CTRL key.
 
@@ -375,19 +375,19 @@ Enable the multicolumn sorting in Gantt by setting AllowMultiSorting to “True�
 
 {% endhighlight %}
 
-Enable Editing
+#### Enable Editing
 
 You can enable editing using EditOption and AllowGanttChartEditing options.
 
-Cell Editing:
+#### Cell Editing:
 
 Modify the task details through the grid cell editing by setting the EditMode as CellEditing.
 
-Normal Editing:
+#### Normal Editing:
 
 Modify the task details through the edit dialog by setting the EditMode as Normal.
 
-Taskbar Editing:
+#### Taskbar Editing:
 
 Modify the task details through user interaction like resizing and dragging the taskbar.
 
@@ -415,9 +415,9 @@ The following screen shot displays the Gantt control with Enable Editing options
 
 
 
-> _Note: Both cellEditing and normal editing operations are performed through double click action._
+> Note: Both cellEditing and normal editing operations are performed through double click action.
 
-Enable Context Menu
+#### Enable Context Menu
 
 You can enable the context menu in Gantt by setting the EnableContextMenu to “True”.
 
@@ -443,25 +443,25 @@ The following screen shot displays Gantt chart with Enable Context menu option.
 
 
 
-Provide tasks relationship
+#### Provide tasks relationship
 
 In Gantt control, you have the predecessor support to show the relationship between two different tasks.
 
-Types:
+#### Types:
 
-Start to Start (SS)
+#### Start to Start (SS)
 
 You cannot start a task until the other task is also started.
 
-Start to Finish (SF)
+#### Start to Finish (SF)
 
 You cannot finish a task until the other task is started.
 
-Finish to Start (FS)
+#### Finish to Start (FS)
 
 You cannot start a task until the other task is completed.
 
-Finish to Finish (FF)
+#### Finish to Finish (FF)
 
 You cannot finish a task until the other task is completed.
 
@@ -489,7 +489,7 @@ The following screen shot displays the relationship between tasks.
 
 
 
-Provide Resources
+#### Provide Resources
 
 In ASP.NET MVCGantt, you can display and assign the resource for each task. Create a collection of JSON object, which contains id and name of the resource and assign it to ResourceCollection option. Then, specify the field name for id and name of the resource in the resource collection to ResourceIdMapping and ResourceNameMapping options. The name of the field which contains the actual resources assigned for a particular task in the DataSource is specified using ResourceInfoMapping.
 

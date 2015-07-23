@@ -160,7 +160,7 @@ The following output is the result of the above code example.
 
 
 
-> _Note: For information about DataManager with Grid check DataAdaptors concept._
+> Note: For information about DataManager with Grid check DataAdaptors concept.
 
 ### Load at once
 
