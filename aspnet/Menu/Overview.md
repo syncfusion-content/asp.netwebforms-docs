@@ -11,7 +11,7 @@ documentation: ug
 
 The Menu control supports displaying a Menu created from list items. The Menu is based on a hierarchy of UL and LI elements where the list items are rendered as sub-menu items.
 
-Key Features
+## Key Features
 
 UL/LI template: Requires only UL and LI list of items as input.
 

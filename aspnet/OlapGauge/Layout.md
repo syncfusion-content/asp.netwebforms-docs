@@ -7,193 +7,196 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-## Layout 
+# Layout 
 
 The OLAP Gauge control provides support to display multiple gauges in a structured layout. You can customize the layout using the ColumnsCount and RowsCount properties. These properties are used to specify the number of columns and rows for displaying controls.
 
-### Supported Layouts
+## Supported Layouts
 
 * Wrap Layout: Based on the available space, gauges are aligned and displayed automatically. 
 * Row count: Specifies the number of gauge controls to be displayed row-wise.
 * Column count: Specifies the number of gauge controls to be displayed column-wise.
-### Layout Customization 
+
+## Layout Customization 
 
 
 You can customize/limit the number of gauges to be displayed in the table with the help of the rowsCount and columnsCount properties.
 
-### Row Count
+## Row Count
 
 You can set the number of gauges to be displayed in row using rowsCount property. By default the value is 0.
 
 
 
-[ASP.NET]
+{% highlight html %}
 
-&lt;ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent" RowsCount="2"&gt;
+<ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent" RowsCount="2">
 
-        &lt;Scales&gt;
+        <Scales>
 
-            &lt;ej:CircularScales ShowRanges="true" Radius="150" ShowScaleBar="true" Size="1"  ShowIndicators="true" ShowLabels="true"&gt;
+            <ej:CircularScales ShowRanges="true" Radius="150" ShowScaleBar="true" Size="1"  ShowIndicators="true" ShowLabels="true">
 
-                &lt;Border Width ="0.5" /&gt;
+                <Border Width ="0.5" />
 
-                &lt;PointerCollection&gt;                    
+                <PointerCollection>                    
 
-                    &lt;ej:Pointers ShowBackNeedle="true" BackNeedleLength="20"  Length="125" Width="7" &gt;&lt;/ej:Pointers&gt;
+                    <ej:Pointers ShowBackNeedle="true" BackNeedleLength="20"  Length="125" Width="7" ></ej:Pointers>
 
-                    &lt;ej:Pointers Type="Marker" MarkerType="Diamond" DistanceFromScale="5" Placement="Center" BackgroundColor="#29A4D9" Length="25" Width="15"&gt;&lt;/ej:Pointers&gt;
+                    <ej:Pointers Type="Marker" MarkerType="Diamond" DistanceFromScale="5" Placement="Center" BackgroundColor="#29A4D9" Length="25" Width="15"></ej:Pointers>
 
-                &lt;/PointerCollection&gt;
+                </PointerCollection>
 
-                &lt;TickCollection&gt;
+                <TickCollection>
 
-                    &lt;ej:CircularTicks Type="Major" DistanceFromScale="2" Height="16" Width="1" Color="#8c8c8c" /&gt;
+                    <ej:CircularTicks Type="Major" DistanceFromScale="2" Height="16" Width="1" Color="#8c8c8c" />
 
-                    &lt;ej:CircularTicks Type="Minor" Height="6" Width="1" DistanceFromScale="2" Color="#8c8c8c" /&gt;
+                    <ej:CircularTicks Type="Minor" Height="6" Width="1" DistanceFromScale="2" Color="#8c8c8c" />
 
-                &lt;/TickCollection&gt;
+                </TickCollection>
 
-                &lt;LabelCollection&gt;
+                <LabelCollection>
 
-                    &lt;ej:CircularLabels Color="#8c8c8c"&gt;&lt;/ej:CircularLabels&gt;
+                    <ej:CircularLabels Color="#8c8c8c"></ej:CircularLabels>
 
-                &lt;/LabelCollection&gt;
+                </LabelCollection>
 
-                &lt;RangeCollection&gt;
+                <RangeCollection>
 
-                    &lt;ej:CircularRanges DistanceFromScale="-5" BackgroundColor="#fc0606"&gt;
+                    <ej:CircularRanges DistanceFromScale="-5" BackgroundColor="#fc0606">
 
-                        &lt;Border Color="#fc0606"/&gt;&lt;/ej:CircularRanges&gt;
+                        <Border Color="#fc0606"/></ej:CircularRanges>
 
-                    &lt;ej:CircularRanges DistanceFromScale="-5"&gt;&lt;/ej:CircularRanges&gt;
+                    <ej:CircularRanges DistanceFromScale="-5"></ej:CircularRanges>
 
-                &lt;/RangeCollection&gt;
+                </RangeCollection>
 
-                &lt;CustomLabelCollection&gt;
+                <CustomLabelCollection>
 
-                    &lt;ej:CircularCustomLabel Color="#666666"&gt;
+                    <ej:CircularCustomLabel Color="#666666">
 
-                        &lt;Position X="180" Y="290" /&gt;
+                        <Position X="180" Y="290" />
 
-                        &lt;Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"&gt;&lt;/Font&gt;
+                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
 
-                    &lt;/ej:CircularCustomLabel&gt;
+                    </ej:CircularCustomLabel>
 
-                    &lt;ej:CircularCustomLabel Color="#666666"&gt;
+                    <ej:CircularCustomLabel Color="#666666">
 
-                        &lt;Position X="180" Y="320" /&gt;
+                        <Position X="180" Y="320" />
 
-                        &lt;Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"&gt;&lt;/Font&gt;
+                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
 
-                    &lt;/ej:CircularCustomLabel&gt;
+                    </ej:CircularCustomLabel>
 
-                    &lt;ej:CircularCustomLabel Color="#666666"&gt;
+                    <ej:CircularCustomLabel Color="#666666">
 
-                        &lt;Position X="180" Y="150" /&gt;
+                        <Position X="180" Y="150" />
 
-                        &lt;Font Size="12px" FontFamily="Segoe UI" FontStyle="Normal"&gt;&lt;/Font&gt;
+                        <Font Size="12px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
 
-                    &lt;/ej:CircularCustomLabel&gt;
+                    </ej:CircularCustomLabel>
 
-                &lt;/CustomLabelCollection&gt;   
+                </CustomLabelCollection>   
 
-            &lt;/ej:CircularScales&gt;
+            </ej:CircularScales>
 
-        &lt;/Scales&gt;
+        </Scales>
 
-&lt;/ej:OlapGauge&gt;
-
-
-
-{ ![](Layout_images/Layout_img1.png) | markdownify }
-{:.image }
+</ej:OlapGauge>
 
 
-### Column Count
+{% endhighlight %}
+
+ ![](Layout_images/Layout_img1.png) 
+
+
+
+## Column Count
 
 You can set the number of gauges to be displayed in column using columnsCount property. By default the value is 0.
 
 
 
-[ASP.NET]
+{% highlight html %}
 
-&lt;ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent" ColumnsCount="2"&gt;
+<ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent" ColumnsCount="2">
 
-        &lt;Scales&gt;
+        <Scales>
 
-            &lt;ej:CircularScales ShowRanges="true" Radius="150" ShowScaleBar="true" Size="1"  ShowIndicators="true" ShowLabels="true"&gt;
+            <ej:CircularScales ShowRanges="true" Radius="150" ShowScaleBar="true" Size="1"  ShowIndicators="true" ShowLabels="true">
 
-                &lt;Border Width ="0.5" /&gt;
+                <Border Width ="0.5" />
 
-                &lt;PointerCollection&gt;                    
+                <PointerCollection>                    
 
-                    &lt;ej:Pointers ShowBackNeedle="true" BackNeedleLength="20"  Length="125" Width="7" &gt;&lt;/ej:Pointers&gt;
+                    <ej:Pointers ShowBackNeedle="true" BackNeedleLength="20"  Length="125" Width="7" ></ej:Pointers>
 
-                    &lt;ej:Pointers Type="Marker" MarkerType="Diamond" DistanceFromScale="5" Placement="Center" BackgroundColor="#29A4D9" Length="25" Width="15"&gt;&lt;/ej:Pointers&gt;
+                    <ej:Pointers Type="Marker" MarkerType="Diamond" DistanceFromScale="5" Placement="Center" BackgroundColor="#29A4D9" Length="25" Width="15"></ej:Pointers>
 
-                &lt;/PointerCollection&gt;
+                </PointerCollection>
 
-                &lt;TickCollection&gt;
+                <TickCollection>
 
-                    &lt;ej:CircularTicks Type="Major" DistanceFromScale="2" Height="16" Width="1" Color="#8c8c8c" /&gt;
+                    <ej:CircularTicks Type="Major" DistanceFromScale="2" Height="16" Width="1" Color="#8c8c8c" />
 
-                    &lt;ej:CircularTicks Type="Minor" Height="6" Width="1" DistanceFromScale="2" Color="#8c8c8c" /&gt;
+                    <ej:CircularTicks Type="Minor" Height="6" Width="1" DistanceFromScale="2" Color="#8c8c8c" />
 
-                &lt;/TickCollection&gt;
+                </TickCollection>
 
-                &lt;LabelCollection&gt;
+                <LabelCollection>
 
-                    &lt;ej:CircularLabels Color="#8c8c8c"&gt;&lt;/ej:CircularLabels&gt;
+                    <ej:CircularLabels Color="#8c8c8c"></ej:CircularLabels>
 
-                &lt;/LabelCollection&gt;
+                </LabelCollection>
 
-                &lt;RangeCollection&gt;
+                <RangeCollection>
 
-                    &lt;ej:CircularRanges DistanceFromScale="-5" BackgroundColor="#fc0606"&gt;
+                    <ej:CircularRanges DistanceFromScale="-5" BackgroundColor="#fc0606">
 
-                        &lt;Border Color="#fc0606"/&gt;&lt;/ej:CircularRanges&gt;
+                        <Border Color="#fc0606"/></ej:CircularRanges>
 
-                    &lt;ej:CircularRanges DistanceFromScale="-5"&gt;&lt;/ej:CircularRanges&gt;
+                    <ej:CircularRanges DistanceFromScale="-5"></ej:CircularRanges>
 
-                &lt;/RangeCollection&gt;
+                </RangeCollection>
 
-                &lt;CustomLabelCollection&gt;
+                <CustomLabelCollection>
 
-                    &lt;ej:CircularCustomLabel Color="#666666"&gt;
+                    <ej:CircularCustomLabel Color="#666666">
 
-                        &lt;Position X="180" Y="290" /&gt;
+                        <Position X="180" Y="290" />
 
-                        &lt;Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"&gt;&lt;/Font&gt;
+                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
 
-                    &lt;/ej:CircularCustomLabel&gt;
+                    </ej:CircularCustomLabel>
 
-                    &lt;ej:CircularCustomLabel Color="#666666"&gt;
+                    <ej:CircularCustomLabel Color="#666666">
 
-                        &lt;Position X="180" Y="320" /&gt;
+                        <Position X="180" Y="320" />
 
-                        &lt;Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"&gt;&lt;/Font&gt;
+                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
 
-                    &lt;/ej:CircularCustomLabel&gt;
+                    </ej:CircularCustomLabel>
 
-                    &lt;ej:CircularCustomLabel Color="#666666"&gt;
+                    <ej:CircularCustomLabel Color="#666666">
 
-                        &lt;Position X="180" Y="150" /&gt;
+                        <Position X="180" Y="150" />
 
-                        &lt;Font Size="12px" FontFamily="Segoe UI" FontStyle="Normal"&gt;&lt;/Font&gt;
+                        <Font Size="12px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
 
-                    &lt;/ej:CircularCustomLabel&gt;
+                    </ej:CircularCustomLabel>
 
-                &lt;/CustomLabelCollection&gt;   
+                </CustomLabelCollection>   
 
-            &lt;/ej:CircularScales&gt;
+            </ej:CircularScales>
 
-        &lt;/Scales&gt;
+        </Scales>
 
-    &lt;/ej:OlapGauge&gt;
+    </ej:OlapGauge>
 
 
+{% endhighlight %}
 
-{ ![](Layout_images/Layout_img2.png) | markdownify }
-{:.image }
+![](Layout_images/Layout_img2.png)
+
 
 

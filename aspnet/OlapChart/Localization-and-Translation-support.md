@@ -135,7 +135,7 @@ _Note: In order to render the localized OLAP Chart, you are required to reset th
 1. _OLAP Chart Control_
 2. _OLAP Cube_
 
-Localizing Control Information:
+## Localizing Control Information:
 
 To apply control side localization, refer the following code example:
 
@@ -150,7 +150,7 @@ ej.olap.OlapChart.locale["zh-CN"] = {
 {% endhighlight %}
 
 
-Localizing Cube Information:
+## Localizing Cube Information:
 
 To get the localized Cube information, “_Locale__Identifier"_ has to be set in the connection string:
 

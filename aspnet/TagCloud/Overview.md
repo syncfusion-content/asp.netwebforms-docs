@@ -11,7 +11,7 @@ documentation: ug
 
 The ASP.NET TagCloud control allows the user to display a list of links or tags with a structured cloud format where the importance of the tags can differentiate various font sizes, colors, and styles.
 
-Key Features
+## Key Features
 
 * Data binding: Supports data binding with JSON data as well as remote data.
 * Accessible: Supports adding or removing tags dynamically.

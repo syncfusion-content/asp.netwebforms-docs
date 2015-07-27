@@ -97,7 +97,9 @@ Level of attributes down the hierarchy.</td></tr>
 User-defined hierarchy</td><td>
 Members of a dimension in a hierarchical structure.</td></tr>
 </table>
-Attribute Hierarchy
+
+
+### Attribute Hierarchy
 
 Attribute hierarchy contains the following levels:
 
@@ -105,7 +107,7 @@ Attribute hierarchy contains the following levels:
 * Intermediate levels if the attribute hierarchy is a parent-child hierarchy.
 * An optional (All) level (IsAggregatable=True) containing the aggregated value of the attribute hierarchy's leaf members, with the member of the (All) level also known as the (All) member.
 
-User-Defined Hierarchy
+### User-Defined Hierarchy
 
 User-defined hierarchy organizes the members of a dimension into hierarchical structure and provides navigation paths in a cube. For example, take a dimension table that supports three attributes such as Year, Quarter and Month. The Year, Quarter and Month attributes are used to construct a user-defined hierarchy, named Calendar, in the time dimension.
 
@@ -176,7 +178,7 @@ Level Element</td></tr>
 </table>
 
 
-Draggable and non-draggable nodes in the Cube Dimension Browser
+### Draggable and non-draggable nodes in the Cube Dimension Browser
 
 The dragabble nodes are:
 
@@ -195,15 +197,15 @@ The nodes that are not allowed to be dragged are:
 
 Axis Element Builder allows you to build the element in an axis of the OLAP Client. It supports three axes namely: Categorical, Series and Slicer. Based on the elements constructed OLAP Grid and OLAP Chart will display the resultant data.
 
-Categorical (Column)
+### Categorical (Column)
 
 The categorical axis defines one or more dimensions that are displayed along the chart's y-axis as labels and in the columns of the grid. If more than one dimension is on the categorical axis, the Chart/Grid will stack each dimension. The order in which the dimensions are stacked on the Chart/Grid is based on the order that they appear on the categorical axis.
 
-Series (Row)
+### Series (Row)
 
 The series axis defines one or more dimensions that are displayed along the chart's x-axis as labels and in the rows of the grid. If more than one dimension is on the series axis, the Chart/Grid will stack each dimension. The order in which the dimensions are stacked on the Chart/Grid is based on the order that they appear on the series axis.
 
-Slicer
+### Slicer
 
 The slicer axis is used as a filter to narrow the focus of the multidimensional data displayed in the Chart/Grid. The slicer axis lets you analyze any member of a dimension, in-depth. For the slicer to display the member's data, that member must not be present on both categorical axis and series axis.
 
@@ -298,7 +300,7 @@ Split Button can be removed with the help of the Remove option available while h
 
 ## Elements Editor
 
-Measure Editor 
+### Measure Editor 
 
 Measure Editor is a dialog that displays the collection of measures in the current report. 
 
@@ -308,7 +310,7 @@ Measure Editor is a dialog that displays the collection of measures in the curre
 
 
 
-Remove a Measure 
+### Remove a Measure 
 
 To remove a measure, click the Remove button next to the corresponding measure while hovering over it. To avoid removing the current selection, click Cancel.
 
@@ -318,7 +320,7 @@ To remove a measure, click the Remove button next to the corresponding measure
 
 
 
-Member Editor
+### Member Editor
 
 Member Editor is a tree-view control that displays the member elements of the current dimension.
 
@@ -328,14 +330,14 @@ Member Editor is a tree-view control that displays the member elements of the cu
 
 
 
-Represent State of Nodes of a dimension
+### Represent State of Nodes of a dimension
 
 Nodes are represented in two states, namely:
 
 * Checked
 * Unchecked
 
-Select and Clear Nodes of a Dimension in the Member Editor
+### Select and Clear Nodes of a Dimension in the Member Editor
 
 The option Select is provided in such a way that on selecting the parent node, its corresponding child nodes are automatically selected. If a leaf node is selected, it does not affect others since it is the final node on a tree.
 
@@ -347,7 +349,7 @@ Unchecking the check box option is provided in such a way that on deselecting th
 
 
 
-Check All and Uncheck All
+### Check All and Uncheck All
 
 * Check All – Will select all nodes in the tree view.
 * Uncheck All – Will uncheck all nodes in the tree view.

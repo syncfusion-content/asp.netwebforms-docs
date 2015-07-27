@@ -11,7 +11,7 @@ documentation: ug
 
 The Toolbar control supports displaying a list of tools within a web page. This control is capable of customizing the Toolbar items with any functionality by using enriched client-side methods. This control is composed of collection of unordered lists containing text and images placed into a div.
 
-Key Features
+## Key Features
 
 * Modern look: Rich appearance with theme support.
 * RTL: Supports right-to-left alignment.

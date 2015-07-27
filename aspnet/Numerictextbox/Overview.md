@@ -11,7 +11,7 @@ documentation: ug
 
 Essential ASP.NET Editors include Numeric, Percentage and Currency Text Box controls. These controls have Spin buttons to increase or decrease the values in the TextBox. NumericTextBox is used to display only numeric values. 
 
-Key Features
+## Key Features
 
 * Min and Max Values— Specifies value range for the TextBox.
 * Spin Buttons— Enables you to increase or decrease the current value in the TextBox.

@@ -11,7 +11,7 @@ documentation: ug
 
 The TimePicker control for ASP.NET allows you to select a time value. The available times can be restricted to a range by setting minimum and maximum time values. The TimePicker sets the time as a mask to prevent from entering invalid values. 
 
-Key Features
+## Key Features
 
 * Time format: Supports all valid time formats.
 * Localization: Supports localization with different cultures.

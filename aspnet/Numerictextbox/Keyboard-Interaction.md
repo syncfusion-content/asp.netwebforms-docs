@@ -39,7 +39,7 @@ Focuses the next element</td></tr>
 </table>
 
 
-### Configuring Keyboard Navigation
+## Configuring Keyboard Navigation
 
 The following steps explain the implementation of the keyboard interaction in the NumericTextbox.
 

@@ -7,10 +7,10 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-## OlapGauge: Elements
+# OlapGauge: Elements
 
-{ ![](OlapGauge-Elements_images/OlapGauge-Elements_img1.png) | markdownify }
-{:.image }
+![](OlapGauge-Elements_images/OlapGauge-Elements_img1.png) 
+
 
 
 * Scale: Range of numbers bound by a minimum and a maximum value.

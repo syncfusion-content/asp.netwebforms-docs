@@ -135,7 +135,7 @@ Run the above code to render the following output.
 
 
 
-### Rounded Corner
+## Rounded Corner
 
 You can customize the shape of the TimePicker control from regular rectangular shape to rounded rectangle shape by using the ShowRoundedCornerproperty set to false by default.
 

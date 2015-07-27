@@ -7,7 +7,7 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-## Localization and Translation Support
+# Localization and Translation Support
 
 Localization is the__process of customizing the user interface (UI) as locale-specific in order to display regional data. Using this feature, you can display the data in a specific language and culture, of a particular country or region. The ASP.NET OlapGauge control provides inherent support to localize its UI.
 
@@ -67,91 +67,94 @@ The following code example illustrates you on how to localize OlapGuage’s User
 
 
 
-[ASP.NET]
 
-&lt;ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent" Locale="fr-FR"&gt;
+{% highlight html %}
 
-        &lt;Scales&gt;
+<ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent" Locale="fr-FR">
 
-            &lt;ej:CircularScales ShowRanges="true" Radius="150" ShowScaleBar="true" Size="1"  ShowIndicators="true" ShowLabels="true" &gt;
+        <Scales>
 
-                &lt;Border Width ="0.5" /&gt;
+            <ej:CircularScales ShowRanges="true" Radius="150" ShowScaleBar="true" Size="1"  ShowIndicators="true" ShowLabels="true" >
 
-                &lt;PointerCollection&gt;                    
+                <Border Width ="0.5" />
 
-                    &lt;ej:Pointers Type="Needle" ShowBackNeedle="true" BackNeedleLength="20"  Length="120" Width="7" NeedleType="Triangle" &gt;&lt;/ej:Pointers&gt;
+                <PointerCollection>                    
 
-                    &lt;ej:Pointers Type="Marker" MarkerType="Diamond" DistanceFromScale="5" Placement="Center" BackgroundColor="#29A4D9" Length="25" Width="15"&gt;&lt;/ej:Pointers&gt;
+                    <ej:Pointers Type="Needle" ShowBackNeedle="true" BackNeedleLength="20"  Length="120" Width="7" NeedleType="Triangle" ></ej:Pointers>
 
-                &lt;/PointerCollection&gt;
+                    <ej:Pointers Type="Marker" MarkerType="Diamond" DistanceFromScale="5" Placement="Center" BackgroundColor="#29A4D9" Length="25" Width="15"></ej:Pointers>
 
-                &lt;TickCollection&gt;
+                </PointerCollection>
 
-                    &lt;ej:CircularTicks Type="Major" DistanceFromScale="15" Height="16" Width="1" Color="#8c8c8c" /&gt;
+                <TickCollection>
 
-                    &lt;ej:CircularTicks Type="Minor" DistanceFromScale="2" Height="6" Width="1" Color="#8c8c8c" /&gt;
+                    <ej:CircularTicks Type="Major" DistanceFromScale="15" Height="16" Width="1" Color="#8c8c8c" />
 
-                &lt;/TickCollection&gt;
+                    <ej:CircularTicks Type="Minor" DistanceFromScale="2" Height="6" Width="1" Color="#8c8c8c" />
 
-                &lt;LabelCollection&gt;
+                </TickCollection>
 
-                    &lt;ej:CircularLabels Color="#8c8c8c"&gt;&lt;/ej:CircularLabels&gt;
+                <LabelCollection>
 
-                &lt;/LabelCollection&gt;
+                    <ej:CircularLabels Color="#8c8c8c"></ej:CircularLabels>
 
-                &lt;RangeCollection&gt;
+                </LabelCollection>
 
-                    &lt;ej:CircularRanges DistanceFromScale="-10" BackgroundColor="black" Size="7"&gt;
+                <RangeCollection>
 
-                        &lt;Border Color="red"/&gt;&lt;/ej:CircularRanges&gt;
+                    <ej:CircularRanges DistanceFromScale="-10" BackgroundColor="black" Size="7">
 
-                    &lt;ej:CircularRanges DistanceFromScale="-10" Size="7"&gt;&lt;/ej:CircularRanges&gt;
+                        <Border Color="red"/></ej:CircularRanges>
 
-                &lt;/RangeCollection&gt;
+                    <ej:CircularRanges DistanceFromScale="-10" Size="7"></ej:CircularRanges>
 
-                &lt;CustomLabelCollection&gt;
+                </RangeCollection>
 
-                    &lt;ej:CircularCustomLabel Color="red"&gt;
+                <CustomLabelCollection>
 
-                        &lt;Position X="180" Y="290" /&gt;
+                    <ej:CircularCustomLabel Color="red">
 
-                        &lt;Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"&gt;&lt;/Font&gt;
+                        <Position X="180" Y="290" />
 
-                    &lt;/ej:CircularCustomLabel&gt;
+                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
 
-                    &lt;ej:CircularCustomLabel Color="red"&gt;
+                    </ej:CircularCustomLabel>
 
-                        &lt;Position X="180" Y="320" /&gt;
+                    <ej:CircularCustomLabel Color="red">
 
-                        &lt;Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"&gt;&lt;/Font&gt;
+                        <Position X="180" Y="320" />
 
-                    &lt;/ej:CircularCustomLabel&gt;
+                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
 
-                    &lt;ej:CircularCustomLabel Color="red"&gt;
+                    </ej:CircularCustomLabel>
 
-                        &lt;Position X="180" Y="150" /&gt;
+                    <ej:CircularCustomLabel Color="red">
 
-                        &lt;Font Size="12px" FontFamily="Segoe UI" FontStyle="Normal"&gt;&lt;/Font&gt;
+                        <Position X="180" Y="150" />
 
-                    &lt;/ej:CircularCustomLabel&gt;
+                        <Font Size="12px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
 
-                &lt;/CustomLabelCollection&gt;   
+                    </ej:CircularCustomLabel>
 
-            &lt;/ej:CircularScales&gt;
+                </CustomLabelCollection>   
 
-        &lt;/Scales&gt;
+            </ej:CircularScales>
 
-    &lt;/ej:OlapGauge&gt;
+        </Scales>
 
-&lt;/asp:Content&gt;
+    </ej:OlapGauge>
+
+</asp:Content>
+
+{% endhighlight %}
 
 
 
+{% highlight html %}
 
+<asp:Content ID="Content2" runat="server" ContentPlaceHolderID="ScriptSection">
 
-&lt;asp:Content ID="Content2" runat="server" ContentPlaceHolderID="ScriptSection"&gt;
-
-    &lt;script type="text/javascript"&gt;
+    <script type="text/javascript">
 
         ej.olap.OlapGauge.locale["fr-FR"] = {
 
@@ -175,26 +178,27 @@ The following code example illustrates you on how to localize OlapGuage’s User
 
         }
 
-    &lt;/script&gt;
+    </script>
 
-&lt;/asp:Content&gt;
+</asp:Content>
+
+{% endhighlight %}
 
 
+![C:/Users/labuser/Desktop/note.jpg](Localization-and-Translation-Support_images/Localization-and-Translation-Support_img1.jpeg) 
 
-{ ![C:/Users/labuser/Desktop/note.jpg](Localization-and-Translation-Support_images/Localization-and-Translation-Support_img1.jpeg) | markdownify }
-{:.image }
 _Note: In order to render the localized OLAP Gauge, You are required to reset the content available in both_
 
 1. _OLAP Gauge Control_
 2. _OLAP Cube_
 
-Localizing Control Information:
+## Localizing Control Information:
 
 To apply control side localization, refer the following code example:
 
 
 
-[HTML]
+{% highlight html %}
 
 ej.olap.OlapGauge.locale["zh-CN"] = {
 
@@ -202,13 +206,17 @@ ej.olap.OlapGauge.locale["zh-CN"] = {
 
 }
 
-Localizing Cube Information:
+
+{% endhighlight %}
+
+## Localizing Cube Information:
 
 To render the localized Cube information,__set “_Locale__Identifier”___in the connection string.
 
 
 
-[C#]
+
+{% highlight C# %}
 
 //1036 refers to “fr-FR” culture.
 
@@ -220,10 +228,11 @@ DataManager.Culture = new System.Globalization.CultureInfo(1036);
 
 DataManager.OverrideDefaultFormatStrings = true;
 
+{% endhighlight  %}
 
 The following screenshot displays the OlapGauge with French localization.
 
-{ ![](Localization-and-Translation-Support_images/Localization-and-Translation-Support_img2.png) | markdownify }
-{:.image }
+![](Localization-and-Translation-Support_images/Localization-and-Translation-Support_img2.png) 
+
 
 

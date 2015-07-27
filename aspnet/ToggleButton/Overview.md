@@ -11,7 +11,7 @@ documentation: ug
 
 The Toggle Button allows you to perform the toggle option by using checked and unchecked state. The Toggle Button control displays both text and images. The value given in the Text property is displayed on the ToggleButton. 
 
-Key Features
+## Key Features
 
 * Trendy Look: Rich Appearance with Theme Support.
 * RTL: Supports Right to Left alignment.

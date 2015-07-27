@@ -19,7 +19,7 @@ Grouping: Allows you to place more than one dimension on rows or columns. You ca
 
 ## Filtering 
 
-Filtering by Member
+### Filtering by Member
 
 After you click Split Button, Member Editor Dialog opens and through that you can check or uncheck the nodes to filter the members. Based on the selected members in the Member Editor Dialog, OLAPReport gets updated and generates the MDX query accordingly.  
 
@@ -31,15 +31,15 @@ After you click Split Button, Member Editor Dialog opens and through that you ca
 
 The above filter illustrates that the members France and Germany, along with Queensland and South Australia are filtered from the Grid and Chart view.  
 
-Filtering by Value
+### Filtering by Value
 
 The Filtering tab in the Sorting and Filtering dialog box of OLAP Client provides you with options to specify custom filters on the multidimensional data. It enables you to filter the rows and columns of the current (active) Measure. 
 
-Column Filter
+### Column Filter
 
 Column Filter checks each and every row of a column against the filter condition. The column is included in the result set, if all the rows of that column satisfy the condition, else that column is filtered.
 
-Row Filter
+### Row Filter
 
 Row Filter checks each and every column of a row against the filter condition. The row is included in the result set, if all the columns of that row satisfy the condition, else that row is filtered.
 

@@ -11,7 +11,7 @@ documentation: ug
 
 The OLAP Chart control for ASP.NET is a lightweight control that reads OLAP information and visualizes it in graphical format with the ability to drill up and down.
 
-Key Features
+## Key Features
 
 The key features of the OLAP Chart control is listed as follows:
 

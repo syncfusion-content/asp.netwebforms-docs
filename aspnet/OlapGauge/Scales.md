@@ -7,97 +7,99 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-## Scales
+# Scales
 
 Scale is a basic unit of radial gauge. You can customize the gauge scales by using properties such as radius, minimum, scale direction, interval values etc. 
 
-### Resizing the Scale Bar
+## Resizing the Scale Bar
 
 Radius of the Scale Bar is changed with the help of scaleRadius property and in order to make ScaleBar visible, set showScaleBar property to ‘true’. You can set size of the Scale Bar with the help of scaleBareSize and border width using scaleBorderWidth property. 
 
 
 
-[ASP.NET]
 
-  &lt;ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent"&gt;
+{% highlight html %}
 
-        &lt;Frame FrameType="HalfCircle"/&gt;
+  <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
-        &lt;Scales&gt;
+        <Frame FrameType="HalfCircle"/>
 
-            &lt;ej:CircularScales ShowRanges="true" Radius="180" ShowScaleBar="true" Size="2"  ShowIndicators="true" ShowLabels="true"&gt;
+        <Scales>
 
-&lt;Border Width ="2.5" /&gt;
+            <ej:CircularScales ShowRanges="true" Radius="180" ShowScaleBar="true" Size="2"  ShowIndicators="true" ShowLabels="true">
 
-                &lt;PointerCollection&gt;                    
+<Border Width ="2.5" />
 
-                    &lt;ej:Pointers ShowBackNeedle="true" BackNeedleLength="20"  Length="125" Width="7" &gt;&lt;/ej:Pointers&gt;
+                <PointerCollection>                    
 
-                    &lt;ej:Pointers Type="Marker" MarkerType="Diamond" DistanceFromScale="5" Placement="Center" BackgroundColor="#29A4D9" Length="25" Width="15"&gt;&lt;/ej:Pointers&gt;
+                    <ej:Pointers ShowBackNeedle="true" BackNeedleLength="20"  Length="125" Width="7" ></ej:Pointers>
 
-                &lt;/PointerCollection&gt;
+                    <ej:Pointers Type="Marker" MarkerType="Diamond" DistanceFromScale="5" Placement="Center" BackgroundColor="#29A4D9" Length="25" Width="15"></ej:Pointers>
 
-                &lt;TickCollection&gt;
+                </PointerCollection>
 
-                    &lt;ej:CircularTicks Type="Major" DistanceFromScale="2" Height="16" Width="1" Color="#8c8c8c" /&gt;
+                <TickCollection>
 
-                    &lt;ej:CircularTicks Type="Minor" Height="6" Width="1" DistanceFromScale="2" Color="#8c8c8c" /&gt;
+                    <ej:CircularTicks Type="Major" DistanceFromScale="2" Height="16" Width="1" Color="#8c8c8c" />
 
-                &lt;/TickCollection&gt;
+                    <ej:CircularTicks Type="Minor" Height="6" Width="1" DistanceFromScale="2" Color="#8c8c8c" />
 
-                &lt;LabelCollection&gt;
+                </TickCollection>
 
-                    &lt;ej:CircularLabels Color="#8c8c8c"&gt;&lt;/ej:CircularLabels&gt;
+                <LabelCollection>
 
-                &lt;/LabelCollection&gt;
+                    <ej:CircularLabels Color="#8c8c8c"></ej:CircularLabels>
 
-                &lt;RangeCollection&gt;
+                </LabelCollection>
 
-                    &lt;ej:CircularRanges DistanceFromScale="-5" BackgroundColor="#fc0606"&gt;
+                <RangeCollection>
 
-                        &lt;Border Color="#fc0606"/&gt;&lt;/ej:CircularRanges&gt;
+                    <ej:CircularRanges DistanceFromScale="-5" BackgroundColor="#fc0606">
 
-                    &lt;ej:CircularRanges DistanceFromScale="-5"&gt;&lt;/ej:CircularRanges&gt;
+                        <Border Color="#fc0606"/></ej:CircularRanges>
 
-                &lt;/RangeCollection&gt;
+                    <ej:CircularRanges DistanceFromScale="-5"></ej:CircularRanges>
 
-                &lt;CustomLabelCollection&gt;
+                </RangeCollection>
 
-                    &lt;ej:CircularCustomLabel Color="#666666"&gt;
+                <CustomLabelCollection>
 
-                        &lt;Position X="180" Y="290" /&gt;
+                    <ej:CircularCustomLabel Color="#666666">
 
-                        &lt;Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"&gt;&lt;/Font&gt;
+                        <Position X="180" Y="290" />
 
-                    &lt;/ej:CircularCustomLabel&gt;
+                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
 
-                    &lt;ej:CircularCustomLabel Color="#666666"&gt;
+                    </ej:CircularCustomLabel>
 
-                        &lt;Position X="180" Y="320" /&gt;
+                    <ej:CircularCustomLabel Color="#666666">
 
-                        &lt;Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"&gt;&lt;/Font&gt;
+                        <Position X="180" Y="320" />
 
-                    &lt;/ej:CircularCustomLabel&gt;
+                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
 
-                    &lt;ej:CircularCustomLabel Color="#666666"&gt;
+                    </ej:CircularCustomLabel>
 
-                        &lt;Position X="180" Y="150" /&gt;
+                    <ej:CircularCustomLabel Color="#666666">
 
-                        &lt;Font Size="12px" FontFamily="Segoe UI" FontStyle="Normal"&gt;&lt;/Font&gt;
+                        <Position X="180" Y="150" />
 
-                    &lt;/ej:CircularCustomLabel&gt;
+                        <Font Size="12px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
 
-                &lt;/CustomLabelCollection&gt;   
+                    </ej:CircularCustomLabel>
 
-            &lt;/ej:CircularScales&gt;
+                </CustomLabelCollection>   
 
-        &lt;/Scales&gt;
+            </ej:CircularScales>
 
-    &lt;/ej:OlapGauge&gt;
+        </Scales>
+
+    </ej:OlapGauge>
 
 
+{% endhighlight  %}
 
-{ ![](Scales_images/Scales_img1.png) | markdownify }
-{:.image }
+ ![](Scales_images/Scales_img1.png) 
+
 
 

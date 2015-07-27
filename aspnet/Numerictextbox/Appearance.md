@@ -35,7 +35,7 @@ By default, there are 13 themes support available for NumericTextbox control nam
 
 The CSS properties can be customized by using the CssClass in the NumericTextbox. You can customize the NumericTextbox with various CSS properties to appear like your likable control.
 
-## Configure CSS Class
+### Configure CSS Class
 
 Add the following code example in your ASPX page to render the NumericTextbox control with the customized style.
 
