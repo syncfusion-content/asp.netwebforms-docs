@@ -9,21 +9,19 @@ documentation: ug
 
 # Server-side events
 
-{% highlight html %}
 
 <table>
 <tr>
-<td>
-Event Name</td><td>
-Description</td><td>
-Parameters</td></tr>
+<th>
+Event Name</th><th>
+Description</th><th>
+Parameters</th></tr>
 <tr>
 <td>
 OnChange</td><td>
 Event is triggered, when the rating value changes.</td><td>
 (Object Sender, RatingEventArgs e)e.Value - value of the Rating control</td></tr>
 </table>
-{% endhighlight %}
 
 The following step explains you how to define server side event for Rating control.
 

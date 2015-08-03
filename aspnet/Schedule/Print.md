@@ -78,7 +78,7 @@ Execute the above code to render the following output.
 ![](Print_images/Print_img1.png)
 
 
-_Figure_ _121_: Schedule with print button_
+Figure 121 : Schedule with print button
 
 Click the print button to render the following output.
 
@@ -87,7 +87,7 @@ Click the print button to render the following output.
 ![](Print_images/Print_img2.png)
 
 
-_Figure_ _122__: Schedule with Print window_
+Figure 122 : Schedule with Print window
 
 ##Appointment Print
 
@@ -203,7 +203,7 @@ obj.print();
 ![](Print_images/Print_img3.png)
 
 
-_Figure_ _123_: Schedule with Print option in Context Menu_
+Figure 123 : Schedule with Print option in Context Menu
 
 * Now, the widow is promoted to new document with appointment details and print window opens.
 
@@ -212,5 +212,5 @@ _Figure_ _123_: Schedule with Print option in Context Menu_
 ![](Print_images/Print_img4.png)
 
 
-_Figure_ _124_: Schedule with Appointment Print_
+Figure 124 : Schedule with Appointment Print
 

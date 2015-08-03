@@ -11,34 +11,33 @@ documentation: ug
 
 * Schedule control is added with the context menu options that opens when you right-click over the cells or appointments. In addition to the default menu items available, it allows you to add the custom menu items and also the sub menu-items as per your requirement.
 
-contextMenuSettings
+###contextMenuSettings
 
 * It is a collection that holds the menu items data.
 
-enable
+###enable
 
 * It specifies whether to enable/disable the Context menu options.
 
-menuItems
+###menuItems
 
 * It holds the appointment and cell related menu and custom-menu options.
 
-appointment
+###appointment
 
 * This collection accepts the id, text and parent Id of the menu items that are to be displayed when you right-click the appointments. It can also include custom-menu items.
 
-cells
+###cells
 
 * This collection accepts the id, text and parent Id of the menu items that are to be displayed when you right-click the Schedule cells. It also include custom-menu items.
 
-Appointment Menu Items
+###Appointment Menu Items
 
 * By default, the appointment menu options are provided with 2 items namely Open Appointment and Delete Appointment. 
 * If you want to customize and use your own custom menu items, then you can replace the appointment menu items with their desired collections as explained in the following code.
 
 
 {% highlight html %}
-[ASP]
 
 
 
@@ -85,7 +84,7 @@ Execute the above code to render the following output.
 
  _Figure_ _98_:  schedule with appointment menu items_
 
-##Categorize 
+###Categorize 
 
 * A new default menu item is included in the appointment menu items to support the categorize option through context menu. 
 * The categorize data collection that are passed through the categorizesettings is utilised in rendering the categorize options in the context menu. 
@@ -193,7 +192,7 @@ public string color { set; get; }
 ![C:/Users/hariprasanths/Desktop/imagess/123/Capture2.PNG](Context-Menu_images/Context-Menu_img2.png)
 
 
-##Cells 
+###Cells 
 
 * By default, the cells menu options are provided with 5 items namely New Appointment, New Recurring Appointment, Today, Go to Date and Settings with sub-options for views, time-mode and highlighting business hours. 
 * You can customize and use your own custom menu itemsby replacing the cell menu items with the desired collection as explained in the following code example.
@@ -283,5 +282,5 @@ Execute the above code to render the following output when you right-click on th
 ![](Context-Menu_images/Context-Menu_img3.png)
 
 
- _Figure_ _100_:  schedule with cells._
+ Figure 100 :  schedule with cells.
 

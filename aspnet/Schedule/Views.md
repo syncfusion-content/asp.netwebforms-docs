@@ -49,7 +49,7 @@ SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 ![](Views_images/Views_img1.png)
 
 
-_Figure_ _84_: schedule with view customization._
+Figure 84 : schedule with view customization.
 
 ##Current View
 
@@ -94,7 +94,7 @@ SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 ![](Views_images/Views_img2.png)
 
 
-   _Figure_ _85_:  schedule with current view._
+   Figure 85 :  schedule with current view.
 
 Custom Date Rendering
 

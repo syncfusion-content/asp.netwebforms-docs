@@ -39,6 +39,7 @@ The Export type that is to be mentioned in the parameter takes any one of the fo
 
 The following code example of the service method needs to be added in-order to perform exporting in the PivotGrid.
 
+{% highlight C# %}
 
 public void Export(System.IO.Stream stream)
 
@@ -58,7 +59,7 @@ public void Export(System.IO.Stream stream)
 
 }
 
-
+{% endhighlight %}
 
  ![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/PivotGridExcelWeb.png](Exporting_images/Exporting_img1.png) 
 

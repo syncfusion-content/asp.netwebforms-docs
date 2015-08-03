@@ -68,14 +68,13 @@ The various keyboard shortcuts available within the Schedule control are as foll
 
 
 
-_Table_ _1_: List of keys and its usage_
+Table 1 : List of keys and its usage
 
-{% highlight html %}
 <table>
 <tr>
-<td>
-Keys</td><td>
-Usage</td></tr>
+<th>
+Keys</th><th>
+Usage</th></tr>
 <tr>
 <td>
 Esc</td><td>
@@ -137,8 +136,6 @@ Traverse forward through the appointments</td></tr>
 Shift + tab</td><td>
 Traverse backward through the appointments.</td></tr>
 </table>
-{% endhighlight %}
-
 
 
 
@@ -153,7 +150,6 @@ Once the required cells are selected, then a new appointment can be created for 
 
 
 {% highlight html %}
-[ASP]
 
 
 
@@ -182,5 +178,5 @@ SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 ![](Navigation_images/Navigation_img3.png)
 
 
-   _Figure_ _103_:  schedule with keyboard Navigation._
+   Figure 103 :  schedule with keyboard Navigation.
 

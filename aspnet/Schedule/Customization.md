@@ -458,7 +458,6 @@ The following code example is added to the previous code example of appointment 
 
 
 {% highlight html %}
-[ASP]
 
 <asp:Content ID="Content1" ContentPlaceHolderID="SampleHeading" runat="server">
 
@@ -893,21 +892,20 @@ _Figure_ _68_: schedule with appointment using customized appointment window._
 
 ## Hour Customization
 
-Schedule Start/End Hour
+###Schedule Start/End Hour
 
 You can customize the appearance of the Schedule control by setting the specific start and end hour to it. To set the specific start/end hour for a Schedule control, the following properties are required to be used.
 
-startHour
+###startHour
 
 * Specify the start hour to set for the Schedule control.
 
-endHour
+###endHour
 
 * Specify the end hour to set for the Schedule control.
 
 
 {% highlight html %}
-[ASP]
 
 
 
@@ -943,18 +941,18 @@ Execute the above code to render the output as follows with the Schedule control
 ![](Customization_images/Customization_img3.png)
 
 
-_Figure_ _107_:  schedule with hour customization._
+Figure 107 :  schedule with hour customization.
 
 ##Business hours
 
 * There is an option highlightBusinessHours in the Schedule control to enable/disable the action of highlighting the business hours. 
 * It is controlled with two additional options businessStartHour and businessEndHour to specify the time range to be defined as the business hours. By default, the business hours are highlighted in the Schedule control.
 
-##businessStartHour
+###businessStartHour
 
 * It allows you to specify the start time to indicate the business start hour.
 
-##businessEndHour
+###businessEndHour
 
 * It allows you to specify the end time to indicate the business end hour.
 
@@ -1000,7 +998,7 @@ Execute the above code to render the following output that explains the highligh
 
 ![](Customization_images/Customization_img4.png)
 
-   _Figure_ _108_:  schedule with Business hours_
+   Figure 108 :  schedule with Business hours
 
 
 
@@ -1047,7 +1045,7 @@ Execute the above code and the following screenshot displays the Schedule contro
 ![](Customization_images/Customization_img5.png)
 
 
-  _Figure_ _118_:  schedule with current time_
+  Figure 118:  schedule with current time
 
 ###Date Format
 
@@ -1177,7 +1175,7 @@ The following screenshot displays the Schedule control when time mode is set to 
 ![](Customization_images/Customization_img8.png)
 
 
-   _Figure_ _114_:  schedule time customization._
+   Figure 114 :  schedule time customization.
 
 ###TimeZone
 
@@ -1360,7 +1358,7 @@ $.views.helpers({ format: _getImages });
 ![](Customization_images/Customization_img9.png)
 
 
-  _Figure_ _115_:  schedule with timezone._
+  Figure 115 :  schedule with timezone.
 
 * In the above output, an appointment is initially created in the time-range 7.00am - 8.30am, it is saved in the timeslot between 9.00am – 10.30 am due to the time zone set to “UTC +2:00” in the Schedule control.
 
@@ -1380,7 +1378,7 @@ The following screenshot displays the Schedule control with the current time ind
 ![](Customization_images/Customization_img10.png)
 
 
- _Figure_ _116_:  schedule time customization_
+ Figure 116 :  schedule time customization
 
 The following code example explains how to disable the current time indicator from the Schedule control. 
 
@@ -1416,7 +1414,7 @@ SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 ![](Customization_images/Customization_img11.png)
 
 
-_Figure_ _117_:  schedule with show current time indicator._
+Figure 117 :  schedule with show current time indicator.
 
 
 

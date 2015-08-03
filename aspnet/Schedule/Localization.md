@@ -16,14 +16,13 @@ documentation: ug
 
 * The following table contains the Key values and its corresponding localized String values for en-US culture. Therefore, to apply your localization/culture to the schedule control, change the “value (string value)” against the “each Key”.
 
-_Table_ _2_: List of keys and string values_
+Table 2 : List of keys and string values
 
-{% highlight html %}
 <table>
 <tr>
-<td>
-    Key</td><td>
-   Value</td></tr>
+<th>
+    Key</th><th>
+   Value</th></tr>
 <tr>
 <td>
     ReminderWindowTitle</td><td>
@@ -349,7 +348,6 @@ _Table_ _2_: List of keys and string values_
     Resources</td><td>
     RESOURCES</td></tr>
 </table>
-{% endhighlight %}
 
 * To learn about localizing in the Schedule control on your required culture, refer the following code example. 
 
@@ -627,9 +625,9 @@ Important: An important note while making use of localization in the schedule co
 ![](Localization_images/Localization_img1.png)
 
 
-  _Figure_ _104_:  schedule with localization._
+Figure 104 :  schedule with localization.
 
-RTL
+###RTL
 
 * The enableRTL option allows the schedule control to display it in the right to left direction. By default, this option is set to ‘false’ in the Schedule control.
 
@@ -666,5 +664,5 @@ SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 ![](Localization_images/Localization_img2.png)
 
 
-   _Figure_ _105_:  schedule with RTL._
+   Figure 105 :  schedule with RTL.
 

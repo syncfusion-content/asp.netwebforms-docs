@@ -13,15 +13,14 @@ _ej.web.all.js_ is a bundle of all _ASP.NET_controls. When you use _ej.web.all.j
 
 
 
-_Table 1: Ribbon Dependency_
+Table 1: Ribbon Dependency
 
-{% highlight html %}
 
 <table>
 <tr>
-<td>
-Files                          </td><td>
-Description/Usage </td></tr>
+<th>
+Files                          </th><th>
+Description/Usage </th></tr>
 <tr>
 <td>
 ej.core.min.js</td><td>
@@ -65,4 +64,3 @@ ej.button.min.js</td></tr>
 ej.togglebutton.min.js</td></tr>
 </table>
 
-{% endhighlight %}
