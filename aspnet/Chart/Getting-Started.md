@@ -20,7 +20,7 @@ This section encompasses how to configure the ASP.NET Charts for your business n
 
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
-{:.image }
+
 
 
 ## Configure Chart
@@ -33,31 +33,31 @@ Create the web form named as default and add the following template
 
 {% highlight html %}
 
-&lt;%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Chart_ASP.Chart._default" %&gt;
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Chart_ASP.Chart._default" %>
 
-&lt;!DOCTYPE html&gt;
+<!DOCTYPE html>
 
-&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-&lt;head runat="server"&gt;    
+<head runat="server">    
 
     <title>Getting started for ASP.NET Chart Control</title>
 
-    &lt;link href="../Content/ej/default-theme/ej.theme.min.css" rel="stylesheet" /&gt;
+    <link href="../Content/ej/default-theme/ej.theme.min.css" rel="stylesheet" />
 
-    &lt;link href="../Content/ej/ej.widgets.core.min.css" rel="stylesheet" /&gt;
+    <link href="../Content/ej/ej.widgets.core.min.css" rel="stylesheet" />
 
-    &lt;script src="../Scripts/jquery-1.10.2.min.js" type="text/javascript"&gt;&lt;/script&gt;
+    <script src="../Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
 
-    &lt;script src="../Scripts/jsrender.min.js" type="text/javascript"&gt;&lt;/script&gt;
+    <script src="../Scripts/jsrender.min.js" type="text/javascript"></script>
 
-    &lt;script src="../Scripts/jquery.easing-1.3.min.js" type="text/javascript"&gt;&lt;/script&gt;
+    <script src="../Scripts/jquery.easing-1.3.min.js" type="text/javascript"></script>
 
-    &lt;script src="../Scripts/jquery.globalize.min.js" type="text/javascript"&gt;&lt;/script&gt;
+    <script src="../Scripts/jquery.globalize.min.js" type="text/javascript"></script>
 
-    &lt;script src="../Scripts/ej/ej.web.all.js" type="text/javascript"&gt;&lt;/script&gt;
+    <script src="../Scripts/ej/ej.web.all.js" type="text/javascript"></script>
 
-&lt;/head&gt;
+</head>
 {% endhighlight  %}
 
 Initialize the Chart like below code snippet
@@ -66,13 +66,13 @@ Initialize the Chart like below code snippet
 
 //...    
 
-&lt;div&gt;
+<div>
 
-        &lt;ej:Chart ID="Chart1" runat="server"&gt;
+        <ej:Chart ID="Chart1" runat="server">
 
-        &lt;/ej:Chart&gt;            
+        </ej:Chart>            
 
-&lt;div&gt;
+<div>
 
 //...  
 {% endhighlight  %}
@@ -84,7 +84,7 @@ The following screenshot displays the Chart.
 
 
 ![](Getting-Started_images/Getting-Started_img2.png)
-{:.image }
+
 
 
 ## Add a Chart Series
@@ -97,51 +97,51 @@ By default, line series is used. To create a series, you need to add the followi
 
 {% highlight html %}
 
-&lt;ej:Chart ID="Chart1" runat="server&gt;
+<ej:Chart ID="Chart1" runat="server>
 
-     &lt;Series&gt;
+     <Series>
 
-            &lt;ej:Series Name="Precipitation" Type="Column"&gt;
+            <ej:Series Name="Precipitation" Type="Column">
 
-                  &lt;Points&gt;                   
-
-
-
-                       &lt;ej:Points  X="Jan" Y="3.03"/&gt;
-
-                        &lt;ej:Points  X="Feb" Y="2.48"/&gt;
-
-                        &lt;ej:Points  X="Mar" Y="3.23"/&gt;
-
-                        &lt;ej:Points  X="Apr" Y="3.15"/&gt;
-
-                        &lt;ej:Points  X="May" Y="4.13 "/&gt;
-
-                        &lt;ej:Points  X="Jun" Y="3.23"/&gt;
-
-                        &lt;ej:Points  X="Jul" Y="4.88"/&gt;
-
-                        &lt;ej:Points  X="AUg" Y="3.82"/&gt;
-
-                       &lt;ej:Points  X="Sep" Y="2.83"/&gt;
-
-                       &lt;ej:Points  X="Oct" Y="2.8"/&gt;
-
-                       &lt;ej:Points  X="Nov" Y="3.07"/&gt;
-
-                       &lt;ej:Points  X="Dec" Y="2.8"/&gt;
+                  <Points>                   
 
 
 
-                    &lt;/Points&gt;
+                       <ej:Points  X="Jan" Y="3.03"/>
 
-             &lt;/ej:Series&gt;
+                        <ej:Points  X="Feb" Y="2.48"/>
 
-          &lt;/Series&gt;
+                        <ej:Points  X="Mar" Y="3.23"/>
+
+                        <ej:Points  X="Apr" Y="3.15"/>
+
+                        <ej:Points  X="May" Y="4.13 "/>
+
+                        <ej:Points  X="Jun" Y="3.23"/>
+
+                        <ej:Points  X="Jul" Y="4.88"/>
+
+                        <ej:Points  X="AUg" Y="3.82"/>
+
+                       <ej:Points  X="Sep" Y="2.83"/>
+
+                       <ej:Points  X="Oct" Y="2.8"/>
+
+                       <ej:Points  X="Nov" Y="3.07"/>
+
+                       <ej:Points  X="Dec" Y="2.8"/>
 
 
 
-        &lt;/ej:Chart&gt; 
+                    </Points>
+
+             </ej:Series>
+
+          </Series>
+
+
+
+        </ej:Chart> 
 
 
 {% endhighlight %}
@@ -149,17 +149,16 @@ By default, line series is used. To create a series, you need to add the followi
 The following screenshot displays a Chart series:
 
 ![](Getting-Started_images/Getting-Started_img3.png)
-{:.image }
+
 
 
 ## Add JSON data to the Chart
 
 You can add JSON data to the Chart using the datasource property in Chart.
 
-In aspx.cs
 
 {% highlight c# %}
-[CS]
+
 
 
 
@@ -262,23 +261,23 @@ public class chartData
     }
 
 {% endhighlight %}
-In aspx
+
 
 {% highlight html %}
 
-&lt;ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true"&gt;
+<ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true">
 
- &lt;Series&gt;
+ <Series>
 
-   &lt;ej:Series EnableAnimation="True" Type="Column" Name="Sales" XName="Xmonth" YName="Precipitation"/&gt;   
+   <ej:Series EnableAnimation="True" Type="Column" Name="Sales" XName="Xmonth" YName="Precipitation"/>   
 
-   &lt;ej:Series EnableAnimation="True" Type="Line" Name="Sales" XName="Xmonth" YName="Low"/&gt;   
+   <ej:Series EnableAnimation="True" Type="Line" Name="Sales" XName="Xmonth" YName="Low"/>   
 
-   &lt;ej:Series EnableAnimation="True" Type="Line" Name="Sales" XName="Xmonth" YName="High"/&gt;                  
+   <ej:Series EnableAnimation="True" Type="Line" Name="Sales" XName="Xmonth" YName="High"/>                  
 
-         &lt;/Series&gt;
+         </Series>
 
-   &lt;/ej:Chart&gt;
+   </ej:Chart>
 
 {% endhighlight  %}
 The following screenshot displays the Chart when JSON data is added.
@@ -286,7 +285,7 @@ The following screenshot displays the Chart when JSON data is added.
 
 
 ![](Getting-Started_images/Getting-Started_img4.png) 
-{:.image }
+
 
 
 ## Add Chart Axis of your choice
@@ -307,44 +306,44 @@ In order to add additional Axes to the Chart other than PrimaryXAxis and Primary
 The following code example illustrates how to add Chart axis.
 {% highlight html %}
 
-&lt;ej:Chart ID="Chart1" runat="server"&gt;
+<ej:Chart ID="Chart1" runat="server">
 
-            &lt;PrimaryXAxis ValueType="Category"&gt;&lt;/PrimaryXAxis&gt;   
+            <PrimaryXAxis ValueType="Category"></PrimaryXAxis>   
 
-            &lt;PrimaryYAxis ValueType="Double"&gt;&lt;/PrimaryYAxis&gt;
+            <PrimaryYAxis ValueType="Double"></PrimaryYAxis>
 
-            &lt;Axes&gt;
+            <Axes>
 
                 <ej:Axis OpposedPosition="true" Orientation="Vertical" Name="Precipitation"  
 
                  LabelFormat="{value} inch">
 
-                 &lt;/ej:Axis&gt;
+                 </ej:Axis>
 
-            &lt;/Axes&gt;         
+            </Axes>         
 
- &lt;/ej:Chart&gt;
+ </ej:Chart>
 {% endhighlight  %}
 Assign the axis to the respective series
 
 To assign the axis to the respective series you can set YAxisName property of the series. In the following code example, YAxisName of Column series is set to “Precipitation”. This is the name set to the axis in the above code example.
 {% highlight html %}
 
-   &lt;ej:Chart ID="Chart1" runat="server" CanResize="true"&gt;   
+   <ej:Chart ID="Chart1" runat="server" CanResize="true">   
 
-       &lt;Series&gt;
+       <Series>
 
          <ej:Series EnableAnimation="True" Type="Column" YAxisName="Precipitation" Name="Sales"  
 
               XName="Xmonth" YName="Precipitation"/>   
 
-         &lt;ej:Series EnableAnimation="True" Type="Line" Name="Sales" XName="Xmonth" YName="Low"/&gt;   
+         <ej:Series EnableAnimation="True" Type="Line" Name="Sales" XName="Xmonth" YName="Low"/>   
 
-         &lt;ej:Series EnableAnimation="True" Type="Line" Name="Sales" XName="Xmonth" YName="High"/&gt; 
+         <ej:Series EnableAnimation="True" Type="Line" Name="Sales" XName="Xmonth" YName="High"/> 
 
-       &lt;/Series&gt;
+       </Series>
 
-    &lt;/ej:Chart&gt;
+    </ej:Chart>
 
 {% endhighlight  %}
 
@@ -353,7 +352,7 @@ The following screenshot displays a Chart with desired output.
 
 
 ![](Getting-Started_images/Getting-Started_img5.png)
-{:.image }
+
 
 
 ## Add Data Labels
@@ -362,21 +361,21 @@ Data Labels display the series points in Chart. To display the data labels, you 
 
 
 {% highlight html %}
-&lt;ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true"&gt;
+<ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true">
 
 
 
-     &lt;Series&gt;
+     <Series>
 
-          &lt;ej:Series EnableAnimation="True" Type="Column" XName="Xmonth" YName="Precipitation" Marker-DataLabel-Visible="true" Marker-DataLabel-TextPosition="Top" Marker-DataLabel-Fill="#FF7777" Marker-DataLabel-Offset="20" Marker-DataLabel-Shape="Rectangle"/&gt;   
+          <ej:Series EnableAnimation="True" Type="Column" XName="Xmonth" YName="Precipitation" Marker-DataLabel-Visible="true" Marker-DataLabel-TextPosition="Top" Marker-DataLabel-Fill="#FF7777" Marker-DataLabel-Offset="20" Marker-DataLabel-Shape="Rectangle"/>   
 
-                &lt;ej:Series EnableAnimation="True" Type="Line" XName="Xmonth" YName="Low"/&gt;   
+                <ej:Series EnableAnimation="True" Type="Line" XName="Xmonth" YName="Low"/>   
 
-                &lt;ej:Series EnableAnimation="True" Type="Line" XName="Xmonth" YName="High"/&gt;                  
+                <ej:Series EnableAnimation="True" Type="Line" XName="Xmonth" YName="High"/>                  
 
-              &lt;/Series&gt;
+              </Series>
 
-        &lt;/ej:Chart&gt;
+        </ej:Chart>
 
 
 {% endhighlight %}
@@ -385,7 +384,7 @@ The following screenshot displays the Chart when data Labels are enabled.
 
 
 ![C:/Users/labuser/Desktop/label.png](Getting-Started_images/Getting-Started_img6.png) 
-{:.image }
+
 
 
 ## Enable ToolTip
@@ -393,15 +392,15 @@ The following screenshot displays the Chart when data Labels are enabled.
 To display the tooltip of Chart series, you can enable the “Visible” property of “Tooltip” in the specific series. By default, it displays XandY value of points on mouse over the points. The following code example shows how to enable Tooltip.
 {% highlight html %}
 
-  &lt;ej:Chart ID="Chart1" runat="server"&gt;
+  <ej:Chart ID="Chart1" runat="server">
 
-            &lt;Series&gt;
+            <Series>
 
-                &lt;ej:Series Name="Precipitation" Tooltip-Visible="true" /&gt;
+                <ej:Series Name="Precipitation" Tooltip-Visible="true" />
 
-            &lt;/Series&gt;
+            </Series>
 
-         &lt;/ej:Chart&gt;
+         </ej:Chart>
 
 {% endhighlight %}
 The following screenshot displays the Chart when tooltip is enabled.
@@ -409,6 +408,6 @@ The following screenshot displays the Chart when tooltip is enabled.
 
 
 ![C:/Users/labuser/Desktop/tool.png](Getting-Started_images/Getting-Started_img7.png) 
-{:.image }
+
 
 

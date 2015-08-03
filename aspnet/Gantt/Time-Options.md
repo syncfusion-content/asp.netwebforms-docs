@@ -41,7 +41,7 @@ Use the following code example for including time options in start date and end 
 
 {% highlight c# %}
 
-Gantt.aspx.cs
+
 
 
 
@@ -216,7 +216,7 @@ namespace ASP_Doc.Gantt
 }
 {% endhighlight  %}
 {% highlight html %}
-Gantt.aspx
+
 
 
 
@@ -283,6 +283,6 @@ Execute the above code to render the following output.
 
 
 ![](Time-Options_images/Time-Options_img1.png)
-{:.image }
+
 
 

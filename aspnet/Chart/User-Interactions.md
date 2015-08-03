@@ -15,27 +15,27 @@ When you deal with a large amount of data, you require interactions like Tooltip
 
 Essential Chart provides you an option tooltip to display a pop up with the point values, on mouse move over the appropriate point. Essential Chart also allows you to customize its border color, border width, opacity, fill color, animation, duration, rx, ry, font size, font family, font style, font color, font weight, etc. You can change the tooltip properties for each series in Chart to change its appearance. When you require the same tooltip for all the series in Chart, you can specify the Tooltip in CommonSeriesOptions. You can also modify the default template for the tooltip using Template property.
 
-Tooltip visibility: 
+### Tooltip visibility: 
 
 By default the visibility of Tooltip is set to false, but you can change the visibility. When format or template is not specified for Tooltip, then it displays the x and y values of the point. 
 {% highlight html %}
-[ASP.NET] 
 
-&lt;ej:Chart ID="Chart1" runat="server"&gt;       
 
-         &lt;CommonSeriesOptions Tooltip-Visible="true"/&gt;
+<ej:Chart ID="Chart1" runat="server">       
 
-&lt;/ej:Chart&gt;
+         <CommonSeriesOptions Tooltip-Visible="true"/>
+
+</ej:Chart>
 
 
 {% endhighlight  %}
 
 
 ![](User-Interactions_images/User-Interactions_img1.png)
-{:.image }
 
 
-Tooltip format:
+
+### Tooltip format:
 
 Essential Chart provides you support to change the format of the text displayed in the tooltip that allows you to use the data point information in desired format.
 
@@ -49,75 +49,75 @@ format: " #point.x# #series.name# #point.high# #point.low# #point.open# #point.c
 
 
 {% highlight html %}
-[ASP.NET] 
 
-&lt;ej:Chart ID="Chart1" runat="server"&gt;       
 
-      &lt;CommonSeriesOptions Tooltip-Visible="true" Tooltip-Format="In #point.x# #series.name# produced #point.y#%"/&gt;
+<ej:Chart ID="Chart1" runat="server">       
 
-     &lt;/ej:Chart&gt;
+      <CommonSeriesOptions Tooltip-Visible="true" Tooltip-Format="In #point.x# #series.name# produced #point.y#%"/>
+
+     </ej:Chart>
 
 
 
 
 {% endhighlight  %}
 ![](User-Interactions_images/User-Interactions_img2.png)
-{:.image }
 
 
-Customize the tooltip border: 
+
+### Customize the tooltip border: 
 
 Essential Chart provides you options to customize the Border of the Tooltip. You can change the width and color of the Border. By default the border width is set to 1.
 
 {% highlight html %}
 
-[ASP.NET] 
 
-&lt;ej:Chart ID="Chart1" runat="server"&gt;   
 
-&lt;CommonSeriesOptions Tooltip-Visible="true" Tooltip-Border-Width="1" Tooltip-Border-Color="#000000"/&gt;    
+<ej:Chart ID="Chart1" runat="server">   
 
-&lt;/ej:Chart&gt;
+<CommonSeriesOptions Tooltip-Visible="true" Tooltip-Border-Width="1" Tooltip-Border-Color="#000000"/>    
+
+</ej:Chart>
 
 
 
 {% endhighlight  %}
 
 ![](User-Interactions_images/User-Interactions_img3.png)
-{:.image }
 
 
-Changing the tooltip fill color:
+
+### Changing the tooltip fill color:
 
 You can modify the Fill color of Tooltip. By default the Tooltip renders with the appropriate series color as background color.
 
 
 {% highlight html %}
-[ASP.NET] 
 
-&lt;ej:Chart ID="Chart1" runat="server"&gt;   
 
-&lt;CommonSeriesOptions Tooltip-Visible="true" Tooltip-Fill="#000000"/&gt;
+<ej:Chart ID="Chart1" runat="server">   
 
-&lt;/ej:Chart&gt;
+<CommonSeriesOptions Tooltip-Visible="true" Tooltip-Fill="#000000"/>
+
+</ej:Chart>
 
 
 {% endhighlight %}
 
 
 ![](User-Interactions_images/User-Interactions_img4.png)
-{:.image }
 
 
-Customize the tooltip font:
+
+### Customize the tooltip font:
 
 Essential Chart provides you support to customize the text display in the Tooltip. You can change font family, font color, font style, font weight. By default “Segoe UI” font family is set to tooltip text.
 
 
 {% highlight html %}
-[ASP.NET] 
 
-&lt;ej:Chart ID="Chart" runat="server"&gt;       
+
+<ej:Chart ID="Chart" runat="server">       
 
          <CommonSeriesOptions Tooltip-Visible="true" Tooltip-Fill="#000000"   
 
@@ -125,141 +125,141 @@ Essential Chart provides you support to customize the text display in the Toolti
 
             Tooltip-Font-FontSize="14px" Tooltip-Font-Color="#000000"/>
 
- &lt;/ej:Chart&gt;
+ </ej:Chart>
 
 
 
 {% endhighlight  %}
 
 ![](User-Interactions_images/User-Interactions_img5.png)
-{:.image }
 
 
-Tooltip Animation
+
+### Tooltip Animation
 
 Essential Chart provides you animation support for tooltip template. You can enable this by setting “EnableAnimation” to true. The “Duration” property in tooltip specificies the time taken to animate the tooltip, by default the duration is set to “500ms”.
 
 {% highlight html %}
 
-[ASP.NET] 
 
-&lt;ej:Chart ID="Chart" runat="server"&gt;       
+
+<ej:Chart ID="Chart" runat="server">       
 
    <CommonSeriesOptions Tooltip-Visible="true" Tooltip-Template="Tooltip"   
 
     Tooltip-EnableAnimation="true"/>
 
-  &lt;/ej:Chart&gt;
+  </ej:Chart>
 
 {% endhighlight  %}
 
-Understanding the RX and RY in tooltip:
+### Understanding the RX and RY in tooltip:
 
 Essential Chart has RX and RY property in Tooltip to customize the corners radius of the tooltip.
 {% highlight html %}
-[ASP.NET] 
 
-&lt;ej:Chart ID="Chart" runat="server"&gt;       
 
-   &lt;CommonSeriesOptions Tooltip-Visible="true" Tooltip-RX="50" Tooltip-RY="50"/&gt;
+<ej:Chart ID="Chart" runat="server">       
 
- &lt;/ej:Chart&gt;
+   <CommonSeriesOptions Tooltip-Visible="true" Tooltip-RX="50" Tooltip-RY="50"/>
+
+ </ej:Chart>
 
 
 {% endhighlight  %}
 ![](User-Interactions_images/User-Interactions_img6.png)
-{:.image }
+
 
 
 ## Zooming and Panning
 
 Essential Chart provides you an option to zoom the Chart. Using this option you can clearly view the points and data in Chart. Zooming is done by dragging the mouse on the Chart or by scrolling the mouse wheel. During runtime, you can simply select the range you want to zoom with the mouse and the Chart zooms-in accordingly.
 
-Enable zooming:
+### Enable zooming:
 
 By default zooming is not enabled. You can enable it using the “Enable” option in “zooming” property.
 
 
 {% highlight html %}
-[ASP.NET] 
 
-&lt;ej:Chart ID="Chart1"&gt;
 
-        &lt;Zooming Enable="true" /&gt;
+<ej:Chart ID="Chart1">
 
- &lt;/ej:Chart&gt;
+        <Zooming Enable="true" />
+
+ </ej:Chart>
 
 
 
 {% endhighlight  %}
 
-Before zooming:
+### Before zooming:
 
 
 
 ![](User-Interactions_images/User-Interactions_img7.png)
-{:.image }
 
 
-Selection for zooming:
+
+### Selection for zooming:
 
 
 
 ![](User-Interactions_images/User-Interactions_img8.png)
-{:.image }
 
 
-After zooming:
+
+### After zooming:
 
 
 
 ![](User-Interactions_images/User-Interactions_img9.png)
-{:.image }
 
 
-Programmatic Zooming
+
+### Programmatic Zooming
 
 Programmatically the Chart can be zoomed using ZoomPosition and ZoomFactor properties.Both the properties are usually between 0 and 1. When you set the zoomFactor to 1, the Chart isn't zoomed. When you set it to 0.5, the Chart is double its usual size. The ZoomPosition is used to set the starting position of the zoomed axis. For example, when both the properties are set to 0.5 for horizontal axis then the Chart is zoomed to double its size and the view port of the horizontal axis start from half of the axis. 
 
-Enable zoom via mouse wheel: 
+### Enable zoom via mouse wheel: 
 
 Essential Chart provides you support to zoom the Chart by scrolling the mouse wheel. By default it is not enabled, you can enable it with the EnableMouseWheel property in zooming.
 
 {% highlight html %}
 
-[ASP.NET] 
 
-&lt;ej:Chart ID="Chart1"&gt;
 
-        &lt;Zooming Enable="true" EnableMouseWheel="true" /&gt;
+<ej:Chart ID="Chart1">
 
- &lt;/ej:Chart&gt;
+        <Zooming Enable="true" EnableMouseWheel="true" />
+
+ </ej:Chart>
 {% endhighlight %}
-Types of zooming: 
+### Types of zooming: 
 
 Essential Chart supports three types of zooming. You can zoom only the x axis or can zoom only the y axis or can zoom both x and y axis respectively. This is achieved using Type property in zooming.
 
 {% highlight html %}
 
-[ASP.NET] 
 
-&lt;ej:Chart ID="Chart1"&gt;
 
-        &lt;Zooming Enable="true" EnableMouseWheel="true" Type="y" /&gt;
+<ej:Chart ID="Chart1">
 
- &lt;/ej:Chart&gt;
+        <Zooming Enable="true" EnableMouseWheel="true" Type="y" />
+
+ </ej:Chart>
 {% endhighlight  %}
 
 
 ![](User-Interactions_images/User-Interactions_img10.png) 
-{:.image }
+
 
 
 ## Crosshair and Trackball
 
 To enable tracking of data points in a Chart, you can use Crosshair and Trackball.
 
-Crosshair:
+### Crosshair:
 
 In order to view the value at mouse position or touch contact point, you can use the Crosshair property. You can customize the appearance further using the Crosshair.Line properties. 
 
@@ -267,42 +267,42 @@ To display the label containing the relevant data point value information, enabl
 
 The following code example illustrates you on how to enable the Crosshair. 
 {% highlight html %}
-[ASP.NET] 
 
-&lt;ej:Chart ID="Chart1"&gt;
 
-        &lt;PrimaryXAxis CrosshairLabel-Visible="true"&gt;&lt;/PrimaryXAxis&gt;
+<ej:Chart ID="Chart1">
 
-        &lt;PrimaryYAxis CrosshairLabel-Visible="true"&gt;&lt;/PrimaryYAxis&gt;
+        <PrimaryXAxis CrosshairLabel-Visible="true"></PrimaryXAxis>
 
-        &lt;CrossHair Visible="true" Type="Crosshair" Line-Width="2" Line-Color="Black" /&gt; &lt;/ej:Chart&gt;
+        <PrimaryYAxis CrosshairLabel-Visible="true"></PrimaryYAxis>
+
+        <CrossHair Visible="true" Type="Crosshair" Line-Width="2" Line-Color="Black" /> </ej:Chart>
 
 {% endhighlight %}
 
 ![](User-Interactions_images/User-Interactions_img11.png)
-{:.image }
 
 
-Trackball:
+
+### Trackball:
 
 In order to track a data point closer to the mouse position or touch contact point, you can use trackball. You can customize the track ball appearance using the Marker and Line property in the crosshair. To display a label containing the relevant data point value information, you can enable the CrosshairLabel.Visible property in the corresponding axis of the Chart. For example, to display the x-axis label, set the Visible property of CrosshairLabel inthe PrimaryAxis to true. 
 {% highlight html %}
-[ASP.NET] 
+ 
 
-&lt;ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true"&gt;
+<ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true">
 
   <PrimaryXAxis CrosshairLabel-Visible="true"    
 
-                   CrosshairLabel-Fill="#E94649">&lt;/PrimaryXAxis&gt;        
+                   CrosshairLabel-Fill="#E94649"></PrimaryXAxis>        
 
-        &lt;CrossHair Visible="true" Type="Trackball" Line-Width="2" Line-Color="Blue" /&gt;
+        <CrossHair Visible="true" Type="Trackball" Line-Width="2" Line-Color="Blue" />
 
-      &lt;/ej:Chart&gt;
+      </ej:Chart>
 
 {% endhighlight %}
 
 ![](User-Interactions_images/User-Interactions_img12.png)
-{:.image }
+
 
 
 ## Drill Down
@@ -310,36 +310,35 @@ In order to track a data point closer to the mouse position or touch contact poi
 Drill Down allows you to view the data’s in depth, for example yearly data to quarterly, quarterly to monthly or from categorical data to individual item. The drill down support is achieved using the PointRegionClick event. On clicking points in Chart series, PointRegionClick event gets triggered, using this event you can refresh your Chart by assigning new data to the Chart series through set model. In the following example a pie Chart with two points are used, when you click on the pie slice, PointRegionClick event gets triggered. Using this event and set model option, the Chart is refreshed with new data based on the point index.
 
 {% highlight html %}
+ 
 
-[ASP.NET] 
+<ej:Chart ID="Chart1" OnClientPointRegionClick="onclick" OnClientAnimationComplete="completeAnimation">
 
-&lt;ej:Chart ID="Chart1" OnClientPointRegionClick="onclick" OnClientAnimationComplete="completeAnimation"&gt;
+     <Series>
 
-     &lt;Series&gt;
+         <ej:Series Name="Market" Explode="True" XName="Xvalue" YName="YValue1" Type="Pie"> 
 
-         &lt;ej:Series Name="Market" Explode="True" XName="Xvalue" YName="YValue1" Type="Pie"&gt; 
+                <Points>
 
-                &lt;Points&gt;
+                    <ej:Points X="SUV" Y="25" Text="25%"/>
 
-                    &lt;ej:Points X="SUV" Y="25" Text="25%"/&gt;
+                    <ej:Points X="Car" Y="37" Text="37%"/>
 
-                    &lt;ej:Points X="Car" Y="37" Text="37%"/&gt;
+                    <ej:Points X="Pickup" Y="15" Text="15%"/>
 
-                    &lt;ej:Points X="Pickup" Y="15" Text="15%"/&gt;
+                    <ej:Points X="Minivan" Y="23" Text="23%"/>
 
-                    &lt;ej:Points X="Minivan" Y="23" Text="23%"/&gt;
+                </Points>
 
-                &lt;/Points&gt;
+            </ej:Series>
 
-            &lt;/ej:Series&gt;
-
-    &lt;/ej:Chart&gt;
+    </ej:Chart>
 
 {% endhighlight %}
 {% highlight js %}
- [JS]
+ 
 
-&lt;script&gt;
+<script>
 
         function onclick(sender) {
 
@@ -451,19 +450,19 @@ Drill Down allows you to view the data’s in depth, for example yearly data to 
 
         }
 
-    &lt;/script&gt;
+    </script>
 
 {% endhighlight  %}
 
 ![](User-Interactions_images/User-Interactions_img13.png)
-{:.image }
 
 
-Details about the first segment/slice in pie Chart:
+
+### Details about the first segment/slice in pie Chart:
 
 
 
 ![](User-Interactions_images/User-Interactions_img14.png)
-{:.image }
+
 
 

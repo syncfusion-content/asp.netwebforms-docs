@@ -19,25 +19,24 @@ In the following screenshot, a BulletGraph is used to compare the actual monsoon
 
 
 
-![](Getting-Started_images/Getting-Started_img1.png)
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png) 
+
 
 
 1. Create simple BulletGraph.
 
-   {% highlight html %}
+{% highlight html %}
 
-   <ej:Bulletgraph ID="BulletGraph1" runat="server">
+<ej:Bulletgraph ID="BulletGraph1" runat="server">
 
-   </ej:Bulletgraph>
+</ej:Bulletgraph>
 
-   {% endhighlight %}
-
+{% endhighlight  %}
 
 2. Execute the above code to display the BulletGraph. To customize the measure bars in the BulletGraph, you can pass the data either locally or remotely.
 
-   ![](Getting-Started_images/Getting-Started_img2.png)
-   {:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 ## Provide Required Data
@@ -46,9 +45,8 @@ You can customize the values of feature and comparative measure bars in a Bullet
 
 Assign the data in BulletLocalDataBind variable to the DataSource property of BulletGraph as illustrated in the following code example. 
 
-{% highlight c# %}
 
-[CS]
+{% highlight c# %}
 
 List<BulletLocalDataBind> data = new List<BulletLocalDataBind>();
 
@@ -109,15 +107,10 @@ List<BulletLocalDataBind> data = new List<BulletLocalDataBind>();
             this.BulletGraph1.DataBind();
 
 
-
 {% endhighlight %}
-
 Once the DataSource property is assigned with the required values, you can bind the variable names used in the JSON data to the corresponding fields of the BulletGraph as shown in the following code example.
 
 {% highlight html %}
-
-[ASPX]
-
 
 
 <ej:Bulletgraph ID="BulletGraph1" runat="server" Height="540" Width="850" QualitativeRangeSize="800"  QuantitativeScaleLength="425"  >
@@ -138,8 +131,6 @@ Minimum, Maximum and Interval values for the QuantitativeScale of the BulletGrap
 
 
 {% highlight html %}
-[ASP.NET]
-
 
 
 <ej:Bulletgraph ID="BulletGraph1" runat="server" Height="540" Width="850" QualitativeRangeSize="800"  QuantitativeScaleLength="425" Orientation="Vertical" FlowDirection="Backward" >
@@ -163,7 +154,7 @@ Minimum, Maximum and Interval values for the QuantitativeScale of the BulletGrap
 {% endhighlight %}
 
 ![](Getting-Started_images/Getting-Started_img3.png)
-{:.image }
+
 
 
 The above image illustrates the BulletGraph without any ranges displayed in the background.
@@ -173,9 +164,6 @@ The above image illustrates the BulletGraph without any ranges displayed in the 
 By default, 3 ranges are displayed in the BulletGraph control during the initial rendering of the control with its default values. To customize it, you can set appropriate values for the RangeEnd and RangeStroke properties.  Any number of QualitativeRanges can be added to the control.
 
 {% highlight html %}
-
-[ASP.NET]
-
 
 
 <ej:Bulletgraph ID="BulletGraph1" runat="server" Height="540" Width="850" QualitativeRangeSize="800"  QuantitativeScaleLength="425" Orientation="Vertical" FlowDirection="Backward" >
@@ -218,18 +206,16 @@ By default, 3 ranges are displayed in the BulletGraph control during the initial
 
 After adding QualitativeRanges to the BulletGraph, the control appears as follows.
 
-![](Getting-Started_images/Getting-Started_img4.png)
-{:.image }
+
+
+![](Getting-Started_images/Getting-Started_img4.png) 
+
 
 
 ## Ticks and Measure Bars Customization
 
 You can do the following code changes in the quantitative scale to customize the tick size, the color of the feature bar and the comparative measure symbols.
-
 {% highlight html %}
-[ASP.NET]
-
-
 
 <ej:Bulletgraph ID="BulletGraph1" runat="server" Height="540" Width="850" QualitativeRangeSize="800"  QuantitativeScaleLength="425" Orientation="Vertical" FlowDirection="Backward" >
 
@@ -274,9 +260,8 @@ You can do the following code changes in the quantitative scale to customize the
 When you customize the ticks and measure bar, the BulletGraph appears as follows.
 
 
-
 ![](Getting-Started_images/Getting-Started_img5.png)
-{:.image }
+
 
 
 ## Add Caption and Subtitle
@@ -285,9 +270,6 @@ You can add the following code example to display an appropriate Caption and Sub
 
 
 {% highlight html %}
-[ASP.NET]
-
-
 
 <ej:Bulletgraph ID="BulletGraph1" runat="server" Height="540" Width="850" QualitativeRangeSize="800"  QuantitativeScaleLength="425" Orientation="Vertical" FlowDirection="Backward" >
 
@@ -335,10 +317,8 @@ You can add the following code example to display an appropriate Caption and Sub
 
 The following screenshot displays a BulletGraph with a Caption and Subtitle.
 
+![](Getting-Started_images/Getting-Started_img6.png)
 
-
-![](Getting-Started_images/Getting-Started_img6.png) 
-{:.image }
 
 
 ## Show Tooltip
@@ -347,9 +327,6 @@ You can use a Tooltip in your application to display the values of forecasted ra
 
 
 {% highlight html %}
-[ASP.NET]
-
-
 
 <ej:Bulletgraph ID="BulletGraph1" runat="server" Height="540" Width="850" QualitativeRangeSize="800"  QuantitativeScaleLength="425" Orientation="Vertical" FlowDirection="Backward" >
 
@@ -390,7 +367,6 @@ You can use a Tooltip in your application to display the values of forecasted ra
 </ej:Bulletgraph>
 
 
-
 [Template content]
 
 
@@ -427,7 +403,7 @@ The following screenshot displays a customized BulletGraph.
 
 
 
-![](Getting-Started_images/Getting-Started_img7.png) 
-{:.image }
+![](Getting-Started_images/Getting-Started_img7.png)  
+
 
 

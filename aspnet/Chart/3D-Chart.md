@@ -11,35 +11,35 @@ documentation: ug
 
 Now Essential Chart allows you to create stunning 3D Charts for Bar, Column, StackingBar, StackingColumn, Pie and Doughnut series. The representation of data in 3D Chart is very clear and easy to understand when compared to 2D charts. Three dimensions of the series are seen by rotating them. The following properties enhance the perception of 3D Charts.
 
-Enable3D:
+## Enable3D:
 
 The property Enable3D renders 3D Charts and accepts only the Boolean values.
 
-WallSize:
+## WallSize:
 
 In 3D, Cartesian axes lines are represented as walls. The property WallSize defines the width of the wall. The WallSize property does not support for 3D Pie or Doughnut series because they do not have Cartesian axes lines. 
 
-Depth:
+## Depth:
 
 The Depth property defines the depth of the 3D Chart from front view of the series to wall.
 
-Tilt:
+## Tilt:
 
 The Tilt property defines the angle of the slope of 3D Chart. The positive and negative values declare the side where the slope is present.
 
-Rotation:
+## Rotation:
 
 The Rotation property is used to spin the 3D chart. The direction of the spin depends upon the positive and negative values of Rotation property.
 
-EnableRotation:
+## EnableRotation:
 
 The EnableRotation property allows rotation of the 3D Chart dynamically by dragging the mouse on 3D Chart. Accepting value of this property is Boolean.
 
-PerspectiveAngle:
+## PerspectiveAngle:
 
 The perspectiveAngle declares the appearance of the height, width, depth and wall of the 3D Chart. When the PerspectiveAngle is decreased, the 3D object appears closer to viewer. But when it is increased, the 3D object appears far away from the viewer.
 
-SideBySideSeriesPlacement:
+## SideBySideSeriesPlacement:
 
 The SideBySideSeriesPlacement property defines the appearance of the different sets of data on 3D Chart. When it is set to true, the data is displayed side by side, otherwise it is displayed one by one.
 
@@ -53,9 +53,6 @@ Column charts represent data in a vertical rectangular shape. The size of the sh
 
 {% highlight html %}
 
-[ASP.NET]
-
-
 
 <ej:Chart ID="Chart1" runat="server” Depth="100" WallSize="2" Tilt="0" 
 
@@ -65,7 +62,7 @@ Rotation="34" PerspectiveAngle="90" EnableRotation="true" Enable3D="true">
 
 
 
-&lt;/ej:Chart&gt;
+</ej:Chart>
 
 
 
@@ -74,15 +71,13 @@ Rotation="34" PerspectiveAngle="90" EnableRotation="true" Enable3D="true">
 {% endhighlight  %}
 
 ![](3D-Chart_images/3D-Chart_img1.png)
-{:.image }
+
 
 
 ### 3D Bar Chart
 
 3D Bar charts are similar to 3D Column charts, but it represents the data in horizontal rectangular shape. The size of the bar depends upon the data. You can customize the depth, wall size, tilt, and rotation of the 3D Bar chart by setting the property Depth, WallSize, Tilt, and rotation respectively
 {% highlight html %}
-[ASP.NET]
-
 
 
 <ej:Chart ID="Chart1" runat="server” Depth="100" WallSize="2" Tilt="0" 
@@ -93,11 +88,11 @@ Rotation="34" PerspectiveAngle="90" EnableRotation="true" Enable3D="true">
 
 
 
-&lt;CommonSeriesOptions Type="Bar"/&gt;
+<CommonSeriesOptions Type="Bar"/>
 
 
 
-&lt;/ej:Chart&gt;
+</ej:Chart>
 
 
 {% endhighlight  %}
@@ -106,16 +101,13 @@ Rotation="34" PerspectiveAngle="90" EnableRotation="true" Enable3D="true">
 
 
 ![](3D-Chart_images/3D-Chart_img2.png)
-{:.image }
+
 
 
 ### 3D Stacking Column Chart
 
 3D Stacking Column Charts are similar to 3D Column Charts, but here the Y values of different sets of data are represented in a single vertical bar. You can set different colors and borders for different y values in a single vertical bar by setting the Fill and Border properties. You can customize the depth, wall size, tilt, and rotation of the 3D Stacking Column Chart by setting the property Depth, WallSize, Tilt, and rotation respectively. 
 {% highlight html %}
-[ASP.NET]
-
-
 
 <ej:Chart ID="Chart1" runat="server” Depth="100" WallSize="2" Tilt="0" 
 
@@ -125,85 +117,85 @@ Rotation="34" PerspectiveAngle="90" EnableRotation="true" Enable3D="true">
 
 
 
-&lt;CommonSeriesOptions Type="StackingColumn"&gt;
+<CommonSeriesOptions Type="StackingColumn">
 
 
 
-   &lt;Series&gt;
+   <Series>
 
-                &lt;ej:Series Name="Google"&gt;
-
-
-
-                    &lt;points&gt;
-
-                        &lt;ej:points X="2006" Y="8"/&gt;
-
-                        &lt;ej:points X="2007" Y="5"/&gt;
-
-                        &lt;ej:points X="2008" Y="4"/&gt;
-
-                        &lt;ej:points X="2009" Y="12"/&gt;
-
-                        &lt;ej:points X="2010" Y="16"/&gt;
-
-                        &lt;ej:points X="2011" Y="6"/&gt;
-
-                        &lt;ej:points X="2012" Y="13"/&gt;
-
-                    &lt;/points&gt;
+                <ej:Series Name="Google">
 
 
 
-                &lt;/ej:Series&gt;
+                    <points>
+
+                        <ej:points X="2006" Y="8"/>
+
+                        <ej:points X="2007" Y="5"/>
+
+                        <ej:points X="2008" Y="4"/>
+
+                        <ej:points X="2009" Y="12"/>
+
+                        <ej:points X="2010" Y="16"/>
+
+                        <ej:points X="2011" Y="6"/>
+
+                        <ej:points X="2012" Y="13"/>
+
+                    </points>
 
 
 
-                &lt;ej:Series Name="Bing"&gt;
+                </ej:Series>
 
 
 
-                    &lt;points&gt;
-
-                        &lt;ej:points X="2006" Y="5"/&gt;
-
-                        &lt;ej:points X="2007" Y="6"/&gt;
-
-                        &lt;ej:points X="2008" Y="7"/&gt;
-
-                        &lt;ej:points X="2009" Y="10"/&gt;
-
-                        &lt;ej:points X="2010" Y="14"/&gt;
-
-                        &lt;ej:points X="2011" Y="14"/&gt;
-
-                        &lt;ej:points X="2012" Y="15"/&gt;
-
-                    &lt;/points&gt;
+                <ej:Series Name="Bing">
 
 
 
-                &lt;/ej:Series&gt;
+                    <points>
 
-   &lt;/Series&gt;
+                        <ej:points X="2006" Y="5"/>
+
+                        <ej:points X="2007" Y="6"/>
+
+                        <ej:points X="2008" Y="7"/>
+
+                        <ej:points X="2009" Y="10"/>
+
+                        <ej:points X="2010" Y="14"/>
+
+                        <ej:points X="2011" Y="14"/>
+
+                        <ej:points X="2012" Y="15"/>
+
+                    </points>
 
 
 
-&lt;/ej:Chart&gt;
+                </ej:Series>
+
+   </Series>
+
+
+
+</ej:Chart>
 
 
 {% endhighlight %}
 
 
 ![](3D-Chart_images/3D-Chart_img3.png)
-{:.image }
+
 
 
 ### 3D Stacking Bar Chart
 
 3D Stacking Bar Charts are similar to 3D Bar Charts, but here the Y values of different sets of data are represented in a single horizontal bar. So the comparison of different sets of data is easier than the normal bar chart. You can customize the depth, wall size, tilt, and rotation of the 3D Stacking Bar Chart by setting the property Depth, WallSize, Tilt, and Rotation respectively
 {% highlight html %}
-[ASP.NET]
+
 
 
 
@@ -215,59 +207,59 @@ Rotation="34" PerspectiveAngle="90" EnableRotation="true" Enable3D="true">
 
 
 
-       &lt;CommonSeriesOptions  Type="StackingBar"/&gt;
+       <CommonSeriesOptions  Type="StackingBar"/>
 
 
 
-       &lt;Series&gt;
+       <Series>
 
-                &lt;ej:Series Name="Desktop Display"&gt;
+                <ej:Series Name="Desktop Display">
 
-                    &lt;points&gt;
+                    <points>
 
-                        &lt;ej:points X="2009" Y="2.9"/&gt;
+                        <ej:points X="2009" Y="2.9"/>
 
-                        &lt;ej:points X="2010" Y="3.8"/&gt;
+                        <ej:points X="2010" Y="3.8"/>
 
-                        &lt;ej:points X="2011" Y="4.9"/&gt;
+                        <ej:points X="2011" Y="4.9"/>
 
-                        &lt;ej:points X="2012" Y="6.5"/&gt;
+                        <ej:points X="2012" Y="6.5"/>
 
-                        &lt;ej:points X="2013" Y="7.1"/&gt;
+                        <ej:points X="2013" Y="7.1"/>
 
-                        &lt;ej:points X="2014" Y="7.5"/&gt;
+                        <ej:points X="2014" Y="7.5"/>
 
-                    &lt;/points&gt;
+                    </points>
 
-                &lt;/ej:Series&gt;
+                </ej:Series>
 
-                &lt;ej:Series Name="Mobile"&gt;
+                <ej:Series Name="Mobile">
 
-                    &lt;points&gt;
+                    <points>
 
-                        &lt;ej:points X="2009" Y="0.1"/&gt;
+                        <ej:points X="2009" Y="0.1"/>
 
-                        &lt;ej:points X="2010" Y="0.5"/&gt;
+                        <ej:points X="2010" Y="0.5"/>
 
-                        &lt;ej:points X="2011" Y="1.4"/&gt;
+                        <ej:points X="2011" Y="1.4"/>
 
-                        &lt;ej:points X="2012" Y="2.9"/&gt;
+                        <ej:points X="2012" Y="2.9"/>
 
-                        &lt;ej:points X="2013" Y="4.9"/&gt;
+                        <ej:points X="2013" Y="4.9"/>
 
-                        &lt;ej:points X="2014" Y="6.8"/&gt;
+                        <ej:points X="2014" Y="6.8"/>
 
-                    &lt;/points&gt;
+                    </points>
 
-                &lt;/ej:Series&gt;
-
-
-
-       &lt;/Series&gt;
+                </ej:Series>
 
 
 
-&lt;/ej:Chart&gt;
+       </Series>
+
+
+
+</ej:Chart>
 
 
 
@@ -276,14 +268,14 @@ Rotation="34" PerspectiveAngle="90" EnableRotation="true" Enable3D="true">
 
 
 ![](3D-Chart_images/3D-Chart_img4.png)
-{:.image }
+
 
 
 ### 3D Pie Chart
 
 Pie Charts are circular with several segments. The segments are calculated from the y value of the series. Normally, in 2D only the front view of the pie chart can be seen. In 3D, there is an option to see the whole side of the pie chart by enabling the EnableRotation property. You can explode a particular segment of pie series by setting the ExplodeIndex property. You can customize the color of each segment by setting the Fill property, and can also customize the depth, perspective angle, rotation, tilt of the pie chart by setting the appropriate properties.   
 {% highlight html %}
-[ASP.NET]
+
 
 
 
@@ -295,65 +287,65 @@ Rotation="-30" PerspectiveAngle="90" EnableRotation="true" Enable3D="true">
 
 
 
-   &lt;Series&gt;
+   <Series>
 
 
 
-      &lt;ej:Series Type="Pie" StartAngle="145" ExplodeIndex="1"&gt;
+      <ej:Series Type="Pie" StartAngle="145" ExplodeIndex="1">
 
 
 
-                    &lt;points&gt;
+                    <points>
 
 
 
-                        &lt;ej:points X="Housing" Y="31"/&gt;
+                        <ej:points X="Housing" Y="31"/>
 
-                        &lt;ej:points X="Food" Y="16"/&gt;
+                        <ej:points X="Food" Y="16"/>
 
-                        &lt;ej:points X="Transportation" Y="14"/&gt;
+                        <ej:points X="Transportation" Y="14"/>
 
-                        &lt;ej:points X="Clothing" Y="6"/&gt;
+                        <ej:points X="Clothing" Y="6"/>
 
-                        &lt;ej:points X="Health care" Y="8"/&gt;
+                        <ej:points X="Health care" Y="8"/>
 
-                        &lt;ej:points X="Education" Y="17"/&gt;
+                        <ej:points X="Education" Y="17"/>
 
-                        &lt;ej:points X="Miscellaneous" Y="8"/&gt;
-
-
-
-                    &lt;/points&gt;
+                        <ej:points X="Miscellaneous" Y="8"/>
 
 
 
-                    &lt;Border Width="2" Color="White" /&gt;
+                    </points>
 
 
 
-       &lt;/ej:Series&gt;
+                    <Border Width="2" Color="White" />
 
 
 
-   &lt;/Series&gt; 
+       </ej:Series>
 
 
 
-&lt;/ej:Chart&gt;
+   </Series> 
+
+
+
+</ej:Chart>
 
 
 
 {% endhighlight  %}
 
 ![](3D-Chart_images/3D-Chart_img5.png) 
-{:.image }
+
 
 
 ### 3D Doughnut Chart
 
 3D Doughnut charts are similar to 3D Pie Charts with the difference of having a hole in the center of the Doughnut chart. The size of the hole is customized by using the DoughnutCoefficient property. The size of the doughnut is customized by using the DoughnutSize property. You can rotate the 3D doughnut chart to 360 degrees by enabling the EnableRotation property. You can customize each segment’s color and border by setting Fill and Border property. 
 {% highlight html %}
-[ASP.NET]
+
 
 
 
@@ -365,7 +357,7 @@ Rotation="-30" PerspectiveAngle="90" EnableRotation="true" Enable3D="true">
 
 
 
-   &lt;Series&gt;
+   <Series>
 
 
 
@@ -377,44 +369,44 @@ Rotation="-30" PerspectiveAngle="90" EnableRotation="true" Enable3D="true">
 
 
 
-                    &lt;points&gt;
+                    <points>
 
 
 
-                        &lt;ej:points X="Watching TV" Y="31"/&gt;
+                        <ej:points X="Watching TV" Y="31"/>
 
-                        &lt;ej:points X="Socializing" Y="16"/&gt;
+                        <ej:points X="Socializing" Y="16"/>
 
-                        &lt;ej:points X="Reading" Y="14"/&gt;
+                        <ej:points X="Reading" Y="14"/>
 
-                        &lt;ej:points X="Sports" Y="6"/&gt;
+                        <ej:points X="Sports" Y="6"/>
 
-                        &lt;ej:points X="Others" Y="8"/&gt;
-
-
-
-                    &lt;/points&gt;
+                        <ej:points X="Others" Y="8"/>
 
 
 
-                    &lt;Border Width="2" Color="White" /&gt;
+                    </points>
 
 
 
-       &lt;/ej:Series&gt;
+                    <Border Width="2" Color="White" />
 
 
 
-   &lt;/Series&gt; 
+       </ej:Series>
 
 
 
-&lt;/ej:Chart&gt;
+   </Series> 
+
+
+
+</ej:Chart>
 
 {% endhighlight  %}
 
 ![](3D-Chart_images/3D-Chart_img6.png)
-{:.image }
+
 
 
 ## 100% 3D Stacking Column
@@ -423,7 +415,7 @@ Rotation="-30" PerspectiveAngle="90" EnableRotation="true" Enable3D="true">
 
 
 {% highlight html %}
-[ASP.NET]
+
 
 
 
@@ -435,55 +427,55 @@ Rotation="-30" PerspectiveAngle="90" EnableRotation="true" Enable3D="true">
 
 
 
-        &lt;CommonSeriesOptions EnableAnimation="true" Type="StackingColumn100"&gt;
+        <CommonSeriesOptions EnableAnimation="true" Type="StackingColumn100">
 
-        &lt;/CommonSeriesOptions&gt;       
+        </CommonSeriesOptions>       
 
-        &lt;Series&gt;
+        <Series>
 
-          &lt;ej:Series Name="Australia"&gt;
+          <ej:Series Name="Australia">
 
-              &lt;points&gt;
+              <points>
 
-                   &lt;ej:points X="2006" Y="80000"/&gt;
+                   <ej:points X="2006" Y="80000"/>
 
-                   &lt;ej:points X="2007" Y="22000"/&gt;
+                   <ej:points X="2007" Y="22000"/>
 
-                   &lt;ej:points X="2008" Y="60000"/&gt;
+                   <ej:points X="2008" Y="60000"/>
 
-                   &lt;ej:points X="2009" Y="39000"/&gt;
+                   <ej:points X="2009" Y="39000"/>
 
-                   &lt;ej:points X="2010" Y="62000"/&gt;
+                   <ej:points X="2010" Y="62000"/>
 
-                   &lt;ej:points X="2011" Y="90000"/&gt;                          
+                   <ej:points X="2011" Y="90000"/>                          
 
-              &lt;/points&gt;
+              </points>
 
-          &lt;/ej:Series&gt;
+          </ej:Series>
 
-          &lt;ej:Series Name=”China”&gt;
+          <ej:Series Name=”China”>
 
-              &lt;points&gt;
+              <points>
 
-                   &lt;ej:points X="2006" Y="50000"/&gt;
+                   <ej:points X="2006" Y="50000"/>
 
-                   &lt;ej:points X="2007" Y="41000"/&gt;
+                   <ej:points X="2007" Y="41000"/>
 
-                   &lt;ej:points X="2008" Y="52000"/&gt;
+                   <ej:points X="2008" Y="52000"/>
 
-                   &lt;ej:points X="2009" Y="43000"/&gt;
+                   <ej:points X="2009" Y="43000"/>
 
-                   &lt;ej:points X="2010" Y="47000"/&gt;
+                   <ej:points X="2010" Y="47000"/>
 
-                   &lt;ej:points X="2011" Y="93000"/&gt;                          
+                   <ej:points X="2011" Y="93000"/>                          
 
-              &lt;/points&gt;
+              </points>
 
-          &lt;/ej:Series&gt; 
+          </ej:Series> 
 
-        &lt;/Series&gt;          
+        </Series>          
 
-  &lt;/ej:Chart&gt;
+  </ej:Chart>
 
 {% endhighlight  %}
 
@@ -492,7 +484,7 @@ The following screenshot displays the 100% 3D Stacking Column.
 
 
 ![F:/bar100/sshot-3.png](3D-Chart_images/3D-Chart_img7.png)
-{:.image }
+
 
 
 ## 100% 3D Stacking Bar
@@ -501,7 +493,7 @@ The following screenshot displays the 100% 3D Stacking Column.
 
 
 {% highlight html %}
-[ASP.NET]
+
 
 
 
@@ -513,57 +505,57 @@ The following screenshot displays the 100% 3D Stacking Column.
 
 
 
-        &lt;CommonSeriesOptions EnableAnimation="true" Type="StackingBar100"&gt;
+        <CommonSeriesOptions EnableAnimation="true" Type="StackingBar100">
 
-        &lt;/CommonSeriesOptions&gt;
+        </CommonSeriesOptions>
 
 
 
-        &lt;Series&gt;
+        <Series>
 
-          &lt;ej:Series Name="Brazil"&gt;
+          <ej:Series Name="Brazil">
 
-              &lt;points&gt;
+              <points>
 
-                   &lt;ej:points X="2006" Y="8000"/&gt;
+                   <ej:points X="2006" Y="8000"/>
 
-                   &lt;ej:points X="2007" Y="12000"/&gt;
+                   <ej:points X="2007" Y="12000"/>
 
-                   &lt;ej:points X="2008" Y="20000"/&gt;
+                   <ej:points X="2008" Y="20000"/>
 
-                   &lt;ej:points X="2009" Y="21000"/&gt;
+                   <ej:points X="2009" Y="21000"/>
 
-                   &lt;ej:points X="2010" Y="28000"/&gt;
+                   <ej:points X="2010" Y="28000"/>
 
-                   &lt;ej:points X="2011" Y="29000"/&gt;                          
+                   <ej:points X="2011" Y="29000"/>                          
 
-              &lt;/points&gt;
+              </points>
 
-          &lt;/ej:Series&gt;
+          </ej:Series>
 
-          &lt;ej:Series Name="Nigeria"&gt;
+          <ej:Series Name="Nigeria">
 
-              &lt;points&gt;
+              <points>
 
-                   &lt;ej:points X="2006" Y="5000"/&gt;
+                   <ej:points X="2006" Y="5000"/>
 
-                   &lt;ej:points X="2007" Y="15000"/&gt;
+                   <ej:points X="2007" Y="15000"/>
 
-                   &lt;ej:points X="2008" Y="19000"/&gt;
+                   <ej:points X="2008" Y="19000"/>
 
-                   &lt;ej:points X="2009" Y="25000"/&gt;
+                   <ej:points X="2009" Y="25000"/>
 
-                   &lt;ej:points X="2010" Y="26000"/&gt;
+                   <ej:points X="2010" Y="26000"/>
 
-                   &lt;ej:points X="2011" Y="30000"/&gt;                          
+                   <ej:points X="2011" Y="30000"/>                          
 
-              &lt;/points&gt;
+              </points>
 
-          &lt;/ej:Series&gt; 
+          </ej:Series> 
 
-        &lt;/Series&gt;   
+        </Series>   
 
-  &lt;/ej:Chart&gt;
+  </ej:Chart>
 
 {% endhighlight  %}
 
@@ -572,6 +564,6 @@ The following screenshot displays the 100% 3D Stacking Bar.
 
 
 ![F:/bar100/sshot-2.png](3D-Chart_images/3D-Chart_img8.png)
-{:.image }
+
 
 

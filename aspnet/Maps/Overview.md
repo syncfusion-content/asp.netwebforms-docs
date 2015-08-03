@@ -11,9 +11,9 @@ documentation: ug
 
 A Map is a graphical representation of geographical data. It is used to represent the statistical data of a particular geographical area on Earth. Using pan and zoom, the maps can be navigated. Maps supports enhanced data visualization with bubbles and labels using data bound to the map.
 
-Use Case Scenarios
+## Use Case Scenarios
 
-Some of the Maps control use case scenarios:
+## Some of the Maps control use case scenarios:
 
 1. To visualize weather data.
 2. To visualize geographical statistics information.
@@ -21,7 +21,7 @@ Some of the Maps control use case scenarios:
 4. To visualize political information.
 5. To visualize the layout of a building.
 
-Key Features
+## Key Features
 
 * Layers - Map is maintained through Layers and it can accommodate one or more layers.
 * Map Providers Support - Syncfusion Map support map providers such as OpenStreetMap that can be added to any layers in maps.

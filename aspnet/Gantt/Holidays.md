@@ -60,6 +60,6 @@ The following screenshot shows the output of Holidays in Gantt control.
 
 
 ![](Holidays_images/Holidays_img1.png) 
-{:.image }
+
 
 

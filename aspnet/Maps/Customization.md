@@ -11,7 +11,7 @@ documentation: ug
 
 Maps control supports color customization to determine the exact combination of colors for shapes displayed in Maps and tooltip support to display additional information of shape data.
 
-Shapes Color Customization
+## Shapes Color Customization
 
 The Map control highly supports the customization of the shape’s color. The shape’s color can be customized using the following ways:
 
@@ -19,7 +19,7 @@ The Map control highly supports the customization of the shape’s color. The sh
 2. Color Mapping support.
 3. Color Palette support.
 
-Shape Settings 
+## Shape Settings 
 
 The ShapeSettings defines the basic customization settings of shapes in the map. 
 
@@ -38,11 +38,6 @@ The above properties of ShapeSettings are applied only when AutoFill property va
 
 {% highlight html %}
 
- [ASP]
-
-
-
-[ASPX] 
 
 
 
@@ -67,10 +62,10 @@ The above properties of ShapeSettings are applied only when AutoFill property va
 
 
 ![IMG_22042014_095149](Customization_images/Customization_img1.png)
-{:.image }
 
 
-Color Mapping
+
+## Color Mapping
 
 The Color Mapping support enables the customization of shape colors based on the underlying value of shape received from bounded data.
 
@@ -84,10 +79,10 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 From</td><td>
@@ -118,9 +113,7 @@ Gets or sets the start point and end point gradient colors to be applied for spe
 
 {% highlight html %}
 
-[ASP]
 
-[ASPX]
 
     <ej:Map ID="map" runat="server" >
 
@@ -140,7 +133,8 @@ Gets or sets the start point and end point gradient colors to be applied for spe
 
 
 
-[Map.aspx.cs]
+{% endhighlight  %}
+{% highlight c# %}
 
         protected void Page_Load(object sender, EventArgs e)
 
@@ -181,7 +175,7 @@ When the underlying value is below any of the given sorted range or above the so
 
 
 ![](Customization_images/Customization_img2.png)
-{:.image }
+
 
 
 * Equal Color Mapping - The Equal color mapping is used to differentiate the shape’s fill based on its underlying value and color. The properties of Equal color mapping is listed in the following table.
@@ -190,10 +184,10 @@ _Property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 Value</td><td>
@@ -213,12 +207,6 @@ Here “Map.aspx.cs” is populated with datas of USA Election in “Map.aspx.cs
 
 
 {% highlight html %}
-
-[ASP]
-
-
-
-[ASPX]
 
 
 
@@ -259,14 +247,14 @@ Here “Map.aspx.cs” is populated with datas of USA Election in “Map.aspx.cs
 {% endhighlight %}
 
 ![](Customization_images/Customization_img3.png)
-{:.image }
 
 
-ColorPalette
+
+## ColorPalette
 
 When AutoFill property is set to true, shapes are filled with default colors from built-in palettes or custom palette.
 
-ColorPalette
+## ColorPalette
 
 The ColorPalette property determines whether the auto fill colors are fetched from built-in color palettes or custom palette.
 
@@ -276,9 +264,7 @@ The ColorPalette property can be set with Palette1, Palette2, Palette3 and Custo
 
 {% highlight html %}
 
-[ASP]
 
-[ASPX]
 
 
 
@@ -305,10 +291,10 @@ The ColorPalette property can be set with Palette1, Palette2, Palette3 and Custo
 
 
 ![](Customization_images/Customization_img4.png) 
-{:.image }
 
 
-CustomPalette
+
+## CustomPalette
 
 The CustomPalette property is used to set an array of colors to be auto filled in shapes.
 
@@ -317,10 +303,6 @@ This property is enabled only when ColorPalette property value is set to “Cust
 
 
 {% highlight c# %}
-
-[ASP]
-
-[ASPX.CS]
 
 
 
@@ -365,10 +347,10 @@ protected void Page_Load(object sender, EventArgs e)
 
 
 ![](Customization_images/Customization_img5.png)
-{:.image }
 
 
-Tooltip
+
+## Tooltip
 
 The tooltip is displayed only when you set ShowTooltip to “True” in the shape layers. By default, it takes the property of the bound object that is referred in the ValuePath and displays its content on hovering the corresponding shape. 
 
@@ -376,11 +358,6 @@ The tooltip is displayed only when you set ShowTooltip to “True” in the shap
 
 {% highlight html %}
 
- [ASP]
-
-
-
-[ASPX]
 
     <ej:Map  ID =“map” runat =“server” >
 
@@ -403,10 +380,10 @@ The tooltip is displayed only when you set ShowTooltip to “True” in the shap
 
 
 ![](Customization_images/Customization_img6.png)
-{:.image }
 
 
-Tooltip Template
+
+## Tooltip Template
 
 The TooltipTemplate property is used for customizing the template for tooltip.
 
@@ -414,9 +391,6 @@ The TooltipTemplate property is used for customizing the template for tooltip.
 
 {% highlight html %}
 
- [ASP]
-
-[ASPX]
 
    <ej:Map ID="map" runat="server" >    
 
@@ -470,6 +444,6 @@ The following screenshot illustrates a map control displaying a Tooltip with tem
 
 
 ![a](Customization_images/Customization_img7.png)
-{:.image }
+
 
 

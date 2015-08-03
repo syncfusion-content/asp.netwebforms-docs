@@ -12,7 +12,7 @@ documentation: ug
 You can add the icons or images with list items in DropDown popup by using sprite CSS class. The following steps explain the configuration about the icons support with the DropDownList.
 
 
-> _Note: Images for this sample are available in ‘installed location /themes/images’ and you need to define images in the mentioned CSS. Henceforth, the images are displayed._ 
+> Note: Images for this sample are available in ‘installed location /themes/images’ and you need to define images in the mentioned CSS. Henceforth, the images are displayed. 
 
 
 In an ASPX page, add an element to configure the DropDownList.
@@ -241,7 +241,7 @@ Output of the above step.
 
 
 
-![](Icons-Support_images/Icons-Support_img2.png) 
-{:.image }
+![](Icons-Support_images/Icons-Support_img2.png)  
+
 
 

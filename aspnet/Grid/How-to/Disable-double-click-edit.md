@@ -15,31 +15,31 @@ The AllowEditOnDblClick property can be set as True to enable editing the record
 
 [aspx]
 
-  &lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" &gt;
+  <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" >
 
-&lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"&gt;&lt;/DataManager&gt;
-
-
-
-            &lt;Columns&gt;
-
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" /&gt;
-
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" /&gt;
-
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="70" EditType=" Numeric" /&gt;
-
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" EditType="Dropdown" /&gt;
+<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"></DataManager>
 
 
 
-            &lt;/Columns&gt;
+            <Columns>
 
-            &lt;EditSettings AllowEditing="True" AllowEditOnDblClick="False" AllowAdding="True" AllowDeleting="True" EditMode="Normal"&gt;&lt;/EditSettings&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
-            &lt;ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"&gt;&lt;/ToolbarSettings&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
 
-        &lt;/ej:Grid&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="70" EditType=" Numeric" />
+
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" EditType="Dropdown" />
+
+
+
+            </Columns>
+
+            <EditSettings AllowEditing="True" AllowEditOnDblClick="False" AllowAdding="True" AllowDeleting="True" EditMode="Normal"></EditSettings>
+
+            <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+
+        </ej:Grid>
 
 
 
@@ -50,6 +50,6 @@ The AllowEditOnDblClick property can be set as True to enable editing the record
 The following output is displayed as a result of the above code example.
 
 { ![](Disable-double-click-edit_images/Disable-double-click-edit_img1.png) | markdownify }
-{:.image }
+
 
 

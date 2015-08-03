@@ -22,7 +22,7 @@ Gantt chart is used to edit and visualize project schedule and also to track pro
 
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
-{:.image }
+
 
 
 * Toolbar – It is a collection of toolbar buttons to add, edit, and delete a task. You can outdent and indent a task using outdent and indent buttons. Following screen shot illustrates the function of each toolbar button,
@@ -30,7 +30,7 @@ Gantt chart is used to edit and visualize project schedule and also to track pro
 
 
 ![](Getting-Started_images/Getting-Started_img2.png)
-{:.image }
+
 
 
 * Search Textbox – It is used to search tasks, which contains the search string.
@@ -45,15 +45,15 @@ Gantt chart is used to edit and visualize project schedule and also to track pro
 
 
 ![](Getting-Started_images/Getting-Started_img3.png)
-{:.image }
+
 
 
 ### Create your Gantt chart
 
 In this tutorial, you will learn how to create a simple Gantt chart, add tasks and subtasks, and set relationship between tasks for design phase of software project. The following screen shot displays the output after completing this tutorial.
 
-![](Getting-Started_images/Getting-Started_img4.png)
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png) 
+
 
 
 1. First create a new ASP.NET Web Form project ; please refer the [ASP-Getting Started documentation](http://help.syncfusion.com/ug/js/default.htm) to create new project and add necessary DLL’s and script files.
@@ -323,10 +323,10 @@ protected void Page_Load(object sender, EventArgs e)
 The following screenshot displays the Gantt.
 
 ![](Getting-Started_images/Getting-Started_img5.png)
-{:.image }
 
 
-Enable Toolbar
+
+#### Enable Toolbar
 
 Gantt control contains the toolbar options to edit, search, expand and collapse all records, indent, outdent, delete, and add a task. You can enable toolbar using Toolbar option.
 {% highlight html %}
@@ -337,23 +337,23 @@ Gantt control contains the toolbar options to edit, search, expand and collapse 
 
     >
 
-    &lt;ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel,indent,outdent"/&gt;
+    <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel,indent,outdent"/>
 
-&lt;/ej:Gantt&gt;            
+</ej:Gantt>            
 {% endhighlight %}
 The following screen shot displays a Tool bar in Gantt.
 
-![](Getting-Started_images/Getting-Started_img6.png)
-{:.image }
+![](Getting-Started_images/Getting-Started_img6.png) 
 
 
-> _Note:__add, edit, delete options are enabled when enabling the allowEditing, allowAdding, allowDelete in the edit Settings._
 
-Enable sorting 
+> Note:add, edit, delete options are enabled when enabling the allowEditing, allowAdding, allowDelete in the edit Settings.
+
+#### Enable sorting 
 
 Gantt control has the sorting functionality for arranging the tasks in ascending or descending based on the particular column.
 
-Multicolumn sorting:
+#### Multicolumn sorting:
 
 Enable the multicolumn sorting in Gantt by setting AllowMultiSorting to “True”. You can sort multiple columns in Gantt by selecting the desired column header while holding the CTRL key.
 
@@ -375,19 +375,19 @@ Enable the multicolumn sorting in Gantt by setting AllowMultiSorting to “True�
 
 {% endhighlight %}
 
-Enable Editing
+#### Enable Editing
 
 You can enable editing using EditOption and AllowGanttChartEditing options.
 
-Cell Editing:
+#### Cell Editing:
 
 Modify the task details through the grid cell editing by setting the EditMode as CellEditing.
 
-Normal Editing:
+#### Normal Editing:
 
 Modify the task details through the edit dialog by setting the EditMode as Normal.
 
-Taskbar Editing:
+#### Taskbar Editing:
 
 Modify the task details through user interaction like resizing and dragging the taskbar.
 
@@ -412,12 +412,12 @@ Modify the task details through user interaction like resizing and dragging the 
 The following screen shot displays the Gantt control with Enable Editing options.
 
 ![](Getting-Started_images/Getting-Started_img8.png)
-{:.image }
 
 
-> _Note: Both cellEditing and normal editing operations are performed through double click action._
 
-Enable Context Menu
+> Note: Both cellEditing and normal editing operations are performed through double click action.
+
+#### Enable Context Menu
 
 You can enable the context menu in Gantt by setting the EnableContextMenu to “True”.
 
@@ -439,29 +439,29 @@ The following screen shot displays Gantt chart with Enable Context menu option.
 
 
 
-![](Getting-Started_images/Getting-Started_img10.png) 
-{:.image }
+![](Getting-Started_images/Getting-Started_img10.png)  
 
 
-Provide tasks relationship
+
+#### Provide tasks relationship
 
 In Gantt control, you have the predecessor support to show the relationship between two different tasks.
 
-Types:
+#### Types:
 
-Start to Start (SS)
+#### Start to Start (SS)
 
 You cannot start a task until the other task is also started.
 
-Start to Finish (SF)
+#### Start to Finish (SF)
 
 You cannot finish a task until the other task is started.
 
-Finish to Start (FS)
+#### Finish to Start (FS)
 
 You cannot start a task until the other task is completed.
 
-Finish to Finish (FF)
+#### Finish to Finish (FF)
 
 You cannot finish a task until the other task is completed.
 
@@ -486,17 +486,17 @@ You can show the relationship in tasks by using the PredecessorMapping as follow
 The following screen shot displays the relationship between tasks.
 
 ![](Getting-Started_images/Getting-Started_img11.png)
-{:.image }
 
 
-Provide Resources
+
+#### Provide Resources
 
 In ASP.NET MVCGantt, you can display and assign the resource for each task. Create a collection of JSON object, which contains id and name of the resource and assign it to ResourceCollection option. Then, specify the field name for id and name of the resource in the resource collection to ResourceIdMapping and ResourceNameMapping options. The name of the field which contains the actual resources assigned for a particular task in the DataSource is specified using ResourceInfoMapping.
 
 
 {% highlight c# %}
 
-Default.aspx.cs
+
 
 
 
@@ -564,7 +564,7 @@ public class ResourceList
 
 {% highlight html %}
 
-Default.aspx
+
 
 <ej:Gantt ID="GanttControlDefault" runat="server"
 
@@ -576,15 +576,14 @@ Default.aspx
 
     ResourceIdMapping="ResourceID">
 
-&lt;/ej:Gantt&gt;            
+</ej:Gantt>            
 
 
 {% endhighlight %}
 The following screen shot displays resource allocation for tasks in Gantt.
 
 
-
 ![](Getting-Started_images/Getting-Started_img12.png)
-{:.image }
+
 
 

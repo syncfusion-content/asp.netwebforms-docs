@@ -13,6 +13,6 @@ A Chart is composed of various sub elements such as legends, areas, series, and 
 
 
 ![](Chart-Elements_images/Chart-Elements_img1.png) 
-{:.image }
+
 
 

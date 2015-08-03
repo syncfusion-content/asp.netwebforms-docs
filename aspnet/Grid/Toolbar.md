@@ -28,17 +28,12 @@ Custom Toolbar is a key functionality, used to customize Toolbar elements. Here 
 
 {% highlight html %}
 
-[ASP]
 
 
 
-[aspx]
+  <script id="Refresh" type="text/x-jsrender">
 
-
-
-  &lt;script id="Refresh" type="text/x-jsrender"&gt;
-
-        &lt;select id="products"&gt;
+        <select id="products">
 
             <option value="">All</option>
 
@@ -48,48 +43,47 @@ Custom Toolbar is a key functionality, used to customize Toolbar elements. Here 
 
             <option value="3">Packages</option>
 
-        &lt;/select&gt;
+        </select>
 
-    &lt;/script&gt;
+    </script>
 
 
 
-&lt;ej:Grid ID="Grid1" runat="server" AllowScrolling="true"&gt;
+<ej:Grid ID="Grid1" runat="server" AllowScrolling="true">
 
-        &lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Products"&gt;&lt;/DataManager&gt;
+        <DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Products"></DataManager>
 
-        &lt;Columns&gt;
+        <Columns>
 
-            &lt;ej:Column Field="ProductID" HeaderText="Product ID" IsPrimaryKey="True" TextAlign="Right" Width="100" /&gt;
+            <ej:Column Field="ProductID" HeaderText="Product ID" IsPrimaryKey="True" TextAlign="Right" Width="100" />
 
-            &lt;ej:Column Field="ProductName" HeaderText="Product Name" Width="200" /&gt;
+            <ej:Column Field="ProductName" HeaderText="Product Name" Width="200" />
 
-            &lt;ej:Column Field="QuantityPerUnit" HeaderText="Quantity" TextAlign="Right" Width="100" /&gt;
+            <ej:Column Field="QuantityPerUnit" HeaderText="Quantity" TextAlign="Right" Width="100" />
 
-            &lt;ej:Column Field="UnitsOnOrder" HeaderText="UnitsOnOrder" Width="100" /&gt;
+            <ej:Column Field="UnitsOnOrder" HeaderText="UnitsOnOrder" Width="100" />
 
-        &lt;/Columns&gt;
+        </Columns>
 
-        &lt;ScrollSettings Height="300" Width="auto"&gt;&lt;/ScrollSettings&gt;
+        <ScrollSettings Height="300" Width="auto"></ScrollSettings>
 
-        &lt;ToolbarSettings ShowToolbar="true"&gt;
+        <ToolbarSettings ShowToolbar="true">
 
-            &lt;CustomToolbarItem&gt;
+            <CustomToolbarItem>
 
-                &lt;ej:CustomToolbarItem TemplateID="#Refresh" /&gt;
+                <ej:CustomToolbarItem TemplateID="#Refresh" />
 
-            &lt;/CustomToolbarItem&gt;
+            </CustomToolbarItem>
 
-        &lt;/ToolbarSettings&gt;
+        </ToolbarSettings>
 
-    &lt;/ej:Grid&gt;
+    </ej:Grid>
 {% endhighlight  %}
 {% highlight js %}
- [javascript]
 
 
 
-&lt;script&gt;
+<script>
 
 
 
@@ -123,7 +117,7 @@ Custom Toolbar is a key functionality, used to customize Toolbar elements. Here 
 
         }
 
-    &lt;/script&gt;
+    </script>
 
 {% endhighlight  %}
 
@@ -132,6 +126,6 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Toolbar_images/Toolbar_img1.png)
-{:.image }
+
 
 

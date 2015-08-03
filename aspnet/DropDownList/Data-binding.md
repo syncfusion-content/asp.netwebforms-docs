@@ -15,11 +15,11 @@ The following sub-properties provide a way to bind the data either locally or re
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td><td>
-Default value</td><td>
-Data type</td></tr>
+<th>
+Properties</th><th>
+Description</th><th>
+Default value</th><th>
+Data type</th></tr>
 <tr>
 <td>
 DataSource</td><td>
@@ -136,7 +136,7 @@ In an ASPX page, add an element to configure DropDownList.
 <table>
 <tr>
 <td>
-<ej:DropDownList ID="dropdownlist" Width="200px" runat="server" DataIdField="Id"    DataTextField="Text">&lt;/ej:DropDownList&gt;</td></tr>
+<ej:DropDownList ID="dropdownlist" Width="200px" runat="server" DataIdField="Id"    DataTextField="Text"></ej:DropDownList></td></tr>
 <tr>
 <td>
 </td></tr>
@@ -193,8 +193,8 @@ In an ASPX page, add an element to configure DropDownList.
 
 Output of the above step.
 
-![C:/Users/ApoorvahR/Desktop/1.png](Data-binding_images/Data-binding_img1.png)
-{:.image }
+![C:/Users/ApoorvahR/Desktop/1.png](Data-binding_images/Data-binding_img1.png) 
+
 
 
 ## SQLDataSource
@@ -225,12 +225,12 @@ In the ASPX page, add DropDownList.
 
 
 ![](Data-binding_images/Data-binding_img2.png)
-{:.image }
+
 
 
 Add connection string in the Web.config file.
 
-> _Note: Change the username with your system name in the following connection string._ 
+> Note: Change the username with your system name in the following connection string.
 
 
 
@@ -259,7 +259,7 @@ Add connection string in the Web.config file.
 Output of the above steps.
 
 ![](Data-binding_images/Data-binding_img4.png)
-{:.image }
+
 
 
 ## LINQDataSource
@@ -301,13 +301,13 @@ Create a table in .mdf format by using the following table structure. Create a d
 
 
 ![](Data-binding_images/Data-binding_img5.png)
-{:.image }
+
 
 
 Add connection String in the Web.config file.
 
 
-> _Note: Change the username with your system name in the following connection string._
+> Note: Change the username with your system name in the following connection string.
 
 
 
@@ -334,7 +334,7 @@ Add connection String in the Web.config file.
 Output of the above steps
 
 ![](Data-binding_images/Data-binding_img7.png)
-{:.image }
+
 
 
 ## ObjectDataSource
@@ -476,7 +476,7 @@ public class TabData
 Output of the above steps.
 
 ![](Data-binding_images/Data-binding_img8.png)
-{:.image }
+
 
 
 ## XMLDataSource
@@ -540,7 +540,7 @@ Create new xml file in App_Data folder as ‘XMLData.xml’ and add the followin
 Output of the above steps
 
 ![](Data-binding_images/Data-binding_img9.png)
-{:.image }
+
 
 
 ## Remote data 
@@ -592,6 +592,6 @@ protected void Page_Load(object sender, EventArgs e)
 Output of the above step.
 
 ![C:/Users/ApoorvahR/Desktop/2.png](Data-binding_images/Data-binding_img10.png)
-{:.image }
+
 
 

@@ -88,7 +88,7 @@ Customize the CSS properties in custom CSS class.
 The output for MaskEditTextbox after applying “CssClass”.
 
 ![C:/Users/giftline.jebamani/Desktop/aa.png](Appearance-and-styling_images/Appearance-and-styling_img1.png)
-{:.image }
+
 
 
 
@@ -118,7 +118,7 @@ The following steps explains the implementation of ShowRoundedCorner in the Mask
 The output for MaskEditTextbox when “ShowRoundedCorner” is “true”.
 
 ![C:/Users/giftline.jebamani/Desktop/bb.png](Appearance-and-styling_images/Appearance-and-styling_img2.png)
-{:.image }
+
 
 ### Water Mark Text Support
 
@@ -147,7 +147,7 @@ Add the following code in your ASPX page to render the MaskEditTextbox control.
 The output for the MaskEditTextbox after applying “WatermarkText”.
 
 ![C:/Users/giftline.jebamani/Desktop/cc.png](Appearance-and-styling_images/Appearance-and-styling_img3.png) 
-{:.image }
+
 
 
 ### Text Alignment Support
@@ -175,6 +175,6 @@ Add the following code in your ASPX page to render the Textbox control.
 The output for MaskEditTextbox when “TextAlign”is“right”.
 
 ![C:/Users/giftline.jebamani/Desktop/dd.png](Appearance-and-styling_images/Appearance-and-styling_img4.png) 
-{:.image }
+
 
 

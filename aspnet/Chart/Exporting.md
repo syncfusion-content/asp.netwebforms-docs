@@ -11,17 +11,17 @@ documentation: ug
 
 Essential Chart supports client-side exporting when rendered in canvas mode. The following code snippet illustrates client-side exporting using Essential Chart. 
 
-Code: 
+## Code: 
 {% highlight html %}
-[ASP.NET] 
 
-   &lt;img alt="Export Chart" src="../Content/images/chart/export.png" onclick="onExport()"  title="Export Chart" style="float: right" /&gt;
 
-        &lt;ej:Chart ID="Chart1" EnableCanvasRendering="true" runat="server"&gt;            
+   <img alt="Export Chart" src="../Content/images/chart/export.png" onclick="onExport()"  title="Export Chart" style="float: right" />
 
-        &lt;/ej:Chart&gt; 
+        <ej:Chart ID="Chart1" EnableCanvasRendering="true" runat="server">            
 
-&lt;script&gt;
+        </ej:Chart> 
+
+<script>
 
         function onExport() {
 
@@ -45,7 +45,7 @@ Code:
 
     }
 
-&lt;/script&gt;
+</script>
 
 {% endhighlight  %}
 

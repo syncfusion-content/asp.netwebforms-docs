@@ -20,7 +20,7 @@ Filtering is used to filter particular or related records in Grid to review deta
 
 After you enable Filter Menu in Grid, it shows filter menu to filter records. This menu contains filtering options based on column type.
 
-Filter menu types
+### Filter menu types
 
 * String menu filtering 
 * Numeric menu filtering
@@ -31,21 +31,17 @@ Filter menus are a good UI based filtering option. It visibly denotes filtering 
 
 {% highlight html %}
 
-[ASP]
 
 
 
-[aspx]
 
+<ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="True" >
 
+<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"></DataManager>
 
-&lt;ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="True" &gt;
+            <FilterSettings FilterType="Menu" />         
 
-&lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"&gt;&lt;/DataManager&gt;
-
-            &lt;FilterSettings FilterType="Menu" /&gt;         
-
-&lt;/ej:Grid&gt; 
+</ej:Grid> 
 
 
 {% endhighlight %}
@@ -58,7 +54,7 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Filtering_images/Filtering_img1.png)
-{:.image }
+
 
 
 ## Filter Bar
@@ -100,23 +96,19 @@ Boolean filter bar works with either true or false.</td></tr>
 </table>
 
 {% highlight html %}
-[ASP]
 
 
 
-[aspx]
+
+  <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="True" >
+
+<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"></DataManager>
 
 
 
-  &lt;ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="True" &gt;
+            <FilterSettings FilterType="FilterBar" />
 
-&lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"&gt;&lt;/DataManager&gt;
-
-
-
-            &lt;FilterSettings FilterType="FilterBar" /&gt;
-
-  &lt;/ej:Grid&gt;    
+  </ej:Grid>    
 
 
 
@@ -129,7 +121,7 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Filtering_images/Filtering_img2.png)
-{:.image }
+
 
 
 ## Excel styled menu
@@ -143,7 +135,7 @@ The filter menu contains options such as Sorting, Clear filter, submenu for the 
 The Checkbox list is available in the menu that contains the possible filter value for the column. It shows the list of possible filter values with the checkbox. The filter value can be selected by clicking the checkbox corresponding to that value. By clicking the Ok button, the column is filtered based on the values checked in the checkbox list. The SelectAll checkbox is also present in the checkbox list that allows either select or deselect all the checkboxes.
 
 ![](Filtering_images/Filtering_img3.png)
-{:.image }
+
 
 
 A Search box is available at the top of the check box list that is used to search the possible filter choices. The number of possible filter choices are restricted by the setting the MaxFilterChoices property of the FilterSettings. 
@@ -153,48 +145,48 @@ A Search box is available at the top of the check box list that is used to searc
 The Submenu items in the filter menu provide the advanced filtering options for end users. When selecting a sub menu item, a separate dialog box opens and displays an advanced filter drop-down that lists the available filter operators for the respective filtering column. The filtering is performed by clicking the Ok button.
 
 ![](Filtering_images/Filtering_img4.png)
-{:.image }
+
 
 
 ![](Filtering_images/Filtering_img5.png)
-{:.image }
+
 
 
 
 
 {% highlight html %}
 
-[ASPX]
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowFiltering="True" AllowPaging="True" AllowSorting="true"&gt;
 
-            &lt;Columns&gt;
+<ej:Grid ID="OrdersGrid" runat="server" AllowFiltering="True" AllowPaging="True" AllowSorting="true">
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" /&gt;
+            <Columns>
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" />
 
-                &lt;ej:Column Field="OrderDate" HeaderText="Order Date" Format="{0:MM/dd/yyyy}" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" /&gt;
+                <ej:Column Field="OrderDate" HeaderText="Order Date" Format="{0:MM/dd/yyyy}" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" /&gt;              
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" />              
 
-                &lt;ej:Column Field="Verified" HeaderText="Verified" Width="100" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
 
-            &lt;/Columns&gt;
+                <ej:Column Field="Verified" HeaderText="Verified" Width="100" />
 
-            &lt;FilterSettings FilterType="Excel" MaxFilterChoices="100" EnableCaseSensitivity="false"&gt;&lt;/FilterSettings&gt;
+            </Columns>
 
-&lt;/ej:Grid&gt;
+            <FilterSettings FilterType="Excel" MaxFilterChoices="100" EnableCaseSensitivity="false"></FilterSettings>
+
+</ej:Grid>
 
 {% endhighlight %}
 
 
 {% highlight c# %}
-[Code Behind]
+
 
 
 
@@ -256,9 +248,9 @@ _Table3: List of Column type and Filter operators_
 
 <table>
 <tr>
-<td>
-Column type</td><td>
-Filter operators</td></tr>
+<th>
+Column type</th><th>
+Filter operators</th></tr>
 <tr>
 <td>
 Number</td><td>
@@ -284,137 +276,132 @@ Grid contains an API to do filtering dynamically after Grid initialize, without 
 
 {% highlight html %}
 
-[ASP]
 
 
+    <div>
 
-[aspx]
+        <div class="row">
 
-    &lt;div&gt;
-
-        &lt;div class="row"&gt;
-
-            &lt;div class="col-md-1"&gt;
+            <div class="col-md-1">
 
                 Columns
 
-            &lt;/div&gt;
+            </div>
 
-            &lt;div class="col-md-1"&gt;
+            <div class="col-md-1">
 
-                &lt;ej:DropDownList ID="columns" runat="server"&gt;
+                <ej:DropDownList ID="columns" runat="server">
 
-                    &lt;Items&gt;
+                    <Items>
 
-                        &lt;ej:DropDownListItem Value="OrderID" Text="Order ID"&gt;&lt;/ej:DropDownListItem&gt;
+                        <ej:DropDownListItem Value="OrderID" Text="Order ID"></ej:DropDownListItem>
 
-                        &lt;ej:DropDownListItem Value="CustomerID" Text="Customer ID"&gt;&lt;/ej:DropDownListItem&gt;
+                        <ej:DropDownListItem Value="CustomerID" Text="Customer ID"></ej:DropDownListItem>
 
-                        &lt;ej:DropDownListItem Value="EmployeeID" Text="Employee ID"&gt;&lt;/ej:DropDownListItem&gt;
+                        <ej:DropDownListItem Value="EmployeeID" Text="Employee ID"></ej:DropDownListItem>
 
-                        &lt;ej:DropDownListItem Value="ShipCity" Text="Ship City"&gt;&lt;/ej:DropDownListItem&gt;
+                        <ej:DropDownListItem Value="ShipCity" Text="Ship City"></ej:DropDownListItem>
 
-                        &lt;ej:DropDownListItem Value="Verified" Text="Verified"&gt;&lt;/ej:DropDownListItem&gt;
+                        <ej:DropDownListItem Value="Verified" Text="Verified"></ej:DropDownListItem>
 
-                    &lt;/Items&gt;
+                    </Items>
 
-                &lt;/ej:DropDownList&gt;
+                </ej:DropDownList>
 
-            &lt;/div&gt;
+            </div>
 
-        &lt;/div&gt;
+        </div>
 
-        &lt;br /&gt;
+        <br />
 
-        &lt;div class="row"&gt;
+        <div class="row">
 
-            &lt;div class="col-md-1"&gt;
+            <div class="col-md-1">
 
                 Operator
 
-            &lt;/div&gt;
+            </div>
 
-            &lt;div class="col-md-1"&gt;
+            <div class="col-md-1">
 
-                &lt;ej:DropDownList ID="operator" runat="server"&gt;
+                <ej:DropDownList ID="operator" runat="server">
 
-                    &lt;Items&gt;
+                    <Items>
 
-                        &lt;ej:DropDownListItem Value="contains" Text="Contains"&gt;&lt;/ej:DropDownListItem&gt;
+                        <ej:DropDownListItem Value="contains" Text="Contains"></ej:DropDownListItem>
 
-                        &lt;ej:DropDownListItem Value="endswith" Text="Endswith"&gt;&lt;/ej:DropDownListItem&gt;
+                        <ej:DropDownListItem Value="endswith" Text="Endswith"></ej:DropDownListItem>
 
-                        &lt;ej:DropDownListItem Value="equal" Text="Equal"&gt;&lt;/ej:DropDownListItem&gt;
+                        <ej:DropDownListItem Value="equal" Text="Equal"></ej:DropDownListItem>
 
-                        &lt;ej:DropDownListItem Value="greaterthan" Text="Greaterthan"&gt;&lt;/ej:DropDownListItem&gt;
+                        <ej:DropDownListItem Value="greaterthan" Text="Greaterthan"></ej:DropDownListItem>
 
-                        &lt;ej:DropDownListItem Value="greaterthanorequal" Text="GreaterThanOrEqual"&gt;&lt;/ej:DropDownListItem&gt;
+                        <ej:DropDownListItem Value="greaterthanorequal" Text="GreaterThanOrEqual"></ej:DropDownListItem>
 
-                        &lt;ej:DropDownListItem Value="lessthan" Text="LessThan"&gt;&lt;/ej:DropDownListItem&gt;
+                        <ej:DropDownListItem Value="lessthan" Text="LessThan"></ej:DropDownListItem>
 
-                        &lt;ej:DropDownListItem Value="lessthanorequal" Text="LessThanOrEqual"&gt;&lt;/ej:DropDownListItem&gt;
+                        <ej:DropDownListItem Value="lessthanorequal" Text="LessThanOrEqual"></ej:DropDownListItem>
 
-                        &lt;ej:DropDownListItem Value="notequal" Text="NotEqual"&gt;&lt;/ej:DropDownListItem&gt;
+                        <ej:DropDownListItem Value="notequal" Text="NotEqual"></ej:DropDownListItem>
 
-                        &lt;ej:DropDownListItem Value="startswith" Text="StartsWith"&gt;&lt;/ej:DropDownListItem&gt;
+                        <ej:DropDownListItem Value="startswith" Text="StartsWith"></ej:DropDownListItem>
 
-                    &lt;/Items&gt;
+                    </Items>
 
-                &lt;/ej:DropDownList&gt;
+                </ej:DropDownList>
 
-            &lt;/div&gt;
+            </div>
 
-        &lt;/div&gt;
+        </div>
 
-        &lt;br /&gt;
+        <br />
 
-        &lt;div class="row"&gt;
+        <div class="row">
 
-            &lt;div class="col-md-1"&gt;
+            <div class="col-md-1">
 
                 Value
 
-            &lt;/div&gt;
+            </div>
 
-            &lt;div class="col-md-1"&gt;
+            <div class="col-md-1">
 
-                &lt;input type="text" class="e-ejinputtext" id="value" style="width: 143px; height: 26px" /&gt;
+                <input type="text" class="e-ejinputtext" id="value" style="width: 143px; height: 26px" />
 
-            &lt;/div&gt;
+            </div>
 
-        &lt;/div&gt;
+        </div>
 
-        &lt;br /&gt;
+        <br />
 
-        &lt;div class="row"&gt;
+        <div class="row">
 
-            &lt;div class="col-md-2"&gt;
+            <div class="col-md-2">
 
-                &lt;ej:Button Type="button" runat="server" ID="filter" ClientSideOnClick="button_click" Text="filter" /&gt;
+                <ej:Button Type="button" runat="server" ID="filter" ClientSideOnClick="button_click" Text="filter" />
 
-            &lt;/div&gt;
+            </div>
 
-        &lt;/div&gt;
+        </div>
 
-        &lt;ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="True"&gt;
+        <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="True">
 
-&lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"&gt;&lt;/DataManager&gt;
+<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"></DataManager>
 
 
 
-            &lt;FilterSettings FilterType="Menu" /&gt;
+            <FilterSettings FilterType="Menu" />
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-    &lt;/div&gt;
+    </div>
 
 {% endhighlight  %}
 
 {% highlight js %}
 
-[javascript]
 
-  &lt;script&gt;
+  <script>
 
         function button_click(args) {
 
@@ -424,7 +411,7 @@ Grid contains an API to do filtering dynamically after Grid initialize, without 
 
 
 
-    &lt;/script&gt;
+    </script>
 
 {% endhighlight  %}
 
@@ -437,6 +424,6 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Filtering_images/Filtering_img6.png)
-{:.image }
+
 
 

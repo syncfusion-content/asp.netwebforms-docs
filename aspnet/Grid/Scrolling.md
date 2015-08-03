@@ -17,48 +17,44 @@ In this following code example, ScrollSettings property is used to adjust the G
 
 {% highlight html %}
 
-[ASP]
+   
 
 
 
-[aspx]   
+<ej:Grid ID="Grid" runat="server" AllowScrolling="true">
 
+        <ScrollSettings Width="886" Height="300" />
 
+        <Columns>
 
-&lt;ej:Grid ID="Grid" runat="server" AllowScrolling="true"&gt;
+            <ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right" Width="100" />
 
-        &lt;ScrollSettings Width="886" Height="300" /&gt;
+            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" />
 
-        &lt;Columns&gt;
+            <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="100" />
 
-            &lt;ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right" Width="100" /&gt;
+            <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="100" Format="{0:C}" />
 
-            &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" /&gt;
+            <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
 
-            &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="100" /&gt;
+            <ej:Column Field="ShipName" HeaderText="Ship Name" Width="100" />
 
-            &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="100" Format="{0:C}" /&gt;
+            <ej:Column Field="OrderDate" HeaderText="Order Date" TextAlign="Right" Width="100" Format="{0:MM/dd/yyyy}" />
 
-            &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" /&gt;
+            <ej:Column Field="ShipCountry" HeaderText="Ship Country" Width="100" />
 
-            &lt;ej:Column Field="ShipName" HeaderText="Ship Name" Width="100" /&gt;
+            <ej:Column Field="ShipPostalCode" HeaderText="Postal Code" TextAlign="Right" Width="100" />
 
-            &lt;ej:Column Field="OrderDate" HeaderText="Order Date" TextAlign="Right" Width="100" Format="{0:MM/dd/yyyy}" /&gt;
+            <ej:Column Field="Verified" HeaderText="Verified" Width="100" />
 
-            &lt;ej:Column Field="ShipCountry" HeaderText="Ship Country" Width="100" /&gt;
+        </Columns>
 
-            &lt;ej:Column Field="ShipPostalCode" HeaderText="Postal Code" TextAlign="Right" Width="100" /&gt;
-
-            &lt;ej:Column Field="Verified" HeaderText="Verified" Width="100" /&gt;
-
-        &lt;/Columns&gt;
-
-    &lt;/ej:Grid&gt;
+    </ej:Grid>
 
 {% endhighlight %}
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -183,7 +179,7 @@ public partial class _Default : Page
 The following output is displayed as a result of the above code example.
 
 ![](Scrolling_images/Scrolling_img1.png)
-{:.image }
+
 
 
 ## Scroll Settings
@@ -200,43 +196,39 @@ The following code example illustrates how to enable vertical scrolling in the G
 
 {% highlight html %}
 
-[ASP]
+  
 
 
 
-[aspx]   
+<ej:Grid ID="Grid" runat="server" AllowScrolling="true">
 
+        <ScrollSettings Height="300" />
 
+        <Columns>
 
-&lt;ej:Grid ID="Grid" runat="server" AllowScrolling="true"&gt;
+            <ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right" Width="100" />
 
-        &lt;ScrollSettings Height="300" /&gt;
+            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" />
 
-        &lt;Columns&gt;
+            <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="100" />
 
-            &lt;ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right" Width="100" /&gt;
+            <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="100" Format="{0:C}" />
 
-            &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" /&gt;
+            <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
 
-            &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="100" /&gt;
+            <ej:Column Field="ShipName" HeaderText="Ship Name" Width="100" />
 
-            &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="100" Format="{0:C}" /&gt;
+            <ej:Column Field="OrderDate" HeaderText="Order Date" TextAlign="Right" Width="100" Format="{0:MM/dd/yyyy}" />
 
-            &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" /&gt;
+            <ej:Column Field="ShipCountry" HeaderText="Ship Country" Width="100" />
 
-            &lt;ej:Column Field="ShipName" HeaderText="Ship Name" Width="100" /&gt;
+            <ej:Column Field="ShipPostalCode" HeaderText="Postal Code" TextAlign="Right" Width="100" />
 
-            &lt;ej:Column Field="OrderDate" HeaderText="Order Date" TextAlign="Right" Width="100" Format="{0:MM/dd/yyyy}" /&gt;
+            <ej:Column Field="Verified" HeaderText="Verified" Width="100" />
 
-            &lt;ej:Column Field="ShipCountry" HeaderText="Ship Country" Width="100" /&gt;
+        </Columns>
 
-            &lt;ej:Column Field="ShipPostalCode" HeaderText="Postal Code" TextAlign="Right" Width="100" /&gt;
-
-            &lt;ej:Column Field="Verified" HeaderText="Verified" Width="100" /&gt;
-
-        &lt;/Columns&gt;
-
-    &lt;/ej:Grid&gt;
+    </ej:Grid>
 
 
 {% endhighlight  %}
@@ -245,7 +237,7 @@ The following code example illustrates how to enable vertical scrolling in the G
 The following output is displayed as a result of the above code example.
 
 ![](Scrolling_images/Scrolling_img2.png)
-{:.image }
+
 
 
 ### To Enable Horizontal Scrolling
@@ -258,43 +250,39 @@ When you set Width as auto, it renders Grid with browser calculate value.
 
 The following code example illustrates how to enable horizontal scrolling in the Grid. 
 {% highlight html %}
-[ASP]
+  
 
 
 
-[aspx]   
+<ej:Grid ID="Grid" runat="server" AllowScrolling="true">
 
+        <ScrollSettings Width="800" />
 
+        <Columns>
 
-&lt;ej:Grid ID="Grid" runat="server" AllowScrolling="true"&gt;
+            <ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right" Width="100" />
 
-        &lt;ScrollSettings Width="800" /&gt;
+            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" />
 
-        &lt;Columns&gt;
+            <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="100" />
 
-            &lt;ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right" Width="100" /&gt;
+            <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="100" Format="{0:C}" />
 
-            &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" /&gt;
+            <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
 
-            &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="100" /&gt;
+            <ej:Column Field="ShipName" HeaderText="Ship Name" Width="100" />
 
-            &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="100" Format="{0:C}" /&gt;
+            <ej:Column Field="OrderDate" HeaderText="Order Date" TextAlign="Right" Width="100" Format="{0:MM/dd/yyyy}" />
 
-            &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" /&gt;
+            <ej:Column Field="ShipCountry" HeaderText="Ship Country" Width="100" />
 
-            &lt;ej:Column Field="ShipName" HeaderText="Ship Name" Width="100" /&gt;
+            <ej:Column Field="ShipPostalCode" HeaderText="Postal Code" TextAlign="Right" Width="100" />
 
-            &lt;ej:Column Field="OrderDate" HeaderText="Order Date" TextAlign="Right" Width="100" Format="{0:MM/dd/yyyy}" /&gt;
+            <ej:Column Field="Verified" HeaderText="Verified" Width="100" />
 
-            &lt;ej:Column Field="ShipCountry" HeaderText="Ship Country" Width="100" /&gt;
+        </Columns>
 
-            &lt;ej:Column Field="ShipPostalCode" HeaderText="Postal Code" TextAlign="Right" Width="100" /&gt;
-
-            &lt;ej:Column Field="Verified" HeaderText="Verified" Width="100" /&gt;
-
-        &lt;/Columns&gt;
-
-    &lt;/ej:Grid&gt;
+    </ej:Grid>
 
 
 
@@ -303,7 +291,7 @@ The following code example illustrates how to enable horizontal scrolling in the
 The following output is displayed as a result of the above code example.
 
 ![](Scrolling_images/Scrolling_img3.png)
-{:.image }
+
 
 
 ## Virtual scrolling on demand
@@ -320,39 +308,34 @@ Essential Asp.NetGrid supports two mode of virtualization. They are,
 
 This feature allows you to load the Grid with data while scrolling. The following code example illustrates how to set VirtualScrollMode as Normal. 
 {% highlight html %}
-[ASP]
 
 
 
-[aspx]
+<ej:Grid ID="Grid" runat="server" AllowScrolling="True">
 
+      <Columns>                
 
+          <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" />
 
-&lt;ej:Grid ID="Grid" runat="server" AllowScrolling="True"&gt;
+          <ej:Column Field="CustomerID" HeaderText="Customer ID" />
 
-      &lt;Columns&gt;                
+          <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" />
 
-          &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" /&gt;
+           <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Format="{0:C}" />
 
-          &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" /&gt;
+           <ej:Column Field="ShipCity" HeaderText="Ship City" />
 
-          &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" /&gt;
+           <ej:Column Field="ShipName" HeaderText="Ship Name" TextAlign="Right" />
 
-           &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Format="{0:C}" /&gt;
+      </Columns>
 
-           &lt;ej:Column Field="ShipCity" HeaderText="Ship City" /&gt;
+      <ScrollSettings AllowVirtualScrolling="True" Height="0" Width="300" VirtualScollMode="Normal"></ScrollSettings>
 
-           &lt;ej:Column Field="ShipName" HeaderText="Ship Name" TextAlign="Right" /&gt;
-
-      &lt;/Columns&gt;
-
-      &lt;ScrollSettings AllowVirtualScrolling="True" Height="0" Width="300" VirtualScollMode="Normal"&gt;&lt;/ScrollSettings&gt;
-
-&lt;/ej:Grid&gt;
+</ej:Grid>
 {% endhighlight  %}
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -377,54 +360,50 @@ public partial class _Default : Page
 The following screenshot displays the Grid while scrolling. The request is sent to the server to fetch data.
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image229_108.png](Scrolling_images/Scrolling_img4.png)
-{:.image }
+
 
 
 The following screenshot displays the Grid after it is loaded with data.
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image229_109.png](Scrolling_images/Scrolling_img5.png)
-{:.image }
+
 
 
 ### Continuous Mode
 
 You can enable the continuous mode by setting the VirtualScrollMode property as Continuous. In Continuous mode, the data is loaded in Grid when the scrollbar reaches the end. The following code example illustrates how to set the continuous mode in virtualization. 
 {% highlight html %}
-[ASP]
 
 
 
-[aspx]
 
+<ej:Grid ID="Grid" runat="server" AllowScrolling="True">
 
+      <Columns>                
 
-&lt;ej:Grid ID="Grid" runat="server" AllowScrolling="True"&gt;
+          <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" />
 
-      &lt;Columns&gt;                
+          <ej:Column Field="CustomerID" HeaderText="Customer ID" />
 
-          &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" /&gt;
+          <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" />
 
-          &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" /&gt;
+           <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Format="{0:C}" />
 
-          &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" /&gt;
+           <ej:Column Field="ShipCity" HeaderText="Ship City" />
 
-           &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Format="{0:C}" /&gt;
+           <ej:Column Field="ShipName" HeaderText="Ship Name" TextAlign="Right" />
 
-           &lt;ej:Column Field="ShipCity" HeaderText="Ship City" /&gt;
+      </Columns>
 
-           &lt;ej:Column Field="ShipName" HeaderText="Ship Name" TextAlign="Right" /&gt;
+      <ScrollSettings AllowVirtualScrolling="True" Height="0" Width="300" VirtualScollMode="Continuous">
 
-      &lt;/Columns&gt;
+      </ScrollSettings>
 
-      &lt;ScrollSettings AllowVirtualScrolling="True" Height="0" Width="300" VirtualScollMode="Continuous"&gt;
-
-      &lt;/ScrollSettings&gt;
-
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 {% endhighlight %}
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -447,12 +426,12 @@ public partial class _Default : Page
 The following screenshot illustrates the request made to fetch the data after the Grid scrollbar touches the end.
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image229_110.png](Scrolling_images/Scrolling_img6.png)
-{:.image }
+
 
 
 The following screenshot illustrates the Grid after the data is loaded.
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image229_111.png](Scrolling_images/Scrolling_img7.png)
-{:.image }
+
 
 

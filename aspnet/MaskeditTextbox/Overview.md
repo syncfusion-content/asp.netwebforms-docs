@@ -11,7 +11,7 @@ documentation: ug
 
 The MaskEdit control provides an easy and reliable way of collecting user input and displaying standard data in a specific format. Some common uses of theMaskEditcontrol are IP address editors, phone number editors, and Social Security number editors.
 
-Key Features
+## Key Features
 
 * Mask: The format in which the value should be entered in the text box can be set by using this property.
 * Input Mode: This feature allows the MaskEdit text box to act as an input text box or password text box.

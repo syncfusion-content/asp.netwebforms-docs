@@ -121,13 +121,13 @@ The following example explains the how to bind data to the MaskEditTextbox cont
 The output of NumericTextbox controls with two-way angular bindingis as follows.
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image73_42.jpg](Integration_images/Integration_img1.jpeg) 
-{:.image }
+
 
 
 
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image73_43.jpg](Integration_images/Integration_img2.jpeg)
-{:.image }
+
 
 
 ## Knockout Support
@@ -270,6 +270,6 @@ The following example explains the how to bind data to the MaskEditTextbox cont
 The output of Knockout binding in MaskEditTextbox.
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image73_41.jpg](Integration_images/Integration_img3.jpeg)
-{:.image }
+
 
 

@@ -21,23 +21,23 @@ Grid allows you to refresh datasource dynamically after Gridinitialization. It i
 
 
 
-&lt;ej:Button ID="refresh" runat="server" Type="Button" Text="Refresh" ClientSideOnClick="refresh"&gt;
+<ej:Button ID="refresh" runat="server" Type="Button" Text="Refresh" ClientSideOnClick="refresh">
 
-&lt;/ej:Button&gt;
+</ej:Button>
 
-&lt;ej:Grid ID="Grid" runat="server"&gt;
+<ej:Grid ID="Grid" runat="server">
 
-    &lt;Columns&gt;
+    <Columns>
 
-        &lt;ej:Column Field="FirstName" HeaderText="First Name" /&gt;
+        <ej:Column Field="FirstName" HeaderText="First Name" />
 
-        &lt;ej:Column Field="LastName" HeaderText="Last Name" /&gt;
+        <ej:Column Field="LastName" HeaderText="Last Name" />
 
-        &lt;ej:Column Field="Email" HeaderText="Email" /&gt;
+        <ej:Column Field="Email" HeaderText="Email" />
 
-    &lt;/Columns&gt;
+    </Columns>
 
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 
 
@@ -45,7 +45,7 @@ Grid allows you to refresh datasource dynamically after Gridinitialization. It i
 
 
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
     var newData = [
 
@@ -67,7 +67,7 @@ $("#Grid").ejGrid("dataSource", newData);
 
 
 
-&lt;/script&gt;
+</script>
 
 
 
@@ -152,12 +152,12 @@ The following screenshot displays the Grid data source before refreshing.
 
 
 { ![](Refresh-datasource_images/Refresh-datasource_img1.png) | markdownify }
-{:.image }
+
 
 
 The following screenshot displays the Grid data source after refreshing.
 
 { ![](Refresh-datasource_images/Refresh-datasource_img2.png) | markdownify }
-{:.image }
+
 
 

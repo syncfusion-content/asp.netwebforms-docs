@@ -25,29 +25,23 @@ Nowadays oData is a very useful technique in consuming data. You can use oData p
 
 
 
-[ASP]
+<ej:Grid ID="Grid" runat="server">
 
+<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Products" />
 
+    <Columns>
 
-[aspx]
+        <ej:Column Field="ProductID" HeaderText="Product ID" TextAlign="Right" />
 
-&lt;ej:Grid ID="Grid" runat="server"&gt;
+        <ej:Column Field="ProductName" HeaderText="Product Name" />
 
-&lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Products" /&gt;
+        <ej:Column Field="SupplierID" HeaderText="Supplier ID" TextAlign="Right" />
 
-    &lt;Columns&gt;
+        <ej:Column Field="UnitPrice" HeaderText="Unit Price" TextAlign="Right" />
 
-        &lt;ej:Column Field="ProductID" HeaderText="Product ID" TextAlign="Right" /&gt;
+    </Columns>
 
-        &lt;ej:Column Field="ProductName" HeaderText="Product Name" /&gt;
-
-        &lt;ej:Column Field="SupplierID" HeaderText="Supplier ID" TextAlign="Right" /&gt;
-
-        &lt;ej:Column Field="UnitPrice" HeaderText="Unit Price" TextAlign="Right" /&gt;
-
-    &lt;/Columns&gt;
-
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 
 
@@ -58,7 +52,7 @@ The following screenshot is the result of the above code example.
 
 
 ![](Data-Adaptors_images/Data-Adaptors_img1.png) 
-{:.image }
+
 
 
 ## Cache Adaptor
@@ -67,42 +61,38 @@ Cache Adaptor is a technique used to cache multiple page data by using the prope
 
 
 {% highlight html %}
-[ASP]
 
 
 
-[ASPX]
 
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
 
+            <DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" EnableCaching="true" CachingPageSize="10" TimeTillExpiration="120000"></DataManager>
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True"&gt;
+            <Columns>
 
-            &lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" EnableCaching="true" CachingPageSize="10" TimeTillExpiration="120000"&gt;&lt;/DataManager&gt;
+                <ej:Column Field="OrderID" TextAlign="Right” HeaderText="Order ID"/>
 
-            &lt;Columns&gt;
+                <ej:Column Field="CustomerID” HeaderText="Customer ID"/>
 
-                &lt;ej:Column Field="OrderID" TextAlign="Right” HeaderText="Order ID"/&gt;
+                <ej:Column Field="EmployeeID TextAlign="Right”HeaderText="Emplyee ID"/>
 
-                &lt;ej:Column Field="CustomerID” HeaderText="Customer ID"/&gt;
+                <ej:Column Field="Freight" TextAlign="Right" />
 
-                &lt;ej:Column Field="EmployeeID TextAlign="Right”HeaderText="Emplyee ID"/&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City"/>
 
-                &lt;ej:Column Field="Freight" TextAlign="Right" /&gt;
+                <ej:Column Field="OrderDate"HeaderText="Order Date"TextAlign="Right" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City"/&gt;
+             </Columns>
 
-                &lt;ej:Column Field="OrderDate"HeaderText="Order Date"TextAlign="Right" /&gt;
+            <PageSettings PageSize="9" />
 
-             &lt;/Columns&gt;
-
-            &lt;PageSettings PageSize="9" /&gt;
-
-        &lt;/ej:Grid&gt;    
+        </ej:Grid>    
 
 {% endhighlight  %}
 {% highlight c# %}
 
-[CS]
+
 
 
 
@@ -129,7 +119,7 @@ The following screenshot is the result of the above code example.
 
 
 ![C:/Users/ApoorvahR/Desktop/1.png](Data-Adaptors_images/Data-Adaptors_img2.png)
-{:.image }
+
 
 
 _Figure 21: Cache Adaptor_

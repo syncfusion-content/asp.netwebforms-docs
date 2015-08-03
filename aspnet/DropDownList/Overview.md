@@ -11,7 +11,7 @@ documentation: ug
 
 The DropDownList control provides a list of options for you to choose from. It is capable of including other HTML elements such as images, text boxes, check boxes, radio buttons and so on. It also supports data binding, template options, and multi-select options.
 
-Key Features
+## Key Features
 
 * Pop-up list box customization: Supports customization of the pop-up list box height and width and also limit the pop-up list size.
 * Watermark: Supports custom watermark text.

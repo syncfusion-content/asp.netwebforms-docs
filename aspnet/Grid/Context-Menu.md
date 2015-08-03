@@ -33,32 +33,31 @@ To enable Context Menu in Grid use EnableContextMenu property in ContextMenuSett
 
 
 {% highlight html %}
-[ASPX]
 
-        &lt;ej:Grid ID="Grid" runat="server" DataSourceID="ObjectData" AllowScrolling="True" AllowGrouping="True" AllowSorting="True" AllowPaging="True"  &gt;
+        <ej:Grid ID="Grid" runat="server" DataSourceID="ObjectData" AllowScrolling="True" AllowGrouping="True" AllowSorting="True" AllowPaging="True"  >
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right"   /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right"   />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID " TextAlign="Right"   /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID " TextAlign="Right"   />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-            &lt;ScrollSettings Height="300" Width="900" &gt;&lt;/ScrollSettings&gt;
+            <ScrollSettings Height="300" Width="900" ></ScrollSettings>
 
-            &lt;EditSettings RowPosition="Bottom” AllowAdding="True” AllowEditing="True” AllowDeleting="True” &gt;&lt;/EditSettings&gt;
+            <EditSettings RowPosition="Bottom” AllowAdding="True” AllowEditing="True” AllowDeleting="True” ></EditSettings>
 
-&lt;ContextMenuSettings EnableContextMenu="true” &gt;&lt;/ContextMenuSettings&gt;
+<ContextMenuSettings EnableContextMenu="true” ></ContextMenuSettings>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 {% endhighlight %}
 {% highlight c#%}
-[CS]
+
 
 using System;
 
@@ -170,26 +169,26 @@ namespace WebSampleBrowser.Grid
 {% endhighlight  %}
 The following output is displayed as a result of the above code example.
 
-Content
+### Content
 
 ![C:/Users/ApoorvahR/Desktop/1.png](Context-Menu_images/Context-Menu_img1.png)
-{:.image }
+
 
 
 _Figure 112: Context Menu in content_
 
-Header
+### Header
 
 ![C:/Users/ApoorvahR/Desktop/2.png](Context-Menu_images/Context-Menu_img2.png)
-{:.image }
+
 
 
 _Figure 113: Context Menu in Header_
 
-Footer
+### Footer
 
 ![](Context-Menu_images/Context-Menu_img3.png)
-{:.image }
+
 
 
 _Figure 114: Context Menu in Footer_

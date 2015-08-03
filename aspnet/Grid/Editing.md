@@ -23,35 +23,32 @@ Essential Studio Asp.NET Grid provides toolbar support and it can be customized.
 
 {% highlight html %}
 
-[ASP]
 
-[aspx]
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" >
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" &gt;
-
-&lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"&gt;&lt;/DataManager&gt;
+<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"></DataManager>
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="90" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="90" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="90" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="90" />
 
-                &lt;ej:Column Field="Verified" HeaderText="Verified" Width="70" EditType="Boolean"/&gt;
+                <ej:Column Field="Verified" HeaderText="Verified" Width="70" EditType="Boolean"/>
 
-            &lt;/Columns&gt;
+            </Columns>
 
-            &lt;EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"&gt;                           &lt;/EditSettings&gt;
+            <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True">                           </EditSettings>
 
-            &lt;ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"&gt;&lt;/ToolbarSettings&gt;
+            <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
 
 
@@ -64,7 +61,7 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Editing_images/Editing_img1.png)
-{:.image }
+
 
 
 ## Cell edit type
@@ -84,40 +81,38 @@ The edit type of every column can be customized using the editType property.
 
 {% highlight html %}
 
-[ASP]
-
-[aspx]
 
 
 
- &lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" &gt;
+
+ <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" >
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75"/&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75"/>
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80"/&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80"/>
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="70" EditType=" Numeric" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="70" EditType=" Numeric" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" EditType="Dropdown" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" EditType="Dropdown" />
 
-                &lt;ej:Column Field="OrderDate" HeaderText="Order Date" Width="90" TextAlign="Right" Format="{0:MM/dd/yyyy}" EditType="DatePicker" /&gt;
+                <ej:Column Field="OrderDate" HeaderText="Order Date" Width="90" TextAlign="Right" Format="{0:MM/dd/yyyy}" EditType="DatePicker" />
 
-                &lt;ej:Column Field="Verified" HeaderText="Verified" Width="80" EditType="Boolean"/&gt;
+                <ej:Column Field="Verified" HeaderText="Verified" Width="80" EditType="Boolean"/>
 
-            &lt;/Columns&gt;
+            </Columns>
 
-            &lt;EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"&gt;&lt;/EditSettings&gt;
+            <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"></EditSettings>
 
-            &lt;ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel,save"&gt;&lt;/ToolbarSettings&gt;
+            <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel,save"></ToolbarSettings>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 {% endhighlight  %}
 {% highlight c# %}
-[CS]
+
 
 public partial class NormalEditingFunctionalities : System.Web.UI.Page
 
@@ -227,54 +222,50 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Editing_images/Editing_img2.png)
-{:.image }
+
 
 
 ### External DataSource for DropDown EditType Column
 
 By default, the datasource for Dropdown Edit Column is set by Grid Control from its datasource. You can also bind external datasource to the Dropdown control of corresponding column in edit mode by using “DataSource” Grid Column property.
 
-> _Note: The external datasource must be given in a structure that it should contain properties “text” and_  
-_“value” which holds the data_
+> Note: The external datasource must be given in a structure that it should contain properties “text” and  
+“value” which holds the data
 {% highlight html %}
-[ASP]
 
 
 
-[ASPX]
+
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" > 
 
 
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" &gt; 
+            <Columns>
+
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90"/>
+
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90"/>
+
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right"  Width="90" />
+
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="80" Format="{0:C}" EditType="Numeric" />
+
+                <ej:Column Field="ShipName" HeaderText="ShipName" Width="70" />
+
+                <ej:Column Field="ShipCountry" HeaderText="ShipCountry" Width="90" EditType="Dropdown" />
+
+            </Columns>
 
 
 
-            &lt;Columns&gt;
+            <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"></EditSettings>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90"/&gt;
+            <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90"/&gt;
-
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right"  Width="90" /&gt;
-
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="80" Format="{0:C}" EditType="Numeric" /&gt;
-
-                &lt;ej:Column Field="ShipName" HeaderText="ShipName" Width="70" /&gt;
-
-                &lt;ej:Column Field="ShipCountry" HeaderText="ShipCountry" Width="90" EditType="Dropdown" /&gt;
-
-            &lt;/Columns&gt;
-
-
-
-            &lt;EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"&gt;&lt;/EditSettings&gt;
-
-            &lt;ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"&gt;&lt;/ToolbarSettings&gt;
-
-&lt;/ej:Grid&gt;
+</ej:Grid>
 {% endhighlight %}
 {% highlight c# %}
-[CS]
+
 
 
 
@@ -321,7 +312,7 @@ var index = this.OrdersGrid.Columns.FindIndex(col => col.Field == "ShipCountry")
 The following output is displayed as a result of the above code example.
 
 ![](Editing_images/Editing_img4.png)
-{:.image }
+
 
 
 ## Edit Template
@@ -336,53 +327,51 @@ The following code example is for Edit Template.
 
 {% highlight html %}
 
-[ASP]
 
-[aspx]
 
-    &lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" &gt;
+    <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" >
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90"/&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90"/>
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90"/&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90"/>
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right"  Width="90" &gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right"  Width="90" >
 
-  &lt;EditTemplate Create="create" Read="read" Write="write" /&gt;
+  <EditTemplate Create="create" Read="read" Write="write" />
 
-&lt;/ej:Column&gt;
+</ej:Column>
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="80" Format="{0:C}" EditType="Numeric"&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="80" Format="{0:C}" EditType="Numeric">
 
-                    &lt;NumericEditOptions DecimalPlaces="2"&gt;&lt;/NumericEditOptions&gt;
+                    <NumericEditOptions DecimalPlaces="2"></NumericEditOptions>
 
-                &lt;/ej:Column&gt;
+                </ej:Column>
 
-                &lt;ej:Column Field="ShipName" HeaderText="ShipName" Width="150" /&gt;
+                <ej:Column Field="ShipName" HeaderText="ShipName" Width="150" />
 
-                &lt;ej:Column Field="ShipCountry" HeaderText="ShipCountry" Width="90" EditType="Dropdown" /&gt;
+                <ej:Column Field="ShipCountry" HeaderText="ShipCountry" Width="90" EditType="Dropdown" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-            &lt;EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"&gt;&lt;/EditSettings&gt;
+            <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"></EditSettings>
 
-            &lt;ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"&gt;&lt;/ToolbarSettings&gt;
+            <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-    &lt;/div&gt;
+    </div>
 
 
 
 
 
-    &lt;script type="text/javascript"&gt;       
+    <script type="text/javascript">       
 
         function create() {
 
-            return $("&lt;input&gt;");
+            return $("<input>");
 
         }
 
@@ -402,11 +391,11 @@ The following code example is for Edit Template.
 
         }
 
-    &lt;/script&gt;
+    </script>
 {% endhighlight  %}
 {% highlight c# %}
 
-[aspx.cs]
+
 
 namespace WebSampleBrowser.Grid
 
@@ -519,7 +508,7 @@ namespace WebSampleBrowser.Grid
 {% endhighlight  %}
 
 ![](Editing_images/Editing_img5.png) 
-{:.image }
+
 
 
 
@@ -545,41 +534,37 @@ This feature allows you to edit various fields of a single record, simultaneousl
 
 {% highlight html %}
 
-[ASP]
-
-[aspx]
 
 
-
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" &gt;
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" >
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75"/&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75"/>
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80"/&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80"/>
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="70" EditType=" Numeric" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="70" EditType=" Numeric" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" EditType="Dropdown" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" EditType="Dropdown" />
 
-                &lt;ej:Column Field="OrderDate" HeaderText="Order Date" Width="90" TextAlign="Right" Format="{0:MM/dd/yyyy}" EditType="DatePicker" /&gt;
+                <ej:Column Field="OrderDate" HeaderText="Order Date" Width="90" TextAlign="Right" Format="{0:MM/dd/yyyy}" EditType="DatePicker" />
 
-                &lt;ej:Column Field="Verified" HeaderText="Verified" Width="80" EditType="Boolean"/&gt;
+                <ej:Column Field="Verified" HeaderText="Verified" Width="80" EditType="Boolean"/>
 
-            &lt;/Columns&gt;
+            </Columns>
 
-            &lt;EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="Normal"&gt;&lt;/EditSettings&gt;
+            <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="Normal"></EditSettings>
 
-            &lt;ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"&gt;&lt;/ToolbarSettings&gt;
+            <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 		
 {% endhighlight %}		
 {% highlight c# %}
-[CS]
+
 
 public partial class NormalEditingFunctionalities : System.Web.UI.Page
 
@@ -690,40 +675,38 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Editing_images/Editing_img6.png) 
-{:.image }
+
 
 
 ### Dialog Editing
 
 The Dialog Edit feature allows you to edit data, using a dialog box that has fields associated with the data record being edited. You can only edit the data stored in the fields that you have rendered to be visible. The following code example shows you how to set EditMode as Dialog.
 {% highlight html %}
-[ASP]
 
-[aspx]
 
-   &lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" &gt;
+   <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" >
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75"/&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75"/>
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80"/&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80"/>
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="70" EditType=" Numeric" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="70" EditType=" Numeric" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
 
-                &lt;ej:Column Field="OrderDate" HeaderText="Order Date" Width="90" TextAlign="Right" Format="{0:MM/dd/yyyy}" EditType="DatePicker" /&gt;
+                <ej:Column Field="OrderDate" HeaderText="Order Date" Width="90" TextAlign="Right" Format="{0:MM/dd/yyyy}" EditType="DatePicker" />
 
-                &lt;ej:Column Field="Verified" HeaderText="Verified" Width="80" EditType="Boolean"&gt;&lt;/ej:Column&gt;
+                <ej:Column Field="Verified" HeaderText="Verified" Width="80" EditType="Boolean"></ej:Column>
 
-            &lt;/Columns&gt;
+            </Columns>
 
-            &lt;EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="Dialog"&gt;&lt;/EditSettings&gt;
+            <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="Dialog"></EditSettings>
 
-            &lt;ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"&gt;&lt;/ToolbarSettings&gt;
+            <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
 
 
@@ -736,45 +719,43 @@ The following output is displayed as a result of the above code example.
 
 {% endhighlight %}
 ![](Editing_images/Editing_img7.png)
-{:.image }
+
 
 
 ### Inline Form Editing
 
 This feature allows you to edit various fields of a single record, simultaneously. It is called inline because it is shown in between two rows, called as rows of control. After you have edited a row, the inline form is displayed. 
 {% highlight html %}
-[ASP]
 
-[aspx]
 
-   &lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" &gt;
+   <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" >
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75"/&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75"/>
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80"/&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80"/>
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="70" EditType=" Numeric" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="70" EditType=" Numeric" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100"/&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100"/>
 
                 <ej:Column Field="OrderDate" HeaderText="Order Date" Width="90" TextAlign="Right" Format="{0:MM/dd/yyyy}"
 
                     EditType="DatePicker" />
 
-                &lt;ej:Column Field="Verified" HeaderText="Verified" Width="80" EditType="Boolean"&gt;&lt;/ej:Column&gt;
+                <ej:Column Field="Verified" HeaderText="Verified" Width="80" EditType="Boolean"></ej:Column>
 
-            &lt;/Columns&gt;
+            </Columns>
 
-            &lt;EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="InlineForm"&gt;&lt;/EditSettings&gt;
+            <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="InlineForm"></EditSettings>
 
-            &lt;ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"&gt;&lt;/ToolbarSettings&gt;
+            <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 {% endhighlight %}
 {% highlight c# %}
-[CS]
+
 
 public partial class NormalEditingFunctionalities : System.Web.UI.Page
 
@@ -887,7 +868,7 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Editing_images/Editing_img8.png)
-{:.image }
+
 
 
 ### External Form Editing
@@ -900,39 +881,34 @@ You can position the edit form either in the top-right corner or the bottom-left
 
 {% highlight html %}
 
-[ASP]
+
+   <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" >
 
 
 
-[aspx]
+              <Columns>
 
-   &lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" &gt;
+<ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75"/>
 
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80"/>
 
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="70" EditType=" Numeric" />
 
-              &lt;Columns&gt;
-
-&lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75"/&gt;
-
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80"/&gt;
-
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="70" EditType=" Numeric" /&gt;
-
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" EditType="Dropdown" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" EditType="Dropdown" />
 
                 <ej:Column Field="OrderDate" HeaderText="Order Date" Width="90" TextAlign="Right" Format="{0:MM/dd/yyyy}"
 
 EditType="DatePicker" />
 
-                &lt;ej:Column Field="Verified" HeaderText="Verified" Width="80" EditType="Boolean"&gt;&lt;/ej:Column&gt;
+                <ej:Column Field="Verified" HeaderText="Verified" Width="80" EditType="Boolean"></ej:Column>
 
-            &lt;/Columns&gt;
+            </Columns>
 
-&lt;EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="ExternalForm" FormPosition="BottomLeft"&gt;&lt;/EditSettings&gt;
+<EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="ExternalForm" FormPosition="BottomLeft"></EditSettings>
 
-            &lt;ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"&gt;&lt;/ToolbarSettings&gt;
+            <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
 
 
@@ -943,7 +919,7 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Editing_images/Editing_img9.png) 
-{:.image }
+
 
 
 ### Template Form Editing
@@ -964,35 +940,31 @@ In Inline Template, you can specify the template inside the script tag and selec
 
 
 {% highlight html %}
-[ASP]
+
+
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
 
 
 
-[aspx]
+            <Columns>
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True"&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75"/>
 
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80"/>
 
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="70" EditType=" Numeric" />
 
-            &lt;Columns&gt;
-
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75"/&gt;
-
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80"/&gt;
-
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="70" EditType=" Numeric" /&gt;
-
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
 
 
 
-            &lt;/Columns&gt;
+            </Columns>
 
-            &lt;EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="InlineTemplateForm"                      InlineFormTemplateID="#template" &gt;&lt;/EditSettings&gt;
+            <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="InlineTemplateForm"                      InlineFormTemplateID="#template" ></EditSettings>
 
-            &lt;ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"&gt;&lt;/ToolbarSettings&gt;
+            <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
 
 
@@ -1005,7 +977,7 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Editing_images/Editing_img10.png)
-{:.image }
+
 
 
 In the above screenshot you can see that the elements are not rendered based on the type of the column. For example, in Freight column, the textbox is rendered instead of NumericTextBox.
@@ -1016,22 +988,17 @@ Through the ActionCompleteGrid event, you can achieve this.
 
 {% highlight html %}
 
-[ASP]
 
+      <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" >
 
+<ClientSideEvents ActionComplete="complete" />
 
-[aspx]
-
-      &lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" &gt;
-
-&lt;ClientSideEvents ActionComplete="complete" /&gt;
-
-      &lt;/ej:Grid&gt;
+      </ej:Grid>
 {% endhighlight %}
 {% highlight js %}
-[Javascript]
 
-&lt;script type="text/javascript"&gt;
+
+<script type="text/javascript">
 
          function complete(args) {
 
@@ -1045,7 +1012,7 @@ Through the ActionCompleteGrid event, you can achieve this.
 
             }
 
-&lt;/script&gt;
+</script>
 
 
 {% endhighlight  %}
@@ -1057,46 +1024,44 @@ Now, the elements defined in the templates, are changed to Asp.Net controls. You
 
 
 {% highlight html %}
-[ASP]
 
-[aspx]
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" &gt;
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" >
 
-&lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"&gt;&lt;/DataManager&gt;
+<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"></DataManager>
 
 
 
-&lt;ClientSideEvents ActionComplete="complete" /&gt;
+<ClientSideEvents ActionComplete="complete" />
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="70" EditType=" Numeric" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="70" EditType=" Numeric" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" EditType="Dropdown" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" EditType="Dropdown" />
 
 
 
-            &lt;/Columns&gt;
+            </Columns>
 
-            &lt;EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="InlineTemplateForm"                InlineFormTemplateID="#template"&gt;
+            <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="InlineTemplateForm"                InlineFormTemplateID="#template">
 
-             &lt;/EditSettings&gt;                                                                                                        
+             </EditSettings>                                                                                                        
 
-            &lt;ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"&gt;&lt;/ToolbarSettings&gt;
+            <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 {% endhighlight  %}
 {% highlight js %}
-[Javascript]
 
-&lt;script type="text/javascript"&gt;
+
+<script type="text/javascript">
 
 function complete(args) {
 
@@ -1110,7 +1075,7 @@ function complete(args) {
 
         }
 
-&lt;/script&gt;
+</script>
 
 {% endhighlight  %}
 
@@ -1125,7 +1090,7 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Editing_images/Editing_img11.png) 
-{:.image }
+
 
 
 #### External Template Form Editing
@@ -1134,15 +1099,13 @@ The above mentioned procedure applies to ExternalTemplate editing feature also. 
 
 {% highlight html %}
 
-[ASP]
 
-[aspx]
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" &gt;
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" >
 
-       &lt;EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="ExternalFormTemplate"               ExternalFormTemplateID="#template"&gt;&lt;/EditSettings&gt;
+       <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="ExternalFormTemplate"               ExternalFormTemplateID="#template"></EditSettings>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
 
 {% endhighlight %}
@@ -1151,7 +1114,7 @@ The following screenshot shows External Template Form Editing.
 
 
 ![](Editing_images/Editing_img12.png)
-{:.image }
+
 
 
 #### Dialog Template Editing
@@ -1160,15 +1123,12 @@ The above mentioned procedure applies to DialogTemplate editing feature also. Us
 
 
 {% highlight html %}
-[ASP]
 
-[aspx]
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" >
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" &gt;
+       <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="DialogTemplate" DialogEditorTemplateID="#template"></EditSettings>
 
-       &lt;EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="DialogTemplate" DialogEditorTemplateID="#template"&gt;&lt;/EditSettings&gt;
-
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
 {% endhighlight %}
 
@@ -1177,7 +1137,7 @@ The following screenshot shows Dialog Template Form Editing.
 
 
 ![](Editing_images/Editing_img13.png)
-{:.image }
+
 
 
 ### Batch Editing
@@ -1187,35 +1147,30 @@ This feature allows you to edit various fields of the Grid, simultaneously, with
 Edited data is marked on the Grid, so that you know which fields or cells have been edited.
 These markers are not shown after the updated data is rendered. The following code example shows you how to enable Excel-like editing, also called Batchediting, in Grid.
 {% highlight html %}
-[ASP]
+
+  <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" ActionComplete="complete">
+
+<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"></DataManager>
+
+            <Columns>
+
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
+
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
+
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="70" EditType=" Numeric" />
+
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
 
 
 
-[aspx]
+            </Columns>
 
-  &lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" ActionComplete="complete"&gt;
+            <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="Batch"></EditSettings>
 
-&lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"&gt;&lt;/DataManager&gt;
+            <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 
-            &lt;Columns&gt;
-
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" /&gt;
-
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" /&gt;
-
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="70" EditType=" Numeric" /&gt;
-
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" /&gt;
-
-
-
-            &lt;/Columns&gt;
-
-            &lt;EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="Batch"&gt;&lt;/EditSettings&gt;
-
-            &lt;ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"&gt;&lt;/ToolbarSettings&gt;
-
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
 
 {% endhighlight %}
@@ -1226,7 +1181,7 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Editing_images/Editing_img14.png)
-{:.image }
+
 
 
 When the Save or Cancel button is clicked, or performing an action before you save the edited records, the Confirmation message is displayed. 
@@ -1236,7 +1191,7 @@ The following screenshot shows the Confirmation Dialog box.
 
 
 ![](Editing_images/Editing_img15.png) 
-{:.image }
+
 
 
 
@@ -1259,9 +1214,9 @@ _Table4: List of jquery validation methods_
 
 <table>
 <tr>
-<td>
-Rules</td><td>
-Description</td></tr>
+<th>
+Rules</th><th>
+Description</th></tr>
 <tr>
 <td>
 Required</td><td>
@@ -1335,58 +1290,56 @@ Using ValidationRules we are able to add validation rules for editing
 
 {% highlight html %}
 
-[ASP]
 
-[aspx]
 
-  &lt;ej:Grid ID="OrdersGrid" runat="server"  AllowPaging="True"&gt;
+  <ej:Grid ID="OrdersGrid" runat="server"  AllowPaging="True">
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90"&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90">
 
-                     &lt;ValidationRule&gt;
+                     <ValidationRule>
 
-                        &lt;ej:KeyValue Key="required" Value="true" /&gt;
+                        <ej:KeyValue Key="required" Value="true" />
 
-                        &lt;ej:KeyValue Key="number" Value="true" /&gt;
+                        <ej:KeyValue Key="number" Value="true" />
 
-                    &lt;/ValidationRule&gt;
+                    </ValidationRule>
 
-                    &lt;/ej:Column&gt;
+                    </ej:Column>
 
 
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" EditType="Numeric"/&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" EditType="Numeric"/>
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" EditType="Numeric"&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" EditType="Numeric">
 
-&lt;ValidationRule&gt;
+<ValidationRule>
 
-                        &lt;ej:KeyValue Key="required" Value="true" /&gt;
+                        <ej:KeyValue Key="required" Value="true" />
 
-                         &lt;ej:KeyValue Key="range" Value="[0,1000]" /&gt;
+                         <ej:KeyValue Key="range" Value="[0,1000]" />
 
-                    &lt;/ValidationRule&gt;
+                    </ValidationRule>
 
-                &lt;/ej:Column&gt;
+                </ej:Column>
 
-               &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" EditType="Normal"/&gt;
+               <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" EditType="Normal"/>
 
-            &lt;/Columns&gt;
+            </Columns>
 
-         &lt;EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="Normal"&gt;&lt;/EditSettings&gt;
+         <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="Normal"></EditSettings>
 
-            &lt;ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"&gt;&lt;/ToolbarSettings&gt;
+            <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 
 
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 {% endhighlight %}
 {% highlight c# %}
-[CS]
+
 
 public partial class DefaultFunctionalities : System.Web.UI.Page
 
@@ -1501,79 +1454,75 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Editing_images/Editing_img16.png)
-{:.image }
+
 
 
 ### Custom Validation
 
 In addition to jquery validation methods, you can also add your own custom validation methods for a specific column. The following code example shows you how to specify the custom validation for a specific column.
 {% highlight html %}
-[ASP]
+
+
+  <ej:Grid ID="OrdersGrid" runat="server"  AllowPaging="True">
+
+            <Columns>
+
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90">
+
+                     <ValidationRule>
+
+                        <ej:KeyValue Key="required" Value="true" />
+
+                        <ej:KeyValue Key="number" Value="true" />
+
+                    </ValidationRule>
+
+                    </ej:Column>
 
 
 
-[ASPX]
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" >
 
-  &lt;ej:Grid ID="OrdersGrid" runat="server"  AllowPaging="True"&gt;
+                <ValidationRule>
 
-            &lt;Columns&gt;
+                        <ej:KeyValue Key="customRegex" Value="5" />
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90"&gt;
+                       </ValidationRule>
 
-                     &lt;ValidationRule&gt;
+                       </ej:Column>
 
-                        &lt;ej:KeyValue Key="required" Value="true" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" EditType="Numeric"/>
 
-                        &lt;ej:KeyValue Key="number" Value="true" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" EditType="Numeric">
 
-                    &lt;/ValidationRule&gt;
+                  <ValidationRule>
 
-                    &lt;/ej:Column&gt;
-
-
-
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" &gt;
-
-                &lt;ValidationRule&gt;
-
-                        &lt;ej:KeyValue Key="customRegex" Value="5" /&gt;
-
-                       &lt;/ValidationRule&gt;
-
-                       &lt;/ej:Column&gt;
-
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" EditType="Numeric"/&gt;
-
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" EditType="Numeric"&gt;
-
-                  &lt;ValidationRule&gt;
-
-                        &lt;ej:KeyValue Key="customCompare" Value="[1,9]" /&gt;
+                        <ej:KeyValue Key="customCompare" Value="[1,9]" />
 
 
 
-                    &lt;/ValidationRule&gt;
+                    </ValidationRule>
 
-                &lt;/ej:Column&gt;
+                </ej:Column>
 
-               &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" EditType="Dropdown"/&gt;
+               <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" EditType="Dropdown"/>
 
-            &lt;/Columns&gt;
+            </Columns>
 
-         &lt;EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="Normal"&gt;&lt;/EditSettings&gt;
+         <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="Normal"></EditSettings>
 
-            &lt;ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"&gt;&lt;/ToolbarSettings&gt;
+            <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 
 
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 {% endhighlight  %}
 {% highlight js %}
-[javascript]
 
 
 
-&lt;script type="text/javascript"&gt;
+
+<script type="text/javascript">
 
     $(function () {
 
@@ -1597,7 +1546,7 @@ In addition to jquery validation methods, you can also add your own custom valid
 
     });
 
-&lt;/script&gt;
+</script>
 
 
 {% endhighlight  %}
@@ -1608,7 +1557,7 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Editing_images/Editing_img17.png)
-{:.image }
+
 
 
 ## CRUD Operation With Server-Side
@@ -1624,9 +1573,9 @@ _Table5: Parameters Table_
 
 <table>
 <tr>
-<td>Action</td>
-<td>Parameter Name</td>
-<td>Example</td>
+<th>Action</th>
+<th>Parameter Name</th>
+<th>Example</th>
 </tr>
 <tr>
 <td rowspan = "2">Update, Insert</td>
@@ -1653,43 +1602,39 @@ You can use the UrlAdaptor of DataManger when binding datasource from remote dat
 
 Also when you use UrlAdaptor, you need to return the data as JSON and the JSON object must contain field name as “result” with its value as dataSource and one more field name as “count” with its value as dataSource total records count.
 {% highlight html %}
-[ASP]
-
-[aspx]
 
 
 
-&lt;ej:Grid ID="EmployeesGrid" runat="server" Load="load" Create="create" AllowPaging="true" Width="1500px" OnServerEditRow="EmployeesGrid_ServerEditRow"&gt;
+<ej:Grid ID="EmployeesGrid" runat="server" Load="load" Create="create" AllowPaging="true" Width="1500px" OnServerEditRow="EmployeesGrid_ServerEditRow">
 
-                    &lt;EditSettings AllowAdding="True" AllowEditing="True" AllowDeleting="True"&gt;&lt;/EditSettings&gt;
+                    <EditSettings AllowAdding="True" AllowEditing="True" AllowDeleting="True"></EditSettings>
 
-                    &lt;DataManager URL="Default.aspx/Data" UpdateURL="Default.aspx/Update" InsertURL="Default.aspx/Add" RemoveURL="Default.aspx/Delete" /&gt;
+                    <DataManager URL="Default.aspx/Data" UpdateURL="Default.aspx/Update" InsertURL="Default.aspx/Add" RemoveURL="Default.aspx/Delete" />
 
-                    &lt;ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"&gt;&lt;/ToolbarSettings&gt;
-
-
-
-                    &lt;Columns&gt;
-
-                        &lt;ej:Column Field="OrderID" IsPrimaryKey="true" HeaderText="Order ID" Width="80" /&gt;
-
-                        &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="80" /&gt;
-
-                        &lt;ej:Column Field="Freight" HeaderText="Freight" Width="100" EditType="Numeric" /&gt;
-
-                        &lt;ej:Column Field="ShipCity" HeaderText="ShipCity" Width="80" /&gt;
+                    <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 
 
 
-                    &lt;/Columns&gt;
+                    <Columns>
+
+                        <ej:Column Field="OrderID" IsPrimaryKey="true" HeaderText="Order ID" Width="80" />
+
+                        <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="80" />
+
+                        <ej:Column Field="Freight" HeaderText="Freight" Width="100" EditType="Numeric" />
+
+                        <ej:Column Field="ShipCity" HeaderText="ShipCity" Width="80" />
 
 
 
-                &lt;/ej:Grid&gt;
+                    </Columns>
+
+
+
+                </ej:Grid>
 
 {% endhighlight  %}
 {% highlight c#  %}
-[CS]
 
 
 
@@ -1811,43 +1756,38 @@ When you use RemoteSaveAdaptor, server-side post back occurs only for CRUD actio
 
 {% highlight html %}
 
-[ASP]
+
+<ej:Grid ID="EmployeesGrid" runat="server" Load="load" Create="create" AllowPaging="true" Width="1500px" OnServerEditRow="EmployeesGrid_ServerEditRow">
+
+                    <EditSettings AllowAdding="True" AllowEditing="True" AllowDeleting="True"></EditSettings>
+
+                    <DataManager Adaptor="remoteSaveAdaptor" UpdateURL="Default.aspx/Update" InsertURL="Default.aspx/Add" RemoveURL="Default.aspx/Delete" />
+
+                    <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 
 
 
-[aspx]
+                    <Columns>
 
-&lt;ej:Grid ID="EmployeesGrid" runat="server" Load="load" Create="create" AllowPaging="true" Width="1500px" OnServerEditRow="EmployeesGrid_ServerEditRow"&gt;
+                        <ej:Column Field="OrderID" IsPrimaryKey="true" HeaderText="Order ID" Width="80" />
 
-                    &lt;EditSettings AllowAdding="True" AllowEditing="True" AllowDeleting="True"&gt;&lt;/EditSettings&gt;
+                        <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="80" />
 
-                    &lt;DataManager Adaptor="remoteSaveAdaptor" UpdateURL="Default.aspx/Update" InsertURL="Default.aspx/Add" RemoveURL="Default.aspx/Delete" /&gt;
+                        <ej:Column Field="Freight" HeaderText="Freight" Width="100" EditType="Numeric" />
 
-                    &lt;ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"&gt;&lt;/ToolbarSettings&gt;
-
-
-
-                    &lt;Columns&gt;
-
-                        &lt;ej:Column Field="OrderID" IsPrimaryKey="true" HeaderText="Order ID" Width="80" /&gt;
-
-                        &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="80" /&gt;
-
-                        &lt;ej:Column Field="Freight" HeaderText="Freight" Width="100" EditType="Numeric" /&gt;
-
-                        &lt;ej:Column Field="ShipCity" HeaderText="ShipCity" Width="80" /&gt;
+                        <ej:Column Field="ShipCity" HeaderText="ShipCity" Width="80" />
 
 
 
-                    &lt;/Columns&gt;
+                    </Columns>
 
 
 
-                &lt;/ej:Grid&gt;
+                </ej:Grid>
 
 {% endhighlight  %}
 {% highlight c# %}
-[CS]
+
 
 public partial class _Default : Page
 
@@ -1946,7 +1886,7 @@ The output for the Server Binding of records is as follows:
 
 
 ![](Editing_images/Editing_img18.png)
-{:.image }
+
 
 
 _Figure 67: Edit_
@@ -1954,11 +1894,11 @@ _Figure 67: Edit_
 
 
 ![](Editing_images/Editing_img19.png)
-{:.image }
+
 
 
 ![](Editing_images/Editing_img20.png)
-{:.image }
+
 
 
 
@@ -1976,7 +1916,7 @@ The Grid control for Asp.Net allows you to bind and edit data from the local ser
 
 
 ![](Editing_images/Editing_img21.png)
-{:.image }
+
 
 
 2. Select ASP.NETEmpty Web Application and click OK.
@@ -1989,7 +1929,7 @@ The Grid control for Asp.Net allows you to bind and edit data from the local ser
 
 
 ![](Editing_images/Editing_img22.png)
-{:.image }
+
 
 
 8. Select the ADO.NET Entity Data Model template, give the Entity Data Model the name Northwind.edmx, and click the Add button. Click Add to launch the Data Model Wizard. 
@@ -1998,7 +1938,7 @@ The Grid control for Asp.Net allows you to bind and edit data from the local ser
 
 
 ![](Editing_images/Editing_img23.png)
-{:.image }
+
 
 
 10. In the Choose Your Data Connection step, select the NORTHWND.MDF database connection, enter the entities connection settings name NORTHWNDEntities and click Next.
@@ -2006,7 +1946,7 @@ The Grid control for Asp.Net allows you to bind and edit data from the local ser
 
 
 ![](Editing_images/Editing_img24.png)
-{:.image }
+
 
 
 11. In the Choose Your Database Objects step, select all the database tables and click Finish.
@@ -2014,7 +1954,7 @@ The Grid control for Asp.Net allows you to bind and edit data from the local ser
 
 
 ![](Editing_images/Editing_img25.png)
-{:.image }
+
 
 
 When you are finished, you can see the following image.
@@ -2022,7 +1962,7 @@ When you are finished, you can see the following image.
 
 
 ![](Editing_images/Editing_img26.png)
-{:.image }
+
 
 
 12. Right-click the Models folder in the Solution Explorer window and select the Menu option Add New Item.
@@ -2031,7 +1971,7 @@ When you are finished, you can see the following image.
 
 
 ![](Editing_images/Editing_img27.png)
-{:.image }
+
 
 
 14. The WCF Data Service file is created. Open the Nothwnd.svs.cs file and set the NORTHWNDEntities as a class for the DataService.
@@ -2086,39 +2026,37 @@ var dataManger = ej.DataManager({
 
 
 {% highlight html %}
-[ASP]
 
-[ASPX]
 
-&lt;ej:Grid ID="OrdersGrid" runat="server"  AllowPaging="True" &gt;
+<ej:Grid ID="OrdersGrid" runat="server"  AllowPaging="True" >
 
-             &lt;DataManager URL="/model/Northwnd.svc/Orders"&gt;&lt;/DataManager&gt;
+             <DataManager URL="/model/Northwnd.svc/Orders"></DataManager>
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90"/&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90"/>
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100"/&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100"/>
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" EditType="Numeric"/&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" EditType="Numeric"/>
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" EditType="Numeric"/&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" EditType="Numeric"/>
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" EditType="Dropdown"/&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" EditType="Dropdown"/>
 
-            &lt;/Columns&gt;
+            </Columns>
 
 
 
 
 
-         &lt;EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="Normal"&gt;&lt;/EditSettings&gt;
+         <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="Normal"></EditSettings>
 
-            &lt;ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"&gt;&lt;/ToolbarSettings&gt;
+            <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 
 
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
 
 {% endhighlight  %}
@@ -2127,7 +2065,7 @@ The output for the above Grid creation with editing options code example is as f
 
 
 ![](Editing_images/Editing_img28.png)
-{:.image }
+
 
 
 ## Adding New Row Position
@@ -2141,30 +2079,30 @@ Grid supports two types of rowposition. They are
 
 The following code example illustrates you how to set RowPosition. Using RowPosition we are able to set row position for adding.
 {% highlight html %}
-[ASPX]
 
-        &lt;ej:Grid ID="Grid" runat="server" DataSourceID="ObjectData" AllowScrolling="True"&gt;
 
-            &lt;Columns&gt;
+        <ej:Grid ID="Grid" runat="server" DataSourceID="ObjectData" AllowScrolling="True">
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right"  /&gt;
+            <Columns>
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right"  />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right"   /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" EditType="Dropdown" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right"   />
 
-            &lt;/Columns&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" EditType="Dropdown" />
 
-            &lt;ScrollSettings Height="300" Width="900" &gt;&lt;/ScrollSettings&gt;
+            </Columns>
 
-            &lt;EditSettings RowPosition="Bottom” AllowAdding="True" AllowEditing="True" AllowDeleting="True" &gt;&lt;/EditSettings&gt;
+            <ScrollSettings Height="300" Width="900" ></ScrollSettings>
 
-        &lt;/ej:Grid&gt;
+            <EditSettings RowPosition="Bottom” AllowAdding="True" AllowEditing="True" AllowDeleting="True" ></EditSettings>
+
+        </ej:Grid>
 {% endhighlight  %}
 {% highlight c# %}
-[CS]
+
 
 using System;
 
@@ -2281,7 +2219,7 @@ The following output is displayed as a result of the above code example.
 
 
 ![C:/Users/ApoorvahR/Desktop/1.png](Editing_images/Editing_img29.png)
-{:.image }
+
 
 
 _Figure 77: Adding new row position_
@@ -2292,35 +2230,31 @@ In Grid, there is an option toshow the newly add row at the bottom or top of the
 
 This property helps you to add a new row dynamically and save the record either top or bottom of the Grid.
 {% highlight html %}
-[ASP]
 
 
 
-[aspx]
 
+     <ej:Grid ID="FlatGrid" runat="server">
 
+       <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,save,cancel"></ToolbarSettings>
 
-     &lt;ej:Grid ID="FlatGrid" runat="server"&gt;
+       <Columns>
 
-       &lt;ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,save,cancel"&gt;&lt;/ToolbarSettings&gt;
+            <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey ="true" />
 
-       &lt;Columns&gt;
+            <ej:Column Field="CustomerID" HeaderText="Customer ID" /> 
 
-            &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey ="true" /&gt;
+            <ej:Column Field="EmployeeID" HeaderText="Employee ID" />
 
-            &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" /&gt; 
+            <ej:Column Field="ShipCity" HeaderText="Ship City" />
 
-            &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" /&gt;
+            <ej:Column Field="ShipCity" HeaderText="Ship Name" />
 
-            &lt;ej:Column Field="ShipCity" HeaderText="Ship City" /&gt;
+       </Columns>
 
-            &lt;ej:Column Field="ShipCity" HeaderText="Ship Name" /&gt;
+       <EditSettings AllowAdding ="true" AllowEditing="true" AllowDeleting ="true" RowPosition="Bottom" ShowAddNewRow="true" ></EditSettings>
 
-       &lt;/Columns&gt;
-
-       &lt;EditSettings AllowAdding ="true" AllowEditing="true" AllowDeleting ="true" RowPosition="Bottom" ShowAddNewRow="true" &gt;&lt;/EditSettings&gt;
-
-   &lt;/ej:Grid&gt;
+   </ej:Grid>
 
 
 
@@ -2331,6 +2265,6 @@ This property helps you to add a new row dynamically and save the record either 
 The following screenshot is the output of the above code example.
 
 ![](Editing_images/Editing_img30.png)
-{:.image }
+
 
 

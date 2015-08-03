@@ -17,21 +17,20 @@ You can combine several Chart types in one Chart using the Type property on seri
 
 {% highlight html %}
 
-[ASP.NET] 
 
-  &lt;ej:Chart ID="Chart1" runat="server"&gt;       
+  <ej:Chart ID="Chart1" runat="server">       
 
-    &lt;Series&gt;
+    <Series>
 
-             &lt;ej:Series Name="lineSeries" Type="Line"&gt;&lt;/ej:Series&gt;
+             <ej:Series Name="lineSeries" Type="Line"></ej:Series>
 
-              &lt;ej:Series Name="ColumnSeries" Type="Column"&gt;&lt;/ej:Series&gt;
-
+              <ej:Series Name="ColumnSeries" Type="Column"></ej:Series>
 
 
-    &lt;/Series&gt;
 
-  &lt;/ej:Chart&gt;
+    </Series>
+
+  </ej:Chart>
 
 
 
@@ -40,9 +39,9 @@ You can combine several Chart types in one Chart using the Type property on seri
 In multiple series case, you can use CommonSeriesOptions property to specify the properties that are common for all series in Chart. 
 {% highlight html %}
 
-[ASP.NET] 
 
-  &lt;ej:Chart ID="Chart1" runat="server"&gt;       
+
+  <ej:Chart ID="Chart1" runat="server">       
 
    <CommonSeriesOptions EnableAnimation="true" Type="Line" Marker-Shape="Circle"    
 
@@ -50,9 +49,9 @@ In multiple series case, you can use CommonSeriesOptions property to specify the
 
 
 
-   &lt;/CommonSeriesOptions&gt; 
+   </CommonSeriesOptions> 
 
- &lt;/ej:Chart&gt;
+ </ej:Chart>
 
 {% endhighlight %}
 
@@ -65,44 +64,44 @@ You can configure the appearance of the lines and the points with options Fill u
 
 
 ![](Chart-Types_images/Chart-Types_img1.png)
-{:.image }
+
 
 
 _Figure_ 107: Line Chart
 {% highlight html %}
- [ASP.NET] 
+ 
 
-  &lt;ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true"&gt;
+  <ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true">
 
 
 
-           &lt;Series&gt;
+           <Series>
 
-             &lt;ej:Series Name="India" Type="Line" Fill="#8CC640"&gt;
+             <ej:Series Name="India" Type="Line" Fill="#8CC640">
 
-                    &lt;Points &gt;
+                    <Points >
 
-                        &lt;ej:Points X="2005" Y="28"/&gt; 
+                        <ej:Points X="2005" Y="28"/> 
 
-                        &lt;ej:Points X="2006" Y="35"/&gt;  
+                        <ej:Points X="2006" Y="35"/>  
 
-                        &lt;ej:Points X="2007" Y="32"/&gt;  
+                        <ej:Points X="2007" Y="32"/>  
 
-                        &lt;ej:Points X="2008" Y="47"/&gt;  
+                        <ej:Points X="2008" Y="47"/>  
 
-                        &lt;ej:Points X="2009" Y="41"/&gt;
+                        <ej:Points X="2009" Y="41"/>
 
-                        &lt;ej:Points X="2010" Y="35"/&gt; 
+                        <ej:Points X="2010" Y="35"/> 
 
-                        &lt;ej:Points X="2011" Y="37"  /&gt;  
+                        <ej:Points X="2011" Y="37"  />  
 
-                    &lt;/Points&gt;
+                    </Points>
 
-             &lt;/ej:Series&gt;                        
+             </ej:Series>                        
 
-         &lt;/Series&gt;
+         </Series>
 
- &lt;/ej:Chart&gt;
+ </ej:Chart>
 
 {% endhighlight  %}
 
@@ -113,44 +112,44 @@ Step Line Charts use horizontal and vertical lines to connect data points result
 
 
 ![](Chart-Types_images/Chart-Types_img2.png)
-{:.image }
+
 
 
 {% highlight html %}
 
-[ASP.NET] 
-
-  &lt;ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true"&gt;
 
 
+  <ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true">
 
-        &lt;Series&gt;
 
-             &lt;ej:Series Name="India" Type="StepLine"&gt;
 
-                    &lt;Points &gt;
+        <Series>
 
-                        &lt;ej:Points X="2005" Y="430"/&gt; 
+             <ej:Series Name="India" Type="StepLine">
 
-                        &lt;ej:Points X="2006" Y="416"/&gt;  
+                    <Points >
 
-                        &lt;ej:Points X="2007" Y="404"/&gt;  
+                        <ej:Points X="2005" Y="430"/> 
 
-                        &lt;ej:Points X="2008" Y="390"/&gt;  
+                        <ej:Points X="2006" Y="416"/>  
 
-                        &lt;ej:Points X="2009" Y="376"/&gt;
+                        <ej:Points X="2007" Y="404"/>  
 
-                        &lt;ej:Points X="2010" Y="362"/&gt; 
+                        <ej:Points X="2008" Y="390"/>  
 
-                        &lt;ej:Points X="2011" Y="351"  /&gt;  
+                        <ej:Points X="2009" Y="376"/>
 
-                    &lt;/Points&gt;
+                        <ej:Points X="2010" Y="362"/> 
 
-             &lt;/ej:Series&gt;
+                        <ej:Points X="2011" Y="351"  />  
 
-         &lt;/Series&gt;
+                    </Points>
 
- &lt;/ej:Chart&gt;
+             </ej:Series>
+
+         </Series>
+
+ </ej:Chart>
 
 {% endhighlight %}
 
@@ -161,64 +160,64 @@ Area Chart is rendered using a collection of line segments connected to form a c
 
 
 ![](Chart-Types_images/Chart-Types_img3.png) 
-{:.image }
+
 
 {% highlight html %}
-[ASP.NET] 
-
-  &lt;ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true"&gt;
 
 
-
-   &lt;Series&gt;
-
-             &lt;ej:Series Name="Product A" Type="Area"&gt;
-
-                    &lt;Points &gt;
-
-                        &lt;ej:Points X="1900" Y="2.6"/&gt; 
-
-                        &lt;ej:Points X="1920" Y="2.8"/&gt;  
-
-                        &lt;ej:Points X="1940" Y="2.6"/&gt;  
-
-                        &lt;ej:Points X="1960" Y="3"/&gt;  
-
-                        &lt;ej:Points X="1980" Y="3.6"/&gt;
-
-                        &lt;ej:Points X="2000" Y="3"/&gt; 
+  <ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true">
 
 
 
-                    &lt;/Points&gt;
+   <Series>
 
-             &lt;/ej:Series&gt;
+             <ej:Series Name="Product A" Type="Area">
 
-                   &lt;ej:Series Name="Product B" Type="Area"&gt;
+                    <Points >
 
-                    &lt;Points &gt;
+                        <ej:Points X="1900" Y="2.6"/> 
 
-                        &lt;ej:Points X="1900" Y="2.8"/&gt; 
+                        <ej:Points X="1920" Y="2.8"/>  
 
-                        &lt;ej:Points X="1920" Y="2.5"/&gt;  
+                        <ej:Points X="1940" Y="2.6"/>  
 
-                        &lt;ej:Points X="1940" Y="2.8"/&gt;  
+                        <ej:Points X="1960" Y="3"/>  
 
-                        &lt;ej:Points X="1960" Y="3.2"/&gt;  
+                        <ej:Points X="1980" Y="3.6"/>
 
-                        &lt;ej:Points X="1980" Y="2.9"/&gt;
-
-                        &lt;ej:Points X="2000" Y="2"/&gt; 
+                        <ej:Points X="2000" Y="3"/> 
 
 
 
-                    &lt;/Points&gt;
+                    </Points>
 
-             &lt;/ej:Series&gt;
+             </ej:Series>
 
-     &lt;/Series&gt;
+                   <ej:Series Name="Product B" Type="Area">
 
- &lt;/ej:Chart&gt;
+                    <Points >
+
+                        <ej:Points X="1900" Y="2.8"/> 
+
+                        <ej:Points X="1920" Y="2.5"/>  
+
+                        <ej:Points X="1940" Y="2.8"/>  
+
+                        <ej:Points X="1960" Y="3.2"/>  
+
+                        <ej:Points X="1980" Y="2.9"/>
+
+                        <ej:Points X="2000" Y="2"/> 
+
+
+
+                    </Points>
+
+             </ej:Series>
+
+     </Series>
+
+ </ej:Chart>
 
 {% endhighlight  %}
 
@@ -229,68 +228,68 @@ Range Area Charts are similar to regular area Charts except that, each area is r
 
 
 ![](Chart-Types_images/Chart-Types_img4.png)
-{:.image }
+
 
 
 {% highlight html %}
 
-[ASP.NET] 
-
-  &lt;ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true"&gt;
 
 
-
-   &lt;Series&gt;
-
-             &lt;ej:Series Name="Product A" Type="RangeArea"&gt;
-
-                    &lt;Points &gt;
-
-                        &lt;ej:Points X="1900" High="4" Low ="2"   /&gt; 
-
-                        &lt;ej:Points X="1920" High ="4.5" Low ="2.5"   /&gt;  
-
-                        &lt;ej:Points X="1940" High ="5" Low ="3"   /&gt;  
-
-                        &lt;ej:Points X="1960" High ="5.3" Low ="3.3"   /&gt;  
-
-                        &lt;ej:Points X="1980" High ="5" Low ="3"   /&gt;
-
-                        &lt;ej:Points X="2000" High ="4.5" Low ="2.5"   /&gt; 
-
-                        &lt;ej:Points X="2020" High ="4" Low ="2"   /&gt; 
+  <ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true">
 
 
 
-                    &lt;/Points&gt;
+   <Series>
 
-             &lt;/ej:Series&gt;
+             <ej:Series Name="Product A" Type="RangeArea">
 
-                   &lt;ej:Series Name="Product B" Type="RangeArea"&gt;
+                    <Points >
 
-                    &lt;Points &gt;
+                        <ej:Points X="1900" High="4" Low ="2"   /> 
 
-                        &lt;ej:Points X="1900" High ="2"   Low ="0"   /&gt; 
+                        <ej:Points X="1920" High ="4.5" Low ="2.5"   />  
 
-                        &lt;ej:Points X="1920" High ="2.5" Low ="0.5"   /&gt;  
+                        <ej:Points X="1940" High ="5" Low ="3"   />  
 
-                        &lt;ej:Points X="1940" High ="3"   Low ="1"   /&gt;  
+                        <ej:Points X="1960" High ="5.3" Low ="3.3"   />  
 
-                        &lt;ej:Points X="1960" High ="3.3" Low ="1.3"   /&gt;  
+                        <ej:Points X="1980" High ="5" Low ="3"   />
 
-                        &lt;ej:Points X="1980" High ="3"   Low ="1"   /&gt;
+                        <ej:Points X="2000" High ="4.5" Low ="2.5"   /> 
 
-                        &lt;ej:Points X="2000" High ="2.5" Low ="0.5"   /&gt; 
+                        <ej:Points X="2020" High ="4" Low ="2"   /> 
 
-                        &lt;ej:Points X="2020" High ="2"   Low ="0"   /&gt;                         
 
-                    &lt;/Points&gt;
 
-             &lt;/ej:Series&gt;
+                    </Points>
 
-     &lt;/Series&gt;
+             </ej:Series>
 
- &lt;/ej:Chart&gt;
+                   <ej:Series Name="Product B" Type="RangeArea">
+
+                    <Points >
+
+                        <ej:Points X="1900" High ="2"   Low ="0"   /> 
+
+                        <ej:Points X="1920" High ="2.5" Low ="0.5"   />  
+
+                        <ej:Points X="1940" High ="3"   Low ="1"   />  
+
+                        <ej:Points X="1960" High ="3.3" Low ="1.3"   />  
+
+                        <ej:Points X="1980" High ="3"   Low ="1"   />
+
+                        <ej:Points X="2000" High ="2.5" Low ="0.5"   /> 
+
+                        <ej:Points X="2020" High ="2"   Low ="0"   />                         
+
+                    </Points>
+
+             </ej:Series>
+
+     </Series>
+
+ </ej:Chart>
 
 
 
@@ -303,52 +302,52 @@ Step Area Charts are similar to regular area Charts except that, instead of a st
 
 
 ![](Chart-Types_images/Chart-Types_img5.png)
-{:.image }
+
 
 {% highlight html %}
-[ASP.NET] 
-
-  &lt;ej:Chart ID="Chart1" runat="server"&gt;
 
 
+  <ej:Chart ID="Chart1" runat="server">
 
-     &lt;Series&gt;
 
-             &lt;ej:Series Name="India" Type="StepArea"&gt;
 
-                    &lt;Points &gt;
+     <Series>
 
-                        &lt;ej:Points X="2000" Y="416"/&gt; 
+             <ej:Series Name="India" Type="StepArea">
 
-                        &lt;ej:Points X="2001" Y="490"/&gt; 
+                    <Points >
 
-                        &lt;ej:Points X="2002" Y="470"/&gt; 
+                        <ej:Points X="2000" Y="416"/> 
 
-                        &lt;ej:Points X="2003" Y="500"/&gt; 
+                        <ej:Points X="2001" Y="490"/> 
 
-                        &lt;ej:Points X="2004" Y="449"/&gt; 
+                        <ej:Points X="2002" Y="470"/> 
 
-                        &lt;ej:Points X="2005" Y="470"/&gt; 
+                        <ej:Points X="2003" Y="500"/> 
 
-                        &lt;ej:Points X="2006" Y="416"/&gt;  
+                        <ej:Points X="2004" Y="449"/> 
 
-                        &lt;ej:Points X="2007" Y="404"/&gt;  
+                        <ej:Points X="2005" Y="470"/> 
 
-                        &lt;ej:Points X="2008" Y="390"/&gt;  
+                        <ej:Points X="2006" Y="416"/>  
 
-                        &lt;ej:Points X="2009" Y="376"/&gt;
+                        <ej:Points X="2007" Y="404"/>  
 
-                        &lt;ej:Points X="2010" Y="520"/&gt; 
+                        <ej:Points X="2008" Y="390"/>  
 
-                        &lt;ej:Points X="2011" Y="509"  /&gt;  
+                        <ej:Points X="2009" Y="376"/>
 
-                    &lt;/Points&gt;
+                        <ej:Points X="2010" Y="520"/> 
 
-             &lt;/ej:Series&gt;
+                        <ej:Points X="2011" Y="509"  />  
 
-     &lt;/Series&gt;
+                    </Points>
 
- &lt;/ej:Chart&gt;
+             </ej:Series>
+
+     </Series>
+
+ </ej:Chart>
 {% endhighlight  %}
 
 
@@ -359,80 +358,80 @@ Spline Area Chart is similar to an Area Chart except the difference in the way t
 
 
 ![](Chart-Types_images/Chart-Types_img6.png)
-{:.image }
+
 
 {% highlight html %}
-[ASP.NET] 
-
-  &lt;ej:Chart ID="Chart1" runat="server" &gt;
 
 
-
-  &lt;Series&gt;
-
-             &lt;ej:Series Name="India" Type="SplineArea"&gt;
-
-                    &lt;Points &gt;
+  <ej:Chart ID="Chart1" runat="server" >
 
 
 
-                        &lt;ej:Points X="2002" Y="2.2"/&gt; 
+  <Series>
 
-                        &lt;ej:Points X="2003" Y="3.4"/&gt; 
+             <ej:Series Name="India" Type="SplineArea">
 
-                        &lt;ej:Points X="2004" Y="2.8"/&gt; 
-
-                        &lt;ej:Points X="2005" Y="1.6"/&gt; 
-
-                        &lt;ej:Points X="2006" Y="2.3"/&gt;  
-
-                        &lt;ej:Points X="2007" Y="2.5"/&gt;  
-
-                        &lt;ej:Points X="2008" Y="2.9"/&gt;  
-
-                        &lt;ej:Points X="2009" Y="3.8"/&gt;
-
-                        &lt;ej:Points X="2010" Y="1.4"/&gt; 
-
-                        &lt;ej:Points X="2011" Y="3.1"  /&gt;  
-
-                    &lt;/Points&gt;
-
-             &lt;/ej:Series&gt;
-
-                    &lt;ej:Series Name="India" Type="SplineArea"&gt;
-
-                    &lt;Points &gt;
+                    <Points >
 
 
 
-                        &lt;ej:Points X="2002" Y="0.8"/&gt; 
+                        <ej:Points X="2002" Y="2.2"/> 
 
-                        &lt;ej:Points X="2003" Y="1.3"/&gt; 
+                        <ej:Points X="2003" Y="3.4"/> 
 
-                        &lt;ej:Points X="2004" Y="1.1"/&gt; 
+                        <ej:Points X="2004" Y="2.8"/> 
 
-                        &lt;ej:Points X="2005" Y="1"/&gt; 
+                        <ej:Points X="2005" Y="1.6"/> 
 
-                        &lt;ej:Points X="2006" Y="1.2"/&gt;  
+                        <ej:Points X="2006" Y="2.3"/>  
 
-                        &lt;ej:Points X="2007" Y="1.7"/&gt;  
+                        <ej:Points X="2007" Y="2.5"/>  
 
-                        &lt;ej:Points X="2008" Y="2.3"/&gt;  
+                        <ej:Points X="2008" Y="2.9"/>  
 
-                        &lt;ej:Points X="2009" Y="2.7"/&gt;
+                        <ej:Points X="2009" Y="3.8"/>
 
-                        &lt;ej:Points X="2010" Y="1.1"/&gt; 
+                        <ej:Points X="2010" Y="1.4"/> 
 
-                        &lt;ej:Points X="2011" Y="2.3"  /&gt;  
+                        <ej:Points X="2011" Y="3.1"  />  
 
-                    &lt;/Points&gt;
+                    </Points>
 
-             &lt;/ej:Series&gt;
+             </ej:Series>
 
-     &lt;/Series&gt;
+                    <ej:Series Name="India" Type="SplineArea">
 
- &lt;/ej:Chart&gt;
+                    <Points >
+
+
+
+                        <ej:Points X="2002" Y="0.8"/> 
+
+                        <ej:Points X="2003" Y="1.3"/> 
+
+                        <ej:Points X="2004" Y="1.1"/> 
+
+                        <ej:Points X="2005" Y="1"/> 
+
+                        <ej:Points X="2006" Y="1.2"/>  
+
+                        <ej:Points X="2007" Y="1.7"/>  
+
+                        <ej:Points X="2008" Y="2.3"/>  
+
+                        <ej:Points X="2009" Y="2.7"/>
+
+                        <ej:Points X="2010" Y="1.1"/> 
+
+                        <ej:Points X="2011" Y="2.3"  />  
+
+                    </Points>
+
+             </ej:Series>
+
+     </Series>
+
+ </ej:Chart>
 
 
 {% endhighlight %}
@@ -443,80 +442,80 @@ Stacking Area Charts are similar to regular area Charts except that the Y values
 
 
 ![](Chart-Types_images/Chart-Types_img7.png) 
-{:.image }
+
 
 {% highlight html %}
-[ASP.NET] 
-
-  &lt;ej:Chart ID="Chart1" runat="server"&gt;
 
 
-
-   &lt;Series&gt;
-
-         &lt;ej:Series Name="India" Type="StackingArea"&gt;
-
-                    &lt;Points &gt;
+  <ej:Chart ID="Chart1" runat="server">
 
 
 
-                        &lt;ej:Points X="2002" Y="6"/&gt; 
+   <Series>
 
-                        &lt;ej:Points X="2003" Y="7.5"/&gt; 
+         <ej:Series Name="India" Type="StackingArea">
 
-                        &lt;ej:Points X="2004" Y="6"/&gt; 
-
-                        &lt;ej:Points X="2005" Y="6.5"/&gt; 
-
-                        &lt;ej:Points X="2006" Y="7.4"/&gt;  
-
-                        &lt;ej:Points X="2007" Y="7.9"/&gt;  
-
-                        &lt;ej:Points X="2008" Y="7.5"/&gt;  
-
-                        &lt;ej:Points X="2009" Y="8.8"/&gt;
-
-                        &lt;ej:Points X="2010" Y="4.8"/&gt; 
-
-                        &lt;ej:Points X="2011" Y="9.3"  /&gt;  
-
-                    &lt;/Points&gt;
-
-             &lt;/ej:Series&gt;
-
-        &lt;ej:Series Name="India" Type="StackingArea"&gt;
-
-                    &lt;Points &gt;
+                    <Points >
 
 
 
-                        &lt;ej:Points X="2002" Y="3.5"/&gt; 
+                        <ej:Points X="2002" Y="6"/> 
 
-                        &lt;ej:Points X="2003" Y="4.9"/&gt; 
+                        <ej:Points X="2003" Y="7.5"/> 
 
-                        &lt;ej:Points X="2004" Y="3.7"/&gt; 
+                        <ej:Points X="2004" Y="6"/> 
 
-                        &lt;ej:Points X="2005" Y="7.5"/&gt; 
+                        <ej:Points X="2005" Y="6.5"/> 
 
-                        &lt;ej:Points X="2006" Y="4.8"/&gt;  
+                        <ej:Points X="2006" Y="7.4"/>  
 
-                        &lt;ej:Points X="2007" Y="2.6"/&gt;  
+                        <ej:Points X="2007" Y="7.9"/>  
 
-                        &lt;ej:Points X="2008" Y="4.7"/&gt;  
+                        <ej:Points X="2008" Y="7.5"/>  
 
-                        &lt;ej:Points X="2009" Y="3.7"/&gt;
+                        <ej:Points X="2009" Y="8.8"/>
 
-                        &lt;ej:Points X="2010" Y="3.5"/&gt; 
+                        <ej:Points X="2010" Y="4.8"/> 
 
-                        &lt;ej:Points X="2011" Y="3.6"  /&gt;  
+                        <ej:Points X="2011" Y="9.3"  />  
 
-                    &lt;/Points&gt;
+                    </Points>
 
-             &lt;/ej:Series&gt;
+             </ej:Series>
 
-     &lt;/Series&gt;
+        <ej:Series Name="India" Type="StackingArea">
 
- &lt;/ej:Chart&gt;
+                    <Points >
+
+
+
+                        <ej:Points X="2002" Y="3.5"/> 
+
+                        <ej:Points X="2003" Y="4.9"/> 
+
+                        <ej:Points X="2004" Y="3.7"/> 
+
+                        <ej:Points X="2005" Y="7.5"/> 
+
+                        <ej:Points X="2006" Y="4.8"/>  
+
+                        <ej:Points X="2007" Y="2.6"/>  
+
+                        <ej:Points X="2008" Y="4.7"/>  
+
+                        <ej:Points X="2009" Y="3.7"/>
+
+                        <ej:Points X="2010" Y="3.5"/> 
+
+                        <ej:Points X="2011" Y="3.6"  />  
+
+                    </Points>
+
+             </ej:Series>
+
+     </Series>
+
+ </ej:Chart>
 
 {% endhighlight %}
 
@@ -526,70 +525,70 @@ Stacking Area Charts are similar to regular area Charts except that the Y values
 
 {% highlight html %}
 
-[ASP.NET]
 
-&lt;ej:Chart ID="Chart1" runat="server" &gt;   
 
-      &lt;ej:Series Type="StackingArea100"&gt;
+<ej:Chart ID="Chart1" runat="server" >   
 
-          &lt;Points &gt; 
+      <ej:Series Type="StackingArea100">
 
-              &lt;ej:Points X=”2006” Y="34"/&gt;
+          <Points > 
 
-              &lt;ej:Points X="2007" Y="20"/&gt; 
+              <ej:Points X=”2006” Y="34"/>
 
-              &lt;ej:Points X="2008" Y="40"/&gt; 
+              <ej:Points X="2007" Y="20"/> 
 
-              &lt;ej:Points X="2009" Y="51"/&gt; 
+              <ej:Points X="2008" Y="40"/> 
 
-              &lt;ej:Points X="2010" Y="26"/&gt;
+              <ej:Points X="2009" Y="51"/> 
 
-              &lt;ej:Points X="2011" Y="37"/&gt;
+              <ej:Points X="2010" Y="26"/>
 
-              &lt;ej:Points X="2012" Y="54"/&gt;
+              <ej:Points X="2011" Y="37"/>
 
-              &lt;ej:Points X="2013" Y="44"/&gt;
+              <ej:Points X="2012" Y="54"/>
 
-              &lt;ej:Points X="2014" Y="48"/&gt;  
+              <ej:Points X="2013" Y="44"/>
 
-          &lt;/Points&gt;
+              <ej:Points X="2014" Y="48"/>  
 
-      &lt;/ej:Series&gt;
+          </Points>
 
-      &lt;ej:Series Type="StackingArea100"&gt;
+      </ej:Series>
 
-          &lt;Points &gt; 
+      <ej:Series Type="StackingArea100">
 
-              &lt;ej:Points X=”2006” Y="51"/&gt;
+          <Points > 
 
-              &lt;ej:Points X="2007" Y="26"/&gt; 
+              <ej:Points X=”2006” Y="51"/>
 
-              &lt;ej:Points X="2008" Y="37"/&gt; 
+              <ej:Points X="2007" Y="26"/> 
 
-              &lt;ej:Points X="2009" Y="51"/&gt; 
+              <ej:Points X="2008" Y="37"/> 
 
-              &lt;ej:Points X="2010" Y="26"/&gt;
+              <ej:Points X="2009" Y="51"/> 
 
-              &lt;ej:Points X="2011" Y="37"/&gt;
+              <ej:Points X="2010" Y="26"/>
 
-              &lt;ej:Points X="2012" Y="43"/&gt;
+              <ej:Points X="2011" Y="37"/>
 
-              &lt;ej:Points X="2013" Y="23"/&gt;
+              <ej:Points X="2012" Y="43"/>
 
-              &lt;ej:Points X="2014" Y="55"/&gt;  
+              <ej:Points X="2013" Y="23"/>
 
-          &lt;/Points&gt;
+              <ej:Points X="2014" Y="55"/>  
 
-       &lt;/ej:Series&gt;
+          </Points>
 
-&lt;/ej:Chart&gt;
+       </ej:Series>
+
+</ej:Chart>
 
 {% endhighlight %}
 
 The following screenshot displays the 100% Stacking area chart.
 
 ![C:/Users/Giftline/Desktop/a.png](Chart-Types_images/Chart-Types_img8.png)
-{:.image }
+
 
 
 ## Column Chart
@@ -599,66 +598,66 @@ Column Charts are among the most common Chart types that are used. It uses verti
 
 
 ![](Chart-Types_images/Chart-Types_img9.png) 
-{:.image }
+
 
 {% highlight html %}
-[ASP.NET] 
+ 
 
-&lt;ej:Chart ID="Chart1" runat="server"&gt;
+<ej:Chart ID="Chart1" runat="server">
 
-           &lt;Series&gt;
+           <Series>
 
-             &lt;ej:Series Type="Column"&gt;
+             <ej:Series Type="Column">
 
-                   &lt;Points&gt;
+                   <Points>
 
-                        &lt;ej:Points  X="USA" Y="50"/&gt;
+                        <ej:Points  X="USA" Y="50"/>
 
-                        &lt;ej:Points  X="China" Y="40"/&gt;
+                        <ej:Points  X="China" Y="40"/>
 
-                        &lt;ej:Points  X="Japan" Y="70"/&gt;
+                        <ej:Points  X="Japan" Y="70"/>
 
-                        &lt;ej:Points  X="Australia" Y="60"/&gt;
+                        <ej:Points  X="Australia" Y="60"/>
 
-                        &lt;ej:Points  X="France" Y="50"/&gt;
+                        <ej:Points  X="France" Y="50"/>
 
-                        &lt;ej:Points  X="Germany" Y="40"/&gt;
+                        <ej:Points  X="Germany" Y="40"/>
 
-                        &lt;ej:Points  X="Italy" Y="40"/&gt;
+                        <ej:Points  X="Italy" Y="40"/>
 
-                        &lt;ej:Points  X="Sweden" Y="30"/&gt;
+                        <ej:Points  X="Sweden" Y="30"/>
 
-                    &lt;/Points&gt;
+                    </Points>
 
-             &lt;/ej:Series&gt;
+             </ej:Series>
 
-                &lt;ej:Series Type="Column"&gt;
+                <ej:Series Type="Column">
 
-                   &lt;Points&gt;
+                   <Points>
 
-                        &lt;ej:Points  X="USA" Y="70"/&gt;
+                        <ej:Points  X="USA" Y="70"/>
 
-                        &lt;ej:Points  X="China" Y="60"/&gt;
+                        <ej:Points  X="China" Y="60"/>
 
-                        &lt;ej:Points  X="Japan" Y="40"/&gt;
+                        <ej:Points  X="Japan" Y="40"/>
 
-                        &lt;ej:Points  X="Australia" Y="36"/&gt;
+                        <ej:Points  X="Australia" Y="36"/>
 
-                        &lt;ej:Points  X="France" Y="25"/&gt;
+                        <ej:Points  X="France" Y="25"/>
 
-                        &lt;ej:Points  X="Germany" Y="30"/&gt;
+                        <ej:Points  X="Germany" Y="30"/>
 
-                        &lt;ej:Points  X="Italy" Y="35"/&gt;
+                        <ej:Points  X="Italy" Y="35"/>
 
-                        &lt;ej:Points  X="Sweden" Y="30"/&gt;
+                        <ej:Points  X="Sweden" Y="30"/>
 
-                    &lt;/Points&gt;
+                    </Points>
 
-             &lt;/ej:Series&gt;             
+             </ej:Series>             
 
-         &lt;/Series&gt;
+         </Series>
 
-      &lt;/ej:Chart&gt;
+      </ej:Chart>
 
 {% endhighlight %}
 
@@ -669,54 +668,54 @@ RangeColumn Chart is similar to the Column Chart except that each column is rend
 
 
 ![](Chart-Types_images/Chart-Types_img10.png)
-{:.image }
+
 
 {% highlight html %}
-[ASP.NET] 
+ 
 
-&lt;ej:Chart ID="Chart1" runat="server"&gt;
+<ej:Chart ID="Chart1" runat="server">
 
-        &lt;Series&gt;
+        <Series>
 
-             &lt;ej:Series Name="India" Type="RangeColumn"&gt;
+             <ej:Series Name="India" Type="RangeColumn">
 
-                    &lt;Points &gt;                 
+                    <Points >                 
 
-                        &lt;ej:Points X="Jan" Low="0.7" High="6.1"/&gt; 
+                        <ej:Points X="Jan" Low="0.7" High="6.1"/> 
 
-                        &lt;ej:Points X="Feb" Low="1.3" High="6.3"/&gt; 
+                        <ej:Points X="Feb" Low="1.3" High="6.3"/> 
 
-                        &lt;ej:Points X="Mar" Low="1.9" High="8.5"/&gt; 
+                        <ej:Points X="Mar" Low="1.9" High="8.5"/> 
 
-                        &lt;ej:Points X="Apr" Low="3.1" High="10.8"/&gt; 
+                        <ej:Points X="Apr" Low="3.1" High="10.8"/> 
 
-                        &lt;ej:Points X="May" Low="5.7" High="14.4"/&gt; 
+                        <ej:Points X="May" Low="5.7" High="14.4"/> 
 
-                    &lt;/Points&gt;
+                    </Points>
 
-             &lt;/ej:Series&gt;
+             </ej:Series>
 
-                    &lt;ej:Series Name="India" Type="RangeColumn"&gt;
+                    <ej:Series Name="India" Type="RangeColumn">
 
-                    &lt;Points &gt;
+                    <Points >
 
-                        &lt;ej:Points X="Jan" Low="1.7" High="7.1"/&gt; 
+                        <ej:Points X="Jan" Low="1.7" High="7.1"/> 
 
-                        &lt;ej:Points X="Feb" Low="1.9" High="7.3"/&gt; 
+                        <ej:Points X="Feb" Low="1.9" High="7.3"/> 
 
-                        &lt;ej:Points X="Mar" Low="1.2" High="7.5"/&gt; 
+                        <ej:Points X="Mar" Low="1.2" High="7.5"/> 
 
-                        &lt;ej:Points X="Apr" Low="2.5" High="9.8"/&gt; 
+                        <ej:Points X="Apr" Low="2.5" High="9.8"/> 
 
-                        &lt;ej:Points X="May" Low="4.7" High="11.4"/&gt;   
+                        <ej:Points X="May" Low="4.7" High="11.4"/>   
 
-                    &lt;/Points&gt;
+                    </Points>
 
-             &lt;/ej:Series&gt;
+             </ej:Series>
 
-     &lt;/Series&gt;     
+     </Series>     
 
- &lt;/ej:Chart&gt;
+ </ej:Chart>
 
 {% endhighlight %}
 
@@ -727,72 +726,72 @@ Stacking Column Charts are similar to regular column Charts except that the Y va
 
 
 ![](Chart-Types_images/Chart-Types_img11.png)
-{:.image }
+
 
 {% highlight html %}
-[ASP.NET] 
 
-&lt;ej:Chart ID="Chart1" runat="server"&gt;
 
-   &lt;Series&gt;
+<ej:Chart ID="Chart1" runat="server">
 
-       &lt;ej:Series Type="StackingColumn"&gt;
+   <Series>
 
-                    &lt;Points &gt;                 
+       <ej:Series Type="StackingColumn">
 
-                        &lt;ej:Points X="Jan" Y="900"/&gt; 
+                    <Points >                 
 
-                        &lt;ej:Points X="Feb" Y="820"/&gt; 
+                        <ej:Points X="Jan" Y="900"/> 
 
-                        &lt;ej:Points X="Mar" Y="880"/&gt; 
+                        <ej:Points X="Feb" Y="820"/> 
 
-                        &lt;ej:Points X="Apr" Y="725"/&gt; 
+                        <ej:Points X="Mar" Y="880"/> 
 
-                        &lt;ej:Points X="May" Y="760"/&gt;                          
+                        <ej:Points X="Apr" Y="725"/> 
 
-                    &lt;/Points&gt;
+                        <ej:Points X="May" Y="760"/>                          
 
-             &lt;/ej:Series&gt;
+                    </Points>
 
-         &lt;ej:Series Type="StackingColumn"&gt;
+             </ej:Series>
 
-                     &lt;Points &gt;                 
+         <ej:Series Type="StackingColumn">
 
-                        &lt;ej:Points X="Jan" Y="190"/&gt; 
+                     <Points >                 
 
-                        &lt;ej:Points X="Feb" Y="226"/&gt; 
+                        <ej:Points X="Jan" Y="190"/> 
 
-                        &lt;ej:Points X="Mar" Y="200"/&gt; 
+                        <ej:Points X="Feb" Y="226"/> 
 
-                        &lt;ej:Points X="Apr" Y="250"/&gt; 
+                        <ej:Points X="Mar" Y="200"/> 
 
-                        &lt;ej:Points X="May" Y="222"/&gt;                          
+                        <ej:Points X="Apr" Y="250"/> 
 
-                    &lt;/Points&gt;
+                        <ej:Points X="May" Y="222"/>                          
 
-                &lt;/ej:Series&gt;
+                    </Points>
 
-             &lt;ej:Series Type="StackingColumn"&gt;
+                </ej:Series>
 
-                     &lt;Points &gt;                 
+             <ej:Series Type="StackingColumn">
 
-                        &lt;ej:Points X="Jan" Y="250"/&gt; 
+                     <Points >                 
 
-                        &lt;ej:Points X="Feb" Y="145"/&gt; 
+                        <ej:Points X="Jan" Y="250"/> 
 
-                        &lt;ej:Points X="Mar" Y="190"/&gt; 
+                        <ej:Points X="Feb" Y="145"/> 
 
-                        &lt;ej:Points X="Apr" Y="220"/&gt; 
+                        <ej:Points X="Mar" Y="190"/> 
 
-                        &lt;ej:Points X="May" Y="225"/&gt;                          
+                        <ej:Points X="Apr" Y="220"/> 
 
-                    &lt;/Points&gt;
+                        <ej:Points X="May" Y="225"/>                          
 
-                &lt;/ej:Series&gt;
+                    </Points>
 
-     &lt;/Series&gt;
+                </ej:Series>
 
- &lt;/ej:Chart&gt;
+     </Series>
+
+ </ej:Chart>
 
 {% endhighlight  %}
 
@@ -802,55 +801,55 @@ Stacking Column Charts are similar to regular column Charts except that the Y va
 
 {% highlight html %}
 
-[ASP.NET]
 
-&lt;ej:Chart ID="Chart1" runat="server" &gt;   
 
-      &lt;ej:Series Type="StackingColumn100"&gt;
+<ej:Chart ID="Chart1" runat="server" >   
 
-          &lt;Points &gt; 
+      <ej:Series Type="StackingColumn100">
 
-              &lt;ej:Points X="2006" Y="900"/&gt;
+          <Points > 
 
-              &lt;ej:Points X="2007" Y="544"/&gt; 
+              <ej:Points X="2006" Y="900"/>
 
-              &lt;ej:Points X="2008" Y="880"/&gt; 
+              <ej:Points X="2007" Y="544"/> 
 
-              &lt;ej:Points X="2009" Y="725"/&gt; 
+              <ej:Points X="2008" Y="880"/> 
 
-              &lt;ej:Points X="2010" Y="765"/&gt;
+              <ej:Points X="2009" Y="725"/> 
 
-              &lt;ej:Points X="2011" Y="679"/&gt;
+              <ej:Points X="2010" Y="765"/>
 
-              &lt;ej:Points X="2012" Y="770"/&gt;
+              <ej:Points X="2011" Y="679"/>
 
-          &lt;/Points&gt;
+              <ej:Points X="2012" Y="770"/>
 
-      &lt;/ej:Series&gt;
+          </Points>
 
-      &lt;ej:Series Type="StackingColumn100"&gt;
+      </ej:Series>
 
-          &lt;Points &gt; 
+      <ej:Series Type="StackingColumn100">
 
-              &lt;ej:Points X="2006" Y="190"/&gt;               
+          <Points > 
 
-              &lt;ej:Points X="2007" Y="226"/&gt; 
+              <ej:Points X="2006" Y="190"/>               
 
-              &lt;ej:Points X="2008" Y="194"/&gt; 
+              <ej:Points X="2007" Y="226"/> 
 
-              &lt;ej:Points X="2009" Y="545"/&gt; 
+              <ej:Points X="2008" Y="194"/> 
 
-              &lt;ej:Points X="2010" Y="222"/&gt;
+              <ej:Points X="2009" Y="545"/> 
 
-              &lt;ej:Points X="2011" Y="181"/&gt;
+              <ej:Points X="2010" Y="222"/>
 
-              &lt;ej:Points X="2012" Y="128"/&gt;
+              <ej:Points X="2011" Y="181"/>
 
-          &lt;/Points&gt;
+              <ej:Points X="2012" Y="128"/>
 
-       &lt;/ej:Series&gt;
+          </Points>
 
-&lt;/ej:Chart&gt;
+       </ej:Series>
+
+</ej:Chart>
 
 
 {% endhighlight  %}
@@ -859,7 +858,7 @@ Stacking Column Charts are similar to regular column Charts except that the Y va
 The following screenshot displays the 100% Stacking column chat.
 
 ![C:/Users/Giftline/Desktop/a.png](Chart-Types_images/Chart-Types_img12.png)
-{:.image }
+
 
 
 ## Bar Chart
@@ -869,64 +868,64 @@ Bar Chart is the simplest and most versatile of statistical diagrams. It display
 
 
 ![](Chart-Types_images/Chart-Types_img13.png) 
-{:.image }
+
 
 {% highlight html %}
-[ASP.NET] 
-
-&lt;ej:Chart ID="Chart1" runat="server"&gt;
 
 
-
-         &lt;Series&gt;
-
-             &lt;ej:Series Type="Bar"&gt;
-
-                    &lt;Points &gt;
+<ej:Chart ID="Chart1" runat="server">
 
 
 
-                        &lt;ej:Points X="2006" Y="7.8"/&gt;  
+         <Series>
 
-                        &lt;ej:Points X="2007" Y="7.2"/&gt;  
+             <ej:Series Type="Bar">
 
-                        &lt;ej:Points X="2008" Y="6.8"/&gt;  
-
-                        &lt;ej:Points X="2009" Y="10.7"/&gt;
-
-                        &lt;ej:Points X="2010" Y="10.8"/&gt; 
-
-                        &lt;ej:Points X="2011" Y="9.8"  /&gt;  
-
-                    &lt;/Points&gt;
-
-             &lt;/ej:Series&gt;
-
-               &lt;ej:Series Type="Bar"&gt;
-
-                    &lt;Points &gt;
+                    <Points >
 
 
 
-                        &lt;ej:Points X="2006" Y="4.8"/&gt;  
+                        <ej:Points X="2006" Y="7.8"/>  
 
-                        &lt;ej:Points X="2007" Y="4.6"/&gt;  
+                        <ej:Points X="2007" Y="7.2"/>  
 
-                        &lt;ej:Points X="2008" Y="7.2"/&gt;  
+                        <ej:Points X="2008" Y="6.8"/>  
 
-                        &lt;ej:Points X="2009" Y="9.3"/&gt;
+                        <ej:Points X="2009" Y="10.7"/>
 
-                        &lt;ej:Points X="2010" Y="9.7"/&gt; 
+                        <ej:Points X="2010" Y="10.8"/> 
 
-                        &lt;ej:Points X="2011" Y="9"  /&gt;  
+                        <ej:Points X="2011" Y="9.8"  />  
 
-                    &lt;/Points&gt;
+                    </Points>
 
-             &lt;/ej:Series&gt;
+             </ej:Series>
 
-     &lt;/Series&gt;
+               <ej:Series Type="Bar">
 
- &lt;/ej:Chart&gt;
+                    <Points >
+
+
+
+                        <ej:Points X="2006" Y="4.8"/>  
+
+                        <ej:Points X="2007" Y="4.6"/>  
+
+                        <ej:Points X="2008" Y="7.2"/>  
+
+                        <ej:Points X="2009" Y="9.3"/>
+
+                        <ej:Points X="2010" Y="9.7"/> 
+
+                        <ej:Points X="2011" Y="9"  />  
+
+                    </Points>
+
+             </ej:Series>
+
+     </Series>
+
+ </ej:Chart>
 
 {% endhighlight  %}
 
@@ -937,64 +936,64 @@ Stacking Bar Charts are similar to regular bar Charts except that the Y values s
 
 
 ![](Chart-Types_images/Chart-Types_img14.png) 
-{:.image }
+
 
 
 {% highlight html %}
 
-[ASP.NET] 
 
-&lt;ej:Chart ID="Chart1" runat="server"&gt;
 
-&lt;Series&gt;
+<ej:Chart ID="Chart1" runat="server">
 
-             &lt;ej:Series Type="StackingBar"&gt;
+<Series>
 
-                    &lt;Points &gt;                         
+             <ej:Series Type="StackingBar">
 
-                        &lt;ej:Points X="Jan" Y="6"/&gt;  
+                    <Points >                         
 
-                        &lt;ej:Points X="Feb" Y="8"/&gt;  
+                        <ej:Points X="Jan" Y="6"/>  
 
-                        &lt;ej:Points X="Mar" Y="12"/&gt;  
+                        <ej:Points X="Feb" Y="8"/>  
 
-                        &lt;ej:Points X="Apr" Y="15.5"/&gt;
+                        <ej:Points X="Mar" Y="12"/>  
 
-                        &lt;ej:Points X="May" Y="20"/&gt; 
+                        <ej:Points X="Apr" Y="15.5"/>
 
-                        &lt;ej:Points X="Jun" Y="24"  /&gt;  
+                        <ej:Points X="May" Y="20"/> 
 
-                        &lt;ej:Points X="Jul" Y="28"  /&gt;  
+                        <ej:Points X="Jun" Y="24"  />  
 
-                    &lt;/Points&gt;
+                        <ej:Points X="Jul" Y="28"  />  
 
-             &lt;/ej:Series&gt;
+                    </Points>
 
-               &lt;ej:Series Type="StackingBar"&gt;
+             </ej:Series>
 
-                    &lt;Points &gt;
+               <ej:Series Type="StackingBar">
 
-                        &lt;ej:Points X="Jan" Y="-1"/&gt;  
+                    <Points >
 
-                        &lt;ej:Points X="Feb" Y="-1.5"/&gt;  
+                        <ej:Points X="Jan" Y="-1"/>  
 
-                        &lt;ej:Points X="Mar" Y="-2"/&gt;  
+                        <ej:Points X="Feb" Y="-1.5"/>  
 
-                        &lt;ej:Points X="Apr" Y="-2.5"/&gt;
+                        <ej:Points X="Mar" Y="-2"/>  
 
-                        &lt;ej:Points X="May" Y="-3"/&gt; 
+                        <ej:Points X="Apr" Y="-2.5"/>
 
-                        &lt;ej:Points X="Jun" Y="-3.5"  /&gt;  
+                        <ej:Points X="May" Y="-3"/> 
 
-                        &lt;ej:Points X="Jul" Y="-4"  /&gt;  
+                        <ej:Points X="Jun" Y="-3.5"  />  
 
-                    &lt;/Points&gt;
+                        <ej:Points X="Jul" Y="-4"  />  
 
-             &lt;/ej:Series&gt;
+                    </Points>
 
-       &lt;/Series&gt;
+             </ej:Series>
 
- &lt;/ej:Chart&gt;
+       </Series>
+
+ </ej:Chart>
 
 {% endhighlight  %}
 
@@ -1004,66 +1003,66 @@ Stacking Bar Charts are similar to regular bar Charts except that the Y values s
 
 100% Stacking bar is similar to stacking bar charts. Here, the combined contribution of Y values is the combined total of the horizontal bar with 100 percent.
 {% highlight html %}
-[ASP.NET]
 
-&lt;ej:Chart ID="Chart1" runat="server" &gt;   
 
-      &lt;ej:Series Type="StackingBar100"&gt;
+<ej:Chart ID="Chart1" runat="server" >   
 
-          &lt;Points &gt; 
+      <ej:Series Type="StackingBar100">
 
-              &lt;ej:Points X="2007" Y="453"/&gt; 
+          <Points > 
 
-              &lt;ej:Points X="2008" Y="354"/&gt; 
+              <ej:Points X="2007" Y="453"/> 
 
-              &lt;ej:Points X="2009" Y="282"/&gt; 
+              <ej:Points X="2008" Y="354"/> 
 
-              &lt;ej:Points X="2010" Y="321"/&gt;
+              <ej:Points X="2009" Y="282"/> 
 
-              &lt;ej:Points X="2011" Y="333"/&gt;
+              <ej:Points X="2010" Y="321"/>
 
-              &lt;ej:Points X="2012" Y="351"/&gt;
+              <ej:Points X="2011" Y="333"/>
 
-              &lt;ej:Points X="2013" Y="403"/&gt;
+              <ej:Points X="2012" Y="351"/>
 
-              &lt;ej:Points X="2014" Y="421"/&gt;  
+              <ej:Points X="2013" Y="403"/>
 
-          &lt;/Points&gt;
+              <ej:Points X="2014" Y="421"/>  
 
-      &lt;/ej:Series&gt;
+          </Points>
 
-      &lt;ej:Series Type="StackingBar100"&gt;
+      </ej:Series>
 
-          &lt;Points &gt;               
+      <ej:Series Type="StackingBar100">
 
-              &lt;ej:Points X="2007" Y="876"/&gt; 
+          <Points >               
 
-              &lt;ej:Points X="2008" Y="564"/&gt; 
+              <ej:Points X="2007" Y="876"/> 
 
-              &lt;ej:Points X="2009" Y="242"/&gt; 
+              <ej:Points X="2008" Y="564"/> 
 
-              &lt;ej:Points X="2010" Y="121"/&gt;
+              <ej:Points X="2009" Y="242"/> 
 
-              &lt;ej:Points X="2011" Y="343"/&gt;
+              <ej:Points X="2010" Y="121"/>
 
-              &lt;ej:Points X="2012" Y="451"/&gt;
+              <ej:Points X="2011" Y="343"/>
 
-              &lt;ej:Points X="2013" Y="203"/&gt;
+              <ej:Points X="2012" Y="451"/>
 
-              &lt;ej:Points X="2014" Y="431"/&gt;  
+              <ej:Points X="2013" Y="203"/>
 
-          &lt;/Points&gt;
+              <ej:Points X="2014" Y="431"/>  
 
-       &lt;/ej:Series&gt;
+          </Points>
 
-&lt;/ej:Chart&gt;
+       </ej:Series>
+
+</ej:Chart>
 
 
 {% endhighlight  %}
 The following screenshot displays the 100% Stackingbar chart.
 
 ![C:/Users/Giftline/Desktop/a.png](Chart-Types_images/Chart-Types_img15.png)
-{:.image }
+
 
 
 ## Spline Chart
@@ -1073,64 +1072,64 @@ Spline Chart is similar to a Line Chart except that it connects the different da
 
 
 ![](Chart-Types_images/Chart-Types_img16.png)
-{:.image }
+
 
 
 {% highlight html %}
 
-[ASP.NET] 
 
-&lt;ej:Chart ID="Chart1" runat="server"&gt;
 
-    &lt;Series&gt;
+<ej:Chart ID="Chart1" runat="server">
 
-             &lt;ej:Series Type="Spline"&gt;
+    <Series>
 
-                    &lt;Points &gt;                         
+             <ej:Series Type="Spline">
 
-                        &lt;ej:Points X="Jan" Y="-1"/&gt;  
+                    <Points >                         
 
-                        &lt;ej:Points X="Feb" Y="2"/&gt;  
+                        <ej:Points X="Jan" Y="-1"/>  
 
-                        &lt;ej:Points X="Mar" Y="2"/&gt;  
+                        <ej:Points X="Feb" Y="2"/>  
 
-                        &lt;ej:Points X="Apr" Y="8"/&gt;
+                        <ej:Points X="Mar" Y="2"/>  
 
-                        &lt;ej:Points X="May" Y="6"/&gt; 
+                        <ej:Points X="Apr" Y="8"/>
 
-                        &lt;ej:Points X="Jun" Y="18"  /&gt;  
+                        <ej:Points X="May" Y="6"/> 
 
-                        &lt;ej:Points X="Jul" Y="11"  /&gt;  
+                        <ej:Points X="Jun" Y="18"  />  
 
-                    &lt;/Points&gt;
+                        <ej:Points X="Jul" Y="11"  />  
 
-             &lt;/ej:Series&gt;
+                    </Points>
 
-               &lt;ej:Series Type="Spline"&gt;
+             </ej:Series>
 
-                    &lt;Points &gt;
+               <ej:Series Type="Spline">
 
-                        &lt;ej:Points X="Jan" Y="3"/&gt;  
+                    <Points >
 
-                        &lt;ej:Points X="Feb" Y="7"/&gt;  
+                        <ej:Points X="Jan" Y="3"/>  
 
-                        &lt;ej:Points X="Mar" Y="5.5"/&gt;  
+                        <ej:Points X="Feb" Y="7"/>  
 
-                        &lt;ej:Points X="Apr" Y="5.5"/&gt;
+                        <ej:Points X="Mar" Y="5.5"/>  
 
-                        &lt;ej:Points X="May" Y="3.5"/&gt; 
+                        <ej:Points X="Apr" Y="5.5"/>
 
-                        &lt;ej:Points X="Jun" Y="13.5"  /&gt;  
+                        <ej:Points X="May" Y="3.5"/> 
 
-                        &lt;ej:Points X="Jul" Y="16"  /&gt;  
+                        <ej:Points X="Jun" Y="13.5"  />  
 
-                    &lt;/Points&gt;
+                        <ej:Points X="Jul" Y="16"  />  
 
-             &lt;/ej:Series&gt;
+                    </Points>
 
-     &lt;/Series&gt;
+             </ej:Series>
 
- &lt;/ej:Chart&gt;
+     </Series>
+
+ </ej:Chart>
 
 
 {% endhighlight %}
@@ -1141,50 +1140,50 @@ A Pie Chart renders y values as slices in a pie. The slices are rendered in prop
 
 
 ![](Chart-Types_images/Chart-Types_img17.png) 
-{:.image }
+
 {% highlight html %}
 
-[ASP.NET] 
-
-&lt;ej:Chart ID="Chart1" runat="server"&gt;
-
-   &lt;Series&gt;
-
-         &lt;ej:Series Type="Pie" LabelPosition="Outside" ExplodeIndex="2" Explode="true"&gt; 
-
-          &lt;Marker&gt;
-
-                 &lt;DataLabel Visible="true" ConnectorType="Line"&gt;&lt;/DataLabel&gt;
-
-          &lt;/Marker&gt;
 
 
+<ej:Chart ID="Chart1" runat="server">
 
-              &lt;Points &gt;                         
+   <Series>
 
-                        &lt;ej:Points X="Labour" Y="28" Text="Labour 28%"/&gt;  
+         <ej:Series Type="Pie" LabelPosition="Outside" ExplodeIndex="2" Explode="true"> 
 
-                        &lt;ej:Points X="Legal" Y="10" Text="Legal, 10%"/&gt;  
+          <Marker>
 
-                        &lt;ej:Points X="Production" Y="20" Text="Production, 20%"/&gt;  
+                 <DataLabel Visible="true" ConnectorType="Line"></DataLabel>
 
-                        &lt;ej:Points X="License" Y="15" Text="License, 15%"/&gt;
-
-                        &lt;ej:Points X="Facilities" Y="23" Text="Facilites, 23%"/&gt; 
-
-                        &lt;ej:Points X="Taxes" Y="17" Text="Taxes, 17%"  /&gt;  
-
-                        &lt;ej:Points X="Insurance" Y="12" Text="Insurance, 12%" /&gt;  
-
-                    &lt;/Points&gt;
-
-             &lt;/ej:Series&gt;
+          </Marker>
 
 
 
-     &lt;/Series&gt;
+              <Points >                         
 
- &lt;/ej:Chart&gt;
+                        <ej:Points X="Labour" Y="28" Text="Labour 28%"/>  
+
+                        <ej:Points X="Legal" Y="10" Text="Legal, 10%"/>  
+
+                        <ej:Points X="Production" Y="20" Text="Production, 20%"/>  
+
+                        <ej:Points X="License" Y="15" Text="License, 15%"/>
+
+                        <ej:Points X="Facilities" Y="23" Text="Facilites, 23%"/> 
+
+                        <ej:Points X="Taxes" Y="17" Text="Taxes, 17%"  />  
+
+                        <ej:Points X="Insurance" Y="12" Text="Insurance, 12%" />  
+
+                    </Points>
+
+             </ej:Series>
+
+
+
+     </Series>
+
+ </ej:Chart>
 
 {% endhighlight %}
 
@@ -1195,48 +1194,48 @@ Doughnut Charts are pie Charts with a hole, whose value is specified as the doug
 
 
 ![](Chart-Types_images/Chart-Types_img18.png) 
-{:.image }
+
 
 {% highlight html %}
-[ASP.NET] 
+ 
 
-&lt;ej:Chart ID="Chart1" runat="server"&gt;
+<ej:Chart ID="Chart1" runat="server">
 
-   &lt;Series&gt; 
+   <Series> 
 
      <ej:Series Type="Doughnut" Name="NewYork" DoughnutCoefficient="0.4"  LabelPosition="Outside"  
 
               ExplodeIndex="2" Explode="true">
 
-          &lt;Marker&gt;
+          <Marker>
 
-                 &lt;DataLabel Visible="true" ConnectorType="Line"&gt;&lt;/DataLabel&gt;
+                 <DataLabel Visible="true" ConnectorType="Line"></DataLabel>
 
-          &lt;/Marker&gt;
+          </Marker>
 
-         &lt;Points &gt;                         
+         <Points >                         
 
-                        &lt;ej:Points X="Labour" Y="28" Text="Labour 28%"/&gt;  
+                        <ej:Points X="Labour" Y="28" Text="Labour 28%"/>  
 
-                        &lt;ej:Points X="Legal" Y="10" Text="Legal, 10%"/&gt;  
+                        <ej:Points X="Legal" Y="10" Text="Legal, 10%"/>  
 
-                        &lt;ej:Points X="Production" Y="20" Text="Production, 20%"/&gt;  
+                        <ej:Points X="Production" Y="20" Text="Production, 20%"/>  
 
-                        &lt;ej:Points X="License" Y="15" Text="License, 15%"/&gt;
+                        <ej:Points X="License" Y="15" Text="License, 15%"/>
 
-                        &lt;ej:Points X="Facilities" Y="23" Text="Facilites, 23%"/&gt; 
+                        <ej:Points X="Facilities" Y="23" Text="Facilites, 23%"/> 
 
-                        &lt;ej:Points X="Taxes" Y="17" Text="Taxes, 17%"  /&gt;  
+                        <ej:Points X="Taxes" Y="17" Text="Taxes, 17%"  />  
 
-                        &lt;ej:Points X="Insurance" Y="12" Text="Insurance, 12%" /&gt;  
+                        <ej:Points X="Insurance" Y="12" Text="Insurance, 12%" />  
 
-               &lt;/Points&gt;
+               </Points>
 
-             &lt;/ej:Series&gt;              
+             </ej:Series>              
 
-     &lt;/Series&gt;
+     </Series>
 
- &lt;/ej:Chart&gt;
+ </ej:Chart>
 
 {% endhighlight %}
 
@@ -1250,52 +1249,52 @@ Essential Chart allows you to create semi pie and doughnut chart using StartAngl
 
 
 {% highlight html %}
-[ASP.NET]
-
-&lt;ej:Chart ID="Chart1" runat="server"&gt;
-
-   &lt;Series&gt;
-
-         &lt;ej:Series Type="Doughnut" LabelPosition="Outside" Name="Agricultural Land" StartAngle="-90" EndAngle="90" &gt; 
-
-          &lt;Border Color="Black" Width="1"/&gt;
 
 
+<ej:Chart ID="Chart1" runat="server">
 
-              &lt;Points &gt;                         
+   <Series>
 
-                  &lt;ej:Points X="Australia" Y="53.3" Text="Australia 53.3"/&gt;  
+         <ej:Series Type="Doughnut" LabelPosition="Outside" Name="Agricultural Land" StartAngle="-90" EndAngle="90" > 
 
-                  &lt;ej:Points X="China" Y="55.7" Text="China 55.7"/&gt;  
-
-                  &lt;ej:Points X="India" Y="60.5" Text="India 60.5"/&gt;  
-
-                  &lt;ej:Points X="Japan" Y="12.5" Text="Japan 12.5"/&gt;
-
-                  &lt;ej:Points X="South Africa" Y="79.4" Text="South Africa 79.4"/&gt; 
-
-                  &lt;ej:Points X="United Kingdom" Y="70.9" Text="United Kingdom 70.9"/&gt;  
-
-                  &lt;ej:Points X="United States" Y="45.0" Text="United States 45.0" /&gt;  
-
-              &lt;/Points&gt;
-
-             &lt;/ej:Series&gt;
+          <Border Color="Black" Width="1"/>
 
 
 
-     &lt;/Series&gt;
+              <Points >                         
 
- &lt;/ej:Chart&gt;
+                  <ej:Points X="Australia" Y="53.3" Text="Australia 53.3"/>  
+
+                  <ej:Points X="China" Y="55.7" Text="China 55.7"/>  
+
+                  <ej:Points X="India" Y="60.5" Text="India 60.5"/>  
+
+                  <ej:Points X="Japan" Y="12.5" Text="Japan 12.5"/>
+
+                  <ej:Points X="South Africa" Y="79.4" Text="South Africa 79.4"/> 
+
+                  <ej:Points X="United Kingdom" Y="70.9" Text="United Kingdom 70.9"/>  
+
+                  <ej:Points X="United States" Y="45.0" Text="United States 45.0" />  
+
+              </Points>
+
+             </ej:Series>
+
+
+
+     </Series>
+
+ </ej:Chart>
 
 
 {% endhighlight  %}
 ![C:/Users/balachandar/Desktop/semi doughnut.JPG](Chart-Types_images/Chart-Types_img19.jpeg)
-{:.image }
+
 
 
 ![C:/Users/balachandar/Desktop/semi pie.JPG](Chart-Types_images/Chart-Types_img20.jpeg) 
-{:.image }
+
 
 
 ## Pyramid Chart
@@ -1305,44 +1304,44 @@ The Pyramid Chart type displays the data that when totalled renders 100%. This t
 
 
 ![](Chart-Types_images/Chart-Types_img21.png)
-{:.image }
+
 
 {% highlight html %}
-[ASP.NET] 
 
-&lt;ej:Chart ID="Chart1" runat="server"&gt;
 
-   &lt;Series&gt;
+<ej:Chart ID="Chart1" runat="server">
 
-    &lt;ej:Series Type="Pyramid" Name="NewYork" LabelPosition="Outside"&gt;
+   <Series>
 
-                 &lt;Marker&gt;
+    <ej:Series Type="Pyramid" Name="NewYork" LabelPosition="Outside">
 
-                     &lt;DataLabel Visible="true" Shape="Rectangle" ConnectorType="Line"&gt;&lt;/DataLabel&gt;
+                 <Marker>
 
-                 &lt;/Marker&gt;
+                     <DataLabel Visible="true" Shape="Rectangle" ConnectorType="Line"></DataLabel>
 
-                    &lt;Points &gt;                         
+                 </Marker>
 
-                        &lt;ej:Points X="India" Y="24" Text="India 24%"/&gt;  
+                    <Points >                         
 
-                        &lt;ej:Points X="Japan" Y="25" Text="Japan 25%"/&gt;  
+                        <ej:Points X="India" Y="24" Text="India 24%"/>  
 
-                        &lt;ej:Points X="Australia" Y="20" Text="Australia 20%"/&gt;  
+                        <ej:Points X="Japan" Y="25" Text="Japan 25%"/>  
 
-                        &lt;ej:Points X="USA" Y="35" Text="USA 35%"/&gt;
+                        <ej:Points X="Australia" Y="20" Text="Australia 20%"/>  
 
-                        &lt;ej:Points X="China" Y="23" Text="China 23%"/&gt; 
+                        <ej:Points X="USA" Y="35" Text="USA 35%"/>
 
-                        &lt;ej:Points X="Germany" Y="27" Text="Germany 27%"  /&gt;  
+                        <ej:Points X="China" Y="23" Text="China 23%"/> 
 
-                        &lt;ej:Points X="France" Y="22" Text="France 22%" /&gt;  
+                        <ej:Points X="Germany" Y="27" Text="Germany 27%"  />  
 
-                    &lt;/Points&gt;
+                        <ej:Points X="France" Y="22" Text="France 22%" />  
 
-             &lt;/ej:Series&gt;
+                    </Points>
 
- &lt;/ej:Chart&gt;
+             </ej:Series>
+
+ </ej:Chart>
 
 {% endhighlight  %}
 
@@ -1351,44 +1350,43 @@ The Pyramid Chart type displays the data that when totalled renders 100%. This t
 The Funnel chart is a single series chart representing the data as portions of 100%, and this chart does not use any axes. Funnel charts are often used to represent stages in a sales process and expresses the amount of potential revenue for each stage. This type of chart can also be useful in identifying potential problem area in an organization’s sales process. You can customize the funnel width and height using FunnelWidth and FunnelHeight properties.
 
 ![](Chart-Types_images/Chart-Types_img22.png) 
-{:.image }
+
 
 
 
 {% highlight html %}
-[ASP.NET]
 
-&lt;ej:Chart ID="Chart1" runat="server"&gt;
+<ej:Chart ID="Chart1" runat="server">
 
-   &lt;Series&gt;
+   <Series>
 
-    &lt;ej:Series Type="Funnel" FunnelWidth: "32.7%" FunnelHeight: "11.2%" Name="Website" LabelPosition="Outside"&gt;
+    <ej:Series Type="Funnel" FunnelWidth: "32.7%" FunnelHeight: "11.2%" Name="Website" LabelPosition="Outside">
 
-                 &lt;Marker&gt;
+                 <Marker>
 
-                     &lt;DataLabel Visible="true" Shape="Rectangle" ConnectorType="Line"&gt;&lt;/DataLabel&gt;
+                     <DataLabel Visible="true" Shape="Rectangle" ConnectorType="Line"></DataLabel>
 
-                 &lt;/Marker&gt;
+                 </Marker>
 
-                    &lt;Points &gt;                        
+                    <Points >                        
 
-                        &lt;ej:Points X="Renewed" Y="18.20" Text="Renewed : 18.20%"/&gt; 
+                        <ej:Points X="Renewed" Y="18.20" Text="Renewed : 18.20%"/> 
 
-                        &lt;ej:Points X="Subscribe" Y="27.3" Text="Subscribe : 27.3%"/&gt; 
+                        <ej:Points X="Subscribe" Y="27.3" Text="Subscribe : 27.3%"/> 
 
-                        &lt;ej:Points X="Support" Y="55.9" Text="Contact to Support : 55.9%%"/&gt; 
+                        <ej:Points X="Support" Y="55.9" Text="Contact to Support : 55.9%%"/> 
 
-                        &lt;ej:Points X="Downloaded" Y="76.8" Text="Downloaded a Trail : 76.8%"/&gt;
+                        <ej:Points X="Downloaded" Y="76.8" Text="Downloaded a Trail : 76.8%"/>
 
-                        &lt;ej:Points X="Visited" Y="100" Text=" Visited Web Site : 100%"/&gt;
-
+                        <ej:Points X="Visited" Y="100" Text=" Visited Web Site : 100%"/>
 
 
-                    &lt;/Points&gt;
 
-             &lt;/ej:Series&gt;
+                    </Points>
 
- &lt;/ej:Chart&gt;
+             </ej:Series>
+
+ </ej:Chart>
 {% endhighlight  %}
 ## Bubble Chart
 
@@ -1397,56 +1395,55 @@ Bubble Chart is an extension of the Scatter Chart (or XY-Chart) where each data 
 
 
 ![](Chart-Types_images/Chart-Types_img23.png)
-{:.image }
+
 
 
 {% highlight html %}
 
-[ASP.NET] 
 
-&lt;ej:Chart ID="Chart1" runat="server"&gt;
+<ej:Chart ID="Chart1" runat="server">
 
-   &lt;Series&gt;
+   <Series>
 
-        &lt;ej:Series Name="Pound" Type="Bubble" EnableAnimation="True" Opacity="0.7"&gt;
+        <ej:Series Name="Pound" Type="Bubble" EnableAnimation="True" Opacity="0.7">
 
-                    &lt;Points &gt;
+                    <Points >
 
-                        &lt;ej:Points Fill="#E94649" Size="1.347" Text="China" X="92.2" Y="7.8"/&gt; 
+                        <ej:Points Fill="#E94649" Size="1.347" Text="China" X="92.2" Y="7.8"/> 
 
-                        &lt;ej:Points Fill="#F6B53F" Size="1.241" Text="India" X="74" Y="6.5"/&gt;  
+                        <ej:Points Fill="#F6B53F" Size="1.241" Text="India" X="74" Y="6.5"/>  
 
-                        &lt;ej:Points Fill="#6FAAB0" Size="0.238" Text="Indonesia" X="90.4" Y="6.0"/&gt;  
+                        <ej:Points Fill="#6FAAB0" Size="0.238" Text="Indonesia" X="90.4" Y="6.0"/>  
 
-                        &lt;ej:Points Fill="#C4C24A" Size="0.312" Text="US" X="99.4" Y="2.2"/&gt;  
+                        <ej:Points Fill="#C4C24A" Size="0.312" Text="US" X="99.4" Y="2.2"/>  
 
-                        &lt;ej:Points Fill="#FB954F" Size="0.197" Text="Brazil" X="88.6" Y="1.3"/&gt;  
+                        <ej:Points Fill="#FB954F" Size="0.197" Text="Brazil" X="88.6" Y="1.3"/>  
 
-                        &lt;ej:Points Fill="#D9CEB2" Size="0.177" Text="Pakistan" X="54.9" Y="3.7"/&gt;  
+                        <ej:Points Fill="#D9CEB2" Size="0.177" Text="Pakistan" X="54.9" Y="3.7"/>  
 
-                        &lt;ej:Points Fill="#FF8D8D" Size="0.0818" Text="Germany" X="99" Y="0.7"/&gt;  
+                        <ej:Points Fill="#FF8D8D" Size="0.0818" Text="Germany" X="99" Y="0.7"/>  
 
-                        &lt;ej:Points Fill="#69D2E7" Size="0.0826" Text="Egypt" X="72" Y="2.0"/&gt;  
+                        <ej:Points Fill="#69D2E7" Size="0.0826" Text="Egypt" X="72" Y="2.0"/>  
 
-                        &lt;ej:Points Fill="#E27F2D" Size="0.143" Text="Russia" X="99.6" Y="3.4"/&gt;  
+                        <ej:Points Fill="#E27F2D" Size="0.143" Text="Russia" X="99.6" Y="3.4"/>  
 
-                        &lt;ej:Points Fill="#6A4B82" Size="0.128" Text="Japan" X="99" Y="0.2"/&gt;  
+                        <ej:Points Fill="#6A4B82" Size="0.128" Text="Japan" X="99" Y="0.2"/>  
 
-                        &lt;ej:Points Fill="#F6B53F" Size="0.115" Text="Mexico" X="86.1" Y="4.0"/&gt;  
+                        <ej:Points Fill="#F6B53F" Size="0.115" Text="Mexico" X="86.1" Y="4.0"/>  
 
-                        &lt;ej:Points Fill="#C4C24A" Size="0.096" Text="Philippines" X="92.6" Y="6.6"/&gt;  
+                        <ej:Points Fill="#C4C24A" Size="0.096" Text="Philippines" X="92.6" Y="6.6"/>  
 
-                        &lt;ej:Points Fill="#FF8D8D" Size="0.162" Text="Nigeria" X="61.3" Y="14.5"/&gt;  
+                        <ej:Points Fill="#FF8D8D" Size="0.162" Text="Nigeria" X="61.3" Y="14.5"/>  
 
-                        &lt;ej:Points Fill="#69D2E7" Size="0.151" Text="Bangladesh" X="56.8" Y="6.1"/&gt;     
+                        <ej:Points Fill="#69D2E7" Size="0.151" Text="Bangladesh" X="56.8" Y="6.1"/>     
 
-                    &lt;/Points&gt;
+                    </Points>
 
-                &lt;/ej:Series&gt;
+                </ej:Series>
 
-            &lt;/Series&gt; 
+            </Series> 
 
-  &lt;/ej:Chart&gt;
+  </ej:Chart>
 
 {% endhighlight %}
 
@@ -1458,40 +1455,40 @@ The following code example is used to create a simple scatter series.
 
 
 {% highlight html %}
-[ASP.NET] 
-
-&lt;ej:Chart ID="Chart1" runat="server"&gt;
-
-    &lt;Series&gt; 
-
-             &lt;ej:Series Type="Scatter"&gt;              
 
 
+<ej:Chart ID="Chart1" runat="server">
 
-                    &lt;Points &gt;                         
+    <Series> 
 
-                      &lt;ej:Points X="10" Y="126.45" /&gt;  
+             <ej:Series Type="Scatter">              
 
-                        &lt;ej:Points X="11" Y="150.99" /&gt;  
 
-                        &lt;ej:Points X="12" Y="40" /&gt;  
 
-                        &lt;ej:Points X="13" Y="160.23" /&gt;
+                    <Points >                         
 
-                        &lt;ej:Points X="15" Y="200.89" /&gt;                        
+                      <ej:Points X="10" Y="126.45" />  
 
-                    &lt;/Points&gt;
+                        <ej:Points X="11" Y="150.99" />  
 
-             &lt;/ej:Series&gt;                
+                        <ej:Points X="12" Y="40" />  
 
-     &lt;/Series&gt;
+                        <ej:Points X="13" Y="160.23" />
 
-  &lt;/ej:Chart&gt;
+                        <ej:Points X="15" Y="200.89" />                        
+
+                    </Points>
+
+             </ej:Series>                
+
+     </Series>
+
+  </ej:Chart>
 
 
 {% endhighlight  %}
 ![](Chart-Types_images/Chart-Types_img24.png) 
-{:.image }
+
 
 
 ## HiLoOpenCloseSeries 
@@ -1504,9 +1501,9 @@ _Table2: Property Table_
 
 <table>
 <tr>
-<td>
-API</td><td>
-Description</td></tr>
+<th>
+API</th><th>
+Description</th></tr>
 <tr>
 <td>
 X</td><td>
@@ -1531,18 +1528,18 @@ Represents the close values</td></tr>
 
 
 ![](Chart-Types_images/Chart-Types_img25.png)
-{:.image }
 
 
-BullFillColor
+
+### BullFillColor
 
 BullFillColor is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval.
 
-BearFillColor
+### BearFillColor
 
 BearFillColor is used to specify a fill color for the segments that indicate a decrease in stock price in the measured time interval.
 
-DrawMode
+### DrawMode
 
 DrawMode is used to specify the open and close draw mode to hiloopenclose series.
 
@@ -1554,22 +1551,21 @@ DrawMode is used to specify the open and close draw mode to hiloopenclose series
 
 {% highlight html %}
 
-[ASP.NET] 
 
-&lt;ej:Chart ID="Chart1" runat="server"&gt;   
+<ej:Chart ID="Chart1" runat="server">   
 
-         &lt;Series&gt;
+         <Series>
 
-             &lt;ej:Series EnableAnimation="True" Name="Candle" Type="HiloOpenClose" DrawMode="Both"  XName="Xvalue" High="YValue1" Low="YValue2" Open="YValue3" Close="YValue4"&gt;
+             <ej:Series EnableAnimation="True" Name="Candle" Type="HiloOpenClose" DrawMode="Both"  XName="Xvalue" High="YValue1" Low="YValue2" Open="YValue3" Close="YValue4">
 
-         &lt;/ej:Series&gt;
+         </ej:Series>
 
-            &lt;/Series&gt;
+            </Series>
 
-        &lt;/ej:Chart&gt;
+        </ej:Chart>
 {% endhighlight %}
 {% highlight c# %}
-[CS]
+
 
 List<HiloOpenCloseChartData> data = new List<HiloOpenCloseChartData>();
 
@@ -1711,9 +1707,9 @@ _Table3: Property Table_
 
 <table>
 <tr>
-<td>
-API</td><td>
-Description</td></tr>
+<th>
+API</th><th>
+Description</th></tr>
 <tr>
 <td>
 X</td><td>
@@ -1738,38 +1734,38 @@ Represents the close values</td></tr>
 
 
 ![](Chart-Types_images/Chart-Types_img26.png)
-{:.image }
 
 
-BullFillColor
+
+### BullFillColor
 
 BullFillColor is used to specify a fill color for the segment that indicates an increase in stock price in the measured time interval.
 
-BearFillColor
+### BearFillColor
 
 BearFillColor is used to specify a fill color for the segment that indicates a decrease in stock price in the measured time interval.
 
 To create a simple Candle series use the following code example.
 {% highlight html %}
- [ASP.NET] 
+ 
 
-&lt;ej:Chart ID="Chart1" runat="server"&gt;   
+<ej:Chart ID="Chart1" runat="server">   
 
-         &lt;Series&gt;
+         <Series>
 
             <ej:Series Type="Candle" Name="Candle" XName="Xvalue" High="YValue1" Low="YValue2"  
 
               Open="YValue3" Close="YValue4">
 
-            &lt;/ej:Series&gt;
+            </ej:Series>
 
-            &lt;/Series&gt;
+            </Series>
 
-        &lt;/ej:Chart&gt;
+        </ej:Chart>
 
 {% endhighlight  %}
 {% highlight c# %}
-[CS]
+
 
 
 
@@ -1877,9 +1873,9 @@ _Table4: Property Table_
 
 <table>
 <tr>
-<td>
-API</td><td>
-Description</td></tr>
+<th>
+API</th><th>
+Description</th></tr>
 <tr>
 <td>
 X</td><td>
@@ -1896,29 +1892,29 @@ Represents the low values</td></tr>
 
 
 ![C:/Users/ApoorvahR/Desktop/3.png](Chart-Types_images/Chart-Types_img27.png) 
-{:.image }
+
 
 
 To create a simple Hilo series use the following code example. 
 {% highlight html %}
-[ASP.NET] 
-
-&lt;ej:Chart ID="Chart1" runat="server"&gt;   
-
-         &lt;Series&gt;
-
-           &lt;ej:Series Type="Hilo" XName="Xvalue" High="YValue1" Low="YValue2"&gt;
 
 
+<ej:Chart ID="Chart1" runat="server">   
 
-           &lt;/ej:Series&gt;
+         <Series>
 
-            &lt;/Series&gt;
+           <ej:Series Type="Hilo" XName="Xvalue" High="YValue1" Low="YValue2">
 
-        &lt;/ej:Chart&gt;
+
+
+           </ej:Series>
+
+            </Series>
+
+        </ej:Chart>
 {% endhighlight %}
 {% highlight c# %}
-[CS]
+
 
           List<HiloData> data = new List<HiloData>(); 
 
@@ -1997,22 +1993,22 @@ public class HiloData
 
 A Polar Chart is a circular graph on which data is displayed in terms of values and angles. The x values define the angles at which the data points are plotted. The y value defines the distance of the data points from the center of the graph, with the center of the graph usually starting at 0. You can customize the series color and borderusing Fill and Border properties in series. You can use IsClosed property in series to specify whether the series drawn is in closed form. It supports three types of rendering such as Line, Area and Column.
 
-LineType
+### LineType
 
 ![](Chart-Types_images/Chart-Types_img28.png)
-{:.image }
 
 
-Area Type
+
+### Area Type
 
 ![](Chart-Types_images/Chart-Types_img29.png) 
-{:.image }
 
 
-Column Type
+
+### Column Type
 
 ![](Chart-Types_images/Chart-Types_img30.png)
-{:.image }
+
 
 
 
@@ -2021,39 +2017,39 @@ To create a simple Polar series use the following code example.
 
 {% highlight html %}
 
-[ASP.NET] 
-
-&lt;ej:Chart ID="Chart1" runat="server"&gt;
-
-  &lt;Series&gt; 
-
-             &lt;ej:Series Type="Polar" Width="3"&gt;          
-
-                    &lt;Points &gt;                         
-
-                        &lt;ej:Points X="1991" Y="10" /&gt;  
-
-                        &lt;ej:Points X="1992" Y="3" /&gt;  
-
-                        &lt;ej:Points X="1993" Y="20" /&gt;  
-
-                        &lt;ej:Points X="1994" Y="16" /&gt;
-
-                        &lt;ej:Points X="1995" Y="10" /&gt; 
-
-                        &lt;ej:Points X="1996" Y="18" /&gt;
-
-                        &lt;ej:Points X="1997" Y="15" /&gt; 
 
 
+<ej:Chart ID="Chart1" runat="server">
 
-                    &lt;/Points&gt;
+  <Series> 
 
-             &lt;/ej:Series&gt;                
+             <ej:Series Type="Polar" Width="3">          
 
-   &lt;/Series&gt; 
+                    <Points >                         
 
- &lt;/ej:Chart&gt;
+                        <ej:Points X="1991" Y="10" />  
+
+                        <ej:Points X="1992" Y="3" />  
+
+                        <ej:Points X="1993" Y="20" />  
+
+                        <ej:Points X="1994" Y="16" />
+
+                        <ej:Points X="1995" Y="10" /> 
+
+                        <ej:Points X="1996" Y="18" />
+
+                        <ej:Points X="1997" Y="15" /> 
+
+
+
+                    </Points>
+
+             </ej:Series>                
+
+   </Series> 
+
+ </ej:Chart>
 
 {% endhighlight  %}
 
@@ -2061,59 +2057,59 @@ To create a simple Polar series use the following code example.
 
 RadarSeries is a x, y Chart of three or more quantitative variables represented on multiple axis lines originating from the same point. You can customize the series color and borderusing Fill and Border properties in series. You can use IsClosed property in series to specify whether the series drawn is in closed form. It supports three types of rendering such as Line, Area and Column.
 
-Area Type
+### Area Type
 
 ![](Chart-Types_images/Chart-Types_img31.png)
-{:.image }
 
 
-Line type
+
+### Line type
 
 ![](Chart-Types_images/Chart-Types_img32.png)
-{:.image }
 
 
-Column type
+
+### Column type
 
 ![](Chart-Types_images/Chart-Types_img33.png)
-{:.image }
+
 
 
 To create simple RadarSeries use the following code example. 
 {% highlight html %}
-[ASP.NET] 
-
-&lt;ej:Chart ID="Chart1" runat="server"&gt;
-
-      &lt;Series&gt; 
-
-             &lt;ej:Series Type="Radar" Width="3" EnableAnimation="true" DrawType="Area"&gt;        
-
-                  &lt;Points &gt;                         
-
-                        &lt;ej:Points X="1991" Y="10" /&gt;  
-
-                        &lt;ej:Points X="1992" Y="3" /&gt;  
-
-                        &lt;ej:Points X="1993" Y="20" /&gt;  
-
-                        &lt;ej:Points X="1994" Y="16" /&gt;
-
-                        &lt;ej:Points X="1995" Y="10" /&gt; 
-
-                        &lt;ej:Points X="1996" Y="18" /&gt;
-
-                        &lt;ej:Points X="1997" Y="15" /&gt; 
 
 
+<ej:Chart ID="Chart1" runat="server">
 
-                    &lt;/Points&gt;
+      <Series> 
 
-             &lt;/ej:Series&gt;                
+             <ej:Series Type="Radar" Width="3" EnableAnimation="true" DrawType="Area">        
 
-     &lt;/Series&gt;
+                  <Points >                         
 
- &lt;/ej:Chart&gt;
+                        <ej:Points X="1991" Y="10" />  
+
+                        <ej:Points X="1992" Y="3" />  
+
+                        <ej:Points X="1993" Y="20" />  
+
+                        <ej:Points X="1994" Y="16" />
+
+                        <ej:Points X="1995" Y="10" /> 
+
+                        <ej:Points X="1996" Y="18" />
+
+                        <ej:Points X="1997" Y="15" /> 
+
+
+
+                    </Points>
+
+             </ej:Series>                
+
+     </Series>
+
+ </ej:Chart>
 
 
 {% endhighlight  %}

@@ -18,7 +18,7 @@ The Gantt control provides built-in support to add, insert and update the task i
 
 
 
-Cell Editing
+## Cell Editing
 
 Update the task details through grid cell editing by setting EditMode as CellEditing.
 
@@ -47,10 +47,10 @@ The output of Gantt with CellEditing is as follows.
 
 
 ![](Editing_images/Editing_img1.png)
-{:.image }
 
 
-Normal Editing
+
+## Normal Editing
 
 Update the task details through edit dialog by setting EditMode as normal.
 
@@ -77,10 +77,10 @@ The following screenshot shows the output of normal editing.
 
 
 ![C:/Users/pongeetha/Desktop/NormalEditing.png](Editing_images/Editing_img2.png)
-{:.image }
 
 
-Taskbar Editing
+
+## Taskbar Editing
 
 Update the task details by interactions such as resizing and dragging the taskbar. The following code example shows you how to enable taskbar resizing in Gantt control.
 
@@ -102,7 +102,7 @@ Update the task details by interactions such as resizing and dragging the taskba
 
 
 
-Predecessor Editing
+## Predecessor Editing
 
 Update the predecessor details of a task using mouse interactions. The following code example shows how to enable predecessor editing.
 
@@ -132,8 +132,8 @@ Update the predecessor details of a task using mouse interactions. The following
 
 The following screen shot shows the predecessor editing in Gantt control.
 
-![C:/Users/labuser/Desktop/hello.png](Editing_images/Editing_img3.png)
-{:.image }
+![C:/Users/labuser/Desktop/hello.png](Editing_images/Editing_img3.png) 
+
 
 
 _Figure39: Predecessor Editing_

@@ -18,7 +18,7 @@ You can create a Grid with a highly customizable look and feel. You can use Gr
 
 
 ![](Getting-Started_images/Getting-Started_img1.png)
-{:.image }
+
 
 
 1. Create a Syncfusion ASP.NET Web form application.
@@ -27,7 +27,7 @@ You can create a Grid with a highly customizable look and feel. You can use Gr
 
 
 ![](Getting-Started_images/Getting-Started_img2.png)
-{:.image }
+
 
 
 3. Configure the Grid control with SQL data source using smart tag.
@@ -35,35 +35,35 @@ You can create a Grid with a highly customizable look and feel. You can use Gr
 
 
 ![](Getting-Started_images/Getting-Started_img3.png)
-{:.image }
+
 
 
 
 {% highlight html%}
-[ASPX]
 
 
 
-&lt;ej:Grid ID="FlatGrid" runat="server" DataSourceID="SqlData"&gt;
 
-&lt;/ej:Grid&gt;
+<ej:Grid ID="FlatGrid" runat="server" DataSourceID="SqlData">
+
+</ej:Grid>
 
 
 
-&lt;asp:SqlDataSource runat="server" ID="SqlData" ConnectionString="&lt;%$ ConnectionStrings:SQLConnectionString %&gt;" SelectCommand="SELECT * FROM [Orders]">&lt;/asp:SqlDataSource&gt;
+<asp:SqlDataSource runat="server" ID="SqlData" ConnectionString="<%$ ConnectionStrings:SQLConnectionString %>" SelectCommand="SELECT * FROM [Orders]"></asp:SqlDataSource>
 
 
 {% endhighlight %}
 
 
-> _Note: Create a connection string in Web.config file using SQL database._
+> Note: Create a connection string in Web.config file using SQL database.
 
 {% highlight html %}
-[Web.config]
 
 
 
-&lt;connectionStrings&gt;
+
+<connectionStrings>
 
 
 
@@ -77,7 +77,7 @@ You can create a Grid with a highly customizable look and feel. You can use Gr
 
 
 
-&lt;/connectionStrings&gt;
+</connectionStrings>
 
 
 
@@ -90,18 +90,18 @@ For more information about SQL data source configuration refer the following lin
 
 
 ![](Getting-Started_images/Getting-Started_img5.png) 
-{:.image }
+
 
 
 {% highlight html %}
 
-[ASPX]
 
 
 
-&lt;ej:Grid ID="FlatGrid" runat="server" DataSourceID="SqlData" &gt;
 
-    &lt;Columns&gt;
+<ej:Grid ID="FlatGrid" runat="server" DataSourceID="SqlData" >
+
+    <Columns>
 
         <ej:Column Field="OrderID" HeaderText="Order ID" 
 
@@ -123,9 +123,9 @@ For more information about SQL data source configuration refer the following lin
 
             TextAlign="Right" Width="80" Format="{0:C3}" /> 
 
-    &lt;/Columns&gt;
+    </Columns>
 
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 
 
@@ -136,16 +136,15 @@ The following screenshot displays a Grid with the sales data.
 
 
 ![](Getting-Started_images/Getting-Started_img6.png) 
-{:.image }
 
 
-Enable Paging
+
+### Enable Paging
 
 The Paging feature in Grid offers complete navigation support to easily switch between the pages, using the page bar available at the bottom of the Grid control. To enable paging, use AllowPaging property of Grid as follows.
 
 
 {% highlight html %}
-[ASPX]
 
 
 
@@ -153,7 +152,7 @@ The Paging feature in Grid offers complete navigation support to easily switch
 
 AllowPaging="true">
 
-    &lt;Columns&gt;
+    <Columns>
 
        <ej:Column Field="OrderID" HeaderText="Order ID" 
 
@@ -175,9 +174,9 @@ AllowPaging="true">
 
            TextAlign="Right" Width="80" Format="{0:C3}" />
 
-    &lt;/Columns&gt;
+    </Columns>
 
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 
 {% endhighlight %}
@@ -188,10 +187,10 @@ The following screenshot displays a Grid withpaging.
 
 
 ![](Getting-Started_images/Getting-Started_img7.jpeg)
-{:.image }
 
 
-Enable Filtering
+
+### Enable Filtering
 
 The Filtering feature in Grid is usedto facilitate the extraction of a subset of records that meet a certain criteria. You can apply Filters to one or more columns. This feature is used to filter particular sales data, in order to review the details.
 
@@ -199,7 +198,7 @@ To enable filtering, use the AllowFiltering property of Grid as follows.
 
 {% highlight html %}
 
-[ASPX]
+
 
 
 
@@ -207,7 +206,7 @@ To enable filtering, use the AllowFiltering property of Grid as follows.
 
          AllowPaging="true" AllowFiltering="true">
 
-    &lt;Columns&gt;
+    <Columns>
 
         <ej:Column Field="OrderID" HeaderText="Order ID" 
 
@@ -229,11 +228,11 @@ To enable filtering, use the AllowFiltering property of Grid as follows.
 
             TextAlign="Right" Width="80" Format="{0:C3}" />
 
-    &lt;/Columns&gt;
+    </Columns>
 
-    &lt;FilterSettings FilterType="FilterBar" /&gt;
+    <FilterSettings FilterType="FilterBar" />
 
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 
 
@@ -245,10 +244,10 @@ The following screenshot shows Grid with filtering option.
 
 
 ![](Getting-Started_images/Getting-Started_img8.jpeg)
-{:.image }
 
 
-Enable Grouping
+
+### Enable Grouping
 
 The Grouping feature in Grid is used to consolidate the Grid data into groups. Grouping allows the categorization of records based on specified columns. You can easily group a particular column by simply dragging the column to the upper portion of the Grid. The Grid data is automatically grouped when you drop a particular column.  In this example, the Grouping feature is used to analyze the shipment details of products.
 
@@ -257,12 +256,12 @@ To enable grouping, use the AllowGrouping property of Grid as follows.
 
 
 ![](Getting-Started_images/Getting-Started_img9.png) 
-{:.image }
+
 
 
 {% highlight html %}
 
-[ASPX]
+
 
 
 
@@ -272,7 +271,7 @@ To enable grouping, use the AllowGrouping property of Grid as follows.
 
 AllowGrouping="true">
 
-    &lt;Columns&gt;
+    <Columns>
 
         <ej:Column Field="OrderID" HeaderText="Order ID" 
 
@@ -294,13 +293,13 @@ AllowGrouping="true">
 
             TextAlign="Right" Width="80" Format="{0:C3}" />
 
-    &lt;/Columns&gt;
+    </Columns>
 
-    &lt;FilterSettings FilterType="FilterBar" /&gt;
+    <FilterSettings FilterType="FilterBar" />
 
-&lt;GroupSettings GroupedColumns="ShipName" /&gt;
+<GroupSettings GroupedColumns="ShipName" />
 
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 
 
@@ -312,10 +311,10 @@ The following screenshot shows the analysis of shipment details by grouping Ship
 
 
 ![](Getting-Started_images/Getting-Started_img10.png)
-{:.image }
 
 
-Enable Group Summary
+
+### Enable Group Summary
 
 The Show Summary property allows you to summarize the grid data into groups. Grouping allows the categorization of records based on specified columns. Group Summary summarizes the data present in the group. In the following example, Group Summary is used to summarize freight data of grouped ShipName category.
 
@@ -324,18 +323,18 @@ The following code example shows how you can enable ShowSummary.
 
 
 ![](Getting-Started_images/Getting-Started_img11.png)
-{:.image }
+
 
 {% highlight html %}
 
 
-[ASPX]
+
 
 <ej:Grid ID="FlatGrid" runat="server" DataSourceID="SqlData"
 
          AllowPaging="true" AllowFiltering="true" AllowGrouping="true"         ShowSummary="true">
 
-    &lt;Columns&gt;
+    <Columns>
 
         <ej:Column Field="OrderID" HeaderText="Order ID" 
 
@@ -357,17 +356,17 @@ The following code example shows how you can enable ShowSummary.
 
             TextAlign="Right" Width="80" Format="{0:C3}" />
 
-    &lt;/Columns&gt;
+    </Columns>
 
-    &lt;FilterSettings FilterType="FilterBar" /&gt;
+    <FilterSettings FilterType="FilterBar" />
 
-    &lt;GroupSettings GroupedColumns="ShipName" /&gt;
+    <GroupSettings GroupedColumns="ShipName" />
 
-    &lt;SummaryRows&gt;
+    <SummaryRows>
 
-        &lt;ej:SummaryRow ShowTotalSummary="false"&gt;
+        <ej:SummaryRow ShowTotalSummary="false">
 
-            &lt;SummaryColumn&gt;
+            <SummaryColumn>
 
                 <ej:SummaryColumn SummaryType="Sum" 
 
@@ -375,13 +374,13 @@ The following code example shows how you can enable ShowSummary.
 
                        Prefix="Sum = " Format="{0:C3}" />
 
-            &lt;/SummaryColumn&gt;
+            </SummaryColumn>
 
-        &lt;/ej:SummaryRow&gt;
+        </ej:SummaryRow>
 
-    &lt;/SummaryRows&gt;
+    </SummaryRows>
 
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 
 {% endhighlight %}
@@ -390,6 +389,6 @@ The following code example shows how you can enable ShowSummary.
 The following screenshot shows the group summary.
 
 ![](Getting-Started_images/Getting-Started_img12.png) 
-{:.image }
+
 
 

@@ -11,7 +11,7 @@ documentation: ug
 
 By using the cascade option, you can create behaviour of cascade between DropDown list controls. For this, you need to create database with a single field as common between two DropDown data fields and then mention that column id in field. With this, you need to set second DropDown id in the CascadeTo property in a first one. 
 
-> _Note: In case the second DropDown is disabled, until the first one is selected, you need to set enable property to false in a second DropDown that enables automatically once the value is selected in a first one._ 
+> Note: In case the second DropDown is disabled, until the first one is selected, you need to set enable property to false in a second DropDown that enables automatically once the value is selected in a first one. 
 
 
 The following step explains the behaviour of cascade DropDown. 
@@ -173,14 +173,14 @@ protected void Page_Load(object sender, EventArgs e)
 Output of the above step.
 
 ![](Cascading-Support_images/Cascading-Support_img2.png)
-{:.image }
+
 
 
 ## Multiple Cascading support
 
 By using multi cascade option, you can create a behavior of cascade between the DropDownList controls. To achieve this, map the common field from table to “Fields” property of all the DropDownLists. Also, specify the ID of the cascading DropDownList in “CascadeTo” property of the parent DropDownList. 
 
-> _Note: In case, when you want to show the cascading DropDowns in disabled state initially, then set the value of enable property as false in each cascading DropDowns. It is then enabled automatically once a value is selected in parent (first) DropDown list._
+> Note: In case, when you want to show the cascading DropDowns in disabled state initially, then set the value of enable property as false in each cascading DropDowns. It is then enabled automatically once a value is selected in parent (first) DropDown list.
 
 The following step explains the behavior of multiple cascade DropDown.
 
@@ -385,6 +385,6 @@ protected void Page_Load(object sender, EventArgs e)
 The following screenshot displays the output of the above code example.
 
 ![](Cascading-Support_images/Cascading-Support_img4.png)
-{:.image }
+
 
 

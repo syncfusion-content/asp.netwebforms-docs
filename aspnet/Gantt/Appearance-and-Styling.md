@@ -46,7 +46,7 @@ The following screenshot shows the customized format schedule header in Gantt co
 
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
-{:.image }
+
 
 
 ## Taskbar Customization
@@ -113,7 +113,7 @@ The following screenshot shows the customized taskbar in Gantt control.
 
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
-{:.image }
+
 
 
 ## Themes
@@ -178,7 +178,7 @@ You can apply the theme (Gradient lime) to the Gantt control by using the style 
 
 The following screenshot shows the Gantt control with Gradient-lime theme.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
-{:.image }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
+
 
 

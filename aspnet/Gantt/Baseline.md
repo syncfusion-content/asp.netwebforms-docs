@@ -40,6 +40,6 @@ The following screenshot shows the baseline in Gantt control.
 
 
 ![](Baseline_images/Baseline_img1.png)
-{:.image }
+
 
 

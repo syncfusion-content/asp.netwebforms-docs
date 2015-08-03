@@ -17,30 +17,26 @@ Grid data source can be set List collection and local datasource. It has full su
 
 {% highlight html %}
 
-[ASP]
 
 
+<ej:Grid ID="Grid" runat="server">
 
-[aspx]
+    <Columns>
 
-&lt;ej:Grid ID="Grid" runat="server"&gt;
+        <ej:Column Field="FirstName" HeaderText="First Name" />
 
-    &lt;Columns&gt;
+        <ej:Column Field="LastName" HeaderText="Last Name" />
 
-        &lt;ej:Column Field="FirstName" HeaderText="First Name" /&gt;
+        <ej:Column Field="Email" HeaderText="Email" />
 
-        &lt;ej:Column Field="LastName" HeaderText="Last Name" /&gt;
+    </Columns>
 
-        &lt;ej:Column Field="Email" HeaderText="Email" /&gt;
-
-    &lt;/Columns&gt;
-
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 {% endhighlight %}
 {% highlight c# %}
 
-[cs]
+
 
 public partial class _Default : System.Web.UI.Page
 
@@ -119,7 +115,7 @@ Result of the above code example.
 
 
 ![](Data-Binding_images/Data-Binding_img1.png)
-{:.image }
+
 
 
 ## Remote data
@@ -130,29 +126,25 @@ oData is standardized protocol for creating and consuming data. You can retrieve
 
 
 {% highlight html %}
-[ASP]
 
 
+<ej:Grid ID="Grid" runat="server">
 
-[aspx]
+<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Products" />
 
-&lt;ej:Grid ID="Grid" runat="server"&gt;
+    <Columns>
 
-&lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Products" /&gt;
+        <ej:Column Field="ProductID" HeaderText="Product ID" />
 
-    &lt;Columns&gt;
+        <ej:Column Field="ProductName" HeaderText="Product Name" />
 
-        &lt;ej:Column Field="ProductID" HeaderText="Product ID" /&gt;
+        <ej:Column Field="SupplierID" HeaderText="Supplier ID" />
 
-        &lt;ej:Column Field="ProductName" HeaderText="Product Name" /&gt;
+        <ej:Column Field="UnitPrice" HeaderText="Unit Price" />
 
-        &lt;ej:Column Field="SupplierID" HeaderText="Supplier ID" /&gt;
+    </Columns>
 
-        &lt;ej:Column Field="UnitPrice" HeaderText="Unit Price" /&gt;
-
-    &lt;/Columns&gt;
-
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 
 {% endhighlight %}
@@ -163,12 +155,12 @@ The following output is the result of the above code example.
 
 
 ![](Data-Binding_images/Data-Binding_img2.png) 
-{:.image }
 
 
 
 
-> _Note: For information about DataManager with Grid check DataAdaptors concept._
+
+> Note: For information about DataManager with Grid check DataAdaptors concept.
 
 ### Load at once
 
@@ -178,27 +170,27 @@ Through this load at once technique, you can load all remote data from the serve
 
 {% highlight html %}
 
-[ASP]
 
 
 
-&lt;ej:Grid ID="Grid" runat="server" AllowPaging="True"&gt;
 
-    &lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Products" Offline="True" /&gt;
+<ej:Grid ID="Grid" runat="server" AllowPaging="True">
 
-    &lt;Columns&gt;
+    <DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Products" Offline="True" />
 
-        &lt;ej:Column Field="ProductID" HeaderText="Product ID" TextAlign="Right" /&gt;
+    <Columns>
 
-        &lt;ej:Column Field="ProductName" HeaderText="Product Name" /&gt;
+        <ej:Column Field="ProductID" HeaderText="Product ID" TextAlign="Right" />
 
-        &lt;ej:Column Field="SupplierID" HeaderText="Supplier ID" TextAlign="Right" /&gt;
+        <ej:Column Field="ProductName" HeaderText="Product Name" />
 
-        &lt;ej:Column Field="UnitPrice" HeaderText="Unit Price" TextAlign="Right" /&gt;
+        <ej:Column Field="SupplierID" HeaderText="Supplier ID" TextAlign="Right" />
 
-    &lt;/Columns&gt;
+        <ej:Column Field="UnitPrice" HeaderText="Unit Price" TextAlign="Right" />
 
-&lt;/ej:Grid&gt;
+    </Columns>
+
+</ej:Grid>
 
 
 {% endhighlight %}
@@ -209,7 +201,7 @@ The following output is the result of the above code example.
 
 
 ![](Data-Binding_images/Data-Binding_img4.png)
-{:.image }
+
 
 
 ### Load on demand
@@ -222,29 +214,29 @@ Load on demand is a powerful technique that is used to reduce bandwidth size of 
 
 
 
-[ASP]
 
 
 
-[aspx]
 
-&lt;ej:Grid ID="Grid1" runat="server" AllowPaging="True"&gt;
 
-&lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Products" /&gt;
 
-    &lt;Columns&gt;
+<ej:Grid ID="Grid1" runat="server" AllowPaging="True">
 
-        &lt;ej:Column Field="ProductID" HeaderText="Product ID" TextAlign="Right" /&gt;
+<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Products" />
 
-        &lt;ej:Column Field="ProductName" HeaderText="Product Name" /&gt;
+    <Columns>
 
-        &lt;ej:Column Field="SupplierID" HeaderText="Supplier ID" TextAlign="Right" /&gt;
+        <ej:Column Field="ProductID" HeaderText="Product ID" TextAlign="Right" />
 
-        &lt;ej:Column Field="UnitPrice" HeaderText="Unit Price" TextAlign="Right" /&gt;
+        <ej:Column Field="ProductName" HeaderText="Product Name" />
 
-    &lt;/Columns&gt;
+        <ej:Column Field="SupplierID" HeaderText="Supplier ID" TextAlign="Right" />
 
-&lt;/ej:Grid&gt;
+        <ej:Column Field="UnitPrice" HeaderText="Unit Price" TextAlign="Right" />
+
+    </Columns>
+
+</ej:Grid>
 
 
 
@@ -255,7 +247,7 @@ The following screenshot is the result of the above code example.
 
 
 ![](Data-Binding_images/Data-Binding_img5.png)
-{:.image }
+
 
 
 If you have developer tools, you can capture network transfer to check Grid consumed data. The following screenshot shows demanded data being loaded in Grid.
@@ -263,7 +255,7 @@ If you have developer tools, you can capture network transfer to check Grid cons
 
 
 ![](Data-Binding_images/Data-Binding_img6.png)
-{:.image }
+
 
 
 ### Cross domain
@@ -276,31 +268,25 @@ Grid can use cross domain data service with the help of DataManager. The given c
 
 {% highlight html %}
 
-[ASP]
-
-
-
-[aspx]
-
-&lt;ej:Grid ID="Grid" runat="server" AllowPaging="True"&gt;
+<ej:Grid ID="Grid" runat="server" AllowPaging="True">
 
     <DataManager URL="http://mvc.syncfusion.com/UGService/api/Orders/" CrossDomain="True"
 
-        Offline="True">&lt;/DataManager&gt;
+        Offline="True"></DataManager>
 
-    &lt;Columns&gt;
+    <Columns>
 
-        &lt;ej:Column Field="OrderID" HeaderText=" OrderID" TextAlign="Right" /&gt;
+        <ej:Column Field="OrderID" HeaderText=" OrderID" TextAlign="Right" />
 
-        &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" /&gt;
+        <ej:Column Field="CustomerID" HeaderText="Customer ID" />
 
-        &lt;ej:Column Field="ShipName" HeaderText="Ship Name" /&gt;
+        <ej:Column Field="ShipName" HeaderText="Ship Name" />
 
-        &lt;ej:Column Field="ShipCity" HeaderText="Ship City" /&gt;
+        <ej:Column Field="ShipCity" HeaderText="Ship City" />
 
-    &lt;/Columns&gt;
+    </Columns>
 
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 
 
@@ -311,7 +297,7 @@ The following screenshot is the result of the above code example.
 
 
 ![](Data-Binding_images/Data-Binding_img7.png)
-{:.image }
+
 
 
 ### HTTP additional parameters
@@ -324,29 +310,24 @@ In this section, you can learn how to customize or add an extra parameter for HT
 {% highlight html %}
 
 
-[ASP]
 
+<ej:Grid ID="Grid" runat="server" AllowPaging="True" Query="new ej.Query().addParams('$filter', 'ProductID gt 50')">
 
+    <DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Products" />
 
-[aspx]
+    <Columns>
 
-&lt;ej:Grid ID="Grid" runat="server" AllowPaging="True" Query="new ej.Query().addParams('$filter', 'ProductID gt 50')"&gt;
+        <ej:Column Field="ProductID" HeaderText="Product ID" TextAlign="Right" />
 
-    &lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Products" /&gt;
+        <ej:Column Field="ProductName" HeaderText="Product Name" />
 
-    &lt;Columns&gt;
+        <ej:Column Field="SupplierID" HeaderText="Supplier ID" TextAlign="Right" />
 
-        &lt;ej:Column Field="ProductID" HeaderText="Product ID" TextAlign="Right" /&gt;
+        <ej:Column Field="CategoryID" HeaderText="Category ID" TextAlign="Right" />
 
-        &lt;ej:Column Field="ProductName" HeaderText="Product Name" /&gt;
+    </Columns>
 
-        &lt;ej:Column Field="SupplierID" HeaderText="Supplier ID" TextAlign="Right" /&gt;
-
-        &lt;ej:Column Field="CategoryID" HeaderText="Category ID" TextAlign="Right" /&gt;
-
-    &lt;/Columns&gt;
-
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 
 
@@ -357,26 +338,26 @@ The following screenshot is the result of the above code example.
 
 
 ![](Data-Binding_images/Data-Binding_img8.png) 
-{:.image }
+
 
 
 ### Supported DataTypes
 
 Grid supports various DataTypes such as string, number, datetime and Boolean. By default, Grid reads DataTypes from Grid data source. Using these data types, Grid uses it at to edit, add, save, filter and other such operations. You can also customize these DataTypes through column property type. It can override default data type reading.
 {% highlight html %}
-&lt;ej:Grid ID="FlatGrid" runat="server"&gt;
+<ej:Grid ID="FlatGrid" runat="server">
 
-       &lt;Columns&gt;
+       <Columns>
 
-             &lt;ej:Column Field="FirstName" Type="string" /&gt;
+             <ej:Column Field="FirstName" Type="string" />
 
-             &lt;ej:Column Field="LastNmae" Type="string" /&gt;
+             <ej:Column Field="LastNmae" Type="string" />
 
-             &lt;ej:Column Field="Email" /&gt;
+             <ej:Column Field="Email" />
 
-       &lt;/Columns&gt;
+       </Columns>
 
-  &lt;/ej:Grid&gt;
+  </ej:Grid>
 
 
 {% endhighlight %}
@@ -392,65 +373,65 @@ Grid provides support to form Grid from HTML table. It is flexible to convert fr
 
 {% highlight html %}
 
-[ASP]
 
 
 
-&lt;script id="Table1" type="text/template"&gt;
 
-        &lt;table&gt;
+<script id="Table1" type="text/template">
 
-            &lt;colgroup&gt;
+        <table>
 
-                &lt;col /&gt;
+            <colgroup>
 
-                &lt;col /&gt;
+                <col />
 
-                &lt;col /&gt;
+                <col />
 
-                &lt;col /&gt;
+                <col />
 
-                &lt;col /&gt;
+                <col />
 
-                &lt;col /&gt;
+                <col />
 
-            &lt;/colgroup&gt;
+                <col />
 
-            &lt;thead&gt;
+            </colgroup>
 
-                &lt;tr&gt;
+            <thead>
+
+                <tr>
 
                     <th>Laptop
 
-                    &lt;/th&gt;
+                    </th>
 
                     <th>Model
 
-                    &lt;/th&gt;
+                    </th>
 
                     <th>Price
 
-                    &lt;/th&gt;
+                    </th>
 
                     <th>OS
 
-                    &lt;/th&gt;
+                    </th>
 
                     <th>RAM
 
-                    &lt;/th&gt;
+                    </th>
 
                     <th>ScreenSize
 
-                    &lt;/th&gt;
+                    </th>
 
-                &lt;/tr&gt;
+                </tr>
 
-            &lt;/thead&gt;
+            </thead>
 
-            &lt;tbody&gt;
+            <tbody>
 
-                &lt;tr&gt;
+                <tr>
 
                     <td>Dell Vostro</td>
 
@@ -464,9 +445,9 @@ Grid provides support to form Grid from HTML table. It is flexible to convert fr
 
                     <td>15.6</td>
 
-                &lt;/tr&gt;
+                </tr>
 
-                &lt;tr&gt;
+                <tr>
 
                     <td>HP Pavilion Sleekbook</td>
 
@@ -480,9 +461,9 @@ Grid provides support to form Grid from HTML table. It is flexible to convert fr
 
                     <td>14</td>
 
-                &lt;/tr&gt;
+                </tr>
 
-                &lt;tr&gt;
+                <tr>
 
                     <td>Sony Vaio</td>
 
@@ -496,9 +477,9 @@ Grid provides support to form Grid from HTML table. It is flexible to convert fr
 
                     <td>14</td>
 
-                &lt;/tr&gt;
+                </tr>
 
-                &lt;tr&gt;
+                <tr>
 
                     <td>Lenovo</td>
 
@@ -512,9 +493,9 @@ Grid provides support to form Grid from HTML table. It is flexible to convert fr
 
                     <td>11.6</td>
 
-                &lt;/tr&gt;
+                </tr>
 
-                &lt;tr&gt;
+                <tr>
 
                     <td>Toshiba</td>
 
@@ -528,37 +509,37 @@ Grid provides support to form Grid from HTML table. It is flexible to convert fr
 
                     <td>15.6</td>
 
-                &lt;/tr&gt;
+                </tr>
 
-            &lt;/tbody&gt;
+            </tbody>
 
-        &lt;/table&gt;
+        </table>
 
-&lt;/script&gt;
+</script>
 
 
 
-&lt;ej:Grid ID="Grid" runat="server"&gt;
+<ej:Grid ID="Grid" runat="server">
 
-    &lt;DataManager Table="#Table1"&gt;&lt;/DataManager&gt;
+    <DataManager Table="#Table1"></DataManager>
 
-    &lt;Columns&gt;
+    <Columns>
 
-        &lt;ej:Column Field="Laptop" HeaderText="Laptop Brands" /&gt;
+        <ej:Column Field="Laptop" HeaderText="Laptop Brands" />
 
-        &lt;ej:Column Field="Model" HeaderText="Model" /&gt;
+        <ej:Column Field="Model" HeaderText="Model" />
 
-        &lt;ej:Column Field="Price" HeaderText="Price" TextAlign="Right" Width="90" Format="{0:C}" /&gt;
+        <ej:Column Field="Price" HeaderText="Price" TextAlign="Right" Width="90" Format="{0:C}" />
 
-        &lt;ej:Column Field="OS" HeaderText="Operating System" /&gt;
+        <ej:Column Field="OS" HeaderText="Operating System" />
 
-        &lt;ej:Column Field="RAM" HeaderText="RAM" Width="120" TextAlign="Right" /&gt;
+        <ej:Column Field="RAM" HeaderText="RAM" Width="120" TextAlign="Right" />
 
-        &lt;ej:Column Field="ScreenSize" HeaderText="Screen Size" TextAlign="Right" Width="100" Format="{0:N1}inch" /&gt;
+        <ej:Column Field="ScreenSize" HeaderText="Screen Size" TextAlign="Right" Width="100" Format="{0:N1}inch" />
 
-    &lt;/Columns&gt;
+    </Columns>
 
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 
 
@@ -567,6 +548,6 @@ Grid provides support to form Grid from HTML table. It is flexible to convert fr
 The following screenshot is the result of the above code example.
 
 ![](Data-Binding_images/Data-Binding_img9.png)
-{:.image }
+
 
 

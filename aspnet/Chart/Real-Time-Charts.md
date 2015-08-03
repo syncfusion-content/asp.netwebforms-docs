@@ -13,13 +13,13 @@ Essential Chart allows you to create dynamic Charts that update at given interva
 
 {% highlight html %}
 
-[ASP.NET] 
 
-&lt;ej:Chart ID="Chart1" runat="server" OnClientLoad="onchartload"&gt;
 
-&lt;/ej:Chart&gt;
+<ej:Chart ID="Chart1" runat="server" OnClientLoad="onchartload">
 
-&lt;script&gt;
+</ej:Chart>
+
+<script>
 
 var chartobj;
 
@@ -87,7 +87,7 @@ var chartobj;
 
          }
 
-&lt;/script&gt;
+</script>
 
 
 
@@ -96,6 +96,6 @@ var chartobj;
 
 
 ![C:/Users/ApoorvahR/Desktop/2.png](Real-Time-Charts_images/Real-Time-Charts_img1.png)
-{:.image }
+
 
 

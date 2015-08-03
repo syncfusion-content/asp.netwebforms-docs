@@ -17,29 +17,26 @@ Formatting is used to convert data values to human readable formats using specif
 
 
 {% highlight html %}
-[ASP]
 
 
 
-[aspx]
+  <ej:Grid ID="FormatGrid" runat="server">
 
-  &lt;ej:Grid ID="FormatGrid" runat="server"&gt;
+      <Columns>
 
-      &lt;Columns&gt;
+            <ej:Column Field="Number" HeaderText="Number" Format="{0:n2}" TextAlign="Right" Width="110" />
 
-            &lt;ej:Column Field="Number" HeaderText="Number" Format="{0:n2}" TextAlign="Right" Width="110" /&gt;
+            <ej:Column Field="Currency" HeaderText="Currency" Format="{0:c2}" TextAlign="Right" Width="110" />
 
-            &lt;ej:Column Field="Currency" HeaderText="Currency" Format="{0:c2}" TextAlign="Right" Width="110" /&gt;
+            <ej:Column Field="Date" HeaderText="Date" Format="{0:MM/dd/yyyy}" TextAlign="Right" Width="110" />
 
-            &lt;ej:Column Field="Date" HeaderText="Date" Format="{0:MM/dd/yyyy}" TextAlign="Right" Width="110" /&gt;
+        </Columns>
 
-        &lt;/Columns&gt;
-
-    &lt;/ej:Grid&gt;
+    </ej:Grid>
 
 {% endhighlight %}
 {% highlight c# %}
-[cs]
+
 
   public partial class ColumnFormatting : System.Web.UI.Page
 
@@ -138,63 +135,59 @@ The following is the result of column formatting.
 
 
 ![](Columns_images/Columns_img1.png)
-{:.image }
+
 
 
 ## Template
 
 A Template is used to render a specific template to a particular column using Template and TemplateID property. These columns are not bound to Grid.
 {% highlight html %}
-[ASP]
+
+
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
+
+    <div>
+
+        <ej:Grid ID="EmployeesGrid" runat="server" AllowPaging="True">
+
+            <PageSettings PageSize="4"></PageSettings>
+
+            <Columns>
+
+                <ej:Column HeaderText="Employee Image" Template="True" TemplateID="#columnTemplate" TextAlign="Center" Width="110" />
+
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" IsPrimaryKey="True" TextAlign="Right" Width="100" />
+
+                <ej:Column Field="FirstName" HeaderText="First Name" Width="100" />
+
+                <ej:Column Field="LastName" HeaderText="Last Name" Width="100" />
+
+                <ej:Column Field="BirthDate" HeaderText="Birth Date" TextAlign="Right" Width="100" Format="{0:MM/dd/yyyy}" />
+
+                <ej:Column Field="Country" Width="100" HeaderText="Country" />
+
+            </Columns>
+
+        </ej:Grid>
+
+    </div>
+
+</asp:Content>
 
 
 
-[aspx]
+<asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
 
-&lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
+    <script type="text/x-jsrender" id="columnTemplate">
 
-    &lt;div&gt;
+     <img style="width: 75px; height: 70px" src="../Content/images/Employees/{{:EmployeeID}}.png" alt="{{ : EmployeeID }}" />
 
-        &lt;ej:Grid ID="EmployeesGrid" runat="server" AllowPaging="True"&gt;
+    </script>
 
-            &lt;PageSettings PageSize="4"&gt;&lt;/PageSettings&gt;
-
-            &lt;Columns&gt;
-
-                &lt;ej:Column HeaderText="Employee Image" Template="True" TemplateID="#columnTemplate" TextAlign="Center" Width="110" /&gt;
-
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" IsPrimaryKey="True" TextAlign="Right" Width="100" /&gt;
-
-                &lt;ej:Column Field="FirstName" HeaderText="First Name" Width="100" /&gt;
-
-                &lt;ej:Column Field="LastName" HeaderText="Last Name" Width="100" /&gt;
-
-                &lt;ej:Column Field="BirthDate" HeaderText="Birth Date" TextAlign="Right" Width="100" Format="{0:MM/dd/yyyy}" /&gt;
-
-                &lt;ej:Column Field="Country" Width="100" HeaderText="Country" /&gt;
-
-            &lt;/Columns&gt;
-
-        &lt;/ej:Grid&gt;
-
-    &lt;/div&gt;
-
-&lt;/asp:Content&gt;
-
-
-
-&lt;asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection"&gt;
-
-    &lt;script type="text/x-jsrender" id="columnTemplate"&gt;
-
-     &lt;img style="width: 75px; height: 70px" src="../Content/images/Employees/{{:EmployeeID}}.png" alt="{{ : EmployeeID }}" /&gt;
-
-    &lt;/script&gt;
-
-&lt;/asp:Content&gt;
+</asp:Content>
 {% endhighlight  %}
 {% highlight c# %}
-[cs]
+
 
   public partial class ColumnTemplate : System.Web.UI.Page
 
@@ -299,22 +292,18 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Columns_images/Columns_img2.png) 
-{:.image }
+
 
 
 ## Custom Attribute
 
 Custom attribute is a powerful feature of Columns. This is used to modify the styles and appearance of a particular column. Using CustomAttribute property of Columns to achieve custom attribute feature.
-{% highlight html %}
-[ASP]
+{% highlight css %}
 
 
 
- [aspx]
 
-
-
-&lt;style&gt;
+<style>
 
         .e-rowcell[employeeid = "5"] {
 
@@ -322,41 +311,41 @@ Custom attribute is a powerful feature of Columns. This is used to modify the st
 
         }	
 
-&lt;/style&gt;
+</style>
 
+{% endhighlight  %}
 
+{% highlight html %}
 
+  <ej:Grid ID="OrdersGrid" runat="server" AllowFiltering="True" AllowPaging="True">
 
+<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"></DataManager>
 
-  &lt;ej:Grid ID="OrdersGrid" runat="server" AllowFiltering="True" AllowPaging="True"&gt;
+        <Columns>
 
-&lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"&gt;&lt;/DataManager&gt;
+            <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" />
 
-        &lt;Columns&gt;
+            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" />
 
-            &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" /&gt;
+            <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110">
 
-            &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" /&gt;
+<CustomAttribute >
 
-            &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110"&gt;
+                     <ej:KeyValue Key="employeeid" Value="'{{:EmployeeID}}'" />
 
-&lt;CustomAttribute &gt;
+                </CustomAttribute>
 
-                     &lt;ej:KeyValue Key="employeeid" Value="'{{:EmployeeID}}'" /&gt;
+            </ej:Column>
 
-                &lt;/CustomAttribute&gt;
+            <ej:Column Field="OrderDate" HeaderText="Order Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" />
 
-            &lt;/ej:Column&gt;
+            <ej:Column Field="ShipCity" HeaderText="Ship Country" Width="100" />
 
-            &lt;ej:Column Field="OrderDate" HeaderText="Order Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" /&gt;
+        </Columns>
 
-            &lt;ej:Column Field="ShipCity" HeaderText="Ship Country" Width="100" /&gt;
+        <FilterSettings FilterBarMode="OnEnter" ShowFilterBarStatus="True" StatusBarWidth="300"></FilterSettings>
 
-        &lt;/Columns&gt;
-
-        &lt;FilterSettings FilterBarMode="OnEnter" ShowFilterBarStatus="True" StatusBarWidth="300"&gt;&lt;/FilterSettings&gt;
-
-    &lt;/ej:Grid&gt; 
+    </ej:Grid> 
 
 
 {% endhighlight  %}
@@ -367,46 +356,43 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Columns_images/Columns_img3.png)
-{:.image }
+
 
 
 ## Read only
 
 AllowEditing enables you to edit a column, but it prevents the fields from showing it as editable. If you want to make a column as read-only then set AllowEditing as False for that column. The following code example shows Essential Javascript column as read-only.
 {% highlight html %}
-[ASP]
 
 
 
-[aspx]
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True"&gt;
+<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"></DataManager>
 
-&lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"&gt;&lt;/DataManager&gt;
+<PageSettings PageSize="5" />
 
-&lt;PageSettings PageSize="5" /&gt;
+            <Columns>
 
-            &lt;Columns&gt;
-
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="90" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="90" />
 
                 <ej:Column Field="CustomerID" AllowEditing="false" HeaderText="Customer ID"
 
 Width="90" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />
 
-             &lt;/Columns&gt;
+             </Columns>
 
-            &lt;EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"&gt;                           &lt;/EditSettings&gt;
-
-
+            <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True">                           </EditSettings>
 
 
 
-        &lt;/ej:Grid&gt;
+
+
+        </ej:Grid>
 
 
 
@@ -419,40 +405,38 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Columns_images/Columns_img4.png) 
-{:.image }
+
 
 
 ## Controlling Grid actions
 
 In Grid, you can control Grid actions through AllowSorting, AllowGrouping, AllowFiltering. The following code example shows you how to disable a particular column. The following example has controlled grouping action in CustomerID column, filtering in EmployeeID column and sorting in Freight column.
 {% highlight html %}
-[ASP]
 
-[aspx]
 
-  &lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowFiltering="true" AllowSorting="true" AllowGrouping="true"&gt;
+  <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowFiltering="true" AllowSorting="true" AllowGrouping="true">
 
- &lt;DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"&gt;&lt;/DataManager&gt;
+ <DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"></DataManager>
 
 
 
-            &lt;PageSettings PageSize="5" /&gt;
+            <PageSettings PageSize="5" />
 
-            &lt;GroupSettings GroupedColumns="OrderID" /&gt;
+            <GroupSettings GroupedColumns="OrderID" />
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="90" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="90" />
 
-                &lt;ej:Column Field="CustomerID" AllowGrouping="false" HeaderText="Customer ID" Width="90" /&gt;
+                <ej:Column Field="CustomerID" AllowGrouping="false" HeaderText="Customer ID" Width="90" />
 
-                &lt;ej:Column Field="EmployeeID" AllowFiltering="false" HeaderText="Employee ID" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" AllowFiltering="false" HeaderText="Employee ID" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="Freight" AllowSorting="false" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" /&gt;
+                <ej:Column Field="Freight" AllowSorting="false" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
 
 
@@ -463,34 +447,28 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Columns_images/Columns_img5.png) 
-{:.image }
+
 
 
 ## Auto-generate column
 
 The columns are automatically generated from the datasource and you do not need specific column declarations. The following code example shows auto-generate column behavior with Grid.
 {% highlight html %}
-[ASP]
 
 
 
-[aspx]
+<div>
 
+        <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
 
+            <PageSettings PageSize="5" />
 
-&lt;div&gt;
+        </ej:Grid>
 
-        &lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True"&gt;
-
-            &lt;PageSettings PageSize="5" /&gt;
-
-        &lt;/ej:Grid&gt;
-
-&lt;/div&gt;
+</div>
 {% endhighlight %}
 
 {% highlight c# %}
-[cs]
 
 namespace WebSampleBrowser.Grid
 
@@ -523,42 +501,40 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Columns_images/Columns_img6.png)
-{:.image }
+
 
 
 ## Foreign key columns
 
 Foreign key is a field in relational table. It matches the specific key columns of another table. Foreign key column feature can be achived using ForeignKeyField and FoeriegnKeyValue property of Columns.
 {% highlight html %}
-[ASP]
-
-[aspx]
 
 
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" &gt;
 
-            &lt;Columns&gt;
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" >
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="90" /&gt;
+            <Columns>
+
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="90" />
 
                 <ej:Column Field="EmployeeID" HeaderText="Employee Name" ForeignKeyField="EmployeeID"
 
 ForeignKeyValue="FirstName" TextAlign="Left" Width="90" />
 
-                &lt;ej:Column Field="Freight" AllowSorting="false" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" /&gt;   
+                <ej:Column Field="Freight" AllowSorting="false" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />   
 
-                 &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="80" /&gt;
+                 <ej:Column Field="ShipCity" HeaderText="Ship City" Width="80" />
 
 
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 {% endhighlight  %}
 
 {% highlight c# %}
-[cs]
+
 
     public partial class ForeignKeyColumn : System.Web.UI.Page
 
@@ -727,42 +703,42 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Columns_images/Columns_img7.png)
-{:.image }
+
 
 
 ## Cell Merging
 
 Cell merging feature enables to merge cells based on your requirement. The following code example illustrates Cell Merging. Using AllowCellMerging propertyand MergeCellInfo event to achieve cell merging feature.
 {% highlight html %}
-[ASP.NET]
 
 
 
-    &lt;div&gt;
 
-        &lt;ej:Grid ID="OrdersGrid" runat="server" AllowScrolling="True" AllowCellMerging="True" &gt;
+    <div>
 
-&lt;ClientSideEvents MergeCellInfo ="cellmerge" /&gt;
+        <ej:Grid ID="OrdersGrid" runat="server" AllowScrolling="True" AllowCellMerging="True" >
 
-            &lt;Columns&gt;
+<ClientSideEvents MergeCellInfo ="cellmerge" />
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right" Width="90"   /&gt;
+            <Columns>
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right"  Width="100" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right" Width="90"   />
 
-&lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="110"  /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right"  Width="100" />
 
-&lt;ej:Column Field="ShipName" HeaderText="Ship Name" Width="80" /&gt;
+<ej:Column Field="ShipCity" HeaderText="Ship City" Width="110"  />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight " TextAlign="Right" Width="90"  /&gt; 
+<ej:Column Field="ShipName" HeaderText="Ship Name" Width="80" />
 
-            &lt;/Columns&gt;
+                <ej:Column Field="Freight" HeaderText="Freight " TextAlign="Right" Width="90"  /> 
 
-        &lt;/ej:Grid&gt;
+            </Columns>
 
-    &lt;/div&gt;
+        </ej:Grid>
 
-&lt;script type="text/javascript"&gt;
+    </div>
+
+<script type="text/javascript">
 
     function cellmerge(args) {
 
@@ -786,11 +762,11 @@ Cell merging feature enables to merge cells based on your requirement. The follo
 
     	}
 
-&lt;/script&gt;
+</script>
 {% endhighlight  %}
 
 {% highlight c# %}
-[ASP.NET CS]
+
 
 
 
@@ -911,7 +887,7 @@ Execute the above code to render the following output.
 
 
 ![C:/Users/ApoorvahR/Desktop/1.png](Columns_images/Columns_img8.png) 
-{:.image }
+
 
 
 _Figure 29: Cell Merging_
@@ -920,35 +896,35 @@ _Figure 29: Cell Merging_
 
 AutoWrap feature allows you to wrap cell content to next line when the content exceeds the boundary of the Column cells. Use the following code example for Auto wrap in column cells. AtutoWrap feature was enabled by setting AutoTextWrap property as true.
 {% highlight html %}
-[ASP.NET]
 
 
 
-    &lt;div&gt;
 
-        &lt;ej:Grid ID="OrdersGrid" runat="server" AllowScrolling="True" AllowTextWrap="True"&gt;
+    <div>
 
-            &lt;Columns&gt;
+        <ej:Grid ID="OrdersGrid" runat="server" AllowScrolling="True" AllowTextWrap="True">
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right" Width="90"   /&gt;
+            <Columns>
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right"  Width="100"  /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right" Width="90"   />
 
-&lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="110"  /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right"  Width="100"  />
 
-&lt;ej:Column Field="ShipName" HeaderText="Ship Name" Width="80" /&gt;
+<ej:Column Field="ShipCity" HeaderText="Ship City" Width="110"  />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight " TextAlign="Right" Width="90"  /&gt; 
+<ej:Column Field="ShipName" HeaderText="Ship Name" Width="80" />
 
-            &lt;/Columns&gt;
+                <ej:Column Field="Freight" HeaderText="Freight " TextAlign="Right" Width="90"  /> 
 
-        &lt;/ej:Grid&gt;
+            </Columns>
 
-    &lt;/div&gt;
+        </ej:Grid>
+
+    </div>
 
 {% endhighlight %}
 {% highlight c# %}
-[ASP.NET CS]
+
 
 
 
@@ -1067,7 +1043,7 @@ namespace WebSampleBrowser.Grid
 Execute the above code to render the following output.
 
 ![C:/Users/ApoorvahR/Desktop/1.png](Columns_images/Columns_img9.png)
-{:.image }
+
 
 
 ## Column Chooser
@@ -1076,42 +1052,38 @@ Column Chooser is used to view or hide particular column. To enable column choos
 {% highlight html %}
 
 
-[ASP]
-
-
-
-[ASPX]
 
 
 
 
 
-&lt;ej:Grid ID="FlatGrid" runat="server" ShowColumnChooser="true" ShowStackedHeader="true" AllowSorting="True" AllowPaging="True"&gt;
 
-            &lt;ClientSideEvents ActionComplete="ActionComplete" /&gt;
+<ej:Grid ID="FlatGrid" runat="server" ShowColumnChooser="true" ShowStackedHeader="true" AllowSorting="True" AllowPaging="True">
 
-            &lt;Columns&gt;
+            <ClientSideEvents ActionComplete="ActionComplete" />
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID"TextAlign="Right" Visible="False"  /&gt;
+            <Columns>
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID"TextAlign="Right" Visible="False"  />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" />
 
-                &lt;ej:Column Field="OrderDate" HeaderText="Order Date" TextAlign="Right" Width="80" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" />
 
-            &lt;/Columns&gt;
+                <ej:Column Field="OrderDate" HeaderText="Order Date" TextAlign="Right" Width="80" />
 
-        &lt;/ej:Grid&gt;
+            </Columns>
+
+        </ej:Grid>
 
 
 {% endhighlight %}
 {% highlight c# %}
 
 
-[CS]
+
 
 
 
@@ -1214,7 +1186,7 @@ public partial class ColumnChooser : System.Web.UI.Page
 Execute the above code to render the following output.
 
 ![](Columns_images/Columns_img10.png)
-{:.image }
+
 
 
 _Figure 31: Grid with Column chooser_
@@ -1227,33 +1199,33 @@ DisableHtmlEncode property helps you show the encoded HTML view of Grid content 
 
 The following code example shows you how to set DisableHtmlEncode:
 {% highlight html %}
-[ASPX]
 
-        &lt;ej:Grid ID="Grid" runat="server" DataSourceID="ObjectData" AllowScrolling="True"&gt;
 
-      &lt;Columns&gt;
+        <ej:Grid ID="Grid" runat="server" DataSourceID="ObjectData" AllowScrolling="True">
 
-     &lt;ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right"   /&gt;
+      <Columns>
+
+     <ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right"   />
 
      <ej:Column Field="CustomerID" HeaderText="<div>Customer ID</div>" disableHtmlEncode="True"  /> 
 
      <ej:Column Field="EmployeeID" HeaderText="<div>Employee ID</div>" disableHtmlEncode="True" TextAlign="Right"     />
 
-     &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right"   /&gt;
+     <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right"   />
 
-     &lt;ej:Column Field="ShipCountry" HeaderText="Ship Country" /&gt;
+     <ej:Column Field="ShipCountry" HeaderText="Ship Country" />
 
-     &lt;/Columns&gt;
+     </Columns>
 
-            &lt;ScrollSettings Height="300" Width="900" &gt;&lt;/ScrollSettings&gt;
+            <ScrollSettings Height="300" Width="900" ></ScrollSettings>
 
-            &lt;EditSettings AllowEditing="True” AllowAdding="True” AllowDeleting="True”  &gt;&lt;/EditSettings&gt;
+            <EditSettings AllowEditing="True” AllowAdding="True” AllowDeleting="True”  ></EditSettings>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 {% endhighlight %}
 
 {% highlight c# %}
-[CS]
+
 
 
 
@@ -1374,68 +1346,63 @@ namespace WebSampleBrowser.Grid
 The following output is displayed as a result of the above code example.
 
 ![](Columns_images/Columns_img11.png) 
-{:.image }
+
 
 
 ## Stacked Header
 
 The Stacked Header feature allows additional header rows that span across the grid columns. Columns can be grouped under such headers. You can effectively group extensive data with the help of multilevel Stacked Headers as well. Enable the Stacked Header by setting the ShowStackedHeader property to true and set the stacked header row by using the StakedHeaderRows property. The Stacked Header feature also supports all other grid features including Grouping, Sorting, Filtering, Reordering, etc. 
 {% highlight html %}
-[ASP]
 
 
 
-[ASPX]
+<ej:Grid ID=”FlatGrid” runat=”server” DataSourceID=”SqlData”  ShowStackedHeader=”true” AllowPaging=”True”>
 
+            <Columns>
 
+                <ej:Column Field=”OrderID” HeaderText=”Order ID” TextAlign=”Right” />
 
-&lt;ej:Grid ID=”FlatGrid” runat=”server” DataSourceID=”SqlData”  ShowStackedHeader=”true” AllowPaging=”True”&gt;
+                <ej:Column Field=”Freight” HeaderText=”Freight” TextAlign=”Right” />
 
-            &lt;Columns&gt;
+                <ej:Column Field=”ShipName” HeaderText=”Ship Name” Width=”110” />
 
-                &lt;ej:Column Field=”OrderID” HeaderText=”Order ID” TextAlign=”Right” /&gt;
+                <ej:Column Field=”ShipCity” HeaderText=”Ship City” Width=”110” />
 
-                &lt;ej:Column Field=”Freight” HeaderText=”Freight” TextAlign=”Right” /&gt;
+                <ej:Column Field=”ShipCountry” HeaderText=”Ship Country” Width=”110” />
 
-                &lt;ej:Column Field=”ShipName” HeaderText=”Ship Name” Width=”110” /&gt;
+            </Columns>
 
-                &lt;ej:Column Field=”ShipCity” HeaderText=”Ship City” Width=”110” /&gt;
+<StackedHeaderRows>
 
-                &lt;ej:Column Field=”ShipCountry” HeaderText=”Ship Country” Width=”110” /&gt;
+                <ej:StackedHeaderRow>
 
-            &lt;/Columns&gt;
+                    <StackedHeaderColumn>
 
-&lt;StackedHeaderRows&gt;
+                        <ej:StackedHeaderColumn Column=”OrderID,OrderDate,Freight” StackedHeaderText=”Order Details” />
 
-                &lt;ej:StackedHeaderRow&gt;
+                        <ej:StackedHeaderColumn Column=”ShipName,ShipCity,ShipCountry” StackedHeaderText=”Ship Details” />
 
-                    &lt;StackedHeaderColumn&gt;
+                    </StackedHeaderColumn>
 
-                        &lt;ej:StackedHeaderColumn Column=”OrderID,OrderDate,Freight” StackedHeaderText=”Order Details” /&gt;
+                </ej:StackedHeaderRow>
 
-                        &lt;ej:StackedHeaderColumn Column=”ShipName,ShipCity,ShipCountry” StackedHeaderText=”Ship Details” /&gt;
+</StackedHeaderRows>
 
-                    &lt;/StackedHeaderColumn&gt;
+        </ej:Grid>
 
-                &lt;/ej:StackedHeaderRow&gt;
+<asp:SqlDataSource ID=”SqlData” runat=”server” ConnectionString=”<%$ ConnectionStrings:SQLConnectionString %>”
 
-&lt;/StackedHeaderRows&gt;
-
-        &lt;/ej:Grid&gt;
-
-&lt;asp:SqlDataSource ID=”SqlData” runat=”server” ConnectionString=”&lt;%$ ConnectionStrings:SQLConnectionString %&gt;”
-
-            SelectCommand=”SELECT * FROM [Orders]”>&lt;/asp:SqlDataSource&gt;
+            SelectCommand=”SELECT * FROM [Orders]”></asp:SqlDataSource>
 
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
 ![](Columns_images/Columns_img12.png) 
-{:.image }
+
 
 
 ![](Columns_images/Columns_img13.png) 
-{:.image }
+
 
 

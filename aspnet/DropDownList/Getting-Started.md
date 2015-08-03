@@ -18,7 +18,7 @@ In this example, you can learn how to customize the DropDownList in a real-time 
 The following screenshot illustrates the functionality of DropDownList with a Cascading Feature.
 
 ![](Getting-Started_images/Getting-Started_img1.png)
-{:.image }
+
 
 
 In the above screenshot, you can select a group from the first DropDownList control. After you select the group, the corresponding countries for that group are listed in the second DropDownList widget.Then, you can select a country and press the Vote option.  
@@ -200,7 +200,7 @@ Run the code to render the following output.
 
 
 ![](Getting-Started_images/Getting-Started_img2.png)
-{:.image }
+
 
 
 ## Configure Data Source 
@@ -257,11 +257,11 @@ The following code example explains how to configure the Data Source.
 Execute the code to render the following output.
 
 ![](Getting-Started_images/Getting-Started_img3.png)
-{:.image }
+
 
 
 ![](Getting-Started_images/Getting-Started_img4.png)
-{:.image }
+
 
 
 ## Configure DropDownList with Sprite Icons
@@ -660,8 +660,8 @@ You can load the spirit image icons for the countries in a DropDownList by addin
 
 Run the above code example to render the following DropDownList with Data sources.
 
-![](Getting-Started_images/Getting-Started_img5.png) 
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)  
+
 
 
 ## Set the Cascading Option 
@@ -707,15 +707,13 @@ The following code example explains how to set the Cascading Option.
 
 
 Run this code to render the DropDownList with Cascading Option.  
+![](Getting-Started_images/Getting-Started_img6.png) 
 
-![](Getting-Started_images/Getting-Started_img6.png)
-{:.image }
 
 
 Initially, you can select the group from the popup of the first DropDownList. After you select the option, selected value is loaded. 
+![](Getting-Started_images/Getting-Started_img7.png)
 
-![](Getting-Started_images/Getting-Started_img7.png) 
-{:.image }
 
 
 
@@ -723,13 +721,13 @@ Initially, you can select the group from the popup of the first DropDownList. Af
 Based on the group selection in the first DropDownList, the Data Source in the second DropDownList is loaded and the corresponding Countries are shown on clicking the DropDown button as follows.
 
 ![](Getting-Started_images/Getting-Started_img8.png)
-{:.image }
+
 
 
 From the “Country” DropDownList, you can select your desired country.
 
-![](Getting-Started_images/Getting-Started_img9.png)
-{:.image }
+![](Getting-Started_images/Getting-Started_img9.png) 
+
 
 
 ## Set the Vote process in the DropDownList Widget
@@ -773,9 +771,8 @@ The following code example explains how to set the Vote process in the DropDownL
 
 
 When you run the above code example, it displays the DropDownList controls. You can select the value and click the Vote button. The button click event is processed and the values are displayed as follows.
-
 ![](Getting-Started_images/Getting-Started_img10.png)
-{:.image }
+
 
 
 

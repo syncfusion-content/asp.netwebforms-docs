@@ -26,9 +26,9 @@ The following steps explains the implementation of EnablePersistence in MaskEdit
 The output for MaskEditTextbox with EnablePersistencebefore page load and after page load are as follows.
 
 ![C:/Users/giftline.jebamani/Desktop/a.png](Configure-Persistence-Support_images/Configure-Persistence-Support_img1.png)
-{:.image }
+
 ![C:/Users/giftline.jebamani/Desktop/b.png](Configure-Persistence-Support_images/Configure-Persistence-Support_img2.png)
-{:.image }
+
 
 
 ## Enabled or Disabled
@@ -56,9 +56,9 @@ The following steps explains the implementation of Enabled in MaskEditTextbox.
 The output for MaskEditTextbox when “Enabled” is“true”and “Enabled” is “false”.
 
 ![C:/Users/giftline.jebamani/Desktop/a.png](Configure-Persistence-Support_images/Configure-Persistence-Support_img3.png)
-{:.image }
+
 ![C:/Users/giftline.jebamani/Desktop/b.png](Configure-Persistence-Support_images/Configure-Persistence-Support_img4.png)
-{:.image }
+
 
 
 ### Adjusting Textbox Size
@@ -87,7 +87,7 @@ The following steps explains the implementation of HeightandWidth in MaskEditTex
 
 The output for MaskEditTextbox after setting the “Height” and “Width”.
 ![C:/Users/giftline.jebamani/Desktop/a.png](Configure-Persistence-Support_images/Configure-Persistence-Support_img5.png)
-{:.image }
+
 
 
 
@@ -117,7 +117,7 @@ The following steps explains the implementation of Value in MaskEditTextbox.
 
 The output for MaskEditTextbox with Value.
 ![C:/Users/giftline.jebamani/Desktop/a.png](Configure-Persistence-Support_images/Configure-Persistence-Support_img6.png)
-{:.image }
+
 
 
 
@@ -145,7 +145,7 @@ Add the following code example in your ASPX page to render the MaskEditTextbox c
 The output for MaskEditTextbox when “ReadOnly” is “true”. The MaskEditTextbox values can not be edited or changed.
 
 ![C:/Users/giftline.jebamani/Desktop/a.png](Configure-Persistence-Support_images/Configure-Persistence-Support_img7.png)
-{:.image }
+
 
 ### Error Visibility
 
@@ -170,7 +170,7 @@ Add the following code example in your ASPX page to render the Textbox control.
 The output for Textbox when “ShowError” is “true”. 
 
 ![C:/Users/giftline.jebamani/Desktop/a.png](Configure-Persistence-Support_images/Configure-Persistence-Support_img8.png)
-{:.image }
+
 ![C:/Users/giftline.jebamani/Desktop/b.png](Configure-Persistence-Support_images/Configure-Persistence-Support_img9.png)
-{:.image }
+
 

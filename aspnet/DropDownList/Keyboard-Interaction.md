@@ -13,9 +13,9 @@ You can use Keyboard shortcut keys as an alternative to the mouse by using the
 
 <table>
 <tr>
-<td>
-Shortcut Key</td><td>
-Description</td></tr>
+<th>
+Shortcut Key</th><th>
+Description</th></tr>
 <tr>
 <td>
 <a href="http://en.wikipedia.org/wiki/Access_key">Access key</a> + j	</td><td>
@@ -109,6 +109,6 @@ Run the sample, press Alt + J to focus in the DropDownList widget that enables i
 
 
 ![](Keyboard-Interaction_images/Keyboard-Interaction_img1.png) 
-{:.image }
+
 
 

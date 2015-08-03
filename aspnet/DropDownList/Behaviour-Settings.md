@@ -13,7 +13,7 @@ The following are some miscellaneous properties that help you to change the beha
 
 ## Target ID
 
-You can append a list with DropDown textbox by using the TargetID property. You need to define a &lt;ul&gt;, &lt; li&gt; tags that you want to show on DropDownList and then set the id of parent &lt;ul&gt; tag to the TargetID property. Its data type is string. 
+You can append a list with DropDown textbox by using the TargetID property. You need to define a <ul>, < li> tags that you want to show on DropDownList and then set the id of parent <ul> tag to the TargetID property. Its data type is string. 
 
 The following step explains the configuration of the TargetID property in the DropDownList. 
 
@@ -104,7 +104,7 @@ In an ASPX page, add an element to configure the DropDownList.
 Output of the above step.
 
 ![](Behaviour-Settings_images/Behaviour-Settings_img1.png)
-{:.image }
+
 
 
 ## Select the value by index 
@@ -153,8 +153,8 @@ In an ASPX page, add an element to configure the DropDownList.
 Output of the above step.
 
 
-![](Behaviour-Settings_images/Behaviour-Settings_img2.png)
-{:.image }
+![](Behaviour-Settings_images/Behaviour-Settings_img2.png) 
+
 
 
 ## Show Popup on load
@@ -276,7 +276,7 @@ Output of the above step.
 
 
 ![](Behaviour-Settings_images/Behaviour-Settings_img3.png)
-{:.image }
+
 
 
 ## Read-only
@@ -377,7 +377,7 @@ Output of the above step.
 
 
 ![C:/Users/ApoorvahR/Desktop/3.png](Behaviour-Settings_images/Behaviour-Settings_img4.png)
-{:.image }
+
 
 
 ## Persistence support 
@@ -485,7 +485,7 @@ In an ASPX page, add an element to configure the DropDownList.
 Output of the above step.
 
 ![](Behaviour-Settings_images/Behaviour-Settings_img5.png)
-{:.image }
+
 
 
 ## Checkbox Support
@@ -550,8 +550,8 @@ In an ASPX page, add an element to configure the DropDownList.
 
 Output of the above step.
 
-![](Behaviour-Settings_images/Behaviour-Settings_img6.png)
-{:.image }
+![](Behaviour-Settings_images/Behaviour-Settings_img6.png) 
+
 
 
 ## MultiSelection modes
@@ -608,22 +608,22 @@ Output for DropDown control that provides multiple selection is as follows.
 
 
 ![](Behaviour-Settings_images/Behaviour-Settings_img7.png)
-{:.image }
+
 
 
 ## Appearance and Styling
 
 ### Popup Customization  
 
-Popup Height
+#### Popup Height
 
 DropDownList widget provides support to customize the dimensions of the DropDown popup. By using the PopupHeight property, you can set the height of the popup list. Its data type is string. 
 
-Popup Width
+#### Popup Width
 
 DropDownList widget provides support to customize the dimensions of the DropDown popup. By using the PopupWidth property, you can set the width of the popup list. Its data type is string. 
 
-Defining the popup customizing properties
+#### Defining the popup customizing properties
 
 The following step explains the configuration of the PopupHeight and PopupWidth properties in the DropDownList
 
@@ -671,6 +671,6 @@ Output of the above step.
 
 
 ![](Behaviour-Settings_images/Behaviour-Settings_img8.png) 
-{:.image }
+
 
 

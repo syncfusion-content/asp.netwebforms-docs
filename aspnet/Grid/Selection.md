@@ -24,42 +24,40 @@ Single selection is used to select a single row, cell or column in Grid. In Mult
 
 By default, the selection type is “Single”.
 
-#### Selection Modes
+### Selection Modes
 
-Row
+### Row
 
 By default, the selection mode of the grid is “Row”. This enables you to select the row in the grid. Refer to the following code example. Using SelectionMode property in SelectionSettings used to avhieve row selection mode.
 {% highlight html %}
-[ASP]
-
-[Aspx]
 
 
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowSelection="True" EnableRowHover = "False"&gt;
 
-            &lt;Columns&gt;
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowSelection="True" EnableRowHover = "False">
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" /&gt;
+            <Columns>
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" />
 
-                &lt;ej:Column Field="OrderDate" HeaderText="Order Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" /&gt;
+                <ej:Column Field="OrderDate" HeaderText="Order Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" />
 
-            &lt;/Columns&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
 
-&lt;SelectionSettings SelectionMode="Row" /&gt;
+            </Columns>
 
-&lt;/ej:Grid&gt;
+<SelectionSettings SelectionMode="Row" />
+
+</ej:Grid>
 {% endhighlight  %}
 {% highlight c# %}
-[CS]
+
 
 public partial class BasicSelection : System.Web.UI.Page
 
@@ -166,45 +164,43 @@ public partial class BasicSelection : System.Web.UI.Page
 The following screenshot displays the result of the above code.
 
 ![](Selection_images/Selection_img1.png) 
-{:.image }
 
 
-Cell
+
+### Cell
 
 Cell selection can be enabled using the SelectionMode property. This enables you to select a cell in the grid. Refer to the following code example.
 
 
 {% highlight html %}
-[ASP]
-
-[Aspx]
 
 
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowSelection="True" EnableRowHover = "False"&gt;
 
-            &lt;Columns&gt;
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowSelection="True" EnableRowHover = "False">
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" /&gt;
+            <Columns>
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" />
 
-                &lt;ej:Column Field="OrderDate" HeaderText="Order Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" /&gt;
+                <ej:Column Field="OrderDate" HeaderText="Order Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" />
 
-            &lt;/Columns&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
 
-&lt;SelectionSettings SelectionMode="Cell" /&gt;
+            </Columns>
 
-&lt;/ej:Grid&gt;
+<SelectionSettings SelectionMode="Cell" />
+
+</ej:Grid>
 {% endhighlight %}
 {% highlight c# %}
-[CS]
+
 
 public partial class BasicSelection : System.Web.UI.Page
 
@@ -313,43 +309,41 @@ public partial class BasicSelection : System.Web.UI.Page
 The following screenshot displays the result of the above code.
 
 ![](Selection_images/Selection_img2.png)
-{:.image }
 
 
-Column
+
+### Column
 
 Column selection can be enabled using the SelectionMode property. This enables you to select a particular column in the grid. Refer to the following code example.
 {% highlight html %}
-[ASP]
-
-[Aspx]
 
 
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowSelection="True" EnableRowHover = "False"&gt;
 
-            &lt;Columns&gt;
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowSelection="True" EnableRowHover = "False">
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" /&gt;
+            <Columns>
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" />
 
-                &lt;ej:Column Field="OrderDate" HeaderText="Order Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" /&gt;
+                <ej:Column Field="OrderDate" HeaderText="Order Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" />
 
-            &lt;/Columns&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
 
-&lt;SelectionSettings SelectionMode="Column" /&gt;
+            </Columns>
 
-&lt;/ej:Grid&gt;
+<SelectionSettings SelectionMode="Column" />
+
+</ej:Grid>
 {% endhighlight %}
 {% highlight c# %}
-[CS]
+
 
 public partial class BasicSelection : System.Web.UI.Page
 
@@ -458,16 +452,16 @@ public partial class BasicSelection : System.Web.UI.Page
 The following screenshot displays the result of the above code.
 
 ![](Selection_images/Selection_img3.png)
-{:.image }
+
 
 
 ### Multiple Selection
 
 Multiple selection can be enabled using SelectionType property. This allows you to select more than one row, cell and column at a time.
 
-#### Selection Modes
+### Selection Modes
 
-Row
+### Row
 
 By default, the selection mode of the grid is “Row”. This enable you to select the row in the grid. Refer to the following code example.
 
@@ -475,34 +469,33 @@ By default, the selection mode of the grid is “Row”. This enable you to sele
 
 {% highlight html %}
 
-[Aspx]
 
 
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowSelection="True" Selectiontype="Multiple" EnableRowHover = "False"&gt;
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowSelection="True" Selectiontype="Multiple" EnableRowHover = "False">
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" />
 
-                &lt;ej:Column Field="OrderDate" HeaderText="Order Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" /&gt;
+                <ej:Column Field="OrderDate" HeaderText="Order Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-&lt;SelectionSettings SelectionMode="Row" /&gt;
+<SelectionSettings SelectionMode="Row" />
 
-&lt;/ej:Grid&gt;
+</ej:Grid>
 {% endhighlight %}
 {% highlight c# %}
-[CS]
+
 
 public partial class BasicSelection : System.Web.UI.Page
 
@@ -609,10 +602,10 @@ public partial class BasicSelection : System.Web.UI.Page
 The following screenshot displays the result of the above code.
 
 ![](Selection_images/Selection_img4.png)
-{:.image }
 
 
-Cell
+
+### Cell
 
 Cell selection can be enabled using the SelectionMode property. This enables you to select a cell in the grid. Refer to the following code example.
 
@@ -620,34 +613,33 @@ Cell selection can be enabled using the SelectionMode property. This enables you
 
 {% highlight html %}
 
-[Aspx]
 
 
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowSelection="True" Selectiontype="Multiple" EnableRowHover = "False"&gt;
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowSelection="True" Selectiontype="Multiple" EnableRowHover = "False">
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" />
 
-                &lt;ej:Column Field="OrderDate" HeaderText="Order Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" /&gt;
+                <ej:Column Field="OrderDate" HeaderText="Order Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-&lt;SelectionSettings SelectionMode="Cell" /&gt;
+<SelectionSettings SelectionMode="Cell" />
 
-&lt;/ej:Grid&gt;
+</ej:Grid>
 {% endhighlight  %}
 {% highlight c# %}
-[CS]
+
 
 public partial class BasicSelection : System.Web.UI.Page
 
@@ -754,10 +746,10 @@ public partial class BasicSelection : System.Web.UI.Page
 The following screenshot displays the result of the above code.
 
 ![](Selection_images/Selection_img5.png)
-{:.image }
 
 
-Column
+
+### Column
 
 Column selection can be enabled using the SelectionMode property. This enables you to select a particular column in the grid. Refer to the following code example.
 
@@ -765,34 +757,34 @@ Column selection can be enabled using the SelectionMode property. This enables y
 
 {% highlight html %}
 
-[Aspx]
 
 
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowSelection="True" Selectiontype="Multiple" EnableRowHover = "False"&gt;
 
-            &lt;Columns&gt;
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowSelection="True" Selectiontype="Multiple" EnableRowHover = "False">
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" /&gt;
+            <Columns>
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" />
 
-                &lt;ej:Column Field="OrderDate" HeaderText="Order Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" /&gt;
+                <ej:Column Field="OrderDate" HeaderText="Order Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" />
 
-            &lt;/Columns&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
 
-&lt;SelectionSettings SelectionMode="Column" /&gt;
+            </Columns>
 
-&lt;/ej:Grid&gt;
+<SelectionSettings SelectionMode="Column" />
+
+</ej:Grid>
 {% endhighlight  %}
 {% highlight c#  %}
-[CS]
+
 
 public partial class BasicSelection : System.Web.UI.Page
 
@@ -899,7 +891,7 @@ public partial class BasicSelection : System.Web.UI.Page
 The following screenshot displays the result of the above code.
 
 ![](Selection_images/Selection_img6.png)
-{:.image }
+
 
 
 ## Enable All Modes of selection
@@ -908,34 +900,34 @@ You can also enable all the three modes of selection. Refer to the following cod
 
 {% highlight html %}
 
-[Aspx]
 
 
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowSelection="True" Selectiontype="Multiple" EnableRowHover = "False"&gt;
 
-            &lt;Columns&gt;
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowSelection="True" Selectiontype="Multiple" EnableRowHover = "False">
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" /&gt;
+            <Columns>
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" />
 
-                &lt;ej:Column Field="OrderDate" HeaderText="Order Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" /&gt;
+                <ej:Column Field="OrderDate" HeaderText="Order Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" />
 
-            &lt;/Columns&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
 
-&lt;SelectionSettings SelectionMode="Row" SelectionMode="Cell" SelectionMode="Column"/&gt;
+            </Columns>
 
-&lt;/ej:Grid&gt;
+<SelectionSettings SelectionMode="Row" SelectionMode="Cell" SelectionMode="Column"/>
+
+</ej:Grid>
 {% endhighlight  %}
 {% highlight c#  %}
-[CS]
+
 
 public partial class BasicSelection : System.Web.UI.Page
 
@@ -1042,7 +1034,7 @@ public partial class BasicSelection : System.Web.UI.Page
 The following screenshot displays the result of the above code.
 
 ![](Selection_images/Selection_img7.png)
-{:.image }
+
 
 
 ## Enable toggle
@@ -1051,34 +1043,34 @@ You can toggle the selection using the EnableToggle property. This provides supp
 
 {% highlight html %}
 
-[Aspx]
 
 
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowSelection="True" Selectiontype="Multiple" EnableRowHover = "False"&gt;
 
-            &lt;Columns&gt;
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowSelection="True" Selectiontype="Multiple" EnableRowHover = "False">
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" /&gt;
+            <Columns>
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" />
 
-                &lt;ej:Column Field="OrderDate" HeaderText="Order Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" /&gt;
+                <ej:Column Field="OrderDate" HeaderText="Order Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" />
 
-            &lt;/Columns&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
 
-&lt;SelectionSettings SelectionMode="Row" EnableToggle="true" /&gt;
+            </Columns>
 
-&lt;/ej:Grid&gt;
+<SelectionSettings SelectionMode="Row" EnableToggle="true" />
+
+</ej:Grid>
 {% endhighlight %}
 {% highlight c# %}
-[CS]
+
 
 public partial class BasicSelection : System.Web.UI.Page
 
@@ -1185,11 +1177,11 @@ public partial class BasicSelection : System.Web.UI.Page
 The following screenshot displays the result of the above code.
 
 ![](Selection_images/Selection_img8.png)
-{:.image }
+
 
 
 ![](Selection_images/Selection_img9.png)
-{:.image }
+
 
 
 ## Customize Selection Color
@@ -1198,15 +1190,10 @@ In this section, you can learn how to customize or override selection background
 
 {% highlight html %}
 
-[ASP]
 
 
 
-[aspx]
-
-
-
-&lt;style type="text/css"&gt;
+<style type="text/css">
 
 .e-grid  td.e-active{
 
@@ -1214,13 +1201,13 @@ background-color:lightseagreen !important;
 
 }
 
-&lt;/style&gt;
+</style>
 
 
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowSelection="True" Selectiontype="Multiple"&gt;
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowSelection="True" Selectiontype="Multiple">
 
-&lt;/ej:Grid&gt;
+</ej:Grid>
 
 
 
@@ -1233,61 +1220,59 @@ The following output is displayed as a result of the above code example.
 
 
 ![](Selection_images/Selection_img10.png)
-{:.image }
+
 
 
 ## Get selected record data
 
 In this section, you can learn how to get selected records from one Grid and how this selected record is used to update datasource of another Grid. 
 {% highlight html %}
-[ASP]
 
-[aspx]
 
-&lt;ej:Grid ID="EmployeesGrid" runat="server" AllowSelection="True"&gt;
+<ej:Grid ID="EmployeesGrid" runat="server" AllowSelection="True">
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" IsPrimaryKey="true" TextAlign="Right" Width="125" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" IsPrimaryKey="true" TextAlign="Right" Width="125" />
 
-                &lt;ej:Column Field="FirstName" HeaderText="First Name" Width="100" /&gt;
+                <ej:Column Field="FirstName" HeaderText="First Name" Width="100" />
 
-                &lt;ej:Column Field="LastName" HeaderText="Last Name" Width="100" /&gt;
+                <ej:Column Field="LastName" HeaderText="Last Name" Width="100" />
 
-                &lt;ej:Column Field="Title" HeaderText="Title" Width="150" /&gt;
+                <ej:Column Field="Title" HeaderText="Title" Width="150" />
 
-                &lt;ej:Column Field="BirthDate" HeaderText="Birth Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" /&gt;
+                <ej:Column Field="BirthDate" HeaderText="Birth Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" />
 
-                &lt;ej:Column Field="Country" HeaderText="Country" Width="100" /&gt;
+                <ej:Column Field="Country" HeaderText="Country" Width="100" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;   
+        </ej:Grid>   
 
-&lt;ej:Grid ID="OrdersGrid" runat="server" AllowPaging="False"&gt;
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="False">
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />
 
-                &lt;ej:Column Field="OrderDate" HeaderText="Order Date" Width="80" TextAlign="Right" Format="{0:MM/dd/yyyy}" /&gt;
+                <ej:Column Field="OrderDate" HeaderText="Order Date" Width="80" TextAlign="Right" Format="{0:MM/dd/yyyy}" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="110" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="110" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt; 
+        </ej:Grid> 
 {% endhighlight %}
 {% highlight js %}
- [javascript]
 
-&lt;script type="text/javascript"&gt;
+
+<script type="text/javascript">
 
         $(function () {
 
@@ -1315,10 +1300,10 @@ In this section, you can learn how to get selected records from one Grid and how
 
         });
 
-    &lt;/script&gt;
+    </script>
 {% endhighlight  %}
 {% highlight c# %}
-[CS]
+
 
 public partial class MasterDetails : System.Web.UI.Page
 
@@ -1497,6 +1482,6 @@ public partial class MasterDetails : System.Web.UI.Page
 The following output is displayed as a result of the above code example.
 
 ![](Selection_images/Selection_img11.png)
-{:.image }
+
 
 

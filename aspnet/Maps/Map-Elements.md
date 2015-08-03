@@ -11,7 +11,7 @@ documentation: ug
 
 Map control contains a set of map elements, including shapes, bubbles, markers, legend, labels and data items that can be visualized with customized appearance showing additional information on the map using databound datas.
 
-Markers 
+## Markers 
 
 Markers are notes that is used to leave some message on the map. 
 
@@ -20,20 +20,19 @@ There are two ways to set marker for map.
 1. Using markers and marker template
 2. Adding marker objects to map.
 
-Markers 
+### Markers 
 
 The Markers property has a list of objects that contains the data for Annotation. You can visualize these data by using MarkerTemplate property.
 
 {% highlight c# %}
- [ASP]
- [ASPX.CS]   
+   
  public class Syncfusion_LocationData    {        public static List<MapMarker> GetSyncfusionLocationData()        {            List<MapMarker> syncfusionLocationData = new List<MapMarker>            {                new LocationData {Name = "Chennai", Country = "India", Latitude =13.0839 , Longitude = 80.27 , Description = "Syncfusion's branch office is located in AnnaNagar, Chennai", Address ="EYMARD Complex AJ 217 4th Avenue Shanthi Colony Anna Nagar Chennai-40 India" },                new LocationData {Name = "North Carolina", Country = "United States", Latitude =35.5 , Longitude = -80 , Description = "Syncfusion's corporate office is located in Research Triangle Park North Carolina", Address ="Company Headquarters 2501 Aerial Center Parkway Suite 200 Morrisville NC 27560 USA" },            };            return syncfusionLocationData;        }    }                protected void Page_Load(object sender, EventArgs e)        {            (this.map.Layers[0] as ShapeLayer).ShapeData = GetWorldMap();            (this.map.Layers[0] as ShapeLayer).Markers = Syncfusion_LocationData.GetSyncfusionLocationData();        }</td></tr>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-[ASPX]
+
 
 
 
@@ -53,7 +52,7 @@ The Markers property has a list of objects that contains the data for Annotation
 
 
 
-[ASPX]
+
 
 <div  id="template" style="display: none;">
 
@@ -80,10 +79,10 @@ The Markers property has a list of objects that contains the data for Annotation
 {% endhighlight %}
 
 ![](Map-Elements_images/Map-Elements_img1.png)
-{:.image }
 
 
-Adding Marker objects to map
+
+### Adding Marker objects to map
 
 Without Datasource, n number of markers can be added to shape layers with Markers property. Each marker object contains the following list of properties.
 
@@ -95,7 +94,7 @@ Without Datasource, n number of markers can be added to shape layers with Marker
 
 {% highlight c# %}
 
-  [ASPX.CS]
+  
 
 
 
@@ -140,10 +139,10 @@ Without Datasource, n number of markers can be added to shape layers with Marker
 
 
 ![](Map-Elements_images/Map-Elements_img2.png)
-{:.image }
 
 
-Bubbles 
+
+## Bubbles 
 
 Bubbles in the Maps control represent the underlying data values of the map. Bubbles are scattered throughout the map shapes that contain bound values.
 
@@ -155,10 +154,10 @@ _Property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 MaxValue</td><td>
@@ -204,17 +203,13 @@ Adding Bubbles to a Map
 
 To add bubbles to a map, the bubble marker setting is added to the shape file layer. Create the Model and ViewModel as illustrated in the Data Binding topic and add the following code. Also set the MaxValue, MinValue, and ValuePath properties as illustrated in the following code sample.
 
-> _Note: Tooltip and Color Mappings for bubble is to be set as similar to tooltip and color mappings set in layers and ShapeSettings. For more details, refer Tooltip and Color Mappings section._
+> Note: Tooltip and Color Mappings for bubble is to be set as similar to tooltip and color mappings set in layers and ShapeSettings. For more details, refer Tooltip and Color Mappings section.
 
 
 
 {% highlight html %}
 
-[ASP]
 
-
-
-[ASPX]
 
   <ej:Map ID="map" runat="server" >    
 
@@ -247,29 +242,29 @@ To add bubbles to a map, the bubble marker setting is added to the shape file la
 
 
 ![](Map-Elements_images/Map-Elements_img3.png) 
-{:.image }
 
 
-Legend
+
+## Legend
 
 A legend is a key used on a map, contains swatches of symbols with descriptions. It provides valuable information for interpreting what the map is displaying you, and can be represented in various colors, shapes or other identifiers based on the data. It gives a breakdown of what each symbol represents throughout the map.
 
-Visibility of Legend
+### Visibility of Legend
 
 The Legends can be made visible by setting the ShowLegend property of LegendSettings. 
 
-Positioning of Legend
+### Positioning of Legend
 
 The legend can be positioned in two ways.
 
 1. Absolute Position.
 2. Dock Position.
 
-Absolute Position
+### Absolute Position
 
 Based on the margin values of X and Y-axes, the Map legends can be positioned with the support of PositionX and PositionY properties available in LegendSettings. For positioning the legend based on margins corresponding to a map, Position value is set as _‘_None’.
 
-Dock Position
+### Dock Position
 
 The map legends can be positioned in following locations within the container.
 
@@ -287,25 +282,21 @@ The map legends can be positioned in following locations within the container.
 
 You can set this option by using Position property in LegendSettings.
 
-Legend Size
+### Legend Size
 
 The map legend size can be modified using Height and Width properties in LegendSettings.
 
-Legend for Shapes
+### Legend for Shapes
 
 The Layer shape type legends can be generated for each color mappings in shape settings. 
 
-> _Note:  Here, Equal Color Mapping code sample for shapeSettings with color mappings is referred._
+> Note:  Here, Equal Color Mapping code sample for shapeSettings with color mappings is referred.
 
 
 
 {% highlight html %}
 
-[ASP]
 
-
-
-[ASPX]
 
     <ej:Map ID="map" runat="server" >    
 
@@ -332,32 +323,28 @@ The Layer shape type legends can be generated for each color mappings in shape s
 
 
 ![](Map-Elements_images/Map-Elements_img4.png)
-{:.image }
 
 
-Interactive Legend
+
+### Interactive Legend
 
 The legends can be made interactive with an arrow mark indicating the exact range color in the legend when the mouse hovers over the corresponding shapes. You can enable this option by setting Mode property in LegendSettings value as “Interactive” and default value of Mode property is “Default” to enable the normal legend.
 
-Title for Interactive Legend
+### Title for Interactive Legend
 
 You can provide the title for interactive legend by using Title property in LegendSettings.
 
-Label for Interactive Legend
+### Label for Interactive Legend
 
 You can provide the left and right labels to interactive legend by using LeftLabel and RightLabel properties in LegendSettings. 
 
-> _Note:  Here, Range Color Mapping code snippet for shapeSettings with color mappings is referred._
+> Note:  Here, Range Color Mapping code snippet for shapeSettings with color mappings is referred.
 
 
 
 {% highlight html %}
 
- [ASP]
 
-
-
-[ASPX]
 
     <ej:Map ID="map" runat="server" >    
 
@@ -382,10 +369,10 @@ You can provide the left and right labels to interactive legend by using LeftLab
 
 
 ![](Map-Elements_images/Map-Elements_img5.png)
-{:.image }
 
 
-Bubble Legend
+
+### Bubble Legend
 
 A bubble legend feature is used to provide the key (legend) for another map element bubble. You can activate the Bubble legend by setting the enum “Type” in LegendSettings as “bubble” and this enables you to easily identify what value a particular bubble is representing.
 
@@ -395,11 +382,6 @@ A bubble legend feature is used to provide the key (legend) for another map elem
 
 {% highlight html %}
 
-[ASP]
-
-
-
-[ASPX]
 
     <ej:Map ID="map" runat="server" >    
 
@@ -448,6 +430,6 @@ A bubble legend feature is used to provide the key (legend) for another map elem
 {% endhighlight %}
 
 ![1](Map-Elements_images/Map-Elements_img6.png)
-{:.image }
+
 
 
