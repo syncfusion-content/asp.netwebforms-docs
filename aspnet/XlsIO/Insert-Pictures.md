@@ -7,19 +7,19 @@ control: XlsIO
 documentation: ug
 ---
 
-## Insert Pictures 
+# Insert Pictures 
 
 Excel allows you to insert a picture through the Insert tab -> Illustrations section,and then clicking Pictures button. It allows you to customize the image by sizing, formatting, and positioning the image.
 
-{ ![](Insert-Pictures_images/Insert-Pictures_img1.png) | markdownify }
-{:.image }
+ ![](Insert-Pictures_images/Insert-Pictures_img1.png) 
+
 
 
 Essential XlsIO has advanced API support for working with images. It supports the insertion of Scalar and Vector images in a worksheet. It is also possible to position and set the properties for the image at the desired location. IPictureShape is used for inserting and formatting pictures.
 
+{% highlight C# %}
 
 
-[C#]
 
 
 
@@ -77,9 +77,11 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
+
+{% highlight vbnet%}
 
 
-[VB.NET]
 
 
 
@@ -140,18 +142,18 @@ workbook.Close()
 excelEngine.Dispose()
 
 
+{% endhighlight %}
 
 
+![](Insert-Pictures_images/Insert-Pictures_img2.png) 
 
-{ ![](Insert-Pictures_images/Insert-Pictures_img2.png) | markdownify }
-{:.image }
 
 
 Barcodes and Charts can also be inserted in a spreadsheet by using XlsIO's Image Insertion API's. The barcode/chart is rendered to an image by using the Essential Barcode/ Essential Chart and then inserted into the spreadsheet as an image. XlsIO can also extract images from an existing spreadsheet.
 
+{% highlight C# %}
 
 
-[C#]
 
 
 
@@ -201,9 +203,11 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
+
+{% highlight vbnet%}
 
 
-[VB.NET]
 
 
 
@@ -255,5 +259,5 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
+{% endhighlight %}
 

@@ -7,17 +7,17 @@ control: XlsIO
 documentation: ug
 ---
 
-## Worksheet Cells Manipulation
+# Worksheet Cells Manipulation
 
 The IRange interface represents a single cell or a group of cells in a worksheet. XlsIO has several useful methods for manipulating data and formatting it in the ranges.
 
-### Accessing a Cell or a Range
+## Accessing a Cell or a Range
 
 Range of cells can be accessed through the IRange interface. The following code example illustrates this.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -43,15 +43,14 @@ IRange this[string name, bool IsR1C1Notation] { get; }
 
 IRange this[int row, int column, int lastRow, int lastColumn] { get; }
 
+{% endhighlight %}
 
 
-> { ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img1.jpeg) | markdownify }
-{:.image }
 _Note: Here row and column indexes in the range are "one based". Following code example explains various ways of accessing cells._
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -215,15 +214,15 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-Accessing Discontinuous Ranges
+### Accessing Discontinuous Ranges
 
 You can also access different discontinuous ranges and add them to the RangesCollection so that the same format is applied to different ranges. The following code example explains the same.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -285,9 +284,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -351,15 +350,15 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-Access by using IMigrantRange for better performance
+### Access by using IMigrantRange for better performance
 
 The IMigrantRange interface can be used to access a worksheet range and manipulate it. This is an optimal method of writing data with better performance. The following code example illustrates this.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -429,9 +428,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -511,15 +510,15 @@ excelEngine.Dispose()
 
 XlsIO enables you to get the range of cells used in a given sheet. This helps you to apply the same format to all the cells used in the worksheet. You can also get the first row/column, last row/column, and number of rows/columns used in the sheet by using the various methods of IRange.
 
-> { ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img2.jpeg) | markdownify }
-{:.image }
+{% endhighlight %}
+
 _Note: By default, XlsIO considers a cell as used, even when there exists some formatting. You can disable this behavior, and make XlsIO consider a cell as used, only when there exists data, by using the UsedRangeIncludesFormatting property._
 
 The following code example is used to format the Used Range.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -625,9 +624,9 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-### Clear a Cell or a Range
+## Clear a Cell or a Range
 
 While editing Excel workbooks, one of the most common action that is performed is clearing or deleting cells. Clearing cells mean erasing everything within them, whereas deleting actually deletes the entire cell. You can clear the cell content by using the Clear method. XlsIO also provides options to clear styles or data alone.
 
@@ -635,7 +634,7 @@ The following code example illustrates how to clear a range along with its forma
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -685,9 +684,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -739,9 +738,10 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
 
-### Copy or Move a Range
+## Copy or Move a Range
 
 Moving or copying cells is a very common procedure while creating or editing your worksheets. XlsIO provides support to copy a range of cells from one end to another. CopyTo method enables copying range of cells from the source to the destination. It has an option to copy all the formats or only specific formats to the destination range by using the ExcelCopyRangeOptions enumerator. Following.
 
@@ -751,9 +751,9 @@ _Table_ _14__: Values set for the ExcelCopyRangeOptions_
 
 <table>
 <tr>
-<td>
-Members </td><td>
-Description</td></tr>
+<th>
+Members </th><th>
+Description</th></tr>
 <tr>
 <td>
 None</td><td>
@@ -793,8 +793,7 @@ The following code example illustrates how to copy a range of cells from the sou
 
 
 
-[C#]
-
+{% highlight C# %}
 
 
 // Step 1: Instantiates the spreadsheet creation engine.
@@ -849,10 +848,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
+{% highlight vbnet %}
 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
@@ -905,17 +903,17 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
 
 MoveTo method is used to move a range of cells to the destination. The only difference between copy and move operation is that Move does not create a copy in the source. This is similar to the Cut and Paste options in the Excel. 
 
-> { ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img3.jpeg) | markdownify }
-{:.image }
+
 _Note: Move does not update formulas._
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -971,9 +969,10 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1027,14 +1026,14 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-### Find and Replace
+## Find and Replace
 
 Find and Replace feature in Excel enables you to navigate between large spreadsheets. It carries out a simultaneous search in Microsoft Excel values, formulas, and also comments. XlsIO also supports finding and replacing contents in a worksheet. It has various options to find the first matching entry, find all the matching entries, and replace the found content with various data and data sources.
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img4.png) | markdownify }
-{:.image }
+![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img4.png)
+
 
 
 XlsIO has the following common find and replace methods and properties and their usage. This section describes all the methods listed.
@@ -1103,7 +1102,9 @@ Matches case while finding the value.</td></tr>
 MatchEntireCell</td><td>
 Matches the whole word being searched while finding the value.</td></tr>
 </table>
-Find First
+
+
+### Find First
 
 This method has overloads for searching the first cell with the specified typed value. The ExcelFindType enumerator provides options to set the data type of the string (that is, value and formula value) to be searched, and the ExcelFindOptions enumerator provides the options to match the strings associated with the find value.
 
@@ -1139,7 +1140,7 @@ This method searches for the cell with specified string value, again based on th
 </table>
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -1194,10 +1195,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight%}
 
-
-[VB]
-
+{% highlight vbnet %}
 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
@@ -1260,10 +1260,10 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
 
-
-FindAll
+### FindAll
 
 This method searches all the cells and returns all the entries in the sheet that matches the specified data.
 
@@ -1271,9 +1271,9 @@ _Table_ _18__: Find All Methods_
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 FindAll(Boolean)</td><td>
@@ -1297,7 +1297,7 @@ This method searches for all the cells with specified string value, again based 
 </table>
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -1352,9 +1352,10 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
 
- [VB]
+ {% highlight vbnet %}
 
 
 
@@ -1416,9 +1417,9 @@ workbook.Version = ExcelVersion.Excel2010
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-FindStringStartswith
+### FindStringStartswith
 
 This method has overloads to search for the first cell that starts with the specified value. The ExcelFindType enumerator provides options to set the data type of the string that is, value and formula value) to be searched.
 
@@ -1427,9 +1428,9 @@ _Table_ _19__: FindStringStartswith Methods_
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 FindStringStartsWith( String , ExcelFindType)</td><td>
@@ -1441,7 +1442,7 @@ These methods search for cells that start with the specified string value for th
 </table>
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -1496,9 +1497,10 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
 
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1562,8 +1564,9 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-FindStringEndswith
+### FindStringEndswith
 
 This method has overloads to search for cells that have the first cell ending with the specified typed value. ExcelFindType enumerator provides options to set the data type of the value and formula value/string to be searched.
 
@@ -1572,9 +1575,9 @@ _Table_ _20__: FindStringEndswith_
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 FindStringEndsWith ( String, ExcelFindType) </td><td>
@@ -1586,7 +1589,7 @@ These methods search for the cell that ends with the specified string value for 
 </table>
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -1641,9 +1644,10 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
 
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1705,9 +1709,9 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-Replace
+### Replace
 
 This method enables to replace a string, with the data of various data types and data sources, such as data table, data column and array. Following are the overloads for the Replace method.
 
@@ -1715,9 +1719,9 @@ _Table_ _21__: Overloads for the Replace method_
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 Replace(String, DateTime)</td><td>
@@ -1757,7 +1761,7 @@ The following code example illustrates how to replace strings with various data.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -1827,9 +1831,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1899,18 +1903,16 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-### Data Sorting 
+## Data Sorting 
 
 This feature allows sorting any range of cells dynamically at runtime without any dependency on MS Excel. You can sort a given range of cells in a worksheet by applying the sort feature to a range that changes the related data within the range. The ranges can be sorted in the following ways:
 
 1. Sorting by Cell Values
 2. Sorting by Font Color
 3. Sorting by Cell Color
-> 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img5.jpeg) | markdownify }
-{:.image }
+
 _Note: Presently, sorting based on cell icon, parsing, and serialization of its sorting details are not supported._
 
 1. Sort by Cell Values
@@ -1918,14 +1920,14 @@ This is used to sort a range of cells by values at runtime. This is explained in
 
 
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img6.png) | markdownify }
-{:.image }
+{{{ ''![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img6.png)'' | markdownify }}}
 
 
 
 
-[C#]
 
+
+{% highlight C# %}
 
 
 // Step 1: Instantiates the spreadsheet creation engine.
@@ -1998,10 +2000,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
-
-[VB.NET]
-
+{% highlight vbnet %}
 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
@@ -2078,21 +2079,21 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
+{% endhighlight %}
 
 2. Sort by Font Color
 
 With this feature, MS Excel moves the text that is applied with the selected color to the specified location (bottom or top) of the sorting range.
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img7.png) | markdownify }
-{:.image }
+![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img7.png)
+
 
 
 This is explained in the following code examples.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -2168,9 +2169,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2252,21 +2253,19 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
+{% endhighlight %}
 
 > 3. Sort by Cell Color
 
 With this feature, MS Excel moves the cell text and color to the specified location (bottom or top) of the sorting range.
+![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img8.png)
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img8.png) | markdownify }
-{:.image }
 
 
 This is explained in the following code sample.
 
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -2342,9 +2341,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2424,25 +2423,24 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-### Data Filtering  
+## Data Filtering  
 
 MS Excel AutoFilter feature literally makes filtering out unwanted data in a data list as easy as clicking a button. When the cell pointer is located within any cell in your data list, open the Data tab, click Filter button. Once this is done, the program adds drop-down buttons to each of the field names in the top row of the list. This feature is specifically used in large spreadsheets when you want to look for a particular data based on specific criteria.
 
 
-
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img9.png) | markdownify }
-{:.image }
+![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img9.png)
 
 
-AutoFilters in Essential XlsIO
+
+### AutoFilters in Essential XlsIO
 
 Essential XlsIO also comes with APIs for reading and writing AutoFilters in a worksheet. You can specify the range of data that needs to be viewed through the FilterRange property. The following code example illustrates writing AutoFilters.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -2486,9 +2484,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2538,13 +2536,14 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
 
 XlsIO also provides options to set the built-in conditions for filters by using various properties of IAutoFilter. The following code example illustrates various conditions based on the data that is to be filtered.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -2604,9 +2603,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2668,23 +2667,22 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
+
+![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img10.png)
 
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img10.png) | markdownify }
-{:.image }
 
-
-### Data Validation 
+## Data Validation 
 
 The Data Validation feature available in MS Excel dynamically validates the data that is entered into a cell. Data Validation in MS Excel is achieved by clicking the Data Validation button in the Data tab. Excel has various validation types for each data type and options to show error box for invalid data through the Data Validation dialog box that is shown in the following screenshot.
 
 
-
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img11.png) | markdownify }
-{:.image }
+![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img11.png)
 
 
-Data Validation in Essential XlsIO
+
+### Data Validation in Essential XlsIO
 
 Essential XlsIO, equivalent to the MS Excel, is built with APIs to read and write data validation in a worksheet by using the IDataValidation class.
 
@@ -2699,7 +2697,7 @@ The following are some validation types that XlsIO supports.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -2759,9 +2757,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2824,24 +2822,25 @@ workbook.Close()
 excelEngine.Dispose()
 
 
+{% endhighlight %}
 
 The following screenshots illustrate the error alert settings through the Data Validation dialog box in MS Excel.
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img12.png) | markdownify }
-{:.image }
+![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img12.png)
 
 
 
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img13.png) | markdownify }
-{:.image }
+
+![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img13.png)
+
 
 
 XlsIO has numerous validation rules and features that are demonstrated in the following code example. AllowType property sets the type of validation, CompareOperator sets the validation criteria and ShowErrorBox shows the error box with an error message.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -3038,14 +3037,15 @@ workbook.Close()
 excelEngine.Dispose()
 
 
+{% endhighlight %}
 
-Reading the Existing Data Validation Settings
+### Reading the Existing Data Validation Settings
 
 You can also read the Data Validation settings in an existing workbook. The following code example illustrates this.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -3095,9 +3095,10 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3149,14 +3150,14 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-### Adding Hyperlinks 
+## Adding Hyperlinks 
 
 A Hyperlink is a convenient way to instantly access another place in the workbook, or another workbook, or a file associated with another application. A hyperlink can be inserted in a cell or a shape in Excel. Select the cell or shape, and select Hyperlink from the Insert menu, or right-click anywhere in the cell or shape, and then select Hyperlink from the pop-up menu. You can enter a cell reference in the current workbook, browse to another workbook, a different file, or a web page, and even enter an email address and subject line. You can also edit the text for a hyperlink in a cell. Following is the Insert Hyperlink dialog box of MS Excel that allows setting various hyperlinks.
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img14.png) | markdownify }
-{:.image }
+![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img14.png)
+
 
 
 
@@ -3172,7 +3173,7 @@ You can also set the text to be displayed in a hyperlink and a tooltip that show
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -3282,9 +3283,10 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3394,9 +3396,9 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
+![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img15.png)
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img15.png) | markdownify }
-{:.image }
 
 

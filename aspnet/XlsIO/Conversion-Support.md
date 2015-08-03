@@ -7,21 +7,18 @@ control: XlsIO
 documentation: ug
 ---
 
-## Conversion Support
+# Conversion Support
 
 Essential XlsIO supports converting workbook and worksheets into a Pdf document, an image. It also supports converting Excel charts into images. The following sections explains these.
 
-### Export Excel to PDF 
+## Export Excel to PDF 
 
 Essential XlsIO allows exporting an Excel document into PDF format. Use the Convert method of the ExcelToPdfConverter class to convert the Excel spreadsheet and save the PDF output. 
 
-> { ![](Conversion-Support_images/Conversion-Support_img1.jpeg) | markdownify }
-{:.image }
+
 _Note: You need to have both Essential PDF and Essential XlsIO installed in your system since Syncfusion.ExceltoPDFConverter.Base.dll is conditionally shipped when both XlsIO.Base and Pdf.Base is installed._
 
-
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -66,9 +63,8 @@ pdfDoc = converter.Convert(settings);
 
 pdfDoc.Save("ExceltoPDF.pdf");
 
-
-
-[VB]
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 
@@ -116,9 +112,10 @@ pdfDoc = converter.Convert(settings)
 
 pdfDoc.Save("ExceltoPDF.pdf")
 
+{% endhighlight %}
 
 
-Supported Elements
+### Supported Elements
 
 This feature provides support for the following elements:
 
@@ -142,11 +139,11 @@ This feature provides support for the following elements:
 * Print Order Support
 * Unicode in Headers and Footers​
 
-Styles
+### Styles
 
 This feature supports almost all the styles supported by Excel 2007.
 
-Character formatting
+### Character formatting
 
 This feature supports almost all character formatting. The supported character formatting features are:
 
@@ -160,64 +157,63 @@ This feature supports almost all character formatting. The supported character f
 * Left, right, and center justification
 * Line breaks within the cell
 
-Headers and Footers 
+### Headers and Footers 
 
 Page headers and footers are supported and can contain images, text, and page number fields. 
 
-Images 
+### Images 
 
 The images present in the document are supported along with their corresponding positions and sizes. 
 
 Known Limitation-Images placed inside a shape is not preserved in the generated PDF document. 
 
-Text Box 
+### Text Box 
 
 The text value present in the text box is rendered as text at its actual position in the generated PDF document. 
 
-Hyperlinks
+### Hyperlinks
 
 The hyperlinks present in the Excel documents is also preserved in the generated PDF document.
 
-Document Properties 
+### Document Properties 
 
 Document properties present in the Excel documents is also preserved in the generated PDF document. 
 
-Table Styles Support
+### Table Styles Support
 
 Built-In Table styles present in the Excel documents is also preserved in the generated PDF document.
 
-Text Rotations
+### Text Rotations
 
 Rotated text present in the Excel sheet cell is preserved in the generated PDF document.
 
-Excel sheet Page Setup options
+### Excel sheet Page Setup options
 
 The Page setup option of the input Excel sheet is preserved in the generated PDF document. The following are the Excel page setup options that are preserved.
 
 * Orientation
 * Center On Page
 
-Unicode Support
+### Unicode Support
 
 The other language and unicode present in the input Excel document is preserved in the generated PDF document.
 
-Background Images
+### Background Images
 
 The Background image present in the Excel document is preserved in the generated PDF document.
 
-> { ![](Conversion-Support_images/Conversion-Support_img2.jpeg) | markdownify }
-{:.image }
+
 _Note: The image gets tiled based on the size of the output pdf document._
 
-Comments
+### Comments
 
 Comments present in the Excel document cells is also preserved in the generated PDF document. 
 
-Encryption
+### Encryption
 
 An encrypted Excel document is also preserved and generated as an encrypted PDF document by passing the password for the encrypted Excel document.
 
-Unsupported Elements 
+### Unsupported Elements 
 
 The following list contains unsupported elements that presently is not preserved in the generated PDF document. 
 
@@ -226,42 +222,41 @@ The following list contains unsupported elements that presently is not preserved
 * Text rotations
 * Background images
 
-Printing Titles when Converting the Excel to PDF 
+### Printing Titles when Converting the Excel to PDF 
 
 Title rows and columns in the Excel sheet can be printed on the PDF page by using this feature. By setting the print titles for rows and columns in the Excel sheet, the same gets reflected in the PDF when converting the Excel to PDF.
 
-Page Break Support
+### Page Break Support
 
 Manually inserted page breaks that are available in the Excel document is included while laying out the PDF document.nPrint Order Support.
 
-Print Order Support
+### Print Order Support
 
 The Print order enabled in the Excel document is considered while laying out the PDF page. The following are the page order options that are supported:
 
 * Down Then Over
 * Over Then Down
-> 
-{ ![](Conversion-Support_images/Conversion-Support_img3.jpeg) | markdownify }
-{:.image }
+
 _Note: It considers the Print Area and Page breaks while laying out, based on Print Order._
 
-Print Area Support
+### Print Area Support
 
 Print Area available in the Excel document is considered while laying out the PDF document. Both, Row Index Only [1: 20] and Column Index Only [A: D] support have also been included in Unicode in Headers and Footers.
 
-Unicode in Headers and Footers
+### Unicode in Headers and Footers
 
 The other language and unicode present in the headers and footers is preserved in the generated PDF document.
 
 For More Information refer to: AutoFilters, Validating Data, Template Markers, Grouping and Ungrouping, Print Settings.
 
-### Convert Worksheet to Image 
+## Convert Worksheet to Image 
 
 Essential XlsIO can convert a worksheet to an image of type bitmap or metafile based on the input range of rows and columns with all basic formats preserved. The sheet can be converted and saved to disk or stream. The converted image can be inserted in a pdf by using Essential PDF.
 
 
+{% highlight C# %}
 
-[C#]
+
 
 
 
@@ -317,9 +312,10 @@ excelEngine.ThrowNotSavedOnDestroy = false;
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
+{% highlight vbnet%}
 
-[VB]
 
 
 
@@ -374,10 +370,10 @@ excelEngine.ThrowNotSavedOnDestroy = False
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
+![](Conversion-Support_images/Conversion-Support_img4.jpeg) 
 
-{ ![](Conversion-Support_images/Conversion-Support_img4.jpeg) | markdownify }
-{:.image }
 
 
 Essential XlsIO can convert a worksheet based on the input range of the rows and columns that does not support the following elements:
@@ -391,11 +387,11 @@ Essential XlsIO can convert a worksheet based on the input range of the rows and
 * Charts and Chart Worksheet
 * Complex conditional formatting
 * Gradient fill is partially supported
-### Convert Chart to Image 
+
+## Convert Chart to Image 
 
 
-{ ![](Conversion-Support_images/Conversion-Support_img5.jpeg) | markdownify }
-{:.image }
+
 _Note:_
 
 * _This section is applicable only to the Windows Forms and WPF platforms of XlsIO._
@@ -414,9 +410,8 @@ Essential XlsIO provides support to convert a Chart in Microsoft Excel to an ima
 
 The following code example illustrates converting an Excel Chart to an image.
 
+{% highlight C#%}
 
-
-[C#]
 
 
 
@@ -489,10 +484,9 @@ image.Save("output.png");
 workbook.Close();
 
 excelEngine.Dispose();
+{% endhighlight %}
 
-
-
-[VB.NET]
+{% highlight vbnet%}
 
 
 
@@ -566,13 +560,13 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
+{% endhighlight %}
 
 The following screenshot shows an Excel Chart converted to an image.
 
 
 
-{ ![](Conversion-Support_images/Conversion-Support_img6.jpeg) | markdownify }
-{:.image }
+ ![](Conversion-Support_images/Conversion-Support_img6.jpeg) 
+
 
 

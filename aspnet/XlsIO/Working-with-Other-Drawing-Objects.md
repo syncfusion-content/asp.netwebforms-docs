@@ -7,16 +7,15 @@ control: XlsIO
 documentation: ug
 ---
 
-## Working with Other Drawing Objects 
+# Working with Other Drawing Objects 
 
 Essential XlsIO supports working with form controls, OLE objects, and auto-shapes. The following sections explain those in detail.
 
-### Insert Form Controls 
+## Insert Form Controls 
 
 Essential XlsIO provides support to read and write the Text Box, Check Box, and Combo Box controls. It enables creation of forms that are user-friendly and also enhances the appearance of the forms.
 
-> {{{ ''![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img1.jpeg)'' | markdownify }}}
-{:.image }
+
 _Note: Essential XlsIO provides support to read and write Form controls. Support for Active X Form controls is not yet available._
 
 This section explains the usage of the following Form controls.
@@ -25,6 +24,7 @@ This section explains the usage of the following Form controls.
 * Check Box
 * Combo Box
 * Option Button
+
 #### Text Box
 
 
@@ -32,7 +32,6 @@ Essential XlsIO can read and write text boxes. The ITextBoxShape interface lets 
 
 
 
-[C#]
 
 
 
@@ -98,9 +97,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -169,18 +168,18 @@ workbook.Close()
 excelEngine.Dispose()
 
 
+{% endhighlight %}
 
-{{{ ''![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img2.png)'' | markdownify }}}
-{:.image }
+![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img2.png)
 
 
-#### Check Box
+### Check Box
 
 Essential XlsIO supports reading and writing check boxes. This can be done by using the ICheckBoxShape interface that is used to add a check box inside a worksheet.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -254,9 +253,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -332,19 +331,18 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
+
+![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img3.png)
 
 
-{{{ ''![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img3.png)'' | markdownify }}}
-{:.image }
-
-
-#### Combo Box
+### Combo Box
 
 Essential XlsIO provides support to read/write a Combo Box control. This is achieved by using the IComboBoxShape interface that is used to add a combo box inside a worksheet. The following code example illustrates how to read/write a Combo Box control.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -418,9 +416,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -494,19 +492,18 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
+
+![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img4.png)
 
 
-{{{ ''![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img4.png)'' | markdownify }}}
-{:.image }
-
-
-#### Option Button
+### Option Button
 
 Essential XlsIO now provides support to read/write an Option Button control for XLSX format. This can be achieved by using the IOptionButtonShape interface that is used to add an Option button inside a worksheet. The IFill interface is used to customize its appearance. IShapeLineFormat interface is used to modify the border. Various other text alignment properties are also supported. The following code example illustrates how to read/write an Option button control.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -584,9 +581,11 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 
-[VB.NET]
 
 
 
@@ -664,21 +663,19 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
+
+![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img5.png)
 
 
-{{{ ''![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img5.png)'' | markdownify }}}
-{:.image }
-
-
-### Insert OLE Objects 
+## Insert OLE Objects 
 
 Object Linking and Embedding (OLE) is one of the best known ways to insert data into Microsoft Office documents. Though embedding or linking objects increases the size of the original document, it helps improve the document readability by providing offline reading of documents (where the existing online links can be replaced). In order to read the content of the object, associated software needs to be installed in the machine. For example, a PDF file linked or embedded to an Excel file needs Adobe Reader in order to launch and read the PDF file. Essential XlsIO supports read and write of OLE Objects in XLSX file format. Objects can either be linked or embedded in the Excel documents by using IOleObject interface. 
 
-> {{{ ''![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img6.jpeg)'' | markdownify }}}
-{:.image }
+
 _Note: Currently read and write functions for OLE Objects are supported in Windows, ASP.NET, and WPF platforms only._
 
-List of Properties 
+### List of Properties 
 
 _Table_ _29__: Properties available_
 
@@ -720,13 +717,15 @@ Normal</td><td>
 System.Drawing.Size</td><td>
 Gets of sets the size of the OLE object.</td></tr>
 </table>
-Displaying an OleObject as Icon
+
+
+### Displaying an OleObject as Icon
 
 The following code example illustrates the condition when the property is set to True.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -782,9 +781,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -842,15 +841,15 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-Setting the Location of an OleObject
+### Setting the Location of an OleObject
 
 The following code example illustrates the condition when the location is set to K column, 8th cell.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -906,9 +905,10 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
 
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -966,15 +966,16 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
 
-Getting Image of an OleObject
+### Getting Image of an OleObject
 
 The following code example illustrates the condition where image of the oleObject is accessed.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -1030,9 +1031,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1092,15 +1093,15 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-Getting Shape from an OleObject
+### Getting Shape from an OleObject
 
 The following code example illustrates the condition when the property is set to any .png file image.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -1156,9 +1157,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1216,15 +1217,15 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-Setting the Size of the Object
+### Setting the Size of the Object
 
 The following code example illustrates the condition when the property is set to (30,30).
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -1282,9 +1283,10 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
-[VB.NET]
 
 
 
@@ -1344,9 +1346,9 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-OLE Objects and Linking Types
+### OLE Objects and Linking Types
 
 XlsIO supports two types of association of objects:
 
@@ -1357,13 +1359,13 @@ XlsIO supports two types of association of objects:
 
 Linked objects remain as separate files. The linked object would expect the object to be in the same location as created when the file is opened in another machine.
 
-Linking an OLE Object to an Excel document
+### Linking an OLE Object to an Excel document
 
 The following code example illustrates how to link an OLE Object to an Excel document.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -1427,9 +1429,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1497,19 +1499,19 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
+{% endhighlight %}
 
 2. Embedded Objects  
 
 Embedded objects are stored in the document. When a file is opened in another machine, the embedded object can be viewed without having access to the original data.
 
-Embedding an OLE Object in an Excel document
+### Embedding an OLE Object in an Excel document
 
 The following code example illustrates how to embed an OLE Object to an Excel document.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -1575,7 +1577,9 @@ excelEngine.Dispose();
 
 
 
-[VB.NET]
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 
 
@@ -1643,19 +1647,18 @@ excelEngine.Dispose()
 
 
 
+{% endhighlight %}
+
+![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img7.png)
 
 
-{{{ ''![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img7.png)'' | markdownify }}}
-{:.image }
-
-
-### Insert AutoShapes 
+## Insert AutoShapes 
 
 AutoShapes help you draw objects on your document. You can create various shapes by using AutoShapeType enumeration. Once you insert an AutoShape, you can also put a text inside it and you can move or resize them as you wish
 
 The IShape interface is the in-memory representation of the AutoShapes in an Excel workbook. These are used to create Autoshapes and to set properties for those shapes The ITextFrame interface can be used to set various shape text formats.
 
-Features
+### Features
 
 Essential XlsIO supports all major AutoShape features.
 
@@ -1663,7 +1666,7 @@ Essential XlsIO supports all major AutoShape features.
 * Text
 * AlignmentSolidFill
 
-Interactive Features
+### Interactive Features
 
 * Choose one from the options Excel 2003, Excel 2007, Excel 2010 to generate a document in Excel 2003, Excel 2007, and Excel 2010 respectively.
 * Click Create to generate and view the document generated using XlsIO.
@@ -1673,7 +1676,7 @@ The following code example is an illustration of the output.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -1891,9 +1894,9 @@ excelEngine.ThrowNotSavedOnDestroy = false;
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vb %}
 
 
 
@@ -2112,6 +2115,6 @@ excelEngine.ThrowNotSavedOnDestroy = False
 excelEngine.Dispose()
 
 
-
+{% endhighlight %}
 
 

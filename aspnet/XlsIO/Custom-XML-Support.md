@@ -7,13 +7,11 @@ control: XlsIO
 documentation: ug
 ---
 
-## Custom XML Support
+# Custom XML Support
 
-Add XML
+## Add XML
 
-
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -53,9 +51,9 @@ book.Close();
 
 excelEngine.Dipose();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 Dim fileName As String = "output.xlsx"
 
@@ -93,13 +91,13 @@ book.Close()
 
 excelEngine.Dipose()
 
+{% endhighlight %}
 
 
-Read XML
+## Read XML
 
+{% highlight C#%}
 
-
-[C#]
 
 
 
@@ -135,9 +133,11 @@ byte[] xmlData = customXmlPart.Data;
 
 System.Text.Encoding.Default.GetString(xmlData);
 
+{% endhighlight %}
+
+{% highlight vbnet%}
 
 
-[VB]
 
 
 
@@ -173,5 +173,6 @@ Dim xmlData() As Byte = customXmlPart.Data
 
 System.Text.Encoding.Default.GetString(xmlData)
 
+{% endhighlight %}
 
 
