@@ -11,14 +11,13 @@ documentation: ug
 
 The server side events for the _Ribbon_ control are as follows.
 
-{% highlight html %}
 
 <table>
 <tr>
-<td>
-Event</td><td>
-Description</td><td>
-Arguments</td></tr>
+<th>
+Event</th><th>
+Description</th><th>
+Arguments</th></tr>
 <tr>
 <td>
 TabSelect</td><td>
@@ -35,7 +34,6 @@ The selected items are passed as arguments.Arguments:1. {{ '_Control ID_' | mark
 The event is triggered when the gallery items get clicked.</td><td>
 The selected items are passed as arguments. Arguments:1. Control ID: selected gallery Item ID. 2. Gallery model.</td></tr>
 </table>
-{% endhighlight %}
 
 
 

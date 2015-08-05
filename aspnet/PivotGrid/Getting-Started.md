@@ -13,15 +13,15 @@ This section explains briefly about how to create a PivotGrid in your applicatio
 
 ## Create your first PivotGrid in ASP.NET
 
-Control Structure
+###Control Structure
 
 The following screenshot displays the PivotGrid Control.
 
- ![](Getting-Started_images/Getting-Started_img1.png)
+   ![](Getting-Started_images/Getting-Started_img1.png)
 
 
 
-##Create an application
+###Create an application
 
 This section encompasses on how to configure the PivotGrid component in an application.
 
@@ -43,7 +43,7 @@ The following screenshot displays project creation wizard.
 
 
 
-Add Control in Application
+##Add Control in Application
 
 1. Right click the project and select Add > New Folder.  Name the folder as olapgrid.
 
@@ -150,7 +150,7 @@ Note: URL value needs to be defined in order to fetch the data from the service.
 
 3. Click OK.
 
-Add Scripts and Styles
+###Add Scripts and Styles
 
 1. Add the script files and CSS files in the <head> tag of the Default.aspx page. 
 
@@ -201,7 +201,7 @@ C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScrip
 
 
 
-##Add service methods inside Interface
+###Add service methods inside Interface
 
 Add the following code example inside the IPivotGridService interface available in an IPivotGridService.cs file.
 {% highlight C# %}
@@ -259,12 +259,13 @@ public interface IPivotGridService
         Dictionary<string, object> MemberExpanded(string action, bool checkedStatus, string parentNode, string tag, string cubeName, string currentReport);
 
     }}
+{% endhighlight %}
 
-##Add Namespaces
+###Add Namespaces
 
 Add the following necessary namespaces required to implement the service methods.
 
-
+{% highlight C# %}
 
 using System;
 
@@ -290,12 +291,14 @@ using Syncfusion.JavaScript;
 
 using OLAPUTILS = Syncfusion.JavaScript.Olap;
 
-Create Class in Service file
+{% endhighlight %}
+
+###Create Class in Service file
 
 You can create the PivotGridService class to implement the service methods. You can inherit the class from the IPivotGridService interface that is created automatically while adding any new service.
 
 
-
+{% highlight C# %}
 
 
 namespace Sample
@@ -311,14 +314,15 @@ namespace Sample
     }
 
 }
+{% endhighlight %}
 
-Implement Service Methods
+###Implement Service Methods
 
 You can add the following methods to the service that are invoked for any server-side operations to be performed in PivotGrid.
 
 1. Initialize the PivotGrid helper class. 
 
-
+{% highlight C# %}
 
 PivotGrid htmlHelper = new PivotGrid();        
 
@@ -327,14 +331,14 @@ PivotGrid htmlHelper = new PivotGrid();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
 
 
-
+{% endhighlight %}
 
 
 2. Add the following relevant service methods.
 
 
 
-
+{% highlight C# %}
 
 //This method provides the required information from the server side when initializing the PivotGrid. 
 
@@ -509,7 +513,7 @@ PivotGrid htmlHelper = new PivotGrid();
         }  
 {% endhighlight %}
 
-##Configure Web.Config
+###Configure Web.Config
 
 1. You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "Sample.PivotGridService" where "PivotGridService" is the service class name and “Sample" is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.  
 1. contract: This property indicates the contract of the endpoint is exposing. Here you are referring IPivotGridService contract and hence it is "Sample.IPivotGridService".
@@ -534,11 +538,11 @@ PivotGrid htmlHelper = new PivotGrid();
     </services>
 
 </system.serviceModel>
-
+{% endhighlight %}
 
 
 2. The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property. In the following code example "Sample.PivotGridServiceAspNetAjaxBehavior" points the PivotGridService class under the namespace Sample in PivotGridService.svc.cs file that is the appropriate behavior for the endpoint. 
-
+{% highlight html %}
 [web.config]
 
 <system.serviceModel>
@@ -559,10 +563,10 @@ PivotGrid htmlHelper = new PivotGrid();
 
 </system.serviceModel>
 
-
+{% endhighlight %}
 
 3. Register the assemblies in the web.config file by adding the following code example.
-
+{% highlight html %}
 [web.config]
 
 <system.web>
@@ -584,11 +588,11 @@ PivotGrid htmlHelper = new PivotGrid();
       </compilation>
 
  </system.web> 
-
+{% endhighlight %}
 Note: x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
 
 4. Register the namespace in web.config file by adding the following code example.
-
+{% highlight html %}
 [web.config]
 
 <system.web>
@@ -604,7 +608,7 @@ Note: x.x.x.x in the above code example refers to the current version of the Ess
    </pages>
 
 </system.web>
- 
+ {% endhighlight %}
 
 Note: In this example, “Sample” indicates the name of the project and “PivotGridService” indicates the name of the WCF service created. And x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
 
@@ -616,7 +620,7 @@ In summary, this getting started tutorial gives you an overview of PivotGrid, it
 
 ##Relational
 
-##Control Structure
+###Control Structure
 
 The following screenshot displays the PivotGrid Control.
 
@@ -624,7 +628,7 @@ The following screenshot displays the PivotGrid Control.
 
 
 
-##Create an application
+###Create an application
 
 This section encompasses on how to configure the PivotGrid component in an application.
 
@@ -692,7 +696,7 @@ Note: URL value needs to be defined in order to fetch the data from the service.
 
  
 
-[ASPX]
+{% highlight html %}
 
 <body>
 
@@ -715,7 +719,7 @@ Note: URL value needs to be defined in order to fetch the data from the service.
     </form>
 
 </body>
-
+ {% endhighlight %}
 ##Add References, Scripts, Styles 
 
 ###Add References
@@ -755,15 +759,14 @@ Note: URL value needs to be defined in order to fetch the data from the service.
 Note: 
 
 3. Use the following code example while adding scripts and styles             
-4. Same files can also be acquired from the following location 
-> 
+4. Same files can also be acquired from the following location  
 C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScript\assets\
 
 ##Add WCF Service for PivotGrid
 
 
 
-
+{% highlight html %}
 
 <head>
 
@@ -779,7 +782,7 @@ C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScrip
 
 
 {% endhighlight %}
-##Create WCF Services
+###Create WCF Services
 
 1. Right-click the project and select Add > New Folder. Name the folder as wcf.
 
@@ -802,7 +805,7 @@ C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScrip
 
 
 
-##Add service methods inside Interface
+###Add service methods inside Interface
 
 Add the following code example inside the IPivotGridService interface available in an IPivotGridService.cs file.
 
@@ -837,7 +840,7 @@ Add the following code example inside the IPivotGridService interface available 
 
     }
 
-##Add Namespaces
+###Add Namespaces
 
 Add the following necessary namespaces required to implement the service methods.
 
@@ -867,7 +870,7 @@ using Syncfusion.JavaScript;
 
 using Syncfusion.PivotAnalysis.Base;
 
-Create Class in Service file
+###Create Class in Service file
 
 You can create the PivotGridService class to implement the service methods. You can inherit the class from the IPivotGridService interface that is created automatically while adding any new service.
 
@@ -889,7 +892,7 @@ namespace Sample
 
 }
 
-##Implement Service Methods
+###Implement Service Methods
 
 You can add the following methods to the service that are invoked for any server-side operations to be performed in PivotGrid.
 
@@ -1218,7 +1221,7 @@ namespace WebApplication2
 }
 
 {% endhighlight %}
-##Configure Web.Config
+###Configure Web.Config
 
 1. You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "Sample.PivotGridService" where "PivotGridService" is the service class name and “Sample" is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.  
 1. contract: This property indicates the contract of the endpoint is exposing. Here you are referring IPivotGridService contract and hence it is "Sample.IPivotGridService".
@@ -1245,10 +1248,10 @@ namespace WebApplication2
 
 </system.serviceModel>
 
-
+{% endhighlight %}
 
 2. The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property. In the following code example "Sample.PivotGridServiceAspNetAjaxBehavior" points the PivotGridService class under the namespace Sample in PivotGridService.svc.cs file that is the appropriate behavior for the endpoint. 
-
+{% highlight html %}
 [web.config]
 
 <system.serviceModel>
@@ -1268,11 +1271,11 @@ namespace WebApplication2
     </behaviors>
 
 </system.serviceModel>
-
+{% endhighlight %}
 
 
 3. Register the assemblies in the web.config file by adding the following code example.
-
+{% highlight html %}
 [web.config]
 
 <system.web>
@@ -1294,13 +1297,12 @@ namespace WebApplication2
       </compilation>
 
  </system.web> 
-
-> 
+{% endhighlight %}
 
 Note: xx.x.x.xx in the above code example refers to the current version of the Essential Studio running in your system.
 
 4. Register the namespace in web.config file by adding the following code example.
-
+{% highlight html %}
 [web.config]
 
 <system.web>

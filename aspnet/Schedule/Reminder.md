@@ -284,7 +284,7 @@ Execute the above code to render the following output.
 ![](Reminder_images/Reminder_img1.png)
 
 
-   _Figure_ _106_:  schedule with Reminder._
+   Figure 106 :  schedule with Reminder.
 
 
 

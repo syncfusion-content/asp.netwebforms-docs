@@ -22,7 +22,7 @@ The following screen shot displays the Schedule control with daily important act
 ![C:/Users/maheshp/Desktop/ss1.PNG](Getting-started_images/Getting-started_img1.png)
 
 
-_Figure_ _34_: Schedule control with daily important activities_
+Figure 34 : Schedule control with daily important activities
 
 ##Creating a Schedule
 
@@ -46,9 +46,9 @@ _Figure_ _34_: Schedule control with daily important activities_
 ![C:/Users/maheshp/Desktop/s2.PNG](Getting-started_images/Getting-started_img2.png)
 
 
-_Figure_ _35_: Empty Schedule control_
+Figure 35 : Empty Schedule control
 
-Passing data to Schedule control
+###Passing data to Schedule control
 
 * You can add appointment to the Schedule control by passing data to the Schedule control either locally or remotely. In the following code example, you can see how to bind the remote data to the Schedule control.
 
@@ -69,9 +69,6 @@ In order to bind the remote data to the Schedule control use the DataManager pro
 
 {% highlight html %}
 
-
-
-
 <ej:Schedule runat="server" ID="Schedule1" CurrentDate="5/4/2014">
 
 <AppointmentSettings Id="Id" Subject="Subject" StartTime="StartTime" EndTime="EndTime" AllDay="AllDay" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" />
@@ -86,8 +83,7 @@ The following screen shot displays a Schedule control with the appointments in a
 
 ![C:/Users/maheshp/Desktop/s3.PNG](Getting-started_images/Getting-started_img3.png)
 
-
-_Figure_ _36_: Schedule control with the appointments in a normal style_
+Figure 36 : Schedule control with the appointments in a normal style
 
 * You can also customize the appointments within the Scheduler using the template support discussed in the following sections.
 
@@ -212,7 +208,7 @@ For example : $system drive: \Program Files\ Syncfusion\EssentialStudio\12.1.0.4
 ![C:/Users/maheshp/Desktop/s4.PNG](Getting-started_images/Getting-started_img4.png)
 
 
-_Figure_ _37_: Scheduler with customized appointments_
+Figure 37 : Scheduler with customized appointments
 
 ##Change the Schedule View
 
@@ -334,7 +330,7 @@ break;
 ![C:/Users/maheshp/Desktop/s5.PNG](Getting-started_images/Getting-started_img5.png)
 
 
-_Figure_ _38_: Scheduler with fixed appointment height in Month view_
+Figure 38 : Scheduler with fixed appointment height in Month view
 
 ##Change the appointment height through CSS
 
@@ -479,7 +475,7 @@ break;
 ![C:/Users/maheshp/Desktop/s6.PNG](Getting-started_images/Getting-started_img6.png)
 
 
-_Figure_ _39_: Customized Schedule_
+Figure 39 : Customized Schedule
 
 ##Manipulate the Appointments
 
@@ -499,7 +495,7 @@ The following screen shot displays an appointment window pop- up that appears wh
 ![C:/Users/maheshp/Desktop/s7.PNG](Getting-started_images/Getting-started_img7.png)
 
 
-_Figure_ _40_: Schedule with appointment window pop- up_
+Figure 40 : Schedule with appointment window pop- up
 
 The following screen shots illustrates a quick appointment pop-up window.
 
@@ -507,7 +503,7 @@ The following screen shots illustrates a quick appointment pop-up window.
 ![C:/Users/maheshp/Desktop/s8.PNG](Getting-started_images/Getting-started_img8.png)
 
 
-_Figure_ _41_: Schedule with quick appointment pop-up window_
+Figure 41 : Schedule with quick appointment pop-up window
 
 
 
@@ -530,7 +526,7 @@ Important: Incase, you need to manipulate with newly created or edited appointme
 ![C:/Users/maheshp/Desktop/s9.PNG](Getting-started_images/Getting-started_img9.png)
 
 
-_Figure_ _42_: Schedule with appointment edit pop up_
+Figure 42 : Schedule with appointment edit pop up
 
 * To delete an appointment, click the appointment, and then click delete icon in the quick appointment pop-up as illustrated in the following screen shot.
 
@@ -538,7 +534,7 @@ _Figure_ _42_: Schedule with appointment edit pop up_
 ![C:/Users/maheshp/Desktop/s10.PNG](Getting-started_images/Getting-started_img10.png)
 
 
-_Figure_ _43_: Schedule with delete appointment pop up_
+Figure 43 : Schedule with delete appointment pop up
 
 * You can also delete the required appointment in the schedule control using the delete key option. This works only when you set “AllowKeyboardNavigation” option to “True”.
 
@@ -552,7 +548,7 @@ _Figure_ _43_: Schedule with delete appointment pop up_
 ![C:/Users/maheshp/Desktop/s11.PNG](Getting-started_images/Getting-started_img11.png)
 
 
-_Figure_ _44_: Appointment pop up with Repeat option_
+Figure 44 : Appointment pop up with Repeat option
 
 * When you check the repeat option, the sub-options available in the recurrence category are displayed in the appointment pop-up as follows.
 
@@ -561,7 +557,7 @@ _Figure_ _44_: Appointment pop up with Repeat option_
 ![C:/Users/maheshp/Desktop/s13.PNG](Getting-started_images/Getting-started_img12.png)
 
 
-_Figure_ _45_: Appointment pop up with sub options of Repeat_
+Figure 45 : Appointment pop up with sub options of Repeat
 
 * You can choose the required recurrence pattern from the available options and then click Done.The main appointment pop-up appears as illustrated in the following screen shot.
 
@@ -577,7 +573,7 @@ Figure 46: Main appointment pop up
 ![C:/Users/maheshp/Desktop/n2.PNG](Getting-started_images/Getting-started_img14.png)
 
 
-_Figure_ _47_: Recurrence appointment with daily pattern_
+Figure 47 : Recurrence appointment with daily pattern
 
 * You can store the chosen recurrence options usually in a RecurrenceRule field in a string format.  Also, the Recurrence field indicates whether the appointments created are normal or recurrence type. You can create appointments in a recurrence type by setting Boolean type to True.
 
@@ -599,7 +595,7 @@ _Figure_ _47_: Recurrence appointment with daily pattern_
 ![C:/Users/maheshp/Desktop/n3.PNG](Getting-started_images/Getting-started_img15.png)
 
 
-_Figure_ _48_: Schedule with Edit repeat appointment pop up_
+Figure 48: Schedule with Edit repeat appointment pop up
 
 * When you click the recurrence appointment, a quick appointment window opens with the following options: “Edit Appointment”, “Edit Series” and “delete” icon for deleting the appointments.
 
@@ -615,7 +611,6 @@ Figure 49: Schedule with quick appointment pop up
 * For example, you can block the appointment pop-up on all the weekends (Default week start date is Monday) using the following code sample with AppointmentWindowOpen event. 
 
 {% highlight html %}
-[ASP.NET]
 
 <ej:Schedule runat="server" ID="Schedule1"
 

@@ -59,15 +59,15 @@ OnAfterServiceInvoke = function (evt) {
 
 The following operations can be achieved by using the Grouping bar:
 
-Filtering
+#####Filtering
 
 Filtering option available in the Grouping bar allows you to select a specific set of values that needs to be displayed in the PivotGrid control and hides the rest. By default, the filtering option is applicable only for the Row, Column and Filter areas.
 
-Sorting
+#####Sorting
 
 Sorting option available in the Grouping bar allows you to sort values besides the respective PivotItem in the PivotGrid control. This option is applicable for the PivotItems available only in the Row and Column areas. The sort indicator present inside the button indicates whether the values are in ascending or descending order. Normally, the up arrow indicates ascending order and the down arrow indicates descending order. By default, the values are sorted in ascending order.
 
-Remove
+#####Remove
 
 Remove option available in the Grouping bar allows you to remove a specific PivotItem from the PivotGridcontrol.
 

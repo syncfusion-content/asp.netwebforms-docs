@@ -40,9 +40,10 @@ For Adaptive Schedule, you can refer to the following css file in the applicatio
 
 
 <asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>" SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
-
-
 {% endhighlight %}
+
+
+ 
  ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 
@@ -99,7 +100,7 @@ The following screenshot displays the Schedule control with all-day row hidden,
 ![C:/Users/maheshp/Pictures/sshot-8.png](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 
-_Figure 2: Schedule with disabled all day row_
+Figure 2: Schedule with disabled all day row.
 
 
 
@@ -144,7 +145,7 @@ The following screenshot displays the Schedule control with the height set to â€
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 
 
-   _Figure_ _111_:  Adjusting schedule size height._
+   Figure_ _111_:  Adjusting schedule size height.
 
 ###width
 
@@ -186,7 +187,7 @@ The following screenshot displays the Schedule control with the width set to â€œ
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
 
 
-   _Figure_ _112_:  Adjusting schedule size width_
+   Figure 112:  Adjusting schedule size width
 
 ##Adjust Cell Size
 

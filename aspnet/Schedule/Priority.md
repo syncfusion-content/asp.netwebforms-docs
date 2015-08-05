@@ -22,25 +22,25 @@ documentation: ug
 
 The following are the sub-properties used within the prioritySettings.
 
-enable
+####enable
 
 * This option accepts either true or false, denoting whether to enable/disable the priority option.
 
-datasource 
+####datasource 
 
 * It either accepts the local JSON data or remote data for binding the priority related information.
 
-text
+####text
 
 * It holdsthe binding name for text field in the priority dataSource.
 
-id
+####id
 
 * It holds the binding name for id field in the priority dataSource.
 
 
 
-value
+####value
 
 * It holds the binding name for value field in the priority dataSource.
 

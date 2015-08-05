@@ -58,7 +58,7 @@ The following screenshot displays the Schedule control with ReadOnly property se
 ![C:/Users/maheshp/Pictures/sshot-3.png](Appointment_images/Appointment_img1.png)
 
 
-_Figure 1: Schedule with Read Only property_
+Figure 1: Schedule with Read Only property
 
 
 
@@ -170,7 +170,7 @@ The following screenshot displays the Schedule control with the quick appointmen
 ![](Appointment_images/Appointment_img11.png)
 
 
-_Figure_ _65_: schedule with open the editing appointment window_
+Figure 65 : schedule with open the editing appointment window
 
 ###Using Context menu
 
@@ -179,7 +179,7 @@ _Figure_ _65_: schedule with open the editing appointment window_
 ![](Appointment_images/Appointment_img12.png)
 
 
-_Figure_ _66_:  schedule with open appointment using context menu._
+Figure 66 :  schedule with open appointment using context menu.
 
 * The following screenshot displays the Edit Appointment window that opens when you click OpenAppointment option.
 
@@ -188,7 +188,7 @@ _Figure_ _66_:  schedule with open appointment using context menu._
 ![](Appointment_images/Appointment_img13.png)
 
 
-_Figure_ _67_: schedule with display the edit appointment window._
+Figure 67 : schedule with display the edit appointment window.
 
 * Click Done button to save the updated values.
 
@@ -205,7 +205,7 @@ _Figure_ _67_: schedule with display the edit appointment window._
 ![](Appointment_images/Appointment_img14.png)
 
 
-_Figure_ _69_: schedule with Appointment deletion._
+Figure 69 : schedule with Appointment deletion.
 
 * When you click the delete icon, the appointment is deleted as displayed in the following screenshot.
 
@@ -214,7 +214,7 @@ _Figure_ _69_: schedule with Appointment deletion._
 ![](Appointment_images/Appointment_img15.png)
 
 
-_Figure_ _70_: schedule with after the appointment deletion._
+Figure 70 : schedule with after the appointment deletion.
 
 ###Using Context menu
 
@@ -225,7 +225,7 @@ _Figure_ _70_: schedule with after the appointment deletion._
 ![](Appointment_images/Appointment_img16.png)
 
 
-_Figure_ _71_: schedule with appointment deletion using context menu._
+Figure 71 : schedule with appointment deletion using context menu.
 
 
 
@@ -287,7 +287,7 @@ SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 ![](Appointment_images/Appointment_img19.png)
 
 
-_Figure_ _75_: schedule with appointment resize._
+Figure 75: schedule with appointment resize.
 
 * Once the resizing is stopped, the resized appointment with its new start time is displayed as follows.
 
@@ -296,7 +296,7 @@ _Figure_ _75_: schedule with appointment resize._
 ![](Appointment_images/Appointment_img20.png)
 
 
-_Figure_ _76_: schedule with after the appointment resized._
+Figure 76: schedule with after the appointment resized.
 
 
 
@@ -438,7 +438,7 @@ Execute the above code to render the following output.
 ![](Appointment_images/Appointment_img21.png)
 
 
-_Figure_ _125_: Schedule with appointment search_
+Figure 125: Schedule with appointment search
 
 
 
@@ -449,7 +449,7 @@ _Figure_ _125_: Schedule with appointment search_
 ![](Appointment_images/Appointment_img22.png)
 
 
-_Figure_ _126_: Grid with appointment search result_
+Figure 126 : Grid with appointment search result
 
 ###Using Filters
 
@@ -615,7 +615,7 @@ Execute the above code to render the following output.
 ![](Appointment_images/Appointment_img23.png)
 
 
-_Figure_ _127_: Schedule with search appointment filters_
+Figure 127: Schedule with search appointment filters
 
 * Click the search button to enable the filter option.
 
@@ -624,7 +624,7 @@ _Figure_ _127_: Schedule with search appointment filters_
 ![](Appointment_images/Appointment_img24.png)
 
 
-_Figure_ _128_: Grid with appointment search result_
+Figure 128: Grid with appointment search result
 
 
 
@@ -672,7 +672,7 @@ SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 ![](Appointment_images/Appointment_img25.png)
 
 
-_Figure_ _72_: schedule with appointment drag and drop._
+Figure 72 : schedule with appointment drag and drop.
 
 * When the appointment with the Subject “Daily Planet” is being dragged from its original location, it looks as the one following screenshot with the shadow of the appointment casting behind it.
 
@@ -681,7 +681,7 @@ _Figure_ _72_: schedule with appointment drag and drop._
 ![](Appointment_images/Appointment_img26.png)
 
 
-_Figure_ _73_: schedule with appointment while dragging in the cell._
+Figure 73 : schedule with appointment while dragging in the cell.
 
 * The following screenshot displays the appointment with the subject “Daily Planet” in the timeline 1.00 AM – 2.00 AM (02 May, 2014) is dropped to the new location to the date 29th April, 2014 in the timeline between 3.00 AM – 4.00 AM.
 
@@ -690,7 +690,7 @@ _Figure_ _73_: schedule with appointment while dragging in the cell._
 ![](Appointment_images/Appointment_img27.png)
 
 
-_Figure_ _74_:  schedule with appointment dropped in the cell._
+Figure 74 :  schedule with appointment dropped in the cell.
 
 
 
@@ -718,7 +718,7 @@ _Figure_ _74_:  schedule with appointment dropped in the cell._
 ![](Appointment_images/Appointment_img28.png)
 
 
-_Figure_ _77_: schedule with new recurrence appointment._
+Figure 77 : schedule with new recurrence appointment.
 
 * On clicking the New Recurring Appointment option opens the recurrence appointment window as displayed in the following screenshot.
 
@@ -727,7 +727,7 @@ _Figure_ _77_: schedule with new recurrence appointment._
 ![](Appointment_images/Appointment_img29.png)
 
 
-_Figure_ _78_: schedule with creating the new recurrence._
+Figure 78 : schedule with creating the new recurrence.
 
 * Once the required options are selected in the recurrence window click the Done button.It navigates you to its parent window with the appointment details. Fill-in those required details and click Done to save it.
 
@@ -736,14 +736,14 @@ _Figure_ _78_: schedule with creating the new recurrence._
 ![](Appointment_images/Appointment_img30.png)
 
 
-_Figure_ _79_: schedule with after created the new recurrence._
+Figure 79: schedule with after created the new recurrence.
 
 * The recurrence appointment after getting saved to the Schedule is displayed as follows.
 
 ![](Appointment_images/Appointment_img31.png)
 
 
-_Figure_ _80_: schedule with after created the new recurrence appointment in week view._
+Figure 80 : schedule with after created the new recurrence appointment in week view.
 
 * Since, you have chosen the option to end the recurrence after 10 occurrences on daily basis, the appointments repeat for continuous 10 days and then end. 
 * This is viewed clearly by navigating to the month view, where the appointment with subject Automated testing saved for 10 days from 12 Aug 2014 to 21 Aug 2014.
@@ -753,5 +753,5 @@ _Figure_ _80_: schedule with after created the new recurrence appointment in wee
 ![](Appointment_images/Appointment_img32.png)
 
 
-_Figure_ _81_:  schedule with created recurrence appointment in month view._
+Figure 81 :  schedule with created recurrence appointment in month view.
 

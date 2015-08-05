@@ -15,7 +15,7 @@ documentation: ug
 * The two way binding support is given to the currentView, currentDate and datasource properties. 
 * ej-Schedule is the control tag in which ej is tag prefix and Schedule is the control name.
 
-##Rendering the Schedule
+###Rendering the Schedule
 
 You can render the Schedule by using the following code example. Object in the array collection such as appointmentSetting, contextMenuSettings, etc. are extended with hyphen in the same tag.
 
@@ -65,7 +65,7 @@ e-currentdate="setDate" e-contextMenuSettings-enable="true">
 
 {% endhighlight %}
 
-##Adding Context menu settings
+###Adding Context menu settings
 
 * Context menu is an object type that has inner array object. 
 * contextMenuSettings contains an object called menuItem.
@@ -126,7 +126,7 @@ e-id="recurrence" e-text="Create recurrence Appointment">
 
 {% endhighlight %}
 
-##Adding Categorize option
+###Adding Categorize option
 
 * Categorizeoption is an array object. 
 * contextMenuSettings contains an object called menuItem.

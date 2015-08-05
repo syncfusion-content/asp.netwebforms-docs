@@ -22,7 +22,7 @@ The four kinds of Layouts supported by the PivotGrid are as follows:
 * Normal top summary
 * No summaries
 
-##Normal
+####Normal
 
 The Normal layout is the default Layout of the PivotGrid where the summary cells are positioned at the bottom of each parent member and child members appear next to their parent.
 
@@ -41,7 +41,7 @@ The Normal layout is the default Layout of the PivotGrid where the summary cel
 
 {% endhighlight %}
 
-##Excel-like Layout
+####Excel-like Layout
 
 In the Excel-like layout, the summary cells are positioned at the bottom of the Grid and the child members appear under their parent member with a small indent.
 
@@ -59,7 +59,7 @@ In the Excel-like layout, the summary cells are positioned at the bottom of th
 
 {% endhighlight %}
 
-##Normal Top Summary
+####Normal Top Summary
 
 In the NormalTopSummary Layout, the summary cells are positioned at the top of each parent member and the child member appears next to their parent.
 
@@ -75,7 +75,7 @@ In the NormalTopSummary Layout, the summary cells are positioned at the top of
 
 {% endhighlight %}
 
-##No Summaries
+####No Summaries
 
 In No Summaries Layout, the summary cells are hidden and the child members appear next to their parent member.
 
