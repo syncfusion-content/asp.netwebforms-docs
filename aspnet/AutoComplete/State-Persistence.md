@@ -32,7 +32,7 @@ In the design page, add an AutoComplete element from ToolBox and set EnablePersi
 The following screenshot is the output for AutoComplete when EnablePersistence is set to True.
 
 ![](State-Persistence_images/State-Persistence_img1.png)
-{:.image }
+
 
 
 ## Templates
@@ -287,7 +287,7 @@ Define the CSS classes for the sprite images, you can find the images in the fol
 
 
 
-Configure the template structure for AutoComplete control by including a &lt;div&gt; element with an image and text in every row of the popup panel. Assign the corresponding variable name within ${&lt;field name&gt;} to map them into the list.
+Configure the template structure for AutoComplete control by including a &lt;div&gt; element with an image and text in every row of the popup panel. Assign the corresponding variable name within ${<field name>} to map them into the list.
 
 
 
@@ -308,6 +308,6 @@ Configure the template structure for AutoComplete control by including a &lt;div
 The following image is the output for AutoComplete control with template support.
 
 ![](State-Persistence_images/State-Persistence_img2.png)
-{:.image }
+
 
 

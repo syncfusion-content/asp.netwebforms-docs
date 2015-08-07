@@ -17,11 +17,11 @@ The RangePadding property allows you to customize the automatic range calculatio
 
 {% highlight html %}
 
-&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" RangePadding="none" ValueType="numeric"&gt;         
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" RangePadding="none" ValueType="numeric">         
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-&lt;/ej:RangeNavigator&gt;
+</ej:RangeNavigator>
 
 {% endhighlight %}
 
@@ -34,7 +34,7 @@ The following screenshot illustrates a RangeNavigator with RangePadding set to n
 
 
 ![](Range-Padding_images/Range-Padding_img1.png)
-{:.image }
+
 
 
 ## Additional:
@@ -46,7 +46,7 @@ The following screenshot illustrates a RangeNavigator with RangePadding set to a
 
 
 ![](Range-Padding_images/Range-Padding_img2.png)
-{:.image }
+
 
 
 ## Normal:
@@ -56,7 +56,7 @@ In normal RangePadding, automatic range calculation differs based on the data.
 The following screenshot illustrates RangeNavigator with RangePadding set to normal
 
 ![](Range-Padding_images/Range-Padding_img3.png) 
-{:.image }
+
 
 
 ## Round:
@@ -66,7 +66,7 @@ Round RangePadding for a numerical range rounds the range of the control to the 
 The following screenshot illustrates a RangeNavigator with RangePadding set to Round.
 
 ![](Range-Padding_images/Range-Padding_img4.png) 
-{:.image }
+
 
 
 ## DateTime
@@ -75,11 +75,11 @@ Using the default range calculation for RangeNavigator, the RangePadding propert
 
 {% highlight html %}
 
-&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" RangePadding="none"&gt;         
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" RangePadding="none">         
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-&lt;/ej:RangeNavigator&gt;
+</ej:RangeNavigator>
 
 {% endhighlight %}
 
@@ -90,7 +90,7 @@ By default, the RangePadding for DateTime range is none. The range is calculated
 The following screenshot illustrates a RangeNavigator with RangePadding set to none.
 
 ![](Range-Padding_images/Range-Padding_img5.png)
-{:.image }
+
 
 
 ## Round:
@@ -100,7 +100,7 @@ Round RangePadding for a DateTime range rounds the range of the control to the n
 The following screenshot illustrates a RangeNavigator with RangePadding set to Round.
 
 ![](Range-Padding_images/Range-Padding_img6.png) 
-{:.image }
+
 
 
 ## Customize axis range of navigator
@@ -111,17 +111,17 @@ The following code example renders a RangeNavigator with a range from 2010 Janua
 
 {% highlight html %}
 
-&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server"&gt;         
+<ej:RangeNavigator ID="RangeNavigator1" runat="server">         
 
-&lt;RangeSettings Start="2010/1/1" End="2012/13/1" /&gt;
+<RangeSettings Start="2010/1/1" End="2012/13/1" />
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-&lt;/ej:RangeNavigator&gt;
+</ej:RangeNavigator>
 
 {% endhighlight %}
 
 ![](Range-Padding_images/Range-Padding_img7.png)
-{:.image }
+
 
 

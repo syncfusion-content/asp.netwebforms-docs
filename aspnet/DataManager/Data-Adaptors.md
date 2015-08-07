@@ -21,11 +21,11 @@ JSONAdaptor is used to process JSON data. It contains methods to process the giv
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" Adaptor="JsonAdaptor"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" Adaptor="JsonAdaptor"/>
 
 
 
@@ -35,23 +35,23 @@ JSONAdaptor is used to process JSON data. It contains methods to process the giv
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
@@ -157,7 +157,7 @@ public partial class DataManager : System.Web.UI.Page
 The result of above code example is illustrated as follows.
 
 ![](Data-Adaptors_images/Data-Adaptors_img1.png)
-{:.image }
+
 
 
 ## URL Adaptor
@@ -166,9 +166,9 @@ Url Adaptor of DataManager can be used when you want to use remote service to re
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
-        &lt;ej:DataManager runat="server" ID="FlatData" URL="Default.aspx/Data" Adaptor="UrlAdaptor"/&gt;
+        <ej:DataManager runat="server" ID="FlatData" URL="Default.aspx/Data" Adaptor="UrlAdaptor"/>
 
         <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData" 
 
@@ -176,23 +176,23 @@ Url Adaptor of DataManager can be used when you want to use remote service to re
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
@@ -241,7 +241,7 @@ public partial class DataManager : System.Web.UI.Page
 The result of the above code example is illustrated as follows.
 
 ![](Data-Adaptors_images/Data-Adaptors_img2.png)
-{:.image }
+
 
 
 ## OData Adaptor
@@ -250,9 +250,9 @@ Odata Adaptor that is extended from Url Adaptor, is used for consuming data thro
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" CrossDomain="true" Offline="true"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" CrossDomain="true" Offline="true"/>
 
         <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData" 
 
@@ -260,30 +260,30 @@ Odata Adaptor that is extended from Url Adaptor, is used for consuming data thro
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 The result of the above code example is illustrated as follows.
 
 ![](Data-Adaptors_images/Data-Adaptors_img3.png)
-{:.image }
+
 
 
 ## WebAPI Adaptor
@@ -292,9 +292,9 @@ The result of the above code example is illustrated as follows.
 
 WebApi Adaptor, extended from UrlAdaptor, of DataManager is used for retrieving data from WebApi service. Refer to the following code example.
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/UGService/api/Orders" CrossDomain="true" Adaptor="WebApiAdaptor"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/UGService/api/Orders" CrossDomain="true" Adaptor="WebApiAdaptor"/>
 
         <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData" 
 
@@ -302,23 +302,23 @@ WebApi Adaptor, extended from UrlAdaptor, of DataManager is used for retrieving 
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
@@ -327,7 +327,7 @@ Result of the above code example is illustrated as follows.
 
 
 ![](Data-Adaptors_images/Data-Adaptors_img4.png)
-{:.image }
+
 
 
 ## RemoteSave Adaptor
@@ -336,11 +336,11 @@ RemoteSaveAdaptor, extended from JsonAdaptor of DataManager, is used for binding
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" Adaptor="remoteSaveAdaptor"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" Adaptor="remoteSaveAdaptor"/>
 
 
 
@@ -350,23 +350,23 @@ RemoteSaveAdaptor, extended from JsonAdaptor of DataManager, is used for binding
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
@@ -474,7 +474,7 @@ Result of the above code example is illustrated as follows.
 
 
 ![](Data-Adaptors_images/Data-Adaptors_img5.png)
-{:.image }
+
 
 
 ## Custom Adaptor
@@ -483,41 +483,41 @@ Custom adaptor is a key technique to customize adaptors in DataManager. Normally
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server"/&gt;
+        <ej:DataManager ID="FlatData" runat="server"/>
 
 
 
-        &lt;ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData" &gt;
+        <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData" >
 
-            &lt;ClientSideEvents Load="OnLoad" /&gt;
+            <ClientSideEvents Load="OnLoad" />
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 
 
-&lt;asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server"&gt;
+<asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server">
 
-    &lt;script type="text/javascript"&gt;
+    <script type="text/javascript">
 
         $(function () {// Document is ready.
 
@@ -553,17 +553,17 @@ Custom adaptor is a key technique to customize adaptors in DataManager. Normally
 
 
 
-    &lt;/script&gt;
+    </script>
 
 
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 Result of above code example is as follows.
 
 ![](Data-Adaptors_images/Data-Adaptors_img6.png)
-{:.image }
+
 
 

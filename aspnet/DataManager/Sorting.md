@@ -15,11 +15,11 @@ Sorting is basic query in DataManager. It enables you to view the items or recor
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/>
 
 
 
@@ -29,30 +29,30 @@ Sorting is basic query in DataManager. It enables you to view the items or recor
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
 ![](Sorting_images/Sorting_img1.png)
-{:.image }
+
 
 
 ## SortByDesc
@@ -61,11 +61,11 @@ The sortByDesc query of the data manager is used to sort the specified field in 
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/>
 
 
 
@@ -75,30 +75,30 @@ The sortByDesc query of the data manager is used to sort the specified field in 
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
 ![](Sorting_images/Sorting_img2.png)
-{:.image }
+
 
 
 ## Dynamic sorting
@@ -107,11 +107,11 @@ The table can be dynamically sorted by using an external button click event. You
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/>
 
 
 
@@ -121,33 +121,33 @@ The table can be dynamically sorted by using an external button click event. You
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-    &lt;input id="field" type="text" placeholder="fieldName" /&gt;
+    <input id="field" type="text" placeholder="fieldName" />
 
-    &lt;ej:Button runat="server" Type="Button" Text="Sort" ClientSideOnClick="onClick" ID="submit"&gt;&lt;/ej:Button&gt;
+    <ej:Button runat="server" Type="Button" Text="Sort" ClientSideOnClick="onClick" ID="submit"></ej:Button>
 
 
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server"&gt;
+<asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server">
 
-    &lt;script type="text/javascript" class="jsScript"&gt;
+    <script type="text/javascript" class="jsScript">
 
         function onClick(e) {
 
@@ -169,16 +169,16 @@ The table can be dynamically sorted by using an external button click event. You
 
         }
 
-    &lt;/script&gt;
+    </script>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 Result of above code example is illustrated as follows.
 
 ![](Sorting_images/Sorting_img3.png)
-{:.image }
+
 
 
 ## Multi sorting
@@ -187,11 +187,11 @@ Multi sorting is a special technique, where you can sort multiple fields by addi
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/>
 
         <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData"
 
@@ -199,29 +199,29 @@ Multi sorting is a special technique, where you can sort multiple fields by addi
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt; 
+        </ej:Grid> 
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 Result of above code example is illustrated as follows.
 
 ![](Sorting_images/Sorting_img4.png)
-{:.image }
+
 
 

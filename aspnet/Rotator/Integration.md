@@ -128,7 +128,7 @@ protected void Page_Load(object sender, EventArgs e)
 The following screenshot displays the output of the above code example.
 
 ![](Integration_images/Integration_img1.png)
-{:.image }
+
 
 
 ## Knockout support
@@ -146,7 +146,7 @@ Two-way binding supports both the processes. It applies the observable values t
 
 For more information on the Knockout binding, you can refer to the online documentation in the following link location: [http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
 
-_Note: Add the following script files along with the given code to access Knockout binding. They have JS library for Knockout binding._
+> Note: Add the following script files along with the given code to access Knockout binding. They have JS library for Knockout binding.
 
 * knockout-min.js
 * ej.widget.ko-latest.min.js
@@ -265,7 +265,7 @@ The following screenshot displays the output of the above code example.
 
 
  ![](Integration_images/Integration_img2.png)
-{:.image }
+
 
 
 ## Angular support
@@ -283,7 +283,7 @@ To know more details about the Angularbinding, you can refer to the following l
 
 [http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
 
-_Note: Add the following script files as given in the following example to access Knockout binding. They have JS library for angular binding._
+> Note: Add the following script files as given in the following example to access Knockout binding. They have JS library for angular binding.
 
 * angular-min.js
 * ej.widget.angular-latest.min.js
@@ -381,6 +381,6 @@ The following screenshot displays the output of the above code example.
 
 
 ![](Integration_images/Integration_img3.png)
-{:.image }
+
 
 

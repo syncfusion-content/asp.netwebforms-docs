@@ -14,7 +14,7 @@ documentation: ug
 The Essential ASP.NET WebForms Editor control includes numeric, percentage, currency and maskedit TextBox controls. You can learn how to use ASP.NET Textbox control in the Electricity Bill Calculator Application from the following documentation. This guides you to use the wide range of Textbox functionalities to complete this application.
 
 [http://help.syncfusion.com/ug/js/ImagesExt/image73_8.jpg](Getting-Started_images/Getting-Started_img1.jpeg) 
-{:.image }
+
 
 
 ### Create TextBox Controls
@@ -247,7 +247,7 @@ The following styles are added to arrange the Textboxes.  You can add the foll
 Run the code to render a Textbox control as follows.
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image73_8.jpg](Getting-Started_images/Getting-Started_img2.jpeg)
-{:.image }
+
 
 
 ### Set the MinValue, MaxValue, and value in Textboxes
@@ -359,7 +359,7 @@ In the above mentioned use case scenario, you can set the MinValue, MaxValue,�
 Run the code to render the resultant output of the above steps.
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image73_9.jpg](Getting-Started_images/Getting-Started_img3.jpeg) 
-{:.image }
+
 
 
 ### Set the Strict Mode Option
@@ -547,6 +547,6 @@ Run the above code to render the TextBox control. Fill the required TextBox f
 
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image73_10.jpg](Getting-Started_images/Getting-Started_img4.jpeg)
-{:.image }
+
 
 

@@ -17,11 +17,11 @@ Batch Editing is a unique feature, where requests to add, remove and change are 
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" Adaptor="JsonAdaptor" /&gt;
+        <ej:DataManager ID="FlatData" runat="server" Adaptor="JsonAdaptor" />
 
         <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData"
 
@@ -29,45 +29,45 @@ Batch Editing is a unique feature, where requests to add, remove and change are 
 
             .take(5)">
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="FirstName" HeaderText="First Name" Width="75" /&gt;
+                <ej:Column Field="FirstName" HeaderText="First Name" Width="75" />
 
-                &lt;ej:Column Field="LastName" HeaderText="Last Name" Width="75" /&gt;
+                <ej:Column Field="LastName" HeaderText="Last Name" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
     Employee ID
 
-    &lt;input id="EmployeeID" class="e-ejinputtext" type="text" value="" /&gt;
+    <input id="EmployeeID" class="e-ejinputtext" type="text" value="" />
 
     First Name
 
-    &lt;input id="FirstName" class="e-ejinputtext" type="text" value="" /&gt;
+    <input id="FirstName" class="e-ejinputtext" type="text" value="" />
 
     Last Name 
 
-    &lt;input id="LastName" class="e-ejinputtext" type="text" value="" /&gt;
+    <input id="LastName" class="e-ejinputtext" type="text" value="" />
 
-    &lt;ej:Button runat="server" Type="Button" Text="Add" ClientSideOnClick="Click" ID="button"&gt;&lt;/ej:Button&gt;
+    <ej:Button runat="server" Type="Button" Text="Add" ClientSideOnClick="Click" ID="button"></ej:Button>
 
-    &lt;ej:Button runat="server" Type="Button" Text="Change" ClientSideOnClick="Click" ID="button1"&gt;&lt;/ej:Button&gt;
+    <ej:Button runat="server" Type="Button" Text="Change" ClientSideOnClick="Click" ID="button1"></ej:Button>
 
-    &lt;ej:Button runat="server" Type="Button" Text="Delete" ClientSideOnClick="Click" ID="button2"&gt;&lt;/ej:Button&gt;
+    <ej:Button runat="server" Type="Button" Text="Delete" ClientSideOnClick="Click" ID="button2"></ej:Button>
 
-    &lt;ej:Button runat="server" Type="Button" Text="save all" ClientSideOnClick="Click" ID="button3"&gt;&lt;/ej:Button&gt;
+    <ej:Button runat="server" Type="Button" Text="save all" ClientSideOnClick="Click" ID="button3"></ej:Button>
 
 
 
- &lt;/asp:Content&gt;
+ </asp:Content>
 
-&lt;asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server"&gt;
+<asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server">
 
-    &lt;script type="text/javascript" class="jsScript"&gt;
+    <script type="text/javascript" class="jsScript">
 
         window.changes = { changed: [], added: [], deleted: [] };
 
@@ -125,16 +125,16 @@ Batch Editing is a unique feature, where requests to add, remove and change are 
 
         }
 
-    &lt;/script&gt;
+    </script>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
 ![](Editing_images/Editing_img1.png)
-{:.image }
+
 
 
 ## Insert
@@ -143,13 +143,13 @@ The insert method of the data manager is used to add a new record to the table. 
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" Adaptor="JsonAdaptor"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" Adaptor="JsonAdaptor"/>
 
-        &lt;ej:Button runat="server" Type="Button" Text="Insert" ClientSideOnClick="onClick" ID="submit"&gt;&lt;/ej:Button&gt;
+        <ej:Button runat="server" Type="Button" Text="Insert" ClientSideOnClick="onClick" ID="submit"></ej:Button>
 
         <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData"
 
@@ -159,27 +159,27 @@ The insert method of the data manager is used to add a new record to the table. 
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server"&gt;
+<asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server">
 
-    &lt;script type="text/javascript" class="jsScript"&gt;
+    <script type="text/javascript" class="jsScript">
 
         function onClick(e) {
 
@@ -195,16 +195,16 @@ The insert method of the data manager is used to add a new record to the table. 
 
         }
 
-    &lt;/script&gt;
+    </script>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
 ![](Editing_images/Editing_img2.png)
-{:.image }
+
 
 
 ## Update
@@ -215,13 +215,13 @@ The update method is used to update the modified changes made to a record in the
 
 
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" Adaptor="JsonAdaptor"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" Adaptor="JsonAdaptor"/>
 
-        &lt;ej:Button runat="server" Type="Button" Text="Update" ClientSideOnClick="onClick" ID="submit"&gt;&lt;/ej:Button&gt;
+        <ej:Button runat="server" Type="Button" Text="Update" ClientSideOnClick="onClick" ID="submit"></ej:Button>
 
         <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData"
 
@@ -233,29 +233,29 @@ The update method is used to update the modified changes made to a record in the
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 
 
-&lt;asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server"&gt;
+<asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server">
 
-    &lt;script type="text/javascript" class="jsScript"&gt;
+    <script type="text/javascript" class="jsScript">
 
         function onClick(e) {
 
@@ -271,9 +271,9 @@ The update method is used to update the modified changes made to a record in the
 
         }
 
-    &lt;/script&gt;
+    </script>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
@@ -380,7 +380,7 @@ public partial class DataManager : System.Web.UI.Page
 Result of the above code example is illustrated as follows.
 
 ![](Editing_images/Editing_img3.png)
-{:.image }
+
 
 
 ## Remove
@@ -391,13 +391,13 @@ The “remove” method is used to delete a record from the data source of the D
 
 
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" Adaptor="JsonAdaptor"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" Adaptor="JsonAdaptor"/>
 
-        &lt;ej:Button runat="server" Type="Button" Text="Update" ClientSideOnClick="onClick" ID="submit"&gt;&lt;/ej:Button&gt;
+        <ej:Button runat="server" Type="Button" Text="Update" ClientSideOnClick="onClick" ID="submit"></ej:Button>
 
         <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData"
 
@@ -409,29 +409,29 @@ The “remove” method is used to delete a record from the data source of the D
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 
 
-&lt;asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server"&gt;
+<asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server">
 
-    &lt;script type="text/javascript" class="jsScript"&gt;
+    <script type="text/javascript" class="jsScript">
 
         function onClick(e) {
 
@@ -447,9 +447,9 @@ The “remove” method is used to delete a record from the data source of the D
 
         }
 
-    &lt;/script&gt;
+    </script>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
@@ -556,6 +556,6 @@ public partial class DataManager : System.Web.UI.Page
 Result of the above code example is illustrated as follows.
 
 ![](Editing_images/Editing_img4.png)
-{:.image }
+
 
 

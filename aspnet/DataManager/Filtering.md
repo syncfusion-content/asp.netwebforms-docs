@@ -17,9 +17,9 @@ Filter operators are used to specify the filter type. The various filter operato
 
 <table>
 <tr>
-<td>
-Column type</td><td>
-Filter operators</td></tr>
+<th>
+Column type</th><th>
+Filter operators</th></tr>
 <tr>
 <td>
 Number</td><td>
@@ -45,11 +45,11 @@ This operator is used to get the records with values less than that of the filte
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/>
 
         <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData"
 
@@ -57,30 +57,30 @@ This operator is used to get the records with values less than that of the filte
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
 ![](Filtering_images/Filtering_img1.png)
-{:.image }
+
 
 
 ## greaterThan
@@ -89,11 +89,11 @@ This operator is used to get the records with values greater than that of the fi
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/>
 
         <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData"
 
@@ -101,23 +101,23 @@ This operator is used to get the records with values greater than that of the fi
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
@@ -126,7 +126,7 @@ Result of the above code example is illustrated as follows.
 
 
 ![](Filtering_images/Filtering_img2.png)
-{:.image }
+
 
 
 ## lessThanOrEqual
@@ -135,11 +135,11 @@ This operator is used to get the records with values less than or equal to the f
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/>
 
         <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData"
 
@@ -147,23 +147,23 @@ This operator is used to get the records with values less than or equal to the f
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
@@ -172,7 +172,7 @@ Result of the above code example is illustrated as follows.
 
 
 ![](Filtering_images/Filtering_img3.png)
-{:.image }
+
 
 
 ## greaterThanOrEqual
@@ -181,11 +181,11 @@ This operator is used to get the records with values greater than or equal to th
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/>
 
         <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData"
 
@@ -193,30 +193,30 @@ This operator is used to get the records with values greater than or equal to th
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
 ![](Filtering_images/Filtering_img4.png)
-{:.image }
+
 
 
 ## equal
@@ -225,11 +225,11 @@ This operator is used to get the records with values equal to that of the filter
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/>
 
         <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData"
 
@@ -237,30 +237,30 @@ This operator is used to get the records with values equal to that of the filter
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
 ![](Filtering_images/Filtering_img5.png)
-{:.image }
+
 
 
 ## notEqual
@@ -269,11 +269,11 @@ This operator is used to get the records with values not equal to that of the fi
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/>
 
         <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData"
 
@@ -281,30 +281,30 @@ This operator is used to get the records with values not equal to that of the fi
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
 ![](Filtering_images/Filtering_img6.png)
-{:.image }
+
 
 
 ## contains
@@ -313,11 +313,11 @@ This operator is used to get the records that contains the filter value.
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/>
 
         <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData"
 
@@ -325,30 +325,30 @@ This operator is used to get the records that contains the filter value.
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
 ![](Filtering_images/Filtering_img7.png)
-{:.image }
+
 
 
 ## startswith
@@ -357,11 +357,11 @@ This operator is used to get the records that starts with the filter value speci
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/>
 
         <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData"
 
@@ -369,30 +369,30 @@ This operator is used to get the records that starts with the filter value speci
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
 ![](Filtering_images/Filtering_img8.png)
-{:.image }
+
 
 
 ## endswith
@@ -401,11 +401,11 @@ This operator is used to get the records that ends with the filter value specifi
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/>
 
         <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData"
 
@@ -413,30 +413,30 @@ This operator is used to get the records that ends with the filter value specifi
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
 ![](Filtering_images/Filtering_img9.png)
-{:.image }
+
 
 
 ## Predicate
@@ -447,11 +447,11 @@ The “and” predicate is used to add n-number of predicates with “and” con
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/>
 
         <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData"
 
@@ -461,30 +461,30 @@ The “and” predicate is used to add n-number of predicates with “and” con
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
 ![](Filtering_images/Filtering_img10.png)
-{:.image }
+
 
 
 ### or predicate
@@ -493,11 +493,11 @@ Result of the above code example is illustrated as follows.
 
  {% highlight html %}
  
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/>
 
         <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData"
 
@@ -507,29 +507,29 @@ Result of the above code example is illustrated as follows.
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 Result of the above code example is illustrated as follows.
 
 ![](Filtering_images/Filtering_img11.png)
-{:.image }
+
 
 

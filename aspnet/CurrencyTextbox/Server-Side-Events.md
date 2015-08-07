@@ -14,10 +14,10 @@ The server side event present in the CurrencyTextbox control is listed:
 
 <table>
 <tr>
-<td>
-Event Name</td><td>
-Description</td><td>
-Arguments</td></tr>
+<th>
+Event Name</th><th>
+Description</th><th>
+Arguments</th></tr>
 <tr>
 <td>
 OnFocusOut</td><td>

@@ -18,36 +18,36 @@ The labels are found along the range, displaying the value of the data it corres
 
 {% highlight html %}
 
-&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="onchartloaded"&gt;
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="onchartloaded">
 
-     &lt;LabelSettings&gt;
+     <LabelSettings>
 
-                &lt;HigherLevel&gt;
+                <HigherLevel>
 
-                    &lt;Style Font-Color="#ff0000" Font-Opacity="1" Font-FontSize="12px" Font-Style="Normal" Font-Weight="Regular"&gt;                        
+                    <Style Font-Color="#ff0000" Font-Opacity="1" Font-FontSize="12px" Font-Style="Normal" Font-Weight="Regular">                        
 
-                    &lt;/Style&gt;
+                    </Style>
 
-                &lt;/HigherLevel&gt;
+                </HigherLevel>
 
-                &lt;LowerLevel&gt;
+                <LowerLevel>
 
-                    &lt;Style Font-Color="#ff0000" Font-Opacity="1" Font-FontSize="12px" Font-Style="Normal" Font-Weight="Regular"&gt;&lt;/Style&gt;
+                    <Style Font-Color="#ff0000" Font-Opacity="1" Font-FontSize="12px" Font-Style="Normal" Font-Weight="Regular"></Style>
 
-                &lt;/LowerLevel&gt;
+                </LowerLevel>
 
-     &lt;/LabelSettings&gt;
+     </LabelSettings>
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-&lt;/ej:RangeNavigator&gt;
+</ej:RangeNavigator>
 
 {% endhighlight %}
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
-{:.image }
+
 
 
 _Figure 22: Customize labels_
@@ -60,25 +60,25 @@ The following screen shot illustrates both the lower and higher level labels tha
 
 {% highlight html %}
 
-&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="onchartloaded"&gt;
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="onchartloaded">
 
-     &lt;LabelSettings&gt;
+     <LabelSettings>
 
-               &lt;HigherLevel LabelPlacement="inside"&gt;                   
+               <HigherLevel LabelPlacement="inside">                   
 
-                &lt;/HigherLevel&gt;
+                </HigherLevel>
 
-                &lt;LowerLevel LabelPlacement="inside"&gt;                   
+                <LowerLevel LabelPlacement="inside">                   
 
-                &lt;/LowerLevel&gt;
+                </LowerLevel>
 
-     &lt;/LabelSettings&gt;
+     </LabelSettings>
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-&lt;/ej:RangeNavigator&gt;
+</ej:RangeNavigator>
 
 {% endhighlight %}
 
@@ -87,7 +87,7 @@ The following screenshot illustrates a RangeNavigator with labels inside the con
 
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
-{:.image }
+
 
 
 ## Customize RangeNavigator
@@ -96,46 +96,46 @@ RangeNavigator is customized using NavigatorStyleSettings properties. You can cu
 
 {% highlight html %}
 
-&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="onchartloaded"&gt;
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="onchartloaded">
 
-  &lt;LabelSettings&gt;
+  <LabelSettings>
 
-     &lt;HigherLevel&gt;
+     <HigherLevel>
 
-                    &lt;Style HorizontalAlignment="Left" Font-Color="#ff0000" Font-Opacity="1" Font-FontSize="13px" Font-Style="Normal" Font-Weight="Regular"&gt; &lt;/Style&gt;
+                    <Style HorizontalAlignment="Left" Font-Color="#ff0000" Font-Opacity="1" Font-FontSize="13px" Font-Style="Normal" Font-Weight="Regular"> </Style>
 
-     &lt;/HigherLevel&gt;
+     </HigherLevel>
 
-  &lt;LowerLevel&gt;
+  <LowerLevel>
 
-                    &lt;Style HorizontalAlignment="Left" Font-Color="#ff0000" Font-Opacity="1" Font-FontSize="12px" Font-Style="Normal" Font-Weight="Regular"&gt;&lt;/Style&gt;
+                    <Style HorizontalAlignment="Left" Font-Color="#ff0000" Font-Opacity="1" Font-FontSize="12px" Font-Style="Normal" Font-Weight="Regular"></Style>
 
-   &lt;/LowerLevel&gt;
+   </LowerLevel>
 
-&lt;/LabelSettings&gt;
+</LabelSettings>
 
 
 
-&lt;NavigatorStyleSettings UnselectedRegionColor="white" SelectedRegionColor="#5EABDE" ThumbRadius="10" ThumbColor="white" Background="transparent"&gt;
+<NavigatorStyleSettings UnselectedRegionColor="white" SelectedRegionColor="#5EABDE" ThumbRadius="10" ThumbColor="white" Background="transparent">
 
-        &lt;Border Color="black" Width="3"&gt;&lt;/Border&gt;
+        <Border Color="black" Width="3"></Border>
 
-       &lt;MajorGridLineStyle Color="transparent" Visible="true"&gt;&lt;/MajorGridLineStyle&gt;
+       <MajorGridLineStyle Color="transparent" Visible="true"></MajorGridLineStyle>
 
-        &lt;MinorGridLineStyle Color="transparent" Visible="true"&gt;&lt;/MinorGridLineStyle&gt;
+        <MinorGridLineStyle Color="transparent" Visible="true"></MinorGridLineStyle>
 
-&lt;/NavigatorStyleSettings&gt;
+</NavigatorStyleSettings>
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-&lt;/ej:RangeNavigator&gt;
+</ej:RangeNavigator>
 
 {% endhighlight %}
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
-{:.image }
+
 
 
 ## Themes
@@ -162,17 +162,17 @@ RangeNavigator theme is a set of pre-defined options that are applied to the con
 
 {% highlight html %}
 
-&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" Theme="azuredark"&gt;
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" Theme="azuredark">
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-&lt;/ej:RangeNavigator&gt;
+</ej:RangeNavigator>
 
 {% endhighlight %}
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png) 
-{:.image }
+
 
 

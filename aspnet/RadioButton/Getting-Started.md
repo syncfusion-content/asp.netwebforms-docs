@@ -16,7 +16,7 @@ Create your first RadioButton in ASP.NET
 By using ASP.NET WebForms Radio Button supports RTL, custom skins and events to display customized Radio Buttons.  In this example, you can learn how to use Radio Button in a Quiz application. The following guidelines illustrate you on how to use the Radio Button to select the answers in the application and get the selected items. The following screenshot shows a sample Quiz application.
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image94_7.png](Getting-Started_images/Getting-Started_img1.png) 
-{:.image }
+
 
 
 ## Create a RadioButton in a Quiz Application
@@ -246,13 +246,13 @@ Add the following styles.
 
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image94_8.png](Getting-Started_images/Getting-Started_img2.png) 
-{:.image }
+
 
 
 ## Create RegistrationApp
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image94_9.png](Getting-Started_images/Getting-Started_img3.png) 
-{:.image }
+
 
 
 In this section, you can learn how to create a RegistrationApp scenario as shown in the above screenshot.
@@ -490,10 +490,10 @@ Add the following ClientSide event for submit button to get the selected items.�
 
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image94_9.png](Getting-Started_images/Getting-Started_img4.png) 
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image94_10.png](Getting-Started_images/Getting-Started_img5.png) 
-{:.image }
+
 
 

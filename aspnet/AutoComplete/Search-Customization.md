@@ -36,7 +36,7 @@ In the design page define the AutoComplete control and enable the HightlightSear
 The following screenshot is the output for AutoComplete when HighlightSearch is set to True.
 
 ![](Search-Customization_images/Search-Customization_img1.png)
-{:.image }
+
 
 
 ## Case sensitive Search
@@ -68,6 +68,6 @@ In the design page, define the AutoComplete control and enable the CaseSensitive
 The following screenshot is the output for AutoComplete when CaseSensitiveSearch is set to True.
 
 ![](Search-Customization_images/Search-Customization_img2.png) 
-{:.image }
+
 
 

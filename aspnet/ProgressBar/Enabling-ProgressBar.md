@@ -28,6 +28,6 @@ Add the following code example to the corresponding ASPX page to disable the Pro
 The following screenshot displays the Enabled property.
 
 ![](Enabling-ProgressBar_images/Enabling-ProgressBar_img1.png)
-{:.image }
+
 
 

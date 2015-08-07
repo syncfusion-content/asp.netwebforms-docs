@@ -29,9 +29,9 @@ _The current version of Essential Presentation is in preview. It does not suppor
 
 <table>
 <tr>
-<td>
-Supported .NET Frameworks versions</td><td>
-* .NET 2.0* .NET 3.5* .NET 4.0* .NET 4.5 * .NET 4.5.1</td></tr>
+<th>
+Supported .NET Frameworks versions</th><th>
+* .NET 2.0* .NET 3.5* .NET 4.0* .NET 4.5 * .NET 4.5.1</th></tr>
 <tr>
 <td>
 <br>Compatible MS PowerPoint versions</td><td>
@@ -83,9 +83,9 @@ For converting a Presentation file into PDF, the following assemblies need to be
 
 <table>
 <tr>
-<td>
-Assembly Name</td><td>
-Short Description</td></tr>
+<th>
+Assembly Name</th><th>
+Short Description</th></tr>
 <tr>
 <td>
 Syncfusion.Presentation.Base</td><td>

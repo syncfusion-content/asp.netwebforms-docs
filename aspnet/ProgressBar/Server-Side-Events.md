@@ -13,10 +13,10 @@ The server side event present in the Dialog control is as follows.
 
 <table>
 <tr>
-<td>
-Event Name</td><td>
-Description</td><td>
-Arguments</td></tr>
+<th>
+Event Name</th><th>
+Description</th><th>
+Arguments</th></tr>
 <tr>
 <td>
 OnComplete</td><td>

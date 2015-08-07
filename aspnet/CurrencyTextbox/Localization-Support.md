@@ -46,10 +46,10 @@ Add the following code to your ASPX page to render the CurrencyTextbox control.
 The screenshots of the CurrencyTextbox with es-ES locale and en-US locale.
 
 ![](Localization-Support_images/Localization-Support_img1.png)
-{:.image }
+
 
 
 ![](Localization-Support_images/Localization-Support_img2.png)
-{:.image }
+
 
 

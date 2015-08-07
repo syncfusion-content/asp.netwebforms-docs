@@ -11,14 +11,14 @@ documentation: ug
 
 You can use keyboard shortcut keys as an alternative to the mouse while using the ColorPicker control. The ColorPicker control allows you to perform all kinds of actions by using keyboard shortcuts.
 
-## _Keyboard shortcut keys_
+## Keyboard shortcut keys
 
 
 <table>
 <tr>
-<td>
-Shortcut Key</td><td>
-Description</td></tr>
+<th>
+Shortcut Key</th><th>
+Description</th></tr>
 <tr>
 <td>
 Alt + j               </td><td>
@@ -125,6 +125,6 @@ Add the following code in the script section.
 The following screenshot displays the output of the above code snippet.
 
 ![](Keyboard-Interaction_images/Keyboard-Interaction_img1.png)
-{:.image }
+
 
 

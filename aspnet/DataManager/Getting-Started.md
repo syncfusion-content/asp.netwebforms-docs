@@ -25,9 +25,9 @@ The local data is set as data source by using the following code example.
 
 {% highlight html %}
 
-&lt;%--connection local reference--%&gt;
+<%--connection local reference--%>
 
-&lt;ej:DataManager runat="server" ID="FlatData" URL="Default.aspx/Data"/&gt;
+<ej:DataManager runat="server" ID="FlatData" URL="Default.aspx/Data"/>
 
 {% endhighlight %}
 
@@ -77,7 +77,7 @@ In this application, as you have web service for NorthWind database, you can ass
 
 {% highlight html %}
 
-&lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" CrossDomain="true" /&gt;
+<ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" CrossDomain="true" />
 
 {% endhighlight %}
 
@@ -89,36 +89,36 @@ You can bind the DataManager with Grid by defining the ID of DataManager in the 
 
 {% highlight html %}
 
-&lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" CrossDomain="true" /&gt;
+<ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" CrossDomain="true" />
 
-        &lt;%--DataManagerID = "Datamanager ID"--%&gt;
+        <%--DataManagerID = "Datamanager ID"--%>
 
         <ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData" 
 
             Query ="new ej.Query().take(5)">
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
 {% endhighlight %}
 
 When you execute it, the following table is displayed.
 
 ![](Getting-Started_images/Getting-Started_img1.png)
-{:.image }
+
 
 
 ## Filter
@@ -131,7 +131,7 @@ The select property of ejQuery is used to retrieve the specified columns from th
 
 {% highlight html %}
 
-&lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" CrossDomain="true" /&gt;
+<ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" CrossDomain="true" />
 
 
 
@@ -139,32 +139,32 @@ The select property of ejQuery is used to retrieve the specified columns from th
 
             Query ="new ej.Query().select(['OrderID', 'CustomerID', 'EmployeeID', 'ShipCity', 'Freight']).where('CustomerID', 'equal', 'VINET').take(5)">
 
-&lt;%--where(fieldName, operator, value, [ignoreCase])--%&gt;            
+<%--where(fieldName, operator, value, [ignoreCase])--%>            
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
 {% endhighlight %}
 
 When you execute the filter query and binding the result to the Grid, the following table is displayed.
 
 ![](Getting-Started_images/Getting-Started_img2.png)
-{:.image }
+
 
 
 ## Sort
@@ -175,34 +175,34 @@ The sortBy property of ejQuery is used to sort the records based on the field an
 
 {% highlight html %}
 
-&lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" CrossDomain="true" /&gt;
+<ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" CrossDomain="true" />
 
 
 
-&lt;ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData" Query ="new ej.Query().select(['OrderID', 'CustomerID', 'EmployeeID', 'ShipCity', 'Freight']).where('CustomerID', 'equal', 'VINET').sortBy('Freight desc').take(5)"&gt;
+<ej:Grid ID="OrdersGrid" runat="server"  DataManagerID="FlatData" Query ="new ej.Query().select(['OrderID', 'CustomerID', 'EmployeeID', 'ShipCity', 'Freight']).where('CustomerID', 'equal', 'VINET').sortBy('Freight desc').take(5)">
 
-&lt;%--sortBy(field direction)--%&gt;
+<%--sortBy(field direction)--%>
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 		
 		{% endhighlight %}
 
 When you execute the sort query and binding the result to the table, the following table is displayed.![](Getting-Started_images/Getting-Started_img3.png)
-{:.image }
+
 
 
 
@@ -225,37 +225,37 @@ The Page property of ejQuery is used to retrieve the records based on the given 
 
 {% highlight html %}
 
-&lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" CrossDomain="true" /&gt;
+<ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" CrossDomain="true" />
 
 
 
 <ej:Grid ID="OrdersGrid" AllowPaging="false" runat="server"  DataManagerID="FlatData" 
 
-            Query ="new ej.Query().select(['OrderID', 'CustomerID', 'EmployeeID', 'ShipCity', 'Freight']).where('CustomerID', 'equal', 'VINET').sortBy('Freight desc').page(3,7)">&lt;%--page(pageIndex,pageSize)--%&gt;
+            Query ="new ej.Query().select(['OrderID', 'CustomerID', 'EmployeeID', 'ShipCity', 'Freight']).where('CustomerID', 'equal', 'VINET').sortBy('Freight desc').page(3,7)"><%--page(pageIndex,pageSize)--%>
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 		
 		{% endhighlight %}
 
 When you execute the paging query and binding the result to the table, the following table is displayed.
 
 ![C:/Users/apoorvah.ramanathan/Desktop/1.png](Getting-Started_images/Getting-Started_img4.png)
-{:.image }
+
 
 

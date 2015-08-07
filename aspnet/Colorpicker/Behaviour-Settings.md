@@ -40,7 +40,7 @@ The following screenshot displays the output of the above code example
 
 
 ![](Behaviour-Settings_images/Behaviour-Settings_img1.png)
-{:.image }
+
 
 
 ## ShowRecentColors
@@ -66,7 +66,7 @@ Add the following code example to the corresponding ASPX page to render the Colo
 The following screenshot displays the output of the above code example.  
 
 ![](Behaviour-Settings_images/Behaviour-Settings_img2.png)
-{:.image }
+
 
 
 ## EnableOpacity
@@ -96,7 +96,7 @@ Add the following code example to the corresponding ASPX page to render ColorPic
 The following screenshot displays the output of the above code example.  
 
 ![](Behaviour-Settings_images/Behaviour-Settings_img3.png)
-{:.image }
+
 
 
 ## Columns
@@ -128,7 +128,7 @@ The following screenshot displays the output of the above code example.
 
 
 ![](Behaviour-Settings_images/Behaviour-Settings_img4.png) 
-{:.image }
+
 
 
 ### Configure Values
@@ -160,7 +160,7 @@ Add the following code example to the corresponding ASPX page to render the Colo
 The following screenshot displays the output of the above code example.
 
 ![](Behaviour-Settings_images/Behaviour-Settings_img5.png)
-{:.image }
+
 
 
 ### Button and TooltipText
@@ -174,9 +174,9 @@ To configure the ButtonText property for the button elements, use the correspond
 
 <table>
 <tr>
-<td>
-Element</td><td>
-Default value</td></tr>
+<th>
+Element</th><th>
+Default value</th></tr>
 <tr>
 <td>
 apply</td><td>
@@ -197,9 +197,9 @@ To configure the TooltipText, use the following listed elements and its correspo
 
 <table>
 <tr>
-<td>
-Element</td><td>
-Default value</td></tr>
+<th>
+Element</th><th>
+Default value</th></tr>
 <tr>
 <td>
 switcher</td><td>
@@ -293,8 +293,8 @@ Add the following code example to the corresponding ASPX page to render ColorPic
 
 The following screenshot displays the output of the above code example.
 
-{ ![](Behaviour-Settings_images/Behaviour-Settings_img6.png) | markdownify }
-{:.image }
+![](Behaviour-Settings_images/Behaviour-Settings_img6.png)
+
 
 
 ## Appearance and Styling
@@ -309,10 +309,10 @@ The “ModelType” property is Enum type and its default value is “default”
 
 <table>
 <tr>
-<td>
-ModelType</td><td>
-Syntax</td><td>
-Description</td></tr>
+<th>
+ModelType</th><th>
+Syntax</th><th>
+Description</th></tr>
 <tr>
 <td>
 Default</td><td>
@@ -355,7 +355,7 @@ Add the following code example to the corresponding ASPX page to render the Colo
 The following screenshot displays the output of the above code example.
 
 ![](Behaviour-Settings_images/Behaviour-Settings_img7.png)
-{:.image }
+
 
 
 ### Palette
@@ -366,11 +366,11 @@ The ColorPicker allows you to define the palette type to be displayed in control
 
 <table>
 <tr>
-<td>
-Palette</td><td>
-Syntax</td><td>
-Description</td><td>
-Dependent Property</td></tr>
+<th>
+Palette</th><th>
+Syntax</th><th>
+Description</th><th>
+Dependent Property</th></tr>
 <tr>
 <td>
 BasicPalette</td><td>
@@ -475,7 +475,7 @@ Add the following code example to the corresponding ASPX page to render the Colo
 The following screenshot displays the output of the above code example.
 
 ![](Behaviour-Settings_images/Behaviour-Settings_img8.png)
-{:.image }
+
 
 
 ### CustomPalette
@@ -501,12 +501,12 @@ The CustomPalette property dependent property of “Palette” and “ModelType�
 The following screenshot displays the output of the above code example.
 
 ![](Behaviour-Settings_images/Behaviour-Settings_img9.png)
-{:.image }
+
 
 
 ### DisplayInline
 
-The ColorPicker control allows to embed the popup in the order of DOM element flow by using the property called “DisplayInline”. By using DisplayInline property to make ColorPicker popup always in visible state. Also associate ColorPicker with &lt;div&gt; element instead of input. 
+The ColorPicker control allows to embed the popup in the order of DOM element flow by using the property called “DisplayInline”. By using DisplayInline property to make ColorPicker popup always in visible state. Also associate ColorPicker with <div> element instead of input. 
 
 The “DisplayInline” property is Boolean type and its default value is false. The following steps explain you how to get the ColorPicker popup in DisplayInline state.
 
@@ -525,7 +525,7 @@ The “DisplayInline” property is Boolean type and its default value is false.
 The following screenshot displays the output of the above code example.
 
 ![](Behaviour-Settings_images/Behaviour-Settings_img10.png)
-{:.image }
+
 
 
 ### Theme Support
@@ -603,7 +603,7 @@ The following screenshot displays the output of the above code example.
 
 
 ![](Behaviour-Settings_images/Behaviour-Settings_img11.png)
-{:.image }
+
 
 
 
@@ -632,7 +632,7 @@ Add the following code example to the corresponding ASPX page to render the Colo
 
 
 
-Custom Css Styles.
+### Custom Css Styles.
 
 {% highlight css %}
 
@@ -659,6 +659,6 @@ Custom Css Styles.
 The following screenshot displays the output of above steps.
 
 ![](Behaviour-Settings_images/Behaviour-Settings_img12.png)
-{:.image }
+
 
 

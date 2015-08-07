@@ -25,11 +25,11 @@ The Sum summary type provides the sum of the data. The Sum data utilization meth
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/>
 
 
 
@@ -43,27 +43,27 @@ The Sum summary type provides the sum of the data. The Sum data utilization meth
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server"&gt;
+<asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server">
 
-    &lt;script type="text/javascript" class="jsScript"&gt;
+    <script type="text/javascript" class="jsScript">
 
         setTimeout(function () {
 
@@ -73,20 +73,20 @@ The Sum summary type provides the sum of the data. The Sum data utilization meth
 
             var sum = ej.sum(data, "EmployeeID");//Calculates the sum Freight
 
-            $("body").append("<span>Sum:" + sum + "&lt;/spn&gt;");
+            $("body").append("<span>Sum:" + sum + "</spn>");
 
         }, 3000);
 
-    &lt;/script&gt;
+    </script>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 The result of the above code example is illustrated as follows.
 
 ![](Summary_images/Summary_img1.png)
-{:.image }
+
 
 
 ## Min
@@ -97,11 +97,11 @@ The minimum of particular field can be calculated as follows.
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/>
 
 
 
@@ -115,27 +115,27 @@ The minimum of particular field can be calculated as follows.
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server"&gt;
+<asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server">
 
-    &lt;script type="text/javascript" class="jsScript"&gt;
+    <script type="text/javascript" class="jsScript">
 
         setTimeout(function () {
 
@@ -145,20 +145,20 @@ The minimum of particular field can be calculated as follows.
 
             var min = ej.min(data, "EmployeeID");//Calculates the min Freight
 
-            $("body").append("<span>Min:" + min.EmployeeID + "&lt;/spn&gt;");
+            $("body").append("<span>Min:" + min.EmployeeID + "</spn>");
 
         }, 3000);
 
-    &lt;/script&gt;
+    </script>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 The result of the above code example is illustrated as follows.
 
 ![](Summary_images/Summary_img2.png)
-{:.image }
+
 
 
 ## Max
@@ -169,11 +169,11 @@ The maximum of particular field can be calculated as follows.
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/>
 
 
 
@@ -187,27 +187,27 @@ The maximum of particular field can be calculated as follows.
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server"&gt;
+<asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server">
 
-    &lt;script type="text/javascript" class="jsScript"&gt;
+    <script type="text/javascript" class="jsScript">
 
         setTimeout(function () {
 
@@ -217,20 +217,20 @@ The maximum of particular field can be calculated as follows.
 
             var max = ej.max(data, "EmployeeID"); //Calculates the max Freight
 
-            $("body").append("<span>Max:" + max.EmployeeID + "&lt;/spn&gt;");
+            $("body").append("<span>Max:" + max.EmployeeID + "</spn>");
 
         }, 3000);
 
-    &lt;/script&gt;
+    </script>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 The result for the above code example is illustrated as follows.
 
 ![](Summary_images/Summary_img3.png)
-{:.image }
+
 
 
 ## Avg
@@ -239,11 +239,11 @@ The Average summary type provides the average of the given data. The Average dat
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/>
 
 
 
@@ -257,27 +257,27 @@ The Average summary type provides the average of the given data. The Average dat
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server"&gt;
+<asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server">
 
-    &lt;script type="text/javascript" class="jsScript"&gt;
+    <script type="text/javascript" class="jsScript">
 
         setTimeout(function () {
 
@@ -287,20 +287,20 @@ The Average summary type provides the average of the given data. The Average dat
 
             var avg = ej.avg(data, "EmployeeID");//Calculates the avg Freight
 
-            $("body").append("<span>Avg:" + avg + "&lt;/spn&gt;");
+            $("body").append("<span>Avg:" + avg + "</spn>");
 
         }, 3000);
 
-    &lt;/script&gt;
+    </script>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 The result of the above code example is illustrated as follows.
 
 ![](Summary_images/Summary_img4.png)
-{:.image }
+
 
 
 ## Distinct
@@ -311,11 +311,11 @@ The following code example illustrates how to use the ej.distinct method.
 
 {% highlight html %}
 
-&lt;asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
 
 
 
-        &lt;ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/&gt;
+        <ej:DataManager ID="FlatData" runat="server" URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"/>
 
 
 
@@ -329,27 +329,27 @@ The following code example illustrates how to use the ej.distinct method.
 
 
 
-            &lt;Columns&gt;
+            <Columns>
 
-                &lt;ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" /&gt;
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
-                &lt;ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" /&gt;
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
-                &lt;ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" /&gt;
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" Width="75" />
 
-                &lt;ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" /&gt;
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
 
-                &lt;ej:Column Field="Freight" HeaderText="Freight" Width="75" /&gt;
+                <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
 
-            &lt;/Columns&gt;
+            </Columns>
 
-        &lt;/ej:Grid&gt;
+        </ej:Grid>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server"&gt;
+<asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server">
 
-    &lt;script type="text/javascript" class="jsScript"&gt;
+    <script type="text/javascript" class="jsScript">
 
         setTimeout(function () {
 
@@ -363,15 +363,15 @@ The following code example illustrates how to use the ej.distinct method.
 
         }, 3000);
 
-    &lt;/script&gt;
+    </script>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 {% endhighlight %}
 
 The result for the above code example is illustrated as follows.
 
 ![](Summary_images/Summary_img5.png)
-{:.image }
+
 
 

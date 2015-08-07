@@ -28,6 +28,6 @@ Add the following code example to the corresponding ASPX page to render Progress
 The following screenshot displays the output for the above code.
 
 ![](State-Maintenance_images/State-Maintenance_img1.png)
-{:.image }
+
 
 

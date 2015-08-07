@@ -82,6 +82,6 @@ Add the following code example to the corresponding ASPX page to render the Rota
   The following banner is displayed as output.
 
 ![](Getting-Started_images/Getting-Started_img1.png)
-{:.image }
+
 
 

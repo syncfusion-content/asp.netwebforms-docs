@@ -107,10 +107,10 @@ The following server side event is available in Radio Button control.__
 
 <table>
 <tr>
-<td>
-Event</td><td>
-Event Description</td><td>
-Argument Details</td></tr>
+<th>
+Event</th><th>
+Event Description</th><th>
+Argument Details</th></tr>
 <tr>
 <td>
 OnChange</td><td>

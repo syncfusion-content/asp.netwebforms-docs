@@ -7,7 +7,7 @@ control: ReportViewer
 documentation: ug
 ---
 
-## Report Parameters
+# Report Parameters
 
 The ReportViewer has support to add report parameters to ReportViewer at runtime. The ReportViewer has Parameters property that is the list of ReportParameter type to add collection of report parameters to it. You can add report parameters either through ReportViewer model when creating ReportViewer control or through Web API.
 
@@ -19,17 +19,17 @@ The following code example illustrates how to add ReportParameter at control cre
 
 
 
+{% highlight html %}
+
 [EJWEB]
 
-[ASPX]
+        <ej:ReportViewer ID="viewer" runat="server" ReportServiceUrl="/api/RDLReport" ReportPath="InvoiceTemplate.rdl" ProcessingMode="Remote">
 
-        &lt;ej:ReportViewer ID="viewer" runat="server" ReportServiceUrl="/api/RDLReport" ReportPath="InvoiceTemplate.rdl" ProcessingMode="Remote"&gt;
+        </ej:ReportViewer>
 
-        &lt;/ej:ReportViewer&gt;
+{% endhighlight %}
 
-
-
-[C#]
+{% highlight c# %}
 
 protected void Page_Load(object sender, EventArgs e)
 
@@ -41,11 +41,11 @@ protected void Page_Load(object sender, EventArgs e)
 
         }
 
-
+{% endhighlight %}
 
 The following code example illustrates how to add ReportParameter in Web API.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -53,13 +53,13 @@ public class ReportsController : ApiController, IReportController
 
     {
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Report Initialization method that is triggered when report begins to be processed.
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
-        /// <param name="reportOptions">The ReportViewer options.&lt;/param&gt;
+        /// <param name="reportOptions">The ReportViewer options.</param>
 
         public void OnInitReportOptions(ReportViewerOptions reportOptions)
 
@@ -77,5 +77,5 @@ public class ReportsController : ApiController, IReportController
 
     }
 
-
+{% endhighlight %}
 

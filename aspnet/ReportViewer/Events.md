@@ -7,17 +7,17 @@ control: ReportViewer
 documentation: ug
 ---
 
-## Events
+# Events
 
 The ReportViewer has the following client-side events support to listen to the control action.
 
-_Table_ _3__: Client-Side events_
+_Table_ _3_: _Client-Side events_
 
 <table>
 <tr>
-<td>
-Events</td><td>
-Description</td></tr>
+<th>
+Events</th><th>
+Description</th></tr>
 <tr>
 <td>
 destroy</td><td>
@@ -49,19 +49,20 @@ Fires when the report is loaded.</td></tr>
 
 
 
+{% highlight html %}
+
 [EJWEB]
 
-[ASPX]
+        <ej:ReportViewer ID="viewer" runat="server" ReportServiceUrl="/api/RDLCReport" ReportPath="DatabindingRemote.rdlc" ProcessingMode="Local" OnClientReportLoaded="reportLoaded">
 
-        &lt;ej:ReportViewer ID="viewer" runat="server" ReportServiceUrl="/api/RDLCReport" ReportPath="DatabindingRemote.rdlc" ProcessingMode="Local" OnClientReportLoaded="reportLoaded"&gt;
+        </ej:ReportViewer>
+		
+{% endhighlight %}
 
-        &lt;/ej:ReportViewer&gt;
-
-[JS]
+{% highlight js %}
 
 
-
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
         function reportLoaded(senderObj) {
 
@@ -109,9 +110,9 @@ Fires when the report is loaded.</td></tr>
 
            }
 
-    &lt;/script&gt;
+    </script>
 
-
+{% endhighlight %}
 
 
 

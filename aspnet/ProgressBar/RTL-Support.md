@@ -28,6 +28,6 @@ Add the following code example to the corresponding ASPX page to render Progress
 The following screenshot displays the ProgressBar set from Right-to-Left.               
 
 ![](RTL-Support_images/RTL-Support_img1.png)
-{:.image }
+
 
 

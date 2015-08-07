@@ -15,27 +15,27 @@ The following code example illustrates on how the model is made observable and u
 
 {% highlight html %}
 
-&lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="MainContent"&gt;
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="MainContent">
 
-    &lt;ej:DataManager ID="FlatData" runat="server" Adaptor="JsonAdaptor"/&gt;
+    <ej:DataManager ID="FlatData" runat="server" Adaptor="JsonAdaptor"/>
 
-    &lt;div&gt;
+    <div>
 
-        &lt;div id="Grid" data-bind="ejGrid: { dataSource: dataSource, allowPaging: true, pageSettings: { currentPage: currentPage, pageSize: 4 }}"&gt;&lt;/div&gt;
+        <div id="Grid" data-bind="ejGrid: { dataSource: dataSource, allowPaging: true, pageSettings: { currentPage: currentPage, pageSize: 4 }}"></div>
 
-    &lt;/div&gt;
+    </div>
 
-     &lt;ej:Button runat="server" Type="Button" Text="Binding" ClientSideOnClick="onClick" ID="submit"&gt;&lt;/ej:Button&gt;
+     <ej:Button runat="server" Type="Button" Text="Binding" ClientSideOnClick="onClick" ID="submit"></ej:Button>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server"&gt;
+<asp:Content ID="Content2" ContentPlaceHolderID="ScriptSection" runat="server">
 
-    &lt;script src="../Scripts/knockout-min.js"&gt;&lt;/script&gt;
+    <script src="../Scripts/knockout-min.js"></script>
 
-    &lt;script src="../Scripts/ej/ej.widget.ko.min.js"&gt;&lt;/script&gt;
+    <script src="../Scripts/ej/ej.widget.ko.min.js"></script>
 
-    &lt;script type="text/javascript" class="jsScript"&gt;
+    <script type="text/javascript" class="jsScript">
 
         function onClick(arg) {
 
@@ -57,9 +57,9 @@ The following code example illustrates on how the model is made observable and u
 
 
 
-    &lt;/script&gt;
+    </script>
 
- &lt;/asp:Content&gt;
+ </asp:Content>
  
  {% endhighlight %}
 
@@ -68,7 +68,7 @@ The result of the above code example is illustrated as follows.
 Before changing the model, EmployeeID 1 has FullName value as Nancy Davolio. After changing, the result is as follows.
 
 ![](KO-ResultSet_images/KO-ResultSet_img1.png) 
-{:.image }
+
 
 
 

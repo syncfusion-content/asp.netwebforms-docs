@@ -18,7 +18,7 @@ This section encompasses the details on how to configure the RangeNavigator and 
 
 
 ![](Getting-Started_images/Getting-Started_img1.png)
-{:.image }
+
 
 
 ## Create a simple ASP.NET Application for RangeNavigator
@@ -27,8 +27,8 @@ This section encompasses the details on how to configure the RangeNavigator and 
 
 1. On the File menu, click NewWeb Site. The New Web Site dialog box opens.
 
-![](Getting-Started_images/Getting-Started_img2.png)
-{:.image }
+	![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 2. On the upper-right corner, select .NET Framework 4.5.
@@ -39,70 +39,68 @@ This section encompasses the details on how to configure the RangeNavigator and 
 7. The New ASP.NET web site opens.
 8. While creating web site through Sycfusion ASP template, the below changes will be applied in the project.
 9. Configure web.config files for assemblies
-* The following assemblies references are added properly in web.config file.  
+   * The following assemblies references are added properly in web.config file.  
 
-[Web.config]
-
-  &lt;compilation debug="true" targetFramework="4.5"&gt;
-
-      &lt;assemblies&gt;
-
-        &lt;add assembly="Syncfusion.EJ.Web, Version=12.2450.0.36, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89"/&gt;
-
-        &lt;add assembly="Syncfusion.EJ, Version=12.2450.0.36, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89"/&gt;
-
-      &lt;/assemblies&gt;
-
-    &lt;/compilation&gt;
-
-    &lt;httpRuntime targetFramework="4.5" /&gt;
-
-    &lt;pages&gt;      
-
-    &lt;controls&gt;
-
-      &lt;add namespace="Syncfusion.JavaScript.Web" assembly="Syncfusion.EJ.Web, Version=12.2450.0.36, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/&gt;
-
-      &lt;add namespace="Syncfusion.JavaScript.Web" assembly="Syncfusion.EJ, Version=12.2450.0.36, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/&gt;
-
-      &lt;add namespace="Syncfusion.JavaScript.Models" assembly="Syncfusion.EJ, Version=12.2450.0.36, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/&gt;
-
-      &lt;add  namespace="Syncfusion.JavaScript.DataVisualization.Models" assembly="Syncfusion.EJ" tagPrefix="ej"/&gt;
-
-    &lt;/controls&gt;
-
-    &lt;/pages&gt;
+   ~~~ html	
+	
+	 [Web.config]
+	 
+		<compilation debug="true" targetFramework="4.5">
+		
+			<assemblies>
+			
+				<add assembly="Syncfusion.EJ.Web, Version=12.2450.0.36, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89"/>
+				
+				<add assembly="Syncfusion.EJ, Version=12.2450.0.36, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89"/>
+				
+			</assemblies>
+			
+		</compilation>	
+		
+		<httpRuntime targetFramework="4.5" />
+		
+		<pages> 
+		
+			<controls>
+			
+				<add namespace="Syncfusion.JavaScript.Web" assembly="Syncfusion.EJ.Web, Version=12.2450.0.36, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/>
+				
+				<add namespace="Syncfusion.JavaScript.Web" assembly="Syncfusion.EJ, Version=12.2450.0.36, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/>
+				
+				<add  namespace="Syncfusion.JavaScript.DataVisualization.Models" assembly="Syncfusion.EJ" tagPrefix="ej"/>
+				
+			</controls>
+			
+		</pages>	
+		
+   ~~~
+   {:.prettyprint }
 
 10. Syncfusion .CSS  and Script files are added in Content and Script folder
+    
+	![](Getting-Started_images/Getting-Started_img3.png)
 
-![](Getting-Started_images/Getting-Started_img3.png)
-{:.image }
 
 
 11. ASP Script Manager, Syncfusion CSS and Scripts file references are added from the respective folder in Site.Master page.
+    
+	![](Getting-Started_images/Getting-Started_img4.png)
 
-![](Getting-Started_images/Getting-Started_img4.png)
-{:.image }
 
 
 12. Syncfusion EJ and EJ.Web dll added in website property page
 
-![](Getting-Started_images/Getting-Started_img5.png)
-{:.image }
-
+	![](Getting-Started_images/Getting-Started_img5.png)
 
 13. Now you can find Rangenavigator custom control in the Syncfusion Toolbox.
 14. Click on Rangenavigator icon and drag and drop in your web page.
 
-![](Getting-Started_images/Getting-Started_img6.png)
-{:.image }
-
+	![](Getting-Started_images/Getting-Started_img6.png)
 
 15. In designer page now RangeNavigator designer image will be created.
 
-![C:/Users/ApoorvahR/Desktop/Note.png](Getting-Started_images/Getting-Started_img7.png)
-{:.image }
-_Note: If you use web application, you will need to follow the above steps manually to use the Syncfusion controls._
+
+> Note: If you use web application, you will need to follow the above steps manually to use the Syncfusion controls.
 
 ## Configure RangeNavigator
 
@@ -111,7 +109,7 @@ Getting started with your ASP RangeNavigator is simple; all you need to do is in
 The following Screen shot displays the RangeNavigator with a range from 2010 January 1st to December 31st.
 
 ![](Getting-Started_images/Getting-Started_img8.png)
-{:.image }
+
 
 
 ## Add series
@@ -206,9 +204,9 @@ In Default.ASPX specify the type of series you want to render using “Type” p
 
 
 
-&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" XName="xDate" YName="yValue"&gt;        
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" XName="xDate" YName="yValue">        
 
-    &lt;/ej:RangeNavigator&gt;
+    </ej:RangeNavigator>
 
 
 
@@ -216,8 +214,8 @@ The following screenshot displays the RangeNavigator with the type series as “
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
-{:.image }
+![](Getting-Started_images/Getting-Started_img9.png)
+
 
 {% endhighlight %}
 
@@ -228,11 +226,11 @@ Tooltip can be customized for RangeNavigator using Tooltip option. You can also 
 
 {% highlight html %}
 
-&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" XName="xDate" YName="yValue"&gt;
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" XName="xDate" YName="yValue">
 
-        &lt;TooltipSettings Visible="true" LabelFormat="MMM/yyyy" TooltipDisplayMode="always"&gt;&lt;/TooltipSettings&gt;        
+        <TooltipSettings Visible="true" LabelFormat="MMM/yyyy" TooltipDisplayMode="always"></TooltipSettings>        
 
-    &lt;/ej:RangeNavigator&gt;
+    </ej:RangeNavigator>
 
 
 
@@ -241,7 +239,7 @@ The following screen shot displays the label format Tooltip in RangeNavigator:
 {% endhighlight %}
 
 ![](Getting-Started_images/Getting-Started_img10.png)
-{:.image }
+
 
 
 ## Update Chart
@@ -282,31 +280,31 @@ List<NavigatorData> dataTable = new List<NavigatorData>();
 
 {% highlight html %}
 
-&lt;ej:Chart ID="Chart1" runat="server"&gt;
+<ej:Chart ID="Chart1" runat="server">
 
-        &lt;Title Text="Sales Analysis"&gt;&lt;/Title&gt;
+        <Title Text="Sales Analysis"></Title>
 
-        &lt;Legend Visible="true" Position="Top"&gt;&lt;/Legend&gt;
+        <Legend Visible="true" Position="Top"></Legend>
 
-        &lt;PrimaryXAxis&gt;
+        <PrimaryXAxis>
 
-            &lt;Title Text="Sales(Million)"&gt;&lt;/Title&gt;
+            <Title Text="Sales(Million)"></Title>
 
-        &lt;/PrimaryXAxis&gt;
+        </PrimaryXAxis>
 
-       &lt;Series&gt;
+       <Series>
 
-        &lt;ej:Series Name="Product A" Type="Line" XName="xDate" YName="yValue"&gt;&lt;/ej:Series&gt;
+        <ej:Series Name="Product A" Type="Line" XName="xDate" YName="yValue"></ej:Series>
 
-    &lt;/Series&gt;     
+    </Series>     
 
-    &lt;/ej:Chart&gt; 
+    </ej:Chart> 
 
 
 
-&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" XName="xDate" YName="yValue" onClientSideRangeChanged="onrangechanged"&gt;
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" XName="xDate" YName="yValue" onClientSideRangeChanged="onrangechanged">
 
-&lt;/ej:RangeNavigator&gt;
+</ej:RangeNavigator>
 
 {% endhighlight %}
 
@@ -314,7 +312,7 @@ The following code example illustrates how to use the RangeChanged event of Rang
 
 {% highlight js %}
 
-&lt;script type="text/javascript" language="javascript"&gt;
+<script type="text/javascript" language="javascript">
 
 function onrangechanged(sender) {
 
@@ -330,14 +328,14 @@ function onrangechanged(sender) {
 
     }
 
-&lt;/script&gt;
+</script>
 
 {% endhighlight %}
 
 The following screenshot displays how the RangeNavigator is updated when the selected range is changed.
 
 ![](Getting-Started_images/Getting-Started_img11.png)
-{:.image }
+
 
 
 ## Set value type
@@ -426,21 +424,21 @@ In Default.ASPX specify the DataSource to the series and provide the field name 
 
 
 
-  &lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" ValueType="numeric"&gt;
+  <ej:RangeNavigator ID="RangeNavigator1" runat="server" ValueType="numeric">
 
-    &lt;Series&gt;
+    <Series>
 
-        &lt;ej:Series XName="xDate" YName="yValue"&gt;&lt;/ej:Series&gt;
+        <ej:Series XName="xDate" YName="yValue"></ej:Series>
 
-    &lt;/Series&gt;
+    </Series>
 
-&lt;/ej:RangeNavigator&gt;       
+</ej:RangeNavigator>       
 
 {% endhighlight %}
 
 The following screenshot displays the RangeNavigator with numerical values:
 
 ![](Getting-Started_images/Getting-Started_img12.png) 
-{:.image }
+
 
 

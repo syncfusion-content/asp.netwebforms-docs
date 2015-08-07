@@ -32,7 +32,7 @@ Add the following code in your ASPX page to render the CurrencyTextbox control w
 The following screenshot is the output of the above code.
 
 ![](Behavior-Settings_images/Behavior-Settings_img1.png) 
-{:.image }
+
 
 
 ## Persistence Support
@@ -58,9 +58,9 @@ Add the following code in your ASPX page to render the CurrencyTextbox control w
 The output for the CurrencyTextbox with EnablePersistencebefore the page load and after changing the value and page load are as follows.
 
 ![](Behavior-Settings_images/Behavior-Settings_img2.png)
-{:.image }
+
 ![](Behavior-Settings_images/Behavior-Settings_img3.png) 
-{:.image }
+
 
 
 ## Strict Mode Support
@@ -94,9 +94,9 @@ Add the following code in your ASPX page to render THE CurrencyTextbox control w
 The output for CurrencyTextbox with and without the EnableStrictMode.
 
 ![](Behavior-Settings_images/Behavior-Settings_img4.png)
-{:.image }
+
 ![](Behavior-Settings_images/Behavior-Settings_img5.png) 
-{:.image }
+
 
 ## Enabled or Disabled
 
@@ -123,9 +123,9 @@ Add the following code to your ASPX page to render the CurrencyTextbox control.
 The output for CurrencyTextbox when Enabled is true and Enabled is false.
 
 ![](Behavior-Settings_images/Behavior-Settings_img6.png)
-{:.image }
+
 ![](Behavior-Settings_images/Behavior-Settings_img7.png)
-{:.image }
+
 
 
 ## Adjusting TextBox Size
@@ -151,7 +151,7 @@ Add the following code to your ASPX page to render the CurrencyTextbox control w
 The output for Textbox after setting Height and Width.
 
 ![](Behavior-Settings_images/Behavior-Settings_img8.png)
-{:.image }
+
 
 
 ## Increment Step
@@ -177,9 +177,9 @@ Add the following code to your ASPX page to render the CurrencyTextbox control w
 The output for CurrencyTextbox with IncrementStep on initial load and after increasing one step.
 
 ![](Behavior-Settings_images/Behavior-Settings_img9.png)
-{:.image }
+
 ![](Behavior-Settings_images/Behavior-Settings_img10.png)
-{:.image }
+
 
 
 ## Define Name
@@ -205,7 +205,7 @@ Add the following code to your ASPX page to render the CurrencyTextbox control w
 The output for CurrencyTextbox with Name.
 
 ![](Behavior-Settings_images/Behavior-Settings_img11.png)
-{:.image }
+
 
 
 ## Define Value
@@ -229,7 +229,7 @@ Add the following code to your ASPX page to render the CurrencyTextbox control w
 The output for CurrencyTextbox with Values.
 
 ![](Behavior-Settings_images/Behavior-Settings_img12.png)
-{:.image }
+
 
 
 ## Basic Properties
@@ -261,7 +261,7 @@ Add the following code to your ASPX page to render the CurrencyTextbox control w
  The output represents CurrencyTextbox with basic properties.
 
 ![](Behavior-Settings_images/Behavior-Settings_img13.png)
-{:.image }
+
 
 
 ## Read Only Support
@@ -285,6 +285,6 @@ Add the following code to your ASPX page to render the CurrencyTextbox control w
 The output when ReadOnly is set to true.The CurrencyTextbox values cannot be edited or changed.
 
 ![](Behavior-Settings_images/Behavior-Settings_img14.png)
-{:.image }
+
 
 

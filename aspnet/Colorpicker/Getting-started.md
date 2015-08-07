@@ -16,7 +16,7 @@ The Essential ASP.NET WebForms ColorPicker control provides you support for s
 In this example, you can learn how to customize the ColorPicker control in a category Application.
 
 ![](Getting-started_images/Getting-started_img1.png)
-{:.image }
+
 
 
 In the following sections you can learn, How to:
@@ -48,7 +48,7 @@ Create the ASPX page and add the following code to it for ColorPicker creati
  Run this code to render the resultant output of the above steps.
 
 ![](Getting-started_images/Getting-started_img2.png)
-{:.image }
+
 
 
 ## Initialize the other widgets
@@ -290,7 +290,7 @@ Initialize the element in &lt;script&gt; tag. 
 Run the above code to render the following output.
 
 ![](Getting-started_images/Getting-started_img3.png)
-{:.image }
+
 
 
 ## Add value to ListBox Control
@@ -326,6 +326,6 @@ Initialize the click event to button element in the &lt;script&gt; tag.
 The following screenshot illustrates the resultant output after you click Add button.
 
 ![](Getting-started_images/Getting-started_img4.png)
-{:.image }
+
 
 

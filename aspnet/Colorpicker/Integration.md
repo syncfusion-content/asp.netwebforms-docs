@@ -131,7 +131,7 @@ The following code example explains how to bind data to the ColorPicker control 
 The following screenshot displays the output of the above code example.
 
 ![](Integration_images/Integration_img1.png)
-{:.image }
+
 
 
 ## Knockout Binding
@@ -254,7 +254,7 @@ The following code example explains how you can bind data to the ColorPicker con
 The following screenshot displays the output of the above code.
 
 ![](Integration_images/Integration_img2.png)
-{:.image }
+
 
 
 

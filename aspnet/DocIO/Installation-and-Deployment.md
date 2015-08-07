@@ -7,7 +7,7 @@ control: DocIO
 documentation: ug
 ---
 
-## Installation and Deployment
+# Installation and Deployment
 
 For step-by-step procedure for the installation of Essential Studio, refer to the Installation topic under Installation and Deployment in the Common UG.
 

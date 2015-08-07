@@ -32,7 +32,7 @@ In the design page, define the AutoComplete control and configure the EnableRTL 
 The following screenshot is the output for AutoComplete when EnableRTL is set to True.
 
 ![](RTL-Support_images/RTL-Support_img1.png)
-{:.image }
+
 
 
 ## Keyboard interaction
@@ -118,7 +118,7 @@ Define the Java Script to focus the AutoComplete Textbox on Alt + J key press.
 Run the sample, press AccessKey + J to focus in the AutoComplete control, and you can navigate by using the arrow keys. Use the Escape key to close the popup.
 
 ![](RTL-Support_images/RTL-Support_img2.png) 
-{:.image }
+
 
 
 Server Side Events

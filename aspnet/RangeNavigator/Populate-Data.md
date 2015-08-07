@@ -17,23 +17,23 @@ The Series property provides access to a collection of all series that are defin
 
 {% highlight html %}
 
-&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideLoad="loadingdata"&gt;
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideLoad="loadingdata">
 
-         &lt;Series&gt;
+         <Series>
 
-             &lt;ej:Series Name="ProductA" EnableAnimation="false" Type="Line" Opacity="0.5" Fill="#69D2E7"&gt;&lt;/ej:Series&gt;
+             <ej:Series Name="ProductA" EnableAnimation="false" Type="Line" Opacity="0.5" Fill="#69D2E7"></ej:Series>
 
-         &lt;/Series&gt;
+         </Series>
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-&lt;/ej:RangeNavigator&gt;
+</ej:RangeNavigator>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
   function loadingdata(sender) {
 
@@ -91,13 +91,13 @@ function GetData() {
 
         }
 
-      &lt;/script&gt;         
+      </script>         
 
 	  {% endhighlight %}
 
 The following screenshot illustrates the RangeNavigator that is populated with data using DataSource property in series.
 
 ![](Populate-Data_images/Populate-Data_img1.png)
-{:.image }
+
 
 

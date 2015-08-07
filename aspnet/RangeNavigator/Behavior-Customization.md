@@ -17,18 +17,18 @@ If you set EnableDeferredUpdate to true, the RangeChanged event gets fired after
 
 {% highlight html %}
 
-&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" EnableDeferredUpdate="True" &gt;
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" EnableDeferredUpdate="True" >
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-&lt;/ej:RangeNavigator&gt;
+</ej:RangeNavigator>
 
 {% endhighlight %}
 
 ![](Behavior-Customization_images/Behavior-Customization_img1.png)
-{:.image }
+
 
 
 _Figure 19: Deferred update_
@@ -42,19 +42,19 @@ This event is handled when the RangeNavigator gets loaded. A parameter sender is
 
 {% highlight html %}
 
-&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideLoaded="loadingdata"&gt;
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideLoaded="loadingdata">
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-&lt;/ej:RangeNavigator&gt;
+</ej:RangeNavigator>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
                function loadingdata(sender) {
 
@@ -62,7 +62,7 @@ This event is handled when the RangeNavigator gets loaded. A parameter sender is
 
                }
 
-  &lt;/script&gt;         
+  </script>         
 
 {% endhighlight %}
   
@@ -73,19 +73,19 @@ This event gets fired whenever the selected range changes in RangeNavigator. A p
 
 {% highlight html %}
 
-&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="onchartload"&gt;
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="onchartload">
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-&lt;/ej:RangeNavigator&gt;
+</ej:RangeNavigator>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
     function onchartload(sender) {
 
@@ -93,7 +93,7 @@ This event gets fired whenever the selected range changes in RangeNavigator. A p
 
          }  
 
-&lt;/script&gt;     
+</script>     
 
 {% endhighlight %}    
 
@@ -106,19 +106,19 @@ You can easily update the data for chart by assigning the ZoomFactor and ZoomPos
 
 {% highlight html %}
 
-&lt;ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="loadingdata"&gt;
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="loadingdata">
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-  &lt;%--Code --%&gt;
+  <%--Code --%>
 
-&lt;/ej:RangeNavigator&gt;
+</ej:RangeNavigator>
 
 {% endhighlight %} 
 
 {% highlight js %}
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
   // setting zoom factor and position for chart axis in rangeChanged event.
 
@@ -138,12 +138,12 @@ You can easily update the data for chart by assigning the ZoomFactor and ZoomPos
 
           }
 
-      &lt;/script&gt;         
+      </script>         
 
 {% endhighlight %} 
 
 ![](Behavior-Customization_images/Behavior-Customization_img2.png)
-{:.image }
+
 
 
 ## Thumb Template
@@ -153,31 +153,31 @@ You can customize Thumb template by using LeftThumbTemplate and RightThumbTempla
 
 {% highlight html %}
 
-&lt;script type="text/x-jsrender" id="left" &gt;
+<script type="text/x-jsrender" id="left" >
 
-           &lt;svg height="24" width="32" style="fill:#DD4A4A;stroke:black;"&gt;
+           <svg height="24" width="32" style="fill:#DD4A4A;stroke:black;">
 
-                &lt;path d="M2 2 L2 22 L22 22 L32 12 L22 2 Z" /&gt;
+                <path d="M2 2 L2 22 L22 22 L32 12 L22 2 Z" />
 
-           &lt;/svg&gt;
+           </svg>
 
-&lt;/script&gt;
+</script>
 
-&lt;script type="text/x-jsrender" id="right"&gt;
+<script type="text/x-jsrender" id="right">
 
-           &lt;svg height="24" width="32" style="fill:#DD4A4A;stroke:black; "&gt;
+           <svg height="24" width="32" style="fill:#DD4A4A;stroke:black; ">
 
-               &lt;path d="M2 12 L12 22 L32 22 L32 2 L12 2 Z" /&gt;
+               <path d="M2 12 L12 22 L32 22 L32 2 L12 2 Z" />
 
-           &lt;/svg&gt;
+           </svg>
 
-&lt;/script&gt;
+</script>
 
 {% endhighlight %} 
 
 {% highlight c# %}
 
- &lt;ej:RangeNavigator ID="Range1" runat="server"&gt; 
+ <ej:RangeNavigator ID="Range1" runat="server"> 
 
 
 
@@ -185,7 +185,7 @@ You can customize Thumb template by using LeftThumbTemplate and RightThumbTempla
 
 
 
-     &lt;NavigatorStyleSettings LeftThumbTemplate="left" RightThumbTemplate=" right"/&gt;
+     <NavigatorStyleSettings LeftThumbTemplate="left" RightThumbTemplate=" right"/>
 
 
 
@@ -193,13 +193,13 @@ You can customize Thumb template by using LeftThumbTemplate and RightThumbTempla
 
 
 
- &lt;/ej:RangeNavigator&gt;
+ </ej:RangeNavigator>
 
 {% endhighlight %} 
 
 The following screenshot displays the RangeNavigator using thumb template.
 
 ![D:/TRUNK LOCATION/Feature Tool/Image/aspnet/ejrangenavigator/Chart-Customization.png](Behavior-Customization_images/Behavior-Customization_img3.png)
-{:.image }
+
 
 
