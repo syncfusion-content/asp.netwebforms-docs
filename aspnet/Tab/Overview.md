@@ -11,7 +11,7 @@ documentation: ug
 
 The Tab control is an interface where the list of items are expanded from a single item. Each Tab panel defines its header text or header template, as well as a content template. Tab items are dynamically added and removed. Tabs can be loaded with AJAX content that is useful for building dashboards where the space is limited.
 
-Key Features
+## Key Features
 
 * Collapsible header: All headers are collapsible.
 * AJAX load: Load AJAX content in the Tab content panel.

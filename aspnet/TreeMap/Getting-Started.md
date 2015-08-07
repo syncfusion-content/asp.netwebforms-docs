@@ -222,7 +222,7 @@ ej.widgets.all.min.js">&lt;/script&gt;
 
 The DataSource property accepts the collection values as input. For example, you can provide the list of objects as input.
 
-Weight Value Path 
+####Weight Value Path 
 
 You can calculate the size of the object using WeightValuePath of TreeMap.
 
@@ -270,11 +270,11 @@ The following image displays a TreeMap with default properties using the above c
 
 You can group TreeMapItems using levels in TreeMap.
 
-Group Path
+#### Group Path
 
 You can use GroupPath property for every flat level of the TreeMap control. It is a path to a field on the source object that serves as the “Group” for the level specified. You can group the data based on the GroupPath in the TreeMap control. When the GroupPath is not specified, then the items are not grouped and the data is displayed in the order specified in the DataSource.
 
-Group Gap
+#### Group Gap
 
 You can use GroupGap property to separate the items from every flat level and to differentiate the levels mentioned in the TreeMap control.
 
@@ -334,7 +334,7 @@ The following screenshot displays grouping of TreeMapItems using Levels
 
 You can differentiate the nodes based on its value and color ranges using Range color. You can also define the color value range using From and To properties. 
 
-Color Value Path
+#### Color Value Path
 
 The ColorValuePath of TreeMap is a path to a field on the source object. You can determine the color for the object using ColorValuePath of TreeMap.
 
@@ -404,7 +404,7 @@ The following screenshot displays customized TreeMap Appearance by Range.
 
 You can enable the tooltip by setting ShowTooltip to ‘True’. By default, it takes the property of the bound object that is referred in the WeightValuePath and displays its content when the corresponding node is hovered. You can customize the template for tooltip using TooltipTemplate property.
 
-Leaf Item Settings
+#### Leaf Item Settings
 
 You can customize the Leaf level TreeMapitems using LeafItemSettings. The Label and tooltip values take the property of bound object that is referred in the LabelPath when defined.
 
@@ -484,7 +484,7 @@ You can set the color value of leaf nodes using TreeMapLegend. This legend is ap
 
 You can set ShowLegend propery value to ‘True’ to make a Legend visible.
 
-Label for Legend
+#### Label for Legend
 
 You can customize the labels of the legenditem using LegendLabel property of RangeColorMapping. 
 

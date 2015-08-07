@@ -18,7 +18,8 @@ You can further customize Ticks by setting color, width and height.
 
 
 {% highlight html %}
- 
+
+
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
@@ -93,9 +94,10 @@ You can further customize Ticks by setting color, width and height.
 
     </ej:OlapGauge>
 
-{% endhighlight %}
 
-{{ '![](Ticks_images/Ticks_img1.png)' | markdownify }}
+{% endhighlight  %}
+
+![](Ticks_images/Ticks_img1.png) 
 
 
 
@@ -104,8 +106,9 @@ You can further customize Ticks by setting color, width and height.
 You can change the distance from the scale and the Ticks using “distanceFromScale” property.
 
 
+
+
 {% highlight html %}
- 
 
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
@@ -183,7 +186,7 @@ You can change the distance from the scale and the Ticks using “distanceFromSc
 
 {% endhighlight %}
 
-{{ '![](Ticks_images/Ticks_img2.png)' | markdownify }}
+![](Ticks_images/Ticks_img2.png) 
 
 
 
@@ -192,8 +195,10 @@ You can change the distance from the scale and the Ticks using “distanceFromSc
 You can set the height and width of the Ticks using the “tickWidth” and “tickHeight” property.
 
 
+
+
 {% highlight html %}
- 
+
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
@@ -268,9 +273,10 @@ You can set the height and width of the Ticks using the “tickWidth” and “t
 
     </ej:OlapGauge>
 
-{% endhighlight %}
 
-{{ '![I:/OlapGuage/Gauge/Tick customizatoion.png](Ticks_images/Ticks_img3.png)' | markdownify }}
+{% endhighlight  %}
+
+ ![I:/OlapGuage/Gauge/Tick customizatoion.png](Ticks_images/Ticks_img3.png) 
 
 
 
@@ -279,8 +285,9 @@ You can set the height and width of the Ticks using the “tickWidth” and “t
 You can hide the Ticks that indicate the range values using “showTicks” property.
 
 
+
 {% highlight html %}
- 
+
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
@@ -355,9 +362,10 @@ You can hide the Ticks that indicate the range values using “showTicks” prop
 
     </ej:OlapGauge>
 
-{% endhighlight %}
+{% endhighlight  %}
 
-{{ '![](Ticks_images/Ticks_img4.png)' | markdownify }}
+
+ ![](Ticks_images/Ticks_img4.png)
 
 
 

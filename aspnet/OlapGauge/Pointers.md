@@ -24,8 +24,9 @@ Two different types of pointer available in OlapGuage are:
 You can set the pointer to Needle type by setting “pointerType”property to “Needle” and the pointer to Marker type by setting the “pointerType” properties to “Marker”.
 
 
+
 {% highlight html %}
- 
+
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
@@ -100,9 +101,10 @@ You can set the pointer to Needle type by setting “pointerType”property to �
 
     </ej:OlapGauge>
 
+
 {% endhighlight %}
 
-{{ '![](Pointers_images/Pointers_img1.png)' | markdownify }}
+![](Pointers_images/Pointers_img1.png) 
 
 
 
@@ -111,8 +113,10 @@ You can set the pointer to Needle type by setting “pointerType”property to �
 You can customize the Pointer length and width using the “pointerLength” and “pointerWidth” property.
 
 
+
+
 {% highlight html %}
- 
+
  <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
@@ -189,7 +193,8 @@ You can customize the Pointer length and width using the “pointerLength” and
 
 {% endhighlight %}
 
-{{ '![](Pointers_images/Pointers_img2.png)' | markdownify }}
+
+ ![](Pointers_images/Pointers_img2.png) 
 
 
 
@@ -198,8 +203,10 @@ You can customize the Pointer length and width using the “pointerLength” and
 You can customize the Pointer background color using “backgroundcolor”property.
 
 
+
+
 {% highlight html %}
- 
+
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
@@ -275,10 +282,11 @@ You can customize the Pointer background color using “backgroundcolor”proper
     </ej:OlapGauge>
 
 
-{% endhighlight %}
+{% endhighlight  %}
 
 
-{{ '![](Pointers_images/Pointers_img3.png)' | markdownify }}
+
+![](Pointers_images/Pointers_img3.png) 
 
 
 
@@ -287,8 +295,10 @@ You can customize the Pointer background color using “backgroundcolor”proper
 You can customize Pointershapes using the “needlestyle” property. 
 
 
+
+
 {% highlight html %}
- 
+
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
@@ -363,9 +373,9 @@ You can customize Pointershapes using the “needlestyle” property.
 
     </ej:OlapGauge>
 
+
 {% endhighlight %}
 
-{{ '![I:/OlapGuage/Gauge/pointerstyle.png](Pointers_images/Pointers_img4.png)' | markdownify }}
-
+ ![I:/OlapGuage/Gauge/pointerstyle.png](Pointers_images/Pointers_img4.png) 
 
 

@@ -7,19 +7,19 @@ control: XlsIO
 documentation: ug
 ---
 
-## Insert Comments 
+# Insert Comments 
 
 Microsoft Excel has the ability to insert comments in cells. Comments give additional information about a cell, such as, what the value represents. You can insert and format comments through the Insert menu in Excel. You can also format the comments inserted through the Format Comment dialog box.
 
-{ ![](Insert-Comments_images/Insert-Comments_img1.png) | markdownify }
-{:.image }
+![](Insert-Comments_images/Insert-Comments_img1.png) 
+
 
 
 XlsIO has APIs for inserting both Regular and Rich Text comments by using the ICommentShape interface. It has various properties to format the comments. The following code example illustrates how to insert comments.
 
+{% highlight C# %}
 
 
-[C#]
 
 
 
@@ -93,9 +93,10 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
+{% highlight vbnet%}
 
-[VB.NET]
 
 
 
@@ -171,19 +172,19 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
+![](Insert-Comments_images/Insert-Comments_img2.png) 
 
-{ ![](Insert-Comments_images/Insert-Comments_img2.png) | markdownify }
-{:.image }
 
 
 
 
 It is also possible to read theRich Text string formatting. The following code example illustrates how rich text comments from a cell are read by using XlsIO and then displayed in a RichTextBox.
 
+{% highlight C#%}
 
 
-[C#]
 
 
 
@@ -241,9 +242,11 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
+
+{% highlight vbnet%}
 
 
-[VB.NET]
 
 
 
@@ -299,13 +302,14 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
+{% endhighlight %}
 
 You can also fill the comments with various types of fills by using the IFill interface. The following code example illustrates how to fill the comment shape with a TwoColor gradient.
 
 
+{% highlight C#%}
 
-[C#]
+
 
 
 
@@ -363,9 +367,11 @@ workbook.Close();
 
 excelEngine.Dispose();                  
 
+{% endhighlight %}
+
+{% highlight vbnet%}
 
 
-[VB.NET]
 
 
 
@@ -425,12 +431,11 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
+{% endhighlight %}
 
 XlsIO also provides options to resize the comment size and move/size with cell by using the IsMoveWithCell and IsSizeWithCell properties. You can also autofit the size of the comment by using the AutoFit property.
 
-> { ![](Insert-Comments_images/Insert-Comments_img3.jpeg) | markdownify }
-{:.image }
+
 _Note: Currently it is not possible to insert preformatted RTF tags in Excel by using XlsIO._
 
 

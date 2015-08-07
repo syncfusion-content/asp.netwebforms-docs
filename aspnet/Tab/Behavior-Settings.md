@@ -67,7 +67,7 @@ The following screenshot illustrates the Tab with Close Button.
 {:.image }
 
 
-### Orientation
+## Orientation
 
 By default, Tab control renders in horizontal orientation. You can change the Orientation to vertical by using the HeaderPosition property. With this property, you can customize the header by Top, Bottom, Left, and Right.
 

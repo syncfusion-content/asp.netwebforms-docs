@@ -12,8 +12,10 @@ documentation: ug
 Tooltip provides the information about the OlapGauge when you move the mouse pointer over the control. You can enable it using “showtooltip”property.
 
 
+
+
 {% highlight html %}
- 
+
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent" >
 
         <Scales>
@@ -87,15 +89,19 @@ Tooltip provides the information about the OlapGauge when you move the mouse poi
         </Scales>
 
     </ej:OlapGauge>
-{% endhighlight %}
+
+	
+{% endhighlight  %}
 
 ## Customizing the tooltip using CSS
 
 You can customize the Tooltip by overriding the existing style attributes and referring it in web page.
 
 
+
+
 {% highlight css %}
- 
+
 <style>
 
 .e-olapgauge-tooltip {
@@ -120,11 +126,12 @@ You can customize the Tooltip by overriding the existing style attributes and re
 
 </style>
 
+
 {% endhighlight %}
 
 
 
-{{ '![](Tooltip_images/Tooltip_img1.png)' | markdownify }}
+ ![](Tooltip_images/Tooltip_img1.png) 
 
 
 

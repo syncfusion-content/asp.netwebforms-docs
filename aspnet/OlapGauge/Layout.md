@@ -16,6 +16,7 @@ The OLAP Gauge control provides support to display multiple gauges in a str
 * Wrap Layout: Based on the available space, gauges are aligned and displayed automatically. 
 * Row count: Specifies the number of gauge controls to be displayed row-wise.
 * Column count: Specifies the number of gauge controls to be displayed column-wise.
+
 ## Layout Customization 
 
 
@@ -26,8 +27,9 @@ You can customize/limit the number of gauges to be displayed in the table with t
 You can set the number of gauges to be displayed in row using rowsCount property. By default the value is 0.
 
 
+
 {% highlight html %}
- 
+
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent" RowsCount="2">
 
         <Scales>
@@ -102,9 +104,10 @@ You can set the number of gauges to be displayed in row using rowsCount property
 
 </ej:OlapGauge>
 
+
 {% endhighlight %}
 
- ![](Layout_images/Layout_img1.png)
+ ![](Layout_images/Layout_img1.png) 
 
 
 
@@ -113,8 +116,9 @@ You can set the number of gauges to be displayed in row using rowsCount property
 You can set the number of gauges to be displayed in column using columnsCount property. By default the value is 0.
 
 
+
 {% highlight html %}
- 
+
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent" ColumnsCount="2">
 
         <Scales>
@@ -189,9 +193,10 @@ You can set the number of gauges to be displayed in column using columnsCount pr
 
     </ej:OlapGauge>
 
+
 {% endhighlight %}
 
- ![](Layout_images/Layout_img2.png)
+![](Layout_images/Layout_img2.png)
 
 
 

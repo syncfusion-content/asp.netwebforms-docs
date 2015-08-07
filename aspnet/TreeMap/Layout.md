@@ -18,7 +18,7 @@ There are four different TreeMap layouts such as
 * SliceAndDiceHorizontal Layout
 * SliceAndDiceVertical Layout
 
-Squarified Layout
+## Squarified Layout
 
 Squarifiedlayout creates rectangles with best aspect ratio.
 
@@ -64,7 +64,7 @@ Squarifiedlayout creates rectangles with best aspect ratio.
 {:.image }
 
 
-SliceAndDiceAuto Layout
+## SliceAndDiceAuto Layout
 
 SliceAndDiceAuto layout creates rectangles with high aspect ratio and displays them sorted both horizontally and vertically.
 
@@ -96,7 +96,7 @@ SliceAndDiceAuto layout creates rectangles with high aspect ratio and displays t
 {:.image }
 
 
-SliceAndDiceHorizontal Layout
+## SliceAndDiceHorizontal Layout
 
 SliceAndDiceHorizontal layout creates rectangles with high aspect ratio and displays them sorted horizontally.
 
@@ -126,7 +126,7 @@ SliceAndDiceHorizontal layout creates rectangles with high aspect ratio and disp
 {:.image }
 
 
-SliceAndDiceVertical Layout
+## SliceAndDiceVertical Layout
 
 SliceAndDiceVertical layout creates rectangles with high aspect ratio and displays them sorted vertical.
 

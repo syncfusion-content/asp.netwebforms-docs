@@ -28,6 +28,8 @@ By default, there are 13 themes available for the Dialog control,
 * gradient-lime-dark
 * gradient-saffron
 * gradient-saffron-dark
+
+
 ## CSS Class
 
 

@@ -13,7 +13,7 @@ Custom label provides information about the members associated behind each OlapG
 
 
 
-![I:/OlapGuage/Gauge/Range size.png](Custom-Label_images/Custom-Label_img1.png)
+![I:/OlapGuage/Gauge/Range size.png](Custom-Label_images/Custom-Label_img1.png) 
 
 
 
@@ -21,9 +21,10 @@ Custom label provides information about the members associated behind each OlapG
 
 You can set the location of the custom label in circular gauge using “location” property. Refer the following code example.
 
-
 {% highlight html %}
- 
+
+
+
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
@@ -92,9 +93,9 @@ You can set the location of the custom label in circular gauge using “location
 
     </ej:OlapGauge>
 
-
 {% endhighlight %}
- ![](Custom-Label_images/Custom-Label_img2.png)
+
+![](Custom-Label_images/Custom-Label_img2.png) 
 
 
 
@@ -104,6 +105,8 @@ You can customize the custom label font with fontstyle, font family, and size pr
 
 
 {% highlight html %}
+
+
 
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
@@ -181,7 +184,8 @@ You can customize the custom label font with fontstyle, font family, and size pr
 
 {% endhighlight %}
 
-![](Custom-Label_images/Custom-Label_img3.png)
+
+![](Custom-Label_images/Custom-Label_img3.png) 
 
 
 

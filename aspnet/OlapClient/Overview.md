@@ -11,7 +11,7 @@ documentation: ug
 
 The OLAP Client control for ASP.NET provides support to browse multidimensional data that is organized in the form of dimensions, measures, named sets, and KPIs (key performance indicators) in a cubic format. You can visualize the results in graphical and tabular formats (charts and grids). The OLAP Client control is also used to create and edit a report on-the-fly that is stored for later use.
 
-Key Features
+## Key Features
 
 The key features of the OLAP Client control is as follows:
 

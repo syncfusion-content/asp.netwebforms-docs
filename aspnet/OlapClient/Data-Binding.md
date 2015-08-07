@@ -13,7 +13,7 @@ OLAP Client control enables you to retrieve multidimensional data either from S
 
 ## SSAS
 
-Bind OLAP Client to the Offline Cube
+### Bind OLAP Client to the Offline Cube
 
 The following code example illustrates how to connect to an offline cube.
 
@@ -28,7 +28,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-Bind OLAP Client to the SQL Server (Local)
+### Bind OLAP Client to the SQL Server (Local)
 
 The following code example illustrates how to connect to a local cube in SQL Server.
 
@@ -47,11 +47,11 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 XML for Analysis (XML/A) is a standard that allows the client applications to transfer multi-dimensional or OLAP data sources from an OLAP Server which is available online. The back and forth communication is done using the web standards – HTTP, SOAP, and XML. The query language used is MDX, which is most widely supported for reporting from multi-dimensional data stores.
 
-Use Case Scenarios
+### Use Case Scenarios
 
 XML/A provides the most efficient way to access an OLAP database over the Internet.
 
-Connecting to SSAS Server (Online)
+### Connecting to SSAS Server (Online)
 
 The following code example illustrates how to connect to the SSAS server available online.
 
@@ -67,7 +67,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-Connect to Mondrian Server
+### Connect to Mondrian Server
 
 The following code example illustrates how to connect to the Mondrian Server.
 
@@ -76,7 +76,7 @@ The following code example illustrates how to connect to the Mondrian Server.
 {:.image }
 
 
-Add Report
+### Add Report
 
 Add a new report along with the existing report collection.
 
@@ -94,7 +94,7 @@ Replace the existing report name with the altered report name.
 {:.image }
 
 
-Remove Report
+### Remove Report
 
 Removes the current report from the report collection. If only one report is available in the report list, it doesn’t remove it.
 
@@ -104,7 +104,7 @@ Removes the current report from the report collection. If only one report is ava
 {:.image }
 
 
-Save and Load Report
+### Save and Load Report
 
 The OLAPReport collection bound to the OLAPClient component can be passed to a web service, to save the reports in a database. Similarly, the saved OLAPReport collection can be loaded back into the control. Two toolbar items have been added in the control to save and load an OLAPReport collection to the database and to the component respectively.
 

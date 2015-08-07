@@ -16,8 +16,10 @@ Scale is a basic unit of radial gauge. You can customize the gauge scales by usi
 Radius of the Scale Bar is changed with the help of scaleRadius property and in order to make ScaleBar visible, set showScaleBar property to ‘true’. You can set size of the Scale Bar with the help of scaleBareSize and border width using scaleBorderWidth property. 
 
 
+
+
 {% highlight html %}
- 
+
   <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Frame FrameType="HalfCircle"/>
@@ -94,9 +96,10 @@ Radius of the Scale Bar is changed with the help of scaleRadius property and in 
 
     </ej:OlapGauge>
 
-{% endhighlight %}
 
-{{ '![](Scales_images/Scales_img1.png)' | markdownify }}
+{% endhighlight  %}
+
+ ![](Scales_images/Scales_img1.png) 
 
 
 

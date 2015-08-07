@@ -39,7 +39,7 @@ Decrements the value.</td></tr>
 </table>
 
 
-When popup is open
+## When popup is open
 
 <table>
 <tr>

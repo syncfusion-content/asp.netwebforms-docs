@@ -20,7 +20,7 @@ OLAP Client UI comes with options to customize the Grid and Chart layout, such a
 ## Display View
 
 
-Tile View
+### Tile View
 
 In Tile View representation, both Grid and Chart will be displayed one over the other, in the same layout. 
 
@@ -42,7 +42,7 @@ In Tile View representation, both Grid and Chart will be displayed one over the 
 {:.image }
 
 
-Tab View
+### Tab View
 
 In Tab View representation, both Grid and Chart will be displayed in a separate tab.
 
@@ -70,7 +70,7 @@ In Tab View representation, both Grid and Chart will be displayed in a separate 
 
 After you set defaultView property either to Chart or Grid, the corresponding control is selected for initial view/visualization, within the layout when the OLAPClient control is loaded for the first time. 
 
-Chart View
+### Chart View
 
 To display/visualize Chart control by default, set defaultView to Chart.
 
@@ -92,7 +92,7 @@ To display/visualize Chart control by default, set defaultView to Chart.
 {:.image }
 
 
-Grid View
+### Grid View
 
 To display/visualize Grid control by default, set defaultView to Grid.
 
@@ -116,7 +116,7 @@ To display/visualize Grid control by default, set defaultView to Grid.
 
 ## Hide Grid/Chart
 
-Grid Only
+### Grid Only
 
 After you set the displayMode option to GridOnly, the Chart is hidden and the data is displayed only in Grid.
 
@@ -139,7 +139,7 @@ After you set the displayMode option to GridOnly, the Chart is hidden and the d
 {:.image }
 
 
-Chart Only
+### Chart Only
 
 After you set the displayMode option to ChartOnly, the Grid is hidden and data is displayed only in Chart.
 
@@ -162,7 +162,7 @@ After you set the displayMode option to ChartOnly, the Grid is hidden and data 
 {:.image }
 
 
-Both Grid and Chart
+### Both Grid and Chart
 
 After you set the displayMode option to ChartAndGrid, data is displayed in both Grid and Chart.
 

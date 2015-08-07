@@ -16,8 +16,10 @@ Ranges are objects that highlight a range of values and can display different ra
 You can set the distance between the ranges and scales in OlapGauge using “distanceFromScale”.
 
 
+
+
 {% highlight html %}
- 
+
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
@@ -92,15 +94,17 @@ You can set the distance between the ranges and scales in OlapGauge using “dis
 
     </ej:OlapGauge>
 
-{% endhighlight %}	
+{% endhighlight  %}
 
 ## Style Customization 
 
 You can set the background color for the ranges in OlapGauge using “backgroundColor”.
 
 
+
+
 {% highlight html %}
- 
+
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
@@ -175,7 +179,8 @@ You can set the background color for the ranges in OlapGauge using “background
 
     </ej:OlapGauge>
 
-{% endhighlight %}
+{% endhighlight  %}
+
 
 ![I:/OlapGuage/Gauge/ranges.-color.png](Ranges_images/Ranges_img1.png)
 
@@ -186,8 +191,10 @@ You can set the background color for the ranges in OlapGauge using “background
 You can customize the Rangesize using “size” property.
 
 
+
+
 {% highlight html %}
- 
+
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
@@ -261,8 +268,9 @@ You can customize the Rangesize using “size” property.
         </Scales>
 
     </ej:OlapGauge>
-	
+
 {% endhighlight %}
+
 
 ![I:/OlapGuage/Gauge/Range size.png](Ranges_images/Ranges_img2.png)
 

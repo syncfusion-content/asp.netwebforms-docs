@@ -7,17 +7,17 @@ control: XlsIO
 documentation: ug
 ---
 
-## Working with Excel Worksheet 
+# Working with Excel Worksheet 
 
 The Workbook and Worksheet classes contain the methods and properties to perform various tasks with worksheets.
 
-### Create a Worksheet 
+## Create a Worksheet 
 
 Essential XlsIO helps to programmatically create a worksheet and then add the worksheet to the collection of worksheets in the workbook. The Create method in worksheets collection does this and returns a worksheet object.
 
 
+{% highlight C# %}
 
-[C#]
 
 
 
@@ -69,9 +69,11 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 
-[VB.NET]
 
 
 
@@ -120,16 +122,16 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 
-
-### Access a Worksheet 
+## Access a Worksheet 
 
 Worksheets collection can have more than one worksheet in a workbook. Accessing a particular worksheet can be done in two ways. One is by specifying the index and the other one is by specifying the sheet name. The following code example illustrates how to access a worksheet from its worksheets collection.
 
+{% highlight C# %}
 
 
-[C#]
 
 
 
@@ -187,9 +189,10 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight  %}
 
+{% highlight vbnet %}
 
-[VB.NET]
 
 
 
@@ -239,14 +242,14 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-### Remove a Worksheet
+## Remove a Worksheet
 
 Worksheets can be deleted from a workbook either by a worksheet host item or on accessing worksheet by using worksheets collection as illustrated.
 
 
-
+{% highlight C# %}
 [C#]
 
 
@@ -307,9 +310,11 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 
-[VB.NET]
 
 
 
@@ -358,20 +363,20 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 
-
-### Move or Copy a Worksheet
+## Move or Copy a Worksheet
 
 Essential XlsIO allows you to create a copy of a worksheet and insert that worksheet before or after an existing worksheet in the workbook. When the place of insertion is not specified, XlsIO creates a new workbook for the new worksheet. When you copy/move rows and columns, Microsoft Excel copies or moves all the data that it contains including formulas and their resulting values, comments, cell formats, and hidden cells.
 
-Copying Worksheets
+### Copying Worksheets
 
 Copying worksheets can be internal or external. XlsIO provides support for copying a worksheet within a workbook and also from one workbook to another. This feature can be used to merge together several workbooks. The following code example illustrates how to copy a sheet with its entire contents to another sheet.
 
+{% highlight C# %}
 
 
-[C#]
 
 
 
@@ -423,9 +428,10 @@ sourceWorkbook.Close();
 
 destinationWorkbook.Close();   
 
+{% endhighlight  %}
 
+{% highlight vbnet %}
 
-[VB.NET]
 
 
 
@@ -477,7 +483,7 @@ sourceWorkbook.Close()
 
 destinationWorkbook.Close()
 
-
+{% endhighlight %}
 
 You can also specify copy options while copying a worksheet if you are interested in improving the performance and if you are interested in ignoring certain formatting while copying through the ExcelWorksheetCopyFlags enumerator. The values of this enumerator are as follows.
 
@@ -485,9 +491,9 @@ _Table_ _8__: Values of ExcelWorksheetCopyFlags enumerator_
 
 <table>
 <tr>
-<td>
-Members </td><td>
-Description</td></tr>
+<th>
+Members </th><th>
+Description</th></tr>
 <tr>
 <td>
 None</td><td>
@@ -551,9 +557,9 @@ Represents the CopyWithoutNames copy flags.</td></tr>
 </table>
 The following code example illustrates copying worksheets.
 
+{% highlight C# %}
 
 
-[C#]
 
 
 
@@ -593,9 +599,10 @@ sourceWorkbook.Close();
 
 destinationWorkbook.Close();  
 
+{% endhighlight %}
 
+{% highlight vbnet%}
 
-[VB.NET]
 
 
 
@@ -647,17 +654,17 @@ sourceWorkbook.Close()
 
 destinationWorkbook.Close()
 
-
+{% endhighlight %}
 
 You can also copy a worksheet before or after a particular worksheet by using the AddCopyBefore and AddCopyAfter methods respectively.
 
-Moving a Worksheet
+### Moving a Worksheet
 
 XlsIO also allows moving worksheets from one position to another. This is similar to dragging a worksheet in MS Excel. This can be performed by using the Move method. The following code example illustrates how a worksheet is moved to the second position.
 
+{% highlight C# %}
 
 
-[C#]
 
 
 
@@ -721,8 +728,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 [VB.NET]
 
 
@@ -773,14 +781,14 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-### Save Worksheet as CSV
+## Save Worksheet as CSV
 
 While saving files, you have options to save as Unicode, ASCII, and other Non-Unicode encoding. The following code example illustrates how to save a file to the CSV format. To know more about opening/saving a CSV file, refer to the Open a CSV File and Save a CSV File sections.
 
 
-
+{% highlight C# %}
 [C#]
 
 
@@ -833,9 +841,10 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{%endhighlight  %}
 
+{% highlight vbnet %}
 
-[VB.NET]
 
 
 
@@ -888,11 +897,11 @@ excelEngine.Dispose()
 
 Save worksheet as text (*.txt)
 
+{% endhighlight %}
 Essential XlsIO allows you to save worksheet as a text file. This can be done by leaving the delimiter with a space as shown in the following code.
 
+{% highlight C# %}
 
-
-[C#]
 
 
 
@@ -946,8 +955,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 [VB.NET]
 
 
@@ -997,15 +1007,14 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-### Save Worksheet as HTML
+## Save Worksheet as HTML
 
 XlsIO provides support to convert a worksheet or workbook to HTML with the basic formatting preserved. The following code example illustrates on how to do this.
 
+{% highlight C# %}
 
-
-[C#]
 
 
 
@@ -1062,9 +1071,9 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose() ;
+{% endhighlight  %}
 
-
-
+{% highlight vbnet %}
 [VB.NET]
 
 
@@ -1121,15 +1130,15 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
+{% endhighlight  %}
 
 Save Options
 
 XlsIO also provides various save options to control images and texts in an Excel file. It enables you to save a worksheet with the displayed text or value in the cell to HTML file. The following code example illustrates this.
 
+{% highlight C# %}
 
 
-[C#]
 
 
 
@@ -1191,10 +1200,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();
+{% endhighlight %}
 
+{% highlight vbnet%}
 
-
-[VB.NET]
 
 
 
@@ -1254,25 +1263,25 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
 
 
-
-### Show or Hide Worksheet 
+## Show or Hide Worksheet 
 
 Excel has the sheet tab bar that appears at the bottom of the screen with tab scrolling buttons displayed on the left side. Excel provides an option to show/hide a sheet from your view. This is done by selecting the Hide item in the context menu of the sheet.
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img1.png) | markdownify }
-{:.image }
+![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img1.png)
 
 
-Hiding and Unhiding a Worksheet in XlsIO
+
+### Hiding and Unhiding a Worksheet in XlsIO
 
 XlsIO also allows you to hide/unhide worksheets by using the Visibility property. The following APIs are used to hide/unhide worksheets.
 
+{% highlight C# %}
 
 
-[C#]
 
 
 
@@ -1324,8 +1333,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 [VB.NET]
 
 
@@ -1374,13 +1384,13 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
+{% endhighlight %}
 
 XlsIO also provides an option to activate a worksheet while opening it in the workbook that is equivalent to clicking a worksheet in MS Excel. This is done by using the Activate method.
 
+{% highlight C# %}
 
 
-[C#]
 
 
 
@@ -1428,8 +1438,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight  %}
 
-
+{% highlight vbnet%}
 [VB.NET]
 
 
@@ -1475,18 +1486,18 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 
-
-### Show or Hide Worksheet Tabs 
+## Show or Hide Worksheet Tabs 
 
 Excel allows you to show/hide the workbook tabs to prevent you from switching between sheets through sheet tabs and to focus your attention on a particular sheet.
 
 XlsIO provides an option to hide the workbook tabs by using the IWorkbook.DisplayWorkbookTabs property. XlsIO also provides an option to get the current tab that is displayed by using the DisplayedTab property of IWorkbook. This functionality is supported only in the Excel97to2003 format.
 
 
+{% highlight C# %}
 
-[C#]
 
 
 
@@ -1529,10 +1540,11 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 
-
-[VB]
 
 
 
@@ -1578,19 +1590,19 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight  %}
 
-
-### Show or Hide Scroll Bars
+## Show or Hide Scroll Bars
 
 To allow viewing of a particular worksheet, hide the content in the last part of the worksheet, hide the scrollbars by turning off either scrollbar checkbox in the View tab of the Options dialog box.
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img2.png) | markdownify }
-{:.image }
+![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img2.png)
+
 
 
 XlsIO allows control of the visibility of these horizontal and vertical scrollbars in a workbook by using the IsHScrollBarVisible and IsVScrollBarVisible properties of IWorkbook as follows.
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -1640,8 +1652,9 @@ workbook.Close();
 
 excelEngine.Dispose ();
 
+{% endhighlight  %}
 
-
+{% highlight vbnet%}
 [VB]
 
 
@@ -1700,23 +1713,22 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-### Show or Hide Grid Lines 
+## Show or Hide Grid Lines 
 
 Some may find it easier to work with the worksheet applications withoutgrid lines. Excel provides options to show/hide grid lines in the worksheet. This is done by accessing the GridLines option in View tab of the ribbon.
 
 
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img3.png) | markdownify }
-{:.image }
+![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img3.png)
+
 
 
 XlsIO provides support for this feature through the IsGridLine property of IWorksheet. Color for the grid line can also be set through the GridLineColor property of IWorksheet.
 
+{% highlight C# %}
 
-
-[C#]
 
 
 
@@ -1768,8 +1780,9 @@ workbook.Close();
 
 excelEngine.Dispose ();
 
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 [VB]
 
 
@@ -1821,15 +1834,15 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 
-
-### Show or Hide Row and Column Headers 
+## Show or Hide Row and Column Headers 
 
 Headings are the display labels in worksheets that enable you to find out the cell number with ease. You can show/hide these headings by using the IsRowColumnHeadersVisible property of IWorksheet.
 
 
-
+{% highlight C# %}
 [C#]
 
 
@@ -1880,8 +1893,9 @@ workbook.Close();
 
 excelEngine.Dispose ();
 
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 [VB]
 
 
@@ -1927,18 +1941,18 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
+
+
+![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img4.png)
 
 
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img4.png) | markdownify }
-{:.image }
-
-
-### Highlight Worksheet Tabs 
+## Highlight Worksheet Tabs 
 
 Tab Colors are set to highlight a particular sheet that has some important data. You can set the tab color through the TabColor property as follows.
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -1990,7 +2004,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
 [VB.NET]
 
@@ -2038,25 +2054,25 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight  %}
+
+![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img5.png)' 
 
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img5.png) | markdownify }
-{:.image }
 
-
-### Freeze Panes 
+## Freeze Panes 
 
 It is difficult to read and understand very large spreadsheets. When you scroll too far to the right or down, you cannot be able to view the headings that are located at the top and at the left side of the worksheet. Without the headings, it is hard to keep track of the columns or rows of data viewed. Excel features Freeze Panes to avoid this problem. This feature can be enabled by selecting Freeze option from the View tab. It allows you to freeze certain areas or panes of the spreadsheet, so that they remain visible at all times while scrolling to the right or bottom. Headings make it easier to read the data in the spreadsheet.
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img6.png) | markdownify }
-{:.image }
+![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img6.png)
+
 
 
 XlsIO provides support for the freeze panes functionality through the FreezePanes method of IRange.
 
+{% highlight C# %}
 
 
-C#]
 
 
 
@@ -2106,9 +2122,10 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
-[VB.NET]
 
 
 
@@ -2155,18 +2172,18 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 
+![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img7.png)
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img7.png) | markdownify }
-{:.image }
 
 
 XlsIO also allows you to scroll to the first row in the bottom pane and first column in the right pane. It helps you to navigate to the top row while opening a spreadsheet with large number of rows/columns. Note that this works only with the sheet that has the freeze panes.
 
+{% highlight C# %}
 
 
-[C#]
 
 
 
@@ -2224,8 +2241,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight  %}
 
-
+{% highlight vbnet %}
 [VB.NET]
 
 
@@ -2280,20 +2298,19 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
 
-> { ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img8.jpeg) | markdownify }
-{:.image }
 _Note: FirstVisibleColumn and FirstVisibleRow indexes are "zero-based"._
 
-### Split Panes 
+## Split Panes 
 
 A very handy feature of Excel is its ability to view more than one copy of your worksheet and scroll through each pane of your worksheet independently. You can do this by using a feature called Split Panes that can be used to split your worksheet both horizontally and vertically. While using Split Panes, the panes of your worksheet work simultaneously. When you make a change in one pane, it simultaneously appears in the other.
 
 
 XlsIO provides support for splitting the window through the HorizontalSplit and VerticalSplit properties.
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -2351,9 +2368,10 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
-[VB.NET]
 
 
 
@@ -2408,27 +2426,27 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight  %}
 
 
 
 
-
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img9.png) | markdownify }
-{:.image }
+![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img9.png)
 
 
-### Protecting a Worksheet
+
+## Protecting a Worksheet
 
 You can share an Excel file so that others can collaborate on the data, but you can prevent anyone from making changes to specific worksheet or workbook elements by protecting certain parts of the file. 
 Excel allows you to protect a worksheet and provides an option to specify the elements that can be changed, when you protect a worksheet. This is done by opening the Tools menu and clicking Protection option.
 
-#### Protect Worksheet 
+### Protect Worksheet 
 
-WorkSheet Protection in XlsIO
+#### WorkSheet Protection in XlsIO
 
 XlsIO provides support for protecting and unprotecting elements in worksheets by using the Protect method of IWorksheet. Byusing the ExcelSheetProtection enumerator, you can set the elements that need protection. The following code example illustrates how to protect a worksheet with a password. It also restricts formatting columns in the worksheet.
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -2480,9 +2498,10 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
-[VB.NET]
 
 
 
@@ -2532,9 +2551,9 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight  %}
 
-
-Chart Sheet Protection
+#### Chart Sheet Protection
 
 Essential XlsIO now provides support to protect or unprotect a chart sheet. XlsIO provides options to protect chart sheets by using the Protect method. This method allows you to protect selected elements in a worksheet so that they cannot be modified. By using the ExcelSheetProtection enumeration, you can set the elements that need protection.
 
@@ -2545,9 +2564,9 @@ The following sample code illustrates protection of chart sheet (with password).
 
 The following code example chooses default enumerations Contents and Objects. The password chosen in the code example is syncfusion.
 
+{% highlight C# %}
 
 
-[C#]
 
 
 
@@ -2599,9 +2618,10 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
+{% highlight vbnet%}
 
-[VB.NET]
 
 
 
@@ -2649,11 +2669,11 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
+{% endhighlight %}
 
 The protection can also be performed by using the enumerations in the code example as shown.
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -2708,7 +2728,9 @@ workbook.Close();
 excelEngine.Dispose();
 
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 [VB.NET]
 
 
@@ -2759,17 +2781,16 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
+{% endhighlight %}
 
 The chart sheet is protected. The content in the sheet cannot be edited.
 
-#### Un-Protect Worksheet 
+## Un-Protect Worksheet 
 
 You can also unprotect the worksheet by using the Unprotect method of XlsIO. It allows you to remove the restriction added ton the worksheet elements. The following code example illustrates how to remove worksheet protection.
 
+{% highlight C# %}
 
-
-[C#]
 
 
 
@@ -2821,9 +2842,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet%}
 
 
 
@@ -2875,15 +2896,16 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
+{% endhighlight %}
 
 Removing protection of a Chart Sheet
 
 You can remove the protection of a protected chart sheet by using the Unprotect method. The following code example illustrates this.
 
+{% highlight C# %}
 
 
-[C#]
+
 
 
 
@@ -2935,9 +2957,10 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight  %}
 
+{% highlight vbnet %}
 
-[VB.NET]
 
 
 
@@ -2986,24 +3009,23 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
-
+{% endhighlight %}
 
 
 The protection of the chart sheet is removed.
 
-### Page Setup Settings
+## Page Setup Settings
 
 In MS Excel, the way the spreadsheet fits into paper can be controlled through the Page Setup dialog box. You can select the size and orientation of the paper, the width of the margins, what goes into the header and footer of each page, and the order of printing cells for sheets that will take several pieces of paper.
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img10.jpeg) | markdownify }
-{:.image }
+
 _Note: Though the code example uses sheet object, it is possible to read/write page setup options for chart worksheet and embedded chart by using IChartPageSetup interface._
 
 There may also be a need to change the first page number that starts with '1', by default. This can be done through the page number customization options provided by the Page Setup dialog box.
 
+{% highlight C# %}
 
 
-[C#]
 
 
 
@@ -3053,9 +3075,11 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 
-[VB.NET]
 
 
 
@@ -3089,21 +3113,19 @@ workbook.Close();
 
 excelEngine.Dispose();
 
-
+{% endhighlight %}
 
 The following topics explain how various other page setup options can be set by using XlsIO.
 
-#### Page Break Settings
+### Page Break Settings
 
 Page Breaks are dividers that break a worksheet into separate pages for printing. To print a worksheet with the exact number of pages that you want, you can adjust the page breaks in the worksheet before you print it. Excel inserts automatic page breaks based on the paper size, margin settings, scaling options, and the positions of any manual page break that you insert, and it also allows you to insert/remove breaks at preferred locations.
 
 XlsIO provides support for inserting/removing horizontal and vertical page breaks in a worksheet by using the IHPagebreak and IVPagebreak interfaces respectively. 
 
-> { ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img11.jpeg) | markdownify }
-{:.image }
 _Note: By default, page breaks are not shown in the Normal view. However, you can view them by inserting new page breaks._
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -3174,10 +3196,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();
+{% endhighlight  %}
 
+{% highlight vbnet %}
 
-
-[VB.NET]
 
 
 
@@ -3247,15 +3269,15 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
+![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img12.png)
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img12.png) | markdownify }
-{:.image }
 
 
 You can also display or hide page breaks in the normal view by using the DisplayPageBreaks property of IWorksheet.
 
-#### Page Orientation
+### Page Orientation
 
 While creating small worksheets, it is not necessary to change the direction/orientation of the pages, but some worksheets and charts require the width of the pages to be greater than its length. Similar to a landscape painting whose width is greater than the length, Landscape page orientation enables you to fit wider items on a page. A page, whose width is greater than the length is called a Portrait orientation like portraits of people.
 
@@ -3263,14 +3285,14 @@ Excel allows you to change the orientation of the page from the Page Setup tab. 
 
 
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img13.png) | markdownify }
-{:.image }
+![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img13.png)
+
 
 
 XlsIO defines the orientation through the Orientation property of IPageSetup. The following code example illustrates how to set the page orientation.
 
 
-
+{% highlight C# %}
 [C#]
 
 
@@ -3321,9 +3343,10 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
+{% highlight vbnet%}
 
-[VB.NET]
 
 
 
@@ -3375,21 +3398,21 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-#### Page Scaling
+### Page Scaling
 
 Scaling lets you specify a certain percentage to reduce or enlarge your worksheet. The Fit to Page feature allows you to force the worksheet to print on a specific number of pages without you having to calculate the percentage. When you need to print a worksheet that is too large to fit a page without making the font very small, you can use the Orientation and Scaling features.  Excel enables this feature through the Page Setup dialog box.
 
 
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img14.png) | markdownify }
-{:.image }
+![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img14.png)' 
+
 
 
 XlsIO allows scaling the page lengthwise and widthwise while printing. The following code example illustrates this.
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -3441,9 +3464,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3495,21 +3518,21 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-#### Margin Settings  
+### Margin Settings  
 
 Page margins are the blank spaces between the worksheet data and the edges of the printed page and provides better readability. Page margins can be used for items such as headers, footers, and page numbers. Excel allows to set the page margin through the Page Setup dialog box. Note that the page margins that you define in a given worksheet, are stored with that particular worksheet when you save the workbook. You cannot change the default page margins for new workbooks.
 
 
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img15.png) | markdownify }
-{:.image }
+![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img15.png)
+
 
 
 XlsIO has APIs to define the margins in a sheet through the properties of IPageSetup. It sets the value in terms of inches. The following code example illustrates how to set the margin.
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -3567,9 +3590,11 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 
-[VB.NET]
 
 
 
@@ -3626,15 +3651,13 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 
-
-#### Background Settings
+### Background Settings
 
 MS Excel enables setting the background for the worksheet with an image that covers the entire worksheet. Depending upon the image size and type, the background graphic may either be stretched across your worksheet or tiled. 
 
-> { ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img16.jpeg) | markdownify }
-{:.image }
 _Note: The sheet backgrounds may tremendously increase the file size of the workbooks._
 
 Background images that are set this way cannot be printed. To set a Watermark that can be printed, you can make use of Headers and Footers. This can be viewed only through the Print Preview option and it is not visible in the Normal view. XlsIO provides support for inserting background images through the BackgroundImage property of IPageSetup.
@@ -3642,8 +3665,8 @@ Background images that are set this way cannot be printed. To set a Watermark th
 The following code example illustrates how to insert a background image.
 
 
+{% highlight C# %}
 
-[C#]
 
 
 
@@ -3695,9 +3718,10 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
-[VB.NET]
 
 
 
@@ -3753,27 +3777,26 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight  %}
+
+![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img17.png)
 
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img17.png) | markdownify }
-{:.image }
 
-
-#### Paper Size
+### Paper Size
 
 In order to fit information on a page or change the appearance of the page, you may want to customize your page layout. One better option is to change the paper size of the worksheet as per the need. The default paper size in Excel is 8 1/2" x 11" sheets, but it can be changed through the Page Setup dialog box. XlsIO allows you to change the paper size through the PaperSize property.
 
 
+![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img18.png)
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img18.png) | markdownify }
-{:.image }
 
 
 The following code example illustrates how to set the paper size in XlsIO.
 
+{% highlight C# %}
 
 
-[C#]
 
 
 
@@ -3816,10 +3839,11 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();
+{% endhighlight  %}
+
+{% highlight vbnet %}
 
 
-
-[VB.NET]
 
 
 
@@ -3871,23 +3895,23 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-#### Header and Footer Settings 
+### Header and Footer Settings 
 
 Often, there is a need to include some information about your document at the top (the header) or at the bottom (the footer) of each printed sheet. Spreadsheets often need several pages to print. It is important to put the right information on the header or footer so that you can tell the pages that go together. MS Excel provides an option to insert headers and footers through the following handy dialog box from the Page setup dialog box to make this process as easy as possible.
 
 
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img19.png) | markdownify }
-{:.image }
+![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img19.png)
 
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img20.png) | markdownify }
-{:.image }
+
+![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img20.png)
 
 
-Inserting Headers and Footers in XlsIO
+
+#### Inserting Headers and Footers in XlsIO
 
 You can insert headers and footers through XlsIO with the properties in the IPageSetup. Headers and footers can also be inserted to a Chart Worksheet. The string that the header/footer takes is a script that you can use to format the header. 
 
@@ -3997,9 +4021,9 @@ Prints the total number of pages in the document.</td></tr>
 
 The following code example illustrates how to insert images in the header.
 
+{% highlight C# %}
 
 
-[C#]
 
 
 
@@ -4053,9 +4077,10 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight  %}
 
+{% highlight vbnet%}
 
-[VB.NET]
 
 
 
@@ -4110,15 +4135,14 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 
 
-> { ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img21.jpeg) | markdownify }
-{:.image }
 _Note: XlsIO does not provide any option to get the page count. You can only insert the page count by using the format string as illustrated in the following code example._
 
 
-
+{% highlight C# %}
 [C#]
 
 
@@ -4169,8 +4193,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight  %}
 
-
+{% highlight vbnet %}
 [VB.NET]
 
 
@@ -4223,7 +4248,7 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
+{% endhighlight  %}
 
 _Table_ _11__: Header Footer options_
 
@@ -4253,7 +4278,7 @@ If true, the header and footer margin is aligned with the left and right margins
 
 The following code example illustrates the usage of properties meant for header and footer options.
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -4302,9 +4327,9 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();
+{% endhighlight %}
 
-
-
+{% highlight vbnet %}
 [VB]
 
 
@@ -4358,9 +4383,10 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
 
-#### Print Settings
+### Print Settings
 
 MS Excel enables customization of print settings through the following options.
 
@@ -4371,19 +4397,19 @@ MS Excel enables customization of print settings through the following options.
 
 
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img22.png) | markdownify }
-{:.image }
+![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img22.png)
+
 
 
 This section explains the XlsIO's support for setting these options through simple APIs.
 
-Print Area
+#### Print Area
 
 The Print Area specifies the range of cells to be printed. You can set the printing range through the PrintArea property.
 
+{% highlight C# %}
 
 
-[C#]
 
 
 
@@ -4432,8 +4458,9 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();
+{% endhighlight %}
 
-
+{% highlight vbnet %}
 
 [VB.NET]
 
@@ -4487,13 +4514,13 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-Print Titles
+#### Print Titles
 
 MS Excel provides an option to repeat rows and columns so that the labels are displayed on every page that it takes to print the sheet. This can be selected through the Sheet tab of the Page Setup dialog box. XlsIO allows setting these titles through the APIs discussed in the following code example.
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -4545,8 +4572,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight  %}
 
-
+{% highlight vbnet%}
 [VB.NET]
 
 
@@ -4598,10 +4626,10 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 
-
-Print Options
+#### Print Options
 
 There are other settings that can be used to customize the Print options. They are as follows:
 
@@ -4631,9 +4659,9 @@ Excel allows setting the page order where the sections of a worksheet should be 
 
 XlsIO allows you to set the print direction as illustrated in the following code example.
 
+{% highlight C# %}
 
 
-[C#]
 
 
 
@@ -4679,8 +4707,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight  %}
 
-
+{% highlight vbnet %}
 [VB.NET]
 
 
@@ -4726,4 +4755,4 @@ workbook.Close()
 excelEngine.Dispose()
 
 
-
+{% endhighlight %}

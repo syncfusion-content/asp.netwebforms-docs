@@ -7,17 +7,17 @@ control: XlsIO
 documentation: ug
 ---
 
-## Working with Excel Workbook 
+# Working with Excel Workbook 
 
 Essential XlsIO supports working with workbook similar to MS Excel. The following sections were explained in detail on processing a workbook.
 
-### Create a new Workbook
+## Create a new Workbook
 
 To create a new workbook, use the Create method in workbooks collection. The following procedure creates a new workbook. A better way to create a workbook is to assign it to an object variable. In the following code example, the Workbook object returned by the create method is assigned to an object variable, workbook. 
 
+{% highlight C# %}
 
 
-[C#]
 
 
 
@@ -69,9 +69,10 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
+{% highlight vbnet%}
 
-[VB.NET]
 
 
 
@@ -119,15 +120,15 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight  %}
 
-
-### Clone a Workbook
+## Clone a Workbook
 
 The following procedure is used to clone a workbook. The Clone method returns a workbook that can be used for other processes without affecting the existing workbook.
 
+{% highlight C# %}
 
 
-[C#]
 
 
 
@@ -170,9 +171,10 @@ clonedWorkbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
-[VB.NET]
 
 
 
@@ -216,9 +218,9 @@ clonedWorkbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-### Protect Workbook
+## Protect Workbook
 
 MS Excel provides the creator of a workbook the ability to protect the Structure and Windows of a workbook with a password. It includes the following options.
 
@@ -227,21 +229,21 @@ MS Excel provides the creator of a workbook the ability to protect the Structure
 
 
 
-{ ![](Working-with-Excel-Workbook_images/Working-with-Excel-Workbook_img1.png) | markdownify }
-{:.image }
+![](Working-with-Excel-Workbook_images/Working-with-Excel-Workbook_img1.png)
 
 
 
 
-{ ![](Working-with-Excel-Workbook_images/Working-with-Excel-Workbook_img2.png) | markdownify }
-{:.image }
+
+![](Working-with-Excel-Workbook_images/Working-with-Excel-Workbook_img2.png)
+
 
 
 Protect method of IWorkbook interface provides options to protect and unprotect documents with password in XlsIO. You can also set/reset the Window and Structure option in this method. The following code example illustrates how to protect a workbook with a password.
 
+{% highlight C# %}
 
 
-[C#]
 
 
 
@@ -297,9 +299,10 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
+{% highlight vbnet%}
 
-[VB.NET]
 
 
 
@@ -351,29 +354,29 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
+{% endhighlight %}
 
 The following illustration shows a protected document where no sheets can be added/removed to or from the document.
 
 
 
-{ ![](Working-with-Excel-Workbook_images/Working-with-Excel-Workbook_img3.png) | markdownify }
-{:.image }
+![](Working-with-Excel-Workbook_images/Working-with-Excel-Workbook_img3.png)
 
 
-### Unprotect Workbook
+
+## Unprotect Workbook
 
 You can unprotect or remove protection for a document by entering the password in the Unprotect Workbook dialog box in MS Excel as shown in the following screenshot.
 
-{ ![](Working-with-Excel-Workbook_images/Working-with-Excel-Workbook_img4.png) | markdownify }
-{:.image }
+![](Working-with-Excel-Workbook_images/Working-with-Excel-Workbook_img4.png)
+
 
 
 XlsIO also provides support to unprotect a workbook with password by using the UnProtect method.
 
 
+{% highlight C# %}
 
-[C#]
 
 
 
@@ -425,9 +428,11 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
+
+{% highlight vbnet %}
 
 
-[VB.NET]
 
 
 
@@ -471,5 +476,6 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
 

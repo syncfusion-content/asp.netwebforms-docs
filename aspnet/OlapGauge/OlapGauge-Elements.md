@@ -9,7 +9,7 @@ documentation: ug
 
 # OlapGauge: Elements
 
- ![](OlapGauge-Elements_images/OlapGauge-Elements_img1.png)
+![](OlapGauge-Elements_images/OlapGauge-Elements_img1.png) 
 
 
 

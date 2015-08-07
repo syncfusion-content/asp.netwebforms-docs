@@ -20,8 +20,9 @@ OLAP Gauge supports built-in frame types to provide effective rim styles. The 
 By default, frame type is Full Circle. You can also set frame type with frameType property to fullCircle.
 
 
+
 {% highlight html %}
- 
+
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Frame FrameType="FullCircle" />
@@ -97,10 +98,11 @@ By default, frame type is Full Circle. You can also set frame type with frameTyp
         </Scales>
 
     </ej:OlapGauge>
-{% endhighlight %}
 
 
- ![](Frame-Type_images/Frame-Type_img1.png)
+{% endhighlight  %}
+
+![](Frame-Type_images/Frame-Type_img1.png) 
 
 
 
@@ -110,7 +112,11 @@ You can set frame type as halfCircle with the help of frameType property to visu
 
 
 {% highlight html %}
- 
+
+
+
+
+
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Frame FrameType="HalfCircle"/>
@@ -187,9 +193,10 @@ You can set frame type as halfCircle with the help of frameType property to visu
 
     </ej:OlapGauge>
 
-{% endhighlight %}
+{% endhighlight  %}
 
-![](Frame-Type_images/Frame-Type_img2.png)
+
+![](Frame-Type_images/Frame-Type_img2.png) 
 
 
 
