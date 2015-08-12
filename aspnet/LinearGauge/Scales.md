@@ -2,7 +2,7 @@
 layout: post
 title: Scales
 description: scales
-platform: common
+platform: aspnet
 control: Linear Gauge
 documentation: ug
 ---

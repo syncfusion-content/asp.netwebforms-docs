@@ -2,7 +2,7 @@
 layout: post
 title: Marker-Pointers
 description: marker pointers
-platform: common
+platform: aspnet
 control: Linear Gauge
 documentation: ug
 ---

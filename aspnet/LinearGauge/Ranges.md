@@ -2,7 +2,7 @@
 layout: post
 title: Ranges
 description: ranges 
-platform: common
+platform: aspnet
 control: Linear Gauge
 documentation: ug
 ---

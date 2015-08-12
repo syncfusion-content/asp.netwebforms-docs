@@ -2,7 +2,7 @@
 layout: post
 title: Custom-labels
 description: custom labels
-platform: common
+platform: aspnet
 control: Linear Gauge
 documentation: ug
 ---

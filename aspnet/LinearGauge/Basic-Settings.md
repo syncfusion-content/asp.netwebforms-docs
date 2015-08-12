@@ -2,7 +2,7 @@
 layout: post
 title: Basic-Settings
 description: basic settings
-platform: common
+platform: aspnet
 control: Linear Gauge
 documentation: ug
 ---

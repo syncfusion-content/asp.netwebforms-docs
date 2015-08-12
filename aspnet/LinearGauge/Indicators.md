@@ -2,7 +2,7 @@
 layout: post
 title: Indicators
 description: indicators
-platform: common
+platform: aspnet
 control: Linear Gauge
 documentation: ug
 ---

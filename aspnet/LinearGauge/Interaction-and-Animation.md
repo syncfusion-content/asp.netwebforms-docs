@@ -2,7 +2,7 @@
 layout: post
 title: Interaction-and-Animation
 description: interaction and animation
-platform: common
+platform: aspnet
 control: Linear Gauge
 documentation: ug
 ---
