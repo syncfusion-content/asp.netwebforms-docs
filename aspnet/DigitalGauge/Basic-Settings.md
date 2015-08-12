@@ -15,7 +15,7 @@ The basic customization for any control is to set the dimension. Here dimension 
 
 {% highlight html %}
 
-&lt;%-- Adding Control with Width and Height Property --%&gt;
+<%-- Adding Control with Width and Height Property --%>
 
 <ej:DigitalGauge runat="server" ID="DigitalGauge1"
 
@@ -25,7 +25,7 @@ Height="200" Width="500" Value="syncfusion">
 
 
 
-&lt;/ej:DigitalGauge&gt;
+</ej:DigitalGauge>
 
 {% endhighlight %}
 
@@ -34,7 +34,7 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 
 ![](Basic-Settings_images/Basic-Settings_img1.png)
-{:.image }
+
 
 
 
@@ -44,30 +44,27 @@ Execute the above code examples to render the DigitalGauge as follows.
 * For any display devices, the control will be rendered based on the space available in that device. For this purpose, resizing property is given to the Digital Gauge control. The Digital Gauge renders with a given value. 
 * When the browser resize the canvas element checks the dimension with its parent element. If there are any changes in parent dimension, Gauge control will changes the dimension based on its parent element change. This feature is enabled by using the property canResize.
 
+  ~~~ html
 
+        <%-- Adding Control with Themes and Resizing property --%>
 
-
-
-{% highlight html %}
-
-&lt;%-- Adding Control with Themes and Resizing property --%&gt;
-
-&lt;ej:DigitalGauge runat="server" ID="DigitalGauge1" EnableResize="true"&gt;
+        <ej:DigitalGauge runat="server" ID="DigitalGauge1" EnableResize="true">
 
 
 
 
 
-&lt;/ej:DigitalGauge&gt;
+        </ej:DigitalGauge>
 
-{% endhighlight %}
+  ~~~
+  {:.pretty-print }
 
 Execute the above code examples to render the DigitalGauge as follows. 
 
 
 
 ![](Basic-Settings_images/Basic-Settings_img2.png) 
-{:.image }
+
 
 
 
@@ -79,31 +76,27 @@ Themes give the good appearance to the control. There are two types of Themes av
 * flatlight
 * flatdark
 
-{% highlight html %}
+  ~~~ html
 
-&lt;%-- Adding Control with Themes and Resizing property --%&gt;
+        <%-- Adding Control with Themes and Resizing property --%>
 
-<ej:DigitalGauge runat="server" ID="DigitalGauge1" EnableResize="true"
-
-
-
-Themes="FlatDark" Value="LOS ANGELS 40 KM">
+        <ej:DigitalGauge runat="server" ID="DigitalGauge1" EnableResize="true"
 
 
 
+            Themes="FlatDark" Value="LOS ANGELS 40 KM">
 
 
-&lt;/ej:DigitalGauge&gt;
+        </ej:DigitalGauge>
 
-{% endhighlight %}
+  ~~~
+  {:.pretty-print }
 
 Execute the above code examples to render the DigitalGauge as follows. 
 
 ![](Basic-Settings_images/Basic-Settings_img3.png)
-{:.image }
 
 
-Figure 25: Digital Gauge control with flatdark theme
 
 
 
@@ -114,13 +107,13 @@ Digital Gauge is mainly used to display the text in the digital format. We can d
 
 {% highlight html %}
 
-&lt;%-- Adding Control with text Value --%&gt;
+<%-- Adding Control with text Value --%>
 
-&lt;ej:DigitalGauge runat="server" ID="DigitalGauge1" Value="GO SLOW"&gt;
+<ej:DigitalGauge runat="server" ID="DigitalGauge1" Value="GO SLOW">
 
 
 
-&lt;/ej:DigitalGauge&gt;
+</ej:DigitalGauge>
 
 {% endhighlight %}
 
@@ -129,7 +122,7 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 
 ![](Basic-Settings_images/Basic-Settings_img4.png)
-{:.image }
+
 
 
 

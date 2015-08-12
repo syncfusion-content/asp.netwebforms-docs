@@ -890,8 +890,6 @@ Execute the above code to render the following output.
 
 
 
-_Figure 29: Cell Merging_
-
 ## AutoWrap Column Cells
 
 AutoWrap feature allows you to wrap cell content to next line when the content exceeds the boundary of the Column cells. Use the following code example for Auto wrap in column cells. AtutoWrap feature was enabled by setting AutoTextWrap property as true.
@@ -1188,8 +1186,6 @@ Execute the above code to render the following output.
 ![](Columns_images/Columns_img10.png)
 
 
-
-_Figure 31: Grid with Column chooser_
 
 
 

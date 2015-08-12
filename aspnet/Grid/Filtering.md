@@ -61,7 +61,7 @@ The following output is displayed as a result of the above code example.
 
 Filter bar is one of the types of filtering. It is otherwise called text filtering as filter bar working is based on text boxes. Through this you can filter records. Filter bars have expression to filter records. They are based on type of column. 
 
-_Table2: List of Filter Bar Expressions_
+_List of Filter Bar Expressions_
 
 <table>
 <tr>
@@ -244,7 +244,7 @@ List<Orders> order = new List<Orders>();
 
 Grid uses filter operators from DataManager, that are used at the time of filtering. Filter operators are used to denote filtering type.
 
-_Table3: List of Column type and Filter operators_
+_List of Column type and Filter operators_
 
 <table>
 <tr>

@@ -16,8 +16,8 @@ The various keyboard shortcuts available within the DatePicker control are discu
 <table>
 <tr>
 <td>
-Keys</td><td>
-Function</td></tr>
+{{ '**Keys**' | markdownify }}</td><td>
+{{ '**Function**' | markdownify }}</td></tr>
 <tr>
 <td>
 Alt +j</td><td>
@@ -116,6 +116,6 @@ In the ASPX page, add the DatePicker control to enable keyboard interaction by s
 Run the sample, press Alt + J to focus in the DatePicker control that enables it and you can navigate by using arrow keys and Esc key to close the popup.
 
 ![](Keyboard-Navigation_images/Keyboard-Navigation_img1.png) 
-{:.image }
+
 
 

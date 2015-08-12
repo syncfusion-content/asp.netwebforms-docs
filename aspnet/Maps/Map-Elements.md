@@ -26,7 +26,16 @@ The Markers property has a list of objects that contains the data for Annotation
 
 {% highlight c# %}
    
- public class Syncfusion_LocationData    {        public static List<MapMarker> GetSyncfusionLocationData()        {            List<MapMarker> syncfusionLocationData = new List<MapMarker>            {                new LocationData {Name = "Chennai", Country = "India", Latitude =13.0839 , Longitude = 80.27 , Description = "Syncfusion's branch office is located in AnnaNagar, Chennai", Address ="EYMARD Complex AJ 217 4th Avenue Shanthi Colony Anna Nagar Chennai-40 India" },                new LocationData {Name = "North Carolina", Country = "United States", Latitude =35.5 , Longitude = -80 , Description = "Syncfusion's corporate office is located in Research Triangle Park North Carolina", Address ="Company Headquarters 2501 Aerial Center Parkway Suite 200 Morrisville NC 27560 USA" },            };            return syncfusionLocationData;        }    }                protected void Page_Load(object sender, EventArgs e)        {            (this.map.Layers[0] as ShapeLayer).ShapeData = GetWorldMap();            (this.map.Layers[0] as ShapeLayer).Markers = Syncfusion_LocationData.GetSyncfusionLocationData();        }</td></tr>
+ public class Syncfusion_LocationData    
+ {       
+ public static List<MapMarker> GetSyncfusionLocationData()       
+ {         
+ List<MapMarker> syncfusionLocationData = new List<MapMarker>            
+ {            
+
+ new LocationData {Name = "Chennai", Country = "India", Latitude =13.0839 , Longitude = 80.27 , Description = "Syncfusion's branch office is located in AnnaNagar, Chennai", Address ="EYMARD Complex AJ 217 4th Avenue Shanthi Colony Anna Nagar Chennai-40 India" },               
+
+ new LocationData {Name = "North Carolina", Country = "United States", Latitude =35.5 , Longitude = -80 , Description = "Syncfusion's corporate office is located in Research Triangle Park North Carolina", Address ="Company Headquarters 2501 Aerial Center Parkway Suite 200 Morrisville NC 27560 USA" },            };            return syncfusionLocationData;        }    }                protected void Page_Load(object sender, EventArgs e)        {            (this.map.Layers[0] as ShapeLayer).ShapeData = GetWorldMap();            (this.map.Layers[0] as ShapeLayer).Markers = Syncfusion_LocationData.GetSyncfusionLocationData();        }</td></tr>
 
 {% endhighlight %}
 
@@ -203,7 +212,7 @@ Adding Bubbles to a Map
 
 To add bubbles to a map, the bubble marker setting is added to the shape file layer. Create the Model and ViewModel as illustrated in the Data Binding topic and add the following code. Also set the MaxValue, MinValue, and ValuePath properties as illustrated in the following code sample.
 
-> Note: Tooltip and Color Mappings for bubble is to be set as similar to tooltip and color mappings set in layers and ShapeSettings. For more details, refer Tooltip and Color Mappings section.
+Note: Tooltip and Color Mappings for bubble is to be set as similar to tooltip and color mappings set in layers and ShapeSettings. For more details, refer Tooltip and Color Mappings section.
 
 
 
@@ -290,7 +299,7 @@ The map legend size can be modified using Height and Width properties in LegendS
 
 The Layer shape type legends can be generated for each color mappings in shape settings. 
 
-> Note:  Here, Equal Color Mapping code sample for shapeSettings with color mappings is referred.
+Note:  Here, Equal Color Mapping code sample for shapeSettings with color mappings is referred.
 
 
 
@@ -338,7 +347,7 @@ You can provide the title for interactive legend by using Title property in Lege
 
 You can provide the left and right labels to interactive legend by using LeftLabel and RightLabel properties in LegendSettings. 
 
-> Note:  Here, Range Color Mapping code snippet for shapeSettings with color mappings is referred.
+Note:  Here, Range Color Mapping code snippet for shapeSettings with color mappings is referred.
 
 
 

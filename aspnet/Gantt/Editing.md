@@ -136,5 +136,3 @@ The following screen shot shows the predecessor editing in Gantt control.
 
 
 
-_Figure39: Predecessor Editing_
-

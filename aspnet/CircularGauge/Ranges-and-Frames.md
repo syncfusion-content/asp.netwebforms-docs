@@ -45,52 +45,53 @@ Range collection is directly added to the scale object. Refer the following code
 
 ### Range Customization
 
-### Appearance
+#### Appearance
 
 * The API size is used to specify the width of the ranges.  The major attributes for ranges are startValue and endValue. startValue defines the start position of the ranges and endValue defines the end position of the ranges.
 * StartWidth and endWidth are used to specify the range width at the starting and ending position of the ranges. You can add the gradient effects to the ranges by using gradient object.
 
 
 
-{% highlight html %}
+  ~~~ html
 
 
-<%--For Circular Gauge rendering-- %>
+        <%--For Circular Gauge rendering-- %>
 
-<ej:CircularGauge runat="server" ID="CircularGauge1">
+        <ej:CircularGauge runat="server" ID="CircularGauge1">
 
-<Scales>
+        <Scales>
 
-<ej:CircularScales ShowRanges="true"  ShowscaleBar="true" radius="150" Size="5">
+        <ej:CircularScales ShowRanges="true"  ShowscaleBar="true" radius="150" Size="5">
 
-<PointerCollection>
+        <PointerCollection>
 
-<ej:Pointers  Value="0"  length="110"></ej:Pointers>
+        <ej:Pointers  Value="0"  length="110"></ej:Pointers>
 
-</PointerCollection>
+        </PointerCollection>
 
-<labelCollection>
+        <labelCollection>
 
-<ej:CircularLabels type="major" />
+        <ej:CircularLabels type="major" />
 
-</labelCollection>
+        </labelCollection>
 
-<RangeCollection>
+        <RangeCollection>
 
-<ej:CircularRanges StartValue="20" endValue="80" BackgroundColor="green" Placement="far">
+        <ej:CircularRanges StartValue="20" endValue="80" BackgroundColor="green" Placement="far">
 
-</ej:CircularRanges>
+        </ej:CircularRanges>
 
-</RangeCollection>
+        </RangeCollection>
 
-</ej:CircularScales>
+        </ej:CircularScales>
 
-</Scales>
+        </Scales>
 
-</ej:CircularGauge>
+        </ej:CircularGauge>
 
 
-{% endhighlight %}
+  ~~~
+  {:.pretty-print }
 
 
 Execute the above code to render the following output.
@@ -99,47 +100,48 @@ Execute the above code to render the following output.
 
 
 
-### Colors and Border
+#### Colors and Border
 
 * By customizing the ranges, the appearance of the Gauge can be improved. The range border is modified with the object called border. It has two border property such as color and width. These are used to customize the border color of the ranges and border width of the ranges. 
 * You can set the background color to improve the look and feel of the Circular Gauge. For customizing the background color of the ranges, backgroundColor is used.
 
 
-{% highlight html %}
+  ~~~ html
 
-<%--For Circular Gauge rendering-- %>
+        <%--For Circular Gauge rendering-- %>
 
-<ej:CircularGauge runat="server" ID="CircularGauge1">
+        <ej:CircularGauge runat="server" ID="CircularGauge1">
 
-<Scales>
+        <Scales>
 
-<ej:CircularScales ShowRanges="true"  ShowscaleBar="true" radius="150" Size="2">
+        <ej:CircularScales ShowRanges="true"  ShowscaleBar="true" radius="150" Size="2">
 
-<%--For setting range start value, end value, background color and border color-- %>
+        <%--For setting range start value, end value, background color and border color-- %>
 
-<RangeCollection>
+        <RangeCollection>
 
-<ej:CircularRanges StartValue="20" endValue="80" BackgroundColor="yellow" Placement="far">
+        <ej:CircularRanges StartValue="20" endValue="80" BackgroundColor="yellow" Placement="far">
 
-<Border Color="green" Width="2" />
+        <Border Color="green" Width="2" />
 
-</ej:CircularRanges>
+        </ej:CircularRanges>
 
-</RangeCollection>
+        </RangeCollection>
 
-</ej:CircularScales>
+        </ej:CircularScales>
 
-</Scales>
+        </Scales>
 
-</ej:CircularGauge>
+        </ej:CircularGauge>
 
-{% endhighlight %}
+  ~~~
+  {:.pretty-print }
 
 Execute the above code to render the following output.
 
  ![](Ranges-and-Frames_images/Ranges-and-Frames_img2.png)
 
-### Position the ranges
+#### Position the ranges
 
 * You can position ranges using two properties such as distanceFromScale and placement. 
 * distanceFromScale property defines the distance between the scale and range. 
@@ -147,36 +149,37 @@ Execute the above code to render the following output.
 
 
 
-{% highlight html %}
+  ~~~ html
 
 
-<%--For Circular Gauge rendering-- %>
+        <%--For Circular Gauge rendering-- %>
 
-<ej:CircularGauge runat="server" ID="CircularGauge1">
+        <ej:CircularGauge runat="server" ID="CircularGauge1">
 
-<Scales>
+        <Scales>
 
-<ej:CircularScales ShowRanges="true"  ShowscaleBar="true" radius="150" Size="2">
+        <ej:CircularScales ShowRanges="true"  ShowscaleBar="true" radius="150" Size="2">
 
-<%--For setting range start value, end value, distance between scale and ranges-- %> 
+        <%--For setting range start value, end value, distance between scale and ranges-- %> 
 
-<RangeCollection>
+        <RangeCollection>
 
-<ej:CircularRanges StartValue="0" endValue="100" BackgroundColor="green" Placement="far" DistanceFromScale="-30">
+        <ej:CircularRanges StartValue="0" endValue="100" BackgroundColor="green" Placement="far" DistanceFromScale="-30">
 
-<Border width="2" Color="black" />
+        <Border width="2" Color="black" />
 
-</ej:CircularRanges>
+        </ej:CircularRanges>
 
-</RangeCollection>
+        </RangeCollection>
 
-</ej:CircularScales>
+        </ej:CircularScales>
 
-</Scales>
+        </Scales>
 
-</ej:CircularGauge>
+        </ej:CircularGauge>
 
-{% endhighlight %}
+  ~~~
+  {:.pretty-print }
 
 Execute the above code to render the following output.
 
@@ -241,36 +244,37 @@ Execute the above code to render the following output.
 * frameType is used to specify whether frame is a half circle frame or full circle frame. halfCircleFrameStartAngle and halfCircleFrameEndAngle are used to specify the angle for Gauge with frame type as half circle. backgroundUrl is used to set the background image for the frame.
 
 
-{% highlight html %}
+  ~~~ html
 
-<%--For Circular Gauge rendering-- %>
+        <%--For Circular Gauge rendering-- %>
 
-<ej:CircularGauge runat="server" ID="CircularGauge1" backgroundColor="#FFCCCC">
+        <ej:CircularGauge runat="server" ID="CircularGauge1" backgroundColor="#FFCCCC">
 
-<Scales>
+        <Scales>
 
-<ej:CircularScales startAngle="180" SweepAngle="180">
+        <ej:CircularScales startAngle="180" SweepAngle="180">
 
-<PointerCap Radius="8" />
+        <PointerCap Radius="8" />
 
-<PointerCollection>
+        <PointerCollection>
 
-<ej:Pointers  type="Needle" needleType="Rectangle" Value="40" width="1" length="120"></ej:Pointers>
+        <ej:Pointers  type="Needle" needleType="Rectangle" Value="40" width="1" length="120"></ej:Pointers>
 
-</PointerCollection>
+        </PointerCollection>
 
-</ej:CircularScales>
+        </ej:CircularScales>
 
-</Scales>
+        </Scales>
 
-<%--For setting halfcircle frame start angle and end angle-- %>
+        <%--For setting halfcircle frame start angle and end angle-- %>
 
-<Frame FrameType="HalfCircle" HalfCircleFrameStartAngle="205" HalfCircleFrameEndAngle="335" />
+        <Frame FrameType="HalfCircle" HalfCircleFrameStartAngle="205" HalfCircleFrameEndAngle="335" />
 
-</ej:CircularGauge>
+        </ej:CircularGauge>
 
 
-{% endhighlight %}
+  ~~~
+  {:.pretty-print }
 
 
 Execute the above code to render the following output.

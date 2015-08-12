@@ -46,9 +46,6 @@ Execute the above code to render the following output.
  ![C:/Users/karthigeyan/Desktop/q.png](Pointers_images/Pointers_img1.png) 
 
 
-
-_Figure_ _20_(a): Circular Gauge with  pointer collection_
-
 ## Adding Pointer Value
 
 Pointer value is the important element in the Circular Gauge that indicates the Gauge value. Real purpose of the Circular Gauge is based on the pointer value. You can set the pointer value either directly during rendering the control or it can be achieved by public method too.
@@ -97,8 +94,6 @@ Execute the above code to render the following output.
 
 
 
-_Figure_ _21_(b): Circular Gauge with customized pointer value_
-
 
 
 ## Pointer Styles
@@ -110,34 +105,35 @@ _Figure_ _21_(b): Circular Gauge with customized pointer value_
 
 
 
-{% highlight html %}
+  ~~~ html
 
 
-<%--For Circular Gauge rendering-- %>
+        <%--For Circular Gauge rendering-- %>
 
-<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
+        <ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-<Scales>
+        <Scales>
 
-<ej:CircularScales ShowScalebar="true" radius="110">
+        <ej:CircularScales ShowScalebar="true" radius="110">
 
-<PointerCollection>
+        <PointerCollection>
 
-<%--For setting pointer width, background color, pointer value, length -- %>
+        <%--For setting pointer width, background color, pointer value, length -- %>
 
 
 
-<ej:Pointers Value="45" width="16" Opacity="0.6" BackgroundColor="yellow" Length="80"></ej:Pointers>
+        <ej:Pointers Value="45" width="16" Opacity="0.6" BackgroundColor="yellow" Length="80"></ej:Pointers>
 
-</PointerCollection>
+        </PointerCollection>
 
-</ej:CircularScales>
+        </ej:CircularScales>
 
-</Scales>
+        </Scales>
 
-</ej:CircularGauge>
+        </ej:CircularGauge>
 
-{% endhighlight %}
+  ~~~
+  {:.pretty-print }
 
 Execute the above code to render the following output.
 
@@ -153,34 +149,35 @@ Execute the above code to render the following output.
 * And you can also adjust the opacity of the pointer using the property opacity which holds the value between 0 and 1. You can add the gradient effects to the pointer using gradient object.
 
 
-{% highlight html %}
+  ~~~ html
 
 
-<%--For Circular Gauge rendering-- %>
+        <%--For Circular Gauge rendering-- %>
 
-<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
+        <ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-<Scales>
+        <Scales>
 
-<ej:CircularScales ShowscaleBar="true" BackgroundColor="orange" radius="110">
+        <ej:CircularScales ShowscaleBar="true" BackgroundColor="orange" radius="110">
 
-<Border Width="2" Color="red" />
+        <Border Width="2" Color="red" />
 
-<%--For setting pointer value.length, width and background color-- %>
+        <%--For setting pointer value.length, width and background color-- %>
 
-<PointerCollection>
+        <PointerCollection>
 
-<ej:Pointers Value="45" width="16" Opacity="0.6" BackgroundColor="orange" ShowBackNeedle="true" Length="80" BackNeedleLength="0"></ej:Pointers>
+        <ej:Pointers Value="45" width="16" Opacity="0.6" BackgroundColor="orange" ShowBackNeedle="true" Length="80" BackNeedleLength="0"></ej:Pointers>
 
-</PointerCollection>
+        </PointerCollection>
 
-</ej:CircularScales>
+        </ej:CircularScales>
 
-</Scales>
+        </Scales>
 
-</ej:CircularGauge>
+        </ej:CircularGauge>
 
-{% endhighlight %}
+  ~~~
+  {:.pretty-print }
 
 
 
@@ -199,33 +196,34 @@ Execute the above code to render the following output.
 
 
 
-{% highlight html %}
+  ~~~ html
 
-<%--For Circular Gauge rendering-- %>
+        <%--For Circular Gauge rendering-- %>
 
-<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
+        <ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-<Scales>
+        <Scales>
 
-<ej:CircularScales ShowscaleBar="true" BackgroundColor="#DCEBF9" Size="10" radius="110">
+        <ej:CircularScales ShowscaleBar="true" BackgroundColor="#DCEBF9" Size="10" radius="110">
 
-<Border Width="2" Color="blue" />
+        <Border Width="2" Color="blue" />
 
-<%--For setting pointer type, placement, marker type, distance from scale-- %>
+        <%--For setting pointer type, placement, marker type, distance from scale-- %>
 
-<PointerCollection>
+        <PointerCollection>
 
-<ej:Pointers Value="40" length="20" width="20" BackgroundColor="#DCEBF9" ShowBackNeedle="true" BackNeedleLength="0" DistanceFromScale="20" Placement="Near" Type="Marker" MarkerType="Triangle"></ej:Pointers>
+        <ej:Pointers Value="40" length="20" width="20" BackgroundColor="#DCEBF9" ShowBackNeedle="true" BackNeedleLength="0" DistanceFromScale="20" Placement="Near" Type="Marker" MarkerType="Triangle"></ej:Pointers>
 
-</PointerCollection>
+        </PointerCollection>
 
-</ej:CircularScales>
+        </ej:CircularScales>
 
-</Scales>
+        </Scales>
 
-</ej:CircularGauge>
+        </ej:CircularGauge>
 
-{% endhighlight %}
+  ~~~
+  {:.pretty-print }
 Execute the above code to render the following output.
 
 
@@ -237,25 +235,44 @@ Execute the above code to render the following output.
 ### Types
 
 * Circular gauge pointer has two types such as,
-1. Needle
-2. Marker
+
+  1. Needle
+  
+  2. Marker
+  
 * Needle type pointers are the default pointers that cannot be positioned and that is located at the center of the gauge. There are four different shapes of needle pointers such as 
-1. Rectangle
-2. Triangle
-3. Trapezoid 
-4. Arrow
+  
+  1. Rectangle
+  
+  2. Triangle
+  
+  3. Trapezoid 
+  
+  4. Arrow
+  
 * For marker pointer, the available dimensions are 
-1. Rectangle
-2. Triangle
-3. Ellipse
-4. Diamond
-5. Pentagon
-6. Circle 
-7. Slider
-8. Pointer
-9. Wedge
-10. Trapezoid
-11. Rounded Rectangle
+
+  1. Rectangle
+  
+  2. Triangle
+  
+  3. Ellipse
+  
+  4. Diamond
+  
+  5. Pentagon
+  
+  6. Circle 
+  
+  7. Slider
+  
+  8. Pointer
+  
+  9. Wedge
+  
+  10. Trapezoid
+  
+  11. Rounded Rectangle
 
 ### Pointer Image
 
@@ -269,7 +286,7 @@ To implement the pointer image we need to give the API called ImageUrl. It is a 
 2. Marker Image
 3. Marker pointer with Image
 
-### Needle Image 
+#### Needle Image 
 
 In this type, needle pointer is completely replaced by image. You can implement it with the help of thr following example.
 
@@ -381,7 +398,7 @@ StartValue="70" EndValue="100">
 
 
 
-### Marker Image 
+#### Marker Image 
 
 In this type, the marker pointer is completely replaced by the image. You can implement it with the help of the following example.
 
@@ -493,7 +510,7 @@ StartValue="70" EndValue="100">
 
 
 
-### Marker pointer with Image 
+#### Marker pointer with Image 
 
 In this type, marker pointer is drawn first and then the image is loaded. You can implement it with the help of following example.
 
@@ -656,7 +673,7 @@ Execute the above code to render the following output.
 
 Gauge Pointer valuetext is used to display the current value of the pointer in the Circular Gauge control.
 
-Positioning the text
+### Positioning the text
 
 You can position the Circular Gauge pointer value with the gauge as center by using the API called distance. You can Disable/ Enable these pointers value by using the API showValue.
 
@@ -764,102 +781,102 @@ Appearance of the Circular Gaugepointer value text is adjusted by using four pro
 * Auto Angle is used to display the text in certain angle based on pointer position angle.
 * Opacity is used to customize the brightness of the text. 
 
+  ~~~ html
 
-{% highlight html %}
+        <%-- Setting basic properties-- %>
 
-<%-- Setting basic properties-- %>
-
-<ej:CircularGauge runat="server" ID="CoreCircularGauge" Radius= "100" Value= "55" BackgroundColor= "transparent">
-
-
-
-<%-- Setting scale properties -- %>
-
-<Scales>
-
-<ej:CircularScales ShowRanges= "true">
+        <ej:CircularGauge runat="server" ID="CoreCircularGauge" Radius= "100" Value= "55" BackgroundColor= "transparent">
 
 
 
-<%-- Setting ticks properties-- %>
+        <%-- Setting scale properties -- %>
 
-<TickCollection>
+        <Scales>
 
-<ej:CircularTicks Height= "0" Width= "0"/>
-
-</TickCollection>
+        <ej:CircularScales ShowRanges= "true">
 
 
 
-<%-- Setting pointers properties-- %>
+        <%-- Setting ticks properties-- %>
 
-<PointerCollection>
+        <TickCollection>
 
-<ej:Pointers>
+        <ej:CircularTicks Height= "0" Width= "0"/>
 
-<PointerValueText
-
-Distance="-5"
-
-ShowValue="true"
+        </TickCollection>
 
 
 
-<%-- Setting color property-- %>
+        <%-- Setting pointers properties-- %>
 
-Color="red"
+        <PointerCollection>
 
+        <ej:Pointers>
 
+        <PointerValueText
 
-<%-- Setting opacity property-- %>
+        Distance="-5"
 
-Opacity= "0.7"
-
-
-
-<%--Setting angle property-- %>
-
-Angle="20"
+        ShowValue="true"
 
 
 
-<%-- Setting auto angle property-- %>
+        <%-- Setting color property-- %>
 
-AutoAngle="false" >
-
-</PointerValueText>
-
-</ej:Pointers>
-
-</PointerCollection>
+        Color="red"
 
 
 
-<%--Setting range properties-- %>
+        <%-- Setting opacity property-- %>
 
-<RangeCollection>
+        Opacity= "0.7"
 
-<ej:CircularRanges Size= "40" StartValue= "0" EndValue= "50" BackgroundColor= "#1B4279">
 
-<Border Color= "#1B4279"></Border>
 
-</ej:CircularRanges>
+        <%--Setting angle property-- %>
 
-<ej:CircularRanges Size= "40" StartValue= "50" EndValue= "100" BackgroundColor= "#91B8F3">
+        Angle="20"
 
-<Border Color="#91B8F3"></Border>
 
-</ej:CircularRanges>
 
-</RangeCollection>
+        <%-- Setting auto angle property-- %>
 
-</ej:CircularScales>
+        AutoAngle="false" >
 
-</Scales>
+        </PointerValueText>
 
-</ej:CircularGauge>
+        </ej:Pointers>
 
-{% endhighlight %}
+        </PointerCollection>
+
+
+
+        <%--Setting range properties-- %>
+
+        <RangeCollection>
+
+        <ej:CircularRanges Size= "40" StartValue= "0" EndValue= "50" BackgroundColor= "#1B4279">
+
+        <Border Color= "#1B4279"></Border>
+
+        </ej:CircularRanges>
+
+        <ej:CircularRanges Size= "40" StartValue= "50" EndValue= "100" BackgroundColor= "#91B8F3">
+
+        <Border Color="#91B8F3"></Border>
+
+        </ej:CircularRanges>
+
+        </RangeCollection>
+
+        </ej:CircularScales>
+
+        </Scales>
+
+        </ej:CircularGauge>
+
+  ~~~
+  {:.pretty-print }
 
 Run the above code to render the output as follows.
 
@@ -973,5 +990,4 @@ Run the above code to render the output as follows.
 
 
 
-Figure 31: Circular Gauge with customized font option in pointer value text.
 

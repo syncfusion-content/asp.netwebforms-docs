@@ -7,7 +7,7 @@ control: DocIO
 documentation: ug
 ---
 
-## Working with Fields
+# Working with Fields
 
 Fields are special elements of a Word document. To insert a field, click Insert menu, and then click Field option in Microsoft Word.
 
@@ -152,9 +152,9 @@ WTextRange
 
 |
 
-       WField
+WField
 
-    	    |    
+|    
 
 WMergeField
 
@@ -255,7 +255,7 @@ section.HeadersFooters.FirstPageFooter.Paragraphs.Add(paragraph)
 
 WEmbedField class represents an embed field type in a Word document. Word does not allow to create an embed field type manually (by using Microsoft Word interface). This field is used when the document has embedded objects. This field usually points to the container in the document that encloses the embedded instance.
 
-> Note: Modification of WEmbedField properties can cause document corruption or incorrect document preservation. DocIO preserves only fields of this type.
+Note: Modification of WEmbedField properties can cause document corruption or incorrect document preservation. DocIO preserves only fields of this type.
 
 
 
@@ -269,7 +269,7 @@ WField
 
 |
 
-    		 WEmbedField
+WEmbedField
 
 
 
@@ -439,7 +439,7 @@ This field displays the current date-time, in the format specified by date-time 
 
 
 
-### Syntax
+#### Syntax
 
 { DATE [\@ "Date-Time Picture"] }
 
@@ -453,7 +453,7 @@ This field displays the value of the specified document variable.
 
 
 
-### Syntax
+#### Syntax
 
 {DOCVARIABLE "Name”}
 
@@ -465,7 +465,7 @@ This field displays the value of the specified document property.
 
 
 
-### Syntax
+#### Syntax
 
 {DOCPROPERTY "Name”}
 
@@ -477,7 +477,7 @@ This field compares two expressions and displays the result as "1" when the resu
 
 
 
-### Syntax
+#### Syntax
 
 {COMPARE Expression1 Operator Expression2} 
 
@@ -489,7 +489,7 @@ This field compares two expressions and displays the true text when the result o
 
 
 
-### Syntax
+#### Syntax
 
 {IF Expression1 Operator Expression2 TrueText FalseText}
 
@@ -501,7 +501,7 @@ This field compares two expressions. When the comparison result is true, the nex
 
 
 
-### Syntax
+#### Syntax
 
 {NEXTIF Expression1 Operator Expression2}
 
@@ -513,7 +513,7 @@ This field numbers all the merged records of a mail merge. The number may be dif
 
 
 
-### Syntax 
+#### Syntax 
 
 {MERGESEQ}
 
@@ -525,7 +525,7 @@ This field displays the ordinal position of the current data record in a merged 
 
 
 
-### Syntax 
+#### Syntax 
 
 {MERGEREC}
 
@@ -537,7 +537,7 @@ This field displays the number of the current section.
 
 
 
-### Syntax 
+#### Syntax 
 
 {SECTION}
 
@@ -549,12 +549,12 @@ Insert the reference to the Bookmark.
 
 
 
-### Syntax 
+#### Syntax 
 
 REF BookmarkName [Switches]
 
 
-> Note: Page number and Paragraph number options are not supported in Silverlight, WinRT and Windows Phone applications while updating Cross reference field.
+Note: Page number and Paragraph number options are not supported in Silverlight, WinRT and Windows Phone applications while updating Cross reference field.
 
 ### Known Limitations
 

@@ -25,13 +25,15 @@ In the following screenshot, a BulletGraph is used to compare the actual monsoon
 
 1. Create simple BulletGraph.
 
-{% highlight html %}
+   ~~~ html
 
-<ej:Bulletgraph ID="BulletGraph1" runat="server">
+        <ej:Bulletgraph ID="BulletGraph1" runat="server">
 
-</ej:Bulletgraph>
-
-{% endhighlight  %}
+        </ej:Bulletgraph>
+	
+   ~~~
+   {:.pretty-print }
+   
 
 2. Execute the above code to display the BulletGraph. To customize the measure bars in the BulletGraph, you can pass the data either locally or remotely.
 

@@ -127,7 +127,7 @@ document.SaveOptions.MaintainCompatibilityMode = True
 
 {% endhighlight %}
 
-_Table_ _4_: _Supported file formats in various platforms to load and save the document using DocIO_
+_Supported file formats in various platforms to load and save the document using DocIO_
 
 <table>
 <tr>
@@ -224,7 +224,7 @@ EPUB</td><td>
 </table>
 
 
-## Opening a Word document from File System
+### Opening a Word document from File System
 
 You can easily open an existing Word document from the local file system by invoking the Open method of WordDocument class, and you can also achieve the same with the WordDocument constructor to instantiate a new instance from an existing Word document. There are several overloads for this method.
 
@@ -310,7 +310,7 @@ doc.Open("Sample.rtf", FormatType.Rtf)
 {% endhighlight %}
 
 
-## Opening a Word document from Stream
+### Opening a Word document from Stream
 
 You can easily open an existing Word document from Stream by invoking the Open method of WordDocument class, and you can also achieve the same with the WordDocument constructor by instantiating a new instance from an existing Word document. By using this overload, you can open an existing document from databases, embedded resources, business objects, file system, and so on.
 
@@ -345,7 +345,7 @@ fs.Close()
 
 {% endhighlight %}
 
-## Opening an Encrypted Word Document
+### Opening an Encrypted Word Document
 
 You can easily decrypt and open an existing encrypted Word document by using a password from the file system or data stream by invoking the Open method of WordDocument class, and you can also achieve the same with the WordDocument constructor.
 
@@ -397,7 +397,7 @@ fs.Close()
 
 {% endhighlight %}
 
-## Saving a Word Document to the File System
+### Saving a Word Document to the File System
 
 You can save a WordDocument instance in any of the DocIO supported file formats to the file system by invoking the Save method of WordDocument class.
 
@@ -418,7 +418,7 @@ doc.Save("Sample.doc", FormatType.Doc)
 
 {% endhighlight %}
 
-## Saving a Word Document to a Stream
+### Saving a Word Document to a Stream
 
 You can save the WordDocument instance in any of the DocIO supported file formats to the stream by invoking the Save method of WordDocument class. By using this overload, you can save the document to databases, embedded resources, business objects, and so on.
 
@@ -447,7 +447,7 @@ memStream.Close()
 
 {% endhighlight %}
 
-## Sending to a Client Browser
+### Sending to a Client Browser
 
 You can easily save and send a document to a client browser from a Web application by invoking the Save method of WordDocument class. This functionality is handled in DocIO library by using the HttpResponse instance.
 
@@ -468,14 +468,14 @@ doc.Save("Sample.doc", FormatType.Doc, Response, HttpContentDisposition.InBrowse
 
 {% endhighlight %}
 
-## Asynchronous Support
+### Asynchronous Support
 
 You can utilize the asynchronous Open and Save methods of WordDocument class to develop UI responsive applications. These asynchronous methods return tasks that have information about the task completion status, history, any exception that is raised or canceled, and the final result.
 
 
-> Note: Asynchronous support is applicable only to Windows Store, Windows Phone - Silverlight 8 and 8.1, and Windows Phone 8.1 (based on WinRT) apps.
+Note: Asynchronous support is applicable only to Windows Store, Windows Phone - Silverlight 8 and 8.1, and Windows Phone 8.1 (based on WinRT) apps.
 
-_Table_ _5_: _Overloads for OpenAsync method_
+_Overloads for OpenAsync method_
 
 <table>
 <tr>
@@ -507,7 +507,7 @@ Opens the document asynchronously from the stream that has the specified format 
 </table>
 
 
-_Table_ _6_: _Overloads for SaveAsync method_
+_Overloads for SaveAsync method_
 
 <table>
 <tr>
@@ -631,8 +631,6 @@ This creates an A4 size Word document with the four margins of the pages set to 
 
 
 
-_Figure_ _1_: _Invoice Template Document_
-
 ### Adding a Header to an Invoice
 
 You can add a header to a document and position it according to your requirements. The following code example illustrates how to add logo as a header at the top of a document by using the AppendPicture property.
@@ -689,8 +687,6 @@ In the preceding code, the picture is appended to the paragraph, and the width a
 ![](Getting-Started_images/Getting-Started_img3.png)
 
 
-
-_Figure_ _2_: _Header added to Invoice_
 
 
 
@@ -805,9 +801,6 @@ You can append address text to the paragraph by specifying the font and size in 
 
 ![](Getting-Started_images/Getting-Started_img4.png) 
 
-
-
-_Figure_ _3_: _Address added to Invoice_
 
 
 
@@ -931,8 +924,6 @@ Similarly, you can append the Merge field for the current date, and reuse the fo
 
 
 
-_Figure_ _4_: _Content added to Invoice_
-
 
 
 ### Adding the Buyer’s Address
@@ -1037,8 +1028,6 @@ The contents are displayed as shown in the following template document. You can 
 ![](Getting-Started_images/Getting-Started_img6.png) 
 
 
-
-_Figure_ _5_: Buyer’s Address added to Invoice_
 
 
 ### Adding Invoice Items
@@ -1418,9 +1407,6 @@ The contents are displayed as shown in the following template document.
 
 
 
-_Figure_ _6_: _Items added to Invoice_
-
-
 
 ### Adding Total Due
 
@@ -1547,9 +1533,6 @@ The invoice template appears as shown in the following screenshot.
 
 
 
-_Figure_ _7_: _Total Due added to Invoice_
-
-
 
 ### Adding Footer Content to the Invoice
 
@@ -1587,8 +1570,6 @@ The invoice document appears as follows.
 
 
 
-_Figure_ _8_: _Footer added to Invoice_
-
 
 
 Finally, the template document is saved to the disk or stream by using the Save method of the WordDocument class.
@@ -1614,7 +1595,6 @@ The final template document that is ready to be distributed, appears as follows.
 
 ![](Getting-Started_images/Getting-Started_img10.png)
 
-_Figure_ _9_: _Final Invoice_
 
 
 
@@ -1720,7 +1700,5 @@ The final document that is ready to be distributed, appears as follows.
 ![](Getting-Started_images/Getting-Started_img11.png)
 
 
-
-_Figure_ _10_: _Invoice generated by executing Mail Merge_
 
 

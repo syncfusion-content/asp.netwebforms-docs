@@ -27,11 +27,7 @@ Gantt chart is used to edit and visualize project schedule and also to track pro
 
 * Toolbar – It is a collection of toolbar buttons to add, edit, and delete a task. You can outdent and indent a task using outdent and indent buttons. Following screen shot illustrates the function of each toolbar button,
 
-
-
-![](Getting-Started_images/Getting-Started_img2.png)
-
-
+  ![](Getting-Started_images/Getting-Started_img2.png)
 
 * Search Textbox – It is used to search tasks, which contains the search string.
 * Resource Names – It displays the names of the resources assigned to that task.
@@ -42,9 +38,7 @@ Gantt chart is used to edit and visualize project schedule and also to track pro
 * Task Relationship – It determines when to start or finish a task.
 * Interactive Editing – You can edit the duration of a task by dragging or resizing the task bar. Following screen shot illustrates this.
 
-
-
-![](Getting-Started_images/Getting-Started_img3.png)
+  ![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -59,40 +53,41 @@ In this tutorial, you will learn how to create a simple Gantt chart, add tasks a
 1. First create a new ASP.NET Web Form project ; please refer the [ASP-Getting Started documentation](http://help.syncfusion.com/ug/js/default.htm) to create new project and add necessary DLL’s and script files.
 2. Create the web form  named as default and add the following template
 
-{% highlight html %}
+   ~~~ html
 
 
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs"Inherits="Gantt_ASP.Gantt._default" %>
+        <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs"Inherits="Gantt_ASP.Gantt._default" %>
 
-<!DOCTYPE html>
+        <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+        <html xmlns="http://www.w3.org/1999/xhtml">
 
-<head runat="server">   
+        <head runat="server">   
 
-<title>Getting started for ASP.NET Gantt Control</title>
+        <title>Getting started for ASP.NET Gantt Control</title>
 
-<!-- style sheet for default theme(flat azure) -->
+        <!-- style sheet for default theme(flat azure) -->
 
-<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+        <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
-<!--scripts-->   
+        <!--scripts-->   
 
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 
-<script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
+        <script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
 
- <script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.js"></script>
 
- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-  <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js "></script>
+        <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js "></script>
 
-</head>
+        </head>
 
 
 
-{% endhighlight %}
+   ~~~
+   {:.pretty-print }
 
 
 
@@ -100,49 +95,50 @@ In this tutorial, you will learn how to create a simple Gantt chart, add tasks a
 
 
 
-{% highlight html %}
+   ~~~ html
 
-//...    
+        //...    
 
-<body>
+        <body>
 
-    <form id="form1" runat="server">    
+        <form id="form1" runat="server">    
 
-        <ej:Gantt ID="GanttControlDefault" 
+            <ej:Gantt ID="GanttControlDefault" 
 
-            runat="server"
+                runat="server"
 
-            AllowSelection="true" 
+                AllowSelection="true" 
 
-            AllowColumnResize="true" 
+                AllowColumnResize="true" 
 
-            TaskIdMapping="TaskID" 
+                TaskIdMapping="TaskID" 
 
-            TaskNameMapping="TaskName" 
+                TaskNameMapping="TaskName" 
 
-            ScheduleStartDate="02/01/2014" 
+                ScheduleStartDate="02/01/2014" 
 
-            ScheduleEndDate="03/14/2014"
+                ScheduleEndDate="03/14/2014"
 
-            StartDateMapping="StartDate"             
+                StartDateMapping="StartDate"             
 
-            DurationMapping="Duration"
+                DurationMapping="Duration"
 
-            ProgressMapping="Progress" 
+                ProgressMapping="Progress" 
 
-            ChildMapping="SubTasks"             
+                ChildMapping="SubTasks"             
 
-            TreeColumnIndex="1">
+                TreeColumnIndex="1">
 
-        </ej:Gantt>            
+            </ej:Gantt>            
 
-    </form>
+        </form>
 
-</body>
+        </body>
 
 
 
-{% endhighlight %}
+   ~~~
+   {:.pretty-print }
 
 
 
@@ -150,175 +146,176 @@ In this tutorial, you will learn how to create a simple Gantt chart, add tasks a
 
 
 
-{% highlight c# %}
+   ~~~ c#
 
-protected void Page_Load(object sender, EventArgs e)
-
-{
-
-    this.GanttControlDefault.DataSource = GanttDefaultData.GetData();
-
-    this.GanttControlDefault.DataBind();
-
-}
-
-
-
-   public class DefaultData
-
-    {
-
-        public string StartDate { get; set; }
-
-        public int TaskID { get; set; }
-
-        public string TaskName { get; set; }
-
-        public string EndDate { get; set; }
-
-        public int Duration { get; set; }
-
-        public int Progress { get; set; }
-
-        public List<DefaultData> SubTasks { get; set; }
-
-        public string Predecessors { get; set; }
-
-        public List<int> ResourceID { get; set; }
-
-
-
-    }
-
-
-
-  public class GanttDefaultData
-
-    {
-
-
-
-        public static List<DefaultData> GetData()
+        protected void Page_Load(object sender, EventArgs e)
 
         {
 
-            List<DefaultData> tasks = new List<DefaultData>();
+            this.GanttControlDefault.DataSource = GanttDefaultData.GetData();
 
-
-
-            tasks.Add(new DefaultData()
-
-            {
-
-                TaskID = 1,
-
-                TaskName = "Design",
-
-                StartDate = "02/10/2014",
-
-                EndDate = "02/14/2014",
-
-                Duration=5
-
-            });
-
-
-
-            tasks[0].SubTasks= new List< DefaultData >();
-
-
-
-            tasks[0].SubTasks.Add(new DefaultData ()
-
-            {
-
-                TaskID = 2,
-
-                TaskName = "Software Specification",
-
-                StartDate = "02/10/2014",
-
-                EndDate = "02/12/2014",
-
-                Duration = 3,
-
-                Progress = 60,                
-
-                ResourceID = new List<int>() { 2 }
-
-            });
-
-            tasks [0].SubTasks.Add(new DefaultData ()
-
-            {
-
-                TaskID = 3,
-
-                TaskName = "Develop prototype",
-
-                StartDate = "02/10/2014",
-
-                EndDate = "02/12/2014",
-
-                Duration = 3,
-
-                Progress = 100,                
-
-                ResourceID = new List<int>() { 3 }
-
-            });
-
-            tasks[0].SubTasks.Add(new DefaultData ()
-
-            {
-
-                TaskID = 4,
-
-                TaskName = "Get approval from customer",
-
-                StartDate = "02/13/2014",
-
-                EndDate = "02/14/2014",
-
-                Duration = 2,
-
-                Progress = 100,
-
-                Predecessors = "3FS",
-
-                ResourceID = new List<int>() { 1 }
-
-            });
-
-            tasks[0].SubTasks.Add(new DefaultData ()
-
-            {
-
-                TaskID = 5,
-
-                TaskName = "Design complete",
-
-                StartDate = "02/14/2014",
-
-                EndDate = "02/14/2014",
-
-                Duration = 0,
-
-                Predecessors = "4FS"
-
-            });
-
-
-
-            return tasks;
+            this.GanttControlDefault.DataBind();
 
         }
 
-    }
+
+
+        public class DefaultData
+
+        {
+
+            public string StartDate { get; set; }
+
+            public int TaskID { get; set; }
+
+            public string TaskName { get; set; }
+
+            public string EndDate { get; set; }
+
+            public int Duration { get; set; }
+
+            public int Progress { get; set; }
+
+            public List<DefaultData> SubTasks { get; set; }
+
+            public string Predecessors { get; set; }
+
+            public List<int> ResourceID { get; set; }
 
 
 
-{% endhighlight %}
+        }
+
+
+
+        public class GanttDefaultData
+
+        {
+
+
+
+            public static List<DefaultData> GetData()
+
+            {
+
+                List<DefaultData> tasks = new List<DefaultData>();
+
+
+
+                tasks.Add(new DefaultData()
+
+                {
+
+                    TaskID = 1,
+
+                    TaskName = "Design",
+
+                    StartDate = "02/10/2014",
+
+                    EndDate = "02/14/2014",
+
+                    Duration=5
+
+                });
+
+
+
+                tasks[0].SubTasks= new List< DefaultData >();
+
+
+
+                tasks[0].SubTasks.Add(new DefaultData ()
+
+                {
+
+                    TaskID = 2,
+
+                    TaskName = "Software Specification",
+
+                    StartDate = "02/10/2014",
+
+                    EndDate = "02/12/2014",
+
+                    Duration = 3,
+
+                    Progress = 60,                
+
+                    ResourceID = new List<int>() { 2 }
+
+                });
+
+                tasks [0].SubTasks.Add(new DefaultData ()
+
+                {
+
+                    TaskID = 3,
+
+                    TaskName = "Develop prototype",
+
+                    StartDate = "02/10/2014",
+
+                    EndDate = "02/12/2014",
+
+                    Duration = 3,
+
+                    Progress = 100,                
+
+                    ResourceID = new List<int>() { 3 }
+
+                });
+
+                tasks[0].SubTasks.Add(new DefaultData ()
+
+                {
+
+                    TaskID = 4,
+
+                    TaskName = "Get approval from customer",
+
+                    StartDate = "02/13/2014",
+
+                    EndDate = "02/14/2014",
+
+                    Duration = 2,
+
+                    Progress = 100,
+
+                    Predecessors = "3FS",
+
+                    ResourceID = new List<int>() { 1 }
+
+                });
+
+                tasks[0].SubTasks.Add(new DefaultData ()
+
+                {
+
+                    TaskID = 5,
+
+                    TaskName = "Design complete",
+
+                    StartDate = "02/14/2014",
+
+                    EndDate = "02/14/2014",
+
+                    Duration = 0,
+
+                    Predecessors = "4FS"
+
+                });
+
+
+
+                return tasks;
+
+            }
+
+        }
+
+
+
+   ~~~
+   {:.pretty-print }
 
 The following screenshot displays the Gantt.
 
@@ -329,6 +326,7 @@ The following screenshot displays the Gantt.
 #### Enable Toolbar
 
 Gantt control contains the toolbar options to edit, search, expand and collapse all records, indent, outdent, delete, and add a task. You can enable toolbar using Toolbar option.
+
 {% highlight html %}
 
 <ej:Gantt ID="GanttControlDefault" 
@@ -339,7 +337,8 @@ Gantt control contains the toolbar options to edit, search, expand and collapse 
 
     <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel,indent,outdent"/>
 
-</ej:Gantt>            
+</ej:Gantt> 
+           
 {% endhighlight %}
 The following screen shot displays a Tool bar in Gantt.
 
@@ -347,13 +346,13 @@ The following screen shot displays a Tool bar in Gantt.
 
 
 
-> Note:add, edit, delete options are enabled when enabling the allowEditing, allowAdding, allowDelete in the edit Settings.
+Note:add, edit, delete options are enabled when enabling the allowEditing, allowAdding, allowDelete in the edit Settings.
 
 #### Enable sorting 
 
 Gantt control has the sorting functionality for arranging the tasks in ascending or descending based on the particular column.
 
-#### Multicolumn sorting:
+##### Multicolumn sorting:
 
 Enable the multicolumn sorting in Gantt by setting AllowMultiSorting to “True”. You can sort multiple columns in Gantt by selecting the desired column header while holding the CTRL key.
 
@@ -379,15 +378,15 @@ Enable the multicolumn sorting in Gantt by setting AllowMultiSorting to “True�
 
 You can enable editing using EditOption and AllowGanttChartEditing options.
 
-#### Cell Editing:
+##### Cell Editing:
 
 Modify the task details through the grid cell editing by setting the EditMode as CellEditing.
 
-#### Normal Editing:
+##### Normal Editing:
 
 Modify the task details through the edit dialog by setting the EditMode as Normal.
 
-#### Taskbar Editing:
+##### Taskbar Editing:
 
 Modify the task details through user interaction like resizing and dragging the taskbar.
 
@@ -415,7 +414,7 @@ The following screen shot displays the Gantt control with Enable Editing options
 
 
 
-> Note: Both cellEditing and normal editing operations are performed through double click action.
+Note: Both cellEditing and normal editing operations are performed through double click action.
 
 #### Enable Context Menu
 
@@ -449,19 +448,19 @@ In Gantt control, you have the predecessor support to show the relationship betw
 
 #### Types:
 
-#### Start to Start (SS)
+##### Start to Start (SS)
 
 You cannot start a task until the other task is also started.
 
-#### Start to Finish (SF)
+##### Start to Finish (SF)
 
 You cannot finish a task until the other task is started.
 
-#### Finish to Start (FS)
+##### Finish to Start (FS)
 
 You cannot start a task until the other task is completed.
 
-#### Finish to Finish (FF)
+##### Finish to Finish (FF)
 
 You cannot finish a task until the other task is completed.
 
@@ -580,6 +579,7 @@ public class ResourceList
 
 
 {% endhighlight %}
+
 The following screen shot displays resource allocation for tasks in Gantt.
 
 

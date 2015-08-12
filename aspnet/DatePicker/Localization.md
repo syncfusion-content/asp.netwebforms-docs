@@ -44,6 +44,6 @@ The following screenshot displays the output for the above code.
 
 
 ![](Localization_images/Localization_img1.png)
-{:.image }
+
 
 

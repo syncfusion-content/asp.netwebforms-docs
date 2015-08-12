@@ -18,11 +18,11 @@ The various keyboard shortcuts available within the NumericTextbox control are a
 <table>
 <tr>
 <td>
-Shortcut Key</td><td>
-Description</td></tr>
+{{ '**Shortcut Key**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
-{ [Access key](http://en.wikipedia.org/wiki/Access_key) | markdownify } + j</td><td>
+{ Access key } + j</td><td>
 Focuses the control</td></tr>
 <tr>
 <td>
@@ -80,6 +80,6 @@ $(document).on("keydown", function (e)
 Run the sample and press [Access key](http://en.wikipedia.org/wiki/Access_key) + j key to focus the NumericTextbox control. Perform provided functionality by using the keyboard shortcuts.
 
 ![C:/Users/giftline.jebamani/Desktop/p.png](Keyboard-Interaction_images/Keyboard-Interaction_img1.png) 
-{:.image }
+
 
 

@@ -30,7 +30,7 @@ Add the following code example in your ASPX page to render the NumericTextbox co
 The following screenshot displays the output for the above code.
 
 ![C:/Users/giftline.jebamani/Desktop/a.png](Behavior-Settings_images/Behavior-Settings_img1.png) 
-{:.image }
+
 
 
 ## Persistence Support
@@ -54,7 +54,7 @@ Add the following code example in your ASPX page to render the NumericTextbox co
 The following screenshot displays the output of the NumericTextbox with EnablePersistence before page load and after page load.
 
 ![C:/Users/giftline.jebamani/Desktop/b.png](Behavior-Settings_images/Behavior-Settings_img2.png) 
-{:.image }
+
 
 
 
@@ -89,10 +89,8 @@ Add the following code example in your ASPX page to render the NumericTextbox co
 The following screenshot displays the output of the NumericTextbox with and without enableStrictMode.
 
 ![](Behavior-Settings_images/Behavior-Settings_img3.png) 
-{:.image }
 
 
-__
 
 ## Enabled or Disabled
 
@@ -102,16 +100,16 @@ The NumericTextbox control have an option to enable or disable its element. You 
 
 Add the following code example in your ASPX page to render the NumericTextbox control with the enabled state.
 
-&lt;ej:NumericTextBox ID="numeric"  Value="1" Enabled="true" runat="server"&gt; &lt;/ej:NumericTextBox&gt;
+<ej:NumericTextBox ID="numeric"  Value="1" Enabled="true" runat="server"> </ej:NumericTextBox>
 
 
 
 The output for the NumericTextbox when “Enabled” is “true” and “Enabled” is “false”.
 
 ![C:/Users/giftline.jebamani/Desktop/c.png](Behavior-Settings_images/Behavior-Settings_img4.png) 
-{:.image }
+
 ![C:/Users/giftline.jebamani/Desktop/ca.png](Behavior-Settings_images/Behavior-Settings_img5.png) 
-{:.image }
+
 
 
 ## Adjusting NumericTextbox Size
@@ -135,7 +133,7 @@ Add the following code example in your ASPX page to render the NumericTextbox co
 The following screenshot displays the output of the NumericTextbox after setting “Height” and “Width” values.
 
 ![C:/Users/giftline.jebamani/Desktop/d.png](Behavior-Settings_images/Behavior-Settings_img6.png) 
-{:.image }
+
 
 
 ## Increment Step
@@ -159,9 +157,9 @@ Add the following code example in your ASPX page to render the NumericTextbox co
 The following screenshot displays the output of the NumericTextboxes with “IncrementStep”.
 
 ![C:/Users/giftline.jebamani/Desktop/e.png](Behavior-Settings_images/Behavior-Settings_img7.png) 
-{:.image }
+
 ![C:/Users/giftline.jebamani/Desktop/ea.png](Behavior-Settings_images/Behavior-Settings_img8.png)
-{:.image }
+
 
 
 ## Define Name
@@ -185,7 +183,7 @@ Add the following code example in your ASPX page to render the NumericTextbox co
 The following screenshot displays the output of the NumericTextbox with the Name property.
 
 ![C:/Users/giftline.jebamani/Desktop/f.png](Behavior-Settings_images/Behavior-Settings_img9.png) 
-{:.image }
+
 
 
 
@@ -211,7 +209,7 @@ Add the following code example in your ASPX page to render the NumericTextbox co
 The following screenshot displays the output of the NumericTextbox with the Value property.
 
 ![C:/Users/giftline.jebamani/Desktop/g.png](Behavior-Settings_images/Behavior-Settings_img10.png) 
-{:.image }
+
 
 
 ## Basic Properties
@@ -245,15 +243,15 @@ Add the following code example in your ASPX page to render the NumericTextbox co
 The following screenshot displays the output of the NumericTextbox with the basic properties.
 
 ![C:/Users/giftline.jebamani/Desktop/h.png](Behavior-Settings_images/Behavior-Settings_img11.png) 
-{:.image }
+
 ![C:/Users/giftline.jebamani/Desktop/ha.png](Behavior-Settings_images/Behavior-Settings_img12.png) 
-{:.image }
+
 
 
 
 
 ![C:/Users/giftline.jebamani/Desktop/hb.png](Behavior-Settings_images/Behavior-Settings_img13.png) 
-{:.image }
+
 
 
 ## Read Only Support
@@ -276,8 +274,8 @@ Add the following code example in your ASPX page to render to NumericTextbox con
 
 The following screenshot displays the output of the NumericTextbox when “ReadOnly” is set to “true”. The NumericTextbox values cannot be edited or changed.
 
-{ ![C:/Users/giftline.jebamani/Desktop/i.png](Behavior-Settings_images/Behavior-Settings_img14.png) | markdownify }
-{:.image }
+ ![C:/Users/giftline.jebamani/Desktop/i.png](Behavior-Settings_images/Behavior-Settings_img14.png)
+
 
 
 

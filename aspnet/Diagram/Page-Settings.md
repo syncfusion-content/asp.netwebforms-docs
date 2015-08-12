@@ -16,9 +16,9 @@ _Page settings_
 <table>
 <tr>
 <td>
-Properties</td><td>
-Data Type</td><td>
-Description</td></tr>
+{{ '**Properties**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 PageWidth</td><td>
@@ -98,7 +98,7 @@ Diagram1.PageSettings.PageOrientation = PageOrientation.Portrait;
 
 
  ![](Page-Settings_images/Page-Settings_img1.png) 
-{:.image }
+
 
 
 ## MultiplePage and PageBreaks
@@ -106,7 +106,7 @@ Diagram1.PageSettings.PageOrientation = PageOrientation.Portrait;
 When MultiplePage is enabled, size of the page dynamically increases or decreases in multiples of page width and height and completely fits the Diagram within the page boundaries. PageBreaks is used as a visual guide to see how pages are split into multiple pages.
 
 ![](Page-Settings_images/Page-Settings_img2.png) 
-{:.image }
+
 
 
 ## AutoScroll
@@ -126,9 +126,9 @@ _Properties table_
 <table>
 <tr>
 <td>
-Properties</td><td>
-Data Type</td><td>
-Description</td></tr>
+{{ '**Properties**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 ScrollLimit</td><td>
@@ -145,7 +145,8 @@ AutoScrollBorder</td><td>
 Object</td><td>
 Gets or sets the auto scroll starting point </td></tr>
 </table>
-Autoscroll border
+
+### Autoscroll border
 
 The Autoscroll border is used to specify the distance from where the autoscroll is to be enabled when moving the node or connector. The default value is set to 15 for all the sides (left, right, top, and bottom).
 
@@ -167,7 +168,7 @@ DiagramContent.PageSettings.AutoScrollBorder.Bottom = 15;
 
 {% endhighlight %}
 
-Scroll limit
+### Scroll limit
 
 The scroll limit allows you to scroll the diagram page along X and Y axes based on the options specified. 
 
@@ -175,7 +176,7 @@ The scroll limit allows you to scroll the diagram page along X and Y axes based 
 * When scroll limit is set as diagram, you are restricted to scroll the page beyond the diagram content. 
 * By specifying the value as limited, you can set the limit of the scrollable area through scrollable area property. 
 
-_Note: Refer to the scrollable area for more details._
+  Note: Refer to the scrollable area for more details._
 
 The following code example illustrates how to specify scroll limit. 
 
@@ -189,7 +190,7 @@ The following code example illustrates how to specify scroll limit.
 
 {% endhighlight %}
 
-Scrollable Area
+### Scrollable Area
 
 You can restrict scrolling beyond a particular rectangular area and the rectangular area is specified by using ScrollableArea property. This is applicable only when the scroll limit for the Diagram is specified as limited. 
 
@@ -222,6 +223,6 @@ DiagramContent.PageSettings.ScrollLimit=
 
 
  ![](Page-Settings_images/Page-Settings_img4.png) 
-{:.image }
+
 
 

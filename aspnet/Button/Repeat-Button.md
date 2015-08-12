@@ -88,6 +88,5 @@ Configure the CSS styles to apply on button
 
 
 ![](Repeat-Button_images/Repeat-Button_img1.png)
-{:.image }
 
 

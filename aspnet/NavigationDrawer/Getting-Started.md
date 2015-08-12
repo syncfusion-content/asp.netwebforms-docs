@@ -14,7 +14,7 @@ documentation: ug
 EssentialJavaScriptNavigation Drawer is a sliding panel that displays the list of navigation options on demand. That is, by default, it is not visible but you can display it on the left/right side of the screen by swiping or by clicking with desired target icon.                       
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
-{:.image }
+
 
 
 ### Create Navigation Drawer Widget
@@ -196,7 +196,7 @@ You can display the drawer either by clicking on the target icon or by swiping f
 
 
 ![](Getting-Started_images/Getting-Started_img2.png) 
-{:.image }
+
 
 
 You can set the images for Navigation Drawer by using data-ej-imageclass attribute in the inner list elements.
@@ -283,7 +283,7 @@ You can define the image classes specified for the list items as follows.
 Run the above code to render the following output.
 
 ![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img3.png) 
-{:.image }
+
 
 
 You can add desired page content while selecting the options in navigation drawer as follows.
@@ -381,6 +381,6 @@ function slideMenuClick(e) {
 Run the above code to render the following output. 
 
 ![](Getting-Started_images/Getting-Started_img4.png) 
-{:.image }
+
 
 

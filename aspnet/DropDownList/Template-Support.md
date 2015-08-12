@@ -15,7 +15,7 @@ The following steps explain the behaviour of template support with DropDownList.
 
 In an ASPX page, add an element to configure the DropDownList widget.
 
-> Note: Images for this sample are available in the ‘installed location /themes/images’. 
+Note: Images for this sample are available in the ‘installed location /themes/images’. 
 
 
 {% highlight html %}

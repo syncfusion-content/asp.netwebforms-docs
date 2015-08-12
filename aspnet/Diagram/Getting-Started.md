@@ -18,78 +18,82 @@ The following screenshot illustrates the structure of the Diagram control.
 
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
-{:.image }
+
 
 
 ## Create your first Diagram in ASP.NET
 
 ### Initialize Diagram
 
-1. Create an ASPX file and add the necessary script and CSS files in the &lt;Head&gt; tag as shown in the following code example.
-{% highlight html %}
+1. Create an ASPX file and add the necessary script and CSS files in the <Head> tag as shown in the following code example.
+   
+   ~~~ html
 
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+        <html xmlns="http://www.w3.org/1999/xhtml">
 
-    <head>
+        <head>
 
-        <title>
+            <title>
 
-            Getting Started with the Diagram control for ASP.Net
+                Getting Started with the Diagram control for ASP.Net
 
-        </title>
-
-
-
-        <!-- jQuery Script -->
-
-        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-
-<!--script to create Diagram-->
-
-        <script src="http://cdn.syncfusion.com/js/ej.widgets.all-latest.min.js"></script>
-
-    </head>
-
-    <body>
-    </body>
-
-</html>
+            </title>
 
 
 
+            <!-- jQuery Script -->
 
+                <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 
-{% endhighlight %}
+            <!--script to create Diagram-->
 
+                <script src="http://cdn.syncfusion.com/js/ej.widgets.all-latest.min.js"></script>
 
+        </head>
 
-2. Add the &lt;ej:Diagram&gt; element in the &lt;body&gt; tag to render the Diagram.
-{% highlight c# %}
+        <body>
+		
+		
+        </body>
 
-
-<html>
-
-    <body>
-
-        <ej:Diagram ID="DiagramContent" runat="server" Height="600px" Width="600px">
-
-        </ej:Diagram>
-
-</body>
-
-</html>
+        </html>
 
 
 
-{% endhighlight %}
+
+
+   ~~~
+   {:.pretty-print }
+
+
+
+2. Add the <ej:Diagram> element in the <body> tag to render the Diagram.
+
+   ~~~ html
+   
+        <html>
+		
+		<body>
+		
+		    <ej:Diagram ID="DiagramContent" runat="server" Height="600px" Width="600px">
+			
+			</ej:Diagram>
+			
+		</body>
+		
+		</html>
+		
+		
+   ~~~
+   {:.pretty-print }
 
 
 
 3. This creates an empty Diagram. In the following section, you can learn how to add employee details in the Diagram.
 
- ![http://help.syncfusion.com/ug/js/ImagesExt/image147_3.png](Getting-Started_images/Getting-Started_img2.png) 
-{:.image }
+   ![http://help.syncfusion.com/ug/js/ImagesExt/image147_3.png](Getting-Started_images/Getting-Started_img2.png) 
+
 
 
 ### Initialize Data
@@ -148,7 +152,7 @@ Initially, you can create hierarchical employee information, JSONData, and assig
 
 You can populate the organizational chart by specifying the necessary fields of data source.
 
-{% highlight html %}
+{% highlight c# %}
 
 //Customizes node before rendering
 
@@ -263,8 +267,7 @@ The employee data is displayed in the following Diagram.
 
 
 ![](Getting-Started_images/Getting-Started_img3.png) 
-{:.image }
 
 
-_Diagram_
+
 

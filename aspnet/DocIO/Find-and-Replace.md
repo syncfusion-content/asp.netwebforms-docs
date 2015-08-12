@@ -114,7 +114,7 @@ Gets the System.String at the specified index.  </td></tr>
 </table>
 
 
-> Note: TextSelection and GetAsOneRange should not be used for text replacement.
+Note: TextSelection and GetAsOneRange should not be used for text replacement.
 
 The following code example illustrates how to use the TextSelection class with the Find Method. Refer to the Find section to know more about Find method.
 
@@ -140,7 +140,7 @@ Dim rangesHolder1 As TextSelection = document.Find("The PlaceHolder1", False, Fa
 TextBodyPart class contains the collection of body items (it means that TextBodyPart can contain paragraphs, tables, and even sections). These text body parts are the members used to construct a word document. TextBodyPart is usually used with the Bookmark Navigator.
 
 
-> Note: TextBodyPart contains the copy of objects from the documents (paragraphs, tables, sections, and so on). So, if you modify the content of the TextBodyPart, it will not affect the objects inside the document.
+Note: TextBodyPart contains the copy of objects from the documents (paragraphs, tables, sections, and so on). So, if you modify the content of the TextBodyPart, it will not affect the objects inside the document.
 
 ### Public Constructors
 
@@ -283,21 +283,21 @@ This class lets you select text body items from the TextBodyPart class. TextBody
 
 •[0]Paragraph
 
-o  [0]TextRange – "Text"
+    o  [0]TextRange – "Text"
 
-o  [1]TextRange – "NEED TO"
+    o  [1]TextRange – "NEED TO"
 
-o  [2]TextRange – "COPY"
+    o  [2]TextRange – "COPY"
 
 •[1]Table
 
 •[2]Paragraph
 
-o  [0]TextRange – "THIS"
+    o  [0]TextRange – "THIS"
 
-o  [1]TextRange – "TEXT"
+    o  [1]TextRange – "TEXT"
 
-o  [2]TextRange – "Other Text"
+    o  [2]TextRange – "Other Text"
 
 
 

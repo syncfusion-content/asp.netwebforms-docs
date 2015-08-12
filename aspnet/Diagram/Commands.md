@@ -32,16 +32,17 @@ _Alignment Command_
 <table>
 <tr>
 <td>
-Command</td><td>
-Parameter</td><td>
-Description</td></tr>
+{{ '**Command**' | markdownify }}</td><td>
+{{ '**Parameter**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 align</td><td>
 direction (string)Values accepted-(“left”/”right”/”center”/”top”/”bottom”/”middle”)</td><td>
 Aligns all the nodes/connectors in the selection list to the left/right/center/top/bottom/middle of the selection boundary</td></tr>
 </table>
-VerticalAlignment commands
+
+### VerticalAlignment commands
 
 The node is aligned vertically to left, right, and center by using alignment commands. The following code illustrates how to run the vertical alignment command.
 
@@ -74,10 +75,10 @@ diagram.align("center");
 
 
 ![](Commands_images/Commands_img1.png) 
-{:.image }
 
 
-Horizontal Alignment commands
+
+### Horizontal Alignment commands
 
 The node is aligned horizontally to top, bottom, and middle by using alignment commands. The following code illustrates how to run the horizontal alignment command.
 
@@ -104,7 +105,7 @@ diagram.align("middle");
 
 
 ![](Commands_images/Commands_img2.png) 
-{:.image }
+
 
 
 ## Spacing Command
@@ -116,8 +117,8 @@ _Spacing Command_
 <table>
 <tr>
 <td>
-Commands</td><td>
-Description</td></tr>
+{{ '**Commands**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 spaceAcross</td><td>
@@ -129,7 +130,7 @@ Aligns the nodes/connectors in the selection list with equal vertical distance b
 </table>
 
 
-spaceAcross Command
+### spaceAcross Command
 
 The spaceAcrosscommand spaces selected nodes with equal horizontal distance between them.
 
@@ -151,10 +152,10 @@ diagram.spaceAcross();
 
 
 ![](Commands_images/Commands_img3.png) 
-{:.image }
 
 
-spaceDown Command
+
+### spaceDown Command
 
 The spaceDowncommand spaces selected nodes with equal vertical distance between them.
 
@@ -176,7 +177,7 @@ diagram.spaceDown();
 
 
 ![](Commands_images/Commands_img4.png) 
-{:.image }
+
 
 
 ## Sizing Command
@@ -190,8 +191,8 @@ _Sizing Command_
 <table>
 <tr>
 <td>
-Commands</td><td>
-Description</td></tr>
+{{ '**Commands**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 sameSize</td><td>
@@ -238,7 +239,7 @@ diagram.sameWidth();
 
 
 ![](Commands_images/Commands_img5.png) 
-{:.image }
+
 
 
 ## Clipboard commands 
@@ -249,7 +250,7 @@ Clipboardcommands are used to cut, copy, and paste the selected elements on Diag
 * copy
 * paste
 
-Cut
+### Cut
 
 Cuts the selected elements from the Diagram to the Diagram’s clipboard. 
 
@@ -267,7 +268,7 @@ diagram.cut();
 
 {% endhighlight %}
 
-Copy
+### Copy
 
 Copies the selected elements from the Diagram to the Diagram’s clipboard. 
 
@@ -287,7 +288,7 @@ diagram.copy();
 
 {% endhighlight %}
 
-Paste
+### Paste
 
 Pastes the Diagram’s clipboard data (nodes/connectors) into the Diagram.
 
@@ -310,14 +311,14 @@ diagram.paste();
 
 
 ![](Commands_images/Commands_img6.png) 
-{:.image }
+
 
 
 ## Grouping Commands
 
 Grouping commands are used to group/ungroup the selected elements on Diagram.
 
-Group
+### Group
 
 The following code illustrates how to Group the selected elements on Diagram.
 
@@ -333,7 +334,7 @@ diagram.group();
 
 {% endhighlight %}
 
-Ungroup
+### Ungroup
 
 The following code illustrates how to Ungroup the selected group on Diagram.
 
@@ -358,7 +359,7 @@ Z-order commands are used to move the selected elements to the front of other el
 * moveForward
 * sendBackward
 
-bringToFront Commands
+### bringToFront Commands
 
 The bringToFront command moves the selected element over other elements by increasing the selected element’s z-index to Diagram element’s maximum value.
 
@@ -379,10 +380,10 @@ diagram.bringToFront();
 
 
 ![](Commands_images/Commands_img7.png) 
-{:.image }
 
 
-sendToBack Commands
+
+### sendToBack Commands
 
 The sendToBack command moves the selected element behind all other elements by setting the selected element’s z-index to zero.  
 
@@ -403,10 +404,10 @@ diagram.sendToBack();
 
 
 ![](Commands_images/Commands_img8.png) 
-{:.image }
 
 
-moveForward Commands
+
+### moveForward Commands
 
 The moveForward command increases the z-index value of the selected element by 1.
 
@@ -427,10 +428,10 @@ diagram.moveForward();
 
 
 ![](Commands_images/Commands_img9.png) 
-{:.image }
 
 
-sendBackwardCommands
+
+### sendBackwardCommands
 
 The sendBackward command decreases the z-index value of the selected element by 1.
 
@@ -451,7 +452,7 @@ diagram.sendBackward();
 
 
 ![](Commands_images/Commands_img10.png) 
-{:.image }
+
 
 
 ## Zoom Commands
@@ -517,9 +518,9 @@ _Nudge Commands_
 <table>
 <tr>
 <td>
-Command</td><td>
-Parameter</td><td>
-Description</td></tr>
+{{ '**Command**' | markdownify }}</td><td>
+{{ '**Parameter**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 nudge</td><td>
@@ -546,7 +547,7 @@ Nudge by using Arrow Keys
 The corresponding arrow keys are used to move the selected elements up, down, left, or right by 1 pixel.
 
 ![http://help.syncfusion.com/ug/wpf/diagram/ImagesExt/image69_163.png](Commands_images/Commands_img11.png) 
-{:.image }
+
 
 
 Nudge commands are particularly useful for accurate placement of Diagram elements on the Diagram as it allows you to move by 1 pixel each time.
@@ -560,9 +561,9 @@ _FitToPage Commands_
 <table>
 <tr>
 <td>
-Command</td><td>
-Parameter</td><td>
-Description</td></tr>
+{{ '**Command**' | markdownify }}</td><td>
+{{ '**Parameter**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 fitToPage</td><td>
@@ -585,7 +586,7 @@ diagram.fitToPage("page", "content", { "left": 25, "top": 25, "right": 25, "bott
 
 {% endhighlight %}
 
-FitToMode
+### FitToMode
 
 Mode is to specify whether the Diagram content can be fit into view with respect to width, height or entire bounds of the Diagram.
 
@@ -594,8 +595,8 @@ _Fit To Modes_
 <table>
 <tr>
 <td>
-Modes</td><td>
-Description</td></tr>
+{{ '**Modes**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 Page</td><td>
@@ -609,7 +610,8 @@ Fits the width of Diagram content into view </td></tr>
 Height</td><td>
 Fits the height of Diagram content into view</td></tr>
 </table>
-Region
+
+### Region
 
 Region specifies the region/bounds of Diagram content to fit into view.
 
@@ -618,8 +620,8 @@ _Diagram Region_
 <table>
 <tr>
 <td>
-Regions</td><td>
-Description</td></tr>
+{{ '**Regions**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 Content</td><td>

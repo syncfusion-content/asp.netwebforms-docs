@@ -251,16 +251,16 @@ new CountyPopulationData(){ Name= "Wyoming", Population=582658}
 
 
 
-{% highlight html %}
+   ~~~ html
         
 
-    <html xmlns="http://www.w3.org/1999/xhtml">
+        <html xmlns="http://www.w3.org/1999/xhtml">
 
-<head>
+        <head>
 
 	    <title> Getting Started with Maps </title>    
 
-<!--  jquery script  -->
+        <!--  jquery script  -->
 
                 <script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
 
@@ -270,7 +270,7 @@ new CountyPopulationData(){ Name= "Wyoming", Population=582658}
 
                <script src="http://cdn.syncfusion.com/13.1.0.21/js/
 
-ej.widgets.all.min.js"></script>
+                ej.widgets.all.min.js"></script>
 
 
 
@@ -282,15 +282,16 @@ ej.widgets.all.min.js"></script>
 
 
 
-</head>
+        </head>
 
-      <body>
-      </body>
-</html>
+        <body>
+        </body>
+        </html>
 
 
 
-{% endhighlight %}
+   ~~~
+   {:.pretty-print }
 
 
 
@@ -298,29 +299,30 @@ ej.widgets.all.min.js"></script>
 
 
 
-{% highlight html %}
+   ~~~ html
 
 
-<html>   
+        <html>   
 
- <body> 
+        <body> 
 
-    <div style="min-height:404px">
+        <div style="min-height:404px">
 
         <ej:Map ID=“map” runat="server"  EnableAnimation ="true" >
 
         </ej:Map>
 
-    </div>
+        </div>
 
 
- </body>      
+        </body>      
 
-</html>
+        </html>
 
 
 
-{% endhighlight %}
+   ~~~
+   {:.pretty-print }
 
 
 
@@ -328,15 +330,15 @@ ej.widgets.all.min.js"></script>
 
 
 
-{% highlight c# %}
+   ~~~ c#
 
 
 
 
 
-    public partial class Default: Page
+        public partial class Default: Page
 
-    {
+        {
 
         protected void Page_Load(object sender, EventArgs e)
 
@@ -364,11 +366,12 @@ ej.widgets.all.min.js"></script>
 
         }
 
-    }   
+        }   
 
 
 
-{% endhighlight %}
+   ~~~
+   {:.pretty-print }
 
 
 
@@ -432,7 +435,7 @@ You can customize the shape’s color by using Fill, Stroke and StrokeThickness 
 
 The Range color mapping is used to differentiate the shape’s fill based on its underlying value and color ranges. The From and To properties defines the value ranges and the GradientColors property defines the equivalent color ranges respective to their value ranges.
 
-> Note: The EnableGradient property value should be true to apply gradient colors for maps.
+Note: The EnableGradient property value should be true to apply gradient colors for maps.
 
 
 

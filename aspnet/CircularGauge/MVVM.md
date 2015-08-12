@@ -541,117 +541,121 @@ Execute the above code to render the following output.
 ### Knockout JS
 
 * Knockout support allows you to bind the HTML elements against any of the available data models.Two types of knockout binding is supported as of angular,
-1. one-way binding
-2. two-way binding
+
+  1. one-way binding
+  
+  2. two-way binding
+  
 * One way binding refers to the process of applying observable values to all the available properties of the Circular Gauge control, but the changes made in gauge control does not reflect and trigger in turn to the observable collection. This kind of binding applies to all the properties of the circular gauge control.
+
 * Two-way binding supports both the processes – it applies the observable values to the Circular Gauge properties as well as the changes made in the Circular Gauge control also reflects back and triggers within the observable collections. Only few of the schedule properties support two-way binding and they are as follows
-1. value
-2. maximum 
-3. minimum
+  
+  1. value
+  
+  2. maximum 
+  
+  3. minimum
+
+     ~~~ html
+
+        <%--content section to refer script files-- %>
 
 
 
+        <%--control section-- %>
 
+        <div id="circularCore" data-bind="ejCircularGauge:({value:samplevalue,minimum:sampleminimum,maximum:samplemaximum,readOnly:false,enableAnimation:false,backgroundColor: 'transparent', width: 500, height:360,
 
-{% highlight html %}
+        scales: [{
 
-<%--content section to refer script files-- %>
+        showRanges: true,
 
+        startAngle: 122, sweepAngle: 296, radius: 130, showScaleBar: true, size: 1, border: { width: 0.5 }, majorIntervalValue: 20, minorIntervalValue: 10,
 
+        pointers: [{
 
-<%--control section-- %>
+        showBackNeedle: true,
 
-<div id="circularCore" data-bind="ejCircularGauge:({value:samplevalue,minimum:sampleminimum,maximum:samplemaximum,readOnly:false,enableAnimation:false,backgroundColor: 'transparent', width: 500, height:360,
+        backNeedleLength: 20,
 
-scales: [{
+        length: 95,
 
-showRanges: true,
+        width: 7,
 
-startAngle: 122, sweepAngle: 296, radius: 130, showScaleBar: true, size: 1, border: { width: 0.5 }, majorIntervalValue: 20, minorIntervalValue: 10,
+        pointerCap: { radius: 12 }
 
-pointers: [{
+        }],
 
-showBackNeedle: true,
+        labels: [{
 
-backNeedleLength: 20,
+        Color: '#8c8c8c'
 
-length: 95,
+        }],
 
-width: 7,
+        ticks: [{
 
-pointerCap: { radius: 12 }
+        type: 'major',
 
-}],
+        distanceFromScale: 2,
 
-labels: [{
+        height: 16,
 
-Color: '#8c8c8c'
+        width: 1, Color: '#8c8c8c'
 
-}],
+        }, { type: 'minor', height: 8, width: 1, distanceFromScale: 2, color: '#8c8c8c' }],
 
-ticks: [{
+        ranges: [{
 
-type: 'major',
+        distanceFromScale: -28,
 
-distanceFromScale: 2,
+        startValue: 0,
 
-height: 16,
-
-width: 1, Color: '#8c8c8c'
-
-}, { type: 'minor', height: 8, width: 1, distanceFromScale: 2, color: '#8c8c8c' }],
-
-ranges: [{
-
-distanceFromScale: -28,
-
-startValue: 0,
-
-endValue: 60
+        endValue: 60
 
 
 
-},{
+        },{
 
-distanceFromScale: -28,
+        distanceFromScale: -28,
 
-backgroundColor: '#fc0606',
+        backgroundColor: '#fc0606',
 
-border:{color: '#fc0606'},
+        border:{color: '#fc0606'},
 
-startValue: 60,
+        startValue: 60,
 
-endValue: 120
+        endValue: 120
 
-}]
+        }]
 
-}]})">
+        }]})">
 
-</div>
+        </div>
 
-<script type="text/javascript">
+        <script type="text/javascript">
 
-window.viewModel = {
+        window.viewModel = {
 
-samplevalue: ko.observable(50),
+        samplevalue: ko.observable(50),
 
-sampleminimum: ko.observable(0),
+        sampleminimum: ko.observable(0),
 
-samplemaximum: ko.observable(120),
+        samplemaximum: ko.observable(120),
 
-};
+        };
 
-$(function () {
+        $(function () {
 
-ko.applyBindings(viewModel);
+        ko.applyBindings(viewModel);
 
-$("#sampleProperties").ejPropertiesPanel();
+        $("#sampleProperties").ejPropertiesPanel();
 
-});
+        });
 
-</script>
+        </script>
 
-{% endhighlight %}
+     ~~~
+     {:.pretty-print }
 
 Execute the above code to render the following output. The following screenshot is the output of ASP.
 

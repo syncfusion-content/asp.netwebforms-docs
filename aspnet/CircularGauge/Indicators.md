@@ -57,48 +57,49 @@ Execute the above code to render the following output.
 * Indicators are of several types such as, circle, rectangle, rounded rectangle, text and image. By using the type property you can avail those shapes. For image type imageUrl property is used. 
 
 
-{% highlight html %}
+  ~~~ html
 
 
-<%--For Circular Gauge rendering-- %>
+        <%--For Circular Gauge rendering-- %>
 
-<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
+        <ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-<Scales>
+        <Scales>
 
-<ej:CircularScales Showindicators="true" backgroundColor="#5DF243" ShowscaleBar="true"  Size="5" radius="120" MinorIntervalValue="5" >
+        <ej:CircularScales Showindicators="true" backgroundColor="#5DF243" ShowscaleBar="true"  Size="5" radius="120" MinorIntervalValue="5" >
 
-<Border Width="1.5" Color="black" />
+        <Border Width="1.5" Color="black" />
 
-<PointerCollection>
+        <PointerCollection>
 
-<ej:Pointers BackgroundColor="#5DF243" length="110"></ej:Pointers>
+        <ej:Pointers BackgroundColor="#5DF243" length="110"></ej:Pointers>
 
-</PointerCollection>
+        </PointerCollection>
 
-<labelCollection>
+        <labelCollection>
 
-<ej:CircularLabels type="major" />
+        <ej:CircularLabels type="major" />
 
-</labelCollection>
+        </labelCollection>
 
-<IndicatorCollection>
+        <IndicatorCollection>
 
-<ej:CircularIndicators Height="10" width="10" Type="Circle" >
+        <ej:CircularIndicators Height="10" width="10" Type="Circle" >
 
-<Position X="185" Y="300" />
+        <Position X="185" Y="300" />
 
-</ej:CircularIndicators>
+        </ej:CircularIndicators>
 
-</IndicatorCollection>
+        </IndicatorCollection>
 
-</ej:CircularScales>
+        </ej:CircularScales>
 
-</Scales>
+        </Scales>
 
-</ej:CircularGauge>
+        </ej:CircularGauge>
 
-{% endhighlight %}
+  ~~~
+  {:.pretty-print }
 
 Execute the above code to render the following output.
 
@@ -111,44 +112,45 @@ Execute the above code to render the following output.
 * The backgroundColor and borderColor sets the appearance behavior for the indicators. For text type indicators you can give value for text. And text can be changed whenever the pointer crosses its state range area. There are many basic font options available for the text in the state range such as size, fontStyle and fontFamily.
 
 
-{% highlight html %}
+  ~~~ html
 
 
-<%--For Circular Gauge rendering-- %>
+        <%--For Circular Gauge rendering-- %>
 
-<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
+        <ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-<Scales>
+        <Scales>
 
-<ej:CircularScales Showindicators="true" backgroundColor="#5DF243" ShowscaleBar="true"  Size="5" radius="150" MinorIntervalValue="5" >
+        <ej:CircularScales Showindicators="true" backgroundColor="#5DF243" ShowscaleBar="true"  Size="5" radius="150" MinorIntervalValue="5" >
 
-<Border Width="1.5" Color="black" />
+        <Border Width="1.5" Color="black" />
 
-<PointerCollection>
+        <PointerCollection>
 
-<ej:Pointers BackgroundColor="#5DF243" length="110"></ej:Pointers>
+        <ej:Pointers BackgroundColor="#5DF243" length="110"></ej:Pointers>
 
-</PointerCollection>
+        </PointerCollection>
 
-<IndicatorCollection>
+        <IndicatorCollection>
 
-<ej:CircularIndicators Height="10" width="10" Type="Circle" >
+        <ej:CircularIndicators Height="10" width="10" Type="Circle" >
 
-<Position X="185" Y="300" />
+        <Position X="185" Y="300" />
 
-<StateRangeCollection> <ej: CircularStateRanges EndValue="100" startValue="0" text="" TextColor="#870505" BackgroundColor="#5DF243" BorderColor="black"></ej: CircularStateRanges></StateRangeCollection><%--For setting state range end value, start value, text, text color, background color and bordercolor-- %>
+        <StateRangeCollection> <ej: CircularStateRanges EndValue="100" startValue="0" text="" TextColor="#870505" BackgroundColor="#5DF243" BorderColor="black"></ej: CircularStateRanges></StateRangeCollection><%--For setting state range end value, start value, text, text color, background color and bordercolor-- %>
 
-</ej:CircularIndicators>
+        </ej:CircularIndicators>
 
-</IndicatorCollection>
+        </IndicatorCollection>
 
-</ej:CircularScales>
+        </ej:CircularScales>
 
-</Scales>
+        </Scales>
 
-</ej:CircularGauge>
+        </ej:CircularGauge>
 
-{% endhighlight %}
+  ~~~
+  {:.pretty-print }
 
 Execute the above code to render the following output.
 
@@ -231,5 +233,5 @@ Execute the above code to render the following output.
 
 
 
-Figure 41: Circular Gauge with multiple indicators
+
 

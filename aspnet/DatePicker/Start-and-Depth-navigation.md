@@ -16,8 +16,8 @@ It specifies the Start Level view in the DatePicker calendar. By default, StartL
 <table>
 <tr>
 <td>
-Name </td><td>
-Description</td></tr>
+{{ '**Name**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 Month</td><td>
@@ -58,7 +58,7 @@ In the ASPX page, include the following DatePicker control code example to speci
 The following screenshot displays the output for the above code.
 
 ![](Start-and-Depth-navigation_images/Start-and-Depth-navigation_img1.png) 
-{:.image }
+
 
 
 ## Depth Level
@@ -70,8 +70,8 @@ It accepts the following values.
 <table>
 <tr>
 <td>
-Value</td><td>
-Description</td></tr>
+{{ '**Value**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 Month</td><td>
@@ -112,6 +112,6 @@ In the ASPX page, include the following DatePicker control code example to speci
 The following screenshot displays the output for the above code.
 
 ![](Start-and-Depth-navigation_images/Start-and-Depth-navigation_img2.png)
-{:.image }
+
 
 

@@ -61,9 +61,6 @@ The following screenshot illustrates the Week Schedule in Gantt control.
 
 
 
-
-_Figure41: Week Schedule in Gantt control_
-
 ## Month Schedule Mode
 
 In the Week schedule mode, the upper part of the schedule header displays the Months whereas the bottom header of the schedule displays its corresponding Weeks. Refer the following code example.

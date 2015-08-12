@@ -14,7 +14,7 @@ The EssentialDiagramASP.NET creates rich Visio-like applications. Its framework 
 
 
  ![](Overview_images/Overview_img1.png) 
-{:.image }
+
 
 
 The list of features of the Diagram control in ASP.NET are as follows.

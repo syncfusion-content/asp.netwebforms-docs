@@ -15,7 +15,7 @@ Localization is the key feature that provides solutions to global customers with
 
 The following UIs are provided to localize based on culture. The default English Localization UIs are listed as follows:
 
-_Table1: Localization_
+_Localization_
 
 <table>
 <tr>
@@ -27,7 +27,25 @@ Empty Record</td><td>
 emptyRecord: "No records to display"</td></tr>
 <tr>
 <td>
-Column Header Texts:taskIdtaskNamestartDateendDateresourceInfodurationstatuspredecessorbaselineStartDatebaselineEndDate</td><td>
+Column Header Texts:
+
+taskId
+
+taskName
+
+startDate
+
+endDate
+
+resourceInfo
+
+durationstatus
+
+predecessor
+
+baselineStartDate
+
+baselineEndDate</td><td>
 columnHeaderTexts: {    taskId: "ID",    taskName: "Task Name",    startDate: "Start Date",    endDate: "End Date",    resourceInfo: "Resources",    duration: "Duration",    status: "Progress",    predecessor: "Predecessor",    baselineStartDate: "Baseline Start Date",    baselineEndDate: "Baseline End Date"}</td></tr>
 <tr>
 <td>

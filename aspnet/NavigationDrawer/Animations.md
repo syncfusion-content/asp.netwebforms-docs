@@ -14,7 +14,7 @@ You can set the transition type of the Navigation Drawer by using type property.
 * Slide - both navigation panel and content page slides towards left/right direction to view the navigation panel items.
 * Overlay - Only the navigation panel slides over the content page to view the navigation panel items. That is, part of the content page is hidden under navigation panel.
 
-_Note:_ _Transition slide type works only with fixed position._
+Note:Transition slide type works only with fixed position.
 
 The default value is Overlay.
 
@@ -61,10 +61,10 @@ The default value is Overlay.
 The following screenshot illustrates the output.
 
 ![](Animations_images/Animations_img2.png) 
-{:.image }
+
 
 
 ![](Animations_images/Animations_img3.png) 
-{:.image }
+
 
 

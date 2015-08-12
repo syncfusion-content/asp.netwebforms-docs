@@ -22,19 +22,13 @@ You can create a Grid with a highly customizable look and feel. You can use Gr
 
 
 1. Create a Syncfusion ASP.NET Web form application.
-2.  Add a Grid in the Index.aspx page. 
+2.  Add a Grid in the Index.aspx page. 
 
-
-
-![](Getting-Started_images/Getting-Started_img2.png)
-
-
+   ![](Getting-Started_images/Getting-Started_img2.png)
 
 3. Configure the Grid control with SQL data source using smart tag.
 
-
-
-![](Getting-Started_images/Getting-Started_img3.png)
+   ![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -56,7 +50,7 @@ You can create a Grid with a highly customizable look and feel. You can use Gr
 {% endhighlight %}
 
 
-> Note: Create a connection string in Web.config file using SQL database.
+   Note: Create a connection string in Web.config file using SQL database.
 
 {% highlight html %}
 
@@ -83,13 +77,11 @@ You can create a Grid with a highly customizable look and feel. You can use Gr
 
 {% endhighlight %}
 
-For more information about SQL data source configuration refer the following link: [http://msdn.microsoft.com/en-us/library/vstudio/w1kdt8w2(v=vs.100).aspx](http://msdn.microsoft.com/en-us/library/vstudio/w1kdt8w2(v=vs.100).aspx)
+   For more information about SQL data source configuration refer the following link: [http://msdn.microsoft.com/en-us/library/vstudio/w1kdt8w2(v=vs.100).aspx](http://msdn.microsoft.com/en-us/library/vstudio/w1kdt8w2(v=vs.100).aspx)
 
 4. By Columns definition, the TextAlign property allows you to align the text of the columns. The Width property is used to define the width of the columns and the Format property allows you to format the particular column’s value.
 
-
-
-![](Getting-Started_images/Getting-Started_img5.png) 
+   ![](Getting-Started_images/Getting-Started_img5.png) 
 
 
 

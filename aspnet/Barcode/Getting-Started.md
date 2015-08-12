@@ -14,7 +14,6 @@ This section explains you briefly on how to create a Barcode in your application
 ## Control Structure
 
 ![Description: C:/Users/labuser/Desktop/barcode.png](Getting-Started_images/Getting-Started_img1.png) 
-{:.image }
 
 
 ## Create your first Barcode in ASP.NET
@@ -26,7 +25,6 @@ The following guideline explains you on how to create a QR barcode for a real ti
 
 
 ![](Getting-Started_images/Getting-Started_img2.png) 
-{:.image }
 
 
 By default, ASP.NET Barcode renders gray scale colors with predefined Quiet zone. Quiet zone is the blank margin on the side(s) that denotes the start and stop of the Barcode. It also provides you flexible API’s to customize the appearance of the Barcode. 
@@ -51,9 +49,10 @@ Web.config file is configured according to the referenced assemblies. The steps 
 
 * On the Solution Explorer, double-click the Web.config file in the root folder. The Web.config page appears.
 * Add the following assemblies in the Web.config page under the &lt;compilation&gt; tag:
-* Syncfusion.Core
-* Syncfusion.EJ
-* Syncfusion.EJ.Web
+
+  * Syncfusion.Core
+  * Syncfusion.EJ
+  * Syncfusion.EJ.Web
 
 
 
@@ -88,14 +87,15 @@ Web.config file is configured according to the referenced assemblies. The steps 
 
 
 
-_Note: X.X.X.X in the above code corresponds to the correct version number of the Essential Studio version that you are currently using._
+Note: X.X.X.X in the above code corresponds to the correct version number of the Essential Studio version that you are currently using._
 
 
 
 * Add the following namespaces under the &lt;namespaces&gt; tag.
-* Syncfusion.JavaScript
-* Syncfusion.JavaScript.Web
-* Syncfusion.JavaScript.DataVisualization
+
+  * Syncfusion.JavaScript
+  * Syncfusion.JavaScript.Web
+  * Syncfusion.JavaScript.DataVisualization
 
 
 
@@ -160,8 +160,6 @@ _Note: X.X.X.X in the above code corresponds to the correct version number of th
 
 
 ![](Getting-Started_images/Getting-Started_img4.png) 
-{:.image }
-
 
 The following symbols are supported by Barcode control.
 

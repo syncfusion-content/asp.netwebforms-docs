@@ -18,57 +18,58 @@ documentation: ug
 * ShowLabelTooltip is to enable the Tooltip for labels and showCustomLabelTooltip is for enabling the Tooltip option for customLabels.
 
 
-{% highlight html %}
+  ~~~ html
 
-<ej:circulargauge runat=”server” id=”circularGaugeTooltip” backgroundcolor=”transparent” enableAnimation=”false”>
-
-
-
-<%-- Defines the tooltip object-- %>
-
-<Tooltip ShowCustomLabelTooltip=”true” ShowLabelTooltip=”true” />
+        <ej:circulargauge runat=”server” id=”circularGaugeTooltip” backgroundcolor=”transparent” enableAnimation=”false”>
 
 
 
-<%-- Customizes the scale options-- %>
+        <%-- Defines the tooltip object-- %>
 
-<Scales>
-
-<ej:CircularScales ShowLabels=”true” Radius="130" >
+        <Tooltip ShowCustomLabelTooltip=”true” ShowLabelTooltip=”true” />
 
 
 
-<PointerCollection>
+        <%-- Customizes the scale options-- %>
 
-<ej:Pointers Value=”60” Length=”95” >
+        <Scales>
 
-</ej:Pointers>
-
-</PointerCollection>
+        <ej:CircularScales ShowLabels=”true” Radius="130" >
 
 
 
-<%-- Customizes the custom label options-- %>
+        <PointerCollection>
 
-<CustomLabelCollection>
+        <ej:Pointers Value=”60” Length=”95” >
 
-<ej:CircularCustomLabel Value=”0 9 5 3 4 5”>
+        </ej:Pointers>
 
-<Font FontFamily ="Arial" FontStyle="Bold" Size="20px" />
+        </PointerCollection>
 
-<Position X ="180" Y="200" />
 
-</ej:CircularCustomLabel>
 
-</CustomLabelCollection>
+        <%-- Customizes the custom label options-- %>
 
-</ej:CircularScales>
+        <CustomLabelCollection>
 
-</Scales>
+        <ej:CircularCustomLabel Value=”0 9 5 3 4 5”>
 
-</ej:circulargauge>
+        <Font FontFamily ="Arial" FontStyle="Bold" Size="20px" />
 
-{% endhighlight %}
+        <Position X ="180" Y="200" />
+
+        </ej:CircularCustomLabel>
+
+        </CustomLabelCollection>
+
+        </ej:CircularScales>
+
+        </Scales>
+
+        </ej:circulargauge>
+
+  ~~~
+  {:.pretty-print }
 
 Execute the above code to render the following output.
 

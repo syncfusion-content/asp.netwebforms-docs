@@ -46,7 +46,7 @@ Shortcut Key</td><td>
 Description</td></tr>
 <tr>
 <td>
-{ [Access key](http://en.wikipedia.org/wiki/Access_key) | markdownify } + j	</td><td>
+{{ '[Access key](http://en.wikipedia.org/wiki/Access_key)' | markdownify }} + j	</td><td>
 Focuses into the autocomplete text box</td></tr>
 <tr>
 <td>
@@ -121,7 +121,7 @@ Run the sample, press AccessKey + J to focus in the AutoComplete control, and yo
 
 
 
-Server Side Events
+### Server Side Events
 
 The server side events present in the AutoComplete control are listed as follows.
 

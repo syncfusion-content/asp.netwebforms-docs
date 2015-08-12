@@ -34,7 +34,6 @@ In the ASPX page, add the following button elements to configure Button with tex
 In the above code, the content of button “button” is replaced by the text value “Enter” that is given using the text property.
 
 ![](Miscellaneous_images/Miscellaneous_img1.png)
-{:.image }
 
 
 ## Show Rounded Corner
@@ -60,6 +59,5 @@ ShowRoundedCorner="true">
 
 
 ![](Miscellaneous_images/Miscellaneous_img2.png)
-{:.image }
 
 

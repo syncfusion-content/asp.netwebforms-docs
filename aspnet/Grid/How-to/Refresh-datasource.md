@@ -7,11 +7,11 @@ control: Grid
 documentation: ug
 ---
 
-### Refresh datasource
+## Refresh datasource
 
 Grid allows you to refresh datasource dynamically after Gridinitialization. It is useful to refresh Griddatasource.
 
-
+ {% highlight html %}
 
 [ASP]
 
@@ -69,7 +69,9 @@ $("#Grid").ejGrid("dataSource", newData);
 
 </script>
 
+{% endhighlight %}
 
+ {% highlight c# %}
 
 [cs]
 
@@ -144,20 +146,20 @@ public partial class _Default : System.Web.UI.Page
 }
 
 
-
+{% endhighlight %}
 
 
 The following screenshot displays the Grid data source before refreshing.
 
 
 
-{ ![](Refresh-datasource_images/Refresh-datasource_img1.png) | markdownify }
+ ![](Refresh-datasource_images/Refresh-datasource_img1.png) 
 
 
 
 The following screenshot displays the Grid data source after refreshing.
 
-{ ![](Refresh-datasource_images/Refresh-datasource_img2.png) | markdownify }
+![](Refresh-datasource_images/Refresh-datasource_img2.png) 
 
 
 

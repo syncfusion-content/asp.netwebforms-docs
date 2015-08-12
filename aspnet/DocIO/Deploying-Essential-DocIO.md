@@ -21,7 +21,7 @@ In Full Trust Mode, add references to the following assemblies corresponding to 
 
 
 
-DocIO (Full Trust) – WPF, Windows Forms, ASP. NET, MVC
+#### DocIO (Full Trust) – WPF, Windows Forms, ASP. NET, MVC
 
 * Syncfusion.Core.dll
 * Syncfusion.Compression.Base.dll
@@ -29,7 +29,7 @@ DocIO (Full Trust) – WPF, Windows Forms, ASP. NET, MVC
 
 
 
-DocIO (Full Trust) – Silverlight
+#### DocIO (Full Trust) – Silverlight
 
 * Syncfusion.Core.dll
 * Syncfusion.Compression.Silverlight.dll
@@ -37,7 +37,7 @@ DocIO (Full Trust) – Silverlight
 
 
 
-DocIO (Client Profile) - Windows Forms and WPF
+#### DocIO (Client Profile) - Windows Forms and WPF
 
 * Syncfusion.Core.dll
 * Syncfusion.Compresssion.Base.dll
@@ -45,33 +45,33 @@ DocIO (Client Profile) - Windows Forms and WPF
 
 
 
-DocIO – Windows Store applications
+#### DocIO – Windows Store applications
 
 * Syncfusion.DocIO.winrt.dll
 
 
 
-DocIO – Universal 
+#### DocIO – Universal 
 
 * Syncfusion.DocIO.Universal.dll
 
 
 
-DocIO – Windows Phone 8 applications
+#### DocIO – Windows Phone 8 applications
 
 * Syncfusion.Compresssion.WP8.dll
 * Syncfusion.DocIO.WP8.dll
 
 
 
-DocIO – Windows Phone 8.1 Silverlight
+#### DocIO – Windows Phone 8.1 Silverlight
 
 * Syncfusion.DocIO.WPSilverlight.dll
 * Syncfusion.Compression.WPSilverlight.dll
 
 
 
-DocIO – Windows Phone 8.1 WinRT
+#### DocIO – Windows Phone 8.1 WinRT
 
 * Syncfusion.DocIO.WP.dll
 
@@ -83,7 +83,7 @@ In Medium or Partial Trust Mode, add references to the following assemblies corr
 
 
 
-ASP.NET – DocIO (Partial Trust) – Web
+#### ASP.NET – DocIO (Partial Trust) – Web
 
 * Syncfusion.Core.dll
 * Syncfusion.Compression.Base.dll
@@ -91,7 +91,7 @@ ASP.NET – DocIO (Partial Trust) – Web
 
 
 
-ASP.NET MVC – DocIO (Partial Trust) – MVC
+#### ASP.NET MVC – DocIO (Partial Trust) – MVC
 
 * Syncfusion.Core.dll
 * Syncfusion.Compression.Base.dll

@@ -25,6 +25,6 @@ In the ASPX page, include the following Captcha control code example with minimu
 The following screenshot illustrates the Captcha with Minimum and Maximum length support. 
 
 ![](Maximum-and-Minimum-length_images/Maximum-and-Minimum-length_img1.png)
-{:.image }
+
 
 

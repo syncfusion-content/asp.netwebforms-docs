@@ -42,7 +42,7 @@ Run the above code to render the following output.
 
 
 ![](Easy-customization_images/Easy-customization_img1.png)
-{:.image }
+
 
 
 ## Enable Tri-State
@@ -74,7 +74,7 @@ In the ASPX page, add the following input elements to configure Checkbox.
 Run the above code to render the following output.
 
 ![](Easy-customization_images/Easy-customization_img2.png)
-{:.image }
+
 
 
 ## Check State
@@ -126,7 +126,7 @@ In the ASPX page, add the following input elements to configure Checkbox.
 Run the above code to render the following output.
 
 ![](Easy-customization_images/Easy-customization_img3.png)
-{:.image }
+
 
 
 ## Checkbox Size
@@ -135,11 +135,11 @@ You can render Checkbox in different sizes. The following table contains some pr
 
 <table>
 	<tr>
-		<td>Small</td>
+		<td>{{ '**Small**' | markdownify }}</td>
 		<td>Creates Checkbox with in-built small size height, width specified.</td>
 	</tr>
 	<tr>
-		<td>Medium</td>
+		<td>{{ '**Medium**' | markdownify }}</td>
 		<td>Creates Checkbox with in-built medium size height, width specified.</td>
 	</tr>
 </table>
@@ -167,7 +167,7 @@ Run the above code to render the following output.
 
 
 ![](Easy-customization_images/Easy-customization_img4.png)
-{:.image }
+
 
 
 ## Text
@@ -191,7 +191,7 @@ In the ASPX page, add the following input elements to configure Checkbox.
 Run the above code to render the following output.
 
 ![](Easy-customization_images/Easy-customization_img5.png)
-{:.image }
+
 
 
 ## Rounded corner for checkbox
@@ -218,6 +218,6 @@ In the ASPX page, add the following input elements to configure Checkbox.
 Run the above code to render the following output.
 
 ![](Easy-customization_images/Easy-customization_img6.png)
-{:.image }
+
 
 

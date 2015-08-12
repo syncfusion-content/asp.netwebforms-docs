@@ -17,31 +17,31 @@ The opacityof the character is adjustable with the help of opacity property. The
 
 {% highlight html %}
 
-&lt;ej:DigitalGauge runat="server" ID="DigitalGauge1" Width="800"&gt;
+<ej:DigitalGauge runat="server" ID="DigitalGauge1" Width="800">
 
 
 
-&lt;Items&gt;
+<Items>
 
 
 
-&lt;ej:DigitalGaugeItems Value="Syncfusion"&gt;
+<ej:DigitalGaugeItems Value="Syncfusion">
 
-&lt;%-- Adding Basic character properties --%&gt;
+<%-- Adding Basic character properties --%>
 
-&lt;CharacterSettings Opacity="0.3" Spacing="3" /&gt;
-
-
-
-&lt;/ej:DigitalGaugeItems&gt;
+<CharacterSettings Opacity="0.3" Spacing="3" />
 
 
 
-&lt;/Items&gt;
+</ej:DigitalGaugeItems>
 
 
 
-&lt;/ej:DigitalGauge&gt;
+</Items>
+
+
+
+</ej:DigitalGauge>
 
 {% endhighlight %}
 
@@ -50,7 +50,7 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 
 ![](Character-Settings_images/Character-Settings_img1.png)
-{:.image }
+
 
 
 
@@ -58,54 +58,60 @@ Execute the above code examples to render the DigitalGauge as follows.
 ## Count and Type
 
 * The number of text to be displayed can be limited by the attribute called count. In Digital Gauge five different types of characters are supported. They are as follows, 
-1. EightCrossEightDotMatrix
-2. SevenSegment
-3. FourteenSegment
-4. SixteenSegment 
-5. EightCrossEightSquareMatrix.
+  
+  1. EightCrossEightDotMatrix
+  
+  2. SevenSegment
+  
+  3. FourteenSegment
+  
+  4. SixteenSegment 
+  
+  5. EightCrossEightSquareMatrix.
 
 
 
-{% highlight html %}
+     ~~~ html
 
-&lt;ej:DigitalGauge runat="server" ID="DigitalGauge1" Width="800"&gt;
-
-
-
-&lt;Items&gt;
+            <ej:DigitalGauge runat="server" ID="DigitalGauge1" Width="800">
 
 
 
-&lt;ej:DigitalGaugeItems Value="123456789"&gt;
-
-&lt;%-- Adding character count and type --%&gt;
-
-&lt;CharacterSettings Count="10" Type="SevenSegment" Spacing="10" /&gt;
+            <Items>
 
 
 
-&lt;SegmentSettings Length="8" Width="1"/&gt;
+            <ej:DigitalGaugeItems Value="123456789">
+
+            <%-- Adding character count and type --%>
+
+            <CharacterSettings Count="10" Type="SevenSegment" Spacing="10" />
 
 
 
-&lt;/ej:DigitalGaugeItems&gt;
+            <SegmentSettings Length="8" Width="1"/>
 
 
 
-&lt;/Items&gt;
+            </ej:DigitalGaugeItems>
 
 
 
-&lt;/ej:DigitalGauge&gt;
+            </Items>
 
-{% endhighlight %}
+
+
+            </ej:DigitalGauge>
+
+     ~~~
+     {:.pretty-print }
 
 Execute the above code examples to render the DigitalGauge as follows.
 
 
 
 ![](Character-Settings_images/Character-Settings_img2.png)
-{:.image }
+
 
 
 
@@ -118,43 +124,43 @@ The text in the DigitalGauge is positioned with position object. This object con
 
 {% highlight html %}
 
-&lt;ej:DigitalGauge runat="server" ID="DigitalGauge1" Width="800" Height="300"&gt;
+<ej:DigitalGauge runat="server" ID="DigitalGauge1" Width="800" Height="300">
 
-&lt;%-- Adding frame background image --%&gt;
+<%-- Adding frame background image --%>
 
-&lt;Frame BackgroundImageUrl="../Content/images/gauge/Board1.jpg"/&gt;
-
-
-
-&lt;Items&gt;
+<Frame BackgroundImageUrl="../Content/images/gauge/Board1.jpg"/>
 
 
 
-&lt;ej:DigitalGaugeItems Value="YELLOW"&gt;
+<Items>
 
 
 
-&lt;%-- Adding gauge position --%&gt;
+<ej:DigitalGaugeItems Value="YELLOW">
 
 
 
-&lt;Position X="80" Y="10"/&gt;
+<%-- Adding gauge position --%>
 
 
 
-&lt;SegmentSettings Color="Yellow"/&gt;
+<Position X="80" Y="10"/>
 
 
 
-&lt;/ej:DigitalGaugeItems&gt;
+<SegmentSettings Color="Yellow"/>
 
 
 
-&lt;/Items&gt;
+</ej:DigitalGaugeItems>
 
 
 
-&lt;/ej:DigitalGauge&gt;
+</Items>
+
+
+
+</ej:DigitalGauge>
 
 {% endhighlight %}
 
@@ -163,7 +169,7 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 
 ![](Character-Settings_images/Character-Settings_img3.png)
-{:.image }
+
 
 
 
@@ -176,15 +182,15 @@ The text in the Digital Gauge is positioned with position object. This object co
 
 {% highlight html %}
 
-&lt;ej:DigitalGauge runat="server" ID="DigitalGauge1" Width="800"&gt;
+<ej:DigitalGauge runat="server" ID="DigitalGauge1" Width="800">
 
 
 
-&lt;Items&gt;
+<Items>
 
 
 
-&lt;%-- Adding shadow effects --%&gt;
+<%-- Adding shadow effects --%>
 
 
 
@@ -196,19 +202,19 @@ ShadowBlur="20" ShadowOffsetX="15" ShadowOffsetY="15">
 
 
 
-&lt;SegmentSettings Length="3" Width="3"/&gt;
+<SegmentSettings Length="3" Width="3"/>
 
 
 
-&lt;/ej:DigitalGaugeItems&gt;
+</ej:DigitalGaugeItems>
 
 
 
-&lt;/Items&gt;
+</Items>
 
 
 
-&lt;/ej:DigitalGauge&gt;
+</ej:DigitalGauge>
 
 {% endhighlight %}
 
@@ -217,7 +223,7 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 
 ![](Character-Settings_images/Character-Settings_img4.png)
-{:.image }
+
 
 
 

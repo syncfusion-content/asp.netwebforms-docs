@@ -27,8 +27,9 @@ Data\OfflineCube\Adventure_Works_Ext.cub; Provider = MSOLAP;";
 
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 
-### Binding OLAP Chart to the SQL Server (Local)
 {% endhighlight %}
+
+### Binding OLAP Chart to the SQL Server (Local)
 
 The following code illustrates how to connect to a local Cube in SQL Server:
 

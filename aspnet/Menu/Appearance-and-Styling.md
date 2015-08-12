@@ -28,7 +28,9 @@ Essential Studio ASP.NET controls feature 13 built-in themes, six flat and gradi
 * gradient-saffron
 * gradient-saffron-dark
 * bootstrap-theme
-### CssClass
+
+
+## CssClass
 
 
 Menu control also customizes its appearance by using user-defined CSS and custom skin options (colors and backgrounds). To apply custom themes, “CssClass” property is used. “CssClass” property sets the root class for Menu control theme.
@@ -188,7 +190,7 @@ Add the following code in your style section.
 Following screenshot displays the output of the above code example.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
-{:.image }
+
 
 
 ## Background Template
@@ -534,6 +536,6 @@ Add the following code example in your style section
 Execute the above code example to render the following output.                       
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
-{:.image }
+
 
 

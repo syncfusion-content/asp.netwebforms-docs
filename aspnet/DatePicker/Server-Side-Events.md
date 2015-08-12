@@ -14,9 +14,9 @@ The following are the server side events available in the DatePicker control.
 <table>
 <tr>
 <td>
-Event</td><td>
-Event Description</td><td>
-Event Description</td></tr>
+{{ '**Event**' | markdownify }}</td><td>
+{{ '**Event Description**' | markdownify }}</td><td>
+{{ '**Event Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 OnValueSelect</td><td>

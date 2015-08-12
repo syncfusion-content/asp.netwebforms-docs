@@ -140,6 +140,6 @@ Add the following code example in your ASPX page.
 The following screenshot displays the output for the above code example. 
 
 ![](Responsive-Layout_images/Responsive-Layout_img1.png) 
-{:.image }
+
 
 

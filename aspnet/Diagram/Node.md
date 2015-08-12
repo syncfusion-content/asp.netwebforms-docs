@@ -14,7 +14,7 @@ Nodes are graphical object that represent visual data to be placed on the page.
 
 
  ![C:/Users/labuser/Desktop/a.png](Node_images/Node_img1.png) 
-{:.image }
+
 
 
 ## Create Node
@@ -50,7 +50,7 @@ model.Nodes.Add(node);
 
 
  ![](Node_images/Node_img2.png) 
-{:.image }
+
 
 
 List of preloaded nodes from symbol palette are added to the Diagram by clicking the palette nodes or by dragging a node and dropping on the Diagram. The method to add node/connector to palette and drag and drop on Diagram is explained in palette section
@@ -67,7 +67,7 @@ The Diagram has a collection of predefined shapes. The shape to be drawn can be 
 * Path (A type of basic shape)
 * Polygon (A type of basic shape)
 
-Rectangle
+### Rectangle
 
 You can create a rectangle with the help of BasicShape and by setting node’s shape as BasicShapes.Rectangle. The following code illustrates how a rectangle node is created.
 
@@ -104,10 +104,10 @@ node.Shape = BasicShapes.Ellipse;
 
 
  ![](Node_images/Node_img3.png) 
-{:.image }
 
 
-Html
+
+### Html
 
 Html elements are embedded in the Diagram through CustomNodenode. The following code illustrates how a Html node is created.
 
@@ -158,10 +158,10 @@ node.Value="button";
 
 
 ![](Node_images/Node_img4.png) 
-{:.image }
 
 
-Text Node
+
+### Text Node
 
 You can add Text to the Diagram by using Textshapenode. The text shape has Textblock that contains text, font style and align properties .The following code illustrates how to create a Text node.
 
@@ -188,10 +188,10 @@ node.TextBlock = block;
 
 
  ![](Node_images/Node_img5.png) 
-{:.image }
 
 
-Path
+
+### Path
 
 You can create complex shapes by using Pathshapenode. It is achieved by assigning path string to shape’s PathData. The following code illustrates how a Pathnode is created.
 
@@ -214,10 +214,10 @@ node.PathData = "M 67.2947 100 L 67.2947 0.00102291 L 59.138 0.00102291 M 100 50
 
 
  ![C:/Users/labuser/Desktop/a.png](Node_images/Node_img6.png) 
-{:.image }
 
 
-Polygon
+
+### Polygon
 
 You can create Polygon by setting BasicShape node’s type as BasicShapes.Polygon and assigning the desired points to the node’s Point property.
 
@@ -266,10 +266,10 @@ node.Points = points;
 
 
 ![](Node_images/Node_img7.png) 
-{:.image }
 
 
-Native 
+
+### Native 
 
 Diagram supports adding SVG content as shape content. It is achieved by creating node by using CustomNode and assigning the template ID to the TemplateId property. The TemplateId property receives id svg template. The following code illustrates how a Native node is created.
 
@@ -326,15 +326,15 @@ node.Text="Mail";
 
 
 ![](Node_images/Node_img8.png) 
-{:.image }
 
 
 
-_Note:_ 
 
-> _Shapes of type Node or HTML cannot be exported to an image format, like JPEG, PNG and BMP. It is by design that while exporting, Diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas from all possible HTML and SVG elements is not feasible. So, this limitation._ 
+Note:
 
-> _Note that fill color is applied to the Native Node only when its inline style or fill for an SVG child element is not specified. In the following example, the node’s fill color is overridden by the specified color for the group._
+Shapes of type Node or HTML cannot be exported to an image format, like JPEG, PNG and BMP. It is by design that while exporting, Diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas from all possible HTML and SVG elements is not feasible. So, this limitation._ 
+
+Note that fill color is applied to the Native Node only when its inline style or fill for an SVG child element is not specified. In the following example, the node’s fill color is overridden by the specified color for the group._
 
 
 {% highlight html %}
@@ -350,7 +350,7 @@ _Note:_
 
 {% endhighlight %}
 
-Image
+### Image
 
 You can add Image as a node to the Diagram by creating node by using ImageNode and setting the image URL to Source property of shape. The following code illustrates how an Image node is created.
 
@@ -372,7 +372,7 @@ node.Source = "sample/Syncfusion.PNG";
 
 
  ![](Node_images/Node_img10.png) 
-{:.image }
+
 
 
 ## Shadow
@@ -380,7 +380,7 @@ node.Source = "sample/Syncfusion.PNG";
 Dropshadoweffect for a node can be enabled or disabled by using the NodeConstraints.Shadow. The following image represents the drop shadow effect for a Node.
 
 ![](Node_images/Node_img11.png) 
-{:.image }
+
 
 
 {% highlight c# %}
@@ -426,21 +426,20 @@ node.Shadow.Angle = 50;
 
 
 ![](Node_images/Node_img12.png) 
-{:.image }
+
 
 
 ## Appearance
 
 You can customize the appearance of the shapes by using node customization properties.
 
-_Appearance_
 
 <table>
 <tr>
 <td>
-Properties</td><td>
-Data Type</td><td>
-Description</td></tr>
+{{ '**Properties**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 Visible</td><td>
@@ -534,7 +533,7 @@ node.LinearGradient = gradient;
 
 
 ![](Node_images/Node_img13.png) 
-{:.image }
+
 
 
 ## Constraints
@@ -543,13 +542,12 @@ NodeConstraints
 
 You can enable or disable certain behaviors of Nodes by using Node’s constraints property.
 
-_Constraints_
 
 <table>
 <tr>
 <td>
-Constraints</td><td>
-Description</td></tr>
+{{ '**Constraints**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 Select</td><td>
@@ -648,7 +646,7 @@ node.Constraints = NodeConstraints.Select| NodeConstraints.Rotate;
 {% endhighlight %}
 
  ![http://help.syncfusion.com/ug/js/ImagesExt/image59_17.jpg](Node_images/Node_img14.jpeg) 
-{:.image }
+
 
 
 The following code illustrates how to disable rotate constraints. Disabling rotate constraint does not allow you to rotate the node.
@@ -670,8 +668,8 @@ node.Constraints = node.Constraints &~ NodeConstraints.Rotate;
 
 
  ![http://help.syncfusion.com/ug/js/ImagesExt/image59_18.jpg](Node_images/Node_img15.jpeg) 
-{:.image }
 
 
-_Note: Node’s constraints property is manipulated by using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations.
+
+Note: Node’s constraints property is manipulated by using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations.
 

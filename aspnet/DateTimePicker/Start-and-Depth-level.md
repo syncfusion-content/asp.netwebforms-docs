@@ -16,9 +16,9 @@ DateTimePicker allows you to change the starting level view of Calendar inside t
 <table>
 <tr>
 <td>
-Start Level</td><td>
-Syntax</td><td>
-Description</td></tr>
+{{ '**Start Level**' | markdownify }}</td><td>
+{{ '**Syntax**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 Month</td><td>
@@ -63,7 +63,7 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 
 ![](Start-and-Depth-level_images/Start-and-Depth-level_img1.png) 
-{:.image }
+
 
 
 
@@ -93,7 +93,7 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 
 ![](Start-and-Depth-level_images/Start-and-Depth-level_img2.png) 
-{:.image }
+
 
 
 

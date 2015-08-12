@@ -90,6 +90,6 @@ $(function () {
 
 
 ![](Knockout-Binding_images/Knockout-Binding_img1.png) 
-{:.image }
+
 
 

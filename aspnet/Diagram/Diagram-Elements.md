@@ -17,9 +17,7 @@ documentation: ug
 * Selector: Visual element that is used to represent the selected items.
 * Layout: Arranges nodes in a tree-like structure based on relationship between the Nodes.
 
+  ![C:/Users/labuser/Desktop/a.png](Diagram-Elements_images/Diagram-Elements_img1.png) 
 
-
-![C:/Users/labuser/Desktop/a.png](Diagram-Elements_images/Diagram-Elements_img1.png) 
-{:.image }
 
 

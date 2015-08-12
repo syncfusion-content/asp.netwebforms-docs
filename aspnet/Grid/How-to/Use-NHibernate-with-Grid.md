@@ -7,20 +7,20 @@ control: Grid
 documentation: ug
 ---
 
-### Use NHibernate with Grid
+## Use NHibernate with Grid
 
-NHibernate
+### NHibernate
 
 NHibernate is an object-relational mapping (ORM) solution for the Microsoft .NET platform. It provides a framework for mapping an object-oriented domain model to a traditional relational database.
 
-Populate Grid with data by using NHibernate
+### Populate Grid with data by using NHibernate
 
 You can populate the Grid with data obtained by using NHibernate. The UrlAdaptor can be used for data binding and to handle the request and response from the server. You can use the CRUD URL mappers (InsertUrl/UpdateUrl/RemoveUrl/CrudUrl) to provide the action/method to be called while editing.
 
 The Grid initialization is as follows.
 
 
-
+ {% highlight html %}
 
 
 [ASP]
@@ -51,6 +51,10 @@ The Grid initialization is as follows.
 
 </ej:Grid>
 
+ {% endhighlight %}
+
+
+ {% highlight c# %}
 
 
 [CS]
@@ -212,12 +216,12 @@ public class DTO
  }
 
 
-
+ {% endhighlight %}
 
 
 The SessionFactory used by the application is as follows.
 
-
+{% highlight c# %}
 
 public static class AppSession
 
@@ -245,11 +249,10 @@ public static class AppSession
 
     }
 
+ {% endhighlight %}
 
 
-> { ![C:/Users/ApoorvahR/Desktop/Note.png](Use-NHibernate-with-Grid_images/Use-NHibernate-with-Grid_img1.png) | markdownify }
-
-_Note: In the above code example, the ORM mapping is performed by using the xml-documents and the mapping files are Employee.cfg.xml and EmployeeMap.hbm.xml_
+Note: In the above code example, the ORM mapping is performed by using the xml-documents and the mapping files are Employee.cfg.xml and EmployeeMap.hbm.xml
 
 
 

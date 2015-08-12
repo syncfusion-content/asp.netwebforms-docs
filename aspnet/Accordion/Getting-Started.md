@@ -177,15 +177,15 @@ The following steps describe the creation of Accordion control.
 
 Execute the above code sample to display the Accordion control with simple control list.
 
- ![C:/Users/Rajaveni/Desktop/JS Docs/Accordion/new/simple.PNG](Getting-Started_images/Getting-Started_img1.png)
+![C:/Users/Rajaveni/Desktop/JS Docs/Accordion/new/simple.PNG](Getting-Started_images/Getting-Started_img1.png)
 
 
 
-## Configure Multiple Open
+### Configure Multiple Open
 
 You can open multiple Accordion tabs to view all products at a time. To render this, set the EnableMultipleOpen property of the Accordion control to true.
 
-> Note: EnableMultipleOpen _property is_ _false_ by default. 
+Note: EnableMultipleOpen _property is_ _false_ by default. 
 
 You can also open all the panels during initialization by using the SelectedItems property of the Accordion control. The following code sample illustrates the opening of multiple tabs by passing the tab index values to SelectedItems property.
 
@@ -347,11 +347,11 @@ Accordion control with EnableMultipleOpen property with value as true is illustr
 
 
 
-## Setting Rounded corner
+### Setting Rounded corner
 
 Accordion control by default is renders in a regular rectangle. You can modify the regular rectangles with rounded corners by setting the ShowRoundedCorner property to “True”.
 
-> Note: ShowRoundedCorner _property is False by default.
+Note: ShowRoundedCorner _property is False by default.
 
 {% highlight html %}
 
@@ -511,7 +511,7 @@ The following screenshot illustrates the Accordion control with rounded corners.
 
 
 
-## Customize Icon
+### Customize Icon
 
 You can customize the Header icon by using CustomIcon property. This property is having two features such as Header and SelectedHeader. By default, the classes of Header and SelectedHeader are e-collapse and e-expand respectively.
 

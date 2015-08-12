@@ -139,7 +139,8 @@ Output for Accordion control that expands header on mouseout event is as follows
 
  ![](Header-customization_images/Header-customization_img2.png)
 
-
+## Set selected header
+  
 ## Single selection
 
 BY using SelectedItemIndex property you can modify the expanded panel when the control is rendered. By default SelectedItemIndex is ‘0’ that always activate the first Accordion panel.

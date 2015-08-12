@@ -160,7 +160,7 @@ The following output is the result of the above code example.
 
 
 
-> Note: For information about DataManager with Grid check DataAdaptors concept.
+Note: For information about DataManager with Grid check DataAdaptors concept.
 
 ### Load at once
 
@@ -212,14 +212,6 @@ Load on demand is a powerful technique that is used to reduce bandwidth size of 
 
 {% highlight html %}
 
-
-
-
-
-
-
-
-
 <ej:Grid ID="Grid1" runat="server" AllowPaging="True">
 
 <DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Products" />
@@ -237,7 +229,6 @@ Load on demand is a powerful technique that is used to reduce bandwidth size of 
     </Columns>
 
 </ej:Grid>
-
 
 
 {% endhighlight %}
@@ -261,10 +252,6 @@ If you have developer tools, you can capture network transfer to check Grid cons
 ### Cross domain
 
 Grid can use cross domain data service with the help of DataManager. The given configuration is for configuring in client-side. You must configure the server as well, to retrieve data from server code. For server configuration, you can refer this link ([https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)). The following code example shows you how to use or retrieve cross domain data from Grid.
-
-
-
-
 
 {% highlight html %}
 
@@ -344,7 +331,9 @@ The following screenshot is the result of the above code example.
 ### Supported DataTypes
 
 Grid supports various DataTypes such as string, number, datetime and Boolean. By default, Grid reads DataTypes from Grid data source. Using these data types, Grid uses it at to edit, add, save, filter and other such operations. You can also customize these DataTypes through column property type. It can override default data type reading.
+
 {% highlight html %}
+
 <ej:Grid ID="FlatGrid" runat="server">
 
        <Columns>
@@ -361,9 +350,6 @@ Grid supports various DataTypes such as string, number, datetime and Boolean. By
 
 
 {% endhighlight %}
-
-
-
 
 ## HTML binding
 

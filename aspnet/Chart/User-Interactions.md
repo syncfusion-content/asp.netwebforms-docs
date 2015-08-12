@@ -193,7 +193,7 @@ By default zooming is not enabled. You can enable it using the “Enable” opti
 
 {% endhighlight  %}
 
-### Before zooming:
+#### Before zooming:
 
 
 
@@ -201,7 +201,7 @@ By default zooming is not enabled. You can enable it using the “Enable” opti
 
 
 
-### Selection for zooming:
+#### Selection for zooming:
 
 
 
@@ -209,7 +209,7 @@ By default zooming is not enabled. You can enable it using the “Enable” opti
 
 
 
-### After zooming:
+#### After zooming:
 
 
 

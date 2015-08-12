@@ -18,7 +18,6 @@ Essential JavaScript Button helps to display a Button widget within a webpage an
 The following screenshot illustrates the functionality of a Button control in Media Player and Office Ribbon Application.
 
 ![](Getting-Started_images/Getting-Started_img1.png)
-{:.image }
 
 
 ## Create Button control
@@ -176,7 +175,6 @@ Add the following styles to show the Button control in the center of a webpage
 
 
 ![C:/Users/jeganprakash/Desktop/Documentation/Images/Button/1.PNG](Getting-Started_images/Getting-Started_img2.png)
-{:.image }
 
 
 ## Create Office Ribbon Control
@@ -337,12 +335,10 @@ Add Function Definition from click event to Button function. 
 <tr>
 <td>
 {{ '![C:/Users/jeganprakash/Desktop/Documentation/Images/Button/3.PNG](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
 </td></tr>
 <tr>
 <td>
 {{ '![http://help.syncfusion.com/ug/js/ImagesExt/image47_11.png](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
 </td></tr>
 </table>
 

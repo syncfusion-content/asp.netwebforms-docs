@@ -14,10 +14,10 @@ documentation: ug
 The ASP.NET Menu supports you to display a Menu of list-out items. This Menu is based on UL-LI hierarchy, where the sub-list items can be rendered as the sub-menu items. You can also render the Menu control with local and remote data source.  From the following guideline, you can learn how to customize the Menu control for a website. In this case, Syncfusion’s website Menu is used to explain this topic. The following screenshot displays the appearance of Menu.
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
-{:.image }
 
 
-Create a Menu
+
+### Create a Menu
 
 You can create an ASP Project and add necessary Dll and script with the help of the given [ASP-Getting Started](http://help.syncfusion.com/ug/js/Documents/aspnet.htm) Documentation. Add the following code to the corresponding ASPX page for Menu rendering.
 
@@ -74,10 +74,10 @@ Initialize the Menu control with the following CSS.
 Output of above steps
 
 ![](Getting-Started_images/Getting-Started_img2.png) 
-{:.image }
 
 
-Configure parent Menu items
+
+### Configure parent Menu items
 
 Every Menu contains a list of Menu items with list of sub level Menu items. From the following guide lines, you can learn how to initialize the root level elements of Menu control with MenuItem binding.  Initialize the Menu with MenuItem as illustrated in the following code example. 
 
@@ -130,10 +130,10 @@ Every Menu contains a list of Menu items with list of sub level Menu items. From
 The following screenshot displays the resultant output Menu without sub menu item.
 
 ![](Getting-Started_images/Getting-Started_img3.png) 
-{:.image }
 
 
-Initialize sub-level Menu items
+
+### Initialize sub-level Menu items
 
 Every Menu items can have a list of sub level Menu items. From the following guideline, you can learn how to initialize the sub level items of Menu control. Add MenuItem inside Items to create a sub child.
 
@@ -436,10 +436,10 @@ The following code example describes how to initialize first level sub menu item
 
 
 Execute the above code example to render the following output Menu with sub menu item.{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
-{:.image }
 
 
-Define multiple level Menu items
+
+### Define multiple level Menu items
 
 You can define the sub-menu items to multiple levels in Menu control. Add MenuItem inside Items to render sub level Menu item for the Menu item.
 
@@ -532,7 +532,7 @@ To initialize multiple level sub menu items use the following code example.
 The following screenshot is the resultant output Menu with multiple level sub menu item.
 
 ![](Getting-Started_images/Getting-Started_img5.png) 
-{:.image }
+
 
 
 By following the above mentioned steps, you can render the Menu control with multiple level sub items. You can simply customize the Menu in an efficient manner.

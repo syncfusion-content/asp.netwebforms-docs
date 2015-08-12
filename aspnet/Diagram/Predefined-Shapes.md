@@ -17,7 +17,7 @@ Diagram has several in-built shapes .The in-built shapes are categorized as foll
 2. Flow Shapes
 3. BPMN shapes
 
-Basic Shape
+### Basic Shape
 
 The Basic shapes are common shapes used to represent geometrical information visually.
 
@@ -40,10 +40,10 @@ The following code example illustrates how to create a basic shape.
 The list of basic shapes are as follows.
 
  ![](Predefined-Shapes_images/Predefined-Shapes_img1.png) 
-{:.image }
 
 
-Flow Shape
+
+### Flow Shape
 
 The flow shapes are used to represent the process flow. It is used for analysing, designing, managing or for documentation process. 
 
@@ -66,10 +66,10 @@ node.Shape = FlowShapes.Document;
 The list of flow shapes are as follows.
 
 ![](Predefined-Shapes_images/Predefined-Shapes_img2.png) 
-{:.image }
 
 
-BPMN Shape
+
+### BPMN Shape
 
 BPMN shapes are used to represent internal business procedure in graphical notation and enables you to communicate the procedures in a standard manner.
 
@@ -85,12 +85,12 @@ The BPMN shapesare categorized as follows.
 The shapes are listed as follows.
 
  ![](Predefined-Shapes_images/Predefined-Shapes_img3.png) 
-{:.image }
+
 
 
 The BPMN shapes and its types are explained as follows.
 
-Event 
+#### Event 
 
 An event is represented with a circle and it denote something that happens. Icons within the circle denote the type of event. For example, an envelope representing a message, or a clock representing time. 
 
@@ -117,9 +117,9 @@ _Events_
 <table>
 <tr>
 <td>
-Events </td><td>
-Type</td><td>
-Trigger Result</td></tr>
+{{ '**Events**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Trigger Result**' | markdownify }}</td></tr>
 <tr>
 <td rowspan = "2">
 Start Event</td><td>
@@ -140,109 +140,111 @@ Non-Interrupting</td></tr>
 End Event</td><td>
              -----</td></tr>
 </table>
+
 _Representation of different BPMN events_ 
 
 <table>
 <tr>
 <td>
-Events</td><td>
-Image</td></tr>
+{{ '**Events**' | markdownify }}</td><td>
+{{ '**Image**' | markdownify }}</td></tr>
 <tr>
 <td>
 Start Interrupting</td><td>
 ![](Predefined-Shapes_images/Predefined-Shapes_img4.png)
-{:.image }
+
 </td></tr>
 <tr>
 <td>
 Start Non-Interrupting</td><td>
 ![](Predefined-Shapes_images/Predefined-Shapes_img5.png)
-{:.image }
+
 </td></tr>
 <tr>
 <td>
 Intermediate Interrupting</td><td>
 ![](Predefined-Shapes_images/Predefined-Shapes_img6.png)
-{:.image }
+
 </td></tr>
 <tr>
 <td>
 Intermediate Non-Interrupting</td><td>
 ![](Predefined-Shapes_images/Predefined-Shapes_img7.png)
-{:.image }
+
 </td></tr>
 <tr>
 <td>
 End</td><td>
 ![](Predefined-Shapes_images/Predefined-Shapes_img8.png)
-{:.image }
+
 </td></tr>
 </table>
+
 _Representation of event trigger states_
 
 <table>
 <tr>
 <td>
-Trigger Result</td><td>
-Image</td></tr>
+{{ '**Trigger Result**' | markdownify }}</td><td>
+{{ '**Image**' | markdownify }}</td></tr>
 <tr>
 <td>
  Message</td><td>
 ![](Predefined-Shapes_images/Predefined-Shapes_img9.png)
-{:.image }
+
 </td></tr>
 <tr>
 <td>
 Timer</td><td>
 ![](Predefined-Shapes_images/Predefined-Shapes_img10.png)
-{:.image }
+
 </td></tr>
 <tr>
 <td>
 Escalation</td><td>
 ![](Predefined-Shapes_images/Predefined-Shapes_img11.png)
-{:.image }
+
 </td></tr>
 <tr>
 <td>
 Link </td><td>
 ![](Predefined-Shapes_images/Predefined-Shapes_img12.png)
-{:.image }
+
 </td></tr>
 <tr>
 <td>
 Error</td><td>
 ![](Predefined-Shapes_images/Predefined-Shapes_img13.png)
-{:.image }
+
 </td></tr>
 <tr>
 <td>
 Compensation</td><td>
 ![](Predefined-Shapes_images/Predefined-Shapes_img14.png)
-{:.image }
+
 </td></tr>
 <tr>
 <td>
 Signal</td><td>
 ![](Predefined-Shapes_images/Predefined-Shapes_img15.png)
-{:.image }
+
 </td></tr>
 <tr>
 <td>
 Multiple</td><td>
 ![](Predefined-Shapes_images/Predefined-Shapes_img16.png)
-{:.image }
+
 </td></tr>
 <tr>
 <td>
 Parallel</td><td>
 ![](Predefined-Shapes_images/Predefined-Shapes_img17.png)
-{:.image }
+
 </td></tr>
 </table>
 
 
-Gateway
+#### Gateway
 
 Gateway is used to control the flow of a process. It is represented as a diamond shape.
 
@@ -274,40 +276,41 @@ _Types of Gateway_
 <table>
 <tr>
 <td>
-Gateway Types</td><td>
-Image</td></tr>
+{{ '**Gateway Types**' | markdownify }}</td><td>
+{{ '**Image**' | markdownify }}</td></tr>
 <tr>
 <td>
 Exclusive Gateway</td><td>
 ![](Predefined-Shapes_images/Predefined-Shapes_img18.png)
-{:.image }
+
 </td></tr>
 <tr>
 <td>
 Parallel Gateway</td><td>
 ![](Predefined-Shapes_images/Predefined-Shapes_img19.png)
-{:.image }
+
 </td></tr>
 <tr>
 <td>
 Inclusive Gateway</td><td>
 ![](Predefined-Shapes_images/Predefined-Shapes_img20.png)
-{:.image }
+
 </td></tr>
 <tr>
 <td>
 Complex Gateway</td><td>
 ![](Predefined-Shapes_images/Predefined-Shapes_img21.png)
-{:.image }
+
 </td></tr>
 <tr>
 <td>
 Event Based</td><td>
 ![](Predefined-Shapes_images/Predefined-Shapes_img22.png)
-{:.image }
+
 </td></tr>
 </table>
-Activity
+
+#### Activity
 
 The activity is the task performed in a process. It is represented by rounded rectangle.
 
@@ -321,13 +324,13 @@ _Activity Type_
 <table>
 <tr>
 <td>
-Activity </td><td>
-Loop</td><td>
-Tasks</td><td>
-Compensation</td><td>
-Call</td><td>
-Ad-Hoc</td><td>
-Boundary</td></tr>
+{{ '**Activity**' | markdownify }}</td><td>
+{{ '**Loop**' | markdownify }}</td><td>
+{{ '**Tasks**' | markdownify }}</td><td>
+{{ '**Compensation**' | markdownify }}</td><td>
+{{ '**Call**' | markdownify }}</td><td>
+{{ '**Ad-Hoc**' | markdownify }}</td><td>
+{{ '**Boundary**' | markdownify }}</td></tr>
 <tr>
 <td>
 Task</td><td>
@@ -372,7 +375,7 @@ The different activities in the BPMN shape are listed as follows.
 The task that is internally looped.
 
 ![](Predefined-Shapes_images/Predefined-Shapes_img23.png) 
-{:.image }
+
 
 
 2. Tasks
@@ -380,7 +383,7 @@ The task that is internally looped.
 The task for sending, receiving, user based task, etc…
 
  ![](Predefined-Shapes_images/Predefined-Shapes_img24.png) 
-{:.image }
+
 
 
 3. Compensation
@@ -388,19 +391,19 @@ The task for sending, receiving, user based task, etc…
 Compensation is triggered when operation partially fails.
 
 ![](Predefined-Shapes_images/Predefined-Shapes_img25.png) 
-{:.image }
+
 
 
 4. Call
 
 ![](Predefined-Shapes_images/Predefined-Shapes_img26.png) 
-{:.image }
+
 
 
 5. Ad-Hoc
 
  ![](Predefined-Shapes_images/Predefined-Shapes_img27.png) 
-{:.image }
+
 
 
 6. Boundary
@@ -408,16 +411,16 @@ Compensation is triggered when operation partially fails.
 Boundary represents the type of task that is processed.
 
  ![](Predefined-Shapes_images/Predefined-Shapes_img28.png) 
-{:.image }
 
 
-Data
+
+#### Data
 
 Data object is used to represent the data produced by activities in process.
 
 DataSource is used to read and write data.
 
-DataObject & Datasource
+##### DataObject & Datasource
 
 The following code example illustrates how to create connecting objects in BPMN shape.
 
@@ -442,6 +445,6 @@ node.Shapes = BPMNShapes.DataSource;
 
 
 ![](Predefined-Shapes_images/Predefined-Shapes_img29.png) 
-{:.image }
+
 
 

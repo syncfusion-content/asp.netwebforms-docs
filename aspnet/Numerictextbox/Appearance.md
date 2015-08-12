@@ -82,7 +82,7 @@ Customize the CSS properties in custom CSS class.
 The following screenshot displays the output of the NumericTextbox after applying “CssClass”.
 
 ![C:/Users/giftline.jebamani/Desktop/j.png](Appearance_images/Appearance_img1.png) 
-{:.image }
+
 
 
 ## Rounded Corner Support
@@ -106,7 +106,7 @@ Add the following code example in your ASPX page to render the NumericTextbox co
 The following screenshot displays the output of the NumericTextbox when the “ShowRoundedCorner” is set to “true”.
 
 ![C:/Users/giftline.jebamani/Desktop/k.png](Appearance_images/Appearance_img2.png) 
-{:.image }
+
 
 
 ## Spin Button Support
@@ -134,9 +134,9 @@ Add the following code example in your ASPX page to render the NumericTextbox co
 The following screenshot displays the output of the NumericTextbox when the “ShowSpinButton” is set to “true”.
 
 ![C:/Users/giftline.jebamani/Desktop/l.png](Appearance_images/Appearance_img3.png) 
-{:.image }
+
 ![C:/Users/giftline.jebamani/Desktop/la.png](Appearance_images/Appearance_img4.png) 
-{:.image }
+
 
 
 ## Water Mark Text Support
@@ -160,6 +160,6 @@ Add the following code example in your ASPX page to render the NumericTextbox co
 The following screenshot displays the output of the NumericTextbox after applying “WatermarkText”.
 
 ![C:/Users/giftline.jebamani/Desktop/m.png](Appearance_images/Appearance_img5.png) 
-{:.image }
+
 
 

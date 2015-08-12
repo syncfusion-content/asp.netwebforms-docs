@@ -17,8 +17,8 @@ You can use keyboard shortcut keys as an alternative to the mouse while using 
 <table>
 <tr>
 <th>
-Shortcut Key</th><th>
-Description</th></tr>
+{{ '**Shortcut Key**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 Alt + j               </td><td>

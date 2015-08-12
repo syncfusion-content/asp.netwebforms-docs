@@ -50,6 +50,6 @@ Using this property you can set the drawer to be open from right to left directi
 The following screenshot displays the output by swiping from right to left at the right side end of the screen.
 
 ![](Customize-Direction_images/Customize-Direction_img1.png) 
-{:.image }
+
 
 

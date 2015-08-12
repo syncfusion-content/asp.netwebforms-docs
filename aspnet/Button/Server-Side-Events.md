@@ -14,9 +14,9 @@ The following server side event is available in Button control.
 <table>
 <tr>
 <td>
-Event</td><td>
-Event Description</td><td>
-Argument Details</td></tr>
+{{ '**Event**' | markdownify }}</td><td>
+{{ '**Event Description**' | markdownify }}</td><td>
+{{ '**Argument Details**' | markdownify }}</td></tr>
 <tr>
 <td>
 OnClick</td><td>

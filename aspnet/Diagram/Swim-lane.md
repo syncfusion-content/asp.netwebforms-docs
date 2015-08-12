@@ -12,7 +12,7 @@ documentation: ug
 A swim lane is a visual element used in a process flow diagrams or flowcharts. A typical swim lane contains a header, and a collection of lanes that can be arranged horizontally or vertically.
 
  ![](Swim-lane_images/Swim-lane_img1.png) 
-{:.image }
+
 
 
 Swim lane shape contains the following properties.
@@ -22,9 +22,9 @@ _Swim lane Properties_
 <table>
 <tr>
 <td>
-Property</td><td>
-Data type</td><td>
-Description</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Data type**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 Header</td><td>
@@ -87,9 +87,9 @@ _Lane Properties_
 <table>
 <tr>
 <td>
-Property</td><td>
-Data type</td><td>
-Description</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Data type**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 Header</td><td>
@@ -122,9 +122,9 @@ _Header Properties_
 <table>
 <tr>
 <td>
-Property</td><td>
-Data type</td><td>
-Description</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Data type**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 Width</td><td>
@@ -147,9 +147,9 @@ _Phase Properties_
 <table>
 <tr>
 <td>
-Property</td><td>
-Data type</td><td>
-Description</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Data type**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 Name</td><td>

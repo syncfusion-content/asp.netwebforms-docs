@@ -30,7 +30,7 @@ Add the following code example in your ASPX page to render the NumericTextbox co
 The following screenshot displays the output of the NumericTextbox when the “EnableRTL” is set to “true”. 
 
 ![C:/Users/giftline.jebamani/Desktop/o.png](RTL-Support_images/RTL-Support_img1.png) 
-{:.image }
+
 
 
 

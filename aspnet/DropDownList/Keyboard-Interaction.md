@@ -14,8 +14,8 @@ You can use Keyboard shortcut keys as an alternative to the mouse by using the
 <table>
 <tr>
 <th>
-Shortcut Key</th><th>
-Description</th></tr>
+{{ '**Shortcut Key**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 <a href="http://en.wikipedia.org/wiki/Access_key">Access key</a> + j	</td><td>

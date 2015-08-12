@@ -33,5 +33,4 @@ The following screenshot illustrates the canvas chart
 
 
 
-_Figure25: Canvas Chart_
 

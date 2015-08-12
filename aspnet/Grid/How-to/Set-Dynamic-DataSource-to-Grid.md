@@ -7,13 +7,13 @@ control: Grid
 documentation: ug
 ---
 
-### Set Dynamic DataSource to Grid
+## Set Dynamic DataSource to Grid
 
 Grid control is capable of updating its dataSource as and when required. Grid method “dataSource” helps in achieving this and in this method parameter, you have to pass the new dataSource as json array.
 
 For instance, consider a textbox above Grid and depending on its value, you can update a new datasource to Grid dynamically.
 
-
+ {% highlight html %}
 
 [ASPX]
 
@@ -99,7 +99,9 @@ function btnClick(args) { //updating dataSource in an external button click even
 
 </script>
 
+{% endhighlight %}
 
+ {% highlight c# %}
 
 [ASPX.CS]
 
@@ -132,10 +134,10 @@ public static object GetData(int EmployeeID)
     }
 
 
-
+{% endhighlight %}
+	
 The following screenshot illustrates the output.
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Set-Dynamic-DataSource-to-Grid_images/Set-Dynamic-DataSource-to-Grid_img1.png) | markdownify }
-
+ ![C:/Users/ApoorvahR/Desktop/1.png](Set-Dynamic-DataSource-to-Grid_images/Set-Dynamic-DataSource-to-Grid_img1.png)
 
 

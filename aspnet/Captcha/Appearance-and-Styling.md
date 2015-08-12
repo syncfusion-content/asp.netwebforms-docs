@@ -31,8 +31,8 @@ The following screenshot illustrates the Captcha with some of the customized Hat
 
 <table>
 	<tr>
-		<td>Hatch Style</td>
-		<td>Hatch OutCome Image</td>
+		<td>{{ '**Hatch Style**' | markdownify }}</td>
+		<td>{{ '**Hatch OutCome Image**' | markdownify }}</td>
 	</tr>
 	<tr>
 		<td>Cross</td>
@@ -90,7 +90,7 @@ In the ASPX page, include the following Captcha control code example for customi
 The following screenshot illustrates the Captcha with customized appearance. 
 
 ![C:/Users/ApoorvahR/Desktop/3.png](Appearance-and-Styling_images/Appearance-and-Styling_img7.png)
-{:.image }
+
 
 
 ## Adjusting Captcha Size
@@ -110,7 +110,7 @@ In the ASPX page, include the following Captcha control code example for customi
 The following screenshot illustrates the Captcha with the customized Height and Width. 
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img8.png)
-{:.image }
+
 
 
 ## Theme
@@ -136,11 +136,11 @@ By default, there are 13- themes support available for Captcha control.
 Appearance for gradient-azure,
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img9.png)
-{:.image }
+
 
 Appearance for flat-lime,
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img10.png)
-{:.image }
+
 
 
