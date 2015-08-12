@@ -9,13 +9,17 @@ documentation: ug
 
 # Working with Template Markers 
 
-This is another variant of the Template based approach, but the difference is that the end-user places special markers in the template spreadsheet that gets replaced along with the data during runtime. The main advantage of this approach is that the end-user gets the flexibility of designing the Excel report.  Cells in the worksheet can be filled with a single data or with multiple records. Format of these data can be changed by using the arguments of the markers. 
+This is another variant of the Template based approach, but the difference is that the end-user places special markers in the 
+template spreadsheet that gets replaced along with the data during runtime. The main advantage of this approach is that the 
+end-user gets the flexibility of designing the Excel report.  Cells in the worksheet can be filled with a single data or with 
+multiple records. Format of these data can be changed by using the arguments of the markers. 
 
 ## Create from Array
 
 ### Marker Syntax
 
-Each marker starts with some prefix. By default, it is "%" character, and followed by the variable name and properties. There can be several arguments after the variable that are delimited by some character. By default, it is semicolon (;).
+Each marker starts with some prefix. By default, it is "%" character, and followed by the variable name and properties. There 
+can be several arguments after the variable that are delimited by some character. By default, it is semicolon (;).
 
 ![](Working-with-Template-Markers_images/Working-with-Template-Markers_img1.png)
 
@@ -31,10 +35,13 @@ You can specify the following arguments in the marker to customize the worksheet
 
 * Horizontal-This argument specifies the horizontal direction of the data import for complex variables.
 * Vertical-This argument specifies the vertical direction of the data import for complex variables.
-* Insert-This argument inserts new rows or columns depending on the direction argument for each new cell. Note that by default, the rows cannot be added.
+* Insert-This argument inserts new rows or columns depending on the direction argument for each new cell. 
+Note that by default, the rows cannot be added.
 * insert:copystyles-This argument copies styles from the above row or left column.
-* jump:[cell reference in R1C1 notation]-This argument binds the data to the cell at the specified reference. Cell reference addresses can be relative or absolute.
-* copyrange:[top-left cell reference in R1C1]:[bottom-right cell reference in R1C1]-Copies the specified cells after each cell import.
+* jump:[cell reference in R1C1 notation]-This argument binds the data to the cell at the specified reference. 
+Cell reference addresses can be relative or absolute.
+* copyrange:[top-left cell reference in R1C1]:[bottom-right cell reference in R1C1]-Copies the specified cells after each cell 
+import.
 
 Here is the sample after dynamically filling the data during runtime.
 
@@ -210,7 +217,9 @@ excelEngine.Dispose()
 
 {% endhighlight %}
 
-Here, CreateTemplateMarkerProcessor returns the ITemplateMarkersProcessor interface that creates and manipulates the marker data. ApplyMarkers method of ITemplateMarkersProcessor is the special method that processes the markers in the template. You can also specify the marker by using the following code example.
+Here, CreateTemplateMarkerProcessor returns the ITemplateMarkersProcessor interface that creates and manipulates the 
+marker data. ApplyMarkers method of ITemplateMarkersProcessor is the special method that processes the markers in the template. 
+You can also specify the marker by using the following code example.
 
 
 
@@ -295,6 +304,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();            
+
+{% endhighlight %} 
+
+{% highlight vbnet %}
 
 
 
@@ -1306,7 +1319,7 @@ numbersDt = GetTable();
 
 {% endhighlight %}
 
-{% highight vbnet %}
+{% highlight vbnet %}
 
 
 

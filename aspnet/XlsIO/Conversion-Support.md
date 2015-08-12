@@ -64,9 +64,8 @@ pdfDoc = converter.Convert(settings);
 pdfDoc.Save("ExceltoPDF.pdf");
 
 {% endhighlight %}
+
 {% highlight vbnet %}
-
-
 
 'Step 1: Instantiates the spreadsheet creation engine.
 

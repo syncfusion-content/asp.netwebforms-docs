@@ -23,15 +23,18 @@ For every platform, you must deploy the necessary dlls of Essential XlsIO to cre
 
 
 
-2. Now you need to deploy Essential XlsIO into this Console application. 
-3. Go to the Solution Explorer of the application you have created. Right-click the Reference folder and then click Add References to Essential XlsIO assemblies.
-4. Add the following assemblies as references in the application.
+2.Now you need to deploy Essential XlsIO into this Console application. 
 
-• Syncfusion.Core.dll
+3.Go to the Solution Explorer of the application you have created. Right-click the Reference folder and then click Add 
+References to Essential XlsIO assemblies.
 
-• Syncfusion.Compression.Base.dll
+4.Add the following assemblies as references in the application.
 
-• Syncfusion.XlsIO.Base.dll
+  • Syncfusion.Core.dll
+
+  • Syncfusion.Compression.Base.dll
+
+  • Syncfusion.XlsIO.Base.dll
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 

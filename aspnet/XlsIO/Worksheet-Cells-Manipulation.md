@@ -130,7 +130,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
 [VB.NET]
 
@@ -218,7 +220,8 @@ excelEngine.Dispose()
 
 ### Accessing Discontinuous Ranges
 
-You can also access different discontinuous ranges and add them to the RangesCollection so that the same format is applied to different ranges. The following code example explains the same.
+You can also access different discontinuous ranges and add them to the RangesCollection so that the same format is applied to 
+different ranges. The following code example explains the same.
 
 
 
@@ -570,7 +573,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %} 
 
+{% highlight vbnet %}
 
 [VB.NET]
 
@@ -751,41 +756,43 @@ _Table_ _14__: Values set for the ExcelCopyRangeOptions_
 
 <table>
 <tr>
-<th>
-Members </th><th>
-Description</th></tr>
+<th>Members </th>
+<th>Description</th>
+</tr>
 <tr>
-<td>
-None</td><td>
-Indicates to copy only the cell value. </td></tr>
+<td>None</td>
+<td>Indicates to copy only the cell value. </td>
+</tr>
 <tr>
-<td>
-UpdateFormulas</td><td>
-Indicates formula during copy. WARNING: You should always specify this flag when your operations can change the position of Array formula. </td></tr>
+<td>UpdateFormulas</td>
+<td>Indicates formula during copy. WARNING: You should always specify this flag when your operations can change the position of 
+Array formula. 
+</td>
+</tr>
 <tr>
-<td>
-UpdateMerges</td><td>
-Indicates to update merges during copy.</td></tr>
+<td>UpdateMerges</td>
+<td>Indicates to update merges during copy.</td>
+</tr>
 <tr>
-<td>
-CopyStyles</td><td>
-Indicates to copy styles during range copy. </td></tr>
+<td>CopyStyles</td>
+<td>Indicates to copy styles during range copy. </td>
+</tr>
 <tr>
-<td>
-CopyShapes</td><td>
-Indicates to copy shapes during range copy. </td></tr>
+<td>CopyShapes</td>
+<td>Indicates to copy shapes during range copy. </td>
+</tr>
 <tr>
-<td>
-CopyErrorIndicators</td><td>
-Indicates to copy error indicators during range copy. </td></tr>
+<td>CopyErrorIndicators</td>
+<td>Indicates to copy error indicators during range copy. </td>
+</tr>
 <tr>
+<td>CopyConditionalFormats</td>
 <td>
-CopyConditionalFormats</td><td>
 Indicates to copy conditional formats during range copy. </td></tr>
 <tr>
-<td>
-All</td><td>
-Indicates functionionality of all the above flags. </td></tr>
+<td>All</td>
+<td>Indicates functionionality of all the above flags. </td>
+</tr>
 </table>
 
 
@@ -1052,33 +1059,33 @@ _Table_ _15__: Types of params of the ExcelFindType enumerator_
 
 <table>
 <tr>
-<td>
-Members </td><td>
-Description</td></tr>
+<td>Members </td>
+<td>Description</td>
+</tr>
 <tr>
-<td>
-Text</td><td>
-Represents that the type to be found is Text. </td></tr>
+<td>Text</td>
+<td>Represents that the type to be found is Text. </td>
+</tr>
 <tr>
-<td>
-Formula</td><td>
-Represents that the type to be found is Formula. </td></tr>
+<td>Formula</td>
+<td>Represents that the type to be found is Formula. </td>
+</tr>
 <tr>
-<td>
-FormulaStringValue</td><td>
-Represents that the type to be found is FormulaString. </td></tr>
+<td>FormulaStringValue</td>
+<td>Represents that the type to be found is FormulaString. </td>
+</tr>
 <tr>
-<td>
-Error</td><td>
-Represents that the type to be found is Error. </td></tr>
+<td>Error</td>
+<td>Represents that the type to be found is Error. </td>
+</tr>
 <tr>
-<td>
-Number</td><td>
-Represents that the type to be found is Number. </td></tr>
+<td>Number</td>
+<td>Represents that the type to be found is Number. </td>
+</tr>
 <tr>
-<td>
-FormulaValue</td><td>
-Represents that the type to be found is FormulaValue. </td></tr>
+<td>FormulaValue</td>
+<td>Represents that the type to be found is FormulaValue. </td>
+</tr>
 </table>
 
 
@@ -1090,17 +1097,17 @@ _Table_ _16__: Params of the ExcelFindOptions enumerator_
 
 <table>
 <tr>
-<td>
-Members </td><td>
-Description </td></tr>
+<td>Members </td>
+<td>Description </td>
+</tr>
 <tr>
-<td>
-Match Case</td><td>
-Matches case while finding the value.</td></tr>
+<td>Match Case</td>
+<td>Matches case while finding the value.</td>
+</tr>
 <tr>
-<td>
-MatchEntireCell</td><td>
-Matches the whole word being searched while finding the value.</td></tr>
+<td>MatchEntireCell</td>
+<td>Matches the whole word being searched while finding the value.</td>
+</tr>
 </table>
 
 
@@ -1114,29 +1121,29 @@ _Table_ _17__: Find First Methods_
 
 <table>
 <tr>
-<th>
-Methods</th><th>
-Description</th></tr>
+<th>Methods</th>
+<th>Description</th>
+</tr>
 <tr>
-<th>
-FindFirst(Boolean)</th><th>
-This method searches for the cell with specified boolean value. </th></tr>
+<th>FindFirst(Boolean)</th>
+<th>This method searches for the cell with specified boolean value. </th>
+</tr>
 <tr>
-<th>
-FindFirst (DateTime)</th><th>
-This method searches for the cell with specified DateTime value. </th></tr>
+<th>FindFirst(DateTime)</th>
+<th>This method searches for the cell with specified DateTime value. </th>
+</tr>
 <tr>
-<th>
-FindFirst (TimeSpan)</th><th>
-This method searches for the cell with specified TimeSpan value. </th></tr>
+<th>FindFirst(TimeSpan)</th>
+<th>This method searches for the cell with specified TimeSpan value. </th>
+</tr>
 <tr>
-<th>
-FindFirst (Double, ExcelFindType)</th><th>
-This method searches for the cell with specified double value. </th></tr>
+<th>FindFirst(Double, ExcelFindType)</th>
+<th>This method searches for the cell with specified double value. </th>
+</tr>
 <tr>
-<th>
-FindFirst (String, ExcelFindType, ExcelFindOptions)</th><th>
-This method searches for the cell with specified string value, again based on the Find options</th></tr>
+<th>FindFirst(String, ExcelFindType, ExcelFindOptions)</th>
+<th>This method searches for the cell with specified string value, again based on the Find options</th>
+</tr>
 </table>
 
 
@@ -1271,29 +1278,29 @@ _Table_ _18__: Find All Methods_
 
 <table>
 <tr>
-<th>
-Methods</th><th>
-Description</th></tr>
+<th>Methods</th>
+<th>Description</th>
+</tr>
 <tr>
-<td>
-FindAll(Boolean)</td><td>
-This method searches for all the cells with specified boolean value. </td></tr>
+<td>FindAll(Boolean)</td>
+<td>This method searches for all the cells with specified boolean value. </td>
+</tr>
 <tr>
-<td>
-FindAll(DateTime)</td><td>
-This method searches for all the cells with specified DateTime value. </td></tr>
+<td>FindAll(DateTime)</td>
+<td>This method searches for all the cells with specified DateTime value. </td>
+</tr>
 <tr>
-<td>
-FindAll(TimeSpan)</td><td>
-This method searches for all the cells with specified TimeSpan value. </td></tr>
+<td>FindAll(TimeSpan)</td>
+<td>This method searches for all the cells with specified TimeSpan value. </td>
+</tr>
 <tr>
-<td>
-FindAll(Double, ExcelFindType)</td><td>
-This method searches for all the cells with specified double value. </td></tr>
+<td>FindAll(Double, ExcelFindType)</td>
+<td>This method searches for all the cells with specified double value. </td>
+</tr>
 <tr>
-<td>
-FindAll (String, ExcelFindType, ExcelFindOptions)</td><td>
-This method searches for all the cells with specified string value, again based on the Find options</td></tr>
+<td>FindAll(String, ExcelFindType, ExcelFindOptions)</td>
+<td>This method searches for all the cells with specified string value, again based on the Find options</td>
+</tr>
 </table>
 
 
@@ -1428,17 +1435,17 @@ _Table_ _19__: FindStringStartswith Methods_
 
 <table>
 <tr>
-<th>
-Methods</th><th>
-Description</th></tr>
+<th>Methods</th>
+<th>Description</th>
+</tr>
 <tr>
-<td>
-FindStringStartsWith( String , ExcelFindType)</td><td>
-These methods search for cells that start with the specified string value for the given find type.</td></tr>
+<td>FindStringStartsWith(String , ExcelFindType)</td>
+<td>These methods search for cells that start with the specified string value for the given find type.</td>
+</tr>
 <tr>
-<td>
-FindStringStartsWith( String, ExcelFindType,bool)</td><td>
-These methods search for cells that start with the specified string value for the given find type and Boolean value.</td></tr>
+<td>FindStringStartsWith(String, ExcelFindType,bool)</td>
+<td>These methods search for cells that start with the specified string value for the given find type and Boolean value.</td>
+</tr>
 </table>
 
 
@@ -1579,13 +1586,13 @@ _Table_ _20__: FindStringEndswith_
 Methods</th><th>
 Description</th></tr>
 <tr>
-<td>
-FindStringEndsWith ( String, ExcelFindType) </td><td>
-These methods search for the cell that ends with the specified string value for the given find type.</td></tr>
+<td>FindStringEndsWith( String, ExcelFindType) </td>
+<td>These methods search for the cell that ends with the specified string value for the given find type.</td>
+</tr>
 <tr>
-<td>
-FindStringStartsWith ( String, ExcelFindType,bool)</td><td>
-These methods search for the cell that ends with the specified string value for the given find type and bool value.</td></tr>
+<td>FindStringStartsWith( String, ExcelFindType,bool)</td>
+<td>These methods search for the cell that ends with the specified string value for the given find type and bool value.</td>
+</tr>
 </table>
 
 
@@ -1719,40 +1726,38 @@ _Table_ _21__: Overloads for the Replace method_
 
 <table>
 <tr>
-<th>
-Methods</th><th>
-Description</th></tr>
+<th>Methods</th>
+<th>Description</th>
+</tr>
 <tr>
-<td>
-Replace(String, DateTime)</td><td>
-Replaces specified string by specified value. </td></tr>
+<td>Replace(String, DateTime)</td>
+<td>Replaces specified string by specified value. </td>
+</tr>
 <tr>
-<td>
-Replace(String, Double)</td><td>
-Replaces specified string by specified value. </td></tr>
+<td>Replace(String, Double)</td>
+<td>Replaces specified string by specified value. </td>
+</tr>
 <tr>
-<td>
-Replace(String, String)</td><td>
-Replaces specified string by specified value. </td></tr>
+<td>Replace(String, String)</td>
+<td>Replaces specified string by specified value. </td>
+</tr>
 <tr>
-<td>
-Replace(String, DataColumn, Boolean)</td><td>
-Replaces specified string by data column values. </td></tr>
+<td>Replace(String, DataColumn, Boolean)</td>
+<td>Replaces specified string by data column values. </td>
+</tr>
 <tr>
-<td>
-Replace(String, DataTable, Boolean)</td><td>
-Replaces specified string by data table values. </td></tr>
+<td>Replace(String, DataTable, Boolean)</td>
+<td>Replaces specified string by data table values. </td>
+</tr>
 <tr>
-<td>
-Replace(String, Double[], Boolean)</td><td>
-Replaces specified string by data from array. </td></tr>
+<td>Replace(String, Double[], Boolean)</td>
+<td>Replaces specified string by data from array. </td></tr>
 <tr>
-<td>
-Replace(String, Int32[], Boolean)</td><td>
-Replaces specified string by data from array. </td></tr>
+<td>Replace(String, Int32[], Boolean)</td>
+<td>Replaces specified string by data from array</td>
+</tr>
 <tr>
-<td>
-Replace(String, String[], Boolean)</td><td>
+<td>Replace(String, String[], Boolean)</td><td>
 Replaces specified string by data from array. </td></tr>
 </table>
 
@@ -1920,8 +1925,7 @@ This is used to sort a range of cells by values at runtime. This is explained in
 
 
 
-{{{ ''![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img6.png)'' | markdownify }}}
-
+![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img6.png)
 
 
 
@@ -2684,7 +2688,8 @@ The Data Validation feature available in MS Excel dynamically validates the data
 
 ### Data Validation in Essential XlsIO
 
-Essential XlsIO, equivalent to the MS Excel, is built with APIs to read and write data validation in a worksheet by using the IDataValidation class.
+Essential XlsIO, equivalent to the MS Excel, is built with APIs to read and write data validation in a worksheet by using the IDataValidation 
+class.
 
 The following are some validation types that XlsIO supports.
 
@@ -2936,6 +2941,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %} 
+
+{% highlight vbnet %}
 
 
 [VB.NET]

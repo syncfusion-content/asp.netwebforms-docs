@@ -23,11 +23,12 @@ In Excel, Pivot Table can be inserted by selecting the PivotTable option from th
 
 
 
-Excel automatically selects the entire range. However, it is possible to modify it if necessary. It also allows choosing where to place the PivotTable. New Worksheet is most commonly used to place the pivot table.
+Excel automatically selects the entire range. However, it is possible to modify it if necessary. It also allows choosing where 
+to place the PivotTable. New Worksheet is most commonly used to place the pivot table.
 
 
 
-{{{ ''![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img2.png)'' | markdownify }}}
+![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img2.png)
 
 
 
@@ -46,7 +47,7 @@ PivotTable Creation Manipulation by Using XlsIO
 XlsIO provides support for creation and manipulation of Pivot Table by using simple APIs. IPivotCache interface caches the data that needs to be summarized. IPivotTable represents a pivot table in object, and has properties that allow customizing it. IPivotTable interface returns the collection of Pivot Tables present in a worksheet. IPivotField represents the field in the pivot table. This includes row, column, and data field axis. IPivotDataFields gets collection of data field.
 
 
-_Note: Pivot Table is currently not supported for .xls format._
+Note: Pivot Table is currently not supported for .xls format.
 
 The following code example illustrates how to create a pivot table by using XlsIO.
 
@@ -108,6 +109,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %} 
+
+{% highlight vbnet %}
 
 
 [VB.NET]
@@ -258,7 +262,8 @@ Specifies a Boolean value that indicates whether the "custom lists" option is of
 <tr>
 <td>
 ShowFieldList</td><td>
-False, to disable the ability to display the field list for the PivotTable. If the field list was already being displayed it disappears.</td></tr>
+False, to disable the ability to display the field list for the PivotTable. If the field list was already being displayed it 
+disappears.</td></tr>
 <tr>
 <td>
 ShowDrillIndicators</td><td>
@@ -1240,6 +1245,7 @@ excelEngine.Dispose()
 
 
 {% endhighlight %}
+
 ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img8.png)
 
 
@@ -1733,10 +1739,6 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-
-
-
-
 
 'Step 1: Instantiates the spreadsheet creation engine.
 
@@ -2289,7 +2291,9 @@ excelEngine.ThrowNotSavedOnDestroy = false;
 
 excelEngine.Dispose();
 
+{% endhighlight %} 
 
+{% highlight vbnet %}
 
 [VB.NET]
 
@@ -2341,7 +2345,7 @@ workbook.Close()
 excelEngine.ThrowNotSavedOnDestroy = False
 excelEngine.Dispose()
 
-
+{% endhighlight %}
 
 ### Lay Out the Pivot Table as MS Excel 2007
 
@@ -2363,7 +2367,7 @@ Method to lay out the pivot table byusing XlsIO like the MS Excel pivot table la
 The following code example illustrates how to enable Essential XlsIO to lay out the pivot table like MS Excel. 
 
 
-
+{% highlight C# %}
 [C#]
 
 
@@ -2437,7 +2441,9 @@ excelEngine.ThrowNotSavedOnDestroy = false;
 
 excelEngine.Dispose();
 
+{% endhighlight %} 
 
+{% highlight vbnet %}
 
 [VB.Net]
 
@@ -2524,17 +2530,17 @@ Pivot Charts are interactive graphical representations of the PivotTable data th
 
 PivotChart Creation by Using MS Excel 2010
 
-In Microsoft Excel, the PivotChart can be created by using the PivotChart Option from the Insert menu. Refer to Figure 113: PivotChart Creation.
+In Microsoft Excel, the PivotChart can be created by using the PivotChart Option from the Insert menu. 
+Refer to Figure 113: PivotChart Creation.
 
 ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img12.png)
 
 
 
-By default, MS Excel selects the entire range. However, it is possible to modify the selected range if required. It also allows choosing the position of the PivotChart. New Worksheet is most commonly used to place the PivotChart.
+By default, MS Excel selects the entire range. However, it is possible to modify the selected range if required. It also 
+allows choosing the position of the PivotChart. New Worksheet is most commonly used to place the PivotChart.
 
-
-
-{{{ ''![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img13.png)'' | markdownify }}}
+![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img13.png)
 
 
 
@@ -2610,6 +2616,10 @@ excelEngine.ThrowNotSavedOnDestroy = false;
 
 excelEngine.Dispose();
 
+{% endhighlight %} 
+
+{% highlight vbnet %}
+
 
 
 [VB]
@@ -2670,11 +2680,15 @@ excelEngine.Dispose()
 
 
 
+{% endhighlight %} 
+
+
+
 PivotChart Options
 
 The field buttons of the PivotChart can be displayed or hidden by selecting PivotChart Tools->Analyze->Field Buttons. XlsIO provides an equivalent API to perform simple properties as follows:
 
-> {{{ ''![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img16.jpeg)'' | markdownify }}}
+![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img16.jpeg)
 
 _Note: These properties are exclusive for Excel 2010._
 

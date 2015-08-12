@@ -461,9 +461,6 @@ excelEngine.Dispose();
 {% highlight vbnet %}
 
 
-
-
-
 Dim excelEngine As New ExcelEngine()
 
 Dim application As IApplication = excelEngine.Excel

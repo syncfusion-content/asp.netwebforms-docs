@@ -189,10 +189,6 @@ The following is the code example to open a document from file.
 
 {% highlight C#%}
 
-
-
-
-
 ExcelEngine excelEngine = new ExcelEngine();
 
 IApplication application = excelEngine.Excel;
@@ -205,11 +201,8 @@ IWorkbook workbook = application.Workbooks.Open(fileStream, ExcelOpenType.Automa
 
 {% endhighlight %}
 
+
 {% highlight vbnet%}
-
-
-
-
 
 Dim excelEngine As ExcelEngine = New ExcelEngine()
 
@@ -228,8 +221,6 @@ Opening a Workbook as a stream in Windows Phone 8.
 
 {% highlight  C#%}
 
-
-
 ExcelEngine excelEngine = new ExcelEngine();
 
 IApplication application = excelEngine.Excel;
@@ -243,11 +234,8 @@ IWorkbook workbook = await application.Workbooks.OpenAsync(outFile);
 
 {% endhighlight %}
 
+
 {% highlight vbnet%}
-
-
-
-
 Dim excelEngine As ExcelEngine = New ExcelEngine()
 
 Dim application As IApplication = excelEngine.Excel
@@ -273,10 +261,6 @@ XlsIO allows you to open a spreadsheet in Read-Only mode, even if the spreadshee
 
 {% highlight C#%}
 
-
-
-
-
 ExcelEngine excelEngine = new ExcelEngine();
 
 IApplication application = excelEngine.Excel;
@@ -287,8 +271,6 @@ IWorkbook workbook = application.Workbooks.OpenReadOnly("Sample.xlsx");
 {% endhighlight %}
 
 {% highlight vbnet%}
-
-
 
 Dim excelEngine As ExcelEngine = New ExcelEngine()
 

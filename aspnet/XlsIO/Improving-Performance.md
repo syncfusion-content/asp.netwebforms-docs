@@ -61,10 +61,6 @@ for(int i = 0;i<sheet.UsedRange.LastRow;i++)
 
 {% highlight C#%}
 
-
-
-
-
 application.DataProviderType = ExcelDataProviderType.Unsafe;
 
 {% endhighlight %}

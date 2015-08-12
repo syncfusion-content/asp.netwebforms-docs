@@ -73,7 +73,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+{% endhighlight %} 
 
+{% highlight vbnet %}
 
 [VB.NET]
 
@@ -771,7 +773,7 @@ _Note: Row/Column index of these methods are "one based"._
 
 Excel allows you to hide a row/column by using the Hide command, but a row or column also becomes hidden when you change its row height or column width to zero. You can also show a hidden row/column by using the Unhide command.
 
-{{{ ''![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img5.png)'' | markdownify }}}
+![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img5.png)
 
 
 
@@ -924,9 +926,9 @@ excelEngine.Dispose()
 
 
 
-{{{ ''![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img6.png)'' | markdownify }}}
+![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img6.png)
 
-
+{% endhighlight %} 
 
 XlsIO also provides options to focus a particular row/column when it is opened by using the TopVisibleRow and LeftVisibleColumn properties, respectively.
 
@@ -1529,7 +1531,7 @@ You can also AutoFit single row/column as follows.
 
 
 
-{% highligth C# %}
+{% highlight C# %}
 
 
 
@@ -1783,7 +1785,7 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
+{% endhighlight %} 
 
 3. AutoFit within a Range of Cells
 
@@ -1945,7 +1947,7 @@ Microsoft Excel has grouping and outlining features that allows you to group lar
 
 
 
-{{{ ''![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img13.png)'' | markdownify }}}
+[](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img13.png)
 
 
 
