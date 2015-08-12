@@ -20,7 +20,7 @@ The following screenshot illustrates the functionality of a TimePicker with a ti
 
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
-{:.image }
+
 
 
 ### Create a TimePicker 
@@ -174,7 +174,7 @@ The following screenshot displays the TimePicker control.
 
 
 ![](Getting-Started_images/Getting-Started_img2.png) 
-{:.image }
+
 
 
 ### Set the Min and Max Values
@@ -208,7 +208,7 @@ In a real-time hotel table booking scenario, the booking is open only for a limi
 The above code example displays the following output.
 
 ![](Getting-Started_images/Getting-Started_img3.png) 
-{:.image }
+
 
 
 ### Set Time Interval
@@ -234,7 +234,7 @@ The following code example shows how to set Time interval.
 Run the above code to achieve the desired result. You can select the date and time in the TimePicker within the given range of one hour interval. This scenario is illustrated in the following screenshot.
 
 ![](Getting-Started_images/Getting-Started_img4.png) 
-{:.image }
+
 
 
 ### Display the Acknowledgement Message
@@ -270,7 +270,7 @@ The following code example shows how to display the acknowledgement message.
 The following screenshot displays the acknowledgement message.
 
 ![](Getting-Started_images/Getting-Started_img5.png) 
-{:.image }
+
 
 
 ### Create Two TimePickers
@@ -460,7 +460,7 @@ Display the acknowledge message by using following script.
 Run the above code to achieve the desired result. By selecting the Start Time in the first TimePicker, you can select the End Time within the given range. This restricts you from selecting false time. This scenario is illustrated in the following screenshot.
 
 ![](Getting-Started_images/Getting-Started_img6.png) 
-{:.image }
+
 
 
 You can also add additional functionalities such as localization and time formats to the TimePicker. 

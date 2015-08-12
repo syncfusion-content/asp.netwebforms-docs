@@ -16,6 +16,6 @@ The Essential JavaScript and ASP.NET MVCRotator control displays a set of slides
 * Data Binding: Supports data binding with JSON data as well as remote data.
 * Image with Content: Support to render an image, content, or image with content.
 * Display Dynamic number of Slide: Supports dynamic (one or more) number of slides.
-* Move Dynamic Number of Slide: Supportto move dynamic (one or more) number of slides at a time.
+* Move Dynamic Number of Slide: Support to move dynamic (one or more) number of slides at a time.
 * Autoplay: Supports autoplay mode for slide transition.
 * Pager and Thumbnail: Support to navigate between slides.

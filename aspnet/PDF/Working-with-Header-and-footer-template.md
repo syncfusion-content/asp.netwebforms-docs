@@ -27,8 +27,6 @@ The following code example illustrates you on how to create a Header and Footer.
 
 [C#]
 
-
-
 //Creates a new PDF document.
 
 PdfDocument pdfDocument = new PdfDocument();
@@ -92,12 +90,12 @@ pdfDocument.Template.Bottom = footer;
 pdfDocument.Save("Output.pdf");
 
 pdfDocument.Close(true);
+
 {% endhighlight  %}
+
 {% highlight vbnet %}
 
 [VB]
-
-
 
 'Creates a new PDF document.
 

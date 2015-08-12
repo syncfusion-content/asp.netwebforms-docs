@@ -36,6 +36,6 @@ Create an aspx file and add the following code to aspx file for ejToggleButton c
 Output of the above steps.
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
-{:.image }
+
 
 

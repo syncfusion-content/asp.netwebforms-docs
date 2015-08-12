@@ -11,7 +11,8 @@ documentation: ug
 
 ## Setting Value
 
-The Value property sets the display value of the Rating. For example, when the Value property is set to 4, the Rating control renders 4 ratings. By default, Value property’s value is one.
+The Value property sets the display value of the Rating. For example, when the Value property is set to 4, the Rating control 
+renders 4 ratings. By default, Value property’s value is one.
 
 In an ASPX page add the following code to render the Rating with the customized value.
 
@@ -59,9 +60,10 @@ The following screenshot displays the output of the above code example.
 
 
 
-## Min Value
+### Min Value
 
-EJ Rating control provides support for setting the minimum value. This is achieved by adding the MinValue property. When the MinValue property is set, the Rating value starts with MinValue+1.
+EJ Rating control provides support for setting the minimum value. This is achieved by adding the MinValue property. When the 
+MinValue property is set, the Rating value starts with MinValue+1.
 
 Add the following code example to the corresponding ASPX page to render the Rating with the customized minimum value.
 
@@ -105,9 +107,10 @@ The following screenshot displays the output of the above code example.
 
 
 
-## Max Value
+### Max Value
 
-EJ Rating control provides support for setting the maximum value. This is achieved by adding the MaxValue property. By default, MaxValue is 5.
+EJ Rating control provides support for setting the maximum value. This is achieved by adding the MaxValue property. By default, 
+MaxValue is 5.
 
 Add the following code example to the corresponding ASPX page to render the Rating with the customized maximum value.
 
@@ -151,7 +154,8 @@ The following screenshot displays the output of the above code example.
 
 ## Set Precision
 
-In a real-time movie Rating scenario, you can set Precision between the two whole numbers such as 2.5 or 3.7 and it is achieved by using the property Precision by changing the value to Half or Exact. By default, Precision is Full.
+In a real-time movie Rating scenario, you can set Precision between the two whole numbers such as 2.5 or 3.7 and it is achieved 
+by using the property Precision by changing the value to Half or Exact. By default, Precision is Full.
 
 Add the following code example to the corresponding ASPX page to render the Rating with Precision.
 
@@ -261,7 +265,8 @@ The following screenshot displays the output of the above code example.
 
 ## Resetting values
 
-EJ Rating control provides support for value reset at runtime. This is achieved by enabling the AllowReset property to be True. By default, the property value is set to True.
+EJ Rating control provides support for value reset at runtime. This is achieved by enabling the AllowReset property to be True. 
+By default, the property value is set to True.
 
 Add the following code example to the corresponding ASPX page to render the Rating with AllowReset.
 
@@ -319,7 +324,9 @@ The following screenshot displays the output of the above code example.
 
 ## Read Only
 
-Rating control provides support for changeable or unchangeable values for Rating control. This is achieved by the ReadOnly property. When this property is set to True, the Rating value becomes unchangeable. By default, this property value is set to False.
+Rating control provides support for changeable or unchangeable values for Rating control. This is achieved by the ReadOnly 
+property. When this property is set to True, the Rating value becomes unchangeable. By default, this property value is set to 
+False.
 
 Add the following code example to the corresponding ASPX page to render Rating with ReadOnly.
 
@@ -363,7 +370,8 @@ The following screenshot displays the output of the above code example.
 
 ## Enable or Disable
 
-Rating control provides support to enable or disable the control. This is achieved by the Enabled property. By default, the property value is True.
+Rating control provides support to enable or disable the control. This is achieved by the Enabled property. By default, the 
+property value is True.
 
 Add the following code example to the corresponding ASPX page to render the Rating with enable or disable support.
 

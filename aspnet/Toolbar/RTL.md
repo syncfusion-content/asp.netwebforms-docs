@@ -28,6 +28,6 @@ Add the following code example to the corresponding ASPX page to render the Tool
 {% endhighlight %}
 
  ![](RTL_images/RTL_img1.png) 
-{:.image }
+
 
 

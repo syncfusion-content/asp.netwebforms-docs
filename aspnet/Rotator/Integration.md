@@ -146,7 +146,7 @@ Two-way binding supports both the processes. It applies the observable values t
 
 For more information on the Knockout binding, you can refer to the online documentation in the following link location: [http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
 
-> Note: Add the following script files along with the given code to access Knockout binding. They have JS library for Knockout binding.
+Note: Add the following script files along with the given code to access Knockout binding. They have JS library for Knockout binding.
 
 * knockout-min.js
 * ej.widget.ko-latest.min.js
@@ -164,10 +164,6 @@ In the ASPX page, add the following code example that shows the way to bind data
 
 
 <ul id="slidercontent" data-bind="ejRotator: { dataSource: dataList, slideWidth: width, slideHeight: height }" />
-
-
-
-
 
 
 
@@ -283,7 +279,8 @@ To know more details about the Angularbinding, you can refer to the following l
 
 [http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
 
-> Note: Add the following script files as given in the following example to access Knockout binding. They have JS library for angular binding.
+Note: Add the following script files as given in the following example to access Knockout binding. They have JS library for 
+angular binding.
 
 * angular-min.js
 * ej.widget.angular-latest.min.js
@@ -291,7 +288,6 @@ To know more details about the Angularbinding, you can refer to the following l
 The following code example shows the way to bind data to the Rotator control through Angular support.
 
 {% highlight html %}
-
 
 
 <div ng-app="rotatApp">

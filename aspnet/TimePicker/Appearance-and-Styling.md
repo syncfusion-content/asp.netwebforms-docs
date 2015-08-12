@@ -34,10 +34,10 @@ Run the above code to render the following output.
 
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
-{:.image }
 
 
-### Change TimePicker PopupHeight and PopupWidth
+
+## Change TimePicker PopupHeight and PopupWidth
 
 You can use PopupHeight and PopupWidth properties to customize the TimePicker width and height.
 
@@ -54,7 +54,7 @@ Run the above code to render the following output.
 
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
-{:.image }
+
 
 
 ## Theme
@@ -122,7 +122,7 @@ The following screenshot displays the output for the above code.
 
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
-{:.image }
+
 
 
 

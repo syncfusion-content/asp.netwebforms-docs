@@ -100,7 +100,7 @@ This section encompasses the details on how to configure the RangeNavigator and 
 15. In designer page now RangeNavigator designer image will be created.
 
 
-> Note: If you use web application, you will need to follow the above steps manually to use the Syncfusion controls.
+Note: If you use web application, you will need to follow the above steps manually to use the Syncfusion controls.
 
 ## Configure RangeNavigator
 

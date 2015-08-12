@@ -291,7 +291,7 @@ The following screenshot displays the output of the above code.
 
  ![](Integration_images/Integration_img1.png) 
  
-{:.image }
+
 
 
 ### KnockoutJs
@@ -653,7 +653,7 @@ Add the following code example into the corresponding ASPX page to render the To
 The following screenshot displays the output of the above code.
 
 ![](Integration_images/Integration_img2.png) 
-{:.image }
+
 
 
 

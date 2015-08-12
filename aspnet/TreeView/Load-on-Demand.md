@@ -178,6 +178,6 @@ public partial class LoadOnDemand : System.Web.UI.Page
 
 
 { ![](Load-on-Demand_images/Load-on-Demand_img1.png) | markdownify }
-{:.image }
+
 
 

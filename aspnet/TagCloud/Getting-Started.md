@@ -114,7 +114,7 @@ public class TagCloudData
 The following screenshot displays the output of the above code example.
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
-{:.image }
+
 
 
 ## Set Min and Max Font Sizes

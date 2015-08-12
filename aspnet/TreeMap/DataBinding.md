@@ -18,8 +18,9 @@ The DataSource property accepts the collection values as input. For example, you
 
 
 
-{% highlight html %}
+{% highlight html %} 
 
+{% highlight C# %} 
 [ASP]
 
 [ASPX.CS]
@@ -96,11 +97,11 @@ public class TreeMapPopulationData
 
 [ASPX]
 
+ {% endhighlight %}
 
+<ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth">
 
-&lt;ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth"&gt;
-
-&lt;/ej:Treemap&gt;
+</ej:Treemap>
 
 
 {% endhighlight %}

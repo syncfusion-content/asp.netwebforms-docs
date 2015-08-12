@@ -217,9 +217,9 @@ The following code example shows how to localize OLAP Client’s User Interface 
 
 [ASP.NET]
 
-&lt;ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc" Locale="fr-FR"&gt;
+<ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc" Locale="fr-FR">
 
-&lt;/ej:OlapClient&gt;
+</ej:OlapClient>
 
 {% endhighlight  %}
 
@@ -230,7 +230,7 @@ The following code example shows how to localize OLAP Client’s User Interface 
 
 [HTML]    
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
     {
 
@@ -352,13 +352,13 @@ The following code example shows how to localize OLAP Client’s User Interface 
 
   }
 
- &lt;/script&gt;           
+ </script>           
 
 {% endhighlight  %}
 
 
 
-_Note: In order to render the localized OLAP Client, we need to reset the content available in both OLAP Client Control and OLAP Cube_
+Note: In order to render the localized OLAP Client, we need to reset the content available in both OLAP Client Control and OLAP Cube
 
 ## Localizing Control Information
 
@@ -406,6 +406,6 @@ The following screenshot shows the OLAP Client with French localization.
 
 
  ![Description: http://help.syncfusion.com/ug/js/ImagesExt/image49_140.png](Localization_images/Localization_img2.png) 
-{:.image }
+
 
 

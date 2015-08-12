@@ -135,7 +135,7 @@ The following example shows the way to bind data to the TagCloud control by usin
 The following screenshot illustrates the TagCloud control with Angular data binding.
 
 ![](Integration_images/Integration_img1.png) 
-{:.image }
+
 
 
 ## Knockout binding
@@ -280,7 +280,7 @@ var tagview = [
 Run the above code to render the following output.
 
 ![](Integration_images/Integration_img2.png) 
-{:.image }
+
 
 
 

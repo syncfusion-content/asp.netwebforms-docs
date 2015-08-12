@@ -44,6 +44,7 @@ You can create a Web project and add the necessary assemblies, styles, and scrip
 {% endhighlight %}
 
 Add the given styles to show the UploadBox with margin alignments.
+
 {% highlight c# %}
         .posupload
 
@@ -65,8 +66,11 @@ Add the given styles to show the UploadBox with margin alignments.
 
 {% endhighlight %}
 
-Add the handlers to save and remove the files uploaded by using the UploadBox. Create a new handler file .ashx and save as saveFile.ashx and add the following code to it. 
+Add the handlers to save and remove the files uploaded by using the UploadBox. Create a new handler file .ashx and save as 
+saveFile.ashx and add the following code to it. 
+
 {% highlight c# %}
+
 public void ProcessRequest(HttpContext context)
 
     {
@@ -126,7 +130,9 @@ public void ProcessRequest(HttpContext context)
 
 
 Create a new handler file .ashx and save as removeFile.ashx and add the following code to it. 
+
 {% highlight c# %}
+
 public void ProcessRequest(HttpContext context)
 
     {
@@ -175,7 +181,7 @@ Run the project to see the following output for the given steps. The file is upl
 
 In a real-time scenario, some file extensions are restricted. You can allow files or restrict files by using the following properties, fileallow and filedeny enabled in the UploadBox. 
 
-> Note: The SaveUrl and RemoveUrl are the same as above.
+Note: The SaveUrl and RemoveUrl are the same as above.
 
 Add the following code example to the script section.
 {% highlight c# %}
@@ -209,7 +215,7 @@ Add the following code example to the script section.
 
 Add input elements to create elements for file extensions.
 
-> Note: Add the following input elements and two button elements to give file extensions that should support uploading.
+Note: Add the following input elements and two button elements to give file extensions that should support uploading.
 
 {% highlight html %}
 
@@ -365,7 +371,7 @@ Add input elements to create elements for file extensions.
 
 Run the code to render the following output with the file extensions.
 
-> Note: You can restrict one or more files at a time by giving it as .html,.txt.
+Note: You can restrict one or more files at a time by giving it as .html,.txt.
 
 In the UploadBox control, you can either allow files with specified extension only by using the ExtensionAllow property or deny files with specified extension only by using the ExtensionDeny property.
 

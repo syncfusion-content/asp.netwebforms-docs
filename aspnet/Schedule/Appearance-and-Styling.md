@@ -58,7 +58,7 @@ For Adaptive Schedule, you can refer to the following css file in the applicatio
 
 
 
-##Show/Hide All Day Show 
+## Show/Hide All Day Show 
 
 * The all-day cells row in the Schedule control can be displayed or hidden from the user. When the showAllDayRow is set to false, the allday row is hidden from the user.
 *  By default, this property is set to true.The following code example explains how to use the showAllDayRow property of the Schedule control.  
@@ -194,11 +194,11 @@ The following screenshot displays the Schedule control with the width set to “
 * The size of the cells within the Schedule control can be customized with two of the available options, cellWidth and cellHeight. 
 * In order to view the appointments more clearly within the schedule control, you can enhance the height and width of the cells using these options.
 
-cellHeight
+#### cellHeight
 
 * The cell height of the Schedule control is handled with the cellHeight property that accepts only the pixel values.
 
-cellWidth
+#### cellWidth
 
 * The cell width of the Schedule control is handled with the cellWidth property that accepts only the pixel values.
 
@@ -257,16 +257,17 @@ The following screenshot displays the Schedule control with the cell width set t
 
 Replace the following code in Layout.Master page to apply different theme to schedule control.
 
+{% highlight xml %}  
 
+<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-saffron-dark/ej.web.all.min.css" rel="stylesheet" /> 
 
-<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-saffron-dark/ej.web.all.min.css" rel="stylesheet" /> <!—this is CDN Link  -->
-
+<!—this is CDN Link  -->
 
 
 <!—You can replace the highlighted theme with any one of the above mentiond 12 themes-->
 
 
-
+{% endhighlight %}
 
 
 The schedule control will render as follows
@@ -330,7 +331,7 @@ The following screenshot displays the Schedule control with the hidden header 
 
 
 {{ '![C:/Users/maheshp/AppData/Roaming/Skype/My Skype Received Files/asp(1).PNG](Appearance-and-Styling_images/Appearance-and-Styling_img8.png)' | markdownify }}
-{:.image }
+
 
 
 _Schedule with header bar hidden_

@@ -120,6 +120,6 @@ $("#<%=dishtype.ClientID%> ul a").focus();
 The following screenshot illustrates the Tab with keyboard navigation.
 
 ![](Keyboard-Navigation_images/Keyboard-Navigation_img1.png) 
-{:.image }
+
 
 

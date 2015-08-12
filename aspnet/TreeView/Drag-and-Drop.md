@@ -133,10 +133,11 @@ In the ASPX page, add the elements to configure TreeView.
 <tr>
 <td>
 ![](Drag-and-Drop_images/Drag-and-Drop_img1.png)
-{:.image }
+
 {{ '_Node appearance while dragging_' | markdownify }}</td><td>
 {{ '_Node appearance after dropping_' | markdownify }}</td></tr>
 </table>
+
 ### Allow Drop Child
 
 You can allow the child level of specified node to be dropped in TreeView by using the AllowDropChild property, and it is specified in the controls section as follows.

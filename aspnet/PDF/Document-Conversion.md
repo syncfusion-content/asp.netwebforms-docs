@@ -49,17 +49,20 @@ HTML documents can be converted to PDF through the following methods:
 
 1. ConvertToImage
 
-The ConvertToImage method converts the URL into an image. It recognizes tables, images, lists, etc. The URL parameter can be a HTTP or HTTPS address such as "http://www.server.com/path/file.html", or a local physical path such as "c:\path\file.html".
+The ConvertToImage method converts the URL into an image. It recognizes tables, images, lists, etc. The URL parameter can be a 
+HTTP or HTTPS address such as "http://www.server.com/path/file.html", or a local physical path such as "c:\path\file.html".
 
-> _Note: If you want to open a dynamically generated document such as .asp or aspx file, you need to invoke it through HTTP even if this file is local to your own script._
+Note: If you want to open a dynamically generated document such as .asp or aspx file, you need to invoke it through HTTP even 
+if this file is local to your own script.
 
 
-The overloaded ConvertToImage method enables converting an HTML page to an image with AspectRatio to maintain the ratio of the image dimension. This prevents text truncation at the corners.
+The overloaded ConvertToImage method enables converting an HTML page to an image with AspectRatio to maintain the ratio of the 
+image dimension. This prevents text truncation at the corners.
 
 
 {% highlight c# %}
-[C#]
 
+[C#]
 
 
 //Creates a new PDF document.
@@ -105,10 +108,10 @@ pdfDocument.Save("Output.pdf");
 pdfDocument.Close(true);
 
 {% endhighlight %}
+
 {% highlight vbnet %}
 
 [VB]
-
 
 
 'Creates a new PDF document.
@@ -159,7 +162,10 @@ pdfDocument.Close(True)
 
 {% endhighlight %}
 
-> _Note: HTML To PDF conversion allows text selection and search within the generated document. However, in machines where IE9 is installed, document would contain Bitmap image of the converted page/file thereby restricting text selection and search. This behavior can be changed for certain webpages by changing the registry value. For more details, refer to Frequently Asked Questions section._
+Note: HTML To PDF conversion allows text selection and search within the generated document. However, in machines where IE9 
+is installed, document would contain Bitmap image of the converted page/file thereby restricting text selection and search. 
+This behavior can be changed for certain webpages by changing the registry value. For more details, refer to Frequently Asked 
+Questions section.
 
 Authentication
 
@@ -216,6 +222,7 @@ pdfDocument.Save("Output.pdf");
 pdfDocument.Close(true);
 
 {% endhighlight %}
+
 {% highlight vbnet %}
 [VB]
 
@@ -291,7 +298,7 @@ SizeF pageSize = page.Size;
 
 AspectRatio dimension = AspectRatio.None;
 
-string html = "&lt;html&gt;&lt;body&gt;<p>Hello World</p>&lt;/body&gt;&lt;/html&gt;";
+string html = "<html><body><p>Hello World</p></body></html>";
 
 //Declares layout format for the image.
 
@@ -340,7 +347,7 @@ Dim pageSize As SizeF = page.Size
 
 Dim dimension As AspectRatio = AspectRatio.None
 
-Dim html As String = "&lt;html&gt;&lt;body&gt;<p>Hello World</p>&lt;/body&gt;&lt;/html&gt;";
+Dim html As String = "<html><body><p>Hello World</p></body></html>";
 
 'Declaring the layout format for the image.
 
@@ -372,7 +379,7 @@ pdfDocument.Close(True)
 {% endhighlight  %}
 
 
-> _Note: Both ConvertToImage() and FromString() methods are used to convert the HTML pages whose height is less than 32767 pixels as image, and the options like  EnableHyperlinks, EnableJavascript  and AutoDetectPageBreak has no effect._
+Note: Both ConvertToImage() and FromString() methods are used to convert the HTML pages whose height is less than 32767 pixels as image, and the options like  EnableHyperlinks, EnableJavascript  and AutoDetectPageBreak has no effect.
 
 HtmlConverter Options
 
@@ -389,7 +396,7 @@ EnableJavaScript
 You can control the JavaScript by using the EnableJavaScript property of the HtmlConverter class library. By default this property is set to False. So the JavaScript code is disabled during conversion. Set the EnableJavaScript property to True to activate the JavaScript code during conversion.
 
 
-> _Note: If JavaScript code is not executed by setting the EnableJavaScript property, it means the Internet Security Settings on the server does not allow the JavaScript execution._
+Note: If JavaScript code is not executed by setting the EnableJavaScript property, it means the Internet Security Settings on the server does not allow the JavaScript execution.
 
 Enable Hyperlink
 
@@ -757,7 +764,7 @@ doc.Save("HtmlToPdf.pdf")
 
 Essential DocIO enables to export the Word document into a PDF document. By using the ConvertToPDF method of the DocToPDFConverter class, you can convert the Word document to PDF and save the PDF document.
 
-> _Note: You need to have Essential PDF and Essential DocIO installed in your system. This is because "Syncfusion.DocToPDFConverter.Base.dll" is conditionally shipped when both DocIO.Base and Pdf.Base is installed._
+Note: You need to have Essential PDF and Essential DocIO installed in your system. This is because "Syncfusion.DocToPDFConverter.Base.dll" is conditionally shipped when both DocIO.Base and Pdf.Base is installed.
 
 
 This section covers the following:
@@ -985,6 +992,7 @@ pdfDocument.Save("Sample.pdf");
 pdfDocument.Close(true);
 
 {% endhighlight %}
+
 {% highlight vbnet %}
 
 [VB]
@@ -1080,10 +1088,10 @@ pdfDocument.Save("Sample.pdf");
 
 pdfDocument.Close(true);
 
-{% endhighlight  %}
+{% endhighlight  %} 
+
 {% highlight vbnet %}
 [VB]
-
 
 
 'Creates a PDF document.
@@ -1162,11 +1170,11 @@ pdfDocument.Save("Sample.pdf");
 
 pdfDocument.Close(true);
 
-{% endhighlight  %}
+{% endhighlight  %} 
+
 {% highlight vbnet %}
 
 [VB]
-
 
 
 'Creates a PDF document.
@@ -1209,11 +1217,14 @@ pdfDocument.Close(True)
 
 An XPS (XML Paper Specification) document standardized by Ecma International can be converted to PDF.
 
-The XPS document format consists of XML structured markup that defines the layout of a document and the visual appearance of each page, along with rendering rules for distributing, archiving, rendering, processing, and printing the documents. Similar to PDF, XPS is also a fixed-layout document format that helps to preserve document fidelity and to achieve device-independent document appearance.
+The XPS document format consists of XML structured markup that defines the layout of a document and the visual appearance of 
+each page, along with rendering rules for distributing, archiving, rendering, processing, and printing the documents. Similar 
+to PDF, XPS is also a fixed-layout document format that helps to preserve document fidelity and to achieve device-independent 
+document appearance.
 
 XPS documents can be converted to PDF using the Convert method of the XPSToPdfConverter class.
 
-> _Note: You need to add the Syncfusion.XPS namespace to work with the XPSToPdfConverter class._
+Note: You need to add the Syncfusion.XPS namespace to work with the XPSToPdfConverter class.
 
 
 An XPS document can be converted into PDF using the following code sample.
@@ -1221,7 +1232,6 @@ An XPS document can be converted into PDF using the following code sample.
 {% highlight c# %}
 
 [C#]
-
 
 
 //Creates converter class.
@@ -1243,7 +1253,6 @@ document.Close(true);
 [VB]
 
 
-
 'Creates converter class.
 
 Dim converter As New XPSToPdfConverter()
@@ -1260,9 +1269,9 @@ document.Close(True)
 
 {% endhighlight %}
 
-Supported Elements
+#### Supported Elements
 
-_Table31: List of Supported Elements_
+Table31: List of Supported Elements
 
 <table>
 <tr>
@@ -1412,16 +1421,18 @@ No</td></tr>
 
 HTML to PDF conversion handled using MSHTML rendering library can now generate tagged PDF documents.
 
-Tagged PDF is a stylized use of PDF that builds on the logical structure framework. It defines a set of standard structure types and attributes that allow page content (text, graphics, and images) to be extracted and reused. The contents are accessible to users with visual impairments.
+Tagged PDF is a stylized use of PDF that builds on the logical structure framework. It defines a set of standard structure types 
+and attributes that allow page content (text, graphics, and images) to be extracted and reused. The contents are accessible to 
+users with visual impairments.
 
-HTML documents can be converted to tagged PDFs using the ConvertToTaggedPDF method. It returns PdfLayoutResult that provides the end rectangle bounds and PDF page after the conversion.
+HTML documents can be converted to tagged PDFs using the ConvertToTaggedPDF method. It returns PdfLayoutResult that provides 
+the end rectangle bounds and PDF page after the conversion.
 
 A tagged PDF can be converted from a Web page or HTML string by using the following code sample.
 
 {% highlight c# %}
 
 [C#]
-
 
 
 //Creates a new PdfDocument.
@@ -1449,9 +1460,9 @@ document.Save("Sample.pdf");
 document.Close(true);
 
 {% endhighlight %}
+
 {% highlight vbnet %}
 [VB]
-
 
 
 'Creates a new PdfDocument.
@@ -1482,7 +1493,8 @@ document.Close(True)
 
 {% endhighlight %}
 
-> _Note: The HTML to PDF conversion that creates a metafile during the evolution, would interpret the content as either text or an image. The outcome of this PDF would contain only paragraph and figure tags; hyperlinks are not supported._
+Note: The HTML to PDF conversion that creates a metafile during the evolution, would interpret the content as either text or 
+an image. The outcome of this PDF would contain only paragraph and figure tags; hyperlinks are not supported.
 
 ## Text Extraction
 
@@ -1511,10 +1523,10 @@ PdfPageBase page = ldoc.Pages[0];
 string s = page.ExtractText();
 
 {% endhighlight %}
+
 {% highlight vbnet %}
 
 [VB]
-
 
 
 'Loads an existing PDF.
@@ -1531,20 +1543,17 @@ Dim s As String = page.ExtractText()
 
 {% endhighlight %}
 
-> _Note: The text is  extracted in the order in which it is written in the document stream and not in the order in which it is viewed in the PDF viewer._
+Note: The text is  extracted in the order in which it is written in the document stream and not in the order in which it is 
+viewed in the PDF viewer.
 
 ## Image Extraction
-
-
 
 Essential PDF provides support to extract images from an existing PDF document. You can extract images by using the ExtractImages method in the PdfLoadedPage class.
 
 The following code example illustrates how to extract images from a PDF document.
 
-
 {% highlight c# %}
 [C#]
-
 
 
 //Loads an existing PDF.
@@ -1560,9 +1569,9 @@ Extracts images from first page.
 Image[] img = page.ExtractImages();
 
 {% endhighlight %}
+
 {% highlight vbnet %}
 [VB]
-
 
 
 'Loads an existing PDF.

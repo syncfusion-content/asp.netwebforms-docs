@@ -108,6 +108,6 @@ The following screenshot displays the output of the above code.
 
 
 ![](Keyboard-Navigation_images/Keyboard-Navigation_img1.png) 
-{:.image }
+
 
 

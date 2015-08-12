@@ -23,7 +23,8 @@ Initially, you can learn how to create a slide as follows.
 
 
 
-## Create an instance of IPresentationinterface as follows. Instance of IPresentation represents the root element of Presentation that in turn contains the collections of slides.
+Create an instance of IPresentationinterface as follows. Instance of IPresentation represents the root element of Presentation 
+that in turn contains the collections of slides.
 
 {% highlight c# %}
 
@@ -94,11 +95,7 @@ Refer to the following scrennshot.
 ![](Getting-started_images/Getting-started_img2.png)
 
 
-
-
-
 Now, add another textbox shape in the shape. Further, within the textbox shape, add two paragraphs as follows.
-
 
 
 {% highlight c# %}
@@ -153,7 +150,8 @@ Now this section demonstrates how to create a bulleted and numbered list in the 
 
 
 
-Add three textbox shape in the slide. A textbox shape to hold the title “Bulleted & Numbered List”, a textbox to hold the bulleted list in the left side of the slide and another textbox to hold the numbered list in the right side.
+Add three textbox shape in the slide. A textbox shape to hold the title “Bulleted & Numbered List”, a textbox to hold the 
+bulleted list in the left side of the slide and another textbox to hold the numbered list in the right side.
 
 The following code example explains how to add a new slide into the PowerPoint presentation.
 
@@ -165,7 +163,8 @@ ISlide secondSlide = presentation.Slides.Add(SlideLayoutType.Blank);
 
 {% endhighlight %}
 
-Add a new textbox at the top of the slide in order to set the title content for the slide. Further add a new paragraph within the newly created shape and add a text part with the text “Bulleted & Numbered List” as follows.
+Add a new textbox at the top of the slide in order to set the title content for the slide. Further add a new paragraph within 
+the newly created shape and add a text part with the text “Bulleted & Numbered List” as follows.
 
 
 
@@ -199,7 +198,8 @@ textPart.Font.FontName = "Calibri";
 
 {% endhighlight %}
 
-After setting the title content of the slide, then create two textboxes, one at the left hand side and other at the right hand side of the slide.
+After setting the title content of the slide, then create two textboxes, one at the left hand side and other at the right hand 
+side of the slide.
 
 {% highlight c# %}
 
@@ -213,7 +213,8 @@ IShape rightShape = secondSlide.AddTextBox(485, 140, 410, 250);
 
 {% endhighlight %}
 
-The ListFormat property of the paragraph represents all the list information. Some of the important properties are explained in the following table.
+The ListFormat property of the paragraph represents all the list information. Some of the important properties are explained 
+in the following table.
 
 <table>
 <tr>
@@ -251,11 +252,15 @@ Specifies the starting value of the numbered list. By default, it starts from 1<
 </table>
 
 
-Here, a new paragraph is added and the ListFormat property is accessed. In order to create a bulleted list, you can set the list type as bulleted (paragraph.ListFormat.Type = ListType.Bulleted;) and set its list level by using the property IndentLevelNumber as 1. Then set its bullet character, font name & size as follows. 
+Here, a new paragraph is added and the ListFormat property is accessed. In order to create a bulleted list, you can set the 
+list type as bulleted (paragraph.ListFormat.Type = ListType.Bulleted;) and set its list level by using the property 
+IndentLevelNumber as 1. Then set its bullet character, font name & size as follows. 
 
 
 
-Finally set the hanging indent of the paragraph with the property FirstLineIndent. There is no separate property for hanging indent and first line indent. If the value is positive, then the first line indent is applied, if the value is negative, then the hanging indent is applied.
+Finally set the hanging indent of the paragraph with the property FirstLineIndent. There is no separate property for hanging 
+indent and first line indent. If the value is positive, then the first line indent is applied, if the value is negative, then 
+the hanging indent is applied.
 
 
 
@@ -559,7 +564,8 @@ After adding the images into the slide, the slide looks like the following scree
 
 
 
-Finally, you can save the presentation by using Save method as follows. In order to release the resources utilized by presentation instance, make sure that the presentation gets closed finally.
+Finally, you can save the presentation by using Save method as follows. In order to release the resources utilized by 
+presentation instance, make sure that the presentation gets closed finally.
 
 {% highlight c# %}
 
@@ -573,7 +579,11 @@ presentation.Close();
 
 ## Creating a Chart in Presentation from scratch 
 
-Charts can convey much more than numbers and makes it easier to understand the meaning behind the numbers. A Slide can have more than 1 chart. You can access the chart present in the slide through the property ISlide.Charts that represents the collection of chart in the slide. The chart collection provides a method named AddChart to include a chart in the slide. In order to create a chart, you need the data to be represents as chart, serie and category information. The chart data is preserved within Presentation as an excel file (embedded). Filling the chart data values is like filling an excel sheet.
+Charts can convey much more than numbers and makes it easier to understand the meaning behind the numbers. A Slide can have 
+more than 1 chart. You can access the chart present in the slide through the property ISlide.Charts that represents the 
+collection of chart in the slide. The chart collection provides a method named AddChart to include a chart in the slide. In 
+order to create a chart, you need the data to be represents as chart, serie and category information. The chart data is 
+preserved within Presentation as an excel file (embedded). Filling the chart data values is like filling an excel sheet.
 
 Create a new presentation with one slide as follows.
 
@@ -589,7 +599,8 @@ ISlide slide = presentation.Slides.Add(SlideLayoutType.Blank);
 
 {% endhighlight %}
 
-The chart is represented by IOfficeChart interface in the Essential Presentation. Now, in the next step add a new chart into the slide.
+The chart is represented by IOfficeChart interface in the Essential Presentation. Now, in the next step add a new chart into 
+the slide.
 
 {% highlight c# %}
 
@@ -599,7 +610,8 @@ IOfficeChart chart = slide.Charts.AddChart(100, 150, 800, 350);
 
 {% endhighlight %}
 
-Chart title and its formatting is set by using ChartTitle property of IOfficeChart and ChartTitleArea property of IOfficeChart respectively. 
+Chart title and its formatting is set by using ChartTitle property of IOfficeChart and ChartTitleArea property of IOfficeChart 
+respectively. 
 
 {% highlight c# %}
 
@@ -613,7 +625,7 @@ chart.ChartTitleArea.Bold = true;
 
 The chart type is specified with the help of ChartType property of IOfficeChart interface. 
 
-> Note: 3D charts are not supported in image & PDF conversion.
+Note: 3D charts are not supported in image & PDF conversion.
 
 
 
@@ -625,7 +637,9 @@ chart.ChartType = OfficeChartType.Column_Clustered;
 
 {% endhighlight %}
 
-All the chart data is preserved in the PowerPoint presentation as an embedded excel sheet. The data is filled by having an excel sheet in mind. The chart data is added into the presentation by using ChartData property of IOfficeChart. This ChartData provides APIs for setting the value. 
+All the chart data is preserved in the PowerPoint presentation as an embedded excel sheet. The data is filled by having an 
+excel sheet in mind. The chart data is added into the presentation by using ChartData property of IOfficeChart. This 
+ChartData provides APIs for setting the value. 
 
 {% highlight c# %}
 
@@ -701,7 +715,9 @@ After filling these data, the embedded excel sheet looks like the following scre
 
 
 
-Once the chart data is added, you need to specify the Chart serie and category for chart creation. IOfficeChartSerie interface represents the chart serie and Collection of chart serie that is accessed by the Series property of IOfficeChart interface. The following code example creates three series and set its data range.
+Once the chart data is added, you need to specify the Chart serie and category for chart creation. IOfficeChartSerie interface 
+represents the chart serie and Collection of chart serie that is accessed by the Series property of IOfficeChart interface. The 
+following code example creates three series and set its data range.
 
 {% highlight c# %}
 
@@ -741,7 +757,8 @@ chart.PrimaryCategoryAxis.CategoryLabels = chart.ChartData[2, 1, 7, 1];
 
 {% endhighlight %}
 
-Finally, save the presentation by using the Save method as follows. In order to release the resources utilized by presentation instance, make sure that the presentation is closed finally.
+Finally, save the presentation by using the Save method as follows. In order to release the resources utilized by presentation 
+instance, make sure that the presentation is closed finally.
 
 {% highlight c# %}
 
@@ -777,7 +794,9 @@ For converting a Presentation file or a slide into PDF, the following assemblies
 
 
 
-PresentationToPdfConverter class is responsible for converting an entire Presentation or a slide into PDF. You can pass the instance of Presentation or slide to the Convert method of PresentationToPdfConverter class and this method returns an instance of PDF document. 
+PresentationToPdfConverter class is responsible for converting an entire Presentation or a slide into PDF. You can pass the 
+instance of Presentation or slide to the Convert method of PresentationToPdfConverter class and this method returns an instance 
+of PDF document. 
 
 
 
@@ -801,14 +820,16 @@ Converts the specified Presentation into PDF document with respect to settings</
 </table>
 
 
-PresentationToPdfConverterSettings is used to customize the conversion of Presentation to PDF document. This settings class has two properties for customizing the conversion
+PresentationToPdfConverterSettings is used to customize the conversion of Presentation to PDF document. This settings class has 
+two properties for customizing the conversion
 
 1. ShowHiddenSlide – When true, converts the hidden slide also.
 2. SlidesPerPage – Specifies the number of slides per PDF page.
 
 
 
-Instance of ChartToImageConverter class is mandatory to convert the charts present in the presentation to PDF. ChartToImageConverter class resides within Syncfusion.OfficeChartToImageConverter.WPF assembly.  When ChartToImageConverter property of Presentation is not registered with ChartToImageConverter instance as follows, then the charts are not exported to PDF file.
+Instance of ChartToImageConverter class is mandatory to convert the charts present in the presentation to PDF. 
+ChartToImageConverter class resides within Syncfusion.OfficeChartToImageConverter.WPF assembly.  When ChartToImageConverter property of Presentation is not registered with ChartToImageConverter instance as follows, then the charts are not exported to PDF file.
 
 {% highlight c# %}
 

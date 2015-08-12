@@ -23,9 +23,9 @@ The following are the list of attributes available under PdfDocumentInformation 
 * Title and so on
 
  The following code example illustrates how to read the document information.
+
 {% highlight c# %}
 [C#]
-
 
 
 PdfLoadedDocument document = new PdfLoadedDocument("input.pdf");
@@ -44,10 +44,10 @@ Console.WriteLine(document.DocumentInformation.Creator);
 
 Console.WriteLine(document.DocumentInformation.Producer);
 {% endhighlight %}
+
 {% highlight vbnet %}
 
 [VB]
-
 
 
 Dim document As New PdfLoadedDocument("input.pdf")
@@ -68,7 +68,7 @@ Console.WriteLine(document.DocumentInformation.Producer)
 
 {% endhighlight %}
 
-> _Note: You can write the document information with the newly created document._
+Note: You can write the document information with the newly created document.
 
 The following code example illustrates how to write the document information.
 {% highlight c# %}
@@ -173,9 +173,9 @@ document.Close(True)
 The Document settings help in storing information about the document. It can also control the way they are displayed when they are open in the viewer.
 
 ![C:/Users/george/Desktop/UGScreenShots/DocumentInformation.png](Document-Settings_images/Document-Settings_img2.png)
-{:.image }
 
-> _Note: You cannot overwrite the existing metadata information._
+
+Note: You cannot overwrite the existing metadata information.
 
 ### Viewer Preference
 
@@ -333,6 +333,6 @@ document.Close(True)
 {% endhighlight %}
 
 ![](Document-Settings_images/Document-Settings_img4.png)
-{:.image }
+
 
 

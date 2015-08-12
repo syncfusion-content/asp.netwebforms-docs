@@ -787,7 +787,7 @@ In an ASPX page, define the Split Button control and set custom CSS class.
 Define the style for the Split Button control.
 
 
-{% highlight html %}
+{% highlight css %}
        // Customizes the button background 
 
 

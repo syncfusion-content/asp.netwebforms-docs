@@ -244,13 +244,121 @@ The following code example shows you how load on demand works with Schedule.
 
 
 {% highlight html %}
-<%-- Enable load on demand property to the schedule -- %><asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"><div><ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" Width="100%" Height="525px" EnableLoadOnDemand="true" EnableAppointmentNavigation="false" CurrentDate="5/2/2014"><DataManager  URL="LoadOnDemand.aspx/Data" Adaptor="UrlAdaptor" /><AppointmentSettings Id="ID" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" /></ej:Schedule></div></asp:Content>
+<%-- Enable load on demand property to the schedule -- %>
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
+<div>
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" Width="100%" Height="525px" EnableLoadOnDemand="true" EnableAppointmentNavigation="false" CurrentDate="5/2/2014">
+<DataManager  URL="LoadOnDemand.aspx/Data" Adaptor="UrlAdaptor" />
+<AppointmentSettings Id="ID" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" />
+</ej:Schedule>
+</div>
+</asp:Content>
 {% endhighlight %}
 
 
-//Refer the required namespacepublic
+//Refer the required namespace
+
+
 {% highlight C# %}
-  partial class LoadOnDemand : System.Web.UI.Page{protected void Page_Load(object sender, EventArgs e){HttpContext.Current.Session["Appointments"] = null;}//To Get the records from database then filter the collection and return appointment list with count details.[WebMethod][ScriptMethod(ResponseFormat = ResponseFormat.Json)]public static object Data(String CurrentView, String CurrentAction, DateTime CurrentDate){var data = FilterAppointment(CurrentDate, CurrentAction, CurrentView);BatchDataResult result = new BatchDataResult();result.result = data;result.count = GetAllRecords ().ToList ().Count > 0? GetAllRecords().ToList().Max(p => p.ID) : 1;return result;}public class BatchDataResult{public IEnumerable result { get; set; }public int count { get; set; }}public static ScheduleAppointmentsObjData GetObjectValue(Dictionary<string, object> objValue){Dictionary<string, object> KeyVal = objValue;ScheduleAppointmentsObjData appointValue = new ScheduleAppointmentsObjData();foreach (KeyValuePair<string, object> keyval in KeyVal){if (keyval.Key == "ID")appointValue.ID = Convert.ToInt32(keyval.Value);else if (keyval.Key == "Subject")appointValue.Subject = Convert.ToString(keyval.Value);else if (keyval.Key == "Location")appointValue.Location = Convert.ToString(keyval.Value);else if (keyval.Key == "StartTime")appointValue.StartTime = Convert.ToDateTime(keyval.Value).ToString("MM'/'dd'/'yyyy hh:mm:ss tt");else if (keyval.Key == "EndTime")appointValue.EndTime = Convert.ToDateTime(keyval.Value).ToString("MM'/'dd'/'yyyy hh:mm:ss tt");else if (keyval.Key == "Description")appointValue.Description = Convert.ToString(keyval.Value);else if (keyval.Key == "AllDay")appointValue.AllDay = Convert.ToBoolean(keyval.Value);else if (keyval.Key == "Recurrence")appointValue.Recurrence = Convert.ToBoolean(keyval.Value);else if (keyval.Key == "RecurrenceRule")appointValue.RecurrenceRule = Convert.ToString(keyval.Value);}return appointValue;}public static IList<ScheduleAppointmentsObjData> GetAllRecords(){IList<ScheduleAppointmentsObjData> appoint = (IList<ScheduleAppointmentsObjData>)HttpContext.Current.Session["Appointments"];ScheduleAppointmentsObjDatum obj = new ScheduleAppointmentsObjDatum();if (appoint == null)HttpContext.Current.Session["Appointments"] = appoint = obj.GetRecords().ToList();return appoint;}//To filter the appointment based on current date, current action and current viewpublic static List<ScheduleAppointmentsObjData> FilterAppointment(DateTime CurrentDate, String CurrentAction, String CurrentView){DateTime CurrDate = Convert.ToDateTime(CurrentDate);DateTime StartDate = FirstWeekDate(CurrDate.Date);DateTime EndDate = FirstWeekDate(CurrDate.Date);List<ScheduleAppointmentsObjData> appointmentList = GetAllRecords().ToList();switch (CurrentView){case "day":StartDate = CurrentDate;EndDate = CurrentDate;break;case "week":EndDate = EndDate.AddDays(7);break;case "workweek":EndDate = EndDate.AddDays(5);break;case "month":StartDate = CurrDate.Date.AddDays(-CurrDate.Day + 1);EndDate = StartDate.AddMonths(1);break;}appointmentList = GetAllRecords().ToList().Where(app =>((DateTime.ParseExact(app.StartTime.ToString(), "MM/dd/yyyy hh:mm:ss tt", CultureInfo.InvariantCulture).ToLocalTime().Date >= Convert.ToDateTime(StartDate.Date)) &&(DateTime.ParseExact(app.StartTime.ToString(), "MM/dd/yyyy hh:mm:ss tt", CultureInfo.InvariantCulture).ToLocalTime().Date <= Convert.ToDateTime(EndDate.Date)) || app.Recurrence == true)).ToList();return appointmentList;}//To Get first day of schedule based on current dateinternal static DateTime FirstWeekDate(DateTime CurrentDate){try{DateTime FirstDayOfWeek = CurrentDate;DayOfWeek WeekDay = FirstDayOfWeek.DayOfWeek;switch (WeekDay){case DayOfWeek.Sunday:break;case DayOfWeek.Monday:FirstDayOfWeek = FirstDayOfWeek.AddDays(-1);break;case DayOfWeek.Tuesday:FirstDayOfWeek = FirstDayOfWeek.AddDays(-2);break;case DayOfWeek.Wednesday:FirstDayOfWeek = FirstDayOfWeek.AddDays(-3);break;case DayOfWeek.Thursday:FirstDayOfWeek = FirstDayOfWeek.AddDays(-4);break;case DayOfWeek.Friday:FirstDayOfWeek = FirstDayOfWeek.AddDays(-5);break;case DayOfWeek.Saturday:FirstDayOfWeek = FirstDayOfWeek.AddDays(-6);break;}return (FirstDayOfWeek);}catch{return DateTime.Now;}}
+ public partial class LoadOnDemand : System.Web.UI.Page
+ { protected void Page_Load(object sender, EventArgs e)
+ {HttpContext.Current.Session["Appointments"] = null;}
+ //To Get the records from database then filter the collection and return appointment list with count details.
+ [WebMethod]
+ [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+ public static object Data(String CurrentView, String CurrentAction, DateTime CurrentDate)
+ {
+ var data = FilterAppointment(CurrentDate, CurrentAction, CurrentView);
+ BatchDataResult result = new BatchDataResult();
+ result.result = data;result.count = GetAllRecords ().ToList ().Count > 0? GetAllRecords().ToList().Max(p => p.ID) : 1;
+ return result;
+ }
+ public class BatchDataResult
+ {
+ public IEnumerable result { get; set; }
+ public int count { get; set; }
+ }
+ public static ScheduleAppointmentsObjData GetObjectValue(Dictionary<string, object> objValue)
+ {
+ Dictionary<string, object> KeyVal = objValue;
+ ScheduleAppointmentsObjData appointValue = new ScheduleAppointmentsObjData();
+ foreach (KeyValuePair<string, object> keyval in KeyVal)
+ {
+ if (keyval.Key == "ID")appointValue.ID = Convert.ToInt32(keyval.Value);
+ else if (keyval.Key == "Subject")appointValue.Subject = Convert.ToString(keyval.Value);
+ else if (keyval.Key == "Location")appointValue.Location = Convert.ToString(keyval.Value);
+ else if (keyval.Key == "StartTime")appointValue.StartTime = Convert.ToDateTime(keyval.Value).ToString("MM'/'dd'/'yyyy hh:mm:ss tt");
+ else if (keyval.Key == "EndTime")appointValue.EndTime = Convert.ToDateTime(keyval.Value).ToString("MM'/'dd'/'yyyy hh:mm:ss tt");
+ else if (keyval.Key == "Description")appointValue.Description = Convert.ToString(keyval.Value);
+ else if (keyval.Key == "AllDay")appointValue.AllDay = Convert.ToBoolean(keyval.Value);
+ else if (keyval.Key == "Recurrence")appointValue.Recurrence = Convert.ToBoolean(keyval.Value);
+ else if (keyval.Key == "RecurrenceRule")appointValue.RecurrenceRule = Convert.ToString(keyval.Value);
+ }
+ return appointValue;
+ }
+ public static IList<ScheduleAppointmentsObjData> GetAllRecords()
+ {
+ IList<ScheduleAppointmentsObjData> appoint = (IList<ScheduleAppointmentsObjData>)HttpContext.Current.Session["Appointments"];ScheduleAppointmentsObjDatum obj = new ScheduleAppointmentsObjDatum();
+ if (appoint == null)HttpContext.Current.Session["Appointments"] = appoint = obj.GetRecords().ToList();
+ return appoint;
+ }
+ //To filter the appointment based on current date, current action and current view
+ 
+ public static List<ScheduleAppointmentsObjData> FilterAppointment(DateTime CurrentDate, String CurrentAction, String CurrentView)
+ {
+ DateTime CurrDate = Convert.ToDateTime(CurrentDate);
+ DateTime StartDate = FirstWeekDate(CurrDate.Date);DateTime EndDate = FirstWeekDate(CurrDate.Date);
+ List<ScheduleAppointmentsObjData> appointmentList = GetAllRecords().ToList();
+ switch (CurrentView)
+ {
+ case "day":StartDate = CurrentDate;EndDate = CurrentDate;
+ break;
+ case "week":EndDate = EndDate.AddDays(7);
+ break;
+ case "workweek":EndDate = EndDate.AddDays(5);
+ break;
+ case "month":StartDate = CurrDate.Date.AddDays(-CurrDate.Day + 1);
+ EndDate = StartDate.AddMonths(1);
+ break;
+ }
+ appointmentList = GetAllRecords().ToList().Where(app =>((DateTime.ParseExact(app.StartTime.ToString(), 
+ "MM/dd/yyyy hh:mm:ss tt", CultureInfo.InvariantCulture).ToLocalTime().Date >= Convert.ToDateTime(StartDate.Date)) 
+ &&(DateTime.ParseExact(app.StartTime.ToString(), "MM/dd/yyyy hh:mm:ss tt", 
+ CultureInfo.InvariantCulture).ToLocalTime().Date <= Convert.ToDateTime(EndDate.Date)) ||
+ app.Recurrence == true)).ToList();return appointmentList;
+ }
+ //To Get first day of schedule based on current date
+ internal static DateTime FirstWeekDate(DateTime CurrentDate)
+ {
+ try
+ {
+ DateTime FirstDayOfWeek = CurrentDate;
+ DayOfWeek WeekDay = FirstDayOfWeek.DayOfWeek;
+ switch (WeekDay)
+ {
+ case DayOfWeek.Sunday:
+ break;
+ case DayOfWeek.Monday:
+ FirstDayOfWeek = FirstDayOfWeek.AddDays(-1);
+ break;
+ case DayOfWeek.Tuesday:FirstDayOfWeek = FirstDayOfWeek.AddDays(-2);
+ break;
+ case DayOfWeek.Wednesday:FirstDayOfWeek = FirstDayOfWeek.AddDays(-3);
+ break;
+ case DayOfWeek.Thursday:FirstDayOfWeek = FirstDayOfWeek.AddDays(-4);
+ break;
+ case DayOfWeek.Friday:FirstDayOfWeek = FirstDayOfWeek.AddDays(-5);
+ break;
+ case DayOfWeek.Saturday:FirstDayOfWeek = FirstDayOfWeek.AddDays(-6);
+ break;
+ }
+ return (FirstDayOfWeek);
+ }
+ catch
+ {
+ return DateTime.Now;
+ }
+ }
 
 {% endhighlight %}
 

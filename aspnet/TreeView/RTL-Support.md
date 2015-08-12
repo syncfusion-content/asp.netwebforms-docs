@@ -127,8 +127,8 @@ In the ASPX page, add an element to configure TreeView.
 
 
 
-{ ![](RTL-Support_images/RTL-Support_img1.png) | markdownify }
-{:.image }
+![](RTL-Support_images/RTL-Support_img1.png) 
+
 
 
 

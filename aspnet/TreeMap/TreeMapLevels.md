@@ -46,28 +46,28 @@ You can use GroupGap property to separate the items from every flat level and t
 
 [ASPX]
 
-&lt;ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth"&gt;
+<ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth">
 
 
 
-&lt;Levels&gt;
+<Levels>
 
-       &lt;ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25"&gt;
-
-
-
-       &lt;/ej:TreeMapLevel&gt;
-
-&lt;/Levels&gt;
+       <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25">
 
 
 
-&lt;/ej:Treemap&gt;
+       </ej:TreeMapLevel>
+
+</Levels>
+
+
+
+</ej:Treemap>
 
 {% endhighlight %}
 
 ![](TreeMapLevels_images/TreeMapLevels_img1.png)
-{:.image }
+
 
 
 ## HierarchicalLevel
@@ -156,15 +156,15 @@ public class SalesData
 
 [ASPX]
 
-&lt;ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth"&gt;
+<ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth">
 
 
 
-&lt;/ej:Treemap&gt;       
+</ej:Treemap>       
 
 {% endhighlight %}
 
 ![C:/Users/ApoorvahR/Desktop/1.png](TreeMapLevels_images/TreeMapLevels_img2.png) 
-{:.image }
+
 
 

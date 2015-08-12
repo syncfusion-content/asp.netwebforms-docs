@@ -129,8 +129,8 @@ In the ASPX page, add an elements to configure TreeView.
 
 
 
-{ ![](Node-Persistence-Handling_images/Node-Persistence-Handling_img1.png) | markdownify }
-{:.image }
+![](Node-Persistence-Handling_images/Node-Persistence-Handling_img1.png) 
+
 
 
 

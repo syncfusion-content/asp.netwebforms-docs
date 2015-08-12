@@ -93,7 +93,7 @@ To create a new web form in the application
 
 ### Add the script files and CSS files in the &lttitle&gt tag of the default.html page.
 
-> Note: Use the following code example while adding scripts and styles.
+Note: Use the following code example while adding scripts and styles.
 
 
 {% highlight html %}
@@ -142,7 +142,7 @@ To create a new web form in the application
    ~~~
    {:.prettyprint }
 	
-   > Note: Add your report files to your application’s App_Data folder.You can obtain sample rdl/rdlc files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\ XX.X.X.XX\Common\Data\ejReportTemplate). “X.X.X.X” is the Essential Studio Release Version.
+   Note: Add your report files to your application’s App_Data folder.You can obtain sample rdl/rdlc files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\ XX.X.X.XX\Common\Data\ejReportTemplate). “X.X.X.X” is the Essential Studio Release Version.
 	
 ## Add WebAPI controller for ReportViewer
 

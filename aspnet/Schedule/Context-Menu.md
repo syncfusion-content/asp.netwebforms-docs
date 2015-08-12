@@ -84,7 +84,7 @@ Execute the above code to render the following output.
 
  _Figure_ _98_:  schedule with appointment menu items_
 
-###Categorize 
+## Categorize 
 
 * A new default menu item is included in the appointment menu items to support the categorize option through context menu. 
 * The categorize data collection that are passed through the categorizesettings is utilised in rendering the categorize options in the context menu. 
@@ -192,7 +192,7 @@ public string color { set; get; }
 ![C:/Users/hariprasanths/Desktop/imagess/123/Capture2.PNG](Context-Menu_images/Context-Menu_img2.png)
 
 
-###Cells 
+## Cells 
 
 * By default, the cells menu options are provided with 5 items namely New Appointment, New Recurring Appointment, Today, Go to Date and Settings with sub-options for views, time-mode and highlighting business hours. 
 * You can customize and use your own custom menu itemsby replacing the cell menu items with the desired collection as explained in the following code example.

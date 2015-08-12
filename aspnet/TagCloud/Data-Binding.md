@@ -39,24 +39,18 @@ Local databinding allows you to map JSON data to TagCloud that the corresponding
 
 ### Defining the Local data for TagCloud
 
-The following explains the local data binding to the TagCloud control. In the ASPX page, include the TagCloud control code example.
+The following explains the local data binding to the TagCloud control. In the ASPX page, include the TagCloud control code 
+example.
 
-
-
-<table>
-<tr>
-<td>
-&lt;ej:TagCloud ID="tagcloud" runat="server" DataTextField="text" DataUrlField="url" DataFrequencyField="frequency"&gt; &lt;/ej:TagCloud&gt;</td></tr>
-<tr>
-<td>
-</td></tr>
-</table>
 
 
 
 
 {% highlight c# %}
 
+<ej:TagCloud ID="tagcloud" runat="server" DataTextField="text" DataUrlField="url" DataFrequencyField="frequency">
+ </ej:TagCloud> 
+ 
 protected void Page_Load(object sender, EventArgs e)
 
         {
@@ -163,7 +157,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 The following screenshot displays the TagCloud control with local data binding.
  ![](Data-Binding_images/Data-Binding_img1.png) 
-{:.image }
+
 
 
 ## Remote Binding
@@ -181,7 +175,7 @@ To bind local data to the TagCloud control, include the following TagCloud contr
 <table>
 <tr>
 <td>
-&lt;ej:TagCloud ID="tagcloud" runat="server" DataTextField="CustomerID" Query="ej.Query().from('Orders').take(10)" DataFrequencyField="EmployeeID"&gt;&lt;/ej:TagCloud&gt;</td></tr>
+<ej:TagCloud ID="tagcloud" runat="server" DataTextField="CustomerID" Query="ej.Query().from('Orders').take(10)" DataFrequencyField="EmployeeID"></ej:TagCloud></td></tr>
 <tr>
 <td>
 </td></tr>
@@ -209,7 +203,7 @@ protected void Page_Load(object sender, EventArgs e)
 The following screenshot displays the TagCloud control with remote data binding.
 
 ![](Data-Binding_images/Data-Binding_img2.png) 
-{:.image }
+
 
 
 

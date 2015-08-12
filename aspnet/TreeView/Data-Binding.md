@@ -183,8 +183,8 @@ public class TreeLocalDataSource
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img1.png) | markdownify }
-{:.image }
+![](Data-Binding_images/Data-Binding_img1.png) 
+
 
 
 ### Remote Data
@@ -235,8 +235,8 @@ protected void Page_Load(object sender, EventArgs e)
 
 
 
-{ ![D:/RESPONSE/UG DOC/remotedata.PNG](Data-Binding_images/Data-Binding_img2.png) | markdownify }
-{:.image }
+![D:/RESPONSE/UG DOC/remotedata.PNG](Data-Binding_images/Data-Binding_img2.png) 
+
 
 
 ### SQL Data
@@ -252,11 +252,11 @@ The following image displays the sample database used.
 <table>
 <tr>
 <td>
-![](Data-Binding_images/Data-Binding_img3.png)
-{:.image }
+{{ '![](Data-Binding_images/Data-Binding_img3.png)' | markdownify }}
+
 </td><td>
-![](Data-Binding_images/Data-Binding_img4.png)
-{:.image }
+{{ '![](Data-Binding_images/Data-Binding_img4.png)' | markdownify }}
+
 </td></tr>
 </table>
 In the Design page, assign the values for DataTextField, DataIdField, DataParentIdField, DataHasChildField. In DataSourceID field assign the ID of the existing SQL data source
@@ -279,8 +279,8 @@ In the Design page, assign the values for DataTextField, DataIdField, DataParent
 
 {% endhighlight %}
 
-{ ![](Data-Binding_images/Data-Binding_img5.png) | markdownify }
-{:.image }
+![](Data-Binding_images/Data-Binding_img5.png) 
+
 
 
 ### Object DataSource
@@ -459,8 +459,8 @@ In the Design page, assign the values for DataTextField, DataIdField, DataParent
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img6.png) | markdownify }
-{:.image }
+![](Data-Binding_images/Data-Binding_img6.png) 
+
 
 
 ### Linq-to-SQL Data
@@ -476,11 +476,11 @@ Define a Linq-to-SQL data source in the web page and configure the data source a
 <table>
 <tr>
 <td>
-![](Data-Binding_images/Data-Binding_img7.png)
-{:.image }
+{{ '![](Data-Binding_images/Data-Binding_img7.png)' | markdownify }}
+
 </td><td>
-![](Data-Binding_images/Data-Binding_img8.png)
-{:.image }
+{{ '![](Data-Binding_images/Data-Binding_img8.png)' | markdownify }}
+
 </td></tr>
 </table>
 In the Design page, assign values for DataTextField, DataIdField, DataParentIdField DataHasChildField. In DataSourceID field assign the ID of the existing Linq-to-SQL data source.
@@ -505,8 +505,8 @@ DataExpandedField="Expanded">
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img9.png) | markdownify }
-{:.image }
+![](Data-Binding_images/Data-Binding_img9.png) 
+
 
 
 ### XML Data
@@ -605,8 +605,8 @@ Load the nodes of TreeView in the xml data as follows.
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img10.png) | markdownify }
-{:.image }
+![](Data-Binding_images/Data-Binding_img10.png) 
+
 
 
 

@@ -54,7 +54,7 @@ Add the following styles to render the WaitingPopup control
 The following screenshot displays the output for the above code.
 
  ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
-{:.image }
+
 
 
 ## Template
@@ -103,7 +103,7 @@ Add the following code example to the corresponding ASPX page to render the Wait
 
 In CSS, the custom styles need to be configured for the WaitingPopup.
 
-_Note: Images for this sample are available at ‘installed location/Content/images’ and images are to be defined in the mentioned CSS. Then the images are displayed._
+Note: Images for this sample are available at ‘installed location/Content/images’ and images are to be defined in the mentioned CSS. Then the images are displayed.
 
 {% highlight css %}
 
@@ -208,7 +208,7 @@ _Note: Images for this sample are available at ‘installed location/Content/ima
 Run the above code for the following output.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
-{:.image }
+
 
 
 ## CSS Class
@@ -274,7 +274,7 @@ Define the CSS class for customizing the WaitingPopup control.
 The following screenshot displays the output for the above code.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
-{:.image }
+
 
 
 

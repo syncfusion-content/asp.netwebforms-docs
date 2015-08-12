@@ -64,37 +64,37 @@ protected void Page_Load(object sender, EventArgs e)
 
 
 
-    &lt;div style="min-height:404px"&gt;
+    <div style="min-height:404px">
 
-    &lt;ej:TreeMap ID="treemap" runat="server"  EnableDrillDown = "true" DrillDownHeaderColor= "#199DAF" drillDownSelectionColor = "#199DAF" WeightValuePath="Population" &gt;
+    <ej:TreeMap ID="treemap" runat="server"  EnableDrillDown = "true" DrillDownHeaderColor= "#199DAF" drillDownSelectionColor = "#199DAF" WeightValuePath="Population" >
 
-        &lt;TreeMapUniColorMapping Color = "#CCDFE3"&gt;&lt;/TreeMapUniColorMapping&gt;
+        <TreeMapUniColorMapping Color = "#CCDFE3"></TreeMapUniColorMapping>
 
-        &lt;Levels&gt;
+        <Levels>
 
-            &lt;ej:TreeMapLevel GroupPath = "Continent" ShowLabels = "true" GroupGap = "5" HeaderHeight = "25"&gt;&lt;/ej:TreeMapLevel&gt;
+            <ej:TreeMapLevel GroupPath = "Continent" ShowLabels = "true" GroupGap = "5" HeaderHeight = "25"></ej:TreeMapLevel>
 
-            &lt;ej:TreeMapLevel GroupPath = "Country" ShowLabels = "true" GroupGap = "0" HeaderHeight = "25"&gt;&lt;/ej:TreeMapLevel&gt;
+            <ej:TreeMapLevel GroupPath = "Country" ShowLabels = "true" GroupGap = "0" HeaderHeight = "25"></ej:TreeMapLevel>
 
-            &lt;ej:TreeMapLevel GroupPath = "Name" ShowLabels = "true" GroupGap = "0" HeaderHeight = "25"&gt;&lt;/ej:TreeMapLevel&gt;
+            <ej:TreeMapLevel GroupPath = "Name" ShowLabels = "true" GroupGap = "0" HeaderHeight = "25"></ej:TreeMapLevel>
 
-        &lt;/Levels&gt;
+        </Levels>
 
-    &lt;/ej:TreeMap&gt;
+    </ej:TreeMap>
 
-    &lt;/div&gt;
+    </div>
 
 
 {% endhighlight  %}
 
 ![C:/Users/NitishS/Desktop/Screenshot (106).png](Drill-Down-Support_images/Drill-Down-Support_img1.png) 
-{:.image }
+
 
 
 
 
 ![DrillDown](Drill-Down-Support_images/Drill-Down-Support_img2.png) 
-{:.image }
+
 
 
 

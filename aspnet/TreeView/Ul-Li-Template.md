@@ -213,7 +213,7 @@ Define css for Ui-Li template
 
 
 
-{ ![](Ul-Li-Template_images/Ul-Li-Template_img1.png) | markdownify }
-{:.image }
+![](Ul-Li-Template_images/Ul-Li-Template_img1.png) 
+
 
 

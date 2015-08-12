@@ -47,7 +47,7 @@ In the ASPX page, configure element UploadBox element to enable the drag and dro
 
 {% endhighlight %}
 
-> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
+Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 In CSS, configure the custom styles for drag and drop.
 

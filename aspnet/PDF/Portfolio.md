@@ -72,6 +72,7 @@ document.Save("Sample.pdf");
 document.Close(true);
 
 {% endhighlight  %}
+
 {% highlight vbnet %}
 [VB]
 
@@ -132,7 +133,9 @@ document.Close(True)
 
 ## Schema Field
 
-Schema field is used to specify the file property such as Name, Description, and Size. You can create the custom shema using the PdfPortfolioSchema class and add the custom field into the schema using PdfPortfolioSchemaField class. Once the custom field is created, you must provide the attributes to the fields by using the PdfPortfolioAttributes class.
+Schema field is used to specify the file property such as Name, Description, and Size. You can create the custom shema using 
+the PdfPortfolioSchema class and add the custom field into the schema using PdfPortfolioSchemaField class. Once the custom 
+field is created, you must provide the attributes to the fields by using the PdfPortfolioAttributes class.
 
 Please refer the following code sample.
 
@@ -251,12 +254,12 @@ document.Pages.Add();
 document.Save("Sample.pdf");
 
 document.Close(true);
+
 {% endhighlight  %}
+
 {% highlight vbnet %}
 
 [VB]
-
-
 
 'Creates a new instance of PdfDocument class.
 

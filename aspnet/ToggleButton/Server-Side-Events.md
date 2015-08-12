@@ -21,7 +21,11 @@ Argument Details</td></tr>
 <td>
 OnChange</td><td>
 It is raised when the Toggle Button is clicked.</td><td>
-Event Argument contains the following parameters:e.Status - Status of Togglebutton.e.IsChecked - Checked Status of Togglebuttone.EventType - Event Namee.Arguments - Contain keys and values for Status.</td></tr>
+Event Argument contains the following parameters:e.Status - Status of Togglebutton.
+e.IsChecked - Checked Status of Togglebutton
+e.EventType - Event Name
+e.Arguments - Contain keys and values for Status.
+</td></tr>
 </table>
 
 

@@ -9,13 +9,15 @@ documentation: ug
 
 # Localization and Translation Support
 
-Localization is the__process of customizing the user interface (UI) as locale-specific in order to display regional data. Using this feature, you can display the data in a specific language and culture, of a particular country or region. The ASP.NET OlapGauge control provides inherent support to localize its UI.
+Localization is the process of customizing the user interface (UI) as locale-specific in order to display regional data.
+Using this feature, you can display the data in a specific language and culture, of a particular country or region. 
+The ASP.NET OlapGauge control provides inherent support to localize its UI.
 
 The following table lists the default English localization User Interface based on French culture.
 
 
 
-_Table: List of default English localization User Interface based on French culture_
+Table: List of default English localization User Interface based on French culture
 
 
 
@@ -185,12 +187,12 @@ The following code example illustrates you on how to localize OlapGuage’s User
 {% endhighlight %}
 
 
-![C:/Users/labuser/Desktop/note.jpg](Localization-and-Translation-Support_images/Localization-and-Translation-Support_img1.jpeg) 
+ 
 
-_Note: In order to render the localized OLAP Gauge, You are required to reset the content available in both_
+Note: In order to render the localized OLAP Gauge, You are required to reset the content available in both
 
-1. _OLAP Gauge Control_
-2. _OLAP Cube_
+1. OLAP Gauge Control
+2. OLAP Cube
 
 ## Localizing Control Information:
 
@@ -211,7 +213,7 @@ ej.olap.OlapGauge.locale["zh-CN"] = {
 
 ## Localizing Cube Information:
 
-To render the localized Cube information,__set “_Locale__Identifier”___in the connection string.
+To render the localized Cube information,set “_Locale__Identifier”___in the connection string.
 
 
 

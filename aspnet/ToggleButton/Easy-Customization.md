@@ -44,7 +44,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 Run the above code to render the following output.
 
  ![](Easy-Customization_images/Easy-Customization_img1.png) 
-{:.image }
+
 
 
 ## Toggle state with icons
@@ -134,11 +134,11 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 Run the above code to render the following output.
 
 ![](Easy-Customization_images/Easy-Customization_img2.png)
-{:.image }
+
 
 
  ![](Easy-Customization_images/Easy-Customization_img3.png) 
-{:.image }
+
 
 
 ## Toggle Button size
@@ -222,7 +222,7 @@ ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIco
 Run the above code to render the following output.
 
 ![](Easy-Customization_images/Easy-Customization_img4.png) 
-{:.image }
+
 
 
 ## Content type
@@ -370,7 +370,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 Execute the above code to render the following output.
 
 [](Easy-Customization_images/Easy-Customization_img5.png) 
-{:.image }
+
 
 
 ### Image position
@@ -538,6 +538,6 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 Run the above code to render the following output.
 
 ![](Easy-Customization_images/Easy-Customization_img6.png) 
-{:.image }
+
 
 

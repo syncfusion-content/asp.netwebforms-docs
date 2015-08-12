@@ -59,5 +59,5 @@ The Network credentials can be given at WebAPI Controller to connect the SSRS se
 
 {% endhighlight %}
 
- > Note: DataSource credentials must be added to the ReportViewer for Shared DataSources that do not have credentials in the connection string and used in the SSRS Reports.
+Note: DataSource credentials must be added to the ReportViewer for Shared DataSources that do not have credentials in the connection string and used in the SSRS Reports.
 

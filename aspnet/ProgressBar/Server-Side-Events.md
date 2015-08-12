@@ -27,10 +27,9 @@ In an ASPX page, add the ProgressBar control with OnComplete server side event a
 
 {% highlight html %}
 
+<ej:ProgressBar ID="progressbar" runat="server" OnComplete="onComplete" Value="70" Text="70 %"  Height="20" Width="500">
 
-
-<ej:ProgressBar ID="progressbar" runat="server" OnComplete="onComplete" Value="70" Text="70 %"  Height="20" Width="500"></ej:ProgressBar>
-
+</ej:ProgressBar>
 
 
 {% endhighlight %}

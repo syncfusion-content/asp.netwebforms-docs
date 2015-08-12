@@ -9,11 +9,13 @@ documentation: ug
 
 # Annotation
 
-An annotation associates an object such as a note, sound, or a movie with location on the page of a PDF document, or provides a way to interact with you by means of mouse and keyboard.
+An annotation associates an object such as a note, sound, or a movie with location on the page of a PDF document, or provides a 
+way to interact with you by means of mouse and keyboard.
 
-Essential PDF library provides support to add annotations to both existing and newly created PDF files.The following annotion types are supported.
+Essential PDF library provides support to add annotations to both existing and newly created PDF files.The following annotion 
+types are supported.
 
-_Table26: List of Annotation types_
+Table26: List of Annotation types
 
 <table>
 <tr>
@@ -73,8 +75,11 @@ Represents a freehand “scribble” composed of one or more disjoint paths.</td
 <tr>
 <td>
 </td><td>
-The annotations are stored by the PdfAnnotationCollection of a particular PdfPage. This collection contains annotations for that individual page only; every page has its own PdfAnnotationCollection. In order to add an annotation in a particular page, you need to add it to the PdfAnnotationCollection of that page using Add method. </td></tr>
+The annotations are stored by the PdfAnnotationCollection of a particular PdfPage. This collection contains annotations for 
+that individual page only; every page has its own PdfAnnotationCollection. In order to add an annotation in a particular page, 
+you need to add it to the PdfAnnotationCollection of that page using Add method. </td></tr>
 </table>
+
 * Create a particular annotation that you want to add to the PDF.
 * Add the annotation to the PdfPage'sPdfAnnotationCollection.
 

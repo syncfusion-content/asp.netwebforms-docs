@@ -136,7 +136,7 @@ protected void Page_Load(object sender, EventArgs e)
 The following screenshot illustrates the TagCloud control when the title is disabled.
 
  ![](Title-Customization_images/Title-Customization_img1.png) 
-{:.image }
+
 
 
 ## Title text
@@ -266,7 +266,7 @@ protected void Page_Load(object sender, EventArgs e)
 The following screenshot illustrates the TagCloud control with customized title text.
 
 ![](Title-Customization_images/Title-Customization_img2.png) 
-{:.image }
+
 
 
 ## Title image
@@ -414,6 +414,6 @@ By using the CSS class, you can resize the image content as follows.
 The following screenshot illustrates the TagCloud control with customized title image.
 
 ![](Title-Customization_images/Title-Customization_img3.png) 
-{:.image }
+
 
 

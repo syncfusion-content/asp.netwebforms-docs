@@ -9,11 +9,13 @@ documentation: ug
 
 # Range Padding
 
-Range Padding adds padding for range in RangeNavigator. It allows you to space the grid lines in the RangeNavigator.  By default, this property is set to none.
+Range Padding adds padding for range in RangeNavigator. It allows you to space the grid lines in the RangeNavigator.  By 
+default, this property is set to none.
 
 ## Numeric
 
-The RangePadding property allows you to customize the automatic range calculation using the default auto range calculation for RangeNavigator. 
+The RangePadding property allows you to customize the automatic range calculation using the default auto range calculation for 
+RangeNavigator. 
 
 {% highlight html %}
 

@@ -45,7 +45,7 @@ In the ASPX page, add the UploadBox element.
 
 {% endhighlight %}
 
-> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
+Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 Define the corresponding server side handlers in code behind
 
