@@ -2,7 +2,7 @@
 layout: post
 title: MVVM
 description: mvvm
-platform: common
+platform: aspnet
 control: Linear Gauge
 documentation: ug
 ---

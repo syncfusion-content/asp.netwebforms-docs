@@ -15,33 +15,33 @@ Digital Gauge contains angular support. It is possible to add object as well as 
 
 
 
-## Rendering the Digital Gauge
+### Rendering the Digital Gauge
 
 ej-DigitalGauge is the control tag, where ej is tag prefix and DigitalGauge is the control name.Digital Gauge is rendered with the following code example.
 
 {% highlight html %}
 
-&lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
 
-&lt;div ng-app="syncApp"&gt;
+<div ng-app="syncApp">
 
-&lt;div ng-controller="DigitalGauge"&gt;
+<div ng-controller="DigitalGauge">
 
-&lt;ej-DigitalGauge id="digitalCore" e-height="500" e-load="loadGaugeTheme"&gt;
+<ej-DigitalGauge id="digitalCore" e-height="500" e-load="loadGaugeTheme">
 
-&lt;/ej-DigitalGauge&gt;
+</ej-DigitalGauge>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;/div&gt;
+</div>
 
-&lt;/div&gt;
+</div>
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
 
 
-&lt;!—binding the value to the scope variables in application controller--&gt;
+<!—binding the value to the scope variables in application controller-->
 
 
 
@@ -53,19 +53,17 @@ $scope.nvalue = "text";
 
 });
 
-&lt;/script&gt;
+</script>
 
 {% endhighlight %}
 
 Execute the above code to render the following output.
 
 ![](MVVM_images/MVVM_img1.png)
-{:.image }
 
 
-Figure 38: Default Digital Gauge in Angular JS
 
-## Adding the Digital Gauge Items
+### Adding the Digital Gauge Items
 
 Digital Gauge is rendered with the following code example. You can extend the Object in the array collection such as, position, characterSetting, segmentSetting, etc. with hyphen in the same tag.
 
@@ -73,19 +71,19 @@ Example: e-position-x.
 
 {% highlight html %}
 
-&lt;!--To Render the Digital gauge--&gt;
+<!--To Render the Digital gauge-->
 
 
 
-&lt;ej-DigitalGauge id="digitalCore"&gt;
+<ej-DigitalGauge id="digitalCore">
 
 
 
-&lt;!--Adding Item collection to the digital gauge--&gt;
+<!--Adding Item collection to the digital gauge-->
 
 
 
-&lt;e-items&gt;
+<e-items>
 
 <e-item e-segmentSettings-width="1" e-segmentSettings-spacing="0"
 
@@ -93,39 +91,39 @@ e-value="Syncfusion" e-characterSetting-opacity="0.8"
 
 e-position-x="52" e-position-y="52">
 
-&lt;/e-item&gt;
+</e-item>
 
-&lt;/e-items&gt;
+</e-items>
 
 
 
-&lt;/ej-DigitalGauge&gt;
+</ej-DigitalGauge>
 
 
 
 Finally while running the above codes, the following output will be rendered.
 
-{ ![](MVVM_images/MVVM_img2.png) | markdownify }
-{:.image }
+![](MVVM_images/MVVM_img2.png) 
+
 
 {% endhighlight %}
 
 
-## Two Way Binding
+### Two Way Binding
 
 Digital Gauge supports the two way biding for the property value as mentioned earlier. Following code example explains how to achieve the two way binding to the Digital Gauge.
 
 {% highlight html %}
 
-&lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
 
-&lt;div ng-app="syncApp"&gt;
+<div ng-app="syncApp">
 
-&lt;div ng-controller="DigitalGauge"&gt;
+<div ng-controller="DigitalGauge">
 
-&lt;ej-DigitalGauge id="digitalCore" e-height="200" e-load="loadGaugeTheme"&gt;
+<ej-DigitalGauge id="digitalCore" e-height="200" e-load="loadGaugeTheme">
 
-&lt;e-items&gt;
+<e-items>
 
 <e-item e-segmentSettings-width="1" e-segmentSettings-spacing="0"
 
@@ -133,27 +131,27 @@ e-characterSetting-opacity="0.8" e-position-x="52"
 
 e-value="nvalue" e-position-y="52">
 
-&lt;/e-item&gt;
+</e-item>
 
-&lt;/e-items&gt;
+</e-items>
 
-&lt;/ej-DigitalGauge&gt;
+</ej-DigitalGauge>
 
-Type here &lt;input type="text" id="txtValue" ng-model="nvalue" Style="width:110px"/&gt;
+Type here <input type="text" id="txtValue" ng-model="nvalue" Style="width:110px"/>
 
-&lt;asp:Content&gt;
+<asp:Content>
 
-&lt;/div&gt;
+</div>
 
-&lt;/div&gt;
-
-
-
-&lt;script type="text/javascript"&gt;
+</div>
 
 
 
-&lt;!—binding the value to the scope variables in application controller--&gt;
+<script type="text/javascript">
+
+
+
+<!—binding the value to the scope variables in application controller-->
 
 
 
@@ -165,7 +163,7 @@ $scope.nvalue = "Syncfusion";
 
 });
 
-&lt;/script&gt;
+</script>
 
 
 {% endhighlight %}
@@ -174,18 +172,19 @@ $scope.nvalue = "Syncfusion";
 Execute the above code to render the following output.
 
 ![](MVVM_images/MVVM_img3.png)
-{:.image }
 
 
-
-
-## Knockout Binding
+### Knockout Binding
 
 
 
 * Knockout support allows you to bind the html elements against any of the available data models.Two types of knockout binding is supported as of angular,
-1. one-way binding
-2. two-way binding
+  
+  1. one-way binding
+  
+  2. two-way binding
+  
+  
 * One way binding refers to the process of applying observable values to all the available properties of the Digital Gauge control, but the changes made in it does not reflect and trigger in turn to the observable collection. This kind of binding applies to all the properties of the Digital Gauge control.
 * Two-way binding supports both the processes – it applies the observable values to the Digital Gauge properties as well as the changes made in it is also reflected back and triggered within the observable collections. Only Value of the schedule properties support two-way binding.
 
@@ -193,73 +192,49 @@ Execute the above code to render the following output.
 
 
 
-{% highlight html %}
+  ~~~ html
 
-&lt;%--For Linear Gauge rendering-- %&gt;
+        <%--For Linear Gauge rendering-- %>
 
-&lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
+        <asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
 
-&lt;div align="center"&gt;
+        <div align="center">
 
-<div id="digitalCore" style="width:100%" data-bind="ejDigitalGauge:({value:samplevalue,width:510,height:300,load:'loadGaugeTheme',items: [{ segmentSettings:{width: 2, spacing: 0},characterSettings:{opacity: 0.8}, value: 'Syncfusion', position: { x: 52, y: 52 } }]
+        <div id="digitalCore" style="width:100%" data-bind="ejDigitalGauge:({value:samplevalue,width:510,height:300,load:'loadGaugeTheme',items: [{ segmentSettings:{width: 2, spacing: 0},characterSettings:{opacity: 0.8}, value: 'Syncfusion', position: { x: 52, y: 52 } }]
 
-})">&lt;/div&gt;
+        })"></div>
 
-&lt;/div&gt;
+        </div>
 
-&lt;/asp:Content&gt; &lt;script type="text/javascript"&gt;
+        </asp:Content> <script type="text/javascript">
 
-window.viewModel = {
+        window.viewModel = {
 
-samplevalue: ko.observable(“Syncfusion”),
+        samplevalue: ko.observable(“Syncfusion”),
 
-};
+        };
 
-$(function () {
+        $(function () {
 
-ko.applyBindings(viewModel);
+        ko.applyBindings(viewModel);
 
-$("#sampleProperties").ejPropertiesPanel();
+        $("#sampleProperties").ejPropertiesPanel();
 
-});
+        });
 
-&lt;/script&gt;
+        </script>
 
-{% endhighlight %}
+  ~~~
+  {:.pretty-print }
 
 Execute the above code to render the following output.
 
 
 
 ![C:/Users/karthigeyan/Desktop/q.png](MVVM_images/MVVM_img4.png)
-{:.image }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-_Figure_ _4_1: Digital Gauge with Knockout binding_
 
 
 

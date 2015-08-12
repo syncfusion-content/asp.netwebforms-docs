@@ -23,7 +23,7 @@ This section encompasses how to configure the ASP.NET Charts for your business n
 
 
 
-## Configure Chart
+### Configure Chart
 
 Getting started with your ASP.NET Chart is very easy.  You can start by creating a simple line Chart.
 
@@ -87,7 +87,7 @@ The following screenshot displays the Chart.
 
 
 
-## Add a Chart Series
+### Add a Chart Series
 
 By default, line series is used. To create a series, you need to add the following code example to the scripts. For example, the following steps illustrate how to add a column series to the Chart.
 
@@ -95,19 +95,19 @@ By default, line series is used. To create a series, you need to add the followi
 2. Then, you need to specify the type of series you want to render using “type” property.
 3. You can add x and y points to the series as in the following code example.
 
-{% highlight html %}
+   ~~~ html
 
-<ej:Chart ID="Chart1" runat="server>
+        <ej:Chart ID="Chart1" runat="server>
 
-     <Series>
+            <Series>
 
-            <ej:Series Name="Precipitation" Type="Column">
+                <ej:Series Name="Precipitation" Type="Column">
 
-                  <Points>                   
+                    <Points>                   
 
 
 
-                       <ej:Points  X="Jan" Y="3.03"/>
+                        <ej:Points  X="Jan" Y="3.03"/>
 
                         <ej:Points  X="Feb" Y="2.48"/>
 
@@ -123,28 +123,29 @@ By default, line series is used. To create a series, you need to add the followi
 
                         <ej:Points  X="AUg" Y="3.82"/>
 
-                       <ej:Points  X="Sep" Y="2.83"/>
+                        <ej:Points  X="Sep" Y="2.83"/>
 
-                       <ej:Points  X="Oct" Y="2.8"/>
+                        <ej:Points  X="Oct" Y="2.8"/>
 
-                       <ej:Points  X="Nov" Y="3.07"/>
+                        <ej:Points  X="Nov" Y="3.07"/>
 
-                       <ej:Points  X="Dec" Y="2.8"/>
+                        <ej:Points  X="Dec" Y="2.8"/>
 
 
 
                     </Points>
 
-             </ej:Series>
+                </ej:Series>
 
-          </Series>
+            </Series>
 
 
 
         </ej:Chart> 
 
 
-{% endhighlight %}
+   ~~~
+   {:.pretty-print }
 
 The following screenshot displays a Chart series:
 
@@ -152,7 +153,7 @@ The following screenshot displays a Chart series:
 
 
 
-## Add JSON data to the Chart
+### Add JSON data to the Chart
 
 You can add JSON data to the Chart using the datasource property in Chart.
 
@@ -160,7 +161,7 @@ You can add JSON data to the Chart using the datasource property in Chart.
 {% highlight c# %}
 
 
-
+        [cs]
 
             List<chartData> data = new List<chartData>();
 
@@ -288,7 +289,7 @@ The following screenshot displays the Chart when JSON data is added.
 
 
 
-## Add Chart Axis of your choice
+### Add Chart Axis of your choice
 
 In the Chart when data source is added, the axes are provided explicitly and the Chart initializes the right axis based on the data type. You can also specify the axis type of your choice using ValueType option and customize the options available in the axis. The following axis types are supported:
 
@@ -324,7 +325,8 @@ The following code example illustrates how to add Chart axis.
 
  </ej:Chart>
 {% endhighlight  %}
-Assign the axis to the respective series
+
+### Assign the axis to the respective series
 
 To assign the axis to the respective series you can set YAxisName property of the series. In the following code example, YAxisName of Column series is set to “Precipitation”. This is the name set to the axis in the above code example.
 {% highlight html %}
@@ -355,7 +357,7 @@ The following screenshot displays a Chart with desired output.
 
 
 
-## Add Data Labels
+### Add Data Labels
 
 Data Labels display the series points in Chart. To display the data labels, you need to enable the “Visible” property of DataLabel in the Marker of specific series. By default, it displays the Y value with label format provided in axis (For example: 4.88 inch). The following code example shows how to add DataLabels.
 
@@ -387,7 +389,7 @@ The following screenshot displays the Chart when data Labels are enabled.
 
 
 
-## Enable ToolTip
+### Enable ToolTip
 
 To display the tooltip of Chart series, you can enable the “Visible” property of “Tooltip” in the specific series. By default, it displays XandY value of points on mouse over the points. The following code example shows how to enable Tooltip.
 {% highlight html %}

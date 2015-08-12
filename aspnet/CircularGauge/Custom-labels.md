@@ -59,38 +59,40 @@ Custom labels collection is directly added to the scale object. Refer the follow
 
 
 
-{% highlight html %}
+  ~~~ html
 
-<%--For Circular Gauge rendering-- %>
+        <%--For Circular Gauge rendering-- %>
 
-<ej:CircularGauge runat="server" ID="CircularGauge1"  >
+        <ej:CircularGauge runat="server" ID="CircularGauge1"  >
 
-<Scales>
+        <Scales>
 
-<ej:CircularScales size="2" ShadowOffset="10" showRanges="true" ShowScaleBar="true" radius="150" showLabels="true">
+        <ej:CircularScales size="2" ShadowOffset="10" showRanges="true" ShowScaleBar="true" radius="150" showLabels="true">
 
-<%--For setting custom label text angle, color, font option, position-- %>
+        <%--For setting custom label text angle, color, font option, position-- %>
 
-<CustomLabelCollection>
+        <CustomLabelCollection>
 
-<ej:CircularCustomLabel TextAngle="10" Color="red" Value="CustomLabel1">
+        <ej:CircularCustomLabel TextAngle="10" Color="red" Value="CustomLabel1">
 
-<Font Size="20px" FontStyle="bold" FontFamily="arial" />
+        <Font Size="20px" FontStyle="bold" FontFamily="arial" />
 
-<Position X="180" Y="100" />
+        <Position X="180" Y="100" />
 
-</ej:CircularCustomLabel>
+        </ej:CircularCustomLabel>
 
-</CustomLabelCollection>
+        </CustomLabelCollection>
 
-</ej:CircularScales>
+        </ej:CircularScales>
 
-</Scales>
+        </Scales>
 
-</ej:CircularGauge>
+        </ej:CircularGauge>
 
-{% endhighlight %}
 
+  ~~~
+  {:.pretty-print }
+	
 Execute the above code to render the following output.
 
 
@@ -150,78 +152,79 @@ Execute the above code to render the following output.
 
 
 
-Figure 48: Circular Gauge with multiple custom labels
-
 ## Outer Custom Label
 
 * Outer Custom Label is used to show custom labels outside the gauge control. The Outer Custom Label can be positioned with API called outerCustomLabelPosition. The value for this API is enumerable type and its possible values are,
-1. Right
-2. Left
-3. Top
-4. Bottom
+  
+  1. Right
+  
+  2. Left
+  
+  3. Top
+  
+  4. Bottom
+  
 * When a custom label is to be displayed as an Outer Custom Label, set the API customLabelType as Outer. Refer to the following code example to get the Outer Custom Label.
 
-{% highlight html %}
+  ~~~ html
 
 
 
-<ej:circulargauge runat="server" id="circularGaugeTooltip" backgroundcolor="transparent" enableanimation="false"
+        <ej:circulargauge runat="server" id="circularGaugeTooltip" backgroundcolor="transparent" enableanimation="false"
 
-OuterCutomLabelPosition="Right">
-
-
-
-<%-- Defines the tooltip object-- %>
-
-<Tooltip ShowCustomLabelTooltip="true" ShowLabelTooltip="true" />
+        OuterCutomLabelPosition="Right">
 
 
 
-<%-- Customizes the scale options-- %>
+        <%-- Defines the tooltip object-- %>
 
-<Scales>
-
-<ej:CircularScales ShowLabels="true" Radius="130" >
+        <Tooltip ShowCustomLabelTooltip="true" ShowLabelTooltip="true" />
 
 
 
-<%-- Customizes the pointers options-- %>
+        <%-- Customizes the scale options-- %>
 
-<PointerCollection>
+        <Scales>
 
-<ej:Pointers Value="60" Length="95" >
-
-</ej:Pointers>
-
-</PointerCollection>
+        <ej:CircularScales ShowLabels="true" Radius="130" >
 
 
 
-<%-- Customizes the custom label options-- %>
+        <%-- Customizes the pointers options-- %>
 
-<CustomLabelCollection>
+        <PointerCollection>
 
-<ej:CircularCustomLabel Value="Average Speed">
+        <ej:Pointers Value="60" Length="95" >
 
-<Font FontFamily ="Arial" FontStyle="Bold" Size="20px" />
+        </ej:Pointers>
 
-<Position X ="360" Y="30" />
-
-
+        </PointerCollection>
 
 
 
-</ej:CircularCustomLabel>
+        <%-- Customizes the custom label options-- %>
 
-</CustomLabelCollection>
+        <CustomLabelCollection>
 
-</ej:CircularScales>
+        <ej:CircularCustomLabel Value="Average Speed">
 
-</Scales>
+        <Font FontFamily ="Arial" FontStyle="Bold" Size="20px" />
 
-</ej:circulargauge>
+        <Position X ="360" Y="30" />
 
-{% endhighlight %}
+
+        </ej:CircularCustomLabel>
+
+        </CustomLabelCollection>
+
+        </ej:CircularScales>
+
+        </Scales>
+
+        </ej:circulargauge>
+
+  ~~~
+  {:.pretty-print }
 
 Execute the above code to render the following output.
 

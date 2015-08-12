@@ -90,11 +90,8 @@ Cache Adaptor is a technique used to cache multiple page data by using the prope
         </ej:Grid>    
 
 {% endhighlight  %}
+
 {% highlight c# %}
-
-
-
-
 
 public partial class CachingAdaptor : System.Web.UI.Page
 
@@ -110,8 +107,6 @@ public partial class CachingAdaptor : System.Web.UI.Page
 
     }
 
-
-
 {% endhighlight  %}
 
 The following screenshot is the result of the above code example.
@@ -120,7 +115,4 @@ The following screenshot is the result of the above code example.
 
 ![C:/Users/ApoorvahR/Desktop/1.png](Data-Adaptors_images/Data-Adaptors_img2.png)
 
-
-
-_Figure 21: Cache Adaptor_
 

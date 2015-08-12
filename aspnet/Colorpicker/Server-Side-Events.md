@@ -15,9 +15,9 @@ The server side events present in the ColorPicker control are as follows.
 <table>
 <tr>
 <th>
-Event Name</th><th>
-Description</th><th>
-Arguments</th></tr>
+{{ '**Event Name**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Arguments**' | markdownify }}</th></tr>
 <tr>
 <td>
 OnSelect</td><td>

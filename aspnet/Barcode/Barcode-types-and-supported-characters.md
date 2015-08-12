@@ -11,15 +11,15 @@ documentation: ug
 
 The following table contains the supported types and associated valid characters.
 
-_Table_ _1__: Table of Barcode types and supported character_
+_Table_ _1_: _Table of Barcode types and supported character_
 
 <table>
 <tr>
 <td>
-Symbol</td><td>
-Enum Value</td><td>
-Supported characters</td><td>
-Length</td></tr>
+{{ '**Symbol**' | markdownify }}</td><td>
+{{ '**Enum Value**' | markdownify }}</td><td>
+{{ '**Supported characters**' | markdownify }}</td><td>
+{{ '**Length**' | markdownify }}</td></tr>
 <tr>
 <td>
 QR Barcode</td><td>

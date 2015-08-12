@@ -15,43 +15,43 @@ Label font and color customization
 
 Font style and color of the label text is customized with the help of font and color properties within its respective axis.
 
-
+ {% highlight html %}
 
 [ASP.NET]
 
-&lt;ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Title-Text="OLAP Chart in Essential Studio"&gt;
+<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Title-Text="OLAP Chart in Essential Studio">
 
-     &lt;primaryxaxis Font-Color="red" Font-FontFamily="Algerian" Font-FontStyle="Italic" Font-FontSize="14px" Font-Opacity=1 Font-FontWeight="lighter"/&gt;
+     <primaryxaxis Font-Color="red" Font-FontFamily="Algerian" Font-FontStyle="Italic" Font-FontSize="14px" Font-Opacity=1 Font-FontWeight="lighter"/>
 
-     &lt;primaryyaxis Font-Color="red" Font-FontFamily="Algerian" Font-FontStyle="Italic" Font-FontSize="14px" Font-Opacity=1 Font-FontWeight="lighter"/&gt;
+     <primaryyaxis Font-Color="red" Font-FontFamily="Algerian" Font-FontStyle="Italic" Font-FontSize="14px" Font-Opacity=1 Font-FontWeight="lighter"/>
 
-&lt;/ej:OlapChart&gt;
+</ej:OlapChart>
 
-
-
-
-
-{ ![C:/Users/Tamilarasu .M/Pictures/document/Chart/Label font-color.png](Label_images/Label_img1.png) | markdownify }
-{:.image }
+{% endhighlight %}
 
 
-Rotating Axis Labels
+
+ ![C:/Users/Tamilarasu .M/Pictures/document/Chart/Label font-color.png](Label_images/Label_img1.png) 
+
+
+
+### Rotating Axis Labels
 
 You can rotate the labels to desired angle. The axis labels are rendered in the degree specified in the label rotation property.
 
-
+ {% highlight html %}
 
 [ASP.NET]
 
-&lt;ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Title-Text="OLAP Chart in Essential Studio"&gt;
+<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Title-Text="OLAP Chart in Essential Studio">
 
-     &lt;primaryxaxis labelRotation=45/&gt;
+     <primaryxaxis labelRotation=45/>
 
-&lt;/ej:OlapChart&gt;
+</ej:OlapChart>
 
+{% endhighlight %}
 
+ ![C:/Users/Tamilarasu .M/Pictures/document/Chart/lable rotation.png](Label_images/Label_img2.png) 
 
-{ ![C:/Users/Tamilarasu .M/Pictures/document/Chart/lable rotation.png](Label_images/Label_img2.png) | markdownify }
-{:.image }
 
 

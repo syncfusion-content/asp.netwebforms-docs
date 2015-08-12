@@ -26,6 +26,6 @@ In the ASPX page, include the following Captcha control code example for RTL sup
 The following screenshot illustrates the Captcha with RTL support. 
 
 ![](RTL-Support_images/RTL-Support_img1.png)
-{:.image }
+
 
 

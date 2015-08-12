@@ -67,7 +67,6 @@ You can configure the appearance of the lines and the points with options Fill u
 
 
 
-_Figure_ 107: Line Chart
 {% highlight html %}
  
 
@@ -1497,13 +1496,13 @@ A HiLoOpenCloseSeries displays each data point as a group of two horizontal li
 
 The following properties are useful in mapping the value of each data point in a HiLoOpenCloseSeries: 
 
-_Table2: Property Table_
+_Table2_: _Property Table_
 
 <table>
 <tr>
 <th>
-API</th><th>
-Description</th></tr>
+{{ '**API**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 X</td><td>
@@ -1703,13 +1702,13 @@ A CandleSeries displays each data point with a combination of a vertical column 
 
 The following properties are useful in mapping the value of each data point in a Candle.
 
-_Table3: Property Table_
+_Table3_: _Property Table_
 
 <table>
 <tr>
 <th>
-API</th><th>
-Description</th></tr>
+{{ '**API**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 X</td><td>
@@ -1869,13 +1868,13 @@ Ina HiLoSeries, each segment is represented by a line. The height of the line de
 
 The following properties are useful in mapping the value of each data point in a Hilo.
 
-_Table4: Property Table_
+_Table4_: _Property Table_
 
 <table>
 <tr>
 <th>
-API</th><th>
-Description</th></tr>
+{{ '**API**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 X</td><td>

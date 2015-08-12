@@ -24,6 +24,6 @@ In the ASPX page, include the following Captcha control code-snippet for customi
 The following screenshot illustrates the Captcha with customized character set. 
 
 ![](Character-Set-Customization_images/Character-Set-Customization_img1.png)
-{:.image }
+
 
 

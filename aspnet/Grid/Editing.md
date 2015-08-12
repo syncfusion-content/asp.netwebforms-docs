@@ -229,7 +229,7 @@ The following output is displayed as a result of the above code example.
 
 By default, the datasource for Dropdown Edit Column is set by Grid Control from its datasource. You can also bind external datasource to the Dropdown control of corresponding column in edit mode by using “DataSource” Grid Column property.
 
-> Note: The external datasource must be given in a structure that it should contain properties “text” and  
+Note: The external datasource must be given in a structure that it should contain properties “text” and  
 “value” which holds the data
 {% highlight html %}
 
@@ -1210,7 +1210,7 @@ For validation you can refer the following two jquery validation script files.
 
 The following are jquery validation methods.
 
-_Table4: List of jquery validation methods_
+_List of jquery validation methods_
 
 <table>
 <tr>
@@ -1569,7 +1569,7 @@ The Server-Side CRUD operation can be performed by using the following adaptor m
 
 The Server-Side function is declared with the following parameters for each editing functionality.
 
-_Table5: Parameters Table_
+_Parameters Table_
 
 <table>
 <tr>
@@ -1889,8 +1889,6 @@ The output for the Server Binding of records is as follows:
 
 
 
-_Figure 67: Edit_
-
 
 
 ![](Editing_images/Editing_img19.png)
@@ -1913,9 +1911,7 @@ The Grid control for Asp.Net allows you to bind and edit data from the local ser
 
 1. Open Visual Studio 2012. In the File menu, click New and select Project. The New Project Dialog box is opened.
 
-
-
-![](Editing_images/Editing_img21.png)
+   ![](Editing_images/Editing_img21.png)
 
 
 
@@ -1926,51 +1922,39 @@ The Grid control for Asp.Net allows you to bind and edit data from the local ser
 6. Right-click the Models folder in the Solution Explorer window and select the menu option Add New Item.
 7. In the Add New Item dialog, select the Data category.
 
-
-
-![](Editing_images/Editing_img22.png)
-
-
+   ![](Editing_images/Editing_img22.png)
 
 8. Select the ADO.NET Entity Data Model template, give the Entity Data Model the name Northwind.edmx, and click the Add button. Click Add to launch the Data Model Wizard. 
 9. In the Choose Model Contents step, choose the Generate from database option and click Next.
 
-
-
-![](Editing_images/Editing_img23.png)
+   ![](Editing_images/Editing_img23.png)
 
 
 
 10. In the Choose Your Data Connection step, select the NORTHWND.MDF database connection, enter the entities connection settings name NORTHWNDEntities and click Next.
 
-
-
-![](Editing_images/Editing_img24.png)
+    ![](Editing_images/Editing_img24.png)
 
 
 
 11. In the Choose Your Database Objects step, select all the database tables and click Finish.
 
-
-
-![](Editing_images/Editing_img25.png)
-
-
-
-When you are finished, you can see the following image.
+    ![](Editing_images/Editing_img25.png)
 
 
 
-![](Editing_images/Editing_img26.png)
+    When you are finished, you can see the following image.
+
+
+
+    ![](Editing_images/Editing_img26.png)
 
 
 
 12. Right-click the Models folder in the Solution Explorer window and select the Menu option Add New Item.
 13. In the Add New Item dialog, in the Web category, select WCF Data Service, enter Northwnd.svc in the Name textbox and click Add. 
 
-
-
-![](Editing_images/Editing_img27.png)
+    ![](Editing_images/Editing_img27.png)
 
 
 
@@ -2221,8 +2205,6 @@ The following output is displayed as a result of the above code example.
 ![C:/Users/ApoorvahR/Desktop/1.png](Editing_images/Editing_img29.png)
 
 
-
-_Figure 77: Adding new row position_
 
 ## Render grid with add new row
 

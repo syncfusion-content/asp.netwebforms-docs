@@ -17,8 +17,8 @@ The various keyboard shortcuts available within the CurrencyTextbox control are 
 <table>
 <tr>
 <th>
-Shortcut Keys</th><th>
-Description</th></tr>
+{{ '**Shortcut Keys**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 {{ '[Access key](http://en.wikipedia.org/wiki/Access_key)' | markdownify }} + j</td><td>

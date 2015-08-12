@@ -28,6 +28,8 @@ By default, there are 13 themes support available for the DatePicker control nam
 * gradient-saffron
 * gradient-saffron-dark
 * bootstrap-theme
+
+
 ## Custom CSS
 
 
@@ -66,6 +68,6 @@ The following screenshot displays the output for the above code.
 
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
-{:.image }
+
 
 

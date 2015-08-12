@@ -27,13 +27,13 @@ Add the following code example in your ASPX page.
 
         brackets (like
 
-        &lt;html&gt;
+        <html>
 
         ),within the web page content. HTML tags most commonly come in pairs like and ,although
 
         some tags, known as empty elements, are unpaired, for example
 
-        &lt;img&gt;. The purpose of a web browser is to read HTML documents and compose them into
+        <img>. The purpose of a web browser is to read HTML documents and compose them into
 
         visible or audible web pages. The browser does not display the HTML tags, but uses
 
@@ -136,7 +136,7 @@ Add the following code example in your style section
 The following screenshot displays the output of the above code example.
 
 ![](Context-Menu_images/Context-Menu_img1.png) 
-{:.image }
+
 
 
 ## HideContextMenu
@@ -155,13 +155,13 @@ Add the following code example in your ASPX page.
 
         brackets (like
 
-        &lt;html&gt;
+        <html>
 
         ),within the web page content. HTML tags most commonly come in pairs like and ,although
 
         some tags, known as empty elements, are unpaired, for example
 
-        &lt;img&gt;. The purpose of a web browser is to read HTML documents and compose them into
+        <img>. The purpose of a web browser is to read HTML documents and compose them into
 
         visible or audible web pages. The browser does not display the HTML tags, but uses
 
@@ -303,13 +303,13 @@ Add the following code example in your ASPX page.
 
         brackets (like
 
-        &lt;html&gt;
+        <html>
 
         ),within the web page content. HTML tags most commonly come in pairs like and ,although
 
         some tags, known as empty elements, are unpaired, for example
 
-        &lt;img&gt;. The purpose of a web browser is to read HTML documents and compose them into
+        <img>. The purpose of a web browser is to read HTML documents and compose them into
 
         visible or audible web pages. The browser does not display the HTML tags, but uses
 
@@ -560,7 +560,7 @@ Add the following code example in ASPX section.
 The following screenshot displays the output of the above code example.
 
 ![](Context-Menu_images/Context-Menu_img2.png) 
-{:.image }
+
 
 
 ## RTL Support
@@ -696,7 +696,7 @@ The following screenshot displays the output for the above code example.
 
 
 ![](Context-Menu_images/Context-Menu_img3.png) 
-{:.image }
+
 
 
 ## Separators
@@ -830,7 +830,7 @@ Add the following code example in the ASPX page.
 The following screenshot displays the output for the above code example.
 
 ![](Context-Menu_images/Context-Menu_img4.png) 
-{:.image }
+
 
 
 Add the following code example in the ASPX page to display the Menu control without Separator by setting EnableSeparator as false.
@@ -958,6 +958,6 @@ Add the following code example in the ASPX page to display the Menu control with
 The following screenshot displays the output for the above code example. 
 
 ![](Context-Menu_images/Context-Menu_img5.png)
-{:.image }
+
 
 

@@ -18,8 +18,8 @@ Filter operators are used to specify the filter type. The various filter operato
 <table>
 <tr>
 <th>
-Column type</th><th>
-Filter operators</th></tr>
+{{ '**Column type**' | markdownify }}</th><th>
+{{ '**Filter operators**' | markdownify }}</th></tr>
 <tr>
 <td>
 Number</td><td>
@@ -39,7 +39,7 @@ ej.FilterOperators.greaterThanej.FilterOperators.greaterThanOrEqualej.FilterOper
 </table>
 
 
-## lessThan
+### lessThan
 
 This operator is used to get the records with values less than that of the filter value.
 
@@ -83,7 +83,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-## greaterThan
+### greaterThan
 
 This operator is used to get the records with values greater than that of the filter value.
 
@@ -129,7 +129,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-## lessThanOrEqual
+### lessThanOrEqual
 
 This operator is used to get the records with values less than or equal to the filter value.
 
@@ -175,7 +175,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-## greaterThanOrEqual
+### greaterThanOrEqual
 
 This operator is used to get the records with values greater than or equal to the filter value.
 
@@ -219,7 +219,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-## equal
+### equal
 
 This operator is used to get the records with values equal to that of the filter value.
 
@@ -263,7 +263,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-## notEqual
+### notEqual
 
 This operator is used to get the records with values not equal to that of the filter value specified.
 
@@ -307,7 +307,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-## contains
+### contains
 
 This operator is used to get the records that contains the filter value.
 
@@ -351,7 +351,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-## startswith
+### startswith
 
 This operator is used to get the records that starts with the filter value specified.
 
@@ -395,7 +395,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-## endswith
+### endswith
 
 This operator is used to get the records that ends with the filter value specified.
 

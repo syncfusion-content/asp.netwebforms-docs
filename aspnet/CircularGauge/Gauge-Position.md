@@ -15,76 +15,77 @@ Semi-circular Gauge can be positioned within the canvas element which provides b
 
 * Semi-circular Gauge can be positioned with the help of the attribute called gaugePosition. It is an enumerable value. You can position the gauge away from the corner with the help of the distanceFromCorner attribute. 
 * The possible enum values for the gaugePosition are as follows:
-1. Topleft
-2. Topcenter
-3. Topright
-4. Middleleft
-5. Center
-6. Middleright
-7. Bottomleft
-8. Bottomcenter
-9. Bottomright
+  1. Topleft
+  2. Topcenter
+  3. Topright
+  4. Middleleft
+  5. Center
+  6. Middleright
+  7. Bottomleft
+  8. Bottomcenter
+  9. Bottomright
 
 
-{% highlight html %}
+     ~~~ html
 
-<ej:CircularGauge runat="server" ID="SemiCircularGauge" Value="60"
-
-
-
-<%--setting basic dimension-- %>
-
-BackgroundColor="transparent" Width="500" Height="500" Radius="100"
+        <ej:CircularGauge runat="server" ID="SemiCircularGauge" Value="60"
 
 
 
-<%--setting gauge position-- %>
+        <%--setting basic dimension-- %>
 
-GaugePosition="TopLeft"
-
-
-
-<%--setting gauge distance from corner-- %>
-
-DistanceFromCorner="25">
+        BackgroundColor="transparent" Width="500" Height="500" Radius="100"
 
 
 
-<%--<setting frame values--%>
+        <%--setting gauge position-- %>
 
-<Frame FrameType="HalfCircle"
-
-HalfCircleFrameEndAngle="90"
-
-HalfCircleFrameStartAngle="270"/>
+        GaugePosition="TopLeft"
 
 
 
-<%--setting gauge distance from corner-- %>
+        <%--setting gauge distance from corner-- %>
 
-<Scales>
-
-<ej:CircularScales SweepAngle="180" StartAngle="270" Radius="100"
-
-ShowScaleBar="true" Size="1" Maximum="120"
-
-MajorIntervalValue="20" MinorIntervalValue="10">
+        DistanceFromCorner="25">
 
 
 
-<%--setting scale border-- %>
+        <%--<setting frame values--%>
 
-<Border Width="0.5">
+        <Frame FrameType="HalfCircle"
 
-</Border>
+        HalfCircleFrameEndAngle="90"
 
-</ej:CircularScales>
+        HalfCircleFrameStartAngle="270"/>
 
-</Scales>
 
-</ej:CircularGauge>
 
-{% endhighlight %}
+        <%--setting gauge distance from corner-- %>
+
+        <Scales>
+
+        <ej:CircularScales SweepAngle="180" StartAngle="270" Radius="100"
+
+        ShowScaleBar="true" Size="1" Maximum="120"
+
+        MajorIntervalValue="20" MinorIntervalValue="10">
+
+
+
+        <%--setting scale border-- %>
+
+        <Border Width="0.5">
+
+        </Border>
+
+        </ej:CircularScales>
+
+        </Scales>
+
+        </ej:CircularGauge>
+
+     ~~~
+     {:.pretty-print }
 
 Execute the above code to render the following output.
 

@@ -13,7 +13,7 @@ documentation: ug
 * You will learn how to provide data for a Circular Gauge and to display that data in the required way. In addition, you will learn how to customize the default Circular Gauge appearance to your requirements. 
 * As a result, you will get a Circular Gauge that shows how the Automobile speedometer works with rpm (Rotation per Minute), KmpH (Kilometer per hour) and denotes the speed level indication (Safe, Caution and Danger). 
 
-## Speedometer Gauge
+Speedometer Gauge
 
  ![](Getting-Started_images/Getting-Started_img1.png)
 
@@ -27,14 +27,15 @@ ASP.NET Circular Gauge widget basically renders with animation and flexible API�
 2. Add the mentioned code to the corresponding designer page for Circular Gauge rendering.
 
 
-{% highlight html %}
+   ~~~ html
 
 
-<ej:CircularGauge runat="server" ID="CircularGauge1">
+        <ej:CircularGauge runat="server" ID="CircularGauge1">
 
-</ej:CircularGauge>
+        </ej:CircularGauge>
 
-{% endhighlight %}
+   ~~~
+   {:.pretty-print }
 
 
 
@@ -50,7 +51,7 @@ Run the above code to get a default CircularGauge with default values as follows
 
 Pointers have different height and width range so you can set the height and width of the gauge according to your requirements.Set the basic values of the gauge such as height and width of the canvas element.
 
-Code:
+#### Code:
 
 
 {% highlight html %}
@@ -74,7 +75,7 @@ Run the above code to get the following output.
 
 You can draw the speedometer with dark background and to vary the speed of the pointer you can set ReadOnly to ‘false’ for user Interaction. 
 
-Code:
+#### Code:
 
 
 {% highlight html %}
@@ -101,7 +102,7 @@ Run the above code to get the following output.
 * The speed limit in the gauge has maximum value of 200KmpH.So you can set maximum value for the gauge as 200.
 * Major Ticks have the interval value of 20 and minor ticks have the interval value of 5. Show ranges and show indicators are used to display the ranges and indicators in their respective positions.
 
-Code:
+#### Code:
 
 
 {% highlight html %}
@@ -139,11 +140,11 @@ Run the above code to get the following output.
 
 
 
-## Add Label Customization
+### Add Label Customization
 
 To display the value around the scale, labels are used. By customizing the label color it displays as specified 
 
-Code:
+#### Code:
 
 
 {% highlight html %}
@@ -202,11 +203,11 @@ Run the above code to get the following output.
 
 
 
-## Add pointers data
+### Add pointers data
 
 Here, you have three pointers that denote the kilometer value, rotation per minute value and torque value.The torque value pointer needs not to be similar to the other two pointers. You can set torque pointer as marker pointer. And you can set other attributes for pointer such as background color, border color, Length, width and distance from scale.
 
-Code:
+#### Code:
 
 
 {% highlight html %}
@@ -292,12 +293,12 @@ Run the above code to get the following output.
 
 
 
-## Add Ticks Details
+### Add Ticks Details
 
 You can set major ticks with their width and height greater than Minor ticks. Color must be given for better visibility in dark backgrounds.
 
 
-Code:
+#### Code:
 
 {% highlight html %}
 
@@ -355,13 +356,13 @@ Run the above code to get the following output.
 
 
 
-## Add Range Values
+### Add Range Values
 
 * Ranges denote the property of the scale value in the speedometer. The color values of the ranges specifiy the speed variation. Set ShowRanges to ‘true’ for showing the ranges in the Circular Gauge.
 * For Low speed, you can mention it as safe zone; for moderate speed, you can  give as caution zone and for high speed, you can notify it as high speed.
 * You can customize the range with the properties such as start value, end value, start width, end width,  background color , border color, etc.,
 
-Code:
+#### Code:
 
 
 {% highlight html %}
@@ -443,12 +444,12 @@ Run the above code to get the following output.
 
 
 
-## Add Indicator Details
+### Add Indicator Details
 
 * Indicators denote whether the pointers values are in their respective zones or not. Positioning the indicator on the respective range value gives the required changes.
 * By using Position property, you can set location of the indicator. StateRanges defines how the indicator should behave when the pointer is in certain values. 
 
-Code:
+#### Code:
 
 
 {% highlight html %}
@@ -580,11 +581,11 @@ Run the above code to get the following output.
 
 
 
-## Add Custom Label Details
+### Add Custom Label Details
 
 Custom labels are used to specify the texts that need to be displayed in the gauge .you can customize it using various properties.To display the three range description, custom texts are used here.
 
-Code:
+#### Code:
 
 
 {% highlight html %}

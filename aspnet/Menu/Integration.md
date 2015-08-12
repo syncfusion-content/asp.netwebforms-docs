@@ -11,7 +11,7 @@ documentation: ug
 
 ## Angular binding
 
-AngularJS is an open-source web application framework. AngularJS extends HTML with new attributes. AngularJS is a JavaScript framework. You can add it to an ASPX page with a &lt;script&gt; tag. AngularJS extends HTML attributes with Directives, and binds data to HTML with Expressions. The support is achieved by an integration JS library file. You can know more about the Angular support in the following link location.
+AngularJS is an open-source web application framework. AngularJS extends HTML with new attributes. AngularJS is a JavaScript framework. You can add it to an ASPX page with a <script> tag. AngularJS extends HTML attributes with Directives, and binds data to HTML with Expressions. The support is achieved by an integration JS library file. You can know more about the Angular support in the following link location.
 
 [http://help.syncfusion.com/ug/js/default.htm#!documents/angularjs.htm](http://help.syncfusion.com/ug/js/default.htm)
 
@@ -53,7 +53,7 @@ Add the following code example in your ASPX page.
 
 Add the following code example to configure Angular JS for the menu control
 
-{% highlight html %}
+{% highlight js %}
 
     var data = [
 
@@ -127,7 +127,7 @@ Add the following code example to configure Angular JS for the menu control
 
 Add the following code example in your style section.
 
-{% highlight html %}
+{% highlight c# %}
 
 #angularMenu{
 
@@ -290,7 +290,7 @@ Add the following code example in your style section.
 The following screenshot displays the output of the above code example.      
 
 ![](Integration_images/Integration_img1.png) 
-{:.image }
+
 
 
 ## Knockout binding
@@ -409,7 +409,7 @@ Add the following script code to provide KO support .
 The following screenshot displays the output of the above code example.             
 
 ![](Integration_images/Integration_img2.png) 
-{:.image }
+
 
 
 

@@ -7,7 +7,7 @@ control: DocIO
 documentation: ug
 ---
 
-## Working with Table of Contents
+# Working with Table of Contents
 
 The TableOfContent class represents the Table Of Contents (TOC) in a Word document.
 
@@ -105,8 +105,7 @@ UseTableEntryFields</td><td>
 Gets or sets a value indicating whether the table is built from TC fields. When the TableID property is defined, the table is built only from TC fields with the same identifier.</td></tr>
 </table>
 
-
-> Note: DocIO cannot create Outline levels. However, by turning on the UseOutlineLevels property, you can create TOC from existing outline levels.
+Note: DocIO cannot create Outline levels. However, by turning on the UseOutlineLevels property, you can create TOC from existing outline levels.
 
 
 
@@ -176,7 +175,7 @@ UpdatingTableOfContents method of WordDocument class updates table of contents f
 
 
 
-> Note: UpdatingTableOfContents is not supported in Silverlight, WinRT, or Windows Phone applications.
+Note: UpdatingTableOfContents is not supported in Silverlight, WinRT, or Windows Phone applications.
 
 
 

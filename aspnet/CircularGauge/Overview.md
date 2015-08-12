@@ -23,7 +23,7 @@ The CircularGauge control visualizes the numerical values of scales in a circula
 
 The gauge display can also be customized either as a full circle or a half circle based on individual requirements. Among other helpful features, the CircularGauge control also includes advanced user interactivity.
 
-### Key Features
+## Key Features
 
 * Sub-Gauge: Supports for rendering of multiple sub-gauges within the main Circular Gauge.
 * User Interaction: Allows you to directly interact with the pointers of the gauge.

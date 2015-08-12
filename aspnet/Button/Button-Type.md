@@ -14,15 +14,15 @@ Button is used as normal clickable button, submitting form data, resetting the f
 <table>
 <tr>
 <td>
-Button</td><td>
+{{ '**Button**' | markdownify }}</td><td>
 The button is a clickable button </td></tr>
 <tr>
 <td>
-Submit</td><td>
+{{ '**Submit**' | markdownify }}</td><td>
 The button is a submit button (submits form-data) </td></tr>
 <tr>
 <td>
-Reset    </td><td>
+{{ '**Reset**' | markdownify }}</td><td>
 The button is a reset button (resets the form-data to its initial values)</td></tr>
 </table>
 In the ASPX page, add the following button elements to configure Button with various types.
@@ -62,6 +62,5 @@ In the ASPX page, add the following button elements to configure Button with var
 
 
 ![](Button-Type_images/Button-Type_img1.png)
-{:.image }
 
 

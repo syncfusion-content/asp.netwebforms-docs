@@ -14,10 +14,7 @@ Connectors are objects used to create a link between two nodes. A connector is a
 
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image59_20.jpg](Connector_images/Connector_img1.jpeg) 
-{:.image }
 
-
-_Connector_
 
 ## Create Connector
 
@@ -52,10 +49,8 @@ Diagram1.Connectors.Add(connector);
 
 
  ![](Connector_images/Connector_img2.png) 
-{:.image }
 
 
-_Connector_
 
 ## Segments
 
@@ -65,7 +60,7 @@ The connector has three types of segments.
 * Straight Segments
 * Bezier Segments
 
-Orthogonal Segments
+### Orthogonal Segments
 
 Orthogonal segments are visually represented based on the specified length and direction values. 
 
@@ -109,10 +104,8 @@ Diagram1.Connectors.Add(connector);
 
 
  ![](Connector_images/Connector_img3.png)
-{:.image }
 
 
-_Orthogonal Segment_
 
 The following code illustrates how to customize the Orthogonal Segment.
 
@@ -162,12 +155,9 @@ Diagram1.Connectors.Add(connector);
 
 
  ![](Connector_images/Connector_img4.png) 
-{:.image }
 
 
-_Orthogonal Segment_
-
-Straight Segment
+### Straight Segment
 
 The straight segments can be added by specifying points as to where the line has to be drawn. The segment end point links the SourcePoint and TargetPoint of the connector. 
 
@@ -229,20 +219,17 @@ Diagram1.Connectors.Add(connector);
 
 
 ![C:/Users/lakshmipriya/Desktop/IMG_07112014_125619.png](Connector_images/Connector_img5.png) 
-{:.image }
 
 
-_Polyline_
+
 
 ![](Connector_images/Connector_img6.png) 
-{:.image }
 
 
-_Single Line_
 
 The control points can be added or deleted at runtime with shortcut key combination ctrl + shift +click on the control point.
 
-Bezier Segment
+### Bezier Segment
 
 Bezier segments can be added through points or vector.
 
@@ -298,10 +285,8 @@ Diagram1.Connectors.Add(connector);
 
 
 ![](Connector_images/Connector_img7.png) 
-{:.image }
 
 
-_Bezier Segments_
 
 The following code example illustrates how to add vector point for Bezier segments.
 
@@ -352,28 +337,25 @@ DiagramContent.Connectors.Add(connector);
 
 
 ![](Connector_images/Connector_img8.png)
-{:.image }
 
 
-_Bezier segment with vectors_
 
-Editing Segments
+#### Editing Segments
 
 The segments can be edited during runtime by dragging control thumbs. Segments can be updated when neighboring segments are adjusted.
 
 
 
 ![](Connector_images/Connector_img9.png) 
-{:.image }
 
 
-_Segment Editing_ 
+
 
 ## Connector Padding
 
 Connector Padding allows you to adjust the space between the connector’s end point and the object where it is connected (Node, Group, or Port). 
 
-Endpoint adjustment specific to connector ends
+### Endpoint adjustment specific to connector ends
 
 Padding distance between source or target end with its connected end (Node, Group, or Port) can be adjusted by using SourcePadding and TargetPadding, respectively.
 
@@ -396,10 +378,10 @@ connector.TargetPadding = 20;
 
 
 ![](Connector_images/Connector_img10.png) 
-{:.image }
 
 
-Endpoint adjustment specific to nodes
+
+### Endpoint adjustment specific to nodes
 
 ConnectorPadding property of a node specifies the amount of space needed in pixels between a node and all its connected edges.
 
@@ -418,10 +400,10 @@ node.ConnectorPadding = 20;
 
 
 ![](Connector_images/Connector_img11.png) 
-{:.image }
 
 
-Endpoint adjustment specific to ports
+
+### Endpoint adjustment specific to ports
 
 ConnectorPadding property of a port specifies the amount of space needed in pixels between a port and all its connected edges.
 
@@ -442,7 +424,7 @@ port.ConnectorPadding = 20;
 
 
 ![](Connector_images/Connector_img12.png) 
-{:.image }
+
 
 
 ## Line Bridging
@@ -500,27 +482,25 @@ DiagramContent.Constraints = DiagramConstraints.Default | DiagramConstraints.Bri
 
 
 ![](Connector_images/Connector_img13.png) 
-{:.image }
 
 
-_Line Bridging_
 
 When the connector constraint is set as ConnectorConstraints.InheritBridging, bridging is based on DiagramConstraints.
 
-Line Bridging Direction
+### Line Bridging Direction
 
 Direction of the Line Bridge can be customized by using the BridgeDirection property. This property decides the intersecting segment that shows a bridge based on your preferred direction. 
 
 The default value for the Diagram model’s BridgeDirection property is BridgeDirection.Top.
 
-_BridgeDirection Property_
+BridgeDirection Property
 
 <table>
 <tr>
 <td>
- Properties</td><td>
-Description</td><td>
-Value</td></tr>
+{{ '**Properties**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Value**' | markdownify }}</td></tr>
 <tr>
 <td>
 BridgeDirection</td><td>
@@ -549,10 +529,8 @@ DiagramContent.Model.BridgeDirection = BridgeDirection.Top;
 
 
 ![](Connector_images/Connector_img14.png) 
-{:.image }
 
 
-_BridgeDirection.Top_
 
 
 
@@ -572,10 +550,8 @@ DiagramContent.Model.BridgeDirection = BridgeDirection.Left;
 
 
  ![](Connector_images/Connector_img15.png) 
-{:.image }
 
 
-_BridgeDirection.Left_
 
 
 
@@ -620,10 +596,8 @@ Connector.CornerRadius=20;
 
 
 ![](Connector_images/Connector_img16.png) 
-{:.image }
 
 
-_Corner Radius_
 
 ## Connecting Nodes
 
@@ -650,10 +624,8 @@ connector.TargetNode = "tailnode"; //Sets name of targetNode
 
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image59_22.jpg](Connector_images/Connector_img17.jpeg) 
-{:.image }
 
 
-_Node to Node Connection_
 
 The point of connection is changed optimally at runtime while performing operations such as Rotating and Dragging on Source/Target Node of Connector. In case of static or specific point connection at runtime, the Port assists to maintain specific point connection between Nodes.
 
@@ -672,9 +644,9 @@ _Appearance_
 <table>
 <tr>
 <td>
-Properties</td><td>
-Data Type</td><td>
-Description</td></tr>
+{{ '**Properties**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 LineWidth</td><td>
@@ -752,7 +724,7 @@ connector.SourceDecorator.Height = 10;
 
 {% endhighlight %}
 
-Decorator Appearance
+### Decorator Appearance
 
 Decorator appearance is customized by setting the desired value to the appropriate appearance properties.
 
@@ -761,9 +733,9 @@ _Decorator Appearance_
 <table>
 <tr>
 <td>
-Properties</td><td>
-Data Type</td><td>
-Description</td></tr>
+{{ '**Properties**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
  Width</td><td>
@@ -830,14 +802,12 @@ connector.SourceDecorator.FillColor = "yellow";
 
 
  ![http://help.syncfusion.com/ug/js/ImagesExt/image59_23.jpg](Connector_images/Connector_img18.jpeg) 
-{:.image }
 
 
-_Decorator Shape_
 
 ## Constraints
 
-Connector Constraints
+### Connector Constraints
 
 You can enable or disable certain behaviors of the Connectors by using the constraints property.__
 
@@ -846,8 +816,8 @@ _Constraints_
 <table>
 <tr>
 <td>
-Constraints</td><td>
-Description</td></tr>
+{{ '**Constraints**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 None</td><td>
@@ -897,7 +867,7 @@ Enables all constraints.</td></tr>
 
 The default value for the connector constraints property is ConnectorConstraints.Default.
 
-Example
+### Example
 
 The following code illustrates how to disable select constraints of the connector. Disabling select constraints does not allow you to select the connector.
 
@@ -916,5 +886,5 @@ connector.Constraints = connector.Constraints &~(ConnectorConstraints.Select);
 
 
 
-_Note: Connector’s constraints property is manipulated by using bitwise operations. For more information about bitwise operations, see_ [Bitwise Operations](http://help.syncfusion.com/ug/js/documents/bitwiseoperations.htm)_._ 
+Note: Connector’s constraints property is manipulated by using bitwise operations. For more information about bitwise operations, see_ [Bitwise Operations](http://help.syncfusion.com/ug/js/documents/bitwiseoperations.htm).
 

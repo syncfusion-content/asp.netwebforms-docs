@@ -15,9 +15,9 @@ The server side event present in the CurrencyTextbox control is listed:
 <table>
 <tr>
 <th>
-Event Name</th><th>
-Description</th><th>
-Arguments</th></tr>
+{{ '**Event Name**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Arguments**' | markdownify }}</th></tr>
 <tr>
 <td>
 OnFocusOut</td><td>

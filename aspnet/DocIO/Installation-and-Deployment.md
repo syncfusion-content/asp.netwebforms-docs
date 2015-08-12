@@ -13,7 +13,7 @@ For step-by-step procedure for the installation of Essential Studio, refer to th
 
 
 
-For More Information
+## For More Information
 
 For information on licensing, patches, and adding or removing selective components, refer to the following topics in Common UG under Installation and Deployment.
 

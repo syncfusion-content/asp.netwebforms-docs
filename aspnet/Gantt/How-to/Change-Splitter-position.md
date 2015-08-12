@@ -7,11 +7,11 @@ control: Gantt
 documentation: ug
 ---
 
-### Change Splitter position
+## Change Splitter position
 
 In Gantt control, Splitter separates the Treegrid section from the Chart section. 
 
-{ ![C:/Users/labuser/Desktop/splitter.png](Change-Splitter-position_images/Change-Splitter-position_img1.png) | markdownify }
+ ![C:/Users/labuser/Desktop/splitter.png](Change-Splitter-position_images/Change-Splitter-position_img1.png) 
 
 
 
@@ -43,7 +43,7 @@ The following code example explains how to define the SplitterPosition property 
 
 
 
-{ ![C:/Users/labuser/Desktop/splitter30.png](Change-Splitter-position_images/Change-Splitter-position_img2.png) | markdownify }
+[C:/Users/labuser/Desktop/splitter30.png](Change-Splitter-position_images/Change-Splitter-position_img2.png) 
 
 
 
@@ -51,11 +51,11 @@ The following code example explains how to define the SplitterPosition property 
 
 
 
-{ ![C:/Users/labuser/Desktop/Splitter50.png](Change-Splitter-position_images/Change-Splitter-position_img3.png) | markdownify }
+[C:/Users/labuser/Desktop/Splitter50.png](Change-Splitter-position_images/Change-Splitter-position_img3.png) 
 
 
 
-{ ![C:/Users/labuser/Desktop/Splitter600px.png](Change-Splitter-position_images/Change-Splitter-position_img4.png) | markdownify }
+[C:/Users/labuser/Desktop/Splitter600px.png](Change-Splitter-position_images/Change-Splitter-position_img4.png)
 
 
 

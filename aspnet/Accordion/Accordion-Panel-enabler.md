@@ -79,7 +79,7 @@ You can enable the Accordion control items on initial loading by using EnabledIt
 
 The DisabledItems property disables the Accordion items based on the index. This takes array of indices whose panel is to be disabled. 
 
-Enabling accordion panel items
+### Enabling accordion panel items
 
 The following steps explains you on how to enable the panel items in Accordion control.
 
@@ -171,7 +171,7 @@ Output for Accordion control with some enabled and disabled items, where first p
 
 Accordion control can store the model value in the browser cookies and on every time after initial rendering, the control get the model from the cookie only. By using EnablePersistence property you can store the model value in cookies. Thus when any changes are made dynamically then those values are updated in cookie. On refreshing the page, the past state of the Accordion control is maintained in cookie and control is rendered from it
 
-Configure state persistence of Accordion panel
+### Configure state persistence of Accordion panel
 
 The following steps explains to enable state maintenance for Accordion.
 

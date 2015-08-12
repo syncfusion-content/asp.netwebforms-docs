@@ -153,6 +153,5 @@ Configure the CSS styles to apply on buttons.
 
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
-{:.image }
 
 

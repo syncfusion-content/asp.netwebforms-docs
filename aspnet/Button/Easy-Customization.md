@@ -18,23 +18,23 @@ You can render the button in different sizes. Here, you have some predefined siz
 <table>
 <tr>
 <td>
-Normal</td><td>
+{{ '**Normal**' | markdownify }}</td><td>
 Creates button with content size.</td></tr>
 <tr>
 <td>
-Mini</td><td>
+{{ '**Mini**' | markdownify }}</td><td>
 Creates button with inbuilt mini size height, width specified.</td></tr>
 <tr>
 <td>
-Small</td><td>
+{{ '**Small**' | markdownify }}</td><td>
 Creates button with inbuilt small size height, width specified.</td></tr>
 <tr>
 <td>
-Medium</td><td>
+{{ '**Medium**' | markdownify }}</td><td>
 Creates button with inbuilt medium size height, width specified.</td></tr>
 <tr>
 <td>
-Large</td><td>
+{{ '**Large**' | markdownify }}</td><td>
 Creates button with inbuilt large size height, width specified.</td></tr>
 </table>
 
@@ -88,7 +88,6 @@ In the ASPX page, add the following button elements to configure button for conf
 
 
 ![](Easy-Customization_images/Easy-Customization_img1.png)
-{:.image }
 
 
 ## Content Type
@@ -98,23 +97,23 @@ The content of the Button is mainly text and images. Instead of using complex CS
 <table>
 <tr>
 <td>
-TextOnly</td><td>
+{{ '**TextOnly**' | markdownify }}</td><td>
 Supports only for text content only.</td></tr>
 <tr>
 <td>
-ImageOnly</td><td>
+{{ '**ImageOnly**' | markdownify }}</td><td>
 Supports only for image content only</td></tr>
 <tr>
 <td>
-ImageBoth</td><td>
+{{ '**ImageBoth**' | markdownify }}</td><td>
 Supports image for both ends of the button.</td></tr>
 <tr>
 <td>
-TextAndImage</td><td>
+{{ '**TextAndImage**' | markdownify }}</td><td>
 Supports image with the text content.</td></tr>
 <tr>
 <td>
-ImageTextImage</td><td>
+{{ '**ImageTextImage**' | markdownify }}</td><td>
 Supports image with both ends and middle in text.</td></tr>
 </table>
 
@@ -215,7 +214,6 @@ SuffixIcon="e-uiLight e-palette">
 
 
 ![](Easy-Customization_images/Easy-Customization_img2.png)
-{:.image }
 
 
 ## Image Position
@@ -225,19 +223,19 @@ To provide the best look and feel for Button, position of button images is an im
 <table>
 <tr>
 <td>
-ImageLeft</td><td>
+{{ '**ImageLeft**' | markdownify }}</td><td>
 Support for aligning text in right and image in left.</td></tr>
 <tr>
 <td>
-ImageRight</td><td>
+{{ '**ImageRight**' | markdownify }}</td><td>
 Support for aligning text in left and image in right.</td></tr>
 <tr>
 <td>
-ImageTop</td><td>
+{{ '**ImageTop**' | markdownify }}</td><td>
 Support for aligning text in bottom and image in top.</td></tr>
 <tr>
 <td>
-ImageBottom</td><td>
+{{ '**ImageBottom**' | markdownify }}</td><td>
 Support for aligning text in top and image in bottom.</td></tr>
 </table>
 
@@ -325,6 +323,5 @@ In the ASPX page, add the following button elements to configure Button image po
 
 
 ![](Easy-Customization_images/Easy-Customization_img3.png)
-{:.image }
 
 

@@ -14,9 +14,9 @@ The following are the server side events available in the DropDownList control.
 <table>
 <tr>
 <th>
-Event</th><th>
-Event Description</th><th>
-Event Description</th></tr>
+{{ '**Event**' | markdownify }}</th><th>
+{{ '**Event Description**' | markdownify }}</th><th>
+{{ '**Event Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 OnCheckChange</td><td>

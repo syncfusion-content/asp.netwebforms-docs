@@ -7,7 +7,7 @@ control: DocIO
 documentation: ug
 ---
 
-## Working with Bookmarks
+# Working with Bookmarks
 
 You can easily identify location of text by specifying the unique name of a bookmark in for the text. For example, you might use a bookmark to identify the text that you want to revise later. Instead of scrolling through the document to locate the text, you can access it by using the Bookmark dialog box.
 
@@ -30,7 +30,7 @@ The following steps illustrate how to add a bookmark in Word:
 
 
 
-> Note: Bookmark names must begin with a letter and can contain numbers. You cannot include spaces in a bookmark name. However, you can use the underscore character to separate words.
+Note: Bookmark names must begin with a letter and can contain numbers. You cannot include spaces in a bookmark name. However, you can use the underscore character to separate words.
 
 
 
@@ -60,7 +60,7 @@ WBookmarkEnd
 
 
 
-BookmarkStart Public Constructors
+## BookmarkStart Public Constructors
 
 _Table_ _66_: _BookmarkStart _Public Constructors_
 
@@ -120,7 +120,7 @@ DocIO provides support to navigate to bookmarks. For details, see BookmarkNaviga
 
 
 
-> Note: Modification of bookmarks in the Bookmarks Collection causes document corruption.
+Note: Modification of bookmarks in the Bookmarks Collection causes document corruption.
 
 
 
@@ -300,10 +300,10 @@ Inserts the body part of the text.</td></tr>
 </table>
 
 
-> Note:
+Note:
 
-> * Due to MS Word’s behavior, you cannot replace the Multi Section bookmark content into table bookmark.
-> * Use for loop when replacing all the bookmarks in a document instead of foreach loop to avoid “collection modified exception”, as the Bookmarks collection is modified internally by preserving bookmark position once after replacing.
+* Due to MS Word’s behavior, you cannot replace the Multi Section bookmark content into table bookmark.
+* Use for loop when replacing all the bookmarks in a document instead of foreach loop to avoid “collection modified exception”, as the Bookmarks collection is modified internally by preserving bookmark position once after replacing.
 
 The following are the restrictions on the Replace BookmarkContent methods such as,
 
@@ -402,7 +402,7 @@ You can also preserve the formatting in the template (target) document while ins
 
 WordDocumentPart class contains the collection of sections. WordDocumentPart is usually used with the Bookmark Navigator.
 
-> Note: WordDocumentPart contains the copy of sections from the documents. When you modify the content of the WordDocumentPart, it does not affect the objects inside the document.
+Note: WordDocumentPart contains the copy of sections from the documents. When you modify the content of the WordDocumentPart, it does not affect the objects inside the document.
 
 ### Public Constructors
 

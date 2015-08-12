@@ -25,7 +25,7 @@ To know more detail about the Angular binding, you can refer to the following li
 [http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
 
 
-_Note: Add the following script files along with the given code to access the Angular binding. They have JS library for Angular binding._
+Note: Add the following script files along with the given code to access the Angular binding. They have JS library for Angular binding._
 
 * angular-min.js
 * ej.widget.angular.min.js
@@ -115,7 +115,7 @@ The following example depicts the way to bind data to the DatePicker control thr
 
 
 ![](Integration_images/Integration_img2.png) 
-{:.image }
+
 
 
 ## Knockout Binding
@@ -135,9 +135,7 @@ For more information about the Knockout binding, you can refer to the following 
 
 [http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
 
-![](Integration_images/Integration_img3.jpeg) 
-{:.image }
-_Note: Add the following script files along with the given code to access Knockout binding. They have JS library for Knockout binding._
+Note: Add the following script files along with the given code to access Knockout binding. They have JS library for Knockout binding._
 
 * knockout-min.js
 * ej.widget.ko.min.js
@@ -249,7 +247,7 @@ The following example depicts the way to bind data to the DatePicker control thr
 
 
 ![](Integration_images/Integration_img4.png) 
-{:.image }
+
 
 
 

@@ -15,15 +15,15 @@ Frames are space that enclose the Digital Gauge. The inner width of the Frame is
 
 {% highlight html %}
 
-&lt;ej:DigitalGauge runat="server" ID="DigitalGauge1" Value="WELCOME"&gt;
+<ej:DigitalGauge runat="server" ID="DigitalGauge1" Value="WELCOME">
 
-&lt;%-- Adding Frame properties --%&gt;
+<%-- Adding Frame properties --%>
 
-&lt;Frame InnerWidth="6" OuterWidth="10"/&gt;
+<Frame InnerWidth="6" OuterWidth="10"/>
 
 
 
-&lt;/ej:DigitalGauge&gt;
+</ej:DigitalGauge>
 
 {% endhighlight %}
 
@@ -32,7 +32,7 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 
 ![](Frames_images/Frames_img1.png)
-{:.image }
+
 
 
 
@@ -45,35 +45,35 @@ For a better appearance, you can set the backgroundimage for the Digital Gauge u
 
 {% highlight html %}
 
-&lt;ej:DigitalGauge runat="server" ID="DigitalGauge1" Value="RADAR"&gt;
+<ej:DigitalGauge runat="server" ID="DigitalGauge1" Value="RADAR">
 
-&lt;%-- Adding background image --%&gt;
+<%-- Adding background image --%>
 
-&lt;Frame BackgroundImageUrl="../Content/images/gauge/board3.jpg"/&gt;
+<Frame BackgroundImageUrl="../Content/images/gauge/board3.jpg"/>
 
-&lt;Items&gt;
-
-
-
-&lt;ej:DigitalGaugeItems&gt;
+<Items>
 
 
 
-&lt;%-- Adding gauge position --%&gt;
+<ej:DigitalGaugeItems>
 
 
 
-&lt;Position X="80" Y="10"/&gt;
+<%-- Adding gauge position --%>
 
 
 
-&lt;/ej:DigitalGaugeItems&gt;
+<Position X="80" Y="10"/>
 
 
 
-&lt;/Items&gt;
+</ej:DigitalGaugeItems>
 
-&lt;/ej:DigitalGauge&gt;
+
+
+</Items>
+
+</ej:DigitalGauge>
 
 {% endhighlight %}
 
@@ -84,7 +84,7 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 
 ![](Frames_images/Frames_img2.png)
-{:.image }
+
 
 
 

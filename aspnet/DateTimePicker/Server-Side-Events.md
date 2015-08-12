@@ -14,9 +14,9 @@ The following server side even_ts_ are available in the__DateTimePicker control.
 <table>
 <tr>
 <td>
-Event</td><td>
-Event Description</td><td>
-Event Description</td></tr>
+{{ '**Event**' | markdownify }}</td><td>
+{{ '**Event Description**' | markdownify }}</td><td>
+{{ '**Event Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 OnFocusOut</td><td>

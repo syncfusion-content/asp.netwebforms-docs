@@ -45,7 +45,6 @@ Execute the above code to render the following output.
 
  ![C:/Users/karthigeyan/Desktop/Untitled.png](Labels_images/Labels_img1.png)
 
-Figure 32(a): Circular Gauge with  label collection
 
 ## Label Customization
 
@@ -56,52 +55,51 @@ Figure 32(a): Circular Gauge with  label collection
 * Font option is also available on the labels. The basic three properties of fonts such as size, family and style can be achieved by size, fontStyle and fontFamily. Labels are two types such as major and minor.Major types labels are for major interval values and minor types labels are for minor interval values. 
 
 
-{% highlight html %}
+  ~~~ html
 
 
-<%--For Circular Gauge rendering-- %>
+        <%--For Circular Gauge rendering-- %>
 
-<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
+        <ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-<Scales>
+        <Scales>
 
-<ej:CircularScales ShowscaleBar="true" BackgroundColor="#FAF4B5" Size="10" radius="110">
+        <ej:CircularScales ShowscaleBar="true" BackgroundColor="#FAF4B5" Size="10" radius="110">
 
-<Border Width="2" Color="yellow" />
+        <Border Width="2" Color="yellow" />
 
-<PointerCollection>
+        <PointerCollection>
 
-<ej:Pointers Value="40" length="80" width="16" Opacity="0.6" BackgroundColor="#FAF4B5" ></ej:Pointers>
+        <ej:Pointers Value="40" length="80" width="16" Opacity="0.6" BackgroundColor="#FAF4B5" ></ej:Pointers>
 
-</PointerCollection>
+        </PointerCollection>
 
-<%--For setting includefirst value, label color-- %>
+        <%--For setting includefirst value, label color-- %>
 
-<labelCollection>
+        <labelCollection>
 
-<ej:CircularLabels Angle="10" Opacity="0.8" IncludeFirstValue="false" color="yellow">
+        <ej:CircularLabels Angle="10" Opacity="0.8" IncludeFirstValue="false" color="yellow">
 
-<Font Size="15px" FontFamily="arial" FontStyle="bold"></Font>
+        <Font Size="15px" FontFamily="arial" FontStyle="bold"></Font>
 
-</ej:CircularLabels>
+        </ej:CircularLabels>
 
-</labelCollection>
+        </labelCollection>
 
-</ej:CircularScales>
+        </ej:CircularScales>
 
-</Scales>
+        </Scales>
 
-</ej:CircularGauge>
+        </ej:CircularGauge>
 
-
-{% endhighlight %}
+  ~~~
+  {:.pretty-print }
 
 
 Execute the above code to render the following output.
 
  ![](Labels_images/Labels_img2.png)
 
-Figure 33(b): Circular Gauge with customized label
 
 ### Unit text and Position
 
@@ -109,58 +107,60 @@ Figure 33(b): Circular Gauge with customized label
 * Labels can be positioned with the help of two properties such as distanceFromScale and placement. distanceFromScale property defines the distance between the scale and labels.  Placement property is used to locate the labels with respect to scale either inside the scale or outside the scale or along the scale. It is an enumerable data type.
 
 
-{% highlight html %}
+  ~~~ html
 
 
-<%--For Circular Gauge rendering-- %>
+        <%--For Circular Gauge rendering-- %>
 
-<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
+        <ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-<Scales>
+        <Scales>
 
-<ej:CircularScales ShowRanges="true" ShowscaleBar="true"  Size="2" radius="150">
+        <ej:CircularScales ShowRanges="true" ShowscaleBar="true"  Size="2" radius="150">
 
-<PointerCollection>
+        <PointerCollection>
 
-<ej:Pointers Value="40" showbackneedle="true" length="100"></ej:Pointers>
+        <ej:Pointers Value="40" showbackneedle="true" length="100"></ej:Pointers>
 
-</PointerCollection>
+        </PointerCollection>
 
-<labelCollection>
+        <labelCollection>
 
-<%--For setting unit text and unit text position-- %>
+        <%--For setting unit text and unit text position-- %>
 
-<ej:CircularLabels unittext="kmpH" UnitTextPosition="back">
+        <ej:CircularLabels unittext="kmpH" UnitTextPosition="back">
 
-<Font Size="15px" FontFamily="arial" FontStyle="bold"></Font>
+        <Font Size="15px" FontFamily="arial" FontStyle="bold"></Font>
 
-</ej:CircularLabels>
+        </ej:CircularLabels>
 
-</labelCollection>
+        </labelCollection>
 
-<RangeCollection>
+        <RangeCollection>
 
-<ej:CircularRanges StartValue="0" EndValue="50" backgroundColor="green" Placement="far" DistanceFromScale="-30"></ej:CircularRanges>
+        <ej:CircularRanges StartValue="0" EndValue="50" backgroundColor="green" Placement="far" DistanceFromScale="-30"></ej:CircularRanges>
 
-<ej:CircularRanges StartValue="50" EndValue="80" backgroundColor="yellow" Placement="far" DistanceFromScale="-30"></ej:CircularRanges>
+        <ej:CircularRanges StartValue="50" EndValue="80" backgroundColor="yellow" Placement="far" DistanceFromScale="-30"></ej:CircularRanges>
 
-<ej:CircularRanges StartValue="80" EndValue="100" backgroundColor="red" Placement="far" DistanceFromScale="-30"></ej:CircularRanges>
+        <ej:CircularRanges StartValue="80" EndValue="100" backgroundColor="red" Placement="far" DistanceFromScale="-30"></ej:CircularRanges>
 
-</RangeCollection>
+        </RangeCollection>
 
-</ej:CircularScales>
+        </ej:CircularScales>
 
-</Scales>
+        </Scales>
 
-</ej:CircularGauge>
-{% endhighlight %}
+        </ej:CircularGauge>
+
+  ~~~
+  {:.pretty-print }
 
 
 Execute the above code to render the following output.
 
  ![](Labels_images/Labels_img3.png)
 
-Figure 34: Circular Gauge with unit text
+
 
 ## Multiple Labels
 
@@ -215,6 +215,5 @@ Execute the above code to render the following output.
 
  ![](Labels_images/Labels_img4.png)
 
-Figure 35: Circular Gauge with unit textCircular Gauge with multiple labels
 
 

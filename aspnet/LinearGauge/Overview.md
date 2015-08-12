@@ -2,7 +2,7 @@
 layout: post
 title: Overview
 description: overview
-platform: common
+platform: aspnet
 control: Linear Gauge
 documentation: ug
 ---

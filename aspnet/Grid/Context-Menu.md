@@ -12,19 +12,32 @@ documentation: ug
 Context Menu is one of the user interaction controls related with Grid. It is handy to use the Context Menu to trigger more actions. The default Context Menu items created for Grid are:
 
 1. Header
-1. Sort In Ascending Order
-2. Sort In Descending Order
-3. Grouping
-4. UnGrouping
+
+   a. Sort In Ascending Order
+   
+   b. Sort In Descending Order
+   
+   c. Grouping
+   
+   d. UnGrouping
+   
 2. Content
-1. Add Record
-2. Edit Record
-3. Delete Record                  
+
+   a. Add Record
+   
+   b. Edit Record
+   
+   c. Delete Record       
+   
 3. Footer 
-1. Next Page     
-2. Last Page
-3. Previous Page
-4. First Page
+
+   a. Next Page     
+   
+   b. Last Page
+   
+   c. Previous Page
+   
+   d. First Page
 
 ## Context Menu action
 
@@ -175,21 +188,16 @@ The following output is displayed as a result of the above code example.
 
 
 
-_Figure 112: Context Menu in content_
-
 ### Header
 
 ![C:/Users/ApoorvahR/Desktop/2.png](Context-Menu_images/Context-Menu_img2.png)
 
 
 
-_Figure 113: Context Menu in Header_
 
 ### Footer
 
 ![](Context-Menu_images/Context-Menu_img3.png)
 
 
-
-_Figure 114: Context Menu in Footer_
 

@@ -7,9 +7,11 @@ control: Grid
 documentation: ug
 ---
 
-### Disable double-click edit
+## Disable double-click edit
 
 The AllowEditOnDblClick property can be set as True to enable editing the record by double-clicking it. When it is set as False, it cannot be edited by double-clicking it. In that case, you can edit the record by using the Toolbar option only.
+
+{% highlight html %}
 
 [ASP]
 
@@ -44,12 +46,12 @@ The AllowEditOnDblClick property can be set as True to enable editing the record
 
 
 
-
+ {% endhighlight %}
 
 
 The following output is displayed as a result of the above code example.
 
-{ ![](Disable-double-click-edit_images/Disable-double-click-edit_img1.png) | markdownify }
+![](Disable-double-click-edit_images/Disable-double-click-edit_img1.png) 
 
 
 

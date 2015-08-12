@@ -16,7 +16,7 @@ This section explains briefly how to create a Checkbox in your application with 
 ASP.NET Checkbox provides support for multiple selections, within your webpage and allows you to specify an option from the list. From the following guidelines, you can select Multiple or Single Selection List Receiving App by using Checkbox. The following screenshot demonstrates the functionality with Checkbox button action.
 
 ![Description: C:/Users/jeganprakash/Desktop/Documentation/Images/Check/1.PNG](Getting-Started_images/Getting-Started_img1.png)
-{:.image }
+
 
 
 In the above screenshot, you can select Hobbies, Interests list and Social networks Receiving App by using Checkbox, Tri-state Checkboxand perform the action to render the checked values when the button is clicked.
@@ -264,14 +264,14 @@ Add the script into your ASPX page.
 
 
 ![Description: C:/Users/jeganprakash/Desktop/Documentation/Images/Check/2.PNG](Getting-Started_images/Getting-Started_img2.png)
-{:.image }
+
 
 
 ## File Selection in Media Player
 
 You can get the file type of Media player applications such as video, audio and picture by using Checkbox. Follow the given steps to get media player file types.
 
-Add the following code in the &lt;body&gt; element of the corresponding ASPX page.
+Add the following code in the <body> element of the corresponding ASPX page.
 
 {% highlight html %}
 
@@ -476,6 +476,6 @@ Add the following styles to show the Checkbox control in an order.
 Run the code to render the resultant output.
 
 ![](Getting-Started_images/Getting-Started_img3.png)
-{:.image }
+
 
 

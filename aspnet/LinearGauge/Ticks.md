@@ -2,7 +2,7 @@
 layout: post
 title: Ticks
 description: ticks
-platform: common
+platform: aspnet
 control: Linear Gauge
 documentation: ug
 ---

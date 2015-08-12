@@ -18,9 +18,9 @@ _Selector Properties_
 <table>
 <tr>
 <td>
-Names</td><td>
-Type </td><td>
-Description</td></tr>
+{{ '**Names**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 offsetX</td><td>
@@ -62,7 +62,8 @@ userHandles</td><td>
 collection</td><td>
 Gets or sets the value that is used to draw the custom handles on the selected elements.</td></tr>
 </table>
-Move, Resize, or Rotate selected items:
+
+## Move, Resize, or Rotate selected items:
 
 The following code example is used to update the size and position of the selected elements.
 
@@ -84,7 +85,7 @@ diagram.updateSelector({ offsetX: 100, offsetY: 100, width: 100, height: 100 });
 
 {% endhighlight %}
 
-Iterate though selected items:
+## Iterate though selected items:
 
 The following code example is used to get the selected elements.
 
@@ -110,7 +111,7 @@ for(var i=0; i< diagram.model.selectedItems.children.length; i++)
 
 {% endhighlight %}
 
-User Handles:
+## User Handles:
 
 The following code example is used to draw custom handles on the selected elements.
 

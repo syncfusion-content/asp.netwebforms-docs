@@ -20,5 +20,5 @@ The ASP.NET DateTimePicker control is used to input the date and time with a spe
 * Themes: Essential JavaScript controls consist of 12 built-in themes (6 – flat and 6 – gradient effects), and also support custom skin options to set user-defined themes.
 
 
-_Note: As the DateTimePicker inherits the functionalities of the DatePicker and TimePicker controls, it supports the basic functionalities of both the controls._
+Note: As the DateTimePicker inherits the functionalities of the DatePicker and TimePicker controls, it supports the basic functionalities of both the controls.
 

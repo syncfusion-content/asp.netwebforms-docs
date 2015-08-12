@@ -133,7 +133,7 @@ The following screenshot displays the output of the above code example.
 
 ### Configure Values
 
-### OpacityValue
+#### OpacityValue
 
 The ColorPicker control allows you to change the opacity value by using the “OpacityValue“ property. The selected color opacity is adjusted by using the OpacityValue. 
 
@@ -165,7 +165,7 @@ The following screenshot displays the output of the above code example.
 
 ### Button and TooltipText
 
-### ButtonText
+#### ButtonText
 
 The ColorPicker control allows you to define the text to be displayed in button elements. You can specify the text by using the “ButtonText” property. In the ColorPicker control, the popup contains two button elements “Apply” and “Cancel”.
 
@@ -175,8 +175,8 @@ To configure the ButtonText property for the button elements, use the correspond
 <table>
 <tr>
 <th>
-Element</th><th>
-Default value</th></tr>
+{{ '**Element**' | markdownify }}</th><th>
+{{ '**Default value**' | markdownify }}</th></tr>
 <tr>
 <td>
 apply</td><td>
@@ -188,7 +188,7 @@ Cancel</td></tr>
 </table>
 
 
-### TooltipText
+#### TooltipText
 
 The ColorPicker control consists of more number of sub controls and elements. To provide some information about each element and sub control you can use the tooltip concept and you can achieve this by using the “TooltipText” property.
 
@@ -198,8 +198,8 @@ To configure the TooltipText, use the following listed elements and its correspo
 <table>
 <tr>
 <th>
-Element</th><th>
-Default value</th></tr>
+{{ '**Element**' | markdownify }}</th><th>
+{{ '**Default value**' | markdownify }}</th></tr>
 <tr>
 <td>
 switcher</td><td>
@@ -310,9 +310,9 @@ The “ModelType” property is Enum type and its default value is “default”
 <table>
 <tr>
 <th>
-ModelType</th><th>
-Syntax</th><th>
-Description</th></tr>
+{{ '**ModelType**' | markdownify }}</th><th>
+{{ '**Syntax**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 Default</td><td>
@@ -358,7 +358,7 @@ The following screenshot displays the output of the above code example.
 
 
 
-### Palette
+#### Palette
 
 The ColorPicker allows you to define the palette type to be displayed in control at initial time by using the “palette” property. The “Palette” property is Enum type and its default value is “BasicPalette”.
 
@@ -367,10 +367,10 @@ The ColorPicker allows you to define the palette type to be displayed in control
 <table>
 <tr>
 <th>
-Palette</th><th>
-Syntax</th><th>
-Description</th><th>
-Dependent Property</th></tr>
+{{ '**Palette**' | markdownify }}</th><th>
+{{ '**Syntax**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Dependent Property**' | markdownify }}</th></tr>
 <tr>
 <td>
 BasicPalette</td><td>
@@ -385,11 +385,11 @@ The palette model rendered with user specified custom color values.</td></tr>
 </table>
 
 
-### BasicPalette
+##### BasicPalette
 
 The BasicPalette type rendered with predefined color values. The BasicPalette model has 12 different preset patterns. Each pattern consists of 50 colors, over 600 colors are available by default. 
 
-### PresetType
+##### PresetType
 
 The ColorPicker control allows you to define the preset model to be rendered initially in palette type. This can be achieved by using the “PresetType” property. Totally 12 types of presets available.
 
@@ -399,9 +399,9 @@ The “_PresetType_” property is Enum type and its default value is “basic�
 <table>
 <tr>
 <td>
-PresetType</td><td>
-Syntax</td><td>
-Dependent Property</td></tr>
+{{ '**PresetType**' | markdownify }}</td><td>
+{{ '**Syntax**' | markdownify }}</td><td>
+{{ '**Dependent Property**' | markdownify }}</td></tr>
 <tr>
 <td>
 Basic</td><td>
@@ -478,7 +478,7 @@ The following screenshot displays the output of the above code example.
 
 
 
-### CustomPalette
+##### CustomPalette
 
 The ColorPicker control allows you to define the custom colors in the palette model by using the “Palette” property. Custom palettes are created by passing a comma delimited string of HEX values or an array of colors in “custom” property. The CustomPalette model is only applicable when you set ModelType as “Palette”.
 
@@ -632,7 +632,7 @@ Add the following code example to the corresponding ASPX page to render the Colo
 
 
 
-### Custom Css Styles.
+Custom Css Styles.
 
 {% highlight css %}
 

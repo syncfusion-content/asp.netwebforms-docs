@@ -70,6 +70,6 @@ The following code illustrates how to create a Diagram with some model propertie
 
 
 ![](Model_images/Model_img1.png) 
-{:.image }
+
 
 

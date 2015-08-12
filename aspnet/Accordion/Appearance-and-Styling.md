@@ -227,7 +227,7 @@ Output for accordion control when “ShowRoundedCorner” is set to “true” i
 
 Accordion control allows you to customize the icons by using CustomIcon option that has two properties Header and SelectedHeader. By default, the classes of Header and SelectedHeader are e-collapse and e-expand respectively. By setting the desired CSS class names for these properties as required overrides the default icons with customized icons.
 
-## Configuring custom icon for Accordion
+### Configuring custom icon for Accordion
 
 The following steps explains you the configuration of icon for an Accordion control.
 
@@ -457,7 +457,8 @@ Accordion icon in the header that change on expand and collapse panels</td></tr>
 .e-content</td><td>
 Class for the div element that holds the Accordion panel’s content.</td></tr>
 </table>
-Configure Accordion using CSS class
+
+### Configure Accordion using CSS class
 
 The following steps allows you to configure CSS class for an Accordion control.
 

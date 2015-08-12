@@ -24,7 +24,7 @@ The following are the types of formattings supported by DocIO.
 * List style fromatting
 
 
-> Note: DocIO currently does not support table styles.
+Note: DocIO currently does not support table styles.
 
 
 
@@ -33,7 +33,7 @@ The following are the types of formattings supported by DocIO.
 DocIO allows you to create your own paragraph style and list styles (user-defined style), which can be applied to any paragraph or list item. Refer to the Paragraph formatting section to know more about the user-defined styles.
 
 
-> Note: In a Word document style hierarchy, “Normal” is the base style and is the default style for paragraphs and tables, if the user has not specified style definition.
+Note: In a Word document style hierarchy, “Normal” is the base style and is the default style for paragraphs and tables, if the user has not specified style definition.
 
 
 
@@ -148,7 +148,7 @@ Dim style1 As IStyle = coll(0)
 This sections elaborates how to deal with the Character Styles. The class CharacterStyle takes resposibilty for handling the character styles. 
 
 
-> Note: DocIO does not provide support to add user-defined character styles to the document
+Note: DocIO does not provide support to add user-defined character styles to the document
 
 ### Class Hierarchy
 
@@ -2883,9 +2883,8 @@ Adds a new paragraph to the section.Dim paragraph As IWParagraph = section.AddPa
 {% endhighlight %}
 
 
-![](Styles-and-Formatting_images/Styles-and-Formatting_img8.jpeg)
 
-> Note: Currently inserting XHTML formatted string in the Word document is not supported in Silverlight and Windows Phone 8 applications.
+Note: Currently inserting XHTML formatted string in the Word document is not supported in Silverlight and Windows Phone 8 applications.
 
 
 
@@ -3537,11 +3536,11 @@ Assembly Dependencies for this Conversion
 * Syncfusion.Core.dll
 * Syncfusion.Compression.Base.dll 
 
-> Note:
+Note:
 
-> * You need to have Essential PDF and Essential DocIO installed in your system. Since "Syncfusion.DocToPDFConverter.Base.dll" is conditionally shipped when both DocIO.Base and Pdf.Base is installed.
-> * Layouting the contents of a Word document as pages in Essential DocIO is not exactly the same as layouting of Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word.
-> * Currently,_ [Word to PDF](http://help.syncfusion.com/ug/windows%20forms/default.htm) _conversion is not supported in Silverlight, WinRT and Windows Phone applications.
+* You need to have Essential PDF and Essential DocIO installed in your system. Since "Syncfusion.DocToPDFConverter.Base.dll" is conditionally shipped when both DocIO.Base and Pdf.Base is installed.
+* Layouting the contents of a Word document as pages in Essential DocIO is not exactly the same as layouting of Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word.
+* Currently,_ [Word to PDF](http://help.syncfusion.com/ug/windows%20forms/default.htm) _conversion is not supported in Silverlight, WinRT and Windows Phone applications.
 
 The following code example lets you to convert a Word document to PDF.
 
@@ -3693,7 +3692,7 @@ Essential DocIO supports conversion of Microsoft Word documents to EPub v2.0.1. 
 By default, Table of Contents (TOC) is enabled in the EPub document. It is generated based on the built-in heading styles or custom styles mentioned in the TOC field. 
 
 
-> Note: You need to have an EPub reader installed in the machine to view the resultant EPub document.
+Note: You need to have an EPub reader installed in the machine to view the resultant EPub document.
 
 
 
@@ -3823,7 +3822,7 @@ The following are the known limitations:
 * Embedding font files can increase the size of the EPub document
 * Embedding font files is not supported in medium trust
 
-> Note: Currently Doc to EPub conversion is not supported in Silverlight application.
+Note: Currently Doc to EPub conversion is not supported in Silverlight application.
 
 ### Saving a Word Document as an Image
 
@@ -3836,12 +3835,12 @@ The following overloads of the RenderAsImages method can be used to convert a Wo
 * WordDocument.RenderAsImages(pageIndex, imageType): This is used to render/convert a particular page of the document into an image; it returns the resultant image of type Image.
 * WordDocument.RenderAsImages(pageIndex, noOfPages, imageType): This is used to render/convert multiple number of pages in the document, starting from the specified page index. It returns the resultant image of type Image[] array.
 
-> Note:
+Note:
 
-> * Parameter "pageIndex" is a zero based index.
-> * Layouting the contents of a Word document as pages in the Essential DocIO is not exactly the same as the layouting in Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word.
-> * Currently, Word to Image conversion is not supported in Silverlight, WinRT and Windows Phone applications.
-> * You can refer to the_ [Word to PDF](http://help.syncfusion.com/ug/windows%20forms/default.htm) _Conversion for supported and unsupported elements in Word to Image conversion.
+* Parameter "pageIndex" is a zero based index.
+* Layouting the contents of a Word document as pages in the Essential DocIO is not exactly the same as the layouting in Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word.
+* Currently, Word to Image conversion is not supported in Silverlight, WinRT and Windows Phone applications.
+* You can refer to the_ [Word to PDF](http://help.syncfusion.com/ug/windows%20forms/default.htm) _Conversion for supported and unsupported elements in Word to Image conversion.
 
 The following code example lets you to render a Word document as image.
 

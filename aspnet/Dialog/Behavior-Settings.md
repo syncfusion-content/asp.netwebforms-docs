@@ -48,7 +48,7 @@ In the ASPX page, add the Dialog control and set the EnableResize as true.
 The output of the Dialog control when EnableResize is true.                                  
 
 ![](Behavior-Settings_images/Behavior-Settings_img1.png) 
-{:.image }
+
 
 
 ## Drag Support
@@ -88,7 +88,7 @@ In the ASPX page, add the Dialog control and set the AllowDraggable to true.
 The output of Dialog control when AllowDraggable is true.                                         
 
 ![](Behavior-Settings_images/Behavior-Settings_img2.png) 
-{:.image }
+
 
 
 ## Close Icon ToolTip Support
@@ -132,7 +132,7 @@ The output of Dialog control when CloseIconTooltip is close.
 
 
 ![](Behavior-Settings_images/Behavior-Settings_img3.png) 
-{:.image }
+
 
 
 ## Persistence Support
@@ -174,7 +174,7 @@ You can resize and reload the web page. The state is maintained in the Dialog co
 
 
 ![](Behavior-Settings_images/Behavior-Settings_img4.png) 
-{:.image }
+
 
 
 ## Enabled or Disabled
@@ -216,7 +216,7 @@ In the ASPX page, add the Dialog control and set Enabled to true.
 The output of the Dialog control when Enabled is true.          
 
 ![](Behavior-Settings_images/Behavior-Settings_img5.png) 
-{:.image }
+
 
 
 ### Disable Dialog Control
@@ -254,7 +254,7 @@ In the ASPX page, add the Dialog control and set Enabled to false.
 The following is the output when Enabled is set to false.            
 
 ![](Behavior-Settings_images/Behavior-Settings_img6.png) 
-{:.image }
+
 
 
 ## Dialog Position
@@ -304,7 +304,7 @@ In the ASPX page, add the Dialog control and set Position values.
 The output of the Dialog control after setting X axis and Y axis values.
 
 ![](Behavior-Settings_images/Behavior-Settings_img7.png) 
-{:.image }
+
 
 
 ## Header Option
@@ -344,7 +344,7 @@ In the ASPX page, add the Dialog control and set the ShowHeader to true.
 The following screenshot displays the Dialog control when ShowHeader is true.
 
 ![](Behavior-Settings_images/Behavior-Settings_img8.png) 
-{:.image }
+
 
 
 ### Hide Header
@@ -380,7 +380,7 @@ In the ASPX page, add the Dialog control and set the ShowHeader to false.
 The following screenshot displays the Dialog control when ShowHeader is set to false.
 
 ![C:/Users/ApoorvahR/Desktop/9.png](Behavior-Settings_images/Behavior-Settings_img9.png) 
-{:.image }
+
 
 
 
@@ -420,7 +420,7 @@ In the ASPX page, add the Dialog control and set the ShowOnInit to true.
 The output when ShowOnInit is set to true.
 
 ![](Behavior-Settings_images/Behavior-Settings_img10.png) 
-{:.image }
+
 
 
 ## Rounded Corner Support
@@ -460,6 +460,6 @@ The output of Dialog control when ShowRoundedCorner is true.
 
 
 ![](Behavior-Settings_images/Behavior-Settings_img11.png) 
-{:.image }
+
 
 

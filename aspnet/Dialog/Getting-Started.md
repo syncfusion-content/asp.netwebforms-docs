@@ -16,7 +16,7 @@ The ASP.NET Dialog displays a Dialog window within your web page. The Dialo
 
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image76_9.png](Getting-Started_images/Getting-Started_img1.png) 
-{:.image }
+
 
 
 ### Create a Dialog
@@ -48,7 +48,7 @@ You can add the following code example to the corresponding ASPX page to rende
 The following screenshot displays a Dialog control without any content.
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image76_10.png](Getting-Started_images/Getting-Started_img2.png) 
-{:.image }
+
 
 
 
@@ -314,7 +314,7 @@ You can use the following styles to customize the styles of sign up form. You ca
 Run the above code example to render the following output. The screenshot displays the Dialog control with header and resizable option. These options are enabled in the Dialog control, by default.
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image76_11.png](Getting-Started_images/Getting-Started_img3.png) 
-{:.image }
+
 
 
 ### Configure a Dialog
@@ -344,7 +344,7 @@ Initialize the Dialog control by using the following code example.
 Run the code example to render the following output. 
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image76_9.png](Getting-Started_images/Getting-Started_img4.png) 
-{:.image }
+
 
 
 You can also add additional functions to Dialog control such as Ajax content, list of header icon actions such as close, minimize, maximize actions, and model Dialog.
@@ -381,7 +381,7 @@ Initialize the Dialog control with the following code example.
 
 {% endhighlight %}
 
- You can add the following code example in &lt;script&gt; tag to add validation to form elements.
+ You can add the following code example in <script> tag to add validation to form elements.
 
 {% highlight js %}
 
@@ -509,25 +509,8 @@ Initialize the Dialog control with the following code example.
  Run the code example to render the following output.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ![http://help.syncfusion.com/ug/js/ImagesExt/image76_12.png](Getting-Started_images/Getting-Started_img5.png) 
-{:.image }
+
 
 
 The above screenshot displays an error message when an invalid input is given to form elements. The Dialog is closed when the value is in a valid format or the Dialog is open.

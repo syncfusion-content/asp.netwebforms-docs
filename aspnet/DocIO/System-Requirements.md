@@ -11,11 +11,11 @@ documentation: ug
 
 This section covers the requirements mandatory for using Essential DocIO. It also lists operating systems and browsers compatible with the product.
 
-### Prerequisites
+## Prerequisites
 
 The prerequisites details are as follows.
 
-_Table_ _2_: _Prerequisites_
+_Prerequisites_
 
 <table>
 <tr>
@@ -32,7 +32,7 @@ Supported IDEs</td><td>
 
 The compatibility details are as follows.
 
-_Table_ _3_: _Compatibility_
+_Compatibility_
 
 <table>
 <tr>

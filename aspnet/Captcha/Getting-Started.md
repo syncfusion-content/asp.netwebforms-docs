@@ -14,7 +14,6 @@ documentation: ug
 This section enables you to configure the Captcha control in your ASP.NET WEB application and also in learning how to use Captcha with auto validation in web forms.
 
 ![](Getting-Started_images/Getting-Started_img1.png)
-{:.image }
 
 
 ### Create Captcha Control
@@ -90,7 +89,6 @@ Note: Version= {{ site.450esreleaseversion }} - It will vary depend up on .Net f
 The following screenshot displays the output of the above codes.
 
 ![](Getting-Started_images/Getting-Started_img2.png)
-{:.image }
 
 
 ### Show AudioButton and Refresh
@@ -142,7 +140,6 @@ This method is used to handle Ajax post when refresh and validation actions are 
 The following screenshot displays the output of the above codes.
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image36_2.png](Getting-Started_images/Getting-Started_img3.png)
-{:.image }
 
 
 ### Auto Validation   
@@ -436,6 +433,5 @@ Add the following code example to the corresponding CS page for Captcha with Aut
 The following screenshot is the output for the above code example.
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image36_3.jpg](Getting-Started_images/Getting-Started_img4.jpeg)
-{:.image }
 
 

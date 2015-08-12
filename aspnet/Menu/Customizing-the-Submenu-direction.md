@@ -416,7 +416,7 @@ Add the following code example in your ASPX page.
 The output for the above code example is as follows.
 
 ![](Customizing-the-Submenu-direction_images/Customizing-the-Submenu-direction_img1.png) 
-{:.image }
+
 
 
 You can achieve auto positioning for Context Menu also. Use the following code example for context menu in order to open the submenu items of context menu in the left side.
@@ -433,13 +433,13 @@ Add the following code example in your ASPX page.
 
         brackets (like
 
-        &lt;html&gt;
+        <html>
 
         ),within the web page content. HTML tags most commonly come in pairs like and ,although
 
         some tags, known as empty elements, are unpaired, for example
 
-        &lt;img&gt;. The purpose of a web browser is to read HTML documents and compose them into
+        <img>. The purpose of a web browser is to read HTML documents and compose them into
 
         visible or audible web pages. The browser does not display the HTML tags, but uses
 
@@ -552,6 +552,6 @@ Add the following code example in your style section.
 The output for the above code example is as follows.
 
 ![](Customizing-the-Submenu-direction_images/Customizing-the-Submenu-direction_img2.png) 
-{:.image }
+
 
 

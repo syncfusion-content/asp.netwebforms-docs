@@ -7,49 +7,49 @@ control: OLAP Chart
 documentation: ug
 ---
 
-## Title
+# Title
 
 Title is the area on top of the Chart control that displays the text explaining the OlapChart data. Title text is displayed in a customizable format.  
 
-Setting value to Chart Title
+## Setting value to Chart Title
 
 Title property allows you to set the default title for a Chart as follows. 
 
-
+{% highlight html %}
 
 [ASP.NET]
 
-&lt;ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" title-text="OLAP Chart in Essential Studio"&gt;
+<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" title-text="OLAP Chart in Essential Studio">
 
- &lt;/ej:OlapChart&gt;
+ </ej:OlapChart>
+
+{% endhighlight %}
+
+ ![C:/Users/Tamilarasu .M/Pictures/document/Chart/ChartSettingtitile.png](Title_images/Title_img1.png) 
 
 
 
-{ ![C:/Users/Tamilarasu .M/Pictures/document/Chart/ChartSettingtitile.png](Title_images/Title_img1.png) | markdownify }
-{:.image }
-
-
-Title Text Customization 
+## Title Text Customization 
 
 You can customize the title text font using title.font property.
 
-
+{% highlight html %}
 
 [ASP.NET]
 
-&lt;asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
+<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection">
 
-     &lt;ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" title-text="OlapChart in Essential Studio"&gt;
+     <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" title-text="OlapChart in Essential Studio">
 
-         &lt;ClientSideEvents Load="load" /&gt;
+         <ClientSideEvents Load="load" />
 
-    &lt;/ej:OlapChart&gt;
+    </ej:OlapChart>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content ID="Content3" runat="server" ContentPlaceHolderID="ScriptSection"&gt;
+<asp:Content ID="Content3" runat="server" ContentPlaceHolderID="ScriptSection">
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
         function load(args) {
 
@@ -61,13 +61,13 @@ You can customize the title text font using title.font property.
 
         }
 
-&lt;/script&gt;
+</script>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
+{% endhighlight %}
 
+ ![C:/Users/Tamilarasu .M/Pictures/document/Chart/chartTitle.png](Title_images/Title_img2.png) 
 
-{ ![C:/Users/Tamilarasu .M/Pictures/document/Chart/chartTitle.png](Title_images/Title_img2.png) | markdownify }
-{:.image }
 
 

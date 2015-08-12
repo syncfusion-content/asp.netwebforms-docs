@@ -13,7 +13,7 @@ Diagram can be populated with the node and connector based on information from a
 
 You can populate Diagram elements by using data binding support such as JSON and OData services.
 
-DataSource Settings
+## DataSource Settings
 
 The DataSourceSettings property of Diagram includes the required data source fields and it can be set with appropriate values as follows.
 
@@ -22,10 +22,10 @@ _Field properties_
 <table>
 <tr>
 <td>
-Name</td><td>
-Type</td><td>
-Default</td><td>
-Description</td></tr>
+{{ '**Name**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Default**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 DataSource</td><td>
@@ -156,7 +156,7 @@ Diagram.Model.DefaultSettings.Connector = new Connector() {
 
 
  ![](Data-Binding_images/Data-Binding_img1.png) 
-{:.image }
+
 
 
 ## Remote Data
@@ -256,7 +256,7 @@ $(window).load(function () {
 
 
  ![](Data-Binding_images/Data-Binding_img2.png) 
-{:.image }
+
 
 
 ### Root
@@ -284,7 +284,7 @@ Diagram.Model.DataSourceSettings.Id = "Id";
 
 
 ![](Data-Binding_images/Data-Binding_img3.png) 
-{:.image }
+
 
 
 ## SQL data for ASP.NET
@@ -333,7 +333,7 @@ The following code example illustrates how to create SQL binding.
 The following screenshot illustrates the SQL binding.
 
  ![](Data-Binding_images/Data-Binding_img4.png) 
-{:.image }
+
 
 
 ## HTML Binding
@@ -529,6 +529,6 @@ Diagram.Model.DataSourceSettings.Id = "Id";
 
 
 ![](Data-Binding_images/Data-Binding_img5.png) 
-{:.image }
+
 
 

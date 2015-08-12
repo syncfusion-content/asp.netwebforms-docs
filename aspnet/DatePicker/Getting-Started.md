@@ -18,7 +18,7 @@ The ASP.NET DatePicker provides you support to display a calendar within your we
 The following screenshot illustrates the functionality of a DatePicker with date range of maximum 60 days. You can select a date for Onward and Return journeys ranging for a period of 60 days from the current day. This avoids selecting a journey date prior to the current date.
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
-{:.image }
+
 
 
 ### Create a DatePicker 
@@ -144,7 +144,7 @@ The following screenshot displays the DatePicker control.
 
 
 ![](Getting-Started_images/Getting-Started_img2.png) 
-{:.image }
+
 
 
 ### Set the Min and Max Date
@@ -198,13 +198,13 @@ The following screenshot displays the output of the above code example.
 
 
 ![](Getting-Started_images/Getting-Started_img3.png) 
-{:.image }
+
 
 
 
 
 ![](Getting-Started_images/Getting-Started_img4.png) 
-{:.image }
+
 
 
 ### Set Event to Process the Min and Max Date Validations
@@ -296,7 +296,7 @@ You can run the above code and achieve the desired result. By selecting the onwa
 
 
 ![](Getting-Started_images/Getting-Started_img5.png) 
-{:.image }
+
 
 
 By using the min/max date range property, you can select a date within a given range as follows.
@@ -304,7 +304,7 @@ By using the min/max date range property, you can select a date within a given r
 
 
 ![](Getting-Started_images/Getting-Started_img6.png) 
-{:.image }
+
 
 
 You can also add additional functionalities such as localization and date formats to the DatePicker. 

@@ -25,7 +25,7 @@ In the following sections you can learn, How to:
 * Initialize the other widgets
 * Add Value to ListBox Control
 
-## Create ColorPicker Control
+### Create ColorPicker Control
 
 Use the following steps to create the ColorPicker control.
 
@@ -51,7 +51,7 @@ Create the ASPX page and add the following code to it for ColorPicker creati
 
 
 
-## Initialize the other widgets
+### Initialize the other widgets
 
 To add the priority value to the ListBox, the text value is obtained from the input element and color for each priority is received by the ColorPicker control. To add each new priority value to the ListBox control, click the Add button.
 
@@ -293,7 +293,7 @@ Run the above code to render the following output.
 
 
 
-## Add value to ListBox Control
+### Add value to ListBox Control
 
 You can add the value to the ListBox with selected color by performing the button click event. The following script section define the click event for the button element.
 

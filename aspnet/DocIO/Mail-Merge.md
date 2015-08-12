@@ -15,7 +15,7 @@ The following steps illustrate how to perform Mail Merge:
 
 1. On the Insert menu, point to the Fields, and then click MergeField.
 
-![](Mail-Merge_images/Mail-Merge_img1.png)
+   ![](Mail-Merge_images/Mail-Merge_img1.png)
 
 
 
@@ -23,7 +23,7 @@ The following steps illustrate how to perform Mail Merge:
 
 2. Enter the merge field name, and the text to be inserted before and after the field. Note that the merge field name should match the field name of the data source.
 
-![](Mail-Merge_images/Mail-Merge_img2.png)
+   ![](Mail-Merge_images/Mail-Merge_img2.png)
 
 
 
@@ -430,11 +430,11 @@ In the above example, the customers property in EmployeeDetails has customers re
 
 
 
-> Note:
+Note:
 
-> * Nested mail merge for a region works when the group start and end is BeginGroup and EndGroup respectively.
-> * Nested mail merge for a table works when the group start and end is TableStart and TableEnd respectively.
-> * The commands list to retrieve the DataTable from the data source must be in the same order of Group which is preserved in the input WordDocument.
+* Nested mail merge for a region works when the group start and end is BeginGroup and EndGroup respectively.
+* Nested mail merge for a table works when the group start and end is TableStart and TableEnd respectively.
+* The commands list to retrieve the DataTable from the data source must be in the same order of Group which is preserved in the input WordDocument.
 
 ### Public Methods
 

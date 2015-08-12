@@ -15,8 +15,8 @@ The Dialog allows you to interact with the keyboard actions instead of mouse act
 <table>
 <tr>
 <td>
-Shortcut Keys</td><td>
-Description</td></tr>
+{{ '**Shortcut Keys**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 Alt + j	</td><td>

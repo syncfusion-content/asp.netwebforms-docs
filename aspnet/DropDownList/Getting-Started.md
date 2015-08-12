@@ -23,7 +23,7 @@ The following screenshot illustrates the functionality of DropDownList with a Ca
 
 In the above screenshot, you can select a group from the first DropDownList control. After you select the group, the corresponding countries for that group are listed in the second DropDownList widget.Then, you can select a country and press the Vote option.  
 
-## Create DropDownList control 
+### Create DropDownList control 
 
 The ASP.NET DropDownList control basically renders with built-in features.
 
@@ -203,7 +203,7 @@ Run the code to render the following output.
 
 
 
-## Configure Data Source 
+### Configure Data Source 
 
 You can configure the DropDownList controls by using online services. Two different online data services for the two DropDownList controls are created. They are as follows, groups’ data service for the group selection DropDownList and countries data service for the country selection DropDownList. Both the data services are referred from the following service location.
 [http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/](http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/)
@@ -258,13 +258,11 @@ Execute the code to render the following output.
 
 ![](Getting-Started_images/Getting-Started_img3.png)
 
-
-
 ![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
-## Configure DropDownList with Sprite Icons
+### Configure DropDownList with Sprite Icons
 
 To style the DropDownList popup with the Country flag, you can create the Sprite CSS styles by using the flag icons from the following image source location.  You can add the following location in the URL path for the background image.
 
@@ -664,7 +662,7 @@ Run the above code example to render the following DropDownList with Data source
 
 
 
-## Set the Cascading Option 
+### Set the Cascading Option 
 
 In the above scenario, you have to select the group in the first DropDownList and the corresponding countries for that group are listed in the country DropDownList. You can achieve this by setting the “cascadeTo” that points the DropDownList, where the data is loaded dynamically. You can disable the second DropDownList till the data is loaded dynamically.
 
@@ -730,7 +728,7 @@ From the “Country” DropDownList, you can select your desired country.
 
 
 
-## Set the Vote process in the DropDownList Widget
+### Set the Vote process in the DropDownList Widget
 
 The voting process is done by clicking the Vote button. A button is customized to support the voting process. For more information about the button, you can refer to the following link: [http://help.syncfusion.com/ug/js/default.htm#!Documents/gettingstarted4.htm](http://help.syncfusion.com/ug/js/default.htm)
 

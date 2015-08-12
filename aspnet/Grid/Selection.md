@@ -24,9 +24,9 @@ Single selection is used to select a single row, cell or column in Grid. In Mult
 
 By default, the selection type is “Single”.
 
-### Selection Modes
+#### Selection Modes
 
-### Row
+##### Row
 
 By default, the selection mode of the grid is “Row”. This enables you to select the row in the grid. Refer to the following code example. Using SelectionMode property in SelectionSettings used to avhieve row selection mode.
 {% highlight html %}
@@ -167,7 +167,7 @@ The following screenshot displays the result of the above code.
 
 
 
-### Cell
+##### Cell
 
 Cell selection can be enabled using the SelectionMode property. This enables you to select a cell in the grid. Refer to the following code example.
 
@@ -312,7 +312,7 @@ The following screenshot displays the result of the above code.
 
 
 
-### Column
+##### Column
 
 Column selection can be enabled using the SelectionMode property. This enables you to select a particular column in the grid. Refer to the following code example.
 {% highlight html %}
@@ -459,9 +459,9 @@ The following screenshot displays the result of the above code.
 
 Multiple selection can be enabled using SelectionType property. This allows you to select more than one row, cell and column at a time.
 
-### Selection Modes
+#### Selection Modes
 
-### Row
+##### Row
 
 By default, the selection mode of the grid is “Row”. This enable you to select the row in the grid. Refer to the following code example.
 
@@ -605,7 +605,7 @@ The following screenshot displays the result of the above code.
 
 
 
-### Cell
+##### Cell
 
 Cell selection can be enabled using the SelectionMode property. This enables you to select a cell in the grid. Refer to the following code example.
 
@@ -749,7 +749,7 @@ The following screenshot displays the result of the above code.
 
 
 
-### Column
+##### Column
 
 Column selection can be enabled using the SelectionMode property. This enables you to select a particular column in the grid. Refer to the following code example.
 

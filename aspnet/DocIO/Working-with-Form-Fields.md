@@ -36,7 +36,7 @@ WTextRange
 
 WField
 
-              WFormField
+WFormField
 
 
 
@@ -126,17 +126,17 @@ You can use the AppendCheckBox method of WParagraph to append a check box to the
 
 WTextRange
 
-            |
+|
 
 WField
 
-              |
+|
 
-           WFormField
+WFormField
 
-                 |
+|
 
-               WCheckBox
+WCheckBox
 
 
 
@@ -244,15 +244,15 @@ You can use the AppendDropDownFormField method of WParagraph to append drop-down
 
 WTextRange
 
-     |
+|
 
-   WField
+WField
 
-        |
+|
 
-      WFormField
+WFormField
 
-             |
+|
 
 WDropDownFormField
 
@@ -336,7 +336,7 @@ WTextFormField class represents a text form field in a Word document. To add a t
 To set the format of the DocIO text directly from the field, you can use the StringFormat property. To get or set the default text for the text form field, you can use the DefaultText property.
 
 
-> Note: Text form field displays the default text only when the text of the form field has no value, that is, when the Text property has no value.
+Note: Text form field displays the default text only when the text of the form field has no value, that is, when the Text property has no value.
 
 
 
@@ -352,17 +352,17 @@ Text property is used to set the text of the text form field. Type property spec
 
 WTextRange
 
- 	 |
+|
 
 WField
 
-             |
+|
 
 WFormField
 
-                 |
+|
 
-              WTextFormField
+WTextFormField
 
 
 

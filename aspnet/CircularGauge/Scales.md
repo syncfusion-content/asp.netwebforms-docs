@@ -62,36 +62,37 @@ Execute the above code to render the following output.
 * The Scale border is modified with the object called border. It has two border property namely color and width which are used to customize the border color of the scale and border width of the scale. 
 * Setting the background color improves the look and feel of the Circular Gauge. You can customize the background color of the scale using backgroundColor. 
 
-{% highlight html %}
+  ~~~ html
 
 
 
 
-<%--For Circular Gauge rendering-- %>
+        <%--For Circular Gauge rendering-- %>
 
-<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
+        <ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-<Scales>
+        <Scales>
 
-<ej:CircularScales ShowScaleBar="true" Radius="110" BackgroundColor="Red">
+        <ej:CircularScales ShowScaleBar="true" Radius="110" BackgroundColor="Red">
 
-<%--For setting scale border width and color-- %>
+        <%--For setting scale border width and color-- %>
 
-<Border Width="3" Color="blue" />
+        <Border Width="3" Color="blue" />
 
-<PointerCollection>
+        <PointerCollection>
 
-<ej:Pointers Length="80"></ej:Pointers>
+        <ej:Pointers Length="80"></ej:Pointers>
 
-</PointerCollection>
+        </PointerCollection>
 
-</ej:CircularScales>
+        </ej:CircularScales>
 
-</Scales>
+        </Scales>
 
-</ej:CircularGauge>
+        </ej:CircularGauge>
 
-{% endhighlight %}
+  ~~~
+  {:.pretty-print }
 
 Execute the above code to render the following output.
 
@@ -105,39 +106,30 @@ Execute the above code to render the following output.
 * Pointer cap is a circular shape element that is located at the center of the Circular Gauge. The pointer cap is one of the cynosure of the Circular Gauge. By customizing the pointer cap, Gauge style is improved. The pointer cap is modified with the object pointerCap. 
 * It contains radius, borderColor, bordrWidth, interiorGradient and backgroundColor properties. The property radius is used to set the radius for the pointer cap. interiorGradient is used to provide the gradient effects to the pointer cap.
 
+  ~~~ html
 
+        <%--For Circular Gauge rendering-- %>
 
+        <ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
+        <Scales>
 
+        <ej:CircularScales>
 
+        <PointerCap Radius="10" BackgroundColor="Red"
 
+        BorderColor="Blue" BorderWidth="4">
 
-{% highlight html %}
+        </PointerCap>
 
+        </ej:CircularScales>
 
+        </Scales>
 
+        </ej:CircularGauge>
 
-<%--For Circular Gauge rendering-- %>
-
-<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
-
-<Scales>
-
-<ej:CircularScales>
-
-<PointerCap Radius="10" BackgroundColor="Red"
-
-BorderColor="Blue" BorderWidth="4">
-
-</PointerCap>
-
-</ej:CircularScales>
-
-</Scales>
-
-</ej:CircularGauge>
-
-{% endhighlight %}
+  ~~~
+  {:.pretty-print }
 
 Execute the above code to render the following output.
 
@@ -151,30 +143,29 @@ Execute the above code to render the following output.
 * The radius property is used to set the radius value for the circular scale and the size property is used to set the scale bar width. You can also adjust the Opacity of the scale with the property opacity. The value for opacity lies between 0 and 1. You can also give some shadow effects for the scale by using the property shadowOffset. The property startAngle is used to set starting position of the scale at certain angle and sweepAngle is used to shrink or expand the scale to certain angle. 
 
 
-
-
-{% highlight html %}
+  ~~~ html
 
 
 
 
-<%--For Circular Gauge rendering-- %>
+        <%--For Circular Gauge rendering-- %>
 
-<ej:CircularGauge runat="server" ID="ScaleCircularGauge">
+        <ej:CircularGauge runat="server" ID="ScaleCircularGauge">
 
-<%--For setting scale bar size, scale radius, minimum value, maximum value, majorinterval value, minorinterval value and direction-- %>
+        <%--For setting scale bar size, scale radius, minimum value, maximum value, majorinterval value, minorinterval value and direction-- %>
 
-<Scales>
+        <Scales>
 
-<ej:CircularScales Size="30" BackgroundColor="red" opacity="0.5" ShadowOffset="20" minimum="20" Maximum="120" MajorIntervalValue="20" MinorIntervalValue="5" Direction="CounterClockwise">
+        <ej:CircularScales Size="30" BackgroundColor="red" opacity="0.5" ShadowOffset="20" minimum="20" Maximum="120" MajorIntervalValue="20" MinorIntervalValue="5" Direction="CounterClockwise">
 
-</ej:CircularScales>
+        </ej:CircularScales>
 
-</Scales>
+        </Scales>
 
-</ej:CircularGauge>
+        </ej:CircularGauge>
 
-{% endhighlight %}
+  ~~~
+  {:.pretty-print }
 
 Execute the above code to render the following output.
 

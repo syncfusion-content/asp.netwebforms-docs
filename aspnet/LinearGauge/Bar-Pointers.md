@@ -2,7 +2,7 @@
 layout: post
 title: Bar-Pointers
 description: bar pointers
-platform: common
+platform: aspnet
 control: Linear Gauge
 documentation: ug
 ---

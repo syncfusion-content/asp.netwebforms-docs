@@ -16,9 +16,9 @@ The server side events present in the NumericTextbox control are as follows.
 <table>
 <tr>
 <td>
-Event Name</td><td>
-Description</td><td>
-Arguments</td></tr>
+{{ '**Event Name**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Arguments**' | markdownify }}</td></tr>
 <tr>
 <td>
 OnFocusOut</td><td>

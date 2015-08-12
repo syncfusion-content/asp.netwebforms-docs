@@ -14,18 +14,7 @@ documentation: ug
 * You can use this Digital Gauge in advertisement, decorative purpose, displaying share details in share market, game score boards, token systems, etc.
 
 
-
-
-
-
-
-
-
-
-
 ![](Getting-Started_images/Getting-Started_img1.png) 
-{:.image }
-
 
 
 
@@ -35,19 +24,14 @@ ASP.NET Digital Gauge widget basically renders flexible API’s. You can easily 
 
 1. First create a ASP.NET Project and add necessary Dll’s and Scripts with the help of the given ASP.NET-Getting Started Documentation.
 2. Add the mentioned code to the corresponding view page to render Digital Gauge .
+   
+   ~~~ html
+
+        <ej:DigitalGauge runat="server" ID="digital"></ej:DigitalGauge>
 
 
-
-
-
-{% highlight html %}
-
-
-
-&lt;ej:DigitalGauge runat="server" ID="digital"&gt;&lt;/ej:DigitalGauge&gt;
-
-
-{% endhighlight %}
+   ~~~
+   {:.pretty-print }
 
 
 Run the above code example and you will get a default Digital Gauge as follows.
@@ -55,19 +39,6 @@ Run the above code example and you will get a default Digital Gauge as follows.
 
 
 ![](Getting-Started_images/Getting-Started_img2.png)
-{:.image }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## Set Height and Width values
@@ -76,13 +47,15 @@ Basic attributes of each canvas elements are height and width. You can set the h
 
 
 
-Code:
+### Code:
 
 {% highlight html %}
 
 
 
-&lt;ej:DigitalGauge runat="server" ID="digital" Height="145" Width="260"&gt;&lt;/ej:DigitalGauge&gt;
+<ej:DigitalGauge runat="server" ID="digital" Height="145" Width="260"></ej:DigitalGauge>
+
+{% endhighlight %}
 
 
 
@@ -90,11 +63,11 @@ Run the above code example and you will see a default gauge with the specified h
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
-{:.image }
+ ![](Getting-Started_images/Getting-Started_img3.png)
 
 
-{% endhighlight %}
+
+
 
 
 
@@ -114,46 +87,43 @@ Items have different properties to customize the Digital Gauge.
 4. SixteenSegment 
 5. EightCrossEightSquareMatrix.
 
-Code:
+#### Code:
 
 {% highlight html %}
 
 
 
-&lt;ej:DigitalGauge runat="server" ID="digital" Height="145" Width="260"&gt;
+<ej:DigitalGauge runat="server" ID="digital" Height="145" Width="260">
 
-&lt;Items&gt;
+<Items>
 
-&lt;ej:DigitalGaugeItems Value="102"&gt;
+<ej:DigitalGaugeItems Value="102">
 
-&lt;SegmentSettings Length="20" Width="2"/&gt;
+<SegmentSettings Length="20" Width="2"/>
 
-&lt;CharacterSettings Spacing="12" Type="SevenSegment" /&gt;
+<CharacterSettings Spacing="12" Type="SevenSegment" />
 
-&lt;/ej:DigitalGaugeItems&gt;
+</ej:DigitalGaugeItems>
 
-&lt;/Items&gt;
+</Items>
 
-&lt;/ej:DigitalGauge&gt;
+</ej:DigitalGauge>
 
 {% endhighlight %}
 
 Execute this code to render a gauge as follows.
 
 ![](Getting-Started_images/Getting-Started_img4.png)
-{:.image }
 
 
 
 
-## Adding Background Image
+
+### Adding Background Image
 
 * Add a div element to set the background for the Digital gauge.
 * Add a style tag in the View page to display the background image for the Digital gauge. 
 * Add the required properties such as position, margin, display, etc, to enhance the look of the background image.
-
-
-
 
 
 Important: The background image path is given in background-image url.
@@ -162,33 +132,33 @@ Important: The background image path is given in background-image url.
 
 
 
-Code:
+#### Code:
 
 {% highlight html %}
 
 
 
-&lt;div id="frameDiv"&gt;
+<div id="frameDiv">
 
-&lt;ej:DigitalGauge runat="server" ID="digital" Height="145" Width="260"&gt;
+<ej:DigitalGauge runat="server" ID="digital" Height="145" Width="260">
 
-&lt;Items&gt;
+<Items>
 
-&lt;ej:DigitalGaugeItems Value="102"&gt;
+<ej:DigitalGaugeItems Value="102">
 
-&lt;SegmentSettings Length="20" Width="2"/&gt;
+<SegmentSettings Length="20" Width="2"/>
 
-&lt;CharacterSettings Spacing="12" Type="SevenSegment" /&gt;
+<CharacterSettings Spacing="12" Type="SevenSegment" />
 
-&lt;/ej:DigitalGaugeItems&gt;
+</ej:DigitalGaugeItems>
 
-&lt;/Items&gt;
+</Items>
 
-&lt;/ej:DigitalGauge&gt;
+</ej:DigitalGauge>
 
-&lt;/div&gt;
+</div>
 
-&lt;style&gt;
+<style>
 
 #frameDiv {
 
@@ -208,7 +178,7 @@ background-repeat :no-repeat;
 
 }
 
-&lt;/style&gt;
+</style>
 
 {% endhighlight %}
 
@@ -217,18 +187,18 @@ Execute this code to render a gauge as follows.
 
 
 ![](Getting-Started_images/Getting-Started_img5.png)
-{:.image }
 
 
 
 
 
 
-## Adding Location
+
+### Adding Location
 
 Position property is used to positioning the digital letters inside the canvas element.
 
-Code:
+#### Code:
 
 {% highlight html %}
 
@@ -236,23 +206,23 @@ Code:
 
 
 
-&lt;ej:DigitalGauge runat="server" ID="digital" Height="145" Width="260"&gt;
+<ej:DigitalGauge runat="server" ID="digital" Height="145" Width="260">
 
-&lt;Items&gt;
+<Items>
 
-&lt;ej:DigitalGaugeItems Value="102"&gt;
+<ej:DigitalGaugeItems Value="102">
 
-&lt;SegmentSettings Length="20" Width="2"/&gt;
+<SegmentSettings Length="20" Width="2"/>
 
-&lt;CharacterSettings Spacing="12" Type="SevenSegment" /&gt;
+<CharacterSettings Spacing="12" Type="SevenSegment" />
 
-&lt;Position X="15" Y="40"/&gt;
+<Position X="15" Y="40"/>
 
-&lt;/ej:DigitalGaugeItems&gt;
+</ej:DigitalGaugeItems>
 
-&lt;/Items&gt;
+</Items>
 
-&lt;/ej:DigitalGauge&gt;
+</ej:DigitalGauge>
 
 
 {% endhighlight %}
@@ -263,90 +233,90 @@ Execute this code to render a Gauge as follows.
 
 
 ![](Getting-Started_images/Getting-Started_img6.png)
-{:.image }
 
 
 
 
 
 
-## Adding the Items collection 
+
+### Adding the Items collection 
 
 Similarly adding the further item collection will display the temperature value as in the Digital thermometer value.
 
-Code:
+#### Code:
 
 {% highlight html %}
 
 
 
-&lt;ej:DigitalGauge runat="server" ID="digital" Height="145" Width="260"&gt;
+<ej:DigitalGauge runat="server" ID="digital" Height="145" Width="260">
 
-&lt;Items&gt;
+<Items>
 
-&lt;ej:DigitalGaugeItems Value="102"&gt;
+<ej:DigitalGaugeItems Value="102">
 
-&lt;SegmentSettings Length="20" Width="2"/&gt;
+<SegmentSettings Length="20" Width="2"/>
 
-&lt;CharacterSettings Spacing="12" Type="SevenSegment" /&gt;
+<CharacterSettings Spacing="12" Type="SevenSegment" />
 
-&lt;Position X="15" Y="40"/&gt;
+<Position X="15" Y="40"/>
 
-&lt;/ej:DigitalGaugeItems&gt;
+</ej:DigitalGaugeItems>
 
-&lt;ej:DigitalGaugeItems Value="0"&gt;
+<ej:DigitalGaugeItems Value="0">
 
-&lt;SegmentSettings Length="5" Width="2"/&gt;
+<SegmentSettings Length="5" Width="2"/>
 
-&lt;CharacterSettings Spacing="12" Type="SevenSegment" /&gt;
+<CharacterSettings Spacing="12" Type="SevenSegment" />
 
-&lt;Position X="85" Y="28"/&gt;
+<Position X="85" Y="28"/>
 
-&lt;/ej:DigitalGaugeItems&gt;
+</ej:DigitalGaugeItems>
 
-&lt;ej:DigitalGaugeItems Value="F"&gt;
+<ej:DigitalGaugeItems Value="F">
 
-&lt;SegmentSettings Length="20" Width="2"/&gt;
+<SegmentSettings Length="20" Width="2"/>
 
-&lt;CharacterSettings Spacing="12" Type="SevenSegment" /&gt;
+<CharacterSettings Spacing="12" Type="SevenSegment" />
 
-&lt;Position X="170" Y="40"/&gt;
+<Position X="170" Y="40"/>
 
-&lt;/ej:DigitalGaugeItems&gt;
+</ej:DigitalGaugeItems>
 
-&lt;ej:DigitalGaugeItems Value="38"&gt;
+<ej:DigitalGaugeItems Value="38">
 
-&lt;SegmentSettings Length="9" Width="1" Color="#f5b43f"/&gt;
+<SegmentSettings Length="9" Width="1" Color="#f5b43f"/>
 
-&lt;CharacterSettings Spacing="12" Type="SevenSegment" /&gt;
+<CharacterSettings Spacing="12" Type="SevenSegment" />
 
-&lt;Position X="70" Y="90"/&gt;
+<Position X="70" Y="90"/>
 
-&lt;/ej:DigitalGaugeItems&gt;
+</ej:DigitalGaugeItems>
 
-&lt;ej:DigitalGaugeItems Value="0"&gt;
+<ej:DigitalGaugeItems Value="0">
 
-&lt;SegmentSettings Length="3" Width="1" Color="#f5b43f"/&gt;
+<SegmentSettings Length="3" Width="1" Color="#f5b43f"/>
 
-&lt;CharacterSettings Spacing="12" Type="SevenSegment" /&gt;
+<CharacterSettings Spacing="12" Type="SevenSegment" />
 
-&lt;Position X="90" Y="80"/&gt;
+<Position X="90" Y="80"/>
 
-&lt;/ej:DigitalGaugeItems&gt;
+</ej:DigitalGaugeItems>
 
-&lt;ej:DigitalGaugeItems Value="c"&gt;
+<ej:DigitalGaugeItems Value="c">
 
-&lt;SegmentSettings Length="9" Width="1" Color="#f5b43f"/&gt;
+<SegmentSettings Length="9" Width="1" Color="#f5b43f"/>
 
-&lt;CharacterSettings Spacing="12" Type="SevenSegment" /&gt;
+<CharacterSettings Spacing="12" Type="SevenSegment" />
 
-&lt;Position X="120" Y="90"/&gt;
+<Position X="120" Y="90"/>
 
-&lt;/ej:DigitalGaugeItems&gt;
+</ej:DigitalGaugeItems>
 
-&lt;/Items&gt;
+</Items>
 
-&lt;/ej:DigitalGauge&gt;
+</ej:DigitalGauge>
 
 
 {% endhighlight %}
@@ -357,6 +327,6 @@ Execute this code to render a Digital thermometer as follows.
 
 
 ![](Getting-Started_images/Getting-Started_img7.png)
-{:.image }
+
 
 

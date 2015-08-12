@@ -16,9 +16,9 @@ _Tools_
 <table>
 <tr>
 <td>
-Precedence</td><td>
-Tools</td><td>
-Description</td></tr>
+{{ '**Precedence**' | markdownify }}</td><td>
+{{ '**Tools**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 1st </td><td>
@@ -50,7 +50,8 @@ Allows you to select individual nodes or connectors.</td></tr>
 None</td><td>
 Disables all tools</td></tr>
 </table>
-Single Tool Selection
+
+## Single Tool Selection
 
 The following code illustrates how to enable SingleSelect tool.
 
@@ -82,7 +83,7 @@ DiagramContent.Tool = Tool.SingleSelect;
 
 {% endhighlight %}
 
-Multiple Diagram Tools
+## Multiple Diagram Tools
 
 Diagram provides support to enable multiple tools at a time. The following code illustrates how to enable ZoomPan and SingleSelect tool at the same time.
 
@@ -102,7 +103,7 @@ DiagramContent.Tool = Tool.SingleSelect| Tool.ZoomPan;
 
 Drawing tool allows you to draw any node during runtime by clicking and dragging the diagram page. To draw a node by using the drawing tool, the required node is assigned to the drawType property.
 
-Rectangle Tool
+### Rectangle Tool
 
 The following code example illustrates how to draw the rectangle shape at run time. When drawing tool is defined and activated, you can click and drag on the page to draw the defined node.
 
@@ -149,20 +150,20 @@ tool: ej.datavisualization.Diagram.Tool.DrawOnce
 
 
  ![](Tools_images/Tools_img1.png) 
-{:.image }
+
 
 
 
 
 Similarly, you can draw any node by using the drawing tool, assigning the required node to the diagram.model.drawType property.
 
-Connector Tool
+### Connector Tool
 
 To draw a connector, the required connector type is assigned to the drawType property.
 
 
 
-StraightLine
+### StraightLine
 
 The following code example illustrates how to draw a straight connector at runtime.
 
@@ -201,6 +202,6 @@ tool: ej.datavisualization.Diagram.Tool.DrawOnce
 
 
  ![http://help.syncfusion.com/ug/js/ImagesExt/image682_23.jpg](Tools_images/Tools_img2.jpeg) 
-{:.image }
+
 
 

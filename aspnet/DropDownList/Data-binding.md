@@ -16,10 +16,10 @@ The following sub-properties provide a way to bind the data either locally or re
 <table>
 <tr>
 <th>
-Properties</th><th>
-Description</th><th>
-Default value</th><th>
-Data type</th></tr>
+{{ '**Properties**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Default value**' | markdownify }}</th><th>
+{{ '**Data type**' | markdownify }}</th></tr>
 <tr>
 <td>
 DataSource</td><td>
@@ -133,14 +133,8 @@ Also, provide support to add and customize the images and list item by using the
 
 In an ASPX page, add an element to configure DropDownList.
 {% highlight html %}
-<table>
-<tr>
-<td>
-<ej:DropDownList ID="dropdownlist" Width="200px" runat="server" DataIdField="Id"    DataTextField="Text"></ej:DropDownList></td></tr>
-<tr>
-<td>
-</td></tr>
-</table>
+
+<ej:DropDownList ID="dropdownlist" Width="200px" runat="server" DataIdField="Id"    DataTextField="Text"></ej:DropDownList>
 
 {% endhighlight  %}
 {% highlight c# %}
@@ -230,7 +224,7 @@ In the ASPX page, add DropDownList.
 
 Add connection string in the Web.config file.
 
-> Note: Change the username with your system name in the following connection string.
+Note: Change the username with your system name in the following connection string.
 
 
 
@@ -307,7 +301,7 @@ Create a table in .mdf format by using the following table structure. Create a d
 Add connection String in the Web.config file.
 
 
-> Note: Change the username with your system name in the following connection string.
+Note: Change the username with your system name in the following connection string.
 
 
 

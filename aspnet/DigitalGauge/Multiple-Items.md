@@ -17,87 +17,87 @@ The text in the Digital Gauge is positioned with position object. This object co
 
 {% highlight html %}
 
-&lt;ej:DigitalGauge runat="server" ID="DigitalGauge1" Width="500" Height="300"&gt;
+<ej:DigitalGauge runat="server" ID="DigitalGauge1" Width="500" Height="300">
 
 
 
-&lt;%-- Adding frame background image --%&gt;
+<%-- Adding frame background image --%>
 
 
 
-&lt;Frame BackgroundImageUrl="../Content/images/gauge/Board1.jpg"/&gt;
+<Frame BackgroundImageUrl="../Content/images/gauge/Board1.jpg"/>
 
 
 
-&lt;Items&gt;
+<Items>
 
 
 
-&lt;%-- Adding Item 1 --%&gt;
+<%-- Adding Item 1 --%>
 
 
 
-&lt;ej:DigitalGaugeItems Value="YELLOW"&gt;
+<ej:DigitalGaugeItems Value="YELLOW">
 
 
 
-&lt;Position X="80" Y="0"/&gt;
+<Position X="80" Y="0"/>
 
 
 
-&lt;SegmentSettings Color="Yellow"/&gt;
+<SegmentSettings Color="Yellow"/>
 
 
 
-&lt;/ej:DigitalGaugeItems&gt;
+</ej:DigitalGaugeItems>
 
 
 
-&lt;%-- Adding Item 1 --%&gt;
+<%-- Adding Item 1 --%>
 
 
 
-&lt;ej:DigitalGaugeItems Value="RED"&gt;
+<ej:DigitalGaugeItems Value="RED">
 
 
 
-&lt;Position X="80" Y="20"/&gt;
+<Position X="80" Y="20"/>
 
 
 
-&lt;SegmentSettings Color="Red"/&gt;
+<SegmentSettings Color="Red"/>
 
 
 
-&lt;/ej:DigitalGaugeItems&gt;
+</ej:DigitalGaugeItems>
 
 
 
-&lt;%-- Adding Item 1 --%&gt;
+<%-- Adding Item 1 --%>
 
 
 
-&lt;ej:DigitalGaugeItems Value="GREEN"&gt;
+<ej:DigitalGaugeItems Value="GREEN">
 
 
 
-&lt;Position X="80" Y="40"/&gt;
+<Position X="80" Y="40"/>
 
 
 
-&lt;SegmentSettings Color="Green"/&gt;
+<SegmentSettings Color="Green"/>
 
 
 
-&lt;/ej:DigitalGaugeItems&gt;
+</ej:DigitalGaugeItems>
 
 
 
-&lt;/Items&gt;
+</Items>
 
 
 
-&lt;/ej:DigitalGauge&gt;
+</ej:DigitalGauge>
 
 
 {% endhighlight %}
@@ -108,7 +108,7 @@ Execute the above code example to render the DigitalGauge as follows.
 
 
 ![](Multiple-Items_images/Multiple-Items_img1.png)
-{:.image }
+
 
 
 

@@ -13,13 +13,13 @@ Localization is the process of customizing the user interface (UI) as locale-spe
 
 The following table lists the default English localizationUserInterface based on “French” culture.
 
-_Table: List of default English localization User Interface based on “French” culture_
+Table: List of default English localization User Interface based on “French” culture
 
 <table>
 <tr>
 <td>
-KEYWORDS</td><td>
-VALUES</td></tr>
+{{ '**KEYWORDS**' | markdownify }}</td><td>
+{{ '**VALUES**' | markdownify }}</td></tr>
 <tr>
 <td>
 Measure</td><td>
@@ -77,22 +77,23 @@ RenderingFailed</td><td>
 
 The following code example shows how to localize OlapChart’sUser Interface (UI) based on “French” culture.
 
+{% highlight html %}
 
 [ASP.NET]
 
-&lt;asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
+<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection">
 
-    &lt;ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Locale="fr-FR"&gt;
+    <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Locale="fr-FR">
 
-    &lt;/ej:OlapChart&gt;
+    </ej:OlapChart>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
 
 
-&lt;asp:Content ID="Content3" runat="server" ContentPlaceHolderID="ScriptSection"&gt;
+<asp:Content ID="Content3" runat="server" ContentPlaceHolderID="ScriptSection">
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
     ej.olap.OlapChart.locale["fr-FR"] = {
 
@@ -124,24 +125,25 @@ The following code example shows how to localize OlapChart’sUser Interface (UI
 
     };
 
-&lt;/script&gt;   
+</script>   
 
-&lt;/asp:Content&gt; 
+</asp:Content> 
 
+{% endhighlight %}
 
+![C:/Users/labuser/Desktop/note.jpg](Localization-and-Translation-support_images/Localization-and-Translation-support_img1.jpeg)
 
-{ ![C:/Users/labuser/Desktop/note.jpg](Localization-and-Translation-support_images/Localization-and-Translation-support_img1.jpeg) | markdownify }
-{:.image }
-_Note: In order to render the localized OLAP Chart, you are required to reset the content available in both_
+Note: In order to render the localized OLAP Chart, you are required to reset the content available in both
 
-1. _OLAP Chart Control_
-2. _OLAP Cube_
+1. OLAP Chart Control
+
+2. OLAP Cube
 
 ## Localizing Control Information:
 
 To apply control side localization, refer the following code example:
 
-
+{% highlight html %}
 
 [HTML]
 
@@ -151,11 +153,13 @@ ej.olap.OlapChart.locale["zh-CN"] = {
 
 }
 
+{% endhighlight %}
+
 ## Localizing Cube Information:
 
 To get the localized Cube information, “_Locale__Identifier"_ has to be set in the connection string:
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -169,10 +173,11 @@ DataManager.Culture = new System.Globalization.CultureInfo(1036);
 
 DataManager.OverrideDefaultFormatStrings = true;
 
+{% endhighlight %}
 
 The output for the LocalizedOlapChart is as follows:
 
-{ ![C:/Users/labuser/Desktop/a.png](Localization-and-Translation-support_images/Localization-and-Translation-support_img2.png) | markdownify }
-{:.image }
+![C:/Users/labuser/Desktop/a.png](Localization-and-Translation-support_images/Localization-and-Translation-support_img2.png) 
+
 
 

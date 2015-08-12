@@ -21,7 +21,7 @@ You can show the relationship between two tasks in Gantt control. These relation
 
 * Start to Finish(SF)
 
-You cannot finish a task until the other task is started.
+             You cannot finish a task until the other task is started.
 
 ![C:/Users/Rajasekar/Desktop/SF.png](Task-Relationship_images/Task-Relationship_img2.png)
 
@@ -39,7 +39,7 @@ You cannot finish a task until the other task is started.
 
 * Finish to Finish(FF)
 
-    You cannot finish a task until the other task is completed.
+             You cannot finish a task until the other task is completed.
 
 ![C:/Users/Rajasekar/Desktop/FF.png](Task-Relationship_images/Task-Relationship_img4.png)
 

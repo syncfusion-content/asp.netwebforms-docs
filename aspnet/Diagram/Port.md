@@ -39,7 +39,7 @@ node.Ports.Add(port);
 
 
 ![](Port_images/Port_img1.png)
-{:.image }
+
 
 
 ## Connecting Ports
@@ -111,7 +111,7 @@ private Port GetPort(float offsetX, float offsetY, string name){
 
 
  ![](Port_images/Port_img2.png) 
-{:.image }
+
 
 
 ## Appearance
@@ -123,9 +123,9 @@ _Properties_
 <table>
 <tr>
 <td>
-Properties</td><td>
-Data Type</td><td>
-Description </td></tr>
+{{ '**Properties**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
  Visibility</td><td>
@@ -199,8 +199,8 @@ _Constraints_
 <table>
 <tr>
 <td>
-Constraints</td><td>
-Description</td></tr>
+{{ '**Constraints**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 None</td><td>
@@ -230,5 +230,5 @@ port.Constraints = PortConstraints.Connect;
 
 
 
-_Note: Port’s constraints property is manipulated by using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations_._
+Note: Port’s constraints property is manipulated by using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations_.
 

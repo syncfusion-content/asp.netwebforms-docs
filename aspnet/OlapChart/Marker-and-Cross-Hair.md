@@ -7,43 +7,43 @@ control: OLAP Chart
 documentation: ug
 ---
 
-## Marker and Cross Hair 
+# Marker and Cross Hair 
 
 Markers are the symbols that represent on the series of the Chart Area. Cross Hair helps you to view the value at mouse position or touch contact point.
 
-Real-time use of Cross Hair
+## Real-time use of Cross Hair
 
 You can view the information while moving the mouse pointer over the Chart Area with the help of CrossHair. For example, in a line chart you can get exact values of x and y axis while moving the mouse on Chart Area.
 
 
 
-{ ![](Marker-and-Cross-Hair_images/Marker-and-Cross-Hair_img1.png) | markdownify }
-{:.image }
+ ![](Marker-and-Cross-Hair_images/Marker-and-Cross-Hair_img1.png) 
 
 
-Marker Shape Customization 
+
+## Marker Shape Customization 
 
 In OlapChart, you can customize the marker shape with different symbols like rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc.
 
-
+{% highlight html %}
 
 [ASP.NET] 
 
-&lt;asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
+<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection">
 
-     &lt;ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc"&gt;
+     <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc">
 
-         &lt;CommonSeriesOptions Type="line"/&gt;
+         <CommonSeriesOptions Type="line"/>
 
-         &lt;ClientSideEvents SeriesRendering="onSeriesRenders" /&gt;
+         <ClientSideEvents SeriesRendering="onSeriesRenders" />
 
-     &lt;/ej:OlapChart&gt;
+     </ej:OlapChart>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;asp:Content ID="Content3" runat="server" ContentPlaceHolderID="ScriptSection"&gt;
+<asp:Content ID="Content3" runat="server" ContentPlaceHolderID="ScriptSection">
 
-    &lt;script type="text/javascript"&gt;
+    <script type="text/javascript">
 
         function onSeriesRenders(args) {
 
@@ -55,39 +55,39 @@ In OlapChart, you can customize the marker shape with different symbols like rec
 
 
 
-&lt;/script&gt;
+</script>
 
-&lt;/asp:Content&gt;
+</asp:Content>
+
+{% endhighlight %}
+
+![C:/Users/Tamilarasu .M/Pictures/document/Chart/markershape.png](Marker-and-Cross-Hair_images/Marker-and-Cross-Hair_img2.png)
 
 
 
-{ ![C:/Users/Tamilarasu .M/Pictures/document/Chart/markershape.png](Marker-and-Cross-Hair_images/Marker-and-Cross-Hair_img2.png) | markdownify }
-{:.image }
-
-
-Cross Hair Customization 
+## Cross Hair Customization 
 
 In order to view the value at mouse position or touch contact point, you can use the crosshair property. You can customize the appearance using the following code example. 
 
-
+{% highlight html %}
 
 [ASP.NET]
 
-&lt;ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc"&gt;
+<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc">
 
-     &lt;PrimaryXAxis CrosshairLabel-Visible="true" /&gt;
+     <PrimaryXAxis CrosshairLabel-Visible="true" />
 
-     &lt;PrimaryYAxis CrosshairLabel-Visible="true"/&gt;
+     <PrimaryYAxis CrosshairLabel-Visible="true"/>
 
-     &lt;Crosshair Visible="true" Type="Crosshair" line-width="2" line-color="red"/&gt;
+     <Crosshair Visible="true" Type="Crosshair" line-width="2" line-color="red"/>
 
-&lt;/ej:OlapChart&gt;
+</ej:OlapChart>
+
+{% endhighlight %}
 
 
 
+![](Marker-and-Cross-Hair_images/Marker-and-Cross-Hair_img3.png) 
 
-
-{ ![](Marker-and-Cross-Hair_images/Marker-and-Cross-Hair_img3.png) | markdownify }
-{:.image }
 
 

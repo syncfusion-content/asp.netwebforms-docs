@@ -58,7 +58,7 @@ You can acquire the information related to a particular data point of series by 
 
 ### Chart Events:
 
-### Load: function
+Load: function
 
 This event is handled when the Chart gets loaded; a parameter sender is passed to the handler. Using sender.model, you can access the Chart properties except series that were passed to the chart. 
 
@@ -85,7 +85,7 @@ This event is handled when the Chart gets loaded; a parameter sender is passed t
 
 
 {% endhighlight  %}
-### PreRender: function
+PreRender: function
 
 This event is handled before the Chart gets rendered; a parameter sender is passed to the handler. Using sender.model, you can access the Chart properties that were passed to the Chart. 
 
@@ -116,7 +116,7 @@ This event is handled before the Chart gets rendered; a parameter sender is pass
 {% endhighlight  %}
 
 
-### TitleRendering: function
+TitleRendering: function
 
 This event is handled before the Chart title gets rendered; a parameter sender is passed to the handler. Using sender.data.title, you can change the title of the Chart after the Chart is loaded.
 
@@ -149,7 +149,7 @@ This event is handled before the Chart title gets rendered; a parameter sender i
 
 ### ChartAxis Events:
 
-### AxesLabelsInitialize: function
+AxesLabelsInitialize: function
 
 This event is handled before the Chart axis gets rendered; a parameter sender is passed to the handler. Using sender.data.axes, you can change the axis related properties after the Chart is loaded.
 
@@ -180,7 +180,7 @@ This event is handled before the Chart axis gets rendered; a parameter sender is
 
 
 
-### AxesRangeCalculate: function
+AxesRangeCalculate: function
 
 This event is handled after the Chart axis range gets calculated; a parameter sender is passed to the handler. Using sender.data.range, you can change the range calculated for the Chart axis.
 
@@ -211,7 +211,7 @@ This event is handled after the Chart axis range gets calculated; a parameter se
 
 {% endhighlight  %}
 
-### AxesTitleRendering: function
+AxesTitleRendering: function
 
 This event is handled before the Chart axis title gets rendered; a parameter sender is passed to the handler. Using sender.data.Title, you can change the axis title after the Chart is loaded.
 
@@ -242,7 +242,7 @@ This event is handled before the Chart axis title gets rendered; a parameter sen
 {% endhighlight  %}
 
 
-### AxesLabelRendering: function
+AxesLabelRendering: function
 
 This event is handled before the Chart axis label gets rendered; a parameter sender is passed to the handler. Using sender.data.label.Text, you can change the axis labels after the Chart is loaded.
 
@@ -272,7 +272,7 @@ This event is handled before the Chart axis label gets rendered; a parameter sen
 
 ### Series Events:
 
-### SeriesRendering: function
+SeriesRendering: function
 
 This event is handled before the Chart series gets rendered; a parameter sender is passed to the handler. Using sender.data.series, you can get access to the series properties.
 
@@ -303,7 +303,7 @@ This event is handled before the Chart series gets rendered; a parameter sender 
 {% endhighlight  %}
 
 
-### SymbolRendering: function
+SymbolRendering: function
 
 This event is handled before the marker of each series point gets rendered; a parameter sender is passed to the handler. Using sender.data you can get access style and location of the symbol.
 
@@ -333,7 +333,7 @@ This event is handled before the marker of each series point gets rendered; a pa
 
 {% endhighlight  %}
 
-### DisplayTextRendering: function
+DisplayTextRendering: function
 
 This event is handled before the dataLabel of each series points gets rendered; a parameter sender is passed to the handler. Using sender.data.text you can change the dataLabel of each point in the series.
 
@@ -363,7 +363,7 @@ This event is handled before the dataLabel of each series points gets rendered; 
 {% endhighlight  %}
 
 
-### AnimationComplete: function
+AnimationComplete: function
 
 This event is handled after the series animation is completed; a parameter sender is passed to the handler.  
 
@@ -396,7 +396,7 @@ This event is handled after the series animation is completed; a parameter sende
 
 ### Legend Events:
 
-### LegendItemRendering: function
+LegendItemRendering: function
 
 This event is handled before the legend of each series points gets rendered; a parameter sender is passed to the handler. Using sender.data.legendItem.Text you can change the text of each legend text.
 
@@ -429,7 +429,7 @@ This event is handled before the legend of each series points gets rendered; a p
 
 
 
-### LegendItemClick: function
+LegendItemClick: function
 
 This event is handled when you click the legend item; a parameter sender is passed to the handler.  
 
@@ -460,7 +460,7 @@ This event is handled when you click the legend item; a parameter sender is pass
 
 {% endhighlight  %}
 
-### LegendItemMouseMove: function
+LegendItemMouseMove: function
 
 This event is handled when you move the mouse over the legend item; a parameter sender is passed to the handler. Using sender.data.legendItem.Text you can change the text of each legend text.
 
@@ -491,7 +491,7 @@ This event is handled when you move the mouse over the legend item; a parameter 
 
 {% endhighlight  %}
 
-### LengendBoundsCalculate: function
+LengendBoundsCalculate: function
 
 This event is handled after the bounds for legend is calculated.  A parameter sender is passed to the handler.  Using sender.data.legendBound, you can access the bounds of the Chartlegend.
 
@@ -524,7 +524,7 @@ This event is handled after the bounds for legend is calculated.  A parameter se
 
 ### Tooltip Events:
 
-### ToolTipInitialize: function
+ToolTipInitialize: function
 
 This event is handled before the tooltip gets rendered.  A parameter sender is passed to the handler.  Using sender.data.currentText, you can change the tooltip text.
 
@@ -555,7 +555,7 @@ This event is handled before the tooltip gets rendered.  A parameter sender is p
 {% endhighlight  %}
 
 
-### TrackAxisToolTip: function
+TrackAxisToolTip: function
 
 This event is handled before the tooltip for axis gets rendered when crosshair is enabled.  A parameter sender is passed to the handler.  Using sender.data.currentTrackText, you can change the tooltip text.
 
@@ -586,7 +586,7 @@ This event is handled before the tooltip for axis gets rendered when crosshair i
 
 {% endhighlight  %}
 
-### TrackToolTip: function
+TrackToolTip: function
 
 This event is handled before the tooltip for trackball get rendered when trackball is enabled.  A parameter sender is passed to the handler.  Using sender.data.currentText, you can change the tooltip text.
 

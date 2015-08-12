@@ -11,7 +11,7 @@ documentation: ug
 
 Charts typically have two axes that are used to measure and categorize data: a vertical (y) axis, and a horizontal (x) axis. To make a Chart easier to understand, you can add axis titles, tick marks, and labels. You can also change the alignment of axis title and format the labels that are displayed on axes. By default horizontal (x) axis and vertical (y) axis gets added to the Chart with axis labels, gridlines, and tick lines. You can also customize these axis explicitly by adding axis title or removing gridlines, tick lines that are added to the axis by default.
 
-## Chart Axis supports the following types:
+Chart Axis supports the following types:
 
 * Double
 * DateTime
@@ -418,13 +418,13 @@ An axis displaying a logarithmic scale is very useful when your data values span
 
 ### Chart Axis Properties:
 
-_Table1: Chart Axis Properties Table_
+_Table1_: _Chart Axis Properties Table_
 
 <table>
 <tr>
 <th>
-Chart Axis Properties</th><th>
-Description</th></tr>
+{{ '**Chart Axis Properties**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 DesiredIntervals</td><td>
@@ -733,6 +733,7 @@ Essential Chart supports TrimmingAxisTitles with the properties, EnableTrim and 
 
 
 {% endhighlight %}
+
 ## Labels
 
 The axis labels are present along the axis showing the value of the data it corresponds to. You can further customize the Chart axis labels using “Font” and “LabelFormat” properties of the axis.  
@@ -764,7 +765,7 @@ The axis labels are present along the axis showing the value of the data it corr
 
 The category axis includes the LabelPlacement property that is used to set the labels of the axis between the tick lines or on the tick lines of the category axis. By default the LabelPlacement value for the category axis is BetweenTicks.
 
-### There are two types of LabelPlacement:
+There are two types of LabelPlacement:
 
 * BetweenTicks
 * OnTicks
@@ -812,42 +813,6 @@ Axis labels can further be customized to render inside the chart area using the 
 {% endhighlight %}
 
 ![](Axis_images/Axis_img21.png) 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-_Figure46: Label inside Chart_
-
-
 
 ### Axis label trimming
 
@@ -1010,39 +975,8 @@ Immediate adjacent band of every even grid bands are Odd Grid Bands. You can dis
 
 {% endhighlight  %}
 
-_Figure48: Chart explaining grid band_
 
 ![C:/Users/dineshkumarn/Desktop/ug line.png](Axis_images/Axis_img26.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Inversed Axis
 

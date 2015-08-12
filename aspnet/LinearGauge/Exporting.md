@@ -2,7 +2,7 @@
 layout: post
 title: Exporting
 description: exporting
-platform: common
+platform: aspnet
 control: Linear Gauge
 documentation: ug
 ---

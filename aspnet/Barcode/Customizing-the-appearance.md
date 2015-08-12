@@ -13,7 +13,7 @@ A page or printed media with Barcode often appears colorful in the background an
 
 
 
-_Note: This color customization is possible only for one dimensional barcodes and it is not supported for two dimensional barcodes._
+Note: This color customization is possible only for one dimensional barcodes and it is not supported for two dimensional barcodes._
 
 
 
@@ -48,10 +48,6 @@ Execute the above code to render the following output.
 
 
 ![](Customizing-the-appearance_images/Customizing-the-appearance_img2.png) 
-{:.image }
-
-
-_Figure_ _4: Customized Barcode_
 
 The height of the barcode can be changed using the BarHeight property. The equivalent property to change the block size for two dimensional barcode is XDimension.
 
@@ -85,10 +81,5 @@ Execute the above code to render the following output.
 
 
 ![](Customizing-the-appearance_images/Customizing-the-appearance_img3.png) 
-{:.image }
-
-
-_Figure_ _5: Barcode with customized height_
-
 
 

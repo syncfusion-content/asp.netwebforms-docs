@@ -16,8 +16,8 @@ _Constraints_
 <table>
 <tr>
 <td>
-Constraints</td><td>
-Description</td></tr>
+{{ '**Constraints**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 None</td><td>

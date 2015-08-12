@@ -17,7 +17,7 @@ The following code example is used to render the Captcha with Refresh support.
 
 {% highlight html %}
 
- &lt;ej:Captcha ID="captcha" ShowRefreshButton="true" Mapper="Refresh"  runat="server"&gt;&lt;/ej:Captcha&gt;
+ <ej:Captcha ID="captcha" ShowRefreshButton="true" Mapper="Refresh"  runat="server"></ej:Captcha>
 
 {% endhighlight %}
 
@@ -36,7 +36,7 @@ Add the following Refresh mapper code example to the corresponding CS page.
 The following screenshot illustrates the Captcha with Refresh button. 
 
 ![C:/Users/ApoorvahR/Desktop/3.png](Behavior-Settings_images/Behavior-Settings_img1.png)
-{:.image }
+
 
 
 ## Audio Accessibility
@@ -56,6 +56,6 @@ In the ASPX page, include the following Captcha control code example to render A
 The following screenshot illustrates the Captcha with audio button. 
 
 ![C:/Users/ApoorvahR/Desktop/3.png](Behavior-Settings_images/Behavior-Settings_img2.png)
-{:.image }
+
 
 

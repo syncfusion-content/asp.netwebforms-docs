@@ -30,7 +30,7 @@ diagram.exportDiagram();
 
 {% endhighlight %}
 
-Exporting options
+## Exporting options
 
 Diagram provides support to export the desired region of the Diagram to the desired formats. 
 
@@ -78,11 +78,11 @@ diagram.exportDiagram(options);
 
 
 
-File Name
+### File Name
 
 Name of the file to be downloaded. By default, the file name is set as Diagram.
 
-Mode
+### Mode
 
 Diagram provides support to export and download diagram as files. You can also export Diagram as data of ImageURL/SVG formats.
 
@@ -95,8 +95,8 @@ _Exporting modes_
 <table>
 <tr>
 <td>
-Modes</td><td>
-Description</td></tr>
+{{ '**Modes**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 Download</td><td>
@@ -106,7 +106,8 @@ Exports and downloads Diagram as files. </td></tr>
 Data</td><td>
 Exports diagram as data of formats ImageURL/SVG.</td></tr>
 </table>
-Region
+
+### Region
 
 You can export any particular region of the Diagram. The region to be exported is based on the region and bounds properties.
 
@@ -117,8 +118,8 @@ _Diagram Region_
 <table>
 <tr>
 <td>
-Regions</td><td>
-Description</td></tr>
+{{ '**Regions**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 Content</td><td>
@@ -128,13 +129,14 @@ Only content of the diagram is exported.</td></tr>
 PageSettings</td><td>
 Export Diagram is based on page settings (page size, multiple page, page margin, etc.)</td></tr>
 </table>
-Format
+
+### Format
 
 Format specifies the type/format of the exported file.
 
 It includes jpg, png, bmp, and svg.
 
  ![](Exporting_images/Exporting_img1.png) 
-{:.image }
+
 
 
