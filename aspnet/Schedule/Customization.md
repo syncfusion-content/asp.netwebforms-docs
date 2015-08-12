@@ -943,16 +943,16 @@ Execute the above code to render the output as follows with the Schedule control
 
 Figure 107 :  schedule with hour customization.
 
-##Business hours
+### Business hours
 
 * There is an option highlightBusinessHours in the Schedule control to enable/disable the action of highlighting the business hours. 
 * It is controlled with two additional options businessStartHour and businessEndHour to specify the time range to be defined as the business hours. By default, the business hours are highlighted in the Schedule control.
 
-###businessStartHour
+#### businessStartHour
 
 * It allows you to specify the start time to indicate the business start hour.
 
-###businessEndHour
+#### businessEndHour
 
 * It allows you to specify the end time to indicate the business end hour.
 
@@ -1006,7 +1006,7 @@ Execute the above code to render the following output that explains the highligh
 
 ## Date/Time Customization
 
-###Current date
+### Current date
 
 * By default, the Schedule control displays the current system date. 
 * You can change the current date of the Schedule control by setting the currentDate option with the required date value. 

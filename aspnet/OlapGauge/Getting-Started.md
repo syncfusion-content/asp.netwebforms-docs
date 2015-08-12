@@ -23,7 +23,7 @@ The following screenshot shows the structure of an OLAP Gauge control.
 
 ### Syncfusion OLAP Controls – Architecture
 
- ![Description: C:/Users/Narendhran Muthuvel/Desktop/blockdiagram.PNG](Getting-Started_images/Getting-Started_img2.png) 
+ ![](Getting-Started_images/Getting-Started_img2.png) 
 
 
 
@@ -198,22 +198,23 @@ _Note: URL value needs to be defined in order to fetch the data from the service
 
 
 
-![Description: C:/Users/Narendhran Muthuvel/Desktop/screenshots/sshot-4.png](Getting-Started_images/Getting-Started_img12.png) 
+![](Getting-Started_images/Getting-Started_img12.png) 
 
 
 
 1. Select the following assemblies: 
+
 * Microsoft.AnalysisServices.AdomdClient.dll
 
-Syncfusion.Core.dll 
+* Syncfusion.Core.dll 
 
-Syncfusion.Linq.Base.dll 
+* Syncfusion.Linq.Base.dll 
 
-Syncfusion.EJ.dll 
+* Syncfusion.EJ.dll 
 
-Syncfusion.EJ.Olap.dll
+* Syncfusion.EJ.Olap.dll
 
-Syncfusion.Olap.Base.dll
+* Syncfusion.Olap.Base.dll
 
 2. Click OK.
 
@@ -222,9 +223,8 @@ Syncfusion.Olap.Base.dll
 Add the script files and CSS files in the head tag of the Default.aspx page.
 
 
-_Note: 1. Follow the given order while adding scripts and styles._
-
->    _2. Apart from cdn files rest of them can be acquired from the following location._
+Note: 1. Follow the given order while adding scripts and styles.
+2. Apart from cdn files rest of them can be acquired from the following location.
 
 C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScript\assets\
 
@@ -500,7 +500,10 @@ behaviorConfiguration: This property contains the name of the behavior to be use
 {% endhighlight  %}
 
 
-2. The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property. In the following code sample "Sample.OlapGaugeServiceAspNetAjaxBehavior" would point the OlapGaugeService class under the namespace Sample in OlapGaugeService.svc.cs file that is the appropriate behavior for the endpoint. 
+2. The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior 
+only using this name property. In the following code sample "Sample.OlapGaugeServiceAspNetAjaxBehavior" would point the 
+OlapGaugeService class under the namespace Sample in OlapGaugeService.svc.cs file that is the appropriate behavior for the 
+endpoint. 
 
 
 {% highlight html %}
@@ -551,7 +554,7 @@ behaviorConfiguration: This property contains the name of the behavior to be use
 
 {% endhighlight  %}
 
-_Note:__x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system._
+Note: x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
 
 4. Register the namespace in web.config file by adding the following codes.
 
@@ -579,5 +582,5 @@ _Note:__x.x.x.x in the above code example refers to the current version of the E
 
 {% endhighlight  %}
 
-_Note: In this example, “Sample” indicates the name of the project and “OlapGaugeService” indicates the name of the WCF service created. And_ x.x.x.x _in the above code example refers to the current version of the Essential Studio running in your system._
+Note: In this example, “Sample” indicates the name of the project and “OlapGaugeService” indicates the name of the WCF service created. And_ x.x.x.x _in the above code example refers to the current version of the Essential Studio running in your system.
 

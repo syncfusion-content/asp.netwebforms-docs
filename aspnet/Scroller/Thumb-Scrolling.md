@@ -112,6 +112,6 @@ The following screenshot displays the output of the above code example.
 
 
 { ![](Thumb-Scrolling_images/Thumb-Scrolling_img1.png) | markdownify }
-{:.image }
+
 
 

@@ -112,7 +112,7 @@ The following screenshot displays the output of the above code example.
 
 
 { ![](RTL_images/RTL_img1.png) | markdownify }
-{:.image }
+
 
 
 

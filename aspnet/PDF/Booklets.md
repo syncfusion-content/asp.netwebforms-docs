@@ -15,17 +15,17 @@ For example, assume that you have a 13-page document. Creating a booklet of the 
 
 
 ![http://help.syncfusion.com/ug/wpf/pdf/ImagesExt/image517_77.jpg](Booklets_images/Booklets_img1.jpeg)
-{:.image }
+
 
 
 ![http://help.syncfusion.com/ug/wpf/pdf/ImagesExt/image517_78.jpg](Booklets_images/Booklets_img2.jpeg)
-{:.image }
+
 
 
 
 
 ![http://help.syncfusion.com/ug/wpf/pdf/ImagesExt/image517_79.jpg](Booklets_images/Booklets_img3.jpeg)
-{:.image }
+
 
 
 Pages Printed and Folded into New Booklet
@@ -88,12 +88,13 @@ CreateBooklet(PdfLoadedDocument, SizeF, Boolean, PdfMargins);
 
 CreateBooklet(String, String, SizeF, Boolean);
 
+{% endhighlight %}
 
 You can also apply margins to the booklets at the time of creating the booklet by using one of the preceding overloads.
 
  The following code example illustrates how to create a booklet with the following overload: CreateBooklet (PdfLoadedDocument, SizeF, Boolean, PdfMargins).
 
-{% endhighlight %}
+
 
 {% highlight c# %}
 

@@ -20,13 +20,13 @@ The following screenshot displays the OLAP Client Control.
 
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
-{:.image }
+
 
 
 ### Syncfusion OLAP Controls – Architecture
 
  ![](Getting-Started_images/Getting-Started_img2.png) 
-{:.image }
+
 
 
 As per the architecture, control rendering takes place at the client-side and all the analytical operations on each action takes place at the server-side.
@@ -64,7 +64,7 @@ This section encompasses on how to configure the OLAP Client control in an appli
 In this example you can see how OLAPClient component plots the data about Customer Count over different fiscal years.
 
  ![C:/Users/Narendhran Muthuvel/Desktop/screenshots/Capture.PNG](Getting-Started_images/Getting-Started_img3.png) 
-{:.image }
+
 
 
 _Figure: Customer Count over different fiscal years_
@@ -74,7 +74,7 @@ Open the Visual Studio and create a new project by clicking New Project. Select 
 
 
 ![](Getting-Started_images/Getting-Started_img4.png) 
-{:.image }
+
 
 
 ### Add Control in Application
@@ -84,7 +84,7 @@ Open the Visual Studio and create a new project by clicking New Project. Select 
 
 
 ![](Getting-Started_images/Getting-Started_img5.png) 
-{:.image }
+
 
 
 2. Now right-click on the olapclient folder newly created and select Add > New Item.
@@ -92,7 +92,7 @@ Open the Visual Studio and create a new project by clicking New Project. Select 
 
 
 ![](Getting-Started_images/Getting-Started_img6.png) 
-{:.image }
+
 
 
 3. Select Web Form and name it as Default.aspx.
@@ -100,7 +100,7 @@ Open the Visual Studio and create a new project by clicking New Project. Select 
 
 
  ![](Getting-Started_images/Getting-Started_img7.png) 
-{:.image }
+
 
 
 4. Drag the OlapClient control from the Syncfusion BI Web Toolbox onto the Design page.
@@ -108,20 +108,20 @@ Open the Visual Studio and create a new project by clicking New Project. Select 
 
 
 ![](Getting-Started_images/Getting-Started_img8.png) 
-{:.image }
+
 
 
 ![](Getting-Started_images/Getting-Started_img9.png) 
-{:.image }
+
 
 
 5. Enter the service URL value after dragging and dropping the control.
 
 
-_Note: Instructions to create a service is explained briefly in the upcoming sections._
+Note: Instructions to create a service is explained briefly in the upcoming sections.
 
 ![](Getting-Started_images/Getting-Started_img11.png) 
-{:.image }
+
 
 
 Initialize the control using below code snippet.
@@ -129,7 +129,7 @@ Initialize the control using below code snippet.
 
 
 
-_Note: URL value needs to be defined in order to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately._ 
+Note: URL value needs to be defined in order to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately. 
 
 
 {% highlight html %}
@@ -138,25 +138,25 @@ _Note: URL value needs to be defined in order to fetch the data from the service
 
 
 
-&lt;body&gt;
+<body>
 
-    &lt;form id="form1" runat="server"&gt;
-
-
-
-    &lt;div&gt;   
-
-       &lt;ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc"&gt;
+    <form id="form1" runat="server">
 
 
 
-        &lt;/ej:OlapClient&gt;   
+    <div>   
 
-    &lt;/div&gt;
+       <ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc">
 
-    &lt;/form&gt;
 
-&lt;/body&gt;
+
+        </ej:OlapClient>   
+
+    </div>
+
+    </form>
+
+</body>
 
 
 {% endhighlight %}
@@ -170,13 +170,10 @@ _Note: URL value needs to be defined in order to fetch the data from the service
 
 
 ![](Getting-Started_images/Getting-Started_img13.png) 
-{:.image }
 
 
+![](Getting-Started_images/Getting-Started_img14.png)
 
-
-![C:/Users/Narendhran Muthuvel/Desktop/screenshots/sshot-4.png](Getting-Started_images/Getting-Started_img14.png)
-{:.image }
 
 
 2. Select the following assemblies:  
@@ -189,6 +186,7 @@ _Note: URL value needs to be defined in order to fetch the data from the service
 * Syncfusion.Olap.Base.dll,
 * Syncfusion.XlsIO.Base.dll and
 * System.Data.SqlServerCe.dll (Version: 4.0.0.0).
+
 3. Click OK.
 
 #### Adding Scripts and Styles
@@ -197,9 +195,9 @@ Add the script files and CSS files in the head tag of the Default.aspx page.
 
 
 
-_Note: 1. Use the following code sample while adding scripts and styles.            
+Note: 1. Use the following code sample while adding scripts and styles.            
        2. Same files can also acquire from the following location.
-       C:\Users\&lt;UserName&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version&gt;\JavaScript\assets\
+       C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScript\assets\
        3. Please download jquery.globalize.min.js from jQuery site to local machine and refer in the sample like below.
 
 
@@ -209,19 +207,19 @@ _Note: 1. Use the following code sample while adding scripts and styles.
 
 
 
-&lt;head&gt;
+<head>
 
-&lt;link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" /&gt;
+<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
-&lt;script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"&gt; &lt;/script&gt;
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"> </script>
 
-&lt;script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"&gt; &lt;/script&gt;
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
 
-&lt;script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"&gt; &lt;/script&gt;
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
 
-&lt;script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"&gt; &lt;/script&gt;
+<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
 
-&lt;/head&gt;
+</head>
 
 {% endhighlight  %}
 
@@ -235,7 +233,7 @@ _Note: 1. Use the following code sample while adding scripts and styles.
 
 
 ![](Getting-Started_images/Getting-Started_img16.png) 
-{:.image }
+
 
 
 2. Now right click the wcf folder created and select Add > New Item.
@@ -243,7 +241,7 @@ _Note: 1. Use the following code sample while adding scripts and styles.
 
 
 ![](Getting-Started_images/Getting-Started_img17.png) 
-{:.image }
+
 
 
 3. In the Add New Item window, select WCF Service and name it OlapClientService.svc. Click Add. 
@@ -251,7 +249,7 @@ _Note: 1. Use the following code sample while adding scripts and styles.
 
 
 ![](Getting-Started_images/Getting-Started_img18.png) 
-{:.image }
+
 
 
 #### Adding service methods inside Interface
@@ -894,21 +892,21 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
 
 [web.config]
 
-&lt;system.serviceModel&gt;
+<system.serviceModel>
 
-    &lt;services&gt;
+    <services>
 
-      &lt;service name="Sample.OlapClientService"&gt;
+      <service name="Sample.OlapClientService">
 
         <endpoint address="" behaviorConfiguration="Sample.OlapClientServiceAspNetAjaxBehavior"
 
           binding="webHttpBinding" contract="Sample.IOlapClientService" />
 
-      &lt;/service&gt;
+      </service>
 
-    &lt;/services&gt;
+    </services>
 
-&lt;/system.serviceModel&gt;
+</system.serviceModel>
 
 {% endhighlight %}
 
@@ -920,23 +918,23 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
 
 [web.config]
 
-&lt;system.serviceModel&gt;
+<system.serviceModel>
 
-    &lt;behaviors&gt;
+    <behaviors>
 
-      &lt;endpointBehaviors&gt;
+      <endpointBehaviors>
 
-        &lt;behavior name="Sample.OlapClientServiceAspNetAjaxBehavior"&gt;
+        <behavior name="Sample.OlapClientServiceAspNetAjaxBehavior">
 
-          &lt;enableWebScript /&gt;
+          <enableWebScript />
 
-        &lt;/behavior&gt;
+        </behavior>
 
-      &lt;/endpointBehaviors&gt;
+      </endpointBehaviors>
 
-    &lt;/behaviors&gt;
+    </behaviors>
 
-&lt;/system.serviceModel&gt;
+</system.serviceModel>
 
 
 {% endhighlight %}
@@ -949,29 +947,29 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
 
 [web.config]
 
-&lt;system.web&gt;
+<system.web>
 
-      &lt;compilation debug="true" targetFramework="4.5" &gt;
+      <compilation debug="true" targetFramework="4.5" >
 
-        &lt;assemblies&gt;
+        <assemblies>
 
-          &lt;add assembly="Syncfusion.EJ, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /&gt;
+          <add assembly="Syncfusion.EJ, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
 
-          &lt;add assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /&gt;
+          <add assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
 
-           &lt;add assembly="Syncfusion.Olap.Base, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3D67ED1F87D44C89"/&gt;
+           <add assembly="Syncfusion.Olap.Base, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3D67ED1F87D44C89"/>
 
-        &lt;/assemblies&gt;
+        </assemblies>
 
-      &lt;/compilation&gt;
+      </compilation>
 
- &lt;/system.web&gt; 
+ </system.web> 
 
 {% endhighlight %}
 
 
 
-_Note: x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system._
+Note: x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
 
 
 4. Register the namespace in web.config file by adding the following codes
@@ -982,29 +980,29 @@ _Note: x.x.x.x in the above code example refers to the current version of the E
 
 [web.config]
 
-&lt;system.web&gt;
+<system.web>
 
- &lt;pages validateRequest="false"&gt;
+ <pages validateRequest="false">
 
-      &lt;controls&gt;
+      <controls>
 
-          &lt;add  namespace="Syncfusion.JavaScript.Web.Olap" assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/&gt;
+          <add  namespace="Syncfusion.JavaScript.Web.Olap" assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/>
 
-      &lt;/controls&gt;
+      </controls>
 
-   &lt;/pages&gt;
+   </pages>
 
-&lt;/system.web&gt; 
+</system.web> 
 
 {% endhighlight  %}
 
-_Note: In this example, “Sample” indicates the name of the project and “OlapClientService” indicates the name of the WCF service created. And x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system._
+Note: In this example, “Sample” indicates the name of the project and “OlapClientService” indicates the name of the WCF service created. And x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
 
 
 
 In summary, this getting started tutorial gives you an overview of OlapClient, its architecture, process flow, how to configure and integrate with a VS application through a simple example that is self-explanatory.
 
 ![](Getting-Started_images/Getting-Started_img21.png) 
-{:.image }
+
 
 

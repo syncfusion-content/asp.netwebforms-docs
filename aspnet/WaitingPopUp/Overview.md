@@ -9,7 +9,8 @@ documentation: ug
 
 # Overview
 
-The Essential ASP.NET WaitingPopup control is a visual element that provides support for displaying a pop-up indicator over a target area and to prevent the end user’s interaction with the target area while loading.
+The Essential ASP.NET WaitingPopup control is a visual element that provides support for displaying a pop-up indicator over a 
+target area and to prevent the end user’s interaction with the target area while loading.
 
 Key Features
 
@@ -19,5 +20,6 @@ Template: Supports including HTML content instead of the default image.
 
 Transparency: Supports customizing the transparency and opacity level.
 
-Themes: Include 13 built-in themes (6 flat, 6 gradient effects, and a bootstrap) and also supports the custom skin option to set user-defined themes.
+Themes: Include 13 built-in themes (6 flat, 6 gradient effects, and a bootstrap) and also supports the custom skin option to 
+set user-defined themes.
 

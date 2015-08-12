@@ -589,7 +589,11 @@ pdfDoc.Save("DocumentInformation.pdf")
 
 ## Adding Custom Metadata
 
-Essential PDF allows you to add required metadata (custom metadata) to a PDF document. Custom metadata can be an information about the document that cannot fit in the predefined metadata fields. For example, when a metadata field “Link” is available, you can only provide a link there. But, Essential PDF allows you to add additional information like Author, date of creation, etc. about the link. This feature allows you to add as many new metadata fields as you want. You cannot add metadata fields under the predefined metadata fields.
+Essential PDF allows you to add required metadata (custom metadata) to a PDF document. Custom metadata can be an information 
+about the document that cannot fit in the predefined metadata fields. For example, when a metadata field “Link” is available, 
+you can only provide a link there. But, Essential PDF allows you to add additional information like Author, date of creation, 
+etc. about the link. This feature allows you to add as many new metadata fields as you want. You cannot add metadata fields 
+under the predefined metadata fields.
 
 ### How to add a custom Metadata Field
 
@@ -601,10 +605,10 @@ To add a custom metadata field,
 ### Create an XML Document container
 
 
-The custom metadata to be created has to be stored and linked to the PDF document in use. Here XML document is used as a container to save the custom metadata fields for the PDF document. 
+The custom metadata to be created has to be stored and linked to the PDF document in use. Here XML document is used as a 
+container to save the custom metadata fields for the PDF document. 
 
 You can add the following code to create an XML document to store custom metadata fields. 
-
 
 {% highlight c# %}
 [C#]
@@ -626,7 +630,7 @@ Dim xmp As New XmpMetadata(pdfDoc.DocumentInformation.XmpMetadata.XmlData)
 
 The following table provides more information on the code.
 
-_Table27: Property Table_
+Table27: Property Table
 
 <table>
 <tr>
@@ -751,6 +755,7 @@ cs("DOCID") = "SYNCSAM001"
 pdfDoc.Save("CustomMetaField.pdf")
 
 pdfDoc.Close()
+
 {% endhighlight %}
 
 Security
@@ -803,7 +808,6 @@ Essential PDF allows you to encrypt your document in RC4 encryption.
 [C#]
 
 
-
 //Creates a new PDF document.
 
 PdfDocument document = new PdfDocument();
@@ -849,10 +853,10 @@ document.Save("Output.pdf");
 document.Close();
 
 {% endhighlight  %}
+
 {% highlight vbnet %}
 
 [VB]
-
 
 
 'Creates a new PDF document.
@@ -953,10 +957,10 @@ document.Save("Output.pdf");
 document.Close();
 
 {% endhighlight  %}
+
 {% highlight vbnet %}
+
 [VB]
-
-
 
 'Creates a new PDF document.
 
@@ -1007,7 +1011,7 @@ A digital signature is an electronic signature that is used to authenticate the 
 
 Digital signatures are easily transportable, cannot be imitated by someone else, and can be automatically time-stamped. It has the ability to ensure that once the original signed message is received, the sender cannot easily repudiate it later.
 
-_Table28: List of Elements in Digital Signature_
+Table28: List of Elements in Digital Signature
 
 <table>
 <tr>
@@ -1029,15 +1033,18 @@ Gets signing certificate.</td></tr>
 <tr>
 <td>
 Certificated</td><td>
-Gets or sets a value indicating certificate document or not. Allows document recipients to know if changes have been made contrary to the author's intent. Note: Works only with Adobe Reader 7.0.8 or higher.</td></tr>
+Gets or sets a value indicating certificate document or not. Allows document recipients to know if changes have been made 
+contrary to the author's intent. Note: Works only with Adobe Reader 7.0.8 or higher.</td></tr>
 <tr>
 <td>
 ContactInfo</td><td>
-Gets or sets information provided by the signee to enable a recipient to contact the signer to verify signature; for example, a phone number.</td></tr>
+Gets or sets information provided by the signee to enable a recipient to contact the signer to verify signature; for example,
+a phone number.</td></tr>
 <tr>
 <td>
 DocumentPermissions</td><td>
-Gets or sets the permission for certificated document. Allows you to set permissions on certificated document with the help of PdfCertificationFlags.</td></tr>
+Gets or sets the permission for certificated document. Allows you to set permissions on certificated document with the help of 
+PdfCertificationFlags.</td></tr>
 <tr>
 <td>
 Field</td><td>
@@ -1057,7 +1064,8 @@ Gets or sets the reason for signing.</td></tr>
 <tr>
 <td>
 Visible</td><td>
-Gets a value indicating whether the signature is visible or not. Allows you to create visible or invisible signatures by enabling the Visible property.</td></tr>
+Gets a value indicating whether the signature is visible or not. Allows you to create visible or invisible signatures by 
+enabling the Visible property.</td></tr>
 <tr>
 <td>
 TimeStampServer</td><td>
@@ -1065,9 +1073,12 @@ Sets the timestamp for the signature. Allows you to include timestamp for the di
 </table>
 Standard Signature
 
-PdfCertificate class is used to get the certificates from disk or another device such as PFX file. The PFX file type is an encrypted security file that stores secure certificates that are used to authenticate a PDF document. One needs a password to access these files. The PFX files are supported with private keys.
+PdfCertificate class is used to get the certificates from disk or another device such as PFX file. The PFX file type is an 
+encrypted security file that stores secure certificates that are used to authenticate a PDF document. One needs a password to 
+access these files. The PFX files are supported with private keys.
 
-PdfSignature class has methods and properties that allow setting the signature information such as reason, location information, bounds where the signature has to be placed, and contact information.
+PdfSignature class has methods and properties that allow setting the signature information such as reason, location information,
+bounds where the signature has to be placed, and contact information.
 
 {% highlight c# %}
 
@@ -1118,9 +1129,10 @@ document.Save("Output.pdf");
 document.Close();
 
 {% endhighlight %}
-{% highlight vbnet %}
-[VB]
 
+{% highlight vbnet %}
+
+[VB]
 
 
 'Creates a new PDF document.
@@ -1147,7 +1159,7 @@ Dim bmp As New PdfBitmap("syncfusion_logo.gif")
 
 'Sets signature info.
 
-signature.Bounds = New RectangleF(New PointF(0, 0),                 bmp.PhysicalDimension)
+signature.Bounds = New RectangleF(New PointF(0, 0),bmp.PhysicalDimension)
 
 signature.ContactInfo = "johndoe@owned.us"
 
@@ -1164,18 +1176,20 @@ graphics.DrawImage(bmp, 0, 0)
 document.Save("Output.pdf")
 
 document.Close()
+
 {% endhighlight  %}
+
 Author Signature
 
 By default, documents are signed with standard signature types. Certificated property of PdfSignature is used to create author’s signature. When signed with this type of signature, any modification after signing is detected, and hence do not support added multiple signatures.
 
 
-> _Note: This implementation of certification will only work with Acrobat 7 and higher versions._
+Note: This implementation of certification will only work with Acrobat 7 and higher versions.
 
 
 {% highlight c# %}
-[C#]
 
+[C#]
 
 
 //Creates a new PDF document.
@@ -1225,10 +1239,10 @@ document.Save("Output.pdf");
 document.Close();
 
 {% endhighlight  %}
+
 {% highlight vbnet %}
+
 [VB]
-
-
 
 'Creates a new PDF document.
 
@@ -1275,6 +1289,7 @@ graphics.DrawImage(bmp, 0, 0)
 document.Save("Output.pdf")
 
 document.Close()
+
 {% endhighlight %}
 
 ## Digitally Sign the existing PDF document
@@ -1284,8 +1299,6 @@ Essential PDF allows you to put signature in an existing PDF document as in a ne
 {% highlight c# %}
 
 [C#]
-
-
 
 //Creates a new PDF document.
 
@@ -1330,10 +1343,10 @@ document.Save("Output.pdf");
 document.Close();
 
 {% endhighlight  %}
+
 {% highlight vbnet %}
+
 [VB]
-
-
 
 'Creates a new PDF document.
 
@@ -1380,24 +1393,34 @@ graphics.DrawImage(bmp, 0, 0)
 document.Save("Output.pdf")
 
 document.Close()
+
 {% endhighlight  %}
 
 ## Timestamp in Digital signature
 
-Essential PDF supports addition of timestamp in digital signatures. The date and time on which the document is signed can be added as part of the signature. Timestamps are easier to verify when they are associated with timestamp authority’s trusted certificate.  It also helps establish exactly when the document was signed and reduces the chances of an invalid signature. The timestamp can be obtained from a third-party timestamp authority or from the certificate authority that issued the digital ID.
+Essential PDF supports addition of timestamp in digital signatures. The date and time on which the document is signed can be 
 
-Timestamps appear in the signature field and in the Signature Properties dialog box. When the timestamp is included, the certificate appears in the Date or Time tab of the Signature Properties dialog box. When no timestamp is added, then the signature field displays the local time of the computer at the moment of signing.
+added as part of the signature. Timestamps are easier to verify when they are associated with timestamp authority’s trusted 
 
-To apply timestamp using Essential PDF, the TimeStampServer property of the PdfSignature class has to be used. The parameters for the TimeStampMethod are the URI of digital server, username, and password.
+certificate.  It also helps establish exactly when the document was signed and reduces the chances of an invalid signature. 
+
+The timestamp can be obtained from a third-party timestamp authority or from the certificate authority that issued the digital 
+
+ID.Timestamps appear in the signature field and in the Signature Properties dialog box. When the timestamp is included, the 
+
+certificate appears in the Date or Time tab of the Signature Properties dialog box. When no timestamp is added, then the 
+
+signature field displays the local time of the computer at the moment of signing.To apply timestamp using Essential PDF, the 
+
+TimeStampServer property of the PdfSignature class has to be used. The parameters for the TimeStampMethod are the URI of 
+
+digital server, username, and password.
 
 The following code illustrates the method for adding timestamp in the digital signature.
-
 
 {% highlight c# %}
 
 [C#]
-
-
 
 //Creates a new PDF document.
 
@@ -1496,7 +1519,6 @@ graphics.DrawImage(bmp, 0, 0)
 document.Save("Output.pdf")
 
 document.Close()
-
 
 {% endhighlight  %}
 

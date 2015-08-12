@@ -50,16 +50,16 @@ TreeGrid allows you to sort multiple columns by clicking the desired column hea
 
 
 
-
+{% highlight xml %}
    <ej:TreeGrid runat="server" ID="TreeGridControlSorting"
 
              AllowSorting="true"
 
              AllowMultiSorting="true">
 
-    &lt;/ej:TreeGrid&gt;
+    </ej:TreeGrid>
 
-
+{% endhighlight %}
 
 
 
@@ -68,7 +68,7 @@ The following screenshot shows the output of Multicolumn sorting in TreeGrid c
 
 
  ![](Sorting_images/Sorting_img1.png) 
-{:.image }
+
 
 
 

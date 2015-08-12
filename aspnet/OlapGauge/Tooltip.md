@@ -9,7 +9,8 @@ documentation: ug
 
 # Tooltip
 
-Tooltip provides the information about the OlapGauge when you move the mouse pointer over the control. You can enable it using “showtooltip”property.
+Tooltip provides the information about the OlapGauge when you move the mouse pointer over the control. You can enable it using 
+“showtooltip”property.
 
 
 

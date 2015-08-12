@@ -16,7 +16,7 @@ This section explains briefly how to create a Tab Control in your application wi
 The ASP.NET Tab control is an interface that displays the content in multiple sections. Each TabPanel consists of HeaderText or HeaderTemplate as well as a ContentTemplate. Tab is useful for a dashboard that contains limited space. The following section guides you to customize the Tab for displaying Hotel menu items, its rating details, and ingredients.
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
-{:.image }
+
 
 
 
@@ -84,12 +84,12 @@ Output of the above steps.
 
 
 ![](Getting-Started_images/Getting-Started_img2.png)
-{:.image }
+
 
 
 ### Configure content
 
-In this application, a detailed description is provided to each item. You can specify the contents in the Tab section within the &lt;ContentSection &gt; by using the following format. 
+In this application, a detailed description is provided to each item. You can specify the contents in the Tab section within the <ContentSection > by using the following format. 
 
 {% highlight html %}
 
@@ -122,12 +122,12 @@ You can provide more customization to the Tab with rating control as the content
 The following screenshot is the output of the above code example:
 
 ![](Getting-Started_images/Getting-Started_img3.png) 
-{:.image }
+
 
 
 ### Create the rating in the Tab
 
-The ASP.NET Rating control provides an intuitive rating experience that allows you to select the number of stars that represents the rating. The following code example explains he rating control creation. Render the rating control by using the &lt;ej:Rating&gt; tag. The code example is placed within the content description( &lt;ContentSection &gt; ) element to declare the rating control and description in the Tab section and it can be appended with the control initialization code section &lt;ej:Tab&gt; element by using the following format.
+The ASP.NET Rating control provides an intuitive rating experience that allows you to select the number of stars that represents the rating. The following code example explains he rating control creation. Render the rating control by using the <ej:Rating> tag. The code example is placed within the content description( <ContentSection > ) element to declare the rating control and description in the Tab section and it can be appended with the control initialization code section <ej:Tab> element by using the following format.
 
 {% highlight html %}
 
@@ -170,102 +170,102 @@ The ASP.NET Rating control provides an intuitive rating experience that allows y
 The following screenshot is the output of the above code example:
 
  ![](Getting-Started_images/Getting-Started_img4.png) 
-{:.image }
+
 
 
 ### Sub Tab with content 
 
 Each item has a variety of options and these options are also specified in the limited space. So, you can choose the Tab control that is used within the root Tab to specify more details.
 
-The following code example illustrates how to create the Tab control within the root Tab element. This HTML code is appended within the previous HTML code section. To render the child Tab with its header, add this code example within the &lt;ej:Tab &gt; tag by using the following format.
+The following code example illustrates how to create the Tab control within the root Tab element. This HTML code is appended within the previous HTML code section. To render the child Tab with its header, add this code example within the <ej:Tab > tag by using the following format.
 
 The sub Tab control rendering is represented in the following code example.
 
-&lt;!--Use the following codes with in the  above Html --&gt;
+<!--Use the following codes with in the  above Html -->
 
 {% highlight html %}
 
-&lt;ej:Tab ID="DishType" runat="server" Width="500px"&gt;
+<ej:Tab ID="DishType" runat="server" Width="500px">
 
-    &lt;Items&gt;
+    <Items>
 
-        &lt;ej:TabItem Id="PizzaType" Text="Pizza Menu"&gt;
+        <ej:TabItem Id="PizzaType" Text="Pizza Menu">
 
-            &lt;ContentSection&gt;
+            <ContentSection>
 
-                &lt;div&gt;
+                <div>
 
                     Rating : 
 
-                                 &lt;div&gt;
+                                 <div>
 
-                                     &lt;ej:Rating ID="GardenPizza" Precision="Exact" Value="4.9" runat="server"&gt;&lt;/ej:Rating&gt;
+                                     <ej:Rating ID="GardenPizza" Precision="Exact" Value="4.9" runat="server"></ej:Rating>
 
-                                 &lt;/div&gt;
+                                 </div>
 
-                &lt;/div&gt;
+                </div>
 
-                <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;
+                <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
 
-                &lt;ej:Tab ID="PizzaTab" runat="server"&gt;
+                <ej:Tab ID="PizzaTab" runat="server">
 
-                    &lt;Items&gt;
+                    <Items>
 
-                        &lt;ej:TabItem Id="PizzaMenu" Text="Corn Spinach"&gt;
+                        <ej:TabItem Id="PizzaMenu" Text="Corn Spinach">
 
-                            &lt;ContentSection&gt;
+                            <ContentSection>
 
-                                &lt;img src=" http://js.syncfusion.com/demos/web/images/accordion/corn-and-spinach-05.png" alt="corn-spinach"&gt;
+                                <img src=" http://js.syncfusion.com/demos/web/images/accordion/corn-and-spinach-05.png" alt="corn-spinach">
 
-                                &lt;div class="ingredients"&gt;
+                                <div class="ingredients">
 
                                     Rate    : $70<br />
 
-                                    Ingredients : cheese, sweet corn &amp; green capsicums.&lt;br /&gt;
+                                    Ingredients : cheese, sweet corn &amp; green capsicums.<br />
 
                                     Description: Small pizza bases are topped with spinach and paneer and fresh cream, a nice layer of mozzarella cheese. This is baked until the cheese is all hot and gooey.  
 
-                                &lt;/div&gt;
+                                </div>
 
-                            &lt;/ContentSection&gt;
+                            </ContentSection>
 
-                        &lt;/ej:TabItem&gt;
+                        </ej:TabItem>
 
-                        &lt;ej:TabItem Id="PizzaMenu1" Text="Chicken-Delite"&gt;
+                        <ej:TabItem Id="PizzaMenu1" Text="Chicken-Delite">
 
-                            &lt;ContentSection&gt;
+                            <ContentSection>
 
-                                &lt;img src="http://js.syncfusion.com/demos/web/images/accordion/chicken-delite.png" alt="chicken-delite"&gt;
+                                <img src="http://js.syncfusion.com/demos/web/images/accordion/chicken-delite.png" alt="chicken-delite">
 
-                                &lt;div class="ingredients"&gt;
+                                <div class="ingredients">
 
                                     Rate    : $100<br />
 
-                                    Ingredients : cheese, chicken chunks, onions &amp; pineapple chunks.&lt;br /&gt;
+                                    Ingredients : cheese, chicken chunks, onions &amp; pineapple chunks.<br />
 
                                     Description: This is a tasty, elegant chicken dish that is easy to prepare. 
 
-                                &lt;/div&gt;
+                                </div>
 
-                            &lt;/ContentSection&gt;
+                            </ContentSection>
 
-                        &lt;/ej:TabItem&gt;
+                        </ej:TabItem>
 
-                    &lt;/Items&gt;
+                    </Items>
 
-                &lt;/ej:Tab&gt;
+                </ej:Tab>
 
 
 
-            &lt;/ContentSection&gt;
+            </ContentSection>
 
-        &lt;/ej:TabItem&gt;
+        </ej:TabItem>
 
-&lt;!--Reuse remaining Tab contents--&gt;  
+<!--Reuse remaining Tab contents-->  
 
-                &lt;/Items&gt;
+                </Items>
 
-            &lt;/ej:Tab&gt;
+            </ej:Tab>
 {% endhighlight %}
 
 The following code example positions the image and content.
@@ -297,7 +297,7 @@ The following code example positions the image and content.
 The following screenshot illustrates the first Tab with the sub Tab control.
 
 ![](Getting-Started_images/Getting-Started_img5.png) 
-{:.image }
+
 
 
 Orientation Change
@@ -395,7 +395,7 @@ The following gives details on how to set the sub Tab orientation to vertical. B
 The following screenshot is the output of the above steps.
 
 ![](Getting-Started_images/Getting-Started_img6.png) 
-{:.image }
+
 
 
 ### Header Image Customization
@@ -467,230 +467,230 @@ The following code example is used to add the header image for the root tab head
 The following screenshot illustrates the Tab with the customized header image.
 
 ![](Getting-Started_images/Getting-Started_img7.png) 
-{:.image }
+
 
 
 Configure contents to the remaining Tab items
 
-The second and third Tab contents are declared in the same method the first Tab content declaration. These Tabs also consist of rating and sub Tab controls. Add the second Tab content with header image in the &lt;ej:Tab &gt; element during initialization.
+The second and third Tab contents are declared in the same method the first Tab content declaration. These Tabs also consist of rating and sub Tab controls. Add the second Tab content with header image in the <ej:Tab > element during initialization.
 
-&lt;!--Use the following codes with in the  above Html --&gt;                 
+<!--Use the following codes with in the  above Html -->                 
 
 {% highlight html %}
 
-&lt;ej:TabItem Id="SandwichType" Text="Sandwich Menu" ImageCssClass="dish sandwichImg"&gt;
+<ej:TabItem Id="SandwichType" Text="Sandwich Menu" ImageCssClass="dish sandwichImg">
 
-                        &lt;ContentSection&gt;
+                        <ContentSection>
 
-                            &lt;div&gt;
+                            <div>
 
                                 Rating : 
 
-                                 &lt;div&gt;
+                                 <div>
 
-                                     &lt;ej:Rating ID="RatingSandwich" Value="4.9" Precision="Exact" runat="server"&gt;&lt;/ej:Rating&gt;
+                                     <ej:Rating ID="RatingSandwich" Value="4.9" Precision="Exact" runat="server"></ej:Rating>
 
-                                 &lt;/div&gt;
+                                 </div>
 
-                            &lt;/div&gt;
+                            </div>
 
-                            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;
+                            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
 
-                            &lt;ej:Tab ID="SandwichTab" runat="server" HeaderPosition="Left" Height="221px"&gt;
+                            <ej:Tab ID="SandwichTab" runat="server" HeaderPosition="Left" Height="221px">
 
-                                &lt;Items&gt;
+                                <Items>
 
-                                    &lt;ej:TabItem Id="GardenVeggie" Text="Garden Veggie"&gt;
+                                    <ej:TabItem Id="GardenVeggie" Text="Garden Veggie">
 
-                                        &lt;ContentSection&gt;
+                                        <ContentSection>
 
-                                            &lt;img src="http://js.syncfusion.com/demos/web/images/accordion/garden-veggie.png" alt="garden-veggie "&gt;
+                                            <img src="http://js.syncfusion.com/demos/web/images/accordion/garden-veggie.png" alt="garden-veggie ">
 
-                                            &lt;div class="ingredients"&gt;
+                                            <div class="ingredients">
 
                                                 Rate    : $55<br />
 
-                                                Ingredients : grilled chicken, corn &amp;olives.&lt;br /&gt;
+                                                Ingredients : grilled chicken, corn &amp;olives.<br />
 
                                                 Description: To make an appetizer pizza made with crescent roll dough, baked and topped with flavored cream cheese and crispy fresh vegetables. Broccoli, carrots, and bell peppers make this a wonderfully delicious vegetarian treat 
 
-                                            &lt;/div&gt;
+                                            </div>
 
-                                        &lt;/ContentSection&gt;
+                                        </ContentSection>
 
-                                    &lt;/ej:TabItem&gt;
+                                    </ej:TabItem>
 
-                                    &lt;ej:TabItem Id="ChickenTikka" Text="Chicken Tikka"&gt;
+                                    <ej:TabItem Id="ChickenTikka" Text="Chicken Tikka">
 
-                                        &lt;ContentSection&gt;
+                                        <ContentSection>
 
-                                            &lt;img src="http://js.syncfusion.com/demos/web/images/accordion/chicken-tikka.png" alt="chicken-tikka"&gt;
+                                            <img src="http://js.syncfusion.com/demos/web/images/accordion/chicken-tikka.png" alt="chicken-tikka">
 
-                                            &lt;div class="ingredients"&gt;
+                                            <div class="ingredients">
 
                                                 Rate    : $100<br />
 
-                                                Ingredients : onions, grilled chicken, chicken salami &amp; tomatoes.&lt;br /&gt;
+                                                Ingredients : onions, grilled chicken, chicken salami &amp; tomatoes.<br />
 
                                                 Description: Juicy chunks of boneless chicken roasted on open fire. This takeaway favourite is freezer-friendly and quick to reheat, giving you the chance to get ahead. 
 
-                                            &lt;/div&gt;
+                                            </div>
 
-                                        &lt;/ContentSection&gt;
+                                        </ContentSection>
 
-                                    &lt;/ej:TabItem&gt;
+                                    </ej:TabItem>
 
-                                    &lt;ej:TabItem Id="paneerTikka" Text="Paneer Tikka"&gt;
+                                    <ej:TabItem Id="paneerTikka" Text="Paneer Tikka">
 
-                                        &lt;ContentSection&gt;
+                                        <ContentSection>
 
-                                            &lt;img src="http://js.syncfusion.com/demos/web/images/accordion/paneer-tikka.png" alt="paneer-tikka"&gt;
+                                            <img src="http://js.syncfusion.com/demos/web/images/accordion/paneer-tikka.png" alt="paneer-tikka">
 
-                                            &lt;div class="ingredients"&gt;
+                                            <div class="ingredients">
 
                                                 Rate    : $150
 
-                                                &lt;br /&gt;
+                                                <br />
 
                                                 Ingredients : onions, paneer & tomatoes.
 
-                                                &lt;br /&gt;
+                                                <br />
 
                                                 Description: Delve into the tasty Paneer Tikka Kebabs made from marinated paneer or cottage cubes. Relish these grilled delicacies with green mint chutney and onion rings. 
 
-                                            &lt;/div&gt;
+                                            </div>
 
-                                        &lt;/ContentSection&gt;
+                                        </ContentSection>
 
-                                    &lt;/ej:TabItem&gt;
+                                    </ej:TabItem>
 
-                                &lt;/Items&gt;
+                                </Items>
 
-                            &lt;/ej:Tab&gt;
+                            </ej:Tab>
 
-                        &lt;/ContentSection&gt;
+                        </ContentSection>
 
-                    &lt;/ej:TabItem&gt;
+                    </ej:TabItem>
 
-&lt;!--Reuse remaining Tab contents--&gt;  
+<!--Reuse remaining Tab contents-->  
 
-                &lt;/Items&gt;
+                </Items>
 
-            &lt;/ej:Tab&gt;
+            </ej:Tab>
 {% endhighlight %}
 
 
-Add the third Tab content with the header image in the &lt;ej:Tab &gt; element during initialization.
+Add the third Tab content with the header image in the <ej:Tab > element during initialization.
 
 {% highlight html%}
 
-&lt;ej:TabItem Id="PastaType" Text="Pasta Menu" ImageCssClass="dish pastaImg"&gt;
+<ej:TabItem Id="PastaType" Text="Pasta Menu" ImageCssClass="dish pastaImg">
 
-                        &lt;ContentSection&gt;
+                        <ContentSection>
 
-                            &lt;div&gt;
+                            <div>
 
                                 Rating : 
 
-                                 &lt;div&gt;
+                                 <div>
 
-                                     &lt;ej:Rating ID="Rating1" Value="4.9" Precision="Exact" runat="server"&gt;&lt;/ej:Rating&gt;
+                                     <ej:Rating ID="Rating1" Value="4.9" Precision="Exact" runat="server"></ej:Rating>
 
-                                 &lt;/div&gt;
+                                 </div>
 
-                            &lt;/div&gt;
+                            </div>
 
-                            <p>Pasta cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;
+                            <p>Pasta cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
 
-                            &lt;ej:Tab ID="Tab2" runat="server" HeaderPosition="Left" Height="221px"&gt;
+                            <ej:Tab ID="Tab2" runat="server" HeaderPosition="Left" Height="221px">
 
-                                &lt;Items&gt;
+                                <Items>
 
-                                    &lt;ej:TabItem Id="kheemaPasta" Text="Kheema Pasta"&gt;
+                                    <ej:TabItem Id="kheemaPasta" Text="Kheema Pasta">
 
-                                        &lt;ContentSection&gt;
+                                        <ContentSection>
 
-                                            &lt;img src="http://js.syncfusion.com/demos/web/images/accordion/corn-and-spinach.png" alt="kheema-pasta "&gt;
+                                            <img src="http://js.syncfusion.com/demos/web/images/accordion/corn-and-spinach.png" alt="kheema-pasta ">
 
-                                            &lt;div class="ingredients"&gt;
+                                            <div class="ingredients">
 
-                                                &lt;p&gt;
+                                                <p>
 
                                                     Rate : $30<br />
 
-                                                    Ingredients : chicken, onions, chilly, garlic &amp; tomatoes.&lt;br /&gt;
+                                                    Ingredients : chicken, onions, chilly, garlic &amp; tomatoes.<br />
 
                                                     Description: Kheema pasta dish make with veg or non-veg type.It is delicious and can be served for dinner, brunch or evening snack. 
 
-                                                &lt;/p&gt;
+                                                </p>
 
-                                            &lt;/div&gt;
+                                            </div>
 
-                                        &lt;/ContentSection&gt;
+                                        </ContentSection>
 
-                                    &lt;/ej:TabItem&gt;
+                                    </ej:TabItem>
 
-                                    &lt;ej:TabItem Id="tunaPasta" Text="Tuna Pasta"&gt;
+                                    <ej:TabItem Id="tunaPasta" Text="Tuna Pasta">
 
-                                        &lt;ContentSection&gt;
+                                        <ContentSection>
 
-                                            &lt;img src="http://js.syncfusion.com/demos/web/images/accordion/garden-fresh.png" alt="tuna-pasta"&gt;
+                                            <img src="http://js.syncfusion.com/demos/web/images/accordion/garden-fresh.png" alt="tuna-pasta">
 
-                                            &lt;div class="ingredients"&gt;
+                                            <div class="ingredients">
 
-                                                &lt;p&gt;
+                                                <p>
 
                                                     Rate : $55<br />
 
-                                                    Ingredients : tomato ,olive, oninor &amp;garlic.&lt;br /&gt;
+                                                    Ingredients : tomato ,olive, oninor &amp;garlic.<br />
 
                                                     Description: Canned tuna is used to make this yummy tomato sauce.
 
-                                                &lt;/p&gt;
+                                                </p>
 
-                                            &lt;/div&gt;
+                                            </div>
 
-                                        &lt;/ContentSection&gt;
+                                        </ContentSection>
 
-                                    &lt;/ej:TabItem&gt;
+                                    </ej:TabItem>
 
-                                    &lt;ej:TabItem Id="channaPasta" Text="Channa Pasta"&gt;
+                                    <ej:TabItem Id="channaPasta" Text="Channa Pasta">
 
-                                        &lt;ContentSection&gt;
+                                        <ContentSection>
 
-                                            &lt;img src="http://js.syncfusion.com/demos/web/images/accordion/zesty-mushroons-and-tomatoes.png" alt="channa-asta"&gt;
+                                            <img src="http://js.syncfusion.com/demos/web/images/accordion/zesty-mushroons-and-tomatoes.png" alt="channa-asta">
 
-                                            &lt;div class="ingredients"&gt;
+                                            <div class="ingredients">
 
-                                                &lt;p&gt;
+                                                <p>
 
                                                     Rate : $30<br />
 
-                                                    Ingredients : sautered spinach mix, sweet corn, parsley &amp;mozarella cheese. .&lt;br /&gt;
+                                                    Ingredients : sautered spinach mix, sweet corn, parsley &amp;mozarella cheese. .<br />
 
                                                     Description: This is a pasta dish make with leftover channa masala (chole). This can be made from scratch too by making the channa masala first and then tossing in the cooked pasta.
 
-                                                &lt;/p&gt;
+                                                </p>
 
-                                            &lt;/div&gt;
+                                            </div>
 
-                                        &lt;/ContentSection&gt;
+                                        </ContentSection>
 
-                                    &lt;/ej:TabItem&gt;
+                                    </ej:TabItem>
 
-                                &lt;/Items&gt;
+                                </Items>
 
-                            &lt;/ej:Tab&gt;
+                            </ej:Tab>
 
-                        &lt;/ContentSection&gt;
+                        </ContentSection>
 
-                    &lt;/ej:TabItem&gt;
+                    </ej:TabItem>
 
-&lt;!--Reuse remaining contents--&gt;  
+<!--Reuse remaining contents-->  
 
-                &lt;/Items&gt;
+                </Items>
 
-            &lt;/ej:Tab&gt;
+            </ej:Tab>
 
 Apply the following styles to the Tab.
 
@@ -721,6 +721,6 @@ Apply the following styles to the Tab.
 The following screenshot illustrates the second Tab contents and the final hotel menu with rating, description, and ingredients of the item in the Tab interface.
 
  ![](Getting-Started_images/Getting-Started_img8.png) 
-{:.image }
+
 
 

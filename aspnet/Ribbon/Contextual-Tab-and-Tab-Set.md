@@ -149,6 +149,6 @@ You can add _Contextual Tabs_ and _Tab Set_ in the _Ribbon_ control. In _Context
 The following screenshot illustrates _Ribbon_ with _Contextual Tabs and Tab Set_.
 
 ![](Contextual-Tab-and-Tab-Set_images/Contextual-Tab-and-Tab-Set_img1.png)
-{:.image }
+
 
 

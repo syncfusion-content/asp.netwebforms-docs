@@ -11,7 +11,7 @@ documentation: ug
 
 Schedule control is provided with the Print feature. You can print the entire Schedule control or separately print the appointment based on your requirement.
 
-Schedule Print
+## Schedule Print
 
 You can print the Schedule control by using print() method. Use the following code example to print the Schedule control.
 
@@ -89,7 +89,7 @@ Click the print button to render the following output.
 
 Figure 122 : Schedule with Print window
 
-##Appointment Print
+## Appointment Print
 
 * In Schedule control, you can print the appointment alone by using context menu. Add print as menu item in the context menu settings as in the following code example. 
 

@@ -32,6 +32,6 @@ In above mentioned code example, PrefixIcon property is used and the icon that i
 The output of the above,
 
 ![](RTL-support_images/RTL-support_img1.png) 
-{:.image }
+
 
 

@@ -127,8 +127,7 @@ In the ASPX page, add an elements to configure TreeView.
 
 
 
-{ ![](Hierarchical-data-with-Editing-cut-copy-paste_images/Hierarchical-data-with-Editing-cut-copy-paste_img1.png) | markdownify }
-{:.image }
+ ![](Hierarchical-data-with-Editing-cut-copy-paste_images/Hierarchical-data-with-Editing-cut-copy-paste_img1.png) 
 
 
 

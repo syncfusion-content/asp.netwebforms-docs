@@ -9,7 +9,8 @@ documentation: ug
 
 # Custom Label
 
-Custom label provides information about the members associated behind each OlapGauge. You can define multiple labels for OlapGauge and it can be positioned along X and Y co-ordinates based on location settings.
+Custom label provides information about the members associated behind each OlapGauge. You can define multiple labels for 
+OlapGauge and it can be positioned along X and Y co-ordinates based on location settings.
 
 
 

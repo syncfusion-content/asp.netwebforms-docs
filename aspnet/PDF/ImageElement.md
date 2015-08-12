@@ -9,15 +9,17 @@ documentation: ug
 
 # ImageElement
 
-ImageElement is used to render images in the page of the PDF document. It can also support replacing images; HTML to image and PDF to image. These are explained in the following topics.
+ImageElement is used to render images in the page of the PDF document. It can also support replacing images; HTML to image and 
+PDF to image. These are explained in the following topics.
 
 ![](ImageElement_images/ImageElement_img1.png)
-{:.image }
+
 
 
 ## Insert image into the PDF pages
 
-Adobe PDF supports several image formats and various masking techniques to create high quality reports. Essential PDF supports both raster and vector images. The supported image formats are gas follows:
+Adobe PDF supports several image formats and various masking techniques to create high quality reports. Essential PDF supports 
+both raster and vector images. The supported image formats are gas follows:
 
 * Bmp
 * Jpeg
@@ -26,22 +28,29 @@ Adobe PDF supports several image formats and various masking techniques to creat
 * Tif
 * Emf, EMF plus and EMF plus Dual
 
-Essential PDF provides you support for loading image streams, files on disk, and System.Drawing.Bitmap objects. You can resize and insert the images into a PDF document at the required size. Also advanced features such as transparency and soft masking are supported.
+Essential PDF provides you support for loading image streams, files on disk, and System.Drawing.Bitmap objects. You can resize 
+and insert the images into a PDF document at the required size. Also advanced features such as transparency and soft masking are
+supported.
 
-Images are supported through the PdfImage class that is an abstract base class that provides the common functionality for PdfBitmap and PdfMetafile classes. There are static methods in PdfImage providing the capability to create a PdfImage instance from different sources.
+Images are supported through the PdfImage class that is an abstract base class that provides the common functionality for 
+PdfBitmap and PdfMetafile classes. There are static methods in PdfImage providing the capability to create a PdfImage 
+instance from different sources.
 
-> _Note: Image quality is 100 by default, which increases the resultant file size and quality. Reducing the quality will reduce the file size._
+
+Note: Image quality is 100 by default, which increases the resultant file size and quality. Reducing the quality will reduce 
+the file size.
 
 ### Working with Bitmap
 
-PdfBitmap class provides functionality of raster images described above. Masks and alpha channels are supported. There are two different kinds of masks: color mask that is implemented by the PdfColorMask class, and image mask that is implemented by the PdfImageMask class. Masks are set by using the Maskproperty of the PdfBitmap object.
+PdfBitmap class provides functionality of raster images described above. Masks and alpha channels are supported. There are two 
+different kinds of masks: color mask that is implemented by the PdfColorMask class, and image mask that is implemented by the 
+PdfImageMask class. Masks are set by using the Maskproperty of the PdfBitmap object.
 
 DrawImage method of the PdfGraphics class draws a given image at a specified location and contains parameters that provide control over the image alignment and scaling.
 
 {% highlight c# %}
 
 [C#]
-
 
 
 //Creates a new PDF document.
@@ -112,13 +121,13 @@ doc.Close(True)
 
 ## Working with TIFF
 
-Essential PDF provides you the ability to convert single page or multipage TIFF file into PDF document. When you render a MultiFrame image (Gif, Tif), only the active frame of the image is rendered. The following code illustrates how to draw multipage tiff files using Essential PDF API.
+Essential PDF provides you the ability to convert single page or multipage TIFF file into PDF document. When you render a 
+MultiFrame image (Gif, Tif), only the active frame of the image is rendered. The following code illustrates how to draw 
+multipage tiff files using Essential PDF API.
 
 {% highlight c# %}
 
 [C#]
-
-
 
 // Creates a new instance of PdfDocument class.
 

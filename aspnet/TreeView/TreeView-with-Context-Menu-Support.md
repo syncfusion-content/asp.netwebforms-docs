@@ -251,8 +251,8 @@ Define the events in the script as follows.
 
 
 
-{ ![](TreeView-with-Context-Menu-Support_images/TreeView-with-Context-Menu-Support_img1.png) | markdownify }
-{:.image }
+![](TreeView-with-Context-Menu-Support_images/TreeView-with-Context-Menu-Support_img1.png) 
+
 
 
 

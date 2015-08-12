@@ -9,11 +9,16 @@ documentation: ug
 
 # Bookmarks
 
-To ease navigation in large documents, PDF files can display a document outline in the viewer, allowing you to navigate from one page to another. The document outline consists of a tree like hierarchy of bookmark items. This tree serves as a visual table of content displaying the structure of the document. Each node in the outline can be opened or closed with the mouse. When a node is open, its immediate children are displayed. Each child can be opened or closed revealing further the parts of the hierarchy. When an item is clicked, the viewer displays the destination page associated with the item.
+To ease navigation in large documents, PDF files can display a document outline in the viewer, allowing you to navigate from one
+page to another. The document outline consists of a tree like hierarchy of bookmark items. This tree serves as a visual table of
+content displaying the structure of the document. Each node in the outline can be opened or closed with the mouse. When a node 
+is open, its immediate children are displayed. Each child can be opened or closed revealing further the parts of the hierarchy. 
+When an item is clicked, the viewer displays the destination page associated with the item.
 
 ## Adding bookmarks
 
-Essential PDF allows you to add bookmarks to the newly created PDF document and also to the existing PDF documents. The Add () method of PdfBookmarkBase collection class adds the bookmark to the document.
+Essential PDF allows you to add bookmarks to the newly created PDF document and also to the existing PDF documents. The Add() 
+method of PdfBookmarkBase collection class adds the bookmark to the document.
 
 {% highlight c# %}
 
@@ -88,10 +93,10 @@ document.Save("Output.pdf");
 document.Close();
 
 {% endhighlight  %}
+
 {% highlight vbnet %}
 
 [VB]
-
 
 
 'Creates a new document.
@@ -162,14 +167,17 @@ document.Close()
 
 {% endhighlight  %}
 
-We can add new bookmarks to an existing document at any location such as in the front, middle, or at the end of the bookmarks tree. When loading an existing document, the Essential PDF loads all bookmarks of the document. Each loaded bookmark is represented by the PdfLoadedBookmark class, inherited from the PdfBookmark class. You can access the root collection of document bookmarks by using the Bookmark property of the PdfLoadedDocument class. This collection is represented by the PdfBookmarkBase class.
+We can add new bookmarks to an existing document at any location such as in the front, middle, or at the end of the bookmarks 
+tree. When loading an existing document, the Essential PDF loads all bookmarks of the document. Each loaded bookmark is 
+represented by the PdfLoadedBookmark class, inherited from the PdfBookmark class. You can access the root collection of document
+bookmarks by using the Bookmark property of the PdfLoadedDocument class. This collection is represented by the PdfBookmarkBase 
+class.
 
 The following code example illustrates how to insert new bookmarks in the existing PDF document.
 
 {% highlight c# %}
 
 [C#]
-
 
 
 //Creates a new document.
@@ -222,9 +230,11 @@ document.Close()
 
 {% endhighlight %}
 
+
 ## Modifying bookmarks
 
-Essential PDF allows you to modify the bookmarks in the existing PDF document. The Bookmarks can be modified in the following ways.
+Essential PDF allows you to modify the bookmarks in the existing PDF document. The Bookmarks can be modified in the following 
+ways.
 
 * Change the bookmark style, color, title, and destination.
 * Add or insert new bookmarks into the root collection.
@@ -262,6 +272,7 @@ document.Save("Output.pdf");
 document.Close();
 
 {% endhighlight %}
+
 {% highlight vbnet %}
 
 [VB]
@@ -298,7 +309,7 @@ document.Close()
 
 Essential PDF allows you to add action to the specific bookmarks. You can perform action by clicking the bookmarks at the run time. You can add predefined actions to the bookmarks using the following classes.
 
-_Table25: Class Table_
+Table25: Class Table
 
 <table>
 <tr>
@@ -333,7 +344,6 @@ The following code sample illustrates you on how to add action to bookmarks.
 {% highlight c# %}
 
 [C#]
-
 
 
 //Creates a new document.
@@ -389,7 +399,6 @@ document.Close();
 [VB]
 
 
-
 'Creates a new document.
 
 Dim document As New PdfDocument()
@@ -438,7 +447,8 @@ document.Close()
 
 {% endhighlight %}
 
-### Removing a bookmarks 
+
+## Removing a bookmarks 
 
 You can also remove bookmarks from the existing PDF document by using the following methods of the PdfBookmarkBase class.
 
@@ -448,7 +458,6 @@ You can also remove bookmarks from the existing PDF document by using the follow
 {% highlight c# %}
 
 [C#]
-
 
 
 //Loads the PDF document.
@@ -478,8 +487,6 @@ document.Close();
 {% highlight vbnet %}
 
 [VB]
-
-
 
 'Loads the PDF document.
 

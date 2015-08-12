@@ -231,7 +231,7 @@ There are two different passwords to encrypt a document.
 
 3.
 
-_Note: Password protection of a workbook file is different from the workbook structure and window protection that you can set in the Protect Workbook dialog box._
+Note: Password protection of a workbook file is different from the workbook structure and window protection that you can set in the Protect Workbook dialog box.
 
 Read-Only Recommended-This option prompts read-only recommendation when you open the file to remind that the data is important and should not be changed. This can be set with or without a password to open the file.
 
@@ -293,7 +293,7 @@ workbook.ReadOnlyRecommended= true
 Now, the encrypted workbook can be saved. Refer to Saving Excel Workbook section for more details. To know more on how to open an encrypted document, refer to Open Encrypted Workbook section.
 
 
-_Note: Essential XlsIO supports default encryption of the type "Office97-2000 compatible", and does not support weak and strong encryption types._
+Note: Essential XlsIO supports default encryption of the type "Office97-2000 compatible", and does not support weak and strong encryption types.
 
 ### Encryption and Decryption for Excel 97to2003
 
@@ -317,6 +317,7 @@ workbook.SaveAs("Sample.csv", ",", response, ExcelDownloadType.Open, ExcelHttpCo
 
 //Streams the CSV file to the client browser and prompts Save dialog box.
 workbook.SaveAs("Sample.csv", ",", response, ExcelDownloadType.PromptDialog, ExcelHttpContentType.CSV);
+
 {% endhighlight %}
 
 {% highlight vbnet %}

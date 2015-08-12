@@ -269,7 +269,7 @@ document.Save("Sample.pdf")
 
 {% endhighlight %}
 
-### Toggle the visibility of the layer
+## Toggle the visibility of the layer
 
 You can toggle the visibility of the PdfLayer when printing the PDF document using the PdfPrintState class and it has following three options.
 

@@ -11,7 +11,7 @@ documentation: ug
 
 ### Angular Binding
 
-AngularJS is a JavaScript framework. It is added to an HTML page with a &lt;script&gt; tag. It extends HTML attributes with directives, and binds data to HTML with expressions. AngularJS directives allow you to specify custom and reusable HTML tags that moderate the behavior of certain elements.
+AngularJS is a JavaScript framework. It is added to an HTML page with a <script> tag. It extends HTML attributes with directives, and binds data to HTML with expressions. AngularJS directives allow you to specify custom and reusable HTML tags that moderate the behavior of certain elements.
 
 Angular binding uses directives to plug its action into the page. Directives, all prefaced with ng-, are placed in HTML attributes. To know more about Angular binding refer to the following link,
 
@@ -107,8 +107,8 @@ In the above code example, “ng-app” is a directive that is used to declare a
 
 
 
-{ ![](Integration_images/Integration_img1.png) | markdownify }
-{:.image }
+![](Integration_images/Integration_img1.png) 
+
 
 
 ### Knockout Binding
@@ -211,8 +211,8 @@ The following example depicts the way to bind data to the TreeView control throu
 
 
 
-{ ![](Integration_images/Integration_img2.png) | markdownify }
-{:.image }
+ ![](Integration_images/Integration_img2.png) 
+
 
 
 

@@ -53,6 +53,6 @@ You can enable toolbar for TreeGrid, using the following code example.
 The following screenshot displays the toolbar option in TreeGrid control
 
 ![](Toolbar_images/Toolbar_img1.png) 
-{:.image }
+
 
 

@@ -344,7 +344,7 @@ In an ASPX page, define the Splitter control and add the contents correspondingl
 
 Define CSS class for customizing the Splitter.
 
-
+{% highlight css %}
 
         .customCSS {           
 
@@ -395,7 +395,7 @@ Define CSS class for customizing the Splitter.
 
 
 
-
+ {% endhighlight %}
 
 
 The output for Splitter after customizing the CSS class.

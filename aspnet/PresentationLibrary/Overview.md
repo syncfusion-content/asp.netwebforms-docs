@@ -23,7 +23,9 @@ Important features of Essential Presentation are as follows.
 * Support to export the Presentation as PDF file.
 
 
-_The current version of Essential Presentation is in preview. It does not support some features in MS PowerPoint such as Word Art, Smart Art, Notes slide, editing Master slides, Animations, Transitions, Comment, Header & Footer, Ole Object, creation & editing of Handouts, equations, built-in themes & its variants._ 
+The current version of Essential Presentation is in preview. It does not support some features in MS PowerPoint such as 
+Word Art, Smart Art, Notes slide, editing Master slides, Animations, Transitions, Comment, Header & Footer, Ole Object, 
+creation & editing of Handouts, equations, built-in themes & its variants.
 
 ## System Requirement
 

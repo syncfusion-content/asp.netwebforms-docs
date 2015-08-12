@@ -122,6 +122,6 @@ The following screenshot displays the output of the above code example.
 
 
 { ![](Customizing-the-scroll-Step_images/Customizing-the-scroll-Step_img1.png) | markdownify }
-{:.image }
+
 
 

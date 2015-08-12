@@ -229,8 +229,8 @@ Define JavaScript for customizing the TreeView
 
 
 
-{ ![](Accessibility_images/Accessibility_img1.png) | markdownify }
-{:.image }
+![](Accessibility_images/Accessibility_img1.png) 
+
 
 
 

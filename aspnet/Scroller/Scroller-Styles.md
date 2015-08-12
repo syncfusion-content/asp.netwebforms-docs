@@ -144,6 +144,6 @@ Define the style for Scroller control
 The following screenshot displays the output of the above code example.
 
 { ![C:/Users/labuser/Desktop/scroller.png](Scroller-Styles_images/Scroller-Styles_img1.png) | markdownify }
-{:.image }
+
 
 

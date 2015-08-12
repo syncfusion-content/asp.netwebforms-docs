@@ -28,7 +28,7 @@ The following code example shows you how to bind the Hierarchical local data int
 
 
 
-{% highlight html %}
+{% highlight C# %}
 
 TreeGrid.aspx.cs
 
@@ -238,7 +238,9 @@ namespace WebSampleBrowser.TreeGrid
 
 }
 
+{% endhighlight %} 
 
+{% highlight xml %}
 
 TreeGrid.aspx
 
@@ -325,7 +327,7 @@ TreeGrid.aspx
 The output of the above steps is as follows:
 
  ![](Data-Binding_images/Data-Binding_img1.png)
-{:.image }
+
 
 
 ### Self-Referential Data Binding (Flat Data)
@@ -342,7 +344,7 @@ TreeGrid is rendered from Self-Referential data structures by providing two fiel
 
 
 
-{% highlight html %}
+{% highlight c# %}
 
 TreeGrid.aspx.cs
 
@@ -582,7 +584,9 @@ namespace WebSampleBrowser.TreeGrid
 
 TreeGrid.aspx
 
+{% endhighlight %} 
 
+{% highlight xml %}
 
 <%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Samplebrowser.Master" CodeBehind="TreeGridDefault.aspx.cs" Inherits="WebSampleBrowser.TreeGrid.TreeGridDefault" %>
 
@@ -663,7 +667,7 @@ TreeGrid.aspx
 The following screenshot shows the output of the above steps,
 
 ![](Data-Binding_images/Data-Binding_img2.png) 
-{:.image }
+
 
 
 

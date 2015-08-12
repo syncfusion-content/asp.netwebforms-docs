@@ -115,6 +115,6 @@ Run the code example, press Alt + J to focus on the TimePicker control that enab
 
 
 ![](Keyboard-Interaction_images/Keyboard-Interaction_img1.png) 
-{:.image }
+
 
 

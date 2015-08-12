@@ -177,8 +177,8 @@ Define CSS class for customizing the TreeView.
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) | markdownify }
-{:.image }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
+
 
 
 ### Adjusting TreeView Size
@@ -305,8 +305,8 @@ In the ASPX page, add elements to configure TreeView.
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) | markdownify }
-{:.image }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
+
 
 
 #### Width
@@ -429,8 +429,8 @@ In the ASPX page, add elements to configure TreeView.
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) | markdownify }
-{:.image }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
+
 
 
 

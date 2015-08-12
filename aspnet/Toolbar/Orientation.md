@@ -45,7 +45,7 @@ Build and run the application.
 The following screenshot displays the Toolbar output with a horizontal orientation.
 
  ![](Orientation_images/Orientation_img1.png) 
-{:.image }
+
 
 
 ## Vertical
@@ -71,6 +71,6 @@ This property sets the Toolbar in vertical orientation. Add the following code e
 The following screenshot displays the Toolbar output with a vertical orientation.
 
  ![](Orientation_images/Orientation_img2.png) 
-{:.image }
+
 
 

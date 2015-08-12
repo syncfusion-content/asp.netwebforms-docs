@@ -34,7 +34,7 @@ Device color space simply describes the range of colors that a camera can see, a
 * DeviceRGB
 * DeviceCMYK
 
-> _Note: This property does not convert the entire document into different color spaces. It will also not have any impact on pages that have been created before the property value had changed. It just chooses the color space for pages created after the alteration._
+Note: This property does not convert the entire document into different color spaces. It will also not have any impact on pages that have been created before the property value had changed. It just chooses the color space for pages created after the alteration.
 
 ### CIE-based Color Spaces
 
@@ -759,7 +759,7 @@ pdfDocument.Close(True)
 
 {% endhighlight %}
 
-> _Note: You can change the color space as many times as you wish, however, you cannot alternate the color space for objects that have saved before._
+Note: You can change the color space as many times as you wish, however, you cannot alternate the color space for objects that have saved before.
 
 Barcode
 
@@ -2156,10 +2156,10 @@ document.Save("Output.pdf");
 document.Close();
 
 {% endhighlight  %}
+
 {% highlight vbnet  %}
 
 [VB]
-
 
 
 'Creates a new document with PDF/A standard.
@@ -2212,6 +2212,7 @@ document.Save("Output.pdf")
 
 document.Close()
 {% endhighlight  %}
+
 ## Launch Action 
 
 Launch action allows execution of an external application or file.
@@ -2219,7 +2220,6 @@ Launch action allows execution of an external application or file.
 {% highlight c#  %}
 
 [C#]
-
 
 
 //Creates a new document with PDF/A standard.
@@ -2263,10 +2263,10 @@ document.Save("Output.pdf");
 document.Close();
 
 {% endhighlight  %}
+
 {% highlight vbnet  %}
 
 [VB]
-
 
 
 'Creates a new document with PDF/A standard.
@@ -2313,7 +2313,8 @@ document.Close()
 
 ## Named Action
 
-Named action allows execution of predefined PDF actions. The following predefined PDF actions are available: go to next page, go to prev page, go to first page, and go to last page. 
+Named action allows execution of predefined PDF actions. The following predefined PDF actions are available: go to next page, 
+go to prev page, go to first page, and go to last page. 
 
 {% highlight c#  %}
 
@@ -2367,11 +2368,11 @@ document.Save("Output.pdf");
 
 document.Close();
 
-{% endhighlight  %}
+{% endhighlight  %} 
+
 {% highlight vbnet  %}
 
 [VB]
-
 
 
 'Creates a new document with PDF/A standard.
@@ -2417,6 +2418,7 @@ document.Actions.AfterOpen = namedAction
 document.Save("Output.pdf")
 
 document.Close()
+
 {% endhighlight  %}
 
 ## Submit Action
@@ -2490,10 +2492,10 @@ document.Save("Output.pdf");
 document.Close();
 
 {% endhighlight   %}
+
 {% highlight vbnet  %}
 
 [VB]
-
 
 
 'Creates a PDF document.
@@ -2626,10 +2628,11 @@ document.Save("Output.pdf");
 
 document.Close();
 
-{% endhighlight  %}
-{% highlight vbnet  %}
-[VB]
+{% endhighlight  %} 
 
+{% highlight vbnet  %}
+
+[VB]
 
 
 'Creates a PDF document.

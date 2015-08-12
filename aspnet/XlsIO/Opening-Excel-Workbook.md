@@ -80,7 +80,7 @@ Dim application As IApplication = excelEngine.Excel
 'Opens the workbook as file.
 Dim workbook As IWorkbook = application.Workbooks.Open("Sample.xls", ExcelOpenType.Automatic)
 
-
+{% endhighlight %}
 
 ### Opening a Workbook as a file in WinRT
 

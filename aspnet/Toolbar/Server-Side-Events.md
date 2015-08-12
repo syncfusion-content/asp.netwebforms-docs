@@ -23,7 +23,9 @@ Arguments</td></tr>
 <td>
 OnItemClick</td><td>
 Triggered when the toolbar item is clicked</td><td>
-e.Status-Status of the Toolbare.EventType – Event Namee.Arguments – Contain keys and value of the Toolbar</td></tr>
+e.Status-Status of the Toolbar
+e.EventType – Event Name
+e.Arguments – Contain keys and value of the Toolbar</td></tr>
 </table>
 
 

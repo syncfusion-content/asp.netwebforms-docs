@@ -21,7 +21,12 @@ Argument Details</td></tr>
 <td>
 OnTabItemActive</td><td>
 It raises when Active Tab is changed.</td><td>
-Event Argument contains the following parameters:e.NewSelectedItem - Current Selected index value.e.OldSelectedItem - Previous index value.e.EventType - Event Namee.Arguments - Contain keys and values for prevActiveIndex and ActiveIndex.</td></tr>
+Event Argument contains the following parameters:
+e.NewSelectedItem - Current Selected index value.
+e.OldSelectedItem - Previous index value.
+e.EventType - Event Name
+e.Arguments - Contain keys and values for prevActiveIndex and ActiveIndex.
+</td></tr>
 </table>
  In the ASPX page, add the Tab control to configure Tab events.
 

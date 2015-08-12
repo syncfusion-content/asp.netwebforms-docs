@@ -495,7 +495,7 @@ In an ASPX page, add the following code example and set the AnimationSpeed prop
 
 {% endhighlight %}
 
-## Delay
+### Delay
 
 This property sets the delay between the Rotator Items to move after the slide transition. The default value is 500. The value set to this property is string or number.
 

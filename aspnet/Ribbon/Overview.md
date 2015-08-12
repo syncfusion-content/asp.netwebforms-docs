@@ -11,7 +11,7 @@ documentation: ug
 
 The _Ribbon_ control for _ASP.NET_ provides ribbons with rich customizable user interfaces like Office 2010, SharePoint 2010, and Office Web Apps 2010. The important features available in the _Ribbon_ control for _ASP.NET_ areApplication Tab, Contextual tab and Tab set, Group expander, Control separator, Expand/Collapse and Controls support such as Button, Split Button, DropdownList, Toggle button, Gallery and Custom controls. The Ribbon Tab appears across the top of the page. Each tab organizes a set of groups that has labels to identify them and also contains a set of controls and group expander.
 
-##Key Features
+## Key Features
 
 Some of the important features of the _Ribbon_ control for _ASP.NET_ are:
 

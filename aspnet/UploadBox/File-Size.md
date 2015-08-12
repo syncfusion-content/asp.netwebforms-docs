@@ -33,7 +33,7 @@ In the ClientSideOnError event display, an alert message is displayed when the f
 
 {% endhighlight %}
 
-> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
+Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 The following screenshot displays the UploadBox control with customized file size.
 
@@ -95,7 +95,8 @@ maxAllowedContentLength specifies the maximum length of content in a request sup
 
 </configuration>
 
-> Note:  maxRequestLength is measured in kilobytes.
+Note:  maxRequestLength is measured in kilobytes.
+
 {% highlight html %}
 <system.webServer>
 
@@ -112,18 +113,18 @@ maxAllowedContentLength specifies the maximum length of content in a request sup
 </system.webServer>
 {% endhighlight %}
 
-> Note: maxAllowedContentLength is measured in bytes.
+Note: maxAllowedContentLength is measured in bytes.
 
-![](File-Size_images/File-Size_img3.png)'
+![](File-Size_images/File-Size_img3.png)
 
 
 
-> Note: 
-> 
-> * When you configure both maxAllowedContentLength and maxRequestLength attributes, then maxAllowedContentLength can be run. 
-> * When the upload file’s size exceeds maxAllowedContentLength, you get a 404.13 error page.
-> * When the upload file’s size exceeds maxRequestLength value, you get an exception “System.Web.HttpException: Maximum request length exceeded”.
-> * The ASP.NET method of maxRequestLength is greater than or equal to the IIS method of limiting the request length (maxAllowedContentLength).
+Note: 
+
+* When you configure both maxAllowedContentLength and maxRequestLength attributes, then maxAllowedContentLength can be run. 
+* When the upload file’s size exceeds maxAllowedContentLength, you get a 404.13 error page.
+* When the upload file’s size exceeds maxRequestLength value, you get an exception “System.Web.HttpException: Maximum request length exceeded”.
+* The ASP.NET method of maxRequestLength is greater than or equal to the IIS method of limiting the request length (maxAllowedContentLength).
 
  
 

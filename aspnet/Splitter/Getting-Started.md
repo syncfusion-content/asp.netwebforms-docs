@@ -131,6 +131,7 @@ Add the following code example to the corresponding ASPX page to render Split
 
 Add the following styles to show the Splitter control in horizontal order.
 
+
        #outterSplitter
 
         {

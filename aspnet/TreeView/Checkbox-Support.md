@@ -127,8 +127,8 @@ In the ASPX page, add an element to configure TreeView.
 
 
 
-{ ![](Checkbox-Support_images/Checkbox-Support_img1.png) | markdownify }
-{:.image }
+![](Checkbox-Support_images/Checkbox-Support_img1.png) 
+
 
 
 ### Auto Check Parent Node

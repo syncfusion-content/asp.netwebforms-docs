@@ -99,11 +99,13 @@ In an ASPX page, add the following code example and set the StopOnHover property
 
 //Refers to the Local Data section for style and data bound for rotator items.
 
+{% highlight html %}
 
 
-<ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" SlideHeight="350px" EnableAutoPlay="true" StopOnHover="true" DataCaptionField="Caption" DataUrlField="Url"></ej:Rotator>
+<ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" SlideHeight="350px" EnableAutoPlay="true" StopOnHover="true" DataCaptionField="Caption" DataUrlField="Url">
+</ej:Rotator>
 
-
+{% endhighlight %}
 
 ## Pager settings
 
@@ -246,7 +248,7 @@ The following screenshot displays the output of the above code example.
 
 ### Show caption
 
-When the Rotator Item is an image, you can specify a caption for the Rotator Item. The caption text for each Rotator Item is set by using the title attribute of the respective &lt;image&gt; tag. The caption cannot be displayed when multiple Rotator Items are present. The default value is false. The value set to this property is Boolean.
+When the Rotator Item is an image, you can specify a caption for the Rotator Item. The caption text for each Rotator Item is set by using the title attribute of the respective <image> tag. The caption cannot be displayed when multiple Rotator Items are present. The default value is false. The value set to this property is Boolean.
 
 In an ASPX page, add the following code example and set the ShowCaption property to true.
 

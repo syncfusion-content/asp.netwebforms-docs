@@ -90,9 +90,9 @@ The following screenshot displays the Minimum and Maximum values.
 
 
 
-## Appearance and Styling
+### Appearance and Styling
 
-### Adjusting ProgressBar size
+#### Adjusting ProgressBar size
 
 ProgressBar control provides ability to change/adjust the bar size. The Height and Width property allows you to set the maximum height and maximum width for the ProgressBar. The value set to this property should be stringtype.
 
@@ -162,7 +162,7 @@ By default, there are 13 themes supported by the ProgressBar control,
 * gradient-saffron
 * gradient-saffron-dark
 
-## CSS class
+### CSS class
 
 
 To apply custom styles to the ProgressBar control, specify the CssClass property. The specified CSS name is added to the root of the ProgressBar control.

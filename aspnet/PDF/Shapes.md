@@ -33,7 +33,7 @@ Each set of methods accepts parameters specific to each primitive type (for exam
 * If brush is used, the primitive are filled. 
 
 
-> _Note: You must add the Syncfusion.Pdf.Graphics namespace to work with graphic objects._ 
+Note: You must add the Syncfusion.Pdf.Graphics namespace to work with graphic objects.
 
 
 The following code example illustrates how to draw shapes.
@@ -77,12 +77,12 @@ page.Graphics.DrawPolygon(pen, PdfBrushes.Green, points);
 //Saves the PDF.
 
 doc.Save("Shapes.pdf");
+
 {% endhighlight  %}
+
 {% highlight vbnet %}
 
 [VB]
-
-
 
 'Creates a document.
 
@@ -126,8 +126,6 @@ You can paginate the element as follows.
 
 [C#]
 
-
-
 //Creates a document.
 
 PdfDocument doc = new PdfDocument();
@@ -162,13 +160,11 @@ ellipse.Draw(page, 20, 20, format);
 
 doc.Save("Shapes.pdf");
 
-
 {% endhighlight  %}
+
 {% highlight vbnet %}
 
 [VB]
-
-
 
 'Creates a Document.
 
@@ -203,6 +199,5 @@ ellipse.Draw(page, 20, 20, format)
 'Saves the PDF.
 
 doc.Save("Shapes.pdf")
-
 
 {% endhighlight  %}

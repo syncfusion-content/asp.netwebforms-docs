@@ -16,7 +16,7 @@ The following section explains you how to customize the Toolbar control for a�
 Here, the Toolbar consists a title and a text area as PDF Reader.
 
  ![http://help.syncfusion.com/ug/js/ImagesExt/image33_11.png](Getting-Started_images/Getting-Started_img1.png) | 
-{:.image }
+
 
 
 
@@ -44,7 +44,7 @@ You can create an ASP.NET Project and add necessary Dll and script with the 
 The following output is displayed.
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image33_12.jpg](Getting-Started_images/Getting-Started_img2.jpeg) 
-{:.image }
+
 
 
 
@@ -164,7 +164,7 @@ Apply the styles specified in the code table to show the Toolbar itemsas follow
  Run the above code to render a Toolbar with a list of Toolbar items. 
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image33_13.png](Getting-Started_images/Getting-Started_img3.png) 
-{:.image }
+
 
 
 Render remaining Toolbar Items
@@ -482,7 +482,7 @@ Set the Zoom value as it is one of the items in the Toolbar. You need to rende
 Run the above code to render the Toolbar items with separator.
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image33_14.png](Getting-Started_images/Getting-Started_img4.png) 
-{:.image }
+
 
 
 Add Actions to Toolbar Items
@@ -594,7 +594,7 @@ Refer to the following code example to design the PDF header and content area
 Run the above code example to render the PDF Reader as follows.
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image33_15.png](Getting-Started_images/Getting-Started_img5.png) 
-{:.image }
+
 
 
 
