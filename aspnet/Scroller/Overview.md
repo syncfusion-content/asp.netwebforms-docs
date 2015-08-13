@@ -1,11 +1,14 @@
 ---
 layout: post
-title: Key-Features
-description: key features
+title: Overview
+description: overview
 platform: aspnet
 control: Overview
 documentation: ug
 ---
+
+# Overview 
+The Essential ASP.NET Scroller control has a sliding document whose position corresponds to a value. The document has text, HTML content or images. You can also customize the Scroller control by resizing the scrolling bar and changing the theme.
 
 ## Key Features
 
