@@ -59,7 +59,7 @@ Custom labels collection is directly added to the scale object. Refer the follow
 
 
 
-  ~~~ html
+{% highlight html %}
 
         <%--For Circular Gauge rendering-- %>
 
@@ -90,8 +90,7 @@ Custom labels collection is directly added to the scale object. Refer the follow
         </ej:CircularGauge>
 
 
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
 	
 Execute the above code to render the following output.
 
@@ -166,7 +165,7 @@ Execute the above code to render the following output.
   
 * When a custom label is to be displayed as an Outer Custom Label, set the API customLabelType as Outer. Refer to the following code example to get the Outer Custom Label.
 
-  ~~~ html
+{% highlight html %}
 
 
 
@@ -223,8 +222,7 @@ Execute the above code to render the following output.
 
         </ej:circulargauge>
 
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
 
 Execute the above code to render the following output.
 

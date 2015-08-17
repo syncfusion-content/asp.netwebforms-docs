@@ -158,108 +158,101 @@ The following screenshot displays a Chart series:
 You can add JSON data to the Chart using the datasource property in Chart.
 
 
-{% highlight c# %}
+{% highlight c# %}       
 
+	List<chartData> data = new List<chartData>();
 
-        [cs]
+	data.Add(new chartData("Jan", 42, 27, 3.03));
 
-            List<chartData> data = new List<chartData>();
+	data.Add(new chartData("Feb", 44, 28, 2.48));
 
+	data.Add(new chartData("Mar", 53, 35, 3.23));
 
+	data.Add(new chartData("Apr", 64, 44, 3.15));
 
-            data.Add(new chartData("Jan", 42, 27, 3.03));
+	data.Add(new chartData("May", 75, 54, 4.13));
 
-            data.Add(new chartData("Feb", 44, 28, 2.48));
+	data.Add(new chartData("Jun", 83, 63, 3.23));
 
-            data.Add(new chartData("Mar", 53, 35, 3.23));
+	data.Add(new chartData("Jul", 87, 68, 4.13));
 
-            data.Add(new chartData("Apr", 64, 44, 3.15));
+	data.Add(new chartData("Aug", 84, 66, 4.88));
 
-            data.Add(new chartData("May", 75, 54, 4.13));
+	data.Add(new chartData("Sep", 78, 59, 3.82));
 
-            data.Add(new chartData("Jun", 83, 63, 3.23));
+	data.Add(new chartData("Oct", 67, 48, 3.07));
 
-            data.Add(new chartData("Jul", 87, 68, 4.13));
+	data.Add(new chartData("Nov", 55, 38, 2.83));
 
-            data.Add(new chartData("Aug", 84, 66, 4.88));
+	data.Add(new chartData("Dec", 45, 29, 2.8));
 
-            data.Add(new chartData("Sep", 78, 59, 3.82));
+	this.Chart1.DataSource = data;
 
-            data.Add(new chartData("Oct", 67, 48, 3.07));
+	this.Chart1.DataBind();
 
-            data.Add(new chartData("Nov", 55, 38, 2.83));
+	public class chartData
 
-            data.Add(new chartData("Dec", 45, 29, 2.8));
+		{
 
+			public chartData(string xval, double yvalue1, double yvalue2, double yvalue3)
 
+			{
 
-            this.Chart1.DataSource = data;
+				this.Xmonth = xval;
 
-            this.Chart1.DataBind();
+				this.Precipitation = yvalue1;
 
-public class chartData
+				this.Low = yvalue2;
 
-    {
-
-        public chartData(string xval, double yvalue1, double yvalue2, double yvalue3)
-
-        {
-
-            this.Xmonth = xval;
-
-            this.Precipitation = yvalue1;
-
-            this.Low = yvalue2;
-
-            this.High = yvalue3;
+				this.High = yvalue3;
 
 
 
-        }
+			}
 
-        public string Xmonth
+			public string Xmonth
 
-        {
+			{
 
-            get;
+				get;
 
-            set;
+				set;
 
-        }
+			}
 
-        public double Precipitation
+			public double Precipitation
 
-        {
+			{
 
-            get;
+				get;
 
-            set;
+				set;
 
-        }
+			}
 
-        public double Low
+			public double Low
 
-        {
+			{
 
-            get;
+				get;
 
-            set;
+				set;
 
-        }
+			}
 
-        public double High
+			public double High
 
-        {
+			{
 
-            get;
+				get;
 
-            set;
+				set;
 
-        }
+			}
 
 
 
-    }
+		}
 
 {% endhighlight %}
 
@@ -281,6 +274,7 @@ public class chartData
    </ej:Chart>
 
 {% endhighlight  %}
+
 The following screenshot displays the Chart when JSON data is added.
 
 

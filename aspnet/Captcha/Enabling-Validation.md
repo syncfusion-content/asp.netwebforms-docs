@@ -24,8 +24,7 @@ In the ASPX page, include the following Captcha control code example for auto va
 {% endhighlight %}
 
 {% highlight c# %}
-
-    [System.Web.Services.WebMethod]   
+  
 	public static string Refresh(Dictionary<object, object> captchaModel)    
 	{	       
       	return Syncfusion.JavaScript.Web.Captcha.GetModel(captchaModel).ExecuteResult();  

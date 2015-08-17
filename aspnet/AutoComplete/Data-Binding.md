@@ -9,8 +9,6 @@ documentation: ug
 
 # Data-Binding
 
-![](Data-Binding_images/Data-Binding_img5.png) 
-
 In order to render the AutoComplete control, the data needs to be bound to it in a proper way. The following sub-properties provide a way to bind, either the local or remote data, to the AutoComplete control, by binding the appropriate data fields to the corresponding options.
 
 ## Fields

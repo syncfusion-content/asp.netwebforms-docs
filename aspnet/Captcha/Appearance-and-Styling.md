@@ -31,8 +31,8 @@ The following screenshot illustrates the Captcha with some of the customized Hat
 
 <table>
 	<tr>
-		<td>{{ '**Hatch Style**' | markdownify }}</td>
-		<td>{{ '**Hatch OutCome Image**' | markdownify }}</td>
+		<th>Hatch Style</th>
+		<th>Hatch OutCome Image</th>
 	</tr>
 	<tr>
 		<td>Cross</td>

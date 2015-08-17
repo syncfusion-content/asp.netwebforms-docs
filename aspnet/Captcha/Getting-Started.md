@@ -74,15 +74,10 @@ Add the following handler codes to the web.config file for the Captcha rendering
 
 </system.webserver>
 
-
-
-Note: Version= {{ site.450esreleaseversion }} - It will vary depend up on .Net frame work version and Essential studio version you have using. If you are using Essential studio version as- {{ site.releaseversion }} and .Net frame work is 4.5 use like following Version= {{ site.450esreleaseversion }}
-
-
-
-
-
 {% endhighlight %}
+
+
+> Note: Version= site.450esreleaseversion  - It will vary depend up on .Net frame work version and Essential studio version you have using. If you are using Essential studio version as- {{ site.releaseversion }} and .Net frame work is 4.5 use like following Version= site.450esreleaseversion
 
 
 
@@ -117,10 +112,6 @@ This method is used to handle Ajax post when refresh and validation actions are 
 
 {% highlight c# %}
 
-
-
-    [System.Web.Services.WebMethod]
-
     public static string GetCurrentItme(Dictionary<object, object> captchaModel)
 
     {
@@ -128,9 +119,6 @@ This method is used to handle Ajax post when refresh and validation actions are 
         return Syncfusion.JavaScript.Web.Captcha.GetModel(captchaModel).ExecuteResult();
 
     }
-
-
-
 
 
 {% endhighlight %}

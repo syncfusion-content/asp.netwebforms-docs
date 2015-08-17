@@ -15,11 +15,11 @@ _Table_ _1_: _Table of Barcode types and supported character_
 
 <table>
 <tr>
-<td>
-{{ '**Symbol**' | markdownify }}</td><td>
-{{ '**Enum Value**' | markdownify }}</td><td>
-{{ '**Supported characters**' | markdownify }}</td><td>
-{{ '**Length**' | markdownify }}</td></tr>
+<th>
+Symbol</th><th>
+Enum Value</th><th>
+Supported characters</th><th>
+Length</th></tr>
 <tr>
 <td>
 QR Barcode</td><td>

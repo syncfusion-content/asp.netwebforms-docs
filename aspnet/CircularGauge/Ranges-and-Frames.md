@@ -52,7 +52,7 @@ Range collection is directly added to the scale object. Refer the following code
 
 
 
-  ~~~ html
+{% highlight html %}
 
 
         <%--For Circular Gauge rendering-- %>
@@ -90,8 +90,7 @@ Range collection is directly added to the scale object. Refer the following code
         </ej:CircularGauge>
 
 
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
 
 
 Execute the above code to render the following output.
@@ -106,7 +105,7 @@ Execute the above code to render the following output.
 * You can set the background color to improve the look and feel of the Circular Gauge. For customizing the background color of the ranges, backgroundColor is used.
 
 
-  ~~~ html
+{% highlight html %}
 
         <%--For Circular Gauge rendering-- %>
 
@@ -134,8 +133,7 @@ Execute the above code to render the following output.
 
         </ej:CircularGauge>
 
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
@@ -149,7 +147,7 @@ Execute the above code to render the following output.
 
 
 
-  ~~~ html
+{% highlight html %}
 
 
         <%--For Circular Gauge rendering-- %>
@@ -178,8 +176,7 @@ Execute the above code to render the following output.
 
         </ej:CircularGauge>
 
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
@@ -244,7 +241,7 @@ Execute the above code to render the following output.
 * frameType is used to specify whether frame is a half circle frame or full circle frame. halfCircleFrameStartAngle and halfCircleFrameEndAngle are used to specify the angle for Gauge with frame type as half circle. backgroundUrl is used to set the background image for the frame.
 
 
-  ~~~ html
+{% highlight html %}
 
         <%--For Circular Gauge rendering-- %>
 
@@ -273,8 +270,7 @@ Execute the above code to render the following output.
         </ej:CircularGauge>
 
 
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
 
 
 Execute the above code to render the following output.

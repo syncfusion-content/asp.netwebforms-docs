@@ -16,6 +16,7 @@ In this section you can learn how to change the Chartdimensions. You can change 
 You can specify the width and height in pixels to change the dimension of the Chart. 
 
 ### Setting size
+
 {% highlight html %}
 
 

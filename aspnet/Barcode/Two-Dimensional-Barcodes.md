@@ -17,10 +17,6 @@ Here is the code snippet to create a QR Barcode:
 
 {% highlight html %}
 
-[ASP.NET]
-
-
-
 <div>
 
 <div>

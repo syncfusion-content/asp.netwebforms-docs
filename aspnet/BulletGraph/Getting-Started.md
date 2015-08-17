@@ -37,11 +37,11 @@ In the following screenshot, a BulletGraph is used to compare the actual monsoon
 
 2. Execute the above code to display the BulletGraph. To customize the measure bars in the BulletGraph, you can pass the data either locally or remotely.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+   ![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
-## Provide Required Data
+### Provide Required Data
 
 You can customize the values of feature and comparative measure bars in a BulletGraph, either locally or remotely. The category data is optional, and it is used to display label values parallel to the measure bars. 
 
@@ -123,7 +123,7 @@ Once the DataSource property is assigned with the required values, you can bind 
 
 {% endhighlight  %}
 
-## Set Default and Scale Values
+### Set Default and Scale Values
 
 You can plot any number of measure bars within the BulletGraph by increasing the height and width of the control to locate all the measure bars within the graph. Set the QualitativeRangesize and QuantitativeScaleLength properties according to the following code example.
 
@@ -161,7 +161,7 @@ Minimum, Maximum and Interval values for the QuantitativeScale of the BulletGrap
 
 The above image illustrates the BulletGraph without any ranges displayed in the background.
 
-## Add Qualitative Ranges
+### Add Qualitative Ranges
 
 By default, 3 ranges are displayed in the BulletGraph control during the initial rendering of the control with its default values. To customize it, you can set appropriate values for the RangeEnd and RangeStroke properties.  Any number of QualitativeRanges can be added to the control.
 
@@ -214,7 +214,7 @@ After adding QualitativeRanges to the BulletGraph, the control appears as follow
 
 
 
-## Ticks and Measure Bars Customization
+### Ticks and Measure Bars Customization
 
 You can do the following code changes in the quantitative scale to customize the tick size, the color of the feature bar and the comparative measure symbols.
 {% highlight html %}
@@ -266,7 +266,7 @@ When you customize the ticks and measure bar, the BulletGraph appears as follows
 
 
 
-## Add Caption and Subtitle
+### Add Caption and Subtitle
 
 You can add the following code example to display an appropriate Caption and Subtitle to the BulletGraph.
 
@@ -323,7 +323,7 @@ The following screenshot displays a BulletGraph with a Caption and Subtitle.
 
 
 
-## Show Tooltip
+### Show Tooltip
 
 You can use a Tooltip in your application to display the values of forecasted rainfall, actual rainfall received in millimeter and also the appropriate year. The Tooltip Visible property is set to True to enable the Tooltip option. To set the template Tooltip, you can pass the template id to it as illustrated in the following code example.
 

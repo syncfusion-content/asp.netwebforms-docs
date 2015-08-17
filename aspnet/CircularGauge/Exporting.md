@@ -12,7 +12,7 @@ documentation: ug
 * Circular Gauge has an exporting feature that converts Gauge control into image format and then export in client side. The method API exportImage is used to export the Circular Gauge. 
 * It has two arguments such as file name and file format to specify the file name and file formats. For exporting refer the following code example.
 
-  ~~~ html
+  {% highlight html %}
 
         <asp:Button ID="Button1" runat="server" Text="Button" OnClientClick="buttonclickevent()" />
 
@@ -94,8 +94,8 @@ documentation: ug
 
         </script>
 		
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
+
 Execute the above code to render the following output.
 
  ![](Exporting_images/Exporting_img1.png) 

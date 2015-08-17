@@ -57,7 +57,7 @@ Execute the above code to render the following output.
 * Indicators are of several types such as, circle, rectangle, rounded rectangle, text and image. By using the type property you can avail those shapes. For image type imageUrl property is used. 
 
 
-  ~~~ html
+{% highlight html %}
 
 
         <%--For Circular Gauge rendering-- %>
@@ -98,8 +98,7 @@ Execute the above code to render the following output.
 
         </ej:CircularGauge>
 
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
@@ -112,7 +111,7 @@ Execute the above code to render the following output.
 * The backgroundColor and borderColor sets the appearance behavior for the indicators. For text type indicators you can give value for text. And text can be changed whenever the pointer crosses its state range area. There are many basic font options available for the text in the state range such as size, fontStyle and fontFamily.
 
 
-  ~~~ html
+{% highlight html %}
 
 
         <%--For Circular Gauge rendering-- %>
@@ -149,8 +148,7 @@ Execute the above code to render the following output.
 
         </ej:CircularGauge>
 
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
 
 Execute the above code to render the following output.
 

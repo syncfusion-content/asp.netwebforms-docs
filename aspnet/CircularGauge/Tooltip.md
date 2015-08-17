@@ -18,7 +18,7 @@ documentation: ug
 * ShowLabelTooltip is to enable the Tooltip for labels and showCustomLabelTooltip is for enabling the Tooltip option for customLabels.
 
 
-  ~~~ html
+  {% highlight html %}
 
         <ej:circulargauge runat=”server” id=”circularGaugeTooltip” backgroundcolor=”transparent” enableAnimation=”false”>
 
@@ -68,8 +68,7 @@ documentation: ug
 
         </ej:circulargauge>
 
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
@@ -94,7 +93,7 @@ In Tooltip option, you can customize the Tooltip window by adding the tooltip te
 
 <%-- Defines the tooltip object-- %>
 
-<Tooltip
+<Tooltip>
 
 
 

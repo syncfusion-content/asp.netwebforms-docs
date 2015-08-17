@@ -25,8 +25,6 @@ Add the following Refresh mapper code example to the corresponding CS page.
 
 
 {% highlight c# %}
-    [System.Web.Services.WebMethod]    
-	
 	public static string Refresh(Dictionary<object, object> captchaModel)    {	        
 		return Syncfusion.JavaScript.Web.Captcha.GetModel(captchaModel).ExecuteResult();    
 	}

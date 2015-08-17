@@ -26,7 +26,7 @@ Semi-circular Gauge can be positioned within the canvas element which provides b
   9. Bottomright
 
 
-     ~~~ html
+  {% highlight html %}
 
         <ej:CircularGauge runat="server" ID="SemiCircularGauge" Value="60"
 
@@ -84,8 +84,7 @@ Semi-circular Gauge can be positioned within the canvas element which provides b
 
         </ej:CircularGauge>
 
-     ~~~
-     {:.pretty-print }
+{% endhighlight %}
 
 Execute the above code to render the following output.
 

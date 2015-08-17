@@ -13,18 +13,11 @@ A page or printed media with Barcode often appears colorful in the background an
 
 
 
-Note: This color customization is possible only for one dimensional barcodes and it is not supported for two dimensional barcodes._
+> Note: This color customization is possible only for one dimensional barcodes and it is not supported for two dimensional barcodes.
 
 
 
 {% highlight html %}
-
-Default.aspx
-
-
-
-
-
 
 <div>
 
@@ -55,10 +48,6 @@ The height of the barcode can be changed using the BarHeight property. The equiv
 
 {% highlight html %}
 
-[Default.aspx]
-
-
-
 <div>
 
     <div>
@@ -68,9 +57,6 @@ The height of the barcode can be changed using the BarHeight property. The equiv
     </div>
 
 </div>
-
-
-
 
 
 {% endhighlight %}

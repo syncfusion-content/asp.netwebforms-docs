@@ -28,9 +28,6 @@ Scale collection is directly added to the Gauge object. Refer the following code
 
 {% highlight html %}
 
-
-
-
 <%--For Circular Gauge rendering-- %>
 
 <ej:CircularGauge runat="server" Id="CircularGauge1">
@@ -62,10 +59,7 @@ Execute the above code to render the following output.
 * The Scale border is modified with the object called border. It has two border property namely color and width which are used to customize the border color of the scale and border width of the scale. 
 * Setting the background color improves the look and feel of the Circular Gauge. You can customize the background color of the scale using backgroundColor. 
 
-  ~~~ html
-
-
-
+{% highlight html %}
 
         <%--For Circular Gauge rendering-- %>
 
@@ -91,8 +85,7 @@ Execute the above code to render the following output.
 
         </ej:CircularGauge>
 
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
@@ -106,7 +99,7 @@ Execute the above code to render the following output.
 * Pointer cap is a circular shape element that is located at the center of the Circular Gauge. The pointer cap is one of the cynosure of the Circular Gauge. By customizing the pointer cap, Gauge style is improved. The pointer cap is modified with the object pointerCap. 
 * It contains radius, borderColor, bordrWidth, interiorGradient and backgroundColor properties. The property radius is used to set the radius for the pointer cap. interiorGradient is used to provide the gradient effects to the pointer cap.
 
-  ~~~ html
+{% highlight html %}
 
         <%--For Circular Gauge rendering-- %>
 
@@ -128,8 +121,7 @@ Execute the above code to render the following output.
 
         </ej:CircularGauge>
 
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
@@ -143,7 +135,7 @@ Execute the above code to render the following output.
 * The radius property is used to set the radius value for the circular scale and the size property is used to set the scale bar width. You can also adjust the Opacity of the scale with the property opacity. The value for opacity lies between 0 and 1. You can also give some shadow effects for the scale by using the property shadowOffset. The property startAngle is used to set starting position of the scale at certain angle and sweepAngle is used to shrink or expand the scale to certain angle. 
 
 
-  ~~~ html
+{% highlight html %}
 
 
 
@@ -164,8 +156,7 @@ Execute the above code to render the following output.
 
         </ej:CircularGauge>
 
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
 
 Execute the above code to render the following output.
 

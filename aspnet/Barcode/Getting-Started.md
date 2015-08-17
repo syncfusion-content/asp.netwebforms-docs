@@ -58,10 +58,6 @@ Web.config file is configured according to the referenced assemblies. The steps 
 
 {% highlight xml %}
 
-[Web.Config]
-
-
-
 <system.web>
 
     <compilation>
@@ -80,14 +76,12 @@ Web.config file is configured according to the referenced assemblies. The steps 
 
 </system.web>
 
-
-
 {% endhighlight %}
 
 
 
 
-Note: X.X.X.X in the above code corresponds to the correct version number of the Essential Studio version that you are currently using._
+> Note: X.X.X.X in the above code corresponds to the correct version number of the Essential Studio version that you are currently using.
 
 
 
@@ -100,10 +94,6 @@ Note: X.X.X.X in the above code corresponds to the correct version number of the
 
 
 {% highlight xml %}
-
-[Web.Config]
-
-
 
 <system.web>
 
@@ -130,12 +120,8 @@ Note: X.X.X.X in the above code corresponds to the correct version number of the
 
 
 * Open the Default.aspx file and add the following code in the aspx file for Barcode rendering.
+
 {% highlight html %}
-
-
-[Default.aspx]
-
-
 
 <div>
 
@@ -146,10 +132,6 @@ Note: X.X.X.X in the above code corresponds to the correct version number of the
 </div>
 
 </div>
-
-
-
-
 
 {% endhighlight %}
 

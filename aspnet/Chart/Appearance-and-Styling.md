@@ -14,7 +14,8 @@ Essential Chart is enriched with lots of customization options to develop high q
 ## Tooltip Template
 
 You can customize a tooltip with required template by adding a “div” element with an “id” to the web page and assigning the “id” to the property “Template” under “Tooltip” as illustrated in the following code example.
-{% highlight js %}
+{% highlight html %}
+
 <div id="Tooltip" style="display: none;">
 
 <div id="icon">
@@ -171,7 +172,7 @@ font-weight: bold;
 
 You customize a data label with required template by adding a “div” element with an “id” to the web page and assigning the “id” to the property “Template” under “DataLabel” as illustrated in the following code example.
 
-{% highlight js %}
+{% highlight html %}
 
 <div id="template">
 
@@ -408,11 +409,11 @@ Essential Chart allows you to add background image for your Chart using BackGrou
 
 
 
- <ej:Chart ID="Chart1" runat="server"                                           BackgroundImgUrl="../images/chart/wheat.png">       
+ <ej:Chart ID="Chart1" runat="server"  BackgroundImgUrl="../images/chart/wheat.png">       
 
 
 
-         </ej:Chart
+         </ej:Chart>
 
 
 {% endhighlight %}

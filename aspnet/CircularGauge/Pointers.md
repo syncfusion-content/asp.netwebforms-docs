@@ -105,7 +105,7 @@ Execute the above code to render the following output.
 
 
 
-  ~~~ html
+{% highlight html %}
 
 
         <%--For Circular Gauge rendering-- %>
@@ -132,8 +132,7 @@ Execute the above code to render the following output.
 
         </ej:CircularGauge>
 
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
@@ -149,7 +148,7 @@ Execute the above code to render the following output.
 * And you can also adjust the opacity of the pointer using the property opacity which holds the value between 0 and 1. You can add the gradient effects to the pointer using gradient object.
 
 
-  ~~~ html
+{% highlight html %}
 
 
         <%--For Circular Gauge rendering-- %>
@@ -176,8 +175,7 @@ Execute the above code to render the following output.
 
         </ej:CircularGauge>
 
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
 
 
 
@@ -196,7 +194,7 @@ Execute the above code to render the following output.
 
 
 
-  ~~~ html
+{% highlight html %}
 
         <%--For Circular Gauge rendering-- %>
 
@@ -222,8 +220,8 @@ Execute the above code to render the following output.
 
         </ej:CircularGauge>
 
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
+
 Execute the above code to render the following output.
 
 
@@ -781,7 +779,7 @@ Appearance of the Circular Gaugepointer value text is adjusted by using four pro
 * Auto Angle is used to display the text in certain angle based on pointer position angle.
 * Opacity is used to customize the brightness of the text. 
 
-  ~~~ html
+{% highlight html %}
 
         <%-- Setting basic properties-- %>
 
@@ -875,8 +873,7 @@ Appearance of the Circular Gaugepointer value text is adjusted by using four pro
 
         </ej:CircularGauge>
 
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
 
 Run the above code to render the output as follows.
 

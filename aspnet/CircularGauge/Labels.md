@@ -55,7 +55,7 @@ Execute the above code to render the following output.
 * Font option is also available on the labels. The basic three properties of fonts such as size, family and style can be achieved by size, fontStyle and fontFamily. Labels are two types such as major and minor.Major types labels are for major interval values and minor types labels are for minor interval values. 
 
 
-  ~~~ html
+{% highlight html %}
 
 
         <%--For Circular Gauge rendering-- %>
@@ -92,8 +92,7 @@ Execute the above code to render the following output.
 
         </ej:CircularGauge>
 
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
 
 
 Execute the above code to render the following output.
@@ -107,7 +106,7 @@ Execute the above code to render the following output.
 * Labels can be positioned with the help of two properties such as distanceFromScale and placement. distanceFromScale property defines the distance between the scale and labels.  Placement property is used to locate the labels with respect to scale either inside the scale or outside the scale or along the scale. It is an enumerable data type.
 
 
-  ~~~ html
+{% highlight html %}
 
 
         <%--For Circular Gauge rendering-- %>
@@ -152,8 +151,7 @@ Execute the above code to render the following output.
 
         </ej:CircularGauge>
 
-  ~~~
-  {:.pretty-print }
+{% endhighlight %}
 
 
 Execute the above code to render the following output.

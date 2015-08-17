@@ -555,8 +555,8 @@ Execute the above code to render the following output.
   2. maximum 
   
   3. minimum
-
-     ~~~ html
+     
+{% highlight html %}
 
         <%--content section to refer script files-- %>
 
@@ -654,8 +654,7 @@ Execute the above code to render the following output.
 
         </script>
 
-     ~~~
-     {:.pretty-print }
+{% endhighlight %}
 
 Execute the above code to render the following output. The following screenshot is the output of ASP.
 
