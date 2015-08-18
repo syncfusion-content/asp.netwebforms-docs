@@ -41,7 +41,7 @@ The list of basic shapes are as follows.
 
  ![](Predefined-Shapes_images/Predefined-Shapes_img1.png) 
 
-
+_Basic Shapes_
 
 ### Flow Shape
 
@@ -67,7 +67,7 @@ The list of flow shapes are as follows.
 
 ![](Predefined-Shapes_images/Predefined-Shapes_img2.png) 
 
-
+_Flow Shapes_
 
 ### BPMN Shape
 
@@ -86,7 +86,7 @@ The shapes are listed as follows.
 
  ![](Predefined-Shapes_images/Predefined-Shapes_img3.png) 
 
-
+_BPMN Shapes_
 
 The BPMN shapes and its types are explained as follows.
 
@@ -116,10 +116,7 @@ _Events_
 
 <table>
 <tr>
-<td>
-{{ '**Events**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Trigger Result**' | markdownify }}</td></tr>
+<th>Events</th><th>Type</th><th>Trigger Result</th></tr>
 <tr>
 <td rowspan = "2">
 Start Event</td><td>
@@ -145,37 +142,35 @@ _Representation of different BPMN events_
 
 <table>
 <tr>
-<td>
-{{ '**Events**' | markdownify }}</td><td>
-{{ '**Image**' | markdownify }}</td></tr>
+<th>Events</th><th>Image</th></tr>
 <tr>
 <td>
 Start Interrupting</td><td>
-![](Predefined-Shapes_images/Predefined-Shapes_img4.png)
+{{ '![](Predefined-Shapes_images/Predefined-Shapes_img4.png)' | markdownify }}
 
 </td></tr>
 <tr>
 <td>
 Start Non-Interrupting</td><td>
-![](Predefined-Shapes_images/Predefined-Shapes_img5.png)
+{{ '![](Predefined-Shapes_images/Predefined-Shapes_img5.png)' | markdownify }}
 
 </td></tr>
 <tr>
 <td>
 Intermediate Interrupting</td><td>
-![](Predefined-Shapes_images/Predefined-Shapes_img6.png)
+{{ '![](Predefined-Shapes_images/Predefined-Shapes_img6.png)' | markdownify }}
 
 </td></tr>
 <tr>
 <td>
 Intermediate Non-Interrupting</td><td>
-![](Predefined-Shapes_images/Predefined-Shapes_img7.png)
+{{ '![](Predefined-Shapes_images/Predefined-Shapes_img7.png)' | markdownify }}
 
 </td></tr>
 <tr>
 <td>
 End</td><td>
-![](Predefined-Shapes_images/Predefined-Shapes_img8.png)
+{{ '![](Predefined-Shapes_images/Predefined-Shapes_img8.png)' | markdownify }}
 
 </td></tr>
 </table>
@@ -184,61 +179,59 @@ _Representation of event trigger states_
 
 <table>
 <tr>
-<td>
-{{ '**Trigger Result**' | markdownify }}</td><td>
-{{ '**Image**' | markdownify }}</td></tr>
+<th>Trigger Result</th><th>Image</th></tr>
 <tr>
 <td>
  Message</td><td>
-![](Predefined-Shapes_images/Predefined-Shapes_img9.png)
+{{ '![](Predefined-Shapes_images/Predefined-Shapes_img9.png)' | markdownify }}
 
 </td></tr>
 <tr>
 <td>
 Timer</td><td>
-![](Predefined-Shapes_images/Predefined-Shapes_img10.png)
+{{ '![](Predefined-Shapes_images/Predefined-Shapes_img10.png)' | markdownify }}
 
 </td></tr>
 <tr>
 <td>
 Escalation</td><td>
-![](Predefined-Shapes_images/Predefined-Shapes_img11.png)
+{{ '![](Predefined-Shapes_images/Predefined-Shapes_img11.png)' | markdownify }}
 
 </td></tr>
 <tr>
 <td>
 Link </td><td>
-![](Predefined-Shapes_images/Predefined-Shapes_img12.png)
+{{ '![](Predefined-Shapes_images/Predefined-Shapes_img12.png)' | markdownify }}
 
 </td></tr>
 <tr>
 <td>
 Error</td><td>
-![](Predefined-Shapes_images/Predefined-Shapes_img13.png)
+{{ '![](Predefined-Shapes_images/Predefined-Shapes_img13.png)' | markdownify }}
 
 </td></tr>
 <tr>
 <td>
 Compensation</td><td>
-![](Predefined-Shapes_images/Predefined-Shapes_img14.png)
+{{ '![](Predefined-Shapes_images/Predefined-Shapes_img14.png)' | markdownify }}
 
 </td></tr>
 <tr>
 <td>
 Signal</td><td>
-![](Predefined-Shapes_images/Predefined-Shapes_img15.png)
+{{ '![](Predefined-Shapes_images/Predefined-Shapes_img15.png)' | markdownify }}
 
 </td></tr>
 <tr>
 <td>
 Multiple</td><td>
-![](Predefined-Shapes_images/Predefined-Shapes_img16.png)
+{{ '![](Predefined-Shapes_images/Predefined-Shapes_img16.png)' | markdownify }}
 
 </td></tr>
 <tr>
 <td>
 Parallel</td><td>
-![](Predefined-Shapes_images/Predefined-Shapes_img17.png)
+{{ '![](Predefined-Shapes_images/Predefined-Shapes_img17.png)' | markdownify }}
 
 </td></tr>
 </table>
@@ -275,37 +268,35 @@ _Types of Gateway_
 
 <table>
 <tr>
-<td>
-{{ '**Gateway Types**' | markdownify }}</td><td>
-{{ '**Image**' | markdownify }}</td></tr>
+<th>Gateway Types</th><th>Image</th></tr>
 <tr>
 <td>
 Exclusive Gateway</td><td>
-![](Predefined-Shapes_images/Predefined-Shapes_img18.png)
+{{ '![](Predefined-Shapes_images/Predefined-Shapes_img18.png)' | markdownify }}
 
 </td></tr>
 <tr>
 <td>
 Parallel Gateway</td><td>
-![](Predefined-Shapes_images/Predefined-Shapes_img19.png)
+{{ '![](Predefined-Shapes_images/Predefined-Shapes_img19.png)' | markdownify }}
 
 </td></tr>
 <tr>
 <td>
 Inclusive Gateway</td><td>
-![](Predefined-Shapes_images/Predefined-Shapes_img20.png)
+{{ '![](Predefined-Shapes_images/Predefined-Shapes_img20.png)' | markdownify }}
 
 </td></tr>
 <tr>
 <td>
 Complex Gateway</td><td>
-![](Predefined-Shapes_images/Predefined-Shapes_img21.png)
+{{ '![](Predefined-Shapes_images/Predefined-Shapes_img21.png)' | markdownify }}
 
 </td></tr>
 <tr>
 <td>
 Event Based</td><td>
-![](Predefined-Shapes_images/Predefined-Shapes_img22.png)
+{{ '![](Predefined-Shapes_images/Predefined-Shapes_img22.png)' | markdownify }}
 
 </td></tr>
 </table>
@@ -323,31 +314,25 @@ _Activity Type_
 
 <table>
 <tr>
-<td>
-{{ '**Activity**' | markdownify }}</td><td>
-{{ '**Loop**' | markdownify }}</td><td>
-{{ '**Tasks**' | markdownify }}</td><td>
-{{ '**Compensation**' | markdownify }}</td><td>
-{{ '**Call**' | markdownify }}</td><td>
-{{ '**Ad-Hoc**' | markdownify }}</td><td>
-{{ '**Boundary**' | markdownify }}</td></tr>
+<th>Activity</th><th>Loop</th><th>Tasks</th><th>Compensation</th><th>Call</th><th>Ad-Hoc</th><th>Boundary</th></tr>
 <tr>
 <td>
 Task</td><td>
-</td><td>
-</td><td>
-* </td><td>
-<br></td><td>
-</td><td>
+{{ '![](Predefined-Shapes_images/tick_img31.png)' | markdownify }}</td><td>
+{{ '![](Predefined-Shapes_images/tick_img31.png)' | markdownify }}</td><td>
+{{ '![](Predefined-Shapes_images/tick_img31.png)' | markdownify }}</td><td>
+{{ '![](Predefined-Shapes_images/tick_img31.png)' | markdownify }}</td><td>
+{{ '![](Predefined-Shapes_images/wrong_img30.png)' | markdownify }}</td><td>
+{{ '![](Predefined-Shapes_images/wrong_img30.png)' | markdownify }}
 </td></tr>
 <tr>
 <td>
-SubProcess</td><td>
-</td><td>
-</td><td>
-</td><td>
-</td><td>
-</td><td>
+SubProcess</td><td>{{ '![](Predefined-Shapes_images/tick_img31.png)' | markdownify }}
+</td><td>{{ '![](Predefined-Shapes_images/wrong_img30.png)' | markdownify }}
+</td><td>{{ '![](Predefined-Shapes_images/tick_img31.png)' | markdownify }}
+</td><td>{{ '![](Predefined-Shapes_images/wrong_img30.png)' | markdownify }}
+</td><td>{{ '![](Predefined-Shapes_images/tick_img31.png)' | markdownify }}
+</td><td>{{ '![](Predefined-Shapes_images/tick_img31.png)' | markdownify }}
 </td></tr>
 </table>
 
@@ -372,47 +357,47 @@ The different activities in the BPMN shape are listed as follows.
 
 1. Loop
 
-The task that is internally looped.
+   The task that is internally looped.
 
-![](Predefined-Shapes_images/Predefined-Shapes_img23.png) 
+   ![](Predefined-Shapes_images/Predefined-Shapes_img23.png) 
 
-
+   _Loop_
 
 2. Tasks
 
-The task for sending, receiving, user based task, etc…
+   The task for sending, receiving, user based task, etc…
 
- ![](Predefined-Shapes_images/Predefined-Shapes_img24.png) 
+   ![](Predefined-Shapes_images/Predefined-Shapes_img24.png) 
 
-
+   _Tasks_
 
 3. Compensation
 
-Compensation is triggered when operation partially fails.
+   Compensation is triggered when operation partially fails.
 
-![](Predefined-Shapes_images/Predefined-Shapes_img25.png) 
+   ![](Predefined-Shapes_images/Predefined-Shapes_img25.png) 
 
-
+   _Compensation_
 
 4. Call
 
-![](Predefined-Shapes_images/Predefined-Shapes_img26.png) 
+   ![](Predefined-Shapes_images/Predefined-Shapes_img26.png) 
 
-
+   _Call_
 
 5. Ad-Hoc
 
- ![](Predefined-Shapes_images/Predefined-Shapes_img27.png) 
+   ![](Predefined-Shapes_images/Predefined-Shapes_img27.png) 
 
-
+   _Ad-Hoc_
 
 6. Boundary
 
-Boundary represents the type of task that is processed.
+   Boundary represents the type of task that is processed.
 
- ![](Predefined-Shapes_images/Predefined-Shapes_img28.png) 
+   ![](Predefined-Shapes_images/Predefined-Shapes_img28.png) 
 
-
+   _Boundary_
 
 #### Data
 
@@ -446,5 +431,5 @@ node.Shapes = BPMNShapes.DataSource;
 
 ![](Predefined-Shapes_images/Predefined-Shapes_img29.png) 
 
-
+_Data_
 

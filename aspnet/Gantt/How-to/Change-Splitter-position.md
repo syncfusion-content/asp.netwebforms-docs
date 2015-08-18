@@ -43,21 +43,21 @@ The following code example explains how to define the SplitterPosition property 
 
 
 
-[C:/Users/labuser/Desktop/splitter30.png](Change-Splitter-position_images/Change-Splitter-position_img2.png) 
+![](Change-Splitter-position_images/Change-Splitter-position_img2.png) 
+
+
+_Figure : Gantt with 30 % splitter position_
 
 
 
 
+![](Change-Splitter-position_images/Change-Splitter-position_img3.png) 
 
+_Figure : Gantt with 50% splitter position_
 
+![](Change-Splitter-position_images/Change-Splitter-position_img4.png)
 
-[C:/Users/labuser/Desktop/Splitter50.png](Change-Splitter-position_images/Change-Splitter-position_img3.png) 
-
-
-
-[C:/Users/labuser/Desktop/Splitter600px.png](Change-Splitter-position_images/Change-Splitter-position_img4.png)
-
-
+_Figure : Gantt with 600px splitter position_
 
 
 

@@ -17,10 +17,7 @@ _Selector Properties_
 
 <table>
 <tr>
-<td>
-{{ '**Names**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Names</th><th>Type</th><th>Description</th></tr>
 <tr>
 <td>
 offsetX</td><td>

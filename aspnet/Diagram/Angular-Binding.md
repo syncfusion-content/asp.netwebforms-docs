@@ -99,5 +99,5 @@ angular.module('syncApp', ['ejangular'])
 
 ![](Angular-Binding_images/Angular-Binding_img1.png)
 
-
+_Angular Binding_
 

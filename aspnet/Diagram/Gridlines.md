@@ -13,7 +13,7 @@ Gridlines are horizontal and vertical lines behind the Diagram elements. They pr
 
 ![](Gridlines_images/Gridlines_img1.png) 
 
-
+_Gridlines_
 
 ## SnapConstraints
 
@@ -23,9 +23,7 @@ _SnapConstraints_
 
 <table>
 <tr>
-<td>
-{{ '**Constraints**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Constraints</th><th>Description</th></tr>
 <tr>
 <td>
 SnapToHorizontalLines</td><td>
@@ -93,10 +91,7 @@ _Appearance_
 
 <table>
 <tr>
-<td>
-{{ '**Properties**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Properties</th><th>Data Type</th><th>Description</th></tr>
 <tr>
 <td>
 LineInterval</td><td>
@@ -164,5 +159,5 @@ diagram.Model.SnapSettings.HorizontalGridlines.Strokes.LineDashArray = "2 2";
 
 ![](Gridlines_images/Gridlines_img2.png) 
 
-
+_Customized Gridlines_
 

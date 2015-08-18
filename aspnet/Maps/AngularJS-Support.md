@@ -64,9 +64,9 @@ Apply the plugin and property assigning the Map element through the directive 
 {% endhighlight %}
 
 
-![1](AngularJS-Support_images/AngularJS-Support_img1.png)
+![](AngularJS-Support_images/AngularJS-Support_img1.png)
 
-
+_Angular Support Map_
 
 
 

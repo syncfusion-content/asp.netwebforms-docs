@@ -19,54 +19,47 @@ The following screenshot illustrates the structure of the Diagram control.
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
 
-
+ _Diagram_
 
 ## Create your first Diagram in ASP.NET
 
 ### Initialize Diagram
 
-1. Create an ASPX file and add the necessary script and CSS files in the <Head> tag as shown in the following code example.
+1. Create an ASPX file and add the necessary script and CSS files in the &lt;Head&gt; tag as shown in the following code example.
    
    ~~~ html
 
+		<html xmlns="http://www.w3.org/1999/xhtml">
 
-        <html xmlns="http://www.w3.org/1999/xhtml">
+			<head>
 
-        <head>
+				<title>
 
-            <title>
+					Getting Started with the Diagram control for ASP.Net
 
-                Getting Started with the Diagram control for ASP.Net
-
-            </title>
-
+				</title>
 
 
-            <!-- jQuery Script -->
+
+				<!-- jQuery Script -->
 
                 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 
-            <!--script to create Diagram-->
+					<!--script to create Diagram-->
 
                 <script src="http://cdn.syncfusion.com/js/ej.widgets.all-latest.min.js"></script>
 
-        </head>
+			</head>
 
-        <body>
+			<body>
 		
-		
-        </body>
-
-        </html>
-
-
-
-
+			
+			</body>
+			
+		</html>
 
    ~~~
-   {:.pretty-print }
-
-
+   {:.prettyprint }
 
 2. Add the <ej:Diagram> element in the <body> tag to render the Diagram.
 
@@ -82,11 +75,10 @@ The following screenshot illustrates the structure of the Diagram control.
 			
 		</body>
 		
-		</html>
-		
+		</html>		
 		
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 
 
@@ -94,6 +86,7 @@ The following screenshot illustrates the structure of the Diagram control.
 
    ![http://help.syncfusion.com/ug/js/ImagesExt/image147_3.png](Getting-Started_images/Getting-Started_img2.png) 
 
+   _Empty Diagram_
 
 
 ### Initialize Data
@@ -254,10 +247,6 @@ function nodeTemplate(diagram, node) {
 
    }
 
-
-
-
-
 {% endhighlight %}
 
 
@@ -268,6 +257,6 @@ The employee data is displayed in the following Diagram.
 
 ![](Getting-Started_images/Getting-Started_img3.png) 
 
-
+ _Diagram_
 
 

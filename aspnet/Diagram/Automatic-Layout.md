@@ -106,7 +106,7 @@ The following example illustrates the horizontal and vertical spacing of the Hie
 
 ![](Automatic-Layout_images/Automatic-Layout_img1.png) 
 
-
+_Hierarchical Layout_
 
 ### Orientation
 
@@ -123,7 +123,7 @@ The following image displays Bottom to Top orientation of layout.
 
 ![](Automatic-Layout_images/Automatic-Layout_img2.png) 
 
-
+_BottomToTop_
 
 ## Organizational Chart
 
@@ -249,7 +249,7 @@ Diagram.model.DataSourceSettings.Parent = "Supervisor";
 
 ![](Automatic-Layout_images/Automatic-Layout_img3.png) 
 
-
+_Organizational chart_
 
 ### Customizing the organizational chart
 
@@ -311,10 +311,7 @@ _Properties of argument "option"_
 
 <table>
 <tr>
-<td>
-{{ '**Properties**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Default Value**' | markdownify }}</td></tr>
+<th>Properties</th><th>Description</th><th>Default Value</th></tr>
 <tr>
 <td>
 options.children</td><td>
@@ -370,11 +367,7 @@ _Chart orientations and Chart types_
 
 <table>
 <tr>
-<td>
-{{ '**Orientation**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Example**' | markdownify }}</td></tr>
+<th>Orientation</th><th>Type</th><th>Description</th><th>Example</th></tr>
 <tr>
 <td rowspan = "3">
 Horizontal</td><td>
@@ -448,7 +441,7 @@ function getLayoutInfo(diagram, node, options) {
 
 ![](Automatic-Layout_images/Automatic-Layout_img10.png)
 
-
+_Horizontal left arranged leaf level trees_
 
 ### Assistant Support
 
@@ -490,5 +483,5 @@ function getLayoutInfo(diagram, node, options) {
 
 ![](Automatic-Layout_images/Automatic-Layout_img11.png) 
 
-
+_Vertical left arrangement with assistant_
 

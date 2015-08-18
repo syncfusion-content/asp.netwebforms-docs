@@ -31,10 +31,7 @@ _Alignment Command_
 
 <table>
 <tr>
-<td>
-{{ '**Command**' | markdownify }}</td><td>
-{{ '**Parameter**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Command</th><th>Parameter</th><th>Description</th></tr>
 <tr>
 <td>
 align</td><td>
@@ -48,7 +45,7 @@ The node is aligned vertically to left, right, and center by using alignment com
 
 {% highlight js %}
 
-[JS]
+
 
 
 
@@ -76,7 +73,7 @@ diagram.align("center");
 
 ![](Commands_images/Commands_img1.png) 
 
-
+_Vertical Alignment_
 
 ### Horizontal Alignment commands
 
@@ -84,7 +81,7 @@ The node is aligned horizontally to top, bottom, and middle by using alignment c
 
 {% highlight js %}
 
-[JS]
+
 
 //Aligns top
 
@@ -106,7 +103,7 @@ diagram.align("middle");
 
 ![](Commands_images/Commands_img2.png) 
 
-
+_Horizontal alignment_
 
 ## Spacing Command
 
@@ -116,9 +113,7 @@ _Spacing Command_
 
 <table>
 <tr>
-<td>
-{{ '**Commands**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Commands</th><th>Description</th></tr>
 <tr>
 <td>
 spaceAcross</td><td>
@@ -140,7 +135,7 @@ The following code illustrates how to execute spaceAcrosscommand
 
 {% highlight js %}
 
-[JS]
+
 //SpaceAcross
 
 diagram.spaceAcross();
@@ -153,7 +148,7 @@ diagram.spaceAcross();
 
 ![](Commands_images/Commands_img3.png) 
 
-
+_Space Across_
 
 ### spaceDown Command
 
@@ -163,7 +158,7 @@ The following code illustrate how to execute spaceDowncommand
 
 {% highlight js %}
 
-[JS]
+
 
 
 //space down
@@ -178,7 +173,7 @@ diagram.spaceDown();
 
 ![](Commands_images/Commands_img4.png) 
 
-
+_Space Down_
 
 ## Sizing Command
 
@@ -190,9 +185,7 @@ _Sizing Command_
 
 <table>
 <tr>
-<td>
-{{ '**Commands**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Commands</th><th>Description</th></tr>
 <tr>
 <td>
 sameSize</td><td>
@@ -211,10 +204,6 @@ Width of the nodes in the selection list is resized to width of first node in th
 The following code illustrate how to execute Sizing commands
 
 {% highlight js %}
-
-[JS]
-
-
 
 //Same size
 
@@ -240,7 +229,7 @@ diagram.sameWidth();
 
 ![](Commands_images/Commands_img5.png) 
 
-
+_Sizing Commands_
 
 ## Clipboard commands 
 
@@ -258,7 +247,7 @@ The following code illustrates how to run Cutcommand
 
 {% highlight js %}
 
-[JS]
+
 
 //Cuts the selected nodes/connectors
 
@@ -278,7 +267,7 @@ The following code illustrates how to run Copycommand
 
 {% highlight js %}
 
-[JS]
+
 
 //Copies the nodes/connectors
 
@@ -298,7 +287,7 @@ The following code illustrates how to run Paste command.
 
 {% highlight js %}
 
-[JS]
+
 
 //Pastes the cut/copied nodes/connectors on diagram
 
@@ -312,7 +301,7 @@ diagram.paste();
 
 ![](Commands_images/Commands_img6.png) 
 
-
+_Paste_
 
 ## Grouping Commands
 
@@ -324,7 +313,7 @@ The following code illustrates how to Group the selected elements on Diagram.
 
 {% highlight js %}
 
-[JS]
+
 
 //Groups the selected nodes/connectors
 
@@ -340,7 +329,7 @@ The following code illustrates how to Ungroup the selected group on Diagram.
 
 {% highlight js %}
 
-[JS]
+
 
 //Ungroups the selected group 
 
@@ -367,7 +356,7 @@ The following code illustrates how to run the BringToFront command.
 
 {% highlight js %}
 
-[JS]
+
 
 //Brings to front
 
@@ -381,7 +370,7 @@ diagram.bringToFront();
 
 ![](Commands_images/Commands_img7.png) 
 
-
+_Bring To Front_
 
 ### sendToBack Commands
 
@@ -391,7 +380,7 @@ The following code illustrates how to execute sendToBack command.
 
 {% highlight js %}
 
-[JS]
+
 
 //Sends back
 
@@ -405,7 +394,7 @@ diagram.sendToBack();
 
 ![](Commands_images/Commands_img8.png) 
 
-
+_Send To Back_
 
 ### moveForward Commands
 
@@ -415,7 +404,7 @@ The following code illustrates how to execute moveForward Command.
 
 {% highlight js %}
 
-[JS]
+
 
 //Moves forward
 
@@ -429,7 +418,7 @@ diagram.moveForward();
 
 ![](Commands_images/Commands_img9.png) 
 
-
+_ Move Forward_
 
 ### sendBackwardCommands
 
@@ -439,7 +428,7 @@ The following code illustrates how to execute sendBackward command.
 
 {% highlight js %}
 
-[JS]
+
 
 //Sends backward
 
@@ -453,7 +442,7 @@ diagram.sendBackward();
 
 ![](Commands_images/Commands_img10.png) 
 
-
+_Send Backward_
 
 ## Zoom Commands
 
@@ -463,7 +452,7 @@ The following code illustrates how to zoom-in the Diagram.
 
 {% highlight js %}
 
-[JS]
+
 
 //ZoomIn
 
@@ -489,7 +478,7 @@ The following code illustrates how to zoom-out the Diagram.
 
 {% highlight js %}
 
-[JS]
+
 
 //ZoomOut       
 
@@ -517,10 +506,7 @@ _Nudge Commands_
 
 <table>
 <tr>
-<td>
-{{ '**Command**' | markdownify }}</td><td>
-{{ '**Parameter**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Command</th><th>Parameter</th><th>Description</th></tr>
 <tr>
 <td>
 nudge</td><td>
@@ -532,7 +518,7 @@ The following code illustrates how to execute Nudge command.
 
 {% highlight js %}
 
-[JS]
+
 
 //Nudges up
 
@@ -548,7 +534,7 @@ The corresponding arrow keys are used to move the selected elements up, down, le
 
 ![http://help.syncfusion.com/ug/wpf/diagram/ImagesExt/image69_163.png](Commands_images/Commands_img11.png) 
 
-
+_Keyboard-Arrow Keys_
 
 Nudge commands are particularly useful for accurate placement of Diagram elements on the Diagram as it allows you to move by 1 pixel each time.
 
@@ -560,10 +546,7 @@ _FitToPage Commands_
 
 <table>
 <tr>
-<td>
-{{ '**Command**' | markdownify }}</td><td>
-{{ '**Parameter**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Command</th><th>Parameter</th><th>Description</th></tr>
 <tr>
 <td>
 fitToPage</td><td>
@@ -576,7 +559,7 @@ The following code illustrates how to execute FitToPage command.
 
 {% highlight js %}
 
-[JS]
+
 
 //Fits to page – fits Diagram based on elements
 
@@ -594,9 +577,7 @@ _Fit To Modes_
 
 <table>
 <tr>
-<td>
-{{ '**Modes**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Modes</th><th>Description</th></tr>
 <tr>
 <td>
 Page</td><td>
@@ -619,9 +600,7 @@ _Diagram Region_
 
 <table>
 <tr>
-<td>
-{{ '**Regions**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Regions</th><th>Description</th></tr>
 <tr>
 <td>
 Content</td><td>

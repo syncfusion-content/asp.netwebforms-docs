@@ -59,7 +59,7 @@ Diagram1.Model.Nodes.Add(group);
 
 ![](Group_images/Group_img1.png) 
 
-
+_Group_
 
 ## Select a Group
 
@@ -69,18 +69,20 @@ The following steps illustrate how to select an object that has two groups.
 
 ![](Group_images/Group_img2.png) 
 
-
+_Selecting a Group_
 
 1. Click the Node1 to select the outer group.
 2. Click again to select the inner group where it belongs.
 
    ![](Group_images/Group_img3.png) 
 
+   _Selecting an inner Group_
+   
 3. Click again to select the child node after all groups have been traversed.
 
    ![](Group_images/Group_img4.png) 
 
-
+   _Selecting a Child of Group_
 
 ## Edit a Group
 
@@ -92,10 +94,7 @@ _Editing a Group_
 
 <table>
 <tr>
-<td>
-{{ '**Editing Options**' | markdownify }}</td><td>
-{{ '**Before**' | markdownify }}</td><td>
-{{ '**After**' | markdownify }}</td></tr>
+<th>Editing Options</th><th>Before</th><th>After</th></tr>
 <tr>
 <td>
 Resize</td><td>

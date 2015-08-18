@@ -45,7 +45,7 @@ The following screenshot shows the Default Context Menu in Gantt control.
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image72_8.png](Context-Menu_images/Context-Menu_img1.png)
 
-
+_Figure : Default Context Menu_
 
 ## Custom Context Menu
 
@@ -103,4 +103,4 @@ The screenshot of the Custom Context Menu items in Gantt control is as follows.
 ![C:/Users/Rajasekar/Desktop/IMG_17062014_121224.png](Context-Menu_images/Context-Menu_img2.png)
 
 
-
+_Figure : Custom Context Menu_

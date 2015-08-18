@@ -15,15 +15,20 @@ The server side events present in the NumericTextbox control are as follows.
 
 <table>
 <tr>
-<td>
-{{ '**Event Name**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Arguments**' | markdownify }}</td></tr>
+<th>
+Event Name</th><th>
+Description</th><th>
+Arguments</th></tr>
 <tr>
 <td>
 OnFocusOut</td><td>
 Triggers when the focus is moved from textBox</td><td>
-e.Value– Value of the Numerictextboxe.EventType – Event Namee.Arguments – Contain keys and value of NumericTextbox</td></tr>
+<ul>
+<li>e.Value– Value of the Numerictextbox</li>
+<li>e.EventType – Event Name</li>
+<li>e.Arguments – Contain keys and value of NumericTextbox</li>
+</ul>
+</td></tr>
 </table>
 
 
@@ -50,8 +55,6 @@ protected void focus(object Sender, EventArgs e)
             Response.Write("Serverside event has been trigerred");
 
         }
-
-
 
 {% endhighlight %}
 

@@ -13,7 +13,7 @@ The SymbolPalette displays a collection of palettes. The Palette shows nodes and
 
  ![http://help.syncfusion.com/ug/js/ImagesExt/image147_82.jpg](Symbol-Palette_images/Symbol-Palette_img1.jpeg) 
 
-
+_SymbolPalette_
 
 ## Create and Add Symbols in the Palette
 
@@ -85,7 +85,7 @@ The Diagram provides support to add nodes and connectors through the Symbol Pale
 
 ![](Symbol-Palette_images/Symbol-Palette_img2.png) 
 
-
+_Adding Nodes and Connectors through Symbol Palette_
 
 ## Appearance
 
@@ -95,10 +95,7 @@ _Appearance_
 
 <table>
 <tr>
-<td>
-{{ '**Properties**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Properties</th><th>Data Type</th><th>Description</th></tr>
 <tr>
 <td>
  Width</td><td>
@@ -202,10 +199,7 @@ _Preview Appearance_
 
 <table>
 <tr>
-<td>
-{{ '**Properties**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Properties</th><th>Data Type</th><th>Description</th></tr>
 <tr>
 <td>
 PreviewWidth</td><td>

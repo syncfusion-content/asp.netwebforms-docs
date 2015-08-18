@@ -51,7 +51,7 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 ![](Character-Settings_images/Character-Settings_img1.png)
 
-
+_Figure 32: Digital Gauge control with character setting_
 
 
 
@@ -104,7 +104,7 @@ Execute the above code examples to render the DigitalGauge as follows.
             </ej:DigitalGauge>
 
      ~~~
-     {:.pretty-print }
+     {:.prettyprint }
 
 Execute the above code examples to render the DigitalGauge as follows.
 
@@ -113,7 +113,7 @@ Execute the above code examples to render the DigitalGauge as follows.
 ![](Character-Settings_images/Character-Settings_img2.png)
 
 
-
+_Figure 33: Digital Gauge control with character type as seven segment_
 
 
 ## Text Positioning
@@ -170,7 +170,7 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 ![](Character-Settings_images/Character-Settings_img3.png)
 
-
+_Figure 34: Digital Gauge control with position text based on the background image_
 
 
 
@@ -225,6 +225,6 @@ Execute the above code examples to render the DigitalGauge as follows.
 ![](Character-Settings_images/Character-Settings_img4.png)
 
 
-
+_Figure 35: Digital Gauge control with shadow option_
 
 

@@ -125,11 +125,11 @@ The DatePicker control provides support to customize the particular date. You ca
 
 <table>
 <tr>
-<td>
-{{ '**Name**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Default value**' | markdownify }}</td><td>
-{{ '**Data type**' | markdownify }}</td></tr>
+<th>
+Name</th><th>
+Description</th><th>
+Default value</th><th>
+Data type</th></tr>
 <tr>
 <td>
 Date</td><td>
@@ -356,9 +356,9 @@ The standard formats are listed as follows,
 
 <table>
 <tr>
-<td>
-{{ '**Format Name**' | markdownify }}</td><td>
-{{ '**Formats**' | markdownify }}</td></tr>
+<th>
+Format Name</th><th>
+Formats</th></tr>
 <tr>
 <td>
 Default</td><td>
@@ -416,9 +416,9 @@ Enum for DatePicker startLevel and depthLevel.
 
 <table>
 <tr>
-<td>
-{{ '**Day header**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Day header</th><th>
+Description</th></tr>
 <tr>
 <td>
 ShowHeaderShort</td><td>

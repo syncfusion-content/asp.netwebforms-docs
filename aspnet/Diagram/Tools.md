@@ -15,10 +15,7 @@ _Tools_
 
 <table>
 <tr>
-<td>
-{{ '**Precedence**' | markdownify }}</td><td>
-{{ '**Tools**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Precedence</th><th>Tools</th><th>Description</th></tr>
 <tr>
 <td>
 1st </td><td>
@@ -151,7 +148,7 @@ tool: ej.datavisualization.Diagram.Tool.DrawOnce
 
  ![](Tools_images/Tools_img1.png) 
 
-
+_Rectangle_
 
 
 
@@ -204,4 +201,4 @@ tool: ej.datavisualization.Diagram.Tool.DrawOnce
  ![http://help.syncfusion.com/ug/js/ImagesExt/image682_23.jpg](Tools_images/Tools_img2.jpeg) 
 
 
-
+_Straight Connector_

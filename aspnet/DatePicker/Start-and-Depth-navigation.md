@@ -15,9 +15,9 @@ It specifies the Start Level view in the DatePicker calendar. By default, StartL
 
 <table>
 <tr>
-<td>
-{{ '**Name**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Month</td><td>
@@ -69,9 +69,9 @@ It accepts the following values.
 
 <table>
 <tr>
-<td>
-{{ '**Value**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Value</th><th>
+Description</th></tr>
 <tr>
 <td>
 Month</td><td>

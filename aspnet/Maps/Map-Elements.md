@@ -89,7 +89,7 @@ The Markers property has a list of objects that contains the data for Annotation
 
 ![](Map-Elements_images/Map-Elements_img1.png)
 
-
+_Map with markers_
 
 ### Adding Marker objects to map
 
@@ -149,7 +149,7 @@ Without Datasource, n number of markers can be added to shape layers with Marker
 
 ![](Map-Elements_images/Map-Elements_img2.png)
 
-
+_Map with label_
 
 ## Bubbles 
 
@@ -208,11 +208,12 @@ TooltipTemplate</td><td>
 String</td><td>
 Gets or sets the tooltip template for bubbles.</td></tr>
 </table>
+
 Adding Bubbles to a Map
 
 To add bubbles to a map, the bubble marker setting is added to the shape file layer. Create the Model and ViewModel as illustrated in the Data Binding topic and add the following code. Also set the MaxValue, MinValue, and ValuePath properties as illustrated in the following code sample.
 
-Note: Tooltip and Color Mappings for bubble is to be set as similar to tooltip and color mappings set in layers and ShapeSettings. For more details, refer Tooltip and Color Mappings section.
+> Note: Tooltip and Color Mappings for bubble is to be set as similar to tooltip and color mappings set in layers and ShapeSettings. For more details, refer Tooltip and Color Mappings section.
 
 
 
@@ -252,7 +253,7 @@ Note: Tooltip and Color Mappings for bubble is to be set as similar to tooltip a
 
 ![](Map-Elements_images/Map-Elements_img3.png) 
 
-
+_Map with bubbles_
 
 ## Legend
 
@@ -271,7 +272,7 @@ The legend can be positioned in two ways.
 
 ### Absolute Position
 
-Based on the margin values of X and Y-axes, the Map legends can be positioned with the support of PositionX and PositionY properties available in LegendSettings. For positioning the legend based on margins corresponding to a map, Position value is set as _‘_None’.
+Based on the margin values of X and Y-axes, the Map legends can be positioned with the support of PositionX and PositionY properties available in LegendSettings. For positioning the legend based on margins corresponding to a map, Position value is set as ‘None’.
 
 ### Dock Position
 
@@ -299,7 +300,7 @@ The map legend size can be modified using Height and Width properties in LegendS
 
 The Layer shape type legends can be generated for each color mappings in shape settings. 
 
-Note:  Here, Equal Color Mapping code sample for shapeSettings with color mappings is referred.
+> Note:  Here, Equal Color Mapping code sample for shapeSettings with color mappings is referred.
 
 
 
@@ -333,7 +334,7 @@ Note:  Here, Equal Color Mapping code sample for shapeSettings with color mappin
 
 ![](Map-Elements_images/Map-Elements_img4.png)
 
-
+_Map with legend_
 
 ### Interactive Legend
 
@@ -347,7 +348,7 @@ You can provide the title for interactive legend by using Title property in Lege
 
 You can provide the left and right labels to interactive legend by using LeftLabel and RightLabel properties in LegendSettings. 
 
-Note:  Here, Range Color Mapping code snippet for shapeSettings with color mappings is referred.
+> Note:  Here, Range Color Mapping code snippet for shapeSettings with color mappings is referred.
 
 
 
@@ -379,7 +380,7 @@ Note:  Here, Range Color Mapping code snippet for shapeSettings with color mappi
 
 ![](Map-Elements_images/Map-Elements_img5.png)
 
-
+_Map with interactive legend_
 
 ### Bubble Legend
 
@@ -438,7 +439,6 @@ A bubble legend feature is used to provide the key (legend) for another map elem
 
 {% endhighlight %}
 
-![1](Map-Elements_images/Map-Elements_img6.png)
+![](Map-Elements_images/Map-Elements_img6.png)
 
-
-
+_Bubble Legend_

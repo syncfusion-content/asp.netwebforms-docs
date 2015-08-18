@@ -50,6 +50,7 @@ You can select the shape by tapping on the shape. The Single selection is enable
 ![](User-Interaction_images/User-Interaction_img1.png)
 
 
+_Map with enable selection property_
 
 ## Zooming
 
@@ -68,7 +69,7 @@ The following properties are related to the zooming feature of the Maps control:
 
 The level property determines the map’s scale size when zooming. The default value of level is 1. 
 
-Note:  Level cannot be less than 1.
+> Note:  Level cannot be less than 1.
 
 ## EnableZoom
 
@@ -147,7 +148,7 @@ When the map is double-tapped using mouse, the zoom in operation is performed.
 
 ![](User-Interaction_images/User-Interaction_img2.png) 
 
-
+_Map with zoom_
 
 ## Using Shape Selection
 
@@ -230,12 +231,13 @@ function buttonClick() {
 The panning feature enables map navigation. The EnablePan property is used to enable or disable the panning support.
 
 
-
-
+{% highlight html %}
 
     <ej:Map ID="map" runat="server" EnablePan=”true”>    
 
     </ej:Map> 
+
+{% endhighlight %}
 
 ## Navigation Control
 
@@ -243,9 +245,9 @@ Navigation control is built-in with Maps control. With Navigation control, Maps 
 
 ## Structure of Navigation Control
 
-![a](User-Interaction_images/User-Interaction_img3.png)
+![](User-Interaction_images/User-Interaction_img3.png)
 
-
+_Structure of Navigation Control_
 
 
 
@@ -284,7 +286,7 @@ The Navigation control can be positioned in two ways.
 
 ## Absolute Position
 
-Based on the margin values of X and Y-axes, the navigation control can be positioned with the help of the X and Y properties available in AbsolutePosition. For positioning the navigation control based on margins corresponding to a map, DockPosition value is set as _‘_None’.
+Based on the margin values of X and Y-axes, the navigation control can be positioned with the help of the X and Y properties available in AbsolutePosition. For positioning the navigation control based on margins corresponding to a map, DockPosition value is set as ‘None’.
 
 ## Dock Position
 

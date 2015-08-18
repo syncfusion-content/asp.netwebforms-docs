@@ -61,7 +61,7 @@ Execute the above code to render the following output.
 
 ![](MVVM_images/MVVM_img1.png)
 
-
+_Figure 38: Default Digital Gauge in Angular JS_
 
 ### Adding the Digital Gauge Items
 
@@ -99,14 +99,14 @@ e-position-x="52" e-position-y="52">
 
 </ej-DigitalGauge>
 
-
+{% endhighlight %}
 
 Finally while running the above codes, the following output will be rendered.
 
 ![](MVVM_images/MVVM_img2.png) 
 
+_Figure 39: Digital Gauge Rendered in Angular JS_
 
-{% endhighlight %}
 
 
 ### Two Way Binding
@@ -173,6 +173,7 @@ Execute the above code to render the following output.
 
 ![](MVVM_images/MVVM_img3.png)
 
+_Figure 40: Digital Gauge with two way binding in Angular JS_
 
 ### Knockout Binding
 
@@ -225,16 +226,16 @@ Execute the above code to render the following output.
         </script>
 
   ~~~
-  {:.pretty-print }
+  {:.prettyprint }
 
 Execute the above code to render the following output.
 
 
 
-![C:/Users/karthigeyan/Desktop/q.png](MVVM_images/MVVM_img4.png)
+![](MVVM_images/MVVM_img4.png)
 
 
-
+_Figure 41: Digital Gauge with Knockout binding_
 
 
 

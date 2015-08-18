@@ -103,5 +103,5 @@ The following screenshot shows Gantt control with Resources.
 
 ![](Resources_images/Resources_img1.png) 
 
-
+_Figure : Resources_
 

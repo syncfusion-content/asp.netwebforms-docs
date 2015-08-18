@@ -435,8 +435,9 @@ The following code example describes how to initialize first level sub menu item
 
 
 
-Execute the above code example to render the following output Menu with sub menu item.{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+Execute the above code example to render the following output Menu with sub menu item.
 
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
 ### Define multiple level Menu items

@@ -13,7 +13,7 @@ documentation: ug
 
 The DecimalPlaces declares the decimal point to the value of NumericTextbox control. The default value of DecimalPlaces is 0 in NumericTextbox control.
 
-## Configure Decimal Places
+### Configure Decimal Places
 
 Add the following code example in your ASPX page to render the NumericTextbox control with decimal.
 
@@ -37,7 +37,7 @@ The following screenshot displays the output for the above code.
 
 The NumericTextbox control provides state maintenance support. You can maintain the previous changes made in the control after the page load while the EnablePersistence property is in the enabled state. EnablePersistence accepts Boolean values, by default the value is false.
 
-## Configure Persistence Support 
+### Configure Persistence Support 
 
 Add the following code example in your ASPX page to render the NumericTextbox control with the state maintence.
 
@@ -62,7 +62,7 @@ The following screenshot displays the output of the NumericTextbox with EnablePe
 
 The NumericTextbox control provides you the strict mode option by setting the EnableStrictMode property. You can set the MinValue and MaxValue to the control to enable the strict mode functionality. When the NumericTextbox value exceeds the MaxValue, it restricts the exceeded value and returns the MaxValue. Likewise, when the NumericTextbox value goes below the MinValue, it restricts the new value and returns the MinValue. When the EnableStrictMode property is enabled, then it highlights the NumericTextbox in red color.
 
-## Configure Strict Mode Support 
+### Configure Strict Mode Support 
 
 Add the following code example in your ASPX page to render the NumericTextbox control with strict mode.
 
@@ -96,7 +96,7 @@ The following screenshot displays the output of the NumericTextbox with and with
 
 The NumericTextbox control have an option to enable or disable its element. You can set the Enabled property as true to enable the NumericTextbox control. Enabled property accepts Boolean value. By default the value of the enabled property is true.
 
-## Configure Enabled or Disabled 
+### Configure Enabled or Disabled 
 
 Add the following code example in your ASPX page to render the NumericTextbox control with the enabled state.
 
@@ -108,7 +108,7 @@ The output for the NumericTextbox when “Enabled” is “true” and “Enable
 
 ![C:/Users/giftline.jebamani/Desktop/c.png](Behavior-Settings_images/Behavior-Settings_img4.png) 
 
-![C:/Users/giftline.jebamani/Desktop/ca.png](Behavior-Settings_images/Behavior-Settings_img5.png) 
+![C:/Users/giftline.jebamani/Desktop/ca.png](Behavior-Settings_images/Behavior-Settings_img41.png) 
 
 
 
@@ -116,7 +116,7 @@ The output for the NumericTextbox when “Enabled” is “true” and “Enable
 
 The NumericTextbox size can be customized by using the Height and Width property. 
 
-## Configure Height and Width 
+### Configure Height and Width 
 
 Add the following code example in your ASPX page to render the NumericTextbox control with the customized height and width.
 
@@ -140,7 +140,7 @@ The following screenshot displays the output of the NumericTextbox after setting
 
 The IncrementStep property is used to increase or decrease the amount of value in the NumericTextbox control. 
 
-## Configure Increment Step
+### Configure Increment Step
 
 Add the following code example in your ASPX page to render the NumericTextbox control with the IncrementStep property.
 
@@ -166,7 +166,7 @@ The following screenshot displays the output of the NumericTextboxes with “Inc
 
 When you place the NumericTextbox in a form, the Name property is used to send the field value at form submission. The default value of the name property is null.
 
-## Configure Name
+### Configure Name
 
 Add the following code example in your ASPX page to render the NumericTextbox control with the Name property.
 
@@ -192,7 +192,7 @@ The following screenshot displays the output of the NumericTextbox with the Name
 
 The value of the NumericTextbox can be assigned by using the Value property. The default value ofValue property is null.
 
-## Configure Value
+### Configure Value
 
 Add the following code example in your ASPX page to render the NumericTextbox control with the Value property.
 
@@ -216,15 +216,15 @@ The following screenshot displays the output of the NumericTextbox with the Valu
 
 The NumericTextbox contain the basic behaviors like Name, Value, MaxValue and MinValue.
 
-## maxValue
+### maxValue
 
 The maximum value limit can be assigned to the NumericTextbox by using the MaxValue property. The default value of MaxValue property is 1.7976931348623157e+308. 
 
-## minValue
+### minValue
 
 The minimum value limit can be assigned to the NumericTextbox by using the MinValue property. The default value of MinValue property is -1.7976931348623157e+308.
 
-## Configure Basic Properties
+### Configure Basic Properties
 
 Add the following code example in your ASPX page to render the NumericTextbox control with the MaxValueandMinValue properties.
 
@@ -258,7 +258,7 @@ The following screenshot displays the output of the NumericTextbox with the basi
 
 The NumericTextbox supports read only option. When enabling read only property to the control, the value can not be changed or editable in the NumericTextbox. You can set the ReadOnly property as true to enable this option.
 
-## Configure Read Only
+### Configure Read Only
 
 Add the following code example in your ASPX page to render to NumericTextbox control with the ReadOnly property.
 

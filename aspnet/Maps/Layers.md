@@ -76,5 +76,5 @@ In this example, World Map shape is used as shape data by utilizing the “World
 
 ![](Layers_images/Layers_img1.png)
 
-
+_Map with layers_
 

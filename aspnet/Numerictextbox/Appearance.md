@@ -89,7 +89,7 @@ The following screenshot displays the output of the NumericTextbox after applyin
 
 The NumericTextbox provides you with rounded corner support that the appearance is different from the normal NumericTextbox control. The default value of ShowRoundedCorner property is false in the NumericTextbox.
 
-## Configure Rounded Corner Support
+### Configure Rounded Corner Support
 
 Add the following code example in your ASPX page to render the NumericTextbox control with rounded corner.
 
@@ -113,7 +113,7 @@ The following screenshot displays the output of the NumericTextbox when the “S
 
 The NumericTextbox provides the option whether to display the split button in the widget or remove it from the control by using the ShowSpinButton property. The default value of the ShowSpinButton property is true in the NumericTextbox.
 
-## Configure Spin Button
+### Configure Spin Button
 
 Add the following code example in your ASPX page to render the NumericTextbox control with the SpinButton.
 
@@ -143,7 +143,7 @@ The following screenshot displays the output of the NumericTextbox when the “S
 
 The NumericTextbox provides water mark text support that helps you to display the initial value in the control by water mark. The default value of WatermarkText property is empty string (“”) in the NumericTextbox.
 
-## Configure Water Mark Text
+### Configure Water Mark Text
 
 Add the following code example in your ASPX page to render the NumericTextbox control with the water mark text.
 

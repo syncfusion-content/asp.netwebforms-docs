@@ -15,10 +15,11 @@ DateTimePicker allows you to change the starting level view of Calendar inside t
 
 <table>
 <tr>
-<td>
-{{ '**Start Level**' | markdownify }}</td><td>
-{{ '**Syntax**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Start Level</th><th>
+Syntax</th><th>
+Description</th></tr>
+Description</th></tr>
 <tr>
 <td>
 Month</td><td>

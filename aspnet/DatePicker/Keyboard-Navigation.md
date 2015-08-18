@@ -15,9 +15,9 @@ The various keyboard shortcuts available within the DatePicker control are discu
 
 <table>
 <tr>
-<td>
-{{ '**Keys**' | markdownify }}</td><td>
-{{ '**Function**' | markdownify }}</td></tr>
+<th>
+Keys</th><th>
+Function</th></tr>
 <tr>
 <td>
 Alt +j</td><td>

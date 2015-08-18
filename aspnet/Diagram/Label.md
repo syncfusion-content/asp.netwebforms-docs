@@ -43,7 +43,7 @@ connector.Labels.Add(label);
 
 ![](Label_images/Label_img1.png) 
 
-
+_Label_
 
 ## Displacement
 
@@ -75,7 +75,7 @@ connector.Constraints = ConnectorConstraints.Default| ConnectorConstraints.DragL
 
 ![](Label_images/Label_img2.png)
 
-
+_Label Dragging_
 
 
 
@@ -119,7 +119,7 @@ Node node = new Node()
 
 ![](Label_images/Label_img3.png) 
 
-
+_Label Displacement through margin_
 
 ## Label Rotation
 
@@ -147,10 +147,10 @@ label.RotateAngle = 45;
 
  ![](Label_images/Label_img4.png) 
 
+_Rotated Label_
 
 
-
-Note: No built-in support is added to rotate labels interactively.
+> Note: No built-in support is added to rotate labels interactively.
 
 ## Appearance 
 
@@ -192,7 +192,7 @@ label.TextDecoration = TextDecorations.LineThrough;
 
 ![](Label_images/Label_img6.png) 
 
-
+_Customized Label_
 
 ## Label Editing
 
@@ -222,7 +222,7 @@ label.Mode = LabelEditMode.View;
 
 ![](Label_images/Label_img7.png) 
 
-
+_Label Mode_
 
 ## Read-only Label
 
@@ -248,10 +248,7 @@ _Label Alignment_
 
 <table>
 <tr>
-<td>
-{{ '**Name**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Name</th><th>Type</th><th>Description</th></tr>
 <tr>
 <td>
  TextAlign</td><td>
@@ -304,11 +301,7 @@ _Alignment_
 
 <table>
 <tr>
-<td>
-{{ '**Horizontal Alignment**' | markdownify }}</td><td>
-{{ '**Vertical Alignment**' | markdownify }}</td><td>
-{{ '**Offset**' | markdownify }}</td><td>
-{{ '**Image**' | markdownify }}</td></tr>
+<th>Horizontal Alignment</th><th>Vertical Alignment</th><th>Offset</th><th>Image</th></tr>
 <tr>
 <td>
 Center</td><td>
@@ -335,12 +328,13 @@ Bottom</td><td>
 </table>
 
 
-![](Label_images/Label_img11.png) 
-
+![](Label_images/Label_img11.png)
+ 
+_Left align_
 
 ![](Label_images/Label_img12.png) 
 
-
+_Label Alignment_
 
 ### Text Wrapping
 
@@ -362,16 +356,13 @@ label.Wrapping = WrapText.Wrap;
 
  ![](Label_images/Label_img13.png) 
 
-
+_Text Wrapping_
 
 _Text Wrapping_
 
 <table>
 <tr>
-<td>
-{{ '**Values**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Image**' | markdownify }}</td></tr>
+<th>Values</th><th>Description</th><th>Image</th></tr>
 <tr>
 <td>
 NoWrap</td><td>
@@ -460,5 +451,5 @@ node.Labels.Add(label);
 
 ![](Label_images/Label_img17.png) 
 
-
+_Multiple Label and Alignment_
 

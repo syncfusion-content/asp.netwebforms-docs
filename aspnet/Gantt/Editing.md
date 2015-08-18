@@ -48,7 +48,7 @@ The output of Gantt with CellEditing is as follows.
 
 ![](Editing_images/Editing_img1.png)
 
-
+_Figure : Gantt with cellEdit_
 
 ## Normal Editing
 
@@ -78,7 +78,7 @@ The following screenshot shows the output of normal editing.
 
 ![C:/Users/pongeetha/Desktop/NormalEditing.png](Editing_images/Editing_img2.png)
 
-
+_Figure : Normal Editing_
 
 ## Taskbar Editing
 
@@ -135,4 +135,6 @@ The following screen shot shows the predecessor editing in Gantt control.
 ![C:/Users/labuser/Desktop/hello.png](Editing_images/Editing_img3.png) 
 
 
+
+_Figure : Predecessor Editing_
 

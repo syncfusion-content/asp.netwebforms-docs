@@ -224,7 +224,7 @@ In the ASPX page, add DropDownList.
 
 Add connection string in the Web.config file.
 
-Note: Change the username with your system name in the following connection string.
+> Note: Change the username with your system name in the following connection string.
 
 
 
@@ -301,7 +301,7 @@ Create a table in .mdf format by using the following table structure. Create a d
 Add connection String in the Web.config file.
 
 
-Note: Change the username with your system name in the following connection string.
+> Note: Change the username with your system name in the following connection string.
 
 
 
@@ -362,8 +362,6 @@ In the ASPX page, add DropDownList.
 Create new CS file in App_Data folder and name as ‘Data.cs’ and add the following codes in the page. 
 
 {% highlight c# %}
-
-  [Serializable]
 
 public class TabData
 

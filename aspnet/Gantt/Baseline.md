@@ -38,8 +38,9 @@ Baseline is used to describe the original plan of the task and it can be the sam
 The following screenshot shows the baseline in Gantt control.
 
 
-
 ![](Baseline_images/Baseline_img1.png)
+
+_Figure : Baseline_
 
 
 

@@ -13,15 +13,22 @@ The following are the server side events available in the DatePicker control.
 
 <table>
 <tr>
-<td>
-{{ '**Event**' | markdownify }}</td><td>
-{{ '**Event Description**' | markdownify }}</td><td>
-{{ '**Event Description**' | markdownify }}</td></tr>
+<th>
+Event</th><th>
+Event Description</th><th>
+Event Description</th></tr>
 <tr>
 <td>
 OnValueSelect</td><td>
 Occurs when selecting the Date in the DatePicker.</td><td>
-Event Argument contains the following parameters, e.EventType – Event Name.e.isSpecialDay – Returns the boolean value for the selected date whether special day or not.e.PreviousDate – Holds the previously selected value.e.Value – Holds current selected date value.e.Arguments – Contains keys and values for event args.</td></tr>
+Event Argument contains the following parameters, 
+<ul>
+<li>e.EventType – Event Name.</li>
+<li>e.isSpecialDay – Returns the boolean value for the selected date whether special day or not.</li>
+<li>e.PreviousDate – Holds the previously selected value.</li>
+<li>e.Value – Holds current selected date value.</li>
+<li>e.Arguments – Contains keys and values for event args.</li>
+</ul></td></tr>
 </table>
 
 

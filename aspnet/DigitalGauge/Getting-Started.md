@@ -16,6 +16,7 @@ documentation: ug
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
 
+_Figure 16: Digital Thermometer_
 
 
 ## Creating a Digital Gauge
@@ -25,21 +26,19 @@ ASP.NET Digital Gauge widget basically renders flexible API’s. You can easily 
 1. First create a ASP.NET Project and add necessary Dll’s and Scripts with the help of the given ASP.NET-Getting Started Documentation.
 2. Add the mentioned code to the corresponding view page to render Digital Gauge .
    
-   ~~~ html
+{% highlight html %}
 
-        <ej:DigitalGauge runat="server" ID="digital"></ej:DigitalGauge>
+<ej:DigitalGauge runat="server" ID="digital"></ej:DigitalGauge>
 
-
-   ~~~
-   {:.pretty-print }
+{% endhighlight %}
 
 
 Run the above code example and you will get a default Digital Gauge as follows.
 
 
-
 ![](Getting-Started_images/Getting-Started_img2.png)
 
+_Figure 17: Digital gauge_
 
 ## Set Height and Width values
 
@@ -50,7 +49,6 @@ Basic attributes of each canvas elements are height and width. You can set the h
 ### Code:
 
 {% highlight html %}
-
 
 
 <ej:DigitalGauge runat="server" ID="digital" Height="145" Width="260"></ej:DigitalGauge>
@@ -64,12 +62,8 @@ Run the above code example and you will see a default gauge with the specified h
 
 
  ![](Getting-Started_images/Getting-Started_img3.png)
-
-
-
-
-
-
+ 
+_Figure 18: Digital gauge with height and width_
 
 ## Set Items Property
 
@@ -81,11 +75,11 @@ Items have different properties to customize the Digital Gauge.
 
 * In the welcome board, the text color is attentive in nature. You are required to give some segment properties such as segment spacing, segment width, segment color, segment length and segment opacity.
 * Character type is used to define the Digital representation of the character. The five types of character representation available are,
-1. EightCrossEightDotMatrix
-2. SevenSegment
-3. FourteenSegment
-4. SixteenSegment 
-5. EightCrossEightSquareMatrix.
+  1. EightCrossEightDotMatrix
+  2. SevenSegment
+  3. FourteenSegment
+  4. SixteenSegment 
+  5. EightCrossEightSquareMatrix.
 
 #### Code:
 
@@ -115,7 +109,7 @@ Execute this code to render a gauge as follows.
 
 ![](Getting-Started_images/Getting-Started_img4.png)
 
-
+_Figure 19: Digital gauge segment properties_
 
 
 
@@ -126,7 +120,7 @@ Execute this code to render a gauge as follows.
 * Add the required properties such as position, margin, display, etc, to enhance the look of the background image.
 
 
-Important: The background image path is given in background-image url.
+> Important: The background image path is given in background-image url.
 
 
 
@@ -189,7 +183,7 @@ Execute this code to render a gauge as follows.
 ![](Getting-Started_images/Getting-Started_img5.png)
 
 
-
+_Figure 20: Digital gauge Background image_
 
 
 
@@ -235,7 +229,7 @@ Execute this code to render a Gauge as follows.
 ![](Getting-Started_images/Getting-Started_img6.png)
 
 
-
+_Figure 21: Digiatl gauge with segment location_
 
 
 
@@ -328,5 +322,5 @@ Execute this code to render a Digital thermometer as follows.
 
 ![](Getting-Started_images/Getting-Started_img7.png)
 
-
+_Figure 22: Digiatla gauge with item collection_
 

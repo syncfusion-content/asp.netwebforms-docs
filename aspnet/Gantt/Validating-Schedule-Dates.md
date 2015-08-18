@@ -47,4 +47,4 @@ The following screenshot illustrates the output of the above code.
 ![](Validating-Schedule-Dates_images/Validating-Schedule-Dates_img1.png)
 
 
-
+_Figure : Validating schedule dates_

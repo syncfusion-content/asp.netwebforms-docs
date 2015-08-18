@@ -61,9 +61,9 @@ The above properties of ShapeSettings are applied only when AutoFill property va
 
 
 
-![IMG_22042014_095149](Customization_images/Customization_img1.png)
+![](Customization_images/Customization_img1.png)
 
-
+_Map_
 
 ## Color Mapping
 
@@ -176,7 +176,7 @@ When the underlying value is below any of the given sorted range or above the so
 
 ![](Customization_images/Customization_img2.png)
 
-
+_Map with fill_
 
 * Equal Color Mapping - The Equal color mapping is used to differentiate the shape’s fill based on its underlying value and color. The properties of Equal color mapping is listed in the following table.
 
@@ -248,6 +248,7 @@ Here “Map.aspx.cs” is populated with datas of USA Election in “Map.aspx.cs
 
 ![](Customization_images/Customization_img3.png)
 
+_Map with fill color_
 
 
 ## ColorPalette
@@ -292,6 +293,7 @@ The ColorPalette property can be set with Palette1, Palette2, Palette3 and Custo
 
 ![](Customization_images/Customization_img4.png) 
 
+_Map with color palette property_
 
 
 ## CustomPalette
@@ -348,7 +350,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 ![](Customization_images/Customization_img5.png)
 
-
+_Map with custom palette_
 
 ## Tooltip
 
@@ -381,7 +383,7 @@ The tooltip is displayed only when you set ShowTooltip to “True” in the shap
 
 ![](Customization_images/Customization_img6.png)
 
-
+_Map with Tooltip_
 
 ## Tooltip Template
 
@@ -443,7 +445,7 @@ The TooltipTemplate property is used for customizing the template for tooltip.
 The following screenshot illustrates a map control displaying a Tooltip with template.
 
 
-![a](Customization_images/Customization_img7.png)
+![](Customization_images/Customization_img7.png)
 
-
+_Map with tooltip template_
 

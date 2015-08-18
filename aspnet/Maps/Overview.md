@@ -13,7 +13,7 @@ A Map is a graphical representation of geographical data. It is used to represen
 
 ## Use Case Scenarios
 
-## Some of the Maps control use case scenarios:
+### Some of the Maps control use case scenarios:
 
 1. To visualize weather data.
 2. To visualize geographical statistics information.

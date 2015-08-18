@@ -51,9 +51,9 @@ Highlight section highlights the current month, current week, current workdays. 
 
 <table>
 <tr>
-<td>
-{{ '**Name**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Month</td><td>

@@ -17,9 +17,9 @@ The various keyboard shortcuts available within the NumericTextbox control are a
 
 <table>
 <tr>
-<td>
-{{ '**Shortcut Key**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Shortcut Key</th><th>
+Description</th></tr>
 <tr>
 <td>
 { Access key } + j</td><td>

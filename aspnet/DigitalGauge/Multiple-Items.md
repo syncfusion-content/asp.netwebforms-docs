@@ -110,6 +110,6 @@ Execute the above code example to render the DigitalGauge as follows.
 ![](Multiple-Items_images/Multiple-Items_img1.png)
 
 
-
+_Figure 36: Digital Gauge control with multiple items_
 
 

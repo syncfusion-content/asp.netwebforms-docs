@@ -24,7 +24,9 @@ Localized string value for en-US culture</th></tr>
 <tr>
 <td>
 Empty Record</td><td>
-emptyRecord: "No records to display"</td></tr>
+{% highlight js %}
+emptyRecord: "No records to display"
+{% endhighlight %}</td></tr>
 <tr>
 <td>
 Column Header Texts:
@@ -46,15 +48,69 @@ predecessor
 baselineStartDate
 
 baselineEndDate</td><td>
-columnHeaderTexts: {    taskId: "ID",    taskName: "Task Name",    startDate: "Start Date",    endDate: "End Date",    resourceInfo: "Resources",    duration: "Duration",    status: "Progress",    predecessor: "Predecessor",    baselineStartDate: "Baseline Start Date",    baselineEndDate: "Baseline End Date"}</td></tr>
+{% highlight js %}
+columnHeaderTexts: {    
+taskId: "ID",    
+taskName: "Task Name",    
+startDate: "Start Date",    
+endDate: "End Date",    
+resourceInfo: "Resources",    
+duration: "Duration",    
+status: "Progress",    
+predecessor: "Predecessor",    
+baselineStartDate: "Baseline Start Date",    
+baselineEndDate: "Baseline End Date"
+}
+{% endhighlight %}</td></tr>
 <tr>
 <td>
 Edit Dialog Texts:addFormTitleeditFormTitlesaveButtoncancelButton</td><td>
-editDialogTexts: {     addFormTitle: "New Task",     editFormTitle: "Edit Task",     saveButton: "Save",     cancelButton: "Cancel" },</td></tr>
+{% highlight js %}
+editDialogTexts: {     
+addFormTitle: "New Task",     
+editFormTitle: "Edit Task",     
+saveButton: "Save",     
+cancelButton: "Cancel" 
+}, 
+{% endhighlight %}
+</td></tr>
 <tr>
 <td>
 Date Format</td><td>
-calendars: {     standard: {         days: {             // full name of days             names: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],             // abbreviated names of days             namesAbbr: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],         },         months: {             // full name of months             names: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],             // abbreviated name of months             namesAbbr: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]         },         // set of predefined date and time patterns used by the culture.         patterns: {             d: "M/d/yyyy",             D: "dddd, MMMM dd, yyyy",             F: "dddd, MMMM dd, yyyy h:mm:ss tt",             g: "M/d/yyyy h:mm tt",             G: "M/d/yyyy h:mm:ss tt",             m: "MMMM dd",             M: "MMMM dd",             s: "yyyy'-'MM'-'ddTHH':'mm':'ss",             t: "h:mm tt",             T: "h:mm:ss tt",             u: "yyyy'-'MM'-'dd HH':'mm':'ss'Z'",             y: "MMMM, yyyy",             Y: "MMMM, yyyy"         }     } }</td></tr>
+{% highlight js %}
+calendars: {     
+standard: {         
+days: {             
+// full name of days             
+names: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],             
+// abbreviated names of days             
+namesAbbr: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],         
+},        
+ months: {             
+ // full name of months             
+ names: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],             
+ // abbreviated name of months             
+ namesAbbr: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]         
+ },         
+ // set of predefined date and time patterns used by the culture.         
+ patterns: {             
+ d: "M/d/yyyy",             
+ D: "dddd, MMMM dd, yyyy",             
+ F: "dddd, MMMM dd, yyyy h:mm:ss tt",             
+ g: "M/d/yyyy h:mm tt",             
+ G: "M/d/yyyy h:mm:ss tt",             
+ m: "MMMM dd",            
+ M: "MMMM dd",             
+ s: "yyyy'-'MM'-'ddTHH':'mm':'ss",             
+ t: "h:mm tt",             
+ T: "h:mm:ss tt",             
+ u: "yyyy'-'MM'-'dd HH':'mm':'ss'Z'",             
+ y: "MMMM, yyyy",             
+ Y: "MMMM, yyyy"         
+ }    
+ } 
+ }
+ {% endhighlight %}</td></tr>
 </table>
 
 
@@ -89,4 +145,4 @@ The following screenshot shows Gantt with French culture.
 ![](Localization_images/Localization_img1.png)
 
 
-
+_Figure : Localization_

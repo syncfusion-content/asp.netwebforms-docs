@@ -20,9 +20,9 @@ documentation: ug
 
 
 
-     ~~~ html
+{% highlight html %}
 
-            <ej:DigitalGauge runat="server" ID="DigitalGauge1">
+<ej:DigitalGauge runat="server" ID="DigitalGauge1">
 
 
 
@@ -42,14 +42,10 @@ documentation: ug
 
             </ej:DigitalGauge>
 
-     ~~~
-     {:.pretty-print }
+{% endhighlight %}
 
 Execute the above code examples to render the DigitalGauge as follows.
 
-
-
 ![](Digital-Elements_images/Digital-Elements_img1.png)
 
-
-
+_Figure 29: Digital Gauge control with text customization_

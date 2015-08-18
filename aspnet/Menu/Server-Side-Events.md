@@ -11,10 +11,10 @@ documentation: ug
 
 <table>
 <tr>
-<td>
-{{ '**Event Name**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Parameters**' | markdownify }}</td></tr>
+<th>
+Event Name</th><th>
+Description</th><th>
+Parameters</th></tr>
 <tr>
 <td>
 OnItemClick</td><td>

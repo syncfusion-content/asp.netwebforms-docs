@@ -45,7 +45,7 @@ documentation: ug
         </ej:DigitalGauge>
 
   ~~~
-  {:.pretty-print }
+  {:.prettyprint }
 
 Execute the above code examples to render the DigitalGauge as follows.
 
@@ -54,7 +54,7 @@ Execute the above code examples to render the DigitalGauge as follows.
 ![](Segment-Settings_images/Segment-Settings_img1.png)
 
 
-
+_Figure 30: Digital Gauge control with segment settings_
 
 
 ## Dimension Modification
@@ -91,7 +91,7 @@ Execute the above code examples to render the DigitalGauge as follows.
         </ej:DigitalGauge>
 
   ~~~
-  {:.pretty-print }
+  {:.prettyprint }
 
 Execute the above code examples to render the DigitalGauge as follows.
 
@@ -99,7 +99,7 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 ![](Segment-Settings_images/Segment-Settings_img2.png)
 
-
+_Figure 31: Digital Gauge control with segment dimension_
 
 
 

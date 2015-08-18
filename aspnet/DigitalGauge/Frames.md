@@ -33,7 +33,7 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 ![](Frames_images/Frames_img1.png)
 
-
+_Figure 27: Digital Gauge control with frame inner and outer width_
 
 
 
@@ -87,5 +87,5 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 
 
-
+_Figure 28: Digital Gauge control with frame background image_
 

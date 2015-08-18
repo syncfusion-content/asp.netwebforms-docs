@@ -15,7 +15,7 @@ Nodes are graphical object that represent visual data to be placed on the page.
 
  ![C:/Users/labuser/Desktop/a.png](Node_images/Node_img1.png) 
 
-
+_Node_
 
 ## Create Node
 
@@ -51,7 +51,7 @@ model.Nodes.Add(node);
 
  ![](Node_images/Node_img2.png) 
 
-
+_Node_
 
 List of preloaded nodes from symbol palette are added to the Diagram by clicking the palette nodes or by dragging a node and dropping on the Diagram. The method to add node/connector to palette and drag and drop on Diagram is explained in palette section
 
@@ -105,7 +105,7 @@ node.Shape = BasicShapes.Ellipse;
 
  ![](Node_images/Node_img3.png) 
 
-
+_Built-in Shapes_
 
 ### Html
 
@@ -159,7 +159,7 @@ node.Value="button";
 
 ![](Node_images/Node_img4.png) 
 
-
+_Html Shape_
 
 ### Text Node
 
@@ -189,7 +189,7 @@ node.TextBlock = block;
 
  ![](Node_images/Node_img5.png) 
 
-
+_Text Shape_
 
 ### Path
 
@@ -215,7 +215,7 @@ node.PathData = "M 67.2947 100 L 67.2947 0.00102291 L 59.138 0.00102291 M 100 50
 
  ![C:/Users/labuser/Desktop/a.png](Node_images/Node_img6.png) 
 
-
+_Path Shape_
 
 ### Polygon
 
@@ -267,7 +267,7 @@ node.Points = points;
 
 ![](Node_images/Node_img7.png) 
 
-
+_Polygon Shape_
 
 ### Native 
 
@@ -328,13 +328,13 @@ node.Text="Mail";
 ![](Node_images/Node_img8.png) 
 
 
+_Native Shape_
 
-
-Note:
-
-Shapes of type Node or HTML cannot be exported to an image format, like JPEG, PNG and BMP. It is by design that while exporting, Diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas from all possible HTML and SVG elements is not feasible. So, this limitation._ 
-
-Note that fill color is applied to the Native Node only when its inline style or fill for an SVG child element is not specified. In the following example, the node’s fill color is overridden by the specified color for the group._
+> Note:
+>
+> Shapes of type Node or HTML cannot be exported to an image format, like JPEG, PNG and BMP. It is by design that while exporting, Diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas from all possible HTML and SVG elements is not feasible. So, this limitation.
+>
+> Note that fill color is applied to the Native Node only when its inline style or fill for an SVG child element is not specified. In the following example, the node’s fill color is overridden by the specified color for the group.
 
 
 {% highlight html %}
@@ -373,7 +373,7 @@ node.Source = "sample/Syncfusion.PNG";
 
  ![](Node_images/Node_img10.png) 
 
-
+_Image Shape_
 
 ## Shadow
 
@@ -381,7 +381,7 @@ Dropshadoweffect for a node can be enabled or disabled by using the NodeConstrai
 
 ![](Node_images/Node_img11.png) 
 
-
+_Shadow_
 
 {% highlight c# %}
 
@@ -427,7 +427,7 @@ node.Shadow.Angle = 50;
 
 ![](Node_images/Node_img12.png) 
 
-
+_Shadow Customization_
 
 ## Appearance
 
@@ -436,10 +436,10 @@ You can customize the appearance of the shapes by using node customization prope
 
 <table>
 <tr>
-<td>
-{{ '**Properties**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Properties</th><th>
+Data Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 Visible</td><td>
@@ -534,7 +534,7 @@ node.LinearGradient = gradient;
 
 ![](Node_images/Node_img13.png) 
 
-
+_Customized Node_
 
 ## Constraints
 
@@ -545,9 +545,9 @@ You can enable or disable certain behaviors of Nodes by using Node’s constrain
 
 <table>
 <tr>
-<td>
-{{ '**Constraints**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Constraints</th><th>
+Description</th></tr>
 <tr>
 <td>
 Select</td><td>
@@ -647,7 +647,7 @@ node.Constraints = NodeConstraints.Select| NodeConstraints.Rotate;
 
  ![http://help.syncfusion.com/ug/js/ImagesExt/image59_17.jpg](Node_images/Node_img14.jpeg) 
 
-
+_Rotator Constraints–Enabled_
 
 The following code illustrates how to disable rotate constraints. Disabling rotate constraint does not allow you to rotate the node.
 
@@ -669,7 +669,7 @@ node.Constraints = node.Constraints &~ NodeConstraints.Rotate;
 
  ![http://help.syncfusion.com/ug/js/ImagesExt/image59_18.jpg](Node_images/Node_img15.jpeg) 
 
+_Rotate Constraints-disabled_
 
-
-Note: Node’s constraints property is manipulated by using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations.
+> Note: Node’s constraints property is manipulated by using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations.
 

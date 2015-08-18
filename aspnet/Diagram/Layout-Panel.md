@@ -22,10 +22,7 @@ _Group properties_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Data type**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Property</th><th>Data type</th><th>Description</th></tr>
 <tr>
 <td>
 MarginLeft</td><td>
@@ -179,7 +176,7 @@ private Node CreateNode(string name, int marginTop, int marginLeft, string color
 
  ![](Layout-Panel_images/Layout-Panel_img1.png) 
 
-
+_Canvas Panel_
 
 ## Stack panel
 
@@ -270,4 +267,4 @@ private Node CreateNode(string name, string color, HorizontalAlignment alignment
  ![](Layout-Panel_images/Layout-Panel_img2.png)
 
 
-
+_Stack Panel containing three nodes_

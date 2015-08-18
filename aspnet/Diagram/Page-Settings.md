@@ -15,10 +15,7 @@ _Page settings_
 
 <table>
 <tr>
-<td>
-{{ '**Properties**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Properties</th><th>Data Type</th><th>Description</th></tr>
 <tr>
 <td>
 PageWidth</td><td>
@@ -99,7 +96,7 @@ Diagram1.PageSettings.PageOrientation = PageOrientation.Portrait;
 
  ![](Page-Settings_images/Page-Settings_img1.png) 
 
-
+_Page Appearance-PageSettings based_
 
 ## MultiplePage and PageBreaks
 
@@ -107,7 +104,7 @@ When MultiplePage is enabled, size of the page dynamically increases or decrease
 
 ![](Page-Settings_images/Page-Settings_img2.png) 
 
-
+_Multiple Page and Page Breaks_
 
 ## AutoScroll
 
@@ -125,10 +122,7 @@ _Properties table_
 
 <table>
 <tr>
-<td>
-{{ '**Properties**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Properties</th><th>Data Type</th><th>Description</th></tr>
 <tr>
 <td>
 ScrollLimit</td><td>
@@ -176,7 +170,7 @@ The scroll limit allows you to scroll the diagram page along X and Y axes based 
 * When scroll limit is set as diagram, you are restricted to scroll the page beyond the diagram content. 
 * By specifying the value as limited, you can set the limit of the scrollable area through scrollable area property. 
 
-  Note: Refer to the scrollable area for more details._
+> Note: Refer to the scrollable area for more details.
 
 The following code example illustrates how to specify scroll limit. 
 
@@ -224,5 +218,5 @@ DiagramContent.PageSettings.ScrollLimit=
 
  ![](Page-Settings_images/Page-Settings_img4.png) 
 
-
+_AutoScroll Border_
 

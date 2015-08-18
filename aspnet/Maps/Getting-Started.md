@@ -17,9 +17,9 @@ You can configure an Essential ASP.NET Map with simple steps. In this example, y
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
+_Map_
 
-
-## Create a simple ASP.NET Application 
+### Create a simple ASP.NET Application 
 
 To begin, create a new ASP.NET Web application with necessary Dll’s and Scripts.
 
@@ -249,8 +249,6 @@ new CountyPopulationData(){ Name= "Wyoming", Population=582658}
 
 1. Create an HTML file and add necessary script and CSS files in Head tag as illustrated in the following code example.
 
-
-
    ~~~ html
         
 
@@ -291,13 +289,11 @@ new CountyPopulationData(){ Name= "Wyoming", Population=582658}
 
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 
 
 2. Create a <div> tag and set the height and width to determine the map size and add map element to render Maps in body tag.
-
-
 
    ~~~ html
 
@@ -322,19 +318,13 @@ new CountyPopulationData(){ Name= "Wyoming", Population=582658}
 
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 
 
 3. Populate data in Map.aspx.cs file as illustrated in the following code example.
 
-
-
-   ~~~ c#
-
-
-
-
+   ~~~ cs
 
         public partial class Default: Page
 
@@ -371,7 +361,7 @@ new CountyPopulationData(){ Name= "Wyoming", Population=582658}
 
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 
 
@@ -380,17 +370,15 @@ The above code renders a map with default properties and shape input provided th
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
-
+_Map with default properties_
 
 ### Data Binding in Map
 
 The following properties in shape layers is used for binding datas in Maps control.
 
-### DataSource
-
-ShapeDataPath
-
-ShapePropertyPath
+* DataSource
+* ShapeDataPath
+* ShapePropertyPath
 
 ### DataSource
 
@@ -406,42 +394,76 @@ The ShapePropertyPath property is similar to the ShapeDataPath that refers the c
 
 
 {% highlight html %}
-     <ej:Map ID=“map” runat="server"  EnableAnimation ="true" >        <Layers>            <ej:ShapeLayer LayerType="Geometry" ShapeDataPath = "name" ShapePropertyPath= "name">            </ej:ShapeLayer>        </Layers>      </ej:Map></td></tr>
 
+     <ej:Map ID=“map” runat="server"  EnableAnimation ="true" >       
+		<Layers>            
+			<ej:ShapeLayer LayerType="Geometry" ShapeDataPath = "name" ShapePropertyPath= "name">           
+			</ej:ShapeLayer>        
+		</Layers>     
+	 </ej:Map>
+	 
 {% endhighlight %}
+
 {% highlight c# %}
    
-     public partial class Default: Page    {        protected void Page_Load(object sender, EventArgs e)        {            (this.map.Layers[0] as ShapeLayer).DataSource = Election_Result.GetUSPopulationData();            (this.map.Layers[0] as ShapeLayer).ShapeData = this.GetUSA();        }    }</td></tr>
+     public partial class Default: Page    
+	 {        
+		protected void Page_Load(object sender, EventArgs e)        
+		{            
+		(this.map.Layers[0] as ShapeLayer).DataSource = Election_Result.GetUSPopulationData();            
+		(this.map.Layers[0] as ShapeLayer).ShapeData = this.GetUSA();       
+		}    
+	 }
 {% endhighlight %}
+
 ### Customizing Map Appearance 
 
 You can customize the shape’s color by using Fill, Stroke and StrokeThickness properties in ShapeSettings.
 
 {% highlight html %}
     
-    <ej:Map ID=“map” runat="server"  EnableAnimation ="true" >        <Layers>       <ej:ShapeLayer LayerType="Geometry" EnableSelection = "false" ShapeDataPath = "name" ShapePropertyPath= "name" EnableMouseHover = "true">         <ShapeSettings Fill = "Gray" StrokeThickness = "0.5" Stroke = "white" ValuePath = "name" HightlightStroke = "White" HightlightColor = "#BC5353" HightlightBorderWidth = "1">                </ShapeSettings>           </ej:ShapeLayer>             </Layers>    </ej:Map></td></tr>
+    <ej:Map ID=“map” runat="server"  EnableAnimation ="true" >  
+	
+		<Layers>       
+		
+			<ej:ShapeLayer LayerType="Geometry" EnableSelection = "false" ShapeDataPath = "name" ShapePropertyPath= "name" EnableMouseHover = "true">         
+				
+				<ShapeSettings Fill = "Gray" StrokeThickness = "0.5" Stroke = "white" ValuePath = "name" HightlightStroke = "White" HightlightColor = "#BC5353" HightlightBorderWidth = "1">                
+				
+				</ShapeSettings> 
+				
+			</ej:ShapeLayer> 
+            
+		</Layers>    
+		
+	</ej:Map>
+	
 {% endhighlight %}
+
 {% highlight c# %}
        
-    protected void Page_Load(object sender, EventArgs e)        {            (this.map.Layers[0] as ShapeLayer).DataSource = Election_Result.GetUSPopulationData();            (this.map.Layers[0] as ShapeLayer).ShapeData = this.GetUSA();        }</td></tr>
+    protected void Page_Load(object sender, EventArgs e)
+	{	
+		(this.map.Layers[0] as ShapeLayer).DataSource = Election_Result.GetUSPopulationData();
+		
+		(this.map.Layers[0] as ShapeLayer).ShapeData = this.GetUSA();        
+	}
 
 {% endhighlight%}
 
-![IMG_22042014_095149](Getting-Started_images/Getting-Started_img3.png)
+![](Getting-Started_images/Getting-Started_img3.png)
 
-
+_Customized Map_
 
 ### Customizing Map Appearance by Range
 
 The Range color mapping is used to differentiate the shape’s fill based on its underlying value and color ranges. The From and To properties defines the value ranges and the GradientColors property defines the equivalent color ranges respective to their value ranges.
 
-Note: The EnableGradient property value should be true to apply gradient colors for maps.
+> Note: The EnableGradient property value should be true to apply gradient colors for maps.
 
 
 
 {% highlight html %}
-
-   
 
 
 
@@ -486,6 +508,7 @@ Note: The EnableGradient property value should be true to apply gradient colors 
     </ej:Map>        
 
 {% endhighlight  %}
+
 {% highlight c# %}
 
         protected void Page_Load(object sender, EventArgs e)
@@ -495,14 +518,8 @@ Note: The EnableGradient property value should be true to apply gradient colors 
             (this.map.Layers[0] as ShapeLayer).DataSource = Election_Result.GetUSPopulationData();
 
             (this.map.Layers[0] as ShapeLayer).ShapeData = this.GetUSA();
-
-
-
+			
         }
-
-
-
-
 
 {% endhighlight %}
 
@@ -514,7 +531,7 @@ The following screenshot illustrates a map with gradient color property enable.
 
 ![](Getting-Started_images/Getting-Started_img4.png)
 
-
+_Customized Map by range_
 
 ### Enable Tooltip
 
@@ -582,7 +599,7 @@ The following screenshot illustrates a Map control displaying a Tooltip.
 
 ![](Getting-Started_images/Getting-Started_img5.png)
 
-
+_Map with tooltip_
 
 ### Legend
 
@@ -658,5 +675,6 @@ The following screenshot illustrates a map displaying an interactive legend.
 
 ![](Getting-Started_images/Getting-Started_img6.png)
 
+_Map with interactive Legend_
 
 

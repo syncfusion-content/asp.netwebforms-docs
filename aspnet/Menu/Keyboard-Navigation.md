@@ -15,9 +15,9 @@ The various keyboard shortcuts available within the Menu control are discussed i
 
 <table>
 <tr>
-<td>
-{{ '**Keys**' | markdownify }}</td><td>
-{{ '**Usage**' | markdownify }}</td></tr>
+<th>
+Keys</th><th>
+Usage</th></tr>
 <tr>
 <td>
 Esc</td><td>

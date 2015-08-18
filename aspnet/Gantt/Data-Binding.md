@@ -235,6 +235,7 @@ namespace ASP_Doc.Gantt
 }
 
 {% endhighlight %}
+
 {% highlight html %}
 
 
@@ -300,7 +301,7 @@ The output of the above steps is as follows.
 
 ![](Data-Binding_images/Data-Binding_img1.png)
 
-
+_Figure : Data Binding_
 
 ## Self-Referential Data Binding (Flat Data)
 
@@ -751,5 +752,5 @@ The following screenshot shows the output of the above steps.
 
 ![](Data-Binding_images/Data-Binding_img2.png) 
 
-
+_Figure : Self-Referential Data Binding_
 

@@ -21,11 +21,7 @@ _Field properties_
 
 <table>
 <tr>
-<td>
-{{ '**Name**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Default**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
 <tr>
 <td>
 DataSource</td><td>
@@ -157,7 +153,7 @@ Diagram.Model.DefaultSettings.Connector = new Connector() {
 
  ![](Data-Binding_images/Data-Binding_img1.png) 
 
-
+_Local Data binding_
 
 ## Remote Data
 
@@ -257,7 +253,7 @@ $(window).load(function () {
 
  ![](Data-Binding_images/Data-Binding_img2.png) 
 
-
+_Remote data binding_
 
 ### Root
 
@@ -285,7 +281,7 @@ Diagram.Model.DataSourceSettings.Id = "Id";
 
 ![](Data-Binding_images/Data-Binding_img3.png) 
 
-
+_DataSource with Root_
 
 ## SQL data for ASP.NET
 
@@ -334,7 +330,7 @@ The following screenshot illustrates the SQL binding.
 
  ![](Data-Binding_images/Data-Binding_img4.png) 
 
-
+_SQL Binding_
 
 ## HTML Binding
 
@@ -531,4 +527,4 @@ Diagram.Model.DataSourceSettings.Id = "Id";
 ![](Data-Binding_images/Data-Binding_img5.png) 
 
 
-
+_HTML Data Binding_

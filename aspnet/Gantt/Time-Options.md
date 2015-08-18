@@ -284,5 +284,5 @@ Execute the above code to render the following output.
 
 ![](Time-Options_images/Time-Options_img1.png)
 
-
+_Figure : Gantt with Time Options_
 

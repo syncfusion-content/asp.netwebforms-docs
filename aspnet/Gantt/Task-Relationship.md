@@ -67,7 +67,7 @@ The following code example shows you how to show the predecessor in the Gantt co
 
 {% endhighlight %}
 
-
+_Figure : Task relationship_
 
 The following screenshot displays the output of the above code. 
 
@@ -75,5 +75,5 @@ The following screenshot displays the output of the above code.
 
 ![](Task-Relationship_images/Task-Relationship_img5.png)
 
-
+_Figure : Task relationship_
 

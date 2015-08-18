@@ -15,6 +15,7 @@ Connectors are objects used to create a link between two nodes. A connector is a
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image59_20.jpg](Connector_images/Connector_img1.jpeg) 
 
+_Connector_
 
 ## Create Connector
 
@@ -50,7 +51,7 @@ Diagram1.Connectors.Add(connector);
 
  ![](Connector_images/Connector_img2.png) 
 
-
+_Connector_
 
 ## Segments
 
@@ -105,7 +106,7 @@ Diagram1.Connectors.Add(connector);
 
  ![](Connector_images/Connector_img3.png)
 
-
+_Orthogonal Segment_
 
 The following code illustrates how to customize the Orthogonal Segment.
 
@@ -156,6 +157,7 @@ Diagram1.Connectors.Add(connector);
 
  ![](Connector_images/Connector_img4.png) 
 
+_Orthogonal Segment_
 
 ### Straight Segment
 
@@ -220,12 +222,12 @@ Diagram1.Connectors.Add(connector);
 
 ![C:/Users/lakshmipriya/Desktop/IMG_07112014_125619.png](Connector_images/Connector_img5.png) 
 
-
+_Polyline_
 
 
 ![](Connector_images/Connector_img6.png) 
 
-
+_Single Line_
 
 The control points can be added or deleted at runtime with shortcut key combination ctrl + shift +click on the control point.
 
@@ -286,7 +288,7 @@ Diagram1.Connectors.Add(connector);
 
 ![](Connector_images/Connector_img7.png) 
 
-
+_Bezier Segments_
 
 The following code example illustrates how to add vector point for Bezier segments.
 
@@ -338,7 +340,7 @@ DiagramContent.Connectors.Add(connector);
 
 ![](Connector_images/Connector_img8.png)
 
-
+_Bezier segment with vectors_
 
 #### Editing Segments
 
@@ -348,7 +350,7 @@ The segments can be edited during runtime by dragging control thumbs. Segments c
 
 ![](Connector_images/Connector_img9.png) 
 
-
+_Segment Editing_
 
 
 ## Connector Padding
@@ -379,7 +381,7 @@ connector.TargetPadding = 20;
 
 ![](Connector_images/Connector_img10.png) 
 
-
+_Endpoint’s adjustment specific to connector’s ends_
 
 ### Endpoint adjustment specific to nodes
 
@@ -401,7 +403,7 @@ node.ConnectorPadding = 20;
 
 ![](Connector_images/Connector_img11.png) 
 
-
+_Endpoint’s adjustment specific to nodes_
 
 ### Endpoint adjustment specific to ports
 
@@ -425,7 +427,7 @@ port.ConnectorPadding = 20;
 
 ![](Connector_images/Connector_img12.png) 
 
-
+_Endpoint’s adjustment with specific to ports_
 
 ## Line Bridging
 
@@ -483,7 +485,7 @@ DiagramContent.Constraints = DiagramConstraints.Default | DiagramConstraints.Bri
 
 ![](Connector_images/Connector_img13.png) 
 
-
+_Line Bridging_
 
 When the connector constraint is set as ConnectorConstraints.InheritBridging, bridging is based on DiagramConstraints.
 
@@ -497,10 +499,7 @@ BridgeDirection Property
 
 <table>
 <tr>
-<td>
-{{ '**Properties**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Value**' | markdownify }}</td></tr>
+<th>Properties</th><th>Description</th><th>Value</th></tr>
 <tr>
 <td>
 BridgeDirection</td><td>
@@ -531,7 +530,7 @@ DiagramContent.Model.BridgeDirection = BridgeDirection.Top;
 ![](Connector_images/Connector_img14.png) 
 
 
-
+_BridgeDirection.Top_
 
 
 Example 2: Bridge for Vertical Connector with BridgeDirection as Left.
@@ -551,7 +550,7 @@ DiagramContent.Model.BridgeDirection = BridgeDirection.Left;
 
  ![](Connector_images/Connector_img15.png) 
 
-
+_BridgeDirection.Left_
 
 
 
@@ -597,7 +596,7 @@ Connector.CornerRadius=20;
 
 ![](Connector_images/Connector_img16.png) 
 
-
+_Corner Radius_
 
 ## Connecting Nodes
 
@@ -625,7 +624,7 @@ connector.TargetNode = "tailnode"; //Sets name of targetNode
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image59_22.jpg](Connector_images/Connector_img17.jpeg) 
 
-
+_Node to Node Connection_
 
 The point of connection is changed optimally at runtime while performing operations such as Rotating and Dragging on Source/Target Node of Connector. In case of static or specific point connection at runtime, the Port assists to maintain specific point connection between Nodes.
 
@@ -643,10 +642,7 @@ _Appearance_
 
 <table>
 <tr>
-<td>
-{{ '**Properties**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Properties</th><th>Data Type</th><th>Description</th></tr>
 <tr>
 <td>
 LineWidth</td><td>
@@ -732,10 +728,7 @@ _Decorator Appearance_
 
 <table>
 <tr>
-<td>
-{{ '**Properties**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Properties</th><th>Data Type</th><th>Description</th></tr>
 <tr>
 <td>
  Width</td><td>
@@ -803,7 +796,7 @@ connector.SourceDecorator.FillColor = "yellow";
 
  ![http://help.syncfusion.com/ug/js/ImagesExt/image59_23.jpg](Connector_images/Connector_img18.jpeg) 
 
-
+_Decorator Shape_
 
 ## Constraints
 
@@ -815,9 +808,7 @@ _Constraints_
 
 <table>
 <tr>
-<td>
-{{ '**Constraints**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Constraints</th><th>Description</th></tr>
 <tr>
 <td>
 None</td><td>
@@ -886,5 +877,5 @@ connector.Constraints = connector.Constraints &~(ConnectorConstraints.Select);
 
 
 
-Note: Connector’s constraints property is manipulated by using bitwise operations. For more information about bitwise operations, see_ [Bitwise Operations](http://help.syncfusion.com/ug/js/documents/bitwiseoperations.htm).
+> Note: Connector’s constraints property is manipulated by using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](http://help.syncfusion.com/ug/js/documents/bitwiseoperations.htm)
 

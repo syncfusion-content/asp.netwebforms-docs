@@ -23,12 +23,14 @@ Gantt chart is used to edit and visualize project schedule and also to track pro
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
 
+_Figure : Elements of a Gantt chart_
 
 
 * Toolbar – It is a collection of toolbar buttons to add, edit, and delete a task. You can outdent and indent a task using outdent and indent buttons. Following screen shot illustrates the function of each toolbar button,
 
   ![](Getting-Started_images/Getting-Started_img2.png)
-
+  _Figure : Toolbar of Gantt chart_
+  
 * Search Textbox – It is used to search tasks, which contains the search string.
 * Resource Names – It displays the names of the resources assigned to that task.
 * Task bar – It is a graphical representation of the duration of task.
@@ -40,7 +42,7 @@ Gantt chart is used to edit and visualize project schedule and also to track pro
 
   ![](Getting-Started_images/Getting-Started_img3.png)
 
-
+_Figure : Editing options Gantt chart_
 
 ### Create your Gantt chart
 
@@ -48,7 +50,7 @@ In this tutorial, you will learn how to create a simple Gantt chart, add tasks a
 
 ![](Getting-Started_images/Getting-Started_img4.png) 
 
-
+_Figure : Simple Gantt chart_
 
 1. First create a new ASP.NET Web Form project ; please refer the [ASP-Getting Started documentation](http://help.syncfusion.com/ug/js/default.htm) to create new project and add necessary DLL’s and script files.
 2. Create the web form  named as default and add the following template
@@ -87,7 +89,7 @@ In this tutorial, you will learn how to create a simple Gantt chart, add tasks a
 
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 
 
@@ -138,15 +140,13 @@ In this tutorial, you will learn how to create a simple Gantt chart, add tasks a
 
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 
 
 4. Create a data source in default.aspx.cs file and assign the data source to the Gantt control.
 
-
-
-   ~~~ c#
+   ~~~ cs
 
         protected void Page_Load(object sender, EventArgs e)
 
@@ -315,13 +315,13 @@ In this tutorial, you will learn how to create a simple Gantt chart, add tasks a
 
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 The following screenshot displays the Gantt.
 
 ![](Getting-Started_images/Getting-Started_img5.png)
 
-
+_Figure 25: Gantt chart_
 
 #### Enable Toolbar
 
@@ -348,11 +348,13 @@ The following screen shot displays a Tool bar in Gantt.
 
 Note:add, edit, delete options are enabled when enabling the allowEditing, allowAdding, allowDelete in the edit Settings.
 
+_Figure : Toolbar in Gantt chart_
+
 #### Enable sorting 
 
 Gantt control has the sorting functionality for arranging the tasks in ascending or descending based on the particular column.
 
-##### Multicolumn sorting:
+#### Multicolumn sorting:
 
 Enable the multicolumn sorting in Gantt by setting AllowMultiSorting to “True”. You can sort multiple columns in Gantt by selecting the desired column header while holding the CTRL key.
 
@@ -378,15 +380,15 @@ Enable the multicolumn sorting in Gantt by setting AllowMultiSorting to “True�
 
 You can enable editing using EditOption and AllowGanttChartEditing options.
 
-##### Cell Editing:
+#### Cell Editing:
 
 Modify the task details through the grid cell editing by setting the EditMode as CellEditing.
 
-##### Normal Editing:
+#### Normal Editing:
 
 Modify the task details through the edit dialog by setting the EditMode as Normal.
 
-##### Taskbar Editing:
+#### Taskbar Editing:
 
 Modify the task details through user interaction like resizing and dragging the taskbar.
 
@@ -440,7 +442,7 @@ The following screen shot displays Gantt chart with Enable Context menu option.
 
 ![](Getting-Started_images/Getting-Started_img10.png)  
 
-
+_Figure : Gantt control with Enable Editing options_
 
 #### Provide tasks relationship
 
@@ -448,19 +450,19 @@ In Gantt control, you have the predecessor support to show the relationship betw
 
 #### Types:
 
-##### Start to Start (SS)
+#### Start to Start (SS)
 
 You cannot start a task until the other task is also started.
 
-##### Start to Finish (SF)
+#### Start to Finish (SF)
 
 You cannot finish a task until the other task is started.
 
-##### Finish to Start (FS)
+#### Finish to Start (FS)
 
 You cannot start a task until the other task is completed.
 
-##### Finish to Finish (FF)
+#### Finish to Finish (FF)
 
 You cannot finish a task until the other task is completed.
 
@@ -486,7 +488,7 @@ The following screen shot displays the relationship between tasks.
 
 ![](Getting-Started_images/Getting-Started_img11.png)
 
-
+_ Figure : Gantt chart with relationships between tasks_
 
 #### Provide Resources
 
@@ -510,7 +512,7 @@ protected void Page_Load(object sender, EventArgs e)
     this.GanttControlDefault.DataBind();     
 
 }
-
+   _Figure : Resource allocation for tasks in Gantt_
 
 
 //...

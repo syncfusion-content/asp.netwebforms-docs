@@ -91,5 +91,5 @@ $(function () {
 
 ![](Knockout-Binding_images/Knockout-Binding_img1.png) 
 
-
+_Page Background through knockout_
 

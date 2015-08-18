@@ -81,12 +81,7 @@ Add the following code example in your ASPX page to render the Textbox control.
 
 {% highlight html %}
 
-
-
 <ej:MaskEdit ID="mask" MaskFormat="99-999-CCCC" Value="123456" CustomCharacter="r" HidePromptOnLeave="true" InputMode="Text"  runat="server"> </ej:MaskEdit>
-
-
-
 
 
 {% endhighlight %}
@@ -95,25 +90,10 @@ Add the following code example in your ASPX page to render the Textbox control.
 
 The output for Mask Edit Textbox with its properties.
 
-![C:/Users/giftline.jebamani/Desktop/a.png](Mask-Edit-Properties_images/Mask-Edit-Properties_img1.png) 
-
-![C:/Users/giftline.jebamani/Desktop/b.png](Mask-Edit-Properties_images/Mask-Edit-Properties_img2.png)
+![](Mask-Edit-Properties_images/Mask-Edit-Properties_img1.png) ![](Mask-Edit-Properties_images/Mask-Edit-Properties_img2.png)
 
 
+![](Mask-Edit-Properties_images/Mask-Edit-Properties_img3.png) ![](Mask-Edit-Properties_images/Mask-Edit-Properties_img4.png)
 
 
-
-![C:/Users/giftline.jebamani/Desktop/c.png](Mask-Edit-Properties_images/Mask-Edit-Properties_img3.png) 
-
-![C:/Users/giftline.jebamani/Desktop/d.png](Mask-Edit-Properties_images/Mask-Edit-Properties_img4.png)
-
-
-
-
-
-![C:/Users/giftline.jebamani/Desktop/e.png](Mask-Edit-Properties_images/Mask-Edit-Properties_img5.png) 
-
-
-
-
-
+![](Mask-Edit-Properties_images/Mask-Edit-Properties_img5.png) 

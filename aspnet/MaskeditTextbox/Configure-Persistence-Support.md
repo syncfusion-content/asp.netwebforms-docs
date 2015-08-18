@@ -25,10 +25,7 @@ The following steps explains the implementation of EnablePersistence in MaskEdit
 
 The output for MaskEditTextbox with EnablePersistencebefore page load and after page load are as follows.
 
-![C:/Users/giftline.jebamani/Desktop/a.png](Configure-Persistence-Support_images/Configure-Persistence-Support_img1.png)
-
-![C:/Users/giftline.jebamani/Desktop/b.png](Configure-Persistence-Support_images/Configure-Persistence-Support_img2.png)
-
+![](Configure-Persistence-Support_images/Configure-Persistence-Support_img1.png) ![](Configure-Persistence-Support_images/Configure-Persistence-Support_img2.png)
 
 
 ## Enabled or Disabled
@@ -55,9 +52,7 @@ The following steps explains the implementation of Enabled in MaskEditTextbox.
 
 The output for MaskEditTextbox when “Enabled” is“true”and “Enabled” is “false”.
 
-![C:/Users/giftline.jebamani/Desktop/a.png](Configure-Persistence-Support_images/Configure-Persistence-Support_img3.png)
-
-![C:/Users/giftline.jebamani/Desktop/b.png](Configure-Persistence-Support_images/Configure-Persistence-Support_img4.png)
+![](Configure-Persistence-Support_images/Configure-Persistence-Support_img3.png) ![](Configure-Persistence-Support_images/Configure-Persistence-Support_img4.png)
 
 
 
@@ -86,7 +81,9 @@ The following steps explains the implementation of HeightandWidth in MaskEditTex
 
 
 The output for MaskEditTextbox after setting the “Height” and “Width”.
-![C:/Users/giftline.jebamani/Desktop/a.png](Configure-Persistence-Support_images/Configure-Persistence-Support_img5.png)
+
+
+![](Configure-Persistence-Support_images/Configure-Persistence-Support_img5.png)
 
 
 
@@ -116,7 +113,9 @@ The following steps explains the implementation of Value in MaskEditTextbox.
 
 
 The output for MaskEditTextbox with Value.
-![C:/Users/giftline.jebamani/Desktop/a.png](Configure-Persistence-Support_images/Configure-Persistence-Support_img6.png)
+
+
+![](Configure-Persistence-Support_images/Configure-Persistence-Support_img6.png)
 
 
 

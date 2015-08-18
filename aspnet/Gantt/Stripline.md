@@ -61,5 +61,6 @@ The following screenshot shows Stripline in Gantt control.
 
 ![](Stripline_images/Stripline_img1.png) 
 
+_Figure : Stripline_
 
 

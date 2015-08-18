@@ -13,31 +13,31 @@ DropDownList control’s style and appearance can be controlled based on CSS cla
 
 By default, there are 13 themes support available for DropDownList control namely,
 
-•bootstrap-theme
+* bootstrap-theme
 
-•default-theme
+* default-theme
 
-•flat-azure-dark
+* flat-azure-dark
 
-•fat-lime
+* fat-lime
 
-•flat-lime-dark
+* flat-lime-dark
 
-•flat-saffron
+* flat-saffron
 
-•flat-saffron-dark
+* flat-saffron-dark
 
-•gradient-azure
+* gradient-azure
 
-•gradient-azure-dark
+* gradient-azure-dark
 
-•gradient-lime
+* gradient-lime
 
-•gradient-lime-dark
+* gradient-lime-dark
 
-•gradient-saffron
+* gradient-saffron
 
-•gradient-saffron-dark
+* gradient-saffron-dark
 
 ## Custom class with DropDown
 
@@ -49,7 +49,7 @@ The following steps explain the configuration of CssClass properties in the Drop
 
 In an ASPX page, add an element to configure the DropDownList
 
-{% highlight javascript %}
+{% highlight html %}
 
 <div class="control">
     <ej:DropDownList ID="dropdownlist" TargetID="list" Width="200px" CssClass="customclass"

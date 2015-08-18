@@ -13,7 +13,7 @@ A swim lane is a visual element used in a process flow diagrams or flowcharts. A
 
  ![](Swim-lane_images/Swim-lane_img1.png) 
 
-
+_Swim lane Diagram_
 
 Swim lane shape contains the following properties.
 
@@ -21,10 +21,7 @@ _Swim lane Properties_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Data type**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Property</th><th>Data type</th><th>Description</th></tr>
 <tr>
 <td>
 Header</td><td>
@@ -86,10 +83,7 @@ _Lane Properties_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Data type**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Property</th><th>Data type</th><th>Description</th></tr>
 <tr>
 <td>
 Header</td><td>
@@ -121,10 +115,7 @@ _Header Properties_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Data type**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Property</th><th>Data type</th><th>Description</th></tr>
 <tr>
 <td>
 Width</td><td>
@@ -146,10 +137,7 @@ _Phase Properties_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Data type**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Property</th><th>Data type</th><th>Description</th></tr>
 <tr>
 <td>
 Name</td><td>

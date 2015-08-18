@@ -94,9 +94,7 @@ _Exporting modes_
 
 <table>
 <tr>
-<td>
-{{ '**Modes**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Modes</th><th>Description</th></tr>
 <tr>
 <td>
 Download</td><td>
@@ -117,9 +115,7 @@ _Diagram Region_
 
 <table>
 <tr>
-<td>
-{{ '**Regions**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Regions</th><th>Description</th></tr>
 <tr>
 <td>
 Content</td><td>
@@ -138,5 +134,5 @@ It includes jpg, png, bmp, and svg.
 
  ![](Exporting_images/Exporting_img1.png) 
 
-
+_Exported diagram_
 

@@ -17,9 +17,7 @@ _Tool_
 
 <table>
 <tr>
-<td>
-{{ '**Tool name**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Tool name</th><th>Description</th></tr>
 <tr>
 <td>
 panTool </td><td>
@@ -55,7 +53,7 @@ The following code illustrates how to activate and deactivate the desired tool
 
 {% highlight js %}
 
-[JS]
+
 
 //Activates pan tool
 
@@ -98,7 +96,7 @@ The following code illustrates how to add node/connector to selection.
 
 {% highlight js %}
 
-[JS]
+
 
 
 
@@ -116,7 +114,7 @@ diagram.addSelection(node);
 
 ![](Interaction_images/Interaction_img1.png) 
 
-
+_Single selection_
 
 ### Multiple Selections
 
@@ -130,7 +128,7 @@ Rubber band selection is done by clicking and dragging mouse pointer on the Diag
 
 ![](Interaction_images/Interaction_img2.png) 
 
-
+_Multiple Selections_
 
 ## User Handle
 
@@ -142,10 +140,7 @@ _User Handle_
 
 <table>
 <tr>
-<td>
-{{ '**Properties**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Properties</th><th>Data Type</th><th>Description</th></tr>
 <tr>
 <td>
 Name</td><td>
@@ -216,7 +211,7 @@ The following code illustrates how to create Delete User handle
 
 {% highlight js %}
 
-[JS]
+
 
 
 
@@ -240,7 +235,7 @@ The following code illustrates how to create tool for Delete User handle.
 
 {% highlight js %}
 
-[JS]
+
 
 
 
@@ -314,7 +309,7 @@ The following code illustrates how to add Delete handle in Diagram.
 
 {% highlight js %}
 
-[JS]
+
 
 //Adds user handles to diagram
 
@@ -328,7 +323,7 @@ $(“#Diagram”).ejDiagram({ userHandles: userHandles });
 
  ![](Interaction_images/Interaction_img3.png) 
 
-
+_Delete-User Handle_
 
 ## Zoom 
 
@@ -365,9 +360,7 @@ _Keyboard_
 
 <table>
 <tr>
-<td>
-{{ '**Shortcut Keys**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>Shortcut Keys</th><th>Description</th></tr>
 <tr>
 <td>
 Ctrl + A</td><td>
@@ -449,10 +442,7 @@ _SnapToGrid_
 
 <table>
 <tr>
-<td>
-{{ '**Properties**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Descriptions**' | markdownify }}</td></tr>
+<th>Properties</th><th>Data Type</th><th>Descriptions</th></tr>
 <tr>
 <td>
 HorizontalGridLines</td><td>
@@ -530,7 +520,7 @@ The snap-to-object feature provides visual cues to assist with aligning and spac
 
 ![](Interaction_images/Interaction_img4.png) 
 
-
+_Snap to Object_
 
 #### Enabling and Disabling snapping to objects
 
