@@ -19,12 +19,17 @@ Parameters</th></tr>
 <td>
 OnClickEvent</td><td>
 Event triggered when the Split Button is clicked</td><td>
-(Object Sender, SplitButtonEventArgs e)e.Status - Status of the Split Button whether it’s true or false.</td></tr>
+(Object Sender, SplitButtonEventArgs e)
+<br/>
+e.Status - Status of the Split Button whether it’s true or false.</td></tr>
 <tr>
 <td>
 OnItemSelect</td><td>
 Event triggered when select the item in the split button</td><td>
-(Object Sender,SplitButtonSelectEventArgs e) e.MenuId –id of the selected iteme.MenuText –Text of the selected item</td></tr>
+(Object Sender,SplitButtonSelectEventArgs e)
+<br/>
+ e.MenuId –id of the selected item <br/>
+ e.MenuText –Text of the selected item</td></tr>
 </table>
 
 
@@ -33,8 +38,6 @@ The following step explains on how to define server side event for Split Button 
 In an ASPX page, define the Split Button control.
 
 {% highlight html %}
-
-
 
 <ej:SplitButton ID="SplitButton" runat="server" Size="Large" ShowRoundedCorner="true" Text="Save" OnClick="SplitButton_Click" OnItemSelect="SplitButton_ItemSelect">
 
@@ -51,9 +54,6 @@ In an ASPX page, define the Split Button control.
 </ej:SplitButton>
 
 
-
-
-
 {% endhighlight %}
 
 
@@ -61,8 +61,6 @@ In an ASPX page, define the Split Button control.
 In CS page, define the events for Click and ItemSelect Event.
 
 {% highlight c# %}
-
-
 
 protected void SplitButton_Click(object Sender, Syncfusion.JavaScript.Web.SplitButtonEventArgs e)
 
@@ -73,8 +71,6 @@ protected void SplitButton_Click(object Sender, Syncfusion.JavaScript.Web.SplitB
 
 
         }
-
-
 
 protected void SplitButton_ItemSelect(object Sender, Syncfusion.JavaScript.Web.SplitButtonSelectEventArgs e)
 
@@ -87,8 +83,4 @@ protected void SplitButton_ItemSelect(object Sender, Syncfusion.JavaScript.Web.S
         }
 
 
-
 {% endhighlight %}
-
-
-

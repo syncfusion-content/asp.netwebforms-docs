@@ -59,14 +59,12 @@ The following screenshot displays the calendar that pops down on clicking the da
 
 
 
-##Keyboard navigation
+## Keyboard navigation
 
 * By enabling the keyboard navigation in the Schedule control, you can control the actions of the Schedule with the provided shortcut keys. Almost all the Schedule actions that are done using mouse are controlled with shortcut keys. 
 * By default, the keyboard navigation is set to ‘true’ for the control and it is controlled with the property allowKeyboardNavigation.
 
 The various keyboard shortcuts available within the Schedule control are as follows, 
-
-
 
 Table 1 : List of keys and its usage
 
@@ -138,32 +136,24 @@ Traverse backward through the appointments.</td></tr>
 </table>
 
 
-
+{% highlight text %}
 
 Important: Apart from the cell selection through keyboard shortcuts (shift + arrow keys), the selection of cells can also be done through mouse by any of the following ways,
-
 i. Click on any of the cell to start selection and by holding the left click, hover the mouse across the cells to be selected and then release the left mouse button, once the selection is over.
-
 ii. Make initial selection at any of the cell. Now by pressing and holding the Shift key, click on any of the other desired cell to end the selection. The cells that lies within the initial and end selection gets selected entirely.
+
+{% endhighlight %}
 
 Once the required cells are selected, then a new appointment can be created for a selected time range either by pressing (ALT + N) key combination or by simply pressing Enter key to create appointments through quick window.
 
-
 {% highlight html %}
-
-
-
 <ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014" AllowKeyboardNavigation="true"
 
 CurrentView="Month">
 
-
-
 <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
 
 </ej:Schedule>
-
-
 
 <asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
 

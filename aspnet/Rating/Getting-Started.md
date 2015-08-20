@@ -245,11 +245,11 @@ Execute the above code to render the following output.
 
 
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
 
-Note: Add necessary images to the mentioned directory.
 
-                _<project directory>/Images/rating/yourimage.png_
+> Note: Add necessary images to the mentioned directory.
+>
+> &lt;project directory&gt;/Images/rating/yourimage.png
 
 ## Set Min and Max Value  
 

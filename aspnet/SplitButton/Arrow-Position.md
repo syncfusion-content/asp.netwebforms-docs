@@ -13,29 +13,28 @@ To provide a good look and feel for the Split Button, position of arrow in the
 
 <table>
 <tr>
-<td>
-Left</td><td>
+<th>
+Left</th><td>
 Support for arrow in left.</td></tr>
 <tr>
-<td>
-Right</td><td>
+<th>
+Right</th><td>
 Support for arrow in right. </td></tr>
 <tr>
-<td>
-Top</td><td>
+<th>
+Top</th><td>
 Support for arrow in top. </td></tr>
 <tr>
-<td>
-Bottom</td><td>
+<th>
+Bottom</th><td>
 Support for arrow in bottom.</td></tr>
 </table>
+
 The following steps explain the details on rendering the Split Button with above mentioned arrow position options.
 
 In an ASPX page, define the Split Button control and configure the ArrowPosition property as required.  
 
 {% highlight html %}
-
-
 
 <ej:SplitButton ID="spltbutton11" runat="server" Text="login" Size="Large" ShowRoundedCorner="true" ContentType="ImageOnly" ArrowPosition="Left" PrefixIcon="e-uiLight e-login">
 
@@ -101,7 +100,4 @@ In an ASPX page, define the Split Button control and configure the ArrowPosition
 
 The following screenshot displays the output of the above code example.
 
- ![](Arrow-Position_images/Arrow-Position_img1.png)
-
-
-
+![](Arrow-Position_images/Arrow-Position_img1.png)

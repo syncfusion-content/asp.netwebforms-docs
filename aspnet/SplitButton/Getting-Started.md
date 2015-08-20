@@ -19,8 +19,6 @@ Create an ASPX file and add the following code example to ASPX file for ejSplit
 
 {% highlight html %}
 
-
-
 <ej:SplitButton ID="ButtonSizeLarge" runat="server" Text="Save" Size="Large" ShowRoundedCorner="true">
 
     <items>
@@ -35,18 +33,11 @@ Create an ASPX file and add the following code example to ASPX file for ejSplit
 
 </ej:SplitButton>
 
-
-
-
-
 {% endhighlight %}
 
 
-Note: Add menu items of the Split Button inside <Items> that is displayed when you click on the Split Button.
+> Note: Add menu items of the Split Button inside <Items> that is displayed when you click on the Split Button.
 
-Output of above steps.
+#### Output of above steps.
 
- ![](Getting-Started_images/Getting-Started_img2.png)
-
-
-
+![](Getting-Started_images/Getting-Started_img2.png)

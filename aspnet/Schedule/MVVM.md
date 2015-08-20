@@ -534,5 +534,6 @@ white-space: nowrap;
 Output of the above code example is as follows.
 
 ![](MVVM_images/MVVM_img3.png)
+
 Figure 134: Schedule with Knockout Binding
 

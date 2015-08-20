@@ -14,19 +14,11 @@ The OLAP Grid inside the OLAP Client component can be exported to an Excel works
 
  ![](Export_images/Export_img1.png) 
 
-
-
-
-
 ![Description: Description: excelexport2](Export_images/Export_img2.png)
-
-
 
 The following code example illustrates how to save the document to Excel via a service.
 
-{% highlight C#%}
-
-[C#]
+{% highlight C# %}
 
 public void ExportOptions(Stream stream)
 
@@ -41,4 +33,3 @@ olapGridHelper.ExportToExcel(DataManager, newStreamReader(stream).ReadToEnd(),�
 }
 
 {% endhighlight %}
-

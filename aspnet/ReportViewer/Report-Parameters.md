@@ -13,15 +13,7 @@ The ReportViewer has support to add report parameters to ReportViewer at runtime
 
 The following code example illustrates how to add ReportParameter at control creation.
 
-
-
-
-
-
-
 {% highlight html %}
-
-[EJWEB]
 
         <ej:ReportViewer ID="viewer" runat="server" ReportServiceUrl="/api/RDLReport" ReportPath="InvoiceTemplate.rdl" ProcessingMode="Remote">
 
@@ -46,8 +38,6 @@ protected void Page_Load(object sender, EventArgs e)
 The following code example illustrates how to add ReportParameter in Web API.
 
 {% highlight c# %}
-
-
 
 public class ReportsController : ApiController, IReportController
 
@@ -78,4 +68,3 @@ public class ReportsController : ApiController, IReportController
     }
 
 {% endhighlight %}
-

@@ -1417,4 +1417,29 @@ SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 Figure 117 :  schedule with show current time indicator.
 
 
+## Show/Hide TimeScale
 
+The TimeScale depicting the time duration (either in 12 or 24 hour format) is usually displayed at the left side of the schedule control. It can be shown or hidden from the Schedule control by using the showTimeScale property that is supported in both the Schedule orientations (Vertical and Horizontal). It is set to true, by default. The following code example explains on how to use the showTimeScale property.
+
+
+{% highlight html %}
+
+
+<%-- Show / Hide TimeScale property to the schedule -- %>
+ 
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
+<div>
+<ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/12/2014" ShowTimeScale ="false">
+ 
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
+</ej:Schedule>
+ 
+</div>
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
+SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+{% endhighlight %}
+
+![](Customization_images/Customization_img12.png)
+
+Figure 80: Schedule without TimeScale

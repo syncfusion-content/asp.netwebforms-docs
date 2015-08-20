@@ -19,15 +19,9 @@ In an ASPX page, add the following code example and set the SlideWidth property 
 
 {% highlight html %}
 
-
-
 //Refers to the Local Data section for style and data bound for rotator items.
 
-
-
 <ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" DataCaptionField="Caption" DataUrlField="Url"></ej:Rotator>
-
-
 
 {% endhighlight %}
 
@@ -39,17 +33,8 @@ In an ASPX page, add the following code example and set the SlideHeight property
 
 {% highlight html %}
 
-
-
 //Refer Local Data section for style and data bound for rotator items
-
-
 
 <ej:Rotator ID="slidercontent" runat="server" SlideHeight="350px" DataCaptionField="Caption" DataUrlField="Url"></ej:Rotator>
 
-
-
 {% endhighlight %}
-
-
-

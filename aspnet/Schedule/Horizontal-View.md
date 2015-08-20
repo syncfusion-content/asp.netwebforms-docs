@@ -121,9 +121,11 @@ SelectCommand="SELECT * FROM [MultipleResource]"></asp:SqlDataSource>
 {% endhighlight %}
 
 
+{% highlight c# %}
+
 // follow the code as same as declared in Resources part
 
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 

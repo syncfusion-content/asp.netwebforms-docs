@@ -11,13 +11,12 @@ documentation: ug
 
 Label represents the text on the axis data points in the Chart. Each axis data point are represented by separate label text information in order to provide precise information about each points. Label text is displayed in a customizable format.
 
-Label font and color customization 
+### Label font and color customization 
 
 Font style and color of the label text is customized with the help of font and color properties within its respective axis.
 
  {% highlight html %}
 
-[ASP.NET]
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Title-Text="OLAP Chart in Essential Studio">
 
@@ -40,8 +39,6 @@ Font style and color of the label text is customized with the help of font and c
 You can rotate the labels to desired angle. The axis labels are rendered in the degree specified in the label rotation property.
 
  {% highlight html %}
-
-[ASP.NET]
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Title-Text="OLAP Chart in Essential Studio">
 

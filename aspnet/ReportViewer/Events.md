@@ -44,14 +44,7 @@ reportLoaded</td><td>
 Fires when the report is loaded.</td></tr>
 </table>
 
-
-
-
-
-
 {% highlight html %}
-
-[EJWEB]
 
         <ej:ReportViewer ID="viewer" runat="server" ReportServiceUrl="/api/RDLCReport" ReportPath="DatabindingRemote.rdlc" ProcessingMode="Local" OnClientReportLoaded="reportLoaded">
 

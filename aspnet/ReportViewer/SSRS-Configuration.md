@@ -11,17 +11,7 @@ documentation: ug
 
 The ReportViewer has support to load RDL/RDLC reports from SSRS server. You have to set your SSRS server URL to ReportViewer’sreportServerUrl property and set the relative path of RDL/RDLC file in SSRS to ReportViewer’sreportPath property. 
 
-
-
-
-
-
-
 {% highlight html %}
-
-[EJWEB]
-
-[ASPX]
 
 <ej:ReportViewer ID="viewer" runat="server" ReportServiceUrl="/api/SSRSReport" ReportServerUrl="http://76.74.153.81/ReportServer"  ReportPath="/SSRSSamples2/Territory Sales New">
 
@@ -34,8 +24,6 @@ The ReportViewer has support to load RDL/RDLC reports from SSRS server. You have
 The Network credentials can be given at WebAPI Controller to connect the SSRS server.
 
 {% highlight c# %}
-
-
 
                    /// <summary>
 
@@ -59,5 +47,5 @@ The Network credentials can be given at WebAPI Controller to connect the SSRS se
 
 {% endhighlight %}
 
-Note: DataSource credentials must be added to the ReportViewer for Shared DataSources that do not have credentials in the connection string and used in the SSRS Reports.
+> Note: DataSource credentials must be added to the ReportViewer for Shared DataSources that do not have credentials in the connection string and used in the SSRS Reports.
 

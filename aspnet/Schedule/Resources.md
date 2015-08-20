@@ -68,23 +68,66 @@ The following code example explains how to render the multiple resources on the 
 
 
 {% highlight html %}
-<ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014"><Group Resources="Owners"/><%--Resource data collection-- %><Resources><%--Enable the multiple selection of resources in the appointment window-- %><ej:Resources Field="OwnerId" Name="Owners" Title="Owner" AllowMultiple="true"><ResourceSettings Color="color" Id="id" Text="text"></ResourceSettings></ej:Resources></Resources><AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description" ResourceFields="OwnerId"/></ej:Schedule><asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"SelectCommand="SELECT * FROM [MultipleResource]"></asp:SqlDataSource>
+
+<ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014">
+	
+	<Group Resources="Owners"/>
+	
+		<%--Resource data collection-- %>
+		
+			<Resources>
+			
+				<%--Enable the multiple selection of resources in the appointment window-- %>
+				
+				<ej:Resources Field="OwnerId" Name="Owners" Title="Owner" AllowMultiple="true">
+				
+					<ResourceSettings Color="color" Id="id" Text="text"></ResourceSettings>
+					
+				</ej:Resources>
+				
+			</Resources>
+			
+			<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description" ResourceFields="OwnerId"/>
+		
+		</ej:Schedule>
+		
+	<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"SelectCommand="SELECT * FROM [MultipleResource]">
+
+</asp:SqlDataSource>
+
 {% endhighlight %}
 
-[{% highlight html %}
-namespace WebSampleBrowser.Schedule{public partial class multipleresource : System.Web.UI.Page{protected void Page_Load(object sender, EventArgs e){List<Rooms> owners = new List<Rooms>();owners.Add(new Rooms { text = "Andrew", id = "1", color = "#f8a398" });owners.Add(new Rooms { text = "Cruise", id = "3", color = "#56ca85" });owners.Add(new Rooms { text = "Jerry", id = "5", color = "#51a0ed" });Schedule1.Resources[0].ResourceSettings.DataSource = owners;}public class Rooms{public string text { set; get; }public string id { set; get; }public string color { set; get; }}}
+{% highlight c# %}
+
+namespace WebSampleBrowser.Schedule
+{
+	public partial class multipleresource : System.Web.UI.Page
+	{
+	protected void Page_Load(object sender, EventArgs e)
+	{
+		List<Rooms> owners = new List<Rooms>();
+		owners.Add(new Rooms { text = "Andrew", id = "1", color = "#f8a398" });
+		owners.Add(new Rooms { text = "Cruise", id = "3", color = "#56ca85" });
+		owners.Add(new Rooms { text = "Jerry", id = "5", color = "#51a0ed" });
+		Schedule1.Resources[0].ResourceSettings.DataSource = owners;
+	}
+	public class Rooms
+	{
+		public string text { set; get; }
+		public string id { set; get; }
+		public string color { set; get; }
+	}
+}
+
 {% endhighlight %}
 
 The output of the above code looks as follows.
 
-
-
 ![](Resources_images/Resources_img1.png)
 
+Figure 87 :  schedule with multiple resource.
 
-   Figure 87 :  schedule with multiple resource.
-
-##Resource Grouping
+## Resource Grouping
 
 * The Schedule control supports another important property group related to the multiple resources. It accepts the unique name assigned to each resources in the resource collection. The names that are all listed in this option is grouped in the Schedule control.
 
@@ -93,9 +136,6 @@ The following steps defines the way to start with rendering multiple resources o
 * Define the appointment data with required resource-related information fields as follows.
 
 {% highlight C# %}
-
-
-
 
 namespace WebSampleBrowser.Schedule
 
@@ -117,15 +157,11 @@ rooms.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Room1",
 
 rooms.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Room2", id = "2", color = "#56ca85" });
 
-
-
 owner.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Andrew", id = "1", groupId = "1", color = "#f8a398" });
 
 owner.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Cruise", id = "3", groupId = "2", color = "#56ca85" });
 
 owner.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Jerry", id = "5", groupId = "1", color = "#51a0ed" });
-
-
 
 Schedule1.Resources[0].ResourceSettings.DataSource = rooms;
 
@@ -144,12 +180,7 @@ Schedule1.Resources[1].ResourceSettings.DataSource = owner;
 
 {% highlight html %}
 
-
-
-
 <ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014" CurrentView="Month">
-
-
 
 <Resources>
 
@@ -171,21 +202,15 @@ Schedule1.Resources[1].ResourceSettings.DataSource = owner;
 
 </ej:Resources>
 
-
-
 </Resources>
 
 <%--Groups the resources listed out in the below collection-- %>
 
 <Group Resources="Rooms,Owners"/>
 
-
-
 <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description" ResourceFields="RoomId,OwnerId"/>
 
 </ej:Schedule>
-
-
 
 <asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
 
@@ -199,58 +224,85 @@ SelectCommand="SELECT * FROM [MultipleResource]">
 
 ![](Resources_images/Resources_img2.png)
 
-
-  _Figure_ _88_:  schedule with resource grouping._
+_Figure_ _88_:  schedule with resource grouping._
 
 ##Multiple Appointment Creation
 
 * The “allowMultiple” option available for each resource object within the resource collection enables/disables the functionality of saving same appointment for multiple resources. 
 * When this property is set to true, the resource related fields in the appointment window allows you to select multiple resources. Refer the following code example.
 
-
-
 {% highlight C# %}
-namespace WebSampleBrowser.Schedule{public partial class multipleresource : System.Web.UI.Page{protected void Page_Load(object sender, EventArgs e){List<Rooms> owners = new List<Rooms>();owners.Add(new Rooms { text = "Andrew", id = "1", color = "#f8a398" });owners.Add(new Rooms { text = "Cruise", id = "3", color = "#56ca85" });owners.Add(new Rooms { text = "Jerry", id = "5", color = "#51a0ed" });Schedule1.Resources[0].ResourceSettings.DataSource = owners;}public class Rooms{public string text { set; get; }public string id { set; get; }public string groupId { set; get; }public string color { set; get; }}}
-{% endhighlight %}
-{% highlight html %}
-<ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014" CurrentView="Month"><%--Resource data collection-- %><Resources><%--Enable the multiple selection of resources in the appointment window-- %><ej:Resources Field="OwnerId" Name="Owners" Title="Owner" AllowMultiple="true"><ResourceSettings Color="color" Id="id" Text="text"></ResourceSettings></ej:Resources></Resources><AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description" ResourceFields="OwnerId"/></ej:Schedule><asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"SelectCommand="SELECT * FROM [MultipleResource]"></asp:SqlDataSource>
-{% endhighlight %}
-* Execute the above code to display the Schedule control with appointments saved for multiple resources differentiated with its specific colors.
 
+namespace WebSampleBrowser.Schedule
+{
+public partial class multipleresource : System.Web.UI.Page
+{
+protected void Page_Load(object sender, EventArgs e)
+{
+List<Rooms> owners = new List<Rooms>();
+owners.Add(new Rooms { text = "Andrew", id = "1", color = "#f8a398" });
+owners.Add(new Rooms { text = "Cruise", id = "3", color = "#56ca85" });
+owners.Add(new Rooms { text = "Jerry", id = "5", color = "#51a0ed" });
+Schedule1.Resources[0].ResourceSettings.DataSource = owners;
+}
+public class Rooms{public string text { set; get; }
+public string id { set; get; }
+public string groupId { set; get; 
+}
+public string color { set; get; }
+}
+}
+
+{% endhighlight %}
+
+{% highlight html %}
+
+<ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014" CurrentView="Month">
+<%--Resource data collection-- %>
+<Resources>
+<%--Enable the multiple selection of resources in the appointment window-- %>
+<ej:Resources Field="OwnerId" Name="Owners" Title="Owner" AllowMultiple="true">
+<ResourceSettings Color="color" Id="id" Text="text"></ResourceSettings>
+</ej:Resources>
+</Resources>
+<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description" ResourceFields="OwnerId"/>
+</ej:Schedule>
+<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"SelectCommand="SELECT * FROM [MultipleResource]">
+</asp:SqlDataSource>
+
+{% endhighlight %}
+
+* Execute the above code to display the Schedule control with appointments saved for multiple resources differentiated with its specific colors.
 
 
 ![](Resources_images/Resources_img3.png)
 
 
- Figure 89:  schedule with multiple resource creation.
+Figure 89:  schedule with multiple resource creation.
 
 * To save the same appointment for multiple resources, refer the following steps,
-1. Double-click on the required work cell, the appointment window pops up as shown in the following image with an individual autocomplete field for selecting the available resources.
+  
+  1. Double-click on the required work cell, the appointment window pops up as shown in the following image with an individual autocomplete field for selecting the available resources.
+  
+     ![](Resources_images/Resources_img4.png)
+
+
+     Figure 90:  schedule with multiple appointment window.
+
+  2. Since the allowMultiple property is set to ‘true’ for this resource object, so you can select any number of available resources in it as follows.
 
 
 
-  ![](Resources_images/Resources_img4.png)
+     ![](Resources_images/Resources_img5.png)
 
 
-   Figure 90:  schedule with multiple appointment window.
+     Figure 91 :  schedule with multiple appointment window with different type owner.
 
-2. Since the allowMultiple property is set to ‘true’ for this resource object, so you can select any number of available resources in it as follows.
-
-
-
-   '![](Resources_images/Resources_img5.png)
-
-
-   Figure 91 :  schedule with multiple appointment window with different type owner.
-
-3. The same appointment with the subject Test Ride is created for each resource individually as follows when you click the Done button.
+  3. The same appointment with the subject Test Ride is created for each resource individually as follows when you click the Done button.
 
 
 
-   ![](Resources_images/Resources_img6.png)
+     ![](Resources_images/Resources_img6.png)
 
 
-   Figure 92 :  schedule with saved multiple appointments with different type owner
-
-
-
+     Figure 92 :  schedule with saved multiple appointments with different type owner

@@ -25,10 +25,9 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 
 
-The output for the above code 
-![](Behavior-Settings_images/Behavior-Settings_img1.png)
+The output for the above code example is as follows.
 
-example is as follows.
+![](Behavior-Settings_images/Behavior-Settings_img1.png)
 
 
 ## Persistence Support
@@ -81,9 +80,7 @@ The output for PercentageTextbox with and without EnableStrictMode.
 
 ![](Behavior-Settings_images/Behavior-Settings_img3.png) 
 
-
-
-   _PercentageTextbox without EnableStrictMode 	                    PercentageTextbox with EnableStrictMode_ 	
+   _PercentageTextbox without EnableStrictMode PercentageTextbox with EnableStrictMode_ 	
 
 ## Enabled or Disabled
 
@@ -95,27 +92,20 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 {% highlight html %}
 
-
-
 <ej:PercentageTextBox ID="percentage"  Value="2" Enabled="true" runat="server"> </ej:PercentageTextBox>
 
-
-
 {% endhighlight %}
-
-
-
-![](Behavior-Settings_images/Behavior-Settings_img4.png)
-
-![](Behavior-Settings_images/Behavior-Settings_img5.png) 
 
 The output for PercentageTextbox when Enabled is “true” and Enabled is “false”.
 
 
+![](Behavior-Settings_images/Behavior-Settings_img5.png)   
 
+  _PercentageTextbox with enabled as true_	
 
+![](Behavior-Settings_images/Behavior-Settings_img4.png) 
 
-                _PercentageTextbox with enabled as true	                                                PercentageTextbox with enabled as false_
+  _PercentageTextbox with enabled as false_
 
 ## Adjusting Textbox Size
 
@@ -166,13 +156,14 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 The output for PercentageTextbox with IncrementStep.
 
 
-![](Behavior-Settings_images/Behavior-Settings_img7.png) 
+![](Behavior-Settings_images/Behavior-Settings_img7.png)    
 
-![](Behavior-Settings_images/Behavior-Settings_img8.png) 
+_PercentageTextbox at initial load_                         
 
+              
+![](Behavior-Settings_images/Behavior-Settings_img8.png)		
 
-
-          _PercentageTextbox at initial load	                              PercentageTextbox after increasing one step_
+_PercentageTextbox after increasing one step_	  
 
 ## Define Name
 
@@ -195,12 +186,9 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 
 The output for PercentageTextbox with Name. 
+
+
 ![](Behavior-Settings_images/Behavior-Settings_img9.png) 
-
-
-
-
-
 
 
 ## Define Value
@@ -224,6 +212,7 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 
 The output for PercentageTextbox with Value.
+
 ![](Behavior-Settings_images/Behavior-Settings_img10.png) 
 
 
@@ -256,18 +245,17 @@ The output for PercentageTextbox with basic properties.
 
 ![](Behavior-Settings_images/Behavior-Settings_img11.png) 
 
+  _PercentageTextbox with Value_
+
 ![](Behavior-Settings_images/Behavior-Settings_img12.png)
 
+ _PercentageTextbox with MaxValue_
 
-
-                     _PercentageTextbox with Value		            PercentageTextbox with MaxValue_
+                     	            
 
 ![](Behavior-Settings_images/Behavior-Settings_img13.png) 
 
-
-
-
-                                                                     _PercentageTextbox with MinValue_
+ _PercentageTextbox with MinValue_
 
 ## Read Only Support
 
@@ -283,12 +271,7 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 {% endhighlight %}
 
-
-
 The output for PercentageTextbox when ReadOnly is true.The PercentageTextbox values cannot be edited or changed.
+
+
 ![](Behavior-Settings_images/Behavior-Settings_img14.png)
-
-
-
-
-

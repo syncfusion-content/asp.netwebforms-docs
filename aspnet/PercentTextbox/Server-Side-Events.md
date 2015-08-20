@@ -13,15 +13,20 @@ The server side events present in the PercentageTextbox control are listed as fo
 
 <table>
 <tr>
-<td>
-Event Name</td><td>
-Description</td><td>
-Arguments</td></tr>
+<th>
+Event Name</th><th>
+Description</th><th>
+Arguments</th></tr>
 <tr>
 <td>
 OnFocusOut</td><td>
 Triggers when the focus is moved out from the textbox</td><td>
-e.Value– Value of the Numerictextboxe.EventType – Event Namee.Arguments – Contain keys and value of NumericTextbox</td></tr>
+<ul>
+<li> e.Value– Value of the Numerictextbox</li>
+<li> e.EventType – Event Name</li>
+<li> e.Arguments – Contain keys and value of NumericTextbox</li>
+</ul>
+</td></tr>
 </table>
 
 
@@ -33,11 +38,7 @@ In an ASPX page, add the NumericTextbox control with OnFocusOut server side even
 
   <ej:PercentageTextBox ID="numeric" Value="11" OnFocusOut="focus" runat="server"> </ej:PercentageTextBox>
 
-
-
 {% endhighlight %}
-
-
 
 In the code behind define the action to be performed.
 
@@ -45,15 +46,10 @@ In the code behind define the action to be performed.
 
 protected void focus(object Sender, EventArgs e)
 
-        {
+ {
 
-            Response.Write("Serverside event has been trigerred");
+    Response.Write("Serverside event has been trigerred");
 
-        }
-
-
+ }
 
 {% endhighlight %}
-
-
-

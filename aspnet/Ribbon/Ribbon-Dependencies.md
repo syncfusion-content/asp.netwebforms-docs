@@ -9,12 +9,9 @@ documentation: ug
 
 # Ribbon Dependencies
 
-_ej.web.all.js_ is a bundle of all _ASP.NET_controls. When you use _ej.web.all.js_ in your application, you can leave this section or else you can try to render _Ribbon_ in your application by using _ej.ribbon_ file. You can refer to the following frameworks and controls in your project.
-
-
+_ej.web.all.js_ is a bundle of all ASP.NET controls. When you use _ej.web.all.js_ in your application, you can leave this section or else you can try to render _Ribbon_ in your application by using _ej.ribbon_ file. You can refer to the following frameworks and controls in your project.
 
 Table 1: Ribbon Dependency
-
 
 <table>
 <tr>
@@ -24,15 +21,15 @@ Description/Usage </th></tr>
 <tr>
 <td>
 ej.core.min.js</td><td>
-Must always be referred to before using all the {{ '_ASP.NET_' | markdownify }} controls.</td></tr>
+Must always be referred to before using all the ASP.NET controls.</td></tr>
 <tr>
 <td>
 ej.data.min.js</td><td>
-Used to handle datamanger operation and should be used while binding data to {{ '_ASP.NET_' | markdownify }} controls.</td></tr>
+Used to handle datamanger operation and should be used while binding data to ASP.NET controls.</td></tr>
 <tr>
 <td>
 ej.ribbon.min.js</td><td>
-Should be referred when using {{ '_Ribbon_' | markdownify }}control.</td></tr>
+Should be referred when using Ribbon control.</td></tr>
 <tr>
 <td>
 ej.menu.min.js</td><td>
@@ -40,15 +37,15 @@ This file is used to render menu in the application tab.</td></tr>
 <tr>
 <td>
 ej.scroller.min.js</td><td>
-This file is used to render scroller in the {{ '_Ribbon_' | markdownify }} control.</td></tr>
+This file is used to render scroller in the Ribbon control.</td></tr>
 <tr>
 <td>
 ej.checkbox.min.js</td><td>
-This file is used to render checkboxes in the {{ '_Ribbon_' | markdownify }} control.</td></tr>
+This file is used to render checkboxes in the Ribbon control.</td></tr>
 <tr>
 <td>
 ej.tab.min.js</td><td>
-This file is used to render tabs into the {{ '_Ribbon_' | markdownify }} control.</td></tr>
+This file is used to render tabs into the Ribbon control.</td></tr>
 <tr>
 <td>
 ej.dropdownlist.min.js</td><td rowspan = "4">

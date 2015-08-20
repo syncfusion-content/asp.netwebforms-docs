@@ -17,8 +17,6 @@ In OlapChart, you can customize the legend symbol with different shapes like rec
 
 {% highlight html %}
 
-[ASP.NET]
-
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Title-Text="OlapChart in Essential Studio" >
 
     <Legend Visible="true" RowCount="3" Shape="star"/>
@@ -36,8 +34,6 @@ In OlapChart, you can customize the legend symbol with different shapes like rec
 You can customize the legend position in top, bottom, left and right position of the Chart. Default value of legend position is “bottom”. 
 
 {% highlight html %}
-
-[ASP.NET]
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Title-Text="OlapChart in Essential Studio" >
 
@@ -59,8 +55,6 @@ You can align the legend using alignment property of legend. This allows you to 
 
 {% highlight html %}
 
-[ASP.NET]
-
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Title-Text="OlapChart in Essential Studio" >
 
     <Legend Visible="true" RowCount="3"  Alignment="Near"/>
@@ -79,7 +73,7 @@ You can draw and customize the outline of Chart legend using border property of 
 
 {% highlight html %}
 
-[ASP.NET]
+
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Title-Text="OlapChart in Essential Studio" >
 
@@ -97,9 +91,7 @@ You can draw and customize the outline of Chart legend using border property of 
 
 Legend item is represented by an icon or image and a text. This gets rendered automatically corresponding to each Series in the OlapChart. You can customize the Legend item.
 
-{% highlight html %}
-
-[ASP.NET] 
+{% highlight html %} 
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Title-Text="OLAP Chart in Essential Studio">
 
@@ -121,8 +113,6 @@ You can customize the legend text - font family, font style, font weight and siz
 
 {% highlight html %}
 
-[ASP.NET]
-
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Title-Text="OlapChart in Essential Studio" >
 
     <Legend Visible="true" RowCount="3" Font-FontFamily="Segoe UI" Font-    FontStyle="italic"></Legend>
@@ -132,6 +122,3 @@ You can customize the legend text - font family, font style, font weight and siz
 {% endhighlight %}
 
  ![](Legend_images/Legend_img6.png) 
-
-
-

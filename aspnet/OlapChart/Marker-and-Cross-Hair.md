@@ -27,7 +27,7 @@ In OlapChart, you can customize the marker shape with different symbols like rec
 
 {% highlight html %}
 
-[ASP.NET] 
+
 
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection">
 
@@ -71,7 +71,7 @@ In order to view the value at mouse position or touch contact point, you can use
 
 {% highlight html %}
 
-[ASP.NET]
+
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc">
 

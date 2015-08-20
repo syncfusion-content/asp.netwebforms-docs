@@ -7,7 +7,7 @@ control: Ribbon
 documentation: ug
 ---
 
-### Get Ribbon object
+## Get Ribbon object
 
 After _Ribbon_ initialization, _Ribbon_ object is stored in a container element of _Ribbon_. To access _Ribbon_ object, you can use the following code example.
 
@@ -15,15 +15,9 @@ After _Ribbon_ initialization, _Ribbon_ object is stored in a container element 
 
 var ribbonObject = $("#Ribbon").ejRibbon("instance");
 
-
-
 [or]
 
-
-
 var ribbonObject = $("#Ribbon").data("ejRibbon");
-
-
 
 {% endhighlight %}
 

@@ -11,15 +11,7 @@ documentation: ug
 
 The ReportViewer has an option to show or hide items in the toolbar. To customize the toolbar items, use the ReportViewer’sToolbarSettings property. The toolbar template can also be customized by specifying custom template to ReportViewertoolbar.
 
-
-
-
-
-
-
 {% highlight c# %}
-
-[EJWEB]
 
 protected void Page_Load(object sender, EventArgs e)
  {
@@ -27,5 +19,3 @@ protected void Page_Load(object sender, EventArgs e)
  }
 
 {% endhighlight %}
-
-

@@ -13,7 +13,7 @@ This section explains briefly about how to create an OLAP Chart in your applicat
 
 ## Create your first OLAP Chart in ASP.NET
 
-Control Structure
+### Control Structure
 
 The following screenshot shows the OLAP Chart for ASP.NET control.
 
@@ -35,6 +35,7 @@ The architecture gives a clear idea about how the control rendering takes place 
 The primary reasons for using service in an OLAP processing are as follows:
 
 1. DataSource Connectivity: You  can establish a connection between different cube data sources such as
+
    i. Offline Cube
    
    ii. Online Cube (XML/A)
@@ -44,6 +45,7 @@ The primary reasons for using service in an OLAP processing are as follows:
 
 
 2. Cube Schema: As the connection is moved to service side, you obviously use Microsoft__ADOMD__assembly, to get the entire cube schema. Only with the cube schema the following details are achieved for control rendering.
+   
    iv. Availability of cubes.
    
    v. A complete end-to-end detail such as name, caption, unique name, parent information, child information, its properties etc. about the dimension, hierarchy, level, members are available in cube schema only. 
@@ -52,7 +54,7 @@ The primary reasons for using service in an OLAP processing are as follows:
 
 
 
-3.  MDX Generator:  You can frame the MDX query using a  MDX generator in Syncfusion.Olap.Base assembly. To execute the framed MDX from the cube data source, you need to send framed MDX via Microsoft__ADOMD__assembly_._ The executed query is returned back in the form of cell set (contains values) that is converted to Pivot Engine and then to JSON data to render any OLAP controls.
+3.  MDX Generator:  You can frame the MDX query using a  MDX generator in Syncfusion.Olap.Base assembly. To execute the framed MDX from the cube data source, you need to send framed MDX via Microsoft ADOMD assembly.The executed query is returned back in the form of cell set (contains values) that is converted to Pivot Engine and then to JSON data to render any OLAP controls.
 
 OLAP Report: The OlapReport class in the Syncfusion.Olap.Base assembly holds the complete information about each axes such as column, row and slicer. Using OlapReport class you can maintain the dimension element, measure element, hierarchy name, level name as well as member information that is included and excluded.
 
@@ -119,22 +121,16 @@ The following screenshot displays the Project Creation Wizard.
 
 5. Enter the service URL value after dragging and dropping the control.
 
-   ![](Getting-Started_images/Getting-Started_img10.jpeg) 
-
-   NOTE: Instructions to create a service is explained briefly in the upcoming sections.
+   > NOTE: Instructions to create a service is explained briefly in the upcoming sections.
 
    ![](Getting-Started_images/Getting-Started_img11.png) 
 
 
 6. Initialize the control by using the following code example.
 
-   ![C:/Users/labuser/Desktop/note.jpg](Getting-Started_images/Getting-Started_img12.jpeg)
+   > Note: Define URL value, in order to fetch the data from the service. And initialize the default properties values as follows, to render the control appropriately._ 
 
-   Note: Define URL value, in order to fetch the data from the service. And initialize the default properties values as follows, to render the control appropriately._ 
-
-{% highlight c# %}
-
-[ASPX]
+{% highlight html %}
 
 <body>
 
@@ -164,15 +160,9 @@ The following screenshot displays the Project Creation Wizard.
 
    ![](Getting-Started_images/Getting-Started_img13.png) 
 
-
-
-The following screenshot illustrates how to reference Syncfusion.Olap.Base.
-
-
-
- ![C:/Users/Narendhran Muthuvel/Desktop/screenshots/sshot-4.png](Getting-Started_images/Getting-Started_img14.png) 
-
-
+   The following screenshot illustrates how to reference Syncfusion.Olap.Base.
+   
+   ![C:/Users/Narendhran Muthuvel/Desktop/screenshots/sshot-4.png](Getting-Started_images/Getting-Started_img14.png) 
 
 2. Select the following assemblies: 
 
@@ -194,25 +184,14 @@ The following screenshot illustrates how to reference Syncfusion.Olap.Base.
 
 Add the script files and CSS files in the <head> tag of the Default.aspx page.
 
+> Note: 
+>
+>1. Use the following code example while adding scripts and styles
+>2. Same files can also acquire from the following location
+>   C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScript\assets\
+>3. Please download jquery.globalize.min.js from jQuery site to local machine and refer from the following code example.
 
-
- ![](Getting-Started_images/Getting-Started_img15.jpeg) 
-
-Note: 
-
-1. Use the following code example while adding scripts and styles
-
-2. Same files can also acquire from the following location
-
-C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScript\assets\
-
-3. Please download jquery.globalize.min.js from jQuery site to local machine and refer from the following code example.
-
- {% highlight html %}
-
-[ASPX]
-
-
+{% highlight html %}
 
 <head>
 
@@ -232,9 +211,9 @@ C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScrip
 
 
 
-Add WCF service for OLAP Chart
+### Add WCF service for OLAP Chart
 
-Create WCF Services
+#### Create WCF Services
 
 1. Right-click on the project and select Add>New Folder.  Name the folder as wcf.
 2. Now right-click the wcf folder created and select Add > New Item.  In the Add New Item window, select WCF Service and name it OlapChartService.svc
@@ -250,17 +229,11 @@ Add the following code example inside the IOlapChartService interface available 
 
 {% highlight c# %}
 
-[C#]
-
-    [ServiceContract]
-
     public interface IOlapChartService
 
     {
 
-        [OperationContract]
-
-        Dictionary<string, object> InitializeChart(string action, string customObject);                [OperationContract]
+        Dictionary<string, object> InitializeChart(string action, string customObject);                
 
         Dictionary<string, object> DrillChart(string action, string drilledSeries, string olapReport, string customObject);
 
@@ -274,7 +247,6 @@ Add the following necessary namespaces to implement the service methods.
 
 {% highlight c# %}
 
-[C#]
 
 using System;
 
@@ -300,14 +272,11 @@ using System.Web.Script.Serialization;
 
 {% endhighlight %}
 
-Create Class in Service file
+### Create Class in Service file
 
 Create the OlapChartService class to implement the service methods. Inherit the class from the IOlapChartService interface that is created automatically when any new service is added.
 
 {% highlight c# %}
-
-[C#]
-
 
 
 namespace Sample
@@ -332,9 +301,9 @@ Add the following methods to the service that is invoked for any server-side ope
 
 1. Initialize the OlapCharts helper class and OlapDataManager with appropriate connection string. 
 
-   ~~~ c#
+   ~~~ cs
 
-        [C#]
+        
 
             JavaScriptSerializer serializer = new JavaScriptSerializer();
 
@@ -345,15 +314,11 @@ Add the following methods to the service that is invoked for any server-side ope
             OlapDataManager DataManager = new OlapDataManager(connectionString);
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 2. Initialize the following service methods.
 
-   ~~~ c#
-
-        [C#]
-
-
+   ~~~ cs    
 
             //This method provides the required information from the server side for initializing the OlapChart.
 
@@ -438,7 +403,7 @@ Add the following methods to the service that is invoked for any server-side ope
             }  
 			
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 #### Configure Web.Config
 
@@ -452,9 +417,7 @@ Add the following methods to the service that is invoked for any server-side ope
 
 	* behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint. endpointBehaviors are illustrated as follows
 
-	  ~~~ c#
-	
-        [web.config]
+	  ~~~ cs        
 
         <system.serviceModel>
 
@@ -471,17 +434,13 @@ Add the following methods to the service that is invoked for any server-side ope
         </services>
 
         </system.serviceModel>
-
-
       ~~~
-      {:.pretty-print }
+      {:.prettyprint }
 
 
 2. The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property. In the following code example "Sample.OlapChartServiceAspNetAjaxBehavior" points the OlapChartService class under the namespace Sample in OlapChartService.svc.cs file that is the appropriate behavior for the endpoint. 
 
-   ~~~ c#
-
-        [web.config]
+   ~~~ cs      
 
         <system.serviceModel>
 
@@ -503,14 +462,12 @@ Add the following methods to the service that is invoked for any server-side ope
 
 
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }
 
 
 3. Register the assembly in web.config file by adding the following code example.
 
-   ~~~ c#
-
-        [web.config]
+   ~~~ cs       
 
         <system.web>
 
@@ -531,18 +488,13 @@ Add the following methods to the service that is invoked for any server-side ope
         </system.web> 
 		
    ~~~
-   {:.pretty-print }
+   {:.prettyprint }   
 
-
-
- ![](Getting-Started_images/Getting-Started_img17.jpeg) 
-
-Note: x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
+   > Note: x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
 
 4. Register the namespace in web.config file by adding the following codes.
-   ~~~ c#
 
-        [web.config]
+   ~~~ js
 
         <system.web>
 
@@ -559,29 +511,12 @@ Note: x.x.x.x in the above code example refers to the current version of the Es
         </system.web> 
 
    ~~~
-    {:.pretty-print }
+   {:.prettyprint }   
 
-![](Getting-Started_images/Getting-Started_img18.jpeg) 
+   > Note: In this example, “Sample” indicates the name of the project and “_OlapChartService_” indicates the name of the WCF service created. And x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
 
-Note: In this example, “Sample” indicates the name of the project and “_OlapChartService_” indicates the name of the WCF service created. And x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
-
-
-
-This getting started tutorial gives you an overview of OlapChart, its architecture, and process flow, how to configure and integrate with a VS application using a simple example.
+   This getting started tutorial gives you an overview of OlapChart, its architecture, and process flow, how to configure and integrate with a VS application using a simple example.
 
 
 
- ![](Getting-Started_images/Getting-Started_img19.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
+   ![](Getting-Started_images/Getting-Started_img19.png)

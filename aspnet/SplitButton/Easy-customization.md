@@ -21,11 +21,7 @@ In an ASPX page, define the Split Button control and add the contents for the Sp
 
 {% highlight html %}
 
-
-
 <ej:SplitButton ID="SplitButton_Text" runat="server" Text="login" ShowRoundedCorner="true" Size="Small" ContentType="TextAndImage" PrefixIcon="e-login e-uiLight">
-
-
 
         <Items>
 
@@ -41,15 +37,9 @@ In an ASPX page, define the Split Button control and add the contents for the Sp
 
             <ej:SplitItem Text="Admin"></ej:SplitItem>
 
-
-
         </Items>
 
-
-
 </ej:SplitButton>
-
-
 
 {% endhighlight %}
 
@@ -67,24 +57,24 @@ You can render the Split Button in different sizes. The following table contai
 
 <table>
 <tr>
-<td>
-normal</td><td>
+<th>
+normal</th><td>
 Creates the Split Button with content size.</td></tr>
 <tr>
-<td>
-mini</td><td>
+<th>
+mini</th><td>
 Creates the Split Button with in-built mini size height and width specified.</td></tr>
 <tr>
-<td>
-small</td><td>
+<th>
+small</th><td>
 Creates the Split Button with in-built small size height and width specified.</td></tr>
 <tr>
-<td>
-medium</td><td>
+<th>
+medium</th><td>
 Creates the Split Button with inbuilt medium size height and width specified.</td></tr>
 <tr>
-<td>
-Large</td><td>
+<th>
+Large</th><td>
 Creates the Split Button with inbuilt large size height and width specified.</td></tr>
 </table>
 
@@ -96,8 +86,6 @@ The following steps explain the details about rendering the Split Button with 
 In an ASPX page, define the Split Button control and set the different size types.
 
 {% highlight html %}
-
-
 
 <table>
 
@@ -215,17 +203,11 @@ In an ASPX page, define the Split Button control and set the different size type
 
 </table>
 
-
-
 {% endhighlight %}
-
-
 
 The following screenshot displays the output of the above code example.
 
 ![](Easy-customization_images/Easy-customization_img2.png) 
-
-
 
 ## Content Type
 
@@ -233,24 +215,24 @@ The content of the Split Button is mainly rendered as text and images. Instead
 
 <table>
 <tr>
-<td>
-Textonly</td><td>
+<th>
+Textonly</th><td>
 Supports the text content only.</td></tr>
 <tr>
-<td>
-Imageonly</td><td>
+<th>
+Imageonly</th><td>
 Supports the image content only</td></tr>
 <tr>
-<td>
-Imageboth</td><td>
+<th>
+Imageboth</th><td>
 Supports image for both ends of the button.</td></tr>
 <tr>
-<td>
-Textandimage</td><td>
+<th>
+Textandimage</th><td>
 Supports image with the text content.</td></tr>
 <tr>
-<td>
-Imagetextimage</td><td>
+<th>
+Imagetextimage</th><td>
 Supports image for both ends and middle in the text.</td></tr>
 </table>
 
@@ -285,8 +267,6 @@ The following steps explain the details on rendering the Split Button with abo
 In an ASPX page, define the Split Button control. Set the different content types and use the necessary build-in icons.
 
 {% highlight html %}
-
-
 
 <table>
 
@@ -386,15 +366,11 @@ In an ASPX page, define the Split Button control. Set the different content type
 
 </table>
 
-
-
 {% endhighlight %}
 
 The following screenshot displays the output of the above code example.
 
  ![](Easy-customization_images/Easy-customization_img3.png) 
-
-
 
 ## Image Position
 
@@ -402,20 +378,20 @@ To provide the best look and feel for the Split Button, position of images in 
 
 <table>
 <tr>
-<td>
-Imageleft</td><td>
+<th>
+Imageleft</th><td>
 Support for aligning text in the right and image in the left.</td></tr>
 <tr>
-<td>
-Imageright</td><td>
+<th>
+Imageright</th><td>
 Support for aligning text in the left and image in the right.</td></tr>
 <tr>
-<td>
-Imagetop</td><td>
+<th>
+Imagetop</th><td>
 Support for aligning text at the bottom and image at the top.</td></tr>
 <tr>
-<td>
-Imagebottom</td><td>
+<th>
+Imagebottom</th><td>
 Support for aligning text at the top and image at the bottom.</td></tr>
 </table>
 
@@ -645,8 +621,6 @@ The following screenshot displays the output of the above code example.
 
  ![](Easy-customization_images/Easy-customization_img4.png)
 
-__
-
 ## Theme support
 
 You can control the style and appearance ofthe Split Button based on CSS classes. In order to apply styles to the Split Button control, you can refer to two files namely, ej.widgets.core.min.css and ej.theme.min.css. When you refer to the ej.widgets.all.min.css file, then it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project, as ej.widgets.all.min.css is the combination of these two.
@@ -788,120 +762,58 @@ Define the style for the Split Button control.
 
 
 {% highlight css %}
+
        // Customizes the button background 
-
-
 
        .e-split .customCss1 {
 
-
-
             background-color: #121111;
 
-
-
         }
-
-
 
         .e-split .customCss2 {
 
-
-
             background-color: #94bbd5;
 
-
-
         }
-
-
 
         .e-split .customCss3 {
 
-
-
             background-color: #f3533c;
-
-
-
+			
         }
-
-
-
+		
         .e-split .customCss4 {
 
-
-
             background-color: #d1eeed;
-
-
-
         }
-
-
 
         .e-split .customCss5 {
 
-
-
             background-color: #deb66e;
 
-
-
         }
-
-
 
          // Customizes the button image & text color
 
-
-
         .e-split .customCss1.e-btn.e-select .e-icon, .e-split .customCss1.e-btn.e-select .e-btntxt {
 
-
-
             color: #94bbd5;
-
-
-
         }
-
-
-
+		
         .e-split .customCss2.e-btn.e-select .e-icon, .e-split .customCss2.e-btn.e-select .e-btntxt {
 
-
-
             color: #121111;
-
-
-
         }
-
-
 
         .e-split .customCss3.e-btn.e-select .e-icon, .e-split .customCss3.e-btn.e-select .e-btntxt {
 
-
-
-            color: #cef6f7;
-
-
-
+			color: #cef6f7;
         }
-
-
-
         .e-split .customCss5.e-btn.e-select .e-icon, .e-split .customCss5.e-btn.e-select .e-btntxt {
 
-
-
-            color: #534f4f;
-
-
-
+			color: #534f4f;
         }
-
 
 {% endhighlight %}
 
@@ -909,6 +821,3 @@ Define the style for the Split Button control.
 The following screenshot displays the output of the above code example.
 
  ![](Easy-customization_images/Easy-customization_img5.png)
-
-
-

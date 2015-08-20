@@ -23,9 +23,9 @@ Table: List of default English localization User Interface based on French cultu
 
 <table>
 <tr>
-<td>
-KEYWORDS</td><td>
-VALUES</td></tr>
+<th>
+KEYWORDS</th><th>
+VALUES</th></tr>
 <tr>
 <td>
 RevenueGoal</td><td>
@@ -189,10 +189,10 @@ The following code example illustrates you on how to localize OlapGuage’s User
 
  
 
-Note: In order to render the localized OLAP Gauge, You are required to reset the content available in both
-
-1. OLAP Gauge Control
-2. OLAP Cube
+> Note: In order to render the localized OLAP Gauge, You are required to reset the content available in both
+>
+>1. OLAP Gauge Control
+>2. OLAP Cube
 
 ## Localizing Control Information:
 
@@ -200,7 +200,7 @@ To apply control side localization, refer the following code example:
 
 
 
-{% highlight html %}
+{% highlight js %}
 
 ej.olap.OlapGauge.locale["zh-CN"] = {
 

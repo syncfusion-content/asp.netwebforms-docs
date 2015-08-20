@@ -45,7 +45,7 @@ In the ASPX page, add the following input elements to configure Radio Button.
 
 {% endhighlight %}
 
-Configure the CSS styles to align the radio buttons.
+### Configure the CSS styles to align the radio buttons.
 
 {% highlight css %}
 
@@ -101,7 +101,7 @@ Text="Female">
 
 {% endhighlight %}
 
-Configure the CSS styles to align the radio buttons.
+### Configure the CSS styles to align the radio buttons.
 
 {% highlight css %}
 
@@ -209,7 +209,7 @@ Medium size Radio buttons
 
 {% endhighlight %}
 
-Configure the CSS styles to align the radio buttons
+### Configure the CSS styles to align the radio buttons
 
 {% highlight css %}
 
@@ -293,7 +293,7 @@ EnableRTL="true">
 
 In the above mentioned code, the Text property has been used. In LTR format, the RadioButton is on the left side. In RTL format, the RadioButton appears on the right side. Here the Text property is used and the EnableRTL property is set as “True”. It changes the alignment to right-to-left.
 
-Configure the CSS styles to align the RadioButtons.
+### Configure the CSS styles to align the RadioButtons.
 
 {% highlight css %}
 

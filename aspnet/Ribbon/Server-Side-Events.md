@@ -21,31 +21,41 @@ Arguments</th></tr>
 <tr>
 <td>
 TabSelect</td><td>
-The event is triggered when the {{ '_Ribbon_' | markdownify }} tab gets selected.</td><td>
-The selected items are passed as arguments.Arguments:1. {{ '_Current Tab Index_' | markdownify }}: Selected tab Index.2. {{ '_Previous tab Index_' | markdownify }}: Previous Active Tab Index</td></tr>
+The event is triggered when the Ribbon tab gets selected.</td><td>
+The selected items are passed as arguments.
+
+Arguments:
+<ol>
+<li>Current Tab Index: Selected tab Index.</li>
+<li>Previous tab Index: Previous Active Tab Index</li>
+</ol></td></tr>
 <tr>
 <td>
 <br>GroupClick</td><td>
-The event is triggered when the {{ '_Ribbon_' | markdownify }} Group gets clicked.</td><td>
-The selected items are passed as arguments.Arguments:1. {{ '_Control ID_' | markdownify }}: selected group ID. 2. Ribbon model.</td></tr>
+The event is triggered when the Ribbon Group gets clicked.</td><td>
+The selected items are passed as arguments.
+
+Arguments:
+<ol>
+<li>Control ID: selected group ID.</li>
+<li>Ribbon model.</li>
+</ol></td></tr>
 <tr>
 <td>
 <br>GalleryItemClick</td><td>
 The event is triggered when the gallery items get clicked.</td><td>
-The selected items are passed as arguments. Arguments:1. Control ID: selected gallery Item ID. 2. Gallery model.</td></tr>
+The selected items are passed as arguments. 
+
+Arguments:
+<ol>
+<li>Control ID: selected gallery Item ID.</li>
+<li>Gallery model.</li>
+</ol></td></tr>
 </table>
-
-
-
-
-
 
 The following code example demonstrates how to handle the _TabSelect_event to get the selected tab information.
 
 {% highlight html %}
-
-
-
 
 <ej:Ribbon ID="Ribbon" runat="server" Width="100%" OnTabSelect="OnTabSelect">
 
@@ -97,17 +107,11 @@ The following code example demonstrates how to handle the _TabSelect_event to ge
 
 </ul>
 
-
-
 {% endhighlight %}
-
-
 
 Add the following code example in code behind.
 
 {% highlight c# %}
-
-
 
 protected void OnTabSelect(object sender, RibbonEventArgs e)
 
@@ -117,9 +121,4 @@ protected void OnTabSelect(object sender, RibbonEventArgs e)
 
         }
 
-
-
 {% endhighlight %}
-
-
-

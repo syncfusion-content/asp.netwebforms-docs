@@ -14,26 +14,15 @@ with a minimum of resizing, panning, and scrolling across a wide range of device
 layout for OLAP Client, enable IsResponsive API to true. By using this feature, you can achieve an effective view of the OLAP 
 Client control in all devices including desktops, tablets, mobiles, etc. 
 
-
-
-
-
 {% highlight html %}
 
-
-[ASPX]
-
 <%@ Register Assembly="Syncfusion.EJ.Olap" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
-
-
 
 <ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc" IsResponsive="true">
 
         <ClientSideEvents  ChartLoad="setChartProperties" />
 
 </ej:OlapClient>
-
-
 
 <script type="text/javascript">
 
@@ -50,21 +39,8 @@ Client control in all devices including desktops, tablets, mobiles, etc.
 
 ![](Responsive-Layout_images/Responsive-Layout_img1.png) 
 
-
-
 ![](Responsive-Layout_images/Responsive-Layout_img2.png) 
-
-
-
-
 
 ![](Responsive-Layout_images/Responsive-Layout_img3.png) 
 
-
-
-
-
- ![](Responsive-Layout_images/Responsive-Layout_img4.png) 
-
-
-
+![](Responsive-Layout_images/Responsive-Layout_img4.png) 

@@ -17,8 +17,6 @@ Title property allows you to set the default title for a Chart as follows.
 
 {% highlight html %}
 
-[ASP.NET]
-
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" title-text="OLAP Chart in Essential Studio">
 
  </ej:OlapChart>
@@ -34,8 +32,6 @@ Title property allows you to set the default title for a Chart as follows.
 You can customize the title text font using title.font property.
 
 {% highlight html %}
-
-[ASP.NET]
 
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection">
 

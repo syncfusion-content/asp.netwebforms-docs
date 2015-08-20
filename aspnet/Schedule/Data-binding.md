@@ -11,7 +11,7 @@ documentation: ug
 
 * To render appointments to the Schedule control, you are required to bind the appointment data. The following sub-properties helps you to bind either the local/remote data to the Schedule control by binding the appropriate appointment data fields to the corresponding options.
 
-###dataSource
+### dataSource
 
 * This property assigns the local json data or remote (url binding) data to the Schedule control.
 
@@ -109,7 +109,7 @@ The following code example explains how to include the Daylight saving time opti
 
 {% endhighlight %}
 
-##appointment settings:
+### appointment settings:
 
 ###location
 
@@ -141,14 +141,11 @@ On executing the above specified code the Location field will be added in the cr
 
 ![C:/Users/karthigeyan/Desktop/a.png](Data-binding_images/Data-binding_img1.png)
 
-
-###priority
+### priority
 
 * It maps the corresponding priority field name from the data table or JSON data, to the priority property of the Schedule control.
 
-
-
-##Local data
+### Local data
 
 * You can locally assign the data to Scheduler control. Inorder to define the local data to the Scheduler control, map the user-defined json data names with its appropriate dataSource column names. 
 * Specify the valid array of appointment objects to the dataSource property of the Schedule control as shown in the below code. 
@@ -192,7 +189,7 @@ Figure 50 : schedule with Local Data Binding
 
 
 
-##Remote data
+### Remote data
 
 * Apart from assinging the local data you can bind the remote data to the Schedule control using service url.
 * Inorder to avail that option refer the following steps:
@@ -225,7 +222,7 @@ The following screenshot displays the remote data bound to the Schedule control.
 
 Figure 51: Schedule with Remote Data Binding
 
-##Load On Demand
+### Load On Demand
 
 * Load on demand is a powerful technique that is used to reduce the bandwidth size of consuming data. Load on demand support has been added in our Schedule control, so that, it retrieves only the required appointment data from service/database during loading time, and that too for the current view. 
 * The_enableLoadOnDemand property is used to enable or disable the load on demand functionality of the schedule.
@@ -244,28 +241,45 @@ The following code example shows you how load on demand works with Schedule.
 
 
 {% highlight html %}
+
 <%-- Enable load on demand property to the schedule -- %>
+
 <asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
+
 <div>
-<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" Width="100%" Height="525px" EnableLoadOnDemand="true" EnableAppointmentNavigation="false" CurrentDate="5/2/2014">
-<DataManager  URL="LoadOnDemand.aspx/Data" Adaptor="UrlAdaptor" />
-<AppointmentSettings Id="ID" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" />
-</ej:Schedule>
+
+	<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" Width="100%" Height="525px" EnableLoadOnDemand="true" EnableAppointmentNavigation="false" CurrentDate="5/2/2014">
+
+	<DataManager  URL="LoadOnDemand.aspx/Data" Adaptor="UrlAdaptor" />
+
+	<AppointmentSettings Id="ID" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" />
+
+	</ej:Schedule>
+
 </div>
+
 </asp:Content>
+
 {% endhighlight %}
 
 
+{% highlight C# %}
+
 //Refer the required namespace
 
-
-{% highlight C# %}
  public partial class LoadOnDemand : System.Web.UI.Page
- { protected void Page_Load(object sender, EventArgs e)
- {HttpContext.Current.Session["Appointments"] = null;}
+  { 
+  protected void Page_Load(object sender, EventArgs e)
+ {
+ HttpContext.Current.Session["Appointments"] = null;
+ }
+ 
  //To Get the records from database then filter the collection and return appointment list with count details.
+ 
  [WebMethod]
+ 
  [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+ 
  public static object Data(String CurrentView, String CurrentAction, DateTime CurrentDate)
  {
  var data = FilterAppointment(CurrentDate, CurrentAction, CurrentView);
@@ -273,11 +287,13 @@ The following code example shows you how load on demand works with Schedule.
  result.result = data;result.count = GetAllRecords ().ToList ().Count > 0? GetAllRecords().ToList().Max(p => p.ID) : 1;
  return result;
  }
+ 
  public class BatchDataResult
  {
  public IEnumerable result { get; set; }
  public int count { get; set; }
  }
+ 
  public static ScheduleAppointmentsObjData GetObjectValue(Dictionary<string, object> objValue)
  {
  Dictionary<string, object> KeyVal = objValue;
@@ -294,14 +310,17 @@ The following code example shows you how load on demand works with Schedule.
  else if (keyval.Key == "Recurrence")appointValue.Recurrence = Convert.ToBoolean(keyval.Value);
  else if (keyval.Key == "RecurrenceRule")appointValue.RecurrenceRule = Convert.ToString(keyval.Value);
  }
+ 
  return appointValue;
  }
+ 
  public static IList<ScheduleAppointmentsObjData> GetAllRecords()
  {
  IList<ScheduleAppointmentsObjData> appoint = (IList<ScheduleAppointmentsObjData>)HttpContext.Current.Session["Appointments"];ScheduleAppointmentsObjDatum obj = new ScheduleAppointmentsObjDatum();
  if (appoint == null)HttpContext.Current.Session["Appointments"] = appoint = obj.GetRecords().ToList();
  return appoint;
  }
+ 
  //To filter the appointment based on current date, current action and current view
  
  public static List<ScheduleAppointmentsObjData> FilterAppointment(DateTime CurrentDate, String CurrentAction, String CurrentView)
@@ -321,6 +340,7 @@ The following code example shows you how load on demand works with Schedule.
  EndDate = StartDate.AddMonths(1);
  break;
  }
+ 
  appointmentList = GetAllRecords().ToList().Where(app =>((DateTime.ParseExact(app.StartTime.ToString(), 
  "MM/dd/yyyy hh:mm:ss tt", CultureInfo.InvariantCulture).ToLocalTime().Date >= Convert.ToDateTime(StartDate.Date)) 
  &&(DateTime.ParseExact(app.StartTime.ToString(), "MM/dd/yyyy hh:mm:ss tt", 
@@ -372,6 +392,3 @@ _Figure 4: Schedule with load on demand_
 
 
 * [Click here](http://asp.syncfusion.com/demos/web/schedule/loadondemand.aspx) to see how load on demand works with Schedule.
-
-
-

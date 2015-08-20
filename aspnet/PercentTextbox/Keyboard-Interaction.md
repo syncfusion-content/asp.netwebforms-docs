@@ -13,13 +13,11 @@ With the keyboard navigation enabled in the PercentageTextbox control, it is pos
 
 The various keyboard shortcuts available within the PercentageTextbox control are discussed in the following table. 
 
-
-
 <table>
 <tr>
-<td>
-Shortcut Key</td><td>
-Description</td></tr>
+<th>
+Shortcut Key</th><th>
+Description</th></tr>
 <tr>
 <td>
 <a href="http://en.wikipedia.org/wiki/Access_key">Access key</a> + j</td><td>
@@ -46,13 +44,7 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 {% highlight html %}
 
-
-
 <ej:PercentageTextBox ID="percentage" Value="22" runat="server"> </ej:PercentageTextBox>
-
-
-
-
 
 {% endhighlight %}
 
@@ -75,7 +67,6 @@ $(document).on("keydown", function (e)
     }
 
 });
-
 
 
 {% endhighlight %}

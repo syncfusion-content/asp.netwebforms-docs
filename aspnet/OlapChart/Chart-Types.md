@@ -32,8 +32,6 @@ Column Chart is the most commonly used chart types. It uses vertical bars (calle
 
 {% highlight html %}
 
-[ASP.NET]
-
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
 
     <CommonSeriesOptions Type="Column" Tooltip-Visible="true" />
@@ -59,7 +57,7 @@ Stacking Column Chart is similar to column charts except the “Y-values”. The
 
  {% highlight html %}
 
-[ASP.NET]
+
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
 
@@ -86,7 +84,7 @@ The Bar Chart is the simplest and most versatile chart of statistical diagrams. 
 
 {% highlight html %}
 
-[ASP.NET]
+
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
 
@@ -114,7 +112,7 @@ Stacking BarChart is a Regularbarchart with the X-values stacked on top of each 
 
 {% highlight html %}
 
-[ASP.NET]
+
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
 
@@ -141,7 +139,7 @@ A Pie chart is used to summarize a set of categorical data or displaying differe
 
 {% highlight html %}
 
-[ASP.NET]
+
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
 
@@ -169,7 +167,7 @@ The Pyramid Chart type displays the data in the form of a triangle. It helps you
  {% highlight html %}
 
 
-[ASP.NET]
+
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
 
@@ -200,7 +198,7 @@ The Line Chart joins the data points on a plot using straight lines that show tr
 
  {% highlight html %}
 
-[ASP.NET]
+
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
 
@@ -225,7 +223,7 @@ Step LineChart uses horizontal and vertical lines to connect the data points res
 
 {% highlight html %}
 
-[ASP.NET]
+
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
 
@@ -251,7 +249,7 @@ The spline chart is similar to line charts except it connects different data poi
 
 {% highlight html %}
 
-[ASP.NET]
+
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
 
@@ -275,7 +273,7 @@ Area Chart emphasizes the degree of change of values over a period of time. Inst
 
 {% highlight html %}
 
-[ASP.NET]
+
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
 
@@ -299,7 +297,7 @@ Step Area chart is similar to the regular area chart except for a straight line 
 
 {% highlight html %}
 
-[ASP.NET]
+
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
 
@@ -324,7 +322,7 @@ Spline Area chart is similar to Area Chart with the difference in which the data
 
 {% highlight html %}
 
-[ASP.NET]
+
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
 
@@ -350,7 +348,7 @@ Stacking Area chart is similar to regular area chart except the “Y-values”. 
 
 {% highlight html %}
 
-[ASP.NET]
+
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
 

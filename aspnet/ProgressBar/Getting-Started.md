@@ -15,11 +15,11 @@ ASP.NET ProgressBar displays a ProgressBar within a webpage that shows the pr
 
 ### Create a ProgressBar
 
-ASP.NET ProgressBar control is created by using the <ej:ProgressBar> tag. This element provides an in-built feature that allows you to change the progress, size, and text of the control. You can create the ProgressBar control by using the following steps.
+ASP.NET ProgressBar control is created by using the &lt;ej:ProgressBar&gt; tag. This element provides an in-built feature that allows you to change the progress, size, and text of the control. You can create the ProgressBar control by using the following steps.
 
-      You can create an ASP.NET Project and add the necessary Dlls and scripts with the help of the given [ASP-Getting Started](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm) documentation.
+You can create an ASP.NET Project and add the necessary Dlls and scripts with the help of the given [ASP-Getting Started](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm) documentation.
 
-      You can add the following code example to the corresponding ASPX page to render the ProgressBar.
+You can add the following code example to the corresponding ASPX page to render the ProgressBar.
 
 {% highlight html %}
 
@@ -61,15 +61,11 @@ ASP.NET ProgressBar control is created by using the <ej:ProgressBar> tag. Thi
 
     </div>
 
-
-
 {% endhighlight %}
 
  It also includes a password field and through that the progress of the ProgressBar can be controlled. Include the following CSS within the <head> tag to change the page layout 
 
 {% highlight css %}
-
-
 
         /*applying styles */
 
@@ -137,11 +133,6 @@ ASP.NET ProgressBar control is created by using the <ej:ProgressBar> tag. Thi
 
 {% endhighlight %}
 
-
-
 The following screenshot displays the ProgressBar control.
 
 ![](Getting-Started_images/Getting-Started_img1.png)
-
-
-

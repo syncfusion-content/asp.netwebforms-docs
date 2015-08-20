@@ -17,15 +17,13 @@ Cube Selector allows you to browse and select a cube from the entire collection,
 
 Cube can be changed by selecting a cube name from the list of names available within the Cube Selector drop-down list. When a cube is changed, the following elements refresh according to the new cube.
 
-
-
 _Table: Components Table_
 
 <table>
 <tr>
-<td>
-Component</td><td>
-Description</td></tr>
+<th>
+Component</th><th>
+Description</th></tr>
 <tr>
 <td>
 Report List</td><td>
@@ -65,9 +63,9 @@ _Table: List of nodes_
 
 <table>
 <tr>
-<td>
-Type Of Nodes</td><td>
-Description</td></tr>
+<th>
+Type Of Nodes</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cube</td><td>
@@ -126,8 +124,6 @@ Attribute Hierarchy, contains only one level.</td></tr>
 <tr>
 <td>
 {{ '![](OLAP-Client-Elements_images/OLAP-Client-Elements_img3.png)' | markdownify }}
-
-
 </td><td>
 User Defined Hierarchy and its levels are mentioned with a similar image. It contains one or more levels.</td></tr>
 </table>

@@ -434,200 +434,163 @@ The following screenshot illustrates _Ribbon_ with Tab Group Collections.
 
 1. Create a _Master_ file and add the following references to the required libraries. 
 
-{% highlight html %}
+   ~~~ html
 
-[Layout.Master]
+		<!doctype html>
 
+		<html>
 
+		<head>
 
-<!doctype html>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
 
-<html>
+		<!-- style sheet for default theme(flat azure) -->
 
-<head>
+		<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+		<!--scripts-->
 
-<!-- style sheet for default theme(flat azure) -->
+		<script src="[http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js](http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js)"></script>
 
-<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+		<script src="[http://cdn.syncfusion.com/js/assets/external/jquery.globalize.js](http://cdn.syncfusion.com/js/assets/external/jquery.globalize.js)"> </script>
 
-<!--scripts-->
+		<script src="[http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.js](http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.js)">
 
-<script src="[http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js](http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js)"></script>
+		</script>
 
-<script src="[http://cdn.syncfusion.com/js/assets/external/jquery.globalize.js](http://cdn.syncfusion.com/js/assets/external/jquery.globalize.js)"> </script>
+		<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
 
-<script src="[http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.js](http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.js)">
+		</head>
 
-</script>
+		<body>
 
-<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+		</body>
 
-</head>
+		</html>
 
-<body>
+   ~~~
+   {:.prettyprint }
 
-</body>
+2. Add a Ribbon tag in the .aspx page as shown in the following code example.
 
-</html>
+   ~~~ html
 
+		<%--..--%>
 
+		<ej:Ribbon ID="defaultRibbon" runat="server" Width="100%"> </ej:Ribbon>
 
-{% endhighlight %}
+		<%--..--%>
 
+   ~~~
+   {:.prettyprint }
 
+3. Create the Ribbon control as follows. The _Width_ property allows you to define the width to the ribbon. In applicationTab definition, the _ItemID_ property allows you to specify the ID of the ul list to create the application menu. In _RibbonTab_, define the _TabGroupCollection_ property that allows you to create one or more _TabGroups_ in the _RibbonTab_. In contextual Tabs definition, the _BackgroundColor_ property allows you to define the background color of the contextual tab and _BorderColor_ property allows you to define the border color of the contextual tab.
 
-2. Add a _Ribbon_ tag in the .aspx page as shown in the following code example.
 
+   ~~~ html
 
+		<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
 
-{% highlight html %}
+		<div>
 
+		     <ej:Ribbon ID="defaultRibbon" runat="server" Width="100%">
 
+		        <ApplicationTab ItemID="menu" Type="ApplicationMenu">
 
+		           <MenuSettings OpenOnClick="false"></MenuSettings>
 
+		        </ApplicationTab>
 
-<%--..--%>
+		     <RibbonTabs>
 
+		     <ej:RibbonTab Id="home" Text="HOME">
 
+		    <TabGroupCollection>        <ej:TabGroup Text="New" AlignType="Rows" Type="custom" ContentID="homediv">
 
-<ej:Ribbon ID="defaultRibbon" runat="server" Width="100%"> </ej:Ribbon>
+		</ej:TabGroup>
 
+			   </TabGroupCollection>
 
+		     </ej:RibbonTab>
 
-<%--..--%>
+		     <ej:RibbonTab Id="calculator" Text="CALCULATOR">
 
+		       <TabGroupCollection>
 
+		<ej:TabGroup Text="Calculator" AlignType="Rows" Type="custom" ContentID="calculate" />
 
-{% endhighlight %}
+			   </TabGroupCollection>
 
+			 </ej:RibbonTab>
 
+		    </RibbonTabs>
 
-3. Create the _Ribbon_ control as follows. The _Width_ property allows you to define the width to the ribbon. In applicationTab definition, the _ItemID_ property allows you to specify the ID of the ul list to create the application menu. In _RibbonTab_, define the _TabGroupCollection_ property that allows you to create one or more _TabGroups_ in the _RibbonTab_. In contextual Tabs definition, the _BackgroundColor_ property allows you to define the background color of the contextual tab and _BorderColor_ property allows you to define the border color of the contextual tab.
+		<ContextualTabs>
 
+		   <ej:ContextualTab BackgroundColor="#FCFBEB" BorderColor="#F2CC1C">
 
+		       <RibbonTabCollection >
 
-{% highlight html %}
+		         <ej:RibbonTab Id="design" Text="DESIGN">
 
+		            <TabGroupCollection>
 
+		               <ej:TabGroup Text="Design" AlignType="Rows" Type="custom" ContentID="designing" />
 
+		              </TabGroupCollection>
 
+		          </ej:RibbonTab>
 
-<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
+		        </RibbonTabCollection >
 
-<div>
+		    </ej:ContextualTab>
 
-     <ej:Ribbon ID="defaultRibbon" runat="server" Width="100%">
+		</ContextualTabs>
 
-        <ApplicationTab ItemID="menu" Type="ApplicationMenu">
+		</ej:Ribbon>
 
-           <MenuSettings OpenOnClick="false"></MenuSettings>
+		</div>
 
-        </ApplicationTab>
+		    <ul id="menu">
 
-     <RibbonTabs>
+		        <li><a>FILE</a>
 
-     <ej:RibbonTab Id="home" Text="HOME">
+		            <ul>
 
-    <TabGroupCollection>        <ej:TabGroup Text="New" AlignType="Rows" Type="custom" ContentID="homediv">
+		                <li><a>New</a></li>
 
-</ej:TabGroup>
+		                <li><a>Open</a></li>
 
-       </TabGroupCollection>
+		                <li><a>Save</a></li>
 
-     </ej:RibbonTab>
+		                <li><a>Save as</a></li>
 
-     <ej:RibbonTab Id="calculator" Text="CALCULATOR">
+		                <li><a>Print</a></li>
 
-       <TabGroupCollection>
+		            </ul>
 
-<ej:TabGroup Text="Calculator" AlignType="Rows" Type="custom" ContentID="calculate" />
+		        </li>
 
-       </TabGroupCollection>
+		    </ul>
 
-     </ej:RibbonTab>
+		    <div id="homediv">Ribbon Control</div>
 
-    </RibbonTabs>
+		    <div id="calculate">Calculator</div>
 
-<ContextualTabs>
+		    <div id="designing">Design</div></asp:Content>
 
-   <ej:ContextualTab BackgroundColor="#FCFBEB" BorderColor="#F2CC1C">
-
-       <RibbonTabCollection >
-
-         <ej:RibbonTab Id="design" Text="DESIGN">
-
-            <TabGroupCollection>
-
-               <ej:TabGroup Text="Design" AlignType="Rows" Type="custom" ContentID="designing" />
-
-              </TabGroupCollection>
-
-          </ej:RibbonTab>
-
-        </RibbonTabCollection >
-
-    </ej:ContextualTab>
-
-</ContextualTabs>
-
-</ej:Ribbon>
-
-</div>
-
-    <ul id="menu">
-
-        <li><a>FILE</a>
-
-            <ul>
-
-                <li><a>New</a></li>
-
-                <li><a>Open</a></li>
-
-                <li><a>Save</a></li>
-
-                <li><a>Save as</a></li>
-
-                <li><a>Print</a></li>
-
-            </ul>
-
-        </li>
-
-    </ul>
-
-    <div id="homediv">Ribbon Control</div>
-
-    <div id="calculate">Calculator</div>
-
-    <div id="designing">Design</div></asp:Content>
-
-
-
-{% endhighlight %}
-
-
+   ~~~
+   {:.prettyprint }
 
 4. The following screenshot illustrates the _Ribbon_ control.
 
-![](Getting-Started_images/Getting-Started_img9.png)
-
-
-
+   ![](Getting-Started_images/Getting-Started_img9.png)
 
 ## Add Controls
 
 Add controls to each _Ribbon_ tab by using the tag _ContentCollection_. You can also add custom controls by using the property _ContentID_. The property _AlignType_ is used to align the groups in row or column order._Button, Split button, DropdownLlist_ and _Toggle button_, _Gallery_, and _Custom_ controls support have provided in the _Ribbon_ control.The default _AlignType_ is _rows_.
 
-
-
 {% highlight html %}
-
-
-
-
 
 <asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
 
@@ -805,54 +768,35 @@ Add controls to each _Ribbon_ tab by using the tag _ContentCollection_. You can 
 
 </asp:Content>
 
-
-
-
-
 {% endhighlight %}
-
-
 
 {% highlight c# %}
-
-
-
-
-
 protected void Page_Load(object sender, EventArgs e)
 
-        {
+  {
 
-            var fontlist = new List<string> { "Segoe UI", "Arial", "Times New Roman", "Tahoma", "Helvetica" };
+     var fontlist = new List<string> { "Segoe UI", "Arial", "Times New Roman", "Tahoma", "Helvetica" };
 
-              var fontsize = new List<string>() { "1pt", "2pt", "3pt", "4pt", "5pt" };
+     var fontsize = new List<string>() { "1pt", "2pt", "3pt", "4pt", "5pt" };
 
-            this.fontfamily.DropdownSettings.DataSource = fontlist;
+     this.fontfamily.DropdownSettings.DataSource = fontlist;
 
-            this.fontsize.DropdownSettings.DataSource = fontsize;}
-
-
+    this.fontsize.DropdownSettings.DataSource = fontsize;}
 
 {% endhighlight %}
-
-
 
 The following screenshot illustrates Ribbon with controls,
 
 ![](Getting-Started_images/Getting-Started_img10.png)
 
 
-
-
 ## Expand/Collapse
 
-The _expand/collapse_ support has been provided to the _Ribbon_.
+The expand/collapse support has been provided to the _Ribbon_.
 
 The following screenshot illustrates _Ribbon_ in the expanded state.
 
 ![](Getting-Started_images/Getting-Started_img11.png)
-
-
 
 
 The following screenshot illustrates _Ribbon_ in the collapsed state,
@@ -864,13 +808,7 @@ The following screenshot illustrates _Ribbon_ in the collapsed state,
 
 The control _Separator_ support is provided in the _Ribbon_ control. Set _EnableSeparator_ value to _true_ to enable the separator after a control. _Control Separator_ supports only row type group.
 
-
-
 {% highlight html %}
-
-
-
-
 
 <asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
 
@@ -1064,14 +1002,9 @@ The control _Separator_ support is provided in the _Ribbon_ control. Set _Enable
 
 {% highlight c# %}
 
-
-
-
-
 protected void Page_Load(object sender, EventArgs e)
 
         {
-
             var fontlist = new List<string> { "Segoe UI", "Arial", "Times New Roman", "Tahoma", "Helvetica" };
 
               var fontsize = new List<string>() { "1pt", "2pt", "3pt", "4pt", "5pt" };
@@ -1080,18 +1013,8 @@ protected void Page_Load(object sender, EventArgs e)
 
             this.fontsize.DropdownSettings.DataSource = fontsize;}
 
-
-
 {% endhighlight %}
-
-
 
 The following screenshot illustrates the control Separator after the Italic Button control.
 
 ![](Getting-Started_images/Getting-Started_img13.png)
-
-
-
-
-
-

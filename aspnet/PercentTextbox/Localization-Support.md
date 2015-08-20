@@ -25,7 +25,7 @@ You can refer to the following online link reference for globalize.culture.js
 
 You can get the script file of various cultures from the following path also:
 
-"<Installed Location>\Syncfusion\Essential Studio\ {{site.releaseversion}} \JavaScript\assets\external\cultures"
+"&lt;Installed Location&gt;\Syncfusion\Essential Studio\ {{site.releaseversion}} \JavaScript\assets\external\cultures"
 
 You can dynamically change the language based on their culture.
 
@@ -42,15 +42,12 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 {% endhighlight %}
 
 
+The output for PercentageTextbox with localization.
 
 ![](Localization-Support_images/Localization-Support_img1.png)
 
-The output for PercentageTextbox with localization.
-
 _PercentageTextbox with es-ES locale_
-
-_PercentageTextbox with en-US locale_
 
 ![](Localization-Support_images/Localization-Support_img2.png)
 
-
+_PercentageTextbox with en-US locale_

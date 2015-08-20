@@ -17,8 +17,6 @@ This section explains briefly about how to create an OLAP Client in your applica
 
 The following screenshot displays the OLAP Client Control.
 
-
-
 ![](Getting-Started_images/Getting-Started_img1.png) 
 
 
@@ -36,25 +34,34 @@ As per the architecture, control rendering takes place at the client-side and al
 The primary reasons for using service in an OLAP processing are as follows:
 
 1. DataSource Connectivity: You can establish a connection between different cube data sources such as
-1. Offline Cube
-2. Online Cube (XML/A)
-3. Cube within SQL Server (locally or through remote) you can move the connectivity related coding to service-side as it is impossible at the client-side other than Online Cube (XML/A) option. Using service, you can connect any cube data source without any limitation.
+   
+   i) Offline Cube
+   
+   ii) Online Cube (XML/A)
+   
+   iii) Cube within SQL Server (locally or through remote) you can move the connectivity related coding to service-side as it is impossible at the client-side other than Online Cube (XML/A) option. Using service, you can connect any cube data source without any limitation.
+
 2. Cube Schema: As the connection is moved to service-side, you obviously use Microsoft__ADOMD__assembly to get the entire cube schema. Only with the cube schema the following details are achieved for control rendering.
-1. Availability of cubes.
-2. A complete end-to-end detail such as name, caption, unique name, parent information, child information, its properties etc. about the dimension, hierarchy, level, members are available in cube schema only. 
-3. Localized information is also available in cube schema.  
+   
+   i) Availability of cubes.
+   
+   ii) A complete end-to-end detail such as name, caption, unique name, parent information, child information, its properties etc. about the dimension, hierarchy, level, members are available in cube schema only. 
+   
+   iii) Localized information is also available in cube schema.  
 3. MDX Generator: You can frame the MDX query using MDX generator in Syncfusion.Olap.Base assembly. To execute the framed MDX from the cube data source, you can send framed MDX via MicrosoftADOMDassembly. The executed query is returned in the form of cell set (contain values) that is converted to Pivot Engine and then to JSON data to render any OLAP controls.
+
 4. OLAP Report: The OlapReport class in the Syncfusion.Olap.Base holds the complete information of each axes such as column, row and slicer. Using OlapReport class, you can maintain the dimension element, measure element, hierarchy name, level name as well as the member information that is included and excluded.  
 
-As the OlapControl is the key for each and every operation, initially you need to serialize the OlapReport and send to client-side in a form of string.
+   As the OlapControl is the key for each and every operation, initially you need to serialize the OlapReport and send to client-side in a form of string.
 
-When you perform any operation such as drill up/down, filtering, sorting etc., you can send OlapReport from client-side to service-side in a de-serialized and updated format.
+   When you perform any operation such as drill up/down, filtering, sorting etc., you can send OlapReport from client-side to service-side in a de-serialized and updated format.
 
-Further operations are carried with updated OlapReports only and you can send the updated OlapReport back to client-side with JSON data in a serialized format again. 
+   Further operations are carried with updated OlapReports only and you can send the updated OlapReport back to client-side with JSON data in a serialized format again. 
 
-This process keeps the OlapReport always updated. You cannot operate serialized OlapReport in client-side and hence it is carried to service-side having its class in Syncfusion.Olap.Base assembly to perform the update operation_._
+   This process keeps the OlapReport always updated. You cannot operate serialized OlapReport in client-side and hence it is carried to service-side having its class in Syncfusion.Olap.Base assembly to perform the update operation_._
 
 5. Saving and Loading Report in Database:  you can save and load the reports available in OlapClient control via service only. This is not applicable at the client-side. You can serialize the OlapReport class in the Syncfusion.Olap.Base assembly and save to database as stream.  Also you can load back from database via service. 
+
 6. Exporting: You can export OLAP values and information to excel sheet via service only. So this provides feasible option to save and view OLAP information.  
 
 ### Create an application
@@ -65,9 +72,7 @@ In this example you can see how OLAPClient component plots the data about Custom
 
  ![C:/Users/Narendhran Muthuvel/Desktop/screenshots/Capture.PNG](Getting-Started_images/Getting-Started_img3.png) 
 
-
-
-_Figure: Customer Count over different fiscal years_
+ _Figure: Customer Count over different fiscal years_
 
 Open the Visual Studio and create a new project by clicking New Project. Select the category Web and select the template ASP.NET Empty Web Application and then click OK.
 
@@ -81,68 +86,38 @@ Open the Visual Studio and create a new project by clicking New Project. Select 
 
 1. Right-click the project and select Add > New Folder.  Name the folder as olapclient.
 
-
-
-![](Getting-Started_images/Getting-Started_img5.png) 
-
-
+   ![](Getting-Started_images/Getting-Started_img5.png) 
 
 2. Now right-click on the olapclient folder newly created and select Add > New Item.
 
-
-
-![](Getting-Started_images/Getting-Started_img6.png) 
-
-
-
+   ![](Getting-Started_images/Getting-Started_img6.png)   
+   
 3. Select Web Form and name it as Default.aspx.
 
-
-
- ![](Getting-Started_images/Getting-Started_img7.png) 
-
-
+   ![](Getting-Started_images/Getting-Started_img7.png) 
 
 4. Drag the OlapClient control from the Syncfusion BI Web Toolbox onto the Design page.
 
-
-
-![](Getting-Started_images/Getting-Started_img8.png) 
-
-
-
-![](Getting-Started_images/Getting-Started_img9.png) 
-
-
-
+   ![](Getting-Started_images/Getting-Started_img8.png) 
+   
+   ![](Getting-Started_images/Getting-Started_img9.png) 
+   
 5. Enter the service URL value after dragging and dropping the control.
 
+   > Note: Instructions to create a service is explained briefly in the upcoming sections.
 
-Note: Instructions to create a service is explained briefly in the upcoming sections.
+   ![](Getting-Started_images/Getting-Started_img11.png) 
 
-![](Getting-Started_images/Getting-Started_img11.png) 
+   Initialize the control using below code snippet.
 
-
-
-Initialize the control using below code snippet.
-
-
-
-
-Note: URL value needs to be defined in order to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately. 
+   > Note: URL value needs to be defined in order to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately. 
 
 
 {% highlight html %}
 
-[ASPX]
-
-
-
 <body>
 
     <form id="form1" runat="server">
-
-
 
     <div>   
 
@@ -167,25 +142,21 @@ Note: URL value needs to be defined in order to fetch the data from the service.
 
 1. In the Solution Explorer, right-click the References folder and then click Add Reference.
 
+   ![](Getting-Started_images/Getting-Started_img13.png) 
 
 
-![](Getting-Started_images/Getting-Started_img13.png) 
-
-
-![](Getting-Started_images/Getting-Started_img14.png)
-
-
+   ![](Getting-Started_images/Getting-Started_img14.png) 
 
 2. Select the following assemblies:  
-* Microsoft.AnalysisServices.AdomdClient.dll,
-* Syncfusion.Core.dll, 
-* Syncfusion.Compression.Base.dll,
-* Syncfusion.Linq.Base.dll, 
-* Syncfusion.EJ.dll, 
-* Syncfusion.EJ.Olap.dll,
-* Syncfusion.Olap.Base.dll,
-* Syncfusion.XlsIO.Base.dll and
-* System.Data.SqlServerCe.dll (Version: 4.0.0.0).
+   * Microsoft.AnalysisServices.AdomdClient.dll,
+   * Syncfusion.Core.dll, 
+   * Syncfusion.Compression.Base.dll,
+   * Syncfusion.Linq.Base.dll, 
+   * Syncfusion.EJ.dll, 
+   * Syncfusion.EJ.Olap.dll,
+   * Syncfusion.Olap.Base.dll,
+   * Syncfusion.XlsIO.Base.dll and
+   * System.Data.SqlServerCe.dll (Version: 4.0.0.0).
 
 3. Click OK.
 
@@ -195,16 +166,15 @@ Add the script files and CSS files in the head tag of the Default.aspx page.
 
 
 
-Note: 1. Use the following code sample while adding scripts and styles.            
-       2. Same files can also acquire from the following location.
-       C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScript\assets\
-       3. Please download jquery.globalize.min.js from jQuery site to local machine and refer in the sample like below.
+> Note: 
+>
+> 1. Use the following code sample while adding scripts and styles.            
+> 2. Same files can also acquire from the following location.
+> C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScript\assets\
+> 3. Please download jquery.globalize.min.js from jQuery site to local machine and refer in the sample like below.
 
 
 {% highlight html %}
-
-[ASPX]
-
 
 
 <head>
@@ -230,27 +200,15 @@ Note: 1. Use the following code sample while adding scripts and styles.
 
 1. Right click the project and select Add > New Folder.  Name the folder as wcf.
 
-
-
-![](Getting-Started_images/Getting-Started_img16.png) 
-
-
+   ![](Getting-Started_images/Getting-Started_img16.png) 
 
 2. Now right click the wcf folder created and select Add > New Item.
-
-
-
-![](Getting-Started_images/Getting-Started_img17.png) 
-
-
+   
+   ![](Getting-Started_images/Getting-Started_img17.png) 
 
 3. In the Add New Item window, select WCF Service and name it OlapClientService.svc. Click Add. 
 
-
-
-![](Getting-Started_images/Getting-Started_img18.png) 
-
-
+   ![](Getting-Started_images/Getting-Started_img18.png) 
 
 #### Adding service methods inside Interface
 
@@ -259,89 +217,45 @@ Add the following code sample inside the IOlapClientService interface available 
 
 {% highlight C# %}
 
-[C#]
-
-
-
-    [ServiceContract]
-
     public interface IOlapClientService
 
     {
 
-        [OperationContract]
-
-        Dictionary<string, object> InitializeClient(string action, string customObject, string clientParams);
-
-        [OperationContract]
+        Dictionary<string, object> InitializeClient(string action, string customObject, string clientParams);        
 
         Dictionary<string, object> FetchMemberTreeNodes(string action, string dimensionName, string olapReport);
 
-        [OperationContract]
-
         Dictionary<string, object> InitializeChart(string action, string currentReport, string customObject);
-
-        [OperationContract]
 
         Dictionary<string, object> DrillChart(string action, string drilledSeries, string olapReport, string clientReports);
 
-        [OperationContract]
-
         Dictionary<string, object> InitializeGrid(string action, string currentReport, string gridLayout, string customObject);
-
-        [OperationContract]
 
         Dictionary<string, object> DrillGrid(string action, string cellPosition, string currentReport, string clientReports, string headerInfo, string layout);
 
-        [OperationContract]
-
         Dictionary<string, object> FilterElement(string action, string clientParams, string olapReport, string clientReports);
-
-        [OperationContract]
 
         Dictionary<string, object> RemoveSplitButton(string action, string clientParams, string olapReport, string clientReports);
 
-        [OperationContract]
-
         Dictionary<string, object> NodeDropped(string action, string dropType, string nodeInfo, string olapReport, string clientReports);
-
-        [OperationContract]
 
         Dictionary<string, object> CubeChanged(string action, string cubeName, string clientParams);
 
-        [OperationContract]
-
         Dictionary<string, object> MeasureGroupChanged(string action, string measureGroupName);
-
-        [OperationContract]
 
         Dictionary<string, object> ToolbarOperations(string action, string toolbarOperation, string clientInfo, string olapReport, string clientReports);
 
-        [OperationContract]
-
         Dictionary<string, object> UpdateReport(string action, string clientParams, string olapReport, string clientReports);
-
-        [OperationContract]
 
         Dictionary<string, object> SaveReportToDB(string reportName, string olapReport, string clientReports);
 
-        [OperationContract]
-
         Dictionary<string, object> LoadReportFromDB(string reportName, string olapReport, string clientReports);
-
-        [OperationContract]
 
         Dictionary<string, object> FetchReportListFromDB();
 
-        [OperationContract]
-
         Dictionary<string, object> MemberExpanded(string action, bool checkedStatus, string parentNode, string tag, string dimensionName, string cubeName, string olapReport, string clientReports);
 
-        [OperationContract]
-
         void ExportOptions(System.IO.Stream stream);
-
-
 
     }
 
@@ -353,8 +267,6 @@ Add the following necessary namespaces required to implement the service methods
 
 
 {% highlight C# %}
-
-[C#]
 
 using System;
 
@@ -407,10 +319,6 @@ You can create the OlapClientService class to implement the service methods. You
 
 {% highlight C# %}
 
-[C#]
-
-
-
 namespace Sample
 
 {
@@ -437,10 +345,6 @@ You can add the following methods to the service that are invoked for any server
 
 {% highlight C# %}
 
-[C#]
-
-
-
         OlapClient olapClientHelper = new OlapClient();
 
         OlapChart htmlHelper = new OlapChart();
@@ -461,13 +365,8 @@ You can add the following methods to the service that are invoked for any server
 
 {% highlight C# %}
 
-[C#]
-
-
 
 //This method provides the required information from the server side for initializing the OlapClient.
-
-
 
 public Dictionary<string, object> InitializeClient(string action, string customObject, string clientParams)
 
@@ -839,8 +738,6 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
 
 //This method carries the information about the default report which would be rendered within OlapClient initially. 
 
-
-
         private OlapReport CreateOlapReport()
 
         {
@@ -882,127 +779,109 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
 #### Configuring Web.Config
 
 1. You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "Sample.OlapClientService" where "OlapClientService" is the service class name and “Sample" is the namespace name where service class appears.The following are the properties that meet the appropriate endpoint.  
-* contract: This property indicates the contract of the endpoint is exposing. Here you are referring IOlapClientService contract and hence it is "Sample.IOlapClientService".
-* binding: In your application, you use webHttpBinding to post and receive the requests and responses between the client-end and the service-end.
-* behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint. endpointBehaviors are illustrated as follows
+   
+   * contract: This property indicates the contract of the endpoint is exposing. Here you are referring IOlapClientService contract and hence it is "Sample.IOlapClientService".
+   * binding: In your application, you use webHttpBinding to post and receive the requests and responses between the client-end and the service-end.
+   * behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint. endpointBehaviors are illustrated as follows
 
+   ~~~ html
 
+		<system.serviceModel>
 
-{% highlight html %}
+			<services>
 
-[web.config]
+			  <service name="Sample.OlapClientService">
 
-<system.serviceModel>
+				<endpoint address="" behaviorConfiguration="Sample.OlapClientServiceAspNetAjaxBehavior"
 
-    <services>
+				  binding="webHttpBinding" contract="Sample.IOlapClientService" />
 
-      <service name="Sample.OlapClientService">
+			  </service>
 
-        <endpoint address="" behaviorConfiguration="Sample.OlapClientServiceAspNetAjaxBehavior"
+			</services>
 
-          binding="webHttpBinding" contract="Sample.IOlapClientService" />
+		</system.serviceModel>
 
-      </service>
-
-    </services>
-
-</system.serviceModel>
-
-{% endhighlight %}
-
-
+   ~~~
+   {:.prettyprint }
+   
 2. The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property. In the following code sample "Sample.OlapClientServiceAspNetAjaxBehavior" points the OlapClientService class under the namespace Sample in OlapClientService.svc.cs file that is the appropriate behavior for the endpoint. 
 
+   ~~~ html
 
-{% highlight html %}
+		<system.serviceModel>
 
-[web.config]
+			<behaviors>
 
-<system.serviceModel>
+			  <endpointBehaviors>
 
-    <behaviors>
+				<behavior name="Sample.OlapClientServiceAspNetAjaxBehavior">
 
-      <endpointBehaviors>
+				  <enableWebScript />
 
-        <behavior name="Sample.OlapClientServiceAspNetAjaxBehavior">
+				</behavior>
 
-          <enableWebScript />
+			  </endpointBehaviors>
 
-        </behavior>
+			</behaviors>
 
-      </endpointBehaviors>
+		</system.serviceModel>
 
-    </behaviors>
-
-</system.serviceModel>
-
-
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 3. Register the assemblies in web.config file by adding the following codes.
 
+   ~~~ html
 
+		<system.web>
 
-{% highlight html %}
+			  <compilation debug="true" targetFramework="4.5" >
 
-[web.config]
+				<assemblies>
 
-<system.web>
+				  <add assembly="Syncfusion.EJ, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
 
-      <compilation debug="true" targetFramework="4.5" >
+				  <add assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
 
-        <assemblies>
+				   <add assembly="Syncfusion.Olap.Base, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3D67ED1F87D44C89"/>
 
-          <add assembly="Syncfusion.EJ, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+				</assemblies>
 
-          <add assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+			  </compilation>
 
-           <add assembly="Syncfusion.Olap.Base, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3D67ED1F87D44C89"/>
+		 </system.web> 
 
-        </assemblies>
+   ~~~
+   {:.prettyprint }
 
-      </compilation>
-
- </system.web> 
-
-{% endhighlight %}
-
-
-
-Note: x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
+   > Note: x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
 
 
 4. Register the namespace in web.config file by adding the following codes
 
+   ~~~ html
+
+		<system.web>
+
+		 <pages validateRequest="false">
+
+			  <controls>
+
+				  <add  namespace="Syncfusion.JavaScript.Web.Olap" assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/>
+
+			  </controls>
+
+		   </pages>
+
+		</system.web> 
 
 
-{% highlight html%}
+   ~~~
+   {:.prettyprint }
 
-[web.config]
+   > Note: In this example, “Sample” indicates the name of the project and “OlapClientService” indicates the name of the WCF service created. And x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
 
-<system.web>
+   In summary, this getting started tutorial gives you an overview of OlapClient, its architecture, process flow, how to configure and integrate with a VS application through a simple example that is self-explanatory.
 
- <pages validateRequest="false">
-
-      <controls>
-
-          <add  namespace="Syncfusion.JavaScript.Web.Olap" assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/>
-
-      </controls>
-
-   </pages>
-
-</system.web> 
-
-{% endhighlight  %}
-
-Note: In this example, “Sample” indicates the name of the project and “OlapClientService” indicates the name of the WCF service created. And x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
-
-
-
-In summary, this getting started tutorial gives you an overview of OlapClient, its architecture, process flow, how to configure and integrate with a VS application through a simple example that is self-explanatory.
-
-![](Getting-Started_images/Getting-Started_img21.png) 
-
-
-
+   ![](Getting-Started_images/Getting-Started_img21.png) 

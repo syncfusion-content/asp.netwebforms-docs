@@ -11,7 +11,7 @@ documentation: ug
 
 ## Collapse
 
-_Collapse_ method is used to minimize the ribbon control tab contents.You can minimize the_Ribbon_ tab content by using the client side method _collapse()._
+_Collapse_ method is used to minimize the ribbon control tab contents.You can minimize the Ribbon tab content by using the client side method _collapse()._
 
 
 

@@ -86,13 +86,12 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 <ej:PercentageTextBox ID="percentage" Value="2" ShowRoundedCorner="true" runat="server"> </ej:PercentageTextBox>
 
-
-
 {% endhighlight %}
 
 
 
 The output for PercentageTextbox when showRoundedCorner is true.
+
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
 
 
@@ -109,8 +108,6 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 <ej:PercentageTextBox ID="percentage" Value="2" ShowSpinButton="true" runat="server"> </ej:PercentageTextBox>
 
-
-
 {% endhighlight %}
 
 
@@ -119,12 +116,9 @@ The output for PercentageTextbox when ShowSpinButton is true.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
-
+_PercentageTextbox with ShowSpinButton is true_
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
-
-
-_PercentageTextbox with ShowSpinButton is true_
 
 _PercentageTextbox with ShowSpinButton is false_
 
@@ -140,16 +134,10 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 <ej:PercentageTextBox ID="percentage" WaterMarkText="2222" runat="server"> </ej:PercentageTextBox>
 
-
-
 {% endhighlight %}
 
 
 
- The output for PercentageTextbox after applying WatermarkText.
+The output for PercentageTextbox after applying WatermarkText.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png) 
-
-
-
-

@@ -354,15 +354,11 @@ Table 2 : List of keys and string values
 
 {% highlight html %}
 
-
-
 <asp:Content ID="Content1" ContentPlaceHolderID="SampleHeading" runat="server">
 
 <span class="sampleName">Schedule / Localization</span>
 
 </asp:Content>
-
-
 
 <asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
 
@@ -374,8 +370,6 @@ Table 2 : List of keys and string values
 
 </ej:Schedule>
 
-
-
 </div>
 
 <asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
@@ -383,8 +377,6 @@ Table 2 : List of keys and string values
 SelectCommand="SELECT * FROM [Localization]"></asp:SqlDataSource>
 
 </asp:Content>
-
-
 
 <asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
 
@@ -608,19 +600,13 @@ Select Culture
 
 {% endhighlight %}
 
-
-
-
+{% highlight text %}
 
 Important: An important note while making use of localization in the schedule control, it is necessary to refer the required culture script file (globalize.culture.xx-XX.min.js) in the script reference section of the sample as follows.
 
-
-
-
+{% endhighlight %}
 
 * Once the fr-Fr culture is set to the Schedule control, the Schedule control with localization applied is displayed as follows.
-
-
 
 ![](Localization_images/Localization_img1.png)
 

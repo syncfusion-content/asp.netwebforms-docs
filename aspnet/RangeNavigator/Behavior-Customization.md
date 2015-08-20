@@ -175,7 +175,7 @@ You can customize Thumb template by using LeftThumbTemplate and RightThumbTempla
 
 {% endhighlight %} 
 
-{% highlight c# %}
+{% highlight js %}
 
  <ej:RangeNavigator ID="Range1" runat="server"> 
 

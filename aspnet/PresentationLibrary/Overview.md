@@ -31,22 +31,30 @@ creation & editing of Handouts, equations, built-in themes & its variants.
 
 <table>
 <tr>
-<th>
-Supported .NET Frameworks versions</th><th>
-* .NET 2.0* .NET 3.5* .NET 4.0* .NET 4.5 * .NET 4.5.1</th></tr>
+<td>
+Supported .NET Frameworks versions</td><td>
+<ul>
+<li>.NET 2.0</li>
+<li>.NET 3.5</li>
+<li>.NET 4.0</li>
+<li>.NET 4.5</li>  
+<li>.NET 4.5.1</li>
+</ul>
+</td></tr>
 <tr>
 <td>
 <br>Compatible MS PowerPoint versions</td><td>
-* MS PowerPoint 2007* MS PowerPoint 2010* MS PowerPoint 2013</td></tr>
+<ul>
+<li>MS PowerPoint 2007</li>
+<li>MS PowerPoint 2010</li>
+<li>MS PowerPoint 2013</li>
+</ul>
+</td></tr>
 </table>
-
-
 
 ## Required Assemblies
 
 In order to create and manipulation a Presentation file, the following assemblies are needed.
-
-
 
 * Syncfusion.Core
 * Syncfusion.Compression.Base
@@ -125,5 +133,3 @@ Supporting assembly for Syncfusion.OfficeChartToImageConverter.WPF</td></tr>
 Syncfusion.Shared.WPF</td><td>
 Supporting assembly for Syncfusion.OfficeChartToImageConverter.WPF</td></tr>
 </table>
-
-

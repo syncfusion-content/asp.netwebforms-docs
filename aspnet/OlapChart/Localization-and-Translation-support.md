@@ -17,9 +17,9 @@ Table: List of default English localization User Interface based on “French”
 
 <table>
 <tr>
-<td>
-{{ '**KEYWORDS**' | markdownify }}</td><td>
-{{ '**VALUES**' | markdownify }}</td></tr>
+<th>
+KEYWORDS</th><th>
+VALUES</th></tr>
 <tr>
 <td>
 Measure</td><td>
@@ -79,8 +79,6 @@ The following code example shows how to localize OlapChart’sUser Interface (UI
 
 {% highlight html %}
 
-[ASP.NET]
-
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection">
 
     <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Locale="fr-FR">
@@ -131,9 +129,7 @@ The following code example shows how to localize OlapChart’sUser Interface (UI
 
 {% endhighlight %}
 
-![C:/Users/labuser/Desktop/note.jpg](Localization-and-Translation-support_images/Localization-and-Translation-support_img1.jpeg)
-
-Note: In order to render the localized OLAP Chart, you are required to reset the content available in both
+> Note: In order to render the localized OLAP Chart, you are required to reset the content available in both
 
 1. OLAP Chart Control
 
@@ -144,8 +140,6 @@ Note: In order to render the localized OLAP Chart, you are required to reset the
 To apply control side localization, refer the following code example:
 
 {% highlight html %}
-
-[HTML]
 
 ej.olap.OlapChart.locale["zh-CN"] = {
 
@@ -160,8 +154,6 @@ ej.olap.OlapChart.locale["zh-CN"] = {
 To get the localized Cube information, “_Locale__Identifier"_ has to be set in the connection string:
 
 {% highlight c# %}
-
-[C#]
 
 //1036 refers to “fr-FR” culture.
 
@@ -178,6 +170,4 @@ DataManager.OverrideDefaultFormatStrings = true;
 The output for the LocalizedOlapChart is as follows:
 
 ![C:/Users/labuser/Desktop/a.png](Localization-and-Translation-support_images/Localization-and-Translation-support_img2.png) 
-
-
 

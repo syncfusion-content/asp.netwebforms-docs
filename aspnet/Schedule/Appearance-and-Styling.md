@@ -54,7 +54,7 @@ For Adaptive Schedule, you can refer to the following css file in the applicatio
 
 
 
-* [Click here](http://asp.syncfusion.com/demos/web/schedule/adaptiveschedule.aspx) to see the_working of_Adaptive Schedule.
+* [Click here](http://asp.syncfusion.com/demos/web/schedule/adaptiveschedule.aspx) to see the working of Adaptive Schedule.
 
 
 
@@ -145,7 +145,7 @@ The following screenshot displays the Schedule control with the height set to â€
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 
 
-   Figure_ _111_:  Adjusting schedule size height.
+   _Figure_ _111_:  Adjusting schedule size height.
 
 ###width
 

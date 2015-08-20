@@ -20,7 +20,8 @@ Parameters</th></tr>
 <td>
 OnChange</td><td>
 Event is triggered, when the rating value changes.</td><td>
-(Object Sender, RatingEventArgs e)e.Value - value of the Rating control</td></tr>
+(Object Sender, RatingEventArgs e)<br/>
+e.Value - value of the Rating control</td></tr>
 </table>
 
 The following step explains you how to define server side event for Rating control.

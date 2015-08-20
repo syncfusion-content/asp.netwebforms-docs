@@ -17,19 +17,15 @@ Drill down also called as roll down that is the reverse of drill up. It navigate
 
 ![](Drill-Operation_images/Drill-Operation_img1.png)
 
-
-
 _Figure : Drill-down operation in OlapChart_
 
 ![](Drill-Operation_images/Drill-Operation_img2.png)
-
-
 
 _Figure : Drill-up operation in OlapChart_
 
 DrillSuccess event gets triggered when you right-click on the OlapChart and select any option available from the context menu to perform drill up or drill down operation.
 
-{% highlight %}
+{% highlight html %}
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc">;
 
@@ -39,7 +35,7 @@ DrillSuccess event gets triggered when you right-click on the OlapChart and sele
 
 {% endhighlight %}
 
-{% highlight javascript %}
+{% highlight js %}
 
 <script type="text/javascript">
 
@@ -50,6 +46,7 @@ DrillSuccess event gets triggered when you right-click on the OlapChart and sele
     }
 
 </script>
+
 {% endhighlight %}
 
 

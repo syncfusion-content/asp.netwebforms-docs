@@ -11,36 +11,33 @@ documentation: ug
 
 * This feature allows you to prioritize the appointments with various priority options each differentiated with its individual icons/images. 
 * You can also denote the priority of the appointments using this priority option and can specify your own user-defined priority collection.
+
 ## Priority settings
 
 * The prioritySettings is an object collection that holds the priority related information. 
 * For example enable property enables/disables the priority value to be displayed.
 
-
-
-
-
 The following are the sub-properties used within the prioritySettings.
 
-####enable
+#### enable
 
 * This option accepts either true or false, denoting whether to enable/disable the priority option.
 
-####datasource 
+#### datasource 
 
 * It either accepts the local JSON data or remote data for binding the priority related information.
 
-####text
+#### text
 
 * It holdsthe binding name for text field in the priority dataSource.
 
-####id
+#### id
 
 * It holds the binding name for id field in the priority dataSource.
 
 
 
-####value
+#### value
 
 * It holds the binding name for value field in the priority dataSource.
 
@@ -48,8 +45,6 @@ The following code example illustrates on how to render priority feature in the�
 
 
 {% highlight html %}
-
-
 
 <ej:Schedule ID="Schedule1" Width="100%" runat="server" DataSourceID="ScheduleData">
 
@@ -67,7 +62,7 @@ SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 {% endhighlight %}
 
 
-  On executing the above specified code the Priority field will be added in the create appointment window as follows:
+On executing the above specified code the Priority field will be added in the create appointment window as follows:
 
 
 
@@ -80,7 +75,7 @@ SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 
 
 
-##template
+### template
 
 * The Priority option can be customized based on the user- defined datasource. 
 * You need to mention the “template” value also while passing the user-defined datasource. 
@@ -167,9 +162,11 @@ The following code example illustrates how to define the css style while using t
 
 
 
-// Her we are defining the style of the “custom priority icon”
+
 
 {% highlight css %}
+
+// Her we are defining the style of the “custom priority icon”
 
 <style>
 

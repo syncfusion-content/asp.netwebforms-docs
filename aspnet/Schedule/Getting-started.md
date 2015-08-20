@@ -9,8 +9,6 @@ documentation: ug
 
 # Getting started
 
-
-
 * This section encompasses on how to configure the Schedule control for your business requirements. You can pass any data that are bound to the Schedule control through various API’s available within it. 
 * The most important data used in the Schedule control is the appointment data that is bound to it through the “AppointmentSettings” and “DataManager” property. You can pass the appointment data either locally or remotely to the Schedule control.
 * In addition, you have several options available in the Schedule control to customize the appearance and behaviour of it. In this example, you can see how to add a Schedule control to an application to manage some of the important activities in a worksheet.  
@@ -19,7 +17,7 @@ The following screen shot displays the Schedule control with daily important act
 
 
 
-![C:/Users/maheshp/Desktop/ss1.PNG](Getting-started_images/Getting-started_img1.png)
+![](Getting-started_images/Getting-started_img1.png)
 
 
 Figure 34 : Schedule control with daily important activities
@@ -31,38 +29,31 @@ Figure 34 : Schedule control with daily important activities
 3. Add the following code example to the corresponding designer page for Schedule rendering.
 
 
-{% highlight html %}
+   ~~~ html
 
+		<ej:Schedule ID="schedule1" runat="server"></ej:Schedule>
 
-
-
-<ej:Schedule ID="schedule1" runat="server"></ej:Schedule>
-
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 4. On executing the above code example an empty Scheduler is displayed without appointments. In Order, to display the appointments in the Schedule you need to pass data to it.
 
 
-![C:/Users/maheshp/Desktop/s2.PNG](Getting-started_images/Getting-started_img2.png)
-
+   ![](Getting-started_images/Getting-started_img2.png)
 
 Figure 35 : Empty Schedule control
 
-###Passing data to Schedule control
+### Passing data to Schedule control
 
 * You can add appointment to the Schedule control by passing data to the Schedule control either locally or remotely. In the following code example, you can see how to bind the remote data to the Schedule control.
 
 In order to bind the remote data to the Schedule control use the DataManager propertyas follows.
 
-
-
-
-
-
+{% highlight html %}
 
 <DataManager CrossDomain="true" URL="http://mvc.syncfusion.com/OdataServices/Northwnd.svc/Events" />
 
-
+{% endhighlight %}
 
 * You can also bind the field names used in the referred table “Events” with the corresponding AppointmentSettings property of the Scheduler as illustrated in the following code example.
 
@@ -81,7 +72,7 @@ In order to bind the remote data to the Schedule control use the DataManager pro
 
 The following screen shot displays a Schedule control with the appointments in a normal style.
 
-![C:/Users/maheshp/Desktop/s3.PNG](Getting-started_images/Getting-started_img3.png)
+![](Getting-started_images/Getting-started_img3.png)
 
 Figure 36 : Schedule control with the appointments in a normal style
 
@@ -95,12 +86,7 @@ Figure 36 : Schedule control with the appointments in a normal style
 
 {% highlight html %}
 
-
-
-
 <ej:Schedule runat="server" ID="Schedule1" Width="100%" Height="525px" AppointmentTemplateId="#MyTemplate" CurrentDate="5/4/2014">
-
-
 
 <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description" />
 
@@ -166,8 +152,6 @@ break;
 
 </script>
 
-[Template Content]
-
 <script id="MyTemplate" type="text/x-jsrender">
 
 <div style="height: 100%">
@@ -192,21 +176,19 @@ break;
 {% endhighlight %}
 
 
-
+{% highlight text %}
 
 Important: The images in the above code sample are taken from the installation location of the Essential JavaScript Studio in your machine,
+
 For example : $system drive: \Program Files\ Syncfusion\EssentialStudio\12.1.0.43\JavaScript\samples\web\images\schedule
 
-
+{% endhighlight %}
 
 
 * You can create a folder named “Images” in the same location of your newly created ASP.NET project and then move all the images from the installation folder to the newly created “Images” folder. This helps you in referring appointments appropriately within the Schedule control.
 * Once you set the template for the appointments, the Scheduler is displayed with the customized appointments as illustrated in the following screen shot.
 
-
-
-![C:/Users/maheshp/Desktop/s4.PNG](Getting-started_images/Getting-started_img4.png)
-
+![](Getting-started_images/Getting-started_img4.png)
 
 Figure 37 : Scheduler with customized appointments
 
@@ -472,27 +454,27 @@ break;
 
 
 
-![C:/Users/maheshp/Desktop/s6.PNG](Getting-started_images/Getting-started_img6.png)
+![](Getting-started_images/Getting-started_img6.png)
 
 
 Figure 39 : Customized Schedule
 
-##Manipulate the Appointments
+## Manipulate the Appointments
 
-###Appointment Creation
+### Appointment Creation
 
 * Initially, you saw how the appointments are rendered by binding the remote data. In order to add the appointments through the user interface (run-time) to the Schedule control, double-click on the appropriate Schedule cell and provide the required details in the appointment window pop-up.
 * You can quickly create an appointment by clicking on the exact schedule cell with appropriate time slot and then fill only the subject of that appointment in a quick appointment pop up. 
 
-
+{% highlight text %}
 
 Important: When you add new appointments to the schedule control either by using local or remote data, the new appointment data is saved automatically to the appointment collection.
 
-
+{% endhighlight %}
 
 The following screen shot displays an appointment window pop- up that appears when you double-click on the Schedule cells.
 
-![C:/Users/maheshp/Desktop/s7.PNG](Getting-started_images/Getting-started_img7.png)
+![](Getting-started_images/Getting-started_img7.png)
 
 
 Figure 40 : Schedule with appointment window pop- up
@@ -500,68 +482,59 @@ Figure 40 : Schedule with appointment window pop- up
 The following screen shots illustrates a quick appointment pop-up window.
 
 
-![C:/Users/maheshp/Desktop/s8.PNG](Getting-started_images/Getting-started_img8.png)
+![](Getting-started_images/Getting-started_img8.png)
 
 
 Figure 41 : Schedule with quick appointment pop-up window
 
-
-
-
+{% highlight text %}
 
 Important: Incase, you need to manipulate with newly created or edited appointments, you can use the events available within the Schedule control.
 
-
-
-
+{% endhighlight %}
 
 * The event named “AppointmentSaved” is triggered when saving a new appointment to the Schedule control. It provides the new appointment data as an argument that helps you to retrieve the newly entered appointment data through a function. 
 
-##Edit/Delete Appointments
+## Edit/Delete Appointments
 
 * You can edit or delete the appointments in the Schedule control and access the data using events “AppointmentEdited” and “AppointmentDeleted” respectively. 
 * In order to edit the appointments, double-click the desired appointment, and then edit the required fields in the appointment pop-up as displayed in the following screen shot.
 
 
-![C:/Users/maheshp/Desktop/s9.PNG](Getting-started_images/Getting-started_img9.png)
+![](Getting-started_images/Getting-started_img9.png)
 
 
 Figure 42 : Schedule with appointment edit pop up
 
 * To delete an appointment, click the appointment, and then click delete icon in the quick appointment pop-up as illustrated in the following screen shot.
 
-
-![C:/Users/maheshp/Desktop/s10.PNG](Getting-started_images/Getting-started_img10.png)
+![](Getting-started_images/Getting-started_img10.png)
 
 
 Figure 43 : Schedule with delete appointment pop up
 
 * You can also delete the required appointment in the schedule control using the delete key option. This works only when you set “AllowKeyboardNavigation” option to “True”.
 
-##Manipulate Recurrence Appointments
+## Manipulate Recurrence Appointments
 
-###Add Recurrence Appointment
+### Add Recurrence Appointment
 
 * To add recurrence appointments, you need to check the “repeat” option in the appointment window as illustrated in the following screen shot.
 
-
-![C:/Users/maheshp/Desktop/s11.PNG](Getting-started_images/Getting-started_img11.png)
-
+![](Getting-started_images/Getting-started_img11.png)
 
 Figure 44 : Appointment pop up with Repeat option
 
 * When you check the repeat option, the sub-options available in the recurrence category are displayed in the appointment pop-up as follows.
 
-
-
-![C:/Users/maheshp/Desktop/s13.PNG](Getting-started_images/Getting-started_img12.png)
-
+![](Getting-started_images/Getting-started_img12.png)
 
 Figure 45 : Appointment pop up with sub options of Repeat
 
 * You can choose the required recurrence pattern from the available options and then click Done.The main appointment pop-up appears as illustrated in the following screen shot.
 
-![C:/Users/maheshp/Desktop/n1.PNG](Getting-started_images/Getting-started_img13.png)
+![](Getting-started_images/Getting-started_img13.png)
+
 Figure 46: Main appointment pop up
 
 
@@ -600,12 +573,12 @@ Figure 48: Schedule with Edit repeat appointment pop up
 * When you click the recurrence appointment, a quick appointment window opens with the following options: “Edit Appointment”, “Edit Series” and “delete” icon for deleting the appointments.
 
 
-![C:/Users/maheshp/Desktop/n4.PNG](Getting-started_images/Getting-started_img16.png)
+![](Getting-started_images/Getting-started_img16.png)
 Figure 49: Schedule with quick appointment pop up
 
-##Behaviour Customization using the events
+## Behaviour Customization using the events
 
-###Restrict the display of appointment window
+### Restrict the display of appointment window
 
 * You can restrict the creation of the appointments during weekends in ScheduleASP using the events and by validating its arguments such as startTime and endTime.
 * For example, you can block the appointment pop-up on all the weekends (Default week start date is Monday) using the following code sample with AppointmentWindowOpen event. 

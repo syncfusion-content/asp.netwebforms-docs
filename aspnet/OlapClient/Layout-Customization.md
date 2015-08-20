@@ -27,7 +27,7 @@ In Tile View representation, both Grid and Chart will be displayed one over the 
 
 {% highlight html %}
 
-[ASP.NET]
+
 
 <ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc">
 
@@ -49,7 +49,7 @@ In Tab View representation, both Grid and Chart will be displayed in a separate 
 
 {% highlight html %}
 
-[ASP.NET]
+
 
 
 
@@ -77,7 +77,7 @@ To display/visualize Chart control by default, set defaultView to Chart.
 
 {% highlight html %}
 
-[ASP.NET]
+
 
 <ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc">
 
@@ -99,7 +99,7 @@ To display/visualize Grid control by default, set defaultView to Grid.
 
 {% highlight html %}
 
-[ASP.NET]
+
 
  <ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc">
 
@@ -124,7 +124,7 @@ After you set the displayMode option to GridOnly, the Chart is hidden and the d
 
 {% highlight html %}
 
-[ASP.NET]
+
 
  <ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc">
 
@@ -147,7 +147,7 @@ After you set the displayMode option to ChartOnly, the Grid is hidden and data 
 
 {% highlight html %}
 
-[ASP.NET]
+
 
 <ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc">
 
@@ -169,7 +169,7 @@ After you set the displayMode option to ChartAndGrid, data is displayed in both
 
 {% highlight html %}
 
-[ASP.NET]
+
 
 <ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc" Title="Olap Browser">
 
@@ -191,7 +191,7 @@ You are provided with an option to toggle the visibility of Axis Element Builder
 
 {% highlight html %}
 
-[ASP.NET]
+
 
 
 
@@ -220,7 +220,7 @@ You can maximize OLAP Grid and OLAP Chart to full screen mode inside OLAP Client
 
 {% highlight html %}
 
-[ASP.NET]
+
 
 <ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc" Title="Olap Browser">
 

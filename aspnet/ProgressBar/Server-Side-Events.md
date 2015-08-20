@@ -21,7 +21,12 @@ Arguments</th></tr>
 <td>
 OnComplete</td><td>
 Triggered when the value defined in progress bar sets completely.</td><td>
-e.Value - Value of the Progressbar.e.EventType -  Event Namee.Arguments  - Contain keys and value of Progressbar.</td></tr>
+<ul>
+<li>e.Value - Value of the Progressbar.</li>
+<li>e.EventType -  Event Name</li>
+<li>e.Arguments  - Contain keys and value of Progressbar.</li>
+</ul>
+</td></tr>
 </table>
 In an ASPX page, add the ProgressBar control with OnComplete server side event as shown in the following code example.
 
@@ -38,19 +43,10 @@ In the code behind define the action to be performed.
 
 {% highlight c# %}
 
-
-
 protected void onComplete(object Sender, EventArgs e)
 
 {
-
      Response.Write("Serverside event has been trigerred");
-
 }
 
-
-
 {% endhighlight %}
-
-
-

@@ -20,8 +20,6 @@ A combination Chart combines two or more series types in a single Chart. But the
 
  {% highlight html %}
 
-[ASP.NET]
-
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection">
 
     <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc">
@@ -61,8 +59,6 @@ A combination Chart combines two or more series types in a single Chart. But the
 OlapChart series is customized using fill, border width and border color. The stroke-width of the line, spline series is customized using width property of series.  The series color is customized using fill property of series. The border color and width of the column/bar is customized using border property of series. And the column/bar chart are customized using the ‘fill’ and ‘border’ property of each point.
 
  {% highlight html %}
-
-[ASP.NET]
 
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection">
 

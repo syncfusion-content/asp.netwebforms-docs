@@ -13,8 +13,6 @@ Responsive layout is aimed at crafting sites to provide an optimal viewing exper
 
  {% highlight html %}
 
-[ASPX]
-
 <%@ Register Assembly="Syncfusion.EJ.Olap" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
 
 
@@ -32,10 +30,4 @@ Responsive layout is aimed at crafting sites to provide an optimal viewing exper
 
  ![](Responsive-Layout_images/Responsive-Layout_img1.png) 
 
-
-
-
  ![](Responsive-Layout_images/Responsive-Layout_img2.png) 
-
-
-

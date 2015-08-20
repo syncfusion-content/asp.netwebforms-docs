@@ -13,8 +13,6 @@ OlapChart typically have two axes that are used to measure and categorize data: 
 
 {% highlight html %}
 
-[ASP.NET]
-
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc">
 
      <primaryxaxis majorticklines-visible="false" />
@@ -31,7 +29,7 @@ Primary axis title font appearance is further customized with the help of the fo
 
 {% highlight html %}
 
-[ASP.NET]
+
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc">
 
@@ -53,8 +51,6 @@ Axis line is drawn in Chart to represent the end of the axis in ChartArea. It is
 
 {% highlight html %}
 
-[ASP.NET]
-
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc">
 
          <primaryxaxis AxisLine-Visible="true" AxisLine-Offset=1 AxisLine-Width=3.5/>
@@ -74,8 +70,6 @@ Axis line is drawn in Chart to represent the end of the axis in ChartArea. It is
 Position of the primary X and Y axis is set to the top with the help opposedPosition property.
 
  {% highlight html %}
-
-[ASP.NET]
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc">
 
@@ -104,8 +98,6 @@ Width – sets the width for the border.
 
 
  {% highlight html %}
-
-[ASP.NET]
 
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection">
 

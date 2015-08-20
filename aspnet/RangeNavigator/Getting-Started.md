@@ -29,8 +29,6 @@ This section encompasses the details on how to configure the RangeNavigator and 
 
 	![](Getting-Started_images/Getting-Started_img2.png)
 
-
-
 2. On the upper-right corner, select .NET Framework 4.5.
 3. In the Installed Templates pane, expand either Visual Basic or Visual C# and then click Web.
 4. In the Visual Studio Installed Templates pane, select Syncfusion ASP.NET Web Site project template.
@@ -43,8 +41,6 @@ This section encompasses the details on how to configure the RangeNavigator and 
 
    ~~~ html	
 	
-	 [Web.config]
-	 
 		<compilation debug="true" targetFramework="4.5">
 		
 			<assemblies>
@@ -100,7 +96,7 @@ This section encompasses the details on how to configure the RangeNavigator and 
 15. In designer page now RangeNavigator designer image will be created.
 
 
-Note: If you use web application, you will need to follow the above steps manually to use the Syncfusion controls.
+> Note: If you use web application, you will need to follow the above steps manually to use the Syncfusion controls.
 
 ## Configure RangeNavigator
 

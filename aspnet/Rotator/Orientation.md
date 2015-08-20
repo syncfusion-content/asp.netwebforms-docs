@@ -11,9 +11,9 @@ documentation: ug
 
 The Rotator control supports both vertical and horizontal orientations, allowing it to fit into any scenario. The Rotator property, Orientation, defines the orientation where the control is rendered. The value set to this property is enum or string type. It accepts the following values.
 
-•ej.Orientation.Horizontal or “Horizontal”
+* ej.Orientation.Horizontal or “Horizontal”
 
-•ej.Orientation.Vertical  or “Vertical”
+* ej.Orientation.Vertical  or “Vertical”
 
 The following steps explain how to set orientation for the Rotator.
 

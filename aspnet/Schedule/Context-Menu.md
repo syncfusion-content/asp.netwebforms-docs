@@ -82,7 +82,7 @@ Execute the above code to render the following output.
 ![](Context-Menu_images/Context-Menu_img1.png)
 
 
- _Figure_ _98_:  schedule with appointment menu items_
+ _Figure_ _98_:  _schedule with appointment menu items_
 
 ## Categorize 
 

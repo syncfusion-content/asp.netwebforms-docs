@@ -15,7 +15,7 @@ RangeNavigator supports Localization and Globalization to customize the labels b
 
 Localization is the process of customizing the user interface based on a culture specific to a particular country or region in order to display regional data.  The culture is represented by a unique string, for example, en-US‖ for U.S. English and fr-FR‖ for French (common), this is achieved by creating a javascript file “rangeNavigatorSource.fr-FR.js” and setting the equivalent word as illustrated in the following code sample.
 
-{% highlight html %}
+{% highlight js %}
 
 ej.datavisualization.RangeNavigator.locale["fr-FR"] = {
 

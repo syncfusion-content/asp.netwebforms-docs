@@ -162,16 +162,13 @@ $.views.helpers({ format: _getImages });
 
 </asp:Content>
 
-
 {% endhighlight %}
+
 * The output for the above code is as follows that displays the appointment with the template defined for it.
 
 ![](Template_images/Template_img1.png)
 
-
-      Figure 82: schedule with template.
-
-
+Figure 82: schedule with template.
 
 ## ResourceHeader Template
 
@@ -180,10 +177,37 @@ $.views.helpers({ format: _getImages });
 
 
 {% highlight html %}
-<ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014" ResourceHeaderTemplateId="#resourceHeaderTemplateId"><Group Resources="Owners"/><%--Resource data collection-- %><Resources><%--Enable the multiple selection of resources in the appointment window-- %><ej:Resources Field="OwnerId" Name="Owners" Title="Owner" AllowMultiple="true"><ResourceSettings Color="color" Id="id" Text="text"></ResourceSettings></ej:Resources></Resources><AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description" ResourceFields="OwnerId"/></ej:Schedule><asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"SelectCommand="SELECT * FROM [MultipleResource]"></asp:SqlDataSource>// resourceHeader template definition<script type="text/x-jsrender" id="resourceHeaderTemplateId"><img style="width: 40px; height: 40px" src=".../images/schedule/{{:id}}.png" alt="{{:id}}" />  </script>
+
+<ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014" ResourceHeaderTemplateId="#resourceHeaderTemplateId">
+
+	<Group Resources="Owners"/><%--Resource data collection-- %>
+
+	<Resources>
+
+		<%--Enable the multiple selection of resources in the appointment window-- %>
+
+		<ej:Resources Field="OwnerId" Name="Owners" Title="Owner" AllowMultiple="true">
+
+			<ResourceSettings Color="color" Id="id" Text="text"> </ResourceSettings>
+			
+		</ej:Resources></Resources>
+
+		<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description" ResourceFields="OwnerId"/>
+
+		</ej:Schedule><asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"SelectCommand="SELECT * FROM [MultipleResource]">
+
+		</asp:SqlDataSource>
+
+		// resourceHeader template definition<script type="text/x-jsrender" id="resourceHeaderTemplateId">
+
+		<img style="width: 40px; height: 40px" src=".../images/schedule/{{:id}}.png" alt="{{:id}}" />  
+
+		</script>
+
 {% endhighlight %}
 
 {% highlight C# %}
+
 namespace WebSampleBrowser.Schedule
 {
 public partial class multipleresource : System.Web.UI.Page
@@ -203,28 +227,15 @@ public string id { set; get; }
 public string color { set; get; }
 }
 }
+
 {% endhighlight %}
+
+{% highlight text %}
 
 Important: The above used images should be present in a separate images folder, so that it will be referred properly.The images name should be saved with id as same as given in the resourceSettings inorder to set unqiue images to all resources.
 
-
+{% endhighlight %}
 
 The output of the above code looks as follows.
 
-
-
 ![C:/Users/karthigeyan/Desktop/a.png](Template_images/Template_img2.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-

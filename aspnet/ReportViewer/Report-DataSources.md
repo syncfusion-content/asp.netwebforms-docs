@@ -13,13 +13,7 @@ The ReportViewer has support to add data sources to ReportViewer for RDLC report
 
 The following code example illustrates how to add DataSource at control creation.
 
-
-
-
-
 {% highlight html %}
-
-[EJWEB]
 
         <ej:ReportViewer ID="viewer" runat="server" ReportServiceUrl="/api/ReportApi" ReportPath="~/App_Data/Product List.rdlc" ProcessingMode="Local">
 

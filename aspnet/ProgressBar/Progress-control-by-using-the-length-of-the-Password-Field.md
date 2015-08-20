@@ -11,11 +11,9 @@ documentation: ug
 
 In real-time scenario, the progress of ProgressBar is changed according to the length of text in the password field by binding the change in the properties of control and checking the length of the password field.
 
-Add the following code example in the <script> tag of your ASP.NETweb page.
+Add the following code example in the &lt;script&gt; tag of your ASP.NETweb page.
 
 {% highlight js %}
-
-
 
         $(function () {
 
@@ -93,9 +91,7 @@ Add the following code example in the <script> tag of your ASP.NETweb page.
 
             $(".e-progressbar").css("border-radius", "10px");
 
-        }       
-
-
+        } 
 
 {% endhighlight %}
 
@@ -107,19 +103,8 @@ The following screenshots display the output when password length less than 5, p
 
 ![](Progress-control-by-using-the-length-of-the-Password-Field_images/Progress-control-by-using-the-length-of-the-Password-Field_img1.png)
 
-
-
-
-
 ![](Progress-control-by-using-the-length-of-the-Password-Field_images/Progress-control-by-using-the-length-of-the-Password-Field_img2.png)
-
-
-
-
 
 ![](Progress-control-by-using-the-length-of-the-Password-Field_images/Progress-control-by-using-the-length-of-the-Password-Field_img3.png)
 
-
-
 You can also bind an event at the start and finish of a ProgressBar by using the start, complete, and change properties of the ProgressBar.
-
