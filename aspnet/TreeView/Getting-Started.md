@@ -11,9 +11,7 @@ documentation: ug
 
 The Essential ASP.NET WebForms TreeView property represents hierarchical data in a tree-like structure. TreeView allows you to edit, drag items to other TreeView, add check boxes, etc. Refer to the following section, to customize TreeView in a real time Mail Box Scenario that helps you to show items in a Mailbox with necessary features of TreeView property. The following screenshot demonstrates the functions of TreeView property with Drag and Drop option.
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image30_17.png](Getting-Started_images/Getting-Started_img1.png) | markdownify }
-
-
+![http://help.syncfusion.com/ug/js/ImagesExt/image30_17.png](Getting-Started_images/Getting-Started_img1.png) 
 
 In the above screenshot, you can select the mailbox items and you can write the corresponding functions of the selected item. You can drag and drop the item from one group to another group by using the Drag and Drop option. You can use the Splitter control to split the mail options and its corresponding functions.
 
@@ -47,15 +45,13 @@ Add the following code to the corresponding design page for rendering the Split
 
 </div>
 
-
-
 {% endhighlight %}
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image30_12.png](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image30_12.png](Getting-Started_images/Getting-Started_img2.png) 
 
 
 
-Configure TreeView inside the Splitter widget
+### Configure TreeView inside the Splitter widget
 
 Essential ASP.NET WebForms TreeView widget basically renders with built-in features like keyboard navigation with animations and flexible API’s.Essential ASP.NET WebForms can be generated from UL LI elements, JSON data source or by using OData service.
 
@@ -109,8 +105,6 @@ Add the following style section to render the Splitter layout.
 
 </style>
 
-
-
 {% endhighlight %}
 
 Add TreeView initialization inside the Splitter section.
@@ -159,15 +153,13 @@ Add TreeView initialization inside the Splitter section.
 
 </ej:Splitter>
 
-
-
 {% endhighlight %}
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image30_18.png](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image30_18.png](Getting-Started_images/Getting-Started_img3.png) 
 
 
 
-Configure Data Source
+### Configure Data Source
 
 Create the JSON Data Source for TreeView and initialize as follows.
 
@@ -300,16 +292,15 @@ Add the following code in the Splitter section to render the TreeView in the
 {% endhighlight %}
 
 
-
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image30_19.png](Getting-Started_images/Getting-Started_img4.png) | markdownify }
-
+![http://help.syncfusion.com/ug/js/ImagesExt/image30_19.png](Getting-Started_images/Getting-Started_img4.png) 
 
 
-Configure TreeView with Sprite Icons
+
+### Configure TreeView with Sprite Icons
 
 To design the TreeView look like Mail options application, you can create the Sprite CSS styles for using Mail Icons from the following image source. The source image is taken from the following installed location.
 
-_[Installed Drive]:\Users\[user name]\AppData\Local\Syncfusion\EssentialStudio\_{{site.releaseversion}}_\Web \Samples\web\Content\images\mail\ mailicons.png_
+[Installed Drive]:\Users\[user name]\AppData\Local\Syncfusion\EssentialStudio\{{site.releaseversion}}\Web \Samples\web\Content\images\mail\ mailicons.png
 
 Copy the “mailicons.png” from the above location and paste it in the folder location of the HTML sample page.
 
@@ -471,11 +462,11 @@ Add the following code in the Splitter section to render the TreeView in the
 
 Execute the above code to render the TreeView with Mail Icons.
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image30_20.png](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image30_20.png](Getting-Started_images/Getting-Started_img5.png) 
 
 
 
-Set the Node Editing Option 
+### Set the Node Editing Option 
 
 To rename the mail folders, set AllowEditing property to “true”. You can also use F2 key or double-click the node to rename the node.
 
@@ -499,11 +490,11 @@ To rename the mail folders, set AllowEditing property to “true”. You can a
 
 Execute the above code example to render node editing.           
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image30_21.png](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image30_21.png](Getting-Started_images/Getting-Started_img6.png) 
 
 
 
-Set the Drag and Drop Option 
+### Set the Drag and Drop Option 
 
 In this application you can Drag and Drop the folders anywhere inside the mailbox by setting the AllowDragAndDrop option to True.
 
@@ -531,7 +522,7 @@ Execute the following code example to Drag and Drop the nodes anywhere within 
 
 {% endhighlight %}
 
-Configure Events for the TreeView
+### Configure Events for the TreeView
 
 When you click on the Mailbox folder item, the corresponding navigation action is performed in the ClientSideOnNodeSelected event and this is achieved by declaring the ClientSideOnNodeSelected event with the corresponding call back function.  You can rename the folder names and it is not renamed as empty. This validation process is done manually in the ClientSideOnInlineEditValidation event.
 
@@ -599,7 +590,7 @@ Initialize the script section to validate editing and select operation.
 
 Execute the above code example to render TreeView. When you select the mail folder in the TreeView, the corresponding action takes place by raising the ClientSideOnNodeSelected event.
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image30_17.png](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image30_17.png](Getting-Started_images/Getting-Started_img7.png) 
 
 
 
@@ -607,11 +598,11 @@ Execute the above code example to render TreeView. When you select the mail fol
 
 
 
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image30_22.png](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+![http://help.syncfusion.com/ug/js/ImagesExt/image30_22.png](Getting-Started_images/Getting-Started_img8.png) 
 
 
 
-Add or Delete the Folders by using Context Menu
+### Add or Delete the Folders by using Context Menu
 
 You can add or remove the nodes dynamically during runtime. It is achieved by adding the Context Menu option to the TreeView. In the Context Menu, you can configure add or remove the node functions to the TreeView. The following code example illustrates how to configure the Context Menuelements for the TreeView.
 
@@ -657,11 +648,11 @@ Initialize the Context Menu in the Splitter section as follows.
 
 </div>
 
-
-
 {% endhighlight %}
 
+
 Initialize the Context Menu in the script section to create new folder and delete folder.
+
 
 {% highlight js %}
 
@@ -725,29 +716,19 @@ Initialize the Context Menu in the script section to create new folder and del
 
 </script>
 
-
-
 {% endhighlight %}
-
-
 
 The following screenshot illustrates adding of new folder in the TreeView by using the Context Menu. You can right-click on the TreeView Node and select the new folder option in the Context Menu for the selected folder.
 
  ![http://help.syncfusion.com/ug/js/ImagesExt/image30_23.png](Getting-Started_images/Getting-Started_img9.png)
 
 
-
 ![http://help.syncfusion.com/ug/js/ImagesExt/image30_24.png](Getting-Started_images/Getting-Started_img10.png)
-
 
 
 The following screenshot illustrates the deleting of new folder that is created as a child of the “Drafts” folder. You can right-click on the New Folder1 and select the Delete Folder option in the Context Menu.
 
  ![http://help.syncfusion.com/ug/js/ImagesExt/image30_25.png](Getting-Started_images/Getting-Started_img11.png)
+ 
 
-
-
-{ ![http://help.syncfusion.com/ug/js/ImagesExt/image30_17.png](Getting-Started_images/Getting-Started_img12.png)
-
-
-
+![http://help.syncfusion.com/ug/js/ImagesExt/image30_17.png](Getting-Started_images/Getting-Started_img12.png)

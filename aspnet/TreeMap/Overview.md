@@ -17,7 +17,7 @@ Essential TreeMap for JavaScript is ideal for visualizing large amounts of data.
 * Layout - Layouts such as Squarified, SliceAndDiceAuto, SliceAndDiceHorizontal and SliceAndDiceVertical determines the visual representation of nodes belonging to all the treemap levels in TreeMap.
 * Visualization for Colors - Easy customization options is provided to customize the colors of the leaf nodes of TreeMap.
 
-Use Case Scenarios
+### Use Case Scenarios
 
 TreeMap is used to represent large or complex data sets in various applications, such as:
 

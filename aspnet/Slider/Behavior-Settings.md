@@ -23,25 +23,17 @@ In an ASPX page, define the Slider control and configure the Height and Width pr
 
 {% highlight html %}
 
-
-
 <ej:Slider ID="BasicSlider" runat="server" Height="20" Width="500"> </ej:Slider>
 
 
-
-
-
 {% endhighlight %}
-
-
 
 The following screenshot displays the output of the above code example.
 
  ![](Behavior-Settings_images/Behavior-Settings_img1.png)
 
 
-
-### IncrementStep
+## IncrementStep
 
 This property sets the incremental step value for the Slider. When the Slider handle slides through mouse or keyboard, it increments / decrements the value based on the step value. By default, when the Slider handle is moved, single value increments / decrements. By using the IncrementStep property, you can change the increment step value. Data type of this property is number.
 
@@ -51,17 +43,10 @@ In an ASPX page, define the Slider control and configure the IncrementStep prope
 
 {% highlight html %}
 
-
-
 <ej:Slider ID="BasicSlider" runat="server" Height="20" Width="500" IncrementStep="5"></ej:Slider>
 
 
-
-
-
 {% endhighlight %}
-
-
 
 The following screenshot displays the output of the above code example.
 
@@ -69,7 +54,7 @@ The following screenshot displays the output of the above code example.
 
 
 
-### ReadOnly
+## ReadOnly
 
 This feature prevents you from interacting with the Slider. That is, you can only view the Slider value and cannot change it.
 
@@ -79,15 +64,6 @@ In an ASPX page, define the Slider control and set the ReadOnly property to true
 
 {% highlight html %}
 
-
-
 <ej:Slider ID="BasicSlider" runat="server" Height="20" Width="500" ReadOnly="true"></ej:Slider>
 
-
-
-
-
 {% endhighlight %}
-
-
-

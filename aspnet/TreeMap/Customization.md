@@ -11,7 +11,7 @@ documentation: ug
 
 TreeMap control supports color customization to determine the exact combination of colors for tree nodes displayed in TreeMap and tooltip support to display additional information of treemap data.
 
-Color Customization
+## Color Customization
 
 You can customize the colors of the leaf nodes of TreeMap using the ColorMapping support of the TreeMap. 
 
@@ -21,18 +21,11 @@ ColorMapping is categorized into three different types such as,
 * RangeBrushColorMapping
 * DesaturationColorMapping
 
-Uni Color Mapping
+### Uni Color Mapping
 
 You can color, all the leaf nodes with the same color by setting the color value of the UniColorMapping property of the TreeMap.
 
-
-
-
-
-
 {% highlight html %}
-
- [ASPX]
 
 <ej:Treemap ID="treemap" runat="server" >
 
@@ -42,29 +35,15 @@ You can color, all the leaf nodes with the same color by setting the color value
 
 {% endhighlight  %}
 
+![](Customization_images/Customization_img1.png)
 
-![](Customization_images/Customization_img1.png) 
-
-
-
-Range Color Mapping
+### Range Color Mapping
 
 You can group the leaf nodes based on the range of the data’s color values. You can set a unique color for every ranges. To achieve this, specify the “to” and “from” values as range bound and “color” value to fill the leaf nodes of the particular range, through the RangeColorMapping property of the TreeMap.
 
-
-
-
-
-
 {% highlight html %}
 
-[ASP]
-
-[ASPX]
-
 <ej:Treemap ID="treemap" runat="server">
-
-
 
          <TreeMapRangeColorMappings>
 
@@ -85,22 +64,11 @@ You can group the leaf nodes based on the range of the data’s color values. Yo
 
 ![](Customization_images/Customization_img2.png) 
 
-
-
-Desaturation Color Mapping
+### Desaturation Color Mapping
 
 You can differentiate all the leaf nodes using the DesaturationColorMapping property of the TreeMap. Differentiation is achieved, even though same color is applied for all the leaf nodes by varying the opacity of the leaf nodes based on the color value specified in the color value range using RangeMinimum and RangeMaximum value of the data collection. You can also bound the opacity range by setting from and to property of the DesaturationColorMapping.
 
-
-
-
-
-
 {% highlight html %}
-
-[ASP]
-
-[ASPX]
 
 <ej:TreeMap ID="treemap" runat="server">
 
@@ -116,36 +84,25 @@ You can differentiate all the leaf nodes using the DesaturationColorMapping prop
 ![](Customization_images/Customization_img3.png)
 
 
-Tooltip
+## Tooltip
 
 You can enable the tooltip support for the TreeMap by setting the ShowTooltip property to true. By default, it takes the property of the bound object that is referred to in the GroupPath and displays its content when the corresponding node is tapped. The TooltipTemplate is a HTML element that is used to expose the custom template for the tooltip.
 
-Leaf Item Setting
+### Leaf Item Setting
 
 You can customize the Leaf level TreeMapitems using LeafItemsSetting. The Label and tooltip values take the property of bound object that is referred in the LabelPath when defined.
 
-
-
-
-{% highlight html %}
-
-[ASP]
-
-[ASPX.CS]
+{% highlight c# %}
 
   protected void Page_Load(object sender, EventArgs e)
+	{
 
-        {
+		this.treemap.DataSource = TreeMapPopulationData.GetData();
+	}
 
-            this.treemap.DataSource = TreeMapPopulationData.GetData();
+{% endhighlight %}
 
-
-
-        }
-
- [ASPX]
-
-
+{% highlight html %}
 
 <div style="min-height:404px">
 
@@ -154,8 +111,6 @@ You can customize the Leaf level TreeMapitems using LeafItemsSetting. The Label 
        <TreeMapLegend IconHeight = "17" IconWidth = "17"></TreeMapLegend>
 
         <LeafItemSettings LabelPath = "Country"></LeafItemSettings>
-
-
 
          <TreeMapRangeColorMappings>
 
@@ -169,23 +124,16 @@ You can customize the Leaf level TreeMapitems using LeafItemsSetting. The Label 
 
         </TreeMapRangeColorMappings>
 
-
-
         <Levels>
 
             <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25"></ej:TreeMapLevel>
 
         </Levels>
 
-
-
     </ej:Treemap>
 
     </div>
-
-
+	
 {% endhighlight %}
 
 ![](Customization_images/Customization_img4.png)
-
-

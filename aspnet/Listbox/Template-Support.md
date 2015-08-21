@@ -9,13 +9,13 @@ documentation: ug
 
 # Template Support
 
-ListBox widget provides the template support, when binding the data for the ListBox. For this behaviour, set the common syntax /element in template property. You can add any HTML mark-up element inside the ListBox using this property.
+ListBox widget provides the template support, when binding the data for the ListBox. For this behaviour, set the common syntax/element in template property. You can add any HTML mark-up element inside the ListBox using this property.
 
 The following steps explains you the behaviour of template support with ListBox.
 
 In an ASPX page, add an elementto configure ListBox.
 
-Note: Images for this sample are available in ‘installed location/images/Employee’ 
+> Note: Images for this sample are available in ‘installed location/images/Employee’ 
 
 
 {% highlight html %}
@@ -32,13 +32,7 @@ Note: Images for this sample are available in ‘installed location/images/Emplo
 
 </div>
 
-
-
-
-
 {% endhighlight %}
-
-
 
 {% highlight c# %}
 
@@ -145,18 +139,8 @@ Customize the template in CSS.
 
     }
 
-
-
 {% endhighlight %}
-
-
 
 Output of the above steps.
 
-
-
-
- ![C:/Users/Rajaveni/Desktop/docs/UG images/moditemplate.PNG](Template-Support_images/Template-Support_img1.png)
-
-
-
+ ![](Template-Support_images/Template-Support_img1.png)

@@ -19,9 +19,9 @@ _Keyboard Shortcuts_
 
 <table>
 <tr>
-<td>
-Keys </td><td>
-Functions</td></tr>
+<th>
+Keys </th><th>
+Functions</th></tr>
 <tr>
 <td>
       Alt+j</td><td>
@@ -197,7 +197,7 @@ In the ASPX page, add elements to configure TreeView.
 
 
 
-Define JavaScript for customizing the TreeView
+### Define JavaScript for customizing the TreeView
 
 
 

@@ -47,6 +47,4 @@ Refer to the following code examples.
 
 
  ![](Customize-size_images/Customize-size_img1.png) 
-{:.image }
-
 

@@ -21,7 +21,7 @@ The following screenshot demonstrates how the RTE control is used in Feedback fo
 
 In the above screenshot , the RTE consists of content editable area with Feedback title. In this RTE application, you can click the PostFeedback toolbar item to send the Feedback information.
 
-Create a RichTextEditor 
+### Create a RichTextEditor 
 
 ASP.NET WebForms RTE widget basically renders by using simple text area element. 
 
@@ -34,22 +34,15 @@ Add the following code example to the corresponding view page to render RichText
 {% highlight html %}
 
 
-
 <ej:RTE ID="FeedbackEditor" runat="server">
 
 </ej:RTE>
 
-
-
 {% endhighlight %}
-
-
 
 The following RTE screenshot renders the output of the above steps.
 
 ![](Getting-Started_images/Getting-Started_img2.png)
-
-
 
 ### Configure the Toolbar
 
@@ -72,12 +65,11 @@ The following code example renders the additional inbuilt toolbar items to RTE t
 </ej:RTE>
 
 
-
 {% endhighlight %}
 
 
 
- The following screenshot displays the RTE with inbuilt toolbar item.
+The following screenshot displays the RTE with inbuilt toolbar item.
 
 ![](Getting-Started_images/Getting-Started_img3.png)
 
@@ -95,15 +87,11 @@ For example, consider ‘create table’ toolbar item is not necessary for the F
 
 </ej:RTE>
 
-
-
 {% endhighlight %}
 
 
 
-{% highlight html %}
-
-
+{% highlight js %}
 
      window.onload = function () {
 
@@ -117,14 +105,7 @@ For example, consider ‘create table’ toolbar item is not necessary for the F
 
      };
 
-
-
-
-
-
-
 {% endhighlight %}
-
 
 
 The following screenshot displays ‘create table’ toolbar item is removed from the toolbar list.
@@ -151,8 +132,6 @@ To Add Custom Toolbar to the RTE control, you can include Syncfusion.JavaScript.
 
 </pages>
 
-
-
 {% endhighlight %}
 
 
@@ -160,8 +139,6 @@ To Add Custom Toolbar to the RTE control, you can include Syncfusion.JavaScript.
 The following code example creates the custom toolbar item in the RTE control. 
 
 {% highlight html %}
-
-
 
 <ej:RTE ID="FeedbackEditor" runat="server">
 
@@ -176,8 +153,6 @@ The following code example creates the custom toolbar item in the RTE control.
     </Tools>
 
 </ej:RTE> 
-
-
 
 {% endhighlight %}
 
@@ -200,8 +175,6 @@ Add the following styles for the custom toolbar item.
         font-weight: bold;
 
     }
-
-
 
 {% endhighlight %}
 
@@ -257,10 +230,6 @@ You can specify the custom tool same as previous section with validation operati
 
 </div>
 
-
-
-
-
 {% endhighlight %}
 
 
@@ -288,8 +257,6 @@ You can specify the custom tool same as previous section with validation operati
          }
 
      }
-
-
 
 {% endhighlight %}
 
@@ -361,17 +328,9 @@ You can add the following styles to achieve the Feedback form editor application
 
     }
 
-
-
-
-
 {% endhighlight %}
-
 
 
 The following screenshot displays the Feedback sending without content.
 
 ![](Getting-Started_images/Getting-Started_img6.png)
-
-
-

@@ -20,7 +20,6 @@ The following steps explain how to enable the LoadOnDemand property for TreeView
 In the ASPX page, add an element to configure TreeView.
 
 
-
 {% highlight html %}
 
 <%--In the Design page, assign the values for DataTextField, DataIdField, DataParentIdField, DataHasChildField--%>
@@ -29,10 +28,7 @@ In the ASPX page, add an element to configure TreeView.
 
 </ej:TreeView>
 
-
-
 {% endhighlight %}
-
 
 
 {% highlight c# %}
@@ -73,8 +69,6 @@ public partial class LoadOnDemand : System.Web.UI.Page
 
         public TreeOnDemandDataSource() { }
 
-        [Browsable(true)]
-
         public int ID
 
         {
@@ -84,8 +78,6 @@ public partial class LoadOnDemand : System.Web.UI.Page
             set;
 
         }
-
-        [Browsable(true)]
 
         public int ParentID
 
@@ -97,8 +89,6 @@ public partial class LoadOnDemand : System.Web.UI.Page
 
         }
 
-        [Browsable(true)]
-
         public string Text
 
         {
@@ -109,12 +99,9 @@ public partial class LoadOnDemand : System.Web.UI.Page
 
         }
 
-        [Browsable(true)]
-
         public string HasChild
 
         {
-
             get;
 
             set;
@@ -168,16 +155,8 @@ public partial class LoadOnDemand : System.Web.UI.Page
             return data;
 
         }
-
     }
-
-
 
 {% endhighlight %}
 
-
-
-{ ![](Load-on-Demand_images/Load-on-Demand_img1.png) | markdownify }
-
-
-
+![](Load-on-Demand_images/Load-on-Demand_img1.png)

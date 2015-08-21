@@ -34,6 +34,7 @@ Grid data source can be set List collection and local datasource. It has full su
 </ej:Grid>
 
 {% endhighlight %}
+
 {% highlight c# %}
 
 
@@ -70,7 +71,7 @@ public partial class _Default : System.Web.UI.Page
 
     }
 
-    [Serializable]
+
 
     public class Person
 
@@ -160,7 +161,7 @@ The following output is the result of the above code example.
 
 
 
-Note: For information about DataManager with Grid check DataAdaptors concept.
+> Note: For information about DataManager with Grid check DataAdaptors concept.
 
 ### Load at once
 

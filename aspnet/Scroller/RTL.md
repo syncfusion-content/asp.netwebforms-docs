@@ -17,8 +17,6 @@ In an ASPXpage, add the following code to render Scroller.
 
 {% highlight html %}
 
-
-
 <ej:Scroller ID="scrollcontent" runat="server" Height="170" Width="350" EnableRTL="true">
 
       <ScrollerContent>
@@ -95,6 +93,8 @@ In an ASPXpage, add the following code to render Scroller.
 
 Define the style for Scroller control
 
+{% highlight css %}
+
         .sampleContent {
 
             width: 700px;
@@ -102,18 +102,9 @@ Define the style for Scroller control
             padding: 15px;
 
         }
-
-
-
-
+		
+{% endhighlight %}
 
 The following screenshot displays the output of the above code example.
 
-
-
-{ ![](RTL_images/RTL_img1.png) | markdownify }
-
-
-
-
-
+![](RTL_images/RTL_img1.png)

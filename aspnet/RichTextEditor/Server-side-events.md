@@ -7,21 +7,26 @@ control: RichTextEditor
 documentation: ug
 ---
 
-## Server side events
-
-
+# Server side events
 
 <table>
 <tr>
-<td>
-Event Name</td><td>
-Description</td><td>
-Parameters</td></tr>
+<th>
+Event Name</th><th>
+Description</th><th>
+Parameters</th></tr>
 <tr>
 <td>
 OnToolbarItemClick</td><td>
+
 Event triggered when the RTE tool bar item is clicked</td><td>
-(Object Sender, RTEEventArgs e)Values passed in argument are as below,CommandName – returns the corresponding toolbar item command</td></tr>
+
+(Object Sender, RTEEventArgs e)Values passed in argument are as below,<br/><br/>
+
+CommandName – returns the corresponding toolbar item command<br/>
+
+</td></tr>
+
 </table>
 The following steps explains you on how to define server side event for a RTE control.
 
@@ -29,17 +34,11 @@ In an ASPX page, define the RTE control and add server side event
 
 {% highlight html %}
 
-
-
 <ej:RTE ID="RTESample" Width="650" Height="440" runat="server" OnToolbarItemClick="RTESample_ToolbarItemClick">        
 
 </ej:RTE>
 
-
-
 {% endhighlight %}
-
-
 
 In the code behind define the action to be performed on clicking the toolbar item in RTE
 
@@ -53,9 +52,4 @@ protected void RTESample_ToolbarItemClick(object sender, Syncfusion.JavaScript.W
 
 }
 
-
-
 {% endhighlight %}
-
-
-

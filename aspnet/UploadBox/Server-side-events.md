@@ -19,35 +19,51 @@ Parameters</th></tr>
 <td>
 OnComplete</td><td>
 Event triggered when the file upload is completed</td><td>
-(Object Sender, UploadBoxCompleteEventArgs e)Values passed in argument are as below,Size - to get the file sizeName - returns uploaded file nameExtension - to get the uploaded file extensionEventType - returns the event nameFileStatus - to get the dictionary value of Size, Name, Extension and RawFile</td></tr>
+(Object Sender, UploadBoxCompleteEventArgs e)Values passed in argument are as below,<br/><br/>
+Size - to get the file size<br/><br/>
+Name - returns uploaded file name<br/><br/>
+Extension - to get the uploaded file extension<br/><br/>
+EventType - returns the event name<br/><br/>
+FileStatus - to get the dictionary value of Size, Name, Extension and RawFile<br/><br/>
+</td></tr>
 <tr>
 <td>
 OnErrorFile</td><td>
 Event triggered when the file upload is returned with an error without uploading it</td><td>
-(Object Sender, UploadBoxErrorFileEventArgs e)Values passed in argument are as below,Size - to get the file sizeName - returns uploaded file nameExtension - to get the uploaded file extensionEventType - returns the event nameArguments - to get the dictionary value of action, errors and file detailsAction – returns the current upload action </td></tr>
+(Object Sender, UploadBoxErrorFileEventArgs e)Values passed in argument are as below,<br/><br/>
+Size - to get the file size<br/><br/>
+Name - returns uploaded file name<br/><br/>
+Extension - to get the uploaded file extension<br/><br/>
+EventType - returns the event name<br/><br/>
+Arguments - to get the dictionary value of action, errors and file details<br/><br/>
+Action – returns the current upload action <br/><br/>
+</td></tr>
 <tr>
 <td>
 OnRemoveFile</td><td>
 Event triggered when a uploaded file is removed </td><td>
-(Object Sender, UploadBoxErrorFileEventArgs e)Values passed in argument are as below,Size - to get the file sizeName - returns uploaded file nameExtension - to get the uploaded file extensionEventType - returns the event nameFileStatus - to get the dictionary value of Size, Name, Extension and RawFile</td></tr>
+(Object Sender, UploadBoxErrorFileEventArgs e)Values passed in argument are as below,
+Size - to get the file size<br/><br/>
+Name - returns uploaded file name<br/><br/>
+Extension - to get the uploaded file extension<br/><br/>
+EventType - returns the event name<br/><br/>
+FileStatus - to get the dictionary value of Size, Name, Extension and RawFile<br/><br/>
+</td></tr>
 </table>
+
 The following steps explain the configuration of the Server side events in UploadBox. 
 
 In the ASPX page, add the UploadBox element.
 
 {% highlight html %}
 
-
-
 <ej:UploadBox ID="Uploadbox" runat="server" SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx" OnComplete="Uploadbox_Complete" OnErrorFile="Uploadbox_ErrorFile" OnRemoveFile="Uploadbox_RemoveFile"></ej:UploadBox>
-
-
 
 {% endhighlight %}
 
-Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
+> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
-Define the corresponding server side handlers in code behind
+### Define the corresponding server side handlers in code behind
 
 {% highlight c# %}
 
@@ -67,12 +83,9 @@ protected void Uploadbox_Complete(object sender, Syncfusion.JavaScript.Web.Uploa
 
 }
 
-
-
 protected void Uploadbox_ErrorFile(object sender, Syncfusion.JavaScript.Web.UploadBoxErrorFileEventArgs e)
 
 {
-
     //e.Size - Gets the file size
 
     //e.Name - Returns uploaded file name
@@ -87,12 +100,9 @@ protected void Uploadbox_ErrorFile(object sender, Syncfusion.JavaScript.Web.Uplo
 
 }
 
-
-
 protected void Uploadbox_RemoveFile(object sender, Syncfusion.JavaScript.Web.UploadBoxRemoveFileEventArgs e)
 
 {
-
     //e.Size - Gets the file size
 
     //e.Name - Returns uploaded file name
@@ -105,9 +115,4 @@ protected void Uploadbox_RemoveFile(object sender, Syncfusion.JavaScript.Web.Upl
 
 }
 
-
-
 {% endhighlight %}
-
-
-

@@ -23,12 +23,6 @@ The Grid initialization is as follows.
  {% highlight html %}
 
 
-[ASP]
-
-
-
-[aspx]
-
 <ej:Grid ID="Grid" runat="server" AllowPaging="true">
 
         <DataManager URL="Default.aspx/GetData" InsertURL="Default.aspx/PerformInsert" UpdateURL="Default.aspx/PerformUpdate" RemoveURL="Default.aspx/PerformDelete" Adaptor="UrlAdaptor" />
@@ -252,7 +246,7 @@ public static class AppSession
  {% endhighlight %}
 
 
-Note: In the above code example, the ORM mapping is performed by using the xml-documents and the mapping files are Employee.cfg.xml and EmployeeMap.hbm.xml
+> Note: In the above code example, the ORM mapping is performed by using the xml-documents and the mapping files are Employee.cfg.xml and EmployeeMap.hbm.xml
 
 
 

@@ -39,11 +39,7 @@ The following steps explains you on how to apply styles in Scroller control.
 
 In an ASPXpage add the following code to render Scroller.
 
-
-
 {% highlight html %}
-
-
 
 <ej:Scroller ID="scrollcontent" runat="server" Height="170" Width="350" ScrollTop="10" ScrollLeft="20" ButtonSize="20">
 
@@ -113,13 +109,9 @@ In an ASPXpage add the following code to render Scroller.
 
 </ej:Scroller>
 
-
-
 {% endhighlight %}
 
-
-
-Define the style for Scroller control
+### Define the style for Scroller control
 
 {% highlight css %}
 
@@ -133,17 +125,10 @@ Define the style for Scroller control
 
         }
 
-
-
-
-
 {% endhighlight %}
 
 
 
 The following screenshot displays the output of the above code example.
 
-{ ![C:/Users/labuser/Desktop/scroller.png](Scroller-Styles_images/Scroller-Styles_img1.png) | markdownify }
-
-
-
+![C:/Users/labuser/Desktop/scroller.png](Scroller-Styles_images/Scroller-Styles_img1.png)

@@ -33,12 +33,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
 </ej:ToggleButton>
 
-
-
-
-
 {% endhighlight %}
-
 
 
 Run the above code to render the following output.
@@ -81,9 +76,9 @@ You can also set icons in different locations (prefix, suffix) and in different 
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description </td></tr>
+<th>
+Properties</th><th>
+Description </th></tr>
 <tr>
 <td>
 ActiveText</td><td>
@@ -147,9 +142,9 @@ You can render the Toggle Button in different sizes. You can use some predefined
 
 <table>
 <tr>
-<td>
-Normal</td><td>
-Creates the Toggle Button with content size.</td></tr>
+<th>
+Normal</th><th>
+Creates the Toggle Button with content size.</th></tr>
 <tr>
 <td>
 Mini</td><td>
@@ -231,9 +226,9 @@ The content of the Toggle Button is mainly text and images. Instead of using com
 
 <table>
 <tr>
-<td>
-TextOnly</td><td>
-Supports text content only.</td></tr>
+<th>
+TextOnly</th><th>
+Supports text content only.</th></tr>
 <tr>
 <td>
 ImageOnly</td><td>
@@ -369,7 +364,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
 Execute the above code to render the following output.
 
-[](Easy-Customization_images/Easy-Customization_img5.png) 
+![](Easy-Customization_images/Easy-Customization_img5.png) 
 
 
 
@@ -379,22 +374,23 @@ To provide the best look and feel, position of images in the Toggle Button is im
 
 <table>
 <tr>
-<td>
-ImageLeft</td><td>
+<th>
+ImageLeft</th><td>
 Support for aligning text in the right and image in the left.</td></tr>
 <tr>
-<td>
-ImageRight</td><td>
+<th>
+ImageRight</th><td>
 Support for aligning text in the left and image in the right.</td></tr>
 <tr>
-<td>
-ImageTop</td><td>
+<th>
+ImageTop</th><td>
 Support for aligning text at the bottom and image at the top.</td></tr>
 <tr>
-<td>
-ImageBottom</td><td>
+<th>
+ImageBottom</th><td>
 Support for aligning text at the top and image at the bottom.</td></tr>
 </table>
+
 The following steps explain how to render the Toggle Button with the above mentioned image position options.
 
 In the ASPX page, add the following button elements to configure the Toggle Button widget.

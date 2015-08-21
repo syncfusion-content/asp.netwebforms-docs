@@ -13,23 +13,12 @@ Responsivelayout is aimed at crafting sites to provide an optimal viewing experi
 
 {% highlight html %}
 
-
-
 <%@ Register Assembly="Syncfusion.EJ.Olap" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
-
-
 
 <ej:PivotGrid ID="PivotGrid1" Url="../wcf/OLAPService.svc" IsResponsive="true" runat="server"></ej:PivotGrid>
 
-
 {% endhighlight %}
-
 
  ![](Responsive-Layout_images/Responsive-Layout_img1.png) 
 
-
-
  ![](Responsive-Layout_images/Responsive-Layout_img2.png) 
-
-
-

@@ -15,136 +15,140 @@ Custom labels are the text that can paste in any location of the Linear Gauge. I
 
 Custom labels collection can be directly added to the scale object. Refer the following code to add custom labels collection in a Linear Gauge control.
 
+{% highlight html %}
+
+<%--For Linear gauge rendering-- %>
+
+<ej:LinearGauge runat="server" ID="PointerGauge"  Height="500" width="200" labelColor="grey" EnableAnimation="false">
+
+<Scales>
+
+<ej:Scales BackgroundColor="transparent" ShowMarkerPointers="false" ShowCustomLabels="true"  ShowBarPointers="true">
+
+<Border Color="transparent" Width="0" />
+
+<BarPointerCollection>
+
+<ej:BarPointers Width="10" BarPointerBackgroundColor="#8BABFF" BarPointerValue="91" BarPointerdistanceFromScale="30">
+
+</ej:BarPointers>
+
+</BarPointerCollection>
+
+<TickCollection >
+
+<ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" >
+
+<DistanceFromScale X="7" Y="0" />
+
+</ej:LinearTicks>
+
+<ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" >
+
+<DistanceFromScale X="7" Y="0" />
+
+</ej:LinearTicks>
+
+</TickCollection>
+
+<%--Setting Customlabel-- %>
+
+<CustomLabelCollection>
+
+<ej:CustomLabel Value="Mathematics Mark">
+
+<Position X="55" Y="97" />
+
+</ej:CustomLabel>
+
+</CustomLabelCollection>
+
+</ej:Scales>
+
+</Scales>
+
+<Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light.png" />
+
+</ej:LinearGauge>
+
+{% endhighlight %}
 
 
-[ASP]
-
-&lt;%--For Linear gauge rendering-- %&gt;
-
-&lt;ej:LinearGauge runat="server" ID="PointerGauge"  Height="500" width="200" labelColor="grey" EnableAnimation="false"&gt;
-
-&lt;Scales&gt;
-
-&lt;ej:Scales BackgroundColor="transparent" ShowMarkerPointers="false" ShowCustomLabels="true"  ShowBarPointers="true"&gt;
-
-&lt;Border Color="transparent" Width="0" /&gt;
-
-&lt;BarPointerCollection&gt;
-
-&lt;ej:BarPointers Width="10" BarPointerBackgroundColor="#8BABFF" BarPointerValue="91" BarPointerdistanceFromScale="30"&gt;
-
-&lt;/ej:BarPointers&gt;
-
-&lt;/BarPointerCollection&gt;
-
-&lt;TickCollection &gt;
-
-&lt;ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" &gt;
-
-&lt;DistanceFromScale X="7" Y="0" /&gt;
-
-&lt;/ej:LinearTicks&gt;
-
-&lt;ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" &gt;
-
-&lt;DistanceFromScale X="7" Y="0" /&gt;
-
-&lt;/ej:LinearTicks&gt;
-
-&lt;/TickCollection&gt;
-
-&lt;%--Setting Customlabel-- %&gt;
-
-&lt;CustomLabelCollection&gt;
-
-&lt;ej:CustomLabel Value="Mathematics Mark"&gt;
-
-&lt;Position X="55" Y="97" /&gt;
-
-&lt;/ej:CustomLabel&gt;
-
-&lt;/CustomLabelCollection&gt;
-
-&lt;/ej:Scales&gt;
-
-&lt;/Scales&gt;
-
-&lt;Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light.png" /&gt;
-
-&lt;/ej:LinearGauge&gt;
 
 
 
 Execute the above code to render the following output.
 
 ![](Custom-labels_images/Custom-labels_img1.png)
-{:.image }
+
 
 
 ## Basic Customization
 
-Appearance
+### Appearance
 
 * You can customize custom labels using the properties like textAngle, color and font. The API textAngle is used to display the custom labels in the specified angles and color attribute is used to display the custom labels in specified color. You can use value attribute to set the text value in the custom labels. 
 * To display the custom labels, set showCustomLabels as ‘true’. Font option is also available on the custom labels. The basic three properties of fonts such as size, family and style can be achieved by size, fontStyle and fontFamily. You can adjust the opacity of the label with the property opacity and the value of opacity lies between 0 and 1.
 
+{% highlight html %}
+
+<%--For Linear gauge rendering-- %>
+
+<ej:LinearGauge runat="server" ID="PointerGauge"  Height="500" width="200" labelColor="grey" EnableAnimation="false">
+
+<Scales>
+
+<ej:Scales BackgroundColor="transparent" ShowMarkerPointers="false" ShowCustomLabels="true"  ShowBarPointers="true">
+
+<Border Color="transparent" Width="0" />
+
+<BarPointerCollection>
+
+<ej:BarPointers Width="10" BarPointerBackgroundColor="#8BABFF" BarPointerValue="91" BarPointerdistanceFromScale="30">
+
+</ej:BarPointers>
+
+</BarPointerCollection>
+
+<TickCollection >
+
+<ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" >
+
+<DistanceFromScale X="7" Y="0" />
+
+</ej:LinearTicks>
+
+<ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" >
+
+<DistanceFromScale X="7" Y="0" />
+
+</ej:LinearTicks>
+
+</TickCollection>
+
+<%--Setting custom label value, color, textangle and opacity-- %>
+
+<CustomLabelCollection>
+
+<ej:CustomLabel Value="Mathematics Mark" Color="red" TextAngle="30" CustomLabelopacity="0.5">
+
+<Position X="55" Y="87" />
+
+</ej:CustomLabel>
+
+</CustomLabelCollection>
+
+</ej:Scales>
+
+</Scales>
+
+<Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light.png" />
+
+</ej:LinearGauge>
+
+{% endhighlight %}
 
 
-[ASP]
-
-&lt;%--For Linear gauge rendering-- %&gt;
-
-&lt;ej:LinearGauge runat="server" ID="PointerGauge"  Height="500" width="200" labelColor="grey" EnableAnimation="false"&gt;
-
-&lt;Scales&gt;
-
-&lt;ej:Scales BackgroundColor="transparent" ShowMarkerPointers="false" ShowCustomLabels="true"  ShowBarPointers="true"&gt;
-
-&lt;Border Color="transparent" Width="0" /&gt;
-
-&lt;BarPointerCollection&gt;
-
-&lt;ej:BarPointers Width="10" BarPointerBackgroundColor="#8BABFF" BarPointerValue="91" BarPointerdistanceFromScale="30"&gt;
-
-&lt;/ej:BarPointers&gt;
-
-&lt;/BarPointerCollection&gt;
-
-&lt;TickCollection &gt;
-
-&lt;ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" &gt;
-
-&lt;DistanceFromScale X="7" Y="0" /&gt;
-
-&lt;/ej:LinearTicks&gt;
-
-&lt;ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" &gt;
-
-&lt;DistanceFromScale X="7" Y="0" /&gt;
-
-&lt;/ej:LinearTicks&gt;
-
-&lt;/TickCollection&gt;
-
-&lt;%--Setting custom label value, color, textangle and opacity-- %&gt;
-
-&lt;CustomLabelCollection&gt;
-
-&lt;ej:CustomLabel Value="Mathematics Mark" Color="red" TextAngle="30" CustomLabelopacity="0.5"&gt;
-
-&lt;Position X="55" Y="87" /&gt;
-
-&lt;/ej:CustomLabel&gt;
-
-&lt;/CustomLabelCollection&gt;
-
-&lt;/ej:Scales&gt;
-
-&lt;/Scales&gt;
-
-&lt;Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light.png" /&gt;
-
-&lt;/ej:LinearGauge&gt;
 
 
 
@@ -153,74 +157,76 @@ Appearance
 Execute the above code to render the following output.
 
 ![](Custom-labels_images/Custom-labels_img2.png)
-{:.image }
+
 
 
 ## Locating the Custom Labels
 
 To set the location of the custom label in Linear Gauge, position property is used. You can position the custom labels in horizontal and vertical axis using X and Y axis respectively.
 
+{% highlight html %}
+
+<%--For Linear gauge rendering-- %>
+
+<ej:LinearGauge runat="server" ID="PointerGauge"  Height="500" width="200" labelColor="grey" EnableAnimation="false">
+
+<Scales>
+
+<ej:Scales BackgroundColor="transparent" ShowMarkerPointers="false" ShowCustomLabels="true"  ShowBarPointers="true">
+
+<Border Color="transparent" Width="0" />
+
+<BarPointerCollection>
+
+<ej:BarPointers Width="10" BarPointerBackgroundColor="#8BABFF" BarPointerValue="91" BarPointerdistanceFromScale="30">
+
+</ej:BarPointers>
+
+</BarPointerCollection>
+
+<TickCollection >
+
+<ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" >
+
+<DistanceFromScale X="7" Y="0" />
+
+</ej:LinearTicks>
+
+<ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" >
+
+<DistanceFromScale X="7" Y="0" />                            </ej:LinearTicks>
+
+</TickCollection>
+
+<%--Setting custom label position-- %>
+
+<CustomLabelCollection>
+
+<ej:CustomLabel Value="Mathematics Mark">
+
+<Position X="55" Y="97" />
+
+</ej:CustomLabel>
+
+</CustomLabelCollection>
+
+</ej:Scales>
+
+</Scales>
+
+<Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light.png" />
+
+</ej:LinearGauge>
 
 
-[ASP]
+{% endhighlight %}
 
-&lt;%--For Linear gauge rendering-- %&gt;
-
-&lt;ej:LinearGauge runat="server" ID="PointerGauge"  Height="500" width="200" labelColor="grey" EnableAnimation="false"&gt;
-
-&lt;Scales&gt;
-
-&lt;ej:Scales BackgroundColor="transparent" ShowMarkerPointers="false" ShowCustomLabels="true"  ShowBarPointers="true"&gt;
-
-&lt;Border Color="transparent" Width="0" /&gt;
-
-&lt;BarPointerCollection&gt;
-
-&lt;ej:BarPointers Width="10" BarPointerBackgroundColor="#8BABFF" BarPointerValue="91" BarPointerdistanceFromScale="30"&gt;
-
-&lt;/ej:BarPointers&gt;
-
-&lt;/BarPointerCollection&gt;
-
-&lt;TickCollection &gt;
-
-&lt;ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" &gt;
-
-&lt;DistanceFromScale X="7" Y="0" /&gt;
-
-&lt;/ej:LinearTicks&gt;
-
-&lt;ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" &gt;
-
-&lt;DistanceFromScale X="7" Y="0" /&gt;                            &lt;/ej:LinearTicks&gt;
-
-&lt;/TickCollection&gt;
-
-&lt;%--Setting custom label position-- %&gt;
-
-&lt;CustomLabelCollection&gt;
-
-&lt;ej:CustomLabel Value="Mathematics Mark"&gt;
-
-&lt;Position X="55" Y="97" /&gt;
-
-&lt;/ej:CustomLabel&gt;
-
-&lt;/CustomLabelCollection&gt;
-
-&lt;/ej:Scales&gt;
-
-&lt;/Scales&gt;
-
-&lt;Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light.png" /&gt;
-
-&lt;/ej:LinearGauge&gt;
 
 
 Execute the above code to render the following output.
 
 ![](Custom-labels_images/Custom-labels_img3.png)
-{:.image }
+
 
 
 ## Multiple Custom Labels
@@ -228,79 +234,72 @@ Execute the above code to render the following output.
 You can set multiple custom labels in a single Linear Gauge by adding an array of custom label objects. Refer the following code example for multiple custom label functionality.
 
 
+{% highlight html %}
 
-[ASP]
+<%--For Linear gauge rendering-- %>
 
-&lt;%--For Linear gauge rendering-- %&gt;
+<ej:LinearGauge runat="server" ID="PointerGauge"  Height="500" width="200" labelColor="grey" EnableAnimation="false">
 
-&lt;ej:LinearGauge runat="server" ID="PointerGauge"  Height="500" width="200" labelColor="grey" EnableAnimation="false"&gt;
+<Scales>
 
-&lt;Scales&gt;
+<ej:Scales BackgroundColor="transparent" ShowMarkerPointers="false" ShowCustomLabels="true"  ShowBarPointers="true">
 
-&lt;ej:Scales BackgroundColor="transparent" ShowMarkerPointers="false" ShowCustomLabels="true"  ShowBarPointers="true"&gt;
+<Border Color="transparent" Width="0" />
 
-&lt;Border Color="transparent" Width="0" /&gt;
+<BarPointerCollection>
 
-&lt;BarPointerCollection&gt;
+<ej:BarPointers Width="10" BarPointerBackgroundColor="#8BABFF" BarPointerValue="91" BarPointerdistanceFromScale="30">
 
-&lt;ej:BarPointers Width="10" BarPointerBackgroundColor="#8BABFF" BarPointerValue="91" BarPointerdistanceFromScale="30"&gt;
+</ej:BarPointers>
 
-&lt;/ej:BarPointers&gt;
+</BarPointerCollection>
 
-&lt;/BarPointerCollection&gt;
+<TickCollection >
 
-&lt;TickCollection &gt;
+<ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" >
 
-&lt;ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" &gt;
+<DistanceFromScale X="7" Y="0" />
 
-&lt;DistanceFromScale X="7" Y="0" /&gt;
+</ej:LinearTicks>
 
-&lt;/ej:LinearTicks&gt;
+<ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" >
 
-&lt;ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" &gt;
+<DistanceFromScale X="7" Y="0" />
 
-&lt;DistanceFromScale X="7" Y="0" /&gt;
+</ej:LinearTicks>
 
-&lt;/ej:LinearTicks&gt;
+</TickCollection>
 
-&lt;/TickCollection&gt;
+<CustomLabelCollection>
 
-&lt;CustomLabelCollection&gt;
+<%--Setting customlabel1-- %>
 
-&lt;%--Setting customlabel1-- %&gt;
+<ej:CustomLabel Value="Mathematics Mark" Color="red">
 
-&lt;ej:CustomLabel Value="Mathematics Mark" Color="red"&gt;
+<Position X="55" Y="87" />
 
-&lt;Position X="55" Y="87" /&gt;
+</ej:CustomLabel>
 
-&lt;/ej:CustomLabel&gt;
+<%--Setting customlabel2-- %>
 
-&lt;%--Setting customlabel2-- %&gt;
+<ej:CustomLabel Value="Marks in %" Color="red" TextAngle="90">
 
-&lt;ej:CustomLabel Value="Marks in %" Color="red" TextAngle="90"&gt;
+<Position X="15" Y="57" />
 
-&lt;Position X="15" Y="57" /&gt;
+</ej:CustomLabel>
 
-&lt;/ej:CustomLabel&gt;
+</CustomLabelCollection>
 
-&lt;/CustomLabelCollection&gt;
+</ej:Scales>
 
-&lt;/ej:Scales&gt;
+</Scales>
 
-&lt;/Scales&gt;
+<Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light.png" />
 
-&lt;Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light.png" /&gt;
+</ej:LinearGauge>
 
-&lt;/ej:LinearGauge&gt;
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
-
-
-
-
 ![](Custom-labels_images/Custom-labels_img4.png)
-{:.image }
-
-

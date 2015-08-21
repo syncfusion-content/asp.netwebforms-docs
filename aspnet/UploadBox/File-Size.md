@@ -15,16 +15,16 @@ In the UploadBox control, you can browse files with the size going up to gigabyt
 
 In the ASPX page, add the UploadBox element with the customized file size by using the FileSize property.
 
-
-
-
 {% highlight html %}
+
 <ej:UploadBox ID="Uploadbox2" runat="server" FileSize="1048576" SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx" ClientSideOnError="fileuploaderror"></ej:UploadBox>
 
 {% endhighlight %}
 
 In the ClientSideOnError event display, an alert message is displayed when the file size exceeds.
-{% highlight c# %}
+
+{% highlight css %}
+
       function fileuploaderror(e, ui) {
 
           alert(e.error);
@@ -33,13 +33,11 @@ In the ClientSideOnError event display, an alert message is displayed when the f
 
 {% endhighlight %}
 
-Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
+> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 The following screenshot displays the UploadBox control with customized file size.
 
 You can browse and upload the files within the FileSize.
-
-
 
  ![](File-Size_images/File-Size_img1.png)
 
@@ -83,7 +81,10 @@ Property</td><td>
 28.6 MB</td><td>
 maxAllowedContentLength specifies the maximum length of content in a request supported by IIS.</td></tr>
 </table>
+
  You can add the following code to your web.config file in order to set that value to 100 MB
+
+{% highlight html %}
 
 <configuration>
 
@@ -95,9 +96,12 @@ maxAllowedContentLength specifies the maximum length of content in a request sup
 
 </configuration>
 
-Note:  maxRequestLength is measured in kilobytes.
+{% endhighlight %}
+
+> Note:  maxRequestLength is measured in kilobytes.
 
 {% highlight html %}
+
 <system.webServer>
 
     <security>
@@ -111,24 +115,20 @@ Note:  maxRequestLength is measured in kilobytes.
     </security>
 
 </system.webServer>
+
 {% endhighlight %}
 
-Note: maxAllowedContentLength is measured in bytes.
+> Note: maxAllowedContentLength is measured in bytes.
 
 ![](File-Size_images/File-Size_img3.png)
 
 
 
-Note: 
+> Note: 
+>
+> * When you configure both maxAllowedContentLength and maxRequestLength attributes, then maxAllowedContentLength can be run. 
+> * When the upload file’s size exceeds maxAllowedContentLength, you get a 404.13 error page.
+> * When the upload file’s size exceeds maxRequestLength value, you get an exception “System.Web.HttpException: Maximum request length exceeded”.
+> * The ASP.NET method of maxRequestLength is greater than or equal to the IIS method of limiting the request length (maxAllowedContentLength).
 
-* When you configure both maxAllowedContentLength and maxRequestLength attributes, then maxAllowedContentLength can be run. 
-* When the upload file’s size exceeds maxAllowedContentLength, you get a 404.13 error page.
-* When the upload file’s size exceeds maxRequestLength value, you get an exception “System.Web.HttpException: Maximum request length exceeded”.
-* The ASP.NET method of maxRequestLength is greater than or equal to the IIS method of limiting the request length (maxAllowedContentLength).
-
- 
-
- ![](File-Size_images/File-Size_img4.png)
-
-
-
+![](File-Size_images/File-Size_img4.png)

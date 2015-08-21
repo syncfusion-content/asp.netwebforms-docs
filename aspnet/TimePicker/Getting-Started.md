@@ -17,11 +17,7 @@ The Essential ASP.NET TimePicker provides support to display a TimePicker in you
 
 The following screenshot illustrates the functionality of a TimePicker with a time range of morning to evening. You can select a time to book a table, from a period of 9.00 AM to 6.00 PM for the current day. This avoids selecting a time prior to the morning.
 
-
-
 ![](Getting-Started_images/Getting-Started_img1.png) 
-
-
 
 ### Create a TimePicker 
 

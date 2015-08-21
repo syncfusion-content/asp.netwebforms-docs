@@ -13,30 +13,61 @@ You can specify the server side events of TreeView in ASP. To set server side ev
 
 <table>
 <tr>
-<td>
-Event</td><td>
-Event Description</td><td>
-Event Description</td></tr>
+<th>
+Event</th><th>
+Event Description</th><th>
+Event Description</th></tr>
 <tr>
 <td>
 OnNodeChecked</td><td>
 Occurs when treeView node checkbox is checked.</td><td>
-Event Argument contains parameters aree.NodeText - Text of TreeView Selected Nodee.NodeID - Id of TreeView Selected Nodee.Checked - Status of TreeView Node Checkboxe.CurrentChekcedNodes - List of TreeView Current Checked Nodes e.EventType - Event Namee.Arguments - Contain keys and values for NodeText,NodeID,Checked and CurrentCheckedNodes</td></tr>
+Event Argument contains parameters are<br/><br/>
+e.NodeText - Text of TreeView Selected Node<br/><br/>
+e.NodeID - Id of TreeView Selected Node<br/><br/>
+e.Checked - Status of TreeView Node Checkbox<br/><br/>
+e.CurrentChekcedNodes - List of TreeView Current Checked Nodes <br/><br/>
+e.EventType - Event Name<br/><br/>
+e.Arguments - Contain keys and values for NodeText,NodeID,Checked and CurrentCheckedNodes<br/><br/>
+</td></tr>
 <tr>
 <td>
 OnNodeDropped</td><td>
 Occurs when treeView node is dropped. </td><td>
-Event Argument contains the following parameters.e.NodeText - Text of TreeView Selected Nodee.NodeID - Id of TreeView Selected Nodee.TargetNodeDetails –Drop  the selected nodeTargetNodeDetails.id- Id of DragElement   TargetNodeDetails.NodeDetails-Contain keys and values for DragElement TargetNodeDetails.TargetId-Id of TargetElementTargetNodeDetails.TargetNodeDetails-Contain keys and values for TargetElemente.EventType - Event Namee.Arguments - Contain keys and values for NodeText, NodeID and TargetNodeDetails</td></tr>
+Event Argument contains the following parameters.<br/><br/>
+e.NodeText - Text of TreeView Selected Node<br/><br/>
+e.NodeID - Id of TreeView Selected Node<br/><br/>
+e.TargetNodeDetails –Drop  the selected node<br/><br/>
+e.TargetNodeDetails.id- Id of DragElement   <br/><br/>
+TargetNodeDetails.NodeDetails-Contain keys and values for DragElement <br/><br/>
+TargetNodeDetails.TargetId-Id of TargetElement<br/><br/>
+TargetNodeDetails.TargetNodeDetails-Contain keys and values for TargetElement<br/><br/>
+e.EventType - Event Name<br/><br/>
+e.Arguments - Contain keys and values for NodeText, NodeID and TargetNodeDetails<br/><br/>
+</td></tr>
 <tr>
 <td>
 OnNodeSelected</td><td>
 Occurs when treeView node is selected </td><td>
-Event Argument contains parameters aree.NodeText - Text of TreeView Selected Nodee.NodeID - Id of TreeView Selected Nodee.EventType - Event Namee.Arguments - Contain keys and values for NodeText and NodeID.</td></tr>
+Event Argument contains parameters are<br/><br/>
+e.NodeText - Text of TreeView Selected Node<br/><br/>
+e.NodeID - Id of TreeView Selected Node<br/><br/>
+e.EventType - Event Name<br/><br/>
+e.Arguments - Contain keys and values for NodeText and NodeID.<br/><br/>
+</td></tr>
 <tr>
 <td>
 OnInlineEditValidation</td><td>
 Occurs when treeView node is editing.</td><td>
-Event Argument contains the following parameterse.NodeText - Text of TreeView Selected Nodee.NodeID - Id of TreeView Selected Nodee.RenamedNode - Edit the selected node RenamedNode.id-Id of edited node RenamedNode.old-Text value of before edited node RenamedNode.new-Text value of after edited nodee.EventType - Event Namee.Arguments - Contain keys and values for NodeText, NodeID and RenamedNode </td></tr>
+Event Argument contains the following parameters<br/><br/>
+e.NodeText - Text of TreeView Selected Node<br/><br/>
+e.NodeID - Id of TreeView Selected Node<br/><br/>
+e.RenamedNode - Edit the selected node <br/><br/>
+RenamedNode.id-Id of edited node <br/><br/>
+RenamedNode.old-Text value of before edited node <br/><br/>
+RenamedNode.new-Text value of after edited node<br/><br/>
+e.EventType - Event Name<br/><br/>
+e.Arguments - Contain keys and values for NodeText, NodeID and RenamedNode<br/><br/>
+</td></tr>
 </table>
 
 
@@ -142,10 +173,6 @@ AllowDropChild="true" AllowDropSibling="true" AllowEditing="true">
 
             </ej:TreeViewNode>
 
-
-
-
-
             <ej:TreeViewNode Text="Music">
 
                 <Nodes>
@@ -176,13 +203,7 @@ AllowDropChild="true" AllowDropSibling="true" AllowEditing="true">
 
 </ej:TreeView>
 
-
-
-
-
 {% endhighlight %}
-
-
 
 {% highlight c# %}
 
@@ -244,9 +265,4 @@ protected void treeView_InlineEditValidation(object sender, Syncfusion.JavaScrip
 
 }
 
-
-
 {% endhighlight %}
-
-
-

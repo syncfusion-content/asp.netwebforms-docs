@@ -17,12 +17,10 @@ This section briefly explains on how to create a Linear Gauge control for your a
 
 
 ![](Getting-Started_images/Getting-Started_img1.png)
-{:.image }
 
+_Analog thermometer_
 
-Analog thermometer
-
-Create a Linear Gauge
+## Create a Linear Gauge
 
 ASP.NET Linear Gauge widget basically renders with flexible API’s. You can easily create the Linear Gauge widget by using simple code example as follows.
 
@@ -30,68 +28,63 @@ ASP.NET Linear Gauge widget basically renders with flexible API’s. You can eas
 2. Add the mentioned code example to the corresponding designer page to render the Linear Gauge.
 
 
+{% highlight html %}
 
-[ASPX]
+<ej:LinearGauge runat="server" ID="thermoLinear">
 
+</ej:LinearGauge>
 
-
-&lt;ej:LinearGauge runat="server" ID="thermoLinear"&gt;
-
-&lt;/ej:LinearGauge&gt;
-
-
+{% endhighlight %}
 
 Run the above code to get a default Linear Gauge with default values as follows.
 
 ![](Getting-Started_images/Getting-Started_img2.png)
-{:.image }
 
 
-Set Height and Width values
+
+### Set Height and Width values
 
 Basic attributes of each canvas elements are height and width. You can set the height and width of the gauge using the following code example.It sets the height and width of the canvas image where the thermometer is to be rendered.
 
+{% highlight html %}
 
+<ej:LinearGauge ID="LinearGauge1" runat="server" Height="550" Width="500">
 
-[ASPX]
+</ej:LinearGauge>
 
-
-
-&lt;ej:LinearGauge ID="LinearGauge1" runat="server" Height="550" Width="500"&gt;
-
-&lt;/ej:LinearGauge&gt;
-
-
+{% endhighlight %}
 
 Run the above code to get a gauge that is similar to default. Here height and width of the canvas are set for given values.
 
 ![](Getting-Started_images/Getting-Started_img3.png)
-{:.image }
 
 
-Set Animation option and Label Color
+
+### Set Animation option and Label Color
 
 * You can draw the Thermometer with some Label color and Animation.
 * Intially set EnableAnimation property to ‘false’ to avoid unwanted script loads.
 
+{% highlight html %}
+
+<ej:LinearGauge ID="LinearGauge1" runat="server" Height="550" Width="500" LabelColor="#8c8c8c" EnableAnimation="false">
+
+</ej:LinearGauge>
+
+{% endhighlight %}
 
 
-[ASPX]
 
 
-
-&lt;ej:LinearGauge ID="LinearGauge1" runat="server" Height="550" Width="500" LabelColor="#8c8c8c" EnableAnimation="false"&gt;
-
-&lt;/ej:LinearGauge&gt;
 
 
 Run the above code to get the following output.
 
 ![](Getting-Started_images/Getting-Started_img4.png)
-{:.image }
 
 
-Provide scale values
+
+### Provide scale values
 
 * The scale must have the appearance of a thermometer. By giving ScaleType as Thermometer, you can render a thermometer design.
 * Minimum temperature can go up to -10 and maximum body temperature can rise up to 110, so you can give minimum scale value as -10 and maximum value as 110.
@@ -100,33 +93,31 @@ Provide scale values
 
 
 
-[ASPX]
+{% highlight html %}
 
+<ej:LinearGauge ID="LinearGauge1" runat="server" Height="550" Width="500" LabelColor="#8c8c8c" EnableAnimation="false">
 
+<Scales>
 
-&lt;ej:LinearGauge ID="LinearGauge1" runat="server" Height="550" Width="500" LabelColor="#8c8c8c" EnableAnimation="false"&gt;
+<ej:Scales Type="Thermometer" BackgroundColor="transparent" Minimum="-10" Maximum="110" MinorIntervalValue="5" Width="20" Length="355">
 
-&lt;Scales&gt;
+<Border Width="0.5"/>
 
-&lt;ej:Scales Type="Thermometer" BackgroundColor="transparent" Minimum="-10" Maximum="110" MinorIntervalValue="5" Width="20" Length="355"&gt;
+</ej:Scales>
 
-&lt;Border Width="0.5"/&gt;
+</Scales>
 
-&lt;/ej:Scales&gt;
+</ej:LinearGauge>
 
-&lt;/Scales&gt;
-
-&lt;/ej:LinearGauge&gt;
-
-
+{% endhighlight %}
 
 Run the above code to get the following output.
 
 ![](Getting-Started_images/Getting-Started_img5.png)
-{:.image }
 
 
-Add pointers data
+
+### Add pointers data
 
 In Linear Gauge the two types pointer available are: Marker pointer and Bar pointer.
 
@@ -134,32 +125,29 @@ In Linear Gauge the two types pointer available are: Marker pointer and Bar poin
 * Bar pointer acts as a mercury metal that shows the exact temperature of the patient. Set some of the basic properties of the Bar pointer such as Width, BarPointerDistanceFromScale, BarPointerValue and BarPointerBackgroundColor.
 
 
+{% highlight html %}
 
-[ASPX]
+<ej:LinearGauge ID="LinearGauge1" runat="server" Height="550" Width="500" LabelColor="#8c8c8c" EnableAnimation="false">
 
+<Scales>
 
+<ej:Scales Type="Thermometer" BackgroundColor="transparent" Minimum="-10" Maximum="110" MinorIntervalValue="5" Width="20" Length="355">
 
-&lt;ej:LinearGauge ID="LinearGauge1" runat="server" Height="550" Width="500" LabelColor="#8c8c8c" EnableAnimation="false"&gt;
+<Border Width="0.5"/>
 
-&lt;Scales&gt;
+<Position x="50" Y="18"/>
 
-&lt;ej:Scales Type="Thermometer" BackgroundColor="transparent" Minimum="-10" Maximum="110" MinorIntervalValue="5" Width="20" Length="355"&gt;
+<%--Add the pointers customization code here-- %>
 
-&lt;Border Width="0.5"/&gt;
+<MarkerPointerCollection>
 
-&lt;Position x="50" Y="18"/&gt;
+<ej:MarkerPointers MarkerOpacity="0">
 
-&lt;%--Add the pointers customization code here-- %&gt;
+</ej:MarkerPointers>
 
-&lt;MarkerPointerCollection&gt;
+</MarkerPointerCollection>
 
-&lt;ej:MarkerPointers MarkerOpacity="0"&gt;
-
-&lt;/ej:MarkerPointers&gt;
-
-&lt;/MarkerPointerCollection&gt;
-
-&lt;BarPointerCollection&gt;
+<BarPointerCollection>
 
 <ej:BarPointers BarPointerdistanceFromScale="-0.5"
 
@@ -167,300 +155,287 @@ BarPointerValue="37" Width="10"
 
 BarPointerBackgroundColor="#DB3738">
 
-&lt;/ej:BarPointers&gt;
+</ej:BarPointers>
 
-&lt;/BarPointerCollection&gt;
+</BarPointerCollection>
 
-&lt;%--Add the labels customization code here-- %&gt;
+<%--Add the labels customization code here-- %>
 
-&lt;%--Add the ticks customization code here-- %&gt;
+<%--Add the ticks customization code here-- %>
 
-&lt;%--Add the custom labels customization code here-- %&gt;
+<%--Add the custom labels customization code here-- %>
 
-&lt;/ej:Scales&gt;
+</ej:Scales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:LinearGauge&gt;
+</ej:LinearGauge>
 
-![](Getting-Started_images/Getting-Started_img6.png)
-{:.image }
+{% endhighlight %}
+
 Run the above code to get the following output.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![](Getting-Started_images/Getting-Started_img6.png)
 
 _Linear gauge with pointers_
 
-Add Label Customization
+
+
+### Add Label Customization
 
 * For thermometer, you can display the label value in two sides, to get temperature in different scales. For that you can add two label values in an array.
 * To display the value around the scales, labels are used. You can customize the label placement, font (including its style and family) and distance from scale.
 
 
+{% highlight html %}
 
-[ASPX]
+<ej:LinearGauge ID="LinearGauge1" runat="server" Height="550" Width="500" LabelColor="#8c8c8c" EnableAnimation="false">
 
+<Scales>
 
+<ej:Scales Type="Thermometer" BackgroundColor="transparent" Minimum="-10" Maximum="110" MinorIntervalValue="5" Width="20" Length="355">
 
-&lt;ej:LinearGauge ID="LinearGauge1" runat="server" Height="550" Width="500" LabelColor="#8c8c8c" EnableAnimation="false"&gt;
+<Border Width="0.5"/>
 
-&lt;Scales&gt;
+<Position x="50" Y="18"/>
 
-&lt;ej:Scales Type="Thermometer" BackgroundColor="transparent" Minimum="-10" Maximum="110" MinorIntervalValue="5" Width="20" Length="355"&gt;
+<%--Add the pointers customization code here-- %>
 
-&lt;Border Width="0.5"/&gt;
+<%--Add the labels customization code here-- %>
 
-&lt;Position x="50" Y="18"/&gt;
+<LabelCollection>
 
-&lt;%--Add the pointers customization code here-- %&gt;
+<ej:Labels>
 
-&lt;%--Add the labels customization code here-- %&gt;
-
-&lt;LabelCollection&gt;
-
-&lt;ej:Labels&gt;
-
-&lt;DistanceFromScale X="-13"&gt;&lt;/DistanceFromScale&gt;
+<DistanceFromScale X="-13"></DistanceFromScale>
 
 <Font FontFamily="Segoe UI" FontStyle="Normal"
 
-Size="11px">&lt;/Font&gt;
+Size="11px"></Font>
 
-&lt;/ej:Labels&gt;
+</ej:Labels>
 
-&lt;ej:Labels Placement="Far"&gt;
+<ej:Labels Placement="Far">
 
-&lt;DistanceFromScale X="10"&gt;&lt;/DistanceFromScale&gt;
+<DistanceFromScale X="10"></DistanceFromScale>
 
-&lt;/ej:Labels&gt;
+</ej:Labels>
 
-&lt;/LabelCollection&gt;
+</LabelCollection>
 
-&lt;%--Add the ticks customization code here-- %&gt;
+<%--Add the ticks customization code here-- %>
 
-&lt;%--Add the custom labels customization code here-- %&gt;
+<%--Add the custom labels customization code here-- %>
 
-&lt;/ej:Scales&gt;
+</ej:Scales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:LinearGauge&gt;
+</ej:LinearGauge>
+
+{% endhighlight %}
+
+
+
+
 
 Run the above code to get the following output.
 
 ![](Getting-Started_images/Getting-Started_img7.png)
-{:.image }
 
 
-Add Ticks Details
+
+### Add Ticks Details
 
 * Tick style has two values called major interval and minor interval. You can set major ticks with width and height greater than Minor ticks and you can give TickColor for better visibility in light backgrounds.
 * Here four tick details are used for both sides having minor and major ticks.To display the tick value add the following code example. 
 
 
 
-[ASPX]
+{% highlight html %}
 
+<ej:LinearGauge ID="LinearGauge1" runat="server" Height="550" Width="500" LabelColor="#8c8c8c" EnableAnimation="false">
 
+<Scales>
 
-&lt;ej:LinearGauge ID="LinearGauge1" runat="server" Height="550" Width="500" LabelColor="#8c8c8c" EnableAnimation="false"&gt;
+<ej:Scales Type="Thermometer" BackgroundColor="transparent" Minimum="-10" Maximum="110" MinorIntervalValue="5" Width="20" Length="355">
 
-&lt;Scales&gt;
+<Border Width="0.5"/>
 
-&lt;ej:Scales Type="Thermometer" BackgroundColor="transparent" Minimum="-10" Maximum="110" MinorIntervalValue="5" Width="20" Length="355"&gt;
+<Position x="50" Y="18"/>
 
-&lt;Border Width="0.5"/&gt;
+<%--Add the pointers customization code here-- %>
 
-&lt;Position x="50" Y="18"/&gt;
+<%--Add the labels customization code here-- %>
 
-&lt;%--Add the pointers customization code here-- %&gt;
+<%--Add the ticks customization code here-- %>
 
-&lt;%--Add the labels customization code here-- %&gt;
-
-&lt;%--Add the ticks customization code here-- %&gt;
-
-&lt;TickCollection&gt;
+<TickCollection>
 
 <ej:LinearTicks Type="MajorInterval" Height="8"
 
 Width="1" Color="#8c8c8c">
 
-&lt;DistanceFromScale Y="-4"&gt;&lt;/DistanceFromScale&gt;
+<DistanceFromScale Y="-4"></DistanceFromScale>
 
-&lt;/ej:LinearTicks&gt;
+</ej:LinearTicks>
 
 <ej:LinearTicks Type="MinorInterval" Height="4"
 
 Width="1" Color="#8c8c8c">
 
-&lt;DistanceFromScale Y="-4"&gt;&lt;/DistanceFromScale&gt;
+<DistanceFromScale Y="-4"></DistanceFromScale>
 
-&lt;/ej:LinearTicks&gt;
+</ej:LinearTicks>
 
 <ej:LinearTicks Placement="Far" Type="MajorInterval"
 
 Height="8" Width="1" Color="#8c8c8c">
 
-&lt;DistanceFromScale Y="-4"&gt;&lt;/DistanceFromScale&gt;
+<DistanceFromScale Y="-4"></DistanceFromScale>
 
-&lt;/ej:LinearTicks&gt;
+</ej:LinearTicks>
 
 <ej:LinearTicks Placement="Far" Type="MinorInterval"
 
 Height="4" Width="1" Color="#8c8c8c">
 
-&lt;DistanceFromScale Y="-4"&gt;&lt;/DistanceFromScale&gt;
+<DistanceFromScale Y="-4"></DistanceFromScale>
 
-&lt;/ej:LinearTicks&gt;
+</ej:LinearTicks>
 
-&lt;/TickCollection&gt;
+</TickCollection>
 
-&lt;%--Add the custom labels customization code here-- %&gt;
+<%--Add the custom labels customization code here-- %>
 
-&lt;/ej:Scales&gt;
+</ej:Scales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:LinearGauge&gt;
+</ej:LinearGauge>
+
+{% endhighlight %}
+
+
+
+
 
 Run the above code to get the following output.
 
 ![](Getting-Started_images/Getting-Started_img8.png)
-{:.image }
 
 
-Add Custom Label Details
+
+### Add Custom Label Details
 
 * Custom labels are used to specify the texts in the gauge .It can be customized through various properties.
 * In order to show the custom labels, change the showIndicators property to ‘true’.Here you can use custom text to display three range descriptions
 
 
 
-[View]
+{% highlight html %}
 
+<ej:LinearGauge ID="LinearGauge1" runat="server" Height="550" Width="500" LabelColor="#8c8c8c" EnableAnimation="false">
 
+<Scales>
 
-[ASPX]
+<ej:Scales Type="Thermometer" BackgroundColor="transparent"  ShowCustomLabels="true" Minimum="-10" Maximum="110" MinorIntervalValue="5" Width="20" Length="355">
 
+<Border Width="0.5"/>
 
+<Position x="50" Y="18"/>
 
-&lt;ej:LinearGauge ID="LinearGauge1" runat="server" Height="550" Width="500" LabelColor="#8c8c8c" EnableAnimation="false"&gt;
+<%--Add the pointers customization code here-- %>
 
-&lt;Scales&gt;
+<%--Add the labels customization code here-- %>
 
-&lt;ej:Scales Type="Thermometer" BackgroundColor="transparent"  ShowCustomLabels="true" Minimum="-10" Maximum="110" MinorIntervalValue="5" Width="20" Length="355"&gt;
+<%--Add the ticks customization code here-- %>
 
-&lt;Border Width="0.5"/&gt;
+<%--Add the custom labels customization code here-- %>
 
-&lt;Position x="50" Y="18"/&gt;
+<CustomLabelCollection>
 
-&lt;%--Add the pointers customization code here-- %&gt;
+<ej:CustomLabel Value="(° C)" Color="#666666" >
 
-&lt;%--Add the labels customization code here-- %&gt;
-
-&lt;%--Add the ticks customization code here-- %&gt;
-
-&lt;%--Add the custom labels customization code here-- %&gt;
-
-&lt;CustomLabelCollection&gt;
-
-&lt;ej:CustomLabel Value="(° C)" Color="#666666" &gt;
-
-&lt;Position X="44" Y="78"/&gt;
+<Position X="44" Y="78"/>
 
 <Font FontFamily="Segoe UI" FontStyle="Bold"
 
-Size="12px">&lt;/Font&gt;
+Size="12px"></Font>
 
-&lt;/ej:CustomLabel&gt;
+</ej:CustomLabel>
 
-&lt;ej:CustomLabel Value="(° F)" Color="#666666" &gt;
+<ej:CustomLabel Value="(° F)" Color="#666666" >
 
-&lt;Position X="56" Y="78"/&gt;
-
-<Font FontFamily="Segoe UI" FontStyle="Bold"
-
-Size="12px">&lt;/Font&gt;
-
-&lt;/ej:CustomLabel&gt;
-
-&lt;ej:CustomLabel Color="#666666" &gt;
-
-&lt;Position X="51" Y="90"/&gt;
+<Position X="56" Y="78"/>
 
 <Font FontFamily="Segoe UI" FontStyle="Bold"
 
-Size="13px">&lt;/Font&gt;
+Size="12px"></Font>
 
-&lt;/ej:CustomLabel&gt;
+</ej:CustomLabel>
 
-&lt;/CustomLabelCollection&gt;
+<ej:CustomLabel Color="#666666" >
 
-&lt;/ej:Scales&gt;
+<Position X="51" Y="90"/>
 
-&lt;/Scales&gt;
+<Font FontFamily="Segoe UI" FontStyle="Bold"
 
-&lt;/ej:LinearGauge&gt;
+Size="13px"></Font>
+
+</ej:CustomLabel>
+
+</CustomLabelCollection>
+
+</ej:Scales>
+
+</Scales>
+
+</ej:LinearGauge>
+
+{% endhighlight %}
+
+
+
+
 
 Run the above code to get the following output.
 
 ![](Getting-Started_images/Getting-Started_img9.png)
-{:.image }
 
 
-Change scale Degree to Fahrenheit
+
+### Change scale Degree to Fahrenheit
 
 Add the function that convert the temperature in degree to Fahrenheit in the label, with an index value of 1.
 
-[ASPX]
+{% highlight html %}
 
+<ej:LinearGauge ID="LinearGauge1" runat="server" Height="550" Width="500" LabelColor="#8c8c8c" EnableAnimation="false" DrawLabels="DrawLabel" >
 
+<Scales>
 
-&lt;ej:LinearGauge ID="LinearGauge1" runat="server" Height="550" Width="500" LabelColor="#8c8c8c" EnableAnimation="false" DrawLabels="DrawLabel" &gt;
+<ej:Scales Type="Thermometer" BackgroundColor="transparent" Minimum="-10" Maximum="110" MinorIntervalValue="5" Width="20" Length="355">
 
-&lt;Scales&gt;
+<Border Width="0.5"/>
 
-&lt;ej:Scales Type="Thermometer" BackgroundColor="transparent" Minimum="-10" Maximum="110" MinorIntervalValue="5" Width="20" Length="355"&gt;
+<Position x="50" Y="18"/>
 
-&lt;Border Width="0.5"/&gt;
+<%--Add the pointers customization code here-- %>
 
-&lt;Position x="50" Y="18"/&gt;
+<%--Add the labels customization code here-- %>
 
-&lt;%--Add the pointers customization code here-- %&gt;
+<%--Add the ticks customization code here-- %>
 
-&lt;%--Add the labels customization code here-- %&gt;
+<%--Add the custom labels customization code here-- %>
 
-&lt;%--Add the ticks customization code here-- %&gt;
+</ej:Scales>
 
-&lt;%--Add the custom labels customization code here-- %&gt;
+</Scales>
 
-&lt;/ej:Scales&gt;
+</ej:LinearGauge>
 
-&lt;/Scales&gt;
-
-&lt;/ej:LinearGauge&gt;
-
-&lt;script&gt;
+<script>
 
 function DrawLabel(args) {
 
@@ -474,49 +449,51 @@ args.style.font = "Normal 10px Segoe UI";
 
 }
 
-&lt;/script&gt;
+</script>
+
+{% endhighlight %}
+
+
+
+
 
 Run the above code to get the following output.
 
 ![](Getting-Started_images/Getting-Started_img10.png)
-{:.image }
 
 
-Add Custom label for Current Value
+
+### Add Custom label for Current Value
 
 Add the function that displays the current temperature value in the custom label.
 
+{% highlight html %}
 
+<ej:LinearGauge ID="LinearGauge1" runat="server" Height="550" Width="500" LabelColor="#8c8c8c" EnableAnimation="false" DrawCustomLabel="DrawCustomLabel" >
 
-[ASPX]
+<Scales>
 
+<ej:Scales Type="Thermometer" BackgroundColor="transparent" Minimum="-10" Maximum="110" MinorIntervalValue="5" Width="20" Length="355">
 
+<Border Width="0.5"/>
 
-&lt;ej:LinearGauge ID="LinearGauge1" runat="server" Height="550" Width="500" LabelColor="#8c8c8c" EnableAnimation="false" DrawCustomLabel="DrawCustomLabel" &gt;
+<Position x="50" Y="18"/>
 
-&lt;Scales&gt;
+<%--Add the pointers customization code here-- %>
 
-&lt;ej:Scales Type="Thermometer" BackgroundColor="transparent" Minimum="-10" Maximum="110" MinorIntervalValue="5" Width="20" Length="355"&gt;
+<%--Add the labels customization code here-- %>
 
-&lt;Border Width="0.5"/&gt;
+<%--Add the ticks customization code here-- %>
 
-&lt;Position x="50" Y="18"/&gt;
+<%--Add the custom labels customization code here-- %>
 
-&lt;%--Add the pointers customization code here-- %&gt;
+</ej:Scales>
 
-&lt;%--Add the labels customization code here-- %&gt;
+</Scales>
 
-&lt;%--Add the ticks customization code here-- %&gt;
+</ej:LinearGauge>
 
-&lt;%--Add the custom labels customization code here-- %&gt;
-
-&lt;/ej:Scales&gt;
-
-&lt;/Scales&gt;
-
-&lt;/ej:LinearGauge&gt;
-
-&lt;script&gt;
+<script>
 
 function DrawCustomLabel(args) {
 
@@ -532,7 +509,7 @@ args.style.textValue = "Very Cold Weather" + "(" + fahValue.toFixed(1) + "° F)"
 
 }
 
-else if ((temp > -10 && temp &lt; 0) || (temp &gt; 0 && temp < 15)) {
+else if ((temp > -10 && temp < 0) || (temp > 0 && temp < 15)) {
 
 args.style.textValue = "Cool Weather" + " (" + fahValue.toFixed(1) + "° F)";
 
@@ -584,8 +561,10 @@ args.style.textValue = "Boiling point of Water" + " (" + fahValue.toFixed(1) + "
 
 }
 
-&lt;/script&gt;
+</script>
 
+
+{% endhighlight %}
 
 
 The final output is as follows
@@ -593,6 +572,6 @@ The final output is as follows
 
 
 ![](Getting-Started_images/Getting-Started_img11.png)
-{:.image }
+
 
 

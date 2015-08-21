@@ -13,17 +13,7 @@ TreeMap control supports Data Binding and it can be achieved using DataSource pr
 
 The DataSource property accepts the collection values as input. For example, you can provide the list of objects as input. The following code illustrates you on how to bind a flat collection as datasource for TreeMap.
 
-
-
-
-
-
-{% highlight html %} 
-
 {% highlight C# %} 
-[ASP]
-
-[ASPX.CS]
 
 public partial class treemap1 : Page
 
@@ -95,14 +85,14 @@ public class TreeMapPopulationData
 
     }
 
-[ASPX]
 
  {% endhighlight %}
+ 
+ {% highlight html %}
 
 <ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth">
 
 </ej:Treemap>
-
 
 {% endhighlight %}
 

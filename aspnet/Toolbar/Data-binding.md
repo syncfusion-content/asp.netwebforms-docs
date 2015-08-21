@@ -17,10 +17,10 @@ The following sub-properties helps to bind either the local/remote data to the 
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Value Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Value Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 DataSource</td><td>
@@ -96,21 +96,13 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 {% highlight html %}
 
-
-
     <ej:Toolbar  ID="toolbarcontent"  runat="server" Width="300px" DataIdField="Id" DataTooltipTextField="Tooltip" DataSpriteCssClassField="Css"></ej:Toolbar >
-
-
-
-
 
 {% endhighlight %}
 
 Define local DataSource elements by using the Key and Text fields in code behind and map the list data to th e DataSource property
 
 {% highlight c# %}
-
-
 
 public class ToolData
 
@@ -194,8 +186,6 @@ Refer to the following code example to render the Toolbar Control
 
 {% highlight css %}
 
-
-
 <style type="text/css">
 
     .e-tooltxt .ToolbarItems {
@@ -209,7 +199,6 @@ Refer to the following code example to render the Toolbar Control
         Width: 22px;
 
     }
-
 
 
     .ToolbarItems.LeftAlign_tool {
@@ -276,16 +265,11 @@ Refer to the following code example to render the Toolbar Control
 
 </style>
 
-
-
 {% endhighlight %}
 
 The following screenshot displays the output of the above code.
 
 ![](Data-binding_images/Data-binding_img1.png) 
-
-
-
 
 ## Remote Data
 
@@ -297,19 +281,11 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 {% highlight html %}
 
-
-
 <ej:Toolbar  ID="toolbarcontent" runat="server" Width="340px" Orientation="Horizontal" DataTextField="CustomerID" Query="ej.Query().from('Orders').take(6)"></ej:Toolbar >
-
-
 
 {% endhighlight %}
 
-
-
 {% highlight c# %}
-
-
 
 protected void Page_Load(object sender, EventArgs e)
 
@@ -318,8 +294,6 @@ protected void Page_Load(object sender, EventArgs e)
  this.toolbarcontent.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/";
 
 }
-
-
 
 {% endhighlight %}
 
@@ -337,8 +311,6 @@ SqlDataSource is designed to work with SQL Server databases. It uses the SQL Ser
 
 ![C:/Users/jeganprakash/Desktop/IMG_22092014_162354.png](Data-binding_images/Data-binding_img3.png) 
 
-
-
 Refer to the following code example to bind Sql data in the Toolbar.
 
 Add the following code example to the corresponding ASPX page to render the Toolbar Control
@@ -354,16 +326,11 @@ Add the following code example to the corresponding ASPX page to render the Tool
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\TreeEntity.mdf;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT * FROM [ToolBarItems]"></asp:SqlDataSource>
 
 
-
-
-
 {% endhighlight %}
 
 
 
 The following screenshot displays the output of the above code.
-
-
 
 ![](Data-binding_images/Data-binding_img4.png)
 
@@ -378,15 +345,11 @@ Add the following code example to the corresponding ASPX page to render the Tool
 {% highlight html %}
 
 
-
 <%--Refer Local data sections for styles--%>
 
 <ej:Toolbar ID="toolbarcontent" runat="server" Width="300px" DataSourceID="ObjectDataSource1" DataTooltipTextField="Tooltip" DataIdField="Id" DataSpriteCssClassField="Css"></ej:Toolbar>
 
-        <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetToolItems" TypeName="ToolData"></asp:ObjectDataSource>
-
-
-
+       <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetToolItems" TypeName="ToolData"></asp:ObjectDataSource>
 
 
 {% endhighlight %}
@@ -395,16 +358,9 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 {% highlight c# %}
 
-
-
-[Serializable]
-
 public class ToolData
 
 {
-
-
-
     public ToolData(string _id, string _css, string _tip)
 
     {
@@ -424,10 +380,7 @@ public class ToolData
 
 
     }
-
-
-
-    [Browsable(true)]
+    
 
     public string Id
 
@@ -438,10 +391,7 @@ public class ToolData
         set;
 
     }
-
-
-
-    [Browsable(true)]
+    
 
     public string Css
 
@@ -452,10 +402,6 @@ public class ToolData
         set;
 
     }
-
-
-
-    [Browsable(true)]
 
     public string Tooltip
 
@@ -497,8 +443,6 @@ return data;
 
 }
 
-
-
 {% endhighlight %}
 
 
@@ -517,8 +461,6 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 {% highlight html %}
 
-
-
 <%--Refer Local data sections for styles--%>
 
 <ej:Toolbar  ID="toolbarcontent" runat="server" Width="300px" DataIdField="Id" DataSpriteCssClassField="Sprite" DataTooltipTextField="Tooltip" DataMember="RootItem" DataSourceID="XmlDataSource1"></ej:Toolbar >
@@ -526,13 +468,11 @@ Add the following code example to the corresponding ASPX page to render the Tool
 <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/App_Data/XMLTool.xml"></asp:XmlDataSource >
 
 
-
 {% endhighlight %}
 
 
 
 {% highlight xml %}
-
 
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -613,21 +553,10 @@ The LinqDataSource is used to bind the Toolbar data via Linq to Sql. The propert
 
 <ej:Toolbar ID="toolbarcontent" runat="server" Orientation="Horizontal" DataIdField="Id" DataSpriteCssClassField="IconCss" DataTooltipTextField="ToolTip" DataSourceID="LinqDataSource1" Width="600px"></ej:Toolbar>
 
-
-
 <asp:LinqDataSource ID="LinqDataSource1" runat="server" ContextTypeName=" DataClasses1DataContext" EntityTypeName="" TableName="ToolBarItems"> </asp:LinqDataSource>
-
-
-
-
-
 
 
 {% endhighlight %}
 
 
-
-![](Data-binding_images/Data-binding_img7.png) |
-
-
-
+![](Data-binding_images/Data-binding_img7.png)

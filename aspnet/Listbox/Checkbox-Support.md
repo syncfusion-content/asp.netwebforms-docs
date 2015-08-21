@@ -13,7 +13,7 @@ documentation: ug
 
 You can enable the checkbox in the ListBox with this property. The data type of ShowCheckbox value is Boolean type. It maintains multiple selections and gets the checked items on its ListBox client side events.  
 
-Defining the Checkbox support
+### Defining the Checkbox support
 
 The following steps explain you the configuration of checkbox options in ListBox.
 
@@ -31,10 +31,6 @@ In an ASPX page, add an element to configure ListBox.
     <ej:listbox id="listboxsample" DataTextField="Name" ShowCheckbox="true" runat="server" Width="240"></ej:listbox>
 
 </div>
-
-
-
-
 
 {% endhighlight %}
 
@@ -99,11 +95,7 @@ protected void Page_Load(object sender, EventArgs e)
             public string Name;
 
         }
-
-
-
-
-
+		
 {% endhighlight %}
 
 
@@ -112,7 +104,7 @@ Output of the above steps.
 
 
 
- ![C:/Users/Rajaveni/Desktop/docs/UG images/checkbox.PNG](Checkbox-Support_images/Checkbox-Support_img1.png)
+ ![](Checkbox-Support_images/Checkbox-Support_img1.png)
 
 
 
@@ -135,10 +127,6 @@ In an ASPX page, add an element to configure ListBox.
 
 </div>
 
-
-
-
-
 {% endhighlight %}
 
 
@@ -202,12 +190,6 @@ protected void Page_Load(object sender, EventArgs e)
             public string Name;
 
         }
-
-
-
-
-
-
 
 {% endhighlight %}
 

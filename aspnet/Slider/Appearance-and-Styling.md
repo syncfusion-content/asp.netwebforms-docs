@@ -9,7 +9,7 @@ documentation: ug
 
 ## Appearance and Styling
 
-### Theme
+## Theme
 
 Slider control looks sleek and enriched with good UI appearance. It is included with both metro (flat) theme and gradient theme support. Totally 13 in-built themes are provided including six flat themes and six gradient themes. The themes include three color variations such as Azure, Lime and Saffron. The themes supported by the Slider control are as follows,
 
@@ -35,67 +35,35 @@ In an ASPX page, specify the desired ej.controls.all.min.css file to load the
 
 {% highlight html %}
 
-
-
 <head>
-
-
 
     <title>Slider</title>
 
-
-
     <!--Flat-Lime theme-->
-
-
 
     <link href="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/flat-lime-dark/ ej.controls.all.min.css " rel="stylesheet" />
 
-
-
     <!--scripts-->
-
-
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script>
 
-
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js" type="text/javascript"> </script>
-
-
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
 
-
-
     <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/ej.web.all.min.js" type="text/javascript"></script>
-
-
 
 </head>
 
-
-
 {% endhighlight %}
-
-
 
 In an ASPX page, define the Slider control with “Default” and “Range”.
 
 {% highlight html %}
 
-
-
 <ej:Slider ID="BasicSlider" runat="server" Width="500" Value="60" MinValue="40" MaxValue="80" ShowScale="true" SmallStep="5" LargeStep="20" ></ej:Slider>
 
-
-
 <ej:Slider ID="RangeSlider" runat="server" Width="500" Values="10,90" ShowScale="true" SliderType="Range" SmallStep="5" LargeStep="20"></ej:Slider>
-
-
-
-
 
 {% endhighlight %}
 
@@ -103,19 +71,19 @@ In an ASPX page, define the Slider control with “Default” and “Range”.
 
 The following screenshot displays the output of the above code example.
 
-Default Slider
+#### Default Slider
 
  ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 
 
-Range Slider
+#### Range Slider
 
  ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 
 
-### Css Class
+## Css Class
 
 To display the Slider control in different styles based on the appearance of your application, use CssClass property that applies custom theme for the Slider. Specify a class name as the value for CssClass property. The specified class is added to the wrapper of the Slider control. Now, you can easily override the styles of the Slider control by accessing the styles from the root level by using the cssclass specified.
 
@@ -123,23 +91,14 @@ In an ASPX page, define the Slider control and configure the Slider with custom 
 
 {% highlight html %}
 
-
-
 <ej:Slider ID="RangeSlider" runat="server" Width="500" Values="25,75" CssClass="purple" SliderType="Range"></ej:Slider>
-
-
-
-
 
 {% endhighlight %}
 
 
-
-Define CSS class for customizing the Slider.
+### Define CSS class for customizing the Slider.
 
 {% highlight css %}
-
-
 
    .purple.e-slider.e-control {
 
@@ -221,21 +180,20 @@ The following screenshot displays the output of the above code example.
 
 
 
-### Show Tooltip
+## Show Tooltip
 
 Slider displays the tooltip to indicate the current value when you click on the Slider handle. By default, Slider displays the tooltip. By using the ShowTooltip option, you can enable or disable the Tooltip. Data type of this property is Boolean.
 
 In an ASPX page, define the Slider control and set the ShowSmallTicks property to false to disable the tooltip in Slider. 
 
-
+{% highlight html %}
 
 <ej:Slider ID="BasicSlider" runat="server" Width="500" Value="60" ShowTooltip="false"> </ej:Slider>
 
+{% endhighlight %}
 
 
-
-
-### Show Rounded Corner
+## Show Rounded Corner
 
 This property is used to display the Slider and its handle with rounded corners. By default ShowRoundedCorner is in disabled state. Data type of this property is Boolean.
 
@@ -243,21 +201,11 @@ In an ASPX page, define the Slider control and set the ShowRoundedCorner proper
 
 {% highlight html %}
 
-
-
 <ej:Slider ID="BasicSlider" runat="server" Width="500" Value="60" ShowRoundedCorner="true"></ej:Slider>
 
-
-
-
-
 {% endhighlight %}
-
 
 
 The following screenshot displays the output of the above code example.
 
  ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
-
-
-

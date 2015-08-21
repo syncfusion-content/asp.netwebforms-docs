@@ -15,70 +15,72 @@ Labels are units that are used to display the values in the scales. You can cust
 
 Label collection can be directly added to the scale object. Refer the following code example to add label collection in a gauge.
 
+{% highlight html %}
 
+<%--For Setting Linear gauge-- %>
 
-[ASP]
+<ej:LinearGauge runat="server" ID="PointerGauge" Value="40" enableAnimation="false">
 
-&lt;%--For Setting Linear gauge-- %&gt;
+<Scales>
 
-&lt;ej:LinearGauge runat="server" ID="PointerGauge" Value="40" enableAnimation="false"&gt;
+<ej:Scales BackgroundColor="transparent" ShowMarkerPointers="false" ShowCustomLabels="true" ShowBarPointers="true">
 
-&lt;Scales&gt;
+<Border Color="transparent" Width="0" />
 
-&lt;ej:Scales BackgroundColor="transparent" ShowMarkerPointers="false" ShowCustomLabels="true" ShowBarPointers="true"&gt;
+<BarPointerCollection>
 
-&lt;Border Color="transparent" Width="0" /&gt;
+<ej:BarPointers Width="10"></ej:BarPointers>
 
-&lt;BarPointerCollection&gt;
+</BarPointerCollection>
 
-&lt;ej:BarPointers Width="10"&gt;&lt;/ej:BarPointers&gt;
+<%-- For Adding Label Collection-- %>
 
-&lt;/BarPointerCollection&gt;
+<%--Setting Label textcolor-- %>
 
-&lt;%-- For Adding Label Collection-- %&gt;
+<LabelCollection>
 
-&lt;%--Setting Label textcolor-- %&gt;
+<ej:Labels TextColor="white"></ej:Labels>
 
-&lt;LabelCollection&gt;
+</LabelCollection>
 
-&lt;ej:Labels TextColor="white"&gt;&lt;/ej:Labels&gt;
+<TickCollection >
 
-&lt;/LabelCollection&gt;
+<ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" >
 
-&lt;TickCollection &gt;
+<DistanceFromScale X="7" Y="0" />
 
-&lt;ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" &gt;
+</ej:LinearTicks>
 
-&lt;DistanceFromScale X="7" Y="0" /&gt;
+<ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" >
 
-&lt;/ej:LinearTicks&gt;
+<DistanceFromScale X="7" Y="0" />
 
-&lt;ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" &gt;
+</ej:LinearTicks>
 
-&lt;DistanceFromScale X="7" Y="0" /&gt;
+</TickCollection>
 
-&lt;/ej:LinearTicks&gt;
+</ej:Scales>
 
-&lt;/TickCollection&gt;
+</Scales>
 
-&lt;/ej:Scales&gt;
+<%-- For setting Frame Object-- %>
 
-&lt;/Scales&gt;
-
-&lt;%-- For setting Frame Object-- %&gt;
-
-&lt;Frame InnerWidth="8" OuterWidth="10" backgroundImageUrl="../Content/images/gauge/Gauge_linear_dark1.png" /&gt;
+<Frame InnerWidth="8" OuterWidth="10" backgroundImageUrl="../Content/images/gauge/Gauge_linear_dark1.png" />
 
 
 
-&lt;/ej:LinearGauge&gt;
+</ej:LinearGauge>
+
+{% endhighlight %}
+
+
 
 
 
 Execute the above code to render the following output.
 
 ![](Labels_images/Labels_img1.png)
-{:.image }
+
 
 
 ## Label Customization
@@ -88,59 +90,57 @@ Appearance
 * Theattribute angle is used to display the labels in the specified angles and color attribute is used to display the labels in specified color. You can adjust the opacity of the label with the property opacity and the values of it lies between 0 and 1.The includeFirstValue is a special property by enabling this property, the first value of the label is not rendered.
 * Font option is also available on the labels. The basic three properties of fonts such as size, family and style can be achieved by size, fontStyle and fontFamily. Labels are two types such as major and minor.Major type labels are for major interval values and minor type labels are for minor interval values.
 
+{% highlight html %}
 
+<%--For Linear gauge rendering-- %>
 
-[ASP]
+<ej:LinearGauge runat="server" ID="PointerGauge" value="40" enableAnimation="false">
 
-&lt;%--For Linear gauge rendering-- %&gt;
+<Scales>
 
-&lt;ej:LinearGauge runat="server" ID="PointerGauge" value="40" enableAnimation="false"&gt;
+<ej:Scales BackgroundColor="transparent" ShowMarkerPointers="false" ShowCustomLabels="true" ShowBarPointers="true">
 
-&lt;Scales&gt;
+<Border Color="transparent" Width="0" />
 
-&lt;ej:Scales BackgroundColor="transparent" ShowMarkerPointers="false" ShowCustomLabels="true" ShowBarPointers="true"&gt;
+<BarPointerCollection>
 
-&lt;Border Color="transparent" Width="0" /&gt;
+<ej:BarPointers Width="10"></ej:BarPointers>
 
-&lt;BarPointerCollection&gt;
+</BarPointerCollection>
 
-&lt;ej:BarPointers Width="10"&gt;&lt;/ej:BarPointers&gt;
+<%--Setting textcolor, angle, opacity and includeFirstValue-- %>
 
-&lt;/BarPointerCollection&gt;
+<LabelCollection>
 
-&lt;%--Setting textcolor, angle, opacity and includeFirstValue-- %&gt;
+<ej:Labels TextColor="red" Angle="10" Opacity="0.5" IncludeFirstValue="false">
 
-&lt;LabelCollection&gt;
+<Font Size="12px" FontFamily="Arial" fontStyle="bold"></Font>
 
-&lt;ej:Labels TextColor="red" Angle="10" Opacity="0.5" IncludeFirstValue="false"&gt;
+</ej:Labels>
 
-&lt;Font Size="12px" FontFamily="Arial" fontStyle="bold"&gt;&lt;/Font&gt;
+</LabelCollection>
 
-&lt;/ej:Labels&gt;
+<TickCollection >
 
-&lt;/LabelCollection&gt;
+<ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" >
 
-&lt;TickCollection &gt;
+<DistanceFromScale X="7" Y="0" />
 
-&lt;ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" &gt;
+</ej:LinearTicks>
 
-&lt;DistanceFromScale X="7" Y="0" /&gt;
+<ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" >
 
-&lt;/ej:LinearTicks&gt;
+<DistanceFromScale X="7" Y="0" />
 
-&lt;ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" &gt;
+</ej:LinearTicks>
 
-&lt;DistanceFromScale X="7" Y="0" /&gt;
+</TickCollection>
 
-&lt;/ej:LinearTicks&gt;
+</ej:Scales>
 
-&lt;/TickCollection&gt;
+</Scales>
 
-&lt;/ej:Scales&gt;
-
-&lt;/Scales&gt;
-
-&lt;%-- For adding frame object-- %&gt;
+<%-- For adding frame object-- %>
 
 
 
@@ -148,7 +148,11 @@ Appearance
 
 BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light.png"/>
 
-&lt;/ej:LinearGauge&gt;
+</ej:LinearGauge>
+
+{% endhighlight %}
+
+
 
 
 
@@ -156,7 +160,7 @@ Execute the above code to render the following output.
 
 
 ![](Labels_images/Labels_img2.png)
-{:.image }
+
 
 
 ## Unit text and Positioning
@@ -164,77 +168,79 @@ Execute the above code to render the following output.
 * The unitText property is used to add some text along with the labels. For example, in speedometer, you need to mention the units in kmph. You can also add the unit text in front of the labels. To achieve this use the enumerable property unitTextPosition. 
 * Labels can be positioned with the help of two properties such as distanceFromScale and placement. distanceFromScale property defines the distance between the scale and labels. Placement property is used to locate the labels with respect to scale either inside the scale or outside the scale or along the scale. It is an enumerable data type.
 
+{% highlight html %}
 
+<%--For Linear Gauge rendering-- %>
 
-[ASP]
+<ej:LinearGauge runat="server" ID="PointerGauge" value="31" Width="600" height="250" enableAnimation="false" Themes="FlatLight" Orientation="Horizontal" labelColor="black" EnableResize="true">
 
-&lt;%--For Linear Gauge rendering-- %&gt;
+<Scales>
 
-&lt;ej:LinearGauge runat="server" ID="PointerGauge" value="31" Width="600" height="250" enableAnimation="false" Themes="FlatLight" Orientation="Horizontal" labelColor="black" EnableResize="true"&gt;
+<ej:Scales Width="5" Direction="Clockwise" Type="RoundedRectangle" MajorIntervalValue="25" MinorIntervalValue="5" BackgroundColor="white" ShowMarkerPointers="false" ShowCustomLabels="true" ShowBarPointers="true">
 
-&lt;Scales&gt;
+<Border Color="#AEC75F" Width="2" />
 
-&lt;ej:Scales Width="5" Direction="Clockwise" Type="RoundedRectangle" MajorIntervalValue="25" MinorIntervalValue="5" BackgroundColor="white" ShowMarkerPointers="false" ShowCustomLabels="true" ShowBarPointers="true"&gt;
+<BarPointerCollection>
 
-&lt;Border Color="#AEC75F" Width="2" /&gt;
+<ej:BarPointers Width="4" BarPointerBackgroundColor="red"></ej:BarPointers>
 
-&lt;BarPointerCollection&gt;
+</BarPointerCollection>
 
-&lt;ej:BarPointers Width="4" BarPointerBackgroundColor="red"&gt;&lt;/ej:BarPointers&gt;
+<%--Setting Label Collection-- %>
 
-&lt;/BarPointerCollection&gt;
+<LabelCollection>
 
-&lt;%--Setting Label Collection-- %&gt;
+<ej:Labels  Angle="90" UnitText="%">
 
-&lt;LabelCollection&gt;
+<DistanceFromScale X="0" Y="60" />
 
-&lt;ej:Labels  Angle="90" UnitText="%"&gt;
+</ej:Labels>
 
-&lt;DistanceFromScale X="0" Y="60" /&gt;
+</LabelCollection>
 
-&lt;/ej:Labels&gt;
+<TickCollection >
 
-&lt;/LabelCollection&gt;
+<ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" >
 
-&lt;TickCollection &gt;
+<DistanceFromScale X="20" Y="0" />
 
-&lt;ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" &gt;
+</ej:LinearTicks>
 
-&lt;DistanceFromScale X="20" Y="0" /&gt;
+<ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" >
 
-&lt;/ej:LinearTicks&gt;
+<DistanceFromScale X="20" Y="0" />
 
-&lt;ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" &gt;
+</ej:LinearTicks>
 
-&lt;DistanceFromScale X="20" Y="0" /&gt;
+</TickCollection>
 
-&lt;/ej:LinearTicks&gt;
+<%-- For setting Custom label collection-- %>
 
-&lt;/TickCollection&gt;
+<CustomLabelCollection>
 
-&lt;%-- For setting Custom label collection-- %&gt;
+<ej:CustomLabel Value="Download in Progress">
 
-&lt;CustomLabelCollection&gt;
+<Position X="49" Y="25" />
 
-&lt;ej:CustomLabel Value="Download in Progress"&gt;
+</ej:CustomLabel>
 
-&lt;Position X="49" Y="25" /&gt;
+</CustomLabelCollection>
 
-&lt;/ej:CustomLabel&gt;
+</ej:Scales>
 
-&lt;/CustomLabelCollection&gt;
+</Scales>
 
-&lt;/ej:Scales&gt;
-
-&lt;/Scales&gt;
-
-&lt;%-- For setting Frame Object-- %&gt;
+<%-- For setting Frame Object-- %>
 
 <Frame InnerWidth="8" OuterWidth="10"
 
 BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light1.png" />
 
-&lt;/ej:LinearGauge&gt;
+</ej:LinearGauge>
+
+{% endhighlight %}
+
+
 
 
 
@@ -242,6 +248,6 @@ Execute the above code to render the following output.
 
 
 ![](Labels_images/Labels_img3.png)
-{:.image }
+
 
 

@@ -16,7 +16,7 @@ In the following code example, in the first and second ListBox, "categoryid" is 
 The "categoryid" value of the selected item in the First Listbox that matches with "categoryid" value in the second Listbox is retreived and the item is loaded.
 
 
-Note: In case the second ListBox is to be disabled, until the first one is selected, you can set enable property as false in second ListBox that enables automatically once the value is selected in first one. 
+> Note: In case the second ListBox is to be disabled, until the first one is selected, you can set enable property as false in second ListBox that enables automatically once the value is selected in first one. 
 
 You can add any number of cascading ListBoxes. For this, create a Datasource with single field value that is common between the two consecutive cascading ListBoxes and cascading is achieved based on that common field.”  
 
@@ -229,21 +229,11 @@ In an ASPX page, add an elementto configure ListBox.
 
     }
 
-
-
-
-
-
-
 {% endhighlight %}
 
+### Configure the styles as follows.
 
-
-Configure the styles as follows.
-
-
-
-[CSS]  
+{% highlight css %}
 
 <style>
 
@@ -257,7 +247,7 @@ Configure the styles as follows.
 
 </style>
 
-
+{% endhighlight %} 
 
 Output of the above steps.
 

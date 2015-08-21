@@ -21,7 +21,7 @@ And each functionality in the context menu option is done by a specific method.F
 
 The following steps explain enabling the ShowCheckbox property for TreeView.
 
-Configure TreeView in the ASPX page as follows.
+### Configure TreeView in the ASPX page as follows.
 
 {% highlight html %}
 
@@ -177,13 +177,9 @@ Configure TreeView in the ASPX page as follows.
 
 </div>
 
-
-
-
-
 {% endhighlight %}
 
-Define the events in the script as follows.
+### Define the events in the script as follows.
 
 {% highlight js %}
 
@@ -245,15 +241,6 @@ Define the events in the script as follows.
 
 </script>
 
-
-
 {% endhighlight %}
 
-
-
 ![](TreeView-with-Context-Menu-Support_images/TreeView-with-Context-Menu-Support_img1.png) 
-
-
-
-
-

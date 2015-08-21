@@ -13,26 +13,51 @@ The following server side event is available in Listbox control.
 
 <table>
 <tr>
-<td>
-Event</td><td>
-Event Description</td><td>
-Event Description</td></tr>
+<th>
+Event</th><th>
+Event Description</th><th>
+Event Description</th></tr>
 <tr>
 <td>
 OnCheckChange</td><td>
 Occurs when CheckBox value is changed.</td><td>
-Event Argument contains the following parameters.e.IsChecked – Status of Listbox Checkbox.e.Text – Text of Listbox Selected item.e.Value – Value of Listbox Selected item.e.SelectedText –Text of Listbox Selected item.e.ItemId – Index Value of Listbox Selected item.e.EventType – Event Namee.Arguments – Contain keys and values for SelectedText and Args.</td></tr>
+Event Argument contains the following parameters.<br/><br/>
+e.IsChecked – Status of Listbox Checkbox.<br/><br/>
+e.Text – Text of Listbox Selected item.<br/><br/>
+e.Value – Value of Listbox Selected item.<br/><br/>
+e.SelectedText –Text of Listbox Selected item.<br/><br/>
+e.ItemId – Index Value of Listbox Selected item.<br/><br/>
+e.EventType – Event Name<br/><br/>
+e.Arguments – Contain keys and values for SelectedText and Args.<br/> 
+</td></tr>
 <tr>
 <td>
 OnValueSelect</td><td>
 Occurs when Listbox Active Node is changed</td><td>
-Event Argument contains the following parameters.e.IsChecked – Status of Listbox Checkbox.e.Text – Text of Listbox Selected item.e.Value – Value of Listbox Selected item.e.SelectedText –Text of Listbox Selected item.e.ItemId – Index Value of Listbox Selected item.e.EventType – Event Namee.Arguments – Contain keys and values for SelectedText and Args.</td></tr>
+Event Argument contains the following parameters.<br/><br/>
+e.IsChecked – Status of Listbox Checkbox.<br/><br/>
+e.Text – Text of Listbox Selected item.<br/><br/>
+e.Value – Value of Listbox Selected item.<br/><br/>
+e.SelectedText –Text of Listbox Selected item.<br/><br/>
+e.ItemId – Index Value of Listbox Selected item.<br/><br/>
+e.EventType – Event Name<br/><br/>
+e.Arguments – Contain keys and values for SelectedText and Args.<br/>
+</td></tr>
 <tr>
 <td>
 OnIndexChanged</td><td>
 Occurs when selected list item Index is Change.</td><td>
-Event Argument contains the following parameters.e.IsChecked – Status of Listbox Checkbox.e.Text – Text of Listbox Selected item.e.Value – Value of Listbox Selected item.e.SelectedText –Text of Listbox Selected item.e.ItemId – Index Value of Listbox Selected item.e.EventType – Event Namee.Arguments – Contain keys and values for SelectedText and Args.</td></tr>
+Event Argument contains the following parameters.<br/><br/>
+e.IsChecked – Status of Listbox Checkbox.<br/><br/>
+e.Text – Text of Listbox Selected item.<br/><br/>
+e.Value – Value of Listbox Selected item.<br/><br/>
+e.SelectedText –Text of Listbox Selected item.<br/><br/>
+e.ItemId – Index Value of Listbox Selected item.<br/><br/>
+e.EventType – Event Name<br/><br/>
+e.Arguments – Contain keys and values for SelectedText and Args.<br/>
+</td></tr>
 </table>
+
 In an ASPX page, add the Listbox control to configure Listbox events.
 
 {% highlight html %}
@@ -42,12 +67,6 @@ In an ASPX page, add the Listbox control to configure Listbox events.
 <ej:ListBox ID="listboxsample" DataTextField="CustomerID" OnValueSelect="listboxsample_CheckChange" runat="server">
 
 </ej:ListBox>
-
-
-
-
-
-
 
 {% endhighlight %}
 
@@ -89,13 +108,6 @@ The following code example define listboxsample _ValueSelect server side event i
 
         //e.ItemId – Index value of slected node
 
-
-
     }
 
-
-
 {% endhighlight %}
-
-
-

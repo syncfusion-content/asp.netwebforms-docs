@@ -31,25 +31,18 @@ You can customize the labels of the legenditem using LegendLabel property of Ran
 
 
 
-{% highlight html %}
-
-[ASP]
-
-[ASPX.CS]
+{% highlight c# %}
 
   protected void Page_Load(object sender, EventArgs e)
 
-        {
+	{
+		this.treemap.DataSource = TreeMapPopulationData.GetData();
 
-            this.treemap.DataSource = TreeMapPopulationData.GetData();
+	}
 
+{% endhighlight %}
 
-
-        }
-
- [ASPX]
-
-
+{% highlight html %}
 
 <div style="min-height:404px">
 
@@ -58,8 +51,6 @@ You can customize the labels of the legenditem using LegendLabel property of Ran
        <TreeMapLegend IconHeight = "17" IconWidth = "17"></TreeMapLegend>
 
         <LeafItemSettings LabelPath = "Country"></LeafItemSettings>
-
-
 
          <TreeMapRangeColorMappings>
 
@@ -73,55 +64,36 @@ You can customize the labels of the legenditem using LegendLabel property of Ran
 
         </TreeMapRangeColorMappings>
 
-
-
         <Levels>
 
             <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25"></ej:TreeMapLevel>
 
         </Levels>
 
-
-
     </ej:Treemap>
 
     </div>
-
-
+	
 {% endhighlight %}
 
  ![](TreeMap-Elements_images/TreeMap-Elements_img1.png)
-
 
 
 ## Header
 
 You can set headers for each level by setting the ShowHeader propery of the each TreeMap levels. The HeaderHeight property helps to set the height of the header and Group path value determines the header value. You can customize the default header appearance by setting the HeaderTemplate of the TreeMap levels.
 
+{% highlight c# %}
 
+ protected void Page_Load(object sender, EventArgs e)
 
+	{
+		this.treemap.DataSource = TreeMapPopulationData.GetData();
+	}
 
+{% endhighlight %}
 
 {% highlight html %}
-
-
-[ASP]
-
-[ASPX.CS]
-
-  protected void Page_Load(object sender, EventArgs e)
-
-        {
-
-            this.treemap.DataSource = TreeMapPopulationData.GetData();
-
-
-
-        }
-
- [ASPX]
-
-
 
 <div style="min-height:404px">
 
@@ -130,8 +102,6 @@ You can set headers for each level by setting the ShowHeader propery of the each
        <TreeMapLegend IconHeight = "17" IconWidth = "17"></TreeMapLegend>
 
         <LeafItemSettings LabelPath = "Country"></LeafItemSettings>
-
-
 
          <TreeMapRangeColorMappings>
 
@@ -145,15 +115,11 @@ You can set headers for each level by setting the ShowHeader propery of the each
 
         </TreeMapRangeColorMappings>
 
-
-
         <Levels>
 
             <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25"></ej:TreeMapLevel>
 
         </Levels>
-
-
 
     </ej:Treemap>
 
@@ -164,22 +130,12 @@ You can set headers for each level by setting the ShowHeader propery of the each
 
  ![](TreeMap-Elements_images/TreeMap-Elements_img2.png) 
 
-
-
 ## Label
 
 You can also set labels for the leaf nodes by setting the ShowLabels property as true. Group path value is displayed as a label for leaf nodes. You can customize the default label appearance by setting the LabelTemplate of the TreeMap levels.
 
+{% highlight c# %}
 
-
-
-
-
-{% highlight html %}
-
-[ASP]
-
-[ASPX.CS]
 
   protected void Page_Load(object sender, EventArgs e)
 
@@ -191,11 +147,9 @@ You can also set labels for the leaf nodes by setting the ShowLabels property as
 
         }
 
+{% endhighlight %}
 
-
-[ASPX]
-
-
+{% highlight html %}
 
 <div style="min-height:404px">
 
@@ -205,9 +159,7 @@ You can also set labels for the leaf nodes by setting the ShowLabels property as
 
         <LeafItemSettings LabelPath = "Country"></LeafItemSettings>
 
-
-
-         <TreeMapRangeColorMappings>
+		<TreeMapRangeColorMappings>
 
              <ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"></ej:TreeMapRangeColorMapping>
 
@@ -219,25 +171,16 @@ You can also set labels for the leaf nodes by setting the ShowLabels property as
 
         </TreeMapRangeColorMappings>
 
-
-
         <Levels>
 
             <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25"></ej:TreeMapLevel>
 
         </Levels>
 
-
-
     </ej:Treemap>
 
     </div>
-
 	
 {% endhighlight %}
 
-
 ![](TreeMap-Elements_images/TreeMap-Elements_img3.png) 
-
-
-

@@ -13,18 +13,20 @@ The following given server side even is available in the ToggleButton control.
 
 <table>
 <tr>
-<td>
-Event</td><td>
-Event Description</td><td>
-Argument Details</td></tr>
+<th>
+Event</th><th>
+Event Description</th><th>
+Argument Details</th></tr>
 <tr>
 <td>
 OnChange</td><td>
 It is raised when the Toggle Button is clicked.</td><td>
-Event Argument contains the following parameters:e.Status - Status of Togglebutton.
-e.IsChecked - Checked Status of Togglebutton
-e.EventType - Event Name
-e.Arguments - Contain keys and values for Status.
+<br/>
+Event Argument contains the following parameters:<br/><br/>
+e.Status - Status of Togglebutton.<br/><br/>
+e.IsChecked - Checked Status of Togglebutton<br/><br/>
+e.EventType - Event Name<br/><br/>
+e.Arguments - Contain keys and values for Status.<br/>
 </td></tr>
 </table>
 
@@ -37,13 +39,9 @@ e.Arguments - Contain keys and values for Status.
 
 </ej:ToggleButton>
 
-
-
-
-
 {% endhighlight %}
 
-The code Define ToggleButton___Prevent_Change server side event in behind.
+The code Define ToggleButton Prevent Change server side event in behind.
 
 {% highlight c# %}
 
@@ -58,18 +56,6 @@ The code Define ToggleButton___Prevent_Change server side event in behind.
         //e.IsChecked – Checked Status of the Togglebutton
 
         //e.Argument – Contain keys and values for Status
-
-
-
     }
-
-
-
+	
 {% endhighlight %}
-
-
-
-
-
-
-

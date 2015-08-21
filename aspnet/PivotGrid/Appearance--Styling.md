@@ -29,13 +29,11 @@ You can refer to custom CSS in Layout.Master page under shared folder.
 
 </head>
 
+{% endhighlight %}
 
-
-
+{% highlight css %}
 
 /*-----------------------For PivotGrid control definition-----------------*/
-
-
 
 .e-pivotgrid table {
 
@@ -994,8 +992,4 @@ You can refer to custom CSS in Layout.Master page under shared folder.
 {% endhighlight %}
 
 
-
-![C:/Users/Tamilarasu .M/Pictures/document/Customtheme.png](Appearance--Styling_images/Appearance--Styling_img1.png)
-
-
-
+![](Appearance--Styling_images/Appearance--Styling_img1.png)

@@ -15,7 +15,7 @@ This feature supports to change the left-to-right alignment of the ListBox widge
 
 The following steps explains you the configuration of EnableRTL properties in ListBox.
 
-In an ASPX page, add an elementto configure ListBox.
+In an ASPX page, add an element to configure ListBox.
 
 
 {% highlight html %}
@@ -109,7 +109,7 @@ In an ASPX page, add an elementto configure ListBox.
 Output of the above steps.
 
 
- ![C:/Users/Rajaveni/Desktop/docs/UG images/rtl.PNG](RTL-Support_images/RTL-Support_img1.png)
+ ![](RTL-Support_images/RTL-Support_img1.png)
 
 
 

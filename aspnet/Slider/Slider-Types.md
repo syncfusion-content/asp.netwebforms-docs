@@ -41,33 +41,20 @@ In an ASPX page, define the Slider control and configure the SliderType property
 
 {% highlight html %}
 
-
-
 <ej:Slider ID="BasicSlider" runat="server" Width="500" Value="60" SliderType="MinRange"></ej:Slider>
 
-
-
 <ej:Slider ID="RangeSlider" runat="server" Width="500" Values="30,60" SliderType="Range"></ej:Slider>
-
-
-
 
 
 {% endhighlight %}
 
 
-
 The following screenshot displays the output of the above code example.
 
-MinRange
+#### MinRange
 
 ![](Slider-Types_images/Slider-Types_img1.png)
 
-
-
-Range
+#### Range
 
 ![](Slider-Types_images/Slider-Types_img2.png)
-
-
-

@@ -11,71 +11,75 @@ documentation: ug
 
 Linear Gauge has an exporting feature that converts Gauge control into image format and then export in client side. The method API exportImage is used to export the LinearGauge. It has two arguments such as file name and file format to specify the file name and file formats. For exporting refer the following code example.	
 
-[ASP]
+{% highlight html %}
 
-&lt;asp:Button ID="Button1" runat="server" Text="Button" OnClientClick="buttonclickevent()" /&gt;
+<asp:Button ID="Button1" runat="server" Text="Button" OnClientClick="buttonclickevent()" />
 
-&lt;ej:LinearGauge runat="server" ID="CoreExportGauge" Load="loadGaugeTheme" LabelColor="#8c8c8c"&gt;
+<ej:LinearGauge runat="server" ID="CoreExportGauge" Load="loadGaugeTheme" LabelColor="#8c8c8c">
 
-&lt;%-- For setting scales-- %&gt;
+<%-- For setting scales-- %>
 
-&lt;Scales&gt;
+<Scales>
 
-&lt;ej:Scales Width="4" ShowBarPointers="false" ShowRanges="true" Length="310"&gt;
+<ej:Scales Width="4" ShowBarPointers="false" ShowRanges="true" Length="310">
 
-&lt;Border Color="transparent" Width="0"&gt;&lt;/Border&gt;
+<Border Color="transparent" Width="0"></Border>
 
-&lt;Position X="52" Y="50"/&gt;
+<Position X="52" Y="50"/>
 
-&lt;%-- For setting Marker Pointers -- %&gt;
+<%-- For setting Marker Pointers -- %>
 
-&lt;MarkerPointerCollection&gt;
+<MarkerPointerCollection>
 
-&lt;ej:MarkerPointers Width="10" Length="10" Value="60" MarkerBackgroundColor="#4d4d4d"&gt;
+<ej:MarkerPointers Width="10" Length="10" Value="60" MarkerBackgroundColor="#4d4d4d">
 
-&lt;Border Color="#4d4d4d"&gt;&lt;/Border&gt;
+<Border Color="#4d4d4d"></Border>
 
-&lt;/ej:MarkerPointers&gt;
+</ej:MarkerPointers>
 
-&lt;/MarkerPointerCollection&gt;
+</MarkerPointerCollection>
 
-&lt;%-- For setting labels-- %&gt;
+<%-- For setting labels-- %>
 
-&lt;LabelCollection&gt;
+<LabelCollection>
 
-&lt;ej:Labels&gt;&lt;DistanceFromScale X="-13"&gt;&lt;/DistanceFromScale&gt;
+<ej:Labels><DistanceFromScale X="-13"></DistanceFromScale>
 
-&lt;Font FontFamily="Segoe UI" FontStyle="Bold" Size="11px"&gt;&lt;/Font&gt;
+<Font FontFamily="Segoe UI" FontStyle="Bold" Size="11px"></Font>
 
-&lt;/ej:Labels&gt;
+</ej:Labels>
 
-&lt;/LabelCollection&gt;
+</LabelCollection>
 
-&lt;%-- For setting Ticks-- %&gt;
+<%-- For setting Ticks-- %>
 
-&lt;TickCollection&gt;
+<TickCollection>
 
-&lt;ej:LinearTicks Type="MajorInterval" Width="1" Color="#8c8c8c"/&gt;
+<ej:LinearTicks Type="MajorInterval" Width="1" Color="#8c8c8c"/>
 
-&lt;/TickCollection&gt;
+</TickCollection>
 
-&lt;%-- For setting range-- %&gt;
+<%-- For setting range-- %>
 
-&lt;RangeCollection&gt;
+<RangeCollection>
 
-&lt;ej:Ranges StartValue="0" EndValue="50" RangeBackgroundColor="#F6B53F" EndWidth="4" StartWidth="4"&gt;&lt;Border Color="#F6B53F"&gt;&lt;/Border&gt;&lt;/ej:Ranges&gt;
+<ej:Ranges StartValue="0" EndValue="50" RangeBackgroundColor="#F6B53F" EndWidth="4" StartWidth="4"><Border Color="#F6B53F"></Border></ej:Ranges>
 
-&lt;ej:Ranges StartValue="50" EndValue="100" RangeBackgroundColor="#E94649" EndWidth="4" StartWidth="4"&gt;&lt;Border Color="#E94649"&gt;&lt;/Border&gt;&lt;/ej:Ranges&gt;
+<ej:Ranges StartValue="50" EndValue="100" RangeBackgroundColor="#E94649" EndWidth="4" StartWidth="4"><Border Color="#E94649"></Border></ej:Ranges>
 
-&lt;/RangeCollection&gt;
+</RangeCollection>
 
-&lt;/ej:Scales&gt;
+</ej:Scales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:LinearGauge&gt;
+</ej:LinearGauge>
 
-&lt;script type="text/javascript" class="jsScript"&gt;
+{% endhighlight %}
+
+{% highlight js %}
+
+<script type="text/javascript" class="jsScript">
 
 $(function () {
 
@@ -97,15 +101,11 @@ $("#CoreExportGauge").ejLinearGauge("exportImage", FileName, FileFormat);
 
 }
 
-&lt;/script&gt;
+</script>
 
-
-
+{% endhighlight %}
 
 
 Execute the above code to render the following output.
 
 ![](Exporting_images/Exporting_img1.png)
-{:.image }
-
-

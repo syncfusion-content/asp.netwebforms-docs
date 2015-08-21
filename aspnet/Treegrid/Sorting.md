@@ -15,13 +15,7 @@ The TreeGrid control has built-in support for Sorting one or more columns.
 
 TreeGrid allows the items to be sorted in ascending or descending order based on the selected column by enabling the AllowSorting option in TreeGrid control. The following code example shows you how to enable Sorting in TreeGrid control.
 
-
-
-
-
 {% highlight html %}
-
-
 
 <ej:TreeGrid runat="server" ID="TreeGridControlSorting"
 

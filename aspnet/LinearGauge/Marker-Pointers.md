@@ -16,57 +16,61 @@ Marker Pointer value points out the actual value set in the Linear Gauge. You ca
 You can add Marker Pointer collection directly to the scale object. To add pointer collection in a gauge control refer the following code example.  
 
 
-[ASP]
+{% highlight html %}
 
-&lt;%-- For Linear Gauge rendering-- %&gt;
+<%-- For Linear Gauge rendering-- %>
 
-&lt;ej:LinearGauge runat="server" ID="PointerGauge" Value="78" EnableAnimation="false"&gt;
+<ej:LinearGauge runat="server" ID="PointerGauge" Value="78" EnableAnimation="false">
 
-&lt;%-- Adding Scale Collection-- %&gt;
+<%-- Adding Scale Collection-- %>
 
-&lt;Scales&gt;
+<Scales>
 
-&lt;ej:Scales  BackgroundColor="transparent" ShowBarPointers="true"&gt;
+<ej:Scales  BackgroundColor="transparent" ShowBarPointers="true">
 
-&lt;Border Color="transparent" Width="0" /&gt;
+<Border Color="transparent" Width="0" />
 
-&lt;%-- Adding Bar Pointer Collection-- %&gt;
+<%-- Adding Bar Pointer Collection-- %>
 
-&lt;BarPointerCollection&gt;
+<BarPointerCollection>
 
-&lt;ej:BarPointers Width="5" BarPointerBackgroundColor="grey" &gt;&lt;/ej:BarPointers&gt;
+<ej:BarPointers Width="5" BarPointerBackgroundColor="grey" ></ej:BarPointers>
 
-&lt;/BarPointerCollection&gt;
+</BarPointerCollection>
 
-&lt;%-- Adding Marker Pointer Collection -- %&gt;
+<%-- Adding Marker Pointer Collection -- %>
 
-&lt;MarkerPointerCollection&gt;
+<MarkerPointerCollection>
 
-&lt;ej:MarkerPointers Width="10" Length="10" MarkerBackgroundColor="grey" MarkerdistanceFromScale="-12"&gt;&lt;/ej:MarkerPointers&gt;
+<ej:MarkerPointers Width="10" Length="10" MarkerBackgroundColor="grey" MarkerdistanceFromScale="-12"></ej:MarkerPointers>
 
-&lt;/MarkerPointerCollection&gt;
+</MarkerPointerCollection>
 
-&lt;TickCollection &gt;
+<TickCollection >
 
-&lt;ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" &gt;
+<ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" >
 
-&lt;DistanceFromScale X="7" Y="0" /&gt;
+<DistanceFromScale X="7" Y="0" />
 
-&lt;/ej:LinearTicks&gt;
+</ej:LinearTicks>
 
-&lt;ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" &gt;
+<ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" >
 
-&lt;DistanceFromScale X="7" Y="0" /&gt;
+<DistanceFromScale X="7" Y="0" />
 
-&lt;/ej:LinearTicks&gt;
+</ej:LinearTicks>
 
-&lt;/TickCollection&gt;
+</TickCollection>
 
-&lt;/ej:Scales&gt;
+</ej:Scales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;/ej:LinearGauge&gt;
+</ej:LinearGauge>
+
+
+{% endhighlight %}
+
 
 
 
@@ -74,7 +78,7 @@ Execute the above code to render the following output.
 
 
 ![](Marker-Pointers_images/Marker-Pointers_img1.png)
-{:.image }
+
 
 
 ## Adding marker pointer value
@@ -82,80 +86,83 @@ Execute the above code to render the following output.
 The value propertyis the important element in the marker pointer collection which indicates the gauge value. Real purpose of the Linear Gauge is based on the pointer value. You can set the pointer value either directly during rendering the control or it can be achieved by public method.
 
 
+{% highlight html %}
 
-[ASP]
+<%-- For Linear Gauge rendering-- %>
 
-&lt;%-- For Linear Gauge rendering-- %&gt;
+<ej:LinearGauge runat="server" ID="PointerGauge" width="600" height="150" EnableAnimation="false" Orientation="Horizontal" LabelColor="black" EnableResize="true">
 
-&lt;ej:LinearGauge runat="server" ID="PointerGauge" width="600" height="150" EnableAnimation="false" Orientation="Horizontal" LabelColor="black" EnableResize="true"&gt;
+<%-- Adding Scale Collection-- %>
 
-&lt;%-- Adding Scale Collection-- %&gt;
+<Scales>
 
-&lt;Scales&gt;
+<ej:Scales  Direction="Clockwise" Type="RoundedRectangle" BackgroundColor="#AEC75F" ShowBarPointers="true">
 
-&lt;ej:Scales  Direction="Clockwise" Type="RoundedRectangle" BackgroundColor="#AEC75F" ShowBarPointers="true"&gt;
+<Border Color="#AEC75F" Width="30" />
 
-&lt;Border Color="#AEC75F" Width="30" /&gt;
+<BarPointerCollection>
 
-&lt;BarPointerCollection&gt;
+<ej:BarPointers Width="5" BarPointerBackgroundColor="grey" >
 
-&lt;ej:BarPointers Width="5" BarPointerBackgroundColor="grey" &gt;
+</ej:BarPointers>
 
-&lt;/ej:BarPointers&gt;
+</BarPointerCollection>
 
-&lt;/BarPointerCollection&gt;
-
-&lt;%-- Adding Marker Pointer Collection-- %&gt;
-
+<%-- Adding Marker Pointer Collection-- %>
 
 
-&lt;%-- For setting marker pointer value-- %&gt;
 
-&lt;MarkerPointerCollection&gt;
+<%-- For setting marker pointer value-- %>
 
-&lt;ej:MarkerPointers Width="30" Value="67.5" MarkerBackgroundColor="#FE5C09" MarkerdistanceFromScale="20" Placement="near"&gt;&lt;/ej:MarkerPointers&gt;
+<MarkerPointerCollection>
 
-&lt;/MarkerPointerCollection&gt;
+<ej:MarkerPointers Width="30" Value="67.5" MarkerBackgroundColor="#FE5C09" MarkerdistanceFromScale="20" Placement="near"></ej:MarkerPointers>
 
-&lt;%-- For Adding Tick Collection-- %&gt;
+</MarkerPointerCollection>
 
-&lt;TickCollection &gt;
+<%-- For Adding Tick Collection-- %>
 
-&lt;ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" &gt;
+<TickCollection >
 
-&lt;DistanceFromScale X="-1" Y="45" /&gt;
+<ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" >
 
-&lt;/ej:LinearTicks&gt;
+<DistanceFromScale X="-1" Y="45" />
 
-&lt;ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" &gt;
+</ej:LinearTicks>
 
-&lt;DistanceFromScale X="-1" Y="45" /&gt;
+<ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" >
 
-&lt;/ej:LinearTicks&gt;
+<DistanceFromScale X="-1" Y="45" />
 
-&lt;/TickCollection&gt;
+</ej:LinearTicks>
 
-&lt;%-- For Adding Label Collection-- %&gt;
+</TickCollection>
 
-&lt;LabelCollection&gt;
+<%-- For Adding Label Collection-- %>
 
-&lt;ej:Labels Angle="90"&gt;
+<LabelCollection>
 
-&lt;DistanceFromScale X="0" Y="100" /&gt;
+<ej:Labels Angle="90">
 
-&lt;/ej:Labels&gt;
+<DistanceFromScale X="0" Y="100" />
 
-&lt;/LabelCollection&gt;
+</ej:Labels>
 
-&lt;/ej:Scales&gt;
+</LabelCollection>
 
-&lt;/Scales&gt;
+</ej:Scales>
 
-&lt;%-- For Adding Frame Collection -- %&gt;
+</Scales>
 
-&lt;Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light1.png" /&gt;
+<%-- For Adding Frame Collection -- %>
 
-&lt;/ej:LinearGauge&gt;
+<Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light1.png" />
+
+</ej:LinearGauge>
+
+{% endhighlight %}
+
+
 
 
 
@@ -163,7 +170,7 @@ Execute the above code to render the following output.
 
 
 ![](Marker-Pointers_images/Marker-Pointers_img2.png)
-{:.image }
+
 
 
 ## Pointer Styles
@@ -173,77 +180,79 @@ Appearance
 * Based on the value, thepointer points out the label value. You can set the pointer length and width using length and width property respectively. You can also adjust the opacity of the pointer using the opacity property which holds the value between 0 and 1. You can add the gradient effects to the pointer using gradient object. 
 * The marker pointer border is modified with the border object. It contains two border property namely color and width which are used to customize the border color of the scale and border width of the marker pointer. The background color can be customized with attribute backgroundColor.
 
+{% highlight html %}
 
+<%-- For Linear Gauge rendering-- %>
 
-[ASP]
+<ej:LinearGauge runat="server" ID="PointerGauge" width="600" height="150" EnableAnimation="false" Orientation="Horizontal" LabelColor="black" EnableResize="true">
 
-&lt;%-- For Linear Gauge rendering-- %&gt;
+<Scales>
 
-&lt;ej:LinearGauge runat="server" ID="PointerGauge" width="600" height="150" EnableAnimation="false" Orientation="Horizontal" LabelColor="black" EnableResize="true"&gt;
+<ej:Scales  Direction="Clockwise" Type="RoundedRectangle" BackgroundColor="#AEC75F" ShowBarPointers="true">
 
-&lt;Scales&gt;
+<Border Color="#AEC75F" Width="30" />
 
-&lt;ej:Scales  Direction="Clockwise" Type="RoundedRectangle" BackgroundColor="#AEC75F" ShowBarPointers="true"&gt;
+<BarPointerCollection>
 
-&lt;Border Color="#AEC75F" Width="30" /&gt;
+<ej:BarPointers Width="5" BarPointerBackgroundColor="grey" >
 
-&lt;BarPointerCollection&gt;
+</ej:BarPointers>
 
-&lt;ej:BarPointers Width="5" BarPointerBackgroundColor="grey" &gt;
+</BarPointerCollection>
 
-&lt;/ej:BarPointers&gt;
+<%-- For setting Marker pointer length, width, opacity value and background Color-- %>
 
-&lt;/BarPointerCollection&gt;
+<MarkerPointerCollection>
 
-&lt;%-- For setting Marker pointer length, width, opacity value and background Color-- %&gt;
+<ej:MarkerPointers Width="30" Value="67.5" MarkerBackgroundColor="#FCDD34" MarkerdistanceFromScale="20" Placement="near" MarkerOpacity="0.4"></ej:MarkerPointers>
 
-&lt;MarkerPointerCollection&gt;
+</MarkerPointerCollection>
 
-&lt;ej:MarkerPointers Width="30" Value="67.5" MarkerBackgroundColor="#FCDD34" MarkerdistanceFromScale="20" Placement="near" MarkerOpacity="0.4"&gt;&lt;/ej:MarkerPointers&gt;
-
-&lt;/MarkerPointerCollection&gt;
-
-&lt;%-- For Adding Tick Collection-- %&gt;
+<%-- For Adding Tick Collection-- %>
 
 
 
-&lt;TickCollection &gt;
+<TickCollection >
 
-&lt;ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" &gt;
+<ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" >
 
-&lt;DistanceFromScale X="-1" Y="45" /&gt;
+<DistanceFromScale X="-1" Y="45" />
 
-&lt;/ej:LinearTicks&gt;
+</ej:LinearTicks>
 
-&lt;ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" &gt;
+<ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" >
 
-&lt;DistanceFromScale X="-1" Y="45" /&gt;
+<DistanceFromScale X="-1" Y="45" />
 
-&lt;/ej:LinearTicks&gt;
+</ej:LinearTicks>
 
-&lt;/TickCollection&gt;
+</TickCollection>
 
-&lt;%-- For Adding Label Collection-- %&gt;
+<%-- For Adding Label Collection-- %>
 
-&lt;LabelCollection&gt;
+<LabelCollection>
 
-&lt;ej:Labels Angle="90"&gt;
+<ej:Labels Angle="90">
 
-&lt;DistanceFromScale X="0" Y="100" /&gt;
+<DistanceFromScale X="0" Y="100" />
 
-&lt;/ej:Labels&gt;
+</ej:Labels>
 
-&lt;/LabelCollection&gt;
+</LabelCollection>
 
-&lt;/ej:Scales&gt;
+</ej:Scales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;%-- For Adding Frame Object-- %&gt;
+<%-- For Adding Frame Object-- %>
 
-&lt;Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light1.png" /&gt;
+<Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light1.png" />
 
-&lt;/ej:LinearGauge&gt;
+</ej:LinearGauge>
+
+{% endhighlight %}
+
+
 
 
 
@@ -252,7 +261,7 @@ Execute the above code to render the following output.
 
 
 ![](Marker-Pointers_images/Marker-Pointers_img3.png)
-{:.image }
+
 
 
 ## Positioning the pointer
@@ -260,88 +269,90 @@ Execute the above code to render the following output.
 * You can position the Pointer with two properties, distanceFromScale and placement. The distanceFromScale property defines the distance between the scale and pointer. 
 * The Placement property is used to locate the pointer with respect to scale either inside or outside the scale or along the scale. It is an enumerable data type.
 
+{% highlight html %}
+
+<%-- For Linear Gauge rendering-- %>
+
+<ej:LinearGauge runat="server" ID="PointerGauge" width="600" height="150" EnableAnimation="false" Orientation="Horizontal" LabelColor="black" EnableResize="true">
+
+<%-- For Adding Scale Collection-- %>
+
+<Scales>
+
+<ej:Scales  Direction="Clockwise" Type="RoundedRectangle" BackgroundColor="#AEC75F" ShowBarPointers="true">
+
+<Border Color="#AEC75F" Width="30" />
+
+<%-- For Adding Bar Pointer Collection-- %>
+
+<BarPointerCollection>
+
+<ej:BarPointers Width="5" BarPointerBackgroundColor="grey" >
+
+</ej:BarPointers>
+
+</BarPointerCollection>
+
+<%-- For Adding Marker Pointer Collection-- %>
+
+<%-- For setting marker pointer placement and distance from scale-- %>
+
+<MarkerPointerCollection>
+
+<ej:MarkerPointers Width="30" Value="55.5" MarkerBackgroundColor="#01A357" MarkerdistanceFromScale="60" Placement="near" MarkerOpacity="0.4"></ej:MarkerPointers>
+
+</MarkerPointerCollection>
+
+<%-- For Adding Tick Collection-- %>
+
+<TickCollection >
+
+<ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" >
+
+<DistanceFromScale X="-1" Y="45" />
+
+</ej:LinearTicks>
+
+<ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" >
+
+<DistanceFromScale X="-1" Y="45" />
+
+</ej:LinearTicks>
+
+</TickCollection>
+
+<%-- For Adding Label Collection-- %>
+
+<LabelCollection>
+
+<ej:Labels Angle="90">
+
+<DistanceFromScale X="0" Y="100" />
+
+</ej:Labels>
+
+</LabelCollection>
+
+</ej:Scales>
+
+</Scales>
+
+<%-- For Adding Frame Object-- %>
+
+<Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light1.png" />
+
+</ej:LinearGauge>
+
+{% endhighlight %}
 
 
-[ASP]
-
-&lt;%-- For Linear Gauge rendering-- %&gt;
-
-&lt;ej:LinearGauge runat="server" ID="PointerGauge" width="600" height="150" EnableAnimation="false" Orientation="Horizontal" LabelColor="black" EnableResize="true"&gt;
-
-&lt;%-- For Adding Scale Collection-- %&gt;
-
-&lt;Scales&gt;
-
-&lt;ej:Scales  Direction="Clockwise" Type="RoundedRectangle" BackgroundColor="#AEC75F" ShowBarPointers="true"&gt;
-
-&lt;Border Color="#AEC75F" Width="30" /&gt;
-
-&lt;%-- For Adding Bar Pointer Collection-- %&gt;
-
-&lt;BarPointerCollection&gt;
-
-&lt;ej:BarPointers Width="5" BarPointerBackgroundColor="grey" &gt;
-
-&lt;/ej:BarPointers&gt;
-
-&lt;/BarPointerCollection&gt;
-
-&lt;%-- For Adding Marker Pointer Collection-- %&gt;
-
-&lt;%-- For setting marker pointer placement and distance from scale-- %&gt;
-
-&lt;MarkerPointerCollection&gt;
-
-&lt;ej:MarkerPointers Width="30" Value="55.5" MarkerBackgroundColor="#01A357" MarkerdistanceFromScale="60" Placement="near" MarkerOpacity="0.4"&gt;&lt;/ej:MarkerPointers&gt;
-
-&lt;/MarkerPointerCollection&gt;
-
-&lt;%-- For Adding Tick Collection-- %&gt;
-
-&lt;TickCollection &gt;
-
-&lt;ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" &gt;
-
-&lt;DistanceFromScale X="-1" Y="45" /&gt;
-
-&lt;/ej:LinearTicks&gt;
-
-&lt;ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" &gt;
-
-&lt;DistanceFromScale X="-1" Y="45" /&gt;
-
-&lt;/ej:LinearTicks&gt;
-
-&lt;/TickCollection&gt;
-
-&lt;%-- For Adding Label Collection-- %&gt;
-
-&lt;LabelCollection&gt;
-
-&lt;ej:Labels Angle="90"&gt;
-
-&lt;DistanceFromScale X="0" Y="100" /&gt;
-
-&lt;/ej:Labels&gt;
-
-&lt;/LabelCollection&gt;
-
-&lt;/ej:Scales&gt;
-
-&lt;/Scales&gt;
-
-&lt;%-- For Adding Frame Object-- %&gt;
-
-&lt;Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light1.png" /&gt;
-
-&lt;/ej:LinearGauge&gt;
 
 
 
 Execute the above code to render the following output.
 
 ![](Marker-Pointers_images/Marker-Pointers_img4.png)
-{:.image }
+
 
 
 ## Types
@@ -367,95 +378,93 @@ Multiple Marker Pointers
 Linear Gauge can contain multiple pointers on it. You can use any combination and any number of pointers in a gauge. That is, a gauge can contain any number of marker pointer and any number of bar pointers. Refer the following code example containing multiple marker pointers.
 
 
+{% highlight html %}
 
-[ASP]
+<%-- Render Linear Gauge-- %>
 
-&lt;%-- Render Linear Gauge-- %&gt;
+<ej:LinearGauge runat="server" ID="PointerGauge" width="600" height="250" EnableAnimation="false" Orientation="Horizontal" LabelColor="black" EnableResize="true" Themes="FlatLight">
 
-&lt;ej:LinearGauge runat="server" ID="PointerGauge" width="600" height="250" EnableAnimation="false" Orientation="Horizontal" LabelColor="black" EnableResize="true" Themes="FlatLight"&gt;
+<%-- For setting Scale Collection-- %>
 
-&lt;%-- For setting Scale Collection-- %&gt;
+<Scales>
 
-&lt;Scales&gt;
+<ej:Scales  Direction="Clockwise" Type="RoundedRectangle" BackgroundColor="#AEC75F" ShowCustomLabels="true" ShowBarPointers="true">
 
-&lt;ej:Scales  Direction="Clockwise" Type="RoundedRectangle" BackgroundColor="#AEC75F" ShowCustomLabels="true" ShowBarPointers="true"&gt;
+<Border Color="#AEC75F" Width="30" />
 
-&lt;Border Color="#AEC75F" Width="30" /&gt;
+<BarPointerCollection>
 
-&lt;BarPointerCollection&gt;
+<ej:BarPointers Width="5" BarPointerBackgroundColor="grey" >
 
-&lt;ej:BarPointers Width="5" BarPointerBackgroundColor="grey" &gt;
+</ej:BarPointers>
 
-&lt;/ej:BarPointers&gt;
+</BarPointerCollection>
 
-&lt;/BarPointerCollection&gt;
+<%-- For setting marker pointer1 -- %>
 
-&lt;%-- For setting marker pointer1 -- %&gt;
+<MarkerPointerCollection>
 
-&lt;MarkerPointerCollection&gt;
+<ej:MarkerPointers Width="30" Value="32.2" MarkerBackgroundColor="#01A357" MarkerdistanceFromScale="60" Placement="near"></ej:MarkerPointers>
 
-&lt;ej:MarkerPointers Width="30" Value="32.2" MarkerBackgroundColor="#01A357" MarkerdistanceFromScale="60" Placement="near"&gt;&lt;/ej:MarkerPointers&gt;
+<%-- For setting marker pointer2 -- %>
 
-&lt;%-- For setting marker pointer2 -- %&gt;
+<ej:MarkerPointers Width="3" Value="23.7" MarkerBackgroundColor="#90DAFB" Type="circle" MarkerdistanceFromScale="60" Placement="near"></ej:MarkerPointers>
 
-&lt;ej:MarkerPointers Width="3" Value="23.7" MarkerBackgroundColor="#90DAFB" Type="circle" MarkerdistanceFromScale="60" Placement="near"&gt;&lt;/ej:MarkerPointers&gt;
+<%-- For setting marker pointer3-- %>
 
-&lt;%-- For setting marker pointer3-- %&gt;
+<ej:MarkerPointers Width="3" Value="23.7" MarkerBackgroundColor="#90DAFB" Type="star" MarkerdistanceFromScale="60" Placement="near"></ej:MarkerPointers>
 
-&lt;ej:MarkerPointers Width="3" Value="23.7" MarkerBackgroundColor="#90DAFB" Type="star" MarkerdistanceFromScale="60" Placement="near"&gt;&lt;/ej:MarkerPointers&gt;
+</MarkerPointerCollection>
 
-&lt;/MarkerPointerCollection&gt;
+<%-- For setting Tick Collection-- %>
 
-&lt;%-- For setting Tick Collection-- %&gt;
+<TickCollection >
 
-&lt;TickCollection &gt;
+<ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" >
 
-&lt;ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" &gt;
+<DistanceFromScale X="45" Y="0" />
 
-&lt;DistanceFromScale X="45" Y="0" /&gt;
+</ej:LinearTicks>
 
-&lt;/ej:LinearTicks&gt;
+<ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" >
 
-&lt;ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" &gt;
+<DistanceFromScale X="45" Y="0" />
 
-&lt;DistanceFromScale X="45" Y="0" /&gt;
+</ej:LinearTicks>
 
-&lt;/ej:LinearTicks&gt;
+</TickCollection>
 
-&lt;/TickCollection&gt;
+<LabelCollection>
 
-&lt;LabelCollection&gt;
+<ej:Labels Angle="90">
 
-&lt;ej:Labels Angle="90"&gt;
+<DistanceFromScale X="0" Y="100" />
 
-&lt;DistanceFromScale X="0" Y="100" /&gt;
+</ej:Labels>
 
-&lt;/ej:Labels&gt;
+</LabelCollection>
 
-&lt;/LabelCollection&gt;
+<%-- For setting Custom Label Collection-- %>
 
-&lt;%-- For setting Custom Label Collection-- %&gt;
+<CustomLabelCollection>
 
-&lt;CustomLabelCollection&gt;
+<ej:CustomLabel Value="Weather Condition in California">
 
-&lt;ej:CustomLabel Value="Weather Condition in California"&gt;
+<Position X="49" Y="20" />
 
-&lt;Position X="49" Y="20" /&gt;
+</ej:CustomLabel>
 
-&lt;/ej:CustomLabel&gt;
+</CustomLabelCollection>
 
-&lt;/CustomLabelCollection&gt;
+</ej:Scales>
 
-&lt;/ej:Scales&gt;
+</Scales>
 
-&lt;/Scales&gt;
+<Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light1.png" />
 
-&lt;Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light1.png" /&gt;
+</ej:LinearGauge>
 
-&lt;/ej:LinearGauge&gt;
-
-
-
+{% endhighlight %}
 
 
 Execute the above code to render the following output.
@@ -463,6 +472,6 @@ Execute the above code to render the following output.
 
 
 ![](Marker-Pointers_images/Marker-Pointers_img5.png)
-{:.image }
+
 
 

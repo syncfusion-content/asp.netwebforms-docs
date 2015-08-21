@@ -16,78 +16,80 @@ Indicators simply indicates the current status of the pointer. Indicators are in
 * You can enable indicators by setting showIndicators to ‘true’ in scale collection. The height and width property for the indicators are used to specify the area allocated to the indicator for the width and height respectively. 
 * You can use the position collection to position the indicators along X and Y axis. X specifies horizontal position in indicators whereas Y specifies vertical position in indicators. Indicators are of several types such as, dimensions like circle, rectangle, rounded rectangle, text and image. By using the type property it can be applied. For image type imageUrl property is used.
 
+{% highlight html %}
+
+<%--For Linear Gauge rendering-- %>
+
+<ej:LinearGauge runat="server" ID="PointerGauge" Value="78" EnableAnimation="false">
+
+<Scales>
+
+<ej:Scales Minimum="0" Maximum="300" MinorIntervalValue="5" MajorIntervalValue="30" BackgroundColor="transparent" ShowIndicators="true" ShowBarPointers="false">
+
+<Border Color="transparent" Width="0" />
+
+<MarkerPointerCollection>
+
+<ej:MarkerPointers Width="10" length="10" MarkerBackgroundColor="grey" MarkerdistanceFromScale="-4"></ej:MarkerPointers>
+
+</MarkerPointerCollection>
+
+<TickCollection >
+
+<ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" >
+
+<DistanceFromScale X="20" Y="0" />
+
+</ej:LinearTicks>
+
+<ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" >
+
+<DistanceFromScale X="20" Y="0" />
+
+</ej:LinearTicks>
+
+</TickCollection>
+
+<LabelCollection>
+
+<ej:Labels>
+
+<DistanceFromScale X="3" Y="0" />
+
+</ej:Labels>
+
+</LabelCollection>
+
+<%--Setting indicator-- %>
+
+<IndicatorCollection>
+
+<ej:Indicators Height="10" Width="10" type="Circle">
+
+<Position X="49" Y="100" />
+
+</ej:Indicators>
+
+</IndicatorCollection>
+
+</ej:Scales>
+
+</Scales>
+
+<Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light.png" />
+
+</ej:LinearGauge>
+
+{% endhighlight %}
 
 
-[ASP]
-
-&lt;%--For Linear Gauge rendering-- %&gt;
-
-&lt;ej:LinearGauge runat="server" ID="PointerGauge" Value="78" EnableAnimation="false"&gt;
-
-&lt;Scales&gt;
-
-&lt;ej:Scales Minimum="0" Maximum="300" MinorIntervalValue="5" MajorIntervalValue="30" BackgroundColor="transparent" ShowIndicators="true" ShowBarPointers="false"&gt;
-
-&lt;Border Color="transparent" Width="0" /&gt;
-
-&lt;MarkerPointerCollection&gt;
-
-&lt;ej:MarkerPointers Width="10" length="10" MarkerBackgroundColor="grey" MarkerdistanceFromScale="-4"&gt;&lt;/ej:MarkerPointers&gt;
-
-&lt;/MarkerPointerCollection&gt;
-
-&lt;TickCollection &gt;
-
-&lt;ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" &gt;
-
-&lt;DistanceFromScale X="20" Y="0" /&gt;
-
-&lt;/ej:LinearTicks&gt;
-
-&lt;ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" &gt;
-
-&lt;DistanceFromScale X="20" Y="0" /&gt;
-
-&lt;/ej:LinearTicks&gt;
-
-&lt;/TickCollection&gt;
-
-&lt;LabelCollection&gt;
-
-&lt;ej:Labels&gt;
-
-&lt;DistanceFromScale X="3" Y="0" /&gt;
-
-&lt;/ej:Labels&gt;
-
-&lt;/LabelCollection&gt;
-
-&lt;%--Setting indicator-- %&gt;
-
-&lt;IndicatorCollection&gt;
-
-&lt;ej:Indicators Height="10" Width="10" type="Circle"&gt;
-
-&lt;Position X="49" Y="100" /&gt;
-
-&lt;/ej:Indicators&gt;
-
-&lt;/IndicatorCollection&gt;
-
-&lt;/ej:Scales&gt;
-
-&lt;/Scales&gt;
-
-&lt;Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light.png" /&gt;
-
-&lt;/ej:LinearGauge&gt;
 
 
 
 Execute the above code to render the following output.
 
 ![](Indicators_images/Indicators_img1.png)
-{:.image }
+
 
 
 ## State Ranges
@@ -95,443 +97,447 @@ Execute the above code to render the following output.
 State ranges are used to specify the indicator behavior in the certain region. startValue and endValue are used to set the range bound for the pointer. Whenever the pointer crosses the specified region, the indicator attributes are applied for the ranges.
 
 
+{% highlight html %}
 
-[ASP]
+<%--For linear Gauge rendering-- %>
 
-&lt;%--For linear Gauge rendering-- %&gt;
+<ej:LinearGauge runat="server" ID="PointerGauge" Value="78" EnableAnimation="false" ReadOnly="false">
 
-&lt;ej:LinearGauge runat="server" ID="PointerGauge" Value="78" EnableAnimation="false" ReadOnly="false"&gt;
+<Scales>
 
-&lt;Scales&gt;
+<ej:Scales Width="0" Minimum="0" Maximum="300" MinorIntervalValue="5" MajorIntervalValue="30" BackgroundColor="transparent" ShowRanges="true" ShowIndicators="true" ShowBarPointers="false">
 
-&lt;ej:Scales Width="0" Minimum="0" Maximum="300" MinorIntervalValue="5" MajorIntervalValue="30" BackgroundColor="transparent" ShowRanges="true" ShowIndicators="true" ShowBarPointers="false"&gt;
+<Border Color="transparent" Width="0" />
 
-&lt;Border Color="transparent" Width="0" /&gt;
+<MarkerPointerCollection>
 
-&lt;MarkerPointerCollection&gt;
+<ej:MarkerPointers Width="10" length="10" MarkerBackgroundColor="grey" MarkerdistanceFromScale="12"></ej:MarkerPointers>
 
-&lt;ej:MarkerPointers Width="10" length="10" MarkerBackgroundColor="grey" MarkerdistanceFromScale="12"&gt;&lt;/ej:MarkerPointers&gt;
+</MarkerPointerCollection>
 
-&lt;/MarkerPointerCollection&gt;
+<TickCollection >
 
-&lt;TickCollection &gt;
+<ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" >
 
-&lt;ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" &gt;
+<DistanceFromScale X="7" Y="0" />
 
-&lt;DistanceFromScale X="7" Y="0" /&gt;
+</ej:LinearTicks>
 
-&lt;/ej:LinearTicks&gt;
+<ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" >
 
-&lt;ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" &gt;
+<DistanceFromScale X="7" Y="0" />
 
-&lt;DistanceFromScale X="7" Y="0" /&gt;
+</ej:LinearTicks>
 
-&lt;/ej:LinearTicks&gt;
+</TickCollection>
 
-&lt;/TickCollection&gt;
+<LabelCollection>
 
-&lt;LabelCollection&gt;
+<ej:Labels>
 
-&lt;ej:Labels&gt;
+<DistanceFromScale X="-12" Y="0" />
 
-&lt;DistanceFromScale X="-12" Y="0" /&gt;
+</ej:Labels>
 
-&lt;/ej:Labels&gt;
+</LabelCollection>
 
-&lt;/LabelCollection&gt;
+<RangeCollection>
 
-&lt;RangeCollection&gt;
+<ej:Ranges StartWidth="5" EndWidth="5" StartValue="0" EndValue="200" RangeBackgroundColor="#94C361">
 
-&lt;ej:Ranges StartWidth="5" EndWidth="5" StartValue="0" EndValue="200" RangeBackgroundColor="#94C361"&gt;
+<Border Color="#94C361"  Width="1" />
 
-&lt;Border Color="#94C361"  Width="1" /&gt;
+</ej:Ranges>
 
-&lt;/ej:Ranges&gt;
+<ej:Ranges StartWidth="5" EndWidth="5" StartValue="200" EndValue="250" RangeBackgroundColor="#F9CF67">
 
-&lt;ej:Ranges StartWidth="5" EndWidth="5" StartValue="200" EndValue="250" RangeBackgroundColor="#F9CF67"&gt;
+<Border Color="#F9CF67"  Width="1" />
 
-&lt;Border Color="#F9CF67"  Width="1" /&gt;
+</ej:Ranges>
 
-&lt;/ej:Ranges&gt;
+<ej:Ranges StartWidth="5" EndWidth="5" StartValue="250" EndValue="300" RangeBackgroundColor="#F89B83">
 
-&lt;ej:Ranges StartWidth="5" EndWidth="5" StartValue="250" EndValue="300" RangeBackgroundColor="#F89B83"&gt;
+<Border Color="#F89B83"  Width="1" />
 
-&lt;Border Color="#F89B83"  Width="1" /&gt;
+</ej:Ranges>
 
-&lt;/ej:Ranges&gt;
+</RangeCollection>
 
-&lt;/RangeCollection&gt;
+<IndicatorCollection>
 
-&lt;IndicatorCollection&gt;
+<ej:Indicators Height="10" Width="10" type="Circle">
 
-&lt;ej:Indicators Height="10" Width="10" type="Circle"&gt;
+<Position X="49" Y="100" />
 
-&lt;Position X="49" Y="100" /&gt;
+<%--Setting range backgroundcolor, range end value and start value-- %>
 
-&lt;%--Setting range backgroundcolor, range end value and start value-- %&gt;
+<StateRangeCollection>
 
-&lt;StateRangeCollection&gt;
+<ej:StateRanges StateRangeBackgroundColor="#02A258" StateRangeEndValue="200" StateRangeStartValue="0" StateRangeBorderColor="#02A258" />
 
-&lt;ej:StateRanges StateRangeBackgroundColor="#02A258" StateRangeEndValue="200" StateRangeStartValue="0" StateRangeBorderColor="#02A258" /&gt;
+<ej:StateRanges StateRangeBackgroundColor="grey" StateRangeEndValue="300" StateRangeStartValue="200" StateRangeBorderColor="grey" />
 
-&lt;ej:StateRanges StateRangeBackgroundColor="grey" StateRangeEndValue="300" StateRangeStartValue="200" StateRangeBorderColor="grey" /&gt;
+</StateRangeCollection>
 
-&lt;/StateRangeCollection&gt;
+</ej:Indicators>
 
-&lt;/ej:Indicators&gt;
+</IndicatorCollection>
 
-&lt;/IndicatorCollection&gt;
+</ej:Scales>
 
-&lt;/ej:Scales&gt;
+</Scales>
 
-&lt;/Scales&gt;
+<Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light.png" />
 
-&lt;Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light.png" /&gt;
+</ej:LinearGauge>
 
-&lt;/ej:LinearGauge&gt;
+{% endhighlight %}
+
+
 
 
 
 Execute the above code to render the following output.
 
 ![](Indicators_images/Indicators_img2.png)
-{:.image }
+
 
 
 ## Color and Appearance
 
 The backgroundColor and borderColor sets the appearance behavior for the indicators. You can apply this only if it lies within the state ranges. Otherwise default behavior will be applied.
 
+{% highlight html %}
 
-[ASP]
+<%--For Linear gauge rendering-- %>
 
-&lt;%--For Linear gauge rendering-- %&gt;
+<ej:LinearGauge runat="server" ID="PointerGauge" Value="78" EnableAnimation="false">
 
-&lt;ej:LinearGauge runat="server" ID="PointerGauge" Value="78" EnableAnimation="false"&gt;
+<%-- For setting Scales-- %>
 
-&lt;%-- For setting Scales-- %&gt;
+<Scales>
 
-&lt;Scales&gt;
+<ej:Scales Width="0" Minimum="0" Maximum="300" MinorIntervalValue="5" MajorIntervalValue="30" BackgroundColor="transparent" ShowIndicators="true" ShowBarPointers="false">
 
-&lt;ej:Scales Width="0" Minimum="0" Maximum="300" MinorIntervalValue="5" MajorIntervalValue="30" BackgroundColor="transparent" ShowIndicators="true" ShowBarPointers="false"&gt;
+<Border Color="transparent" Width="0" />
 
-&lt;Border Color="transparent" Width="0" /&gt;
+<MarkerPointerCollection>
 
-&lt;MarkerPointerCollection&gt;
+<ej:MarkerPointers Width="10" length="10" MarkerBackgroundColor="grey" MarkerdistanceFromScale="12"></ej:MarkerPointers>
 
-&lt;ej:MarkerPointers Width="10" length="10" MarkerBackgroundColor="grey" MarkerdistanceFromScale="12"&gt;&lt;/ej:MarkerPointers&gt;
+</MarkerPointerCollection>
 
-&lt;/MarkerPointerCollection&gt;
+<TickCollection >
 
-&lt;TickCollection &gt;
+<ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" >
 
-&lt;ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" &gt;
+<DistanceFromScale X="7" Y="0" />
 
-&lt;DistanceFromScale X="7" Y="0" /&gt;
+</ej:LinearTicks>
 
-&lt;/ej:LinearTicks&gt;
+<ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" >
 
-&lt;ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" &gt;
+<DistanceFromScale X="7" Y="0" />
 
-&lt;DistanceFromScale X="7" Y="0" /&gt;
+</ej:LinearTicks>
 
-&lt;/ej:LinearTicks&gt;
+</TickCollection>
 
-&lt;/TickCollection&gt;
+<LabelCollection>
 
-&lt;LabelCollection&gt;
+<ej:Labels>
 
-&lt;ej:Labels&gt;
+<DistanceFromScale X="-12" Y="0" />
 
-&lt;DistanceFromScale X="-12" Y="0" /&gt;
+</ej:Labels>
 
-&lt;/ej:Labels&gt;
+</LabelCollection>
 
-&lt;/LabelCollection&gt;
+<%--Setting Indicator height, width, type and position-- %>
 
-&lt;%--Setting Indicator height, width, type and position-- %&gt;
+<IndicatorCollection>
 
-&lt;IndicatorCollection&gt;
+<ej:Indicators Height="10" Width="10" type="Circle">
 
-&lt;ej:Indicators Height="10" Width="10" type="Circle"&gt;
+<Position X="49" Y="100" />
 
-&lt;Position X="49" Y="100" /&gt;
+<StateRangeCollection>
 
-&lt;StateRangeCollection&gt;
+<ej:StateRanges StateRangeBackgroundColor="#91B64E" StateRangeEndValue="300" StateRangeStartValue="0" StateRangeBorderColor="#91B64E" />
 
-&lt;ej:StateRanges StateRangeBackgroundColor="#91B64E" StateRangeEndValue="300" StateRangeStartValue="0" StateRangeBorderColor="#91B64E" /&gt;
+</StateRangeCollection>
 
-&lt;/StateRangeCollection&gt;
+</ej:Indicators>
 
-&lt;/ej:Indicators&gt;
+</IndicatorCollection>
 
-&lt;/IndicatorCollection&gt;
+</ej:Scales>
 
-&lt;/ej:Scales&gt;
+</Scales>
 
-&lt;/Scales&gt;
+<Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light.png" />
 
-&lt;Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light.png" /&gt;
+</ej:LinearGauge>
 
-&lt;/ej:LinearGauge&gt;
+{% endhighlight %}
+
+
 
 
 
 Execute the above code to render the following output.
 
 ![](Indicators_images/Indicators_img3.png)
-{:.image }
+
 
 
 ## Font options
 
 The basic font options available for the textual type indicators in the Linear Gauge such as Size, font style and font family are achieved by the properties size, fontStyle and fontFamily.
 
-[ASP]
+{% highlight html %}
 
-&lt;%--For Linear gauge rendering-- %&gt;
+<%--For Linear gauge rendering-- %>
 
-&lt;ej:LinearGauge runat="server" ID="PointerGauge" Value="78" EnableAnimation="false" ReadOnly="false"&gt;
+<ej:LinearGauge runat="server" ID="PointerGauge" Value="78" EnableAnimation="false" ReadOnly="false">
 
-&lt;%-- For setting scales-- %&gt;
+<%-- For setting scales-- %>
 
-&lt;Scales&gt;
+<Scales>
 
-&lt;ej:Scales Width="0" Minimum="0" Maximum="300" MinorIntervalValue="5" MajorIntervalValue="30" BackgroundColor="transparent" ShowRanges="true" ShowIndicators="true" ShowBarPointers="false"&gt;
+<ej:Scales Width="0" Minimum="0" Maximum="300" MinorIntervalValue="5" MajorIntervalValue="30" BackgroundColor="transparent" ShowRanges="true" ShowIndicators="true" ShowBarPointers="false">
 
-&lt;Border Color="transparent" Width="0" /&gt;
+<Border Color="transparent" Width="0" />
 
-&lt;%-- For setting marker pointers-- %&gt;
+<%-- For setting marker pointers-- %>
 
-&lt;MarkerPointerCollection&gt;
+<MarkerPointerCollection>
 
-&lt;ej:MarkerPointers Width="10" length="10" MarkerBackgroundColor="grey" MarkerdistanceFromScale="12"&gt;&lt;/ej:MarkerPointers&gt;
+<ej:MarkerPointers Width="10" length="10" MarkerBackgroundColor="grey" MarkerdistanceFromScale="12"></ej:MarkerPointers>
 
-&lt;/MarkerPointerCollection&gt;
+</MarkerPointerCollection>
 
-&lt;%-- For setting Ticks-- %&gt;
+<%-- For setting Ticks-- %>
 
-&lt;TickCollection &gt;
+<TickCollection >
 
-&lt;ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" &gt;
+<ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" >
 
-&lt;DistanceFromScale X="7" Y="0" /&gt;
+<DistanceFromScale X="7" Y="0" />
 
-&lt;/ej:LinearTicks&gt;
+</ej:LinearTicks>
 
-&lt;ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" &gt;
+<ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" >
 
-&lt;DistanceFromScale X="7" Y="0" /&gt;
+<DistanceFromScale X="7" Y="0" />
 
-&lt;/ej:LinearTicks&gt;
+</ej:LinearTicks>
 
-&lt;/TickCollection&gt;
+</TickCollection>
 
-&lt;%-- For setting labels-- %&gt;
+<%-- For setting labels-- %>
 
-&lt;LabelCollection&gt;
+<LabelCollection>
 
-&lt;ej:Labels&gt;
+<ej:Labels>
 
-&lt;DistanceFromScale X="-12" Y="0" /&gt;
+<DistanceFromScale X="-12" Y="0" />
 
-&lt;/ej:Labels&gt;
+</ej:Labels>
 
-&lt;/LabelCollection&gt;
+</LabelCollection>
 
-&lt;%-- For setting ranges-- %&gt;
+<%-- For setting ranges-- %>
 
-&lt;RangeCollection&gt;
+<RangeCollection>
 
-&lt;ej:Ranges StartWidth="5" EndWidth="5" StartValue="0" EndValue="200" RangeBackgroundColor="#94C361"&gt;
+<ej:Ranges StartWidth="5" EndWidth="5" StartValue="0" EndValue="200" RangeBackgroundColor="#94C361">
 
-&lt;Border Color="#94C361"  Width="1" /&gt;
+<Border Color="#94C361"  Width="1" />
 
-&lt;/ej:Ranges&gt;
+</ej:Ranges>
 
-&lt;ej:Ranges StartWidth="5" EndWidth="5" StartValue="200" EndValue="250" RangeBackgroundColor="#F9CF67"&gt;
+<ej:Ranges StartWidth="5" EndWidth="5" StartValue="200" EndValue="250" RangeBackgroundColor="#F9CF67">
 
-&lt;Border Color="#F9CF67"  Width="1" /&gt;
+<Border Color="#F9CF67"  Width="1" />
 
-&lt;/ej:Ranges&gt;
+</ej:Ranges>
 
-&lt;ej:Ranges StartWidth="5" EndWidth="5" StartValue="250" EndValue="300" RangeBackgroundColor="#F89B83"&gt;
+<ej:Ranges StartWidth="5" EndWidth="5" StartValue="250" EndValue="300" RangeBackgroundColor="#F89B83">
 
-&lt;Border Color="#F89B83"  Width="1" /&gt;
+<Border Color="#F89B83"  Width="1" />
 
-&lt;/ej:Ranges&gt;
+</ej:Ranges>
 
-&lt;/RangeCollection&gt;
+</RangeCollection>
 
-&lt;IndicatorCollection&gt;
+<IndicatorCollection>
 
-&lt;ej:Indicators type="text"&gt;
+<ej:Indicators type="text">
 
-&lt;TextLocation X="50" Y="100" /&gt;
+<TextLocation X="50" Y="100" />
 
-&lt;%--Setting indicator font size, fontfamily and font style-- %&gt;
+<%--Setting indicator font size, fontfamily and font style-- %>
 
-&lt;Font Size="12px" FontFamily="arial" FontStyle="bold"&gt;&lt;/Font&gt;
+<Font Size="12px" FontFamily="arial" FontStyle="bold"></Font>
 
-&lt;StateRangeCollection&gt;
+<StateRangeCollection>
 
-&lt;ej:StateRanges StateRangeEndValue="200" StateRangeStartValue="0"  StateRangetext="Safe"  StateRangetextColor="#94C361"/&gt;
+<ej:StateRanges StateRangeEndValue="200" StateRangeStartValue="0"  StateRangetext="Safe"  StateRangetextColor="#94C361"/>
 
-&lt;ej:StateRanges StateRangeEndValue="250" StateRangeStartValue="200" StateRangetext="Caution" StateRangetextColor="#F9CF67"/&gt;
+<ej:StateRanges StateRangeEndValue="250" StateRangeStartValue="200" StateRangetext="Caution" StateRangetextColor="#F9CF67"/>
 
-&lt;ej:StateRanges StateRangeEndValue="300" StateRangeStartValue="250" StateRangetext="Danger" StateRangetextColor="#F89B83"/&gt;
+<ej:StateRanges StateRangeEndValue="300" StateRangeStartValue="250" StateRangetext="Danger" StateRangetextColor="#F89B83"/>
 
-&lt;/StateRangeCollection&gt;
+</StateRangeCollection>
 
-&lt;/ej:Indicators&gt;
+</ej:Indicators>
 
-&lt;/IndicatorCollection&gt;
+</IndicatorCollection>
 
-&lt;/ej:Scales&gt;
+</ej:Scales>
 
-&lt;/Scales&gt;
+</Scales>
 
-&lt;Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light.png" /&gt;
+<Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light.png" />
 
-&lt;/ej:LinearGauge&gt;
+</ej:LinearGauge>
+
+{% endhighlight %}
+
+
 
 
 
 Execute the above code to render the following output.
 
 ![](Indicators_images/Indicators_img4.png)
-{:.image }
+
 
 
 ## Multiple Indicator
 
 You can set multiple indicators in a single Linear Gauge by adding an array of indicator objects. Refer the following code example for multiple indicator functionality.
 
-[ASP]
+{% highlight html %}
+
+<ej:LinearGauge runat="server" ID="PointerGauge" Value="78" EnableAnimation="false" ReadOnly="false">
+
+<%-- For setting scale collection-- %>
+
+<Scales>
+
+<ej:Scales Width="0" Minimum="0" Maximum="300" MinorIntervalValue="5" MajorIntervalValue="30" BackgroundColor="transparent" ShowIndicators="true" ShowRanges="true" ShowBarPointers="false">
+
+<Border Color="transparent" Width="0" />
+
+<MarkerPointerCollection>
+
+<ej:MarkerPointers Width="10" length="10" MarkerBackgroundColor="grey" MarkerdistanceFromScale="12"></ej:MarkerPointers>
+
+</MarkerPointerCollection>
+
+<TickCollection >
+
+<ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" >
+
+<DistanceFromScale X="7" Y="0" />
+
+</ej:LinearTicks>
+
+<ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" >
+
+<DistanceFromScale X="7" Y="0" />
+
+</ej:LinearTicks>
+
+</TickCollection>
+
+<LabelCollection>
+
+<ej:Labels>
+
+<DistanceFromScale X="-12" Y="0" />
+
+</ej:Labels>
+
+</LabelCollection>
+
+<RangeCollection>
+
+<ej:Ranges StartWidth="5" EndWidth="5" StartValue="0" EndValue="200" RangeBackgroundColor="#94C361">
+
+<Border Color="#94C361"  Width="1" />
+
+</ej:Ranges>
+
+<ej:Ranges StartWidth="5" EndWidth="5" StartValue="200" EndValue="250" RangeBackgroundColor="#F9CF67">
+
+<Border Color="#F9CF67"  Width="1" />
+
+</ej:Ranges>
+
+<ej:Ranges StartWidth="5" EndWidth="5" StartValue="250" EndValue="300" RangeBackgroundColor="#F89B83">
+
+<Border Color="#F89B83"  Width="1" />
+
+</ej:Ranges>
+
+</RangeCollection>
+
+<IndicatorCollection>
+
+<%--Setting indicator1-- %>
+
+<%-- For setting indicator type-- %>
+
+<ej:Indicators Height="10" Width="10" type="Circle">
+
+<Position X="30" Y="100" />
+
+<%-- For setting state range collection-- %>
+
+<StateRangeCollection>
+
+<ej:StateRanges StateRangeBackgroundColor="#02A258" StateRangeEndValue="200" StateRangeStartValue="0" StateRangeBorderColor="#02A258" />
+
+<ej:StateRanges StateRangeBackgroundColor="grey" StateRangeEndValue="300" StateRangeStartValue="200" StateRangeBorderColor="grey" />
+
+</StateRangeCollection>
+
+</ej:Indicators>
+
+<%--Setting indicator2-- %>
 
 
 
-&lt;ej:LinearGauge runat="server" ID="PointerGauge" Value="78" EnableAnimation="false" ReadOnly="false"&gt;
+<ej:Indicators Height="10" Width="10" type="Circle">
 
-&lt;%-- For setting scale collection-- %&gt;
+<Position X="70" Y="100" />
 
-&lt;Scales&gt;
+<StateRangeCollection>
 
-&lt;ej:Scales Width="0" Minimum="0" Maximum="300" MinorIntervalValue="5" MajorIntervalValue="30" BackgroundColor="transparent" ShowIndicators="true" ShowRanges="true" ShowBarPointers="false"&gt;
+<ej:StateRanges StateRangeBackgroundColor="red" StateRangeEndValue="300" StateRangeStartValue="200" StateRangeBorderColor="red" />
 
-&lt;Border Color="transparent" Width="0" /&gt;
+<ej:StateRanges StateRangeBackgroundColor="grey" StateRangeEndValue="200" StateRangeStartValue="0" StateRangeBorderColor="grey" />
 
-&lt;MarkerPointerCollection&gt;
+</StateRangeCollection>
 
-&lt;ej:MarkerPointers Width="10" length="10" MarkerBackgroundColor="grey" MarkerdistanceFromScale="12"&gt;&lt;/ej:MarkerPointers&gt;
+</ej:Indicators>
 
-&lt;/MarkerPointerCollection&gt;
+</IndicatorCollection>
 
-&lt;TickCollection &gt;
+</ej:Scales>
 
-&lt;ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c" &gt;
+</Scales>
 
-&lt;DistanceFromScale X="7" Y="0" /&gt;
+<Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light.png" />
 
-&lt;/ej:LinearTicks&gt;
+</ej:LinearGauge>
 
-&lt;ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c" &gt;
-
-&lt;DistanceFromScale X="7" Y="0" /&gt;
-
-&lt;/ej:LinearTicks&gt;
-
-&lt;/TickCollection&gt;
-
-&lt;LabelCollection&gt;
-
-&lt;ej:Labels&gt;
-
-&lt;DistanceFromScale X="-12" Y="0" /&gt;
-
-&lt;/ej:Labels&gt;
-
-&lt;/LabelCollection&gt;
-
-&lt;RangeCollection&gt;
-
-&lt;ej:Ranges StartWidth="5" EndWidth="5" StartValue="0" EndValue="200" RangeBackgroundColor="#94C361"&gt;
-
-&lt;Border Color="#94C361"  Width="1" /&gt;
-
-&lt;/ej:Ranges&gt;
-
-&lt;ej:Ranges StartWidth="5" EndWidth="5" StartValue="200" EndValue="250" RangeBackgroundColor="#F9CF67"&gt;
-
-&lt;Border Color="#F9CF67"  Width="1" /&gt;
-
-&lt;/ej:Ranges&gt;
-
-&lt;ej:Ranges StartWidth="5" EndWidth="5" StartValue="250" EndValue="300" RangeBackgroundColor="#F89B83"&gt;
-
-&lt;Border Color="#F89B83"  Width="1" /&gt;
-
-&lt;/ej:Ranges&gt;
-
-&lt;/RangeCollection&gt;
-
-&lt;IndicatorCollection&gt;
-
-&lt;%--Setting indicator1-- %&gt;
-
-&lt;%-- For setting indicator type-- %&gt;
-
-&lt;ej:Indicators Height="10" Width="10" type="Circle"&gt;
-
-&lt;Position X="30" Y="100" /&gt;
-
-&lt;%-- For setting state range collection-- %&gt;
-
-&lt;StateRangeCollection&gt;
-
-&lt;ej:StateRanges StateRangeBackgroundColor="#02A258" StateRangeEndValue="200" StateRangeStartValue="0" StateRangeBorderColor="#02A258" /&gt;
-
-&lt;ej:StateRanges StateRangeBackgroundColor="grey" StateRangeEndValue="300" StateRangeStartValue="200" StateRangeBorderColor="grey" /&gt;
-
-&lt;/StateRangeCollection&gt;
-
-&lt;/ej:Indicators&gt;
-
-&lt;%--Setting indicator2-- %&gt;
-
-
-
-&lt;ej:Indicators Height="10" Width="10" type="Circle"&gt;
-
-&lt;Position X="70" Y="100" /&gt;
-
-&lt;StateRangeCollection&gt;
-
-&lt;ej:StateRanges StateRangeBackgroundColor="red" StateRangeEndValue="300" StateRangeStartValue="200" StateRangeBorderColor="red" /&gt;
-
-&lt;ej:StateRanges StateRangeBackgroundColor="grey" StateRangeEndValue="200" StateRangeStartValue="0" StateRangeBorderColor="grey" /&gt;
-
-&lt;/StateRangeCollection&gt;
-
-&lt;/ej:Indicators&gt;
-
-&lt;/IndicatorCollection&gt;
-
-&lt;/ej:Scales&gt;
-
-&lt;/Scales&gt;
-
-&lt;Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light.png" /&gt;
-
-&lt;/ej:LinearGauge&gt;
-
+{% endhighlight %}
 
 
 Execute the above code to render the following output.
 
-
-
 ![](Indicators_images/Indicators_img5.png)
-{:.image }
-
-

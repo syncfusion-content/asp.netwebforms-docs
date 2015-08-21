@@ -113,6 +113,6 @@ The following screenshot is the result of the above code example.
 
 
 
-![C:/Users/ApoorvahR/Desktop/1.png](Data-Adaptors_images/Data-Adaptors_img2.png)
+![](Data-Adaptors_images/Data-Adaptors_img2.png)
 
 

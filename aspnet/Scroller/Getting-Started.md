@@ -13,7 +13,7 @@ documentation: ug
 
 ASP.NETScroller control can be rendered based on the target panel height and width, and includes more customization options.
 
-Add Scroller Control to your ASP.NET Web Application
+### Add Scroller Control to your ASP.NET Web Application
 
 You can create an ASP.NET Project and add necessary Dll and script with the help of the given [ASP-Getting Started](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm) Documentation.
 
@@ -89,13 +89,10 @@ You can add the following code example to the corresponding ASPX page to render�
 
 </ej:Scroller>
 
-
-
 {% endhighlight %}
 
 
-
-Initialize Scrollerwithfollowing styles.
+Initialize Scroller with following styles.
 
 {% highlight css %}
 
@@ -106,20 +103,9 @@ Initialize Scrollerwithfollowing styles.
             padding: 15px;
 
         }
-
-
-
-
-
+		
 {% endhighlight %}
-
-
 
 Output of the above steps.
 
-
-
 ![http://help.syncfusion.com/ug/js/ImagesExt/image87_2.png](Getting-Started_images/Getting-Started_img1.png)
-
-
-

@@ -42,15 +42,16 @@ Local databinding allows you to map JSON data to TagCloud that the corresponding
 The following explains the local data binding to the TagCloud control. In the ASPX page, include the TagCloud control code 
 example.
 
+{% highlight html %}
 
+<ej:TagCloud ID="tagcloud" runat="server" DataTextField="text" DataUrlField="url" DataFrequencyField="frequency">
+ 
+</ej:TagCloud> 
 
-
+{% endhighlight %}
 
 {% highlight c# %}
 
-<ej:TagCloud ID="tagcloud" runat="server" DataTextField="text" DataUrlField="url" DataFrequencyField="frequency">
- </ej:TagCloud> 
- 
 protected void Page_Load(object sender, EventArgs e)
 
         {
@@ -147,18 +148,15 @@ protected void Page_Load(object sender, EventArgs e)
 
              }
 
-}     
-
-
+}    
 
 {% endhighlight %}
 
 
 
 The following screenshot displays the TagCloud control with local data binding.
- ![](Data-Binding_images/Data-Binding_img1.png) 
-
-
+ 
+![](Data-Binding_images/Data-Binding_img1.png) 
 
 ## Remote Binding
 
@@ -171,15 +169,13 @@ DataManager is used to manage relational data in JavaScript. It supports CRUD
 To bind local data to the TagCloud control, include the following TagCloud control code example in the ASPX page. 
 
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<ej:TagCloud ID="tagcloud" runat="server" DataTextField="CustomerID" Query="ej.Query().from('Orders').take(10)" DataFrequencyField="EmployeeID"></ej:TagCloud></td></tr>
-<tr>
-<td>
-</td></tr>
-</table>
+<ej:TagCloud ID="tagcloud" runat="server" DataTextField="CustomerID" Query="ej.Query().from('Orders').take(10)" DataFrequencyField="EmployeeID"></ej:TagCloud>
+
+{% endhighlight %}
+
+
 Assign the Datasource and Query property values to bind the remote data. Map the corresponding fields to the TagCloud control as follows:
 
 {% highlight c# %}
@@ -203,8 +199,3 @@ protected void Page_Load(object sender, EventArgs e)
 The following screenshot displays the TagCloud control with remote data binding.
 
 ![](Data-Binding_images/Data-Binding_img2.png) 
-
-
-
-
-

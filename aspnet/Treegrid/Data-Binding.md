@@ -24,16 +24,9 @@ Two types of Data Binding are possible with TreeGrid control,
 
 The following code example shows you how to bind the Hierarchical local data into the TreeGrid control.
 
-
-
-
-
-{% highlight C# %}
+{% highlight c# %}
 
 TreeGrid.aspx.cs
-
-
-
 using Syncfusion.JavaScript;
 
 using Syncfusion.JavaScript.Models;
@@ -54,16 +47,12 @@ using System.Web.UI.WebControls;
 
 using WebSampleBrowser.TreeGrid.Model;
 
-
-
 namespace WebSampleBrowser.TreeGrid
 
 {
-
     public partial class TreeGridDefault : System.Web.UI.Page
 
     {
-
         protected void Page_Load(object sender, EventArgs e)
 
         {
@@ -76,13 +65,7 @@ namespace WebSampleBrowser.TreeGrid
 
         }  
 
-
-
      }
-
-
-
-
 
     public class TaskDetailsCollection
 
@@ -116,18 +99,11 @@ namespace WebSampleBrowser.TreeGrid
 
             });
 
-
-
             tasks[0].SubTasks = new List<TaskDetails>();
-
-
-
-
 
             tasks[0].SubTasks.Add(new TaskDetails()
 
             {
-
                 TaskID = 2,
 
                 TaskName = "Plan timeline",
@@ -145,7 +121,6 @@ namespace WebSampleBrowser.TreeGrid
             tasks[0].SubTasks.Add(new TaskDetails()
 
             {
-
                 TaskID = 3,
 
                 TaskName = "Plan budget",
@@ -163,7 +138,6 @@ namespace WebSampleBrowser.TreeGrid
             tasks[0].SubTasks.Add(new TaskDetails()
 
             {
-
                 TaskID = 4,
 
                 TaskName = "Allocate resources",
@@ -181,7 +155,6 @@ namespace WebSampleBrowser.TreeGrid
             tasks[0].SubTasks.Add(new TaskDetails()
 
             {
-
                 TaskID = 5,
 
                 TaskName = "Planning complete",
@@ -196,30 +169,18 @@ namespace WebSampleBrowser.TreeGrid
 
             });
 
-
-
-
-
     //...
 
-
-
     //...
-
-
-
             return tasks;
 
         }
 
     }
 
-
-
     public class TaskDetails
 
     {
-
         public int TaskID { get; set; }
 
         public string TaskName { get; set; }
@@ -235,38 +196,21 @@ namespace WebSampleBrowser.TreeGrid
         public List<TaskDetails> SubTasks { get; set; }     
 
     }
-
 }
 
 {% endhighlight %} 
 
 {% highlight xml %}
 
-TreeGrid.aspx
-
-
-
-%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Samplebrowser.Master" CodeBehind="TreeGridDefault.aspx.cs" Inherits="WebSampleBrowser.TreeGrid.TreeGridDefault" %>
-
-
-
-
+<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Samplebrowser.Master" CodeBehind="TreeGridDefault.aspx.cs" Inherits="WebSampleBrowser.TreeGrid.TreeGridDefault" %>
 
 <%@ Register assembly="Syncfusion.EJ" namespace="Syncfusion.JavaScript.Models" tagprefix="cc1" %>
-
-
-
-
-
-
 
 <asp:Content ID="Content1" ContentPlaceHolderID="SampleHeading" runat="server">
 
     <span class="sampleName">TreeGrid / Default</span>
 
 </asp:Content>
-
-
 
 <asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">           
 
@@ -300,8 +244,6 @@ TreeGrid.aspx
 
 </asp:Content>
 
-
-
 <asp:Content ID="Content2" runat="server" ContentPlaceHolderID="ScriptSection">
 
     <style type="text/css">
@@ -316,13 +258,7 @@ TreeGrid.aspx
 
 </asp:Content>
 
-
-
-
-
 {% endhighlight %}
-
-
 
 The output of the above steps is as follows:
 
@@ -334,15 +270,9 @@ The output of the above steps is as follows:
 
 TreeGrid is rendered from Self-Referential data structures by providing two fields: ID field and parent ID field.
 
-•ID Field- This field contains unique values used to identify nodes. Its name is assigned to the IdMapping property.
+* ID Field- This field contains unique values used to identify nodes. Its name is assigned to the IdMapping property.
 
-•Parent ID Field- This field contains values that indicate parent nodes. Its name is assigned to the ParentIdMapping property.
-
-
-
-
-
-
+* Parent ID Field- This field contains values that indicate parent nodes. Its name is assigned to the ParentIdMapping property.
 
 {% highlight c# %}
 
@@ -358,16 +288,12 @@ using System.Web.UI.WebControls;
 
 using WebSampleBrowser.TreeGrid.Model;
 
-
-
 namespace WebSampleBrowser.TreeGrid
 
 {
-
     public partial class TreeGridDefault : System.Web.UI.Page
 
     {
-
         protected void Page_Load(object sender, EventArgs e)
 
         {
@@ -378,48 +304,28 @@ namespace WebSampleBrowser.TreeGrid
 
             this.TreeGridControlDefault.DataBind();
 
-        }  
-
-
-
+        }
     }
-
-
-
+	
     public class TaskDetails
 
     {
-
         public string StartDate { get; set; }
-
-
-
+		
         public int Id { get; set; }
-
-
 
         public int ParentId { get; set; }
 
-
-
         public string Name { get; set; }
-
-
 
         public int Duration { get; set; }
 
-
-
         public int PercentDone { get; set; }
-
-
 
         public List<Data> Children { get; set; }
 
     }
-
-
-
+	
     public class TaskDetailsCollection
 
     {
@@ -429,10 +335,6 @@ namespace WebSampleBrowser.TreeGrid
         {
 
             List<TaskDetails> list = new List<TaskDetails>();
-
-
-
-
 
             list.Add(new TaskDetails()
 
@@ -447,8 +349,6 @@ namespace WebSampleBrowser.TreeGrid
                 Duration = 5
 
             });
-
-
 
             list.Add(new TaskDetails()
 
@@ -465,13 +365,10 @@ namespace WebSampleBrowser.TreeGrid
                 Duration = 5,
 
             });
-
-
-
+			
             list.Add(new TaskDetails()
 
             {
-
                 Id = 3,
 
                 ParentId = 1,
@@ -486,12 +383,9 @@ namespace WebSampleBrowser.TreeGrid
 
             });
 
-
-
             list.Add(new TaskDetails()
 
             {
-
                 Id = 22,
 
                 ParentId = 2,
@@ -506,12 +400,9 @@ namespace WebSampleBrowser.TreeGrid
 
             });
 
-
-
             list.Add(new TaskDetails()
 
             {
-
                 Id = 23,
 
                 ParentId = 2,
@@ -526,13 +417,10 @@ namespace WebSampleBrowser.TreeGrid
 
             });
 
-
-
             list.Add(new TaskDetails()
 
             {
-
-                Id = 12,
+       			Id = 12,
 
                 ParentId = 22,
 
@@ -544,12 +432,9 @@ namespace WebSampleBrowser.TreeGrid
 
             });
 
-
-
             list.Add(new TaskDetails()
 
             {
-
                 Id = 13,
 
                 ParentId = 22,
@@ -564,49 +449,29 @@ namespace WebSampleBrowser.TreeGrid
 
             });
 
-
-
      //...
 
-
-
     //...
-
-
-
-            return list;
+	return list;
 
         }
-
-    }
-
+	}
 }
-
-TreeGrid.aspx
-
 {% endhighlight %} 
 
 {% highlight xml %}
 
+TreeGrid.aspx
+
 <%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Samplebrowser.Master" CodeBehind="TreeGridDefault.aspx.cs" Inherits="WebSampleBrowser.TreeGrid.TreeGridDefault" %>
 
-
-
-
-
 <%@ Register assembly="Syncfusion.EJ" namespace="Syncfusion.JavaScript.Models" tagprefix="cc1" %>
-
-
 
 <asp:Content ID="Content1" ContentPlaceHolderID="SampleHeading" runat="server">
 
     <span class="sampleName">TreeGrid / Default</span>
 
 </asp:Content>
-
-
-
-
 
 <asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">           
 
@@ -642,8 +507,6 @@ TreeGrid.aspx
 
 </asp:Content>
 
-
-
 <asp:Content ID="Content2" runat="server" ContentPlaceHolderID="ScriptSection">
 
     <style type="text/css">
@@ -658,17 +521,9 @@ TreeGrid.aspx
 
 </asp:Content>
 
-
-
 {% endhighlight %}
-
 
 
 The following screenshot shows the output of the above steps,
 
 ![](Data-Binding_images/Data-Binding_img2.png) 
-
-
-
-
-

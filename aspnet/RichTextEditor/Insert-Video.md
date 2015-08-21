@@ -25,15 +25,8 @@ Try the following code in the insert video dialog,
 
     </video>
 
-
-
 {% endhighlight %}
-
-
 
 ![](Insert-Video_images/Insert-Video_img1.png)
 
-
-
 > Note: Insert video option is enabled only in HTML5 support browsers.
-

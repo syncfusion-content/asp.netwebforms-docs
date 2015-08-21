@@ -103,6 +103,4 @@ Add the following code example.
 
 
 ![](Template-Support_images/Template-Support_img1.png) 
-{:.image }
-
 

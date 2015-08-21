@@ -89,16 +89,11 @@ In an ASPXpage, add the following code to render the Scroller.
 
 </ej:Scroller>
 
-
-
 {% endhighlight %}
 
+### Define the style for Scroller control
 
-
-Define the style for Scroller control
-
-{% highlight js %}
-
+{% highlight css %}
 
 
         .sampleContent {
@@ -109,19 +104,8 @@ Define the style for Scroller control
 
         }
 
-
-
-
-
 {% endhighlight %}
-
-
 
 The following screenshot displays the output of the above code example.
 
-
-
-{ ![](Customizing-the-scroll-Step_images/Customizing-the-scroll-Step_img1.png) | markdownify }
-
-
-
+![](Customizing-the-scroll-Step_images/Customizing-the-scroll-Step_img1.png)

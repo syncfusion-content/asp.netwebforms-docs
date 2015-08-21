@@ -13,16 +13,16 @@ Toggle Button is used as normal clickable button, for submitting form data, and 
 
 <table>
 <tr>
-<td>
-Button</td><td>
+<th>
+Button</th><td>
 The button is a clickable button.</td></tr>
 <tr>
-<td>
-Submit</td><td>
+<th>
+Submit</th><td>
 The button is a submit button (submits form-data).</td></tr>
 <tr>
-<td>
-Reset    </td><td>
+<th>
+Reset    </th><td>
 The button is a reset button (resets the form-data to its initial values).</td></tr>
 </table>
 In the ASPX page, add the following button elements to configure the Toggle Button.
@@ -47,15 +47,8 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
 </ej:ToggleButton>
 
-
-
 {% endhighlight %}
-
-
 
 Run the above code to render the following output.
 
  ![](Button-types_images/Button-types_img1.png)
-
-
-

@@ -70,10 +70,6 @@ In an ASPX page, add an elementto configure ListBox widget and enable keyboard i
 
 </div>
 
-
-
-
-
 {% endhighlight %}
 
 
@@ -85,9 +81,7 @@ In an ASPX page, add an elementto configure ListBox widget and enable keyboard i
         {
 
             listboxsample.DataSource = GetData();
-
-
-
+			
         }
 
         private List<Languages> GetData()
@@ -140,15 +134,7 @@ In an ASPX page, add an elementto configure ListBox widget and enable keyboard i
 
         }
 
-
-
-
-
 {% endhighlight %}
-
-
-
-
 
 {% highlight js %}
 

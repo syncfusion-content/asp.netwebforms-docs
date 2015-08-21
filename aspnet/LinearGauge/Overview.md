@@ -20,12 +20,10 @@ The Gauge control for Essential Studio displays numerical information in the for
 
 
 ![](Overview_images/Overview_img1.png)
-{:.image }
-
 
 Three basic scale designs available are : rectangle, rounded rectangle, and thermometer.
 
-Key Features
+## Key Features
 
 * Interaction: Allows you to directly interact with pointers on a gauge.
 * Indicators: Indicate the state of a gauge either active or inactive.
@@ -35,6 +33,3 @@ Key Features
 * Animation: Supports animation effects for pointers.
 * Custom Labels: Allows you to add custom label text on any part of a gauge.
 * Scale Styles: Three basic styles of scales are supported: rectangle, rounded rectangle, and thermometer.
-
-
-

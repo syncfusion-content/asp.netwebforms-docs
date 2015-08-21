@@ -21,8 +21,6 @@ You can configure ASP.NET TreeMap in simple steps. This manual provides instruct
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
-
-
 ### Create a simple ASP.Net Application
 
 You can create a new ASP.NET project application by adding the necessary dll's and scripts.
@@ -33,14 +31,7 @@ You can populate the TreeMap data inside the TreeMap .For example, you can popul
 
 TreeMap/ TreeMap.aspx.cs
 
-
 {% highlight C# %}
-
-[TreeMap.aspx.cs]
-
-
-
-
 
 public class TreeMapPopulationData
 
@@ -98,172 +89,158 @@ public class TreeMapPopulationData
 
 {% endhighlight %}
 
-_Note: Population data is referred from_ [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population).
+> Note: Population data is referred from [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population).
 
 ### Initialize TreeMap
 
 1. Create an HTML file and add necessary script and CSS files in Head tag as illustrated in the following code example.
 
+   ~~~ html
 
-{% highlight html %}
+			<html xmlns="http://www.w3.org/1999/xhtml">
 
-[ASPX]          
+		<head>
 
-    <html xmlns="http://www.w3.org/1999/xhtml">
+				<title> Getting Started with Maps </title>    
 
-<head>
+		<!--  jquery script  -->
 
-	    <title> Getting Started with Maps </title>    
-
-<!--  jquery script  -->
-
-                <script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
+						<script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
 
 
 
-                <!-- Essential JS UI widget -->
+						<!-- Essential JS UI widget -->
 
-               <script src="http://cdn.syncfusion.com/13.1.0.21/js/
+					   <script src="http://cdn.syncfusion.com/13.1.0.21/js/
 
-ej.widgets.all.min.js"></script>
-
-
-
-               <!-- JS Render widget -->
-
-               <script src="http://cdn.jsdelivr.net/jsrender/1.0pre35/jsrender.min.js" type="text/javascript"></script>   
+		ej.widgets.all.min.js"></script>
 
 
 
-</head>
+					   <!-- JS Render widget -->
 
-      <body>
-      </body>
-</html>
-
-
-{% endhighlight %}
-
-2. Create a <div> tag and set the height and width to determine the TreeMap size to be rendered in “TreeMap.aspx” file in body tag.
+					   <script src="http://cdn.jsdelivr.net/jsrender/1.0pre35/jsrender.min.js" type="text/javascript"></script>   
 
 
 
-{% highlight html %}
+		</head>
 
-<html>   
+			  <body>
+			  </body>
+		</html>
 
-      <body> 
+   ~~~
+   {:.prettyprint } 
+
+2. Create a &lt;div&gt; tag and set the height and width to determine the TreeMap size to be rendered in “TreeMap.aspx” file in body tag.
+
+   ~~~ html
+
+		<html>   
+
+			  <body> 
+
+					<div style="min-height:404px">
+
+				 </div> 
 
 
+			  </body>      
 
-            <div style="min-height:404px">
+		</html>
 
-         </div> 
-
-
-      </body>      
-
-</html>
-
-
-{% endhighlight  %}
+   ~~~
+   {:.prettyprint }
 
 3. Add the following code in “TreeMap.aspx” file to initialize the TreeMap.
 
+   ~~~ html
 
+		<html>   
 
-{% highlight html %}
-[TreeMap.aspx]
+			  <body> 
 
-<html>   
-
-      <body> 
-
-         <div style="min-height:404px">
+				 <div style="min-height:404px">
 
 
 
-             <ej:Treemap ID="treemap" runat="server">     
+					 <ej:Treemap ID="treemap" runat="server">     
 
-                </ej:Treemap>
-
-
-
-          </div> 
+						</ej:Treemap>
 
 
-      </body>      
 
-</html>
+				  </div> 
 
 
-{% endhighlight %}
+			  </body>      
+
+		</html>
+
+   ~~~
+   {:.prettyprint }
 
 4. Add the DataSource in “TreeMap.aspx.cs” as illustrated in the following code sample.
 
+   ~~~ cs
 
+		 protected void Page_Load(object sender, EventArgs e)
 
-{% highlight c# %}
-[TreeMap.aspx.cs]
-
- protected void Page_Load(object sender, EventArgs e)
-
-        {
+				{
 
 
 
-            this.treemap.DataSource = TreeMapPopulationData.GetData();           
+					this.treemap.DataSource = TreeMapPopulationData.GetData();           
 
-        }
+				}
 
-{% endhighlight  %}
+   ~~~
+   {:.prettyprint }
 
 ### DataSource
 
 The DataSource property accepts the collection values as input. For example, you can provide the list of objects as input.
 
-####Weight Value Path 
+#### Weight Value Path 
 
 You can calculate the size of the object using WeightValuePath of TreeMap.
 
 1. Populate the TreeMap with using the above properties.
 
+   ~~~ cs
 
+	  protected void Page_Load(object sender, EventArgs e)
 
-{% highlight C# %}
-[ASP]
+			{
 
-[ASPX.CS]
-
-  protected void Page_Load(object sender, EventArgs e)
-
-        {
-
-            this.treemap.DataSource = TreeMapPopulationData.GetData();
+				this.treemap.DataSource = TreeMapPopulationData.GetData();
 
 
 
-        }
+			}
 
-[ASPX]
-
-<div style="min-height:404px">
-
-<ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population">
+   ~~~
+   {:.prettyprint }
 
 
+   ~~~ html
 
-</ej:Treemap>
+		<div style="min-height:404px">
 
-</div>            
+		<ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population">
 
 
-{% endhighlight %}
+
+		</ej:Treemap>
+
+		</div>
+
+   ~~~
+   {:.prettyprint }
 
 The following image displays a TreeMap with default properties using the above code. 
 
 ![](Getting-Started_images/Getting-Started_img3.png) 
-
 
 
 ### GroupTreeMap Items using Levels
@@ -281,41 +258,31 @@ You can use GroupGap property to separate the items from every flat level and t
 The following code sample explains how to group TreeMap Items using ‘Levels’.
 
 
-{% highlight html %}
-
-[ASP]
-
-[ASPX.CS]
+{% highlight c# %}
 
   protected void Page_Load(object sender, EventArgs e)
 
-        {
+	{
 
-            this.treemap.DataSource = TreeMapPopulationData.GetData();
+		this.treemap.DataSource = TreeMapPopulationData.GetData();
 
+	}
 
+{% endhighlight %}
 
-        }
-
-[ASPX]
+{% highlight html %}
 
 <div style="min-height:404px">
 
 <ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population">
 
-
-
 <Levels>
 
        <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25">
 
-
-
        </ej:TreeMapLevel>
 
 </Levels>
-
-
 
 </ej:Treemap>
 
@@ -340,28 +307,21 @@ The ColorValuePath of TreeMap is a path to a field on the source object. You can
 
 The following code sample explains how to customize TreeMap Appearance by Range.
 
-
-
-{% highlight html %}
-[ASP]
-
-[ASPX.CS]
+{% highlight c# %}
 
   protected void Page_Load(object sender, EventArgs e)
 
-        {
+	{
 
-            this.treemap.DataSource = TreeMapPopulationData.GetData();
+		this.treemap.DataSource = TreeMapPopulationData.GetData();
 
+	}
 
+{% endhighlight %}
 
-        }
-
-[ASPX] 
+{% highlight html %}
 
 <ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth">
-
-
 
 <TreeMapRangeColorMappings>
 
@@ -375,8 +335,6 @@ The following code sample explains how to customize TreeMap Appearance by Range.
 
 </TreeMapRangeColorMappings>
 
-
-
 <Levels>
 
        <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25">
@@ -387,8 +345,6 @@ The following code sample explains how to customize TreeMap Appearance by Range.
 
 </Levels>
 
-
-
 </ej:Treemap>
 
 {% endhighlight  %}
@@ -397,7 +353,6 @@ The following code sample explains how to customize TreeMap Appearance by Range.
 The following screenshot displays customized TreeMap Appearance by Range.
 
 ![](Getting-Started_images/Getting-Started_img5.png) 
-
 
 
 ### Enable Tooltip
@@ -410,34 +365,23 @@ You can customize the Leaf level TreeMapitems using LeafItemSettings. The Label 
 
 The following code sample displays how the tooltip is enabled.
 
-
-
-{% highlight html %}
-[ASP]
-
-[ASPX.CS]
+{% highlight c# %}
 
   protected void Page_Load(object sender, EventArgs e)
 
-        {
+	{
+		this.treemap.DataSource = TreeMapPopulationData.GetData();
+	}
 
-            this.treemap.DataSource = TreeMapPopulationData.GetData();
+{% endhighlight %}
 
-
-
-        }
-
-[ASPX]
+{% highlight html %}
 
 <ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth">
-
-
 
 <LeafItemSettings LabelPath = "Country">
 
 </LeafItemSettings>
-
-
 
 <TreeMapRangeColorMappings>
 
@@ -451,8 +395,6 @@ The following code sample displays how the tooltip is enabled.
 
 </TreeMapRangeColorMappings>
 
-
-
 <Levels>
 
        <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25">
@@ -463,10 +405,7 @@ The following code sample displays how the tooltip is enabled.
 
 </Levels>
 
-
-
 </ej:Treemap>
-
 
 {% endhighlight %}
 
@@ -474,9 +413,7 @@ The following screenshot displays the TreeMap when the Tooltip is enabled.
 
  ![](Getting-Started_images/Getting-Started_img6.png) 
 
-
-
-_Figure_ _17__: TreeMap with tooltip option_
+_Figure_ _17_: _TreeMap with tooltip option_
 
 ### Legend
 
@@ -490,36 +427,23 @@ You can customize the labels of the legenditem using LegendLabel property of Ran
 
 The following code sample displays how to add labels for legend in a TreeMap.
 
-
-{% highlight html %}
-
-[ASP]
-
-[ASPX.CS]
+{% highlight c# %}
 
   protected void Page_Load(object sender, EventArgs e)
 
-        {
+	{
+		this.treemap.DataSource = TreeMapPopulationData.GetData();
+	}
 
-            this.treemap.DataSource = TreeMapPopulationData.GetData();
+{% endhighlight %}
 
-
-
-        }
-
-[ASPX]
+{% highlight html %}
 
 <ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth" ShowLegend = "true">
-
-
 
 <LeafItemSettings LabelPath = "Country"></LeafItemSettings>
 
 <TreeMapLegend IconHeight = "17" IconWidth = "17"></TreeMapLegend>
-
-
-
-
 
 <TreeMapRangeColorMappings>
 
@@ -533,19 +457,13 @@ The following code sample displays how to add labels for legend in a TreeMap.
 
 </TreeMapRangeColorMappings>
 
-
-
 <Levels>
 
        <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25">
 
-
-
        </ej:TreeMapLevel>
 
 </Levels>
-
-
 
 </ej:Treemap>
 
@@ -554,9 +472,4 @@ The following code sample displays how to add labels for legend in a TreeMap.
 
 The following screenshot displays the TreeMap when Legends are enabled.
 
-
-
 ![](Getting-Started_images/Getting-Started_img7.png) 
-
-
-

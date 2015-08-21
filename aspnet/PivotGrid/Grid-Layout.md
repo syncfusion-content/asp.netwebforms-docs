@@ -9,9 +9,7 @@ documentation: ug
 
 # Grid Layout
 
-
-
-Note: This feature is applicable only for OLAP datasource.
+> Note: This feature is applicable only for OLAP datasource.
 
 GridLayouts customize the position of summary elements in the PivotGrid control. Summary elements can be positioned at the top or bottom of each parent member.
 

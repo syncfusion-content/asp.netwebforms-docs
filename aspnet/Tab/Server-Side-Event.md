@@ -13,21 +13,28 @@ The following server side event is available in the Tab control.
 
 <table>
 <tr>
-<td>
-Event</td><td>
-Event Description</td><td>
-Argument Details</td></tr>
+<th>
+Event</th><th>
+Event Description</th><th>
+Argument Details</th></tr>
 <tr>
 <td>
 OnTabItemActive</td><td>
 It raises when Active Tab is changed.</td><td>
-Event Argument contains the following parameters:
-e.NewSelectedItem - Current Selected index value.
-e.OldSelectedItem - Previous index value.
-e.EventType - Event Name
-e.Arguments - Contain keys and values for prevActiveIndex and ActiveIndex.
+
+Event Argument contains the following parameters:<br/>
+
+e.NewSelectedItem - Current Selected index value.<br/>
+
+e.OldSelectedItem - Previous index value.<br/>
+
+e.EventType - Event Name<br/>
+
+e.Arguments - Contain keys and values for prevActiveIndex and ActiveIndex.<br/>
+
 </td></tr>
 </table>
+
  In the ASPX page, add the Tab control to configure Tab events.
 
 {% highlight html %}
@@ -108,13 +115,9 @@ e.Arguments - Contain keys and values for prevActiveIndex and ActiveIndex.
 
 </ej:Tab>
 
-
-
-
-
 {% endhighlight %}
 
-Then Define pizzaMenu___TabItemActive server side event in the code behind.
+Then Define pizzaMenu_TabItemActive server side event in the code behind.
 
 {% highlight c# %}
 
@@ -132,11 +135,4 @@ Then Define pizzaMenu___TabItemActive server side event in the code behind.
 
    }
 
-
-
-
-
 {% endhighlight %}
-
-
-

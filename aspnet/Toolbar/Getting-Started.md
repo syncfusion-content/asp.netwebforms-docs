@@ -167,7 +167,7 @@ Apply the styles specified in the code table to show the Toolbar itemsas follow
 
 
 
-Render remaining Toolbar Items
+### Render remaining Toolbar Items
 
 To achieve the requirements, you need to render all the Toolbar items. You can separate or group the Toolbar items. The separation or grouping of Toolbar items is achieved by setting the EnableSeprator property to true for the Toolbar control. Set the IsSeparator property to true for the ToolbarItem that needs to be separated with other ToolbarItem. In the following sections, you can learn how to initialize the remaining Toolbar items and how to group the toolbar items.
 
@@ -483,13 +483,11 @@ Run the above code to render the Toolbar items with separator.
 
 ![http://help.syncfusion.com/ug/js/ImagesExt/image33_14.png](Getting-Started_images/Getting-Started_img4.png) 
 
-
-
-Add Actions to Toolbar Items
+### Add Actions to Toolbar Items
 
 In the following section, you can learn how to render the header (Toolbar), content section (PDF viewer area) and how to set the action to Toolbar items.
 
-_Note: PDF reading or rendering is not illustrated here. Simulation of the PDF Reader app to demonstrate the usage of Toolbar control is provided. PDF rendering area is ignored._
+> Note: PDF reading or rendering is not illustrated here. Simulation of the PDF Reader app to demonstrate the usage of Toolbar control is provided. PDF rendering area is ignored.
 
 Initialize the content area and header as specified in the following code example.
 

@@ -17,8 +17,6 @@ In an ASPXpage, add the following code to render Scroller.
 
 {% highlight html %}
 
-
-
 <ej:Scroller ID="scrollcontent" runat="server" Height="170" Width="350" EnableTouchScroll="false">
 
       <ScrollerContent>
@@ -95,6 +93,8 @@ In an ASPXpage, add the following code to render Scroller.
 
 Define the style for Scroller control
 
+{% highlight css %}
+
         .sampleContent {
 
             width: 700px;
@@ -103,15 +103,9 @@ Define the style for Scroller control
 
         }
 
-
-
+{% endhighlight %}
 
 
 The following screenshot displays the output of the above code example.
 
-
-
-{ ![](Thumb-Scrolling_images/Thumb-Scrolling_img1.png) | markdownify }
-
-
-
+![](Thumb-Scrolling_images/Thumb-Scrolling_img1.png)

@@ -131,9 +131,6 @@ listboxsample.DataSource = GetData();
         }
 
 
-
-
-
         public class Languages
 
         {
@@ -141,7 +138,6 @@ listboxsample.DataSource = GetData();
             public string Name;
 
         }
-
 
 
 {% endhighlight %}
@@ -164,21 +160,13 @@ In the Design page, assign the values for DataTextField, DataValueField. In Data
 
 </div>
 
-
-
-
-
 {% endhighlight %}
 
 
 
 The following screenshot is the output for ListBox control with ObjectDataSource data binding.
 
-
-
  ![](Data-binding_images/Data-binding_img1.png)
-
-
 
 ## Remote data 
 
@@ -202,13 +190,7 @@ In an ASPX page, add an element to configure ListBox.
 
 </div>
 
-
-
-
-
 {% endhighlight %}
-
-
 
 {% highlight c# %}
 
@@ -223,16 +205,11 @@ listboxsample.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/";
         }
 
 
-
-
-
 {% endhighlight %}
 
 
 
 Output of the above steps.
-
-
 
  ![C:/Users/Rajaveni/Desktop/docs/UG images/remoteLB.PNG](Data-binding_images/Data-binding_img2.png)
 
@@ -248,7 +225,7 @@ Define an SQL data source in the web page and configure the data source as per y
 
 The following screenshot illustrates the sample database used.
 
- ![C:/Users/ApoorvahR/Desktop/1.png](Data-binding_images/Data-binding_img3.png)
+ ![](Data-binding_images/Data-binding_img3.png)
 
 
 
@@ -274,20 +251,13 @@ In the Design page, assign the values for DataTextField, DataValueField. In Data
 
 </asp:SqlDataSource>
 
-
-
-
-
 {% endhighlight %}
-
 
 
 The following screenshot is the output for ListBox control with SQLdata binding.
 
 
-
  ![](Data-binding_images/Data-binding_img4.png)
-
 
 
 ## LinqToSQL Data
@@ -304,7 +274,7 @@ The following screenshot illustrates the sample database used.
 
 
 
- ![C:/Users/ApoorvahR/Desktop/1.jpg](Data-binding_images/Data-binding_img5.jpeg)
+ ![](Data-binding_images/Data-binding_img5.jpeg)
 
 
 
@@ -327,21 +297,11 @@ In the Design page, assign values for DataTextField, DataValueField. In DataSour
 
     EntityTypeName="" TableName="Databindings"></asp:LinqDataSource>
 
-
-
-
-
 {% endhighlight %}
-
-
 
 Output of the above steps
 
-
-
 ![](Data-binding_images/Data-binding_img6.png)
-
-
 
 ## XML Data
 
@@ -350,8 +310,6 @@ ListBox provides XML data binding support to populate ListBox content. Therefore
 The following steps explain the XML data binding to ListBox.
 
 In the Design page, assign the values for DataTextField, DataValueField. In DataSourceID field assign the ID of the existing XML datasource. 
-
-
 
 {% highlight html %}
 
@@ -369,17 +327,9 @@ In the Design page, assign the values for DataTextField, DataValueField. In Data
 
 </asp:XmlDataSource>
 
-
-
-
-
 {% endhighlight %}
 
-
-
 Load the ListBox - xml data as follows.
-
-
 
 {% highlight xml %}
 
@@ -491,23 +441,10 @@ Load the ListBox - xml data as follows.
 
   </RootItem>
 
-
-
 </items>
-
-
-
-
 
 {% endhighlight %}
 
-
-
 The following screenshot is the output for ListBox control with XMLdata binding. 
 
-
-
 ![](Data-binding_images/Data-binding_img7.png)
-
-
-

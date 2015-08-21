@@ -7,11 +7,11 @@ control: ListBox
 documentation: ug
 ---
 
-## Overview
+# Overview
 
 The ListBox control provides a list of options and allows you to choose an item from the list. It includes several other HTML elements such as images, textboxes, check box, and radio buttons and so on. It also supports data binding, template options and multi-select options.
 
-Key Features 
+## Key Features 
 
 * ListBox Customization: Supports customization of the ListBox height and width. 
 * Data binding: Supports data binding with JSON data and remote data.

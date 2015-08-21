@@ -13,14 +13,6 @@ Grid allows you to refresh datasource dynamically after Gridinitialization. It i
 
  {% highlight html %}
 
-[ASP]
-
-
-
-[aspx]
-
-
-
 <ej:Button ID="refresh" runat="server" Type="Button" Text="Refresh" ClientSideOnClick="refresh">
 
 </ej:Button>
@@ -106,8 +98,6 @@ public partial class _Default : System.Web.UI.Page
         this.Grid.DataBind();
 
     }
-
-    [Serializable]
 
     public class Person
 

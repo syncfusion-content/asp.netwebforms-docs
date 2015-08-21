@@ -15,63 +15,62 @@ documentation: ug
 * The value attribute is used to set all pointer value in the Linear Gauge control. The attributes, minimum and maximum value are used to set the minimum value and maximum value for all the scales exist in the Linear Gauge control.
 
 
+{% highlight html %}
 
-[ASP]
+<%-- For Linear Gauge rendering-- %>
 
-&lt;%-- For Linear Gauge rendering-- %&gt;
+<%-- For setting Width, height and pointer value-- %>
 
-&lt;%-- For setting Width, height and pointer value-- %&gt;
+<ej:LinearGauge runat="server" ID="PointerGauge" Value="78" Width="300" Height="500" >
 
-&lt;ej:LinearGauge runat="server" ID="PointerGauge" Value="78" Width="300" Height="500" &gt;
+<Scales>
 
-&lt;Scales&gt;
+<%-- For setting Minimum and Maximum value-- %>
 
-&lt;%-- For setting Minimum and Maximum value-- %&gt;
+<%-- Adding scale collection-- %>
 
-&lt;%-- Adding scale collection-- %&gt;
+<ej:Scales  Minimum="10" Maximum="110" BackgroundColor="transparent" ShowBarPointers="true" ShowMarkerPointers="false">
 
-&lt;ej:Scales  Minimum="10" Maximum="110" BackgroundColor="transparent" ShowBarPointers="true" ShowMarkerPointers="false"&gt;
+<Border Color="transparent" Width="0"></Border>
 
-&lt;Border Color="transparent" Width="0"&gt;&lt;/Border&gt;
+<%--Adding barpointer collection-- %>
 
-&lt;%--Adding barpointer collection-- %&gt;
+<BarPointerCollection>
 
-&lt;BarPointerCollection&gt;
+<ej:BarPointers Width="5" BarPointerBackgroundColor="grey"></ej:BarPointers>
 
-&lt;ej:BarPointers Width="5" BarPointerBackgroundColor="grey"&gt;&lt;/ej:BarPointers&gt;
+</BarPointerCollection>
 
-&lt;/BarPointerCollection&gt;
+<%-- Adding Tick Collection-- %>
 
-&lt;%-- Adding Tick Collection-- %&gt;
+<TickCollection>
 
-&lt;TickCollection&gt;
+<ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c">
 
-&lt;ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c"&gt;
+<DistanceFromScale X="7" Y="0" />
 
-&lt;DistanceFromScale X="7" Y="0" /&gt;
+</ej:LinearTicks>
 
-&lt;/ej:LinearTicks&gt;
+<ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c">
 
-&lt;ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c"&gt;
+<DistanceFromScale X="7" Y="0" />
 
-&lt;DistanceFromScale X="7" Y="0" /&gt;
+</ej:LinearTicks>
 
-&lt;/ej:LinearTicks&gt;
+</TickCollection>
 
-&lt;/TickCollection&gt;
+</ej:Scales>
 
-&lt;/ej:Scales&gt;
+</Scales></ej:LinearGauge>
 
-&lt;/Scales&gt;&lt;/ej:LinearGauge&gt;
-
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
 
 
 ![](Basic-Settings_images/Basic-Settings_img1.png)
-{:.image }
+
 
 
 ## Adding frame
@@ -79,64 +78,66 @@ Execute the above code to render the following output.
 * Frame is the element that decides the appearance of the Linear Gauge. You can customize it by using the object called frame. It contains frame inner width, frame outer width and frame background image URL properties. 
 * The innerWidth of the frame defines the distance between the canvas element and the frame and the outerWidth refers to distance from the frame. backgroundUrl is used to set the background image for the frame.
 
+{% highlight html %}
 
+<%-- For Linear Gauge rendering-- %>
 
-[ASP]
+<ej:LinearGauge runat="server" ID="PointerGauge" EnableAnimation="false" >
 
+<Scales>
 
+<ej:Scales  BackgroundColor="transparent" ShowBarPointers="true" ShowMarkerPointers="false">
 
-&lt;%-- For Linear Gauge rendering-- %&gt;
+<Border Color="transparent" Width="0"></Border>
 
-&lt;ej:LinearGauge runat="server" ID="PointerGauge" EnableAnimation="false" &gt;
+<BarPointerCollection>
 
-&lt;Scales&gt;
+<ej:BarPointers BarPointerValue="78" Width="5" BarPointerBackgroundColor="grey"></ej:BarPointers>
 
-&lt;ej:Scales  BackgroundColor="transparent" ShowBarPointers="true" ShowMarkerPointers="false"&gt;
+</BarPointerCollection>
 
-&lt;Border Color="transparent" Width="0"&gt;&lt;/Border&gt;
+<TickCollection>
 
-&lt;BarPointerCollection&gt;
+<ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c">
 
-&lt;ej:BarPointers BarPointerValue="78" Width="5" BarPointerBackgroundColor="grey"&gt;&lt;/ej:BarPointers&gt;
+<DistanceFromScale X="7" Y="0" />
 
-&lt;/BarPointerCollection&gt;
+</ej:LinearTicks>
 
-&lt;TickCollection&gt;
+<ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c">
 
-&lt;ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c"&gt;
+<DistanceFromScale X="7" Y="0" />
 
-&lt;DistanceFromScale X="7" Y="0" /&gt;
+</ej:LinearTicks>
 
-&lt;/ej:LinearTicks&gt;
+</TickCollection>
 
-&lt;ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c"&gt;
+</ej:Scales>
 
-&lt;DistanceFromScale X="7" Y="0" /&gt;
+</Scales>
 
-&lt;/ej:LinearTicks&gt;
-
-&lt;/TickCollection&gt;
-
-&lt;/ej:Scales&gt;
-
-&lt;/Scales&gt;
-
-&lt;%-- setting Frame -- %&gt;
+<%-- setting Frame -- %>
 
 
 
-&lt;%-- For setting Frame innerwidth, outerwidth and background Image Url-- %&gt;
+<%-- For setting Frame innerwidth, outerwidth and background Image Url-- %>
 
-&lt;Frame InnerWidth="8" OuterWidth="10" BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light.png" /&gt;
+<Frame InnerWidth="8" OuterWidth="10" BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light.png" />
 
-&lt;/ej:LinearGauge&gt;
+</ej:LinearGauge>
+
+{% endhighlight %}
+
+
+
+
 
 
 
 Execute the above code to render the following output. 
 
-![C:/Users/giftline.jebamani/Desktop/a.png](Basic-Settings_images/Basic-Settings_img2.png)
-{:.image }
+![](Basic-Settings_images/Basic-Settings_img2.png)
+
 
 
 ## Appearance
@@ -146,69 +147,71 @@ Execute the above code to render the following output.
 * flatlight
 * flatdark
 
+{% highlight html %}
+
+<%-- For Linear Gauge rendering-- %>
+
+<%-- For setting theme, orientation, labelcolor-- %>
+
+<ej:LinearGauge runat="server" Orientation="Horizontal" LabelColor="black" ID="PointerGauge" Value="78" Width="400" Height="100" enableAnimation="false" Themes="flatLight" BackgroundColor="transparent">
+
+<%-- For Adding Scales-- %>
+
+<Scales>
+
+<ej:Scales direction="Clockwise"  BackgroundColor="transparent" ShowBarPointers="true" ShowMarkerPointers="false" >
+
+<Border Color="transparent" Width="0"></Border>
+
+<%-- For Adding Bar Pointers-- %>
+
+<BarPointerCollection>
+
+<ej:BarPointers Width="5" BarPointerBackgroundColor="grey"></ej:BarPointers>
+
+</BarPointerCollection>
+
+<%-- For Adding Ticks-- %>
+
+<TickCollection>
+
+<ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c">
+
+<DistanceFromScale X="0" Y="0" />
+
+</ej:LinearTicks>
+
+<ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c">
+
+<DistanceFromScale X="0" Y="0" />
+
+</ej:LinearTicks>
+
+</TickCollection>
+
+<%-- For Adding label pointers-- %>
+
+<LabelCollection>
+
+<ej:Labels Angle="90">
+
+<DistanceFromScale X="5" Y="-5" />
+
+</ej:Labels>
+
+</LabelCollection>
+
+</ej:Scales>
+
+</Scales>
+
+<Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light1.png" />
+
+</ej:LinearGauge>
 
 
-[ASP]
+{% endhighlight %}
 
-&lt;%-- For Linear Gauge rendering-- %&gt;
-
-&lt;%-- For setting theme, orientation, labelcolor-- %&gt;
-
-&lt;ej:LinearGauge runat="server" Orientation="Horizontal" LabelColor="black" ID="PointerGauge" Value="78" Width="400" Height="100" enableAnimation="false" Themes="flatLight" BackgroundColor="transparent"&gt;
-
-&lt;%-- For Adding Scales-- %&gt;
-
-&lt;Scales&gt;
-
-&lt;ej:Scales direction="Clockwise"  BackgroundColor="transparent" ShowBarPointers="true" ShowMarkerPointers="false" &gt;
-
-&lt;Border Color="transparent" Width="0"&gt;&lt;/Border&gt;
-
-&lt;%-- For Adding Bar Pointers-- %&gt;
-
-&lt;BarPointerCollection&gt;
-
-&lt;ej:BarPointers Width="5" BarPointerBackgroundColor="grey"&gt;&lt;/ej:BarPointers&gt;
-
-&lt;/BarPointerCollection&gt;
-
-&lt;%-- For Adding Ticks-- %&gt;
-
-&lt;TickCollection&gt;
-
-&lt;ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c"&gt;
-
-&lt;DistanceFromScale X="0" Y="0" /&gt;
-
-&lt;/ej:LinearTicks&gt;
-
-&lt;ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c"&gt;
-
-&lt;DistanceFromScale X="0" Y="0" /&gt;
-
-&lt;/ej:LinearTicks&gt;
-
-&lt;/TickCollection&gt;
-
-&lt;%-- For Adding label pointers-- %&gt;
-
-&lt;LabelCollection&gt;
-
-&lt;ej:Labels Angle="90"&gt;
-
-&lt;DistanceFromScale X="5" Y="-5" /&gt;
-
-&lt;/ej:Labels&gt;
-
-&lt;/LabelCollection&gt;
-
-&lt;/ej:Scales&gt;
-
-&lt;/Scales&gt;
-
-&lt;Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light1.png" /&gt;
-
-&lt;/ej:LinearGauge&gt;
 
 
 
@@ -217,7 +220,7 @@ Execute the above code to render the following output.
 Execute the above code to render the following output.
 
 ![](Basic-Settings_images/Basic-Settings_img3.png)
-{:.image }
+
 
 
 ## Responsive 
@@ -226,70 +229,73 @@ Execute the above code to render the following output.
 * The Linear Gauge renders with the specified value. When the browser changes its size, the canvas element checks the dimension with its parent element and if there are any changes in parent dimension, gauge control also changes the dimension based on its parent changes. You can enable this feature using enableResize property.
 
 
+{% highlight html %}
 
-[ASP]
+<%-- For Linear Gauge rendering-- %>
 
-&lt;%-- For Linear Gauge rendering-- %&gt;
+<%-- For enabling responsible layout-- %>
 
-&lt;%-- For enabling responsible layout-- %&gt;
+<ej:LinearGauge runat="server" Orientation="Horizontal" LabelColor="black" EnableResize="true" ID="PointerGauge" Value="78" Width="400" Height="100" enableAnimation="false" Themes="flatLight" BackgroundColor="transparent">
 
-&lt;ej:LinearGauge runat="server" Orientation="Horizontal" LabelColor="black" EnableResize="true" ID="PointerGauge" Value="78" Width="400" Height="100" enableAnimation="false" Themes="flatLight" BackgroundColor="transparent"&gt;
+<%-- For Adding Scale collection-- %>
 
-&lt;%-- For Adding Scale collection-- %&gt;
+<Scales>
 
-&lt;Scales&gt;
+<ej:Scales direction="Clockwise"  BackgroundColor="transparent" ShowBarPointers="true" ShowMarkerPointers="false" >
 
-&lt;ej:Scales direction="Clockwise"  BackgroundColor="transparent" ShowBarPointers="true" ShowMarkerPointers="false" &gt;
+<Border Color="transparent" Width="0"></Border>
 
-&lt;Border Color="transparent" Width="0"&gt;&lt;/Border&gt;
+<%-- For Adding bar pointer collection-- %>
 
-&lt;%-- For Adding bar pointer collection-- %&gt;
+<BarPointerCollection>
 
-&lt;BarPointerCollection&gt;
+<ej:BarPointers Width="5" BarPointerBackgroundColor="grey"></ej:BarPointers>
 
-&lt;ej:BarPointers Width="5" BarPointerBackgroundColor="grey"&gt;&lt;/ej:BarPointers&gt;
+</BarPointerCollection>
 
-&lt;/BarPointerCollection&gt;
+<%-- For Adding tick collection-- %>
 
-&lt;%-- For Adding tick collection-- %&gt;
+<TickCollection>
 
-&lt;TickCollection&gt;
+<ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c">
 
-&lt;ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c"&gt;
+<DistanceFromScale X="0" Y="0" />
 
-&lt;DistanceFromScale X="0" Y="0" /&gt;
+</ej:LinearTicks>
 
-&lt;/ej:LinearTicks&gt;
+<ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c">
 
-&lt;ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c"&gt;
+<DistanceFromScale X="0" Y="0" />
 
-&lt;DistanceFromScale X="0" Y="0" /&gt;
+</ej:LinearTicks>
 
-&lt;/ej:LinearTicks&gt;
+</TickCollection>
 
-&lt;/TickCollection&gt;
+<%-- For Adding label collection-- %>
 
-&lt;%-- For Adding label collection-- %&gt;
+<LabelCollection>
 
-&lt;LabelCollection&gt;
+<ej:Labels Angle="90">
 
-&lt;ej:Labels Angle="90"&gt;
+<DistanceFromScale X="5" Y="-5" />
 
-&lt;DistanceFromScale X="5" Y="-5" /&gt;
+</ej:Labels>
 
-&lt;/ej:Labels&gt;
+</LabelCollection>
 
-&lt;/LabelCollection&gt;
+</ej:Scales>
 
-&lt;/ej:Scales&gt;
+</Scales>
 
-&lt;/Scales&gt;
+<%-- For Adding Frame-- %>
 
-&lt;%-- For Adding Frame-- %&gt;
+<Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light1.png" />
 
-&lt;Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light1.png" /&gt;
+</ej:LinearGauge>
 
-&lt;/ej:LinearGauge&gt;
+{% endhighlight %}
+
+
 
 
 
@@ -297,6 +303,6 @@ Execute the above code to render the following output.
 
 
 ![](Basic-Settings_images/Basic-Settings_img4.png)
-{:.image }
+
 
 

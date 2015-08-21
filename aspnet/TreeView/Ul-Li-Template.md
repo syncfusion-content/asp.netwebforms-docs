@@ -127,9 +127,7 @@ In the ASPX page, add an element to configure TreeView.
 
 
 
-Define JavaScript for Ui-Li template
-
-
+### Define JavaScript for Ui-Li template
 
 In the following script example, you can delete the child node by clicking the Delete icon. This is achieved by the removeNode method in TreeView.
 
@@ -153,17 +151,10 @@ In the following script example, you can delete the child node by clicking the D
 
 </script>
 
-
-
-
-
 {% endhighlight %}
 
 
-
-Define css for Ui-Li template 
-
-
+### Define css for Ui-Li template 
 
 {% highlight css %}
 
@@ -207,13 +198,6 @@ Define css for Ui-Li template
 
 </style>
 
-
-
 {% endhighlight %}
 
-
-
 ![](Ul-Li-Template_images/Ul-Li-Template_img1.png) 
-
-
-

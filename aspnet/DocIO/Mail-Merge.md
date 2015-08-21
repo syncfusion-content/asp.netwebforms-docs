@@ -430,11 +430,11 @@ In the above example, the customers property in EmployeeDetails has customers re
 
 
 
-Note:
-
-* Nested mail merge for a region works when the group start and end is BeginGroup and EndGroup respectively.
-* Nested mail merge for a table works when the group start and end is TableStart and TableEnd respectively.
-* The commands list to retrieve the DataTable from the data source must be in the same order of Group which is preserved in the input WordDocument.
+> Note:
+>
+> * Nested mail merge for a region works when the group start and end is BeginGroup and EndGroup respectively.
+> * Nested mail merge for a table works when the group start and end is TableStart and TableEnd respectively.
+> * The commands list to retrieve the DataTable from the data source must be in the same order of Group which is preserved in the input WordDocument.
 
 ### Public Methods
 

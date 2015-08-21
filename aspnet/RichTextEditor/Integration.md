@@ -72,18 +72,12 @@ Add the following code in your ASPX page to initialize the RTE control.
 
     </div>
 
-
-
 {% endhighlight %}
 
 
-
-Script section:
-
-
+### Script section:
 
 {% highlight js %}
-
 
 
         angular.module('syncApp', ['ejangular'])
@@ -94,17 +88,9 @@ Script section:
 
             });
 
-
-
-
-
 {% endhighlight %}
 
-
-
 ![](Integration_images/Integration_img1.png)
-
-
 
 ## Knockout Binding
 
@@ -127,19 +113,21 @@ To create an ASPX page for your application and there is a live demo for your AS
 
 In the following example, one simple text area and one RTE control is created. Add some HTML code (“<h1>Description: The Rich Text Editor (RTE) control is an easy to render in client side. &lt;/h1&gt;”) in the normal text area. When you run the sample, you can get the result of this RTE text area. At runtime, add the following HTML code in normal text area.
 
-“&lt;div style="border: 2px solid #a1a1a1;padding: 10px 40px;background: #dddddd; width: 300px; border-radius: 25px;"&gt;<h2>Demo of current html content in text area</h2>&lt;/div&gt;”
+{% highlight html %}
 
+<div style="border: 2px solid #a1a1a1;padding: 10px 40px;background: #dddddd; width: 300px; border-radius: 25px;>
 
+	<h2>Demo of current html content in text area</h2>
+
+</div>
+
+{% endhighlight %}
 
 When you type this HTML code and focus out from the text area, you can get the result of HTML code in RTE editing area. You can apply any styles or changes to this content in RTE editing area by using the RTE Toolbar or manually. It is reflected in the normal text area as HTML code.
 
 Add the following code in your ASPX page to initialize the RTE control.
 
-
-
 {% highlight html %}
-
-
 
 <div ng-app="syncApp">
 
@@ -167,17 +155,11 @@ Add the following code in your ASPX page to initialize the RTE control.
 
     </div>
 
-
-
-
-
-
-
 {% endhighlight %}
 
 
 
-Configure the KO binding for RTE in script
+### Configure the KO binding for RTE in script
 
 
 

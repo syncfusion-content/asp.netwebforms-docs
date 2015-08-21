@@ -14,42 +14,35 @@ Angular JS
 Linear Gauge contains angular support. It is possible to add object as well as array object in the Linear Gauge. The two way binding support is given to the pointer value, minimum scale value and maximum scale value. 
 
 
-
-
-
-
-
-
-
 ## Rendering the Linear gauge
 
 ej-LinearGauge is the control tag, where ej is tag prefix and LinearGauge is the control name.
 
 Linear Gauge is rendered with the following code example. 
 
+{% highlight html %}
 
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
 
-&lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
+<div ng-app="syncApp">
 
-&lt;div ng-app="syncApp"&gt;
-
-&lt;div ng-controller="LinearGauge"&gt;
+<div ng-controller="LinearGauge">
 
 <ej-LinearGauge id="linearCore" e-readOnly="false" e-load="loadGaugeTheme"
 
 e-enableAnimation="false" e-labelColor="#8c8c8c">
 
-&lt;/ej-LinearGauge&gt;
+</ej-LinearGauge>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;/div&gt;
+</div>
 
-&lt;/div&gt;
+</div>
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 
-&lt;!—binding the value to the scope variables in application controller--&gt;
+<!—binding the value to the scope variables in application controller-->
 
 angular.module('syncApp', ['ejangular'])
 
@@ -59,20 +52,14 @@ $scope.nvalue = 0;
 
 });
 
-&lt;/script&gt;
+</script>
 
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
-
-
-
-
-
-
 ![](MVVM_images/MVVM_img1.png)
-{:.image }
+
 
 
 ## Adding Scale collection
@@ -81,15 +68,15 @@ Scale is an array object and the inner tag is used for it. You can extend the Ob
 
 Example: e-position-x and e-position-y. 
 
+{% highlight html %}
 
+<!--To Render the Linear gauge-->
 
-&lt;!--To Render the Linear gauge--&gt;
+<ej-LinearGauge id="linearCore">
 
-&lt;ej-LinearGauge id="linearCore"&gt;
+<!--Adding Scale collection to the Linear gauge-->
 
-&lt;!--Adding Scale collection to the Linear gauge--&gt;
-
-&lt;e-scales&gt;
+<e-scales>
 
 <e-scale e-width="4" e-border-color="transparent" e-border-width="0"
 
@@ -97,39 +84,45 @@ e-showBarPointers="false" e-showRanges="true" e-length="310"
 
 e-position-x="52" e-position-y="50" e-maximum="120">
 
-&lt;/e-scale&gt;
+</e-scale>
 
-&lt;/e-scales&gt;
+</e-scales>
 
-&lt;/ej-LinearGauge&gt;
+</ej-LinearGauge>
+
+{% endhighlight %}
+
+
 
 
 
 Execute the above code to render the following output.
 
 ![](MVVM_images/MVVM_img2.png)
-{:.image }
+
 
 
 ## Adding Marker Pointer collection
 
 Marker Pointer is an array object and the inner tag is used for it. You can extend the Object in the array collection such as, border with hyphen in the same tag.
 
-Example: e-border-color. 
+Example: e-border-color.
 
-&lt;!--To Render the Linear gauge--&gt;
+{% highlight html %}
 
-&lt;ej-LinearGauge id="linearCore"&gt;
+<!--To Render the Linear gauge-->
 
-&lt;!--Adding Scale collection to the Linear gauge--&gt;
+<ej-LinearGauge id="linearCore">
 
-&lt;e-scales&gt;
+<!--Adding Scale collection to the Linear gauge-->
 
-&lt;e-scale&gt;
+<e-scales>
 
-&lt;!--Adding marker pointer collection to the Scale collection--&gt;
+<e-scale>
 
-&lt;e-markerPointers&gt;
+<!--Adding marker pointer collection to the Scale collection-->
+
+<e-markerPointers>
 
 <e-markerPointer e-length="10" e-width="10" e-value="50"
 
@@ -137,22 +130,26 @@ e-backgrouundColor="#4D4D4D"
 
 e-border-color="#4D4D4D">
 
-&lt;/e-markerPointer&gt;
+</e-markerPointer>
 
-&lt;/e-markerPointers&gt;
+</e-markerPointers>
 
-&lt;/e-scale&gt;
+</e-scale>
 
-&lt;/e-scales&gt;
+</e-scales>
 
-&lt;/ej-LinearGauge&gt;
+</ej-LinearGauge>
+
+{% endhighlight %} 
+
+
 
 
 
 Execute the above code to render the following output.
 
 ![](MVVM_images/MVVM_img3.png)
-{:.image }
+
 
 
 ## Adding label collection
@@ -161,23 +158,25 @@ Label is also an array object and the inner tag is used for it. You can extend t
 
 Example: e-font-size. 
 
-&lt;!--To Render the Linear gauge--&gt;
+{% highlight html %}
 
-&lt;ej-LinearGauge id="linearCore"&gt;
+<!--To Render the Linear gauge-->
 
-&lt;!--Adding Scale collection to the Linear gauge--&gt;
+<ej-LinearGauge id="linearCore">
 
-&lt;e-scales&gt;
+<!--Adding Scale collection to the Linear gauge-->
 
-&lt;e-scale&gt;
+<e-scales>
 
-&lt;!--Adding marker pointer collection to the Scale collection--&gt;
+<e-scale>
 
-&lt;e-markerPointers&gt;…&lt;/e-markerPointers&gt;
+<!--Adding marker pointer collection to the Scale collection-->
 
-&lt;!--Adding label collection to the Scale collection--&gt;
+<e-markerPointers>…</e-markerPointers>
 
-&lt;e-labels&gt;
+<!--Adding label collection to the Scale collection-->
+
+<e-labels>
 
 <e-label  e-distanceFromScale-x="-10" e-distanceFromScale-y="0"
 
@@ -185,68 +184,78 @@ e-font-fontFamily="Segoe UI" e-font-fontStyle="bold"
 
 e-font-size="11px">
 
-&lt;/e-label&gt;
+</e-label>
 
-&lt;/e-labels&gt;
+</e-labels>
 
-&lt;/e-scale&gt;
+</e-scale>
 
-&lt;/e-scales&gt;
+</e-scales>
 
-&lt;/ej-LinearGauge&gt;
+</ej-LinearGauge>
+
+{% endhighlight %}
+
+
 
 
 
 Execute the above code to render the following output.
 
 ![](MVVM_images/MVVM_img4.png)
-{:.image }
+
 
 
 ## Adding Tick collection
 
 Tick is an array object and the inner tag is used for it.
 
-&lt;!--To Render the Linear gauge--&gt;
+{% highlight html %}
 
-&lt;ej-LinearGauge id="linearCore"&gt;
+<!--To Render the Linear gauge-->
 
-&lt;!--Adding Scale collection to the Linear gauge--&gt;
+<ej-LinearGauge id="linearCore">
 
-&lt;e-scales&gt;
+<!--Adding Scale collection to the Linear gauge-->
 
-&lt;e-scale&gt;
+<e-scales>
 
-&lt;!--Adding marker pointer collection to the Scale collection--&gt;
+<e-scale>
 
-&lt;e-markerPointers&gt;…&lt;/e-markerPointers&gt;
+<!--Adding marker pointer collection to the Scale collection-->
 
-&lt;!--Adding label collection to the Scale collection--&gt;
+<e-markerPointers>…</e-markerPointers>
 
-&lt;e-labels&gt;…&lt;/e-labels&gt;
+<!--Adding label collection to the Scale collection-->
 
-&lt;!--Adding tick collection to the Scale collection--&gt;
+<e-labels>…</e-labels>
 
-&lt;e-ticks&gt;
+<!--Adding tick collection to the Scale collection-->
 
-&lt;e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c"&gt;
+<e-ticks>
 
-&lt;/e-tick&gt;
+<e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c">
 
-&lt;/e-ticks&gt;
+</e-tick>
 
-&lt;/e-scale&gt;
+</e-ticks>
 
-&lt;/e-scales&gt;
+</e-scale>
 
-&lt;/ej-LinearGauge&gt;
+</e-scales>
+
+</ej-LinearGauge>
+
+{% endhighlight %}
+
+
 
 
 
 Execute the above code to render the following output.
 
 ![](MVVM_images/MVVM_img5.png)
-{:.image }
+
 
 
 ## Adding Range collection
@@ -255,41 +264,43 @@ Range is an array object and the inner tag is used for it. You can extend the Ob
 
 Example: e-border-color. 
 
-&lt;!--To Render the Linear gauge--&gt;
+{% highlight html %}
 
-&lt;ej-LinearGauge id="linearCore"&gt;
+<!--To Render the Linear gauge-->
 
-&lt;!--Adding Scale collection to the Linear gauge--&gt;
+<ej-LinearGauge id="linearCore">
 
-&lt;e-scales&gt;
+<!--Adding Scale collection to the Linear gauge-->
 
-&lt;e-scale&gt;
+<e-scales>
 
-
-
-&lt;!--Adding marker pointer collection to the Scale collection--&gt;
-
-&lt;e-markerPointers&gt;…&lt;/e-markerPointers&gt;
+<e-scale>
 
 
 
-&lt;!--Adding label collection to the Scale collection--&gt;
+<!--Adding marker pointer collection to the Scale collection-->
 
-&lt;e-labels&gt;…&lt;/e-labels&gt;
-
-
-
-&lt;!--Adding tick collection to the Scale collection--&gt;
-
-&lt;e-ticks&gt;…&lt;/e-ticks&gt;
+<e-markerPointers>…</e-markerPointers>
 
 
 
-&lt;!--Adding range collection to the Scale collection--&gt;
+<!--Adding label collection to the Scale collection-->
+
+<e-labels>…</e-labels>
 
 
 
-&lt;e-ranges&gt;
+<!--Adding tick collection to the Scale collection-->
+
+<e-ticks>…</e-ticks>
+
+
+
+<!--Adding range collection to the Scale collection-->
+
+
+
+<e-ranges>
 
 <e-range e-startValue="0" e-endValue="60" e-startWidth="4"
 
@@ -297,7 +308,7 @@ e-endWidth="4" e-backgroundColor="#F6B53F"
 
 e-border-color="#F6B53F">
 
-&lt;/e-range&gt;
+</e-range>
 
 <e-range e-startValue="60" e-endValue="120" e-startWidth="4"
 
@@ -305,55 +316,59 @@ e-endWidth="4" e-backgroundColor="#E94649"
 
 e-border-color="#E94649">
 
-&lt;/e-range&gt;
+</e-range>
 
-&lt;/e-ranges&gt;
+</e-ranges>
 
-&lt;/e-scale&gt;
+</e-scale>
 
-&lt;/e-scales&gt;
+</e-scales>
 
-&lt;/ej-LinearGauge&gt;
+</ej-LinearGauge>
+
+
+{% endhighlight %}
+
 
 
 
 Finally while running the above codes, the resultant gauge appears as follows.
 
 ![](MVVM_images/MVVM_img6.png)
-{:.image }
+
 
 
 ## Two Way Binding 
 
 Linear Gauge support the two way binding for the property value, minimum and maximum as mentioned earlier. Following code example explains how to achieve the two way binding to the Linear Gauge.
 
+{% highlight html %}
 
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
 
-&lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
+<div ng-app="syncApp">
 
-&lt;div ng-app="syncApp"&gt;
+<div ng-controller="LinearGauge">
 
-&lt;div ng-controller="LinearGauge"&gt;
+<div id="linearframe">
 
-&lt;div id="linearframe"&gt;
+<ej-LinearGauge id="linearCore" e-value="nvalue" e-readOnly="false" e-load="loadGaugeTheme" e-enableAnimation="false" e-labelColor="#8c8c8c">
 
-&lt;ej-LinearGauge id="linearCore" e-value="nvalue" e-readOnly="false" e-load="loadGaugeTheme" e-enableAnimation="false" e-labelColor="#8c8c8c"&gt;
+</ej-LinearGauge>
 
-&lt;/ej-LinearGauge&gt;
+</div>
 
-&lt;/div&gt;
+<input type="text" id="txtMax" e-value="nvalue" ej-numerictextbox ng-model="nvalue"  e-decimalplaces="2" e-showspinbutton="false" Style="width:110px"/>
 
-&lt;input type="text" id="txtMax" e-value="nvalue" ej-numerictextbox ng-model="nvalue"  e-decimalplaces="2" e-showspinbutton="false" Style="width:110px"/&gt;
+</asp:Content>
 
-&lt;/asp:Content&gt;
+</div>
 
-&lt;/div&gt;
+</div>
 
-&lt;/div&gt;
+<script type="text/javascript">
 
-&lt;script type="text/javascript"&gt;
-
-&lt;!—binding the value to the scope variables in application controller--&gt;
+<!—binding the value to the scope variables in application controller-->
 
 angular.module('syncApp', ['ejangular'])
 
@@ -363,14 +378,18 @@ $scope.nvalue = 50;
 
 });
 
-&lt;/script&gt;
+</script>
+
+{% endhighlight %}
+
+
 
 
 
 Execute the above code to render the following output.
 
 ![](MVVM_images/MVVM_img7.png)
-{:.image }
+
 
 
 ## Knockout JS
@@ -384,17 +403,15 @@ Execute the above code to render the following output.
 * maximum 
 * minimum
 
+{% highlight html %}
 
+<%--For Linear Gauge rendering-- %>
 
-[ASPX]
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
 
-&lt;%--For Linear Gauge rendering-- %&gt;
+<div ng-app="syncApp">
 
-&lt;asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection"&gt;
-
-&lt;div ng-app="syncApp"&gt;
-
-&lt;div ng-controller="LinearGauge"&gt;
+<div ng-controller="LinearGauge">
 
 <div id="linearCore" style="width:100%" data-bind="ejLinearGauge:({value:samplevalue,minimum:sampleminimum,maximum:samplemaximum,readOnly:false,enableAnimation: false,labelColor: '#8c8c8c', width: 500, load:'loadGaugeTheme',
 
@@ -434,15 +451,21 @@ border: { color: '#E94649' }, startWidth: 4, endWidth: 4
 
 }]
 
-}]})">&lt;/div&gt;
+}]})"></div>
 
-&lt;/asp:Content&gt;
+</asp:Content>
 
-&lt;/div&gt;
+</div>
 
-&lt;/div&gt;
+</div>
 
-&lt;script type="text/javascript"&gt;
+{% endhighlight %}
+
+
+
+{% highlight js %}
+
+<script type="text/javascript">
 
 window.viewModel = {
 
@@ -462,42 +485,15 @@ $("#sampleProperties").ejPropertiesPanel();
 
 });
 
-&lt;/script&gt;
+</script>
+
+{% endhighlight %}
+
+
 
 
 Execute the above code to render the following output.
 
 ![](MVVM_images/MVVM_img8.png)
-{:.image }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 _Linear Gauge with Knockout binding_
-

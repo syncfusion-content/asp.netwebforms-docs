@@ -19,13 +19,7 @@ RowTemplateID is used to customize all the rows in TreeGrid. For this property, 
 
 AltRowTemplateID is used to customize the alternative rows in TreeGrid. For this property, ID of the alternative row template is to be provided.
 
-
-
-
-
 {% highlight html %}
-
- [ASPX]
 
 <ej:TreeGrid runat="server" ID="TreeGridControlRowTemplate" ChildMapping="Children" RowTemplateId="rowTemplateScript" AltRowTemplateId="altRowTemplateScript">
 
@@ -45,23 +39,15 @@ AltRowTemplateID is used to customize the alternative rows in TreeGrid. For this
 
 </ej:TreeGrid>
 
-
-
 <script id="rowTemplateScript" type="text/x-jsrender">
 
-
-
  <tr style="background-color:#F2F2F2">
-
-
 
    <td class="border" style='height:30px;' >
 
       <div>{{:#data['EmployeeID']}}</div>
 
    </td>
-
-
 
    <td class="border" style='height:30px;' >
 
@@ -72,8 +58,6 @@ AltRowTemplateID is used to customize the alternative rows in TreeGrid. For this
       </div>
 
    </td>
-
-
 
    <td class="border">
 
@@ -95,37 +79,25 @@ AltRowTemplateID is used to customize the alternative rows in TreeGrid. For this
 
      </td>
 
-
-
      <td class="border" style='height:30px;' >
 
         <div>{{:#data['DOB']}}</div>
 
      </td>
 
-
-
    </tr>
-
-
 
  </script>
 
 <script id="altRowTemplateScript" type="text/x-jsrender">
 
-
-
   <tr style="background-color:#E6E6E6">
-
-
 
     <td class="border" style='height:30px;' >
 
        <div>{{:#data['EmployeeID']}}</div>
 
     </td>
-
-
 
     <td class="border" style='height:30px;' >
 
@@ -136,8 +108,6 @@ AltRowTemplateID is used to customize the alternative rows in TreeGrid. For this
       </div>
 
     </td>
-
-
 
     <td class="border">
 
@@ -159,36 +129,24 @@ AltRowTemplateID is used to customize the alternative rows in TreeGrid. For this
 
     </td>
 
-
-
     <td class="border" style='height:30px;' >
 
       <div>{{:#data['DOB']}}</div>
 
-    </td>                
-
-
-
+    </td> 
+	
   </tr>
-
-
 
 </script>
 
-
-
 <style type="text/css">
-
-
 
   .e-treegrid .e-selectionbackground {
 
      background-color:#CED8F6;
 
   } 
-
-
-
+  
   .border {
 
      border-color:#BDBDBD;
@@ -199,16 +157,11 @@ AltRowTemplateID is used to customize the alternative rows in TreeGrid. For this
 
    }
 
-
-
 </style>
-
 
 {% endhighlight %}
 
 {% highlight C# %}
-
-[ASPX.CS]
 
 public class TemplateData
 
@@ -234,8 +187,6 @@ public class TemplateData
 
 } 
 
-
-
 protected void Page_Load(object sender, EventArgs e)
 
 {
@@ -247,8 +198,6 @@ protected void Page_Load(object sender, EventArgs e)
   this.TreeGridControlRowTemplate.DataBind();
 
 } 
-
-
 
 public class RowTemplateData
 
@@ -317,20 +266,12 @@ public class RowTemplateData
   }
 
  }
-
-
-
+ 
 {% endhighlight %}
-
-
 
 The output of TreeGrid with Row Template is as follows.
 
-
-
 ![](Rows_images/Rows_img1.png) 
-
-
 
 ## Row Drag and Drop
 
@@ -341,8 +282,6 @@ The ShowTooltip property is used to enable or disable the tooltip. By default, t
 The following code explains about enabling the row drag and drop with the default tooltip in the TreeGrid.
 
 {% highlight html %}
-
-
 
 <ej:TreeGrid runat="server" ID="TreeGridControlDragAndDrop" … AllowDragAndDrop="true">	 //...
 
@@ -376,10 +315,6 @@ The TooltipItems property is used to customize the tooltip items. By using this 
 
 The following code shows how to render row drag tooltip with the desired field items
 
-
-
-
-
 {% highlight html %}
 
 <ej:TreeGrid runat="server" ID="TreeGridControlDragAndDrop" … AllowDragAndDrop="true">
@@ -392,19 +327,11 @@ The following code shows how to render row drag tooltip with the desired field i
 
 </ej:TreeGrid>
 
-
-
-
-
 {% endhighlight %}
 
 The TooltipTemplate property renders the template tooltip for row drag and drop in the TreeGrid control by using the JS Render template. You can provide either the id value of the script element or the script element to the property.
 
 The following code shows how to render row drag tooltip with tooltip template.
-
-
-
-
 
 {% highlight html %}
 
@@ -415,8 +342,6 @@ The following code shows how to render row drag tooltip with tooltip template.
         // ...
 
 </ej:TreeGrid>
-
-
 
 <asp:Content ID="Content2" runat="server" ContentPlaceHolderID="ScriptSection"> 
 
@@ -450,17 +375,6 @@ The following code shows how to render row drag tooltip with tooltip template.
 
 </asp:Content>
 
-
-
-
-
 {% endhighlight %}
 
-
-
  ![](Rows_images/Rows_img3.png) 
-
-
-
-
-

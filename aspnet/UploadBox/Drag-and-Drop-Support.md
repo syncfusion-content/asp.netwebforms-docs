@@ -47,7 +47,7 @@ In the ASPX page, configure element UploadBox element to enable the drag and dro
 
 {% endhighlight %}
 
-Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
+> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 In CSS, configure the custom styles for drag and drop.
 
@@ -195,7 +195,7 @@ The following screenshot displays the output for the above code.
 
 You can click anywhere in the droppable area to browse and upload the files. The droppable area behaves like a browse button.
 
-Droppable area behavior
+### Droppable area behavior
 
 Enable the AllowDragAndDrop property to achieve this feature. Next, set the ShowBrowseButton to False in the UploadBox control.
 

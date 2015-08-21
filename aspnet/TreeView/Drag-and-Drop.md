@@ -132,10 +132,13 @@ In the ASPX page, add the elements to configure TreeView.
 <table>
 <tr>
 <td>
-![](Drag-and-Drop_images/Drag-and-Drop_img1.png)
 
-{{ '_Node appearance while dragging_' | markdownify }}</td><td>
-{{ '_Node appearance after dropping_' | markdownify }}</td></tr>
+{{'![](Drag-and-Drop_images/Drag-and-Drop_img1.png)'| markdownify }}
+
+Node appearance while dragging</td><td>
+
+Node appearance after dropping</td></tr>
+
 </table>
 
 ### Allow Drop Child

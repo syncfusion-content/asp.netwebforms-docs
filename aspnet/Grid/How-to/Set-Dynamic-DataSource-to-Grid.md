@@ -15,10 +15,6 @@ For instance, consider a textbox above Grid and depending on its value, you can 
 
  {% highlight html %}
 
-[ASPX]
-
-
-
 <asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
 
     <div>

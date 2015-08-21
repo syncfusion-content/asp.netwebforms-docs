@@ -51,10 +51,6 @@ Add the following ASPX to render Tab with Header image.
 
 </ej:Tab>
 
-
-
-
-
 {% endhighlight %}
 
 Add the following CSS for header image customization.
@@ -169,6 +165,8 @@ The following code example is used to render the Tab control with Enable/Disable
 
 Add the following ASPX to render the Tab with Enable/Disable.
 
+{% highlight html %}
+
     <ej:Tab ID="dishtype" runat="server" Enabled="false" Width="600px">
 
         <Items>
@@ -197,7 +195,7 @@ Add the following ASPX to render the Tab with Enable/Disable.
 
     </ej:Tab>
 
-
+{% endhighlight %}
 
 The following screenshot illustrates the Tab with disabled format.
 

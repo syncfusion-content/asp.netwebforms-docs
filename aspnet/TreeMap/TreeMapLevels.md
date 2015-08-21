@@ -24,15 +24,8 @@ You can use GroupPath property for every flat level of the TreeMap control. It
 
 You can use GroupGap property to separate the items from every flat level and to differentiate the levels mentioned in the TreeMap control.
 
+{% highlight c# %}
 
-
-
-{% highlight html%}
-
-
-[ASP]
-
-[ASPX.CS]
 
   protected void Page_Load(object sender, EventArgs e)
 
@@ -44,23 +37,19 @@ You can use GroupGap property to separate the items from every flat level and t
 
         }
 
-[ASPX]
+{% endhighlight %}
+
+{% highlight html %}
 
 <ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth">
-
-
 
 <Levels>
 
        <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25">
 
-
-
        </ej:TreeMapLevel>
 
 </Levels>
-
-
 
 </ej:Treemap>
 
@@ -69,22 +58,12 @@ You can use GroupGap property to separate the items from every flat level and t
 ![](TreeMapLevels_images/TreeMapLevels_img1.png)
 
 
-
 ## HierarchicalLevel
 
 TreeMap Hierarchical level is used to define levels for hierarchical data collection that contains tree-structured data.
 
 
-
-
-{% highlight html %}
-
-
-[ASP]
-
-[ASPX.CS]
-
-
+{% highlight c# %}
 
 public partial class flatcollection : Page
 
@@ -152,19 +131,14 @@ public class SalesData
 
     }
 
+{% endhighlight %}
 
-
-[ASPX]
+{% highlight html %}
 
 <ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth">
-
-
 
 </ej:Treemap>       
 
 {% endhighlight %}
 
 ![C:/Users/ApoorvahR/Desktop/1.png](TreeMapLevels_images/TreeMapLevels_img2.png) 
-
-
-

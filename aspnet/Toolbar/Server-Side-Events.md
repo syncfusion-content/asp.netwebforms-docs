@@ -15,17 +15,18 @@ The server side events present in the Toolbar control are listed as follows.
 
 <table>
 <tr>
-<td>
-Event Name</td><td>
-Description</td><td>
-Arguments</td></tr>
+<th>
+Event Name</th><th>
+Description</th><th>
+Arguments</th></tr>
 <tr>
 <td>
 OnItemClick</td><td>
 Triggered when the toolbar item is clicked</td><td>
-e.Status-Status of the Toolbar
-e.EventType – Event Name
-e.Arguments – Contain keys and value of the Toolbar</td></tr>
+e.Status-Status of the Toolbar<br/><br/>
+e.EventType – Event Name<br/><br/>
+e.Arguments – Contain keys and value of the Toolbar<br/>
+</td></tr>
 </table>
 
 
@@ -35,15 +36,9 @@ In an ASPX page, add the Toolbar control with OnItemClick event as shown in the 
 
 {% highlight html %}
 
-
-
 <%--Refer Local Data section for style and data bound for toolbar items.--%>
 
 <ej:Toolbar ID="toolbarcontent" runat="server" Width="300px" OnItemClick="toolbarcontent_ItemClick" DataIdField="Id" DataTooltipTextField="Tooltip" DataSpriteCssClassField="Css"></ej:Toolbar>
-
-
-
-
 
 {% endhighlight %}
 
@@ -53,23 +48,12 @@ In the code behind, define the action to be performed.
 
 {% highlight c# %}
 
-
-
   protected void toolbarcontent_ItemClick(object sender, EventArgs e)
 
         {
 
-            Response.Write("Serverside event has been triggered");
-
-
+           Response.Write("Serverside event has been triggered");
 
         }
 
-
-
-
-
 {% endhighlight %}
-
-
-

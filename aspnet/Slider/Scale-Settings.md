@@ -37,13 +37,13 @@ In an ASPX page, define the Slider control with Default and Range Sliders and se
 
 The following screenshot displays the output of the above code example.
 
-Default Slider
+#### Default Slider
 
  ![](Scale-Settings_images/Scale-Settings_img1.png)
 
 
 
-Range Slider
+#### Range Slider
 
  ![](Scale-Settings_images/Scale-Settings_img2.png)
 
@@ -75,13 +75,13 @@ In an ASPX page, define the Slider control with Default and RangeSliders and set
 
 The following screenshot displays the output of the above code example.
 
-Default Slider
+#### Default Slider
 
 ![](Scale-Settings_images/Scale-Settings_img3.png)
 
 
 
-Range Slider
+#### Range Slider
 
 ![](Scale-Settings_images/Scale-Settings_img4.png)
 
@@ -119,13 +119,13 @@ In an ASPX page, define the Slider control with Default and RangeSliders and con
 
 The following screenshot displays the output of the above code example.
 
-Default Slider
+#### Default Slider
 
 ![](Scale-Settings_images/Scale-Settings_img5.png)
 
 
 
-   Range Slider
+#### Range Slider
 
 ![](Scale-Settings_images/Scale-Settings_img6.png)
 

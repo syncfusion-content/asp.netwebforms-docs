@@ -229,7 +229,7 @@ The following output is displayed as a result of the above code example.
 
 By default, the datasource for Dropdown Edit Column is set by Grid Control from its datasource. You can also bind external datasource to the Dropdown control of corresponding column in edit mode by using “DataSource” Grid Column property.
 
-Note: The external datasource must be given in a structure that it should contain properties “text” and  
+> Note: The external datasource must be given in a structure that it should contain properties “text” and  
 “value” which holds the data
 {% highlight html %}
 
@@ -1909,25 +1909,25 @@ Refer to the following steps to create WCF dataservice.
 
 The Grid control for Asp.Net allows you to bind and edit data from the local server. Refer to the following steps to edit local server data.
 
-1. Open Visual Studio 2012. In the File menu, click New and select Project. The New Project Dialog box is opened.
+1.  Open Visual Studio 2012. In the File menu, click New and select Project. The New Project Dialog box is opened.
 
-   ![](Editing_images/Editing_img21.png)
+    ![](Editing_images/Editing_img21.png)
 
 
 
-2. Select ASP.NETEmpty Web Application and click OK.
-3. Create empty folders named App_Data and Models in the root of the application.
-4. Add an HTML page in the root of the application. 
-5. Add the NORTHWND.MDF file into the App_Data folder, and the corresponding NORTHWND_log.ldf is created automatically.
-6. Right-click the Models folder in the Solution Explorer window and select the menu option Add New Item.
-7. In the Add New Item dialog, select the Data category.
+2.  Select ASP.NETEmpty Web Application and click OK.
+3.  Create empty folders named App_Data and Models in the root of the application.
+4.  Add an HTML page in the root of the application. 
+5.  Add the NORTHWND.MDF file into the App_Data folder, and the corresponding NORTHWND_log.ldf is created automatically.
+6.  Right-click the Models folder in the Solution Explorer window and select the menu option Add New Item.
+7.  In the Add New Item dialog, select the Data category.
 
-   ![](Editing_images/Editing_img22.png)
+    ![](Editing_images/Editing_img22.png)
 
-8. Select the ADO.NET Entity Data Model template, give the Entity Data Model the name Northwind.edmx, and click the Add button. Click Add to launch the Data Model Wizard. 
-9. In the Choose Model Contents step, choose the Generate from database option and click Next.
+8.  Select the ADO.NET Entity Data Model template, give the Entity Data Model the name Northwind.edmx, and click the Add button. Click Add to launch the Data Model Wizard. 
+9.  In the Choose Model Contents step, choose the Generate from database option and click Next.
 
-   ![](Editing_images/Editing_img23.png)
+    ![](Editing_images/Editing_img23.png)
 
 
 
@@ -1960,51 +1960,57 @@ The Grid control for Asp.Net allows you to bind and edit data from the local ser
 
 14. The WCF Data Service file is created. Open the Nothwnd.svs.cs file and set the NORTHWNDEntities as a class for the DataService.
 
-{% highlight html %}
+    ~~~ cs
 
-public class Northwnd : DataService</* TODO: put your data source class name here.*/>
+		public class Northwnd : DataService
 
-Replace the above line with the following:
+		</* TODO: put your data source class name here.*/>
 
-public class Northwnd : DataService<NORTHWNDEntities>
+		Replace the above line with the following:
 
-{% endhighlight %}
+		public class Northwnd : DataService<NORTHWNDEntities>
+
+    ~~~
+	{:.prettyprint }
 
 15. Add the highlighted line in the Nothwnd.svs.cs.
 
-{% highlight html %}
+    ~~~ cs
 
-public static void InitializeService(DataServiceConfiguration config)
+		public static void InitializeService(DataServiceConfiguration config)
 
-        {
+				{
 
-            // TODO: Set rules to indicate which entity sets and service operations are visible, updatable, etc.
+					// TODO: Set rules to indicate which entity sets and service operations are visible, updatable, etc.
 
-            // Examples:
+					// Examples:
 
-            // config.SetEntitySetAccessRule("MyEntityset", EntitySetRights.AllRead);
+					// config.SetEntitySetAccessRule("MyEntityset", EntitySetRights.AllRead);
 
-            // config.SetServiceOperationAccessRule("MyServiceOperation", ServiceOperationRights.All);
+					// config.SetServiceOperationAccessRule("MyServiceOperation", ServiceOperationRights.All);
 
-            config.DataServiceBehavior.MaxProtocolVersion = DataServiceProtocolVersion.V3;
+					config.DataServiceBehavior.MaxProtocolVersion = DataServiceProtocolVersion.V3;
 
-            config.SetEntitySetAccessRule("*", EntitySetRights.All);
+					config.SetEntitySetAccessRule("*", EntitySetRights.All);
 
-        }
+				}
 
-{% endhighlight %}
+
+    ~~~
+	{:.prettyprint }
 
 16. Refer to the following code sample to get the data from the local server.
 
-{% highlight html %}
+    ~~~ html
 
-var dataManger = ej.DataManager({
+		var dataManger = ej.DataManager({
 
-                url: "/model/Northwnd.svc/Orders"
+						url: "/model/Northwnd.svc/Orders"
 
-});
+		});
 
-{% endhighlight %}
+    ~~~
+	{:.prettyprint }
 
 17. Add the following codes into the HTML page.
 
@@ -2044,6 +2050,7 @@ var dataManger = ej.DataManager({
 
 
 {% endhighlight  %}
+
 The output for the above Grid creation with editing options code example is as follows.
 
 
@@ -2085,6 +2092,7 @@ The following code example illustrates you how to set RowPosition. Using RowPosi
 
         </ej:Grid>
 {% endhighlight  %}
+
 {% highlight c# %}
 
 

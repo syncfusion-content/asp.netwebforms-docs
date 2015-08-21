@@ -19,7 +19,7 @@ This helps enable better user interaction in Grid control and this uses the W3Câ
 
 This helps to support Grid control with keyboard interaction. The key descriptions are:
 
-
+{% highlight text %}
 
 Alt + j            = focus
 
@@ -56,6 +56,11 @@ Alt + Up Arrow       = Collapse selected group //to enable [grouping{allowGroupi
 Ctrl + Down Arrow = Expand All //to enable [grouping{allowGrouping:true}]
 
 Ctrl + UP Arrow      = Collapse All //to enable [grouping{allowGrouping:true}]
+
+{% endhighlight %}
+
+
+
 
 
 

@@ -16,21 +16,22 @@ ASP.NET WebForms UploadBox provides support to upload the files or photos within
 ![](Getting-Started_images/Getting-Started_img1.png)
 
 
-
 In the above screenshot, you can upload a resume with .png and .docx file extensions. This stops unsupported resume formats from being uploaded to the server.
 
 ### Create UploadBox widgets
 
 ASP.NET UploadBox widget has built-in features like Upload multiple files, Delete files, check the status of the file, whether it shows complete or failed, and retry uploading the files.  You can easily create the UploadBox by using the following steps.
 
-You can create a Web project and add the necessary assemblies, styles, and scripts with the help of the given [ASP-Getting Started](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm) Documentation.![](Getting-Started_images/Getting-Started_img2.png)
+You can create a Web project and add the necessary assemblies, styles, and scripts with the help of the given [ASP-Getting Started](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm) Documentation.
 
- Add the following code example to the ASPX page to render the UploadBox.
+![](Getting-Started_images/Getting-Started_img2.png)
 
+Add the following code example to the ASPX page to render the UploadBox.
 
 
 
 {% highlight html %}
+
 <div class="posupload">
 
 <b>Select a file to upload</b>
@@ -45,7 +46,8 @@ You can create a Web project and add the necessary assemblies, styles, and scrip
 
 Add the given styles to show the UploadBox with margin alignments.
 
-{% highlight c# %}
+{% highlight css %}
+
         .posupload
 
         {
@@ -128,7 +130,6 @@ public void ProcessRequest(HttpContext context)
 {% endhighlight %}
 
 
-
 Create a new handler file .ashx and save as removeFile.ashx and add the following code to it. 
 
 {% highlight c# %}
@@ -169,22 +170,20 @@ Run the code to render the following output.
 
 ![](Getting-Started_images/Getting-Started_img3.png)
 
-
-
 Run the project to see the following output for the given steps. The file is uploaded. 
 
 ![](Getting-Started_images/Getting-Started_img4.png)
-
-
 
 ## Set Restrictions to File Extensions
 
 In a real-time scenario, some file extensions are restricted. You can allow files or restrict files by using the following properties, fileallow and filedeny enabled in the UploadBox. 
 
-Note: The SaveUrl and RemoveUrl are the same as above.
+> Note: The SaveUrl and RemoveUrl are the same as above.
 
 Add the following code example to the script section.
-{% highlight c# %}
+
+{% highlight css %}
+
         var uploadobject;
 
         function allowfiletype() {
@@ -215,7 +214,7 @@ Add the following code example to the script section.
 
 Add input elements to create elements for file extensions.
 
-Note: Add the following input elements and two button elements to give file extensions that should support uploading.
+> Note: Add the following input elements and two button elements to give file extensions that should support uploading.
 
 {% highlight html %}
 
@@ -307,8 +306,9 @@ Note: Add the following input elements and two button elements to give file exte
 {% endhighlight %}
 
 
-1. Add the following Styles in the ASPX page to allow or deny files.
-{% highlight c# %}
+Add the following Styles in the ASPX page to allow or deny files.
+
+{% highlight css %}
         .posupload
 
         {
@@ -371,7 +371,7 @@ Note: Add the following input elements and two button elements to give file exte
 
 Run the code to render the following output with the file extensions.
 
-Note: You can restrict one or more files at a time by giving it as .html,.txt.
+> Note: You can restrict one or more files at a time by giving it as .html,.txt.
 
 In the UploadBox control, you can either allow files with specified extension only by using the ExtensionAllow property or deny files with specified extension only by using the ExtensionDeny property.
 
@@ -388,6 +388,3 @@ To upload multiple files in the UploadBox control, click the Browse button to se
 The following screenshot displays an UploadBox control with multiple files selected.
 
 ![](Getting-Started_images/Getting-Started_img6.png)
-
-
-

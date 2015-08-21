@@ -103,7 +103,7 @@ Add the following code example to the corresponding ASPX page to render the Wait
 
 In CSS, the custom styles need to be configured for the WaitingPopup.
 
-Note: Images for this sample are available at ‘installed location/Content/images’ and images are to be defined in the mentioned CSS. Then the images are displayed.
+> Note: Images for this sample are available at ‘installed location/Content/images’ and images are to be defined in the mentioned CSS. Then the images are displayed.
 
 {% highlight css %}
 
@@ -116,10 +116,7 @@ Note: Images for this sample are available at ‘installed location/Content/imag
             margin: 0 auto;
 
             width: 600px;
-
         }
-
-
 
         .block {
 

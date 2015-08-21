@@ -15,7 +15,6 @@ The following steps explain you the behaviour of Load-onDemand support in ListBo
 
 In an ASPX page, add an element to configure ListBox.
 
-__
 
 {% highlight html %}
 

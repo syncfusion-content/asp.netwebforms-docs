@@ -42,13 +42,13 @@ WFootnote class represents the structure and properties of footnotes and endnot
 * Footnote
 * Endnote
 
-Class Hierarchy
+### Class Hierarchy
 
- ParagraphItem
+ParagraphItem
 
-                  |
+|
 
-             WFootnote
+WFootnote
 
 
 

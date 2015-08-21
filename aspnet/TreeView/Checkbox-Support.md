@@ -395,11 +395,11 @@ public partial class Checkbox : System.Web.UI.Page
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td><td>
-Default value</td><td>
-Data type</td></tr>
+<th>
+Properties</th><th>
+Description</th><th>
+Default value</th><th>
+Data type</th></tr>
 <tr>
 <td>
 DataSource</td><td>

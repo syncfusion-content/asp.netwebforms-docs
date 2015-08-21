@@ -188,30 +188,13 @@ Configure the RTE toolbar items for Spanish culture in java script
     { text: "título 6", value: "h6", spriteCssClass: "e-h6" }
 
     ];
-
-
-
     $("#<%=rteSample.ClientID%>").ejRTE({ locale: "es-ES" });
-
-
 
     $("#<%=rteSample.ClientID%>").ejRTE("model.format", format_ES);
 
-
-
-
-
-
-
-
-
 {% endhighlight %}
 
-
-
 ![](Localization_images/Localization_img1.png)
-
-
 
  _Showcase of RTE with Spanish culture_
 

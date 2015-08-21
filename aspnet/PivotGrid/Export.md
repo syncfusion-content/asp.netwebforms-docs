@@ -9,16 +9,15 @@ documentation: ug
 
 # Export
 
- Note: This feature is applicable only for OLAP datasource.
+> Note: This feature is applicable only for OLAP datasource.
 
 The PivotGrid is exported from cell mode to a worksheet of an Excel Workbook. The Excel Workbook is saved from the browser to the local disk drive.
 
 The following code example illustrates how to save the document to Excel via service.
 
 For PivotGrid
+
 {% highlight C# %}
-
-
 
 public void ExportOptions(Stream stream)
 
@@ -62,9 +61,4 @@ pivotGridHelper.ExportToExcel(DataManager, newStreamReader(stream).ReadToEnd(),
 
 {% endhighlight %}
 
-
-
- ![Description: excelexport2](Export_images/Export_img1.png) 
-
-
-
+ ![Description: excelexport2](Export_images/Export_img1.png)

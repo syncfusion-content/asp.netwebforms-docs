@@ -13,9 +13,9 @@ To make a Tile as grouped tile, you can use the following mentioned pre-defined 
 
 <table>
 <tr>
-<td>
-Class Name</td><td>
-Explanation</td></tr>
+<th>
+Class Name</th><th>
+Explanation</th></tr>
 <tr>
 <td>
 group</td><td>
@@ -246,7 +246,6 @@ To render small-col-2 grouped tile, you need to render the number of tiles insid
 
 
 ![](Add-Group-Tiles_images/Add-Group-Tiles_img1.png) 
-{:.image }
 
 
 _Tile - Group Tiles_

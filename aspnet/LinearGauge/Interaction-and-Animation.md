@@ -13,69 +13,65 @@ documentation: ug
 * Linear Gauge contains another attractive concept called Animation. The animation option enables the movement of the pointer from the minimum value to the current value. You can use animation option to change the pointer value dynamically. You can enable/ disable it using enableAnimation property. To enable animationset enableAnimation to ‘true’. 
 * By default it holds the true value. You can control the speed of the pointer during animating using animationSpeed. It is a numerical value that holds the time in mille seconds. That is when setting value is 1000, it is considered as 1 second.
 
+{% highlight html %}
 
+<%-- For Linear Gauge rendering -- %>
 
-[ASP]
+<%-- For enable Animation, Animation speed and user interaction-- %>
 
-&lt;%-- For Linear Gauge rendering -- %&gt;
+<ej:LinearGauge runat="server" Value="78" ID="PointerGauge"  enableAnimation="true" AnimationSpeed="1000" ReadOnly="false">
 
-&lt;%-- For enable Animation, Animation speed and user interaction-- %&gt;
+<%-- For Adding Scale collection-- %>
 
-&lt;ej:LinearGauge runat="server" Value="78" ID="PointerGauge"  enableAnimation="true" AnimationSpeed="1000" ReadOnly="false"&gt;
+<Scales>
 
-&lt;%-- For Adding Scale collection-- %&gt;
+<ej:Scales BackgroundColor="transparent" ShowBarPointers="true">
 
-&lt;Scales&gt;
+<Border Color="transparent" Width="0"></Border>
 
-&lt;ej:Scales BackgroundColor="transparent" ShowBarPointers="true"&gt;
+<%-- For Adding bar pointer collection-- %>
 
-&lt;Border Color="transparent" Width="0"&gt;&lt;/Border&gt;
+<BarPointerCollection>
 
-&lt;%-- For Adding bar pointer collection-- %&gt;
+<ej:BarPointers BarPointerValue="78" Width="5" BarPointerBackgroundColor="grey"></ej:BarPointers>
 
-&lt;BarPointerCollection&gt;
+</BarPointerCollection>
 
-&lt;ej:BarPointers BarPointerValue="78" Width="5" BarPointerBackgroundColor="grey"&gt;&lt;/ej:BarPointers&gt;
+<%-- For Adding Bar pointer Collection-- %>
 
-&lt;/BarPointerCollection&gt;
+<MarkerPointerCollection>
 
-&lt;%-- For Adding Bar pointer Collection-- %&gt;
+<ej:MarkerPointers width="10" Length="10"  MarkerBackgroundColor="grey" MarkerdistanceFromScale="-12"></ej:MarkerPointers>
 
-&lt;MarkerPointerCollection&gt;
+</MarkerPointerCollection>
 
-&lt;ej:MarkerPointers width="10" Length="10"  MarkerBackgroundColor="grey" MarkerdistanceFromScale="-12"&gt;&lt;/ej:MarkerPointers&gt;
+<%-- For Adding Tick collection-- %>
 
-&lt;/MarkerPointerCollection&gt;
+<TickCollection>
 
-&lt;%-- For Adding Tick collection-- %&gt;
+<ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c">
 
-&lt;TickCollection&gt;
+<DistanceFromScale X="7" Y="0" />
 
-&lt;ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c"&gt;
+</ej:LinearTicks>
 
-&lt;DistanceFromScale X="7" Y="0" /&gt;
+<ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c">
 
-&lt;/ej:LinearTicks&gt;
+<DistanceFromScale X="7" Y="0" />
 
-&lt;ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c"&gt;
+</ej:LinearTicks>
 
-&lt;DistanceFromScale X="7" Y="0" /&gt;
+</TickCollection>
 
-&lt;/ej:LinearTicks&gt;
+</ej:Scales>
 
-&lt;/TickCollection&gt;
+</Scales>
 
-&lt;/ej:Scales&gt;
+</ej:LinearGauge>
 
-&lt;/Scales&gt;
-
-&lt;/ej:LinearGauge&gt;
-
+{% endhighlight %}
 
 
 Execute the above code to render the following output.
 
 ![](Interaction-and-Animation_images/Interaction-and-Animation_img1.png)
-{:.image }
-
-

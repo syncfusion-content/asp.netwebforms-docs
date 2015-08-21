@@ -119,7 +119,7 @@ In an ASPX page, add an element to configure ListBox.
 Output of the above steps
 
 
- ![C:/Users/Rajaveni/Desktop/docs/UG images/heightwidth.PNG](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 
 
@@ -225,7 +225,7 @@ In an ASPX page, add an elementto configure ListBox.
 Output of the above steps.
 
 
- ![C:/Users/Rajaveni/Desktop/docs/UG images/round.PNG](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 
 
@@ -251,11 +251,11 @@ By default, there are 13 themes support available for ListBox control namely,
 
 The following screenshot illustrates the ListBox with Flat-lime and Flat-Saffron built-in themes.
 
- ![C:/Users/Rajaveni/Desktop/docs/UG images/blog/flatlime.png](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 
 
- ![C:/Users/Rajaveni/Desktop/docs/UG images/blog/flatsaffron.png](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 
 
 
@@ -360,7 +360,7 @@ In an ASPX page, add an elementto configure ListBox.
 
 
 
-Configure the CSS styles to apply on ListBox.
+### Configure the CSS styles to apply on ListBox.
 
 
 
@@ -385,7 +385,7 @@ Configure the CSS styles to apply on ListBox.
 Output of the above steps.
 
 
- ![C:/Users/Rajaveni/Desktop/docs/UG images/cssclass.PNG](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
+ ![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
 
 
 

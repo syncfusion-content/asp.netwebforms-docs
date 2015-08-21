@@ -360,5 +360,5 @@ ej.Pager.locale["en-US"] = {
 
 {% endhighlight %}
 
-Note: You can get the various minified and unminified formatted culture script files from the local folder “C:\Program Files (x86)\Syncfusion\Essential Studio\xx.x.x.xx\JavaScript\assets\external\cultures”. xx.x.x.xx denotes the current version of Essential Studio, for example 12.4.0.34.
+> Note: You can get the various minified and unminified formatted culture script files from the local folder “C:\Program Files (x86)\Syncfusion\Essential Studio\xx.x.x.xx\JavaScript\assets\external\cultures”. xx.x.x.xx denotes the current version of Essential Studio, for example 12.4.0.34.
 

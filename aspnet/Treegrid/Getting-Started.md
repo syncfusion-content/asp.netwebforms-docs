@@ -17,85 +17,77 @@ This section explains how to create a TreeGrid control in your application with 
 
 
 
-1.First create a new ASP.NET Web Form project; please refer the [ASP-Getting Started documentation](http://help.syncfusion.com/ug/js/default.htm) to create new project and add necessary DLL’s and script files.
+1. First create a new ASP.NET Web Form project; please refer the [ASP-Getting Started documentation](http://help.syncfusion.com/ug/js/default.htm) to create new project and add necessary DLL’s and script files.
 
-      2.Create the web form  named as default and add the following template
+2. Create the web form  named as default and add the following template
 
-{% highlight html %}
+   ~~~ html
 
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs"Inherits="Gantt_ASP.TreeGrid._default" %>
+		<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs"Inherits="Gantt_ASP.TreeGrid._default" %>
 
+		<!DOCTYPE html>
 
+		<html xmlns="http://www.w3.org/1999/xhtml">
 
-<!DOCTYPE html>
+		<head id="Head1" runat="server">   
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+		    <title>Getting started for ASP.NET TreeGrid Control</title>
 
-<head id="Head1" runat="server">   
+		    <link href=" http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
-    <title>Getting started for ASP.NET TreeGrid Control</title>
+		    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 
-    <link href=" http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+		    <script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
 
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-    <script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
+		    <script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js"></script>
 
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+		    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js" type="text/javascript"></script>
 
-    <script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js"></script>
+		</head>
 
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js" type="text/javascript"></script>
+   ~~~
+   {:.prettyprint }
 
-</head>
+3. Initialize the TreeGrid with empty dataSource like below code snippet
 
+   ~~~ html
 
+		//...
 
-{% endhighlight %}
+		<body>
 
-3.Initialize the TreeGrid with empty dataSource like below code snippet
+			<form id="form1" runat="server">
 
-{% highlight html %}
+			 <ej:TreeGrid runat="server" ID="TreeGridControlDefault" ChildMapping="SubTasks" TreeColumnIndex="1">
 
-//...
+					<columns>
 
-<body>
+						<ej:TreeGridColumn HeaderText="Task Id" Field="TaskID" Width="45" />
 
-    <form id="form1" runat="server">
+						<ej:TreeGridColumn HeaderText="Task Name" Field="TaskName" />
 
-     <ej:TreeGrid runat="server" ID="TreeGridControlDefault" ChildMapping="SubTasks" TreeColumnIndex="1">
+						<ej:TreeGridColumn HeaderText="Start Date" Field="StartDate" />
 
-            <columns>
+						<ej:TreeGridColumn HeaderText="End Date" Field="EndDate" />
 
-                <ej:TreeGridColumn HeaderText="Task Id" Field="TaskID" Width="45" />
+						<ej:TreeGridColumn HeaderText="Duration" Field="Duration" />
 
-                <ej:TreeGridColumn HeaderText="Task Name" Field="TaskName" />
+						<ej:TreeGridColumn HeaderText="Progress" Field="Progress" />
 
-                <ej:TreeGridColumn HeaderText="Start Date" Field="StartDate" />
+					</columns>            
 
-                <ej:TreeGridColumn HeaderText="End Date" Field="EndDate" />
+				</ej:TreeGrid>
 
-                <ej:TreeGridColumn HeaderText="Duration" Field="Duration" />
+			</form>
 
-                <ej:TreeGridColumn HeaderText="Progress" Field="Progress" />
+		</body>
 
-            </columns>            
+   ~~~
+   {:.prettyprint }
 
-        </ej:TreeGrid>
-
-    </form>
-
-</body>
-
-
-
-{% endhighlight %}
-
-
-
-![](Getting-Started_images/Getting-Started_img2.png) 
-
-
+   ![](Getting-Started_images/Getting-Started_img2.png) 
 
 4.Create data  source in default.aspx.cs file and assign the data source to the TreeGrid control
 
@@ -112,8 +104,6 @@ protected void Page_Load(object sender, EventArgs e)
     this.TreeGridControlDefault.DataBind();
 
 }
-
-
 
 public class TaskDetails
 
@@ -354,18 +344,12 @@ public class TaskDetails
             }
 
         }
-
-
-
+		
 {% endhighlight %}
 
 A TreeGrid is displayed as the output in the following screenshot.
 
-
-
 ![](Getting-Started_images/Getting-Started_img3.png)
-
-
 
 
 ## Enable Sorting
@@ -388,21 +372,14 @@ Enable the multicolumn sorting in TreeGrid by setting AllowMultiSorting as True.
 
 </ej:TreeGrid>
 
-
-
 {% endhighlight %}
-
-
 
 ![](Getting-Started_images/Getting-Started_img4.png) 
 
 
-
-Enable Editing
+### Enable Editing
 
 You can enable Editing in TreeGrid by using the EditSettings as follows.
-
-
 
 {% highlight html %}
 
@@ -413,8 +390,6 @@ You can enable Editing in TreeGrid by using the EditSettings as follows.
     <EditSettings AllowEditing="true" EditMode="CellEditing"/>
 
 </ej:TreeGrid>
-
-
 
 {% endhighlight %}
 
@@ -455,14 +430,8 @@ You can set the editor type for a particular column as follows.
 </ej:TreeGrid>
 
 
-
 {% endhighlight %}
-
-
 
 The output of the DateTimePicker editor in TreeGrid control is as follows.
 
 ![](Getting-Started_images/Getting-Started_img5.png) 
-
-
-

@@ -14,10 +14,10 @@ This section explains briefly on how to create a Tile control in your applicatio
 ## Create your first Tile in JavaScript
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
-{:.image }
 
 
-Create Tile Widget
+
+### Create Tile Widget
 
 The following steps guide you to add group of Tiles for creating a home page that displays all the available applications.
 
@@ -94,7 +94,7 @@ Create a div element that acts as a container for Tile control. Initialize ejTil
 Run the above code to render the following output. 
 
 ![](Getting-Started_images/Getting-Started_img2.png) 
-{:.image }
+
 
 
 In this scenario, a home page is designed by using tile for easy navigation. Therefore, you require many different sizes of tiles aligned in a grid-like manner. To align the tiles automatically, define the necessary tile elements inside the wrapper element that contains a ‘column’ class. You can define all columns elements under the wrapper element with ‘group’ class to make ‘n’ number of tiles as a grouped tile.
@@ -198,6 +198,6 @@ Refer to the following code example.
 Run the above code to render the following output.
 
 ![](Getting-Started_images/Getting-Started_img3.png)
-{:.image }
+
 
 

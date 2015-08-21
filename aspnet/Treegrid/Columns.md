@@ -21,8 +21,6 @@ You can change the width of the column in TreeGrid to show the entire text of 
 
 {% highlight html %}
 
-
-
 <ej:TreeGrid runat="server" ID="TreeGridControlDefault" 
 
              AllowColumnResize="true"
@@ -41,17 +39,9 @@ Column Template is used to customize the column’s look and feel based on requi
 
 The following code example shows you how to display the icon in the TreeGrid column.
 
-
-
-
-
 {% highlight c# %}
 
-
-
 TreeGrid.aspx.cs
-
-
 
 using System;
 
@@ -366,7 +356,7 @@ Filtering modes can be toggled between Immediate and OnEnter modes using FilterB
 
 Filtering type can be defined by FilterEditType property in each column object.
 
-FilterEditType:
+### FilterEditType:
 
 * Stringedit
 * Numericedit
@@ -375,18 +365,11 @@ FilterEditType:
 * Datepicker
 * Datetimepicker
 
-
-
-
-
-
-
 {% highlight html %}
 
 <ej:TreeGrid runat="server" ID="TreeGridControlFiltering" ChildMapping="SubTasks" AllowFiltering="true" TreeColumnIndex="1"> 
 
 //..
-
           <columns>
 
                 <ej:TreeGridColumn HeaderText="Task Id" Field="TaskID" Width="45" EditType="Numeric" AllowFiltering="false"/>
@@ -407,8 +390,6 @@ FilterEditType:
 
    </ej:TreeGrid>
 
-
-
 {% endhighlight %}
 
 
@@ -423,10 +404,8 @@ The following screenshot displays the column filtering in TreeGrid control.
 
 TreeGrid supports enabling and disabling the visibility of the columns dynamically with the ShowColumnChooser property. By using this property, the visibility of the custom columns can also be toggled. The Column chooser option is rendered as sub menu item within column menu in the TreeGrid columns.
 
- ![](Columns_images/Columns_img3.png) 
-
-
-
+ ![](Columns_images/Columns_img3.png)
+ 
 The column menu is enabled with the ShowColumnChooser property and the default value for this property is false
 
 The column menu provides the following options
@@ -438,10 +417,6 @@ The column menu provides the following options
 The Sort Ascending and Sort Descending options are enabled or disabled by using the AllowSorting property. With these options, single level sorting can be performed in the TreeGrid columns. To perform multilevel sorting, the AllowMultiSorting property should be enabled. 
 
 You can also disable the visibility of the particular column in column collection manually by setting the Visible property to false.
-
-
-
-
 
 {% highlight html %}
 
@@ -465,13 +440,6 @@ You can also disable the visibility of the particular column in column collectio
 
 </ej:TreeGrid>
 
-
-
 {% endhighlight %}
 
-
-
 ![](Columns_images/Columns_img4.png) 
-
-
-

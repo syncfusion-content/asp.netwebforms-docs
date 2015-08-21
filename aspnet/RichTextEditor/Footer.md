@@ -22,11 +22,7 @@ Refer to the following code example to enable the footer in RTE.
 
 {% highlight html %}
 
-
-
 <ej:RTE ID="rteSample" Width="850" runat="server" ShowFooter="true"></ej:RTE>
-
-
 
 {% endhighlight %}
 
@@ -64,7 +60,7 @@ You can delete all the existing contents in editing area with one click of this 
 
 RTE provides support to resize the RTE. You can get this option from the right corner of the footer. Click the RTE resize handle and drag to reduce or increase the table size. Note that this method proportionally resizes RTE by split dimension in the form of columns and rows, but does not change RTE content. 
 
-Customize the RTE Resizing
+### Customize the RTE Resizing
 
 You can customize the RTE sizing with the help of EnableResize property. To customize this, enable the ShowFooter property so that resize handle is displayed. When ShowFooter is set to true, the default value of EnableResize is true that allows you to resize the control
 
@@ -74,19 +70,10 @@ Add the following code in your ASPX page.
 
 {% highlight html %}
 
-
-
 <ej:RTE ID="RTESample" Width="650" Height="440" runat="server" EnableResize="false" ShowFooter="true">        
 
 </ej:RTE>
 
-
-
 {% endhighlight %}
 
-
-
 ![](Footer_images/Footer_img3.png)
-
-
-

@@ -17,21 +17,12 @@ In the ASPX page, add the UploadBox element.
 
 {% highlight html %}
 
-
-
 <ej:UploadBox ID="Uploadbox" runat="server" SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx" Enabled="false" ></ej:UploadBox>
-
-
-
-
 
 {% endhighlight %}
 
-Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
+> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 The following screenshot displays the output for Disabled UploadBox.
 
 ![](Enable-or-Disable-the-UploadBox_images/Enable-or-Disable-the-UploadBox_img1.png)
-
-
-

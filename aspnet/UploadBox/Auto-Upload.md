@@ -13,13 +13,17 @@ The UploadBox control provides support to upload the file automatically once the
 
 By default, the value is set to false, and so the Upload button is clicked to upload the files. In the following code block, the AutoUpload is set to false so that the selected file is uploaded only on Upload button click.
 
-  <ej:UploadBox ID="Uploadbox" runat="server" SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx" AutoUpload="false" ></ej:UploadBox>  
+{% highlight html %}
 
+<ej:UploadBox ID="Uploadbox" runat="server" SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx" AutoUpload="false" >
 
+</ej:UploadBox>   
+
+{% endhighlight %} 
 
 The following screenshot displays the output when AutoUpload is set to false.
 
- ![](Auto-Upload_images/Auto-Upload_img1.png)
+![](Auto-Upload_images/Auto-Upload_img1.png)
 
 
 
@@ -27,15 +31,16 @@ The following steps explain the configuration of the AutoUpload property in the 
 
 In the ASPX page, add the UploadBox element.
 
+{% highlight html %}
 
+<ej:UploadBox ID="Uploadbox" runat="server" SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx" AutoUpload="true" >
 
-  <ej:UploadBox ID="Uploadbox" runat="server" SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx" AutoUpload="true" ></ej:UploadBox>  
+</ej:UploadBox>  
 
- Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
+{% endhighlight %}  
+
+> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 The following screenshot displays the output.
 
- ![](Auto-Upload_images/Auto-Upload_img2.png)
-
-
-
+![](Auto-Upload_images/Auto-Upload_img2.png)

@@ -22,7 +22,7 @@ You can create a Grid with a highly customizable look and feel. You can use Gr
 
 
 1. Create a Syncfusion ASP.NET Web form application.
-2.  Add a Grid in the Index.aspx page. 
+2. Add a Grid in the Index.aspx page. 
 
    ![](Getting-Started_images/Getting-Started_img2.png)
 
@@ -31,97 +31,80 @@ You can create a Grid with a highly customizable look and feel. You can use Gr
    ![](Getting-Started_images/Getting-Started_img3.png)
 
 
+   ~~~ html
 
+		<ej:Grid ID="FlatGrid" runat="server" DataSourceID="SqlData">
 
-{% highlight html%}
-
-
-
-
-<ej:Grid ID="FlatGrid" runat="server" DataSourceID="SqlData">
-
-</ej:Grid>
+		</ej:Grid>
 
 
 
-<asp:SqlDataSource runat="server" ID="SqlData" ConnectionString="<%$ ConnectionStrings:SQLConnectionString %>" SelectCommand="SELECT * FROM [Orders]"></asp:SqlDataSource>
+		<asp:SqlDataSource runat="server" ID="SqlData" ConnectionString="<%$ ConnectionStrings:SQLConnectionString %>" SelectCommand="SELECT * FROM [Orders]"></asp:SqlDataSource>
 
+   ~~~
+   {:.prettyprint }
+   
+   > Note: Create a connection string in Web.config file using SQL database.
 
-{% endhighlight %}
+   ~~~ html
 
-
-   Note: Create a connection string in Web.config file using SQL database.
-
-{% highlight html %}
-
-
-
-
-<connectionStrings>
+		<connectionStrings>
 
 
 
-     <add name="SQLConnectionString" connectionString="Data Source=
+			 <add name="SQLConnectionString" connectionString="Data Source=
 
-         (LocalDB)\V11.0;AttachDbFilename=|DataDirectory|
+				 (LocalDB)\V11.0;AttachDbFilename=|DataDirectory|
 
-         \NORTHWND.MDF; Integrated Security=True"  
+				 \NORTHWND.MDF; Integrated Security=True"  
 
-         providerName="System.Data.SqlClient" />
-
-
-
-</connectionStrings>
+				 providerName="System.Data.SqlClient" />
 
 
 
-{% endhighlight %}
+		</connectionStrings>
 
+   ~~~
+   {:.prettyprint }
+   
    For more information about SQL data source configuration refer the following link: [http://msdn.microsoft.com/en-us/library/vstudio/w1kdt8w2(v=vs.100).aspx](http://msdn.microsoft.com/en-us/library/vstudio/w1kdt8w2(v=vs.100).aspx)
 
 4. By Columns definition, the TextAlign property allows you to align the text of the columns. The Width property is used to define the width of the columns and the Format property allows you to format the particular column’s value.
 
    ![](Getting-Started_images/Getting-Started_img5.png) 
 
+   ~~~ html
 
+		<ej:Grid ID="FlatGrid" runat="server" DataSourceID="SqlData" >
 
-{% highlight html %}
+		    <Columns>
 
+		        <ej:Column Field="OrderID" HeaderText="Order ID" 
 
+					IsPrimaryKey="True" TextAlign="Right" Width="75" />
 
+		        <ej:Column Field="CustomerID" HeaderText="Customer ID"
 
+				    Width="80" />
 
-<ej:Grid ID="FlatGrid" runat="server" DataSourceID="SqlData" >
+		        <ej:Column Field="ShipName" HeaderText="Ship Name" 
 
-    <Columns>
+					Width="100" />
 
-        <ej:Column Field="OrderID" HeaderText="Order ID" 
+		        <ej:Column Field="ShipCity" HeaderText="Ship City" 
 
-            IsPrimaryKey="True" TextAlign="Right" Width="75" />
+					Width="100" />
 
-        <ej:Column Field="CustomerID" HeaderText="Customer ID"
+		        <ej:Column Field="Freight" HeaderText="Freight" 
 
-            Width="80" />
+					TextAlign="Right" Width="80" Format="{0:C3}" /> 
 
-        <ej:Column Field="ShipName" HeaderText="Ship Name" 
+		    </Columns>
 
-            Width="100" />
+		</ej:Grid>
 
-        <ej:Column Field="ShipCity" HeaderText="Ship City" 
-
-            Width="100" />
-
-        <ej:Column Field="Freight" HeaderText="Freight" 
-
-            TextAlign="Right" Width="80" Format="{0:C3}" /> 
-
-    </Columns>
-
-</ej:Grid>
-
-
-
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 The following screenshot displays a Grid with the sales data.
 
@@ -137,7 +120,6 @@ The Paging feature in Grid offers complete navigation support to easily switch
 
 
 {% highlight html %}
-
 
 
 <ej:Grid ID="FlatGrid" runat="server" DataSourceID="SqlData"
@@ -189,10 +171,6 @@ The Filtering feature in Grid is usedto facilitate the extraction of a subset
 To enable filtering, use the AllowFiltering property of Grid as follows.
 
 {% highlight html %}
-
-
-
-
 
 <ej:Grid ID="FlatGrid" runat="server" DataSourceID="SqlData"
 
@@ -252,10 +230,6 @@ To enable grouping, use the AllowGrouping property of Grid as follows.
 
 
 {% highlight html %}
-
-
-
-
 
 <ej:Grid ID="FlatGrid" runat="server" DataSourceID="SqlData"
 
@@ -319,9 +293,6 @@ The following code example shows how you can enable ShowSummary.
 
 {% highlight html %}
 
-
-
-
 <ej:Grid ID="FlatGrid" runat="server" DataSourceID="SqlData"
 
          AllowPaging="true" AllowFiltering="true" AllowGrouping="true"         ShowSummary="true">
@@ -381,6 +352,3 @@ The following code example shows how you can enable ShowSummary.
 The following screenshot shows the group summary.
 
 ![](Getting-Started_images/Getting-Started_img12.png) 
-
-
-
