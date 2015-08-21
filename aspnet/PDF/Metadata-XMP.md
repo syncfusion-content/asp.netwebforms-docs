@@ -44,7 +44,7 @@ Refer the following code sample to create XMP basic schema.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -88,7 +88,6 @@ pdfDoc.Save("DocumentInformation.pdf");
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
 
 
 
@@ -150,7 +149,7 @@ DublinCoreSchema class is used to create the Dublincore schema properties.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -185,7 +184,6 @@ pdfDoc.Save("DocumentInformation.pdf");
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
 
 
 
@@ -231,7 +229,7 @@ This schema includes properties related to rights management. These properties p
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -263,7 +261,6 @@ pdfDoc.Close();
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
 
 
 
@@ -302,7 +299,7 @@ This schema describes very simple workflow or job information.
 * JobRef
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -331,7 +328,6 @@ pdfDoc.Close();
 {% highlight vbnet  %}
 
 
-[VB]
 
 
 
@@ -370,7 +366,7 @@ The Paged-Text schema is used for text appearence on page in a document.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -405,7 +401,6 @@ pdfDoc.Close();
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
 
 
 
@@ -446,7 +441,7 @@ PDFSchema class is used to create the PDF Schema. It has the following set of pr
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -478,7 +473,6 @@ pdfDoc.Close();
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
 
 
 
@@ -520,7 +514,7 @@ Add the following code to define a custom schema.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -554,7 +548,6 @@ pdfDoc.Save("DocumentInformation.pdf");
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
 
 
 
@@ -611,7 +604,7 @@ container to save the custom metadata fields for the PDF document.
 You can add the following code to create an XML document to store custom metadata fields. 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -620,7 +613,6 @@ XmpMetadata xmp = new XmpMetadata(pdfDoc.DocumentInformation.XmpMetadata.XmlData
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB]
 
 
 
@@ -657,7 +649,7 @@ You can use the CustomSchema class to:
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -673,7 +665,6 @@ cs["DOCID"] = "SYNCSAM001";
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
 
 
 
@@ -696,7 +687,7 @@ The above code sample illustrates creation of custom schema or first-level metad
 Full code is used to create a custom meatadata field as illustrated in the following code.
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -726,7 +717,6 @@ pdfDoc.Close();
 
 {% endhighlight  %}
 {% highlight vbnet  %}
-[VB]
 
 
 
@@ -758,7 +748,7 @@ pdfDoc.Close()
 
 {% endhighlight %}
 
-Security
+### Security
 
 Essential PDF allows you to create a secure PDF document with support for user password and owner password, document encryption and access right of the document.
 
@@ -766,15 +756,15 @@ The document can be encrypted with 40, 128 and 256 bit key to protect its conten
 
 The document can be protected using 2 passwords; a user password and an owner password.
 
-User Password
+### User Password
 
 The user password allows you to view the document and the access to document is restricted based on the access rights that have been set.
 
-Owner Password
+### Owner Password
 
 The owner password allows you to get full control over the PDF document. When both passwords are identical, you are considered to log in as owner.
 
-Allow Print 
+### Allow Print 
 
 If this flag is not set, then you are not allowed to print the document. If this property is true, then you are allowed to print the document, depending on the value of FullQualityPrint flag and encryption key size. If encryption key size is 40 bit, then FullQualityPrint flag property is ignored. If encryption key size is 128 bit and if FullQualityPrint flag is set, then the document is printed at full quality, otherwise printing of the document is limited to a low-level representation of the document, of degraded quality. This degraded quality printing is viewer implementation dependent.
 
@@ -782,15 +772,15 @@ Full Quality Print
 
 This property has effect only when AllowPrint flag is set and encryption key size is 128 bit.
 
-EditAnnotations
+### EditAnnotations
 
 If this flag is set, it allows you to add or modify text annotations and fill in interactive forms fields.
 
-Fill Fields
+### Fill Fields
 
 This flag is effective only when using 128 bit encryption. If this flag is set, it allows you to fill in existing interactive form fields.
 
-Copy Content 
+### Copy Content 
 
 When document is encrypted using 128 bit and if this flag is set, it allows you to copy or otherwise extract text and graphics from the document by operations other than those controlled by AccessibilityCopyContent flag. When using a 40 bit encryption, this flag controls extraction of text and graphics to provide accessibility to disabled users and for other purposes. 
 
@@ -805,7 +795,7 @@ Essential PDF allows you to encrypt your document in RC4 encryption.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 //Creates a new PDF document.
@@ -856,7 +846,6 @@ document.Close();
 
 {% highlight vbnet %}
 
-[VB]
 
 
 'Creates a new PDF document.
@@ -900,6 +889,7 @@ graphics.DrawString(text, font, brush, New PointF(0, 40))
 document.Save("Output.pdf")
 
 document.Close()
+
 {% endhighlight  %}
 
 ## AES Encryption
@@ -908,7 +898,7 @@ Essential PDF allows you to create an AES encrypted PDF document.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -960,7 +950,6 @@ document.Close();
 
 {% highlight vbnet %}
 
-[VB]
 
 'Creates a new PDF document.
 
@@ -1011,13 +1000,13 @@ A digital signature is an electronic signature that is used to authenticate the 
 
 Digital signatures are easily transportable, cannot be imitated by someone else, and can be automatically time-stamped. It has the ability to ensure that once the original signed message is received, the sender cannot easily repudiate it later.
 
-Table28: List of Elements in Digital Signature
+Table 28: List of Elements in Digital Signature
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Appearance</td><td>
@@ -1082,7 +1071,7 @@ bounds where the signature has to be placed, and contact information.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1132,7 +1121,6 @@ document.Close();
 
 {% highlight vbnet %}
 
-[VB]
 
 
 'Creates a new PDF document.
@@ -1184,12 +1172,12 @@ Author Signature
 By default, documents are signed with standard signature types. Certificated property of PdfSignature is used to create author’s signature. When signed with this type of signature, any modification after signing is detected, and hence do not support added multiple signatures.
 
 
-Note: This implementation of certification will only work with Acrobat 7 and higher versions.
+> Note: This implementation of certification will only work with Acrobat 7 and higher versions.
 
 
 {% highlight c# %}
 
-[C#]
+
 
 
 //Creates a new PDF document.
@@ -1242,7 +1230,6 @@ document.Close();
 
 {% highlight vbnet %}
 
-[VB]
 
 'Creates a new PDF document.
 
@@ -1298,7 +1285,7 @@ Essential PDF allows you to put signature in an existing PDF document as in a ne
 
 {% highlight c# %}
 
-[C#]
+
 
 //Creates a new PDF document.
 
@@ -1346,7 +1333,6 @@ document.Close();
 
 {% highlight vbnet %}
 
-[VB]
 
 'Creates a new PDF document.
 
@@ -1398,29 +1384,13 @@ document.Close()
 
 ## Timestamp in Digital signature
 
-Essential PDF supports addition of timestamp in digital signatures. The date and time on which the document is signed can be 
-
-added as part of the signature. Timestamps are easier to verify when they are associated with timestamp authority’s trusted 
-
-certificate.  It also helps establish exactly when the document was signed and reduces the chances of an invalid signature. 
-
-The timestamp can be obtained from a third-party timestamp authority or from the certificate authority that issued the digital 
-
-ID.Timestamps appear in the signature field and in the Signature Properties dialog box. When the timestamp is included, the 
-
-certificate appears in the Date or Time tab of the Signature Properties dialog box. When no timestamp is added, then the 
-
-signature field displays the local time of the computer at the moment of signing.To apply timestamp using Essential PDF, the 
-
-TimeStampServer property of the PdfSignature class has to be used. The parameters for the TimeStampMethod are the URI of 
-
-digital server, username, and password.
+Essential PDF supports addition of timestamp in digital signatures. The date and time on which the document is signed can be added as part of the signature. Timestamps are easier to verify when they are associated with timestamp authority’s trusted certificate.  It also helps establish exactly when the document was signed and reduces the chances of an invalid signature. The timestamp can be obtained from a third-party timestamp authority or from the certificate authority that issued the digital ID.Timestamps appear in the signature field and in the Signature Properties dialog box. When the timestamp is included, the certificate appears in the Date or Time tab of the Signature Properties dialog box. When no timestamp is added, then the signature field displays the local time of the computer at the moment of signing.To apply timestamp using Essential PDF, the TimeStampServer property of the PdfSignature class has to be used. The parameters for the TimeStampMethod are the URI of digital server, username, and password.
 
 The following code illustrates the method for adding timestamp in the digital signature.
 
 {% highlight c# %}
 
-[C#]
+
 
 //Creates a new PDF document.
 
@@ -1467,12 +1437,10 @@ graphics.DrawImage(bmp, 0, 0);
 document.Save("Output.pdf");
 
 document.Close();
+
 {% endhighlight  %}
+
 {% highlight vbnet %}
-
-[VB]
-
-
 
 'Creates a new PDF document.
 
@@ -1521,5 +1489,3 @@ document.Save("Output.pdf")
 document.Close()
 
 {% endhighlight  %}
-
-

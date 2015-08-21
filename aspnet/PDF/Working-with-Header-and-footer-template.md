@@ -13,9 +13,9 @@ Headers and footers can be placed in the pages of the PDF document.
 
 Refer the following procedure to place a header:
 
-1.   Create a template object for the header. PdfPageTemplateElement class can be used for creating a template object.
+1. Create a template object for the header. PdfPageTemplateElement class can be used for creating a template object.
 
-2.   Assign the created template header to PDF document header.
+2. Assign the created template header to PDF document header.
 
 The same procedure can be followed to create footer. Page numbers on the footer of a document are set by using automatic fields.
 
@@ -25,7 +25,7 @@ The following code example illustrates you on how to create a Header and Footer.
 
 {% highlight c# %}
 
-[C#]
+
 
 //Creates a new PDF document.
 
@@ -94,8 +94,6 @@ pdfDocument.Close(true);
 {% endhighlight  %}
 
 {% highlight vbnet %}
-
-[VB]
 
 'Creates a new PDF document.
 

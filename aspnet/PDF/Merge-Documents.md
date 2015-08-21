@@ -28,7 +28,6 @@ In this method, path of the source PDF files is provided in a string array. They
 
 {% highlight c# %}
 
-[C#]
 
 
 //Creates a string array of source files, which are to be merged.
@@ -48,7 +47,7 @@ document.Close(true);
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB]
+
 
 
 'Creates a string array of source files, which are to be merged.
@@ -73,7 +72,6 @@ It is also possible to merge multiple PDF documents from stream using the static
 
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -107,7 +105,7 @@ stream2.Dispose();
 
 {% highlight vbnet %}
 
-[VB]
+
 
 
 Dim stream1 As New FileStream("Input.pdf", FileMode.Open)
@@ -145,7 +143,6 @@ following code example illustrates this.
 
 {% highlight c# %}
 
-[C#]
 
 
 //Loads documents.
@@ -170,7 +167,7 @@ document2.Close(true);
 
 {% highlight vbnet %}
 
-[VB]
+
 
 
 'Loads documents.
@@ -200,7 +197,6 @@ code example illustrates this.
 
 {% highlight c# %}
 
-[C#]
 
 
 
@@ -226,7 +222,7 @@ document2.Close(true);
 
 {% highlight vbnet %}
 
-[VB]
+
 
 
 'Loads documents.
@@ -256,12 +252,11 @@ sample. First, parent PDF document needs to be created, loaded, and then import 
 document and dispose the loaded PDF document. Setting EnableMemoryOptimization to true also reduces the memory usage once the 
 document instance is closed.
 
-Note: The PDF document (parent document) contents are still in run time memory. It releases the memory once the PDF document 
+> Note: The PDF document (parent document) contents are still in run time memory. It releases the memory once the PDF document 
 instance is disposed.
 
 {% highlight c# %}
 
-[C#]
 
 
 //Inputs PDF documents.
@@ -309,7 +304,7 @@ document.Close(true);
 {% highlight vbnet %}
 
 
-[VB]
+
 
 
 

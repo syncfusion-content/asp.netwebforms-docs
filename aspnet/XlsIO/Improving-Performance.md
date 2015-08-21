@@ -11,18 +11,14 @@ documentation: ug
 
 Essential XlsIO can create large reports in a few seconds. 
 
- ![](Improving-Performance_images/Improving-Performance_img1.jpeg) 
+![](Improving-Performance_images/Improving-Performance_img1.jpeg)
 
-## Tips to improve the Performance
-
+ Tips to improve the Performance
 * Use default styles, to apply styles for a whole column instead of applying to each cell.
 * Minimize AutoFit manipulations.
 * Get UsedRange globally. It is recommended to get the UsedRange in loops as follows.
 
-
-{% highlight C#%}
-
-
+{% highlight C# %}
 
 
 
@@ -50,7 +46,6 @@ for(int i = 0;i<sheet.UsedRange.LastRow;i++)
 
 {% endhighlight %}
 
-
 * Use IMigrantRange to optimize performance while dealing with large data.
 * Use global styles, rather than using different cell styles for each cell/range.
 * Use Begin and End call when more than one global style for a worksheet is used.
@@ -59,7 +54,8 @@ for(int i = 0;i<sheet.UsedRange.LastRow;i++)
 * To extract values little faster, use Unsafe code option of IApplication interface as follows.
 
 
-{% highlight C#%}
+
+{% highlight C# %}
 
 application.DataProviderType = ExcelDataProviderType.Unsafe;
 
@@ -75,11 +71,10 @@ application.DataProviderType = ExcelDataProviderType.Unsafe;
 
 ## Filling large data by using IMigrantRange
 
-The IMigrantRange interface can be used to access and manipulate worksheet range. This is an optimal method of writing values with better memory performance. The following code example illustrates how the IMigrantRange is accessed.
 
-{% highlight C#%}
+The IMigrantRange interface can be used to access and manipulate worksheet range. This is an optimal method of writing values with better memory performance. The following code example illustrates how the IMigrantRange is accessed. 
 
-
+{% highlight C# %}
 
 IMigrantRange migrantRange = workbook.Worksheets[0].MigrantRange; 
 
@@ -119,9 +114,7 @@ migrantRange.SetValue(true);
 
 {% endhighlight %}
 
-{% highlight vbnet%}
-
-
+{% highlight vbnet  %}
 
 'Writes Data.
 Dim row As Integer 
@@ -151,4 +144,6 @@ migrantRange.SetValue(5.5)
 Next
 
 {% endhighlight %}
+
+
 

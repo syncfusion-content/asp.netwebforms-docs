@@ -34,7 +34,7 @@ Device color space simply describes the range of colors that a camera can see, a
 * DeviceRGB
 * DeviceCMYK
 
-Note: This property does not convert the entire document into different color spaces. It will also not have any impact on pages that have been created before the property value had changed. It just chooses the color space for pages created after the alteration.
+> Note: This property does not convert the entire document into different color spaces. It will also not have any impact on pages that have been created before the property value had changed. It just chooses the color space for pages created after the alteration.
 
 ### CIE-based Color Spaces
 
@@ -48,7 +48,7 @@ The code sample to draw a rectangle with CalGray brush is illustrated as follows
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -96,7 +96,7 @@ pdfDocument.Close(true);
 
 {% highlight c# %}
 
-[VB]
+
 
 
 
@@ -146,7 +146,7 @@ The code sample to draw a rectangle with CalRGB brush is illustrated as follows.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -198,7 +198,7 @@ pdfDocument.Close(true);
 
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -254,7 +254,7 @@ The code sample to draw a rectangle with Lab brush is illustrated as follows.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -306,7 +306,7 @@ pdfDocument.Close(true);
 
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -368,7 +368,7 @@ The code sample used to draw a rectangle with Indexed ICC colorspace is illustra
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -438,7 +438,7 @@ pdfDocument.Close(true);
 
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -512,7 +512,7 @@ The code sample used for separation color space is illustrated as follows.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -574,7 +574,7 @@ pdfDocument.Close(true);
 
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -642,7 +642,7 @@ The code sample to use colorspace in the graphics level is illustrated as follow
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -701,7 +701,7 @@ pdfDocument.Close(true);
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -759,9 +759,9 @@ pdfDocument.Close(True)
 
 {% endhighlight %}
 
-Note: You can change the color space as many times as you wish, however, you cannot alternate the color space for objects that have saved before.
+> Note: You can change the color space as many times as you wish, however, you cannot alternate the color space for objects that have saved before.
 
-Barcode
+### Barcode
 
 Bar codes provide a simple and inexpensive method of encoding text information that can be easily read by any inexpensive electronic reader. A bar code consists of series of parallel, adjacent bars, and spaces. Predefined bar and space patterns or "symbologies" are used to encode small strings of character data into a printed symbol. 
 
@@ -773,7 +773,7 @@ Code 39 character set includes the digits 0-9, the letters A-Z (upper case only)
 
 {% highlight c# %}
 
-[C#]
+
 
 //Creates a new PDF Document.
 
@@ -804,7 +804,7 @@ doc.Save("CODE39.pdf");
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 'Creates a new PDF Document.
 
@@ -842,7 +842,7 @@ The following code example illustrates you on how to draw Code39Extended barcode
 
 {% highlight c# %}
 
-[C#]
+
 
 //Creates new PDF Document.
 
@@ -872,7 +872,7 @@ doc.Save("CODE39Ext.pdf");
 
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -912,7 +912,7 @@ The following code example illustrates how to draw Code 11 Barcode.
 
 {% highlight c# %}
 
-[C#]
+
 
 //Creates new PDF document.
 
@@ -947,7 +947,7 @@ doc.Save("CODE11.pdf");
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 'Creates new PDF document.
 
@@ -988,7 +988,7 @@ CodaBar is a variable length symbology that performs encoding of the following 2
 
 {% highlight c# %}
 
-[C#]
+
 
 //Draws Codabar barcode. 
 
@@ -1019,7 +1019,7 @@ doc.Save("CODABAR.pdf");
 {% endhighlight %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -1063,7 +1063,7 @@ The value to be encoded (that is passed to Barcode Professional) must be 8 digit
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1101,7 +1101,7 @@ doc.Save("CODE32.pdf");
 
 {% endhighlight  %}
 {% highlight vbnet  %}
-[VB]
+
 
 
 
@@ -1149,7 +1149,7 @@ Code 93 was designed to complement and improve Code 39. It can represent the ful
 
 {% highlight c#  %}
 
-[C#]
+
 
 //Draws Code93 barcode. 
 
@@ -1179,7 +1179,7 @@ doc.Save("CODE93.pdf");
 
 {% endhighlight %}
 {% highlight vbnet  %}
-[VB]
+
 
 
 
@@ -1215,7 +1215,7 @@ doc.Save("CODE93.pdf")
 
 {% highlight c#  %}
 
-[C#]
+
 
 //Draws Code93 Extended barcode. 
 
@@ -1249,7 +1249,7 @@ doc.Save("CODE93Ext.pdf");
 
 {% endhighlight  %}
 {% highlight vbnet  %}
-[VB]
+
 
 
 
@@ -1305,7 +1305,7 @@ Code Set A (or Characters Set A) includes all of the standard upper case U.S. al
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -1350,7 +1350,7 @@ doc.Save("CODE128A.pdf");
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 'Draws Code128A barcode. 
 
@@ -1398,7 +1398,7 @@ Code Set B (or Characters Set B) includes all of the standard upper case alphanu
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -1439,7 +1439,7 @@ doc.Save("CODE128B.pdf");
 {% endhighlight %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 'Draws Code128B barcode. 
 
@@ -1484,7 +1484,7 @@ Code Set C (or Characters Set C) includes the set of 100 digit pairs from 00 to 
 
 {% highlight c#  %}
 
-[C#]
+
 
 //Draws Code128C barcode. 
 
@@ -1519,12 +1519,10 @@ barcode.Draw(page, new PointF(25, 70 ));
 //Saves the document.
 
 doc.Save("CODE128C.pdf");
+
 {% endhighlight  %}
+
 {% highlight vbnet  %}
-
-
-[VB]
-
 
 
 'Draws Code128C barcode. 
@@ -1560,24 +1558,25 @@ barcode.Draw(page, New PointF(25, 70))
 'Saves the document.
 
 doc.Save("CODE128C.pdf")
+
 {% endhighlight  %}
 
 ## Data Matrix
 
 DataMatrix barcode is a two dimensional barcode that consists of a grid of dark and light dots or blocks forming square or rectangular symbol. The data encoded in the barcode can either be number or alphanumeric. The PdfDataMatrixBarcode class available in Syncfusion.Pdf.Barcode namespace sets the suitable encoding type and size for the input data. However, the size, encoding type, and dimension of individual blocks can also be set using these properties.
 
-Use case scenario 
+### Use case scenario 
 
 The DataMatrix bar codes are widely used in printed media as labels and letters. It can easily be read by a bar code reader and also by mobile phones. 
 
-_Table29: Property Table_
+_Table 29: Property Table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 Encoding </td><td>
@@ -1603,7 +1602,7 @@ Float </td></tr>
 {% highlight c#  %}
 
 
-[C#]
+
 
 
 
@@ -1638,7 +1637,7 @@ doc.Save("DataMatrix.pdf");
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -1677,7 +1676,7 @@ QR Barcode is a two-dimensional barcode that consists of a grid of dark and ligh
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1714,7 +1713,7 @@ doc.Save("QRBarcode.pdf");
 {% endhighlight %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -1795,7 +1794,7 @@ Sound action plays a specified music file in the PDF document. Volume and repeat
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -1842,7 +1841,7 @@ document.Close();
 {% endhighlight %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -1891,7 +1890,7 @@ A JavaScript action allows execution of JavaScript code embedded in the PDF docu
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -1937,7 +1936,7 @@ document.Close();
 
 {% endhighlight %}
 {% highlight vbnet  %}
-[VB]
+
 
 
 
@@ -1989,7 +1988,7 @@ URI action allows you displaying a hypertext link in a web browser. Next propert
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -2044,7 +2043,7 @@ document.Close();
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -2103,7 +2102,7 @@ GoTo action displays the specified page in the current document. The location ca
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -2159,7 +2158,7 @@ document.Close();
 
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 'Creates a new document with PDF/A standard.
@@ -2219,7 +2218,7 @@ Launch action allows execution of an external application or file.
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 //Creates a new document with PDF/A standard.
@@ -2266,7 +2265,7 @@ document.Close();
 
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 'Creates a new document with PDF/A standard.
@@ -2318,7 +2317,7 @@ go to prev page, go to first page, and go to last page.
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -2372,7 +2371,7 @@ document.Close();
 
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 'Creates a new document with PDF/A standard.
@@ -2427,7 +2426,7 @@ Submit action allows submission of data that is entered into the PDF form.
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -2495,7 +2494,7 @@ document.Close();
 
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 'Creates a PDF document.
@@ -2566,7 +2565,7 @@ Reset action allows resetting of all form fields in the PDF document.
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -2632,7 +2631,7 @@ document.Close();
 
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 'Creates a PDF document.

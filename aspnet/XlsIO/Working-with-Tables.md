@@ -10,10 +10,10 @@ documentation: ug
 # Working with Tables 
 
 In Excel, Tables can be inserted by selecting Table option from the Insert menu. The following sections illustrate working with tables by using XlsIO.
+
 Create a Table
 
 XlsIO provides support to read and write tables in a spreadsheet. The table is added as an IListObject to the worksheet. The input data to the table must be a range of data existing in the worksheet. IListObject returns the collection of tables in the worksheet.
-
 
 {% highlight C# %}
 
@@ -64,7 +64,6 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
-
 {% endhighlight %}
 
 
@@ -124,7 +123,6 @@ excelEngine.Dispose()
 
 {% endhighlight %}
 
-
 ![](Working-with-Tables_images/Working-with-Tables_img1.png)
 
 
@@ -132,8 +130,6 @@ excelEngine.Dispose()
 ## Adding a Total Row
 
 You can add the Total Row to any table by accessing the Table Columns. Columns in the tables are accessed by using the index. It is possible to set Totals Calculation to the Total Row cells by using the ExcelTotalsCalculation enumerator. These cells will be updated once they are calculated.
-
-
 
 {% highlight C# %}
 
@@ -264,14 +260,11 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
-
 {% endhighlight %}
 
 ## Formatting a Table
 
 You can apply built-in styles for the tables by using the TableBuiltInStyles enumerator of XlsIO.
-
-
 
 {% highlight C# %}
 
@@ -328,7 +321,6 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
-
 {% endhighlight %}
 
 
@@ -391,8 +383,6 @@ excelEngine.Dispose()
 ## Insert/Remove Columns in a Table
 
 XlsIO provides support to insert or remove columns in a table. There are two options provided to remove a column from the table. One option is by providing the column item and the other is by providing the column index. The following code example illustrates how to insert/remove a column from a table.
-
-
 
 {% highlight C# %}
 
@@ -459,8 +449,8 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
-
 {% endhighlight %}
+
 
 {% highlight vbnet %}
 
@@ -529,14 +519,11 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
-
 {% endhighlight %}
 
 ## Accessing a Table
 
 XlsIO provides support to read an existing table from the spreadsheet. It can be accessed from the sheet by using the Table Index.
-
-
 
 {% highlight C# %}
 
@@ -594,9 +581,6 @@ excelEngine.Dispose();
 
 
 
-
-
-
 ' Step 1: Instantiates the spreadsheet creation engine.
 
 Dim excelEngine As ExcelEngine = New ExcelEngine
@@ -645,22 +629,20 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
 {% endhighlight %}
 
-### Create a Table from External Connection 
+## Create a Table from External Connection 
 
 External Connection implementation establishes a connection between data base and excel file. This support is provided only for *.xlsx files. The following table shows different data sources and its connection string formats that are supported in XlsIO.
 
-
-_Table_ _24__: Data sources and its Connection String Formats_
+_Data sources and its Connection String Formats_
 
 <table>
 <tr>
-<td rowspan = "2">
-Data Base</td><td rowspan = "2">
-Connection Type</td><td rowspan = "2">
-Samples connection string</td></tr>
+<th rowspan = "2">
+Data Base</th><th rowspan = "2">
+Connection Type</th><th rowspan = "2">
+Samples connection string</th></tr>
 <tr>
 </tr>
 <tr>
@@ -699,8 +681,6 @@ Stars with ODBC</td></tr>
 
 
 The following code example explains the method of establishing a connection in workbook.
-
-
 
 {% highlight C# %}
 
@@ -856,8 +836,8 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
-
 {% endhighlight %}
+
 
 The following screenshot shows the connection wizard in MS Excel.
 
@@ -865,9 +845,5 @@ The following screenshot shows the connection wizard in MS Excel.
 
 
 
-
-
 ![](Working-with-Tables_images/Working-with-Tables_img3.png)
-
-
 

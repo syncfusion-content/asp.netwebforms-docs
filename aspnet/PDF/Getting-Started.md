@@ -17,71 +17,56 @@ The following sections guides you to create an Essential PDF document.
 
 1. Open Microsoft Visual Studio. Open File menu and click New Project. In the New Project dialog, select Console Application template, name the project and click OK.
 
-![C:/Users/SURESH/Desktop/CreateProject.png](Getting-Started_images/Getting-Started_img1.png)
-
-
+   ![](Getting-Started_images/Getting-Started_img1.png)
 
 2. Now you need to deploy Essential PDF into this Console application.
+
 3. Open Solution Explorer of the application that you created. Right-click the Reference folder and then click Add References to Essential PDF assemblies.
+
 4. Add the following assemblies as references in the application.
+
    * Syncfusion.Core.dll
+   
    * Syncfusion.Compression.Base.dll
+   
    * Syncfusion.Pdf.Base.dll
 
-
-
-![C:/Users/SURESH/Desktop/AddingReference.png](Getting-Started_images/Getting-Started_img2.png)
+![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
-#### Create the document
+### Create the document
 
 The first thing to do in your code is to create the document that is an instance of PdfDocument class.
 
 {% highlight c# %}
 
-[C#]
-
-
-
 PdfDocument document = new PdfDocument();
-
-
 
 {% endhighlight %}
 
-#### Create the first page of the document
+### Create the first page of the document
 
 Once the document is created, add atleast one page in the document. You can achieve this using the Add method of PdfPage object. A page in the document is an instance of PdfPage class.
 
 
 {% highlight c# %}
 
-[C#]
-
-
 
 PdfPage page = document.Pages.Add();
 
-
-
 {% endhighlight %}
 
-#### Create the content of the page
+### Create the content of the page
 
 After creating the page, you need to fill it with content. The content of a page is created using the PDF graphics property of the page object. Using the Graphics property of the page, you can draw contents to the page. In this sample, you can write a simple text on the page.
 
 
 {% highlight c# %}
 
-[C#]
-
-
-
 PdfGraphics graphics = page.Graphics;
 
 graphics.DrawString("Hello world!", new PdfStandardFont(PdfFontFamily.Helvetica, 12), new PdfSolidBrush(Color.Black), new PointF(20, 20));
-
 
 
 {% endhighlight %}
@@ -90,14 +75,10 @@ graphics.DrawString("Hello world!", new PdfStandardFont(PdfFontFamily.Helvetica
 
 {% highlight vbnet %}
 
-[VB]
-
-
 
 Dim graphics As PdfGraphics = page.Graphics
 
 graphics.DrawString("Hello world!", New PdfStandardFont(PdfFontFamily.Helvetica, 12), New PdfSolidBrush(Color.Black), New PointF(20, 20))
-
 
 
 {% endhighlight %}
@@ -106,27 +87,19 @@ graphics.DrawString("Hello world!", New PdfStandardFont(PdfFontFamily.Helvetica,
 
 When drawing text, a font and brush is required. The brush is used to fill the text outline.
 
-#### Saving the document
+### Saving the document
 
 Once the content is added, you can save the document. You can save the document to a stream or file on disk.
 
 {% highlight c# %}
 
-[C#]
-
-
-
 document.Save("Sample.pdf");
-
-
 
 {% endhighlight %}
 
 
 
 {% highlight vbnet %}
-
-[VB]
 
 document.Save("Sample.pdf")
 
@@ -139,10 +112,6 @@ document.Save("Sample.pdf")
 The following code sample illustrates you on how to create a hello world document.
 
 {% highlight c# %}
-
-[C#]
-
-
 
 //Creates a new PDF document.
 
@@ -172,16 +141,11 @@ graphics.DrawString("Hello world!", font, brush, new PointF(20, 20));
 
 document.Save("Sample.pdf");
 
-
-
 {% endhighlight %}
 
 
 
 {% highlight vbnet %}
-
-[VB]
-
 
 
 'Creates a new PDF document.
@@ -212,17 +176,13 @@ graphics.DrawString("Hello world!", font, brush,new PointF(20,20))
 
 document.Save("Sample.pdf")
 
-
-
 {% endhighlight %}
 
 ## Asynchronous Support
 
-Essential PDF can read, write, and merge PDF files using asynchronous methods. This is a new approach introduced in 
-Framework 4.5 or greater that enables applications to use asynchronous programming in Windows store apps (WinRT) and in 
-WindowsPhone (WP). The following list of public APIs in Essential PDF support asynchronous programming.
+Essential PDF can read, write, and merge PDF files using asynchronous methods. This is a new approach introduced in Framework 4.5 or greater that enables applications to use asynchronous programming in Windows store apps (WinRT) and in WindowsPhone (WP). The following list of public APIs in Essential PDF support asynchronous programming.
 
-Note: Asynchronous support is applicable to Windows Store apps and Windows Phone
+> Note: Asynchronous support is applicable to Windows Store apps and Windows Phone
 
 <table>
 <tr>
@@ -231,68 +191,68 @@ Method</th><th>
 Overloads</th><th>
  Description</th></tr>
 <tr>
-<th rowspan = "6">
-OpenAsync</th><th>
-async Task(bool) OpenAsync(StorageFile stFile)</th><th>
-Opens an existing PDF document as a storage file.</th></tr>
+<td rowspan = "6">
+OpenAsync</td><td>
+async Task&lt;bool&gt; OpenAsync(StorageFile stFile)</td><td>
+Opens an existing PDF document as a storage file.</td></tr>
 <tr>
-<th>
-async Task(bool) OpenAsync(StorageFile stFile,string password)</th><th>
-Opens a secure existing PDF document with password.</th></tr>
+<td>
+async Task&lt;bool&gt; OpenAsync(StorageFile stFile,string password)</td><td>
+Opens a secure existing PDF document with password.</td></tr>
 <tr>
-<th>
-async Task(bool) OpenAsync(byte[] bytes)</th><th>
-Opens an existing PDF document as byte array.</th></tr>
+<td>
+async Task&lt;bool&gt; OpenAsync(byte[] bytes)</td><td>
+Opens an existing PDF document as byte array.</td></tr>
 <tr>
-<th>
-async Task(bool) OpenAsync(byte[] bytes, stringpassword)</th><th>
-Opens a secured existing PDF document with password.</th></tr>
+<td>
+async Task&lt;bool&gt; OpenAsync(byte[] bytes, stringpassword)</td><td>
+Opens a secured existing PDF document with password.</td></tr>
 <tr>
-<th>
-async Task(bool) OpenAsync(Stream stream)</th><th>
-Opens an existing PDF document as stream.</th></tr>
+<td>
+async Task&lt;bool&gt; OpenAsync(Stream stream)</td><td>
+Opens an existing PDF document as stream.</td></tr>
 <tr>
-<th>
-async Task(bool) OpenAsync(Stream stream, stringpassword)</th><th>
-Opens a secured existing PDF document with password.</th></tr>
+<td>
+async Task&lt;bool&gt; OpenAsync(Stream stream, stringpassword)</td><td>
+Opens a secured existing PDF document with password.</td></tr>
 <tr>
-<th>
-SaveAsync</th><th>
-async Task(bool) SaveAsync(Stream stream)</th><th>
-Saves the document to a stream in asynchronous mode.</th></tr>
+<td>
+SaveAsync</td><td>
+async Task&lt;bool&gt; SaveAsync(Stream stream)</td><td>
+Saves the document to a stream in asynchronous mode.</td></tr>
 <tr>
-<th>
-SaveAsync</th><th>
-async Task(bool) SaveAsync(StorageFile stFile)</th><th>
-Saves the PDF file as storage file.</th></tr>
+<td>
+SaveAsync</td><td>
+async Task&lt;bool&gt; SaveAsync(StorageFile stFile)</td><td>
+Saves the PDF file as storage file.</td></tr>
 <tr>
-<th>
-Save</th><th>
-async Task(bool) Save()</th><th>
-Saves the modified document.</th></tr>
+<td>
+Save</td><td>
+async Task&lt;bool&gt; Save()</td><td>
+Saves the modified document.</td></tr>
 <tr>
-<th rowspan = "2">
-ImportPageAsync</th><th>
-async Task[PdfPageBase] ImportPageAsync(PdfLoadedDocument ldDoc, intpageIndex)</th><th rowspan = "2">
-Imports a page in asynchronous mode.</th></tr>
+<td rowspan = "2">
+ImportPageAsync</td><td>
+async Task&lt;PdfPageBase&gt; ImportPageAsync(PdfLoadedDocument ldDoc, intpageIndex)</td><td rowspan = "2">
+Imports a page in asynchronous mode.</td></tr>
 <tr>
-<th>
-async Task[PdfPageBase] ImportPageAsync(PdfLoadedDocument ldDoc,PdfPageBase page)</th></tr>
+<td>
+async Task&lt;PdfPageBase&gt; ImportPageAsync(PdfLoadedDocument ldDoc,PdfPageBase page)</td></tr>
 <tr>
-<th>
-ImportPageRangeAsync</th><th>
-async Task[PdfPageBase] ImportPageRangeAsync(PdfLoadedDocument ldDoc,int startIndex, int endIndex)</th><th>
-Imports page range in asynchronous mode.</th></tr>
+<td>
+ImportPageRangeAsync</td><td>
+async Task&lt;PdfPageBase&gt; ImportPageRangeAsync(PdfLoadedDocument ldDoc,int startIndex, int endIndex)</td><td>
+Imports page range in asynchronous mode.</td></tr>
 <tr>
-<th>
-AppendAsync</th><th>
-async Task(bool) AppendAsync(PdfLoadedDocument ldDoc)</th><th>
-Appends documents in asynchronous mode.</th></tr>
+<td>
+AppendAsync</td><td>
+async Task&lt;bool&gt; AppendAsync(PdfLoadedDocument ldDoc)</td><td>
+Appends documents in asynchronous mode.</td></tr>
 <tr>
-<th>
-MergeAsync</th><th>
-async static Task(PdfDocumentBase) MergeAsync(PdfDocumentBase dest,PdfLoadedDocument src)</th><th>
-Merges documents in asynchronous mode.</th></tr>
+<td>
+MergeAsync</td><td>
+async static Task&lt;PdfDocumentBase&gt; MergeAsync(PdfDocumentBase dest,PdfLoadedDocument src)</td><td>
+Merges documents in asynchronous mode.</td></tr>
 </table>
 
 
@@ -300,22 +260,21 @@ Merges documents in asynchronous mode.</th></tr>
 
 The following illustration displays the Class Diagram for Essential PDF.
 
-![C:/Users/Suresh/Desktop/DesktopItems/UGRevamp/ClassDiagram.png](Getting-Started_images/Getting-Started_img4.png)
+![](Getting-Started_images/Getting-Started_img4.png)
 
-
-
-### [PDF Version Compatibility](http://help.syncfusion.com/ug/windows%20forms/pdf/documents/pdfversioncompatibil.htm)
+[PDF Version Compatibility](http://help.syncfusion.com/ug/windows%20forms/pdf/documents/pdfversioncompatibil.htm)
 
 You can view the PDF files generated by Essential PDF using Adobe Acrobat Reader 7.x or later versions. Other conforming 
 Readers that strictly follow Adobe’s PDF specification 1.4 or later also can be used.
 
-Note: Adobe Reader is free software; hence, the most recent version can be downloaded easily.
+> Note: Adobe Reader is free software; hence, the most recent version can be downloaded easily.
 
 
 Essential PDF allows you to control the version of PDF files using the Version property of the PdfFileStructure class. You need 
 the following settings to control the version and structure.
 
 * Version (property)-Specifies the version of the PDF document.
+
 * CrossReferenceType (property)-Specifies the type of the cross-reference in the file. This property allows you to present a 
 cross-reference with a standard format in a cross-reference table. The cross-references can also be presented as a 
 cross-reference stream using the CrossReferenceStream property. This format is supported by the PDF 1.5 and higher versions. 
@@ -323,13 +282,13 @@ The files using this format are more compact, especially when compression is use
 time.
 
 
-Note: This property marks the file by the specified version only. It does not control the compatibility of the features used in the file.
+> Note: This property marks the file by the specified version only. It does not control the compatibility of the features used in the file.
 
 The following code example illustrates how to change the PDF version to 1.6
 
 {% highlight c# %}
 
-[C#]
+
 
 //Creates a new PDF document.
 
@@ -372,8 +331,6 @@ document.Close();
 
 
 {% highlight vbnet %}
-
-[VB]
 
 
 
@@ -425,7 +382,7 @@ It is possible to change PDF version for the existing PDF document using the fol
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -454,8 +411,6 @@ document.Close();
 
 
 {% highlight vbnet %}
-
-[VB]
 
 
 
@@ -983,15 +938,13 @@ No</td><td colspan = "3">
 Yes</td></tr>
 </table>
 
-Note: *Only .Jpeg format images are supported for Silverlight version.
-
-**Supported only in PdfGrid class
+> Note: *Only .Jpeg format images are supported for Silverlight version.
+>
+> **Supported only in PdfGrid class
 
 ## Usage of Essential PDF in realtime scenario
 
 This article explains you the various steps required to create a basic invoice document using fundamental elements such as text, table, images, and footer. The following screenshot illustrates you a simple invoice created using Essential PDF library.
-
-
 
 ![](Getting-Started_images/Getting-Started_img8.png)
 
@@ -1002,6 +955,7 @@ This article explains you the various steps required to create a basic invoice d
 Before you move into creation of the invoice document, you need to remember the following key points.. 
 
 * All the units in PDF are measured in points. In case the measurement is to be converted from pixels, it can be done using the PdfConverter static class present in the Syncfusion.Pdf.Graphics Namespace.
+
 * In PDF, objects (text, images, tables, etc.) are placed in an absolute position.  To prevent the objects from overlapping 
 and being misplaced, PdfLayoutResult class helps you in positioning an object, relative to the previously added object, by 
 returning its bounds. 
@@ -1013,7 +967,7 @@ As an initial step, you need to add a new page and page settings to the document
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1040,8 +994,6 @@ PdfPage page = document.Pages.Add();
 
 
 {% highlight vbnet %}
-
-[VB]
 
 
 
@@ -1082,7 +1034,7 @@ As you can see in the Simple Invoice image, a logo is added at the top-right cor
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1104,8 +1056,6 @@ page.Graphics.DrawImage(img, new RectangleF(g.ClientSize.Width - img.Width, 0, i
 {% endhighlight %}
 
 {% highlight vbnet %}
-
-[VB]
 
 'Creates graphics instance of the page.
 
@@ -1140,7 +1090,7 @@ sample explains you on how to add an address to the page.
 
 {% highlight c# %}
 
-[C#]
+
 
 //Creates a text element and assigns the text to be added.
 
@@ -1171,8 +1121,6 @@ PdfLayoutResult result = element.Draw(page, new RectangleF(0, 0, page.Graphics.C
 
 
 {% highlight vbnet %}
-
-[VB]
 
 'Creates a text element and assigns the text to be added.
 
@@ -1212,9 +1160,6 @@ Now, move on to the body of the invoice. The body contains the invoice number, d
 
 {% highlight c# %}
 
-[C#]
-
-
 
 //Adds a rectangle that contains the invoice number and date.
 
@@ -1227,8 +1172,6 @@ g.DrawRectangle(new PdfSolidBrush(new PdfColor(126, 151, 173)), new RectangleF(0
 
 
 {% highlight vbnet %}
-
-[VB]
 
 
 
@@ -1248,7 +1191,7 @@ Create a font for the subheadings. Specify the font size, style, and color of th
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1275,8 +1218,6 @@ result = element.Draw(page, new PointF(10, result.Bounds.Bottom + 48));
 
 
 {% highlight vbnet %}
-
-[VB]
 
 
 
@@ -1308,7 +1249,7 @@ subheading.
 
 {% highlight c# %}
 
-[C#]
+
 
 //Gets the current date.
 
@@ -1329,8 +1270,6 @@ g.DrawString(currentDate, subHeadingFont, element.Brush, new PointF(g.ClientSize
 
 
 {% highlight vbnet %}
-
-[VB]
 
 
 
@@ -1366,7 +1305,7 @@ For adding the buyer’s address, follow the steps that you did for the sender�
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1390,8 +1329,6 @@ result = element.Draw(page, new PointF(10, result.Bounds.Bottom + 25));
 
 {% highlight vbnet %}
 
-[VB]
-
 
 'Creates a text element for the address. 
 
@@ -1414,7 +1351,7 @@ appearance you can add a line following the heading. To achieve this refer the f
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1429,8 +1366,6 @@ g.DrawLine(new PdfPen(new PdfColor(126, 151, 173), 0.70f), new PointF(0, result.
 
 
 {% highlight vbnet %}
-
-[VB]
 
 
 
@@ -1448,7 +1383,7 @@ A line is added using a pen color that stretches from left corner to the right c
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1475,8 +1410,6 @@ result = element.Draw(page, new RectangleF(10, result.Bounds.Bottom + 3, g.Clien
 
 
 {% highlight vbnet %}
-
-[VB]
 
 
 
@@ -1523,7 +1456,7 @@ A PdfGrid can accept data source in the form of Datatable, DataSet, or an IEnume
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1542,8 +1475,6 @@ grid.DataSource = dataSource;
 
 
 {% highlight vbnet %}
-
-[VB]
 
 
 
@@ -1569,7 +1500,7 @@ As you can see in the invoice image, the table has a different header style than
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1608,8 +1539,6 @@ header.ApplyStyle(headerStyle);
 
 
 {% highlight vbnet %}
-
-[VB]
 
 
 
@@ -1652,7 +1581,7 @@ From the above code, a cell style with a background color is created for the hea
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1683,8 +1612,6 @@ header.Cells[i].StringFormat = new PdfStringFormat(PdfTextAlignment.Right, PdfVe
 
 
 {% highlight vbnet %}
-
-[VB]
 
 
 
@@ -1720,7 +1647,7 @@ For other rows, you can assign the cell style and string format for them just as
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1793,8 +1720,6 @@ float.TryParse(cell.Value.ToString(), out val);
 
 
 {% highlight vbnet %}
-
-[VB]
 
 
 
@@ -1870,7 +1795,7 @@ Layout format plays an important role in drawing or adding very large contents t
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1889,8 +1814,6 @@ layoutFormat.Layout = PdfLayoutType.Paginate;
 
 
 {% highlight vbnet %}
-
-[VB]
 
 
 
@@ -1912,7 +1835,7 @@ The Draw() method of the PdfGrid helps to draw the grid to the PDF page. The dra
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1927,8 +1850,6 @@ PdfGridLayoutResult gridResult = grid.Draw(page, new RectangleF(new PointF(0, re
 
 
 {% highlight vbnet %}
-
-[VB]
 
 
 
@@ -1956,7 +1877,7 @@ explains the same.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 //Calculates the position of the fourth column by adding their widths.
@@ -1991,8 +1912,6 @@ gridResult.Page.Graphics.DrawString(totalDue.ToString("C"), font, new PdfSolidBr
 
 
 {% highlight vbnet %}
-
-[VB]
 
 'Calculates the position of the fourth column by adding their widths.
 
@@ -2051,7 +1970,7 @@ added to the invoice document.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -2092,8 +2011,6 @@ document.Template.Bottom = footer;
 
 
 {% highlight vbnet %}
-
-[VB]
 
 
 
@@ -2137,7 +2054,7 @@ Finally, you can save the document to the disk or stream using the Save() method
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -2152,8 +2069,6 @@ document.Save("Invoice.pdf");
 
 
 {% highlight vbnet %}
-
-[VB]
 
 
 

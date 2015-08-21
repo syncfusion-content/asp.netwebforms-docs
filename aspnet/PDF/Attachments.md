@@ -17,10 +17,6 @@ In order to add attachment to a PDF document, you need to create PdfAttachment o
 
 {% highlight c# %}
 
-[C#]
-
-
-
 //Creates a new PDF document.
 
 PdfDocument document = new PdfDocument();
@@ -69,7 +65,6 @@ document.Close();
 
 {% highlight vbnet %}
 
-[VB]
 
 
 
@@ -124,7 +119,7 @@ Essential PDF allows you to add attachments to the existing PDF document.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 //Loads the PDF document.
@@ -161,7 +156,6 @@ document.Close();
 
 {% highlight vbnet %}
 
-[VB]
 
 'Loads the PDF document.
 
@@ -207,7 +201,7 @@ In order to remove an attachment from an existing PDF document, you need to use 
 
 {% highlight c# %}
 
-[C#]
+
 
 
 //Loads the PDF document.
@@ -232,7 +226,6 @@ document.Close();
 
 {% highlight vbnet %}
 
-[VB]
 
 
 'Loads the PDF document.
@@ -263,7 +256,7 @@ In order to get all the attachments from the PDF file, you need to loop through 
 
 {% highlight c# %}
 
-[C#]
+
 
 
 //Loads the PDF document.
@@ -296,7 +289,6 @@ document.Close();
 
 {% highlight vbnet %}
 
-[VB]
 
 
 'Loads the PDF document.

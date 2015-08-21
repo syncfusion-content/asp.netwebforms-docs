@@ -11,9 +11,9 @@ documentation: ug
 
 The following code example illustrates adding chart labels to the scatter points of the chart.
 
-{% highlight C# %}
 
 
+{% highlight c# %}
 
 
 
@@ -66,8 +66,7 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
-{% highlight vbnet%}
-
+{% highlight vbnet %}
 
 
 

@@ -9,13 +9,11 @@ documentation: ug
 
 # Portfolio
 
-PDF Portfolio allows you to bring together content from a variety of sources (for example, PDF, Word, Excel, JPEG files) into one unified container. The original files retain their individual identities, but are assembled into a PDF Portfolio file. You can open, read, edit, and format each component file independently. 
-
-PdfPortfolioInformation class is used to create the PDF portfolio. PdfPortfolioViewMode used to specify the view mode of the portfolio.
+PDF Portfolio allows you to bring together content from a variety of sources (for example, PDF, Word, Excel, JPEG files) into one unified container. The original files retain their individual identities, but are assembled into a PDF Portfolio file. You can open, read, edit, and format each component file independently. PdfPortfolioInformation class is used to create the PDF portfolio. PdfPortfolioViewMode used to specify the view mode of the portfolio.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -74,7 +72,7 @@ document.Close(true);
 {% endhighlight  %}
 
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -141,7 +139,7 @@ Please refer the following code sample.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -259,7 +257,7 @@ document.Close(true);
 
 {% highlight vbnet %}
 
-[VB]
+
 
 'Creates a new instance of PdfDocument class.
 

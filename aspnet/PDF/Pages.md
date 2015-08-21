@@ -38,9 +38,6 @@ The following code sample illustrate the various page settings.
 
 {% highlight c# %}
 
-[C#]
-
-
 
 //Creates a new PDF document.
 
@@ -82,9 +79,6 @@ document.Close(true);
 
 {% highlight vbnet %}
 
-[VB]
-
-
 
 'Creates a new PDF document.
 
@@ -125,16 +119,13 @@ document.Close(True)
 {% endhighlight %}
 
 
-### Add a Page
+## Add a Page
 
 Add method of the PdfPage Collection class allows you to add an empty page in a PDF document. Pages can be added to any part of the document using the Essential PDF APIs.
 
 The following code sample explains you on how to add a page in a PDF file. The Add() method of the PdfPageCollection class adds the page at the end.
+
 {% highlight c# %}
-
-[C#]
-
-
 
 //Creates a new PDF document.
 
@@ -167,10 +158,6 @@ document.Save("Sample.pdf");
 {% endhighlight %}
 
 {% highlight vbnet %}
-
-[VB]
-
-
 
 'Creates a new PDF document.
 
@@ -208,10 +195,6 @@ The following code sample illustrates how to insert a new page by specifying the
 
 {% highlight c# %}
 
-[C#]
-
-
-
 //Loads the PDF document.
 
 PdfLoadedDocument loadedDocument = new PdfLoadedDocument("Input.pdf");
@@ -242,10 +225,6 @@ loadedDocument.Close();
 
 {% highlight vbnet %}
 
-[VB]
-
-
-
 'Loads the PDF document.
 
 Dim loadedDocument As New PdfLoadedDocument("Input.pdf")
@@ -274,7 +253,7 @@ loadedDocument.Close()
 
 {% endhighlight %}
 
-Removing a page
+### Removing a page
 
 You can also remove pages from an existing PDF document by using following methods of the PdfLoadedPageCollection class.
 
@@ -284,10 +263,6 @@ You can also remove pages from an existing PDF document by using following metho
 The following code sample illustrates how to remove an existing page from the PDF document.
 
 {% highlight c# %}
-
-[C#]
-
-
 
 PdfLoadedDocument loadedDocument = new PdfLoadedDocument("Sample.pdf");
 
@@ -310,9 +285,6 @@ loadedDocument.Close(true);
 {% endhighlight %}
 
 {% highlight vbnet %}
-
-[VB]
-
 
 
 Dim loadedDocument As PdfLoadedDocument = New PdfLoadedDocument("Sample.pdf")
@@ -340,10 +312,6 @@ loadedDocument.Close(True)
 Essential PDF allows you to import a page or import a range of pages from one document to the other. The following code sample illustrates how to import a page to the existing document.
 
 {% highlight c# %}
-
-[C#]
-
-
 
 //Loads the PDF document.
 
@@ -374,10 +342,6 @@ document.Close();
 {% endhighlight  %}
 
 {% highlight vbnet %}
-
-[VB]
-
-
 
 'Loads the PDF document.
 
@@ -411,10 +375,6 @@ The following code sample illustrates how to import a page to the existing docum
 
 {% highlight c# %}
 
-[C#]
-
-
-
 //Loads the PDF document.
 
 PdfLoadedDocument loadedDocument = new PdfLoadedDocument("Input.pdf");
@@ -441,10 +401,6 @@ document.Close();
 
 {% highlight vbnet %}
 
-[VB]
-
-
-
 'Loads the PDF document.
 
 Dim loadedDocument As New PdfLoadedDocument("Input.pdf")
@@ -469,18 +425,18 @@ document.Close()
 
 {% endhighlight %}
 
-Implementation Note
+### Implementation Note
 
 Importing is done by converting the page content into PdfTemplate object that is, the new page does not inherit the possible complex layer structure, so that, only one default layer can be seen and something can be placed beneath that layer. However, you can not manipulate the "old" layers as they do not exist.
 
 This conversion is performed in order to avoid an incomplete page, harming further output. 
 
-Restrictions
+### Restrictions
 
 * The bookmark tree might not appear like the original document if just part of it is copied, as it is hard to recreate the tree with parts of the bookmark.
 * Some of the contents are usually imported from the original document to the final document during saving process. Hence, the original document should be closed only after the final document is saved.
 
-Note: To import the document asynchronously for Windows Store apps, refer the_ [Asynchronous Support](http://help.syncfusion.com/ug/windows%20forms/pdf/documents/asynchronoussupport.htm) _section.
+> Note: To import the document asynchronously for Windows Store apps, refer the [Asynchronous Support](http://help.syncfusion.com/ug/windows%20forms/pdf/documents/asynchronoussupport.htm) section.
 
 ## TextElement
 
@@ -491,11 +447,6 @@ PDF provides higher-level facilities that permit an application to describe, sel
 The DrawString method draws the text string at the specified location with the selected Brush and Font.
 
 {% highlight c# %}
-
-[C#]
-
-
-
 //Creates a new PDF document.
 
 PdfDocument doc = new PdfDocument();
@@ -528,10 +479,6 @@ doc.Save("Sample.pdf");
 
 {% highlight vbnet %}
 
-[VB]
-
-
-
 'Creates a new PDF document.
 
 Dim doc As PdfDocument = New PdfDocument()
@@ -559,6 +506,5 @@ graphics.DrawString("Hello world!", font, brush,new PointF(20,20))
 'Saves the document.
 
 doc.Save("Sample.pdf")
-
 
 {% endhighlight %}

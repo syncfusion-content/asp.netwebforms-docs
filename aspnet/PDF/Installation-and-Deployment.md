@@ -13,7 +13,7 @@ documentation: ug
 
 To produce and manipulate PDF documents, the machine where Essential PDF runs on does not require Adobe Acrobat to be installed. Essential PDF is a PDF document creation engine. To view PDF documents produced by Essential PDF, the machine requires at least an Adobe Acrobat Reader.
 
-Prerequisites
+### Prerequisites
 
 The prerequisites details are listed as follows:
 
@@ -23,10 +23,17 @@ The prerequisites details are listed as follows:
 <tr>
 <td>
 .NET Framework versions</td><td>
-* .NET 4.5.1* .NET 4.5* .NET 4.0* .NET 3.5 SP1* .NET 2.0</td></tr>
+<ul>
+<li>.NET 4.5.1</li>
+<li>.NET 4.5</li>
+<li>.NET 4.0</li>
+<li>.NET 3.5 SP1</li>
+<li>.NET 2.0</li>
+</ul>
+</td></tr>
 </table>
 
-Compatibility
+### Compatibility
 
  The compatibility details are listed as follows:
 
@@ -36,7 +43,16 @@ Compatibility
 <tr>
 <td>
 Operating Systems</td><td>
-* Windows 8.1 (32 bit and 64 bit)* Windows 8 (32 bit and 64 bit)* Windows Server 2008 (32 bit and 64 bit)* Windows 7 (32 bit and 64 bit)* Windows Vista (32 bit and 64 bit)* Windows XP* Windows 2003</td></tr>
+<ul>
+<li>Windows 8.1 (32 bit and 64 bit)</li>
+<li>Windows 8 (32 bit and 64 bit)</li>
+<li>Windows Server 2008 (32 bit and 64 bit)</li>
+<li>Windows 7 (32 bit and 64 bit)</li>
+<li>Windows Vista (32 bit and 64 bit)</li>
+<li>Windows XP</li>
+<li>Windows 2003</li>
+</ul>
+</td></tr>
 </table>
 
 
@@ -88,8 +104,8 @@ To use a component in your application, you need to add a reference to it
 
 1. In the application you created, open Solution Explorer. Right-click Reference folder and then click Add References.
 
-2.   Add the following assemblies as references in the application.
+2. Add the following assemblies as references in the application.
 
-* Syncfusion.Core.dll
-* Syncfusion.Compression.Base.dll
-* Syncfusion.Pdf.Base.dll
+	* Syncfusion.Core.dll
+	* Syncfusion.Compression.Base.dll
+	* Syncfusion.Pdf.Base.dll

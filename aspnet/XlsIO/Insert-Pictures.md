@@ -79,10 +79,7 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
-{% highlight vbnet%}
-
-
-
+{% highlight vbnet %}
 
 
 ' Step 1: Instantiates the spreadsheet creation engine.

@@ -26,7 +26,7 @@ Essential PDF provides you support to stamp over newly created document as well 
 {% highlight c# %}
 
 
-[C#]
+
 
 
 
@@ -56,7 +56,7 @@ lDoc.Save("Stamp.pdf");
 
 {% highlight vbnet %}
 
-[VB]
+
 
 'Loads the document.
 
@@ -86,7 +86,7 @@ lDoc.Save("Stamp.pdf")
 
 {% highlight c# %}
 
-[C#]
+
 
 //Loads the document.
 
@@ -114,7 +114,7 @@ lDoc.Save("Stamp.pdf");
 
 {% highlight vbnet %}
 
-[VB]
+
 
 'Loads the document.
 
@@ -147,7 +147,7 @@ PDF pages one above the other.
 
 {% highlight c# %}
 
-[C#]
+
 
 //Creates a new document.
 
@@ -181,7 +181,7 @@ doc.Save("NewPDF.pdf");
 
 {% highlight vbnet  %}
 
-[VB]
+
 
 'Creates a new document.
 
@@ -219,7 +219,7 @@ PDF pages can be converted to PdfTemplate object if you want to create a booklet
 like an image. You can create the template using the following code.
 
 {% highlight c# %}
-[C#]
+
 
 //Creates a new document.
 
@@ -253,7 +253,7 @@ doc.Save("NewPDF.pdf");
 
 {% highlight vbnet %}
 
-[VB]
+
 
 'Creates a new document.
 
@@ -285,9 +285,9 @@ doc.Save("NewPDF.pdf")
 
 {% endhighlight  %}
 
-Note: This template can be scaled, rotated, placed at different coordinates, and so on.
+> Note: This template can be scaled, rotated, placed at different coordinates, and so on.
 
-Restrictions
+### Restrictions
 
 This above process can also convert annotations, but with some limitations as follows.
 

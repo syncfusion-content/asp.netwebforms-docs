@@ -22,8 +22,6 @@ method of PdfBookmarkBase collection class adds the bookmark to the document.
 
 {% highlight c# %}
 
-[C#]
-
 //Creates a new document.
 
 PdfDocument document = new PdfDocument();
@@ -96,7 +94,6 @@ document.Close();
 
 {% highlight vbnet %}
 
-[VB]
 
 
 'Creates a new document.
@@ -177,7 +174,7 @@ The following code example illustrates how to insert new bookmarks in the existi
 
 {% highlight c# %}
 
-[C#]
+
 
 
 //Creates a new document.
@@ -204,7 +201,6 @@ document.Close();
 
 {% highlight vbnet %}
 
-[VB]
 
 
 
@@ -243,7 +239,7 @@ ways.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -275,7 +271,6 @@ document.Close();
 
 {% highlight vbnet %}
 
-[VB]
 
 
 
@@ -309,13 +304,13 @@ document.Close()
 
 Essential PDF allows you to add action to the specific bookmarks. You can perform action by clicking the bookmarks at the run time. You can add predefined actions to the bookmarks using the following classes.
 
-Table25: Class Table
+Table 25: Class Table
 
 <table>
 <tr>
-<td>
-Class Name</td><td>
-Description</td></tr>
+<th>
+Class Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 PdfLaunchAction</td><td>
@@ -342,9 +337,6 @@ This action goes to a destination in the current document.</td></tr>
 The following code sample illustrates you on how to add action to bookmarks.
 
 {% highlight c# %}
-
-[C#]
-
 
 //Creates a new document.
 
@@ -395,9 +387,6 @@ document.Close();
 {% endhighlight  %}
 
 {% highlight vbnet %}
-
-[VB]
-
 
 'Creates a new document.
 
@@ -457,8 +446,6 @@ You can also remove bookmarks from the existing PDF document by using the follow
 
 {% highlight c# %}
 
-[C#]
-
 
 //Loads the PDF document.
 
@@ -485,8 +472,6 @@ document.Close();
 {% endhighlight  %}
 
 {% highlight vbnet %}
-
-[VB]
 
 'Loads the PDF document.
 

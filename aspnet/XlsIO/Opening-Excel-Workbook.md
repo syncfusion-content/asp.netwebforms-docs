@@ -16,9 +16,8 @@ Essential XlsIO allows you to open the existing MS Excel workbook with an interf
 The following is the code example to open a document from file.
 
 
-{% highlight C#%}
 
-
+{% highlight c# %}
 
 
 
@@ -31,10 +30,7 @@ IApplication application = excelEngine.Excel;
 IWorkbook workbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
 
 {% endhighlight %}
-
-{% highlight vbnet%}
-
-
+{% highlight vbnet %}
 
 
 
@@ -50,9 +46,9 @@ Dim workbook As IWorkbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenT
 
 To open a binary excel document, the file name with the extension *.xls is sufficient.
 
-{% highlight C#%}
 
 
+{% highlight c# %}
 
 
 
@@ -66,9 +62,7 @@ IWorkbook workbook = application.Workbooks.Open("Sample.xls", ExcelOpenType.Auto
 
 {% endhighlight %}
 
-{% highlight vbnet%}
-
-
+{% highlight vbnet %}
 
 
 
@@ -86,9 +80,9 @@ Dim workbook As IWorkbook = application.Workbooks.Open("Sample.xls", ExcelOpenTy
 
 The following is the code sample to open a document from file.
 
-{% highlight C#%}
 
 
+{% highlight c# %}
 
 
 
@@ -115,9 +109,7 @@ IWorkbook workbook = await application.Workbooks.OpenAsync(openFile);
 
 {% endhighlight %}
 
-{% highlight vbnet%}
-
-
+{% highlight vbnet %}
 
 
 
@@ -144,9 +136,9 @@ Dim workbook As IWorkbook = Await application.Workbooks.OpenAsync(openFile)
 
 The following is the code example to open a document from file.
 
-{% highlight C#%}
 
 
+{% highlight c# %}
 
 
 
@@ -161,10 +153,9 @@ StorageFile outFile = await local.GetFileAsync("Sample.xlsx");
 
 IWorkbook workbook = await application.Workbooks.OpenAsync(outFile);
 
+
 {% endhighlight %}
-
-{% highlight vbnet%}
-
+{% highlight vbnet %}
 
 
 
@@ -187,7 +178,11 @@ To know about saving workbook as a file, refer to Save Workbook as File section.
 
 The following is the code example to open a document from file.
 
-{% highlight C#%}
+
+
+{% highlight c# %}
+
+
 
 ExcelEngine excelEngine = new ExcelEngine();
 
@@ -199,10 +194,11 @@ FileStream fileStream = new FileStream ("Sample.xlsx", FileMode.Open);
 //Opens the workbook as a stream.
 IWorkbook workbook = application.Workbooks.Open(fileStream, ExcelOpenType.Automatic);
 
+
 {% endhighlight %}
+{% highlight vbnet %}
 
 
-{% highlight vbnet%}
 
 Dim excelEngine As ExcelEngine = New ExcelEngine()
 
@@ -214,12 +210,13 @@ Dim fileStream As New FileStream("Sample.xlsx", FileMode.Open)
 
 'Opens the workbook as a stream.
 Dim workbook As IWorkbook = application.Workbooks.Open(fileStream, ExcelOpenType.Automatic)
-
 {% endhighlight %}
 
 Opening a Workbook as a stream in Windows Phone 8.
 
-{% highlight  C#%}
+
+
+{% highlight c# %}
 
 ExcelEngine excelEngine = new ExcelEngine();
 
@@ -234,8 +231,10 @@ IWorkbook workbook = await application.Workbooks.OpenAsync(outFile);
 
 {% endhighlight %}
 
+{% highlight vbnet %}
 
-{% highlight vbnet%}
+
+
 Dim excelEngine As ExcelEngine = New ExcelEngine()
 
 Dim application As IApplication = excelEngine.Excel
@@ -250,6 +249,7 @@ Dim outFile As Stream = Await local.OpenStreamForReadAsync("Sample.xlsx")
 'Opens the workbook.
 Dim workbook As IWorkbook = Await application.Workbooks.OpenAsync(outFile)
 
+{% endhighlight %}
 
 To know more about saving workbook as a stream, refer to Save Workbook as Stream section. 
 
@@ -257,9 +257,11 @@ To know more about saving workbook as a stream, refer to Save Workbook as Stream
 
 XlsIO allows you to open a spreadsheet in Read-Only mode, even if the spreadsheet is already open in your machine. 
 
-{% endhighlight %}
 
-{% highlight C#%}
+
+{% highlight c# %}
+
+
 
 ExcelEngine excelEngine = new ExcelEngine();
 
@@ -270,7 +272,8 @@ IWorkbook workbook = application.Workbooks.OpenReadOnly("Sample.xlsx");
 
 {% endhighlight %}
 
-{% highlight vbnet%}
+
+{% highlight vbnet %}
 
 Dim excelEngine As ExcelEngine = New ExcelEngine()
 
@@ -283,18 +286,18 @@ Dim workbook As IWorkbook = application.Workbooks.OpenReadOnly("Sample.xlsx")
 {% endhighlight %}
 
 
-## Open an Encrypted Workbook
+### Open an Encrypted Workbook
 
 This section illustrates how to open an encrypted document in XlsIO. To open an encrypted file, the password must be provided to decrypt the file. The following code example shows the way of decrypting a file to access its data.
 
-![](Opening-Excel-Workbook_images/Opening-Excel-Workbook_img1.png) 
+![](Opening-Excel-Workbook_images/Opening-Excel-Workbook_img1.png)
 
 
 Opening an encrypted workbook
 
-{% highlight C#%}
 
 
+{% highlight vbnet %}
 
 
 
@@ -309,9 +312,8 @@ IWorkbook workbook = application.Workbooks.Open("Sample.xlsx", ExcelParseOption
 
 {% endhighlight %}
 
-{% highlight vbnet%}
 
-
+{% highlight vbnet %}
 
 
 
@@ -323,14 +325,15 @@ Dim application As IApplication = excelEngine.Excel
 'Decryption:
 'Opens the encrypted workbook.
 Dim workbook As IWorkbook = application.Workbooks.Open("Sample.xlsx", ExcelParseOptions.Default, True,"password")
-
 {% endhighlight %}
 
-### Opening Opening an encrypted workbook in WinRT
-
-{% highlight C#%}
 
 
+Opening Opening an encrypted workbook in WinRT
+
+
+
+{% highlight vbnet %}
 
 
 
@@ -353,9 +356,8 @@ IWorkbook workbook = await application.Workbooks.OpenAsync(openFile, ExcelParseO
 
 {% endhighlight %}
 
-{% highlight vbnet%}
 
-
+{% highlight vbnet %}
 
 
 
@@ -374,14 +376,14 @@ Dim openFile As StorageFile = Await openPicker.PickSingleFileAsync()
 'Opens the encrypted workbook.
 Dim workbook As IWorkbook = Await application.Workbooks.OpenAsync(openFile, ExcelParseOptions.Default, true, "password")
 
-
-
-### Opening a Workbook in Windows Phone 8
-
 {% endhighlight %}
 
-{% highlight C#%}
 
+Opening a Workbook in Windows Phone 8
+
+
+
+{% highlight vbnet %}
 
 
 
@@ -400,9 +402,8 @@ IWorkbook workbook = await application.Workbooks.OpenAsync(openFile, ExcelParseO
 
 {% endhighlight %}
 
-{% highlight vbnet%}
 
-
+{% highlight vbnet %}
 
 
 
@@ -423,18 +424,19 @@ Dim workbook As IWorkbook = Await application.Workbooks.OpenAsync(openFile, Exce
 {% endhighlight %}
 
 
+
 To know about saving an encrypted workbook, refer to Save an Encrypted Workbook section.
 
 
-## Open a CSV File
+### Open a CSV File
 
-### Opening a Comma Separated Value (CSV) file
+Opening a Comma Separated Value (CSV) file
 
 XlsIO allows you to open a CSV file. The following code example shows how to achieve this.
 
-{% highlight C# %}
 
 
+{% highlight vbnet %}
 
 
 
@@ -447,8 +449,8 @@ IWorkbook workbook = application.Workbooks.Open("Sample.csv", ",");
 
 {% endhighlight %}
 
-{% highlight vbnet%}
 
+{% highlight vbnet %}
 
 
 
@@ -465,13 +467,13 @@ Dim workbook As IWorkbook = application.Workbooks.Open("Sample.csv", ",")
 
 To know about saving workbook as CSV file, refer to Save Workbook as CSV section.
 
-## Open an XML Workbook
+### Open an XML Workbook
 
-### Opening an XML Workbook
-
-{% highlight C#%}
+Opening an XML Workbook
 
 
+
+{% highlight vbnet %}
 
 
 
@@ -484,9 +486,8 @@ IWorkbook workbook = application.Workbooks.Open("Sample.xml", ExcelOpenType.Auto
 
 {% endhighlight %}
 
-{% highlight vbnet%}
 
-
+{% highlight vbnet %}
 
 
 
@@ -500,11 +501,12 @@ Dim workbook As IWorkbook = application.Workbooks.Open("Sample.xml", ExcelOpenTy
 
 {% endhighlight %}
 
-### Opening an XML Workbook in WinRT
 
-{% highlight C#%}
+Opening an XML Workbook in WinRT
 
 
+
+{% highlight vbnet %}
 
 
 
@@ -526,9 +528,8 @@ IWorkbook workbook = await application.Workbooks.OpenAsync(openFile);
 
 {% endhighlight %}
 
-{% highlight vbnet%}
 
-
+{% highlight vbnet %}
 
 
 
@@ -549,13 +550,11 @@ Dim workbook As IWorkbook = Await application.Workbooks.OpenAsync(openFile)
 {% endhighlight %}
 
 
-### Opening an XML Workbook in Windows Phone 8
-
-
-{% highlight C# %}
+Opening an XML Workbook in Windows Phone 8
 
 
 
+{% highlight vbnet %}
 
 
 ExcelEngine excelEngine = new ExcelEngine();
@@ -575,9 +574,8 @@ IWorkbook workbook = await application.Workbooks.OpenAsync(openFile);
 
 {% endhighlight %}
 
-{% highlight vbnet%}
 
-
+{% highlight vbnet %}
 
 
 
@@ -597,6 +595,7 @@ Dim openFile As StorageFile = Await local.GetFileAsync("Sample.xml")
 Dim workbook As IWorkbook = Await application.Workbooks.OpenAsync(openFile)
 
 {% endhighlight %}
+
 
 To know more about saving workbook as XML, refer to Save Workbook as XML section.
 

@@ -16,25 +16,17 @@ For example, assume that you have a 13-page document. Creating a booklet of the 
 
 ![http://help.syncfusion.com/ug/wpf/pdf/ImagesExt/image517_77.jpg](Booklets_images/Booklets_img1.jpeg)
 
-
-
 ![http://help.syncfusion.com/ug/wpf/pdf/ImagesExt/image517_78.jpg](Booklets_images/Booklets_img2.jpeg)
-
-
-
-
 
 ![http://help.syncfusion.com/ug/wpf/pdf/ImagesExt/image517_79.jpg](Booklets_images/Booklets_img3.jpeg)
 
-
-
-Pages Printed and Folded into New Booklet
+###  Pages Printed and Folded into New Booklet
 
 PdfBookletCreator class is used for creating Booklets. The following code example illustrates how to create the Booklet.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -54,7 +46,7 @@ doc.Save("Sample.pdf");
 
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -76,7 +68,7 @@ The following code example illustrates the overloads of the CreateBooklet method
 
 {% highlight c# %}
 
-[C#]
+
 
 CreateBooklet(PdfLoadedDocument, SizeF);
 
@@ -98,7 +90,7 @@ You can also apply margins to the booklets at the time of creating the booklet b
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -123,7 +115,7 @@ doc.Save("Sample.pdf");
 {% endhighlight c# %}
 
 {% highlight vbnet %}
-[VB]
+
 
 
 

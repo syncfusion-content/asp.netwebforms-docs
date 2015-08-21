@@ -29,7 +29,7 @@ The following code example illustrates this.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -68,8 +68,6 @@ document.Close();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB]
-
 
 'Creates a new PDF document.
 
@@ -111,7 +109,7 @@ used to create Buttons fields.
 
 
 {% highlight c# %}
-[C#]
+
 
 
 //Creates a new PDF document.
@@ -145,8 +143,6 @@ document.Close();
 {% endhighlight %}
 
 {% highlight vbnet %}
-
-[VB]
 
 
 'Creates a new PDF document.
@@ -189,7 +185,7 @@ such as BorderStyle, HighlightMode, BorderWidth, etc.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 //Creates a new PDF document.
@@ -225,8 +221,6 @@ document.Close();
 {% endhighlight  %}
 
 {% highlight vbnet %}
-[VB]
-
 
 'Creates a new PDF document.
 
@@ -267,7 +261,7 @@ the PdfListFieldItem class.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -316,8 +310,6 @@ document.Close();
 {% endhighlight  %}
 
 {% highlight vbnet %}
-[VB]
-
 
 
 'Creates a new PDF document.
@@ -371,7 +363,7 @@ used to create the ListBox field in PDF forms.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 //Creates a new PDF document.
@@ -419,8 +411,6 @@ document.Close();
 
 {% endhighlight %}
 {% highlight vbnet %}
-
-[VB]
 
 
 
@@ -478,7 +468,7 @@ using the PdfRadioButtonListItem class.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 //Creates a new PDF document.
@@ -520,8 +510,6 @@ document.Close();
 {% endhighlight %}
 
 {% highlight vbnet %}
-
-[VB]
 
 
 'Creates a new PDF document.
@@ -568,7 +556,7 @@ A signature field is a form field that contains a digital signature. PdfSignatur
 
 {% highlight c# %}
 
-[C#]
+
 
 
 //Creates a new PDF document.
@@ -616,8 +604,6 @@ document.Close();
 {% endhighlight  %}
 
 {% highlight vbnet %} 
-
-[VB]
 
 
 'Creates a new PDF document.
@@ -694,7 +680,7 @@ You can access each field by using its index or field name. The following code e
 
 {% highlight c# %}
 
-[C#]
+
 
 
 PdfLoadedTextBoxField field1 = form.Fields["fieldname"] as PdfLoadedTextBoxField;
@@ -704,8 +690,6 @@ PdfLoadedTextBoxField field2 = form.Fields[0] as PdfLoadedTextBoxField;
 {% endhighlight %}
 
 {% highlight vbnet %}
-
-[VB]
 
 
 Dim field1 As PdfLoadedTextBoxField = form.Fields("fieldname")
@@ -719,7 +703,7 @@ The following code example illustrates how to change the bounds and value of the
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -754,8 +738,6 @@ document.Close();
 {% endhighlight %}
 
 {% highlight vbnet %}
-
-[VB]
 
 'Loads the PDF document.
 
@@ -797,7 +779,7 @@ The following code illustrates how to fill the Text Box Field.
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 //Loads the PDF document.
@@ -823,8 +805,6 @@ document.Close();
 {% endhighlight  %}
 
 {% highlight vbnet %}
-
-[VB]
 
 
 'Loads the PDF document.
@@ -852,13 +832,13 @@ document.Close()
 
 The following table lists some of the properties of the TextBoxField.
 
-Table24: Property Table
+Table 24: Property Table
 
 <table>
 <tr>
-<td>
-TextBoxField Property </td><td>
-Description </td></tr>
+<th>
+TextBoxField Property </th><th>
+Description </th></tr>
 <tr>
 <td>
 BackColor </td><td>
@@ -899,7 +879,7 @@ Gets or sets the alignment of the text in the field. It includes the following o
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -946,8 +926,6 @@ document.Close();
 {% endhighlight %}
 
 {% highlight vbnet %}
-
-[VB]
 
 
 'Loads the PDF document.
@@ -998,7 +976,7 @@ The following code illustrates how to fill the Combo Box Field.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1025,8 +1003,6 @@ document.Close();
 {% endhighlight %}
 
 {% highlight vbnet %}
-
-[VB]
 
 
 'Loads the PDF document.
@@ -1057,7 +1033,7 @@ The following code illustrates how to fill the Radio Button Field.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 //Loads the PDF document.
@@ -1083,8 +1059,6 @@ document.Close();
 {% endhighlight  %}
 
 {% highlight vbnet %}
-
-[VB]
 
 'Loads the PDF document.
 
@@ -1114,7 +1088,7 @@ The following code illustrates how to fill the List Box Field.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 //Loads the PDF document.
@@ -1140,8 +1114,6 @@ document.Close();
 {% endhighlight %}
 
 {% highlight vbnet %}
-
-[VB]
 
 
 'Loads the PDF document.
@@ -1172,7 +1144,7 @@ The following code illustrates how to fill the Check Box Field.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 //Loads the PDF document.
@@ -1204,8 +1176,6 @@ document.Close();
 {% endhighlight %}
 
 {% highlight vbnet %}
-
-[VB]
 
 
 'Loads the PDF document.
@@ -1242,7 +1212,7 @@ The following code illustrates how to fill the Signature Field
 
 {% highlight c# %}
 
-[C#]
+
 
 //Loads the PDF document.
 
@@ -1275,8 +1245,6 @@ document.Close();
 {% endhighlight %}
 
 {% highlight vbnet %}
-
-[VB]
 
 'Loads the PDF document.
 
@@ -1315,7 +1283,7 @@ You can also enumerate the fields and fill them. The following code example illu
 
 {% highlight c# %}
 
-[C#]
+
 
 
 //Loads the PDF document.
@@ -1355,8 +1323,6 @@ document.Close();
 {% endhighlight %}
 
 {% highlight vbnet %}
-
-[VB]
 
 'Loads the PDF document.
 
@@ -1400,7 +1366,7 @@ The following code example illustrates this.
 
 {% highlight c# %}
 
-[C#]
+
 
 //Loads the PDF document.
 
@@ -1433,8 +1399,6 @@ form.Fields[0].Flatten = true;
 {% endhighlight  %}
 
 {% highlight vbnet %}
-
-[VB]
 
 'Loads the PDF document.
 
@@ -1474,7 +1438,7 @@ The following code example illustrates this.
 
 {% highlight c# %}
 
-[C#]
+
 
 //Creates a new PDF document.
 
@@ -1547,8 +1511,6 @@ document.Close();
 {% endhighlight %}
 
 {% highlight vbnet %}
-
-[VB]
 
 'Creates a new PDF document.
 

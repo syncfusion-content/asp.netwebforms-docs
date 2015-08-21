@@ -15,14 +15,16 @@ The server side event present in the CurrencyTextbox control is listed:
 <table>
 <tr>
 <th>
-{{ '**Event Name**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Arguments**' | markdownify }}</th></tr>
+Event Name</th><th>
+Description</th><th>
+Arguments</th></tr>
 <tr>
 <td>
 OnFocusOut</td><td>
-Triggers when the focus has been moved out from the TextBox.</td><td>
-e.Value - Value of the CurrencyTextbox.e.EventType - Event Name.e.Arguments - Contain keys and value of the CurrencyTextbox.</td></tr>
+Triggers when the focus has been moved out from the TextBox.</td><td><br/><br/>
+e.Value - Value of the CurrencyTextbox.<br/><br/>
+e.EventType - Event Name.<br/><br/>
+e.Arguments - Contain keys and value of the CurrencyTextbox.<br/><br/></td></tr>
 </table>
 
 

@@ -162,9 +162,9 @@ _Table_ _11_: Events Table
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 BeginCellLayout</td><td>
@@ -975,7 +975,7 @@ doc.Close(True)
 
 {% endhighlight %}
 
-Padding and Spacing
+### Padding and Spacing
 
 Customization of the Cell padding and Cell spacing are also possible with access to the properties CellPadding and CellSpacing available in the Style of the light table.
 
@@ -1093,7 +1093,7 @@ doc.Close(True)
 
 {% endhighlight %}
 
-Header
+### Header
 
 Header is a set of rows that repeat on each page and has its own style. Rows for the header can be taken from column captions or from ordinary rows. In the latter case, the rows are treated as headers and do not appear in the body of the PdfLightTable.
 
@@ -1333,10 +1333,10 @@ _Table_ _12_: Property Table
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td><td>
-Data Type</td></tr>
+<th>
+Name</th><th>
+Description</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 ColumnName</td><td>
@@ -1353,7 +1353,8 @@ Width</td><td>
 Gets of sets the width of the column.</td><td>
 float</td></tr>
 </table>
-ColumnName
+
+#### ColumnName
 
 By default, PdfLightTable displays the column text as the DataSource column name. You can change the column text with the help of the ColumnName property. The following code sample illustrates the same:
 
@@ -1593,16 +1594,16 @@ doc.Close(True)
 
 You can specify the default cell style by using the DefaultStyle property. You can set the style for the header cell using the HeaderStyle property.  An alternate style can also be specified using the AlternateStyle property. This property is used to customize the appearance of the cells in the odd row.
 
-Properties of a cell
+#### Properties of a cell
 
 _Table_ _13_: Property Table
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td><td>
-Data Type</td></tr>
+<th>
+Name</th><th>
+Description</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 BackgroundBrush</td><td>
@@ -1793,35 +1794,35 @@ PdfLightTable offers a set of events that helps in changing the look and feel of
 
 This event is raised before beginning the page layout. The arguments of this event are as follows.
 
-•Page (read-only): Page on which layout should be performed.
+* Page (read-only): Page on which layout should be performed.
 
-•Bounds: Size of the PdfLightTable part that should be laid out on the page.
+* Bounds: Size of the PdfLightTable part that should be laid out on the page.
 
-•Cancel: Enables to cancel layout.
+* Cancel: Enables to cancel layout.
 
 EndPageLayhis event is raised when layout on a page is finished. The arguments of this event are as follows:
 
-•Result (read-only): Layout result for the current page
+* Result (read-only): Layout result for the current page
 
-•NextPage: Page on which layout should continue
+* NextPage: Page on which layout should continue
 
 #### BeginRowLayout
 
 This event is raised before beginning the row layout of the light table. The arguments of this event are as follows:
 
-•RowIndex (read-only): Index of the row (zero based)
+* RowIndex (read-only): Index of the row (zero based)
 
-•CellStyle : Style of the cells within the row.
+* CellStyle : Style of the cells within the row.
 
-•ColumnSpanMap : Array of integers specifying column span.
+* ColumnSpanMap : Array of integers specifying column span.
 
-•Cancel: Enables to cancel layout.
+* Cancel: Enables to cancel layout.
 
-•IgnoreColumnFormat: Gets or sets a value indicating whether column string format should be ignored.
+* IgnoreColumnFormat: Gets or sets a value indicating whether column string format should be ignored.
 
-•Skip: Enables to skip the entire row.
+* Skip: Enables to skip the entire row.
 
-•MinimalHeight: Enables to specify the minimal row height, which is used to preserve space for images.
+* MinimalHeight: Enables to specify the minimal row height, which is used to preserve space for images.
 
 The following code example illustrates how to set the row height using BeginRowLayout event:
 
@@ -1959,29 +1960,29 @@ End Sub
 
 This event is raised when row layout is finished. The arguments of this event are as follows:
 
-•RowIndex (read-only): Index of the row (zero based),
+* RowIndex (read-only): Index of the row (zero based),
 
-•Cancel: Enables to cancel layout.
+* Cancel: Enables to cancel layout.
 
-•LayoutCompleted (read-only):  Gets a value indicating whether the row was drawn completely.
+* LayoutCompleted (read-only):  Gets a value indicating whether the row was drawn completely.
 
-•Bounds (read-only): Bounds of the row on the page.
+* Bounds (read-only): Bounds of the row on the page.
 
-BeginCellLayout
+#### BeginCellLayout
 
 This event is raised when cell layout starts. The arguments of this event are as follows:
 
-•RowIndex (read-only): Index of the current row
+* RowIndex (read-only): Index of the current row
 
-•CellIndex (read-only): Index of the current cell within the row
+* CellIndex (read-only): Index of the current cell within the row
 
-•Value (read-only): Text value of the cell
+* Value (read-only): Text value of the cell
 
-•Bounds (read-only): Bounds of the cell
+* Bounds (read-only): Bounds of the cell
 
-•Graphics : Graphics on which the cell should be drawn
+* Graphics : Graphics on which the cell should be drawn
 
-•Skip: Indicates if the cell should be skipped
+* Skip: Indicates if the cell should be skipped
 
  The following code example illustrates how to draw the graphics elements inside the cell.
 
@@ -2123,15 +2124,15 @@ Private Sub pdfLightTable_BeginCellLayout(sender As Object, args As BeginCellLay
 
 This event is raised when cell layout finishes. The arguments of this event are as follows:
 
-•RowIndex (read-only): Index of the current row.
+* RowIndex (read-only): Index of the current row.
 
-•CellIndex (read-only): Index of the current cell within the row.
+* CellIndex (read-only): Index of the current cell within the row.
 
-•Value (read-only): Text value of the cell.
+* Value (read-only): Text value of the cell.
 
-•Bounds (read-only): Bounds of the cell.
+* Bounds (read-only): Bounds of the cell.
 
-•Graphics: Graphics on which the cell should be drawn.
+* Graphics: Graphics on which the cell should be drawn.
 
 ### Grid
 
@@ -2145,10 +2146,10 @@ _Table_ _14_: Property Table
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td><td>
-Data Type</td></tr>
+<th>
+Name</th><th>
+Description</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 AllowRowBreakAcrossPages</td><td>
@@ -2769,7 +2770,7 @@ pdfDocument.Close(True)
 
 You can get layout settings for the drawn PdfGrid with the help of PdfGridLayoutResult class. You can also get the bounds and the last page where the PdfGrid is drawn using the Bounds and Page properties. This is mainly used to render the PDF element with respect to the position of the Grid.
 
-Properties
+### Properties
 
 _Table_ _18_: Property Table
 
@@ -2908,10 +2909,10 @@ _Table_ _19_: Property Table
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td><td>
-Data Type</td></tr>
+<th>
+Name</th><th>
+Description</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 AllowHorizontalOverflow</td><td>
@@ -2966,7 +2967,7 @@ When you set AllowHorizontalOverflow to True, the columns exceeding the current 
 
 This property decides if the cell border should overlap with neighboring cells or to draw the interior of cell.
 
-> Note_: This property applies for all cells in the PdfGrid. Be careful while using overlapping borders, because they may produce bad results if they are not of the same width and color
+> Note: This property applies for all cells in the PdfGrid. Be careful while using overlapping borders, because they may produce bad results if they are not of the same width and color
 
 #### CellPadding
 
@@ -2978,13 +2979,11 @@ The distance between the cells otherwise known as CellSpacing, can be set to all
 
 #### Header
 
-Header
-
 Header is a set of rows that can be optionally repeated on each page and has its own style. You can add header as follows:
 
-•Directly from column captions.
+* Directly from column captions.
 
-•By using Add method of the PdfGridHeaderCollection class.
+* By using Add method of the PdfGridHeaderCollection class.
 
 
 > Note: When you bind data source to PdfGrid, column captions will be automatically added to header collection. It can be removed at any time using Clear method of PdfGridHeaderCollection.
@@ -4430,7 +4429,7 @@ Description</th><th>
 Data Type</th></tr>
 <tr>
 <td>
-{ [ColumnSpan](http://help.syncfusion.com/ug/windows%20forms/documents/column2.htm) | markdownify }</td><td>
+{ '![ColumnSpan](http://help.syncfusion.com/ug/windows%20forms/documents/column2.htm)' | markdownify }</td><td>
 Gets or set the column span.</td><td>
 Integer</td></tr>
 <tr>
@@ -4445,12 +4444,12 @@ Gets or sets the image alignment type of the background image.</td><td>
 PdfGridImagePosition</td></tr>
 <tr>
 <td>
-{ [RowSpan](http://help.syncfusion.com/ug/windows%20forms/documents/row2.htm) | markdownify }</td><td>
+{ '![RowSpan](http://help.syncfusion.com/ug/windows%20forms/documents/row2.htm)' | markdownify }</td><td>
 Gets or sets the row span</td><td>
 Integer</td></tr>
 <tr>
 <td>
-{ [StringFormat](http://help.syncfusion.com/ug/windows%20forms/documents/drawingtext.htm) | markdownify }</td><td>
+{ '![StringFormat](http://help.syncfusion.com/ug/windows%20forms/documents/drawingtext.htm)' | markdownify }</td><td>
 Gets or sets the string format.</td><td>
 PdfStringFormat</td></tr>
 <tr>
@@ -4469,7 +4468,8 @@ Width</td><td>
 Gets the width.</td><td>
 float</td></tr>
 </table>
-Cell Size
+
+### Cell Size
 
 The width and height cannot be modified for a single cell, but for the entire column or row. Please check PdfGridColumn and PdfGridRow for more details.
 
@@ -4950,5 +4950,3 @@ Layout Events</td><td>
 BeginCellLayout, BeginPageLayout, BeginRowLayout, EndCellLayout, EndPageLayout, EndRowLayout</td><td>
 BeginPageLayout, EndPageLayout</td></tr>
 </table>
-
-

@@ -275,25 +275,25 @@ The following are the fields displayed:
 
 Numeric fields have an additional NumberingStyle property. There are five possible numbering styles supported by the automatic fields. They are as follows.
 
-•Arabic (1, 2, 3, 4, ...)
+* Arabic (1, 2, 3, 4, ...)
 
-•Upper Roman (I, II, III, IV, ...)
+* Upper Roman (I, II, III, IV, ...)
 
-•Roman (i, ii, iii, iv, ...)
+* Roman (i, ii, iii, iv, ...)
 
-•Upper Latin (A, B, C, D, ..., Z, AA, AB, ...)
+* Upper Latin (A, B, C, D, ..., Z, AA, AB, ...)
 
-•Latin (a, b, c, d, ..., z, aa, ab, ...)
+* Latin (a, b, c, d, ..., z, aa, ab, ...)
 
 Brief descriptions on the various numbering fields are given as follows.
 
-_Table_ _4_: List of Numbering fields with description
+_Table_ _4_: _List of Numbering fields with description_
 
 <table>
 <tr>
 <th>
 PdfPageNumberField</th><th>
-Specifies thepage number on which the field is drawn.</th></tr>
+Specifies the page number on which the field is drawn.</th></tr>
 <tr>
 <td>
 PdfPageCountField</td><td>
@@ -976,7 +976,7 @@ Essential PDF allows you to create an ordered list in the document. Ordered List
 
 The PdfOrdered class is derived from the PdfList class that contains an item collection represented by the PdfListItemCollection class. The items from the collection are represented by the PdfListItem class.
 
-Initialize Lists
+### Initialize Lists
 
 You can create new instances of the PdfOrderedList class by using the following constructors.
 
@@ -1030,7 +1030,6 @@ PdfOrderedMarker (PdfNumberStyle style, string delimiter, string finalizer, PdfF
 Creates marker with the number style, font, finalizer, delimiter, and the specified symbol located between numbers. It is used when the MarkerHierarchy property of the PdfOrderedList class is set {{ '_True_' | markdownify }}. Default value for delimiter is '.'.</td></tr>
 </table>
 
-
 Default list marker contains Number style.
 
 ## UnOrdered List 
@@ -1083,7 +1082,7 @@ Unordered list has an unordered marker that is represented by the PdfUnorderedM
 * CustomImage
 * CustomTemplate
 
-Default list marker contains Disk style.
+### Default list marker contains Disk style.
 
 To use the CustomString, CustomImage or CustomTemplate style, you need to set the Text, Image or Template property of the PdfUnorderedMarker class respectively.
 
@@ -1399,6 +1398,3 @@ doc.Close(True)
 {% endhighlight %}
 
 ![http://help.syncfusion.com/ug/windows%20forms/pdf/ImagesExt/image517_54.jpg](TextElement_images/TextElement_img4.jpeg)
-
-
-

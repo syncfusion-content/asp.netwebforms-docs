@@ -37,7 +37,7 @@ PdfBitmap and PdfMetafile classes. There are static methods in PdfImage provi
 instance from different sources.
 
 
-Note: Image quality is 100 by default, which increases the resultant file size and quality. Reducing the quality will reduce 
+> Note: Image quality is 100 by default, which increases the resultant file size and quality. Reducing the quality will reduce 
 the file size.
 
 ### Working with Bitmap
@@ -50,7 +50,7 @@ DrawImage method of the PdfGraphics class draws a given image at a specified loc
 
 {% highlight c# %}
 
-[C#]
+
 
 
 //Creates a new PDF document.
@@ -85,7 +85,7 @@ doc.Close(true);
 
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -127,7 +127,7 @@ multipage tiff files using Essential PDF API.
 
 {% highlight c# %}
 
-[C#]
+
 
 // Creates a new instance of PdfDocument class.
 
@@ -173,7 +173,7 @@ doc.Close();
 
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -227,9 +227,9 @@ _Table8: List of public properties of PdfMetafileLayoutFormat class_
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Break</td><td>
@@ -257,10 +257,6 @@ Gets a value that indicates whether PaginateBounds should be used or not.</td></
 </table>
 
 {% highlight c# %}
-
-
-[C#]
-
 
 
 //Creates a new instance of PdfDocument class.
@@ -305,7 +301,7 @@ doc.Close();
 
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -353,7 +349,7 @@ A soft mask specifies the transparency level for each pixel of the image. You ca
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -391,7 +387,7 @@ doc.Close();
 
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -433,7 +429,7 @@ Essential PDF allows you to replace images in an existing document. The ReplaceI
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -461,7 +457,7 @@ doc.Close();
 
 {% highlight vbnet %}
 
- [VB]
+ 
 
 
 
@@ -495,7 +491,7 @@ The overloaded ConvertToImage method enables an HTML page to convert into an ima
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -517,7 +513,7 @@ html.Dispose();
 
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -543,7 +539,7 @@ Essential PDF allows export of PDF pages as images. PDF viewer instance needs to
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -575,7 +571,7 @@ view.Dispose();
 
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
