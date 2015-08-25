@@ -24,7 +24,7 @@ To know more detail about the Angular binding, refer to the following link locat
 
 [http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
 
-> Note: Add the following script files as given in the following example to access the angular binding. They provide JS library for angular binding.
+N> Add the following script files as given in the following example to access the angular binding. They provide JS library for angular binding.
 
 * _angular-min.js_
 * _ej.widget.angular.min.js_
@@ -311,7 +311,7 @@ For more information about the knockout binding, refer to the following online d
 
 [http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
 
-> Note: Add the following script files along with the given code to access the knockout binding. They provide JS library for knockout binding.
+N> Add the following script files along with the given code to access the knockout binding. They provide JS library for knockout binding.
 
 * _knockout-min.js_
 * _ej.widget.ko-latest.min.js_

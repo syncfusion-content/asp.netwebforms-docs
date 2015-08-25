@@ -594,7 +594,7 @@ Execute the above code example to render TreeView. When you select the mail fol
 
 
 
-> Note: The inline edit validation is done when “ClientSideOnInlineEditValidation” event occurs, as in the screenshot as follows. The “ClientSideOnInlineEditValidation” event rises only when the “AllowEditing” property is set to True.
+N> The inline edit validation is done when “ClientSideOnInlineEditValidation” event occurs, as in the screenshot as follows. The “ClientSideOnInlineEditValidation” event rises only when the “AllowEditing” property is set to True.
 
 
 

@@ -101,7 +101,7 @@ Open Visual Studio and create a new project by clicking New Project. Select the 
 
 5. Initialize the control using below code snippet.
 
-   > Note: URL value needs to be defined in order to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately.
+   N> URL value needs to be defined in order to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately.
 
 
 {% highlight html %}
@@ -215,10 +215,9 @@ Open Visual Studio and create a new project by clicking New Project. Select the 
 Add the script files and CSS files in the head tag of the Default.aspx page.
 
 
-> Note:
-> 1. Follow the given order while adding scripts and styles.
-> 2. Apart from cdn files rest of them can be acquired from the following location.
-> C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScript\assets\
+1. Follow the given order while adding scripts and styles.
+2. Apart from cdn files rest of them can be acquired from the following location.
+ C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScript\assets\
 
 
 {% highlight html %}
@@ -521,7 +520,7 @@ Add the following methods to the service invoked for any server-side operations 
    ~~~
    {:.prettyprint }
    
-   > Note: x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
+   N> x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
 
 4. Register the namespace in web.config file by adding the following codes.
 
@@ -548,4 +547,4 @@ Add the following methods to the service invoked for any server-side operations 
    ~~~
    {:.prettyprint }
 
-> Note: In this example, “Sample” indicates the name of the project and “OlapGaugeService” indicates the name of the WCF service created. And_ x.x.x.x _in the above code example refers to the current version of the Essential Studio running in your system.
+N> In this example, “Sample” indicates the name of the project and “OlapGaugeService” indicates the name of the WCF service created. And_ x.x.x.x _in the above code example refers to the current version of the Essential Studio running in your system.

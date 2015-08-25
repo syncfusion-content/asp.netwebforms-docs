@@ -117,9 +117,7 @@ doc.Close()
 
 {% endhighlight %}
 
-> Note: For more information on mail merge using DocIO, you can refer to online documentation link:
-
-> [http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/46mailmerge.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
+N> For more information on mail merge using DocIO, you can refer to online documentation link: [http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/46mailmerge.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
 
 ## Find and Replace
 
@@ -221,9 +219,7 @@ doc.Save("Find And Replace.doc")
 
 {% endhighlight %}
 
-> Note: For more information on performing the find and replace operation using DocIO, you can refer to online documentation link:
-
-> [http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/45findandreplace.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
+N> For more information on performing the find and replace operation using DocIO, you can refer to online documentation link: [http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/45findandreplace.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
 
 ## Bookmarks
 
@@ -337,7 +333,7 @@ doc.Close()
 {% endhighlight %}
 
 
-> Note: For more information on working with bookmarks using DocIO, you can refer to the online documentation link:
+N> For more information on working with bookmarks using DocIO, you can refer to the online documentation link:
 
 [http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/4413bookmark.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
 
@@ -589,7 +585,7 @@ doc.Close()
 {% endhighlight %}
 
 
-> Note: For more information on adding watermarks to a Word document using DocIO, refer to the online documentation link:
+N> For more information on adding watermarks to a Word document using DocIO, refer to the online documentation link:
 
 [http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/4222watermark.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
 
@@ -725,7 +721,7 @@ doc.Close()
 
 {% endhighlight %}
 
-> Note: For more information on inserting Headers and Footers to a Word document using DocIO, you can refer to the online documentation link:_
+N> For more information on inserting Headers and Footers to a Word document using DocIO, you can refer to the online documentation link:_
 
 [http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/432headersandfooters.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
 
@@ -910,7 +906,7 @@ doc.Save("TableDocIO.doc")
 {% endhighlight %}
 
 
-> Note: For more information on creating tables using DocIO, refer to online documentation link:
+N> For more information on creating tables using DocIO, refer to online documentation link:
 
 [http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/433table.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
 
@@ -1077,7 +1073,7 @@ doc.Save("CommentsRemovedDocIO.doc", FormatType.Doc)
 
 {% endhighlight %}
 
-> Note: For more information on working with the comments using DocIO, you can refer to the online documentation link:
+N> For more information on working with the comments using DocIO, you can refer to the online documentation link:
 
 [http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/44143comment.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
 

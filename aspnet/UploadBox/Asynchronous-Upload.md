@@ -27,5 +27,5 @@ The following steps guide you to upload the file asynchronously.
 
 {% endhighlight %}
 
-> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
+N> The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 

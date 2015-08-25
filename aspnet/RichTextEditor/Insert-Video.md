@@ -29,4 +29,4 @@ Try the following code in the insert video dialog,
 
 ![](Insert-Video_images/Insert-Video_img1.png)
 
-> Note: Insert video option is enabled only in HTML5 support browsers.
+N> Insert video option is enabled only in HTML5 support browsers.

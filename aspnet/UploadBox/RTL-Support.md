@@ -27,7 +27,7 @@ In the ASPX page, add the UploadBox element.
 
 {% endhighlight %}
 
-> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
+N> The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 The following screenshot displays the output for RTL support.
 

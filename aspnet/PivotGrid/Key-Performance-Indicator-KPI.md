@@ -11,7 +11,7 @@ documentation: ug
 
 KeyPerformanceIndicators are a collection of calculations associated with a measure group that evaluates business success. Typically, these calculations are a combination of multi-dimensional expressions (MDX) or calculated members. KPIs also have additional metadata that provide information about how grid applications display the results of the KPI calculations.
 
-> Note: This feature is applicable only for OLAP datasource.
+N> This feature is applicable only for OLAP datasource.
 
 The different types of available indicators are as follows:
 

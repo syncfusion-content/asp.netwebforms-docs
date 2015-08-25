@@ -129,7 +129,7 @@ The following code example shows how to localize OlapChart’sUser Interface (UI
 
 {% endhighlight %}
 
-> Note: In order to render the localized OLAP Chart, you are required to reset the content available in both
+N> In order to render the localized OLAP Chart, you are required to reset the content available in both
 
 1. OLAP Chart Control
 

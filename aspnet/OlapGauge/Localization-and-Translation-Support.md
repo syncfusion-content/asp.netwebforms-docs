@@ -189,10 +189,7 @@ The following code example illustrates you on how to localize OlapGuage’s User
 
  
 
-> Note: In order to render the localized OLAP Gauge, You are required to reset the content available in both
->
->1. OLAP Gauge Control
->2. OLAP Cube
+N> In order to render the localized OLAP Gauge, You are required to reset the content available in both 1. OLAP Gauge Control 2. OLAP Cube
 
 ## Localizing Control Information:
 

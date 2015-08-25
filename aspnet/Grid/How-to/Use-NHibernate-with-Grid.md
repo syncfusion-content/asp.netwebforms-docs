@@ -246,7 +246,7 @@ public static class AppSession
  {% endhighlight %}
 
 
-> Note: In the above code example, the ORM mapping is performed by using the xml-documents and the mapping files are Employee.cfg.xml and EmployeeMap.hbm.xml
+N> In the above code example, the ORM mapping is performed by using the xml-documents and the mapping files are Employee.cfg.xml and EmployeeMap.hbm.xml
 
 
 

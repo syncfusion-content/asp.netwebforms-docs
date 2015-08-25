@@ -330,11 +330,7 @@ node.Text="Mail";
 
 _Native Shape_
 
-> Note:
->
-> Shapes of type Node or HTML cannot be exported to an image format, like JPEG, PNG and BMP. It is by design that while exporting, Diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas from all possible HTML and SVG elements is not feasible. So, this limitation.
->
-> Note that fill color is applied to the Native Node only when its inline style or fill for an SVG child element is not specified. In the following example, the node’s fill color is overridden by the specified color for the group.
+N> Shapes of type Node or HTML cannot be exported to an image format, like JPEG, PNG and BMP. It is by design that while exporting, Diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas from all possible HTML and SVG elements is not feasible. So, this limitation. Note that fill color is applied to the Native Node only when its inline style or fill for an SVG child element is not specified. In the following example, the node’s fill color is overridden by the specified color for the group.
 
 
 {% highlight html %}
@@ -671,5 +667,5 @@ node.Constraints = node.Constraints &~ NodeConstraints.Rotate;
 
 _Rotate Constraints-disabled_
 
-> Note: Node’s constraints property is manipulated by using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations.
+N> Node’s constraints property is manipulated by using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations.
 

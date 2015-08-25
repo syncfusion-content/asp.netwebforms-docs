@@ -15,7 +15,7 @@ The following steps explains you the behaviour of template support with ListBox.
 
 In an ASPX page, add an elementto configure ListBox.
 
-> Note: Images for this sample are available in ‘installed location/images/Employee’ 
+N> Images for this sample are available in ‘installed location/images/Employee’ 
 
 
 {% highlight html %}

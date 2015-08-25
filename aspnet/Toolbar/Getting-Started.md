@@ -487,7 +487,7 @@ Run the above code to render the Toolbar items with separator.
 
 In the following section, you can learn how to render the header (Toolbar), content section (PDF viewer area) and how to set the action to Toolbar items.
 
-> Note: PDF reading or rendering is not illustrated here. Simulation of the PDF Reader app to demonstrate the usage of Toolbar control is provided. PDF rendering area is ignored.
+N> PDF reading or rendering is not illustrated here. Simulation of the PDF Reader app to demonstrate the usage of Toolbar control is provided. PDF rendering area is ignored.
 
 Initialize the content area and header as specified in the following code example.
 

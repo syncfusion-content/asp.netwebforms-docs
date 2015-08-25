@@ -9,7 +9,7 @@ documentation: ug
 
 # Field List
 
-> Note: This feature is applicable only for relational datasource.
+N> This feature is applicable only for relational datasource.
 
 Field List (also known as Pivot Schema Designer) is powerful tool that allows you to create and manage PivotTable (PivotGrid) with multi-dimensional/relational data. Using this PivotGrid you can visualize large amount of data in cross-tabular format and the Field List also allows you to filter members and also to customize the report dynamically on the fly using drag-and-drop operation.
 

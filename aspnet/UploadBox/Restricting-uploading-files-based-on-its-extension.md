@@ -14,7 +14,7 @@ documentation: ug
 Files are filtered before they are uploaded. You can select the files to be filtered by using the Browse button. 
 The ExtensionAllow property allows upload of the selected extensions only. You can give multiple extensions by using comma (,).  The data type is string.
 
-> Note: Prepend dot (.) symbol with extension like “.pdf”.
+N> Prepend dot (.) symbol with extension like “.pdf”.
 
 The following steps explain the configuration of the ExtensionAllow property in the UploadBox. 
 
@@ -28,7 +28,7 @@ In the ASPX page, add the UploadBox element.
 
 {% endhighlight %}
 
-> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
+N> The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 The following screenshot displays the output when multiple files of different file types are selected and only the allowed file extensions are uploaded.
 
@@ -40,7 +40,7 @@ The following screenshot displays the output when multiple files of different fi
 
 Files are filtered before they are uploaded. You can select the files to be filtered by using the Browse button. The ExtensionDeny property denies upload of the selected extensions. You can give multiple extensions by using comma (,).  The data type is string.
 
-> Note: Prepend dot (.) symbol with extension like “.pdf”.
+N> Prepend dot (.) symbol with extension like “.pdf”.
 
 
 
@@ -58,7 +58,7 @@ In the ASPX page, add the UploadBox element.
 {% endhighlight %}
 
 
-> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
+N> The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 The following screenshot displays the output when multiple files of different file types are selected and the denied file extensions are not uploaded.
 

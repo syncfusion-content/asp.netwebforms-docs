@@ -459,7 +459,7 @@ _Customized Map_
 
 The Range color mapping is used to differentiate the shape’s fill based on its underlying value and color ranges. The From and To properties defines the value ranges and the GradientColors property defines the equivalent color ranges respective to their value ranges.
 
-> Note: The EnableGradient property value should be true to apply gradient colors for maps.
+N> The EnableGradient property value should be true to apply gradient colors for maps.
 
 
 

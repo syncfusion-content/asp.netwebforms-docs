@@ -36,7 +36,7 @@ Create an ASPX file and add the following code example to ASPX file for ejSplit
 {% endhighlight %}
 
 
-> Note: Add menu items of the Split Button inside <Items> that is displayed when you click on the Split Button.
+N> Add menu items of the Split Button inside <Items> that is displayed when you click on the Split Button.
 
 #### Output of above steps.
 

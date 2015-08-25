@@ -178,7 +178,7 @@ Run the project to see the following output for the given steps. The file is upl
 
 In a real-time scenario, some file extensions are restricted. You can allow files or restrict files by using the following properties, fileallow and filedeny enabled in the UploadBox. 
 
-> Note: The SaveUrl and RemoveUrl are the same as above.
+N> The SaveUrl and RemoveUrl are the same as above.
 
 Add the following code example to the script section.
 
@@ -214,7 +214,7 @@ Add the following code example to the script section.
 
 Add input elements to create elements for file extensions.
 
-> Note: Add the following input elements and two button elements to give file extensions that should support uploading.
+N> Add the following input elements and two button elements to give file extensions that should support uploading.
 
 {% highlight html %}
 
@@ -371,7 +371,7 @@ Add the following Styles in the ASPX page to allow or deny files.
 
 Run the code to render the following output with the file extensions.
 
-> Note: You can restrict one or more files at a time by giving it as .html,.txt.
+N> You can restrict one or more files at a time by giving it as .html,.txt.
 
 In the UploadBox control, you can either allow files with specified extension only by using the ExtensionAllow property or deny files with specified extension only by using the ExtensionDeny property.
 

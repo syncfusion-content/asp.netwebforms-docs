@@ -120,7 +120,7 @@ _Figure 19: Digital gauge segment properties_
 * Add the required properties such as position, margin, display, etc, to enhance the look of the background image.
 
 
-> Important: The background image path is given in background-image url.
+I> The background image path is given in background-image url.
 
 
 

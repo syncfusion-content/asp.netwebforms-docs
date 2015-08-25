@@ -9,7 +9,7 @@ documentation: ug
 
 # Paging
 
-> Note: This feature is applicable only for OLAP datasource.
+N> This feature is applicable only for OLAP datasource.
 
 ## Pager
 

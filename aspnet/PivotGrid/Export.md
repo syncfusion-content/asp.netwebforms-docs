@@ -9,7 +9,7 @@ documentation: ug
 
 # Export
 
-> Note: This feature is applicable only for OLAP datasource.
+N> This feature is applicable only for OLAP datasource.
 
 The PivotGrid is exported from cell mode to a worksheet of an Excel Workbook. The Excel Workbook is saved from the browser to the local disk drive.
 

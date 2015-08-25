@@ -104,13 +104,13 @@ Open the Visual Studio and create a new project by clicking New Project. Select 
    
 5. Enter the service URL value after dragging and dropping the control.
 
-   > Note: Instructions to create a service is explained briefly in the upcoming sections.
+   N> Instructions to create a service is explained briefly in the upcoming sections.
 
    ![](Getting-Started_images/Getting-Started_img11.png) 
 
    Initialize the control using below code snippet.
 
-   > Note: URL value needs to be defined in order to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately. 
+   N> URL value needs to be defined in order to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately. 
 
 
 {% highlight html %}
@@ -166,12 +166,11 @@ Add the script files and CSS files in the head tag of the Default.aspx page.
 
 
 
-> Note: 
->
-> 1. Use the following code sample while adding scripts and styles.            
-> 2. Same files can also acquire from the following location.
-> C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScript\assets\
-> 3. Please download jquery.globalize.min.js from jQuery site to local machine and refer in the sample like below.
+
+1. Use the following code sample while adding scripts and styles.            
+2. Same files can also acquire from the following location.
+ C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScript\assets\
+3. Please download jquery.globalize.min.js from jQuery site to local machine and refer in the sample like below.
 
 
 {% highlight html %}
@@ -855,7 +854,7 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
    ~~~
    {:.prettyprint }
 
-   > Note: x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
+   N> x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
 
 
 4. Register the namespace in web.config file by adding the following codes
@@ -880,7 +879,7 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
    ~~~
    {:.prettyprint }
 
-   > Note: In this example, “Sample” indicates the name of the project and “OlapClientService” indicates the name of the WCF service created. And x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
+   N> In this example, “Sample” indicates the name of the project and “OlapClientService” indicates the name of the WCF service created. And x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
 
    In summary, this getting started tutorial gives you an overview of OlapClient, its architecture, process flow, how to configure and integrate with a VS application through a simple example that is self-explanatory.
 

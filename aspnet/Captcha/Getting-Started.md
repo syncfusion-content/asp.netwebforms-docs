@@ -77,7 +77,7 @@ Add the following handler codes to the web.config file for the Captcha rendering
 {% endhighlight %}
 
 
-> Note: Version= site.450esreleaseversion  - It will vary depend up on .Net frame work version and Essential studio version you have using. If you are using Essential studio version as- {{ site.releaseversion }} and .Net frame work is 4.5 use like following Version= site.450esreleaseversion
+N> Version= site.450esreleaseversion  - It will vary depend up on .Net frame work version and Essential studio version you have using. If you are using Essential studio version as- {{ site.releaseversion }} and .Net frame work is 4.5 use like following Version= site.450esreleaseversion
 
 
 

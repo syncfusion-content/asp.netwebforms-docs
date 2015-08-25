@@ -23,9 +23,7 @@ PrevTimeSpan and NextTimeSpan toolbar items are used to create new time span bas
 
 <ej:Gantt ID="gantt" runat="server"
 
-<!— ScheduleStartDate=”02/01/2014” ScheduleEndDate=”03/14/2015” --!>
-
->
+<!— ScheduleStartDate=”02/01/2014” ScheduleEndDate=”03/14/2015” --!> >
 
 // ...
 

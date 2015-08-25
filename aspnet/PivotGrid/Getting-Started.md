@@ -69,14 +69,14 @@ The following screenshot displays project creation wizard.
 
 5. Enter the service URL value after dragging and dropping the control.
 
-   > Note: Instructions to create a service is explained briefly in the upcoming sections.
+   N> Instructions to create a service is explained briefly in the upcoming sections.
 
    ![](Getting-Started_images/Getting-Started_img9.png) 
 
 6. Initialize the control using below code snippet.
 
 
-   > Note: URL value needs to be defined in order to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately.
+   N> URL value needs to be defined in order to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately.
 
  {% highlight html %} 
 
@@ -126,7 +126,7 @@ The following screenshot displays project creation wizard.
 
 1. Add the script files and CSS files in the <head> tag of the Default.aspx page. 
 
-   > Note:
+   N>
    >
    > 1. Use the following code example while adding scripts and styles             
    > 2. Same files can also be acquired from the following location
@@ -530,7 +530,7 @@ You can add the following methods to the service that are invoked for any server
    ~~~
    {:.prettyprint }
 
-   > Note: x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
+   N> x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
 
 4. Register the namespace in web.config file by adding the following code example.
 
@@ -553,7 +553,7 @@ You can add the following methods to the service that are invoked for any server
    ~~~
    {:.prettyprint }
 
-   > Note: In this example, “Sample” indicates the name of the project and “PivotGridService” indicates the name of the WCF service created. And x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
+   N> In this example, “Sample” indicates the name of the project and “PivotGridService” indicates the name of the WCF service created. And x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
 
 In summary, this getting started tutorial gives you an overview of PivotGrid, its architecture, process flow, how to configure and integrate with a VS application through a simple example that is self-explanatory.
 
@@ -624,13 +624,13 @@ The following screenshot displays project creation wizard
 5. Enter the service URL value after dragging and dropping the control.
 
 
-   > Note: Instructions to create a service is explained briefly in the upcoming sections.
+   N> Instructions to create a service is explained briefly in the upcoming sections.
 
    ![](Getting-Started_images/Getting-Started_img24.png) 
 
 6. Initialize the control using below code snippet.
  
-   > Note: URL value needs to be defined in order to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately.
+   N> URL value needs to be defined in order to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately.
 
 
 
@@ -697,12 +697,9 @@ The following screenshot displays project creation wizard
 1. Add the script files and CSS files in the <head> tag of the Default.aspx page.
 
 
-
-> Note: 
->
-> 3. Use the following code example while adding scripts and styles             
-> 4. Same files can also be acquired from the following location  
-> C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScript\assets\
+1. Use the following code example while adding scripts and styles             
+2. Same files can also be acquired from the following location  
+ C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScript\assets\
 
 ### Add WCF Service for PivotGrid
 
@@ -1211,7 +1208,7 @@ You can add the following methods to the service that are invoked for any server
    ~~~
    {:.prettyprint }
 
-   > Note: xx.x.x.xx in the above code example refers to the current version of the Essential Studio running in your system.
+   N> xx.x.x.xx in the above code example refers to the current version of the Essential Studio running in your system.
 
 4. Register the namespace in web.config file by adding the following code example.
 
@@ -1234,7 +1231,7 @@ You can add the following methods to the service that are invoked for any server
    ~~~
    {:.prettyprint }
 
-   > Note: In this example, “Sample” indicates the name of the project and “PivotGridService” indicates the name of the WCF service created. And xx.x.x.xx in the above code example refers to the current version of the Essential Studio running in your system.
+   N> In this example, “Sample” indicates the name of the project and “PivotGridService” indicates the name of the WCF service created. And xx.x.x.xx in the above code example refers to the current version of the Essential Studio running in your system.
 
 In summary, this getting started tutorial gives you an overview of PivotGrid, its architecture, process flow, how to configure and integrate with a VS application through a simple example that is self-explanatory.
 

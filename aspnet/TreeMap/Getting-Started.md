@@ -89,7 +89,7 @@ public class TreeMapPopulationData
 
 {% endhighlight %}
 
-> Note: Population data is referred from [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population).
+N> Population data is referred from [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population).
 
 ### Initialize TreeMap
 

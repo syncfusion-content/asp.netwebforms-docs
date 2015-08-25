@@ -81,7 +81,7 @@ Web.config file is configured according to the referenced assemblies. The steps 
 
 
 
-> Note: X.X.X.X in the above code corresponds to the correct version number of the Essential Studio version that you are currently using.
+N> X.X.X.X in the above code corresponds to the correct version number of the Essential Studio version that you are currently using.
 
 
 

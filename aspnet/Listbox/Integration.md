@@ -26,7 +26,7 @@ To know more detail about the Angular binding, you can refer to the following li
 
 The following example depicts the way to bind data to the ListBox widget through angular support.
 
-> Note: You can include the “ej.widget.angular.min.js” file library to achieve this behaviour and you can pass the control properties as data attribute in ul tag itself as like data role behaviour.
+N> You can include the “ej.widget.angular.min.js” file library to achieve this behaviour and you can pass the control properties as data attribute in ul tag itself as like data role behaviour.
 
 
 
@@ -182,7 +182,7 @@ For more information about the knockout binding, refer to the following online d
 The following example depicts the way to bind data to the ListBox widget through the knockout support that enables and populates data to a ListBox widget based on the value set to the other ListBox widget.
 
 
-> Note: You caninclude the “ej.widget.knockout.min.js” file library to achieve this behaviour and you can pass the control properties as data attribute in ul tag itself like data role behaviour.
+N> You caninclude the “ej.widget.knockout.min.js” file library to achieve this behaviour and you can pass the control properties as data attribute in ul tag itself like data role behaviour.
 
 In an ASPX page, add an element to configure ListBox.
 

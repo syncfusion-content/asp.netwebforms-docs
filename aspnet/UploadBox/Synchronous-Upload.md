@@ -11,7 +11,7 @@ documentation: ug
 
 This features allow you to upload and remove the files synchronously. To achieve this, set the AsyncUpload property to false. The data type is Boolean.
 
-> Note: By default, UploadBox control works with asynchronous upload option only.
+N> By default, UploadBox control works with asynchronous upload option only.
 
 The following steps guide you in uploading the file synchronously.
 
@@ -33,7 +33,7 @@ In the ASPX page, create a form with action and post method, then add the Upload
 
 {% endhighlight %}
 
-> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
+N> The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 The following screenshot displays the output.
 

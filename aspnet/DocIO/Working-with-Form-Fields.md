@@ -336,7 +336,7 @@ WTextFormField class represents a text form field in a Word document. To add a t
 To set the format of the DocIO text directly from the field, you can use the StringFormat property. To get or set the default text for the text form field, you can use the DefaultText property.
 
 
-> Note: Text form field displays the default text only when the text of the form field has no value, that is, when the Text property has no value.
+N> Text form field displays the default text only when the text of the form field has no value, that is, when the Text property has no value.
 
 
 

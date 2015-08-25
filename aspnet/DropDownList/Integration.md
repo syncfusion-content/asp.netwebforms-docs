@@ -26,7 +26,7 @@ To know more detail about the Angular binding, you can refer to the following li
 
 The following example depicts the way to bind data to the DropDownList through Angular support.
 
-> Note: You need to include “ej.widget.angular.min.js” file library to achieve this behaviour and you need to pass the control properties as data attribute in input tag itself like data role behaviour.
+N> You need to include “ej.widget.angular.min.js” file library to achieve this behaviour and you need to pass the control properties as data attribute in input tag itself like data role behaviour.
 
 In the ASPX page, add an element to configure the DropDownList
 
@@ -161,7 +161,7 @@ The following example depicts the way to bind data to the DropDownList through t
 
 
 
-> Note: You need to include the “ej.widget.knockout.min.js” file library to achieve this behaviour and you need to pass the control properties as data attribute in input tag itself like data role behaviour.
+N> You need to include the “ej.widget.knockout.min.js” file library to achieve this behaviour and you need to pass the control properties as data attribute in input tag itself like data role behaviour.
 
 In an ASPX page, add an element to configure the DropDownList.
 

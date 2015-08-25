@@ -61,7 +61,7 @@ In the ASPX page, add the UploadBox element and configure the texts in code behi
 
 {% endhighlight %}
 
-> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
+N> The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 The following screenshot displays the output UploadBox with customized button text.![](Appearance-and-styling_images/Appearance-and-styling_img1.png)
 
@@ -115,7 +115,7 @@ In the ASPX page, add the UploadBox element and configure the DialogText in code
 
 {% endhighlight %}
 
-> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
+N> The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 The following screenshot displays the output.
 
@@ -141,7 +141,7 @@ In the ASPX page, add the UploadBox element and set the ShowFileDetails property
 
 {% endhighlight %}
 
-> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
+N> The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
  
 The following screenshot displays the output.
 
@@ -199,7 +199,7 @@ In the ASPX page, add the UploadBox element and set the DialogAction and DialogP
 
 {% endhighlight %}
 
-> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
+N> The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 The following screenshot displays the output. Here the dialog behaves as Modal and cannot be dragged or repositioned and closes when upload is complete
 
@@ -347,7 +347,7 @@ In CSS, configure Custom Styles for the UploadBox. Here custom CSS is defined to
 
 {% endhighlight %}
 
-> Note: The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
+N> The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
 The following screenshot displays the output.
 

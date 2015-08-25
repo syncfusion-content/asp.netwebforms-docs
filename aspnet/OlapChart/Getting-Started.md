@@ -121,14 +121,14 @@ The following screenshot displays the Project Creation Wizard.
 
 5. Enter the service URL value after dragging and dropping the control.
 
-   > NOTE: Instructions to create a service is explained briefly in the upcoming sections.
+   N> Instructions to create a service is explained briefly in the upcoming sections.
 
    ![](Getting-Started_images/Getting-Started_img11.png) 
 
 
 6. Initialize the control by using the following code example.
 
-   > Note: Define URL value, in order to fetch the data from the service. And initialize the default properties values as follows, to render the control appropriately._ 
+   N> Define URL value, in order to fetch the data from the service. And initialize the default properties values as follows, to render the control appropriately._ 
 
 {% highlight html %}
 
@@ -184,12 +184,11 @@ The following screenshot displays the Project Creation Wizard.
 
 Add the script files and CSS files in the <head> tag of the Default.aspx page.
 
-> Note: 
->
->1. Use the following code example while adding scripts and styles
->2. Same files can also acquire from the following location
->   C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScript\assets\
->3. Please download jquery.globalize.min.js from jQuery site to local machine and refer from the following code example.
+
+1. Use the following code example while adding scripts and styles
+2. Same files can also acquire from the following location
+   C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScript\assets\
+3. Please download jquery.globalize.min.js from jQuery site to local machine and refer from the following code example.
 
 {% highlight html %}
 
@@ -490,7 +489,7 @@ Add the following methods to the service that is invoked for any server-side ope
    ~~~
    {:.prettyprint }   
 
-   > Note: x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
+   N> x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
 
 4. Register the namespace in web.config file by adding the following codes.
 
@@ -513,7 +512,7 @@ Add the following methods to the service that is invoked for any server-side ope
    ~~~
    {:.prettyprint }   
 
-   > Note: In this example, “Sample” indicates the name of the project and “_OlapChartService_” indicates the name of the WCF service created. And x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
+   N> In this example, “Sample” indicates the name of the project and “_OlapChartService_” indicates the name of the WCF service created. And x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
 
    This getting started tutorial gives you an overview of OlapChart, its architecture, and process flow, how to configure and integrate with a VS application using a simple example.
 

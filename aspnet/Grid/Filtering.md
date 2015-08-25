@@ -66,8 +66,7 @@ _List of Filter Bar Expressions_
 <table>
 <tr>
 <td rowspan = "4">
-Numeric column</td><td>
-> value</td><td rowspan = "4">
+Numeric column</td><td> > value</td><td rowspan = "4">
 To filter numeric column. You can use these expressions.</td></tr>
 <tr>
 <td>

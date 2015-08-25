@@ -45,8 +45,7 @@ Alphanumeric characters placeholder(entry optional)</td></tr>
 9</td><td>
 Digit placeholder (entry optional)</td></tr>
 <tr>
-<td>
-></td><td>
+<td> > </td><td>
 Convert all the characters that follow to uppercase.</td></tr>
 <tr>
 <td>

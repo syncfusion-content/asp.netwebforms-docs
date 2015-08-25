@@ -44,7 +44,7 @@ You can create a Grid with a highly customizable look and feel. You can use Gr
    ~~~
    {:.prettyprint }
    
-   > Note: Create a connection string in Web.config file using SQL database.
+   N> Create a connection string in Web.config file using SQL database.
 
    ~~~ html
 

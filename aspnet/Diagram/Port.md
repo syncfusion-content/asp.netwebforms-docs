@@ -225,5 +225,5 @@ port.Constraints = PortConstraints.Connect;
 
 
 
-> Note: Port’s constraints property is manipulated by using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations.
+N> Port’s constraints property is manipulated by using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations.
 

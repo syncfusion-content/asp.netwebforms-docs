@@ -262,7 +262,7 @@ WTextRange class represents a piece of text that has separate formatting. You ca
 
 You can also use the AppendText method of the WParagraph class to append text to the paragraph.
 
-> Note: AppendText method appends a new text range to the paragraph with the default character formatting.
+N> AppendText method appends a new text range to the paragraph with the default character formatting.
 
 
 ### Class Hierarchy
@@ -1498,7 +1498,7 @@ You can use the AppendBreak method of WParagraph to insert a break by using DocI
 
 
 
-> Note: Now, direct support is provided to insert section breaks by calling the InsertSectionBreak method.
+N> Now, direct support is provided to insert section breaks by calling the InsertSectionBreak method.
 
 
 
@@ -1589,7 +1589,7 @@ doc.Save("Breaks.doc")
 
 By using the WOleObject instance, you can insert content from one program to another. To know what types of content you can insert, click Insert tab, and select Object in the Text group.
 
-> Note: Only installed programs that support OLE objects appear in the Object dialog box.
+N> Only installed programs that support OLE objects appear in the Object dialog box.
 
 
 
@@ -1662,7 +1662,7 @@ Essential DocIO provides support for embedding OLE objects in a Word document to
 * When the DisplayAsIcon property is set to false, the OLE instance in the Word document is displayed as content. This enables the Word document to dynamically update images based on the content present within the OLE instance.
 
 
-> Note: Initially DocIO generated documents display the icon (given image) in place of the embedded OLE instance. By setting the DisplayAsIcon property to true, the icon is not updated after opening or editing the OLE instance by using Microsoft Word. However, setting the DisplayAsIcon property to false enables the Word document to update the icons dynamically with the content after opening or editing the OLE instance.
+N> Initially DocIO generated documents display the icon (given image) in place of the embedded OLE instance. By setting the DisplayAsIcon property to true, the icon is not updated after opening or editing the OLE instance by using Microsoft Word. However, setting the DisplayAsIcon property to false enables the Word document to update the icons dynamically with the content after opening or editing the OLE instance.
 
 
 

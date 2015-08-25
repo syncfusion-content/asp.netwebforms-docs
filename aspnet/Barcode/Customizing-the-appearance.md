@@ -13,7 +13,7 @@ A page or printed media with Barcode often appears colorful in the background an
 
 
 
-> Note: This color customization is possible only for one dimensional barcodes and it is not supported for two dimensional barcodes.
+N> This color customization is possible only for one dimensional barcodes and it is not supported for two dimensional barcodes.
 
 
 

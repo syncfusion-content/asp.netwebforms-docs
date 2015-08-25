@@ -185,7 +185,7 @@ Execute the above code sample to display the Accordion control with simple contr
 
 You can open multiple Accordion tabs to view all products at a time. To render this, set the EnableMultipleOpen property of the Accordion control to true.
 
-> Note: EnableMultipleOpen _property is_ _false_ by default. 
+N> EnableMultipleOpen _property is_ _false_ by default. 
 
 You can also open all the panels during initialization by using the SelectedItems property of the Accordion control. The following code sample illustrates the opening of multiple tabs by passing the tab index values to SelectedItems property.
 
@@ -351,7 +351,7 @@ Accordion control with EnableMultipleOpen property with value as true is illustr
 
 Accordion control by default is renders in a regular rectangle. You can modify the regular rectangles with rounded corners by setting the ShowRoundedCorner property to “True”.
 
-> Note: ShowRoundedCorner _property is False by default.
+N> ShowRoundedCorner _property is False by default.
 
 {% highlight html %}
 

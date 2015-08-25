@@ -150,7 +150,7 @@ label.RotateAngle = 45;
 _Rotated Label_
 
 
-> Note: No built-in support is added to rotate labels interactively.
+N> No built-in support is added to rotate labels interactively.
 
 ## Appearance 
 
