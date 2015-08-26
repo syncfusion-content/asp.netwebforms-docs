@@ -22,7 +22,7 @@ The following code illustrates how to save and load diagram.
 
 {% highlight js %}
 
-[JS]
+
 
 
 

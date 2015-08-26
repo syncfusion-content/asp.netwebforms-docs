@@ -2512,7 +2512,7 @@ doc.MailMerge.RemoveEmptyParagraphs = true;
 
 
 
-[VB.NET]
+
 
 
 

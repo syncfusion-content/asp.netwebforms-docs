@@ -13,7 +13,7 @@ The Undocommand reverses the last edited action performed on the Diagram. For ex
 
 {% highlight js %}
 
-[JS]
+
 
 //undo
 

@@ -51,7 +51,7 @@ The Grid initialization is as follows.
  {% highlight c# %}
 
 
-[CS]
+
 
 
 

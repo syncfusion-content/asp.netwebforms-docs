@@ -13,9 +13,9 @@ The AllowEditOnDblClick property can be set as True to enable editing the record
 
 {% highlight html %}
 
-[ASP]
 
-[aspx]
+
+
 
   <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" >
 

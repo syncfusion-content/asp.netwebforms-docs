@@ -311,7 +311,7 @@ ReportViewer supports to load RDL/RDLC files from SSRS Server. The following ste
 
    ~~~ html
 	
-	 [ASPX]	
+	 	
 	 
         <form id="form1" runat="server">
 		

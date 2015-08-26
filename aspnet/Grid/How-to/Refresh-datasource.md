@@ -33,7 +33,7 @@ Grid allows you to refresh datasource dynamically after Gridinitialization. It i
 
 
 
-[javascript]
+
 
 
 
@@ -65,7 +65,7 @@ $("#Grid").ejGrid("dataSource", newData);
 
  {% highlight c# %}
 
-[cs]
+
 
 public partial class _Default : System.Web.UI.Page
 

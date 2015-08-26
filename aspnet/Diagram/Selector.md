@@ -66,7 +66,7 @@ The following code example is used to update the size and position of the select
 
 {% highlight js %}
 
-[JS]
+
 
 
 
@@ -88,7 +88,7 @@ The following code example is used to get the selected elements.
 
 {% highlight js %}
 
-[JS]
+
 
 
 
@@ -114,7 +114,7 @@ The following code example is used to draw custom handles on the selected elemen
 
 {% highlight js %}
 
-[JS]
+
 
 var userHandle= [];
 
