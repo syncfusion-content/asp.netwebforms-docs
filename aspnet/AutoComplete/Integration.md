@@ -24,7 +24,7 @@ Apply the plugin and property assigning to the AutoComplete control element thro
 
 To know more about the Angular binding, refer to the following online documentation link.
 
-[http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
+<http://docs.syncfusion.com/js/angularjs>
 
 The following example depicts the way to bind data to the AutoComplete control through angular support.
 
@@ -173,7 +173,7 @@ Two-way binding supports both the processes. It applies the observable values to
 
 For more information about Knockout binding, refer to the following online documentation link,
 
-[http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
+<http://docs.syncfusion.com/js/knockoutjs>
 
 The following example depicts how you can bind data to the AutoComplete control through knockout support that enables and populates data to an AutoComplete control, based on the value set to the other AutoComplete control.
 

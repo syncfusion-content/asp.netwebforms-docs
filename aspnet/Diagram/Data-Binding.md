@@ -158,8 +158,7 @@ _Local Data binding_
 ## Remote Data
 
 You can bind the Diagram to Remote Data by using dataManager and the query in fields is used to retrieve the data. dataManager supports the following types of data-binding: JSON, Web Services, oData. It uses two different classes; ej.DataManager for processing, and ej.Query for serving data. ej.DataManager communicates with data source and ej.Query generates data queries that are read by the dataManager. The following link explains in detail the way to create dataManager.
-
-[http://help.syncfusion.com/ug/js/default.htm#!Documents/createyourdatamanage.htm](http://help.syncfusion.com/ug/js/default.htm)
+<http://docs.syncfusion.com/js>
 
 The following code illustrates how to bind remote data to the Diagram.
 

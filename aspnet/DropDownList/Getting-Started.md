@@ -27,7 +27,7 @@ In the above screenshot, you can select a group from the first DropDownList cont
 
 The ASP.NET DropDownList control basically renders with built-in features.
 
-You can create an ASP.NET Project and add necessary Dll and script with the help of the given [ASP-Getting Started](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm) Documentation.
+You can create an ASP.NET Project and add necessary Dll and script with the help of the given [ASP-Getting Started](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc ) Documentation.
 
 You can add the following code example to the corresponding ASPX page to render the DropDownList.
 
@@ -730,7 +730,7 @@ From the “Country” DropDownList, you can select your desired country.
 
 ### Set the Vote process in the DropDownList Widget
 
-The voting process is done by clicking the Vote button. A button is customized to support the voting process. For more information about the button, you can refer to the following link: [http://help.syncfusion.com/ug/js/default.htm#!Documents/gettingstarted4.htm](http://help.syncfusion.com/ug/js/default.htm)
+The voting process is done by clicking the Vote button. A button is customized to support the voting process. For more information about the button, you can refer to the following link: <http://docs.syncfusion.com/js>
 
 The following code example explains how to set the Vote process in the DropDownList control.
 

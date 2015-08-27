@@ -13,7 +13,7 @@ Localization is a language support based on the culture in the NumericTextbox.
 
 The NumericTextbox control provides multi-language support by using the globalization. You can customize the NumericTextbox with your own language style by using this feature. You can change the localization by using the Locale property. The default value for Locale property is en-US in the NumericTextbox control.
 
-In order to enable [localization](http://help.syncfusion.com/ug/js/default.htm), refer to the following scripts: globalize.cultures.js and globalize.js. The “globalize.cultures.js” includes different language support for JavaScript controls and the “globalize.js” is a simple JavaScript library that allows you to format the value based on the specified culture.
+In order to enable [localization](http://docs.syncfusion.com/js), refer to the following scripts: globalize.cultures.js and globalize.js. The “globalize.cultures.js” includes different language support for JavaScript controls and the “globalize.js” is a simple JavaScript library that allows you to format the value based on the specified culture.
 
 You can refer to the following online link reference for globalize.js
 

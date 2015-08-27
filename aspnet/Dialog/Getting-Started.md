@@ -21,7 +21,7 @@ The ASP.NET Dialog displays a Dialog window within your web page. The Dialo
 
 ### Create a Dialog
 
-You can create an ASP Project and add the necessary Dlls and scripts with the help of the given [ASP-Getting Started](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm) documentation.
+You can create an ASP Project and add the necessary Dlls and scripts with the help of the given [ASP-Getting Started](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc ) documentation.
 
 You can add the following code example to the corresponding ASPX page to render the Dialog.
 

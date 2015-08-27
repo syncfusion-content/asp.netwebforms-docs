@@ -22,7 +22,7 @@ The Captcha is one of the ways to prevent dictionary attacks. It basically comes
 
 The following steps are used to create the Captcha control.  
 
-You can create a WEB Project and add necessary Dll and script with the given [ASP-Getting Started Documentation.](http://help.syncfusion.com/ug/js/documents/creatingyourfirstapp.htm)
+You can create a WEB Project and add necessary Dll and script with the given [ASP-Getting Started Documentation](http://docs.syncfusion.com/js/overview).
 
 
 

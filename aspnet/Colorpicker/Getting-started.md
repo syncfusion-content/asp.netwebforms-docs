@@ -57,7 +57,7 @@ To add the priority value to the ListBox, the text value is obtained from the i
 
 You can refer to the following link for more information on creation on the ListBox
 
-[http://help.syncfusion.com](http://help.syncfusion.com/)
+<http://docs.syncfusion.com>
 
 The following code example is used to create the Priority form by using ListBox control and ColorPicker control.
 

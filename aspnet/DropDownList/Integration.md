@@ -22,7 +22,7 @@ Two-way binding supports both the processes – it applies the scope values to t
 
 To know more detail about the Angular binding, you can refer to the following link location,
 
-[http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
+<http://docs.syncfusion.com/js/angularjs>
 
 The following example depicts the way to bind data to the DropDownList through Angular support.
 
@@ -155,7 +155,7 @@ Two-way binding supports both the processes – it applies the observable values
 
 For more information about the Knockout binding, refer to the following online documentation in the following link location,
 
-[http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
+<http://docs.syncfusion.com/js/knockoutjs>
 
 The following example depicts the way to bind data to the DropDownList through the Knockout support that enables and populates data to a DropDownList based on the value set to the other DropDown widget.
 
