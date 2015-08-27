@@ -22,7 +22,7 @@ Two-way binding supports both the processes; it applies the observable values t
 
 For more information about the Knockout Binding, refer to the following online documentation link.
 
-[http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
+<http://docs.syncfusion.com/js/knockoutjs>
 
 The following example depicts the way to bind data to the PercentageTextbox control through Knockout Support that enables and populates data to the PercentageTextbox control based on the value set to the other PercentageTextbox control.
 
@@ -183,7 +183,7 @@ Apply the plugin and property assigning to the PercentageTextbox control elemen
 
 To know more details about the Angular binding, refer to the following link location,
 
-[http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
+<http://docs.syncfusion.com/js/angularjs>
 
 The following example depicts the way to bind data to the PercentageTextbox control through Angular Support.
 

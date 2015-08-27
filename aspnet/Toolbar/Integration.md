@@ -22,7 +22,7 @@ Two-way binding supports both the processes – it applies the scope values to t
 
 To know more detail about the Angular binding, refer to the following link location,
 
-[http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
+<http://help.syncfusion.com/ug/js/documents/angularjs.htm>
 
 N> Add the following script files as given in the following example to access the angular binding. They provide JS library for angular binding.
 
@@ -309,7 +309,7 @@ Two-way binding supports both the processes – it applies the observable values
 
 For more information about the knockout binding, refer to the following online documentation in the following link location,
 
-[http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
+<http://docs.syncfusion.com/js/knockoutjs>
 
 N> Add the following script files along with the given code to access the knockout binding. They provide JS library for knockout binding.
 

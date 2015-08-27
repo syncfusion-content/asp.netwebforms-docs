@@ -19,7 +19,7 @@ The Essential ASP.NET WebForms Editors control includes numeric, percentage, c
 
 ## Create Textboxes Controls
 
-You can create a WebForms Project and add necessary Dll’s and Scripts with the help of the given [WebForms-Getting Started](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm) Documentation.
+You can create a WebForms Project and add necessary Dll’s and Scripts with the help of the given [WebForms-Getting Started](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc) Documentation.
 
 Add necessary Textbox control and initialize the corresponding Textboxes control
 

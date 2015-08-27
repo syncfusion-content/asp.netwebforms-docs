@@ -25,7 +25,7 @@ Create a Toolbar
 
 You can create a Toolbar control by using the following steps. The basic rendering of ASP.NET Toolbar is achieved with the default functionality.
 
-You can create an ASP.NET Project and add necessary Dll and script with the help of the given [WebForms-Getting Started](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm)Documentation.
+You can create an ASP.NET Project and add necessary Dll and script with the help of the given [WebForms-Getting Started](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc)Documentation.
 
   Add the following code example to the corresponding ASPX page for the Toolbar rendering. 
 

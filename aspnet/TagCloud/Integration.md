@@ -24,7 +24,7 @@ Apply the plugin and property assigning to the TagCloud control element through 
 
 To know more detail about the Angular binding, refer to the following link location,
 
-[http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
+<http://docs.syncfusion.com/js/angularjs>
 
 The following example shows the way to bind data to the TagCloud control by using Angular support.
 
@@ -151,7 +151,7 @@ Two-way binding supports both the processes. It applies the observable values to
 
 For more information about the knockout binding, refer to the following link location,
 
-[http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
+<http://docs.syncfusion.com/js/knockoutjs>
 
 The following code example shows the way to bind data to the TagCloud control by using knockout support.
 

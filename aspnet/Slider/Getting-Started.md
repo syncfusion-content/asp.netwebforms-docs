@@ -23,7 +23,7 @@ The following screenshot demonstrates the functionality of Slider control. By 
 
 ASP.NET Slider control allows you to switch between different ranges of input. The basic Slider is in horizontal position and has a single handle that is moved by the mouse or the arrow keys.
 
-You can create an ASP.NET Project and add necessary Dll’s and scripts with the help of the given [ASP.NET -Getting Started](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm) Documentation.
+You can create an ASP.NET Project and add necessary Dll’s and scripts with the help of the given [ASP.NET -Getting Started](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc) Documentation.
 
 Add the following code example to the corresponding ASPX page to render Slider control.
 

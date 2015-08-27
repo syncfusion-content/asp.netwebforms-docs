@@ -25,7 +25,7 @@ Figure 34 : Schedule control with daily important activities
 ##Creating a Schedule
 
 1. ASP.NET Schedule widget basically renders with flexible API’s. You can easily create the Schedule widget by using the following code sample.
-2. First create an ASP.NET Project and add necessary dll’s and scripts with the help of the given [ASP-Getting Started](http://help.syncfusion.com/ug/js/default.htm) Documentation.
+2. First create an ASP.NET Project and add necessary dll’s and scripts with the help of the given [ASP-Getting Started](http://docs.syncfusion.com/js) Documentation.
 3. Add the following code example to the corresponding designer page for Schedule rendering.
 
 

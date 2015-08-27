@@ -26,7 +26,7 @@ By using this, you can view the equivalent XHTML code of the content in the edit
 
 To know more details about the Angular binding, refer to the following link location,
 
-[http://help.syncfusion.com/ug/js/default.htm#!documents/angularjs.htm](http://help.syncfusion.com/ug/js/default.htm%23!documents/angularjs.htm)
+<http://docs.syncfusion.com/js/angularjs>
 
 You can bind data to the RTE control through angular support.
 
@@ -107,7 +107,7 @@ Two-way binding supports both the processes; it applies the observable values to
 
 For more information about the Knockout Binding, refer to the following online documentation in the given link location,
 
-[http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
+<http://docs.syncfusion.com/js/knockoutjs>
 
 To create an ASPX page for your application and there is a live demo for your ASPX page, then it is better to customize your ASPX page. You can achieve this by using knockout binding with RTE.
 

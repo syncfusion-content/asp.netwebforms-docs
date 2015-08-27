@@ -23,7 +23,7 @@ From the following guidelines, you can create a Splitter, add TreeView in the 
 
 ### Create Splitter Control
 
-You can create an ASP.NET Web Forms Project and add necessary Dll’s and scripts with the help of the given [ ASP.NET -Getting Started](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm) Documentation.
+You can create an ASP.NET Web Forms Project and add necessary Dll’s and scripts with the help of the given [ ASP.NET -Getting Started](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc) Documentation.
 
 Add the following code example to the corresponding ASPX page to render Splitter.
 
@@ -188,7 +188,7 @@ Add the following styles to show the Splitter control in horizontal order.
 
 Add the following code example in ASPX file to configure TreeView. Refer to the following link to know more details on TreeView control.
 
-[http://help.syncfusion.com/ug/js/documents/createyourfirsttreev.htm](http://help.syncfusion.com/ug/js/documents/createyourfirsttreev.htm)
+<http://docs.syncfusion.com/js/treeview/getting-started>
 
 {% highlight html %}
 

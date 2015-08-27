@@ -23,7 +23,7 @@ You can give the Username and Password in the login page. When you click the L
 
 ### Create Waiting Popup
 
-You can create a WEB Project and add the necessary assemblies, styles, and scripts with the help of [ASP-Getting Started](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm) Documentation.
+You can create a WEB Project and add the necessary assemblies, styles, and scripts with the help of [ASP-Getting Started](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc) Documentation.
 
  Create an aspx page and add the following code to the aspx file.
 

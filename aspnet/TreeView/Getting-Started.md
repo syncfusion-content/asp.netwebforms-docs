@@ -19,7 +19,7 @@ In the above screenshot, you can select the mailbox items and you can write the 
 
 The Essential ASP.NET WebForms Splitter is a layout control that allows you to divide a web page into distinct areas by using the resizable panes. ManySplitter panes are created and placed inside the Splitter control and the split bars are inserted automatically between the adjacent panes. For more information about the splitter refer to the Splitter-Getting Started documentation.
 
-Create a WebForms Project and add necessary Dll’s and scripts with the help of the given [WebForms-Getting Started](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm) Documentation.
+Create a WebForms Project and add necessary Dll’s and scripts with the help of the given [WebForms-Getting Started](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc) Documentation.
 
 Add the following code to the corresponding design page for rendering the Splitter window. 
 

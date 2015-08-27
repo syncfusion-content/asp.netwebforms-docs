@@ -25,13 +25,13 @@ In the above screenshot, you can rate the movie by selecting a corresponding mov
 
 ## Create a Rating
 
-You can create an ASP.NET Web Forms Project and add necessary Dll’s and scripts with the help of the given [ ASP.NET -Getting Started Documentation.](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm)
+You can create an ASP.NET Web Forms Project and add necessary Dll’s and scripts with the help of the given [ ASP.NET -Getting Started Documentation.](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc)
 
 Add the following code example to the corresponding ASPX page to render Rating control.
 
 Refer to the following link to know the details on the Tab control.
 
-[http://help.syncfusion.com/ug/js/documents/createyourfirsttabco.htm](http://help.syncfusion.com/ug/js/documents/createyourfirsttabco.htm)
+<http://docs.syncfusion.com/js/tab/getting-started#create-tab-control>
 
 Add the following code example to the corresponding ASPX page to render Rating control.
 

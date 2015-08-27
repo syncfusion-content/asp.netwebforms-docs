@@ -13,7 +13,7 @@ You can provide more customization to the Tab with rating control as content for
 
 The Essential ASP Rating control provides an intuitive rating experience that allows you to select the number of stars that represent the rating. For more information about the rating, you can refer to the following link:
 
-[http://help.syncfusion.com/ug/js/default.htm#!Documents/gettingstarted25.htm](http://help.syncfusion.com/ug/js/default.htm)
+<http://docs.syncfusion.com/js>
 
 The following code example explains the rating control creation
 
