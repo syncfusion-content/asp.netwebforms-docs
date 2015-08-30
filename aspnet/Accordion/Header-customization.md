@@ -204,7 +204,7 @@ In an ASPX page, define the Accordion control and add the contents correspond
 Output for Accordion control with the selected item by index is as follows.
 
  ![](Header-customization_images/Header-customization_img3.png)
-{:.image }
+
 
 
 ## Multiple selection
