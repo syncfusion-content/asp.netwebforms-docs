@@ -16,5 +16,5 @@ The Split Button allows you to perform an action by clicking the button and ch
 * Trendy Look: Rich Appearance with Theme Support.
 * RTL: Supports Right to Left alignment.
 * Text and Image: Supports both text and image as Split Button content.
-* Built-in Icon:[Supports the built-in icon libraries](http://help.syncfusion.com/ug/js/Documents/ej.iconslibrary.docx).
+* Built-in Icon:[Supports the built-in icon libraries](/js/button/icons).
 * Easy Customization: The customization of the Split Button control to any form is made simple.

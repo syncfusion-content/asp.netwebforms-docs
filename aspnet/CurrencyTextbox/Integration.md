@@ -24,7 +24,7 @@ Apply the plugin and property assigning to the CurrencyTextbox control element 
 
 To know more details about the Angular binding, refer to the following link:
 
-<http://help.syncfusion.com/js/angularjs>
+<http://docs.syncfusion.com/js/angularjs>
 
 The following example shows the way to bind data to the CurrencyTextbox control through Angular Support.
 

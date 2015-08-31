@@ -477,7 +477,7 @@ Add the following code example to display the Toolbar items.
 
 Set the Zoom value as it is one of the items in the Toolbar. You need to render the Dropdown list control for select zoomvalue. Dropdown list control is rendered with the DropDownListItem elements. The ASP.NET Dropdown control with a list of zoom valuesis used to render the Set Zoom value in the above code example. Refer to the following link for Dropdowncreation.
 
-[Dropdown – GettingStarted](http://help.syncfusion.com/aspnetmvc/)
+[Dropdown – GettingStarted](/aspnet/dropdownlist/getting-started)
 
 Run the above code to render the Toolbar items with separator.
 
