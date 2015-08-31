@@ -127,7 +127,7 @@ This method is used to handle Ajax post when refresh and validation actions are 
 
 The following screenshot displays the output of the above codes.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image36_2.png](Getting-Started_images/Getting-Started_img3.png)
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
 ### Auto Validation   
@@ -420,6 +420,6 @@ Add the following code example to the corresponding CS page for Captcha with Aut
 
 The following screenshot is the output for the above code example.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image36_3.jpg](Getting-Started_images/Getting-Started_img4.jpeg)
+![](Getting-Started_images/Getting-Started_img4.jpeg)
 
 

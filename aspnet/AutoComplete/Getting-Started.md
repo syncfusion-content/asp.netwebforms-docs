@@ -17,13 +17,15 @@ In this ASP.NET section use the flat-lime as the default theme.
 
 The following screenshot illustrates the AutoComplete control that searches the list of components available in the database.
 
-[http://help.syncfusion.com/ug/js/ImagesExt/image88_12.png](Getting-Started_images/Getting-Started_img1.png) 
+![](Getting-Started_images/Getting-Started_img1.png) 
 
 
 
 ### Create an AutoComplete
 
-You can create an ASP.NET Project and add necessary Dll’s and Scripts with the help of the given [WebForms-Getting Started](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm) documentation.  Initialize the corresponding AutoCompletecontrol in the ASPX page.
+You can create an ASP.NET Project and add necessary Dll’s and Scripts with the help of the given 
+[WebForms-Getting Started](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc) documentation.  
+Initialize the corresponding AutoCompletecontrol in the ASPX page.
 
 {% highlight html %}
 
@@ -49,7 +51,7 @@ Execute the above code to create the AutoComplete textbox as illustrated in th
 
 
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image88_13.png](Getting-Started_images/Getting-Started_img2.png)
+![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -107,7 +109,7 @@ DataTextField="ComponentName" DataUniqueKeyField="ComponentId"Width="500px"></e
 
 Run this code to render the AutoComplete with components list.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image88_14.png](Getting-Started_images/Getting-Started_img3.png)
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -139,7 +141,7 @@ Select a component/s:
 
 The following screenshot displays the AutoCompletetextbox with selection visual mode.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image88_15.png](Getting-Started_images/Getting-Started_img4.png) 
+![](Getting-Started_images/Getting-Started_img4.png) 
 
 
 
@@ -167,7 +169,7 @@ When you set the HighlightSearch property to ‘true’, the characters typed
 
 The following screenshot displays the AutoCompletetextbox with highlight search enabled.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image88_16.png](Getting-Started_images/Getting-Started_img5.png) 
+![](Getting-Started_images/Getting-Started_img5.png) 
 
 
 
@@ -223,7 +225,7 @@ The following screenshot displays the AutoCompletetextbox with dropdown icon.
 
 
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image88_12.png](Getting-Started_images/Getting-Started_img6.png)
+![](Getting-Started_images/Getting-Started_img6.png)
 
 
 

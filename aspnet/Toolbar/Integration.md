@@ -22,7 +22,7 @@ Two-way binding supports both the processes – it applies the scope values to t
 
 To know more detail about the Angular binding, refer to the following link location,
 
-<http://help.syncfusion.com/ug/js/documents/angularjs.htm>
+<http://docs.syncfusion.com/js/angularjs>
 
 N> Add the following script files as given in the following example to access the angular binding. They provide JS library for angular binding.
 

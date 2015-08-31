@@ -108,4 +108,4 @@ Initialize Scroller with following styles.
 
 Output of the above steps.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image87_2.png](Getting-Started_images/Getting-Started_img1.png)
+![](Getting-Started_images/Getting-Started_img1.png)

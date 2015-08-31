@@ -84,7 +84,7 @@ The following screenshot illustrates the structure of the Diagram control.
 
 3. This creates an empty Diagram. In the following section, you can learn how to add employee details in the Diagram.
 
-   ![http://help.syncfusion.com/ug/js/ImagesExt/image147_3.png](Getting-Started_images/Getting-Started_img2.png) 
+   ![](Getting-Started_images/Getting-Started_img2.png) 
 
    _Empty Diagram_
 

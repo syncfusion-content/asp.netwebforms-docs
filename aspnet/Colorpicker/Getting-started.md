@@ -29,7 +29,7 @@ In the following sections you can learn, How to:
 
 Use the following steps to create the ColorPicker control.
 
-Create a WebFormsProject and add necessary Dll’s and scripts with the help of the given [WebForms-Getting Started](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm) Documentation.
+Create a WebFormsProject and add necessary Dll’s and scripts with the help of the given [WebForms-Getting Started](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc) Documentation.
 
 Create the ASPX page and add the following code to it for ColorPicker creation. 
 

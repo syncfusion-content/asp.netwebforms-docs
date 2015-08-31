@@ -11,7 +11,7 @@ documentation: ug
 
 The Essential ASP.NET WebForms TreeView property represents hierarchical data in a tree-like structure. TreeView allows you to edit, drag items to other TreeView, add check boxes, etc. Refer to the following section, to customize TreeView in a real time Mail Box Scenario that helps you to show items in a Mailbox with necessary features of TreeView property. The following screenshot demonstrates the functions of TreeView property with Drag and Drop option.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image30_17.png](Getting-Started_images/Getting-Started_img1.png) 
+![](Getting-Started_images/Getting-Started_img1.png) 
 
 In the above screenshot, you can select the mailbox items and you can write the corresponding functions of the selected item. You can drag and drop the item from one group to another group by using the Drag and Drop option. You can use the Splitter control to split the mail options and its corresponding functions.
 
@@ -47,7 +47,7 @@ Add the following code to the corresponding design page for rendering the Split
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image30_12.png](Getting-Started_images/Getting-Started_img2.png) 
+![](Getting-Started_images/Getting-Started_img2.png) 
 
 
 
@@ -155,7 +155,7 @@ Add TreeView initialization inside the Splitter section.
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image30_18.png](Getting-Started_images/Getting-Started_img3.png) 
+![](Getting-Started_images/Getting-Started_img3.png) 
 
 
 
@@ -292,7 +292,7 @@ Add the following code in the Splitter section to render the TreeView in the
 {% endhighlight %}
 
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image30_19.png](Getting-Started_images/Getting-Started_img4.png) 
+![](Getting-Started_images/Getting-Started_img4.png) 
 
 
 
@@ -462,7 +462,7 @@ Add the following code in the Splitter section to render the TreeView in the
 
 Execute the above code to render the TreeView with Mail Icons.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image30_20.png](Getting-Started_images/Getting-Started_img5.png) 
+![](Getting-Started_images/Getting-Started_img5.png) 
 
 
 
@@ -490,7 +490,7 @@ To rename the mail folders, set AllowEditing property to “true”. You can a
 
 Execute the above code example to render node editing.           
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image30_21.png](Getting-Started_images/Getting-Started_img6.png) 
+![](Getting-Started_images/Getting-Started_img6.png) 
 
 
 
@@ -590,7 +590,7 @@ Initialize the script section to validate editing and select operation.
 
 Execute the above code example to render TreeView. When you select the mail folder in the TreeView, the corresponding action takes place by raising the ClientSideOnNodeSelected event.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image30_17.png](Getting-Started_images/Getting-Started_img7.png) 
+![](Getting-Started_images/Getting-Started_img7.png) 
 
 
 
@@ -598,7 +598,7 @@ N> The inline edit validation is done when “ClientSideOnInlineEditValidation�
 
 
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image30_22.png](Getting-Started_images/Getting-Started_img8.png) 
+![](Getting-Started_images/Getting-Started_img8.png) 
 
 
 
@@ -720,15 +720,15 @@ Initialize the Context Menu in the script section to create new folder and del
 
 The following screenshot illustrates adding of new folder in the TreeView by using the Context Menu. You can right-click on the TreeView Node and select the new folder option in the Context Menu for the selected folder.
 
- ![http://help.syncfusion.com/ug/js/ImagesExt/image30_23.png](Getting-Started_images/Getting-Started_img9.png)
+ ![](Getting-Started_images/Getting-Started_img9.png)
 
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image30_24.png](Getting-Started_images/Getting-Started_img10.png)
+![](Getting-Started_images/Getting-Started_img10.png)
 
 
 The following screenshot illustrates the deleting of new folder that is created as a child of the “Drafts” folder. You can right-click on the New Folder1 and select the Delete Folder option in the Context Menu.
 
- ![http://help.syncfusion.com/ug/js/ImagesExt/image30_25.png](Getting-Started_images/Getting-Started_img11.png)
+ ![](Getting-Started_images/Getting-Started_img11.png)
  
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image30_17.png](Getting-Started_images/Getting-Started_img12.png)
+![](Getting-Started_images/Getting-Started_img12.png)

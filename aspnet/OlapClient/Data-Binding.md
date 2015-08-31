@@ -65,7 +65,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 The following code example illustrates how to connect to the Mondrian Server.
 
-![Description: http://help.syncfusion.com/ug/js/ImagesExt/image49_125.png](Data-Binding_images/Data-Binding_img1.png) 
+![](Data-Binding_images/Data-Binding_img1.png) 
 
 
 
@@ -73,17 +73,17 @@ The following code example illustrates how to connect to the Mondrian Server.
 
 Add a new report along with the existing report collection.
 
-![Description: http://help.syncfusion.com/ug/js/ImagesExt/image49_126.png](Data-Binding_images/Data-Binding_img2.png) 
+![](Data-Binding_images/Data-Binding_img2.png) 
 
 Replace the existing report name with the altered report name.
 
-![Description: http://help.syncfusion.com/ug/js/ImagesExt/image49_127.png](Data-Binding_images/Data-Binding_img3.png) 
+![](Data-Binding_images/Data-Binding_img3.png) 
 
 ### Remove Report
 
 Removes the current report from the report collection. If only one report is available in the report list, it doesn’t remove it.
 
-![Description: http://help.syncfusion.com/ug/js/ImagesExt/image49_128.png](Data-Binding_images/Data-Binding_img4.png) 
+![](Data-Binding_images/Data-Binding_img4.png) 
 
 ### Save and Load Report
 
@@ -93,8 +93,8 @@ The OLAPReport collection bound to the OLAPClient component can be passed to a w
 
 On clicking the Save icon, a dialog is displayed to enter the name with which the OLAP Report collection is to be saved. On clicking OK, the OLAP Report collection associated is passed to the web service and saved in the database connected with the name provided. 
 
-![Description: http://help.syncfusion.com/ug/js/ImagesExt/image49_130.png](Data-Binding_images/Data-Binding_img6.png) 
+![](Data-Binding_images/Data-Binding_img6.png) 
 
 Similarly, on clicking the load icon, a pop-up window is displayed, containing a drop-down with a list of saved OLAP Reports in the connected database. On selecting the name containing the OLAP Report collection and clicking OK, the selected OLAP Report collection is loaded into the control.
 
-![Description: http://help.syncfusion.com/ug/js/ImagesExt/image49_131.png](Data-Binding_images/Data-Binding_img7.png) 
+![](Data-Binding_images/Data-Binding_img7.png) 

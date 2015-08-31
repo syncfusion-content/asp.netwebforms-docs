@@ -15,7 +15,7 @@ documentation: ug
 
 The Essential ASP.NET WebForms Editors control includes numeric, percentage, currency and maskedit textbox controls. Here, you can learn how to use ASP.NET Textboxes controls in the Electricity bill calculator Application. This guides you to use the wide range of TextBoxfunctionalities to complete this application.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image73_8.jpg](Getting-Started_images/Getting-Started_img1.jpeg) 
+![](Getting-Started_images/Getting-Started_img1.jpeg) 
 
 
 
@@ -261,7 +261,7 @@ The following styles are added to arrange the TextBox.  You can add the follow
 
 Run the above code to render a TextBox control as follows
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image73_8.jpg](Getting-Started_images/Getting-Started_img2.jpeg)
+![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
 
@@ -375,7 +375,7 @@ In the above mentioned use case scenario, you can set the MinValue, MaxValue 
 
 Run the above code to render the resultant output of the above steps
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image73_9.jpg](Getting-Started_images/Getting-Started_img3.jpeg) 
+![](Getting-Started_images/Getting-Started_img3.jpeg) 
 
 
 
@@ -567,7 +567,7 @@ To customize the button, set the ContentType as TextAndImage to include the 
 
 Run the above code to render the TextBox control. Fill the required Textbox fields and click the Calculate button. The values are displayed and an alert message is shown. The following screenshot illustrates the final output of the Electricity bill calculator.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image73_10.jpg](Getting-Started_images/Getting-Started_img4.jpeg) 
+![](Getting-Started_images/Getting-Started_img4.jpeg) 
 
 
 

@@ -1180,7 +1180,7 @@ Doc.Save("FileProtectionDocIO.doc")
 
 Refer to the online documentation link for more details about ways to protect the Word documents using DocIO:
 
-[http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/47security.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
+<http://docs.syncfusion.com/windowsforms/docio/>
 
 ## Table of Contents
 

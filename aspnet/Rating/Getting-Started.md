@@ -17,7 +17,7 @@ ASP.NET Rating helps you to select the number of stars that represent Rating. H
 
 The following screenshot demonstrates the functionality of a Rating control with a Rating range of 0 to 5.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image82_9.jpg](Getting-Started_images/Getting-Started_img1.jpeg)
+![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
 
@@ -241,7 +241,7 @@ Add the following code example to the corresponding ASPX page to render Ratin
 
 Execute the above code to render the following output.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image82_9.jpg](Getting-Started_images/Getting-Started_img2.jpeg)
+![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
 

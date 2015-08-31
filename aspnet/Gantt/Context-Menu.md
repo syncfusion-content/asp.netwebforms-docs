@@ -43,7 +43,7 @@ The following screenshot shows the Default Context Menu in Gantt control.
 
 
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image72_8.png](Context-Menu_images/Context-Menu_img1.png)
+![](Context-Menu_images/Context-Menu_img1.png)
 
 _Figure : Default Context Menu_
 

@@ -122,7 +122,7 @@ The following screenshot displays the output of the NumericTextbox controls wit
 
 
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image73_43.jpg](Integration_images/Integration_img1.jpeg) 
+![](Integration_images/Integration_img1.jpeg) 
 
 
 
@@ -257,7 +257,7 @@ The following example explains how to bind data to the NumericTextbox control t
 
 The following screenshot displays the output of the Knockout binding in the NumericTextbox .
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image73_41.jpg](Integration_images/Integration_img2.jpeg) 
+![](Integration_images/Integration_img2.jpeg) 
 
 
 

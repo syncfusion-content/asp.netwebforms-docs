@@ -23,13 +23,13 @@ The following screenshot illustrates the functionality of a MaskEdit. Here, Mob
 
 ## Create a MaskEdit control
 
-You can create an ASP.NETProject and add the necessary Dll’s and scripts with the help of the given [ASP.NET WebForms-Getting Started](http://help.syncfusion.com/ug/js/Documents/gettingstartedwithmv.htm) Documentation.
+You can create an ASP.NETProject and add the necessary Dll’s and scripts with the help of the given [ASP.NET WebForms-Getting Started](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc) Documentation.
 
 Add the following code to the corresponding ASPX page to render the MaskEdit control.
 
 Refer to the following link to know details on TextBoxes controls.
 
-[http://help.syncfusion.com/ug/js/documents/createyourtextboxesw.htm](http://help.syncfusion.com/ug/js/documents/createyourtextboxesw.htm)
+<http://docs.syncfusion.com/js/angularjs>
 
 
 
@@ -231,7 +231,7 @@ The following code example is used to set mask value.
 
 Execute the above code to render the following output.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image61_6.png](Getting-Started_images/Getting-Started_img2.png)
+![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -289,7 +289,7 @@ The following screenshot shows the output for the above code example.
 
 
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image61_7.png](Getting-Started_images/Getting-Started_img3.png) 
+![](Getting-Started_images/Getting-Started_img3.png) 
 
 
 

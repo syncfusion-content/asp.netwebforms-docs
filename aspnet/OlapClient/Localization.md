@@ -393,4 +393,4 @@ DataManager.OverrideDefaultFormatStrings = true;
 
 The following screenshot shows the OLAP Client with French localization.
 
-![Description: http://help.syncfusion.com/ug/js/ImagesExt/image49_140.png](Localization_images/Localization_img2.png) 
+![](Localization_images/Localization_img2.png) 

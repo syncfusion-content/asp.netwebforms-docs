@@ -64,7 +64,7 @@ The following screenshot displays the Filtering Dialog box.
 
 
 
-![Description: http://help.syncfusion.com/ug/js/ImagesExt/image19_31.png](Data-Exploration_images/Data-Exploration_img2.png) 
+![](Data-Exploration_images/Data-Exploration_img2.png) 
 
 
 

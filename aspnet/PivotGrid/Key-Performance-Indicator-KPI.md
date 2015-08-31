@@ -22,7 +22,7 @@ The different types of available indicators are as follows:
 
 
 
- ![http://help.syncfusion.com/ug/js/ImagesExt/image49_164.jpg](Key-Performance-Indicator-KPI_images/Key-Performance-Indicator-KPI_img1.jpeg) 
+ ![](Key-Performance-Indicator-KPI_images/Key-Performance-Indicator-KPI_img1.jpeg) 
 
 
 

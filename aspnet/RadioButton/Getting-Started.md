@@ -19,7 +19,7 @@ you can learn how to use Radio Button in a Quiz application. The following gui
 Button to select the answers in the application and get the selected items. The following screenshot shows a sample Quiz 
 application.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image94_7.png](Getting-Started_images/Getting-Started_img1.png) 
+![](Getting-Started_images/Getting-Started_img1.png) 
 
 ## Create a RadioButton in a Quiz Application
 
@@ -249,13 +249,13 @@ Add the following styles.
 
 
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image94_8.png](Getting-Started_images/Getting-Started_img2.png) 
+![](Getting-Started_images/Getting-Started_img2.png) 
 
 
 
 ## Create RegistrationApp
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image94_9.png](Getting-Started_images/Getting-Started_img3.png) 
+![](Getting-Started_images/Getting-Started_img3.png) 
 
 
 
@@ -493,11 +493,11 @@ Add the following ClientSide event for submit button to get the selected items.�
 
 
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image94_9.png](Getting-Started_images/Getting-Started_img4.png) 
+![](Getting-Started_images/Getting-Started_img4.png) 
 
 
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image94_10.png](Getting-Started_images/Getting-Started_img5.png) 
+![](Getting-Started_images/Getting-Started_img5.png) 
 
 
 

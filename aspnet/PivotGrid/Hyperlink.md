@@ -40,7 +40,7 @@ The output of the above code creates a PivotGrid with the Hyperlink option as sh
 
 
 
- ![http://help.syncfusion.com/ug/js/ImagesExt/image49_165.png](Hyperlink_images/Hyperlink_img1.png) 
+ ![](Hyperlink_images/Hyperlink_img1.png) 
 
 
 

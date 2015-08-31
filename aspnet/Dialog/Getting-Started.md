@@ -15,7 +15,7 @@ The ASP.NET Dialog displays a Dialog window within your web page. The Dialo
 
 
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image76_9.png](Getting-Started_images/Getting-Started_img1.png) 
+![](Getting-Started_images/Getting-Started_img1.png) 
 
 
 
@@ -47,7 +47,7 @@ You can add the following code example to the corresponding ASPX page to rende
 
 The following screenshot displays a Dialog control without any content.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image76_10.png](Getting-Started_images/Getting-Started_img2.png) 
+![](Getting-Started_images/Getting-Started_img2.png) 
 
 
 
@@ -313,7 +313,7 @@ You can use the following styles to customize the styles of sign up form. You ca
 
 Run the above code example to render the following output. The screenshot displays the Dialog control with header and resizable option. These options are enabled in the Dialog control, by default.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image76_11.png](Getting-Started_images/Getting-Started_img3.png) 
+![](Getting-Started_images/Getting-Started_img3.png) 
 
 
 
@@ -343,7 +343,7 @@ Initialize the Dialog control by using the following code example.
 
 Run the code example to render the following output. 
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image76_9.png](Getting-Started_images/Getting-Started_img4.png) 
+![](Getting-Started_images/Getting-Started_img4.png) 
 
 
 
@@ -509,7 +509,7 @@ Initialize the Dialog control with the following code example.
  Run the code example to render the following output.
 
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image76_12.png](Getting-Started_images/Getting-Started_img5.png) 
+![](Getting-Started_images/Getting-Started_img5.png) 
 
 
 
