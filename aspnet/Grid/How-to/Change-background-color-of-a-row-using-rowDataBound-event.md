@@ -295,9 +295,3 @@ So based on the value in the record, we can set the background color of the row 
 The following screenshot displays the grid with background color changed for few records
 
 ![](Change-background-color-of-a-row-using-rowDataBound-event_images/Change-background-color-of-a-row-using-rowDataBound-event_img1.png)
-{:.image }
-
-
-{:.caption }
-
-
