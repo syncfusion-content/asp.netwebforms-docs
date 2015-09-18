@@ -9,9 +9,9 @@ documentation: ug
 
 ### Custom Binding for Grid CRUD operation
 
-In Grid control we have used DataManager for data processing. The adaptors of dataManager are customizable that we can extend it for custom Binding with server-side for Grid CRUD operation.
+In Grid control, DataManager is used for data processing. The adaptors of dataManager are customizable that can be extended for custom Binding with server-side for Grid CRUD operation.
 
-For instance let me bind data to Grid using “remoteSaveAdaptor” and extend it to modify its update method to bind edited record values of Grid as “FormCollection” in server-side
+For instance, bind the data to Grid by using “remoteSaveAdaptor” and extend it to modify its update method to bind the edited record values of Grid as “FormCollection” in server-side.
 
 {% highlight html %}
         <ej:Grid ID="EmployeesGrid" runat="server" Load="load" AllowPaging="true" Width="1500px">
@@ -174,7 +174,7 @@ public partial class GridSample : System.Web.UI.Page
 
 {% endhighlight %}
 
-The output is as follows:
+The output is as follows.
 
 {% include image.html url="/aspnet/Grid/How-to/DCustom-Binding-for-Grid-CRUD-operation_images/Custom-Binding-for-Grid-CRUD-operation_img1.png"%}
 
