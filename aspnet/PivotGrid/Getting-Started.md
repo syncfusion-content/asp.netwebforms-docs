@@ -237,7 +237,7 @@ namespace Sample.wcf
 
 ### Implement Service Methods
 
-You can add the following methods to the service that are invoked for any server-side operations to be performed in PivotGrid.
+You can add the following methods to the service that is invoked for any server-side operations to be performed in PivotGrid.
 
 1. Initialize the PivotGrid helper class. 
 
@@ -264,7 +264,7 @@ You can add the following methods to the service that are invoked for any server
         return htmlHelper.GetJsonData(action, DataManager, gridLayout, enablePivotFieldList);
     }
 
-	//This method provides the required information from server-side when drill up or down operation is performed in PivotGrid.
+	//This method provides the required information from server-side when a drill up or down operation is performed in PivotGrid.
     public Dictionary<string, object> DrillGrid(string action, string cellPosition, string currentReport, string headerInfo, string layout, object customObject)
     {
         dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());
@@ -383,7 +383,7 @@ You can add the following methods to the service that are invoked for any server
    ~~~
    {:.prettyprint }
 
-2. The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property. In the following code example "Sample.wcf.PivotGridServiceAspNetAjaxBehavior" points the PivotGridService class under the namespace Sample.wcf in PivotGridService.svc.cs file that is the appropriate behavior for the endpoint. 
+2. The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using this property. In the following code example "Sample.wcf.PivotGridServiceAspNetAjaxBehavior" points the PivotGridService class under the namespace Sample.wcf in PivotGridService.svc.cs file that is the appropriate behavior for the endpoint. 
 
    ~~~ html
 
@@ -868,7 +868,7 @@ You can add the following methods to the service that are invoked for any server
    
 ### Configure Web.Config
 
-1. You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "Sample.wcf.PivotGridService" where "PivotGridService" is the service class name and “Sample.wcf" is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.  
+1. You can expose services through the properties such as binding, contract and address etc., using an endpoint. In your application the service name is "Sample.wcf.PivotGridService" where "PivotGridService" is the service class name and “Sample.wcf" is the namespace where the service class appears. The following are the properties that meet the appropriate endpoint.  
    
    i) contract: This property indicates the contract of the endpoint is exposing. Here you are referring IPivotGridService contract and it is "Sample.wcf.IPivotGridService".
    
@@ -890,7 +890,7 @@ You can add the following methods to the service that are invoked for any server
    ~~~
    {:.prettyprint }
 
-2. The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property. In the following code example "Sample.wcf.PivotGridServiceAspNetAjaxBehavior" points the PivotGridService class under the namespace Sample.wcf in PivotGridService.svc.cs which is the appropriate behavior for the endpoint. 
+2. The endpointBehaviors contains all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using the name property. In the following code example "Sample.wcf.PivotGridServiceAspNetAjaxBehavior" points the PivotGridService class under the namespace Sample.wcf in PivotGridService.svc.cs, the appropriate behavior for the endpoint. 
 
    ~~~ html
 
