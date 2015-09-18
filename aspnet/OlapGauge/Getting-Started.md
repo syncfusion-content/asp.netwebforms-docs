@@ -106,81 +106,40 @@ Open Visual Studio and create a new project by clicking New Project. Select the 
 
 {% highlight html %}
 
-
-
-  <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
-
-        <Scales>
-
-            <ej:CircularScales ShowRanges="true" Radius="150" ShowScaleBar="true" Size="1"  ShowIndicators="true" ShowLabels="true">
-
-                <Border Width ="0.5" />
-
-                <PointerCollection>                    
-
-                    <ej:Pointers ShowBackNeedle="true" BackNeedleLength="20"  Length="125" Width="7" ></ej:Pointers>
-
-                    <ej:Pointers Type="Marker" MarkerType="Diamond" DistanceFromScale="5" Placement="Center" BackgroundColor="#29A4D9" Length="25" Width="15"></ej:Pointers>
-
-                </PointerCollection>
-
-                <TickCollection>
-
-                    <ej:CircularTicks Type="Major" DistanceFromScale="2" Height="16" Width="1" Color="#8c8c8c" />
-
-                    <ej:CircularTicks Type="Minor" Height="6" Width="1" DistanceFromScale="2" Color="#8c8c8c" />
-
-                </TickCollection>
-
-                <LabelCollection>
-
-                    <ej:CircularLabels Color="#8c8c8c"></ej:CircularLabels>
-
-                </LabelCollection>
-
-                <RangeCollection>
-
-                    <ej:CircularRanges DistanceFromScale="-5" BackgroundColor="#fc0606">
-
-                        <Border Color="#fc0606"/></ej:CircularRanges>
-
-                    <ej:CircularRanges DistanceFromScale="-5"></ej:CircularRanges>
-
-                </RangeCollection>
-
-                <CustomLabelCollection>
-
-                    <ej:CircularCustomLabel Color="#666666">
-
-                        <Position X="180" Y="290" />
-
-                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
-
-                    </ej:CircularCustomLabel>
-
-                    <ej:CircularCustomLabel Color="#666666">
-
-                        <Position X="180" Y="320" />
-
-                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
-
-                    </ej:CircularCustomLabel>
-
-                    <ej:CircularCustomLabel Color="#666666">
-
-                        <Position X="180" Y="150" />
-
-                        <Font Size="12px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
-
-                    </ej:CircularCustomLabel>
-
-                </CustomLabelCollection>   
-
-            </ej:CircularScales>
-
-        </Scales>
-
-    </ej:OlapGauge>
+<ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
+    <Scales>
+        <ej:CircularScales ShowRanges="true" Radius="150" ShowScaleBar="true" Size="1" ShowIndicators="true" ShowLabels="true">
+            <Border Width="0.5" />
+            <PointerCollection>
+                <ej:Pointers ShowBackNeedle="true" BackNeedleLength="20" Length="125" Width="7"></ej:Pointers>
+                <ej:Pointers Type="Marker" MarkerType="Diamond" DistanceFromScale="5" Placement="Center" BackgroundColor="#29A4D9" Length="25" Width="15"></ej:Pointers>
+            </PointerCollection>
+            <TickCollection>
+                <ej:CircularTicks Type="Major" DistanceFromScale="2" Height="16" Width="1" Color="#8c8c8c" />
+                <ej:CircularTicks Type="Minor" Height="6" Width="1" DistanceFromScale="2" Color="#8c8c8c" /> </TickCollection>
+            <LabelCollection>
+                <ej:CircularLabels Color="#8c8c8c"></ej:CircularLabels>
+            </LabelCollection>
+            <RangeCollection>
+                <ej:CircularRanges DistanceFromScale="-5" BackgroundColor="#fc0606">
+                    <Border Color="#fc0606" />
+                </ej:CircularRanges>
+                <ej:CircularRanges DistanceFromScale="-5"></ej:CircularRanges>
+            </RangeCollection>
+            <CustomLabelCollection>
+                <ej:CircularCustomLabel Color="#666666">
+                    <Position X="180" Y="290" />
+                    <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font> </ej:CircularCustomLabel>
+                <ej:CircularCustomLabel Color="#666666">
+                    <Position X="180" Y="320" />
+                    <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font> </ej:CircularCustomLabel>
+                <ej:CircularCustomLabel Color="#666666">
+                    <Position X="180" Y="150" />
+                    <Font Size="12px" FontFamily="Segoe UI" FontStyle="Normal"></Font> </ej:CircularCustomLabel>
+            </CustomLabelCollection>
+        </ej:CircularScales>
+    </Scales>
+</ej:OlapGauge>
 
 {% endhighlight %}
 
@@ -197,15 +156,9 @@ Open Visual Studio and create a new project by clicking New Project. Select the 
 1. Select the following assemblies: 
 
    * Microsoft.AnalysisServices.AdomdClient.dll
-
-   * Syncfusion.Core.dll 
-
    * Syncfusion.Linq.Base.dll 
-
    * Syncfusion.EJ.dll 
-
    * Syncfusion.EJ.Olap.dll
-
    * Syncfusion.Olap.Base.dll
 
 2. Click OK.
@@ -224,13 +177,10 @@ Add the script files and CSS files in the head tag of the Default.aspx page.
 
 <head>
 
-<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-
+<link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
-
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
-
-<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
+<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
 
 </head>
 
@@ -241,7 +191,7 @@ Add the script files and CSS files in the head tag of the Default.aspx page.
 
 #### Create WCF Services
 
-1. Right click on the project and select Add > New Folder.  Name the folder as wcf.
+1. Right click on the project and select Add > New Folder.  Name the folder as wcf. Let "wcf" folder name be in lower case.
 
    ![](Getting-Started_images/Getting-Started_img14.png) 
 
@@ -259,13 +209,11 @@ Add the following code inside the IOlapGaugeService interface available in the I
 
 
 {% highlight c# %}
-
-    public interface IOlapGaugeService
-
-    {
-        Dictionary<string, object> InitializeGauge(string action,string customObject);                 
-
-	}
+public interface IOlapGaugeService
+{
+    [OperationContract]
+    Dictionary<string, object> InitializeGauge(string action,string customObject);                 
+}
 		
 {% endhighlight  %}
 
@@ -273,29 +221,18 @@ Add the following code inside the IOlapGaugeService interface available in the I
 
 Add the following necessary namespaces required to implement the service methods.
 
-
 {% highlight C# %}
 
 using System;
-
 using System.Collections.Generic;
-
 using System.Linq;
-
 using System.Runtime.Serialization;
-
 using System.ServiceModel;
-
 using System.Text;
-
 using System.ServiceModel.Activation;
-
 using Syncfusion.JavaScript.Olap;
-
 using System.Web.Script.Serialization;
-
 using Syncfusion.Olap.Manager;
-
 using Syncfusion.Olap.Reports;
 
 {% endhighlight %}
@@ -307,14 +244,10 @@ Create the OlapGaugeService class to implement the service methods. Inherit the 
 
 {% highlight C# %}
 
-namespace Sample
-
+namespace Sample.wcf
 {
-
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-
     public class OlapGaugeService : IOlapGaugeService
-
     {
 
     }
@@ -330,11 +263,9 @@ Add the following methods to the service invoked for any server-side operations 
 
    ~~~ cs
 
-        OlapGauge htmlHelper = new OlapGauge();       
-
-        static string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
-
-        JavaScriptSerializer serializer = new JavaScriptSerializer();
+    OlapGauge htmlHelper = new OlapGauge();       
+    static string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+    JavaScriptSerializer serializer = new JavaScriptSerializer();
 
    ~~~
    {:.prettyprint }
@@ -343,102 +274,62 @@ Add the following methods to the service invoked for any server-side operations 
 
    ~~~ cs
 
-         //This method provides the required information from the server side for initializing the OlapGauge.
+    //This method provides the required information from the server side for initializing the OlapGauge.
+	public Dictionary<string, object> InitializeGauge(string action,string customObject)
+    {
+        OlapDataManager DataManager = null;
+        dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());
+        DataManager = new OlapDataManager(connectionString);                         
+        DataManager.SetCurrentReport(CreateOlapReport());
+        return htmlHelper.GetJsonData(action, DataManager);
+     }                
 
-		public Dictionary<string, object> InitializeGauge(string action,string customObject)
+     //This method carries the information about the default report which would be rendered within OlapGauge initially. 
+     private OlapReport CreateOlapReport()
+     {
+        OlapReport report = new OlapReport();
+        report.CurrentCubeName = "Adventure Works";
+     
+        KpiElements kpiElement = new KpiElements();
+        kpiElement.Elements.Add(new KpiElement { Name = "Revenue", ShowKPIGoal = true, ShowKPIStatus = true, ShowKPIValue = true, ShowKPITrend = true });
+     
+        DimensionElement dimensionElement1 = new DimensionElement();
+        DimensionElement dimensionElement2 = new DimensionElement();
+        DimensionElement dimensionElement3 = new DimensionElement();
+     
+        MeasureElements measureElement = new MeasureElements();
+        measureElement.Elements.Add(new MeasureElement { UniqueName = "[Measures].[Customer Count]" });
+     
+        dimensionElement1.Name = "Date";
+        dimensionElement1.AddLevel("Fiscal Year", "Fiscal Year");
+        dimensionElement1.Hierarchy.LevelElements["Fiscal Year"].Add("FY 2004");
+        dimensionElement1.Hierarchy.LevelElements["Fiscal Year"].IncludeAvailableMembers = true;
+         
+        dimensionElement2.Name = "Sales Channel";
+        dimensionElement2.AddLevel("Sales Channel", "Sales Channel");
+        dimensionElement2.Hierarchy.LevelElements["Sales Channel"].Add("Reseller");
+        dimensionElement2.Hierarchy.LevelElements["Sales Channel"].IncludeAvailableMembers = true;
+     
+        dimensionElement3.Name = "Product";
+        dimensionElement3.AddLevel("Product Model Lines", "Product Line");
 
-        {
+        report.CategoricalElements.Add(new Item { ElementValue = dimensionElement2 });
+        report.CategoricalElements.Add(new Item { ElementValue = dimensionElement1 });
+        report.CategoricalElements.Add(new Item { ElementValue = kpiElement });
+        report.SeriesElements.Add(new Item { ElementValue = dimensionElement3 });
 
-            OlapDataManager DataManager = null;
+        return report;
 
-            dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());
-
-
-
-                DataManager = new OlapDataManager(connectionString);                         
-
-            DataManager.SetCurrentReport(CreateOlapReport());
-
-            return htmlHelper.GetJsonData(action, DataManager);
-
-        }                
-
-        //This method carries the information about the default report which would be rendered within OlapGauge initially. 
-
-        private OlapReport CreateOlapReport()
-
-        {
-
-            OlapReport report = new OlapReport();
-
-            report.CurrentCubeName = "Adventure Works";
-
-
-
-            KpiElements kpiElement = new KpiElements();
-
-            kpiElement.Elements.Add(new KpiElement { Name = "Revenue", ShowKPIGoal = true, ShowKPIStatus = true, ShowKPIValue = true, ShowKPITrend = true });
-
-
-
-            DimensionElement dimensionElement1 = new DimensionElement();
-
-            DimensionElement dimensionElement2 = new DimensionElement();
-
-            DimensionElement dimensionElement3 = new DimensionElement();
-
-
-
-            MeasureElements measureElement = new MeasureElements();
-
-            measureElement.Elements.Add(new MeasureElement { UniqueName = "[Measures].[Customer Count]" });
-
-
-
-            dimensionElement1.Name = "Date";
-
-            dimensionElement1.AddLevel("Fiscal Year", "Fiscal Year");
-
-            dimensionElement1.Hierarchy.LevelElements["Fiscal Year"].Add("FY 2004");
-
-            dimensionElement1.Hierarchy.LevelElements["Fiscal Year"].IncludeAvailableMembers = true;
-
-
-
-            dimensionElement2.Name = "Sales Channel";
-
-            dimensionElement2.AddLevel("Sales Channel", "Sales Channel");
-
-            dimensionElement2.Hierarchy.LevelElements["Sales Channel"].Add("Reseller");
-
-            dimensionElement2.Hierarchy.LevelElements["Sales Channel"].IncludeAvailableMembers = true;
-
-
-
-            dimensionElement3.Name = "Product";
-
-            dimensionElement3.AddLevel("Product Model Lines", "Product Line");
-
-            report.CategoricalElements.Add(new Item { ElementValue = dimensionElement2 });
-
-            report.CategoricalElements.Add(new Item { ElementValue = dimensionElement1 });
-
-            report.CategoricalElements.Add(new Item { ElementValue = kpiElement });
-
-            report.SeriesElements.Add(new Item { ElementValue = dimensionElement3 });
-
-            return report;
-
-        }
+     }
 
    ~~~
    {:.prettyprint }
 
 #### Configuring Web.Config
 
-1. You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "Sample.OlapGaugeService" where "OlapGaugeService" is the service class name and “Sample" is the namespace name where service class appears.The following are the properties are that meet the appropriate endpoint.  
+1. You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "Sample.wcf.OlapGaugeService" where "OlapGaugeService" is the service class name and “Sample.wcf" is the namespace name where service class appears.The following are the properties are that meet the appropriate endpoint.  
 
-   contract: This property indicates the contract of the endpoint is exposing. Here you are referring IOlapGaugeService contract and hence it is "Sample.IOlapGaugeService".
+   contract: This property indicates the contract of the endpoint is exposing. Here you are referring IOlapGaugeService contract and hence it is "Sample.wcf.IOlapGaugeService".
 
    binding: In your application, you use webHttpBinding to post and receive the requests and responses between the client-end and the service-end.
 
@@ -448,48 +339,33 @@ Add the following methods to the service invoked for any server-side operations 
    ~~~ html
 
 		<system.serviceModel>
-
 			<services>
-
-			  <service name="Sample.OlapGaugeService">
-
-				<endpoint address="" behaviorConfiguration="Sample.OlapGaugeServiceAspNetAjaxBehavior"
-
-				  binding="webHttpBinding" contract="Sample.IOlapGaugeService" />
-
+			  <service name="Sample.wcf.OlapGaugeService">
+				<endpoint address="" behaviorConfiguration="Sample.wcf.OlapGaugeServiceAspNetAjaxBehavior"
+				  binding="webHttpBinding" contract="Sample.wcf.IOlapGaugeService" />
 			  </service>
-
 			</services>
-
 		</system.serviceModel>
 
    ~~~
    {:.prettyprint }
 
 2. The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior 
-   only using this name property. In the following code sample "Sample.OlapGaugeServiceAspNetAjaxBehavior" would point the 
-   OlapGaugeService class under the namespace Sample in OlapGaugeService.svc.cs file that is the appropriate behavior for the 
+   only using this name property. In the following code sample "Sample.wcf.OlapGaugeServiceAspNetAjaxBehavior" would point the 
+   OlapGaugeService class under the namespace Sample.wcf in OlapGaugeService.svc.cs file which is the appropriate behavior for the 
    endpoint. 
 
 
    ~~~ html
 
 		<system.serviceModel>
-
 			<behaviors>
-
 			  <endpointBehaviors>
-
-				<behavior name="Sample.OlapGaugeServiceAspNetAjaxBehavior">
-
+				<behavior name="Sample.wcf.OlapGaugeServiceAspNetAjaxBehavior">
 				  <enableWebScript />
-
 				</behavior>
-
 			  </endpointBehaviors>
-
 			</behaviors>
-
 		</system.serviceModel>
 
    ~~~
@@ -500,21 +376,13 @@ Add the following methods to the service invoked for any server-side operations 
    ~~~ html
 
 		<system.web>
-
 			  <compilation debug="true" targetFramework="4.5" >
-
 				<assemblies>
-
 				  <add assembly="Syncfusion.EJ, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-
 				  <add assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-
 				   <add assembly="Syncfusion.Olap.Base, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3D67ED1F87D44C89"/>
-
 				</assemblies>
-
 			  </compilation>
-
 		 </system.web> 
 
    ~~~
@@ -527,24 +395,16 @@ Add the following methods to the service invoked for any server-side operations 
    ~~~ html
 
 		<system.web>
-
 		 <pages validateRequest="false">
-
 			  <controls>
-
 				  <add  namespace="Syncfusion.JavaScript.Web.Olap" assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/>
-
 				  <add  namespace="Syncfusion.JavaScript.Web" assembly="Syncfusion.EJ.Web, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/>
-
 				  <add  namespace="Syncfusion.JavaScript.DataVisualization.Models" assembly="Syncfusion.EJ, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/>
-
 			  </controls>
-
 		   </pages>
-
 		</system.web> 
 
    ~~~
    {:.prettyprint }
 
-N> In this example, “Sample” indicates the name of the project and “OlapGaugeService” indicates the name of the WCF service created. And_ x.x.x.x _in the above code example refers to the current version of the Essential Studio running in your system.
+N> In this example, “Sample.wcf” indicates the namespace in the WCF Service and “OlapGaugeService” indicates the class name in the WCF Service. And_ x.x.x.x _in the above code example refers to the current version of the Essential Studio running in your system.
