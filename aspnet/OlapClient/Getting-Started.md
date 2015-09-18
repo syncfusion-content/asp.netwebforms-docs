@@ -27,7 +27,7 @@ The following screenshot displays the OLAP Client Control.
 
 
 
-As per the architecture, control rendering takes place at the client-side and all the analytical operations on each action takes place at the server-side.
+As per the architecture, control rendering takes place at the client-side and all the analytical operations on each action takes place server-side.
 
 ### Service for OLAP Controls
 
@@ -39,7 +39,7 @@ The primary reasons for using service in an OLAP processing are as follows:
    
    ii) Online Cube (XML/A)
    
-   iii) Cube within SQL Server (locally or through remote) you can move the connectivity related coding to service-side as it is impossible at the client-side other than Online Cube (XML/A) option. Using service, you can connect any cube data source without any limitation.
+   iii) Cube within SQL Server, locally or through remote, you can move the connectivity related coding to service-side as it is impossible at the client-side other than Online Cube (XML/A) option. Using service, you can connect any cube data source without any limitation.
 
 2. Cube Schema: As the connection is moved to service-side, you obviously use Microsoft__ADOMD__assembly to get the entire cube schema. Only with the cube schema the following details are achieved for control rendering.
    
@@ -54,19 +54,19 @@ The primary reasons for using service in an OLAP processing are as follows:
 
    As the OlapControl is the key for each and every operation, initially you need to serialize the OlapReport and send to client-side in a form of string.
 
-   When you perform any operation such as drill up/down, filtering, sorting etc., you can send OlapReport from client-side to service-side in a de-serialized and updated format.
+   When you perform any operation, such as drill up or down, filtering, sorting etc., you can send OlapReport from client-side to service-side in a de-serialized and updated format.
 
    Further operations are carried with updated OlapReports only and you can send the updated OlapReport back to client-side with JSON data in a serialized format again. 
 
-   This process keeps the OlapReport always updated. You cannot operate serialized OlapReport in client-side and hence it is carried to service-side having its class in Syncfusion.Olap.Base assembly to perform the update operation_._
+   This process keeps the OlapReport always updated. You cannot operate serialized OlapReport in client-side and hence it is carried to service-side having its class in Syncfusion.Olap.Base assembly to perform the update operation.
 
-5. Saving and Loading Report in Database:  you can save and load the reports available in OlapClient control via service only. This is not applicable at the client-side. You can serialize the OlapReport class in the Syncfusion.Olap.Base assembly and save to database as stream.  Also you can load back from database via service. 
+5. Saving and Loading Report in Database: You can save and load the reports available in OlapClient control via service only. This is not applicable at the client-side. You can serialize the OlapReport class in the Syncfusion.Olap.Base assembly and save to database as stream.  Also you can load it back from the database via service. 
 
 6. Exporting: You can export OLAP values and information to excel sheet via service only. So this provides feasible option to save and view OLAP information.  
 
 ### Create an application
 
-This section encompasses on how to configure the OLAP Client control in an application. You can also pass the required data to OLAPClient and customize it according to your requirements.
+This section explains how to configure the OLAP Client control in an application. You can also pass the required data to OLAPClient and customize it according to your requirements.
 
 In this example you can see how OLAPClient component plots the data about Customer Count over different fiscal years.
 
@@ -108,9 +108,9 @@ Open the Visual Studio and create a new project by clicking New Project. Select 
 
    ![](Getting-Started_images/Getting-Started_img11.png) 
 
-   Initialize the control using below code snippet.
+   Initialize the control using the following code example.
 
-   N> URL value needs to be defined in order to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately. 
+   N> URL value needs to be defined inorder to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately. 
 
 
 {% highlight html %}
@@ -182,11 +182,11 @@ Add the script files and CSS files in the head tag of the Default.aspx page.
 
 #### WCF Services
 
-1. Right click the project and select Add > New Folder.  Name the folder as wcf. Let "wcf" folder name be in lower case.
+1. Right-click the project and select Add > New Folder.  Name the folder as wcf. Let the folder name "wcf" be in lower case.
 
    ![](Getting-Started_images/Getting-Started_img16.png) 
 
-2. Now right click the wcf folder created and select Add > New Item.
+2. Now right-click the wcf folder created and select Add > New Item.
    
    ![](Getting-Started_images/Getting-Started_img17.png) 
 
@@ -196,7 +196,7 @@ Add the script files and CSS files in the head tag of the Default.aspx page.
 
 #### Adding service methods inside Interface
 
-Add the following code sample inside the IOlapClientService interface available in an IOlapClientService.cs file.
+Add the following code example inside the IOlapClientService interface available in an IOlapClientService.cs file.
 
 
 {% highlight C# %}
@@ -263,7 +263,7 @@ public interface IOlapClientService
 
 #### Add Namespaces
 
-Add the following necessary namespaces required to implement the service methods.
+Add the following namespaces required to implement the service methods.
 
 
 {% highlight C# %}
@@ -330,7 +330,7 @@ string conStringforDB = "DataSource=" + HttpContext.Current.Server.MapPath(".").
 
 {% highlight C# %}
 
-//This method provides the required information from the server side for initializing the OlapClient.
+//This method provides the required information from server-side for initializing the OlapClient.
 
 public Dictionary<string, object> InitializeClient(string action, string customObject, string clientParams)
 {
@@ -341,7 +341,7 @@ public Dictionary<string, object> InitializeClient(string action, string customO
     return olapClientHelper.GetJsonData(action, DataManager, clientParams);
 }
 
-//This method provides the required information from the server side for initializing the OlapGrid.
+//This method provides the required information from server-side for initializing the OlapGrid.
 public Dictionary<string, object> InitializeGrid(string action, string currentReport, string gridLayout, string customObject)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -349,7 +349,7 @@ public Dictionary<string, object> InitializeGrid(string action, string currentRe
     return olapClientHelper.GetJsonData(action, DataManager, gridLayout);
 }
 
-//This method provides the required information from the server side for initializing the OlapChart.
+//This method provides the required information from server-side for initializing the OlapChart.
 public Dictionary<string, object> InitializeChart(string action, string currentReport, string customObject)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -357,7 +357,7 @@ public Dictionary<string, object> InitializeChart(string action, string currentR
     return htmlHelper.GetJsonData(action, DataManager);
 }
 
-//This method provides the required information from the server side while drill up/down operation is performed in OlapChart.
+//This method provides the required information from server-side while drill up or down operation is performed in OlapChart.
 public Dictionary<string, object> DrillChart(string action, string drilledSeries, string olapReport, string clientReports)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -366,7 +366,7 @@ public Dictionary<string, object> DrillChart(string action, string drilledSeries
     return htmlHelper.GetJsonData(action, DataManager, drilledSeries);
 }
 
-//This method provides the required information from the server side while filtering operation performed with the members inside respective dimension.
+//This method provides the required information from server-side while filtering operation performed with the members inside respective dimension.
 public Dictionary<string, object> FilterElement(string action, string clientParams, string olapReport, string clientReports)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -375,7 +375,7 @@ public Dictionary<string, object> FilterElement(string action, string clientPara
     return olapClientHelper.GetJsonData(action, DataManager, clientParams);
 }
 
-//This method provides the required information from the server side while a split button is removed from any axes. 
+//This method provides the required information from server-side while a split button is removed from any axes. 
 public Dictionary<string, object> RemoveSplitButton(string action, string clientParams, string olapReport, string clientReports)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -384,7 +384,7 @@ public Dictionary<string, object> RemoveSplitButton(string action, string client
     return olapClientHelper.GetJsonData(action, DataManager, clientParams);
 }
 
-//This method provides the required information from the server side while creating a member tree-view inside the editor dialog.
+//This method provides the required information from server-side while creating a member tree-view inside the editor dialog.
 public Dictionary<string, object> FetchMemberTreeNodes(string action, string dimensionName, string olapReport)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -392,7 +392,7 @@ public Dictionary<string, object> FetchMemberTreeNodes(string action, string dim
     return olapClientHelper.GetJsonData(action, DataManager, dimensionName);
 }
 
-//This method provides the required information from the server side while drill up/down operation is performed in OlapGrid.
+//This method provides the required information from server-side while drill up or down operation is performed in OlapGrid.
 public Dictionary<string, object> DrillGrid(string action, string cellPosition, string currentReport, string clientReports, string headerInfo, string layout)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -401,7 +401,7 @@ public Dictionary<string, object> DrillGrid(string action, string cellPosition, 
     return olapClientHelper.GetJsonData(action, DataManager, cellPosition, headerInfo, layout);
 }
 
-//This method provides the required information from the server side while a node is dropped to any of the axes. 
+//This method provides the required information from server-side while a node is dropped to any of the axes. 
 public Dictionary<string, object> NodeDropped(string action, string dropType, string nodeInfo, string olapReport, string clientReports)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -410,7 +410,7 @@ public Dictionary<string, object> NodeDropped(string action, string dropType, st
     return olapClientHelper.GetJsonData(action, DataManager, dropType, nodeInfo);
 }
 
-//This method provides the required information from the server side while a cube is changed. 
+//This method provides the required information from server-side while a cube is changed. 
 public Dictionary<string, object> CubeChanged(string action, string cubeName, string clientParams)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -422,7 +422,7 @@ public Dictionary<string, object> MeasureGroupChanged(string action, string meas
     return olapClientHelper.GetJsonData(action, DataManager, measureGroupName);
 }
 
-//This method provides the required information from the server side while any toolbar operations are performed.
+//This method provides the required information from server-side while any toolbar operations are performed.
 public Dictionary<string, object> ToolbarOperations(string action, string toolbarOperation, string clientInfo, string olapReport, string clientReports)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -433,7 +433,7 @@ public Dictionary<string, object> ToolbarOperations(string action, string toolba
     return olapClientHelper.GetJsonData(action, DataManager, toolbarOperation, clientInfo);
 }
 
-//This method fetches the required information from the server side while expanding a member inside member editor dialog. 
+//This method fetches the required information from server-side while expanding a member inside member editor dialog. 
 public Dictionary<string, object> MemberExpanded(string action, bool checkedStatus, string parentNode, string tag, string dimensionName, string cubeName, string olapReport, string clientReports)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -444,13 +444,13 @@ public Dictionary<string, object> MemberExpanded(string action, bool checkedStat
     return olapClientHelper.GetJsonData(action, DataManager, checkedStatus, parentNode, tag, dimensionName, cubeName);
 }
 
-//This method fetches the required information from the server side while updating reports using measure group. 
+//This method fetches the required information from server-side while updating reports using measure group. 
 public Dictionary<string, object> UpdateReport(string action, string clientParams, string olapReport, string clientReports)
 {
     return olapClientHelper.GetJsonData(action, clientParams, olapReport, clientReports);
 }
 
-//This method saves the OlapReports with the specific/entered name into the database.
+//This method saves the OlapReports with the specific or entered name into the database.
 public Dictionary<string, object> SaveReportToDB(string reportName, string olapReport, string clientReports)
 {
     SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
@@ -474,7 +474,7 @@ public Dictionary<string, object> FetchReportListFromDB()
     return dictionary;
 }
 
-//This method loads the selected OlapReports from the database based on the name with which it’s been stored. 
+//This method loads the selected OlapReports from the database based on the name with which it has been stored. 
 public Dictionary<string, object> LoadReportFromDB(string reportName, string olapReport, string clientReports)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -513,7 +513,7 @@ public void ExportOptions(Stream stream)
     olapClientHelper.ExportOlapClient(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
 }
 
-//This method carries the information about the default report which would be rendered within OlapClient initially. 
+//This method carries the information about the default report to be rendered within OlapClient initially. 
 private OlapReport CreateOlapReport()
 {
     OlapReport olapReport = new OlapReport() { Name = "Default Report" };
@@ -534,9 +534,9 @@ private OlapReport CreateOlapReport()
 
 #### Configuring Web.Config
 
-1. You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "Sample.wcf.OlapClientService" where "OlapClientService" is the service class name and “Sample.wcf" is the namespace name where service class appears.The following are the properties that meet the appropriate endpoint.  
+1. You can expose services through the properties such as binding, contract and address etc., using an endpoint. In your application the service name is "Sample.wcf.OlapClientService" where "OlapClientService" is the service class name and “Sample.wcf" is the namespace where the service class appears.The following are the properties that meet the appropriate endpoint.  
    
-   * contract: This property indicates the contract of the endpoint is exposing. Here you are referring IOlapClientService contract and hence it is "Sample.wcf.IOlapClientService".
+   * contract: This property indicates the contract of the endpoint is exposing. Here you are referring IOlapClientService contract and it is "Sample.wcf.IOlapClientService".
    * binding: In your application, you use webHttpBinding to post and receive the requests and responses between the client-end and the service-end.
    * behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint. endpointBehaviors are illustrated as follows
 
@@ -554,7 +554,7 @@ private OlapReport CreateOlapReport()
    ~~~
    {:.prettyprint }
    
-2. The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property. In the following code sample "Sample.wcf.OlapClientServiceAspNetAjaxBehavior" points the OlapClientService class under the namespace Sample in OlapClientService.svc.cs file which is the appropriate behavior for the endpoint. 
+2. The endpointBehaviors contains all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property. In the following code example "Sample.wcf.OlapClientServiceAspNetAjaxBehavior" points the OlapClientService class under the namespace Sample in OlapClientService.svc.cs file, that is the appropriate behavior for the endpoint. 
 
    ~~~ html
 
