@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started 
 
-This section explains briefly about how to create an OLAP Gauge in your application with ASP.NET.
+This section briefly explains how you can create an OLAP Gauge in your application with ASP.NET.
 
 ## Create your first OLAP Gauge in ASP.NET
 
@@ -27,7 +27,7 @@ The following screenshot shows the structure of an OLAP Gauge control.
 
 
 
-As shown in an above architecture, control rendering takes place at client-side and all other analytical operations on each action takes place at server-side.
+As shown in the above architecture, control rendering takes place client-side and all other analytical operations on each action takes place server-side.
 
 ### Service for OLAP Controls
 
@@ -39,7 +39,7 @@ The primary reasons for using service in an OLAP processing are:
    
    ii) Online Cube (XML/A)
    
-   iii) Cube within SQL Server (locally or through remote), you can move the connectivity related coding to service-side as it is impossible at client-side other than Online Cube (XML/A) option. Using service, you can connect any type of cube data source without any limitation.
+   iii) Cube within SQL Server, locally or through remote, you can move the connectivity related coding to service-side as it is impossible at client-side other than Online Cube (XML/A) option. Using service, you can connect any type of cube data source without any limitation.
 
 2. Cube Schema: As the connection is moved to service side, you obviously use MicrosoftADOMDassembly, to get the entire cube schema. Only with the cube schema the following details are achieved for control rendering.
    
@@ -55,7 +55,7 @@ The primary reasons for using service in an OLAP processing are:
 
    As the OlapControl is the key for each and every operation, initially you need to serialize the OlapReport and send to client-side in a form of string.
 
-   When you perform any operation such as drill up/down, filtering, sorting etc., you are required to send OlapReport from the client-side to the service in a de-serialized and updated format.
+   When you perform any operation such as drill up or down, filtering, sorting etc., you are required to send OlapReport from the client-side to the service in a de-serialized and updated format.
 
    Further operations are carried with updated OlapReports only and you can send the updated OlapReport back to client-side with JSON data in a serialized format again. 
 
@@ -63,7 +63,7 @@ The primary reasons for using service in an OLAP processing are:
 
 ### Create an application
 
-This section encompasses on how to configure the OLAP Gauge control in applications. You can also learn how to pass the required data to OLAP Gauge and to customize its various options according to your requirements. 
+This section explains how you can configure the OLAP Gauge control in applications. You can also learn how to pass the required data to OLAP Gauge and to customize its various options according to your requirements. 
 
 In the following example, OLAP Gauge is used to visualize the Revenue for Reseller over a Fiscal Year 2004 on the product category - Accessories.
 
@@ -81,11 +81,11 @@ Open Visual Studio and create a new project by clicking New Project. Select the 
 
 ### Add Control in Application
 
-1. Right click the project and select Add > New Folder.  Name the folder as olapgauge.
+1. Right-click the project and select Add > New Folder.  Name the folder as olapgauge.
 
    ![](Getting-Started_images/Getting-Started_img5.png) 
 
-2. Now right click on the olapgauge folder newly created and select Add > New Item.
+2. Now right-click on the olapgauge folder newly created and select Add > New Item.
 
    ![](Getting-Started_images/Getting-Started_img6.png) 
 
@@ -147,7 +147,7 @@ Open Visual Studio and create a new project by clicking New Project. Select the 
 
 #### Add References
 
-1. In the Solution Explorer, right click the References folder and then click Add Reference.
+1. In the Solution Explorer, right-click the References folder and then click Add Reference.
 
  ![](Getting-Started_images/Getting-Started_img11.png) 
 
@@ -191,11 +191,11 @@ Add the script files and CSS files in the head tag of the Default.aspx page.
 
 #### Create WCF Services
 
-1. Right click on the project and select Add > New Folder.  Name the folder as wcf. Let "wcf" folder name be in lower case.
+1. Right-click on the project and select Add > New Folder.  Name the folder as wcf. Let the folder name "wcf" be in lower case.
 
    ![](Getting-Started_images/Getting-Started_img14.png) 
 
-2. Now right click the wcf folder created and select Add > New Item. 
+2. Now right-click the wcf folder created and select Add > New Item. 
 
    ![](Getting-Started_images/Getting-Started_img15.png) 
 
@@ -219,7 +219,7 @@ public interface IOlapGaugeService
 
 #### Add Namespaces
 
-Add the following necessary namespaces required to implement the service methods.
+Add the following namespaces required to implement the service methods.
 
 {% highlight C# %}
 
@@ -351,8 +351,8 @@ Add the following methods to the service invoked for any server-side operations 
    {:.prettyprint }
 
 2. The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior 
-   only using this name property. In the following code sample "Sample.wcf.OlapGaugeServiceAspNetAjaxBehavior" would point the 
-   OlapGaugeService class under the namespace Sample.wcf in OlapGaugeService.svc.cs file which is the appropriate behavior for the 
+   only using this name property. In the following code example "Sample.wcf.OlapGaugeServiceAspNetAjaxBehavior" would point the 
+   OlapGaugeService class under the namespace Sample.wcf in OlapGaugeService.svc.cs file, which is the appropriate behavior for the 
    endpoint. 
 
 
