@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create an OLAP Chart in your application with ASP.NET.
+This section briefly explains how you can create an OLAP Chart in your application with ASP.NET.
 
 ## Create your first OLAP Chart in ASP.NET
 
@@ -28,7 +28,7 @@ The following screenshot shows the OLAP Chart for ASP.NET control.
 
 
 
-The architecture gives a clear idea about how the control rendering takes place at client-side and all other analytical operations on each action takes place at server-side.
+The architecture gives you a clear idea about how the control rendering takes place at client-side and all other analytical operations on each action that takes place at server-side.
 
 ### Service for OLAP Controls
 
@@ -40,11 +40,11 @@ The primary reasons for using service in an OLAP processing are as follows:
    
    ii. Online Cube (XML/A)
    
-   iii. Cube within SQL Server (locally or through remote), you can move the connectivity related coding to service-side as it is impossible at client-side other than Online Cube (XML/A) option. Using service you can connect any type of cube data source without any limitation.
+   iii. Cube within SQL Server, locally or through remote, you can move the connectivity related coding to service-side as it is impossible at client-side other than Online Cube (XML/A) option. Using service you can connect any type of cube data source without any limitation.
 
 
 
-2. Cube Schema: As the connection is moved to service side, you obviously use Microsoft__ADOMD__assembly, to get the entire cube schema. Only with the cube schema the following details are achieved for control rendering.
+2. Cube Schema: As the connection is moved to service-side, you use Microsoft__ADOMD__assembly, to get the entire cube schema. Only with the cube schema the following details are achieved for control rendering.
    
    iv. Availability of cubes.
    
@@ -54,23 +54,23 @@ The primary reasons for using service in an OLAP processing are as follows:
 
 
 
-3.  MDX Generator:  You can frame the MDX query using a  MDX generator in Syncfusion.Olap.Base assembly. To execute the framed MDX from the cube data source, you need to send framed MDX via Microsoft ADOMD assembly.The executed query is returned back in the form of cell set (contains values) that is converted to Pivot Engine and then to JSON data to render any OLAP controls.
+3.  MDX Generator:  You can frame the MDX query using a  MDX generator in Syncfusion.Olap.Base assembly. To execute the framed MDX from the cube data source, you need to send framed MDX via Microsoft ADOMD assembly.The executed query is returned back in the form of cell set, containing values converted to Pivot Engine and then to JSON data to render any OLAP controls.
 
-OLAP Report: The OlapReport class in the Syncfusion.Olap.Base assembly holds the complete information about each axes such as column, row and slicer. Using OlapReport class you can maintain the dimension element, measure element, hierarchy name, level name as well as member information that is included and excluded.
+OLAP Report: The OlapReport class in the Syncfusion.Olap.Base assembly holds the complete information about each axis such as column, row and slicer. Using OlapReport class you can maintain the dimension element, measure element, hierarchy name, level name as well as member information that is included and excluded.
 
 As the OlapControl is the key for each and every operation, initially you need to serialize the OlapReport and send to client-side in a form of string.
 
-When you perform any operation such as drill up/down, filtering, sorting etc., you need to send OlapReport from the client-side to the service in a de-serialized and updated format.
+When you perform any operation, such as drill up or down, filtering, sorting etc., you need to send OlapReport from the client-side to the service in a de-serialized and updated format.
 
 Further operations are carried with updated OlapReports only and you can send the updated OlapReport back to client-side with JSON data in a serialized format again. 
 
-This process has the OlapReport always updated. You cannot operate serialized OlapReport in client-side and hence it is carried to service having its class in Syncfusion.Olap.Base assembly to perform the update operation_._
+This process has the OlapReport always updated. You cannot operate serialized OlapReport in client-side and hence it is carried to service having its class in Syncfusion.Olap.Base assembly to perform the update operation.
 
 ### Create an application
 
-This section encompasses on how to configure the OLAP Chart component in an application. You can also learn how to pass the required data to OLAP Chart and to customize its various options according to your requirements. 
+This section describes how to configure the OLAP Chart component in an application. You can also learn how to pass the required data to OLAP Chart and to customize its various options according to your requirements. 
 
-In the following example, the OLAP Chart component displays the customer count over different fiscal years against various geographical locations. This helps you to analyze the summarized data over different fiscal years.
+In the following example, the OLAP Chart component displays the customer count over different fiscal years against various geographical locations. This helps you analyze the summarized data over different fiscal years.
 
 
 ![](Getting-Started_images/Getting-Started_img3.png) 
@@ -174,9 +174,9 @@ Add the script files and CSS files in the <head> tag of the Default.aspx page.
 
 
 1. Use the following code example while adding scripts and styles
-2. Same files can also acquire from the following location
+2. Same files can also be acquired from the following location
    C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScript\assets\
-3. Please download jquery.globalize.min.js from jQuery site to local machine and refer from the following code example.
+3. Download jquery.globalize.min.js from jQuery site to local machine and refer the following code example.
 
 {% highlight html %}
 
@@ -202,7 +202,7 @@ Add the script files and CSS files in the <head> tag of the Default.aspx page.
 
 #### Create WCF Services
 
-1. Right-click on the project and select Add>New Folder.  Name the folder as wcf. Let "wcf" folder name be in lower case.
+1. Right-click on the project and select Add>New Folder.  Name the folder as wcf. Let the folder name "wcf" be in lower case.
 2. Now right-click the wcf folder created and select Add > New Item.  In the Add New Item window, select WCF Service and name it OlapChartService.svc
 3. Click Add. 
 
@@ -232,7 +232,7 @@ public interface IOlapChartService
 
 #### Add Namespaces
 
-Add the following necessary namespaces to implement the service methods.
+Add the following namespaces required to implement the service methods.
 
 {% highlight c# %}
 
@@ -288,7 +288,7 @@ Add the following methods to the service that is invoked for any server-side ope
 
    ~~~ cs    
 
-    //This method provides the required information from the server side for initializing the OlapChart.
+    //This method provides the required information from server-side for initializing the OlapChart.
     public Dictionary<string, object> InitializeChart(string action, string customObject)
     {
         OlapDataManager DataManager = null;
@@ -298,14 +298,14 @@ Add the following methods to the service that is invoked for any server-side ope
         return htmlHelper.GetJsonData(action, DataManager);
     }
     
-    //This method provides the required information from the server side while drill up/down operation is performed in OlapChart.
+    //This method provides the required information from server-side while drill up or down operation is performed in OlapChart.
     public Dictionary<string, object> DrillChart(string action, string drilledSeries, string olapReport, string customObject)
     {
         DataManager.SetCurrentReport(Utils.DeserializeOlapReport(olapReport)); 
         dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());            
         return htmlHelper.GetJsonData(action, DataManager, drilledSeries);
     }
-    //This method export OlapChart to Excel, Word and PDF
+    //This method exports OlapChart to Excel, Word and PDF
     public void Export(System.IO.Stream stream)
     {
         System.IO.StreamReader sReader = new System.IO.StreamReader(stream);
@@ -315,7 +315,7 @@ Add the following methods to the service that is invoked for any server-side ope
         htmlHelper.ExportOlapChart(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
     }
     
-    //This method carries the information about the default report which would be rendered within OlapChart initially. 
+    //This method carries the information about the default report that is rendered within OlapChart initially. 
     private OlapReport CreateOlapReport()
     {
         OlapReport olapReport = new OlapReport();
@@ -340,11 +340,11 @@ Add the following methods to the service that is invoked for any server-side ope
 
 #### Configure Web.Config
 
-1. You can expose services through the properties such as binding, contract and address etc., using an endpoint. In your application the service name is "Sample.wcf.OlapChartService" where "OlapChartService" is the service class name and “Sample.wcf" is the namespace name where service class appears.
+1. You can expose services through the properties such as binding, contract and address etc., using an endpoint. In your application the service name is "Sample.wcf.OlapChartService" where "OlapChartService" is the service class name and “Sample.wcf" is the namespace where service class appears.
 
     The following are the properties that meet the appropriate endpoint.  
 
-    * contract: This property indicates the contract of the endpoint is exposing. Here you are referring IOlapChartService contract and hence it is "Sample.wcf.IOlapChartService".
+    * contract: This property indicates the contract of the endpoint is exposing. Here you are referring IOlapChartService contract and it is "Sample.wcf.IOlapChartService".
 
 	* binding: In your application, you use webHttpBinding to post and receive the requests and responses between the client-end and the service-end.
 
