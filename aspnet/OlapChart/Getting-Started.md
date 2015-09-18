@@ -28,7 +28,7 @@ The following screenshot shows the OLAP Chart for ASP.NET control.
 
 
 
-The architecture gives you a clear idea about how the control rendering takes place at client-side and all other analytical operations on each action that takes place at server-side.
+The architecture gives you a clear idea about how the control rendering takes place at client-side and all other analytical operations on each action that takes place server-side.
 
 ### Service for OLAP Controls
 
@@ -298,7 +298,7 @@ Add the following methods to the service that is invoked for any server-side ope
         return htmlHelper.GetJsonData(action, DataManager);
     }
     
-    //This method provides the required information from server-side while drill up or down operation is performed in OlapChart.
+    //This method provides the required information from server-side when the drill up or down operation is performed in OlapChart.
     public Dictionary<string, object> DrillChart(string action, string drilledSeries, string olapReport, string customObject)
     {
         DataManager.SetCurrentReport(Utils.DeserializeOlapReport(olapReport)); 
@@ -365,7 +365,7 @@ Add the following methods to the service that is invoked for any server-side ope
       {:.prettyprint }
 
 
-2. The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property. In the following code example "Sample.wcf.OlapChartServiceAspNetAjaxBehavior" points the OlapChartService class under the namespace .wcf in OlapChartService.svc.cs file which is the appropriate behavior for the endpoint. 
+2. The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using this name property. In the following code example "Sample.wcf.OlapChartServiceAspNetAjaxBehavior" points the OlapChartService class under the namespace .wcf in OlapChartService.svc.cs file which is the appropriate behavior for the endpoint. 
 
    ~~~ cs      
 
