@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started 
 
-This section explains briefly about how to create an OLAP Client in your application with ASP.NET.
+This section explains briefly how you can create an OLAP Client in your application with ASP.NET.
 
 ## Create your first OLAP Client in ASP.NET
 
@@ -594,7 +594,7 @@ private OlapReport CreateOlapReport()
    N> x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
 
 
-4. Register the namespace in web.config file by adding the following codes
+4. Register the namespace in web.config file by adding the following codes.
 
    ~~~ html
 
