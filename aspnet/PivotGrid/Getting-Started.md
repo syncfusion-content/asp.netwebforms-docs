@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create a PivotGrid in your application with ASP.NET.
+This section briefly explains how you can create a PivotGrid in your application with ASP.NET.
 
 ## Create your first PivotGrid in ASP.NET
 
@@ -23,7 +23,7 @@ The following screenshot displays the PivotGrid Control.
 
 ### Create an application
 
-This section encompasses on how to configure the PivotGrid component in an application.
+This section explains how you can configure the PivotGrid component in an application.
 
 You can also pass the required data to PivotGrid and customize it according to your requirements.
 
@@ -41,7 +41,7 @@ The following screenshot displays project creation wizard.
 
 ### Add Control in Application
 
-1. Right click the project and select Add > New Folder.  Name the folder as olapgrid.
+1. Right-click the project and select Add > New Folder.  Name the folder as olapgrid.
 
    ![](Getting-Started_images/Getting-Started_img4.png)
 
@@ -73,10 +73,10 @@ The following screenshot displays project creation wizard.
 
    ![](Getting-Started_images/Getting-Started_img9.png) 
 
-6. Initialize the control using below code snippet.
+6. Initialize the control using the following code example.
 
 
-   N> URL value needs to be defined in order to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately.
+   N> URL value needs to be defined inorder to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately.
 
  {% highlight html %} 
 
@@ -141,7 +141,7 @@ The following screenshot displays project creation wizard.
 
 ### Create WCF Services
 
-1. Right-click the project and select Add > New Folder. Name the folder as wcf. Let "wcf" folder name be in lower case.
+1. Right-click the project and select Add > New Folder. Name the folder as wcf. Let the folder name "wcf" be in lower case.
 
    ![](Getting-Started_images/Getting-Started_img12.png) 
 
@@ -198,7 +198,7 @@ public interface IPivotGridService
 
 ### Add Namespaces
 
-Add the following necessary namespaces required to implement the service methods.
+Add the following namespaces required to implement the service methods.
 
 {% highlight C# %}
 
@@ -254,7 +254,7 @@ You can add the following methods to the service that are invoked for any server
 
    ~~~ cs
 
-	//This method provides the required information from the server side when initializing the PivotGrid. 
+	//This method provides the required information from server-side when initializing the PivotGrid. 
     public Dictionary<string, object> InitializeGrid(string action, string gridLayout, bool enablePivotFieldList, object customObject)
     {
         OlapDataManager DataManager = null;
@@ -264,7 +264,7 @@ You can add the following methods to the service that are invoked for any server
         return htmlHelper.GetJsonData(action, DataManager, gridLayout, enablePivotFieldList);
     }
 
-	//This method provides the required information from the server side when drill up/down operation is performed in PivotGrid.
+	//This method provides the required information from server-side when drill up or down operation is performed in PivotGrid.
     public Dictionary<string, object> DrillGrid(string action, string cellPosition, string currentReport, string headerInfo, string layout, object customObject)
     {
         dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());
@@ -274,7 +274,7 @@ You can add the following methods to the service that are invoked for any server
         return htmlHelper.GetJsonData(action, connectionString, DataManager, cellPosition, headerInfo, layout);
     }
 
-	//This method provides the required information from the server side when tree node is dropped in PivotTable Field List.
+	//This method provides the required information from server-side when the tree node is dropped in PivotTable Field List.
     public Dictionary<string, object> NodeDropped(string action, string dropType, string nodeInfo, string filterParams, string currentReport)
     {
         OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -282,7 +282,7 @@ You can add the following methods to the service that are invoked for any server
         return htmlHelper.GetJsonData(action, DataManager, dropType, nodeInfo, filterParams, true);
     }
 
-	//This method provides the required information from the server side when filtering values in PivotTable Field List.
+	//This method provides the required information from server-side when filtering values in PivotTable Field List.
     public Dictionary<string, object> Filtering(string action, string filterParams, string currentReport)
     {
         OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -290,7 +290,7 @@ You can add the following methods to the service that are invoked for any server
         return htmlHelper.GetJsonData(action, DataManager, null, filterParams);
     }
 
-	//This method provides the required information from the server side when opening the editor in PivotTable Field List.
+	//This method provides the required information from server-side when opening the editor in PivotTable Field List.
     public Dictionary<string, object> FetchMembers(string action, string headerTag, string currentReport)
     {
         OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -298,7 +298,7 @@ You can add the following methods to the service that are invoked for any server
         return htmlHelper.GetJsonData(action, DataManager, null, headerTag);
     }
 
-	//This method provides the required information from the server side when paging is done in PivotGrid.
+	//This method provides the required information from server-side when paging is done in PivotGrid.
     public Dictionary<string, object> Paging(string action, string pagingInfo, string currentReport, string gridLayout, object customObject)
     {
         OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -306,7 +306,7 @@ You can add the following methods to the service that are invoked for any server
         return htmlHelper.GetJsonData(action, DataManager, gridLayout);
     }
 
-	//This method provides the required information from the server side when removing the split button from PivotTable Field List.
+	//This method provides the required information from server-side when removing the split button from PivotTable Field List.
     public Dictionary<string, object> RemoveButton(string action, string headerInfo, string currentReport)
     {
         OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -314,7 +314,7 @@ You can add the following methods to the service that are invoked for any server
         return htmlHelper.GetJsonData(action, DataManager, null, headerInfo);
     }
 
-	//This method provides the required information from the server side when expanding member in member editor.
+	//This method provides the required information from server-side when expanding member in member editor.
     public Dictionary<string, object> MemberExpanded(string action, bool     checkedStatus, string parentNode, string tag, string cubeName, string currentReport)
     {
         OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -332,7 +332,7 @@ You can add the following methods to the service that are invoked for any server
         htmlHelper.ExportPivotGrid(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
     }
 
-	//This method carries the information about the default report which when be rendered within PivotGrid initially. 
+	//This method carries the information about the default report that is rendered within PivotGrid initially. 
     private OlapReport CreateOlapReport()
     {
         OlapReport olapReport = new OlapReport();
@@ -383,7 +383,7 @@ You can add the following methods to the service that are invoked for any server
    ~~~
    {:.prettyprint }
 
-2. The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property. In the following code example "Sample.wcf.PivotGridServiceAspNetAjaxBehavior" points the PivotGridService class under the namespace Sample.wcf in PivotGridService.svc.cs file which is the appropriate behavior for the endpoint. 
+2. The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property. In the following code example "Sample.wcf.PivotGridServiceAspNetAjaxBehavior" points the PivotGridService class under the namespace Sample.wcf in PivotGridService.svc.cs file that is the appropriate behavior for the endpoint. 
 
    ~~~ html
 
@@ -458,11 +458,11 @@ The following screenshot displays the PivotGrid Control.
 
 ### Create an application
 
-This section encompasses on how to configure the PivotGrid component in an application.
+This section explains how you can configure the PivotGrid component in an application.
 
 You can also pass the required data to PivotGrid and customize it according to your requirements.
 
-This example illustrates how the PivotGrid component tabulates the sales/revenue amount over a period of fiscal years across different geographic locations. 
+This example illustrates how the PivotGrid component tabulates the sales or revenue amount over a period of fiscal years across different geographic locations. 
 
  ![](Getting-Started_images/Getting-Started_img17.png) 
 
@@ -478,13 +478,13 @@ The following screenshot displays project creation wizard
 
 ### Add Control in Application
 
-1. Right click the project and select Add > New Folder.  Name the folder as pivotgrid.
+1. Right-click the project and select Add > New Folder.  Name the folder as pivotgrid.
 
    ![](Getting-Started_images/Getting-Started_img19.png) 
 
 
 
-2. Now right-click on the pivotgrid folder that is newly created and select Add > New Item.
+2. Now right-click on the pivotgrid folder that has newly been created and select Add > New Item.
 
    ![](Getting-Started_images/Getting-Started_img20.png) 
 
@@ -513,7 +513,7 @@ The following screenshot displays project creation wizard
 
    ![](Getting-Started_images/Getting-Started_img24.png) 
 
-6. Initialize the control using below code snippet.
+6. Initialize the control using the following code example.
  
    N> URL value needs to be defined in order to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately.
 
@@ -590,7 +590,7 @@ The following screenshot displays project creation wizard
 
 ###Create WCF Services
 
-1. Right-click the project and select Add > New Folder. Name the folder as wcf. Let "wcf" folder name be in lower case.
+1. Right-click the project and select Add > New Folder. Name the folder as wcf. Let the folder name "wcf" be in lower case.
 
    ![](Getting-Started_images/Getting-Started_img27.png) 
 
@@ -645,7 +645,7 @@ public interface IPivotGridService
 
 ### Add Namespaces
 
-Add the following necessary namespaces required to implement the service methods.
+Add the following namespaces required to implement the service methods.
 
 {% highlight c# %}
 
@@ -707,7 +707,7 @@ You can add the following methods to the service that are invoked for any server
 
    ~~~ cs
 
-	//This method provides the required information from the server side when initializing the PivotGrid.
+	//This method provides the required information from server-side when initializing the PivotGrid.
     public Dictionary<string, object> InitializeGrid(string action)
     {
         htmlHelper.PivotReport = BindDefaultData();
@@ -715,7 +715,7 @@ You can add the following methods to the service that are invoked for any server
         return dict;
     }
 
-    //This method provides the required information from the server side when node state is modified in PivotTable Field List.
+    //This method provides the required information from server-side when node state is modified in PivotTable Field List.
     public Dictionary<string, object> NodeStateModified(string action, string headerTag, string dropAxis, string sortedHeaders, string filterParams, string currentReport)
     {
         htmlHelper.PopulateData(currentReport);
@@ -723,7 +723,7 @@ You can add the following methods to the service that are invoked for any server
         return dict;
     }
 
-    //This method provides the required information from the server side when tree node is dropped in PivotTable Field List.
+    //This method provides the required information from server-side when tree node is dropped in PivotTable Field List.
     public Dictionary<string, object> NodeDropped(string action, string dropAxis, string headerTag, string sortedHeaders, string filterParams, string currentReport)
     {
         htmlHelper.PopulateData(currentReport);
@@ -731,7 +731,7 @@ You can add the following methods to the service that are invoked for any server
         return dict;
     }
 
-    //This method provides the required information from the server side when filtering values in PivotTable Field List.
+    //This method provides the required information from server-side when filtering values in PivotTable Field List.
     public Dictionary<string, object> Filtering(string action, string filterParams, string sortedHeaders, string currentReport)
     {
         htmlHelper.PopulateData(currentReport);
@@ -739,7 +739,7 @@ You can add the following methods to the service that are invoked for any server
         return dict;
     }
 
-    //This method provides the required information from the server side when opening the editor in PivotTable Field List.
+    //This method provides the required information from server-side when opening the editor in PivotTable Field List.
     public Dictionary<string, object> FetchMembers(string action, string headerTag, string sortedHeaders, string currentReport)
     {
         htmlHelper.PopulateData(currentReport);
@@ -747,7 +747,7 @@ You can add the following methods to the service that are invoked for any server
         return dict;
      }
 
-    //This method provides the required information from the server side when sorting values in PivotTable Field List.
+    //This method provides the required information from server-side when sorting values in PivotTable Field List.
     public Dictionary < string, object> Sorting(string action, string sortedHeaders, string currentReport) 
     {
        htmlHelper.PopulateData(currentReport);
@@ -870,7 +870,7 @@ You can add the following methods to the service that are invoked for any server
 
 1. You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "Sample.wcf.PivotGridService" where "PivotGridService" is the service class name and “Sample.wcf" is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.  
    
-   i) contract: This property indicates the contract of the endpoint is exposing. Here you are referring IPivotGridService contract and hence it is "Sample.wcf.IPivotGridService".
+   i) contract: This property indicates the contract of the endpoint is exposing. Here you are referring IPivotGridService contract and it is "Sample.wcf.IPivotGridService".
    
    ii) binding: In your application, you use webHttpBinding to post and receive the requests and responses between the client-end and the service-end.
    
