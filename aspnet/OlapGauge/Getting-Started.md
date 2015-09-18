@@ -41,7 +41,7 @@ The primary reasons for using service in an OLAP processing are:
    
    iii) Cube within SQL Server, locally or through remote, you can move the connectivity related coding to service-side as it is impossible at client-side other than Online Cube (XML/A) option. Using service, you can connect any type of cube data source without any limitation.
 
-2. Cube Schema: As the connection is moved to service side, you obviously use MicrosoftADOMDassembly, to get the entire cube schema. Only with the cube schema the following details are achieved for control rendering.
+2. Cube Schema: As the connection is moved to server-side, you obviously use MicrosoftADOMDassembly, to get the entire cube schema. Only with the cube schema the following details are achieved for control rendering.
    
    i) Availability of cubes.
    
@@ -53,7 +53,7 @@ The primary reasons for using service in an OLAP processing are:
 
 4. OLAP Report: The OlapReport class in the Syncfusion.Olap.Base holds the complete information of each axes such as column, row and slicer. Using OlapReport class, you can maintain the dimension element, measure element, hierarchy name, level name as well as the member information that is included and excluded.  
 
-   As the OlapControl is the key for each and every operation, initially you need to serialize the OlapReport and send to client-side in a form of string.
+   As the OlapControl is the key for each and every operation, initially you need to serialize the OlapReport and send to client-side in the form of a string.
 
    When you perform any operation such as drill up or down, filtering, sorting etc., you are required to send OlapReport from the client-side to the service in a de-serialized and updated format.
 
@@ -169,7 +169,7 @@ Add the script files and CSS files in the head tag of the Default.aspx page.
 
 
 1. Follow the given order while adding scripts and styles.
-2. Apart from cdn files rest of them can be acquired from the following location.
+2. Apart from the cdn files, the rest of them can be acquired from the following location.
  C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScript\assets\
 
 
@@ -274,7 +274,7 @@ Add the following methods to the service invoked for any server-side operations 
 
    ~~~ cs
 
-    //This method provides the required information from the server side for initializing the OlapGauge.
+    //This method provides the required information from server-side for initializing the OlapGauge.
 	public Dictionary<string, object> InitializeGauge(string action,string customObject)
     {
         OlapDataManager DataManager = null;
@@ -284,7 +284,7 @@ Add the following methods to the service invoked for any server-side operations 
         return htmlHelper.GetJsonData(action, DataManager);
      }                
 
-     //This method carries the information about the default report which would be rendered within OlapGauge initially. 
+     //This method carries the information about the default report to be rendered within OlapGauge initially. 
      private OlapReport CreateOlapReport()
      {
         OlapReport report = new OlapReport();
@@ -327,7 +327,7 @@ Add the following methods to the service invoked for any server-side operations 
 
 #### Configuring Web.Config
 
-1. You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "Sample.wcf.OlapGaugeService" where "OlapGaugeService" is the service class name and “Sample.wcf" is the namespace name where service class appears.The following are the properties are that meet the appropriate endpoint.  
+1. You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "Sample.wcf.OlapGaugeService" where "OlapGaugeService" is the service class name and “Sample.wcf" is the namespace where service class appears.The following are the properties that meet the appropriate endpoint.  
 
    contract: This property indicates the contract of the endpoint is exposing. Here you are referring IOlapGaugeService contract and hence it is "Sample.wcf.IOlapGaugeService".
 
