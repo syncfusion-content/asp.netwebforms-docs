@@ -48,10 +48,6 @@ ej.gridresize.min.js</td><td>
 Need to refer when using the resizing feature in grid.</td></tr>
 <tr>
 <td>
-ej.unobtrusive.min.js</td><td>
-Should be referred when the UnobtrusiveJavaScriptEnabled is set as true in web.config file.</td></tr>
-<tr>
-<td>
 ej.dropdownlist.min.js</td><td rowspan = "8">
   These files are used while enable Editing and Filtering feature in grid.</td></tr>
 <tr>
