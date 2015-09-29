@@ -11,9 +11,9 @@ documentation: ug
 
 
 
-In this section, we will see how to change the background color of a row. The **rowDataBound** event is triggered every time an access is made to any of the row/record inside the grid.
+In this section, you can learn how to change the background color of a row. The **rowDataBound** event is triggered every time an access is made to any of the row/record inside the grid.
 
-So based on the value in the record, we can set the background color of the row accordingly.
+So based on the value in the record, you can set the background color of the row accordingly.
 
 {% highlight html %}
 
