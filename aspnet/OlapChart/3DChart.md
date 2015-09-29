@@ -9,7 +9,7 @@ documentation: ug
 
 # 3D
 
-The OlapChart control provides three dimensional view for Bar, Column, StackingBar, StackingColumn and Pie Charts. The representation of data in 3D Chart is very clear and easy to understand when compared to 2D Chart. Three dimensions of the series are seen by rotating them. To enable this functionality, we need to set `enable3D` property to "true".
+The OlapChart control provides three dimensional view for Bar, Column, StackingBar, StackingColumn and Pie Charts. The representation of data in 3D Chart is very clear and easy to understand when compared to 2D Chart. You can see all the three dimensions of the series by rotating them. To enable this functionality, you need to set `enable3D` property to "true".
 
 The following code example explains on how to enable 3D in the Olapchart control.
 
