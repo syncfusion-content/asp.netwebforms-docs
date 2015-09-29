@@ -11,15 +11,15 @@ documentation: ug
 
 
 
-In this section, we will see in detail about the various server side events available in **ASP Grid control** and the arguments that are obtained on the server side. 
+This section explains in detail about the various server-side events available in the **ASP Grid control** and the arguments that are obtained on the server side. 
 
-The **sender** parameter of all the server side events returns the grid model details. The **Syncfusion.JavaScript.Web.GridEventArgs** arguments provide information specific to this event.
+The **sender** parameter of all the server-side events returns the grid model details. The **Syncfusion.JavaScript.Web.GridEventArgs** arguments provide information specific to this event.
 
-The various server side events and the arguments corresponding to the events are as follows:
+The various server-side events and the arguments corresponding to the events are as follows:
 
 ### OnServerAddRow
 
-The **OnServerAddRow** event is triggered upon saving the added record to the grid. The details of the added record can be obtained at the server side which is explained in the below table.
+The **OnServerAddRow** event is triggered upon saving the added record to the grid. The details of the added record can be obtained at the server-side which is explained in the following table.
 
 _Table 5: Syncfusion.JavaScript.Web.GridEventArgs arguments of OnServerAddRow event_
 
@@ -31,7 +31,7 @@ Description</td></tr>
 <tr>
 <td>
 data</td><td>
-It has the JSON data newly added to the grid</td></tr>
+It consits of the JSON data newly added to the grid</td></tr>
 <tr>
 <td>
 action</td><td>
@@ -180,7 +180,7 @@ public partial class _Default : System.Web.UI.Page
 	
 ### OnServerBatchEditRow
 
-The **OnServerBatchEditRow** event is triggered upon saving the batch changes to the grid when the EditMode is “Batch”. The batch changes details can be obtained at the server side which is explained in the below table.
+The **OnServerBatchEditRow** event is triggered upon saving the batch changes to the grid when the EditMode is set to “Batch”. The batch changes details can be obtained at the server-side which is explained in the following table.
 
 _Table 8: Syncfusion.JavaScript.Web.GridEventArgs arguments of OnServerBatchEditRow event_
 
@@ -192,7 +192,7 @@ Description</td></tr>
 <tr>
 <td>
 batchChanges</td><td>
-It has the details of the added, modified and deleted record</td></tr>
+It contains the details of the added, modified and deleted record</td></tr>
 </table>
 
 {% highlight html %}
@@ -337,7 +337,7 @@ public partial class _Default : System.Web.UI.Page
     
    ### OnServerDeleteRow
 
-The **OnServerDeleteRow** event is triggered upon deleting a record from grid. The details of the deleted record can be obtained at the server side which is explained in the below table.
+The **OnServerDeleteRow** event is triggered upon deleting a record from the grid. The details of the deleted record can be obtained from the server-side which is explained in the following table.
 
 _Table 7: Syncfusion.JavaScript.Web.GridEventArgs arguments of OnServerDeleteRow event_
 
@@ -498,7 +498,7 @@ public partial class _Default : System.Web.UI.Page
     
   ### OnServerEditRow
 
-The **OnServerEditRow** event is triggered upon saving the edited record to grid. The details of the edited record can be obtained at the server side which is explained in the below table.
+The **OnServerEditRow** event is triggered upon saving the edited record to the grid. The details of the edited record can be obtained from the server-side which is explained in the following table.
 
 _Table 6: Syncfusion.JavaScript.Web.GridEventArgs arguments of OnServerEditRow event_
 
@@ -659,7 +659,7 @@ public partial class _Default : System.Web.UI.Page
     
   ### OnServerRecordClick
 
-The **OnServerRecordClick** event is triggered when a record is clicked. The selected record details and the selected record index is obtained at the server side.
+The **OnServerRecordClick** event is triggered when a record is clicked. The selected record details and the selected record index is obtained from the server-side.
 
 _Table 2: Syncfusion.JavaScript.Web.GridEventArgs arguments of OnServerRecordClick event_
 
@@ -675,7 +675,7 @@ It indicates the index of the selected record</td></tr>
 <tr>
 <td>
 data</td><td>
-It has the JSON data of the selected record.</td></tr>
+It contains the JSON data of the selected record.</td></tr>
 </table>
 
 {% highlight html %}
@@ -820,7 +820,7 @@ public partial class _Default : System.Web.UI.Page
     
     ### OnServerRecordDoubleClick
 
-The **OnServerRecordDoubleClick** event is triggered when any grid record is double clicked. The details of the record double clicked can be obtained at the server side which is explained in the below table.
+The **OnServerRecordDoubleClick** event is triggered when any grid record is double clicked. The details of the record double clicked can be obtained from the server-side which is explained in the following table.
 
 _Table 3: Syncfusion.JavaScript.Web.GridEventArgs arguments of OnServerRecordDoubleClick event_
 
@@ -836,7 +836,7 @@ It indicates the index of the selected record</td></tr>
 <tr>
 <td>
 data</td><td>
-It has the JSON data of the double clicked record.</td></tr>
+It consists of the JSON data of the double clicked record.</td></tr>
 </table>
 
 {% highlight html %}
@@ -981,7 +981,7 @@ public partial class _Default : System.Web.UI.Page
     
   ### OnServerRowSelected
 
-The **OnServerRowSelected** event is triggered when any of the row is selected. The details of the row selected is obtained at server side in the event argument.
+The **OnServerRowSelected** event is triggered when any of the row is selected. The details of the row selected is obtained from the server-side in the event argument.
 
 _Table 1: Syncfusion.JavaScript.Web.GridEventArgs arguments of OnServerRowSelected event_
 
@@ -997,7 +997,7 @@ It indicates the index of the selected record</td></tr>
 <tr>
 <td>
 data</td><td>
-It has the JSON data of the selected record.</td></tr>
+It consists of the JSON data of the selected record.</td></tr>
 <tr>
 <td>
 prevRowIndex</td><td>
@@ -1146,7 +1146,7 @@ public partial class _Default : System.Web.UI.Page
     
    ### OnServerToolBarClick
 
-The **OnServerToolBarClick** event is triggered when any of the toolbar icon is clicked. The details of the icon clicked can be obtained at the server side which is explained in the below table.
+The **OnServerToolBarClick** event is triggered when any of the toolbar icon is clicked. The details of the icon clicked can be obtained from the server-side which is explained in the following table.
 
 _Table 4: Syncfusion.JavaScript.Web.GridEventArgs arguments of OnServerToolBarClick event_
 
@@ -1158,11 +1158,11 @@ Description</td></tr>
 <tr>
 <td>
 itemName</td><td>
-It indicates current toolbar item’s name.</td></tr>
+It indicates the current toolbar item’s name.</td></tr>
 <tr>
 <td>
 itemId</td><td>
-It indicates current toolbar id.</td></tr>
+It indicates the current toolbar id.</td></tr>
 <tr>
 <td>
 itemIndex</td><td>
@@ -1178,11 +1178,11 @@ It returns the grid model in dictionary format.</td></tr>
 <tr>
 <td>
 itemTarget</td><td>
-It returns the html element of target item.</td></tr>
+It returns the html element of the target item.</td></tr>
 <tr>
 <td>
 toolbarData</td><td>
-It returns the toolbar model in dictionary format.</td></tr>
+It returns the toolbar model in a dictionary format.</td></tr>
 </table>
 
 {% highlight html %}
@@ -1327,7 +1327,7 @@ public partial class _Default : System.Web.UI.Page
     
   ### OnServerExcelExporting
 
-The **OnServerExcelExporting** event is triggered when a request to Export the grid to excel file is made. The grid model details can be obtained at the server side which is explained in the below table.
+The **OnServerExcelExporting** event is triggered when a request is made to Export the grid to excel file. The grid model details can be obtained from the server-side which is explained in the following table.
 
 _Table 9: Syncfusion.JavaScript.Web.GridEventArgs argument of OnServerExcelExporting event_
 
@@ -1486,7 +1486,7 @@ public partial class _Default : System.Web.UI.Page
     
   ### OnServerExcelQueryCellInfo
 
-The **OnServerExcelQueryCellInfo** event is triggered every time a data is written to the cell of the Excel sheet. So this event is triggered as many times as that of the cell written to the excel sheet. The properties corresponding to the XlsIO IRange Class will be obtained at the server side which is explained in the below table.
+The **OnServerExcelQueryCellInfo** event is triggered every time a data is entered into a cell of the Excel sheet. So this event is triggered as many times as the data is entered into a cell written of the excel sheet. The properties corresponding to the XlsIO IRange Class are obtained from the server-side which is explained in the following table.
 
 _Table 10: Argument of OnServerExcelQueryCellInfo event_
 
@@ -1659,7 +1659,7 @@ public partial class _Default : System.Web.UI.Page
     
   ### OnServerExcelRowInfo
 
-The **OnServerExcelRowInfo** event is triggered every time a row is appended to the excel sheet. The properties corresponding to the XlsIO IRange Class will be obtained at the server side which is explained in the below table.
+The **OnServerExcelRowInfo** event is triggered every time a row is appended to the excel sheet. The properties corresponding to the XlsIO IRange Class are obtained from the server-side which is explained in the following table.
 
 _Table 11: Argument of OnServerExcelRowInfo event_
 
