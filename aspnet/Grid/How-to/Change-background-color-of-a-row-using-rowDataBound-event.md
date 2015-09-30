@@ -2,8 +2,8 @@
 layout: post
 title: Change-background-color-of-a-row-using-rowDataBound-event
 description: change background color of a row using rowdatabound event
-platform: js
-control: Control Name undefined
+platform: aspnet
+control: Grid
 documentation: ug
 ---
 
