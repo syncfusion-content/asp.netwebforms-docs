@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display-format
+title: Display format | DateTimePicker | ASP.NET Webforms | Syncfusion
 description: display format
 platform: aspnet
 control: DateTimePicker

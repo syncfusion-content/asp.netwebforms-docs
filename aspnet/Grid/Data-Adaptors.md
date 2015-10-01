@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Adaptors
+title: Data Adaptors | Grid | ASP.NET Webforms | Syncfusion
 description: data adaptors
 platform: aspnet
 control: Grid
@@ -59,6 +59,8 @@ The following screenshot is the result of the above code example.
 
 Cache Adaptor is a technique used to cache multiple page data by using the property EnableCaching. You can provide the number of pages that is required to cache in single request using CachingPageSize property. It enables you to reduce multiple request to server. You can use any type of adaptor with multiple page caching by using cache adaptor. The following code illustrates how to create cache adaptor and use it with grid.
 
+{% tabs %}
+
 
 {% highlight html %}
 
@@ -108,6 +110,8 @@ public partial class CachingAdaptor : System.Web.UI.Page
     }
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 The following screenshot is the result of the above code example.
 

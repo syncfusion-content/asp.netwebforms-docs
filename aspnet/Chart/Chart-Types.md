@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart-Types
+title: Chart Types | Chart | ASP.NET Webforms | Syncfusion
 description: chart types
 platform: aspnet
 control: Chart
@@ -434,6 +434,7 @@ Spline Area Chart is similar to an Area Chart except the difference in the way t
 
 
 {% endhighlight %}
+
 ## StackingArea Chart
 
 Stacking Area Charts are similar to regular area Charts except that the Y values stack on top of each other in the specified series order. This enables you to visualize the relationship of parts to the whole. You can customize the series color and border using Fill and Border properties in series.

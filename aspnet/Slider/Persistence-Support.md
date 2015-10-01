@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Persistence-Support
+title: Persistence Support | Slider | ASP.NET | Syncfusion
 description: persistence support
 platform: aspnet
 control: Slider
@@ -15,13 +15,7 @@ In an ASPX page, define the Slider control and set the EnablePersistence propert
 
 {% highlight html %}
 
-
-
 <ej:Slider ID="BasicSlider" runat="server" Height="20" Width="500" EnablePersistence="true"></ej:Slider>
-
-
-
-
 
 {% endhighlight %}
 

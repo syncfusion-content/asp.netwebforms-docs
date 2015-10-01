@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Data-binding
+title: Data binding | ListBox | ASP.NET Webforms | Syncfusion
 description: data-binding 
 platform: aspnet
-control: Control Name undefined
+control: ListBox
 documentation: ug
 ---
 
@@ -176,7 +176,7 @@ The following steps explain you the details of data binding from remote.
 
 In an ASPX page, add an element to configure ListBox.
 
-
+{% tabs %}
 
 {% highlight c# %}
 
@@ -207,7 +207,7 @@ listboxsample.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/";
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 Output of the above steps.
 

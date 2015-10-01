@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User-Interaction
+title: User Interaction | BulletGraph	 | ASP.NET Webforms | Syncfusion
 description: user interaction
 platform: aspnet
 control: BulletGraph	
@@ -12,6 +12,7 @@ documentation: ug
 ## Animation
 
 Bullet Graph supports animation that makes the performance measure bar to animate when rendering the Bullet Graph. Animation is enabled or disabled using EnableAnimation property. By default, Animation is enabled in Bullet Graph. 
+
 {% highlight html %}
 
         <ej:BulletGraph ID="BulletGraph1" EnableAnimation="true" Width="600px" Height="120px" runat="server">                        
@@ -19,6 +20,7 @@ Bullet Graph supports animation that makes the performance measure bar to animat
 
         </ej:BulletGraph>
 {% endhighlight  %}
+
 ## Responsiveness during browser resize
 
 Bullet Graph is made responsive when resizing the browser by using EnableResizing property. By default the value of this property is true in Bullet Graph. 
@@ -30,6 +32,7 @@ Bullet Graph is made responsive when resizing the browser by using EnableResizin
 
         </ej:BulletGraph>
 {% endhighlight %}
+
 ## Applying same color to all ticks and labels in a range
 
 Background color for qualitative range is applied to major ticks and minor ticks of the Bullet Graph using ApplyRangeStrokeToTicks property. The range colors are applied to labels using ApplyRangeStrokeToLabels property. By default same colors are not applied to a qualitative range and its corresponding ticks or labels. 

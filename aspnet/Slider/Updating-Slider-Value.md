@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Updating-Slider-Value
+title: Updating Slider Value | Slider | ASP.NET | Syncfusion
 description: updating slider value
 platform: aspnet
 control: Slider
@@ -23,19 +23,9 @@ In an ASPX page, define the Slider control and configure the Value and Values pr
 
 {% highlight html %}
 
-
-
 <ej:Slider ID="BasicSlider" runat="server" Width="500" Value="50" SliderType="Default"></ej:Slider> 
 
-
-
-
-
 <ej:Slider ID="RangeSlider" runat="server" Width="500" Values="20,80" SliderType="Range"></ej:Slider>
-
-
-
-
 
 {% endhighlight %}
 
@@ -69,17 +59,9 @@ In an ASPX page, define the Slider control and configure the MinValue and MaxVal
 
 {% highlight html %}
 
-
-
 <ej:Slider ID="BasicSlider" runat="server" Width="500" Value="60" MinValue="40" MaxValue="80"></ej:Slider>
 
-
-
- <ej:Slider ID="RangeSlider" runat="server" Width="500" Values="10,90" MinValue="10"MaxValue="90" SliderType="Range"></ej:Slider>
-
-
-
-
+<ej:Slider ID="RangeSlider" runat="server" Width="500" Values="10,90" MinValue="10"MaxValue="90" SliderType="Range"></ej:Slider>
 
 {% endhighlight %}
 

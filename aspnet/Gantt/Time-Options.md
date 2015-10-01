@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Time-Options
+title: Time Options | Gantt | ASP.NET Webforms | Syncfusion
 description: time options
 platform: aspnet
 control: Gantt
@@ -37,7 +37,7 @@ Use the following code example for setting different time scales of working hour
 
 Use the following code example for including time options in start date and end date of a task.
 
-
+{% tabs %}
 
 {% highlight c# %}
 
@@ -276,7 +276,7 @@ namespace ASP_Doc.Gantt
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 Execute the above code to render the following output.
 
@@ -284,5 +284,6 @@ Execute the above code to render the following output.
 
 ![](Time-Options_images/Time-Options_img1.png)
 
-_Figure : Gantt with Time Options_
+Gantt with Time Options
+{:.caption}
 

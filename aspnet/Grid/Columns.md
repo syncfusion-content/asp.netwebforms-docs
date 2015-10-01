@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Columns
+title: Columns | Grid | ASP.NET Webforms | Syncfusion
 description: columns
 platform: aspnet
 control: Grid
@@ -15,6 +15,7 @@ Colums are a key feature in Grid to define schema in a control based on datasour
 
 Formatting is used to convert data values to human readable formats using specific culture settings. In Grid, you have an option to format a particular column through the Format property. For more details about globalize.js, refer to the link ([https://github.com/jquery/globalize](https://github.com/jquery/globalize)). The following code example shows you how to use formatting in Grid.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -128,7 +129,7 @@ Formatting is used to convert data values to human readable formats using specif
 
 {% endhighlight  %}
 
-
+{% endtabs %}
 
 The following is the result of column formatting.
 
@@ -141,6 +142,9 @@ The following is the result of column formatting.
 ## Template
 
 A Template is used to render a specific template to a particular column using Template and TemplateID property. These columns are not bound to Grid.
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -285,7 +289,7 @@ A Template is used to render a specific template to a particular column using Te
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 The following output is displayed as a result of the above code example.
 
@@ -298,6 +302,9 @@ The following output is displayed as a result of the above code example.
 ## Custom Attribute
 
 Custom attribute is a powerful feature of Columns. This is used to modify the styles and appearance of a particular column. Using CustomAttribute property of Columns to achieve custom attribute feature.
+
+{% tabs %}
+
 {% highlight css %}
 
 
@@ -349,6 +356,8 @@ Custom attribute is a powerful feature of Columns. This is used to modify the st
 
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 
 The following output is displayed as a result of the above code example.
@@ -453,6 +462,9 @@ The following output is displayed as a result of the above code example.
 ## Auto-generate column
 
 The columns are automatically generated from the datasource and you do not need specific column declarations. The following code example shows auto-generate column behavior with Grid.
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -496,6 +508,8 @@ namespace WebSampleBrowser.Grid
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 The following output is displayed as a result of the above code example.
 
 
@@ -507,6 +521,9 @@ The following output is displayed as a result of the above code example.
 ## Foreign key columns
 
 Foreign key is a field in relational table. It matches the specific key columns of another table. Foreign key column feature can be achived using ForeignKeyField and FoeriegnKeyValue property of Columns.
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -696,7 +713,7 @@ ForeignKeyValue="FirstName" TextAlign="Left" Width="90" />
 
 {% endhighlight  %}
 
-
+{% endtabs %}
 
 The following output is displayed as a result of the above code example.
 
@@ -709,6 +726,9 @@ The following output is displayed as a result of the above code example.
 ## Cell Merging
 
 Cell merging feature enables to merge cells based on your requirement. The following code example illustrates Cell Merging. Using AllowCellMerging propertyand MergeCellInfo event to achieve cell merging feature.
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -882,6 +902,8 @@ this.ShipName = ShipName;
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 Execute the above code to render the following output.
 
 
@@ -893,6 +915,9 @@ Execute the above code to render the following output.
 ## AutoWrap Column Cells
 
 AutoWrap feature allows you to wrap cell content to next line when the content exceeds the boundary of the Column cells. Use the following code example for Auto wrap in column cells. AtutoWrap feature was enabled by setting AutoTextWrap property as true.
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -1038,6 +1063,9 @@ namespace WebSampleBrowser.Grid
 
 
 {% endhighlight %}
+
+{% endtabs %}
+
 Execute the above code to render the following output.
 
 ![C:/Users/ApoorvahR/Desktop/1.png](Columns_images/Columns_img9.png)
@@ -1047,6 +1075,9 @@ Execute the above code to render the following output.
 ## Column Chooser
 
 Column Chooser is used to view or hide particular column. To enable column chooser set ShowColumnChooser property as true. Use the following code example to enable column Chooser.
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -1181,6 +1212,8 @@ public partial class ColumnChooser : System.Web.UI.Page
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 Execute the above code to render the following output.
 
 ![](Columns_images/Columns_img10.png)
@@ -1194,6 +1227,9 @@ Execute the above code to render the following output.
 DisableHtmlEncode property helps you show the encoded HTML view of Grid content and header elements. 
 
 The following code example shows you how to set DisableHtmlEncode:
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -1338,6 +1374,7 @@ namespace WebSampleBrowser.Grid
 }
 {% endhighlight  %}
 
+{% endtabs %}
 
 The following output is displayed as a result of the above code example.
 

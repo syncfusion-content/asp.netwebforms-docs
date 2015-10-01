@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dependency-files
+title: Dependency files | NavigationDrawer | ASP.NET Webforms | Syncfusion
 description: dependency files
 platform: aspnet
 control: Navigation Drawer
@@ -11,7 +11,7 @@ documentation: ug
 
 This section deals with the dependency files for Navigation Drawer control. The file ej.web.all.min.js is a mass collection of Web Controls. When this file is used, you can skip this section. Otherwise, refer to the following script files to render the Navigation Drawer control.
 
-_List of Script files_
+List of Script files
 
 <table>
 <tr>

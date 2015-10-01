@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ajax-Content-Load-Load-on-Demand
+title: Ajax Content Load Load on Demand | Tab | ASP.NET | Syncfusion
 description: ajax content load (load on demand)
 platform: aspnet
 control: Tab
@@ -90,6 +90,7 @@ Add the following ASPX to render sub Tab with Ajax content.
     </Items>
 
 </ej:Tab>
+
 {% endhighlight %}
 
 The file cornSpinach.html content is as follows. 

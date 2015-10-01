@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-started
+title: Getting started | Schedule | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: Schedule
@@ -20,12 +20,13 @@ The following screen shot displays the Schedule control with daily important act
 ![](Getting-started_images/Getting-started_img1.png)
 
 
-Figure 34 : Schedule control with daily important activities
+Schedule control with daily important activities
+{:.caption }
 
 ##Creating a Schedule
 
 1. ASP.NET Schedule widget basically renders with flexible API’s. You can easily create the Schedule widget by using the following code sample.
-2. First create an ASP.NET Project and add necessary dll’s and scripts with the help of the given [ASP-Getting Started](http://docs.syncfusion.com/js) Documentation.
+2. First create an ASP.NET Project and add necessary dll’s and scripts with the help of the given [ASP-Getting Started](http://docs.syncfusion.com/aspnetmvc/schedule/getting-started) Documentation.
 3. Add the following code example to the corresponding designer page for Schedule rendering.
 
 
@@ -34,14 +35,14 @@ Figure 34 : Schedule control with daily important activities
 		<ej:Schedule ID="schedule1" runat="server"></ej:Schedule>
 
    ~~~
-   {:.prettyprint }
 
 4. On executing the above code example an empty Scheduler is displayed without appointments. In Order, to display the appointments in the Schedule you need to pass data to it.
 
 
    ![](Getting-started_images/Getting-started_img2.png)
 
-Figure 35 : Empty Schedule control
+Empty Schedule control
+{:.caption }
 
 ### Passing data to Schedule control
 
@@ -74,7 +75,8 @@ The following screen shot displays a Schedule control with the appointments in a
 
 ![](Getting-started_images/Getting-started_img3.png)
 
-Figure 36 : Schedule control with the appointments in a normal style
+Schedule control with the appointments in a normal style
+{:.caption }
 
 * You can also customize the appointments within the Scheduler using the template support discussed in the following sections.
 
@@ -190,7 +192,8 @@ For example : $system drive: \Program Files\ Syncfusion\EssentialStudio\12.1.0.4
 
 ![](Getting-started_images/Getting-started_img4.png)
 
-Figure 37 : Scheduler with customized appointments
+Scheduler with customized appointments
+{:.caption }
 
 ##Change the Schedule View
 
@@ -312,13 +315,14 @@ break;
 ![C:/Users/maheshp/Desktop/s5.PNG](Getting-started_images/Getting-started_img5.png)
 
 
-Figure 38 : Scheduler with fixed appointment height in Month view
+Scheduler with fixed appointment height in Month view
+{:.caption }
 
 ##Change the appointment height through CSS
 
 * The default height of an appointment is always suitable for the text.  In order to display an image and text in the appointment, you can change the height of the appointments in a “Month” view, through css styles manually as illustrated in the following code example. You can set the appointment height to auto to display the images within it.
 
-
+{% tabs %}
 
 {% highlight css %}
 
@@ -450,6 +454,8 @@ break;
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * After you set the height for appointments in “Month" view, the Schedule control is rendered as follows.
 
 
@@ -457,7 +463,8 @@ break;
 ![](Getting-started_images/Getting-started_img6.png)
 
 
-Figure 39 : Customized Schedule
+Customized Schedule
+{:.caption }
 
 ## Manipulate the Appointments
 
@@ -477,7 +484,8 @@ The following screen shot displays an appointment window pop- up that appears wh
 ![](Getting-started_images/Getting-started_img7.png)
 
 
-Figure 40 : Schedule with appointment window pop- up
+Schedule with appointment window pop-up
+{:.caption }
 
 The following screen shots illustrates a quick appointment pop-up window.
 
@@ -485,7 +493,8 @@ The following screen shots illustrates a quick appointment pop-up window.
 ![](Getting-started_images/Getting-started_img8.png)
 
 
-Figure 41 : Schedule with quick appointment pop-up window
+Schedule with quick appointment pop-up window
+{:.caption }
 
 {% highlight text %}
 
@@ -504,14 +513,16 @@ Important: Incase, you need to manipulate with newly created or edited appointme
 ![](Getting-started_images/Getting-started_img9.png)
 
 
-Figure 42 : Schedule with appointment edit pop up
+Schedule with appointment edit pop-up
+{:.caption }
 
 * To delete an appointment, click the appointment, and then click delete icon in the quick appointment pop-up as illustrated in the following screen shot.
 
 ![](Getting-started_images/Getting-started_img10.png)
 
 
-Figure 43 : Schedule with delete appointment pop up
+Schedule with delete appointment pop-up
+{:.caption }
 
 * You can also delete the required appointment in the schedule control using the delete key option. This works only when you set “AllowKeyboardNavigation” option to “True”.
 
@@ -523,19 +534,22 @@ Figure 43 : Schedule with delete appointment pop up
 
 ![](Getting-started_images/Getting-started_img11.png)
 
-Figure 44 : Appointment pop up with Repeat option
+Appointment pop up with Repeat option
+{:.caption }
 
 * When you check the repeat option, the sub-options available in the recurrence category are displayed in the appointment pop-up as follows.
 
 ![](Getting-started_images/Getting-started_img12.png)
 
-Figure 45 : Appointment pop up with sub options of Repeat
+Appointment pop up with sub options of Repeat
+{:.caption }
 
 * You can choose the required recurrence pattern from the available options and then click Done.The main appointment pop-up appears as illustrated in the following screen shot.
 
 ![](Getting-started_images/Getting-started_img13.png)
 
-Figure 46: Main appointment pop up
+Main appointment pop up
+{:.caption }
 
 
 
@@ -546,7 +560,8 @@ Figure 46: Main appointment pop up
 ![C:/Users/maheshp/Desktop/n2.PNG](Getting-started_images/Getting-started_img14.png)
 
 
-Figure 47 : Recurrence appointment with daily pattern
+Recurrence appointment with daily pattern
+{:.caption }
 
 * You can store the chosen recurrence options usually in a RecurrenceRule field in a string format.  Also, the Recurrence field indicates whether the appointments created are normal or recurrence type. You can create appointments in a recurrence type by setting Boolean type to True.
 
@@ -568,13 +583,16 @@ Figure 47 : Recurrence appointment with daily pattern
 ![C:/Users/maheshp/Desktop/n3.PNG](Getting-started_images/Getting-started_img15.png)
 
 
-Figure 48: Schedule with Edit repeat appointment pop up
+Schedule with Edit repeat appointment pop up
+{:.caption }
 
 * When you click the recurrence appointment, a quick appointment window opens with the following options: “Edit Appointment”, “Edit Series” and “delete” icon for deleting the appointments.
 
 
 ![](Getting-started_images/Getting-started_img16.png)
-Figure 49: Schedule with quick appointment pop up
+
+Schedule with quick appointment pop up
+{:.caption }
 
 ## Behaviour Customization using the events
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis
+title: Axis | Chart | ASP.NET Webforms | Syncfusion
 description: axis
 platform: aspnet
 control: Chart
@@ -19,6 +19,8 @@ Chart Axis supports the following types:
 * Logarithmic
 
 You can choose any of the Chart axis type using the” ValueType” property in axis. Axis calculates the range and interval automatically based on the series data points.
+
+
 {% highlight html %}
 
 
@@ -154,6 +156,9 @@ The DateTime Axis has a property IntervalType that sets the DateTime interval to
 * Years
 
 The Interval property of DateTime Axis can be any double value based on the IntervalType.
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -253,6 +258,8 @@ The Interval property of DateTime Axis can be any double value based on the Inte
 
 {% endhighlight %}
 
+{% endtabs %}
+
 
 ![](Axis_images/Axis_img6.png)
 
@@ -301,6 +308,9 @@ The following screenshot illustrates a Chart’s x-axis with RangePadding set to
 ## Category Axis
 
 Category (x) axis displays text labels instead of numerical intervals. By default, the interval is 1 for which all the labels are displayed. To display every nth label, you can set that in Interval property. For example, to display every 2nd label, you can set Interval as 2
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -352,6 +362,8 @@ Category (x) axis displays text labels instead of numerical intervals. By defaul
 
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 
 ![](Axis_images/Axis_img10.png) 
@@ -418,7 +430,7 @@ An axis displaying a logarithmic scale is very useful when your data values span
 
 ### Chart Axis Properties:
 
-_Table1_: _Chart Axis Properties Table_
+Chart Axis Properties Table
 
 <table>
 <tr>

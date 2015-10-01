@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | DigitalGauge | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: Digital Gauge
@@ -16,7 +16,8 @@ documentation: ug
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
 
-_Figure 16: Digital Thermometer_
+Digital Thermometer
+{:.caption} 
 
 
 ## Creating a Digital Gauge
@@ -38,7 +39,8 @@ Run the above code example and you will get a default Digital Gauge as follows.
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
-_Figure 17: Digital gauge_
+Digital gauge
+{:.caption} 
 
 ## Set Height and Width values
 
@@ -63,7 +65,8 @@ Run the above code example and you will see a default gauge with the specified h
 
  ![](Getting-Started_images/Getting-Started_img3.png)
  
-_Figure 18: Digital gauge with height and width_
+Digital gauge with height and width
+{:.caption} 
 
 ## Set Items Property
 
@@ -75,6 +78,7 @@ Items have different properties to customize the Digital Gauge.
 
 * In the welcome board, the text color is attentive in nature. You are required to give some segment properties such as segment spacing, segment width, segment color, segment length and segment opacity.
 * Character type is used to define the Digital representation of the character. The five types of character representation available are,
+  
   1. EightCrossEightDotMatrix
   2. SevenSegment
   3. FourteenSegment
@@ -109,7 +113,8 @@ Execute this code to render a gauge as follows.
 
 ![](Getting-Started_images/Getting-Started_img4.png)
 
-_Figure 19: Digital gauge segment properties_
+Digital gauge segment properties
+{:.caption} 
 
 
 
@@ -183,7 +188,8 @@ Execute this code to render a gauge as follows.
 ![](Getting-Started_images/Getting-Started_img5.png)
 
 
-_Figure 20: Digital gauge Background image_
+Digital gauge Background image
+{:.caption} 
 
 
 
@@ -229,7 +235,8 @@ Execute this code to render a Gauge as follows.
 ![](Getting-Started_images/Getting-Started_img6.png)
 
 
-_Figure 21: Digiatl gauge with segment location_
+Digiatl gauge with segment location
+{:.caption} 
 
 
 
@@ -322,5 +329,6 @@ Execute this code to render a Digital thermometer as follows.
 
 ![](Getting-Started_images/Getting-Started_img7.png)
 
-_Figure 22: Digiatla gauge with item collection_
+Digiatal gauge with item collection
+{:.caption} 
 

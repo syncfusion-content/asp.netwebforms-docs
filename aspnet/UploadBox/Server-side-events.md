@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server-side-events
+title: Server side events | UploadBox | ASP.NET | Syncfusion
 description: server side events
 platform: aspnet
 control: UploadBox

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Labels
+title: Labels | LinearGauge | ASP.NET Webforms | Syncfusion
 description: labels
 platform: aspnet
 control: Linear Gauge

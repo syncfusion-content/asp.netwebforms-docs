@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | RichTextEditor | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: RichTextEditor
@@ -81,6 +81,8 @@ Sometimes, an existing toolbar item is not necessary to perform the required ope
 
 For example, consider ‘create table’ toolbar item is not necessary for the Feedback scenario. You can easily remove the ‘create table’ toolbar item by using the following code example.
 
+{% tabs %}
+
 {% highlight html %}
 
 <ej:RTE ID="FeedbackEditor" runat="server">
@@ -107,6 +109,7 @@ For example, consider ‘create table’ toolbar item is not necessary for the F
 
 {% endhighlight %}
 
+{% endtabs %}
 
 The following screenshot displays ‘create table’ toolbar item is removed from the toolbar list.
 
@@ -196,6 +199,8 @@ During the Feedback sending time, you can validate whether the content area is e
 
 You can specify the custom tool same as previous section with validation operations.
 
+{% tabs %}
+
 {% highlight html %}
 
 <div class="commentSection">
@@ -260,7 +265,7 @@ You can specify the custom tool same as previous section with validation operati
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 You can add the following styles to achieve the Feedback form editor application.
 

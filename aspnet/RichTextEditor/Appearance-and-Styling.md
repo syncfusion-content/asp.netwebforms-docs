@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Appearance and Styling | RichTextEditor | ASP.NET Webforms | Syncfusion
 description: appearance and styling
 platform: aspnet
 control: RichTextEditor
@@ -51,7 +51,8 @@ Add the following code in your ASPX page to initialize the RTE with gradient-azu
 
 
 
-_Showcase of RTE with Gradient-azure-dark theme_
+Showcase of RTE with Gradient-azure-dark theme
+{:.caption} 
 
 ## CSS Class
 
@@ -158,8 +159,6 @@ Add the following styles in your styles section. Here the RTE toolbar background
 
 
 Server side events
-
-
 
 <table>
 <tr>

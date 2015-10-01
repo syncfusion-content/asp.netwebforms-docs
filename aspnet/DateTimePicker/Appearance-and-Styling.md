@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Appearance and Styling | DateTimePicker | ASP.NET Webforms | Syncfusion
 description: appearance and styling
 platform: aspnet
 control: DateTimePicker
@@ -51,13 +51,7 @@ Add the following code in your ASPX page to render the DateTimePicker.
 
 {% highlight html %}
 
-
-
 <ej:DateTimePicker ID="DateTime" CssClass="Purple-dark" runat="server"> </ej:DateTimePicker>
-
-
-
-
 
 {% endhighlight %}
 
@@ -66,8 +60,6 @@ Add the following code in your ASPX page to render the DateTimePicker.
 Add the following code in your style section. In the following CSS style, exiting theme style over-rides by using root class Purple-dark. 
 
 {% highlight css %}
-
-
 
 .Purple-dark .e-week-header {
 

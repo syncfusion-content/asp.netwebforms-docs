@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | CurrencyTextBox | ASP.NET Webforms | Syncfusion
 description: overview
 platform: aspnet
 control: Currency TextBox

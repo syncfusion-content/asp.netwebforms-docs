@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization
+title: Localization | OLAPClient | ASP.NET Webforms | Syncfusion
 description: localization 
 platform: aspnet
 control: OLAP Client

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Print-Grid
+title: Print Grid | Grid | ASP.NET Webforms | Syncfusion
 description: print grid
 platform: aspnet
 control: Grid
@@ -11,6 +11,7 @@ documentation: ug
 
 Printing is easy with Grid control by using Print Grid feature. Toolbar has the Print icon, it allows to print the Grid records. When you click the Print icon, it internally calls the public print() method of Grid object to print the Grid. You can also use print() method manually to print.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -137,6 +138,8 @@ public partial class PrintGrid : System.Web.UI.Page
 
 
 {% endhighlight %}
+
+{% endtabs %}
 The following output is displayed as a result of the above code example.
 
 ![](Print-Grid_images/Print-Grid_img1.png)

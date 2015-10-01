@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sub-Gauges
+title: Sub Gauges | CircularGauge | ASP.NET Webforms | Syncfusion
 description: sub gauges
 platform: aspnet
 control: Circular Gauge
@@ -131,10 +131,6 @@ Execute the above code to render the following output.
 You can set multiple sub gauges in a single Circular Gauge by adding an array of sub gauge objects. Refer the following code example for multiple sub gauges functionality.
 
 {% highlight html %}
-
-
-
-
 
 <%--For Circular Gauge rendering-- %>
 

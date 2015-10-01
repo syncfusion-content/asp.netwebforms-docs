@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Installation-and-Deployment
+title: Installation and Deployment | PDF | ASP.NET | Syncfusion
 description: installation and deployment
 platform: aspnet
-control: PDF
+control: pdf
 documentation: ug
 ---
 
@@ -21,16 +21,9 @@ The prerequisites details are listed as follows:
 
 <table>
 <tr>
-<td>
-.NET Framework versions</td><td>
-<ul>
-<li>.NET 4.5.1</li>
-<li>.NET 4.5</li>
-<li>.NET 4.0</li>
-<li>.NET 3.5 SP1</li>
-<li>.NET 2.0</li>
-</ul>
-</td></tr>
+<th>
+.NET Framework versions</th><td>
+<ul><li> .NET 4.5.1 </li><li>.NET 4.5</li><li> .NET 4.0</li><li> .NET 3.5 SP1</li><li> .NET 2.0</li></ul></td></tr>
 </table>
 
 ### Compatibility
@@ -43,18 +36,8 @@ The prerequisites details are listed as follows:
 <tr>
 <td>
 Operating Systems</td><td>
-<ul>
-<li>Windows 8.1 (32 bit and 64 bit)</li>
-<li>Windows 8 (32 bit and 64 bit)</li>
-<li>Windows Server 2008 (32 bit and 64 bit)</li>
-<li>Windows 7 (32 bit and 64 bit)</li>
-<li>Windows Vista (32 bit and 64 bit)</li>
-<li>Windows XP</li>
-<li>Windows 2003</li>
-</ul>
-</td></tr>
+<ul><li> Windows 8.1 (32 bit and 64 bit)</li><li>Windows 8 (32 bit and 64 bit)</li><li> Windows Server 2008 (32 bit and 64 bit)</li><li>Windows 7 (32 bit and 64 bit)</li><li> Windows Vista (32 bit and 64 bit)</li><li>Windows XP</li><li>Windows 2003</li></ul></td></tr>
 </table>
-
 
 ## Deploy Essential PDF
 
@@ -97,7 +80,7 @@ ASP.NET MVC – PDF (Partial-Trust) – MVC
 * Syncfusion.Compression.Base.dll
 * Syncfusion.Pdf.MVC.dll
 
-### Referencing Syncfusion.Pdf.Base from a .Net project
+#### Referencing Syncfusion.Pdf.Base from a .Net project
 
 
 To use a component in your application, you need to add a reference to it
@@ -106,6 +89,6 @@ To use a component in your application, you need to add a reference to it
 
 2. Add the following assemblies as references in the application.
 
-	* Syncfusion.Core.dll
-	* Syncfusion.Compression.Base.dll
-	* Syncfusion.Pdf.Base.dll
+* Syncfusion.Core.dll
+* Syncfusion.Compression.Base.dll
+* Syncfusion.Pdf.Base.dll

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Server-Side-Events
+title: Server Side Events | Toggle Button | ASP.NET | Syncfusion
 description: server side events
 platform: aspnet
-control: Toggle Button
+control: ToggleButton
 documentation: ug
 ---
 
@@ -45,17 +45,17 @@ The code Define ToggleButton Prevent Change server side event in behind.
 
 {% highlight c# %}
 
-    protected void ToggleButton_Prevent_Change(object Sender, Syncfusion.JavaScript.Web.ToggleButtonEventArgs e)
+protected void ToggleButton_Prevent_Change(object Sender, Syncfusion.JavaScript.Web.ToggleButtonEventArgs e)
 
-    {
+{
 
-        //e.Status – Status of the ToggleButton
+	//e.Status – Status of the ToggleButton
 
-        //e.EventType – Event Name
+	//e.EventType – Event Name
 
-        //e.IsChecked – Checked Status of the Togglebutton
+	//e.IsChecked – Checked Status of the Togglebutton
 
-        //e.Argument – Contain keys and values for Status
-    }
+	//e.Argument – Contain keys and values for Status
+}
 	
 {% endhighlight %}

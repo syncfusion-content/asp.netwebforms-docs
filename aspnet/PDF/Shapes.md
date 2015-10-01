@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Shapes
+title: Shapes | PDF | ASP.NET | Syncfusion
 description: shapes
 platform: aspnet
-control: PDF
+control: pdf
 documentation: ug
 ---
 
@@ -32,17 +32,18 @@ Each set of methods accepts parameters specific to each primitive type (for exam
 * If pen is used, the primitive are drawn 
 * If brush is used, the primitive are filled. 
 
-
-N> You must add the Syncfusion.Pdf.Graphics namespace to work with graphic objects.
+ N> You must add the Syncfusion.Pdf.Graphics namespace to work with graphic objects.
 
 
 The following code example illustrates how to draw shapes.
 
 
 
-{% highlight c# %}
+
+{% tabs %}
 
 
+{% highlight C# %}
 
 //Creates a document.
 
@@ -78,10 +79,9 @@ page.Graphics.DrawPolygon(pen, PdfBrushes.Green, points);
 
 doc.Save("Shapes.pdf");
 
-{% endhighlight  %}
+{% endhighlight %}
 
-{% highlight vbnet %}
-
+{% highlight VB %}
 
 'Creates a document.
 
@@ -117,13 +117,15 @@ page.Graphics.DrawPolygon(pen, PdfBrushes.Green, points)
 
 doc.Save("Shapes.pdf")
 
-{% endhighlight  %}
-
+{% endhighlight %}
+{% endtabs %}  
 You can paginate the element as follows.
 
-{% highlight c# %}
+
+{% tabs %}
 
 
+{% highlight C# %}
 
 //Creates a document.
 
@@ -159,10 +161,11 @@ ellipse.Draw(page, 20, 20, format);
 
 doc.Save("Shapes.pdf");
 
-{% endhighlight  %}
+{% endhighlight %}
 
-{% highlight vbnet %}
 
+
+{% highlight VB %}
 
 'Creates a Document.
 
@@ -198,4 +201,5 @@ ellipse.Draw(page, 20, 20, format)
 
 doc.Save("Shapes.pdf")
 
-{% endhighlight  %}
+{% endhighlight %}
+{% endtabs %}  

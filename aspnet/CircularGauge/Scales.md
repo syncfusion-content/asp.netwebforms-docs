@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scales
+title: Scales | CircularGauge | ASP.NET Webforms | Syncfusion
 description: scales
 platform: aspnet
 control: Circular Gauge
@@ -47,10 +47,6 @@ Scale collection is directly added to the Gauge object. Refer the following code
 Execute the above code to render the following output.
 
  ![](Scales_images/Scales_img1.png)
-
-
-
-
 
 ## Scale Customization
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resources
+title: Resources | Gantt | ASP.NET Webforms | Syncfusion
 description: resources
 platform: aspnet
 control: Gantt
@@ -17,11 +17,7 @@ Step 2:  Then, specify the field name for id and name of the resource in the Re
 
 Step 3: The name of the field, which contains the actual resources assigned for a particular task in the DataSource is specified using ResourceInfoMapping.
 
-
-
-
-
-
+{% tabs %}
 
 {% highlight c# %}
 
@@ -95,7 +91,7 @@ public class Resource
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 The following screenshot shows Gantt control with Resources.
 
@@ -103,5 +99,6 @@ The following screenshot shows Gantt control with Resources.
 
 ![](Resources_images/Resources_img1.png) 
 
-_Figure : Resources_
+Resources
+{:.caption}
 

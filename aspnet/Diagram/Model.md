@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Model
+title: Model | Diagram | ASP.NET Webforms | Syncfusion
 description: model
 platform: aspnet
 control: Diagram
@@ -12,6 +12,8 @@ documentation: ug
 The Diagram model represents data for rendering the Diagram and manipulating the Diagram elements.
 
 The following code illustrates how to create a Diagram with some model properties.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -67,9 +69,10 @@ The following code illustrates how to create a Diagram with some model propertie
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 ![](Model_images/Model_img1.png) 
 
-_Model_
+Model
+{:.caption} 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dates-in-Other-Month
+title: Dates in Other Month | DatePicker | ASP.NET Webforms | Syncfusion
 description: dates in other month
 platform: aspnet
 control: DatePicker

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Keyboard-interaction
+title: Keyboard interaction | ListBox | ASP.NET Webforms | Syncfusion
 description: keyboard interaction
 platform: aspnet
-control: Control Name undefined
+control: ListBox
 documentation: ug
 ---
 
@@ -56,7 +56,7 @@ The following steps explain you to enable keyboard interaction for a ListBox.
 
 In an ASPX page, add an elementto configure ListBox widget and enable keyboard interaction by setting the accesskey property.
 
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -162,7 +162,7 @@ $(function () {
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 Run the sample, press Alt + J to focus in the ListBox widget that enables it and you can navigate by using arrow keys.
 

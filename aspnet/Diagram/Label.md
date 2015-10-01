@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Label
+title: Label | Diagram | ASP.NET Webforms | Syncfusion
 description: label
 platform: aspnet
 control: Diagram
@@ -43,7 +43,8 @@ connector.Labels.Add(label);
 
 ![](Label_images/Label_img1.png) 
 
-_Label_
+Label
+{:.caption} 
 
 ## Displacement
 
@@ -75,7 +76,8 @@ connector.Constraints = ConnectorConstraints.Default| ConnectorConstraints.DragL
 
 ![](Label_images/Label_img2.png)
 
-_Label Dragging_
+Label Dragging
+{:.caption} 
 
 
 
@@ -119,7 +121,8 @@ Node node = new Node()
 
 ![](Label_images/Label_img3.png) 
 
-_Label Displacement through margin_
+Label Displacement through margin
+{:.caption} 
 
 ## Label Rotation
 
@@ -147,7 +150,8 @@ label.RotateAngle = 45;
 
  ![](Label_images/Label_img4.png) 
 
-_Rotated Label_
+Rotated Label
+{:.caption} 
 
 
 N> No built-in support is added to rotate labels interactively.
@@ -192,7 +196,8 @@ label.TextDecoration = TextDecorations.LineThrough;
 
 ![](Label_images/Label_img6.png) 
 
-_Customized Label_
+Customized Label
+{:.caption} 
 
 ## Label Editing
 
@@ -222,7 +227,8 @@ label.Mode = LabelEditMode.View;
 
 ![](Label_images/Label_img7.png) 
 
-_Label Mode_
+Label Mode
+{:.caption} 
 
 ## Read-only Label
 
@@ -244,7 +250,7 @@ label.ReadOnly = true;
 
 You can align the Label by using its alignment properties.
 
-_Label Alignment_
+Label Alignment
 
 <table>
 <tr>
@@ -297,7 +303,7 @@ label.Align = TextAlign.Left;
 
 {% endhighlight %}
 
-_Alignment_
+Alignment
 
 <table>
 <tr>
@@ -330,11 +336,13 @@ Bottom</td><td>
 
 ![](Label_images/Label_img11.png)
  
-_Left align_
+Left align
+{:.caption} 
 
 ![](Label_images/Label_img12.png) 
 
-_Label Alignment_
+Label Alignment
+{:.caption} 
 
 ### Text Wrapping
 
@@ -356,9 +364,10 @@ label.Wrapping = WrapText.Wrap;
 
  ![](Label_images/Label_img13.png) 
 
-_Text Wrapping_
+Text Wrapping
+{:.caption} 
 
-_Text Wrapping_
+Text Wrapping
 
 <table>
 <tr>
@@ -451,5 +460,6 @@ node.Labels.Add(label);
 
 ![](Label_images/Label_img17.png) 
 
-_Multiple Label and Alignment_
+Multiple Label and Alignment
+{:.caption} 
 

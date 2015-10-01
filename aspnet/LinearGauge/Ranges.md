@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ranges
+title: Ranges | LinearGauge | ASP.NET Webforms | Syncfusion
 description: ranges 
 platform: aspnet
 control: Linear Gauge

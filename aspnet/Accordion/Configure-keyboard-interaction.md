@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configure-keyboard-interaction
+title: Configure keyboard interaction | Accordion | ASP.NET Webforms | Syncfusion
 description: configure keyboard interaction
 platform: aspnet
 control: Accordion 
@@ -13,9 +13,9 @@ The following steps explains you on how to enable keyboard interaction for an Ac
 
 In an ASPX page, define the Accordion control and add the contents correspondingly.
 
+{% tabs %}
+
 {% highlight html %}
-
-
 
 <div style="width: 400px;">
 
@@ -88,6 +88,8 @@ In an ASPX page, define the Accordion control and add the contents correspondi
 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 
 

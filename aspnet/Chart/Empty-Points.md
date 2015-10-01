@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Empty-Points
+title: Empty Points | Chart | ASP.NET Webforms | Syncfusion
 description: empty points
 platform: aspnet
 control: Chart

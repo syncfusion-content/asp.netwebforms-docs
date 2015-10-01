@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard-Interaction
+title: Keyboard Interaction | NumericTextbox | ASP.NET Webforms | Syncfusion
 description: keyboard interaction
 platform: aspnet
 control: NumericTextbox

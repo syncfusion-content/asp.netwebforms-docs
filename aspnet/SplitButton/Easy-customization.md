@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Easy-customization
+title: Easy customization | SplitButton | ASP.NET | Syncfusion
 description: easy customization
 platform: aspnet
-control: Split Button
+control: SplitButton
 documentation: ug
 ---
 
@@ -24,8 +24,6 @@ In an ASPX page, define the Split Button control and add the contents for the Sp
 <ej:SplitButton ID="SplitButton_Text" runat="server" Text="login" ShowRoundedCorner="true" Size="Small" ContentType="TextAndImage" PrefixIcon="e-login e-uiLight">
 
         <Items>
-
-
 
             <ej:SplitItem Text="User"></ej:SplitItem>
 
@@ -483,8 +481,6 @@ In an ASPX page, define the Split Button control. Set the different image positi
 
 <br />
 
-
-
 <table>
 
         <tr>
@@ -566,8 +562,6 @@ In an ASPX page, define the Split Button control. Set the different image positi
 </table>
 
 <br />
-
-
 
 <table>
 

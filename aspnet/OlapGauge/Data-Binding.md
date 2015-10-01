@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding
+title: Data Binding | OLAPGauge | ASP.NET Webforms | Syncfusion
 description: data binding
 platform: aspnet
 control: OLAP Gauge

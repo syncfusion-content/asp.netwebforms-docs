@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart-Dimensions
+title: Chart Dimensions | Chart | ASP.NET Webforms | Syncfusion
 description: chart dimensions
 platform: aspnet
 control: Chart

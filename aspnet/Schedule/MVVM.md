@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MVVM
+title: MVVM | Schedule | ASP.NET Webforms | Syncfusion
 description: mvvm
 platform: aspnet
 control: Schedule
@@ -9,13 +9,13 @@ documentation: ug
 
 # MVVM
 
-##Angular JS
+## Angular JS
 
 * Schedule contains angular support. You can add object as well as array object in the Schedule.
 * The two way binding support is given to the currentView, currentDate and datasource properties. 
 * ej-Schedule is the control tag in which ej is tag prefix and Schedule is the control name.
 
-###Rendering the Schedule
+### Rendering the Schedule
 
 You can render the Schedule by using the following code example. Object in the array collection such as appointmentSetting, contextMenuSettings, etc. are extended with hyphen in the same tag.
 
@@ -65,7 +65,7 @@ e-currentdate="setDate" e-contextMenuSettings-enable="true">
 
 {% endhighlight %}
 
-###Adding Context menu settings
+### Adding Context menu settings
 
 * Context menu is an object type that has inner array object. 
 * contextMenuSettings contains an object called menuItem.
@@ -126,7 +126,7 @@ e-id="recurrence" e-text="Create recurrence Appointment">
 
 {% endhighlight %}
 
-###Adding Categorize option
+### Adding Categorize option
 
 * Categorizeoption is an array object. 
 * contextMenuSettings contains an object called menuItem.
@@ -216,7 +216,7 @@ Execute the above codes to render the Resultant schedule as follows.
 ![](MVVM_images/MVVM_img1.png)
 
 
-##Two Way Binding 
+## Two Way Binding 
 
 * Schedule control supports two way binding for the property currentView , currentDate and datasource as mentioned earlier. 
 * [Click here](http://asp.syncfusion.com/demos/web/schedule/angular.aspx) to see how Angular JS works with schedule.
@@ -373,16 +373,20 @@ Execute the above code to render the following output.
 ![](MVVM_images/MVVM_img2.png)
 
 
-##Knockout binding
+## Knockout binding
 
 * Knockoutsupport allows you to bind the html elements against the available data models.Two types of knockoutbinding are supported,
-1. one-way binding
-2. two-way binding
+
+  1. one-way binding
+  2. two-way binding
+
 * One way binding refers to the process of applying observable values to all the available properties of the Schedule control. The changes made in Schedule control is not reflected and triggered in turn to the observable collection. This kind of binding applies to all the properties of the Schedule control.
 * Two-way binding supports both the processes – it applies the observable values to the Schedule properties along with the changes made in the Schedule control is reflected back and triggered within the observable collections. Only few Schedule properties support two-way binding and they are as follows.
-1. currentView
-2. currentDate
-3. dataSource (within appointmentSettings object)
+
+  1. currentView
+  2. currentDate
+  3. dataSource (within appointmentSettings object)
+
 * Apply the plugin and property assigning to the Schedule element through the directive that starts with a letter “e-“. The following example depicts the way to bind data to the Schedule control through the knockoutsupport.
 * [Click here](http://asp.syncfusion.com/demos/web/schedule/knockout.aspx) to see how Knockout binding works with schedule.
 
@@ -535,5 +539,6 @@ Output of the above code example is as follows.
 
 ![](MVVM_images/MVVM_img3.png)
 
-Figure 134: Schedule with Knockout Binding
+Schedule with Knockout Binding
+{:.caption} 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resize
+title: Resize | Ribbon | ASP.NET Webforms | Syncfusion
 description: resize 
 platform: aspnet
 control: Ribbon
@@ -9,7 +9,7 @@ documentation: ug
 
 # Resize 
 
-_Ribbon control_ supports resizing functionality .To enable resizing in the ribbon, you need to set the _AllowResizing_ property to _true_. When you resize the ribbon window, the _Ribbon control_ automatically resizes to fit into the layout panel. 
+Ribbon control supports resizing functionality .To enable resizing in the ribbon, you need to set the AllowResizing property to true. When you resize the ribbon window, the Ribbon control automatically resizes to fit into the layout panel. 
 
 
 
@@ -144,7 +144,7 @@ _Ribbon control_ supports resizing functionality .To enable resizing in the ribb
 
 
 
-The following screenshot displays _Ribbon control_ without resizing the window.
+The following screenshot displays Ribbon control without resizing the window.
 
 
 
@@ -163,7 +163,7 @@ The following screenshot displays _Ribbon control_ without resizing the window.
 
 
 
-When you resize the window, the ribbon groups are converted  into _group button_ based on the window width.When you click the group button, the corresponding group items are displayed .The following screenshot displays the _Ribbon_ control when  clicking the group button _Actions_
+When you resize the window, the ribbon groups are converted  into group button based on the window width.When you click the group button, the corresponding group items are displayed .The following screenshot displays the Ribbon control when  clicking the group button Actions
 
 ![](Resize_images/Resize_img2.png)
 

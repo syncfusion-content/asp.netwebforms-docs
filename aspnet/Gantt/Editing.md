@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editing
+title: Editing | Gantt | ASP.NET Webforms | Syncfusion
 description: editing
 platform: aspnet
 control: Gantt
@@ -48,7 +48,8 @@ The output of Gantt with CellEditing is as follows.
 
 ![](Editing_images/Editing_img1.png)
 
-_Figure : Gantt with cellEdit_
+Gantt with cellEdit
+{:.caption}
 
 ## Normal Editing
 
@@ -78,7 +79,8 @@ The following screenshot shows the output of normal editing.
 
 ![C:/Users/pongeetha/Desktop/NormalEditing.png](Editing_images/Editing_img2.png)
 
-_Figure : Normal Editing_
+Normal Editing
+{:.caption}
 
 ## Taskbar Editing
 
@@ -136,5 +138,6 @@ The following screen shot shows the predecessor editing in Gantt control.
 
 
 
-_Figure : Predecessor Editing_
+Predecessor Editing
+{:.caption}
 

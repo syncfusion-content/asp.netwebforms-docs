@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adjusting-Dropdown-size
+title: Adjusting Dropdown size | DropDownList | ASP.NET Webforms | Syncfusion
 description: adjusting dropdown size
 platform: aspnet
 control: DropDownList

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Automatic-Layout
+title: Automatic Layout | Diagram | ASP.NET Webforms | Syncfusion
 description: automatic layout
 platform: aspnet
 control: Diagram
@@ -21,6 +21,8 @@ Diagram automatically provides support to layout nodes. It includes the followin
 The Hierarchical Tree Layout arranges nodes in a tree-like structure, where the nodes in the hierarchical layout may have multiple parents. There is no need to specify the layout root.
 
 The following code illustrates how to arrange the nodes in a hierarchical structure.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -98,6 +100,8 @@ function nodeTemplate(diagram, node) {
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### Spacing
 
 The following example illustrates the horizontal and vertical spacing of the Hierarchical Layout.
@@ -106,7 +110,8 @@ The following example illustrates the horizontal and vertical spacing of the Hie
 
 ![](Automatic-Layout_images/Automatic-Layout_img1.png) 
 
-_Hierarchical Layout_
+Hierarchical Layout
+{:.caption} 
 
 ### Orientation
 
@@ -123,7 +128,8 @@ The following image displays Bottom to Top orientation of layout.
 
 ![](Automatic-Layout_images/Automatic-Layout_img2.png) 
 
-_BottomToTop_
+BottomToTop
+{:.caption} 
 
 ## Organizational Chart
 
@@ -132,6 +138,8 @@ An organizational chart is a Diagram that displays the structure of an organizat
 ### How to create a basic organizational chart
 
 The following code example illustrates how to create an organizational chart.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -245,11 +253,12 @@ Diagram.model.DataSourceSettings.Parent = "Supervisor";
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 ![](Automatic-Layout_images/Automatic-Layout_img3.png) 
 
-_Organizational chart_
+Organizational chart
+{:.caption} 
 
 ### Customizing the organizational chart
 
@@ -268,6 +277,8 @@ The getLayoutInfo method is called to configure every subtree of the organizatio
 3. Options (object to set the customizable properties)
 
 The following code example illustrates how to define the method getLayoutInfo.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -303,11 +314,11 @@ Diagram.model.Layout.GetLayoutInfo = "getLayoutInfo";
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 The following table illustrates the properties that options argument takes.
 
-_Properties of argument "option"_
+Properties of argument "option"
 
 <table>
 <tr>
@@ -363,7 +374,7 @@ Diagram provides the following orientation options.
 
 The following table illustrates the different chart orientations and chart types.
 
-_Chart orientations and Chart types_
+Chart orientations and Chart types
 
 <table>
 <tr>
@@ -441,7 +452,8 @@ function getLayoutInfo(diagram, node, options) {
 
 ![](Automatic-Layout_images/Automatic-Layout_img10.png)
 
-_Horizontal left arranged leaf level trees_
+Horizontal left arranged leaf level trees
+{:.caption} 
 
 ### Assistant Support
 
@@ -483,5 +495,6 @@ function getLayoutInfo(diagram, node, options) {
 
 ![](Automatic-Layout_images/Automatic-Layout_img11.png) 
 
-_Vertical left arrangement with assistant_
+Vertical left arrangement with assistant
+{:.caption} 
 

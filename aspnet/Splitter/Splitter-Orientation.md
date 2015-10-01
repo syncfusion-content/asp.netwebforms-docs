@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Splitter-Orientation
+title: Splitter Orientation | Splitter | ASP.NET | Syncfusion
 description: splitter orientation
 platform: aspnet
 control: Splitter
@@ -19,8 +19,6 @@ In an ASPX page, define the Splitter control and add the contents correspondingl
 
 {% highlight html %}
 
-
-
 <ej:Splitter ID="splitter" Height="280" Width="400" Orientation="Vertical" runat="server">
 
            <ej:SplitPane>
@@ -29,7 +27,7 @@ In an ASPX page, define the Splitter control and add the contents correspondingl
 
                 <div style="padding: 10px 0 0 10px; text-align: center;">Pane 1</div>
 
-            </div>
+             </div>
 
            </ej:SplitPane>
 
@@ -44,8 +42,6 @@ In an ASPX page, define the Splitter control and add the contents correspondingl
           </ej:SplitPane>
 
 </ej:Splitter>
-
-
 
 {% endhighlight %}
 

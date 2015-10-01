@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Behavior-Settings
+title: Behavior Settings | PercentageTextBox | ASP.NET | Syncfusion
 description: behavior settings
 platform: aspnet
 control: PercentageTextBox
@@ -48,7 +48,7 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 The output for PercentageTextbox with EnablePersistencebefore page load and after page load is as follows.
 
-![C:/Users/apoorvah.ramanathan/Desktop/1.png](Behavior-Settings_images/Behavior-Settings_img2.png) 
+![](Behavior-Settings_images/Behavior-Settings_img2.png) 
 
 
 
@@ -101,11 +101,13 @@ The output for PercentageTextbox when Enabled is “true” and Enabled is “fa
 
 ![](Behavior-Settings_images/Behavior-Settings_img5.png)   
 
-  _PercentageTextbox with enabled as true_	
+PercentageTextbox with enabled as true
+{:.caption}
 
 ![](Behavior-Settings_images/Behavior-Settings_img4.png) 
 
-  _PercentageTextbox with enabled as false_
+PercentageTextbox with enabled as false
+{:.caption}
 
 ## Adjusting Textbox Size
 
@@ -117,11 +119,7 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 {% highlight html %}
 
-
-
 <ej:PercentageTextBox ID="percentage"  Width="100" Height="20" runat="server"> </ej:PercentageTextBox>
-
-
 
 {% endhighlight %}
 
@@ -143,11 +141,7 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 {% highlight html %}
 
-
-
 <ej:PercentageTextBox ID="percentage"  IncrementStep="3" runat="server"> </ej:PercentageTextBox>
-
-
 
 {% endhighlight %}
 
@@ -158,12 +152,14 @@ The output for PercentageTextbox with IncrementStep.
 
 ![](Behavior-Settings_images/Behavior-Settings_img7.png)    
 
-_PercentageTextbox at initial load_                         
+PercentageTextbox at initial load
+{:.caption}
 
               
 ![](Behavior-Settings_images/Behavior-Settings_img8.png)		
 
-_PercentageTextbox after increasing one step_	  
+PercentageTextbox after increasing one step
+{:.caption}
 
 ## Define Name
 
@@ -175,11 +171,7 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 {% highlight html %}
 
-
-
 <ej:PercentageTextBox ID="percentage"  Name="percentage" runat="server"> </ej:PercentageTextBox>
-
-
 
 {% endhighlight %}
 
@@ -201,11 +193,7 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 {% highlight html %}
 
-
-
 <ej:PercentageTextBox ID="percentage"  Value="21" runat="server"> </ej:PercentageTextBox>
-
-
 
 {% endhighlight %}
 
@@ -245,17 +233,19 @@ The output for PercentageTextbox with basic properties.
 
 ![](Behavior-Settings_images/Behavior-Settings_img11.png) 
 
-  _PercentageTextbox with Value_
+PercentageTextbox with Value
+{:.caption}
 
 ![](Behavior-Settings_images/Behavior-Settings_img12.png)
 
- _PercentageTextbox with MaxValue_
-
+PercentageTextbox with MaxValue
+{:.caption}
                      	            
 
 ![](Behavior-Settings_images/Behavior-Settings_img13.png) 
 
- _PercentageTextbox with MinValue_
+PercentageTextbox with MinValue
+{:.caption}
 
 ## Read Only Support
 

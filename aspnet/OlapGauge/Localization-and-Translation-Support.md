@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization-and-Translation-Support
+title: Localization and Translation Support | OLAPGauge | ASP.NET Webforms | Syncfusion
 description: localization and translation support
 platform: aspnet
 control: OLAP Gauge

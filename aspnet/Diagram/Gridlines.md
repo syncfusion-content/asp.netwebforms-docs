@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gridlines
+title: Gridlines | Diagram | ASP.NET Webforms | Syncfusion
 description: gridlines
 platform: aspnet
 control: Diagram
@@ -13,13 +13,14 @@ Gridlines are horizontal and vertical lines behind the Diagram elements. They pr
 
 ![](Gridlines_images/Gridlines_img1.png) 
 
-_Gridlines_
+Gridlines
+{:.caption} 
 
 ## SnapConstraints
 
 The Diagram model’s SnapSettings.SnapContraints property is used to control snap to grid behavior and visibility of gridlines. 
 
-_SnapConstraints_
+SnapConstraints
 
 <table>
 <tr>
@@ -87,7 +88,7 @@ Diagram1.SnapSettings.SnapConstraints = SnapConstraints.None;
 
 You can customize the Appearance of the gridlines by using following properties.
 
-_Appearance_
+Appearance
 
 <table>
 <tr>
@@ -159,5 +160,6 @@ diagram.Model.SnapSettings.HorizontalGridlines.Strokes.LineDashArray = "2 2";
 
 ![](Gridlines_images/Gridlines_img2.png) 
 
-_Customized Gridlines_
+Customized Gridlines
+{:.caption} 
 

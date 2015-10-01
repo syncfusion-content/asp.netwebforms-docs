@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RTL
+title: RTL | TimePicker | ASP.NET | Syncfusion
 description: rtl
 platform: aspnet
 control: TimePicker
@@ -17,19 +17,14 @@ In the ASPX page, include the following TimePicker control and configure the Ena
 
 {% highlight html %}
 
-
-
 <ej:TimePicker ID="time" EnableRTL="true" runat="server"></ej:TimePicker>
-
-
 
 {% endhighlight %}
 
 The following screenshot illustrates aTimePickercontrol whenEnableRTL is set to true.
 
 
-
- ![](RTL_images/RTL_img1.png) 
+![](RTL_images/RTL_img1.png) 
 
 
 

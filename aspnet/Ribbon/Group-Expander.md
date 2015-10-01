@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Group-Expander
+title: Group Expander | Ribbon | ASP.NET Webforms | Syncfusion
 description: group expander
 platform: aspnet
 control: Ribbon
@@ -9,14 +9,11 @@ documentation: ug
 
 # Group Expander
 
-The _Ribbon_ control has _group expander_ support. Set _EnableGroupExpander_ value to _true_ to enable the group expander for each group in the ribbon tab. The event for _group expander_ is _ClientSideOnGroupExpand_.
+The Ribbon control has group expander support. Set EnableGroupExpander value to true to enable the group expander for each group in the ribbon tab. The event for group expander is ClientSideOnGroupExpand.
 
-
+{% tabs %}
 
 {% highlight html %}
-
-
-
 
 
 <ej:Ribbon ID="Ribbon" runat="server" Width="800px">
@@ -237,11 +234,11 @@ this.text = ctext;
 
 {% endhighlight %}
 
+{% endtabs %}
 
 
 
-
-The following screenshot illustrates the group _New_ with the group expander.
+The following screenshot illustrates the group New with the group expander.
 
 ![](Group-Expander_images/Group-Expander_img1.png)
 

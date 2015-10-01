@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Template-Support
+title: Template Support | ListBox | ASP.NET Webforms | Syncfusion
 description: template support
 platform: aspnet
-control: Control Name undefined
+control: ListBox
 documentation: ug
 ---
 
@@ -17,6 +17,7 @@ In an ASPX page, add an elementto configure ListBox.
 
 N> Images for this sample are available in ‘installed location/images/Employee’ 
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -84,7 +85,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 Customize the template in CSS. 
 

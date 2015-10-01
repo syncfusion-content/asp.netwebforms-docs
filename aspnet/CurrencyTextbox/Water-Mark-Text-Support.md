@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Water-Mark-Text-Support
+title: Water Mark Text Support | CurrencyTextBox | ASP.NET Webforms | Syncfusion
 description: water mark text support
 platform: aspnet
 control: Currency TextBox

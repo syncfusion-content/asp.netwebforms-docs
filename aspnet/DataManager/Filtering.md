@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering
+title: Filtering | DataManager | ASP.NET Webforms | Syncfusion
 description: filtering
 platform: aspnet
 control: DataManager

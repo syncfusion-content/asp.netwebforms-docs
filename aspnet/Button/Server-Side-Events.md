@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server-Side-Events
+title: Server Side Events | Button | ASP.NET Webforms | Syncfusion
 description: server side events
 platform: aspnet
 control: Button

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom-Tooltip
+title: Custom Tooltip | Ribbon | ASP.NET Webforms | Syncfusion
 description: custom tooltip
 platform: aspnet
 control: Ribbon
@@ -9,7 +9,7 @@ documentation: ug
 
 # Custom Tooltip
 
-The _Ribbon_ control has _Custom Tooltip_ support that is displayed when you move the mouse over the control elements. You can define the CustomTooltip under the ContentGroup, GalleryItem, and CustomGalleryItem etc... CustomTooltip contains _Title, Content, PrefixIcon_ properties that are used to set Title, Content and placing the icon into this.
+The Ribbon control has Custom Tooltip support that is displayed when you move the mouse over the control elements. You can define the CustomTooltip under the ContentGroup, GalleryItem, and CustomGalleryItem etc... CustomTooltip contains Title, Content, PrefixIcon properties that are used to set Title, Content and placing the icon into this.
 
 
 

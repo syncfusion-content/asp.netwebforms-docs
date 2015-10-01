@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Frame-Type
+title: Frame Type | OLAPGauge | ASP.NET Webforms | Syncfusion
 description: frame type 
 platform: aspnet
 control: OLAP Gauge

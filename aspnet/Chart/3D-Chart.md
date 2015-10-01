@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 3D-Chart
+title: 3D Chart | Captcha | ASP.NET Webforms | Syncfusion
 description: 3d chart
 platform: aspnet
 control: Chart

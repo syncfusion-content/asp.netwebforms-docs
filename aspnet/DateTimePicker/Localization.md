@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization
+title: Localization | DateTimePicker | ASP.NET Webforms | Syncfusion
 description: localization
 platform: aspnet
 control: DateTimePicker
@@ -26,7 +26,7 @@ Open the Culture script file, included in your project.
 
 Replace existing calendar locale information by your own culture information or to your customized format.
 
-Refer to this section for more details: [localization](http://docs.syncfusion.com/js)
+Refer to this section for more details: [localization](http://docs.syncfusion.com/aspnetmvc/datetimepicker/localization)
 
 For example, to change month names to your culture month, just replace month names with your culture month names or your customized format.
 
@@ -34,15 +34,13 @@ The following code example can be used to get Spanish culture in the DateTimePic
 
 In the ASPX page, include the following DateTimePicker control code example.
 
+{% tabs %}
+
 {% highlight html %}
 
 
 
 <ej:DateTimePicker ID="DateTime" Locale="es-ES" runat="server"> </ej:DateTimePicker>
-
-
-
-
 
 {% endhighlight %}
 
@@ -66,7 +64,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 ![](Localization_images/Localization_img1.png) 
 

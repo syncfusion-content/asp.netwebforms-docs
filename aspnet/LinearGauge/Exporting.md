@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting
+title: Exporting | LinearGauge | ASP.NET Webforms | Syncfusion
 description: exporting
 platform: aspnet
 control: Linear Gauge
@@ -10,6 +10,8 @@ documentation: ug
 # Exporting
 
 Linear Gauge has an exporting feature that converts Gauge control into image format and then export in client side. The method API exportImage is used to export the LinearGauge. It has two arguments such as file name and file format to specify the file name and file formats. For exporting refer the following code example.	
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -104,6 +106,8 @@ $("#CoreExportGauge").ejLinearGauge("exportImage", FileName, FileFormat);
 </script>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 
 Execute the above code to render the following output.

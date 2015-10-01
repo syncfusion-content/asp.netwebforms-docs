@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Contextual-Tab-and-Tab-Set
+title: Contextual Tab and Tab Set | Ribbon | ASP.NET Webforms | Syncfusion
 description: contextual tab and tab set
 platform: aspnet
 control: Ribbon
@@ -9,7 +9,7 @@ documentation: ug
 
 # Contextual Tab and Tab Set
 
-You can add _Contextual Tabs_ and _Tab Set_ in the _Ribbon_ control. In _ContextualTabs_ tag, use _RibbonTab_ tag to add _contextual tabs_ and _contextual tab set_. In _ContextualTab_ tag, use _BackgroundColor_ property to apply background color to the _Contextual Tabs and Tab Set_. Use _BorderColor_ property to apply border color to the _Contextual Tabs and Tab Set._
+You can add Contextual Tabs and Tab Set in the Ribbon control. In ContextualTabs tag, use RibbonTab tag to add contextual tabs and contextual tab set. In ContextualTab tag, use BackgroundColor property to apply background color to the Contextual Tabs and Tab Set. Use BorderColor property to apply border color to the Contextual Tabs and Tab Set.
 
 
 
@@ -146,7 +146,7 @@ You can add _Contextual Tabs_ and _Tab Set_ in the _Ribbon_ control. In _Context
 
 
 
-The following screenshot illustrates _Ribbon_ with _Contextual Tabs and Tab Set_.
+The following screenshot illustrates Ribbon with Contextual Tabs and Tab Set.
 
 ![](Contextual-Tab-and-Tab-Set_images/Contextual-Tab-and-Tab-Set_img1.png)
 

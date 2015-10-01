@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Knockout-Binding
+title: Knockout Binding | Diagram | ASP.NET Webforms | Syncfusion
 description: knockout binding
 platform: aspnet
 control: Diagram
@@ -91,5 +91,6 @@ $(function () {
 
 ![](Knockout-Binding_images/Knockout-Binding_img1.png) 
 
-_Page Background through knockout_
+Page Background through knockout
+{:.caption} 
 

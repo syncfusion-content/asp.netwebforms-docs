@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text-Configuration
+title: Text Configuration | Tile | ASP.NET | Syncfusion
 description: text configuration
 platform: aspnet
 control: Tile
@@ -22,8 +22,6 @@ Refer to the following code examples.
 
 {% highlight html %}
 
-
-
     <div id="tile"></div>
 
 <script>
@@ -31,10 +29,6 @@ Refer to the following code examples.
     $("#tile").ejTile({ tileSize: "medium", imagePosition: "center", textAlignment: "center", imageUrl: "http://js.syncfusion.com/UG/web/Content/tile/camera.png", text: "Camera" })
 
 </script>
-
-
-
-
 
 {% endhighlight %}
 

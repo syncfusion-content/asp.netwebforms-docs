@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RTL-Support
+title: RTL Support | Tab | ASP.NET | Syncfusion
 description: rtl support
 platform: aspnet
 control: Tab
@@ -48,10 +48,6 @@ Add the following ASPX to render the Tab with the RTL format.
     </Items>
 
 </ej:Tab>
-
-
-
-
 
 {% endhighlight %}
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Search-Customization
+title: Search Customization | AutoComplete | ASP.NET Webforms | Syncfusion
 description: search customization
 platform: aspnet
 control: AutoComplete

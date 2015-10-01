@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Miscellaneous
+title: Miscellaneous | ColorPicker | ASP.NET Webforms | Syncfusion
 description: miscellaneous
 platform: aspnet
 control: ColorPicker

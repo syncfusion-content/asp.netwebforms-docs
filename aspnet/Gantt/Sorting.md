@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting
+title: Sorting | Gantt | ASP.NET Webforms | Syncfusion
 description: sorting
 platform: aspnet
 control: Gantt
@@ -55,5 +55,6 @@ The following screenshot shows the output of multicolumn sorting in Gantt contro
 
 ![](Sorting_images/Sorting_img1.png)
 
-_Figure : Multicolumn Sorting_
+Multicolumn Sorting
+{:.caption}
 

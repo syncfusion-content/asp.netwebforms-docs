@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Footer
+title: Footer | RichTextEditor | ASP.NET Webforms | Syncfusion
 description: footer
 platform: aspnet
 control: RichTextEditor

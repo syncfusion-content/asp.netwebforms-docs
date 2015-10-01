@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integration
+title: Integration | ColorPicker | ASP.NET Webforms | Syncfusion
 description: integration
 platform: aspnet
 control: ColorPicker

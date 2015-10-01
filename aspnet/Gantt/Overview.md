@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Gantt | ASP.NET Webforms | Syncfusion
 description: overview
 platform: aspnet
 control: Gantt

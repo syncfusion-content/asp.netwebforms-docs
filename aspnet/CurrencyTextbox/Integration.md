@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integration
+title: Integration | CurrencyTextBox | ASP.NET Webforms | Syncfusion
 description: integration
 platform: aspnet
 control: Currency TextBox
@@ -165,9 +165,7 @@ The following example depicts the way to bind data to the CurrencyTextbox contr
 
 {% highlight html %}
 
-
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 

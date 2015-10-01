@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Appearance and Styling | WaitingPopup | ASP.NET | Syncfusion
 description: appearance and styling 	
 platform: aspnet
 control: WaitingPopup
@@ -21,9 +21,7 @@ Add the following code example to the corresponding ASPX page to render the Wait
 
 <div id="targetelement"></div>
 
-    <ej:WaitingPopup ID="target" runat="server" Target="#targetelement" ShowOnInit="True" Text="Loading... Please wait..."></ej:WaitingPopup>
-
-
+<ej:WaitingPopup ID="target" runat="server" Target="#targetelement" ShowOnInit="True" Text="Loading... Please wait..."></ej:WaitingPopup>
 
 {% endhighlight %}
 
@@ -33,21 +31,17 @@ Add the following styles to render the WaitingPopup control
 
 {% highlight css %}
 
-    <style type="text/css">
+<style type="text/css">
 
-        #targetelement {
+    #targetelement {
 
-            height: 320px;
+        height: 320px;
 
-            width: 600px;
+        width: 600px;
 
-        }
+    }
 
-    </style>
-
-
-
-
+</style>
 
 {% endhighlight %}
 
@@ -69,33 +63,29 @@ Add the following code example to the corresponding ASPX page to render the Wait
 
 <div id="targetelement"></div>
 
-    <ej:WaitingPopup ID="target" runat="server" Target="#targetelement" ShowOnInit="True" Template="#content" CssClass="waiting"></ej:WaitingPopup>
+<ej:WaitingPopup ID="target" runat="server" Target="#targetelement" ShowOnInit="True" Template="#content" CssClass="waiting"></ej:WaitingPopup>
 
-    <div id="content">
+<div id="content">
 
-        <div class="block">
+    <div class="block">
 
-            <div class="logo"></div>
+        <div class="logo"></div>
 
-            <div class="txt">
+        <div class="txt">
 
-                <p>Create cutting-edge </p>
+            <p>Create cutting-edge </p>
 
-                <p><b>HTML5</b> web applications </p>
+            <p><b>HTML5</b> web applications </p>
 
-                <p>with ease </p>
-
-            </div>
+            <p>with ease </p>
 
         </div>
 
-        <div class="loader"></div>
-
     </div>
 
+    <div class="loader"></div>
 
-
-
+</div>
 
 {% endhighlight %}
 
@@ -107,96 +97,94 @@ N> Images for this sample are available at â€˜installed location/Content/imagesâ
 
 {% highlight css %}
 
-  <style type="text/css" class="cssStyles">
+<style type="text/css" class="cssStyles">
 
-        #targetelement {
+    #targetelement {
 
-            height: 320px;
+        height: 320px;
 
-            margin: 0 auto;
+        margin: 0 auto;
 
-            width: 600px;
-        }
+        width: 600px;
+    }
 
-        .block {
+    .block {
 
-            height: 76px;
+        height: 76px;
 
-        }
-
-
-
-        .logo {
-
-            background-image: url("../Content/images/waitingpopup/js_logo.png");
-
-            float: left;
-
-            height: 100%;
-
-            width: 77px;
-
-            margin-right: 15px;
-
-        }
+    }
 
 
 
-        .txt {
+    .logo {
 
-            float: left;
+        background-image: url("../Content/images/waitingpopup/js_logo.png");
 
-            font-size: 17px;
+        float: left;
 
-            height: 100%;
+        height: 100%;
 
-            text-align: left;
+        width: 77px;
 
-        }
+        margin-right: 15px;
 
-
-
-            .txt p {
-
-                margin: 0;
-
-            }
+    }
 
 
 
-        .loader {
+    .txt {
 
-            background: url("../Content/images/waitingpopup/load_light.gif") no-repeat scroll -5px 18px transparent;
+        float: left;
 
-            height: 40px;
+        font-size: 17px;
 
-            width: 100%;
+        height: 100%;
+
+        text-align: left;
+
+    }
+
+
+
+        .txt p {
+
+            margin: 0;
 
         }
 
 
 
-        .darktheme .loader {
+    .loader {
 
-            background-image: url("../Content/images/waitingpopup/load_dark.gif");
+        background: url("../Content/images/waitingpopup/load_light.gif") no-repeat scroll -5px 18px transparent;
 
-        }
+        height: 40px;
 
+        width: 100%;
 
-
-        #content {
-
-            cursor: default;
-
-            height: 112px;
-
-            width: 285px;
-
-        }
-
-    </style>
+    }
 
 
+
+    .darktheme .loader {
+
+        background-image: url("../Content/images/waitingpopup/load_dark.gif");
+
+    }
+
+
+
+    #content {
+
+        cursor: default;
+
+        height: 112px;
+
+        width: 285px;
+
+    }
+
+</style>
 
 {% endhighlight %}
 
@@ -220,11 +208,7 @@ Add the following code example to the corresponding ASPX page to render the Wait
 
 <div id="targetelement"></div>
 
-    <ej:WaitingPopup ID="target" runat="server" Target="#targetelement" ShowOnInit="True" CssClass="custom" Text="Loading... Please wait..."></ej:WaitingPopup>
-
-
-
-
+<ej:WaitingPopup ID="target" runat="server" Target="#targetelement" ShowOnInit="True" CssClass="custom" Text="Loading... Please wait..."></ej:WaitingPopup>
 
 {% endhighlight %}
 
@@ -234,35 +218,31 @@ Define the CSS class for customizing the WaitingPopup control.
 
 {% highlight css %}
 
+<style type="text/css">
 
+    #targetelement {
 
-  <style type="text/css">
+        height: 320px;
 
-        #targetelement {
+        width: 600px;
 
-            height: 320px;
-
-            width: 600px;
-
-        }
+    }
 
 
 
-        .custom {
+    .custom {
 
-            background-color: darkred;
+        background-color: darkred;
 
-            font-style: italic;
+        font-style: italic;
 
-            font-weight: bolder;
+        font-weight: bolder;
 
-            opacity: 0.5;
+        opacity: 0.5;
 
-        }
+    }
 
-    </style>
-
-
+</style>
 
 {% endhighlight %}
 

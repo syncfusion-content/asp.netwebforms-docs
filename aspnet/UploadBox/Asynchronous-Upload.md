@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Asynchronous-Upload
+title: Asynchronous Upload | UploadBox | ASP.NET | Syncfusion
 description: asynchronous upload
 platform: aspnet
 control: UploadBox
@@ -17,13 +17,7 @@ The following steps guide you to upload the file asynchronously.
 
 {% highlight html %}
 
-
-
-    <ej:UploadBox ID="Uploadbox" runat="server" SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx" AsyncUpload="true" ></ej:UploadBox>
-
-
-
-
+<ej:UploadBox ID="Uploadbox" runat="server" SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx" AsyncUpload="true" ></ej:UploadBox>
 
 {% endhighlight %}
 

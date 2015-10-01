@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Import-Appointments
+title: Import Appointments | Schedule | ASP.NET Webforms | Syncfusion
 description: import appointments
 platform: aspnet
 control: Schedule
@@ -12,6 +12,8 @@ documentation: ug
 * With this feature, you can import the appointments from the .ics file into the Schedule control. ICS files that are generated from the Outlook, Google calendar and the exported files from the Syncfusion Schedule can be easily imported into the Schedule control. 
 * Generally, the import functionality is achieved by using the server-side method renderingImportAppointments that takes the path of an ics file as its parameter. This method can be accessed through the object of the ScheduleImport class. You can dynamically choose the ics files to be imported into the Schedule control by using the upload box to select the ics file from the specific location. 
 * Importing can be achieved by using the following code example in MVC and ASP. It is not applicable for JS, as it is done through server-side.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -55,6 +57,7 @@ $("#Schedule1").find("tr.e-scheduleheader td").first().append($("#fileUpload1"))
 #fileUpload1
 {
 margin-right: 20px;margin-top: 10px;float: right;}
+
 #fileUpload1 .e-selectpart{padding: 3px 10px;}
 
 </style>
@@ -106,6 +109,8 @@ records.Add(row);
 this.Schedule1.AppointmentSettings.DataSource = records;}
 
 {% endhighlight %}
+
+{% endtabs %}
 
 * Add the file “SaveFiles.ashx” in your project that contains the code example of the uploadbox to save the uploaded files into a specified folder.
 

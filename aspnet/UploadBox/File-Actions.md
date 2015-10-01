@@ -1,6 +1,6 @@
 ---
 layout: post
-title: File-Actions
+title: File Actions | UploadBox | ASP.NET | Syncfusion
 description: file actions
 platform: aspnet
 control: UploadBox
@@ -26,9 +26,9 @@ In the ASPX page, add the UploadBox element.
 Configure the handler to save the file as SaveFiles.ashx. Create a folder (for example, uploadfiles) and save the uploaded files into this folder.  
 
 {% highlight c# %}
-public class SaveFiles : IHttpHandler {
+public class SaveFiles : IHttpHandler
 
-
+{
 
     public void ProcessRequest(HttpContext context)
 
@@ -46,33 +46,33 @@ public class SaveFiles : IHttpHandler {
 
         HttpRequest request = context.Request;
 
-            HttpFileCollection uploadedFiles = context.Request.Files;
+        HttpFileCollection uploadedFiles = context.Request.Files;
 
-            if (uploadedFiles != null && uploadedFiles.Count > 0)
+        if (uploadedFiles != null && uploadedFiles.Count > 0)
+
+        {
+
+            for (int i = 0; i < uploadedFiles.Count; i++)
 
             {
 
-                for (int i = 0; i < uploadedFiles.Count; i++)
+                string fileName = uploadedFiles[i].FileName;
+
+                int indx = fileName.LastIndexOf("\\");
+
+                if (indx > -1)
 
                 {
 
-                    string fileName = uploadedFiles[i].FileName;
-
-                    int indx = fileName.LastIndexOf("\\");
-
-                    if (indx > -1)
-
-                    {
-
-                        fileName = fileName.Substring(indx + 1);
-
-                    }
-
-                    uploadedFiles[i].SaveAs(targetFolder + "\\" + fileName);
+                    fileName = fileName.Substring(indx + 1);
 
                 }
 
+                uploadedFiles[i].SaveAs(targetFolder + "\\" + fileName);
+
             }
+
+        }
 
     }
 
@@ -119,9 +119,9 @@ In the ASPX page, add the UploadBox element.
 Configure the handlers to remove the file from the target location named, RemoveFiles.ashx. From that location, the file is searched and removed from the uploadfiles folder.
 
 {% highlight c# %}
-public class RemoveFiles : IHttpHandler {
+public class RemoveFiles : IHttpHandler
 
-
+{
 
     public void ProcessRequest(HttpContext context)
 
@@ -156,20 +156,17 @@ public class RemoveFiles : IHttpHandler {
     }
 
 
+    public bool IsReusable
+    {
 
-
-
-    public bool IsReusable {
-
-        get {
+        get
+        {
 
             return false;
 
         }
 
     }
-
-
 
 }
 

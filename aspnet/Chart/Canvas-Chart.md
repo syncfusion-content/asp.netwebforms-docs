@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Canvas-Chart
+title: Canvas Chart | Chart | ASP.NET Webforms | Syncfusion
 description: canvas chart
 platform: aspnet
 control: Chart

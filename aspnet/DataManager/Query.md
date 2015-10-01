@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Query
+title: Query | DataManager | ASP.NET Webforms | Syncfusion
 description: query
 platform: aspnet
 control: DataManager

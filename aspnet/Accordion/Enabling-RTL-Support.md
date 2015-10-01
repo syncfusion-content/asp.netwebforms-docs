@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enabling-RTL-Support
+title: Enabling RTL Support | Accordion | ASP.NET Webforms | Syncfusion
 description: enabling rtl support
 platform: aspnet
 control: Accordion 

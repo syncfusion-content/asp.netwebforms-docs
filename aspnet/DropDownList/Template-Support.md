@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Template-Support
+title: Template Support | DropDownList | ASP.NET Webforms | Syncfusion
 description: template support
 platform: aspnet
 control: DropDownList
@@ -17,6 +17,7 @@ In an ASPX page, add an element to configure the DropDownList widget.
 
 N> Images for this sample are available in the ‘installed location /themes/images’. 
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -82,7 +83,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 Customize the template in CSS. 
 

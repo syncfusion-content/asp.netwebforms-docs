@@ -1,13 +1,13 @@
 ---
 layout: post
-title: LiveTile-Configuration
+title: LiveTile Configuration | Tile | ASP.NET | Syncfusion
 description: livetile configuration
 platform: aspnet
 control: Tile
 documentation: ug
 ---
 
-## LiveTile Configuration
+# LiveTile Configuration
 
 Live Tiles are used to display the current or up to date information like scores, stocks, weather, etc. You can enable Live Tile using “data-ej-livetile-enabled” attribute by setting it to true. The “data-ej-livetile-type” attribute allows you to specify the type of animation while updating the information in Tile. There are three types of Tile animation supported: Flip, Slide and Carousel.
 
@@ -19,33 +19,27 @@ Refer to the following code examples.
 
 {% highlight html %}
 
+<div id="tile"></div>
 
+<script>
 
-    <div id="tile"></div>
+	$("#tile").ejTile({
 
-    <script>
+		tileSize: "medium", imagePosition: "fill",
 
-        $("#tile").ejTile({
+		liveTile: {
 
-            tileSize: "medium", imagePosition: "fill",
+			updateInterval: 2500, type: "flip", enabled: true,
 
-            liveTile: {
+			imageUrl: ['http://js.syncfusion.com/UG/Web/Content/tile/people_1.png', 'http://js.syncfusion.com/UG/Web/Content/tile/people_2.png']
 
-                updateInterval: 2500, type: "flip", enabled: true,
+		},
 
-                imageUrl: ['http://js.syncfusion.com/UG/Web/Content/tile/people_1.png', 'http://js.syncfusion.com/UG/Web/Content/tile/people_2.png']
+		text: "Peoples"
 
-            },
+	})
 
-            text: "Peoples"
-
-        })
-
-    </script>
-
-
-
-
+</script>
 
 {% endhighlight %}
 
@@ -59,43 +53,39 @@ Refer to the following code examples.
 
 {% highlight html %}
 
+<div id="tile"></div>
 
+	<div id="temp1" style="background-image:
 
-    <div id="tile"></div>
+			url('http://js.syncfusion.com/UG/Web/Content/tile/people_1.png'); width: 100%; height: 100%;">
 
-    <div id="temp1" style="background-image:
+</div>
 
-            url('http://js.syncfusion.com/UG/Web/Content/tile/people_1.png'); width: 100%; height: 100%;">
+<div id="temp2" style="background-image:
 
-    </div>
+		url('http://js.syncfusion.com/UG/Web/Content/tile/people_2.png'); width: 100%; height: 100%;">
 
-    <div id="temp2" style="background-image:
+</div>
 
-            url('http://js.syncfusion.com/UG/Web/Content/tile/people_2.png'); width: 100%; height: 100%;">
+<script>
 
-    </div>
+	$("#tile").ejTile({
 
-    <script>
+		tileSize: "medium", imagePosition: "fill",
 
-        $("#tile").ejTile({
+		liveTile: {
 
-            tileSize: "medium", imagePosition: "fill",
+			updateInterval: 2500, type: "flip", enabled: true,
 
-            liveTile: {
+			imageTemplateId: ["temp1", "temp2"]
 
-                updateInterval: 2500, type: "flip", enabled: true,
+		},
 
-                imageTemplateId: ["temp1", "temp2"]
+		text: "Peoples"
 
-            },
+	})
 
-            text: "Peoples"
-
-        })
-
-    </script> 
-
-
+</script> 
 
 {% endhighlight %}
 
@@ -109,55 +99,51 @@ Refer to the following code examples.
 
 {% highlight html %}
 
+<div id="tile"></div>
 
+<style>
 
-    <div id="tile"></div>
+	.people1 {
 
-    <style>
+		background-image: url('http://js.syncfusion.com/UG/Web/Content/tile/people_1.png');
 
-        .people1 {
+		width: 100%;
 
-            background-image: url('http://js.syncfusion.com/UG/Web/Content/tile/people_1.png');
+		height: 100%;
 
-            width: 100%;
+	}
 
-            height: 100%;
+	.people2 {
 
-        }
+		background-image: url('http://js.syncfusion.com/UG/Web/Content/tile/people_2.png');
 
-        .people2 {
+		width: 100%;
 
-            background-image: url('http://js.syncfusion.com/UG/Web/Content/tile/people_2.png');
+		height: 100%;
 
-            width: 100%;
+	}
 
-            height: 100%;
+</style>
 
-        }
+<script>
 
-    </style>
+	$("#tile").ejTile({
 
-    <script>
+		tileSize: "medium", imagePosition: "fill",
 
-        $("#tile").ejTile({
+		liveTile: {
 
-            tileSize: "medium", imagePosition: "fill",
+			updateInterval: 2500, type: "flip", enabled: true,
 
-            liveTile: {
+			imageClass: ["people1", "people2"]
 
-                updateInterval: 2500, type: "flip", enabled: true,
+		},
 
-                imageClass: ["people1", "people2"]
+		text: "Peoples"
 
-            },
+	})
 
-            text: "Peoples"
-
-        })
-
-    </script> 
-
-
+</script> 
 
 {% endhighlight %}
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RTL-Support
+title: RTL Support | Splitter | ASP.NET | Syncfusion
 description: rtl support
 platform: aspnet
 control: Splitter
@@ -18,8 +18,6 @@ The following steps explain enabling the right-to-left property for Splitter c
 In an ASPX page, define the Splitter control and add the contents correspondingly. Set the EnableRTL property as true.
 
 {% highlight html %}
-
-
 
 <ej:Splitter Height="250" Width="600" ID="outersplitter" Orientation="Vertical" EnableRTL="true" runat="server">
 
@@ -109,15 +107,13 @@ In an ASPX page, define the Splitter control and add the contents corresponding
 
 </ej:Splitter>
 
-
-
 {% endhighlight %}
 
 
 
 The following screenshot displays the output of the above code example.
 
-{{ '![](RTL-Support_images/RTL-Support_img1.png)' | markdownify }}
+![](RTL-Support_images/RTL-Support_img1.png)
 
 
 

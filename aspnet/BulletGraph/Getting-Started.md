@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | BulletGraph | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: BulletGraph	
@@ -23,6 +23,7 @@ In the following screenshot, a BulletGraph is used to compare the actual monsoon
 
 
 
+
 1. Create simple BulletGraph.
 
    ~~~ html
@@ -32,7 +33,6 @@ In the following screenshot, a BulletGraph is used to compare the actual monsoon
         </ej:Bulletgraph>
 	
    ~~~
-   {:.pretty-print }
    
 
 2. Execute the above code to display the BulletGraph. To customize the measure bars in the BulletGraph, you can pass the data either locally or remotely.

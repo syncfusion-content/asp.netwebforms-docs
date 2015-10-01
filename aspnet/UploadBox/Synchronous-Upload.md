@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Synchronous-Upload
+title: Synchronous Upload | UploadBox | ASP.NET | Syncfusion
 description: synchronous upload 
 platform: aspnet
 control: UploadBox

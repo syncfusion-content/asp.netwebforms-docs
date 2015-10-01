@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Angular-Binding
+title: Angular Binding | PercentageTextBox | ASP.NET Webforms | Syncfusion
 description: angular binding
 platform: aspnet
 control: PivotGrid

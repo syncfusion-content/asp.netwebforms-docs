@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Insert-Video
+title: Insert Video | RichTextEditor | ASP.NET Webforms | Syncfusion
 description: insert video 
 platform: aspnet
 control: RichTextEditor

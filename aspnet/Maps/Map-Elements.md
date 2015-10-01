@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Map-Elements
+title: Map Elements | Maps | ASP.NET Webforms | Syncfusion
 description: map elements
 platform: aspnet
 control: Maps
@@ -23,6 +23,8 @@ There are two ways to set marker for map.
 ### Markers 
 
 The Markers property has a list of objects that contains the data for Annotation. You can visualize these data by using MarkerTemplate property.
+
+{% tabs %}
 
 {% highlight c# %}
    
@@ -87,9 +89,12 @@ The Markers property has a list of objects that contains the data for Annotation
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Map-Elements_images/Map-Elements_img1.png)
 
-_Map with markers_
+Map with markers
+{:.caption} 
 
 ### Adding Marker objects to map
 
@@ -149,7 +154,8 @@ Without Datasource, n number of markers can be added to shape layers with Marker
 
 ![](Map-Elements_images/Map-Elements_img2.png)
 
-_Map with label_
+Map with label
+{:.caption} 
 
 ## Bubbles 
 
@@ -159,7 +165,7 @@ Bubbles are included when data binding and the BubbleSettings is set to the shap
 
 Properties available in bubble setting
 
-_Property table_
+Property table
 
 <table>
 <tr>
@@ -253,7 +259,8 @@ N> Tooltip and Color Mappings for bubble is to be set as similar to tooltip and 
 
 ![](Map-Elements_images/Map-Elements_img3.png) 
 
-_Map with bubbles_
+Map with bubbles
+{:.caption} 
 
 ## Legend
 
@@ -334,7 +341,8 @@ N>  Here, Equal Color Mapping code sample for shapeSettings with color mappings 
 
 ![](Map-Elements_images/Map-Elements_img4.png)
 
-_Map with legend_
+Map with legend
+{:.caption} 
 
 ### Interactive Legend
 
@@ -380,7 +388,8 @@ N>  Here, Range Color Mapping code snippet for shapeSettings with color mappings
 
 ![](Map-Elements_images/Map-Elements_img5.png)
 
-_Map with interactive legend_
+Map with interactive legend
+{:.caption} 
 
 ### Bubble Legend
 
@@ -441,4 +450,5 @@ A bubble legend feature is used to provide the key (legend) for another map elem
 
 ![](Map-Elements_images/Map-Elements_img6.png)
 
-_Bubble Legend_
+Bubble Legend
+{:.caption} 

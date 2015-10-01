@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Orientation
+title: Orientation | Rotator | ASP.NET Webforms | Syncfusion
 description: orientation
 platform: aspnet
 control: Rotator

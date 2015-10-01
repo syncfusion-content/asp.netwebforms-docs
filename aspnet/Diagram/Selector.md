@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selector
+title: Selector | Diagram | ASP.NET Webforms | Syncfusion
 description: selector
 platform: aspnet
 control: Diagram
@@ -13,7 +13,7 @@ Selector behaves like a container for the selected elements and enables you to u
 
 The properties of Selector are listed as follows.
 
-_Selector Properties_
+Selector Properties
 
 <table>
 <tr>

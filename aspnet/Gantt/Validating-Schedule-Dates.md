@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Validating-Schedule-Dates
+title: Validating Schedule Dates | Gantt | ASP.NET Webforms | Syncfusion
 description: validating schedule dates
 platform: aspnet
 control: Gantt
@@ -45,4 +45,5 @@ The following screenshot illustrates the output of the above code.
 ![](Validating-Schedule-Dates_images/Validating-Schedule-Dates_img1.png)
 
 
-_Figure : Validating schedule dates_
+Validating schedule dates
+{:.caption}

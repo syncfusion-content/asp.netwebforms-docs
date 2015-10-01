@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Horizontal-View
+title: Horizontal-View | Schedule | ASP.NET Webforms | Syncfusion
 description: horizontal view
 platform: aspnet
 control: Schedule
@@ -18,8 +18,10 @@ documentation: ug
 
 * It defines the orientation type of the Schedule control. It renders the Schedule either in horizontal mode or vertical mode. By default, orientation property is set as “Vertical”. 
 * The valid enum values that are accepted by orientation property are as follows,
-1. ej.Schedule.Orientation.Vertical
-2. ej.Schedule.Orientation.Horizontal
+  
+  1. ej.Schedule.Orientation.Vertical
+  2. ej.Schedule.Orientation.Horizontal
+
 * You can set the Schedule control to horizontal mode using the following code example.
 
 
@@ -81,15 +83,11 @@ Execute the above code to render the following output.
 * Horizontal Multiple Resources is varied from Multiple resources by including the orientation property.It can change the appearance of the Schedule.
 * Horizontal view contains another property as resourceHeaderTemplateId. It allows you to render the resource header of the Schedule. When the orientation is in horizontal mode, resourceHeaderTemplateId can be applied.
 
+{% tabs %}
 
 {% highlight html %}
 
-
-
-
 <%--Setting Orientation as horizontal mode--%>
-
-
 
 <ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Orientation="Horizontal" Width="100%" CurrentDate="5/5/2014" CurrentView="Month" >
 
@@ -126,6 +124,8 @@ SelectCommand="SELECT * FROM [MultipleResource]"></asp:SqlDataSource>
 // follow the code as same as declared in Resources part
 
 {% endhighlight %}
+
+{% endtabs %}
 
 Execute the above code to render the following output.
 

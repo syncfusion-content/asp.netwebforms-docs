@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Multiple-Selection
+title: Multiple Selection | ListBox | ASP.NET Webforms | Syncfusion
 description: multiple selection
 platform: aspnet
-control: Control Name undefined
+control: ListBox
 documentation: ug
 ---
 
@@ -19,7 +19,7 @@ The following steps explain you the configuration of the AllowMultiSelection for
 
 In an ASPX page, add an element to configure ListBox.
 
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -109,7 +109,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 Output for ListBox control that provides multiple selections is as follows.
 
@@ -126,6 +126,7 @@ The following steps explains you the configuration of SelectedItemlist property 
 
 In an ASPX page, add an element to configure ListBox.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -223,7 +224,7 @@ listboxsample.selectedItemlist = indexList;
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 Output of the above steps.
 

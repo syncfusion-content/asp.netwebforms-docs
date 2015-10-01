@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Ribbon | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: Ribbon
@@ -9,24 +9,24 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly how to create a _Ribbon_ in your application with _ASP.NET_.
+This section explains briefly how to create a Ribbon in your application with ASP.NET.
 
 ## Create your Ribbon in ASP.NET
 
-You can create a _Ribbon_ with highly customizable look and feel. The _Ribbon_control displays the controls in multiple tabs. This section explains the ribbon tabs, adding controls to the groups, expand/collapse ribbon option, and the control separator.
+You can create a Ribbon with highly customizable look and feel. The Ribbon control displays the controls in multiple tabs. This section explains the ribbon tabs, adding controls to the groups, expand/collapse ribbon option, and the control separator.
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
 
-1. Create a _Syncfusion ASP.NET Web_ form application.
-2. Drag and drop the _Ribbon_ control in the Index.aspx page from the toolbox.
+1. Create a Syncfusion ASP.NET Web form application.
+2. Drag and drop the Ribbon control in the Index.aspx page from the toolbox.
 
- ![](Getting-Started_images/Getting-Started_img2.png)
+   ![](Getting-Started_images/Getting-Started_img2.png)
 
 
 ## Application Tabs
 
-_Application menu_ support has been provided in the ribbon control _ApplicationTab_. Use _ApplicationTab_ tag to define the application tab with menu. In _ApplicationTab_ attributes, _Type_ property to define the ApplicationMenu and the value is _ApplicationMenu_,_ItemID_ property to specify ID of the _UL_ list for the application menu and the _MenuSettings_ property to specify all the members and events of the menu.
+Application menu support has been provided in the ribbon control ApplicationTab. Use ApplicationTab tag to define the application tab with menu. In ApplicationTab attributes, Type property to define the ApplicationMenu and the value is ApplicationMenu,ItemID property to specify ID of the UL list for the application menu and the MenuSettings property to specify all the members and events of the menu.
 
  ![](Getting-Started_images/Getting-Started_img3.png)
 
@@ -100,7 +100,7 @@ The following screenshot illustrates Ribbon control with Application Tab.
 
 ## Contextual Tabs
 
-You can add _contextual tabs_ in the _Ribbon_ control. Inside _ContextualTabs_ tag use _ContextualTab_ tag to add a single or set of _contextual tabs_. In the _ContextualTab_ tag, use _BackgroundColor_ property to apply background color to the contextual tabs. Use _BorderColor_ property to apply border color to the contextualTab.
+You can add contextual tabs in the Ribbon control. Inside ContextualTabs tag use ContextualTab tag to add a single or set of contextual tabs. In the ContextualTab tag, use BackgroundColor property to apply background color to the contextual tabs. Use BorderColor property to apply border color to the contextualTab.
 
 ![](Getting-Started_images/Getting-Started_img5.png)
 
@@ -216,12 +216,12 @@ The following screenshot illustrates Ribbon control with Contextual tabs.
 
 ## Tabs
 
-_Tabs_ can be created by using _RibbonTab_ property. In _RibbonTab_, define the _TabGroupCollection_ property that allows you to create one or more _TabGroups_ in the _RibbonTab_.
+Tabs can be created by using RibbonTab property. In RibbonTab, define the TabGroupCollection property that allows you to create one or more TabGroups in the RibbonTab.
 
 ![](Getting-Started_images/Getting-Started_img7.png)
 
 
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -423,16 +423,16 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endhighlight %}
 
+{% endtabs %}
 
-
-The following screenshot illustrates _Ribbon_ with Tab Group Collections.
+The following screenshot illustrates Ribbon with Tab Group Collections.
 
 ![](Getting-Started_images/Getting-Started_img8.png)
 
 
 ## Create Ribbon Control 
 
-1. Create a _Master_ file and add the following references to the required libraries. 
+1. Create a Master file and add the following references to the required libraries. 
 
    ~~~ html
 
@@ -469,7 +469,6 @@ The following screenshot illustrates _Ribbon_ with Tab Group Collections.
 		</html>
 
    ~~~
-   {:.prettyprint }
 
 2. Add a Ribbon tag in the .aspx page as shown in the following code example.
 
@@ -482,9 +481,8 @@ The following screenshot illustrates _Ribbon_ with Tab Group Collections.
 		<%--..--%>
 
    ~~~
-   {:.prettyprint }
 
-3. Create the Ribbon control as follows. The _Width_ property allows you to define the width to the ribbon. In applicationTab definition, the _ItemID_ property allows you to specify the ID of the ul list to create the application menu. In _RibbonTab_, define the _TabGroupCollection_ property that allows you to create one or more _TabGroups_ in the _RibbonTab_. In contextual Tabs definition, the _BackgroundColor_ property allows you to define the background color of the contextual tab and _BorderColor_ property allows you to define the border color of the contextual tab.
+3. Create the Ribbon control as follows. The Width property allows you to define the width to the ribbon. In applicationTab definition, the ItemID property allows you to specify the ID of the ul list to create the application menu. In RibbonTab, define the TabGroupCollection property that allows you to create one or more TabGroups in the RibbonTab. In contextual Tabs definition, the BackgroundColor property allows you to define the background color of the contextual tab and BorderColor property allows you to define the border color of the contextual tab.
 
 
    ~~~ html
@@ -580,15 +578,16 @@ The following screenshot illustrates _Ribbon_ with Tab Group Collections.
 		    <div id="designing">Design</div></asp:Content>
 
    ~~~
-   {:.prettyprint }
 
-4. The following screenshot illustrates the _Ribbon_ control.
+4. The following screenshot illustrates the Ribbon control.
 
    ![](Getting-Started_images/Getting-Started_img9.png)
 
 ## Add Controls
 
-Add controls to each _Ribbon_ tab by using the tag _ContentCollection_. You can also add custom controls by using the property _ContentID_. The property _AlignType_ is used to align the groups in row or column order._Button, Split button, DropdownLlist_ and _Toggle button_, _Gallery_, and _Custom_ controls support have provided in the _Ribbon_ control.The default _AlignType_ is _rows_.
+Add controls to each Ribbon tab by using the tag ContentCollection. You can also add custom controls by using the property ContentID. The property AlignType is used to align the groups in row or column order.Button, Split button, DropdownLlist and Toggle button, Gallery, and Custom controls support have provided in the Ribbon control.The default AlignType is rows.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -785,6 +784,8 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The following screenshot illustrates Ribbon with controls,
 
 ![](Getting-Started_images/Getting-Started_img10.png)
@@ -792,21 +793,23 @@ The following screenshot illustrates Ribbon with controls,
 
 ## Expand/Collapse
 
-The expand/collapse support has been provided to the _Ribbon_.
+The expand/collapse support has been provided to the Ribbon.
 
-The following screenshot illustrates _Ribbon_ in the expanded state.
+The following screenshot illustrates Ribbon in the expanded state.
 
 ![](Getting-Started_images/Getting-Started_img11.png)
 
 
-The following screenshot illustrates _Ribbon_ in the collapsed state,
+The following screenshot illustrates Ribbon in the collapsed state,
 
 ![](Getting-Started_images/Getting-Started_img12.png)
 
 
 ## Separator for Controls
 
-The control _Separator_ support is provided in the _Ribbon_ control. Set _EnableSeparator_ value to _true_ to enable the separator after a control. _Control Separator_ supports only row type group.
+The control Separator support is provided in the Ribbon control. Set EnableSeparator value to true to enable the separator after a control. Control Separator supports only row type group.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -1014,6 +1017,8 @@ protected void Page_Load(object sender, EventArgs e)
             this.fontsize.DropdownSettings.DataSource = fontsize;}
 
 {% endhighlight %}
+
+{% endtabs %}
 
 The following screenshot illustrates the control Separator after the Italic Button control.
 

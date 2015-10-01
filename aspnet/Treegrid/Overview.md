@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | TreeGrid | ASP.NET | Syncfusion
 description: overview
 platform: aspnet
 control: TreeGrid
@@ -11,7 +11,7 @@ documentation: ug
 
 Essential TreeGrid is an efficient control designed for representing the hierarchical data in a tabular format, combining the visual representation of Grid and TreeView controls; it represents the data from datasource such as array of JSON objects, ej.DataManager or self-referential datasource.
 
-## Key Features:
+### Key Features:
 
 * Editing –Offers cell editing Mode for editing the item along each column.
 * Sorting-Supports _n_ levels of sorting.

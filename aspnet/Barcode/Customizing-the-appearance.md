@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing-the-appearance
+title: Customizing the appearance | Barcode | ASP.NET Webforms | Syncfusion
 description: customizing the appearance
 platform: aspnet
 control: Barcode

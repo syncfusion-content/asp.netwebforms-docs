@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appointment
+title: Appointment | Schedule | ASP.NET Webforms | Syncfusion
 description: appointment 
 platform: aspnet
 control: Schedule
@@ -58,7 +58,8 @@ The following screenshot displays the Schedule control with ReadOnly property se
 ![C:/Users/maheshp/Pictures/sshot-3.png](Appointment_images/Appointment_img1.png)
 
 
-Figure 1: Schedule with Read Only property
+Schedule with Read Only property
+{:.caption} 
 
 
 
@@ -92,7 +93,7 @@ The following screenshot displays the appointment window filled with the specifi
 
 
 
-###Using quick appointment window
+### Using quick appointment window
 
 * You can manipulate appointments using quick appointment window that provides an easier and quicker way to proceed with the appointment creation. To create appointments using quick appointment window, click on the required cell and fill in the appointment Subject. Click “CreateAppointment” button.
 * You can open the normal appointment window while the quick window is in open state by choosing the “Detailed” option present within the quick appointment window.The quick appointment window is displayed as follows.
@@ -113,7 +114,7 @@ Important: We have a property named showQuickWindow that accepts Boolean value a
 
 
 
-###Using Context menu
+### Using Context menu
 
 * You can also easily manipulate appointments using the Context menu feature. By default the Context menu contains the menu items for adding, opening and deleting appointment.You can view the menu by right-clicking on the Schedule cells or on the appointments.
 * To create an appointment using Context menu, right-click on the required Schedule cells and then select the “New Appointment” menu item in the Context menu. The new appointment window is opened and the appointment is saved in a usual manner followed in the previous methods.
@@ -131,7 +132,7 @@ The following screenshot displays the Contextmenu with a “New Appointment” o
 
 ## Appointment Editing
 
-###Using Normal Appointment window
+### Using Normal Appointment window
 
 * To edit the appointments created in the above specified steps, double-click on the required appointment to open the edit appointment window. You can change the required values and then click Done button to update those new values.
 
@@ -145,7 +146,7 @@ The following screenshot depicts the edit appointment window with its filled-in 
 ![](Appointment_images/Appointment_img8.png)
 
 
-###Using quick appointment window
+### Using quick appointment window
 
 * To edit the appointments using quick appointment window, click on the appointment to be edited. Click on the Edit Appointment option to open the edit appointment window. In case of normal appointments, only the Edit Appointment label is enabled.
 * When you click on a recurrence appointment, Edit Appointment and Edit Series options are enabled.  To edit the single occurrence of that recurrence appointment, choose Edit Appointment. Choose the EditSeries option to edit the entire series of that recurrence appointment.
@@ -170,16 +171,18 @@ The following screenshot displays the Schedule control with the quick appointmen
 ![](Appointment_images/Appointment_img11.png)
 
 
-Figure 65 : schedule with open the editing appointment window
+schedule with open the editing appointment window
+{:.caption} 
 
-###Using Context menu
+### Using Context menu
 
 * To edit the appointments using context menu option, right-click on the appointment to be edited and then select Open Appointment option from the context menu that pops up as displayed in the following screenshot.
 
 ![](Appointment_images/Appointment_img12.png)
 
 
-Figure 66 :  schedule with open appointment using context menu.
+schedule with open appointment using context menu
+{:.caption} 
 
 * The following screenshot displays the Edit Appointment window that opens when you click OpenAppointment option.
 
@@ -188,7 +191,8 @@ Figure 66 :  schedule with open appointment using context menu.
 ![](Appointment_images/Appointment_img13.png)
 
 
-Figure 67 : schedule with display the edit appointment window.
+schedule with display the edit appointment window.
+{:.caption} 
 
 * Click Done button to save the updated values.
 
@@ -196,7 +200,7 @@ Figure 67 : schedule with display the edit appointment window.
 
 ## Appointment Deletion
 
-###Using quick appointment window
+### Using quick appointment window
 
 * The delete option is available in the quick appointment window which will be opened when you single-click the appointments. To delete an appointment, click on the required appointment and then click the delete icon present in the quick appointment window as follows.
 
@@ -205,7 +209,8 @@ Figure 67 : schedule with display the edit appointment window.
 ![](Appointment_images/Appointment_img14.png)
 
 
-Figure 69 : schedule with Appointment deletion.
+schedule with Appointment deletion.
+{:.caption} 
 
 * When you click the delete icon, the appointment is deleted as displayed in the following screenshot.
 
@@ -214,9 +219,10 @@ Figure 69 : schedule with Appointment deletion.
 ![](Appointment_images/Appointment_img15.png)
 
 
-Figure 70 : schedule with after the appointment deletion.
+schedule with after the appointment deletion.
+{:.caption} 
 
-###Using Context menu
+### Using Context menu
 
 * To delete the appointments using Context menu option, select the Delete Appointment from the context menu that pops up when you right-click the appointment to be deleted. It is displayed in the following screenshot.
 
@@ -225,7 +231,8 @@ Figure 70 : schedule with after the appointment deletion.
 ![](Appointment_images/Appointment_img16.png)
 
 
-Figure 71 : schedule with appointment deletion using context menu.
+schedule with appointment deletion using context menu.
+{:.caption} 
 
 
 
@@ -287,7 +294,8 @@ SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 ![](Appointment_images/Appointment_img19.png)
 
 
-Figure 75: schedule with appointment resize.
+schedule with appointment resize.
+{:.caption} 
 
 * Once the resizing is stopped, the resized appointment with its new start time is displayed as follows.
 
@@ -296,7 +304,8 @@ Figure 75: schedule with appointment resize.
 ![](Appointment_images/Appointment_img20.png)
 
 
-Figure 76: schedule with after the appointment resized.
+schedule with after the appointment resized
+{:.caption} 
 
 
 
@@ -306,14 +315,15 @@ Figure 76: schedule with after the appointment resized.
 1. Using Search string
 2. Using Filters
 
-###Using Search string
+### Using Search string
 
 * Schedule control contains list of appointments. When you want to check some appointment that exist in the schedule, it is possible to search the appointment in the schedule datasource. 
 * The public method searchAppointment is used to search the appointment in the schedule data source. It contains four arguments such as search string, search field, filter operator and ignorecase.
-1. Search string is used to search the string in the appointments. 
-2. Search field is the field, where only search operation takes place. (optional)
-3. Filter operation contain keywords like contains, greaterthan or lessthan. (optional)
-4. Ignorecase is a Boolean value to set the search string as case sensitive or not. (optional)
+  
+  1. Search string is used to search the string in the appointments. 
+  2. Search field is the field, where only search operation takes place. (optional)
+  3. Filter operation contain keywords like contains, greaterthan or lessthan. (optional)
+  4. Ignorecase is a Boolean value to set the search string as case sensitive or not. (optional)
 
 Use the following code example to search the appointment on the schedule datasource,
 
@@ -438,7 +448,8 @@ Execute the above code to render the following output.
 ![](Appointment_images/Appointment_img21.png)
 
 
-Figure 125: Schedule with appointment search
+Schedule with appointment search
+{:.caption} 
 
 
 
@@ -449,7 +460,8 @@ Figure 125: Schedule with appointment search
 ![](Appointment_images/Appointment_img22.png)
 
 
-Figure 126 : Grid with appointment search result
+Grid with appointment search result
+{:.caption} 
 
 ###Using Filters
 
@@ -614,8 +626,8 @@ Execute the above code to render the following output.
 
 ![](Appointment_images/Appointment_img23.png)
 
-
-Figure 127: Schedule with search appointment filters
+Schedule with search appointment filters
+{:.caption} 
 
 * Click the search button to enable the filter option.
 
@@ -624,7 +636,8 @@ Figure 127: Schedule with search appointment filters
 ![](Appointment_images/Appointment_img24.png)
 
 
-Figure 128: Grid with appointment search result
+Grid with appointment search result
+{:.caption} 
 
 
 
@@ -667,21 +680,17 @@ SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 
 * In the following screenshot, the Schedule control is displayed with the appointments in an order before the drag and drop action takes place.
 
-
-
 ![](Appointment_images/Appointment_img25.png)
 
-
-Figure 72 : schedule with appointment drag and drop.
+schedule with appointment drag and drop.
+{:.caption} 
 
 * When the appointment with the Subject “Daily Planet” is being dragged from its original location, it looks as the one following screenshot with the shadow of the appointment casting behind it.
 
-
-
 ![](Appointment_images/Appointment_img26.png)
 
-
-Figure 73 : schedule with appointment while dragging in the cell.
+schedule with appointment while dragging in the cell.
+{:.caption} 
 
 * The following screenshot displays the appointment with the subject “Daily Planet” in the timeline 1.00 AM – 2.00 AM (02 May, 2014) is dropped to the new location to the date 29th April, 2014 in the timeline between 3.00 AM – 4.00 AM.
 
@@ -690,7 +699,8 @@ Figure 73 : schedule with appointment while dragging in the cell.
 ![](Appointment_images/Appointment_img27.png)
 
 
-Figure 74 :  schedule with appointment dropped in the cell.
+schedule with appointment dropped in the cell.
+{:.caption} 
 
 
 
@@ -703,22 +713,19 @@ Figure 74 :  schedule with appointment dropped in the cell.
 
 * The various built-in recurrence patterns available are 
 
-1. Daily 
-
-2. Weekly 
-
-3. Monthly 
-
-4. Yearly 
-
-5. Every weekday
+  1. Daily 
+  2. Weekly 
+  3. Monthly 
+  4. Yearly 
+  5. Every weekday
 
 * To create a recurrence appointment, you can select (check) the repeat option in the normal appointment window else you can select the New Recurring Appointment option from the Contextmenu that pops up when you right-click on the Schedule cells as follows.
 
 ![](Appointment_images/Appointment_img28.png)
 
 
-Figure 77 : schedule with new recurrence appointment.
+schedule with new recurrence appointment.
+{:.caption} 
 
 * On clicking the New Recurring Appointment option opens the recurrence appointment window as displayed in the following screenshot.
 
@@ -726,8 +733,8 @@ Figure 77 : schedule with new recurrence appointment.
 
 ![](Appointment_images/Appointment_img29.png)
 
-
-Figure 78 : schedule with creating the new recurrence.
+schedule with creating the new recurrence.
+{:.caption} 
 
 * Once the required options are selected in the recurrence window click the Done button.It navigates you to its parent window with the appointment details. Fill-in those required details and click Done to save it.
 
@@ -736,14 +743,16 @@ Figure 78 : schedule with creating the new recurrence.
 ![](Appointment_images/Appointment_img30.png)
 
 
-Figure 79: schedule with after created the new recurrence.
+schedule with after created the new recurrence.
+{:.caption} 
 
 * The recurrence appointment after getting saved to the Schedule is displayed as follows.
 
 ![](Appointment_images/Appointment_img31.png)
 
 
-Figure 80 : schedule with after created the new recurrence appointment in week view.
+schedule with after created the new recurrence appointment in week view.
+{:.caption} 
 
 * Since, you have chosen the option to end the recurrence after 10 occurrences on daily basis, the appointments repeat for continuous 10 days and then end. 
 * This is viewed clearly by navigating to the month view, where the appointment with subject Automated testing saved for 10 days from 12 Aug 2014 to 21 Aug 2014.
@@ -753,5 +762,6 @@ Figure 80 : schedule with after created the new recurrence appointment in week v
 ![](Appointment_images/Appointment_img32.png)
 
 
-Figure 81 :  schedule with created recurrence appointment in month view.
+schedule with created recurrence appointment in month view.
+{:.caption} 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization
+title: Localization | RichTextEditor | ASP.NET Webforms | Syncfusion
 description: localization
 platform: aspnet
 control: RichTextEditor
@@ -196,5 +196,6 @@ Configure the RTE toolbar items for Spanish culture in java script
 
 ![](Localization_images/Localization_img1.png)
 
- _Showcase of RTE with Spanish culture_
+Showcase of RTE with Spanish culture
+{:.caption} 
 

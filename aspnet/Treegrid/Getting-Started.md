@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | TreeGrid | ASP.NET | Syncfusion
 description: getting started
 platform: aspnet
 control: TreeGrid
@@ -48,7 +48,7 @@ This section explains how to create a TreeGrid control in your application with 
 		</head>
 
    ~~~
-   {:.prettyprint }
+
 
 3. Initialize the TreeGrid with empty dataSource like below code snippet
 
@@ -85,11 +85,11 @@ This section explains how to create a TreeGrid control in your application with 
 		</body>
 
    ~~~
-   {:.prettyprint }
+
 
    ![](Getting-Started_images/Getting-Started_img2.png) 
 
-4.Create data  source in default.aspx.cs file and assign the data source to the TreeGrid control
+4. Create data  source in default.aspx.cs file and assign the data source to the TreeGrid control
 
 {% highlight c# %}
 
@@ -107,243 +107,243 @@ protected void Page_Load(object sender, EventArgs e)
 
 public class TaskDetails
 
+{
+
+    public int TaskID { get; set; }
+
+    public string TaskName { get; set; }
+
+    public string StartDate { get; set; }
+
+    public string EndDate { get; set; }
+
+    public int Duration { get; set; }
+
+    public int Progress { get; set; }
+
+    public List<TaskDetails> SubTasks { get; set; }
+
+}
+
+
+
+public class TaskDetailsCollection
+
+{
+
+    public List<TaskDetails> GetDataSource()
+
+    {
+
+        List<TaskDetails> tasks = new List<TaskDetails>();
+
+
+
+
+
+        tasks.Add(new TaskDetails()
+
         {
 
-            public int TaskID { get; set; }
+            TaskID = 1,
 
-            public string TaskName { get; set; }
+            TaskName = "Planning",
 
-            public string StartDate { get; set; }
+            StartDate = "02/03/2014",
 
-            public string EndDate { get; set; }
+            EndDate = "02/07/2014",
 
-            public int Duration { get; set; }
+            Progress = 56,
 
-            public int Progress { get; set; }
+            Duration = 5,
 
-            public List<TaskDetails> SubTasks { get; set; }
-
-        }
+        });
 
 
 
-        public class TaskDetailsCollection
+        tasks[0].SubTasks = new List<TaskDetails>();
+
+
+
+
+
+        tasks[0].SubTasks.Add(new TaskDetails()
 
         {
 
-            public List<TaskDetails> GetDataSource()
+            TaskID = 2,
 
-            {
+            TaskName = "Plan timeline",
 
-                List<TaskDetails> tasks = new List<TaskDetails>();
+            StartDate = "02/03/2014",
 
+            EndDate = "02/07/2014",
 
+            Duration = 5,
 
+            Progress = 100
 
+        });
 
-                tasks.Add(new TaskDetails()
+        tasks[0].SubTasks.Add(new TaskDetails()
 
-                {
+        {
 
-                    TaskID = 1,
+            TaskID = 3,
 
-                    TaskName = "Planning",
+            TaskName = "Plan budget",
 
-                    StartDate = "02/03/2014",
+            StartDate = "02/03/2014",
 
-                    EndDate = "02/07/2014",
+            EndDate = "02/07/2014",
 
-                    Progress = 56,
+            Duration = 5,
 
-                    Duration = 5,
+            Progress = 100
 
-                });
+        });
 
+        tasks[0].SubTasks.Add(new TaskDetails()
 
+        {
 
-                tasks[0].SubTasks = new List<TaskDetails>();
+            TaskID = 4,
 
+            TaskName = "Allocate resources",
 
+            StartDate = "02/03/2014",
 
+            EndDate = "02/07/2014",
 
+            Duration = 5,
 
-                tasks[0].SubTasks.Add(new TaskDetails()
+            Progress = 100
 
-                {
+        });
 
-                    TaskID = 2,
+        tasks[0].SubTasks.Add(new TaskDetails()
 
-                    TaskName = "Plan timeline",
+        {
 
-                    StartDate = "02/03/2014",
+            TaskID = 5,
 
-                    EndDate = "02/07/2014",
+            TaskName = "Planning complete",
 
-                    Duration = 5,
+            StartDate = "02/07/2014",
 
-                    Progress = 100
+            EndDate = "02/07/2014",
 
-                });
+            Duration = 0,
 
-                tasks[0].SubTasks.Add(new TaskDetails()
+            Progress = 40
 
-                {
+        });
 
-                    TaskID = 3,
 
-                    TaskName = "Plan budget",
 
-                    StartDate = "02/03/2014",
+        tasks.Add(new TaskDetails()
 
-                    EndDate = "02/07/2014",
+        {
 
-                    Duration = 5,
+            TaskID = 6,
 
-                    Progress = 100
+            TaskName = "Design",
 
-                });
+            StartDate = "02/10/2014",
 
-                tasks[0].SubTasks.Add(new TaskDetails()
+            EndDate = "02/14/2014",
 
-                {
+            Duration = 3,
 
-                    TaskID = 4,
+            Progress = 86
 
-                    TaskName = "Allocate resources",
+        });
 
-                    StartDate = "02/03/2014",
 
-                    EndDate = "02/07/2014",
 
-                    Duration = 5,
+        tasks[1].SubTasks = new List<TaskDetails>();
 
-                    Progress = 100
 
-                });
 
-                tasks[0].SubTasks.Add(new TaskDetails()
+        tasks[1].SubTasks.Add(new TaskDetails()
 
-                {
+        {
 
-                    TaskID = 5,
+            TaskID = 7,
 
-                    TaskName = "Planning complete",
+            TaskName = "Software Specification",
 
-                    StartDate = "02/07/2014",
+            StartDate = "02/10/2014",
 
-                    EndDate = "02/07/2014",
+            EndDate = "02/12/2014",
 
-                    Duration = 0,
+            Duration = 3,
 
-                    Progress = 40
+            Progress = 60
 
-                });
+        });
 
+        tasks[1].SubTasks.Add(new TaskDetails()
 
+        {
 
-                tasks.Add(new TaskDetails()
+            TaskID = 8,
 
-                {
+            TaskName = "Develop prototype",
 
-                    TaskID = 6,
+            StartDate = "02/10/2014",
 
-                    TaskName = "Design",
+            EndDate = "02/12/2014",
 
-                    StartDate = "02/10/2014",
+            Duration = 3,
 
-                    EndDate = "02/14/2014",
+            Progress = 100
 
-                    Duration = 3,
+        });
 
-                    Progress = 86
+        tasks[1].SubTasks.Add(new TaskDetails()
 
-                });
+        {
 
+            TaskID = 9,
 
+            TaskName = "Get approval from customer",
 
-                tasks[1].SubTasks = new List<TaskDetails>();
+            StartDate = "02/13/2014",
 
+            EndDate = "02/14/2014",
 
+            Duration = 2,
 
-                tasks[1].SubTasks.Add(new TaskDetails()
+            Progress = 100
 
-                {
+        });
 
-                    TaskID = 7,
+        tasks[1].SubTasks.Add(new TaskDetails()
 
-                    TaskName = "Software Specification",
+        {
 
-                    StartDate = "02/10/2014",
+            TaskID = 10,
 
-                    EndDate = "02/12/2014",
+            TaskName = "Design complete",
 
-                    Duration = 3,
+            StartDate = "02/14/2014",
 
-                    Progress = 60
+            EndDate = "02/14/2014",
 
-                });
+            Duration = 0,
 
-                tasks[1].SubTasks.Add(new TaskDetails()
+            Progress = 65
 
-                {
+        });
 
-                    TaskID = 8,
 
-                    TaskName = "Develop prototype",
 
-                    StartDate = "02/10/2014",
+        return tasks;
 
-                    EndDate = "02/12/2014",
+    }
 
-                    Duration = 3,
-
-                    Progress = 100
-
-                });
-
-                tasks[1].SubTasks.Add(new TaskDetails()
-
-                {
-
-                    TaskID = 9,
-
-                    TaskName = "Get approval from customer",
-
-                    StartDate = "02/13/2014",
-
-                    EndDate = "02/14/2014",
-
-                    Duration = 2,
-
-                    Progress = 100
-
-                });
-
-                tasks[1].SubTasks.Add(new TaskDetails()
-
-                {
-
-                    TaskID = 10,
-
-                    TaskName = "Design complete",
-
-                    StartDate = "02/14/2014",
-
-                    EndDate = "02/14/2014",
-
-                    Duration = 0,
-
-                    Progress = 65
-
-                });
-
-
-
-                return tasks;
-
-            }
-
-        }
+}
 		
 {% endhighlight %}
 
@@ -352,11 +352,11 @@ A TreeGrid is displayed as the output in the following screenshot.
 ![](Getting-Started_images/Getting-Started_img3.png)
 
 
-## Enable Sorting
+### Enable Sorting
 
 The TreeGrid control has sorting functionality, to arrange the data in ascending or descending order based on a particular column.
 
-## Multicolumn Sorting
+### Multicolumn Sorting
 
 Enable the multicolumn sorting in TreeGrid by setting AllowMultiSorting as True. You can sort multiple columns in TreeGrid, by selecting the desired column header 	while holding the CTRLkey.
 

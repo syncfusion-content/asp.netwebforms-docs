@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview-Control
+title: Overview Control | Diagram | ASP.NET Webforms | Syncfusion
 description: overview control
 platform: aspnet
 control: Diagram
@@ -42,4 +42,5 @@ The following code illustrates how to create overview control.
  ![C:/Users/swarneshk/AppData/Local/Microsoft/Windows/INetCache/Content.Word/overview final.png](Overview-Control_images/Overview-Control_img1.png)
 
 
-_Overview_
+Overview
+{:.caption} 

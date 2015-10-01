@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize-Drag-and-Drop-element-while-grouping
+title: Customize Drag and Drop element while grouping | Grid | ASP.NET Webforms | Syncfusion
 description: customize drag and drop element while grouping
 platform: aspnet
 control: Grid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Accordion | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: Accordion 
@@ -17,7 +17,7 @@ The ASP.NET WebForms Accordion control allows you to provide multiple panes and 
 
 The following steps describe the creation of Accordion control.
 
-* You can create an ASP.NET WebFormsProject and add necessary Dll’s and Scripts with the help of the given [ASP.NET WebForms-Getting Started](http://docs.syncfusion.com/js/) Documentation.
+* You can create an ASP.NET WebFormsProject and add necessary Dll’s and Scripts with the help of the given [ASP.NET WebForms-Getting Started](http://docs.syncfusion.com/aspnetmvc/accordion/getting-started) Documentation.
 * Add the following code example to the corresponding aspx page to render Accordion.
 * Add Accordion widget, and initialize Accordion control as follows.
 {% highlight html %}

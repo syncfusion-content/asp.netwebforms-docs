@@ -1,6 +1,6 @@
 ---
 layout: post
-title: State-Maintenance
+title: State Maintenance | Tab | ASP.NET | Syncfusion
 description: state maintenance
 platform: aspnet
 control: Tab
@@ -14,8 +14,6 @@ When the page is refreshed or reloaded, the Tab state is changed, that is, the f
 The following code example is used to render the Tab control with state maintenance. 
 
 Add the following ASPX for Tab state maintenance.
-
-
 
 {% highlight html %}
 
@@ -50,12 +48,6 @@ Add the following ASPX for Tab state maintenance.
     </Items>
 
 </ej:Tab>
-
-
-
-
-
-
 
 {% endhighlight %}
 

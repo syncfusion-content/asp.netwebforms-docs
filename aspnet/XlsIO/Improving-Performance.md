@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Improving-Performance
+title: Improving Performance | XlsIO | ASP.NET | Syncfusion
 description: improving performance
 platform: aspnet
-control: XlsIO	
+control: Xlsio
 documentation: ug
 ---
 
@@ -11,15 +11,15 @@ documentation: ug
 
 Essential XlsIO can create large reports in a few seconds. 
 
-![](Improving-Performance_images/Improving-Performance_img1.jpeg)
+Tips to improve the Performance
 
- Tips to improve the Performance
 * Use default styles, to apply styles for a whole column instead of applying to each cell.
 * Minimize AutoFit manipulations.
 * Get UsedRange globally. It is recommended to get the UsedRange in loops as follows.
 
-{% highlight C# %}
 
+
+{% highlight C# %} 
 
 
 int lastRow = sheet.UsedRange.LastRow
@@ -44,7 +44,7 @@ for(int i = 0;i<sheet.UsedRange.LastRow;i++)
 
 }
 
-{% endhighlight %}
+ {% endhighlight %}
 
 * Use IMigrantRange to optimize performance while dealing with large data.
 * Use global styles, rather than using different cell styles for each cell/range.
@@ -55,11 +55,13 @@ for(int i = 0;i<sheet.UsedRange.LastRow;i++)
 
 
 
-{% highlight C# %}
+
+
+
 
 application.DataProviderType = ExcelDataProviderType.Unsafe;
 
-{% endhighlight %}
+
 
 * Make use of GetText, SetText, GetNumber, and SetNumber methods from worksheet object that enable you to get/set values without range object.
 * Set IWorkbook.DetectDateTimeInValue property to false with Value2 property, if you are sure that the given value is not of DateTime data type that improves time performance.
@@ -71,10 +73,12 @@ application.DataProviderType = ExcelDataProviderType.Unsafe;
 
 ## Filling large data by using IMigrantRange
 
+The IMigrantRange interface can be used to access and manipulate worksheet range. This is an optimal method of writing values with better memory performance. The following code example illustrates how the IMigrantRange is accessed.
 
-The IMigrantRange interface can be used to access and manipulate worksheet range. This is an optimal method of writing values with better memory performance. The following code example illustrates how the IMigrantRange is accessed. 
+{% tabs %}
 
-{% highlight C# %}
+{% highlight C# %} 
+
 
 IMigrantRange migrantRange = workbook.Worksheets[0].MigrantRange; 
 
@@ -112,9 +116,9 @@ migrantRange.SetValue(true);
    }
 }
 
-{% endhighlight %}
+ {% endhighlight %}
 
-{% highlight vbnet  %}
+{% highlight vbnet %} 
 
 'Writes Data.
 Dim row As Integer 
@@ -143,7 +147,8 @@ migrantRange.SetValue(5.5)
         Next
 Next
 
-{% endhighlight %}
 
 
+{% endhighlight %} 
 
+{% endtabs %}

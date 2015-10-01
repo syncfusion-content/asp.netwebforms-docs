@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OLAP-Chart-Elements
+title: OLAP Chart Elements | OLAPChart | ASP.NET Webforms | Syncfusion
 description: olap chart elements
 platform: aspnet
 control: OLAP Chart

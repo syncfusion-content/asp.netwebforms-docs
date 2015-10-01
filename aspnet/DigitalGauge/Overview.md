@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | DigitalGauge | ASP.NET Webforms | Syncfusion
 description: overview
 platform: aspnet
 control: Digital Gauge
@@ -19,7 +19,8 @@ Digital Gauge for Essential Studio encompasses the visualization of the segmente
 
 ![](Overview_images/Overview_img1.png)
 
-_Figure 1: Digital Gauge_
+Digital Gauge
+{:.caption} 
 
 There are several other properties available in Digital Gauge which enable you to peform various customizations such as changing the space between the characters, segment width, segment length, spacing between the segments, and other customizations.
 

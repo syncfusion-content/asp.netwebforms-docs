@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stripline
+title: Stripline | Gantt | ASP.NET Webforms | Syncfusion
 description: stripline
 platform: aspnet
 control: Gantt
@@ -61,6 +61,7 @@ The following screenshot shows Stripline in Gantt control.
 
 ![](Stripline_images/Stripline_img1.png) 
 
-_Figure : Stripline_
+Figure : Stripline
+{:.caption}
 
 

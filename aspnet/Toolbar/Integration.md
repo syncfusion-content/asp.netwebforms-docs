@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integration
+title: Integration | Toolbar | ASP.NET | Syncfusion
 description: integration
 platform: aspnet
 control: Toolbar
@@ -25,17 +25,16 @@ To know more detail about the Angular binding, refer to the following link locat
 <http://docs.syncfusion.com/js/angularjs>
 
 N> Add the following script files as given in the following example to access the angular binding. They provide JS library for angular binding.
-
-* _angular-min.js_
-* _ej.widget.angular.min.js_
+N>
+N> _angular-min.js_
+N>
+N> _ej.widget.angular.min.js_
 
 The following code example explains the way to bind the data to the Toolbar widget through angular support.
 
 Add the following code example into the corresponding ASPX page to render the ToolBar Control
 
 {% highlight html %}
-
-
 
 <!DOCTYPE html>
 
@@ -85,99 +84,89 @@ Add the following code example into the corresponding ASPX page to render the To
 
 </html>
 
-
-
-
-
 {% endhighlight %}
 
 
 
 {% highlight js %}
 
+<script>
 
+     var list = [
 
-     <script>
+{
 
-         var list = [
+    empid: "1",
 
-    {
-
-        empid: "1",
-
-        spriteCss: "mailtools movetofolder",
-
-
-
-    }, {
-
-        empid: "2",
-
-        spriteCss: "mailtools categorize",
+    spriteCss: "mailtools movetofolder",
 
 
 
-    }, {
+}, {
 
-        empid: "3",
+    empid: "2",
 
-        spriteCss: "mailtools flag",
-
-
-
-    }, {
-
-        empid: "4",
-
-        spriteCss: "mailtools forward",
+    spriteCss: "mailtools categorize",
 
 
 
-    }, {
+}, {
 
-        empid: "5",
+    empid: "3",
 
-        spriteCss: "mailtools newmail",
-
-
-
-    },
-
-     {
-
-         empid: "6",
-
-         spriteCss: "mailtools reply",
+    spriteCss: "mailtools flag",
 
 
 
-     },
+}, {
 
-     {
+    empid: "4",
 
-         empid: "7",
-
-         spriteCss: "mailtools done",
+    spriteCss: "mailtools forward",
 
 
 
-     }
+}, {
 
-         ];
+    empid: "5",
 
-
-
-         angular.module('toolApp', ['ejangular']).controller('ToolCtrl', function ($scope) {
-
-             $scope.dataList = list;
-
-         });
-
-    </script>
+    spriteCss: "mailtools newmail",
 
 
 
+},
 
+ {
+
+     empid: "6",
+
+     spriteCss: "mailtools reply",
+
+
+
+ },
+
+ {
+
+     empid: "7",
+
+     spriteCss: "mailtools done",
+
+
+
+ }
+
+     ];
+
+
+
+     angular.module('toolApp', ['ejangular']).controller('ToolCtrl', function ($scope) {
+
+         $scope.dataList = list;
+
+     });
+
+</script>
 
 {% endhighlight %}
 
@@ -185,101 +174,95 @@ Add the following code example into the corresponding ASPX page to render the To
 
 {% highlight css %}
 
+<style type="text/css">
 
+     .darktheme .cols-sample-area .e-tooltxt .mailtools {
 
-    <style type="text/css">
+        background-image: url('../images/toolbar/maild.png');
 
-         .darktheme .cols-sample-area .e-tooltxt .mailtools {
-
-            background-image: url('../images/toolbar/maild.png');
-
-        }
-
-
-
-        .cols-sample-area .e-tooltxt .mailtools {
-
-            display: block;
-
-            background-image: url('../images/toolbar/maill.png');
-
-            height: 24px;
-
-            width: 24px;
-
-            background-repeat: no-repeat;
-
-        }
+    }
 
 
 
-        .e-tooltxt:hover .mailtools, .darktheme .cols-sample-area .e-tooltxt:hover .mailtools {
+    .cols-sample-area .e-tooltxt .mailtools {
 
-            background-image: url('../images/toolbar/mailh.png');
+        display: block;
 
-        }
+        background-image: url('../images/toolbar/maill.png');
 
+        height: 24px;
 
+        width: 24px;
 
-        .mailtools.done {
+        background-repeat: no-repeat;
 
-            background-position: -11px -140px;
-
-        }
-
-
-
-        .mailtools.movetofolder {
-
-            background-position: -12px -40px;
-
-        }
+    }
 
 
 
-        .mailtools.categorize {
+    .e-tooltxt:hover .mailtools, .darktheme .cols-sample-area .e-tooltxt:hover .mailtools {
 
-            background-position: -14px -248px;
+        background-image: url('../images/toolbar/mailh.png');
 
-        }
-
-
-
-        .mailtools.flag {
-
-            background-position: -13px -282px;
-
-        }
+    }
 
 
 
-        .mailtools.forward {
+    .mailtools.done {
 
-            background-position: -14px -314px;
+        background-position: -11px -140px;
 
-        }
-
-
-
-        .mailtools.newmail {
-
-            background-position: -14px -348px;
-
-        }
+    }
 
 
 
-        .mailtools.reply {
+    .mailtools.movetofolder {
 
-            background-position: -14px -388px;
+        background-position: -12px -40px;
 
-        }
-
-    </style>
+    }
 
 
 
+    .mailtools.categorize {
 
+        background-position: -14px -248px;
+
+    }
+
+
+
+    .mailtools.flag {
+
+        background-position: -13px -282px;
+
+    }
+
+
+
+    .mailtools.forward {
+
+        background-position: -14px -314px;
+
+    }
+
+
+
+    .mailtools.newmail {
+
+        background-position: -14px -348px;
+
+    }
+
+
+
+    .mailtools.reply {
+
+        background-position: -14px -388px;
+
+    }
+
+</style>
 
 {% endhighlight %}
 
@@ -312,9 +295,10 @@ For more information about the knockout binding, refer to the following online d
 <http://docs.syncfusion.com/js/knockoutjs>
 
 N> Add the following script files along with the given code to access the knockout binding. They provide JS library for knockout binding.
-
-* _knockout-min.js_
-* _ej.widget.ko-latest.min.js_
+N>
+N> _knockout-min.js_
+N>
+N> _ej.widget.ko-latest.min.js_
 
 The link for those script files are as follows:
 
@@ -327,8 +311,6 @@ The following code example explains how to bind data to the Toolbar through the 
 Add the following code example into the corresponding ASPX page to render the Toolbar control
 
 {% highlight html %}
-
-
 
 <!DOCTYPE html>
 
@@ -374,15 +356,11 @@ Add the following code example into the corresponding ASPX page to render the To
 
 </html>
 
-
-
 {% endhighlight %}
 
 
 
 {% highlight js %}
-
-
 
     <script>
 
@@ -492,15 +470,11 @@ Add the following code example into the corresponding ASPX page to render the To
 
     </script>
 
-
-
 {% endhighlight %}
 
 
 
 {% highlight css %}
-
-
 
 <style type="text/css" > .darktheme .cols-sample-area .e-tooltxt .editTools {
 
@@ -641,10 +615,6 @@ Add the following code example into the corresponding ASPX page to render the To
 
 
 </style >
-
-
-
-
 
 {% endhighlight %}
 

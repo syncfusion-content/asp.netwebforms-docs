@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Context-Menu
+title: Context Menu | TreeGrid | ASP.NET | Syncfusion
 description: context menu
 platform: aspnet
 control: TreeGrid
@@ -15,17 +15,11 @@ The ShowContextMenu property is used to enable or disable the context menu, defa
 
 The ContextMenuItems property is used to add the menu items to context menu, this property renders ‘Add’ and ‘Delete’ by default when the menu items are not provided.
 
-
-
-
-
-
-
 {% highlight html %}
 
 <ej:TreeGrid ID="treegrid1" runat="server">
 
-// ...
+       // ...
 
        <EditSettings AllowEditing="true" EditMode="rowEditing" />
 
@@ -35,11 +29,7 @@ The ContextMenuItems property is used to add the menu items to context menu, thi
 
         // ...
 
-   </ej:TreeGrid>
-
-
-
-
+</ej:TreeGrid>
 
 {% endhighlight %}
 
@@ -47,7 +37,7 @@ The ContextMenuItems property is used to add the menu items to context menu, thi
 
 The following screenshot displays the Context menu in TreeGrid control.
 
- ![D:/IMG_28112014_150551.png](Context-Menu_images/Context-Menu_img1.png) 
+ ![](Context-Menu_images/Context-Menu_img1.png) 
 
 
 
@@ -67,11 +57,9 @@ Context menu can be customized by adding a new custom menu item to it. In TreeGr
 
 {% highlight html %}
 
-
-
 <ej:TreeGrid ID="treegrid1" runat="server" ContextMenuOpen="customMenu">
 
-// ...
+        // ...
 
        <ContextMenuSettings ShowContextMenu="true" />
 
@@ -85,41 +73,35 @@ Context menu can be customized by adding a new custom menu item to it. In TreeGr
 
   function customMenu( args )
 
-{
+  {
 
-   args.contextMenuItems.push(
+    args.contextMenuItems.push(
 
-   {
+    {
 
       headerText: "customMenu",
 
-   iconPath: “url(…/images/custommenu.png)”,
+      iconPath: “url(…/images/custommenu.png)”,
 
-   eventHandler: customMenuClick,
+      eventHandler: customMenuClick,
 
-   }
+    }
 
-   );
+    );
 
-}
+  }
 
   function customMenuClick( args )
 
   {
 
-        // ...     
+      // ...     
 
-     // ...     
+      // ...     
 
   }
 
 </script>
-
-
-
-
-
-
 
 {% endhighlight %}
 

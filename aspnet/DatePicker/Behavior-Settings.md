@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Behavior-Settings
+title: Behavior Settings | DatePicker | ASP.NET Webforms | Syncfusion
 description: behavior settings
 platform: aspnet
 control: DatePicker
@@ -87,7 +87,7 @@ The following screenshot displays the output for the above code.
 
 
 
-[](Behavior-Settings_images/Behavior-Settings_img2.png) 
+![](Behavior-Settings_images/Behavior-Settings_img2.png) 
 
 
 
@@ -157,7 +157,7 @@ The following steps explain you how to specify the fields mapping in the DatePic
 
 In the ASPX page, include the following DatePicker control code example.
 
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -195,12 +195,14 @@ In the ASPX page, include the following DatePicker control code example.
 
 {% endhighlight %}
 
+{% endtabs %}
+
 
 
 Add the following styles to specify the fields mapping in DatePicker control.
 
 
-Note: Images for this example are available in ‘installed location /Content/images’ and you need to define images in the mentioned CSS. Henceforth, the images are displayed._
+N> Images for this example are available in ‘installed location /Content/images’ and you need to define images in the mentioned CSS. Henceforth, the images are displayed.
 
 
 

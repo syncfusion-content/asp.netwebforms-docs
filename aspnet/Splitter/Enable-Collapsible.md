@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enable-Collapsible
+title: Enable Collapsible | Splitter | ASP.NET | Syncfusion
 description: enable collapsible
 platform: aspnet
 control: Splitter
@@ -17,11 +17,7 @@ The following steps explain the implementation of the Collapsible option in S
 
 In an ASPX page, define the Splitter control and add the contents correspondingly. Set the Collapsible property as true.
 
-
-
 {% highlight html %}
-
-
 
 <ej:Splitter ID="splitter" Height="280" Width="600" runat="server">
 
@@ -58,8 +54,6 @@ In an ASPX page, define the Splitter control and add the contents correspondingl
             </ej:SplitPane>
 
 </ej:Splitter>
-
-
 
 {% endhighlight %}
 

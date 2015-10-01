@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add-Group-Tiles
+title: Add Group Tiles | Tile | ASP.NET | Syncfusion
 description: add group tiles
 platform: aspnet
 control: Tile
@@ -35,8 +35,6 @@ To render group tile, refer to the following code example.
 
 {% highlight html %}
 
-
-
 <div class="group">
 
     <div class="column">
@@ -46,10 +44,6 @@ To render group tile, refer to the following code example.
     </div>
 
 </div>
-
-
-
-
 
 {% endhighlight %}
 
@@ -62,8 +56,6 @@ To render small-col-2 grouped tile, you need to render the number of tiles insid
  Refer to the following code examples.
 
 {% highlight html %}
-
-
 
 <div class="group">
 
@@ -237,10 +229,6 @@ To render small-col-2 grouped tile, you need to render the number of tiles insid
 
     </script>
 
-
-
-
-
 {% endhighlight %}
 
 
@@ -248,5 +236,5 @@ To render small-col-2 grouped tile, you need to render the number of tiles insid
 ![](Add-Group-Tiles_images/Add-Group-Tiles_img1.png) 
 
 
-_Tile - Group Tiles_
-
+Tile - Group Tiles
+{:.caption}

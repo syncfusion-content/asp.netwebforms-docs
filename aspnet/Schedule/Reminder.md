@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reminder
+title: Reminder | Schedule | ASP.NET Webforms | Syncfusion
 description: reminder
 platform: aspnet
 control: Schedule
@@ -284,7 +284,8 @@ Execute the above code to render the following output.
 ![](Reminder_images/Reminder_img1.png)
 
 
-   Figure 106 :  schedule with Reminder.
+schedule with Reminder
+{:.caption} 
 
 
 

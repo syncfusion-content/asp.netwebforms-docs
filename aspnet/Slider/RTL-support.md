@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RTL-support
+title: RTL support | Slider | ASP.NET | Syncfusion
 description: rtl support
 platform: aspnet
 control: Slider
@@ -19,13 +19,7 @@ In an ASPX page, define the Slider control and set the EnableRTL property to tru
 
 {% highlight html %}
 
-
-
 <ej:Slider ID="RangeSlider" runat="server" Width="500" Values="25,75" SliderType="Range" EnableRTL="true"></ej:Slider>
-
-
-
-
 
 {% endhighlight %}
 

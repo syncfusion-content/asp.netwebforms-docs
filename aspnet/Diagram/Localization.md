@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization
+title: Localization | Diagram | ASP.NET Webforms | Syncfusion
 description: localization 
 platform: aspnet
 control: Diagram
@@ -63,5 +63,6 @@ ej.datavisualization.Diagram.Locale["es-ES"] = {
 
 ![](Localization_images/Localization_img1.png) 
 
-_Localization_
+Localization
+{:.caption} 
 

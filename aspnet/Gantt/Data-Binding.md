@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding
+title: Data Binding | Gantt | ASP.NET Webforms | Syncfusion
 description: data binding
 platform: aspnet
 control: Gantt
@@ -19,7 +19,7 @@ In the application that uses Gantt control, you can connect the data source gene
 
 The following code example shows how to bind the hierarchical local data into the Gantt control.
 
-
+{% tabs %}
 
 {% highlight c# %}
 
@@ -293,7 +293,7 @@ namespace ASP_Doc.Gantt
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 The output of the above steps is as follows.
 
@@ -301,7 +301,8 @@ The output of the above steps is as follows.
 
 ![](Data-Binding_images/Data-Binding_img1.png)
 
-_Figure : Data Binding_
+Data Binding
+{:.caption}
 
 ## Self-Referential Data Binding (Flat Data)
 
@@ -310,11 +311,7 @@ Gantt can be rendered from self-referential data structures, by providing two fi
 * ID Field- This field must contain unique values used to identify nodes. Its name should be assigned to the TaskIdMapping property.
 * Parent ID Field- This field must contain values that indicate parent nodes. Its name should be assigned to the ParentTaskIdMapping property.
 
-
-
-
-
-
+{% tabs %}
 
 {% highlight c# %}
 
@@ -744,7 +741,7 @@ namespace ASP_Doc.Gantt
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 The following screenshot shows the output of the above steps.
 
@@ -752,5 +749,6 @@ The following screenshot shows the output of the above steps.
 
 ![](Data-Binding_images/Data-Binding_img2.png) 
 
-_Figure : Self-Referential Data Binding_
+Self-Referential Data Binding
+{:.caption}
 

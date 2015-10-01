@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Behaviour-Customization
+title: Behaviour Customization | Chart | ASP.NET Webforms | Syncfusion
 description: behaviour customization
 platform: aspnet
 control: Chart
@@ -15,6 +15,7 @@ Essential Chart allows you to customize the Chart through events. For example, y
 
 You can acquire the information related to a particular data point of series by moving mouse over the point or by clicking the point using PointRegionMouseMove or PointRegionClick event. PointRegionMouseMove event gets triggered when you move the mouse over the point and the PointRegionClick event gets triggered when you click the point. The following code example illustrates that x and y values of a point gets displayed when you move the mouse over the point or click the point.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -50,6 +51,8 @@ You can acquire the information related to a particular data point of series by 
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![](Behaviour-Customization_images/Behaviour-Customization_img1.png)
 
 
@@ -61,6 +64,8 @@ You can acquire the information related to a particular data point of series by 
 Load: function
 
 This event is handled when the Chart gets loaded; a parameter sender is passed to the handler. Using sender.model, you can access the Chart properties except series that were passed to the chart. 
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -85,9 +90,14 @@ This event is handled when the Chart gets loaded; a parameter sender is passed t
 
 
 {% endhighlight  %}
+
+{% endtabs %}
+
 PreRender: function
 
 This event is handled before the Chart gets rendered; a parameter sender is passed to the handler. Using sender.model, you can access the Chart properties that were passed to the Chart. 
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -115,11 +125,13 @@ This event is handled before the Chart gets rendered; a parameter sender is pass
 
 {% endhighlight  %}
 
+{% endtabs %}
 
 TitleRendering: function
 
 This event is handled before the Chart title gets rendered; a parameter sender is passed to the handler. Using sender.data.title, you can change the title of the Chart after the Chart is loaded.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -145,7 +157,7 @@ This event is handled before the Chart title gets rendered; a parameter sender i
 
 {% endhighlight  %}
 
-
+{% endtabs %}
 
 ### ChartAxis Events:
 
@@ -153,6 +165,7 @@ AxesLabelsInitialize: function
 
 This event is handled before the Chart axis gets rendered; a parameter sender is passed to the handler. Using sender.data.axes, you can change the axis related properties after the Chart is loaded.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -178,12 +191,13 @@ This event is handled before the Chart axis gets rendered; a parameter sender is
 
 {% endhighlight  %}
 
-
+{% endtabs %}
 
 AxesRangeCalculate: function
 
 This event is handled after the Chart axis range gets calculated; a parameter sender is passed to the handler. Using sender.data.range, you can change the range calculated for the Chart axis.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -211,10 +225,13 @@ This event is handled after the Chart axis range gets calculated; a parameter se
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 AxesTitleRendering: function
 
 This event is handled before the Chart axis title gets rendered; a parameter sender is passed to the handler. Using sender.data.Title, you can change the axis title after the Chart is loaded.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -241,10 +258,14 @@ This event is handled before the Chart axis title gets rendered; a parameter sen
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 
 AxesLabelRendering: function
 
 This event is handled before the Chart axis label gets rendered; a parameter sender is passed to the handler. Using sender.data.label.Text, you can change the axis labels after the Chart is loaded.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -270,11 +291,15 @@ This event is handled before the Chart axis label gets rendered; a parameter sen
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ### Series Events:
 
 SeriesRendering: function
 
 This event is handled before the Chart series gets rendered; a parameter sender is passed to the handler. Using sender.data.series, you can get access to the series properties.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -302,10 +327,14 @@ This event is handled before the Chart series gets rendered; a parameter sender 
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 
 SymbolRendering: function
 
 This event is handled before the marker of each series point gets rendered; a parameter sender is passed to the handler. Using sender.data you can get access style and location of the symbol.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -333,9 +362,13 @@ This event is handled before the marker of each series point gets rendered; a pa
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 DisplayTextRendering: function
 
 This event is handled before the dataLabel of each series points gets rendered; a parameter sender is passed to the handler. Using sender.data.text you can change the dataLabel of each point in the series.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -362,12 +395,14 @@ This event is handled before the dataLabel of each series points gets rendered; 
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 
 AnimationComplete: function
 
 This event is handled after the series animation is completed; a parameter sender is passed to the handler.  
 
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -394,11 +429,15 @@ This event is handled after the series animation is completed; a parameter sende
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ### Legend Events:
 
 LegendItemRendering: function
 
 This event is handled before the legend of each series points gets rendered; a parameter sender is passed to the handler. Using sender.data.legendItem.Text you can change the text of each legend text.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -427,11 +466,15 @@ This event is handled before the legend of each series points gets rendered; a p
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 
 
 LegendItemClick: function
 
 This event is handled when you click the legend item; a parameter sender is passed to the handler.  
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -460,9 +503,13 @@ This event is handled when you click the legend item; a parameter sender is pass
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 LegendItemMouseMove: function
 
 This event is handled when you move the mouse over the legend item; a parameter sender is passed to the handler. Using sender.data.legendItem.Text you can change the text of each legend text.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -491,9 +538,13 @@ This event is handled when you move the mouse over the legend item; a parameter 
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 LengendBoundsCalculate: function
 
 This event is handled after the bounds for legend is calculated.  A parameter sender is passed to the handler.  Using sender.data.legendBound, you can access the bounds of the Chartlegend.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -520,6 +571,8 @@ This event is handled after the bounds for legend is calculated.  A parameter se
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 
 
 ### Tooltip Events:
@@ -528,6 +581,7 @@ ToolTipInitialize: function
 
 This event is handled before the tooltip gets rendered.  A parameter sender is passed to the handler.  Using sender.data.currentText, you can change the tooltip text.
 
+{% tabs %}
 
 {% highlight html %}
  
@@ -554,10 +608,14 @@ This event is handled before the tooltip gets rendered.  A parameter sender is p
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 
 TrackAxisToolTip: function
 
 This event is handled before the tooltip for axis gets rendered when crosshair is enabled.  A parameter sender is passed to the handler.  Using sender.data.currentTrackText, you can change the tooltip text.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -586,11 +644,13 @@ This event is handled before the tooltip for axis gets rendered when crosshair i
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 TrackToolTip: function
 
 This event is handled before the tooltip for trackball get rendered when trackball is enabled.  A parameter sender is passed to the handler.  Using sender.data.currentText, you can change the tooltip text.
 
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -616,6 +676,8 @@ This event is handled before the tooltip for trackball get rendered when trackba
       </script>
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 
 

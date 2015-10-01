@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AddContextualTabs
+title: AddContextualTabs | Ribbon | ASP.NET Webforms | Syncfusion
 description: addcontextualtabs
 platform: aspnet
 control: Ribbon
@@ -9,10 +9,10 @@ documentation: ug
 
 # AddContextualTabs
 
-This method is used to add contextual tabs dynamically.This method has two arguments _addContextualTabs(Contextualtabs,index)_
+This method is used to add contextual tabs dynamically.This method has two arguments addContextualTabs(Contextualtabs,index)
 
-* _Contextualtabs_: Collection of the contextual tabs that contextual tab needs to add.
-* _Index_: Index in which the tab is to be added.It is optional argument. When this argument is not given, by default the tab is added at the last position.
+* Contextualtabs: Collection of the contextual tabs that contextual tab needs to add.
+* Index: Index in which the tab is to be added.It is optional argument. When this argument is not given, by default the tab is added at the last position.
 
 
 

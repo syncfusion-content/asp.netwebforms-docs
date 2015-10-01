@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MultiSelection-modes
+title: MultiSelection modes | AutoComplete | ASP.NET Webforms | Syncfusion
 description: multiselection modes
 platform: aspnet
 control: AutoComplete

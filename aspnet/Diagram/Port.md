@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Port
+title: Port | Diagram | ASP.NET Webforms | Syncfusion
 description: port
 platform: aspnet
 control: Diagram
@@ -40,7 +40,8 @@ node.Ports.Add(port);
 
 ![](Port_images/Port_img1.png)
 
-_Port_
+Port
+{:.caption} 
 
 ## Connecting Ports
 
@@ -112,17 +113,20 @@ private Port GetPort(float offsetX, float offsetY, string name){
 
  ![](Port_images/Port_img2.png) 
 
-_Port to Port Connection_
+Port to Port Connection
+{:.caption} 
 
 ## Appearance
 
 You can customize the Port’s appearance by setting desired values to the appropriate appearance property.
 
-_Properties_
+Properties
 
 <table>
 <tr>
-<th>Properties</th><th>Data Type</th><th>Description</th></tr>
+<th>Properties</th><th>
+Data Type</th><th>
+Description</th></tr>
 <tr>
 <td>
  Visibility</td><td>
@@ -191,11 +195,12 @@ port.BorderWidth = 2;
 
 You can enable or disable certain behaviors of Port by using Port’s Constraints property. 
 
-_Constraints_
+Constraints
 
 <table>
 <tr>
-<th>Constraints</th><th>Description</th></tr>
+<th>Constraints</th><th>
+Description</th></tr>
 <tr>
 <td>
 None</td><td>

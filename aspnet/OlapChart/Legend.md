@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend
+title: Legend | OLAPChart | ASP.NET Webforms | Syncfusion
 description: legend
 platform: aspnet
 control: OLAP Chart

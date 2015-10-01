@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AddTab
+title: AddTab | Ribbon | ASP.NET Webforms | Syncfusion
 description: addtab
 platform: aspnet
 control: Ribbon
@@ -9,11 +9,11 @@ documentation: ug
 
 # AddTab
 
-This method is used to add tab dynamically in the _Ribbon_ control. This method requires three arguments _addTab(Tabname,TabGroupcollection,index)_
+This method is used to add tab dynamically in the Ribbon control. This method requires three arguments addTab(Tabname,TabGroupcollection,index)
 
-* _Tabname_: Name of the tab.
-* _TabGroupcollection_: Collection of the tab groups that tab needs to add.
-* _Index_: Index in which the tab is to be added.It is an optional argument. When this argument is not given, by default the tab is added at the last position.
+* Tabname : Name of the tab.
+* TabGroupcollection : Collection of the tab groups that tab needs to add.
+* Index : Index in which the tab is to be added.It is an optional argument. When this argument is not given, by default the tab is added at the last position.
 
 
 

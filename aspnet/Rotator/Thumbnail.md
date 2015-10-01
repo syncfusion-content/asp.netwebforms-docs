@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Thumbnail
+title: Thumbnail | Rotator | ASP.NET Webforms | Syncfusion
 description: thumbnail
 platform: aspnet
 control: Rotator

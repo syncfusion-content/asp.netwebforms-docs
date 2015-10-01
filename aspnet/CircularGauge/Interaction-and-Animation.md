@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interaction-and-Animation
+title: Interaction and Animation | CircularGauge | ASP.NET Webforms | Syncfusion
 description: interaction and animation
 platform: aspnet
 control: Circular Gauge

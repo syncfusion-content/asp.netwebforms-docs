@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integration
+title: Integration | PercentageTextBox | ASP.NET | Syncfusion
 description: integration
 platform: aspnet
 control: PercentageTextBox
@@ -152,8 +152,6 @@ The following example depicts the way to bind data to the PercentageTextbox con
 
 </html> 
 
-
-
 {% endhighlight %}
 
 
@@ -188,8 +186,6 @@ To know more details about the Angular binding, refer to the following link loc
 The following example depicts the way to bind data to the PercentageTextbox control through Angular Support.
 
 {% highlight html %}
-
-
 
 <!DOCTYPE html>
 
@@ -290,8 +286,6 @@ The following example depicts the way to bind data to the PercentageTextbox con
 </body>
 
 </html>
-
-
 
 {% endhighlight %}
 

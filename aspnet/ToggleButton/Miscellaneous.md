@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Miscellaneous
+title: Miscellaneous | Toggle Button | ASP.NET | Syncfusion
 description: miscellaneous
 platform: aspnet
-control: Toggle Button
+control: ToggleButton
 documentation: ug
 ---
 
@@ -20,8 +20,6 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 <ej:ToggleButton ID="ToggleButton_RoundedCorner" runat="server" Size="Small" ShowRoundedCorner="true" DefaultText="Play" ActiveText="Pause" ContentType="TextAndImage" DefaultPrefixIcon="e-mediaplay" ActivePrefixIcon="e-mediapause">
 
 </ej:ToggleButton>
-
-
 
 {% endhighlight %}
 
@@ -44,8 +42,6 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 <ej:ToggleButton ID="ToggleButton_Prevent" runat="server" Size="Small" DefaultText="Play" ActiveText="Pause" ContentType="TextAndImage" DefaultPrefixIcon="e-mediaplay" ActivePrefixIcon="e-mediapause" PreventToggle="true">
 
 </ej:ToggleButton>
-
-
 
 {% endhighlight %}
 

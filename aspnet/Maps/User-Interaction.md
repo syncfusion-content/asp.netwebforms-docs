@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User-Interaction
+title: User Interaction | Maps | ASP.NET Webforms | Syncfusion
 description: user interaction
 platform: aspnet
 control: Maps
@@ -50,7 +50,8 @@ You can select the shape by tapping on the shape. The Single selection is enable
 ![](User-Interaction_images/User-Interaction_img1.png)
 
 
-_Map with enable selection property_
+Map with enable selection property
+{:.caption} 
 
 ## Zooming
 
@@ -148,7 +149,8 @@ When the map is double-tapped using mouse, the zoom in operation is performed.
 
 ![](User-Interaction_images/User-Interaction_img2.png) 
 
-_Map with zoom_
+Map with zoom
+{:.caption} 
 
 ## Using Shape Selection
 
@@ -180,7 +182,7 @@ Depending on the latitude and longitude, you can zoom the map to the exact posit
 
 The navigateTo is a method defined that allows you to zoom the map control to the given location. This method contains three attributes as follows.
 
-_Attribute Table_
+Attribute Table
 
 <table>
 <tr>
@@ -247,7 +249,8 @@ Navigation control is built-in with Maps control. With Navigation control, Maps 
 
 ![](User-Interaction_images/User-Interaction_img3.png)
 
-_Structure of Navigation Control_
+Structure of Navigation Control
+{:.caption} 
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Maps | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: Maps
@@ -17,7 +17,8 @@ You can configure an Essential ASP.NET Map with simple steps. In this example, y
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
-_Map_
+Map
+{:.caption} 
 
 ### Create a simple ASP.NET Application 
 
@@ -289,7 +290,6 @@ new CountyPopulationData(){ Name= "Wyoming", Population=582658}
 
 
    ~~~
-   {:.prettyprint }
 
 
 
@@ -318,7 +318,6 @@ new CountyPopulationData(){ Name= "Wyoming", Population=582658}
 
 
    ~~~
-   {:.prettyprint }
 
 
 
@@ -361,7 +360,6 @@ new CountyPopulationData(){ Name= "Wyoming", Population=582658}
 
 
    ~~~
-   {:.prettyprint }
 
 
 
@@ -370,7 +368,8 @@ The above code renders a map with default properties and shape input provided th
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
-_Map with default properties_
+Map with default properties
+{:.caption} 
 
 ### Data Binding in Map
 
@@ -392,6 +391,7 @@ The ShapeDataPath property is used to refer the data ID in DataSource. For examp
 
 The ShapePropertyPath property is similar to the ShapeDataPath that refers the column name in the Data property of shape layers to identify the shape. When the values of the ShapeDataPath property in the DataSource property and the value of ShapePropertyPath in the Data property match, then the associated object from the DataSource is bound to the corresponding shape.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -416,9 +416,13 @@ The ShapePropertyPath property is similar to the ShapeDataPath that refers the c
 	 }
 {% endhighlight %}
 
+{% endtabs %}
+
 ### Customizing Map Appearance 
 
 You can customize the shape’s color by using Fill, Stroke and StrokeThickness properties in ShapeSettings.
+
+{% tabs %}
 
 {% highlight html %}
     
@@ -451,9 +455,12 @@ You can customize the shape’s color by using Fill, Stroke and StrokeThickness 
 
 {% endhighlight%}
 
+{% endtabs %}
+
 ![](Getting-Started_images/Getting-Started_img3.png)
 
-_Customized Map_
+Customized Map
+{:.caption} 
 
 ### Customizing Map Appearance by Range
 
@@ -461,7 +468,7 @@ The Range color mapping is used to differentiate the shape’s fill based on its
 
 N> The EnableGradient property value should be true to apply gradient colors for maps.
 
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -523,7 +530,7 @@ N> The EnableGradient property value should be true to apply gradient colors for
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 The following screenshot illustrates a map with gradient color property enable.
 
@@ -531,13 +538,14 @@ The following screenshot illustrates a map with gradient color property enable.
 
 ![](Getting-Started_images/Getting-Started_img4.png)
 
-_Customized Map by range_
+Customized Map by range
+{:.caption} 
 
 ### Enable Tooltip
 
 The tooltip is displayed only when ShowTooltip is set to ‘True’ in the shape layers. By default, it takes the property of the bound object that is referred in the ValuePath and displays its content on hovering the corresponding shape. The TooltipTemplate property is used for customizing the template for tooltip.
 
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -593,13 +601,16 @@ The tooltip is displayed only when ShowTooltip is set to ‘True’ in the shape
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The following screenshot illustrates a Map control displaying a Tooltip.
 
 
 
 ![](Getting-Started_images/Getting-Started_img5.png)
 
-_Map with tooltip_
+Map with tooltip
+{:.caption} 
 
 ### Legend
 
@@ -617,7 +628,7 @@ You can use Title property to provide title for interactive legend.
 
 You can use LeftLabel and RightLabel property to provide left and right labels for interactive legend. 
 
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -669,12 +680,15 @@ You can use LeftLabel and RightLabel property to provide left and right labels f
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The following screenshot illustrates a map displaying an interactive legend.
 
 
 
 ![](Getting-Started_images/Getting-Started_img6.png)
 
-_Map with interactive Legend_
+Map with interactive Legend
+{:.caption} 
 
 

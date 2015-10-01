@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Marker-and-Cross-Hair
+title: Marker and Cross Hair | OLAPChart | ASP.NET Webforms | Syncfusion
 description: marker and cross hair 
 platform: aspnet
 control: OLAP Chart

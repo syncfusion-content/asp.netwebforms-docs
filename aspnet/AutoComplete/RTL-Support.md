@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RTL-Support
+title: RTL Support | AutoComplete | ASP.NET Webforms | Syncfusion
 description: rtl support
 platform: aspnet
 control: AutoComplete
@@ -41,9 +41,9 @@ You can use keyboard shortcut keys as an alternative to the mouse while using 
 
 <table>
 <tr>
-<td>
-Shortcut Key</td><td>
-Description</td></tr>
+<th>
+Shortcut Key</th><th>
+Description</th></tr>
 <tr>
 <td>
 {{ '[Access key](http://en.wikipedia.org/wiki/Access_key)' | markdownify }} + j	</td><td>
@@ -127,10 +127,10 @@ The server side events present in the AutoComplete control are listed as follows
 
 <table>
 <tr>
-<td>
-Event Name</td><td>
-Description</td><td>
-Arguments</td></tr>
+<th>
+Event Name</th><th>
+Description</th><th>
+Arguments</th></tr>
 <tr>
 <td>
 OnValueSelect                     </td><td>

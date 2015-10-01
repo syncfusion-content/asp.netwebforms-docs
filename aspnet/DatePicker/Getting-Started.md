@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | DatePicker | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: DatePicker
@@ -25,7 +25,7 @@ The following screenshot illustrates the functionality of a DatePicker with date
 
 ASP.NET DatePicker control basically renders with built-in features such as keyboard navigation, months navigation with animations and flexible API’s. You can easily create the DatePicker control by using simple input textbox element as follows.
 
-You can create an ASP.NET project and add necessary Dll and script with the help of the given [ASP-Getting Started Documentation.](http://docs.syncfusion.com/js)
+You can create an ASP.NET project and add necessary Dll and script with the help of the given [ASP-Getting Started Documentation.](http://docs.syncfusion.com/aspnetmvc/datepicker/getting-started)
 
 You can add the following code example to the corresponding ASPX page to render the DatePicker.
 
@@ -213,7 +213,7 @@ You can select the “Onward journey date” in the first DatePicker and then th
 
 Add the following code in your ASPX page.
 
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -248,8 +248,6 @@ Add the following code in your ASPX page.
 
 
 {% endhighlight %}
-
-
 
 {% highlight js %}
 
@@ -289,7 +287,7 @@ Add the following code in your ASPX page.
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 You can run the above code and achieve the desired result. By selecting the onward journey date in the first DatePicker, you can select the Return Journey date within the given range. This restricts you from selecting the false date. This scenario is illustrated in the following screenshot.
 

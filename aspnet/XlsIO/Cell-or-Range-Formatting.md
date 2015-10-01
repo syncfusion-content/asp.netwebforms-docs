@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Cell-or-Range-Formatting
+title: Cell or Range Formatting | XlsIO | ASP.NET | Syncfusion
 description: cell or range formatting
 platform: aspnet
-control: XlsIO	
+control: Xlsio
 documentation: ug
 ---
 
@@ -23,14 +23,16 @@ Microsoft Excel provides support to create styles by using the Style dialog box 
 
 
 
-###Applying Default style in XlsIO
+Applying Default style in XlsIO
 
 XlsIO provides various ways to apply styles. IStyle interface is used for creating styles. You can set the default styles created with groups of styles to a range of rows and columns. This is the most optimized approach to format rows and columns with large number of cells with same styles.
 
 The following code example illustrates how to create and apply default styles for a range of rows and columns.
 
-{% highlight C# %}
 
+{% tabs %}
+
+{% highlight C# %}  
 
 
 // Step 1: Instantiates the spreadsheet creation engine.
@@ -99,7 +101,7 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vbnet %} 
 
 
 
@@ -166,10 +168,15 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
-
 {% endhighlight %}
 
-N> Applying custom styles will override the original styles. See Also_ Global Styles
+
+{% endtabs %}
+
+
+N> Applying custom styles will override the original styles.
+
+
 
 ## Apply Global Style
 
@@ -177,12 +184,12 @@ XlsIO provides support for adding and modifying common (or global) styles that c
 
 
 
+
 N> when you want to apply more than one style for cells, enclose the style within the Begin and End calls. This improves the performance.
 
 
-
-{% highlight C# %}
-
+{% tabs %}
+{% highlight C# %}  
 
 
 // Step 1: Instantiates the spreadsheet creation engine.
@@ -299,12 +306,12 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+
+
+
 {% endhighlight %}
 
 {% highlight vbnet %}
-
-
-
 ' Step 1: Instantiates the spreadsheet creation engine.
 
 Dim excelEngine As ExcelEngine = New ExcelEngine
@@ -416,10 +423,10 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
-
 {% endhighlight %}
+{% endtabs %}
 
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img2.png)
+![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img4.png)
 
 
 
@@ -431,7 +438,7 @@ Number Formats are little code that help you control the appearance of numbers i
 
 Microsoft Excel recognizes the numbers in various formats: Accounting, Scientific, Fractions, and Currency. MS Excel allows to set these number formats by using the Number tab in the Format Cells dialog box.
 
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img3.png)
+![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img5.png)
 
 
 
@@ -439,21 +446,21 @@ A number format consists of up to 4 items separated by semicolons. Each of the i
 
 1. Long Numbers
 
-   You can make long numbers easier to read by inserting a thousands separator (a comma for US regional settings). The #, ##0 number format is used. This format does not allow Excel to use the shorter scientific format, so the longest numbers merely show #######, signifying that they do not fit in their cells. You can either AutoFit the column or specify the column width in order to avoid showing #######.
+You can make long numbers easier to read by inserting a thousands separator (a comma for US regional settings). The #, ##0 number format is used. This format does not allow Excel to use the shorter scientific format, so the longest numbers merely show #######, signifying that they do not fit in their cells. You can either AutoFit the column or specify the column width in order to avoid showing #######.
 
 2. Hide Zeros
 
-   Excel allows hiding zero values from displaying when you are not interested in showing the values if it is 0. This can be done by setting custom format as General or 0.00.
+Excel allows hiding zero values from displaying when you are not interested in showing the values if it is 0. This can be done by setting custom format as General or 0.00.
 
 3. Leading Zeros
 
-   Excel removes the zero (0) in the zip code. The reason is that zero is not required to display the value of the number. However, since number formats are not about the value, but are about the appearance, you can use a special format to retain the leading zeros, 00000. 
+Excel removes the zero (0) in the zip code. The reason is that zero is not required to display the value of the number. However, since number formats are not about the value, but are about the appearance, you can use a special format to retain the leading zeros, 00000. 
 
 4. Special Number Formats
 
-   In addition to the 00000 Zip Code number format, Excel also has 00000-0000 for Zip-Plus-Four, 000-00-0000 for Social Security numbers, and (000)000-0000 for telephone numbers. When you live in a location that needs different zip codes, you can design your own custom number formats. The following table shows various custom formatting codes.
+In addition to the 00000 Zip Code number format, Excel also has 00000-0000 for Zip-Plus-Four, 000-00-0000 for Social Security numbers, and (000)000-0000 for telephone numbers. When you live in a location that needs different zip codes, you can design your own custom number formats. The following table shows various custom formatting codes.
 
-_Custom formatting codes_
+Custom formatting codes
 
 <table>
 <tr>
@@ -492,16 +499,10 @@ Thousands separator. A comma followed by a placeholder (0 or #) scales the numbe
 <td>
 E+ E- e+ e-</td><td>
 Scientific notation.</td></tr>
-</table>
-
-
-_Custom formatting codes_
-
-<table>
 <tr>
-<th>
-Text Code</th><th>
-Description</th></tr>
+<td>
+Text Code</td><td>
+Description</td></tr>
 <tr>
 <td>
 $ - + / ( ) : space</td><td>
@@ -517,7 +518,10 @@ This code displays the text.</td></tr>
 <tr>
 <td>
 *</td><td>
-This code repeats the next character in the format to fill the column width.<br></td></tr>
+This code repeats the next character in the format to fill the column width.<br><br>{{'![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img6.jpeg)' | markdownify }}
+
+{{' > _Note : Only one asterisk per section of a format is allowed._' | markdownify }}</td></tr>
+
 <tr>
 <td>
 _ (underscore)</td><td>
@@ -526,20 +530,10 @@ This code skips the width of the next character. This code is commonly used as "
 <td>
 @</td><td>
 Text placeholder.</td></tr>
-</table>
-
-
-N> Only one asterisk per section of a format is allowed.
-
-
-
-_Custom formatting codes_
-
-<table>
 <tr>
-<th>
-Date Code</th><th>
-Description</th></tr>
+<td>
+Date Code</td><td>
+Description</td></tr>
 <tr>
 <td>
 m</td><td>
@@ -580,16 +574,10 @@ Year as a two-digit number (for example, 96).</td></tr>
 <td>
 yyyy</td><td>
 Year as a four-digit number (for example, 1996).</td></tr>
-</table>
-
-
-_Custom formatting codes_
-
-<table>
 <tr>
-<th>
-Time Code</th><th>
-Description</th></tr>
+<td>
+Time Code</td><td>
+Description</td></tr>
 <tr>
 <td>
 h</td><td>
@@ -625,11 +613,11 @@ Description</td></tr>
 <tr>
 <td>
 [BLACK], [BLUE], [CYAN], [GREEN], [MAGENTA], [RED], [WHITE], [YELLOW], [COLOR n]</td><td>
-These codes display the characters in the specified colors. <br><br>Note: n is a value from 1 to 56 and refers to the nth color in the color palette.</td></tr>
+These codes display the characters in the specified colors. <br><br>>  n is a value from 1 to 56 and refers to the nth color in the color palette.</td></tr>
 <tr>
 <td>
 [Condition value]</td><td>
-Condition may be <, >, =, >=, <=, <> and value may be any number.<br><br>Note: A number format may contain up to two conditions.</td></tr>
+Condition may be <, >, =, >=, <=, <> and value may be any number.<br><br>>  A number format may contain up to two conditions.</td></tr>
 </table>
 
 
@@ -639,8 +627,8 @@ XlsIO provides API support for reading and writing the various built-in and cust
 
 
 
-{% highlight C# %}
-
+{% tabs %}
+{% highlight C# %}  
 
 
 // Step 1: Instantiates the spreadsheet creation engine.
@@ -749,7 +737,7 @@ excelEngine.Dispose()
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vbnet %} 
 
 
 
@@ -856,11 +844,14 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 The following code example illustrates how to set the format for Percentage.
 
-{% highlight C# %}
+
+{% tabs %}
+{% highlight C# %} 
 
 
 
@@ -916,10 +907,10 @@ workbook.Close();
 
 excelEngine.Dispose();
 
-{% endhighlight %}
+ {% endhighlight %}
 
-{% highlight vbnet %}
 
+{% highlight vbnet %} 
 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
@@ -975,12 +966,15 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 The following code example illustrates how to set the format for DateTime.
 
-{% highlight C# %}
 
+{% tabs %}
+
+{% highlight C# %}  
 
 
 // Step 1: Instantiates the spreadsheet creation engine.
@@ -1037,8 +1031,8 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
 
+{% highlight vbnet %} 
 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
@@ -1094,12 +1088,15 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 The following code example illustrates how to set the format for Currency.
 
-{% highlight C# %}
 
+{% tabs %}
+
+{% highlight C# %}  
 
 
 // Step 1: Instantiates the spreadsheet creation engine.
@@ -1153,11 +1150,11 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();
+
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
+{% highlight vbnet %} 
 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
@@ -1214,11 +1211,14 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
 {% endhighlight %}
+{% endtabs %}
+
 Note that you can also set the custom format and other formats such as Accounting by using the NumberFormat property as illustrated in the preceding code example. The following code example illustrates entering data in the Text format.
 
-{% highlight C# %}
+{% tabs %}
+
+{% highlight C# %}  
 
 
 
@@ -1267,12 +1267,11 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();
+
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
-
+{% highlight vbnet %} 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
 
@@ -1323,19 +1322,22 @@ workbook.Close()
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 
 XlsIO provides the following properties to get/set the data in the cells.
 
 1. DisplayText-Gets the text that is displayed in the cell. This is read-only property that returns a cell value that is displayed after the number format application.
 2. Value-Gets/sets the string from it. Since you can assign different data types, Value property parses that input string to determine the type used, that is, it sequentially checks whether it is an empty cell, formula, boolean, error, number, or date time.
 3. Value2-This object returns/sets the cell value. This property works in the following way. It first checks whether the specified object has the type known for it (DateTime, TimeSpan, Double, Int). If yes, then it uses the corresponding typed properties (DateTime, TimeSpan, and Number). Otherwise, it calls Value property with String data type.
-1. The only difference between the Value2 property and the Value property is that the Value2 property does not use the Currency and Date data types and it does not support FormulaArray value.
-2. IsStringsPreserved property of IWorksheet is used to modify its behavior and return boolean, double, or datetime. Otherwise, it returns Value property.
+
+The only difference between the Value2 property and the Value property is that the Value2 property does not use the Currency and Date data types and it does not support FormulaArray value.
+
+IsStringsPreserved property of IWorksheet is used to modify its behavior and return boolean, double, or datetime. Otherwise, it returns Value property.
 
 
+{% tabs %}
 
 {% highlight C# %}
-
 
 
 // Step 1: Instantiates the spreadsheet creation engine.
@@ -1390,8 +1392,8 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
 
+{% highlight vbnet %} 
 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
@@ -1445,7 +1447,9 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+
 {% endhighlight %}
+{% endtabs %}
 
 You can use these properties in the following ways.
 
@@ -1453,11 +1457,11 @@ You can use these properties in the following ways.
 * When you have a string that can have different data types and do not want to parse it, use Value property.
 * When you know the exact data (value of cell) type, use typed properties.
 
-
-
 The following code example illustrates how to get the display text and value in the cell.
 
-{% highlight C# %}
+{% tabs %}
+
+{% highlight C# %} 
 
 
 
@@ -1515,9 +1519,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
-{% endhighlight %}
+ {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vbnet %} 
 
 
 
@@ -1579,7 +1583,9 @@ excelEngine.Dispose()
 
 {% endhighlight %}
 
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img4.png)
+{% endtabs %}
+
+![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img7.png)
 
 
 
@@ -1589,11 +1595,11 @@ Text has to be aligned inside the cells to properly fit in any data. This is don
 
 
 
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img5.png)
+![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img8.png)
 
 
 
-###Indentation
+##Indentation
 
 In some circumstances, you may neither want to center the text nor keep it left or right aligned. In such cases, indentation can be done. Indentation consists of pushing the text to the left or right without aligning it to the center. To indent a text, you need to specify the number of units in the Indent box.
 
@@ -1602,9 +1608,9 @@ Alignment Settings in XlsIO
 XlsIO supports alignment properties similar to Excel. The following code example illustrates the alignment settings that can be applied to the cells by using XlsIO.
 
 
+{% tabs %}
 
-{% highlight C# %}
-
+{% highlight C# %} 
 
 
 // Step 1: Instantiates the spreadsheet creation engine.
@@ -1676,10 +1682,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();
-{% endhighlight %}
 
+ {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vbnet %} 
 
 
 
@@ -1753,12 +1759,17 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-Orientation
+
 {% endhighlight %}
+{% endtabs %}
+
+##Orientation
 
 The Orientation section enables you to bend the text to a fixed angle. There are two ways to set an angle. By dragging the small red diamond, one can specify the desired angle. You can also click one of the arrows of the Degrees spin button.
 
-{% highlight C# %}
+
+{% tabs %}
+{% highlight C# %}  
 
 
 
@@ -1811,11 +1822,11 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();
+
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
+{% highlight vbnet %} 
 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
@@ -1867,16 +1878,18 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
-{% endhighlight %}
 
-###Text Direction
+{% endhighlight %}
+{% endtabs %}
+
+##Text Direction
 
 You can specify the text orientation by using the ReadingOrder property. The following code example illustrates this.
 
 
+{% tabs %}
 
-{% highlight C# %}
-
+{% highlight C# %}  
 
 
 // Step 1: Instantiates the spreadsheet creation engine.
@@ -1930,10 +1943,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();
+
 {% endhighlight %}
 
-
-{% highlight vbnet %}
+{% highlight vbnet %} 
 
 
 
@@ -1990,8 +2003,9 @@ workbook.Close()
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img6.png)
+![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img9.png)
 
 
 
@@ -1999,7 +2013,9 @@ excelEngine.Dispose()
 
 Merging Cells
 
-{% highlight C# %}
+{% tabs %}
+
+{% highlight C# %}  
 
 
 
@@ -2051,7 +2067,7 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vbnet %} 
 
 
 
@@ -2100,11 +2116,15 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+
 {% endhighlight %}
+{% endtabs %}
 
-Un-Merging Cells
+##Un-Merging Cells
 
-{% highlight C# %}
+
+{% tabs %}
+{% highlight C# %}  
 
 
 
@@ -2154,10 +2174,10 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+
 {% endhighlight %}
 
-{% highlight vbnet %}
-
+{% highlight vbnet %} 
 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
@@ -2205,11 +2225,15 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+
 {% endhighlight %}
+{% endtabs %}
 
 ## Apply Wrap Text
 
-{% highlight C# %}
+{% tabs %}
+
+{% highlight C# %}  
 
 
 
@@ -2258,11 +2282,11 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();
+
 {% endhighlight %}
 
 
 {% highlight vbnet %}
-
 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
@@ -2313,13 +2337,16 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-{% endhighlight %}
+ {% endhighlight %}
+{% endtabs %}
 
 ## Apply AutoFit Rows/AutoFit Columns
 
-### AutoFit Rows
+AutoFit Rows
 
- {% highlight C# %}
+{% tabs %}
+
+{% highlight C# %}  
 
 
 
@@ -2371,7 +2398,9 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+
+{% highlight vbnet %} 
+
 
 
 
@@ -2420,12 +2449,16 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+
 {% endhighlight %}
+{% endtabs %}
 
-### AutoFit Columns
+##AutoFit Columns
 
-{% highlight C# %}
 
+{% tabs %}
+
+{% highlight C# %}  
 
 
 // Step 1: Instantiates the spreadsheet creation engine.
@@ -2473,10 +2506,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();
+
 {% endhighlight %}
 
-
-{% highlight vbnet %}
+{% highlight vbnet %} 
 
 
 
@@ -2527,14 +2560,15 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
 ## Apply Font Settings 
 
 MS Excel provides support to customize the font settings through the Format Cells dialog box. Font tab in the format dialog box provides options to set the font name, size, color, and so on.
 
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img7.png)
+![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img10.png)
 
 
 
@@ -2542,8 +2576,10 @@ MS Excel provides support to customize the font settings through the Format Cell
 
 XlsIO also has API support for specifying the font style for the text in the cells. CellStyle property exposes various font settings that are illustrated in the following code example.
 
-{% highlight C# %}
 
+{% tabs %}
+
+{% highlight C# %} 
 
 
 // Step 1: Instantiates the spreadsheet creation engine.
@@ -2640,10 +2676,11 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+
+
 {% endhighlight %}
-
-{% highlight vbnet %}
-
+ 
+{% highlight vbnet %} 
 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
@@ -2745,6 +2782,7 @@ workbook.Close()
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Apply Colors
 
@@ -2752,7 +2790,7 @@ excelEngine.Dispose()
 
 MS Excel provides support to format its cells, rows, and columns with various colors and patterns. This can be done by using the Fill Color button and the associated palette.
 
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img8.png)
+![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img11.png)
 
 
 
@@ -2762,8 +2800,10 @@ A color is a 4-byte number of the format 00BBGGRR, where RR, GG, and BB values a
 
 Excel provides various pattern styles for highlighting cells. These can be applied through the Pattern tab in the Format Cells dialog box. XlsIO includes APIs to specify the above background pattern for a cell. The following code example illustrates this.
 
-{% highlight C# %}
 
+{% tabs %}
+
+{% highlight C# %}  
 
 
 // Step 1: Instantiates the spreadsheet creation engine.
@@ -2816,8 +2856,7 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
+{% highlight vbnet %} 
 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
@@ -2869,11 +2908,16 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+
 {% endhighlight %}
+{% endtabs %}
+
 
 ###Background
 
-{% highlight C# %}
+
+{% tabs %}
+{% highlight C# %}  
 
 
 
@@ -2927,7 +2971,7 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vbnet %} 
 
 
 
@@ -2976,12 +3020,17 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+
+
 {% endhighlight %}
+{% endtabs %}
 
 ###Foreground
 
-{% highlight C# %}
 
+{% tabs %}
+
+{% highlight C# %}  
 
 
 // Step 1: Instantiates the spreadsheet creation engine.
@@ -3029,10 +3078,10 @@ workbook.SaveAs(fileName);
 // Closes the workbook.
 
 workbook.Close();
+
 {% endhighlight %}
 
-
-{% highlight vbnet %}
+{% highlight vbnet %} 
 
 
 
@@ -3082,11 +3131,11 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+
 {% endhighlight %}
+{% endtabs %}
 
-
-
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img9.png)
+![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img12.png)
 
 
 
@@ -3104,7 +3153,11 @@ You can change the values in the default palette by modifying the Colors in the 
 
 XlsIO provides support for adding new colors to the color palette that are not available in the standard MS Excel color palette by using the SetPaletteColor method. When you have modified a workbook's Palette, you can reset the palette back to the default values by using the ResetPalette method. The following code example illustrates how to set the color palette.
 
-{% highlight C# %}
+
+{% tabs %}
+
+{% highlight C# %}  
+
 
 // Step 1: Instantiates the spreadsheet creation engine.
 
@@ -3202,11 +3255,11 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+
 {% endhighlight %}
 
-{% highlight vbnet %}
 
-
+{% highlight vbnet %} 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
 
@@ -3311,8 +3364,9 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
 XlsIO also enables you to get or set the closest RGB color in the palette by using the SetColorOrGetNearest method. It returns the ColorIndex value of the color in the Palette that is closest to a given RGBLong color value. The method used here considers every RGB color to be a spatial location in a 3-dimensional space where the axes are Red, Green, and Blue components of an RGB Long value. Closest is taken in the geometrical sense, the distance between two colors in a 3-dimensional space with axes of Red, Green, and Blue values, that is, a color is identified spatially by the values of the Red, Green, and Blue components. The distances between the spatial location of RGBLong and each Color of the pallet is computed and the ColorIndex that minimizes this distance is returned. The distance between RGBLong and each Color (ColorIndex) value is computed by simple Pythagorean distance (without Square root):
 
@@ -3326,7 +3380,7 @@ Microsoft Excel provides a default appearance for a cell background. For example
 
 
 
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img10.png)
+![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img13.png)
 
 
 
@@ -3334,7 +3388,9 @@ Microsoft Excel provides a default appearance for a cell background. For example
 
 XlsIO provides support to insert and format borders through the IBorder interface. The following code example illustrates how this can be done.
 
-{% highlight C# %}
+{% tabs %}
+
+{% highlight C# %}  
 
 
 
@@ -3420,7 +3476,8 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vbnet %} 
+
 
 
 
@@ -3505,16 +3562,18 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+
 {% endhighlight %}
-
-
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img11.png)
+{% endtabs %}
+![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img14.png)
 
 
 
 You can also set the borders for a range as follows.
 
-{% highlight C# %}
+{% tabs %}
+
+{% highlight C# %}  
 
 
 
@@ -3570,7 +3629,7 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vbnet %} 
 
 
 
@@ -3625,24 +3684,21 @@ workbook.Close()
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Rich-Text Formatting 
 
-###Editing Rich Text
+Editing Rich Text
 
 XlsIO provides support for reading and writing rich text by using the IRichTextString interface. It enables formatting each character in the cell with different font styles.
-
 
 
 N> Currently XlsIO cannot write formatted rich text.
 
 
+{% tabs %}
 
-
-
-{% highlight C# %}
-
-
+{% highlight C# %}  
 
 // Step 1: Instantiates the spreadsheet creation engine.
 
@@ -3722,7 +3778,7 @@ workbook.Close();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vbnet %} 
 
 
 
@@ -3807,8 +3863,9 @@ workbook.Close()
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img12.png)
+![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img16.png)
 
 
 
@@ -3816,7 +3873,7 @@ excelEngine.Dispose()
 
 Cell modification can be prevented on locking the cell by using the Protection tab in the FormatCells dialog box.
 
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img13.png)
+![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img17.png)
 
 
 
@@ -3824,7 +3881,7 @@ This prompts the following error message at runtime when you try to modify the c
 
 
 
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img14.png)
+![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img18.png)
 
 
 
@@ -3833,9 +3890,9 @@ This prompts the following error message at runtime when you try to modify the c
 XlsIO supports locking and unlocking cells by using the cell's Locked property that can be manipulated to make certain cells editable in a protected worksheet. Note that locking/unlocking a cell in an unprotected worksheet has no effect. For protecting the worksheet, see Worksheet Protection.
 
 
+{% tabs %}
 
-{% highlight C# %}
-
+{% highlight C# %}  
 
 
 // Step 1: Instantiates the spreadsheet creation engine.
@@ -3884,8 +3941,8 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
 
+{% highlight vbnet %} 
 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
@@ -3929,8 +3986,9 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
 ## Conditional Formatting 
 
@@ -3940,27 +3998,35 @@ In MS Excel, click the Format menu and then click Conditional Formatting. You ca
 
 
 
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img15.png)
+![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img19.png)
 
 
 
 
 
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img16.png)
+![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img20.png)
+
+
+
 
 
 
 N> Excel allows the addition of a maximum of three conditions for the same cell in the Biff8 format. However, this restriction is removed in Excel 2007 formats.
 
 
-## Create a Conditional Format 
 
-###Conditional Formatting in XlsIO
+
+
+### Create a Conditional Format 
+
+Conditional Formatting in XlsIO
 
 XlsIO allows you to create conditional formats by using IConditionFormats; and various conditions can be set by using its properties. XlsIO also provides support for applying more than three conditional formats in the same cell in the .xlsx format. The following code example creates and applies various conditional formats in XlsIO.
 
-{% highlight C# %}
 
+
+{% tabs %}
+{% highlight C# %}
 
 
 // Step 1: Instantiates the spreadsheet creation engine.
@@ -4140,11 +4206,11 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispoe();
+
+
 {% endhighlight %}
 
-
-{% highlight vbnet %}
-
+{% highlight vbnet %} 
 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
@@ -4326,10 +4392,10 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
-
 {% endhighlight %}
+{% endtabs %}
 
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img17.jpeg)
+![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img22.jpeg)
 
 
 
@@ -4338,9 +4404,8 @@ excelEngine.Dispose()
 XlsIO also provides support for reading conditional formats. The following code example illustrates this.
 
 
-
-{% highlight C# %}
-
+{% tabs %}
+{% highlight C# %}  
 
 
 // Step 1: Instantiates the spreadsheet creation engine.
@@ -4392,10 +4457,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();
+
 {% endhighlight %}
 
-
-{% highlight vbnet %}
+{% highlight vbnet %} 
 
 
 
@@ -4450,7 +4515,9 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+
 {% endhighlight %}
+{% endtabs %}
 
 ##Removing Conditional Formats in MS-Excel
 
@@ -4461,9 +4528,7 @@ To remove the conditional formats in MS-Excel:
 1. Select the cell that has the conditional format that you want to delete.
 2. Click Conditional Formatting on Home tab, and then select Clear Rules. The ClearRules property can be applied to the selected cells or to the entire sheet.
 
-
-
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img18.png)
+![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img23.png)
 
 
 
@@ -4473,442 +4538,438 @@ XlsIO also provides support for removing conditional formats. Following are the 
 
 * Remove
 * RemoveAt
+1. Removing Conditional Formats at specified range
 
+XlsIO removes the conditional formats at specified range by using Remove Method. The following code example illustrates this.
 
+{% tabs %}
+{% highlight C# %}  
 
-1.  Removing Conditional Formats at specified range
 
-    XlsIO removes the conditional formats at specified range by using Remove Method. The following code example illustrates this.
+// Step 1: Instantiates the spreadsheet creation engine.
 
-    ~~~ cs
+ExcelEngine excelEngine = new ExcelEngine();
 
-		// Step 1: Instantiates the spreadsheet creation engine.
 
-		ExcelEngine excelEngine = new ExcelEngine();
 
+// Step 2: Instantiates the excel application object.
 
+IApplication application = excelEngine.Excel;
 
-		// Step 2: Instantiates the excel application object.
 
-		IApplication application = excelEngine.Excel;
 
+// A new workbook is created. [Equivalent to creating a new workbook in MS Excel).
 
+// The new workbook will have 2 worksheets.
 
-		// A new workbook is created. [Equivalent to creating a new workbook in MS Excel).
+IWorkbook workbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
 
-		// The new workbook will have 2 worksheets.
 
-		IWorkbook workbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
 
+IWorksheet sheet = workbook.Worksheets[0];
 
 
-		IWorksheet sheet = workbook.Worksheets[0];
 
+//Removes conditional format at the specified range. sheet.Range["E5"].ConditionalFormats.Remove();
 
 
-		//Removes conditional format at the specified range. sheet.Range["E5"].ConditionalFormats.Remove();
 
+string fileName = "Output.xlsx";
 
+workbook.Version = ExcelVersion.Excel2010;
 
-		string fileName = "Output.xlsx";
 
-		workbook.Version = ExcelVersion.Excel2010;
 
+workbook.SaveAs(fileName);
 
 
-		workbook.SaveAs(fileName);
 
+// Closes the workbook.
 
+workbook.Close();
 
-		// Closes the workbook.
+excelEngine.Dispose();
 
-		workbook.Close();
+{% endhighlight %}
 
-		excelEngine.Dispose();
+{% highlight vbnet %} 
 
-    ~~~
-    {:.prettyprint }
 
-	~~~ vbnet
 
+' Step 1: Instantiates the spreadsheet creation engine.
 
+Dim excelEngine As ExcelEngine = New ExcelEngine
 
-		' Step 1: Instantiates the spreadsheet creation engine.
 
-		Dim excelEngine As ExcelEngine = New ExcelEngine
 
+' Step 2: Instantiates the excel application object.
 
+Dim application As IApplication = excelEngine.Excel
 
-		' Step 2: Instantiates the excel application object.
 
-		Dim application As IApplication = excelEngine.Excel
 
+' A new workbook is created. [Equivalent to creating a new workbook in MS Excel].
 
+'The new workbook will have 2 worksheets.
 
-		' A new workbook is created. [Equivalent to creating a new workbook in MS Excel].
+Dim workbook As IWorkbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic)
 
-		'The new workbook will have 2 worksheets.
 
-		Dim workbook As IWorkbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic)
 
+' Accesses via index.
 
+Dim sheet As IWorkbook = workbook.Worksheets(0)
 
-		' Accesses via index.
+' Removes conditional format at the specified range. sheet.Range["E5"].ConditionalFormats.Remove()
 
-		Dim sheet As IWorkbook = workbook.Worksheets(0)
 
-		' Removes conditional format at the specified range. sheet.Range["E5"].ConditionalFormats.Remove()
 
+Dim fileName As String = "Output.xlsx"
 
+workbook.Version = ExcelVersion.Excel2010
 
-		Dim fileName As String = "Output.xlsx"
 
-		workbook.Version = ExcelVersion.Excel2010
 
+workbook.SaveAs(fileName)
 
 
-		workbook.SaveAs(fileName)
 
+' Closes the workbook.
 
+workbook.Close()
 
-		' Closes the workbook.
+excelEngine.Dispose()
 
-		workbook.Close()
+{% endhighlight %}
+{% endtabs %}
+2. Removing Conditional Formats at specified index value
 
-		excelEngine.Dispose()
+XlsIO removes the conditional formats at specified index value by using RemoveAt Method.  The following code example illustrates this.
 
-    ~~~
-    {:.prettyprint }
 
-2.  Removing Conditional Formats at specified index value
+{% tabs %}
 
-    XlsIO removes the conditional formats at specified index value by using RemoveAt Method.  The following code example illustrates this.
+{% highlight C# %}  
 
-	~~~ cs
 
+// Step 1: Instantiatex the spreadsheet creation engine.
 
+ExcelEngine excelEngine = new ExcelEngine();
 
-		// Step 1: Instantiatex the spreadsheet creation engine.
 
-		ExcelEngine excelEngine = new ExcelEngine();
 
+// Step 2: Instantiatex the excel application object.
 
+IApplication application = excelEngine.Excel;
 
-		// Step 2: Instantiatex the excel application object.
 
-		IApplication application = excelEngine.Excel;
 
+// A new workbook is created. [Equivalent to creating a new workbook in MS Excel).
 
+// The new workbook will have 2 worksheets.
 
-		// A new workbook is created. [Equivalent to creating a new workbook in MS Excel).
+IWorkbook workbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
 
-		// The new workbook will have 2 worksheets.
 
-		IWorkbook workbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
 
+IWorksheet sheet = workbook.Worksheets[0];
 
+// Removes Conditional Format at the specified Range. sheet.Range["E5"].ConditionalFormats.RemoveAt(0);
 
-		IWorksheet sheet = workbook.Worksheets[0];
 
-		// Removes Conditional Format at the specified Range. sheet.Range["E5"].ConditionalFormats.RemoveAt(0);
 
+string fileName = "Output.xlsx";
 
+workbook.Version = ExcelVersion.Excel2010;
 
-		string fileName = "Output.xlsx";
 
-		workbook.Version = ExcelVersion.Excel2010;
 
+workbook.SaveAs(fileName);
 
 
-		workbook.SaveAs(fileName);
 
+// Closes the workbook.
 
+workbook.Close();
 
-		// Closes the workbook.
+excelEngine.Dispose();
 
-		workbook.Close();
+{% endhighlight %}
 
-		excelEngine.Dispose();
+{% highlight vbnet %} 
 
-    ~~~
-    {:.prettyprint }
 
 
-	~~~ vbnet
+' Step 1: Instantiates the spreadsheet creation engine.
 
+Dim excelEngine As ExcelEngine = New ExcelEngine
 
 
-		' Step 1: Instantiates the spreadsheet creation engine.
 
-		Dim excelEngine As ExcelEngine = New ExcelEngine
+' Step 2: Instantiates the excel application object.
 
+Dim application As IApplication = excelEngine.Excel
 
 
-		' Step 2: Instantiates the excel application object.
 
-		Dim application As IApplication = excelEngine.Excel
+' A new workbook is created. [Equivalent to creating a new workbook in MS Excel].
 
+'The new workbook will have 2 worksheets.
 
+Dim workbook As IWorkbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic)
 
-		' A new workbook is created. [Equivalent to creating a new workbook in MS Excel].
 
-		'The new workbook will have 2 worksheets.
 
-		Dim workbook As IWorkbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic)
+' Accesses via index.
 
+Dim sheet As IWorkbook = workbook.Worksheets(0)
 
+' Removes Conditional Format at the specified Range. sheet.Range["E5"].ConditionalFormats.RemoveAt(0)
 
-		' Accesses via index.
 
-		Dim sheet As IWorkbook = workbook.Worksheets(0)
 
-		' Removes Conditional Format at the specified Range. sheet.Range["E5"].ConditionalFormats.RemoveAt(0)
+Dim fileName As String = "Output.xlsx"
 
+workbook.Version = ExcelVersion.Excel2010
 
+workbook.SaveAs(fileName)
 
-		Dim fileName As String = "Output.xlsx"
 
-		workbook.Version = ExcelVersion.Excel2010
 
-		workbook.SaveAs(fileName)
+' Closes the workbook.
 
+workbook.Close()
 
+excelEngine.Dispose()
 
-		' Closes the workbook.
+{% endhighlight %}
+{% endtabs %}
 
-		workbook.Close()
+3. Removing Conditional Formats from entire sheet
 
-		excelEngine.Dispose()
+XlsIO also provides support for removing conditional formats from the entire sheet. The following code example illustrates this.
 
-    ~~~
-    {:.prettyprint }
 
-3.  Removing Conditional Formats from entire sheet
+{% tabs %}
 
-    XlsIO also provides support for removing conditional formats from the entire sheet. The following code example illustrates this.
+{% highlight C# %}  
 
 
+// Step 1: Instantiates the spreadsheet creation engine.
 
-    ~~~ cs
+ExcelEngine excelEngine = new ExcelEngine();
 
 
 
-		// Step 1: Instantiates the spreadsheet creation engine.
+// Step 2: Instantiates the excel application object.
 
-		ExcelEngine excelEngine = new ExcelEngine();
+IApplication application = excelEngine.Excel;
 
 
 
-		// Step 2: Instantiates the excel application object.
+// A new workbook is created. [Equivalent to creating a new workbook in MS Excel).
 
-		IApplication application = excelEngine.Excel;
+// The new workbook will have 2 worksheets.
 
+IWorkbook workbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
 
 
-		// A new workbook is created. [Equivalent to creating a new workbook in MS Excel).
 
-		// The new workbook will have 2 worksheets.
+IWorksheet sheet = workbook.Worksheets[0];
 
-		IWorkbook workbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic);
+//Removes Conditional Formatting Settings From Entire Sheet. sheet.UsedRange.Clear(ExcelClearOptions.ClearConditionalFormats);
 
+string fileName = "Output.xlsx";
 
+workbook.Version = ExcelVersion.Excel2010;
 
-		IWorksheet sheet = workbook.Worksheets[0];
 
-		//Removes Conditional Formatting Settings From Entire Sheet. sheet.UsedRange.Clear(ExcelClearOptions.ClearConditionalFormats);
 
-		string fileName = "Output.xlsx";
+workbook.SaveAs(fileName);
 
-		workbook.Version = ExcelVersion.Excel2010;
 
 
+// Closes the workbook.
+workbook.Close();
 
-		workbook.SaveAs(fileName);
+excelEngine.Dispose();
 
+{% endhighlight %}
 
 
-		// Closes the workbook.
-		workbook.Close();
+{% highlight vbnet %} 
 
-		excelEngine.Dispose();
 
-    ~~~
-    {:.prettyprint }
+' Step 1: Instantiates the spreadsheet creation engine.
 
+Dim excelEngine As ExcelEngine = New ExcelEngine
 
-	~~~ vbnet
 
 
+' Step 2: Instantiates the excel application object.
 
-		' Step 1: Instantiates the spreadsheet creation engine.
+Dim application As IApplication = excelEngine.Excel
 
-		Dim excelEngine As ExcelEngine = New ExcelEngine
 
 
+' A new workbook is created. [Equivalent to creating a new workbook in MS Excel].
 
-		' Step 2: Instantiates the excel application object.
+' The new workbook will have 2 worksheets.
 
-		Dim application As IApplication = excelEngine.Excel
+Dim workbook As IWorkbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic)
 
 
 
-		' A new workbook is created. [Equivalent to creating a new workbook in MS Excel].
+' Accesses via index.
 
-		' The new workbook will have 2 worksheets.
+Dim sheet As IWorkbook = workbook.Worksheets(0)
 
-		Dim workbook As IWorkbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenType.Automatic)
+' Removes Conditional Formatting Settings From Entire Sheet. sheet.UsedRange.Clear(ExcelClearOptions.ClearConditionalFormats)
 
+Dim fileName As String = "Output.xlsx"
 
+workbook.Version = ExcelVersion.Excel2010
 
-		' Accesses via index.
 
-		Dim sheet As IWorkbook = workbook.Worksheets(0)
 
-		' Removes Conditional Formatting Settings From Entire Sheet. sheet.UsedRange.Clear(ExcelClearOptions.ClearConditionalFormats)
+workbook.SaveAs(fileName)
 
-		Dim fileName As String = "Output.xlsx"
 
-		workbook.Version = ExcelVersion.Excel2010
 
+' Closes the workbook.
 
+workbook.Close()
 
-		workbook.SaveAs(fileName)
+excelEngine.Dispose()
 
+{% endhighlight %}
+{% endtabs %}
 
+4. Using FormulaR1C1 property in Conditional Formats
 
-		' Closes the workbook.
+XlsIO returns or sets the formula for the conditional format by using R1C1-style notation. The following code example illustrates this.
 
-		workbook.Close()
+{% tabs %}
 
-		excelEngine.Dispose()
+{% highlight C# %}  
 
-    ~~~
-    {:.prettyprint }
 
-4.  Using FormulaR1C1 property in Conditional Formats
+// Step 1: Instantiates the spreadsheet creation engine.
 
-    XlsIO returns or sets the formula for the conditional format by using R1C1-style notation. The following code example illustrates this.
+ExcelEngine excelEngine = new ExcelEngine();
 
-    ~~~ cs
 
 
+// Step 2: Instantiates the excel application object.
 
-		// Step 1: Instantiates the spreadsheet creation engine.
+IApplication application = excelEngine.Excel;
 
-		ExcelEngine excelEngine = new ExcelEngine();
 
 
+// A new workbook is created. [Equivalent to creating a new workbook in MS Excel).
 
-		// Step 2: Instantiates the excel application object.
+// The new workbook will have 2 worksheets.
 
-		IApplication application = excelEngine.Excel;
+IWorkbook workbook = application.Workbooks.Create(2);
 
 
 
-		// A new workbook is created. [Equivalent to creating a new workbook in MS Excel).
+IWorksheet sheet = workbook.Worksheets[0];
 
-		// The new workbook will have 2 worksheets.
+// Using FormulaR1C1 property in Conditional Formatting. 
 
-		IWorkbook workbook = application.Workbooks.Create(2);
+IConditionalFormats condition = sheet.Range["E5:E18"].ConditionalFormats;
 
 
 
-		IWorksheet sheet = workbook.Worksheets[0];
+IConditionalFormat condition1 = condition.AddCondition();
 
-		// Using FormulaR1C1 property in Conditional Formatting. 
 
-		IConditionalFormats condition = sheet.Range["E5:E18"].ConditionalFormats;
 
+condition1.FirstFormulaR1C1 = "=R[1]C[0]" ;
 
+condition1.SecondFormulaR1C1 = "=R[1]C[1]" ;
 
-		IConditionalFormat condition1 = condition.AddCondition();
 
 
+string fileName = "Output.xlsx";
 
-		condition1.FirstFormulaR1C1 = "=R[1]C[0]" ;
+workbook.Version = ExcelVersion.Excel2010;
 
-		condition1.SecondFormulaR1C1 = "=R[1]C[1]" ;
 
 
+workbook.SaveAs(fileName);
 
-		string fileName = "Output.xlsx";
 
-		workbook.Version = ExcelVersion.Excel2010;
 
+// Closes the workbook.
+workbook.Close();
 
+excelEngine.Dispose();
 
-		workbook.SaveAs(fileName);
+{% endhighlight %}
 
 
+{% highlight vbnet %} 
 
-		// Closes the workbook.
-		workbook.Close();
 
-		excelEngine.Dispose();
 
-    ~~~
-    {:.prettyprint }
+' Step 1: Instantiates the spreadsheet creation engine.
 
-    ~~~ vbnet
+Dim excelEngine As ExcelEngine = New ExcelEngine
 
 
 
-		' Step 1: Instantiates the spreadsheet creation engine.
+' Step 2: Instantiates the excel application object.
 
-		Dim excelEngine As ExcelEngine = New ExcelEngine
+Dim application As IApplication = excelEngine.Excel
 
 
 
-		' Step 2: Instantiates the excel application object.
+' A new workbook is created. [Equivalent to creating a new workbook in MS Excel].
 
-		Dim application As IApplication = excelEngine.Excel
+'The new workbook will have 2 worksheets.
 
+Dim workbook As IWorkbook = application.Workbooks.Create(2)
 
 
-		' A new workbook is created. [Equivalent to creating a new workbook in MS Excel].
 
-		'The new workbook will have 2 worksheets.
+' Accesses via index.
 
-		Dim workbook As IWorkbook = application.Workbooks.Create(2)
+Dim sheet As IWorkbook = workbook.Worksheets(0)
 
+'Uses FormulaR1C1 property in Conditional Formatting.
 
+Dim condition As IConditionalFormats = sheet.Range("E5:E18").ConditionalFormats
 
-		' Accesses via index.
+Dim condition1 As IConditionalFormat = condition.AddCondition()           
 
-		Dim sheet As IWorkbook = workbook.Worksheets(0)
+condition1.FirstFormulaR1C1 = "=R[1]C[0]" 
 
-		'Uses FormulaR1C1 property in Conditional Formatting.
+condition1.SecondFormulaR1C1 = "=R[1]C[1]" 
 
-		Dim condition As IConditionalFormats = sheet.Range("E5:E18").ConditionalFormats
 
-		Dim condition1 As IConditionalFormat = condition.AddCondition()           
 
-		condition1.FirstFormulaR1C1 = "=R[1]C[0]" 
+Dim fileName As String = "Output.xlsx"
 
-		condition1.SecondFormulaR1C1 = "=R[1]C[1]" 
+workbook.Version = ExcelVersion.Excel2010
 
 
 
-		Dim fileName As String = "Output.xlsx"
+workbook.SaveAs(fileName)
 
-		workbook.Version = ExcelVersion.Excel2010
 
 
+' Closes the workbook.
 
-		workbook.SaveAs(fileName)
+workbook.Close()
 
+excelEngine.Dispose()
 
+{% endhighlight %}
+{% endtabs %}
 
-		' Closes the workbook.
-
-		workbook.Close()
-
-		excelEngine.Dispose()
-
-    ~~~
-    {:.prettyprint }
-
-## Conditional Format Types 
+### Conditional Format Types 
 
 Excel 2007 introduces a new formatting that highlights cells once they meet their respective constraints. Three new visualizations such as DataBars, Color Scales, and Icon Sets help you explore large datasets, identify trends and exceptions, and quickly compare data.
 
@@ -4916,13 +4977,13 @@ Excel 2007 introduces a new formatting that highlights cells once they meet thei
 
 Data Bars give you an opportunity to create visual effects in your data that help you see how the value of a cell is compared with other cells. Excel compares the values in each of the selected cells and draws a data bar in each cell representing the value of that cell relative to the other cells in the selected range. This bar provides a clear visual cue, making it easier to pick out larger and smaller values in a range.
 
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img19.jpeg)
+![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img24.jpeg)
 
 
 
 MS Excel enables setting these formats through the Conditional Formatting menu. It also allows you to set the criteria through the New Formatting Rule dialog box as follows.
 
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img20.jpeg)
+![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img25.jpeg)
 
 
 
@@ -4930,7 +4991,7 @@ MS Excel enables setting these formats through the Conditional Formatting menu. 
 
 Color Scales let you create visual effects in your data to compare the value of a cell with the values in a range of cells. A color scale uses cell shading as opposed to bars to communicate relative values. This is especially useful when you want to communicate more about your data beyond the relative size of the value of a cell.
 
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img21.jpeg)
+![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img26.jpeg)
 
 
 
@@ -4938,7 +4999,7 @@ You can customize the criteria through the New Formatting Rule dialog box in MS 
 
 
 
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img22.jpeg)
+![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img27.jpeg)
 
 
 
@@ -4946,7 +5007,7 @@ You can customize the criteria through the New Formatting Rule dialog box in MS 
 
 Icon Sets give you an opportunity to create visual effects in your data to see how the value of a cell is compared with other cells. Excel 2007 offers several choices of icon sets. You can choose the icons that are most appropriate for the data you are using. Icon Sets come in three sizes that enables increase or decrease of the font size of the icon and it becomes larger or smaller appropriately.
 
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img23.jpeg)
+![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img28.jpeg)
 
 
 
@@ -4954,16 +5015,17 @@ It is possible to hide the value of the cell and just draw the icon while applyi
 
 
 
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img24.jpeg)
+![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img29.jpeg)
 
 
 
-###Visualization in XlsIO
+##Visualization in XlsIO
 
 XlsIO also provides support for visualizations through IDataBar, IconSet, and IColorScale interfaces. You can also customize these visualizations by specifying the criteria using XlsIO. The following code example illustrates how to apply and customize various visualizations.
 
-{% highlight C# %}
+{% tabs %}
 
+{% highlight C# %}  
 
 
 // Step 1: Instantiates the spreadsheet creation engine.
@@ -5078,8 +5140,9 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
 
+
+{% highlight vbnet %} 
 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
@@ -5193,11 +5256,13 @@ workbook.Close()
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 
-![](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img25.png)
-
-
+![C:/Users/mahajothir/Desktop/CFImage/sshot-2.png](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img30.png)
 
 N> XlsIO visualization has been enhanced with backward compatibility for Advanced Conditional Formatting.
+
+
+
 
 

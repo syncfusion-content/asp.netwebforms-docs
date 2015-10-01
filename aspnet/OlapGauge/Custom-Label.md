@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom-Label
+title: Custom Label | OLAPClient | ASP.NET Webforms | Syncfusion
 description: custom label
 platform: aspnet
 control: OLAP Gauge

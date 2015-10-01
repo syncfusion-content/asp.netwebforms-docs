@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Behavior-settings
+title: Behavior settings | TreeView | ASP.NET | Syncfusion
 description: behavior settings
 platform: aspnet
 control: TreeView
 documentation: ug
 ---
 
-## Behavior settings
+# Behavior settings
 
-### Enabled
+## Enabled
 
 You can enable or disable the TreeView control by using the property Enabled. You can enable the TreeView control by setting the property Enabled to “True” and you can specify the property Enabled in the controls section as follows.
 
@@ -119,35 +119,32 @@ You can enable or disable the TreeView control by using the property Enabled. Yo
 
 </ej:TreeView>
 
-
-
 {% endhighlight %}
 
-### Expanded Nodes
+## Expanded Nodes
 
 You can specify the expanded node level in TreeView by using the property ExpandedNodes. Expanded nodes index collection is given to integer array. Add the following code in your controls section.
 
+{% tabs %}
 {% highlight c# %}
 
 // List the node expaned level.
 
 public partial class Checkbox : System.Web.UI.Page
 
+{
+
+    protected void Page_Load(object sender, EventArgs e)
+
     {
 
-        protected void Page_Load(object sender, EventArgs e)
+        List<int> nodes = new List<int>() { 0, 4 };
 
-        {
-
-            List<int> nodes = new List<int>() { 0, 4 };
-
-            this.treeview.ExpandedNodes = nodes;
-
-        }
+        this.treeview.ExpandedNodes = nodes;
 
     }
 
-
+}
 
 {% endhighlight %}
 
@@ -259,9 +256,8 @@ public partial class Checkbox : System.Web.UI.Page
 
 </ej:TreeView>
 
-
-
 {% endhighlight %}
+{% endtabs %}
 
 ### Expand On
 
@@ -372,8 +368,6 @@ Node can be expanded for specified events. You can specify the property ExpandOn
     </Nodes>
 
 </ej:TreeView>
-
-
 
 {% endhighlight %}
 

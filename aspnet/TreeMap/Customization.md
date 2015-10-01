@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization
+title: Customization | TreeMap | ASP.NET | Syncfusion
 description: customization
 platform: aspnet
 control: TreeMap
@@ -11,7 +11,7 @@ documentation: ug
 
 TreeMap control supports color customization to determine the exact combination of colors for tree nodes displayed in TreeMap and tooltip support to display additional information of treemap data.
 
-## Color Customization
+### Color Customization
 
 You can customize the colors of the leaf nodes of TreeMap using the ColorMapping support of the TreeMap. 
 
@@ -45,17 +45,17 @@ You can group the leaf nodes based on the range of the data’s color values. Yo
 
 <ej:Treemap ID="treemap" runat="server">
 
-         <TreeMapRangeColorMappings>
+     <TreeMapRangeColorMappings>
 
-             <ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"></ej:TreeMapRangeColorMapping>
+         <ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"></ej:TreeMapRangeColorMapping>
 
-             <ej:TreeMapRangeColorMapping Color = "#AED960" Legendlabel = "2% Growth" From = "0" To = "2"></ej:TreeMapRangeColorMapping>
+         <ej:TreeMapRangeColorMapping Color = "#AED960" Legendlabel = "2% Growth" From = "0" To = "2"></ej:TreeMapRangeColorMapping>
 
-             <ej:TreeMapRangeColorMapping Color = "#FFAF51" Legendlabel = "3% Growth" From = "0" To = "3"></ej:TreeMapRangeColorMapping>
+         <ej:TreeMapRangeColorMapping Color = "#FFAF51" Legendlabel = "3% Growth" From = "0" To = "3"></ej:TreeMapRangeColorMapping>
 
-             <ej:TreeMapRangeColorMapping Color = "#F3D240" Legendlabel = "4% Growth" From = "0" To = "4"></ej:TreeMapRangeColorMapping>
+         <ej:TreeMapRangeColorMapping Color = "#F3D240" Legendlabel = "4% Growth" From = "0" To = "4"></ej:TreeMapRangeColorMapping>
 
-        </TreeMapRangeColorMappings>
+    </TreeMapRangeColorMappings>
 
 </ej:Treemap>
 
@@ -72,9 +72,9 @@ You can differentiate all the leaf nodes using the DesaturationColorMapping prop
 
 <ej:TreeMap ID="treemap" runat="server">
 
-<TreeMapDesaturationColorMapping From = "1" To ="0.5" Color="#41B8C4" RangeMinimum="2000" RangeMaximum = "8000">
+    <TreeMapDesaturationColorMapping From = "1" To ="0.5" Color="#41B8C4" RangeMinimum="2000" RangeMaximum = "8000">
 
-        </TreeMapDesaturationColorMapping>
+    </TreeMapDesaturationColorMapping>
 
 </ej:TreeMap>
 
@@ -84,7 +84,7 @@ You can differentiate all the leaf nodes using the DesaturationColorMapping prop
 ![](Customization_images/Customization_img3.png)
 
 
-## Tooltip
+### Tooltip
 
 You can enable the tooltip support for the TreeMap by setting the ShowTooltip property to true. By default, it takes the property of the bound object that is referred to in the GroupPath and displays its content when the corresponding node is tapped. The TooltipTemplate is a HTML element that is used to expose the custom template for the tooltip.
 
@@ -94,11 +94,11 @@ You can customize the Leaf level TreeMapitems using LeafItemsSetting. The Label 
 
 {% highlight c# %}
 
-  protected void Page_Load(object sender, EventArgs e)
-	{
+protected void Page_Load(object sender, EventArgs e)
+{
 
-		this.treemap.DataSource = TreeMapPopulationData.GetData();
-	}
+    this.treemap.DataSource = TreeMapPopulationData.GetData();
+}
 
 {% endhighlight %}
 
@@ -112,7 +112,7 @@ You can customize the Leaf level TreeMapitems using LeafItemsSetting. The Label 
 
         <LeafItemSettings LabelPath = "Country"></LeafItemSettings>
 
-         <TreeMapRangeColorMappings>
+        <TreeMapRangeColorMappings>
 
              <ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"></ej:TreeMapRangeColorMapping>
 
@@ -132,7 +132,7 @@ You can customize the Leaf level TreeMapitems using LeafItemsSetting. The Label 
 
     </ej:Treemap>
 
-    </div>
+</div>
 	
 {% endhighlight %}
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Scroller | ASP.NET | Syncfusion
 description: getting started
 platform: aspnet
-control: Overview
+control: Scroller
 documentation: ug
 ---
 
@@ -23,69 +23,69 @@ You can add the following code example to the corresponding ASPX page to render�
 
 <ej:Scroller ID="scrollcontent" runat="server" Height="170" Width="350" ScrollTop="10" ScrollLeft="20" ButtonSize="20">
 
-            <ScrollerContent>
+	<ScrollerContent>
 
-                <div>
+		<div>
 
-                    <div class="sampleContent">
+			<div class="sampleContent">
 
-                        <h3 style="font-size: 20px;">MVC</h3>
+				<h3 style="font-size: 20px;">MVC</h3>
 
-                        <div>
+				<div>
 
-                            <p>
+					<p>
 
-                                Model–view–controller (MVC) is a software architecture pattern which separates the
+						Model–view–controller (MVC) is a software architecture pattern which separates the
 
-                                    representation of information from the user's interaction with it.
+							representation of information from the user's interaction with it.
 
-                                    The model consists of application data, business rules, logic, and functions. A view can be any
+							The model consists of application data, business rules, logic, and functions. A view can be any
 
-                                    output representation of data, such as a chart or a diagram. Multiple views of the same data 
+							output representation of data, such as a chart or a diagram. Multiple views of the same data 
 
-                                    are possible, such as a bar chart for management and a tabular view for accountants. 
+							are possible, such as a bar chart for management and a tabular view for accountants. 
 
-                                    The controller mediates input, converting it to commands for the model or view.The central 
+							The controller mediates input, converting it to commands for the model or view.The central 
 
-                                    ideas behind MVC are code reusability and n addition to dividing the application into three 
+							ideas behind MVC are code reusability and n addition to dividing the application into three 
 
-                                    kinds of components, the MVC design defines the interactions between them.
+							kinds of components, the MVC design defines the interactions between them.
 
-                            </p>
+					</p>
 
-                            <ul>
+					<ul>
 
-                                <li>
+						<li>
 
-                                    <b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+							<b>A controller </b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
 
-                                                 It can also send commands to the model to update the model's state (e.g., editing a document).
+										 It can also send commands to the model to update the model's state (e.g., editing a document).
 
-                                </li>
+						</li>
 
-                                <li>
+						<li>
 
-                                    <b>A model</b> notifies its associated views and controllers when there has been a change in its state. This notification allows the views to produce updated output, and the controllers to change the available set of commands. 
+							<b>A model</b> notifies its associated views and controllers when there has been a change in its state. This notification allows the views to produce updated output, and the controllers to change the available set of commands. 
 
-                                                A passive implementation of MVC omits these notifications, because the application does not require them or the software platform does not support them.
+										A passive implementation of MVC omits these notifications, because the application does not require them or the software platform does not support them.
 
-                                </li>
+						</li>
 
-                                <li>
+						<li>
 
-                                    <b>A view</b> requests from the model the information that it needs to generate an output representation to the user.
+							<b>A view</b> requests from the model the information that it needs to generate an output representation to the user.
 
-                                </li>
+						</li>
 
-                            </ul>
+					</ul>
 
-                        </div>
+				</div>
 
-                    </div>
+			</div>
 
-                </div>
+		</div>
 
-          </ScrollerContent>
+	</ScrollerContent>
 
 </ej:Scroller>
 
@@ -96,13 +96,13 @@ Initialize Scroller with following styles.
 
 {% highlight css %}
 
-    .sampleContent {
+.sampleContent {
 
-            width: 700px;
+		width: 700px;
 
-            padding: 15px;
+		padding: 15px;
 
-        }
+	}
 		
 {% endhighlight %}
 

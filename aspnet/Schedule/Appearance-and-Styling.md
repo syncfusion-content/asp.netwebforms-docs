@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Appearance and Styling | Schedule | ASP.NET Webforms | Syncfusion
 description: appearance and styling
 platform: aspnet
 control: Schedule
@@ -9,13 +9,13 @@ documentation: ug
 
 # Appearance and Styling
 
-##Adaptive Schedule
+## Adaptive Schedule
 
 * The Schedule control has been provided with the built-in support for adaptive functionality. With this behaviour enabled, the Schedule control can be accessed in any of the mobile devices as per the screen size. 
 * To enable the adaptive layout of the Schedule control, it is necessary to set the property isResponsive to True. By default, it is set to false. 
 * When the isResponsive property is set to true, the Schedule control automatically chooses the appropriate rendering method to display it either on the mobile or desktop mode, based on the screen size it is rendered. Except the horizontal mode orientation, all the other default functionalities of the Schedule control are supported in this feature. 
 
-##Dependencies
+## Dependencies
 
 For Adaptive Schedule, you can refer to the following css file in the application that can be downloaded from the link,
 
@@ -100,13 +100,14 @@ The following screenshot displays the Schedule control with all-day row hidden,
 ![C:/Users/maheshp/Pictures/sshot-8.png](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 
-Figure 2: Schedule with disabled all day row.
+Schedule with disabled all day row
+{:.caption} 
 
 
 
-##Adjust Schedule Size
+## Adjust Schedule Size
 
-###Height
+### Height
 
 * The height of the Schedule control is handled using the height property that accepts only the pixel values.
 * By default, the Schedule control is set with the height of 800px.
@@ -144,10 +145,10 @@ The following screenshot displays the Schedule control with the height set to �
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 
+Adjusting schedule size height
+{:.caption} 
 
-   _Figure_ _111_:  Adjusting schedule size height.
-
-###width
+### width
 
 * The width of the Schedule control is handled with the width property that accepts both the pixel values as well as percentage values. 
 * By default, the schedule control is set with the width of 800px.
@@ -186,10 +187,10 @@ The following screenshot displays the Schedule control with the width set to “
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
 
+Adjusting schedule size width
+{:.caption} 
 
-   Figure 112:  Adjusting schedule size width
-
-##Adjust Cell Size
+## Adjust Cell Size
 
 * The size of the cells within the Schedule control can be customized with two of the available options, cellWidth and cellHeight. 
 * In order to view the appointments more clearly within the schedule control, you can enhance the height and width of the cells using these options.
@@ -235,23 +236,24 @@ The following screenshot displays the Schedule control with the cell width set t
 ![C:/Users/maheshp/Desktop/schedule1.PNG](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
 
 
-##Theme
+## Theme
 
 * Schedule control’s style and appearance is controlled based on CSS classes. In order to apply styles to the Schedule control, you are required to refer 2 files namely, ej.widgets.core.min.css and ej.theme.min.css. 
 * When the ej.widgets.all.min.css fileis referred, it is not necessary to include the ej.widgets.core.min.css and ej.theme.min.css files in your project as ej.widgets.all.min.css is the combination of these two files. 
 * By default, there are 12 theme support available for Schedule control namely,
-1. default-theme
-2. flat-azure-dark
-3. fat-lime
-4. flat-lime-dark
-5. flat-saffron
-6. flat-saffron-dark
-7. gradient-azure
-8. gradient-azure-dark
-9. gradient-lime
-10. gradient-lime-dark
-11. gradient-saffron
-12. gradient-saffron-dark
+  
+  1. default-theme
+  2. flat-azure-dark
+  3. fat-lime
+  4. flat-lime-dark
+  5. flat-saffron
+  6. flat-saffron-dark
+  7. gradient-azure
+  8. gradient-azure-dark
+  9. gradient-lime
+  10. gradient-lime-dark
+  11. gradient-saffron
+  12. gradient-saffron-dark
 
 
 
@@ -297,7 +299,7 @@ The schedule control will render as follows
 
 
 
-##Show/Hide Header Bar
+## Show/Hide Header Bar
 
 In Schedule control, you can show/hide the header bar by using the showHeaderBar property. By default, this property is set to true and when it is set to false, the schedule control is rendered without the date and view navigation options.
 
@@ -334,5 +336,6 @@ The following screenshot displays the Schedule control with the hidden header 
 
 
 
-_Schedule with header bar hidden_
+Schedule with header bar hidden
+{:.caption} 
 

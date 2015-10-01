@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customized-tools-option
+title: Customized tools option | RichTextEditor | ASP.NET Webforms | Syncfusion
 description: customized tools option
 platform: aspnet
 control: RichTextEditor
@@ -277,5 +277,6 @@ rteobj.disableToolbarItem("<%=rteSample.ClientID%>image");
 
 
 
-_Showcase for disable the insert image in toolbar_
+Showcase for disable the insert image in toolbar
+{:.caption} 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-Paragraphs
+title: Working with Paragraphs | DocIO | ASP.NET Webforms | Syncfusion
 description: working with paragraphs
 platform: aspnet
 control: DocIO

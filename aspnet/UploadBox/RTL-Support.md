@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RTL-Support
+title: RTL Support | UploadBox | ASP.NET | Syncfusion
 description: rtl support 
 platform: aspnet
 control: UploadBox
@@ -17,13 +17,7 @@ In the ASPX page, add the UploadBox element.
 
 {% highlight html %}
 
-
-
 <ej:UploadBox ID="Uploadbox" runat="server" SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx" EnableRTL="true"></ej:UploadBox>
-
-
-
-
 
 {% endhighlight %}
 

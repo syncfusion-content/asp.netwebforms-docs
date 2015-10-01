@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | LinearGauge | ASP.NET Webforms | Syncfusion
 description: overview
 platform: aspnet
 control: Linear Gauge

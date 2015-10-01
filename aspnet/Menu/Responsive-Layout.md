@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Responsive-Layout
+title: Responsive Layout | Menu | ASP.NET Webforms | Syncfusion
 description: responsive layout
 platform: aspnet
 control: Menu

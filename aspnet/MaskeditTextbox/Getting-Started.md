@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | MaskEdit | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: MaskEdit
@@ -23,7 +23,7 @@ The following screenshot illustrates the functionality of a MaskEdit. Here, Mob
 
 ## Create a MaskEdit control
 
-You can create an ASP.NETProject and add the necessary Dll’s and scripts with the help of the given [ASP.NET WebForms-Getting Started](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc) Documentation.
+You can create an ASP.NETProject and add the necessary Dll’s and scripts with the help of the given [ASP.NET WebForms-Getting Started](http://docs.syncfusion.com/aspnetmvc/maskedittextbox/getting-started) Documentation.
 
 Add the following code to the corresponding ASPX page to render the MaskEdit control.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Appearance and Styling | Ribbon | ASP.NET Webforms | Syncfusion
 description: appearance and styling
 platform: aspnet
 control: Ribbon
@@ -11,7 +11,7 @@ documentation: ug
 
 ## SelectedItemIndex
 
-Specifies the index of the _Ribbon_ tab to select the given index tab item in the _Ribbon_ control
+Specifies the index of the Ribbon tab to select the given index tab item in the Ribbon control
 
 
 {% highlight html %}
@@ -145,7 +145,7 @@ The following output is displayed as a result of the above code example.
 
 ## DisabledItemIndex
 
-Specifies the index or indexes to disable the corresponding tabs in the _Ribbon_ control.
+Specifies the index or indexes to disable the corresponding tabs in the Ribbon control.
 
 
 
@@ -289,7 +289,7 @@ The following output is displayed as a result of the above code example.
 
 ## EnableItemIndex
 
-Specifies the index or indexes to enable the corresponding tabs in the _Ribbon_ control.
+Specifies the index or indexes to enable the corresponding tabs in the Ribbon control.
 
 
 
@@ -425,7 +425,7 @@ The following output is displayed as a result of the above code example.
 
 ## HideTab
 
-This method is used to hide the given text tab in the _Ribbon_ control.
+This method is used to hide the given text tab in the Ribbon control.
 
 
 
@@ -559,7 +559,7 @@ The following output is displayed as a result of the above code example.
 
 ## ShowTab
 
-This method is used to show the given text tab in the _Ribbon_ control.
+This method is used to show the given text tab in the Ribbon control.
 
 
 
@@ -697,7 +697,7 @@ The following output is displayed as a result of the above code example.
 
 ## RemoveTab
 
-This method is used to remove the given index tab item from the _Ribbon_ control.
+This method is used to remove the given index tab item from the Ribbon control.
 
 
 
@@ -831,7 +831,7 @@ The following output is displayed as a result of the above code example.
 
 ## Width
 
-Specifies the _Width_ to the _Ribbon_ control.
+Specifies the Width to the Ribbon control.
 
 
 
@@ -950,13 +950,13 @@ The following output is displayed as a result of the above code example.
 
 ## Add Tab Group
 
-This method is used to add Ribbon Group dynamically in the _Ribbon_ control. This method needs three arguments _addTabGroup(Tab index, Groupcollection, Group index)_
+This method is used to add Ribbon Group dynamically in the Ribbon control. This method needs three arguments addTabGroup(Tab index, Groupcollection, Group index)
 
-_Tab index_: Index of tab, where the group is to be added.
+Tab index : Index of tab, where the group is to be added.
 
-_TabGroup collection_: Collection of the groups that group needs to add.
+TabGroup collection : Collection of the groups that group needs to add.
 
-_Group Index_: Index of ribbon group, where the group is to be added. It is optional argument, when this argument is not given, group is added at last position by default.
+Group Index : Index of ribbon group, where the group is to be added. It is optional argument, when this argument is not given, group is added at last position by default.
 
 
 
@@ -1073,17 +1073,17 @@ The following output is displayed as a result of the above code example.
 
 ## Add Tab Group Content
 
-This method is used to add group content dynamically in the ribbon. This method contains five arguments _addTabGroupContent(Tab index, Group index, Subgroup index, Content, Content index)_
+This method is used to add group content dynamically in the ribbon. This method contains five arguments addTabGroupContent(Tab index, Group index, Subgroup index, Content, Content index)
 
-_Tab index_: Ribbon Tab index.
+Tab index : Ribbon Tab index.
 
-_Group index_: Ribbon group index.
+Group index : Ribbon group index.
 
-_Subgroup Index_: Sub group index. Content to be added belongs to this sub group index.
+Subgroup Index : Sub group index. Content to be added belongs to this sub group index.
 
-_Content_: Collection of the group content that is added as Ribbon group content. 
+Content : Collection of the group content that is added as Ribbon group content. 
 
-_Content Index_: Ribbon content index, this is optional argument. When this argument is not given, the Group content is added at last position by default.
+Content Index : Ribbon content index, this is optional argument. When this argument is not given, the Group content is added at last position by default.
 
 
 

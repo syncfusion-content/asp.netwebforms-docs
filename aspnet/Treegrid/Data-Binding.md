@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding
+title: Data Binding | TreeGrid | ASP.NET | Syncfusion
 description: data binding
 platform: aspnet
 control: TreeGrid
@@ -11,7 +11,7 @@ documentation: ug
 
 Data Binding is the process that establishes a connection between the application and different kinds of data sources such as business objects.
 
-## Local Data Binding
+### Local Data Binding
 
 In Local Data Binding, datasource for rendering the TreeGrid control is retrieved from the same application locally.
 
@@ -23,7 +23,7 @@ Two types of Data Binding are possible with TreeGrid control,
 ### Hierarchy Datasource Binding
 
 The following code example shows you how to bind the Hierarchical local data into the TreeGrid control.
-
+{% tabs %}
 {% highlight c# %}
 
 TreeGrid.aspx.cs
@@ -259,6 +259,7 @@ namespace WebSampleBrowser.TreeGrid
 </asp:Content>
 
 {% endhighlight %}
+{% endtabs %}
 
 The output of the above steps is as follows:
 
@@ -274,6 +275,7 @@ TreeGrid is rendered from Self-Referential data structures by providing two fiel
 
 * Parent ID Field- This field contains values that indicate parent nodes. Its name is assigned to the ParentIdMapping property.
 
+{% tabs %}
 {% highlight c# %}
 
 TreeGrid.aspx.cs
@@ -522,7 +524,7 @@ TreeGrid.aspx
 </asp:Content>
 
 {% endhighlight %}
-
+{% endtabs %}
 
 The following screenshot shows the output of the above steps,
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drag-and-Drop-Support
+title: Drag and Drop Support | UploadBox | ASP.NET | Syncfusion
 description: drag and drop support
 platform: aspnet
 control: UploadBox
@@ -27,8 +27,6 @@ In the ASPX page, configure element UploadBox element to enable the drag and dro
 
 {% highlight html %}
 
-
-
 <div class="frame">
 
     <div class="control">
@@ -41,10 +39,6 @@ In the ASPX page, configure element UploadBox element to enable the drag and dro
 
 </div>
 
-
-
-
-
 {% endhighlight %}
 
 N> The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
@@ -53,27 +47,25 @@ In CSS, configure the custom styles for drag and drop.
 
 {% highlight css %}
 
-        .frame {
+.frame {
 
-            width: 500px;
+    width: 500px;
 
-            height: 100px;
+    height: 100px;
 
-            margin-top: 10%;
+    margin-top: 10%;
 
-        }
-
-
-
-        .control {
-
-            width: 100%;
-
-            height: 100%;
-
-        }
+}
 
 
+
+.control {
+
+    width: 100%;
+
+    height: 100%;
+
+}
 
 {% endhighlight %}
 
@@ -92,10 +84,7 @@ You can change the drag area text by using the DragAreaText property.  By defaul
 In the ASPX page, configure UploadBox element to enable the drag and drop in the UploadBox control.
 
 
-
 {% highlight html %}
-
-
 
 <div class="frame">
 
@@ -111,10 +100,6 @@ In the ASPX page, configure UploadBox element to enable the drag and drop in the
 
 </div>
 
-
-
-
-
 {% endhighlight %}
 
 
@@ -123,35 +108,29 @@ In CSS, configure the custom styles for drag and drop.
 
 {% highlight css %}
 
+.frame
 
+{
 
-    .frame
+    width: 500px;
 
-    {
+    height: 100px;
 
-        width: 500px;
+    margin-top: 10%;
 
-        height: 100px;
-
-        margin-top: 10%;
-
-    }
-
-
-
-    .control
-
-    {
-
-        width: 100%;
-
-        height: 100%;
-
-    }
+}
 
 
 
+.control
 
+{
+
+    width: 100%;
+
+    height: 100%;
+
+}
 
 {% endhighlight %}
 
@@ -173,15 +152,9 @@ In the ASPX page, configure UploadBox element to enable the drag and drop in the
 
 {% highlight html %}
 
+<ej:UploadBox ID="UploadBox1" runat="server" AllowDragAndDrop="true" MultipleFilesSelection="true" DropAreaHeight="300px" DropAreaWidth="600px" SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx">
 
-
-        <ej:UploadBox ID="UploadBox1" runat="server" AllowDragAndDrop="true" MultipleFilesSelection="true" DropAreaHeight="300px" DropAreaWidth="600px" SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx">
-
-        </ej:UploadBox>
-
-
-
-
+</ej:UploadBox>
 
 {% endhighlight %}
 
@@ -207,25 +180,19 @@ In the ASPX page, configure UploadBox element to enable the drag and drop in the
 
 {% highlight html %}
 
-
-
 <div class="frame">
 
     <div class="control">
 
         <ej:UploadBox ID="UploadBox1" runat="server" AllowDragAndDrop="true" DragAreaText="Drop files here for uploading" MultipleFilesSelection="true"
 
-ShowBrowseButton="false" SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx">
+           ShowBrowseButton="false" SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx">
 
         </ej:UploadBox>
 
     </div>
 
 </div>
-
-
-
-
 
 {% endhighlight %}
 
@@ -235,35 +202,29 @@ In CSS, configure the custom styles for drag and drop.
 
 {% highlight css %}
 
+.frame
 
+{
 
-    .frame
+    width: 500px;
 
-    {
+    height: 100px;
 
-        width: 500px;
+    margin-top: 10%;
 
-        height: 100px;
-
-        margin-top: 10%;
-
-    }
-
-
-
-    .control
-
-    {
-
-        width: 100%;
-
-        height: 100%;
-
-    }
+}
 
 
 
+.control
 
+{
+
+    width: 100%;
+
+    height: 100%;
+
+}
 
 {% endhighlight %}
 

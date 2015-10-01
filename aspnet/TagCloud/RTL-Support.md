@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RTL-Support
+title: RTL Support | TagCloud | ASP.NET | Syncfusion
 description: rtl support
 platform: aspnet
 control: TagCloud
@@ -17,13 +17,7 @@ To enable the right-to-left property in TagCloud, include the following TagCloud
 
 {% highlight html %}
 
-
-
 <ej:TagCloud ID="tagcloud" runat="server" DataTextField="text" DataUrlField="url" DataFrequencyField="frequency" EnableRTL="true"></ej:TagCloud>
-
-
-
-
 
 {% endhighlight %}
 
@@ -31,95 +25,89 @@ To enable the right-to-left property in TagCloud, include the following TagCloud
 
 {% highlight c# %}
 
-
-
-
-
 protected void Page_Load(object sender, EventArgs e)
 
-        {
+{
 
-            this.tagcloud.DataSource = new TagCloudData().GetTagCloudItems();
+	this.tagcloud.DataSource = new TagCloudData().GetTagCloudItems();
 
+}
 
+public class TagCloudData
 
-        }
+{
 
-        public class TagCloudData
+	public TagCloudData()
 
-        {
-
-            public TagCloudData()
-
-            {
+	{
 
 
 
-            }
+	}
 
-            public TagCloudData(string _text, string _url, int _frequency)
+	public TagCloudData(string _text, string _url, int _frequency)
 
-            {
+	{
 
-                this.text = _text;
+		this.text = _text;
 
-                this.url = _url;
+		this.url = _url;
 
-                this.frequency = _frequency;
+		this.frequency = _frequency;
 
-            }
+	}
 
-            public string text
+	public string text
 
-            {
+	{
 
-                get;
+		get;
 
-                set;
+		set;
 
-            }
+	}
 
-            public string url
+	public string url
 
-            {
+	{
 
-                get;
+		get;
 
-                set;
+		set;
 
-            }
+	}
 
-            public int frequency
+	public int frequency
 
-            {
+	{
 
-                get;
+		get;
 
-                set;
+		set;
 
-            }
+	}
 
-            public List<TagCloudData> GetTagCloudItems()
+	public List<TagCloudData> GetTagCloudItems()
 
-            {
+	{
 
-                List<TagCloudData> data = new List<TagCloudData>();
+		List<TagCloudData> data = new List<TagCloudData>();
 
-                data.Add(new TagCloudData("Hindustan Motors", "http://www.zigwheels.com/newcars/Hindustan-Motors", 10));
+		data.Add(new TagCloudData("Hindustan Motors", "http://www.zigwheels.com/newcars/Hindustan-Motors", 10));
 
-                data.Add(new TagCloudData("Bentley Continental ", "http://www.zigwheels.com/newcars/Bentley/Continental", 3));
+		data.Add(new TagCloudData("Bentley Continental ", "http://www.zigwheels.com/newcars/Bentley/Continental", 3));
 
-                data.Add(new TagCloudData("BMW 7", "http://www.zigwheels.com/newcars/BMW/7-Series", 4));
+		data.Add(new TagCloudData("BMW 7", "http://www.zigwheels.com/newcars/BMW/7-Series", 4));
 
-                data.Add(new TagCloudData("Bugatti Veyron", "http://www.zigwheels.com/newcars/Bugatti/Veyron", 2));
+		data.Add(new TagCloudData("Bugatti Veyron", "http://www.zigwheels.com/newcars/Bugatti/Veyron", 2));
 
-                data.Add(new TagCloudData("Honda", "http://www.zigwheels.com/newcars/Honda", 3));
+		data.Add(new TagCloudData("Honda", "http://www.zigwheels.com/newcars/Honda", 3));
 
-                data.Add(new TagCloudData("Chevrolet Beat", "http://www.zigwheels.com/newcars/Chevrolet/Beat", 7));
+		data.Add(new TagCloudData("Chevrolet Beat", "http://www.zigwheels.com/newcars/Chevrolet/Beat", 7));
 
-                return data;
+		return data;
 
-             }
+	 }
 
 }
 

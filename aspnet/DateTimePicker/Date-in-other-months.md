@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Date-in-other-months
+title: Date in other months | DateTimePicker | ASP.NET Webforms | Syncfusion
 description: date in other months
 platform: aspnet
 control: DateTimePicker
@@ -17,13 +17,7 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 {% highlight html %}
 
-
-
 <ej:DateTimePicker ID="DateTime" ShowOtherMonths="false" runat="server"> </ej:DateTimePicker>
-
-
-
-
 
 {% endhighlight %}
 

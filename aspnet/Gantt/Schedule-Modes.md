@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Schedule-Modes
+title: Schedule Modes | Gantt | ASP.NET Webforms | Syncfusion
 description: schedule modes
 platform: aspnet
 control: Gantt
@@ -59,7 +59,8 @@ The following screenshot illustrates the Week Schedule in Gantt control.
 ![](Schedule-Modes_images/Schedule-Modes_img1.png) 
 
 
-_Figure : Week Schedule in Gantt control_
+Week Schedule in Gantt control
+{:.caption}
 
 ## Month Schedule Mode
 
@@ -95,7 +96,8 @@ The following screenshot illustrates the Month Schedule in Gantt control.
 
 ![](Schedule-Modes_images/Schedule-Modes_img2.png)
 
-_Figure : Month Schedule in Gantt control_
+Month Schedule in Gantt control
+{:.caption}
 
 ## Year Schedule Mode
 
@@ -133,7 +135,8 @@ The following screen shot shows the Year Schedule in Gantt control.
 
 ![](Schedule-Modes_images/Schedule-Modes_img3.png)
 
-_Figure : Year Schedule in Gantt control_
+Year Schedule in Gantt control
+{:.caption}
 
 ## Day Schedule Mode
 
@@ -171,7 +174,8 @@ The following screenshot illustrates the Day Schedule in Gantt control.
 
 ![](Schedule-Modes_images/Schedule-Modes_img4.png)
 
-_Figure : Day Schedule in Gantt control_
+Day Schedule in Gantt control
+{:.caption}
 
 ## Hour Schedule Mode
 
@@ -227,5 +231,6 @@ The Hour Schedule Mode supports both the Minute and Hour duration units.
 
 ![](Schedule-Modes_images/Schedule-Modes_img5.png)
 
-_Figure : Hour-Minute schedule mode in Gantt control_
+Hour-Minute schedule mode in Gantt control
+{:.caption}
 

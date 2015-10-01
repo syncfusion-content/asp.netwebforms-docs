@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scrolling
+title: Scrolling | Grid | ASP.NET Webforms | Syncfusion
 description: scrolling
 platform: aspnet
 control: Grid
@@ -14,6 +14,8 @@ documentation: ug
 Scrolling is an important feature in Grid. It makes Grid more compatible with layout and design. The AllowScrolling property is used to enable scrolling functionality to the Grid. The default value for AllowScrolling is false.
 
 In this following code example, ScrollSettings property is used to adjust the Grid width and height. 
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -175,6 +177,8 @@ public partial class _Default : Page
 
 {% endhighlight %}
 
+{% endtabs %}
+
 
 The following output is displayed as a result of the above code example.
 
@@ -307,6 +311,9 @@ Essential Asp.NetGrid supports two mode of virtualization. They are,
 
 
 This feature allows you to load the Grid with data while scrolling. The following code example illustrates how to set VirtualScrollMode as Normal. 
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -357,6 +364,8 @@ public partial class _Default : Page
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The following screenshot displays the Grid while scrolling. The request is sent to the server to fetch data.
 
 ![](Scrolling_images/Scrolling_img4.png)
@@ -372,6 +381,9 @@ The following screenshot displays the Grid after it is loaded with data.
 ### Continuous Mode
 
 You can enable the continuous mode by setting the VirtualScrollMode property as Continuous. In Continuous mode, the data is loaded in Grid when the scrollbar reaches the end. The following code example illustrates how to set the continuous mode in virtualization. 
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -423,6 +435,9 @@ public partial class _Default : Page
 
 }
 {% endhighlight  %}
+
+{% endtabs %}
+
 The following screenshot illustrates the request made to fetch the data after the Grid scrollbar touches the end.
 
 ![](Scrolling_images/Scrolling_img6.png)

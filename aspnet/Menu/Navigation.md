@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Navigation
+title: Navigation | Menu | ASP.NET Webforms | Syncfusion
 description: navigation
 platform: aspnet
 control: Menu

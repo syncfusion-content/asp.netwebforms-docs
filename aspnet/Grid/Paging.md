@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paging
+title: Paging | Grid | ASP.NET Webforms | Syncfusion
 description: paging
 platform: aspnet
 control: Grid
@@ -100,6 +100,8 @@ The following output is displayed as a result of the above code example.
 ## Pager Templates
 
 Pager Templates feature provide support to render a specific custom template to a Grid pager using EnableTemplates and Template properties of PageSettings. ShowDefaults property is used to show/hide default pager for Grid.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -243,7 +245,7 @@ public partial class PrintGrid : System.Web.UI.Page
 
 {% endhighlight  %}
 
-
+{% endtabs %}
 
 
 
@@ -259,6 +261,9 @@ The following are the public methods of pager.
 * refreshPager
 
 In this section, you can see how to use paging methods in Grid control. The following code example is for paging methods. 
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -510,7 +515,7 @@ public partial class DefaultFunctionalities : System.Web.UI.Page
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 
 The following output is displayed as a result of the above code example.

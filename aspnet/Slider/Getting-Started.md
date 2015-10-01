@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Slider | ASP.NET | Syncfusion
 description: getting started
 platform: aspnet
 control: Slider
@@ -93,77 +93,71 @@ Add the following code example to the corresponding ASPX page to render Slide
 
 </div>
 
-
-
 {% endhighlight %}
 
-
-
- Add the following styles for Sliders.
+Add the following styles for Sliders.
 
 {% highlight css %}
 
-      .frame
+.frame
 
-        {
+{
 
-            width: 320px;
+	width: 320px;
 
-            height: 290px;
+	height: 290px;
 
-            border: 1px solid black;
+	border: 1px solid black;
 
-            margin-right: 100px;
+	margin-right: 100px;
 
-            font-family: Segoe UI;
+	font-family: Segoe UI;
 
-            font-size: 14px;
+	font-size: 14px;
 
-            border-radius: 10px;
+	border-radius: 10px;
 
-        }
+}
 
-        .header
+.header
 
-        {
+{
 
-            font-size: x-large;
+	font-size: x-large;
 
-        }
+}
 
-        .ctrllabel, .loan
+.ctrllabel, .loan
 
-        {
+{
 
-            font-weight: bold;
+	font-weight: bold;
 
-        }
-
-
-
-        .inner
-
-        {
-
-            width: 219px;
-
-            height: 174px;
-
-            padding: 55px 40px 20px 50px;
-
-        }
+}
 
 
 
-        .mobileList
+.inner
 
-        {
+{
 
-            display: block;
+	width: 219px;
 
-        }
+	height: 174px;
+
+	padding: 55px 40px 20px 50px;
+
+}
 
 
+
+.mobileList
+
+{
+
+	display: block;
+
+}
 
 {% endhighlight %}
 
@@ -173,35 +167,33 @@ Add the following script to the Slider.
 
 {% highlight js %}
 
-    var mobileObj, rateObj, countObj;
+var mobileObj, rateObj, countObj;
 
-    function onChange(args) {
+function onChange(args) {
 
-        $('#' + args.id).parent().prev().find('.value').html(args.value)
+	$('#' + args.id).parent().prev().find('.value').html(args.value)
 
-        show();
+	show();
 
-    }
+}
 
-    function show() {
+function show() {
 
-        selectObj = $('#SelectMobile').data('ejDropDownList');
+	selectObj = $('#SelectMobile').data('ejDropDownList');
 
-        rateObj = $('#RateSlider').data('ejSlider');
+	rateObj = $('#RateSlider').data('ejSlider');
 
-        countObj = $('#CountSlider').data('ejSlider');
+	countObj = $('#CountSlider').data('ejSlider');
 
-        var x = selectObj.getValue();
+	var x = selectObj.getValue();
 
-        var y = rateObj.getValue();
+	var y = rateObj.getValue();
 
-        var z = countObj.getValue();
+	var z = countObj.getValue();
 
-        $('#EventLog').html("\n" + x + "\n" + "at Rs: " + y + "\n" + "count is " + z);
+	$('#EventLog').html("\n" + x + "\n" + "at Rs: " + y + "\n" + "count is " + z);
 
-    }
-
-
+}
 
 {% endhighlight %}
 
@@ -271,8 +263,6 @@ Add the following code for Slider to the corresponding ASPX page.
 
 </div>
 
-
-
 {% endhighlight %}
 
 
@@ -281,141 +271,139 @@ Include the following styles for Slider.
 
 {% highlight css %}
 
-       .inner
+.inner
 
-        {
+{
 
-            width: 413px;
+	width: 413px;
 
-            height: 174px;
+	height: 174px;
 
-            padding: 55px 40px 20px 50px;
+	padding: 55px 40px 20px 50px;
 
-        }
+}
 
 
 
-        .frame
+.frame
 
-        {
+{
 
-            width: 520px;
+	width: 520px;
 
-            height: 349px;
+	height: 349px;
 
-            border: 1px solid black;
+	border: 1px solid black;
 
-            margin-right: 100px;
+	margin-right: 100px;
 
-            font-family: Segoe UI;
+	font-family: Segoe UI;
 
-            font-size: 14px;
+	font-size: 14px;
 
-            border-radius: 10px;
+	border-radius: 10px;
 
-        }
+}
 
 
 
-        .loan, .interest, .tenure
+.loan, .interest, .tenure
 
-        {
+{
 
-            margin-top: 5px;
+	margin-top: 5px;
 
-            font-weight: 400;
+	font-weight: 400;
 
-        }
+}
 
 
 
-        .value
+.value
 
-        {
+{
 
-            float: right;
+	float: right;
 
-            position: relative;
+	position: relative;
 
-            width: auto;
+	width: auto;
 
-            padding-left: 3px;
+	padding-left: 3px;
 
-        }           
+}           
 
 
 
-        #result
+#result
 
-        {
+{
 
-            margin-top: 25px;
+	margin-top: 25px;
 
-            text-align: center;
+	text-align: center;
 
-            font-weight: 600;
+	font-weight: 600;
 
-        }
+}
 
 
 
-        .frame .e-slider-wrap
+.frame .e-slider-wrap
 
-        {
+{
 
-            display: block;
+	display: block;
 
-            margin-top: 40px;
+	margin-top: 40px;
 
-        }
+}
 
 
 
-        .columnleft
+.columnleft
 
-        {
+{
 
-            width: 35%;
+	width: 35%;
 
-            float: left;
+	float: left;
 
-            font-weight: 400;
+	font-weight: 400;
 
-            margin-top: 10px;
+	margin-top: 10px;
 
-        }
+}
 
 
 
-        .columnright
+.columnright
 
-        {
+{
 
-            width: 17%;
+	width: 17%;
 
-            float: right;
+	float: right;
 
-            font-weight: 600;
+	font-weight: 600;
 
-            margin-top: 14px;
+	margin-top: 14px;
 
-        }
+}
 
 
 
-        #loanheading
+#loanheading
 
-        {
+{
 
-            font-family: 'Arial' , Gadget, sans-serif;
+	font-family: 'Arial' , Gadget, sans-serif;
 
-            font-size: 18px;
+	font-size: 18px;
 
-            padding-bottom: 15px;
+	padding-bottom: 15px;
 
-        }
-
-
+}
 
 {% endhighlight %}
 
@@ -425,49 +413,47 @@ Include the following Script to calculate the EMI amount.
 
 {% highlight js %}
 
-    var loanObj, interestObj, tenureObj;
+var loanObj, interestObj, tenureObj;
 
-    function onChange(args) {
+function onChange(args) {
 
-        $('#' + args.id).parent().prev().find('.value').html(args.value)
+	$('#' + args.id).parent().prev().find('.value').html(args.value)
 
-        calculate();
+	calculate();
 
-    }
+}
 
-    function calculate() {
+function calculate() {
 
-        loanObj = $('#LoanSlider').data('ejSlider');
+	loanObj = $('#LoanSlider').data('ejSlider');
 
-        interestObj = $('#InterestSlider').data('ejSlider');
+	interestObj = $('#InterestSlider').data('ejSlider');
 
-        tenureObj = $('#TenureSlider').data('ejSlider');
+	tenureObj = $('#TenureSlider').data('ejSlider');
 
-        var loan = loanObj.getValue(), interest = interestObj.getValue(), tenure = tenureObj.getValue();
+	var loan = loanObj.getValue(), interest = interestObj.getValue(), tenure = tenureObj.getValue();
 
-        var P = loan;
+	var P = loan;
 
-        var y = interest / 1200;
+	var y = interest / 1200;
 
-        var tenureamt = tenure * 12;
+	var tenureamt = tenure * 12;
 
-        //actual processing
+	//actual processing
 
-        var top = y * (Math.pow((1 + y), tenureamt));
+	var top = y * (Math.pow((1 + y), tenureamt));
 
-        var bottom = (Math.pow((1 + y), tenureamt)) - 1;
+	var bottom = (Math.pow((1 + y), tenureamt)) - 1;
 
-        var ans = top / bottom;
+	var ans = top / bottom;
 
-        var final = P * ans;
+	var final = P * ans;
 
-        var z = Math.round(final);
+	var z = Math.round(final);
 
-        $('#EventLog').html("Rs: " + z);
+	$('#EventLog').html("Rs: " + z);
 
-    }
-
-
+}
 
 {% endhighlight %}
 

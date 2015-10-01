@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RTL-Support
+title: RTL Support | PercentageTextBox | ASP.NET | Syncfusion
 description: rtl support
 platform: aspnet
 control: PercentageTextBox
@@ -17,11 +17,7 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 {% highlight html %}
 
-
-
 <ej:PercentageTextBox ID="percentage" Value="22" EnableRTL="true" runat="server"> </ej:PercentageTextBox>
-
-
 
 {% endhighlight %}
 

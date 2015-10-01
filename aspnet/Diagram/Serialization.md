@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Serialization
+title: Serialization | Diagram | ASP.NET Webforms | Syncfusion
 description: serialization
 platform: aspnet
 control: Diagram

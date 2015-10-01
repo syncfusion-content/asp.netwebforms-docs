@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Splitter | ASP.NET | Syncfusion
 description: overview
 platform: aspnet
 control: Splitter

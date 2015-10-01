@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping
+title: Grouping | DataManager | ASP.NET Webforms | Syncfusion
 description: grouping
 platform: aspnet
 control: DataManager

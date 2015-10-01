@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accordion-Panel-enabler
+title: Accordion Panel enabler | Accordion | ASP.NET Webforms | Syncfusion
 description: accordion panel enabler
 platform: aspnet
 control: Accordion 

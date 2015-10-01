@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Print
+title: Print | Schedule | ASP.NET Webforms | Syncfusion
 description: print
 platform: aspnet
 control: Schedule
@@ -78,7 +78,8 @@ Execute the above code to render the following output.
 ![](Print_images/Print_img1.png)
 
 
-Figure 121 : Schedule with print button
+Schedule with print button
+{:.caption} 
 
 Click the print button to render the following output.
 
@@ -87,7 +88,8 @@ Click the print button to render the following output.
 ![](Print_images/Print_img2.png)
 
 
-Figure 122 : Schedule with Print window
+Schedule with Print window
+{:.caption} 
 
 ## Appointment Print
 
@@ -203,7 +205,8 @@ obj.print();
 ![](Print_images/Print_img3.png)
 
 
-Figure 123 : Schedule with Print option in Context Menu
+Schedule with Print option in Context Menu
+{:.caption} 
 
 * Now, the widow is promoted to new document with appointment details and print window opens.
 
@@ -212,5 +215,6 @@ Figure 123 : Schedule with Print option in Context Menu
 ![](Print_images/Print_img4.png)
 
 
-Figure 124 : Schedule with Appointment Print
+Schedule with Appointment Print
+{:.caption} 
 

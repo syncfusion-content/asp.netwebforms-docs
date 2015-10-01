@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Digital-Elements
+title: Digital Elements | DigitalGauge | ASP.NET Webforms | Syncfusion
 description: digital elements
 platform: aspnet
 control: Digital Gauge
@@ -48,4 +48,5 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 ![](Digital-Elements_images/Digital-Elements_img1.png)
 
-_Figure 29: Digital Gauge control with text customization_
+Digital Gauge control with text customization
+{:.caption} 

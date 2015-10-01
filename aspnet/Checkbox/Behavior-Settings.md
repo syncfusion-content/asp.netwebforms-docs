@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Behavior-Settings
+title: Behavior Settings | Chart | ASP.NET Webforms | Syncfusion
 description: behavior settings
 platform: aspnet
 control: Checkbox

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Button-Type
+title: Button Type | Button | ASP.NET Webforms | Syncfusion
 description: button type
 platform: aspnet
 control: Button

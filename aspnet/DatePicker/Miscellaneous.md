@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Miscellaneous
+title: Miscellaneous | DatePicker | ASP.NET Webforms | Syncfusion
 description: miscellaneous
 platform: aspnet
 control: DatePicker
@@ -172,8 +172,6 @@ In the ASPX page, include the following DatePicker control code example to enabl
 {% highlight html %}
 
 <ej:DatePicker ID="datepicker" runat="server" ShowRoundedCorner="true"> </ej:DatePicker>
-
-
 
 {% endhighlight %}
 

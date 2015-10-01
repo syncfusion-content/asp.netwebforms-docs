@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-styling
+title: Appearance and styling | MaskEdit | ASP.NET Webforms | Syncfusion
 description: appearance and styling
 platform: aspnet
 control: MaskEdit

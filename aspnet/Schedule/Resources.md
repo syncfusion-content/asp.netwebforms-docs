@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resources
+title: Resources | Schedule | ASP.NET Webforms | Syncfusion
 description: resources
 platform: aspnet
 control: Schedule
@@ -15,57 +15,58 @@ documentation: ug
 * You can also save the appointments simultaneously on multiple resources or within the multiple categories using allowMultiple property enabled for different levels of resources.
 * The two important properties to be defined for grouping the multiple resources are as follows:
 
-##Resources
+## Resources
 
 * It accepts the resource data as an array collection. Here, you can define the field name with resourceFields to each of the resource level. The order of resource data objects that you provide within the resource collection defines the rendering order of the resources in the Schedule. 
 * The first resource data object provided within the collection is always rendered as the top level order in the Schedule. The important sub-options available are as follows:
 
-_field_
+### field
 
 * This option holds the field name to be bound to each level of the resources.
 
-_title_
+### title
 
 * This option accepts a title string from the user that is displayed as the appropriate title for the resource field on the appointment window.
 
-_name_
+### name
 
 * It uniquely identifies each resource level while grouping.
 
-_resourceSettings_
+### resourceSettings
 
 * It accepts the dataSource and bind field names related to the resources data. The sub-options present within it are as follows,
 
-_dataSource_
+### dataSource
 
 * It either accepts the local JSON data or remote data for the resource related information. The field names it accepts are 
 
-_text_
+### text
 
 * It holds the binding name for text field in the resource dataSource.
 
-_id_
+### id
 
 * It holds the binding name for id field in the resource dataSource.
 
-_groupId_
+### groupId
 
 * It holds the binding name for group id field in the resource dataSource.
 
-_color_
+### color
 
 * It holds the binding name for color field in the resource dataSource.
 
-_appointmentClass_
+### appointmentClass
 
 * It specifies the custom css class name to be applied for the appointments that belongs to each resource.
 
-_allowMultiple_
+### allowMultiple
 
 * This property enables or disables the multiple selections of each resource in the appointment window. 
 
 The following code example explains how to render the multiple resources on the Schedule control,
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -121,11 +122,14 @@ namespace WebSampleBrowser.Schedule
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The output of the above code looks as follows.
 
 ![](Resources_images/Resources_img1.png)
 
-Figure 87 :  schedule with multiple resource.
+schedule with multiple resource
+{:.caption} 
 
 ## Resource Grouping
 
@@ -224,12 +228,15 @@ SelectCommand="SELECT * FROM [MultipleResource]">
 
 ![](Resources_images/Resources_img2.png)
 
-_Figure_ _88_:  schedule with resource grouping._
+schedule with resource grouping
+{:.caption} 
 
 ##Multiple Appointment Creation
 
 * The “allowMultiple” option available for each resource object within the resource collection enables/disables the functionality of saving same appointment for multiple resources. 
 * When this property is set to true, the resource related fields in the appointment window allows you to select multiple resources. Refer the following code example.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -272,13 +279,16 @@ public string color { set; get; }
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Execute the above code to display the Schedule control with appointments saved for multiple resources differentiated with its specific colors.
 
 
 ![](Resources_images/Resources_img3.png)
 
 
-Figure 89:  schedule with multiple resource creation.
+schedule with multiple resource creation
+{:.caption} 
 
 * To save the same appointment for multiple resources, refer the following steps,
   
@@ -287,7 +297,8 @@ Figure 89:  schedule with multiple resource creation.
      ![](Resources_images/Resources_img4.png)
 
 
-     Figure 90:  schedule with multiple appointment window.
+     schedule with multiple appointment window
+	 {:.caption} 
 
   2. Since the allowMultiple property is set to ‘true’ for this resource object, so you can select any number of available resources in it as follows.
 
@@ -296,7 +307,8 @@ Figure 89:  schedule with multiple resource creation.
      ![](Resources_images/Resources_img5.png)
 
 
-     Figure 91 :  schedule with multiple appointment window with different type owner.
+     schedule with multiple appointment window with different type owner
+	 {:.caption} 
 
   3. The same appointment with the subject Test Ride is created for each resource individually as follows when you click the Done button.
 
@@ -305,4 +317,5 @@ Figure 89:  schedule with multiple resource creation.
      ![](Resources_images/Resources_img6.png)
 
 
-     Figure 92 :  schedule with saved multiple appointments with different type owner
+     schedule with saved multiple appointments with different type owner
+	 {:.caption} 

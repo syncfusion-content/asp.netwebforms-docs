@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range
+title: Range | TimePicker | ASP.NET | Syncfusion
 description: range
 platform: aspnet
 control: TimePicker
@@ -17,11 +17,7 @@ The following code explains you how to change the Range of the TimePicker.
 
 {% highlight html %}
 
-
-
 <ej:TimePicker ID="time" MinTime="10:00 AM" MaxTime="10:00 PM" runat="server"></ej:TimePicker>
-
-
 
 {% endhighlight %}
 

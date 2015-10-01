@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding
+title: Data Binding | Diagram | ASP.NET Webforms | Syncfusion
 description: data binding
 platform: aspnet
 control: Diagram
@@ -17,7 +17,7 @@ You can populate Diagram elements by using data binding support such as JSON and
 
 The DataSourceSettings property of Diagram includes the required data source fields and it can be set with appropriate values as follows.
 
-_Field properties_
+Field properties
 
 <table>
 <tr>
@@ -60,6 +60,8 @@ Specifies the parent ID of the table.</td></tr>
 To bind the Local Data to the Diagram control, map the user-defined JSON data names with its appropriate data source field. You can bind data to the Diagram by mapping fields such as DataSource, ID, and Parent.
 
 The following code example illustrates how to bind local data to the Diagram.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -149,11 +151,12 @@ Diagram.Model.DefaultSettings.Connector = new Connector() {
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
  ![](Data-Binding_images/Data-Binding_img1.png) 
 
-_Local Data binding_
+Local Data binding
+{:.caption} 
 
 ## Remote Data
 
@@ -162,6 +165,7 @@ You can bind the Diagram to Remote Data by using dataManager and the query in fi
 
 The following code illustrates how to bind remote data to the Diagram.
 
+{% tabs %}
 
 {% highlight html %}
 //Initializes Automatic Layout
@@ -200,10 +204,6 @@ DiagramWebControl1.Model.NodeTemplate = "nodeTemplate";
 
 {% endhighlight %}
 
-
-
-
-
 {% highlight html %}
 
 //Customizes node before rendering
@@ -214,13 +214,9 @@ function nodeTemplate(diagram, node) {
 
 }
 
-
-
 var dataManager = ej.DataManager({
 
 url: [http://mvc.syncfusion.com/Services/Northwnd.svc/](http://mvc.syncfusion.com/Services/Northwnd.svc/) });
-
-
 
 //Initializes remote data binding
 
@@ -248,11 +244,12 @@ $(window).load(function () {
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
  ![](Data-Binding_images/Data-Binding_img2.png) 
 
-_Remote data binding_
+Remote data binding
+{:.caption} 
 
 ### Root
 
@@ -280,7 +277,8 @@ Diagram.Model.DataSourceSettings.Id = "Id";
 
 ![](Data-Binding_images/Data-Binding_img3.png) 
 
-_DataSource with Root_
+DataSource with Root
+{:.caption} 
 
 ## SQL data for ASP.NET
 
@@ -329,13 +327,16 @@ The following screenshot illustrates the SQL binding.
 
  ![](Data-Binding_images/Data-Binding_img4.png) 
 
-_SQL Binding_
+SQL Binding
+{:.caption} 
 
 ## HTML Binding
 
 The Diagram provides support to form diagram from the HTML table. It is easy to convert HTML table to Diagram by using Data Manager.
 
 The following code example illustrates how to convert HTML table to Diagram.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -493,8 +494,6 @@ The following code example illustrates how to convert HTML table to Diagram.
 
   </script>
 
-
-
 <ej:Diagram ID="HTMLBinding" runat="server" Height="490px" Width="950px">
 
 // Specifies table name
@@ -503,11 +502,7 @@ The following code example illustrates how to convert HTML table to Diagram.
 
 </ej:Diagram>  
 
-
-
 {% endhighlight %}
-
-
 
 {% highlight c# %}
 
@@ -517,13 +512,12 @@ Diagram.Model.DataSourceSettings.Parent = "ReportingPerson";
 
 Diagram.Model.DataSourceSettings.Id = "Id"; 
 
-
-
 {% endhighlight %}
 
-
+{% endtabs %}
 
 ![](Data-Binding_images/Data-Binding_img5.png) 
 
 
-_HTML Data Binding_
+HTML Data Binding
+{:.caption} 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Icons-and-navigating
+title: Icons and navigating | Menu | ASP.NET Webforms | Syncfusion
 description: icons and navigating
 platform: aspnet
 control: Menu

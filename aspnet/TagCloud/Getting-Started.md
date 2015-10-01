@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | TagCloud | ASP.NET | Syncfusion
 description: getting started
 platform: aspnet
 control: TagCloud
@@ -19,13 +19,9 @@ Create an ASPX file and add the following code to the file.
 
 {% highlight html %}
 
-
-
 <ej:TagCloud ID="TagEvents" Title="Tech Sites" runat="server" DataTextField="text"
 
         DataUrlField="url" DataFrequencyField="frequency"></ej:TagCloud>
-
-
 
 {% endhighlight %}
 
@@ -34,80 +30,68 @@ Create an ASPX file and add the following code to the file.
 Add the following code in code behind to bind the DataSource with the TagCloud control.
 
 
-
 {% highlight c# %}
 
-
-
 protected void Page_Load(object sender, EventArgs e)
+{
 
-        {
-
-           this.TagEvents.DataSource = new TagCloudData().GetTagCloudItems().ToList();
+   this.TagEvents.DataSource = new TagCloudData().GetTagCloudItems().ToList();
 
 }
 
 public class TagCloudData
+{
 
-    {
+	public string text { get; set; }
 
+	public string url { get; set; }
 
-
-        public string text { get; set; }
-
-        public string url { get; set; }
-
-        public int frequency { get; set; }
+	public int frequency { get; set; }
 
 
 
-        public List<TagCloudData> GetTagCloudItems()
+	public List<TagCloudData> GetTagCloudItems()
+	{
 
-        {
+		List<TagCloudData> sites = new List<TagCloudData>() ;
 
-            List<TagCloudData> sites = new List<TagCloudData>() ;
+		sites.Add(new TagCloudData { text = "Yahoo!", url = "http://search.yahoo.com/", frequency = 20 });
 
-            sites.Add(new TagCloudData { text = "Yahoo!", url = "http://search.yahoo.com/", frequency = 20 });
+		sites.Add(new TagCloudData { text = "DuckDuckGo", url = "https://duckduckgo.com/", frequency = 5 });
 
-            sites.Add(new TagCloudData { text = "DuckDuckGo", url = "https://duckduckgo.com/", frequency = 5 });
+		sites.Add(new TagCloudData { text = "Bing", url = "http://www.bing.com/", frequency = 23 });
 
-            sites.Add(new TagCloudData { text = "Bing", url = "http://www.bing.com/", frequency = 23 });
+		sites.Add(new TagCloudData { text = "Blekko", url = "http://blekko.com/", frequency = 4 });
 
-            sites.Add(new TagCloudData { text = "Blekko", url = "http://blekko.com/", frequency = 4 });
+		sites.Add(new TagCloudData { text = "Alhea", url = "http://www.alhea.com/", frequency = 3 });
 
-            sites.Add(new TagCloudData { text = "Alhea", url = "http://www.alhea.com/", frequency = 3 });
+		sites.Add(new TagCloudData { text = "MyWebSearch", url = "http://home.mywebsearch.com/index.jhtml", frequency = 10 });
 
-            sites.Add(new TagCloudData { text = "MyWebSearch", url = "http://home.mywebsearch.com/index.jhtml", frequency = 10 });
+		sites.Add(new TagCloudData { text = "Infospace", url = "http://infospace.com/", frequency = 8 });
 
-            sites.Add(new TagCloudData { text = "Infospace", url = "http://infospace.com/", frequency = 8 });
+		sites.Add(new TagCloudData { text = "Google", url = "https://www.google.co.in/", frequency = 24 });
 
-            sites.Add(new TagCloudData { text = "Google", url = "https://www.google.co.in/", frequency = 24 });
-
-            sites.Add(new TagCloudData { text = "Dogpile", url = "http://www.dogpile.com/", frequency = 4 });
-
-
-
-            sites.Add(new TagCloudData { text = "Wow", url = "http://www.wow.com/", frequency = 14 });
-
-            sites.Add(new TagCloudData { text = "Info", url = "http://www.info.com/", frequency = 6 });
-
-            sites.Add(new TagCloudData { text = "WebCrawler", url = "http://www.webcrawler.com/", frequency = 12 });
-
-            sites.Add(new TagCloudData { text = "Contenko", url = "http://www.contenko.com/", frequency = 3 });
-
-            sites.Add(new TagCloudData { text = "Aol Search", url = "http://search.aol.com", frequency = 16 });
+		sites.Add(new TagCloudData { text = "Dogpile", url = "http://www.dogpile.com/", frequency = 4 });
 
 
 
-            return sites;
+		sites.Add(new TagCloudData { text = "Wow", url = "http://www.wow.com/", frequency = 14 });
 
-        }    
+		sites.Add(new TagCloudData { text = "Info", url = "http://www.info.com/", frequency = 6 });
 
-    }
+		sites.Add(new TagCloudData { text = "WebCrawler", url = "http://www.webcrawler.com/", frequency = 12 });
+
+		sites.Add(new TagCloudData { text = "Contenko", url = "http://www.contenko.com/", frequency = 3 });
+
+		sites.Add(new TagCloudData { text = "Aol Search", url = "http://search.aol.com", frequency = 16 });
 
 
 
+		return sites;
 
+	}    
+
+}
 
 {% endhighlight %}
 
@@ -126,22 +110,17 @@ In the above code example, the Frequency properties are used to set the min and 
 
 
 public List<TagCloudData> GetTagCloudItems()
+{
 
-        {
+	List<TagCloudData> sites = new List<TagCloudData>() ;
 
-List<TagCloudData> sites = new List<TagCloudData>() ;
+	sites.Add(new TagCloudData { text = "Yahoo!", url = "http://search.yahoo.com/", frequency = 20 });
 
-            sites.Add(new TagCloudData { text = "Yahoo!", url = "http://search.yahoo.com/", frequency = 20 });
+	sites.Add(new TagCloudData { text = "DuckDuckGo", url = "https://duckduckgo.com/", frequency = 5 });
 
-            sites.Add(new TagCloudData { text = "DuckDuckGo", url = "https://duckduckgo.com/", frequency = 5 });
-
-//Uses the list values given above
+    //Uses the list values given above
 
 }
-
-
-
-
 
 {% endhighlight %}
 
@@ -165,25 +144,18 @@ Add the above mentioned DataSource binding codes.
 
     </label>
 
-
-
 {% endhighlight %}
 
 
 
 {% highlight c# %}
 
-
-
 protected void Tagevents_Click(object sender, Syncfusion.JavaScript.Web.TagCloudEventArgs e)
+{
 
-        {
+	this.EventLog.InnerHtml += "\n" + "TagCloud Item " + e.Value + "has been clicked< \r\n";
 
-            this.EventLog.InnerHtml += "\n" + "TagCloud Item " + e.Value + "has been clicked< \r\n";
-
-        }
-
-
+}
 
 {% endhighlight %}
 

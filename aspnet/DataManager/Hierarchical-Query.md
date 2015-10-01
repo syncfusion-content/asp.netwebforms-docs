@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hierarchical-Query
+title: Hierarchical Query | DataManager | ASP.NET Webforms | Syncfusion
 description: hierarchical query
 platform: aspnet
 control: DataManager

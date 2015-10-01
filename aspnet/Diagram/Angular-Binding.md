@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Angular-Binding
+title: Angular Binding | DateTimePicker | ASP.NET Webforms | Syncfusion
 description: angular binding
 platform: aspnet
 control: Diagram
@@ -99,5 +99,6 @@ angular.module('syncApp', ['ejangular'])
 
 ![](Angular-Binding_images/Angular-Binding_img1.png)
 
-_Angular Binding_
+Angular Binding
+{:.caption} 
 

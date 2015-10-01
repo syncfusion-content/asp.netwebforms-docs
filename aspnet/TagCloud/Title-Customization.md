@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Title-Customization
+title: Title Customization | TagCloud | ASP.NET | Syncfusion
 description: title customization
 platform: aspnet
 control: TagCloud
@@ -23,107 +23,97 @@ In the ASPX page, include the following TagCloud control code example.
 
     </ej:TagCloud>
 
-
-
-
-
 {% endhighlight %}
-
-
-
-
 
 {% highlight c# %}
 
-
-
 protected void Page_Load(object sender, EventArgs e)
 
-        {
+{
 
-            this.tagcloud.DataSource = new TagCloudData().GetTagCloudItems();           
+	this.tagcloud.DataSource = new TagCloudData().GetTagCloudItems();           
 
-        }
+}
 
-        public class TagCloudData
+public class TagCloudData
 
-        {
+{
 
-            public TagCloudData()
+	public TagCloudData()
 
-            {
-
-
-
-            }
+	{
 
 
 
-            public TagCloudData(string _text, string _url, int _frequency)
-
-            {
-
-                this.text = _text;
-
-                this.url = _url;
-
-                this.frequency = _frequency;
-
-            }
-
-            public string text
-
-            {
-
-                get;
-
-                set;
-
-            }
-
-            public string url
-
-            {
-
-                get;
-
-                set;
-
-            }
+	}
 
 
 
-            public int frequency
+	public TagCloudData(string _text, string _url, int _frequency)
 
-            {
+	{
 
-                get;
+		this.text = _text;
 
-                set;
+		this.url = _url;
 
-            }
+		this.frequency = _frequency;
 
-            public List<TagCloudData> GetTagCloudItems()
+	}
 
-            {
+	public string text
 
-                List<TagCloudData> data = new List<TagCloudData>();
+	{
 
-                data.Add(new TagCloudData("Hindustan Motors", "http://www.zigwheels.com/newcars/Hindustan-Motors", 10));
+		get;
 
-                data.Add(new TagCloudData("Bentley Continental ", "http://www.zigwheels.com/newcars/Bentley/Continental", 3));
+		set;
 
-                data.Add(new TagCloudData("BMW 7", "http://www.zigwheels.com/newcars/BMW/7-Series", 4));
+	}
 
-                data.Add(new TagCloudData("Bugatti Veyron", "http://www.zigwheels.com/newcars/Bugatti/Veyron", 2));
+	public string url
 
-                data.Add(new TagCloudData("Honda", "http://www.zigwheels.com/newcars/Honda", 3));
+	{
 
-                data.Add(new TagCloudData("Chevrolet Beat", "http://www.zigwheels.com/newcars/Chevrolet/Beat", 7));
+		get;
 
-                return data;
+		set;
 
-             }
+	}
+
+
+
+	public int frequency
+
+	{
+
+		get;
+
+		set;
+
+	}
+
+	public List<TagCloudData> GetTagCloudItems()
+
+	{
+
+		List<TagCloudData> data = new List<TagCloudData>();
+
+		data.Add(new TagCloudData("Hindustan Motors", "http://www.zigwheels.com/newcars/Hindustan-Motors", 10));
+
+		data.Add(new TagCloudData("Bentley Continental ", "http://www.zigwheels.com/newcars/Bentley/Continental", 3));
+
+		data.Add(new TagCloudData("BMW 7", "http://www.zigwheels.com/newcars/BMW/7-Series", 4));
+
+		data.Add(new TagCloudData("Bugatti Veyron", "http://www.zigwheels.com/newcars/Bugatti/Veyron", 2));
+
+		data.Add(new TagCloudData("Honda", "http://www.zigwheels.com/newcars/Honda", 3));
+
+		data.Add(new TagCloudData("Chevrolet Beat", "http://www.zigwheels.com/newcars/Chevrolet/Beat", 7));
+
+		return data;
+
+	 }
 
 }     
 
@@ -149,111 +139,104 @@ To configure TitleText for a TagCloud, in the ASPX page, include the following T
 
 {% highlight html %}
 
-
-
 <ej:TagCloud ID="tagcloud" runat="server" DataTextField="text" DataUrlField="url" DataFrequencyField="frequency" Title="Sites">
 
-    </ej:TagCloud>
-
-
-
-
+</ej:TagCloud>
 
 {% endhighlight %}
-
 
 
 {% highlight c# %}
 
 protected void Page_Load(object sender, EventArgs e)
 
-        {
+{
 
-            this.tagcloud.DataSource = new TagCloudData().GetTagCloudItems();
-
-
-
-        }
-
-        public class TagCloudData
-
-        {
-
-            public TagCloudData()
-
-            {
+	this.tagcloud.DataSource = new TagCloudData().GetTagCloudItems();
 
 
 
-            }
+}
+
+public class TagCloudData
+
+{
+
+	public TagCloudData()
+
+	{
 
 
 
-            public TagCloudData(string _text, string _url, int _frequency)
-
-            {
-
-                this.text = _text;
-
-                this.url = _url;
-
-                this.frequency = _frequency;
-
-            }
-
-            public string text
-
-            {
-
-                get;
-
-                set;
-
-            }
-
-            public string url
-
-            {
-
-                get;
-
-                set;
-
-            }
-
-            public int frequency
-
-            {
-
-                get;
-
-                set;
-
-            }
+	}
 
 
 
-            public List<TagCloudData> GetTagCloudItems()
+	public TagCloudData(string _text, string _url, int _frequency)
 
-            {
+	{
 
-                List<TagCloudData> data = new List<TagCloudData>();
+		this.text = _text;
 
-                data.Add(new TagCloudData("Hindustan Motors", "http://www.zigwheels.com/newcars/Hindustan-Motors", 10));
+		this.url = _url;
 
-                data.Add(new TagCloudData("Bentley Continental ", "http://www.zigwheels.com/newcars/Bentley/Continental", 3));
+		this.frequency = _frequency;
 
-                data.Add(new TagCloudData("BMW 7", "http://www.zigwheels.com/newcars/BMW/7-Series", 4));
+	}
 
-                data.Add(new TagCloudData("Bugatti Veyron", "http://www.zigwheels.com/newcars/Bugatti/Veyron", 2));
+	public string text
 
-                data.Add(new TagCloudData("Honda", "http://www.zigwheels.com/newcars/Honda", 3));
+	{
 
-                data.Add(new TagCloudData("Chevrolet Beat", "http://www.zigwheels.com/newcars/Chevrolet/Beat", 7));
+		get;
 
-                return data;
+		set;
 
-             }
+	}
+
+	public string url
+
+	{
+
+		get;
+
+		set;
+
+	}
+
+	public int frequency
+
+	{
+
+		get;
+
+		set;
+
+	}
+
+
+
+	public List<TagCloudData> GetTagCloudItems()
+
+	{
+
+		List<TagCloudData> data = new List<TagCloudData>();
+
+		data.Add(new TagCloudData("Hindustan Motors", "http://www.zigwheels.com/newcars/Hindustan-Motors", 10));
+
+		data.Add(new TagCloudData("Bentley Continental ", "http://www.zigwheels.com/newcars/Bentley/Continental", 3));
+
+		data.Add(new TagCloudData("BMW 7", "http://www.zigwheels.com/newcars/BMW/7-Series", 4));
+
+		data.Add(new TagCloudData("Bugatti Veyron", "http://www.zigwheels.com/newcars/Bugatti/Veyron", 2));
+
+		data.Add(new TagCloudData("Honda", "http://www.zigwheels.com/newcars/Honda", 3));
+
+		data.Add(new TagCloudData("Chevrolet Beat", "http://www.zigwheels.com/newcars/Chevrolet/Beat", 7));
+
+		return data;
+
+	 }
 
 }     
 
@@ -279,15 +262,9 @@ To configure TitleImage, in the ASPX page, include the following TagCloud contro
 
 {% highlight c# %}
 
-
-
 <ej:TagCloud ID="tagcloud" runat="server" DataTextField="text" DataUrlField="url" DataFrequencyField="frequency" TitleImage="http://js.syncfusion.com/demos/web/images/waitingpopup/js_logo.png">
 
-    </ej:TagCloud>
-
-
-
-
+</ej:TagCloud>
 
 {% endhighlight %}
 
@@ -297,91 +274,89 @@ To configure TitleImage, in the ASPX page, include the following TagCloud contro
 
 protected void Page_Load(object sender, EventArgs e)
 
-        {
+{
 
-            this.tagcloud.DataSource = new TagCloudData().GetTagCloudItems();           
+	this.tagcloud.DataSource = new TagCloudData().GetTagCloudItems();           
 
-        }
+}
 
-        public class TagCloudData
+public class TagCloudData
 
-        {
+{
 
-            public TagCloudData()
+	public TagCloudData()
 
-            {
+	{
 
 
 
-            }
+	}
 
-            public TagCloudData(string _text, string _url, int _frequency)
+	public TagCloudData(string _text, string _url, int _frequency)
 
-            {
+	{
 
-                this.text = _text;
+		this.text = _text;
 
-                this.url = _url;
+		this.url = _url;
 
-                this.frequency = _frequency;
+		this.frequency = _frequency;
 
-            }
+	}
 
-            public string text
+	public string text
 
-            {
+	{
 
-                get;
+		get;
 
-                set;
+		set;
 
-            }
+	}
 
-            public string url
+	public string url
 
-            {
+	{
 
-                get;
+		get;
 
-                set;
+		set;
 
-            }
+	}
 
-            public int frequency
+	public int frequency
 
-            {
+	{
 
-                get;
+		get;
 
-                set;
+		set;
 
-            }
+	}
 
-            public List<TagCloudData> GetTagCloudItems()
+	public List<TagCloudData> GetTagCloudItems()
 
-            {
+	{
 
-                List<TagCloudData> data = new List<TagCloudData>();
+		List<TagCloudData> data = new List<TagCloudData>();
 
-                data.Add(new TagCloudData("Hindustan Motors", "http://www.zigwheels.com/newcars/Hindustan-Motors", 10));
+		data.Add(new TagCloudData("Hindustan Motors", "http://www.zigwheels.com/newcars/Hindustan-Motors", 10));
 
-                data.Add(new TagCloudData("Bentley Continental ", "http://www.zigwheels.com/newcars/Bentley/Continental", 3));
+		data.Add(new TagCloudData("Bentley Continental ", "http://www.zigwheels.com/newcars/Bentley/Continental", 3));
 
-                data.Add(new TagCloudData("BMW 7", "http://www.zigwheels.com/newcars/BMW/7-Series", 4));
+		data.Add(new TagCloudData("BMW 7", "http://www.zigwheels.com/newcars/BMW/7-Series", 4));
 
-                data.Add(new TagCloudData("Bugatti Veyron", "http://www.zigwheels.com/newcars/Bugatti/Veyron", 2));
+		data.Add(new TagCloudData("Bugatti Veyron", "http://www.zigwheels.com/newcars/Bugatti/Veyron", 2));
 
-                data.Add(new TagCloudData("Honda", "http://www.zigwheels.com/newcars/Honda", 3));
+		data.Add(new TagCloudData("Honda", "http://www.zigwheels.com/newcars/Honda", 3));
 
-                data.Add(new TagCloudData("Chevrolet Beat", "http://www.zigwheels.com/newcars/Chevrolet/Beat", 7));
+		data.Add(new TagCloudData("Chevrolet Beat", "http://www.zigwheels.com/newcars/Chevrolet/Beat", 7));
 
-                return data;
+		return data;
 
-             }
+	 }
 
 }          
-
-
 
 {% endhighlight %}
 
@@ -403,9 +378,7 @@ By using the CSS class, you can resize the image content as follows.
 
         }
 
-    </style>
-
-
+</style>
 
 {% endhighlight %}
 

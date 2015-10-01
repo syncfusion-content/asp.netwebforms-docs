@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Auto-Upload
+title: Auto Upload | UploadBox | ASP.NET | Syncfusion
 description: auto upload
 platform: aspnet
 control: UploadBox

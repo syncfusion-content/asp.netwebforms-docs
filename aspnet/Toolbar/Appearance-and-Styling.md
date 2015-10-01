@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Appearance and Styling | Toolbar | ASP.NET | Syncfusion
 description: appearance and styling 
 platform: aspnet
 control: Toolbar
@@ -21,15 +21,9 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 {% highlight html %}
 
-
-
 <%--Refer Local Data section for style and data bound for toolbar items.--%>
 
     <ej:Toolbar  ID="toolbarcontent" runat="server" Height="100px" DataIdField="Id" DataTooltipTextField="Tooltip" DataSpriteCssClassField="Css"></ej:Toolbar >
-
-
-
-
 
 {% endhighlight %}
 
@@ -45,13 +39,9 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 {% highlight html %}
 
-
-
 <%--Refer Local Data section for style and data bound for toolbar items.--%>
 
     <ej:Toolbar  ID="toolbarcontent" runat="server" Width="300px" DataIdField="Id" DataTooltipTextField="Tooltip" DataSpriteCssClassField="Css"></ej:Toolbar >
-
-
 
 {% endhighlight %}
 
@@ -67,13 +57,9 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 {% highlight html %}
 
-
-
 <%--Refer Local Data section for style and data bound for toolbar items.--%>
 
 <ej:Toolbar ID="toolbarcontent" runat="server" Width="300px" ShowRoundedCorner="true" DataIdField="Id" DataTooltipTextField="Tooltip" DataSpriteCssClassField="Css"></ej:Toolbar>
-
-
 
 {% endhighlight %}
 
@@ -99,41 +85,35 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 {% highlight html %}
 
-
-
 <%--Refer Local Data section for style and data bound for toolbar items.--%>
 
 <ej:Toolbar ID="toolbarcontent" EnableSeparator="true" runat="server" Width="290px" Enabled="true">
 
-                    <Items>
+    <Items>
 
-                        <ej:ToolbarItem Id="Left" SpriteCssClass="ToolbarItems LeftAlign_tool" TooltipText="Left"></ej:ToolbarItem>
+        <ej:ToolbarItem Id="Left" SpriteCssClass="ToolbarItems LeftAlign_tool" TooltipText="Left"></ej:ToolbarItem>
 
-                        <ej:ToolbarItem Id="Center" SpriteCssClass="ToolbarItems CenterAlign_tool" TooltipText="Center"></ej:ToolbarItem>
+        <ej:ToolbarItem Id="Center" SpriteCssClass="ToolbarItems CenterAlign_tool" TooltipText="Center"></ej:ToolbarItem>
 
-                        <ej:ToolbarItem Id="Right" SpriteCssClass="ToolbarItems RightAlign_tool" TooltipText="Right"></ej:ToolbarItem>
+        <ej:ToolbarItem Id="Right" SpriteCssClass="ToolbarItems RightAlign_tool" TooltipText="Right"></ej:ToolbarItem>
 
-                        <ej:ToolbarItem Id="Justify" SpriteCssClass="ToolbarItems Justify_tool" TooltipText="Justify" IsSeparator="true"></ej:ToolbarItem>
+        <ej:ToolbarItem Id="Justify" SpriteCssClass="ToolbarItems Justify_tool" TooltipText="Justify" IsSeparator="true"></ej:ToolbarItem>
 
-                    </Items>
+    </Items>
 
-                    <Items>
+    <Items>
 
-                        <ej:ToolbarItem Id="Bold" SpriteCssClass="ToolbarItems Bold_tool" TooltipText="Bold"></ej:ToolbarItem>
+        <ej:ToolbarItem Id="Bold" SpriteCssClass="ToolbarItems Bold_tool" TooltipText="Bold"></ej:ToolbarItem>
 
-                        <ej:ToolbarItem Id="Italic" SpriteCssClass="ToolbarItems Italic_tool" TooltipText="Italic"></ej:ToolbarItem>
+        <ej:ToolbarItem Id="Italic" SpriteCssClass="ToolbarItems Italic_tool" TooltipText="Italic"></ej:ToolbarItem>
 
-                        <ej:ToolbarItem Id="StrikeThrough" SpriteCssClass="ToolbarItems StrikeThrough_tool" TooltipText="StrikeThrough"></ej:ToolbarItem>
+        <ej:ToolbarItem Id="StrikeThrough" SpriteCssClass="ToolbarItems StrikeThrough_tool" TooltipText="StrikeThrough"></ej:ToolbarItem>
 
-                        <ej:ToolbarItem Id="UnderLine" SpriteCssClass="ToolbarItems Underline_tool" TooltipText="UnderLine"></ej:ToolbarItem>
+        <ej:ToolbarItem Id="UnderLine" SpriteCssClass="ToolbarItems Underline_tool" TooltipText="UnderLine"></ej:ToolbarItem>
 
-                    </Items>
+    </Items>
 
-                </ej:Toolbar>
-
-
-
-
+</ej:Toolbar>
 
 {% endhighlight %}
 
@@ -141,7 +121,7 @@ The following screenshot displays the output of the above code.
 
 
 
- ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
+![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
 
 
 
@@ -178,11 +158,7 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 {% highlight html %}
 
-
-
-        <ej:Toolbar ID="toolbarcontent" runat="server" Width="300px" CssClass="gradient-lime" DataIdField="Id" DataTooltipTextField="Tooltip" DataSpriteCssClassField="Css"></ej:Toolbar>
-
-
+<ej:Toolbar ID="toolbarcontent" runat="server" Width="300px" CssClass="gradient-lime" DataIdField="Id" DataTooltipTextField="Tooltip" DataSpriteCssClassField="Css"></ej:Toolbar>
 
 {% endhighlight %}
 
@@ -190,19 +166,15 @@ Add the following code example to render the ToolBar Control
 
 {% highlight css %}
 
+<style type="text/css">
 
+.gradient-lime {
 
-   <style type="text/css">
+    background-color: yellowgreen;
 
-    .gradient-lime {
-
-        background-color: yellowgreen;
-
-    }
+}
 
 </style>
-
-
 
 {% endhighlight %}
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integration
+title: Integration | DatePicker | ASP.NET Webforms | Syncfusion
 description: integration
 platform: aspnet
 control: DatePicker
@@ -31,6 +31,8 @@ Note: Add the following script files along with the given code to access the Ang
 * ej.widget.angular.min.js
 
 The following example depicts the way to bind data to the DatePicker control through Angular support.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -68,13 +70,7 @@ The following example depicts the way to bind data to the DatePicker control thr
 
 </div>
 
-
-
-
-
 {% endhighlight %}
-
-
 
 {% highlight js %}
 
@@ -86,15 +82,7 @@ The following example depicts the way to bind data to the DatePicker control thr
 
                 });
 
-
-
-
-
 {% endhighlight %}
-
-
-
-
 
 {% highlight css %}
 
@@ -104,11 +92,9 @@ The following example depicts the way to bind data to the DatePicker control thr
 
         }
 
-
-
-
-
 {% endhighlight %}
+
+{% endtabs %}
 
 
 
@@ -148,6 +134,8 @@ The link for those script files are as follows:
 
 The following example depicts the way to bind data to the DatePicker control through the Knockout support that enables and populates data to a DatePicker control based on the value set to the other DatePicker control.
 
+{% tabs %}
+
 {% highlight html %}
 
     <table>
@@ -182,15 +170,7 @@ The following example depicts the way to bind data to the DatePicker control thr
 
     </table>
 
-
-
-
-
 {% endhighlight %}
-
-
-
-
 
 {% highlight js %}
 
@@ -210,15 +190,7 @@ The following example depicts the way to bind data to the DatePicker control thr
 
         });
 
-
-
-
-
 {% endhighlight %}
-
-
-
-
 
 {% highlight css %}
 
@@ -228,23 +200,9 @@ The following example depicts the way to bind data to the DatePicker control thr
 
         }
 
-
-
-
-
 {% endhighlight %}
 
-
-
-
-
-
-
-
-
-
-
-
+{% endtabs %}
 
 ![](Integration_images/Integration_img4.png) 
 

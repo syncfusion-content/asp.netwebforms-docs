@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Columns
+title: Columns | Gantt | ASP.NET Webforms | Syncfusion
 description: columns
 platform: aspnet
 control: Gantt
@@ -37,7 +37,7 @@ Column template is used to customize the column’s look and feel, based on requ
 
 The following code example shows you how to display the icon in the TreeGrid column.
 
-
+{% tabs %}
 
 {% highlight c# %}
 
@@ -454,7 +454,7 @@ namespace ASP_Doc.Gantt
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 The following screenshot displays the customized column in Gantt control.
 
@@ -463,7 +463,8 @@ The following screenshot displays the customized column in Gantt control.
 ![](Columns_images/Columns_img1.png)
 
 
-_Figure : Customized column_
+Customized column
+{:.caption}
 
 
 ## Column Chooser
@@ -472,7 +473,8 @@ Gantt supports enabling and disabling the visibility of the columns dynamically 
 
 ![](Columns_images/Columns_img2.png)
 
-_Figure : Column menu with column chooser_    
+Column menu with column chooser  
+{:.caption} 
 
 The column menu is enabled with the ShowColumnChooser property, where the default value for this property is false.
 
@@ -508,7 +510,8 @@ The following screenshot displays the column chooser in the Gantt control.
 
 ![](Columns_images/Columns_img3.png)
 
-_Figure : Column chooser in Gantt control_
+Column chooser in Gantt control
+{:.caption}
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization
+title: Localization | Grid | ASP.NET Webforms | Syncfusion
 description: localization
 platform: aspnet
 control: Grid
@@ -20,6 +20,7 @@ The globalize.culture.en-US.min.js scripts are changeable based on the culture n
 
 The following code example demonstrates how to switch the culture of Grid as de-DE (German - Germany).
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -165,6 +166,8 @@ public partial class Localization : System.Web.UI.Page
     }
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 The Grid and Pager has its own locale labels for applying the information about specific fields in its control. You can set them in the sample side for each culture based translation. The following code example is applied in the sample side for all the above platforms.
 {% highlight js %}

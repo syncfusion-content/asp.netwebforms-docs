@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping-Support
+title: Grouping Support | DropDownList | ASP.NET Webforms | Syncfusion
 description: grouping support
 platform: aspnet
 control: DropDownList
@@ -16,6 +16,8 @@ Grouping DropDownList items can be done by using the category field. Set the cat
 The following step explains how to group data items in the DropDownList control by using the DataSource.
 
 In an ASPX page, add an element to configure the DropDownList widget.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -92,6 +94,8 @@ In an ASPX page, add an element to configure the DropDownList widget.
 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 
 

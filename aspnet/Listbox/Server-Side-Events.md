@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Server-Side-Events
+title: Server Side Events | ListBox | ASP.NET Webforms | Syncfusion
 description: server side events
 platform: aspnet
-control: Control Name undefined
+control: ListBox
 documentation: ug
 ---
 

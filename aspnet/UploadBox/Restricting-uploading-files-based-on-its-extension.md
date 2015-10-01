@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Restricting-uploading-files-based-on-its-extension
+title: Restricting uploading files based on its extension | UploadBox | ASP.NET | Syncfusion
 description: restricting uploading files based on its extension
 platform: aspnet
 control: UploadBox

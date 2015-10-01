@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Diagram | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: Diagram
@@ -19,7 +19,8 @@ The following screenshot illustrates the structure of the Diagram control.
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
 
- _Diagram_
+Diagram
+{:.caption} 
 
 ## Create your first Diagram in ASP.NET
 
@@ -59,7 +60,6 @@ The following screenshot illustrates the structure of the Diagram control.
 		</html>
 
    ~~~
-   {:.prettyprint }
 
 2. Add the <ej:Diagram> element in the <body> tag to render the Diagram.
 
@@ -78,7 +78,6 @@ The following screenshot illustrates the structure of the Diagram control.
 		</html>		
 		
    ~~~
-   {:.prettyprint }
 
 
 
@@ -86,7 +85,8 @@ The following screenshot illustrates the structure of the Diagram control.
 
    ![](Getting-Started_images/Getting-Started_img2.png) 
 
-   _Empty Diagram_
+   Empty Diagram
+   {:.caption} 
 
 
 ### Initialize Data
@@ -144,6 +144,8 @@ Initially, you can create hierarchical employee information, JSONData, and assig
 ### Populate Organizational Chart
 
 You can populate the organizational chart by specifying the necessary fields of data source.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -249,7 +251,7 @@ function nodeTemplate(diagram, node) {
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 The employee data is displayed in the following Diagram.
 
@@ -257,6 +259,7 @@ The employee data is displayed in the following Diagram.
 
 ![](Getting-Started_images/Getting-Started_img3.png) 
 
- _Diagram_
+Diagram
+{:.caption} 
 
 

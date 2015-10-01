@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom-labels
+title: Custom labels | LinearGauge | ASP.NET Webforms | Syncfusion
 description: custom labels
 platform: aspnet
 control: Linear Gauge

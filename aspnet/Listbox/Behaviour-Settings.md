@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Behaviour-Settings
+title: Behaviour Settings | ListBox | ASP.NET Webforms | Syncfusion
 description: behaviour settings
 platform: aspnet
-control: Control Name undefined
+control: ListBox
 documentation: ug
 ---
 
@@ -91,7 +91,7 @@ The following steps explains you the configuration of SelectedItemIndex property
 
 In an ASPX page, add an element to configure ListBox.
 
-
+{% tabs %}
 
 {% highlight c# %}
 
@@ -179,7 +179,7 @@ In an ASPX page, add an element to configure ListBox.
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 Output of the above steps.
 
@@ -196,6 +196,7 @@ The following steps explains you the configuration of Enabled property in ListBo
 
 In an ASPX page, add an element to configure ListBox.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -283,7 +284,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 Output of the above steps.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | TreeMap | ASP.NET | Syncfusion
 description: getting started
 platform: aspnet
 control: TreeMap
@@ -35,57 +35,55 @@ TreeMap/ TreeMap.aspx.cs
 
 public class TreeMapPopulationData
 
+{
+
+    public string Continent { get; set; }
+
+    public string Country { get; set; }
+
+    public int Growth { get; set; }
+
+    public long Population { get; set; }
+
+
+
+    public static List<TreeMapPopulationData> GetData()
+
     {
 
-        public string Continent { get; set; }
+        List<TreeMapPopulationData> pop = new List<TreeMapPopulationData>();
 
-        public string Country { get; set; }
+        pop.Add(new TreeMapPopulationData() { Continent = "Asia", Country = "Indonesia", Growth = 3, Population = 237641326 });
 
-        public int Growth { get; set; }
+        pop.Add(new TreeMapPopulationData() { Continent = "Asia", Country = "Russia", Growth = 2, Population = 152518015 });
 
-        public long Population { get; set; }
+        pop.Add(new TreeMapPopulationData() { Continent = "Asia", Country = "Mal", Growth = 1, Population = 29672000 });
 
+        pop.Add(new TreeMapPopulationData() { Continent = " America", Country = "United States", Growth = 4, Population = 315645000 });
 
+        pop.Add(new TreeMapPopulationData() { Continent = " America", Country = "Mexico", Growth = 2, Population = 112336538 });
 
-        public static List<TreeMapPopulationData> GetData()
+        pop.Add(new TreeMapPopulationData() { Continent = " America", Country = "Canada", Growth = 1, Population = 39056064 });
 
-        {
+        pop.Add(new TreeMapPopulationData() { Continent = " America", Country = "Colombia", Growth = 1, Population = 47000000 });
 
-            List<TreeMapPopulationData> pop = new List<TreeMapPopulationData>();
+        pop.Add(new TreeMapPopulationData() { Continent = " America", Country = "Brazil", Growth = 3, Population = 193946886 });
 
-            pop.Add(new TreeMapPopulationData() { Continent = "Asia", Country = "Indonesia", Growth = 3, Population = 237641326 });
+        pop.Add(new TreeMapPopulationData() { Continent = "Africa", Country = "Nigeria", Growth = 2, Population = 170901000 });
 
-            pop.Add(new TreeMapPopulationData() { Continent = "Asia", Country = "Russia", Growth = 2, Population = 152518015 });
+        pop.Add(new TreeMapPopulationData() { Continent = "Africa", Country = "Egypt", Growth = 1, Population = 83661000 });
 
-            pop.Add(new TreeMapPopulationData() { Continent = "Asia", Country = "Mal", Growth = 1, Population = 29672000 });
+        pop.Add(new TreeMapPopulationData() { Continent = "Europe", Country = "Germany", Growth = 1, Population = 81993000 });
 
-            pop.Add(new TreeMapPopulationData() { Continent = " America", Country = "United States", Growth = 4, Population = 315645000 });
+        pop.Add(new TreeMapPopulationData() { Continent = "Europe", Country = "France", Growth = 1, Population = 65605000 });
 
-            pop.Add(new TreeMapPopulationData() { Continent = " America", Country = "Mexico", Growth = 2, Population = 112336538 });
+        pop.Add(new TreeMapPopulationData() { Continent = "Europe", Country = "UK", Growth = 1, Population = 63181775 });
 
-            pop.Add(new TreeMapPopulationData() { Continent = " America", Country = "Canada", Growth = 1, Population = 39056064 });
-
-            pop.Add(new TreeMapPopulationData() { Continent = " America", Country = "Colombia", Growth = 1, Population = 47000000 });
-
-            pop.Add(new TreeMapPopulationData() { Continent = " America", Country = "Brazil", Growth = 3, Population = 193946886 });
-
-            pop.Add(new TreeMapPopulationData() { Continent = "Africa", Country = "Nigeria", Growth = 2, Population = 170901000 });
-
-            pop.Add(new TreeMapPopulationData() { Continent = "Africa", Country = "Egypt", Growth = 1, Population = 83661000 });
-
-            pop.Add(new TreeMapPopulationData() { Continent = "Europe", Country = "Germany", Growth = 1, Population = 81993000 });
-
-            pop.Add(new TreeMapPopulationData() { Continent = "Europe", Country = "France", Growth = 1, Population = 65605000 });
-
-            pop.Add(new TreeMapPopulationData() { Continent = "Europe", Country = "UK", Growth = 1, Population = 63181775 });
-
-
-
-            return pop;
-
-        }
+        return pop;
 
     }
+
+}
 
 {% endhighlight %}
 
@@ -97,40 +95,39 @@ N> Population data is referred from [List of continents by population](http://en
 
    ~~~ html
 
-			<html xmlns="http://www.w3.org/1999/xhtml">
+        <html xmlns="http://www.w3.org/1999/xhtml">
 
-		<head>
+         <head>
 
-				<title> Getting Started with Maps </title>    
+            <title> Getting Started with Maps </title>    
 
-		<!--  jquery script  -->
+                    <!--  jquery script  -->
 
-						<script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
-
-
-
-						<!-- Essential JS UI widget -->
-
-					   <script src="http://cdn.syncfusion.com/13.1.0.21/js/
-
-		ej.widgets.all.min.js"></script>
+                    <script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
 
 
 
-					   <!-- JS Render widget -->
+                    <!-- Essential JS UI widget -->
 
-					   <script src="http://cdn.jsdelivr.net/jsrender/1.0pre35/jsrender.min.js" type="text/javascript"></script>   
+                   <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widgets.all.min.js"></script>
 
 
 
-		</head>
+                   <!-- JS Render widget -->
 
-			  <body>
-			  </body>
-		</html>
+                   <script src="http://cdn.jsdelivr.net/jsrender/1.0pre35/jsrender.min.js" type="text/javascript"></script>   
+
+
+
+          </head>
+
+          <body>
+          </body>
+       
+       </html>
 
    ~~~
-   {:.prettyprint } 
+
 
 2. Create a &lt;div&gt; tag and set the height and width to determine the TreeMap size to be rendered in “TreeMap.aspx” file in body tag.
 
@@ -142,7 +139,7 @@ N> Population data is referred from [List of continents by population](http://en
 
 					<div style="min-height:404px">
 
-				 </div> 
+				    </div> 
 
 
 			  </body>      
@@ -150,7 +147,7 @@ N> Population data is referred from [List of continents by population](http://en
 		</html>
 
    ~~~
-   {:.prettyprint }
+
 
 3. Add the following code in “TreeMap.aspx” file to initialize the TreeMap.
 
@@ -178,24 +175,24 @@ N> Population data is referred from [List of continents by population](http://en
 		</html>
 
    ~~~
-   {:.prettyprint }
+
 
 4. Add the DataSource in “TreeMap.aspx.cs” as illustrated in the following code sample.
 
    ~~~ cs
 
-		 protected void Page_Load(object sender, EventArgs e)
+		protected void Page_Load(object sender, EventArgs e)
 
-				{
+        {
 
 
 
-					this.treemap.DataSource = TreeMapPopulationData.GetData();           
+            this.treemap.DataSource = TreeMapPopulationData.GetData();           
 
-				}
+        }
 
    ~~~
-   {:.prettyprint }
+
 
 ### DataSource
 
@@ -209,18 +206,16 @@ You can calculate the size of the object using WeightValuePath of TreeMap.
 
    ~~~ cs
 
-	  protected void Page_Load(object sender, EventArgs e)
+	 protected void Page_Load(object sender, EventArgs e)
 
-			{
+     {
 
-				this.treemap.DataSource = TreeMapPopulationData.GetData();
+         this.treemap.DataSource = TreeMapPopulationData.GetData();
 
-
-
-			}
+     }
 
    ~~~
-   {:.prettyprint }
+
 
 
    ~~~ html
@@ -236,7 +231,6 @@ You can calculate the size of the object using WeightValuePath of TreeMap.
 		</div>
 
    ~~~
-   {:.prettyprint }
 
 The following image displays a TreeMap with default properties using the above code. 
 
@@ -260,13 +254,13 @@ The following code sample explains how to group TreeMap Items using ‘Levels’
 
 {% highlight c# %}
 
-  protected void Page_Load(object sender, EventArgs e)
+protected void Page_Load(object sender, EventArgs e)
 
-	{
+{
 
-		this.treemap.DataSource = TreeMapPopulationData.GetData();
+    this.treemap.DataSource = TreeMapPopulationData.GetData();
 
-	}
+}
 
 {% endhighlight %}
 
@@ -274,20 +268,19 @@ The following code sample explains how to group TreeMap Items using ‘Levels’
 
 <div style="min-height:404px">
 
-<ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population">
+    <ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population">
 
-<Levels>
+        <Levels>
 
-       <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25">
+               <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25">
 
-       </ej:TreeMapLevel>
+               </ej:TreeMapLevel>
 
-</Levels>
+        </Levels>
 
-</ej:Treemap>
+    </ej:Treemap>
 
 </div>        
-
 
 {% endhighlight %}
 
@@ -307,15 +300,16 @@ The ColorValuePath of TreeMap is a path to a field on the source object. You can
 
 The following code sample explains how to customize TreeMap Appearance by Range.
 
+{% tabs %}
 {% highlight c# %}
 
-  protected void Page_Load(object sender, EventArgs e)
+protected void Page_Load(object sender, EventArgs e)
 
-	{
+{
 
-		this.treemap.DataSource = TreeMapPopulationData.GetData();
+    this.treemap.DataSource = TreeMapPopulationData.GetData();
 
-	}
+}
 
 {% endhighlight %}
 
@@ -323,7 +317,7 @@ The following code sample explains how to customize TreeMap Appearance by Range.
 
 <ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth">
 
-<TreeMapRangeColorMappings>
+    <TreeMapRangeColorMappings>
 
              <ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"></ej:TreeMapRangeColorMapping>
 
@@ -333,22 +327,20 @@ The following code sample explains how to customize TreeMap Appearance by Range.
 
              <ej:TreeMapRangeColorMapping Color = "#F3D240" Legendlabel = "4% Growth" From = "0" To = "4"></ej:TreeMapRangeColorMapping>
 
-</TreeMapRangeColorMappings>
+    </TreeMapRangeColorMappings>
 
-<Levels>
+    <Levels>
 
        <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25">
 
-
-
        </ej:TreeMapLevel>
 
-</Levels>
+    </Levels>
 
 </ej:Treemap>
 
 {% endhighlight  %}
-
+{% endtabs %}
 
 The following screenshot displays customized TreeMap Appearance by Range.
 
@@ -365,13 +357,14 @@ You can customize the Leaf level TreeMapitems using LeafItemSettings. The Label 
 
 The following code sample displays how the tooltip is enabled.
 
+{% tabs %}
 {% highlight c# %}
 
-  protected void Page_Load(object sender, EventArgs e)
+protected void Page_Load(object sender, EventArgs e)
 
-	{
-		this.treemap.DataSource = TreeMapPopulationData.GetData();
-	}
+{
+    this.treemap.DataSource = TreeMapPopulationData.GetData();
+}
 
 {% endhighlight %}
 
@@ -408,12 +401,14 @@ The following code sample displays how the tooltip is enabled.
 </ej:Treemap>
 
 {% endhighlight %}
+{% endtabs %}
 
 The following screenshot displays the TreeMap when the Tooltip is enabled.
 
- ![](Getting-Started_images/Getting-Started_img6.png) 
+![](Getting-Started_images/Getting-Started_img6.png) 
 
-_Figure_ _17_: _TreeMap with tooltip option_
+TreeMap with tooltip option
+{:.caption}
 
 ### Legend
 
@@ -427,13 +422,14 @@ You can customize the labels of the legenditem using LegendLabel property of Ran
 
 The following code sample displays how to add labels for legend in a TreeMap.
 
+{% tabs %}
 {% highlight c# %}
 
-  protected void Page_Load(object sender, EventArgs e)
+protected void Page_Load(object sender, EventArgs e)
 
-	{
-		this.treemap.DataSource = TreeMapPopulationData.GetData();
-	}
+{
+    this.treemap.DataSource = TreeMapPopulationData.GetData();
+}
 
 {% endhighlight %}
 
@@ -441,34 +437,34 @@ The following code sample displays how to add labels for legend in a TreeMap.
 
 <ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth" ShowLegend = "true">
 
-<LeafItemSettings LabelPath = "Country"></LeafItemSettings>
+    <LeafItemSettings LabelPath = "Country"></LeafItemSettings>
 
-<TreeMapLegend IconHeight = "17" IconWidth = "17"></TreeMapLegend>
+    <TreeMapLegend IconHeight = "17" IconWidth = "17"></TreeMapLegend>
 
-<TreeMapRangeColorMappings>
+    <TreeMapRangeColorMappings>
 
-             <ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"></ej:TreeMapRangeColorMapping>
+                 <ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"></ej:TreeMapRangeColorMapping>
 
-             <ej:TreeMapRangeColorMapping Color = "#AED960" Legendlabel = "2% Growth" From = "0" To = "2"></ej:TreeMapRangeColorMapping>
+                 <ej:TreeMapRangeColorMapping Color = "#AED960" Legendlabel = "2% Growth" From = "0" To = "2"></ej:TreeMapRangeColorMapping>
 
-             <ej:TreeMapRangeColorMapping Color = "#FFAF51" Legendlabel = "3% Growth" From = "0" To = "3"></ej:TreeMapRangeColorMapping>
+                 <ej:TreeMapRangeColorMapping Color = "#FFAF51" Legendlabel = "3% Growth" From = "0" To = "3"></ej:TreeMapRangeColorMapping>
 
-             <ej:TreeMapRangeColorMapping Color = "#F3D240" Legendlabel = "4% Growth" From = "0" To = "4"></ej:TreeMapRangeColorMapping>
+                 <ej:TreeMapRangeColorMapping Color = "#F3D240" Legendlabel = "4% Growth" From = "0" To = "4"></ej:TreeMapRangeColorMapping>
 
-</TreeMapRangeColorMappings>
+    </TreeMapRangeColorMappings>
 
-<Levels>
+    <Levels>
 
-       <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25">
+           <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25">
 
-       </ej:TreeMapLevel>
+           </ej:TreeMapLevel>
 
-</Levels>
+    </Levels>
 
 </ej:Treemap>
 
-
 {% endhighlight %}
+{% endtabs %}
 
 The following screenshot displays the TreeMap when Legends are enabled.
 

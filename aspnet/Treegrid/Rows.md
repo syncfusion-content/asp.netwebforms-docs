@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rows
+title: Rows | TreeGrid | ASP.NET | Syncfusion
 description: rows
 platform: aspnet
 control: TreeGrid
@@ -19,6 +19,7 @@ RowTemplateID is used to customize all the rows in TreeGrid. For this property, 
 
 AltRowTemplateID is used to customize the alternative rows in TreeGrid. For this property, ID of the alternative row template is to be provided.
 
+{% tabs %}
 {% highlight html %}
 
 <ej:TreeGrid runat="server" ID="TreeGridControlRowTemplate" ChildMapping="Children" RowTemplateId="rowTemplateScript" AltRowTemplateId="altRowTemplateScript">
@@ -69,7 +70,7 @@ AltRowTemplateID is used to customize the alternative rows in TreeGrid. For this
 
      <div style="display:inline-block;padding-left:10px;">
 
-{{:#data['Address']}}
+        {{:#data['Address']}}
 
         <p>{{:#data['Country']}}</p>
 
@@ -87,7 +88,7 @@ AltRowTemplateID is used to customize the alternative rows in TreeGrid. For this
 
    </tr>
 
- </script>
+</script>
 
 <script id="altRowTemplateScript" type="text/x-jsrender">
 
@@ -113,19 +114,20 @@ AltRowTemplateID is used to customize the alternative rows in TreeGrid. For this
 
      <div>
 
-      <div style="display:inline-flex !important;">
+          <div style="display:inline-flex !important;">
 
-         <img src="Images/{{:#data['FullName']}}.png" /></div>
+             <img src="Images/{{:#data['FullName']}}.png" /></div>
 
-      <div style="display:inline-block;padding-left:10px;">
+             <div style="display:inline-block;padding-left:10px;">
 
-{{:#data['Address']}}
+             {{:#data['Address']}}
 
-         <p>{{:#data['Country']}}</p>
+             <p>{{:#data['Country']}}</p>
 
-         <p style="font-size:12px;">{{:#data['Contact']}}</p>
+             <p style="font-size:12px;">{{:#data['Contact']}}</p>
 
-      </div></div>
+          </div>
+     </div>
 
     </td>
 
@@ -165,7 +167,7 @@ AltRowTemplateID is used to customize the alternative rows in TreeGrid. For this
 
 public class TemplateData
 
- {
+{
 
    public string Name { get; set; }
 
@@ -268,6 +270,7 @@ public class RowTemplateData
  }
  
 {% endhighlight %}
+{% endtabs %}
 
 The output of TreeGrid with Row Template is as follows.
 
@@ -285,27 +288,26 @@ The following code explains about enabling the row drag and drop with the defaul
 
 <ej:TreeGrid runat="server" ID="TreeGridControlDragAndDrop" … AllowDragAndDrop="true">	 //...
 
-         <columns>
+     <columns>
 
-                <ej:TreeGridColumn HeaderText="Task Id" Field="TaskID" />
+            <ej:TreeGridColumn HeaderText="Task Id" Field="TaskID" />
 
-                <ej:TreeGridColumn HeaderText="Task Name" Field="TaskName" />//…
+            <ej:TreeGridColumn HeaderText="Task Name" Field="TaskName" />//…
 
-         </columns>
+     </columns>
 
-          <DragTooltip ShowTooltip="true"/>
+     <DragTooltip ShowTooltip="true"/>
 
-        //...
+     //...
 
-   </ej:TreeGrid>
-
+</ej:TreeGrid>
 
 {% endhighlight %}
 
 
 The following screenshot depicts a row drag and drop in the TreeGrid.
 
- ![](Rows_images/Rows_img2.png) 
+![](Rows_images/Rows_img2.png) 
 
 
 
@@ -335,43 +337,41 @@ The following code shows how to render row drag tooltip with tooltip template.
 
 {% highlight html %}
 
-<ej:TreeGrid runat="server" ID="TreeGridControlDragAndDrop" AllowDragAndDrop="true">	 //...         
+<ej:TreeGrid runat="server" ID="TreeGridControlDragAndDrop" AllowDragAndDrop="true">
 
-         <DragTooltip ShowTooltip="true" TooltipTemplate="#customtooltip" />
+   	   //...         
 
-        // ...
+       <DragTooltip ShowTooltip="true" TooltipTemplate="#customtooltip" />
+
+       // ...
 
 </ej:TreeGrid>
 
 <asp:Content ID="Content2" runat="server" ContentPlaceHolderID="ScriptSection"> 
 
+     <script id="#customtooltip" type="text/x-jsrender">            
 
+          <tr>
 
-         <script id="#customtooltip" type="text/x-jsrender">            
+              <td class="border" style='height:30px;' >
 
-              <tr>
+                 <div>{{:#data['TaskID']}}</div>
 
-                  <td class="border" style='height:30px;' >
-
-                     <div>{{:#data['TaskID']}}</div>
-
-                  </td>
-
-
-
-                  <td class="border" style='height:30px;' >
-
-                     <div>{{:#data['TaskName']}}</div>
-
-                  </td>
+              </td>
 
 
 
-             </tr>
+              <td class="border" style='height:30px;' >
 
-          </script>
+                 <div>{{:#data['TaskName']}}</div>
+
+              </td>
 
 
+
+         </tr>
+
+      </script>
 
 </asp:Content>
 

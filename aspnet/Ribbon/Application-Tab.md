@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Application-Tab
+title: Application Tab | Ribbon | ASP.NET Webforms | Syncfusion
 description: application tab
 platform: aspnet
 control: Ribbon
@@ -9,7 +9,7 @@ documentation: ug
 
 # Application Tab
 
-The application menu support is provided in the _Ribbon_ control _ApplicationTab_. Use _ApplicationTab_ property to define the application tab with menu. In _ApplicationTab_ definition, _Type_ property defines the application menu and the value is _ApplicationMenu_,_ItemID_ property to specify ID of UL list for application menu and _MenuSettings_ tag to specify all the members and events of the menu.
+The application menu support is provided in the Ribbon control  ApplicationTab. Use ApplicationTab property to define the application tab with menu. In ApplicationTab definition, Type property defines the application menu and the value is ApplicationMenu,ItemID property to specify ID of UL list for application menu and MenuSettings tag to specify all the members and events of the menu.
 
 
 
@@ -71,7 +71,7 @@ The application menu support is provided in the _Ribbon_ control _ApplicationTab
 
 
 
-The following screenshot illustrates _Ribbon_ with application menu.
+The following screenshot illustrates Ribbon with application menu.
 
 ![](Application-Tab_images/Application-Tab_img1.png)
 

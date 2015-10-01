@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dropdown-Button
+title: Dropdown Button | SplitButton | ASP.NET | Syncfusion
 description: dropdown button
 platform: aspnet
-control: Split Button
+control: SplitButton
 documentation: ug
 ---
 
-## Dropdown Button
+# Dropdown Button
 
 You can change the Split Button as Dropdown Button that consists of a single button. When it is clicked, displays a drop-down list of mutually exclusive items. You can achieve this by using default functionality of the Split Button with ButtonMode as Dropdown. Initially the Items tag is mandatory.
 
@@ -16,8 +16,6 @@ The following steps explain how to change the Split Button as Dropdown Button
 In an ASPX page, define the Split Button control.
 
 {% highlight html %}
-
-
 
 <ej:SplitButton ID="dropdownbtn" runat="server" Text="login" Size="Medium" ShowRoundedCorner="true" ContentType="TextOnly" ButtonMode="Dropdown">
 
@@ -32,8 +30,6 @@ In an ASPX page, define the Split Button control.
     </Items>
 
 </ej:SplitButton>
-
-
 
 {% endhighlight %}
 

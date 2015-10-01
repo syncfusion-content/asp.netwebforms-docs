@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | NumericTextbox | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: NumericTextbox
@@ -21,7 +21,7 @@ The Essential ASP.NET WebForms Editors control includes numeric, percentage, c
 
 ## Create Textboxes Controls
 
-You can create a WebForms Project and add the necessary Dll’s and Scripts with the help of the given [WebForms-Getting Started](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc ) Documentation.
+You can create a WebForms Project and add the necessary Dll’s and Scripts with the help of the given [WebForms-Getting Started](http://docs.syncfusion.com/aspnetmvc/numerictextbox/getting-started) Documentation.
 
 Add necessary TextBox control and initialize the corresponding TextBox control.
 
@@ -501,7 +501,7 @@ You can use events to calculate the total amount and display the value. This is 
 
 To customize the button, set the ContentType as TextAndImage to include the icon before the text. Add the PrefixIcon value as “e-calender” and add the ClientSideOnClickevent.
 
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -563,7 +563,7 @@ To customize the button, set the ContentType as TextAndImage to include the 
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 Run the above code to render the TextBox control. Fill the required Textbox fields and click the Calculate button. The values are displayed and an alert message is shown. The following screenshot illustrates the final output of the Electricity bill calculator.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | OLAPGauge | ASP.NET Webforms | Syncfusion
 description: getting started 
 platform: aspnet
 control: OLAP Gauge

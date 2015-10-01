@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Frames
+title: Frames | DigitalGauge | ASP.NET Webforms | Syncfusion
 description: frames
 platform: aspnet
 control: Digital Gauge
@@ -33,7 +33,8 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 ![](Frames_images/Frames_img1.png)
 
-_Figure 27: Digital Gauge control with frame inner and outer width_
+Digital Gauge control with frame inner and outer width
+{:.caption} 
 
 
 
@@ -87,5 +88,6 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 
 
-_Figure 28: Digital Gauge control with frame background image_
+Digital Gauge control with frame background image
+{:.caption} 
 

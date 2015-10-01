@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integration
+title: Integration | NumericTextbox | ASP.NET Webforms | Syncfusion
 description: integration
 platform: aspnet
 control: NumericTextbox

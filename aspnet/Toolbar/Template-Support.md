@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Template-Support
+title: Template Support | Toolbar | ASP.NET | Syncfusion
 description: template support
 platform: aspnet
 control: Toolbar
@@ -15,59 +15,47 @@ Set the list forDropDowncontrolinside a list tag and define this tag as a Toolba
 
 Add the following code example to the corresponding ASPX page to render the Toolbar Control.
 
-
-
 {% highlight html %}
 
+<ej:Toolbar ID="toolbarTemplate" Width="250px" Height="28px" runat="server">
 
+    <Items>
 
+        <ej:ToolbarItem>
 
+            <Template>
 
-   <ej:Toolbar ID="toolbarTemplate" Width="250px" Height="28px" runat="server">
+                <div class="ctrlradio">
 
-            <Items>
+                    <ej:RadioButton ID="RadioButton1" Name="small" runat="server">option</ej:RadioButton>
 
-                <ej:ToolbarItem>
+                </div>
 
-                    <Template>
+                <ej:DropDownList ID="selectcar" runat="server" SelectedItemIndex="0" Width="100px" Height="23px">
 
-                        <div class="ctrlradio">
+                    <Items>
 
-                            <ej:RadioButton ID="RadioButton1" Name="small" runat="server">option</ej:RadioButton>
+                        <ej:DropDownListItem Text="Audi A4" Value="Audi A4"></ej:DropDownListItem>
 
-                        </div>
+                        <ej:DropDownListItem Text="Audi A5" Value="Audi A5"></ej:DropDownListItem>
 
-                        <ej:DropDownList ID="selectcar" runat="server" SelectedItemIndex="0" Width="100px" Height="23px">
+                        <ej:DropDownListItem Text="Audi A6" Value="Audi A6"></ej:DropDownListItem>
 
-                            <Items>
+                        <ej:DropDownListItem Text="Audi A7" Value="Audi A7"></ej:DropDownListItem>
 
-                                <ej:DropDownListItem Text="Audi A4" Value="Audi A4"></ej:DropDownListItem>
+                        <ej:DropDownListItem Text="Audi A8" Value="Audi A8"></ej:DropDownListItem>
 
-                                <ej:DropDownListItem Text="Audi A5" Value="Audi A5"></ej:DropDownListItem>
+                    </Items>
 
-                                <ej:DropDownListItem Text="Audi A6" Value="Audi A6"></ej:DropDownListItem>
+                </ej:DropDownList>
 
-                                <ej:DropDownListItem Text="Audi A7" Value="Audi A7"></ej:DropDownListItem>
+            </Template>
 
-                                <ej:DropDownListItem Text="Audi A8" Value="Audi A8"></ej:DropDownListItem>
+        </ej:ToolbarItem>
 
-                            </Items>
+    </Items>
 
-                        </ej:DropDownList>
-
-                    </Template>
-
-                </ej:ToolbarItem>
-
-            </Items>
-
-        </ej:Toolbar>
-
-
-
-
-
-
+</ej:Toolbar>
 
 {% endhighlight %}
 

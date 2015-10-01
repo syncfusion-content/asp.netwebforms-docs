@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | TimePicker | ASP.NET | Syncfusion
 description: getting started
 platform: aspnet
 control: TimePicker
@@ -127,8 +127,6 @@ Add the following code to the corresponding ASPX page to render the TimePicker.
 
     </table>
 
-
-
 {% endhighlight %}
 
 
@@ -139,25 +137,23 @@ Add the following styles to show the TimePicker control.
 
 {% highlight css %}
 
-        .tdclass
+.tdclass
 
-        {
+{
 
-            width: 200px;
+	width: 200px;
 
-            font-weight: bold;
+	font-weight: bold;
 
-        }
+}
 
-        .innerdp
+.innerdp
 
-        {
+{
 
-            display: inline-block;
+	display: inline-block;
 
-        }
-
-
+}
 
 {% endhighlight %}
 
@@ -179,23 +175,21 @@ In a real-time hotel table booking scenario, the booking is open only for a limi
 
 {% highlight c# %}
 
-        protected void Page_Load(object sender, EventArgs e)
+protected void Page_Load(object sender, EventArgs e)
 
-        {
+{
 
-            DatePicker.MinDate = DateTime.Now.ToString();
+	DatePicker.MinDate = DateTime.Now.ToString();
 
-            DatePicker.MaxDate = DateTime.Now.AddDays(30).ToString();
+	DatePicker.MaxDate = DateTime.Now.AddDays(30).ToString();
 
-            TimePicker.MinTime = "9:00:00";
+	TimePicker.MinTime = "9:00:00";
 
-            TimePicker.MaxTime = "18:00:00";
-
-
-
-        }
+	TimePicker.MaxTime = "18:00:00";
 
 
+
+}
 
 {% endhighlight %}
 
@@ -215,13 +209,7 @@ The following code example shows how to set Time interval.
 
 {% highlight html %}
 
-
-
 <ej:TimePicker ID="TimePicker1" runat="server" Interval="60" />
-
-
-
-
 
 {% endhighlight %}
 
@@ -255,9 +243,7 @@ The following code example shows how to display the acknowledgement message.
 
         }
 
-    </script>
-
-
+</script>
 
 {% endhighlight %}
 
@@ -275,11 +261,7 @@ You can select the Start time in the first TimePicker and then the End time in t
 
 Add input element to render Two TimePickers.
 
-
-
 {% highlight html %}
-
-
 
 <table>
 
@@ -411,8 +393,6 @@ Add input element to render Two TimePickers.
 
     </table>
 
-
-
 {% endhighlight %}
 
 
@@ -423,31 +403,29 @@ Display the acknowledge message by using following script.
 
 <script type="text/javascript">
 
-        function acknowledge() {
+	function acknowledge() {
 
-            var a = $('#DatePicker').val();
+		var a = $('#DatePicker').val();
 
-            var b = $('#TimePicker').val();
+		var b = $('#TimePicker').val();
 
-            var c = $('#DropDownList').val();
+		var c = $('#DropDownList').val();
 
-            alert("You are booked the table with date " + a + " time " + b + " Party_size is " + c);
+		alert("You are booked the table with date " + a + " time " + b + " Party_size is " + c);
 
-        }
+	}
 
-        function selectedStartTime(sender) {
+	function selectedStartTime(sender) {
 
-            var selDate = sender.value; // mentions the selected time.
+		var selDate = sender.value; // mentions the selected time.
 
-            minTimepicker = $("#TimePickerEnd").data("ejTimePicker"); // creating TimePicker object
+		minTimepicker = $("#TimePickerEnd").data("ejTimePicker"); // creating TimePicker object
 
-            minTimepicker.setModel({ "minTime": selDate }); // setting minTime property through setModel of TimePicker object.
+		minTimepicker.setModel({ "minTime": selDate }); // setting minTime property through setModel of TimePicker object.
 
-        }
+	}
 
-    </script>
-
-
+</script>
 
 {% endhighlight %}
 

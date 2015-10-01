@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | AutoComplete | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: AutoComplete
@@ -24,7 +24,7 @@ The following screenshot illustrates the AutoComplete control that searches th
 ### Create an AutoComplete
 
 You can create an ASP.NET Project and add necessary Dll’s and Scripts with the help of the given 
-[WebForms-Getting Started](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc) documentation.  
+[WebForms-Getting Started](http://docs.syncfusion.com/aspnetmvc/autocomplete/getting-started) documentation.  
 Initialize the corresponding AutoCompletecontrol in the ASPX page.
 
 {% highlight html %}

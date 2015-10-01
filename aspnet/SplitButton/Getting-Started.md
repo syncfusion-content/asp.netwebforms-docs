@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | SplitButton | ASP.NET | Syncfusion
 description: getting started
 platform: aspnet
-control: Split Button
+control: SplitButton
 documentation: ug
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Series
+title: Series | Chart | ASP.NET Webforms | Syncfusion
 description: series
 platform: aspnet
 control: Chart
@@ -170,6 +170,7 @@ A combination Chart combines two or more Charts types in single Charts. For exam
 1. You cannot combine Column and Bar series
 2. Pie, Doughnut Series cannot be used with other series types.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -280,6 +281,8 @@ A combination Chart combines two or more Charts types in single Charts. For exam
     }
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 ![](Series_images/Series_img3.png)
 
@@ -451,7 +454,7 @@ ConnectorLine in data Label is used to customize the line that connects the outs
 
 ### Data labels Rotation
 
-_Data labels_ refer to the y values of data points, which appear on each point. You can rotate data labels with positive and negative angles using Angle property.
+Data labels refer to the y values of data points, which appear on each point. You can rotate data labels with positive and negative angles using Angle property.
 
 
 

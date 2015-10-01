@@ -1,6 +1,6 @@
 ---
 layout: post
-title: KO-ResultSet
+title: KO ResultSet | DataManager | ASP.NET Webforms | Syncfusion
 description: ko resultset
 platform: aspnet
 control: DataManager

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization
+title: Localization | Schedule | ASP.NET Webforms | Syncfusion
 description: localization
 platform: aspnet
 control: Schedule
@@ -12,11 +12,11 @@ documentation: ug
 * You can set any of the cultures to the Schedule control by using locale property. It is necessary to define all the localized words used in the Schedule control separately, as per the culture that isused within it. 
 * By default, en-US culture is set to the Schedule control.
 
-##Localization String for Schedule control
+## Localization String for Schedule control
 
 * The following table contains the Key values and its corresponding localized String values for en-US culture. Therefore, to apply your localization/culture to the schedule control, change the “value (string value)” against the “each Key”.
 
-Table 2 : List of keys and string values
+List of keys and string values
 
 <table>
 <tr>
@@ -611,7 +611,8 @@ Important: An important note while making use of localization in the schedule co
 ![](Localization_images/Localization_img1.png)
 
 
-Figure 104 :  schedule with localization.
+schedule with localization
+{:.caption} 
 
 ###RTL
 
@@ -650,5 +651,6 @@ SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 ![](Localization_images/Localization_img2.png)
 
 
-   Figure 105 :  schedule with RTL.
+schedule with RTL
+{:.caption} 
 

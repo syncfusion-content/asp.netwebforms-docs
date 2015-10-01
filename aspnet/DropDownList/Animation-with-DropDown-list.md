@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Animation-with-DropDown-list
+title: Animation with DropDown list | DropDownList | ASP.NET Webforms | Syncfusion
 description: animation with dropdown list 
 platform: aspnet
 control: DropDownList

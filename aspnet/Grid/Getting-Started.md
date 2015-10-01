@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Grid | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: Grid
@@ -42,7 +42,6 @@ You can create a Grid with a highly customizable look and feel. You can use Gr
 		<asp:SqlDataSource runat="server" ID="SqlData" ConnectionString="<%$ ConnectionStrings:SQLConnectionString %>" SelectCommand="SELECT * FROM [Orders]"></asp:SqlDataSource>
 
    ~~~
-   {:.prettyprint }
    
    N> Create a connection string in Web.config file using SQL database.
 
@@ -65,7 +64,6 @@ You can create a Grid with a highly customizable look and feel. You can use Gr
 		</connectionStrings>
 
    ~~~
-   {:.prettyprint }
    
    For more information about SQL data source configuration refer the following link: [http://msdn.microsoft.com/en-us/library/vstudio/w1kdt8w2(v=vs.100).aspx](http://msdn.microsoft.com/en-us/library/vstudio/w1kdt8w2(v=vs.100).aspx)
 
@@ -104,7 +102,6 @@ You can create a Grid with a highly customizable look and feel. You can use Gr
 		</ej:Grid>
 
    ~~~
-   {:.prettyprint }
 
 The following screenshot displays a Grid with the sales data.
 

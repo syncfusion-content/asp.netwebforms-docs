@@ -1,6 +1,6 @@
 ---
 layout: post
-title: File-Size
+title: File Size | UploadBox | ASP.NET | Syncfusion
 description: file size 
 platform: aspnet
 control: UploadBox
@@ -25,11 +25,11 @@ In the ClientSideOnError event display, an alert message is displayed when the f
 
 {% highlight css %}
 
-      function fileuploaderror(e, ui) {
+function fileuploaderror(e, ui) {
 
-          alert(e.error);
+  alert(e.error);
 
-      }
+}
 
 {% endhighlight %}
 
@@ -123,9 +123,12 @@ N> maxAllowedContentLength is measured in bytes.
 ![](File-Size_images/File-Size_img3.png)
 
 
-> * When you configure both maxAllowedContentLength and maxRequestLength attributes, then maxAllowedContentLength can be run. 
-> * When the upload file’s size exceeds maxAllowedContentLength, you get a 404.13 error page.
-> * When the upload file’s size exceeds maxRequestLength value, you get an exception “System.Web.HttpException: Maximum request length exceeded”.
-> * The ASP.NET method of maxRequestLength is greater than or equal to the IIS method of limiting the request length (maxAllowedContentLength).
+N> * When you configure both maxAllowedContentLength and maxRequestLength attributes, then maxAllowedContentLength can be run. 
+N>
+N> * When the upload file’s size exceeds maxAllowedContentLength, you get a 404.13 error page.
+N>
+N> * When the upload file’s size exceeds maxRequestLength value, you get an exception “System.Web.HttpException: Maximum request length exceeded”.
+N>
+N> * The ASP.NET method of maxRequestLength is greater than or equal to the IIS method of limiting the request length (maxAllowedContentLength).
 
 ![](File-Size_images/File-Size_img4.png)

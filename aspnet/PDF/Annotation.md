@@ -1,21 +1,19 @@
 ---
 layout: post
-title: Annotation
+title: Annotation | PDF | ASP.NET | Syncfusion
 description: annotation
 platform: aspnet
-control: PDF
+control: pdf
 documentation: ug
 ---
 
 # Annotation
 
-An annotation associates an object such as a note, sound, or a movie with location on the page of a PDF document, or provides a 
-way to interact with you by means of mouse and keyboard.
+An annotation associates an object such as a note, sound, or a movie with location on the page of a PDF document, or provides a way to interact with you by means of mouse and keyboard.
 
-Essential PDF library provides support to add annotations to both existing and newly created PDF files.The following annotion 
-types are supported.
+Essential PDF library provides support to add annotations to both existing and newly created PDF files.The following annotion types are supported.
 
-Table 26: List of Annotation types
+_List of Annotation types_
 
 <table>
 <tr>
@@ -69,17 +67,18 @@ Represents a freehand “scribble” composed of one or more disjoint paths.</td
 </table>
 
 
+
+
 ## Adding Annotation to newly created document
 
-
-The annotations are stored by the PdfAnnotationCollection of a particular PdfPage. This collection contains annotations for 
-that individual page only; every page has its own PdfAnnotationCollection. In order to add an annotation in a particular page, 
-you need to add it to the PdfAnnotationCollection of that page using Add method.
+The annotations are stored by the PdfAnnotationCollection of a particular PdfPage. This collection contains annotations for that individual page only; every page has its own PdfAnnotationCollection. In order to add an annotation in a particular page, you need to add it to the PdfAnnotationCollection of that page using Add method. </td></tr>
 
 * Create a particular annotation that you want to add to the PDF.
 * Add the annotation to the PdfPage'sPdfAnnotationCollection.
 
-{% highlight c# %}
+
+{% tabs %}
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -119,10 +118,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -161,6 +157,7 @@ document.Save("PopupAnnotation.pdf")
 document.Close()
 
 {% endhighlight %}
+{% endtabs %} 
 
 ## Adding and getting Annotation from existing Pdf document
 
@@ -168,11 +165,11 @@ Essential PDF provides you support to add annotations to an existing document an
 
 All the annotations for a particular page can be found in the PdfLoadedAnnotationCollection of that PdfLoadedPage. In order to get a particular annotation, you need to specify the Index of the annotation. This returns an object of type PdfAnnotation and you need to cast it to a particular type of the annotation.
 
-{% highlight c# %}
 
+{% tabs %}
+ 
 
-
-
+{% highlight C# %}
 
 //Loads an existing document.
 
@@ -220,9 +217,9 @@ document.Save("Annotation.pdf");
 
 document.Close();
 
-{% endhighlight  %}
+{% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -273,6 +270,7 @@ document.Save("Annotation.pdf")
 document.Close()
 
 {% endhighlight %}
+{% endtabs %} 
 
 ## 3D Annotation
 
@@ -280,11 +278,11 @@ document.Close()
 
 3D annotation is handled by the Pdf3DAnnotation class.The following example illustrates you on how to embed a 3D file.
 
-{% highlight c# %}
 
 
+{% tabs %}
 
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -332,10 +330,7 @@ document.Save("3DAnnotation.pdf");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -382,6 +377,7 @@ page.Annotations.Add(pdf3dAnnotation)
 document.Save("3DAnnotation.pdf")
 
 {% endhighlight %}
+{% endtabs %}  
 
 ### 3D View
 
@@ -389,11 +385,11 @@ document.Save("3DAnnotation.pdf")
 
 Pdf3DView class used to handle 3D view.
 
-{% highlight c# %}
 
 
-
-
+{% tabs %}
+ 
+{% highlight C# %}
 
 PdfDocument document = new PdfDocument();
 
@@ -421,12 +417,9 @@ page.Annotations.Add(pdf3dAnnotation);
 
 document.Save("3DViews.pdf");
 
-{% endhighlight  %}
+{% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 Dim document As New PdfDocument()
 
@@ -454,7 +447,8 @@ page.Annotations.Add(pdf3dAnnotation)
 
 document.Save("3DViews.pdf")
 
-{% endhighlight  %}
+{% endhighlight %}
+{% endtabs %} 
 
 ### 3D Projection
 
@@ -462,11 +456,11 @@ document.Save("3DViews.pdf")
 
 Pdf3DProjection class handles the 3D projection that supports both near and far clipping. This type of clipping defines a near plane and far plane. Objects or parts of objects that are beyond the far plane or closer to the camera than the near plane are not drawn.
 
-{% highlight c# %}
 
 
-
-
+{% tabs %}
+ 
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -524,10 +518,7 @@ document.Save("Pdf3DProjection.pdf")
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -588,7 +579,7 @@ page.Annotations.Add(annotation)
 document.Save("Pdf3DProjection.pdf")
 
 {% endhighlight %}
-
+{% endtabs %} 
 
 ### 3D Activation
 
@@ -602,11 +593,11 @@ Pdf3DActivation class handles the 3D activations. With the help of Pdf3DActivati
 
 You can show or hide the toolbar by using the ShowToolbar property.
 
-{% highlight c# %}
 
 
-
-
+{% tabs %}
+ 
+{% highlight C# %}
 
 PdfDocument document = new PdfDocument();
 
@@ -636,10 +627,7 @@ document.Save("Pdf3DActivation.pdf");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 Dim document As New PdfDocument()
 
@@ -668,6 +656,7 @@ page.Annotations.Add(annotation)
 document.Save("Pdf3DActivation.pdf")
 
 {% endhighlight %}
+{% endtabs %} 
 
 ### 3D Background
 
@@ -677,11 +666,11 @@ Pdf3DBackground class handles the 3D Background. You can apply background color 
 
 The following code example illustrates this.
 
-{% highlight c# %}
+
+{% tabs %}
 
 
-
-
+{% highlight C# %}
 
 PdfDocument document = new PdfDocument();
 
@@ -719,8 +708,7 @@ document.Save("Pdf3DBackground.pdf");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
+{% highlight VB %}
 
 
 
@@ -758,7 +746,8 @@ page.Annotations.Add(annotation)
 
 document.Save("Pdf3DBackground.pdf")
 
-{% endhighlight  %}
+{% endhighlight %}
+{% endtabs %}  
 
 ### 3D Render Mode
 
@@ -793,9 +782,9 @@ Apart from using the Style property, you can also change the rendering style by 
 
 The following code example illustrates this.
 
-{% highlight c# %}
-
-
+{% tabs %}
+  
+{% highlight C# %}
 
 
 
@@ -839,10 +828,7 @@ document.Save("PDF3DRendermode.pdf");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -882,7 +868,8 @@ page.Annotations.Add(annotation)
 
 document.Save("PDF3DRendermode.pdf")
 
-{% endhighlight  %}
+{% endhighlight %}
+{% endtabs %}
 
 ### 3D Lighting
 
@@ -903,11 +890,11 @@ The following lighting effects are supported by Pdf3DLighting class.
 * CAD 
 * Headlamp 
 
-{% highlight c# %}
+
+{% tabs %}
 
 
-
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -945,10 +932,7 @@ document.Save("Pdf3DLighting.pdf");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -984,7 +968,8 @@ page.Annotations.Add(annot)
 
 document.Save("Pdf3DLighting.pdf")
 
-{% endhighlight  %}
+{% endhighlight %}
+{% endtabs %}  
 
 ### 3D Cross Section
 
@@ -994,11 +979,11 @@ Pdf3DCrossSection handles 3D cross section with that you can set the inter secti
 
 The following code example illustrates this.
 
-{% highlight c# %}
 
 
+{% tabs %}
 
-
+{% highlight C# %}
 
 PdfDocument document = new PdfDocument();
 
@@ -1038,9 +1023,7 @@ document.Save("Pdf3DCrossSection.pdf");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 Dim document As New PdfDocument()
 
@@ -1079,6 +1062,7 @@ page.Annotations.Add(annotation)
 document.Save("Pdf3DCrossSection.pdf")
 
 {% endhighlight %}
+{% endtabs %}  
 
 ## File Link Annotation
 
@@ -1086,11 +1070,10 @@ External files can be hyperlinked in a pdf document using the Annotation feature
 
 PdfFileLinkAnnotation class of the Essential PDF can be used to associate an external file to the document as follows
 
-{% highlight c# %}
 
-
-
-
+{% tabs %}
+  
+{% highlight C# %}
 
 PdfDocument document = new PdfDocument();
 
@@ -1118,8 +1101,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
+{% highlight VB %}
 
 Dim document As New PdfDocument()
 
@@ -1146,7 +1128,7 @@ document.Save("FileLinkAnnotation.pdf")
 document.Close()
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ## Free Text Annotation
 
@@ -1154,11 +1136,11 @@ Free text annotation enables you to display text directly on the page. Unlike or
 
 PdfFreeTextAnnotation calss is used to create the free text annotation.
 
-{% highlight c# %}
 
 
-
-
+{% tabs %}
+ 
+{% highlight C# %}
 
 PdfDocument document = new PdfDocument();
 
@@ -1208,10 +1190,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 Dim document As New PdfDocument()
 
@@ -1259,19 +1238,19 @@ document.Save("FreeTextAnnotation.pdf")
 
 document.Close()
 
-{% endhighlight  %}
-
+{% endhighlight %}
+{% endtabs %} 
 ## Line Annotation
 
 Line annotation displays a single straight line on the page. When you open it, it displays a pop-up window containing text of the associated note.
 
 PdfLineAnnotation is used to create and set the properties to the Line annotation.
 
-{% highlight c# %}
 
+{% tabs %}
+ 
 
-
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -1337,10 +1316,7 @@ document.Save("LineAnnotation.pdf");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -1405,6 +1381,7 @@ page.Annotations.Add(lineAnnotation)
 document.Save("LineAnnotation.pdf")
 
 {% endhighlight %}
+{% endtabs %} 
 
 ## Rubber stamp Annotation
 
@@ -1412,11 +1389,11 @@ Rubber stamp annotation displays text or graphics intended to look like it was s
 
 PdfRubberStampAnnotation is used to handle rubber stamp annotation.
 
-{% highlight c# %}
 
 
+{% tabs %}
 
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -1442,11 +1419,9 @@ page.Annotations.Add(rubberstampAnnotation);
 
 document.Save("Rubberstamp.pdf");
 
-
 {% endhighlight %}
 
-{% highlight vbnet %}
-
+{% highlight VB %}
 
 
 
@@ -1475,6 +1450,7 @@ page.Annotations.Add(rubberstampAnnotation)
 document.Save("Rubberstamp.pdf")
 
 {% endhighlight %}
+{% endtabs %}  
 
 ## Ink Annotation
 
@@ -1489,11 +1465,10 @@ Pop-up annotation displays text in a pop-up window for entry and editing. It typ
 PdfPopupAnnotation handles the pop-up annotation.
 
 
-{% highlight c# %}
 
-
-
-
+{% tabs %}
+ 
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -1531,10 +1506,7 @@ document.Save("PopupAnnotation.pdf");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -1570,19 +1542,19 @@ page.Annotations.Add(popupAnnotation)
 
 document.Save("PopupAnnotation.pdf")
 
-{% endhighlight  %}
-
+{% endhighlight %}
+{% endtabs %} 
 ## File Attachment Annotation
 
 File attachment annotation contains reference to a file that typically is embedded in the PDF file.
 
 PdfAttachmentAnnotation class is used to create file attachement annotation.
 
-{% highlight c# %}
 
 
-
-
+{% tabs %}
+ 
+{% highlight C# %}
 
 //Creates a new PDF Document.
 
@@ -1614,10 +1586,7 @@ document.Save("AttachmentAnnotation.pdf");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 'Creates a new PDF Document.
 
@@ -1647,17 +1616,19 @@ page.Annotations.Add(attachmentAnnotation)
 
 document.Save("AttachmentAnnotation.pdf")
 
-{% endhighlight  %}
-
+{% endhighlight %}
+{% endtabs %} 
 ## Sound Annotation
 
 Sound annotation is similar to text annotation except that it contains sound recorded from the computer’s microphone or imported from a file instead of a text note. When the annotation is activated, the sound is played.
 
 PdfSoundAnnotation class used to create sound annotation
 
-{% highlight c# %}
 
 
+{% tabs %}
+ 
+{% highlight C# %}
 
 
 
@@ -1697,10 +1668,7 @@ document.Save("SoundIcon.pdf");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 Dim document As New PdfDocument()
 
@@ -1737,6 +1705,7 @@ page.Annotations.Add(soundAnnotation)
 document.Save("SoundIcon.pdf")
 
 {% endhighlight %}
+{% endtabs %} 
 
 ## URI Annotation
 
@@ -1744,9 +1713,11 @@ URI annotation is used to navigate to a particular web URI.
 
 PdfUriAnnotation is used to create URI annotation.
 
-{% highlight c# %}
+
+{% tabs %}
 
 
+{% highlight C# %}
 
 PdfDocument document = new PdfDocument();
 
@@ -1776,8 +1747,7 @@ document.Save("UriAnnotation.pdf");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
+{% highlight VB %}
 
 Dim document As New PdfDocument()
 
@@ -1806,18 +1776,18 @@ page.Annotations.Add(uriAnnotation)
 document.Save("UriAnnotation.pdf")
 
 {% endhighlight %}
-
+{% endtabs %}  
 ## Document Link Annotation
 
 This annotation is used to navigate to a specific destination within the document.
 
 PdfDocumentLinkAnnotation class is used to create the document link annotation and PdfDestination class is used to specify the destination of document link annotation.
 
-{% highlight c# %}
 
 
-
-
+{% tabs %}
+ 
+{% highlight C# %}
 
 PdfDocument document = new PdfDocument();
 
@@ -1870,10 +1840,8 @@ page.Annotations.Add(documentLinkAnnotation);
 document.Save("DocumentLinkAnnotation.pdf");
 
 {% endhighlight %}
-{% highlight vbnet %}
 
-
-
+{% highlight VB %}
 
 Dim document As New PdfDocument()
 
@@ -1926,4 +1894,4 @@ page.Annotations.Add(documentLinkAnnotation)
 document.Save("DocumentLinkAnnotation.pdf")
 
 {% endhighlight %}
-
+{% endtabs %} 

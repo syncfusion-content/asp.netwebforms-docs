@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Overview
+title: Overview | SplitButton | ASP.NET | Syncfusion
 description: overview
 platform: aspnet
-control: Split Button
+control: SplitButton
 documentation: ug
 ---
 

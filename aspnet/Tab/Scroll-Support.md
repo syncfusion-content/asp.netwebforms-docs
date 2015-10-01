@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scroll-Support
+title: Scroll Support | Tab | ASP.NET | Syncfusion
 description: scroll support
 platform: aspnet
 control: Tab
@@ -98,10 +98,6 @@ Add the following ASPX code to create a simple Tab with scroll button.
     </Items>
 
 </ej:Tab>
-
-
-
-
 
 {% endhighlight %}
 

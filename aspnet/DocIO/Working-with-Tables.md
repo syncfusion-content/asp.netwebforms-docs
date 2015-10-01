@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-Tables
+title: Working with Tables | DocIO | ASP.NET Webforms | Syncfusion
 description: working with tables
 platform: aspnet
 control: DocIO

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding
+title: Data Binding | TagCloud | ASP.NET | Syncfusion
 description: data-binding
 platform: aspnet
 control: TagCloud
@@ -54,99 +54,99 @@ example.
 
 protected void Page_Load(object sender, EventArgs e)
 
-        {
+{
 
-            this.tagcloud.DataSource = new TagCloudData().GetTagCloudItems();           
+	this.tagcloud.DataSource = new TagCloudData().GetTagCloudItems();           
 
-        }
+}
 
-        public class TagCloudData
+public class TagCloudData
 
-        {
+{
 
-            public TagCloudData()
+	public TagCloudData()
 
-            {
-
-
-
-            }
+	{
 
 
 
-            public TagCloudData(string _text, string _url, int _frequency)
-
-            {
-
-                this.text = _text;
-
-                this.url = _url;
-
-                this.frequency = _frequency;
-
-            }
-
-            public TagCloudData()
-
-            {
+	}
 
 
 
-            }
+	public TagCloudData(string _text, string _url, int _frequency)
+
+	{
+
+		this.text = _text;
+
+		this.url = _url;
+
+		this.frequency = _frequency;
+
+	}
+
+	public TagCloudData()
+
+	{
 
 
 
-            public string text
+	}
 
-            {
 
-                get;
 
-                set;
+	public string text
 
-            }
+	{
 
-            public string url
+		get;
 
-            {
+		set;
 
-                get;
+	}
 
-                set;
+	public string url
 
-            }
+	{
 
-            public int frequency
+		get;
 
-            {
+		set;
 
-                get;
+	}
 
-                set;
+	public int frequency
 
-            }
+	{
 
-            public List<TagCloudData> GetTagCloudItems()
+		get;
 
-            {
+		set;
 
-                List<TagCloudData> data = new List<TagCloudData>();
+	}
 
-                data.Add(new TagCloudData("Hindustan Motors", "http://www.zigwheels.com/newcars/Hindustan-Motors", 10));
+	public List<TagCloudData> GetTagCloudItems()
 
-                data.Add(new TagCloudData("Bentley Continental ", "http://www.zigwheels.com/newcars/Bentley/Continental", 3));
+	{
 
-                data.Add(new TagCloudData("BMW 7", "http://www.zigwheels.com/newcars/BMW/7-Series", 4));
+		List<TagCloudData> data = new List<TagCloudData>();
 
-                data.Add(new TagCloudData("Bugatti Veyron", "http://www.zigwheels.com/newcars/Bugatti/Veyron", 2));
+		data.Add(new TagCloudData("Hindustan Motors", "http://www.zigwheels.com/newcars/Hindustan-Motors", 10));
 
-                data.Add(new TagCloudData("Honda", "http://www.zigwheels.com/newcars/Honda", 3));
+		data.Add(new TagCloudData("Bentley Continental ", "http://www.zigwheels.com/newcars/Bentley/Continental", 3));
 
-                data.Add(new TagCloudData("Chevrolet Beat", "http://www.zigwheels.com/newcars/Chevrolet/Beat", 7));
+		data.Add(new TagCloudData("BMW 7", "http://www.zigwheels.com/newcars/BMW/7-Series", 4));
 
-                return data;
+		data.Add(new TagCloudData("Bugatti Veyron", "http://www.zigwheels.com/newcars/Bugatti/Veyron", 2));
 
-             }
+		data.Add(new TagCloudData("Honda", "http://www.zigwheels.com/newcars/Honda", 3));
+
+		data.Add(new TagCloudData("Chevrolet Beat", "http://www.zigwheels.com/newcars/Chevrolet/Beat", 7));
+
+		return data;
+
+	 }
 
 }    
 
@@ -180,17 +180,13 @@ Assign the Datasource and Query property values to bind the remote data. Map the
 
 {% highlight c# %}
 
-
-
 protected void Page_Load(object sender, EventArgs e)
 
-        {
+{
 
-            this.tagcloud.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/";
+	this.tagcloud.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/";
 
-        }
-
-
+}
 
 {% endhighlight %}
 

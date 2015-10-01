@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TreeMap-Elements
+title: TreeMap Elements | TreeMap | ASP.NET | Syncfusion
 description: treemap elements
 platform: aspnet
 control: TreeMap
@@ -15,7 +15,7 @@ TreeMap contains various elements such as,
 * Headers
 * Labels
 
-## Legend
+### Legend
 
 You can set the color value of leaf nodes using TreeMapLegend. This legend is appropriate only for the TreeMap whose leaf nodes are colored using RangeColorMapping.
 
@@ -25,7 +25,7 @@ You can set ShowLegend propery value to “True” to enable or disable legend v
 
 You can decide the size of the legend icons by setting IconWidth and IconHeight properties of the TreeMapLegend property avail in TreeMap.
 
-## Label for Legend
+### Label for Legend
 
 You can customize the labels of the legenditem using LegendLabel property of RangeColorMapping. 
 
@@ -33,12 +33,12 @@ You can customize the labels of the legenditem using LegendLabel property of Ran
 
 {% highlight c# %}
 
-  protected void Page_Load(object sender, EventArgs e)
+protected void Page_Load(object sender, EventArgs e)
 
-	{
-		this.treemap.DataSource = TreeMapPopulationData.GetData();
+{
+    this.treemap.DataSource = TreeMapPopulationData.GetData();
 
-	}
+}
 
 {% endhighlight %}
 
@@ -52,7 +52,7 @@ You can customize the labels of the legenditem using LegendLabel property of Ran
 
         <LeafItemSettings LabelPath = "Country"></LeafItemSettings>
 
-         <TreeMapRangeColorMappings>
+        <TreeMapRangeColorMappings>
 
              <ej:TreeMapRangeColorMapping Color = "#77D8D8" Legendlabel = "1% Growth" From = "0" To = "1"></ej:TreeMapRangeColorMapping>
 
@@ -72,24 +72,25 @@ You can customize the labels of the legenditem using LegendLabel property of Ran
 
     </ej:Treemap>
 
-    </div>
+</div>
 	
 {% endhighlight %}
 
  ![](TreeMap-Elements_images/TreeMap-Elements_img1.png)
 
 
-## Header
+### Header
 
 You can set headers for each level by setting the ShowHeader propery of the each TreeMap levels. The HeaderHeight property helps to set the height of the header and Group path value determines the header value. You can customize the default header appearance by setting the HeaderTemplate of the TreeMap levels.
 
+{% tabs %}
 {% highlight c# %}
 
- protected void Page_Load(object sender, EventArgs e)
+protected void Page_Load(object sender, EventArgs e)
 
-	{
-		this.treemap.DataSource = TreeMapPopulationData.GetData();
-	}
+{
+    this.treemap.DataSource = TreeMapPopulationData.GetData();
+}
 
 {% endhighlight %}
 
@@ -126,26 +127,24 @@ You can set headers for each level by setting the ShowHeader propery of the each
     </div> 
 
 {% endhighlight %}
-
+{% endtabs %}
 
  ![](TreeMap-Elements_images/TreeMap-Elements_img2.png) 
 
-## Label
+### Label
 
 You can also set labels for the leaf nodes by setting the ShowLabels property as true. Group path value is displayed as a label for leaf nodes. You can customize the default label appearance by setting the LabelTemplate of the TreeMap levels.
 
+{% tabs %}
 {% highlight c# %}
 
+protected void Page_Load(object sender, EventArgs e)
 
-  protected void Page_Load(object sender, EventArgs e)
+{
 
-        {
+    this.treemap.DataSource = TreeMapPopulationData.GetData();
 
-            this.treemap.DataSource = TreeMapPopulationData.GetData();
-
-
-
-        }
+}
 
 {% endhighlight %}
 
@@ -179,8 +178,9 @@ You can also set labels for the leaf nodes by setting the ShowLabels property as
 
     </ej:Treemap>
 
-    </div>
+</div>
 	
 {% endhighlight %}
+{% endtabs %}
 
 ![](TreeMap-Elements_images/TreeMap-Elements_img3.png) 

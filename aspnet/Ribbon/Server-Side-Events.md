@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server-Side-Events
+title: Server Side Events | Ribbon | ASP.NET Webforms | Syncfusion
 description: server side events
 platform: aspnet
 control: Ribbon
@@ -9,7 +9,7 @@ documentation: ug
 
 # Server Side Events
 
-The server side events for the _Ribbon_ control are as follows.
+The server side events for the Ribbon control are as follows.
 
 
 <table>
@@ -53,7 +53,7 @@ Arguments:
 </ol></td></tr>
 </table>
 
-The following code example demonstrates how to handle the _TabSelect_event to get the selected tab information.
+The following code example demonstrates how to handle the TabSelect event to get the selected tab information.
 
 {% highlight html %}
 

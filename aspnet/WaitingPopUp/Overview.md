@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | WaitingPopup | ASP.NET | Syncfusion
 description: overview
 platform: aspnet
 control: WaitingPopup
@@ -12,7 +12,7 @@ documentation: ug
 The Essential ASP.NET WaitingPopup control is a visual element that provides support for displaying a pop-up indicator over a 
 target area and to prevent the end user’s interaction with the target area while loading.
 
-## Key Features
+### Key Features
 
 * Custom text: Supports custom text inside the pop-up panel.
 * Template: Supports including HTML content instead of the default image.

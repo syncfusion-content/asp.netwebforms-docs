@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basic-Settings
+title: Basic Settings | LinearGauge | ASP.NET Webforms | Syncfusion
 description: basic settings
 platform: aspnet
 control: Linear Gauge

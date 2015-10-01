@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ticks
+title: Ticks | CircularGauge | ASP.NET Webforms | Syncfusion
 description: ticks
 platform: aspnet
 control: Circular Gauge

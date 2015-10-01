@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Use-NHibernate-with-Grid
+title: Use NHibernate with Grid | Grid | ASP.NET Webforms | Syncfusion
 description: use nhibernate with grid
 platform: aspnet
 control: Grid
@@ -19,6 +19,7 @@ You can populate the Grid with data obtained by using NHibernate. The UrlAdaptor
 
 The Grid initialization is as follows.
 
+{% tabs %}
 
  {% highlight html %}
 
@@ -211,6 +212,8 @@ public class DTO
 
 
  {% endhighlight %}
+ 
+ {% endtabs %}
 
 
 The SessionFactory used by the application is as follows.

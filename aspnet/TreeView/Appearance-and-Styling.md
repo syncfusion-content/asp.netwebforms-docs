@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Appearance and Styling | TreeView | ASP.NET | Syncfusion
 description: appearance and styling
 platform: aspnet
 control: TreeView
 documentation: ug
 ---
 
-## Appearance and Styling
+# Appearance and Styling
 
 ### Theme
 
@@ -145,8 +145,6 @@ In the ASPX page, add elements to configure TreeView.
 
 </ej:TreeView>
 
-
-
 {% endhighlight %}
 
 
@@ -159,17 +157,17 @@ Define CSS class for customizing the TreeView.
 
 .customCss
 
-    {
+{
 
-        background-color: #E0E0E0; /* Old browsers */
+    background-color: #E0E0E0; /* Old browsers */
 
-        color: white;
+    color: white;
 
-        border: 1px solid transparent;
+    border: 1px solid transparent;
 
-        border-image: initial;
+    border-image: initial;
 
-    }
+}
 
 
 
@@ -299,8 +297,6 @@ In the ASPX page, add elements to configure TreeView.
 
 </ej:TreeView>
 
-
-
 {% endhighlight %}
 
 
@@ -422,8 +418,6 @@ In the ASPX page, add elements to configure TreeView.
     </Nodes>
 
 </ej:TreeView>
-
-
 
 {% endhighlight %}
 

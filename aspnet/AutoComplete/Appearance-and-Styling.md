@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Appearance and Styling | AutoComplete | ASP.NET Webforms | Syncfusion
 description: appearance and styling
 platform: aspnet
 control: AutoComplete

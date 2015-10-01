@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server-Side-Events
+title: Server Side Events | Menu | ASP.NET Webforms | Syncfusion
 description: server side events
 platform: aspnet
 control: Menu

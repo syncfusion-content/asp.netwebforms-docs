@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Tooltip-Support
+title: Tooltip Support | ListBox | ASP.NET Webforms | Syncfusion
 description: tooltip support
 platform: aspnet
-control: Control Name undefined
+control: ListBox
 documentation: ug
 ---
 
@@ -13,6 +13,7 @@ The following steps explain you the configuration of tooltip properties in ListB
 
 In an ASPX page, add an element to configure ListBox.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -102,7 +103,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 Output of the above steps.
 

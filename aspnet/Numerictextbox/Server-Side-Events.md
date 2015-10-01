@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server-Side-Events
+title: Server Side Events | NumericTextbox | ASP.NET Webforms | Syncfusion
 description: server side events
 platform: aspnet
 control: NumericTextbox

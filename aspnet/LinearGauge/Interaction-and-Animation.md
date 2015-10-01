@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interaction-and-Animation
+title: Interaction and Animation | LinearGauge | ASP.NET Webforms | Syncfusion
 description: interaction and animation
 platform: aspnet
 control: Linear Gauge

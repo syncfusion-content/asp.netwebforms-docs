@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Booklets
+title: Booklets | PDF | ASP.NET | Syncfusion
 description: booklets
 platform: aspnet
-control: PDF
+control: pdf
 documentation: ug
 ---
 
@@ -16,19 +16,28 @@ For example, assume that you have a 13-page document. Creating a booklet of the 
 
 ![](Booklets_images/Booklets_img1.jpeg)
 
+
+
 ![](Booklets_images/Booklets_img2.jpeg)
+
+
+
+
 
 ![](Booklets_images/Booklets_img3.jpeg)
 
-###  Pages Printed and Folded into New Booklet
-
-PdfBookletCreator class is used for creating Booklets. The following code example illustrates how to create the Booklet.
-
-{% highlight c# %}
 
 
+### Pages Printed and Folded into New Booklet
+
+PdfBookletCreator class is used for creating Booklets. The following code example illustrates how to create the 
+Booklet.
 
 
+
+{% tabs %}
+  
+{% highlight C# %}
 
 //Loads a PDF document.
 
@@ -44,11 +53,7 @@ doc.Save("Sample.pdf");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
-
+{% highlight VB %}
 
 'Loads a PDF document.
 
@@ -63,12 +68,11 @@ Dim doc As PdfDocument = PdfBookletCreator.CreateBooklet(ldoc, New SizeF(500, 50
 doc.Save("Sample.pdf")
 
 {% endhighlight %}
-
+{% endtabs %}
 The following code example illustrates the overloads of the CreateBooklet method.
 
-{% highlight c# %}
 
-
+{% highlight C# %}
 
 CreateBooklet(PdfLoadedDocument, SizeF);
 
@@ -82,17 +86,16 @@ CreateBooklet(String, String, SizeF, Boolean);
 
 {% endhighlight %}
 
+
 You can also apply margins to the booklets at the time of creating the booklet by using one of the preceding overloads.
 
  The following code example illustrates how to create a booklet with the following overload: CreateBooklet (PdfLoadedDocument, SizeF, Boolean, PdfMargins).
 
 
 
-{% highlight c# %}
-
-
-
-
+{% tabs %}
+ 
+{% highlight C# %}
 
 //Loads a PDF document.
 
@@ -112,12 +115,9 @@ PdfDocument doc = PdfBookletCreator.CreateBooklet(ldoc, new SizeF(500, 500), tru
 
 doc.Save("Sample.pdf");
 
-{% endhighlight c# %}
+{% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 'Loads a PDF document.
 
@@ -137,5 +137,6 @@ Dim doc As PdfDocument = PdfBookletCreator.CreateBooklet(ldoc, New SizeF(500, 50
 
 doc.Save("Sample.pdf")
 
-
 {% endhighlight %}
+
+{% endtabs %} 

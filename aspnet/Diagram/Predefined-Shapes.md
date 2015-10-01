@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Predefined-Shapes
+title: Predefined Shapes | Diagram | ASP.NET Webforms | Syncfusion
 description: predefined shapes
 platform: aspnet
 control: Diagram
@@ -41,7 +41,8 @@ The list of basic shapes are as follows.
 
  ![](Predefined-Shapes_images/Predefined-Shapes_img1.png) 
 
-_Basic Shapes_
+Basic Shapes
+{:.caption} 
 
 ### Flow Shape
 
@@ -67,7 +68,8 @@ The list of flow shapes are as follows.
 
 ![](Predefined-Shapes_images/Predefined-Shapes_img2.png) 
 
-_Flow Shapes_
+Flow Shapes
+{:.caption} 
 
 ### BPMN Shape
 
@@ -86,7 +88,8 @@ The shapes are listed as follows.
 
  ![](Predefined-Shapes_images/Predefined-Shapes_img3.png) 
 
-_BPMN Shapes_
+BPMN Shapes
+{:.caption} 
 
 The BPMN shapes and its types are explained as follows.
 
@@ -112,7 +115,7 @@ The following code example illustrates how to create an event in BPMN shape.
 
 {% endhighlight %}
 
-_Events_ 
+Events 
 
 <table>
 <tr>
@@ -135,10 +138,10 @@ Non-Interrupting</td></tr>
 <tr>
 <td>
 End Event</td><td>
-             -----</td></tr>
+-----</td></tr>
 </table>
 
-_Representation of different BPMN events_ 
+Representation of different BPMN events
 
 <table>
 <tr>
@@ -175,7 +178,7 @@ End</td><td>
 </td></tr>
 </table>
 
-_Representation of event trigger states_
+Representation of event trigger states
 
 <table>
 <tr>
@@ -264,7 +267,7 @@ node.Shapes = BPMNShapes.Gateway;
 
 {% endhighlight %}
 
-_Types of Gateway_
+Types of Gateway
 
 <table>
 <tr>
@@ -310,7 +313,7 @@ There are two types in activities .They are listed as follows.
 1. Task - Occurs within a process and it is not broken down to finer level of detail.
 2. Subprocess - Occurs within a process broken down to finer level of detail.
 
-_Activity Type_
+Activity Type
 
 <table>
 <tr>
@@ -361,7 +364,8 @@ The different activities in the BPMN shape are listed as follows.
 
    ![](Predefined-Shapes_images/Predefined-Shapes_img23.png) 
 
-   _Loop_
+   Loop
+   {:.caption} 
 
 2. Tasks
 
@@ -369,7 +373,8 @@ The different activities in the BPMN shape are listed as follows.
 
    ![](Predefined-Shapes_images/Predefined-Shapes_img24.png) 
 
-   _Tasks_
+   Tasks
+   {:.caption} 
 
 3. Compensation
 
@@ -377,19 +382,22 @@ The different activities in the BPMN shape are listed as follows.
 
    ![](Predefined-Shapes_images/Predefined-Shapes_img25.png) 
 
-   _Compensation_
+   Compensation
+   {:.caption} 
 
 4. Call
 
    ![](Predefined-Shapes_images/Predefined-Shapes_img26.png) 
 
-   _Call_
+   Call
+   {:.caption} 
 
 5. Ad-Hoc
 
    ![](Predefined-Shapes_images/Predefined-Shapes_img27.png) 
 
-   _Ad-Hoc_
+   Ad-Hoc
+   {:.caption} 
 
 6. Boundary
 
@@ -397,7 +405,8 @@ The different activities in the BPMN shape are listed as follows.
 
    ![](Predefined-Shapes_images/Predefined-Shapes_img28.png) 
 
-   _Boundary_
+   Boundary
+   {:.caption} 
 
 #### Data
 
@@ -431,5 +440,6 @@ node.Shapes = BPMNShapes.DataSource;
 
 ![](Predefined-Shapes_images/Predefined-Shapes_img29.png) 
 
-_Data_
+Data
+{:.caption} 
 

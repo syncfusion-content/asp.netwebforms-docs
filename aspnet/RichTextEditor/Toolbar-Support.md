@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbar-Support
+title: Toolbar Support | RichTextEditor | ASP.NET Webforms | Syncfusion
 description: toolbar support
 platform: aspnet
 control: RichTextEditor

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout-Panel
+title: Layout Panel | Diagram | ASP.NET Webforms | Syncfusion
 description: layout panel
 platform: aspnet
 control: Diagram
@@ -18,7 +18,7 @@ There are two types of layout panels.
 
 The following properties are used to align the child element on the Group. This property is applicable to all panels.
 
-_Group properties_
+Group properties
 
 <table>
 <tr>
@@ -176,7 +176,8 @@ private Node CreateNode(string name, int marginTop, int marginLeft, string color
 
  ![](Layout-Panel_images/Layout-Panel_img1.png) 
 
-_Canvas Panel_
+Canvas Panel
+{:.caption} 
 
 ## Stack panel
 
@@ -267,4 +268,5 @@ private Node CreateNode(string name, string color, HorizontalAlignment alignment
  ![](Layout-Panel_images/Layout-Panel_img2.png)
 
 
-_Stack Panel containing three nodes_
+Stack Panel containing three nodes
+{:.caption} 

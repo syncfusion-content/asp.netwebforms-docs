@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bar-Pointers
+title: Bar Pointers | LinearGauge | ASP.NET Webforms | Syncfusion
 description: bar pointers
 platform: aspnet
 control: Linear Gauge

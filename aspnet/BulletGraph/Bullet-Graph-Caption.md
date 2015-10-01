@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bullet-Graph-Caption
+title: Bullet Graph Caption | Barcode | ASP.NET Webforms | Syncfusion
 description: bullet graph caption
 platform: aspnet
 control: BulletGraph	

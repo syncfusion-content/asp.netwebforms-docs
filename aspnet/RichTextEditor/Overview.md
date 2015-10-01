@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | RichTextEditor | ASP.NET Webforms | Syncfusion
 description: overview
 platform: aspnet
 control: RichTextEditor
@@ -15,7 +15,7 @@ RichTextEditor (RTE) control enables you to visually edit HTML content. It enabl
 
 ## Key Feature
 
-* ToolBar Support:-Provides the tool bar support, it’s also customizable.
+* ToolBar Support: Provides the tool bar support, it’s also customizable.
 
 	* Formatting Tool – Left, right, center, and justify
 	* Undo & Redo

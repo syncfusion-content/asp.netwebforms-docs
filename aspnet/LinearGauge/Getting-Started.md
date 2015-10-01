@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | LinearGauge | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: Linear Gauge
@@ -18,7 +18,8 @@ This section briefly explains on how to create a Linear Gauge control for your a
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
-_Analog thermometer_
+Analog thermometer
+{:.caption}
 
 ## Create a Linear Gauge
 
@@ -177,7 +178,8 @@ Run the above code to get the following output.
 
 ![](Getting-Started_images/Getting-Started_img6.png)
 
-_Linear gauge with pointers_
+Linear gauge with pointers
+{:.caption}
 
 
 

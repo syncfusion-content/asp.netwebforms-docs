@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Load-on-Demand-support
+title: Load on Demand support | ListBox | ASP.NET Webforms | Syncfusion
 description: load-on-demand support 
 platform: aspnet
-control: Control Name undefined
+control: ListBox
 documentation: ug
 ---
 
@@ -15,6 +15,7 @@ The following steps explain you the behaviour of Load-onDemand support in ListBo
 
 In an ASPX page, add an element to configure ListBox.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -78,7 +79,7 @@ function itemRequested(args) {
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 Output of the above steps.
 

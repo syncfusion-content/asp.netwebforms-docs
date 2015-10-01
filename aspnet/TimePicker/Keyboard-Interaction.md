@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard-Interaction
+title: Keyboard Interaction | TimePicker | ASP.NET | Syncfusion
 description: keyboard interaction
 platform: aspnet
 control: TimePicker
@@ -13,9 +13,9 @@ You can use Keyboardshortcut keys as an alternative to the mouse on using TimePi
 
 <table>
 <tr>
-<td>
-Shortcut Key</td><td>
-Description</td></tr>
+<th>
+Shortcut Key</th><th>
+Description</th></tr>
 <tr>
 <td>
 {{'[Access key](http://en.wikipedia.org/wiki/Access_key)' | markdownify }} + j</td><td>
@@ -39,13 +39,13 @@ Decrements the value.</td></tr>
 </table>
 
 
-## When popup is open
+### When popup is open
 
 <table>
 <tr>
-<td>
-Shortcut Key</td><td>
-Description</td></tr>
+<th>
+Shortcut Key</th><th>
+Description</th></tr>
 <tr>
 <td>
 Up</td><td>
@@ -72,13 +72,7 @@ In the ASPX page, include the following TimePicker control and enable keyboard i
 
 {% highlight html %}
 
-
-
 <ej:TimePicker ID="time" runat="server"></ej:TimePicker>
-
-
-
-
 
 {% endhighlight %}
 
@@ -88,23 +82,21 @@ In the ASPX page, include the following TimePicker control and enable keyboard i
 
 <script type="text/javascript">
 
-$(function () {
+    $(function () {
 
-      $(document).on("keydown", function (e) {
+         $(document).on("keydown", function (e) {
 
-           if (e.altKey && e.keyCode === 74) { // j- key code.
+               if (e.altKey && e.keyCode === 74) { // j- key code.
 
-                 $("#<%= time.ClientID %>").focus();
+                     $("#<%= time.ClientID %>").focus();
 
-     }
+          }
 
-});
+       });
 
     });
 
-  </script>
-
-
+</script>
 
 {% endhighlight %}
 

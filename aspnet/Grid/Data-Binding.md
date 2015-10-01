@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding
+title: Data Binding | Grid | ASP.NET Webforms | Syncfusion
 description: data binding
 platform: aspnet
 control: Grid
@@ -13,7 +13,7 @@ documentation: ug
 
 Grid data source can be set List collection and local datasource. It has full support for List binding and local datasource binding binding. 
 
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -110,6 +110,7 @@ public partial class _Default : System.Web.UI.Page
 
 {% endhighlight %}
 
+{% endtabs %}
 
 Result of the above code example.
 

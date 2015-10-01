@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | TreeView | ASP.NET | Syncfusion
 description: getting started
 platform: aspnet
 control: TreeView
@@ -41,7 +41,7 @@ Add the following code to the corresponding design page for rendering the Split
 
             </ej:SplitPane >
 
- </ej:splitter>
+   </ej:splitter>
 
 </div>
 
@@ -119,7 +119,7 @@ Add TreeView initialization inside the Splitter section.
 
                     <div>
 
-< ej:TreeView ID="Mailbox" runat="server">
+                        < ej:TreeView ID="Mailbox" runat="server">
 
                         </ ej:TreeView>
 
@@ -193,27 +193,27 @@ public class TreeIconsDataSource
 
     }
 
-//Treeview data source should have Id, ParentId and Text as mandatory
+    //Treeview data source should have Id, ParentId and Text as mandatory
 
     public int ID { get; set; }
 
-// ParentId takes the value of the parent nodes I
+    // ParentId takes the value of the parent nodes I
 
     public int ParentID { get; set; }
 
-//Text to be displayed in the treeview node
+    //Text to be displayed in the treeview node
 
     public string Text { get; set; }
 
-//Set to true if node has children
+    //Set to true if node has children
 
     public string HasChild { get; set; }
 
-//Set to true if node to be expanded initially
+    //Set to true if node to be expanded initially
 
     public string Expanded { get; set; }
 
-//Image icon for nodes taken from the sprite css classes
+    //Image icon for nodes taken from the sprite css classes
 
     public string SpriteCssClass { get; set; }
 
@@ -257,13 +257,11 @@ public class TreeIconsDataSource
 
 protected void Page_Load(object sender, EventArgs e)
 
- {
+{
 
    this.Mailbox.DataSource = new TreeIconsDataSource().GetTreeIconItems().ToList();
 
- }
-
-
+}
 
 {% endhighlight %}
 
@@ -277,17 +275,15 @@ Add the following code in the Splitter section to render the TreeView in the
 
 <div class="splitdiv">
 
-<%--Map the corresponding TreeView Fields to DataSource items--%>                 
+    <%--Map the corresponding TreeView Fields to DataSource items--%>                 
 
-<ej:TreeView ID="Mailbox" runat="server" DataSourceID="ObjectDataSource1"DataTextField="Text" DataIdField="ID"
+    <ej:TreeView ID="Mailbox" runat="server" DataSourceID="ObjectDataSource1"DataTextField="Text" DataIdField="ID"
 
-        DataParentIdField="ParentID" DataHasChildField="HasChild"DataExpandedField="Expanded">
+            DataParentIdField="ParentID" DataHasChildField="HasChild"DataExpandedField="Expanded">
 
-</ej:TreeView>
+    </ej:TreeView>
 
 </div> 
-
-
 
 {% endhighlight %}
 
@@ -436,8 +432,6 @@ You can show the Sprite image icons in TreeView loaded inside the <styles>�
 
 </style>
 
-
-
 {% endhighlight %}
 
 Add the following code in the Splitter section to render the TreeView in the right side pane.
@@ -454,9 +448,7 @@ Add the following code in the Splitter section to render the TreeView in the
 
      </ej:TreeView>
 
-  </div>                    
-
-
+</div>                    
 
 {% endhighlight %}
 
@@ -476,15 +468,13 @@ To rename the mail folders, set AllowEditing property to “true”. You can a
 
 <div class="splitdiv">                             
 
-<ej:TreeView ID="Mailbox" runat="server" DataSourceID="ObjectDataSource1"DataTextField="Text" DataIdField="ID"
+    <ej:TreeView ID="Mailbox" runat="server" DataSourceID="ObjectDataSource1"DataTextField="Text" DataIdField="ID"
 
-        DataParentIdField="ParentID" DataHasChildField="HasChild"DataExpandedField="Expanded" DataSpriteCssField="SpriteCssClass"AllowEditing="true">
+            DataParentIdField="ParentID" DataHasChildField="HasChild"DataExpandedField="Expanded" DataSpriteCssField="SpriteCssClass"AllowEditing="true">
 
-</ej:TreeView>
+    </ej:TreeView>
 
 </div>
-
-
 
 {% endhighlight %}
 
@@ -518,8 +508,6 @@ Execute the following code example to Drag and Drop the nodes anywhere within 
 
 </div> 
 
-
-
 {% endhighlight %}
 
 ### Configure Events for the TreeView
@@ -544,8 +532,6 @@ When you click on the Mailbox folder item, the corresponding navigation action i
 
 </div>
 
-
-
 {% endhighlight %}
 
 Initialize the script section to validate editing and select operation.
@@ -556,7 +542,7 @@ Initialize the script section to validate editing and select operation.
 
         function validateFolder(args) {
 
-<%--write your code here for other folder creation process.--%>
+        <%--write your code here for other folder creation process.--%>
 
             if (args.newText === "") <%--Validate the modified text of mailfolder.-- %>
 
@@ -572,7 +558,7 @@ Initialize the script section to validate editing and select operation.
 
         function treeClicked(args) {
 
-<%--write your code here for other process on selecting tree nodes.-- %>
+        <%--write your code here for other process on selecting tree nodes.-- %>
 
             $(".mailHead").html(args.value);
 
@@ -581,8 +567,6 @@ Initialize the script section to validate editing and select operation.
         }
 
 </script>
-
-
 
 {% endhighlight %}
 
@@ -660,11 +644,11 @@ Initialize the Context Menu in the script section to create new folder and del
 
         var nodeIndex = 1, treeviewObj, selectedNode;
 
-<%--Refer to the code for Tree click event and node editing validation--%>
+        <%--Refer to the code for Tree click event and node editing validation--%>
 
         function beforeOpen(args) {
 
-<%--creating the treeview object before the context menu opens with the selected node--%>
+        <%--creating the treeview object before the context menu opens with the selected node--%>
 
         treeviewObj =$("#LayoutSection_ControlsSection_outersplitter_ctl00_Mailbox").data("ejTreeView");<%--Creating the treeview object--%>
 
@@ -690,7 +674,7 @@ Initialize the Context Menu in the script section to create new folder and del
 
             if (args.events.ID == "New") {
 
-<%--creating the new node in the treeview by using addNode method--%>
+                <%--creating the new node in the treeview by using addNode method--%>
 
 
 
@@ -702,7 +686,7 @@ Initialize the Context Menu in the script section to create new folder and del
 
             else if (args.events.ID == "Delete") {
 
-<%--Deleting the existing node in the treeview--%>
+                <%--Deleting the existing node in the treeview--%>
 
                 treeviewObj.removeNode(selectedNode);
 

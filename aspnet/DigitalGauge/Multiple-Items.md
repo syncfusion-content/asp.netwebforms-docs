@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multiple-Items
+title: Multiple Items | DigitalGauge | ASP.NET Webforms | Syncfusion
 description: multiple items 
 platform: aspnet
 control: Digital Gauge
@@ -110,6 +110,7 @@ Execute the above code example to render the DigitalGauge as follows.
 ![](Multiple-Items_images/Multiple-Items_img1.png)
 
 
-_Figure 36: Digital Gauge control with multiple items_
+Digital Gauge control with multiple items
+{:.caption} 
 
 

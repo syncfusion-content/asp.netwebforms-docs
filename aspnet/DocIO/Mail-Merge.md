@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mail-Merge
+title: Mail Merge | DocIO | ASP.NET Webforms | Syncfusion
 description: mail merge
 platform: aspnet
 control: DocIO

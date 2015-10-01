@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server-Side-Events
+title: Server Side Events | TimePicker | ASP.NET | Syncfusion
 description: server side events
 platform: aspnet
 control: TimePicker
@@ -40,17 +40,15 @@ In the ASPX page, add the TimePicker control to configure the TimePicker events.
 
 {% highlight c# %}
 
-
-
 protected void time_Select(object sender, Syncfusion.JavaScript.Web.TimePickerEventArgs e)
 
 {
 
-//e.EventType – Event Name
+	//e.EventType – Event Name
 
-//e.Arguments – Contains keys and values for Event and Args
+	//e.Arguments – Contains keys and values for Event and Args
 
-//e.Value – selected time value.
+	//e.Value – selected time value.
 
 }
 

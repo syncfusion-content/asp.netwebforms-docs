@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Character-Set-Customization
+title: Character Set Customization | Captcha | ASP.NET Webforms | Syncfusion
 description: character set customization
 platform: aspnet
 control: Captcha

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Image-with-Contents
+title: Image with Contents | Rotator | ASP.NET Webforms | Syncfusion
 description: image with contents
 platform: aspnet
 control: Rotator

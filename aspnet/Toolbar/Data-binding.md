@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-binding
+title: Data binding | Toolbar | ASP.NET | Syncfusion
 description: data binding
 platform: aspnet
 control: Toolbar
@@ -96,7 +96,7 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 {% highlight html %}
 
-    <ej:Toolbar  ID="toolbarcontent"  runat="server" Width="300px" DataIdField="Id" DataTooltipTextField="Tooltip" DataSpriteCssClassField="Css"></ej:Toolbar >
+<ej:Toolbar  ID="toolbarcontent"  runat="server" Width="300px" DataIdField="Id" DataTooltipTextField="Tooltip" DataSpriteCssClassField="Css"></ej:Toolbar >
 
 {% endhighlight %}
 
@@ -106,73 +106,73 @@ Define local DataSource elements by using the Key and Text fields in code behind
 
 public class ToolData
 
-        {
+{
 
-            public string Id
+	public string Id
 
-            {
+	{
 
-                get;
+		get;
 
-                set;
+		set;
 
-            }
-
-
-
-            public string Css
-
-            {
-
-                get;
-
-                set;
-
-            }
+	}
 
 
 
-            public string Tooltip
+	public string Css
 
-            {
+	{
 
-                get;
+		get;
 
-                set;
+		set;
 
-            }
-
-        }
+	}
 
 
 
-        protected void Page_Load(object sender, EventArgs e)
+	public string Tooltip
 
-        {
+	{
 
-            List<ToolData> data = new List<ToolData>();
+		get;
 
-            data.Add(new ToolData {Id ="1", Css = "ToolbarItems LeftAlign_tool", Tooltip = "left"});
+		set;
 
-            data.Add(new ToolData {Id ="2", Css="ToolbarItems CenterAlign_tool", Tooltip="centre"});
+	}
 
-            data.Add(new ToolData {Id="3", Css="ToolbarItems RightAlign_tool", Tooltip="right"});
-
-            data.Add(new ToolData {Id="4", Css="ToolbarItems Justify_tool",Tooltip="justify"});
-
-            data.Add(new ToolData {Id="5", Css="ToolbarItems Bold_tool", Tooltip="bold"});
-
-            data.Add(new ToolData {Id="6", Css="ToolbarItems Italic_tool", Tooltip="italic"});
-
-            data.Add(new ToolData {Id="7", Css="ToolbarItems StrikeThrough_tool", Tooltip="strike"});
-
-            data.Add(new ToolData {Id="8", Css = "ToolbarItems Underline_tool", Tooltip = "underline"});
+}
 
 
 
-            this.toolbarcontent.DataSource = data;
+protected void Page_Load(object sender, EventArgs e)
 
-        }	
+{
+
+	List<ToolData> data = new List<ToolData>();
+
+	data.Add(new ToolData {Id ="1", Css = "ToolbarItems LeftAlign_tool", Tooltip = "left"});
+
+	data.Add(new ToolData {Id ="2", Css="ToolbarItems CenterAlign_tool", Tooltip="centre"});
+
+	data.Add(new ToolData {Id="3", Css="ToolbarItems RightAlign_tool", Tooltip="right"});
+
+	data.Add(new ToolData {Id="4", Css="ToolbarItems Justify_tool",Tooltip="justify"});
+
+	data.Add(new ToolData {Id="5", Css="ToolbarItems Bold_tool", Tooltip="bold"});
+
+	data.Add(new ToolData {Id="6", Css="ToolbarItems Italic_tool", Tooltip="italic"});
+
+	data.Add(new ToolData {Id="7", Css="ToolbarItems StrikeThrough_tool", Tooltip="strike"});
+
+	data.Add(new ToolData {Id="8", Css = "ToolbarItems Underline_tool", Tooltip = "underline"});
+
+
+
+	this.toolbarcontent.DataSource = data;
+
+}	
 
 
 
@@ -317,14 +317,11 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 {% highlight html %}
 
+<%--Refer Local data sections for styles--%>
 
+<ej:Toolbar ID="toolbarcontent" runat="server" Orientation="Horizontal" DataIdField="Id" DataSpriteCssClassField="IconCss" DataTooltipTextField="ToolTip" DataSourceID="SqlDataSource1" Width="600px"></ej:Toolbar>
 
-   <%--Refer Local data sections for styles--%>
-
-        <ej:Toolbar ID="toolbarcontent" runat="server" Orientation="Horizontal" DataIdField="Id" DataSpriteCssClassField="IconCss" DataTooltipTextField="ToolTip" DataSourceID="SqlDataSource1" Width="600px"></ej:Toolbar>
-
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\TreeEntity.mdf;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT * FROM [ToolBarItems]"></asp:SqlDataSource>
-
+<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\TreeEntity.mdf;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT * FROM [ToolBarItems]"></asp:SqlDataSource>
 
 {% endhighlight %}
 
@@ -349,8 +346,7 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 <ej:Toolbar ID="toolbarcontent" runat="server" Width="300px" DataSourceID="ObjectDataSource1" DataTooltipTextField="Tooltip" DataIdField="Id" DataSpriteCssClassField="Css"></ej:Toolbar>
 
-       <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetToolItems" TypeName="ToolData"></asp:ObjectDataSource>
-
+<asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetToolItems" TypeName="ToolData"></asp:ObjectDataSource>
 
 {% endhighlight %}
 
@@ -437,7 +433,7 @@ public class ToolData
 
             data.Add(new ToolData { Id = "8", Css = "ToolbarItems Underline_tool", Tooltip = "underline" });        
 
-return data;
+            return data;
 
     }
 
@@ -467,13 +463,11 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/App_Data/XMLTool.xml"></asp:XmlDataSource >
 
-
 {% endhighlight %}
 
 
 
 {% highlight xml %}
-
 
 <?xml version="1.0" encoding="utf-8" ?>
 
@@ -529,8 +523,6 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 </Items>
 
-
-
 {% endhighlight %}
 
 
@@ -547,14 +539,11 @@ The LinqDataSource is used to bind the Toolbar data via Linq to Sql. The propert
 
 {% highlight html %}
 
-
-
 <%--Refer Local data sections for styles--%>
 
 <ej:Toolbar ID="toolbarcontent" runat="server" Orientation="Horizontal" DataIdField="Id" DataSpriteCssClassField="IconCss" DataTooltipTextField="ToolTip" DataSourceID="LinqDataSource1" Width="600px"></ej:Toolbar>
 
 <asp:LinqDataSource ID="LinqDataSource1" runat="server" ContextTypeName=" DataClasses1DataContext" EntityTypeName="" TableName="ToolBarItems"> </asp:LinqDataSource>
-
 
 {% endhighlight %}
 

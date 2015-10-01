@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Insert-Image
+title: Insert Image | RichTextEditor | ASP.NET Webforms | Syncfusion
 description: insert image
 platform: aspnet
 control: RichTextEditor
@@ -21,9 +21,8 @@ Description of the images is mandatory.
 
 ![](Insert-Image_images/Insert-Image_img1.png)
 
-
-
-_Insert image popup_
+Insert image popup
+{:.caption} 
 
 ![](Insert-Image_images/Insert-Image_img2.png)
 

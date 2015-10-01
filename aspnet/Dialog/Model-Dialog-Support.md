@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Model-Dialog-Support
+title: Model Dialog Support | Dialog | ASP.NET Webforms | Syncfusion
 description: model dialog support
 platform: aspnet
 control: Dialog

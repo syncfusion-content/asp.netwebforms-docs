@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend
+title: Legend | Chart | ASP.NET Webforms | Syncfusion
 description: legend
 platform: aspnet
 control: Chart

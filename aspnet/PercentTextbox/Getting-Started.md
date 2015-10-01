@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | PercentageTextBox | ASP.NET | Syncfusion
 description: getting started
 platform: aspnet
 control: PercentageTextBox
@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-## Create your first Editor in ASP.NET
+### Create your first Editor in ASP.NET
 
 The Essential ASP.NET WebForms Editors control includes numeric, percentage, currency and maskedit textbox controls. You can learn how to useASP.NET Textboxes controls in the Electricity bill calculator Application from the following documentation. This guides you to use the wide range of Textbox functionalities to complete this application.
 
@@ -17,7 +17,7 @@ The Essential ASP.NET WebForms Editors control includes numeric, percentage, c
 
 
 
-## Create Textboxes Controls
+### Create Textboxes Controls
 
 You can create a WebForms Project and add necessary Dll’s and Scripts with the help of the given [WebForms-Getting Started](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc) Documentation.
 
@@ -125,10 +125,6 @@ Add necessary Textbox control and initialize the corresponding Textboxes cont
 
     </div>
 
-
-
-
-
 {% endhighlight %}
 
 
@@ -139,109 +135,105 @@ The following styles are added to arrange the Textboxes.  You can add the foll
 
 {% highlight css %}
 
-        .ele-icon
+.ele-icon
 
-        {
+{
 
-            display: inline-block;
+    display: inline-block;
 
-            background-image:url(http://js.syncfusion.com/UG/Web/Content/electricity.png);
+    background-image:url(http://js.syncfusion.com/UG/Web/Content/electricity.png);
 
-            background-repeat: no-repeat;
+    background-repeat: no-repeat;
 
-            background-size: contain;
+    background-size: contain;
 
-            height: 50px;
+    height: 50px;
 
-            width: 50px;
+    width: 50px;
 
-            margin-left: 50px;
+    margin-left: 50px;
 
-            margin-top: 15px;
+    margin-top: 15px;
 
-        }
+}
 
-        .ele-txt
+.ele-txt
 
-        {
+{
 
-            display: inline-block;
+    display: inline-block;
 
-            font-size: 20px;
+    font-size: 20px;
 
-            font-weight: bolder;
+    font-weight: bolder;
 
-            height: 50px;
+    height: 50px;
 
-            position: relative;
+    position: relative;
 
-            text-align: center;
+    text-align: center;
 
-            top: -20px;
+    top: -20px;
 
-        }
+}
 
-        .editors
+.editors
 
-        {
+{
 
-            max-width: 400px;
+    max-width: 400px;
 
-            border: 2px solid #DDDDDD;
+    border: 2px solid #DDDDDD;
 
-            margin:100px 0 0 100px;
+    margin:100px 0 0 100px;
 
-        }
+}
 
         .editors td
 
-        {
+{
 
-            padding-bottom:5px;
+    padding-bottom:5px;
 
-        }
-
-
-
-        .editors table
-
-        {
-
-            border: 0px;
-
-            padding-left: 50px;
-
-        }
-
-        .paybill
-
-        {
-
-            margin: 18px 0px 10px 244px;
-
-        }
-
-        table.editors
-
-        {
-
-            margin:0 0 0 61px;
-
-        }
-
-        .editors label
-
-        {
-
-            display: block;
-
-            width: 130px;
-
-        }
+}
 
 
 
+.editors table
 
+{
+
+    border: 0px;
+
+    padding-left: 50px;
+
+}
+
+.paybill
+
+{
+
+    margin: 18px 0px 10px 244px;
+
+}
+
+table.editors
+
+{
+
+    margin:0 0 0 61px;
+
+}
+
+.editors label
+
+{
+
+    display: block;
+
+    width: 130px;
+
+}
 
 {% endhighlight %}
 
@@ -253,7 +245,7 @@ Execute the code example to render a Textboxes control as follows
 
 
 
-## Set the MinValue, MaxValue and value in Textboxes
+### Set the MinValue, MaxValue and value in Textboxes
 
 In the above mentioned use case scenario, you can set the MinValue, MaxValue and Value in Numeric, percentage and Currency text boxes for maintaining the range in Textboxes controls. You can also enter the values between the ranges that are set as default. You can get the phone number from the user in the Maskedit control by using the MaskFormat property. You can get the decimal values for CurrencyTextBox control by using DecimalPlaces property. The following code example illustrates how to achieve this scenario.
 
@@ -355,8 +347,6 @@ In the above mentioned use case scenario, you can set the MinValue, MaxValue 
 
     </div>
 
-
-
 {% endhighlight %}
 
 
@@ -367,7 +357,7 @@ Execute the above code example to render the resultant output of the above steps
 
 
 
-## Set the Strict Mode Option
+### Set the Strict Mode Option
 
 You can set the “EnableStrictMode” option to restrict entering values defined outside the range. The following code example illustrates how to set strict mode option.
 
@@ -473,15 +463,13 @@ You can set the “EnableStrictMode” option to restrict entering values defi
 
     </div>
 
-
-
 {% endhighlight %}
 
 
 
 Execute the above code example and you can see that it restricts entering a value exceeding the MinValue and MaxValue range mentioned in the numeric textbox.
 
-## Set Calculation process with Textboxes Controls
+### Set Calculation process with Textboxes Controls
 
 You can use events to calculate the total amount and display the value. This is achieved by using the Click event in the button control. The calculation steps are written in the call back function of Click event button.
 
@@ -493,7 +481,7 @@ To customize the button, set the ContentType as TextAndImage to include the 
 
         // Please refer the table format for textboxes customization
 
-  <div class="paybill">
+        <div class="paybill">
 
             <ej:Button ID="Button" runat="server" Text="Calculate" Type="Button"Size="Small" ContentType="TextAndImage" PrefixIcon="e-calender"ClientSideOnClick="calculateBill">
 
@@ -501,11 +489,7 @@ To customize the button, set the ContentType as TextAndImage to include the 
 
         </div>
 
-
-
-    </div>
-
-
+  </div>
 
 {% endhighlight %}
 
@@ -513,7 +497,7 @@ To customize the button, set the ContentType as TextAndImage to include the 
 
 {% highlight js %}
 
-        function calculateBill() {
+function calculateBill() {
 
              // Declares Necessary variable creation
 
@@ -540,10 +524,6 @@ To customize the button, set the ContentType as TextAndImage to include the 
         alert("The amount $" + (netamunt + sTax) + " has been sent as message to " + cusmob.model.value + ".");
 
     } 
-
-
-
-
 
 {% endhighlight %}
 

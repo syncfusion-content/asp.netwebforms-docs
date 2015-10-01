@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Dialog | ASP.NET Webforms | Syncfusion
 description: overview
 platform: aspnet
 control: Dialog

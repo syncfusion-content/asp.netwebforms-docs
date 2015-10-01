@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Appearance and Styling | ToggleButton | ASP.NET | Syncfusion
 description: appearance and styling
 platform: aspnet
-control: Toggle Button
+control: ToggleButton
 documentation: ug
 ---
 
@@ -88,10 +88,6 @@ In the ASPX page, add the following button elements to configure Toggle Button.
 
 </table>
 
-
-
-
-
 {% endhighlight %}
 
 Configure the CSS styles to apply on buttons.
@@ -100,83 +96,79 @@ Configure the CSS styles to apply on buttons.
 
 {% highlight css %}
 
-    .e-togglebutton.customCss1
+.e-togglebutton.customCss1
 
-    {
+{
 
-        background-color: #121111;
+	background-color: #121111;
 
-    }
+}
 
-    .e-togglebutton.customCss2
+.e-togglebutton.customCss2
 
-    {
+{
 
-        background-color: #94bbd5;
+	background-color: #94bbd5;
 
-    }
+}
 
-    .e-togglebutton.customCss3
+.e-togglebutton.customCss3
 
-    {
+{
 
-        background-color: #f3533c;
+	background-color: #f3533c;
 
-    }
+}
 
-    .e-togglebutton.customCss4
+.e-togglebutton.customCss4
 
-    {
+{
 
-        background-color: #d1eeed;
+	background-color: #d1eeed;
 
-    }
+}
 
-    .e-togglebutton.customCss5
+.e-togglebutton.customCss5
 
-    {
+{
 
-        background-color: #deb66e;
+	background-color: #deb66e;
 
-    }
+}
 
-    /* Customize the button image & text color */
+/* Customize the button image & text color */
 
-    .e-togglebutton.customCss1.e-btn.e-select .e-icon, .e-togglebutton.customCss1.e-btn.e-select .e-btntxt
+.e-togglebutton.customCss1.e-btn.e-select .e-icon, .e-togglebutton.customCss1.e-btn.e-select .e-btntxt
 
-    {
+{
 
-        color: #94bbd5;
+	color: #94bbd5;
 
-    }
+}
 
-    .e-togglebutton.customCss2.e-btn.e-select .e-icon, .e-togglebutton.customCss2.e-btn.e-select .e-btntxt
+.e-togglebutton.customCss2.e-btn.e-select .e-icon, .e-togglebutton.customCss2.e-btn.e-select .e-btntxt
 
-    {
+{
 
-        color: #121111;
+	color: #121111;
 
-    }
+}
 
-    .e-togglebutton.customCss3.e-btn.e-select .e-icon, .e-togglebutton.customCss3.e-btn.e-select .e-btntxt
+.e-togglebutton.customCss3.e-btn.e-select .e-icon, .e-togglebutton.customCss3.e-btn.e-select .e-btntxt
 
-    {
+{
 
-        color: #cef6f7;
+	color: #cef6f7;
 
-    }
+}
 
-    .e-togglebutton.customCss5.e-btn.e-select .e-icon, .e-togglebutton.customCss5.e-btn.e-select .e-btntxt
+.e-togglebutton.customCss5.e-btn.e-select .e-icon, .e-togglebutton.customCss5.e-btn.e-select .e-btntxt
 
-    {
+{
 
-        color: #534f4f;
+	color: #534f4f;
 
-    }
-
-
-
-
+}
 
 {% endhighlight %}
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pointers
+title: Pointers | OLAPGauge | ASP.NET Webforms | Syncfusion
 description: pointers
 platform: aspnet
 control: OLAP Gauge

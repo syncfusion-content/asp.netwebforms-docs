@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ranges
+title: Ranges | OLAPGauge | ASP.NET Webforms | Syncfusion
 description: ranges
 platform: aspnet
 control: OLAP Gauge

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | DataManager | ASP.NET Webforms | Syncfusion
 description: getting started 
 platform: aspnet
 control: DataManager
@@ -22,6 +22,8 @@ This section briefly describes how to make a connection to WCF “Northwind” O
 To define connection to data source, you can use DataManager control. The data source can be local or remote. Local data source is the local list items and remote data source is any web services. 
 
 The local data is set as data source by using the following code example.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -72,6 +74,8 @@ public partial class DataManager : System.Web.UI.Page
     }
 
 {% endhighlight %}
+
+{% endtabs %}
 
 In this application, as you have web service for NorthWind database, you can assign the web service URL link to the URL property of DataManager, and you can enable crossDomain to retrieve data from another domain.
 

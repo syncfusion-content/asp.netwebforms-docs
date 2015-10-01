@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Searching
+title: Searching | DataManager | ASP.NET Webforms | Syncfusion
 description: searching
 platform: aspnet
 control: DataManager

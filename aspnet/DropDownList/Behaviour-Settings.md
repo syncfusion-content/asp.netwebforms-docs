@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Behaviour-Settings
+title: Behaviour Settings | DropDownList | ASP.NET Webforms | Syncfusion
 description: behaviour settings
 platform: aspnet
 control: DropDownList
@@ -209,6 +209,7 @@ The following step explains the configuration of the SelectedItems property in t
 
 In an ASPX page, add an element to configure the DropDownList.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -270,7 +271,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 Output of the above step.
 

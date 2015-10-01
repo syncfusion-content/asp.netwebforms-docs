@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RTL
+title: RTL | Toolbar | ASP.NET | Syncfusion
 description: rtl
 platform: aspnet
 control: Toolbar
@@ -17,13 +17,9 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 {% highlight html %}
 
+<%--Refer Local Data section for style and data bound for toolbar items.--%>
 
-
-   <%--Refer Local Data section for style and data bound for toolbar items.--%>
-
-    <ej:Toolbar ID="toolbarcontent" runat="server" Height="100px" DataIdField="Id" DataTooltipTextField="Tooltip" DataSpriteCssClassField="Css" EnableRTL="true"></ej:Toolbar>
-
-
+<ej:Toolbar ID="toolbarcontent" runat="server" Height="100px" DataIdField="Id" DataTooltipTextField="Tooltip" DataSpriteCssClassField="Css" EnableRTL="true"></ej:Toolbar>
 
 {% endhighlight %}
 

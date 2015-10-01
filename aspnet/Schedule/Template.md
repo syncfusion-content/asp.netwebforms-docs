@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Template
+title: Template | Schedule | ASP.NET Webforms | Syncfusion
 description: template
 platform: aspnet
 control: Schedule
@@ -168,13 +168,14 @@ $.views.helpers({ format: _getImages });
 
 ![](Template_images/Template_img1.png)
 
-Figure 82: schedule with template.
+schedule with template.
+{:.caption} 
 
 ## ResourceHeader Template
 
 * The resources are provided with rich template support, so that the customizations are done easily. You can add the resource header template to the Schedule control as follows.
 
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -229,6 +230,8 @@ public string color { set; get; }
 }
 
 {% endhighlight %}
+
+{% endtabs %}
 
 {% highlight text %}
 

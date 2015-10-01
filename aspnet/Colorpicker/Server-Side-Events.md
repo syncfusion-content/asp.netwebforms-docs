@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server-Side-Events
+title: Server Side Events | ColorPicker | ASP.NET Webforms | Syncfusion
 description: server side events
 platform: aspnet
 control: ColorPicker
@@ -51,7 +51,7 @@ protected void onSelect(object Sender, EventArgs e)
 
 {
 
-     Response.Write("Serverside event has been triggered");
+    Response.Write("Serverside event has been triggered");
 
 }
 

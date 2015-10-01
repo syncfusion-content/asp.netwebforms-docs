@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ranges-and-Frames
+title: Ranges and Frames | CircularGauge | ASP.NET Webforms | Syncfusion
 description:  ranges and frames
 platform: aspnet
 control: Circular Gauge

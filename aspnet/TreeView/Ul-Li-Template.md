@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ul-Li-Template
+title: Ul Li Template | TreeView | ASP.NET | Syncfusion
 description: ul-li template
 platform: aspnet
 control: TreeView
 documentation: ug
 ---
 
-## Ul-Li Template
+# Ul-Li Template
 
 The TreeView supports template technology, allowing you to completely customize the element’s appearance and layout. The nodes are provided with rich template support, so that the customizations are done in an easier manner. The look of the TreeView default elements are completely modified by creating a specific template, defining how an element is going to be rendered. You can customize the TreeView appearance, and give it a new look or style. 
 
@@ -120,8 +120,6 @@ In the ASPX page, add an element to configure TreeView.
     </Nodes>
 
 </ej:TreeView>
-
-
 
 {% endhighlight %}
 

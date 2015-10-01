@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Orientation
+title: Orientation | Toolbar | ASP.NET | Syncfusion
 description: orientation
 platform: aspnet
 control: Toolbar
@@ -26,15 +26,9 @@ This property sets the Toolbar in horizontal orientation.
 
 {% highlight html %}
 
-
-
 <%--Refer Local Data section for style and data bound for toolbar items.--%>
 
     <ej:Toolbar  ID="toolbarcontent" runat="server" Width="300px" Orientation="Horizontal" DataIdField="Id" DataTooltipTextField="Tooltip" DataSpriteCssClassField="Css"></ej:Toolbar >
-
-
-
-
 
 {% endhighlight %}
 
@@ -56,13 +50,9 @@ This property sets the Toolbar in vertical orientation. Add the following code e
 
 {% highlight html %}
 
-
-
 <%--Refer Local Data section for style and data bound for toolbar items.--%>
 
 <ej:Toolbar ID="toolbarcontent" runat="server" Orientation="Vertical" DataIdField="Id" DataTooltipTextField="Tooltip" DataSpriteCssClassField="Css"></ej:Toolbar>
-
-
 
 {% endhighlight %}
 

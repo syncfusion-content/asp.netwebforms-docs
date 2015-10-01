@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Marker-Pointers
+title: Marker Pointers | LinearGauge | ASP.NET Webforms | Syncfusion
 description: marker pointers
 platform: aspnet
 control: Linear Gauge
@@ -373,7 +373,7 @@ It is possible to change the dimension of the marker pointer. Dimensions availab
 
 
 
-Multiple Marker Pointers
+### Multiple Marker Pointers
 
 Linear Gauge can contain multiple pointers on it. You can use any combination and any number of pointers in a gauge. That is, a gauge can contain any number of marker pointer and any number of bar pointers. Refer the following code example containing multiple marker pointers.
 
