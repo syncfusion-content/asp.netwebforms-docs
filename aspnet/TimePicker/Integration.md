@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integration
+title: Integration | TimePicker | ASP.NET | Syncfusion
 description: integration
 platform: aspnet
 control: TimePicker
@@ -115,7 +115,7 @@ The following code example depicts you the way to bind data to the TimePicker co
 
     </script>
 
-<style type="text/css" class="cssStyles">
+    <style type="text/css" class="cssStyles">
 
         .control {
 
@@ -125,7 +125,7 @@ The following code example depicts you the way to bind data to the TimePicker co
 
         }
 
-#time_timewidget, #timectrl_timewidget {
+    #time_timewidget, #timectrl_timewidget {
 
             width: 84%;
 
@@ -137,13 +137,11 @@ The following code example depicts you the way to bind data to the TimePicker co
 
         }
 
-</style>
+    </style>
 
 </body>
 
 </html>
-
-
 
 {% endhighlight %}
 
@@ -184,7 +182,7 @@ The following example depicts the way to bind data to the TimePicker control thr
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
 
-<!-- Style sheet for default theme (flat azure) -->
+    <!-- Style sheet for default theme (flat azure) -->
 
     <link href=" [http://cdn.syncfusion.com/{{site.releaseversion}} /js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)" rel="stylesheet" />
 
@@ -200,7 +198,7 @@ The following example depicts the way to bind data to the TimePicker control thr
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
 
-  <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>    
+    <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>    
 
 
 
@@ -228,13 +226,13 @@ The following example depicts the way to bind data to the TimePicker control thr
 
                 <div class="cols-sample-area">                                  
 
-<div class="frame">
+                    <div class="frame">
 
                         <div class="control" style="width: 136px;">
 
-<label style="width: 130px;">Select Show Time </label>
+                             <label style="width: 130px;">Select Show Time </label>
 
-                            <input id="time" type="text" data-bind="ejTimePicker:{value:tvalue }"/>
+                             <input id="time" type="text" data-bind="ejTimePicker:{value:tvalue }"/>
 
                         </div>
 
@@ -242,41 +240,41 @@ The following example depicts the way to bind data to the TimePicker control thr
 
                 </div>
 
-<div id="sampleProperties">
+                <div id="sampleProperties">
 
-<div class="prop-grid">
+                   <div class="prop-grid">
 
-<div class="row">
+                      <div class="row">
 
-<div class="col-md-3">Time Value</div>
+                         <div class="col-md-3">Time Value</div>
 
-<div class="col-md-3">
+                         <div class="col-md-3">
 
-<input type="text" id="timeValue" class="input ejinputtext" value="" data-bind="value: tvalue" />
+                             <input type="text" id="timeValue" class="input ejinputtext" value="" data-bind="value: tvalue" />
 
-</div>
+                         </div>
 
-<div class="col-md-3">Selected time</div>
+                         <div class="col-md-3">Selected time</div>
 
-<div class="col-md-3">
+                         <div class="col-md-3">
 
-<input type="button" class="e-btn inputBtn" id="gettime" value="Get Time" />
+                            <input type="button" class="e-btn inputBtn" id="gettime" value="Get Time" />
 
-   				</div>
+   				         </div>
 
-                    </div>		
+                      </div>		
 
-</div>
+                  </div>
 
-</div>
+           </div>
 
-    </div>
+       </div>
 
     </div>
 
     <script type="text/javascript">
 
-window.viewModel = {
+       window.viewModel = {
 
             //TimePicker
 
@@ -304,11 +302,9 @@ window.viewModel = {
 
     </script>
 
-    </body>
+ </body>
 
-    </html>
-
-
+</html>
 
 {% endhighlight %}
 

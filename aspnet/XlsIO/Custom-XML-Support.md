@@ -1,21 +1,20 @@
 ---
 layout: post
-title: Custom-XML-Support
+title: Custom XML Support | XlsIO | ASP.NET | Syncfusion
 description: custom xml support
 platform: aspnet
-control: XlsIO	
+control: Xlsio
 documentation: ug
 ---
 
 # Custom XML Support
 
-### Add XML
+Add XML
 
 
+{% tabs %}
 
-{% highlight c# %}
-
-
+{% highlight C# %}  
 
 
 string fileName = "output.xlsx";
@@ -54,10 +53,10 @@ book.Close();
 
 excelEngine.Dipose();
 
+
 {% endhighlight %}
 
-{% highlight vbnet %}
-
+{% highlight vbnet %} 
 
 Dim fileName As String = "output.xlsx"
 
@@ -96,12 +95,13 @@ book.Close()
 excelEngine.Dipose()
 
 {% endhighlight %}
+{% endtabs %}
 
-### Read XML
+##Read XML
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %} 
 
 
 
@@ -140,8 +140,7 @@ System.Text.Encoding.Default.GetString(xmlData);
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
+{% highlight vbnet %} 
 
 
 Dim fileName As String = "output.xlsx"
@@ -176,4 +175,6 @@ Dim xmlData() As Byte = customXmlPart.Data
 
 System.Text.Encoding.Default.GetString(xmlData)
 
+
 {% endhighlight %}
+{% endtabs %}

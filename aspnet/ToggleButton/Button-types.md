@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Button-types
+title: Button types | Toggle Button | ASP.NET | Syncfusion
 description: button types
 platform: aspnet
-control: Toggle Button
+control: ToggleButton
 documentation: ug
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Behaviour-Settings
+title: Behaviour Settings | TimePicker | ASP.NET | Syncfusion
 description: behaviour settings
 platform: aspnet
 control: TimePicker
@@ -21,9 +21,7 @@ In the ASPX page, include the following TimePicker control code example.
 
 {% highlight html %}
 
-  <ej:TimePicker ID="time" Value="10:10 AM" runat="server"></ej:TimePicker>
-
-
+<ej:TimePicker ID="time" Value="10:10 AM" runat="server"></ej:TimePicker>
 
 {% endhighlight %}
 
@@ -48,8 +46,6 @@ In the ASPX page, include the following TimePicker control code example.
 {% highlight html %}
 
 <ej:TimePicker ID="Timepick" Enabled="true" runat="server"></ej:TimePicker>
-
-
 
 {% endhighlight %}
 
@@ -81,9 +77,7 @@ In the ASPX page, include the following TimePicker control code example.
 
 {% highlight html %}
 
-  <ej:TimePicker ID="time" ReadOnly="true" runat="server"></ej:TimePicker>
-
-
+<ej:TimePicker ID="time" ReadOnly="true" runat="server"></ej:TimePicker>
 
 {% endhighlight %}
 
@@ -121,9 +115,7 @@ In the ASPX page, include the following TimePicker control and configure the Loc
 
 {% highlight html %}
 
-     <ej:TimePicker ID="time" Locale="zh-CN" runat="server"></ej:TimePicker>
-
-
+<ej:TimePicker ID="time" Locale="zh-CN" runat="server"></ej:TimePicker>
 
 {% endhighlight %}
 
@@ -145,11 +137,7 @@ In the ASPX page, include the following TimePicker control code example to enabl
 
 {% highlight html %}
 
-
-
 <ej:TimePicker ID="time" ShowRoundedCorner="true" runat="server"> </ej:TimePicker>
-
-
 
 {% endhighlight %}
 

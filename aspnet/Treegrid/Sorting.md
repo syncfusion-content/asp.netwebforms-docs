@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting
+title: Sorting | TreeGrid | ASP.NET | Syncfusion
 description: sorting
 platform: aspnet
 control: TreeGrid
@@ -11,7 +11,7 @@ documentation: ug
 
 The TreeGrid control has built-in support for Sorting one or more columns.
 
-## Sorting Columns
+### Sorting Columns
 
 TreeGrid allows the items to be sorted in ascending or descending order based on the selected column by enabling the AllowSorting option in TreeGrid control. The following code example shows you how to enable Sorting in TreeGrid control.
 
@@ -25,26 +25,17 @@ TreeGrid allows the items to be sorted in ascending or descending order based o
 
 </ej:TreeGrid>
 
-
-
-
-
 {% endhighlight %}
 
 
 
-## Multicolumn sorting
+### Multicolumn sorting
 
 TreeGrid allows you to sort multiple columns by clicking the desired column headers while holding the CTRL key. The following code example shows you how to enable Multicolumn sorting in TreeGrid control.
 
 
+{% highlight html %}
 
-
-
-
-
-
-{% highlight xml %}
    <ej:TreeGrid runat="server" ID="TreeGridControlSorting"
 
              AllowSorting="true"

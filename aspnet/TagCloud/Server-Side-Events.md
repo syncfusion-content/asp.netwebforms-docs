@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server-Side-Events
+title: Server Side Events | TagCloud | ASP.NET | Syncfusion
 description: server side events
 platform: aspnet
 control: TagCloud
@@ -34,7 +34,9 @@ In the ASPX page, add the TagCloud control to configure the TagCloud events.
 
 <ej:TagCloud ID="tagcloud" runat="server" OnClick="tagcloud_Click"
 
- DataTextField="CustomerID" Query="ej.Query().from('Orders').take(10)" DataFrequencyField="EmployeeID"></ej:TagCloud>
+   DataTextField="CustomerID" Query="ej.Query().from('Orders').take(10)" DataFrequencyField="EmployeeID">
+
+</ej:TagCloud>
 
 {% endhighlight %}
 
@@ -42,23 +44,23 @@ In the ASPX page, add the TagCloud control to configure the TagCloud events.
 
 protected void Page_Load(object sender, EventArgs e)
 
- {
-    this.tagcloud.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/";
+{
+	this.tagcloud.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/";
 
- }
+}
 
 protected void tagcloud_Click(object sender, Syncfusion.JavaScript.Web.TagCloudEventArgs e)
 
-    {
+{
 
-//e.EventType – Event Name
+	//e.EventType – Event Name
 
-//e.Arguments – Contains keys and values for Event and Args.
+	//e.Arguments – Contains keys and values for Event and Args.
 
-//e.Value – It holds current selected Item value.
+	//e.Value – It holds current selected Item value.
 
-//e. URL – It holds ULR value of selected Item.
+	//e. URL – It holds ULR value of selected Item.
 
-    }
+}
 
 {% endhighlight %}

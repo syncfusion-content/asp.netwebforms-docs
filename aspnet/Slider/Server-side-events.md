@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server-side-events
+title: Server side events | Slider | ASP.NET | Syncfusion
 description: server-side events
 platform: aspnet
 control: Slider
@@ -39,7 +39,7 @@ Value="30" OnChangeEvent="sliderEvents_ChangeEvent"></ej:Slider>
 
 protected void sliderEvents_ChangeEvent(object sender, Syncfusion.JavaScript.Web.SliderEventArgs e)
 
-	{
+{
 
 	 // e.HandleNo - returns the slider index
 
@@ -49,6 +49,6 @@ protected void sliderEvents_ChangeEvent(object sender, Syncfusion.JavaScript.Web
 
 
 
-	}
+}
 
 {% endhighlight %}

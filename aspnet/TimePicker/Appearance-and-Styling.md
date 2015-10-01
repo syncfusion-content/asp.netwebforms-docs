@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Appearance and Styling | TimePicker | ASP.NET | Syncfusion
 description: appearance and styling
 platform: aspnet
 control: TimePicker
@@ -23,8 +23,6 @@ In the ASPX page, include the following TimePicker control code example to speci
 
 <ej:TimePicker ID="time" Height="50" Width="150" runat="server"> </ej:TimePicker>
 
-
-
 {% endhighlight %}
 
 
@@ -44,8 +42,6 @@ You can use PopupHeight and PopupWidth properties to customize the TimePicker wi
 {% highlight html %}
 
 <ej:TimePicker ID="time" PopupHeight="50" PopupWidth="150" runat="server"> </ej:TimePicker>
-
-
 
 {% endhighlight %}
 
@@ -91,8 +87,6 @@ The following code example renders the TimePicker control with the customized st
 
 <ej:TimePicker ID="timepicker" runat="server" CssClass="custom"></ej: TimePicker>
 
-
-
 {% endhighlight %}
 
 
@@ -103,15 +97,11 @@ Add the following customized style in a page. In the following CSS style, exitin
 
 {% highlight css %}
 
-    .custom  .e-active {
+.custom  .e-active {
 
-      background-color: #293CB4;
+  background-color: #293CB4;
 
-    }
-
-
-
-
+}
 
 {% endhighlight %}
 

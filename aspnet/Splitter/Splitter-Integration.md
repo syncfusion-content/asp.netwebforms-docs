@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Splitter-Integration
+title: Splitter Integration | Splitter | ASP.NET | Syncfusion
 description: splitter integration
 platform: aspnet
 control: Splitter
@@ -18,8 +18,6 @@ The following steps explain the implementation of Splitter integration.
 In an ASPX page, define the Splitter control with two panes. The first pane has the TreeView content and the next one contains content that is related to TreeView.
 
 {% highlight html %}
-
-
 
 <ej:Splitter Height="280" Width="501" ID="outersplitter" runat="server">
 
@@ -124,18 +122,11 @@ In an ASPX page, define the Splitter control with two panes. The first pane h
         </ej:SplitPane>
 
 
-
     </ej:Splitter>
-
-
 
 {% endhighlight %}
 
-
-
 {% highlight js %}
-
-
 
        function treeClicked(sender, args) {
 
@@ -148,8 +139,6 @@ In an ASPX page, define the Splitter control with two panes. The first pane h
             }
 
         }
-
-
 
 {% endhighlight %}
 

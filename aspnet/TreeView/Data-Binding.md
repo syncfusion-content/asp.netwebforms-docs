@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Data-Binding
+title: Data Binding | TreeView | ASP.NET | Syncfusion
 description: data binding 
 platform: aspnet
 control: TreeView
 documentation: ug
 ---
 
-## Data Binding 
+# Data Binding 
 
 The TreeView is populated with the node information taken from a data source. The TreeView supports binding data sources containing hierarchical data and supports both local data and remote data, for retrieving data from a specified data source. You can also display the hierarchical data in TreeView. TreeView exposes its specific data-related properties allowing you to specify from which data source field the node information is to be retrieved from.
 
 You can populate TreeView items by using data binding support such as JSON and OData services. 
 
-### Fields
+## Fields
 
 The Field property in TreeView includes the data source fields and it can be set with appropriate values as follows.
 
-### Local Data
+## Local Data
 
 To bind the Local Data to the TreeView control, map the user-defined json data names with its appropriate data source field. You can bind data to TreeView by mapping fields such as dataSource,id, parentId, text, hasChild and expanded. 
 
@@ -25,6 +25,7 @@ The following steps explain how you can bind local data to TreeView.
 
 In the ASPX page, add an element to configure TreeView.          
 
+{% tabs %}
 {% highlight html %}
 
 <%--In the Design page, assign the values for DataTextField, DataIdField, DataParentIdField, DataHasChildField.--%>
@@ -32,8 +33,6 @@ In the ASPX page, add an element to configure TreeView.
 <ej:TreeView ID="treeview" runat="server" DataTextField="Text" DataIdField="ID" DataParentIdField="ParentID" DataHasChildField="HasChild">
 
 </ej:TreeView>
-
-
 
 {% endhighlight %}
 
@@ -177,17 +176,15 @@ public class TreeLocalDataSource
 
 }
 
-
-
 {% endhighlight %}
-
+{% endtabs %}
 
 
 ![](Data-Binding_images/Data-Binding_img1.png) 
 
 
 
-### Remote Data
+## Remote Data
 
 You can bind TreeView to Remote Data by using dataManager and the query in fields is used to retrieve the data. dataManager supports the following types of data-binding: JSON, Web Services, oData. It uses two different classes; ej.DataManager for processing, and ej.Query for serving data. ej.DataManager communicates with data source and ej.Query generates data queries that are read by the dataManager. In the following link, how to create dataManager is explained in full detail.
 
@@ -200,19 +197,14 @@ In the ASPX page, add an element to configure TreeView.
 Define dataManager and assign remote data source to it. Here dataManager gets the remote web service and filters the data by using Query. The select property of ejQuery is used to retrieve the specified columns from the data source.
 
 
-
+{% tabs %}
 {% highlight html %}
 
 <ej:TreeView ID="Treeview" runat="server" DataTextField="CustomerID">
 
 </ej:TreeView>
 
-
-
 {% endhighlight %}
-
-
-
 
 
 {% highlight c# %}
@@ -221,25 +213,23 @@ Define dataManager and assign remote data source to it. Here dataManager gets th
 
 protected void Page_Load(object sender, EventArgs e)
 
-    {
+{
 
-        this.Treeview.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/";
+    this.Treeview.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/";
 
-        this.Treeview.Query = "ej.Query().from('Customers').take(3)";
+    this.Treeview.Query = "ej.Query().from('Customers').take(3)";
 
-    }
-
-
+}
 
 {% endhighlight %}
+{% endtabs %}
+
+
+![](Data-Binding_images/Data-Binding_img2.png) 
 
 
 
-![D:/RESPONSE/UG DOC/remotedata.PNG](Data-Binding_images/Data-Binding_img2.png) 
-
-
-
-### SQL Data
+## SQL Data
 
 TreeView provides extensive data binding support to populate TreeView nodes, so that the values can be mapped to the TreeView fields from an existing SQL data source by using DataSourceID property. 
 
@@ -274,8 +264,6 @@ In the Design page, assign the values for DataTextField, DataIdField, DataParent
 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TreeDBConnectionString %>" SelectCommand="SELECT * FROM [TreeBind]">
 
 </asp:SqlDataSource>
-
-
 
 {% endhighlight %}
 
@@ -431,8 +419,6 @@ namespace ASPWebTreeView
 
 }
 
-
-
 {% endhighlight %}
 
 
@@ -453,8 +439,6 @@ In the Design page, assign the values for DataTextField, DataIdField, DataParent
 
 </asp:ObjectDataSource>
 
-
-
 {% endhighlight %}
 
 
@@ -463,7 +447,7 @@ In the Design page, assign the values for DataTextField, DataIdField, DataParent
 
 
 
-### Linq-to-SQL Data
+## Linq-to-SQL Data
 
 TreeView provides extensive data binding support to populate TreeView nodes, so that the values can be mapped to the TreeView fields from an existing Linq-to-SQL data source by using DataSourceID property. 
 
@@ -499,8 +483,6 @@ DataExpandedField="Expanded">
 
 </asp:LinqDataSource>
 
-
-
 {% endhighlight %}
 
 
@@ -509,7 +491,7 @@ DataExpandedField="Expanded">
 
 
 
-### XML Data
+## XML Data
 
 TreeView provides XML data binding support to populate TreeeView nodes, so that the values can be mapped to the TreeView fields from an existing XML data by using DataSourceID property. 
 
@@ -525,15 +507,13 @@ In the Design page, assign the values for DataTextField, DataParentIdField. In D
 
 <div>
 
-<asp:XmlDataSource ID="XmlDataSource1" runat="server"
+    <asp:XmlDataSource ID="XmlDataSource1" runat="server"
 
-DataFile="~\App_Data\XMLData.xml">
+    DataFile="~\App_Data\XMLData.xml">
 
-</asp:XmlDataSource>
+    </asp:XmlDataSource>
 
 </div>
-
-
 
 {% endhighlight %}
 
@@ -559,33 +539,31 @@ Load the nodes of TreeView in the xml data as follows.
 
   <RootItem Text="Libraries" Url="#">
 
-    <RootItem Text="Documents" Url="#">
+     <RootItem Text="Documents" Url="#">
 
-      <Item Text="My Documents" Url="#"></Item>
+     <Item Text="My Documents" Url="#"></Item>
 
-      <Item Text="Public Documents" Url="#"></Item>
+     <Item Text="Public Documents" Url="#"></Item>
 
-    </RootItem>
+  </RootItem>
 
-    <RootItem Text="Pictures" Url="#">
+  <RootItem Text="Pictures" Url="#">
 
-      <Item Text="My Pictures" Url="#"></Item>
+     <Item Text="My Pictures" Url="#"></Item>
 
-      <Item Text="Public Pictures" Url="#"></Item>
+     <Item Text="Public Pictures" Url="#"></Item>
 
-    </RootItem>
+  </RootItem>
 
-    <RootItem Text="Music" Url="#">
+  <RootItem Text="Music" Url="#">
 
       <Item Text="My Music" Url="#"></Item>
 
       <Item Text="Public Music" Url="#"></Item>
 
-    </RootItem>
-
   </RootItem>
 
-
+  </RootItem>
 
   <RootItem Text="Computer" Expanded="True" Url="#">
 
@@ -598,8 +576,6 @@ Load the nodes of TreeView in the xml data as follows.
   </RootItem>
 
 </items>
-
-
 
 {% endhighlight %}
 

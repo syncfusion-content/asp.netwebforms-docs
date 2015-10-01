@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integration
+title: Integration | TagCloud | ASP.NET | Syncfusion
 description: integration 
 platform: aspnet
 control: TagCloud
@@ -46,11 +46,7 @@ The following example shows the way to bind data to the TagCloud control by usin
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
 
-
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
-
-
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
 
@@ -62,8 +58,6 @@ The following example shows the way to bind data to the TagCloud control by usin
 
     <script src="[http://cdn.syncfusion.com/ {{site.releaseversion}}/js/ej.widget.angular.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js)"></script>
 
-
-
 </head>
 
 <body ng-controller="TagCtrl">
@@ -74,7 +68,7 @@ The following example shows the way to bind data to the TagCloud control by usin
 
     var list = [
 
-{ text: "Google", url: "http://www.google.co.in", frequency: 12 },
+        { text: "Google", url: "http://www.google.co.in", frequency: 12 },
 
         { text: "a2zwebhelp", url: "http://www.a2zwebhelp.com", frequency: 3 },
 
@@ -126,8 +120,6 @@ The following example shows the way to bind data to the TagCloud control by usin
 
 </html>
 
-
-
 {% endhighlight %}
 
 
@@ -167,7 +159,7 @@ The following code example shows the way to bind data to the TagCloud control by
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
 
-<link href="[http://cdn.syncfusion.com/ {{site.releaseversion}}/js/web/flat-lime/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-lime/ej.web.all.min.css)" rel="stylesheet" />
+    <link href="[http://cdn.syncfusion.com/ {{site.releaseversion}}/js/web/flat-lime/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-lime/ej.web.all.min.css)" rel="stylesheet" />
 
     <!--scripts-->
 
@@ -197,23 +189,23 @@ The following code example shows the way to bind data to the TagCloud control by
 
     <div class="content-container-fluid">
 
-            <div class="row">
+        <div class="row">
 
-<div id="techweblist" data-bind="ejTagCloud: { dataSource: dataList, titleText: title }">
-
-</div>
+            <div id="techweblist" data-bind="ejTagCloud: { dataSource: dataList, titleText: title }">
 
             </div>
 
+        </div>
+
     </div>
 
-     <script>
+    <script>
 
 	 $(function () { 
 
-var tagview = [
+     var tagview = [
 
-{ text: "Google", url: "http://www.google.com", frequency: 12 },
+        { text: "Google", url: "http://www.google.com", frequency: 12 },
 
         { text: "a2zwebhelp", url: "http://www.a2zwebhelp.com", frequency: 3 },
 
@@ -249,7 +241,7 @@ var tagview = [
 
         { text: "W3schools", url: "http://www.w3schools.com/", frequency: 2 }
 
-    ];	
+     ];	
 
 			window.viewModel = { 
 
@@ -270,8 +262,6 @@ var tagview = [
 </body>
 
 </html>
-
-
 
 {% endhighlight %}
 

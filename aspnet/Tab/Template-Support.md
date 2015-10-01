@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Template-Support
+title: Template Support | Tab | ASP.NET | Syncfusion
 description: template support
 platform: aspnet
 control: Tab
@@ -19,7 +19,7 @@ In the ASP.NET, you can use the <contentsection> tag to load the contents to the
 
         <ej:TabItem ID="Tabitem1" Text="GARDEN FRESH (Veg)">
 
-<ContentSection>
+            <ContentSection>
 
                 <img src=" http://js.syncfusion.com/demos/web/images/
 
@@ -41,11 +41,11 @@ In the ASP.NET, you can use the <contentsection> tag to load the contents to the
 
         <ej:TabItem ID="Tabitem2" Text="CORN & SPINACH (Veg)">
 
-<ContentSection>
+           <ContentSection>
 
                 <img src=" http://js.syncfusion.com/demos/web/images
 
-          /accordion/corn-and-spinach-05.png" alt="garden-fresh" />
+                /accordion/corn-and-spinach-05.png" alt="garden-fresh" />
 
                 <div class="ingredients">
 
@@ -57,17 +57,17 @@ In the ASP.NET, you can use the <contentsection> tag to load the contents to the
 
                 </div>
 
-</ContentSection>
+           </ContentSection>
 
         </ej:TabItem>
 
         <ej:TabItem ID="Tabitem3" Text="CHICKEN DELITE (Non-veg)">
 
-<ContentSection>
+          <ContentSection>
 
                 <img src=" http://js.syncfusion.com/demos/web/images/
 
-            accordion/chicken-delite.png" alt="garden-fresh" />
+                 accordion/chicken-delite.png" alt="garden-fresh" />
 
                 <div class="ingredients">
 
@@ -86,10 +86,6 @@ In the ASP.NET, you can use the <contentsection> tag to load the contents to the
     </Items>
 
 </ej:Tab>
-
-
-
-
 
 {% endhighlight %}
 ![](Template-Support_images/Template-Support_img1.png) 

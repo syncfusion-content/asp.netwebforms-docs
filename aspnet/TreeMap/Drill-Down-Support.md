@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drill-Down-Support
+title: Drill Down Support | TreeMap | ASP.NET | Syncfusion
 description: drill down support
 platform: aspnet
 control: TreeMap
@@ -11,11 +11,10 @@ documentation: ug
 
 Treemap enables drill down to expose the hierarchy achieved by clicking on a node and this results in enabling the Treemap to move to the next level or sub level and can return back to the normal Treemap view by clicking on the node header. Only a single level of the Treemap is visible at once.
 
-## Enabling Drill Down
+### Enabling Drill Down
 
 Treemap elements can be drilled down by setting the EnableDrillDown property to true. You can view the hierarchy of the Treemap by clicking on the treemap items and can move to the previous level by clicking on the drill down header. The header color can be customized by changing the values in the property DrillDownHeaderColor and the selection color can be done by changing the DrillDownSelectionColor property.
 
-_Table_ _1_: _Drill down Properties_
 
 <table>
 <tr>
@@ -40,16 +39,16 @@ string</td><td>
 Gets or sets a color for highlighting tree map item during drill down.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 protected void Page_Load(object sender, EventArgs e)
 
-        {
+{
 
-            this.treemap.DataSource = TreeMapPopulationData.GetData();
+    this.treemap.DataSource = TreeMapPopulationData.GetData();
 
-        }
+}
 
 {% endhighlight  %}
 
@@ -76,7 +75,8 @@ protected void Page_Load(object sender, EventArgs e)
     </div>
 
 {% endhighlight  %}
+{% endtabs %}
 
-![C:/Users/NitishS/Desktop/Screenshot (106).png](Drill-Down-Support_images/Drill-Down-Support_img1.png) 
+![](Drill-Down-Support_images/Drill-Down-Support_img1.png) 
 
-![DrillDown](Drill-Down-Support_images/Drill-Down-Support_img2.png) 
+![](Drill-Down-Support_images/Drill-Down-Support_img2.png) 

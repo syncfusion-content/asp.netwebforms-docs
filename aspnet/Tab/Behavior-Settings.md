@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Behavior-Settings
+title: Behavior Settings | Tab | ASP.NET | Syncfusion
 description: behavior settings
 platform: aspnet
 control: Tab
@@ -18,8 +18,6 @@ The following code example is used to render the Tab control with Close Button.
 Add the following ASPX for simple Tab creation with Close Button.
 
 {% highlight html %}
-
-
 
 <ej:Tab ID="dishtype" runat="server" ShowCloseButton="true" Width="600px">
 
@@ -52,10 +50,6 @@ Add the following ASPX for simple Tab creation with Close Button.
     </Items>
 
 </ej:Tab>
-
-
-
-
 
 {% endhighlight %}
 
@@ -109,6 +103,7 @@ Add the following ASPX for Tab orientation.
     </Items>
 
 </ej:Tab>
+
 {% endhighlight %}
 
 The following screenshot illustrates the sub Tab with vertical orientation. 

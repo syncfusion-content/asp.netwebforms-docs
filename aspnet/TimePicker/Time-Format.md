@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Time-Format
+title: Time Format | TimePicker | ASP.NET | Syncfusion
 description: time format
 platform: aspnet
 control: TimePicker
@@ -20,8 +20,6 @@ In the ASPX page, include the following TimePicker control and configure the Tim
 {% highlight html %}
 
 <ej:TimePicker ID="time" TimeFormat="hh:mm:ss tt" runat="server"> </ej:TimePicker>
-
-
 
 {% endhighlight %}
 

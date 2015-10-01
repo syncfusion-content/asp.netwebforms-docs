@@ -1,9 +1,9 @@
 ---
 layout: post
-title: RTL-support
+title: RTL support | Toggle Button | ASP.NET | Syncfusion
 description: rtl support
 platform: aspnet
-control: Toggle Button
+control: ToggleButton
 documentation: ug
 ---
 
@@ -20,8 +20,6 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 <ej:ToggleButton ID="ToggleButton_RTL" runat="server" Size="Small" ShowRoundedCorner="true" DefaultText="Play" ActiveText="Pause" ContentType="TextAndImage" DefaultPrefixIcon="e-mediaplay" ActivePrefixIcon="e-mediapause" EnableRTL="true">
 
 </ej:ToggleButton>
-
-
 
 {% endhighlight %}
 

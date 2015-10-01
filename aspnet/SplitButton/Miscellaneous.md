@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Miscellaneous
+title: Miscellaneous | SplitButton | ASP.NET | Syncfusion
 description: miscellaneous
 platform: aspnet
-control: Split Button
+control: SplitButton
 documentation: ug
 ---
 
@@ -19,45 +19,23 @@ In an ASPX page, define the Split Button control. Set the Text property as requi
 
 {% highlight html %}
 
+<div class="page-align">
 
+    <ej:SplitButton ID="SplitButton_Text" runat="server" Text="signin" Size="Small">
 
-    <div class="page-align">
+        <Items>
 
+            <ej:SplitItem Text="User"></ej:SplitItem>
 
+            <ej:SplitItem Text="Guest"></ej:SplitItem>
 
-        <ej:SplitButton ID="SplitButton_Text" runat="server" Text="signin" Size="Small">
+            <ej:SplitItem Text="Admin"></ej:SplitItem>
 
+        </Items>
 
+    </ej:SplitButton>
 
-            <Items>
-
-
-
-                <ej:SplitItem Text="User"></ej:SplitItem>
-
-
-
-                <ej:SplitItem Text="Guest"></ej:SplitItem>
-
-
-
-                <ej:SplitItem Text="Admin"></ej:SplitItem>
-
-
-
-            </Items>
-
-
-
-        </ej:SplitButton>
-
-
-
-    </div>
-
-
-
-
+</div>
 
 {% endhighlight %}
 
@@ -67,17 +45,11 @@ Define the style for the Split Button control.
 
 {% highlight css %}
 
+.spltspan {
 
+	margin-left: 120px;
 
-        .spltspan {
-
-            margin-left: 120px;
-
-        }
-
-
-
-
+}
 
 {% endhighlight %}
 
@@ -97,43 +69,23 @@ In an ASPX page, define the Split Button control. Set the ShowRoundedCorner prop
 
 {% highlight html %}
 
+<div class="page-align">
 
+    <ej:SplitButton ID="SplitButton_RoundedCorner" runat="server" Text="login" ShowRoundedCorner="true" Size="Small">
 
-    <div class="page-align">
+        <Items>
 
+            <ej:SplitItem Text="User"></ej:SplitItem>
 
+            <ej:SplitItem Text="Guest"></ej:SplitItem>
 
-        <ej:SplitButton ID="SplitButton_RoundedCorner" runat="server" Text="login" ShowRoundedCorner="true" Size="Small">
+            <ej:SplitItem Text="Admin"></ej:SplitItem>
 
+        </Items>
 
+    </ej:SplitButton>
 
-            <Items>
-
-
-
-                <ej:SplitItem Text="User"></ej:SplitItem>
-
-
-
-                <ej:SplitItem Text="Guest"></ej:SplitItem>
-
-
-
-                <ej:SplitItem Text="Admin"></ej:SplitItem>
-
-
-
-            </Items>
-
-
-
-        </ej:SplitButton>
-
-
-
-    </div>
-
-
+</div>
 
 {% endhighlight %}
 
@@ -143,17 +95,11 @@ Define the style for the Split Button control.
 
 {% highlight css %}
 
+.spltspan {
 
+	margin-left: 120px;
 
-        .spltspan {
-
-            margin-left: 120px;
-
-        }
-
-
-
-
+}
 
 {% endhighlight %}
 

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Overview
+title: Overview | Scroller | ASP.NET | Syncfusion
 description: overview
 platform: aspnet
-control: Overview
+control: Scroller
 documentation: ug
 ---
 
 # Overview 
 The Essential ASP.NET Scroller control has a sliding document whose position corresponds to a value. The document has text, HTML content or images. You can also customize the Scroller control by resizing the scrolling bar and changing the theme.
 
-## Key Features
+### Key Features
 
 * Height and Width—Set the height and width of the scroll panel.
 * Button Size—Customize the width and height of the buttons (UP, DOWN, RIGHT and LEFT).

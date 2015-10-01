@@ -1,13 +1,13 @@
 ---
 layout: post
-title: RTL
+title: RTL | Scroller | ASP.NET | Syncfusion
 description: rtl
 platform: aspnet
-control: Overview
+control: Scroller
 documentation: ug
 ---
 
-## RTL
+# RTL
 
 EnableRTL API provides right-to-left functionality and features for languages that work in a right-to-left for selecting, editing. Arabic and Hebrew are written from right to left. If you have a working style from right to left, you can use this feature in Scroller. You can achieve this by using the EnableRTL property. The Scroller content text is displayed in a right to left format when you set this property to true. The vertical scrollbar moves from right to left side.
 
@@ -85,23 +85,19 @@ In an ASPXpage, add the following code to render Scroller.
 
 </ej:Scroller>
 
-
-
 {% endhighlight %}
-
-
 
 Define the style for Scroller control
 
 {% highlight css %}
 
-        .sampleContent {
+.sampleContent {
 
-            width: 700px;
+	width: 700px;
 
-            padding: 15px;
+	padding: 15px;
 
-        }
+}
 		
 {% endhighlight %}
 

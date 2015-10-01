@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Server-Side-Events
+title: Server Side Events | TreeView | ASP.NET | Syncfusion
 description: server side events
 platform: aspnet
 control: TreeView
 documentation: ug
 ---
 
-## Server Side Events
+# Server Side Events
 
 You can specify the server side events of TreeView in ASP. To set server side event, you can enable any of the following events.
 
@@ -79,11 +79,11 @@ In the ASPX page, add the following button elements to configure TreeViewevents
 
 <ej:TreeView ID="treeview" runat="server" Height="300px" Width="400px" ShowCheckbox="true" OnNodeChecked="treeview_NodeChecked"
 
-OnNodeSelected="treeView_NodeSelected" OnNodeDropped="treeView_NodeDropped"
+    OnNodeSelected="treeView_NodeSelected" OnNodeDropped="treeView_NodeDropped"
 
-OnInlineEditValidation="treeView_InlineEditValidation" AllowDragAndDrop="true"
+    OnInlineEditValidation="treeView_InlineEditValidation" AllowDragAndDrop="true"
 
-AllowDropChild="true" AllowDropSibling="true" AllowEditing="true">
+    AllowDropChild="true" AllowDropSibling="true" AllowEditing="true">
 
         <Nodes>
 
@@ -209,59 +209,64 @@ AllowDropChild="true" AllowDropSibling="true" AllowEditing="true">
 
 // Add the code in cs page
 
-protected void treeView_NodeChecked(object sender, Syncfusion.JavaScript.Web.TreeViewEventArgs e) {
+protected void treeView_NodeChecked(object sender, Syncfusion.JavaScript.Web.TreeViewEventArgs e)
 
-//e.NodeText – Text value of selected node
+{
 
-//e.NodeID – Id of selected node
+    //e.NodeText – Text value of selected node
 
-//e.Checked – Status of treeview node checkbox 
+    //e.NodeID – Id of selected node
 
-//e.CurrentCheckedNodes – List of treeview current checked nodes
+    //e.Checked – Status of treeview node checkbox 
 
-//e.EventType – Event Name
+    //e.CurrentCheckedNodes – List of treeview current checked nodes
 
-//e.Arguments – Contain keys and values for NodeText,NodeID,Checked and CurrentCheckedNodes
+    //e.EventType – Event Name
 
-}
-
-protected void treeView_NodeSelected(object sender, Syncfusion.JavaScript.Web.TreeViewEventArgs e) {
-
-//e.NodeText – Text value of selected node
-
-//e.NodeID – Id of selected node
-
-//e.EventType – Event Name
-
-//e.Arguments – Contain keys and values for NodeText and NodeID
+    //e.Arguments – Contain keys and values for NodeText,NodeID,Checked and CurrentCheckedNodes
 
 }
 
-protected void treeView_NodeDropped(object sender, Syncfusion.JavaScript.Web.TreeViewEventArgs e) {
+protected void treeView_NodeSelected(object sender, Syncfusion.JavaScript.Web.TreeViewEventArgs e)
+{
 
-//e.NodeText – Text value of selected node
+    //e.NodeText – Text value of selected node
 
-//e.NodeID – Id of selected node
+    //e.NodeID – Id of selected node
 
-//e.TargetNodeDetails – Drop the selected node
+    //e.EventType – Event Name
 
-//e.EventType – Event Name
-
-//e.Arguments – Contain keys and values for NodeText,NodeID and TargetNodeDetails
+    //e.Arguments – Contain keys and values for NodeText and NodeID
 
 }
 
-protected void treeView_InlineEditValidation(object sender, Syncfusion.JavaScript.Web.TreeViewEventArgs e) {
+protected void treeView_NodeDropped(object sender, Syncfusion.JavaScript.Web.TreeViewEventArgs e)
+{
 
-//e.NodeText – Text value of selected node
+    //e.NodeText – Text value of selected node
 
-//e.NodeID – Id of selected node
+    //e.NodeID – Id of selected node
 
-//e.RenamedNode – Edit the selected node
+    //e.TargetNodeDetails – Drop the selected node
 
-//e.EventType – Event Name
+    //e.EventType – Event Name
 
-//e.Arguments – Contain keys and values for NodeText,NodeID and RenamedNode
+    //e.Arguments – Contain keys and values for NodeText,NodeID and TargetNodeDetails
+
+}
+
+protected void treeView_InlineEditValidation(object sender, Syncfusion.JavaScript.Web.TreeViewEventArgs e) 
+{
+
+    //e.NodeText – Text value of selected node
+
+    //e.NodeID – Id of selected node
+
+    //e.RenamedNode – Edit the selected node
+
+    //e.EventType – Event Name
+
+    //e.Arguments – Contain keys and values for NodeText,NodeID and RenamedNode
 
 }
 

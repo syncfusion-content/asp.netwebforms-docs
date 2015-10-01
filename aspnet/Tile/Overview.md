@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Tile | ASP.NET | Syncfusion
 description: overview
 platform: aspnet
 control: Tile

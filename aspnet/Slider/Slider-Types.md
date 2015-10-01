@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Slider-Types
+title: Slider Types | Slider | ASP.NET | Syncfusion
 description: slider types
 platform: aspnet
 control: Slider
@@ -44,7 +44,6 @@ In an ASPX page, define the Slider control and configure the SliderType property
 <ej:Slider ID="BasicSlider" runat="server" Width="500" Value="60" SliderType="MinRange"></ej:Slider>
 
 <ej:Slider ID="RangeSlider" runat="server" Width="500" Values="30,60" SliderType="Range"></ej:Slider>
-
 
 {% endhighlight %}
 

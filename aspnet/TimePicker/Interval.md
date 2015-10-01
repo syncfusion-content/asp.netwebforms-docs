@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interval
+title: Interval | TimePicker | ASP.NET | Syncfusion
 description: interval
 platform: aspnet
 control: TimePicker
@@ -18,8 +18,6 @@ The following code explains you how to change the Time Interval of the TimePicke
 {% highlight html %}
 
 <ej:TimePicker ID="time" Value="09:00 AM" TimeFormat="hh:mm:ss tt" HourInterval="2" MinutesInterval="30" SecondsInterval="20" runat="server"></ej:TimePicker>
-
-
 
 {% endhighlight %}
 

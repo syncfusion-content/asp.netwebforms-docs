@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard-Navigation
+title: Keyboard Navigation | Toolbar | ASP.NET | Syncfusion
 description: keyboard navigation
 platform: aspnet
 control: Toolbar
@@ -59,21 +59,15 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 {% highlight html %}
 
-
-
 <%--Refer Local Data section for style and data bound for toolbar items.--%>
 
-    <ej:Toolbar  ID="toolbarcontent" runat="server" Width="300px" DataIdField="Id" DataTooltipTextField="Tooltip" DataSpriteCssClassField="Css"></ej:Toolbar >
-
-
+<ej:Toolbar  ID="toolbarcontent" runat="server" Width="300px" DataIdField="Id" DataTooltipTextField="Tooltip" DataSpriteCssClassField="Css"></ej:Toolbar >
 
 {% endhighlight %}
 
 
 
 {% highlight js %}
-
-
 
 <script type="text/javascript">
 
@@ -98,8 +92,6 @@ Add the following code example to the corresponding ASPX page to render the Tool
     });
 
 </script>
-
-
 
 {% endhighlight %}
 

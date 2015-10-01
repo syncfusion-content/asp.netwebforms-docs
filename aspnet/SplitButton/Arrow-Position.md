@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Arrow-Position
+title: Arrow Position | SplitButton | ASP.NET | Syncfusion
 description: arrow position
 platform: aspnet
-control: Split Button
+control: SplitButton
 documentation: ug
 ---
 
-## Arrow Position
+# Arrow Position
 
 To provide a good look and feel for the Split Button, position of arrow in the Split Button is important. By using the ArrowPosition property, you can easily customize the position of arrow inside Split Button without using any complex CSS. ArrowPosition property is applicable for both Split Button and Dropdown Button. This property represents the position of arrow with menu content.
 
@@ -91,8 +91,6 @@ In an ASPX page, define the Split Button control and configure the ArrowPosition
     </Items>
 
 </ej:SplitButton>
-
-
 
 {% endhighlight %}
 

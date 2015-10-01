@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Orientation
+title: Orientation | Slider | ASP.NET | Syncfusion
 description: orientation
 platform: aspnet
 control: Slider
@@ -35,13 +35,7 @@ In an ASPX page, define the Slider control and configure the Orientation propert
 
 {% highlight html %}
 
-
-
 <ej:Slider ID="VerticalSlider" runat="server" Height="150" Width="20" Orientation="Vertical"></ej:Slider>
-
-
-
-
 
 {% endhighlight %}
 

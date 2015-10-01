@@ -1,13 +1,13 @@
 ---
 layout: post
-title: RTL-Support
+title: RTL Support | TreeView | ASP.NET | Syncfusion
 description: rtl support
 platform: aspnet
 control: TreeView
 documentation: ug
 ---
 
-## RTL Support
+# RTL Support
 
 TreeView supports right-to-left layout and the node text is displayed in the RTL languages. Arabic and Hebrew are languages written from right to left. When you desire to change the display of TreeView as right to left direction, you can do so by using the EnableRTL property. To enable or disable this option, set the appropriate value for the EnableRTL property. When EnableRTL is enabled, the appearance of the TreeView is displayed in the right to left direction. You can display the TreeView as right to left direction by using this feature.
 
@@ -120,8 +120,6 @@ In the ASPX page, add an element to configure TreeView.
     </Nodes>
 
 </ej:TreeView>
-
-
 
 {% endhighlight %}
 

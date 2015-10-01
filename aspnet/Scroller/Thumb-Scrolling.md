@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Thumb-Scrolling
+title: Thumb Scrolling | Scroller | ASP.NET | Syncfusion
 description: thumb scrolling
 platform: aspnet
-control: Overview
+control: Scroller
 documentation: ug
 ---
 
-## Thumb Scrolling
+# Thumb Scrolling
 
 Normally, the scrollbar position is changed by dragging the scrollbar handle or click the arrows. The Scroller control allows you to pan or drag the scroll content area. To achieve this in your Scroller control, set the EnableTouchScroll set as true_._ In___S_croller control, the default value for EnableTouchScroll is true. When you want to prevent panning or dragging the scroll content area, set EnableTouchScroll to false.
 
@@ -85,8 +85,6 @@ In an ASPXpage, add the following code to render Scroller.
 
 </ej:Scroller>
 
-
-
 {% endhighlight %}
 
 
@@ -95,13 +93,13 @@ Define the style for Scroller control
 
 {% highlight css %}
 
-        .sampleContent {
+.sampleContent {
 
-            width: 700px;
+	width: 700px;
 
-            padding: 15px;
+	padding: 15px;
 
-        }
+}
 
 {% endhighlight %}
 

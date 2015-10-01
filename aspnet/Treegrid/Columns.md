@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Columns
+title: Columns | TreeGrid | ASP.NET | Syncfusion
 description: columns
 platform: aspnet
 control: TreeGrid
@@ -15,10 +15,6 @@ The TreeGrid column displays the information from a bounded data source and it
 
 You can change the width of the column in TreeGrid to show the entire text of the column by resizing the column. The following code example shows you how to enable the Column Resize feature at Gantt initialize.
 
-
-
-
-
 {% highlight html %}
 
 <ej:TreeGrid runat="server" ID="TreeGridControlDefault" 
@@ -26,9 +22,6 @@ You can change the width of the column in TreeGrid to show the entire text of 
              AllowColumnResize="true"
 
 </ej:TreeGrid>
-
-
-
 
 
 {% endhighlight %}
@@ -39,6 +32,7 @@ Column Template is used to customize the column’s look and feel based on requi
 
 The following code example shows you how to display the icon in the TreeGrid column.
 
+{% tabs %}
 {% highlight c# %}
 
 TreeGrid.aspx.cs
@@ -56,8 +50,6 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 using WebSampleBrowser.TreeGrid.Model;
-
-
 
 namespace WebSampleBrowser.TreeGrid
 
@@ -188,17 +180,9 @@ namespace WebSampleBrowser.TreeGrid
             });
 
 
-
-
-
             //...
 
-
-
            //...
-
-
-
 
 
             return FileinfoCollection;
@@ -229,10 +213,7 @@ namespace WebSampleBrowser.TreeGrid
 
 {% endhighlight %}
 
-{% highlight xml %}
-
-TreeGrid.aspx
-
+{% highlight cshtml %}
 
 
 <script type="text/x-jsrender" id="customColumnTemplate">     
@@ -269,74 +250,72 @@ TreeGrid.aspx
 
       <ej:TreeGridColumn HeaderText="Date Created" Field="DateCreated"  Width="150" />
 
-       <ej:TreeGridColumn HeaderText="Date Modified" Field="DateModified"  Width="150"/>                
+      <ej:TreeGridColumn HeaderText="Date Modified" Field="DateModified"  Width="150"/>                
 
-            </columns>            
+   </columns>            
 
-        </ej:TreeGrid>
+</ej:TreeGrid>
 
 
 
 <style type="text/css">
 
-        .e-treegrid .e-treegridexpand {
+    .e-treegrid .e-treegridexpand {
 
-            background-image: url(Images/folder-open.png);
+        background-image: url(Images/folder-open.png);
 
-            background-repeat: no-repeat;
+        background-repeat: no-repeat;
 
-            width: 14px;
+        width: 14px;
 
-            height: 14px;
+        height: 14px;
 
-        }
+    }
 
-        .e-treegrid .e-treegridcollapse {
+    .e-treegrid .e-treegridcollapse {
 
-            background-image: url(Images/Folder.png);
+        background-image: url(Images/Folder.png);
 
-            background-repeat: no-repeat;
+        background-repeat: no-repeat;
 
-            width: 14px;
+        width: 14px;
 
-            height: 14px;
+        height: 14px;
 
-        }
+    }
 
-        .e-treegrid .e-doc {
+    .e-treegrid .e-doc {
 
-            background-image: url(Images/Document.png);
+        background-image: url(Images/Document.png);
 
-            background-repeat: no-repeat;
+        background-repeat: no-repeat;
 
-            width: 14px;
+        width: 14px;
 
-            height: 14px;
+        height: 14px;
 
-        }
-
-
-
-        .e-treegrid .e-treegridexpand:before {
-
-            content: none;
-
-        }
+    }
 
 
 
-        .e-treegrid .e-treegridcollapse:before {
+    .e-treegrid .e-treegridexpand:before {
 
-            content: none;
+        content: none;
 
-        }
-
-    </style>
+    }
 
 
+
+    .e-treegrid .e-treegridcollapse:before {
+
+        content: none;
+
+    }
+
+</style>
 
 {% endhighlight %}
-
+{% endtabs %}
 
 
 The following screenshot displays the customized column in TreeGrid control.
@@ -369,7 +348,7 @@ Filtering type can be defined by FilterEditType property in each column object.
 
 <ej:TreeGrid runat="server" ID="TreeGridControlFiltering" ChildMapping="SubTasks" AllowFiltering="true" TreeColumnIndex="1"> 
 
-//..
+     //..
           <columns>
 
                 <ej:TreeGridColumn HeaderText="Task Id" Field="TaskID" Width="45" EditType="Numeric" AllowFiltering="false"/>
@@ -384,11 +363,11 @@ Filtering type can be defined by FilterEditType property in each column object.
 
                 <ej:TreeGridColumn HeaderText="Progress" Field="Progress" EditType="Numeric" FilterEditType="Numeric"/>
 
-            </columns>               
+           </columns>               
 
      // ...
 
-   </ej:TreeGrid>
+</ej:TreeGrid>
 
 {% endhighlight %}
 
@@ -424,19 +403,19 @@ You can also disable the visibility of the particular column in column collectio
 
              AllowSorting="true" AllowMultiSorting="true" >
 
-  // ...
+    // ...
 
     <Columns>
 
-     // ...
+         // ...
 
-     <ej:TreeGridColumn field="duration" HeaderText="Duration" Visible="false">
+         <ej:TreeGridColumn field="duration" HeaderText="Duration" Visible="false">
 
-     // ...
+         // ...
 
     </Columns>
 
-  // ...
+    // ...
 
 </ej:TreeGrid>
 

@@ -1,18 +1,17 @@
 ---
 layout: post
-title: Stamp and Overlay | PDF | ASP.NET Webforms | Syncfusion
+title: Stamp and Overlay | PDF | ASP.NET | Syncfusion
 description: stamp and overlay
 platform: aspnet
-control: PDF
+control: pdf
 documentation: ug
 ---
 
 # Stamp and Overlay
 
-You apply stamp to a PDF in much the same way as you apply a rubber stamp to a paper document. You can create your own stamps 
-and can stamp PDF using text or images. Overlay feature is used to overlap two PDF pages one above other.
+You apply stamp to a PDF in much the same way as you apply a rubber stamp to a paper document. You can create your own stamps and can stamp PDF using text or images. Overlay feature is used to overlap two PDF pages one above other.
 
-![](Stamp-and-Overlay_images/Stamp-and-Overlay_img1.png) 
+![](Stamp-and-Overlay_images/Stamp-and-Overlay_img1.png)
 
 
 
@@ -23,12 +22,12 @@ Essential PDF provides you support to stamp over newly created document as well 
 ### Adding Text Stamp in the PDF document
 
 
-{% highlight c# %}
 
 
 
-
-
+{% tabs %}
+ 
+{% highlight C# %}
 
 //Loads the document.
 
@@ -54,7 +53,7 @@ lDoc.Save("Stamp.pdf");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -80,13 +79,15 @@ g.DrawString("Imported using Essential PDF", Font, PdfPens.Red, PdfBrushes.Red, 
 
 lDoc.Save("Stamp.pdf")
 
-{% endhighlight  %}
+{% endhighlight %}
+{% endtabs %} 
 
 ### Adding Image Stamp in the PDF document
 
-{% highlight c# %}
 
-
+{% tabs %}
+  
+{% highlight C# %}
 
 //Loads the document.
 
@@ -112,9 +113,7 @@ lDoc.Save("Stamp.pdf");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'Loads the document.
 
@@ -138,16 +137,18 @@ g.DrawImage(image, New PointF(0, 0), lPage.Graphics.ClientSize)
 
 lDoc.Save("Stamp.pdf")
 
-{% endhighlight  %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Overlay Documents
 
-Overlay documents support for importing pages from existing PDF documents as templates. This feature can be used to overlap two 
-PDF pages one above the other.
-
-{% highlight c# %}
+Overlay documents support for importing pages from existing PDF documents as templates. This feature can be used to overlap two PDF pages one above the other.
 
 
+{% tabs %}
+
+
+{% highlight C# %}
 
 //Creates a new document.
 
@@ -177,11 +178,9 @@ g.DrawPdfTemplate(template, PointF.Empty, page.GetClientSize());
 
 doc.Save("NewPDF.pdf");
 
-{% endhighlight  %}
+{% endhighlight %}
 
-{% highlight vbnet  %}
-
-
+{% highlight VB %}
 
 'Creates a new document.
 
@@ -211,15 +210,16 @@ g.DrawPdfTemplate(template, PointF.Empty, page.GetClientSize())
 
 doc.Save("NewPDF.pdf")
 
-{% endhighlight  %}
+{% endhighlight %}
+{% endtabs %}  
 
 ## Transform PDF
 
-PDF pages can be converted to PdfTemplate object if you want to create a booklet or just place a few pages onto a single page 
-like an image. You can create the template using the following code.
+PDF pages can be converted to PdfTemplate object if you want to create a booklet or just place a few pages onto a single page like an image. You can create the template using the following code.
 
-{% highlight c# %}
-
+{% tabs %}
+ 
+{% highlight C# %}
 
 //Creates a new document.
 
@@ -251,9 +251,7 @@ doc.Save("NewPDF.pdf");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'Creates a new document.
 
@@ -283,11 +281,12 @@ g.DrawPdfTemplate(template, PointF.Empty, page.GetClientSize())
 
 doc.Save("NewPDF.pdf")
 
-{% endhighlight  %}
+{% endhighlight %}
+{% endtabs %} 
 
-N> This template can be scaled, rotated, placed at different coordinates, and so on.
+N> This template can be scaled, rotated, placed at different coordinates, and so on._
 
-### Restrictions
+#### Restrictions
 
 This above process can also convert annotations, but with some limitations as follows.
 

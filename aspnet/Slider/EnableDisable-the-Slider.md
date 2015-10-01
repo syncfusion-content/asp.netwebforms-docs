@@ -1,6 +1,6 @@
 ---
 layout: post
-title: EnableDisable-the-Slider
+title: EnableDisable the Slider | Slider | ASP.NET | Syncfusion
 description: enable/disable the slider
 platform: aspnet
 control: Slider
@@ -19,13 +19,7 @@ In an ASPX page, define the Slider control and set the Enabled property to false
 
 {% highlight html %}
 
-
-
 <ej:Slider ID="BasicSlider" runat="server" Width="500" Value="60" Enabled="false"> </ej:Slider>
-
-
-
-
 
 {% endhighlight %}
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbar
+title: Toolbar | TreeGrid | ASP.NET | Syncfusion
 description: toolbar
 platform: aspnet
 control: TreeGrid
@@ -19,10 +19,6 @@ In TreeGrid by using RowPosition API, the index position for the newly added row
 * belowSelectedRow
 
 You can enable toolbar for TreeGrid, using the following code example.
-
-
-
-
 
 {% highlight html %}
 
@@ -43,8 +39,6 @@ You can enable toolbar for TreeGrid, using the following code example.
 
 
 </ej:TreeGrid>
-
-
 
 {% endhighlight %}
 

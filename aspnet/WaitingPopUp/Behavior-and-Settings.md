@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Behavior-and-Settings
+title: Behavior and Settings | WaitingPopup | ASP.NET | Syncfusion
 description: behavior and settings
 platform: aspnet
 control: WaitingPopup
@@ -21,9 +21,7 @@ Add the following code example to the corresponding ASPX page to render the Wait
 
 <div id="targetelement"></div>
 
-    <ej:WaitingPopup ID="target" Target="#targetelement" runat="server" ShowOnInit="True"></ej:WaitingPopup>
-
-
+<ej:WaitingPopup ID="target" Target="#targetelement" runat="server" ShowOnInit="True"></ej:WaitingPopup>
 
 {% endhighlight %}
 
@@ -33,17 +31,17 @@ Add the following styles to render the WaitingPopup control
 
 {% highlight css %}
 
-  <style type="text/css">
+<style type="text/css">
 
-        #targetelement {
+    #targetelement {
 
-            height: 320px;
+        height: 320px;
 
-            width: 600px;
+        width: 600px;
 
-        }
+    }
 
-   </style>
+</style>
 
 {% endhighlight %}
 
@@ -61,19 +59,20 @@ The following steps explain how to enable or disable the popup indicator in the 
 
 Add the following code example to the corresponding ASPX page to enable or disable the popup indicator in the WaitingPopup control.
 
-Enable popup indicator:
 
 {% highlight html %}
 
+Enable popup indicator:
+
 <div id="targetelement"></div>
 
-    <ej:WaitingPopup ID="target" runat="server" Target="#targetelement" ShowOnInit="True" ShowImage="true" Text="Loading... Please wait..."></ej:WaitingPopup>
+<ej:WaitingPopup ID="target" runat="server" Target="#targetelement" ShowOnInit="True" ShowImage="true" Text="Loading... Please wait..."></ej:WaitingPopup>
 
 Disable popup indicator:
 
 <div id="targetelement1"></div>
 
-    <ej:WaitingPopup ID="target1" runat="server" Target="#targetelement1" ShowOnInit="True" ShowImage="false" Text="Loading... Please wait..."></ej:WaitingPopup>    
+<ej:WaitingPopup ID="target1" runat="server" Target="#targetelement1" ShowOnInit="True" ShowImage="false" Text="Loading... Please wait..."></ej:WaitingPopup>    
 
 {% endhighlight %}
 
@@ -83,19 +82,17 @@ Add the following styles to render the WaitingPopup control.
 
 {% highlight css %}
 
-  <style type="text/css">
+<style type="text/css">
 
-        #targetelement, #targetelement1 {
+    #targetelement, #targetelement1 {
 
-            height: 320px;
+        height: 320px;
 
-            width: 600px;
+        width: 600px;
 
-        }
+    }
 
-   </style>
-
-
+</style>
 
 {% endhighlight %}
 
@@ -121,15 +118,9 @@ Add the following code example to the corresponding ASPX page to show/hide the W
 
 {% highlight html %}
 
-
-
 <div id="targetelement"></div>
 
-    <ej:WaitingPopup ID="target" runat="server" Target="#targetelement" ShowOnInit="True"></ej:WaitingPopup>
-
-
-
-
+<ej:WaitingPopup ID="target" runat="server" Target="#targetelement" ShowOnInit="True"></ej:WaitingPopup>
 
 {% endhighlight %}
 
@@ -138,8 +129,6 @@ Add the following code example to the corresponding ASPX page to show/hide the W
 Show/Hide WaitingPopup as follows.
 
 {% highlight js %}
-
-
 
 Show WaitingPopup:
 
@@ -177,8 +166,6 @@ Hide WaitingPopup:
 
 </script>
 
-
-
 {% endhighlight %}
 
 
@@ -187,19 +174,17 @@ Add the following styles to render the WaitingPopup control.
 
 {% highlight css %}
 
-  <style type="text/css">
+<style type="text/css">
 
-        #targetelement {
+    #targetelement {
 
-            height: 320px;
+        height: 320px;
 
-            width: 600px;
+        width: 600px;
 
-        }
+    }
 
-  </style>
-
-
+</style>
 
 {% endhighlight %}
 

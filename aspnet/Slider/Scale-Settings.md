@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scale-Settings
+title: Scale Settings | Slider | ASP.NET | Syncfusion
 description: scale settings
 platform: aspnet
 control: Slider
@@ -19,17 +19,9 @@ In an ASPX page, define the Slider control with Default and Range Sliders and se
 
 {% highlight html %}
 
-
-
 <ej:Slider ID="BasicSlider" runat="server" Width="500" Value="60" MinValue="40" MaxValue="80" ShowScale="true"></ej:Slider>
 
-
-
 <ej:Slider ID="RangeSlider" runat="server" Width="500" Values="10,90" ShowScale="true" SliderType="Range"></ej:Slider>
-
-
-
-
 
 {% endhighlight %}
 
@@ -57,17 +49,9 @@ In an ASPX page, define the Slider control with Default and RangeSliders and set
 
 {% highlight html %}
 
-
-
 <ej:Slider ID="BasicSlider" runat="server" Width="500" Value="60" MinValue="40" MaxValue="80" ShowScale="true" ShowSmallTicks="false"></ej:Slider>
 
-
-
- <ej:Slider ID="RangeSlider" runat="server" Width="500" Values="10,90" ShowScale="true" SliderType="Range" ShowSmallTicks="false"></ej:Slider>
-
-
-
-
+<ej:Slider ID="RangeSlider" runat="server" Width="500" Values="10,90" ShowScale="true" SliderType="Range" ShowSmallTicks="false"></ej:Slider>
 
 {% endhighlight %}
 
@@ -99,19 +83,9 @@ In an ASPX page, define the Slider control with Default and RangeSliders and con
 
 {% highlight html %}
 
-
-
 <ej:Slider ID="BasicSlider" runat="server" Width="500" Value="60" MinValue="40" MaxValue="80" ShowScale="true" SmallStep="5" LargeStep="20"></ej:Slider>
 
-
-
-
-
 <ej:Slider ID="RangeSlider" runat="server" Width="500" Values="10,90" ShowScale="true" SliderType="Range" SmallStep="5" LargeStep="20"></ej:Slider>
-
-
-
-
 
 {% endhighlight %}
 

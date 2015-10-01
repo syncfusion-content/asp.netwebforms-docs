@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | WaitingPopup | ASP.NET | Syncfusion
 description: getting started
 platform: aspnet
 control: WaitingPopup
@@ -101,9 +101,7 @@ You can create a WEB Project and add the necessary assemblies, styles, and scr
 
         </div>
 
-    </div>
-
-
+     </div>
 
 {% endhighlight %}
 
@@ -137,9 +135,7 @@ You can create a WEB Project and add the necessary assemblies, styles, and scr
 
         }
 
-    </style>
-
-
+</style>
 
 {% endhighlight %}
 
@@ -175,11 +171,7 @@ In a real-time login page scenario, when you click the Login button, the Wait
 
         }
 
-    </script>
-
-
-
-
+</script>
 
 {% endhighlight %}
 

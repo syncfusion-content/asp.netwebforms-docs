@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard Interaction | PercentageTextBox | ASP.NET Webforms | Syncfusion
+title: Keyboard Interaction | PercentageTextBox | ASP.NET | Syncfusion
 description: keyboard interaction
 platform: aspnet
 control: PercentageTextBox
@@ -67,7 +67,6 @@ $(document).on("keydown", function (e)
     }
 
 });
-
 
 {% endhighlight %}
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout
+title: Layout | TreeMap | ASP.NET | Syncfusion
 description: layout
 platform: aspnet
 control: TreeMap
@@ -18,21 +18,22 @@ There are four different TreeMap layouts such as
 * SliceAndDiceHorizontal Layout
 * SliceAndDiceVertical Layout
 
-## Squarified Layout
+### Squarified Layout
 
 Squarifiedlayout creates rectangles with best aspect ratio.
 
+{% tabs %}
 {% highlight c# %}
 
-  protected void Page_Load(object sender, EventArgs e)
+protected void Page_Load(object sender, EventArgs e)
 
-        {
+{
 
-            this.treemap.DataSource = TreeMapPopulationData.GetData();
+    this.treemap.DataSource = TreeMapPopulationData.GetData();
 
 
 
-        }
+}
 
 {% endhighlight %}
 
@@ -47,10 +48,11 @@ Squarifiedlayout creates rectangles with best aspect ratio.
 </div>
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Layout_images/Layout_img1.png)
 
-## SliceAndDiceAuto Layout
+### SliceAndDiceAuto Layout
 
 SliceAndDiceAuto layout creates rectangles with high aspect ratio and displays them sorted both horizontally and vertically.
 
@@ -70,7 +72,7 @@ SliceAndDiceAuto layout creates rectangles with high aspect ratio and displays t
 
 ![](Layout_images/Layout_img2.png) 
 
-## SliceAndDiceHorizontal Layout
+### SliceAndDiceHorizontal Layout
 
 SliceAndDiceHorizontal layout creates rectangles with high aspect ratio and displays them sorted horizontally.
 
@@ -78,9 +80,9 @@ SliceAndDiceHorizontal layout creates rectangles with high aspect ratio and disp
 
 <div style="min-height:404px">
 
-<ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth" ItemsLayoutMode= “sliceanddicehorizontal”>
+    <ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth" ItemsLayoutMode= “sliceanddicehorizontal”>
 
-</ej:Treemap>
+    </ej:Treemap>
 
 </div> 
 
@@ -91,7 +93,7 @@ SliceAndDiceHorizontal layout creates rectangles with high aspect ratio and disp
 
 
 
-## SliceAndDiceVertical Layout
+### SliceAndDiceVertical Layout
 
 SliceAndDiceVertical layout creates rectangles with high aspect ratio and displays them sorted vertical.
 
@@ -99,9 +101,9 @@ SliceAndDiceVertical layout creates rectangles with high aspect ratio and displa
 
 <div style="min-height:404px">
 
-<ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth" ItemsLayoutMode= “sliceanddicevertical”>
+    <ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth" ItemsLayoutMode= “sliceanddicevertical”>
 
-</ej:Treemap>
+    </ej:Treemap>
 
 </div> 
 

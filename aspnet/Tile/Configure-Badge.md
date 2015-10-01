@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configure-Badge
+title: Configure Badge | Tile | ASP.NET | Syncfusion
 description: configure badge
 platform: aspnet
 control: Tile
@@ -19,23 +19,21 @@ Refer to the following code examples.
 
 {% highlight html %}
 
-    <div id="tile"></div>
+<div id="tile"></div>
 
-    <script>
+<script>
 
-        $("#tile").ejTile({
+	$("#tile").ejTile({
 
-            tileSize: "medium", imagePosition: "center",
+		tileSize: "medium", imagePosition: "center",
 
-            badge: { enabled: true, minVlaue: 10, maxValue: 80, value: 88 },
+		badge: { enabled: true, minVlaue: 10, maxValue: 80, value: 88 },
 
-            text: "Messages", imageUrl: "http://js.syncfusion.com/UG/Web/Content/tile/messages.png"
+		text: "Messages", imageUrl: "http://js.syncfusion.com/UG/Web/Content/tile/messages.png"
 
-        })
+	})
 
-    </script> 
-
-
+</script> 
 
 {% endhighlight %}
 

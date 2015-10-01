@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enable-or-Disable-the-UploadBox
+title: Enable or Disable the UploadBox | UploadBox | ASP.NET | Syncfusion
 description: enable or disable the uploadbox 
 platform: aspnet
 control: UploadBox

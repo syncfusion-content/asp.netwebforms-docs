@@ -1,9 +1,9 @@
 ---
 layout: post
-title: What-is-the-maximum-range-of-Rows-and-Columns
+title: What is the maximum range of Rows and Columns | XlsIO | ASP.NET | Syncfusion
 description: what is the maximum range of rows and columns
 platform: aspnet
-control: XlsIO	
+control: Xlsio
 documentation: ug
 ---
 

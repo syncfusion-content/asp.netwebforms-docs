@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard-Navigation
+title: Keyboard Navigation | Tab | ASP.NET | Syncfusion
 description: keyboard navigation
 platform: aspnet
 control: Tab
@@ -47,6 +47,7 @@ The following code example is used to render the Tab element in the RTL format.
 
 Add the following ASPX to render the Tab with keyboard navigation.
 
+{% tabs %}
 {% highlight html %}
 
 <ej:Tab ID="dishtype" runat="server" Width="600px" AllowKeyboardNavigation="true">
@@ -81,12 +82,7 @@ Add the following ASPX to render the Tab with keyboard navigation.
 
 </ej:Tab>
 
-
-
-
-
 {% endhighlight %}
-
 
 
 {% highlight js %}
@@ -109,12 +105,8 @@ $("#<%=dishtype.ClientID%> ul a").focus();
 
     });
 
-
-
-
-
 {% endhighlight %}
-
+{% endtabs %}
 
 
 The following screenshot illustrates the Tab with keyboard navigation.

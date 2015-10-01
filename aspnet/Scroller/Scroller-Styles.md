@@ -1,37 +1,37 @@
 ---
 layout: post
-title: Scroller-Styles
+title: Scroller Styles | Scroller | ASP.NET | Syncfusion
 description: scroller styles
 platform: aspnet
-control: Overview
+control: Scroller
 documentation: ug
 ---
 
-## Scroller Styles
+# Scroller Styles
 
 The Essential ASP.NETScroller control allows you to customize the look and function of scrollbars. You can vary it significantly by setting the scrollbar button size, scrollbar position, height and width of the Scroller control. This section describes you the custom styles to be used when creating Scroller.
 
-### ButtonSize
+## ButtonSize
 
 In Scroller control, it allows you to customize the scroll arrows width and height. In horizontal scroller the ButtonSize customizes the top and down arrow and in vertical scroller the ButtonSize customizes the left and right arrow.
 
-### ScrollerSize
+## ScrollerSize
 
 The ScrollerSize property is used to customize the scrollbar width and height. It is applicable for both horizontal and vertical scroller.
 
-### ScrollTop
+## ScrollTop
 
 The ScrollerTop property is used to move the Scroller content and scrollbars in top position with the specified value. It is used for only vertical scroller.
 
-### ScrollLeft
+## ScrollLeft
 
 The ScrollerLeft property is used to move the Scroller content and scrollbars in left position with the specified value. It is used for only horizontal scroller.
 
-### Height
+## Height
 
 The Height property is used to set the height for Scroller outer wrapper.
 
-### Width
+## Width
 
 The Width property is used to set the width for Scroller outer wrapper.
 
@@ -115,15 +115,13 @@ In an ASPXpage add the following code to render Scroller.
 
 {% highlight css %}
 
+.sampleContent {
 
+	width: 700px;
 
-        .sampleContent {
+	padding: 15px;
 
-            width: 700px;
-
-            padding: 15px;
-
-        }
+}
 
 {% endhighlight %}
 

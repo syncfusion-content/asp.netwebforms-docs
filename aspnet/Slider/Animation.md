@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Animation
+title: Animation | Slider | ASP.NET | Syncfusion
 description: animation
 platform: aspnet
 control: Slider
@@ -19,13 +19,7 @@ In an ASPX page, define the Slider control and set the EnableAnimation property 
 
 {% highlight html %}
 
-
-
 <ej:Slider ID="BasicSlider" runat="server" Width="500" Value="60" EnableAnimation="false"></ej:Slider>
-
-
-
-
 
 {% endhighlight %}
 
@@ -39,13 +33,7 @@ In an ASPX page, define the Slider control and customize the value of AnimationS
 
 {% highlight html %}
 
-
-
 <ej:Slider ID="BasicSlider" runat="server" Width="500" Value="60" AnimationSpeed="600"> </ej:Slider>
-
-
-
-
 
 {% endhighlight %}
 

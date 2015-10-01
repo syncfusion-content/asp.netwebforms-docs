@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integration
+title: Integration | Slider | ASP.NET | Syncfusion
 description: integration
 platform: aspnet
 control: Slider
@@ -13,7 +13,7 @@ documentation: ug
 
 Angular JS is structural Framework to create dynamic web apps. It is distributed as a JavaScript file. It extends HTML attributes with Directives, and binds data to HTML with Expressions. To learn more about Angular JS, refer to the following link
 
-[https://angularjs.org/](https://angularjs.org/)
+<https://angularjs.org/>
 
 Slider control is provided with Angular JS support. The support is achieved by including the ej.widget.angular.min.js file. Refer to the following link to know more about the AngularJS support.
 
@@ -28,8 +28,6 @@ The Slider properties, value and values are provided with two way binding 
 In an ASPX page, initialize the Slider by using the directive andin JavaScript bind the value and width properties in Angularway. 
 
 {% highlight html %}
-
-
 
 <div ng-app="syncApp">
 
@@ -57,8 +55,6 @@ In an ASPX page, initialize the Slider by using the directive andin JavaScript b
 
 </div>
 
-
-
 {% endhighlight %}
 
 
@@ -74,8 +70,6 @@ Include the following Script to achieve the angular binding.
         $scope.sliderValue = 60;
 
     });
-
-
 
 {% endhighlight %}
 
@@ -107,8 +101,6 @@ In an ASPX page, initialize the Slider and bind the value property. 
 
 {% highlight html %}
 
-
-
 <div class="frame">
 
         <div id="control" style="float: left; width: 45%;">
@@ -125,10 +117,6 @@ In an ASPX page, initialize the Slider and bind the value property. 
 
     </div>
 
-
-
-
-
 {% endhighlight %}
 
 
@@ -137,25 +125,19 @@ In JavaScript, specify the value property as observable in the ViewModel to enab
 
 {% highlight js %}
 
+$(function () {
 
+	// declaration           
 
-    $(function () {
+	window.viewModel = {
 
-        // declaration           
+		sliderValue: ko.observable(40),
 
-        window.viewModel = {
+	};
 
-            sliderValue: ko.observable(40),
+	ko.applyBindings(viewModel);
 
-        };
-
-        ko.applyBindings(viewModel);
-
-    });
-
-
-
-
+});
 
 {% endhighlight %}
 

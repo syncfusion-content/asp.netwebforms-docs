@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Strict-mode-of-the-TimePicker
+title: Strict mode of the TimePicker | TimePicker | ASP.NET | Syncfusion
 description: strict mode of the timepicker
 platform: aspnet
 control: TimePicker
@@ -20,8 +20,6 @@ The following code explains you how to use the strict mode property.
 {% highlight html %}
 
 <ej:TimePicker ID="time" Value="09:00 AM" EnableStrictMode="true" MinTime="10:00 AM" MaxTime="09:00 PM" runat="server"></ej:TimePicker>
-
-
 
 {% endhighlight %}
 

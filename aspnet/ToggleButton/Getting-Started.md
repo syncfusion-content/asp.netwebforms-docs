@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Toggle Button | ASP.NET | Syncfusion
 description: getting started
 platform: aspnet
-control: Toggle Button
+control: ToggleButton
 documentation: ug
 ---
 
@@ -23,11 +23,9 @@ Create an aspx file and add the following code to aspx file for ejToggleButton c
 
 <ej:ToggleButton ID="ToggleButtonLarge" runat="server" Size="Large" ShowRoundedCorner="true"
 
-        DefaultText="Play" ActiveText="Next">
+    DefaultText="Play" ActiveText="Next">
 
-    </ej:ToggleButton>
-
-
+</ej:ToggleButton>
 
 {% endhighlight %}
 

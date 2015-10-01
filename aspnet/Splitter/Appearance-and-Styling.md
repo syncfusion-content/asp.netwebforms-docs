@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Appearance and Styling | Splitter | ASP.NET | Syncfusion
 description: appearance and styling
 platform: aspnet
 control: Splitter
@@ -18,68 +18,63 @@ The EnableAutoResize option allows the Splitter control to adapt its renderi
 In an ASPX page, define the Splitter control and add the contents correspondingly. Set the EnableAutoResize property as true.
 
 
-
 {% highlight html %}
-
-
 
 <ej:Splitter Height="280" Width="100%" ID="outersplitter" EnableAutoResize="true" Orientation="Vertical" runat="server">
 
-             <ej:SplitPane PaneSize="60">
+	 <ej:SplitPane PaneSize="60">
 
-                 <div>
+		 <div>
 
-                      <div style="padding: 0px 15px;">
+			  <div style="padding: 0px 15px;">
 
-                        <h3 class="h3">ASP.NET MVC </h3>
+				<h3 class="h3">ASP.NET MVC </h3>
 
-                      </div>
+			  </div>
 
-                  </div>
+		  </div>
 
-             </ej:SplitPane>
+	 </ej:SplitPane>
 
-             <ej:SplitPane>
+	 <ej:SplitPane>
 
-                <ej:Splitter ID="innersplitter" EnableAutoResize="true"  runat="server">
+		<ej:Splitter ID="innersplitter" EnableAutoResize="true"  runat="server">
 
-                 <ej:SplitPane>
+			 <ej:SplitPane>
 
-                   <div>
+			   <div>
 
-                      <div style="padding: 0px 15px;">
+				  <div style="padding: 0px 15px;">
 
-                        <h3 class="h3">Tools </h3>Essential Tools is an collection of user interface components used to create interactive ASP.NET MVC applications.
+					<h3 class="h3">Tools </h3>Essential Tools is an collection of user interface components used to create interactive ASP.NET MVC applications.
 
-                      </div>
+				  </div>
 
-                   </div>
+			   </div>
 
-                 </ej:SplitPane>
+			 </ej:SplitPane>
 
-                 <ej:SplitPane>
+			 <ej:SplitPane>
 
-                   <div>
+			   <div>
 
-                      <div style="padding: 0px 15px;">
+				  <div style="padding: 0px 15px;">
 
-                        <h3 class="h3">Grid </h3>
+					<h3 class="h3">Grid </h3>
 
-                        Essential Mvc Grid offers full featured a Grid control with extensive support for Grouping and the display of hierarchical data.
+					Essential Mvc Grid offers full featured a Grid control with extensive support for Grouping and the display of hierarchical data.
 
-                      </div>
+				  </div>
 
-                   </div>
+			   </div>
 
-                 </ej:SplitPane>
+			 </ej:SplitPane>
 
-            </ej:Splitter>
+		</ej:Splitter>
 
-      </ej:SplitPane>
+	</ej:SplitPane>
 
 </ej:Splitter>
-
-
 
 {% endhighlight %}
 
@@ -113,8 +108,6 @@ In an ASPX page, define the Splitter control and add the contents corresponding
 
 {% highlight html %}
 
-
-
 <ej:Splitter ID="splitter" AnimationSpeed="300" Height="200px" Width="200px" EnableAnimation="true" runat="server">
 
           <ej:SplitPane>
@@ -139,8 +132,6 @@ In an ASPX page, define the Splitter control and add the contents corresponding
 
 </ej:Splitter>
 
-
-
 {% endhighlight %}
 
 
@@ -155,27 +146,27 @@ The output for Splitter when EnableAnimation is “True”. Expanding or col
 
 ### Adjusting Splitter Size
 
-### Height
+#### Height
 
 The height of Splitter can be modified by using the Height property. The default value for Height property is null in Splitter. You can set the Height property by pixel or percentage values.
 
-### Width
+#### Width
 
 The width of Splitter can be modified by using the Width property. The default value for Width property is null in Splitter. You can set the Width property by pixel or percentage values.
 
-### Max Size
+#### Max Size
 
 Defines the maximum resizable size of the pane when you resize the Splitter control. The default value of MaxSize is null in Splitter. You can set the MaxSize property by pixel values.
 
-### Min Size
+#### Min Size
 
 Defines the minimum resizable size of the pane when you resize the Splitter control. The default value of MinSize is 10 in Splitter. You can set the MinSize property by pixel values.
 
-### Pane Size
+#### Pane Size
 
 Defines the pane size in the Splitter control. The default value of PaneSize is 0px in Splitter. You can set the PaneSize property by pixel or percentage values.
 
-### Resizable
+#### Resizable
 
 Defines whether the pane in the Splitter is resizable or not. Setting the Resizable property as “False” disables the resize option to the pane. The default value of Resizable property is true in Splitter.
 
@@ -185,55 +176,29 @@ In an ASPX page, define the Splitter control and add the contents corresponding
 
 {% highlight html %}
 
-
-
 <ej:Splitter ID="splitter" Height="200"  Width="200" CssClass="customCss" runat="server">
 
+     <ej:SplitPane PaneSize="80" MinSize="10" MaxSize="40" Collapsible="true" Resizable="true">
 
-
-                <ej:SplitPane PaneSize="80" MinSize="10" MaxSize="40" Collapsible="true" Resizable="true">
-
-
-
-                           <div>
-
-
+            <div>
 
                 <div style="padding: 10px 0 0 10px; text-align: center;">Pane 1</div>
 
+            </div>
 
+     </ej:SplitPane>
+
+     <ej:SplitPane PaneSize="80" MinSize="10" MaxSize="40" Collapsible="true" Resizable="true">
+
+            <div>
+
+              <div style="padding: 10px 0 0 10px; text-align: center;">Pane 2</div>
 
             </div>
 
-
-
-                </ej:SplitPane>
-
-
-
-                <ej:SplitPane PaneSize="80" MinSize="10" MaxSize="40" Collapsible="true" Resizable="true">
-
-
-
-                            <div>
-
-
-
-                <div style="padding: 10px 0 0 10px; text-align: center;">Pane 2</div>
-
-
-
-            </div>
-
-
-
-             </ej:SplitPane>
-
-
+     </ej:SplitPane>
 
 </ej:Splitter>
-
-
 
 {% endhighlight %}
 
@@ -288,114 +253,65 @@ In an ASPX page, define the Splitter control and add the contents correspondingl
 
 {% highlight html %}
 
-
-
 <ej:Splitter ID="splitter" Height="200" Width="200" CssClass="customCSS" runat="server">
 
+    <ej:SplitPane>
 
+         <div>
 
-        <ej:SplitPane>
+            <div style="padding: 10px 0 0 10px; text-align: center;">Pane 1</div>
 
+        </div>
 
+    </ej:SplitPane>
 
-             <div>
+    <ej:SplitPane>
 
+        <div>
 
+            <div style="padding: 10px 0 0 10px; text-align: center;">Pane 2</div>
 
-                <div style="padding: 10px 0 0 10px; text-align: center;">Pane 1</div>
+        </div>
 
-
-
-            </div>
-
-
-
-         </ej:SplitPane>
-
-
-
-              <ej:SplitPane>
-
-
-
-             <div>
-
-
-
-                <div style="padding: 10px 0 0 10px; text-align: center;">Pane 2</div>
-
-
-
-            </div>
-
-
-
-         </ej:SplitPane>
-
-
+    </ej:SplitPane>
 
 </ej:Splitter>
 
-
-
 {% endhighlight %}
-
-
 
 Define CSS class for customizing the Splitter.
 
 {% highlight css %}
 
-        .customCSS {           
+.customCSS {           
+
+	border-color: #661e19;
+
+}
 
 
 
-            border-color: #661e19;
+//Customize Splitbar
+
+.customCSS .e-splitbar {
+
+	background-color: #f9c89f;
+
+}
 
 
 
-        }
+//Customize Splitter pane
 
+.customCSS .e-pane {
 
+	color: #b21010;
 
-        //Customize Splitbar
+	background-color: #f6e492;
 
+}    
 
-
-        .customCSS .e-splitbar {
-
-
-
-            background-color: #f9c89f;
-
-
-
-        }
-
-
-
-        //Customize Splitter pane
-
-
-
-        .customCSS .e-pane {
-
-
-
-            color: #b21010;
-
-
-
-            background-color: #f6e492;
-
-
-
-        }    
-
-
-
-
- {% endhighlight %}
+{% endhighlight %}
 
 
 The output for Splitter after customizing the CSS class.
@@ -466,65 +382,33 @@ In an ASPX page, define the Splitter control and add the contents corresponding
 
 {% highlight html %}
 
-
-
 <div id="spliter">
-
-
 
 <ej:Splitter ID="splitter" Height="250" Width="400" runat="server">
 
+    <ej:SplitPane>
 
+        <div>
 
-           <ej:SplitPane>
+            <div class="cont">Pane 1 </div>
 
+        </div>
 
+    </ej:SplitPane>
 
-               <div>
+    <ej:SplitPane PaneSize="80">
 
+        <div>
 
+            <div class="cont">Pane 2 </div>
 
-                <div class="cont">Pane 1 </div>
+        </div>
 
-
-
-            </div>
-
-
-
-           </ej:SplitPane>
-
-
-
-            <ej:SplitPane PaneSize="80">
-
-
-
-             <div>
-
-
-
-                <div class="cont">Pane 2 </div>
-
-
-
-            </div>
-
-
-
-           </ej:SplitPane>
-
-
+    </ej:SplitPane>
 
 </ej:Splitter>
 
-
-
 </div>
-
-
-
-
 
 {% endhighlight %}
 
@@ -532,27 +416,15 @@ In an ASPX page, define the Splitter control and add the contents corresponding
 
 {% highlight js %}
 
+$(document).on("keydown", function (e) {
 
+    if (e.altKey && e.keyCode === 74) { // j- key code.
 
-      $(document).on("keydown", function (e) {
+ $("#<%=outersplitter.ClientID%> .e-splitbar.e-splitbar")[0].focus();
 
+    }
 
-
-            if (e.altKey && e.keyCode === 74) { // j- key code.
-
-
-
-         $("#<%=outersplitter.ClientID%> .e-splitbar.e-splitbar")[0].focus();
-
-            }
-
-
-
-      });
-
-
-
-
+});
 
 {% endhighlight %}
 

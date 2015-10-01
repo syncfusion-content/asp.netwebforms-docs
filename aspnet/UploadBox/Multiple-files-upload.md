@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multiple-files-upload
+title: Multiple files upload | UploadBox | ASP.NET | Syncfusion
 description: multiple files upload
 platform: aspnet
 control: UploadBox
@@ -11,7 +11,7 @@ documentation: ug
 
 The UploadBox control provides support to upload multiple files spontaneously. The MultipleFilesSelection property enables you to select multiple files while browsing.  To achieve this, set the MultipleFilesSelection property to true. The data type is Boolean.
 
-N> The Multiple file selection supports all the latest versions of browser except Internet Explorer 9 and its previous versions__.
+N> The Multiple file selection supports all the latest versions of browser except Internet Explorer 9 and its previous versionss.
 
 
 The following steps explain the configuration of the MultipleFilesSelection property in the UploadBox. 

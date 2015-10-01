@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server Side Events | PercentageTextBox | ASP.NET Webforms | Syncfusion
+title: Server Side Events | PercentageTextBox | ASP.NET | Syncfusion
 description: server side events
 platform: aspnet
 control: PercentageTextBox
@@ -36,7 +36,7 @@ In an ASPX page, add the NumericTextbox control with OnFocusOut server side even
 
 {% highlight html %}
 
-  <ej:PercentageTextBox ID="numeric" Value="11" OnFocusOut="focus" runat="server"> </ej:PercentageTextBox>
+<ej:PercentageTextBox ID="numeric" Value="11" OnFocusOut="focus" runat="server"> </ej:PercentageTextBox>
 
 {% endhighlight %}
 
@@ -46,10 +46,10 @@ In the code behind define the action to be performed.
 
 protected void focus(object Sender, EventArgs e)
 
- {
+{
 
     Response.Write("Serverside event has been trigerred");
 
- }
+}
 
 {% endhighlight %}

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | XlsIO | ASP.NET | Syncfusion
 description: getting started
 platform: aspnet
-control: XlsIO	
+control: Xlsio
 documentation: ug
 ---
 
@@ -15,245 +15,276 @@ For every platform, you must deploy the necessary dlls of Essential XlsIO to cre
 
 ## Create a simple Excel document 
 
-### Creating a Console Application 
+Creating a Console Application 
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog, select Console Application template, name the project and click OK.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+   ![](Getting-Started_images/Getting-Started_img1.png)
 
 
 
-2.Now you need to deploy Essential XlsIO into this Console application. 
+2. Now you need to deploy Essential XlsIO into this Console application. 
 
-3.Go to the Solution Explorer of the application you have created. Right-click the Reference folder and then click Add 
-References to Essential XlsIO assemblies.
+3. Go to the Solution Explorer of the application you have created. Right-click the Reference folder and then click Add References to Essential XlsIO assemblies.
 
-4.Add the following assemblies as references in the application.
+4. Add the following assemblies as references in the application.
 
-  • Syncfusion.Core.dll
+   * Syncfusion.Core.dll
 
-  • Syncfusion.Compression.Base.dll
+   * Syncfusion.Compression.Base.dll
 
-  • Syncfusion.XlsIO.Base.dll
+   * Syncfusion.XlsIO.Base.dll
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
-### Creating an Excel document
+##Creating an Excel document
 
 The following steps guide you to create a simple Excel document in Windows/WPF application.
 
 1. Add the following C# code to import the Syncfusion.XlsIO namespace.
 
+   ~~~ csharp
+		using Syncfusion.XlsIO;
+   ~~~
+   
 
-{% highlight C# %}
-
-using Syncfusion.XlsIO;
-
-
-
-
-
-Imports Syncfusion.XlsIO
-
-
+   ~~~ vbnet
+ 		Imports Syncfusion.XlsIO
+   ~~~
+   
 
 2. Create an instance of XlsIO by using the following code.
 
 
+   ~~~ csharp
+		// New instance of XlsIO is created [Equivalent to launching MS Excel with no workbooks open].
 
+		// Instantiates the spreadsheet creation engine.
 
-// New instance of XlsIO is created [Equivalent to launching MS Excel with no workbooks open].
+		ExcelEngine excelEngine = new ExcelEngine();
+   ~~~
+   
 
-// Instantiates the spreadsheet creation engine.
+   ~~~ vbnet
+		'New instance of XlsIO is created. [Equivalent to launching MS Excel with no workbooks open].
 
-ExcelEngine excelEngine = new ExcelEngine();
+		'Instantiates the spreadsheet creation engine.
 
-
-
-
-
-'New instance of XlsIO is created. [Equivalent to launching MS Excel with no workbooks open].
-
-'Instantiates the spreadsheet creation engine.
-
-Dim excelEngine As ExcelEngine = New ExcelEngine()
-
+		Dim excelEngine As ExcelEngine = New ExcelEngine()
+   ~~~
+   
 
 
 3. Create an instance of the Excel application through the IApplication interface.
+   
+   ~~~ csharp
+		// Instantiates the Excel application object.
+
+		IApplication application = excelEngine.Excel;
 
 
 
+		// Assigns default application version
 
+		application.DefaultVersion = ExcelVersion.Excel2013;
+   ~~~
+   
 
-// Instantiates the Excel application object.
+   ~~~ vbnet
+		'Instantiates the Excel application object.
 
-IApplication application = excelEngine.Excel;
-
-
-
-// Assigns default application version
-
-application.DefaultVersion = ExcelVersion.Excel2013;
-
-
+		Dim application As IApplication = excelEngine.Excel
 
 
 
+		'Assigns default application version
 
-'Instantiates the Excel application object.
-
-Dim application As IApplication = excelEngine.Excel
-
-
-
-'Assigns default application version
-
-application.DefaultVersion = ExcelVersion.Excel2013
-
-
+		application.DefaultVersion = ExcelVersion.Excel2013
+   ~~~
+   
 
 4. Create a workbook. A newly created workbook has three worksheets by default. You can change the number of worksheets by using the Create method of IWorkBook as shown in the following code.
 
 
+   ~~~ csharp
+		// A new workbook is created. [Equivalent to creating a new workbook in MS Excel).
 
+		// The new workbook will have 2 worksheets.
 
+		IWorkbook workbook = application.Workbooks.Create(2);
+   ~~~
+   
 
-// A new workbook is created. [Equivalent to creating a new workbook in MS Excel).
+   ~~~ vbnet
+		'A new workbook is created. [Equivalent to creating a new workbook in MS Excel].
 
-// The new workbook will have 2 worksheets.
+		'The new workbook will have 2 worksheets.
 
-IWorkbook workbook = application.Workbooks.Create(2);
+		Dim workbook As IWorkbook = application.Workbooks.Create(2)
+   ~~~
+   
 
-
-
-
-
-
-'A new workbook is created. [Equivalent to creating a new workbook in MS Excel].
-
-'The new workbook will have 2 worksheets.
-
-Dim workbook As IWorkbook = application.Workbooks.Create(2)
-
-
-
-![](Getting-Started_images/Getting-Started_img3.jpeg)
-
- See Workbook and Worksheet for more details.
+   See Workbook and Worksheet for more details.
 
 5. Access a worksheet in the workbook and set data for the given range, say "A1".
 
 
+   ~~~ csharp
+		// The first worksheet object in the worksheets collection is accessed.
+
+		IWorksheet sheet = workbook.Worksheets[0];                        
 
 
 
+		// Inserts sample text into the first cell of the first worksheet.
 
+		sheet.Range["A1"].Text = "Hello World";
+   ~~~
+   
 
-// The first worksheet object in the worksheets collection is accessed.
+   ~~~ vbnet
+		'The first worksheet object in the worksheets collection is accessed.
 
-IWorksheet sheet = workbook.Worksheets[0];                        
-
-
-
-// Inserts sample text into the first cell of the first worksheet.
-
-sheet.Range["A1"].Text = "Hello World";
-
-
+		Dim sheet As IWorksheet = workbook.Worksheets(0)
 
 
 
+		'Inserts sample text into the first cell of the first worksheet.
 
-
-'The first worksheet object in the worksheets collection is accessed.
-
-Dim sheet As IWorksheet = workbook.Worksheets(0)
-
-
-
-'Inserts sample text into the first cell of the first worksheet.
-
-sheet.Range("A1").Text = "Hello World"
-
-
+		sheet.Range("A1").Text = "Hello World"
+   ~~~
+   
 
 6. Save and close the workbook.
+   
+   ~~~ csharp
+		// Assigns the workbook version.
+
+		workBook.Version = ExcelVersion.Excel2013;
 
 
 
+		// Saves the workbook to disk.
 
-// Assigns the workbook version.
-
-workBook.Version = ExcelVersion.Excel2013;
-
-
-
-// Saves the workbook to disk.
-
-workbook.SaveAs("Sample.xlsx");
+		workbook.SaveAs("Sample.xlsx");
 
 
 
-// Closes the workbook.
+		// Closes the workbook.
 
-workbook.Close();
+		workbook.Close();
+   ~~~
+   
 
+   ~~~ vbnet
+		'Assigns the workbook version.
 
-
-
-
-'Assigns the workbook version.
-
-workBook.Version = ExcelVersion.Excel2013
-
-
-
-'Saves the workbook to disk.
-
-workbook.SaveAs("Sample.xlsx")
+		workBook.Version = ExcelVersion.Excel2013
 
 
 
-'Closes the workbook.
+		'Saves the workbook to disk.
 
-workbook.Close()
-
-
-
-![](Getting-Started_images/Getting-Started_img4.jpeg)
-
- To know more about saving the workbook, see Save.
+		workbook.SaveAs("Sample.xlsx")
 
 
+
+		'Closes the workbook.
+
+		workbook.Close()
+   ~~~
+   
+
+
+   N> To know more about saving the workbook, see Save.
 
 7. Dispose the Excel engine. Note that the engine should be disposed after completing workbook operations.
 
+   ~~~ csharp
+		// Disposes the Excel engine.
+
+		excelEngine.Dispose();
+   ~~~
+
+   ~~~ vbnet
+	'Disposes the Excel engine.
+
+	excelEngine.Dispose()
+   ~~~
+
+
+   The following code example illustrates how to create a hello world document.
+
+   ~~~ csharp
+		ExcelEngine excelEngine = new ExcelEngine();
+
+		IApplication application = excelEngine.Excel;
+
+		application.DefaultVersion = ExcelVersion.Excel2013;
+
+
+		IWorkbook workbook = application.Workbooks.Create(2);
+
+		IWorksheet sheet = workbook.Worksheets[0];                        
 
 
 
-
-// Disposes the Excel engine.
-
-excelEngine.Dispose();
+		sheet.Range["A1"].Text = "Hello World";
 
 
 
+		workBook.Version = ExcelVersion.Excel2013;
+
+		workbook.SaveAs("Sample.xlsx");
 
 
-'Disposes the Excel engine.
 
-excelEngine.Dispose()
+		workbook.Close();
 
-{% endhighlight %}
+		excelEngine.Dispose();
+   ~~~
+
+
+   ~~~ vbnet
+		Dim excelEngine As ExcelEngine = New ExcelEngine()
+
+		Dim application As IApplication = excelEngine.Excel
+
+		application.DefaultVersion = ExcelVersion.Excel2013
+
+
+
+		Dim workbook As IWorkbook = application.Workbooks.Create(2)
+
+		Dim sheet As IWorksheet = workbook.Worksheets(0)
+
+
+
+		sheet.Range("A1").Text = "Hello World"
+
+
+
+		workBook.Version = ExcelVersion.Excel2013
+
+		workbook.SaveAs("Sample.xlsx")
+
+
+
+		workbook.Close()
+
+		excelEngine.Dispose()
+   ~~~
+
 
 The following code example illustrates how to create a hello world document.
 
 
-{% highlight C# %}
 
+{% tabs %}
+
+{% highlight C# %} 
 
 ExcelEngine excelEngine = new ExcelEngine();
 
@@ -284,7 +315,10 @@ workbook.Close();
 excelEngine.Dispose();
 
 
+{% endhighlight %}
 
+
+{% highlight vbnet %} 
 
 Dim excelEngine As ExcelEngine = New ExcelEngine()
 
@@ -315,6 +349,7 @@ workbook.Close()
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 
 The following screenshot shows the Excel document generated by the above procedure.
 
@@ -328,11 +363,6 @@ The following screenshot illustrates the Object Model of Essential XlsIO.
 
 ![](Getting-Started_images/Getting-Started_img6.png)
 
-
-
-
-
-_Table_ _3__: Object Model_
 
 <table>
 <tr>
@@ -373,10 +403,6 @@ The following screenshot illustrates the Object Model of XlsIO Workbook.
 ![](Getting-Started_images/Getting-Started_img7.png)
 
 
-
-
-
-_Table_ _4__: Properties of XlsIO Workbook_
 
 <table>
 <tr>
@@ -438,13 +464,13 @@ The following screenshot illustrates the Object Model of XlsIO Worksheet.
 
 
 
-_Table_ _5__: Properties_
+Properties
 
 <table>
 <tr>
 <th>
 Properties</th><th>
-Description</th></th>
+Description</th></tr>
 <tr>
 <td>
 IWorksheet</td><td>
@@ -531,26 +557,22 @@ IWorkbook</td><td>
 Represents an MS Excel Workbook.</td></tr>
 </table>
 
-
 ## Supported Features and File Formats
 
 This section covers various features of Essential XlsIO, list of various supported and non-supported Excel elements of Essential XlsIO in various platforms and supported file formats of Essential XlsIO.
 
-### Key Features
+Key Features
 
 <table>
 <tr>
 <td>
 {{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 
-
 </td><td>
-
 Formatting<br>Essential XlsIO provides various formatting options like setting fonts, alignment of content, number formatting, border settings, and color-fill settings. It also supports various styles for cells and conditional formatting options.</td></tr>
 <tr>
 <td>
 {{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
-
 
 </td><td>
 Editing<br>It supports range manipulations like copying a range, moving a range, and so on, and Find and Replace option as part of editing the document.</td></tr>
@@ -558,29 +580,23 @@ Editing<br>It supports range manipulations like copying a range, moving a range,
 <td>
 {{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
 
-
 </td><td>
-
 Insert<br>Various components like chart, pictures, tables, pivot tables, pivot charts, and auto shapes can be inserted into the document. It also provides support for insertion of controls like text boxes, check boxes, combo boxes, and links.</td></tr>
 <tr>
 <td>
 {{ '![](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
 
-
 </td><td>
 Page Setup<br>It provides support for page setup options like margin setup, orientation, paper size, page breaks, header and footer options. It also supports several print settings.</td></tr>
 <tr>
 <td>
-{{ '![](Getting-Started_images/Getting-Started_img13.p' | markdownify }}
-ng)
+{{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
 
 </td><td>
-
 Formula<br>It provides extensive support for using formulae in cells and calculations are done based on formula function library with outstanding calculation engine.</td></tr>
 <tr>
 <td>
 {{ '![](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
-
 
 </td><td>
 Data<br>It provides support for data validation, import/export of data, data filter, template markers for efficient data-handling, and external connection.<br></td></tr>
@@ -588,21 +604,17 @@ Data<br>It provides support for data validation, import/export of data, data fil
 <td>
 {{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
 
-
 </td><td>
 Comments<br>Comments can be inserted to any cell in Excel document by using Essential XlsIO review support.</td></tr>
 <tr>
 <td>
 {{ '![](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
 
-
 </td><td>
-{{ '![fdgfdhtd](Cell-or-Range-Formatting_images/Cell-or-Range-Formatting_img1.png)' | markdownify }}
 Protection<br>Three levels of protections are provided by Essential XlsIO.1. Workbook-level protection, 2. Worksheet-level protection and 3. Cell-level protection. <br>It also provides encryption and decryption methodology to ensure security of a document.</td></tr>
 <tr>
 <td>
 {{ '![](Getting-Started_images/Getting-Started_img17.png)' | markdownify }}
-
 
 </td><td>
 View<br>Several customizing options like freezing pane, split pane, zooming, and macros are supported.</td></tr>
@@ -610,20 +622,17 @@ View<br>Several customizing options like freezing pane, split pane, zooming, and
 <td>
 {{ '![](Getting-Started_images/Getting-Started_img18.png)' | markdownify }}
 
-
 </td><td>
 Document Properties<br>It provides support for viewing and modifying properties of a document like Title, Company, Author, Manager, Keywords, and so on.</td></tr>
 <tr>
 <td>
 {{ '![](Getting-Started_images/Getting-Started_img19.png)' | markdownify }}
 
-
 </td><td>
 Add-Ins<br>Several add-ins for Microsoft Excel are provided.</td></tr>
 </table>
 
-
-### File Formats
+###File Formats
 
 Essential XlsIO supports the following file formats.
 
@@ -640,19 +649,17 @@ Essential XlsIO supports the following file formats.
 
 
 
-## Supported and Non-Supported Elements
+### Supported and Non-Supported Elements
 
 The list of various supported and non-supported Excel elements of Essential XlsIO for different platforms is given in the following table. XLS represents Excel 97 to 2003 format and XLSX represents Excel 2007 and above formats.
 
-_Table_ _6__: Supported and non-supported elements_
-
 <table>
 <tr>
-<th rowspan = "2">
-Elements</th><th colspan = "3">
-xls</th><th colspan = "3">
-xlsx</th><th rowspan = "2">
-xls to xlsx</th></tr>
+<th rowspan = "2">Elements</th>
+<th colspan = "3">xls</th>
+<th colspan = "3">xlsx</th>
+<th rowspan = "2">xls to xlsx</th>
+</tr>
 <tr>
 <th>
 Read</th><th>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Template-Support
+title: Template Support | Tile | ASP.NET | Syncfusion
 description: template support
 platform: aspnet
 control: Tile
@@ -14,8 +14,6 @@ The“data-ej-imagetemplateid” attribute is used to customize the image of Til
 Refer to the following code examples.
 
 {% highlight html %}
-
-
 
     <div id="tile"></div>
 
@@ -46,8 +44,6 @@ Refer to the following code examples.
     </script>
 
 
-
-
 {% endhighlight %}
 
 
@@ -56,47 +52,43 @@ Add the following code example.
 
 {% highlight html %}
 
-    <style>
+<style>
 
-        #appimage {
+	#appimage {
 
-            background-image: url("http://js.syncfusion.com/UG/mobile/content/google.png");
+		background-image: url("http://js.syncfusion.com/UG/mobile/content/google.png");
 
-            background-position: center center;
+		background-position: center center;
 
-            background-repeat: no-repeat;
+		background-repeat: no-repeat;
 
-            background-size: 50% auto;
+		background-size: 50% auto;
 
-            display: table-cell;
+		display: table-cell;
 
-            width: 45%;
+		width: 45%;
 
-        }
+	}
 
-        .tileMargin {
+	.tileMargin {
 
-            display: table-cell;
+		display: table-cell;
 
-            padding-top: 25px;
+		padding-top: 25px;
 
-        }
+	}
 
-        .e-tile-template {
+	.e-tile-template {
 
-            display: table;
+		display: table;
 
-            height: 100%;
+		height: 100%;
 
-            width: 100%;
+		width: 100%;
 
-        }
+	}
 
-    </style>
-
-
-
-
+</style>
 
 {% endhighlight %}
 

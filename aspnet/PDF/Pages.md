@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Pages | PDF | ASP.NET Webforms | Syncfusion
+title: Pages | PDF | ASP.NET | Syncfusion
 description: pages
 platform: aspnet
-control: PDF
+control: pdf
 documentation: ug
 ---
 
@@ -36,8 +36,10 @@ Some of the page sizes supported is as follows:
 
 The following code sample illustrate the various page settings.
 
-{% highlight c# %}
 
+{% tabs %}
+
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -77,10 +79,7 @@ document.Close(true);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-'Creates a new PDF document.
+{% highlight VB %}'Creates a new PDF document.
 
 Dim document As New PdfDocument()
 
@@ -117,7 +116,7 @@ document.Save("Output.pdf")
 document.Close(True)
 
 {% endhighlight %}
-
+{% endtabs %} 
 
 ## Add a Page
 
@@ -125,7 +124,9 @@ Add method of the PdfPage Collection class allows you to add an empty page in a 
 
 The following code sample explains you on how to add a page in a PDF file. The Add() method of the PdfPageCollection class adds the page at the end.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -157,7 +158,7 @@ document.Save("Sample.pdf");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -188,12 +189,15 @@ graphics.DrawString("Hello world!", font, brush,new PointF(20,20)) 
 document.Save("Sample.pdf")
 
 {% endhighlight %}
-
+{% endtabs %} 
 You can add new pages to an existing document in the front, middle, or at the end.
 
 The following code sample illustrates how to insert a new page by specifying the index.
 
-{% highlight c# %}
+
+{% tabs %}
+
+{% highlight C# %}
 
 //Loads the PDF document.
 
@@ -221,9 +225,9 @@ loadedDocument.Save("Output.pdf");
 
 loadedDocument.Close();
 
-{% endhighlight  %}
+{% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Loads the PDF document.
 
@@ -252,6 +256,7 @@ loadedDocument.Save("Output.pdf")
 loadedDocument.Close()
 
 {% endhighlight %}
+{% endtabs %} 
 
 ### Removing a page
 
@@ -262,7 +267,9 @@ You can also remove pages from an existing PDF document by using following metho
 
 The following code sample illustrates how to remove an existing page from the PDF document.
 
-{% highlight c# %}
+{% tabs %}
+ 
+{% highlight C# %}
 
 PdfLoadedDocument loadedDocument = new PdfLoadedDocument("Sample.pdf");
 
@@ -284,8 +291,7 @@ loadedDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
+{% highlight VB %}
 
 Dim loadedDocument As PdfLoadedDocument = New PdfLoadedDocument("Sample.pdf")
 
@@ -306,12 +312,16 @@ loadedDocument.Save("Sample.pdf")
 loadedDocument.Close(True)
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Import pages
 
 Essential PDF allows you to import a page or import a range of pages from one document to the other. The following code sample illustrates how to import a page to the existing document.
 
-{% highlight c# %}
+
+{% tabs %}
+
+{% highlight C# %}
 
 //Loads the PDF document.
 
@@ -339,9 +349,9 @@ loadedDocument.Close();
 
 document.Close();
 
-{% endhighlight  %}
+{% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Loads the PDF document.
 
@@ -370,10 +380,13 @@ loadedDocument.Close()
 document.Close()
 
 {% endhighlight %}
-
+{% endtabs %} 
 The following code sample illustrates how to import a page to the existing document using ImportPagemethod.
 
-{% highlight c# %}
+{% tabs %}
+
+
+{% highlight C# %}
 
 //Loads the PDF document.
 
@@ -399,7 +412,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Loads the PDF document.
 
@@ -424,19 +437,19 @@ loadedDocument.Close()
 document.Close()
 
 {% endhighlight %}
-
-### Implementation Note
+{% endtabs %} 
+#### Implementation Note
 
 Importing is done by converting the page content into PdfTemplate object that is, the new page does not inherit the possible complex layer structure, so that, only one default layer can be seen and something can be placed beneath that layer. However, you can not manipulate the "old" layers as they do not exist.
 
 This conversion is performed in order to avoid an incomplete page, harming further output. 
 
-### Restrictions
+#### Restrictions
 
 * The bookmark tree might not appear like the original document if just part of it is copied, as it is hard to recreate the tree with parts of the bookmark.
 * Some of the contents are usually imported from the original document to the final document during saving process. Hence, the original document should be closed only after the final document is saved.
 
-N> To import the document asynchronously for Windows Store apps, refer the [Asynchronous Support](http://docs.syncfusion.com/windowsforms/pdf/getting-started#asynchronous-support) section.
+N> To import the document asynchronously for Windows Store apps, refer the_ [Asynchronous Support](http://docs.syncfusion.com/windowsforms/pdf/getting-started#asynchronous-support) _section.
 
 ## TextElement
 
@@ -446,7 +459,11 @@ PDF provides higher-level facilities that permit an application to describe, sel
 
 The DrawString method draws the text string at the specified location with the selected Brush and Font.
 
-{% highlight c# %}
+
+{% tabs %}
+
+{% highlight C# %}
+
 //Creates a new PDF document.
 
 PdfDocument doc = new PdfDocument();
@@ -477,7 +494,7 @@ doc.Save("Sample.pdf");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -508,3 +525,4 @@ graphics.DrawString("Hello world!", font, brush,new PointF(20,20))
 doc.Save("Sample.pdf")
 
 {% endhighlight %}
+{% endtabs %} 

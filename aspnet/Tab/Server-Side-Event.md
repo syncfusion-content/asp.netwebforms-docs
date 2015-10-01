@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server-Side-Event
+title: Server Side Event | Tab | ASP.NET | Syncfusion
 description: server side event
 platform: aspnet
 control: Tab
@@ -121,18 +121,17 @@ Then Define pizzaMenu_TabItemActive server side event in the code behind.
 
 {% highlight c# %}
 
-    protected void pizzaMenu_TabItemActive(object sender, Syncfusion.JavaScript.Web.TabEventArgs e)
+protected void pizzaMenu_TabItemActive(object sender, Syncfusion.JavaScript.Web.TabEventArgs e)
+{
 
-    {
+	//e.NewSelectedIndex – Current selected index value.
 
-        //e.NewSelectedIndex – Current selected index value.
+	//e.OldSelectedIndex – Previous index value.
 
-        //e.OldSelectedIndex – Previous index value.
+	//e.EventType – Event Name
 
-        //e.EventType – Event Name
+	//e.Arguments – Contains Keys and Values for prevActiveIndex and activeIndex
 
-        //e.Arguments – Contains Keys and Values for prevActiveIndex and activeIndex
-
-   }
+}
 
 {% endhighlight %}

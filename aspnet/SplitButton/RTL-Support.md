@@ -1,9 +1,9 @@
 ---
 layout: post
-title: RTL-Support
+title: RTL Support | SplitButton | ASP.NET | Syncfusion
 description: rtl support
 platform: aspnet
-control: Split Button
+control: SplitButton
 documentation: ug
 ---
 
@@ -16,8 +16,6 @@ The following step explains the details about rendering the Button with Right to
 In an ASPX page, define the Split Button control. Set the EnableRTL property to true.  
 
 {% highlight html %}
-
-
 
 <div class="page-align">
 
@@ -36,8 +34,6 @@ In an ASPX page, define the Split Button control. Set the EnableRTL property to 
       </ej:SplitButton>
 
 </div>
-
-
 
 {% endhighlight %}
 

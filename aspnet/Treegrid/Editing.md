@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editing
+title: Editing | TreeGrid | ASP.NET | Syncfusion
 description: editing
 platform: aspnet
 control: TreeGrid
@@ -11,33 +11,22 @@ documentation: ug
 
 The TreeGrid control provides built-in support for Editing cell items. 
 
-## Cell Editing
+### Cell Editing
 
 Update the task details through grid Cell Editing by setting EditMode as CellEditing.
 
 The following code example shows you how to enable CellEditing in TreeGrid control.
 
 
-
-
-
-
-
 {% highlight html %}
-
-
 
 <ej:TreeGrid runat="server" ID="TreeGridControlEditing">
 
-//...
+    //...
 
-<EditSettings AllowEditing="true" EditMode="CellEditing"/>
+    <EditSettings AllowEditing="true" EditMode="CellEditing"/>
 
 </ej:TreeGrid>
-
-
-
-
 
 {% endhighlight %}
 

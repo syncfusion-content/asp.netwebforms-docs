@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drag-and-Drop
+title: Drag and Drop | TreeView | ASP.NET | Syncfusion
 description: drag and drop
 platform: aspnet
 control: TreeView
 documentation: ug
 ---
 
-## Drag and Drop
+# Drag and Drop
 
 You can Drag and Drop the nodes within the TreeView control or drag a particular node from one tree to another tree.
 
@@ -123,8 +123,6 @@ In the ASPX page, add the elements to configure TreeView.
 
 </ej:TreeView>
 
-
-
 {% endhighlight %}
 
 
@@ -141,7 +139,7 @@ Node appearance after dropping</td></tr>
 
 </table>
 
-### Allow Drop Child
+## Allow Drop Child
 
 You can allow the child level of specified node to be dropped in TreeView by using the AllowDropChild property, and it is specified in the controls section as follows.
 
@@ -251,11 +249,9 @@ You can allow the child level of specified node to be dropped in TreeView by usi
 
 </ej:TreeView>
 
-
-
 {% endhighlight %}
 
-### Allow Drag and Drop across control
+## Allow Drag and Drop across control
 
 In TreeView control, you can drag and drop a node from one TreeView to another by using the property AllowDragAndDropAcrossControl. You can specify the property in TreeView control as follows.
 
@@ -369,7 +365,7 @@ In TreeView control, you can drag and drop a node from one TreeView to another b
 
 {% endhighlight %}
 
-### Allow Drop Sibling
+## Allow Drop Sibling
 
 You can drag the root node and drop it into the same level of node that is a sibling node in TreeView by using the property AllowDropSibling. You can specify the property AllowDropSibling in TreeView control as follows.
 
@@ -478,8 +474,6 @@ You can drag the root node and drop it into the same level of node that is a sib
     </Nodes>
 
 </ej:TreeView>
-
-
 
 {% endhighlight %}
 

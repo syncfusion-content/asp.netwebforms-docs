@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Document Settings | PDF | ASP.NET Webforms | Syncfusion
+title: Document Settings | PDF | ASP.NET | Syncfusion
 description: document settings
 platform: aspnet
-control: PDF
+control: pdf
 documentation: ug
 ---
 
@@ -24,7 +24,9 @@ The following are the list of attributes available under PdfDocumentInformation 
 
  The following code example illustrates how to read the document information.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 PdfLoadedDocument document = new PdfLoadedDocument("input.pdf");
 
@@ -44,7 +46,7 @@ Console.WriteLine(document.DocumentInformation.Producer);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Dim document As New PdfLoadedDocument("input.pdf")
 
@@ -63,12 +65,14 @@ Console.WriteLine(document.DocumentInformation.Creator)
 Console.WriteLine(document.DocumentInformation.Producer)
 
 {% endhighlight %}
+{% endtabs %} 
 
 N> You can write the document information with the newly created document.
 
 The following code example illustrates how to write the document information.
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -112,9 +116,9 @@ document.Save("Output.pdf");
 
 document.Close(true);
 
-{% endhighlight  %}
+{% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -159,60 +163,63 @@ document.Save("Output.pdf")
 document.Close(True)
 
 {% endhighlight %}
+{% endtabs %} 
 
 The Document settings help in storing information about the document. It can also control the way they are displayed when they are open in the viewer.
 
 ![](Document-Settings_images/Document-Settings_img2.png)
 
-
 N> You cannot overwrite the existing metadata information.
 
-### Viewer Preference
+## Viewer Preference
 
 A PDF file can control the way the document is presented on the screen when it is opened in the viewer. Essential PDF allows you to set these preferences using the PdfViewerPreferences class. You can perform the following customizations of the viewer when the document is open.
 
-_Table3: List of customizations_
+_List of customizations_
 
 <table>
 <tr>
-<th>
-HideToolbar</th><td>
+<td>
+<b>HideToolbar</b></td><td>
 A flag specifying whether to hide the viewer application's toolbar when the document is active.</td></tr>
 <tr>
-<th>
-HideMenubar</th><td>
+<td>
+<b>HideMenubar</b></td><td>
 A flag specifying whether to hide the viewer application's menu bar when the document is active.</td></tr>
 <tr>
-<th>
-HideWindowUI</th><td>
+<td>
+<b>HideWindowUI</b></td><td>
 A flag specifying whether to hide user interface elements in the document's window (such as scroll bar and navigation controls), leaving only the document's contents to be displayed.</td></tr>
 <tr>
-<th>
-FitWindow</th><td>
+<td>
+<b>FitWindow</b></td><td>
 A flag specifying whether to resize the document's window to fit the size of the first displayed page.</td></tr>
 <tr>
-<th>
-CenterWindow</th><td>
+<td>
+<b>CenterWindow</b></td><td>
 A flag specifying whether to position the document's window in the center of the screen.</td></tr>
 <tr>
-<th>
-DisplayTitle</th><td>
+<td>
+<b>DisplayTitle</b></td><td>
 A flag specifying whether to display the document's title in the top bar.</td></tr>
 <tr>
-<th>
-PageLayout</th><td>
-The page layout to be used when the document is opened.* OneColumn - Displays the pages in one column.* SinglePage - Displays one page at a time.* TwoColumnLeft - Displays the pages in two columns with odd-numbered pages on the left.* TwoColumnRight - Displays the pages in two columns with odd-numbered pages on the right.* TwoPageLeft - Displays the pages two at a time with odd-numbered pages on the left.* TwoPageRight - Displays the pages two at a time with odd-numbered pages on the right.</td></tr>
+<td>
+<b>PageLayout</b></td><td>
+The page layout to be used when the document is opened.{{ '* OneColumn  ' | markdownify }} - Displays the pages in one column.<br/>* {{ '* SinglePage' | markdownify }} - Displays one page at a time.{{ '*TwoColumnLeft' | markdownify }} - Displays the pages in two columns with odd-numbered pages on the left.{{ '* TwoColumnRight' | markdownify }} - Displays the pages in two columns with odd-numbered pages on the right.{{ '* TwoPageLeft' | markdownify }} - Displays the pages two at a time with odd-numbered pages on the left.{{ '* TwoPageRight' | markdownify }} - Displays the pages two at a time with odd-numbered pages on the right.</td></tr>
 <tr>
-<th>
-PageMode - </th><td>
-<br>The page mode specifies how the document should be displayed when opened.* UseNone - Neither document outline nor thumbnail images visible. * UseOutlines - Document outline visible.* UseThumbs - Thumbnail images visible.* FullScreen - Full-screen mode, without menu bar, window controls, or any other window visible.* UseOC - Optional content group panel visible.* UseAttachments - Attachments panel visible.<br></td></tr>
+<td>
+<b> PageMode</b> - </td><td>
+The page mode specifies how the document should be displayed when opened.{{ '* UseNone' | markdownify }} - Neither document outline nor thumbnail images visible. {{ '* UseOutlines' | markdownify }} - Document outline visible.{{ '* UseThumbs' | markdownify }} - Thumbnail images visible.{{ '* FullScreen' | markdownify }} - Full-screen mode, without menu bar, window controls, or any other window visible.{{ '* UseOC' | markdownify }} - Optional content group panel visible.{{ '* UseAttachments' | markdownify }} - Attachments panel visible.</td></tr>
 <tr>
-<th>
-PageScaling</th><td>
-<br>An option to be selected when a print dialog is displayed for this document* AppDefault – Indicates the conforming reader’s default print scaling* None – Indicates no page scaling.</td></tr>
+<td>
+<b> PageScaling</b></td><td>
+An option to be selected when a print dialog is displayed for this document{{ '* AppDefault' | markdownify }} – Indicates the conforming reader’s default print scaling{{ '* None' | markdownify }} – Indicates no page scaling.</td></tr>
 </table>
 
-{% highlight c# %}
+{% tabs %}
+
+
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -264,7 +271,7 @@ document.Close(true);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -315,5 +322,8 @@ document.Save("Sample.pdf")
 document.Close(True)
 
 {% endhighlight %}
-
+{% endtabs %} 
 ![](Document-Settings_images/Document-Settings_img4.png)
+
+
+

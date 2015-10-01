@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Appearance and Styling | Tab | ASP.NET | Syncfusion
 description: appearance and styling
 platform: aspnet
 control: Tab
@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance and Styling
 
-### Header Image Customization
+## Header Image Customization
 
 To set the Tab Header image for each Tab item, you need to specify image in the ImageCssClass property during the TabItem declaration.
 
@@ -57,39 +57,39 @@ Add the following CSS for header image customization.
 
 {% highlight css %}
 
-        .dish {
+.dish {
 
-            display: inline-block;
+	display: inline-block;
 
-            vertical-align: middle;
+	vertical-align: middle;
 
-            margin: 0px -9px 0px 9px;           
+	margin: 0px -9px 0px 9px;           
 
-        }
+}
 
-        .pizzaImg {
+.pizzaImg {
 
-            background: url("http://js.syncfusion.com/UG/Web/Content/rsz_chicken-delite.png") no-repeat;
+	background: url("http://js.syncfusion.com/UG/Web/Content/rsz_chicken-delite.png") no-repeat;
 
-            height: 25px;
+	height: 25px;
 
-            width: 25px;
+	width: 25px;
 
-        }
+}
 
-        .sandwichImg, .pastaImg {
+.sandwichImg, .pastaImg {
 
-            height: 25px;
+	height: 25px;
 
-            width: 25px;
+	width: 25px;
 
-        }
+}
 
-        .sandwichImg {
+.sandwichImg {
 
-            background: url("http://js.syncfusion.com/UG/Web/Content/rsz_garden-fresh.png") no-repeat;
+	background: url("http://js.syncfusion.com/UG/Web/Content/rsz_garden-fresh.png") no-repeat;
 
-        }
+}
 
 
 
@@ -144,10 +144,6 @@ Add the following ASPX to render Tab with Rounder corners.
     </Items>
 
 </ej:Tab>
-
-
-
-
 
 {% endhighlight %}
 
@@ -241,10 +237,6 @@ Add the following ASPX to render the Tab with Reload icon.
 
     </ej:Tab>
 
-
-
-
-
 {% endhighlight %}
 
 The following screenshot illustrates the Tab with reload icon.
@@ -260,6 +252,8 @@ You can collapse the Tab content by setting the Collapsible property to true. Wh
 The following code example is used to render the Tab control with customized Collapsible mode.
 
 Add the following ASPX to render Tab with customized Collapsible mode.
+
+{% highlight html %}
 
 <ej:Tab ID="dishtype" runat="server" Collapsible="true" Width="600px">
 
@@ -293,7 +287,7 @@ Add the following ASPX to render Tab with customized Collapsible mode.
 
 </ej:Tab>
 
-
+{% endhighlight %}
 
 The following screenshot illustrates the Tab with customized collapsible mode.
 
@@ -347,10 +341,6 @@ Add the following ASPX to render Tab with customized height and height adjust mo
 
 </ej:Tab>
 
-
-
-
-
 {% endhighlight %}
 
 The following screenshot illustrates the Tab with customized height and height adjust mode.
@@ -396,8 +386,6 @@ Add the following ASPX to render the Tab with customized Width.
         </Items>
 
     </ej:Tab>
-
-
 
 {% endhighlight %}
 
@@ -471,23 +459,17 @@ Add the following ASPX to render Tab with customized style.
 
 </ej:Tab>
 
-
-
-
-
 {% endhighlight %}
 
 Add the following styles
 
 {% highlight css %}
 
-        .custom {
+.custom {
 
-            width:650px;
+	width:650px;
 
-        }
-
-
+}
 
 {% endhighlight %}
 

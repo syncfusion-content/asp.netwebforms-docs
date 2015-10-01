@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize-size
+title: Customize size | Tile | ASP.NET | Syncfusion
 description: customize size
 platform: aspnet
 control: Tile
@@ -22,25 +22,21 @@ Refer to the following code examples.
 
 {% highlight html %}
 
+<div id="tile"></div>
 
+<script>
 
-    <div id="tile"></div>
+	$("#tile").ejTile({
 
-    <script>
+		tileSize: "medium", imagePosition: "center",
 
-        $("#tile").ejTile({
+		imageUrl: "http://js.syncfusion.com/UG/Web/Content/tile/pictures.png",
 
-            tileSize: "medium", imagePosition: "center",
+		text: "Pictures"
 
-            imageUrl: "http://js.syncfusion.com/UG/Web/Content/tile/pictures.png",
+	})
 
-            text: "Pictures"
-
-        })
-
-    </script>	
-
-
+</script>	
 
 {% endhighlight %}
 

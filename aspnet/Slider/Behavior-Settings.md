@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Behavior-Settings
+title: Behavior Settings | Slider | ASP.NET | Syncfusion
 description: behavior settings 
 platform: aspnet
 control: Slider
@@ -25,12 +25,11 @@ In an ASPX page, define the Slider control and configure the Height and Width pr
 
 <ej:Slider ID="BasicSlider" runat="server" Height="20" Width="500"> </ej:Slider>
 
-
 {% endhighlight %}
 
 The following screenshot displays the output of the above code example.
 
- ![](Behavior-Settings_images/Behavior-Settings_img1.png)
+![](Behavior-Settings_images/Behavior-Settings_img1.png)
 
 
 ## IncrementStep
@@ -45,12 +44,11 @@ In an ASPX page, define the Slider control and configure the IncrementStep prope
 
 <ej:Slider ID="BasicSlider" runat="server" Height="20" Width="500" IncrementStep="5"></ej:Slider>
 
-
 {% endhighlight %}
 
 The following screenshot displays the output of the above code example.
 
- ![](Behavior-Settings_images/Behavior-Settings_img2.png)
+![](Behavior-Settings_images/Behavior-Settings_img2.png)
 
 
 

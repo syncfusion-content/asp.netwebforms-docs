@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integration-with-other-controls
+title: Integration with other controls | Tab | ASP.NET | Syncfusion
 description: integration with other controls
 platform: aspnet
 control: Tab
@@ -81,10 +81,6 @@ Add the following ASPX to render Tab with other controls.
 
 </ej:Tab>
 
-
-
-
-
 {% endhighlight %}
 
 To render the rating control in the first Tab element, refer to the styles mentioned in the following code example. 
@@ -93,17 +89,13 @@ Add the following styles to render the Tab.
 
 {% highlight css %}
 
-        .dishRating {
+.dishRating {
 
-            position: absolute;
+	position: absolute;
 
-            margin: -31px 0px 0px 80px;
+	margin: -31px 0px 0px 80px;
 
-        }   
-
-
-
-
+}   
 
 {% endhighlight %}
 

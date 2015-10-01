@@ -1,17 +1,17 @@
 ---
 layout: post
-title: TreeView-with-Context-Menu-Support
+title: TreeView with Context Menu Support | TreeView | ASP.NET | Syncfusion
 description: treeview with context menu support
 platform: aspnet
 control: TreeView
 documentation: ug
 ---
 
-## TreeView with Context Menu Support
+# TreeView with Context Menu Support
 
 TreeView control is available with context menu options that open when right clicked over the node. Other than the default menu items available, you can add the new node dynamically in TreeView or delete the item. You can also enable or disable the item in TreeView. It is achieved by adding the Context Menu option to the TreeView.
 
-### Menu Item
+## Menu Item
 
 By default, the Context Menu options are provided with 4 items namely Add New Item, Delete Item, Enable Item and Disable Item. When you want to customize and use your own Custom Menu items, you can customize the TreeView with your desired collections. 
 

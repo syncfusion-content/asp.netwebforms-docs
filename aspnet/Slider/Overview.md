@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Slider | ASP.NET | Syncfusion
 description: overview
 platform: aspnet
 control: Slider

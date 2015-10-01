@@ -1,6 +1,6 @@
 ---
 layout: post
-title: State-persistence
+title: State persistence | TimePicker | ASP.NET | Syncfusion
 description: state persistence
 platform: aspnet
 control: TimePicker
@@ -18,8 +18,6 @@ The following code explains you how to use theEnablePersistence property.
 {% highlight html %}
 
 <ej:TimePicker ID="time" Value="10:10 AM" EnablePersistence="true" runat="server"></ej:TimePicker>
-
-
 
 {% endhighlight %}
 

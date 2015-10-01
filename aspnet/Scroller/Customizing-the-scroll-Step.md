@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customizing-the-scroll-Step
+title: Customizing the scroll Step | Scroller | ASP.NET | Syncfusion
 description: customizing the scroll step
 platform: aspnet
-control: Overview
+control: Scroller
 documentation: ug
 ---
 
-## Customizing the scroll Step
+# Customizing the scroll Step
 
 The Scroller control allows to specify the scroll movement step in a pixel value. This step value is added to the scrollbar position when the arrow key is pressed. Based on the position value, the scrollbar moves in its corresponding orientation. You can achieve this in the Scroller control by using the ScrollOneStepBy.
 
@@ -96,13 +96,13 @@ In an ASPXpage, add the following code to render the Scroller.
 {% highlight css %}
 
 
-        .sampleContent {
+.sampleContent {
 
-            width: 700px;
+	width: 700px;
 
-            padding: 15px;
+	padding: 15px;
 
-        }
+}
 
 {% endhighlight %}
 

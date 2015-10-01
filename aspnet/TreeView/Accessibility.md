@@ -1,21 +1,19 @@
 ---
 layout: post
-title: Accessibility
+title: Accessibility | TreeView | ASP.NET | Syncfusion
 description: accessibility
 platform: aspnet
 control: TreeView
 documentation: ug
 ---
 
-## Accessibility
+# Accessibility
 
 TreeView provides full keyboard support. You can interact with the TreeView control by using the keyboard. It is compatible with the standard keyboard navigation and you can focus on TreeView with a predefined Alt and Key combination. Also, you can navigate through the nodes, expand or collapse, select, check and uncheck nodes with the provided shortcut keys. You can access the TreeView with the shortcut keys by using the AllowKeyboardNavigation property.
 
 This feature is mainly useful for all the keyboard users to access the TreeView with the keyboard shortcut keys.
 
 The following table showcases the various keyboard shortcuts available in the TreeView control. 
-
-_Keyboard Shortcuts_
 
 <table>
 <tr>
@@ -191,8 +189,6 @@ In the ASPX page, add elements to configure TreeView.
 
 </ej:TreeView>
 
-
-
 {% endhighlight %}
 
 
@@ -222,8 +218,6 @@ In the ASPX page, add elements to configure TreeView.
     });	
 
 </script>
-
-
 
 {% endhighlight %}
 

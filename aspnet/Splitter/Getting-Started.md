@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Splitter | ASP.NET | Syncfusion
 description: getting started
 platform: aspnet
 control: Splitter
@@ -15,9 +15,7 @@ ASP.NET Splitter control consists of movable split bar(s) that divides a conta
 
 From the following guidelines, you can create a Splitter, add TreeView in the Splitter and set actions to view the image. It is used to split the document or image and Expand or Collapse in the Splitter. The following screenshot demonstrates the functionality of Splitter widget.
 
-
-
- ![](Getting-Started_images/Getting-Started_img1.png)
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -28,8 +26,6 @@ You can create an ASP.NET Web Forms Project and add necessary Dll’s and sc
 Add the following code example to the corresponding ASPX page to render Splitter.
 
 {% highlight html %}
-
-
 
 <div class="content-container-fluid">
 
@@ -121,10 +117,6 @@ Add the following code example to the corresponding ASPX page to render Split
 
 </div>
 
-
-
-
-
 {% endhighlight %}
 
 
@@ -133,53 +125,53 @@ Add the following styles to show the Splitter control in horizontal order.
 
 {% highlight css %}
 
-       #outterSplitter
+#outterSplitter
 
-        {
+{
 
-            margin: 0 auto;
+	margin: 0 auto;
 
-        }
+}
 
-        .cont
+.cont
 
-        {
+{
 
-            padding: 20px;
+	padding: 20px;
 
-            min-width: 50px;
+	min-width: 50px;
 
-        }
+}
 
-        .cont #treeView_Container
+.cont #treeView_Container
 
-        {
+{
 
-            margin-bottom: 0;
+	margin-bottom: 0;
 
-            border: none;
+	border: none;
 
-        }
+}
 
-        .h3
+.h3
 
-        {
+{
 
-            font-size: 14px;
+	font-size: 14px;
 
-            margin: 0;
+	margin: 0;
 
-        }
+}
 
 
 
-        .des
+.des
 
-        {
+{
 
-            display: none;
+	display: none;
 
-        }
+}
 
 {% endhighlight %}
 
@@ -236,8 +228,6 @@ Add the following code example in ASPX file to configure TreeView. Refer to th
 
 </ej:TreeView>
 
-
-
 {% endhighlight %}
 
 
@@ -248,17 +238,13 @@ Add the following code example in the ASPX page to set the action to view the 
 
 {% highlight js %}
 
-    function treeClicked(sender, args) {
+function treeClicked(sender, args) {
 
+	var content = $('.' + sender.currentElement[0].id).html();
 
+	$('._content').html(content);
 
-        var content = $('.' + sender.currentElement[0].id).html();
-
-        $('._content').html(content);
-
-    }
-
-
+}
 
 {% endhighlight %}
 
@@ -266,7 +252,7 @@ Add the following code example in the ASPX page to set the action to view the 
 
 The following screenshot is the output for the above code.
 
- ![](Getting-Started_images/Getting-Started_img2.png)
+![](Getting-Started_images/Getting-Started_img2.png)
 
 
 

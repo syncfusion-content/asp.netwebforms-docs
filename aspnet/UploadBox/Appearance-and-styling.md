@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-styling
+title: Appearance and styling | UploadBox | ASP.NET | Syncfusion
 description: appearance and styling 
 platform: aspnet
 control: UploadBox
@@ -47,17 +47,11 @@ In the ASPX page, add the UploadBox element and configure the texts in code behi
 
 {% highlight html %}
 
-
-
-    <ej:UploadBox ID="Uploadbox" runat="server"  SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx">
+<ej:UploadBox ID="Uploadbox" runat="server"  SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx">
 
     <UploadBoxButtonText Browse="Choose File" Cancel="Cancel Upload" Upload="Upload File" />
 
 </ej:UploadBox>
-
-
-
-
 
 {% endhighlight %}
 
@@ -101,17 +95,11 @@ In the ASPX page, add the UploadBox element and configure the DialogText in code
 
 {% highlight html %}
 
-
-
 <ej:UploadBox ID="Uploadbox" runat="server"  SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx">
 
    <UploadBoxDialogText Title="Upload File List" Name= "File Name" Size="File Size" Status= "File Status" />
 
 </ej:UploadBox>
-
-
-
-
 
 {% endhighlight %}
 
@@ -133,11 +121,7 @@ In the ASPX page, add the UploadBox element and set the ShowFileDetails property
 
 {% highlight html %}
 
-
-
 <ej:UploadBox ID="Uploadbox" runat="server" ShowFileDetails="true"  SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx" ></ej:UploadBox>
-
-
 
 {% endhighlight %}
 
@@ -162,8 +146,6 @@ In the ASPX page, add the UploadBox element and set the CustomFileDetails to cus
     <CustomFileDetails Title="false" Name="true" Action="true" Status="true" Size="false" />
 
 </ej:UploadBox>
-
-
 
 {% endhighlight %}
 
@@ -194,8 +176,6 @@ In the ASPX page, add the UploadBox element and set the DialogAction and DialogP
     <DialogPosition XValue="300px" YValue="150px" />
 
 </ej:UploadBox>
-
-
 
 {% endhighlight %}
 
@@ -233,6 +213,8 @@ By default, there are 13-theme supports available for the UploadBox control name
 
 Add the following code to your Master &ASPX page to initialize the Uploadbox with gradient-azure-dark theme. 
 
+{% highlight html %}
+
 <head>
 
 <link href="Content/ej/gradient-azure-dark/ej.web.all.min.css" rel="stylesheet" />
@@ -243,7 +225,7 @@ Add the following code to your Master &ASPX page to initialize the Uploadbox 
 
 <ej:UploadBox ID="Upload1" runat="server" SaveUrl="saveFiles.ashx" RemoveUrl="removeFiles.ashx"></ej:UploadBox>
 
-
+{% endhighlight %}
 
 Run the code to get the following output.
 
@@ -287,13 +269,7 @@ In the ASPX page, add the UploadBox element.
 
 {% highlight html %}
 
-
-
 <ej:UploadBox ID="Uploadbox" runat="server" SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx" CssClass="light-pink"></ej:UploadBox>
-
-
-
-
 
 {% endhighlight %}
 
@@ -327,7 +303,9 @@ In CSS, configure Custom Styles for the UploadBox. Here custom CSS is defined to
 
        .light-pink.e-upload-box.e-drag-wrapper .e-ul li:nth-child(even) .e-file-list .e-action-perform:hover,
 
-       .light-pink.e-upload-box.e-drag-wrapper .e-ul li:nth-child(odd) .e-file-list .e-action-perform:hover,            .light-pink.e-uploadbox.e-widget:hover,
+       .light-pink.e-upload-box.e-drag-wrapper .e-ul li:nth-child(odd) .e-file-list .e-action-perform:hover,
+
+       .light-pink.e-uploadbox.e-widget:hover,
 
        .light-pink.e-uploadbox .e-uploadbtn.e-select:hover,
 

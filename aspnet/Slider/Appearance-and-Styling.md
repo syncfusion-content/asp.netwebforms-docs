@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Appearance and Styling | Slider | ASP.NET | Syncfusion
 description: appearance and styling
 platform: aspnet
 control: Slider
 documentation: ug
 ---
 
-## Appearance and Styling
+# Appearance and Styling
 
 ## Theme
 
@@ -100,73 +100,71 @@ In an ASPX page, define the Slider control and configure the Slider with custom 
 
 {% highlight css %}
 
-   .purple.e-slider.e-control {
+.purple.e-slider.e-control {
 
-        background-color: burlywood;
+	background-color: burlywood;
 
-        border-color: #bbbcbb;
+	border-color: #bbbcbb;
 
-    }
+}
 
+.purple.e-tooltip {
 
+	background: none repeat scroll 0 0 violet;
 
-    .purple.e-tooltip {
+	/* Old browsers */
 
-        background: none repeat scroll 0 0 violet;
+	border-color: #1b95cf;
 
-        /* Old browsers */
+	color: white;
 
-        border-color: #1b95cf;
-
-        color: white;
-
-    }
+}
 
 
 
-    .purple.e-slider .e-handle.e-select {
+.purple.e-slider .e-handle.e-select {
 
-        background-color: purple;
+	background-color: purple;
 
-        border-color: purple;
+	border-color: purple;
 
-    }
-
-
-
-    .purple.e-slider .e-handle.e-hover {
-
-        background-color: purple;
-
-        border-color: purple;
-
-    }
+}
 
 
 
-    .purple.e-slider .e-handle.e-focus {
+.purple.e-slider .e-handle.e-hover {
 
-        box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+	background-color: purple;
 
-    }
+	border-color: purple;
 
-
-
-    .purple.e-slider .e-range {
-
-        background: none repeat scroll 0 0 violet;
-
-        /* Old browsers */
-
-    }
+}
 
 
 
-    .purple.e-scale .e-tick {
+.purple.e-slider .e-handle.e-focus {
 
-        background-image: url(images/dot.png);
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 
-    }
+}
+
+
+
+.purple.e-slider .e-range {
+
+	background: none repeat scroll 0 0 violet;
+
+	/* Old browsers */
+
+}
+
+
+
+.purple.e-scale .e-tick {
+
+	background-image: url(images/dot.png);
+
+}
 
 
 

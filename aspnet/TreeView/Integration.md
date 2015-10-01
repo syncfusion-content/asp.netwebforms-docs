@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Integration
+title: Integration | TreeView | ASP.NET | Syncfusion
 description: integration
 platform: aspnet
 control: TreeView
 documentation: ug
 ---
 
-## Integration
+# Integration
 
-### Angular Binding
+## Angular Binding
 
-AngularJS is a JavaScript framework. It is added to an HTML page with a <script> tag. It extends HTML attributes with directives, and binds data to HTML with expressions. AngularJS directives allow you to specify custom and reusable HTML tags that moderate the behavior of certain elements.
+AngularJS is a JavaScript framework. It is added to an HTML page with a &lt;script&gt; tag. It extends HTML attributes with directives, and binds data to HTML with expressions. AngularJS directives allow you to specify custom and reusable HTML tags that moderate the behavior of certain elements.
 
 Angular binding uses directives to plug its action into the page. Directives, all prefaced with ng-, are placed in HTML attributes. To know more about Angular binding refer to the following link,
 
@@ -87,7 +87,7 @@ Apply the plugin and property assigning the TreeView element through the directi
 
         ];
 
-    angular.module(' treeApp', ['ejangular']).controller('TreeCtrl', function ($scope) {
+        angular.module(' treeApp', ['ejangular']).controller('TreeCtrl', function ($scope) {
 
         $scope.dataList = localData;
 
@@ -95,9 +95,9 @@ Apply the plugin and property assigning the TreeView element through the directi
 
 </script>
 
-</div> </div> 
-
-
+  </div>
+  
+</div> 
 
 {% endhighlight %}
 
@@ -111,7 +111,7 @@ In the above code example, “ng-app” is a directive that is used to declare a
 
 
 
-### Knockout Binding
+## Knockout Binding
 
 KnockoutJS is a JavaScript library that allows you to bind HTML elements against any data model.
 
@@ -189,11 +189,11 @@ The following example depicts the way to bind data to the TreeView control throu
 
 
 
-        ];
+            ];
 
             window.employeeView = {
 
-                dataSource: ko.observableArray(localData),
+               dataSource: ko.observableArray(localData),
 
             };
 
@@ -202,30 +202,9 @@ The following example depicts the way to bind data to the TreeView control throu
         });
 
 
-
 </script>
-
-
 
 {% endhighlight %}
 
 
-
- ![](Integration_images/Integration_img2.png) 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![](Integration_images/Integration_img2.png) 

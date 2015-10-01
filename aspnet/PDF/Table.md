@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Table | PDF | ASP.NET Webforms | Syncfusion
+title: Table | PDF | ASP.NET | Syncfusion
 description: table
 platform: aspnet
-control: Control Name undefined
+control: pdf
 documentation: ug
 ---
 
@@ -16,13 +16,14 @@ Tables are useful for presenting a large quantity of information clearly and con
 
 ## Light Table
 
+
 Light table allows you to create a table with inputs from DataTable, arrays, or any other entity class. It allows you to perform simple formatting using events.  As this class allows minimal customization options, rendering is faster than PDF Grid and is recommended to draw a simple table. 
 
 ### Properties, Methods and Events
 
 #### Properties
 
-_Table_ _9_: Property Table
+
 
 <table>
 <tr>
@@ -72,9 +73,8 @@ Gets or sets the style of the light table.</td><td>
 PdfLightTableStyle</td></tr>
 </table>
 
-### Methods
+#### Methods
 
-_Table_ _10_: Methods Table
 
 <table>
 <tr>
@@ -158,7 +158,7 @@ PdfLightTableLayoutResult</td></tr>
 
 #### Events
 
-_Table_ _11_: Events Table
+
 
 <table>
 <tr>
@@ -208,9 +208,9 @@ This event is raised when the row number is requested.</td></tr>
 PdfLightTable is a table consisting of rows and columns that can be filled with data and rendered into the Page of the PDF Document. You can create a PdfLightTable with the following code sample.
 
 
-{% highlight c# %}
+{% tabs %}
 
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -264,9 +264,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -319,7 +317,7 @@ doc.Save("Output.pdf")
 doc.Close(True)
 
 {% endhighlight %}
-
+{% endtabs %} 
 #### Assigning DataSource to PdfLightTable
 
 Data to the PdfLightTable is assigned using DataSource property. This is achieved through:
@@ -337,10 +335,9 @@ Data source is an object that can be an array (two-dimensional, one-dimensional 
 The following code example illustrates how to assign external data source to PdfLightTable:
 
 
+{% tabs %}
 
-{% highlight c# %}
-
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -396,11 +393,9 @@ doc.Save("Output.pdf");
 
 doc.Close(true);
 
+
 {% endhighlight %}
-
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -457,16 +452,16 @@ doc.Save("Output.pdf")
 doc.Close(True)
 
 {% endhighlight %}
+{% endtabs %} 
 
 #### Table Direct
 
 You can directly add rows and columns to PdfLightTable. To achieve this, set DataSourceType property to PdfLightTableDataSourceType .TableDirect. The following code example illustrates this:
 
 
+{% tabs %}
 
-{% highlight c# %}
-
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -512,9 +507,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -559,7 +552,7 @@ doc.Save("Output.pdf")
 doc.Close(True)
 
 {% endhighlight %}
-
+{% endtabs %} 
 #### Event Handler
 
 Data to PdfLightTable can also be set using the following three events:
@@ -574,14 +567,9 @@ N> These events acts only when the DataSource property is not set.
 
 
 The following code sample illustrates this:
+{% tabs %}
 
-
-
-
-
-{% highlight c# %}
-
-
+{% highlight C# %}
 
 static string[][] datastring = new string[2][];
 
@@ -589,39 +577,39 @@ static void Main(string[] args)
 
 {
 
-//Creates a new PDF document.
+	//Creates a new PDF document.
 
-PdfDocument doc = new PdfDocument();
+	PdfDocument doc = new PdfDocument();
 
-//Adds a page.
+	//Adds a page.
 
-PdfPage page = doc.Pages.Add();
+	PdfPage page = doc.Pages.Add();
 
-// Gives it some column arrays.
+	// Gives it some column arrays.
 
-datastring[0] = new string[] { "111", "Maxim", "100" };
+	datastring[0] = new string[] { "111", "Maxim", "100" };
 
-datastring[1] = new string[] { "222", "Calvin", "95" };
+	datastring[1] = new string[] { "222", "Calvin", "95" };
 
-//Creates PdfLightTable.
+	//Creates PdfLightTable.
 
-PdfLightTable pdfLightTable = new PdfLightTable();
+	PdfLightTable pdfLightTable = new PdfLightTable();
 
-pdfLightTable.QueryColumnCount += new QueryColumnCountEventHandler(pdfLightTable_QueryColumnCount);
+	pdfLightTable.QueryColumnCount += new QueryColumnCountEventHandler(pdfLightTable_QueryColumnCount);
 
-pdfLightTable.QueryNextRow += new QueryNextRowEventHandler(pdfLightTable_QueryNextRow);
+	pdfLightTable.QueryNextRow += new QueryNextRowEventHandler(pdfLightTable_QueryNextRow);
 
-pdfLightTable.QueryRowCount += new QueryRowCountEventHandler(pdfLightTable_QueryRowCount);
+	pdfLightTable.QueryRowCount += new QueryRowCountEventHandler(pdfLightTable_QueryRowCount);
 
-//Draws the PdfLightTable.
+	//Draws the PdfLightTable.
 
-pdfLightTable.Draw(page, PointF.Empty);
+	pdfLightTable.Draw(page, PointF.Empty);
 
-//Saves the document.
+	//Saves the document.
 
-doc.Save("Output.pdf");
+	doc.Save("Output.pdf");
 
-doc.Close(true);
+	doc.Close(true);
 
 }
 
@@ -631,7 +619,7 @@ static void pdfLightTable_QueryColumnCount(object sender, QueryColumnCountEventA
 
 {
 
-args.ColumnCount = 3;
+	args.ColumnCount = 3;
 
 }
 
@@ -641,7 +629,7 @@ static void pdfLightTable_QueryRowCount(object sender, QueryRowCountEventArgs ar
 
 {
 
-args.RowCount = 2;
+	args.RowCount = 2;
 
 }
 
@@ -651,92 +639,90 @@ static void pdfLightTable_QueryNextRow(object sender, QueryNextRowEventArgs args
 
 {
 
-if (args.RowIndex < datastring.Length)
+	if (args.RowIndex < datastring.Length)
 
-args.RowData = new string[] { datastring[args.RowIndex][0], datastring[args.RowIndex][1], datastring[args.RowIndex][2] };
+	args.RowData = new string[] { datastring[args.RowIndex][0], datastring[args.RowIndex][1], datastring[args.RowIndex][2] };
 
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 Shared datastring As String()() = New String(1)() {}
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        'Creates a new PDF document.
+'Creates a new PDF document.
 
-        Dim doc As New PdfDocument()
+Dim doc As New PdfDocument()
 
-        'Adds a page.
+'Adds a page.
 
-        Dim page As PdfPage = doc.Pages.Add()
+Dim page As PdfPage = doc.Pages.Add()
 
-        ' Gives it some column arrays.
+' Gives it some column arrays.
 
-        datastring(0) = New String() {"111", "Maxim", "100"}
+datastring(0) = New String() {"111", "Maxim", "100"}
 
-        datastring(1) = New String() {"222", "Calvin", "95"}
+datastring(1) = New String() {"222", "Calvin", "95"}
 
-        'Creates PdfLightTable.
+'Creates PdfLightTable.
 
-        Dim pdfLightTable As New PdfLightTable()
+Dim pdfLightTable As New PdfLightTable()
 
-        AddHandler pdfLightTable.QueryColumnCount, AddressOf pdfLightTable_QueryColumnCount
+AddHandler pdfLightTable.QueryColumnCount, AddressOf pdfLightTable_QueryColumnCount
 
-        AddHandler pdfLightTable.QueryNextRow, AddressOf pdfLightTable_QueryNextRow
+AddHandler pdfLightTable.QueryNextRow, AddressOf pdfLightTable_QueryNextRow
 
-        AddHandler pdfLightTable.QueryRowCount, AddressOf pdfLightTable_QueryRowCount
-
-
-
-        'Draws the PdfLightTable.
-
-        pdfLightTable.Draw(page, PointF.Empty)
-
-        'Saves the document.
-
-        doc.Save("Output.pdf")
-
-        doc.Close(True)
-
-    End Sub
+AddHandler pdfLightTable.QueryRowCount, AddressOf pdfLightTable_QueryRowCount
 
 
 
-    'Gets the number of columns.
+'Draws the PdfLightTable.
 
-    Private Sub pdfLightTable_QueryColumnCount(sender As Object, args As QueryColumnCountEventArgs)
+pdfLightTable.Draw(page, PointF.Empty)
 
-        args.ColumnCount = 3
+'Saves the document.
 
-    End Sub
+doc.Save("Output.pdf")
 
-    'Gets the number of rows.
+doc.Close(True)
 
-    Private Sub pdfLightTable_QueryRowCount(sender As Object, args As QueryRowCountEventArgs)
+End Sub
 
-        args.RowCount = 2
 
-    End Sub
 
-    'Gets the row data.
+'Gets the number of columns.
 
-    Private Sub pdfLightTable_QueryNextRow(sender As Object, args As QueryNextRowEventArgs)
+Private Sub pdfLightTable_QueryColumnCount(sender As Object, args As QueryColumnCountEventArgs)
 
-        If args.RowIndex < datastring.Length Then
+	args.ColumnCount = 3
 
-            args.RowData = New String() {datastring(args.RowIndex)(0), datastring(args.RowIndex)(1), datastring(args.RowIndex)(2)}
+End Sub
 
-        End If
+'Gets the number of rows.
 
-    End Sub
+Private Sub pdfLightTable_QueryRowCount(sender As Object, args As QueryRowCountEventArgs)
+
+	args.RowCount = 2
+
+End Sub
+
+'Gets the row data.
+
+Private Sub pdfLightTable_QueryNextRow(sender As Object, args As QueryNextRowEventArgs)
+
+	If args.RowIndex < datastring.Length Then
+
+		args.RowData = New String() {datastring(args.RowIndex)(0), datastring(args.RowIndex)(1), datastring(args.RowIndex)(2)}
+
+	End If
+
+End Sub
 	
 {% endhighlight %}
-
+{% endtabs %} 
 ### Formatting a light table
 
 The PDF light table contains the most direct and indirect (through events) formatting options. The PdfLightTableStyle class, accessed through Style property of PdfLightTable instance contains a number of properties that allows formatting of the entire PdfLightTable or parts of it. Border and few other properties are discussed as follows.
@@ -753,10 +739,9 @@ Customizing BorderPen
 BorderPen allows you to customize the color of the table border, it is of type PdfPen. The following code sample allows you to customize the border color of the light table.
 
 
+{% tabs %}
 
-{% highlight c# %}
-
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -806,9 +791,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -857,8 +840,9 @@ doc.Save("Output.pdf")
 doc.Close(True)
 
 {% endhighlight %}
+{% endtabs %} 
 
-### Customizing BorderOverlapStyle
+#### Customizing BorderOverlapStyle
 
 BorderOverlapStyle decides whether the cell border overlaps the neighboring cells or if it should be drawn inside the cell.
 
@@ -870,10 +854,9 @@ N> This property applies for all cells in the PdfLightTable. You need to be care
 The following code sample allows you to customize the BoderOverlapStyle of the light table.
 
 
+{% tabs %}
 
-{% highlight c# %}
-
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -923,9 +906,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -974,8 +955,8 @@ doc.Save("Output.pdf")
 doc.Close(True)
 
 {% endhighlight %}
-
-### Padding and Spacing
+{% endtabs %} 
+#### Padding and Spacing
 
 Customization of the Cell padding and Cell spacing are also possible with access to the properties CellPadding and CellSpacing available in the Style of the light table.
 
@@ -984,10 +965,9 @@ The following code illustrates the customization of the cell padding and spacing
 
 
 
+{% tabs %}
 
-{% highlight c# %}
-
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -1039,9 +1019,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -1092,16 +1070,16 @@ doc.Save("Output.pdf")
 doc.Close(True)
 
 {% endhighlight %}
+{% endtabs %} 
 
-### Header
+#### Header
 
 Header is a set of rows that repeat on each page and has its own style. Rows for the header can be taken from column captions or from ordinary rows. In the latter case, the rows are treated as headers and do not appear in the body of the PdfLightTable.
 
+{% tabs %}
+ 
 
-
-{% highlight c# %}
-
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -1157,9 +1135,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -1214,16 +1190,15 @@ doc.Save("Output.pdf")
 doc.Close(True)
 
 {% endhighlight %}
-
-#### Row
+{% endtabs %}
+####  Row
 
 You can access and edit the rows of the light table using the Rows property. The values of existing row, entered with DataSourceType as PdfLightTableDataSourceType.TableDirect can be edited using the Values property. Following is the code that alters the content.
 
 
+{% tabs %}
 
-{% highlight c# %}
-
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -1273,9 +1248,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -1324,12 +1297,12 @@ doc.Save("Output.pdf")
 doc.Close(True)
 
 {% endhighlight %}
-
+{% endtabs %} 
 #### Column
 
 Properties in the column
 
-_Table_ _12_: Property Table
+_Property Table_
 
 <table>
 <tr>
@@ -1359,10 +1332,9 @@ float</td></tr>
 By default, PdfLightTable displays the column text as the DataSource column name. You can change the column text with the help of the ColumnName property. The following code sample illustrates the same:
 
 
+{% tabs %}
 
-{% highlight c# %}
-
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -1416,9 +1388,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -1471,7 +1441,7 @@ doc.Save("Output.pdf")
 doc.Close(True)
 
 {% endhighlight %}
-
+{% endtabs %} 
 #### StringFormat
 
 You can change the format of the data for a single column using the StringFormat property. Check String Formatting in DrawingText for more details.
@@ -1483,10 +1453,9 @@ By default, all the columns in a PdfLightTable have equal width, and the columns
 To customize the column width, you can use the Width property for each column of the PdfLightTable. The following code sample illustrates the same.
 
 
+{% tabs %}
 
-{% highlight c# %}
-
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -1536,9 +1505,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -1587,16 +1554,16 @@ doc.Save("Output.pdf")
 doc.Close(True)
 
 {% endhighlight %}
-
+{% endtabs %} 
 N> The unit of the Width property is always in points, and PDF units can be set only as points.  You can also use the PdfUnitConvertor class to convert the other units to points.
 
 #### Cell
 
 You can specify the default cell style by using the DefaultStyle property. You can set the style for the header cell using the HeaderStyle property.  An alternate style can also be specified using the AlternateStyle property. This property is used to customize the appearance of the cells in the odd row.
 
-#### Properties of a cell
+Properties of a cell
 
-_Table_ _13_: Property Table
+_Property Table_
 
 <table>
 <tr>
@@ -1640,10 +1607,9 @@ PdfPen</td></tr>
 The Style property enables you to customize the font along with its appearance (brush, pen and string format), and border along with the background of cells. Although there are fixed properties for styles, you can specify different styles using BeginCellLayout and EndCellLayout events.
 
 
+{% tabs %}
 
-{% highlight c# %}
-
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -1711,7 +1677,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -1778,7 +1744,7 @@ doc.Save("Output.pdf")
 doc.Close(True)
 
 {% endhighlight %}
-
+{% endtabs %} 
 ### Customization a light table
 
 PdfLightTable offers a set of events that helps in changing the look and feel of the PDF. The following are the list of events
@@ -1792,45 +1758,45 @@ PdfLightTable offers a set of events that helps in changing the look and feel of
 
 #### BeginPageLayout
 
+
 This event is raised before beginning the page layout. The arguments of this event are as follows.
 
-* Page (read-only): Page on which layout should be performed.
+•Page (read-only): Page on which layout should be performed.
 
-* Bounds: Size of the PdfLightTable part that should be laid out on the page.
+•Bounds: Size of the PdfLightTable part that should be laid out on the page.
 
-* Cancel: Enables to cancel layout.
+•Cancel: Enables to cancel layout.
 
 EndPageLayhis event is raised when layout on a page is finished. The arguments of this event are as follows:
 
-* Result (read-only): Layout result for the current page
+•Result (read-only): Layout result for the current page
 
-* NextPage: Page on which layout should continue
+•NextPage: Page on which layout should continue
 
 #### BeginRowLayout
 
 This event is raised before beginning the row layout of the light table. The arguments of this event are as follows:
 
-* RowIndex (read-only): Index of the row (zero based)
+•RowIndex (read-only): Index of the row (zero based)
 
-* CellStyle : Style of the cells within the row.
+•CellStyle : Style of the cells within the row.
 
-* ColumnSpanMap : Array of integers specifying column span.
+•ColumnSpanMap : Array of integers specifying column span.
 
-* Cancel: Enables to cancel layout.
+•Cancel: Enables to cancel layout.
 
-* IgnoreColumnFormat: Gets or sets a value indicating whether column string format should be ignored.
+•IgnoreColumnFormat: Gets or sets a value indicating whether column string format should be ignored.
 
-* Skip: Enables to skip the entire row.
+•Skip: Enables to skip the entire row.
 
-* MinimalHeight: Enables to specify the minimal row height, which is used to preserve space for images.
+•MinimalHeight: Enables to specify the minimal row height, which is used to preserve space for images.
 
 The following code example illustrates how to set the row height using BeginRowLayout event:
 
+{% tabs %}
 
 
-{% highlight c# %}
-
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -1878,25 +1844,25 @@ doc.Save("Output.pdf");
 
 doc.Close(true);
 
+
+
 void pdfLightTable_BeginRowLayout(object sender, BeginRowLayoutEventArgs args)
 
 {
 
-if (args.RowIndex == 0)
+	if (args.RowIndex == 0)
 
-{
+	{
 
-args.MinimalHeight = 25;
+	args.MinimalHeight = 25;
 
-}
+	}
 
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -1946,49 +1912,50 @@ doc.Close(True)
 
 Private Sub pdfLightTable_BeginRowLayout(sender As Object, args As BeginRowLayoutEventArgs)
 
-If args.RowIndex = 0 Then
+If args.RowIndex = 0 
 
-args.MinimalHeight = 25
+	Then
 
-End If
+		args.MinimalHeight = 25
+
+	End If
 
 End Sub
 
 {% endhighlight %}
 
 #### EndRowLayout
-
+{% endtabs %} 
 This event is raised when row layout is finished. The arguments of this event are as follows:
 
-* RowIndex (read-only): Index of the row (zero based),
+•RowIndex (read-only): Index of the row (zero based),
 
-* Cancel: Enables to cancel layout.
+•Cancel: Enables to cancel layout.
 
-* LayoutCompleted (read-only):  Gets a value indicating whether the row was drawn completely.
+•LayoutCompleted (read-only):  Gets a value indicating whether the row was drawn completely.
 
-* Bounds (read-only): Bounds of the row on the page.
+•Bounds (read-only): Bounds of the row on the page.
 
 #### BeginCellLayout
 
 This event is raised when cell layout starts. The arguments of this event are as follows:
 
-* RowIndex (read-only): Index of the current row
+•RowIndex (read-only): Index of the current row
 
-* CellIndex (read-only): Index of the current cell within the row
+•CellIndex (read-only): Index of the current cell within the row
 
-* Value (read-only): Text value of the cell
+•Value (read-only): Text value of the cell
 
-* Bounds (read-only): Bounds of the cell
+•Bounds (read-only): Bounds of the cell
 
-* Graphics : Graphics on which the cell should be drawn
+•Graphics : Graphics on which the cell should be drawn
 
-* Skip: Indicates if the cell should be skipped
+•Skip: Indicates if the cell should be skipped
 
  The following code example illustrates how to draw the graphics elements inside the cell.
+{% tabs %}
 
-{% highlight c# %}
-
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -2042,13 +2009,13 @@ void pdfLightTable_BeginCellLayout(object sender, BeginCellLayoutEventArgs args)
 
 {
 
-if (args.RowIndex == 0 && args.CellIndex == 1)
+	if (args.RowIndex == 0 && args.CellIndex == 1)
 
-{
+	{
 
-args.Graphics.DrawEllipse(PdfBrushes.Red, args.Bounds);
+	args.Graphics.DrawEllipse(PdfBrushes.Red, args.Bounds);
 
-}
+	}
 
 }
 
@@ -2056,9 +2023,7 @@ args.Graphics.DrawEllipse(PdfBrushes.Red, args.Bounds);
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -2117,32 +2082,32 @@ Private Sub pdfLightTable_BeginCellLayout(sender As Object, args As BeginCellLay
         End If
 
     End Sub
-	
-{% endhighlight %}
 
+{% endhighlight %}
+	{% endtabs %} 
 #### EndCellLayout
 
 This event is raised when cell layout finishes. The arguments of this event are as follows:
 
-* RowIndex (read-only): Index of the current row.
+•RowIndex (read-only): Index of the current row.
 
-* CellIndex (read-only): Index of the current cell within the row.
+•CellIndex (read-only): Index of the current cell within the row.
 
-* Value (read-only): Text value of the cell.
+•Value (read-only): Text value of the cell.
 
-* Bounds (read-only): Bounds of the cell.
+•Bounds (read-only): Bounds of the cell.
 
-* Graphics: Graphics on which the cell should be drawn.
+•Graphics: Graphics on which the cell should be drawn.
 
-### Grid
+## Grid
 
 Grid is based on cell model that offers rich API for formatting and layout options API for formatting and layout options. It can take input from DataTable, arrays, or any other entity class. Formatting can be done at all levels of PdfGrid. More features like Nested Grids, Row, and Column Spanning are also supported. It offers full control over the appearance and is recommended to draw complex table structures. 
 
-#### Properties, Methods and Events
+### Properties, Methods and Events
 
 #### Properties
 
-_Table_ _14_: Property Table
+_Property Table_
 
 <table>
 <tr>
@@ -2193,7 +2158,7 @@ PdfGridStyle</td></tr>
 </table>
 Methods
 
-_Table_ _15_: Methods Table
+_Methods Table_
 
 <table>
 <tr>
@@ -2273,16 +2238,15 @@ void</td></tr>
 (PdfPage page, float x, float y, float width, PdfGridLayoutFormat format)</td><td>
 PdfGridLayoutResult</td></tr>
 </table>
+Events
 
-#### Events
-
-_Table_ _16_: Events Table
+_Events Table_
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 BeginPageLayout</td><td>
@@ -2301,10 +2265,9 @@ N> You must add Syncfusion.Pdf.Grid namespace to work with PdfGrid.
 You can create a PdfGrid by simply specifying the new operator with a proper constructor. After assigning data source to the grid, it can be drawn using one of the overloads available in its Draw method.
 
 
-
-{% highlight c# %}
-
-
+{% tabs %}
+ 
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -2350,9 +2313,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -2397,24 +2358,23 @@ doc.Save("Output.pdf")
 doc.Close(True)
 
 {% endhighlight %}
-
+{% endtabs %}
 You can enter the data to PdfGrid manually or from an external data source. Also, the draw method helps you to control the layout of the PdfGrid and returns information after rendering the grid. The following topics discuss them.
 
 •Data
 
 •Layout
 
-Data
+#### Data
 
-#### External Data Source
+External Data Source
 
 You can bind data to a PdfGrid by associating it with an external data source. You can set the external data source by using the DataSource property. The following code example illustrates the same.
 
 
-
-{% highlight c# %}
-
-
+{% tabs %}
+ 
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -2460,9 +2420,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -2507,16 +2465,15 @@ doc.Save("Output.pdf")
 doc.Close(True)
 
 {% endhighlight %}
-
+{% endtabs %}
 #### Direct Rows and Columns
 
 Alternatively, you can bind data to a PdfGrid without setting any data source. This is achieved using the PdfGridRow and PdfGridColumn classes. The following code example illustrates this.
 
 
+{% tabs %}
 
-{% highlight c# %}
-
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -2566,9 +2523,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -2617,16 +2572,16 @@ pdfDocument.Save("Output.pdf")
 pdfDocument.Close(True)
 
 {% endhighlight %}
-
+{% endtabs %} 
 #### Layout
 
-#### PdfGridLayoutFormat
+PdfGridLayoutFormat
 
 You can create the layout of PdfGrid  using the PdfGridLayoutFormat class. Overload accepting pages can accept standard formats as other layout elements. However, they treat the PdfLayoutBreakType.FitElement value of Format.Break property for a single row and not for the entire PdfGrid. 
 
 #### Properties
 
-_Table_ _17_: Property Table
+_Property Table_
 
 <table>
 <tr>
@@ -2655,10 +2610,9 @@ RectangleF</td></tr>
 The PdfLayoutType class is used to specify the type of pagination. The Paginate LayoutType draws the PdfGrid to the next following pages, when the element exceeds the page. The OnePage layout draws the element only on one page. The following code example illustrates this.
 
 
-
-{% highlight c# %}
-
-
+{% tabs %}
+ 
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -2692,7 +2646,7 @@ for (int i = 0; i < 150;i++ )
 
 {
 
-dataTable.Rows.Add(new object[] { "E" + i.ToString(), "Name" + i.ToString() });
+	dataTable.Rows.Add(new object[] { "E" + i.ToString(), "Name" + i.ToString() });
 
 }
 
@@ -2712,9 +2666,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -2746,7 +2698,7 @@ dataTable.Columns.Add("Name")
 
 For i As Integer = 0 To 149
 
-dataTable.Rows.Add(New Object() {"E" + i.ToString(), "Name" + i.ToString()})
+	dataTable.Rows.Add(New Object() {"E" + i.ToString(), "Name" + i.ToString()})
 
 Next
 
@@ -2765,14 +2717,14 @@ pdfDocument.Save("Output.pdf")
 pdfDocument.Close(True)
 
 {% endhighlight %}
-
+{% endtabs %}
 #### PdfGridLayoutResult
 
 You can get layout settings for the drawn PdfGrid with the help of PdfGridLayoutResult class. You can also get the bounds and the last page where the PdfGrid is drawn using the Bounds and Page properties. This is mainly used to render the PDF element with respect to the position of the Grid.
 
-### Properties
+#### Properties
 
-_Table_ _18_: Property Table
+_Property Table_
 
 <table>
 <tr>
@@ -2792,11 +2744,9 @@ Gets the last page where PdfLightTable was drawn.</td><td>
 PdfPage</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
-
-
-
+{% highlight C# %}
 //Creates a new PDF document.
 
 PdfDocument pdfDocument = new PdfDocument();
@@ -2843,9 +2793,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -2892,12 +2840,12 @@ pdfDocument.Save("Output.pdf")
 pdfDocument.Close(True)
 
 {% endhighlight %}
-
-#### Formatting a grid
+{% endtabs %} 
+### Formatting a grid
 
 This section explains you the direct options available to format PdfGrid. The PdfGridStyle class, accessible through Style property of PdfGrid provides options to format entire PdfGrid or parts of it. Formatting applicable for the entire PdfGrid using PdfGridStyle class is discussed here. Header, Row, Column, and Cell are discussed in the following sections.
 
-N> If the style properties are applied to both PdfGridCell and PdfGridRow, PdfGridCell takes the precedence. Following is an example for the exact order of precedence.
+ N> If the style properties are applied to both PdfGridCell and PdfGridRow, PdfGridCell takes the precedence. Following is an example for the exact order of precedence.
 
 
 
@@ -2905,7 +2853,7 @@ PdfBrush backgroundBrush = Cell.BackgroundBrush ?? Row.Style.BackgroundBrush ?? 
 
 #### Properties
 
-_Table_ _19_: Property Table
+
 
 <table>
 <tr>
@@ -2959,7 +2907,8 @@ TextPen</td><td>
 Gets or sets the text pen.</td><td>
 PdfPen</td></tr>
 </table>
-AllowHorizontalOverflow
+
+#### AllowHorizontalOverflow
 
 When you set AllowHorizontalOverflow to True, the columns exceeding the current page width gets wrapped and drawn to the next or last page. The default value is false. It should be used along with HorizontalOverflowType property. The default value of HorizontalOverflowType is PdfHorizontalOverflowType.LastPage.
 
@@ -2979,25 +2928,25 @@ The distance between the cells otherwise known as CellSpacing, can be set to all
 
 #### Header
 
+Header
+
 Header is a set of rows that can be optionally repeated on each page and has its own style. You can add header as follows:
 
-* Directly from column captions.
+• Directly from column captions.
 
-* By using Add method of the PdfGridHeaderCollection class.
+• By using Add method of the PdfGridHeaderCollection class.
 
 
-N> When you bind data source to PdfGrid, column captions will be automatically added to header collection. It can be removed at any time using Clear method of PdfGridHeaderCollection.
+N> When you bind data source to PdfGrid, column captions will be automatically added to header collection. It can be removed at any time using Clear method of PdfGridHeaderCollection
 
 
 
 The following code example illustrates how to add headers to PdfGrid by using the Add method.
 
+{% tabs %}
 
 
-{% highlight c# %}
-
-
-
+{% highlight C# %}
 //Creates a new PDF document.
 
 PdfDocument pdfDocument = new PdfDocument();
@@ -3052,14 +3001,11 @@ pdfDocument.Save("Output.pdf");
 
 pdfDocument.Close(true);
 
-
-
 {% endhighlight %}
 
 
 
-{% highlight vbnet %}
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -3120,19 +3066,16 @@ pdfDocument.Save("Output.pdf")
 pdfDocument.Close(True)
 
 
-
-
-
 {% endhighlight %}
-
+{% endtabs %} 
 #### RepeatHeader
 
 Header can be set to repeat on each page where PdfGrid is paginated. You can achieve this by setting RepeatHeader property as true.
 
 
+{% tabs %}
 
-{% highlight c# %}
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -3202,16 +3145,11 @@ pdfDocument.Save("Output.pdf");
 
 pdfDocument.Close(true);
 
-
-
-
-
 {% endhighlight %}
 
 
 
-{% highlight vbnet %}
-
+{% highlight VB %}
 'Creates a new PDF document.
 
 Dim pdfDocument As New PdfDocument()
@@ -3279,20 +3217,16 @@ pdfDocument.Save("Output.pdf")
 pdfDocument.Close(True)
 
 
-
-
-
 {% endhighlight %}
-
+{% endtabs %} 
 #### Style
 
 You can specify the header style for the PdfGrid by using the PdfGridRowStyle or PdfGridCellStyle classes. The style applied at the collection is applied to all rows in the header. Following code example illustrates how to specify the header style.
 
+{% tabs %}
 
 
-{% highlight c# %}
-
-
+{% highlight C# %}
 //Creates a new PDF document.
 
 PdfDocument pdfDocument = new PdfDocument();
@@ -3372,8 +3306,8 @@ pdfDocument.Close(true);
 {% endhighlight %}
 
 
-{% highlight vbnet %}
 
+{% highlight VB %}
 'Creates a new PDF document.
 
 Dim pdfDocument As New PdfDocument()
@@ -3451,9 +3385,7 @@ pdfDocument.Close(True)
 
 
 {% endhighlight %}
-
-
-
+{% endtabs %} 
 N> Styles for each PdfGridRow in Header can be individually applied using PdfGridRowStyle class
 
 Refer to the following topics for more details:
@@ -3464,15 +3396,16 @@ PdfGridCellStyle
 
 #### Row
 
-#### Height
+Row
+
+Height
 
 The Height property of the PdfGridRow class is used to specify the row height for the PdfGrid rows. The following code example illustrates you how to set this property.
 
 
+{% tabs %}
 
-{% highlight c# %}
-
-
+{% highlight C# %}
 //Creates a new PDF document.
 
 PdfDocument pdfDocument = new PdfDocument();
@@ -3525,13 +3458,9 @@ pdfDocument.Save("Output.pdf");
 
 pdfDocument.Close(true);
 
-
 {% endhighlight %}
 
-
-
-{% highlight vbnet %}
-
+{% highlight VB %}
 'Creates a new PDF document.
 
 Dim pdfDocument As New PdfDocument()
@@ -3584,13 +3513,9 @@ pdfDocument.Save("Output.pdf")
 
 pdfDocument.Close(True)
 
-
-
-
-
 {% endhighlight %}
 
-
+{% endtabs %} 
 
 N> The unit of the Height property is always points. You can set the PDF units only as points. Also, you can use the PdfUnitConvertor class to convert the other units to points.
 
@@ -3598,10 +3523,10 @@ N> The unit of the Height property is always points. You can set the PDF units o
 
 PdfGrid enables you to merge cells within a row. You can specify the number of cells to be merged using the RowSpan property of PdfGridCell class. The following code example illustrates this.
 
+{% tabs %}
 
 
-{% highlight c# %}
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -3661,9 +3586,7 @@ pdfDocument.Close(true);
 
 
 
-{% highlight vbnet %}
-
-'Creates a new PDF document.
+{% highlight VB %}'Creates a new PDF document.
 
 Dim pdfDocument As New PdfDocument()
 
@@ -3716,7 +3639,7 @@ pdfDocument.Save("Output.pdf")
 pdfDocument.Close(True)
 
 {% endhighlight %}
-
+{% endtabs %} 
 #### Style
 
 The PdfGridRowStyle class, accessed through Style property of PdfGridRow class is used to specify the row style for the PdfGrid rows.
@@ -3731,9 +3654,9 @@ PdfBrush backgroundBrush = Cell.BackgroundBrush ?? Row.Style.BackgroundBrush ?? 
 The following code example illustrates you on how to specify the row style for the PdfGrid rows:
 
 
+{% tabs %}
 
-{% highlight c# %}
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -3801,13 +3724,10 @@ pdfDocument.Save("Output.pdf");
 
 pdfDocument.Close(true);
 
-
-
-
-
 {% endhighlight %}
 
-{% highlight vbnet %}
+
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -3875,17 +3795,16 @@ pdfDocument.Save("Output.pdf")
 
 pdfDocument.Close(True)
 
-
-
-
-
 {% endhighlight %}
-
+{% endtabs %} 
 
 
 You can also apply PdfGridCellStyle to a PdfGridRow using the ApplyStyle property. The following code sample illustrates this:
 
-{% highlight c# %}
+{% tabs %}
+
+
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -3956,8 +3875,8 @@ pdfDocument.Close(true);
 {% endhighlight %}
 
 
-{% highlight vbnet %}
 
+{% highlight VB %}
 'Creates a new PDF document.
 
 Dim pdfDocument As New PdfDocument()
@@ -4021,14 +3940,13 @@ pdfDocument.Save("Output.pdf")
 pdfDocument.Close(True)
 
 {% endhighlight %}
-
-
-
+{% endtabs %} 
 You can set all rows in the PdfGrid with same style using the ApplyStyle method of PdfGridRowCollection. This style can be a PdfGridRowStyle or PdfGridCellStyle. The following is the code sample.
 
 
-{% highlight c# %}
+{% tabs %}
 
+{% highlight C# %}
 //Creates a new PDF document.
 
 PdfDocument pdfDocument = new PdfDocument();
@@ -4093,12 +4011,9 @@ pdfDocument.Save("Output.pdf");
 
 pdfDocument.Close(true);
 
-
-
 {% endhighlight %}
 
-
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -4162,11 +4077,8 @@ pdfDocument.Save("Output.pdf")
 
 pdfDocument.Close(True)
 
-
 {% endhighlight %}
-
-
-
+{% endtabs %} 
 Refer to the following topic for more details:
 
 PdfGridCellStyle
@@ -4178,11 +4090,9 @@ PdfGridCellStyle
 By default, all the columns in PdfGrid have equal width, and the columns automatically fill the entire width of the PdfGrid. If the width of the PdfGrid is increased or decreased, the column width also changes appropriately.
 
 You can specify the width for a particular column by using the Width property. The following code example illustrates how to set the width.
+{% tabs %}
 
-
-
-{% highlight c# %}
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -4236,8 +4146,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -4287,11 +4196,8 @@ pdfDocument.Save("Output.pdf")
 
 pdfDocument.Close(True)
 
-
 {% endhighlight %}
-
-
-
+{% endtabs %} 
 N> The unit of the Width property is always points. You can set the PDF units only as points. Also, you can use the PdfUnitConvertor class to convert the other units to points.
 
 
@@ -4299,11 +4205,9 @@ N> The unit of the Width property is always points. You can set the PDF units on
 #### Column Span
 
 PdfGrid enables you to merge cells within a column. You can specify the number of cells to be merged by using the ColumnSpan property PdfGridCell class. The following code example illustrates this.
+{% tabs %}
 
-
-
-{% highlight c# %}
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -4353,13 +4257,9 @@ pdfDocument.Save("Output.pdf");
 
 pdfDocument.Close(true);
 
-
-
-
-
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -4410,16 +4310,16 @@ pdfDocument.Save("Output.pdf")
 pdfDocument.Close(True)
 
 {% endhighlight %}
-
+{% endtabs %} 
 #### Format 
 
 You can specify the content format for the PdfGrid columns by using the Format property. Check String Formatting in DrawingText for more details
 
-Cell
+#### Cell
 
-Properties
+#### Properties
 
-_Table_ _20_: Property Table
+_Property Table_
 
 <table>
 <tr>
@@ -4429,7 +4329,7 @@ Description</th><th>
 Data Type</th></tr>
 <tr>
 <td>
-{ '![ColumnSpan](http://docs.syncfusion.com/aspnet-classic/pdf/table#column)' | markdownify }</td><td>
+{{ '[ColumnSpan](http://docs.syncfusion.com/aspnet-classic/pdf/table#column)' | markdownify }}</td><td>
 Gets or set the column span.</td><td>
 Integer</td></tr>
 <tr>
@@ -4444,12 +4344,12 @@ Gets or sets the image alignment type of the background image.</td><td>
 PdfGridImagePosition</td></tr>
 <tr>
 <td>
-{ '![RowSpan](http://docs.syncfusion.com/windowsforms/pdf/table/grid#row)' | markdownify }</td><td>
+{{ '[RowSpan](http://docs.syncfusion.com/windowsforms/pdf/table/grid#row)' | markdownify }}</td><td>
 Gets or sets the row span</td><td>
 Integer</td></tr>
 <tr>
 <td>
-{ '![StringFormat](http://docs.syncfusion.com/windowsforms/pdf/pages#drawing-text)' | markdownify }</td><td>
+{{ '[StringFormat](http://docs.syncfusion.com/windowsforms/pdf/pages#drawing-text)' | markdownify }}</td><td>
 Gets or sets the string format.</td><td>
 PdfStringFormat</td></tr>
 <tr>
@@ -4469,7 +4369,7 @@ Gets the width.</td><td>
 float</td></tr>
 </table>
 
-### Cell Size
+#### Cell Size
 
 The width and height cannot be modified for a single cell, but for the entire column or row. Please check PdfGridColumn and PdfGridRow for more details.
 
@@ -4478,9 +4378,9 @@ The width and height cannot be modified for a single cell, but for the entire co
 You can specify the value for an individual cell using the Value property. Also, you can specify another PdfGrid as the cell value to make a nested table. The following code sample illustrates this.
 
 
+{% tabs %}
 
-{% highlight c# %}
-
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -4488,25 +4388,15 @@ PdfDocument pdfDocument = new PdfDocument();
 
 PdfPage pdfPage = pdfDocument.Pages.Add();
 
-
-
 PdfGrid parentPdfGrid = new PdfGrid();
-
-
 
 PdfGridRow row1 = parentPdfGrid.Rows.Add();
 
 PdfGridRow row2 = parentPdfGrid.Rows.Add();
 
-
-
 row2.Height = 58;
 
-
-
 parentPdfGrid.Columns.Add(3);
-
-
 
 //Set the value to the specific cell.
 
@@ -4515,8 +4405,6 @@ parentPdfGrid.Rows[0].Cells[0].Value = "Nested Table";
 parentPdfGrid.Rows[0].Cells[1].RowSpan = 2;
 
 parentPdfGrid.Rows[0].Cells[1].ColumnSpan = 2;
-
-
 
 PdfGrid childPdfGrid = new PdfGrid();
 
@@ -4538,19 +4426,13 @@ for (int i = 0; i < 5; i++)
 
 }
 
-
-
 //Set the value as another PdfGrid in a cell.
 
 parentPdfGrid.Rows[0].Cells[1].Value = childPdfGrid;
 
-
-
 //Draws the PdfGrid.
 
 parentPdfGrid.Draw(pdfPage, PointF.Empty);
-
-
 
 //Saves the document.
 
@@ -4558,38 +4440,23 @@ pdfDocument.Save("Output.pdf");
 
 pdfDocument.Close(true);
 
-
-
 {% endhighlight %}
 
-
-{% highlight vbnet %}
-
-'Creates a new PDF document.
+{% highlight VB %}'Creates a new PDF document.
 
 Dim pdfDocument As New PdfDocument()
 
 Dim pdfPage As PdfPage = pdfDocument.Pages.Add()
 
-
-
 Dim parentPdfGrid As New PdfGrid()
-
-
 
 Dim row1 As PdfGridRow = parentPdfGrid.Rows.Add()
 
 Dim row2 As PdfGridRow = parentPdfGrid.Rows.Add()
 
-
-
 row2.Height = 58
 
-
-
 parentPdfGrid.Columns.Add(3)
-
-
 
 'Set the value to the specific cell.
 
@@ -4617,19 +4484,13 @@ For i As Integer = 0 To 4
 
 Next
 
-
-
 'Set the value as another PdfGrid in a cell.
 
 parentPdfGrid.Rows(0).Cells(1).Value = childPdfGrid
 
-
-
 'Draws the PdfGrid.
 
 parentPdfGrid.Draw(pdfPage, PointF.Empty)
-
-
 
 'Saves the document.
 
@@ -4640,14 +4501,14 @@ pdfDocument.Close(True)
 
 
 {% endhighlight %}
-
+{% endtabs %} 
 #### Style
 
 PdfGrid provides various options to customize the cell content, text color, background color, and so on. The following properties can be used for this purpose.
 
-Properties
+#### Properties
 
-_Table_ _21_: Property Table
+
 
 <table>
 <tr>
@@ -4695,10 +4556,9 @@ PdfPen</td></tr>
 
 The following code example illustrates you on how to customize the cell content.
 
-
-
-{% highlight c# %}
-
+{% tabs %}
+ 
+{% highlight C# %}
 
 //Creates a new PDF document.
 
@@ -4776,7 +4636,8 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -4850,12 +4711,11 @@ doc.Save("Output.pdf")
 
 doc.Close(True
 
-
 {% endhighlight %}
+{% endtabs %}
+## Light Table vs Grid
 
-#### Light Table vs Grid
-
-_Table_ _22_: Difference between PdfLightTable and PdfGrid
+_Difference between PdfLightTable and PdfGrid_
 
 <table>
 <tr>
@@ -4900,7 +4760,7 @@ Yes</td><td>
 Yes</td></tr>
 </table>
 
-_Table_ _23_: Difference between PdfLightTable and PdfGrid
+_Difference between PdfLightTable and PdfGrid_
 
 <table>
 <tr>
@@ -4950,3 +4810,5 @@ Layout Events</td><td>
 BeginCellLayout, BeginPageLayout, BeginRowLayout, EndCellLayout, EndPageLayout, EndRowLayout</td><td>
 BeginPageLayout, EndPageLayout</td></tr>
 </table>
+
+

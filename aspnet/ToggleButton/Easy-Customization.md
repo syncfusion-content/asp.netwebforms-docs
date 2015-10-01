@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Easy-Customization
+title: Easy Customization | Toggle Button | ASP.NET | Syncfusion
 description: easy customization
 platform: aspnet
-control: Toggle Button
+control: ToggleButton
 documentation: ug
 ---
 
@@ -27,9 +27,9 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
 </ej:ToggleButton>
 
-    <br />
+<br />
 
-    <ej:ToggleButton ID="Active_ToggleButton" runat="server" Size="Small" DefaultText="Play" ActiveText="Pause" ContentType="TextAndImage" DefaultPrefixIcon="e-mediaplay" ActivePrefixIcon="e-mediapause" ToggleState="true">
+<ej:ToggleButton ID="Active_ToggleButton" runat="server" Size="Small" DefaultText="Play" ActiveText="Pause" ContentType="TextAndImage" DefaultPrefixIcon="e-mediaplay" ActivePrefixIcon="e-mediapause" ToggleState="true">
 
 </ej:ToggleButton>
 
@@ -72,8 +72,6 @@ It inserts the icon at the end of the Toggle Button. Before this suffix icon, yo
 
 You can also set icons in different locations (prefix, suffix) and in different states (default, active) by using the options provided. The following properties are defined for merging the options to add text, icon with different positions and in toggle states.
 
-
-
 <table>
 <tr>
 <th>
@@ -114,13 +112,11 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
 <ej:ToggleButton ID="ToggleButton_IconsAndStates" runat="server" DefaultText="forward"
 
-    ActiveText="backward" ShowRoundedCorner="true" ContentType="ImageTextImage" DefaultPrefixIcon="e-mediaforward " ActivePrefixIcon="e-mediaback " DefaultSuffixIcon="e-undo " ActiveSuffixIcon="e-redo">
+ActiveText="backward" ShowRoundedCorner="true" ContentType="ImageTextImage" DefaultPrefixIcon="e-mediaforward
+
+" ActivePrefixIcon="e-mediaback " DefaultSuffixIcon="e-undo " ActiveSuffixIcon="e-redo">
 
 </ej:ToggleButton>
-
-
-
-
 
 {% endhighlight %}
 
@@ -132,7 +128,7 @@ Run the above code to render the following output.
 
 
 
- ![](Easy-Customization_images/Easy-Customization_img3.png) 
+![](Easy-Customization_images/Easy-Customization_img3.png) 
 
 
 
@@ -206,10 +202,6 @@ ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIco
 
 </ej:ToggleButton>
 
-
-
-
-
 {% endhighlight %}
 
 
@@ -256,7 +248,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
 <table>
 
- <tr>
+    <tr>
 
         <td>
 
@@ -356,8 +348,6 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
 </table>
 
-
-
 {% endhighlight %}
 
 
@@ -368,7 +358,7 @@ Execute the above code to render the following output.
 
 
 
-### Image position
+## Image position
 
 To provide the best look and feel, position of images in the Toggle Button is important. You can customize the position of images in the Toggle Button by using the ImagePosition property without using any complex CSS. ImagePosition property is applicable only with the TextAndImagecontent type property. This property represents the position of the images with respect to the text.
 
@@ -522,12 +512,6 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
     </tr>
 
 </table>
-
-
-
-
-
-
 
 {% endhighlight %}
 

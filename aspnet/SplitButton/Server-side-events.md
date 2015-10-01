@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Server-side-events
+title: Server side events | SplitButton | ASP.NET | Syncfusion
 description: server-side events
 platform: aspnet
-control: Split Button
+control: SplitButton
 documentation: ug
 ---
 
@@ -53,7 +53,6 @@ In an ASPX page, define the Split Button control.
 
 </ej:SplitButton>
 
-
 {% endhighlight %}
 
 
@@ -63,24 +62,20 @@ In CS page, define the events for Click and ItemSelect Event.
 {% highlight c# %}
 
 protected void SplitButton_Click(object Sender, Syncfusion.JavaScript.Web.SplitButtonEventArgs e)
+{
 
-        {
+	   // e.Status - returns the status of the Split Button   
 
-               // e.Status - returns the status of the Split Button   
-
-
-
-        }
+}
 
 protected void SplitButton_ItemSelect(object Sender, Syncfusion.JavaScript.Web.SplitButtonSelectEventArgs e)
+{
 
-        {
+	 // e.MenuId- returns the current ID of Split Button
 
-         // e.MenuId- returns the current ID of Split Button
+	 // e.MenuText- returns the current text of Split Button
 
-         // e.MenuText- returns the current text of Split Button
-
-        }
+}
 
 
 {% endhighlight %}

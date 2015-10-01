@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance and Styling | ControlNameundefined | ASP.NET Webforms | Syncfusion
+title: Appearance and Styling | PercentageTextBox | ASP.NET | Syncfusion
 description: appearance and styling 
 platform: aspnet
 control: PercentageTextBox
@@ -116,11 +116,13 @@ The output for PercentageTextbox when ShowSpinButton is true.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
-_PercentageTextbox with ShowSpinButton is true_
+PercentageTextbox with ShowSpinButton is true
+{:.caption}
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 
-_PercentageTextbox with ShowSpinButton is false_
+PercentageTextbox with ShowSpinButton is false
+{:.caption}
 
 ## Water Mark Text Support
 

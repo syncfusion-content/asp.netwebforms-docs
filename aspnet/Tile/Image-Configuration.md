@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Image-Configuration
+title: Image Configuration | Tile | ASP.NET | Syncfusion
 description: image configuration
 platform: aspnet
 control: Tile
@@ -27,8 +27,6 @@ Refer to the following code examples.
 
 {% highlight html %}
 
-
-
     <div id="tile"></div>
 
 <script>
@@ -36,10 +34,6 @@ Refer to the following code examples.
     $("#tile").ejTile({ tileSize: "wide", imagePosition: "center", imageUrl: "http://js.syncfusion.com/UG/web/Content/tile/Weather_2.png", text: "weather" })
 
 </script>
-
-
-
-
 
 {% endhighlight %}
 
@@ -56,11 +50,11 @@ Refer to the following code examples.
 
     <div id="tile"></div>
 
-<script>
+	<script>
 
-    $("#tile").ejTile({ tileSize: "medium", imagePosition: "center", imageClass: "pictures", text: "Pictures" })
+		$("#tile").ejTile({ tileSize: "medium", imagePosition: "center", imageClass: "pictures", text: "Pictures" })
 
-</script>
+	</script>
 
     <style>
 
@@ -74,14 +68,7 @@ Refer to the following code examples.
 
     </style>
 
-
-
 {% endhighlight %}
-
-
-
-
-
 
 
 ![](Image-Configuration_images/Image-Configuration_img2.png) 

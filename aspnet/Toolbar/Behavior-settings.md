@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Behavior-settings
+title: Behavior settings | Toolbar | ASP.NET | Syncfusion
 description: behavior settings
 platform: aspnet
 control: Toolbar
@@ -17,47 +17,37 @@ The Toolbar property enabled is used to enable or disable the Toolbar. The value
 
 Add the following code example to the corresponding ASPX page to render the Toolbar Control
 
-
-
 {% highlight html %}
 
-
-
-   <%--Refer Local data sections for styles--%>
-
-
+<%--Refer Local data sections for styles--%>
 
 <ej:Toolbar ID="toolbarcontent" runat="server" Width="290px" Enabled="true">
 
-                    <Items>
+	<Items>
 
-                        <ej:ToolbarItem Id="Left" SpriteCssClass="ToolbarItems LeftAlign_tool" TooltipText="Left"></ej:ToolbarItem>
+		<ej:ToolbarItem Id="Left" SpriteCssClass="ToolbarItems LeftAlign_tool" TooltipText="Left"></ej:ToolbarItem>
 
-                        <ej:ToolbarItem Id="Center" SpriteCssClass="ToolbarItems CenterAlign_tool" TooltipText="Center"></ej:ToolbarItem>
+		<ej:ToolbarItem Id="Center" SpriteCssClass="ToolbarItems CenterAlign_tool" TooltipText="Center"></ej:ToolbarItem>
 
-                        <ej:ToolbarItem Id="Right" SpriteCssClass="ToolbarItems RightAlign_tool" TooltipText="Right"></ej:ToolbarItem>
+		<ej:ToolbarItem Id="Right" SpriteCssClass="ToolbarItems RightAlign_tool" TooltipText="Right"></ej:ToolbarItem>
 
-                        <ej:ToolbarItem Id="Justify" SpriteCssClass="ToolbarItems Justify_tool" TooltipText="Justify"></ej:ToolbarItem>
+		<ej:ToolbarItem Id="Justify" SpriteCssClass="ToolbarItems Justify_tool" TooltipText="Justify"></ej:ToolbarItem>
 
-                    </Items>
+	</Items>
 
-                    <Items>
+	<Items>
 
-                        <ej:ToolbarItem Id="Bold" SpriteCssClass="ToolbarItems Bold_tool" TooltipText="Bold"></ej:ToolbarItem>
+		<ej:ToolbarItem Id="Bold" SpriteCssClass="ToolbarItems Bold_tool" TooltipText="Bold"></ej:ToolbarItem>
 
-                        <ej:ToolbarItem Id="Italic" SpriteCssClass="ToolbarItems Italic_tool" TooltipText="Italic"></ej:ToolbarItem>
+		<ej:ToolbarItem Id="Italic" SpriteCssClass="ToolbarItems Italic_tool" TooltipText="Italic"></ej:ToolbarItem>
 
-                        <ej:ToolbarItem Id="StrikeThrough" SpriteCssClass="ToolbarItems StrikeThrough_tool" TooltipText="StrikeThrough"></ej:ToolbarItem>
+		<ej:ToolbarItem Id="StrikeThrough" SpriteCssClass="ToolbarItems StrikeThrough_tool" TooltipText="StrikeThrough"></ej:ToolbarItem>
 
-                        <ej:ToolbarItem Id="UnderLine" SpriteCssClass="ToolbarItems Underline_tool" TooltipText="UnderLine"></ej:ToolbarItem>
+		<ej:ToolbarItem Id="UnderLine" SpriteCssClass="ToolbarItems Underline_tool" TooltipText="UnderLine"></ej:ToolbarItem>
 
-                    </Items>
+	</Items>
 
-                </ej:Toolbar>
-
-
-
-
+</ej:Toolbar>
 
 {% endhighlight %}
 
@@ -71,13 +61,9 @@ The Toolbar property Hide is used to show or hide the Toolbar. The value set to 
 
 {% highlight html %}
 
-
-
 <%--Refer Local Data section for style and data bound for toolbar items.--%>
 
 <ej:Toolbar ID="toolbarcontent" runat="server" Width="300px" Hide="true" DataIdField="Id" DataTooltipTextField="Tooltip" DataSpriteCssClassField="Css"></ej:Toolbar>
-
-
 
 {% endhighlight %}
 

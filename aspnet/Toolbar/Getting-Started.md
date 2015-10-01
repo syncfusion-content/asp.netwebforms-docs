@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Toolbar | ASP.NET | Syncfusion
 description: getting started
 platform: aspnet
 control: Toolbar
@@ -18,10 +18,7 @@ Here, the Toolbar consists a title and a text area as PDF Reader.
  ![](Getting-Started_images/Getting-Started_img1.png) | 
 
 
-
-
-
-Create a Toolbar
+### Create a Toolbar
 
 You can create a Toolbar control by using the following steps. The basic rendering of ASP.NET Toolbar is achieved with the default functionality.
 
@@ -35,8 +32,6 @@ You can create an ASP.NET Project and add necessary Dll and script with the 
 
 </ej:Toolbar>
 
-
-
 {% endhighlight %}
 
 
@@ -49,7 +44,7 @@ The following output is displayed.
 
 
 
-Initialize Toolbar Items
+### Initialize Toolbar Items
 
 The Toolbar consists of a list of items. From the following guidelines, you can learn how to initialize the Toolbar with the Toolbar items.
 
@@ -75,8 +70,6 @@ The Toolbar consists of a list of items. From the following guidelines, you can
 
 </ej:Toolbar>
 
-
-
 {% endhighlight %}
 
 
@@ -89,9 +82,7 @@ Apply the styles specified in the code table to show the Toolbar itemsas follow
 
 <style type="text/css" class="cssStyles">
 
-
-
-    .e-tooltxt .e-icon {
+    .e-tooltxt .e-icon {
 
         background-image:url('http://js.syncfusion.com/UG/Web/Content/pdf-icon.png');
 
@@ -155,13 +146,9 @@ Apply the styles specified in the code table to show the Toolbar itemsas follow
 
 </style>
 
-
-
-
-
 {% endhighlight %}
 
- Run the above code to render a Toolbar with a list of Toolbar items. 
+Run the above code to render a Toolbar with a list of Toolbar items. 
 
 ![](Getting-Started_images/Getting-Started_img3.png) 
 
@@ -325,8 +312,6 @@ Initialize and group the Toolbar items as follows.
 
     </ej:Toolbar>
 
-
-
 {% endhighlight %}
 
 Add the following code example to display the Toolbar items.
@@ -344,7 +329,6 @@ Add the following code example to display the Toolbar items.
             background-position: -175px 0px;
 
         }
-
 
 
         .readMode
@@ -469,10 +453,6 @@ Add the following code example to display the Toolbar items.
 
     </style>
 
-
-
-
-
 {% endhighlight %}
 
 Set the Zoom value as it is one of the items in the Toolbar. You need to render the Dropdown list control for select zoomvalue. Dropdown list control is rendered with the DropDownListItem elements. The ASP.NET Dropdown control with a list of zoom valuesis used to render the Set Zoom value in the above code example. Refer to the following link for Dropdowncreation.
@@ -524,8 +504,6 @@ Initialize the content area and header as specified in the following code e
     </div>
 
 </div>
-
-
 
 {% endhighlight %}
 
@@ -581,11 +559,7 @@ Refer to the following code example to design the PDF header and content area
 
      }
 
-
-
 </style>
-
-
 
 {% endhighlight %}
 
@@ -609,163 +583,87 @@ Now the required toolbar items are added and its appearance is configured. When 
 
 </ej:Toolbar> 
 
-
-
 {% endhighlight %}
 
 
 
 {% highlight js %}
 
-
-
  <script type="text/javascript">
 
-
-
     function onItemclick(args) {
-
-
-
 
 
         //Finds Out the Item that was Clicked in Toolbar
 
 
-
-
-
         //args.currentTarget returns the clicked Toolbar element
-
-
-
 
 
         var option = args.currentTarget.id; //Find Out the Id of Clicked item.
 
 
-
-
-
         switch (option) {
-
-
 
             case "OtherFormat":
 
-
-
                 //writes a code for Convert pdf files to Other format.
-
-
 
             case "PdfOnline":
 
-
-
                 //writes a code for Convert files to Pdf online.
-
-
 
             case "Signature":
 
-
-
                 //writes a code for Send a document for signature.
-
-
 
             case "Save":
 
-
-
                 //writes a code for Save content.
-
-
 
             case "Print":
 
-
-
                 //writes a code for Print content.
-
-
 
             case "Message":
 
-
-
-                //writes a code for Send a Message.
-
-
+                //writes a code for Send a Message.
 
             case "Previous":
 
-
-
                 //writes a code for Show previous page.
-
-
 
             case "Next":
 
-
-
                 //writes a code for Show Next page.
-
-
 
             case "ZoomOut":
 
-
-
                 //writes a code for Zoom out the page.
-
-
 
             case "ZoomIn":
 
-
-
                 //writes a code for Zoom In the page.
-
-
 
             case "FitFull":
 
-
-
                 //writes a code for Fit one full page to window.
-
-
 
             case "StickyNote":
 
 
-
-                //writes a code for Add Sticky Note.
-
-
+               //writes a code for Add Sticky Note.
 
             case "ReadMode":
 
-
-
                 //writes a code for view file in read mode.
 
-
-
         }
-
-
 
     }
 
 
-
 </script>
-
-
 
 {% endhighlight %}
 

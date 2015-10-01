@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Attachments | OLAPGauge | ASP.NET Webforms | Syncfusion
+title: Attachments | PDF | ASP.NET | Syncfusion
 description: attachments
 platform: aspnet
-control: PDF
+control: pdf
 documentation: ug
 ---
 
@@ -15,9 +15,11 @@ File attachment contains a reference to a file that is typically embedded in the
 
 In order to add attachment to a PDF document, you need to create PdfAttachment object for the file, with description. After that the PdfAttachment object can be added to attachment collection of document object using collection’s Add method. 
 
-{% highlight c# %}
 
-//Creates a new PDF document.
+
+{% tabs %}
+ 
+{% highlight C# %}//Creates a new PDF document.
 
 PdfDocument document = new PdfDocument();
 
@@ -63,10 +65,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 'Creates a new PDF document.
 
@@ -113,14 +112,16 @@ document.Save("Output.pdf")
 document.Close()
 
 {% endhighlight %}
+{% endtabs %} 
 
 
 Essential PDF allows you to add attachments to the existing PDF document.
 
-{% highlight c# %}
+
+{% tabs %}
 
 
-
+{% highlight C# %}
 
 //Loads the PDF document.
 
@@ -154,8 +155,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
+{% highlight VB %}
 
 'Loads the PDF document.
 
@@ -189,9 +189,8 @@ document.Save("Output.pdf")
 
 document.Close()
 
-{% endhighlight  %}
-
-
+{% endhighlight %}
+{% endtabs %}  
 ## Delete attachments from PDF LoadedDocument
 
 In order to remove an attachment from an existing PDF document, you need to use the remove method of the PdfAttachmentCollection class. 
@@ -199,10 +198,11 @@ In order to remove an attachment from an existing PDF document, you need to use 
 * Remove
 * RemoveAt
 
-{% highlight c# %}
 
 
+{% tabs %}
 
+{% highlight C# %}
 
 //Loads the PDF document.
 
@@ -222,11 +222,9 @@ document.Save("Output.pdf");
 
 document.Close();
 
-{% endhighlight  %}
+{% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'Loads the PDF document.
 
@@ -247,17 +245,16 @@ document.Save("Output.pdf")
 document.Close()
 
 {% endhighlight %}
-
-
-
+{% endtabs %}  
 ## Extracting the attachments
 
 In order to get all the attachments from the PDF file, you need to loop through the PdfAttachmentCollection of the Document object. Each element of this collection represents a PdfAttachment object. All iterations in for-each loop through the PdfAttachmentCollection collection will return a PdfAttachment object. Once this object is available, you can retrieve either all the properties of the attached file or the file itself.
 
-{% highlight c# %}
 
 
+{% tabs %}
 
+{% highlight C# %}
 
 //Loads the PDF document.
 
@@ -269,13 +266,13 @@ foreach (PdfAttachment attachment in document.Attachments)
 
 {
 
-//Creates attachment file.
+	//Creates attachment file.
 
-FileStream s = new FileStream(attachment.FileName, FileMode.Create);
+	FileStream s = new FileStream(attachment.FileName, FileMode.Create);
 
-s.Write(attachment.Data, 0, attachment.Data.Length);
+	s.Write(attachment.Data, 0, attachment.Data.Length);
 
-s.Dispose();
+	s.Dispose();
 
 }
 
@@ -285,11 +282,9 @@ document.Save("Output.pdf");
 
 document.Close();
 
-{% endhighlight  %}
+{% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'Loads the PDF document.
 
@@ -299,13 +294,13 @@ Dim document As New PdfLoadedDocument("Input.pdf")
 
  For Each attachment As PdfAttachment In document.Attachments
 
-'Creates attachment file.
+	'Creates attachment file.
 
-Dim s As New FileStream(attachment.FileName, FileMode.Create)
+	Dim s As New FileStream(attachment.FileName, FileMode.Create)
 
-s.Write(attachment.Data, 0, attachment.Data.Length)
+	s.Write(attachment.Data, 0, attachment.Data.Length)
 
-s.Dispose()
+	s.Dispose()
 
 Next
 
@@ -316,5 +311,4 @@ document.Save("Output.pdf")
 document.Close()
 
 {% endhighlight %}
-
-
+{% endtabs %}  

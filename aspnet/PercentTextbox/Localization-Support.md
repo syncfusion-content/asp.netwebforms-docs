@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization Support | PercentageTextBox | ASP.NET Webforms | Syncfusion
+title: Localization Support | PercentageTextBox | ASP.NET | Syncfusion
 description: localization support
 platform: aspnet
 control: PercentageTextBox
@@ -37,8 +37,6 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 <ej:PercentageTextBox ID="percentage" Value="21234" DecimalPlaces="3" Locale="es-ES" runat="server"> </ej:PercentageTextBox>
 
-
-
 {% endhighlight %}
 
 
@@ -46,8 +44,10 @@ The output for PercentageTextbox with localization.
 
 ![](Localization-Support_images/Localization-Support_img1.png)
 
-_PercentageTextbox with es-ES locale_
+PercentageTextbox with es-ES locale
+{:.caption}
 
 ![](Localization-Support_images/Localization-Support_img2.png)
 
-_PercentageTextbox with en-US locale_
+PercentageTextbox with en-US locale
+{:.caption}

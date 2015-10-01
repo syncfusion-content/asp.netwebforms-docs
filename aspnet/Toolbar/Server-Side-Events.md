@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server-Side-Events
+title: Server Side Events | Toolbar | ASP.NET | Syncfusion
 description: server side events
 platform: aspnet
 control: Toolbar
@@ -48,12 +48,12 @@ In the code behind, define the action to be performed.
 
 {% highlight c# %}
 
-  protected void toolbarcontent_ItemClick(object sender, EventArgs e)
+protected void toolbarcontent_ItemClick(object sender, EventArgs e)
 
-        {
+{
 
-           Response.Write("Serverside event has been triggered");
+   Response.Write("Serverside event has been triggered");
 
-        }
+}
 
 {% endhighlight %}
