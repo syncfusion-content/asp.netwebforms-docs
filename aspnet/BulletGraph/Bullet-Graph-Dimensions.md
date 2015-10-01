@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bullet-Graph-Dimensions
+title: Bullet Graph Dimensions | BulletGraph | ASP.NET Webforms | Syncfusion
 description: bullet graph dimensions
 platform: aspnet
 control: BulletGraph	
@@ -95,7 +95,7 @@ The following screenshot displays Bullet Graph with flatdark theme
 ![](Bullet-Graph-Dimensions_images/Bullet-Graph-Dimensions_img4.png)  
 
 
-_Figure 12: Bullet Graph with theme_
+Bullet Graph with theme
 
 ## Orientation
 

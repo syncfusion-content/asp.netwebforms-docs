@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Undo-and-Redo
+title: Undo and Redo | Diagram | ASP.NET Webforms | Syncfusion
 description: undo and redo
 platform: aspnet
 control: Diagram

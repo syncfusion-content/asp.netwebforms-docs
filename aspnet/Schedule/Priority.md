@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Priority
+title: Priority | Schedule | ASP.NET Webforms | Syncfusion
 description: priority
 platform: aspnet
 control: Schedule
@@ -84,6 +84,7 @@ On executing the above specified code the Priority field will be added in the cr
 
 The following code example illustrates on how to render priority feature with user- defined datasource in the Schedule control. 
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -106,12 +107,7 @@ SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 
 {% highlight C# %}
 
-
-
-
 List<Priority> PriorityValue = new List<Priority>();
-
-
 
 protected void Page_Load(object sender, EventArgs e)
 
@@ -133,11 +129,7 @@ Schedule1.PrioritySettings.DataSource = PriorityValue;  // We can pass the custo
 
 }
 
-
-
 }
-
-
 
 public class Priority
 
@@ -152,6 +144,8 @@ public string value { set; get; }
 }
 
 {% endhighlight %}
+
+{% endtabs %}
 
 * And then need to define the styles to display the “priority icon/images (you can use your desired images)” with the priority options. 
 * The class name (while defining styles) should be the field name in template. For example if you define the template (ex: Template ("<div class='${value}'></div>")) then you need to define class with “value field and its value should be a class name (ex: critical)”. 

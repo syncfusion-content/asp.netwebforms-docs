@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Apply-formatting-for-columns-dynamically
+title: Apply formatting for columns dynamically | Grid | ASP.NET Webforms | Syncfusion
 description: apply formatting for columns dynamically
 platform: aspnet
 control: Grid

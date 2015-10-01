@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Compression
+title: Compression | PDF | ASP.NET Webforms | Syncfusion
 description: compression
 platform: aspnet
 control: PDF

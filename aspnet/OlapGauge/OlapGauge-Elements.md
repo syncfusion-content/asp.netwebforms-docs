@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OlapGauge-Elements
+title: OlapGauge Elements | OLAPGauge | ASP.NET Webforms | Syncfusion
 description: olapgauge elements
 platform: aspnet
 control: OLAP Gauge

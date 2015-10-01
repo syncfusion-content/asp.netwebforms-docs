@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Constraints
+title: Constraints | Diagram | ASP.NET Webforms | Syncfusion
 description: constraints
 platform: aspnet
 control: Diagram
@@ -11,7 +11,7 @@ documentation: ug
 
 Diagram provides support to enable or disable certain Diagram behaviors.
 
-_Constraints_
+Constraints
 
 <table>
 <tr>

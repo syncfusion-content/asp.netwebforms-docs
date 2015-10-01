@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Indicators
+title: Indicators | LinearGauge | ASP.NET Webforms | Syncfusion
 description: indicators
 platform: aspnet
 control: Linear Gauge

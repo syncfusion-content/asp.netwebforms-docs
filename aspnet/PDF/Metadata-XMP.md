@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Metadata-XMP
+title: Metadata XMP | PDF | ASP.NET Webforms | Syncfusion
 description: metadata (xmp)
 platform: aspnet
 control: PDF

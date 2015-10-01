@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbar
+title: Toolbar | Gantt | ASP.NET Webforms | Syncfusion
 description: toolbar
 platform: aspnet
 control: Gantt
@@ -10,12 +10,6 @@ documentation: ug
 # Toolbar
 
 Gantt control contains toolbar options for editing, searching, expanding and collapsing all records, indent, out dent, delete and add task. You can enable toolbar using the following code example.
-
-
-
-
-
-
 
 {% highlight html %}
 
@@ -39,5 +33,6 @@ The following screenshot shows the toolbar option in Gantt control.
 
 ![](Toolbar_images/Toolbar_img1.png)
 
-_Figure : Toolbar_
+Toolbar
+{:.caption}
 

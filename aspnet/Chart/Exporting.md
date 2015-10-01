@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting
+title: Exporting | Chart | ASP.NET Webforms | Syncfusion
 description: exporting
 platform: aspnet
 control: Chart

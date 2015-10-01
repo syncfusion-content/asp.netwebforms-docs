@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Drag-and-Drop-Support
+title: Drag and Drop Support | ListBox | ASP.NET Webforms | Syncfusion
 description: drag and drop support
 platform: aspnet
-control: Control Name undefined
+control: ListBox
 documentation: ug
 ---
 
@@ -15,7 +15,7 @@ The following steps explains you the behaviour of template support with ListBox.
 
 In an ASPX page, add an elementto configure ListBox.
 
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -114,6 +114,8 @@ In an ASPX page, add an elementto configure ListBox.
 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 
 

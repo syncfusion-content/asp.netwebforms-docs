@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom-Action-Support
+title: Custom Action Support | Dialog | ASP.NET Webforms | Syncfusion
 description: custom action support
 platform: aspnet
 control: Dialog

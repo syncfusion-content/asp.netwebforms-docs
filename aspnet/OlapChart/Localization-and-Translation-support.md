@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization-and-Translation-support
+title: Localization and Translation support | OLAPChart | ASP.NET Webforms | Syncfusion
 description: localization and translation support
 platform: aspnet
 control: OLAP Chart

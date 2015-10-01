@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-Data
+title: Working with Data | Chart | ASP.NET Webforms | Syncfusion
 description: working with data
 platform: aspnet
 control: Chart
@@ -14,6 +14,9 @@ Chart gets data either locally or remotely. To populate the Chart with data, you
 ## Local Data
 
 Essential Chart provides you an option to bind the data to the Chart using the DataSource property of the series. 
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -129,6 +132,7 @@ public class ChartData
     }
 {% endhighlight %}
 
+{% endtabs %}
 
 ![](Working-with-Data_images/Working-with-Data_img1.png)
 
@@ -143,6 +147,9 @@ You can bind the Essential Chart to remote data using DataManager and the Query 
 3. oData
 
 The following code example illustrates binding Essential Chart to oData service.   
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -195,6 +202,9 @@ The following code example illustrates binding Essential Chart to oData service.
 
 
 {% endhighlight  %}
+
+{% endtabs %}
+
 ![](Working-with-Data_images/Working-with-Data_img2.png)
 
 

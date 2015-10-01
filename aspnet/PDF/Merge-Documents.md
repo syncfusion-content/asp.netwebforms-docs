@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Merge-Documents
+title: Merge Documents | PDF | ASP.NET Webforms | Syncfusion
 description: merge documents
 platform: aspnet
 control: PDF

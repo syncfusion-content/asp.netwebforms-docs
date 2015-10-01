@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Server-side-events
-description: server-side events
+title: Server side events | Accordion | ASP.NET Webforms | Syncfusion
+description: server side events
 platform: aspnet
 control: Accordion 
 documentation: ug
 ---
 
-# Server-side events
+# Server side events
 
 <table>
 <tr>
 <th>
-Event Name</th><td>
+Event Name</th><th>
 Description</th><th>
 Parameters</th></tr>
 <tr>
@@ -21,6 +21,7 @@ OnAccordionPaneClick</td><td>
 Event is triggered when the accordion pane is clicked.</td><td>
 (Object Sender, AccordionEventArgs e)Values passed in argument are as below,ActiveIndex - to get the activated pane indexEventType - returns the event name</td></tr>
 </table>
+
 The following steps explains you on how to define server side event for an Accordion control.
 
 In an ASPX page, define the Accordion control and add the contents correspondingly.

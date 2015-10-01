@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tools
+title: Tools | Diagram | ASP.NET Webforms | Syncfusion
 description: tools
 platform: aspnet
 control: Diagram
@@ -11,7 +11,7 @@ documentation: ug
 
 When interacting on a diagram’s surface, the Tool property decides the action to be performed. When more than one tool is applied by using bitwise, OR, the necessary tool is picked based on the interaction gesture, the value of Tool property and precedence.
 
-_Tools_
+Tools
 
 <table>
 <tr>
@@ -148,7 +148,8 @@ tool: ej.datavisualization.Diagram.Tool.DrawOnce
 
  ![](Tools_images/Tools_img1.png) 
 
-_Rectangle_
+Rectangle
+{:.caption} 
 
 
 
@@ -201,4 +202,5 @@ tool: ej.datavisualization.Diagram.Tool.DrawOnce
  ![](Tools_images/Tools_img2.jpeg) 
 
 
-_Straight Connector_
+Straight Connector
+{:.caption} 

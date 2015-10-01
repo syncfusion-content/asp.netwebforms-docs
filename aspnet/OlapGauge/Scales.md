@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scales
+title: Scales | OLAPGauge | ASP.NET Webforms | Syncfusion
 description: scales
 platform: aspnet
 control: OLAP Gauge

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting
+title: Sorting | Grid | ASP.NET Webforms | Syncfusion
 description: sorting
 platform: aspnet
 control: Grid
@@ -41,6 +41,9 @@ N> Grid also has support to sort more than one column. This behavior is called a
 ## External Sorting
 
 In Grid, you have an API to sort a column dynamically. The following code example shows you how to sort a column through API. 
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -109,6 +112,8 @@ In Grid, you have an API to sort a column dynamically. The following code exampl
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 The following output is displayed as a result of the above code example.
 
 
@@ -138,6 +143,9 @@ If you want to clear sorting for a column then you need to use shift plus mouse 
 ## Clear sorting using API
 
 In Grid, you have an API to clear sorted columns. Through this API, you can clear sorting at any stage.
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -172,7 +180,7 @@ In Grid, you have an API to clear sorted columns. Through this API, you can clea
 {% endhighlight %}
 
 
-
+{% endtabs %}
 
 
 
@@ -195,7 +203,7 @@ The following output is displayed as a result of the above code example.
 In the normal way of sorting, first preference is given to capital letters and then small letters. When you do not want discrimination between small and capital letters, you can set “enableLocalizedSort” API as true to sort both small and capital letters.
 
 
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -226,6 +234,7 @@ ej.Support.enableLocalizedSort=true
 
 {% endhighlight %}
 
+{% endtabs %}
 
  The following output is displayed as a result of the above code example.
 

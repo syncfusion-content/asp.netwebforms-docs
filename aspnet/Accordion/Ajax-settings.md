@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ajax-settings
+title: Ajax settings | Accordion | ASP.NET Webforms | Syncfusion
 description: ajax settings
 platform: aspnet
 control: Accordion 

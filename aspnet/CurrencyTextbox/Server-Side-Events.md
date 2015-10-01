@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server-Side-Events
+title: Server Side Events | CurrencyTextBox | ASP.NET Webforms | Syncfusion
 description: server side events
 platform: aspnet
 control: Currency TextBox
@@ -36,8 +36,6 @@ In an ASPX page, add the CurrencyTextbox control with OnFocusOut server side eve
 
   <ej:CurrencyTextBox ID="currency" Value="11" OnFocusOut="focus"  runat="server" ></ej:CurrencyTextBox>
 
-
-
 {% endhighlight %}
 
 In the code behind, define the action to be performed.
@@ -48,7 +46,7 @@ protected void focus(object Sender, EventArgs e)
 
 {
 
-     Response.Write("Serverside event has been trigerred");
+    Response.Write("Serverside event has been trigerred");
 
 }
 

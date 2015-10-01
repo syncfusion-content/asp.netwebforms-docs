@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Row
+title: Row | Grid | ASP.NET Webforms | Syncfusion
 description: row
 platform: aspnet
 control: Grid
@@ -12,6 +12,9 @@ documentation: ug
 ## Details Template
 
 Details Template feature provides a detailed view about additional information of each row. If you want to view the detailed information, you can expand a row. Using DetailsTemplate property to achieve detail template feature.
+
+{% tabs %}
+
 {% highlight html %}
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
@@ -71,6 +74,8 @@ protected void Page_Load(object sender, EventArgs e)
 
 
 {% endhighlight %}
+
+{% endtabs %}
 The following output is displayed as a result of the above code example.
 
 
@@ -82,6 +87,8 @@ The following output is displayed as a result of the above code example.
 ## Hierarchy
 
 In this section, you can learn how to use the Hierachytree in GridView. The following code example is of HierachyGrid.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -259,6 +266,8 @@ public partial class DetailTemplate : System.Web.UI.Page
 
 
 {% endhighlight %}
+
+{% endtabs %}
 The following output is displayed as a result of the above code example.
 
 
@@ -269,6 +278,9 @@ The following output is displayed as a result of the above code example.
 ## Row Template
 
 Row template is used to render your template in every row. It is used to place elements inside Grid rows. This feature makes it easier to customise Grid rows with HTML elements. Using RowTemplate property achieve row template feature.
+
+{% tabs %}
+
 {% highlight js %}
 
 
@@ -477,6 +489,8 @@ public partial class RowTemplate : System.Web.UI.Page
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 The following output is displayed as a result of the above code example.
 
 
@@ -489,7 +503,7 @@ The following output is displayed as a result of the above code example.
 
 EnableAltRow and EnableRowHover are graphical features in Grid that are used to enable alternate row color in Grid and enable hover effects while hovering over row cells. By default, these two features are enabled in Grid. In this section, you can learn how to cutomize alternative rows color and hover color in the Grid controls.
 
-
+{% tabs %}
 
 {% highlight css %}
 
@@ -534,6 +548,8 @@ protected void Page_Load(object sender, EventArgs e)
     }
 
 {% endhighlight %}
+
+{% endtabs %}
 
 The following output is displayed as a result of the above code example.
 

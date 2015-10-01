@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data-binding
-description: data-binding
+title: Data binding | Schedule | ASP.NET Webforms | Syncfusion
+description: data binding
 platform: aspnet
 control: Schedule
 documentation: ug
 ---
 
-# Data-binding
+# Data binding
 
 * To render appointments to the Schedule control, you are required to bind the appointment data. The following sub-properties helps you to bind either the local/remote data to the Schedule control by binding the appropriate appointment data fields to the corresponding options.
 
@@ -15,65 +15,65 @@ documentation: ug
 
 * This property assigns the local json data or remote (url binding) data to the Schedule control.
 
-###query 
+### query 
 
 * It accepts the data of object type, which is usually the query string to fetch the required data from a specific table based on certain condition. As this property is optional, it is not specified. 
 
 The entire records that are initially assigned through dataSource is taken into consideration.
 
-###tableName
+### tableName
 
 * It maps the corresponding name of the table from the location and the records are fetched to the Schedule control. As this property is optional, it is not specified. It takes the default dataSource into consideration. 
 
-###id
+### id
 
 * It maps the corresponding id field name from the data table or json data that is assigned to the dataSource with the id property of the Schedule control. The id value that is fetched from the table is unique for each appointment.
 
-###subject
+### subject
 
 * It maps the corresponding subject field name from the data table or json data that is assigned to the dataSource with the subject property of the Schedule control. The Subject field denotes the appointment subject and it accepts the value of string type.
 
-###description
+### description
 
 * It maps the corresponding description field name from the data table or json data that is assigned to the dataSource with the description property of the Schedule control. The description field is used to save more information related to the appointments. It accepts the value of string type.
 
-###startTime
+### startTime
 
 * It maps the corresponding start time field name from the data table or json data that is assigned to the dataSource with the startTime property of the Schedule control. The startTime denotes the starting time of the appointment and it accepts the value of type dateTime.
 
-###endTime
+### endTime
 
 * It maps the corresponding end time field name from the data table or json data that is assigned to the dataSource with the endTime property of the Schedule control. The endTime denotes the ending time of the appointment and it accepts the dateTime values from the database.
 
-###recurrence
+### recurrence
 
 * It maps the corresponding recurrence field name from the data table or json data that is assigned to the dataSource with the recurrence property of the Schedule control. This field determines whether the appointment is  normal or recurrence type. It accepts the Boolean type value either true/false. 
 
-###recurrenceRule
+### recurrenceRule
 
 * It maps the corresponding recurrence rule field name from the data table or json data that is assigned to the dataSource with the recurrenceRule property of the Schedule control. This field defines the recurrence repeat string and accepts the string value.
 
-###allDay
+### allDay
 
 * It maps the corresponding all day field name from the data table or json data that is assigned to the dataSource with the allDay property of the Schedule control. This field determines whether the appointment is created for the whole day or not. It accepts the Boolean value and when it is true, the appointment is created as an allday appointment in the Schedule control.
 
-###resourceFields
+### resourceFields
 
 * It accepts the resource related field names as a string separated by a comma separator. When multiple resources are rendered on a Schedule control with multiple categories, then the name availed for each resource level is binded.
 
-###categorize
+### categorize
 
 * It maps the corresponding categorize field name from the data table or JSON data, to the categorize property of the Schedule control.
 
-###startTimeZone
+### startTimeZone
 
 * It maps the corresponding start timezone field name from the data table or json data that is assigned to the Schedule dataSource. The startTimeZone denotes the timeZone of the appointment start time and accepts the value of type string.
 
-###endTimeZone
+### endTimeZone
 
 * It maps the corresponding end timezone field name from the data table or json data that is assigned to the Schedule dataSource. The endTimeZone denotes the timeZone of the appointment end time and accepts the value of type string.
 
-###Daylight Saving Time
+### Daylight Saving Time
 
 The Schedule control provides support to observe the Daylight Saving Time (DST). So that,the users in the regions with summer-time adjust the clocks forward one hour close to the start of spring or adjust them backward in the autumn to standard time. In Schedule control, the DST can either be kept on/off that is handled by the newly introduced property isDST. By default, this property is set to false and when it is set to true, you can render the Schedule control appointments with the appropriate DST time difference based on the countries. 
 
@@ -120,10 +120,6 @@ The following code example explains how to include the Daylight saving time opti
 
 
 {% highlight html %}
-
-
-
-
 
 <ej:Schedule ID="Schedule1" Width="100%" runat="server" DataSourceID="ScheduleData" ShowLocationField="true"> // To display the Location field in the appointment Window need to enable this property
 
@@ -181,7 +177,8 @@ On executing the above specified code the Scheduler displays the appointments ac
 ![](Data-binding_images/Data-binding_img2.png)
 
 
-Figure 50 : schedule with Local Data Binding
+schedule with Local Data Binding
+{:.caption }
 
 
 
@@ -220,7 +217,8 @@ The following screenshot displays the remote data bound to the Schedule control.
 ![](Data-binding_images/Data-binding_img3.png)
 
 
-Figure 51: Schedule with Remote Data Binding
+Schedule with Remote Data Binding
+{:.caption }
 
 ### Load On Demand
 
@@ -233,12 +231,14 @@ Figure 51: Schedule with Remote Data Binding
 ![C:/Users/maheshp/Pictures/a2.PNG](Data-binding_images/Data-binding_img4.png)
 
 
-Figure 3: Schedule demanded data
+Schedule demanded data
+{:.caption }
 
 
 
 The following code example shows you how load on demand works with Schedule.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -382,12 +382,15 @@ The following code example shows you how load on demand works with Schedule.
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The following screenshot is the result of the above code example.
 
 ![C:/Users/maheshp/Pictures/s1.PNG](Data-binding_images/Data-binding_img5.png)
 
 
-_Figure 4: Schedule with load on demand_
+Schedule with load on demand
+{:.caption }
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Barcode | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: Barcode

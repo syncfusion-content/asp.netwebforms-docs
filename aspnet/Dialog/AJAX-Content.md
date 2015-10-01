@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AJAX-Content
+title: AJAX Content | Dialog | ASP.NET Webforms | Syncfusion
 description: ajax content
 platform: aspnet
 control: Dialog

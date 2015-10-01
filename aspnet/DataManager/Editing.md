@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editing
+title: Editing | DataManager | ASP.NET Webforms | Syncfusion
 description: editing
 platform: aspnet
 control: DataManager
@@ -211,6 +211,8 @@ Result of the above code example is illustrated as follows.
 
 The update method is used to update the modified changes made to a record in the data source of the DataManager.
 
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -377,6 +379,8 @@ public partial class DataManager : System.Web.UI.Page
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Result of the above code example is illustrated as follows.
 
 ![](Editing_images/Editing_img3.png)
@@ -386,6 +390,8 @@ Result of the above code example is illustrated as follows.
 ### Remove
 
 The “remove” method is used to delete a record from the data source of the DataManager.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -552,6 +558,8 @@ public partial class DataManager : System.Web.UI.Page
     }
 
 {% endhighlight %}
+
+{% endtabs %}
 
 Result of the above code example is illustrated as follows.
 

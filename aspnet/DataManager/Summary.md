@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Summary
+title: Summary | DataManager | ASP.NET Webforms | Syncfusion
 description: summary 
 platform: aspnet
 control: DataManager

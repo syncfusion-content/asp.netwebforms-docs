@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing-the-Submenu-direction
+title: Customizing the Submenu direction | Menu | ASP.NET Webforms | Syncfusion
 description: customizing the submenu direction
 platform: aspnet
 control: Menu

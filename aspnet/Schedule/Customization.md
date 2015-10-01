@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization
+title: Customization | Schedule | ASP.NET Webforms | Syncfusion
 description: customization
 platform: aspnet
 control: Schedule
@@ -884,7 +884,7 @@ background-color: #FF8A8A;
 ![](Customization_images/Customization_img2.png)
 
 
-_Figure_ _68_: schedule with appointment using customized appointment window._
+schedule with appointment using customized appointment window
 
 * You can change the details in the above window and then click Submit button to save the updated values.
 
@@ -892,15 +892,15 @@ _Figure_ _68_: schedule with appointment using customized appointment window._
 
 ## Hour Customization
 
-###Schedule Start/End Hour
+### Schedule Start/End Hour
 
 You can customize the appearance of the Schedule control by setting the specific start and end hour to it. To set the specific start/end hour for a Schedule control, the following properties are required to be used.
 
-###startHour
+### startHour
 
 * Specify the start hour to set for the Schedule control.
 
-###endHour
+### endHour
 
 * Specify the end hour to set for the Schedule control.
 
@@ -941,7 +941,8 @@ Execute the above code to render the output as follows with the Schedule control
 ![](Customization_images/Customization_img3.png)
 
 
-Figure 107 :  schedule with hour customization.
+schedule with hour customization
+{:.caption }
 
 ### Business hours
 
@@ -956,17 +957,10 @@ Figure 107 :  schedule with hour customization.
 
 * It allows you to specify the end time to indicate the business end hour.
 
-
-
-
-
 * To enable the highlightBusinessHours and to customize the business start and end hours, refer the following code example.
 
 
 {% highlight html %}
-
-
-
 
 <ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" BusinessEndHour="18"
 
@@ -984,8 +978,6 @@ Width="100%">
 
 </ej:Schedule>
 
-
-
 </div>
 
 <asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
@@ -994,15 +986,13 @@ SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 
 
 {% endhighlight %}
+
 Execute the above code to render the following output that explains the highlighting of business hours in the Schedule control from 10.00am to 3.00pm.
 
 ![](Customization_images/Customization_img4.png)
 
-   Figure 108 :  schedule with Business hours
-
-
-
-
+schedule with Business hours
+{:.caption }
 
 ## Date/Time Customization
 
@@ -1045,7 +1035,8 @@ Execute the above code and the following screenshot displays the Schedule contro
 ![](Customization_images/Customization_img5.png)
 
 
-  Figure 118:  schedule with current time
+schedule with current time
+{:.caption }
 
 ###Date Format
 
@@ -1057,22 +1048,13 @@ The following code example explains how to change the dateFormat of the Schedule
 
 {% highlight html %}
 
-
-
-
 <%-- Setting the DateFormat to the schedule -- %>
-
-
-
-
 
 <ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014" DateFormat="dd-MM-yyyy">
 
 <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
 
 </ej:Schedule>
-
-
 
 </div>
 
@@ -1137,8 +1119,10 @@ The following screenshot displays the Schedule control with MinDate and MaxDate 
 ###Timemode
 
 * You can set two types of time mode, either 12 or 24 hour format for the Schedule control.  It accepts the following enum values,
-1. ej.Schedule.TimeMode.Hour12
-2. ej.Schedule.TimeMode.Hour24
+  
+  1. ej.Schedule.TimeMode.Hour12
+  2. ej.Schedule.TimeMode.Hour24
+
 * Set the Schedule control to 24 hour time mode using the following code example.
 
 
@@ -1175,7 +1159,8 @@ The following screenshot displays the Schedule control when time mode is set to 
 ![](Customization_images/Customization_img8.png)
 
 
-   Figure 114 :  schedule time customization.
+schedule time customization
+{:.caption }
 
 ###TimeZone
 
@@ -1337,28 +1322,10 @@ $.views.helpers({ format: _getImages });
 
 * Add new appointments to the Schedule control. The appointments are rendered based on the time difference that tends to the timezone set to it.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ![](Customization_images/Customization_img9.png)
 
-
-  Figure 115 :  schedule with timezone.
+schedule with timezone
+{:.caption }
 
 * In the above output, an appointment is initially created in the time-range 7.00am - 8.30am, it is saved in the timeslot between 9.00am – 10.30 am due to the time zone set to “UTC +2:00” in the Schedule control.
 
@@ -1378,7 +1345,8 @@ The following screenshot displays the Schedule control with the current time ind
 ![](Customization_images/Customization_img10.png)
 
 
- Figure 116 :  schedule time customization
+schedule time customization
+{:.caption }
 
 The following code example explains how to disable the current time indicator from the Schedule control. 
 
@@ -1414,7 +1382,8 @@ SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 ![](Customization_images/Customization_img11.png)
 
 
-Figure 117 :  schedule with show current time indicator.
+schedule with show current time indicator
+{:.caption }
 
 
 ## Show/Hide TimeScale
@@ -1442,4 +1411,5 @@ SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 
 ![](Customization_images/Customization_img12.png)
 
-Figure 80: Schedule without TimeScale
+Schedule without TimeScale
+{:.caption }

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Behavior-Settings
+title: Behavior Settings | CurrencyTextBox | ASP.NET Webforms | Syncfusion
 description: behavior settings
 platform: aspnet
 control: Currency TextBox

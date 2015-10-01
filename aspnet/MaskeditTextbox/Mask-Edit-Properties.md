@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mask-Edit-Properties
+title: Mask Edit Properties | MaskEdit | ASP.NET Webforms | Syncfusion
 description: mask edit properties
 platform: aspnet
 control: MaskEdit

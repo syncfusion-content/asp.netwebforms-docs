@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Technical-Indicators
+title: Technical Indicators | Chart | ASP.NET Webforms | Syncfusion
 description: technical indicators
 platform: aspnet
 control: Chart
@@ -454,6 +454,7 @@ Stochastic technical indicator is one of the most common indicators used in tech
 
 </ej:Chart>
 {% endhighlight %}
+
 ## Triangular Moving Average Indicator
 
 Triangular Moving Average Indicator is one of the technical indicator supported by ejChart. The indicator rendered is called as signal line. You can also customize the width and color of the signal line. 

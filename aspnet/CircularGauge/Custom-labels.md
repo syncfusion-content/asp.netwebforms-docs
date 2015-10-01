@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom-labels
+title: Custom labels | Circular Gauge | ASP.NET Webforms | Syncfusion
 description: custom labels
 platform: aspnet
 control: Circular Gauge

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editing
+title: Editing | Grid | ASP.NET Webforms | Syncfusion
 description: editing
 platform: aspnet
 control: Grid
@@ -77,7 +77,7 @@ Essential Studio Asp.Net Grid supports column edit type by using delegated contr
 
 The edit type of every column can be customized using the editType property.
 
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -216,7 +216,7 @@ public partial class NormalEditingFunctionalities : System.Web.UI.Page
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 The following output is displayed as a result of the above code example.
 
@@ -229,8 +229,10 @@ The following output is displayed as a result of the above code example.
 
 By default, the datasource for Dropdown Edit Column is set by Grid Control from its datasource. You can also bind external datasource to the Dropdown control of corresponding column in edit mode by using “DataSource” Grid Column property.
 
-N> The external datasource must be given in a structure that it should contain properties “text” and  
-“value” which holds the data
+N> The external datasource must be given in a structure that it should contain properties “text” and  “value” which holds the data
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -264,6 +266,7 @@ N> The external datasource must be given in a structure that it should contain p
 
 </ej:Grid>
 {% endhighlight %}
+
 {% highlight c# %}
 
 
@@ -309,6 +312,8 @@ var index = this.OrdersGrid.Columns.FindIndex(col => col.Field == "ShipCountry")
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 The following output is displayed as a result of the above code example.
 
 ![](Editing_images/Editing_img4.png)
@@ -324,6 +329,8 @@ Edit Template feature is used to create a custom editor to edit column values. E
 * Write – It is used to assign the value to control at time of editing
 
 The following code example is for Edit Template.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -507,6 +514,8 @@ namespace WebSampleBrowser.Grid
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![](Editing_images/Editing_img5.png) 
 
 
@@ -531,6 +540,8 @@ Essential Studio Asp.Net Grid supports eight modes of editing feature in grid. T
 
 
 This feature allows you to edit various fields of a single record, simultaneously. The row goes to editable state. The following code example shows you how to set EditMode as Normal.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -670,6 +681,8 @@ public partial class NormalEditingFunctionalities : System.Web.UI.Page
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 The following output is displayed as a result of the above code example.
 
 
@@ -725,6 +738,9 @@ The following output is displayed as a result of the above code example.
 ### Inline Form Editing
 
 This feature allows you to edit various fields of a single record, simultaneously. It is called inline because it is shown in between two rows, called as rows of control. After you have edited a row, the inline form is displayed. 
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -861,7 +877,7 @@ public partial class NormalEditingFunctionalities : System.Web.UI.Page
 
 {% endhighlight  %}
 
-
+{% endtabs %}
 
 The following output is displayed as a result of the above code example.
 
@@ -986,6 +1002,8 @@ While using template, you can change the elements that are defined in the templa
 
 Through the ActionCompleteGrid event, you can achieve this.
 
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -1017,11 +1035,12 @@ Through the ActionCompleteGrid event, you can achieve this.
 
 {% endhighlight  %}
 
-
+{% endtabs %}
 
 
 Now, the elements defined in the templates, are changed to Asp.Net controls. You can see the entire code example for Template editing as follows.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -1058,6 +1077,7 @@ Now, the elements defined in the templates, are changed to Asp.Net controls. You
 
         </ej:Grid>
 {% endhighlight  %}
+
 {% highlight js %}
 
 
@@ -1079,7 +1099,7 @@ function complete(args) {
 
 {% endhighlight  %}
 
-
+{% endtabs %}
 
 
 
@@ -1210,7 +1230,7 @@ For validation you can refer the following two jquery validation script files.
 
 The following are jquery validation methods.
 
-_List of jquery validation methods_
+List of jquery validation methods
 
 <table>
 <tr>
@@ -1288,6 +1308,8 @@ The following code example shows you how to include the jquery validation suppor
 
 Using ValidationRules we are able to add validation rules for editing
 
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -1338,6 +1360,7 @@ Using ValidationRules we are able to add validation rules for editing
 
         </ej:Grid>
 {% endhighlight %}
+
 {% highlight c# %}
 
 
@@ -1449,6 +1472,8 @@ public partial class DefaultFunctionalities : System.Web.UI.Page
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 The following output is displayed as a result of the above code example.
 
 
@@ -1460,6 +1485,9 @@ The following output is displayed as a result of the above code example.
 ### Custom Validation
 
 In addition to jquery validation methods, you can also add your own custom validation methods for a specific column. The following code example shows you how to specify the custom validation for a specific column.
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -1517,6 +1545,7 @@ In addition to jquery validation methods, you can also add your own custom valid
 
         </ej:Grid>
 {% endhighlight  %}
+
 {% highlight js %}
 
 
@@ -1551,6 +1580,7 @@ In addition to jquery validation methods, you can also add your own custom valid
 
 {% endhighlight  %}
 
+{% endtabs %}
 
 The following output is displayed as a result of the above code example.
 
@@ -1569,7 +1599,7 @@ The Server-Side CRUD operation can be performed by using the following adaptor m
 
 The Server-Side function is declared with the following parameters for each editing functionality.
 
-_Parameters Table_
+Parameters Table
 
 <table>
 <tr>
@@ -1601,6 +1631,9 @@ _Parameters Table_
 You can use the UrlAdaptor of DataManger when binding datasource from remote data. At initial load of Grid, using URL property of DataManager, data are fetched from remote data and binded to Grid. You can map CRUD operation in Grid to Server-Side Controller action using the properties “InsertURL”, “UpdateURL” and “RemoveURL”.
 
 Also when you use UrlAdaptor, you need to return the data as JSON and the JSON object must contain field name as “result” with its value as dataSource and one more field name as “count” with its value as dataSource total records count.
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -1634,6 +1667,7 @@ Also when you use UrlAdaptor, you need to return the data as JSON and the JSON o
                 </ej:Grid>
 
 {% endhighlight  %}
+
 {% highlight c#  %}
 
 
@@ -1748,11 +1782,16 @@ Also when you use UrlAdaptor, you need to return the data as JSON and the JSON o
 
     }
 {% endhighlight  %}
+
+{% endtabs %}
+
 ### remoteSave Adaptor
 
 The RemoteSaveAdaptor of DataManager can be used when you bind local data to Grid datasource. CRUD operations in Grid local data can be mapped to server-side controller using CRUDURL’s “InsertUrl”, “UpdateUrl” and “RemoveUrl”.
 
 When you use RemoteSaveAdaptor, server-side post back occurs only for CRUD actions in Grid. Rest of the Grid actions(paging, sorting, filtering, etc.,) can be handled at client-side itself.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -1786,6 +1825,7 @@ When you use RemoteSaveAdaptor, server-side post back occurs only for CRUD actio
                 </ej:Grid>
 
 {% endhighlight  %}
+
 {% highlight c# %}
 
 
@@ -1881,6 +1921,8 @@ public partial class _Default : Page
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The output for the Server Binding of records is as follows:
 
 
@@ -1960,7 +2002,7 @@ The Grid control for Asp.Net allows you to bind and edit data from the local ser
 
 14. The WCF Data Service file is created. Open the Nothwnd.svs.cs file and set the NORTHWNDEntities as a class for the DataService.
 
-    ~~~ cs
+    ~~~ csharp
 
 		public class Northwnd : DataService
 
@@ -1971,11 +2013,10 @@ The Grid control for Asp.Net allows you to bind and edit data from the local ser
 		public class Northwnd : DataService<NORTHWNDEntities>
 
     ~~~
-	{:.prettyprint }
 
 15. Add the highlighted line in the Nothwnd.svs.cs.
 
-    ~~~ cs
+    ~~~ csharp
 
 		public static void InitializeService(DataServiceConfiguration config)
 
@@ -1997,7 +2038,6 @@ The Grid control for Asp.Net allows you to bind and edit data from the local ser
 
 
     ~~~
-	{:.prettyprint }
 
 16. Refer to the following code sample to get the data from the local server.
 
@@ -2010,7 +2050,6 @@ The Grid control for Asp.Net allows you to bind and edit data from the local ser
 		});
 
     ~~~
-	{:.prettyprint }
 
 17. Add the following codes into the HTML page.
 
@@ -2069,6 +2108,9 @@ Grid supports two types of rowposition. They are
 * Bottom
 
 The following code example illustrates you how to set RowPosition. Using RowPosition we are able to set row position for adding.
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -2206,6 +2248,8 @@ namespace WebSampleBrowser.Grid
 
 
 {% endhighlight  %}
+
+{% endtabs %}
 The following output is displayed as a result of the above code example.
 
 

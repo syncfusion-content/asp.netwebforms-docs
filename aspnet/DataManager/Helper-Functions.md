@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Helper-Functions
+title: Helper Functions | DataManager | ASP.NET Webforms | Syncfusion
 description: helper functions
 platform: aspnet
 control: DataManager

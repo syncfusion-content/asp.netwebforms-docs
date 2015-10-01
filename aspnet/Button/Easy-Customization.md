@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Easy-Customization
+title: Easy Customization | Button | ASP.NET Webforms | Syncfusion
 description: easy customization
 platform: aspnet
 control: Button

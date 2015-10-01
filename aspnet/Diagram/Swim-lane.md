@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Swim-lane
+title: Swim lane | Diagram | ASP.NET Webforms | Syncfusion
 description: swim lane 
 platform: aspnet
 control: Diagram
@@ -13,11 +13,12 @@ A swim lane is a visual element used in a process flow diagrams or flowcharts. A
 
  ![](Swim-lane_images/Swim-lane_img1.png) 
 
-_Swim lane Diagram_
+Swim lane Diagram
+{:.caption} 
 
 Swim lane shape contains the following properties.
 
-_Swim lane Properties_
+Swim lane Properties
 
 <table>
 <tr>
@@ -79,7 +80,7 @@ Gets or sets the phases as collection.</td></tr>
 
 The lane is an object that controls the diagram elements in the swim lane. Lane has the following properties.
 
-_Lane Properties_
+Lane Properties
 
 <table>
 <tr>
@@ -111,7 +112,7 @@ Gets or sets the orientation of the swim lane.</td></tr>
 
 This is used to define header of a swim lane. It has the following properties.
 
-_Header Properties_
+Header Properties
 
 <table>
 <tr>
@@ -133,7 +134,7 @@ Gets or sets the text value for the header.</td></tr>
 
 A Phase is a line that separates the swim lane. Phase has the following properties.
 
-_Phase Properties_
+Phase Properties
 
 <table>
 <tr>

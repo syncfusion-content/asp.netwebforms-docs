@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RTL-Support
+title: RTL Support | DatePicker | ASP.NET Webforms | Syncfusion
 description: rtl support
 platform: aspnet
 control: DatePicker

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Start-and-Depth-navigation
+title: Start and Depth navigation | DatePicker | ASP.NET Webforms | Syncfusion
 description: start and depth navigation
 platform: aspnet
 control: DatePicker
@@ -97,13 +97,7 @@ In the ASPX page, include the following DatePicker control code example to speci
 
 {% highlight html %}
 
-
-
- <ej:DatePicker ID="datepicker" runat="server"  StartLevel="Century" DepthLevel="Year"></ej:DatePicker>
-
-
-
-
+<ej:DatePicker ID="datepicker" runat="server"  StartLevel="Century" DepthLevel="Year"></ej:DatePicker>
 
 {% endhighlight %}
 

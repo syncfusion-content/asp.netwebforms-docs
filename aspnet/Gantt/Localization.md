@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization
+title: Localization | Gantt | ASP.NET Webforms | Syncfusion
 description: localization
 platform: aspnet
 control: Gantt
@@ -15,7 +15,7 @@ Localization is the key feature that provides solutions to global customers with
 
 The following UIs are provided to localize based on culture. The default English Localization UIs are listed as follows:
 
-_Localization_
+Localization
 
 <table>
 <tr>
@@ -145,4 +145,6 @@ The following screenshot shows Gantt with French culture.
 ![](Localization_images/Localization_img1.png)
 
 
-_Figure : Localization_
+Localization
+{:.caption}
+

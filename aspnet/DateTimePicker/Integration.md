@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integration
+title: Integration | DateTimePicker | ASP.NET Webforms | Syncfusion
 description: integration
 platform: aspnet
 control: DateTimePicker
@@ -21,7 +21,7 @@ In the following example, the DateTimePicker value is bounded with simple textbo
 
 In the ASPX page, include the following DateTimePicker control code example.
 
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -59,7 +59,7 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 ![](Integration_images/Integration_img1.png) 
 
@@ -77,6 +77,7 @@ When you use KO with your applications, you can get following benefits:
 
 In the ASPX page, include the following DateTimePicker control code example.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -128,6 +129,8 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 
 

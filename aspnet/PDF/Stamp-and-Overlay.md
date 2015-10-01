@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stamp-and-Overlay
+title: Stamp and Overlay | PDF | ASP.NET Webforms | Syncfusion
 description: stamp and overlay
 platform: aspnet
 control: PDF

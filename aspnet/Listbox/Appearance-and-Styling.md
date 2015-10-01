@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Appearance and Styling | ListBox | ASP.NET Webforms | Syncfusion
 description: appearance and styling
 platform: aspnet
-control: Control Name undefined
+control: ListBox
 documentation: ug
 ---
 
@@ -25,6 +25,7 @@ The following steps explains you the configuration of Height & Width properties 
 
 In an ASPX page, add an element to configure ListBox.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -114,7 +115,7 @@ In an ASPX page, add an element to configure ListBox.
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 Output of the above steps
 
@@ -131,6 +132,7 @@ The following steps explain you the configuration of Rounded corner of the ListB
 
 In an ASPX page, add an elementto configure ListBox.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -220,7 +222,7 @@ In an ASPX page, add an elementto configure ListBox.
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 Output of the above steps.
 
@@ -269,6 +271,7 @@ The following steps explains you the configuration of CssClassproperties in List
 
 In an ASPX page, add an elementto configure ListBox.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -358,7 +361,7 @@ In an ASPX page, add an elementto configure ListBox.
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 ### Configure the CSS styles to apply on ListBox.
 

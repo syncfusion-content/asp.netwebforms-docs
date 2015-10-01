@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data-binding
+title: Data binding | DropDownList | ASP.NET Webforms | Syncfusion
 description: data-binding 
 platform: aspnet
 control: DropDownList
 documentation: ug
 ---
 
-# Data-binding 
+# Data binding 
 
 ## Data fields and configuration 
 
@@ -132,11 +132,15 @@ DropDown provides data binding support for DropDownList. Thus you can bind the d
 Also, provide support to add and customize the images and list item by using the appropriate data fields. 
 
 In an ASPX page, add an element to configure DropDownList.
+
+{% tabs %}
+
 {% highlight html %}
 
 <ej:DropDownList ID="dropdownlist" Width="200px" runat="server" DataIdField="Id"    DataTextField="Text"></ej:DropDownList>
 
 {% endhighlight  %}
+
 {% highlight c# %}
 
   protected void Page_Load(object sender, EventArgs e)
@@ -183,7 +187,7 @@ In an ASPX page, add an element to configure DropDownList.
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 Output of the above step.
 
@@ -543,6 +547,8 @@ The following step explains the details of data binding from remote.
 
 In an ASPX page, add an element to configure the DropDownList.
 
+{% tabs %}
+
 {% highlight html %}
 
 <div class="ctrllabel">
@@ -578,6 +584,8 @@ protected void Page_Load(object sender, EventArgs e)
 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 
 

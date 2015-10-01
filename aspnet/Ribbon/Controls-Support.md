@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Controls-Support
+title: Controls Support | Ribbon | ASP.NET Webforms | Syncfusion
 description: controls support
 platform: aspnet
 control: Ribbon
@@ -9,33 +9,33 @@ documentation: ug
 
 # Controls Support
 
-In _Ribbon_ control, Button,SplitButton,DropDownList Toggle button,Custom controls provide support to the groups.
+In Ribbon control, Button,SplitButton,DropDownList Toggle button,Custom controls provide support to the groups.
 
-* _Type_ property is used to define the controls.
-
-
-
-* _SplitButton_-to add Split button control.
+* Type property is used to define the controls.
 
 
 
-* _Button_-to add Button control.
+* SplitButton - to add Split button control.
 
 
 
-* _DropDownList_-to add Dropdown List control.
+* Button - to add Button control.
 
 
 
-* _ToggleButton_-to add Toggle button control.
+* DropDownList - to add Dropdown List control.
 
 
 
-* _Custom_-to add custom controls.
-
-The _default type is Button_.
+* ToggleButton - to add Toggle button control.
 
 
+
+* Custom - to add custom controls.
+
+The default type is Button.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -332,7 +332,7 @@ this.text = ctext;
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 The following output is displayed as a result of the above code example.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection
+title: Selection | Grid | ASP.NET Webforms | Syncfusion
 description: selection
 platform: aspnet
 control: Grid
@@ -29,6 +29,9 @@ By default, the selection type is “Single”.
 ##### Row
 
 By default, the selection mode of the grid is “Row”. This enables you to select the row in the grid. Refer to the following code example. Using SelectionMode property in SelectionSettings used to avhieve row selection mode.
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -161,6 +164,8 @@ public partial class BasicSelection : System.Web.UI.Page
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The following screenshot displays the result of the above code.
 
 ![](Selection_images/Selection_img1.png) 
@@ -171,6 +176,7 @@ The following screenshot displays the result of the above code.
 
 Cell selection can be enabled using the SelectionMode property. This enables you to select a cell in the grid. Refer to the following code example.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -304,7 +310,7 @@ public partial class BasicSelection : System.Web.UI.Page
 
 {% endhighlight  %}
 
-
+{% endtabs %}
 
 The following screenshot displays the result of the above code.
 
@@ -315,6 +321,9 @@ The following screenshot displays the result of the above code.
 ##### Column
 
 Column selection can be enabled using the SelectionMode property. This enables you to select a particular column in the grid. Refer to the following code example.
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -449,6 +458,8 @@ public partial class BasicSelection : System.Web.UI.Page
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 The following screenshot displays the result of the above code.
 
 ![](Selection_images/Selection_img3.png)
@@ -465,7 +476,7 @@ Multiple selection can be enabled using SelectionType property. This allows you 
 
 By default, the selection mode of the grid is “Row”. This enable you to select the row in the grid. Refer to the following code example.
 
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -599,6 +610,8 @@ public partial class BasicSelection : System.Web.UI.Page
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 The following screenshot displays the result of the above code.
 
 ![](Selection_images/Selection_img4.png)
@@ -609,7 +622,7 @@ The following screenshot displays the result of the above code.
 
 Cell selection can be enabled using the SelectionMode property. This enables you to select a cell in the grid. Refer to the following code example.
 
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -743,6 +756,9 @@ public partial class BasicSelection : System.Web.UI.Page
 
 
 {% endhighlight %}
+
+{% endtabs %}
+
 The following screenshot displays the result of the above code.
 
 ![](Selection_images/Selection_img5.png)
@@ -753,7 +769,7 @@ The following screenshot displays the result of the above code.
 
 Column selection can be enabled using the SelectionMode property. This enables you to select a particular column in the grid. Refer to the following code example.
 
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -888,6 +904,8 @@ public partial class BasicSelection : System.Web.UI.Page
 
 
 {% endhighlight %}
+
+{% endtabs %}
 The following screenshot displays the result of the above code.
 
 ![](Selection_images/Selection_img6.png)
@@ -897,6 +915,8 @@ The following screenshot displays the result of the above code.
 ## Enable All Modes of selection
 
 You can also enable all the three modes of selection. Refer to the following code example. . Using SelectionMode property in SelectionSettings used to enable all modes of selection.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -1031,6 +1051,9 @@ public partial class BasicSelection : System.Web.UI.Page
 
 
 {% endhighlight %}
+
+{% endtabs %}
+
 The following screenshot displays the result of the above code.
 
 ![](Selection_images/Selection_img7.png)
@@ -1040,6 +1063,8 @@ The following screenshot displays the result of the above code.
 ## Enable toggle
 
 You can toggle the selection using the EnableToggle property. This provides support to toggle selection based on the Boolean value specified to the property. By default the EnableToggle property is set to disabled. Refer to the following code example.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -1174,6 +1199,9 @@ public partial class BasicSelection : System.Web.UI.Page
 
 
 {% endhighlight  %}
+
+{% endtabs %}
+
 The following screenshot displays the result of the above code.
 
 ![](Selection_images/Selection_img8.png)
@@ -1187,6 +1215,7 @@ The following screenshot displays the result of the above code.
 ## Customize Selection Color
 
 In this section, you can learn how to customize or override selection background color through css. The following code example is for Selection color customization.
+
 
 {% highlight html %}
 
@@ -1226,6 +1255,9 @@ The following output is displayed as a result of the above code example.
 ## Get selected record data
 
 In this section, you can learn how to get selected records from one Grid and how this selected record is used to update datasource of another Grid. 
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -1478,6 +1510,8 @@ public partial class MasterDetails : System.Web.UI.Page
     }
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 The following output is displayed as a result of the above code example.
 

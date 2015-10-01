@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Insert-Table
+title: Insert Table | RichTextEditor | ASP.NET Webforms | Syncfusion
 description: insert table
 platform: aspnet
 control: RichTextEditor

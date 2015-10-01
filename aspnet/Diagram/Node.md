@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Node
+title: Node | Diagram | ASP.NET Webforms | Syncfusion
 description: node
 platform: aspnet
 control: Diagram
@@ -11,11 +11,10 @@ documentation: ug
 
 Nodes are graphical object that represent visual data to be placed on the page.
 
+![C:/Users/labuser/Desktop/a.png](Node_images/Node_img1.png) 
 
-
- ![C:/Users/labuser/Desktop/a.png](Node_images/Node_img1.png) 
-
-_Node_
+Node
+{:.caption} 
 
 ## Create Node
 
@@ -51,7 +50,8 @@ model.Nodes.Add(node);
 
  ![](Node_images/Node_img2.png) 
 
-_Node_
+Node
+{:.caption} 
 
 List of preloaded nodes from symbol palette are added to the Diagram by clicking the palette nodes or by dragging a node and dropping on the Diagram. The method to add node/connector to palette and drag and drop on Diagram is explained in palette section
 
@@ -105,11 +105,14 @@ node.Shape = BasicShapes.Ellipse;
 
  ![](Node_images/Node_img3.png) 
 
-_Built-in Shapes_
+Built-in Shapes
+{:.caption} 
 
 ### Html
 
 Html elements are embedded in the Diagram through CustomNodenode. The following code illustrates how a Html node is created.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -155,11 +158,12 @@ node.Value="button";
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 ![](Node_images/Node_img4.png) 
 
-_Html Shape_
+Html Shape
+{:.caption} 
 
 ### Text Node
 
@@ -189,7 +193,8 @@ node.TextBlock = block;
 
  ![](Node_images/Node_img5.png) 
 
-_Text Shape_
+Text Shape
+{:.caption} 
 
 ### Path
 
@@ -215,7 +220,8 @@ node.PathData = "M 67.2947 100 L 67.2947 0.00102291 L 59.138 0.00102291 M 100 50
 
  ![C:/Users/labuser/Desktop/a.png](Node_images/Node_img6.png) 
 
-_Path Shape_
+Path Shape
+{:.caption} 
 
 ### Polygon
 
@@ -267,11 +273,14 @@ node.Points = points;
 
 ![](Node_images/Node_img7.png) 
 
-_Polygon Shape_
+Polygon Shape
+{:.caption} 
 
 ### Native 
 
 Diagram supports adding SVG content as shape content. It is achieved by creating node by using CustomNode and assigning the template ID to the TemplateId property. The TemplateId property receives id svg template. The following code illustrates how a Native node is created.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -323,12 +332,13 @@ node.Text="Mail";
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 ![](Node_images/Node_img8.png) 
 
 
-_Native Shape_
+Native Shape
+{:.caption} 
 
 N> Shapes of type Node or HTML cannot be exported to an image format, like JPEG, PNG and BMP. It is by design that while exporting, Diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas from all possible HTML and SVG elements is not feasible. So, this limitation. Note that fill color is applied to the Native Node only when its inline style or fill for an SVG child element is not specified. In the following example, the node’s fill color is overridden by the specified color for the group.
 
@@ -369,7 +379,8 @@ node.Source = "sample/Syncfusion.PNG";
 
  ![](Node_images/Node_img10.png) 
 
-_Image Shape_
+Image Shape
+{:.caption} 
 
 ## Shadow
 
@@ -377,7 +388,8 @@ Dropshadoweffect for a node can be enabled or disabled by using the NodeConstrai
 
 ![](Node_images/Node_img11.png) 
 
-_Shadow_
+Shadow
+{:.caption} 
 
 {% highlight c# %}
 
@@ -423,7 +435,8 @@ node.Shadow.Angle = 50;
 
 ![](Node_images/Node_img12.png) 
 
-_Shadow Customization_
+Shadow Customization
+{:.caption} 
 
 ## Appearance
 
@@ -530,7 +543,8 @@ node.LinearGradient = gradient;
 
 ![](Node_images/Node_img13.png) 
 
-_Customized Node_
+Customized Node
+{:.caption} 
 
 ## Constraints
 
@@ -643,7 +657,8 @@ node.Constraints = NodeConstraints.Select| NodeConstraints.Rotate;
 
  ![](Node_images/Node_img14.jpeg) 
 
-_Rotator Constraints–Enabled_
+Rotator Constraints-Enabled
+{:.caption} 
 
 The following code illustrates how to disable rotate constraints. Disabling rotate constraint does not allow you to rotate the node.
 
@@ -665,7 +680,8 @@ node.Constraints = node.Constraints &~ NodeConstraints.Rotate;
 
  ![](Node_images/Node_img15.jpeg) 
 
-_Rotate Constraints-disabled_
+Rotate Constraints-disabled
+{:.caption} 
 
 N> Node’s constraints property is manipulated by using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations.
 

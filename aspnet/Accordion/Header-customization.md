@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Header-customization
+title: Header customization | Accordion | ASP.NET Webforms | Syncfusion
 description: header customization
 platform: aspnet
 control: Accordion 

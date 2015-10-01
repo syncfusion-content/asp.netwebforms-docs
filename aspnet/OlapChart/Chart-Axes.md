@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart-Axes
+title: Chart Axes | NumericTextbox | ASP.NET Webforms | Syncfusion
 description: chart axes 
 platform: aspnet
 control: OLAP Chart

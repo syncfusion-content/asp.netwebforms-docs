@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | DropDownList | ASP.NET Webforms | Syncfusion
 description: getting started 
 platform: aspnet
 control: DropDownList
@@ -27,7 +27,7 @@ In the above screenshot, you can select a group from the first DropDownList cont
 
 The ASP.NET DropDownList control basically renders with built-in features.
 
-You can create an ASP.NET Project and add necessary Dll and script with the help of the given [ASP-Getting Started](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc ) Documentation.
+You can create an ASP.NET Project and add necessary Dll and script with the help of the given [ASP-Getting Started](http://docs.syncfusion.com/aspnetmvc/dropdownlist/getting-started ) Documentation.
 
 You can add the following code example to the corresponding ASPX page to render the DropDownList.
 
@@ -212,6 +212,8 @@ In the above mentioned scenario, the given data source is mentioned in the Data 
 
 The following code example explains how to configure the Data Source.
 
+{% tabs %}
+
 {% highlight html %}
 
 <!--Use the following codes with in the above Html -->
@@ -252,7 +254,7 @@ The following code example explains how to configure the Data Source.
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 Execute the code to render the following output.
 
@@ -269,6 +271,8 @@ To style the DropDownList popup with the Country flag, you can create the Sprite
 [http://js.syncfusion.com/UG/Web/Content/countryFootbal.png](http://js.syncfusion.com/UG/Web/Content/countryFootbal.png)
 
 You can load the spirit image icons for the countries in a DropDownList by adding the following code example in styles section. 
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -654,7 +658,7 @@ You can load the spirit image icons for the countries in a DropDownList by addin
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 Run the above code example to render the following DropDownList with Data sources.
 
@@ -734,6 +738,8 @@ The voting process is done by clicking the Vote button. A button is customized t
 
 The following code example explains how to set the Vote process in the DropDownList control.
 
+{% tabs %}
+
 {% highlight html %}
 
 <div class="votebox">
@@ -766,7 +772,7 @@ The following code example explains how to set the Vote process in the DropDownL
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 When you run the above code example, it displays the DropDownList controls. You can select the value and click the Vote button. The button click event is processed and the values are displayed as follows.
 ![](Getting-Started_images/Getting-Started_img10.png)

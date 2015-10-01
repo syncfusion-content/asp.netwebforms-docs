@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Quantitative-Scale
+title: Quantitative Scale | BulletGraph	 | ASP.NET Webforms | Syncfusion
 description: quantitative scale
 platform: aspnet
 control: BulletGraph	
@@ -194,9 +194,7 @@ The following screenshot displays Bullet Graph labels in blue color
 
 
 
-
-
-_Figure 32: Bullet Graph quantitative scale with customized labels_
+Bullet Graph quantitative scale with customized labels
 
 ## Label Placement
 

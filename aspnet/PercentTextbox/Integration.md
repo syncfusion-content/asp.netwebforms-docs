@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integration
+title: Integration | PercentageTextBox | ASP.NET Webforms | Syncfusion
 description: integration
 platform: aspnet
 control: PercentageTextBox

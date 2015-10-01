@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Gantt | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: Gantt
@@ -23,13 +23,15 @@ Gantt chart is used to edit and visualize project schedule and also to track pro
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
 
-_Figure : Elements of a Gantt chart_
+Elements of a Gantt chart
+{:.caption}
 
 
 * Toolbar – It is a collection of toolbar buttons to add, edit, and delete a task. You can outdent and indent a task using outdent and indent buttons. Following screen shot illustrates the function of each toolbar button,
 
   ![](Getting-Started_images/Getting-Started_img2.png)
-  _Figure : Toolbar of Gantt chart_
+  Toolbar of Gantt chart
+  {:.caption}
   
 * Search Textbox – It is used to search tasks, which contains the search string.
 * Resource Names – It displays the names of the resources assigned to that task.
@@ -42,7 +44,8 @@ _Figure : Elements of a Gantt chart_
 
   ![](Getting-Started_images/Getting-Started_img3.png)
 
-_Figure : Editing options Gantt chart_
+Editing options Gantt chart
+{:.caption}
 
 ### Create your Gantt chart
 
@@ -50,9 +53,10 @@ In this tutorial, you will learn how to create a simple Gantt chart, add tasks a
 
 ![](Getting-Started_images/Getting-Started_img4.png) 
 
-_Figure : Simple Gantt chart_
+Simple Gantt chart
+{:.caption}
 
-1. First create a new ASP.NET Web Form project ; please refer the [ASP-Getting Started documentation](http://docs.syncfusion.com/js) to create new project and add necessary DLL’s and script files.
+1. First create a new ASP.NET Web Form project ; please refer the [ASP-Getting Started documentation](http://docs.syncfusion.com/aspnetmvc/gantt/getting-started) to create new project and add necessary DLL’s and script files.
 2. Create the web form  named as default and add the following template
 
    ~~~ html
@@ -89,7 +93,6 @@ _Figure : Simple Gantt chart_
 
 
    ~~~
-   {:.prettyprint }
 
 
 
@@ -140,13 +143,12 @@ _Figure : Simple Gantt chart_
 
 
    ~~~
-   {:.prettyprint }
 
 
 
 4. Create a data source in default.aspx.cs file and assign the data source to the Gantt control.
 
-   ~~~ cs
+   ~~~ csharp
 
         protected void Page_Load(object sender, EventArgs e)
 
@@ -315,13 +317,13 @@ _Figure : Simple Gantt chart_
 
 
    ~~~
-   {:.prettyprint }
 
 The following screenshot displays the Gantt.
 
 ![](Getting-Started_images/Getting-Started_img5.png)
 
-_Figure 25: Gantt chart_
+Gantt chart
+{:.caption}
 
 #### Enable Toolbar
 
@@ -344,11 +346,12 @@ The following screen shot displays a Tool bar in Gantt.
 
 ![](Getting-Started_images/Getting-Started_img6.png) 
 
+Toolbar in Gantt chart
+{:.caption}
+
+N> add, edit, delete options are enabled when enabling the allowEditing, allowAdding, allowDelete in the edit Settings.
 
 
-Note:add, edit, delete options are enabled when enabling the allowEditing, allowAdding, allowDelete in the edit Settings.
-
-_Figure : Toolbar in Gantt chart_
 
 #### Enable sorting 
 
@@ -442,7 +445,8 @@ The following screen shot displays Gantt chart with Enable Context menu option.
 
 ![](Getting-Started_images/Getting-Started_img10.png)  
 
-_Figure : Gantt control with Enable Editing options_
+Gantt control with Enable Editing options
+{:.caption}
 
 #### Provide tasks relationship
 
@@ -488,12 +492,14 @@ The following screen shot displays the relationship between tasks.
 
 ![](Getting-Started_images/Getting-Started_img11.png)
 
-_ Figure : Gantt chart with relationships between tasks_
+Gantt chart with relationships between tasks
+{:.caption}
 
 #### Provide Resources
 
 In ASP.NET MVCGantt, you can display and assign the resource for each task. Create a collection of JSON object, which contains id and name of the resource and assign it to ResourceCollection option. Then, specify the field name for id and name of the resource in the resource collection to ResourceIdMapping and ResourceNameMapping options. The name of the field which contains the actual resources assigned for a particular task in the DataSource is specified using ResourceInfoMapping.
 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -512,7 +518,6 @@ protected void Page_Load(object sender, EventArgs e)
     this.GanttControlDefault.DataBind();     
 
 }
-   _Figure : Resource allocation for tasks in Gantt_
 
 
 //...
@@ -581,6 +586,8 @@ public class ResourceList
 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 The following screen shot displays resource allocation for tasks in Gantt.
 

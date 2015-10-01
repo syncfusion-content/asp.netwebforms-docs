@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Booklets
+title: Booklets | PDF | ASP.NET Webforms | Syncfusion
 description: booklets
 platform: aspnet
 control: PDF

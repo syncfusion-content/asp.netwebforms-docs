@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Week-end-and-Special-dates-highlight
+title: Week end and Special dates highlight | DatePicker | ASP.NET Webforms | Syncfusion
 description: week end and special dates highlight
 platform: aspnet
 control: DatePicker
@@ -19,9 +19,7 @@ You can find the sprite images in the following location when you have installed
 
 In the ASPX page, include the following DatePicker control code example to specify the highlighted week & special dates.
 
-
-
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -59,9 +57,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endhighlight %}
 
-
-
-
+{% endtabs %}
 
 Add the following styles to get the special dates highlighted.
 

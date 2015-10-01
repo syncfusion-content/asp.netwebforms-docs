@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout
+title: Layout | OLAPGauge | ASP.NET Webforms | Syncfusion
 description: layout 
 platform: aspnet
 control: OLAP Gauge

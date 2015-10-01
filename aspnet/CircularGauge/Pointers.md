@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pointers
+title: Pointers | CircularGauge | ASP.NET Webforms | Syncfusion
 description: pointers
 platform: aspnet
 control: Circular Gauge

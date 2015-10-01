@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Insert-Hyperlink
+title: Insert Hyperlink | RichTextEditor | ASP.NET Webforms | Syncfusion
 description: insert hyperlink
 platform: aspnet
 control: RichTextEditor

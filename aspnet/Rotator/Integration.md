@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integration
+title: Integration | Rotator | ASP.NET Webforms | Syncfusion
 description: integration
 platform: aspnet
 control: Rotator
@@ -287,6 +287,8 @@ angular binding.
 
 The following code example shows the way to bind data to the Rotator control through Angular support.
 
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -370,7 +372,7 @@ The following code example shows the way to bind data to the Rotator control t
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 The following screenshot displays the output of the above code example.
 

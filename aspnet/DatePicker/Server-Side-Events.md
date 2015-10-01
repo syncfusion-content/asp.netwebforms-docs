@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server-Side-Events
+title: Server Side Events | DatePicker | ASP.NET Webforms | Syncfusion
 description: server side events
 platform: aspnet
 control: DatePicker
@@ -36,7 +36,7 @@ Event Argument contains the following parameters,
 
 In the ASPX page, add the DatePicker control to configure the DatePicker events.
 
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -44,25 +44,11 @@ In the ASPX page, add the DatePicker control to configure the DatePicker events.
 
 <ej:DatePicker ID="datepicker" runat="server" OnSelect=" datepicker_Select"> </ej:DatePicker>
 
-
-
-
-
-
-
 {% endhighlight %}
-
-
 
 {% highlight c# %}
 
-
-
-
-
-
-
-    protected void datepicker_Select(object sender, Syncfusion.JavaScript.Web. DatePickerSelectEventArgs e)
+protected void datepicker_Select(object sender, Syncfusion.JavaScript.Web. DatePickerSelectEventArgs e)
 
     {
 
@@ -84,5 +70,5 @@ In the ASPX page, add the DatePicker control to configure the DatePicker events.
 
 {% endhighlight %}
 
-
+{% endtabs %}
 

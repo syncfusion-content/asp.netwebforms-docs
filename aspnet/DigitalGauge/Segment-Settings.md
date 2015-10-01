@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Segment-Settings
+title: Segment Settings | DigitalGauge | ASP.NET Webforms | Syncfusion
 description: segment settings
 platform: aspnet
 control: Digital Gauge
@@ -45,7 +45,6 @@ documentation: ug
         </ej:DigitalGauge>
 
   ~~~
-  {:.prettyprint }
 
 Execute the above code examples to render the DigitalGauge as follows.
 
@@ -54,7 +53,8 @@ Execute the above code examples to render the DigitalGauge as follows.
 ![](Segment-Settings_images/Segment-Settings_img1.png)
 
 
-_Figure 30: Digital Gauge control with segment settings_
+Digital Gauge control with segment settings
+{:.caption} 
 
 
 ## Dimension Modification
@@ -91,7 +91,6 @@ _Figure 30: Digital Gauge control with segment settings_
         </ej:DigitalGauge>
 
   ~~~
-  {:.prettyprint }
 
 Execute the above code examples to render the DigitalGauge as follows.
 
@@ -99,7 +98,8 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 ![](Segment-Settings_images/Segment-Settings_img2.png)
 
-_Figure 31: Digital Gauge control with segment dimension_
+Digital Gauge control with segment dimension
+{:.caption} 
 
 
 

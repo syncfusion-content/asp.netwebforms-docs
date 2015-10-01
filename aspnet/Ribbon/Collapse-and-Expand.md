@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Collapse-and-Expand
+title: Collapse and Expand | Ribbon | ASP.NET Webforms | Syncfusion
 description: collapse and expand
 platform: aspnet
 control: Ribbon
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Collapse
 
-_Collapse_ method is used to minimize the ribbon control tab contents.You can minimize the Ribbon tab content by using the client side method _collapse()._
+Collapse method is used to minimize the ribbon control tab contents.You can minimize the Ribbon tab content by using the client side method collapse().
 
 
 
@@ -107,7 +107,7 @@ The following screenshot displays the output of the above code example.
 
 
 
-_Expand_ method is used to expand the minimized ribbon control tab contents.You can expand the_Ribbon_ tab content by using the client side method _expand()_ .
+Expand method is used to expand the minimized ribbon control tab contents.You can expand the Ribbon tab content by using the client side method expand() .
 
 
 

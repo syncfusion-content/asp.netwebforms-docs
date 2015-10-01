@@ -1,6 +1,6 @@
 ---
 layout: post
-title: View-multiple-contents
+title: View multiple contents | Accordion | ASP.NET Webforms | Syncfusion
 description: view multiple contents
 platform: aspnet
 control: Accordion 

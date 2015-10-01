@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Context-Menu
+title: Context Menu | Schedule | ASP.NET Webforms | Syncfusion
 description: context menu
 platform: aspnet
 control: Schedule
@@ -11,27 +11,27 @@ documentation: ug
 
 * Schedule control is added with the context menu options that opens when you right-click over the cells or appointments. In addition to the default menu items available, it allows you to add the custom menu items and also the sub menu-items as per your requirement.
 
-###contextMenuSettings
+### contextMenuSettings
 
 * It is a collection that holds the menu items data.
 
-###enable
+### enable
 
 * It specifies whether to enable/disable the Context menu options.
 
-###menuItems
+### menuItems
 
 * It holds the appointment and cell related menu and custom-menu options.
 
-###appointment
+### appointment
 
 * This collection accepts the id, text and parent Id of the menu items that are to be displayed when you right-click the appointments. It can also include custom-menu items.
 
-###cells
+### cells
 
 * This collection accepts the id, text and parent Id of the menu items that are to be displayed when you right-click the Schedule cells. It also include custom-menu items.
 
-###Appointment Menu Items
+### Appointment Menu Items
 
 * By default, the appointment menu options are provided with 2 items namely Open Appointment and Delete Appointment. 
 * If you want to customize and use your own custom menu items, then you can replace the appointment menu items with their desired collections as explained in the following code.
@@ -82,7 +82,8 @@ Execute the above code to render the following output.
 ![](Context-Menu_images/Context-Menu_img1.png)
 
 
- _Figure_ _98_:  _schedule with appointment menu items_
+schedule with appointment menu items
+{:.caption }
 
 ## Categorize 
 
@@ -91,13 +92,9 @@ Execute the above code to render the following output.
 
 You can refer the following code example to render the categorize options in the context menu.
 
-
-
+{% tabs %}
 
 {% highlight html %}
-
-
-
 
 <ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData">
 
@@ -186,6 +183,8 @@ public string color { set; get; }
 }
 
 {% endhighlight %}
+
+{% endtabs %}
 
 * Execute the above code to render the following output with categorized appointments. Also when you right click “Appointment”, the context menu with categorize option is displayed as follows.
 
@@ -282,5 +281,6 @@ Execute the above code to render the following output when you right-click on th
 ![](Context-Menu_images/Context-Menu_img3.png)
 
 
- Figure 100 :  schedule with cells.
+schedule with cells
+{:.caption }
 

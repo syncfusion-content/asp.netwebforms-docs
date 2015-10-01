@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OLAP-Client-Elements
+title: OLAP Client Elements | OLAPClient | ASP.NET Webforms | Syncfusion
 description: olap client elements 
 platform: aspnet
 control: OLAP Client

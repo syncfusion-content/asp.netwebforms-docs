@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping
+title: Grouping | Grid | ASP.NET Webforms | Syncfusion
 description: grouping
 platform: aspnet
 control: Grid

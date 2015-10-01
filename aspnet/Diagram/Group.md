@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Group
+title: Group | Diagram | ASP.NET Webforms | Syncfusion
 description: group
 platform: aspnet
 control: Diagram
@@ -59,7 +59,8 @@ Diagram1.Model.Nodes.Add(group);
 
 ![](Group_images/Group_img1.png) 
 
-_Group_
+Group
+{:.caption} 
 
 ## Select a Group
 
@@ -69,20 +70,23 @@ The following steps illustrate how to select an object that has two groups.
 
 ![](Group_images/Group_img2.png) 
 
-_Selecting a Group_
+Selecting a Group
+{:.caption} 
 
 1. Click the Node1 to select the outer group.
 2. Click again to select the inner group where it belongs.
 
    ![](Group_images/Group_img3.png) 
 
-   _Selecting an inner Group_
+   Selecting an inner Group
+   {:.caption} 
    
 3. Click again to select the child node after all groups have been traversed.
 
    ![](Group_images/Group_img4.png) 
 
-   _Selecting a Child of Group_
+   Selecting a Child of Group
+   {:.caption} 
 
 ## Edit a Group
 
@@ -90,7 +94,7 @@ To edit a group, select the corresponding group. You can apply the following fea
 
 For example, resizing a group, automatically resizes its child objects to fit the selection area.
 
-_Editing a Group_
+Editing a Group
 
 <table>
 <tr>

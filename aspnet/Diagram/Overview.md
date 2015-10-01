@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Diagram | ASP.NET Webforms | Syncfusion
 description: overview
 platform: aspnet
 control: Diagram
@@ -15,7 +15,8 @@ The EssentialDiagramASP.NET creates rich Visio-like applications. Its framework 
 
  ![](Overview_images/Overview_img1.png) 
 
- _Diagram_
+ Diagram
+ {:.caption} 
 
 The list of features of the Diagram control in ASP.NET are as follows.
 

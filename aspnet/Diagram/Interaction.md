@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interaction
+title: Interaction | Diagram | ASP.NET Webforms | Syncfusion
 description: interaction
 platform: aspnet
 control: Diagram
@@ -13,7 +13,7 @@ documentation: ug
 
 There are many interactive features on Diagram surface. A collection of predefined tools are available in Diagram.
 
-_Tool_
+Tool
 
 <table>
 <tr>
@@ -114,7 +114,8 @@ diagram.addSelection(node);
 
 ![](Interaction_images/Interaction_img1.png) 
 
-_Single selection_
+Single selection
+{:.caption} 
 
 ### Multiple Selections
 
@@ -128,7 +129,8 @@ Rubber band selection is done by clicking and dragging mouse pointer on the Diag
 
 ![](Interaction_images/Interaction_img2.png) 
 
-_Multiple Selections_
+Multiple Selections
+{:.caption} 
 
 ## User Handle
 
@@ -136,7 +138,7 @@ Diagram has an option to create additional selection handles around the selector
 
 The following is the list of User handle properties.
 
-_User Handle_
+User Handle
 
 <table>
 <tr>
@@ -323,7 +325,8 @@ $(“#Diagram”).ejDiagram({ userHandles: userHandles });
 
  ![](Interaction_images/Interaction_img3.png) 
 
-_Delete-User Handle_
+Delete-User Handle
+{:.caption} 
 
 ## Zoom 
 
@@ -356,7 +359,7 @@ Refer to the link ZoomCommand.
 
 Diagram has several keyboard functions support and they are listed as follows.
 
-_Keyboard_
+Keyboard
 
 <table>
 <tr>
@@ -414,6 +417,7 @@ nudgeRight (move the selected elements towards right by one pixel).</td></tr>
 Ctrl+MouseScroll</td><td>
 Zoom(Zoom in/Zoom out the diagram).</td></tr>
 </table>
+
 ## Touch
 
 Touch support for Diagram view has the following features:
@@ -424,6 +428,7 @@ Touch support for Diagram view has the following features:
 * Multiple selection.
 * Contextmenu (touch and hold).
 * Text Editing (double tap).
+
 ## Snapping
 
 
@@ -438,7 +443,7 @@ The snap-to-grid feature allows diagram objects to snap the nearest intersection
 
 The SnapToGrid feature is enabled by using a snapSetting’s SnapConstraints property.
 
-_SnapToGrid_
+SnapToGrid
 
 <table>
 <tr>
@@ -520,7 +525,8 @@ The snap-to-object feature provides visual cues to assist with aligning and spac
 
 ![](Interaction_images/Interaction_img4.png) 
 
-_Snap to Object_
+Snap to Object
+{:.caption} 
 
 #### Enabling and Disabling snapping to objects
 

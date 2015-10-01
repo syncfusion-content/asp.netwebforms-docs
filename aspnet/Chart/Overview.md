@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Chart | ASP.NET Webforms | Syncfusion
 description: overview
 platform: aspnet
 control: Chart

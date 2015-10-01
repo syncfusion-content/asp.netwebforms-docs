@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multiple-Dialog-Support
+title: Multiple Dialog Support | Dialog | ASP.NET Webforms | Syncfusion
 description: multiple dialog support
 platform: aspnet
 control: Dialog

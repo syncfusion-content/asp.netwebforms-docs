@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding
+title: Data Binding | BulletGraph | ASP.NET Webforms | Syncfusion
 description: data binding
 platform: aspnet
 control: BulletGraph	
@@ -14,6 +14,8 @@ Bullet Graph supports binding JSON data from a remote server or data created in 
 ## Local Data
 
 Data available in client-side (local data) can be bound with Bullet Graph using Fields property. This property provides option to specify data source, fields representing progress measure bar value, comparative measure value and category value. 
+{% tabs %}
+
 {% highlight c# %}
 
 
@@ -65,6 +67,8 @@ Data available in client-side (local data) can be bound with Bullet Graph using 
 
 
 {% endhighlight %}
+
+{% endtabs %}
 The following screenshot displays Bullet Graph with local data generated in code-behind.
 
 ![](Data-Binding_images/Data-Binding_img1.png)

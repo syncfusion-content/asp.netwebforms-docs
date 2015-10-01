@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bullet-Graph-Elements
+title: Bullet Graph Elements | BulletGraph | ASP.NET Webforms | Syncfusion
 description: bullet graph elements
 platform: aspnet
 control: BulletGraph	

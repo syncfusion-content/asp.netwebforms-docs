@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Map-Providers
+title: Map Providers | Maps | ASP.NET Webforms | Syncfusion
 description: map providers
 platform: aspnet
 control: Maps
@@ -51,7 +51,8 @@ The UrlTemplate property determines the format of tile map. You can specify the 
 
 ![](Map-Providers_images/Map-Providers_img1.png)
 
-_Open street Map_
+Open street Map
+{:.caption} 
 
 ## Bing Map
 
@@ -95,5 +96,6 @@ The bing Map Key is provided as input to this key property. The Bing Map key can
 
 ![](Map-Providers_images/Map-Providers_img2.png)
 
-_Bing map_
+Bing map
+{:.caption} 
 

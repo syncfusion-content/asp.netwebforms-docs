@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Character-Settings
+title: Character Settings | DigitalGauge | ASP.NET Webforms | Syncfusion
 description: character settings
 platform: aspnet
 control: Digital Gauge
@@ -51,7 +51,8 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 ![](Character-Settings_images/Character-Settings_img1.png)
 
-_Figure 32: Digital Gauge control with character setting_
+Digital Gauge control with character setting
+{:.caption} 
 
 
 
@@ -104,7 +105,6 @@ _Figure 32: Digital Gauge control with character setting_
             </ej:DigitalGauge>
 
      ~~~
-     {:.prettyprint }
 
 Execute the above code examples to render the DigitalGauge as follows.
 
@@ -113,7 +113,8 @@ Execute the above code examples to render the DigitalGauge as follows.
 ![](Character-Settings_images/Character-Settings_img2.png)
 
 
-_Figure 33: Digital Gauge control with character type as seven segment_
+Digital Gauge control with character type as seven segment
+{:.caption} 
 
 
 ## Text Positioning
@@ -170,7 +171,8 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 ![](Character-Settings_images/Character-Settings_img3.png)
 
-_Figure 34: Digital Gauge control with position text based on the background image_
+Digital Gauge control with position text based on the background image
+{:.caption} 
 
 
 
@@ -225,6 +227,7 @@ Execute the above code examples to render the DigitalGauge as follows.
 ![](Character-Settings_images/Character-Settings_img4.png)
 
 
-_Figure 35: Digital Gauge control with shadow option_
+Digital Gauge control with shadow option
+{:.caption} 
 
 

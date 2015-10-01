@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Theme
+title: Theme | Ribbon | ASP.NET Webforms | Syncfusion
 description: theme
 platform: aspnet
 control: Ribbon
@@ -9,7 +9,7 @@ documentation: ug
 
 # Theme
 
-_Ribbon_ control’s style and appearance are controlled based on _CSS_ classes. In order to apply styles to the Ribbon control, refer to two files namely, ej.widgets.core.min.css and ej.theme.min.css. When the file ej.widgets.all.min.css is referred, it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project as ej.widgets.all.min.css is the combination of these two files. 
+Ribbon control’s style and appearance are controlled based on CSS classes. In order to apply styles to the Ribbon control, refer to two files namely, ej.widgets.core.min.css and ej.theme.min.css. When the file ej.widgets.all.min.css is referred, it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project as ej.widgets.all.min.css is the combination of these two files. 
 
 By default, there are 12 theme supports available for Ribbon control namely,   
 

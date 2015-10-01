@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Maximum-and-Minimum-length
+title: Maximum and Minimum length | Captcha | ASP.NET Webforms | Syncfusion
 description: maximum and minimum length
 platform: aspnet
 control: Captcha

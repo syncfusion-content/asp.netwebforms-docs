@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Baseline
+title: Baseline | Gantt | ASP.NET Webforms | Syncfusion
 description: baseline
 platform: aspnet
 control: Gantt
@@ -40,7 +40,8 @@ The following screenshot shows the baseline in Gantt control.
 
 ![](Baseline_images/Baseline_img1.png)
 
-_Figure : Baseline_
+Baseline
+{:.caption}
 
 
 

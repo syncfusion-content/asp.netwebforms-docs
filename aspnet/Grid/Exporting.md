@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting
+title: Exporting | Grid | ASP.NET Webforms | Syncfusion
 description: exporting
 platform: aspnet
 control: Grid
@@ -14,6 +14,9 @@ Exporting feature provides support to export Grid data into excel, word and pdf 
 ## ASP
 
 In ASP, exporting is achieved by using Grid control server side method. Using Export() server method in Grid server side event, you can export the Grid into excel, pdf and word documents.
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -177,6 +180,7 @@ public partial class ExcelExporting : System.Web.UI.Page
     }
 {% endhighlight  %}
 
+{% endtabs %}
 
 ![](Exporting_images/Exporting_img1.png)
 

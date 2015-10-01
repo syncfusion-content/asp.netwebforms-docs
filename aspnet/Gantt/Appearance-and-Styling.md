@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Appearance and Styling | Gantt | ASP.NET Webforms | Syncfusion
 description: appearance and styling
 platform: aspnet
 control: Gantt
@@ -47,18 +47,15 @@ The following screenshot shows the customized format schedule header in Gantt co
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 
-_Figure : Schedule Header Customization_
+Schedule Header Customization
+{:.caption}
 
 
 ## Taskbar Customization
 
 You can customize the Taskbar based on the task information in Gantt control to highlight the task. The following code example shows how to customize the Taskbar in Gantt control.
 
-
-
-
-
-
+{% tabs %}
 
 {% highlight js %}
 
@@ -106,7 +103,7 @@ You can customize the Taskbar based on the task information in Gantt control to 
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 
 The following screenshot shows the customized taskbar in Gantt control.
@@ -115,7 +112,8 @@ The following screenshot shows the customized taskbar in Gantt control.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
-_Figure : Customized taskbar_
+Customized taskbar
+{:.caption}
 
 ## Themes
 
@@ -182,4 +180,5 @@ The following screenshot shows the Gantt control with Gradient-lime theme.
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
 
 
-_Figure : Gantt with Gradient lime theme_
+Gantt with Gradient lime theme
+{:.caption}

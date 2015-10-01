@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance
+title: Appearance | NumericTextbox | ASP.NET Webforms | Syncfusion
 description: appearance
 platform: aspnet
 control: NumericTextbox

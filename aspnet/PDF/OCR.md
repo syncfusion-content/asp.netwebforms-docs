@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OCR
+title: OCR | PDF | ASP.NET Webforms | Syncfusion
 description: ocr
 platform: aspnet
 control: PDF

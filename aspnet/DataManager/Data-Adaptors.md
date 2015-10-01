@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Adaptors
+title: Data Adaptors | DataManager | ASP.NET Webforms | Syncfusion
 description: data adaptors
 platform: aspnet
 control: DataManager
@@ -18,6 +18,8 @@ DataManger uses adaptors to process data. There are three types of adaptors in D
 ## JSON Adaptor
 
 JSONAdaptor is used to process JSON data. It contains methods to process the given JSON data based on the queries. The following code example illustrates on how to use JSONAdaptor.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -154,6 +156,8 @@ public partial class DataManager : System.Web.UI.Page
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The result of above code example is illustrated as follows.
 
 ![](Data-Adaptors_images/Data-Adaptors_img1.png)
@@ -163,6 +167,8 @@ The result of above code example is illustrated as follows.
 ## URL Adaptor
 
 Url Adaptor of DataManager can be used when you want to use remote service to retrieve data. It interacts with server-side for all DataManager Queries and CRUD operations. Now, in the following code example the data is retrived from MVC Controller. 
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -237,6 +243,8 @@ public partial class DataManager : System.Web.UI.Page
     }
 
 {% endhighlight %}
+
+{% endtabs %}
 
 The result of the above code example is illustrated as follows.
 
@@ -333,6 +341,8 @@ Result of the above code example is illustrated as follows.
 ## RemoteSave Adaptor
 
 RemoteSaveAdaptor, extended from JsonAdaptor of DataManager, is used for binding local data and performs all DataManager queries in client-side. It interacts with server-side only for CRUD operations to pass the modified records. Refer to the following code example.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -468,6 +478,8 @@ public partial class DataManager : System.Web.UI.Page
     }
 
 {% endhighlight %}
+
+{% endtabs %}
 
 Result of the above code example is illustrated as follows.
 

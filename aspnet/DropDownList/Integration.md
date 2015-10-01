@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integration
+title: Integration | DropDownList | ASP.NET Webforms | Syncfusion
 description: integration
 platform: aspnet
 control: DropDownList
@@ -29,6 +29,8 @@ The following example depicts the way to bind data to the DropDownList through A
 N> You need to include “ej.widget.angular.min.js” file library to achieve this behaviour and you need to pass the control properties as data attribute in input tag itself like data role behaviour.
 
 In the ASPX page, add an element to configure the DropDownList
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -134,6 +136,8 @@ In the ASPX page, add an element to configure the DropDownList
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Output of the above step.
 
 ![](Integration_images/Integration_img2.png)  
@@ -164,6 +168,8 @@ The following example depicts the way to bind data to the DropDownList through t
 N> You need to include the “ej.widget.knockout.min.js” file library to achieve this behaviour and you need to pass the control properties as data attribute in input tag itself like data role behaviour.
 
 In an ASPX page, add an element to configure the DropDownList.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -245,7 +251,7 @@ $(function () {
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 Configure the styles. 
 

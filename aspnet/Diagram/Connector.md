@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Connector
+title: Connector | Diagram | ASP.NET Webforms | Syncfusion
 description: connector
 platform: aspnet
 control: Diagram
@@ -15,7 +15,8 @@ Connectors are objects used to create a link between two nodes. A connector is a
 
 ![](Connector_images/Connector_img1.jpeg) 
 
-_Connector_
+Connector
+{:.caption} 
 
 ## Create Connector
 
@@ -51,7 +52,8 @@ Diagram1.Connectors.Add(connector);
 
  ![](Connector_images/Connector_img2.png) 
 
-_Connector_
+Connector
+{:.caption} 
 
 ## Segments
 
@@ -106,7 +108,8 @@ Diagram1.Connectors.Add(connector);
 
  ![](Connector_images/Connector_img3.png)
 
-_Orthogonal Segment_
+Orthogonal Segment
+{:.caption} 
 
 The following code illustrates how to customize the Orthogonal Segment.
 
@@ -157,7 +160,8 @@ Diagram1.Connectors.Add(connector);
 
  ![](Connector_images/Connector_img4.png) 
 
-_Orthogonal Segment_
+Orthogonal Segment
+{:.caption} 
 
 ### Straight Segment
 
@@ -222,12 +226,14 @@ Diagram1.Connectors.Add(connector);
 
 ![C:/Users/lakshmipriya/Desktop/IMG_07112014_125619.png](Connector_images/Connector_img5.png) 
 
-_Polyline_
+Polyline
+{:.caption} 
 
 
 ![](Connector_images/Connector_img6.png) 
 
-_Single Line_
+Single Line
+{:.caption} 
 
 The control points can be added or deleted at runtime with shortcut key combination ctrl + shift +click on the control point.
 
@@ -288,7 +294,8 @@ Diagram1.Connectors.Add(connector);
 
 ![](Connector_images/Connector_img7.png) 
 
-_Bezier Segments_
+Bezier Segments
+{:.caption} 
 
 The following code example illustrates how to add vector point for Bezier segments.
 
@@ -340,7 +347,8 @@ DiagramContent.Connectors.Add(connector);
 
 ![](Connector_images/Connector_img8.png)
 
-_Bezier segment with vectors_
+Bezier segment with vectors
+{:.caption} 
 
 #### Editing Segments
 
@@ -350,7 +358,8 @@ The segments can be edited during runtime by dragging control thumbs. Segments c
 
 ![](Connector_images/Connector_img9.png) 
 
-_Segment Editing_
+Segment Editing
+{:.caption} 
 
 
 ## Connector Padding
@@ -381,7 +390,8 @@ connector.TargetPadding = 20;
 
 ![](Connector_images/Connector_img10.png) 
 
-_Endpoint’s adjustment specific to connector’s ends_
+Endpoint’s adjustment specific to connector’s ends
+{:.caption} 
 
 ### Endpoint adjustment specific to nodes
 
@@ -403,7 +413,8 @@ node.ConnectorPadding = 20;
 
 ![](Connector_images/Connector_img11.png) 
 
-_Endpoint’s adjustment specific to nodes_
+Endpoint’s adjustment specific to nodes
+{:.caption} 
 
 ### Endpoint adjustment specific to ports
 
@@ -427,7 +438,8 @@ port.ConnectorPadding = 20;
 
 ![](Connector_images/Connector_img12.png) 
 
-_Endpoint’s adjustment with specific to ports_
+Endpoint’s adjustment with specific to ports
+{:.caption} 
 
 ## Line Bridging
 
@@ -438,6 +450,8 @@ Only straight and orthogonal connectors support line bridging.
 Line bridging is disabled, by default. You can enable it by adding the ConnectorConstraints.Bridging in constraints.
 
 The following code illustrates how to enable line bridging.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -481,11 +495,12 @@ DiagramContent.Constraints = DiagramConstraints.Default | DiagramConstraints.Bri
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 ![](Connector_images/Connector_img13.png) 
 
-_Line Bridging_
+Line Bridging
+{:.caption} 
 
 When the connector constraint is set as ConnectorConstraints.InheritBridging, bridging is based on DiagramConstraints.
 
@@ -530,7 +545,8 @@ DiagramContent.Model.BridgeDirection = BridgeDirection.Top;
 ![](Connector_images/Connector_img14.png) 
 
 
-_BridgeDirection.Top_
+BridgeDirection.Top
+{:.caption} 
 
 
 Example 2: Bridge for Vertical Connector with BridgeDirection as Left.
@@ -550,7 +566,8 @@ DiagramContent.Model.BridgeDirection = BridgeDirection.Left;
 
  ![](Connector_images/Connector_img15.png) 
 
-_BridgeDirection.Left_
+BridgeDirection.Left
+{:.caption} 
 
 
 
@@ -596,7 +613,8 @@ Connector.CornerRadius=20;
 
 ![](Connector_images/Connector_img16.png) 
 
-_Corner Radius_
+Corner Radius
+{:.caption} 
 
 ## Connecting Nodes
 
@@ -624,7 +642,8 @@ connector.TargetNode = "tailnode"; //Sets name of targetNode
 
 ![](Connector_images/Connector_img17.jpeg) 
 
-_Node to Node Connection_
+Node to Node Connection
+{:.caption} 
 
 The point of connection is changed optimally at runtime while performing operations such as Rotating and Dragging on Source/Target Node of Connector. In case of static or specific point connection at runtime, the Port assists to maintain specific point connection between Nodes.
 
@@ -638,7 +657,7 @@ For creating specific port connection, refer to the link [Port to Port Connectio
 
 You can customize the appearance of the connector by setting a desired value to the appropriate appearance properties. The following code illustrates how to customize the appearance of connector.
 
-_Appearance_
+Appearance
 
 <table>
 <tr>
@@ -724,7 +743,7 @@ connector.SourceDecorator.Height = 10;
 
 Decorator appearance is customized by setting the desired value to the appropriate appearance properties.
 
-_Decorator Appearance_
+Decorator Appearance
 
 <table>
 <tr>
@@ -796,7 +815,8 @@ connector.SourceDecorator.FillColor = "yellow";
 
  ![](Connector_images/Connector_img18.jpeg) 
 
-_Decorator Shape_
+Decorator Shape
+{:.caption} 
 
 ## Constraints
 
@@ -804,7 +824,7 @@ _Decorator Shape_
 
 You can enable or disable certain behaviors of the Connectors by using the constraints property.__
 
-_Constraints_
+Constraints
 
 <table>
 <tr>

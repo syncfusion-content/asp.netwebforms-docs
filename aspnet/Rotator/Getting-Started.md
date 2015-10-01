@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Rotator | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: Rotator
@@ -15,7 +15,7 @@ ASP.NET Image Rotator comes with a visual that has a spectacular zoom in and fad
 
 ## Create a Rotator
 
-You can create an ASP.NET Project and add the necessary Dll’s and scripts with the help of the given [ ASP.NET -Getting Started Documentation](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc).
+You can create an ASP.NET Project and add the necessary Dll’s and scripts with the help of the given [ ASP.NET -Getting Started Documentation](http://docs.syncfusion.com/aspnetmvc/rotator/getting-started).
 
 Add the following code example to the corresponding ASPX page to render the Rotator. Place the images under the folder/Images/rotator.
 

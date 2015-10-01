@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | DateTimePicker | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: DateTimePicker
@@ -23,7 +23,7 @@ The following screenshot illustrates the functionality of a DateTimePicker with 
 
 ### Create DateTimePicker 
 
-You can create an ASP.NET Project and add necessary Dll and script with the help of the given [ASP-Getting Started](http://docs.syncfusion.com/js) Documentation.
+You can create an ASP.NET Project and add necessary Dll and script with the help of the given [ASP-Getting Started](http://docs.syncfusion.com/aspnetmvc/datetimepicker/getting-started) Documentation.
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enabling-Validation
+title: Enabling Validation | Captcha | ASP.NET Webforms | Syncfusion
 description: enabling validation
 platform: aspnet
 control: Captcha
@@ -17,6 +17,8 @@ Next, define the target button that performs validation. You can achieve this by
 
 In the ASPX page, include the following Captcha control code example for auto validation support.
 
+{% tabs %}
+
 {% highlight html %}
 
 <ej:Captcha ID="captcha" EnableAutoValidation="true" CustomErrorMessage="Invalid captcha code entered. Please try again." TargetButton="submit" Mapper="Refresh"  runat="server"></ej:Captcha> <br /><br /><br />  <ej:Button ID="submit" runat="server" Type="Button" Text="Submit" Size="Large" ShowRoundedCorner="true"></ej:Button>
@@ -32,6 +34,8 @@ In the ASPX page, include the following Captcha control code example for auto va
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The following screenshot illustrates the Captcha with Auto-Validation support. 
 
 ![C:/Users/ApoorvahR/Desktop/3.png](Enabling-Validation_images/Enabling-Validation_img1.png)
@@ -43,6 +47,8 @@ The following screenshot illustrates the Captcha with Auto-Validation support.
 Validation by method is used when EnableAutoValidation is set to false. Here, you can include the TargetButton to validate the Captcha. CaptchaService.IsValid() method is used to validate the Captcha. It requires three arguments namely as captcha, textbox, case sensitivity.
 
 In the ASPX page, include the following Captcha control code example for manual validation.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -62,6 +68,8 @@ In the ASPX page, include the following Captcha control code example for manual 
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The following screenshot illustrates the Captcha with manual validation support. 
 
 ![](Enabling-Validation_images/Enabling-Validation_img2.png)
@@ -73,6 +81,8 @@ The following screenshot illustrates the Captcha with manual validation support.
 Captcha supports to check case sensitivity (Upper case and lower case) of the Captcha characters at the time of validation. You can achieve this by enabling EnableCaseSensitivity propertyto true. By default this value is set as true.
 
 In the ASPX page, include the following Captcha control code-snippet for case sensitive validation.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -90,6 +100,8 @@ In the ASPX page, include the following Captcha control code-snippet for case se
 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 
 The following screenshot illustrates the Captcha with Case sensitive validation support. 

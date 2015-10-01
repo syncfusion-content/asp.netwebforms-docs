@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Context-Menu
+title: Context Menu | Grid | ASP.NET Webforms | Syncfusion
 description: context menu
 platform: aspnet
 control: Grid
@@ -44,6 +44,7 @@ Context Menu is one of the user interaction controls related with Grid. It is ha
 
 To enable Context Menu in Grid use EnableContextMenu property in ContextMenuSettings at Grid initialize. The following code example illustrates you on how to set Context Menu.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -180,6 +181,8 @@ namespace WebSampleBrowser.Grid
 
 
 {% endhighlight  %}
+
+{% endtabs %}
 The following output is displayed as a result of the above code example.
 
 ### Content

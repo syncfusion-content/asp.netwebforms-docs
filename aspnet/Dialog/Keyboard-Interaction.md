@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard-Interaction
+title: Keyboard Interaction | Dialog | ASP.NET Webforms | Syncfusion
 description: keyboard interaction
 platform: aspnet
 control: Dialog

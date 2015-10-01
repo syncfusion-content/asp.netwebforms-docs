@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Page-Settings
+title: Page Settings | Diagram | ASP.NET Webforms | Syncfusion
 description: page settings
 platform: aspnet
 control: Diagram
@@ -11,11 +11,13 @@ documentation: ug
 
 Page settings enable you to customize the width and height of the Diagram page. The properties of PageSetting are listed as follows.
 
-_Page settings_
+Page settings
 
 <table>
 <tr>
-<th>Properties</th><th>Data Type</th><th>Description</th></tr>
+<th>Properties</th><th>
+Data Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 PageWidth</td><td>
@@ -96,7 +98,8 @@ Diagram1.PageSettings.PageOrientation = PageOrientation.Portrait;
 
  ![](Page-Settings_images/Page-Settings_img1.png) 
 
-_Page Appearance-PageSettings based_
+Page Appearance-PageSettings based
+{:.caption} 
 
 ## MultiplePage and PageBreaks
 
@@ -104,7 +107,8 @@ When MultiplePage is enabled, size of the page dynamically increases or decrease
 
 ![](Page-Settings_images/Page-Settings_img2.png) 
 
-_Multiple Page and Page Breaks_
+Multiple Page and Page Breaks
+{:.caption} 
 
 ## AutoScroll
 
@@ -118,11 +122,13 @@ Autoscroll is automatically triggered when any one of the following is dragged t
 * Rubber band selection
 * Dropping item from palette
 
-_Properties table_
+Properties table
 
 <table>
 <tr>
-<th>Properties</th><th>Data Type</th><th>Description</th></tr>
+<th>Properties</th><th>
+Data Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 ScrollLimit</td><td>
@@ -218,5 +224,6 @@ DiagramContent.PageSettings.ScrollLimit=
 
  ![](Page-Settings_images/Page-Settings_img4.png) 
 
-_AutoScroll Border_
+AutoScroll Border
+{:.caption} 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User-Interactions
+title: User Interactions | Chart | ASP.NET Webforms | Syncfusion
 description: user interactions
 platform: aspnet
 control: Chart
@@ -235,6 +235,7 @@ Essential Chart provides you support to zoom the Chart by scrolling the mouse wh
 
  </ej:Chart>
 {% endhighlight %}
+
 ### Types of zooming: 
 
 Essential Chart supports three types of zooming. You can zoom only the x axis or can zoom only the y axis or can zoom both x and y axis respectively. This is achieved using Type property in zooming.
@@ -308,6 +309,8 @@ In order to track a data point closer to the mouse position or touch contact poi
 ## Drill Down
 
 Drill Down allows you to view the data’s in depth, for example yearly data to quarterly, quarterly to monthly or from categorical data to individual item. The drill down support is achieved using the PointRegionClick event. On clicking points in Chart series, PointRegionClick event gets triggered, using this event you can refresh your Chart by assigning new data to the Chart series through set model. In the following example a pie Chart with two points are used, when you click on the pie slice, PointRegionClick event gets triggered. Using this event and set model option, the Chart is refreshed with new data based on the point index.
+
+{% tabs %}
 
 {% highlight html %}
  
@@ -453,6 +456,8 @@ Drill Down allows you to view the data’s in depth, for example yearly data to 
     </script>
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 ![](User-Interactions_images/User-Interactions_img13.png)
 

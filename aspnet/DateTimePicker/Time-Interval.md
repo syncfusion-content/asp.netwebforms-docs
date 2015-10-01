@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Time-Interval
+title: Time Interval | DateTimePicker | ASP.NET Webforms | Syncfusion
 description: time interval
 platform: aspnet
 control: DateTimePicker
@@ -15,13 +15,7 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 {% highlight html %}
 
-
-
 <ej:DateTimePicker ID="DateTime" Interval="60" runat="server"> </ej:DateTimePicker>
-
-
-
-
 
 {% endhighlight %}
 

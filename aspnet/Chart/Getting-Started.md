@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Chart | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: Chart
@@ -27,7 +27,7 @@ This section encompasses how to configure the ASP.NET Charts for your business n
 
 Getting started with your ASP.NET Chart is very easy.  You can start by creating a simple line Chart.
 
-Create an ASP Project and add necessary Dll’s and Scripts by referring [ASP-Getting Started](http://docs.syncfusion.com/js) Documentation.
+Create an ASP Project and add necessary Dll’s and Scripts by referring [ASP-Getting Started](http://docs.syncfusion.com/aspnetmvc/chart/getting-started) Documentation.
 
 Create the web form named as default and add the following template
 
@@ -158,6 +158,8 @@ The following screenshot displays a Chart series:
 You can add JSON data to the Chart using the datasource property in Chart.
 
 
+{% tabs %}
+
 {% highlight c# %}       
 
 	List<chartData> data = new List<chartData>();
@@ -274,6 +276,8 @@ You can add JSON data to the Chart using the datasource property in Chart.
    </ej:Chart>
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 The following screenshot displays the Chart when JSON data is added.
 

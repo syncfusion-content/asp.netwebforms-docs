@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Summary
+title: Summary | Grid | ASP.NET Webforms | Syncfusion
 description: summary 
 platform: aspnet
 control: Grid
@@ -23,6 +23,7 @@ Summary is a key feature of Grid that is used to aggregate a particular column. 
 
 There are some default summary types available for basic summary formula. The following code example is for Default Summary Types. We can render summary ro for grid using ShowSummary and SummaryRows property of Grid.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -179,6 +180,8 @@ public partial class DefaultFunctionalities : System.Web.UI.Page
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The following output is displayed as a result of the above code example.
 
 ![](Summary_images/Summary_img1.png)
@@ -243,6 +246,9 @@ The following output is displayed as a result of the above code example.
 ## Custom Summary by Function
 
 Custom Summary is used to create custom summary formula for summary. The following code example is for custom summary using Essential Asp.Net.
+
+{% tabs %}
+
 {% highlight html %}
 
 
@@ -408,6 +414,8 @@ namespace WebSampleBrowser.Grid
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![](Summary_images/Summary_img3.png)
 
 
@@ -415,6 +423,8 @@ namespace WebSampleBrowser.Grid
 ## Group Summary
 
 This property helps you to enable the group summary column in Grid. The following code example is for Group summary.
+
+{% tabs %}
 
 
 {% highlight html %}
@@ -560,6 +570,8 @@ public partial class DefaultFunctionalities : System.Web.UI.Page
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The following output is displayed as a result of the above code example.
 
 
@@ -574,6 +586,7 @@ This property is used to create Caption Summary column in Grid. The following co
 
 ShowCaptionSummary property used to achieve caption summary feature.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -719,6 +732,8 @@ public partial class DefaultFunctionalities : System.Web.UI.Page
     }
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 The following output is displayed as a result of the above code example.
 

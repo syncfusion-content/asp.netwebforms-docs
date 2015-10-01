@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grid-Dependencies
+title: Grid Dependencies | Grid | ASP.NET Webforms | Syncfusion
 description: grid dependencies
 platform: aspnet
 control: Grid
@@ -11,7 +11,7 @@ documentation: ug
 
 ej.web.all.js is a bundle of all Asp.Net controls. If you use ej.web.all.js in your application, you can leave this section or else you can try to render grid in your application using ej.grid.min.js file. You can refer the following frameworks and controls in your project.
 
-_Table1: Grid Dependency_ 
+Grid Dependency
 
 <table>
 <tr>

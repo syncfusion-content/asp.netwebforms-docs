@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MVVM
+title: MVVM | CircularGauge | ASP.NET Webforms | Syncfusion
 description: mvvm
 platform: aspnet
 control: Circular Gauge

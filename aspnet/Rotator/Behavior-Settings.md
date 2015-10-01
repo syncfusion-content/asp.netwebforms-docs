@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Behavior-Settings
+title: Behavior Settings | Rotator | ASP.NET Webforms | Syncfusion
 description: behavior settings
 platform: aspnet
 control: Rotator

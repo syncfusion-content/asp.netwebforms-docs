@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Title
+title: Title | OLAPChart | ASP.NET Webforms | Syncfusion
 description: title
 platform: aspnet
 control: OLAP Chart

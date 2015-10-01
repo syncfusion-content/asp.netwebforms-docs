@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MVVM
+title: MVVM | LinearGauge | ASP.NET Webforms | Syncfusion
 description: mvvm
 platform: aspnet
 control: Linear Gauge
@@ -403,6 +403,8 @@ Execute the above code to render the following output.
 * maximum 
 * minimum
 
+{% tabs %}
+
 {% highlight html %}
 
 <%--For Linear Gauge rendering-- %>
@@ -489,11 +491,9 @@ $("#sampleProperties").ejPropertiesPanel();
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 
 Execute the above code to render the following output.
 
 ![](MVVM_images/MVVM_img8.png)
-
-_Linear Gauge with Knockout binding_

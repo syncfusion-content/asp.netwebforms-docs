@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Navigation
+title: Navigation | Schedule | ASP.NET Webforms | Syncfusion
 description: navigation
 platform: aspnet
 control: Schedule
@@ -9,7 +9,7 @@ documentation: ug
 
 # Navigation
 
-##Appointment Navigation
+## Appointment Navigation
 
 * The enableAppointmentNavigation option allows the Schedule control to show/hide the previous and next appointment navigation tabs that is usually rendered parallel to each other when it is set to ‘true’. 
 * When you click on the previous/next appointment tab, it takes you to the previous/next corresponding closest date on the Schedule that contains appointments on that particular day. By default, it is set to ‘true’.
@@ -41,9 +41,10 @@ SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 ![](Navigation_images/Navigation_img1.png)
 
 
-_Figure_ _101_:  schedule with Appointment Navigation._
+schedule with Appointment Navigation
+{:.caption} 
 
-##Calendar Navigation
+## Calendar Navigation
 
 * The dates on the Schedule control is navigated randomly to another date with the help of calendar available within the Schedule control. To open the calendar, click on the date value displayed in the header bar. You will see the calendar pops down.
 * You can click on any dates on the calendar, so that the Schedule control navigates to the selected date in the calendar.
@@ -55,7 +56,8 @@ The following screenshot displays the calendar that pops down on clicking the da
 ![](Navigation_images/Navigation_img2.png)
 
 
- _Figure_ _102_:  schedule with Calendar Navigation._
+schedule with Calendar Navigation
+{:.caption} 
 
 
 
@@ -66,7 +68,7 @@ The following screenshot displays the calendar that pops down on clicking the da
 
 The various keyboard shortcuts available within the Schedule control are as follows, 
 
-Table 1 : List of keys and its usage
+List of keys and its usage
 
 <table>
 <tr>
@@ -167,6 +169,6 @@ SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 
 ![](Navigation_images/Navigation_img3.png)
 
-
-   Figure 103 :  schedule with keyboard Navigation.
+schedule with keyboard Navigation
+{:.caption} 
 

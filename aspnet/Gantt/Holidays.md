@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Holidays
+title: Holidays | Gantt | ASP.NET Webforms | Syncfusion
 description: holidays
 platform: aspnet
 control: Gantt
@@ -10,12 +10,6 @@ documentation: ug
 # Holidays
 
 Holidays in Gantt control is used to highlight the non-working days in Gantt control and it can be initialized with Gantt control by using the following code example.
-
-
-
-
-
-
 
 {% highlight html %}
 
@@ -61,6 +55,7 @@ The following screenshot shows the output of Holidays in Gantt control.
 
 ![](Holidays_images/Holidays_img1.png) 
 
-_Figure : Holidays_
+Holidays
+{:.caption}
 
 

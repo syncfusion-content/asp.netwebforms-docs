@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbar
+title: Toolbar | Grid | ASP.NET Webforms | Syncfusion
 description: toolbar 
 platform: aspnet
 control: Grid
@@ -25,6 +25,8 @@ If you want Toolbar items other than the above items, you can make it using cust
 ## Custom Toolbar action
 
 Custom Toolbar is a key functionality, used to customize Toolbar elements. Here you can learn in detail about the Toolbar template and its actions in the Custom Toolbar category. In the following code example, ejDropDownList is used to filter records by category.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -120,6 +122,8 @@ Custom Toolbar is a key functionality, used to customize Toolbar elements. Here 
     </script>
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 The following output is displayed as a result of the above code example.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | CircularGauge | ASP.NET Webforms | Syncfusion
 description: overview
 platform: aspnet
 control: Circular Gauge

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-binding
+title: Data binding | Menu | ASP.NET Webforms | Syncfusion
 description: data binding
 platform: aspnet
 control: Menu
@@ -17,9 +17,9 @@ Field is a property that includes the object type. Fields are used to bind the d
 
 <table>
 <tr>
-<td>
-{{ '**Name**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Name**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 DataSource</td><td>
@@ -347,7 +347,8 @@ public class MenuSource
 
 
 
-The following screenshot displays the output for the above code example.      
+The following screenshot displays the output for the above code example.  
+    
 ![](Data-binding_images/Data-binding_img3.png) 
 
 

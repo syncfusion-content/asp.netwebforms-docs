@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart-Elements
+title: Chart Elements | Chart | ASP.NET Webforms | Syncfusion
 description: chart elements
 platform: aspnet
 control: Chart

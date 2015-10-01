@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server-side-events
+title: Server side events | RichTextEditor | ASP.NET Webforms | Syncfusion
 description: server side events
 platform: aspnet
 control: RichTextEditor

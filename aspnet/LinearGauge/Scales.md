@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scales
+title: Scales | LinearGauge | ASP.NET Webforms | Syncfusion
 description: scales
 platform: aspnet
 control: Linear Gauge
@@ -628,27 +628,9 @@ For thermometer scale type, the scale renders as thermometer structure with roun
 
 
 
-![](Scales_images/Scales_img7.png)
+
 
 Execute the above code to render the following output.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-_Linear Gauge with scale type as Thermometer_
+![](Scales_images/Scales_img7.png)
 

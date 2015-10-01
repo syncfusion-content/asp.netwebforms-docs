@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Barcode | ASP.NET Webforms | Syncfusion
 description: overview
 platform: aspnet
 control: Barcode

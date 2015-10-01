@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | CircularGauge | ASP.NET Webforms | Syncfusion
 description:  getting started
 platform: aspnet
 control: Circular Gauge
@@ -35,7 +35,6 @@ ASP.NET Circular Gauge widget basically renders with animation and flexible APIâ
         </ej:CircularGauge>
 
    ~~~
-   {:.pretty-print }
 
 
 
@@ -197,7 +196,7 @@ Run the above code to get the following output.
 
 
 
- {{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
+ ![](Getting-Started_images/Getting-Started_img6.png)
 
 
 

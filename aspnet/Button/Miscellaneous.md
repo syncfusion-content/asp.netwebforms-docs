@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Miscellaneous
+title: Miscellaneous | Button | ASP.NET Webforms | Syncfusion
 description: miscellaneous
 platform: aspnet
 control: Button

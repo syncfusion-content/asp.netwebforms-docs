@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | CurrencyTextBox | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: Currency TextBox
@@ -19,7 +19,7 @@ The Essential ASP.NET WebForms Editor control includes numeric, percentage, cu
 
 ### Create TextBox Controls
 
-You can create a WebForms Project and add the necessary Dlls and Scripts with the help of the given [WebForms-Getting Started](http://docs.syncfusion.com/js) documentation.
+You can create a WebForms Project and add the necessary Dlls and Scripts with the help of the given [WebForms-Getting Started](http://docs.syncfusion.com/aspnetmvc/currencytextbox/getting-started) documentation.
 
 Add the necessary Textbox control and initialize the control.
 

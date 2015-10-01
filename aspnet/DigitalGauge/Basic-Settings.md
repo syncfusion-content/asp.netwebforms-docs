@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basic-Settings
+title: Basic Settings | DigitalGauge | ASP.NET Webforms | Syncfusion
 description: basic settings
 platform: aspnet
 control: Digital Gauge
@@ -35,7 +35,9 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 ![](Basic-Settings_images/Basic-Settings_img1.png)
 
-_Figure 23: Digital Gauge control with height and width values_
+Digital Gauge control with height and width values
+{:.caption} 
+
 
 
 
@@ -64,7 +66,8 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 ![](Basic-Settings_images/Basic-Settings_img2.png) 
 
-_Figure 24: Digital Gauge control with Responsible layout_
+Digital Gauge control with Responsible layout
+{:.caption} 
 
 
 
@@ -94,7 +97,8 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 ![](Basic-Settings_images/Basic-Settings_img3.png)
 
-_Figure 25: Digital Gauge control with flatdark theme_
+Digital Gauge control with flatdark theme
+{:.caption} 
 
 
 
@@ -121,4 +125,5 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 ![](Basic-Settings_images/Basic-Settings_img4.png)
 
-_Figure 26: Digital Gauge control with text as "GO SLOW"_
+Digital Gauge control with text as "GO SLOW"
+{:.caption} 

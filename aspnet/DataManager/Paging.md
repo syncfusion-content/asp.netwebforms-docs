@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paging
+title: Paging | DataManager | ASP.NET Webforms | Syncfusion
 description: paging
 platform: aspnet
 control: DataManager

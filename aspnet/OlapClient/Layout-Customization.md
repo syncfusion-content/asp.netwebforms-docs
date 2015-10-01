@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout-Customization
+title: Layout Customization | OLAPClient | ASP.NET Webforms | Syncfusion
 description: layout customization
 platform: aspnet
 control: OLAP Client

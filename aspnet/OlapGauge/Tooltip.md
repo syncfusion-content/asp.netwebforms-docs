@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip
+title: Tooltip | OLAPGauge | ASP.NET Webforms | Syncfusion
 description: tooltip
 platform: aspnet
 control: OLAP Gauge

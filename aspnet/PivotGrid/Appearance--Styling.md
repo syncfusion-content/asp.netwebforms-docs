@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance--Styling
+title: Appearance  Styling | PercentageTextBox | ASP.NET Webforms | Syncfusion
 description: appearance & styling
 platform: aspnet
 control: PivotGrid

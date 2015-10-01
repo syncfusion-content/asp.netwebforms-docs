@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | NavigationDrawer | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: Navigation Drawer
@@ -24,8 +24,6 @@ The following steps guide you in adding a Navigation Drawer control for a web ap
 Create an HTML file and paste the following template for web layout.       
 
 {% highlight html %}
-
-<html>
 
 <head>
 
@@ -185,11 +183,7 @@ Create the navigation drawer control as follows. You can display the navigation 
 
 {% endhighlight %}
 
-                                                        .
-
-
-
-_Navigation Drawer_
+## Navigation Drawer
 
 You can display the drawer either by clicking on the target icon or by swiping from left on the page. Refer to the following screenshot.
 

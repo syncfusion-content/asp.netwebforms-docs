@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding
+title: Data Binding | DataManager | ASP.NET Webforms | Syncfusion
 description: data binding
 platform: aspnet
 control: DataManager
@@ -12,6 +12,8 @@ documentation: ug
 ## LOCAL
 
 A data source can be bound to a Grid through DataManager control. The DataManager supports JSON array binding. It is useful to bind records in client side by using JSON data that is very helpful in Single Page Application (SPA) and in feature rich web application. To achieve this, you can refer to the following code example.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -86,6 +88,8 @@ public partial class DataManager : System.Web.UI.Page
     }
 
 {% endhighlight %}
+
+{% endtabs %}
 
 The result of the above code example is illustrated as follows.
 

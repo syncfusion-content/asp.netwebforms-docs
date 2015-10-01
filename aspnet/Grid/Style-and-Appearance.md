@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Style-and-Appearance
+title: Style and Appearance | Grid | ASP.NET Webforms | Syncfusion
 description: style and appearance
 platform: aspnet
 control: Grid

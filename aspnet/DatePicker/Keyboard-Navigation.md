@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard-Navigation
+title: Keyboard Navigation | DatePicker | ASP.NET Webforms | Syncfusion
 description: keyboard navigation
 platform: aspnet
 control: DatePicker
@@ -67,7 +67,7 @@ Navigates to next month.</td></tr>
 
 In the ASPX page, add the DatePicker control to enable keyboard interaction by setting the accesskey property.
 
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -110,7 +110,7 @@ In the ASPX page, add the DatePicker control to enable keyboard interaction by s
 {% endhighlight %}
 
 
-
+{% endtabs %}
 
 
 Run the sample, press Alt + J to focus in the DatePicker control that enables it and you can navigate by using arrow keys and Esc key to close the popup.

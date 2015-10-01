@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Appearance and Styling | Chart | ASP.NET Webforms | Syncfusion
 description: appearance and styling
 platform: aspnet
 control: Chart
@@ -14,6 +14,9 @@ Essential Chart is enriched with lots of customization options to develop high q
 ## Tooltip Template
 
 You can customize a tooltip with required template by adding a “div” element with an “id” to the web page and assigning the “id” to the property “Template” under “Tooltip” as illustrated in the following code example.
+
+{% tabs %}
+
 {% highlight html %}
 
 <div id="Tooltip" style="display: none;">
@@ -41,6 +44,7 @@ You can customize a tooltip with required template by adding a “div” element
     </div>
 
 {% endhighlight %}
+
 {% highlight css %}
 <style class="cssStyles">
 
@@ -119,6 +123,7 @@ font-weight: bold;
     </style>
 
 {% endhighlight  %}
+
 {% highlight html %}
 
 
@@ -164,6 +169,8 @@ font-weight: bold;
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![F:/Skype Download/IMG_14052014_050616.png](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 
@@ -171,6 +178,8 @@ font-weight: bold;
 ## Label Template
 
 You customize a data label with required template by adding a “div” element with an “id” to the web page and assigning the “id” to the property “Template” under “DataLabel” as illustrated in the following code example.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -191,6 +200,7 @@ You customize a data label with required template by adding a “div” element 
     </div>
 
 {% endhighlight  %}
+
 {% highlight css %}
     <style>
 
@@ -247,6 +257,7 @@ You customize a data label with required template by adding a “div” element 
     </style>
 
 {% endhighlight  %}
+
 {% highlight html %}
  
 
@@ -280,6 +291,8 @@ You customize a data label with required template by adding a “div” element 
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 
@@ -300,6 +313,7 @@ By default, the label texts are automatically determined based on the axis data 
 
   </ej:Chart>
 {% endhighlight %}
+
 ### Date time Axis:
 
 For datetime axis, all globalized date time formats are supported. By default, based on the interval type the LabelFormat is calculated. When the IntervalType is “Year” then the LabelFormat is 'MMM, yyyy'.

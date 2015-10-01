@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Appearance and Styling | CurrencyTextBox | ASP.NET Webforms | Syncfusion
 description: appearance and styling
 platform: aspnet
 control: Currency TextBox

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Indicators
+title: Indicators | OLAPGauge | ASP.NET Webforms | Syncfusion
 description: indicators
 platform: aspnet
 control: OLAP Gauge

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: RTL-Support
+title: RTL Support | ListBox | ASP.NET Webforms | Syncfusion
 description: rtl support
 platform: aspnet
-control: Control Name undefined
+control: ListBox
 documentation: ug
 ---
 
@@ -17,6 +17,7 @@ The following steps explains you the configuration of EnableRTL properties in Li
 
 In an ASPX page, add an element to configure ListBox.
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -104,7 +105,7 @@ In an ASPX page, add an element to configure ListBox.
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 Output of the above steps.
 

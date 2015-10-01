@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Button | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: Button
@@ -24,7 +24,7 @@ The following screenshot illustrates the functionality of a Button control in Me
 
 ASP.NET Button control has different functionalities such as Display as Only Image Content or Image Content with Text.
 
-You can create an ASP.NETProject and add necessary Dll’s and Scripts with the help of the given [ ASP.NET -Getting Started](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc) Documentation.
+You can create an ASP.NETProject and add necessary Dll’s and Scripts with the help of the given [ ASP.NET -Getting Started](http://docs.syncfusion.com/aspnet/button/getting-started) Documentation.
 
  Add the following code example to the corresponding ASPX page to render Button. Refer to the following links to know details on ToggleButton and SplitButton.
 

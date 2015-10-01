@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-Sections
+title: Working with Sections | DocIO | ASP.NET Webforms | Syncfusion
 description: working with sections
 platform: aspnet
 control: DocIO

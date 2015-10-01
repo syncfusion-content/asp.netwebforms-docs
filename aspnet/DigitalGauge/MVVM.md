@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MVVM
+title: MVVM | DigitalGauge | ASP.NET Webforms | Syncfusion
 description: mvvm
 platform: aspnet
 control: Digital Gauge
@@ -61,7 +61,8 @@ Execute the above code to render the following output.
 
 ![](MVVM_images/MVVM_img1.png)
 
-_Figure 38: Default Digital Gauge in Angular JS_
+Default Digital Gauge in Angular JS
+{:.caption} 
 
 ### Adding the Digital Gauge Items
 
@@ -105,7 +106,8 @@ Finally while running the above codes, the following output will be rendered.
 
 ![](MVVM_images/MVVM_img2.png) 
 
-_Figure 39: Digital Gauge Rendered in Angular JS_
+Digital Gauge Rendered in Angular JS
+{:.caption} 
 
 
 
@@ -173,7 +175,8 @@ Execute the above code to render the following output.
 
 ![](MVVM_images/MVVM_img3.png)
 
-_Figure 40: Digital Gauge with two way binding in Angular JS_
+Digital Gauge with two way binding in Angular JS
+{:.caption} 
 
 ### Knockout Binding
 
@@ -226,7 +229,6 @@ _Figure 40: Digital Gauge with two way binding in Angular JS_
         </script>
 
   ~~~
-  {:.prettyprint }
 
 Execute the above code to render the following output.
 
@@ -235,7 +237,8 @@ Execute the above code to render the following output.
 ![](MVVM_images/MVVM_img4.png)
 
 
-_Figure 41: Digital Gauge with Knockout binding_
+Digital Gauge with Knockout binding
+{:.caption} 
 
 
 

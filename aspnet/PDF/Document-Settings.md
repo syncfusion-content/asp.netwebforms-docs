@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Document-Settings
+title: Document Settings | PDF | ASP.NET Webforms | Syncfusion
 description: document settings
 platform: aspnet
 control: PDF

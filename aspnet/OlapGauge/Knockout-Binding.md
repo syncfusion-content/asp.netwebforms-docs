@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Knockout-Binding
+title: Knockout Binding | OLAPGauge | ASP.NET Webforms | Syncfusion
 description: knockout binding
 platform: aspnet
 control: OLAP Gauge

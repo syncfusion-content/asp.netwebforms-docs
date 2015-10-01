@@ -1,6 +1,6 @@
 ---
 layout: post
-title: State-Persistence
+title: State Persistence | DatePicker | ASP.NET Webforms | Syncfusion
 description: state persistence 
 platform: aspnet
 control: DatePicker

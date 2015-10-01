@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set-Dynamic-DataSource-to-Grid
+title: Set Dynamic DataSource to Grid | Grid | ASP.NET Webforms | Syncfusion
 description: set dynamic datasource to grid
 platform: aspnet
 control: Grid
@@ -12,6 +12,8 @@ documentation: ug
 Grid control is capable of updating its dataSource as and when required. Grid method “dataSource” helps in achieving this and in this method parameter, you have to pass the new dataSource as json array.
 
 For instance, consider a textbox above Grid and depending on its value, you can update a new datasource to Grid dynamically.
+
+{% tabs %}
 
  {% highlight html %}
 
@@ -131,6 +133,8 @@ public static object GetData(int EmployeeID)
 
 
 {% endhighlight %}
+
+{% endtabs %}
 	
 The following screenshot illustrates the output.
 

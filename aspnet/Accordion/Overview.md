@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Accordion | ASP.NET Webforms | Syncfusion
 description: overview
 platform: aspnet
 control: Accordion 

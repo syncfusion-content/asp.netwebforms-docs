@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layers
+title: Layers | Maps | ASP.NET Webforms | Syncfusion
 description: layers
 platform: aspnet
 control: Maps
@@ -76,5 +76,6 @@ In this example, World Map shape is used as shape data by utilizing the “World
 
 ![](Layers_images/Layers_img1.png)
 
-_Map with layers_
+Map with layers
+{:.caption} 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Change-Splitter-position
+title: Change Splitter position | Gantt | ASP.NET Webforms | Syncfusion
 description: change splitter position
 platform: aspnet
 control: Gantt
@@ -46,18 +46,21 @@ The following code example explains how to define the SplitterPosition property 
 ![](Change-Splitter-position_images/Change-Splitter-position_img2.png) 
 
 
-_Figure : Gantt with 30 % splitter position_
+Gantt with 30 % splitter position
+{:.caption}
 
 
 
 
 ![](Change-Splitter-position_images/Change-Splitter-position_img3.png) 
 
-_Figure : Gantt with 50% splitter position_
+Gantt with 50% splitter position
+{:.caption}
 
 ![](Change-Splitter-position_images/Change-Splitter-position_img4.png)
 
-_Figure : Gantt with 600px splitter position_
+Gantt with 600px splitter position
+{:.caption}
 
 
 

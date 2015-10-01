@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart-Types
+title: Chart Types | OLAPChart | ASP.NET Webforms | Syncfusion
 description: chart types
 platform: aspnet
 control: OLAP Chart

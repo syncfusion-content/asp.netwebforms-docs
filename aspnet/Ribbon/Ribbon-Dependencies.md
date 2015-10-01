@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ribbon-Dependencies
+title: Ribbon Dependencies | Ribbon | ASP.NET Webforms | Syncfusion
 description: ribbon dependencies
 platform: aspnet
 control: Ribbon
@@ -9,14 +9,14 @@ documentation: ug
 
 # Ribbon Dependencies
 
-_ej.web.all.js_ is a bundle of all ASP.NET controls. When you use _ej.web.all.js_ in your application, you can leave this section or else you can try to render _Ribbon_ in your application by using _ej.ribbon_ file. You can refer to the following frameworks and controls in your project.
+ej.web.all.js is a bundle of all ASP.NET controls. When you use ej.web.all.js in your application, you can leave this section or else you can try to render Ribbon in your application by using ej.ribbon file. You can refer to the following frameworks and controls in your project.
 
-Table 1: Ribbon Dependency
+Ribbon Dependency
 
 <table>
 <tr>
 <th>
-Files                          </th><th>
+Files </th><th>
 Description/Usage </th></tr>
 <tr>
 <td>

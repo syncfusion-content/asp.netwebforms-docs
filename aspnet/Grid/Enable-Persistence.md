@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enable-Persistence
+title: Enable Persistence | Grid | ASP.NET Webforms | Syncfusion
 description: enable persistence
 platform: aspnet
 control: Grid
@@ -11,6 +11,7 @@ documentation: ug
 
 EnablePersistence is used to maintain the current state of the Grid model. When you refresh the page, the current grid state is stored in localStorage and it renders from stored model. 
 
+{% tabs %}
 
 {% highlight html %}
 
@@ -174,6 +175,9 @@ namespace WebSampleBrowser.Grid
 
 
 {% endhighlight  %}
+
+{% endtabs %}
+
 The following output is displayed as a result of the above code example.
 
 ![](Enable-Persistence_images/Enable-Persistence_img1.png)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Qualitative-Range
+title: Qualitative Range | BulletGraph	 | ASP.NET Webforms | Syncfusion
 description: qualitative range
 platform: aspnet
 control: BulletGraph	

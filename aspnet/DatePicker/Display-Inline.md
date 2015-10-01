@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display-Inline
+title: Display Inline | DatePicker | ASP.NET Webforms | Syncfusion
 description: display inline
 platform: aspnet
 control: DatePicker

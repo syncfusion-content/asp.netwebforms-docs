@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Easy-customization
+title: Easy customization | Checkbox | ASP.NET Webforms | Syncfusion
 description: easy customization
 platform: aspnet
 control: Checkbox
@@ -83,16 +83,16 @@ An option is required to set indeterminate state for Checkbox. By using CheckSta
 
 <table>
 <tr>
-<td>
-Check</td><td>
+<th>
+Check</th><td>
 Check box is in the checked state.</td></tr>
 <tr>
-<td>
-Uncheck</td><td>
+<th>
+Uncheck</th><td>
 Check box is in the un-checked state.</td></tr>
 <tr>
-<td>
-Indeterminate</td><td>
+<th>
+Indeterminate</th><td>
 Check box is in the indeterminate state.</td></tr>
 </table>
 

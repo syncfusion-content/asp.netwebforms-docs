@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize-Direction
+title: Customize Direction | NavigationDrawer | ASP.NET Webforms | Syncfusion
 description: customize direction
 platform: aspnet
 control: Navigation Drawer

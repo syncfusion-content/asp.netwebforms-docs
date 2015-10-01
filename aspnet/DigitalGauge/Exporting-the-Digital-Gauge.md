@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting-the-Digital-Gauge
+title: Exporting the Digital Gauge | DigitalGauge | ASP.NET Webforms | Syncfusion
 description: exporting the digital gauge
 platform: aspnet
 control: Digital Gauge
@@ -36,5 +36,6 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 ![](Exporting-the-Digital-Gauge_images/Exporting-the-Digital-Gauge_img1.png)
 
-_Figure 37: Digital Gauge control with Export functionality_
+Digital Gauge control with Export functionality
+{:.caption} 
 

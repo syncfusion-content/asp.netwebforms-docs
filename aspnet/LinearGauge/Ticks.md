@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ticks
+title: Ticks | LinearGauge | ASP.NET Webforms | Syncfusion
 description: ticks
 platform: aspnet
 control: Linear Gauge
@@ -110,9 +110,6 @@ Execute the above code to render the following output.
 {% highlight html %}
 
 
-
-{% endhighlight %}
-
 <%--For Linear gauge rendering-- %>
 
 <ej:LinearGauge runat="server" ID="PointerGauge" Value="78" EnableAnimation="false" ReadOnly="false">
@@ -178,6 +175,8 @@ Execute the above code to render the following output.
 <Frame InnerWidth="8" OuterWidth="10" BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light.png" />
 
 </ej:LinearGauge>
+
+{% endhighlight %}
 
 
 Execute the above code to render the following output.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server-Side-Events
+title: Server Side Events | DateTimePicker | ASP.NET Webforms | Syncfusion
 description: server side events
 platform: aspnet
 control: DateTimePicker
@@ -26,6 +26,8 @@ Event Argument contains the following parameters,e.EventType – Event Name.e.Va
 
 
 In the ASPX page, add the DateTimePicker control to configure DateTimePicker events.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -61,5 +63,5 @@ protected void DateTime_FocusOut(object sender, Syncfusion.JavaScript.Web.DateTi
 
 {% endhighlight %}
 
-
+{% endtabs %}
 

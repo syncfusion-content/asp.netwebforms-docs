@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AngularJS-Support
+title: AngularJS Support | Maps | ASP.NET Webforms | Syncfusion
 description: angularjs support
 platform: aspnet
 control: Maps
@@ -66,7 +66,8 @@ Apply the plugin and property assigning the Map element through the directive 
 
 ![](AngularJS-Support_images/AngularJS-Support_img1.png)
 
-_Angular Support Map_
+Angular Support Map
+{:.caption} 
 
 
 

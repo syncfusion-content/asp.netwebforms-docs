@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-Header-and-footer-template
+title: Working with Header and footer template | PDF | ASP.NET Webforms | Syncfusion
 description: working with header and footer template
 platform: aspnet
 control: PDF

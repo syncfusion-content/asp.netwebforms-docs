@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Persistence-support
+title: Persistence support | ListBox | ASP.NET Webforms | Syncfusion
 description: persistence support 
 platform: aspnet
-control: Control Name undefined
+control: ListBox
 documentation: ug
 ---
 
@@ -14,6 +14,8 @@ This feature enables you to save current model value to browser cookies for stat
 The following steps explains you the configuration of EnablePersistence property in ListBox.
 
 In an ASPX page, add an elementto configure ListBox.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -101,5 +103,5 @@ In an ASPX page, add an elementto configure ListBox.
 
 {% endhighlight %}
 
-
+{% endtabs %}
 

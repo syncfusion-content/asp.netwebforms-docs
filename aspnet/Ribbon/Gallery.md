@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gallery
+title: Gallery | Ribbon | ASP.NET Webforms | Syncfusion
 description: gallery
 platform: aspnet
 control: Ribbon
@@ -9,18 +9,18 @@ documentation: ug
 
 # Gallery
 
-The Ribbon control has _Gallery_ support. By using the Galleryin Ribbon, items are displayed with good look and feel and it also enables to classify the items as groups for easy navigation.Gallery can be included in the tabgroups.
+The Ribbon control has Gallery support. By using the Galleryin Ribbon, items are displayed with good look and feel and it also enables to classify the items as groups for easy navigation.Gallery can be included in the tabgroups.
 
-To use the _Gallery feature_, include the following properties under tabgroups.
+To use the Gallery feature, include the following properties under tabgroups.
 
-* _Id_ –defines the id of the gallery.
-* _Type_- defines the type of the item and it must be of Gallerytype.
-* _Columns_ –defines the number of columns to be displayed in a row at intial without gallery expand operation.
-* _ExpandedColumns_-defines the number of columns to be displayed in a row at gallery expand operation.
-* _ItemHeight_ –defines the height of the  contents.
-* _ItemWidth_ –defines the width of contents.
-* _GalleryItemCollection_ –defines the collection of the items to be included in the gallery.
-* _CustomGalleryItemCollection_ - defines the additional items to be  displayed at gallery expand operation. It can be of CustomItemType Button or Menu. By default value it is Button.
+* Id – defines the id of the gallery.
+* Type - defines the type of the item and it must be of Gallerytype.
+* Columns – defines the number of columns to be displayed in a row at intial without gallery expand operation.
+* ExpandedColumns - defines the number of columns to be displayed in a row at gallery expand operation.
+* ItemHeight – defines the height of the  contents.
+* ItemWidth – defines the width of contents.
+* GalleryItemCollection – defines the collection of the items to be included in the gallery.
+* CustomGalleryItemCollection - defines the additional items to be  displayed at gallery expand operation. It can be of CustomItemType Button or Menu. By default value it is Button.
 
 {% highlight html %}
 

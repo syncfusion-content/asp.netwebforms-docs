@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RTL-Support
+title: RTL Support | PercentageTextBox | ASP.NET Webforms | Syncfusion
 description: rtl support
 platform: aspnet
 control: PercentageTextBox

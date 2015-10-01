@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Behaviour-Settings
+title: Behaviour Settings | ColorPicker | ASP.NET Webforms | Syncfusion
 description: behaviour settings
 platform: aspnet
 control: ColorPicker
@@ -393,7 +393,7 @@ The BasicPalette type rendered with predefined color values. The BasicPalette mo
 
 The ColorPicker control allows you to define the preset model to be rendered initially in palette type. This can be achieved by using the “PresetType” property. Totally 12 types of presets available.
 
-The “_PresetType_” property is Enum type and its default value is “basic”.
+The “PresetType” property is Enum type and its default value is “basic”.
 
 
 <table>

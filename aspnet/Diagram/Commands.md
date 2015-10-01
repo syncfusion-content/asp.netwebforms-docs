@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Commands
+title: Commands | Diagram | ASP.NET Webforms | Syncfusion
 description: commands
 platform: aspnet
 control: Diagram
@@ -27,7 +27,7 @@ There are several commands available in the Diagram. They are listed as follows.
 
 Alignment commands are used to align selected nodes/connectors on the Diagram page. The alignment is based on the selection boundary. The alignment command is as follows.
 
-_Alignment Command_
+Alignment Command
 
 <table>
 <tr>
@@ -73,7 +73,8 @@ diagram.align("center");
 
 ![](Commands_images/Commands_img1.png) 
 
-_Vertical Alignment_
+Vertical Alignment
+{:.caption} 
 
 ### Horizontal Alignment commands
 
@@ -103,13 +104,14 @@ diagram.align("middle");
 
 ![](Commands_images/Commands_img2.png) 
 
-_Horizontal alignment_
+Horizontal alignment
+{:.caption} 
 
 ## Spacing Command
 
 Spacing commands are used to place selected nodes on the Diagram at equal intervals from each other. The objects are spaced within the bounds of the first and last objects in the selection.
 
-_Spacing Command_
+Spacing Command
 
 <table>
 <tr>
@@ -148,7 +150,8 @@ diagram.spaceAcross();
 
 ![](Commands_images/Commands_img3.png) 
 
-_Space Across_
+Space Across
+{:.caption} 
 
 ### spaceDown Command
 
@@ -173,7 +176,8 @@ diagram.spaceDown();
 
 ![](Commands_images/Commands_img4.png) 
 
-_Space Down_
+Space Down
+{:.caption} 
 
 ## Sizing Command
 
@@ -181,7 +185,7 @@ Sizingcommands are used to size the selected nodes on the Diagram.
 
 The following are the sizing commands.
 
-_Sizing Command_
+Sizing Command
 
 <table>
 <tr>
@@ -229,7 +233,8 @@ diagram.sameWidth();
 
 ![](Commands_images/Commands_img5.png) 
 
-_Sizing Commands_
+Sizing Commands
+{:.caption} 
 
 ## Clipboard commands 
 
@@ -301,7 +306,8 @@ diagram.paste();
 
 ![](Commands_images/Commands_img6.png) 
 
-_Paste_
+Paste
+{:.caption} 
 
 ## Grouping Commands
 
@@ -370,7 +376,8 @@ diagram.bringToFront();
 
 ![](Commands_images/Commands_img7.png) 
 
-_Bring To Front_
+Bring To Front
+{:.caption} 
 
 ### sendToBack Commands
 
@@ -394,7 +401,8 @@ diagram.sendToBack();
 
 ![](Commands_images/Commands_img8.png) 
 
-_Send To Back_
+Send To Back
+{:.caption} 
 
 ### moveForward Commands
 
@@ -418,7 +426,8 @@ diagram.moveForward();
 
 ![](Commands_images/Commands_img9.png) 
 
-_ Move Forward_
+Move Forward
+{:.caption} 
 
 ### sendBackwardCommands
 
@@ -442,7 +451,8 @@ diagram.sendBackward();
 
 ![](Commands_images/Commands_img10.png) 
 
-_Send Backward_
+Send Backward
+{:.caption} 
 
 ## Zoom Commands
 
@@ -502,7 +512,7 @@ function ZoomOut()
 
 Nudge commands move selected elements on the Diagram up, down, left, or right by 1 pixel. The Nudge command is as follows.
 
-_Nudge Commands_
+Nudge Commands
 
 <table>
 <tr>
@@ -534,7 +544,8 @@ The corresponding arrow keys are used to move the selected elements up, down, le
 
 ![](Commands_images/Commands_img11.png) 
 
-_Keyboard-Arrow Keys_
+Keyboard Arrow Keys
+{:.caption} 
 
 Nudge commands are particularly useful for accurate placement of Diagram elements on the Diagram as it allows you to move by 1 pixel each time.
 
@@ -542,7 +553,7 @@ Nudge commands are particularly useful for accurate placement of Diagram element
 
 FitToPage command fits the Diagram content into the view with respect to width, height, or the whole.
 
-_FitToPage Commands_
+FitToPage Commands
 
 <table>
 <tr>
@@ -573,7 +584,7 @@ diagram.fitToPage("page", "content", { "left": 25, "top": 25, "right": 25, "bott
 
 Mode is to specify whether the Diagram content can be fit into view with respect to width, height or entire bounds of the Diagram.
 
-_Fit To Modes_
+Fit To Modes
 
 <table>
 <tr>
@@ -596,7 +607,7 @@ Fits the height of Diagram content into view</td></tr>
 
 Region specifies the region/bounds of Diagram content to fit into view.
 
-_Diagram Region_
+Diagram Region
 
 <table>
 <tr>

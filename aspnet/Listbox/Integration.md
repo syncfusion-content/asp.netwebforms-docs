@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integration
+title: Integration | ListBox | ASP.NET Webforms | Syncfusion
 description: integration
 platform: aspnet
 control: Control Name undefined
@@ -32,7 +32,7 @@ N> You can include the “ej.widget.angular.min.js” file library to achieve th
 
 In an ASPX page, add an element to configure ListBox.
 
-
+{% tabs %}
 
 {% highlight html %}
 
@@ -132,6 +132,8 @@ var list = [
 
 {% endhighlight %}
 
+{% endtabs %}
+
 
 
 Add the following styles in your sample
@@ -187,7 +189,7 @@ N> You caninclude the “ej.widget.knockout.min.js” file library to achieve th
 In an ASPX page, add an element to configure ListBox.
 
 
-
+{% tabs %}
 
 
 {% highlight html %}
@@ -282,7 +284,7 @@ dataList: ko.observable(carList),
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 Configure the styles.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: One-Dimensional-Barcodes
+title: One Dimensional Barcodes | Barcode | ASP.NET Webforms | Syncfusion
 description: one dimensional barcodes
 platform: aspnet
 control: Barcode
@@ -89,7 +89,7 @@ Code 11 is used primarily for labeling the telecommunication equipment’s. The 
 
 Codabar is a variable length symbol that encodes the following 20 characters:
 
-           0123456789-$:/.+ABCD
+0123456789-$:/.+ABCD
 
 The characters, A, B, C and D are used as start and stop characters. Codabar is used in libraries, blood banks, the package delivery industry and a variety of other information processing applications.
 

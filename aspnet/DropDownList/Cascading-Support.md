@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cascading-Support
+title: Cascading Support | DropDownList | ASP.NET Webforms | Syncfusion
 description: cascading support 
 platform: aspnet
 control: DropDownList
@@ -17,6 +17,8 @@ N> In case the second DropDown is disabled, until the first one is selected, you
 The following step explains the behaviour of cascade DropDown. 
 
 In an ASPX page, add an element to configure the DropDownList.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -168,7 +170,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 Output of the above step.
 
@@ -185,6 +187,8 @@ N> In case, when you want to show the cascading DropDowns in disabled state init
 The following step explains the behavior of multiple cascade DropDown.
 
 In an ASPX page, add an element to configure the DropDownList.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -381,6 +385,8 @@ protected void Page_Load(object sender, EventArgs e)
 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 The following screenshot displays the output of the above code example.
 

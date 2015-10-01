@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Symbol-Palette
+title: Symbol Palette | Diagram | ASP.NET Webforms | Syncfusion
 description: symbol palette
 platform: aspnet
 control: Diagram
@@ -13,7 +13,8 @@ The SymbolPalette displays a collection of palettes. The Palette shows nodes and
 
  ![](Symbol-Palette_images/Symbol-Palette_img1.jpeg) 
 
-_SymbolPalette_
+SymbolPalette
+{:.caption} 
 
 ## Create and Add Symbols in the Palette
 
@@ -85,13 +86,14 @@ The Diagram provides support to add nodes and connectors through the Symbol Pale
 
 ![](Symbol-Palette_images/Symbol-Palette_img2.png) 
 
-_Adding Nodes and Connectors through Symbol Palette_
+Adding Nodes and Connectors through Symbol Palette
+{:.caption} 
 
 ## Appearance
 
 The following properties are used to customize the appearance of the Symbol Palette.
 
-_Appearance_
+Appearance
 
 <table>
 <tr>
@@ -195,7 +197,7 @@ Diagram provides preview support to Paletteitem during drag and drop. When you d
 
 You can customize the preview size and position by using the following properties.
 
-_Preview Appearance_
+Preview Appearance
 
 <table>
 <tr>

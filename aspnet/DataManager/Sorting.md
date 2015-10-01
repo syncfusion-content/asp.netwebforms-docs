@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting
+title: Sorting | DataManager | ASP.NET Webforms | Syncfusion
 description: sorting
 platform: aspnet
 control: DataManager

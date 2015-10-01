@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting
+title: Exporting | Diagram | ASP.NET Webforms | Syncfusion
 description: exporting
 platform: aspnet
 control: Diagram
@@ -90,7 +90,7 @@ Mode is to specify whether to export diagram as downloadable file or as data.
 
 The following table illustrates the possible mode options.
 
-_Exporting modes_
+Exporting modes
 
 <table>
 <tr>
@@ -111,7 +111,7 @@ You can export any particular region of the Diagram. The region to be exported i
 
 The following table illustrates Diagram regions.
 
-_Diagram Region_
+Diagram Region
 
 <table>
 <tr>
@@ -134,5 +134,6 @@ It includes jpg, png, bmp, and svg.
 
  ![](Exporting_images/Exporting_img1.png) 
 
-_Exported diagram_
+Exported diagram
+{:.caption} 
 

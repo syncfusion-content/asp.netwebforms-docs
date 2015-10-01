@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Diagram-Elements
+title: Diagram Elements | Diagram | ASP.NET Webforms | Syncfusion
 description: diagram elements
 platform: aspnet
 control: Diagram
@@ -19,5 +19,6 @@ documentation: ug
 
   ![C:/Users/labuser/Desktop/a.png](Diagram-Elements_images/Diagram-Elements_img1.png) 
 
-_Diagram-elements_
+Diagram-elements
+{:.caption} 
 

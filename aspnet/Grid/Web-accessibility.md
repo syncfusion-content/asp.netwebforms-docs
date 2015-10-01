@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Web-accessibility
+title: Web accessibility | Grid | ASP.NET Webforms | Syncfusion
 description: web accessibility
 platform: aspnet
 control: Grid

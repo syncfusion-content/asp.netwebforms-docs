@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Measure-Groups
+title: Measure Groups | OLAPClient | ASP.NET Webforms | Syncfusion
 description: measure groups 
 platform: aspnet
 control: OLAP Client

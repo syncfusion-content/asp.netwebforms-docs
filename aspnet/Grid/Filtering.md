@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering
+title: Filtering | Grid | ASP.NET Webforms | Syncfusion
 description: filtering
 platform: aspnet
 control: Grid
@@ -61,7 +61,7 @@ The following output is displayed as a result of the above code example.
 
 Filter bar is one of the types of filtering. It is otherwise called text filtering as filter bar working is based on text boxes. Through this you can filter records. Filter bars have expression to filter records. They are based on type of column. 
 
-_List of Filter Bar Expressions_
+List of Filter Bar Expressions
 
 <table>
 <tr>
@@ -150,7 +150,7 @@ The Submenu items in the filter menu provide the advanced filtering options for 
 ![](Filtering_images/Filtering_img5.png)
 
 
-
+{% tabs %}
 
 
 {% highlight html %}
@@ -239,11 +239,13 @@ List<Orders> order = new List<Orders>();
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ## Filter operators
 
 Grid uses filter operators from DataManager, that are used at the time of filtering. Filter operators are used to denote filtering type.
 
-_List of Column type and Filter operators_
+List of Column type and Filter operators
 
 <table>
 <tr>
@@ -272,6 +274,8 @@ ej.FilterOperators.greaterThanej.FilterOperators.greaterThanOrEqualej.FilterOper
 ## External Filtering
 
 Grid contains an API to do filtering dynamically after Grid initialize, without the use of User Interaction. It is useful to do filtering dynamically.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -414,7 +418,7 @@ Grid contains an API to do filtering dynamically after Grid initialize, without 
 
 {% endhighlight  %}
 
-
+{% endtabs %}
 
 
 

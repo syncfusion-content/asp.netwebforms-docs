@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Two-Dimensional-Barcodes
+title: Two Dimensional Barcodes | Barcode | ASP.NET Webforms | Syncfusion
 description: two dimensional barcodes
 platform: aspnet
 control: Barcode

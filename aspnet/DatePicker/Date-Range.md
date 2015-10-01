@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Date-Range
+title: Date Range | DatePicker | ASP.NET Webforms | Syncfusion
 description: date range
 platform: aspnet
 control: DatePicker

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting
+title: Exporting | Schedule | ASP.NET Webforms | Syncfusion
 description: exporting
 platform: aspnet
 control: Schedule
@@ -18,6 +18,8 @@ documentation: ug
 Important: Exporting feature is not applicable for JS as it is performed in Server side.
 
 {% endhighlight %}
+
+{% tabs %}
 
 
 {% highlight html %}
@@ -122,8 +124,11 @@ var model = JsonConvert.DeserializeObject<Dictionary<string, object>>(e.Argument
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Execute the above code to render the following output.
 
 ![](Exporting_images/Exporting_img1.png)
 
-_Figure_ _129_: Schedule with Appointment export feature_
+Schedule with Appointment export feature
+{:.caption }

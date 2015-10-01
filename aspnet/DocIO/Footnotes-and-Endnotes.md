@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Footnotes-and-Endnotes
+title: Footnotes and Endnotes | DocIO | ASP.NET Webforms | Syncfusion
 description: footnotes and endnotes
 platform: aspnet
 control: DocIO

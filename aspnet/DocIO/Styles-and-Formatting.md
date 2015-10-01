@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styles-and-Formatting
+title: Styles and Formatting | DocIO | ASP.NET Webforms | Syncfusion
 description: styles and formatting
 platform: aspnet
 control: DocIO

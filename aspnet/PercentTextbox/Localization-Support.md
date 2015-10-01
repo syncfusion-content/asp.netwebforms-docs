@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization-Support
+title: Localization Support | PercentageTextBox | ASP.NET Webforms | Syncfusion
 description: localization support
 platform: aspnet
 control: PercentageTextBox
