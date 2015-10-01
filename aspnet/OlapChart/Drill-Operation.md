@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Drill Operation | OLAPChart | ASP.NET Webforms | Syncfusion
+title: Drill Operation | OLAPChart | ASP.NET | Syncfusion
 description: drill operation
 platform: aspnet
-control: Control Name undefined
+control: OLAPChart
 documentation: ug
 ---
 
@@ -17,26 +17,27 @@ Drill down also called as roll down that is the reverse of drill up. It navigate
 
 ![](Drill-Operation_images/Drill-Operation_img1.png)
 
-_Figure : Drill-down operation in OlapChart_
+Drill-down operation in OlapChart
+{:.caption}
 
 ![](Drill-Operation_images/Drill-Operation_img2.png)
 
-_Figure : Drill-up operation in OlapChart_
+Drill-up operation in OlapChart
+{:.caption}
 
 DrillSuccess event gets triggered when you right-click on the OlapChart and select any option available from the context menu to perform drill up or drill down operation.
 
-{% highlight html %}
+{% tabs %}
 
+{% highlight html %}
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc">;
 
-    <ClientSideEvents DrillSuccess="DrillSuccess" />
+<ClientSideEvents DrillSuccess="DrillSuccess" />
 
 </ej:OlapChart>
-
 {% endhighlight %}
 
 {% highlight js %}
-
 <script type="text/javascript">
 
     function DrillSuccess(args) {
@@ -46,7 +47,6 @@ DrillSuccess event gets triggered when you right-click on the OlapChart and sele
     }
 
 </script>
-
 {% endhighlight %}
 
-
+{% endtabs %}

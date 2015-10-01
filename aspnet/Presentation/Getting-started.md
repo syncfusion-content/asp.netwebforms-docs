@@ -657,7 +657,8 @@ chart.PrimaryCategoryAxis.CategoryLabels = chart.ChartData[2, 1, 7, 1];
 Finally, save the presentation by using the Save method as follows. In order to release the resources utilized by presentation 
 instance, make sure that the presentation is closed finally.
 
-{% highlight c# %}//Add the third slide into the presentation 
+{% highlight c# %}
+//Add the third slide into the presentation 
 
 presentation.Save("sample.pptx");
 
@@ -832,4 +833,3 @@ image.Save("slide1.png");
 
 presentation.Close();
 {% endhighlight %}
-
