@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting
+title: Exporting | PivotGrid | ASP.NET | Syncfusion
 description: exporting
 platform: aspnet
 control: PivotGrid
@@ -15,15 +15,13 @@ The PivotGrid control can be exported to the following formats:
 * Word
 * PDF
 * CSV
-{% highlight html %}
 
+{% highlight html %}
 <ej:PivotGrid ID="PivotGrid1" runat="server" IsResponsive="true"
 
               Url="../wcf/OLAPService.svc" ClientIDMode="Static"></ej:PivotGrid>
 
 <ej:Button runat="server" ClientSideOnClick="exportBtnClick" Text="Export"></ej:Button>
-
-
 
 function exportBtnClick(args) {
 
@@ -32,7 +30,6 @@ function exportBtnClick(args) {
     gridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.Excel);
 
 }
-
 {% endhighlight %}
 
 The Export type that is to be mentioned in the parameter takes any one of the following enumerated values such as Excel, Word, PDF and CSV.
@@ -40,7 +37,6 @@ The Export type that is to be mentioned in the parameter takes any one of the fo
 The following code example of the service method needs to be added in-order to perform exporting in the PivotGrid.
 
 {% highlight C# %}
-
 public void Export(System.IO.Stream stream)
 
 {
@@ -58,24 +54,25 @@ public void Export(System.IO.Stream stream)
     System.Web.HttpContext.Current.Response);
 
 }
-
 {% endhighlight %}
 
- ![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/PivotGridExcelWeb.png](Exporting_images/Exporting_img1.png) 
+![](Exporting_images/Exporting_img1.png) 
 
+Exported PivotGrid in Excel
+{:.caption}
 
+![](Exporting_images/Exporting_img2.png) 
 
+Exported PivotGrid in Word
+{:.caption}
 
+![](Exporting_images/Exporting_img3.png)
 
- ![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/PivotGridWordWeb.png](Exporting_images/Exporting_img2.png) 
+Exported PivotGrid in PDF
+{:.caption}
 
+![](Exporting_images/Exporting_img4.png) 
 
-
- ![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/PivotGridPdfWeb.png](Exporting_images/Exporting_img3.png)
-
-
-
- ![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/PivotGridCSVJS.png](Exporting_images/Exporting_img4.png) 
-
-
+Exported PivotGrid in CSV
+{:.caption}
 

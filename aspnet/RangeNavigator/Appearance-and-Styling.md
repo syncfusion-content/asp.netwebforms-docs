@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Appearance and Styling | RangeNavigator | ASP.NET | Syncfusion
 description: appearance and styling
 platform: aspnet
 control: RangeNavigator
@@ -15,9 +15,7 @@ RangeNavigator is enriched with lots of customization options for labels, gridli
 
 The labels are found along the range, displaying the value of the data it correspond, both on (higher level label) and below (lower level label) the RangeNavigator. RangeNavigator labels are further customized using “Font” property in label Settings. 
 
-
 {% highlight html %}
-
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="onchartloaded">
 
      <LabelSettings>
@@ -48,9 +46,8 @@ The labels are found along the range, displaying the value of the data it corres
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
-
-
-_Figure 22: Customize labels_
+Customize labels
+{:.caption} 
 
 ## Label Placement:
 
@@ -59,7 +56,6 @@ Labels in RangeNavigator are placed inside or outside of the control. You can cu
 The following screen shot illustrates both the lower and higher level labels that are placed outside the control with LabelPlacement specified as outside. 
 
 {% highlight html %}
-
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="onchartloaded">
 
      <LabelSettings>
@@ -84,59 +80,56 @@ The following screen shot illustrates both the lower and higher level labels tha
 
 The following screenshot illustrates a RangeNavigator with labels inside the control after specifying the labelPlacement as inside.
 
-
-
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
-
+RangeNavigator with labels inside the control
+{:.caption} 
 
 ## Customize RangeNavigator
 
 RangeNavigator is customized using NavigatorStyleSettings properties. You can customize the selected and unselected region color using SelectedRegionColor, UnselectedRegionColor in NavigatorStyleSettings and the thumb of the slider using ThumbColor, ThumbRadius and ThumbStorke in NavigatorStyleSettings.  MajorGridLineStyle and MinorGridLineStyle are used to customize the grid line color and visibility. 
 
 {% highlight html %}
-
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="onchartloaded">
 
-  <LabelSettings>
+    <LabelSettings>
 
-     <HigherLevel>
+        <HigherLevel>
 
-                    <Style HorizontalAlignment="Left" Font-Color="#ff0000" Font-Opacity="1" Font-FontSize="13px" Font-Style="Normal" Font-Weight="Regular"> </Style>
+            <Style HorizontalAlignment="Left" Font-Color="#ff0000" Font-Opacity="1" Font-FontSize="13px" Font-Style="Normal" Font-Weight="Regular">
+            </Style>
 
-     </HigherLevel>
+        </HigherLevel>
 
-  <LowerLevel>
+        <LowerLevel>
 
-                    <Style HorizontalAlignment="Left" Font-Color="#ff0000" Font-Opacity="1" Font-FontSize="12px" Font-Style="Normal" Font-Weight="Regular"></Style>
+            <Style HorizontalAlignment="Left" Font-Color="#ff0000" Font-Opacity="1" Font-FontSize="12px" Font-Style="Normal" Font-Weight="Regular"></Style>
 
-   </LowerLevel>
+        </LowerLevel>
 
-</LabelSettings>
+    </LabelSettings>
 
-
-
-<NavigatorStyleSettings UnselectedRegionColor="white" SelectedRegionColor="#5EABDE" ThumbRadius="10" ThumbColor="white" Background="transparent">
+    <NavigatorStyleSettings UnselectedRegionColor="white" SelectedRegionColor="#5EABDE" ThumbRadius="10" ThumbColor="white" Background="transparent">
 
         <Border Color="black" Width="3"></Border>
 
-       <MajorGridLineStyle Color="transparent" Visible="true"></MajorGridLineStyle>
+        <MajorGridLineStyle Color="transparent" Visible="true"></MajorGridLineStyle>
 
         <MinorGridLineStyle Color="transparent" Visible="true"></MinorGridLineStyle>
 
-</NavigatorStyleSettings>
+    </NavigatorStyleSettings>
 
-  <%--Code --%>
+    <%--Code --%>
 
-  <%--Code --%>
+        <%--Code --%>
 
 </ej:RangeNavigator>
-
 {% endhighlight %}
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
-
+Customize RangeNavigator
+{:.caption}
 
 ## Themes
 
@@ -164,9 +157,9 @@ RangeNavigator theme is a set of pre-defined options that are applied to the con
 
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" Theme="azuredark">
 
-  <%--Code --%>
+<%--Code --%>
 
-  <%--Code --%>
+<%--Code --%>
 
 </ej:RangeNavigator>
 
@@ -174,5 +167,5 @@ RangeNavigator theme is a set of pre-defined options that are applied to the con
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png) 
 
-
-
+Themes
+{:.caption}

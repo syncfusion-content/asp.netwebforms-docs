@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Measure Groups | OLAPClient | ASP.NET Webforms | Syncfusion
+title: Measure Groups | OLAPClient | ASP.NET | Syncfusion
 description: measure groups 
 platform: aspnet
-control: OLAP Client
+control: OLAPClient
 documentation: ug
 ---
 
@@ -19,7 +19,12 @@ In Cube Dimension Browser tree-view can be viewed in a filtered manner through t
 
 On selecting a measure group from the drop-down list, the Cube Dimension Browser tree-view displays the related dimensions as follows.
 
-![C:/Users/Narendhran Muthuvel/Desktop/Capture7.PNG](Measure-Groups_images/Measure-Groups_img1.png) 
+![](Measure-Groups_images/Measure-Groups_img1.png) 
 
+OLAP Client with Measure Groups in a drop-down list
+{:.caption}
 
-![C:/Users/Narendhran Muthuvel/Desktop/Capture44.PNG](Measure-Groups_images/Measure-Groups_img2.png) 
+![C:/Users/Narendhran Muthuvel/Desktop/Capture44.PNG](Measure-Groups_images/Measure-Groups_img2.png)
+
+OLAP Client with filtered tree-view in Cube Dimension Browser 
+{:.caption}

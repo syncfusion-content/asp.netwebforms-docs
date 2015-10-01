@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip
+title: Tooltip | RangeNavigator | ASP.NET | Syncfusion
 description: tooltip
 platform: aspnet
 control: RangeNavigator
@@ -15,20 +15,18 @@ RangeNavigator provides Tooltip support for sliders. Sliders are used to select 
 
 RangeNavigator provides support for you to customize the text display in the tooltip and background using TooltipSettings property. You can change font family, font color, font style, font weight. By default “Segoe UI” font family is set to tooltip text.
 
-
 {% highlight html %}
-
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" Locale="fr-FR">
 
 <TooltipSettings Visible="True" BackgroundColor="black" TooltipDisplayMode="ondemand">        
 
-        <Font Color="red"  Family="Segoe UI" Style="Normal" FontSize="12px"  Opacity="1" Weight="Regular"></Font>
+<Font Color="red"  Family="Segoe UI" Style="Normal" FontSize="12px"  Opacity="1" Weight="Regular"></Font>
 
 </TooltipSettings>
 
-  <%--Code --%>
+<%--Code --%>
 
-  <%--Code --%>
+<%--Code --%>
 
 </ej:RangeNavigator>
 
@@ -36,7 +34,8 @@ RangeNavigator provides support for you to customize the text display in the too
 
 ![](Tooltip_images/Tooltip_img1.png)
 
-
+Tool Tip
+{:.caption}
 
 ## Label Format
 
@@ -51,35 +50,27 @@ Some of the LabelFormat for DateTime data are as follows:
 * 'hh:mm:ss'
 * 'hh:mm:ss:tt'
 
-
-
-
 {% highlight html %}
+<ej:RangeNavigator ID="Range1" runat="server">
 
+<TooltipSettings LabelFormat="MMM, yyyy"></TooltipSettings>
 
+. . . . . . .
 
-        <ej:RangeNavigator ID="Range1" runat="server">
+. . . . . . .
 
-            <TooltipSettings LabelFormat="MMM, yyyy"></TooltipSettings>
-
-            . . . . . . .
-
-            . . . . . . .
-
-        </ej:RangeNavigator>
-
+</ej:RangeNavigator>
 {% endhighlight %}
-
 
 ![](Tooltip_images/Tooltip_img2.png)
 
+labelFormat
+{:.caption}
 
 
 ## Tooltip display mode
 
 By default the tooltip for RangeNavigator gets displayed. You can change this behavior using the TooltipDisplayMode property in the tooltip and it takes the following values.
-
-_Table_ _1_: _Tooltip values_
 
 <table>
 <tr>
@@ -96,24 +87,22 @@ ondemand</td><td>
 Tooltip get displayed only when we move the slider.</td></tr>
 </table>
 
-
 {% highlight html %}
-
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" Locale="fr-FR">
 
 <TooltipSettings Visible="True" TooltipDisplayMode="ondemand">   
 
 </TooltipSettings>
 
-  <%--Code --%>
+<%--Code --%>
 
-  <%--Code --%>
+<%--Code --%>
 
 </ej:RangeNavigator>
-
 {% endhighlight %}
 
 ![](Tooltip_images/Tooltip_img3.png) 
 
-
+Tool Tip display mode
+{:.caption}
 

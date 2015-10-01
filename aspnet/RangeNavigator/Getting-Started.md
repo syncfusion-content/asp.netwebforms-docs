@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | RangeNavigator | ASP.NET | Syncfusion
 description: getting started
 platform: aspnet
 control: RangeNavigator
@@ -15,28 +15,37 @@ This section explains briefly about how to create a RangeNavigator in your ASP.N
 
 This section encompasses the details on how to configure the RangeNavigator and update the chart control for RangeNavigator’s selected range. It also helps you to learn how to pass the required data to RangeNavigator and customize the scale and selected range for your requirements. In this example, you will learn how to configure the RangeNavigator to analyse sales of a product for a particular quarter in a year.
 
-
-
 ![](Getting-Started_images/Getting-Started_img1.png)
 
+RangeNavigator
+{:.caption} 
 
+### Create a simple ASP.NET Application for RangeNavigator
 
-## Create a simple ASP.NET Application for RangeNavigator
-
- You can create a new ASP.NET Rangenavigator using Syncfusion ASP.NET website template.
+You can create a new ASP.NET Rangenavigator using Syncfusion ASP.NET website template.
 
 1. On the File menu, click NewWeb Site. The New Web Site dialog box opens.
 
-	![](Getting-Started_images/Getting-Started_img2.png)
-
+   ![](Getting-Started_images/Getting-Started_img2.png)
+   New Web site dialog box
+   {:.caption} 
+   
 2. On the upper-right corner, select .NET Framework 4.5.
+
 3. In the Installed Templates pane, expand either Visual Basic or Visual C# and then click Web.
+
 4. In the Visual Studio Installed Templates pane, select Syncfusion ASP.NET Web Site project template.
+
 5. Select location and enter web site name In the Web location box,
+
 6. Click OK.
+
 7. The New ASP.NET web site opens.
+
 8. While creating web site through Sycfusion ASP template, the below changes will be applied in the project.
+
 9. Configure web.config files for assemblies
+
    * The following assemblies references are added properly in web.config file.  
 
    ~~~ html	
@@ -70,35 +79,30 @@ This section encompasses the details on how to configure the RangeNavigator and 
 		</pages>	
 		
    ~~~
-   {:.prettyprint }
 
-10. Syncfusion .CSS  and Script files are added in Content and Script folder
+10.Syncfusion .CSS  and Script files are added in Content and Script folder
     
-	![](Getting-Started_images/Getting-Started_img3.png)
+   ![](Getting-Started_images/Getting-Started_img3.png)
 
-
-
-11. ASP Script Manager, Syncfusion CSS and Scripts file references are added from the respective folder in Site.Master page.
+11.ASP Script Manager, Syncfusion CSS and Scripts file references are added from the respective folder in Site.Master page.
     
-	![](Getting-Started_images/Getting-Started_img4.png)
+   ![](Getting-Started_images/Getting-Started_img4.png)
 
+12.Syncfusion EJ and EJ.Web dll added in website property page
 
+   ![](Getting-Started_images/Getting-Started_img5.png)
 
-12. Syncfusion EJ and EJ.Web dll added in website property page
+13.Now you can find Rangenavigator custom control in the Syncfusion Toolbox.
 
-	![](Getting-Started_images/Getting-Started_img5.png)
+14.Click on Rangenavigator icon and drag and drop in your web page.
 
-13. Now you can find Rangenavigator custom control in the Syncfusion Toolbox.
-14. Click on Rangenavigator icon and drag and drop in your web page.
+   ![](Getting-Started_images/Getting-Started_img6.png)
 
-	![](Getting-Started_images/Getting-Started_img6.png)
-
-15. In designer page now RangeNavigator designer image will be created.
-
+15.In designer page now RangeNavigator designer image will be created.
 
 N> If you use web application, you will need to follow the above steps manually to use the Syncfusion controls.
 
-## Configure RangeNavigator
+### Configure RangeNavigator
 
 Getting started with your ASP RangeNavigator is simple; all you need to do is initialize the RangeNavigator by setting range values.
 
@@ -106,9 +110,10 @@ The following Screen shot displays the RangeNavigator with a range from 2010 Jan
 
 ![](Getting-Started_images/Getting-Started_img8.png)
 
+RangeNavigator with a range from 2010 January 1st to December 31st.
+{:.caption} 
 
-
-## Add series
+### Add series
 
 To add a series to RangeNavigator, you need to set DataSource property, as given in the following code example. 
 
@@ -118,31 +123,25 @@ In Default.ASPX.cs specify the data for data source.
 
 {% highlight c# %}
 
-
-
 List<NavigatorData> dataTable = new List<NavigatorData>();
 
+dataTable.Add(new NavigatorData(new DateTime(2011, 01, 01), 10));
 
+dataTable.Add(new NavigatorData(new DateTime(2011, 02, 01), 5));
 
-            dataTable.Add(new NavigatorData(new DateTime(2011, 01, 01), 10));
+dataTable.Add(new NavigatorData(new DateTime(2011, 04, 01), 15));
 
-            dataTable.Add(new NavigatorData(new DateTime(2011, 02, 01), 5));
+dataTable.Add(new NavigatorData(new DateTime(2011, 06, 01), 25));
 
-            dataTable.Add(new NavigatorData(new DateTime(2011, 04, 01), 15));
+dataTable.Add(new NavigatorData(new DateTime(2011, 08, 01), 10));
 
-            dataTable.Add(new NavigatorData(new DateTime(2011, 06, 01), 25));
+dataTable.Add(new NavigatorData(new DateTime(2011, 10, 01), 5));
 
-            dataTable.Add(new NavigatorData(new DateTime(2011, 08, 01), 10));
+dataTable.Add(new NavigatorData(new DateTime(2011, 12, 31), 15));
 
-            dataTable.Add(new NavigatorData(new DateTime(2011, 10, 01), 5));
+this.RangeNavigator1.DataSource = dataTable;
 
-            dataTable.Add(new NavigatorData(new DateTime(2011, 12, 31), 15));
-
-            this.RangeNavigator1.DataSource = dataTable;
-
-            this.RangeNavigator1.DataBind();
-
-
+this.RangeNavigator1.DataBind();
 
 class NavigatorData
 
@@ -191,54 +190,41 @@ class NavigatorData
             }
 
         }
-
 {% endhighlight %}
 
 In Default.ASPX specify the type of series you want to render using “Type” property. And specify the Datasource to the series of RangeNavigator.
 
 {% highlight html %}
-
-
-
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" XName="xDate" YName="yValue">        
 
     </ej:RangeNavigator>
-
-
+{% endhighlight %}
 
 The following screenshot displays the RangeNavigator with the type series as “line”. 
 
-
-
 ![](Getting-Started_images/Getting-Started_img9.png)
+RangeNavigator with the type series as “line”.
+{:.caption}
 
-
-{% endhighlight %}
-
-## Enable tooltip
+### Enable tooltip
 
 Tooltip can be customized for RangeNavigator using Tooltip option. You can also use ToolipDisplayMode option in Tooltip to display the tooltip “always” or “ondemand” (displays tooltip only while dragging the sliders). You can also specify label format for tooltip using LabelFormat.
 
-
 {% highlight html %}
-
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" XName="xDate" YName="yValue">
 
-        <TooltipSettings Visible="true" LabelFormat="MMM/yyyy" TooltipDisplayMode="always"></TooltipSettings>        
+<TooltipSettings Visible="true" LabelFormat="MMM/yyyy" TooltipDisplayMode="always"></TooltipSettings>        
 
-    </ej:RangeNavigator>
-
-
+</ej:RangeNavigator>
+{% endhighlight %}
 
 The following screen shot displays the label format Tooltip in RangeNavigator:
 
-{% endhighlight %}
-
 ![](Getting-Started_images/Getting-Started_img10.png)
+label format Tooltip in RangeNavigator
+{:.caption}
 
-
-
-## Update Chart
+### Update Chart
 
 RangeNavigator is used along with the controls like chart and grid to view the range of data selected in RangeNavigator. 
 
@@ -246,36 +232,35 @@ In order to update chart, whenever the selected range changes in RangeNavigator,
 
 Now, add the DataSource to the series and provide the field name to get the values from the DataSource in XName and YName options and also trigger the RangeChanged event for updating the chart.
 
-{% highlight c# %}
+{% tabs %}
 
+{% highlight c# %}
 List<NavigatorData> dataTable = new List<NavigatorData>();
 
-            dataTable.Add(new NavigatorData(new DateTime(2011, 01, 01), 10));
+dataTable.Add(new NavigatorData(new DateTime(2011, 01, 01), 10));
 
-            dataTable.Add(new NavigatorData(new DateTime(2011, 02, 01), 5));
+dataTable.Add(new NavigatorData(new DateTime(2011, 02, 01), 5));
 
-            dataTable.Add(new NavigatorData(new DateTime(2011, 04, 01), 15));
+dataTable.Add(new NavigatorData(new DateTime(2011, 04, 01), 15));
 
-            dataTable.Add(new NavigatorData(new DateTime(2011, 06, 01), 25));
+dataTable.Add(new NavigatorData(new DateTime(2011, 06, 01), 25));
 
-            dataTable.Add(new NavigatorData(new DateTime(2011, 08, 01), 10));
+dataTable.Add(new NavigatorData(new DateTime(2011, 08, 01), 10));
 
-            dataTable.Add(new NavigatorData(new DateTime(2011, 10, 01), 5));
+dataTable.Add(new NavigatorData(new DateTime(2011, 10, 01), 5));
 
-            dataTable.Add(new NavigatorData(new DateTime(2011, 12, 31), 15));
+dataTable.Add(new NavigatorData(new DateTime(2011, 12, 31), 15));
 
-            this.Chart1.DataSource = dataTable;
+this.Chart1.DataSource = dataTable;
 
-            this.Chart1.DataBind();
+this.Chart1.DataBind();
 
-            this.RangeNavigator1.DataSource = dataTable;
+this.RangeNavigator1.DataSource = dataTable;
 
-            this.RangeNavigator1.DataBind();
-			
-			{% endhighlight %}
+this.RangeNavigator1.DataBind();
+{% endhighlight %}
 
 {% highlight html %}
-
 <ej:Chart ID="Chart1" runat="server">
 
         <Title Text="Sales Analysis"></Title>
@@ -292,22 +277,20 @@ List<NavigatorData> dataTable = new List<NavigatorData>();
 
         <ej:Series Name="Product A" Type="Line" XName="xDate" YName="yValue"></ej:Series>
 
-    </Series>     
+       </Series>     
 
-    </ej:Chart> 
-
-
+</ej:Chart> 
 
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" XName="xDate" YName="yValue" onClientSideRangeChanged="onrangechanged">
 
 </ej:RangeNavigator>
-
 {% endhighlight %}
+
+{% endtabs %}
 
 The following code example illustrates how to use the RangeChanged event of RangeNavigator for updating the chart with the selected data.
 
 {% highlight js %}
-
 <script type="text/javascript" language="javascript">
 
 function onrangechanged(sender) {
@@ -325,102 +308,94 @@ function onrangechanged(sender) {
     }
 
 </script>
-
 {% endhighlight %}
 
 The following screenshot displays how the RangeNavigator is updated when the selected range is changed.
 
 ![](Getting-Started_images/Getting-Started_img11.png)
+RangeNavigator is updated when the selected range is changed.
+{:.caption}
 
-
-
-## Set value type
+### Set value type
 
 RangeNavigator can also be used with numerical values. You can specify the data type using ValueType option. 
 
 First let’s create a DataSource for Chart Series with integer Values. 
 
 {% highlight c# %} 
+List < NavigatorData > dataTable = new List < NavigatorData > ();
 
-List<NavigatorData> dataTable = new List<NavigatorData>();
+dataTable.Add(new NavigatorData(0, 10));
 
+dataTable.Add(new NavigatorData(50, 5));
 
+dataTable.Add(new NavigatorData(100, 15));
 
-            dataTable.Add(new NavigatorData(0, 10));
+dataTable.Add(new NavigatorData(150, 25));
 
-            dataTable.Add(new NavigatorData(50, 5));
+dataTable.Add(new NavigatorData(200, 10));
 
-            dataTable.Add(new NavigatorData(100, 15));
+dataTable.Add(new NavigatorData(250, 5));
 
-            dataTable.Add(new NavigatorData(150, 25));
+dataTable.Add(new NavigatorData(300, 15));
 
-            dataTable.Add(new NavigatorData(200, 10));
+this.RangeNavigator1.DataSource = dataTable;
 
-            dataTable.Add(new NavigatorData(250, 5));
+this.RangeNavigator1.DataBind();
 
-            dataTable.Add(new NavigatorData(300, 15));
+class NavigatorData
 
-            this.RangeNavigator1.DataSource = dataTable;
+{
 
-            this.RangeNavigator1.DataBind();
+	private double xdate;
 
+	public double xDate
 
+	{
 
- class NavigatorData
+		get {
+			return xdate;
+		}
 
-        {
+		set {
+			xdate = value;
+		}
 
-            private double xdate;
+	}
 
-            public double xDate
+	private double yvalue;
 
-            {
+	public double yValue
 
-                get { return xdate; }
+	{
 
-                set { xdate = value; }
+		get {
+			return yvalue;
+		}
 
-            }
+		set {
+			yvalue = value;
+		}
 
+	}
 
+	public NavigatorData(double xdate, double yvalue)
 
-            private double yvalue;
+	{
 
+		this.xdate = xdate;
 
+		this.yvalue = yvalue;
 
-            public double yValue
+	}
 
-            {
-
-                get { return yvalue; }
-
-                set { yvalue = value; }
-
-            }
-
-
-
-            public NavigatorData(double xdate, double yvalue)
-
-            {
-
-                this.xdate = xdate;
-
-                this.yvalue = yvalue;
-
-            }
-
-        }
-
-		{% endhighlight %}
+}
+{% endhighlight %}
 		
 In Default.ASPX specify the DataSource to the series and provide the field name to get the values from the DataSource in XName and YName options series and also set the ValueType property to “numeric” as given in the following code example. 
 
 {% highlight html %}
-
-
-
-  <ej:RangeNavigator ID="RangeNavigator1" runat="server" ValueType="numeric">
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" ValueType="numeric">
 
     <Series>
 
@@ -428,13 +403,12 @@ In Default.ASPX specify the DataSource to the series and provide the field name 
 
     </Series>
 
-</ej:RangeNavigator>       
-
+</ej:RangeNavigator>   
 {% endhighlight %}
 
 The following screenshot displays the RangeNavigator with numerical values:
 
 ![](Getting-Started_images/Getting-Started_img12.png) 
 
-
-
+RangeNavigator with numerical values
+{:.caption}

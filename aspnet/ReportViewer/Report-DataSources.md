@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Report-DataSources
+title: Report DataSources | ReportViewer | ASP.NET | Syncfusion
 description: report datasources
 platform: aspnet
 control: ReportViewer
@@ -13,176 +13,207 @@ The ReportViewer has support to add data sources to ReportViewer for RDLC report
 
 The following code example illustrates how to add DataSource at control creation.
 
+{% tabs %}
+
 {% highlight html %}
+<ej:ReportViewer ID="viewer" runat="server" ReportServiceUrl="/api/ReportApi" ReportPath="~/App_Data/Product List.rdlc" ProcessingMode="Local">
 
-        <ej:ReportViewer ID="viewer" runat="server" ReportServiceUrl="/api/ReportApi" ReportPath="~/App_Data/Product List.rdlc" ProcessingMode="Local">
-
-        </ej:ReportViewer>
-
-
+</ej:ReportViewer>
 {% endhighlight %}
-
 
 {% highlight c# %}
+public partial class ProductListDemo: System.Web.UI.Page
 
-public partial class ProductListDemo : System.Web.UI.Page
+{
 
-    {
+	protected void Page_Load(object sender, EventArgs e)
 
-        protected void Page_Load(object sender, EventArgs e)
+	{
 
-        {
+		ProductList productList = new ProductList();
 
-            ProductList productList = new ProductList();
+		List < ReportDataSource > dataSources = new List < ReportDataSource > ();
 
-            List<ReportDataSource> dataSources = new List<ReportDataSource>();
+		ReportDataSource dataSource = new ReportDataSource();
 
-            ReportDataSource dataSource =new ReportDataSource();
+		dataSource.Name = "list";
 
-            dataSource.Name = "list";
+		dataSource.Value = productList.GetData();
 
-            dataSource.Value = productList.GetData();
+		dataSources.Add(dataSource);
 
-            dataSources.Add(dataSource);
+		this.viewer.DataSources = dataSources;
 
-            this.viewer.DataSources = dataSources;
+	}
 
-        }
+}
 
-    }
+public class ProductList
 
+{
 
+	public string ProductName {
+		get;
+		set;
+	}
 
-    public class ProductList
+	public string OrderId {
+		get;
+		set;
+	}
 
-    {
+	public double Price {
+		get;
+		set;
+	}
 
-        public string ProductName { get; set; }
+	public string Category {
+		get;
+		set;
+	}
 
-        public string OrderId { get; set; }
+	public string Ingredients {
+		get;
+		set;
+	}
 
-        public double Price { get; set; }
+	public string ProductImage {
+		get;
+		set;
+	}
+	
+	public IList GetData()
 
-        public string Category { get; set; }
+	{
 
-        public string Ingredients { get; set; }
+		List < ProductList > dataList = new List < ProductList > ();
 
-        public string ProductImage { get; set; }
+		ProductList data = null;
 
+		data = new ProductList() {
+			ProductName = "Baked Chicken and Cheese", OrderId = "323B60", Price = 55, Category = "Non-Veg", Ingredients = "grilled chicken, corn and olives.", ProductImage = ""
+		};
 
+		dataList.Add(data);
 
-        public IList GetData()
+		data = new ProductList() {
+			ProductName = "Chicken Delite", OrderId = "323B61", Price = 100, Category = "Non-Veg", Ingredients = "cheese, chicken chunks, onions & pineapple chunks.", ProductImage = ""
+		};
 
-        {
+		dataList.Add(data);
 
-            List<ProductList> dataList = new List<ProductList>();
+		data = new ProductList() {
+			ProductName = "Chicken Tikka", OrderId = "323B62", Price = 64, Category = "Non-Veg", Ingredients = "onions, grilled chicken, chicken salami & tomatoes.", ProductImage = ""
+		};
 
-            ProductList data = null;
+		dataList.Add(data);
 
-            data = new ProductList() { ProductName = "Baked Chicken and Cheese", OrderId = "323B60", Price = 55, Category = "Non-Veg", Ingredients = "grilled chicken, corn and olives.", ProductImage = "" };
+		return dataList;
 
-            dataList.Add(data);
+	}
 
-            data = new ProductList() { ProductName = "Chicken Delite", OrderId = "323B61", Price = 100, Category = "Non-Veg", Ingredients = "cheese, chicken chunks, onions & pineapple chunks.", ProductImage = "" };
-
-            dataList.Add(data);
-
-            data = new ProductList() { ProductName = "Chicken Tikka", OrderId = "323B62", Price = 64, Category = "Non-Veg", Ingredients = "onions, grilled chicken, chicken salami & tomatoes.", ProductImage = "" };
-
-            dataList.Add(data);
-
-            return dataList;
-
-        }
-
-    }
-
+}
 {% endhighlight %}
+
+{% endtabs %}
 
 The following code example illustrates how to add DataSource in Web API.
 
 {% highlight c# %}
+public class ReportsController: ApiController,IReportController
+{
 
+	/// <summary>
 
+	/// Report loaded method that is triggered when report and sub report are loaded.
 
-public class ReportsController : ApiController, IReportController
+	/// </summary>
 
-    {
+	/// <param name="reportOptions">The ReportViewer options.</param>
 
-        /// <summary>
+	public void OnReportLoaded(ReportViewerOptions reportOptions)
 
-        /// Report loaded method that is triggered when report and sub report are loaded.
+	{
 
-        /// </summary>
+		//Adds data sources to report model.
 
-        /// <param name="reportOptions">The ReportViewer options.</param>
+		reportOptions.ReportModel.DataSources.Clear();
 
-        public void OnReportLoaded(ReportViewerOptions reportOptions)
+		ProductList productList = new ProductList();
 
-        {
+		reportOptions.ReportModel.DataSources.Add(new ReportDataSource {
+			Name = "list", Value = productList.GetData()
+		});
 
-            //Adds data sources to report model.
+	}
 
-            reportOptions.ReportModel.DataSources.Clear();
-
-            ProductList productList = new ProductList();
-
-            reportOptions.ReportModel.DataSources.Add(new ReportDataSource { Name = "list", Value = productList.GetData() });            
-
-        }
-
-
-
-
-
-    }
-
-
+}
 
 public class ProductList
 
-    {
+{
 
-        public string ProductName { get; set; }
+	public string ProductName {
+		get;
+		set;
+	}
 
-        public string OrderId { get; set; }
+	public string OrderId {
+		get;
+		set;
+	}
 
-        public double Price { get; set; }
+	public double Price {
+		get;
+		set;
+	}
 
-        public string Category { get; set; }
+	public string Category {
+		get;
+		set;
+	}
 
-        public string Ingredients { get; set; }
+	public string Ingredients {
+		get;
+		set;
+	}
 
-        public string ProductImage { get; set; }
+	public string ProductImage {
+		get;
+		set;
+	}
+	
+	public IList GetData()
 
+	{
 
+		List < ProductList > dataList = new List < ProductList > ();
 
-        public IList GetData()
+		ProductList data = null;
 
-        {
+		data = new ProductList() {
+			ProductName = "Baked Chicken and Cheese", OrderId = "323B60", Price = 55, Category = "Non-Veg", Ingredients = "grilled chicken, corn and olives.", ProductImage = ""
+		};
 
-            List<ProductList> dataList = new List<ProductList>();
+		dataList.Add(data);
 
-            ProductList data = null;
+		data = new ProductList() {
+			ProductName = "Chicken Delite", OrderId = "323B61", Price = 100, Category = "Non-Veg", Ingredients = "cheese, chicken chunks, onions & pineapple chunks.", ProductImage = ""
+		};
 
-            data = new ProductList() { ProductName = "Baked Chicken and Cheese", OrderId = "323B60", Price = 55, Category = "Non-Veg", Ingredients = "grilled chicken, corn and olives.", ProductImage = "" };
+		dataList.Add(data);
 
-            dataList.Add(data);
+		data = new ProductList() {
+			ProductName = "Chicken Tikka", OrderId = "323B62", Price = 64, Category = "Non-Veg", Ingredients = "onions, grilled chicken, chicken salami & tomatoes.", ProductImage = ""
+		};
 
-            data = new ProductList() { ProductName = "Chicken Delite", OrderId = "323B61", Price = 100, Category = "Non-Veg", Ingredients = "cheese, chicken chunks, onions & pineapple chunks.", ProductImage = "" };
+		dataList.Add(data);
 
-            dataList.Add(data);
+		return dataList;
 
-            data = new ProductList() { ProductName = "Chicken Tikka", OrderId = "323B62", Price = 64, Category = "Non-Veg", Ingredients = "onions, grilled chicken, chicken salami & tomatoes.", ProductImage = "" };
+	}
 
-            dataList.Add(data);
-
-            return dataList;
-
-        }
-
-    }
-
+}
 {% endhighlight %}
 
 ## DataSource Credentials
@@ -190,28 +221,24 @@ public class ProductList
 The DataSource credentials can be given at Web API Controller to connect data source.
 
 {% highlight c# %}
+/// <summary>
 
+/// Report Initialization method that is triggered when report begins to process.
 
+/// </summary>
 
-                   /// <summary>
+/// <param name="reportOptions">The ReportViewer options.</param>
 
-        /// Report Initialization method that is triggered when report begins to process.
+public void OnInitReportOptions(ReportViewerOptions reportOptions)
 
-        /// </summary>
+{
 
-        /// <param name="reportOptions">The ReportViewer options.</param>
+	//Adds SSRS Server and Database Credentials here.
 
-        public void OnInitReportOptions(ReportViewerOptions reportOptions)
+	reportOptions.ReportModel.ReportServerCredential = new System.Net.NetworkCredential("ssrs", "RDLReport1");
 
-        {
+	reportOptions.ReportModel.DataSourceCredentials.Add(new DataSourceCredentials("AdventureWorks", "ssrs1", "RDLReport1"));
 
-           //Adds SSRS Server and Database Credentials here.
-
-            reportOptions.ReportModel.ReportServerCredential = new System.Net.NetworkCredential("ssrs", "RDLReport1");
-
-            reportOptions.ReportModel.DataSourceCredentials.Add(new DataSourceCredentials("AdventureWorks", "ssrs1", "RDLReport1"));
-
-        }
-
+}
 {% endhighlight %}
 

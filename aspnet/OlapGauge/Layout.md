@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Layout | OLAPGauge | ASP.NET Webforms | Syncfusion
+title: Layout | OLAPGauge | ASP.NET | Syncfusion
 description: layout 
 platform: aspnet
-control: OLAP Gauge
+control: OLAPGauge
 documentation: ug
 ---
 
@@ -19,17 +19,13 @@ The OLAP Gauge control provides support to display multiple gauges in a str
 
 ## Layout Customization 
 
-
 You can customize/limit the number of gauges to be displayed in the table with the help of the rowsCount and columnsCount properties.
 
 ## Row Count
 
 You can set the number of gauges to be displayed in row using rowsCount property. By default the value is 0.
 
-
-
 {% highlight html %}
-
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent" RowsCount="2">
 
         <Scales>
@@ -104,21 +100,18 @@ You can set the number of gauges to be displayed in row using rowsCount property
 
 </ej:OlapGauge>
 
-
 {% endhighlight %}
 
- ![](Layout_images/Layout_img1.png) 
+![](Layout_images/Layout_img1.png) 
 
-
+Row Count
+{:.caption}
 
 ## Column Count
 
 You can set the number of gauges to be displayed in column using columnsCount property. By default the value is 0.
 
-
-
 {% highlight html %}
-
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent" ColumnsCount="2">
 
         <Scales>
@@ -191,12 +184,10 @@ You can set the number of gauges to be displayed in column using columnsCount pr
 
         </Scales>
 
-    </ej:OlapGauge>
-
-
+</ej:OlapGauge>
 {% endhighlight %}
 
 ![](Layout_images/Layout_img2.png)
 
-
-
+Column Count
+{:.caption}

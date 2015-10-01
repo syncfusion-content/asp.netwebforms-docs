@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Angular Binding | OLAPClient | ASP.NET Webforms | Syncfusion
+title: Angular Binding | OLAPGauge | ASP.NET | Syncfusion
 description: angular binding
 platform: aspnet
-control: OLAP Gauge
+control: OLAPGauge
 documentation: ug
 ---
 

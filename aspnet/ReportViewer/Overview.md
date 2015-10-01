@@ -1,21 +1,19 @@
 ---
 layout: post
-title: Overview
+title: ReportViewer | ReportViewer | ASP.NET | Syncfusion
 description: overview
 platform: aspnet
 control: ReportViewer
 documentation: ug
 ---
 
-# Overview
+# ReportViewer
 
 The ReportViewer is a visualization control to view Microsoft SSRS RDL/RDLC files on a web page and it is powered by HTML5/JavaScript. It supports binding DataSources/Parameters to the Reports and also supports exporting, paging, zooming and printing the report.
 
 ## Key Features
 
 The ReportViewer supports the following features.
-
-
 
 * DataSources (SQL Server, Oracle, MS Azure, XML, Business Object and SQL Server Compact Data Sources)
 * Filters and Parameters

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Frame Type | OLAPGauge | ASP.NET Webforms | Syncfusion
+title: Frame Type | OLAPGauge | ASP.NET | Syncfusion
 description: frame type 
 platform: aspnet
-control: OLAP Gauge
+control: OLAPGauge
 documentation: ug
 ---
 
@@ -16,13 +16,10 @@ OLAP Gauge supports built-in frame types to provide effective rim styles. The 
 
 ## Full Circle
 
-
 By default, frame type is Full Circle. You can also set frame type with frameType property to fullCircle.
 
 
-
 {% highlight html %}
-
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Frame FrameType="FullCircle" />
@@ -97,26 +94,19 @@ By default, frame type is Full Circle. You can also set frame type with frameTyp
 
         </Scales>
 
-    </ej:OlapGauge>
-
-
+</ej:OlapGauge>
 {% endhighlight  %}
 
 ![](Frame-Type_images/Frame-Type_img1.png) 
 
-
+Full Circle
+{:.caption}
 
 ## Half Circle
 
 You can set frame type as halfCircle with the help of frameType property to visualize the gauge control in half circle.
 
-
 {% highlight html %}
-
-
-
-
-
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Frame FrameType="HalfCircle"/>
@@ -191,12 +181,10 @@ You can set frame type as halfCircle with the help of frameType property to visu
 
         </Scales>
 
-    </ej:OlapGauge>
-
+</ej:OlapGauge>
 {% endhighlight  %}
-
 
 ![](Frame-Type_images/Frame-Type_img2.png) 
 
-
-
+Half Circle Frame Type
+{:.caption}

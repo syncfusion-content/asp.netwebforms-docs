@@ -1,6 +1,6 @@
 ---
 layout: post
-title: State-Maintenance
+title: State Maintenance | ProgressBar | ASP.NET | Syncfusion
 description: state maintenance
 platform: aspnet
 control: ProgressBar
@@ -15,19 +15,12 @@ model value applied from the browser cookies. By default, EnablePersistence prop
 Add the following code example to the corresponding ASPX page to render ProgressBar control.
 
 {% highlight html %}
-
-
-
 <ej:ProgressBar ID="progressbar" runat="server" Value="70" Text="70 %"   Height="20" Width="500" EnablePersistence="true">
 
 </ej:ProgressBar>
-
-
 {% endhighlight %}
 
 The following screenshot displays the output for the above code.
 
 ![](State-Maintenance_images/State-Maintenance_img1.png)
-
-
 

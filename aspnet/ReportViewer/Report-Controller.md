@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Report-Controller
+title: Report Controller | ReportViewer | ASP.NET | Syncfusion
 description: report controller
 platform: aspnet
 control: ReportViewer
@@ -14,10 +14,6 @@ The ReportViewer uses Web API services to process the report file, process the r
 ## IReportController
 
 The interface IReportController has the declaration of action methods that is defined in WebApi Controller for processing the RDL/RDLC files and for processing request from ReportViewer control. The IReportController has the following action methods declaration. 
-
-
-
-_Table_ _1_: _Report Controller methods_
 
 <table>
 <tr>
@@ -42,11 +38,9 @@ OnReportLoaded</td><td>
 Report loaded method that is triggered when report and sub report begin loading.</td></tr>
 </table>
 
-### ReportHelper
+## ReportHelper
 
 The class ReportHelper contains helper methods that helps process Post/Get request from ReportViewer control and returns the response to ReportViewer control. The ReportHelper has the following methods. 
-
-_Table_ _2_: _Report Helper methods_
 
 <table>
 <tr>
@@ -63,98 +57,87 @@ ProcessReport</td><td>
 Processes the report request and returns the result.</td></tr>
 </table>
 
-
 {% highlight c# %}
 
+public class ReportsController: ApiController,IReportController
+{
 
+	/// <summary>
 
-public class ReportsController : ApiController, IReportController
+	/// Action (HttpGet) method for getting resource for report.
 
-    {
+	/// </summary>
 
-        /// <summary>
+	/// <param name="key">The unique key to get the required resource.</param>
 
-        /// Action (HttpGet) method for getting resource for report.
+	/// <param name="resourceType">The type of the requested resource.</param>
 
-        /// </summary>
+	/// <param name="isPrinting">If set to <see langword="true"/>, then the resource is generated for printing.</param>
 
-        /// <param name="key">The unique key to get the required resource.</param>
+	/// <returns>The object data.</returns>
 
-        /// <param name="resourceType">The type of the requested resource.</param>
+	public object GetResource(string key, string resourceType, bool isPrinting)
 
-        /// <param name="isPrinting">If set to <see langword="true"/>, then the resource is generated for printing.</param>
+	{
 
-        /// <returns>The object data.</returns>
+		//Returns the report resource for the requested key.
 
-        public object GetResource(string key, string resourceType, bool isPrinting)
+		return ReportHelper.GetResource(key, resourceType, isPrinting);
 
-        {
+	}
+	
+	/// <summary>
 
-            //Returns the report resource for the requested key.
+	/// Report Initialization method that is triggered when report begin processed.
 
-            return ReportHelper.GetResource(key, resourceType, isPrinting);
+	/// </summary>
 
-        }
+	/// <param name="reportOptions">The ReportViewer options.</param>
 
+	public void OnInitReportOptions(ReportViewerOptions reportOptions)
 
+	{
 
-        /// <summary>
+		throw new NotImplementedException();
 
-        /// Report Initialization method that is triggered when report begin processed.
+	}
+	
+	/// <summary>
 
-        /// </summary>
+	/// Report loaded method that is triggered when report and sub report begins to be loaded.
 
-        /// <param name="reportOptions">The ReportViewer options.</param>
+	/// </summary>
 
-        public void OnInitReportOptions(ReportViewerOptions reportOptions)
+	/// <param name="reportOptions">The ReportViewer options.</param>
 
-        {
+	public void OnReportLoaded(ReportViewerOptions reportOptions)
 
-            throw new NotImplementedException();
+	{
 
-        }
+		throw new NotImplementedException();
 
+	}
+	
+	/// <summary>
 
+	/// Action (HttpPost) method for posting the request for report process. 
 
-        /// <summary>
+	/// </summary>
 
-        /// Report loaded method that is triggered when report and sub report begins to be loaded.
+	/// <param name="jsonData">The JSON data posted for processing report.</param>
 
-        /// </summary>
+	/// <returns>The object data.</returns>
 
-        /// <param name="reportOptions">The ReportViewer options.</param>
+	public object PostReportAction(Dictionary < string, object > jsonData)
 
-        public void OnReportLoaded(ReportViewerOptions reportOptions)
+	{
 
-        {
+		//Processes the report request and returns the result.
 
-            throw new NotImplementedException();
+		return ReportHelper.ProcessReport(jsonData, this);
 
-        }
+	}
 
-
-
-        /// <summary>
-
-        /// Action (HttpPost) method for posting the request for report process. 
-
-        /// </summary>
-
-        /// <param name="jsonData">The JSON data posted for processing report.</param>
-
-        /// <returns>The object data.</returns>
-
-        public object PostReportAction(Dictionary<string, object> jsonData)
-
-        {
-
-            //Processes the report request and returns the result.
-
-            return ReportHelper.ProcessReport(jsonData, this);
-
-        }
-
-    }
-
+}
 {% endhighlight %}
 

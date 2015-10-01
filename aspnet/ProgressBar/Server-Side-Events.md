@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server-Side-Events
+title: Server Side Events | ProgressBar | ASP.NET | Syncfusion
 description: server side events
 platform: aspnet
 control: ProgressBar
@@ -31,22 +31,19 @@ Triggered when the value defined in progress bar sets completely.</td><td>
 In an ASPX page, add the ProgressBar control with OnComplete server side event as shown in the following code example.
 
 {% highlight html %}
-
 <ej:ProgressBar ID="progressbar" runat="server" OnComplete="onComplete" Value="70" Text="70 %"  Height="20" Width="500">
 
 </ej:ProgressBar>
-
-
 {% endhighlight %}
 
 In the code behind define the action to be performed.
 
 {% highlight c# %}
-
 protected void onComplete(object Sender, EventArgs e)
 
 {
-     Response.Write("Serverside event has been trigerred");
-}
 
+     Response.Write("Serverside event has been trigerred");
+	 
+}
 {% endhighlight %}

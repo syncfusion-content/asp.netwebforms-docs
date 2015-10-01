@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Appearance and Styling | Rating | ASP.NET | Syncfusion
 description: appearance and styling
 platform: aspnet
 control: Rating
@@ -18,9 +18,6 @@ to True.
 Add the following code example to the corresponding ASPX to render the Rating with Tooltip.
 
 {% highlight html %}
-
-
-
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
 
             <table>
@@ -42,31 +39,21 @@ Add the following code example to the corresponding ASPX to render the Rating�
             </table>
 
 </div>
-
-
-
 {% endhighlight %}
-
-
 
 The following screenshot displays the output of the above code example.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
-
-
 ## Adjusting Rating Size
 
-## Adjust Shape Width and Shape Height
+### Adjust Shape Width and Shape Height
 
 You can customize the width and height of the Rating by ShapeWidth and ShapeHeight properties. These properties completely depend on rating image’s size. The ShapeWidth and ShapeHeight are adjusted within the rating image size.
 
 Add the following code example to the corresponding ASPX to render the Rating with the customized ShapeWidth and ShapeHeight.
 
 {% highlight html %}
-
-
-
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
 
     <table>
@@ -88,19 +75,12 @@ Add the following code example to the corresponding ASPX to render the Rating
     </table>
 
 </div>
-
-
-
 {% endhighlight %}
-
-
 
 Add the following styles for Rating.
 
-{% highlight css %}
-
-
-   .e-rating {
+{% highlight css %}  
+.e-rating {
 
        margin-top: -7px;
 
@@ -158,15 +138,12 @@ Add the following styles for Rating.
 
         background-color:white;border:2px solid #b0c4de;color:black
 
-    }    
-
+    }  
 {% endhighlight %}
 
 The following screenshot displays the output of the above code example.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
-
-
 
 ## Theme
 
@@ -188,8 +165,6 @@ By default, there are 13 themes support available for Rating control namely:
 * gradient-saffron
 * gradient-saffron-dark
 
-
-
 ## Custom styles
 
 The style of the Rating control is customized by CssClass property.
@@ -197,9 +172,6 @@ The style of the Rating control is customized by CssClass property.
 Add the following code example to the corresponding ASPX page to render the Rating with the customized style.
 
 {% highlight html %}
-
-
-
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
 
             <table>
@@ -221,28 +193,18 @@ Add the following code example to the corresponding ASPX page to render the R
             </table>
 
 </div>
-
-
-
 {% endhighlight %}
-
-
 
 Define the style for the Rating control.
 
 {% highlight css %}
-
 .custom {
 
     background-color: greenyellow;
 
  }
-
 {% endhighlight %}
 
 The following screenshot displays the output of the above code example.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
-
-
-

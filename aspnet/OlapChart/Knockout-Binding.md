@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Knockout Binding | OLAPChart | ASP.NET Webforms | Syncfusion
+title: Knockout Binding | OLAPChart | ASP.NET | Syncfusion
 description: knockout binding
 platform: aspnet
-control: OLAP Chart
+control: OLAPChart
 documentation: ug
 ---
 

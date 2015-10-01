@@ -213,6 +213,8 @@ And</td><td>
 
 The following code example shows how to localize OLAP Client’s User Interface (UI) based on French culture.
 
+{% tabs %}
+
 {% highlight html %}
 
 <ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc" Locale="fr-FR">
@@ -222,7 +224,7 @@ The following code example shows how to localize OLAP Client’s User Interface 
 {% endhighlight  %}
 
 
-{% highlight html%}  
+{% highlight js %}  
 
 <script type="text/javascript">
 
@@ -350,7 +352,7 @@ The following code example shows how to localize OLAP Client’s User Interface 
 
 {% endhighlight  %}
 
-
+{% endtabs %}
 
 N> In order to render the localized OLAP Client, we need to reset the content available in both OLAP Client Control and OLAP Cube
 
@@ -394,3 +396,6 @@ DataManager.OverrideDefaultFormatStrings = true;
 The following screenshot shows the OLAP Client with French localization.
 
 ![](Localization_images/Localization_img2.png) 
+
+Localized OlapChart
+{:.caption}  

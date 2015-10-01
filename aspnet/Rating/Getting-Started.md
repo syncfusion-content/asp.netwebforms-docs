@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Rating | ASP.NET | Syncfusion
 description: getting started
 platform: aspnet
 control: Rating
@@ -18,8 +18,6 @@ ASP.NET Rating helps you to select the number of stars that represent Rating. H
 The following screenshot demonstrates the functionality of a Rating control with a Rating range of 0 to 5.
 
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
-
-
 
 In the above screenshot, you can rate the movie by selecting a corresponding movie.
 
@@ -194,18 +192,13 @@ Add the following code example to the corresponding ASPX page to render Ratin
     </ej:Tab>
 
 </div>
-
-
-
 {% endhighlight %}
 
-
-
- Add the following styles to the corresponding view page to show the Rating in a horizontal order.
+Add the following styles to the corresponding view page to show the Rating in a horizontal order.
 
 {% highlight css %}
 
-     .movies-img
+.movies-img
 
         {
 
@@ -233,30 +226,22 @@ Add the following code example to the corresponding ASPX page to render Ratin
 
         }
 
-
-
 {% endhighlight %}
-
-
 
 Execute the above code to render the following output.
 
 ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
-
-
-
 N> Add necessary images to the mentioned directory. &lt;project directory&gt;/Images/rating/yourimage.png
 
-## Set Min and Max Value  
+### Set Min and Max Value  
 
 In a real-time movie Rating scenario, you can extend the range by using the properties MinValue and MaxValue. Only rates ranging between the MinValueand MaxValue appear in the Rating.
 
 Add the following code example to the corresponding ASPX page to set MinValue and MaxValue to the Rating.
 
 {% highlight html %}
-
 <div class="frame">
 
     <table>
@@ -282,25 +267,19 @@ Add the following code example to the corresponding ASPX page to set MinValue
     </table>
 
 </div>
-
-
-
 {% endhighlight %}
 
- Execute the above code to render the following output.
+Execute the above code to render the following output.
 
 ![](Getting-Started_images/Getting-Started_img4.png)
 
-
-
-## Set Precision
+### Set Precision
 
 In a real-time movie Rating scenario, you can rate the Rating between two whole numbers, such as 2.5 or 3.7 by using the Precision property. You can also add additional functionalities such as Orientation and APIs to the Rating.
 
 Add the following code example to the corresponding view page to set Precision to Rating. 
 
 {% highlight html %}
-
 <div class="frame">
 
     <table>
@@ -362,16 +341,8 @@ Add the following code example to the corresponding view page to set Precision t
     </table>
 
 </div>
-
-
-
 {% endhighlight %}
-
-
 
 Execute the above code to render the following output.
 
 ![](Getting-Started_images/Getting-Started_img5.png)
-
-
-

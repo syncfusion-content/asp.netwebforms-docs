@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Data Exploration | OLAPClient | ASP.NET Webforms | Syncfusion
+title: Data Exploration | OLAPClient | ASP.NET | Syncfusion
 description: data exploration
 platform: aspnet
-control: OLAP Client
+control: OLAPClient
 documentation: ug
 ---
 
@@ -21,10 +21,12 @@ Grouping: Allows you to place more than one dimension on rows or columns. You ca
 
 ### Filtering by Member
 
-After you click Split Button, Member Editor Dialog opens and through that you can check or uncheck the nodes to filter the members. Based on the selected members in the Member Editor Dialog, OLAPReport gets updated and generates the MDX query accordingly.  
+After you click Split Button, Member Editor Dialog opens and through that you can check or uncheck the nodes to filter the members. Based on the selected members in the Member Editor Dialog, OLAPReport gets updated and generates the MDX query accordingly.
+
 ![](Data-Exploration_images/Data-Exploration_img1.png) 
 
-
+Filtering by Members
+{:.caption} 
 
 The above filter illustrates that the members France and Germany, along with Queensland and South Australia are filtered from the Grid and Chart view.  
 
@@ -46,37 +48,24 @@ The options in Filtering tab are as follows:
 * Condition: You can choose any one condition that needs to appear in the filter expression.
 * Value: You can enter the conditional value for the expression.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 The following screenshot displays the Filtering Dialog box.
-
-
 
 ![](Data-Exploration_images/Data-Exploration_img2.png) 
 
-
+Filtering Dialog
+{:.caption}
 
 The following screenshot displays data before Filtering.
 ![](Data-Exploration_images/Data-Exploration_img3.png) 
 
-
+Before Filtering
+{:.caption}
 
 The following screenshot displays the data after Filtering.
 ![](Data-Exploration_images/Data-Exploration_img4.png) 
 
-
+After Filtering
+{:.caption}
 
 ## Sorting
 
@@ -102,18 +91,27 @@ The following screenshot displays the Sorting and Filtering dialog box.
 
 ![](Data-Exploration_images/Data-Exploration_img5.png) 
 
+Sorting and Filtering Dialog
+{:.caption}
 
 The following screenshot displays the data before sorting.
 ![](Data-Exploration_images/Data-Exploration_img6.png) 
+
+Before Sorting
+{:.caption}
 
 The following screenshot displays the data after sorting.
 
 ![](Data-Exploration_images/Data-Exploration_img7.png) 
 
-
+After Sorting
+{:.caption}
 
 ## Grouping
 
 The data can be grouped when more than one dimension element is dropped into Categorical or Series in Axis Element Builder based on the order of addition, data is grouped and the report is updated. In the following example, the customer dimension values get grouped, with respect to date dimension values, likewise you can group multiple dimension values by dragging the elements from Cube Dimension Browsers to Axis Element Builder and the report values get updated according to it.
 
 ![](Data-Exploration_images/Data-Exploration_img8.png) 
+
+Grouping
+{:.caption}

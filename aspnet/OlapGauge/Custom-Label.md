@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Custom Label | OLAPClient | ASP.NET Webforms | Syncfusion
+title: Custom Label | OLAPGauge | ASP.NET | Syncfusion
 description: custom label
 platform: aspnet
-control: OLAP Gauge
+control: OLAPGauge
 documentation: ug
 ---
 
@@ -12,20 +12,16 @@ documentation: ug
 Custom label provides information about the members associated behind each OlapGauge. You can define multiple labels for 
 OlapGauge and it can be positioned along X and Y co-ordinates based on location settings.
 
+![](Custom-Label_images/Custom-Label_img1.png) 
 
-
-![I:/OlapGuage/Gauge/Range size.png](Custom-Label_images/Custom-Label_img1.png) 
-
-
+Custom Label
+{:.caption}
 
 ## Positioning the Custom Label
 
 You can set the location of the custom label in circular gauge using “location” property. Refer the following code example.
 
 {% highlight html %}
-
-
-
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
@@ -70,19 +66,19 @@ You can set the location of the custom label in circular gauge using “location
 
                     <ej:CircularCustomLabel Color="#666666">
 
-<Position X="280" Y="390" />
+                        <Position X="280" Y="390" />
 
                     </ej:CircularCustomLabel>
 
                     <ej:CircularCustomLabel Color="#666666">
 
-<Position X="180" Y="280" />
+                        <Position X="180" Y="280" />
 
                     </ej:CircularCustomLabel>
 
                     <ej:CircularCustomLabel Color="#666666">
 
-<Position X="180" Y="170" />
+                        <Position X="180" Y="170" />
 
                     </ej:CircularCustomLabel>
 
@@ -92,23 +88,19 @@ You can set the location of the custom label in circular gauge using “location
 
         </Scales>
 
-    </ej:OlapGauge>
-
+</ej:OlapGauge>
 {% endhighlight %}
 
 ![](Custom-Label_images/Custom-Label_img2.png) 
 
-
+Positioning Custom Label
+{:.caption}
 
 ## Font and Style Customization of Custom Label
 
 You can customize the custom label font with fontstyle, font family, and size properties.
 
-
 {% highlight html %}
-
-
-
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
@@ -181,12 +173,11 @@ You can customize the custom label font with fontstyle, font family, and size pr
 
         </Scales>
 
-    </ej:OlapGauge>
-
+</ej:OlapGauge>
 {% endhighlight %}
 
 
 ![](Custom-Label_images/Custom-Label_img3.png) 
 
-
-
+Style Customization
+{:.caption}

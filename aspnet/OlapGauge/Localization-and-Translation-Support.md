@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Localization and Translation Support | OLAPGauge | ASP.NET Webforms | Syncfusion
+title: Localization and Translation Support | OLAPGauge | ASP.NET | Syncfusion
 description: localization and translation support
 platform: aspnet
-control: OLAP Gauge
+control: OLAPGauge
 documentation: ug
 ---
 
@@ -14,11 +14,6 @@ Using this feature, you can display the data in a specific language and culture,
 The ASP.NET OlapGauge control provides inherent support to localize its UI.
 
 The following table lists the default English localization User Interface based on French culture.
-
-
-
-Table: List of default English localization User Interface based on French culture
-
 
 
 <table>
@@ -64,14 +59,9 @@ RenderingFailed</td><td>
 "Rendant pas"</td></tr>
 </table>
 
-
 The following code example illustrates you on how to localize OlapGuage’s User Interface (UI) based on “French” culture.
 
-
-
-
 {% highlight html %}
-
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent" Locale="fr-FR">
 
         <Scales>
@@ -148,12 +138,6 @@ The following code example illustrates you on how to localize OlapGuage’s User
 
 </asp:Content>
 
-{% endhighlight %}
-
-
-
-{% highlight html %}
-
 <asp:Content ID="Content2" runat="server" ContentPlaceHolderID="ScriptSection">
 
     <script type="text/javascript">
@@ -183,40 +167,29 @@ The following code example illustrates you on how to localize OlapGuage’s User
     </script>
 
 </asp:Content>
-
 {% endhighlight %}
 
-
- 
-
-N> In order to render the localized OLAP Gauge, You are required to reset the content available in both 1. OLAP Gauge Control 2. OLAP Cube
+N> In order to render the localized OLAP Gauge, You are required to reset the content available in both 
+i) OLAP Gauge Control 
+ii) OLAP Cube
 
 ## Localizing Control Information:
 
 To apply control side localization, refer the following code example:
 
-
-
-{% highlight js %}
-
+{% highlight html %}
 ej.olap.OlapGauge.locale["zh-CN"] = {
 
 //Corresponding keyword values needs to be set here.
 
 }
-
-
 {% endhighlight %}
 
 ## Localizing Cube Information:
 
-To render the localized Cube information,set “_Locale__Identifier”___in the connection string.
-
-
-
+To render the localized Cube information,set “Locale Identifier” in the connection string.
 
 {% highlight C# %}
-
 //1036 refers to “fr-FR” culture.
 
 string connectionString = "Data Source=localhost; Initial Catalog=Adventure Works DW; Locale Identifier=1036;";
@@ -226,12 +199,11 @@ DataManager = new OlapDataManager(connectionString);
 DataManager.Culture = new System.Globalization.CultureInfo(1036);
 
 DataManager.OverrideDefaultFormatStrings = true;
-
 {% endhighlight  %}
 
 The following screenshot displays the OlapGauge with French localization.
 
 ![](Localization-and-Translation-Support_images/Localization-and-Translation-Support_img2.png) 
 
-
-
+Localized OlapGuage
+{:.caption}

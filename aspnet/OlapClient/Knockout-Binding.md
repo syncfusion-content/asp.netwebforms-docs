@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Knockout Binding | OLAPClient | ASP.NET Webforms | Syncfusion
+title: Knockout Binding | OLAPClient | ASP.NET | Syncfusion
 description: knockout binding
 platform: aspnet
-control: OLAP Client
+control: OLAPClient
 documentation: ug
 ---
 

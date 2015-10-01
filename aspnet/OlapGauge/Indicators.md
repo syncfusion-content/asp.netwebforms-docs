@@ -1,25 +1,21 @@
 ---
 layout: post
-title: Indicators | OLAPGauge | ASP.NET Webforms | Syncfusion
+title: Indicators | OLAPGauge | ASP.NET | Syncfusion
 description: indicators
 platform: aspnet
-control: OLAP Gauge
+control: OLAPGauge
 documentation: ug
 ---
 
 # Indicators
 
-KPIs are displayed with Trend and Status visualizations that supports Traffic Light, Road Signs and Standard Arrow .Status and Trend values are highlighted through user friendly images__within the OlapGauge that is known as indicators.
+KPIs are displayed with Trend and Status visualizations that supports Traffic Light, Road Signs and Standard Arrow .Status and Trend values are highlighted through user friendly images within the OlapGauge that is known as indicators.
 
 ## Hiding Indicators
 
 You can hide the Indicator by changing the “showIndicator” property to “false”.
 
-
-
-
 {% highlight html %}
-
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
@@ -92,12 +88,10 @@ You can hide the Indicator by changing the “showIndicator” property to “fa
 
         </Scales>
 
-    </ej:OlapGauge>
-
-
+</ej:OlapGauge>
 {% endhighlight  %}
 
 ![](Indicators_images/Indicators_img1.png) 
 
-
-
+Hiding Indicators
+{:.caption}

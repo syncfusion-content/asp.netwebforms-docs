@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RTL-Support
+title: RTL Support | ProgressBar | ASP.NET | Syncfusion
 description: rtl support
 platform: aspnet
 control: ProgressBar
@@ -16,18 +16,11 @@ Add the following code example to the corresponding ASPX page to render Progress
 
 {% highlight html %}
 
-
-
- <ej:ProgressBar ID="progressbar" runat="server" Value="70" Text="70 %" Height="20" Width="500" EnableRTL="true">
+<ej:ProgressBar ID="progressbar" runat="server" Value="70" Text="70 %" Height="20" Width="500" EnableRTL="true">
  
- </ej:ProgressBar>
-
+</ej:ProgressBar>
 
 {% endhighlight %}
 
 The following screenshot displays the ProgressBar set from Right-to-Left.               
-
 ![](RTL-Support_images/RTL-Support_img1.png)
-
-
-

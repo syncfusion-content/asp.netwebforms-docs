@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | OLAPChart | ASP.NET Webforms | Syncfusion
+title: OLAPChart | OLAPChart | ASP.NET | Syncfusion
 description: overview
 platform: aspnet
-control: OLAP Chart
+control: OLAPChart
 documentation: ug
 ---
 
-# Overview
+# OLAPChart
 
 The OLAP Chart control for ASP.NET is a lightweight control that reads OLAP information and visualizes it in graphical format with the ability to drill up and down.
 

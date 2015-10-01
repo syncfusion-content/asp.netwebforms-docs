@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Overview
+title: Rating | Rating | ASP.NET | Syncfusion
 description: overview
 platform: aspnet
 control: Rating
 documentation: ug
 ---
 
-# Overview
+# Rating
 
 Essential ASP.NET Rating control provides an intuitive Rating experience that enables you to select a number of stars that 
 represent a Rating. You can configure the item size, orientation and the number of displayed items in the Rating control. 
 You can also customize the Rating star image by using custom CSS.
 
-##Key Features
+## Key Features
 
 Some important features of Rating are as follows:
 
