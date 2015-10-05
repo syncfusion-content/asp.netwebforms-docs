@@ -1602,7 +1602,7 @@ The final template document that is ready to be distributed, appears as follows.
 
 1. Open the generated template document and set the ClearFields property to false to skip clearing the fields from the document when there are no fields during mail merge. The following code example illustrates this.
 
-   ~~~ cs
+   ~~~ csharp
 	 
 	   //Opens Template document.
 	   document.Open(inputStream, FormatType.Word2013);
@@ -1612,7 +1612,7 @@ The final template document that is ready to be distributed, appears as follows.
 	   document.MailMerge.ClearFields = false;
 	   
    ~~~
-   {:.prettyprint }
+   
    
    
    ~~~ vbnet
@@ -1625,12 +1625,12 @@ The final template document that is ready to be distributed, appears as follows.
 	   document.MailMerge.ClearFields = False
 
    ~~~
-   {:.prettyprint }
+   
 
 
 2. Create a MailMergeDataTable from the invoice items, and execute mail merge with the generated data table to fill the items in the template document. The following code example illustrates this.
 
-   ~~~ cs
+   ~~~ csharp
 	 
 	   //Creates Mail Merge Data Table.
 	   MailMergeDataTable mailMergeDataTable = new MailMergeDataTable("Invoice", invoiceItems);
@@ -1638,7 +1638,7 @@ The final template document that is ready to be distributed, appears as follows.
 	   MailMerge.ExecuteGroup(mailMergeDataTable);
 	   
    ~~~
-   {:.prettyprint }
+   
    
    
    ~~~ vbnet
@@ -1649,12 +1649,12 @@ The final template document that is ready to be distributed, appears as follows.
 	   document.MailMerge.ExecuteGroup(mailMergeDataTable)
 
    ~~~
-   {:.prettyprint }
+   
 
 
 3. Create an array of field names and field values to execute mail merge for filling the Billing information in the template document. The following code example illustrates this.
 
-   ~~~ cs
+   ~~~ csharp
 	 
 	   //Mail Merge Billing information.
 	   string[] fieldNames = { "Name", "Address", "Date", "InvoiceNumber","DueDate", "TotalDue" };
@@ -1662,7 +1662,7 @@ The final template document that is ready to be distributed, appears as follows.
 	   //Executes Mail Merge.document.MailMerge.Execute(fieldNames, fieldValues);
 	   
    ~~~
-   {:.prettyprint }
+   
    
    
    ~~~ vbnet
@@ -1674,17 +1674,17 @@ The final template document that is ready to be distributed, appears as follows.
 	   MailMerge.Execute(fieldNames, fieldValues)
 
    ~~~
-   {:.prettyprint }
+   
 
 4. Finally, you can save the document to disk or stream by using the Save method of the WordDocument class.
 
-   ~~~ cs
+   ~~~ csharp
    
        //Saves a document to disk.
 	   document.Save("Invoice.docx", FormatType.Word2013);
 
    ~~~
-   {:.prettyprint }
+   
    
    ~~~ vbnet
    
@@ -1692,7 +1692,7 @@ The final template document that is ready to be distributed, appears as follows.
 	   document.Save("Invoice.docx", FormatType.Word2013)
 
    ~~~
-   {:.prettyprint }
+   
 
 
 The final document that is ready to be distributed, appears as follows.
