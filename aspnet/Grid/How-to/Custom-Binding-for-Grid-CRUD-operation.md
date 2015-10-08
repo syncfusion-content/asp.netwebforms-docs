@@ -179,7 +179,7 @@ public partial class GridSample : System.Web.UI.Page
 {% endtabs %}
 The output is as follows.
 
-{% include image.html url="/aspnet/Grid/How-to/DCustom-Binding-for-Grid-CRUD-operation_images/Custom-Binding-for-Grid-CRUD-operation_img1.png"%}
+{% include image.html url="/aspnet/Grid/How-to/Custom-Binding-for-Grid-CRUD-operation_images/Custom-Binding-for-Grid-CRUD-operation_img1.png"%}
 
 
 
