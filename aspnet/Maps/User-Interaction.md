@@ -53,6 +53,57 @@ You can select the shape by tapping on the shape. The Single selection is enable
 Map with enable selection property
 {:.caption} 
 
+## MultiSelection
+
+This feature enables you to select multiple map shapes on mouse taps accompanied by "**Control**" key press. For this feature to get enabled, we have to set the property `SelectionMode` as "**Multiple**" along with `EnableSelection` property.
+
+{% highlight js %}
+
+ <ej:Map ID="map" runat="server" >    
+
+         <Layers>
+
+             < ej:ShapeLayer EnableSelection = "true" SelectionMode = "Multiple">
+                // ...
+            </ej:ShapeLayer>
+
+        </Layers>
+
+    </ej:Map>     
+
+{% endhighlight %}
+
+![](User-Interaction_images/User-Interaction_img5.png)
+
+Map with selectionMode property
+{:.caption} 
+
+## Dragging On Selection
+
+This feature enables you to select the shapes by dragging over the shapes. While dragging over the shapes, a rectangle is generated and the shapes which come within the rectangle is selected.
+You can enable this feature by setting the property `DraggingOnSelection` in the `Layers` to **True**.
+
+{% highlight js %}
+
+ <ej:Map ID="map" runat="server" >    
+
+         <Layers>
+
+             < ej:ShapeLayer DraggingOnSelection = "true">
+                // ...
+            </ej:ShapeLayer>
+
+        </Layers>
+
+    </ej:Map>     
+
+{% endhighlight %}
+
+![](User-Interaction_images/User-Interaction_img4.png)
+
+Map with draggingOnSelection property
+{:.caption}
+ 
 ## Zooming
 
 The zooming feature enables you to zoom in and out of the map to show in-depth information. It is controlled by the Level property of the map. When the zoom level of the Map control is increased, the map is zoomed in. When the zoom level is decreased, then the map is zoomed out.
