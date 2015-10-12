@@ -9,11 +9,11 @@ documentation: ug
 
 # User Interaction
 
-Options like zooming, panning and map selection enable the effective interaction on map elements.
+Options like zooming, panning and map selection enable the effective interaction on Map elements.
 
 ## Map Selection
 
-Each shape in the map can be selected and deselected during interaction with shapes. 
+Each shape in the Map can be selected and deselected during interaction with shapes. 
 
 The SelectionColor property is used to get or set the selected shape color. The SelectionStroke and SelectionStrokeWidth properties are used to customize the selected shape border.
 
@@ -55,7 +55,7 @@ Map with enable selection property
 
 ## MultiSelection
 
-This feature enables you to select multiple map shapes on mouse taps accompanied by "**Control**" key press. For this feature to get enabled, set the property `SelectionMode` as "**Multiple**" along with the `EnableSelection` property.
+This feature enables you to select multiple Map shapes on mouse taps accompanied by "**Control**" key press. For this feature to get enabled, set the property `SelectionMode` as "**Multiple**" along with the `EnableSelection` property.
 
 {% highlight js %}
 
@@ -106,7 +106,7 @@ Map with draggingOnSelection property
  
 ## Zooming
 
-The zooming feature enables you to zoom in and out of the map to show in-depth information. It is controlled by the Level property of the map. When the zoom level of the Map control is increased, the map is zoomed in. When the zoom level is decreased, then the map is zoomed out.
+The zooming feature enables you to zoom in and out of the Map to show in-depth information. It is controlled by the Level property of the Map. When the zoom level of the Map control is increased, the Map is zoomed in. When the zoom level is decreased, then the Map is zoomed out.
 
 ## Properties Related to Zooming
 
@@ -119,7 +119,7 @@ The following properties are related to the zooming feature of the Maps control:
 
 ## Level
 
-The level property determines the map’s scale size when zooming. The default value of level is 1. 
+The level property determines the Map’s scale size when zooming. The default value of level is 1. 
 
 N>  Level cannot be less than 1.
 
@@ -129,11 +129,11 @@ The EnableZoom property enables or disables the zooming feature.
 
 ## MinValue
 
-The MinValue property is used to set the minimum zoom level of the map. 
+The MinValue property is used to set the minimum zoom level of the Map. 
 
 ## MaxValue
 
-The MaxValue property is used to set the maximum zoom level of the map.
+The MaxValue property is used to set the maximum zoom level of the Map.
 
 {% highlight html %}
 
@@ -172,7 +172,7 @@ Maps can be zoomed by using the following options also,
 
 ## By using Zoom method
 
-You can zoom the Maps by using zoom method. The zoom method contains parameter zoom value. The map can be zoomed or scaled based on zoom value parameter.
+You can zoom the Maps by using zoom method. The zoom method contains parameter zoom value. The Map can be zoomed or scaled based on zoom value parameter.
 
 
 
@@ -190,11 +190,11 @@ $("#map").ejMap("zoom", 2);
 
 ## By using mouse scroll
 
-You can zoom the map with mouse events by using mouse scroll. When the mouse is scrolled up, the map is zoomed in and when the mouse is scrolled down, the map is zoomed out.
+You can zoom the map with mouse events by using mouse scroll. When the mouse is scrolled up, the Map is zoomed in and when the mouse is scrolled down, the Map is zoomed out.
 
 ## By using mouse double tap
 
-When the map is double-tapped by using mouse, the zoom in operation is performed. 
+When the Map is double-tapped by using mouse, the zoom in operation is performed. 
 
 
 
@@ -231,7 +231,7 @@ When EnableZoomOnSelection property is set to true, then zooming of the Map cont
 
 ##  By using Position
 
-Depending on the latitude and longitude, you can zoom the Map to the exact position. All locations are considered as latitude and longitude values and the exact location is considered as map coordinates.
+Depending on the latitude and longitude, you can zoom the Map to the exact position. All locations are considered as latitude and longitude values and the exact location is considered as Map coordinates.
 
 The navigateTo is a method defined that allows you to zoom the Map control to the given location. This method contains three attributes as follows.
 
@@ -331,7 +331,7 @@ With Navigation control, the Maps can be zoomed. When you click the ZoomIn butto
 
 ## Panning with Navigation Control
 
-Maps can be panned with Pan buttons (TopPan button, RightPan button, BottomPan button and LeftPan button). When you click a particular Pan button, the Map is panned on the respective directions.
+Maps can be panned with Pan buttons (TopPan button, RightPan button, BottomPan button, and LeftPan button). When you click a particular Pan button, the Map is panned on the respective directions.
 
 ## Navigation Control Positions
 
@@ -342,7 +342,7 @@ The Navigation control can be positioned in two ways.
 
 ## Absolute Position
 
-Based on the margin values of X and Y-axes, the navigation control can be positioned with the help of the X and Y properties available in AbsolutePosition. For positioning the navigation control based on margins corresponding to a map, DockPosition value is set as ‘None’.
+Based on the margin values of X and Y-axes, the navigation control can be positioned with the help of the X and Y properties available in AbsolutePosition. For positioning the navigation control based on margins corresponding to a Map, DockPosition value is set as ‘None’.
 
 ## Dock Position
 
