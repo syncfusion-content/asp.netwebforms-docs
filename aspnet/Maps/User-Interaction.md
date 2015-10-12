@@ -9,7 +9,7 @@ documentation: ug
 
 # User Interaction
 
-Options like zooming, panning and map selection enables the effective interaction on map elements.
+Options like zooming, panning and map selection enable the effective interaction on map elements.
 
 ## Map Selection
 
@@ -17,7 +17,7 @@ Each shape in the map can be selected and deselected during interaction with sha
 
 The SelectionColor property is used to get or set the selected shape color. The SelectionStroke and SelectionStrokeWidth properties are used to customize the selected shape border.
 
-You can select the shape by tapping on the shape. The Single selection is enabled by the EnableSelection property of shape layer. When EnableSelection is set to false, the shapes cannot be selected. 
+You can select the shape by tapping the shape. The single selection is enabled by the EnableSelection property of shape layer. When EnableSelection is set to false, the shapes cannot be selected. 
 
 
 
@@ -55,7 +55,7 @@ Map with enable selection property
 
 ## MultiSelection
 
-This feature enables you to select multiple map shapes on mouse taps accompanied by "**Control**" key press. For this feature to get enabled, we have to set the property `SelectionMode` as "**Multiple**" along with `EnableSelection` property.
+This feature enables you to select multiple map shapes on mouse taps accompanied by "**Control**" key press. For this feature to get enabled, set the property `SelectionMode` as "**Multiple**" along with the `EnableSelection` property.
 
 {% highlight js %}
 
@@ -80,7 +80,7 @@ Map with selectionMode property
 
 ## Dragging On Selection
 
-This feature enables you to select the shapes by dragging over the shapes. While dragging over the shapes, a rectangle is generated and the shapes which come within the rectangle is selected.
+This feature enables you to select the shapes by dragging over the shapes. While dragging over the shapes, a rectangle is generated and the shapes that come within the rectangle is selected.
 You can enable this feature by setting the property `DraggingOnSelection` in the `Layers` to **True**.
 
 {% highlight js %}
@@ -162,17 +162,17 @@ The MaxValue property is used to set the maximum zoom level of the map.
 
 ## Additional Options to Zoom the Map
 
-Maps can be zoomed using the following options also,
+Maps can be zoomed by using the following options also,
 
-* Using Zoom method.
-* Using mouse scroll.
-* Using mouse double tap.
-* Using shape selection
-* Using Position
+* Zoom method.
+* Mouse scroll.
+* Mouse double tap.
+* Shape selection
+* Position
 
-## Using Zoom method
+## By using Zoom method
 
-You can zoom the Maps using zoom method. The zoom method contains parameter zoom value. The map can be zoomed or scaled based on zoom value parameter.
+You can zoom the Maps by using zoom method. The zoom method contains parameter zoom value. The map can be zoomed or scaled based on zoom value parameter.
 
 
 
@@ -188,13 +188,13 @@ $("#map").ejMap("zoom", 2);
 
 
 
-## Using mouse scroll
+## By using mouse scroll
 
-You can zoom the map with mouse events using mouse scroll. When the mouse is scrolled up, the map is zoomed in and when the mouse is scrolled down, the map is zoomed out.
+You can zoom the map with mouse events by using mouse scroll. When the mouse is scrolled up, the map is zoomed in and when the mouse is scrolled down, the map is zoomed out.
 
-## Using mouse double tap
+## By using mouse double tap
 
-When the map is double-tapped using mouse, the zoom in operation is performed. 
+When the map is double-tapped by using mouse, the zoom in operation is performed. 
 
 
 
@@ -203,13 +203,15 @@ When the map is double-tapped using mouse, the zoom in operation is performed.
 Map with zoom
 {:.caption} 
 
-## Using Shape Selection
+## By using Shape Selection
 
-Map shape is zoomed to the whole map area, on the shape selected. Animation can be applied for that zooming, using the EnableAnimation property as true. 
+Map shape is zoomed to the whole map area, on the shape selected. Animation can be applied for that zooming with the EnableAnimation property as true. 
 
-You can enable this feature by setting EnableZoomOnSelection property value as ‘_True_’. 
+You can enable this feature by setting the EnableZoomOnSelection property value as ‘_True_’. 
 
-When EnableZoomOnSelection property is set to true, then, zoom on double click is muted.
+When EnableZoomOnSelection property is set to true, then zooming of the Map control is muted on double click.
+
+
 
 
 
@@ -227,11 +229,11 @@ When EnableZoomOnSelection property is set to true, then, zoom on double click i
 
 {% endhighlight %}
 
-## Using Position
+##  By using Position
 
-Depending on the latitude and longitude, you can zoom the map to the exact position. All locations are considered as latitude and longitude values and the exact location is considered as map coordinates.
+Depending on the latitude and longitude, you can zoom the Map to the exact position. All locations are considered as latitude and longitude values and the exact location is considered as map coordinates.
 
-The navigateTo is a method defined that allows you to zoom the map control to the given location. This method contains three attributes as follows.
+The navigateTo is a method defined that allows you to zoom the Map control to the given location. This method contains three attributes as follows.
 
 Attribute Table
 
@@ -281,7 +283,7 @@ function buttonClick() {
 
 ## Panning 
 
-The panning feature enables map navigation. The EnablePan property is used to enable or disable the panning support.
+The panning feature enables the Map navigation. The EnablePan property is used to enable or disable the panning support.
 
 
 {% highlight html %}
@@ -296,11 +298,11 @@ The panning feature enables map navigation. The EnablePan property is used to en
 
 Navigation control is built-in with Maps control. With Navigation control, Maps can be panned in any direction and zoomed. It is possible to show or hide the NavigationControl by EnableNavigation property.
 
-## Structure of Navigation Control
+## Structure of the Navigation Control
 
 ![](User-Interaction_images/User-Interaction_img3.png)
 
-Structure of Navigation Control
+Structure of the Navigation Control
 {:.caption} 
 
 
@@ -325,11 +327,11 @@ Structure of Navigation Control
 
 ## Zoom with Navigation Control
 
-With Navigation control, the Maps can be zoomed. When you click on the ZoomIn button the Map is zoomed in and when you click on the ZoomOut button the Map is zoomed out.
+With Navigation control, the Maps can be zoomed. When you click the ZoomIn button, the Map is zoomed in and when you click the ZoomOut button the Map is zoomed out.
 
 ## Panning with Navigation Control
 
-Maps can be panned with Pan buttons (TopPan button, RightPan button, BottomPan button and LeftPan button). When you click on a particular Pan button the Map is panned on the respective directions.
+Maps can be panned with Pan buttons (TopPan button, RightPan button, BottomPan button and LeftPan button). When you click a particular Pan button, the Map is panned on the respective directions.
 
 ## Navigation Control Positions
 
@@ -344,7 +346,7 @@ Based on the margin values of X and Y-axes, the navigation control can be positi
 
 ## Dock Position
 
-The navigation control can be positioned in following locations within the container.
+The navigation control can be positioned in the following locations within the container.
 
 * TopLeft
 * TopCenter
@@ -358,7 +360,7 @@ The navigation control can be positioned in following locations within the conta
 * BottomRight
 * None
 
-You can set this option by using DockPosition property in NavigationControl.
+You can set this option by using the DockPosition property in NavigationControl.
 
 
 
