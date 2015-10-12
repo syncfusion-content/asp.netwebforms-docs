@@ -9,18 +9,18 @@ documentation: ug
 
 # User Interaction
 
-Users can interact with the **TreeMap** control by selecting either the leaf nodes or the groups.
+You can interact with the **TreeMap** control by selecting either the leaf nodes or the groups.
 
 ## Selection
 
-Selection support enables you to highlight the items on which mouse tapping has occurred. You can select the below contents of the **TreeMap** control:
+Selection support enables you to highlight the items where the mouse tapping has occurred. You can select the following contents of the **TreeMap** control:
 
 * Leaf Nodes
 * Group
 
 ### Single Selection
 
-To enable the selection of leaf nodes, the `HighlightOnSelection` property in `treemap` needs to be set as **true**. When selection occurs, the item is highlighted with a bounding rectangle around the selected leaf node.
+To enable the selection of leaf nodes, the `HighlightOnSelection` property in `treemap` is set as **true**. When selection occurs, the item is highlighted with a bounding rectangle around the selected leaf node.
 The border can be customized with `HighlightBorderBrush` and `HighlightBorderThickness` properties.
 
 
@@ -36,7 +36,7 @@ The border can be customized with `HighlightBorderBrush` and `HighlightBorderThi
 
 ### Group Selection
 
-To enable the selection of leaf nodes, the `HighlightGroupOnSelection` property in `treemap` needs to be set as **true**. When selection occurs, bounding rectangle highlights the selected group.
+To enable the selection of leaf nodes, the `HighlightGroupOnSelection` property in `treemap` is set as **true**. When selection occurs, bounding rectangle highlights the selected group.
 
 {% highlight js %}
 
