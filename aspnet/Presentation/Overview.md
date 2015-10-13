@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Overview
+title: Presentation | Presentation | ASP.NET | Syncfusion
 description: overview
 platform: aspnet
 control: Presentation
 documentation: ug
 ---
 
-# Overview
+# Presentation
 
 Essential Presentation is a native .NET class library that is used by developers to easily create, read, write and convert Microsoft PowerPoint files by using C#, VB.NET and managed C++ code from any of the following .NET platforms – Windows Forms, WPF, ASP.NET and ASP.NET MVC. It is a non-UI component that provides a full-fledged document instance that is easy to access & manipulate the contents without any dependency of Microsoft Office COM libraries & Microsoft Office. It supports only *.PPTX format documents; also it provides support to render the PowerPoint files (*.pptx) as an image and PDF files.
 
-## Key Features
+### Key Features
 
 Important features of Essential Presentation are as follows.
 
@@ -23,7 +23,7 @@ Important features of Essential Presentation are as follows.
 * Support to export the Presentation as PDF file.
 
 
-The current version of Essential Presentation is in preview. It does not support some features in MS PowerPoint such as 
+N> The current version of Essential Presentation is in preview. It does not support some features in MS PowerPoint such as 
 Word Art, Smart Art, Notes slide, editing Master slides, Animations, Transitions, Comment, Header & Footer, Ole Object, 
 creation & editing of Handouts, equations, built-in themes & its variants.
 
@@ -61,11 +61,7 @@ In order to create and manipulation a Presentation file, the following assemblie
 * Syncfusion.OfficeChart.Base
 * Syncfusion.Presentation.Base
 
-
-
 For converting a Presentation or a Slide to Image, the following assemblies need to be referenced.
-
-
 
 * Syncfusion.Core
 * Syncfsuion.Compression.Base
@@ -74,8 +70,6 @@ For converting a Presentation or a Slide to Image, the following assemblies need
 * Syncfusion.OfficeChartToImageConverter.WPF
 * Syncfusion.SfChart.WPF
 * Syncfusion.Shared.WPF
-
-
 
 For converting a Presentation file into PDF, the following assemblies need to be referenced.
 
@@ -88,8 +82,6 @@ For converting a Presentation file into PDF, the following assemblies need to be
 * Syncfusion.Shared.WPF
 * Syncfusion.Pdf.Base
 * Syncfusion.PresentationToPDFConverter.Base
-
-
 
 <table>
 <tr>

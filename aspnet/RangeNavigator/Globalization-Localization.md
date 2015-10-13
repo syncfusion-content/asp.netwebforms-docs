@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization--Localization
+title: Globalization Localization | RangeNavigator | ASP.NET | Syncfusion
 description: globalization & localization
 platform: aspnet
 control: RangeNavigator
@@ -16,10 +16,7 @@ RangeNavigator supports Localization and Globalization to customize the labels b
 Localization is the process of customizing the user interface based on a culture specific to a particular country or region in order to display regional data.  The culture is represented by a unique string, for example, en-US‖ for U.S. English and fr-FR‖ for French (common), this is achieved by creating a javascript file “rangeNavigatorSource.fr-FR.js” and setting the equivalent word as illustrated in the following code sample.
 
 {% highlight js %}
-
 ej.datavisualization.RangeNavigator.locale["fr-FR"] = {
-
-
 
     intervals: {
 
@@ -32,46 +29,40 @@ ej.datavisualization.RangeNavigator.locale["fr-FR"] = {
     }
 
 }
-
 {% endhighlight %}
 
 Localization is the key feature that provides solutions globally with the help of localized control. 
 
 {% highlight html %}
-
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" Locale="fr-FR">
 
-  <%--Code --%>
+<%--Code --%>
 
-  <%--Code --%>
+<%--Code --%>
 
 </ej:RangeNavigator>
-
 {% endhighlight %}
 
-![](Globalization--Localization_images/Globalization--Localization_img1.png)
+![](Globalization-Localization_images/Globalization-Localization_img1.png)
 
-
+Locialization
+{:.caption}
 
 ## RTL
 
 Right-to-Left or RTL describes the ability of application to handle and responds you to communicate with a right-to-left language, like Arabic or Japanese. EnableRTL property is used to change the rendering format  to "Right to Left", by default it renders from "Left to Right" in RangeNavigator. 
 
 {% highlight html %}
-
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" EnableRTL="true">
 
-  <%--Code --%>
+<%--Code --%>
 
-  <%--Code --%>
+<%--Code --%>
 
 </ej:RangeNavigator>
-
 {% endhighlight %}
 
-![](Globalization--Localization_images/Globalization--Localization_img2.png)
+![](Globalization-Localization_images/Globalization-Localization_img2.png)
 
-
-
-
-
+RTL
+{:.caption}

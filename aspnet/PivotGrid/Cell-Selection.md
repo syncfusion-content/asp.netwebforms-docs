@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell-Selection
+title: Cell Selection | PivotGrid | ASP.NET | Syncfusion
 description: cell selection
 platform: aspnet
 control: PivotGrid
@@ -12,6 +12,9 @@ documentation: ug
 The PivotGrid control provides support to select specific ranges of value cells and display them in a format based on your requirement. The selection can be done through simple mouse down and drag operation. This functionality is not available by default. To enable this, you need to set the “enableCellSelection” property to “true”.
 
 The following code example explains on how to enable cell selection in the PivotGrid control.
+
+{% tabs %}
+
 {% highlight html %}
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection">
 
@@ -37,15 +40,15 @@ valueCellClick = function (evt) {
 
 }
 {% endhighlight %}
- ![C:/Users/labuser/Desktop/cellselectionasp.net.png](Cell-Selection_images/Cell-Selection_img1.png) 
 
+{% endtabs %}
 
+![](Cell-Selection_images/Cell-Selection_img1.png) 
 
- ![C:/Users/labuser/Desktop/chart series.png](Cell-Selection_images/Cell-Selection_img2.png) 
+Cell Selection in the PivotGrid Control
+{:.caption}
 
+![](Cell-Selection_images/Cell-Selection_img2.png) 
 
-
-
-
-
-
+Chart Series Based on Selected Cells
+{:.caption}

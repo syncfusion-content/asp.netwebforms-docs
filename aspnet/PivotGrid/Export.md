@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export
+title: Export | PivotGrid | ASP.NET | Syncfusion
 description: export
 platform: aspnet
 control: PivotGrid
@@ -15,10 +15,11 @@ The PivotGrid is exported from cell mode to a worksheet of an Excel Workbook. Th
 
 The following code example illustrates how to save the document to Excel via service.
 
-For PivotGrid
+## For PivotGrid
+
+{% tabs %}
 
 {% highlight C# %}
-
 public void ExportOptions(Stream stream)
 
 {
@@ -33,8 +34,6 @@ pivotGridHelper.ExportToExcel(DataManager, newStreamReader(stream).ReadToEnd(),
 {% endhighlight %}
 
 {% highlight html %}
-
-
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection">
 
     <ej:button ID="Button1" runat="server" ClientSideOnClick="btnClick" Text="Export PivotGrid"></ej:button> 
@@ -61,4 +60,9 @@ pivotGridHelper.ExportToExcel(DataManager, newStreamReader(stream).ReadToEnd(),
 
 {% endhighlight %}
 
- ![Description: excelexport2](Export_images/Export_img1.png)
+{% endtabs %}
+
+![](Export_images/Export_img1.png)
+
+Exported Excel Worksheet
+{:.caption}

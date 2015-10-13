@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Series | OLAPChart | ASP.NET Webforms | Syncfusion
+title: Series | OLAPChart | ASP.NET | Syncfusion
 description: series
 platform: aspnet
-control: OLAP Chart
+control: OLAPChart
 documentation: ug
 ---
 
@@ -18,8 +18,7 @@ A combination Chart combines two or more series types in a single Chart. But the
 1. Can’t combine Column and Bar series.
 2. Pie Chart can’t be used with other series types.
 
- {% highlight html %}
-
+{% highlight html %}
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection">
 
     <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc">
@@ -47,22 +46,21 @@ A combination Chart combines two or more series types in a single Chart. But the
 </script>
 
 </asp:Content>
-
 {% endhighlight %}
 
- ![C:/Users/Tamilarasu .M/Pictures/document/Chart/Customizingchartseries.png](Series_images/Series_img1.png)
+![](Series_images/Series_img1.png)
 
-
+Combination Chart
+{:.caption}
 
 ## Series Points Customization
 
 OlapChart series is customized using fill, border width and border color. The stroke-width of the line, spline series is customized using width property of series.  The series color is customized using fill property of series. The border color and width of the column/bar is customized using border property of series. And the column/bar chart are customized using the ‘fill’ and ‘border’ property of each point.
 
- {% highlight html %}
-
+{% highlight html %}
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection">
 
-     <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc">
+    <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc">
 
         <CommonSeriesOptions Type="Column"/>
 

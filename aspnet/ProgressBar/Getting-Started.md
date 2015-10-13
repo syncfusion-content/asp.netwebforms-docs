@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | ProgressBar | ASP.NET | Syncfusion
 description: getting started
 platform: aspnet
 control: ProgressBar
@@ -22,8 +22,7 @@ You can create an ASP.NET Project and add the necessary Dlls and scripts wit
 You can add the following code example to the corresponding ASPX page to render the ProgressBar.
 
 {% highlight html %}
-
-    <div style="content-container-fluid">
+<div style="content-container-fluid">
 
         <div class="row">
 
@@ -59,17 +58,15 @@ You can add the following code example to the corresponding ASPX page to rende
 
         </div>
 
-    </div>
-
+</div>
 {% endhighlight %}
 
- It also includes a password field and through that the progress of the ProgressBar can be controlled. Include the following CSS within the <head> tag to change the page layout 
+It also includes a password field and through that the progress of the ProgressBar can be controlled. Include the following CSS within the <head> tag to change the page layout 
 
 {% highlight css %}
+/*applying styles */
 
-        /*applying styles */
-
-        .frame
+ .frame
 
         {
 
@@ -115,15 +112,12 @@ You can add the following code example to the corresponding ASPX page to rende
 
         }
 
-
-
 {% endhighlight %}
 
- Include the following script also. 
+Include the following script also. 
 
 {% highlight js %}
-
-        $(function () {
+$(function () {
 
             $(".e-progress").css({ "background-color": "#DE0909", "border-radius":"10px" });
 

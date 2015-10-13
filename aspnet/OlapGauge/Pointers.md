@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Pointers | OLAPGauge | ASP.NET Webforms | Syncfusion
+title: Pointers | OLAPGauge | ASP.NET | Syncfusion
 description: pointers
 platform: aspnet
-control: OLAP Gauge
+control: OLAPGauge
 documentation: ug
 ---
 
@@ -22,8 +22,6 @@ Two different types of pointer available in OlapGuage are:
 
 
 You can set the pointer to Needle type by setting “pointerType”property to “Needle” and the pointer to Marker type by setting the “pointerType” properties to “Marker”.
-
-
 
 {% highlight html %}
 
@@ -99,25 +97,20 @@ You can set the pointer to Needle type by setting “pointerType”property to �
 
         </Scales>
 
-    </ej:OlapGauge>
-
-
+</ej:OlapGauge>
 {% endhighlight %}
 
 ![](Pointers_images/Pointers_img1.png) 
 
-
+Pointer Type – Needle & Marker
+{:.caption}
 
 ## Length and Width Customization
 
 You can customize the Pointer length and width using the “pointerLength” and “pointerWidth” property.
 
-
-
-
 {% highlight html %}
-
- <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
+<ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
 
@@ -189,24 +182,19 @@ You can customize the Pointer length and width using the “pointerLength” and
 
         </Scales>
 
-    </ej:OlapGauge>
-
+</ej:OlapGauge>
 {% endhighlight %}
 
+![](Pointers_images/Pointers_img2.png) 
 
- ![](Pointers_images/Pointers_img2.png) 
-
-
+Length and Width Customization
+{:.caption}
 
 ## Background Customization 
 
 You can customize the Pointer background color using “backgroundcolor”property.
 
-
-
-
 {% highlight html %}
-
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
@@ -279,26 +267,19 @@ You can customize the Pointer background color using “backgroundcolor”proper
 
         </Scales>
 
-    </ej:OlapGauge>
-
-
+</ej:OlapGauge>
 {% endhighlight  %}
-
-
 
 ![](Pointers_images/Pointers_img3.png) 
 
-
+Background Color Customization
+{:.caption}
 
 ## Shapes Customization
 
 You can customize Pointershapes using the “needlestyle” property. 
 
-
-
-
 {% highlight html %}
-
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
@@ -371,11 +352,10 @@ You can customize Pointershapes using the “needlestyle” property.
 
         </Scales>
 
-    </ej:OlapGauge>
-
-
+</ej:OlapGauge>
 {% endhighlight %}
 
- ![I:/OlapGuage/Gauge/pointerstyle.png](Pointers_images/Pointers_img4.png) 
+![](Pointers_images/Pointers_img4.png) 
 
-
+Shape Customization
+{:.caption}

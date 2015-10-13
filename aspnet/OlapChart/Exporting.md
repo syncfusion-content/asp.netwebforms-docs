@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Exporting | OLAPChart | ASP.NET Webforms | Syncfusion
+title: Exporting | OLAPChart | ASP.NET | Syncfusion
 description: exporting
 platform: aspnet
-control: OLAP Chart
+control: OLAPChart
 documentation: ug
 ---
 
-## Exporting
+# Exporting
 
 The OLAP Chart control can be exported to the following formats:
 
@@ -21,18 +21,17 @@ The OLAP Chart control can be exported to the following formats:
 * JPG
 * BMP
 
-{% highlight html %}
+{% tabs %}
 
+{% highlight html %}
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc"
 
-        IsResponsive="true"></ej:OlapChart>
+IsResponsive="true"></ej:OlapChart>
 
 <ej:Button runat="server" ClientSideOnClick="ExportBtnClick" Text="Export"></ej:Button>
-
 {% endhighlight %}
 
 {% highlight c# %}
-
 function ExportBtnClick(args) {
 
     var chartObj = $('#OlapChart1').data("ejOlapChart");
@@ -40,8 +39,9 @@ function ExportBtnClick(args) {
     chartObj.exportOlapChart(ej.olap.OlapChart.ExportOptions.Excel);   
 
 }
-
 {% endhighlight %}
+
+{% endtabs %}
 
 The Export type that is to be mentioned in the parameter takes any one of the following enumerated values.
 
@@ -76,25 +76,24 @@ public void Export(System.IO.Stream stream)
     System.Web.HttpContext.Current.Response);
 
 }
+{% endhighlight %}
 
- {% endhighlight %}
+![](Exporting_images/Exporting_img1.png)
 
- ![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/OlapChartExcelJS.png](Exporting_images/Exporting_img1.png)
+Exported OlapChart in Excel
+{:.caption}
 
+![](Exporting_images/Exporting_img2.png)
 
+Exported OlapChart in Word
+{:.caption}
 
+![](Exporting_images/Exporting_img3.png)
 
- ![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/OlapChartWordJS.png](Exporting_images/Exporting_img2.png)
+Exported OlapChart in PDF
+{:.caption}
 
+![](Exporting_images/Exporting_img4.png) 
 
-
- ![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/OlapChartPdfJS.png](Exporting_images/Exporting_img3.png)
-
-
-
-
-
- ![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/OlapChartImageJS.png](Exporting_images/Exporting_img4.png) 
-
-
-
+Exported OlapChart in ima
+{:.caption}

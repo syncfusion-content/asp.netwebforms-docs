@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping-Bar
+title: Grouping Bar | PivotGrid | ASP.NET | Syncfusion
 description: grouping bar
 platform: aspnet
 control: PivotGrid
@@ -15,8 +15,9 @@ The PivotGrid control supports Grouping bar that allows you to filter, sort, and
 
 The following code example explains on how to enable Grouping bar within the PivotGrid control.
 
-{% highlight html %}
+{% tabs %}
 
+{% highlight html %}
 <ej:PivotGrid ID="PivotGrid1" runat=server url="../wcf/RelationalService.svc"    EnableGroupingBar="true"  ClientIDMode="Static">
 
     <ClientSideEvents   AfterServiceInvoke="OnAfterServiceInvoke"/>
@@ -26,11 +27,9 @@ The following code example explains on how to enable Grouping bar within the Pi
 <ej:PivotSchemaDesigner ID="PivotSchemaDesigner" runat=server>
 
 </ej:PivotSchemaDesigner>
-
 {% endhighlight %}
 
 {% highlight js %}
-
 OnAfterServiceInvoke = function (evt) {
 
     if (evt.action == "initialize") {
@@ -52,22 +51,23 @@ OnAfterServiceInvoke = function (evt) {
     }
 
 }
-
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Grouping-Bar_images/Grouping-Bar_img1.png)
 
 The following operations can be achieved by using the Grouping bar:
 
-### Filtering
+## Filtering
 
 Filtering option available in the Grouping bar allows you to select a specific set of values that needs to be displayed in the PivotGrid control and hides the rest. By default, the filtering option is applicable only for the Row, Column and Filter areas.
 
-### Sorting
+## Sorting
 
 Sorting option available in the Grouping bar allows you to sort values besides the respective PivotItem in the PivotGrid control. This option is applicable for the PivotItems available only in the Row and Column areas. The sort indicator present inside the button indicates whether the values are in ascending or descending order. Normally, the up arrow indicates ascending order and the down arrow indicates descending order. By default, the values are sorted in ascending order.
 
-### Remove
+## Remove
 
 Remove option available in the Grouping bar allows you to remove a specific PivotItem from the PivotGridcontrol.
 

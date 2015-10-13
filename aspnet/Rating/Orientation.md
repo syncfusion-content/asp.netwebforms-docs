@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Orientation
+title: Orientation | Rating | ASP.NET | Syncfusion
 description: orientation
 platform: aspnet
 control: Rating
@@ -14,9 +14,6 @@ Rating provides support for the vertical orientation. By default, Rating re
 Add the following code example to the corresponding ASPX page to render the Rating with the customized orientation.
 
 {% highlight html %}
-
-
-
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
 
             <table>
@@ -38,16 +35,8 @@ Add the following code example to the corresponding ASPX page to render the Ra
             </table>
 
 </div>
-
-
-
 {% endhighlight %}
-
-
 
 The following screenshot displays the output of the above code example.
 
 ![](Orientation_images/Orientation_img1.png)
-
-
-

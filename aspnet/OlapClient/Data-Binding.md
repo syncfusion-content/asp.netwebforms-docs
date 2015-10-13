@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Data Binding | OLAPChart | ASP.NET Webforms | Syncfusion
+title: Data Binding | OLAPClient | ASP.NET | Syncfusion
 description: data binding
 platform: aspnet
-control: OLAP Client
+control: OLAPClient
 documentation: ug
 ---
 
@@ -17,22 +17,17 @@ OLAP Client control enables you to retrieve multidimensional data either from S
 
 The following code example illustrates how to connect to an offline cube.
 
-
 {% highlight C# %}
-
 string connectionString = @"DataSource= C:\Users\<UserName>\appdata\local\syncfusion\essentialstudio\x.x.x.x\Common\Data\OfflineCube\Adventure_Works_Ext.cub; Provider = MSOLAP;";
 
 OlapDataManager DataManager = new OlapDataManager(connectionString);
-
 {% endhighlight %}
 
 ### Bind OLAP Client to the SQL Server (Local)
 
 The following code example illustrates how to connect to a local cube in SQL Server.
 
-
 {% highlight C# %}
-
 string connectionString = "Data source=localhost; Initial Catalog=Adventure Works DW;";
 
 OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -51,8 +46,6 @@ XML/A provides the most efficient way to access an OLAP database over the Inter
 
 The following code example illustrates how to connect to the SSAS server available online.
 
-
-
 {% highlight C# %}
 
 static string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";   
@@ -67,7 +60,8 @@ The following code example illustrates how to connect to the Mondrian Server.
 
 ![](Data-Binding_images/Data-Binding_img1.png) 
 
-
+New Report
+{:.caption}
 
 ### Add Report
 
@@ -75,9 +69,15 @@ Add a new report along with the existing report collection.
 
 ![](Data-Binding_images/Data-Binding_img2.png) 
 
+Add Report
+{:.caption}
+
 Replace the existing report name with the altered report name.
 
 ![](Data-Binding_images/Data-Binding_img3.png) 
+
+Rename Report
+{:.caption}
 
 ### Remove Report
 
@@ -85,16 +85,28 @@ Removes the current report from the report collection. If only one report is ava
 
 ![](Data-Binding_images/Data-Binding_img4.png) 
 
+Remove Report
+{:.caption}
+
 ### Save and Load Report
 
 The OLAPReport collection bound to the OLAPClient component can be passed to a web service, to save the reports in a database. Similarly, the saved OLAPReport collection can be loaded back into the control. Two toolbar items have been added in the control to save and load an OLAPReport collection to the database and to the component respectively.
 
- ![](Data-Binding_images/Data-Binding_img5.png)
+![](Data-Binding_images/Data-Binding_img5.png)
+
+Save and Load Icons in Toolbar
+{:.caption}
 
 On clicking the Save icon, a dialog is displayed to enter the name with which the OLAP Report collection is to be saved. On clicking OK, the OLAP Report collection associated is passed to the web service and saved in the database connected with the name provided. 
 
 ![](Data-Binding_images/Data-Binding_img6.png) 
 
+Save Report
+{:.caption}
+
 Similarly, on clicking the load icon, a pop-up window is displayed, containing a drop-down with a list of saved OLAP Reports in the connected database. On selecting the name containing the OLAP Report collection and clicking OK, the selected OLAP Report collection is loaded into the control.
 
 ![](Data-Binding_images/Data-Binding_img7.png) 
+
+Load Report
+{:.caption}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rating-Customization
+title: Rating Customization | Rating | ASP.NET | Syncfusion
 description: rating customization
 platform: aspnet
 control: Rating
@@ -17,9 +17,6 @@ renders 4 ratings. By default, Value property’s value is one.
 In an ASPX page add the following code to render the Rating with the customized value.
 
 {% highlight html %}
-
-
-
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
 
     <table>
@@ -38,29 +35,19 @@ In an ASPX page add the following code to render the Rating with the customiz
 
             </td>
 
-
-
         </tr>
 
     </table>
 
 </div>
-
-
-
-
-
 {% endhighlight %}
-
-
 
 The following screenshot displays the output of the above code example.
 
 ![](Rating-Customization_images/Rating-Customization_img1.png) 
 
 
-
-### Min Value
+## Min Value
 
 EJ Rating control provides support for setting the minimum value. This is achieved by adding the MinValue property. When the 
 MinValue property is set, the Rating value starts with MinValue+1.
@@ -68,9 +55,6 @@ MinValue property is set, the Rating value starts with MinValue+1.
 Add the following code example to the corresponding ASPX page to render the Rating with the customized minimum value.
 
 {% highlight html %}
-
-
-
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
 
       <table>
@@ -92,22 +76,14 @@ Add the following code example to the corresponding ASPX page to render the Rat
       </table>
 
 </div>
-
-
-
-
-
 {% endhighlight %}
-
-
 
 The following screenshot displays the output of the above code example.
 
 ![](Rating-Customization_images/Rating-Customization_img2.png)
 
 
-
-### Max Value
+## Max Value
 
 EJ Rating control provides support for setting the maximum value. This is achieved by adding the MaxValue property. By default, 
 MaxValue is 5.
@@ -115,9 +91,6 @@ MaxValue is 5.
 Add the following code example to the corresponding ASPX page to render the Rating with the customized maximum value.
 
 {% highlight html %}
-
-
-
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
 
       <table>
@@ -139,18 +112,11 @@ Add the following code example to the corresponding ASPX page to render the Ra
         </table>
 
  </div>
-
-
-
 {% endhighlight %}
-
-
 
 The following screenshot displays the output of the above code example.
 
 ![](Rating-Customization_images/Rating-Customization_img3.png)
-
-
 
 ## Set Precision
 
@@ -160,9 +126,6 @@ by using the property Precision by changing the value to Half or Exact. By
 Add the following code example to the corresponding ASPX page to render the Rating with Precision.
 
 {% highlight html %}
-
-
-
 <div id="Div1" style="border: 1px solid black; width: 300px; padding: 2px">
 
         <table>
@@ -212,18 +175,11 @@ Add the following code example to the corresponding ASPX page to render the Ra
         </table>
 
 </div>
-
-
-
 {% endhighlight %}
-
-
 
 The following screenshot displays the output of the above code example.
 
 ![](Rating-Customization_images/Rating-Customization_img4.png)
-
-
 
 ## Increment Step
 
@@ -232,7 +188,6 @@ EJ Rating control supports customized increment value for the Rating. This i
 Add the following code example to the corresponding ASPX page to render the Rating with the the customized increment.
 
 {% highlight html %}
-
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
 
     <table>
@@ -261,8 +216,6 @@ The following screenshot displays the output of the above code example.
 
 ![](Rating-Customization_images/Rating-Customization_img5.png)
 
-
-
 ## Resetting values
 
 EJ Rating control provides support for value reset at runtime. This is achieved by enabling the AllowReset property to be True. 
@@ -271,9 +224,6 @@ By default, the property value is set to True.
 Add the following code example to the corresponding ASPX page to render the Rating with AllowReset.
 
 {% highlight html %}
-
-
-
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
 
     <table>
@@ -309,18 +259,11 @@ Add the following code example to the corresponding ASPX page to render the Ra
     </table>
 
 </div>
-
-
-
 {% endhighlight %}
-
-
 
 The following screenshot displays the output of the above code example.
 
 ![](Rating-Customization_images/Rating-Customization_img6.png)
-
-
 
 ## Read Only
 
@@ -331,9 +274,6 @@ False.
 Add the following code example to the corresponding ASPX page to render Rating with ReadOnly.
 
 {% highlight html %}
-
-
-
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
 
     <table>
@@ -355,18 +295,11 @@ Add the following code example to the corresponding ASPX page to render Ratin
     </table>
 
 </div>
-
-
-
 {% endhighlight %}
-
-
 
 The following screenshot displays the output of the above code example.
 
 ![](Rating-Customization_images/Rating-Customization_img7.png)
-
-
 
 ## Enable or Disable
 
@@ -376,9 +309,6 @@ property value is True.
 Add the following code example to the corresponding ASPX page to render the Rating with enable or disable support.
 
 {% highlight html %}
-
-
-
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
 
     <table>
@@ -400,16 +330,8 @@ Add the following code example to the corresponding ASPX page to render the Ra
     </table>
 
 </div>
-
-
-
 {% endhighlight %}
-
-
 
 The following screenshot displays the output of the above code example.
 
 ![](Rating-Customization_images/Rating-Customization_img8.png)
-
-
-

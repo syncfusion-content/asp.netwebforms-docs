@@ -1,19 +1,18 @@
 ---
 layout: post
-title: OLAP Chart Elements | OLAPChart | ASP.NET Webforms | Syncfusion
+title: OLAP Chart Elements | OLAPChart | ASP.NET | Syncfusion
 description: olap chart elements
 platform: aspnet
-control: OLAP Chart
+control: OLAPChart
 documentation: ug
 ---
 
-## OLAP Chart: Elements
+# OLAP Chart: Elements
 
+![](OLAP-Chart-Elements_images/OLAP-Chart-Elements_img1.png) 
 
-
- ![](OLAP-Chart-Elements_images/OLAP-Chart-Elements_img1.png) 
-
-
+OLAP Chart
+{:.caption}
 
 * Title: The Chart title is the area on top of the Chart control that displays the text about the OlapChart.
 * Chart Area: Holds the plots/graphs that are defined in the chart. The ChartArea also includes the Chart axes that are defined. A primary x-axis and primary y-axis are defined by default.

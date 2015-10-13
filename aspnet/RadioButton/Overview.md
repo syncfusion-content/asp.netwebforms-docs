@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
+title: RadioButton | RadioButton | ASP.NET | Syncfusion
 description: overview
 platform: aspnet
-control: Radio Button
+control: RadioButton
 documentation: ug
 ---
 
-# Overview
+# RadioButton
 
 The Radio Button control allows you to choose an option to perform an action. This control allows you to select true/false. These Radio Buttons are supported with themes. The HTML Radio Button control is rendered as Essential  ASP.NETRadio Button control.
 

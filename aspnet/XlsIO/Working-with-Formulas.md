@@ -3097,7 +3097,7 @@ Excel has a range of options that allows you to control the way it calculates. T
    XlsIO provides support for all the above modes of calculation. The following code example illustrates how to set the calculation mode.
 
 
-   ~~~ cs
+   ~~~ csharp
 
         // Step 1: Instantiates the spreadsheet creation engine.
 

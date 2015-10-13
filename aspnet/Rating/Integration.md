@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integration
+title: Integration | Rating | ASP.NET | Syncfusion
 description: integration
 platform: aspnet
 control: Rating
@@ -27,7 +27,6 @@ Apply the plugin and property assigning the Rating element through the directi
 Add the following code example to the corresponding ASPX page to render the Rating with the Angular support.
 
 {% highlight html %}
-
 <div ng-app="syncApp">
 
     <div ng-controller="RatingCtrl">
@@ -61,38 +60,24 @@ Add the following code example to the corresponding ASPX page to render the Rat
     </div>
 
 </div>
-
-
-
-
-
 {% endhighlight %}
-
-
 
 Include the following Script to achieve the angular binding.
 
 {% highlight js %}
-
-    angular.module('syncApp', ['ejangular'])
+angular.module('syncApp', ['ejangular'])
 
    .controller('RatingCtrl', function ($scope) {
 
        $scope.ratingValue = 3;
 
    });
-
-
-
 {% endhighlight %}
-
 
 
 The following screenshot displays the output of the above code example.
 
 ![](Integration_images/Integration_img1.png)
-
-
 
 ## Konckout Binding
 
@@ -114,9 +99,6 @@ Apply the plugin and the property assigning the Rating element through the dir
 Add the following code example to the corresponding ASPX page to render the Rating with the Knockout support.
 
 {% highlight html %}
-
-
-
 <div id="Div2" style="border: 1px solid black; width: 300px; padding: 2px">
 
     <table>
@@ -152,26 +134,18 @@ Add the following code example to the corresponding ASPX page to render the Rat
     </table>
 
 </div>
-
-
-
 {% endhighlight %}
-
-
 
 Add the following scripts to render the Rating with Knockout support.
 
 {% highlight js %}
-
-    var raingObj;
+var raingObj;
 
     $(function () {
 
         // declaration           
 
         raingObj = $("#apiRating").data("ejRating");
-
-
 
         $("#btnGetValue").ejButton({ "click": "onGetValueClck", "width": "87px" });
 
@@ -196,16 +170,8 @@ Add the following scripts to render the Rating with Knockout support.
         raingObj.reset();
 
     }
-
-
-
 {% endhighlight %}
-
-
 
 The following screenshot displays the output of the above code example.
 
 ![](Integration_images/Integration_img2.png)
-
-
-

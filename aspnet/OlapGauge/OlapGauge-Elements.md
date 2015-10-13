@@ -1,9 +1,9 @@
 ---
 layout: post
-title: OlapGauge Elements | OLAPGauge | ASP.NET Webforms | Syncfusion
+title: OlapGauge Elements | OLAPGauge | ASP.NET | Syncfusion
 description: olapgauge elements
 platform: aspnet
-control: OLAP Gauge
+control: OLAPGauge
 documentation: ug
 ---
 
@@ -11,6 +11,8 @@ documentation: ug
 
 ![](OlapGauge-Elements_images/OlapGauge-Elements_img1.png) 
 
+OlapGauge
+{:.caption}
 
 
 * Scale: Range of numbers bound by a minimum and a maximum value.

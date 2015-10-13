@@ -1,19 +1,17 @@
 ---
 layout: post
-title: Localization and Translation support | OLAPChart | ASP.NET Webforms | Syncfusion
+title: Localization and Translation support | OLAPChart | ASP.NET | Syncfusion
 description: localization and translation support
 platform: aspnet
-control: OLAP Chart
+control: OLAPChart
 documentation: ug
 ---
 
-## Localization and Translation support
+# Localization and Translation support
 
 Localization is the process of customizing the user interface (UI) as locale-specific in order to display regional data. Using this feature, data is displayed in a language and culture specific to a particular country or region. The ASP.NET OlapChart control provides inherent support to localize its UI.
 
 The following table lists the default English localizationUserInterface based on “French” culture.
-
-Table: List of default English localization User Interface based on “French” culture
 
 <table>
 <tr>
@@ -78,7 +76,6 @@ RenderingFailed</td><td>
 The following code example shows how to localize OlapChart’sUser Interface (UI) based on “French” culture.
 
 {% highlight html %}
-
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection">
 
     <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Locale="fr-FR">
@@ -86,8 +83,6 @@ The following code example shows how to localize OlapChart’sUser Interface (UI
     </ej:OlapChart>
 
 </asp:Content>
-
-
 
 <asp:Content ID="Content3" runat="server" ContentPlaceHolderID="ScriptSection">
 
@@ -140,7 +135,6 @@ N> In order to render the localized OLAP Chart, you are required to reset the co
 To apply control side localization, refer the following code example:
 
 {% highlight html %}
-
 ej.olap.OlapChart.locale["zh-CN"] = {
 
 //Corresponding keyword values needs to be set here.
@@ -151,7 +145,7 @@ ej.olap.OlapChart.locale["zh-CN"] = {
 
 ## Localizing Cube Information:
 
-To get the localized Cube information, “_Locale__Identifier"_ has to be set in the connection string:
+To get the localized Cube information, “Locale Identifier" has to be set in the connection string:
 
 {% highlight c# %}
 
@@ -169,5 +163,7 @@ DataManager.OverrideDefaultFormatStrings = true;
 
 The output for the LocalizedOlapChart is as follows:
 
-![C:/Users/labuser/Desktop/a.png](Localization-and-Translation-support_images/Localization-and-Translation-support_img2.png) 
+![](Localization-and-Translation-support_images/Localization-and-Translation-support_img2.png) 
 
+Localized OlapChart
+{:.caption}

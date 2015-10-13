@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grid-Layout
+title: Grid Layout | PivotGrid | ASP.NET | Syncfusion
 description: grid layout
 platform: aspnet
 control: PivotGrid
@@ -20,70 +20,54 @@ The four kinds of Layouts supported by the PivotGrid are as follows:
 * Normal top summary
 * No summaries
 
-####Normal
+## Normal
 
 The Normal layout is the default Layout of the PivotGrid where the summary cells are positioned at the bottom of each parent member and child members appear next to their parent.
 
+![](Grid-Layout_images/Grid-Layout_img1.png) 
 
-
- ![](Grid-Layout_images/Grid-Layout_img1.png) 
-
-
+PivotGrid in Normal Layout
+{:.caption}
 
 {% highlight html %}
-
- 
-
 <ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc" Layout="Normal"></ej:PivotGrid>
-
-
 {% endhighlight %}
 
-####Excel-like Layout
+## Excel-like Layout
 
 In the Excel-like layout, the summary cells are positioned at the bottom of the Grid and the child members appear under their parent member with a small indent.
 
+![](Grid-Layout_images/Grid-Layout_img2.png)
 
-
- ![](Grid-Layout_images/Grid-Layout_img2.png)
-
-
+PivotGrid in Excel-Like Layout
+{:.caption}
 
 {% highlight html %}
-
-
-
 <ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc" Layout="ExcelLikeLayout"></ej:PivotGrid>
-
 {% endhighlight %}
 
-####Normal Top Summary
+## Normal Top Summary
 
 In the NormalTopSummary Layout, the summary cells are positioned at the top of each parent member and the child member appears next to their parent.
 
- ![](Grid-Layout_images/Grid-Layout_img3.png) 
+![](Grid-Layout_images/Grid-Layout_img3.png) 
 
-
-
+PivotGrid in Normal Top Summary Layout
+{:.caption}
 
 {% highlight html %}
-
-
 <ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc" Layout="NormalTopSummary"></ej:PivotGrid>
-
 {% endhighlight %}
 
-####No Summaries
+## No Summaries
 
 In No Summaries Layout, the summary cells are hidden and the child members appear next to their parent member.
 
- ![](Grid-Layout_images/Grid-Layout_img4.png) 
+![](Grid-Layout_images/Grid-Layout_img4.png) 
 
+PivotGrid in No Summaries Layout
+{:.caption}
 
 {% highlight html %}
-
-
 <ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc" Layout="NoSummaries"></ej:PivotGrid>
-
 {% endhighlight %}
-

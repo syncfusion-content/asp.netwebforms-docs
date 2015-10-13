@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Exporting | OLAPClient | ASP.NET Webforms | Syncfusion
+title: Exporting | OLAPClient | ASP.NET | Syncfusion
 description: exporting
 platform: aspnet
-control: OLAP Client
+control: OLAPClient
 documentation: ug
 ---
 
@@ -11,19 +11,16 @@ documentation: ug
 
 The content in the OLAP Client control can be exported to Excel, Word and PDF documents.
 
- ![](Exporting_images/Exporting_img1.png) 
-
-
-{% highlight html %}
+![](Exporting_images/Exporting_img1.png) 
 
 Exporting feature provides you a mode option that allows you to export either OlapChart or PivotGrid or both. The following code example explains the same. 
 
+{% highlight html %}
 <ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc"
 
-         ClientExportMode="ChartAndGrid">
+ClientExportMode="ChartAndGrid">
 
 </ej:OlapClient>
-
 {% endhighlight %}
 
 The ClientExportModeproperty takes any one of the following value:
@@ -34,7 +31,7 @@ The ClientExportModeproperty takes any one of the following value:
 
 The following code example of service method needs to be added in-order to perform exporting in the OlapClient.
 
-{% highlight C#%}
+{% highlight C# %}
 
 public void Export(Stream stream)
 
@@ -57,17 +54,19 @@ public void Export(Stream stream)
 {% endhighlight %}
 
 
-![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/OlapClientExcelWeb.png](Exporting_images/Exporting_img2.png) 
+![](Exporting_images/Exporting_img2.png) 
 
+Exported OlapClient in Excel worksheet
+{:.caption}
 
+![](Exporting_images/Exporting_img3.png) 
 
-![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/OlapClientWordWeb.png](Exporting_images/Exporting_img3.png) 
+Exported OlapClient in Word document
+{:.caption}
 
+![](Exporting_images/Exporting_img4.png) 
 
-
-![C:/Users/Narendhran Muthuvel/Desktop/Exported Screenshots/OlapClientPdfWeb.png](Exporting_images/Exporting_img4.png) 
-
-
-
+Exported OlapClient in PDF document
+{:.caption}
 
 
