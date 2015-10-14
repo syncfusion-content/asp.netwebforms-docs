@@ -22,7 +22,7 @@ In the above screenshot, you can upload a resume with .png and .docx file extens
 
 ASP.NET UploadBox widget has built-in features like Upload multiple files, Delete files, check the status of the file, whether it shows complete or failed, and retry uploading the files.  You can easily create the UploadBox by using the following steps.
 
-You can create a Web project and add the necessary assemblies, styles, and scripts with the help of the given [ASP-Getting Started](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc) Documentation.
+You can create a Web project and add the necessary assemblies, styles, and scripts with the help of the given [ASP-Getting Started](http://help.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc) Documentation.
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 

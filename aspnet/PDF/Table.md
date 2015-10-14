@@ -4329,7 +4329,7 @@ Description</th><th>
 Data Type</th></tr>
 <tr>
 <td>
-{{ '[ColumnSpan](http://docs.syncfusion.com/aspnet-classic/pdf/table#column)' | markdownify }}</td><td>
+{{ '[ColumnSpan](http://help.syncfusion.com/aspnet-classic/pdf/table#column)' | markdownify }}</td><td>
 Gets or set the column span.</td><td>
 Integer</td></tr>
 <tr>
@@ -4344,12 +4344,12 @@ Gets or sets the image alignment type of the background image.</td><td>
 PdfGridImagePosition</td></tr>
 <tr>
 <td>
-{{ '[RowSpan](http://docs.syncfusion.com/windowsforms/pdf/table/grid#row)' | markdownify }}</td><td>
+{{ '[RowSpan](http://help.syncfusion.com/windowsforms/pdf/table/grid#row)' | markdownify }}</td><td>
 Gets or sets the row span</td><td>
 Integer</td></tr>
 <tr>
 <td>
-{{ '[StringFormat](http://docs.syncfusion.com/windowsforms/pdf/pages#drawing-text)' | markdownify }}</td><td>
+{{ '[StringFormat](http://help.syncfusion.com/windowsforms/pdf/pages#drawing-text)' | markdownify }}</td><td>
 Gets or sets the string format.</td><td>
 PdfStringFormat</td></tr>
 <tr>

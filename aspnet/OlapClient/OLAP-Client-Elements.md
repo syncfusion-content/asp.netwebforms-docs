@@ -417,11 +417,11 @@ When a change is made in the report, OLAP visualization controls and Axis Elemen
 
 The OLAP Grid control for ASP.NET is easily configurable, presentation-quality business control that reads OLAP data from a Microsoft SQL Server Analysis Services database, an offline cube or XMLA. The OLAP data is displayed with drill-up and drill-down capabilities and features exceptional performance. 
 
-For further information please refer the following link. <http://docs.syncfusion.com/js>
+For further information please refer the following link. <http://help.syncfusion.com/js>
 
 ## OLAP Chart
 
 The OLAP Chart control for ASP.NET is a lightweight control that reads OLAP information and visualizes it in graphical format with the ability to drill up and down. 
 
-For further information please refer the following link. <http://docs.syncfusion.com/js>
+For further information please refer the following link. <http://help.syncfusion.com/js>
 

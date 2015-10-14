@@ -117,7 +117,7 @@ doc.Close()
 
 {% endhighlight %}
 
-N> For more information on mail merge using DocIO, you can refer to online documentation link: <(http://docs.syncfusion.com/windowsforms)
+N> For more information on mail merge using DocIO, you can refer to online documentation link: <(http://help.syncfusion.com/windowsforms)
 
 ## Find and Replace
 
@@ -219,7 +219,7 @@ doc.Save("Find And Replace.doc")
 
 {% endhighlight %}
 
-N> For more information on performing the find and replace operation using DocIO, you can refer to online documentation link: <http://docs.syncfusion.com/windowsforms/docio/find-and-replace>
+N> For more information on performing the find and replace operation using DocIO, you can refer to online documentation link: <http://help.syncfusion.com/windowsforms/docio/find-and-replace>
 
 ## Bookmarks
 
@@ -723,7 +723,7 @@ doc.Close()
 
 N> For more information on inserting Headers and Footers to a Word document using DocIO, you can refer to the online documentation link:_
 
-<http://docs.syncfusion.com/windowsforms/docio/working-with-sections#working-with-headers-and-footers>
+<http://help.syncfusion.com/windowsforms/docio/working-with-sections#working-with-headers-and-footers>
 
 ## Character Formatting
 
@@ -1180,7 +1180,7 @@ Doc.Save("FileProtectionDocIO.doc")
 
 Refer to the online documentation link for more details about ways to protect the Word documents using DocIO:
 
-<http://docs.syncfusion.com/windowsforms/docio/>
+<http://help.syncfusion.com/windowsforms/docio/>
 
 ## Table of Contents
 

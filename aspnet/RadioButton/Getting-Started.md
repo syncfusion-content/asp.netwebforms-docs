@@ -29,7 +29,7 @@ scenarios. This allows you to select the corresponding choice for each question.
 
 By using the following steps, you can create a Radio Button control.
 
-You can create an ASP.NET Project and add necessary Dll and script with the help of the given [WebForms-Getting Started](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc) Documentation.
+You can create an ASP.NET Project and add necessary Dll and script with the help of the given [WebForms-Getting Started](http://help.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc) Documentation.
 
 Add the following code to render Radio Button.
 

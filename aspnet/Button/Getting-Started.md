@@ -24,13 +24,13 @@ The following screenshot illustrates the functionality of a Button control in Me
 
 ASP.NET Button control has different functionalities such as Display as Only Image Content or Image Content with Text.
 
-You can create an ASP.NETProject and add necessary Dll’s and Scripts with the help of the given [ ASP.NET -Getting Started](http://docs.syncfusion.com/aspnet/button/getting-started) Documentation.
+You can create an ASP.NETProject and add necessary Dll’s and Scripts with the help of the given [ ASP.NET -Getting Started](http://help.syncfusion.com/aspnet/button/getting-started) Documentation.
 
  Add the following code example to the corresponding ASPX page to render Button. Refer to the following links to know details on ToggleButton and SplitButton.
 
-ToggleButton : <http://docs.syncfusion.com/js/togglebutton/getting-started>
+ToggleButton : <http://help.syncfusion.com/js/togglebutton/getting-started>
 
-SplitButton :  <http://docs.syncfusion.com/js/splitbutton/getting-started>
+SplitButton :  <http://help.syncfusion.com/js/splitbutton/getting-started>
 
 
 

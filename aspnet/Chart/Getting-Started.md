@@ -27,7 +27,7 @@ This section encompasses how to configure the ASP.NET Charts for your business n
 
 Getting started with your ASP.NET Chart is very easy.  You can start by creating a simple line Chart.
 
-Create an ASP Project and add necessary Dll’s and Scripts by referring [ASP-Getting Started](http://docs.syncfusion.com/aspnetmvc/chart/getting-started) Documentation.
+Create an ASP Project and add necessary Dll’s and Scripts by referring [ASP-Getting Started](http://help.syncfusion.com/aspnetmvc/chart/getting-started) Documentation.
 
 Create the web form named as default and add the following template
 

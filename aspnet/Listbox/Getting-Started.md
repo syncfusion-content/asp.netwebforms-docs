@@ -31,7 +31,7 @@ Essential ASP.NET ListBox widget renders with built-in features.
 
 The following steps are used to create ListBox control.  
 
-You can create a WEB Project and add necessary Dll and script with the help of the given [ASP-Getting Started Documentation.](http://docs.syncfusion.com/aspnet/listbox/getting-started)
+You can create a WEB Project and add necessary Dll and script with the help of the given [ASP-Getting Started Documentation.](http://help.syncfusion.com/aspnet/listbox/getting-started)
 Add the following code to the corresponding ASPX page to render the ListBox.
 
 

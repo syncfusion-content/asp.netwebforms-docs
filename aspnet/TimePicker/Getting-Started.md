@@ -21,7 +21,7 @@ The following screenshot illustrates the functionality of a TimePicker with a ti
 
 ### Create a TimePicker 
 
-You can create an ASP.NET Web Forms Project and add necessary Dll’s and scripts with the help of the given [ASP.NET WebForms-Getting Started](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc) Documentation.
+You can create an ASP.NET Web Forms Project and add necessary Dll’s and scripts with the help of the given [ASP.NET WebForms-Getting Started](http://help.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc) Documentation.
 
 
 
