@@ -77,7 +77,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -200,7 +200,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -360,7 +360,7 @@ document.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -450,7 +450,7 @@ document.Save("Output.pdf");
 document.Close(true);
 {% endhighlight %}
 
-{% highlight VB %}'Creates a new PDF document.
+{% highlight vbnet %}'Creates a new PDF document.
 
 Dim document As New PdfDocument()
 
@@ -551,7 +551,7 @@ document.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}'Creates a new PDF document.
+{% highlight vbnet %}'Creates a new PDF document.
 
 Dim document As New PdfDocument()
 
@@ -656,7 +656,7 @@ document.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}'Creates a new PDF document.
+{% highlight vbnet %}'Creates a new PDF document.
 
 Dim document As New PdfDocument()
 
@@ -759,7 +759,7 @@ document.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -875,7 +875,7 @@ doc.Save("Output.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -1164,7 +1164,7 @@ document.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new instance of PdfDocument class.
 
@@ -1322,7 +1322,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 

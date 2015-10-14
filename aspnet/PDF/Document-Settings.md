@@ -46,7 +46,7 @@ Console.WriteLine(document.DocumentInformation.Producer);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 Dim document As New PdfLoadedDocument("input.pdf")
 
@@ -118,7 +118,7 @@ document.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -271,7 +271,7 @@ document.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 

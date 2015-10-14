@@ -156,7 +156,7 @@ using (OCRProcessor processor = new OCRProcessor(@"TesseractBinaries\"))
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Initializes OCR processor by providing tesseract binaries   (SyncfusionTesseract.dll and liblept168.dll) to the OCR processor overload.
 
@@ -241,7 +241,7 @@ using (OCRProcessor processor = new OCRProcessor(@"TesseractBinaries\"))
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 
 

@@ -48,7 +48,7 @@ document.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 
 
@@ -107,7 +107,7 @@ stream2.Dispose();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 Dim stream1 As New FileStream("Input.pdf", FileMode.Open)
 
@@ -168,7 +168,7 @@ document2.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Loads documents.
 
@@ -221,7 +221,7 @@ document2.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Loads documents.
 
@@ -300,7 +300,7 @@ document.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Inputs PDF documents.
 

@@ -53,7 +53,7 @@ doc.Save("Sample.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Loads a PDF document.
 
@@ -117,7 +117,7 @@ doc.Save("Sample.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Loads a PDF document.
 

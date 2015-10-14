@@ -53,7 +53,7 @@ lDoc.Save("Stamp.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 
 
@@ -113,7 +113,7 @@ lDoc.Save("Stamp.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Loads the document.
 
@@ -180,7 +180,7 @@ doc.Save("NewPDF.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new document.
 
@@ -251,7 +251,7 @@ doc.Save("NewPDF.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new document.
 

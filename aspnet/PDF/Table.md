@@ -264,7 +264,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -395,7 +395,7 @@ doc.Close(true);
 
 
 {% endhighlight %}
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -507,7 +507,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -647,7 +647,7 @@ static void pdfLightTable_QueryNextRow(object sender, QueryNextRowEventArgs args
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 Shared datastring As String()() = New String(1)() {}
 
@@ -791,7 +791,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -906,7 +906,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -1019,7 +1019,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -1135,7 +1135,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -1248,7 +1248,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -1388,7 +1388,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -1505,7 +1505,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -1677,7 +1677,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -1862,7 +1862,7 @@ void pdfLightTable_BeginRowLayout(object sender, BeginRowLayoutEventArgs args)
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -2023,7 +2023,7 @@ void pdfLightTable_BeginCellLayout(object sender, BeginCellLayoutEventArgs args)
 {% endhighlight %}
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -2313,7 +2313,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -2420,7 +2420,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -2523,7 +2523,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -2666,7 +2666,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -2793,7 +2793,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -3005,7 +3005,7 @@ pdfDocument.Close(true);
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -3149,7 +3149,7 @@ pdfDocument.Close(true);
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 'Creates a new PDF document.
 
 Dim pdfDocument As New PdfDocument()
@@ -3307,7 +3307,7 @@ pdfDocument.Close(true);
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 'Creates a new PDF document.
 
 Dim pdfDocument As New PdfDocument()
@@ -3460,7 +3460,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 'Creates a new PDF document.
 
 Dim pdfDocument As New PdfDocument()
@@ -3586,7 +3586,7 @@ pdfDocument.Close(true);
 
 
 
-{% highlight VB %}'Creates a new PDF document.
+{% highlight vbnet %}'Creates a new PDF document.
 
 Dim pdfDocument As New PdfDocument()
 
@@ -3727,7 +3727,7 @@ pdfDocument.Close(true);
 {% endhighlight %}
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -3876,7 +3876,7 @@ pdfDocument.Close(true);
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 'Creates a new PDF document.
 
 Dim pdfDocument As New PdfDocument()
@@ -4013,7 +4013,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -4146,7 +4146,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -4259,7 +4259,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -4442,7 +4442,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}'Creates a new PDF document.
+{% highlight vbnet %}'Creates a new PDF document.
 
 Dim pdfDocument As New PdfDocument()
 
@@ -4637,7 +4637,7 @@ doc.Close(true);
 {% endhighlight %}
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 

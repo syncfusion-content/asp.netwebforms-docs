@@ -114,7 +114,7 @@ document.Save("Sample.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates PDF document.
 
@@ -242,7 +242,7 @@ document.Save("Sample.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Load the document
 
@@ -323,7 +323,7 @@ document.Save("Sample.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 Dim document As New PdfDocument()
 
