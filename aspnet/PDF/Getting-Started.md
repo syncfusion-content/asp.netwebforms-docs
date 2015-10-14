@@ -71,7 +71,7 @@ graphics.DrawString("Hello world!", new PdfStandardFont(PdfFontFamily.Helvetica
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 
 Dim graphics As PdfGraphics = page.Graphics
@@ -98,7 +98,7 @@ document.Save("Sample.pdf");
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 document.Save("Sample.pdf")
 
@@ -144,7 +144,7 @@ document.Save("Sample.pdf");
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -328,7 +328,7 @@ document.Close();
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -399,7 +399,7 @@ document.Close();
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -971,7 +971,7 @@ PdfPage page = document.Pages.Add();
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Initializes a document.
 
@@ -1027,7 +1027,7 @@ page.Graphics.DrawImage(img, new RectangleF(g.ClientSize.Width - img.Width, 0, i
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates graphics instance of the page.
 
@@ -1091,7 +1091,7 @@ PdfLayoutResult result = element.Draw(page, new RectangleF(0, 0, page.Graphics.C
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a text element and assigns the text to be added.
 
@@ -1139,7 +1139,7 @@ g.DrawRectangle(new PdfSolidBrush(new PdfColor(126, 151, 173)), new RectangleF(0
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 
 'Adds a rectangle that contains the invoice number and date.
@@ -1178,7 +1178,7 @@ result = element.Draw(page, new PointF(10, result.Bounds.Bottom + 48));
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a font and style for the subheadings.
 
@@ -1223,7 +1223,7 @@ g.DrawString(currentDate, subHeadingFont, element.Brush, new PointF(g.ClientSize
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 
 'Gets the current date.
@@ -1273,7 +1273,7 @@ result = element.Draw(page, new PointF(10, result.Bounds.Bottom + 25));
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a text element for the address. 
 
@@ -1304,7 +1304,7 @@ g.DrawLine(new PdfPen(new PdfColor(126, 151, 173), 0.70f), new PointF(0, result.
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Draws a line from the left corner to the right corner of the page.
 
@@ -1338,7 +1338,7 @@ result = element.Draw(page, new RectangleF(10, result.Bounds.Bottom + 3, g.Clien
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Adds the name of the buyer.
 
@@ -1393,7 +1393,7 @@ grid.DataSource = dataSource;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a PdfGrid object.
 
@@ -1447,7 +1447,7 @@ header.ApplyStyle(headerStyle);
 {% endhighlight %}
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Gets the header of the PdfGrid.
 
@@ -1511,7 +1511,7 @@ header.Cells[i].StringFormat = new PdfStringFormat(PdfTextAlignment.Right, PdfVe
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Assigns string format to individual cells of the header.
 
@@ -1612,7 +1612,7 @@ foreach(PdfGridRow row in grid.Rows)
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a cell style.
 
@@ -1699,7 +1699,7 @@ layoutFormat.Layout = PdfLayoutType.Paginate;
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a grid layout format.
 
@@ -1728,7 +1728,7 @@ PdfGridLayoutResult gridResult = grid.Draw(page, new RectangleF(new PointF(0, re
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Draws the PdfGrid to the page by passing the rectangle and layout format parameters.
 
@@ -1784,7 +1784,7 @@ gridResult.Page.Graphics.DrawString(totalDue.ToString("C"), font, new PdfSolidBr
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Calculates the position of the fourth column by adding their widths.
 
@@ -1871,7 +1871,7 @@ document.Template.Bottom = footer;
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Footer.
 
@@ -1921,7 +1921,7 @@ document.Save("Invoice.pdf");
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Saves the document to the disk specifying the path.
 

@@ -123,7 +123,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new document with PDF/A standard.
 
@@ -211,7 +211,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new document with PDF/A standard.
 

@@ -81,7 +81,7 @@ doc.Save("Shapes.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a document.
 
@@ -165,7 +165,7 @@ doc.Save("Shapes.pdf");
 
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a Document.
 

@@ -118,7 +118,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -219,7 +219,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 
 
@@ -330,7 +330,7 @@ document.Save("3DAnnotation.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -419,7 +419,7 @@ document.Save("3DViews.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 Dim document As New PdfDocument()
 
@@ -518,7 +518,7 @@ document.Save("Pdf3DProjection.pdf")
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -627,7 +627,7 @@ document.Save("Pdf3DActivation.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 Dim document As New PdfDocument()
 
@@ -708,7 +708,7 @@ document.Save("Pdf3DBackground.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 
 
@@ -828,7 +828,7 @@ document.Save("PDF3DRendermode.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -932,7 +932,7 @@ document.Save("Pdf3DLighting.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -1023,7 +1023,7 @@ document.Save("Pdf3DCrossSection.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 Dim document As New PdfDocument()
 
@@ -1101,7 +1101,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 Dim document As New PdfDocument()
 
@@ -1190,7 +1190,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 Dim document As New PdfDocument()
 
@@ -1316,7 +1316,7 @@ document.Save("LineAnnotation.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -1421,7 +1421,7 @@ document.Save("Rubberstamp.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 
 
@@ -1506,7 +1506,7 @@ document.Save("PopupAnnotation.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -1586,7 +1586,7 @@ document.Save("AttachmentAnnotation.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF Document.
 
@@ -1668,7 +1668,7 @@ document.Save("SoundIcon.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 Dim document As New PdfDocument()
 
@@ -1747,7 +1747,7 @@ document.Save("UriAnnotation.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 Dim document As New PdfDocument()
 
@@ -1841,7 +1841,7 @@ document.Save("DocumentLinkAnnotation.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 Dim document As New PdfDocument()
 

@@ -33,7 +33,7 @@ loadedDocument.Split(destFilePattern);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Loads document.
 
@@ -101,7 +101,7 @@ document2.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Loads an existing document, which needs to be split.
 

@@ -79,7 +79,7 @@ document.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}'Creates a new PDF document.
+{% highlight vbnet %}'Creates a new PDF document.
 
 Dim document As New PdfDocument()
 
@@ -158,7 +158,7 @@ document.Save("Sample.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -227,7 +227,7 @@ loadedDocument.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Loads the PDF document.
 
@@ -291,7 +291,7 @@ loadedDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 Dim loadedDocument As PdfLoadedDocument = New PdfLoadedDocument("Sample.pdf")
 
@@ -351,7 +351,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Loads the PDF document.
 
@@ -412,7 +412,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Loads the PDF document.
 
@@ -494,7 +494,7 @@ doc.Save("Sample.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 

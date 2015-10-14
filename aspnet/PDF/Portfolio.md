@@ -73,7 +73,7 @@ document.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new instance of PdfDocument class.
 
@@ -254,7 +254,7 @@ document.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new instance of PdfDocument class.
 

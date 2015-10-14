@@ -94,7 +94,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -193,7 +193,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -297,7 +297,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -426,7 +426,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -559,7 +559,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -684,7 +684,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -787,7 +787,7 @@ doc.Save("CODE39.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF Document.
 
@@ -858,7 +858,7 @@ doc.Save("CODE39Ext.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates new PDF Document.
 
@@ -933,7 +933,7 @@ doc.Save("CODE11.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates new PDF document.
 
@@ -1006,7 +1006,7 @@ doc.Save("CODABAR.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Draws Codabar barcode. 
 
@@ -1087,7 +1087,7 @@ doc.Save("CODE32.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Draws Code32 barcode. 
 
@@ -1166,7 +1166,7 @@ doc.Save("CODE93.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Draws Code93 barcode. 
 
@@ -1234,7 +1234,7 @@ doc.Save("CODE93Ext.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Draws Code93 Extended barcode. 
 
@@ -1333,7 +1333,7 @@ doc.Save("CODE128A.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Draws Code128A barcode. 
 
@@ -1420,7 +1420,7 @@ doc.Save("CODE128B.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Draws Code128B barcode. 
 
@@ -1503,7 +1503,7 @@ doc.Save("CODE128C.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Draws Code128C barcode. 
 
@@ -1614,7 +1614,7 @@ doc.Save("DataMatrix.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Draws Data Matrix barcode.
 
@@ -1689,7 +1689,7 @@ doc.Save("QRBarcode.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Draws QR Barcode.
 
@@ -1817,7 +1817,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new document with PDF/A standard.
 
@@ -1910,7 +1910,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new document with PDF/A standard.
 
@@ -2015,7 +2015,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new document with PDF/A standard.
 
@@ -2128,7 +2128,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new document with PDF/A standard.
 
@@ -2235,7 +2235,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new document with PDF/A standard.
 
@@ -2338,7 +2338,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new document with PDF/A standard.
 
@@ -2458,7 +2458,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a PDF document.
 
@@ -2593,7 +2593,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a PDF document.
 

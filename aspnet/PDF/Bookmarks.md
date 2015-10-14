@@ -91,7 +91,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 
 
@@ -197,7 +197,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 
 
@@ -262,7 +262,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 
 
@@ -382,7 +382,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 
 
@@ -473,7 +473,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 
 

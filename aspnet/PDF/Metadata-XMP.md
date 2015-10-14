@@ -88,7 +88,7 @@ pdfDoc.Save("DocumentInformation.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 Dim pdfDoc As PdfDocument = New PdfDocument()
 
@@ -182,7 +182,7 @@ pdfDoc.Save("DocumentInformation.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 Dim pdfDoc As New PdfDocument()
 
@@ -258,7 +258,7 @@ pdfDoc.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 Dim pdfDoc As New PdfDocument()
 
@@ -322,7 +322,7 @@ pdfDoc.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 Dim pdfDoc As New PdfDocument()
 
@@ -393,7 +393,7 @@ pdfDoc.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 Dim pdfDoc As New PdfDocument()
 
@@ -466,7 +466,7 @@ pdfDoc.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 Dim pdfDoc As New PdfDocument()
 
@@ -542,7 +542,7 @@ pdfDoc.Save("DocumentInformation.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates PDF document.
 
@@ -603,7 +603,7 @@ XmpMetadata xmp = new XmpMetadata(pdfDoc.DocumentInformation.XmpMetadata.XmlData
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 Dim xmp As New XmpMetadata(pdfDoc.DocumentInformation.XmpMetadata.XmlData)
 
@@ -654,7 +654,7 @@ cs["DOCID"] = "SYNCSAM001";
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates custom schema.
 
@@ -705,7 +705,7 @@ pdfDoc.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Loads the PDF document.
 
@@ -832,7 +832,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -935,7 +935,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -1101,7 +1101,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -1209,7 +1209,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -1314,7 +1314,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -1430,7 +1430,7 @@ document.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 

@@ -24,7 +24,7 @@ Apply the plugin and property assigning to the CurrencyTextbox control element 
 
 To know more details about the Angular binding, refer to the following link:
 
-<http://docs.syncfusion.com/js/angularjs>
+<http://help.syncfusion.com/js/angularjs>
 
 The following example shows the way to bind data to the CurrencyTextbox control through Angular Support.
 
@@ -159,7 +159,7 @@ One-way binding refers to the process of applying observable values to all the 
 
 Two-way binding supports both the processes. It applies the observable values to the CurrencyTextbox control properties and the changes made in the CurrencyTextbox control are reflected back and triggered within the observable collections.
 
-For more information about the Knockout Binding, refer to the following online documentation in the given link location: <http://dous.syncfusion.com/js/knockoutjs>.
+For more information about the Knockout Binding, refer to the following online documentation in the given link location: <http://help.syncfusion.com/js/knockoutjs>.
 
 The following example depicts the way to bind data to the CurrencyTextbox control through Knockout Support that enables and populates data based on the value set to the other CurrencyTextbox controls.
 

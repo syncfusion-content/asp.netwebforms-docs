@@ -65,7 +65,7 @@ So based on the value in the record, you can set the background color of the row
 
 {% endhighlight %}
 
-{% highlight razor %}
+{% highlight xml %}
 
     @(Html.EJ().Grid<object>("Editing")
 
@@ -149,6 +149,7 @@ So based on the value in the record, you can set the background color of the row
     }
 
     }
+{% endhighlight %}
 
 {% highlight html %}
 

@@ -74,7 +74,7 @@ doc.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -159,7 +159,7 @@ doc.Close();
 {% endhighlight %}
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Create a new instance of PdfDocument class.
 
@@ -286,7 +286,7 @@ doc.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new instance of PdfDocument class.
 
@@ -368,7 +368,7 @@ doc.Close();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new instance of PdfDocument class.
 
@@ -434,7 +434,7 @@ doc.Close();
 
 {% endhighlight %}
 
- {% highlight VB %}
+ {% highlight vbnet %}
 
 'Loads the PDF document.
 
@@ -486,7 +486,7 @@ html.Dispose();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates HTML converter instance.
 
@@ -539,7 +539,7 @@ view.Dispose();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF viewer instance.
 

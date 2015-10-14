@@ -323,7 +323,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -455,7 +455,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PDF document.
 
@@ -567,7 +567,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 
 
@@ -715,7 +715,7 @@ doc.Save("HtmlToPdf.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates PDF Generator.
 
@@ -797,7 +797,7 @@ pdfDoc.Save("DoctoPDF.pdf");
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Loads the Word document.
 
@@ -981,7 +981,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a PDF document.
 
@@ -1075,7 +1075,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a PDF document.
 
@@ -1156,7 +1156,7 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a PDF document.
 
@@ -1230,7 +1230,7 @@ document.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates converter class.
 
@@ -1438,7 +1438,7 @@ document.Close(true);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Creates a new PdfDocument.
 
@@ -1499,7 +1499,7 @@ string s = page.ExtractText();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Loads an existing PDF.
 
@@ -1544,7 +1544,7 @@ Image[] img = page.ExtractImages();
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Loads an existing PDF.
 
