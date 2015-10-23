@@ -335,7 +335,7 @@ doc.Close()
 
 N> For more information on working with bookmarks using DocIO, you can refer to the online documentation link:
 
-<http://help.syncfusion.com/FileFormat/DocIO/Working%20with%20Bookmarks>
+<http://help.syncfusion.com/file-formats/DocIO/Working%20with%20Bookmarks>
 
 ## Page Numbers
 
@@ -587,7 +587,7 @@ doc.Close()
 
 N> For more information on adding watermarks to a Word document using DocIO, refer to the online documentation link:
 
-<http://docx.syncfusion.com/FileFormat/DocIO/Applying%20Watermark>
+<http://docx.syncfusion.com/file-formats/DocIO/Applying%20Watermark>
 
 ## Header or Footer
 
@@ -723,7 +723,7 @@ doc.Close()
 
 N> For more information on inserting Headers and Footers to a Word document using DocIO, you can refer to the online documentation link:_
 
-<http://help.syncfusion.com/FileFormat/DocIO/Working%20with%20Sections.html#working-with-headers-and-footers>
+<http://help.syncfusion.com/file-formats/DocIO/Working%20with%20Sections.html#working-with-headers-and-footers>
 
 ## Character Formatting
 
@@ -908,7 +908,7 @@ doc.Save("TableDocIO.doc")
 
 N> For more information on creating tables using DocIO, refer to online documentation link:
 
-<http://docx.syncfusion.com/FileFormat/DocIO/Working%20with%20Tables>
+<http://docx.syncfusion.com/file-formats/DocIO/Working%20with%20Tables>
 
 ## Comments
 
@@ -1075,7 +1075,7 @@ doc.Save("CommentsRemovedDocIO.doc", FormatType.Doc)
 
 N> For more information on working with the comments using DocIO, you can refer to the online documentation link:
 
-<http://docx.syncfusion.com/FileFormat/DocIO/Working%20with%20Comments>
+<http://docx.syncfusion.com/file-formats/DocIO/Working%20with%20Comments>
 
 ## Document Protection
 
@@ -1180,7 +1180,7 @@ Doc.Save("FileProtectionDocIO.doc")
 
 Refer to the online documentation link for more details about ways to protect the Word documents using DocIO:
 
-<http://help.syncfusion.com/FileFormat/DocIO/>
+<http://help.syncfusion.com/file-formats/DocIO/>
 
 ## Table of Contents
 
@@ -1284,4 +1284,4 @@ doc.Save("TOCUpdatedDocIO.doc", FormatType.Doc)
 
 Refer to the online documentation link for more information about adding the table of contents to the Word document using DocIO:
 
-<http://docx.syncfusion.com/FileFormat/DocIO/Working%20with%20Table%20Of%20Contents>
+<http://docx.syncfusion.com/file-formats/DocIO/Working%20with%20Table%20Of%20Contents>
