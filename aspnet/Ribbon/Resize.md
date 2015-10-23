@@ -20,7 +20,7 @@ Ribbon control supports resizing functionality .To enable resizing in the ribbon
 
      <ej:Ribbon ID="defaultRibbon" runat="server" Width="70%" AllowResizing="true">
 
-                        <ApplicationTab ItemID="ribbonmenu" Type="ApplicationMenu">
+                        <ApplicationTab MenuItemID="ribbonmenu" Type="Menu">
 
                         </ApplicationTab>
 
