@@ -19,7 +19,7 @@ The ASP.NET Menu supports you to display a Menu of list-out items. This Menu is 
 
 ### Create a Menu
 
-You can create an ASP Project and add necessary Dll and script with the help of the given [ASP-Getting Started](http://docs.syncfusion.com/aspnet/menu/getting-started) Documentation. Add the following code to the corresponding ASPX page for Menu rendering.
+You can create an ASP Project and add necessary Dll and script with the help of the given [ASP-Getting Started](http://help.syncfusion.com/aspnet/menu/getting-started) Documentation. Add the following code to the corresponding ASPX page for Menu rendering.
 
 
 

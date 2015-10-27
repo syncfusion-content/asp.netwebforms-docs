@@ -15,7 +15,7 @@ ASP.NETScroller control can be rendered based on the target panel height and wi
 
 ### Add Scroller Control to your ASP.NET Web Application
 
-You can create an ASP.NET Project and add necessary Dll and script with the help of the given [ASP-Getting Started](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc) Documentation.
+You can create an ASP.NET Project and add necessary Dll and script with the help of the given [ASP-Getting Started](http://help.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc) Documentation.
 
 You can add the following code example to the corresponding ASPX page to render Scroller.
 

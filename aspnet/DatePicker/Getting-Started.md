@@ -25,7 +25,7 @@ The following screenshot illustrates the functionality of a DatePicker with date
 
 ASP.NET DatePicker control basically renders with built-in features such as keyboard navigation, months navigation with animations and flexible API’s. You can easily create the DatePicker control by using simple input textbox element as follows.
 
-You can create an ASP.NET project and add necessary Dll and script with the help of the given [ASP-Getting Started Documentation.](http://docs.syncfusion.com/aspnetmvc/datepicker/getting-started)
+You can create an ASP.NET project and add necessary Dll and script with the help of the given [ASP-Getting Started Documentation.](http://help.syncfusion.com/aspnetmvc/datepicker/getting-started)
 
 You can add the following code example to the corresponding ASPX page to render the DatePicker.
 

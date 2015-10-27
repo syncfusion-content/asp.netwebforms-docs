@@ -188,7 +188,7 @@ public class TreeLocalDataSource
 
 You can bind TreeView to Remote Data by using dataManager and the query in fields is used to retrieve the data. dataManager supports the following types of data-binding: JSON, Web Services, oData. It uses two different classes; ej.DataManager for processing, and ej.Query for serving data. ej.DataManager communicates with data source and ej.Query generates data queries that are read by the dataManager. In the following link, how to create dataManager is explained in full detail.
 
-<http://docs.syncfusion.com/js/datamanager/getting-started#create-your-datamanager-in-javascript)
+<http://help.syncfusion.com/js/datamanager/getting-started#create-your-datamanager-in-javascript)
 
 The following steps explain how you can bind remote data to TreeView control.
 

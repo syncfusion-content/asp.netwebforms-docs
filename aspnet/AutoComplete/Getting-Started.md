@@ -24,7 +24,7 @@ The following screenshot illustrates the AutoComplete control that searches th
 ### Create an AutoComplete
 
 You can create an ASP.NET Project and add necessary Dll’s and Scripts with the help of the given 
-[WebForms-Getting Started](http://docs.syncfusion.com/aspnetmvc/autocomplete/getting-started) documentation.  
+[WebForms-Getting Started](http://help.syncfusion.com/aspnetmvc/autocomplete/getting-started) documentation.  
 Initialize the corresponding AutoCompletecontrol in the ASPX page.
 
 {% highlight html %}
