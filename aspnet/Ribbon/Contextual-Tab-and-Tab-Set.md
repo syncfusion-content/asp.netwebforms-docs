@@ -20,7 +20,7 @@ You can add Contextual Tabs and Tab Set in the Ribbon control. In ContextualTabs
 
 <ej:Ribbon ID="Ribbon" runat="server" Width="800px">
 
-        <ApplicationTab ItemID="menu" Type="ApplicationMenu">
+        <ApplicationTab MenuItemID="menu" Type="Menu">
 
             <MenuSettings OpenOnClick="false"></MenuSettings>
 

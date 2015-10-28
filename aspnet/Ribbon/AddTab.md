@@ -23,7 +23,7 @@ This method is used to add tab dynamically in the Ribbon control. This method re
 
 <ej:Ribbon ID="Defaultribbon" runat="server" Width="800">
 
-            <ApplicationTab ItemID="menu" Type="ApplicationMenu">
+            <ApplicationTab MenuItemID="menu" Type="Menu">
 
             </ApplicationTab>
 

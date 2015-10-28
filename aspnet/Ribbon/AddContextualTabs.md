@@ -23,7 +23,7 @@ This method is used to add contextual tabs dynamically.This method has two argum
 
 <ej:Ribbon ID="Defaultribbon" runat="server" Width="800">
 
-            <ApplicationTab ItemID="menu" Type="ApplicationMenu">
+            <ApplicationTab MenuItemID="menu" Type="Menu">
 
             </ApplicationTab>
 
