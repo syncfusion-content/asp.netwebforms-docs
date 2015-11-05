@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
+title: RangeNavigator | RangeNavigator | ASP.NET | Syncfusion
 description: overview
 platform: aspnet
 control: RangeNavigator
 documentation: ug
 ---
 
-# Overview
+# RangeNavigator
 
 RangeNavigator is a data visualization control.  It allows you to scroll and navigate through the data. This control easily combines with other controls such as Chart, GridView, etc., to create rich and powerful dashboards.
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Ticks | OLAPGauge | ASP.NET Webforms | Syncfusion
+title: Ticks | OLAPGauge | ASP.NET | Syncfusion
 description: ticks
 platform: aspnet
-control: OLAP Gauge
+control: OLAPGauge
 documentation: ug
 ---
 
@@ -16,10 +16,7 @@ Ticks indicate values that are present in the scale area. The different types of
 
 You can further customize Ticks by setting color, width and height.
 
-
 {% highlight html %}
-
-
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
@@ -92,24 +89,19 @@ You can further customize Ticks by setting color, width and height.
 
         </Scales>
 
-    </ej:OlapGauge>
-
-
-{% endhighlight  %}
+</ej:OlapGauge>
+{% endhighlight %}
 
 ![](Ticks_images/Ticks_img1.png) 
 
-
+Ticks Customization
+{:.caption}
 
 ## Customizing the distance from Scale
 
 You can change the distance from the scale and the Ticks using “distanceFromScale” property.
 
-
-
-
 {% highlight html %}
-
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
@@ -182,23 +174,19 @@ You can change the distance from the scale and the Ticks using “distanceFromSc
 
         </Scales>
 
-    </ej:OlapGauge>
-
+</ej:OlapGauge>
 {% endhighlight %}
 
 ![](Ticks_images/Ticks_img2.png) 
 
-
+Adjusting distance between Scale and Ticks
+{:.caption}
 
 ## Height and Width Customization
 
 You can set the height and width of the Ticks using the “tickWidth” and “tickHeight” property.
 
-
-
-
 {% highlight html %}
-
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
@@ -271,23 +259,19 @@ You can set the height and width of the Ticks using the “tickWidth” and “t
 
         </Scales>
 
-    </ej:OlapGauge>
-
-
+</ej:OlapGauge>
 {% endhighlight  %}
 
- ![I:/OlapGuage/Gauge/Tick customizatoion.png](Ticks_images/Ticks_img3.png) 
+![](Ticks_images/Ticks_img3.png) 
 
-
+Ticks height and width customization
+{:.caption}
 
 ## Hiding Ticks
 
 You can hide the Ticks that indicate the range values using “showTicks” property.
 
-
-
 {% highlight html %}
-
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
@@ -360,12 +344,10 @@ You can hide the Ticks that indicate the range values using “showTicks” prop
 
         </Scales>
 
-    </ej:OlapGauge>
-
+</ej:OlapGauge>
 {% endhighlight  %}
 
+![](Ticks_images/Ticks_img4.png)
 
- ![](Ticks_images/Ticks_img4.png)
-
-
-
+Hiding Ticks
+{:.caption}

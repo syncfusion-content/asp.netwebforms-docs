@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range-Types
+title: Range Types | RangeNavigator | ASP.NET | Syncfusion
 description: range types
 platform: aspnet
 control: RangeNavigator
@@ -15,47 +15,45 @@ RangeNavigator control is designed to visualize large number of data and navigat
 * DateTime
 
 ## Numeric Type
+
 RangeNavigator is also used with numeric data and the ValueType for this data is “numeric” 
 
 {% highlight html %}
-
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" ValueType="numeric">
 
 <%--Code --%>
 
 <%--Code --%>
 
- </ej:RangeNavigator>
+</ej:RangeNavigator>
 
- {% endhighlight %}
+{% endhighlight %}
 
 The following screenshot displays the RangeNavigator with numeric data.
 
-
-
 ![](Range-Types_images/Range-Types_img1.png)
 
-
+RangeNavigator with numeric data.
+{:.caption}
 
 ## DateTime
 
 By default the ValueType of the RangeNavigator is “datetime” and represents the DateTime values. 
 
 {% highlight html %}
-
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" ValueType="datetime">
 
 <%--Code --%>
 
 <%--Code --%>
 
- </ej:RangeNavigator>
-
+</ej:RangeNavigator>
 {% endhighlight %}
 
 ![](Range-Types_images/Range-Types_img2.png) 
 
-
+RangeNavigator with DateTime values
+{:.caption}
 
 ### DateTime Intervals
 
@@ -69,9 +67,7 @@ The DateTime range type contains an IntervalType property that sets the DateTime
 * Hours
 * By default IntervalType for higher level labels are Years and for lower level labels its Quarters.
 
-
 {% highlight html %}
-
 <ej:RangeNavigator ID="RangeNavigator1" runat="server">
 
          <LabelSettings>
@@ -82,15 +78,12 @@ The DateTime range type contains an IntervalType property that sets the DateTime
 
          </LabelSettings>
 
-  <%--Code --%>
+<%--Code --%>
 
- </ej:RangeNavigator>
-
-
+</ej:RangeNavigator>
 {% endhighlight %}
-
 
 ![](Range-Types_images/Range-Types_img3.png)
 
-
-
+Date Time property
+{:.caption}

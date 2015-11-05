@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Angular Binding | OLAPChart | ASP.NET Webforms | Syncfusion
+title: Angular Binding | OLAPClient | ASP.NET | Syncfusion
 description: angular binding
 platform: aspnet
-control: OLAP Client
+control: OLAPClient
 documentation: ug
 ---
 

@@ -26,7 +26,7 @@ To use the Gallery feature, include the following properties under tabgroups.
 
   <ej:Ribbon ID="Ribbon1" runat="server" Width="800">
 
-        <ApplicationTab ItemID="ribbonmenu" Type="ApplicationMenu">
+        <ApplicationTab MenuItemID="ribbonmenu" Type="Menu">
 
         </ApplicationTab>
 

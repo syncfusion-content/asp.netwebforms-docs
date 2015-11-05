@@ -13,7 +13,7 @@ documentation: ug
 
 Essential ASP.NET Split Button control contains built-in features such as Click and different display options. You can create the Split Button control by using HTML helper as follows.
 
-You can create a WEB Project and add necessary assemblies, styles and scripts to it.  Refer to [ASP-Getting Started.](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc)
+You can create a WEB Project and add necessary assemblies, styles and scripts to it.  Refer to [ASP-Getting Started.](http://help.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc)
 
 Create an ASPX file and add the following code example to ASPX file for ejSplitButton creation.
 

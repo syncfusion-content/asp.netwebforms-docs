@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Report-Parameters
+title: Report Parameters | ReportViewer | ASP.NET | Syncfusion
 description: report parameters
 platform: aspnet
 control: ReportViewer
@@ -13,58 +13,73 @@ The ReportViewer has support to add report parameters to ReportViewer at runtime
 
 The following code example illustrates how to add ReportParameter at control creation.
 
+{% tabs %}
+
 {% highlight html %}
+<ej:ReportViewer ID="viewer" runat="server" ReportServiceUrl="/api/RDLReport" ReportPath="InvoiceTemplate.rdl" ProcessingMode="Remote">
 
-        <ej:ReportViewer ID="viewer" runat="server" ReportServiceUrl="/api/RDLReport" ReportPath="InvoiceTemplate.rdl" ProcessingMode="Remote">
-
-        </ej:ReportViewer>
+</ej:ReportViewer>
 
 {% endhighlight %}
 
 {% highlight c# %}
-
 protected void Page_Load(object sender, EventArgs e)
 
-        {
+{
 
-            viewer.Parameters = new List<ReportParameter>();
+	viewer.Parameters = new List < ReportParameter > ();
 
-            viewer.Parameters.Add(new ReportParameter() { Name = "InvoiceID", Labels = new List<string>() { "InvoiceID" }, Values = new List<string>() { "10250" } });
+	viewer.Parameters.Add(new ReportParameter() {
+	
+		Name = "InvoiceID", Labels = new List < string > () {
+		
+			"InvoiceID"
+			
+		}, Values = new List < string > () {
+		
+			"10250"
+		}
+	});
 
-        }
-
+}
 {% endhighlight %}
+
+{% endtabs %}
 
 The following code example illustrates how to add ReportParameter in Web API.
 
 {% highlight c# %}
+public class ReportsController: ApiController,IReportController
 
-public class ReportsController : ApiController, IReportController
+{
 
-    {
+	/// <summary>
 
-        /// <summary>
+	/// Report Initialization method that is triggered when report begins to be processed.
 
-        /// Report Initialization method that is triggered when report begins to be processed.
+	/// </summary>
 
-        /// </summary>
+	/// <param name="reportOptions">The ReportViewer options.</param>
 
-        /// <param name="reportOptions">The ReportViewer options.</param>
+	public void OnInitReportOptions(ReportViewerOptions reportOptions)
 
-        public void OnInitReportOptions(ReportViewerOptions reportOptions)
+	{
 
-        {
+		List < ReportParameter > parameters = new List < ReportParameter > ();
 
-            List<ReportParameter> parameters = new List<ReportParameter>();
+		parameters.Add(new ReportParameter() {
+			Name = "InvoiceID", Labels = new List < string > () {
+				"InvoiceID"
+			}, Values = new List < string > () {
+				"10250"
+			}
+		});
 
-            parameters.Add(new ReportParameter() { Name = "InvoiceID", Labels = new List<string>() { "InvoiceID" }, Values = new List<string>() { "10250" } });
+		reportOptions.ReportModel.Parameters = parameters;
 
-            reportOptions.ReportModel.Parameters = parameters;
+		throw new NotImplementedException();
 
-            throw new NotImplementedException();
+	}
 
-        }        
-
-    }
-
+}
 {% endhighlight %}

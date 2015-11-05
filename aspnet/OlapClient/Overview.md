@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | OLAPClient | ASP.NET Webforms | Syncfusion
+title: OLAPClient | OLAPClient | ASP.NET | Syncfusion
 description: overview
 platform: aspnet
-control: OLAP Client
+control: OLAPClient
 documentation: ug
 ---
 
-# Overview
+# OLAPClient
 
 The OLAP Client control for ASP.NET provides support to browse multidimensional data that is organized in the form of dimensions, 
 measures, named sets, and KPIs (key performance indicators) in a cubic format. You can visualize the results in graphical and 

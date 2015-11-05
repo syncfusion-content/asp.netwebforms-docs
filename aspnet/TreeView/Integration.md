@@ -15,7 +15,7 @@ AngularJS is a JavaScript framework. It is added to an HTML page with a &lt;scri
 
 Angular binding uses directives to plug its action into the page. Directives, all prefaced with ng-, are placed in HTML attributes. To know more about Angular binding refer to the following link,
 
-<http://docs.syncfusion.com/js/angularjs>
+<http://help.syncfusion.com/js/angularjs>
 
 Apply the plugin and property assigning the TreeView element through the directive that starts with the letter “e-“. The following example depicts how to bind data to the TreeView control through Angular support.
 
@@ -117,7 +117,7 @@ KnockoutJS is a JavaScript library that allows you to bind HTML elements against
 
 It uses a Model-View-ViewModel (MVVM) design pattern, where the Model is your stored data, View is the visual representation of that data (UI) and ViewModel acts as the intermediary between the Model and the View. For more information about the Knockout binding, refer to the online documentation in the following link,
 
-<http://docs.syncfusion.com/js/knockoutjs>
+<http://help.syncfusion.com/js/knockoutjs>
 
 When using KO, the view page is simply an HTML document with declarative bindings and you can link it to the ViewModel. ViewModel is nothing but an object, holding a list of items for creating the TreeView control by using Knockout binding.
 

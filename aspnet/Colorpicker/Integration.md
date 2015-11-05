@@ -24,7 +24,7 @@ Apply the plugin and property assigning to the ColorPicker control element throu
 
 To know more about the Angular binding, you can refer to the online documentation in the following link location,
 
-[http://docs.syncfusion.com/ug/js/documents/angularjs.htm](http://docs.syncfusion.com/js/angularjs)
+<http://help.syncfusion.com/js/angularjs>
 
 The following code example explains how to bind data to the ColorPicker control through angular support.
 
@@ -149,7 +149,7 @@ Two-way binding supports both the processes. It applies the observable values to
 
 For more information about Knockout binding, you can refer to the online documentation in the following link location,
 
-[http://docs.syncfusion.com/ug/js/documents/knockoutjs.htm](http://docs.syncfusion.com/js/knockoutjs)
+<http://help.syncfusion.com/js/knockoutjs>
 
 The following code example explains how you can bind data to the ColorPicker control through knockout support that enables and populates data to a ColorPicker control based on the value set to the other ColorPicker control.
 

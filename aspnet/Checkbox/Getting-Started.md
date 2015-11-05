@@ -25,7 +25,7 @@ In the above screenshot, you can select Hobbies, Interests list and Social netwo
 
 ASP.NET Checkbox widget has built-in features like intermediate selections. You can create the Checkbox widget by using an input Checkbox element as follows.
 
-You can create an ASP.NET Project and add necessary assemblies, styles and scripts with the help of the given [ASP.NET-Getting Started](http://docs.syncfusion.com/aspnet/checkbox/getting-started) Documentation.
+You can create an ASP.NET Project and add necessary assemblies, styles and scripts with the help of the given [ASP.NET-Getting Started](http://help.syncfusion.com/aspnet/checkbox/getting-started) Documentation.
 
 Create an ASPX file and add ejCheckBox element to render the Checkbox.
 

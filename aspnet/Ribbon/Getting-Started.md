@@ -41,7 +41,7 @@ Application menu support has been provided in the ribbon control ApplicationTab.
 
 <ej:Ribbon ID="defaultRibbon" runat="server" Width="100%">
 
-            <ApplicationTab ItemID="menu" Type="ApplicationMenu">
+            <ApplicationTab MenuItemID="menu" Type="Menu">
 
                 <MenuSettings OpenOnClick="false"></MenuSettings>
 
@@ -119,7 +119,7 @@ You can add contextual tabs in the Ribbon control. Inside ContextualTabs tag use
 
      <ej:Ribbon ID="defaultRibbon" runat="server" Width="100%">
 
-        <ApplicationTab ItemID="menu" Type="ApplicationMenu">
+        <ApplicationTab MenuItemID="menu" Type="Menu">
 
            <MenuSettings OpenOnClick="false"></MenuSettings>
 
@@ -235,7 +235,7 @@ Tabs can be created by using RibbonTab property. In RibbonTab, define the TabGr
 
  <ej:Ribbon ID="defaultRibbon" runat="server" Width="500px">
 
-   <ApplicationTab ItemID="menu" Type="ApplicationMenu">
+   <ApplicationTab MenuItemID="menu" Type="Menu">
 
      <MenuSettings OpenOnClick="false"></MenuSettings>
 
@@ -493,7 +493,7 @@ The following screenshot illustrates Ribbon with Tab Group Collections.
 
 		     <ej:Ribbon ID="defaultRibbon" runat="server" Width="100%">
 
-		        <ApplicationTab ItemID="menu" Type="ApplicationMenu">
+		        <ApplicationTab MenuItemID="menu" Type="Menu">
 
 		           <MenuSettings OpenOnClick="false"></MenuSettings>
 
@@ -597,7 +597,7 @@ Add controls to each Ribbon tab by using the tag ContentCollection. You can also
 
      <ej:Ribbon ID="defaultRibbon" runat="server" Width="500px">
 
-     <ApplicationTab ItemID="menu" Type="ApplicationMenu">
+     <ApplicationTab MenuItemID="menu" Type="Menu">
 
      <MenuSettings OpenOnClick="false"></MenuSettings>
 
@@ -819,7 +819,7 @@ The control Separator support is provided in the Ribbon control. Set EnableSepar
 
  <ej:Ribbon ID="defaultRibbon" runat="server" Width="500px">
 
-   <ApplicationTab ItemID="menu" Type="ApplicationMenu">
+   <ApplicationTab MenuItemID="menu" Type="Menu">
 
      <MenuSettings OpenOnClick="false"></MenuSettings>
 

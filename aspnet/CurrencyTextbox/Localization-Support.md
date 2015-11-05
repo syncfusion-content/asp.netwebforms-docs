@@ -13,7 +13,7 @@ Localization is the language support based on the culture. You can achieve the
 
 The CurrencyTextbox control provides multi-language support by using globalization. You can customize the CurrencyTextbox in your own language by using this feature. You can change the localization by using the Locale property. The default value for Locale property is en-US.
 
-In order to enable [localization](http://docs.syncfusion.com/aspnetmvc/currencytextbox/localization-support) refer to the following scripts: globalize.cultures.js and globalize.js. The “globalize.cultures.js” includes different language support for JavaScript controls and the “globalize.js” is a simple JavaScript library that allows you to format the value based on the specified culture.
+In order to enable [localization](http://help.syncfusion.com/aspnetmvc/currencytextbox/localization-support) refer to the following scripts: globalize.cultures.js and globalize.js. The “globalize.cultures.js” includes different language support for JavaScript controls and the “globalize.js” is a simple JavaScript library that allows you to format the value based on the specified culture.
 
 You can refer to the following online link reference for globalize.js:
 

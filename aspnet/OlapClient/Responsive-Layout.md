@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Responsive Layout | OLAPClient | ASP.NET Webforms | Syncfusion
+title: Responsive Layout | OLAPClient | ASP.NET | Syncfusion
 description: responsive layout
 platform: aspnet
-control: OLAP Client
+control: OLAPClient
 documentation: ug
 ---
 
@@ -34,13 +34,21 @@ Client control in all devices including desktops, tablets, mobiles, etc.
 
 </script>
 
-
 {% endhighlight %}
 
 ![](Responsive-Layout_images/Responsive-Layout_img1.png) 
 
 ![](Responsive-Layout_images/Responsive-Layout_img2.png) 
 
+Normal View
+{:.caption}
+
 ![](Responsive-Layout_images/Responsive-Layout_img3.png) 
 
+Responsive View
+{:.caption}
+
 ![](Responsive-Layout_images/Responsive-Layout_img4.png) 
+
+Responsive View
+{:.caption}

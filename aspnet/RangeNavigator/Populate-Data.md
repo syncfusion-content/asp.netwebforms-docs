@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Populate-Data
+title: Populate Data | RangeNavigator | ASP.NET | Syncfusion
 description: populate data
 platform: aspnet
 control: RangeNavigator
@@ -15,8 +15,9 @@ When you provide data to RangeNavigator, it produces limited set of data. You ca
 
 The Series property provides access to a collection of all series that are defined explicitly within a RangeNavigator control. Each series is assigned with type and name. It contains collection of data point, each point contains x value and y values. You can add data points to the series through DataSource property.
 
-{% highlight html %}
+{% tabs %}
 
+{% highlight html %}
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideLoad="loadingdata">
 
          <Series>
@@ -25,17 +26,15 @@ The Series property provides access to a collection of all series that are defin
 
          </Series>
 
-  <%--Code --%>
+<%--Code --%>
 
 </ej:RangeNavigator>
-
 {% endhighlight %}
 
 {% highlight js %}
-
 <script type="text/javascript">
 
-  function loadingdata(sender) {
+function loadingdata(sender) {
 
                  data = GetData();
 
@@ -91,13 +90,14 @@ function GetData() {
 
         }
 
-      </script>         
+</script>         
+{% endhighlight %}
 
-	  {% endhighlight %}
+{% endtabs %}
 
 The following screenshot illustrates the RangeNavigator that is populated with data using DataSource property in series.
 
 ![](Populate-Data_images/Populate-Data_img1.png)
 
-
-
+RangeNavigator that is populated with data using dataSource property in series
+{:.caption}

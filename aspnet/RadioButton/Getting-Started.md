@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | RadioButton | ASP.NET | Syncfusion
 description: getting started
 platform: aspnet
-control: Radio Button
+control: RadioButton
 documentation: ug
 ---
 
@@ -29,14 +29,11 @@ scenarios. This allows you to select the corresponding choice for each question.
 
 By using the following steps, you can create a Radio Button control.
 
-You can create an ASP.NET Project and add necessary Dll and script with the help of the given [WebForms-Getting Started](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc) Documentation.
+You can create an ASP.NET Project and add necessary Dll and script with the help of the given [WebForms-Getting Started](http://help.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc) Documentation.
 
 Add the following code to render Radio Button.
 
-
-
 {% highlight html %}
-
 <div>
 
     1. What is the Expansion for MVC ?
@@ -208,15 +205,11 @@ Add the following code to render Radio Button.
         Submit</button>
 
 </div>
-
-
-
 {% endhighlight %}
 
-### Configure Style
+## Configure Style
 
 Add the following styles.
-
 {% highlight css %}
 
 <style type="text/css">
@@ -242,22 +235,13 @@ Add the following styles.
     }
 
 </style>
-
-
-
 {% endhighlight %}
 
-
-
 ![](Getting-Started_images/Getting-Started_img2.png) 
-
-
 
 ## Create RegistrationApp
 
 ![](Getting-Started_images/Getting-Started_img3.png) 
-
-
 
 In this section, you can learn how to create a RegistrationApp scenario as shown in the above screenshot.
 
@@ -430,9 +414,6 @@ Add the following code to render the Radio Button. 
     </div>
 
 </div>
-
-
-
 {% endhighlight %}
 
 ## Add Script
@@ -443,7 +424,7 @@ Add the following ClientSide event for submit button to get the selected items.�
 
 <script type="text/javascript">
 
-        function buttonClicked() {
+function buttonClicked() {
 
             var checkeditem = "";
 
@@ -463,18 +444,14 @@ Add the following ClientSide event for submit button to get the selected items.�
 
         }
 
-    </script>
-
-
-
+</script>
 {% endhighlight %}
 
 ## Configure Style
 
- Add the following styles. 
+Add the following styles. 
 
 {% highlight css %}
-
 <style type="text/css">
 
     .frame
@@ -486,18 +463,8 @@ Add the following ClientSide event for submit button to get the selected items.�
     }
 
 </style>
-
-
-
 {% endhighlight %}
-
-
 
 ![](Getting-Started_images/Getting-Started_img4.png) 
 
-
-
 ![](Getting-Started_images/Getting-Started_img5.png) 
-
-
-

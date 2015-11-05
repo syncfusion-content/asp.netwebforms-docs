@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | OLAPGauge | ASP.NET Webforms | Syncfusion
+title: OLAPGauge | OLAPGauge | ASP.NET | Syncfusion
 description: overview
 platform: aspnet
-control: OLAP Gauge
+control: OLAPGauge
 documentation: ug
 ---
 
-# Overview
+# OLAPGauge
 
 The OLAP Gauge control for ASP.NET is ideal for highlighting business critical Key Performance Indicator (KPI) information in executive dashboards and report cards. Gauges allow you to present values against goals in a very intuitive manner. Built-in data binding support allows you to easily bind a gauge to a KPI result from your OLAP database. The Gauge control comes with sophisticated customization support that provides endless possibility for control customization. 
 

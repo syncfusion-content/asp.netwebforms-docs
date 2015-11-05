@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Responsive Layout | OLAPGauge | ASP.NET Webforms | Syncfusion
+title: Responsive Layout | OLAPGauge | ASP.NET | Syncfusion
 description: responsive layout
 platform: aspnet
-control: OLAP Gauge
+control: OLAPGauge
 documentation: ug
 ---
 
@@ -12,13 +12,8 @@ documentation: ug
 Responsive layout is aimed at crafting sites to provide an optimal viewing experience - easy reading. It also provides navigation with a minimum of resizing, panning, and scrolling  across a wide range of devices from tablet to desktop. To get responsive layout for OLAP Gauge, enable IsResponsive API to true. By using this feature, you can achieve an effective view of the OLAP Gauge control in all devices including desktops, tablets, mobiles, etc. 
 
 
-
-
 {% highlight html %}
-
 <%@ Register Assembly="Syncfusion.EJ.Olap" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
-
-
 
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" IsResponsive="true" EnableTooltip="true" BackgroundColor="transparent">
 
@@ -93,17 +88,15 @@ Responsive layout is aimed at crafting sites to provide an optimal viewing exper
         </Scales>
 
 </ej:OlapGauge>
-
 {% endhighlight %}
 
 
 ![](Responsive-Layout_images/Responsive-Layout_img1.png) 
 
-
+Normal View
+{:.caption}
 
 ![](Responsive-Layout_images/Responsive-Layout_img2.png) 
 
-
-
-
-
+Responsive View
+{:.caption}

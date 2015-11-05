@@ -26,7 +26,7 @@ Open the Culture script file, included in your project.
 
 Replace existing calendar locale information by your own culture information or to your customized format.
 
-Refer to this section for more details: [localization](http://docs.syncfusion.com/aspnetmvc/datetimepicker/localization)
+Refer to this section for more details: [localization](http://help.syncfusion.com/aspnetmvc/datetimepicker/localization)
 
 For example, to change month names to your culture month, just replace month names with your culture month names or your customized format.
 

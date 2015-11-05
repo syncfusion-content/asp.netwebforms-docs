@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server-side-events
+title: Server side events | Rating | ASP.NET | Syncfusion
 description: server-side events
 platform: aspnet
 control: Rating
@@ -28,10 +28,9 @@ The following step explains you how to define server side event for Rating contr
 
 In an ASPX page, define the Rating control. 
 
+{% tabs %}
+
 {% highlight html %}
-
-
-
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
 
     <table>
@@ -53,19 +52,9 @@ In an ASPX page, define the Rating control.
     </table>
 
 </ div >
-
-
-
-
-
 {% endhighlight %}
 
-
-
 {% highlight c# %}
-
-
-
 protected void Rating1_Change(object sender, Syncfusion.JavaScript.Web.RatingEventArgs e)
 
         {         
@@ -73,10 +62,6 @@ protected void Rating1_Change(object sender, Syncfusion.JavaScript.Web.RatingEve
             //e.Value -returns the value of the Rating 
 
         }
-
-
-
 {% endhighlight %}
 
-
-
+{% endtabs %}

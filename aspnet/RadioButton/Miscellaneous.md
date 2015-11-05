@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Miscellaneous
+title: Miscellaneous | RadioButton | ASP.NET | Syncfusion
 description: miscellaneous
 platform: aspnet
-control: Radio Button
+control: RadioButton
 documentation: ug
 ---
 
@@ -16,7 +16,6 @@ Radio Button ID is not shown in the user interface. Here ID denotes the ID attri
 Set ID for RadioButton control as follows.
 
 {% highlight html %}
-
 <%--set new id value as follows--%>
 
 <ej:RadioButton Name="Gender" ID="RadBtn_Male" runat="server" Size="Small" Text="Male">
@@ -28,24 +27,20 @@ Set ID for RadioButton control as follows.
 <ej:RadioButton Name="Gender" ID="RadBtm_female" runat="server" Size="Small" Text="Female">
 
 </ej:RadioButton>
-
-
-
 {% endhighlight %}
 
-## Radio Button Prefix id
+### Radio Button Prefix id
 
 Id prefix value is appended to id value. It is used to mention the prefix for the wrapper’s id attribute. When you assign a value for IdPrefix property, the older prefix id gets replaced by the new prefix id. 
 
 Setting a new prefix id for RadioButton control is as follows.
 
 {% highlight html %}
-
 <%--set new idPrefix   value as follows--%>
 
 <ej:RadioButton Name="Gender" ID="RadBtn_Male" IdPrefix="sync_" runat="server" Size="Small"
 
-    Text="Male">
+Text="Male">
 
 </ej:RadioButton>
 
@@ -53,12 +48,9 @@ Setting a new prefix id for RadioButton control is as follows.
 
 <ej:RadioButton Name="Gender" ID="RadBtm_female" IdPrefix="sync_" runat="server"
 
-    Size="Small" Text="Female">
+Size="Small" Text="Female">
 
 </ej:RadioButton>
-
-
-
 {% endhighlight %}
 
 ## Radio Button Name
@@ -67,7 +59,7 @@ The Name setting tells you where a RadioButton belongs. When you select one bu
 
 The Name attribute is also used to identify form data after it has been submitted to the server, or for reference of form data using JavaScript on the client’s side. Only form elements with a Name attribute have their values passed, when submitting a form.
 
-## Radio Button Value
+### Radio Button Value
 
 The Value setting defines what can be submitted when checked.
 
@@ -78,7 +70,6 @@ To identify, on the server side, which one was checked, give different values fo
 Set name and value for each radio button control as follows.
 
 {% highlight html %}
-
 <%--set name and value for each radio button as follows--%>
 
 <ej:RadioButton ID="RadBtn_Male" runat="server" Size="Small" Text="Male" Name="Gender"
@@ -91,14 +82,9 @@ Value="male">
 
 <ej:RadioButton ID="RadBtm_female" runat="server" Size="Small" Text="Female" Name="Gender"
 
-    Value="female">
+Value="female">
 
 </ej:RadioButton>
-
-
-
-
-
 {% endhighlight %}
 
 ## Server Side Events
@@ -120,7 +106,6 @@ Event Argument contains parameters aree.IsChecked – Status of Radiobutton.e.Ev
 In the ASPX page, add the Checkbox control to configure Radiobutton events.
 
 {% highlight html %}
-
 <%--Add serverside event for Radio Button control as follows--%>
 
 <ej:RadioButton ID="RadBtn_Male" runat="server" Text="Male" Name="Gender" Value="male"
@@ -134,9 +119,6 @@ OnChange="RadBtn_Male_Change">
 <ej:RadioButton ID="RadBtm_female" runat="server" Text="Female" Name="Gender" Value="female">
 
 </ej:RadioButton>
-
-
-
 {% endhighlight %}
 
 The code Define RadBtn_Male_Change server side event in behind
@@ -145,17 +127,11 @@ The code Define RadBtn_Male_Change server side event in behind
 
 protected void RadBtn_Male_Change(object Sender, Syncfusion.JavaScript.Web.RadioButtonEventArgs e){
 
- //e.IsChecked – Status of Radiobutton
+//e.IsChecked – Status of Radiobutton
 
- //e.EventType – Event Name
+//e.EventType – Event Name
 
- //e.Arguments – Contain keys and values for IsChecked
+//e.Arguments – Contain keys and values for IsChecked
 
 }
-
-
-
 {% endhighlight %}
-
-
-

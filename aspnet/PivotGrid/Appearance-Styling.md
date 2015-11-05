@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance--Styling
+title: Appearance Styling | PivotGrid | ASP.NET | Syncfusion
 description: appearance & styling
 platform: aspnet
 control: PivotGrid
@@ -11,14 +11,11 @@ documentation: ug
 
 The PivotGrid control customizes its appearance using user-defined CSS. The custom CSS is applied to the control by referring the custom theme CSS next to ej.widgets.all.min.css in the view page.
 
-
-
 You can refer to custom CSS in Layout.Master page under shared folder.
 
+{% tabs %}
+
 {% highlight html %}
-
-
-
 <head>
 
     <link href="Content/ej/ej.widgets.core.min.css" rel="stylesheet" />
@@ -28,11 +25,9 @@ You can refer to custom CSS in Layout.Master page under shared folder.
     <link href="/Content/Custom-theme/ej.customtheme.css" rel="stylesheet" />
 
 </head>
-
 {% endhighlight %}
 
 {% highlight css %}
-
 /*-----------------------For PivotGrid control definition-----------------*/
 
 .e-pivotgrid table {
@@ -48,8 +43,6 @@ You can refer to custom CSS in Layout.Master page under shared folder.
   cursor: default;
 
 }
-
-
 
 .e-pivotgrid .tooltipText {
 
@@ -92,8 +85,6 @@ You can refer to custom CSS in Layout.Master page under shared folder.
   margin-bottom: 200px;
 
 }
-
-
 
 .e-pivotgrid th,
 
@@ -587,8 +578,6 @@ You can refer to custom CSS in Layout.Master page under shared folder.
 
   /* margin-top: 3px; */
 
-
-
 }
 
 .e-pivotschemadesigner .schemaColumn,
@@ -988,8 +977,11 @@ You can refer to custom CSS in Layout.Master page under shared folder.
   padding: 0 6px 6px;
 
 }
-
 {% endhighlight %}
 
+{% endtabs %}
 
-![](Appearance--Styling_images/Appearance--Styling_img1.png)
+![](Appearance-Styling_images/Appearance-Styling_img1.png)
+
+PivotGrid with Custom Theme
+{:.caption}

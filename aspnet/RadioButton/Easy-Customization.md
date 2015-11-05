@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Easy-Customization
+title: Easy Customization | RadioButton | ASP.NET | Syncfusion
 description: easy customization
 platform: aspnet
-control: Radio Button
+control: RadioButton
 documentation: ug
 ---
 
@@ -18,10 +18,9 @@ The following steps explain the details about rendering the Radio Button with th
 In the ASPX page, add the following input elements to configure Radio Button.
 
 {% highlight html %}
-
 <%--Here checked and unchecked type of radio buttons are rendered in same group
 
-    set checked state of radio button as follows--%>
+set checked state of radio button as follows--%>
 
 <ej:RadioButton Name="Gender" ID="Radio_checked" runat="server" Size="Small" Checked="true">
 
@@ -29,7 +28,7 @@ In the ASPX page, add the following input elements to configure Radio Button.
 
 <label for="Radio_checked" class="clslab">
 
-    Male</label>
+Male</label>
 
 <br />
 
@@ -39,16 +38,12 @@ In the ASPX page, add the following input elements to configure Radio Button.
 
 <label for="Radio_unchecked" class="clslab">
 
-    Female</label>
-
-
-
+Female</label>
 {% endhighlight %}
 
-### Configure the CSS styles to align the radio buttons.
+Configure the CSS styles to align the radio buttons.
 
 {% highlight css %}
-
 <style type="text/css">
 
     .page-align
@@ -60,16 +55,9 @@ In the ASPX page, add the following input elements to configure Radio Button.
     }
 
 </style>
-
-
-
 {% endhighlight %}
 
-
-
-![C:/Users/ApoorvahR/Desktop/IMG_14102014_123941.png](Easy-Customization_images/Easy-Customization_img1.png)
-
-
+![](Easy-Customization_images/Easy-Customization_img1.png)
 
 ## Text
 
@@ -80,7 +68,6 @@ The following steps explain the details about rendering the Radio Button with Te
 In the ASPX page, add the following input elements to configure the Radio Button.
 
 {% highlight html %}
-
 <%--radio button with text property--%>
 
 <ej:RadioButton Name="Gender" ID="RadBtn_male" runat="server" Size="Small" Checked="true"
@@ -96,15 +83,11 @@ Text="Male">
 Text="Female">
 
 </ej:RadioButton>
-
-
-
 {% endhighlight %}
 
-### Configure the CSS styles to align the radio buttons.
+Configure the CSS styles to align the radio buttons.
 
 {% highlight css %}
-
 <style type="text/css">
 
     .page-align
@@ -116,16 +99,9 @@ Text="Female">
     }
 
 </style>
-
-
-
 {% endhighlight %}
 
-
-
 ![](Easy-Customization_images/Easy-Customization_img2.png)
-
-
 
 ## Size
 
@@ -146,18 +122,14 @@ Medium</td><td>
 Creates radio button with inbuilt medium size height, width specified.</td></tr>
 </table>
 
-
 The following steps explain the details about rendering Radio Button with different size options.
 
 In the ASPX page, add the following input elements to configure Radio Button.
 
-
-
 {% highlight html %}
-
 <%-- small and medium size of radio buttons in same group
 
-            By default, here no one radio button is checked--%>
+By default, here no one radio button is checked--%>
 
 Small size Radio buttons
 
@@ -169,7 +141,7 @@ Small size Radio buttons
 
 <label for="Radio_Male">
 
-    Male</label>
+Male</label>
 
 <br />
 
@@ -179,7 +151,7 @@ Small size Radio buttons
 
 <label for="Radio_Female">
 
-    Female</label>
+Female</label>
 
 <br />
 
@@ -193,7 +165,7 @@ Medium size Radio buttons
 
 <label for="Radio1_Male">
 
-    Male</label>
+Male</label>
 
 <br />
 
@@ -203,16 +175,12 @@ Medium size Radio buttons
 
 <label for="Radio1_Female">
 
-    Female</label>
-
-
-
+Female</label>
 {% endhighlight %}
 
-### Configure the CSS styles to align the radio buttons
+Configure the CSS styles to align the radio buttons
 
 {% highlight css %}
-
 <style type="text/css">
 
     .page-align
@@ -222,18 +190,10 @@ Medium size Radio buttons
         margin: 100px;
 
     }
-
 </style>
-
-
-
 {% endhighlight %}
 
-
-
 ![](Easy-Customization_images/Easy-Customization_img3.png)
-
-
 
 ## RTL Support 
 
@@ -243,10 +203,7 @@ The following steps explain the details about rendering the Radio Button with ri
 
 In the ASPX page, add the following button elements to configure Radio Button.
 
-
-
 {% highlight html %}
-
 <%--set radio button with right to left format--%>
 
 <div class="page-align">
@@ -259,7 +216,7 @@ In the ASPX page, add the following button elements to configure Radio Button.
 
                 <ej:RadioButton Name="Gender" ID="RadBtn_male" runat="server" Size="Small" Text="Male"
 
-EnableRTL="true">
+                EnableRTL="true">
 
                 </ej:RadioButton>
 
@@ -273,7 +230,7 @@ EnableRTL="true">
 
                 <ej:RadioButton Name="Gender" ID="RadBtn_female" runat="server" Size="Small" Text="Female"
 
-EnableRTL="true">
+                EnableRTL="true">
 
                 </ej:RadioButton>
 
@@ -284,19 +241,13 @@ EnableRTL="true">
     </table>
 
 </div>
-
-
-
 {% endhighlight %}
-
-
 
 In the above mentioned code, the Text property has been used. In LTR format, the RadioButton is on the left side. In RTL format, the RadioButton appears on the right side. Here the Text property is used and the EnableRTL property is set as “True”. It changes the alignment to right-to-left.
 
-### Configure the CSS styles to align the RadioButtons.
+Configure the CSS styles to align the RadioButtons.
 
 {% highlight css %}
-
 <style type="text/css">
 
     .page-align
@@ -316,14 +267,6 @@ In the above mentioned code, the Text property has been used. In LTR format, the
     }
 
 </style>
-
-
-
 {% endhighlight %}
 
-
-
 ![](Easy-Customization_images/Easy-Customization_img4.png)
-
-
-

@@ -23,7 +23,7 @@ The following screenshot illustrates the functionality of a DateTimePicker with 
 
 ### Create DateTimePicker 
 
-You can create an ASP.NET Project and add necessary Dll and script with the help of the given [ASP-Getting Started](http://docs.syncfusion.com/aspnetmvc/datetimepicker/getting-started) Documentation.
+You can create an ASP.NET Project and add necessary Dll and script with the help of the given [ASP-Getting Started](http://help.syncfusion.com/aspnetmvc/datetimepicker/getting-started) Documentation.
 
 
 

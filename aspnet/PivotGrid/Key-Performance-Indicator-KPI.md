@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Key-Performance-Indicator-KPI
+title: Key Performance Indicator KPI | PivotGrid | ASP.NET | Syncfusion
 description: key performance indicator (kpi)
 platform: aspnet
 control: PivotGrid
@@ -20,63 +20,59 @@ The different types of available indicators are as follows:
 * KPI Trend
 * KPI Value
 
+![](Key-Performance-Indicator-KPI_images/Key-Performance-Indicator-KPI_img1.jpeg) 
 
+KPI in OlapGrid
+{:.caption}
 
- ![](Key-Performance-Indicator-KPI_images/Key-Performance-Indicator-KPI_img1.jpeg) 
-
-
-
- The following code example illustrates how to initialize KPI element within the OLAP Report:
+The following code example illustrates how to initialize KPI element within the OLAP Report:
 
 {% highlight C# %}
+private OlapReport CreateOlapReport()
 
+{
 
+	OlapReport olapReport = new OlapReport();
 
-   private OlapReport CreateOlapReport()
+	olapReport.CurrentCubeName = "Adventure Works";
+	
+	DimensionElement dimensionElementColumn = new DimensionElement();
 
-        {
+	dimensionElementColumn.Name = "Product";
 
-         OlapReport olapReport = new OlapReport();
+	dimensionElementColumn.AddLevel("Product Categories", "Category");
 
-         olapReport.CurrentCubeName = "Adventure Works";
+	dimensionElementColumn.Hierarchy.LevelElements["Category"].Add("Accessories");
+	
+	dimensionElementColumn.Hierarchy.LevelElements["Category"].IncludeAvailableMembers = true;
 
+	MeasureElements measureElementColumn = new MeasureElements();
 
+	measureElementColumn.Elements.Add(new MeasureElement {
+		Name = "Gross Profit"
+	});
 
-         DimensionElement dimensionElementColumn = new DimensionElement();
+	DimensionElement dimensionElementRow = new DimensionElement();
 
-         dimensionElementColumn.Name = "Product";
+	dimensionElementRow.Name = "Date";
 
-         dimensionElementColumn.AddLevel("Product Categories", "Category");             
+	dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
 
-         dimensionElementColumn.Hierarchy.LevelElements["Category"].Add("Accessories");            dimensionElementColumn.Hierarchy.LevelElements["Category"].IncludeAvailableMembers = true;
+	KpiElements kpiElement = new KpiElements();
 
-         MeasureElements measureElementColumn = new MeasureElements();      
+	kpiElement.Elements.Add(new KpiElement {
+		Name = "Revenue", ShowKPIStatus = true, ShowKPIGoal = true, ShowKPITrend = true, ShowKPIValue = true
+	});
 
-         measureElementColumn.Elements.Add(new MeasureElement { Name = "Gross Profit" });
+	olapReport.CategoricalElements.Add(dimensionElementColumn);
 
-         DimensionElement dimensionElementRow = new DimensionElement();           
+	olapReport.CategoricalElements.Add(kpiElement);
 
-         dimensionElementRow.Name = "Date";
+	olapReport.CategoricalElements.Add(measureElementColumn);
 
-         dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
+	olapReport.SeriesElements.Add(dimensionElementRow);
 
+	return olapReport;
 
-
-         KpiElements kpiElement = new KpiElements();
-
-         kpiElement.Elements.Add(new KpiElement { Name = "Revenue", ShowKPIStatus = true, ShowKPIGoal = true, ShowKPITrend = true, ShowKPIValue = true });
-
-         olapReport.CategoricalElements.Add(dimensionElementColumn);
-
-         olapReport.CategoricalElements.Add(kpiElement);
-
-         olapReport.CategoricalElements.Add(measureElementColumn);
-
-         olapReport.SeriesElements.Add(dimensionElementRow);
-
-         return olapReport;
-
-        }
-
-
+}
 {% endhighlight %}

@@ -11,7 +11,7 @@ documentation: ug
 
 Essential Studio ASP.NET TagCloud has built-in features such as clicking on one of the sites in the TagCloud brings all relevant results only from the selected source. You can easily create the TagCloud control element as follows.
 
-You can create a WEB Project and add the required assemblies, scripts, and styles to it.  Refer to the [ASP-Getting Started.](http://docs.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc)
+You can create a WEB Project and add the required assemblies, scripts, and styles to it.  Refer to the [ASP-Getting Started.](http://help.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc)
 
 Create an ASPX file and add the following code to the file.
 

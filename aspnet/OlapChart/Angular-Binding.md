@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Angular Binding | NumericTextbox | ASP.NET Webforms | Syncfusion
+title: Angular Binding | OLAPChart | ASP.NET | Syncfusion
 description: angular binding
 platform: aspnet
-control: OLAP Chart
+control: OLAPChart
 documentation: ug
 ---
 

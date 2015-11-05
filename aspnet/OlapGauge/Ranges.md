@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Ranges | OLAPGauge | ASP.NET Webforms | Syncfusion
+title: Ranges | OLAPGauge | ASP.NET | Syncfusion
 description: ranges
 platform: aspnet
-control: OLAP Gauge
+control: OLAPGauge
 documentation: ug
 ---
 
@@ -15,11 +15,7 @@ Ranges are objects that highlight a range of values and can display different ra
 
 You can set the distance between the ranges and scales in OlapGauge using “distanceFromScale”.
 
-
-
-
 {% highlight html %}
-
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
@@ -92,19 +88,14 @@ You can set the distance between the ranges and scales in OlapGauge using “dis
 
         </Scales>
 
-    </ej:OlapGauge>
-
+</ej:OlapGauge>
 {% endhighlight  %}
 
 ## Style Customization 
 
 You can set the background color for the ranges in OlapGauge using “backgroundColor”.
 
-
-
-
 {% highlight html %}
-
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
@@ -139,7 +130,7 @@ You can set the background color for the ranges in OlapGauge using “background
 
                     <ej:CircularRanges DistanceFromScale="-10" BackgroundColor="black">
 
-<Border Color="red"/></ej:CircularRanges>
+                       <Border Color="red"/></ej:CircularRanges>
 
                     <ej:CircularRanges DistanceFromScale="-10"></ej:CircularRanges>
 
@@ -177,24 +168,19 @@ You can set the background color for the ranges in OlapGauge using “background
 
         </Scales>
 
-    </ej:OlapGauge>
-
+</ej:OlapGauge>
 {% endhighlight  %}
 
+![](Ranges_images/Ranges_img1.png)
 
-![I:/OlapGuage/Gauge/ranges.-color.png](Ranges_images/Ranges_img1.png)
-
-
+Range style customization
+{:.caption}
 
 ## Size Setting
 
 You can customize the Rangesize using “size” property.
 
-
-
-
 {% highlight html %}
-
 <ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
         <Scales>
@@ -267,12 +253,12 @@ You can customize the Rangesize using “size” property.
 
         </Scales>
 
-    </ej:OlapGauge>
-
+</ej:OlapGauge>
 {% endhighlight %}
 
 
-![I:/OlapGuage/Gauge/Range size.png](Ranges_images/Ranges_img2.png)
+![](Ranges_images/Ranges_img2.png)
 
-
+Range Size Setting
+{:.caption}
 

@@ -56,7 +56,7 @@ In this tutorial, you will learn how to create a simple Gantt chart, add tasks a
 Simple Gantt chart
 {:.caption}
 
-1. First create a new ASP.NET Web Form project ; please refer the [ASP-Getting Started documentation](http://docs.syncfusion.com/aspnetmvc/gantt/getting-started) to create new project and add necessary DLL’s and script files.
+1. First create a new ASP.NET Web Form project ; please refer the [ASP-Getting Started documentation](http://help.syncfusion.com/aspnetmvc/gantt/getting-started) to create new project and add necessary DLL’s and script files.
 2. Create the web form  named as default and add the following template
 
    ~~~ html

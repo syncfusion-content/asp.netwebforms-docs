@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Define-value
+title: Define value | ProgressBar | ASP.NET | Syncfusion
 description: define value
 platform: aspnet
 control: ProgressBar
@@ -18,19 +18,11 @@ The following steps explain how to set the value for the ProgressBar control.
 Add the following code in the ASPX page in order to render the ProgressBar control.
 
 {% highlight html %}
-
-
-
 <ej:ProgressBar ID="progressbar" runat="server" Text="60" Value="60" MinValue="40" MaxValue="80" Height="20" Width="500" ></ej:ProgressBar>
-
-
-
 {% endhighlight %}
 
 The following screenshot displays the Assigning value to ProgressBar.            
 ![](Define-value_images/Define-value_img1.png)
-
-
 
 ## Percentage
 
@@ -41,22 +33,10 @@ The following steps explain how to set the value in percentage.
 Add the following code example to the ASPX page to render the Progress bar control with Percentage.
 
 {% highlight html %}
-
-
-
 <ej:ProgressBar ID="progressbar" runat="server" Percentage="64" MinValue="40" MaxValue="80" Text="64 %" Height="20" Width="500"> </ej:ProgressBar>
-
-
-
-
-
 {% endhighlight %}
 
-
-
 The following screenshot displays the Progress bar with Percentage.
-
-
 
 ![](Define-value_images/Define-value_img2.png) 
 
@@ -71,24 +51,12 @@ The following steps explain the configuration of the range for the ProgressBar c
 Add the following code example in the ASPX page to render Minimum and Maximum values.
 
 {% highlight html %}
-
-
-
 <ej:ProgressBar ID="progressbar" runat="server" Value="100" Text="100 %" MinValue="40" MaxValue="100" Height="20" Width="500" ></ej:ProgressBar>
-
-
-
-
-
-
-
 {% endhighlight %}
 
 The following screenshot displays the Minimum and Maximum values. 
 
 ![](Define-value_images/Define-value_img3.png)
-
-
 
 ### Appearance and Styling
 
@@ -99,24 +67,12 @@ ProgressBar control provides ability to change/adjust the bar size. The Height a
 Add the following code example to the ASPX page.
 
 {% highlight html %}
-
-
-
 <ej:ProgressBar ID="progressbar" runat="server" Value="40" Text="40 %" Height="40" Width="400" ></ej:ProgressBar>
-
-
-
-
-
 {% endhighlight %}
-
-
 
 The following screenshot displays the maximum height and maximum width.                         
 
 ![](Define-value_images/Define-value_img4.png)
-
-
 
 ## Custom text
 
@@ -127,20 +83,12 @@ The following steps explain the configuration of the custom text in the Progress
 Add the following code example in the ASPX page.
 
 {% highlight html %}
-
-
-
- <ej:ProgressBar ID="progressbar" runat="server"  Text="loading" Value="40"  Height="20" Width="500" ></ej:ProgressBar>
-
-
-
+<ej:ProgressBar ID="progressbar" runat="server"  Text="loading" Value="40"  Height="20" Width="500" ></ej:ProgressBar>
 {% endhighlight %}
 
 The following screenshot displays the custom text.
 
 ![](Define-value_images/Define-value_img5.png) 
-
-
 
 ## Theme
 
@@ -170,36 +118,17 @@ To apply custom styles to the ProgressBar control, specify the CssClass property
 Add the following code example to the corresponding ASPX page to render ProgressBar control with customized style.
 
 {% highlight html %}
-
-
-
 <ej:ProgressBar ID="progressbar" runat="server" Value="70" Text="70 %"   Height="20" Width="500" CssClass="custom" ></ej:ProgressBar>
-
-
-
-
-
 {% endhighlight %}
-
-
 
 {% highlight css %}
+.custom .e-progress{
 
-     .custom .e-progress{
-
-          background: gray;
+    background: gray;
 
 }
-
-
-
 {% endhighlight %}
-
-
 
 The following screenshot displays the customized style.
 
 ![](Define-value_images/Define-value_img6.png) 
-
-
-

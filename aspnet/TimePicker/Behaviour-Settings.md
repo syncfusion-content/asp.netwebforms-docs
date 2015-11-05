@@ -93,7 +93,7 @@ The following screenshot illustrates aTimePicker textbox configured to restrict 
 
 Localization is a language support based on the culture in the TimePicker. You can achieve Localization by using Locale property in the TimePicker.
 
-In order to enable [localization](http://docs.syncfusion.com/js), refer to the following scripts: globalize.cultures.js and globalize.js. The “globalize.cultures.js” includes different language support for JavaScript controls and the “globalize.js” is a simple JavaScript library that allows you to format dates based on the specified culture.
+In order to enable [localization](http://help.syncfusion.com/js), refer to the following scripts: globalize.cultures.js and globalize.js. The “globalize.cultures.js” includes different language support for JavaScript controls and the “globalize.js” is a simple JavaScript library that allows you to format dates based on the specified culture.
 
 You can refer to the following online link reference for globalize.js,
 
