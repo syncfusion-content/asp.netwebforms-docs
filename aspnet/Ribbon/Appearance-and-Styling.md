@@ -21,7 +21,7 @@ Specifies the index of the Ribbon tab to select the given index tab item in the 
 
 <ej:Ribbon ID="Defaultribbon" runat="server" Width="800px">
 
-<ApplicationTab ItemID="menu" Type="ApplicationMenu">
+<ApplicationTab MenuItemID="menu" Type="Menu">
 
 <MenuSettings OpenOnClick="false"></MenuSettings>
 
@@ -156,7 +156,7 @@ Specifies the index or indexes to disable the corresponding tabs in the Ribbon c
 
 <ej:Ribbon ID="Defaultribbon" runat="server" Width="800px">
 
-<ApplicationTab ItemID="menu" Type="ApplicationMenu">
+<ApplicationTab MenuItemID="menu" Type="Menu">
 
 <MenuSettings OpenOnClick="false"></MenuSettings>
 
@@ -300,7 +300,7 @@ Specifies the index or indexes to enable the corresponding tabs in the Ribbon co
 
 <ej:Ribbon ID="Defaultribbon" runat="server" Width="800px">
 
-<ApplicationTab ItemID="menu" Type="ApplicationMenu">
+<ApplicationTab MenuItemID="menu" Type="Menu">
 
 <MenuSettings OpenOnClick="false"></MenuSettings>
 
@@ -436,7 +436,7 @@ This method is used to hide the given text tab in the Ribbon control.
 
 <ej:Ribbon ID="Defaultribbon" runat="server" Width="800px">
 
-<ApplicationTab ItemID="menu" Type="ApplicationMenu">
+<ApplicationTab MenuItemID="menu" Type="Menu">
 
 <MenuSettings OpenOnClick="false"></MenuSettings>
 
@@ -570,7 +570,7 @@ This method is used to show the given text tab in the Ribbon control.
 
 <ej:Ribbon ID="Defaultribbon" runat="server" Width="800px">
 
-<ApplicationTab ItemID="menu" Type="ApplicationMenu">
+<ApplicationTab MenuItemID="menu" Type="Menu">
 
 <MenuSettings OpenOnClick="false"></MenuSettings>
 
@@ -708,7 +708,7 @@ This method is used to remove the given index tab item from the Ribbon control.
 
 <ej:Ribbon ID="Defaultribbon" runat="server" Width="800px">
 
-<ApplicationTab ItemID="menu" Type="ApplicationMenu">
+<ApplicationTab MenuItemID="menu" Type="Menu">
 
 <MenuSettings OpenOnClick="false"></MenuSettings>
 
@@ -843,7 +843,7 @@ Specifies the Width to the Ribbon control.
 
 <ej:Ribbon ID="Defaultribbon" runat="server" Width="800">
 
-        <ApplicationTab ItemID="menu" Type="ApplicationMenu">
+        <ApplicationTab MenuItemID="menu" Type="Menu">
 
             <MenuSettings OpenOnClick="false"></MenuSettings>
 
@@ -968,7 +968,7 @@ Group Index : Index of ribbon group, where the group is to be added. It is optio
 
 <ej:Ribbon ID="Ribbon" ClientIDMode="Static" runat="server" Width="100%">
 
-        <ApplicationTab ItemID="menu" Type="ApplicationMenu"/>
+        <ApplicationTab MenuItemID="menu" Type="Menu"/>
 
         </ApplicationTab>
 
@@ -1095,7 +1095,7 @@ Content Index : Ribbon content index, this is optional argument. When this argum
 
 <ej:Ribbon ID="Ribbon" ClientIDMode="Static" runat="server" Width="100%">
 
-        <ApplicationTab ItemID="ribbonmenu" Type="ApplicationMenu"/>
+        <ApplicationTab MenuItemID="ribbonmenu" Type="Menu"/>
 
         <RibbonTabs>
 

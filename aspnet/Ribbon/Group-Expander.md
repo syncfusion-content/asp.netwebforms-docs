@@ -9,7 +9,7 @@ documentation: ug
 
 # Group Expander
 
-The Ribbon control has group expander support. Set EnableGroupExpander value to true to enable the group expander for each group in the ribbon tab. The event for group expander is ClientSideOnGroupExpand.
+The Ribbon control has group expander support. Set EnableGroupExpander value to true to enable the group expander for each group in the ribbon tab. The event for group expander is GroupExpand.
 
 {% tabs %}
 
@@ -18,7 +18,7 @@ The Ribbon control has group expander support. Set EnableGroupExpander value to 
 
 <ej:Ribbon ID="Ribbon" runat="server" Width="800px">
 
-<ApplicationTab ItemID="menu" Type="ApplicationMenu">
+<ApplicationTab MenuItemID="menu" Type="Menu">
 
 <MenuSettings OpenOnClick="false"></MenuSettings>
 

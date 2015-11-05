@@ -20,7 +20,7 @@ The Ribbon control has Custom Tooltip support that is displayed when you move th
 
   <ej:Ribbon ID="defaultRibbon" runat="server" Width="100%">
 
-     <ApplicationTab ItemID="ribbonmenu" Type="ApplicationMenu">
+     <ApplicationTab MenuItemID="ribbonmenu" Type="Menu">
 
      </ApplicationTab>
 

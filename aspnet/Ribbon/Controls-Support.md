@@ -42,9 +42,9 @@ The default type is Button.
 
 
 
-<ej:Ribbon ID="defaultRibbon" runat="server" Width="800px" ClientSideOnCreate="createControl">
+<ej:Ribbon ID="defaultRibbon" runat="server" Width="800px" Create="createControl">
 
-<ApplicationTab ItemID="menu" Type="ApplicationMenu">
+<ApplicationTab MenuItemID="menu" Type="Menu">
 
 <MenuSettings OpenOnClick="false"></MenuSettings>
 

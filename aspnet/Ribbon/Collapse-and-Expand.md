@@ -22,7 +22,7 @@ Collapse method is used to minimize the ribbon control tab contents.You can mini
 
 <ej:Ribbon ID="Defaultribbon" runat="server" Width="800">
 
-            <ApplicationTab ItemID="menu" Type="ApplicationMenu">
+            <ApplicationTab MenuItemID="menu" Type="Menu">
 
             </ApplicationTab>
 
@@ -118,7 +118,7 @@ Expand method is used to expand the minimized ribbon control tab contents.You ca
 
 <ej:Ribbon ID="Defaultribbon" runat="server" Width="800">
 
-            <ApplicationTab ItemID="menu" Type="ApplicationMenu">
+            <ApplicationTab MenuItemID="menu" Type="Menu">
 
              </ApplicationTab>
 
