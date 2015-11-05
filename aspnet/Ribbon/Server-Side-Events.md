@@ -20,7 +20,7 @@ Description</th><th>
 Arguments</th></tr>
 <tr>
 <td>
-TabSelect</td><td>
+OnServerTabSelect</td><td>
 The event is triggered when the Ribbon tab gets selected.</td><td>
 The selected items are passed as arguments.
 
@@ -31,7 +31,7 @@ Arguments:
 </ol></td></tr>
 <tr>
 <td>
-<br>GroupClick</td><td>
+<br>OnServerGroupClick</td><td>
 The event is triggered when the Ribbon Group gets clicked.</td><td>
 The selected items are passed as arguments.
 
@@ -42,7 +42,7 @@ Arguments:
 </ol></td></tr>
 <tr>
 <td>
-<br>GalleryItemClick</td><td>
+<br>OnServerGalleryItemClick</td><td>
 The event is triggered when the gallery items get clicked.</td><td>
 The selected items are passed as arguments. 
 
@@ -57,9 +57,9 @@ The following code example demonstrates how to handle the TabSelect event to get
 
 {% highlight html %}
 
-<ej:Ribbon ID="Ribbon" runat="server" Width="100%" OnTabSelect="OnTabSelect">
+<ej:Ribbon ID="Ribbon" runat="server" Width="100%" OnServerTabSelect="OnTabSelect">
 
-        <ApplicationTab ItemID="menu" Type="ApplicationMenu"/>
+        <ApplicationTab MenuItemID="menu" Type="Menu"/>
 
         </ApplicationTab>
 

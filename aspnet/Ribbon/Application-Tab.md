@@ -21,7 +21,7 @@ The application menu support is provided in the Ribbon control  ApplicationTab. 
 
 <ej:Ribbon ID="Ribbon" runat="server" Width="800px”>
 
-<ApplicationTab ItemID="menu" Type="ApplicationMenu">
+<ApplicationTab MenuItemID="menu" Type="Menu">
 
 <MenuSettings OpenOnClick="false"></MenuSettings>
 
