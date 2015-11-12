@@ -15,7 +15,6 @@ RTE has footer option with some most frequently used tool items. To enable the f
 * Characters count
 * HTML Tag information
 * Clear formatting 
-* Remove contents
 * Resizing
 
 Refer to the following code example to enable the footer in RTE.
@@ -46,15 +45,15 @@ RTE control maintains the current position of the cursor, its current tag and pa
 
 ## Characters Count
 
-RTE counts the number of words in an editing area while you type. Consider a blog; the “About Me” profile information limit is maximum of 1,200 characters. In such a situation, you can get the number of characters you have typed by a simple alert. This count excludes white spaces.
+RTE counts the number of characters in an editing area while you type. Consider a blog; the “About Me” profile information limit is maximum of 1,200 characters. In such a situation, you can get the number of characters you have typed by a simple alert. This count excludes white spaces.
+
+## Words Count
+
+RTE counts the number of words in an editing area while you type. This count excludes white spaces.
 
 ## Clear formatting
 
 With Clear Formatting function, you can remove all the formatting on a block of selected text, or a paragraph, or the whole text. Formatting such as font, size, text attributes such as bold or italic, and color you applied in the text can be cleared with one click, and then the text returns to its default style.
-
-## Remove the contents
-
-You can delete all the existing contents in editing area with one click of this tool item.
 
 ## Resizing
 
@@ -70,9 +69,7 @@ Add the following code in your ASPX page.
 
 {% highlight html %}
 
-<ej:RTE ID="RTESample" Width="650" Height="440" runat="server" EnableResize="false" ShowFooter="true">        
-
-</ej:RTE>
+    <ej:RTE ID="RTESample" Width="650" Height="440" runat="server" ShowFooter="true"></ej:RTE>
 
 {% endhighlight %}
 

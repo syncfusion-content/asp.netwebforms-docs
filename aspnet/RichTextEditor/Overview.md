@@ -32,6 +32,7 @@ RichTextEditor (RTE) control enables you to visually edit HTML content. It enabl
 	* Images insert form web URL.
 	* Embed Video insert.
 	* Format option.
+	* View in full screen option.
 
 * Source code view: Options to get the HTML elements with styles.
 * Tool item template: Toolbar item template support.
