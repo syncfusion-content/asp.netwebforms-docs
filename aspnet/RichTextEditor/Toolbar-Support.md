@@ -32,6 +32,7 @@ All the formatting tools allow you to change the appearance of text. Formatted 
 * Predefined sets of formatting features that can be applied to block and to make elements of the document inline.
 * Upper & lower case conversion
 * Indent
+* Full screen view 
 
 ## Undo and Redo
 
@@ -50,32 +51,22 @@ To render Rich Text Editor with the above toolbar options, include the following
 <ej:RTE ID="AllToolsSample" Width="850" Height="440" ShowFooter="true" runat="server">
 
     <Tools Font="fontName,fontSize,fontColor,backgroundColor"
-
-        Styles="bold, italic, underline, strikethrough"
-
-        Alignment="justifyLeft, justifyCenter, justifyRight, justifyFull"
-
-        Lists="unorderedList, orderedList"
-
-        CopyPaste="cut, copy, paste"
-
-        DoAction="undo, redo"
-
-        Clear="clearFormat, clearAll"
-
-        Links="createLink"
-
-        Images="image,video"
-
-        Tables="createTable, addRowAbove, addRowBelow, addColumnLeft, addColumnRight, deleteRow, deleteColumn, deleteTable"
-
-        Scripts="superscript, subscript"
-
-        Casing="upperCase, lowerCase"
-
-        FormatStyle="format">
-
-    </Tools>
+                Styles="bold,italic,underline,strikethrough"
+                Alignment="justifyLeft,justifyCenter,justifyRight,justifyFull"
+                Lists="unorderedList,orderedList"
+                Clipboard="cut,copy,paste"
+                DoAction="undo,redo"
+                Clear="clearFormat,clearAll"
+                Links="createLink,removeLink"
+                Images="image"
+                Tables="createTable,addRowAbove,addRowBelow,addColumnLeft,addColumnRight,deleteRow,deleteColumn,deleteTable"
+                Effects="superscript,subscript"
+                Casing="upperCase,lowerCase"
+                FormatStyle="format"
+                View="fullScreen"
+                Indenting="outdent,indent" 
+                Media="video">               
+            </Tools>
 
 </ej:RTE>
 
