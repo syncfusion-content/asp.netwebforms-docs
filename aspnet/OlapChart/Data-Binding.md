@@ -9,72 +9,250 @@ documentation: ug
 
 # Data Binding
 
-OLAP Chart control enables you to retrieve multidimensional data either from SSAS or from any XML/A provider and present the OLAP information in a meaningful way.
+##Binding OlapChart to Offline Cube
 
-## SSAS
+To connect an OLAP Cube available in local machine, physical path of the Cube needs to be set in the connection string. Below code sample illustrates the same.
 
-### Binding OLAP Chart to an Offline Cube
+{% highlight c# %}
 
-The following code illustrates how to connect to an offline cube:
-
-{% highlight C# %}
-string connectionString = @"DataSource= C:\Users\<UserName>\appdata\local\syncfusion\essentialstudio\x.x.x.x\Common\
-
-Data\OfflineCube\Adventure_Works_Ext.cub; Provider = MSOLAP;";
-
+string connectionString = @"DataSource = system drive:\OfflineCube\Adventure_Works_Ext.cub; Provider = MSOLAP;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-### Binding OLAP Chart to the SQL Server (Local)
+##Binding OlapChart to Cube in local SQL Server
 
-The following code illustrates how to connect to a local Cube in SQL Server:
+To connect an OLAP Cube available in SQL Server Analysis Service in local machine, server name and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
 
-{% highlight C# %}
-string connectionString = "Data source=localhost; Initial Catalog=Adventure Works DW;";
+{% highlight c# %}
 
+string connectionString = "Data source=localhost; Initial Catalog=Adventure Works DW;"; 
 OlapDataManager DataManager = new OlapDataManager(connectionString);
+
 {% endhighlight %}
 
-### XML/A
+##Binding OlapChart to Cube in local SQL Server
 
-XMLfor Analysis (XML/A) is a standard that allows the client applications to transfer multi-dimensional or OLAP data sources from an OLAP Server that is available online. The back and forth communication is done using the web standards – HTTP, SOAP, and XML. The query language used is MDX, which is most widely supported for reporting from multi-dimensional data stores.
+To connect an OLAP Cube available in SQL Server Analysis Service in online server through XML/A, host server link and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
 
-### Use Case Scenarios
+{% highlight c# %}
 
-XML/A provides the most efficient way to access an OLAP database over the Internet.
-
-### Connecting to SSAS Server (Online)
-
-The following code illustrates how to connect to the SSAS server available online:
-
-{% highlight C# %}
-static string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";   
-
+string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;"; 
 OlapDataManager DataManager = new OlapDataManager(connectionString);
-{% endhighlight  %}
 
-### Connecting to Mondrian Server
+{% endhighlight %}
 
-The following code illustrates how to connect to the Mondrian Server:
+##Binding OlapChart to Cube in online Mondrian Server
 
-{% highlight C# %}
+To connect an OLAP Cube available in Mondrian Server through XML/A, host server link and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
+
+{% highlight c# %}
+
 string connectionString = @"Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog =FoodMart;";
-
 OlapDataManager DataManager = new OlapDataManager(connectionString);
+DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.Mondrian;
 
-DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.Mondrian; 
-{% endhighlight  %}
-
-
-### Connecting to Active Pivot Server
-
-The following code illustrates how to connect to Active Pivot Server:
-
-{% highlight C# %}
-string connectionString= @"Data Source=http://localhost:8081/var_s/xmla;  Initial Catalog=VaRCubes; User ID=; Password=; Transport Compression=None;";
-
-OlapDataManager DataManager = new OlapDataManager(connectionString);
-
-DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.ActivePivot;
 {% endhighlight %}
+
+##Binding OlapChart to Cube in online ActivePivot Server
+
+{% highlight c# %}
+
+string connectionString = @"Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog =FoodMart;"; 
+OlapDataManager DataManager = new OlapDataManager(connectionString);
+DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.ActivePivot;
+
+{% endhighlight %}
+
+##WCF
+**Adding a WCF Service**
+
+To add a WCF service in an existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it as `OlapChartService.svc`, click Add.
+
+Now, WCF service is added into the application successfully that comprises of the following files. The utilization of these files is explained in the immediate sections
+
+* OlapChartService.svc
+* OlapChartService.svc.cs
+* IOlapChartService.cs
+
+**Configuring WCF Service Class**
+
+The following are the list of namespaces to be added on top of the main class inside `OlapChartService.svc.cs` file. Remove the **“DoWork”** method present inside both `OlapChartService.svc.cs` and `IOlapChartService.cs` files.  Next, add **“AspNetCompatibilityRequirements”** attribute on top of main class present inside OlapChartService.svc.cs and set **“RequirementsMode”** value to **“Allowed”**.
+
+{% highlight c# %}
+
+using OLAPUTILS = Syncfusion.JavaScript.Olap;
+using Syncfusion.Olap.Manager;
+using Syncfusion.Olap.Reports;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.ServiceModel;
+using System.ServiceModel.Activation;
+using System.Text;
+using System.Web.Script.Serialization;
+using Syncfusion.JavaScript.Olap;
+using System.Configuration;
+
+namespace OlapChartDemo
+{
+    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
+    public class OlapChartService: IOlapChartService
+    {
+    
+    }
+}
+
+{% endhighlight %}
+
+**Datasource Initialization**
+
+Now the connection string to connect OLAP Cube, OlapChart and JavaScriptSerializer instances are created immediately inside the main class in `OLAPChartService.svc.cs` file.
+
+{% highlight c# %}
+
+namespace OlapChartDemo
+{
+    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
+    public class OlapChartService: IOlapChartService
+    {
+        OlapChart htmlHelper = new OlapChart();
+        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        JavaScriptSerializer serializer = new JavaScriptSerializer();
+      	……
+        ……
+    }
+}
+
+{% endhighlight %}
+
+**Service methods in WCF Service**
+
+First, declare the service methods inside **IOlapChartService** interface, found in `IOlapChartService.cs` file created while adding WCF Service to the Application.
+
+{% highlight c# %}
+namespace OlapChartDemo
+{
+    [ServiceContract]
+    public interface IOlapChartService
+    {
+        [OperationContract]
+        Dictionary < string, object > InitializeChart(string action, string customObject);
+        [OperationContract]
+        Dictionary < string, object > DrillChart(string action, string drilledSeries, string olapReport, string customObject);
+        [OperationContract]
+        void Export(System.IO.Stream stream);
+    }
+}
+
+{% endhighlight %}
+
+Then, elaborate the service methods inside the main class, found in `OlapChartService.svc.cs` file.
+
+{% highlight c# %}
+
+namespace OlapChartDemo
+{
+    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
+    public class OlapChartService: IOlapChartService
+    {
+        OlapChart htmlHelper = new OlapChart();
+        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        JavaScriptSerializer serializer = new JavaScriptSerializer();
+        //This method provides the required information from server-side to initialize the OlapChart.
+        public Dictionary < string, object > InitializeChart(string action, string customObject)
+            {
+                OlapDataManager DataManager = new OlapDataManager(connectionString);
+                DataManager.SetCurrentReport(CreateOlapReport());
+                return htmlHelper.GetJsonData(action, DataManager);
+            }
+            //This method provides the required information from server-side while the drill up or down operation is performed in OlapChart.
+        public Dictionary < string, object > DrillChart(string action, string drilledSeries, string olapReport, string customObject)
+            {
+                OlapDataManager DataManager = new OlapDataManager(connectionString);
+                DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(olapReport));
+                return htmlHelper.GetJsonData(action, DataManager, drilledSeries);
+            }
+            //This method exports the OlapChart to Excel, word and PDF.
+        public void Export(System.IO.Stream stream)
+            {
+                System.IO.StreamReader sReader = new System.IO.StreamReader(stream);
+                string args = System.Web.HttpContext.Current.Server.UrlDecode(sReader.ReadToEnd()).Remove(0, 5);
+                OlapDataManager DataManager = new OlapDataManager(connectionString);
+                string fileName = "Sample";
+                htmlHelper.ExportOlapChart(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
+            }
+            //This method carries information about the default report rendered within OlapChart initially. 
+        private OlapReport CreateOlapReport()
+        {
+            OlapReport olapReport = new OlapReport();
+            olapReport.Name = "Default Report";
+            olapReport.CurrentCubeName = "Adventure Works";
+            DimensionElement dimensionElementColumn = new DimensionElement();
+            dimensionElementColumn.Name = "Customer";
+            dimensionElementColumn.AddLevel("Customer Geography", "Country");
+            MeasureElements measureElementColumn = new MeasureElements();
+            measureElementColumn.Elements.Add(new MeasureElement
+            {
+                Name = "Customer Count"
+            });
+            DimensionElement dimensionElementRow = new DimensionElement();
+            dimensionElementRow.Name = "Date";
+            dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
+            olapReport.SeriesElements.Add(dimensionElementRow);
+            olapReport.CategoricalElements.Add(dimensionElementColumn);
+            olapReport.CategoricalElements.Add(measureElementColumn);
+            return olapReport;
+        }
+    }
+}
+{% endhighlight %}
+
+**Configuring Web Configuration File**
+
+The services could be exposed through the properties, binding, contract and address by using an endpoint.
+
+* Contract: This property indicates that the contract of the endpoint is exposing. Here you are referring to **IOlapChartService** contract and hence it is **OlapChartDemo.IOlapChartService**.
+* Binding: In your application, you use webHttpBinding to post and receive the requests and responses between the client-end and the service.
+* BehaviorConfiguration: This property contains the name of the behavior to be used in the endpoint
+
+The endpointBehaviors are illustrated as follows
+
+{% highlight xml %}
+
+<system.serviceModel> 
+    …… 
+    ……
+    <services>
+        <service name="OlapChartDemo.OlapChartService">
+            <endpoint address="" behaviorConfiguration="OlapChartDemo.OlapChartServiceAspNetAjaxBehavior" binding="webHttpBinding" contract="OlapChartDemo.IOlapChartService" /> </service>
+    </services>
+</system.serviceModel>
+
+{% endhighlight %}
+
+The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using this name property.
+
+{% highlight xml %}
+
+<system.serviceModel>
+     …… 
+     ……
+    <behaviors> 
+        …… 
+        ……
+        <endpointBehaviors>
+            <behavior name="OlapChartDemo.OlapChartServiceAspNetAjaxBehavior">
+                <enableWebScript /> </behavior>
+        </endpointBehaviors>
+    </behaviors>
+</system.serviceModel>
+
+{% endhighlight %}
+
+N> In this example, **“OlapChartDemo”** indicates the name and root namespace of the Application created in Visual Studio IDE and **“OlapChartService”** indicates the name of the WCF service created.
+
+In this example, OlapChart is rendered with Customer Count over a period of fiscal years across different customer geographic locations.
+ 
+![](Data-Binding_images/OlapChart.png)   
