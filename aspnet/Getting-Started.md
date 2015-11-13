@@ -21,6 +21,7 @@ The procedure that are followed in manual integration process is entirely automa
 For creating new ASP.Net Website, you can use the Syncfusion’s Visual Studio project templates. Here, you will see how to add the `DatePicker` control into the ASP.NET Website selecting from the “New Web Site” pop-up,
 
 1. Start the Visual Studio and select File -> New -> Website. You can now see the built-in `Syncfusion ASP.NET Website` template in the "New Web Site" pop-up as shown below
+
 ![](Getting-Started_images/Getting-Started_img1.png)
 
 2. Type the application name and click `OK`. This will create a new Web Site with all the Syncfusion ASP.Net control’s client and server side dependencies are preconfigured and copied to it appropriate folders
@@ -34,6 +35,7 @@ For creating new ASP.Net Website, you can use the Syncfusion’s Visual Studio p
 {% endhighlight %}
 
 4. Another way of adding control into the Default.aspx page is by making use of the Toolbox option present in the Visual Studio. You need to just drag the required control from the toolbox and then drop it into the Content section of the Default.aspx page and the required control code automatically gets generated
+
 ![](Getting-Started_images/Getting-Started_img2.png)
 
 5. Finally build and run the project by pressing F5, so that you can now see the output similar to the below screenshot in your web browser.
