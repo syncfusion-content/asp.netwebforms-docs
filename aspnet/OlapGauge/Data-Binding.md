@@ -221,6 +221,7 @@ The services could be exposed through the properties, binding, contract and addr
 
 The endpointBehaviors are illustrated as follows
 
+{% highlight xml %}
 <system.serviceModel> 
     …… 
     ……
