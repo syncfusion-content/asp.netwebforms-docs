@@ -172,19 +172,21 @@ The dependencies are available in the following locations of your machine. Pleas
 
 <table>
 <tr>
-<th>Files</th><th>Location</th></tr>
+<th>Files</th>
+<th>Location</th>
+</tr>
 <tr>
-<td colspan=1 rowspan=1>
-jquery-1.10.2.min.js<br/>jquery.easing.1.3.min.js<br/>jquery.globalize.min.js<br/>jsrender.min.js</td><td>
-<Syncfusion Installed Location>\Essential Studio\13.1.0.21\JavaScript\assets\external</td></tr>
+<td>jquery-1.10.2.min.js<br/>jquery.easing.1.3.min.js<br/>jquery.globalize.min.js<br/>jsrender.min.js</td>
+<td>&lt;Syncfusion Installed Location&gt;\Essential Studio\13.1.0.21\JavaScript\assets\external</td>
+</tr>
 <tr>
-<td colspan=1 rowspan=1>
-ej.web.all.min.js<br/></td><td>
-&lt;Syncfusion Installed Location&gt;\Essential Studio\13.1.0.21\JavaScript\assets\scripts\web</td></tr>
+<td>ej.web.all.min.js</td>
+<td>&lt;Syncfusion Installed Location&gt;\Essential Studio\13.1.0.21\JavaScript\assets\scripts\web</td>
+</tr>
 <tr>
-<td>
-ej.web.all.min.js</td><td>
-<Syncfusion Installed Location>\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common</td></tr>
+<td>ej.web.all.min.js</td>
+<td>&lt;Syncfusion Installed Location&gt;\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common</td>
+</tr>
 </table>
 
 N> Example for "Syncfusion Installed location" is "C:\Program Files (x86)\Syncfusion"
