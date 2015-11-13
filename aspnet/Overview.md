@@ -10,6 +10,7 @@ documentation: ug
 # Overview
 
 Essential Studio for ASP.Net is a set of server-side wrappers for Essential JavaScript controls which enables you to create Essential Studio’s HTML5 JavaScript controls through ASP.Net Designer and/or Code Behind file. It includes rich designer support, server-side events and better ViewState handling for all server-side wrappers. 
+
 ## How to best read this user guide
 
 * The best way to get started would be to read the common “[Getting Started](#Getting_Started)” document then read the “Getting Started” document of the component that you would like to start using first. The “Getting Started” guide gives just enough information that you need to know before starting to write code. This is the only section that we recommend reading end-to-end before starting to write code, all other information can be referred as needed.
