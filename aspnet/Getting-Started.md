@@ -20,13 +20,13 @@ The procedure that are followed in manual integration process is entirely automa
 ## Using Syncfusion Project Template
 For creating new ASP.Net Website, you can use the Syncfusion’s Visual Studio project templates. Here, you will see how to add the `DatePicker` control into the ASP.NET Website selecting from the “New Web Site” pop-up,
 
-1. Start the Visual Studio and select File -> New -> Website. You can now see the built-in `Syncfusion ASP.NET Website` template in the "New Web Site" pop-up as shown below
+* Start the Visual Studio and select File -> New -> Website. You can now see the built-in `Syncfusion ASP.NET Website` template in the "New Web Site" pop-up as shown below
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
-2. Type the application name and click `OK`. This will create a new Web Site with all the Syncfusion ASP.Net control’s client and server side dependencies are preconfigured and copied to it appropriate folders
+* Type the application name and click `OK`. This will create a new Web Site with all the Syncfusion ASP.Net control’s client and server side dependencies are preconfigured and copied to it appropriate folders
 
-3. Now you can add your required controls in the ASPX Page. The code for adding `DatePicker` control within the "Default.aspx" file is follows
+* Now you can add your required controls in the ASPX Page. The code for adding `DatePicker` control within the "Default.aspx" file is follows
 
 {% highlight html %}
 
@@ -34,11 +34,11 @@ For creating new ASP.Net Website, you can use the Syncfusion’s Visual Studio p
 
 {% endhighlight %}
 
-4. Another way of adding control into the Default.aspx page is by making use of the Toolbox option present in the Visual Studio. You need to just drag the required control from the toolbox and then drop it into the Content section of the Default.aspx page and the required control code automatically gets generated
+* Another way of adding control into the Default.aspx page is by making use of the Toolbox option present in the Visual Studio. You need to just drag the required control from the toolbox and then drop it into the Content section of the Default.aspx page and the required control code automatically gets generated
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
-5. Finally build and run the project by pressing F5, so that you can now see the output similar to the below screenshot in your web browser.
+* Finally build and run the project by pressing F5, so that you can now see the output similar to the below screenshot in your web browser.
 
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
 
@@ -48,24 +48,24 @@ This topic explains how to add the Syncfusion ASP.NET Web controls into the new 
 ### Configuring Syncfusion NuGet Packages
 The steps to download and configure the required Syncfusion NuGet Packages in Visual Studio are as follows,
 
-1. Download the Syncfusion NuGet Packages for ASP.NET from [here](http://nuget.syncfusion.com/login#) and save it in your system. The downloaded file is a zip formatted file, therefore unzip the folders and copy only the below specified packages present within it. Create a new folder namely NuGet Packages in any of the particular location in your system and place the below specified files into it
+* Download the Syncfusion NuGet Packages for ASP.NET from [here](http://nuget.syncfusion.com/login#) and save it in your system. The downloaded file is a zip formatted file, therefore unzip the folders and copy only the below specified packages present within it. Create a new folder namely NuGet Packages in any of the particular location in your system and place the below specified files into it
 
 ![](Getting-Started_images/Getting-Started_img4.png)
 
 N> For rendering Syncfusion ASP.NET components within the web application, the script and stylesheet references are mandatory. Installing ASP.NET NuGet package automatically includes all the required scripts as well as the stylesheets to the application.
 
-2. In Visual Studio, navigate to Tools -> Library Package Manager -> Package Manager Settings, the Options pop-up will appear on the screen as below
+* In Visual Studio, navigate to Tools -> Library Package Manager -> Package Manager Settings, the Options pop-up will appear on the screen as below
 
 ![](Getting-Started_images/Getting-Started_img5.png)
 
-3. Select Package Manager -> Package Sources in the above pop-up and click on the ![](Getting-Started_images/Getting-Started_img6.jpeg)
+* Select Package Manager -> Package Sources in the above pop-up and click on the ![](Getting-Started_images/Getting-Started_img6.jpeg)
 button to navigate to the location where the above collection of NuGet packages are located (namely, within the NuGet Packages folder) in your system
 
 ![](Getting-Started_images/Getting-Started_img7.png)
 
 N> The Source textbox in the above image denotes the location of the NuGet packages in your machine and the Name section, allows you to provide a unique name which we will refer in the package installation section later.
 
-4. Now click the Add button and the package name will be listed in the Available package sources list as shown below and then Click OK.
+* Now click the Add button and the package name will be listed in the Available package sources list as shown below and then Click OK.
 
 ![](Getting-Started_images/Getting-Started_img8.png)
 
@@ -78,11 +78,11 @@ Start the Visual Studio. Create a new Web Forms application by using File -> New
 ### Installing the NuGet Package
 The following steps will help you to add the references of the Syncfusion assemblies, required scripts and CSS files into your Project.
 
-1. Right click on your project in the Solution Explorer and select Manage NuGet Packages options from the sub-menu that pop-up on the screen. Select the Syncfusion NuGet Packages within the Online tab, which will display the list of available packages in it, as shown below
+* Right click on your project in the Solution Explorer and select Manage NuGet Packages options from the sub-menu that pop-up on the screen. Select the Syncfusion NuGet Packages within the Online tab, which will display the list of available packages in it, as shown below
 
 ![](Getting-Started_images/Getting-Started_img10.png)
 
-2. Install the Syncfusion.ASPNET45 (based on the .NET framework (4.5) used in our sample application) package now. The below image depicts that the NuGet Package for ASP.NET (with .NET framework version 4.5) has been successfully installed into your project.
+* Install the Syncfusion.ASPNET45 (based on the .NET framework (4.5) used in our sample application) package now. The below image depicts that the NuGet Package for ASP.NET (with .NET framework version 4.5) has been successfully installed into your project.
 
 ![](Getting-Started_images/Getting-Started_img11.png)
 
@@ -108,17 +108,17 @@ Syncfusion NuGet package will copy all the dependent Scripts and CSS files in th
 ### Adding Syncfusion ASP.NET control
 Here, you will see how to add the `DatePicker` control into the newly created Syncfusion ASP.NET Web Application. To add the control in the Application, you can use either of the following two ways,
 
-1. Add the below `DatePicker` code within the “Default.aspx” file
+* Add the below `DatePicker` code within the “Default.aspx” file
 
 {% highlight html %}
 <ej:DatePicker ID="DatePicker" runat="server"></ej:DatePicker>
 {% endhighlight %}
 
-2. Another way of adding control into the Default.aspx page is by making use of the Toolbox option present in the Visual Studio. When you install Essential Studio or ASP.NET setup in your machine, all the available ASP.NET controls are automatically configured into the Visual Studio Toolbox. You just need to drag the required control from the toolbox and then drop it into the Content section of the Default.aspx page, so that the required control code automatically gets generated
+* Another way of adding control into the Default.aspx page is by making use of the Toolbox option present in the Visual Studio. When you install Essential Studio or ASP.NET setup in your machine, all the available ASP.NET controls are automatically configured into the Visual Studio Toolbox. You just need to drag the required control from the toolbox and then drop it into the Content section of the Default.aspx page, so that the required control code automatically gets generated
 
 ![](Getting-Started_images/Getting-Started_img12.png)
 
-3. Now build and run the project by pressing F5, so that you can now see the output similar to the below screenshot in your web browser,
+* Now build and run the project by pressing F5, so that you can now see the output similar to the below screenshot in your web browser,
 
 ![](Getting-Started_images/Getting-Started_img13.png)
 
