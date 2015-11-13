@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started Syncfusion Essential ASP.NET
-description: How to create simple ASP.NET Application with Syncfusion Essential ASP.NET widget 
+title: Getting started for Syncfusion Essential ASP.NET
+description: How to create simple ASP.Net Application with Syncfusion Essential ASP.NET controls 
 platform: ASP
 control: Introduction
 documentation: ug
@@ -16,8 +16,8 @@ This section describes how to configure the Syncfusion ASP.NET components into t
 3. Through Manual Integration into the new/existing Application
 
 The procedure that are followed in manual integration process is entirely automated, when we create an application using Syncfusion Project template.
-## Using Syncfusion Project Template
 
+## Using Syncfusion Project Template
 For creating new ASP.Net Website, you can use the Syncfusion’s Visual Studio project templates. Here, you will see how to add the `DatePicker` control into the ASP.NET Website selecting from the “New Web Site” pop-up,
 
 1. Start the Visual Studio and select File -> New -> Website. You can now see the built-in `Syncfusion ASP.NET Website` template in the "New Web Site" pop-up as shown below
@@ -68,14 +68,12 @@ N> The Source textbox in the above image denotes the location of the NuGet packa
 ![](Getting-Started_images/Getting-Started_img8.png)
 
 ### Creating ASP.NET Web Application
-
 Start the Visual Studio. Create a new Web Forms application by using File -> New -> Project and run the application by pressing Ctrl+F5, which shows something similar to the following screenshot in your web browser,
 
 ![](Getting-Started_images/Getting-Started_img9.png)
 
 
 ### Installing the NuGet Package
-
 The following steps will help you to add the references of the Syncfusion assemblies, required scripts and CSS files into your Project.
 
 1. Right click on your project in the Solution Explorer and select Manage NuGet Packages options from the sub-menu that pop-up on the screen. Select the Syncfusion NuGet Packages within the Online tab, which will display the list of available packages in it, as shown below
@@ -87,8 +85,8 @@ The following steps will help you to add the references of the Syncfusion assemb
 ![](Getting-Started_images/Getting-Started_img11.png)
 
 Once the package installation is completed, all the required assembly references, scripts and CSS files will be automatically added to your application. Also, it configures the web.config file automatically. The remaining changes that you need to do in your application are as follows.
-### Adding dependent Scripts and CSS references in Site.Master
 
+### Adding dependent Scripts and CSS references in Site.Master
 Syncfusion NuGet package will copy all the dependent Scripts and CSS files in the appropriate folders of the project. However you need to manually add the references for those files in the Site.Master page. The code snippet for this is follows.
 
 {% highlight html %}
@@ -106,7 +104,6 @@ Syncfusion NuGet package will copy all the dependent Scripts and CSS files in th
 {% endhighlight %}
 
 ### Adding Syncfusion ASP.NET control
-
 Here, you will see how to add the `DatePicker` control into the newly created Syncfusion ASP.NET Web Application. To add the control in the Application, you can use either of the following two ways,
 
 1. Add the below `DatePicker` code within the “Default.aspx” file
@@ -160,7 +157,6 @@ Once the CSS files are added in your application, include the reference to ej.we
 {% endhighlight %}
 
 ### Adding required Script files
-
 Essential ASP.Net controls has the following list of external JavaScript dependencies. 
 
 * jquery-1.10.2.min.js
@@ -211,7 +207,6 @@ Add the below script references in the Site.Master file within the head section,
 {% endhighlight %}
 
 ### Assembly Reference
-
 Refer the following assemblies in your newly created ASP.NET application, which allows you to use any of the Syncfusion ASP.NET controls within it.
 
 * Syncfusion.EJ
@@ -222,7 +217,6 @@ Once you have installed the Essential Studio package in your system, the Syncfus
 ![](Getting-Started_images/Getting-Started_img18.png)
 
 ### Adding Control to the Page
-
 When you install Essential Studio or ASP.NET setup in your machine, all the available ASP.NET controls are automatically configured into the Visual Studio Toolbox. 
 You just need to drag the required control from the toolbox and then drop it into the Content section of the Default.aspx page, so that the required control code gets generated automatically.
 
@@ -231,7 +225,6 @@ You just need to drag the required control from the toolbox and then drop it int
 ![](Getting-Started_images/Getting-Started_img20.png)
 
 ### Registering Syncfusion Assemblies within the Web.config
-
 In your application’s web.config file, add the below assembly information within the &lt; assemblies &gt; tag.
 
 {% highlight xml %}
