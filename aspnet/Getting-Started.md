@@ -2,7 +2,7 @@
 layout: post
 title: Getting started for Syncfusion Essential ASP.NET
 description: How to create simple ASP.Net Application with Syncfusion Essential ASP.NET controls 
-platform: ASP
+platform: aspnet
 control: Introduction
 documentation: ug
 
