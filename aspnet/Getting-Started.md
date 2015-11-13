@@ -10,10 +10,9 @@ documentation: ug
 # Getting Started
 
 This section describes how to configure the Syncfusion ASP.NET components into the ASP.NET applications. There are three ways for embedding our controls into ASP.NET application:
+
 1. Using Syncfusion Project Template
-
 2. Through Syncfusion NuGet Packages
-
 3. Through Manual Integration into the new/existing Application
 
 The procedure that are followed in manual integration process is entirely automated, when we create an application using Syncfusion Project template.
