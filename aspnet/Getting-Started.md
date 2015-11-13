@@ -41,17 +41,16 @@ For creating new ASP.Net Website, you can use the Syncfusion’s Visual Studio p
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
 
 ## Through Syncfusion NuGet Packages
-
 This topic explains how to add the Syncfusion ASP.NET Web controls into the new ASP.NET Web Forms application by making use of Syncfusion NuGet Packages. 
-### Configuring Syncfusion NuGet Packages
 
+### Configuring Syncfusion NuGet Packages
 The steps to download and configure the required Syncfusion NuGet Packages in Visual Studio are as follows,
 
 1. Download the Syncfusion NuGet Packages for ASP.NET from [here](http://nuget.syncfusion.com/login#) and save it in your system. The downloaded file is a zip formatted file, therefore unzip the folders and copy only the below specified packages present within it. Create a new folder namely NuGet Packages in any of the particular location in your system and place the below specified files into it
 
 ![](Getting-Started_images/Getting-Started_img4.png)
 
-N> For rendering Syncfusion ASP.NET components within the web application, the script and stylesheet references are mandatory. Installing ASP.NET NuGet package automatically includes all the required scripts as well as the stylesheets to the application.<br/><br/></td></tr>
+N> For rendering Syncfusion ASP.NET components within the web application, the script and stylesheet references are mandatory. Installing ASP.NET NuGet package automatically includes all the required scripts as well as the stylesheets to the application.
 
 2. In Visual Studio, navigate to Tools -> Library Package Manager -> Package Manager Settings, the Options pop-up will appear on the screen as below
 
@@ -62,7 +61,7 @@ button to navigate to the location where the above collection of NuGet packages 
 
 ![](Getting-Started_images/Getting-Started_img7.png)
 
-N> The Source textbox in the above image denotes the location of the NuGet packages in your machine and the Name section, allows you to provide a unique name which we will refer in the package installation section later. <br/></td></tr>
+N> The Source textbox in the above image denotes the location of the NuGet packages in your machine and the Name section, allows you to provide a unique name which we will refer in the package installation section later.
 
 4. Now click the Add button and the package name will be listed in the Available package sources list as shown below and then Click OK.
 
