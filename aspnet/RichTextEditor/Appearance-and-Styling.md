@@ -39,7 +39,7 @@ Add the following code in your ASPX page to initialize the RTE with gradient-azu
 
 
 
-<ej:RTE ID="rteSample" Width="850" runat="server"></ej:RTE>
+    <ej:RTE ID="rteSample" Width="850" runat="server"></ej:RTE>
 
 
 
@@ -98,7 +98,7 @@ Add the following code in your ASPX page.
 
 
 
-<ej:RTE ID="rteSample" Width="850" CssClass="light-Pink" runat="server"></ej:RTE>
+    <ej:RTE ID="rteSample" Width="850" CssClass="light-Pink" runat="server"></ej:RTE>
 
 
 
@@ -180,7 +180,7 @@ In an ASPX page, define the RTE control and add server side event
 
 
 
-<ej:RTE ID="RTESample" Width="650" Height="440" runat="server" OnToolbarItemClick="RTESample_ToolbarItemClick">        
+    <ej:RTE ID="RTESample" Width="650" Height="440" runat="server" OnToolbarItemClick="RTESample_ToolbarItemClick">        
 
 </ej:RTE>
 

@@ -37,43 +37,26 @@ Add the following code in your ASPX page to initialize the RTE control.
 
 
 {% highlight html %}
+<script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>  
 
-
-
-<script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js">  
-
-<script src="http://cdn.syncfusion.com/js/ej.widget.angular-latest.min.js">
-
-
+<script src="http://cdn.syncfusion.com/js/ej.widget.angular-latest.min.js"></script>  
 
 <div ng-app="syncApp">
-
         <div ng-controller="RTECtrl">
-
             <div style="margin: auto;">
-
                 <div id="control" style="float: left; width: 69%;">
-
                     <textarea id="rteSample" ej-rte e-width="100%" e-height="266" e-value="rteValue"></textarea>
-
                     <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 15px;">Note:Two Way Angular Support</span></h6>
-
                 </div>
-
                 <div id="binding" style="float: left; margin-left: 20px; width: 27%">
-
                     <textarea name="scroll" class="input ejinputarea" ng-model="rteValue"></textarea>
-
-                </div>
-
-            </div>
-
+                </div>                
+            </div>            
         </div>
-
-    </div>
-
+      </div>
+    
 {% endhighlight %}
-
+<br/>
 
 ### Script section:
 
@@ -111,11 +94,11 @@ For more information about the Knockout Binding, refer to the following online d
 
 To create an ASPX page for your application and there is a live demo for your ASPX page, then it is better to customize your ASPX page. You can achieve this by using knockout binding with RTE.
 
-In the following example, one simple text area and one RTE control is created. Add some HTML code (“<h1>Description: The Rich Text Editor (RTE) control is an easy to render in client side. &lt;/h1&gt;”) in the normal text area. When you run the sample, you can get the result of this RTE text area. At runtime, add the following HTML code in normal text area.
+In the following example, one simple text area and one RTE control is created. Add some HTML code (“&lt;h1&gt;Description: The Rich Text Editor (RTE) control is an easy to render in client side. &lt;/h1&gt;”) in the normal text area. When you run the sample, you can get the result of this RTE text area. At runtime, add the following HTML code in normal text area.
 
 {% highlight html %}
 
-<div style="border: 2px solid #a1a1a1;padding: 10px 40px;background: #dddddd; width: 300px; border-radius: 25px;>
+<div style="border: 2px solid #a1a1a1;padding: 10px 40px;background: #dddddd; width: 300px; border-radius: 25px;">
 
 	<h2>Demo of current html content in text area</h2>
 
@@ -129,35 +112,19 @@ Add the following code in your ASPX page to initialize the RTE control.
 
 {% highlight html %}
 
-<div ng-app="syncApp">
-
-        <div ng-controller="RTECtrl">
-
-            <div style="margin: auto;">
-
-                <div id="control" style="float: left; width: 69%;">
-
-                    <textarea id="rteSample" ej-rte e-width="100%" e-height="266" e-value="rteValue"></textarea>
-
-                    <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 15px;">Note:Two Way Angular Support</span></h6>
-
-                </div>
-
-                <div id="binding" style="float: left; margin-left: 20px; width: 27%">
-
-                    <textarea name="scroll" class="input ejinputarea" ng-model="rteValue"></textarea>
-
-                </div>
-
+<div style="margin: auto;">
+            <div id="control" style="float: left; width: 69%;">
+                <textarea id="rteSample" data-bind="ejRTE: {value:rteValue,width:width,height:height}" ></textarea>
+                <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 15px;">Note: Knockout Support</span></h6>
             </div>
-
+            <div id="binding" style="float: left; margin-left: 20px; width: 27%">
+                <textarea  name="scroll"  class="input ejinputtext" data-bind="value: rteValue" ></textarea>
+            </div>
         </div>
-
-    </div>
 
 {% endhighlight %}
 
-
+<br/>
 
 ### Configure the KO binding for RTE in script
 
@@ -165,18 +132,22 @@ Add the following code in your ASPX page to initialize the RTE control.
 
 {% highlight js %}
 
-        angular.module('syncApp', ['ejangular'])
-
-            .controller('RTECtrl', function ($scope) {
-
-                $scope.rteValue = "Description:The Rich Text Editor (RTE) control is an easy to render in client side. Customer easy to edit the contents and get the HTML content for";
-
-            });
-
-
-
-
-
+      <script type="text/javascript" class="jsScript">
+        var rte;        
+		window.viewModel = {
+			height:ko.observable(400),
+			width:ko.observable("90%"),				
+			rteValue: ko.observable("Description:The Rich Text Editor (RTE) control is an easy to render in client side. Customer easy to edit the contents and get the HTML content for"),			
+        };
+       
+        $(function () {            
+            ko.applyBindings(viewModel);
+			rte = $("#rteSample").data("ejRTE");            
+        });    
+        
+    </script>
+    
+    
 {% endhighlight %}
 
 

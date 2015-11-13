@@ -1,10 +1,10 @@
 ---
-layout: post
-title: Server side events | RichTextEditor | ASP.NET Webforms | Syncfusion
-description: server side events
-platform: aspnet
-control: RichTextEditor
-documentation: ug
+* layout: post
+* title: Server side events | RichTextEditor | ASP.NET Webforms | Syncfusion
+* description: server side events
+* platform: aspnet
+* control: RichTextEditor
+* documentation: ug
 ---
 
 # Server side events
@@ -34,9 +34,7 @@ In an ASPX page, define the RTE control and add server side event
 
 {% highlight html %}
 
-<ej:RTE ID="RTESample" Width="650" Height="440" runat="server" OnToolbarItemClick="RTESample_ToolbarItemClick">        
-
-</ej:RTE>
+    <ej:RTE ID="RTESample" Width="650" Height="440" runat="server" OnToolbarItemClick="RTESample_ToolbarItemClick"></ej:RTE>
 
 {% endhighlight %}
 

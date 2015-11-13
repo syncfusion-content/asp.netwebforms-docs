@@ -17,13 +17,7 @@ Add the following code to the script section in your ASPX page to initialize the
 
 {% highlight html %}
 
-
-
-<ej:RTE ID="rteSample" Width="850" EnableRTL="true" runat="server"></ej:RTE>
-
-
-
-
+    <ej:RTE ID="rteSample" Width="850" EnableRTL="true" runat="server"></ej:RTE>
 
 {% endhighlight %}
 
