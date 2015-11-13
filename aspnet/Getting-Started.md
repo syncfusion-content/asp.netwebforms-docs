@@ -95,7 +95,7 @@ Syncfusion NuGet package will copy all the dependent Scripts and CSS files in th
 <head runat="server">
   <!-- Insert the following content within "head" tag -->
   <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
-  <!-- If you head section already contain jQuery reference, please remove this jQuery reference -->
+  <!-- If your head section already contain jQuery reference, please remove this jQuery reference -->
   <script src='<%= Page.ResolveClientUrl("~/Scripts/jquery-1.10.2.min.js")%>' type="text/javascript"></script>
   <script src='<%= Page.ResolveClientUrl("~/Scripts/jquery.easing.1.3.min.js")%>' type="text/javascript"></script>
   <script src='<%= Page.ResolveClientUrl("~/Scripts/jquery.globalize.min.js")%>' type="text/javascript"></script>
@@ -148,13 +148,13 @@ Before pasting it into your application, create a folder structure with names ej
 
 ![](Getting-Started_images/Getting-Started_img16.png)
 
-N> The common-images folder is needed to be copied into your application mandatorily, as it includes all the common font icons and other images required for the control to render.<br/><br/></td></tr>
+N> The common-images folder is needed to be copied into your application mandatorily, as it includes all the common font icons and other images required for the control to render.
 
-Once the CSS files are added in your application, include the reference to ej.web.all.min.css file in the Site.Master page, within the head section.
+Once the CSS files are added in your application, include the reference to "ej.web.all.min.css" file in the Site.Master page, within the head section.
 
 {% highlight html %}
 
-<link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" /><br/></td></tr>
+<link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
 
 {% endhighlight %}
 
@@ -189,7 +189,7 @@ ej.web.all.min.js</td><td>
 
 N> Example for "Syncfusion Installed location" is "C:\Program Files (x86)\Syncfusion"
 
-Now, create a folder named ej under the Scripts folder of your application and place the copied files ej.web.all.min.js and ej.webform.min.js into it as shown below,
+Now, create a folder named `ej`, under the Scripts folder of your application and place the copied files ej.web.all.min.js and ej.webform.min.js into it as shown below,
 
 ![](Getting-Started_images/Getting-Started_img17.png)
 
