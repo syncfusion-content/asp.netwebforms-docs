@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Welcome to Syncfusion Essential ASP.NET
-description: Overview of Syncfusion Essential ASP.NET widgets based on ASP syntax.
-platform: ASP
+description: Overview of Syncfusion Essential ASP.NET
+platform: aspnet
 control: Introduction
 documentation: ug
 
