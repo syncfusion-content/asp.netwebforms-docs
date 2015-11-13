@@ -113,7 +113,7 @@ Here, you will see how to add the `DatePicker` control into the newly created Sy
 1. Add the below `DatePicker` code within the “Default.aspx” file
 
 {% highlight html %}
-<ej:DatePicker ID="DatePicker" runat="server"></ej:DatePicker><br/><br/></td></tr>
+<ej:DatePicker ID="DatePicker" runat="server"></ej:DatePicker>
 {% endhighlight %}
 
 2. Another way of adding control into the Default.aspx page is by making use of the Toolbox option present in the Visual Studio. When you install Essential Studio or ASP.NET setup in your machine, all the available ASP.NET controls are automatically configured into the Visual Studio Toolbox. You just need to drag the required control from the toolbox and then drop it into the Content section of the Default.aspx page, so that the required control code automatically gets generated
@@ -125,22 +125,22 @@ Here, you will see how to add the `DatePicker` control into the newly created Sy
 ![](Getting-Started_images/Getting-Started_img13.png)
 
 ## Manual Integration of Syncfusion ASP.NET controls into the new/existing Application
-
 This topic mainly focus on how to integrate the Syncfusion ASP.NET controls manually into the newly created/existing ASP.NET Web Forms application.
-### Creating ASP.NET Web Application
 
+### Creating ASP.NET Web Application
 Start the Visual Studio. Create a new Web Forms application by using File -> New -> Project and run the application by pressing Ctrl+F5, which shows something similar to the following screenshot in your web browser,
+
 ![](Getting-Started_images/Getting-Started_img14.png)
 
-
 ### For Existing Applications
-
 If you want to add our Syncfusion ASP.NET controls into your existing application, open your application and proceed with the following steps.
-### Adding required CSS files
 
+### Adding required CSS files
 To render the Syncfusion ASP.NET controls with its unique style and theme, it is necessary to refer the required CSS files into your application. You need to copy all the required CSS files into your application from the following location,
 
-N> <installed location>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\css\web<br/>For example, If you have installed the Essential Studio within C:\Program Files (x86), then navigate to the below location,<br/>C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\css\web<br/></td></tr>
+N> <installed location>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\css\web
+N> For example, If you have installed the Essential Studio within C:\Program Files (x86), then navigate to the below location,
+N> C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\css\web
 
 When you navigate to the above location, you can find the files shown in the below image, which you need to copy entirely and paste it into your root application. 
 
@@ -178,19 +178,20 @@ The dependencies are available in the following locations of your machine. Pleas
 <th>Files</th><th>Location</th></tr>
 <tr>
 <td colspan=1 rowspan=1>
-jquery-1.10.2.min.js<br/>jquery.easing.1.3.min.js<br/>jquery.globalize.min.js<br/>jsrender.min.js<br/></td><td colspan=1 rowspan=1>
-<Syncfusion Installed Location>\Essential Studio\13.1.0.21\JavaScript\assets\external<br/></td></tr>
+jquery-1.10.2.min.js<br/>jquery.easing.1.3.min.js<br/>jquery.globalize.min.js<br/>jsrender.min.js</td><td>
+<Syncfusion Installed Location>\Essential Studio\13.1.0.21\JavaScript\assets\external</td></tr>
 <tr>
 <td colspan=1 rowspan=1>
-ej.web.all.min.js<br/></td><td colspan=1 rowspan=1>
-<Syncfusion Installed Location>\Essential Studio\13.1.0.21\JavaScript\assets\scripts\web<br/></td></tr>
+ej.web.all.min.js<br/></td><td>
+&lt;Syncfusion Installed Location&gt;\Essential Studio\13.1.0.21\JavaScript\assets\scripts\web</td></tr>
 <tr>
-<td colspan=1 rowspan=1>
-ej.web.all.min.js<br/></td><td colspan=1 rowspan=1>
-<Syncfusion Installed Location>\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common<br/></td></tr>
+<td>
+ej.web.all.min.js</td><td>
+<Syncfusion Installed Location>\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common</td></tr>
 </table>
 
-N> Example for “Syncfusion Installed location” is “C:\Program Files (x86)\Syncfusion”
+N> Example for "Syncfusion Installed location" is "C:\Program Files (x86)\Syncfusion"
+
 Now, create a folder named ej under the Scripts folder of your application and place the copied files ej.web.all.min.js and ej.webform.min.js into it as shown below,
 
 ![](Getting-Started_images/Getting-Started_img17.png)
@@ -200,7 +201,13 @@ Add the below script references in the Site.Master file within the head section,
 
 {% highlight html %}
 
-<link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" /><br/><script src='<%= Page.ResolveClientUrl("~/Scripts/jquery-1.10.2.min.js")%>' type="text/javascript"></script><br/><script src='<%= Page.ResolveClientUrl("~/Scripts/jquery.easing.1.3.min.js")%>' type="text/javascript"></script><br/><script src='<%= Page.ResolveClientUrl("~/Scripts/jquery.globalize.min.js")%>' type="text/javascript"></script><br/><script src='<%= Page.ResolveClientUrl("~/Scripts/jsrender.min.js")%>' type="text/javascript"></script><br/><script src='<%= Page.ResolveClientUrl("~/Scripts/ej/ej.web.all.min.js")%>' type="text/javascript"></script><br/><script src='<%= Page.ResolveClientUrl("~/Scripts/ej/ej.webform.min.js")%>' type="text/javascript"></script><br/><br/></td></tr>
+<link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
+<script src='<%= Page.ResolveClientUrl("~/Scripts/jquery-1.10.2.min.js")%>' type="text/javascript"></script>
+<script src='<%= Page.ResolveClientUrl("~/Scripts/jquery.easing.1.3.min.js")%>' type="text/javascript"></script>
+<script src='<%= Page.ResolveClientUrl("~/Scripts/jquery.globalize.min.js")%>' type="text/javascript"></script>
+<script src='<%= Page.ResolveClientUrl("~/Scripts/jsrender.min.js")%>' type="text/javascript"></script>
+<script src='<%= Page.ResolveClientUrl("~/Scripts/ej/ej.web.all.min.js")%>' type="text/javascript"></script>
+<script src='<%= Page.ResolveClientUrl("~/Scripts/ej/ej.webform.min.js")%>' type="text/javascript"></script>
 
 {% endhighlight %}
 
