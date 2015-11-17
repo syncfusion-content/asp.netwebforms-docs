@@ -12,11 +12,10 @@ documentation: ug
 The ReportViewer has an option to show or hide items in the toolbar. To customize the toolbar items, use the ReportViewer’sToolbarSettings property. The toolbar template can also be customized by specifying custom template to ReportViewertoolbar.
 
 {% highlight c# %}
+
 protected void Page_Load(object sender, EventArgs e)
-
 {
-
-   this.viewer.ToolbarSettings.Items = Syncfusion.JavaScript.ReportViewerEnums.ToolbarItems.All & ~Syncfusion.JavaScript.ReportViewerEnums.ToolbarItems.Parameters;
-   
+    this.viewer.ToolbarSettings.Items = Syncfusion.JavaScript.ReportViewerEnums.ToolbarItems.All & ~Syncfusion.JavaScript.ReportViewerEnums.ToolbarItems.Parameters;
 }
+
 {% endhighlight %}
