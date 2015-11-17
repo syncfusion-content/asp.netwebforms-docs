@@ -229,7 +229,7 @@ You just need to drag the required control from the toolbox and then drop it int
 ![](Getting-Started_images/Getting-Started_img20.png)
 
 ### Registering Syncfusion Assemblies within the Web.config
-In your application’s web.config file, add the below assembly information within the &lt; assemblies &gt; tag.
+In your application’s web.config file, add the below assembly information within the &lt; assemblies &gt; tag and &lt; controls &gt; tag.
 
 {% highlight xml %}
 <system.web>
@@ -239,6 +239,11 @@ In your application’s web.config file, add the below assembly information with
 	  <add assembly="Syncfusion.EJ.Web, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
 	</assemblies>
   </compilation>
+  <controls>
+      <add  namespace="Syncfusion.JavaScript.Web" assembly="Syncfusion.EJ.Web, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/>
+      <add  namespace="Syncfusion.JavaScript.Web" assembly="Syncfusion.EJ, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/>
+      <add  namespace="Syncfusion.JavaScript.Models" assembly="Syncfusion.EJ, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/>
+  </controls>
 </system.web>
 {% endhighlight %}
 
