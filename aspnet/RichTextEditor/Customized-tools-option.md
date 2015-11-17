@@ -18,26 +18,21 @@ Add the following code in your ASPX page to render RTE with new tool item.
 
 
 {% highlight html %}
-
-
-
-<ej:RTE ID="rteSample" AllowEditing="true" ToolsList="customTool" runat="server">
+    <ej:RTE ID="rteSample" AllowEditing="true" ToolsList="customTool" runat="server">
 
     <Tools>
 
-        <CustomTool>
+        <CustomTools>
 
-            <ej:CustomTool Action="showDialog" Css="codeInsert" Name="codeInsert" Tooltip="Insert code snippets" />
+            <ej:CustomTools Action="showDialog" Css="codeInsert" Name="codeInsert" Text="codeInsert" Tooltip="Insert code snippets" />
 
-        </CustomTool>
+        </CustomTools>
 
     </Tools>
 
-</ej:RTE>
-
-
-
-<div id="TargetList">
+    </ej:RTE>
+    
+    <div id="TargetList">
 
     <ul>
 
@@ -49,11 +44,9 @@ Add the following code in your ASPX page to render RTE with new tool item.
 
     </ul>
 
-</div>
-
-
-
-<ej:Dialog ID="customSourceCode" Title="Paste you code and inset to RTE" ShowOnInit="false" EnableModal="true" Width="596" EnableResize="false" runat="server">
+    </div>
+    
+    <ej:Dialog ID="customSourceCode" Title="Paste you code and inset to RTE" ShowOnInit="false" EnableModal="true" Width="596" EnableResize="false" runat="server">
 
     <DialogContent>
 
@@ -105,12 +98,8 @@ Add the following code in your ASPX page to render RTE with new tool item.
 
     </DialogContent>
 
-</ej:Dialog>
-
-
-
-
-
+    </ej:Dialog>
+    
 {% endhighlight %}
 
 
@@ -119,7 +108,7 @@ To Add Custom Toolbar to the RTE control, you have to include Syncfusion.JavaScr
 
 {% highlight xml %}
 
-<system.web>
+    <system.web>
 
     <pages>
 
@@ -131,7 +120,7 @@ To Add Custom Toolbar to the RTE control, you have to include Syncfusion.JavaScr
 
     </pages>
 
-  </system.web>
+    </system.web>
 
 
 
@@ -195,13 +184,7 @@ Add the following code in your ASPX page.
 
 {% highlight html %}
 
-
-
-<ej:RTE ID="rteSample" Width="850" runat="server"></ej:RTE>
-
-
-
-
+    <ej:RTE ID="rteSample" Width="850" runat="server"></ej:RTE>
 
 {% endhighlight %}
 
@@ -217,7 +200,7 @@ Add the following code in script section.
 
     var rteeObj = $("#<%=rteSample.ClientID %>").data("ejRTE");
 
-    rteeObj.removeToolbarItem("<%=rteSample.ClientID %>createTable"); // remove toolbar item
+    rteeObj.removeToolbarItem("createTable"); // remove toolbar item
 
 
 
@@ -241,7 +224,7 @@ Add the following code in your ASPX page.
 
 
 
-<ej:RTE ID="rteSample" Width="850" runat="server">
+    <ej:RTE ID="rteSample" Width="850" runat="server">
 
 
 
@@ -255,15 +238,13 @@ Add the following code in script section.
 
 
 
-    var rteobj;
-
-    $("#<%=rteSample.ClientID %>").ejRTE();
+    var rteobj;   
 
 rteobj = $("#<%=rteSample.ClientID %>").data("ejRTE");
 
     //Here the Insert image toolbar icon is disabled
 
-rteobj.disableToolbarItem("<%=rteSample.ClientID%>image");
+rteobj.disableToolbarItem("image");
 
 
 

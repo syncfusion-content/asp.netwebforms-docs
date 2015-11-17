@@ -34,7 +34,7 @@ Add the following code example to the corresponding view page to render RichText
 {% highlight html %}
 
 
-<ej:RTE ID="FeedbackEditor" runat="server">
+    <ej:RTE ID="FeedbackEditor" runat="server">
 
 </ej:RTE>
 
@@ -56,13 +56,13 @@ The following code example renders the additional inbuilt toolbar items to RTE t
 
 {% highlight html %}
 
-<ej:RTE ID="FeedbackEditor" runat="server">
+    <ej:RTE ID="FeedbackEditor" runat="server">
 
     <Tools Font="fontName,fontSize,fontColor,backgroundColor">
 
     </Tools>
 
-</ej:RTE>
+    </ej:RTE>
 
 
 {% endhighlight %}
@@ -85,7 +85,7 @@ For example, consider ‘create table’ toolbar item is not necessary for the F
 
 {% highlight html %}
 
-<ej:RTE ID="FeedbackEditor" runat="server">
+    <ej:RTE ID="FeedbackEditor" runat="server">
 
 </ej:RTE>
 
@@ -103,7 +103,7 @@ For example, consider ‘create table’ toolbar item is not necessary for the F
 
          //remove the create table toolbar item by specifying the create table toolbar id  
 
-         editorObj.removeToolbarItem("<%=FeedbackEditor.ClientID%>createTable");
+         editorObj.removeToolbarItem("createTable");
 
      };
 
@@ -125,15 +125,11 @@ To Add Custom Toolbar to the RTE control, you can include Syncfusion.JavaScript.
 
 {% highlight xml %}
 
-<pages>
-
+    <pages>
       <controls>
-
         <add  namespace="Syncfusion.JavaScript.Models" assembly="Syncfusion.EJ" tagPrefix="ej"/>
-
        </controls>
-
-</pages>
+      </pages>
 
 {% endhighlight %}
 
@@ -143,19 +139,13 @@ The following code example creates the custom toolbar item in the RTE control.
 
 {% highlight html %}
 
-<ej:RTE ID="FeedbackEditor" runat="server">
-
+    <ej:RTE ID="FeedbackEditor" runat="server">
     <Tools>
-
-        <CustomTool>
-
-            <ej:CustomTool Name="Post Feedback" Css="Feedback" Tooltip="click to Post Feedback messages" />
-
-        </CustomTool>
-
+        <CustomTools>
+            <ej:CustomTools Name="Post Feedback" Text="Post Feedback" Css="Feedback" Tooltip="click to Post Feedback messages" />
+        </CustomTools>
     </Tools>
-
-</ej:RTE> 
+    </ej:RTE> 
 
 {% endhighlight %}
 
@@ -203,7 +193,7 @@ You can specify the custom tool same as previous section with validation operati
 
 {% highlight html %}
 
-<div class="commentSection">
+    <div class="commentSection">
 
     <div class="titleSection">
 
@@ -219,11 +209,11 @@ You can specify the custom tool same as previous section with validation operati
 
         <Tools>
 
-            <CustomTool>
+            <CustomTools>
 
-                <ej:CustomTool Action="validate" Name="PostFeedback" Css="Feedback" Tooltip="click to Post Feedback messages" />
+                <ej:CustomTools Action="validate" Text="Post Feedback" Name="PostFeedback" Css="Feedback" Tooltip="click to Post Feedback messages" />
 
-            </CustomTool>
+            </CustomTools>
 
         </Tools>
 
@@ -233,7 +223,7 @@ You can specify the custom tool same as previous section with validation operati
 
     <div class="output"></div>
 
-</div>
+    </div>
 
 {% endhighlight %}
 
