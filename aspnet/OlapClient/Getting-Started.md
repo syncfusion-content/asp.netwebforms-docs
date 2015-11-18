@@ -455,5 +455,5 @@ Now, OlapClient is rendered with OlapChart and PivotGrid with Customer Count ove
 
 ###WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple OlapClient. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/olapclient/data-binding).
+This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple OlapClient. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/olapclient/data-binding#wcf).
 

@@ -272,6 +272,6 @@ Now, OlapChart is rendered with Customer Count over a period of fiscal years acr
 
 ###WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple OlapChart. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/olapchart/data-binding).
+This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple OlapChart. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/olapchart/data-binding#wcf).
 
 

@@ -64,7 +64,9 @@ Once the widget is placed into the web page, add **‘ScriptManager’** next to
 
 {% highlight html %}
 
-<%@ Register Assembly="Syncfusion.EJ.Olap, Version=13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web.Olap" TagPrefix="ej" %> 
+<%@ Register Assembly="Syncfusion.EJ.Olap, Version=13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web.Olap" TagPrefix="ej" %>
+
+<%@ Register Assembly="Syncfusion.EJ, Version=13.3450.0.7, Culture=neutral, PublicKeyToken=3D67ED1F87D44C89" Namespace="Syncfusion.JavaScript.DataVisualization.Models" TagPrefix="ej" %>
 
 <html> 
     …… 
@@ -283,4 +285,4 @@ N> Now, OlapGauge is rendered with Internet Revenue for Internet Sales Amount ov
 
 ###WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple OlapGauge. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/olapgauge/data-binding).
+This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple OlapGauge. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/olapgauge/data-binding#wcf).
