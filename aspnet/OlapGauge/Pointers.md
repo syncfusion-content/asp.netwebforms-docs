@@ -9,353 +9,187 @@ documentation: ug
 
 # Pointers
 
-Pointers are used to indicate the range on scale area based on the values passed for the range values.
+## Pointer Types
 
-## Types of Pointers
+OlapGauge pointers has two types such as,
 
-Two different types of pointer available in OlapGuage are:
+* Needle
+* Marker
 
-1. Needle
-2. Marker
-
-## Changing Pointer Types
-
-
-You can set the pointer to Needle type by setting “pointerType”property to “Needle” and the pointer to Marker type by setting the “pointerType” properties to “Marker”.
+Needle type pointers are the default pointers which is always located at the center of the Gauge. There are 5 different shapes for the needle pointers which are Rectangle, Triangle, Trapezoid, Arrow and Image.
 
 {% highlight html %}
 
-<ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
-
-        <Scales>
-
-            <ej:CircularScales ShowRanges="true" Radius="150" ShowScaleBar="true" Size="1"  ShowIndicators="true" ShowLabels="true">
-
-                <Border Width ="0.5" />
-
-                <PointerCollection>                    
-
-                    <ej:Pointers Type="Needle" ShowBackNeedle="true" BackNeedleLength="20"  Length="125" Width="7" ></ej:Pointers>
-
-                    <ej:Pointers Type="Marker" MarkerType="Diamond" DistanceFromScale="5" Placement="Center" BackgroundColor="#29A4D9" Length="25" Width="15"></ej:Pointers>
-
-                </PointerCollection>
-
-                <TickCollection>
-
-                    <ej:CircularTicks Type="Major" DistanceFromScale="2" Height="16" Width="1" Color="#8c8c8c" />
-
-                    <ej:CircularTicks Type="Minor" Height="6" Width="1" DistanceFromScale="2" Color="#8c8c8c" />
-
-                </TickCollection>
-
-                <LabelCollection>
-
-                    <ej:CircularLabels Color="#8c8c8c"></ej:CircularLabels>
-
-                </LabelCollection>
-
-                <RangeCollection>
-
-                    <ej:CircularRanges DistanceFromScale="-5" BackgroundColor="#fc0606">
-
-                        <Border Color="#fc0606"/></ej:CircularRanges>
-
-                    <ej:CircularRanges DistanceFromScale="-5"></ej:CircularRanges>
-
-                </RangeCollection>
-
-                <CustomLabelCollection>
-
-                    <ej:CircularCustomLabel Color="#666666">
-
-                        <Position X="180" Y="290" />
-
-                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
-
-                    </ej:CircularCustomLabel>
-
-                    <ej:CircularCustomLabel Color="#666666">
-
-                        <Position X="180" Y="320" />
-
-                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
-
-                    </ej:CircularCustomLabel>
-
-                    <ej:CircularCustomLabel Color="#666666">
-
-                        <Position X="180" Y="150" />
-
-                        <Font Size="12px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
-
-                    </ej:CircularCustomLabel>
-
-                </CustomLabelCollection>   
-
-            </ej:CircularScales>
-
-        </Scales>
-
+<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">
+    <Scales>
+        <ej:CircularScales>
+            <PointerCollection>
+                <ej:Pointers Type="Needle" NeedleType="Trapezoid"></ej:Pointers>
+            </PointerCollection>
+        </ej:CircularScales>
+    </Scales>
 </ej:OlapGauge>
+
 {% endhighlight %}
 
-![](Pointers_images/Pointers_img1.png) 
+![](Pointers_images/needle pointer.png) 
 
-Pointer Type – Needle & Marker
-{:.caption}
-
-## Length and Width Customization
-
-You can customize the Pointer length and width using the “pointerLength” and “pointerWidth” property.
+For marker pointer, the available shapes are Rectangle, Triangle, Ellipse, Diamond, Pentagon, Circle, Slider, Pointer, Wedge, Trapezoid, RoundedRectangle and Image.
 
 {% highlight html %}
-<ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
-        <Scales>
-
-            <ej:CircularScales ShowRanges="true" Radius="150" ShowScaleBar="true" Size="1"  ShowIndicators="true" ShowLabels="true">
-
-                <Border Width ="0.5" />
-
-                <PointerCollection>                    
-
-                    <ej:Pointers Type="Needle" ShowBackNeedle="true" BackNeedleLength="20"  Length="60" Width="9" ></ej:Pointers>
-
-                    <ej:Pointers Type="Marker" MarkerType="Diamond" DistanceFromScale="5" Placement="Center" BackgroundColor="#29A4D9" Length="25" Width="15"></ej:Pointers>
-
-                </PointerCollection>
-
-                <TickCollection>
-
-                    <ej:CircularTicks Type="Major" DistanceFromScale="2" Height="16" Width="1" Color="#8c8c8c" />
-
-                    <ej:CircularTicks Type="Minor" Height="6" Width="1" DistanceFromScale="2" Color="#8c8c8c" />
-
-                </TickCollection>
-
-                <LabelCollection>
-
-                    <ej:CircularLabels Color="#8c8c8c"></ej:CircularLabels>
-
-                </LabelCollection>
-
-                <RangeCollection>
-
-                    <ej:CircularRanges DistanceFromScale="-5" BackgroundColor="#fc0606">
-
-                        <Border Color="#fc0606"/></ej:CircularRanges>
-
-                    <ej:CircularRanges DistanceFromScale="-5"></ej:CircularRanges>
-
-                </RangeCollection>
-
-                <CustomLabelCollection>
-
-                    <ej:CircularCustomLabel Color="#666666">
-
-                        <Position X="180" Y="290" />
-
-                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
-
-                    </ej:CircularCustomLabel>
-
-                    <ej:CircularCustomLabel Color="#666666">
-
-                        <Position X="180" Y="320" />
-
-                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
-
-                    </ej:CircularCustomLabel>
-
-                    <ej:CircularCustomLabel Color="#666666">
-
-                        <Position X="180" Y="150" />
-
-                        <Font Size="12px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
-
-                    </ej:CircularCustomLabel>
-
-                </CustomLabelCollection>   
-
-            </ej:CircularScales>
-
-        </Scales>
-
+<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">
+    <Scales>
+        <ej:CircularScales>
+            <PointerCollection>
+                <ej:Pointers Type="Marker" MarkerType="Diamond"></ej:Pointers>
+            </PointerCollection>
+        </ej:CircularScales>
+    </Scales>
 </ej:OlapGauge>
+
 {% endhighlight %}
 
-![](Pointers_images/Pointers_img2.png) 
+![](Pointers_images/marker pointer.png) 
 
-Length and Width Customization
-{:.caption}
+## Adding Pointer Collection
 
-## Background Customization 
-
-You can customize the Pointer background color using “backgroundcolor”property.
+Pointer collection can be directly added to the scales option within the OlapGauge widget as an array. 
 
 {% highlight html %}
-<ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
-        <Scales>
-
-            <ej:CircularScales ShowRanges="true" Radius="150" ShowScaleBar="true" Size="1"  ShowIndicators="true" ShowLabels="true">
-
-                <Border Width ="0.5" />
-
-                <PointerCollection>                    
-
-                    <ej:Pointers Type="Needle" ShowBackNeedle="true" BackNeedleLength="20"  Length="120" Width="7" BackgroundColor="red" ></ej:Pointers>
-
-                    <ej:Pointers Type="Marker" MarkerType="Diamond" DistanceFromScale="5" Placement="Center" BackgroundColor="#29A4D9" Length="25" Width="15"></ej:Pointers>
-
-                </PointerCollection>
-
-                <TickCollection>
-
-                    <ej:CircularTicks Type="Major" DistanceFromScale="2" Height="16" Width="1" Color="#8c8c8c" />
-
-                    <ej:CircularTicks Type="Minor" Height="6" Width="1" DistanceFromScale="2" Color="#8c8c8c" />
-
-                </TickCollection>
-
-                <LabelCollection>
-
-                    <ej:CircularLabels Color="#8c8c8c"></ej:CircularLabels>
-
-                </LabelCollection>
-
-                <RangeCollection>
-
-                    <ej:CircularRanges DistanceFromScale="-5" BackgroundColor="#fc0606">
-
-                        <Border Color="#fc0606"/></ej:CircularRanges>
-
-                    <ej:CircularRanges DistanceFromScale="-5"></ej:CircularRanges>
-
-                </RangeCollection>
-
-                <CustomLabelCollection>
-
-                    <ej:CircularCustomLabel Color="#666666">
-
-                        <Position X="180" Y="290" />
-
-                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
-
-                    </ej:CircularCustomLabel>
-
-                    <ej:CircularCustomLabel Color="#666666">
-
-                        <Position X="180" Y="320" />
-
-                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
-
-                    </ej:CircularCustomLabel>
-
-                    <ej:CircularCustomLabel Color="#666666">
-
-                        <Position X="180" Y="150" />
-
-                        <Font Size="12px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
-
-                    </ej:CircularCustomLabel>
-
-                </CustomLabelCollection>   
-
-            </ej:CircularScales>
-
-        </Scales>
-
+<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">
+    <Scales>
+        <ej:CircularScales>
+            <PointerCollection>
+                <ej:Pointers Type="Needle" NeedleType="Triangle"></ej:Pointers>
+                <ej:Pointers Type="Marker" MarkerType="Diamond"></ej:Pointers>
+            </PointerCollection>
+        </ej:CircularScales>
+    </Scales>
 </ej:OlapGauge>
+
 {% endhighlight  %}
 
-![](Pointers_images/Pointers_img3.png) 
+![](Pointers_images/pointer collection.png) 
 
-Background Color Customization
-{:.caption}
+## Appearance Customization
 
-## Shapes Customization
+The appearance of the pointer can be customized through the following properties.
 
-You can customize Pointershapes using the “needlestyle” property. 
+* **Border** – sets the “Color” and “Width” of the pointer border.
+* **BackgroundColor** – sets the background color of the pointer.
+* **Length** – sets the length of the pointer.
+* **Width** – sets the width of the pointer.
+* **Opacity** – sets the opacity of the pointer.  By default, the value is 1.
+* **Type** – sets the type of the pointer.  By default, the type is “Needle”.
 
 {% highlight html %}
-<ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
-        <Scales>
-
-            <ej:CircularScales ShowRanges="true" Radius="150" ShowScaleBar="true" Size="1"  ShowIndicators="true" ShowLabels="true">
-
-                <Border Width ="0.5" />
-
-                <PointerCollection>                    
-
-                    <ej:Pointers Type="Needle" ShowBackNeedle="true" BackNeedleLength="20"  Length="120" Width="7" NeedleType="Rectangle" ></ej:Pointers>
-
-                    <ej:Pointers Type="Marker" MarkerType="Diamond" DistanceFromScale="5" Placement="Center" BackgroundColor="#29A4D9" Length="25" Width="15"></ej:Pointers>
-
-                </PointerCollection>
-
-                <TickCollection>
-
-                    <ej:CircularTicks Type="Major" DistanceFromScale="2" Height="16" Width="1" Color="#8c8c8c" />
-
-                    <ej:CircularTicks Type="Minor" Height="6" Width="1" DistanceFromScale="2" Color="#8c8c8c" />
-
-                </TickCollection>
-
-                <LabelCollection>
-
-                    <ej:CircularLabels Color="#8c8c8c"></ej:CircularLabels>
-
-                </LabelCollection>
-
-                <RangeCollection>
-
-                    <ej:CircularRanges DistanceFromScale="-5" BackgroundColor="#fc0606">
-
-                        <Border Color="#fc0606"/></ej:CircularRanges>
-
-                    <ej:CircularRanges DistanceFromScale="-5"></ej:CircularRanges>
-
-                </RangeCollection>
-
-                <CustomLabelCollection>
-
-                    <ej:CircularCustomLabel Color="#666666">
-
-                        <Position X="180" Y="290" />
-
-                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
-
-                    </ej:CircularCustomLabel>
-
-                    <ej:CircularCustomLabel Color="#666666">
-
-                        <Position X="180" Y="320" />
-
-                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
-
-                    </ej:CircularCustomLabel>
-
-                    <ej:CircularCustomLabel Color="#666666">
-
-                        <Position X="180" Y="150" />
-
-                        <Font Size="12px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
-
-                    </ej:CircularCustomLabel>
-
-                </CustomLabelCollection>   
-
-            </ej:CircularScales>
-
-        </Scales>
-
+<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">
+    <Scales>
+        <ej:CircularScales>
+            <PointerCollection>
+                //For customizing needle pointer
+                <ej:Pointers Type="Needle" NeedleType="Triangle" BackgroundColor="yellow" Length="120" Width="7" Opacity="60">
+                    <Border Color="green" Width="2" />
+                </ej:Pointers>
+                //For customizing marker pointer
+                <ej:Pointers Type="Marker" MarkerType="Diamond" BackgroundColor="yellow" Length="25" Width="15" Opacity="80">
+                    <Border Color="green" Width="2" />
+                </ej:Pointers>
+            </PointerCollection>
+        </ej:CircularScales>
+    </Scales>
 </ej:OlapGauge>
+
 {% endhighlight %}
 
-![](Pointers_images/Pointers_img4.png) 
+![](Pointers_images/pointer Appearance.png) 
 
-Shape Customization
-{:.caption}
+## Pointer Position
+
+Pointer can be positioned with the help of below two properties.
+
+* **DistanceFromScale** -  defines the distance between scale and pointer. By default, the value is 0.
+* **Placement** -  defines the location of the pointer. By default, the value is “Center”.
+
+N> Both the properties can be applied only if the pointer type is set to “Marker”. Needle pointer type appears only at the center of the widget, which is its default position.
+
+{% highlight html %}
+
+<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">
+    <Scales>
+        <ej:CircularScales>
+            <PointerCollection>
+                <ej:Pointers Type="Marker" Placement="Far" DistanceFromScale="2">
+                </ej:Pointers>
+            </PointerCollection>
+        </ej:CircularScales>
+    </Scales>
+</ej:OlapGauge>
+
+{% endhighlight %}
+
+![](Pointers_images/pointer positioning.png)
+
+## Pointer Image
+
+It is possible to replace the pointers with image. To view the pointers as image, we need to set the appropriate location in the `ImageUrl` property.
+
+{% highlight html %}
+
+<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">
+    <Scales>
+        <ej:CircularScales>
+            <PointerCollection>
+                //For replacing needle pointer with image
+                <ej:Pointers Type="Needle" NeedleType="Image" ImageUrl="../image.png"></ej:Pointers>
+                //For replacing marker pointer with image
+                <ej:Pointers Type="Marker" MarkerType="Image" ImageUrl="../image.png"></ej:Pointers>
+            </PointerCollection>
+        </ej:CircularScales>
+    </Scales>
+</ej:OlapGauge>
+
+{% endhighlight %}
+
+![](Pointers_images/marker pointer with image.png)
+
+## Pointer Value Text
+
+To display the current value of the pointers in OlapGauge widget, **"PointerValueText"** option inside pointers is used.  Following are the properties used to enable and customize the pointer value text.
+ 
+* **ShowValue** – enables the pointer value text by setting the property to “true”. By default, its value is “true”.
+* **Distance** – sets the distance between pointer and text.
+* **Color** – sets the color of the text.
+* **Opacity** – sets the opacity of the text. By default, its value is 1.
+* **Angle** – sets the rotation angle of the text. By default, its value is 0.
+* **Font** – sets the font size, font style and font family of the text.
+
+{% highlight html %}
+
+<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">
+    <Scales>
+        <ej:CircularScales>
+            <PointerCollection>
+                //For needle type
+                <ej:Pointers Type="Needle">
+                    <PointerValueText ShowValue="true" Distance="10" Color="red" Opacity="70" Angle="20">
+                        <Font FontFamily="Arial" FontStyle="Normal" Size="15px"></Font>
+                    </PointerValueText>
+                </ej:Pointers>
+                //For marker type
+                <ej:Pointers Type="Marker">
+                    <PointerValueText ShowValue="true" Distance="40" Color="red" Opacity="70" Angle="-40">
+                        <Font FontFamily="Arial" FontStyle="Normal" Size="15px"></Font>
+                    </PointerValueText>
+                </ej:Pointers>
+            </PointerCollection>
+        </ej:CircularScales>
+    </Scales>
+</ej:OlapGauge>
+
+{% endhighlight %}
+
+![](Pointers_images/pointer value text.png)

@@ -7,109 +7,122 @@ control: OLAPChart
 documentation: ug
 ---
 
-# Legend
+#Legend
 
-Legend is a color code that helps to differentiate between chart items. Legend also has labels beside each color to indicate that it applies to information from Series 1, Series 2, and so on.
+##Legend Visibility
 
-## Legend Symbol
-
-In OlapChart, you can customize the legend symbol with different shapes like rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc. Default value of legend shape is “Rectangle”.
+You can enable or disable legend using the `Visible` property inside the `Legend` object. By default, legend is enabled in OlapChart.
 
 {% highlight html %}
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Title-Text="OlapChart in Essential Studio" >
 
-<Legend Visible="true" RowCount="3" Shape="star"/>
-
+<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+    //Legend Visibility
+    <Legend Visible="true" />
 </ej:OlapChart>
+
 {% endhighlight %}
 
 ![](Legend_images/Legend_img1.png) 
 
-Legend Symbol
-{:.caption}
-
-## Legend Position
-
-You can customize the legend position in top, bottom, left and right position of the Chart. Default value of legend position is “bottom”. 
+##Legend Shape
+You can customize the legend `Shape` in OlapChart widget to rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc. Default value of legend shape is “Rectangle”.
 
 {% highlight html %}
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Title-Text="OlapChart in Essential Studio" >
 
-<Legend Visible="true" RowCount="3" Shape="star" Position="top"/>
-
+<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+    //Applying legend shape
+    <Legend Visible="true" RowCount="3" Shape="star" />
 </ej:OlapChart>
+
 {% endhighlight %}
 
 ![](Legend_images/Legend_img2.png) 
 
-Legend Position
-{:.caption}
-
-## Legend Arrangement
-
-You can align the legend using alignment property of legend. This allows you to align the legend in center, far and near position of Chart Area. The Default value of legend alignment is “Center”.
+##Legend Position
+By using the `Position` property, you can place the legend at top, bottom, left or right of the OlapChart. Default value of legend position is "bottom".
 
 {% highlight html %}
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Title-Text="OlapChart in Essential Studio" >
 
-<Legend Visible="true" RowCount="3"  Alignment="Near"/>
-
+<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+    //Place the legend at top of the Chart
+    <Legend Visible="true" RowCount="3" Position="top" />
 </ej:OlapChart>
+
 {% endhighlight %}
 
-![](Legend_images/Legend_img3.png)
+![](Legend_images/Legend_img3.png) 
 
-Legend Arrangement
-{:.caption}
-
-## Legend Style 
-
-You can draw and customize the outline of Chart legend using border property of legend. Default value of legend border color is “Transparent”.
+##Legend Title
+To add the legend title, you have to specify the title text in `Title.text` property.
 
 {% highlight html %}
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Title-Text="OlapChart in Essential Studio" >
 
-<Legend Visible="true" RowCount="3"  Border-color="red" Border-width="2"/>
-
+<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+    //Place the legend at top of the Chart
+    <Legend Visible="true">
+        <Title text="Countries"></Title>
+    </Legend>
 </ej:OlapChart>
+
 {% endhighlight %}
 
 ![](Legend_images/Legend_img4.png) 
 
-Legend Style Customization
-{:.caption}
+##Legend Alignment
+You can align the legend to center, far and near based on its position in the Chart area using the `Alignment` option.
+ 
+{% highlight html %}
 
-## Legend Item 
-
-Legend item is represented by an icon or image and a text. This gets rendered automatically corresponding to each Series in the OlapChart. You can customize the Legend item.
-
-{% highlight html %} 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Title-Text="OLAP Chart in Essential Studio">
-
-<Legend Visible="true" Position="Right" Alignment="Near" ItemStyle-Width=1 />
-
+<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+    //Aligning the legend near to the Chart
+    <Legend Visible="true" RowCount="3" Alignment="near" />
 </ej:OlapChart>
+
 {% endhighlight %}
 
-![](Legend_images/Legend_img5.png) 
+![](Legend_images/Legend_img5.png)
 
-Legend Item Customization
-{:.caption}
-
-## Legend Text
-
-You can customize the legend text - font family, font style, font weight and size using font property of legend. The following code illustrates this.
+##Legend Items - Size and Border
+By using the legend `ItemStyle.Width`, `ItemStyle.Height` and `ItemStyle.Border` properties, you can change the legend items - size and border.
 
 {% highlight html %}
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Title-Text="OlapChart in Essential Studio" >
 
-<Legend Visible="true" RowCount="3" Font-FontFamily="Segoe UI" Font-    FontStyle="italic"></Legend>
-
+<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+    //Changing legend items border, height and width
+    <Legend Visible="true" ItemStyle-Width="12" ItemStyle-Height="12" ItemStyle-Border-Color="Magenta" ItemStyle-Border-Width="1.5">
 </ej:OlapChart>
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img6.png) 
+![](Legend_images/Legend_img6.png)
+ 
+##Legend Border
+By using the `Border` option in legend, you can customize border color and width.
 
-Legend Text Customization
-{:.caption}
+{% highlight html %}
+
+<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+    //Setting border color and width to legend
+    <Legend Visible="true" Border-Width="2" Border-Color="red" />
+</ej:OlapChart>
+
+{% endhighlight %}
+
+![](Legend_images/Legend_img7.png)
+
+##Legend Text
+By using the `Font` option, you can customize the font family, font style, font weight and size of the legend text. 
+
+{% highlight html %}
+
+<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+    <Legend>
+        //Customizing the legend text
+        <Font FontFamily="SegoeUI" FontSize="15px" FontStyle="Normal" FontWeight="Bold">
+       </Font>
+    </Legend>
+</ej:OlapChart>
+
+{% endhighlight %}
+
+![](Legend_images/Legend_img8.png)

@@ -7,62 +7,50 @@ control: OLAPChart
 documentation: ug
 ---
 
-# Title
+#Title
 
-Title is the area on top of the Chart control that displays the text explaining the OlapChart data. Title text is displayed in a customizable format.  
+##Title Text
 
-## Setting value to Chart Title
-
-Title property allows you to set the default title for a Chart as follows. 
+By using the `Title.text` property, you can add the title text for OlapChart.
 
 {% highlight html %}
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" title-text="OLAP Chart in Essential Studio">
 
+<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+    //Adding Chart title
+    <Title text="OlapChart"></Title>
 </ej:OlapChart>
 
 {% endhighlight %}
 
-![](Title_images/Title_img1.png)
+![](/aspnet/OlapChart/Title_images/Title_img1.png)
 
-OLAP Chart Title
-{:.caption}
-
-## Title Text Customization 
-
-You can customize the title text font using title.font property.
+##Title Alignment
+By using the `Title.TextAlignment` property, you can align the OlapChart controls title text to center, far or near.
 
 {% highlight html %}
-<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ControlsSection">
 
-     <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" title-text="OlapChart in Essential Studio">
-
-         <ClientSideEvents Load="load" />
-
-    </ej:OlapChart>
-
-</asp:Content>
-
-<asp:Content ID="Content3" runat="server" ContentPlaceHolderID="ScriptSection">
-
-<script type="text/javascript">
-
-        function load(args) {
-
-            this.model.title.font.size = "30px",
-
-            this.model.title.font.fontStyle = "italic",
-
-            this.model.title.font.fontWeight = "bold"
-
-        }
-
-</script>
-
-</asp:Content>
+<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc"  ClientIDMode="Static">
+    //Change title text alignment
+    <Title text="OlapChart" TextAlignment="near"></Title>
+</ej:OlapChart>
 
 {% endhighlight %}
 
-![](Title_images/Title_img2.png)
+![](/aspnet/OlapChart/Title_images/Title_img2.png)
 
-Customizing Chart Title
-{:.caption}
+##Title Customization
+
+By using the `Title` property, you can add the title text for X-axis and Y-axis. Also title text can be customized by using the `Text` and `Font` properties. On setting `EnableTrim` to true, title text could be trimmed based on its length.
+
+{% highlight html %}
+
+<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+    //Customizing axis title
+    <PrimaryXAxis Title-Text="Fiscal Year" Title-Font-Color="Grey" Title-Font-FontSize="16px" Title-Font-FontFamily="Segoe UI" Title-Font-FontWeight="Bold" >
+    </PrimaryXAxis>
+</ej:OlapChart>
+
+{% endhighlight %}
+
+![](/aspnet/OlapChart/Title_images/Title_img3.png) 
+

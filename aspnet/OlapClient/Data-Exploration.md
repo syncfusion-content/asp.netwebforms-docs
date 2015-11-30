@@ -9,109 +9,77 @@ documentation: ug
 
 # Data Exploration
 
-OLAP Client component allows its members to be sliced and diced. 
-
-Filtering: Members can be either filtered by value or by name leading to a systematic reduction in the body of data into smaller parts or views yielding more precise information.
-
-Sorting: Members can be arranged by their value based on condition resulting in an ordered view of the information. 
-
-Grouping: Allows you to place more than one dimension on rows or columns. You can see one row for every combination of the members from each of the dimensions. 
-
-## Filtering 
+## Filtering
 
 ### Filtering by Member
 
-After you click Split Button, Member Editor Dialog opens and through that you can check or uncheck the nodes to filter the members. Based on the selected members in the Member Editor Dialog, OLAPReport gets updated and generates the MDX query accordingly.
+After clicking Split button of a dimension, Member Editor Dialog opens through which members are filtered by checking and unchecking the check boxes corresponding to the members.  On clicking the OK button, based on the selected members in the Member Editor Dialog, OLAP Report gets updated and refreshes the PivotGrid and OlapChart controls.  The Cancel button is used for cancelling the selection. 
 
-![](Data-Exploration_images/Data-Exploration_img1.png) 
+![](Data-Exploration_images/filterbyvalue.png)
 
-Filtering by Members
-{:.caption} 
-
-The above filter illustrates that the members France and Germany, along with Queensland and South Australia are filtered from the Grid and Chart view.  
+The above filter illustrates that the members France and Germany, along with New South Wales and Queensland are filtered from the Grid and Chart controls.
 
 ### Filtering by Value
 
-The Filtering tab in the Sorting and Filtering dialog box of OLAP Client provides you with options to specify custom filters on the multidimensional data. It enables you to filter the rows and columns of the current (active) Measure. 
+The Filtering tab in the Sorting and Filtering dialog box of OlapClient provides the options to specify custom filters on the multidimensional data. It enables the user to filter the rows and columns of the selected Measure.
 
-#### Column Filter
+* **Column Filter** - Filters the column in which all of the row items fails to satisfy the filter condition.
+* **Row Filter** - Filters the row in which all of the column items fails to satisfy the filter condition.
 
-Column Filter checks each and every row of a column against the filter condition. The column is included in the result set, if all the rows of that column satisfy the condition, else that column is filtered.
+Sorting and Filtering dialog box for rows and columns are opened by clicking the corresponding icon in the toolbar.  
 
-#### Row Filter
+![](Data-Exploration_images/columnfilter.png)
 
-Row Filter checks each and every column of a row against the filter condition. The row is included in the result set, if all the columns of that row satisfy the condition, else that row is filtered.
+![](Data-Exploration_images/rowfilter.png)
 
-The options in Filtering tab are as follows:
+The following screenshot displays the Filtering tab in Sorting and Filtering Dialog box.
 
-* Measure: You can choose any one measure element from the list to apply the filter.
-* Condition: You can choose any one condition that needs to appear in the filter expression.
-* Value: You can enter the conditional value for the expression.
+![](Data-Exploration_images/filterdialog.png)
 
-The following screenshot displays the Filtering Dialog box.
+The options in the Filtering tab are as follows:
 
-![](Data-Exploration_images/Data-Exploration_img2.png) 
-
-Filtering Dialog
-{:.caption}
+* **Enabling Filtering** – Enables/Disables the Filtering option.
+* **Measure** – The measure for filtering is selected from the collection of measures in drop down list.
+* **Condition** – Condition with which the filtering is applied.
+* **Value** – Value to compare with each data according to the condition.
 
 The following screenshot displays data before Filtering.
-![](Data-Exploration_images/Data-Exploration_img3.png) 
 
-Before Filtering
-{:.caption}
+![](Data-Exploration_images/beforefiltering.png)
 
-The following screenshot displays the data after Filtering.
-![](Data-Exploration_images/Data-Exploration_img4.png) 
+The following screenshot displays the data after Filtering.
 
-After Filtering
-{:.caption}
+![](Data-Exploration_images/afterfiltering.png)
 
 ## Sorting
 
-### Sorting By Value
+The Sorting tab in the Sorting and Filtering dialog box provides the option to sort the results by rows/columns, either in ascending or descending order.  
 
-The Sorting tab in the Sorting and Filtering dialog box of OLAP Client provides you with options to sort the results by columns or rows, either in ascending or descending order.
+* **Column sorting** - Sorts the columns based on the summary values of each column.
+* **Row sorting** - Sorts the rows based on the summary values of each row.
 
-#### Column Sorting
+Sorting and Filtering dialog box for rows and columns are opened by clicking the corresponding icon in the toolbar.
 
-Column sorting sorts the columns in the result set based on the column total of each column.
+![](Data-Exploration_images/columnsort.png)
 
-#### Row Sorting
+![](Data-Exploration_images/rowsort.png)
 
-Row sorting sorts the rows in the result set based on the row total of each row.
+The following screenshot displays the Sorting and Filtering dialog box.
 
-The options in the Sorting tab are as follows: 
+![](Data-Exploration_images/sortdialog.png)
+	
+The options in the Sorting tab are as follows:
 
-* Measure: You can choose any one of the measure elements from the list to sort.
-* Order: You can specify the sorting order.
-* Preserve Hierarchy: You can sort the records without changing the hierarchy order.
+* **Measure** – The measure for sorting is selected from the collection of measures in drop down list.
+* **Order** – Specifies the sorting order.
+* **Preserve Hierarchy** – Sorts the records without changing the hierarchy order.
+  
+The following screenshot displays the data after applying sorting in ascending order for rows.
 
-The following screenshot displays the Sorting and Filtering dialog box.
-
-![](Data-Exploration_images/Data-Exploration_img5.png) 
-
-Sorting and Filtering Dialog
-{:.caption}
-
-The following screenshot displays the data before sorting.
-![](Data-Exploration_images/Data-Exploration_img6.png) 
-
-Before Sorting
-{:.caption}
-
-The following screenshot displays the data after sorting.
-
-![](Data-Exploration_images/Data-Exploration_img7.png) 
-
-After Sorting
-{:.caption}
+![](Data-Exploration_images/beforesorting.png)
 
 ## Grouping
 
-The data can be grouped when more than one dimension element is dropped into Categorical or Series in Axis Element Builder based on the order of addition, data is grouped and the report is updated. In the following example, the customer dimension values get grouped, with respect to date dimension values, likewise you can group multiple dimension values by dragging the elements from Cube Dimension Browsers to Axis Element Builder and the report values get updated according to it.
+The data can be grouped when more than one dimension element is added to Categorical or Series in Axis Element Builder.  Based on the order of addition, data is grouped and the report is updated. In the following example, the **Date** dimension values get grouped, with respect to **Customer** dimension values.  Likewise multiple dimension members can be grouped by dragging the elements from Cube Dimension Browsers to Axis Element Builder.
 
-![](Data-Exploration_images/Data-Exploration_img8.png) 
-
-Grouping
-{:.caption}
+![](Data-Exploration_images/grouping.png)
