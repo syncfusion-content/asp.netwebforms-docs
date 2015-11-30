@@ -7,1222 +7,730 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Getting Started
 
-This section briefly explains how you can create a PivotGrid in your application with ASP.NET.
+#Getting Started
 
-## Create your first PivotGrid in ASP.NET
+##Creating a simple application PivotGrid and OLAP datasource
 
-### Control Structure
+This section covers the information required to create a simple PivotGrid bound to OLAP datasource. 
 
-The following screenshot displays the PivotGrid Control.
+>**NOTE: ASP.NET Web Application will contain a service that transfers data to server-side, processes and returns them back to client-side for control rendering and re-rendering. The service utilized for communicate could be either WCF or WebAPI based on users requirement.**
 
-![](Getting-Started_images/Getting-Started_img1.png)
+###Project Initialization
 
-PivotGrid Control for ASP.NET
-{:.caption}
+Create a new **ASP.NET Empty Web Application** using Visual Studio IDE and name the project as **“PivotGridDemo”**.
 
-### Create an application
+Now add a "Web Form" to the Empty Web Application. For adding a "Web Form", right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select "Web Form" and name it as `GettingStarted.aspx` and click **"Add"**.
 
-This section explains how you can configure the PivotGrid component in an application.
+To set an appropriate start page, right-click on the **"GettingStarted.aspx"** in Solution Explorer and select **"Set As Start Page"**.
 
-You can also pass the required data to PivotGrid and customize it according to your requirements.
+Now add the following dependency libraries as references into your Web Application. In order to add them to your application, right-click on **References** in Solution Explorer and select **Add Reference**. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.  
 
-In this example you can see how PivotGrid component tabulates the Internet Sales Amount over a period of fiscal years across different Customer Geographic locations. 
+* Microsoft.AnalysisServices.AdomdClient
+* Syncfusion.Compression.Base
+* Syncfusion.Linq.Base
+* Syncfusion.Olap.Base
+* Syncfusion.PivotAnalysis.Base
+* Syncfusion.XlsIO.Base
+* Syncfusion.Pdf.Base
+* Syncfusion.DocIO.Base
+* Syncfusion.EJ
+* Syncfusion.EJ.Olap
 
-![](Getting-Started_images/Getting-Started_img2.png)
+N> If any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility is installed, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET].
 
-PivotGrid Control 
-{:.caption}
+###Scripts and CSS Initialization
 
-Open Visual Studio and create a new project by clicking New Project. You can select the Web category. Select the ASP.NET Empty Web Application template and then click OK.  
+The scripts and style sheets that are mandatorily required to render PivotGrid widget in a Web Application are mentioned in an appropriate order below:
 
-The following screenshot displays project creation wizard.
+1. ej.web.all.min.css
+2. jquery-1.10.2.min.js
+3. jquery.easing.1.3.min.js
+4. ej.web.all.min.js
 
-![](Getting-Started_images/Getting-Started_img3.png)
+[Click here](http://help.syncfusion.com/js/cdn) to know more about scripts and style sheets available online (CDN Link).
 
-New Project Wizard
-{:.caption}
-
-### Add Control in Application
-
-1. Right-click the project and select Add > New Folder.  Name the folder as olapgrid.
-
-   ![](Getting-Started_images/Getting-Started_img4.png)
-   
-   Add New Folder Wizard
-   {:.caption}
-   
-2. Now right-click on the pivotgrid folder that is newly created and select Add > New Item.
-
-   ![](Getting-Started_images/Getting-Started_img5.png) 
-
-   Add New Item Wizard
-   {:.caption}
-   
-3. Select Web Form and name it as Default.aspx.
-
-   ![](Getting-Started_images/Getting-Started_img6.png) 
-
-   Adding Web Form
-   {:.caption}
-
-4. Drag the PivotGrid control from the Syncfusion BI Web Toolbox into the Design page.
-
-   ![](Getting-Started_images/Getting-Started_img7.png) 
-
-   Adding Web Form
-   {:.caption}
-   
-   ![](Getting-Started_images/Getting-Started_img8.png) 
-
-   PivotGrid in the Design Page
-   {:.caption}
-   
-5. Enter the service URL value after dragging and dropping the control.
-
-   N> Instructions to create a service is explained briefly in the upcoming sections.
-
-   ![](Getting-Started_images/Getting-Started_img9.png) 
-
-   Adding URL value for service communication
-   {:.caption}
-   
-6. Initialize the control using the following code example.
-
-   N> URL value needs to be defined inorder to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately.
-
-{% highlight html %} 
-
-<body>
-
-    <form id="form1" runat="server">
-	
-    <div>   
-	
-      <ej:PivotGrid ID="PivotGrid1" Url="../wcf/PivotGridService.svc" runat="server">
-	  
-	  </ej:PivotGrid>
-	  
-    </div>
-	
-    </form>
-	
-</body>
-{% endhighlight %}
-
-### Add References, Scripts, Styles 
-
-### Add References
-
-1. In the Solution Explorer, right-click the References folder and then click Add Reference.
-
-   ![](Getting-Started_images/Getting-Started_img10.png) 
-
-   Add Reference
-   {:.caption}
-   
-   ![](Getting-Started_images/Getting-Started_img11.png) 
-
-   Referring Assemblies
-   {:.caption}
-   
-2. Select the following assemblies: 
-   
-   1. Microsoft.AnalysisServices.AdomdClient.dll,
-   2. Syncfusion.Compression.Base.dll,
-   3. Syncfusion.Linq.Base.dll,
-   4. Syncfusion.EJ.dll,
-   5. Syncfusion.EJ.Olap.dll,
-   6. Syncfusion.PivotAnalysis.Base.dll,
-   7. Syncfusion.Olap.Base.dll,
-
-3. Click OK.
-
-#### Add Scripts and Styles
-
-1. Add the script files and CSS files in the <head> tag of the Default.aspx page. 
-
-   N>1. Use the following code example while adding scripts and styles             
-     2. Same files can also be acquired from the following location
-   
-   C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScript\assets\
+Scripts and style sheets are referred under the <head> tag in **GettingStarted.aspx** page.
 
 {% highlight html %}
+
 <head>
-
-<link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-
-<script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
-
-<script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
-
-<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
-
+    <link href="http://cdn.syncfusion.com/13.3.0.7/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"> </script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/13.3.0.7/js/web/ej.web.all.min.js"> </script>
 </head>
+
 {% endhighlight %}
 
-### Add WCF service for PivotGrid
+###Control Initialization
 
-#### Create WCF Services
+Either drag and drop the **PivotGrid** control from the toolbox (under **Syncfusion BI Web** category) or manually define the widget like in the below code sample inside **"GettingStarted.aspx"** page.
+ 
+Once the widget is placed into the web page, add **'ScriptManager'** next to it in-order to generate appropriate scripts.
 
-1. Right-click the project and select Add > New Folder. Name the folder as wcf. Let the folder name "wcf" be in lower case.
+{% highlight html %}
 
-   ![](Getting-Started_images/Getting-Started_img12.png) 
+<%@ Register Assembly="Syncfusion.EJ.Olap, Version=13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web.Olap" TagPrefix="ej" %> 
+<html> 
+    …… 
+    ……
 
-   Add New Folder Wizard
-   {:.caption}
-   
-2. Now right-click the wcf folder created and select Add > New Item.
+<body>
+    <form runat="server">
+        <ej:PivotGrid ID="PivotGrid1" Url="../PivotGridService" runat="server" ClientIDMode="Static"></ej:PivotGrid>
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    </form>
+</body>
 
-   ![](Getting-Started_images/Getting-Started_img13.png)
+</html>
 
-   Add New Item Wizard
-   {:.caption}
-   
-3. In the Add New Item window, select WCF Service and name it as PivotGridService.svc. 
+{% endhighlight %}
 
-4. Click Add.
+The **“Url”** property in PivotGrid widget points the service endpoint, where data are processed and fetched in the form of JSON. The services used in PivotGrid widget as endpoint are WCF and WebAPI.
 
-   ![](Getting-Started_images/Getting-Started_img14.png) 
+N> The above “GettingStarted.aspx” contains WebAPI Url, which is, “../PivotGridService”. If WCF service is used as endpoint, the Url would look like “../PivotGridService.svc”.
 
-   Creating WCF Service
-   {:.caption}
-   
-### Add service methods inside Interface
+If you are manually entering the code instead of drag and drop operation from toolbox, then you need to register the referenced assemblies in Web.config file. 
 
-Add the following code example inside the IPivotGridService interface available in an IPivotGridService.cs file.
 
-{% highlight C# %}
-[ServiceContract(SessionMode = SessionMode.Allowed)]
+{% highlight xml %}
 
-public interface IPivotGridService
+<compilation debug="true" targetFramework="4.5">
+    <assemblies> 
+        …… 
+        ……
+        <add assembly="Syncfusion.EJ, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.EJ.Olap, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+         <add assembly="Syncfusion.Compression.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.Linq.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.Olap.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.PivotAnalysis.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.Pdf.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.XlsIO.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.DocIO.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
+       
+    </assemblies>
+</compilation>
+    
+{% endhighlight %}
+
+###WebAPI
+
+**Adding a WebAPI Controller**
+
+To add a WebAPI controller in an existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **WebAPI Controller Class** and name it as `PivotGridServiceController.cs`, click Add.
+
+Now, WebAPI controller is added to the application successfully containing the file **“PivotGridServiceController.cs”**.
+
+N> While adding WebAPI Controller Class, name it with the suffix 'Controller' that is mandatory. For example, in this demo the controller is named as "PivotGridServiceController".
+
+Next, remove all the existing methods such as "Get", "Post", "Put" and "Delete" present inside `PivotGridServiceController.cs` file.
+
+{% highlight c# %}
+
+namespace PivotGridDemo
 {
-    [OperationContract]    
-    Dictionary<string, object> InitializeGrid(string action, string gridLayout, bool enablePivotFieldList, object customObject);
+    public class PivotGridServiceController : ApiController
+    {
         
-    [OperationContract]
-    Dictionary<string, object> DrillGrid(string action, string cellPosition, string currentReport, string headerInfo, string gridLayout, object customObject);
-        
-    [OperationContract]
-    Dictionary<string, object> Paging(string action, string pagingInfo, string currentReport, string gridLayout, object customObject);
-        
-    [OperationContract]
-    Dictionary<string, object> NodeDropped(string action, string dropType, string nodeInfo, string filterParams, string currentReport);
-        
-    [OperationContract]
-    Dictionary<string, object> RemoveButton(string action, string headerInfo, string currentReport);
-        
-    [OperationContract]
-    Dictionary<string, object> FetchMembers(string action, string headerTag, string currentReport);
-        
-    [OperationContract]
-    Dictionary<string, object> Filtering(string action, string filterParams, string currentReport);
-        
-    [OperationContract]
-    Dictionary<string, object> MemberExpanded(string action, bool checkedStatus, string parentNode, string tag, string cubeName, string currentReport);
-        
-    [OperationContract]
-    void Export(System.IO.Stream stream);
-        
+    }
 }
+
 {% endhighlight %}
 
-### Add Namespaces
+**Adding the List of Namespaces**
 
-Add the following namespaces required to implement the service methods.
+The following are the list of namespaces to be added on top of the main class inside `PivotGridServiceController.cs` file.
 
-{% highlight C# %}
+{% highlight c# %}
+
+using Syncfusion.JavaScript.Olap;
+using Syncfusion.Olap.Manager;
+using Syncfusion.Olap.Reports;
 using System;
-
 using System.Collections.Generic;
-
+using System.Configuration;
 using System.Linq;
-
-using System.Runtime.Serialization;
-
-using System.ServiceModel;
-
-using System.Text;
-
-using System.ServiceModel.Activation;
-
+using System.Net;
+using System.Net.Http;
+using System.Web;
+using System.Web.Http;
 using System.Web.Script.Serialization;
 
-using Syncfusion.Olap.Manager;
+namespace PivotGridDemo
+{
+    public class PivotGridServiceController: ApiController
+    {
+    
+    }
+}
 
-using Syncfusion.Olap.Reports;
-
-using Syncfusion.JavaScript;
-
-using OLAPUTILS = Syncfusion.JavaScript.Olap;
 {% endhighlight %}
 
-### Create Class in Service file
+**Datasource Initialization**
 
-You can create the PivotGridService class to implement the service methods. You can inherit the class from the IPivotGridService interface that is created automatically while adding any new service.
+Now, the connection string to connect OLAP Cube, PivotGrid and JavaScriptSerializer instances are created immediately inside the main class in PivotGridServiceController.cs file.
 
+{% highlight c# %}
 
-{% highlight C# %}
-namespace Sample.wcf
+namespace PivotGridDemo
 {
-
-    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    public class PivotGridService : IPivotGridService
-	
-    {        
+    public class PivotGridServiceController : ApiController
+    {
+        PivotGrid htmlHelper = new PivotGrid();
+        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        JavaScriptSerializer serializer = new JavaScriptSerializer();
+        //Other codes
 
     }
 }
+
 {% endhighlight %}
 
-### Implement Service Methods
+**Service methods in WebAPI Controller**
 
-You can add the following methods to the service that is invoked for any server-side operations to be performed in PivotGrid.
-
-1. Initialize the PivotGrid helper class. 
+Define the service methods inside PivotGridServiceController class, found inside `PivotGridServiceController.cs` file, created while adding WebAPI Controller Class to the Application.
 
 {% highlight c# %}
-PivotGrid htmlHelper = new PivotGrid();
-
-static string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
-
-JavaScriptSerializer serializer = new JavaScriptSerializer();
-{% endhighlight %}
-
-2.Add the following relevant service methods.
-
-{% highlight c# %}
-//This method provides the required information from server-side when initializing the PivotGrid. 
-
-public Dictionary < string, object > InitializeGrid(string action, string gridLayout, bool enablePivotFieldList, object customObject) {
-
-	OlapDataManager DataManager = null;
-	
-	dynamic customData = serializer.Deserialize < dynamic > (customObject.ToString());
-	
-	DataManager = new OlapDataManager(connectionString);
-	
-	DataManager.SetCurrentReport(CreateOlapReport());
-	
-	return htmlHelper.GetJsonData(action, DataManager, gridLayout, enablePivotFieldList);
-	
-}
-
-//This method provides the required information from server-side when a drill up or down operation is performed in PivotGrid.
-
-public Dictionary < string, object > DrillGrid(string action, string cellPosition, string currentReport, string headerInfo, string layout, object customObject) {
-
-	dynamic customData = serializer.Deserialize < dynamic > (customObject.ToString());
-	
-	OlapDataManager DataManager = new OlapDataManager(connectionString);
-	
-	DataManager = new OlapDataManager(connectionString);
-	
-	DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
-	
-	return htmlHelper.GetJsonData(action, connectionString, DataManager, cellPosition, headerInfo, layout);
-	
-}
-
-//This method provides the required information from server-side when the tree node is dropped in PivotTable Field List.
-
-public Dictionary < string, object > NodeDropped(string action, string dropType, string nodeInfo, string filterParams, string currentReport) {
-
-	OlapDataManager DataManager = new OlapDataManager(connectionString);
-	
-	DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
-	
-	return htmlHelper.GetJsonData(action, DataManager, dropType, nodeInfo, filterParams, true);
-	
-}
-
-//This method provides the required information from server-side when filtering values in PivotTable Field List.
-
-public Dictionary < string, object > Filtering(string action, string filterParams, string currentReport) {
-
-	OlapDataManager DataManager = new OlapDataManager(connectionString);
-	
-	DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
-	
-	return htmlHelper.GetJsonData(action, DataManager, null, filterParams);
-	
-}
-
-//This method provides the required information from server-side when opening the editor in PivotTable Field List.
-
-public Dictionary < string, object > FetchMembers(string action, string headerTag, string currentReport) {
-
-	OlapDataManager DataManager = new OlapDataManager(connectionString);
-	
-	DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
-	
-	return htmlHelper.GetJsonData(action, DataManager, null, headerTag);
-	
-}
-
-//This method provides the required information from server-side when paging is done in PivotGrid.
-
-public Dictionary < string, object > Paging(string action, string pagingInfo, string currentReport, string gridLayout, object customObject) {
-
-	OlapDataManager DataManager = new OlapDataManager(connectionString);
-	
-	DataManager.SetCurrentReport(htmlHelper.SetPaging(currentReport, pagingInfo));
-	
-	return htmlHelper.GetJsonData(action, DataManager, gridLayout);
-	
-}
-
-//This method provides the required information from server-side when removing the split button from PivotTable Field List.
-
-public Dictionary < string, object > RemoveButton(string action, string headerInfo, string currentReport) {
-
-	OlapDataManager DataManager = new OlapDataManager(connectionString);
-	
-	DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
-	
-	return htmlHelper.GetJsonData(action, DataManager, null, headerInfo);
-	
-}
-
-//This method provides the required information from server-side when expanding member in member editor.
-
-public Dictionary < string, object > MemberExpanded(string action, bool checkedStatus, string parentNode, string tag, string cubeName, string currentReport) {
-
-	OlapDataManager DataManager = new OlapDataManager(connectionString);
-	
-	if (!string.IsNullOrEmpty(currentReport)) 
-	
-	DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
-	
-	return htmlHelper.GetJsonData(action, DataManager, checkedStatus, parentNode, tag, cubeName);
-	
-}
-
-//This method export OlapGrid to Excel, word, CSV and PDF.
-
-public void Export(System.IO.Stream stream) {
-
-	System.IO.StreamReader sReader = new System.IO.StreamReader(stream);
-	
-	string args = System.Web.HttpContext.Current.Server.UrlDecode(sReader.ReadToEnd());
-	
-	OlapDataManager DataManager = new OlapDataManager(connectionString);
-	
-	string fileName = "Sample";
-	
-	htmlHelper.ExportPivotGrid(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
-	
-}
-
-//This method carries the information about the default report that is rendered within PivotGrid initially. 
-
-private OlapReport CreateOlapReport() {
-
-	OlapReport olapReport = new OlapReport();
-	
-	olapReport.CurrentCubeName = "Adventure Works";
-	
-	MeasureElements measureElement = new MeasureElements();
-	
-	measureElement.Elements.Add(new MeasureElement {
-	
-		UniqueName = "[Measures].[Internet Sales Amount]"
-	});
-
-	DimensionElement dimensionElementRow = new DimensionElement();
-	
-	dimensionElementRow.Name = "Date";
-	
-	dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
-
-	DimensionElement dimensionElementColumn = new DimensionElement();
-	
-	dimensionElementColumn.Name = "Customer";
-	
-	dimensionElementColumn.AddLevel("Customer Geography", "Country");
-
-	olapReport.SeriesElements.Add(dimensionElementRow);
-	
-	olapReport.CategoricalElements.Add(dimensionElementColumn);
-	
-	olapReport.CategoricalElements.Add(measureElement);
-
-	return olapReport;
-	
-}
-{% endhighlight %}
-
-### Configure Web.Config
-
-1. You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your 
-   application the service name is "Sample.wcf.PivotGridService" where "PivotGridService" is the service class name and “Sample.wcf" is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.  
-   
-   i) contract: This property indicates the contract of the endpoint is exposing. Here you are referring IPivotGridService contract and hence it is "Sample.wcf.IPivotGridService".
-
-   ii) binding: In your application, you use webHttpBinding to post and receive the requests and responses between the client-end and the service-end.
-
-   iii) behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint. endpointBehaviors are illustrated as follows.
-
-   ~~~ html
-   <system.serviceModel>
-   
-    <services>
-	
-        <service name="Sample.wcf.PivotGridService">
-		
-            <endpoint address="" behaviorConfiguration="Sample.wcf.PivotGridServiceAspNetAjaxBehavior" binding="webHttpBinding" contract="Sample.wcf.IPivotGridService" />
-			
-        </service>
-		
-    </services>
-	
-   </system.serviceModel>
-   ~~~
-
-2. The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only 
-   by using this property. In the following code example "Sample.wcf.PivotGridServiceAspNetAjaxBehavior" points the PivotGridService class under the namespace Sample.wcf in PivotGridService.svc.cs file that is the appropriate behavior for the endpoint. 
-
-   ~~~ html
-   <system.serviceModel>
-   
-    <behaviors>
-	
-        <endpointBehaviors>
-		
-            <behavior name="Sample.wcf.PivotGridServiceAspNetAjaxBehavior">
-			
-                <enableWebScript />
-				
-            </behavior>
-			
-        </endpointBehaviors>
-		
-    </behaviors>
-	
-   </system.serviceModel>
-   ~~~
-   
-3. Register the assemblies in the web.config file by adding the following code example.
-
-   ~~~ html
-   <system.web>
-   
-    <compilation debug="true" targetFramework="4.5">
-	
-        <assemblies>
-		
-            <add assembly="Syncfusion.EJ, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-			
-            <add assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-			
-            <add assembly="Syncfusion.PivotAnalysis.Base, Version= X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-			
-            <add assembly="Syncfusion.Olap.Base, Version=X.X.X.X, Culture=neutral,      PublicKeyToken=3D67ED1F87D44C89" />
-			
-            <add assembly="Syncfusion.Pdf.Base, Version= X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-			
-            <add assembly="Syncfusion.XlsIO.Base, Version= X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-			
-            <add assembly="Syncfusion.DocIO.Base, Version= X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-			
-        </assemblies>
-		
-    </compilation>
-	
-   </system.web>
-   ~~~
-
-   N> x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
-
-4. Register the namespace in web.config file by adding the following code example.
-
-   ~~~ html
-   <system.web>
-   
-    <pages validateRequest="false">
-	
-        <controls>
-		
-            <add namespace="Syncfusion.JavaScript.Web.Olap" assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej" />
-			
-        </controls>
-		
-    </pages>
-	
-   </system.web>
-   ~~~
-  
-   N> In this example, “Sample.wcf” indicates the namespace in the WCF Service and “PivotGridService” indicates the class name in the WCF Service. And x.x.x.x in the above code example refers to the current version of the Essential Studio running in your system.
-
-In summary, this getting started tutorial gives you an overview of PivotGrid, its architecture, process flow, how to configure and integrate with a VS application through a simple example that is self-explanatory.
-
-![](Getting-Started_images/Getting-Started_img15.png) 
- 
-Internet Sales Amount over different fiscal years in different customer locations
-{:.caption}
-
-### Relational
-
-### Control Structure
-
-The following screenshot displays the PivotGrid Control.
-
-![](Getting-Started_images/Getting-Started_img16.png) 
-
-PivotGrid Control for ASP.NET
-{:.caption}
-
-### Create an application
-
-This section explains how you can configure the PivotGrid component in an application.
-
-You can also pass the required data to PivotGrid and customize it according to your requirements.
-
-This example illustrates how the PivotGrid component tabulates the sales or revenue amount over a period of fiscal years across different geographic locations. 
-
-![](Getting-Started_images/Getting-Started_img17.png) 
-
-PivotGrid
-{:.caption}
-
-Open Visual Studio and create a new project by clicking New Project. You can select the Web category. Select the ASP.NET Empty Web Application template and then click OK.  
-
-The following screenshot displays project creation wizard
-
-![](Getting-Started_images/Getting-Started_img18.png) 
-
-New Project Wizard
-{:.caption}
-
-### Add Control in Application
-
-1. Right-click the project and select Add > New Folder.  Name the folder as pivotgrid.
-
-   ![](Getting-Started_images/Getting-Started_img19.png) 
-
-   Add New Folder Wizard
-   {:.caption}
-   
-2. Now right-click on the pivotgrid folder that has newly been created and select Add > New Item.
-
-   ![](Getting-Started_images/Getting-Started_img20.png) 
-
-   Add New Item Wizard
-   {:.caption}
-   
-3. Select Web Form and name it as Default.aspx.
-
-   ![](Getting-Started_images/Getting-Started_img21.png) 
-
-   Adding Web Form
-   {:.caption}
-   
-4. Drag the PivotGrid control from the Syncfusion BI Web Toolbox into the Design page.
-
-   ![](Getting-Started_images/Getting-Started_img22.png) 
-
-   PivotGrid in the Source Page
-   {:.caption}
-   
-   ![](Getting-Started_images/Getting-Started_img23.png) 
-
-   PivotGrid in the Design Page
-   {:.caption}
-   
-5. Enter the service URL value after dragging and dropping the control.
-
-   N> Instructions to create a service is explained briefly in the upcoming sections.
-
-   ![](Getting-Started_images/Getting-Started_img24.png) 
-
-   Adding URL value for service communication
-   {:.caption}
-   
-6. Initialize the control using the following code example.
- 
-   N> URL value needs to be defined in order to fetch the data from the service. Default properties values need to be initialized as follows to render the control appropriately.
-
-{% highlight html %}
-<body>
-
-    <form id="form1" runat="server">
-	
-    <div>   
-	
-      <ej:PivotGrid ID="PivotGrid1" Url="../wcf/PivotGridService.svc" runat="server">
-	  
-       </ej:PivotGrid>
-	   
-    </div>
-	
-    </form>
-	
-</body>
-{% endhighlight %}
- 
- 
-### Add References, Scripts, Styles 
-
-#### Add References
-
-1. In the Solution Explorer, right-click the References folder and then click Add Reference.
-
-
-   ![](Getting-Started_images/Getting-Started_img25.png) 
-
-   Add Reference
-   {:.caption}
-   
-   ![](Getting-Started_images/Getting-Started_img26.png) 
-
-   Referring Assemblies
-   {:.caption}
-   
-2. Select the following assemblies: 
-   1.Microsoft.AnalysisServices.AdomdClient.dll
-   2. Syncfusion.Compression.Base.dll,
-   3. Syncfusion.Linq.Base.dll,
-   4. Syncfusion.EJ.dll,
-   5. Syncfusion.EJ.Olap.dll,
-   6. Syncfusion.PivotAnalysis.Base.dll,
-   7. Syncfusion.Olap.Base.dll,
-   8. Syncfusion.XlsIO.Base.dll.
-   9. Syncfusion.Pdf.Base.dll
-   10.Syncfusion.DocIO.Base.dll 
-
-
-3. Click OK.
-
-#### Add Scripts and Styles
-
-1. Add the script files and CSS files in the <head> tag of the Default.aspx page.
-
-   N> 1. Use the following code example while adding scripts and styles             
-   N> 2. Same files can also be acquired from the following location  
- 
-   C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\JavaScript\assets\
-
-### Add WCF Service for PivotGrid
-
-{% highlight html %}
-<head>
-
-    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js">
-	
-    </script>
-	
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript">
-	
-    </script>
-	
-    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/web/ej.web.all.min.js">
-	
-    </script>
-
-</head>
-{% endhighlight %}
-
-### Create WCF Services
-
-1. Right-click the project and select Add > New Folder. Name the folder as wcf. Let the folder name "wcf" be in lower case.
-
-   ![](Getting-Started_images/Getting-Started_img27.png) 
-
-   Add New Folder Wizard
-   {:.caption}
-
-2. Now right-click the wcf folder created and select Add > New Item.
-
-   ![](Getting-Started_images/Getting-Started_img28.png) 
-
-   Add New Item Wizard
-   {:.caption}
-   
-3. In the Add New Item window, select WCF Service and name it as PivotGridService.svc. 
- 
-4. Click Add.
-
-   ![](Getting-Started_images/Getting-Started_img29.png)
-   
-   Creating WCF Service
-   {:.caption}
-
-### Add service methods inside Interface
-
-Add the following code example inside the IPivotGridService interface available in an IPivotGridService.cs file.
-
-{% highlight C# %}
-public interface IPivotGridService
+namespace PivotGridDemo
 {
-   [OperationContract]
-   Dictionary<string, object> InitializeGrid(string action);
-   
-   [OperationContract]
-   Dictionary<string, object> FetchMembers(string action, string headerTag, string sortedHeaders, string currentReport);
-   
-   [OperationContract]
-   Dictionary<string, object> Filtering(string action, string filterParams, string sortedHeaders, string currentReport);
-   
-   [OperationContract]
-   Dictionary<string, object> NodeStateModified(string action, string headerTag, string dropAxis, string sortedHeaders, string filterParams, string currentReport);
-   
-   [OperationContract]
-   Dictionary<string, object> NodeDropped(string action, string dropAxis, string headerTag, string sortedHeaders, string filterParams, string currentReport);
-   
-   [OperationContract]
-   Dictionary < string, object > Sorting(string action, string sortedHeaders, string currentReport);  
+    public class PivotGridServiceController : ApiController
+    {
+        PivotGrid htmlHelper = new PivotGrid();
+        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        JavaScriptSerializer serializer = new JavaScriptSerializer();
 
+        [System.Web.Http.ActionName("InitializeGrid")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> InitializeGrid(Dictionary<string, object> jsonResult)
+        {
+            Dictionary<string, object> customDict = new Dictionary<string, object>();
+            OlapDataManager DataManager = new OlapDataManager(connectionString);
+            DataManager.SetCurrentReport(CreateOlapReport());
+            customDict = htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["gridLayout"].ToString(), Convert.ToBoolean(jsonResult
+["enablePivotFieldList"].ToString()));
+            return customDict;
+        }
+
+        [System.Web.Http.ActionName("DrillGrid")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> DrillGrid(Dictionary<string, object> jsonResult)
+        {
+            dynamic customData = serializer.Deserialize<dynamic>(jsonResult["customObject"].ToString());
+            OlapDataManager DataManager = new OlapDataManager(connectionString);
+            DataManager = new OlapDataManager(connectionString);
+            if ((customData.ContainsKey("Language")))
+            {
+                DataManager.Culture = new System.Globalization.CultureInfo((customData["Language"]));
+                DataManager.OverrideDefaultFormatStrings = true;
+            }
+            DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
+            return htmlHelper.GetJsonData(jsonResult["action"].ToString(), connectionString, DataManager, jsonResult["cellPosition"].ToString(), jsonResult
+["headerInfo"].ToString(), jsonResult["layout"].ToString());
+        }
+
+        [System.Web.Http.ActionName("NodeDropped")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> NodeDropped(Dictionary<string, object> jsonResult)
+        {
+            OlapDataManager DataManager = new OlapDataManager(connectionString);
+            DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
+            return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["dropType"].ToString(), jsonResult["nodeInfo"].ToString(), null,
+true);
+        }
+
+        [System.Web.Http.ActionName("Filtering")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> Filtering(Dictionary<string, object> jsonResult)
+        {
+            OlapDataManager DataManager = new OlapDataManager(connectionString);
+            DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
+            return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, null, jsonResult["filterParams"].ToString());
+        }
+
+        [System.Web.Http.ActionName("FetchMembers")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> FetchMembers(Dictionary<string, object> jsonResult)
+        {
+            OlapDataManager DataManager = new OlapDataManager(connectionString);
+            DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
+            return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, null, jsonResult["headerTag"].ToString());
+        }
+
+        [System.Web.Http.ActionName("Paging")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> Paging(Dictionary<string, object> jsonResult)
+        {
+            OlapDataManager DataManager = new OlapDataManager(connectionString);
+            DataManager.SetCurrentReport(htmlHelper.SetPaging(jsonResult["currentReport"].ToString(), jsonResult["pagingInfo"].ToString()));
+            return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["gridLayout"].ToString());
+        }
+
+        [System.Web.Http.ActionName("RemoveButton")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> RemoveButton(Dictionary<string, object> jsonResult)
+        {
+            OlapDataManager DataManager = new OlapDataManager(connectionString);
+            DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
+            return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, null, jsonResult["headerInfo"].ToString());
+        }
+
+        [System.Web.Http.ActionName("MemberExpanded")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> MemberExpanded(Dictionary<string, object> jsonResult)
+        {
+            OlapDataManager DataManager = new OlapDataManager(connectionString);
+            if (!string.IsNullOrEmpty(jsonResult["currentReport"].ToString()))
+                DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
+            return htmlHelper.GetJsonData(jsonResult["actiion"].ToString(), DataManager, jsonResult["checkedStatus"].ToString(), jsonResult["parentNode"].ToString(),
+jsonResult["tag"].ToString(), jsonResult["cubeName"].ToString());
+        }
+
+        [System.Web.Http.ActionName("Export")]
+        [System.Web.Http.HttpPost]
+        public void Export(System.IO.Stream stream)
+        {
+            System.IO.StreamReader sReader = new System.IO.StreamReader(stream);
+            string args = System.Web.HttpContext.Current.Server.UrlDecode(sReader.ReadToEnd());
+            OlapDataManager DataManager = new OlapDataManager(connectionString);
+            string fileName = "Sample";
+            htmlHelper.ExportPivotGrid(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
+        }
+
+        private OlapReport CreateOlapReport()
+        {
+            OlapReport olapReport = new OlapReport();
+            olapReport.CurrentCubeName = "Adventure Works";
+
+            MeasureElements measureElement = new MeasureElements();
+            measureElement.Elements.Add(new MeasureElement { UniqueName = "[Measures].[Internet Sales Amount]" });
+
+            DimensionElement dimensionElementRow = new DimensionElement();
+            dimensionElementRow.Name = "Date";
+            dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
+
+            DimensionElement dimensionElementColumn = new DimensionElement();
+            dimensionElementColumn.Name = "Customer";
+            dimensionElementColumn.AddLevel("Customer Geography", "Country");
+
+            olapReport.SeriesElements.Add(dimensionElementRow);
+            olapReport.CategoricalElements.Add(dimensionElementColumn);
+            olapReport.CategoricalElements.Add(measureElement);
+
+            return olapReport;
+        }
+    }
 }
+
 {% endhighlight %}
 
-### Add Namespaces
+**Configure routing in Global Application Class**
 
-Add the following namespaces required to implement the service methods.
+To add a Global.asax, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **Global Application Class** and name it as `Global.asax`, click **Add**. After the addition of **Global.asax** file, immediately add the namespace **“using System.Web.Http;”** and then you can configure routing like in the following code example.
 
 {% highlight c# %}
+
+public class Global : System.Web.HttpApplication
+    {
+        protected void Application_Start(object sender, EventArgs e)
+        {
+            System.Web.Http.GlobalConfiguration.Configuration.Routes.MapHttpRoute(
+                name: "DefaultApi",
+                routeTemplate: "{controller}/{action}/{id}",
+                defaults: new { id = RouteParameter.Optional });
+            AppDomain.CurrentDomain.SetData("SQLServerCompactEditionUnderWebHosting", true);
+        }
+}
+
+{% endhighlight %}
+
+Now, **PivotGrid** will be rendered with Internet Sales Amount over a period of fiscal years across different customer geographic locations.
+
+![](Getting-Started_images/pivotgrid.png) 
+
+###WCF
+
+This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotGrid. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/PivotGrid/data-binding#wcf).
+
+##Creating a simple application with PivotGrid and Relational datasource
+
+This section covers the information required to create a simple PivotGrid bound to Relational datasource. 
+
+>**NOTE: ASP.NET Web Application will contain a service that transfers data to server-side, processes and returns them back to client-side for control rendering and re-rendering. The service utilized for communicate could be either WCF or WebAPI based on users requirement.**
+
+###Project Initialization
+
+Create a new **ASP.NET Empty Web Application** using Visual Studio IDE and name the project as **“PivotGridDemo”**.
+
+Now add a “Web Form” to the Empty Web Application. For adding a “Web Form”, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select “Web Form” and name it as `GettingStarted.aspx` and click “Add”.
+
+To set an appropriate start page, right-click on the **“GettingStarted.aspx”** in Solution Explorer and select **“Set As Start Page”**.
+
+Now add the following dependency libraries as references into your Web Application. In order to add them to your application, right-click on **References** in Solution Explorer and select **Add Reference**. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.  
+
+* Syncfusion.Compression.Base
+* Syncfusion.Linq.Base
+* Syncfusion.Olap.Base
+* Syncfusion.PivotAnalysis.Base
+* Syncfusion.XlsIO.Base
+* Syncfusion.Pdf.Base
+* Syncfusion.DocIO.Base
+* Syncfusion.EJ
+* Syncfusion.EJ.Olap
+
+N> If any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility is installed, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET].
+
+###Scripts and CSS Initialization
+
+The scripts and style sheets that are mandatorily required to render pivotgrid widget in a Web Application are mentioned in an appropriate order below:
+
+1. ej.widgets.all.min.css
+2. jquery-1.10.2.min.js
+3. jquery.easing.1.3.min.js
+4. ej.web.all.min.js
+
+[Click here](http://help.syncfusion.com/js/cdn) to know more about scripts and style sheets available online (CDN Link).
+
+Scripts and style sheets are referred under the <head> tag in **GettingStarted.aspx** page.
+
+{% highlight html %}
+
+<head>
+    <link href="http://cdn.syncfusion.com/13.3.0.7/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"> </script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
+    <script src="http://cdn.syncfusion.com/13.3.0.7/js/web/ej.web.all.min.js"> </script>
+</head>
+
+{% endhighlight %}
+
+###Control Initialization
+
+Either drag and drop the **pivotgrid** control from the toolbox (under **Syncfusion BI Web** category) or manually define the widget like in the below code sample inside **"GettingStarted.aspx"** page.
+ 
+Once the widget is placed into the web page, add **'ScriptManager'** next to it in-order to generate appropriate scripts.
+
+{% highlight html %}
+
+<%@ Register Assembly="Syncfusion.EJ.Olap, Version=13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web.Olap" TagPrefix="ej" %> 
+<html> 
+    …… 
+    ……
+
+<body>
+    <form runat="server">
+        <ej:PivotGrid ID="PivotGrid1" Url="../RelationalService" runat="server" ClientIDMode="Static"></ej:PivotGrid>
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    </form>
+</body>
+
+</html>
+
+{% endhighlight %}
+
+The **“Url”** property in pivotgrid widget points the service endpoint, where data are processed and fetched in the form of JSON. The services used in pivotgrid widget as endpoint are WCF and WebAPI.
+
+N> The above “GettingStarted.aspx” contains WebAPI Url, which is, “../RelationalService”. If WCF service is used as endpoint, the Url would look like “../RelationalService.svc”.
+
+If you are manually entering the code instead of drag and drop operation from toolbox, then you need to register the referenced assemblies in Web.config file. 
+
+{% highlight xml %}
+
+<compilation debug="true" targetFramework="4.5">
+    <assemblies> 
+        …… 
+        ……
+        <add assembly="Syncfusion.EJ, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.EJ.Olap, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+         <add assembly="Syncfusion.Compression.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.Linq.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.Olap.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.PivotAnalysis.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.Pdf.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.XlsIO.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.DocIO.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
+       
+    </assemblies>
+</compilation>
+    
+{% endhighlight %}
+
+###WebAPI
+
+**Adding a WebAPI Controller**
+
+To add a WebAPI controller in an existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **WebAPI Controller Class** and name it as `RelationalServiceController.cs`, click Add.
+
+Now, WebAPI controller is added to the application successfully containing the file **"RelationalServiceController.cs"**.
+
+N> While adding WebAPI Controller Class, name it with the suffix 'Controller' that is mandatory. For example, in this demo the controller is named as "RelationalServiceController".
+
+Next, remove all the existing methods such as "Get", "Post", "Put" and "Delete" present inside `RelationalServiceController.cs` file.
+
+{% highlight c# %}
+
+namespace pivotgridDemo
+{
+    public class RelationalServiceController: ApiController
+    {
+    
+    }
+}
+
+{% endhighlight %}
+
+**Adding the List of Namespaces**
+
+The following are the list of namespaces to be added on top of the main class inside `RelationalServiceController.cs` file.
+
+{% highlight c# %}
+
+using Syncfusion.JavaScript.Olap;
+using Syncfusion.Olap.Manager;
+using Syncfusion.Olap.Reports;
+using Syncfusion.PivotAnalysis.Base; 
 using System;
-
 using System.Collections.Generic;
-
+using System.Configuration;
 using System.Linq;
-
-using System.Runtime.Serialization;
-
-using System.ServiceModel;
-
-using System.Text;
-
-using System.ServiceModel.Activation;
-
+using System.Net;
+using System.Net.Http;
+using System.Web;
+using System.Web.Http;
 using System.Web.Script.Serialization;
 
-using Syncfusion.Olap.Manager;
-
-using Syncfusion.Olap.Reports;
-
-using Syncfusion.JavaScript;
-
-using Syncfusion.PivotAnalysis.Base;
-{% endhighlight %}
-
-### Create Class in Service file
-
-You can create the PivotGridService class to implement the service methods. You can inherit the class from the IPivotGridService interface that is created automatically while adding any new service.
-
-{% highlight c# %}
-namespace Sample.wcf
+namespace pivotgridDemo
 {
-
-    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    public class PivotGridService : IPivotGridService
-    {        
+   public class RelationalServiceController : ApiController
+    {
 
     }
-
 }
+
 {% endhighlight %}
 
-### Implement Service Methods
+**Datasource Initialization**
 
-You can add the following methods to the service that are invoked for any server-side operations to be performed in PivotGrid.
-
-1. Initialize the PivotGrids helper class. 
-
-{% highlight c# %} 
-PivotGrid htmlHelper = new PivotGrid();
-
-JavaScriptSerializer serializer = new JavaScriptSerializer();
-
-Dictionary<string, object> dict = new Dictionary<string, object>()>;
-{% endhighlight %} 
-	
-2.Add the following relevant service methods.
+A simple collection is provided as a datasource for our PivotGrid in this demo section. This datasource is placed inside a separate class named "ProductSales" in `RelationalServiceController.cs` file. Please find the code sample below.
 
 {% highlight c# %}
-//This method provides the required information from server-side when initializing the PivotGrid.
 
-public Dictionary < string, object > InitializeGrid(string action) {
+namespace PivotGridDemo
+{
+………
+………
+………
+internal class ProductSales
+    {
+        public string Product { get; set; }
 
-	htmlHelper.PivotReport = BindDefaultData();
-	
-	dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData());
-	
-	return dict;
-	
+        public string Date { get; set; }
+
+        public string Country { get; set; }
+
+        public string State { get; set; }
+
+        public int Quantity { get; set; }
+
+        public double Amount { get; set; }
+
+        public static ProductSalesCollection GetSalesData()
+        {
+            /// Geography
+            string[] countries = new string[] { "Australia", "Canada", "France", "Germany", "United Kingdom", "United States" };
+            string[] ausStates = new string[] { "New South Wales", "Queensland", "South Australia", "Tasmania", "Victoria" };
+            string[] canadaStates = new string[] { "Alberta", "British Columbia", "Brunswick", "Manitoba", "Ontario", "Quebec" };
+            string[] franceStates = new string[] { "Charente-Maritime", "Essonne", "Garonne (Haute)", "Gers", };
+            string[] germanyStates = new string[] { "Bayern", "Brandenburg", "Hamburg", "Hessen", "Nordrhein-Westfalen", "Saarland" };
+            string[] ukStates = new string[] { "England" };
+            string[] ussStates = new string[] { "New York", "North Carolina", "Alabama", "California", "Colorado", "New Mexico", "South Carolina" };
+
+            /// Time
+            string[] dates = new string[] { "FY 2005", "FY 2006", "FY 2007", "FY 2008", "FY 2009" };
+
+            /// Products
+            string[] products = new string[] { "Bike", "Van", "Car" };
+            Random r = new Random(123345345);
+
+            int numberOfRecords = 2000;
+            ProductSalesCollection listOfProductSales = new ProductSalesCollection();
+            for (int i = 0; i < numberOfRecords; i++)
+            {
+                ProductSales sales = new ProductSales();
+                sales.Country = countries[r.Next(1, countries.GetLength(0))];
+                sales.Quantity = r.Next(1, 12);
+                /// 1 percent discount for 1 quantity
+                double discount = (30000 * sales.Quantity) * (double.Parse(sales.Quantity.ToString()) / 100);
+                sales.Amount = (30000 * sales.Quantity) - discount;
+                sales.Date = dates[r.Next(r.Next(dates.GetLength(0) + 1))];
+                sales.Product = products[r.Next(r.Next(products.GetLength(0) + 1))];
+                switch (sales.Product)
+                {
+                    case "Car":
+                        {
+                            sales.Date = "FY 2005";
+                            break;
+                        }
+                }
+                switch (sales.Country)
+                {
+                    case "Australia":
+                        {
+                            sales.State = ausStates[r.Next(ausStates.GetLength(0))];
+                            break;
+                        }
+                    case "Canada":
+                        {
+                            sales.State = canadaStates[r.Next(canadaStates.GetLength(0))];
+                            break;
+                        }
+                    case "France":
+                        {
+                            sales.State = franceStates[r.Next(franceStates.GetLength(0))];
+                            break;
+                        }
+                    case "Germany":
+                        {
+                            sales.State = germanyStates[r.Next(germanyStates.GetLength(0))];
+                            break;
+                        }
+                    case "United Kingdom":
+                        {
+                            sales.State = ukStates[r.Next(ukStates.GetLength(0))];
+                            break;
+                        }
+                    case "United States":
+                        {
+                            sales.State = ussStates[r.Next(ussStates.GetLength(0))];
+                            break;
+                        }
+                }
+                listOfProductSales.Add(sales);
+            }
+
+            return listOfProductSales;
+        }
+
+        public override string ToString()
+        {
+            return string.Format("{0}-{1}-{2}", this.Country, this.State, this.Product);
+        }
+
+        public class ProductSalesCollection : List<ProductSales>
+        {
+        }
+    }
 }
 
-//This method provides the required information from server-side when node state is modified in PivotTable Field List.
-
-public Dictionary < string, object > NodeStateModified(string action, string headerTag, string dropAxis, string sortedHeaders, string filterParams, string currentReport) {
-
-	htmlHelper.PopulateData(currentReport);
-	
-	dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData(), headerTag, dropAxis, filterParams, sortedHeaders);
-	
-	return dict;
-}
-
-//This method provides the required information from server-side when tree node is dropped in PivotTable Field List.
-
-public Dictionary < string, object > NodeDropped(string action, string dropAxis, string headerTag, string sortedHeaders, string filterParams, string currentReport) {
-
-	htmlHelper.PopulateData(currentReport);
-	
-	dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData(), dropAxis, headerTag, filterParams, sortedHeaders);
-	
-	return dict;
-}
-
-//This method provides the required information from server-side when filtering values in PivotTable Field List.
-
-public Dictionary < string, object > Filtering(string action, string filterParams, string sortedHeaders, string currentReport) {
-
-	htmlHelper.PopulateData(currentReport);
-	
-	dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData(), filterParams, sortedHeaders);
-	
-	return dict;
-}
-
-//This method provides the required information from server-side when opening the editor in PivotTable Field List.
-
-public Dictionary < string, object > FetchMembers(string action, string headerTag, string sortedHeaders, string currentReport) {
-
-	htmlHelper.PopulateData(currentReport);
-	
-	dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData(), headerTag, sortedHeaders);
-	
-	return dict;
-}
-
-//This method provides the required information from server-side when sorting values in PivotTable Field List.
-
-public Dictionary < string, object > Sorting(string action, string sortedHeaders, string currentReport) {
-
-	htmlHelper.PopulateData(currentReport);
-	
-	dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData(), sortedHeaders);
-	
-	return dict;
-}
-
-//This method carries the information about the default report that is rendered within PivotGrid initially.
-
-private PivotReport BindDefaultData() {
-
-	PivotReport pivotSetting = new PivotReport();
-	
-	pivotSetting.PivotRows.Add(new PivotItem {
-	
-		FieldMappingName = "Date", FieldHeader = "Date", TotalHeader = "Total"
-	});
-	
-	pivotSetting.PivotColumns.Add(new PivotItem {
-	
-		FieldMappingName = "Country", FieldHeader = "Country", TotalHeader = "Total", ShowSubTotal = false
-	});
-	
-	pivotSetting.PivotCalculations.Add(new PivotComputationInfo {
-	
-		CalculationName = "Amount", Description = "Amount", FieldHeader = "Amount", FieldName = "Amount", Format = "C", SummaryType = Syncfusion.PivotAnalysis.Base.SummaryType.DoubleTotalSum
-	});
-	
-	return pivotSetting;
-	
-}
-
-namespace WebApplication2 {
-
-	//This collection is bounded with the PivotGrid control.
-	
-	internal class ProductSales {
-	
-		public string Product {
-		
-			get;
-			set;
-		}
-		
-		public string Date {
-		
-			get;
-			set;
-		}
-		
-		public string Country {
-		
-			get;
-			set;
-		}
-		
-		public string State {
-		
-			get;
-			set;
-		}
-		
-		public int Quantity {
-		
-			get;
-			set;
-		}
-		
-		public double Amount {
-		
-			get;
-			set;
-		}
-
-		public static ProductSalesCollection GetSalesData() {
-		
-			// Geography
-			
-			string[] countries = new string[] {
-			
-				"Australia", "Canada", "France", "Germany", "United Kingdom", "United States"
-			};
-			
-			string[] ausStates = new string[] {
-			
-				"New South Wales", "Queensland", "South Australia", "Tasmania", "Victoria"
-			};
-			
-			string[] canadaStates = new string[] {
-			
-				"Alberta", "British Columbia", "Brunswick", "Manitoba", "Ontario", "Quebec"
-			};
-			
-			string[] franceStates = new string[] {
-			
-				"Charente-Maritime", "Essonne", "Garonne (Haute)", "Gers",
-			};
-			
-			string[] germanyStates = new string[] {
-			
-				"Bayern", "Brandenburg", "Hamburg", "Hessen", "Nordrhein-Westfalen", "Saarland"
-			};
-			
-			string[] ukStates = new string[] {
-			
-				"England"
-			};
-			
-			string[] ussStates = new string[] {
-			
-				"New York", "North Carolina", "Alabama", "California", "Colorado", "New Mexico", "South Carolina"
-			};
-
-			// Time
-			string[] dates = new string[] {
-			
-				"FY 2005", "FY 2006", "FY 2007", "FY 2008", "FY 2009"
-			};
-
-			// Products
-			
-			string[] products = new string[] {
-				"Bike", "Van", "Car"
-			};
-			
-			Random r = new Random(123345345);
-			
-			int numberOfRecords = 2000;
-			
-			ProductSalesCollection listOfProductSales = new ProductSalesCollection();
-			
-			for (int i = 0; i < numberOfRecords; i++) {
-			
-				ProductSales sales = new ProductSales();
-				
-				sales.Country = countries[r.Next(1, countries.GetLength(0))];
-				
-				sales.Quantity = r.Next(1, 12);
-				
-				// 1 percent discount for 1 quantity
-				
-				double discount = (30000 * sales.Quantity) * (double.Parse(sales.Quantity.ToString()) / 100);
-				
-				sales.Amount = (30000 * sales.Quantity) - discount;
-				
-				sales.Date = dates[r.Next(r.Next(dates.GetLength(0) + 1))];
-				
-				sales.Product = products[r.Next(r.Next(products.GetLength(0) + 1))];
-				
-				switch (sales.Product) {
-				
-					case "Car":
-						{
-							sales.Date = "FY 2005";
-							break;
-						}
-				}
-				
-				switch (sales.Country) {
-				
-					case "Australia":
-						{
-							sales.State = ausStates[r.Next(ausStates.GetLength(0))];
-							break;
-						}
-						
-					case "Canada":
-					
-						{
-							sales.State = canadaStates[r.Next(canadaStates.GetLength(0))];
-							break;
-						}
-						
-					case "France":
-					
-						{
-							sales.State = franceStates[r.Next(franceStates.GetLength(0))];
-							break;
-						}
-						
-					case "Germany":
-					
-						{
-							sales.State = germanyStates[r.Next(germanyStates.GetLength(0))];
-							break;
-						}
-						
-					case "United Kingdom":
-					
-						{
-							sales.State = ukStates[r.Next(ukStates.GetLength(0))];
-							break;
-						}
-					case "United States":
-					
-						{
-							sales.State = ussStates[r.Next(ussStates.GetLength(0))];
-							break;
-						}
-				}
-				
-				listOfProductSales.Add(sales);
-				
-			}
-			
-			return listOfProductSales;
-			
-		}
-		public override string ToString() {
-		
-			return string.Format("{0}-{1}-{2}", this.Country, this.State, this.Product);
-			
-		}
-		
-		public class ProductSalesCollection: List < ProductSales > {
-
-		}
-	}
-}
 {% endhighlight %}
-	
-   
-### Configure Web.Config
 
-1. You can expose services through the properties such as binding, contract and address etc., using an endpoint. In your 
-   application the service name is "Sample.wcf.PivotGridService" where "PivotGridService" is the service class name and “Sample.wcf" is the namespace where the service class appears. The following are the properties that meet the appropriate endpoint.  
-   
-   i) contract: This property indicates the contract of the endpoint is exposing. Here you are referring IPivotGridService contract and it is "Sample.wcf.IPivotGridService".
-   
-   ii) binding: In your application, you use webHttpBinding to post and receive the requests and responses between the client-end and the service-end.
-   
-   iii) behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint. endpointBehaviors are illustrated as follows.
+**Service methods in WebAPI Controller**
 
-   ~~~ html
-   <system.serviceModel>
-   
-    <services>
-	
-        <service name="Sample.wcf.PivotGridService">
-		
-            <endpoint address="" behaviorConfiguration="Sample.wcf.PivotGridServiceAspNetAjaxBehavior" binding="webHttpBinding" contract="Sample.wcf.IPivotGridService" />
-			
-        </service>
-		
-    </services>
-	
-   </system.serviceModel>
-   ~~~
+Now you need to define the service methods inside RelationalServiceController class, found inside `RelationalServiceController.cs` file, created while adding WebAPI Controller Class to your Web Application.
 
-2. The endpointBehaviors contains all the behaviors for an endpoint. You can link each endpoint to the respective behavior 
-   only using the name property. In the following code example "Sample.wcf.PivotGridServiceAspNetAjaxBehavior" points the PivotGridService class under the namespace Sample.wcf in PivotGridService.svc.cs, the appropriate behavior for the endpoint. 
+{% highlight c# %}
 
-   ~~~ html
-   <system.serviceModel>
-   
-    <behaviors>
-	
-        <endpointBehaviors>
-		
-            <behavior name="Sample.wcf.PivotGridServiceAspNetAjaxBehavior">
-			
-                <enableWebScript />
-				
-            </behavior>
-			
-        </endpointBehaviors>
-		
-    </behaviors>
-	
-   </system.serviceModel>
-   ~~~
+namespace PivotGridDemo
+{
+    public class RelationalServiceController : ApiController
+    {
+        PivotGrid htmlHelper = new PivotGrid();
+        JavaScriptSerializer serializer = new JavaScriptSerializer();
+        Dictionary<string, object> dict = new Dictionary<string, object>();
 
-3. Register the assemblies in the web.config file by adding the following code example.
+        [System.Web.Http.ActionName("InitializeGrid")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> InitializeGrid(Dictionary<string, object> jsonResult)
+        {
+                htmlHelper.PivotReport = BindDefaultData();
+                dict = htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData());
+            return dict;
+        }
 
-   ~~~ html
-   <system.web>
-   
-    <compilation debug="true" targetFramework="4.5">
-	
-        <assemblies>
-		
-            <add assembly="Syncfusion.EJ, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-			
-            <add assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-			
-            <add assembly="Syncfusion.PivotAnalysis.Base, Version= X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-			
-            <add assembly="Syncfusion.Olap.Base, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3D67ED1F87D44C89" />
-			
-        </assemblies>
-		
-    </compilation>
-	
-   </system.web>
-   ~~~
+        [System.Web.Http.ActionName("FetchMembers")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> FetchMembers(Dictionary<string, object> jsonResult)
+        {
+            htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
+            dict = htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["headerTag"].ToString(), jsonResult["sortedHeaders"].ToString());
+            return dict;
+        }
 
-   N> xx.x.x.xx in the above code example refers to the current version of the Essential Studio running in your system.
+        [System.Web.Http.ActionName("Filtering")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> Filtering(Dictionary<string, object> jsonResult)
+        {
+            htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
+            dict = htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["filterParams"].ToString(), jsonResult["sortedHeaders"].ToString());
+            return dict;
+        }
 
-4. Register the namespace in web.config file by adding the following code example.
+        [System.Web.Http.ActionName("NodeStateModified")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> NodeStateModified(Dictionary<string, object> jsonResult)
+        {
+            htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
+            dict = htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["headerTag"].ToString(), jsonResult["dropAxis"].ToString(), jsonResult["filterParams"].ToString(), jsonResult["sortedHeaders"].ToString());
+            return dict;
+        }
 
-   ~~~ html
-   <system.web>
-   
-    <pages validateRequest="false">
-	
-        <controls>
-		
-            <add namespace="Syncfusion.JavaScript.Web.Olap" assembly="Syncfusion.EJ.Olap, Version=X.X.X.X, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej" />
-			
-        </controls>
-		
-    </pages>
-	
-   </system.web>
-   ~~~
+        [System.Web.Http.ActionName("NodeDropped")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> NodeDropped(Dictionary<string, object> jsonResult)
+        {
+            htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
+            dict = htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["dropAxis"].ToString(), jsonResult["headerTag"].ToString(), jsonResult["filterParams"].ToString(), jsonResult["sortedHeaders"].ToString());
+            return dict;
+        }
 
-   N> In this example, “Sample.wcf” indicates the namespace in the WCF Service and “PivotGridService” indicates the class name in the WCF Service. And xx.x.x.xx in the above code example refers to the current version of the Essential Studio running in your system.
+        [System.Web.Http.ActionName("Sorting")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> Sorting(Dictionary<string, object> jsonResult)
+        {
+            htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
+            dict = htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["sortedHeaders"].ToString());
+            return dict;
+        }
 
-In summary, this getting started tutorial gives you an overview of PivotGrid, its architecture, process flow, how to configure and integrate with a VS application through a simple example that is self-explanatory.
+        private PivotReport BindDefaultData()
+        {
+            PivotReport pivotSetting = new PivotReport();
+            pivotSetting.PivotRows.Add(new PivotItem { FieldMappingName = "Product", FieldHeader = "Product", TotalHeader = "Total", ShowSubTotal = false });
+            pivotSetting.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", FieldHeader = "Country", TotalHeader = "Total", ShowSubTotal = false });
+            pivotSetting.PivotCalculations.Add(new PivotComputationInfo { CalculationName = "Amount", Description = "Amount", FieldHeader = "Amount", FieldName = "Amount", Format = "C", SummaryType = Syncfusion.PivotAnalysis.Base.SummaryType.DoubleTotalSum });
+            return pivotSetting;
+        }
+    }
+}
 
-![](Getting-Started_images/Getting-Started_img30.png) 
+{% endhighlight %}
 
-PivotGrid Control
-{:.caption}
+**Configure routing in Global Application Class**
+
+To add a Global.asax, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **Global Application Class** and name it as `Global.asax`, click **Add**. After the addition of **Global.asax** file, immediately add the namespace **“using System.Web.Http;”** and then you can configure routing like in the following code example.
+
+{% highlight c# %}
+
+public class Global: System.Web.HttpApplication
+{
+    protected void Application_Start(object sender, EventArgs e)
+    {
+        GlobalConfiguration.Configuration.Routes.MapHttpRoute(name: "DefaultApi", routeTemplate: "{controller}/{action}/{id}", defaults: new
+        {
+            id = RouteParameter.Optional
+        });
+        AppDomain.CurrentDomain.SetData("SQLServerCompactEditionUnderWebHosting", true);
+    }
+}
+
+{% endhighlight %}
+
+Now, **PivotGrid** will be rendered with Sales Amount over a set of products across different customer geographic locations.
+
+![](Getting-Started_images/relational.png) 
+
+## WCF
+
+This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotGrid. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/PivotGrid/data-binding#wcf).
