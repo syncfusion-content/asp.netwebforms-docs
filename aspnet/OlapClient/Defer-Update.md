@@ -19,10 +19,10 @@ The following code example explains how you can enable Defer Update in the OlapC
 
 {% endhighlight %}
 
-![](Defer-Update_images/Defer-Update_images1.png) 
+![](Defer-Update_images/deferupdate.png) 
 
-_Before Defer Update_
+On clicking the icon, after making the necessary UI interactions, the PivotGrid and OlapChart controls will be updated according to the OlapReport available at that instant.
 
-![](Defer-Update_images/Defer-Update_images2.png) 
+![](Defer-Update_images/deferupdate1.png) 
 
-_After Defer Update_
+

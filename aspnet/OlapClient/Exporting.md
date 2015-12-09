@@ -9,64 +9,67 @@ documentation: ug
 
 # Exporting
 
-The content in the OLAP Client control can be exported to Excel, Word and PDF documents.
+Chart and Grid in the OlapClient widget can be exported to Excel, Word and PDF documents by clicking the respective toolbar icons.
 
-![](Exporting_images/Exporting_img1.png) 
+![](Exporting_images/exporticon.png) 
 
-Exporting feature provides you a mode option that allows you to export either OlapChart or PivotGrid or both. The following code example explains the same. 
+Exporting feature provides an option that allows you to export either OlapChart or PivotGrid or both with the use of the property `ClientExportMode`.  The following code example illustrates the same. 
 
 {% highlight html %}
-<ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc"
 
-ClientExportMode="ChartAndGrid">
+<ej:OlapClient Url="../OlapClient" runat="server" ClientExportMode="ChartAndGrid"></ej:OlapClient>
 
 </ej:OlapClient>
+
 {% endhighlight %}
 
-The ClientExportModeproperty takes any one of the following value:
+The property `ClientExportMode` takes any one of the following value:
 
-1. ChartAndGrid – Exports both the OlapChart and the PivotGrid controls. This is the default mode.
-2. ChartOnly – Exports the OlapChart control alone.
-3. GridOnly – Exports the PivotGrid control alone.
+* **ChartAndGrid** – Exports both OlapChart and PivotGrid controls. This is the default mode.
+* **ChartOnly** – Exports OlapChart control alone.
+* **GridOnly** – Exports PivotGrid control alone.
 
-The following code example of service method needs to be added in-order to perform exporting in the OlapClient.
+For WebAPI controller, the below method needs to be added to perform exporting.
+
+{% highlight C# %}
+
+[System.Web.Http.ActionName("Export")]
+[System.Web.Http.HttpPost]
+public void Export()
+{
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
+    string fileName = "Sample";
+    olapClientHelper.ExportOlapClient(DataManager, args, fileName,
+    System.Web.HttpContext.Current.Response);
+}
+    
+{% endhighlight %}
+
+For WCF service, the below service method needs to be added to perform exporting.
 
 {% highlight C# %}
 
 public void Export(Stream stream)
-
 {
-
     System.IO.StreamReader sReader = new System.IO.StreamReader(stream);
-
     string args = System.Web.HttpContext.Current.Server.UrlDecode(sReader.ReadToEnd());
-
     OlapDataManager DataManager = new OlapDataManager(connectionString);
-
     string fileName = "OlapClient";
-
     olapClientHelper.ExportOlapClient(DataManager, args, fileName,
-
     System.Web.HttpContext.Current.Response);
-
 }
-
+    
 {% endhighlight %}
 
+The below screenshot shows the PivotGrid and OlapChart controls exported to Excel document.
 
-![](Exporting_images/Exporting_img2.png) 
+![](Exporting_images/exportexcel.png) 
 
-Exported OlapClient in Excel worksheet
-{:.caption}
+The below screenshot shows the PivotGrid and OlapChart controls exported to Word document.
 
-![](Exporting_images/Exporting_img3.png) 
+![](Exporting_images/exportword.png) 
 
-Exported OlapClient in Word document
-{:.caption}
+The below screenshot shows the PivotGrid and OlapChart controls exported to PDF document.
 
-![](Exporting_images/Exporting_img4.png) 
-
-Exported OlapClient in PDF document
-{:.caption}
-
-
+![](Exporting_images/exportpdf.png) 

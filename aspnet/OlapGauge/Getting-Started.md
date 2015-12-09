@@ -36,7 +36,7 @@ N> If any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET u
 
 The scripts and style sheets that are mandatorily required to render OlapGauge widget in a Web Application are mentioned in an appropriate order below:
 
-1.	ej.widgets.all.min.css
+1.	ej.web.all.min.css
 2.	jquery-1.10.2.min.js
 3.	jquery.easing.1.3.min.js
 4.	ej.web.all.min.js
@@ -64,7 +64,9 @@ Once the widget is placed into the web page, add **‘ScriptManager’** next to
 
 {% highlight html %}
 
-<%@ Register Assembly="Syncfusion.EJ.Olap, Version=13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web.Olap" TagPrefix="ej" %> 
+<%@ Register Assembly="Syncfusion.EJ.Olap, Version=13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web.Olap" TagPrefix="ej" %>
+
+<%@ Register Assembly="Syncfusion.EJ, Version=13.3450.0.7, Culture=neutral, PublicKeyToken=3D67ED1F87D44C89" Namespace="Syncfusion.JavaScript.DataVisualization.Models" TagPrefix="ej" %>
 
 <html> 
     …… 
@@ -283,4 +285,4 @@ N> Now, OlapGauge is rendered with Internet Revenue for Internet Sales Amount ov
 
 ###WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple OlapGauge. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/olapgauge/data-binding).
+This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple OlapGauge. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/olapgauge/data-binding#wcf).

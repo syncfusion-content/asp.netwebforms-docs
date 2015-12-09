@@ -9,65 +9,54 @@ documentation: ug
 
 # Grid Layout
 
-N> This feature is applicable only for OLAP datasource.
+I> This feature is applicable only for OLAP datasource.
 
-GridLayouts customize the position of summary elements in the PivotGrid control. Summary elements can be positioned at the top or bottom of each parent member.
+## Normal Layout
 
-The four kinds of Layouts supported by the PivotGrid are as follows:
-
-* Normal
-* Excel-like
-* Normal top summary
-* No summaries
-
-## Normal
-
-The Normal layout is the default Layout of the PivotGrid where the summary cells are positioned at the bottom of each parent member and child members appear next to their parent.
-
-![](Grid-Layout_images/Grid-Layout_img1.png) 
-
-PivotGrid in Normal Layout
-{:.caption}
+A layout in which summary cells are positioned at the bottom of each parent member and their child members appear next to them. Normal layout is the default layout in PivotGrid control. The enumeration property `Layout` needs to be set to **"PivotGridLayout.Normal"** in-order to view PivotGrid in normal layout. 
 
 {% highlight html %}
+
 <ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc" Layout="Normal"></ej:PivotGrid>
+
 {% endhighlight %}
 
-## Excel-like Layout
+![](Grid-Layout_images/layout-normal.png) 
 
-In the Excel-like layout, the summary cells are positioned at the bottom of the Grid and the child members appear under their parent member with a small indent.
+##No Summaries Layout
 
-![](Grid-Layout_images/Grid-Layout_img2.png)
-
-PivotGrid in Excel-Like Layout
-{:.caption}
+A layout in which summary cells are completely hidden and the child members appear next to their parent member.  The enumeration property `Layout` needs to be set to **"PivotGridLayout.NoSummaries"** in-order to view PivotGrid without summaries. 
 
 {% highlight html %}
-<ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc" Layout="ExcelLikeLayout"></ej:PivotGrid>
-{% endhighlight %}
 
-## Normal Top Summary
-
-In the NormalTopSummary Layout, the summary cells are positioned at the top of each parent member and the child member appears next to their parent.
-
-![](Grid-Layout_images/Grid-Layout_img3.png) 
-
-PivotGrid in Normal Top Summary Layout
-{:.caption}
-
-{% highlight html %}
-<ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc" Layout="NormalTopSummary"></ej:PivotGrid>
-{% endhighlight %}
-
-## No Summaries
-
-In No Summaries Layout, the summary cells are hidden and the child members appear next to their parent member.
-
-![](Grid-Layout_images/Grid-Layout_img4.png) 
-
-PivotGrid in No Summaries Layout
-{:.caption}
-
-{% highlight html %}
 <ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc" Layout="NoSummaries"></ej:PivotGrid>
+
 {% endhighlight %}
+
+![](Grid-Layout_images/layout-nosummary.png) 
+
+
+##Excel-like Layout
+
+A layout in which summary cells are positioned besides each parent member and their child members appear next to them. The enumeration property `Layout` needs to be set to **"PivotGridLayout.ExcelLikeLayout"** in-order to view PivotGrid in excel-like layout.
+
+{% highlight html %}
+
+<ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc" Layout="ExcelLikeLayout"></ej:PivotGrid>
+
+{% endhighlight %}
+
+![](Grid-Layout_images/layout-excel.png) 	
+
+##Top Summary Layout 
+
+A layout in which summary cells are positioned at the top of each parent member and their child members appear next to them. The enumeration property `Layout` needs to be set to **"PivotGridLayout.NormalTopSummary"** in-order to view PivotGrid in top summaries layout.
+
+{% highlight html %}
+
+<ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc" Layout="NormalTopSummary"></ej:PivotGrid>
+
+{% endhighlight %}
+
+![](Grid-Layout_images/layout-top.png)  
+

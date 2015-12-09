@@ -522,6 +522,8 @@ The following output is displayed as a result of the above code example.
 
 Foreign key is a field in relational table. It matches the specific key columns of another table. Foreign key column feature can be achived using ForeignKeyField and FoeriegnKeyValue property of Columns.
 
+I> ForeignkeyField and Field key name must be same.
+
 {% tabs %}
 
 {% highlight html %}

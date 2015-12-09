@@ -1,183 +1,86 @@
 ---
 layout: post
-title: Custom Label | OLAPGauge | ASP.NET | Syncfusion
-description: custom label
+title: Custom labels | OLAPGauge | ASP.NET | Syncfusion
+description: custom labels
 platform: aspnet
 control: OLAPGauge
 documentation: ug
 ---
 
-# Custom Label
+# Custom labels
 
-Custom label provides information about the members associated behind each OlapGauge. You can define multiple labels for 
-OlapGauge and it can be positioned along X and Y co-ordinates based on location settings.
+## Adding Custom Label Collection
 
-![](Custom-Label_images/Custom-Label_img1.png) 
-
-Custom Label
-{:.caption}
-
-## Positioning the Custom Label
-
-You can set the location of the custom label in circular gauge using “location” property. Refer the following code example.
+Custom label collection can be directly added to the scales option within the OlapGauge widget as an array.
 
 {% highlight html %}
-<ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
-        <Scales>
-
-            <ej:CircularScales ShowRanges="true" Radius="150" ShowScaleBar="true" Size="1"  ShowIndicators="true" ShowLabels="true" >
-
-                <Border Width ="0.5" />
-
-                <PointerCollection>                    
-
-                    <ej:Pointers Type="Needle" ShowBackNeedle="true" BackNeedleLength="20"  Length="120" Width="7" NeedleType="Triangle" ></ej:Pointers>
-
-                    <ej:Pointers Type="Marker" MarkerType="Diamond" DistanceFromScale="5" Placement="Center" BackgroundColor="#29A4D9" Length="25" Width="15"></ej:Pointers>
-
-                </PointerCollection>
-
-                <TickCollection>
-
-                    <ej:CircularTicks Type="Major" DistanceFromScale="15" Height="16" Width="1" Color="#8c8c8c" />
-
-                    <ej:CircularTicks Type="Minor" DistanceFromScale="2" Height="6" Width="1" Color="#8c8c8c" />
-
-                </TickCollection>
-
-                <LabelCollection>
-
-                    <ej:CircularLabels Color="#8c8c8c"></ej:CircularLabels>
-
-                </LabelCollection>
-
-                <RangeCollection>
-
-                    <ej:CircularRanges DistanceFromScale="-10" BackgroundColor="black" Size="7">
-
-                        <Border Color="red"/></ej:CircularRanges>
-
-                    <ej:CircularRanges DistanceFromScale="-10" Size="7"></ej:CircularRanges>
-
-                </RangeCollection>
-
-                <CustomLabelCollection>
-
-                    <ej:CircularCustomLabel Color="#666666">
-
-                        <Position X="280" Y="390" />
-
-                    </ej:CircularCustomLabel>
-
-                    <ej:CircularCustomLabel Color="#666666">
-
-                        <Position X="180" Y="280" />
-
-                    </ej:CircularCustomLabel>
-
-                    <ej:CircularCustomLabel Color="#666666">
-
-                        <Position X="180" Y="170" />
-
-                    </ej:CircularCustomLabel>
-
-                </CustomLabelCollection>   
-
-            </ej:CircularScales>
-
-        </Scales>
-
+<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">
+    <Scales>
+        <ej:CircularScales>
+            <CustomLabelCollection>
+                <ej:CircularCustomLabel>
+                    <Position X="180" Y="290" />
+                </ej:CircularCustomLabel>
+            </CustomLabelCollection>
+        </ej:CircularScales>
+    </Scales>
 </ej:OlapGauge>
+
 {% endhighlight %}
 
-![](Custom-Label_images/Custom-Label_img2.png) 
+## Appearance Customization
 
-Positioning Custom Label
-{:.caption}
+The appearance of the custom labels can be changed through the following properties.
 
-## Font and Style Customization of Custom Label
-
-You can customize the custom label font with fontstyle, font family, and size properties.
+* **Position** – used to set the position of the labels.
+* **Font** – sets the font size, font style and font family of the label text.
+* **Color** – sets the color of the label text.
+* **TextAngle** – rotates the label to a specified angle. By default, the value is 0.
 
 {% highlight html %}
-<ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
-        <Scales>
-
-            <ej:CircularScales ShowRanges="true" Radius="150" ShowScaleBar="true" Size="1"  ShowIndicators="true" ShowLabels="true" >
-
-                <Border Width ="0.5" />
-
-                <PointerCollection>                    
-
-                    <ej:Pointers Type="Needle" ShowBackNeedle="true" BackNeedleLength="20"  Length="120" Width="7" NeedleType="Triangle" ></ej:Pointers>
-
-                    <ej:Pointers Type="Marker" MarkerType="Diamond" DistanceFromScale="5" Placement="Center" BackgroundColor="#29A4D9" Length="25" Width="15"></ej:Pointers>
-
-                </PointerCollection>
-
-                <TickCollection>
-
-                    <ej:CircularTicks Type="Major" DistanceFromScale="15" Height="16" Width="1" Color="#8c8c8c" />
-
-                    <ej:CircularTicks Type="Minor" DistanceFromScale="2" Height="6" Width="1" Color="#8c8c8c" />
-
-                </TickCollection>
-
-                <LabelCollection>
-
-                    <ej:CircularLabels Color="#8c8c8c"></ej:CircularLabels>
-
-                </LabelCollection>
-
-                <RangeCollection>
-
-                    <ej:CircularRanges DistanceFromScale="-10" BackgroundColor="black" Size="7">
-
-                        <Border Color="red"/></ej:CircularRanges>
-
-                    <ej:CircularRanges DistanceFromScale="-10" Size="7"></ej:CircularRanges>
-
-                </RangeCollection>
-
-                <CustomLabelCollection>
-
-                    <ej:CircularCustomLabel Color="red">
-
-                        <Position X="180" Y="290" />
-
-                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
-
-                    </ej:CircularCustomLabel>
-
-                    <ej:CircularCustomLabel Color="red">
-
-                        <Position X="180" Y="320" />
-
-                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
-
-                    </ej:CircularCustomLabel>
-
-                    <ej:CircularCustomLabel Color="red">
-
-                        <Position X="180" Y="150" />
-
-                        <Font Size="12px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
-
-                    </ej:CircularCustomLabel>
-
-                </CustomLabelCollection>   
-
-            </ej:CircularScales>
-
-        </Scales>
-
+<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">
+    <Scales>
+        <ej:CircularScales>
+            <CustomLabelCollection>
+                <ej:CircularCustomLabel Color="blue" TextAngle="20">
+                    <Position X="180" Y="320" />
+                    <Font FontFamily="Segoe UI" FontStyle="Normal" Size="12px"></Font>
+                </ej:CircularCustomLabel>
+            </CustomLabelCollection>
+        </ej:CircularScales>
+    </Scales>
 </ej:OlapGauge>
+
 {% endhighlight %}
 
+![](Custom-Label_images/customlabel customization.png) 
 
-![](Custom-Label_images/Custom-Label_img3.png) 
+## Multiple Custom Labels
 
-Style Customization
-{:.caption}
+Multiple custom labels can be set to an OlapGauge widget by adding an array of objects within the **"CustomLabels"** option. 
+
+{% highlight html %}
+
+<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">
+    <Scales>
+        <ej:CircularScales>
+            <CustomLabelCollection>
+                <ej:CircularCustomLabel Color="red">
+                    <Position X="180" Y="150" />
+                </ej:CircularCustomLabel>
+                <ej:CircularCustomLabel Color="green">
+                    <Position X="180" Y="320" />
+                </ej:CircularCustomLabel>
+                <ej:CircularCustomLabel Color="blue">
+                    <Position X="180" Y="290" />
+                </ej:CircularCustomLabel>
+            </CustomLabelCollection>
+        </ej:CircularScales>
+    </Scales>
+</ej:OlapGauge>
+
+{% endhighlight %}
+
+![](Custom-Label_images/multiple custom labels.png) 

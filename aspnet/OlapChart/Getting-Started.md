@@ -39,7 +39,7 @@ N> If any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET u
 
 The scripts and style sheets that are mandatorily required to render OlapChart widget in a Web Application are mentioned in an appropriate order below:
 
-1.	ej.widgets.all.min.css
+1.	ej.web.all.min.css
 2.	jquery-1.10.2.min.js
 3.	jquery.easing.1.3.min.js
 4.	jquery.globalize.min.js
@@ -125,11 +125,11 @@ Next, remove all the existing methods such as “Get”, “Post”, “Put” a
 
 {% highlight c# %}
 
-namespace OlapChartDemo
+namespace PivotGridDemo
 {
-    public class OlapChartController: ApiController
+    public class RelationalServiceController: ApiController
     {
-    
+        
     }
 }
 
@@ -272,6 +272,6 @@ Now, OlapChart is rendered with Customer Count over a period of fiscal years acr
 
 ###WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple OlapChart. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/olapchart/data-binding).
+This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple OlapChart. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/olapchart/data-binding#wcf).
 
 
