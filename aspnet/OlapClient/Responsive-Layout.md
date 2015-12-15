@@ -9,46 +9,12 @@ documentation: ug
 
 # Responsive Layout
 
-Responsive layout is aimed at crafting sites to provide an optimal viewing experience - easy reading. It also provides navigation 
-with a minimum of resizing, panning, and scrolling across a wide range of devices from tablet to desktop. To get responsive 
-layout for OLAP Client, enable IsResponsive API to true. By using this feature, you can achieve an effective view of the OLAP 
-Client control in all devices including desktops, tablets, mobiles, etc. 
+OlapClient widget supports responsive rendering based on the target device (desktop & tablet) resolution. It supports resolution upto 1024x600. You can enable responsiveness in OlapClient by setting `IsResponsive` property to true.
 
 {% highlight html %}
 
-<%@ Register Assembly="Syncfusion.EJ.Olap" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
-
-<ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc" IsResponsive="true">
-
-        <ClientSideEvents  ChartLoad="setChartProperties" />
-
-</ej:OlapClient>
-
-<script type="text/javascript">
-
-        function setChartProperties(args) {
-
-            this.model.load = "loadTheme";
-
-        }
-
-</script>
+<ej:OlapClient Url="../OlapClient" runat="server" IsResponsive="true"></ej:OlapClient>
 
 {% endhighlight %}
 
-![](Responsive-Layout_images/Responsive-Layout_img1.png) 
-
-![](Responsive-Layout_images/Responsive-Layout_img2.png) 
-
-Normal View
-{:.caption}
-
-![](Responsive-Layout_images/Responsive-Layout_img3.png) 
-
-Responsive View
-{:.caption}
-
-![](Responsive-Layout_images/Responsive-Layout_img4.png) 
-
-Responsive View
-{:.caption}
+![](Responsive-Layout_images/responsive.png) 

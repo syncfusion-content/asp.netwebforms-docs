@@ -9,85 +9,76 @@ documentation: ug
 
 # Paging
 
-N> This feature is applicable only for OLAP datasource.
+I> This feature is applicable only for OLAP datasource.
 
 ## Pager
 
-The PivotGrid is viewed page-by-page through Pager option. The Pager is set to PivotGrid using following code example.
+Paging helps to improve the rendering performance of the PivotGrid control by breaking large amount of data into sections and displaying them.
+ 
+In-order to initialize a "Pager", you need to initialize the widget using **"PivotPager"** method.
 
+Inside the **"PivotPager"** method, the enumeration property `Mode` needs to be set to **"PivotPager.Mode.Both"** in-order to display both categorical pager and series pager. The other enumerations such as **"PivotPager.Mode.Categorical"** and **"PivotPager.Mode.Series"** will display only categorical pager and series pager respectively.
 
 {% highlight html %}
-<ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc"  >
 
-</ej:PivotGrid>
+<ej:PivotGrid ID="PivotGrid1" runat="server" Url = "../wcf/PagingService.svc" > </ej:PivotGrid>
 
-<ej:PivotPager ID="PivotPager1" runat="server"  Mode="Both" TargetControlID="PivotGrid1" > </ej:PivotPager>
+ <ej:PivotPager ID="PivotPager1" runat="server" Mode="Both" TargetControlID="PivotGrid1"></ej:PivotPager>
+
+
 {% endhighlight %}
 
-The page size for categorical and series axes are set in the OlapReport. Pager is loaded with current page and total pages of PivotGrid is automatically displayed as illustrated in the following screenshot. The icons to move pages to next, last, previous and first are added.  Also you can directly navigate to the desired page by entering the appropriate numeric value into the text box.
+**Following are the navigation option available in Pager.**
 
-![](Paging_images/Paging_img1.png) 
+* Move First - Navigates to the first page.
+* Move Previous - Navigates to the previous page from the current page.
+* Move Next - Navigates to the next page from the current page.
+* Move Last - Navigates to the last page. 
+* Numeric Box - Navigates to the desired page by entering an appropriate numeric value.
 
-PivotGrid in paging mode
-{:.caption}
+![](Paging_images/paging.png)
 
 ## Virtual Scrolling
 
-The large PivotGrid data content is viewed page-by-page using VirtualScrolling. The page size for categorical and series axes are set in OlapReport. By enabling VirtualScrolling, the number of rows and columns for the PivotGrid are set as entered in the OlapReport. By scrolling the horizontal and vertical scrollbars, the categorical and series page numbers are obtained and PivotGrid contents are refreshed accordingly.
+Virtual Scrolling is a technique that allows user to scroll vertically and horizontally the scroll bar to view the paged information. You can enable Virtual Scrolling option in PivotGrid by setting the `EnableVirtualScrolling` property to true.
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc"  EnableVirtualScrolling="true">
+<ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PagingService.svc" EnableVirtualScrolling="true"></ej:PivotGrid>
+
 {% endhighlight %}
 
-![](Paging_images/Paging_img2.png) 
+![](Paging_images/virtual-scrolling.png) 
 
-PivotGrid with Virtual Scroller
-{:.caption}
+## Page Setting (Report)
 
-![](Paging_images/Paging_img3.png)
+The page setting for categorical and series axes are mandatorily needs to be done in OlapReport class by using the following properties.
 
-Page indication while scrolling
-{:.caption}
+* EnablePaging - Specifies a value indicating whether to enable or disable paging in PivotGrid control.
+* PagerOptions.CategoricalPageSize - Specifies the number of categorical columns to be displayed within a page of the PivotGrid control.
+* PagerOptions.SeriesPageSize - Specifies the number of series rows to be displayed within a page of the PivotGrid control.
+* PagerOptions.CategoricalCurrentPage - Set the current page of the categorical axis in PivotGrid control.
+* PagerOptions.SeriesCurrentPage - Set the current page of the series axis in PivotGrid control.
 
-### OLAP Report for Paging and Virtual Scrolling
+{% highlight C# %}
 
-{% highlight c# %}
-OlapReport olapReport = new OlapReport();
+OlapReport olapReport = new OlapReport();
+olapReport.EnablePaging = true;
+olapReport.PagerOptions.SeriesPageSize = 4;
+olapReport.PagerOptions.CategorialPageSize = 5;
+olapReport.PagerOptions.CategorialCurrentPage = 1;
+olapReport.PagerOptions.SeriesCurrentPage = 1;
 
-olapReport.CurrentCubeName = "Adventure Works";
+DimensionElement dimensionElement = new DimensionElement() { Name = "Customer" };
+dimensionElement.AddLevel("Customer", "Customer");
+olapReport.CategoricalElements.Add(dimensionElement);
 
-olapReport.Name = "Default Report";
-
-//NOTE: Below code enables the paging option and also sets the page size.
-
-olapReport.EnablePaging = true;
-
-olapReport.PagerOptions.SeriesPageSize = 5;
-
-olapReport.PagerOptions.CategorialPageSize = 4;
-
-DimensionElement dimensionElementColumn = new DimensionElement() { Name ="Customer" };
-
-dimensionElementColumn.AddLevel("City", "City");
-
-olapReport.CategoricalElements.Add(dimensionElementColumn);
-
-DimensionElement dimensionElementRow = new DimensionElement() { Name = "Date"};
-
-dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
-
+DimensionElement dimensionElementRow = new DimensionElement() { Name = "Customer", HierarchyName = "Customer" };
+dimensionElementRow.AddLevel("Customer Geography", "Country");
 olapReport.SeriesElements.Add(dimensionElementRow);
 
-dimensionElementRow = new DimensionElement() { Name = "Product" };
-
-dimensionElementRow.AddLevel("Category", "Category");
-
-olapReport.SeriesElements.Add(dimensionElementRow);
-
-MeasureElements measureElementColumn = new MeasureElements();
-
-measureElementColumn.Elements.Add(new MeasureElement { Name = "Sales Amount"});
-
+MeasureElements measureElementColumn = new MeasureElements();
+measureElementColumn.Elements.Add(new MeasureElement { Name = "Internet Sales Amount" });
 olapReport.CategoricalElements.Add(measureElementColumn);
+
 {% endhighlight %}

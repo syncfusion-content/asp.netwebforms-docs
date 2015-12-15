@@ -7,15 +7,14 @@ control: PivotGrid
 documentation: ug
 ---
 
-# PivotGrid 
+PivotGrid control is an easily configurable, presentation-quality business control that reads both OLAP and Relational datasource, allows to create multi-dimensional views for analysis and satisfying business user needs.
 
-The Pivot Grid control is easily configurable, presentation-quality business control that reads OLAP data from a Microsoft SQL Server Analysis Services database, an offline cube or XMLA and Relational data sources from data table or data collection. The OLAP data is displayed with drill-up and drill-down capabilities and features exceptional performance.
+Some of the key feature available in PivotGrid are listed below:
 
-## Key Features
+1. Data Binding: Supports both OLAP and Relational datasource databinding in the same environment. 
+2. PivotTable Field List: Lists the entire datasource bound to PivotGrid and allows UI interaction such as filtering and drag drop operation of any measure, dimension, hierarchy, level and field at runtime.  
+3. Grouping Bar: Supports UI interaction at runtime through sorting, filtering and drag drop operation of the existing field items bound through report. 
+4. Grid Layout: Four different layouts such as normal, top summary, no summary and excel-like layout are supported.
+5. Export: PivotGrid can be exported to Word, PDF, CSV and Excel documents.
+6. PivotGrid control specific features such as hyperlink, cell selection, conditional formatting, RTL, globalization and localization are supported as well.  
 
-The key features of the PivotGrid control is as follows:
-
-* Data Source: You can bind the PivotGrid control with Microsoft Analysis Services databases and XML/A data sources and Relational data sources.
-* Drill-down support: When you click on an item, it moves to a greater level of detail. This feature is known as drill-down that is supported in the PivotGrid for OLAP data only. 
-* Virtual Scrolling: You can scroll vertically and horizontally to view the records in pages dynamically and efficiently.
-* Hyperlink: You can hyperlink the cells to retrieve a detailed description of a particular cell. 

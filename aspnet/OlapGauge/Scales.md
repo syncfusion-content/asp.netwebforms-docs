@@ -1,100 +1,80 @@
 ---
 layout: post
-title: Scales | OLAPGauge | ASP.NET | Syncfusion
-description: scales
+title: Scale | OLAPGauge | ASP.NET | Syncfusion
+description: scale
 platform: aspnet
 control: OLAPGauge
 documentation: ug
 ---
 
-# Scales
+# Scale
 
-Scale is a basic unit of radial gauge. You can customize the gauge scales by using properties such as radius, minimum, scale direction, interval values etc. 
+## Adding Scale
 
-## Resizing the Scale Bar
-
-Radius of the Scale Bar is changed with the help of scaleRadius property and in order to make ScaleBar visible, set showScaleBar property to ‘true’. You can set size of the Scale Bar with the help of scaleBareSize and border width using scaleBorderWidth property. 
+Scale can be added within the OlapGauge widget as an array.
 
 {% highlight html %}
-<ej:OlapGauge ID="OlapGauge1" runat="server" Url="../wcf/OlapGaugeService.svc" EnableTooltip="true" BackgroundColor="transparent">
 
-    <Frame FrameType="HalfCircle" />
-
+<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">
     <Scales>
-
-        <ej:CircularScales ShowRanges="true" Radius="180" ShowScaleBar="true" Size="2" ShowIndicators="true" ShowLabels="true">
-
-            <Border Width="2.5" />
-
-            <PointerCollection>
-
-                <ej:Pointers ShowBackNeedle="true" BackNeedleLength="20" Length="125" Width="7"></ej:Pointers>
-
-                <ej:Pointers Type="Marker" MarkerType="Diamond" DistanceFromScale="5" Placement="Center" BackgroundColor="#29A4D9" Length="25" Width="15"></ej:Pointers>
-
-            </PointerCollection>
-
-            <TickCollection>
-
-                <ej:CircularTicks Type="Major" DistanceFromScale="2" Height="16" Width="1" Color="#8c8c8c" />
-
-                <ej:CircularTicks Type="Minor" Height="6" Width="1" DistanceFromScale="2" Color="#8c8c8c" />
-
-            </TickCollection>
-
-            <LabelCollection>
-
-                <ej:CircularLabels Color="#8c8c8c"></ej:CircularLabels>
-
-            </LabelCollection>
-
-            <RangeCollection>
-
-                <ej:CircularRanges DistanceFromScale="-5" BackgroundColor="#fc0606">
-
-                    <Border Color="#fc0606" />
-                </ej:CircularRanges>
-
-                <ej:CircularRanges DistanceFromScale="-5"></ej:CircularRanges>
-
-            </RangeCollection>
-
-            <CustomLabelCollection>
-
-                <ej:CircularCustomLabel Color="#666666">
-
-                    <Position X="180" Y="290" />
-
-                    <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
-
-                </ej:CircularCustomLabel>
-
-                <ej:CircularCustomLabel Color="#666666">
-
-                    <Position X="180" Y="320" />
-
-                    <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
-
-                </ej:CircularCustomLabel>
-
-                <ej:CircularCustomLabel Color="#666666">
-
-                    <Position X="180" Y="150" />
-
-                    <Font Size="12px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
-
-                </ej:CircularCustomLabel>
-
-            </CustomLabelCollection>
-
-        </ej:CircularScales>
-
+        <ej:CircularScales Radius="150"></ej:CircularScales>
     </Scales>
-
 </ej:OlapGauge>
+
 {% endhighlight  %}
 
-![](Scales_images/Scales_img1.png) 
+![](Scales_images/scale.png) 
 
-Scale Bar – Style Customization
-{:.caption}
+## Scale Customization
+
+### Pointer Cap
+
+Pointer Cap is a circular shape element that is located at the center of the OlapGauge. It can be customized with the `PointerCap` option inside scales. Following are the properties used to customize its appearance.
+
+* **Radius** – sets the radius of the pointer cap.
+* **BorderColor** – sets the color of the pointer cap border.
+* **BorderWidth** – sets the width of the pointer cap border.
+* **BackgroundColor** – sets the background color of the pointer cap.
+
+{% highlight html %}
+
+<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">
+    <Scales>
+        <ej:CircularScales Radius="150">
+            <PointerCap BackgroundColor="yellow" BorderColor="green" Radius="5" BorderWidth="2"></PointerCap>
+        </ej:CircularScales>
+    </Scales>
+</ej:OlapGauge>
+
+{% endhighlight  %}
+
+![](Scales_images/pointercap.png)
+
+### Appearance
+The appearance of the scale can be customized through the following properties.
+
+* **Radius** – sets the radius of the scale.
+* **BackgroundColor** – sets the background color of the scale.
+* **Border** – sets the border of the scale with color and width properties.
+* **Size** – sets the size of the scale.
+* **Minimum** – sets the least value of the scale.
+* **Maximum** – sets the highest value of the scale.
+* **MajorIntervalValue** – sets the interval between minor ticks in the scale.
+* **MinorIntervalValue** – sets the interval between major ticks in the scale.
+* **Direction** – sets the direction of the scale.  By default it takes “Clockwise” direction.
+
+The `ShowIndicators`, `ShowTicks`, `ShowRanges`, `ShowPointers` and `ShowScaleBar` properties are used to enable/disable the indicators, ticks, ranges, pointers and scale bar respectively.  By default, these properties are set to true. 
+
+{% highlight html %}
+
+<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">
+    <Scales>
+        <ej:CircularScales Radius="120" BackgroundColor="yellow" Size="10" Minimum="20" Maximum="120" MajorIntervalValue="20" MinorIntervalValue="5" Direction="CounterClockwise">
+            <Border Color="blue" Width="3" />
+        </ej:CircularScales>
+    </Scales>
+</ej:OlapGauge>
+
+{% endhighlight  %}
+
+![](Scales_images/Scale-Customization-Appearance.png)

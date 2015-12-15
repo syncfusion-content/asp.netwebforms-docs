@@ -40,10 +40,13 @@ N> If any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET u
 ###Scripts and CSS Initialization
 The scripts and style sheets that are mandatorily required to render OlapClient widget in a Web Application are mentioned in an appropriate order below:
 
-1.	ej.widgets.all.min.css
+1.	ej.web.all.min.css
 2.	jquery-1.10.2.min.js
 3.	jquery.easing.1.3.min.js
 4.	jquery.globalize.min.js
+5.  rgbcolor.js
+6.  StackBlur.js
+7.  canvg.js
 5.	ej.web.all.min.js
 
 [Click here](http://help.syncfusion.com/js/cdn) to know more about scripts and style sheets available online (CDN Link).
@@ -57,6 +60,10 @@ Scripts and style sheets are referred under the <head> tag in **GettingStarted.a
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"> </script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
+    <script type="text/javascript" src="http://gabelerner.github.io/canvg/rgbcolor.js"></script> 
+    <script type="text/javascript" src="http://gabelerner.github.io/canvg/StackBlur.js"></script>
+    <script type="text/javascript" src="http://gabelerner.github.io/canvg/canvg.js"></script>  
+
     <script src="http://cdn.syncfusion.com/13.3.0.7/js/web/ej.web.all.min.js"> </script>
 </head>
 
@@ -107,7 +114,8 @@ If you are manually entering the code instead of drag and drop operation from to
         <add assembly="Syncfusion.Compression.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Pdf.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.XlsIO.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.DocIO.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> </assemblies>
+        <add assembly="Syncfusion.DocIO.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
+    </assemblies>
 </compilation>
     
 {% endhighlight %}
@@ -455,5 +463,5 @@ Now, OlapClient is rendered with OlapChart and PivotGrid with Customer Count ove
 
 ###WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple OlapClient. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/olapclient/data-binding).
+This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple OlapClient. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/olapclient/data-binding#wcf).
 
