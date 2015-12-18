@@ -49,10 +49,10 @@ On item(s) selection they will be placed in Row section by default except numeri
 
 The bottom portion of the layout is segregated as below.
 
-•	Report Filter: Exclusively designed to filter an item(s) placed in this particular position of the layout. 
-•	Value Section: The value label usually displays the numeric value item(s) present in the report.
-•	Column Section: It is used to display item(s) as column header and values in the PivotGrid control. 
-•	Row Section: It is used to display item(s) as row header and values in the PivotGrid control.
+* Report Filter: Exclusively designed to filter an item(s) placed in this particular position of the layout. 
+* Value Section: The value label usually displays the numeric value item(s) present in the report.
+* Column Section: It is used to display item(s) as column header and values in the PivotGrid control. 
+* Row Section: It is used to display item(s) as row header and values in the PivotGrid control.
 
 ## UI Interactions 
 You can alter the report on fly through drag-and-drop operation. You can drag any item from Field List and drop into column, row, value or filter section available at the bottom of the Field List.
