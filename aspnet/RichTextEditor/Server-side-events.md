@@ -1,10 +1,10 @@
 ---
-* layout: post
-* title: Server side events | RichTextEditor | ASP.NET Webforms | Syncfusion
-* description: server side events
-* platform: aspnet
-* control: RichTextEditor
-* documentation: ug
+layout: post
+title: Server side events | RichTextEditor | ASP.NET Webforms | Syncfusion
+description: server side events
+platform: aspnet
+control: RichTextEditor
+documentation: ug
 ---
 
 # Server side events
