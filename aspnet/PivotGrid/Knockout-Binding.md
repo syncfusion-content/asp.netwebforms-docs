@@ -9,7 +9,7 @@ documentation: ug
 
 # Knockout Binding
 
-N> This feature is applicable only for OLAP datasource.
+I> This feature is applicable only for OLAP datasource.
 
 Knockout’sbinding system provides a concise and powerful way to link data to the UI. It’s generally easy and obvious to bind to simple data properties.
 

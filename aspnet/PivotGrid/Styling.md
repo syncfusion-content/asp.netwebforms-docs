@@ -32,7 +32,7 @@ You can also customize the appearance of the following component manually.
 
 To change the appearance of PivotGrid, apply the below customized CSS.
 
-{% hightlight CSS %}
+{% highlight CSS %}
 
 .e-pivotgrid table {
    color: #565656;
@@ -61,13 +61,13 @@ To change the appearance of PivotGrid, apply the below customized CSS.
    background-repeat: repeat;
 }
 
-{% endhighligh %}
+{% endhighlight %}
 
 ![](Styling_images/customtheme-pivotgrid.png)
 
 To change the appearance of Grouping Bar, apply the below customized CSS.
 
-{% hightlight CSS %}
+{% highlight CSS %}
 
 .e-pivotgrid .summary {
    background-color: aqua !important;
@@ -90,13 +90,13 @@ To change the appearance of Grouping Bar, apply the below customized CSS.
    background-repeat: repeat;
 }
 
-{% endhighligh %}
+{% endhighlight %}
 
 ![](Styling_images/customtheme-groupingbar.png)
 
 To change the appearance of PivotTable Field List, apply the below customized CSS.
 
-{% hightlight CSS %}
+{% highlight CSS %}
 
 .e-pivotschemadesigner, .e-pivotschemadesigner .fieldTable {
      background-color: white;
@@ -116,7 +116,7 @@ To change the appearance of PivotTable Field List, apply the below customized CS
      color: white;
 }
 
-{% endhighligh %}
+{% endhighlight %}
 
 ![](Styling_images/customtheme-fieldist.png)
 

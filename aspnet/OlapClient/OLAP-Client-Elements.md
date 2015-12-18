@@ -43,9 +43,9 @@ User-defined hierarchy organizes the members of a dimension into hierarchical st
 
 ### Differentiating User-defined hierarchy and Attribute hierarchy
 
-•	User-defined hierarchy may contain more than one level whereas attribute hierarchy contains only one level.
-•	User-defined hierarchy provides the navigation path between the levels taken from attribute hierarchies of the same dimension.
-•	In our component, visually these two types are differed by the folder icons mentioned in the immediate topic.
+* User-defined hierarchy may contain more than one level whereas attribute hierarchy contains only one level.
+* User-defined hierarchy provides the navigation path between the levels taken from attribute hierarchies of the same dimension.
+* In our component, visually these two types are differed by the folder icons mentioned in the immediate topic.
 
 ### Symbolic representation of the nodes inside Cube Dimension Browser
 
