@@ -219,7 +219,7 @@ Execute the above codes to render the Resultant schedule as follows.
 ## Two Way Binding 
 
 * Schedule control supports two way binding for the property currentView , currentDate and datasource as mentioned earlier. 
-* [Click here](http://asp.syncfusion.com/demos/web/schedule/angular.aspx) to see how Angular JS works with schedule.
+* [Click here](http://asp.syncfusion.com/demos/web/angularsupport/schedule.aspx) to see how Angular JS works with schedule.
 * The following code example explains how to achieve the two way binding to the Schedule control.
 
 
@@ -388,7 +388,7 @@ Execute the above code to render the following output.
   3. dataSource (within appointmentSettings object)
 
 * Apply the plugin and property assigning to the Schedule element through the directive that starts with a letter “e-“. The following example depicts the way to bind data to the Schedule control through the knockoutsupport.
-* [Click here](http://asp.syncfusion.com/demos/web/schedule/knockout.aspx) to see how Knockout binding works with schedule.
+* [Click here](http://asp.syncfusion.com/demos/web/kosupport/schedule.aspx) to see how Knockout binding works with schedule.
 
 
 
