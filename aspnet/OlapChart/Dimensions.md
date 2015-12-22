@@ -13,8 +13,6 @@ documentation: ug
 
 You can customize the OlapChart dimension by setting the width and height of the widget in percentage.
 
-The following code example explains on how to enable 3D in the Olapchart control.
-
 {% highlight html %}
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">

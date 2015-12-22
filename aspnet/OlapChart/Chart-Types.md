@@ -9,7 +9,7 @@ documentation: ug
 
 # Chart Types
 
-Essential **OLAP Chart ASP.NET** supports 13 different types of chart as follows:
+Essential **OLAP Chart ASP.NET** supports 14 different types of chart as follows:
 
 * Column 
 * Stacking Column
@@ -33,6 +33,7 @@ Essential **OLAP Chart ASP.NET** supports 13 different types of chart as follows
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
 
 <CommonSeriesOptions Type="Column" Tooltip-Visible="true" />
+<Size Width="950px" Height="460px"></Size>
 
 <Legend  Visible="true" rowcount=3></Legend>
 
@@ -54,6 +55,8 @@ Column chart
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
 
 <CommonSeriesOptions type="StackingColumn" tooltip-visible="true" />
+
+<Size Width="950px" Height="460px"></Size>
 
 <Legend visible="true" rowcount="3"></Legend>
 
@@ -77,6 +80,8 @@ The **Bar Chart** is the simplest and most versatile chart of statistical diagra
 
 <CommonSeriesOptions type="Bar"/>
 
+<Size Width="950px" Height="460px"></Size>
+
 <Legend visible="true" rowcount="3"></Legend>
 
 </ej:OlapChart>
@@ -99,6 +104,8 @@ Bar Chart
 
 <CommonSeriesOptions type="StackingBar"/>
 
+<Size Width="950px" Height="460px"></Size>
+
 <Legend visible="true" rowcount="3"></Legend>
 
 </ej:OlapChart>
@@ -119,6 +126,8 @@ A **Pie chart** is used to summarize a set of categorical data or displaying dif
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
 
 <CommonSeriesOptions type="Pie"/>
+
+<Size Width="950px" Height="460px"></Size>
 
 <Legend visible="true" rowcount="3"></Legend>
 
@@ -142,6 +151,8 @@ The **Pyramid Chart** type displays the data in the form of a triangle. It helps
 
 <CommonSeriesOptions type="Pyramid"/>
 
+<Size Width="950px" Height="460px"></Size>
+
 <Legend visible="true" rowcount="3"></Legend>
 
 </ej:OlapChart>
@@ -155,6 +166,33 @@ The following screen shot displays the Pyramid Chart.
 Pyramid Chart
 {:.caption}
 
+
+## Funnel Chart
+
+The **Funnel Chart** type displays the data in the form of an inverted triangle. It helps you to visualize data in a hierarchical structure without any axes.
+
+{% highlight html %}
+
+<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
+
+<CommonSeriesOptions type="Funnel"/>
+
+<Size Width="950px" Height="460px"></Size>
+
+<Legend visible="true" rowcount="3"></Legend>
+
+</ej:OlapChart>
+
+{% endhighlight %}
+
+The following screen shot displays the Funnel Chart.
+
+
+![](Chart-Types_images/Chart-Types_img14.png)
+
+Funnel Chart
+{:.caption}
+
 ## Line Chart
 
 The **Line Chart** joins the data points on a plot using straight lines that show trends in data at equal intervals.
@@ -164,6 +202,8 @@ The **Line Chart** joins the data points on a plot using straight lines that sho
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
 
 <CommonSeriesOptions type="Line"/>
+
+<Size Width="950px" Height="460px"></Size>
 
 <Legend visible="true" rowcount="3"></Legend>
 
@@ -187,6 +227,8 @@ Line Chart
 
 <CommonSeriesOptions type="StepLine"/>
 
+<Size Width="950px" Height="460px"></Size>
+
 <Legend visible="true" rowcount="3"></Legend>
 
 </ej:OlapChart>
@@ -209,6 +251,8 @@ The **spline chart** is similar to line charts except it connects different data
 
 <CommonSeriesOptions type="Spline"/>
 
+<Size Width="950px" Height="460px"></Size>
+
 <Legend visible="true" rowcount="3"></Legend>
 
 </ej:OlapChart>
@@ -230,6 +274,8 @@ Spline Chart
 
 <CommonSeriesOptions type="Area"/>
 
+<Size Width="950px" Height="460px"></Size>
+
 <Legend visible="true" rowcount="3"></Legend>
 
 </ej:OlapChart>
@@ -250,6 +296,8 @@ Area Chart
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
 
 <CommonSeriesOptions type="StepArea"/>
+
+<Size Width="950px" Height="460px"></Size>
 
 <Legend visible="true" rowcount="3"></Legend>
 
@@ -273,6 +321,8 @@ Step Area Chart
 
 <CommonSeriesOptions type="SplineArea"/>
 
+<Size Width="950px" Height="460px"></Size>
+
 <Legend visible="true" rowcount="3"></Legend>
 
 </ej:OlapChart>
@@ -294,6 +344,8 @@ Spline Area Chart
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
 
 <CommonSeriesOptions type="StackingArea"/>
+
+<Size Width="950px" Height="460px"></Size>
 
 <Legend visible="true" rowcount="3"></Legend>
 
@@ -321,6 +373,10 @@ A **combination Chart** combines two or more series types in a single Chart. But
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
 
 <CommonSeriesOptions Type="Column" Tooltip-Visible="true" />
+
+<ClientSideEvents Load="loadTheme" SeriesRendering="onSeriesRenders" />
+
+<Size Width="950px" Height="460px"></Size>
 
 <Legend visible="true" rowcount="3"></Legend>
     

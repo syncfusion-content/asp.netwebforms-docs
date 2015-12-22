@@ -163,7 +163,7 @@ While loading the OlapClient initially, the OlapChart widget can be rendered in 
 
 {% highlight html %}
 
-<ej:OlapClient Url="../OlapClient" runat="server" ChartType="Area"></ej:OlapClient>
+<ej:OlapClient Url="../OlapClient" runat="server" ChartType="Column"></ej:OlapClient>
 
 {% endhighlight  %}	
 

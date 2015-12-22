@@ -17,7 +17,7 @@ By using the `Title.text` property, you can add the title text for OlapChart.
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     //Adding Chart title
-    <Title text="OlapChart"></Title>
+    <Title text="OlapChart in JS"></Title>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -31,7 +31,7 @@ By using the `Title.TextAlignment` property, you can align the OlapChart control
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc"  ClientIDMode="Static">
     //Change title text alignment
-    <Title text="OlapChart" TextAlignment="near"></Title>
+    <Title text="OlapChart in JS" TextAlignment="near"></Title>
 </ej:OlapChart>
 
 {% endhighlight %}

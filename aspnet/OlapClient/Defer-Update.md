@@ -9,15 +9,15 @@ documentation: ug
 
 # Defer Update
 
-Defer Update support allows you to refresh the control only on-demand and not during every UI interaction.  To enable this functionality set the `enableDeferUpdate` property to "True".
-
-The following code example explains how you can enable Defer Update in the OlapClient control.
+Defer Update support allows the user to refresh the control on-demand and not during every user interaction. To enable this functionality, set the `enableDeferUpdate` property to true. By default, the value is set to false.
 
 {% highlight html %}
 
    <ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc" Title="OLAP Browser" EnableDeferUpdate="true" ClientIDMode="Static"> </ej:OlapClient>
 
 {% endhighlight %}
+
+After enabling this property, an icon for Defer Update will appear inside the toolbar.
 
 ![](Defer-Update_images/deferupdate.png) 
 

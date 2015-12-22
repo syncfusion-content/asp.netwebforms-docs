@@ -9,7 +9,7 @@ documentation: ug
 
 # Defer Update
 
-Defer update support allows you to refresh the widget only on-demand and not during every user interaction.
+Defer Update support allows you to refresh the control only on-demand and not during every UI interaction.
 
 {% highlight html %}
 
