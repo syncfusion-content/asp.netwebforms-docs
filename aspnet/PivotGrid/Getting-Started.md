@@ -731,6 +731,6 @@ Now, **PivotGrid** will be rendered with Sales Amount over a set of products acr
 
 ![](Getting-Started_images/relational.png) 
 
-## WCF
+### WCF
 
 This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotGrid. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/pivotgrid/olap-connectivity#wcf-1).

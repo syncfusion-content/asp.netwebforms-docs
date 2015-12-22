@@ -6,6 +6,7 @@ platform: aspnet
 control: PivotGrid
 documentation: ug
 ---
+# Overview
 
 PivotGrid control is an easily configurable, presentation-quality business control that reads both OLAP and Relational datasource, allows to create multi-dimensional views for analysis and satisfying business user needs.
 
