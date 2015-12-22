@@ -40,6 +40,8 @@ The appearance of the range can be customized through the following properties.
 * **Placement** – sets the position of the range.
 * **DistanceFromScale** – sets the distance between the range and scale.
 
+Positioning the range could be set either through `placement` or `distanceFromScale` property. By default, placement takes the value “near”, whereas other enumeration values available are “far” and “center”.
+
 {% highlight html %}
 
 <ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">

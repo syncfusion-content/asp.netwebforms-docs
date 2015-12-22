@@ -654,6 +654,6 @@ N> In this example, **"PivotGridDemo"** indicates the name and root namespace of
 
 Now, **PivotGrid** will be rendered with Sales Amount over a set of products across different customer geographic locations.
 
-![](Data-Binding_images/relational.png)   
+![](Getting-Started_images/relational.png)   
 
 

@@ -41,7 +41,9 @@ In-order to initialize PivotTable Field List, first you need to define a â€œdivâ
 
 {% endhighlight %}
 
-![](PivotTable-Field-List_images/pivotschema.png) 
+![](PivotTable-Field-List_images/pivotschema.png)
+
+## Layout 
 
 The top portion of the layout shows Field or Cube items in a categorized way. They can be dynamically added into the report either by drag and drop option or through simple check box selection.
  
