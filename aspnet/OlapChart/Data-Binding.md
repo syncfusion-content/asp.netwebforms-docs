@@ -31,7 +31,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-##Binding OlapChart to Cube in online SQL Server
+##Binding OlapChart to Cube in online MS SQL Server
 
 To connect an OLAP Cube available in SQL Server Analysis Service in online server through XML/A, host server link and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
 
@@ -56,9 +56,11 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 
 ##Binding OlapChart to Cube in online ActivePivot Server
 
+To connect an OLAP Cube available in ActivePivot Server through XML/A, host server link and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
+
 {% highlight c# %}
 
-string connectionString = @"Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog =FoodMart;"; 
+string connectionString = @"Data Source = http://localhost:8080/cva_s/xmla; Initial Catalog = CVAS;"; 
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.ActivePivot;
 
@@ -69,7 +71,7 @@ DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.Act
 
 To add a WCF service in an existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it as `OlapChartService.svc`, click Add.
 
-Now, WCF service is added into the application successfully that comprises of the following files. The utilization of these files is explained in the immediate sections
+Now, WCF service is added into the application successfully which comprises of the following files. The utilization of these files is explained in the immediate sections
 
 * OlapChartService.svc
 * OlapChartService.svc.cs
@@ -81,9 +83,6 @@ The following are the list of namespaces to be added on top of the main class in
 
 {% highlight c# %}
 
-using OLAPUTILS = Syncfusion.JavaScript.Olap;
-using Syncfusion.Olap.Manager;
-using Syncfusion.Olap.Reports;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -93,7 +92,10 @@ using System.ServiceModel.Activation;
 using System.Text;
 using System.Web.Script.Serialization;
 using Syncfusion.JavaScript.Olap;
+using Syncfusion.Olap.Manager;
+using Syncfusion.Olap.Reports;
 using System.Configuration;
+using OLAPUTILS = Syncfusion.JavaScript.Olap;
 
 namespace OlapChartDemo
 {
@@ -108,7 +110,7 @@ namespace OlapChartDemo
 
 **Datasource Initialization**
 
-Now the connection string to connect OLAP Cube, OlapChart and JavaScriptSerializer instances are created immediately inside the main class in `OLAPChartService.svc.cs` file.
+Now the connection string to connect OLAP Cube, OlapChart and JavaScriptSerializer instances are created immediately inside the main class in `OlapChartService.svc.cs` file.
 
 {% highlight c# %}
 
@@ -244,7 +246,8 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
         ……
         <endpointBehaviors>
             <behavior name="OlapChartDemo.OlapChartServiceAspNetAjaxBehavior">
-                <enableWebScript /> </behavior>
+                <enableWebScript /> 
+            </behavior>
         </endpointBehaviors>
     </behaviors>
 </system.serviceModel>
