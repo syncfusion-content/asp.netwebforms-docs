@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started
 
-## Creating a simple application with OlapGauge.
+## Creating a simple application with OlapGauge
 
 This section covers the information required to create a simple OlapGauge bound to OLAP datasource.
 
->**NOTE: ASP.NET Web Application will contain a service that transfers data to server-side, processes and returns them back to client-side for control rendering and re-rendering. The service utilized for communicate could be either WCF or WebAPI based on users requirement.**
+N> ASP.NET Web Application will contain a service that transfers data to server-side, processes and returns back to client-side for control rendering and re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement.
 
 ###Project Initialization
 Create a new **ASP.NET Empty Web Application** using Visual Studio IDE and name the project as **“OlapGaugeDemo”**.
@@ -121,8 +121,7 @@ The **“Url”** property in OlapGauge widget points the service endpoint, wher
 
 N> The above “GettingStarted.aspx” contains WebAPI Url, which is, “../OlapGauge”. If WCF service is used as endpoint, the Url would look like “../OlapGaugeService.svc”.
 
-If you are manually entering the code instead of drag and drop operation from toolbox, then you need to register the referenced assemblies in Web.config file. 
-
+If you are manually entering the code instead of dragging and dropping the OlapGauge widget from toolbox, then you need to register the referenced assemblies in Web.config file. 
 
 {% highlight xml %}
 
@@ -144,7 +143,7 @@ If you are manually entering the code instead of drag and drop operation from to
 
 To add a WebAPI controller in an existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **WebAPI Controller Class** and name it as `OlapGaugeController.cs`, click Add.
 
-Now, WebAPI controller is added to the application successfully containing the file **“OlapGaugeController.cs”**.
+Now, WebAPI controller is added into the application successfully with the file **“OlapGaugeController.cs”**.
 
 N> While adding WebAPI Controller Class, name it with the suffix ‘Controller’ that is mandatory. For example, in this demo the controller is named as “OlapGaugeController”.
 
@@ -167,9 +166,6 @@ The following are the list of namespaces to be added on top of the main class in
 
 {% highlight c# %}
 
-using Syncfusion.JavaScript.Olap;
-using Syncfusion.Olap.Manager;
-using Syncfusion.Olap.Reports;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -178,6 +174,10 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Script.Serialization;
+using Syncfusion.JavaScript.Olap;
+using Syncfusion.Olap.Manager;
+using Syncfusion.Olap.Reports;
+
 namespace OlapGaugeDemo
 {
     public class OlapGaugeController: ApiController
@@ -190,7 +190,7 @@ namespace OlapGaugeDemo
 
 **Datasource Initialization**
 
-Now, the connection string to connect OLAP Cube, OlapGauge and JavaScriptSerializer instances are created immediately inside the main class in OlapGaugeController.cs file.
+Now, the connection string to connect OLAP Cube, OlapGauge and JavaScriptSerializer instances are created immediately inside the main class in `OlapGaugeController.cs` file.
 
 {% highlight c# %}
 
@@ -279,7 +279,7 @@ public class Global: System.Web.HttpApplication
 }
 {% endhighlight %}
 
-N> Now, OlapGauge is rendered with Internet Revenue for Internet Sales Amount over a Fiscal Year 2004 across different customer geographic locations.
+Now, OlapGauge is rendered with Internet Revenue for Internet Sales Amount over a Fiscal Year 2004 across different customer geographic locations.
 
 ![](Getting-Started_images/OlapGauge.png) 
 
