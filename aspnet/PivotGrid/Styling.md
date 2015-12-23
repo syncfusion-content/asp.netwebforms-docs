@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Styling
-By default, PivotGrid supports 13 different themes.
+By default, PivotGrid supports **13** different themes.
 
 * default-theme
 * flat-azure-dark
@@ -120,4 +120,4 @@ To change the appearance of PivotTable Field List, apply the below customized CS
 
 ![](Styling_images/customtheme-fieldist.png)
 
-You can also customize the appearance of the Pivot component using our Theme Studio utility. To know more about Theme Studio [click here](/js/PivotGrid/Styling). 
+You can also customize the appearance of the Pivot component using our Theme Studio utility. To know more about Theme Studio [click here](/aspnet/pivotgrid/styling). 

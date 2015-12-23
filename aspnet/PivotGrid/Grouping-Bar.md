@@ -20,8 +20,6 @@ Grouping Bar allows user to dynamically alter the report by filter, sort and rem
 <ej:PivotGrid ID="PivotGrid1" runat=server url="../wcf/RelationalService.svc" EnableGroupingBar="true">
 </ej:PivotGrid>
 
-</ej:PivotSchemaDesigner>
-
 {% endhighlight %}
 
 ![](Grouping-Bar_images/groupingbar.png)

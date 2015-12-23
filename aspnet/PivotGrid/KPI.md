@@ -7,7 +7,7 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Key Performance Indicator (KPI)
+# KPI
 
 Key Performance Indicators (KPIs) are business metric that help to figure out the progress of an enterprise in meeting its business goals.
 
@@ -18,7 +18,7 @@ The different indicators available in KPI are:
 * KPI Status: Evaluates the current status of the value compared to the goal. 
 * KPI Trend: Evaluate the current trend of the value compared to the goal.
 
-The "KpiElements" class in OLAP Base library holds the KPI name and when its object is added to an OlapReport, you can view the resultant information in PivotGrid.
+The **"KpiElements"** class in OLAP Base library holds the KPI name and when its object is added to an OlapReport, you can view the resultant information in PivotGrid.
 
 {% highlight C# %}
 
