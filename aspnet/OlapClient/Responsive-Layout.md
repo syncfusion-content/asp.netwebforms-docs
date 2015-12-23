@@ -13,7 +13,7 @@ OlapClient widget supports responsive rendering based on the target device (desk
 
 {% highlight html %}
 
-<ej:OlapClient Url="../OlapClient" runat="server" IsResponsive="true"></ej:OlapClient>
+<ej:OlapClient Url="../OlapClient" Title="OLAP Browser" runat="server" IsResponsive="true"></ej:OlapClient>
 
 {% endhighlight %}
 

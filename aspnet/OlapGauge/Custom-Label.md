@@ -59,7 +59,7 @@ The appearance of the custom labels can be changed through the following propert
 
 ## Multiple Custom Labels
 
-Multiple custom labels can be set to an OlapGauge widget by adding an array of objects within the **"CustomLabels"** option. 
+Multiple custom labels can be set to an OlapGauge widget by adding an array of objects within the `CustomLabels` option. 
 
 {% highlight html %}
 
