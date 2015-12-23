@@ -31,7 +31,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-##Binding OlapClient to Cube in online SQL Server
+##Binding OlapClient to Cube in online MS SQL Server
 
 To connect an OLAP Cube available in SQL Server Analysis Service in online server through XML/A, host server link and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
 
@@ -56,9 +56,11 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 
 ##Binding OlapClient to Cube in online ActivePivot Server
 
+To connect an OLAP Cube available in ActivePivot Server through XML/A, host server link and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
+
 {% highlight c# %}
 
-string connectionString = @"Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog =FoodMart;"; 
+string connectionString = @"Data Source = http://localhost:8080/cva_s/xmla; Initial Catalog = CVAS;"; 
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.ActivePivot;
 
@@ -69,7 +71,7 @@ DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.Act
 
 To add a WCF service in an existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it as `OlapClientService.svc`, click Add.
 
-Now, WCF service is added into the application successfully that comprises of the following files. The utilization of these files is explained in the immediate sections
+Now, WCF service is added into the application successfully which comprises of the following files. The utilization of these files is explained in the immediate sections
 
 * OlapClientService.svc
 * OlapClientService.svc.cs
@@ -108,7 +110,7 @@ namespace OlapClientDemo
 
 **Datasource Initialization**
 
-Now the connection string to connect OLAP Cube, OlapClient and JavaScriptSerializer instances are created immediately inside the main class in `OLAPClientService.svc.cs` file.
+Now the connection string to connect OLAP Cube, OlapClient and JavaScriptSerializer instances are created immediately inside the main class in `OlapClientService.svc.cs` file.
 
 {% highlight c# %}
 
@@ -447,7 +449,8 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
         ……
         <endpointBehaviors>
             <behavior name="OlapClientDemo.OlapClientServiceAspNetAjaxBehavior">
-                <enableWebScript /> </behavior>
+                <enableWebScript /> 
+            </behavior>
         </endpointBehaviors>
     </behaviors>
 </system.serviceModel>
@@ -456,6 +459,6 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
 
 N> In this example, **“OlapClientDemo”** indicates the name and root namespace of the Application created in Visual Studio IDE and **“OlapClientService”** indicates the name of the WCF service created.
 
-In this example, OlapClient is rendered OlapChart and PivotGrid with Customer Count over a period of fiscal years.
+In this example, OlapClient is rendered with OlapChart and PivotGrid showing Customer Count over a period of fiscal years.
  
 ![](Data-Binding_images/OlapClient.png)   
