@@ -272,7 +272,7 @@ On selecting the required report from the report list, the selected report will 
 
 ## PivotGrid and OlapChart
 
-The [PivotGrid](http://help.syncfusion.com/js/pivotgrid/) and [OlapChart](http://help.syncfusion.com/js/olapchart/) controls will be rendered with respect to the operations done at axis element builder.
+The [PivotGrid](http://help.syncfusion.com/aspnet/pivotgrid/overview) and [OlapChart](http://help.syncfusion.com/aspnet/olapchart/overview) controls will be rendered with respect to the operations done at axis element builder.
 
 
 
