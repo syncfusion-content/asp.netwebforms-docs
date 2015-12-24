@@ -17,7 +17,7 @@ Exporting feature provides an option that allows you to export either OlapChart 
 
 {% highlight html %}
 
-<ej:OlapClient Url="../OlapClient" runat="server" ClientExportMode="ChartAndGrid"></ej:OlapClient>
+<ej:OlapClient Url="../OlapClient" runat="server" Title="OLAP Browser" ClientExportMode="ChartAndGrid"></ej:OlapClient>
 
 </ej:OlapClient>
 
@@ -73,3 +73,35 @@ The below screenshot shows the PivotGrid and OlapChart controls exported to Word
 The below screenshot shows the PivotGrid and OlapChart controls exported to PDF document.
 
 ![](Exporting_images/exportpdf.png) 
+
+
+## Customize the export document name
+
+The document name could be customized inside the method in WebAPI Controller. Following code sample illustrates the same.
+
+{% highlight c# %}
+
+[System.Web.Http.ActionName("Export")]
+[System.Web.Http.HttpPost]
+public void Export() {
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
+    string fileName = " File name is customized here ";
+    olapClientHelper.ExportOlapClient(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
+}
+
+{% endhighlight %}
+
+For customizing name in WCF Service, below code snippet is used.
+
+{% highlight c# %}
+
+public void Export(Stream stream) {
+    System.IO.StreamReader sReader = new System.IO.StreamReader(stream);
+    string args = System.Web.HttpContext.Current.Server.UrlDecode(sReader.ReadToEnd()).Remove(0, 5);
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
+    string fileName = " File name is customized here ";
+    olapClientHelper.ExportOlapClient(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
+}
+
+{% endhighlight %}

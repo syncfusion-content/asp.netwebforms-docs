@@ -43,9 +43,9 @@ User-defined hierarchy organizes the members of a dimension into hierarchical st
 
 ### Differentiating User-defined hierarchy and Attribute hierarchy
 
-•	User-defined hierarchy may contain more than one level whereas attribute hierarchy contains only one level.
-•	User-defined hierarchy provides the navigation path between the levels taken from attribute hierarchies of the same dimension.
-•	In our component, visually these two types are differed by the folder icons mentioned in the immediate topic.
+* User-defined hierarchy may contain more than one level whereas attribute hierarchy contains only one level.
+* User-defined hierarchy provides the navigation path between the levels taken from attribute hierarchies of the same dimension.
+* In our component, visually these two types are differed by the folder icons mentioned in the immediate topic.
 
 ### Symbolic representation of the nodes inside Cube Dimension Browser
 
@@ -57,45 +57,45 @@ User-defined hierarchy organizes the members of a dimension into hierarchical st
 <th>Is Draggable</th>
 </tr>
 <tr>
-<td>![](OLAP-Client-Elements_images/Folder icon.png)</td>
+<td>{{ '![](OLAP-Client-Elements_images/Folder icon.png)' | markdownify }}</td>
 <td>Display Folder</td>
 <td>Display Folder</td>
 <td>False</td>
 </tr>
 <tr>
-<td>![](OLAP-Client-Elements_images/Measure icon.png)</td>
+<td>{{ '![](OLAP-Client-Elements_images/Measure icon.png)' | markdownify }}</td>
 <td>Measure</td>
 <td>Measure</td>
 <td>True</td>
 </tr>
 <tr>
-<td>![](OLAP-Client-Elements_images/Dimension icon.png)</td>
+<td>{{ '![](OLAP-Client-Elements_images/Dimension icon.png)' | markdownify }}</td>
 <td>Dimension</td>
 <td>Dimension</td>
 <td>True</td>
 </tr>
 <tr>
-<td>![](OLAP-Client-Elements_images/user defined hierarchy.png)</td>
+<td>{{ '![](OLAP-Client-Elements_images/user defined hierarchy.png)' | markdownify }}</td>
 <td>User Defined Hierarchy</td>
 <td>Hierarchy</td>
 <td>True</td>
 </tr>
 <tr>
-<td>![](OLAP-Client-Elements_images/attribute hierarchy.png)</td>
+<td>{{ '![](OLAP-Client-Elements_images/attribute hierarchy.png)' | markdownify }}</td>
 <td>Attribute Hierarchy</td>
 <td>Hierarchy</td>
 <td>True</td>
 </tr>
 <tr>
-<td>![](OLAP-Client-Elements_images/first level.png) <br/>
-![](OLAP-Client-Elements_images/second level.png) <br/>
-![](OLAP-Client-Elements_images/third level.png)</td>
+<td>{{ '![](OLAP-Client-Elements_images/first level.png)' | markdownify }}<br/>
+{{ '![](OLAP-Client-Elements_images/second level.png)' | markdownify }}<br/>
+{{ '![](OLAP-Client-Elements_images/third level.png)' | markdownify }}</td>
 <td>Levels (in order)</td>
 <td>Level Element</td>
 <td>True</td>
 </tr>
 <tr>
-<td>![](OLAP-Client-Elements_images/names set element.png)</td>
+<td>{{ '![](OLAP-Client-Elements_images/names set element.png)' | markdownify }}</td>
 <td>Named Set</td>
 <td>Named Set</td>
 <td>True</td>
@@ -272,7 +272,7 @@ On selecting the required report from the report list, the selected report will 
 
 ## PivotGrid and OlapChart
 
-The [PivotGrid](http://help.syncfusion.com/js/pivotgrid/) and [OlapChart](http://help.syncfusion.com/js/olapchart/) controls will be rendered with respect to the operations done at axis element builder.
+The [PivotGrid](http://help.syncfusion.com/aspnet/pivotgrid/overview) and [OlapChart](http://help.syncfusion.com/aspnet/olapchart/overview) controls will be rendered with respect to the operations done at axis element builder.
 
 
 

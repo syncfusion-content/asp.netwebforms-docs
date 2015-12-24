@@ -31,7 +31,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-##Binding OlapGauge to Cube in local SQL Server
+##Binding OlapGauge to Cube in online MS SQL Server
 
 To connect an OLAP Cube available in SQL Server Analysis Service in online server through XML/A, host server link and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
 
@@ -56,9 +56,11 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 
 ##Binding OlapGauge to Cube in online ActivePivot Server
 
+To connect an OLAP Cube available in ActivePivot Server through XML/A, host server link and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
+
 {% highlight c# %}
 
-string connectionString = @"Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog =FoodMart;"; 
+string connectionString = @"Data Source = http://localhost:8080/cva_s/xmla; Initial Catalog = CVAS;"; 
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.ActivePivot;
 
@@ -69,7 +71,7 @@ DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.Act
 
 To add a WCF service in an existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it as `OlapGaugeService.svc`, click Add.
 
-Now, WCF service is added into the application successfully that comprises of the following files. The utilization of these files is explained in the immediate sections
+Now, WCF service is added into the application successfully which comprises of the following files. The utilization of these files is explained in the immediate sections
 
 * OlapGaugeService.svc
 * OlapGaugeService.svc.cs
@@ -81,9 +83,6 @@ The following are the list of namespaces to be added on top of the main class in
 
 {% highlight c# %}
 
-using Syncfusion.JavaScript.Olap;
-using Syncfusion.Olap.Manager;
-using Syncfusion.Olap.Reports;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -93,6 +92,9 @@ using System.ServiceModel;
 using System.ServiceModel.Activation;
 using System.Text;
 using System.Web.Script.Serialization;
+using Syncfusion.JavaScript.Olap;
+using Syncfusion.Olap.Manager;
+using Syncfusion.Olap.Reports;
 
 namespace OlapGaugeDemo
 {
@@ -106,7 +108,7 @@ namespace OlapGaugeDemo
 
 **Datasource Initialization**
 
-Now the connection string to connect OLAP Cube, OlapGauge and JavaScriptSerializer instances are created immediately inside the main class in `OLAPGaugeService.svc.cs` file.
+Now the connection string to connect OLAP Cube, OlapGauge and JavaScriptSerializer instances are created immediately inside the main class in `OlapGaugeService.svc.cs` file.
 
 {% highlight c# %}
 
@@ -245,7 +247,8 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
         ……
         <endpointBehaviors>
             <behavior name="OlapGaugeDemo.OlapGaugeServiceAspNetAjaxBehavior">
-                <enableWebScript /> </behavior>
+                <enableWebScript /> 
+            </behavior>
         </endpointBehaviors>
     </behaviors>
 </system.serviceModel>

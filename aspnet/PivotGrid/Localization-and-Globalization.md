@@ -18,6 +18,8 @@ You can localize the PivotGrid controls text with a collection of localized stri
 <ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc" Locale="fr-FR" EnableVirtualScrolling="false">
         <ClientSideEvents AfterServiceInvoke="OnAfterServiceInvoke" />
 </ej:PivotGrid>
+
+<ej:PivotSchemaDesigner ID="PivotSchemaDesigner1" runat=server></ej:PivotSchemaDesigner>
     
 <ej:PivotPager ID="PivotPager1" runat="server" Mode="Both" TargetControlID="PivotGrid1"></ej:PivotPager> 
 
@@ -69,8 +71,6 @@ You can localize the PivotGrid controls text with a collection of localized stri
     };
 </script>
 
-</ej:PivotSchemaDesigner>
-
 {% endhighlight %}
 
 The following table lists the default keywords in French culture for PivotGrid.
@@ -109,7 +109,7 @@ Valeur
 </tr>
 <tr>
 <td>
-ColumnArea
+DragFieldHere
 </td>
 <td>
 Champ de glisser ici
@@ -117,7 +117,7 @@ Champ de glisser ici
 </tr>
 <tr>
 <td>
-RowArea
+ColumnArea
 </td>
 <td>
 Colonne zone
@@ -125,10 +125,18 @@ Colonne zone
 </tr>
 <tr>
 <td>
-ValueArea
+RowArea
 </td>
 <td>
 Déposez ligne ic
+</td>
+</tr>
+<tr>
+<td>
+ValueArea
+</td>
+<td>
+Valeurs de déposer ici
 </td>
 </tr>
 <tr>
@@ -347,7 +355,6 @@ You can render our PivotGrid control from Right to Left by setting `EnableRTL` p
 
 <ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc" EnableRTL="true"></ej:PivotGrid>
 
-</ej:PivotSchemaDesigner>
 
 {% endhighlight %}
 

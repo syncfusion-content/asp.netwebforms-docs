@@ -94,7 +94,7 @@ Following code example illustrates on how to localize OlapClient based on **"Fre
     }
 </script>
 
-<ej:OlapClient Url="../OlapClient" runat="server" Locale="fr-FR"></ej:OlapClient>
+<ej:OlapClient Url="../OlapClient" Title="OLAP Browser" runat="server" Locale="fr-FR"></ej:OlapClient>
 
 {% endhighlight  %}
 

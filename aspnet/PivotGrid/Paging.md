@@ -28,7 +28,7 @@ Inside the **"PivotPager"** method, the enumeration property `Mode` needs to be 
 
 {% endhighlight %}
 
-**Following are the navigation option available in Pager.**
+Following are the navigation option available in Pager.
 
 * Move First - Navigates to the first page.
 * Move Previous - Navigates to the previous page from the current page.

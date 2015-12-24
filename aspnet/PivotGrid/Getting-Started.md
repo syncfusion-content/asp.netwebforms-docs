@@ -350,9 +350,9 @@ Now, **PivotGrid** will be rendered with Internet Sales Amount over a period of 
 
 ![](Getting-Started_images/pivotgrid.png) 
 
-###WCF
+### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotGrid. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/PivotGrid/data-binding#wcf).
+This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotGrid. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/pivotgrid/olap-connectivity#wcf).
 
 ##Creating a simple application with PivotGrid and Relational datasource
 
@@ -731,6 +731,6 @@ Now, **PivotGrid** will be rendered with Sales Amount over a set of products acr
 
 ![](Getting-Started_images/relational.png) 
 
-## WCF
+### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotGrid. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/PivotGrid/data-binding#wcf).
+This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotGrid. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/pivotgrid/olap-connectivity#wcf-1).

@@ -22,15 +22,15 @@ Tooltip appearance can be customized by overriding its CSS class.
 
 {% highlight css %}
 
-.e - olapgauge - tooltip {
-    background - color: aqua!important;
+.e-olapgauge-tooltip {
+    background-color: aqua!important;
     border: 2 px solid red!important;
     color: black!important;
-    border - radius: 18 px!important;
-    margin - top: 20 px;
-    text - align: left;
+    border-radius: 18 px!important;
+    margin-top: 20 px;
+    text-align: left;
     font: 12 px Segoe UI;
-    line - height: 20 px;
+    line-height: 20 px;
 }
 
 {% endhighlight %}

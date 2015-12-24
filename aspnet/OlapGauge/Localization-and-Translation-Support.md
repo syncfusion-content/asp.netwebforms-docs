@@ -24,6 +24,7 @@ Following code example illustrates on how to localize OlapGauge based on **"Fren
 </script>
 
 <ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server" Locale="fr-FR">
+
 </ej:OlapGauge>
 
 {% endhighlight %}

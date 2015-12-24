@@ -20,13 +20,11 @@ Grouping Bar allows user to dynamically alter the report by filter, sort and rem
 <ej:PivotGrid ID="PivotGrid1" runat=server url="../wcf/RelationalService.svc" EnableGroupingBar="true">
 </ej:PivotGrid>
 
-</ej:PivotSchemaDesigner>
-
 {% endhighlight %}
 
 ![](Grouping-Bar_images/groupingbar.png)
 
-## Filtering
+## Filtering Values
 
 Filtering option available in Grouping Bar allows you to select a specific set of values that needs to be displayed in the PivotGrid control. Atleast one value needed to be in checked state while filtering otherwise “Ok” button will be disabled.
 

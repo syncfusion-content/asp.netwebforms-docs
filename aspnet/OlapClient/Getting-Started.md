@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started
 
-##Creating a simple application with OlapClient.
+##Creating a simple application with OlapClient
 
 This section covers the information required to create a simple OlapClient bound to OLAP datasource.
 
->**NOTE: ASP.NET Web Application will contain a service that transfers data to server-side, processes and returns them back to client-side for control rendering and re-rendering. The service utilized for communicate could be either WCF or WebAPI based on users requirement.**
+N> ASP.NET Web Application will contain a service that transfers data to server-side, processes and returns back to client-side for control rendering and re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement.
 
 ###Project Initialization
 Create a new **ASP.NET Empty Web Application** using Visual Studio IDE and name the project as **“OlapClientDemo”**.
@@ -98,8 +98,7 @@ Once the widget is placed into the web page, add **‘ScriptManager’** next to
 
 N> The above “GettingStarted.aspx” contains WebAPI Url, which is, “../OlapClient”. If WCF service is used as endpoint, the Url would look like “../OlapClientService.svc”.
 
-If you are manually entering the code instead of drag and drop operation from toolbox, then you need to register the referenced assemblies in Web.config file. 
-
+If you are manually entering the code instead of dragging and dropping the OlapClient widget from toolbox, then you need to register the referenced assemblies in Web.config file.
 
 {% highlight xml %}
 
@@ -126,7 +125,7 @@ If you are manually entering the code instead of drag and drop operation from to
 
 To add a WebAPI controller in an existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **WebAPI Controller Class** and name it as `OlapClientController.cs`, click Add.
 
-Now, WebAPI controller is added to the application successfully containing the file **“OlapClientController.cs”**.
+Now, WebAPI controller is added into the application successfully with the file **“OlapClientController.cs”**.
 
 N> While adding WebAPI Controller Class, name it with the suffix ‘Controller’ that is mandatory. For example, in this demo the controller is named as “OlapClientController”.
 
@@ -457,7 +456,7 @@ public class Global: System.Web.HttpApplication
 
 {% endhighlight %}
 
-Now, OlapClient is rendered with OlapChart and PivotGrid with Customer Count over a period of fiscal years.
+Now, OlapClient is rendered with OlapChart and PivotGrid showing Customer Count over a period of fiscal years.
 
 ![](Getting-Started_images/OlapClient.png)
 

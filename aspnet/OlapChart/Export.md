@@ -38,7 +38,7 @@ The OlapChart control can be exported by invoking **“exportOlapChart”** meth
         });
 
         function exportBtnClick(args) {
-            var chartObj = $('#OlapChart1).data("ejOlapChart");
+            var chartObj = $('#OlapChart1').data("ejOlapChart");
                 //provide export option type in the exportOlapChart method.
                 chartObj.exportOlapChart(ej.olap.OlapChart.ExportOptions.Excel);
             }
@@ -76,7 +76,7 @@ For Excel export, **“ej.olap.OlapChart.ExportOptions.Excel”** enumeration va
 {% highlight js %}
 
 function exportBtnClick(args) {
-    var chartObj = $('#OlapChart1).data("ejOlapChart ");
+    var chartObj = $('#OlapChart1').data("ejOlapChart ");
         //set export option as Excel in the exportOlapChart method
         chartObj.exportOlapChart(ej.olap.OlapChart.ExportOptions.Excel);
     }
@@ -95,7 +95,7 @@ For Word export, **“ej.olap.OlapChart.ExportOptions.Word”** enumeration valu
 {% highlight js %}
 
 function exportBtnClick(args) {
-    var chartObj = $('#OlapChart1).data("ejOlapChart ");
+    var chartObj = $('#OlapChart1').data("ejOlapChart ");
         //set export option as Word in the exportOlapChart method
         chartObj.exportOlapChart(ej.olap.OlapChart.ExportOptions.Word);
     }
@@ -112,7 +112,7 @@ For CSV export, **“ej.olap.OlapChart.ExportOptions.CSV”** enumeration value 
 {% highlight js %}
 
 function exportBtnClick(args) {
-    var chartObj = $('#OlapChart1).data("ejOlapChart ");
+    var chartObj = $('#OlapChart1').data("ejOlapChart ");
         //set export option as CSV in the exportOlapChart method
         chartObj.exportOlapChart(ej.olap.OlapChart.ExportOptions.CSV);
     }
@@ -130,7 +130,7 @@ For PDF export, **“ej.olap.OlapChart.ExportOptions.PDF”** enumeration value 
 {% highlight js %}
 
 function exportBtnClick(args) {
-    var chartObj = $('#OlapChart1).data("ejOlapChart ");
+    var chartObj = $('#OlapChart1').data("ejOlapChart ");
         //set export option as PDF in the exportOlapChart method
         chartObj.exportOlapChart(ej.olap.OlapChart.ExportOptions.PDF);
     }
@@ -153,7 +153,7 @@ For EMF export, “ej.olap.OlapChart.ExportOptions.EMF” enumeration value is s
 {% highlight js %}
 
 function exportBtnClick(args) {
-    var chartObj = $('#OlapChart1).data("ejOlapChart ");
+    var chartObj = $('#OlapChart1').data("ejOlapChart ");
         //set export option as EMF in the exportOlapChart method
         chartObj.exportOlapChart(ej.olap.OlapChart.ExportOptions.EMF);
     }
