@@ -12,13 +12,14 @@ documentation: ug
 ##Tooltip
 
 ###Enable Tooltip for Data Points
-Tooltip for the data points can be enabled using the **"visible"** option of the `Tooltip` property under **"commonSeriesOptions"** of the OlapChart.
+Tooltip for the data points can be enabled using the **"Visible"** option of the `Tooltip` property under **"commonSeriesOptions"** of the OlapChart.
 
 {% highlight html %}
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     //Enabling tooltip of data point
     <CommonSeriesOptions Tooltip-Visible="True" />
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -44,6 +45,7 @@ HTML elements can be displayed inside the tooltip by using the `Template` option
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     //Enabling tooltip of data point
     <CommonSeriesOptions Tooltip-Visible="True" Tooltip-Template="Tooltip" />
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -58,6 +60,7 @@ By using `Fill` and `Border` properties of tooltip, you can customize its backgr
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     //Change tooltip color and border
     <CommonSeriesOptions Tooltip-Visible="True" Tooltip-Fill="#FF9933" Tooltip-Border-Width="1" Tooltip-Border-Color="#993300" />
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}   
@@ -65,13 +68,14 @@ By using `Fill` and `Border` properties of tooltip, you can customize its backgr
 ![](User-Interactions_images/tooltipcustomization.png) 
 
 ###Tooltip with Rounded Corners
-The tooltip properties, `rx` and `ry` are used to customize its corner radius.
+The tooltip properties, `Rx` and `Ry` are used to customize its corner radius.
 
 {% highlight html %}
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     //Customize the corner radius of the tooltip rectangle.
     <CommonSeriesOptions Tooltip-Visible="True" Tooltip-RX="50" Tooltip-RY="50" />
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %} 
@@ -83,6 +87,7 @@ The tooltip properties, `rx` and `ry` are used to customize its corner radius.
 ###Enable Zooming
 
 There are two ways to zoom the Chart:
+
 * When `Zooming.Enable` option is set to true, you can zoom the Chart by using rubber band selection.
 * When `Zooming.EnableMouseWheel` option is set to true, you can zoom the Chart on mouse wheel scrolling.
 
@@ -90,23 +95,25 @@ There are two ways to zoom the Chart:
 
 //Enable zooming in chart
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Zooming-Enable="true" ClientIDMode="Static">
+<Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %} 
 
 ![](User-Interactions_images/zooming.png) 
 
-After zooming the Chart, a zooming toolbar will appear with options to zoom, pan and reset. Selecting the **“Pan”** option will allow to view the Chart and selecting the **“Reset”** option will reset the zoomed Chart.
+After zooming the Chart, a zooming toolbar will appear with options to *zoom, pan and reset*. Selecting the **“Pan”** option will allow to view the Chart and selecting the **“Reset”** option will reset the zoomed Chart.
 
 ![](User-Interactions_images/pan.png) 
 
 ###Types of Zooming
-You can zoom the particular axis like horizontal axis or vertical axis or both axis using `type` option in zooming. The default value is “x,y” (indicating both axis).
+You can zoom the particular axis like horizontal axis or vertical axis or both axis using `Type` option in zooming. The default value is “x,y” (indicating both axis).
 
 {% highlight html %}
 
 //Enable horizontal zooming 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Zooming-Enable="true" Zooming-Type="x" ClientIDMode="Static">
+<Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -125,6 +132,7 @@ In OlapChart, you can customize the marker `Shape` with different symbols like r
     <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Line" />
         <ClientSideEvents Load="loadTheme" SeriesRendering="onSeriesRenders" />
+        <Size Width="950px" Height="460px"></Size>
     </ej:OlapChart>
     <script type="text/javascript">
         function onSeriesRenders(args) {
@@ -141,7 +149,7 @@ In OlapChart, you can customize the marker `Shape` with different symbols like r
 ![](User-Interactions_images/marker.png) 
 
 ###Enable Crosshair and Crosshair Label
-Crosshair helps you to view the value at mouse position or touch contact point. Crosshair can be enabled by using the `Visible` option in `Crosshair` property. Crosshair label can be enabled by using the **“visible”** option in `CrosshairLabel` property within its corresponding axis.
+Crosshair helps you to view the value at mouse position or touch contact point. Crosshair can be enabled by using the `Visible` option in `Crosshair` property. Crosshair label can be enabled by using the **“Visible”** option in `CrosshairLabel` property within its corresponding axis.
 
 {% highlight html %}
 
@@ -152,6 +160,7 @@ Crosshair helps you to view the value at mouse position or touch contact point. 
     <PrimaryXAxis CrosshairLabel-Visible="true"></PrimaryXAxis>
     //Enable crosshairLabel to Y-Axis
     <PrimaryYAxis CrosshairLabel-Visible="true"></PrimaryYAxis>
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -169,6 +178,8 @@ By using `Line` property of crosshair, you can customize its line color and widt
     //Customizing the crosshair label background color and border
     <PrimaryXAxis CrosshairLabel-Visible="true" CrosshairLabel-Fill="Red" CrosshairLabel-Border-Color="Green" CrosshairLabel-Border-Width="2">
     </PrimaryXAxis>
+    <PrimaryYAxis CrosshairLabel-Visible="true"></PrimaryYAxis>
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -178,13 +189,14 @@ By using `Line` property of crosshair, you can customize its line color and widt
 ##Trackball
 
 ###Enable trackball
-Trackball can be enabled by setting both - 'visible' option of the crosshair to true and `Type` option of the crosshair to **“trackball”.** The default value of type is **“crosshair”.**
+Trackball can be enabled by setting both - 'Visible' option of the crosshair to true and `Type` option of the crosshair to **“Trackball”.** The default value of type is **“Crosshair”.**
 
 {% highlight html %}
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     //Change crosshair type to track ball
     <CrossHair Visible="true" Type="TrackBall"></CrossHair>
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -192,13 +204,14 @@ Trackball can be enabled by setting both - 'visible' option of the crosshair to 
 ![](User-Interactions_images/trackball.png) 
 
 ###Trackball Marker and Line Customization
-Shape and size of the trackball marker can be customized using the `Shape` and `Size` options of the crosshair marker. Color and width of the trackball line can be customized using the **“line”** option in the crosshair.
+Shape and size of the trackball marker can be customized using the `Shape` and `Size` options of the crosshair marker. Color and width of the trackball line can be customized using the **“Line”** option in the crosshair.
 
 {% highlight html %}
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     //Customize the trackball line color and width, marker shape and visibility
-    <CrossHair Visible="true" Line-Width="2" Line-Color="Gray" Type="TrackBall" Marker-Shape="Pentagon" Marker-Visible="true"></CrossHair>
+    <CrossHair Visible="true" Line-Width="2" Line-Color="#800000'" Type="TrackBall" Marker-Shape="Pentagon" Marker-Visible="true"></CrossHair>
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %} 
@@ -217,6 +230,7 @@ OlapChart provides highlighting support for the series and data points on mouse 
     <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
+        <Size Width="950px" Height="460px"></Size>
     </ej:OlapChart>
     <script type="text/javascript">
         function onSeriesRenders(args) {
@@ -246,6 +260,7 @@ You can set three different modes for highlighting data points and series by usi
     <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
+        <Size Width="950px" Height="460px"></Size>
     </ej:OlapChart>
     <script type="text/javascript">
         function onSeriesRenders(args) {
@@ -276,6 +291,7 @@ To customize the highlighted series, use `border.color`, `border.width` and `opa
     <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
+        <Size Width="950px" Height="460px"></Size>
     </ej:OlapChart>
     <script type="text/javascript">
         function onSeriesRenders(args) {
@@ -328,6 +344,7 @@ OlapChart provides pattern support for highlighting the data by setting an appro
     <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
+        <Size Width="950px" Height="460px"></Size>
     </ej:OlapChart>
     <script type="text/javascript">
         function onSeriesRenders(args) {
@@ -357,6 +374,7 @@ OlapChart provides selection support for the series and data points on mouse cli
     <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
+        <Size Width="950px" Height="460px"></Size>
     </ej:OlapChart>
     <script type="text/javascript">
         function onSeriesRenders(args) {
@@ -388,6 +406,7 @@ You can set three different selection mode for highlighting the data points and 
     <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
+        <Size Width="950px" Height="460px"></Size>
     </ej:OlapChart>
     <script type="text/javascript">
         function onSeriesRenders(args) {
@@ -417,6 +436,7 @@ To customize the selection styles, use the `border.color`, `border.width` and `o
     <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
+        <Size Width="950px" Height="460px"></Size>
     </ej:OlapChart>
     <script type="text/javascript">
         function onSeriesRenders(args) {
@@ -467,6 +487,7 @@ OlapChart provides pattern support for the selecting the data by setting an appr
     <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
+        <Size Width="950px" Height="460px"></Size>
     </ej:OlapChart>
     <script type="text/javascript">
         function onSeriesRenders(args) {

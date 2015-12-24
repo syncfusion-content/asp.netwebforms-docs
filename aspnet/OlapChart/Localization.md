@@ -22,6 +22,7 @@ Following code example illustrates on how to localize OlapChart based on **“Fr
 
 <body>
     <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Locale="fr-FR" ClientIDMode="Static">
+    <Size Width="950px" Height="460px"></Size>
     </ej:OlapChart>
     <script type="text/javascript">
         ej.olap.OlapChart.locale["fr-FR"] = {
@@ -39,6 +40,8 @@ Following code example illustrates on how to localize OlapChart based on **“Fr
 </html>
 
 {% endhighlight %}
+
+Following table localizes the in-built keywords to **“French”** culture for OlapChart.
 
 <table>
 <tr>
@@ -73,30 +76,6 @@ Collapse</td><td>
 <td>
 Exit</td><td>
 “Quitter "</td></tr>
-<tr>
-<td>
-MDXqueryExecutionFailed</td><td>
-"L'exécution de la requête MDX pas "</td></tr>
-<tr>
-<td>
-PreparingAndExecutingMDXquery</td><td>
-"La préparation et l'exécution de la requête MDX "</td></tr>
-<tr>
-<td>
-MDXqueryExecutedSuccessfully</td><td>
-" MDX requête exécutée avec succès "</td></tr>
-<tr>
-<td>
-RenderingSucceeded</td><td>
-“Rendu réussi "</td></tr>
-<tr>
-<td>
-RenderingStarted</td><td>
-“Rendu commencé ",</td></tr>
-<tr>
-<td>
-RenderingFailed</td><td>
-"Rendant pas "</td></tr>
 </table>
 
 ## Localization and Globalization of Cube Info
