@@ -19,6 +19,7 @@ By using the `LabelFormat` property, you can format the numeric labels. Numeric 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     //Applying currency format to axis labels
     <PrimaryYAxis LabelFormat="c"></PrimaryYAxis>
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -93,6 +94,7 @@ By using the `LabelFormat` property of `PrimaryYAxis`, you can add the category 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     //Adding prefix and suffix to axis labels
     <PrimaryYAxis LabelFormat="${value} K"></PrimaryYAxis>
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -109,6 +111,7 @@ Axis visibility can be set by using the `Visible` property of the respective axi
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     //Disabling visibility of Y-axis
     <PrimaryYAxis Visible="false"></PrimaryYAxis>
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -124,6 +127,7 @@ By using the `Font` property of the axis, we can customize the labels – font f
     //Customizing label appearance
     <PrimaryXAxis Font-Color="Blue" Font-FontSize="14px" Font-FontFamily="Segoe UI" Font-FontWeight="Bold">
     </PrimaryXAxis>
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -131,14 +135,15 @@ By using the `Font` property of the axis, we can customize the labels – font f
 ![](Chart-Axes_images/Chart-Axes_img4.png)
 
 ###Label and Tick Positioning
-Axis labels and ticks can be positioned inside or outside the Chart area by using the `LabelPosition` and `TickLinesPosition` properties. The labels and ticks are positioned outside the Chart area, by default.
+Axis labels and ticks can be positioned inside or outside the Chart area by using the `AxislabelPosition` and `TickLinesPosition` properties. The labels and ticks are positioned outside the Chart area, by default.
 
 {% highlight html %}
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     //Customizing label and tick positions
-    <PrimaryXAxis AxislabelPosition="Inside">
+    <PrimaryXAxis AxislabelPosition="Inside" TickLinesPosition="Inside">
     </PrimaryXAxis>
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -152,8 +157,9 @@ By using the `MajorGridLines` and `MinorGridLines` properties of the axis, you c
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     // Customizing grid lines
-    <PrimaryXAxis MajorGridLines-Width="5" MajorGridLines-Visible="true" MajorGridLines-Color="Blue" MinorTicksPerInterval="1" MinorGridLines-Width="5" MinorGridLines-Visible="true" MinorGridLines-Color="Red">
+    <PrimaryXAxis MajorGridLines-Width="5" MajorGridLines-Visible="true" MajorGridLines-Color="Blue" MinorTicksPerInterval="1" MinorGridLines-Width="25" MinorGridLines-Visible="true" MinorGridLines-Color="Red">
     </PrimaryXAxis>
+     <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -167,8 +173,9 @@ By using the `MajorTickLines` and `MinorTickLines` properties of the axis, you c
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     // Customizing tick lines
-    <PrimaryXAxis MajorTickLines-Width="5" MajorTickLines-Visible="true" MajorTickLines-Color="Blue" MinorTicksPerInterval="1" MinorTickLines-Width="5" MinorTickLines-Visible="true" MinorTickLines-Color="Red">
+    <PrimaryXAxis MajorTickLines-Width="10" MajorTickLines-Visible="true" MajorTickLines-Size="15" MajorTickLines-Color="Blue" MinorTicksPerInterval="1" MinorTickLines-Width="15" MinorTickLines-Size="25" MinorTickLines-Visible="true" MinorTickLines-Color="Red">
     </PrimaryXAxis>
+     <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -185,6 +192,7 @@ Axis can be inversed by using the `IsInversed` property of the axis. By default,
     <PrimaryXAxis IsInversed="true"></PrimaryXAxis>
     //Inversing the Y-axis
     <PrimaryYAxis IsInversed="true"></PrimaryYAxis>
+     <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -201,13 +209,15 @@ The `OpposedPosition` property of Chart axis can be used to place the axis at th
     <PrimaryXAxis OpposedPosition="true"></PrimaryXAxis>
     //Placing axis at the opposite side of its normal position
     <PrimaryYAxis OpposedPosition="true"></PrimaryYAxis>
+     <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
 
 ![](Chart-Axes_images/Chart-Axes_img9.png)
 
-###Smart Axis Labels
+## Smart Axis Labels
+
 When the axis labels overlap with each other based on the Chart dimensions and label size, you can use `LabelIntersection` property of the axis to avoid overlapping. The default value of the `LabelIntersection` property is none. The other options available are rotate45, rotate90, trim, multiplerows, wrap and hide.
 
 {% highlight html %}
@@ -215,6 +225,7 @@ When the axis labels overlap with each other based on the Chart dimensions and l
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     // Avoid overlapping of x-axis labels
     <PrimaryXAxis LabelIntersectAction="MultipleRows"></PrimaryXAxis>
+     <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %} 

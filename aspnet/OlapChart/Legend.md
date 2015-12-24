@@ -18,6 +18,7 @@ You can enable or disable legend using the `Visible` property inside the `Legend
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     //Legend Visibility
     <Legend Visible="true" />
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -32,6 +33,7 @@ You can customize the legend `Shape` in OlapChart widget to rectangle, circle, c
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     //Applying legend shape
     <Legend Visible="true" RowCount="3" Shape="star" />
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -46,6 +48,7 @@ By using the `Position` property, you can place the legend at top, bottom, left 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     //Place the legend at top of the Chart
     <Legend Visible="true" RowCount="3" Position="top" />
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -62,6 +65,7 @@ To add the legend title, you have to specify the title text in `Title.text` prop
     <Legend Visible="true">
         <Title text="Countries"></Title>
     </Legend>
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -76,6 +80,7 @@ You can align the legend to center, far and near based on its position in the Ch
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     //Aligning the legend near to the Chart
     <Legend Visible="true" RowCount="3" Alignment="near" />
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -90,6 +95,7 @@ By using the legend `ItemStyle.Width`, `ItemStyle.Height` and `ItemStyle.Border`
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     //Changing legend items border, height and width
     <Legend Visible="true" ItemStyle-Width="12" ItemStyle-Height="12" ItemStyle-Border-Color="Magenta" ItemStyle-Border-Width="1.5">
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -103,7 +109,8 @@ By using the `Border` option in legend, you can customize border color and width
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     //Setting border color and width to legend
-    <Legend Visible="true" Border-Width="2" Border-Color="red" />
+    <Legend Visible="true" Border-Width="2" Border-Color="#FFC342" />
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -118,9 +125,10 @@ By using the `Font` option, you can customize the font family, font style, font 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     <Legend>
         //Customizing the legend text
-        <Font FontFamily="SegoeUI" FontSize="15px" FontStyle="Normal" FontWeight="Bold">
+        <Font FontFamily="SegoeUI" FontSize="13px" FontStyle="italic" FontWeight="Bold">
        </Font>
     </Legend>
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
