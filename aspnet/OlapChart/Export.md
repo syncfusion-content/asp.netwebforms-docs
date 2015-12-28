@@ -17,7 +17,28 @@ The OlapChart control can be exported to the following file formats.
 * CSV
 * Image
 
+The additional script files required for exporting OlapChart are mentioned below:
+
+* rgbcolor.js 
+* StackBlur.js 
+* canvg.js
+
+These files are referred under the <head> tag in ASPX page.
+
+{% highlight html %}
+
+<head>
+    //...
+    <script type="text/javascript" src="http://gabelerner.github.io/canvg/rgbcolor.js"></script>
+    <script type="text/javascript" src="http://gabelerner.github.io/canvg/StackBlur.js"></script>
+    <script type="text/javascript" src="http://gabelerner.github.io/canvg/canvg.js"></script>
+
+</head>
+    
+{% endhighlight %}
+
 The OlapChart control can be exported by invoking **“exportOlapChart”** method, with an appropriate export option as parameter.
+
 
 {% highlight html %}
 
