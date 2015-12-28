@@ -44,9 +44,6 @@ The scripts and style sheets that are mandatorily required to render OlapClient 
 2.	jquery-1.10.2.min.js
 3.	jquery.easing.1.3.min.js
 4.	jquery.globalize.min.js
-5.  rgbcolor.js
-6.  StackBlur.js
-7.  canvg.js
 5.	ej.web.all.min.js
 
 [Click here](http://help.syncfusion.com/js/cdn) to know more about scripts and style sheets available online (CDN Link).
@@ -60,10 +57,6 @@ Scripts and style sheets are referred under the <head> tag in **GettingStarted.a
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"> </script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
-    <script type="text/javascript" src="http://gabelerner.github.io/canvg/rgbcolor.js"></script> 
-    <script type="text/javascript" src="http://gabelerner.github.io/canvg/StackBlur.js"></script>
-    <script type="text/javascript" src="http://gabelerner.github.io/canvg/canvg.js"></script>  
-
     <script src="http://cdn.syncfusion.com/13.3.0.7/js/web/ej.web.all.min.js"> </script>
 </head>
 
