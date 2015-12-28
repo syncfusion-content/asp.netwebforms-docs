@@ -13,7 +13,7 @@ Chart and Grid in the OlapClient widget can be exported to Excel, Word and PDF d
 
 ![](Exporting_images/exporticon.png) 
 
-The additional script files required for exporting OlapClient are mentioned below:
+The additional script files required for exporting OlapChart in OlapClient are mentioned below:
 
 * rgbcolor.js 
 * StackBlur.js 
