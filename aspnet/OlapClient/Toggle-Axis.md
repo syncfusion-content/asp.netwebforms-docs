@@ -3,7 +3,7 @@ layout: post
 title: Toggle-Axis
 description: toggle axis
 platform: aspnet
-control: OLAP Client
+control: OlapClient
 documentation: ug
 ---
 

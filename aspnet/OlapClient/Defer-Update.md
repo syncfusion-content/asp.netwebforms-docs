@@ -3,7 +3,7 @@ layout: post
 title: Defer-Update
 description: defer update
 platform: aspnet
-control: OLAP Client
+control: OlapClient
 documentation: ug
 ---
 

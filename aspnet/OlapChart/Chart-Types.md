@@ -9,7 +9,7 @@ documentation: ug
 
 # Chart Types
 
-Essential **OLAP Chart ASP.NET** supports 14 different types of chart as follows:
+Essential **OlapChart ASP.NET** supports 14 different types of chart as follows:
 
 * Column
 * Stacking Column
