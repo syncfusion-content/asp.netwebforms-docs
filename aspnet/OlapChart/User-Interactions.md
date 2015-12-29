@@ -3,7 +3,7 @@ layout: post
 title: User-Interactions
 description: user interactions
 platform: aspnet
-control: OLAP Chart
+control: OlapChart
 documentation: ug
 ---
 

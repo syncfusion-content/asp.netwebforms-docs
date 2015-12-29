@@ -3,7 +3,7 @@ layout: post
 title: Dimensions
 description: dimensions
 platform: aspnet
-control: OLAP Chart
+control: OlapChart
 documentation: ug
 ---
 
