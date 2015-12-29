@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The **OLAP Chart** control for **ASP.NET** is a lightweight control that reads **OLAP** information and visualizes it in graphical format with the ability to drill up and down.
+The **OlapChart** control for **ASP.NET** is a lightweight control that reads **OLAP** information and visualizes it in graphical format with the ability to drill up and down.
 
 ##Key Features
 

@@ -3,7 +3,7 @@ layout: post
 title: Appearance
 description: appearance
 platform: aspnet
-control: OLAP Chart
+control: OlapChart
 documentation: ug
 ---
 
