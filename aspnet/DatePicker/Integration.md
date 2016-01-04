@@ -74,23 +74,21 @@ The following example depicts the way to bind data to the DatePicker control thr
 
 {% highlight js %}
 
-                    angular.module('syncApp', ['ejangular'])
+angular.module('syncApp', ['ejangular']).controller('DatePickerCtrl', function ($scope) {
 
-                .controller('DatePickerCtrl', function ($scope) {
+  $scope.dateValue = "17/3/2013";
 
-                    $scope.dateValue = "17/3/2013";
-
-                });
+});
 
 {% endhighlight %}
 
 {% highlight css %}
 
-        #binding {
+#binding {
 
-            margin-left: 150px;
+  margin-left: 150px;
 
-        }
+}
 
 {% endhighlight %}
 
@@ -128,9 +126,9 @@ Note: Add the following script files along with the given code to access Knockou
 
 The link for those script files are as follows:
 
-[http://cdn.syncfusion.com/js/assets/external/knockout.min.js](http://cdn.syncfusion.com/js/assets/external/knockout.min.js)
+<http://cdn.syncfusion.com/js/assets/external/knockout.min.js>
 
-[http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/ej.widget.ko.min.js](http://cdn.syncfusion.com/%7b%7bsite.releaseversion%7d%7d/js/web/ej.widget.ko.min.js)
+<http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/ej.widget.ko.min.js>
 
 The following example depicts the way to bind data to the DatePicker control through the Knockout support that enables and populates data to a DatePicker control based on the value set to the other DatePicker control.
 
@@ -174,39 +172,29 @@ The following example depicts the way to bind data to the DatePicker control thr
 
 {% highlight js %}
 
-    window.viewModel = {
+window.viewModel = {
 
-            value: ko.observable(new Date(2014, 05, 15))
+  value: ko.observable(new Date(2014, 05, 15))
 
-        };
+};
 
-        $(function () {
-
-            // declaration
-
-            ko.applyBindings(viewModel);
-
-
-
-        });
+$(function () {
+  // declaration
+  ko.applyBindings(viewModel);
+});
 
 {% endhighlight %}
 
 {% highlight css %}
 
- #control1 {
+#control1 {
 
-            margin-left: 150px;
+  margin-left: 150px;
 
-        }
+}
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![](Integration_images/Integration_img4.png) 
-
-
-
-
-
