@@ -31,7 +31,7 @@ Using the Range property and AddComment method of the XlsIO IRange Class, we wil
  
         
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
     public partial class GridExporting : System.Web.UI.Page
     { 
@@ -78,7 +78,7 @@ We can add comments to the word document using the AppendComment method in the W
     </ej:Grid> 
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
     public partial class GridExporting : System.Web.UI.Page
     { 
@@ -126,7 +126,7 @@ We can add comments to a pdf documents using the annotation support provided in 
     </ej:Grid>  
         
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
     public partial class GridExporting : System.Web.UI.Page
     { 
