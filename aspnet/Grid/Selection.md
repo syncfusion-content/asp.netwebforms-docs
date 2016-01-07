@@ -1,6 +1,6 @@
 ---
 layout: post
-title:Selection with Grid widget for Syncfusion Essential ASP
+title: Selection with Grid widget for Syncfusion Essential ASP
 description: How to enable selection and its functionalities
 platform: ejweb
 control: Grid
