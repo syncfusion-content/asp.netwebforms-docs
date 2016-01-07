@@ -1,432 +1,902 @@
 ---
 layout: post
-title: Filtering | Grid | ASP.NET Webforms | Syncfusion
-description: filtering
-platform: aspnet
+title: Filtering with Grid widget for Syncfusion Essential ASP.NET
+description: How to enable filtering and its functionalities
+platform: ejweb
 control: Grid
 documentation: ug
 ---
-
 # Filtering
 
-Filtering is used to filter particular or related records in Grid to review details of records. To enable filtering behavior in Grid you can add AllowFiltering property at Grid initialize. There are three types of filtering features in grid. They are
+Filtering helps to view particular or related records from dataSource which meets a given filtering criteria. To enable filter, set `AllowFiltering`property as`true`.   
 
-* Filter menu
-* Filter Bar
-* Excel styled menu
+The Grid supports three types of filter, they are
 
-## Filter Menu 
+1. Filter Bar
+2. Menu 
+3. Excel
 
+And also four types of filter menu is available in all filter types, they are
 
-After you enable Filter Menu in Grid, it shows filter menu to filter records. This menu contains filtering options based on column type.
+1. String 
+2. Numeric 
+3. Date 
+4. Boolean
 
-### Filter menu types
+The corresponding filter menu is opened based on the column type.
 
-* String menu filtering 
-* Numeric menu filtering
-* Date menu filtering
-* Boolean menu filtering
+N>  1. Need to specify the `Type` of column, when first record data value is empty or null otherwise the filter menu is not opened. 
+N>  2. The default filter type is Filter bar, when `AllowFiltering` is enabled and `FilterType` is not set.
 
-Filter menus are a good UI based filtering option. It visibly denotes filtering option and is flexible to filter records. In String menu filtering, ejAutoComplete is used as default control to filter; in Numeric menu filtering, ejNumericTextbox is used as default control to filter. In Date menu filtering, ejDatePicker control is used as default control to filter and in Boolean menu filtering, ejCheckBox is used for filtering. 
+The following code example describes the above behavior.
+
+{% tabs %}
 
 {% highlight html %}
+    
+           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowPaging="True" >
+           <Columns>
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID"  />
+                <ej:Column Field="CustomerID"  />
+                <ej:Column Field="ShipCountry"  />
+                <ej:Column Field="Freight"  />
+           </Columns>             
+           </ej:Grid>
+           
+{% endhighlight  %}
 
+{% highlight c# %}
 
+    namespace WebSampleBrowser.Grid
+        {
+            public partial class _Default : Page
+              { 
+                 List<Orders> order = new List<Orders>();
+                 protected void Page_Load(object sender, EventArgs e)
+                 {
+                   BindDataSource();
+                  }
+                 private void BindDataSource()
+                  {   
+                     int code = 10000;
+                     for (int i = 1; i < 10; i++)
+                     {
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i));
+                      order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
+                      order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
+                      order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
+                      order.Add(new Orders(code + 5, "BOLID", i + 4, "Mexico",46.3 * i));
+                      code += 5;
+                     }
+                    this.FlatGrid.DataSource = order;
+                    this.FlatGrid.DataBind();
+                  }
+                  [Serializable]
+                  public class Orders
+                   {
+                     public Orders()
+                      {
 
-
-
-<ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="True" >
-
-<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"></DataManager>
-
-            <FilterSettings FilterType="Menu" />         
-
-</ej:Grid> 
-
-
-{% endhighlight %}
-
-
+                      }
+                     public Orders(long OrderId, int EmployeeId, string CustomerId, string ShipCountry,double Freight)
+                      {
+                        this.OrderID = OrderId;
+                        this.EmployeeID = EmployeeId;
+                        this.CustomerID = CustomerId;
+                        this.Freight = Freight;
+                        this.ShipCountry = ShipCountry;
+                      }
+                     public long OrderID { get; set; }
+                     public int EmployeeID { get; set; }
+                     public string CustomerID { get; set; }
+                     public string ShipCountry { get; set; }
+                     public double Freight { get; set; }
+                   }
+              }
+        } 
+{% endhighlight  %}
+    
+{% endtabs %}  
 
 
 The following output is displayed as a result of the above code example.
 
+![](filtering_images/filtering_img1.png)
 
 
-![](Filtering_images/Filtering_img1.png)
+## Menu Filter
 
+You can enable menu filter by setting `FilterType` as `Menu` in `FilterSettings`
+
+There is an option to show or hide the additional filter options in the Menu by setting `ShowPredicate` as `true` or `false` in `FilterSettings` respectively.
+
+N> For `FilterType` property you can assign either `string` value ("menu") or `enum` value (`Menu`).
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight html %}
+    
+           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowPaging="True" >
+           <FilterSettings FilterType="Menu" />  
+           <Columns>
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID"  />
+                <ej:Column Field="CustomerID"  />
+                <ej:Column Field="OrderDate" Format="{0:MM/dd/yyyy}" />
+                <ej:Column Field="Verified"  />
+           </Columns>             
+           </ej:Grid>            
+         
+{% endhighlight  %}
+
+{% highlight c# %}
+
+    namespace WebSampleBrowser.Grid
+        {
+            public partial class _Default : Page
+              { 
+                 List<Orders> order = new List<Orders>();
+                 protected void Page_Load(object sender, EventArgs e)
+                 {
+                   BindDataSource();
+                  }
+                 private void BindDataSource()
+                  {   
+                     int code = 10000;
+                     for (int i = 1; i < 10; i++)
+                     {
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0,new DateTime(1991, 05, 15),false)));
+                      order.Add(new Orders(code + 2, "ANATR", i + 2,new DateTime(1991, 05, 15),false)));
+                      order.Add(new Orders(code + 3, "ANTON", i + 1,new DateTime(1957, 11, 30),true)));
+                      order.Add(new Orders(code + 4, "BLONP", i + 3,new DateTime(1930, 10, 22),false)));
+                      order.Add(new Orders(code + 5, "BOLID", i + 4,new DateTime(1953, 02, 18),true)));
+                      code += 5;
+                     }
+                    this.FlatGrid.DataSource = order;
+                    this.FlatGrid.DataBind();
+                  }
+                  [Serializable]
+                  public class Orders
+                   {
+                     public Orders()
+                      {
+
+                      }
+                     public Orders(long OrderId, int EmployeeId, string CustomerId, string ShipCountry,double Freight)
+                      {
+                        this.OrderID = OrderId;
+                        this.EmployeeID = EmployeeId;
+                        this.CustomerID = CustomerId;
+                        this.Freight = Freight;
+                        this.ShipCountry = ShipCountry;
+                      }
+                     public long OrderID { get; set; }
+                     public int EmployeeID { get; set; }
+                     public string CustomerID { get; set; }
+                     public string ShipCountry { get; set; }
+                     public double Freight { get; set; }
+                   }
+              }
+        } 
+{% endhighlight  %}
+    
+{% endtabs %}  
+
+The following output is displayed as a result of the above code example.
+
+![](filtering_images/filtering_img2.png)
+
+Numeric Filter
+
+![](filtering_images/filtering_img3.png)
+
+String Filter
+
+![](filtering_images/filtering_img4.png)
+
+Date Filter
+
+![](filtering_images/filtering_img5.png)
+
+Boolean Filter
+
+
+## Excel-like filter
+
+You can enable excel menu by setting  `FilterType` as` Excel` in `FilterSettings` . The excel menu contains an option such as Sorting, Clear filter, submenu for advanced filtering.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight html %}
+    
+           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowPaging="True" >
+           <FilterSettings FilterType="Excel" />  
+           <Columns>
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID"  />
+                <ej:Column Field="CustomerID"  />
+                <ej:Column Field="ShipCountry"  />
+                <ej:Column Field="Freight"  />
+           </Columns>             
+           </ej:Grid>           
+         
+{% endhighlight  %}
+
+{% highlight c# %}
+
+    namespace WebSampleBrowser.Grid
+        {
+            public partial class _Default : Page
+              { 
+                 List<Orders> order = new List<Orders>();
+                 protected void Page_Load(object sender, EventArgs e)
+                 {
+                   BindDataSource();
+                  }
+                 private void BindDataSource()
+                  {   
+                     int code = 10000;
+                     for (int i = 1; i < 10; i++)
+                     {
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i,));
+                      order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
+                      order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
+                      order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
+                      order.Add(new Orders(code + 5, "BOLID", i + 4, "Mexico",46.3 * i));
+                      code += 5;
+                     }
+                    this.FlatGrid.DataSource = order;
+                    this.FlatGrid.DataBind();
+                  }
+                  [Serializable]
+                  public class Orders
+                   {
+                     public Orders()
+                      {
+
+                      }
+                     public Orders(long OrderId, int EmployeeId, string CustomerId, string ShipCountry,double Freight)
+                      {
+                        this.OrderID = OrderId;
+                        this.EmployeeID = EmployeeId;
+                        this.CustomerID = CustomerId;
+                        this.Freight = Freight;
+                        this.ShipCountry = ShipCountry;
+                      }
+                     public long OrderID { get; set; }
+                     public int EmployeeID { get; set; }
+                     public string CustomerID { get; set; }
+                     public string ShipCountry { get; set; }
+                     public double Freight { get; set; }
+                   }
+              }
+        } 
+{% endhighlight  %}
+    
+{% endtabs %}  
+
+The following output is displayed as a result of the above code example.
+
+![](filtering_images/filtering_img6.png)
+
+
+Checkbox list generation:
+
+By default, the checkbox list is generated from distinct values of the filter column from dataSource which gives an option to search and select the required items.
+
+Also on checkbox list generation, if the number of distinct values are greater than 1000, then the excel filter will display only first 1000 values to ensure the best performance on rendering and searching. However this limit has been customized according to your requirement by setting `MaxFilterChoices` with required limit in integer.
+
+N> 1. Using excel filter events you can change the dataSource of the checkbox list. 
+N> 2. `Query` of checkbox list can also be changed using excel filter events.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight html %}
+    
+           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowPaging="True" >
+           <FilterSettings FilterType="Excel" MaxFilterChoices="4" /> 
+            <Columns>
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID"  />
+                <ej:Column Field="CustomerID"  />
+                <ej:Column Field="ShipCountry"  />
+                <ej:Column Field="Freight"  />
+           </Columns>             
+           </ej:Grid> 
+{% endhighlight  %}
+
+{% highlight c# %}
+
+    namespace WebSampleBrowser.Grid
+        {
+            public partial class _Default : Page
+              { 
+                 List<Orders> order = new List<Orders>();
+                 protected void Page_Load(object sender, EventArgs e)
+                 {
+                   BindDataSource();
+                  }
+                 private void BindDataSource()
+                  {   
+                     int code = 10000;
+                     for (int i = 1; i < 10; i++)
+                     {
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i,));
+                      order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
+                      order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
+                      order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
+                      order.Add(new Orders(code + 5, "BOLID", i + 4, "Mexico",46.3 * i));
+                      code += 5;
+                     }
+                    this.FlatGrid.DataSource = order;
+                    this.FlatGrid.DataBind();
+                  }
+                  [Serializable]
+                  public class Orders
+                   {
+                     public Orders()
+                      {
+
+                      }
+                     public Orders(long OrderId, int EmployeeId, string CustomerId, string ShipCountry,double Freight)
+                      {
+                        this.OrderID = OrderId;
+                        this.EmployeeID = EmployeeId;
+                        this.CustomerID = CustomerId;
+                        this.Freight = Freight;
+                        this.ShipCountry = ShipCountry;
+                      }
+                     public long OrderID { get; set; }
+                     public int EmployeeID { get; set; }
+                     public string CustomerID { get; set; }
+                     public string ShipCountry { get; set; }
+                     public double Freight { get; set; }
+                   }
+              }
+        } 
+{% endhighlight  %}
+    
+{% endtabs %}  
+
+The following output is displayed as a result of the above code example.
+
+![](filtering_images/filtering_img7.png)
+
+
+### Case Sensitivity
+
+To perform filter operation with case sensitive in excel styled filter menu mode by setting `EnableCaseSensitivity` as `true`.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight html %}
+    
+           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowPaging="True" >
+           <FilterSettings FilterType="Excel" EnableCaseSensitivity="true" /> 
+            <Columns>
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID"  />
+                <ej:Column Field="CustomerID"  />
+                <ej:Column Field="ShipCountry"  />
+                <ej:Column Field="Freight"  />
+           </Columns>             
+           </ej:Grid>            
+         
+{% endhighlight  %}
+
+{% highlight c# %}
+
+    namespace WebSampleBrowser.Grid
+        {
+            public partial class _Default : Page
+              { 
+                 List<Orders> order = new List<Orders>();
+                 protected void Page_Load(object sender, EventArgs e)
+                 {
+                   BindDataSource();
+                  }
+                 private void BindDataSource()
+                  {   
+                     int code = 10000;
+                     for (int i = 1; i < 10; i++)
+                     {
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i,));
+                      order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
+                      order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
+                      order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
+                      order.Add(new Orders(code + 5, "BOLID", i + 4, "Mexico",46.3 * i));
+                      code += 5;
+                     }
+                    this.FlatGrid.DataSource = order;
+                    this.FlatGrid.DataBind();
+                  }
+                  [Serializable]
+                  public class Orders
+                   {
+                     public Orders()
+                      {
+
+                      }
+                     public Orders(long OrderId, int EmployeeId, string CustomerId, string ShipCountry,double Freight)
+                      {
+                        this.OrderID = OrderId;
+                        this.EmployeeID = EmployeeId;
+                        this.CustomerID = CustomerId;
+                        this.Freight = Freight;
+                        this.ShipCountry = ShipCountry;
+                      }
+                     public long OrderID { get; set; }
+                     public int EmployeeID { get; set; }
+                     public string CustomerID { get; set; }
+                     public string ShipCountry { get; set; }
+                     public double Freight { get; set; }
+                   }
+              }
+        } 
+{% endhighlight  %}
+    
+{% endtabs %}  
+
+The following output is displayed as a result of the above code example.
+
+![](filtering_images/filtering_img8.png)
 
 
 ## Filter Bar
 
-Filter bar is one of the types of filtering. It is otherwise called text filtering as filter bar working is based on text boxes. Through this you can filter records. Filter bars have expression to filter records. They are based on type of column. 
+`Filter bar` row is located next to column header of grid. You can filter the records with different expressions depending upon the column type. To show the filter bar row, set the `FilterType` as `FilterBar`.
 
-List of Filter Bar Expressions
+List of Filter bar Expressions:
 
-<table>
-<tr>
-<td rowspan = "4">
-Numeric column</td><td> > value</td><td rowspan = "4">
-To filter numeric column. You can use these expressions.</td></tr>
-<tr>
-<td>
-< value</td></tr>
-<tr>
-<td>
-= value</td></tr>
-<tr>
-<td>
-!= value</td></tr>
-<tr>
-<td>
-String</td><td>
-startsWith</td><td>
-By default, string filtering works starts with operator</td></tr>
-<tr>
-<td>
-Date</td><td>
-Equal</td><td>
-By default, date filter bar matches records with same date value</td></tr>
-<tr>
-<td>
-Boolean</td><td>
-Equal</td><td>
-Boolean filter bar works with either true or false.</td></tr>
-</table>
+You can enter the below filter expressions manually in the filter bar.
 
-{% highlight html %}
-
-
-
-
-  <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="True" >
-
-<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"></DataManager>
-
-
-
-            <FilterSettings FilterType="FilterBar" />
-
-  </ej:Grid>    
-
-
-
-{% endhighlight  %}
-
-
-
-The following output is displayed as a result of the above code example.
-
-
-
-![](Filtering_images/Filtering_img2.png)
-
-
-
-## Excel styled menu
-
-You can enable the Excel like filter menu by setting the FilterType as “excel” of the FilterSettings property. The filter menu is displayed after clicking the filter icon in the column headers. 
-
-The filter menu contains options such as Sorting, Clear filter, submenu for the advanced filter options, 
-
-### Checkbox list
-
-The Checkbox list is available in the menu that contains the possible filter value for the column. It shows the list of possible filter values with the checkbox. The filter value can be selected by clicking the checkbox corresponding to that value. By clicking the Ok button, the column is filtered based on the values checked in the checkbox list. The SelectAll checkbox is also present in the checkbox list that allows either select or deselect all the checkboxes.
-
-![](Filtering_images/Filtering_img3.png)
-
-
-
-A Search box is available at the top of the check box list that is used to search the possible filter choices. The number of possible filter choices are restricted by the setting the MaxFilterChoices property of the FilterSettings. 
-
-### Advanced Filter
-
-The Submenu items in the filter menu provide the advanced filtering options for end users. When selecting a sub menu item, a separate dialog box opens and displays an advanced filter drop-down that lists the available filter operators for the respective filtering column. The filtering is performed by clicking the Ok button.
-
-![](Filtering_images/Filtering_img4.png)
-
-
-
-![](Filtering_images/Filtering_img5.png)
-
+ <table>
+        <tr>
+            <th>
+                Expression
+            </th>
+            <th>
+                Example
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Column Type
+            </th>
+        </tr>
+        <tr>
+            <td>
+                =
+            </td>
+            <td>
+                = value
+            </td>
+            <td>
+                Equal
+            </td>
+            <td rowspan="5">
+                Numeric
+            </td>
+        </tr>
+        <tr>
+            <td>
+                != 
+            </td>
+            <td>
+                != value
+            </td>
+            <td>
+                NotEqual
+            </td>
+           
+        </tr>
+        <tr>
+            <td>
+                >
+            </td>
+            <td>
+                > value
+            </td>
+            <td>
+                GreaterThan
+            </td>
+          
+        </tr>
+        <tr>
+            <td>
+                <
+            </td>
+            <td>
+                < value
+            </td>
+            <td>
+                LessThan
+            </td>
+          
+        </tr>
+        <tr>
+            <td>
+                >=
+            </td>
+            <td>
+                >= value
+            </td>
+            <td>
+                GreaterThanOrEqual
+            </td>
+           >
+        </tr>
+        <tr>
+            <td>
+                <=
+            </td>
+            <td>
+                <= value
+            </td>
+            <td>
+                LessThanOrEqual
+            </td>
+           
+        </tr>
+        <tr>
+            <td>
+                N/A
+            </td>
+            <td>
+                N/A
+            </td>
+            <td>
+                Always `StartsWith` operator will be used for string filter
+            </td>
+            <td>
+                String
+            </td>
+        </tr>
+        <tr>
+            <td>
+                N/A
+            </td>
+            <td>
+                N/A
+            </td>
+            <td>
+                Always `Equal` operator will be used for Date filter 
+            </td>
+            <td>
+                Date
+            </td>
+        </tr>
+        <tr>
+            <td>
+                N/A
+            </td>
+            <td>
+                N/A
+            </td>
+            <td>
+                Always `Equal` operator will be used for Boolean filter
+            </td>
+            <td>
+                Boolean
+            </td>
+        </tr>
+    </table>
+	
+	
+The following code example describes the above behavior.
 
 {% tabs %}
 
-
 {% highlight html %}
-
-
-
-<ej:Grid ID="OrdersGrid" runat="server" AllowFiltering="True" AllowPaging="True" AllowSorting="true">
-
-            <Columns>
-
-                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" />
-
-                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" />
-
-                <ej:Column Field="OrderDate" HeaderText="Order Date" Format="{0:MM/dd/yyyy}" />
-
-                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" />
-
-                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" />              
-
-                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
-
-                <ej:Column Field="Verified" HeaderText="Verified" Width="100" />
-
-            </Columns>
-
-            <FilterSettings FilterType="Excel" MaxFilterChoices="100" EnableCaseSensitivity="false"></FilterSettings>
-
-</ej:Grid>
-
-{% endhighlight %}
-
+    
+           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowPaging="True" >
+           <FilterSettings FilterType="FilterBar"  /> 
+             <Columns>
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID"  />
+                <ej:Column Field="CustomerID"  />
+                <ej:Column Field="ShipCountry"  />
+                <ej:Column Field="Freight"  />
+           </Columns>             
+           </ej:Grid>            
+         
+{% endhighlight  %}
 
 {% highlight c# %}
 
-
-
-
-List<Orders> order = new List<Orders>();
-
-        protected void Page_Load(object sender, EventArgs e)
-
+    namespace WebSampleBrowser.Grid
         {
+            public partial class _Default : Page
+              { 
+                 List<Orders> order = new List<Orders>();
+                 protected void Page_Load(object sender, EventArgs e)
+                 {
+                   BindDataSource();
+                  }
+                 private void BindDataSource()
+                  {   
+                     int code = 10000;
+                     for (int i = 1; i < 10; i++)
+                     {
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i,));
+                      order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
+                      order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
+                      order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
+                      order.Add(new Orders(code + 5, "BOLID", i + 4, "Mexico",46.3 * i));
+                      code += 5;
+                     }
+                    this.FlatGrid.DataSource = order;
+                    this.FlatGrid.DataBind();
+                  }
+                  [Serializable]
+                  public class Orders
+                   {
+                     public Orders()
+                      {
 
-            BindDataSource();
+                      }
+                     public Orders(long OrderId, int EmployeeId, string CustomerId, string ShipCountry,double Freight)
+                      {
+                        this.OrderID = OrderId;
+                        this.EmployeeID = EmployeeId;
+                        this.CustomerID = CustomerId;
+                        this.Freight = Freight;
+                        this.ShipCountry = ShipCountry;
+                      }
+                     public long OrderID { get; set; }
+                     public int EmployeeID { get; set; }
+                     public string CustomerID { get; set; }
+                     public string ShipCountry { get; set; }
+                     public double Freight { get; set; }
+                   }
+              }
+        } 
+{% endhighlight  %}
+    
+{% endtabs %}  
 
-        }
+The following output is displayed as a result of the above code example.
+
+![](filtering_images/filtering_img9.png)
 
 
+Filter bar modes:
 
-        private void BindDataSource()
+This specifies the grid to start the filter action while typing in the filter bar or after pressing the enter key based on `FilterBarMode`.There are two types of `FilterBarMode`, they are
 
-        {
+1. OnEnter
+2. Immediate
 
-            int orderId = 10000;
+N> For `FilterBarMode` property you can assign either `string` value (onenter) or `enum` value (`OnEnter`).
 
-            int empId = 0;
+Filter bar message:
 
-            for (int i = 1; i < 9; i++)
+The filter bar message is supported only for the `FilterType` as 'FilterBar'. The filtered data with column name is displayed in the grid pager itself. By default `ShowFilterBarStatus` is 'true'.
 
-            {
+The following code example describes the above behavior.
 
-                order.Add(new Orders(orderId + 1, "VINET", empId + 1, 32.38, "Reims", true));
+{% tabs %}
 
-                order.Add(new Orders(orderId + 2, "TOMSP", empId + 2, 11.61, "Munster", false));
-
-                order.Add(new Orders(orderId + 3, "ANATER", empId + 3, 45.34, "Berlin", true));
-
-                order.Add(new Orders(orderId + 4, "ALFKI", empId + 4, 37.28, "Mexico", false));
-
-                order.Add(new Orders(orderId + 5, "FRGYE", empId + 5, 67.00, "Colchester", true));
-
-                order.Add(new Orders(orderId + 6, "JGERT", empId + 6, 23.32, "Newyork", true));
-
-                orderId += 6;
-
-                empId += 6;
-
-            }
-
-            this.OrdersGrid.DataSource = order;
-
-            this.OrdersGrid.DataBind();
-
-        }
-
+{% highlight html %}
+    
+           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowPaging="True" >
+            <FilterSettings ShowFilterBarStatus="True"  /> 
+              <Columns>
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID"  />
+                <ej:Column Field="CustomerID"  />
+                <ej:Column Field="ShipCountry"  />
+                <ej:Column Field="Freight"  />
+              </Columns>             
+          </ej:Grid>         
+         
 {% endhighlight  %}
 
-{% endtabs %}
+{% highlight c# %}
 
-## Filter operators
+    namespace WebSampleBrowser.Grid
+        {
+            public partial class _Default : Page
+              { 
+                 List<Orders> order = new List<Orders>();
+                 protected void Page_Load(object sender, EventArgs e)
+                 {
+                   BindDataSource();
+                  }
+                 private void BindDataSource()
+                  {   
+                     int code = 10000;
+                     for (int i = 1; i < 10; i++)
+                     {
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i,));
+                      order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
+                      order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
+                      order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
+                      order.Add(new Orders(code + 5, "BOLID", i + 4, "Mexico",46.3 * i));
+                      code += 5;
+                     }
+                    this.FlatGrid.DataSource = order;
+                    this.FlatGrid.DataBind();
+                  }
+                  [Serializable]
+                  public class Orders
+                    {
+                     public Orders()
+                      {
 
-Grid uses filter operators from DataManager, that are used at the time of filtering. Filter operators are used to denote filtering type.
+                      }
+                     public Orders(long OrderId, int EmployeeId, string CustomerId, string ShipCountry,double Freight)
+                      {
+                        this.OrderID = OrderId;
+                        this.EmployeeID = EmployeeId;
+                        this.CustomerID = CustomerId;
+                        this.Freight = Freight;
+                        this.ShipCountry = ShipCountry;
+                      }
+                     public long OrderID { get; set; }
+                     public int EmployeeID { get; set; }
+                     public string CustomerID { get; set; }
+                     public string ShipCountry { get; set; }
+                     public double Freight { get; set; }
+                   }
+              }
+        } 
+
+{% endhighlight  %}
+    
+{% endtabs %}  
+
+The following output is displayed as a result of the above code example.
+
+![](filtering_images/filtering_img10.png)
+
+
+## Filter Operators
+
+The grid controls uses filter operators from `DataManager`, which are used at the time of filtering.
 
 List of Column type and Filter operators
 
 <table>
-<tr>
-<th>
-Column type</th><th>
-Filter operators</th></tr>
-<tr>
-<td>
-Number</td><td>
-ej.FilterOperators.greaterThanej.FilterOperators.greaterThanOrEqualej.FilterOperators.lessThanej.FilterOperators.lessThanOrEqualej.FilterOperators.equal</td></tr>
-<tr>
-<td>
-String</td><td>
-ej.FilterOperators.startsWithej.FilterOperators.endsWithej.FilterOperators.containsej.FilterOperators.equalej.FilterOperators.notEqual</td></tr>
-<tr>
-<td>
-Boolean</td><td>
-ej.FilterOperators.equalej.FilterOperators.notEqual</td></tr>
-<tr>
-<td>
-Date</td><td>
-ej.FilterOperators.greaterThanej.FilterOperators.greaterThanOrEqualej.FilterOperators.lessThanej.FilterOperators.lessThanOrEqualej.FilterOperators.equal</td></tr>
-</table>
-
-
-## External Filtering
-
-Grid contains an API to do filtering dynamically after Grid initialize, without the use of User Interaction. It is useful to do filtering dynamically.
-
-{% tabs %}
-
-{% highlight html %}
-
-
-
-    <div>
-
-        <div class="row">
-
-            <div class="col-md-1">
-
-                Columns
-
-            </div>
-
-            <div class="col-md-1">
-
-                <ej:DropDownList ID="columns" runat="server">
-
-                    <Items>
-
-                        <ej:DropDownListItem Value="OrderID" Text="Order ID"></ej:DropDownListItem>
-
-                        <ej:DropDownListItem Value="CustomerID" Text="Customer ID"></ej:DropDownListItem>
-
-                        <ej:DropDownListItem Value="EmployeeID" Text="Employee ID"></ej:DropDownListItem>
-
-                        <ej:DropDownListItem Value="ShipCity" Text="Ship City"></ej:DropDownListItem>
-
-                        <ej:DropDownListItem Value="Verified" Text="Verified"></ej:DropDownListItem>
-
-                    </Items>
-
-                </ej:DropDownList>
-
-            </div>
-
-        </div>
-
-        <br />
-
-        <div class="row">
-
-            <div class="col-md-1">
-
-                Operator
-
-            </div>
-
-            <div class="col-md-1">
-
-                <ej:DropDownList ID="operator" runat="server">
-
-                    <Items>
-
-                        <ej:DropDownListItem Value="contains" Text="Contains"></ej:DropDownListItem>
-
-                        <ej:DropDownListItem Value="endswith" Text="Endswith"></ej:DropDownListItem>
-
-                        <ej:DropDownListItem Value="equal" Text="Equal"></ej:DropDownListItem>
-
-                        <ej:DropDownListItem Value="greaterthan" Text="Greaterthan"></ej:DropDownListItem>
-
-                        <ej:DropDownListItem Value="greaterthanorequal" Text="GreaterThanOrEqual"></ej:DropDownListItem>
-
-                        <ej:DropDownListItem Value="lessthan" Text="LessThan"></ej:DropDownListItem>
-
-                        <ej:DropDownListItem Value="lessthanorequal" Text="LessThanOrEqual"></ej:DropDownListItem>
-
-                        <ej:DropDownListItem Value="notequal" Text="NotEqual"></ej:DropDownListItem>
-
-                        <ej:DropDownListItem Value="startswith" Text="StartsWith"></ej:DropDownListItem>
-
-                    </Items>
-
-                </ej:DropDownList>
-
-            </div>
-
-        </div>
-
-        <br />
-
-        <div class="row">
-
-            <div class="col-md-1">
-
-                Value
-
-            </div>
-
-            <div class="col-md-1">
-
-                <input type="text" class="e-ejinputtext" id="value" style="width: 143px; height: 26px" />
-
-            </div>
-
-        </div>
-
-        <br />
-
-        <div class="row">
-
-            <div class="col-md-2">
-
-                <ej:Button Type="button" runat="server" ID="filter" ClientSideOnClick="button_click" Text="filter" />
-
-            </div>
-
-        </div>
-
-        <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="True">
-
-<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"></DataManager>
-
-
-
-            <FilterSettings FilterType="Menu" />
-
-        </ej:Grid>
-
-    </div>
-
-{% endhighlight  %}
-
-{% highlight js %}
-
-
-  <script>
-
-        function button_click(args) {
-
-            $("#FlatGrid").ejGrid("filterColumn", $("#columns").ejDropDownList("getSelectedValue"), $("#operator").ejDropDownList("getSelectedValue"), $("#value").val(), "and");
-
-        }
-
-
-
-    </script>
-
-{% endhighlight  %}
-
-{% endtabs %}
-
-
-
-The following output is displayed as a result of the above code example.
-
-
-
-![](Filtering_images/Filtering_img6.png)
-
-
+        <tr>
+            <th>
+                Column Type
+            </th>
+            <th>
+                Filter Operators
+            </th>
+        </tr>
+        <tr>
+            <td rowspan="6">
+                Number
+            </td>
+            <td>
+                FilterOperatorType.GreaterThan
+            </td>
+        </tr>
+        <tr>
+           
+            <td>
+                FilterOperatorType.GreaterThanOrEqual
+            </td>
+        </tr>
+        <tr>
+       
+            <td>
+                FilterOperatorType.LessThan
+            </td>
+        </tr>
+        <tr>
+            
+            <td>
+                FilterOperatorType.LessThanOrEqual
+            </td>
+        </tr>
+        <tr>
+           
+            <td>
+                FilterOperatorType.Equal
+            </td>
+        </tr>
+        <tr>
+          >
+            <td>
+                FilterOperatorType.NotEqual
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="5">
+                String
+            </td>
+            <td>
+                FilterOperatorType.StartsWith
+            </td>
+        </tr>
+        <tr>
+          
+            <td>
+                FilterOperatorType.EndsWith
+            </td>
+        </tr>
+        <tr>
+           
+            <td>
+                FilterOperatorType.Contains
+            </td>
+        </tr>
+        <tr>
+           
+            <td>
+                FilterOperatorType.Equal
+            </td>
+        </tr>
+        <tr>
+           
+            <td>
+                FilterOperatorType.NotEqual
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                Boolean
+            </td>
+            <td>
+                FilterOperatorType.Equal
+            </td>
+        </tr>
+        <tr>
+            
+            <td>
+                FilterOperatorType.NotEqual
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="6">
+                Date
+            </td>
+            <td>
+                FilterOperatorType.GreaterThan
+            </td>
+        </tr>
+        <tr>
+            
+            <td>
+                FilterOperatorType.GreaterThanOrEqual
+            </td>
+        </tr>
+        <tr>
+           
+            <td>
+                FilterOperatorType.LessThan
+            </td>
+        </tr>
+        <tr>
+           
+            <td>
+                FilterOperatorType.LessThanOrEqual
+            </td>
+        </tr>
+        <tr>
+           
+            <td>
+                FilterOperatorType.Equal
+            </td>
+        </tr>
+        <tr>
+          
+            <td>
+                FilterOperatorType.NotEqual
+            </td>
+        </tr>
+    </table>
 
