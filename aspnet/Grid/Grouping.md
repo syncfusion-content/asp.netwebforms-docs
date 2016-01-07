@@ -1,166 +1,762 @@
 ---
 layout: post
-title: Grouping | Grid | ASP.NET Webforms | Syncfusion
-description: grouping
-platform: aspnet
+title: Grouping with Grid widget for Syncfusion Essential ASP
+description: How to enable grouping and its functionalities
+platform: ejweb
 control: Grid
 documentation: ug
 ---
-
 # Grouping
 
-Grouping is an important feature in Grid. If you want to analysis any particular records, based on its category, you can simply group that column and analyse records based on category. There are several flexible options, such as grouped buttons, group close etc. To enable Grouping in Grid, add AllowGrouping at Grid Initialize. 
+The Grid control has options to group the records based on the required column. When grouping is applied, grouped records are organized into a hierarchical structure to facilitate easier expand and collapse of records. To enable grouping, set `AllowGrouping` property as `true`.
+
+Columns can be grouped by simply dragging the column header and drop on the group drop area or simply click the group button which is displayed in the column. By default, sorting is done while grouping the column.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight html %}
+    
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True" AllowSorting="True" AllowPaging="True" >
+           <Columns>
+                <ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right" />
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" />
+                <ej:Column Field="CustomerID" HeaderText="Customer ID"  />
+                <ej:Column Field="ShipCountry" HeaderText="Ship Country"  />
+                <ej:Column Field="Freight" HeaderText="Freight" Format="{0:C}"  />
+           </Columns>             
+         
+{% endhighlight  %}
+
+{% highlight c# %}
+
+    namespace WebSampleBrowser.Grid
+        {
+            public partial class _Default : Page
+              { 
+                 List<Orders> order = new List<Orders>();
+                 protected void Page_Load(object sender, EventArgs e)
+                 {
+                   BindDataSource();
+                  }
+                 private void BindDataSource()
+                  {   
+                     int code = 10000;
+                     for (int i = 1; i < 10; i++)
+                     {
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i,));
+                      order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
+                      order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
+                      order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
+                      order.Add(new Orders(code + 5, "BOLID", i + 4, "Mexico",46.3 * i));
+                      code += 5;
+                     }
+                    this.FlatGrid.DataSource = order;
+                    this.FlatGrid.DataBind();
+                  }
+                  [Serializable]
+                  public class Orders
+                   {
+                     public Orders()
+                      {
+
+                      }
+                     public Orders(long OrderId, int EmployeeId, string CustomerId, string ShipCountry,double Freight)
+                      {
+                        this.OrderID = OrderId;
+                        this.EmployeeID = EmployeeId;
+                        this.CustomerID = CustomerId;
+                        this.Freight = Freight;
+                        this.ShipCountry = ShipCountry;
+                      }
+                     public long OrderID { get; set; }
+                     public int EmployeeID { get; set; }
+                     public string CustomerID { get; set; }
+                     public string ShipCountry { get; set; }
+                     public double Freight { get; set; }
+                   }
+              }
+        } 
+{% endhighlight  %}
+    
+{% endtabs %}  
+
+The following output is displayed as a result of the above code example.
+
+![](Grouping_images/Grouping_img1.png)
+
 
 ## Initial Grouping
 
-In Grid, there is an option to group columns at Grid Initialize that is rendered through AllowGrouping and  GroupedColumns property in Grid. This is an important option because in some scenarios, need to analyse Grid records with Grouping may arise, at the time of initialize.
+While initializing the grid itself, there is an option to group the column and display it in a hierarchical structure. To enable initial grouping, set array of column's `Field` name to be grouped in `GroupedColumns` property  of `GroupSettings`.
 
-
-
-{% highlight html %}
-
-
-
-<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True">
-
-<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"></DataManager>
-
-<GroupSettings GroupedColumns="ShipCity"></GroupSettings>
-
-</ej:Grid>
-
-
-{% endhighlight %}
-
-
-The following output is displayed as a result of the above code example.
-
-
-
-![](Grouping_images/Grouping_img1.png)  
-
-
-
-## Group Buttons
-
-Group buttons is one of the features under Grouping. It is helpful to do Grouping easily without doing drag and drop. To enable this feature use ShowToggleButton at Grid Initialize.  
-
+The following code example describes the above behavior.
+            
+{% tabs %}
 
 {% highlight html %}
+     
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True" AllowSorting="True" AllowPaging="True" >
+           <GroupSettings  GroupedColumns="ShipCountry"></GroupSettings>
+           <Columns>
+                <ej:Column Field="OrderID" HeaderText="Order ID" />
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID"  />
+                <ej:Column Field="CustomerID" HeaderText="Customer ID"  />
+                <ej:Column Field="ShipCountry" HeaderText="Ship Country"   />
+                <ej:Column Field="Freight" HeaderText="Freight" Format="{0:C}"  />
+           </Columns>             
+       
+{% endhighlight  %}
 
+{% highlight c# %}
 
-<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True">
+    namespace WebSampleBrowser.Grid
+        {
+            public partial class _Default : Page
+              { 
+                 List<Orders> order = new List<Orders>();
+                 protected void Page_Load(object sender, EventArgs e)
+                 {
+                    BindDataSource();
+                  }
+                 private void BindDataSource()
+                  {   
+                     int code = 10000;
+                     for (int i = 1; i < 10; i++)
+                     {
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i,));
+                      order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
+                      order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
+                      order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
+                      order.Add(new Orders(code + 5, "BOLID", i + 4, "Mexico",46.3 * i));
+                      code += 5;
+                    }
+                    this.FlatGrid.DataSource = order;
+                    this.FlatGrid.DataBind();
+                  }
+                  [Serializable]
+                  public class Orders
+                   {
+                     public Orders()
+                      {
 
-<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"></DataManager>
+                      }
+                     public Orders(long OrderId, int EmployeeId, string CustomerId, string ShipCountry,double Freight)
+                      {
+                        this.OrderID = OrderId;
+                        this.EmployeeID = EmployeeId;
+                        this.CustomerID = CustomerId;
+                        this.Freight = Freight;
+                        this.ShipCountry = ShipCountry;
+                      }
+                     public long OrderID { get; set; }
+                     public int EmployeeID { get; set; }
+                     public string CustomerID { get; set; }
+                     public string ShipCountry { get; set; }
+                     public double Freight { get; set; }
+                   }
+              }
+        } 
+{% endhighlight  %}
+    
+{% endtabs %}  
 
-
-
-    <GroupSettings ShowToggleButton="True" GroupedColumns="ShipCity">
-
-
-
-    </GroupSettings>
-
-</ej:Grid>
-
-
-{% endhighlight %}
 The following output is displayed as a result of the above code example.
-
-
 
 ![](Grouping_images/Grouping_img2.png)
 
 
+## Multi-Column Grouping
+
+Group multiple columns by simply drag and drop the columns one by one from column header into group drop area.
+
+The following code example describes the above behavior.
+
+           
+{% tabs %}
+
+{% highlight html %}
+     
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True" AllowSorting="True" AllowPaging="True" >
+           <GroupSettings  GroupedColumns="ShipCountry,OrderID"></GroupSettings>
+           <Columns>
+                <ej:Column Field="OrderID" HeaderText="Order ID" />
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID"  />
+                <ej:Column Field="CustomerID" HeaderText="Customer ID"  />
+                <ej:Column Field="ShipCountry" HeaderText="Ship Country"   />
+                <ej:Column Field="Freight" HeaderText="Freight" Format="{0:C}"  />
+           </Columns>             
+      
+{% endhighlight  %}
+
+{% highlight c# %}
+
+    namespace WebSampleBrowser.Grid
+        {
+            public partial class _Default : Page
+              { 
+                 List<Orders> order = new List<Orders>();
+                 protected void Page_Load(object sender, EventArgs e)
+                 {
+                    BindDataSource();
+                  }
+                 private void BindDataSource()
+                  {   
+                     int code = 10000;
+                     for (int i = 1; i < 10; i++)
+                     {
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i,));
+                      order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
+                      order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
+                      order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
+                      order.Add(new Orders(code + 5, "BOLID", i + 4, "Mexico",46.3 * i));
+                      code += 5;
+                    }
+                    this.FlatGrid.DataSource = order;
+                    this.FlatGrid.DataBind();
+                  }
+                  [Serializable]
+                  public class Orders
+                   {
+                     public Orders()
+                      {
+
+                      }
+                     public Orders(long OrderId, int EmployeeId, string CustomerId, string ShipCountry,double Freight)
+                      {
+                        this.OrderID = OrderId;
+                        this.EmployeeID = EmployeeId;
+                        this.CustomerID = CustomerId;
+                        this.Freight = Freight;
+                        this.ShipCountry = ShipCountry;
+                      }
+                     public long OrderID { get; set; }
+                     public int EmployeeID { get; set; }
+                     public string CustomerID { get; set; }
+                     public string ShipCountry { get; set; }
+                     public double Freight { get; set; }
+                   }
+              }
+        } 
+{% endhighlight  %}
+    
+{% endtabs %}  
+
+The following output is displayed as a result of the above code example.
+
+![](Grouping_images/Grouping_img3.png)
+
+
+## Group Buttons
+
+To do grouping easily without doing drag and drop column header by setting `ShowToggleButton` property of `GroupSettings` as `true`.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight html %}
+     
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True" AllowSorting="True" AllowPaging="True" >
+           <GroupSettings  ShowToggleButton="True" ></GroupSettings>
+           <Columns>
+                <ej:Column Field="OrderID" HeaderText="Order ID" />
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID"  />
+                <ej:Column Field="CustomerID" HeaderText="Customer ID"  />
+                <ej:Column Field="ShipCountry" HeaderText="Ship Country"   />
+                <ej:Column Field="Freight" HeaderText="Freight" Format="{0:C}"  />
+           </Columns>             
+       
+{% endhighlight  %}
+
+{% highlight c# %}
+
+    namespace WebSampleBrowser.Grid
+        {
+            public partial class _Default : Page
+              { 
+                 List<Orders> order = new List<Orders>();
+                 protected void Page_Load(object sender, EventArgs e)
+                 {
+                    BindDataSource();
+                  }
+                 private void BindDataSource()
+                  {   
+                     int code = 10000;
+                     for (int i = 1; i < 10; i++)
+                     {
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i,));
+                      order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
+                      order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
+                      order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
+                      order.Add(new Orders(code + 5, "BOLID", i + 4, "Mexico",46.3 * i));
+                      code += 5;
+                    }
+                    this.FlatGrid.DataSource = order;
+                    this.FlatGrid.DataBind();
+                  }
+                  [Serializable]
+                  public class Orders
+                   {
+                     public Orders()
+                      {
+
+                      }
+                     public Orders(long OrderId, int EmployeeId, string CustomerId, string ShipCountry,double Freight)
+                      {
+                        this.OrderID = OrderId;
+                        this.EmployeeID = EmployeeId;
+                        this.CustomerID = CustomerId;
+                        this.Freight = Freight;
+                        this.ShipCountry = ShipCountry;
+                      }
+                     public long OrderID { get; set; }
+                     public int EmployeeID { get; set; }
+                     public string CustomerID { get; set; }
+                     public string ShipCountry { get; set; }
+                     public double Freight { get; set; }
+                   }
+              }
+        } 
+{% endhighlight  %}
+    
+{% endtabs %}  
+
+
+The following output is displayed as a result of the above code example.
+
+![](Grouping_images/Grouping_img4.png)
+
 
 ## Hide Ungroup Button
 
-In GroupDropArea, grouped columns have an option to ungroup a column using GroupButton. It is easier than using Drag and Drop to ungroup columns.  By default this UngroupButton is visible. If you want to hide this button, you can use ShowUngroupButton property to hide columns.
+Hide ungroup button from grouped columns which is in the group drop area by setting the `ShowUngroupButton` property of `GroupSettings` as `false`.
 
+The following code example describes the above behavior.
 
-
-![](Grouping_images/Grouping_img3.png) 
-
-
-
+{% tabs %}
 
 {% highlight html %}
+     
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True" AllowSorting="True" AllowPaging="True" >
+           <GroupSettings  ShowUngroupButton="False"  ></GroupSettings>
+           <Columns>
+                <ej:Column Field="OrderID" HeaderText="Order ID" />
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID"  />
+                <ej:Column Field="CustomerID" HeaderText="Customer ID"  />
+                <ej:Column Field="ShipCountry" HeaderText="Ship Country"   />
+                <ej:Column Field="Freight" HeaderText="Freight" Format="{0:C}"  />
+           </Columns>             
+       
+{% endhighlight  %}
 
+{% highlight c# %}
 
-<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True" >
+    namespace WebSampleBrowser.Grid
+        {
+            public partial class _Default : Page
+              { 
+                 List<Orders> order = new List<Orders>();
+                 protected void Page_Load(object sender, EventArgs e)
+                 {
+                    BindDataSource();
+                  }
+                 private void BindDataSource()
+                  {   
+                     int code = 10000;
+                     for (int i = 1; i < 10; i++)
+                     {
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i,));
+                      order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
+                      order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
+                      order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
+                      order.Add(new Orders(code + 5, "BOLID", i + 4, "Mexico",46.3 * i));
+                      code += 5;
+                    }
+                    this.FlatGrid.DataSource = order;
+                    this.FlatGrid.DataBind();
+                  }
+                  [Serializable]
+                  public class Orders
+                   {
+                     public Orders()
+                      {
 
-<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"></DataManager>
-
-   <GroupSettings ShowUngroupButton="False" GroupedColumns="ShipCity">
-
-   </GroupSettings>
-
- </ej:Grid>
-
-
-{% endhighlight %}
-
+                      }
+                     public Orders(long OrderId, int EmployeeId, string CustomerId, string ShipCountry,double Freight)
+                      {
+                        this.OrderID = OrderId;
+                        this.EmployeeID = EmployeeId;
+                        this.CustomerID = CustomerId;
+                        this.Freight = Freight;
+                        this.ShipCountry = ShipCountry;
+                      }
+                     public long OrderID { get; set; }
+                     public int EmployeeID { get; set; }
+                     public string CustomerID { get; set; }
+                     public string ShipCountry { get; set; }
+                     public double Freight { get; set; }
+                   }
+              }
+        } 
+{% endhighlight  %}
+    
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
-
-
-![](Grouping_images/Grouping_img4.png) 
-
-
-
-## AutoSize Drop Area
-
-If you drag any header to Group column in Grid, it expands smoothly its Group Drop Area portion. In some scenarios, you need to stop this type of animation while grouping. You can use the EnableDropAreaAutoSizing property to stop animation in Group Drop Area.
-{% highlight html %}
-
-
-<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True">
-
-<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"></DataManager>
-
-    <GroupSettings EnableDropAreaAutoSizing="False"></GroupSettings>
-
-</ej:Grid>
-
-
-
-
-
-
-{% endhighlight %}
-The following output is displayed as a result of the above code example.
-
-
 
 ![](Grouping_images/Grouping_img5.png)
 
 
+## Hide Grouped Column
 
-## Hide Group Drop Area from Grid
+While grouping a particular column, there is an option to hide the grouped columns from grid. To enable hide grouped column option, set `ShowGroupedColumn` property of `GroupSettings` as `false`.
 
-In Grid, there is an option to hide the Group Drop Area at Grid Initialize that is achieved through the ShowDropArea property of a GroupSettings in the Grid. The default value is true. By using this property, you can avoid ungrouping or further grouping of a column after the initial column grouping.
+The following code example describes the above behavior.
 
-When the ShowDropArea property is set to false, the GroupDropArea is hidden. 
+{% tabs %}
 
 {% highlight html %}
-
-
-
-<ej:Grid ID="Grid" runat="server" DataSourceID="ObjectData" AllowGrouping="True">
-
-        <GroupSettings EnableDropAreaAutoSizing="False" GroupedColumns="ShipCountry" ShowDropArea="false"></GroupSettings>  
-
-
-
-</ej:Grid>
-
-
-
+     
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True" AllowSorting="True" AllowPaging="True" >
+           <GroupSettings ShowGroupedColumn="False" ></GroupSettings>
+           <Columns>
+                <ej:Column Field="OrderID" HeaderText="Order ID" />
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID"  />
+                <ej:Column Field="CustomerID" HeaderText="Customer ID"  />
+                <ej:Column Field="ShipCountry" HeaderText="Ship Country"   />
+                <ej:Column Field="Freight" HeaderText="Freight" Format="{0:C}"  />
+           </Columns>             
+      
 {% endhighlight  %}
+
+{% highlight c# %}
+
+    namespace WebSampleBrowser.Grid
+        {
+            public partial class _Default : Page
+              { 
+                 List<Orders> order = new List<Orders>();
+                 protected void Page_Load(object sender, EventArgs e)
+                 {
+                    BindDataSource();
+                  }
+                 private void BindDataSource()
+                  {   
+                     int code = 10000;
+                     for (int i = 1; i < 10; i++)
+                     {
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i,));
+                      order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
+                      order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
+                      order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
+                      order.Add(new Orders(code + 5, "BOLID", i + 4, "Mexico",46.3 * i));
+                      code += 5;
+                    }
+                    this.FlatGrid.DataSource = order;
+                    this.FlatGrid.DataBind();
+                  }
+                  [Serializable]
+                  public class Orders
+                   {
+                     public Orders()
+                      {
+
+                      }
+                     public Orders(long OrderId, int EmployeeId, string CustomerId, string ShipCountry,double Freight)
+                      {
+                        this.OrderID = OrderId;
+                        this.EmployeeID = EmployeeId;
+                        this.CustomerID = CustomerId;
+                        this.Freight = Freight;
+                        this.ShipCountry = ShipCountry;
+                      }
+                     public long OrderID { get; set; }
+                     public int EmployeeID { get; set; }
+                     public string CustomerID { get; set; }
+                     public string ShipCountry { get; set; }
+                     public double Freight { get; set; }
+                   }
+              }
+        } 
+{% endhighlight  %}
+    
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
-![C:/Users/NandhiniK/Desktop/Capture.PNG](Grouping_images/Grouping_img6.png)
+![](Grouping_images/Grouping_img6.png)
+
+
+## AutoSize Drop Area
+
+Drag any column header and move it to the group drop area, then its portion expands smoothly. Stop this animation by setting `EnableDropAreaAutoSizing` property of `GroupSettings` as `false`.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight html %}
+     
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True" AllowSorting="True" AllowPaging="True" >
+           <GroupSettings EnableDropAreaAutoSizing="False" ></GroupSettings>
+           <Columns>
+                <ej:Column Field="OrderID" HeaderText="Order ID" />
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID"  />
+                <ej:Column Field="CustomerID" HeaderText="Customer ID"  />
+                <ej:Column Field="ShipCountry" HeaderText="Ship Country"   />
+                <ej:Column Field="Freight" HeaderText="Freight" Format="{0:C}"  />
+           </Columns>             
+       
+{% endhighlight  %}
+
+{% highlight c# %}
+
+    namespace WebSampleBrowser.Grid
+        {
+            public partial class _Default : Page
+              { 
+                 List<Orders> order = new List<Orders>();
+                 protected void Page_Load(object sender, EventArgs e)
+                 {
+                    BindDataSource();
+                  }
+                 private void BindDataSource()
+                  {   
+                     int code = 10000;
+                     for (int i = 1; i < 10; i++)
+                     {
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i,));
+                      order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
+                      order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
+                      order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
+                      order.Add(new Orders(code + 5, "BOLID", i + 4, "Mexico",46.3 * i));
+                      code += 5;
+                    }
+                    this.FlatGrid.DataSource = order;
+                    this.FlatGrid.DataBind();
+                  }
+                  [Serializable]
+                  public class Orders
+                   {
+                     public Orders()
+                      {
+
+                      }
+                     public Orders(long OrderId, int EmployeeId, string CustomerId, string ShipCountry,double Freight)
+                      {
+                        this.OrderID = OrderId;
+                        this.EmployeeID = EmployeeId;
+                        this.CustomerID = CustomerId;
+                        this.Freight = Freight;
+                        this.ShipCountry = ShipCountry;
+                      }
+                     public long OrderID { get; set; }
+                     public int EmployeeID { get; set; }
+                     public string CustomerID { get; set; }
+                     public string ShipCountry { get; set; }
+                     public double Freight { get; set; }
+                   }
+              }
+        } 
+{% endhighlight  %}
+    
+{% endtabs %}  
+
+## Hide Drop Area 
+
+To avoid ungrouping or further grouping of a column after an initial column grouping by setting `ShowDropArea` property of `GroupSettings` as `false`.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight html %}
+     
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True" AllowSorting="True" AllowPaging="True" >
+           <GroupSettings EnableDropAreaAutoSizing="False" ></GroupSettings>
+           <Columns>
+                <ej:Column Field="OrderID" HeaderText="Order ID" />
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID"  />
+                <ej:Column Field="CustomerID" HeaderText="Customer ID"  />
+                <ej:Column Field="ShipCountry" HeaderText="Ship Country"   />
+                <ej:Column Field="Freight" HeaderText="Freight" Format="{0:C}"  />
+           </Columns>             
+       
+{% endhighlight  %}
+
+{% highlight c# %}
+
+    namespace WebSampleBrowser.Grid
+        {
+            public partial class _Default : Page
+              { 
+                 List<Orders> order = new List<Orders>();
+                 protected void Page_Load(object sender, EventArgs e)
+                 {
+                    BindDataSource();
+                  }
+                 private void BindDataSource()
+                  {   
+                     int code = 10000;
+                     for (int i = 1; i < 10; i++)
+                     {
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i,));
+                      order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
+                      order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
+                      order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
+                      order.Add(new Orders(code + 5, "BOLID", i + 4, "Mexico",46.3 * i));
+                      code += 5;
+                    }
+                    this.FlatGrid.DataSource = order;
+                    this.FlatGrid.DataBind();
+                  }
+                  [Serializable]
+                  public class Orders
+                   {
+                     public Orders()
+                      {
+
+                      }
+                     public Orders(long OrderId, int EmployeeId, string CustomerId, string ShipCountry,double Freight)
+                      {
+                        this.OrderID = OrderId;
+                        this.EmployeeID = EmployeeId;
+                        this.CustomerID = CustomerId;
+                        this.Freight = Freight;
+                        this.ShipCountry = ShipCountry;
+                      }
+                     public long OrderID { get; set; }
+                     public int EmployeeID { get; set; }
+                     public string CustomerID { get; set; }
+                     public string ShipCountry { get; set; }
+                     public double Freight { get; set; }
+                   }
+              }
+        } 
+{% endhighlight  %}
+    
+{% endtabs %}  
+
+The following output is displayed as a result of the above code example.
+
+![](Grouping_images/Grouping_img8.png)
+
+
+## Group Caption Format/Group Caption Template
+
+Using `CaptionFormat` property of `GroupSettings` you can render any type of JsRender templates or customizing the group caption text. 
+
+You can use JsRender syntax in the template.For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "the link").
+
+N>  1. It's a standard way to enclose the `template` within the `script` tag with `type` as "text/x-jsrender". 
+N>  2. Using locale property of `GroupCaptionFormat`, you can only customize the default group caption text.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight html %}
+           
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True" AllowSorting="True" AllowPaging="True" >
+           <GroupSettings CaptionFormat="#template" ShowDropArea="false" GroupedColumns="ShipCountry" ></GroupSettings>
+           <Columns>
+                <ej:Column Field="OrderID" HeaderText="Order ID" />
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID"  />
+                <ej:Column Field="CustomerID" HeaderText="Customer ID"  />
+                <ej:Column Field="ShipCountry" HeaderText="Ship Country"   />
+                <ej:Column Field="Freight" HeaderText="Freight" Format="{0:C}"  />
+           </Columns>             
+         
+{% endhighlight  %}
+            
+{% highlight js %}            
+     
+     <script id="template" type="text/x-jsrender">
+                "{{"{{"}}:field{{}}}}-"{{"{{"}}:key{{}}}}
+                  <button id="btn" class="btn">Collapse</button>
+     </script>
+     <script>
+             function complete(args) {
+                 $(".btn").ejButton({
+                 click: "btnClick"
+                });
+             }
+             function btnClick(args) {
+                 var gridObj = $("#FlatGrid").data("ejGrid");
+                 gridObj.expandCollapse(this.element.parent().prev());
+                 $("#btn").ejButton("model.text", args.model.text == "Collapse" ? "Expand" : "Collapse");
+             }
+    </script>    
+
+{% endhighlight  %}
+
+{% highlight c# %}
+
+    namespace WebSampleBrowser.Grid
+        {
+            public partial class _Default : Page
+              { 
+                 List<Orders> order = new List<Orders>();
+                 protected void Page_Load(object sender, EventArgs e)
+                 {
+                    BindDataSource();
+                  }
+                 private void BindDataSource()
+                  {   
+                     int code = 10000;
+                     for (int i = 1; i < 10; i++)
+                     {
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i,));
+                      order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
+                      order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
+                      order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
+                      order.Add(new Orders(code + 5, "BOLID", i + 4, "Mexico",46.3 * i));
+                      code += 5;
+                    }
+                    this.FlatGrid.DataSource = order;
+                    this.FlatGrid.DataBind();
+                  }
+                  [Serializable]
+                  public class Orders
+                   {
+                     public Orders()
+                      {
+
+                      }
+                     public Orders(long OrderId, int EmployeeId, string CustomerId, string ShipCountry,double Freight)
+                      {
+                        this.OrderID = OrderId;
+                        this.EmployeeID = EmployeeId;
+                        this.CustomerID = CustomerId;
+                        this.Freight = Freight;
+                        this.ShipCountry = ShipCountry;
+                      }
+                     public long OrderID { get; set; }
+                     public int EmployeeID { get; set; }
+                     public string CustomerID { get; set; }
+                     public string ShipCountry { get; set; }
+                     public double Freight { get; set; }
+                   }
+              }
+        } 
+{% endhighlight  %}
+    
+{% endtabs %}  
+
+The following output is displayed as a result of the above code example.
+
+![](Grouping_images/Grouping_img9.png)
+
+
+![](Grouping_images/Grouping_img10.png)
+
+
+
+
+
+
 
 
 
