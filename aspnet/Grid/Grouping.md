@@ -18,15 +18,15 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True" AllowSorting="True" AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True"  AllowPaging="True" >
            <Columns>
-                <ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right" />
-                <ej:Column Field="EmployeeID" HeaderText="Employee ID" />
-                <ej:Column Field="CustomerID" HeaderText="Customer ID"  />
-                <ej:Column Field="ShipCountry" HeaderText="Ship Country"  />
-                <ej:Column Field="Freight" HeaderText="Freight" Format="{0:C}"  />
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID" />
+                <ej:Column Field="CustomerID"  />
+                <ej:Column Field="ShipCountry" />
+                <ej:Column Field="Freight" />
            </Columns>             
-         
+           </ej:Grid>
 {% endhighlight  %}
 
 {% highlight c# %}
@@ -45,7 +45,7 @@ The following code example describes the above behavior.
                      int code = 10000;
                      for (int i = 1; i < 10; i++)
                      {
-                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i,));
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i));
                       order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
                       order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
                       order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
@@ -97,16 +97,17 @@ The following code example describes the above behavior.
 
 {% highlight html %}
      
-           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True" AllowSorting="True" AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True"  AllowPaging="True" >
            <GroupSettings  GroupedColumns="ShipCountry"></GroupSettings>
            <Columns>
-                <ej:Column Field="OrderID" HeaderText="Order ID" />
-                <ej:Column Field="EmployeeID" HeaderText="Employee ID"  />
-                <ej:Column Field="CustomerID" HeaderText="Customer ID"  />
-                <ej:Column Field="ShipCountry" HeaderText="Ship Country"   />
-                <ej:Column Field="Freight" HeaderText="Freight" Format="{0:C}"  />
-           </Columns>             
-       
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID" />
+                <ej:Column Field="CustomerID"  />
+                <ej:Column Field="ShipCountry" />
+                <ej:Column Field="Freight" />
+           </Columns>         
+           </ej:Grid>   
+                      
 {% endhighlight  %}
 
 {% highlight c# %}
@@ -125,7 +126,7 @@ The following code example describes the above behavior.
                      int code = 10000;
                      for (int i = 1; i < 10; i++)
                      {
-                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i,));
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i));
                       order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
                       order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
                       order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
@@ -178,15 +179,16 @@ The following code example describes the above behavior.
 
 {% highlight html %}
      
-           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True" AllowSorting="True" AllowPaging="True" >
-           <GroupSettings  GroupedColumns="ShipCountry,OrderID"></GroupSettings>
-           <Columns>
-                <ej:Column Field="OrderID" HeaderText="Order ID" />
-                <ej:Column Field="EmployeeID" HeaderText="Employee ID"  />
-                <ej:Column Field="CustomerID" HeaderText="Customer ID"  />
-                <ej:Column Field="ShipCountry" HeaderText="Ship Country"   />
-                <ej:Column Field="Freight" HeaderText="Freight" Format="{0:C}"  />
-           </Columns>             
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True"  AllowPaging="True" >
+           <GroupSettings  GroupedColumns="ShipCountry,CustomerID"></GroupSettings>
+            <Columns>
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID" />
+                <ej:Column Field="CustomerID"  />
+                <ej:Column Field="ShipCountry" />
+                <ej:Column Field="Freight" />
+           </Columns>         
+           </ej:Grid>   
       
 {% endhighlight  %}
 
@@ -206,7 +208,7 @@ The following code example describes the above behavior.
                      int code = 10000;
                      for (int i = 1; i < 10; i++)
                      {
-                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i,));
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i));
                       order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
                       order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
                       order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
@@ -258,16 +260,17 @@ The following code example describes the above behavior.
 
 {% highlight html %}
      
-           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True" AllowSorting="True" AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True" AllowPaging="True" >
            <GroupSettings  ShowToggleButton="True" ></GroupSettings>
-           <Columns>
-                <ej:Column Field="OrderID" HeaderText="Order ID" />
-                <ej:Column Field="EmployeeID" HeaderText="Employee ID"  />
-                <ej:Column Field="CustomerID" HeaderText="Customer ID"  />
-                <ej:Column Field="ShipCountry" HeaderText="Ship Country"   />
-                <ej:Column Field="Freight" HeaderText="Freight" Format="{0:C}"  />
-           </Columns>             
-       
+            <Columns>
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID" />
+                <ej:Column Field="CustomerID"  />
+                <ej:Column Field="ShipCountry" />
+                <ej:Column Field="Freight" />
+           </Columns>         
+           </ej:Grid>   
+              
 {% endhighlight  %}
 
 {% highlight c# %}
@@ -286,7 +289,7 @@ The following code example describes the above behavior.
                      int code = 10000;
                      for (int i = 1; i < 10; i++)
                      {
-                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i,));
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i));
                       order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
                       order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
                       order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
@@ -341,14 +344,15 @@ The following code example describes the above behavior.
      
            <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True" AllowSorting="True" AllowPaging="True" >
            <GroupSettings  ShowUngroupButton="False"  ></GroupSettings>
-           <Columns>
-                <ej:Column Field="OrderID" HeaderText="Order ID" />
-                <ej:Column Field="EmployeeID" HeaderText="Employee ID"  />
-                <ej:Column Field="CustomerID" HeaderText="Customer ID"  />
-                <ej:Column Field="ShipCountry" HeaderText="Ship Country"   />
-                <ej:Column Field="Freight" HeaderText="Freight" Format="{0:C}"  />
-           </Columns>             
-       
+            <Columns>
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID" />
+                <ej:Column Field="CustomerID"  />
+                <ej:Column Field="ShipCountry" />
+                <ej:Column Field="Freight" />
+           </Columns>         
+           </ej:Grid>   
+      
 {% endhighlight  %}
 
 {% highlight c# %}
@@ -367,7 +371,7 @@ The following code example describes the above behavior.
                      int code = 10000;
                      for (int i = 1; i < 10; i++)
                      {
-                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i,));
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i));
                       order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
                       order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
                       order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
@@ -419,15 +423,16 @@ The following code example describes the above behavior.
 
 {% highlight html %}
      
-           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True" AllowSorting="True" AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True"  AllowPaging="True" >
            <GroupSettings ShowGroupedColumn="False" ></GroupSettings>
-           <Columns>
-                <ej:Column Field="OrderID" HeaderText="Order ID" />
-                <ej:Column Field="EmployeeID" HeaderText="Employee ID"  />
-                <ej:Column Field="CustomerID" HeaderText="Customer ID"  />
-                <ej:Column Field="ShipCountry" HeaderText="Ship Country"   />
-                <ej:Column Field="Freight" HeaderText="Freight" Format="{0:C}"  />
-           </Columns>             
+            <Columns>
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID" />
+                <ej:Column Field="CustomerID"  />
+                <ej:Column Field="ShipCountry" />
+                <ej:Column Field="Freight" />
+           </Columns>         
+           </ej:Grid>   
       
 {% endhighlight  %}
 
@@ -447,7 +452,7 @@ The following code example describes the above behavior.
                      int code = 10000;
                      for (int i = 1; i < 10; i++)
                      {
-                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i,));
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i));
                       order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
                       order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
                       order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
@@ -499,16 +504,17 @@ The following code example describes the above behavior.
 
 {% highlight html %}
      
-           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True" AllowSorting="True" AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True"  AllowPaging="True" >
            <GroupSettings EnableDropAreaAutoSizing="False" ></GroupSettings>
-           <Columns>
-                <ej:Column Field="OrderID" HeaderText="Order ID" />
-                <ej:Column Field="EmployeeID" HeaderText="Employee ID"  />
-                <ej:Column Field="CustomerID" HeaderText="Customer ID"  />
-                <ej:Column Field="ShipCountry" HeaderText="Ship Country"   />
-                <ej:Column Field="Freight" HeaderText="Freight" Format="{0:C}"  />
-           </Columns>             
-       
+            <Columns>
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID" />
+                <ej:Column Field="CustomerID"  />
+                <ej:Column Field="ShipCountry" />
+                <ej:Column Field="Freight" />
+           </Columns>         
+           </ej:Grid>   
+      
 {% endhighlight  %}
 
 {% highlight c# %}
@@ -527,7 +533,7 @@ The following code example describes the above behavior.
                      int code = 10000;
                      for (int i = 1; i < 10; i++)
                      {
-                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i,));
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i));
                       order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
                       order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
                       order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
@@ -574,15 +580,16 @@ The following code example describes the above behavior.
 
 {% highlight html %}
      
-           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True" AllowSorting="True" AllowPaging="True" >
-           <GroupSettings EnableDropAreaAutoSizing="False" ></GroupSettings>
-           <Columns>
-                <ej:Column Field="OrderID" HeaderText="Order ID" />
-                <ej:Column Field="EmployeeID" HeaderText="Employee ID"  />
-                <ej:Column Field="CustomerID" HeaderText="Customer ID"  />
-                <ej:Column Field="ShipCountry" HeaderText="Ship Country"   />
-                <ej:Column Field="Freight" HeaderText="Freight" Format="{0:C}"  />
-           </Columns>             
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True" AllowPaging="True" >
+           <GroupSettings ShowDropArea="False" GroupedColumns="ShipCountry" ></GroupSettings>
+            <Columns>
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID" />
+                <ej:Column Field="CustomerID"  />
+                <ej:Column Field="ShipCountry" />
+                <ej:Column Field="Freight" />
+           </Columns>         
+           </ej:Grid>         
        
 {% endhighlight  %}
 
@@ -602,7 +609,7 @@ The following code example describes the above behavior.
                      int code = 10000;
                      for (int i = 1; i < 10; i++)
                      {
-                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i,));
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i));
                       order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
                       order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
                       order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
@@ -659,15 +666,16 @@ The following code example describes the above behavior.
 
 {% highlight html %}
            
-           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True" AllowSorting="True" AllowPaging="True" >
-           <GroupSettings CaptionFormat="#template" ShowDropArea="false" GroupedColumns="ShipCountry" ></GroupSettings>
-           <Columns>
-                <ej:Column Field="OrderID" HeaderText="Order ID" />
-                <ej:Column Field="EmployeeID" HeaderText="Employee ID"  />
-                <ej:Column Field="CustomerID" HeaderText="Customer ID"  />
-                <ej:Column Field="ShipCountry" HeaderText="Ship Country"   />
-                <ej:Column Field="Freight" HeaderText="Freight" Format="{0:C}"  />
-           </Columns>             
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True"  AllowPaging="True" >
+           <GroupSettings CaptionFormat="#template" ></GroupSettings>
+             <Columns>
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID" />
+                <ej:Column Field="CustomerID"  />
+                <ej:Column Field="ShipCountry" />
+                <ej:Column Field="Freight" />
+           </Columns>         
+           </ej:Grid>        
          
 {% endhighlight  %}
             
@@ -708,7 +716,7 @@ The following code example describes the above behavior.
                      int code = 10000;
                      for (int i = 1; i < 10; i++)
                      {
-                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i,));
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i));
                       order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
                       order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
                       order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
