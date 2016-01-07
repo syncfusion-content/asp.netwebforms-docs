@@ -779,11 +779,55 @@ The following code example describes the above behavior.
          List<Orders> order = new List<Orders>();
          protected void Page_Load(object sender, EventArgs e)
          {
-            this.OrdersGrid.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders";
-            this.OrdersGrid.DataBind();
+            BindDataSource();
+         }
+         private void BindDataSource()
+          {
+            int orderId = 10000;
+            int empId = 0;
+            for (int i = 0; i < 9; i++)
+              {
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", "France","59 rue de l'Abbaye",51100, 32.38));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster","Brazil","Luisenstr. 48",44087, 11.61));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro","France","2, rue du Commerce",05454-876, 45.34));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon","Germany","Rua do Paço, 67",69004, 37.28));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", "Germany","Hauptstr. 31",8010, 67.00));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève","USA","Starenweg 5",1204, 23.32));
+                orderId += 6;
+                empId += 6;
+              }
+              this.OrdersGrid.DataSource = order;
+              this.OrdersGrid.DataBind();
+          }
+          [Serializable]
+          public class Orders
+          {
+             public Orders()
+             {
+
+             }
+             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             {
+                this.OrderID = OrderId;
+                this.EmployeeID = empId;
+                this.CustomerID = CustomerId;
+                this.ShipCity = shipcity;                
+                this.ShipCountry = shipCountry;
+                this.ShipAddress=shipaddress;
+                this.ShipPostalCode = shippostalcode;
+                this.Freight = freight;
+             }
+             public int OrderID { get; set; }
+             public int EmployeeID { get; set; }
+             public string CustomerID { get; set; }
+             public string ShipCity { get; set; }
+             public string ShipCountry { get; set; }
+             public string ShipAddress { get; set; }
+             public int ShipPostalCode { get; set; }
+             public double Freight { get; set; }
+          }
         }
       }
-     }
 {% endhighlight  %}
 {% endtabs %}
 
@@ -824,11 +868,55 @@ The following code example describes the above behavior.
          List<Orders> order = new List<Orders>();
          protected void Page_Load(object sender, EventArgs e)
          {
-            this.OrdersGrid.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders";
-            this.OrdersGrid.DataBind();
+            BindDataSource();
+         }
+         private void BindDataSource()
+          {
+            int orderId = 10000;
+            int empId = 0;
+            for (int i = 0; i < 9; i++)
+              {
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", "France","59 rue de l'Abbaye",51100, 32.38));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster","Brazil","Luisenstr. 48",44087, 11.61));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro","France","2, rue du Commerce",05454-876, 45.34));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon","Germany","Rua do Paço, 67",69004, 37.28));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", "Germany","Hauptstr. 31",8010, 67.00));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève","USA","Starenweg 5",1204, 23.32));
+                orderId += 6;
+                empId += 6;
+              }
+              this.OrdersGrid.DataSource = order;
+              this.OrdersGrid.DataBind();
+          }
+          [Serializable]
+          public class Orders
+          {
+             public Orders()
+             {
+
+             }
+             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             {
+                this.OrderID = OrderId;
+                this.EmployeeID = empId;
+                this.CustomerID = CustomerId;
+                this.ShipCity = shipcity;                
+                this.ShipCountry = shipCountry;
+                this.ShipAddress=shipaddress;
+                this.ShipPostalCode = shippostalcode;
+                this.Freight = freight;
+             }
+             public int OrderID { get; set; }
+             public int EmployeeID { get; set; }
+             public string CustomerID { get; set; }
+             public string ShipCity { get; set; }
+             public string ShipCountry { get; set; }
+             public string ShipAddress { get; set; }
+             public int ShipPostalCode { get; set; }
+             public double Freight { get; set; }
+          }
         }
       }
-     }
 {% endhighlight  %}
 {% endtabs %}
 
