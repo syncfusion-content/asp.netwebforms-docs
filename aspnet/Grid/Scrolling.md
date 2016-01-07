@@ -1,6 +1,6 @@
 ---
 layout: post
-title: scrolling with Grid widget for Syncfusion Essential ASP
+title: Scrolling with Grid widget for Syncfusion Essential ASP
 description: How to enable scrolling and its functionalities
 platform: ejweb
 control: Grid
