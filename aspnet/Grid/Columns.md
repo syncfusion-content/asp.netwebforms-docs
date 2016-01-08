@@ -15,16 +15,16 @@ N> 2. If the `Field` name contains "dot" operator then it is considered as compl
 
 ## Auto generation
 
-The `Columns` are automatically generated when `Columns` declaration is empty or undefined while initializing the Grid. Also, all the columns which are in [`DataSource`] are bound as a Grid columns.
+The `Columns` are automatically generated when `Columns` declaration is empty or undefined while initializing the Grid. Also, all the columns which are in `DataSource` are bound as a Grid columns.
 
 The following code example shows auto-generate columns behavior.
 
 {% tabs %}
 {% highlight html %}
   	<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-       <ej:Grid id="FlatGrid"  runat="server"  allowpaging="True">
-     </ej:Grid>
-   </asp:Content>          
+       <ej:Grid id="FlatGrid"  runat="server"  Allowpaging="True">
+       </ej:Grid>
+     </asp:Content>          
 {% endhighlight  %}
 {% highlight c# %}
    namespace WebSampleBrowser.Grid
@@ -36,7 +36,7 @@ The following code example shows auto-generate columns behavior.
         {
            BindDataSource();
 		}
-		 private void BindDataSource()
+        private void BindDataSource()
           {
                 int orderId = 10643;
                 int empId = 0;
@@ -218,8 +218,6 @@ The following output is displayed as a result of the above code example.
 3. Center
 4. Justify
 
-N> For `HeaderTextAlign` property you can assign either `string` value ("Right") or `enum` value (`ej.TextAlign.Right`).
-
 The following code example describes the above behavior.
 
 {% tabs %}
@@ -317,8 +315,7 @@ You can `Align` both content and header text of particular column using `TextAli
 3. Center
 4. Justify
 
-N> 1. For `TextAlign` property you can assign either `string` value ("Right") or `enum` value (`ej.TextAlign.Right`).
-N> 2. The `TextAlign` property will affect both content and header text of the grid.
+N> 1. The `TextAlign` property will affect both content and header text of the grid.
 
 The following code example describes the above behavior.
 
@@ -359,7 +356,7 @@ The following output is displayed as a result of the above code example.
 
 ## Format
 
-`Format` is the process of customizing the particular column data with specified jquery recognized globalize formats, such as currency, numeric, decimal, percentage or dates. The globalize format can be specified by using [`Format`] property of [`Columns`].
+`Format` is the process of customizing the particular column data with specified jquery recognized globalize formats, such as currency, numeric, decimal, percentage or dates. The globalize format can be specified by using `Format` property of `Columns`.
 
 The `Format` value should be wrapped within "{0:" and "}". (For ex: "{0:C3}"). The [data format] strings are available for the Date and Number types.
 
@@ -526,7 +523,7 @@ The following output is displayed as a result of the above code example.
 
 ## Reorder
 
-Reordering can be done by drag and drop the particular column header from one index to another index within the Grid. Reordering can be enabled by setting [`AllowReordering`] property as `True`.
+Reordering can be done by drag and drop the particular column header from one index to another index within the Grid. Reordering can be enabled by setting `AllowReordering` property as `True`.
 
 The following code example describes the above behavior.
 
@@ -585,7 +582,7 @@ The following code example describes the above behavior.
          </Columns>
     </ej:Grid>
 </asp:Content>
-{% endhighlight  %}
+{% endhighlight %}
 {% highlight c# %}
 namespace WebSampleBrowser.Grid
 {
@@ -665,7 +662,7 @@ The following output is displayed as a result of the above code example.
 
 ## Unbound Column
 
-You can define the unbound columns in Grid by not defining `Field` property for that particular column. Value for these columns can be populated either manually using `queryCellInfo` event or by using column `template` or by column `format` property.
+You can define the unbound columns in Grid by not defining `Field` property for that particular column. Value for these columns can be populated either manually using `QueryCellInfo` event or by using column `Template` or by column `Format` property.
 
 N> Editing, grouping, filtering, sorting, summary and searching support are not available for unbound columns.
 
@@ -1017,10 +1014,9 @@ The following output is displayed as a result of the above code example.
 
 ### Custom buttons
 
-You can add custom button in the command column by specifying the `Type` property of `commands` as "empty" or any other `string` which does not corresponds to default `UnboundType` buttons.
+You can add custom button in the command column by specifying the `Type` property of `Commands` as "empty" or any other `string` which does not corresponds to default `UnboundType` buttons.
 
-N> 1. For `Type` property you can assign either `string` value ("edit") or `enum` value (`ej.Grid.UnboundType.Edit`).
-N> 2. In command column you can add only buttons.
+N> 1. In command column you can add only buttons.
 
 The following code example describes the above behavior.
 
@@ -1074,7 +1070,7 @@ The following output is displayed as a result of the above code example.
 
 ## Column Chooser
 
-Column chooser contains the list of all the columns which are defined in the `Columns` property. Using this you can control the visibility of columns in Grid. You can prevent to show the particular column name in column chooser by setting `ShowInColumnChooser` property of `Columns` as `false`. 
+Column chooser contains the list of all the columns which are defined in the `Columns` property. Using this you can control the visibility of columns in Grid. You can prevent to show the particular column name in column chooser by setting `ShowInColumnChooser` property of `Columns` as `False`. 
 
 Column Chooser would be shown in the top right corner of Grid. To enable column chooser, set `ShowColumnChooser` property as `True`. 
 
