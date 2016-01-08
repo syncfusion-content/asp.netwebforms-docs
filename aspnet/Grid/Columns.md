@@ -37,8 +37,8 @@ The following code example shows auto-generate columns behavior.
            BindDataSource();
 		}
 		 private void BindDataSource()
-        {
-               int orderId = 10643;
+          {
+                int orderId = 10643;
                 int empId = 0;
                 for (int i = 1; i < 9; i++)
                 {
@@ -53,7 +53,7 @@ The following code example shows auto-generate columns behavior.
                 }
             this.FlatGrid.DataSource = order;
             this.FlatGrid.DataBind();
-        }
+         }
         [Serializable]
         public class Orders
         {
