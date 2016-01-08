@@ -8,7 +8,7 @@ documentation: ug
 --- 
 # Columns
 
-Column definitions are used as the `DataSource` schema in Grid and it plays vital role in rendering column values in required format. Grid operations such as sorting, filtering, editing would be performed based on the column definitions. The [`Field`] property of the [`Columns`] is necessary to map the datasource values in Grid columns.
+Column definitions are used as the `DataSource` schema in Grid and it plays vital role in rendering column values in required format. Grid operations such as sorting, filtering, editing would be performed based on the column definitions. The `Field` property of the `Columns` is necessary to map the datasource values in Grid columns.
 
 N> 1. If the column with `Field` is not in the datasource, then the column values will be displayed as empty.
 N> 2. If the `Field` name contains "dot" operator then it is considered as complex binding.
@@ -22,7 +22,7 @@ The following code example shows auto-generate columns behavior.
 {% tabs %}
 {% highlight html %}
   	<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-       <ej:Grid id="FlatGrid"  runat="server"  Allowpaging="True">
+       <ej:Grid id="FlatGrid"  runat="server"  AllowPaging="True">
        </ej:Grid>
      </asp:Content>          
 {% endhighlight  %}
@@ -175,7 +175,6 @@ N> If `HeaderText` is not defined then the `Field` name is considered as header 
 The following code example describes the above behavior.
 
 {% tabs %}
-
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
@@ -211,7 +210,7 @@ The following output is displayed as a result of the above code example.
 
 ### Header Text alignment
 
-`Align` the header text of column header using `HeaderTextAlign` property of `columns`. There are four possible ways to align header text, they are
+`Align` the header text of column header using `HeaderTextAlign` property of `Columns`. There are four possible ways to align header text, they are
 
 1. Right
 2. Left
@@ -260,7 +259,7 @@ The template design that applies on for the column header. To render template, s
 
 You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "the link").
 
-N> It's a standard way to enclose the `Template` within the `script` tag with `type` as `text/x-jsrender`.
+N> It's a standard way to enclose the `template` within the `script` tag with `type` as `text/x-jsrender`.
 
 The following code example describes the above behavior.
 
@@ -358,12 +357,11 @@ The following output is displayed as a result of the above code example.
 
 `Format` is the process of customizing the particular column data with specified jquery recognized globalize formats, such as currency, numeric, decimal, percentage or dates. The globalize format can be specified by using `Format` property of `Columns`.
 
-The `Format` value should be wrapped within "{0:" and "}". (For ex: "{0:C3}"). The [data format] strings are available for the Date and Number types.
+The `Format` value should be wrapped within "{0:" and "}". (For ex: "{0:C3}"). The [data format](https://github.com/jquery/globalize/tree/v0.1.1#format "data format") strings are available for the Date and Number types.
 
 The following code example describes the above behavior.
 
 {% tabs %}
-
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
@@ -606,7 +604,7 @@ The following output is displayed as a result of the above code example.
 
 ## Cell Merging
 
-The Grid has options to merge the Grid cells based on the required conditions. This can be enabled by setting `AllowCellMerging` property as `true` and the merge conditions can be defined in `MergeCellInfo` event. In this event, you can get the column details and data of that particular row and column which is helpful in defining conditions. 
+The Grid has options to merge the Grid cells based on the required conditions. This can be enabled by setting `AllowCellMerging` property as `True` and the merge conditions can be defined in `MergeCellInfo` event. In this event, you can get the column details and data of that particular row and column which is helpful in defining conditions. 
 
 You can merge the rows and cells of grid, using `rowMerge`, `colMerge` and `merge` functions available in `MergeCellInfo` event's argument.
 
@@ -958,7 +956,7 @@ Using `Command` column, you can add CRUD action buttons as one of the Grid colum
 3. Delete
 4. Cancel
 
-Through `ButtonOptions` property of `Commands`, you can specify all the button options which are supported by Essential Studio JavaScript `Button` control. 
+Through `ButtonOptions` property of `Commands`, you can specify all the button options which are supported by Essential Studio Asp.Net `Button` control. 
 
 The following code example describes the above behavior.
 
