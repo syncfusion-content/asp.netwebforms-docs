@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Filtering
 
-Filtering helps to view particular or related records from dataSource which meets a given filtering criteria. To enable filter, set `AllowFiltering`property as`true`.   
+Filtering helps to view particular or related records from dataSource which meets a given filtering criteria. To enable filter, set `AllowFiltering` property as`true`.   
 
 The Grid supports three types of filter, they are
 
@@ -110,8 +110,6 @@ The following output is displayed as a result of the above code example.
 You can enable menu filter by setting `FilterType` as `Menu` in `FilterSettings`
 
 There is an option to show or hide the additional filter options in the Menu by setting `ShowPredicate` as `true` or `false` in `FilterSettings` respectively.
-
-N> For `FilterType` property you can assign either `string` value ("menu") or `enum` value (`Menu`).
 
 The following code example describes the above behavior.
 
@@ -677,8 +675,6 @@ This specifies the grid to start the filter action while typing in the filter ba
 1. OnEnter
 2. Immediate
 
-N> For `FilterBarMode` property you can assign either `string` value (onenter) or `enum` value (`OnEnter`).
-
 Filter bar message:
 
 The filter bar message is supported only for the `FilterType` as 'FilterBar'. The filtered data with column name is displayed in the grid pager itself. By default `ShowFilterBarStatus` is 'true'.
@@ -781,37 +777,37 @@ List of Column type and Filter operators
                 Number
             </td>
             <td>
-                FilterOperatorType.GreaterThan
+                GreaterThan
             </td>
         </tr>
         <tr>
            
             <td>
-                FilterOperatorType.GreaterThanOrEqual
+                GreaterThanOrEqual
             </td>
         </tr>
         <tr>
        
             <td>
-                FilterOperatorType.LessThan
+                LessThan
             </td>
         </tr>
         <tr>
             
             <td>
-                FilterOperatorType.LessThanOrEqual
+                LessThanOrEqual
             </td>
         </tr>
         <tr>
            
             <td>
-                FilterOperatorType.Equal
+                Equal
             </td>
         </tr>
         <tr>
           >
             <td>
-                FilterOperatorType.NotEqual
+                NotEqual
             </td>
         </tr>
         <tr>
@@ -819,31 +815,31 @@ List of Column type and Filter operators
                 String
             </td>
             <td>
-                FilterOperatorType.StartsWith
+                StartsWith
             </td>
         </tr>
         <tr>
           
             <td>
-                FilterOperatorType.EndsWith
+                EndsWith
             </td>
         </tr>
         <tr>
            
             <td>
-                FilterOperatorType.Contains
+                Contains
             </td>
         </tr>
         <tr>
            
             <td>
-                FilterOperatorType.Equal
+                Equal
             </td>
         </tr>
         <tr>
            
             <td>
-                FilterOperatorType.NotEqual
+                NotEqual
             </td>
         </tr>
         <tr>
@@ -851,13 +847,13 @@ List of Column type and Filter operators
                 Boolean
             </td>
             <td>
-                FilterOperatorType.Equal
+                Equal
             </td>
         </tr>
         <tr>
             
             <td>
-                FilterOperatorType.NotEqual
+                NotEqual
             </td>
         </tr>
         <tr>
@@ -865,37 +861,37 @@ List of Column type and Filter operators
                 Date
             </td>
             <td>
-                FilterOperatorType.GreaterThan
+                GreaterThan
             </td>
         </tr>
         <tr>
             
             <td>
-                FilterOperatorType.GreaterThanOrEqual
+                GreaterThanOrEqual
             </td>
         </tr>
         <tr>
            
             <td>
-                FilterOperatorType.LessThan
+                LessThan
             </td>
         </tr>
         <tr>
            
             <td>
-                FilterOperatorType.LessThanOrEqual
+                LessThanOrEqual
             </td>
         </tr>
         <tr>
            
             <td>
-                FilterOperatorType.Equal
+                Equal
             </td>
         </tr>
         <tr>
           
             <td>
-                FilterOperatorType.NotEqual
+                NotEqual
             </td>
         </tr>
     </table>
