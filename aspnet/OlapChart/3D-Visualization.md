@@ -3,7 +3,7 @@ layout: post
 title: 3D-Visualization
 description: 3d visualization
 platform: aspnet
-control: OLAP Chart
+control: OlapChart
 documentation: ug
 ---
 

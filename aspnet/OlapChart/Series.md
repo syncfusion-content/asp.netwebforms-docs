@@ -20,6 +20,7 @@ By using the `fill` and `border` properties of Chart series, you can customize t
 <body>
     <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
         <ClientSideEvents Load="loadTheme" SeriesRendering="onSeriesRenders" />
+          <Size Width="100%" Height="460px"></Size>
     </ej:OlapChart>
     <script type="text/javascript">
         function onSeriesRenders(args) {

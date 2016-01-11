@@ -60,7 +60,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 
 {% highlight c# %}
 
-string connectionString = @"Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog =FoodMart;"; 
+string connectionString = @"Data Source = http://localhost:8080/cva_s/xmla; Initial Catalog = CVAS;"; 
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.ActivePivot;
 
@@ -79,7 +79,43 @@ Now, WCF service is added into the application successfully that comprises of th
 
 **Configuring WCF Service Class**
 
-The following are the list of namespaces to be added on top of the main class inside `PivotGridService.svc.cs` file. Remove the **“DoWork”** method present inside both `PivotGridService.svc.cs` and `IPivotGridService.cs` files.  Next, add **“AspNetCompatibilityRequirements”** attribute on top of main class present inside PivotGridService.svc.cs and set **“RequirementsMode”** value to **“Allowed”**.
+Remove the **“DoWork”** method present inside both `PivotGridService.svc.cs` and `IPivotGridService.cs` files.  Next, add **“AspNetCompatibilityRequirements”** attribute on top of main class present inside PivotGridService.svc.cs and set **“RequirementsMode”** value to **“Allowed”**.
+
+{% highlight c# %}
+
+namespace PivotGridDemo
+{
+    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
+    public class PivotGridService : IPivotGridService
+    {
+
+    }
+}
+
+{% endhighlight %}
+
+**List of Dependency Libraries**
+
+Next you need to add the below mentioned dependency libraries into your Web Application. These libraries could be found in GAC (Global Assembly Cache) as well.
+ 
+To add them to your Web Application, right-click on **References** in Solution Explorer and select **Add Reference**. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
+
+N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]
+
+* Microsoft.AnalysisServices.AdomdClient
+* Syncfusion.Compression.Base
+* Syncfusion.Linq.Base
+* Syncfusion.Olap.Base
+* Syncfusion.PivotAnalysis.Base
+* Syncfusion.XlsIO.Base
+* Syncfusion.Pdf.Base
+* Syncfusion.DocIO.Base
+* Syncfusion.EJ
+* Syncfusion.EJ.Olap
+
+**List of Namespaces**
+
+Following are the list of namespaces to be added on top of the main class inside `PivotGridService.svc.cs` file.
 
 {% highlight c# %}
 
@@ -100,6 +136,7 @@ namespace PivotGridDemo
 }
 
 {% endhighlight %}
+
 
 **Datasource Initialization**
 
@@ -289,8 +326,8 @@ namespace PivotGridDemo
 
 The services could be exposed through the properties, binding, contract and address by using an endpoint.
 
-* Contract: This property indicates that the contract of the endpoint is exposing. Here you are referring to **IPivotGridService** contract and hence it is **PivotGridDemo.IPivotGridService**.
-* Binding: In your application, you use webHttpBinding to post and receive the requests and responses between the client-end and the service.
+* Contract: This property indicates that the contract of the endpoint is exposing. Here you are referring to `IPivotGridService` contract and hence it is `PivotGridDemo.IPivotGridService`.
+* Binding: In your application, you use `webHttpBinding` to post and receive the requests and responses between the client-end and the service.
 * BehaviorConfiguration: This property contains the name of the behavior to be used in the endpoint
 
 The endpointBehaviors are illustrated as follows
@@ -357,23 +394,9 @@ Now, WCF service is added into the application successfully that comprises of th
 
 **Configuring WCF Service Class**
 
-The following are the list of namespaces to be added on top of the main class inside `RelationalService.svc.cs` file. Remove the **“DoWork”** method present inside both `RelationalService.svc.cs` and `IRelationalService.cs` files.  Next, add **“AspNetCompatibilityRequirements”** attribute on top of main class present inside OlapChartService.svc.cs and set **“RequirementsMode”** value to **“Allowed”**.
+Remove the **“DoWork”** method present inside both `RelationalService.svc.cs` and `IRelationalService.cs` files.  Next, add **“AspNetCompatibilityRequirements”** attribute on top of main class present inside `RelationalService.svc.cs` and set **“RequirementsMode”** value to **“Allowed”**.
 
 {% highlight c# %}
-
-using OLAPUTILS = Syncfusion.JavaScript.Olap;
-using Syncfusion.Olap.Manager;
-using Syncfusion.Olap.Reports;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
-using System.ServiceModel.Activation;
-using System.Text;
-using System.Web.Script.Serialization;
-using Syncfusion.JavaScript.Olap;
-using System.Configuration;
 
 namespace PivotGridDemo
 {
@@ -385,6 +408,54 @@ namespace PivotGridDemo
 }
 
 {% endhighlight %}
+
+**List of Dependency Libraries**
+
+Next you need to add the below mentioned dependency libraries into your Web Application. These libraries could be found in GAC (Global Assembly Cache) as well.
+ 
+To add them to your Web Application, right-click on **References** in Solution Explorer and select **Add Reference**. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
+
+* Syncfusion.Compression.Base
+* Syncfusion.Linq.Base
+* Syncfusion.Olap.Base
+* Syncfusion.PivotAnalysis.Base
+* Syncfusion.XlsIO.Base
+* Syncfusion.Pdf.Base
+* Syncfusion.DocIO.Base
+* Syncfusion.EJ
+* Syncfusion.EJ.Olap
+
+**List of Namespaces**
+
+Following are the list of namespaces to be added on top of the main class inside `RelationalService.svc.cs` file.
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.ServiceModel;
+using System.ServiceModel.Activation;
+using System.Text;
+using System.Configuration;
+using System.Web.Script.Serialization;
+using Syncfusion.JavaScript.Olap;
+using OLAPUTILS = Syncfusion.JavaScript.Olap;
+using Syncfusion.Olap.Manager;
+using Syncfusion.Olap.Reports;
+
+namespace PivotGridDemo
+{
+    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
+    public class RelationalService : IRelationalService
+    {
+
+    }
+}
+
+{% endhighlight %}
+
 
 **Datasource Initialization**
 

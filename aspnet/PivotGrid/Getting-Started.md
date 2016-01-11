@@ -14,7 +14,7 @@ documentation: ug
 
 This section covers the information required to create a simple PivotGrid bound to OLAP datasource. 
 
->**NOTE: ASP.NET Web Application will contain a service that transfers data to server-side, processes and returns them back to client-side for control rendering and re-rendering. The service utilized for communicate could be either WCF or WebAPI based on users requirement.**
+N> ASP.NET MVC Web Application will contain a service that transfers data to server-side, processes and returns back to client-side for control rendering and re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement.
 
 ###Project Initialization
 
@@ -55,11 +55,10 @@ Scripts and style sheets are referred under the <head> tag in **GettingStarted.a
 {% highlight html %}
 
 <head>
-    <link href="http://cdn.syncfusion.com/13.3.0.7/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"> </script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/13.3.0.7/js/web/ej.web.all.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
 </head>
 
 {% endhighlight %}
@@ -72,7 +71,7 @@ Once the widget is placed into the web page, add **'ScriptManager'** next to it 
 
 {% highlight html %}
 
-<%@ Register Assembly="Syncfusion.EJ.Olap, Version=13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web.Olap" TagPrefix="ej" %> 
+<%@ Register Assembly="Syncfusion.EJ.Olap, Version={{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web.Olap" TagPrefix="ej" %> 
 <html> 
     …… 
     ……
@@ -90,7 +89,7 @@ Once the widget is placed into the web page, add **'ScriptManager'** next to it 
 
 The **“Url”** property in PivotGrid widget points the service endpoint, where data are processed and fetched in the form of JSON. The services used in PivotGrid widget as endpoint are WCF and WebAPI.
 
-N> The above “GettingStarted.aspx” contains WebAPI Url, which is, “../PivotGridService”. If WCF service is used as endpoint, the Url would look like “../PivotGridService.svc”.
+N> The above “GettingStarted.aspx” contains WebAPI Url, which is “../PivotGridService”. If WCF service is used as endpoint, the Url would look like “../PivotGridService.svc”.
 
 If you are manually entering the code instead of drag and drop operation from toolbox, then you need to register the referenced assemblies in Web.config file. 
 
@@ -101,15 +100,15 @@ If you are manually entering the code instead of drag and drop operation from to
     <assemblies> 
         …… 
         ……
-        <add assembly="Syncfusion.EJ, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.EJ.Olap, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-         <add assembly="Syncfusion.Compression.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.Linq.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.Olap.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.PivotAnalysis.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.Pdf.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.XlsIO.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.DocIO.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
+        <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.EJ.Olap, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+         <add assembly="Syncfusion.Compression.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.Linq.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.Olap.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.PivotAnalysis.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.Pdf.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.XlsIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
        
     </assemblies>
 </compilation>
@@ -146,9 +145,6 @@ The following are the list of namespaces to be added on top of the main class in
 
 {% highlight c# %}
 
-using Syncfusion.JavaScript.Olap;
-using Syncfusion.Olap.Manager;
-using Syncfusion.Olap.Reports;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -158,6 +154,9 @@ using System.Net.Http;
 using System.Web;
 using System.Web.Http;
 using System.Web.Script.Serialization;
+using Syncfusion.JavaScript.Olap;
+using Syncfusion.Olap.Manager;
+using Syncfusion.Olap.Reports;
 
 namespace PivotGridDemo
 {
@@ -350,7 +349,7 @@ Now, **PivotGrid** will be rendered with Internet Sales Amount over a period of 
 
 ![](Getting-Started_images/pivotgrid.png) 
 
-### WCF
+###WCF
 
 This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotGrid. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/pivotgrid/olap-connectivity#wcf).
 
@@ -358,7 +357,7 @@ This section demonstrates the utilization of WCF service as endpoint binding OLA
 
 This section covers the information required to create a simple PivotGrid bound to Relational datasource. 
 
->**NOTE: ASP.NET Web Application will contain a service that transfers data to server-side, processes and returns them back to client-side for control rendering and re-rendering. The service utilized for communicate could be either WCF or WebAPI based on users requirement.**
+N> ASP.NET MVC Web Application will contain a service that transfers data to server-side, processes and returns back to client-side for control rendering and re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement.
 
 ###Project Initialization
 
@@ -384,7 +383,7 @@ N> If any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET u
 
 ###Scripts and CSS Initialization
 
-The scripts and style sheets that are mandatorily required to render pivotgrid widget in a Web Application are mentioned in an appropriate order below:
+The scripts and style sheets that are mandatorily required to render PivotGrid widget in a Web Application are mentioned in an appropriate order below:
 
 1. ej.widgets.all.min.css
 2. jquery-1.10.2.min.js
@@ -398,23 +397,23 @@ Scripts and style sheets are referred under the <head> tag in **GettingStarted.a
 {% highlight html %}
 
 <head>
-    <link href="http://cdn.syncfusion.com/13.3.0.7/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"> </script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
-    <script src="http://cdn.syncfusion.com/13.3.0.7/js/web/ej.web.all.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
 </head>
 
 {% endhighlight %}
 
 ###Control Initialization
 
-Either drag and drop the **pivotgrid** control from the toolbox (under **Syncfusion BI Web** category) or manually define the widget like in the below code sample inside **"GettingStarted.aspx"** page.
+Either drag and drop the **PivotGrid** control from the toolbox (under **Syncfusion BI Web** category) or manually define the widget like in the below code sample inside **"GettingStarted.aspx"** page.
  
 Once the widget is placed into the web page, add **'ScriptManager'** next to it in-order to generate appropriate scripts.
 
 {% highlight html %}
 
-<%@ Register Assembly="Syncfusion.EJ.Olap, Version=13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web.Olap" TagPrefix="ej" %> 
+<%@ Register Assembly="Syncfusion.EJ.Olap, Version={{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web.Olap" TagPrefix="ej" %> 
 <html> 
     …… 
     ……
@@ -430,9 +429,9 @@ Once the widget is placed into the web page, add **'ScriptManager'** next to it 
 
 {% endhighlight %}
 
-The **“Url”** property in pivotgrid widget points the service endpoint, where data are processed and fetched in the form of JSON. The services used in pivotgrid widget as endpoint are WCF and WebAPI.
+The **“Url”** property in PivotGrid widget points the service endpoint, where data are processed and fetched in the form of JSON. The services used in PivotGrid widget as endpoint are WCF and WebAPI.
 
-N> The above “GettingStarted.aspx” contains WebAPI Url, which is, “../RelationalService”. If WCF service is used as endpoint, the Url would look like “../RelationalService.svc”.
+N> The above “GettingStarted.aspx” contains WebAPI Url, which is “../RelationalService”. If WCF service is used as endpoint, the Url would look like “../RelationalService.svc”.
 
 If you are manually entering the code instead of drag and drop operation from toolbox, then you need to register the referenced assemblies in Web.config file. 
 
@@ -442,15 +441,15 @@ If you are manually entering the code instead of drag and drop operation from to
     <assemblies> 
         …… 
         ……
-        <add assembly="Syncfusion.EJ, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.EJ.Olap, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-         <add assembly="Syncfusion.Compression.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.Linq.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.Olap.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.PivotAnalysis.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.Pdf.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.XlsIO.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.DocIO.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
+        <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.EJ.Olap, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+         <add assembly="Syncfusion.Compression.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.Linq.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.Olap.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.PivotAnalysis.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.Pdf.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.XlsIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
        
     </assemblies>
 </compilation>
@@ -471,7 +470,7 @@ Next, remove all the existing methods such as "Get", "Post", "Put" and "Delete" 
 
 {% highlight c# %}
 
-namespace pivotgridDemo
+namespace PivotGridDemo
 {
     public class RelationalServiceController: ApiController
     {
@@ -487,10 +486,6 @@ The following are the list of namespaces to be added on top of the main class in
 
 {% highlight c# %}
 
-using Syncfusion.JavaScript.Olap;
-using Syncfusion.Olap.Manager;
-using Syncfusion.Olap.Reports;
-using Syncfusion.PivotAnalysis.Base; 
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -500,8 +495,12 @@ using System.Net.Http;
 using System.Web;
 using System.Web.Http;
 using System.Web.Script.Serialization;
+using Syncfusion.JavaScript.Olap;
+using Syncfusion.Olap.Manager;
+using Syncfusion.Olap.Reports;
+using Syncfusion.PivotAnalysis.Base; 
 
-namespace pivotgridDemo
+namespace PivotGridDemo
 {
    public class RelationalServiceController : ApiController
     {
@@ -731,6 +730,6 @@ Now, **PivotGrid** will be rendered with Sales Amount over a set of products acr
 
 ![](Getting-Started_images/relational.png) 
 
-### WCF
+###WCF
 
 This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotGrid. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/pivotgrid/olap-connectivity#wcf-1).

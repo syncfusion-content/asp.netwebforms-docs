@@ -1,7 +1,7 @@
 ---
 layout: post
-title: OLAP Client Elements | OLAPClient | ASP.NET | Syncfusion
-description: olap client elements 
+title: OlapClient Elements | OLAPClient | ASP.NET | Syncfusion
+description: OlapClient elements 
 platform: aspnet
 control: OLAPClient
 documentation: ug

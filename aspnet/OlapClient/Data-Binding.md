@@ -79,7 +79,43 @@ Now, WCF service is added into the application successfully which comprises of t
 
 **Configuring WCF Service Class**
 
-The following are the list of namespaces to be added on top of the main class inside `OlapClientService.svc.cs` file. Remove the **“DoWork”** method present inside both `OlapClientService.svc.cs` and `IOlapClientService.cs` files.  Next, add **“AspNetCompatibilityRequirements”** attribute on top of main class present inside OlapClientService.svc.cs and set **“RequirementsMode”** value to **“Allowed”**.
+Remove the **“DoWork”** method present inside both `OlapClientService.svc.cs` and `IOlapClientService.cs` files.  Next, add **“AspNetCompatibilityRequirements”** attribute on top of main class present inside OlapClientService.svc.cs and set **“RequirementsMode”** value to **“Allowed”**.
+
+{% highlight c# %}
+
+namespace OlapClientDemo
+{
+    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
+    public class OlapClientService: IOlapClientService
+    {
+    
+    }
+}
+
+{% endhighlight %}
+
+**List of Dependency Libraries**
+
+Next, add the following dependency libraries into your Web Application. You can find these libraries in GAC (Global Assembly Cache) in your machine.
+ 
+To add them to your Web Application, right-click on **References** in Solution Explorer and select **Add Reference**. Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
+
+N> When you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]
+
+* Microsoft.AnalysisServices.AdomdClient.dll
+* Syncfusion.Compression.Base.dll
+* Syncfusion.Linq.Base.dll
+* Syncfusion.Olap.Base.dll
+* Syncfusion.EJ.dll
+* Syncfusion.EJ.Olap.dll 
+* Syncfusion.XlsIO.Base.dll
+* Syncfusion.DocIO.Base.dll
+* Syncfusion.Pdf.Base.dll
+* System.Data.SqlServerCe.dll (Version: 4.0.0.0).
+
+**List of Namespaces**
+
+The following are the list of namespaces to be added on top of the main class inside `OlapClientService.svc.cs` file.
 
 {% highlight c# %}
 
@@ -107,6 +143,7 @@ namespace OlapClientDemo
 }
 
 {% endhighlight %}
+
 
 **Datasource Initialization**
 

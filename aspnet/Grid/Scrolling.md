@@ -1,452 +1,925 @@
 ---
 layout: post
-title: Scrolling | Grid | ASP.NET Webforms | Syncfusion
-description: scrolling
-platform: aspnet
+title: Scrolling with Grid widget for Syncfusion Essential ASP
+description: How to enable scrolling and its functionalities
+platform: ejweb
 control: Grid
 documentation: ug
 ---
-
 # Scrolling
 
-## Default Scrolling
+Scrolling can be enabled by setting `AllowScrolling`  as `true`. The height and width can be set to grid by using the properties  `Height` and `Width` property of  `ScrollSettings`. 
 
-Scrolling is an important feature in Grid. It makes Grid more compatible with layout and design. The AllowScrolling property is used to enable scrolling functionality to the Grid. The default value for AllowScrolling is false.
+ N> If `Width`  and `Height`  is not defined in the `ScrollSettings`  property then the horizontal and vertical scrollbar is enabled, only when the grid width exceeds the browser width.
 
-In this following code example, ScrollSettings property is used to adjust the Grid width and height. 
+The height and width can be set in percentage and pixel. The default value for `Height`  and `Width`  in `ScrollSettings`  is 0 and `auto` respectively.
 
-{% tabs %}
+The following code example describes the above behavior.
 
+{% tabs %} 
 {% highlight html %}
 
-   
-
-
-
-<ej:Grid ID="Grid" runat="server" AllowScrolling="true">
-
-        <ScrollSettings Width="886" Height="300" />
-
-        <Columns>
-
-            <ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right" Width="100" />
-
-            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" />
-
-            <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="100" />
-
-            <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="100" Format="{0:C}" />
-
-            <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
-
-            <ej:Column Field="ShipName" HeaderText="Ship Name" Width="100" />
-
-            <ej:Column Field="OrderDate" HeaderText="Order Date" TextAlign="Right" Width="100" Format="{0:MM/dd/yyyy}" />
-
-            <ej:Column Field="ShipCountry" HeaderText="Ship Country" Width="100" />
-
-            <ej:Column Field="ShipPostalCode" HeaderText="Postal Code" TextAlign="Right" Width="100" />
-
-            <ej:Column Field="Verified" HeaderText="Verified" Width="100" />
-
-        </Columns>
-
-    </ej:Grid>
-
-{% endhighlight %}
+     <ej:Grid ID="OrdersGrid" runat="server" AllowScrolling="true">
+       <ScrollSettings Width="400" Height="300" />        
+        <Columns>                
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID" />
+                <ej:Column Field="CustomerID"/>
+                <ej:Column Field="ShipCity"/> 
+                <ej:Column Field="ShipCountry"/>
+                <ej:Column Field="ShipAddress "/>               
+                <ej:Column Field="ShipPostalCode"/>
+                <ej:Column Field="Freight"/>
+            </Columns>
+        </ej:Grid>
+{% endhighlight  %}
 {% highlight c# %}
-
-
-
-
-
-public partial class _Default : Page
-
-{
-
-    List<Orders> order = new List<Orders>();
-
-    protected void Page_Load(object sender, EventArgs e)
-
-    {
-
-        BindDataSource();
-
-    }
-
-
-
-    private void BindDataSource()
-
-    {
-
-        int code = 10000;
-
-        for (int i = 1; i < 10; i++)
-
+		
+     namespace MVCSampleBrowser.Grid
+     {
+       public partial class Scrolling : System.Web.UI.Page
         {
+         List<Orders> order = new List<Orders>();
+         protected void Page_Load(object sender, EventArgs e)
+         {
+            BindDataSource();
+         }
+         private void BindDataSource()
+          {
+            int orderId = 10000;
+            int empId = 0;
+            for (int i = 0; i < 9; i++)
+              {
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", "France","59 rue de l'Abbaye",51100, 32.38));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster","Brazil","Luisenstr. 48",44087, 11.61));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro","France","2, rue du Commerce",05454-876, 45.34));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon","Germany","Rua do Paço, 67",69004, 37.28));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", "Germany","Hauptstr. 31",8010, 67.00));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève","USA","Starenweg 5",1204, 23.32));
+                orderId += 6;
+                empId += 6;
+              }
+              this.OrdersGrid.DataSource = order;
+              this.OrdersGrid.DataBind();
+          }
+          [Serializable]
+          public class Orders
+          {
+             public Orders()
+             {
 
-            order.Add(new Orders(code + 1, "TOMSP", i + 0, 2.3 * i, "Münster", "Toms Spezialitäten", new DateTime(1991, 05, 15), "Germany", "44087", false));
-
-            order.Add(new Orders(code + 2, "HANAR", i + 2, 3.3 * i, "Rio de Janeiro", "Hanari Carnes", new DateTime(1990, 04, 04), "Brazil", "05454-876", true));
-
-            order.Add(new Orders(code + 3, "VICTE", i + 1, 4.3 * i, "Lyon", "Victuailles en stock", new DateTime(1957, 11, 30), "France", "69004", true));
-
-            order.Add(new Orders(code + 4, "VINET", i + 3, 5.3 * i, "Reims", "Vins et alcools Chevalier", new DateTime(1930, 10, 22), "France", "51100", true));
-
-            order.Add(new Orders(code + 5, "SUPRD", i + 4, 6.3 * i, "Charleroi", "Suprêmes délices", new DateTime(1953, 02, 18), "Belgium", "B-6000", false));
-
-            code += 5;
-
+             }
+             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             {
+                this.OrderID = OrderId;
+                this.EmployeeID = empId;
+                this.CustomerID = CustomerId;
+                this.ShipCity = shipcity;                
+                this.ShipCountry = shipCountry;
+                this.ShipAddress = shipaddress
+                this.ShipPostalCode = shippostalcode;
+                this.Freight = freight;
+             }
+             public int OrderID { get; set; }
+             public int EmployeeID { get; set; }
+             public string CustomerID { get; set; }
+             public string ShipCity { get; set; }
+             public string ShipCountry { get; set; }
+             public string ShipAddress { get; set; }
+             public int ShipPostalCode { get; set; }
+             public double Freight { get; set; }
+          }
         }
-
-        this.Grid.DataSource = order;
-
-        this.Grid.DataBind();
-
-    }
-
-
-
-    [Serializable]
-
-    public class Orders
-
-    {
-
-        public Orders()
-
-        {
-
-
-
-        }
-
-        public Orders(long OrderId, string CustomerId, int EmployeeId, double Freight, string ShipCity, string ShipName,
-
-            DateTime OrderDate, string ShipCountry, string ShipPostalCode, bool Verified)
-
-        {
-
-            this.OrderID = OrderId;
-
-            this.CustomerID = CustomerId;
-
-            this.EmployeeID = EmployeeId;
-
-            this.Freight = Freight;
-
-            this.ShipCity = ShipCity;
-
-            this.ShipName = ShipName;
-
-            this.OrderDate = OrderDate;
-
-            this.ShipCountry = ShipCountry;
-
-            this.ShipPostalCode = ShipPostalCode;
-
-            this.Verified = Verified;
-
-        }
-
-        public long OrderID { get; set; }
-
-        public string CustomerID { get; set; }
-
-        public int EmployeeID { get; set; }
-
-        public double Freight { get; set; }
-
-        public string ShipCity { get; set; }
-
-        public string ShipName { get; set; }
-
-        public DateTime OrderDate { get; set; }
-
-        public string ShipCountry { get; set; }
-
-        public string ShipPostalCode { get; set; }
-
-        public bool Verified { get; set; }
-
-    }
-
-}
-
-
-{% endhighlight %}
-
-{% endtabs %}
-
+      }
+{% endhighlight  %}
+{% endtabs %} 
 
 The following output is displayed as a result of the above code example.
 
 ![](Scrolling_images/Scrolling_img1.png)
 
+## Set Width and Height in pixel 
 
+To specify the `Width` and `Height` property of  `ScrollSettings` in pixel, by set the pixel value as integer. 
 
-## Scroll Settings
+The following code example describes the above behavior.
 
-The ScrollSettings contains the properties to enable scrolling related functionalities in the Grid.
-
-### To Enable Vertical Scrolling
-
-The Height property in the ScrollSettings is used to enable the vertical scroll bar in the Grid. The scroll height should be less than the Grid content height. That is, total rows height for enabling vertical scroll bar.
-
-The Height property can support percentage, pixel and auto values in scrollSettings. The default value for height in ScrollSettings is 0.
-
-The following code example illustrates how to enable vertical scrolling in the Grid. 
-
+{% tabs %} 
 {% highlight html %}
 
-  
-
-
-
-<ej:Grid ID="Grid" runat="server" AllowScrolling="true">
-
-        <ScrollSettings Height="300" />
-
-        <Columns>
-
-            <ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right" Width="100" />
-
-            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" />
-
-            <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="100" />
-
-            <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="100" Format="{0:C}" />
-
-            <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
-
-            <ej:Column Field="ShipName" HeaderText="Ship Name" Width="100" />
-
-            <ej:Column Field="OrderDate" HeaderText="Order Date" TextAlign="Right" Width="100" Format="{0:MM/dd/yyyy}" />
-
-            <ej:Column Field="ShipCountry" HeaderText="Ship Country" Width="100" />
-
-            <ej:Column Field="ShipPostalCode" HeaderText="Postal Code" TextAlign="Right" Width="100" />
-
-            <ej:Column Field="Verified" HeaderText="Verified" Width="100" />
-
-        </Columns>
-
-    </ej:Grid>
-
-
+     <ej:Grid ID="OrdersGrid" runat="server" AllowScrolling="true">
+       <ScrollSettings Width="500" Height="300" />         
+        <Columns>                
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID" />
+                <ej:Column Field="CustomerID"/>
+                <ej:Column Field="ShipCity"/> 
+                <ej:Column Field="ShipAddress"/> 
+                <ej:Column Field="ShipCountry"/>               
+                <ej:Column Field="ShipPostalCode"/>
+                <ej:Column Field="Freight"/>
+            </Columns>
+        </ej:Grid>
 {% endhighlight  %}
+{% highlight c# %}
+		
+     namespace MVCSampleBrowser.Grid
+     {
+       public partial class Scrolling : System.Web.UI.Page
+        {
+         List<Orders> order = new List<Orders>();
+         protected void Page_Load(object sender, EventArgs e)
+         {
+            BindDataSource();
+         }
+         private void BindDataSource()
+          {
+            int orderId = 10000;
+            int empId = 0;
+            for (int i = 0; i < 9; i++)
+              {
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", "France","59 rue de l'Abbaye",51100, 32.38));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster","Brazil","Luisenstr. 48",44087, 11.61));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro","France","2, rue du Commerce",05454-876, 45.34));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon","Germany","Rua do Paço, 67",69004, 37.28));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", "Germany","Hauptstr. 31",8010, 67.00));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève","USA","Starenweg 5",1204, 23.32));
+                orderId += 6;
+                empId += 6;
+              }
+              this.OrdersGrid.DataSource = order;
+              this.OrdersGrid.DataBind();
+          }
+          [Serializable]
+          public class Orders
+          {
+             public Orders()
+             {
 
+             }
+             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             {
+                this.OrderID = OrderId;
+                this.EmployeeID = empId;
+                this.CustomerID = CustomerId;
+                this.ShipCity = shipcity;                
+                this.ShipCountry = shipCountry;
+                this.ShipPostalCode = shippostalcode;
+                this.Freight = freight;
+             }
+             public int OrderID { get; set; }
+             public int EmployeeID { get; set; }
+             public string CustomerID { get; set; }
+             public string ShipCity { get; set; }
+             public string ShipCountry { get; set; }
+             public string ShipAddress { get; set; }
+             public int ShipPostalCode { get; set; }
+             public double Freight { get; set; }
+          }
+        }
+      }
+{% endhighlight  %}
+{% endtabs %} 
 
 The following output is displayed as a result of the above code example.
 
 ![](Scrolling_images/Scrolling_img2.png)
 
+## Set Width and Height in percentage
 
+To specify the `Width` and `Height` property of  `ScrollSettings`  in percentage, by set the percentage value as string.
 
-### To Enable Horizontal Scrolling
+The following code example describes the above behavior.
 
-The Width property in the ScrollSettings is used to enable the horizontal scroll bar in the Grid. The scroll width should be less than the Grid content width. That is, total columns width for enabling horizontal scroll bar.
-
-The Width property can support percentage, pixel and auto values in ScrollSettings. The default value for width in ScrollSettings is auto. The default Grid content width is 100%, when you don’t specify the width to the columns it takes its width value from the Grid content.
-
-When you set Width as auto, it renders Grid with browser calculate value.
-
-The following code example illustrates how to enable horizontal scrolling in the Grid. 
+{% tabs %} 
 {% highlight html %}
-  
 
-
-
-<ej:Grid ID="Grid" runat="server" AllowScrolling="true">
-
-        <ScrollSettings Width="800" />
-
-        <Columns>
-
-            <ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right" Width="100" />
-
-            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" />
-
-            <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="100" />
-
-            <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="100" Format="{0:C}" />
-
-            <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
-
-            <ej:Column Field="ShipName" HeaderText="Ship Name" Width="100" />
-
-            <ej:Column Field="OrderDate" HeaderText="Order Date" TextAlign="Right" Width="100" Format="{0:MM/dd/yyyy}" />
-
-            <ej:Column Field="ShipCountry" HeaderText="Ship Country" Width="100" />
-
-            <ej:Column Field="ShipPostalCode" HeaderText="Postal Code" TextAlign="Right" Width="100" />
-
-            <ej:Column Field="Verified" HeaderText="Verified" Width="100" />
-
-        </Columns>
-
-    </ej:Grid>
-
-
-
+    <ej:Grid ID="OrdersGrid" runat="server" AllowScrolling="true">
+       <ScrollSettings Width="70%" Height="5%" />         
+        <Columns>                
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID" />
+                <ej:Column Field="CustomerID"/>
+                <ej:Column Field="ShipCity"/> 
+                <ej:Column Field="ShipCountry"/>
+                <ej:Column Field="ShipAddress "/>                
+                <ej:Column Field="ShipPostalCode"/>
+                <ej:Column Field="Freight"/>
+            </Columns>
+        </ej:Grid>
 {% endhighlight  %}
+{% highlight c# %}
+		
+     namespace MVCSampleBrowser.Grid
+     {
+       public partial class Scrolling : System.Web.UI.Page
+        {
+         List<Orders> order = new List<Orders>();
+         protected void Page_Load(object sender, EventArgs e)
+         {
+            BindDataSource();
+         }
+         private void BindDataSource()
+          {
+            int orderId = 10000;
+            int empId = 0;
+            for (int i = 0; i < 9; i++)
+              {
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", "France","59 rue de l'Abbaye",51100, 32.38));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster","Brazil","Luisenstr. 48",44087, 11.61));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro","France","2, rue du Commerce",05454-876, 45.34));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon","Germany","Rua do Paço, 67",69004, 37.28));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", "Germany","Hauptstr. 31",8010, 67.00));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève","USA","Starenweg 5",1204, 23.32));
+                orderId += 6;
+                empId += 6;
+              }
+              this.OrdersGrid.DataSource = order;
+              this.OrdersGrid.DataBind();
+          }
+          [Serializable]
+          public class Orders
+          {
+             public Orders()
+             {
+
+             }
+             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             {
+                this.OrderID = OrderId;
+                this.EmployeeID = empId;
+                this.CustomerID = CustomerId;
+                this.ShipCity = shipcity;                
+                this.ShipCountry = shipCountry;
+                this.ShipAddress = shipaddress;
+                this.ShipPostalCode = shippostalcode;
+                this.Freight = freight;
+             }
+             public int OrderID { get; set; }
+             public int EmployeeID { get; set; }
+             public string CustomerID { get; set; }
+             public string ShipCity { get; set; }
+             public string ShipCountry { get; set; }
+             public string ShipAddress { get; set; }
+             public int ShipPostalCode { get; set; }
+             public double Freight { get; set; }
+          }
+        }
+      }
+{% endhighlight  %}
+{% endtabs %} 
 
 The following output is displayed as a result of the above code example.
 
 ![](Scrolling_images/Scrolling_img3.png)
 
+## Set Width as auto
 
+Specify `Width`  property of `ScrollSettings`  as auto, then the scrollbar is rendered only when the grid width exceeds the browser window width.
 
-## Virtual scrolling on demand
+The following code example describes the above behavior.
 
-Virtual scrolling is powerful technique in Grid. It makes Grid more compatible with layout and its loading record performance is high. The AllowVirtualScrolling property in ScrollSettings is used to enable virtual scroll functionality in the Grid. The default value for AllowVirtualScrolling is false.
-
-Essential Asp.NetGrid supports two mode of virtualization. They are,
-
-* Normal Mode
-* Continuous Mode
-
-### Normal Mode
-
-
-This feature allows you to load the Grid with data while scrolling. The following code example illustrates how to set VirtualScrollMode as Normal. 
-
-{% tabs %}
-
+{% tabs %} 
 {% highlight html %}
 
-
-
-<ej:Grid ID="Grid" runat="server" AllowScrolling="True">
-
-      <Columns>                
-
-          <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" />
-
-          <ej:Column Field="CustomerID" HeaderText="Customer ID" />
-
-          <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" />
-
-           <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Format="{0:C}" />
-
-           <ej:Column Field="ShipCity" HeaderText="Ship City" />
-
-           <ej:Column Field="ShipName" HeaderText="Ship Name" TextAlign="Right" />
-
-      </Columns>
-
-      <ScrollSettings AllowVirtualScrolling="True" Height="0" Width="300" VirtualScollMode="Normal"></ScrollSettings>
-
-</ej:Grid>
+     <ej:Grid ID="OrdersGrid" runat="server" AllowScrolling="true">
+       <ScrollSettings Width="auto" Height="300" />        
+        <Columns>                
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID" />
+                <ej:Column Field="CustomerID"/>
+                <ej:Column Field="ShipCity"/> 
+                <ej:Column Field="ShipCountry"/>
+                <ej:Column Field="ShipAddress "/> 
+                <ej:Column Field="ShipAddress"/>               
+                <ej:Column Field="ShipPostalCode"/>
+                <ej:Column Field="Freight"/>
+            </Columns>
+        </ej:Grid>
 {% endhighlight  %}
-
 {% highlight c# %}
+		
+     namespace MVCSampleBrowser.Grid
+     {
+       public partial class Scrolling : System.Web.UI.Page
+        {
+         List<Orders> order = new List<Orders>();
+         protected void Page_Load(object sender, EventArgs e)
+         {
+            BindDataSource();
+         }
+         private void BindDataSource()
+          {
+            int orderId = 10000;
+            int empId = 0;
+            for (int i = 0; i < 9; i++)
+              {
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", "France","59 rue de l'Abbaye",51100, 32.38));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster","Brazil","Luisenstr. 48",44087, 11.61));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro","France","2, rue du Commerce",05454-876, 45.34));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon","Germany","Rua do Paço, 67",69004, 37.28));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", "Germany","Hauptstr. 31",8010, 67.00));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève","USA","Starenweg 5",1204, 23.32));
+                orderId += 6;
+                empId += 6;
+              }
+              this.OrdersGrid.DataSource = order;
+              this.OrdersGrid.DataBind();
+          }
+          [Serializable]
+          public class Orders
+          {
+             public Orders()
+             {
 
+             }
+             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             {
+                this.OrderID = OrderId;
+                this.EmployeeID = empId;
+                this.CustomerID = CustomerId;
+                this.ShipCity = shipcity;                
+                this.ShipCountry = shipCountry;
+                this.ShipAddress=shipaddress;
+                this.ShipPostalCode = shippostalcode;
+                this.Freight = freight;
+             }
+             public int OrderID { get; set; }
+             public int EmployeeID { get; set; }
+             public string CustomerID { get; set; }
+             public string ShipCity { get; set; }
+             public string ShipCountry { get; set; }
+             public string ShipAddress { get; set; }
+             public int ShipPostalCode { get; set; }
+             public double Freight { get; set; }
+          }
+        }
+      }
+{% endhighlight  %}
+{% endtabs %} 
 
-
-
-public partial class _Default : Page
-
-    {       
-
-        protected void Page_Load(object sender, EventArgs e)
-
-        {
-
-            this.Grid.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders";
-
-            this.Grid.DataBind();
-
-        }
-
-}
-
-{% endhighlight %}
-
-{% endtabs %}
-
-The following screenshot displays the Grid while scrolling. The request is sent to the server to fetch data.
+The following output is displayed as a result of the above code example.
 
 ![](Scrolling_images/Scrolling_img4.png)
 
+## Frozen Columns
 
+Specify `FrozenColumns`  property of `ScrollSettings`  to freeze the columns(upto the specified frozenColumns value) at the time of scrolling. Horizontal scrollbar must be enabling while specifying `FrozenColumns`  then only you can scroll and see the remaining columns with freeze pane.
 
-The following screenshot displays the Grid after it is loaded with data.
+N> `AllowScrolling`  must be `true` while specifying `FrozenColumns` .
+
+The following code example describes the above behavior.
+
+{% tabs %} 
+{% highlight html %}
+
+     <ej:Grid ID="OrdersGrid" runat="server" AllowScrolling="true">
+        <ScrollSettings Width="550" Height="300" FrozenColumns="2" />   
+             <Columns>                
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID" />
+                <ej:Column Field="CustomerID"/>
+                <ej:Column Field="ShipCity"/> 
+                <ej:Column Field="ShipCountry"/>
+                <ej:Column Field="ShipAddress"/>               
+                <ej:Column Field="ShipPostalCode"/>
+                <ej:Column Field="Freight"/>
+            </Columns>
+        </ej:Grid>
+{% endhighlight  %}
+{% highlight c# %}
+		
+     namespace MVCSampleBrowser.Grid
+     {
+       public partial class Scrolling : System.Web.UI.Page
+        {
+         List<Orders> order = new List<Orders>();
+         protected void Page_Load(object sender, EventArgs e)
+         {
+            BindDataSource();
+         }
+         private void BindDataSource()
+          {
+            int orderId = 10000;
+            int empId = 0;
+            for (int i = 0; i < 9; i++)
+              {
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", "France","59 rue de l'Abbaye",51100, 32.38));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster","Brazil","Luisenstr. 48",44087, 11.61));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro","France","2, rue du Commerce",05454-876, 45.34));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon","Germany","Rua do Paço, 67",69004, 37.28));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", "Germany","Hauptstr. 31",8010, 67.00));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève","USA","Starenweg 5",1204, 23.32));
+                orderId += 6;
+                empId += 6;
+              }
+              this.OrdersGrid.DataSource = order;
+              this.OrdersGrid.DataBind();
+          }
+          [Serializable]
+          public class Orders
+          {
+             public Orders()
+             {
+
+             }
+             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             {
+                this.OrderID = OrderId;
+                this.EmployeeID = empId;
+                this.CustomerID = CustomerId;
+                this.ShipCity = shipcity;                
+                this.ShipCountry = shipCountry;
+                this.ShipAddress=shipaddress;
+                this.ShipPostalCode = shippostalcode;
+                this.Freight = freight;
+             }
+             public int OrderID { get; set; }
+             public int EmployeeID { get; set; }
+             public string CustomerID { get; set; }
+             public string ShipCity { get; set; }
+             public string ShipCountry { get; set; }
+             public string ShipAddress { get; set; }
+             public int ShipPostalCode { get; set; }
+             public double Freight { get; set; }
+          }
+        }
+      }
+{% endhighlight  %}
+{% endtabs %} 
+
+The following output is displayed as a result of the above code example.
 
 ![](Scrolling_images/Scrolling_img5.png)
 
 
+### Freeze particular columns:
 
-### Continuous Mode
+To freeze selected columns in grid at the time of scrolling, by set `IsFrozen`  property of columns as `true`. `IsFrozen`  columns are rendered first in the grid even the columns index is different while declaring the `Columns` .
 
-You can enable the continuous mode by setting the VirtualScrollMode property as Continuous. In Continuous mode, the data is loaded in Grid when the scrollbar reaches the end. The following code example illustrates how to set the continuous mode in virtualization. 
+The following code example describes the above behavior.
 
-{% tabs %}
-
+{% tabs %} 
 {% highlight html %}
 
-
-
-
-<ej:Grid ID="Grid" runat="server" AllowScrolling="True">
-
-      <Columns>                
-
-          <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" />
-
-          <ej:Column Field="CustomerID" HeaderText="Customer ID" />
-
-          <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" />
-
-           <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Format="{0:C}" />
-
-           <ej:Column Field="ShipCity" HeaderText="Ship City" />
-
-           <ej:Column Field="ShipName" HeaderText="Ship Name" TextAlign="Right" />
-
-      </Columns>
-
-      <ScrollSettings AllowVirtualScrolling="True" Height="0" Width="300" VirtualScollMode="Continuous">
-
-      </ScrollSettings>
-
-</ej:Grid>
-
-{% endhighlight %}
-{% highlight c# %}
-
-
-
-
-public partial class _Default : Page
-
-    {       
-
-        protected void Page_Load(object sender, EventArgs e)
-
-        {
-
-            this. Grid.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders";
-
-            this. Grid.DataBind();
-
-        }
-
-}
+     <ej:Grid ID="OrdersGrid" runat="server" AllowScrolling="true">
+        <ScrollSettings Width="550" Height="300" FrozenColumns="2" />   
+             <Columns>                
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID" />
+                <ej:Column Field="CustomerID"/>
+                <ej:Column Field="Freight" IsFrozen="true"/>
+                <ej:Column Field="OrderDate" Format("{0:dd/MM/yyyy}")/>
+                <ej:Column Field="ShipCity"/> 
+                <ej:Column Field="ShipCountry" IsFrozen="true", Width="100"/>
+                <ej:Column Field="ShipAddress"/>                 
+                <ej:Column Field="ShipPostalCode"/>                
+            </Columns>
+        </ej:Grid>
 {% endhighlight  %}
+{% highlight c# %}
+		
+     namespace MVCSampleBrowser.Grid
+     {
+       public partial class Scrolling : System.Web.UI.Page
+        {
+         List<Orders> order = new List<Orders>();
+         protected void Page_Load(object sender, EventArgs e)
+         {
+            BindDataSource();
+         }
+         private void BindDataSource()
+          {
+            int orderId = 10000;
+            int empId = 0;
+            for (int i = 0; i < 9; i++)
+              {
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", 32.38,"07/04/1996", "France","59 rue de l'Abbaye",51100));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster", 11.61,"07/05/1996","Brazil","Luisenstr. 48",44087));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro", 45.34,"07/09/1996","France","2, rue du Commerce",05454-876));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon", 37.28,"07/11/1996","Germany","Rua do Paço, 67",69004));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", 67.00,"07/15/1996", "Germany","Hauptstr. 31",8010));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève", 23.32,"07/16/1996","USA","Starenweg 5",1204));
+                orderId += 6;
+                empId += 6;
+              }
+              this.OrdersGrid.DataSource = order;
+              this.OrdersGrid.DataBind();
+          }
+          [Serializable]
+          public class Orders
+          {
+             public Orders()
+             {
 
-{% endtabs %}
+             }
+             public Orders(int OrderId, int empId, string CustomerId, double freight,DateTime orderdate,string shipcity, string shipCountry,string shipaddress,int shippostalcode)
+             {
+                this.OrderID = OrderId;
+                this.EmployeeID = empId;
+                this.CustomerID = CustomerId;
+                this.Freight = freight;
+                this.OrderDate = orderdate;
+                this.ShipCity = shipcity;                
+                this.ShipCountry = shipCountry;
+                this.ShipAddress=shipaddress;
+                this.ShipPostalCode = shippostalcode;                
+             }
+             public int OrderID { get; set; }
+             public int EmployeeID { get; set; }
+             public string CustomerID { get; set; }
+             public double Freight { get; set; }
+             public DateTime OrderDate { get; set; }
+             public string ShipCity { get; set; }
+             public string ShipCountry { get; set; }
+             public string ShipAddress { get; set; }
+             public int ShipPostalCode { get; set; }             
+          }
+        }
+      }
+{% endhighlight  %}
+{% endtabs %} 
 
-The following screenshot illustrates the request made to fetch the data after the Grid scrollbar touches the end.
+The following output is displayed as a result of the above code example.
 
 ![](Scrolling_images/Scrolling_img6.png)
 
 
+### Frozen Columns alert Messages:
 
-The following screenshot illustrates the Grid after the data is loaded.
+1. If `AllowScrolling`  is false while using `FrozenColumns`  then "Enable `AllowScrolling`  while using frozen Columns" alert message is thrown.
+2. If `FrozenColumns`  is specified out of the grid column view then "Frozen columns should be in grid view area" alert message is thrown.
+3. Frozen Rows and Columns are not supported the following features
+ Grouping
+ Row Template
+ Detail Template
+ Hierarchy Grid 
+ Batch Editing
+
+If any one of the above feature is enabled along with Frozen Rows and Columns, then "Frozen Columns and Rows are not supported for Grouping, Row Template, Detail Template, Hierarchy Grid and Batch Editing" alert message is thrown.
+
+## Frozen Rows
+
+Specify `FrozenRows`  property of `ScrollSettings`  to freeze rows(upto the specified FrozenRows value) at the time of scrolling. Vertical scrollbar must be enabling while specifying `FrozenRows`  then only you can scroll and see the remaining rows with freeze pane.
+
+N> `AllowScrolling`  must be `true` while specifying `FrozenRows` .
+
+The following code example describes the above behavior.
+
+{% tabs %} 
+{% highlight html %}
+
+      <ej:Grid ID="OrdersGrid" runat="server" AllowScrolling="true">
+        <ScrollSettings Width="550" Height="300" FrozenRows="4" /> 
+          <Columns>                
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID" />
+                <ej:Column Field="CustomerID" />
+                <ej:Column Field="ShipCity"/> 
+                <ej:Column Field="ShipCountry"/>  
+                <ej:Column Field="ShipAddress"/>            
+                <ej:Column Field="ShipPostalCode"/>
+                <ej:Column Field="Freight"/>
+            </Columns>
+        </ej:Grid>
+{% endhighlight  %}
+{% highlight c# %}
+		
+     namespace MVCSampleBrowser.Grid
+     {
+       public partial class Scrolling : System.Web.UI.Page
+        {
+         List<Orders> order = new List<Orders>();
+         protected void Page_Load(object sender, EventArgs e)
+         {
+            BindDataSource();
+         }
+         private void BindDataSource()
+          {
+            int orderId = 10000;
+            int empId = 0;
+            for (int i = 0; i < 9; i++)
+              {
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", "France","59 rue de l'Abbaye",51100, 32.38));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster","Brazil","Luisenstr. 48",44087, 11.61));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro","France","2, rue du Commerce",05454-876, 45.34));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon","Germany","Rua do Paço, 67",69004, 37.28));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", "Germany","Hauptstr. 31",8010, 67.00));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève","USA","Starenweg 5",1204, 23.32));
+                orderId += 6;
+                empId += 6;
+              }
+              this.OrdersGrid.DataSource = order;
+              this.OrdersGrid.DataBind();
+          }
+          [Serializable]
+          public class Orders
+          {
+             public Orders()
+             {
+
+             }
+             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             {
+                this.OrderID = OrderId;
+                this.EmployeeID = empId;
+                this.CustomerID = CustomerId;
+                this.ShipCity = shipcity;                
+                this.ShipCountry = shipCountry;
+                this.ShipAddress=shipaddress;
+                this.ShipPostalCode = shippostalcode;
+                this.Freight = freight;
+             }
+             public int OrderID { get; set; }
+             public int EmployeeID { get; set; }
+             public string CustomerID { get; set; }
+             public string ShipCity { get; set; }
+             public string ShipCountry { get; set; }
+             public string ShipAddress { get; set; }
+             public int ShipPostalCode { get; set; }
+             public double Freight { get; set; }
+          }
+        }
+      }
+{% endhighlight  %}
+{% endtabs %} 
+
+The following output is displayed as a result of the above code example.
 
 ![](Scrolling_images/Scrolling_img7.png)
 
 
+## Touch scroll
 
+In touch  supported devices you can scroll and show the content by swipe left, right, top and bottom. Disable touch scroll by setting `EnableTouchScroll`  property of `ScrollSettings`  as `false`.
+
+The following code example describes the above behavior.
+
+{% tabs %} 
+{% highlight html %}
+
+      <ej:Grid ID="OrdersGrid" runat="server" AllowScrolling="true">
+          <ScrollSettings Width="550" Height="300" EnableTouchScroll="false" /> 
+          <Columns>                
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID" />
+                <ej:Column Field="CustomerID" />
+                <ej:Column Field="ShipCity"/> 
+                <ej:Column Field="ShipCountry"/>
+                <ej:Column Field="ShipAddress"/>                
+                <ej:Column Field="ShipPostalCode"/>
+                <ej:Column Field="Freight"/>
+            </Columns>
+        </ej:Grid>
+{% endhighlight  %}
+{% highlight c# %}
+		
+     namespace MVCSampleBrowser.Grid
+     {
+       public partial class Scrolling : System.Web.UI.Page
+        {
+         List<Orders> order = new List<Orders>();
+         protected void Page_Load(object sender, EventArgs e)
+         {
+            BindDataSource();
+         }
+         private void BindDataSource()
+          {
+            int orderId = 10000;
+            int empId = 0;
+            for (int i = 0; i < 9; i++)
+              {
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", "France","59 rue de l'Abbaye",51100, 32.38));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster","Brazil","Luisenstr. 48",44087, 11.61));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro","France","2, rue du Commerce",05454-876, 45.34));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon","Germany","Rua do Paço, 67",69004, 37.28));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", "Germany","Hauptstr. 31",8010, 67.00));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève","USA","Starenweg 5",1204, 23.32));
+                orderId += 6;
+                empId += 6;
+              }
+              this.OrdersGrid.DataSource = order;
+              this.OrdersGrid.DataBind();
+          }
+          [Serializable]
+          public class Orders
+          {
+             public Orders()
+             {
+
+             }
+             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             {
+                this.OrderID = OrderId;
+                this.EmployeeID = empId;
+                this.CustomerID = CustomerId;
+                this.ShipCity = shipcity;                
+                this.ShipCountry = shipCountry;
+                this.ShipAddress=shipaddress;
+                this.ShipPostalCode = shippostalcode;
+                this.Freight = freight;
+             }
+             public int OrderID { get; set; }
+             public int EmployeeID { get; set; }
+             public string CustomerID { get; set; }
+             public string ShipCity { get; set; }
+             public string ShipCountry { get; set; }
+             public string ShipAddress { get; set; }
+             public int ShipPostalCode { get; set; }
+             public double Freight { get; set; }
+          }
+        }
+      }
+{% endhighlight  %}
+{% endtabs %} 
+
+## Virtual Scrolling
+
+The virtual scrolling support allows you to load data that you require (load data based on page size) without buffering the entire huge database. To enable virtual scrolling by setting `AllowVirtulScrolling`  property of `ScrollSettings`  as `true`. It supports two mode of virtualization. They are,
+
+1. Normal Mode
+2. Continuous Mode
+    
+N> The following features are not supported by virtual scrolling 
+N> 1. Grouping
+N> 2. Frozen Rows 
+N> 3. Cell merging 
+N> 4. Detail template 
+N> 5. Row template 
+N> 6. Hierarchy
+
+### Normal Mode:
+
+It allows you to load the grid with data while scrolling. This can be achieved by setting `VirtualScrollMode`  as `Normal`.
+
+The following code example describes the above behavior.
+
+{% tabs %} 
+{% highlight html %}
+
+      <ej:Grid ID="OrdersGrid" runat="server" AllowScrolling="true">
+        <ScrollSettings Width="550" Height="300" AllowVirtualScrolling="true" VirtualScrollMode="Normal" /> 
+          <Columns>                
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID" />
+                <ej:Column Field="CustomerID" />
+                <ej:Column Field="ShipCity"/> 
+                <ej:Column Field="ShipCountry"/>               
+                <ej:Column Field="ShipPostalCode"/>
+                <ej:Column Field="Freight"/>
+            </Columns>
+        </ej:Grid>
+{% endhighlight  %}
+{% highlight c# %}
+		
+     namespace MVCSampleBrowser.Grid
+     {
+       public partial class Scrolling : System.Web.UI.Page
+        {
+         List<Orders> order = new List<Orders>();
+         protected void Page_Load(object sender, EventArgs e)
+         {
+            BindDataSource();
+         }
+         private void BindDataSource()
+          {
+            int orderId = 10000;
+            int empId = 0;
+            for (int i = 0; i < 9; i++)
+              {
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", "France","59 rue de l'Abbaye",51100, 32.38));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster","Brazil","Luisenstr. 48",44087, 11.61));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro","France","2, rue du Commerce",05454-876, 45.34));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon","Germany","Rua do Paço, 67",69004, 37.28));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", "Germany","Hauptstr. 31",8010, 67.00));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève","USA","Starenweg 5",1204, 23.32));
+                orderId += 6;
+                empId += 6;
+              }
+              this.OrdersGrid.DataSource = order;
+              this.OrdersGrid.DataBind();
+          }
+          [Serializable]
+          public class Orders
+          {
+             public Orders()
+             {
+
+             }
+             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             {
+                this.OrderID = OrderId;
+                this.EmployeeID = empId;
+                this.CustomerID = CustomerId;
+                this.ShipCity = shipcity;                
+                this.ShipCountry = shipCountry;
+                this.ShipAddress=shipaddress;
+                this.ShipPostalCode = shippostalcode;
+                this.Freight = freight;
+             }
+             public int OrderID { get; set; }
+             public int EmployeeID { get; set; }
+             public string CustomerID { get; set; }
+             public string ShipCity { get; set; }
+             public string ShipCountry { get; set; }
+             public string ShipAddress { get; set; }
+             public int ShipPostalCode { get; set; }
+             public double Freight { get; set; }
+          }
+        }
+      }
+{% endhighlight  %}
+{% endtabs %}
+
+The following output is displayed as a result of the above code example.
+
+![](Scrolling_images/Scrolling_img8.png)
+
+
+### Continuous Mode:
+
+In Continuous mode, the data is loaded in grid when the scrollbar reaches the end.  You can enable the continuous mode by setting the `VirtualScrollMode`  property as `Continuous`.
+
+The following code example describes the above behavior.
+
+{% tabs %} 
+{% highlight html %}
+
+      <ej:Grid ID="OrdersGrid" runat="server" AllowScrolling="true">
+        <ScrollSettings Width="550" Height="300" AllowVirtualScrolling="true" VirtualScrollMode="Continuous" /> 
+          <Columns>                
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID" />
+                <ej:Column Field="CustomerID" />
+                <ej:Column Field="ShipCity"/> 
+                <ej:Column Field="ShipCountry"/> 
+                <ej:Column Field="ShipAddress"/>               
+                <ej:Column Field="ShipPostalCode"/>
+                <ej:Column Field="Freight"/>
+            </Columns>
+        </ej:Grid>
+{% endhighlight  %}
+{% highlight c# %}
+		
+     namespace MVCSampleBrowser.Grid
+     {
+       public partial class Scrolling : System.Web.UI.Page
+        {
+         List<Orders> order = new List<Orders>();
+         protected void Page_Load(object sender, EventArgs e)
+         {
+            BindDataSource();
+         }
+         private void BindDataSource()
+          {
+            int orderId = 10000;
+            int empId = 0;
+            for (int i = 0; i < 9; i++)
+              {
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", "France","59 rue de l'Abbaye",51100, 32.38));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster","Brazil","Luisenstr. 48",44087, 11.61));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro","France","2, rue du Commerce",05454-876, 45.34));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon","Germany","Rua do Paço, 67",69004, 37.28));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", "Germany","Hauptstr. 31",8010, 67.00));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève","USA","Starenweg 5",1204, 23.32));
+                orderId += 6;
+                empId += 6;
+              }
+              this.OrdersGrid.DataSource = order;
+              this.OrdersGrid.DataBind();
+          }
+          [Serializable]
+          public class Orders
+          {
+             public Orders()
+             {
+
+             }
+             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             {
+                this.OrderID = OrderId;
+                this.EmployeeID = empId;
+                this.CustomerID = CustomerId;
+                this.ShipCity = shipcity;                
+                this.ShipCountry = shipCountry;
+                this.ShipAddress=shipaddress;
+                this.ShipPostalCode = shippostalcode;
+                this.Freight = freight;
+             }
+             public int OrderID { get; set; }
+             public int EmployeeID { get; set; }
+             public string CustomerID { get; set; }
+             public string ShipCity { get; set; }
+             public string ShipCountry { get; set; }
+             public string ShipAddress { get; set; }
+             public int ShipPostalCode { get; set; }
+             public double Freight { get; set; }
+          }
+        }
+      }
+{% endhighlight  %}
+{% endtabs %}
+
+The following output is displayed as a result of the above code example.
+
+ ![](Scrolling_images/Scrolling_img9.png)

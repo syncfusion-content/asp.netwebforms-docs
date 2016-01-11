@@ -44,9 +44,6 @@ The scripts and style sheets that are mandatorily required to render OlapClient 
 2.	jquery-1.10.2.min.js
 3.	jquery.easing.1.3.min.js
 4.	jquery.globalize.min.js
-5.  rgbcolor.js
-6.  StackBlur.js
-7.  canvg.js
 5.	ej.web.all.min.js
 
 [Click here](http://help.syncfusion.com/js/cdn) to know more about scripts and style sheets available online (CDN Link).
@@ -56,15 +53,11 @@ Scripts and style sheets are referred under the <head> tag in **GettingStarted.a
 {% highlight html %}
 
 <head>
-    <link href="http://cdn.syncfusion.com/13.3.0.7/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"> </script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
-    <script type="text/javascript" src="http://gabelerner.github.io/canvg/rgbcolor.js"></script> 
-    <script type="text/javascript" src="http://gabelerner.github.io/canvg/StackBlur.js"></script>
-    <script type="text/javascript" src="http://gabelerner.github.io/canvg/canvg.js"></script>  
-
-    <script src="http://cdn.syncfusion.com/13.3.0.7/js/web/ej.web.all.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
 </head>
 
 {% endhighlight %}
@@ -77,7 +70,7 @@ Once the widget is placed into the web page, add **‘ScriptManager’** next to
 
 {% highlight html %}
 
-<%@ Register Assembly="Syncfusion.EJ.Olap, Version=13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web.Olap" TagPrefix="ej" %> 
+<%@ Register Assembly="Syncfusion.EJ.Olap, Version={{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web.Olap" TagPrefix="ej" %> 
 
 <html> 
     …… 
@@ -106,14 +99,14 @@ If you are manually entering the code instead of dragging and dropping the OlapC
     <assemblies> 
         …… 
         ……
-        <add assembly="Syncfusion.EJ, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.EJ.Olap, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.Linq.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.Olap.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.Compression.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.Pdf.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.XlsIO.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.DocIO.Base, Version= 13.3450.0.7, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
+        <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.EJ.Olap, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.Linq.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.Olap.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.Compression.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.Pdf.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.XlsIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
     </assemblies>
 </compilation>
     

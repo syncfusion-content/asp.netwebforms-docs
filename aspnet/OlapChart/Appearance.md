@@ -3,7 +3,7 @@ layout: post
 title: Appearance
 description: appearance
 platform: aspnet
-control: OLAP Chart
+control: OlapChart
 documentation: ug
 ---
 
@@ -30,12 +30,13 @@ Following are the build-in themes available in the OlapChart.
 * gradient-saffron
 * gradient-saffrondark
 
-By using the `Theme` property, you can set the desired theme in OlapChart. By default, "Flat Light" theme is applied to OlapChart.
+By using the `Theme` property, you can set the desired theme in OlapChart. By default, **"Flat Light"** theme is applied to OlapChart.
 
 {% highlight html %}
 
 //Using gradient theme
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc"  Theme="GradientLight" ClientIDMode="Static">
+  <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -50,7 +51,8 @@ To customize the OlapChart border, use `Border` property in OlapChart.
 {% highlight html %}
 
 //Customize the chart border and opacity
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc"  Border-Width="2" Border-Color="red" ClientIDMode="Static">
+<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc"  Border-Width="2" Border-Color="#FF0000" ClientIDMode="Static">
+<Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -64,10 +66,9 @@ The OlapChart control background can be customized by using the `Background` pro
 
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     //Setting background for Chart area
-    <ChartArea Background="#cc3333"></ChartArea>
+    <ChartArea Background="skyblue"></ChartArea>
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
-
- </ej:OlapChart>
 
 {% endhighlight %}
 
@@ -81,8 +82,9 @@ By using the `AlternateGridBand` property of the axis, you can provide different
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     //Customizing horizontal grid bands at even position
     <primaryyaxis>
-        <AlternateGridBand Even-Fill="#A7A9AB" Even-Opacity="0.5" />
+        <AlternateGridBand Even-Fill="#A7A9AB" Even-Opacity="0.1" />
     </primaryyaxis>
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}
@@ -97,6 +99,7 @@ You can enable animation by using the `EnableAnimation` property under `CommonSe
 <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
     //Enabling animation in series
     <CommonSeriesOptions EnableAnimation="True" />
+    <Size Width="950px" Height="460px"></Size>
 </ej:OlapChart>
 
 {% endhighlight %}   
