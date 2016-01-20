@@ -128,7 +128,7 @@ The link for those script files are as follows:
 
 <http://cdn.syncfusion.com/js/assets/external/knockout.min.js>
 
-<http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/ej.widget.ko.min.js>
+<http://cdn.syncfusion.com/{{site.releaseversion}}/js/common/ej.widget.ko.min.js>
 
 The following example depicts the way to bind data to the DatePicker control through the Knockout support that enables and populates data to a DatePicker control based on the value set to the other DatePicker control.
 
