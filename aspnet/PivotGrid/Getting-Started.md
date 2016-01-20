@@ -753,11 +753,11 @@ Scripts and style sheets are referred under the <head> tag in Default.aspx page.
 {% highlight html %}    
 
 <head>
-    <link href="http://cdn.syncfusion.com/13.2.0.29/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/linq.js/2.2.0.2/jquery.linq.js" type="text/javascript"></script>
-    <script src="http://cdn.syncfusion.com/13.2.0.29/js/web/ej.web.all.min.js" type="text/javascript"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
     
 </head>    
 
@@ -845,7 +845,12 @@ You can sort a field either to ascending or descending order using the "sortOrde
             <Rows>
                 <ej:Field FieldName="Country" FieldCaption="Country" SortOrder="Descending"></ej:Field>
             </Rows>
-            //...
+            <Columns>
+            <ej:Field FieldName="Product" FieldCaption="Product"></ej:Field>
+        </Columns>
+        <Values>
+            <ej:Field FieldName="Amount" FieldCaption="Amount"></ej:Field>
+        </Values>
          </DataSource>
     <ClientSideEvents Load="onLoad" />
 </ej:PivotGrid>
@@ -869,18 +874,32 @@ Filtering option allows you to specify a set of values that either need to be di
     <DataSource>
     <Rows>
         <ej:Field FieldName="Country" FieldCaption="Country">
-        <FilterItems FilterType="Exclude" Values="United Kingdom"/>
+        <FilterItems FilterType="Exclude"/>
         </ej:Field>
     </Rows>
     <Columns>
         <ej:Field FieldName="Product" FieldCaption="Product">
-        <FilterItems FilmterType="Include" Values="Bike"/>
+        <FilterItems FilterType="Include" />
         </ej:Field>
     </Columns>
-    //..
+    <Values>
+        <ej:Field FieldName="Amount" FieldCaption="Amount"></ej:Field>
+    </Values>
     </DataSource>
     <ClientSideEvents Load="onLoad" />
 </ej:PivotGrid>
+
+{% endhighlight %}
+
+The values for filtering are given in the Default.aspx.cs as shown in the below snippet.
+
+{% highlight html %}
+
+protected void Page_Load(object sender, EventArgs e)
+{
+this.PivotGrid1.Model.DataSource.Rows[0].FilterItems.Values = new List<string>() { "United Kingdom" };
+this.PivotGrid1.Model.DataSource.Columns[0].FilterItems.Values = new List<string>() { "Bike","Car" };
+}
 
 {% endhighlight %}
 
