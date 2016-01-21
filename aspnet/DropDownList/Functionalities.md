@@ -163,7 +163,7 @@ Similarly, you can unselect a single or multiple items by using [unselectItemByV
 
 {% tabs %}
 
-	{% highlight ASPX %}
+	{% highlight html%}
     
         <ej:DropDownList ID="DropDownList1" runat="server" DataTextField="Text" DataValueField="Value" ShowCheckbox="true" SelectedIndex="2"></ej:DropDownList>
         <ej:Button ID="Button1" ClientSideOnClick="unselect" runat="server" Text="unSelect"></ej:Button>
