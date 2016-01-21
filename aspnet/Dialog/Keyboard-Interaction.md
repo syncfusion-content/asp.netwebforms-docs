@@ -1,107 +1,58 @@
 ---
 layout: post
-title: Keyboard Interaction | Dialog | ASP.NET Webforms | Syncfusion
+title: keyboard-interaction
 description: keyboard interaction
-platform: aspnet
-control: Dialog
+platform: js
+control: Control Name undefined
 documentation: ug
 ---
 
-# Keyboard Interaction
+## Keyboard interaction
 
-The Dialog allows you to interact with the keyboard actions instead of mouse actions. All the Dialog actions can be achieved by using Keyboard shortcuts.
-
+You can use Keyboard shortcut keys as an alternative for mouse actions to interact with the Dialog widget. The keyboard interaction will be enabled by default in the Dialog widget. It can be disabled by setting “**AllowKeyboardNavigation**” to false. Please refer the below table for details about short cut keys and its corresponding usage.
 
 <table>
 <tr>
-<th>
-Shortcut Keys</th><th>
-Description</th></tr>
-<tr>
 <td>
-Alt + j	</td><td>
-Focuses the Dialog control.</td></tr>
+Shortcut Key</td><td>
+Usage</td></tr>
 <tr>
 <td>
 Up</td><td>
-Dialog moves up.</td></tr>
+Moves the dialog at upward direction</td></tr>
 <tr>
 <td>
 Down</td><td>
-Dialog moves down.</td></tr>
-<tr>
-<td>
-Right</td><td>
-Dialog moves right.</td></tr>
+Moves the dialog at downward direction</td></tr>
 <tr>
 <td>
 Left</td><td>
-Dialog moves left.</td></tr>
+Moves the dialog at left direction</td></tr>
+<tr>
+<td>
+Right</td><td>
+Moves the dialog at right direction</td></tr>
 <tr>
 <td>
 Esc</td><td>
-Dialog window closes.</td></tr>
+Closes the dialog<br><i><b>Note</b></i><i>: It will work only if “CloseOnEscape” is set to true.</i></td></tr>
+
+<tr>
+<td>
+Ctrl + Up</td><td>
+Reduces the dialog height</td></tr>
+<tr>
+<td>
+Ctrl + Down</td><td>
+ Increases the dialog height</td></tr>
+<tr>
+<td>
+Ctrl + Left</td><td>
+Reduces the dialog width</td></tr>
+<tr>
+<td>
+Ctrl + Right</td><td>
+Increases the dialog width</td></tr>
 </table>
 
-## Configure Keyboard Interaction
-
-The following steps explain how to enable keyboard interaction for Dialog control.
-
-In the ASPX page, add the Dialog control by using the following codes.
-
-{% highlight html %}
-
-
-
-
-
-    <ej:Dialog ID="dialog" runat="server" Width="550" Title="WinRT">
-
-        <DialogContent>
-
-            <div>
-
-                Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications <span>including grid, chart, map, tree map, SSRS report viewer, rich-text editor, pdf viewer, gauges, barcode, editors, and much more.</span>
-
-                It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
-
-            </div>
-
-        </DialogContent>
-
-    </ej:Dialog>
-
-
-
-
-
-{% endhighlight %}
-
-Set the focus key to the Dialog control
-
-{% highlight js %}
-
-
-
-    $(document).on("keydown", function (e)
-
-    {
-
-        if (e.altKey && e.keyCode === 74)
-
-        { // j- key code.
-
-$("#<%=dialog.ClientID%>").focus();
-
-        }
-
-    });
-
-
-
-
-
-{% endhighlight %}
-
-Run the sample and press Alt + j key to focus the Dialog control. You can perform the specified option by using the keyboard shortcuts.
 
