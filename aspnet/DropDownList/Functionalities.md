@@ -85,10 +85,6 @@ N> To retrieve the selected item’s value you can use Value property in code be
 
 {% tabs %}
 
-
-	
-{% endhighlight %}
-
 ### Using indices
 
 You can select a single or more than one item by passing index values to the properties SelectedIndex or SelectedIndices respectively. Index starts from 0 here.
