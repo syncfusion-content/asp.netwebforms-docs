@@ -38,6 +38,8 @@ action</td><td>
 It indicates the action performed in the grid.</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight html %}
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" OnServerAddRow="OrdersGrid_ServerAddRow">
@@ -88,6 +90,8 @@ public partial class _Default : System.Web.UI.Page
     }
     
     {% endhighlight %}
+    
+{% endtabs %}
 	
 ### OnServerBatchEditRow
 
@@ -105,6 +109,8 @@ Description</th></tr>
 batchChanges</td><td>
 It contains the details of the added, modified and deleted records.</td></tr>
 </table>
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -155,7 +161,9 @@ public partial class _Default : System.Web.UI.Page
 
     }
     
-    {% endhighlight %}
+{% endhighlight %}
+
+{% endtabs %}
     
 ### OnServerDeleteRow
 
@@ -177,6 +185,8 @@ It returns the deleted record details.</td></tr>
 action</td><td>
 It indicates the action performed in the grid.</td></tr>
 </table>
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -227,7 +237,9 @@ public partial class _Default : System.Web.UI.Page
 
     }
     
-    {% endhighlight %}
+{% endhighlight %}
+
+{% endtabs %}
     
 ### OnServerEditRow
 
@@ -249,6 +261,8 @@ It returns the edited record details.</td></tr>
 action</td><td>
 It indicates the action performed in the grid.</td></tr>
 </table>
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -299,7 +313,9 @@ public partial class _Default : System.Web.UI.Page
 
     }
     
-    {% endhighlight %}
+{% endhighlight %}
+
+{% endtabs %}
     
 ### OnServerCommandButtonClick
 
@@ -325,6 +341,8 @@ It contains the JSON data of the selected row.</td></tr>
 buttonModel</td><td>
 It contains the model of the ejButton clicked.</td></tr>
 </table>
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -394,6 +412,8 @@ public partial class _Default : System.Web.UI.Page
     }
     
 {% endhighlight %}
+
+{% endtabs %}
     
 ### OnServerRecordClick
 
@@ -415,6 +435,8 @@ It indicates the index of the selected record.</td></tr>
 data</td><td>
 It contains the JSON data of the selected record.</td></tr>
 </table>
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -466,6 +488,8 @@ public partial class _Default : System.Web.UI.Page
     }
     
 {% endhighlight %}
+
+{% endtabs %}
     
 ### OnServerRecordDoubleClick
 
@@ -487,6 +511,8 @@ It indicates the index of the selected record.</td></tr>
 data</td><td>
 It consists of the JSON data of the double clicked record.</td></tr>
 </table>
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -537,7 +563,9 @@ public partial class _Default : System.Web.UI.Page
 
     }
     
-    {% endhighlight %}
+{% endhighlight %}
+
+{% endtabs %}
     
 ### OnServerRowSelected
 
@@ -563,6 +591,8 @@ It consists of the JSON data of the selected record.</td></tr>
 prevRowIndex</td><td>
 It returns the previously selected row index.</td></tr>
 </table>
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -613,7 +643,9 @@ public partial class _Default : System.Web.UI.Page
 
     }
     
-    {% endhighlight %}
+{% endhighlight %}
+
+{% endtabs %}
     
 ### OnServerToolBarClick
 
@@ -655,6 +687,8 @@ It returns the html element of the target item.</td></tr>
 toolbarData</td><td>
 It returns the toolbar model in a dictionary format.</td></tr>
 </table>
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -705,7 +739,9 @@ public partial class _Default : System.Web.UI.Page
 
     }
     
-    {% endhighlight %}
+{% endhighlight %}
+
+{% endtabs %}
     
 ### OnServerExcelExporting
 
@@ -723,6 +759,8 @@ Description</th></tr>
 model</td><td>
 It returns the grid model details.</td></tr>
 </table>
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -776,6 +814,8 @@ public partial class _Default : System.Web.UI.Page
     }
     
 {% endhighlight %}
+
+{% endtabs %}
     
 ### OnServerExcelQueryCellInfo
 
@@ -793,6 +833,8 @@ Description</th></tr>
 object</td><td>
 object of type IRange class from Syncfusion.XlsIO which returns the properties of the IRange class.</td></tr>
 </table>
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -857,6 +899,8 @@ public partial class _Default : System.Web.UI.Page
     }
     
 {% endhighlight %}
+
+{% endtabs %}
     
 ### OnServerExcelRowInfo
 
@@ -874,6 +918,8 @@ Description</th></tr>
 object</td><td>
 object of type IRange class from Syncfusion.XlsIO which returns the properties of the IRange class.</td></tr>
 </table>
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -939,6 +985,8 @@ public partial class _Default : System.Web.UI.Page
     }
     
 {% endhighlight %}
+
+{% endtabs %}
     
 ### OnServerPdfExporting
 
@@ -956,6 +1004,8 @@ Description</th></tr>
 model</td><td>
 It returns the grid model details</td></tr>
 </table>
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -1009,6 +1059,8 @@ public partial class _Default : System.Web.UI.Page
     }
     
 {% endhighlight %}
+
+{% endtabs %}
     
 ### OnServerPdfQueryCellInfo
 
@@ -1026,6 +1078,8 @@ Description</th></tr>
 object</td><td>
 object of type PdfGridCell that returns the various properties of the PdfGridCell class of the Pdf.Grid namespace</td></tr>
 </table>
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -1091,6 +1145,8 @@ public partial class _Default : System.Web.UI.Page
     }
     
 {% endhighlight %}
+
+{% endtabs %}
     
 ### OnServerPdfRowInfo
 
@@ -1108,6 +1164,8 @@ Description</th></tr>
 object</td><td>
 object of type PdfGridRow that returns the various properties of the PdfGridRow class of the Pdf.Grid namespace</td></tr>
 </table>
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -1171,6 +1229,8 @@ public partial class _Default : System.Web.UI.Page
     }
     
 {% endhighlight %}
+
+{% endtabs %}
     
 ### OnServerWordExporting
 
@@ -1188,6 +1248,8 @@ Description</th></tr>
 model</td><td>
 It returns the grid model details.</td></tr>
 </table>
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -1241,6 +1303,8 @@ public partial class _Default : System.Web.UI.Page
     }
     
 {% endhighlight %}
+
+{% endtabs %}
     
 ### OnServerWordQueryCellInfo
 
@@ -1258,6 +1322,8 @@ Description</th></tr>
 object</td><td>
 Object of type WTableCell that returns the properties of the WTableCell Class of the DocIO.DLS namespace</td></tr>
 </table>
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -1321,6 +1387,8 @@ public partial class _Default : System.Web.UI.Page
     }
     
 {% endhighlight %}
+
+{% endtabs %}
     
 ### OnServerWordRowInfo
 
@@ -1338,6 +1406,8 @@ Description</th></tr>
 object</td><td>
 Object of type WTableRow that returns the properties corresponding to the WTableRow class of the DocIO.DLS namespace</td></tr>
 </table>
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -1400,4 +1470,6 @@ public partial class _Default : System.Web.UI.Page
 
     }  
     
-    {% endhighlight %}               	
+    {% endhighlight %}        
+    
+{% endtabs %}
