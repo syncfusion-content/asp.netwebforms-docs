@@ -25,6 +25,7 @@ documentation: ug
         </appSettings>
             
     {% endhighlight %}
+    
     >Refer the [ASP.NET-Getting Started](http://help.syncfusion.com/aspnet/getting-started#manual-integration-of-syncfusion-aspnet-controls-into-the-newexisting-application) Documentation to know further details about necessary DLLs, Script and CSS files.
 
 3. Configure the DropDownList control using smart tag, to add DropDownList items
@@ -68,7 +69,7 @@ The DropDownList can be bounded to both local list data binding like SQLDataSour
 
     ![](Getteing-Started_images/Getteing-Started_img6.jpeg)
 
-    > NOTE Create a connection string in Web.config file using SQL database.
+    > Create a connection string in Web.config file using SQL database.
 
     {% highlight xml %}
         
