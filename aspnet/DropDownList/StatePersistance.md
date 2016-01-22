@@ -50,7 +50,7 @@ The following properties are not included while maintaining DropDownList’s sta
         }
     {% endhighlight %}
     
- {% endtabs %}
+{% endtabs %}
 
 ## Accessing currently stored state
 

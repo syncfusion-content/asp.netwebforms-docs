@@ -56,7 +56,7 @@ N> if you want to showcase the DropDownList with default checked items on data b
         }
     {% endhighlight %}
     
- {% endtabs %}
+{% endtabs %}
 
 ![ ](Checkbox_images/Checkbox_img2.jpeg)
 
@@ -73,17 +73,19 @@ I> “MultiSelectMode” property accepts **Syncfusion.JavaScript.MultiSelectMod
 
 Each checked item’s text is appended to the textbox with delimiter “,” by default. This is enabled by assigning **Syncfusion.JavaScript.MultiSelectModeTypes.Delimiter** (enum) value to MultiSelectMode property. You can customize the delimiter option by using DelimiterChar property.
 
-	{% highlight html %}
-        <ej:DropDownList ID="DropDownList1" runat="server" MultiSelectMode="Delimiter" DelimiterChar="-">
-            <Items>
-                <ej:DropDownListItem Text="ListItem 1" Value="item1"></ej:DropDownListItem>
-                <ej:DropDownListItem Text="ListItem 2" Value="item2"></ej:DropDownListItem>
-                <ej:DropDownListItem Text="ListItem 3" Value="item3"></ej:DropDownListItem>
-                <ej:DropDownListItem Text="ListItem 4" Value="item4"></ej:DropDownListItem>
-                <ej:DropDownListItem Text="ListItem 5" Value="item5"></ej:DropDownListItem>
-            </Items>
-        </ej:DropDownList>
-	{% endhighlight %}
+{% highlight html %}
+    
+    <ej:DropDownList ID="DropDownList1" runat="server" MultiSelectMode="Delimiter" DelimiterChar="-">
+        <Items>
+            <ej:DropDownListItem Text="ListItem 1" Value="item1"></ej:DropDownListItem>
+            <ej:DropDownListItem Text="ListItem 2" Value="item2"></ej:DropDownListItem>
+            <ej:DropDownListItem Text="ListItem 3" Value="item3"></ej:DropDownListItem>
+            <ej:DropDownListItem Text="ListItem 4" Value="item4"></ej:DropDownListItem>
+            <ej:DropDownListItem Text="ListItem 5" Value="item5"></ej:DropDownListItem>
+        </Items>
+    </ej:DropDownList>
+    
+{% endhighlight %}
     
 ![ ](Checkbox_images/Checkbox_img3.jpeg)
 
@@ -91,18 +93,18 @@ Each checked item’s text is appended to the textbox with delimiter “,” by 
 
 When you enable this option in DropDownList control, each checked item’s text is appended to the text box in a box model layout. This is enabled by assigning **Syncfusion.JavaScript.MultiSelectModeTypes.VisualMode** (enum) value to MultiSelectMode property.
 
-	{% highlight html %}
-        
-        <ej:DropDownList ID="DropDownList1" runat="server" MultiSelectMode="VisualMode">
-            <Items>
-                <ej:DropDownListItem Text="ListItem 1" Value="item1"></ej:DropDownListItem>
-                <ej:DropDownListItem Text="ListItem 2" Value="item2"></ej:DropDownListItem>
-                <ej:DropDownListItem Text="ListItem 3" Value="item3"></ej:DropDownListItem>
-                <ej:DropDownListItem Text="ListItem 4" Value="item4"></ej:DropDownListItem>
-                <ej:DropDownListItem Text="ListItem 5" Value="item5"></ej:DropDownListItem>
-            </Items>
-        </ej:DropDownList>
-        
-	{% endhighlight %}
+{% highlight html %}
+    
+    <ej:DropDownList ID="DropDownList1" runat="server" MultiSelectMode="VisualMode">
+        <Items>
+            <ej:DropDownListItem Text="ListItem 1" Value="item1"></ej:DropDownListItem>
+            <ej:DropDownListItem Text="ListItem 2" Value="item2"></ej:DropDownListItem>
+            <ej:DropDownListItem Text="ListItem 3" Value="item3"></ej:DropDownListItem>
+            <ej:DropDownListItem Text="ListItem 4" Value="item4"></ej:DropDownListItem>
+            <ej:DropDownListItem Text="ListItem 5" Value="item5"></ej:DropDownListItem>
+        </Items>
+    </ej:DropDownList>
+    
+{% endhighlight %}
 
 ![ ](Checkbox_images/Checkbox_img4.jpeg)

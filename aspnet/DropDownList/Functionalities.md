@@ -44,7 +44,7 @@ To select an item initially you can pass the item’s value via Value or SelectI
         
     {% endhighlight %}
     
- {% endtabs %}
+{% endtabs %}
 
 ![](Functionalities_images/Functionalities_img1.png)
 
@@ -120,7 +120,7 @@ You can select a single or more than one item by passing index values to the pro
         }
     {% endhighlight %}
     
- {% endtabs %}
+{% endtabs %}
 
 ![](Functionalities_images/Functionalities_img2.png)
 
@@ -155,7 +155,7 @@ I> To use "SelectedIndices" property, you should enable either ShowCheckbox or M
         
     {% endhighlight %}
     
- {% endtabs %}
+{% endtabs %}
 
 ### Unselect items
 
@@ -178,6 +178,7 @@ Similarly, you can unselect a single or multiple items by using [unselectItemByV
         </script>
         
     {% endhighlight %}
+    
     {% highlight c# %}
     
         protected void Page_Load(object sender, EventArgs e)
@@ -199,7 +200,7 @@ Similarly, you can unselect a single or multiple items by using [unselectItemByV
         
     {% endhighlight %}
     
- {% endtabs %}
+{% endtabs %}
 
 ## Grouping
 
@@ -252,7 +253,7 @@ The below given example explains the behavior of grouping with List data binding
         
     {% endhighlight %}
     
- {% endtabs %}
+{% endtabs %}
 
 ![](Functionalities_images/Functionalities_img3.jpeg)
 
@@ -313,7 +314,7 @@ Sorting is enabled in order to display the items alphabetically in either ascend
             public string Text { get; set; }
         }
     
- {% endtabs %}
+{% endtabs %}
 
 I> Virtual scrolling is not supported with Sorting.
 
@@ -325,7 +326,7 @@ Configuring the data items for cascading to the series of DropDownList is demons
 
 {% tabs %}
 
-	{% highlight html %>
+	{% highlight html %}
         
         <div style="width: 400px;">
            <div style="float: left;">
@@ -407,7 +408,7 @@ Configuring the data items for cascading to the series of DropDownList is demons
         }
     {% endhighlight %}
     
- {% endtabs %}
+{% endtabs %}
 
 ![](Functionalities_images/Functionalities_img5.jpeg)
 
@@ -506,7 +507,7 @@ You can also bind the data source to the cascading DropDownList dynamically usin
         }
     {% endhighlight %}
     
- {% endtabs %}
+{% endtabs %}
 
 ![](Functionalities_images/Functionalities_img7.jpeg)
 
@@ -546,7 +547,7 @@ Selects the item in the popup list based on the keyed in value. If the time take
             public string Text { get; set; }
         }
     
- {% endtabs %}
+{% endtabs %}
 
 ![](Functionalities_images/Functionalities_img8.jpeg)
 
@@ -586,6 +587,8 @@ N> Items are filtered based on “contains” filter type by default.
         }
     {% endhighlight %}
     
- {% endtabs %}
+{% endtabs %}
 
 ![](Functionalities_images/Functionalities_img9.jpeg)
+
+I> When VirtualScrolling enabled with searching, then filter will be applied only on the DropDownList items available at the moment.

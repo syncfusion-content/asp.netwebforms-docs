@@ -71,7 +71,7 @@ In the demo, a List data is created with Text, Image, Role and Country which is 
         public string country { get; set; }
     }
     
- {% endtabs %}
+{% endtabs %}
 
 N> Images for this sample are available in (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\samples\web\themes\images<br/>
 

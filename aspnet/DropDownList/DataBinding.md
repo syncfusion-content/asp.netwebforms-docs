@@ -342,7 +342,7 @@ N> The columns are bounded automatically when the fields are specified with the 
         }
     {% endhighlight %}
     
- {% endtabs %}
+{% endtabs %}
 
 
 ![](DataBinding_images/DataBinding_img1.jpeg)
@@ -636,19 +636,20 @@ To bind remote data to the DropDownList, you can assign a service data as an ins
 
 OData is a standardized protocol for creating and consuming data. You can provide the [OData service](http://www.odata.org/) URL directly to the Datasource URL property.
 
-    {% highlight html %}
-        
-        <ej:DropDownList ID="DropDownList1" runat="server" DataTextField="ShipName" DataValueField="ShipCountry"></ej:DropDownList>
-        
-    {% endhighlight %}
-    {% highlight c# %}
-        
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            DropDownList1.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders";
-        }
+{% highlight html %}
+    
+    <ej:DropDownList ID="DropDownList1" runat="server" DataTextField="ShipName" DataValueField="ShipCountry"></ej:DropDownList>
+    
+{% endhighlight %}
 
-    {% endhighlight %}
+{% highlight c# %}
+    
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        DropDownList1.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders";
+    }
+
+{% endhighlight %}
            
 ## Virtual Scrolling 
 
@@ -683,7 +684,7 @@ It loads the data on scrolling the list of items. This can be achieved by settin
         
     {% endhighlight %}
     
- {% endtabs %}
+{% endtabs %}
 
 
 ### Continuous Mode
@@ -708,4 +709,4 @@ N> In both modes, set of items will be fetched based on the count specified in t
         
     {% endhighlight %}
     
- {% endtabs %}
+{% endtabs %}
