@@ -1,0 +1,137 @@
+---
+layout: post
+title: Image and File browser in RichTextEditor control for Syncfusion Essential ASP.NET
+description: Configuring and working with Image and File browser in RichTextEditor  
+platform: ASP.NET
+control: RTE
+documentation: ug
+
+---
+
+# Image and File browser
+
+The editor allows you to manage the images and files using **FileExplorer**. The FileExplorer enables you to insert images from online source as well as local computer where you want to insert the image in your content. The Image and file browser is the ability to upload pictures and link file to the editor. 
+
+## Insert a Image from Online Source
+
+If you want to insert an image from online source like google, ping, etc., you need to enable images tool on the editor’s toolbar. By default, the images tool is open a simple dialog which allows you to inserting an image from online source.
+
+{% highlight html %}
+	
+    <ej:RTE ID="RTE1" ToolsList="images" runat="server">
+        <RTEContent>
+             Description:
+                <p> The Rich Text Editor (RTE) control is an easy to render in
+                client side. Customer easy to edit the contents and get the HTML content for
+                the displayed content. A rich text editor control provides users with a toolbar
+                that helps them to apply rich text formats to the text entered in the text
+                area. </p>
+        </RTEContent>
+        <Tools Images="image">
+        </Tools>
+    </ej:RTE>
+    
+{% endhighlight %}
+
+![](ImageandFilebrowser_images/ImageandFilebrowser_img1.png)
+
+## Insert a Image from Your Computer
+
+Configure the ImageBrowser and FileBrowser property to insert an image from your computer. You can specify the settings required by the FileExplorer for create, read, upload, and destroy the files and images from the explorer. 
+
+{% highlight html %}
+
+    <ej:RTE ID="RTE1" ToolsList="images" runat="server">
+        <RTEContent>
+                Description:
+                <p> The Rich Text Editor (RTE) control is an easy to render in
+                client side. Customer easy to edit the contents and get the HTML content for
+                the displayed content. A rich text editor control provides users with a toolbar
+                that helps them to apply rich text formats to the text entered in the text
+                area. </p>
+        </RTEContent>
+        <Tools Images="image"> </Tools>
+        <ImageBrowser ExtensionAllow="*.png,*.gif,*.jpg,*.jpeg" FilePath="~/FileBrowser/"  AjaxAction="Default.aspx/FileActionDefault"/>
+        <FileBrowser ExtensionAllow="*.png,*.txt,*.jpg,*.docx" FilePath="~/FileBrowser/" AjaxAction="Default.aspx/FileActionDefault"/>
+    </ej:RTE>
+    
+{% endhighlight %}
+
+
+
+{% highlight html %}
+
+    [System.Web.Services.WebMethod]
+        public static object FileActionDefault(string ActionType, string Path, string ExtensionsAllow, string LocationFrom, string LocationTo, string Name, string[] Names, string NewName, string Action, IEnumerable<CommonFileDetails> CommonFiles)
+        {
+            FileExplorerOperations opeartion = new FileExplorerOperations();
+            switch (ActionType)
+            {
+                case "Read":
+                    return (opeartion.Read(Path, ExtensionsAllow));
+                case "CreateFolder":
+                    return (opeartion.CreateFolder(Path, Name));
+                case "Paste":
+                    opeartion.Paste(LocationFrom, LocationTo, Names, Action, CommonFiles);
+                    break;
+                case "Remove":
+                    opeartion.Remove(Names, Path);
+                    break;
+                case "Rename":
+                    opeartion.Rename(Path, Name, NewName, CommonFiles);
+                    break;
+                case "GetDetails":
+                    return (opeartion.GetDetails(Path, Names));
+            }
+            return "";
+        }
+     
+{% endhighlight %}        
+
+![](ImageandFilebrowser_images/ImageandFilebrowser_img2.png)
+
+
+N> FileExplorer component has been implemented and integrated with the editor in Volume 1, 2015 release. For more information about FileExplorer component, see [here](http://helpjs.syncfusion.com/js/fileexplorer/overview#).
+
+## Image Properties
+
+You can set or modify properties of an image using the image dialog. It allows you to add links to images, apply border and additional styles. The editor provides option to specify the alternate text for an image, if the image cannot be displayed.
+
+![](ImageandFilebrowser_images/ImageandFilebrowser_img3.png)
+
+
+## Resize an Image
+
+You can able to resize an image either manually or set the width and height in the image dialog. 
+
+### Resize Manually
+
+You can resize an image by manually select an image, and drag a handle until the image is the desired size. 
+
+![](ImageandFilebrowser_images/ImageandFilebrowser_img4.png)
+
+
+### Set Width and Height
+
+The editor provides you to set the width and height properties to change the size of an image (rather than forcing you to set in style attributes) using ShowDimensions property. By default, the Constrain Proportion checkbox is selected to resize an image to an exact proportion. To apply the exact width and height that you specify into the Height and Width textboxes, uncheck the Constrain Proportions checkbox.
+
+{% highlight html %}
+
+     <ej:RTE ID="RTE1" ToolsList="images" ShowDimensions="true" runat="server">
+        <RTEContent>
+             Description:
+                <p> The Rich Text Editor (RTE) control is an easy to render in
+                client side. Customer easy to edit the contents and get the HTML content for
+                the displayed content. A rich text editor control provides users with a toolbar
+                that helps them to apply rich text formats to the text entered in the text
+                area. </p>
+        </RTEContent>
+        <Tools Images="image">
+
+        </Tools>
+    </ej:RTE>
+{% endhighlight %}
+
+![](ImageandFilebrowser_images/ImageandFilebrowser_img5.png)
+
+
