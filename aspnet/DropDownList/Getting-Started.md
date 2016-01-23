@@ -177,5 +177,5 @@ You can select single or multiple values from DropDownList control. To assign a 
         }
     {% endhighlight %}
 
-{% tabs %}
+{% endtabs %}
 
