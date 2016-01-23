@@ -54,22 +54,25 @@ In the demo, a List data is created with Text, Image, Role and Country which is 
     {% endhighlight %}
     
     {% highlight c# %}
-    protected void Page_Load(object sender, EventArgs e)
-    {
-        List<EmployeeSpecialists> empl = new List<EmployeeSpecialists>();
-        empl.Add(new EmployeeSpecialists { text = "Erik Linden", eimg = "3", desig = "Representative", country = "England" });
-        empl.Add(new EmployeeSpecialists { text = "John Linden", eimg = "6", desig = "Representative", country = "Norway" });
-        empl.Add(new EmployeeSpecialists { text = "Louis", eimg = "7", desig = "Representative", country = "Australia" });
-        empl.Add(new EmployeeSpecialists { text = "Lawrence", eimg = "8", desig = "Representative", country = "India" });
-        selectFolder.DataSource = empl;
-    }
-    public class EmployeeSpecialists
-    {
-        public string text { get; set; }
-        public string eimg { get; set; }
-        public string desig { get; set; }
-        public string country { get; set; }
-    }
+       
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            List<EmployeeSpecialists> empl = new List<EmployeeSpecialists>();
+            empl.Add(new EmployeeSpecialists { text = "Erik Linden", eimg = "3", desig = "Representative", country = "England" });
+            empl.Add(new EmployeeSpecialists { text = "John Linden", eimg = "6", desig = "Representative", country = "Norway" });
+            empl.Add(new EmployeeSpecialists { text = "Louis", eimg = "7", desig = "Representative", country = "Australia" });
+            empl.Add(new EmployeeSpecialists { text = "Lawrence", eimg = "8", desig = "Representative", country = "India" });
+            selectFolder.DataSource = empl;
+        }
+        public class EmployeeSpecialists
+        {
+            public string text { get; set; }
+            public string eimg { get; set; }
+            public string desig { get; set; }
+            public string country { get; set; }
+        }
+    
+    {% endhighlight %}
     
 {% endtabs %}
 
