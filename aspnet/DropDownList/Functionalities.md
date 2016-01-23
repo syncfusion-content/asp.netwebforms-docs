@@ -83,7 +83,7 @@ N> To retrieve the selected item’s value you can use Value property in code be
         }
     {% endhighlight %}
 
-{% tabs %}
+{% endtabs %}
 
 ### Using indices
 
@@ -293,6 +293,7 @@ Sorting is enabled in order to display the items alphabetically in either ascend
 	{% endhighlight %}
     
     {% highlight c# %}
+       
         protected void Page_Load(object sender, EventArgs e)
         {
             List<Data> DropDownData = new List<Data>();
@@ -309,6 +310,8 @@ Sorting is enabled in order to display the items alphabetically in either ascend
             public string Value { get; set; }
             public string Text { get; set; }
         }
+    
+    {% endhighlight %}
     
 {% endtabs %}
 
@@ -542,6 +545,8 @@ Selects the item in the popup list based on the keyed in value. If the time take
             public string Value { get; set; }
             public string Text { get; set; }
         }
+    
+    {% endhighlight %}
     
 {% endtabs %}
 
