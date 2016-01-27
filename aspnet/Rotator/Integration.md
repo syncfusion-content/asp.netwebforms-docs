@@ -155,7 +155,7 @@ The link for those script files are as follows:
 
 [http://cdn.syncfusion.com/js/assets/external/knockout.min.js](http://cdn.syncfusion.com/js/assets/external/knockout.min.js)
 
-[http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.ko.min.js](http://cdn.syncfusion.com/%7b%7b%20site.releaseversion%20%7d%7d/js/common/ej.widget.ko.min.js)
+[http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.ko.min.js](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.ko.min.js)
 
 In the ASPX page, add the following code example that shows the way to bind data to the Rotator through the Knockout support.
 
