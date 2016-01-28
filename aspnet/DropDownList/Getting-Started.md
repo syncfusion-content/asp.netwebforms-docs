@@ -1,783 +1,181 @@
 ---
 layout: post
-title: Getting Started | DropDownList | ASP.NET Webforms | Syncfusion
-description: getting started 
-platform: aspnet
+title: Getting started with DropDownList control for Syncfusion ASP.NET WebForm
+description: To get start with DropDownList by adding references.
+platform: WebForms
 control: DropDownList
 documentation: ug
 ---
 
-# Getting Started 
+# Getting Started
 
-This section explains briefly how to create a DropDownList control in your application by using ASP.NET.
+## Creating your first DropDownList in ASP Web Forms
 
-## Create your first DropDownList in ASP.NET
+1. Create an ASP.Net Web Forms application and add DropDownList control to the Default.aspx page.
 
-In this example, you can learn how to customize the DropDownList in a real-time Voting Selection Scenario of World Cup Football. This helps you to display the groups and its countries in the DropDownList Selection Item. 
+    ![](Getteing-Started_images/Getteing-Started_img3.jpeg)
 
-The following screenshot illustrates the functionality of DropDownList with a Cascading Feature.
+2. Once the control is dragged and dropped into the page the embedded resource will add dependent script and CSS files from Synfusion.EJ.Web assembly and the assembly will be referred from GAC. This will add the follwing appSetting key in web.config file to load resource files.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+    {% highlight xml %}
+        
+        <appSettings>
+                <add key="LoadEJResourcesFromAssembly" value="true"/>
+                <add key="EJResources" value="jsrender:true;jqueryeasing:true;globalize:true;themes:true;"/>
+        </appSettings>
+            
+    {% endhighlight %}
+    
+    >Refer the [ASP.NET-Getting Started](http://help.syncfusion.com/aspnet/getting-started#manual-integration-of-syncfusion-aspnet-controls-into-the-newexisting-application) Documentation to know further details about necessary DLLs, Script and CSS files.
 
+3. Configure the DropDownList control using smart tag, to add DropDownList items
 
+    ![](Getteing-Started_images/Getteing-Started_img4.jpeg)
 
-In the above screenshot, you can select a group from the first DropDownList control. After you select the group, the corresponding countries for that group are listed in the second DropDownList widget.Then, you can select a country and press the Vote option.  
+    Switching from Design view to Source the DropDownList code looks like the below. Synfusion namespace will be registered and control will be intialized from the Syncfusion.EJ.Web namespace tag prefix "ej". The items to DropDownList are added using the DropDownListItem child element under Items.
 
-### Create DropDownList control 
+    {% highlight html %}
 
-The ASP.NET DropDownList control basically renders with built-in features.
+        <ej:DropDownList ID="DropDownList1" runat="server">
+                <Items>
+                    <ej:DropDownListItem ID="DropDownListItem1" runat="server" Text="ListItem 1" Value="item1">
+                    </ej:DropDownListItem>
+                    <ej:DropDownListItem ID="DropDownListItem2" runat="server" Text="ListItem 2" Value="item2">
+                    </ej:DropDownListItem>
+                    <ej:DropDownListItem ID="DropDownListItem3" runat="server" Text="ListItem 3" Value="item3">
+                    </ej:DropDownListItem>
+                    <ej:DropDownListItem ID="DropDownListItem4" runat="server" Text="ListItem 4" Value="item4">
+                    </ej:DropDownListItem>
+                    <ej:DropDownListItem ID="DropDownListItem5" runat="server" Text="ListItem 5" Value="item5">
+                    </ej:DropDownListItem>
+                </Items>
+        </ej:DropDownList>
+            
+    {% endhighlight %}
 
-You can create an ASP.NET Project and add necessary Dll and script with the help of the given [ASP-Getting Started](http://help.syncfusion.com/aspnetmvc/dropdownlist/getting-started ) Documentation.
+4. Execute the code to get the below output
 
-You can add the following code example to the corresponding ASPX page to render the DropDownList.
+    ![](Getteing-Started_images/Getteing-Started_img1.jpeg)
 
+## Populating data
 
+The DropDownList can be bounded to both local list data binding like SQLDataSource, XMLDataSource, ObjectDataSource or LinqDataSource and remote data services. Assign the DataSourceID property with corresponding DataSource ID used and map the corresponding Data fields.
 
+1. Configure the DropDownList control with SQL data source using smart tag.
+
+    ![](Getteing-Started_images/Getteing-Started_img5.jpeg)
+
+2. Assign the values for DropDownList Mapper fields from the properties panel.
+
+    ![](Getteing-Started_images/Getteing-Started_img6.jpeg)
+
+    > Create a connection string in Web.config file using SQL database.
+
+    {% highlight xml %}
+        
+        <connectionStrings>
+            <add name="ConnectionString" connectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\NORTHWND.MDF;Integrated Security=True"
+            providerName="System.Data.SqlClient" />
+        </connectionStrings>
+        
+    {% endhighlight %}
+
+    Switching from Design view to Source the DropDownList code looks like the below with DataSource, DataTextField and DataValueField mapped.
+
+    {% highlight html %}
+        
+            <ej:DropDownList ID="DropDownList1" runat="server" DataMember="DefaultView" DataSourceCachingMode="None" DataSourceID="SqlDataSource1" DataTextField="CustomerID" DataValueField="CustomerID" EnableIncrementalSearch="False" FilterType="Contains" MaxPopupHeight="" MaxPopupWidth="" MultiSelectMode="None" SortOrder="Ascending" VirtualScrollMode="Normal">
+        </ej:DropDownList>
+        <br />
+        
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [CustomerID] FROM [Customers]"></asp:SqlDataSource>
+
+    {% endhighlight %}
+
+3. Execute the code to get the below output 
+
+    ![](Getteing-Started_images/Getteing-Started_img2.jpeg)
+
+## Setting Dimensions
+
+DropDownList dimensions can be set using Width and Height Properties.
+	
 {% highlight html %}
-
-
-
-    <div class="content">
-
-        <div class="control">
-
-            <div class="ball-icon">
-
-            </div>
-
-            <div class="ball-txt" style="">
-
-                WORLD CUP FOOTBALL</div>
-
-            <br />
-
-            <table>
-
-                <tr>
-
-                    <td class="tdcls">
-
-                        <span class="txt">
-
-                            <label>
-
-                                Select Group</label></span>
-
-                    </td>
-
-                    <td class="tdcls">
-
-                        <span class="txt">
-
-                            <label>
-
-                                Select Country</label></span>
-
-                    </td>
-
-                </tr>
-
-                <tr>
-
-                    <td class="tdcls">
-
-                        <ej:DropDownList ID="GroupsList" WatermarkText="group" runat="server" DataTextField="GroupName"></ej:DropDownList>
-
-                                <td class="tdcls">
-
-                                    <ej:DropDownList ID="CountryList" WatermarkText="country" runat="server" DataTextField="CountryName" DataSpriteCSSField="CountryFlag" PopupWidth="200px"></ej:DropDownList>
-
-                        </tr>
-
-            </table>
-
-            <div class="votebox">
-
-                <ej:Button ID="voter" Type="Button" Text="Vote" CssClass="e-btn" runat="server">
-
-                </ej:Button>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
+	
+       <ej:DropDownList ID="DropDownList1" runat="server" Width="300px" Height="50px">
+            <Items>
+                <ej:DropDownListItem ID="DropDownListItem1" runat="server" Text="ListItem 1" Value="item1">
+                </ej:DropDownListItem>
+                <ej:DropDownListItem ID="DropDownListItem2" runat="server" Text="ListItem 2" Value="item2">
+                </ej:DropDownListItem>
+                <ej:DropDownListItem ID="DropDownListItem3" runat="server" Text="ListItem 3" Value="item3">
+                </ej:DropDownListItem>
+                <ej:DropDownListItem ID="DropDownListItem4" runat="server" Text="ListItem 4" Value="item4">
+                </ej:DropDownListItem>
+                <ej:DropDownListItem ID="DropDownListItem5" runat="server" Text="ListItem 5" Value="item5">
+                </ej:DropDownListItem>
+            </Items>
+        </ej:DropDownList>
+	
 {% endhighlight %}
 
-Add the following style section for the DropDownList controls alignment. You can add the following location in the URL path for the background image [http://js.syncfusion.com/UG/Web/Content/football.png](http://js.syncfusion.com/UG/Web/Content/football.png)
+**Setting dimensions to Popup list**
 
-{% highlight css %}
+PopupWidth and PopupHeight can be used to create a fixed size popup list.
 
-         .control
+{% highlight html %}
+    
+        <ej:DropDownList ID="DropDownList1" runat="server" Height="50px" Width="500px" PopupHeight="200px" PopupWidth="300px">
+            <Items>
+                <ej:DropDownListItem ID="DropDownListItem1" runat="server" Text="ListItem 1" Value="item1">
+                </ej:DropDownListItem>
+                <ej:DropDownListItem ID="DropDownListItem2" runat="server" Text="ListItem 2" Value="item2">
+                </ej:DropDownListItem>
+                <ej:DropDownListItem ID="DropDownListItem3" runat="server" Text="ListItem 3" Value="item3">
+                </ej:DropDownListItem>
+                <ej:DropDownListItem ID="DropDownListItem4" runat="server" Text="ListItem 4" Value="item4">
+                </ej:DropDownListItem>
+                <ej:DropDownListItem ID="DropDownListItem5" runat="server" Text="ListItem 5" Value="item5">
+                </ej:DropDownListItem>
+            </Items>
+        </ej:DropDownList>
+        
+{% endhighlight %}
+    
+## Setting and Getting Value
 
+You can select single or multiple values from DropDownList control. To assign a value initially to the DropDownList, you can use <b>Value</b> property.
+
+{% tabs %}
+	
+    {% highlight html %}
+        
+        <ej:DropDownList ID="DropDownList1" runat="server">
+            <Items>
+                <ej:DropDownListItem ID="DropDownListItem1" runat="server" Text="ListItem 1" Value="item1">
+                </ej:DropDownListItem>
+                <ej:DropDownListItem ID="DropDownListItem2" runat="server" Text="ListItem 2" Value="item2">
+                </ej:DropDownListItem>
+                <ej:DropDownListItem ID="DropDownListItem3" runat="server" Text="ListItem 3" Value="item3">
+                </ej:DropDownListItem>
+                <ej:DropDownListItem ID="DropDownListItem4" runat="server" Text="ListItem 4" Value="item4">
+                </ej:DropDownListItem>
+                <ej:DropDownListItem ID="DropDownListItem5" runat="server" Text="ListItem 5" Value="item5">
+                </ej:DropDownListItem>
+            </Items>
+        </ej:DropDownList>
+        <br />
+        <asp:Label runat="server" ID="Label1"></asp:Label><br />
+        <ej:Button runat="server" ID="Button1" OnClick="Button1_Click" Type="Button" Text="Get value"></ej:Button>
+            
+	{% endhighlight %}
+    
+    {% highlight c# %}
+        protected void Button1_Click(object Sender, Syncfusion.JavaScript.Web.ButtonEventArgs e)
         {
-
-            height: 250px;
-
-            width: 400px;
-
-            border: 1px groove;
-
-        }        
-
-        .ball-icon
-
-        {
-
-            display: inline-block;
-
-            background-image: url("http://js.syncfusion.com/UG/Web/Content/football.png");
-
-            background-repeat: no-repeat;
-
-            background-size: contain;
-
-            height: 50px;
-
-            width: 50px;
-
-        }        
-
-        .ball-txt
-
-        {
-
-            display: inline-block;
-
-            font-size: 20px;
-
-            font-weight: bolder;
-
-            height: 50px;
-
-            position: relative;
-
-            text-align: center;
-
-            top: -20px;
-
-        }                
-
-        .votebox
-
-        {
-
-            margin-left: 150px;
-
-            margin-top: 50px;
-
-        }        
-
-        .txt
-
-        {
-
-            display: block;
-
-            margin-bottom: 12px;
-
-        }        
-
-        .tdcls
-
-        {
-
-            width: 200px;
-
+            Label1.Text = "Selected item value is " + DropDownList1.Value;
         }
-
-
-
-{% endhighlight %}
-
-
-
-Run the code to render the following output.
-
-
-
-![](Getting-Started_images/Getting-Started_img2.png)
-
-
-
-### Configure Data Source 
-
-You can configure the DropDownList controls by using online services. Two different online data services for the two DropDownList controls are created. They are as follows, groups’ data service for the group selection DropDownList and countries data service for the country selection DropDownList. Both the data services are referred from the following service location.
-[http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/](http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/)
-
-In the above mentioned scenario, the given data source is mentioned in the Data Source property. In the first and second DropDownList controls, you can mention the Group controls and countries Data Source in the Data Source property respectively. When the Data Source has different field names, you can map the fields with the DataTextField property.
-
-The following code example explains how to configure the Data Source.
-
-{% tabs %}
-
-{% highlight html %}
-
-<!--Use the following codes with in the above Html -->
-
-<tr>
-
-                    <td class="tdcls">
-
-                                <ej:DropDownList ID="GroupsList" WatermarkText="group" Query="ej.Query().from('TeamGroups')" runat="server" DataTextField="GroupName"></ej:DropDownList>
-
-                                <td class="tdcls">
-
-                                    <ej:DropDownList ID="CountryList" WatermarkText="country" Query="ej.Query().from('TeamCountries')" runat="server" DataTextField="CountryName"></ej:DropDownList>                                   
-
-</tr>
-
-
-
-
-
-{% endhighlight %}
-
-
-
-{% highlight c# %}
-
-        protected void Page_Load(object sender, EventArgs e)
-
-        {
-
-            this.GroupsList.DataSource = "http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/";            
-
-            this.CountryList.DataSource = "http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/";
-
-        }
-
-
-
-{% endhighlight %}
+    {% endhighlight %}
 
 {% endtabs %}
-
-Execute the code to render the following output.
-
-![](Getting-Started_images/Getting-Started_img3.png)
-
-![](Getting-Started_images/Getting-Started_img4.png)
-
-
-
-### Configure DropDownList with Sprite Icons
-
-To style the DropDownList popup with the Country flag, you can create the Sprite CSS styles by using the flag icons from the following image source location.  You can add the following location in the URL path for the background image.
-
-[http://js.syncfusion.com/UG/Web/Content/countryFootbal.png](http://js.syncfusion.com/UG/Web/Content/countryFootbal.png)
-
-You can load the spirit image icons for the countries in a DropDownList by adding the following code example in styles section. 
-
-{% tabs %}
-
-{% highlight html %}
-
-<!--Use the following codes with in the above Html -->
-
-<tr>
-
-                            <td class="tdcls">
-
-                                <ej:DropDownList ID="GroupsList" WatermarkText="group" Query="ej.Query().from('TeamGroups')" runat="server" DataTextField="GroupName"></ej:DropDownList>
-
-                                <td class="tdcls">
-
-                                    <ej:DropDownList ID="CountryList" WatermarkText="country" Query="ej.Query().from('TeamCountries')" runat="server" DataTextField="CountryName" DataSpriteCSSField="CountryFlag" PopupWidth="200px"></ej:DropDownList>
-
-                        </tr>
-
-
-
-
-
-{% endhighlight %}
-
-
-
-{% highlight css %}
-
-    .flag
-
-    {
-
-        display: block;
-
-        background-image: url(http://js.syncfusion.com/UG/Web/Content/countryFootbal.png);
-
-        height: 46px;
-
-        width: 70px;
-
-        background-position: center center;
-
-        background-repeat: no-repeat;
-
-    }
-
-    #<%=CountryList.CientID%>_popup_wrapper .e-align
-
-    {
-
-        display: inline-block;
-
-        float: none;
-
-        margin-left: 5px;
-
-        margin-right: 10px;
-
-        vertical-align: middle;
-
-    }
-
-    .flag.algeria
-
-    {
-
-        background-position: 0 0;
-
-    }
-
-
-
-    .flag.argentina
-
-    {
-
-        background-position: 0 -96px;
-
-    }
-
-
-
-    .flag.australia
-
-    {
-
-        background-position: 0 -192px;
-
-    }
-
-
-
-    .flag.belgium
-
-    {
-
-        background-position: 0 -288px;
-
-    }
-
-
-
-    .flag.bosnia
-
-    {
-
-        background-position: 0 -384px;
-
-    }
-
-
-
-    .flag.brazil
-
-    {
-
-        background-position: 0 -480px;
-
-    }
-
-
-
-    .flag.cameroon
-
-    {
-
-        background-position: 0 -576px;
-
-    }
-
-
-
-    .flag.chile
-
-    {
-
-        background-position: 0 -672px;
-
-    }
-
-
-
-    .flag.colombia
-
-    {
-
-        background-position: 0 -768px;
-
-    }
-
-
-
-    .flag.costarica
-
-    {
-
-        background-position: 0 -864px;
-
-    }
-
-
-
-    .flag.croatia
-
-    {
-
-        background-position: 0 -960px;
-
-    }
-
-
-
-    .flag.ecuador
-
-    {
-
-        background-position: 0 -1056px;
-
-    }
-
-
-
-    .flag.england
-
-    {
-
-        background-position: 0 -1152px;
-
-    }
-
-
-
-    .flag.france
-
-    {
-
-        background-position: 0 -1248px;
-
-    }
-
-
-
-    .flag.germany
-
-    {
-
-        background-position: 0 -1344px;
-
-    }
-
-
-
-    .flag.ghana
-
-    {
-
-        background-position: 0 -1440px;
-
-    }
-
-
-
-    .flag.greece
-
-    {
-
-        background-position: 0 -1536px;
-
-    }
-
-
-
-    .flag.honduras
-
-    {
-
-        background-position: 0 -1632px;
-
-    }
-
-
-
-    .flag.iran
-
-    {
-
-        background-position: 0 -1728px;
-
-    }
-
-
-
-    .flag.italy
-
-    {
-
-        background-position: 0 -1824px;
-
-    }
-
-
-
-    .flag.ivoriecote
-
-    {
-
-        background-position: 0 -1920px;
-
-    }
-
-
-
-    .flag.japan
-
-    {
-
-        background-position: -120px 0;
-
-    }
-
-
-
-    .flag.korea
-
-    {
-
-        background-position: -120px -96px;
-
-    }
-
-
-
-    .flag.mexico
-
-    {
-
-        background-position: -120px -192px;
-
-    }
-
-
-
-    .flag.netherlands
-
-    {
-
-        background-position: -120px -288px;
-
-    }
-
-
-
-    .flag.nigeria
-
-    {
-
-        background-position: -120px -384px;
-
-    }
-
-
-
-    .flag.portugal
-
-    {
-
-        background-position: -120px -480px;
-
-    }
-
-
-
-    .flag.russia
-
-    {
-
-        background-position: -120px -576px;
-
-    }
-
-
-
-    .flag.spain
-
-    {
-
-        background-position: -120px -672px;
-
-    }
-
-
-
-    .flag.swiss
-
-    {
-
-        background-position: -120px -768px;
-
-    }
-
-
-
-    .flag.uruguay
-
-    {
-
-        background-position: -120px -864px;
-
-    }
-
-
-
-    .flag.usa
-
-    {
-
-        background-position: -120px -960px;
-
-    }
-
-
-
-
-
-{% endhighlight %}
-
-{% endtabs %}
-
-Run the above code example to render the following DropDownList with Data sources.
-
-![](Getting-Started_images/Getting-Started_img5.png)  
-
-
-
-### Set the Cascading Option 
-
-In the above scenario, you have to select the group in the first DropDownList and the corresponding countries for that group are listed in the country DropDownList. You can achieve this by setting the “cascadeTo” that points the DropDownList, where the data is loaded dynamically. You can disable the second DropDownList till the data is loaded dynamically.
-
-The following code example explains how to set the Cascading Option.
-
-{% highlight html %}
-
-<!--Use the following codes with in the above Html -->
-
-<tr>
-
-    <td class="tdcls">
-
-        <ej:dropdownlist id="GroupsList" watermarktext="group" runat="server" datatextfield="GroupName"
-
-            datavaluefield="GroupId" cascadeto="MainContent_CountryList"></ej:dropdownlist>
-
-    </td>
-
-    <td class="tdcls">
-
-        <ej:dropdownlist id="CountryList" watermarktext="country" runat="server" datatextfield="CountryName"
-
-            datavaluefield="CountryId" dataspritecssfield="CountryFlag" popupwidth="200px"
-
-            enabled="false">
-
-</ej:dropdownlist>
-
-    </td>
-
-</tr>
-
-
-
-
-
-{% endhighlight %}
-
-
-
-Run this code to render the DropDownList with Cascading Option.  
-![](Getting-Started_images/Getting-Started_img6.png) 
-
-
-
-Initially, you can select the group from the popup of the first DropDownList. After you select the option, selected value is loaded. 
-![](Getting-Started_images/Getting-Started_img7.png)
-
-
-
-
-
-Based on the group selection in the first DropDownList, the Data Source in the second DropDownList is loaded and the corresponding Countries are shown on clicking the DropDown button as follows.
-
-![](Getting-Started_images/Getting-Started_img8.png)
-
-
-
-From the “Country” DropDownList, you can select your desired country.
-
-![](Getting-Started_images/Getting-Started_img9.png) 
-
-
-
-### Set the Vote process in the DropDownList Widget
-
-The voting process is done by clicking the Vote button. A button is customized to support the voting process. For more information about the button, you can refer to the following link: <http://help.syncfusion.com/js>
-
-The following code example explains how to set the Vote process in the DropDownList control.
-
-{% tabs %}
-
-{% highlight html %}
-
-<div class="votebox">
-
-                <ej:Button ID="voter" ContentType="TextAndImage" ShowRoundedCorner="true" PrefixIcon="e-uiLight e-userlogin"
-
-                    ClientSideOnClick="selectVoted" Type="Button" Text="Vote" Width="80px" Height="25px"
-
-                    runat="server">
-
-                </ej:Button>
-
-            </div>
-
-
-
-{% endhighlight %}
-
-
-
-{% highlight js %}
-
- function selectVoted() {
-
-        alert("You have voted for the " + $("#<%=CountryList.ClientID%>").val() + " country in " + $("#<%=GroupsList.ClientID%>").val());
-
-    }
-
-
-
-{% endhighlight %}
-
-{% endtabs %}
-
-When you run the above code example, it displays the DropDownList controls. You can select the value and click the Vote button. The button click event is processed and the values are displayed as follows.
-![](Getting-Started_images/Getting-Started_img10.png)
-
-
-
-
 
