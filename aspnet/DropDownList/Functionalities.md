@@ -593,3 +593,68 @@ N> Items are filtered based on “contains” filter type by default.
 ![](Functionalities_images/Functionalities_img9.jpeg)
 
 I> When VirtualScrolling enabled with searching, then filter will be applied only on the DropDownList items available at the moment.
+
+##Validation
+
+You can validate the DropDownList value on form submission using jQuery Validators, by applying “ValidationRules” and “ValidationMessage” to the DropDownList. 
+
+N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
+
+### Validation Rules
+
+The validation rules help you to verify the selected text by adding validation attributes to the input element. This can be set by using ValidationRules property.
+
+### Validation Messages 
+
+You can set your own custom error message by using ValidationMessage property. To display the error message, specify the corresponding annotation attribute followed by the message to display.
+
+N> jQuery predefined error messages to that annotation attribute will be shown when this property is not defined. The below given example explain this behavior of ‘required’ attribute,
+
+When the DropDownList control is rendered, it creates an input hidden element which is used to store the selected items value. Hence, the validation is performed based on the value stored in this hidden element.
+
+Required field and min value validation is demonstrated in the below given example.
+
+{% tabs %}
+
+{% highlight html %}
+
+     <ej:DropDownList ID="DropDownList1" runat="server">
+        <Items>
+            <ej:DropDownListItem ID="DropDownListItem1" runat="server" Text="10" Value="10">
+            </ej:DropDownListItem>
+            <ej:DropDownListItem ID="DropDownListItem2" runat="server" Text="20" Value="20">
+            </ej:DropDownListItem>
+            <ej:DropDownListItem ID="DropDownListItem3" runat="server" Text="30" Value="30">
+            </ej:DropDownListItem>
+            <ej:DropDownListItem ID="DropDownListItem4" runat="server" Text="40" Value="40">
+            </ej:DropDownListItem>
+            <ej:DropDownListItem ID="DropDownListItem5" runat="server" Text="50" Value="50">
+            </ej:DropDownListItem>
+        </Items>
+    </ej:DropDownList>
+    <asp:Button runat="server" ID="Button1" Text="Submit" />
+    
+{% endhighlight %}
+
+{% highlight c# %}
+	
+    protected void Page_Load(object sender, EventArgs e)
+        {
+
+            this.DropDownList1.ValidationMsg = new Dictionary<string, object>
+            {
+                {"required",(object)"* Required"},
+                {"min",(object)"Select > 30"}
+            };
+            this.DropDownList1.ValidationRules = new Dictionary<string, object>
+            {
+                {"required",(object)true},
+                {"min",(object)30}
+            };
+        }
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Functionalities_images/Functionalities_img10.jpeg)
