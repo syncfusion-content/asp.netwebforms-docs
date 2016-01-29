@@ -27,7 +27,7 @@ The editor checks the following settings on validation:
   * Must be specified in lowercase 
   * Proper use of quotation marks around the attributes
   * Must be valid attributes for corresponding HTML element
-  * All the required attributes must be incluced in the HTML element
+  * All the required attributes must be included in the HTML element
   * Accepts the allowed values alone such as true or false.
 * **HTML** **Elements** 
   * Must be in lowercase 

@@ -9,7 +9,7 @@ documentation: ug
 ---
 # Keyboard Support
 
-The editor has full keyboard accessibility that includes shortcuts to open and other actions with toolbar items, drop-down lists, and dialogs. 
+The editor has full keyboard accessibility that includes shortcuts to open and to do other actions with toolbar items, drop-down lists, and dialogs.
 
 <table>
 <tr>

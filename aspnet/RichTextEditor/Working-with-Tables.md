@@ -9,7 +9,7 @@ documentation: ug
 ---
 # Working with Tables
 
-The editor provides tools that make to work with tables in your content. You can add, edit, and remove the table as well as perform other table related tasks.
+The editor provides tools to add tables in your content. You can add, edit, and remove the table as well as perform other table related tasks.
 
 ## Create a Table
 

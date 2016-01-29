@@ -37,7 +37,7 @@ If you want to insert an image from online source like google, ping, etc., you n
 
 ## Insert a Image from Your Computer
 
-Configure the ImageBrowser and FileBrowser property to insert an image from your computer. You can specify the settings required by the FileExplorer for create, read, upload, and destroy the files and images from the explorer. 
+Configure the ImageBrowser and FileBrowser property to insert an image from your computer. You can specify the settings required by the FileExplorer to create, read, upload, and destroy the files and images from the explorer. 
 
 {% highlight html %}
 
@@ -95,18 +95,18 @@ N> FileExplorer component has been implemented and integrated with the editor in
 
 ## Image Properties
 
-You can set or modify properties of an image using the image dialog. It allows you to add links to images, apply border and additional styles. The editor provides option to specify the alternate text for an image, if the image cannot be displayed.
+You can set or modify the properties of an image by using the image dialog. It allows you to add links, apply border and set additional styles to the images. The editor provides an option to specify the alternate text for an image, if the image cannot be displayed.
 
 ![](ImageandFilebrowser_images/ImageandFilebrowser_img3.png)
 
 
 ## Resize an Image
 
-You can able to resize an image either manually or set the width and height in the image dialog. 
+You can resize an image either manually or by setting width and height in the image dialog. 
 
 ### Resize Manually
 
-You can resize an image by manually select an image, and drag a handle until the image is the desired size. 
+You can resize an image manually by selecting an image. And drag the handle until the image is resized to the desired size. 
 
 ![](ImageandFilebrowser_images/ImageandFilebrowser_img4.png)
 

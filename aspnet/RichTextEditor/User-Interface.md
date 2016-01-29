@@ -114,7 +114,7 @@ no<br/></td></tr>
 
 ### Customize Toolbar
 
-You can customize and rearrange items (buttons and dropdowns) by adding, removing, and enabling/disabling on the editor’s toolbar. 
+You can customize and rearrange the items (buttons and dropdowns) by adding, removing, and enabling/disabling on the editor’s toolbar. 
 
 #### Rearrange Group
 
@@ -402,7 +402,7 @@ N> Content editable is fully compatible with latest browsers, to know more detai
 
 ## Footer
 
-This option allows you to specify which footer elements should display at the bottom of the editor. The available footer elements are listed below:
+This option allows you to specify which footer elements should be shown at the bottom of the editor. The available footer elements are listed below:
 
 1. HTML View
 2. HTML Tag Info

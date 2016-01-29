@@ -336,7 +336,7 @@ The validation rules help you to verify the content by adding validation attribu
 You can set your own custom error message by using ValidationMessage property. To display the error message, specify the corresponding annotation attribute followed by the message to display.
 
 
-N> jQuery predefined error messages to that annotation attribute will be shown when this property is not defined. The below given example explain this behavior of 'minWordCount’ attribute,
+N> jQuery predefined error messages to that annotation attribute will be shown when this property is not defined. 
 
 
 When you initialize the RichTextEditor widget, it creates a text area hidden element which is used to store the value. Hence, the validation is performed based on the value stored in this hidden element.
@@ -348,7 +348,7 @@ Required field and minWordCount values validation is demonstrated in the below g
     protected void Page_Load(object sender, EventArgs e)
         {
             RTE1.ValidationRules = new Dictionary<string, object> { { "minWordCount", 15 }, {"Required", true } };
-            RTE1.ValidationMessages = new Dictionary<string, object> { { "minWordCount", "Number of word count does not reach" },{"Required" ,"Please enter the content" }};
+            RTE1.ValidationMessages = new Dictionary<string, object> { { "minWordCount", "A minimum of {10} words is required here." },{"Required" ,"Please enter the content" }};
 
         }
         

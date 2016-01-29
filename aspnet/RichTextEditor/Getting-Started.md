@@ -9,15 +9,15 @@ documentation: ug
 ---
 # Getting Started
 
-This section helps to understand the getting started of RTE control with the step-by-step instruction.
+This section explains the step-by-step instructions to create RichTextEdtior in an ASP.NET web application.
 
 ## Create your First RichTextEditor in ASP.NET
 
-1.	Create an ASP.Net Web Forms application and add RichTextEditor control to the Default.aspx page.
+1.	Create an ASP.NET Web Forms application and add RichTextEditor control to the Default.aspx page.
 
     ![](GettingStarted_images/RTE.png)
 
-2.  Once the control is dragged and dropped into the page the embedded resource will add dependent script and CSS files from Synfusion.EJ.Web assembly and the assembly will be referred from GAC. This will add the follwing appSetting key in web.config file to load resource files.
+2.  Once the control is dragged and dropped into the page,all the dependent scripts and CSS files will be loaded as an embedded resource from Synfusion.EJ.Web. This will add the following appSetting key in web.config file to load resource files.
 
     {% highlight html %}
         
@@ -30,11 +30,11 @@ This section helps to understand the getting started of RTE control with the ste
 
     >Refer the [ASP.NET-Getting Started](http://help.syncfusion.com/aspnet/getting-started#manual-integration-of-syncfusion-aspnet-controls-into-the-newexisting-application) Documentation to know further details about necessary DLLs, Script and CSS files.
 
-3.  Configure the RichTextEditor control using properties panel as well as set the value for the RichTextEditor as below.
+3.  Customize the RichTextEditor control using properties panel as well as set the value for the RichTextEditor as given below.
 
     ![](GettingStarted_images/Property.png)
 
-    Switching from Design view to Source the RichTextEditor code looks like the below. 
+    Switching from Design view to Source to view the RichTextEditor code.  
     
     {% highlight html %}
     
@@ -67,6 +67,8 @@ You can configure the toolbar with the tools as your application requires.
     </ej:RTE>
 	
 {% endhighlight %}
+
+ ![](GettingStarted_images/Toolbar.png)
 
 ## Setting and Getting Content
 
