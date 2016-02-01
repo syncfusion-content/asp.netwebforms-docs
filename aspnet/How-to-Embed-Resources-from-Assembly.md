@@ -69,7 +69,7 @@ And component related scripts will embed dynamically from assembly in your appli
 ##CDN integration with Embedded Resources
 You can get these embedded resources from CDN (Content Delivery Networks) also. To achieve this behaviour you should enable the **EnableCdn** property in ASP script manager control.  Please refer below code snippet:
 
-{% highlight aspx %}
+{% highlight aspx-cs %}
 
       <asp:scriptmanager id="ScriptManager1" runat="server" enablecdn="True">
       </asp:scriptmanager>
@@ -78,7 +78,7 @@ You can get these embedded resources from CDN (Content Delivery Networks) also. 
 
 You can embed the resources from assembly when CDN (Content Delivery Network) is unavailable. To achieve this behaviour you should enable **EnableCdnFallback** property in script manager. Please refer the below code snippet:
 
-{% highlight aspx %}
+{% highlight aspx-cs %}
 
       <asp:ScriptManager runat="server" EnableCdn="True" EnableCdnFallback="True">
       </asp:scriptmanager>
