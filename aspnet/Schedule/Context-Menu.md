@@ -1,286 +1,230 @@
 ---
-layout: post
-title: Context Menu | Schedule | ASP.NET Webforms | Syncfusion
-description: context menu
+title: Schedule - Context Menu	
+description: Default and Custom context menu options for appointments and cells in Scheduler
 platform: aspnet
-control: Schedule
+control: schedule
 documentation: ug
+keywords: context-menu
 ---
-
 # Context Menu
 
-* Schedule control is added with the context menu options that opens when you right-click over the cells or appointments. In addition to the default menu items available, it allows you to add the custom menu items and also the sub menu-items as per your requirement.
+Scheduler provides default context menu options for both appointments as well as work cells. It also allows to define additional custom context menu options.
 
-### contextMenuSettings
+The options that are available under `ContextMenuSettings` are as follows,
 
-* It is a collection that holds the menu items data.
+* **Enable** - Enables/disables the context menu option in Scheduler.
+* **MenuItems** - Contains the sub-menu collections related to both the appointment and cells.
 
-### enable
+## Default Menu Options
 
-* It specifies whether to enable/disable the Context menu options.
+The menu items contains two separate collection based on the appointment and cells. 
 
-### menuItems
+### Appointment
 
-* It holds the appointment and cell related menu and custom-menu options.
+The appointment collection includes the following options. 
 
-### appointment
+<table>
+<tr>
+<td>
+Open Appointment (default)</td></tr>
+<tr>
+<td>
+Delete Appointment (default)</td></tr>
+<tr>
+<td>
+Print Appointment</td></tr>
+<tr>
+<td>
+Categorize</td></tr>
+</table>
 
-* This collection accepts the id, text and parent Id of the menu items that are to be displayed when you right-click the appointments. It can also include custom-menu items.
+### Cells
 
-### cells
+The default options available within the cell collection includes - 
 
-* This collection accepts the id, text and parent Id of the menu items that are to be displayed when you right-click the Schedule cells. It also include custom-menu items.
-
-### Appointment Menu Items
-
-* By default, the appointment menu options are provided with 2 items namely Open Appointment and Delete Appointment. 
-* If you want to customize and use your own custom menu items, then you can replace the appointment menu items with their desired collections as explained in the following code.
-
-
-{% highlight html %}
-
-
-
-<ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014">
-
-<ContextMenuSettings Enable="true">
-
-<MenuItems>
-
-<AppointmentCollection>
-
-<ej:Appointment Id="open" Text="Open Appointment" />
-
-<ej:Appointment Id="delete" Text="Delete Appointment" />
-
-<ej:Appointment Id="custommenu3" Text="Custom menu3" />
-
-<ej:Appointment Id="custommenu4" Text="Custom menu4" />
-
-</AppointmentCollection>
-
-</MenuItems>
-
-</ContextMenuSettings>
-
-<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
-
-</ej:Schedule>
-
-
-
-<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
-
-SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
-
-{% endhighlight %}
-
-Execute the above code to render the following output.
-
-
-
-![](Context-Menu_images/Context-Menu_img1.png)
-
-
-schedule with appointment menu items
-{:.caption }
-
-## Categorize 
-
-* A new default menu item is included in the appointment menu items to support the categorize option through context menu. 
-* The categorize data collection that are passed through the categorizesettings is utilised in rendering the categorize options in the context menu. 
-
-You can refer the following code example to render the categorize options in the context menu.
-
-{% tabs %}
+<table>
+<tr>
+<td>
+New Appointment</td></tr>
+<tr>
+<td>
+New Recurring Appointment</td></tr>
+<tr>
+<td>
+Today</td></tr>
+<tr>
+<td>
+Go to date</td></tr>
+<tr>
+<td>
+Settings (View, TimeMode, Work Hours) </td></tr>
+</table>
+The following code snippet shows how to enable the context menu settings in Scheduler and to make use of it with default available options. 
 
 {% highlight html %}
 
-<ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData">
-
-<ContextMenuSettings Enable="true">
-
-<MenuItems>
-
-<AppointmentCollection>
-
-<ej:Appointment Id="open" Text="Open Appointment" />
-
-<ej:Appointment Id="delete" Text="Delete Appointment" />
-
-<ej:Appointment Id="categorize" Text="Categorize" />
-
-</AppointmentCollection>
-
-</MenuItems>
-
-</ContextMenuSettings>
-
-<CategorizeSettings Enable="true" AllowMultiple="true" Id="id" Color="color" FontColor="fontColor" Text="text">
-
-</CategorizeSettings>
-
-<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description" Categorize="Categorize"/>
-
+<!--Container for ejScheduler widget-->
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014">
+    <ContextMenuSettings Enable="true">
+        <MenuItems>
+            <AppointmentCollection>
+                <ej:Appointment Id="open" Text="Open Appointment" />
+                <ej:Appointment Id="delete" Text="Delete Appointment" />
+            </AppointmentCollection>
+            <CellsCollection>
+                <ej:Cells Id="new" Text="New Appointment" />
+                <ej:Cells Id="recurrence" Text="New recuring Appointment" />
+                <ej:Cells Id="today" Text="Today" />
+                <ej:Cells Id="gotodate" Text="Go to Date" />
+                <ej:Cells Id="settings" Text="Settings"/>
+                <ej:Cells Id="view" Text="view" ParentId="settings"/>
+                <ej:Cells Id="timemode" Text="Time Mode" ParentId="settings"/>
+                <ej:Cells Id="view_Day" Text="Day" ParentId="view"/>
+                <ej:Cells Id="view_Week" Text="Week" ParentId="view"/>
+                <ej:Cells Id="view_Workweek" Text="Workweek" ParentId="view"/>
+                <ej:Cells Id="view_Month" Text="Month" ParentId="view"/>
+                <ej:Cells Id="timemode_Hour12" Text="12 Hours" ParentId="timemode"/>
+                <ej:Cells Id="timemode_Hour24" Text="24 Hours" ParentId="timemode"/>
+                <ej:Cells Id="businesshours" Text="Work Hours" ParentId="settings"/>
+            </CellsCollection>
+        </MenuItems>
+    </ContextMenuSettings>
+    <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule"/>  
 </ej:Schedule>
 
-
-
-<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
-
-SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+<asp:SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings:ScheduleConnectionString %>"
+         SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 
 {% endhighlight %}
 
+N> In agenda view, only the appointment menu items shows up in the context menu options. For default menu items, the Id must be defined with the same value as mentioned in the above code example – as we processed the menus based on this id within our source.
 
 
-{% highlight C# %}
+## Custom Menu Options
 
-public partial class ScheduleController : Controller
+Apart from the default available options, it is also possible to add custom menu options to the context-menu in both the appointment and cell collection.
 
-{
-
-public ActionResult CategorizeOption()
-
-{
-
-// categorize data collection
-
-List<Categorize> CategorizeValue = new List<Categorize>();
-
-CategorizeValue.Add(new Categorize { text = "Blue Category", id = 1, color = "#7499e1", fontColor = "Red" });
-
-CategorizeValue.Add(new Categorize { text = "Green Category", id = 2, color = "#7cce6e", fontColor = "White" });
-
-CategorizeValue.Add(new Categorize { text = "Orange Category", id = 3, color = "#ffaa00", fontColor = "Green" });
-
-
-
-var DataSource = new ScheduleDataDataContext().DefaultSchedules.ToList();
-
-ViewBag.datasource = DataSource;
-
-ViewBag.categorize = CategorizeValue;
-
-return View();
-
-}
-
-public class Categorize
-
-{
-
-public string text { set; get; }
-
-public int id { set; get; }
-
-public string fontColor { set; get; }
-
-public string color { set; get; }
-
-}
-
-}
-
-{% endhighlight %}
-
-{% endtabs %}
-
-* Execute the above code to render the following output with categorized appointments. Also when you right click “Appointment”, the context menu with categorize option is displayed as follows.
-
-![C:/Users/hariprasanths/Desktop/imagess/123/Capture2.PNG](Context-Menu_images/Context-Menu_img2.png)
-
-
-## Cells 
-
-* By default, the cells menu options are provided with 5 items namely New Appointment, New Recurring Appointment, Today, Go to Date and Settings with sub-options for views, time-mode and highlighting business hours. 
-* You can customize and use your own custom menu itemsby replacing the cell menu items with the desired collection as explained in the following code example.
-
+The following code example depicts how **to add the custom menu items** to the appointment and cells collection of the context menu settings.
 
 {% highlight html %}
 
-
-
-
-<ej:Schedule runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014">
-
-<ContextMenuSettings Enable="true">
-
-<MenuItems>
-
-<AppointmentCollection>
-
-<ej:Appointment Id="open" Text="Open Appointment" />
-
-<ej:Appointment Id="delete" Text="Delete Appointment" />
-
-<ej:Appointment Id="custommenu3" Text="Custom menu3" />
-
-<ej:Appointment Id="custommenu4" Text="Custom menu4" />
-
-</AppointmentCollection>
-
-<CellsCollection>
-
-<ej:Cells Id="new" Text="New Appointment" />
-
-<ej:Cells Id="recurrence" Text="New recuring Appointment"/>
-
-<ej:Cells Id="today" Text="Today" />
-
-<ej:Cells Id="gotodate" Text="Go to Date" />
-
-<ej:Cells Id="settings" Text="Settings"/>
-
-<ej:Cells Id="view" Text="view" ParentId="settings"/>
-
-<ej:Cells Id="timemode" Text="Time Mode" ParentId="settings"/>
-
-<ej:Cells Id="view_Day" Text="Day" ParentId="view"/>
-
-<ej:Cells Id="view_Week" Text="Week" ParentId="view"/>
-
-<ej:Cells Id="view_Workweek" Text="Workweek" ParentId="view"/>
-
-<ej:Cells Id="view_Month" Text="Month" ParentId="view"/>
-
-<ej:Cells Id="timemode_Hour12" Text="12 Hours" ParentId="timemode"/>
-
-<ej:Cells Id="timemode_Hour24" Text="24 Hours" ParentId="timemode"/>
-
-<ej:Cells Id="businesshours" Text="Business Hours" ParentId="settings"/>
-
-<ej:Cells Id="custommenu1" Text="Custom Menu1"/>
-
-<ej:Cells Id="custommenu2" Text="Custom Menu2"/>
-
-</CellsCollection>
-
-</MenuItems>
-
-</ContextMenuSettings>
-
-<AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" Description="Description"/>
-
+<!--Container for ejScheduler widget-->
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014">
+    <ContextMenuSettings Enable="true">
+        <MenuItems>
+            <AppointmentCollection>
+                <ej:Appointment Id="open" Text="Open Appointment" />
+                <ej:Appointment Id="delete" Text="Delete Appointment" />
+                <ej:Appointment Id="option1" Text="User Option 1" />
+            </AppointmentCollection>
+            <CellsCollection>
+                <ej:Cells Id="celloption1" Text="Custom Option 1" />
+            </CellsCollection>
+        </MenuItems>
+    </ContextMenuSettings>
+    <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule"/>  
 </ej:Schedule>
 
-
-
-<asp: SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings: ScheduleConnectionString %>"
-
-SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
-
+ <asp:SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings:ScheduleConnectionString %>"
+            SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 
 {% endhighlight %}
 
+N> The **id’s** given for the custom menu items **must be unique** in both the appointment and cells collection. 
 
-Execute the above code to render the following output when you right-click on the cells.
+## Handling Menu Actions
 
+To define specific actions for a click made on the custom menu items, the client-side event `menuItemClick` can be used as depicted in the below code example.
 
+{% highlight html %}
 
-![](Context-Menu_images/Context-Menu_img3.png)
+<!--Container for ejScheduler widget-->
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014" MenuItemClick="onMenuItemClick">
+    <ContextMenuSettings Enable="true">
+        <MenuItems>
+            <AppointmentCollection>
+                <ej:Appointment Id="open" Text="Open Appointment" />
+                <ej:Appointment Id="delete" Text="Delete Appointment" />
+                <ej:Appointment Id="option1" Text="User Option 1" />
+            </AppointmentCollection>
+        </MenuItems>
+    </ContextMenuSettings>
+    <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule"/>  
+</ej:Schedule>
 
+<asp:SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings:ScheduleConnectionString %>"
+            SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+           
+<asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
+    <script type="text/javascript">
+        function onMenuItemClick(args) {
+            //args.events contains information of the clicked menu item.
+            if (args.events.ID == "option1")
+                alert("Custom menu clicked");
+        }
+    </script>
+</asp:Content>
 
-schedule with cells
-{:.caption }
+{% endhighlight %}
+
+Also, it is possible to predict the target on which the right click is made either on the cells or appointments with the use of the event `beforeContextMenuOpen`. The below code example shows how to block the display of context menu when right clicked on the cells by setting **args.cancel** as **true**.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014" BeforeContextMenuOpen="onBeforeContextMenuOpen">
+    <ContextMenuSettings Enable="true">
+        <MenuItems>
+            <AppointmentCollection>
+                <ej:Appointment Id="open" Text="Open Appointment" />
+                <ej:Appointment Id="delete" Text="Delete Appointment" />
+                <ej:Appointment Id="option1" Text="User Option 1" />
+            </AppointmentCollection>
+        </MenuItems>
+    </ContextMenuSettings>
+    <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule"/>  
+</ej:Schedule>
+
+<asp:SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings:ScheduleConnectionString %>"
+            SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+            
+<asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
+    <script type="text/javascript">
+        function onBeforeContextMenuOpen(args) {
+            //args.target –target information to depict either cell/appointment
+            if ($(args.target.target).hasClass("e-workcells,e-monthcells"))
+                args.cancel = true;
+        }
+    </script>
+</asp:Content>
+
+{% endhighlight %}
+
+## Adding Categorize Option
+
+To include the default categorize options within the context menu, it is necessary to enable the `CategorizeSettings` property as shown in the below code example.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014">
+    <ContextMenuSettings Enable="true">
+        <MenuItems>
+            <AppointmentCollection>
+                <ej:Appointment Id="open" Text="Open Appointment" />
+                <ej:Appointment Id="delete" Text="Delete Appointment" />
+                <ej:Appointment Id="categorize" Text="Categorize" />
+            </AppointmentCollection>
+        </MenuItems>
+    </ContextMenuSettings>
+    <CategorizeSettings Enable="true"></CategorizeSettings>
+    <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule"/>  
+</ej:Schedule>
+
+<asp:SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings:ScheduleConnectionString %>"
+            SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+{% endhighlight %}
+
+N> The **Categorize** option must be added to the **Appointment** collections simply with an id "categorize", which displays on right clicking over the appointments.
 
