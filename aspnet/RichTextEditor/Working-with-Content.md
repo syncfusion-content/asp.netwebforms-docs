@@ -154,6 +154,8 @@ N> Some browsers block the clipboard access from JavaScript. If you want to use 
         <Tools Clipboard="cut,copy,paste">               
         </Tools>
     </ej:RTE>
+    
+{% endhighlight %}
 
 ## Persistence
 
