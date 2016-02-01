@@ -52,7 +52,8 @@ EJResources key used to get external scripts and themes that you want to access 
 
 {% endhighlight %}
 
-N> You should enable the ‘LoadEJResourcesFromAssembly’ key before configure necessary scripts and themes in ‘EJResources’ settings.
+N> You should enable the ‘LoadEJResourcesFromAssembly’ key before configure necessary scripts and themes in **EJResources** settings.
+
 N> The jQuery file is excluded from embedded resources list since while creating new project, jQuery script will be referred by default. 
 
 ##What are the resources will embed from assembly?
