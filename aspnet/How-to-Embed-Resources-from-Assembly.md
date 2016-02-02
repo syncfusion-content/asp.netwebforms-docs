@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Embed the resources from assembly
+title: How to Embed the resources from assembly 
 description: Embed the resources from assembly 
 platform: aspnet
 control: General
