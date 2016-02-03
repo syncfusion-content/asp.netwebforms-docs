@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Embed the resources from assembly 
+title: Embed the resources from assembly 
 description: Embed the resources from assembly 
 platform: aspnet
 control: General
@@ -52,9 +52,8 @@ EJResources key used to get external scripts and themes that you want to access 
 
 {% endhighlight %}
 
-N> You should enable the ‘LoadEJResourcesFromAssembly’ key before configure necessary scripts and themes in **EJResources** settings.
-
-N> The jQuery file is excluded from embedded resources list since while creating new project, jQuery script will be referred by default. 
+N> 1. You should enable the ‘LoadEJResourcesFromAssembly’ key before configure necessary scripts and themes in **EJResources** settings.
+N> 2. The jQuery file is excluded from embedded resources list since while creating new project, jQuery script will be referred by default. 
 
 ##What are the resources will embed from assembly?
 
@@ -85,8 +84,6 @@ You can embed the resources from assembly when CDN (Content Delivery Network) is
 
 {% endhighlight %}
 
-N> EnableCdnFallback property is supported from 4.5 and above frameworks.
-
-N> EnableCdnFallback is not applicable for theme file. 
-
-N> Both script and style resources can also be accessed through https (secure connection ) from CDN 
+N> 1. EnableCdnFallback property is supported from 4.5 and above frameworks.
+N> 2. EnableCdnFallback is not applicable for theme file. 
+N> 3. Both script and style resources can also be accessed through https (secure connection ) from CDN 
