@@ -12,7 +12,7 @@ keywords: globalize, localize, localization, globalization
 
 The client-side validation of the fields present within the custom appointment window can be handled before submitting it, by adding appropriate validation classes to each field.
 
-Refer the steps [here](/asp/schedule/customization#appointment-window-customization) and create a sample for Custom Appointment window, before proceeding with the following validations.
+Refer the steps [here](/aspnet/schedule/customization#appointment-window-customization) and create a sample for Custom Appointment window, before proceeding with the following validations.
 
 In the custom appointment window sample, create an additional css class **validation** as mentioned below to add it to the appropriate fields, if the validation of such fields fails.
 
