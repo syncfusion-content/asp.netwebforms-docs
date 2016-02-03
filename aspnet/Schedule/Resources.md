@@ -118,7 +118,7 @@ N> The resource object defined at **first level** within the **Resources** colle
 
 ## Data Binding
 
-The resource data can be bound to the Schedule control through the **ResourceSettings** options available within the **Resources** property. The data-binding can be done either using List data collection or DataManager ([DataManager](aspnet/datamanager/overview)) instance which contains the resources related data.
+The resource data can be bound to the Schedule control through the **ResourceSettings** options available within the **Resources** property. The data-binding can be done either using List data collection or DataManager ([DataManager](`ej.DataManager`)) instance which contains the resources related data.
 
 ### Binding List Data Collection
 
