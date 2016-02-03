@@ -18,7 +18,7 @@ Template is applicable to all the below specified elements of the Scheduler,
 
 ## Appointment Template
 
-The template design that applies on for the Scheduler appointments. The field names that are mapped from the dataSource to the appropriate field properties within the [appointmentSettings](`AppointmentSettings`) can be accessed within the template.
+The template design that applies on for the Scheduler appointments. The field names that are mapped from the dataSource to the appropriate field properties within the `AppointmentSettings` can be accessed within the template.
 
 Apart from the dataSource field names, the template can also access the current view of the Scheduler using the name **View** – which can contain either of the following values in lowercase. 
 
