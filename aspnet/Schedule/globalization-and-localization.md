@@ -138,7 +138,7 @@ The following code example shows how to localize the Schedule control in **fr-FR
 
 N> Refer the **ej.culture.fr-FR.min.js** file in your HTML application and also define the **Locale** property for the Schedule control with the appropriate **culture-code** [**fr-FR**].
 
-For further information on – how to refer the required culture scripts into your application, refer [here](/asp/localization).
+For further information on – how to refer the required culture scripts into your application, refer [here](/aspnet/overview).
 
 ### Localizing Specific Words
 

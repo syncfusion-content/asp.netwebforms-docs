@@ -28,7 +28,7 @@ N> An all-day row is normally visible on the Scheduler, as the `ShowAllDayRow` p
 
 ### Recurrence
 
-Represents an appointment that is created for a certain time interval that occurs repeatedly in a daily, weekly, monthly or yearly basis at the same time interval based on the Recurrence rule. The other available options and validations that can be performed on recurrence appointments can be referred from [here](/asp/schedule/working-with-appointments#recurrence-options).
+Represents an appointment that is created for a certain time interval that occurs repeatedly in a daily, weekly, monthly or yearly basis at the same time interval based on the Recurrence rule. The other available options and validations that can be performed on recurrence appointments can be referred from [here](/aspnet/schedule/working-with-appointments#recurrence-options).
 
 ## CRUD operation 
 
@@ -40,7 +40,7 @@ The appointments can be added/edited in the Scheduler using any one of the follo
 
 * Quick window
 * Default appointment window
-* [Context menu](/asp/schedule/context-menu)
+* [Context menu](/aspnet/schedule/context-menu)
 * Through programmatically
 
 #### Quick Window
