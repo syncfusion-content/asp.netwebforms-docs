@@ -8,71 +8,238 @@ documentation: ug
 ---
 
 # Application Tab
+The Application Tab is used to represent a `Menu` that do some operations, such as File menu to create, open, and print documents. Application Tab classified by `Type` property with the following:
+*	Menu
+*	Backstage
 
-The application menu support is provided in the Ribbon control  ApplicationTab. Use ApplicationTab property to define the application tab with menu. In ApplicationTab definition, Type property defines the application menu and the value is ApplicationMenu,ItemID property to specify ID of UL list for application menu and MenuSettings tag to specify all the members and events of the menu.
+## Application Menu
 
+The Application Menu is similar to traditional file menu options and Syncfusion `ejMenu` control is used internally to render this. To show Application Menu in Ribbon, set the `Type` as `menu` and [`MenuSettings`](http://help.syncfusion.com/aspnet/menu/getting-started) to customize properties of `ejMenu`.
 
+### Create Using Template
+
+Set the UL element `Id` to `MenuItemID` property to create Application Menu and it will acts as template to render menu.
 
 {% highlight html %}
 
-
-
-
-
-<ej:Ribbon ID="Ribbon" runat="server" Width="800px”>
-
-<ApplicationTab MenuItemID="menu" Type="Menu">
-
-<MenuSettings OpenOnClick="false"></MenuSettings>
-
-</ApplicationTab>
-
-<RibbonTabs>
-
-<ej:RibbonTab Id="home" Text="HOME">
-
-<TabGroupCollection>
-
-<ej:TabGroup Text="CustomControls" Type="custom" AlignType="Columns" ContentID="Contents">
-
-</ej:TabGroup>
-
-</TabGroupCollection>
-
-</ej:RibbonTab>
-
-</RibbonTabs>
-
-</ej:Ribbon>
-
-
-
-<ul id="menu">
-
-<li><a>FILE</a>
-
-<ul>
-
-<li><a>New</a></li>
-
-<li><a>Open</a></li>
-
-</ul>
-
-</li>
-
-</ul>
-
-<div id="Contents">Custom control</div>
-
-
+	<ej:Ribbon ID="Ribbon" runat="server" Width="100%">
+		<ApplicationTab MenuItemID="ribbonmenu" Type="Menu">
+			<MenuSettings OpenOnClick="false"></MenuSettings>
+		</ApplicationTab>
+		<RibbonTabs>
+			<ej:RibbonTab Id="home1" Text="HOME">
+				<TabGroupCollection>
+					<ej:TabGroup Text="New" AlignType="Columns">
+						<ContentCollection>
+							<ej:TabContent>
+								<ContentGroupCollection>
+									<ej:ContentGroup Id="new1" Text="New" Type="Custom" ContentID="Contents">
+	
+									</ej:ContentGroup>
+								</ContentGroupCollection>
+							</ej:TabContent>
+						</ContentCollection>
+					</ej:TabGroup>
+				</TabGroupCollection>
+			</ej:RibbonTab>
+		</RibbonTabs>
+	</ej:Ribbon>
+	<!--UL template to render menu-->
+	<ul id="ribbonmenu">
+		<li><a>FILE</a>
+			<ul>
+				<li><a>New</a></li>
+				<li><a>Open</a></li>
+	
+			</ul>
+		</li>
+	</ul>
+	<div id="Contents">Custom control</div>
 
 {% endhighlight %}
 
 
-
-The following screenshot illustrates Ribbon with application menu.
-
 ![](Application-Tab_images/Application-Tab_img1.png)
 
+ ### Binding Data Source
+ 
+ Application Menu can be rendered using JSON Data Source. Please refer ['this'](http://help.syncfusion.com/aspnet/menu/data-binding) page to set data source to `ejMenu`.
+ 
+{% highlight html %}
+
+	<ej:Ribbon ID="Ribbon" runat="server" Width="100%" AllowResizing="true" Create="createControl">
+		<ApplicationTab MenuItemID="ribbonmenu1" Type="Menu">
+			<MenuSettings OpenOnClick="false" />
+		</ApplicationTab>
+		<RibbonTabs>
+			<ej:RibbonTab Id="home" Text="HOME">
+				<TabGroupCollection>
+					<ej:TabGroup Text="Font">
+						<ContentCollection>
+							<ej:TabContent>
+								<ContentGroupCollection>
+									<ej:ContentGroup id="bold" Text="Bold" IsBig="true">
+										<ButtonSettings ContentType="ImageOnly" PrefixIcon="e-ribbon e-bold" />
+									</ej:ContentGroup>
+								</ContentGroupCollection>
+							</ej:TabContent>
+						</ContentCollection>
+					</ej:TabGroup>
+				</TabGroupCollection>
+			</ej:RibbonTab>
+		</RibbonTabs>
+	</ej:Ribbon>
+	
+	<ul id="ribbonmenu1">
+	</ul>
+	
+	<script type="text/javascript">
+		var data = [{
+			id: 1,
+			text: "File",
+			parentId: null
+		}, {
+			id: 11,
+			parentId: 1,
+			text: "Open"
+		}, {
+			id: 12,
+			parentId: 1,
+			text: "Save"
+		}, {
+			id: 121,
+			parentId: 12,
+			text: "Save As"
+		}, {
+			id: 122,
+			parentId: 12,
+			text: "Save All"
+		}];
+		$(function() {
+			$("#ribbonmenu1").ejMenu({
+				fields: {
+					dataSource: data,
+					id: "id",
+					parentId: "parentId",
+					text: "text"
+				}
+			})
+		});
+	</script>
+
+{% endhighlight %}
+
+![](Application-Tab_images/Application-Tab_img2.png)
+
+## Backstage Page
+
+The Backstage page is where documents and related data of those can be managed, such as Create, Save and other information.
+
+The Backstage page has a feature to add custom Control in left side of the page which contains menu items and the right side contains corresponding user controls. 
+
+You can set Application Tab `Type` as `backstage` and set `Id` , `Text` to backstage items. Backstage `Pages` can be added with required `ItemType` and `ContentID` as template id to render template into Backstage. 
+
+Separator between Backstage items can be enabled by setting `EnableSeparator` as true. Width of back stage side header can be customized using `HeaderWidth`, If not set based on content given width will be considered.
+
+To render the Ribbon with the Backstage page, refer to the following code snippet. 
+
+{% highlight html %}
+	
+	<ej:Ribbon ID="Ribbon" runat="server" Width="800px">
+		<ApplicationTab Type="Backstage">
+			<BackstageSettings HeaderWidth="125" Text="FILE" Height="360" Width="600">
+				<PageCollection>
+					<ej:BackstagePage Id="new1" Text="New" ContentID="newCon" />
+					<ej:BackstagePage Id="close" Text="Close" EnableSeparator="true" ItemType="Button" />
+					<ej:BackstagePage Id="account" Text="Office Account" ContentID="accountCon" />
+				</PageCollection>
+			</BackstageSettings>
+		</ApplicationTab>
+		<RibbonTabs>
+			<ej:RibbonTab Id="home1" Text="HOME">
+				<TabGroupCollection>
+					<ej:TabGroup Text="Save" AlignType="Columns">
+						<ContentCollection>
+							<ej:TabContent>
+								<ContentGroupCollection>
+									<ej:ContentGroup Text="New" Type="Custom" ContentID="ribbonContent">
+									</ej:ContentGroup>
+								</ContentGroupCollection>
+							</ej:TabContent>
+						</ContentCollection>
+					</ej:TabGroup>
+				</TabGroupCollection>
+			</ej:RibbonTab>
+		</RibbonTabs>
+	</ej:Ribbon>
+	<div id="newCon">
+		<table>
+			<tr>
+				<td>
+					<button id="btn1" class="e-bsnewbtnstyle">Blank WorkBook</button></td>
+			</tr>
+		</table>
+	</div>
+	<div id="accountCon">
+		<div class="e-userDiv">
+			<span>User Information</span>
+			<div>
+				<div class="e-accuser e-newpageicon"></div>
+				<div class="e-userCon">
+					<div>user</div>
+					<div>xyz@syncfusion.com</div>
+				</div>
+			</div>
+		</div>
+		<a href="#">Sign out</a>
+	</div>
+	<div id="ribbonContent">Home control</div>
+	<script type="text/javascript">
+		$("#btn1").ejButton({
+			size: "large",
+			height: 200,
+			width: 205,
+			contentType: "textandimage",
+			imagePosition: "imagetop",
+			prefixIcon: "e-blank e-infopageicon"
+		});
+	</script>
+	<style type="text/css">
+		.e-accuser {
+			background-image: ("../Content/ej/web/common-images/ribbon/User.jpg");
+		}
+		
+		.e-blank {
+			background-image: url("../Content/ej/web/common-images/ribbon/blank.png");
+		}
+		
+		.e-infopageicon {
+			background-repeat: no-repeat;
+			height: 150px;
+			width: 198px;
+		}
+		
+		.e-newpageicon {
+			background-repeat: no-repeat;
+			height: 42px;
+			width: 42px;
+		}
+		
+		.e-bspagestyle {
+			line-height: 0;
+			font-size: 30px;
+		}
+		
+		.e-ribbon .e-ribbonbackstagepage .e-bsnewbtnstyle {
+			color: #212121;
+			background: #fdfdfd;
+			margin: 20px;
+		}
+</style>
+
+{% endhighlight %}
+
+![](Application-Tab_images/Application-Tab_img3.png)
+
+N> _ Height & width of backstage can be set using `Height` and `Width`, if these are not set, Ribbon’s Height & Width will be considered. _
 

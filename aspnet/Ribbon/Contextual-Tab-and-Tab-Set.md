@@ -7,146 +7,162 @@ control: Ribbon
 documentation: ug
 ---
 
-# Contextual Tab and Tab Set
+# Contextual Tabs
 
-You can add Contextual Tabs and Tab Set in the Ribbon control. In ContextualTabs tag, use RibbonTab tag to add contextual tabs and contextual tab set. In ContextualTab tag, use BackgroundColor property to apply background color to the Contextual Tabs and Tab Set. Use BorderColor property to apply border color to the Contextual Tabs and Tab Set.
-
-
+Contextual Tabs are collection of Tabs that extended styling and can be shown based on some criteria. Contextual Tabs can be added like `RibbonTabs` including TabGroup and TabContent section. You can set `BackGroundColor` and `BorderColor` to highlight them as Tab set
 
 {% highlight html %}
 
-
-
-
-<ej:Ribbon ID="Ribbon" runat="server" Width="800px">
-
-        <ApplicationTab MenuItemID="menu" Type="Menu">
-
-            <MenuSettings OpenOnClick="false"></MenuSettings>
-
-        </ApplicationTab>
-
-        <RibbonTabs>
-
-            <ej:RibbonTab Id="home" Text="HOME">
-
-                <TabGroupCollection>
-
-                    <ej:TabGroup Text="CustomControls" Type="custom" AlignType="Columns" ContentID="Contents">
-
-                    </ej:TabGroup>
-
-                </TabGroupCollection>
-
-            </ej:RibbonTab>
-
-        </RibbonTabs>
-
-        <ContextualTabs>
-
-            <ej:ContextualTab BackgroundColor="#FCFBEB" BorderColor="#F2CC1C">
-
-                <RibbonTabCollection >
-
-                    <ej:RibbonTab Id="Design" Text="DESIGN">
-
-                        <TabGroupCollection>
-
-                            <ej:TabGroup ContentID="contextualTab" Text="Table Style Options" Type="custom">
-
-                            </ej:TabGroup>
-
-                        </TabGroupCollection>
-
-                    </ej:RibbonTab>
-
-                </RibbonTabCollection >
-
-            </ej:ContextualTab>
-
-            <ej:ContextualTab BackgroundColor="blue" BorderColor="lightblue">
-
-                <RibbonTabCollection >
-
-                    <ej:RibbonTab Id="Tabset1" Text="TABSET1">
-
-                        <TabGroupCollection>
-
-                            <ej:TabGroup ContentID="contextualTabset1" Text="Tabset1 Styles" Type="custom">
-
-                            </ej:TabGroup>
-
-                        </TabGroupCollection>
-
-                    </ej:RibbonTab>
-
-                    <ej:RibbonTab Id="Tabset2" Text="TABSET2">
-
-                        <TabGroupCollection>
-
-                            <ej:TabGroup ContentID="contextualTabset2" Text="Tabset2 Styles" Type="custom">
-
-                            </ej:TabGroup>
-
-                        </TabGroupCollection>
-
-                    </ej:RibbonTab>
-
-                </RibbonTabCollection >
-
-            </ej:ContextualTab>
-
-
-
-        </ContextualTabs>
-
-    </ej:Ribbon>
-
-
-
-   <ul id="menu">
-
-        <li><a>FILE</a>
-
-            <ul>
-
-                <li><a>New</a></li>
-
-                <li><a>Open</a></li>
-
-            </ul>
-
-        </li>
-
-    </ul>
-
-    <div id="Contents">Custom control</div>
-
-    <div id="contextualTab">
-
-        <button id="contextualBtn">Contextual Tab</button>
-
-    </div>
-
-    <div id="contextualTabset1">
-
-        <button id="contextualTabsetBtn1">Contextual Tabset1</button>
-
-    </div>
-
-    <div id="contextualTabset2">
-
-        <button id="contextualTabsetBtn2">Contextual Tabset2</button>
-
-    </div>
-
-
+	<ej:Ribbon ID="Ribbon" runat="server" Width="800px">
+	
+		<ApplicationTab MenuItemID="menu" Type="Menu">
+	
+			<MenuSettings OpenOnClick="false"></MenuSettings>
+	
+		</ApplicationTab>
+	
+		<RibbonTabs>
+	
+			<ej:RibbonTab Id="home" Text="HOME">
+	
+				<TabGroupCollection>
+	
+					<ej:TabGroup Text="CustomControls" Type="custom" AlignType="Columns" ContentID="Contents">
+	
+					</ej:TabGroup>
+	
+				</TabGroupCollection>
+	
+			</ej:RibbonTab>
+	
+		</RibbonTabs>
+	
+		<ContextualTabs>
+	
+			<ej:ContextualTab BackgroundColor="#FCFBEB" BorderColor="#F2CC1C">
+	
+				<RibbonTabCollection>
+	
+					<ej:RibbonTab Id="Design" Text="DESIGN">
+	
+						<TabGroupCollection>
+	
+							<ej:TabGroup ContentID="design" Text="Table Style Options" Type="custom">
+	
+							</ej:TabGroup>
+	
+						</TabGroupCollection>
+	
+					</ej:RibbonTab>
+	
+				</RibbonTabCollection>
+	
+			</ej:ContextualTab>
+	
+			<ej:ContextualTab BackgroundColor="blue" BorderColor="lightblue">
+	
+				<RibbonTabCollection>
+	
+					<ej:RibbonTab Id="Tabset1" Text="TABSET1">
+	
+						<TabGroupCollection>
+	
+							<ej:TabGroup ContentID="headings" Text="Tabset1 Styles" Type="custom">
+	
+							</ej:TabGroup>
+	
+						</TabGroupCollection>
+	
+					</ej:RibbonTab>
+	
+					<ej:RibbonTab Id="Tabset2" Text="TABSET2">
+						
+						<TabGroupCollection>
+						
+							<ej:TabGroup>
+								
+								<ContentCollection>
+									
+									<ej:TabContent>
+										
+										<ContentGroupCollection>
+											
+											<ej:ContentGroup Id="uppercase1" Text="uppercase">
+												<ButtonSettings ContentType="ImageOnly" Type="Button" PrefixIcon="e-ribbon e-uppercase" />
+											
+											</ej:ContentGroup>
+											
+											<ej:ContentGroup Id="lowercase1" Text="Lower Case">
+												<ButtonSettings ContentType="ImageOnly" Type="Button" PrefixIcon="e-ribbon e-lowercase" />
+											
+											</ej:ContentGroup>
+										
+										</ContentGroupCollection>
+									
+									</ej:TabContent>
+								
+								</ContentCollection>
+							
+							</ej:TabGroup>
+	
+						</TabGroupCollection>
+	
+					</ej:RibbonTab>
+	
+				</RibbonTabCollection>
+	
+			</ej:ContextualTab>
+	
+		</ContextualTabs>
+	
+	</ej:Ribbon>
+	
+	<ul id="menu">
+	
+		<li><a>FILE</a>
+	
+			<ul>
+	
+				<li><a>New</a></li>
+	
+				<li><a>Open</a></li>
+	
+			</ul>
+	
+		</li>
+	
+	</ul>
+	
+	<div id="Contents">Custom Control</div>
+	<div id="headings" class="e-headings">
+		<div>
+			<p>AaBbCcDd</p>
+			<p>No Spacing</p>
+		</div>
+		<div>
+			<p class="e-strong">AaBbCcDd</p>
+			<p>Strong</p>
+		</div>
+		<div>
+			<p class="e-emphasis">AaBbCcDd</p>
+			<p>Emphasis</p>
+		</div>
+	</div>
+	<table id="design" class="e-designtablestyle">
+		<tr>
+			<td>
+				<input type="checkbox" id="Check2" />
+				<label for="Check2">First Column</label>
+			</td>
+			<td>
+				<input type="checkbox" id="check4" checked="checked" />
+				<label for="check4">Total Row</label>
+			</td>
+		</tr>
+	</table>
 
 {% endhighlight %}
 
-
-
-The following screenshot illustrates Ribbon with Contextual Tabs and Tab Set.
 
 ![](Contextual-Tab-and-Tab-Set_images/Contextual-Tab-and-Tab-Set_img1.png)
 
