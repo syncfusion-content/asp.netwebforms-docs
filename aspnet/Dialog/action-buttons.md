@@ -22,7 +22,7 @@ The Dialog widget provides the following action buttons.
 
 5. Collapse/Expand
 
-You can display only the necessary buttons in the Dialog widget by configuring the “ActionButtons” property.
+You can display only the necessary buttons in the Dialog widget by configuring the `ActionButtons` property.
 
 {% highlight html %}
 

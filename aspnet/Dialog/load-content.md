@@ -20,7 +20,7 @@ Also, we can render the Dialog widget content through the following ways.
 
 3. Request image content
 
-This settings can be specified through “ContentType” property.
+This settings can be specified through `ContentType` property.
 
 N> Create an aspx file (AjaxContent.aspx) which contains the content of the dialog.
 
@@ -49,7 +49,7 @@ AjaxContent.aspx
 
 ![Load content](load-content_images\load-content_img1.png)
 
-We can handle the AJAX request’s success and failures through the events “ClientSideOnAjaxSuccess” and “ClientSideOnAjaxError” events respectively. 
+We can handle the AJAX request’s success and failures through the events `ClientSideOnAjaxSuccess` and `ClientSideOnAjaxError` events respectively. 
 
 You can modify the previous example as below to handle the success and failure events.
 
@@ -83,7 +83,7 @@ Add the following script
 
 
 
-N> The same way we can render the iframe and image content for the Dialog widget by specifying the “**ContentType**” as “iframe” and “image” respectively and also by specifying the proper location in the “**ContentUrl**” property.
+N> The same way we can render the iframe and image content for the Dialog widget by specifying the `ContentType` as “iframe” and “image” respectively and also by specifying the proper location in the “**ContentUrl**” property.
 
 
 
