@@ -1,13 +1,14 @@
 ---
 layout: post
-title: action-buttons
-description: action buttons
-platform: js
-control: Control Name undefined
+title: Dialog Action Buttons | Dialog | ASP.NET Webforms | Syncfusion
+description: How to enable the Interaction button like “Close”, “Minimize” and etc., in Dialog Widget. 
+platform: aspnet
+control: Dialog
 documentation: ug
+keywords: ejdialog, ASP Dialog, ASP.NET Dialog, ASP.NET Web Dialog, EJ ASP.NET Dialog, Dialog ui, Web Dialog, ej Dialog, Dialog control
 ---
 
-## Action Buttons
+# Action Buttons
 
 The Dialog widget provides the following action buttons.
 

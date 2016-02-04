@@ -1,19 +1,18 @@
 ---
 layout: post
-title: getting-started
-description: getting started
-platform: js
-control: Control Name undefined
+title: Dialog Getting Started | Dialog | ASP.NET Webforms | Syncfusion
+description: How to create Dialog widget with the step-by-step instructions. 
+platform: aspnet
+control: Dialog
 documentation: ug
+keywords: ejdialog, ASP Dialog, ASP.NET Dialog, ASP.NET Web Dialog, EJ ASP.NET Dialog, Dialog ui, Web Dialog, ej Dialog, Dialog control
 ---
 
 # Getting Started
 
-## Create your first Dialog in ASP.NET
-
 This section helps to understand the getting started of the Dialog widget with the step-by-step instructions.
 
-### Create a Dialog
+## Create a Dialog
 
 Create an ASP Project and add the necessary Dlls and scripts with the help of the given [ASP Getting Started](http://help.syncfusion.com/aspnet/getting-started) documentation.
 
@@ -81,9 +80,12 @@ In most cases, the Dialog widgets are needed only in dynamic actions like showin
 
 The Dialog widget can be hidden on initialize using “ShowOnInit” property which should be set to false.
 
-See Also 
+{% seealso %}
 
 [Button](http://help.syncfusion.com/aspnet/button/getting-started).
+
+{% endseealso %}
+
 
 Refer the below example. The dialog will be opened on clicking the Button widget.
 

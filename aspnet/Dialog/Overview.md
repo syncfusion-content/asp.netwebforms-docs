@@ -1,10 +1,11 @@
 ---
 layout: post
-title: overview
-description: overview
-platform: js
-control: Control Name undefined
+title: Dialog Overview | Dialog | ASP.NET Webforms | Syncfusion
+description: Explains about the Dialog widget and its key features
+platform: aspnet
+control: Dialog
 documentation: ug
+keywords: ejdialog, ASP Dialog, ASP.NET Dialog, ASP.NET Web Dialog, EJ ASP.NET Dialog, Dialog ui, Web Dialog, ej Dialog, Dialog control
 ---
 
 # Overview

@@ -1,15 +1,16 @@
 ---
 layout: post
-title: how-to
-description: how to
-platform: js
-control: Control Name undefined
+title: Dialog How To | Dialog | ASP.NET Webforms | Syncfusion
+description: How to load content to dialog widget either using the Ajax, iframe, and Image.
+platform: aspnet
+control: Dialog
 documentation: ug
+keywords: ejdialog, ASP Dialog, ASP.NET Dialog, ASP.NET Web Dialog, EJ ASP.NET Dialog, Dialog ui, Web Dialog, ej Dialog, Dialog control
 ---
 
-## How To?
+# How To?
 
-### Create Multiple Dialogs
+## Create Multiple Dialogs
 
 Essential Studio for ASP.NET library supports multiple Dialog widgets in the same web page with different contents and different functionalities.
 
@@ -54,13 +55,13 @@ Initialize the Dialog widgets by configuring as below.
 
 
 
-_**Note:**_ _If the position of the dialog is not set as above, all the three dialogs will be overlapped with each other._
+N> If the position of the dialog is not set as above, all the three dialogs will be overlapped with each other.
 
 ![Create Multiple Dialogs](how-to_images\create-multiple-dialogs_img1.png)
 
 
 
-### Create Nested Dialog
+## Create Nested Dialog
 
 A Dialog widget can be nested within another Dialog widget.
 

@@ -1,13 +1,14 @@
 ---
 layout: post
-title: load-content
-description: load content
-platform: js
-control: Control Name undefined
+title: Dialog Load content | Dialog | ASP.NET Webforms | Syncfusion
+description: Content Loading in Dialog
+platform: aspnet
+control: Dialog
 documentation: ug
+keywords: ejdialog, ASP Dialog, ASP.NET Dialog, ASP.NET Web Dialog, EJ ASP.NET Dialog, Dialog ui, Web Dialog, ej Dialog, Dialog control
 ---
 
-## Load content
+# Load content
 
 By default, the content inside the DialogContent element is considered as the content for the Dialog widget.
 
@@ -21,7 +22,7 @@ Also, we can render the Dialog widget content through the following ways.
 
 This settings can be specified through “ContentType” property.
 
-_**Note**__: Create 	an aspx file (AjaxContent.aspx) which contains the content of the dialog._
+N> Create an aspx file (AjaxContent.aspx) which contains the content of the dialog.
 
 {% highlight html %}
 
@@ -82,7 +83,7 @@ Add the following script
 
 
 
-_**Note:**_ _The same way we can render the iframe and image content for the Dialog widget by specifying the “__**ContentType**__” as “iframe” and “image” respectively and also by specifying the proper location in the “__**ContentUrl**__” property._
+N> The same way we can render the iframe and image content for the Dialog widget by specifying the “**ContentType**” as “iframe” and “image” respectively and also by specifying the proper location in the “**ContentUrl**” property.
 
 
 

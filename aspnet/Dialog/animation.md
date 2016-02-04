@@ -1,13 +1,14 @@
 ---
 layout: post
-title: animation
-description: animation
-platform: js
-control: Control Name undefined
+title: Dialog Animation | Dialog | ASP.NET Webforms | Syncfusion
+description: How to apply animation effects. 
+platform: aspnet
+control: Dialog
 documentation: ug
+keywords: ejdialog, ASP Dialog, ASP.NET Dialog, ASP.NET Web Dialog, EJ ASP.NET Dialog, Dialog ui, Web Dialog, ej Dialog, Dialog control
 ---
 
-## Animation
+# Animation
 
 The Dialog widget can be animated while opening and closing the dialog.
 
