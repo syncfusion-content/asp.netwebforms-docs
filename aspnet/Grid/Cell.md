@@ -253,8 +253,7 @@ The following output is displayed as a result of the above code example.
 
 When the cell value contains a long text that is not fit into the grid column cell, the `ClipMode` property is used. By using the `ClipMode`, the cell value will be displayed with ellipsis or with clipped content when the text overflows inside a column cell.
 
-N> 1. By default the `ClipMode` will be set as `Clip`. 
-N> 2. For [`ClipMode`] property you can assign either `string` value (`Ellipsis`).
+N>  By default the `ClipMode` will be set as `Clip`. 
 
 
 **List of types**
