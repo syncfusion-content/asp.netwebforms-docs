@@ -8,7 +8,7 @@ keywords: export, import, print
 ---
 # Export and Print
 
-## Export Appointments
+## Export Appointments to ICS file
 
 The Appointments can be exported as a whole collection or else a single appointment alone can be exported from the Scheduler. By default, the appointments are exported to .ics format which can then be imported and used in any of the other external calendars.
 
@@ -109,7 +109,99 @@ public void ExportICS(FormCollection form)
 	ScheduleExport obj = new ScheduleExport(model, data);
 }
 
+{% endhighlight %} 
+
+## PDF Export
+
+Scheduler supports to export the entire schedule control along with its appointments in PDF format, for which the same [exportSchedule](/aspnet/api/ejschedule#methods:exportschedule) method can be used without passing any id value to its parameter list. To achieve this, keep an individual button to export and when it is clicked, the Scheduler with appointments can be allowed to export as PDF.
+
+The following code example depicts the way to export the Scheduler with appointments in PDF format.
+
+{% highlight html %}
+ 
+ <asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
+    <ej:Button ClientIDMode="Static" Type="Button" ID="exportFile" runat="server" Text="Export" ClientSideOnClick="onExportClick"></ej:Button>
+        <div>
+<ej:Schedule OnServerExportPDF="Schedule1_OnServerExportPDF" ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/5/2014" CurrentView="Workweek">
+    <Resources>
+        <ej:Resources Field="RoomId" Name="Rooms" Title="Room" AllowMultiple="true">
+            <ResourceSettings Color="color" Id="id" Text="text">
+            </ResourceSettings>
+        </ej:Resources>
+        <ej:Resources Field="OwnerId" Name="Owners" Title="Owner" AllowMultiple="true">
+            <ResourceSettings Color="color" Id="id" Text="text" GroupId="groupId">
+            </ResourceSettings>
+        </ej:Resources>
+         
+    </Resources>
+    <Group Resources="Rooms,Owners"/>
+    <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" ResourceFields="RoomId,OwnerId"/>
+</ej:Schedule>
+    </div>
+    <asp:SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings:ScheduleConnectionString %>"
+            SelectCommand="SELECT * FROM [MultipleResource]"></asp:SqlDataSource>
+</asp:Content>
+
+<asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#Schedule1").find("tr.e-scheduleheader td").first().append($("#exportFile"));
+        });
+        function onExportClick(args) {
+            var obj = $("#Schedule1").data("ejSchedule");
+            obj.exportSchedule(null, "exportPDF", null);
+        }
+    </script>
+</asp:Content>
+<asp:Content ID="StyleContent" ContentPlaceHolderID="StyleSection" runat="server">
+      <style type="text/css">
+        #exportFile
+        {
+           border: 1px solid #bbbcbb;
+           border-radius: 6px;
+           float: right;
+           margin-right: 20px;
+           margin-top: 8px;
+           padding-top:5px;
+           box-sizing:border-box;
+        }
+    </style>
+</asp:Content>
+ 
+ {% endhighlight %}
+
+{% highlight c# %}
+
+namespace WebSampleBrowser.Schedule
+{
+    public partial class PDFExport : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            List<WebSampleBrowser.Schedule.multipleresource.Rooms> owner = new List<WebSampleBrowser.Schedule.multipleresource.Rooms>();
+            List<WebSampleBrowser.Schedule.multipleresource.Rooms> rooms = new List<WebSampleBrowser.Schedule.multipleresource.Rooms>();
+            rooms.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Room1", id = "1", color = "#cb6bb2" });
+            rooms.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Room2", id = "2", color = "#56ca85" });
+
+            owner.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Nancy", id = "1", groupId = "1", color = "#ffaa00" });
+            owner.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Steven", id = "3", groupId = "2", color = "#f8a398" });
+            owner.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Michael", id = "5", groupId = "1", color = "#7499e1" });
+
+            Schedule1.Resources[0].ResourceSettings.DataSource = rooms;
+            Schedule1.Resources[1].ResourceSettings.DataSource = owner;
+        }
+        protected void Schedule1_OnServerExportPDF(object sender, ScheduleEventArgs e)
+        {
+            PdfExport exp = new PdfExport();
+            PdfDocument document = exp.Export(e.Arguments["model"].ToString(), e.Arguments["processedApp"].ToString(), "flat-lime", e.Arguments["locale"].ToString(),
+                PdfPageOrientation.Landscape);
+            document.Save("Schedule.pdf", Response, HttpReadType.Save);
+        }
+    }
+}
+
 {% endhighlight %}
+
 
 ## Print
 
