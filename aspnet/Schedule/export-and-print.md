@@ -113,7 +113,7 @@ public void ExportICS(FormCollection form)
 
 ## PDF Export
 
-Scheduler supports to export the entire schedule control along with its appointments in PDF format, for which the same [exportSchedule](/aspnet/api/ejschedule#methods:exportschedule) method can be used without passing any id value to its parameter list. To achieve this, keep an individual button to export and when it is clicked, the Scheduler with appointments can be allowed to export as PDF.
+Scheduler supports to export the entire schedule control along with its appointments in PDF format, for which the same `exportSchedule` method can be used without passing any id value to its parameter list. To achieve this, keep an individual button to export and when it is clicked, the Scheduler with appointments can be allowed to export as PDF.
 
 The following code example depicts the way to export the Scheduler with appointments in PDF format.
 
