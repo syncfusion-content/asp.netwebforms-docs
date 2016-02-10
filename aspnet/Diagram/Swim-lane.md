@@ -1,304 +1,322 @@
 ---
 layout: post
-title: Swim lane | Diagram | ASP.NET Webforms | Syncfusion
-description: swim lane 
+title: Visually represent a business process with its functional blocks/departments
+description: How to visually represent a business process and the relationships among its functional blocks?
 platform: aspnet
-control: Diagram
+control: Control Name undefined
 documentation: ug
 ---
 
-# Swim lane 
+# Swim lane
 
-A swim lane is a visual element used in a process flow diagrams or flowcharts. A typical swim lane contains a header, and a collection of lanes that can be arranged horizontally or vertically.
+Swim-lane Diagrams are typically used to visualize the relationship between a business process and the department responsible for it by focusing on the logical relationships between activities. Swimlanes may be arranged either horizontally or vertically.
 
- ![](Swim-lane_images/Swim-lane_img1.png) 
+##Initialize tha Diagram model 
+Create a diagram properties model element that can be used to initialize the diagram widget as shown below.
 
-Swim lane Diagram
-{:.caption} 
+{% highlight html %}
 
-Swim lane shape contains the following properties.
-
-Swim lane Properties
-
-<table>
-<tr>
-<th>Property</th><th>Data type</th><th>Description</th></tr>
-<tr>
-<td>
-Header</td><td>
-Object</td><td>
-Gets or sets the header value of the swim lane.</td></tr>
-<tr>
-<td>
-Orientation</td><td>
-String</td><td>
-Gets or sets the orientation of the swim lane.</td></tr>
-<tr>
-<td>
-OffsetX</td><td>
-Int</td><td>
-Gets or sets the offsetX value of the swim lane.</td></tr>
-<tr>
-<td>
-OffsetY</td><td>
-Int</td><td>
-Gets or sets the offsetY value of the swim lane.</td></tr>
-<tr>
-<td>
-MinHeight</td><td>
-Int</td><td>
-Gets or sets the minHeight value of the swim lane.</td></tr>
-<tr>
-<td>
-MinWidth</td><td>
-Int</td><td>
-Gets or sets the minWidth value of the swim lane.</td></tr>
-<tr>
-<td>
-MaxHeight</td><td>
-Int</td><td>
-Gets or sets the maxHeight value of the swim lane.</td></tr>
-<tr>
-<td>
-MaxWidth</td><td>
-Int</td><td>
-Gets or sets the maxWidth value of the swim lane.</td></tr>
-<tr>
-<td>
-Lanes</td><td>
-Array</td><td>
-Gets or sets the lanes as collection.</td></tr>
-<tr>
-<td>
-Phases</td><td>
-Array</td><td>
-Gets or sets the phases as collection.</td></tr>
-</table>
-
-
-## Lane
-
-The lane is an object that controls the diagram elements in the swim lane. Lane has the following properties.
-
-Lane Properties
-
-<table>
-<tr>
-<th>Property</th><th>Data type</th><th>Description</th></tr>
-<tr>
-<td>
-Header</td><td>
-Object</td><td>
-Gets or sets the lane header.</td></tr>
-<tr>
-<td>
-Name</td><td>
-String</td><td>
-Gets or sets the name of the header.</td></tr>
-<tr>
-<td>
-Children</td><td>
-Array</td><td>
-Gets or set the child nodes as collection.</td></tr>
-<tr>
-<td>
-Orientation</td><td>
-String</td><td>
-Gets or sets the orientation of the swim lane.</td></tr>
-</table>
-
-
-## Header
-
-This is used to define header of a swim lane. It has the following properties.
-
-Header Properties
-
-<table>
-<tr>
-<th>Property</th><th>Data type</th><th>Description</th></tr>
-<tr>
-<td>
-Width</td><td>
-Int</td><td>
-Gets or sets the width of the header.</td></tr>
-<tr>
-<td>
-Text</td><td>
-String</td><td>
-Gets or sets the text value for the header.</td></tr>
-</table>
-
-
-## Phase
-
-A Phase is a line that separates the swim lane. Phase has the following properties.
-
-Phase Properties
-
-<table>
-<tr>
-<th>Property</th><th>Data type</th><th>Description</th></tr>
-<tr>
-<td>
-Name</td><td>
-String</td><td>
-Gets or set the name of the phase.</td></tr>
-<tr>
-<td>
-Offset</td><td>
-Int</td><td>
-Gets or set the offset value of the phase.</td></tr>
-<tr>
-<td>
-LineWidth</td><td>
-Int</td><td>
-Gets or set the stroke width of the phase.</td></tr>
-<tr>
-<td>
-LineDashArray</td><td>
-String</td><td>
-Gets or set the stroke dash array of the phase.</td></tr>
-<tr>
-<td>
-LineColor</td><td>
-String</td><td>
-Gets or set the stroke colour of the phase.</td></tr>
-<tr>
-<td>
-Parent</td><td>
-String</td><td>
-Gets or sets the parent of the phase</td></tr>
-</table>
-
-
-The following code illustrates how to create a simple swim lane.
-
-{% highlight c# %}
-
-        private void GenerateNodes(DiagramProperties diagram)
-
-        {
-
-            SwimLane swimlane = new SwimLane();
-
-            swimlane.Type = "swimlane";
-
-            swimlane.Name = "swimlane";
-
-            Header header = new Header();
-
-            header.Text = "HEADER";
-
-            header.Height = 50;
-
-            header.FillColor = "#C7D4DF";
-
-            header.FontSize = 11;
-
-            swimlane.Header = header;
-
-            swimlane.FillColor = "#C7D4DF";
-
-            swimlane.Orientation = "horizontal";
-
-            swimlane.OffsetX = 350;
-
-            swimlane.OffsetY = 290;
-
-            swimlane.Height = 100;
-
-            swimlane.Width = 450;
-
-            swimlane.Lanes = CreateLanes();
-
-            diagram.Nodes.Add(swimlane);
-
-        }
-
-
-
-        private Collection CreateLanes()
-
-        {
-
-            Collection lanCol = new Collection();
-
-            Collection childCollec = new Collection();
-
-            childCollec.Add(createNode("Order1", "Node1", 100, 10));
-
-            childCollec.Add(createNode("Order2", "Node1", 250, 10));
-
-            lanCol.Add(CreateLane("stackCanvas1", "HEADER", "#f5f5f5",
-
-                                   childCollec));
-
-            return lanCol;
-
-        }
-
-        private Node createNode(string name, string label, 
-
-                                double mLeft, double mTop)
-
-        {
-
-            Node node = new Node();
-
-            node.Name = name;
-
-            node.Width = 100;
-
-            node.Height = 40;
-
-            node.Labels.Add(new Label() { Name = name, Text = label });
-
-            node.MarginLeft = mLeft;
-
-            node.MarginTop = mTop;
-
-            return node;
-
-        }
-
-
-
-        private Lane CreateLane(string name, string hText,
-
-                            string fillColor, Collection children)
-
-        {
-
-            Lane lane = new Lane();
-
-            lane.Name = name;
-
-            Header header = new Header();
-
-            header.Text = hText;
-
-            header.Width = 50;
-
-            header.FillColor = "#C7D4DF";
-
-            header.FontSize = 11;
-
-            lane.FillColor = "#f5f5f5";
-
-            lane.Header = header;
-
-            lane.Height = 120;
-
-            lane.Children = children;
-
-            return lane;
-
-        }
-
-
+            //Initialize the Diagram Model
+            <ej:Diagram ID="Diagram" runat="server" Height="700px" Width="900px">
+            </ej:Diagram>
 
 {% endhighlight %}
 
+## Create a swimlane
+
+To create a swimlane, you need to use the `Swimlane` class. By default, the swimlanes are arranged vertically. You can change that with the `Orientation` property of swimlane.
+
+The following code example illustrates how to define a swimlane object.
+
+{% highlight html %} 
+           
+                <ej:DiagramSwimlane Name="Swimlane" Orientation="horizontal" OffsetX="400" OffsetY="200" Height="100" Width="700 ">
+                </ej:DiagramSwimlane> 
+
+{% endhighlight %}
+
+## Add swimlane into diagram
+
+Adding a swimlane to the Diagram is same as adding a node. You can add either through the `Nodes` collection or through the client side method `add`. You can also drag and drop a swimlane from symbol palette.
+For more information about adding a node/swimlane to the Diagram, refer to [Add Nodes](/aspnet/Diagram/Node#create-node "Add Nodes").
+
+The following code example illustrates how to add a swimlane to the Diagram through `Nodes` collection.
+
+{% highlight html %}
+
+       <!-- Add the swimlane in to the Nodes collection -->
+       <ej:Diagram ID="Diagram" runat="server" Height="700px" Width="900px">
+            <Nodes>
+                <ej:DiagramSwimlane Name="Swimlane" Orientation="horizontal" OffsetX="400" OffsetY="200" Height="100" Width="700 ">
+                </ej:DiagramSwimlane>
+            </Nodes>
+        </ej:Diagram>
+
+{% endhighlight %}
+
+![](/aspnet/Diagram/Swim-lane_images/Swim-lane_img2.png)
+
+## Headers
+
+Swimlane allows to define a header to textually describe it. The `Header` property of swimlane allows you to define its textual description(`Text`) and to customize its appearance. The following code example illustrates how to define swimlane header.
+
+{% highlight html %}
 
 
+        <ej:Diagram ID="Diagram" runat="server" Height="700px" Width="900px">
+            <%--Add the swimlane in to the Nodes collection--%>
+            <Nodes>
+                <%--Changes the orientation,position and size--%>
+                <ej:DiagramSwimlane Name="Swimlane" Orientation="horizontal" OffsetX="400" OffsetY="200" Height="100" Width="700 ">
+                    <%--Defines the header and format its text and sets the header--%>
+                    <Header Text="Swimlane" Height="50" FillColor="#C7D4DF" FontColor="black" FontSize="11" FontFamily="Arial" Italic="true" Bold="true" TextDecoration="Underline">
+                    </Header>
+                </ej:DiagramSwimlane>
+            </Nodes>
+        </ej:Diagram>
+{% endhighlight %}
+
+{% highlight js %}
+
+    //Updates the swimlane header at runtime
+    var diagram = $("#diagram").ejDiagram("instance");
+    diagram.updateNode("swimlaneName", { header: {fontColor:"white"} })
+
+{% endhighlight %}
+
+![](/aspnet/Diagram/Swim-lane_images/Swim-lane_img3.png)
+
+### Update Header
+
+Swimlane headers can be updated at runtime with the client side method `updateNode`. The following code example illustrates how to update a lane's header at runtime.
+
+{% highlight js %}
+
+    var diagram = $("#diagram").ejDiagram("instance");
+
+    //Defines the header and format its text
+    var header = {
+        text: "swimlane",
+        bold: true,
+        italic: true
+    };
+
+    diagram.updateNode("swimlane", { header: header });
+
+{% endhighlight %}
+
+### Disable headers
+
+You can hide the swimlane headers. The following code example illustrates how to hide headers.
+
+{% highlight html %}
+ 
+           
+       <!--  // Defines the header and Sets "0" to hide header -->
+       <Header Text="Swimlane" Height="0" FillColor="#C7D4DF" FontColor="black" FontSize="11" FontFamily="Arial" Italic="true" Bold="true" TextDecoration="Underline">
+       </Header>
+
+{% endhighlight %}
+
+## Lane
+
+Lane is a functional unit or a responsible department of a business process that helps to map a process within the functional unit or in between other functional units.
+You can add any number of lanes to a swimlane and the lanes are automatically stacked inside a swimlane based in the order they are added.
+
+### Create an empty lane
+
+To create an empty lane, you need to define an object with `Type` property that helps identify the object as a lane. The following example illustrates how to define a swimlane with a lane.
+
+{% highlight html %}
+
+        <ej:Diagram ID="Diagram" runat="server" Height="700px" Width="900px">
+            <%--Add the swimlane in to the Nodes collection--%>
+            <Nodes>
+                <%--Changes the orientation,position and size--%>
+                <ej:DiagramSwimlane Name="Swimlane" Orientation="horizontal" OffsetX="400" OffsetY="200" Height="100" Width="700 ">
+                    <%--Defines the header and format its text and sets the header--%>
+                    <Header Text="Swimlane" Height="0" FillColor="#C7D4DF" FontColor="black" FontSize="11" FontFamily="Arial" Italic="true" Bold="true" TextDecoration="Underline">
+                    </Header>
+                     <%--Defines an lanes Collection--%>
+                    <Lanes>
+                        <%--Add the lane in to the lanes collection--%>
+                        <ej:DiagramLane Name="lane1" FillColor="#f5f5f5" MinHeight="120">
+                         
+                        </ej:DiagramLane>
+                    </Lanes>
+                </ej:DiagramSwimlane>
+            </Nodes>
+        </ej:Diagram>
+
+{% endhighlight %}
+
+### Create a lane with header
+
+The `Header` property of the lane allows you to textually describe the lane(`text`) and to customize the appearance of the description. The following code example illustrates how to define a lane header.
+You can limit the size of a lane with its `MinWidth`, `MinHeight`, `MaxWidth`, and `MaxHeight` properties.
+
+{% highlight html %}
+
+       <ej:Diagram ID="Diagram" runat="server" Height="700px" Width="900px">
+            <%--Add the swimlane in to the Nodes collection--%>
+            <Nodes>
+                <%--Changes the orientation,position and size--%>
+                <ej:DiagramSwimlane Name="Swimlane" Orientation="horizontal" OffsetX="400" OffsetY="200" Height="100" Width="700 ">
+                    <%--Defines the header and format its text and sets the header--%>
+                    <Header Text="Swimlane" Height="0" FillColor="#C7D4DF" FontColor="black" FontSize="11" FontFamily="Arial" Italic="true" Bold="true" TextDecoration="Underline">
+                    </Header>
+                    <%--Defines an lanes Collection--%>
+                    <lanes>
+                        <%--Add the lane in to the lanes collection--%>
+                        <ej:DiagramLane Name="lane1" FillColor="#f5f5f5" MinHeight="120" MinWidth="500" MaxHeight="200">
+                              <Header Text="Lane" Height="0" FillColor="#C7D4DF" FontColor="black" FontSize="11" FontFamily="Arial" Italic="true" Bold="true" TextDecoration="Underline">
+                        </Header>
+                        </ej:DiagramLane>
+                    </lanes>
+                </ej:DiagramSwimlane>
+            </Nodes>
+        </ej:Diagram>
+
+{% endhighlight %}
+
+#### Disable/Update header
+
+You can disable/update the lane header at runtime with the client side method, `updateNode`. The following code example illustrates how to disable the lane header at run time.
+
+{% highlight js %}
+
+        var diagram = $("#diagram").ejDiagram("instance");
+
+        //Sets "0" to hide header
+        diagram.updateNode("laneName", { header: {height: 0} })
+
+{% endhighlight %}
+
+### Add nodes to a lane
+
+To add nodes to a lane, You need to add them to the `Children` collection of lane. The following code example illustrates how to add nodes to a lane.
+
+{% highlight html %}
+
+
+        <ej:Diagram ID="Diagram" runat="server" Height="700px" Width="900px">
+            <%--Add the swimlane in to the Nodes collection--%>
+            <Nodes>
+                <%--Changes the orientation,position and size--%>
+                <ej:DiagramSwimlane Name="Swimlane" Orientation="horizontal" OffsetX="400" OffsetY="200" Height="100" Width="700 ">
+                    <%--Defines the header and format its text and sets the header--%>
+                    <Header Text="Swimlane" Height="0" FillColor="#C7D4DF" FontColor="black" FontSize="11" FontFamily="Arial" Italic="true" Bold="true" TextDecoration="Underline">
+                    </Header>
+                    <%--Defines an lanes Collection--%>
+                    <lanes>
+                        <%--Add the lane in to the lanes collection--%>
+                        <ej:DiagramLane Name="lane1" FillColor="#f5f5f5" MinHeight="120" MinWidth="500" MaxHeight="200">
+                              <Header Text="Lane" Height="0" FillColor="#C7D4DF" FontColor="black" FontSize="11" FontFamily="Arial" Italic="true" Bold="true" TextDecoration="Underline">
+                        </Header>
+                           <Children>
+                             <ej:BasicShape Name="NewIdea" Width="70" Height="30" OffsetX="300" OffsetY="60" FillColor="#1BA0E2" BorderColor="#1BA0E2" MarginLeft="70" MarginTop="1">
+                            <labels>
+                            <ej:DiagramLabel Name="NewIdea_Label" Text="Node" FontColor="White"></ej:DiagramLabel>
+                        </labels>
+                        </ej:BasicShape>
+                           </Children>
+                        </ej:DiagramLane>
+                    </lanes>
+                </ej:DiagramSwimlane>
+            </Nodes>
+        </ej:Diagram>
+
+{% endhighlight %}
+
+![](/aspnet/Diagram/Swim-lane_images/Swim-lane_img4.png)
+
+## Phase
+
+Phases are the sub-processes that are used to break the swimlane into multiple smaller regions.
+
+### Add phase
+
+To define a phase, you have to set the length of the region to the `Offset` property of phase. Every region can be textually described with the `Label` property of phase.
+
+The following code example illustrates how to add a phase on initializing swimlane.
+
+{% highlight html %}
+
+        <ej:Diagram ID="Diagram" runat="server" Height="700px" Width="900px">
+            <%--Add the swimlane in to the Nodes collection--%>
+            <Nodes>
+                <%--Changes the orientation,position and size--%>
+                <ej:DiagramSwimlane Name="Swimlane" Orientation="horizontal" OffsetX="400" OffsetY="200" Height="100" Width="700 ">
+                    <%--Defines the header and format its text and sets the header--%>
+                    <Header Text="Swimlane" Height="0" FillColor="#C7D4DF" FontColor="black" FontSize="11" FontFamily="Arial" Italic="true" Bold="true" TextDecoration="Underline">
+                    </Header>
+                    <%--Defines an lanes Collection--%>
+                    <lanes>
+                        <%--Add the lane in to the lanes collection--%>
+                        <ej:DiagramLane Name="lane1" FillColor="#f5f5f5" MinHeight="120" MinWidth="500" MaxHeight="200">
+                              <Header Text="Lane" Height="0" FillColor="#C7D4DF" FontColor="black" FontSize="11" FontFamily="Arial" Italic="true" Bold="true" TextDecoration="Underline">
+                        </Header>
+                           <Children>
+                             <ej:BasicShape Name="NewIdea" Width="70" Height="30" OffsetX="300" OffsetY="60" FillColor="#1BA0E2" BorderColor="#1BA0E2" MarginLeft="70" MarginTop="1">
+                            <labels>
+                            <ej:DiagramLabel Name="NewIdea_Label" Text="Node" FontColor="White"></ej:DiagramLabel>
+                        </labels>
+                        </ej:BasicShape>
+                           </Children>
+                        </ej:DiagramLane>
+                    </lanes>
+                    <%--Define the Phase collection--%>
+                    <phases>
+                        <%--Define the Phase appearance--%>
+                        <ej:DiagramPhase Name="Phase1" LineWidth="1" LineDashArray="3,3" LineColor="#606060">
+                            <%--Define the Label for the phase--%>
+                           <Label Text="Phase1"></Label>
+                        </ej:DiagramPhase>
+                        <ej:DiagramPhase Name="Phase2" LineWidth="1" LineDashArray="3,3" LineColor="#606060">
+                           <Label Text="Phase2"></Label>
+                        </ej:DiagramPhase>
+                    </phases>
+                </ej:DiagramSwimlane>
+            </Nodes>
+        </ej:Diagram>
+
+{% endhighlight %}
+
+![](/aspnet/Diagram/Swim-lane_images/Swim-lane_img5.png)
+
+### Add phase at runtime
+
+You can add a region at runtime with the client side method, `addPhase`. The following code example illustrates how to add a phase at runtime.
+
+{% highlight js %}
+
+    var phase = {
+        name: "Phase3",
+        label: { text: "Phase3" }
+    };
+
+    var diagram = $("#diagram").ejDiagram("instance");
+    diagram.addPhase("swimlaneName", phase);
+
+{% endhighlight %}
+
+A phase can be updated at runtime with the client side API `updateNode`. The following code example illustrates how to a update phase at runtime.
+
+{% highlight js %}
+
+    var diagram = $("#diagram").ejDiagram("instance");
+    var options = {
+        //Specifies the style of the phase to be updated
+        lineDashArray: "3,3",
+        lineColor: "#C7D4DF",
+        lineWidth: 2
+    }
+    diagram.updateNode("phaseName", options);
+
+{% endhighlight %}
+
+N> A default phase is added, when the phase collection of the swimlane is empty. When the phase collection is initialized, a default phase is appended at the end of swimlane.
+
+## Limitations
+
+* You cannot add connectors as the children of lanes. 
