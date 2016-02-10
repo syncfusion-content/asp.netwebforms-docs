@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Serialization | Diagram | ASP.NET Webforms | Syncfusion
+title: Serialize the Diagram as JSON and load Diagram from serialized JSON
 description: serialization
 platform: aspnet
 control: Diagram

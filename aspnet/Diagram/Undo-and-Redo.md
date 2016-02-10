@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Undo and Redo | Diagram | ASP.NET Webforms | Syncfusion
+title: Track the history of changes and revert/restore them when required
 description: undo and redo
 platform: aspnet
 control: Diagram

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | Diagram | ASP.NET Webforms | Syncfusion
-description: overview
+title: Explore the features of the Diagram control
+description: What are all the main features of the Diagram control?
 platform: aspnet
 control: Diagram
 documentation: ug

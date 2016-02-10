@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Node | Diagram | ASP.NET MVC | Syncfusion
-description: node
+title: Visually represent the geometrical informations, process flow, or entities
+description: How to visually represent the geometrical information and process flows as nodes?
 platform: aspnet
 control: Diagram
 documentation: ug
