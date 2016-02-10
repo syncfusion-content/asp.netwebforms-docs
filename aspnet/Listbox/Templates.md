@@ -1,0 +1,78 @@
+---
+layout: post
+title: Templates | ListBox | ASP.NET Webforms | Syncfusion
+description: template support
+platform: aspnet
+control: ListBox
+documentation: ug
+---
+
+# Templates
+
+The ListBox widget’s appearance can be customized based on different needs using templates. The desired templates can be defined using the “template” property.
+
+In the design page set the template property and create the data source in code behind.
+
+{% tabs %}
+{% highlight html %}
+
+<div class="control">
+     <ej:ListBox ID="ListBox" runat="server" Width="350" Template='<div><img class="image" src="../content/images/Employees/${eimg}.png" alt="employee"/><div class="ename"> ${Text} </div><div class="desig"> ${desig} </div><div class="country"> ${country} </div></div>'>
+     </ej:ListBox>
+</div>
+
+{% endhighlight %}
+{% highlight c# %}
+
+public partial class Template : System.Web.UI.Page
+        {
+            protected void Page_Load(object sender, EventArgs e)
+            {
+                List<EmployeeSpecialists> empl = new List<EmployeeSpecialists>();
+                empl.Add(new EmployeeSpecialists { Text = "Erik Linden", Eimg = "3", Desig = "Representative", Country = "England" });
+                empl.Add(new EmployeeSpecialists { Text = "John Linden", Eimg = "6", Desig = "Representative", Country = "Norway" });
+                empl.Add(new EmployeeSpecialists { Text = "Louis", Eimg = "7", Desig = "Representative", Country = "Australia" });
+                empl.Add(new EmployeeSpecialists { Text = "Lawrence", Eimg = "8", Desig = "Representative", Country = "India" });
+                selectExperts.DataSource = empl;
+            }
+        }
+        public class EmployeeSpecialists
+        {
+            public string Text { get; set; }
+            public string Eimg { get; set; }
+            public string Desig { get; set; }
+            public string Country { get; set; }
+        }
+
+
+{% endhighlight %}
+{% endtabs %}
+
+Define the styles for the template as below.
+
+
+{% highlight css %}
+
+    .image {
+            margin: 0;
+            padding: 3px 10px 3px 3px;
+            border: 0 none;
+            width: 60px;
+            height: 60px;
+            float: left;
+        }
+
+        .ename {
+            font-weight: bold;
+            padding: 6px 3px 1px 3px;
+        }
+
+        .desig, .country {
+            font-size: smaller;
+            padding: 3px 3px 0px 0px;
+        }
+
+{% endhighlight %}
+
+
+ ![](Templates_images/Templates_img1.png)
