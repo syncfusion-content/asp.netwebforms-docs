@@ -9,257 +9,379 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly how to create the Diagram in your application with ASP.NET.
+This section explains briefly you on how to create a Diagram in your application with ASP.NET. Getting started with your ASP.NET Diagram is very easy.  You can start by creating a simple flow Chart.
 
-## Control Structure
-
-The following screenshot illustrates the structure of the Diagram control.
-
-
-
-![](Getting-Started_images/Getting-Started_img1.png) 
-
-Diagram
-{:.caption} 
-
-## Create your first Diagram in ASP.NET
+## Flow Diagram
 
 ### Initialize Diagram
 
-1. Create an ASPX file and add the necessary script and CSS files in the &lt;Head&gt; tag as shown in the following code example.
-   
-   ~~~ html
+1\. Create an ASP.Net Application and add necessary Dll’s and Scripts by referring [ASP-Getting Started](http://help.syncfusion.com/aspnet/getting-started) Documentation.
 
-		<html xmlns="http://www.w3.org/1999/xhtml">
-
-			<head>
-
-				<title>
-
-					Getting Started with the Diagram control for ASP.Net
-
-				</title>
-
-
-
-				<!-- jQuery Script -->
-
-                <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-
-					<!--script to create Diagram-->
-
-                <script src="http://cdn.syncfusion.com/js/ej.widgets.all-latest.min.js"></script>
-
-			</head>
-
-			<body>
-		
-			
-			</body>
-			
-		</html>
-
-   ~~~
-
-2. Add the <ej:Diagram> element in the <body> tag to render the Diagram.
-
-   ~~~ html
-   
-        <html>
-		
-		<body>
-		
-		    <ej:Diagram ID="DiagramContent" runat="server" Height="600px" Width="600px">
-			
-			</ej:Diagram>
-			
-		</body>
-		
-		</html>		
-		
-   ~~~
-
-
-
-3. This creates an empty Diagram. In the following section, you can learn how to add employee details in the Diagram.
-
-   ![](Getting-Started_images/Getting-Started_img2.png) 
-
-   Empty Diagram
-   {:.caption} 
-
-
-### Initialize Data
-
-Initially, you can create hierarchical employee information, JSONData, and assign it to a variable data.
-
-
+2\. Create a web form named as Diagram and add the following template.
 
 {% highlight html %}
 
-<head>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Diagram.aspx.cs" Inherits="WebApplication2.Diagram" %>
 
-    <!-- ... -->
-
-    <script type="text/javascript">
-
-//Initialize data source
-
- var data =
-
-  [{"name": "Elizabeth", "fillColor": "rgb(0, 139, 139)" },
-
-   {"name": "Christina", "fillColor": "rgb(30, 30, 113)",
-
-    "ReportingPerson": "Elizabeth"},
-
-   {"name": "Yoshi", "fillColor": "rgb(0, 100
-
-     0)","ReportingPerson":"Christina" },
-
-   {"name": "Philip", "fillColor": "rgb(0, 100, 0)", 
-
-    "ReportingPerson": "Christina"},
-
-   {"name": "Yang", "fillColor": "rgb(30, 30, 113)", 
-
-    "ReportingPerson": "Elizabeth"},
-
-   {"name": "Roland", "fillColor": "rgb(0, 100, 0)", 
-
-    "ReportingPerson": "Yang" },
-
-   {"name": "Yvonne", "fillColor": "rgb(0, 100, 0)", 
-
-    "ReportingPerson": "Yang"}];   
-
- </script>
-
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Getting started for ASP.NET Diagram Control</title>
+    <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/jquery-2.1.4.min.js")%>' type="text/javascript"></script>
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/jquery.easing-1.3.min.js")%>' type="text/javascript"></script>
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/jquery.globalize.min.js")%>' type="text/javascript"></script>
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/jsrender.min.js")%>' type="text/javascript"></script>
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/ej/ej.web.all.min.js")%>' type="text/javascript"></script>
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/ej/ej.webform.min.js")%>' type="text/javascript"></script>
 </head>
-
-
+<body>
+    <form runat="server">
+        <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px"></ej:Diagram>
+    </form>
+</body>
+</html>
 
 {% endhighlight %}
 
-### Populate Organizational Chart
+3\. This creates an empty diagram
 
-You can populate the organizational chart by specifying the necessary fields of data source.
+![](/aspnetmvc/Diagram/Getting-Started_images/Getting-Started_img1.png)
+
+### Create and add Node
+
+Let us create and add a `node` with specific position, size, label and shape.
+
+{% tabs %}
+{% highlight html %}
+
+    <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px"></ej:Diagram>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    DiagramWebControl.Nodes.Add(CreateNode("Start", 140, 50, 300, 50, FlowShapes.Terminator, "Start"));
+    
+    FlowShape CreateNode(string name, int width, int height, int offsetX, int offsetY, FlowShapes shape, string text)
+    {
+       FlowShape node = new FlowShape()
+       {
+           Shape = shape,
+           Name = name,
+           Width = width,
+           Height = height,
+           OffsetX = offsetX,
+           OffsetY = offsetY,
+           Labels = new Collection() { new DiagramLabel() { Text = text } }
+       };
+       return node;
+    }
+{% endhighlight %}
+{% endtabs %}
+
+N> `Labels` property is an array, which indicates that more than one label can be added to a node.
+
+Added node will be displayed in diagram as shown below.
+
+![](/aspnetmvc/Diagram/Getting-Started_images/Getting-Started_img2.png)
+
+### Connect nodes
+
+* Create another `node` with another set of data.
+
+{% highlight c# %}
+
+       DiagramWebControl.Nodes.Add(CreateNode("Start", 140, 50, 300, 50, FlowShapes.Terminator, "Start"));
+       DiagramWebControl.Nodes.Add(CreateNode("Init", 140, 50, 300, 140, FlowShapes.Process, "var i = 0;"));      
+       
+       //Helper method
+       FlowShape CreateNode(string name, int width, int height, int offsetX, int offsetY, FlowShapes shape, string text)
+       {
+           FlowShape node = new FlowShape()
+           {
+               Shape = shape,
+               Name = name,
+               Width = width,
+               Height = height,
+               OffsetX = offsetX,
+               OffsetY = offsetY,
+               Labels = new Collection() { new DiagramLabel() { Text = text } }
+           };
+           return node;
+       }
+    
+    
+{% endhighlight %}
+
+Connect these two nodes by adding a `connector` into `Connectors` collection with reference to source and target end.
+
+{% highlight c# %}
+    
+    //Add a connector to `Connectors` collection of diagram model
+    DiagramWebControl.Connectors.Add(ConnectNodes("connector1", "Start", "Init"));
+    
+    //Helper method
+    Connector ConnectNodes(string name, string source, string target)
+    {
+        return new Connector()
+        {
+            Name = name,
+            SourceNode = source,
+            TargetNode = target,
+            Segments = new Collection() { 
+                new Segment(Segments.Orthogonal)
+            }
+        };
+    }
+
+{% endhighlight %}
+
+* `Connector` connects the two nodes as shown below.
+
+![](/aspnetmvc/Diagram/Getting-Started_images/Getting-Started_img3.png)
+
+* Default values for all nodes and connectors can be set using default settings. For example if all nodes have same `Width` and `Height`, we can move such properties into `DefaultSettings`. Above code can be rewritten as shown below.
+
+{% highlight c# %}
+    //Default Settings
+    DiagramWebControl.Model.DefaultSettings.Node = new Node()
+    {
+        Type = Shapes.Flow,
+        Width = 140,
+        Height = 50,
+        OffsetX = 300
+    };
+    DiagramWebControl.Model.DefaultSettings.Connector = new Connector()
+    {
+        Labels = new Collection() { new DiagramLabel() { FillColor = "white" } },
+        Segments = new Collection() { new Segment(Segments.Orthogonal) }
+    };
+
+    DiagramWebControl.Nodes.Add(CreateNode("Start", 50, FlowShapes.Terminator, "Start"));
+    DiagramWebControl.Nodes.Add(CreateNode("Init", 140, FlowShapes.Process, "var i = 0;"));
+    DiagramWebControl.Connectors.Add(ConnectNodes("connector1", "Start", "Init"));
+     
+    //Helper methods  
+    Connector ConnectNodes(string name, string source, string target)
+    {
+        return new Connector()
+        {
+            Name = name,
+            SourceNode = source,
+            TargetNode = target
+        };
+    }
+
+    FlowShape CreateNode(string name, int offsetY, FlowShapes shape, string text)
+    {
+        FlowShape node = new FlowShape()
+        {
+            Shape = shape,
+            Name = name,
+            OffsetY = offsetY,
+            Labels = new Collection() { new DiagramLabel() { Text = text } }
+        };
+        return node;
+    }
+
+{% endhighlight %}
+
+### Complete flow diagram
+
+Similarly we can add required nodes and connectors to form a complete flow diagram.
+
+{% highlight c# %}
+
+      //Default Settings
+    DiagramWebControl.Model.DefaultSettings.Node = new Node()
+    {
+        Type = Shapes.Flow,
+        Width = 140,
+        Height = 50,
+        OffsetX = 300
+    };
+    DiagramWebControl.Model.DefaultSettings.Connector = new Connector()
+    {
+        Labels = new Collection() { new DiagramLabel() { FillColor = "white" } },
+        Segments = new Collection() { new Segment(Segments.Orthogonal) }
+    };
+
+    DiagramWebControl.Nodes.Add(CreateNode("Start", 50, FlowShapes.Terminator, "Start"));
+    DiagramWebControl.Nodes.Add(CreateNode("Init", 140, FlowShapes.Process, "var i = 0;"));
+    DiagramWebControl.Nodes.Add(CreateNode("Condition", 230, FlowShapes.Decision, "i < 10?"));
+    DiagramWebControl.Nodes.Add(CreateNode("Print", 320, FlowShapes.PreDefinedProcess, "i < 10?"));
+    DiagramWebControl.Nodes.Add(CreateNode("Increment", 410, FlowShapes.Process, "i < 10?"));
+    DiagramWebControl.Nodes.Add(CreateNode("End", 500, FlowShapes.Terminator, "i < 10?"));
+
+    //Connect Nodes
+    DiagramWebControl.Connectors.Add(ConnectNodes("connector1", "Start", "Init"));
+    DiagramWebControl.Connectors.Add(ConnectNodes("connector2", "Init", "Condition"));
+    DiagramWebControl.Connectors.Add(ConnectNodes("connector3", "Condition", "Print", "Yes"));
+    DiagramWebControl.Connectors.Add(ConnectNodes("connector4", "Condition", "End", "No",
+        new Segment() { Type = Segments.Orthogonal, Direction = "right", Length = 30 }));
+    DiagramWebControl.Connectors.Add(ConnectNodes("connector5", "Print", "Increment"));
+    DiagramWebControl.Connectors.Add(ConnectNodes("connector5", "Increment", "Condition", "",
+      new Segment() { Type = Segments.Orthogonal, Direction = "left", Length = 30 }));
+      
+      
+    //Helper methods      
+    FlowShape CreateNode(string name, int offsetY, FlowShapes shape, string text)
+    {
+        FlowShape node = new FlowShape()
+        {
+            Shape = shape,
+            Name = name,
+            OffsetY = offsetY,
+            Labels = new Collection() { new DiagramLabel() { Text = text } }
+        };
+        return node;
+    }
+
+    Connector ConnectNodes(string name, string source, string target, string text = "", Segment segment = null)
+    {
+        Connector connector = new Connector()
+        {
+            Name = name,
+            SourceNode = source,
+            TargetNode = target,
+            Labels = new Collection() { new DiagramLabel() { Text = text } },
+            Segments = new Collection() { 
+            segment != null? segment: new Segment(Segments.Orthogonal)
+        }
+        };
+        return connector;
+    }
+
+{% endhighlight %}
+
+Final flow chart will looks as shown below.
+
+![](/aspnetmvc/Diagram/Getting-Started_images/Getting-Started_img4.png)
+
+## Automatic organization chart
+
+In 'Flow Diagram' section we saw how to create a diagram manually, now let us see how to create and position diagram automatically.
+
+### Initialize diagram
+
+Initializing diagram is already discussed in Flow Diagram > [Initialize diagram](#initialize-diagram) section.
+
+### Business object (Employee information)
+
+* Define Employee Information as JSON data. The following code example shows an employee array whose,
+	* `Name` is used as a unique identifier and
+	* `ReportingPerson` is used to identify the person to whom an employee report to, in the organization.
+
+{% highlight html %}
+
+//Initialize data source - Saved in a JSON file...
+{
+    data: [
+        { Name: "Elizabeth", Role: "Director" },
+        { Name: "Christina", ReportingPerson: "Elizabeth", Role: "Manager" },
+        { Name: "Yoshi", ReportingPerson: "Christina", Role: "Lead" },
+        { Name: "Philip", ReportingPerson: "Christina", Role: "Lead" },
+        { Name: "Yang", ReportingPerson: "Elizabeth", Role: "Manager" },
+        { Name: "Roland", ReportingPerson: "Yang", Role: "Lead" },
+        { Name: "Yvonne", ReportingPerson: "Yang", Role: "Lead" }
+    ]
+}
+
+{% endhighlight %}
+
+### Map data source
+
+* You can configure this "Employee Information" with Diagram, so that the node and connector are automatically generated using mapping properties. The following code examples show how dataSourceSetting is used to map id and parent with property name identifiers for employee information.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight html %}
 
-//Customizes node before rendering
+     <ej:Diagram runat="server" ID="Diagram" ClientIDMode="Static" Width="100%" Height="600px">
+         <DataSourceSettings Id="Name" Parent="ReportingPerson" />
+     </ej:Diagram>
+{% endhighlight %}
+     
 
-function nodeTemplate(diagram, node) {
-
-     node.labels[0].text = node.Name; 
-
- }
-
-//Initializes the node template.
-
- $(window).load(function () {
-
-     $("#DiagramWebControl1").ejDiagram({ nodeTemplate: nodeTemplate  });
-
- });  
-
-
+{% highlight c# %}  
+     protected void Page_Load(object sender, EventArgs e)
+     {
+         if (!IsPostBack)
+             DiagramWebControl.DataSourceSettings.DataSource = GetEmployeeDetails();
+     }
+     
+     //Helper method
+     Array GetEmployeeDetails()
+     {
+         string text = System.IO.File.ReadAllText(Server.MapPath("~/App_Data/employee.json"));
+         Dictionary<string, object> data = (Dictionary<string, object>)new JavaScriptSerializer().DeserializeObject(text);
+         return (Array)data["data"];
+     }
 
 {% endhighlight %}
-
-
-
-{% highlight c# %}
-
-  DiagramWebControl1.Model.Width = "70px";
-
-  DiagramWebControl1.Model.Height = "30px";
-
-
-
-//Uses automatic layout to arrange elements on the page
-
-  DiagramWebControl1.Model.Layout.Type = LayoutTypes. HierarchicalTree;
-
-  DiagramWebControl1.Model.Layout.MarginY = 50;
-
-  DiagramWebControl1.Model.Layout.HorizontalSpacing = 50;
-
-  DiagramWebControl1.Model.Layout.VerticalSpacing = 50;
-
-
-
-//Configures data source for diagram
-
-  DiagramWebControl1.Model.DataSourceSettings.DataSource = GetOrgChartData();
-
-  DiagramWebControl1.Model.DataSourceSettings.Parent = "ReportingPerson";
-
-  DiagramWebControl1.Model.DataSourceSettings.Id = "name";
-
-
-
-//Sets the default properties of the nodes.
-
-  DiagramWebControl1.Model.DefaultSettings.Node = new Node() { 
-
-      Width = 70, 
-
-      Height = 30,
-
-      Shape = { type: "rectangle","cornerRadius": 5 },
-
-  };
-
-  Label label = new Label() { 
-
-        Name = "label1",
-
-        FontSize = 11, 
-
-        Bold = true, 
-
-        FontFamily = "Segoe UI", 
-
-  };
-
-
-
- DiagramWebControl1.Model.DefaultSettings.Node.Labels.Add(label);
-
-
-
-//Sets the default properties of the connectors.
-
- DiagramWebControl1.Model.DefaultSettings.Connector = new Connector() {
-
-    Segments = new Collection() { new Segment(Segments.Orthogonal) },
-
-    TargetDecorator = new Decorator() { Shape = DecoratorShapes.Arrow }
-
- },
-
-
-
- public Array GetOrgChartData(){
-
-// Returns datasource
-
-   }
-
-{% endhighlight %}
-
 {% endtabs %}
 
-The employee data is displayed in the following Diagram.
+### Visualize employee
 
+Following code examples indicate how to define the default appearance of node and connector using defaultSetting. The NodeTemplate is used to update each node based on employee data.
 
+{% tabs %}
+{% highlight c# %}
 
-![](Getting-Started_images/Getting-Started_img3.png) 
+     //Configure data source
+     DiagramWebControl.DataSourceSettings.DataSource = GetEmployeeData();
 
-Diagram
-{:.caption} 
+     //Default Settings
+     DiagramWebControl.Model.DefaultSettings.Node = new Node()
+     {
+         Width = 70,
+         Height = 30,
+         Shape = { Type = Shapes.Rectangle, CornerRadius = 5 },
+         Labels = new Collection() { new DiagramLabel() { FontSize = 11, Bold = true, FontFamily = "Segoe UI", FontColor = "white" } }
+     };
 
+     DiagramWebControl.Model.DefaultSettings.Connector = new Connector()
+     {
+         Segments = new Collection() { new Segment(Segments.Orthogonal) }
+     };
 
+     DiagramWebControl.NodeTemplate = "nodeTemplate";          
+     
+{% endhighlight %}
+
+{% highlight html %}
+
+    //To represent the roles
+    var codes = {
+    	 Director: "rgb(0, 139,139)",
+    	 Manager: "rgb(30, 30,113)",
+    	 Lead: "rgb(0, 100,0)"
+    }
+
+    // Bind custom data with node
+    function nodeTemplate(diagram, node) {
+    	 node.labels[0].text = node.Name;
+    	 node.fillColor = codes[node.Role];
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+### Apply org chart layout
+
+* Next you need to arrange nodes in an organizational chart structure, and to do this you can apply layout as shown in following code example. You can see that spacing, margin and orientation are defined, that can also be customized based on the needs.
+
+{% highlight html %}
+
+     <ej:Diagram runat="server" ID="DiagramWebControl" ClientIDMode="Static" Width="100%" Height="600px">
+         <DataSourceSettings Id="Name" Parent="ReportingPerson" />
+         <Layout Type="OrganizationalChart" HorizontalSpacing="50" VerticalSpacing="50"
+             MarginX="10" MarginY="50" Orientation="TopToBottom" />
+     </ej:Diagram>
+
+{% endhighlight %}
+
+* The Employee details are displayed in the Diagram as follows.
+
+![](/aspnetmvc/Diagram/Getting-Started_images/Getting-Started_img5.png)
