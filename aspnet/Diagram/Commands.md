@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Commands | Diagram | ASP.NET Webforms | Syncfusion
-description: commands
+title: Explore the frequently used inbuilt commands
+description: How to explore and use the inbuilt commands?
 platform: aspnet
 control: Diagram
 documentation: ug

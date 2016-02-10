@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Constraints | Diagram | ASP.NET Webforms | Syncfusion
-description: constraints
+title: Enable/Disable the optional features
+description: How to enable/disable the optional features?
 platform: aspnet
 control: Diagram
 documentation: ug

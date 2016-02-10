@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting | Diagram | ASP.NET Webforms | Syncfusion
-description: exporting
+title: Export Diagram content as image/svg files
+description: How to export the Diagram as image/svg?
 platform: aspnet
 control: Diagram
 documentation: ug

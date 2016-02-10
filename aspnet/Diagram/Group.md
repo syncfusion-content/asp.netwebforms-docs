@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Group | Diagram | ASP.NET Webforms | Syncfusion
-description: group
+title: Group two or more relevant objects
+description: How to group two or more nodes and connectors?
 platform: aspnet
 control: Diagram
 documentation: ug

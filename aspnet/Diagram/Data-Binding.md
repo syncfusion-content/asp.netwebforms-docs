@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding | Diagram | ASP.NET Webforms | Syncfusion
-description: data binding
+title: Populate Diagram from external data sources
+description: How to populate the Diagram from the local data, remote data, or html tables?
 platform: aspnet
 control: Diagram
 documentation: ug
