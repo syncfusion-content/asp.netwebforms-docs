@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Interaction | Diagram | ASP.NET Webforms | Syncfusion
-description: interaction
+title: Interactively edit nodes and connectors during runtime
+description: How to select and edit nodes and connectors during runtime?
 platform: aspnet
 control: Diagram
 documentation: ug
 ---
+
 
 # Interaction
 
@@ -17,7 +18,7 @@ Selector provides a visual representation of selected elements. It behaves like 
 
 An element can be selected by clicking that element. During single click, all previously selected items are cleared. The following image shows how the selected elememts are visually represented.
 
-![](/aspnetmvc/Diagram/Interaction_images/Interaction_img1.png)
+![](/aspnet/Diagram/Interaction_images/Interaction_img1.png)
 
 ### Selecting a group
 
@@ -37,7 +38,7 @@ Multiple elements can be selected with the following ways.
 
 Multiple selected elements are visually represented as shown.
 
-![](/aspnetmvc/Diagram/Interaction_images/Interaction_img2.png)
+![](/aspnet/Diagram/Interaction_images/Interaction_img2.png)
 
 ### Select/Unselect elements programmatically
 
@@ -88,26 +89,26 @@ N> SelectedItems’s children is a read-only property. You cannot change the chi
 ## Drag
 
 * An object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element.
-* While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/aspnetmvc/Diagram/Gridlines#snapping "Snapping").
+* While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/aspnet/Diagram/Gridlines#snapping "Snapping").
 
-![](/aspnetmvc/Diagram/Interaction_images/Interaction_img3.png)
+![](/aspnet/Diagram/Interaction_images/Interaction_img3.png)
 
 ## Resize
 
 * Selector is surrounded by eight thumbs. When dragging these thumbs, selected items can be resized smaller or larger.
 * When one corner of the selector is dragged, opposite corner is in a static position.
-* While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/aspnetmvc/Diagram/Gridlines#snapping "Snapping").
+* While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/aspnet/Diagram/Gridlines#snapping "Snapping").
 
-![](/aspnetmvc/Diagram/Interaction_images/Interaction_img4.png)
+![](/aspnet/Diagram/Interaction_images/Interaction_img4.png)
 
 ## Rotate
 
 * A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the node.
 * The node is rotated with reference to the static pivot point.
 * Pivot thumb (thumb at the middle of the node) appears while rotating the node to represent the static point.
-* For more information about pivot, refer to [Position](/aspnetmvc/Diagram/Node#position "Position").
+* For more information about pivot, refer to [Position](/aspnet/Diagram/Node#position "Position").
 
-![](/aspnetmvc/Diagram/Interaction_images/Interaction_img5.png)
+![](/aspnet/Diagram/Interaction_images/Interaction_img5.png)
 
 ## Connection editing
 
@@ -117,7 +118,7 @@ N> SelectedItems’s children is a read-only property. You cannot change the chi
 
 Source and target points of the selected connectors are represented with two handles. Clicking and dragging those handles help you to adjust the source and target points.
 
-![](/aspnetmvc/Diagram/Interaction_images/Interaction_img6.png)
+![](/aspnet/Diagram/Interaction_images/Interaction_img6.png)
 
 ### Straight segment editing
 
@@ -129,62 +130,58 @@ Source and target points of the selected connectors are represented with two han
 
 * Orthogonal thumbs allow to adjust the length of adjacent segments by clicking and dragging it.
 
-![](/aspnetmvc/Diagram/Interaction_images/Interaction_img7.png)
+![](/aspnet/Diagram/Interaction_images/Interaction_img7.png)
 
 * When necessary, some segments are added or removed automatically, when dragging the segment. This is to maintain proper routing of orthogonality between segments.
 
-![](/aspnetmvc/Diagram/Interaction_images/Interaction_img8.png)
+![](/aspnet/Diagram/Interaction_images/Interaction_img8.png)
 
 ### Bezier thumbs
 
 * Bezier segments are annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
 
-![](/aspnetmvc/Diagram/Interaction_images/Interaction_img9.png)
+![](/aspnet/Diagram/Interaction_images/Interaction_img9.png)
 
 ## Drag and drop nodes over other elements
 
-Diagram provides support to drop a node/connector over another node/connector. Drop event is raised to notify that an element is dropped over another one and it is disabled by default. It can enabled with the `constraints` property. The following code illustrates how to enable **dropping**.
+Diagram provides support to drop a node/connector over another node/connector. Drop event is raised to notify that an element is dropped over another one and it is disabled by default. It can enabled with the `Constraints` property. The following code illustrates how to enable **dropping**.
 
 {% highlight html %}
 
-        <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px" OnClientDrop="ondrop">
-            <Nodes>
-                <ej:BasicShape Width="100" Height="100" OffsetX="100" OffsetY="100" FillColor="#1BA0E2" Constraints="AllowDrop"></ej:BasicShape>
-            </Nodes>
-            <Connectors>
-                <ej:DiagramConnector Constraints="AllowDrop">
-                    <SourcePoint X="200" Y="50"/>
-                    <TargetPoint X="300" Y="150"/>
-                </ej:DiagramConnector>
-            </Connectors>
-        </ej:Diagram>
+    <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px" OnClientDrop="ondrop">
+        <Nodes>
+            <ej:BasicShape Width="100" Height="100" OffsetX="100" OffsetY="100" FillColor="#1BA0E2" Constraints="AllowDrop"></ej:BasicShape>
+        </Nodes>
+        <Connectors>
+            <ej:DiagramConnector Constraints="AllowDrop">
+                <SourcePoint X="200" Y="50"/>
+                <TargetPoint X="300" Y="150"/>
+            </ej:DiagramConnector>
+        </Connectors>
+    </ej:Diagram>
 
 {% endhighlight %}
 
 The following code examples illustrates how to insert a child to a group interactively.
 
-{% tabs %}
-{% highlight c# %}
-        <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px" OnClientDrop="ondrop">
-        </ej:Diagram> 
-{% endhighlight %}
-
 {% highlight html %}
-function ondrop(args) {
-	if (args.target && args.element) {
-		//Element that is being dropped
-		var node = args.element;
-		//Element over which another element is dropped
-		var target = args.target;
-		if (diagram.getObjectType(target) == "group" && diagram.getObjectType(node) == "node") {
-			//Inserts the node into group
-			node.parent = target.name;
-			target.children.push(node.name);
-		}
-	}
-}
+     <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px" OnClientDrop="ondrop">
+     </ej:Diagram> 
+	 
+  	 function ondrop(args) {
+	 	if (args.target && args.element) {
+		 	//Element that is being dropped
+		 	var node = args.element;
+		 	//Element over which another element is dropped
+		 	var target = args.target;
+		 	if (diagram.getObjectType(target) == "group" && diagram.getObjectType(node) == "node") {
+			 	//Inserts the node into group
+			 	node.parent = target.name;
+			 	target.children.push(node.name);
+		 	}
+	 	}
+  	}
 {% endhighlight %}
-{% endtabs %}
 
 ## User handles
 
@@ -230,13 +227,14 @@ $("#DiagramContent").ejDiagram({
 });
 {% endhighlight %}
 
-![](/aspnetmvc/Diagram/Interaction_images/Interaction_img10.png)
+![](/aspnet/Diagram/Interaction_images/Interaction_img10.png)
 
 ### Appearance
 
 Position, size, and style of the user handle can be customized with a set of predefined properties.
 
 The following code example illustrates how to customize the appearance of the user handle.
+
 {% highlight html %}
 
 var UserHandlePositions = ej.datavisualization.Diagram.UserHandlePositions;
@@ -266,7 +264,7 @@ $("#DiagramContent").ejDiagram({
 });
 {% endhighlight %}
 
-![](/aspnetmvc/Diagram/Interaction_images/Interaction_img11.png)
+![](/aspnet/Diagram/Interaction_images/Interaction_img11.png)
 
 ## Zoom pan
 
@@ -297,4 +295,4 @@ The following table illustrates those commands with the associated key values.
 | F2 | startLabelEditing | Starts to edit the label of selected element |
 | Esc | endLabelEditing | Sets the label mode as View and stops editing. |
 
-To add custom commands, configure or modify key/mouse gesture through [Command Manager](/aspnetmvc/Diagram/commands#command-manager "Command Manager").
+To add custom commands, configure or modify key/mouse gesture through [Command Manager](/aspnet/Diagram/commands#command-manager "Command Manager").

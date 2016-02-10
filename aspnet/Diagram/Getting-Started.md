@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | Diagram | ASP.NET Webforms | Syncfusion
-description: getting started
+title: Getting started with Syncfusion Essential Diagram for ASP.NET Webforms
+description: Getting started walk through to create your first Flow Diagram and Organizational Chart Diagram.
 platform: aspnet
 control: Diagram
 documentation: ug
@@ -46,7 +46,7 @@ This section explains briefly you on how to create a Diagram in your application
 
 3\. This creates an empty diagram
 
-![](/aspnetmvc/Diagram/Getting-Started_images/Getting-Started_img1.png)
+![](/aspnet/Diagram/Getting-Started_images/Getting-Started_img1.png)
 
 ### Create and add Node
 
@@ -73,7 +73,7 @@ Let us create and add a `node` with specific position, size, label and shape.
            Height = height,
            OffsetX = offsetX,
            OffsetY = offsetY,
-           Labels = new Collection() { new DiagramLabel() { Text = text } }
+           Labels = new Collection() { new Label() { Text = text } }
        };
        return node;
     }
@@ -84,7 +84,7 @@ N> `Labels` property is an array, which indicates that more than one label can b
 
 Added node will be displayed in diagram as shown below.
 
-![](/aspnetmvc/Diagram/Getting-Started_images/Getting-Started_img2.png)
+![](/aspnet/Diagram/Getting-Started_images/Getting-Started_img2.png)
 
 ### Connect nodes
 
@@ -106,7 +106,7 @@ Added node will be displayed in diagram as shown below.
                Height = height,
                OffsetX = offsetX,
                OffsetY = offsetY,
-               Labels = new Collection() { new DiagramLabel() { Text = text } }
+               Labels = new Collection() { new Label() { Text = text } }
            };
            return node;
        }
@@ -139,7 +139,7 @@ Connect these two nodes by adding a `connector` into `Connectors` collection wit
 
 * `Connector` connects the two nodes as shown below.
 
-![](/aspnetmvc/Diagram/Getting-Started_images/Getting-Started_img3.png)
+![](/aspnet/Diagram/Getting-Started_images/Getting-Started_img3.png)
 
 * Default values for all nodes and connectors can be set using default settings. For example if all nodes have same `Width` and `Height`, we can move such properties into `DefaultSettings`. Above code can be rewritten as shown below.
 
@@ -154,7 +154,7 @@ Connect these two nodes by adding a `connector` into `Connectors` collection wit
     };
     DiagramWebControl.Model.DefaultSettings.Connector = new Connector()
     {
-        Labels = new Collection() { new DiagramLabel() { FillColor = "white" } },
+        Labels = new Collection() { new Label() { FillColor = "white" } },
         Segments = new Collection() { new Segment(Segments.Orthogonal) }
     };
 
@@ -180,7 +180,7 @@ Connect these two nodes by adding a `connector` into `Connectors` collection wit
             Shape = shape,
             Name = name,
             OffsetY = offsetY,
-            Labels = new Collection() { new DiagramLabel() { Text = text } }
+            Labels = new Collection() { new Label() { Text = text } }
         };
         return node;
     }
@@ -203,7 +203,7 @@ Similarly we can add required nodes and connectors to form a complete flow diagr
     };
     DiagramWebControl.Model.DefaultSettings.Connector = new Connector()
     {
-        Labels = new Collection() { new DiagramLabel() { FillColor = "white" } },
+        Labels = new Collection() { new Label() { FillColor = "white" } },
         Segments = new Collection() { new Segment(Segments.Orthogonal) }
     };
 
@@ -233,7 +233,7 @@ Similarly we can add required nodes and connectors to form a complete flow diagr
             Shape = shape,
             Name = name,
             OffsetY = offsetY,
-            Labels = new Collection() { new DiagramLabel() { Text = text } }
+            Labels = new Collection() { new Label() { Text = text } }
         };
         return node;
     }
@@ -245,7 +245,7 @@ Similarly we can add required nodes and connectors to form a complete flow diagr
             Name = name,
             SourceNode = source,
             TargetNode = target,
-            Labels = new Collection() { new DiagramLabel() { Text = text } },
+            Labels = new Collection() { new Label() { Text = text } },
             Segments = new Collection() { 
             segment != null? segment: new Segment(Segments.Orthogonal)
         }
@@ -257,7 +257,7 @@ Similarly we can add required nodes and connectors to form a complete flow diagr
 
 Final flow chart will looks as shown below.
 
-![](/aspnetmvc/Diagram/Getting-Started_images/Getting-Started_img4.png)
+![](/aspnet/Diagram/Getting-Started_images/Getting-Started_img4.png)
 
 ## Automatic organization chart
 
@@ -338,7 +338,7 @@ Following code examples indicate how to define the default appearance of node an
          Width = 70,
          Height = 30,
          Shape = { Type = Shapes.Rectangle, CornerRadius = 5 },
-         Labels = new Collection() { new DiagramLabel() { FontSize = 11, Bold = true, FontFamily = "Segoe UI", FontColor = "white" } }
+         Labels = new Collection() { new Label() { FontSize = 11, Bold = true, FontFamily = "Segoe UI", FontColor = "white" } }
      };
 
      DiagramWebControl.Model.DefaultSettings.Connector = new Connector()
@@ -384,4 +384,4 @@ Following code examples indicate how to define the default appearance of node an
 
 * The Employee details are displayed in the Diagram as follows.
 
-![](/aspnetmvc/Diagram/Getting-Started_images/Getting-Started_img5.png)
+![](/aspnet/Diagram/Getting-Started_images/Getting-Started_img5.png)

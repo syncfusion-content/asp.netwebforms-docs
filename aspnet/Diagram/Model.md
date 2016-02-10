@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Model | Diagram | ASP.NET Webforms | Syncfusion
-description: model
+title: Represent the data to render the Diagram control
+description: How to represent the data to render the Diagram control?
 platform: aspnet
 control: Diagram
 documentation: ug
@@ -9,70 +9,17 @@ documentation: ug
 
 # Model
 
-The Diagram model represents data for rendering the Diagram and manipulating the Diagram elements.
-
-The following code illustrates how to create a Diagram with some model properties.
-
-{% tabs %}
+The Diagram model represents the data to render the Diagram and to manipulate the Diagram elements. The following code illustrates how to define Diagram model.
 
 {% highlight html %}
 
-<%--Creates Diagram--%>
-
-<asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-
-
-
-<ej:Diagram ID="Diagram1" runat="server" Height="600px" Width="100%">        
-
-</ej:Diagram>
-
-
-
-
-
+     <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="100%">
+         <PageSettings PageWidth="2000" PageHeight="2000"/>
+     </ej:Diagram>
+        
 {% endhighlight %}
 
+![](/aspnet/Diagram/Model_images/Model_img1.png)
 
-
-{% highlight c# %}
-
-    public partial class Diagram : System.Web.UI.Page
-
-    {
-
-        protected void Page_Load(object sender, EventArgs e)
-
-        {
-
-            if (!IsPostBack)
-
-            {
-
-                // Sets diagram model properties
-
-                Diagram1.Model.Width = "100%";
-
-                Diagram1.Model.Height = "100%";
-
-                Diagram1.Model.PageSettings.PageWidth = 2000;
-
-                Diagram1.Model.PageSettings.PageHeight = 2000;
-
-            }
-
-        }
-
-    }
-
-
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Model_images/Model_img1.png) 
-
-Model
-{:.caption} 
+To explore more model properties, refer to [Model Properties](/js/api/ejdiagram#members "Model Properties").
 
