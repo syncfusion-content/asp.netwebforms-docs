@@ -11,7 +11,7 @@ keywords: TreeView,  Syncfusion, ASP Web TreeView UG Doc, State Persistence
 
 TreeView state can be persisted by using ‘**EnablePersistence**’. In which user intractable model values only has been persisted in order to maintain performance.
 
-The model values of below are maintained through Id basis of tree node.
+The model values of below are maintained through id basis of tree node.
 
 * selected
 * checked
