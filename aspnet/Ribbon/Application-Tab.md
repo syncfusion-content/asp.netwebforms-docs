@@ -9,6 +9,7 @@ documentation: ug
 
 # Application Tab
 The Application Tab is used to represent a `Menu` that do some operations, such as File menu to create, open, and print documents. Application Tab classified by `Type` property with the following:
+
 *	Menu
 *	Backstage
 
@@ -61,9 +62,9 @@ Set the UL element `Id` to `MenuItemID` property to create Application Menu and 
 
 ![](Application-Tab_images/Application-Tab_img1.png)
 
- ### Binding Data Source
+### Binding Data Source
  
- Application Menu can be rendered using JSON Data Source. Please refer ['this'](http://help.syncfusion.com/aspnet/menu/data-binding) page to set data source to `ejMenu`.
+Application Menu can be rendered using JSON Data Source. Please refer ['this'](http://help.syncfusion.com/aspnet/menu/data-binding) page to set data source to `ejMenu`.
  
 {% highlight html %}
 
@@ -241,5 +242,5 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
 
 ![](Application-Tab_images/Application-Tab_img3.png)
 
-N> _ Height & width of backstage can be set using `Height` and `Width`, if these are not set, Ribbon’s Height & Width will be considered. _
+N> _Height & width of backstage can be set using `Height` and `Width`, if these are not set, Ribbon’s Height & Width will be considered._
 
