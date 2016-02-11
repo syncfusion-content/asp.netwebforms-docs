@@ -13,11 +13,11 @@ This section explains briefly about how to create a TreeView in ASP.NET Web plat
 
 ## Create your first TreeView in ASP.Net Web
 
-Create an ASP Web application and add necessary Dll’s, CSS and scripts with the help of the given [ASP.Net Web-Getting Started ](http://help.syncfusion.com/aspnet/getting-started# "")Documentation. After creating this project, you can create a TreeView in following ways.
+Create an ASP Web application and add necessary Dll’s, CSS and scripts with the help of the given [ASP.Net Web-Getting Started ](http://help.syncfusion.com/aspnet/getting-started#) documentation. After creating this project, you can create a TreeView in following ways.
 
 ## TreeView using “Nodes” Property
 
-You can create a tree using “Nodes” property of TreeView control. Here there is no necessary to use a DataSource for rendering TreeView.
+You can create a tree using “Nodes” property of TreeView control. Here there is no necessary to use a data source for rendering TreeView.
 
 In the view page, add an element to render the TreeView with specified items.
     
@@ -207,13 +207,13 @@ In the ASPX page, add an element to configure TreeView.
         
     {% endhighlight %}
     
-N>** Note : In remote data source, [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager# "") is used to process the data from services and the value has been assigned to DataSource.**
+N>**In remote data source, [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) is used to process the data from services and the value has been assigned to DataSource.**
 
 ## Create Instance for TreeView
 
-You can create an instance for existing TreeView in following ways. Once a reference has been established, you can use the [API’s](http://help.syncfusion.com/js/api/ejtreeview# "") of TreeView to control its behavior.
+You can create an instance for existing TreeView in following ways. Once a reference has been established, you can use the [API’s](http://help.syncfusion.com/js/api/ejtreeview#) of TreeView to control its behavior.
     
-    {% highlight javascript %}
+    {% highlight html %}
     
     <script type="text/javascript">
         //Specify this after your TreeView creation
@@ -225,11 +225,11 @@ You can create an instance for existing TreeView in following ways. Once a refer
     
     {% endhighlight %}
     
-N>**Note: To configure the API settings after TreeView creation, please refer [API configuration](http://help.syncfusion.com/js/api-configuration# ""), [Invoking Methods](http://help.syncfusion.com/js/invoking-methods# "").** 
+N>**To configure the API settings after TreeView creation, please refer [API configuration](http://help.syncfusion.com/js/api-configuration#), [Invoking Methods](http://help.syncfusion.com/js/invoking-methods#).** 
 
 ## TreeView events
 
-Essential ASP.NET Web TreeView supports all the client side [events](http://help.syncfusion.com/js/api/ejtreeview#events "") which is available in EJ TreeView. Refer following code example to specify an event using EJ Web TreeView element. See Also: [Server Side Events](#_Server_Side_Events "").
+Essential ASP.NET Web TreeView supports all the client side [events](http://help.syncfusion.com/js/api/ejtreeview#events) which is available in EJ TreeView. Refer following code example to specify an event using EJ Web TreeView element. See Also: [Server Side Events](#_Server_Side_Events).
     
     {% highlight html %}
     

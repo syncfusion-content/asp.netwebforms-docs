@@ -10,9 +10,9 @@ keywords: TreeView,  Syncfusion, ASP Web TreeView UG Doc, Populate Data
 
 # Populate Data
 
-TreeView can be populated with local or remote data source by using a property [DataSource](http://help.syncfusion.com/cr/cref_files/aspnetmvc/ejmvc/Syncfusion.EJ~Syncfusion.JavaScript.TreeViewFieldsBuilder~Datasource.html# ""), which is the member of “**TreeView**”
+TreeView can be populated with local or remote data source by using a property [DataSource](http://help.syncfusion.com/cr/cref_files/aspnetmvc/ejmvc/Syncfusion.EJ~Syncfusion.JavaScript.TreeViewFieldsBuilder~Datasource.html), which is the member of **TreeView**
 
-In TreeView, you should use “**DataField**” based properties to go with data source. It specifies the mapping fields for the data source to receive the data, query to process the data and field mappers to map the data members.
+In TreeView, you should use **DataField** based properties to go with data source. It specifies the mapping fields for the data source to receive the data, query to process the data and field mappers to map the data members.
 
 ## Fields
 
@@ -290,7 +290,7 @@ In the view page, add TreeView element and map the properties defined to the cor
     
     {% endhighlight %}
     
-N>**Note: If you want to display nodes in Root level, exclude parent attribute or specify “**0**” in corresponding value.**
+N>**If you want to display nodes in Root level, exclude parent attribute or specify “0” in corresponding value.**
 
 ## Local data
 
@@ -346,8 +346,8 @@ In the view page, add TreeView element and map the properties defined in to the
     
 ## Remote Data
 
-When using remote data binding, the adaptor of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager# "") plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
-[http://help.syncfusion.com/js/datamanager/getting-started#create-your-datamanager-in-javascript](http://help.syncfusion.com/js/datamanager/getting-started#create-your-datamanager-in-javascript "")
+When using remote data binding, the adaptor of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
+[http://help.syncfusion.com/js/datamanager/getting-started#create-your-datamanager-in-javascript](http://help.syncfusion.com/js/datamanager/getting-started#create-your-datamanager-in-javascript)
 
 ### OData
 
@@ -379,7 +379,7 @@ In the view page, add an element to configure TreeView.
     
 ### WebApi
 
-Using [ej.WebApiAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#webapi-adaptor "")**,** you can bind WebApi service data to TreeView as shown in below code example
+Using [ej.WebApiAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#webapi-adaptor), you can bind WebApi service data to TreeView as shown in below code example
 
 In the code behind page, specify the WebAPI data source URL and other settings as follows.
     
@@ -411,10 +411,10 @@ In the view page, add an element to configure TreeView.
     {% endhighlight %}
     
 ### Other Restful web services
-The Custom Adaptor concept of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager# "") allow you to customize or generate your own adaptor which is used to process query and result data. 
-[http://helpjs.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor "")
+The Custom Adaptor concept of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) allow you to customize or generate your own adaptor which is used to process query and result data. 
+[http://helpjs.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor)
 
-When using remote data binding, the adaptor of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager# "") plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
+When using remote data binding, the adaptor of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
 
 In the code behind page, create a data list which contains the details about tree nodes and map the list data to the DataSource property of TreeView.
     
@@ -493,17 +493,15 @@ The following image displays the sample database used.
 <table>
 <tr>
 <td>
-![http://help.syncfusion.com/aspnet/treeview/Populate-Data_images/Populate-Data_img1.png](Populate-Data_images/Populate-Data_img1.jpeg)
-
+    {{ '![http://help.syncfusion.com/aspnet/treeview/Populate-Data_images/Populate-Data_img1.png](Populate-Data_images/Populate-Data_img1.jpeg)' | markdownify }}
 </td>
-<td>
-![http://help.syncfusion.com/aspnet/treeview/Populate-Data_images/Populate-Data_img2.png](Populate-Data_images/Populate-Data_img2.jpeg)
-
+<td>    
+    {{ '![http://help.syncfusion.com/aspnet/treeview/Populate-Data_images/Populate-Data_img2.png](Populate-Data_images/Populate-Data_img2.jpeg)' | markdownify }}
 </td>
 </tr>
 </table>
 
-In the View page, assign the values for DataTextField, DataIdField, DataParentIdField, DataHasChildField. In DataSourceID field assign the ID of the existing SQL data source.
+In the view page, assign the values for DataTextField, DataIdField, DataParentIdField, DataHasChildField. In DataSourceID field assign the ID of the existing SQL data source.
     
     {% highlight html %}
     
@@ -669,7 +667,7 @@ Define an ObjectDataSource in the web page and configure the data source element
     
     {% endhighlight %}
     
-In the View page, assign the values for DataTextField, DataIdField, DataParentIdField, DataHasChildField. In DataSourceID field assign the ID of the existing ObjectDataSource
+In the view page, assign the values for DataTextField, DataIdField, DataParentIdField, DataHasChildField. In DataSourceID field assign the ID of the existing ObjectDataSource
     
     {% highlight html %}
     
@@ -705,17 +703,15 @@ Define a Linq-to-SQL data source in the web page and configure the data source a
 <table>
 <tr>
 <td>
-![http://help.syncfusion.com/aspnet/treeview/Populate-Data_images/Populate-Data_img3.png](Populate-Data_images/Populate-Data_img3.jpeg)
-
+    {{ '![http://help.syncfusion.com/aspnet/treeview/Populate-Data_images/Populate-Data_img3.png](Populate-Data_images/Populate-Data_img3.jpeg)' | markdownify }}
 </td>
 <td>
-![http://help.syncfusion.com/aspnet/treeview/Populate-Data_images/Populate-Data_img4.png](Populate-Data_images/Populate-Data_img4.jpeg)
-
+    {{ '![http://help.syncfusion.com/aspnet/treeview/Populate-Data_images/Populate-Data_img4.png](Populate-Data_images/Populate-Data_img4.jpeg)' | markdownify }}
 </td>
 </tr>
 </table>
 
-In the View page, assign values for DataTextField, DataIdField, DataParentIdField DataHasChildField. In DataSourceID field assign the ID of the existing Linq-to-SQL data source.
+In the view page, assign values for DataTextField, DataIdField, DataParentIdField DataHasChildField. In DataSourceID field assign the ID of the existing Linq-to-SQL data source.
     
     {% highlight html %}
     
@@ -746,7 +742,7 @@ TreeView provides XML data binding support to populate TreeeView nodes, so that 
 
 The following steps explain the XML data binding to TreeView.
 
-In the View page, assign the values for DataTextField, DataParentIdField. In DataSourceID field assign the ID of the existing XML datasource.
+In the view page, assign the values for DataTextField, DataParentIdField. In DataSourceID field assign the ID of the existing XML datasource.
     
     {% highlight html %}
     
@@ -923,7 +919,7 @@ In the code behind page, create a data list which contains the details about tre
         
     {% endhighlight %}
     
-In the View page, add a TreeView element and map the properties defined in to the corresponding fields of “Datasource” and enable load on demand option.
+In the view page, add a TreeView element and map the properties defined in to the corresponding fields of “Datasource” and enable load on demand option.
     
     {% highlight html %}
     

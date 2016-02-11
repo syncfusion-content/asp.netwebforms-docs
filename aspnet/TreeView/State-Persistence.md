@@ -9,17 +9,17 @@ keywords: TreeView,  Syncfusion, ASP Web TreeView UG Doc, State Persistence
 
 # State Persistence
 
-TreeView state can be persisted by using ‘EnablePersistence’. In which user intractable model values only has been persisted in order to maintain performance.
+TreeView state can be persisted by using ‘**EnablePersistence**’. In which user intractable model values only has been persisted in order to maintain performance.
 
 The model values of below are maintained through Id basis of tree node.
 
 * selected
 * checked
-* expanded/collapsed state
+* expanded/ collapsed state
 
-N>**Note: In UL li template state has been persisted by index.**
+N>**In UL li template state has been persisted by index.**
 
-TreeView stores its model in local storage / cookies of browser before page refreshes and reinitialized with their stored model after refresh
+TreeView stores its model in local storage/ cookies of browser before page refreshes and reinitialized with their stored model after refresh.
 
 In the code behind page, create a data list which contains the details about tree nodes and map the list data to DataSource property of TreeView.
     
@@ -53,7 +53,7 @@ In the code behind page, create a data list which contains the details about tre
         
     {% endhighlight %}
     
-In the ASPX page, add TreeView elemnt with following properties
+In the ASPX page, add TreeView elemnt with following properties.
     
     {% highlight html %}
     
