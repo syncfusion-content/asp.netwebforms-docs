@@ -15,6 +15,7 @@ The Scheduler can be customized in various aspects like -
 * Setting different date format 
 * Specifying minimum and maximum date ranges 
 * Customize the entire appointment window with the user required fields
+* Setting different time Slot duration
 
 ## Hour Customization
 
@@ -65,6 +66,30 @@ The work hours are differentiated from other normal hours, by depicting the Sche
 {% endhighlight %}
 
 N> By default, work hour **Start** is set to **9** and work hour **End** is set to **18**. Also, the Scheduler cells automatically scrolls up or down based on the work start hour that is set to it, to make the user to view that particular time initially.
+
+## TimeScale
+
+The `TimeScale` is an object collection which allows the user to set the required time slot duration to be displayed on the Scheduler. It provides option to customize both the major and minor slots using template option. It includes the below properties such as,
+
+* `Enable` - It accepts true or false value, denoting whether to show or hide the timescale option. Its default value is `true`.
+* `MajorSlot` – Specifies the major time slot duration.
+* `MinorSlotCount` – Specifies the value based on which the minor time slots are divided.
+
+The MajorSlot and MinorSlot can be set on the Scheduler with the following code example.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014" OnServerDragOver="Schedule1_ServerDragOver" OnServerResizing="Schedule1_ServerResizing">
+     <TimeScale MinorSlotCount="5" MajorSlot="60" />
+    <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule"/>
+</ej:Schedule>
+
+ <asp:SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings:ScheduleConnectionString %>"
+            SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+
+{% endhighlight %}
 
 ## Date Customization
 

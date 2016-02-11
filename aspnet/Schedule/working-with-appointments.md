@@ -361,6 +361,251 @@ The following code example shows how to cancel the dragging functionality with t
 
 {% endhighlight %}
 
+### External Drag and Drop
+
+It is possible to drag and drop the external items to and fro the Scheduler control. This action is handled through the property `AppointmentDragArea` 
+which specifies the draggable area name stating whether the appointments can be dragged outside of the control or within it.
+
+The following code example lets you drag and drop the external items from the tree view control to the Scheduler.
+
+{% highlight html %}
+
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
+    <div class="row">
+         <div class="col-xs-4 col-sm-2" style="float:left">
+              <span class=""><b>Tutorials </b> </span>
+                <ej:TreeView ID="treeview" runat="server" Height="100%" AllowDragAndDrop="true" AllowDropChild="false" AllowDropSibling="false" AllowDragAndDropAcrossControl="true" ClientSideOnNodeDropped="onNodeDropped" ClientSideOnNodeDragStarted="onNodeDrag">
+                    <Nodes>
+                        <ej:TreeViewNode Expanded="True" Text="HTML">
+                            <Nodes>
+                                 <ej:TreeViewNode Text="Introduction"></ej:TreeViewNode>
+                                 <ej:TreeViewNode Text="Editors"></ej:TreeViewNode>
+                                 <ej:TreeViewNode Text="Styles"></ej:TreeViewNode>
+                                 <ej:TreeViewNode Text="Formatting"></ej:TreeViewNode>
+                                 <ej:TreeViewNode Text="Tables"></ej:TreeViewNode>
+                            </Nodes>
+                        </ej:TreeViewNode>
+                    </Nodes>
+                </ej:TreeView>
+          </div>
+
+          <div style="float:left" class="col-xs-18 col-sm-9">
+               <span class=""><b> Training Scheduler Panel</b> <br></span>
+								<i>Note</i>: To Schedule classes, drag the topics from <b>Tutorials</b> and drop it over <b>Training Scheduler Panel</b>
+            <ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CellWidth="40px" CurrentDate="5/5/2014" Views="Day,Week,WorkWeek,Month" ShowCurrentTimeIndicator="false" EnableRecurrenceValidation="false" AppointmentDragArea="body" DragStop="onDragStop">
+                <Group Resources="Owners" />
+                    <Resources>
+                    <ej:Resources Field="OwnerId" Name="Owners" Title="Owner" AllowMultiple="true">
+                    <ResourceSettings Color="color" Id="id" Text="text">
+                </ResourceSettings>
+            </ej:Resources>
+        </Resources>
+         <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" ResourceFields="OwnerId"/>
+        </ej:Schedule>
+      </div>
+
+    </div>
+    <div id="customWindow" style="display: none">
+        <div id="custom">
+            <table width="100%" cellpadding="5">
+                <tbody>
+                    <tr>
+                        <td>
+                            Subject:
+                        </td>
+                        <td colspan="2">
+                            <input id="subject" type="text" value="" name="Subject" style="width: 100%" readonly />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Description:
+                        </td>
+                        <td colspan="2">
+                            <textarea id="customdescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            StartTime:
+                        </td>
+                        <td>
+                            <input id="StartTime" type="text" value="" name="StartTime" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            EndTime:
+                        </td>
+                        <td>
+                            <input id="EndTime" type="text" value="" name="EndTime" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Resource:
+                        </td>
+                        <td colspan="2">
+                            <input id="resource" type="text" value="" name="Resource" style="width: 100%" readonly/>
+                        </td>
+                    </tr>
+                    <tr style="display: none">
+                        <td>
+                            ownerId:
+                        </td>
+                        <td colspan="2">
+                            <input id="ownerId" type="text" name="ownerId" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <button type="submit" onclick="cancel()" id="btncancel" style="float:right;margin-right:20px;margin-bottom:10px;">Cancel</button>
+            <button type="submit" onclick="save()" id="btnsubmit" style="float:right;margin-right:20px;margin-bottom:10px;">Save</button>
+        </div>
+    </div>
+
+     <asp:SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings:ScheduleConnectionString %>"
+            SelectCommand="SELECT * FROM [MultipleResource]"></asp:SqlDataSource>
+</asp:Content>
+
+<asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
+    <script type="text/javascript">
+        $(function () {
+            $("#customWindow").ejDialog({
+                width: 600,
+                height: "auto",
+                position: { X: 400, Y: 200 },
+                showOnInit: false,
+                enableModal: true,
+                title: "Create Appointment",
+                enableResize: false,
+                allowKeyboardNavigation: false,
+                close: "clearFields",
+
+            });
+            $("#btncancel").ejButton({ width: '85px' });
+            $("#btnsubmit").ejButton({ width: '85px' });
+        });
+        function onNodeDrag(e) {
+            if (e.targetElementData.parentId == "") return false;
+        }
+        function onNodeDropped(e) {
+            if ($(e.target).parents(".e-schedule").length != 0) {
+                var scheduleObj = $("#Schedule1").data("ejSchedule");
+                var index = $($(e.target).context).hasClass("e-workcells") || $($(e.target).context).hasClass("e-alldaycells") ? $($(e.target).context).index() : $($(e.target).context).hasClass("e-alldaycells") ? $($(e.target).context).index() : 7 - ((parseInt($($(e.target).context).index() / 7) + 1) * 7 - $($(e.target).context).index()) + ($($(e.target).context).parent().index() * 7);
+                if (scheduleObj.model.orientation == "horizontal") {
+                    index = scheduleObj.model.showTimeScale ? scheduleObj.currentView() !== "month" && !(scheduleObj._isCustomView()) ? Math.floor(index / ((scheduleObj.model.endHour - scheduleObj.model.startHour) * 2)) : index : $(e.event.target).index();
+
+                }
+                var renderDate = (scheduleObj.model.orientation == "horizontal" && scheduleObj.currentView() == "month") ? scheduleObj.monthDays : scheduleObj.model.orientation == "vertical" ? scheduleObj.dateRender : scheduleObj._dateRender;
+                renderDate = scheduleObj.model.orientation == "horizontal" && scheduleObj.currentView() == "customview" && scheduleObj._dateRender.length <= 7 ? scheduleObj._dateRender : renderDate;
+                var curDate = new Date(renderDate[index]);
+
+                var _target = $($(e.target).context);
+                if ($(_target).hasClass("e-workcells") && (scheduleObj.model.showTimeScale) && scheduleObj.currentView() !== "month" && !(scheduleObj._isCustomView())) {
+                    var time = scheduleObj.model.orientation == "vertical" ? scheduleObj.model.startHour + ($(e.event.target).parent().index() / 2) : scheduleObj.model.startHour + (($(e.event.target).index() - (((scheduleObj.model.endHour - scheduleObj.model.startHour) * 2) * index)) / 2);
+                    var timemin = time.toString().split(".");
+                    var cur_StartTime = new Date(curDate).setHours(parseInt(timemin[0]), parseInt(timemin[1]) == 5 ? 30 : 00);
+                    var min = (parseInt(new Date(cur_StartTime).getHours()) == 23 && parseInt(new Date(cur_StartTime).getMinutes()) == 30) ? new Date(cur_StartTime).getMinutes() + 29 : new Date(cur_StartTime).getMinutes() + 30;
+                    var cur_EndTime = new Date(new Date(cur_StartTime).setMinutes(min));
+                }
+                else if ($(_target).hasClass("e-workcells") && scheduleObj.model.orientation == "horizontal" && scheduleObj.currentView() == "month") {
+                    var cur_StartTime = new Date(new Date(curDate).setHours(0, 0));
+                    var cur_EndTime = new Date(new Date(curDate).setHours(23, 59));
+                }
+                else {
+                    var cur_StartTime = new Date(new Date(curDate).setHours(0, 0));
+                    var cur_EndTime = new Date(new Date(curDate).setHours(23, 59));
+                    scheduleObj._appointmentAddWindow.find(".allday").ejCheckBox({ checked: true });
+                }
+
+                var StartDate = new Date(cur_StartTime);
+                var StartTime = new Date(cur_StartTime);
+                var endTime = cur_EndTime;
+
+                // To find the resource details               
+                var resource = scheduleObj._getResourceValue($($(e.target).context));
+
+                // custom appointmnt window 
+
+                $("#subject").val(e.droppedElementData.text);
+                $("#customdescription").val(e.droppedElementData.text);
+                $("#StartTime").ejDateTimePicker({ value: new Date(StartTime) });
+                $("#EndTime").ejDateTimePicker({ value: new Date(endTime) });
+                $("#resource").val(resource.text);
+                $("#ownerId").val(resource.id);
+                $("#customWindow").ejDialog("open");
+            }
+        }
+        function save() {
+            var obj = {};
+            obj["Subject"] = $("#subject")[0].value;
+            obj["Description"] = $("#customdescription")[0].value;
+            obj["StartTime"] = new Date($("#StartTime")[0].value);
+            obj["EndTime"] = new Date($("#EndTime")[0].value);
+            obj["OwnerId"] = $("#ownerId")[0].value;
+            $("#customWindow").ejDialog("close");
+            var object = $("#Schedule1").data("ejSchedule");
+            object.saveAppointment(obj);
+        }
+
+        function cancel() {
+            $("#customWindow").ejDialog("close");
+        }
+
+        function onDragStop(args) {
+            if ($(args.event.target).parents(".e-treeview").length != 0) {
+                $("#treeview").ejTreeView({ allowDropChild: true, allowDropSibling: true });
+                treeObj = $("#treeview").ejTreeView('instance');
+                var newNode = { id: args.appointment.Id, text: args.appointment.Subject };
+                treeObj.addNode(newNode, $(args.event.target));
+                args.cancel = true;
+            }
+        }
+    </script>
+</asp:content>
+
+<asp:Content runat="server" ID="Style" ContentPlaceHolderID="StyleSection">
+    <style type="text/css">
+        #custom table td{
+			padding:5px;
+		}
+        .e-icon.e-minus:before {
+		content: "\e676";
+		}
+     </style>
+</asp:Content>
+
+{% endhighlight %} 
+
+{% highlight c# %}
+
+namespace WebSampleBrowser.Schedule
+{
+    public partial class ExternalDragAndDrop : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            List<Rooms> owners = new List<Rooms>();
+            owners.Add(new Rooms { text = "Nancy", id = "1", color = "#f8a398" });
+            owners.Add(new Rooms { text = "Steven", id = "3", color = "#56ca85" });
+            owners.Add(new Rooms { text = "Michael", id = "5", color = "#51a0ed" });
+            Schedule1.Resources[0].ResourceSettings.DataSource = owners;
+        }
+        public class Rooms
+        {
+            public string text { set; get; }
+            public string id { set; get; }
+            public string groupId { set; get; }
+            public string color { set; get; }
+        }
+    }
+}
+
+{% endhighlight %}
+
 ## Resize
 
 Resizing an appointment is another way to change its start or end time. Mouse hover on the appointments, so that the resizing handlers gets displayed on either sides of the appointment which allows resizing. The resizing functionality can be enabled/disabled by setting the `EnableAppointmentResize` property. By default it is set to `true`.
