@@ -44,7 +44,7 @@ Multiple selected elements are visually represented as shown.
 
 The client side methods `addSelection`, `clearSelection` and `removeSelection` help select/unselect elements at runtime. The following code example illustrates how to select/unselect an item through programmatically.
 
-{% highlight html %}
+{% highlight js %}
 
 var diagram = $("#DiagramContent").ejDiagram("instance");
 var node = diagram.findNode("node1");
@@ -63,7 +63,7 @@ diagram.removeSelection(node);
 You can get the current selected items from the `children` collection of `selectedItems` property of the Diagram model.
 The client side method `updateSelector` helps you to change the size, position, and rotation angle of the selected elements at runtime. The following code example illustrates how to read the selected items and how to update the position, size, and rotation angle.
 
-{% highlight html %}
+{% highlight js %}
 
 var diagram = $("#DiagramContent").ejDiagram("instance");
 
@@ -146,7 +146,7 @@ Source and target points of the selected connectors are represented with two han
 
 Diagram provides support to drop a node/connector over another node/connector. Drop event is raised to notify that an element is dropped over another one and it is disabled by default. It can enabled with the `Constraints` property. The following code illustrates how to enable **dropping**.
 
-{% highlight html %}
+{% highlight ASPX %}
 
     <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px" OnClientDrop="ondrop">
         <Nodes>
@@ -164,7 +164,7 @@ Diagram provides support to drop a node/connector over another node/connector. D
 
 The following code examples illustrates how to insert a child to a group interactively.
 
-{% highlight html %}
+{% highlight ASPX %}
      <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px" OnClientDrop="ondrop">
      </ej:Diagram> 
 	 
@@ -190,7 +190,7 @@ The `tool` property of user handle should be set with any appropriate tool to en
 
 The following code example illustrates how to draw a user handle.
 
-{% highlight html %}
+{% highlight js %}
 
 // Defines a tool to interact with the user handle
 var CloneTool = (function (base) {
@@ -235,7 +235,7 @@ Position, size, and style of the user handle can be customized with a set of pre
 
 The following code example illustrates how to customize the appearance of the user handle.
 
-{% highlight html %}
+{% highlight js %}
 
 var UserHandlePositions = ej.datavisualization.Diagram.UserHandlePositions;
 var userHandles = [];

@@ -25,7 +25,7 @@ You can also customize the appearance of off-page regions with the property `Bac
 
 The following code illustrates how to customize the page size and the appearance of page and off-page.
 
-{% highlight html %}
+{% highlight ASPX %}
 
         <%--   Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
@@ -52,7 +52,7 @@ When MultiplePage is enabled, size of the page dynamically increases or decrea
 `MultiplePage` and `ShowPageBreak` properties of page settings allow you to enable/disable multiple pages and page breaks respectively.
 The following code illustrates how to enable multiple page and page break lines.
 
-{% highlight html %}
+{% highlight ASPX %}
 
      <%--   Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
@@ -69,7 +69,7 @@ The following code illustrates how to enable multiple page and page break lines.
 
 The following code example illustrates how to define boundaryConstraints.
 
-{% highlight html %}
+{% highlight ASPX %}
 
 
         <%--   Initializes Diagram--%>

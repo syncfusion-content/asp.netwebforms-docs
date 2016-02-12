@@ -18,7 +18,7 @@ To initialize a palette, define a palette object with the property `Name` that i
 You can add any number of palettes to the `Palettes` collection of the symbol palette.
 The following code example illustrates how to define a palette and how its added to symbol palette.
 
-{% highlight html %}
+{% highlight ASPX %}
 
     <ej:SymbolPalette ID="symbolpalette" Width="100%" Height="100%" runat="server">
         <Palettes>
@@ -37,7 +37,7 @@ The following image shows the symbol palette with multiple palette Items.
 
 The palette items need to be defined and added to the `Items` collection of the palette. You can create a palette item as a node, group, connector, lane, or phase except swimlane. To create a palette item, you first need to define that element as JSON. The following code example illustrates how to define a palette item.
 
-{% highlight html %}
+{% highlight ASPX %}
 
     <ej:SymbolPalette ID="symbolpalette" Width="100%" Height="100%" runat="server">
         <Palettes>
@@ -45,8 +45,8 @@ The palette items need to be defined and added to the `Items` collection of the 
             <ej:DiagramPalette Name="Basic Shapes" Expanded="true">
                 <Items>
                     <%--define a node with its size, position and shape.--%>
-                    <ej:BasicShape Width="100" Height="100" OffsetX="100" Name="Ellipse" 
-                        FillColor="red" OffsetY="100" Shape="Ellipse">
+                    <ej:BasicShape Width="40" Height="40" OffsetX="20" Name="Ellipse" 
+                        OffsetY="20" Shape="Ellipse">
                     </ej:BasicShape>
                 </Items>
             </ej:DiagramPalette>
@@ -61,14 +61,13 @@ Note : You can add any item to palette such as node, connector, group, lane, pha
 
 You can customize the size of the individual palette items. The `PaletteItem` property of node enables you to define the size of the symbol items. The following code example illustrates how to change the size of a palette item.
 
-{% highlight html %}
+{% highlight ASPX %}
 
     <ej:SymbolPalette ID="symbolpalette" Width="100%" Height="100%" runat="server">
         <Palettes>
             <ej:DiagramPalette Name="Basic Shapes" Expanded="true">
                 <Items>
-                    <ej:BasicShape Width="100" Height="100" OffsetX="100" Name="Ellipse" 
-                        FillColor="red" OffsetY="100" Shape="Ellipse">
+                    <ej:BasicShape Width="40" Height="80" Name="Rectangle">
                         <%--Specifies the size of palette Item--%>
                         <PaletteItem Width="50" Height="50">
                             <Margin Left="20" Top="20" Right="20" Bottom="20">
@@ -95,15 +94,14 @@ Palette item size can be based on the actual size of the node, regardless of the
 
 The `enableScale` property of the palette item enables you to customize the size of the item regardless of the precedence. The following code example illustrates how to customize the palette item size.
 
-{% highlight html %}
+{% highlight ASPX %}
 
     <ej:SymbolPalette ID="symbolpalette" Width="100%" Height="100%" runat="server">
         <Palettes>
             <%--define a palette with its name and expands its children.--%>
             <ej:DiagramPalette Name="Basic Shapes" Expanded="true">
                 <Items>
-                    <ej:BasicShape Width="40" Height="80" Name="Rectangle" 
-                        FillColor="red" Shape="Rectangle">
+                    <ej:BasicShape Width="40" Height="80" Name="Rectangle">
                         <%--Enables to fit the content into the specified palette item size--%>
                         <PaletteItem EnableScale="true">
                         </PaletteItem>
@@ -149,7 +147,7 @@ Palettes can be annotated with its header texts. Following code example illustra
 
 Also, you can embed any Html element into a palette header by defining the ScriptTemplate id to palette's `TemplateId` property. Following code example illustrates how to customize palette headers.
 
-{% highlight html %}
+{% highlight ASPX %}
 
 
     &lt;!--dependency scripts--&gt;
@@ -169,7 +167,7 @@ Also, you can embed any Html element into a palette header by defining the Scri
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight ASPX %}
 
     <ej:SymbolPalette ID="symbolpalette" Width="100%" Height="100%" runat="server">
         <Palettes>
@@ -191,14 +189,13 @@ Image, simple snippet to customize the preview size
 
 You can customize the preview size of the individual palette items. The `PaletteItem` property of node enables you to define the preview size of the symbol items. The following code example illustrates how to change the preview size of a palette item.
 
-{% highlight html %}
+{% highlight ASPX %}
 
     <ej:SymbolPalette ID="symbolpalette" Width="100%" Height="100%" DiagramId="DiagramContent"  runat="server">
         <Palettes>
             <ej:DiagramPalette Name="Basic Shapes">
                 <Items>
-                    <ej:BasicShape Width="50" Height="50" Name="Rectangle" 
-                        FillColor="red" Shape="Rectangle">
+                    <ej:BasicShape Width="50" Height="50" Name="Rectangle">
                         <%--Specifies the individual palette item preview size--%>
                         <PaletteItem PreviewHeight="100" PreviewWidth="100">
                         </PaletteItem>
@@ -214,7 +211,7 @@ You can customize the preview size of the individual palette items. The `Palette
 
 You can also customize the preview size of the all palette items. The `PreviewWidth` and `PreviewHeight` property of SymbolPalette enables you to define the preview size to all the symbol palette items. The following code example illustrates how to change the preview size of a symbol palette items.
 
-{% highlight html %}
+{% highlight ASPX %}
 
     <ej:SymbolPalette ID="symbolpalette" Width="100%" Height="100%" DiagramId="DiagramContent"
         PreviewWidth="100" PreviewHeight="100" runat="server"><%--Specifies the preview size to symbol palette items. --%>
@@ -222,8 +219,7 @@ You can also customize the preview size of the all palette items. The `PreviewWi
         <Palettes>
             <ej:DiagramPalette Name="Basic Shapes">
                 <Items>
-                    <ej:BasicShape Width="50" Height="50" Name="Rectangle" 
-                        FillColor="red" Shape="Rectangle">
+                    <ej:BasicShape Width="50" Height="50" Name="Rectangle" Shape="Rectangle">
                     </ej:BasicShape>
                 </Items>
             </ej:DiagramPalette>
@@ -237,7 +233,7 @@ You can also customize the preview size of the all palette items. The `PreviewWi
 Symbol palette allows to sets the offset of the dragging helper relative to the mouse cursor.
 
 
-{% highlight html %}
+{% highlight ASPX %}
 
     <ej:SymbolPalette ID="symbolpalette" Width="100%" Height="100%" runat="server">
         <%--Specifies the offset of the dragging helper relative to the mouse cursor.--%>

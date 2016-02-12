@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Enable/Disable the optional features
-description: How to enable/disable the optional features?
+description: How to Enable/Disable the optional features of ejDiagram?
 platform: aspnet
 control: Diagram
 documentation: ug
@@ -19,7 +19,7 @@ Diagram constraints allow to enable or disable the following behaviors.
 * Zoom and Pan
 * Undo Redo
 
-For more information about Diagram contraints, refer to [Diagram Constraints](/js/api/global#diagramconstraints "Diagram Constraints").
+For more information about Diagram constraints, refer to [Diagram Constraints](/js/api/global#diagramconstraints "Diagram Constraints").
 
 **Example**
 
@@ -27,7 +27,7 @@ The following example illustrates how to disable page editing.
 
 {% tabs %}
 
-{% highlight html %}
+{% highlight ASPX %}
 
   <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" >
   </ej:Diagram>
@@ -63,7 +63,7 @@ NodeConstraints allows to enable or disable the following behaviors of node.
 * Drag label
 * Define tooltip
 
-For more information about node contraints, refer to [Node Constraints](/js/api/global#nodeconstraints "Node Constraints")
+For more information about node constraints, refer to [Node Constraints](/js/api/global#nodeconstraints "Node Constraints")
 
 **Example**
 
@@ -95,7 +95,7 @@ ConnectorConstraints allow to enable or disable certain behaviors of Connectors.
 * Bridging
 * Label dragging
 
-For more information about connector contraints, refer to [Connector Constraints](/js/api/global#connectorconstraints "Connector Constraints")
+For more information about connector constraints, refer to [Connector Constraints](/js/api/global#connectorconstraints "Connector Constraints")
 
 **Example**
 
@@ -118,7 +118,7 @@ You can enable or disable certain behaviors of Port. They are as follows.
 
 * Connect
 
-For more information about port contraints, refer to [Port Constraints](/js/api/global#portconstraints "Port Constraints")
+For more information about port constraints, refer to [Port Constraints](/js/api/global#portconstraints "Port Constraints")
 
 **Example**
 
@@ -140,7 +140,7 @@ Selector visually represents the selected elements with certain editable thumbs.
 * Rotator
 * User handles
 
-For more information about Selector contraints, refer to [Selector Constraints](/js/api/global#selectorconstraints "Selector Constraints")
+For more information about Selector constraints, refer to [Selector Constraints](/js/api/global#selectorconstraints "Selector Constraints")
 
 **Example**
 

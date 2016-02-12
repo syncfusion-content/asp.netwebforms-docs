@@ -59,7 +59,7 @@ There are some limitations in saving/loading the Diagrams and they are listed as
 * When define the events as a string, functions need to be maintained in the application level while loading the diagram.
 
 {% tabs %}
-{% highlight html %}
+{% highlight ASPX %}
 
     <ej:Diagram ID="DiagramContent" runat="server" Height="400px" Width="100%">
     </ej:Diagram>
@@ -83,7 +83,7 @@ function nodeCollectionChange(args) {
 
 * Html / Native template needs to be retained in the application level, while loading the native and html node.
 
-{% highlight html %}
+{% highlight ASPX %}
 
 <!-- Template content needs to be retained while loading the diagram.-->
 <script id="htmlTemplate" type="text/x-jsrender">
@@ -102,7 +102,7 @@ diagram.load(json);
 
 * Css classes have to be retained in the application level, while loading the Diagram.
 
-{% highlight html %}
+{% highlight ASPX %}
 
 <style>
 	<!-- css class needs to be retained while loading the Diagram.-->

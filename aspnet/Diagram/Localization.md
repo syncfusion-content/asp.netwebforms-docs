@@ -14,7 +14,7 @@ documentation: ug
 
 The following code illustrates how to provide localization support for Context Menu items.
 
-{% highlight html %}
+{% highlight ASPX %}
 
   // Defines the context menu items with spanish language
   ej.datavisualization.Diagram.Locale["es-ES"] = {

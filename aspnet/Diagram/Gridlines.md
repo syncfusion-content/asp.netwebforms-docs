@@ -15,7 +15,7 @@ documentation: ug
 
 The `SnapSettings.SnapConstraints` enables you to show/hide the gridlines. The following code example illustrates how to show or hide gridlines.
 
-{% highlight html %}
+{% highlight ASPX %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%">
 	<%--Shows both horizontal and vertical gridlines--%>
 	<SnapSettings SnapConstraints="ShowLines" />
@@ -31,7 +31,7 @@ To show only horizontal/vertical gridlines or to hide gridlines, refer to [Const
 You can customize the appearance of the gridlines by using a set of predefined properties. To explore those properties, refer to [Gridlines](/js/api/ejDiagram#snapsettings:horizontalgridlines "Gridlines")
 The `HorizontalGridLines` and `VerticalGridLines` properties allow to customize the appearance of the gridlines. The following code example illustrates how to customize the appearance of gridlines.
 
-{% highlight html %}
+{% highlight ASPX %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%">
 	<SnapSettings SnapConstraints="ShowLines">
 		<HorizontalGridlines LineColor="blue" LineDashArray="2 2"></HorizontalGridlines>
@@ -89,7 +89,7 @@ This feature allows the Diagram objects to snap to the nearest intersection of g
 
 Snapping to gridlines can be enabled/disabled with the `SnapSettings.SnapConstraints`. The following code example illustrates how to enable/disable the snapping to gridlines.
 
-{% highlight html %}
+{% highlight ASPX %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%">
 	<%--Enables snapping to both the horizontal and vertical lines.--%>
 	<SnapSettings SnapConstraints="SnapToLines" />
@@ -120,7 +120,7 @@ The snap-to-object provides visual cues to assist with aligning and spacing Diag
 
 The `EnableSnapToObject` property allows you to enable/disable smart guides. The following code example illustrates how to enable/disable the smart guides.
 
-{% highlight html %}
+{% highlight ASPX %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%">
 	<%--Enables snapping to both the horizontal and vertical lines.--%>
 	<SnapSettings EnableSnapToObject=true />

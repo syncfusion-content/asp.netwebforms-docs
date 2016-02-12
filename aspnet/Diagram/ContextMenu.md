@@ -10,14 +10,14 @@ documentation: ug
 # Context Menu
 
 In graphical user interface (GUI), a context menu is a type of menu that appears when you perform right-click operation. Nested level of context menu items can be created.
-Diagram provides some in-built context menu items and allows to define custom menu items.
+Diagram provides some built-in context menu items and allows to define custom menu items.
 
 ## Default Context Menu
 
 The `EnableContextMenu` property helps you to enable/disable the context menu. Diagram provides some default context menu items to ease the execution of some frequently used commands.
 The following code illustrates how to enable the default context menu items.
 
-{% highlight html %}
+{% highlight ASPX %}
 <%--Disables the context menu--%>
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" EnableContextMenu="false" >
 </ej:Diagram>
@@ -32,7 +32,7 @@ Apart from the default context menu items, you can define some additional contex
 The following code example illustrate how to add custom context menu items.
 
 {% tabs %}
-{% highlight html %}
+{% highlight ASPX %}
 <%--Enables the context menu--%>
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" EnableContextMenu="true" >
 </ej:Diagram>
@@ -88,7 +88,7 @@ The following code example illustrates how to customize the icon of context menu
 You would be notified with events when you try to open the context menu items(`contextMenuBeforeOpen`) and when you click the menu items(`contextMenuClick`). The following code example illustrates how to define those events.
 
 {% tabs %}
-{% highlight html %}
+{% highlight ASPX %}
 <%--Enables the context menu--%>
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%"  
 	EnableContextMenu="false" OnClientContextMenuBeforeOpen="contextMenuBeforeOpen"

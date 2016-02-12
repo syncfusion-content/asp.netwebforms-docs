@@ -135,7 +135,7 @@ When more than one of those tools are applied, a tool is activated based on the 
 
 You can set the desired tool to the `tool` property of the Diagram model. The following code illustrates how to enable single/multiple tools.
 
-{% highlight html %}
+{% highlight ASPX %}
 
      <%--   Initializes Diagram and set the selection tool as single select--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px" Tool="SingleSelect">
