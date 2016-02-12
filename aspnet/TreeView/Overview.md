@@ -13,11 +13,11 @@ The Essential ASP.NET Web TreeView component provides all the functionalities th
 
 ## Key features
 
-* [Data Population](http://help.syncfusion.com/aspnet/treeview/populate-data) 
-* [Node manipulations](http://help.syncfusion.com/aspnet/treeview/tree-node)
-* [Drag and drop](http://help.syncfusion.com/aspnet/treeview/drag-and-drop)
-* [Template](http://help.syncfusion.com/aspnet/treeview/template-option)
-* [Checkbox](http://help.syncfusion.com/aspnet/treeview/checkboxes)
+* [Data Population](populate-data) 
+* [Node manipulations](tree-node)
+* [Drag and drop](drag-and-drop)
+* [Template](template-option)
+* [Checkbox](checkboxes)
 * Accessibility
 * Appearance and styling
 
