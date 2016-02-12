@@ -9,18 +9,16 @@ documentation: ug
 
 # Overview
 
-The TreeView control for ASP represents hierarchical data in a tree-like structure. It allows editing, dragging items to other tree views, adding check boxes, and more. TreeView can be generated from UL LI elements, JSON data source or using OData service.
+The Essential ASP.NET Web TreeView component provides all the functionalities that is available in [EJ TreeView](http://help.syncfusion.com/js/api/ejtreeview), since it is a server side wrapper of [EJ TreeView](http://help.syncfusion.com/js/api/ejtreeview) widget. It represents hierarchical data in a tree-like structure and allows to edit, drag n drop, selection with checkboxes and more. TreeView can be generated from the specified item list, list of objects or using OData services.
 
-### Key Features
+## Key features
 
-* Node editing: The TreeView control permits you to edit a node.
-* Node cut, copy, and paste: Cut or copy a node and paste in same TreeView node.
-* Drag and drop: Drag and drop the nodes within the TreeView control, or drag a particular node from one tree to another tree.
-* Check box support: Enables three states for the checkbox and checked node.
-* Data binding: You can populate TreeView items by using data binding support like JSON and OData service.
-* Load on demand: Populate child item on demand.
-* Themes: Essential ASP controls  consists of 13 built in themes, including 6 metro and 6 gradient effects, and also supports custom skin option to set user defined themes.
-* Template support: You can generate custom node “LI” element by using the jsrender template.
-* RTL: Node text displays the RTL languages.
-* Rich Events & Methods: There are more flexible and efficient methods and events.
-* Keyboard navigation: You can interact with the TreeView control by using the keyboard.
+* [Data Population](http://help.syncfusion.com/aspnet/treeview/populate-data) 
+* [Node manipulations](http://help.syncfusion.com/aspnet/treeview/tree-node)
+* [Drag and drop](http://help.syncfusion.com/aspnet/treeview/drag-and-drop)
+* [Template](http://help.syncfusion.com/aspnet/treeview/template-option)
+* [Checkbox](http://help.syncfusion.com/aspnet/treeview/checkboxes)
+* Accessibility
+* Appearance and styling
+
+
