@@ -9,697 +9,121 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly on how to create a ListBox control in your application.
+This section helps to understand the getting started of the ListBox widget with the step-by-step instructions.
 
-Create your first ListBox in ASP.NET
+Create an ASP Project and add the necessary DLL’s and scripts with the help of the given [ASP Getting Started](http://help.syncfusion.com/aspnet/getting-started) documentation.
 
-Here you can learn how to customize ListBox in Contact Selection tool. This allows you to display the list of contacts, to select and move them to the next ListBox that has the selected items. The following example illustrates simulator of Group Creation tool like Skype messenger.
+## Create ListBox
 
-The following screenshot demonstrates the functionality of ListBox with Multi-Selection and Drag and Drop features.
-
-
-
-![](Getting-Started_images/Getting-Started_img1.png)
-
-
-
-In the above screenshot, you can select a list item from the first ListBox widget. After you select the item, you can move the selected item to the second ListBox widget. 
-
-## Create ListBox Widget
-
-Essential ASP.NET ListBox widget renders with built-in features.
-
-The following steps are used to create ListBox control.  
-
-You can create a WEB Project and add necessary Dll and script with the help of the given [ASP-Getting Started Documentation.](http://help.syncfusion.com/aspnet/listbox/getting-started)
-Add the following code to the corresponding ASPX page to render the ListBox.
-
-
+Create listbox wrapper with its listbox items as in the below code snippet.
 
 {% highlight html %}
 
-<div id="sample">
-
-    <h5><b>Add people</b></h5>
-
-    <h5>Choose a contact and click move button to add in group </h5>
-
-    <div id="control">
-
-        <div id="container1">
-
-            Contacts List
-
-            <ej:listbox id="select" runat="server"></ej:listbox>
-
-        </div>
-
-        <div class="middlebuttons">
-
-
-
-            <ej:button id="Add" runat="server" type="Button" text=">>" size="Normal" ShowRoundedCorner="true"></ej:button>
-
-            <br />
-
-            <br />
-
-            <ej:button id="Remove" runat="server" type="Button" text="<<" size="Normal" ShowRoundedCorner="true"></ej:button>
-
-        </div>
-
-        <div id="container2">
-
-            People in this group
-
-              <ej:listbox id="selecteditems" runat="server"> </ej:listbox>
-
-        </div>
-
-    </div>
-
-</div>
-
+<ej:ListBox ID="ListBox" runat="server">
+        <Items>
+            <ej:ListBoxItems Text="Audi A4"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="Audi A5"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="Audi A6"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="Audi A7"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="Audi A8"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="BMW 501"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="BMW 502"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="BMW 503"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="Batch"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="BMW 507"></ej:ListBoxItems>
+        </Items>
+    </ej:ListBox>
 
 
 {% endhighlight %}
 
 
 
-Add the following style section to the corresponding ASPX page for ListBox widgets alignment.
+![](Getting-Started_images\Getting-Started_img1.png)
 
+## Databinding
 
+We can populate data in the ListBox widget using using “DataSource” and “Fields” properties.
 
-{% highlight css %}
+In the code behind, create and assign the data source to listbox as below.
 
-    #control {
+{% highlight c# %}
 
-        height: 300px;
+protected void Page_Load(object sender, EventArgs e)
+        {
+            listboxsample.DataSource = GetData();
+        }
+        private List<Languages> GetData()
+        {
 
-        width: 500px;
+            List<Languages> data = new List<Languages>();
 
-        padding: 25px;
+            data.Add(new Languages() { Name = "ASP.NET" });
 
-        background-color: #f7f7f7;
+            data.Add(new Languages() { Name = "ActionScript" });
 
-        display: flex;
+            data.Add(new Languages() { Name = "Basic" });
 
-    }
+            data.Add(new Languages() { Name = "C++" });
 
+            data.Add(new Languages() { Name = "C#" });
 
+            data.Add(new Languages() { Name = "dBase" });
 
-    #sample {
+            data.Add(new Languages() { Name = "Delphi" });
 
-        height: 472px;
+            data.Add(new Languages() { Name = "ESPOL" });
 
-        width: 600px;
+            data.Add(new Languages() { Name = "F#" });
 
-    }
+            data.Add(new Languages() { Name = "FoxPro" });
 
+            data.Add(new Languages() { Name = "Java" });
 
+            data.Add(new Languages() { Name = "J#" });
 
-    #selecteditems_container {
+            data.Add(new Languages() { Name = "Lisp" });
 
-        float: right;
+            data.Add(new Languages() { Name = "Logo" });
 
-    }
+            data.Add(new Languages() { Name = "PHP" });
 
-
-
-    #select_container {
-
-        float: left;
-
-    }
-
-
-
-    .middlebuttons {
-
-        padding: 91px 25px 25px 25px;
-
-    }
-
-
-
-    #container1, #container2 {
-
-        width: 200px;
-
-    }
-
-
-
-    img {
-
-        padding-right: 10px;
-
-        padding-top: 3px;
-
-        width: 18px;
-
-        height: 15px;
-
-    }
-
-
-
-{% endhighlight %}
-
-
-
-Run the above code to render the resultant output.
-
-
-
-![](Getting-Started_images/Getting-Started_img2.png)
-
-
-
-### Configure ListBox with Items
-
-To populate items inside ListBox, add the list items inside &lt;ul&gt; as &lt;li&gt;&lt;/li&gt; elements. Include the following &lt;li&gt; elements in your sample.
-
-
-
-{% highlight html %}
-
-<div id="sample">
-
-    <h5><b>Add people</b></h5>
-
-    <h5>Choose a contact and click move button to add in group </h5>
-
-    <div id="control">
-
-        <div id="container1">
-
-            Contacts List
-
-            <ej:listbox id="select" runat="server" targetid="icon">  </ej:listbox>
-
-            <ul id="icon">
-
-                <li>
-
-                    <img src="../images/Listbox/busy.png" alt="busy" />Nancy
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/busy.png" alt="busy" />Andrew
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/avail.png" alt="busy" />Janet
-
-
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/away.png" alt="away" />Margaret
-
-                </li>
-
-
-
-                <li>
-
-                    <img src="../images/Listbox/away.png" alt="away" />Michael
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/avail.png" alt="avail" />Robert
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/avail.png" alt="avail" />Laura
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/avail.png" alt="avail" />Anne
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/away.png" alt="away" />Suyama
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/avail.png" alt="avail" />Callahan
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/avail.png" alt="avail" />Peacock
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/avail.png" alt="avail" />Fuller
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/avail.png" alt="avail" />Davolio
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/avail.png" alt="avail" />Dodsworth
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/avail.png" alt="avail" />Louis
-
-                </li>
-
-
-
-            </ul>
-
-        </div>
-
-        <div class="middlebuttons">
-
-
-
-            <ej:button id="Add" runat="server" type="Button" text=">>" size="Normal" ShowRoundedCorner="true"></ej:button>
-
-            <br />
-
-            <br />
-
-            <ej:button id="Remove" runat="server" type="Button" text="<<" size="Normal" ShowRoundedCorner="true"></ej:button>
-
-        </div>
-
-        <div id="container2">
-
-            People in this group
-
-
-
-                      <ej:listbox id="selecteditems" runat="server"> </ej:listbox>
-
-        </div>
-
-    </div>
-
-</div> 
-
-
-
-{% endhighlight %}
-
-
-
-Run the above code to render ListBox. ListBox with Contact list items is displayed as follows.
-
-
-
-![](Getting-Started_images/Getting-Started_img3.png)
-
-
-
-### Enable Drag and Drop
-
-You can drag an item from a ListBox and drop it in droppable element.To drag and drop a list item across controls or within a control, set the AllowDragAndDrop property as “True”. 
-
-
-
-{% highlight html %}
-
-<ej:listbox id="select" runat="server" targetid="icon" AllowDragandDrop="true">  </ej:listbox>
-
-
-
-<ej:listbox id="selecteditems" AllowDragAndDrop="true" runat="server"> </ej:listbox>
-
-{% endhighlight %}
-
-
-
-Run the above code example to render the following ListBox with Drag and drop feature. ListBox with Drag and Drop list items across controls is as follows.
-
-
-
-![](Getting-Started_images/Getting-Started_img4.png)
-
-
-
-### Enable Multiple Selection 
-
-You can select multiple list items simultaneously in ListBox control, and move the multiple, selected items to the selection ListBox. To select multiple items in a ListBox, set the AllowMultiSelection property for the ListBox as “True”.
-
-
-
-{% highlight html %}
-
-<ej:listbox id="select" runat="server" targetid="icon" AllowDragAndDrop="true" AllowMultiSelection="true">  </ej:listbox>
-
-
-
-<ej:listbox id="selecteditems" AllowDragAndDrop="true" AllowMultiSelection="true" runat="server"> </ej:listbox>
-
-
-{% endhighlight %}
-
-
-
-Run the above code example to render the following ListBox with Multiple selection feature. ListBox control with Multiple Selection of list items is displayed as follows.
-
-
-
-![](Getting-Started_images/Getting-Started_img5.png)
-
-
-### Add items to a Second ListBox
-
-You have to move the selected list items to the second ListBox by using addItem(value) method and remove existing item in the first ListBox by using removeItem() method.
-
-The following code example explains how to add an item to a second ListBox.
-
-Add the following code to the corresponding ASPX page to render ListBox.
-
-{% highlight html %}
-
-<div id="sample">
-
-    <h5><b>Add people</b></h5>
-
-    <h5>Choose a contact and click move button to add in group </h5>
-
-    <div id="control">
-
-        <div id="container1">
-
-            Contacts List
-
-            <ej:listbox id="select" runat="server" targetid="icon" AllowDragAndDrop="true" AllowMultiSelection="true">  </ej:listbox>
-
-            <ul id="icon">
-
-                <li>
-
-                    <img src="../images/Listbox/busy.png" alt="busy" />Nancy
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/busy.png" alt="busy" />Andrew
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/avail.png" alt="busy" />Janet
-
-
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/away.png" alt="away" />Margaret
-
-                </li>
-
-
-
-                <li>
-
-                    <img src="../images/Listbox/away.png" alt="away" />Michael
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/avail.png" alt="avail" />Robert
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/avail.png" alt="avail" />Laura
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/avail.png" alt="avail" />Anne
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/away.png" alt="away" />Suyama
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/avail.png" alt="avail" />Callahan
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/avail.png" alt="avail" />Peacock
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/avail.png" alt="avail" />Fuller
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/avail.png" alt="avail" />Davolio
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/avail.png" alt="avail" />Dodsworth
-
-                </li>
-
-                <li>
-
-                    <img src="../images/Listbox/avail.png" alt="avail" />Louis
-
-                </li>
-
-
-
-            </ul>
-
-        </div>
-
-        <div class="middlebuttons">
-
-
-
-            <ej:button id="Add" runat="server" type="Button" text=">>" size="Normal" ShowRoundedCorner="true" ClientSideOnClick="add"></ej:button>
-
-            <br />
-
-            <br />
-
-            <ej:button id="Remove" runat="server" type="Button" text="<<" size="Normal" ShowRoundedCorner="true" ClientSideOnClick="remove"></ej:button>
-
-        </div>
-
-        <div id="container2">
-
-            People in this group
-
-                              <ej:listbox id="selecteditems" AllowDragAndDrop="true" AllowMultiSelection="true" runat="server"> </ej:listbox>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-
-
-
-{% endhighlight %}
-
-
-
-Add the mentioned code to the corresponding ASPX page to add an item to a secondListBox.
-
-
-
-{% highlight javascript %}
-
-    function add(e) {
-
-        var firstListBox = $('#select').data("ejListBox");
-
-        var selecteditems = firstListBox.getSelectedItems();
-
-        var len = selecteditems.length;
-
-        for (i = 0; i < len; i++) {
-
-            var value = $(selecteditems[i]).html();
-
-            selecteditems[i].remove();
-
-            var target = $('#selecteditems').data("ejListBox");
-
-            target.addItem(value);
+            return data;
 
         }
-
-    }
-
-
-
-    function remove(e) {
-
-        var firstListBox = $('#selecteditems').data("ejListBox");
-
-        var selecteditem = firstListBox.getSelectedItems();
-
-        var len = selecteditem.length;
-
-        for (i = 0; i < len; i++) {
-
-            var value = $(selecteditems[i]).html();
-
-            selecteditem[i].remove();
-
-            var target = $('#select').data("ejListBox");
-
-            target.addItem(value);
-
+        public class Languages
+        {
+            public string Name;
         }
 
-    }
+{% endhighlight %}
 
+![](Getting-Started_images\Getting-Started_img2.png)
 
+## Selection
+
+The ListBox widget supports item selection. We can select the items by its index value using SelectedIndex property.
+
+{% highlight html %}
+
+<ej:ListBox ID="ListBox" runat="server" SelectedIndex="2">
+        <Items>
+            <ej:ListBoxItems Text="Apache RTR"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="CBR 150-R"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="CBZ Xtreme"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="Discover"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="Dazzler"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="Flame"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="Fazer"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="FZ-S"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="Pulsar"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="Shine"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="R15"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="Unicorn"></ej:ListBoxItems>
+        </Items>
+    </ej:ListBox>
 
 {% endhighlight %}
 
-
-
-Add the following style section to the corresponding ASPX page for ListBox widgets alignment.
-
-
-
-{% highlight css %}
-
-    #control {
-
-        height: 300px;
-
-        width: 500px;
-
-        padding: 25px;
-
-        background-color: #f7f7f7;
-
-        display: flex;
-
-    }
-
-
-
-    #sample {
-
-        height: 472px;
-
-        width: 600px;
-
-    }
-
-
-
-    #selecteditems_container {
-
-        float: right;
-
-    }
-
-
-
-    #select_container {
-
-        float: left;
-
-    }
-
-
-
-    .middlebuttons {
-
-        padding: 91px 25px 25px 25px;
-
-    }
-
-
-
-    #container1, #container2 {
-
-        width: 200px;
-
-    }
-
-
-
-    img {
-
-        padding-right: 10px;
-
-        padding-top: 3px;
-
-        width: 18px;
-
-        height: 15px;
-
-    }
-
-
-
-{% endhighlight %}
-
-
-
-Run this code and you can see the output. Selected items from the first ListBox is moved to Second ListBox by using addItem() and removeItem() method and it is displayed in the following screenshot.
-
-
-
-![](Getting-Started_images/Getting-Started_img6.png)
-
-
-
+![](Getting-Started_images\Getting-Started_img3.png)
 
