@@ -9,6 +9,7 @@ documentation: ug
 
 # Overview
 The `Ribbon` control for ASP.NET provides with rich customizable user interfaces like Office 2010, SharePoint 2010, and Office Web Apps 2010. The Ribbon Tab appears across the top of the page. Each Tab organizes a set of groups that has labels to identify them and also contains a set of controls and group expander.
+
 ## Key Features
 
 Some of the important features of the Ribbon control for ASP.NET are:
