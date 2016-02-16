@@ -59,7 +59,7 @@ By default checkbox state of child nodes depends up on parent node checkbox stat
     
 ## Check or Uncheck Node
 
-Tree node can be checked or unchecked using [checkNode](http://help.syncfusion.com/js/api/ejtreeview#methods:checknode "") and [uncheckNode](http://help.syncfusion.com/js/api/ejtreeview#methods:unchecknode "") methods while ‘showCheckbox’ property is enabled in TreeView. [nodeCheck](http://help.syncfusion.com/js/api/ejtreeview#events:nodecheck "") and [nodeUncheck](http://help.syncfusion.com/js/api/ejtreeview#events:nodeuncheck "") event occurs based on checkbox state
+Tree node can be checked or unchecked using [checkNode](http://help.syncfusion.com/js/api/ejtreeview#methods:checknode) and [uncheckNode](http://help.syncfusion.com/js/api/ejtreeview#methods:unchecknode) methods while ‘showCheckbox’ property is enabled in TreeView. [nodeCheck](http://help.syncfusion.com/js/api/ejtreeview#events:nodecheck) and [nodeUncheck](http://help.syncfusion.com/js/api/ejtreeview#events:nodeuncheck) event occurs based on checkbox state.
     
     {% highlight javascript %}
     
@@ -79,11 +79,11 @@ Tree node can be checked or unchecked using [checkNode](http://help.syncfusion.c
 
 ## Get Checked Nodes
 
-To get checked nodes of TreeView, you can use [getCheckedNodes](http://help.syncfusion.com/js/api/ejtreeview#methods:getcheckednodes "") method. It returns the collection of checked tree nodes.
+To get checked nodes of TreeView, you can use [getCheckedNodes](http://help.syncfusion.com/js/api/ejtreeview#methods:getcheckednodes) method. It returns the collection of checked tree nodes.
     
-    {% highlight javascript %}
+    {% highlight html %}
     
-    <script>
+    <script type="text/javascript">
         function onClick() {
             //create an instance from an existing TreeView.
             // only after control creation we can get treeObj otherwise it throws exception.

@@ -11,7 +11,7 @@ keywords: TreeView,  Syncfusion, ASP Web TreeView UG Doc, How To
 
 ## Update the modified data from tree to database.
 
-TreeView allows us to get the updated tree data after performing such operation like node editing, drag and drop, add and remove node. Using [getTreeData](http://help.syncfusion.com/js/api/ejtreeview#methods:gettreedata "") method you can get the updated tree data.
+TreeView allows us to get the updated tree data after performing such operation like node editing, drag and drop, add and remove node. Using [getTreeData](http://help.syncfusion.com/js/api/ejtreeview#methods:gettreedata) method you can get the updated tree data.
 
 Refer the following code block to know how to get updated data from TreeView.
 
@@ -116,17 +116,18 @@ In the View page, add TreeView element and specify the scripts for sending modif
     
 ## TreeView context menu to process node operations.
 
-TreeView control is availed with the context menu options that open on right-click, over the node. Other than the default menu items available, you can add the new node dynamically in TreeView and also delete the item, enable and disable the item in TreeView. It is achieved by adding the Context Menu option to the TreeView.
+TreeView control is availed with the context menu options that open on right-click, over the node. Other than the default menu items available, you can add the new node dynamically in TreeView and also delete the item, enable and disable the item in TreeView. It is achieved by adding the context menu option to the TreeView.
 
 **Menu Item**
 
 By default, the context menu options are provided with four items namely: Add New Item, Delete Item, Enable Item and Disable Item. When you want to customize and use your own custom menu items, then you can customize the TreeView with the desired collections.
+
 The following code example illustrates how to configure the context menu elements for the TreeView and in the following example, you have to specify the menu type as ej.MenuType.ContextMenu and in the menuClick function, you can check the cases with add, delete, remove or enable item in TreeView.
 And each functionality in the context menu option is done by specific methods. For example, you have added the new item in TreeView by using the addNode() method, delete the item using removeNode() method, disable the item using disableNode() method and enable the item enableNode() method respectively.
 
 The following steps explain how you can enable the ShowCheckbox property for TreeView.
 
-In the View page, add TreeView element and specify context menu items.
+In the view page, add TreeView element and specify context menu items.
     
     {% highlight html %}
     
@@ -221,7 +222,7 @@ In the View page, add TreeView element and specify context menu items.
     
 Define menu events in the script as follows,
 
-    {% highlight javascript %}
+    {% highlight html %}
     
     <script type="text/javascript" class="jsScript">
             var tabIndex = 1, treeviewObj, selectedNode;
@@ -262,7 +263,7 @@ The output for the context menu for TreeView control is as follows.
 
 ## Sorted data using refresh method
 
-TreeView allows you to refresh the entire tree data using [refresh](http://help.syncfusion.com/js/api/ejtreeview#methods:refresh "") method. Refer the below code block to know how to sort entire tree data using refresh method.
+TreeView allows you to refresh the entire tree data using [refresh](http://help.syncfusion.com/js/api/ejtreeview#methods:refresh) method. Refer the below code block to know how to sort entire tree data using refresh method.
 
 In the code behind page, create a data list which contains the details about tree nodes and map the list data to DataSource property of TreeView.
     
@@ -296,7 +297,7 @@ In the code behind page, create a data list which contains the details about tre
         
     {% endhighlight %}
     
-In the View page, add TreeView element and map the properties defined in to the corresponding fields in data source with that specify the scripts for sorting and refreshing Tree data.
+In the view page, add TreeView element and map the properties defined in to the corresponding fields in data source with that specify the scripts for sorting and refreshing Tree data.
     
     {% highlight html %}
     
@@ -382,7 +383,7 @@ In the code behind page, create a data list which contains the details about tre
         
     {% endhighlight %}
     
-In the View page, add TreeView element and specify the scripts for sending modified data through Ajax action.
+In the view page, add TreeView element and specify the scripts for sending modified data through Ajax action.
     
     {% highlight html %}
     
@@ -454,7 +455,7 @@ In the View page, add TreeView element and specify the scripts for sending modif
     
 ## Filtering nodes in TreeView
 
-You can able to filter TreeView nodes based on node text. Refer the below code blocks to filter tree nodes based on the NodeText.
+You can able to filter TreeView nodes based on node text. Refer the below code blocks to filter tree nodes based on the node text.
 
 In the code behind page, create a data list which contains the details about tree nodes and map the list data to DataSource property of TreeView.
     
@@ -488,7 +489,7 @@ In the code behind page, create a data list which contains the details about tre
         
     {% endhighlight %}
     
-In the View page, add TreeView element and map the properties defined in to the corresponding fields in datasource with that specify the script for filtering Tree nodes.
+In the view page, add TreeView element and map the properties defined in to the corresponding fields in datasource with that specify the script for filtering Tree nodes.
     
     {% highlight html %}
     
@@ -606,7 +607,7 @@ In the View page, add TreeView element and map the properties defined in to the
     
 ## Angular data binding to update data while add and remove node
 
-TreeView allows us to bind and update tree data in mapped data component while add and removing node using Angular binding. Refer the below code block to know how to update data using Angular binding.
+TreeView allows us to bind and update tree data in mapped data component while adding and removing node using Angular binding. Refer the below code block to know how to update data using Angular binding.
     
     {% highlight html %}
     
@@ -692,9 +693,9 @@ TreeView allows us to bind and update tree data in mapped data component while a
     
     {% endhighlight %}
     
-## Set Tooltip for TreeView nodes
+## Set tooltip for TreeView nodes
 
-TreeView allows you to set tooltip option to TreeView nodes using [fields.linkAttribute](http://help.syncfusion.com/js/api/ejtreeview#members:fields-linkattribute "") property of TreeView. Refer the below code block to know how to set tooltip for TreeView nodes.
+TreeView allows you to set tooltip option to TreeView nodes using [fields.linkAttribute](http://help.syncfusion.com/js/api/ejtreeview#members:fields-linkattribute) property of TreeView. Refer the below code block to know how to set tooltip for TreeView nodes.
 
 In the code behind page, create a data list which contains the details about tree nodes and map the list data to DataSource property of TreeView.
     
@@ -792,7 +793,7 @@ In the code behind page, create a data list which contains the details about tre
         
     {% endhighlight %}
     
-In the View page, add TreeView element and map the properties defined in to the corresponding fields in datasource
+In the view page, add TreeView element and map the properties defined in to the corresponding fields in datasource.
     
     {% highlight html %}
     
@@ -808,9 +809,9 @@ In the View page, add TreeView element and map the properties defined in to the
         
     {% endhighlight %}
     
-## Auto hide/show the expand/collapse icon of TreeView
+## Auto hide/ show the expand/ collapse icon of TreeView
 
-You can able to display expand icon on mouse entering into TreeView and hide while leaving from the TreeView. Refer the below code blocks to know how to hide/show the expand/collapse icons automatically based on mouse position.
+You can able to display expand icon on mouse entering into TreeView and hide while leaving from the TreeView. Refer the below code blocks to know how to hide/ show the expand/collapse icons automatically based on mouse position.
 
 In the code behind page, create a data list which contains the details about tree nodes and map the list data to DataSource property of TreeView.
     
@@ -844,7 +845,7 @@ In the code behind page, create a data list which contains the details about tre
         
     {% endhighlight %}
     
-In the View page, add TreeView element and map the properties defined into the corresponding fields in datasource with that specify the scripts to hide and show the icon for Tree nodes.
+In the view page, add TreeView element and map the properties defined into the corresponding fields in datasource with that specify the scripts to hide and show the icon for Tree nodes.
     
     {% highlight html %}
     
@@ -874,11 +875,11 @@ In the View page, add TreeView element and map the properties defined into the c
         
     {% endhighlight %}
     
-## Customize the expand/collapse icons of TreeView
+## Customize the expand/ collapse icons of TreeView
 
-You can able to customize the TreeView expand and collapse icon by using “cssClass” property of TreeView. Refer the below code block to know how to customize the expand/collapse icons.
+You can able to customize the TreeView expand and collapse icon by using “**CssClass**” property of TreeView. Refer the below code block to know how to customize the expand/ collapse icons.
 
-In the View page, add TreeView element and map the properties defined in to the corresponding fields in datasource with that specify the styles for customizing expand/ collapse icons of TreeView.
+In the view page, add TreeView element and map the properties defined in to the corresponding fields in datasource with that specify the styles for customizing expand/ collapse icons of TreeView.
     
     {% highlight html %}
     
@@ -921,9 +922,9 @@ In the View page, add TreeView element and map the properties defined in to the
 
 In button click, you need to get all checked node details of TreeView and send it to server using Ajax. 
 
-Refer the following code block to know how to get checked nodes details in server end 
+Refer the following code block to know how to get checked nodes details in server end.
 
-In the View page, add TreeView element and specify the scripts for sending checked node details in button click.
+In the view page, add TreeView element and specify the scripts for sending checked node details in button click.
     
     {% highlight html %}
     

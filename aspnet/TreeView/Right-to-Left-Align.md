@@ -9,7 +9,7 @@ keywords: TreeView,  Syncfusion, ASP Web TreeView UG Doc, Right to Left Align
 
 # Right to Left Align
 
-TreeView supports right to left align and it can be applied by specifying ‘**EnableRTL’** as true.
+TreeView supports right to left align and it can be applied by specifying **EnableRTL** as true.
     
     {% highlight html %}
     

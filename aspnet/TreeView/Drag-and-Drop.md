@@ -9,7 +9,7 @@ documentation: ug
 
 # Drag and drop 
 
-To perform drag and drop operation in TreeView specify “AllowDragAndDrop” as true. It allows you to drag and drop node in all level of same TreeView.
+To perform drag and drop operation in TreeView specify “**AllowDragAndDrop**” as true. It allows you to drag and drop node in all level of same TreeView.
     
     {% highlight html %}
     
@@ -25,11 +25,11 @@ To perform drag and drop operation in TreeView specify “AllowDragAndDrop” as
         
     {% endhighlight %}
     
-N>**Note: TreeView provides much easier option to drop the dragged nodes at any levels by indicator lines with icons.**
+N>**TreeView provides much easier option to drop the dragged nodes at any levels by indicator lines with icons.**
 
 ## Position Indicators
 
-TreeView provides much easier option to drop the dragged nodes at any levels by indicator lines with icons such as line, plus/minus and restrict icons while dragging and dropping the nodes. It represents exact position where the node to be dropped as sibling or child.
+TreeView provides much easier option to drop the dragged nodes at any levels by indicator lines with icons such as line, plus/ minus and restrict icons while dragging and dropping the nodes. It represents exact position where the node to be dropped as sibling or child.
 
 <table>
 <tr>
@@ -134,7 +134,7 @@ In the code behind page, create a data list which contains the details about tre
         
     {% endhighlight %}
     
-In the View page, add TreeView element and map the properties defined in to the corresponding fields in data source with that specify the drag and drop settings.
+In the view page, add TreeView element and map the properties defined in to the corresponding fields in data source with that specify the drag and drop settings.
     
     {% highlight html %}
     
@@ -207,7 +207,7 @@ You may not need to have two TreeView to be in same structured node while drag a
         
     {% endhighlight %}
     
-N>**Note: auto node structure only applicable for well-structured node object.**
+N>**Auto node structure only applicable for well-structured node object.**
 
 
 
