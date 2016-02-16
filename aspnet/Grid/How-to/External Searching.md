@@ -10,7 +10,7 @@ Using `search` method of grid, you can search the string in grid externally with
 <div class="row">
 <div class="col-md-3">
 <input type="text" id="srchstr" class="e-ejinputtext" />
-<ej:Button ID="search" runat="server" ClientSideOnChange="onSearching" Text="Searching"></ej:Button>
+<ej:Button ID="search" runat="server" ClientSideOnClick="onSearching" Text="Searching"></ej:Button>
 </div>
 </div>
 </div>
