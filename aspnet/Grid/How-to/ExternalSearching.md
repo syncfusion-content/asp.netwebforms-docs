@@ -1,3 +1,13 @@
+---
+layout: post
+title: External Search in Grid | Grid | ASP.NET Webforms | Syncfusion
+description:  external search in grid
+platform: aspnet
+control: Grid
+documentation: ug
+---
+
+
 # External Search in Grid
 
 Using `search` method of grid, you can search the string in grid externally without using in-built toolbar search support. While using `search` method it is necessary to set `AllowSearching` property as `true`. The following code example explains the above behavior.
