@@ -9,165 +9,72 @@ documentation: ug
 
 # Keyboard interaction
 
-You can use Keyboard shortcut keys as an alternative to the mouse on using ListBox widget. ListBox Widget allows you to perform all kind of actions by using keyboard shortcuts.
+You can use Keyboard shortcut keys as an alternative for mouse actions to interact with the ListBox widget. Please refer the below table for details about short cut keys and its corresponding usage.
 
 <table>
 <tr>
-<th>
-Shortcut Key</th><th>
-Description</th></tr>
+<td>
+<b>Shortcut Key</b></td><td>
+<b>Usage</b></td></tr>
 <tr>
 <td>
-Access key + j</td><td>
-Focuses into the ListBox text box</td></tr>
-<tr>
-<td>
-Up</td><td>
-Moves to previous item in the ListBox</td></tr>
-<tr>
-<td>
-Down</td><td>
-Moves to next item in the ListBox</td></tr>
-<tr>
-<td>
-Enter</td><td>
+<kbd>Enter</kbd></td><td>
 Selects the focused item</td></tr>
 <tr>
 <td>
-Left </td><td>
-Moves to previous item in the ListBox</td></tr>
+<kbd>Up</kbd></td><td>
+Moves to previous item</td></tr>
 <tr>
 <td>
-Right </td><td>
-Moves to next item in the ListBox</td></tr>
+<kbd>Down</kbd></td><td>
+Moves to next item</td></tr>
 <tr>
 <td>
-Home</td><td>
-Navigates to the starting item </td></tr>
+<kbd>Left</kbd></td><td>
+Moves to previous item</td></tr>
 <tr>
 <td>
-End</td><td>
-Navigates to the end item </td></tr>
+<kbd>Right</kbd></td><td>
+Moves to next item</td></tr>
+<tr>
+<td>
+<kbd>Home</kbd></td><td>
+Moves to first item</td></tr>
+<tr>
+<td>
+<kbd>End</kbd></td><td>
+Moves to last item</td></tr>
 </table>
 
-### Configure keyboard interaction
+N> Initial focus can be done by pressing tab key multiple times until it is focused.
 
-The following steps explain you to enable keyboard interaction for a ListBox.
+## Incremental Search
 
-In an ASPX page, add an elementto configure ListBox widget and enable keyboard interaction by setting the accesskey property.
-
-{% tabs %}
+The [Incremental search](https://en.wikipedia.org/wiki/Incremental_search) helps in finding the specific item in the ListBox,as the user types the text one or more possible matches for the text are found and the first matched item will be selected.It can be enabled in the ListBox widget using “EnableIncrementalSearch” API. The search can be case sensitive or case insensitive.
 
 {% highlight html %}
 
-<div id="control">
-
-    <div class="ctrllabel">
-
-        Select a skill</div>
-
-    <ej:listbox id="listboxsample" runat="server" DataTextField="Name"></ej:listbox>
-
-</div>
-
-{% endhighlight %}
-
-
-
-{% highlight c# %}
-
-        protected void Page_Load(object sender, EventArgs e)
-
-        {
-
-            listboxsample.DataSource = GetData();
-			
-        }
-
-        private List<Languages> GetData()
-
-        {
-
-            List<Languages> data = new List<Languages>();
-
-            data.Add(new Languages() { Name = "ASP.NET" });
-
-            data.Add(new Languages() { Name = "ActionScript" });
-
-            data.Add(new Languages() { Name = "Basic" });
-
-            data.Add(new Languages() { Name = "C++" });
-
-            data.Add(new Languages() { Name = "C#" });
-
-            data.Add(new Languages() { Name = "dBase" });
-
-            data.Add(new Languages() { Name = "Delphi" });
-
-            data.Add(new Languages() { Name = "ESPOL" });
-
-            data.Add(new Languages() { Name = "F#" });
-
-            data.Add(new Languages() { Name = "FoxPro" });
-
-            data.Add(new Languages() { Name = "Java" });
-
-            data.Add(new Languages() { Name = "J#" });
-
-            data.Add(new Languages() { Name = "Lisp" });
-
-            data.Add(new Languages() { Name = "Logo" });
-
-            data.Add(new Languages() { Name = "PHP" });
-
-            return data;
-
-        }
-
-
-
-        public class Languages
-
-        {
-
-            public string Name;
-
-        }
-
-{% endhighlight %}
-
-{% highlight js %}
-
-$(function () {
-
-        $(document).on("keydown", function (e) {
-
-            if (e.altKey && e.keyCode === 74) { // j- key code.
-
-                var target = $('#<%=listboxSample.ClientID%>').data("ejListBox");
-
-                target.selectItemByIndex(1);
-
-                $("#<%=listboxSample.ClientID%>" + "_container").focus();
-
-
-
-            }
-
-        });
-
-    });
-
+<ej:ListBox ID="ListBox" runat="server" EnableIncrementalSearch="true" CaseSensitiveSearch="true">
+        <Items>
+            <ej:ListBoxItems Text="Audi A4"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="Audi A5"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="Audi A6"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="Audi A7"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="Audi A8"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="BMW 501"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="BMW 502"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="BMW 503"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="Batch"></ej:ListBoxItems>
+            <ej:ListBoxItems Text="BMW 507"></ej:ListBoxItems>
+        </Items>
+    </ej:ListBox>
 
 
 {% endhighlight %}
 
-{% endtabs %}
 
-Run the sample, press Alt + J to focus in the ListBox widget that enables it and you can navigate by using arrow keys.
+![](Keyboard-interaction_images\Keyboard-interaction_img1.png)
 
+Press <kbd>tab</kbd> key to get ListBox focus and press <kbd>“A” </kbd> (enable caps lock or press <kbd>shift</kbd> + <kbd>“A” </kbd> since case sensitive search is enabled) to get the below output.
 
- ![](Keyboard-interaction_images/Keyboard-interaction_img1.png)
-
-
-
+![](Keyboard-interaction_images\Keyboard-interaction_img2.png)
