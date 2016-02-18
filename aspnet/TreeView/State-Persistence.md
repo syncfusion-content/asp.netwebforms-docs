@@ -1,9 +1,9 @@
 ---
 title: State Persistence | TreeView | ASP.NET | Syncfusion
-description: State Persistence
-platform: aspnet
+description: State Persistence option in TreeView
+platform: ASP.NET
 control: TreeView
-documentation: ug
+documentation: UG
 keywords: TreeView,  Syncfusion, ASP Web TreeView UG Doc, State Persistence
 ---
 

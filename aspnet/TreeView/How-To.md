@@ -1,9 +1,9 @@
 ---
 title: How To | TreeView | ASP.NET | Syncfusion
-description: How To 
-platform: aspnet
+description: How to do - section for TreeView
+platform: ASP.NET
 control: TreeView
-documentation: ug
+documentation: UG
 keywords: TreeView,  Syncfusion, ASP Web TreeView UG Doc, How To
 ---
 
@@ -60,7 +60,7 @@ In the code behind page, create a data list which contains the details about tre
         
     {% endhighlight %}
     
-In the View page, add TreeView element and specify the scripts for sending modified data through Ajax action with that also specify clear cache option.
+In the view page, add TreeView element and specify the scripts for sending modified data through Ajax action with that also specify clear cache option.
     
     {% highlight html %}
     
@@ -297,7 +297,7 @@ In the code behind page, create a data list which contains the details about tre
         
     {% endhighlight %}
     
-In the view page, add TreeView element and map the properties defined in to the corresponding fields in data source with that specify the scripts for sorting and refreshing Tree data.
+In the view page, add TreeView element and map the properties defined in to the corresponding fields in data source with that specify the scripts for sorting and refreshing tree data.
     
     {% highlight html %}
     
@@ -489,7 +489,7 @@ In the code behind page, create a data list which contains the details about tre
         
     {% endhighlight %}
     
-In the view page, add TreeView element and map the properties defined in to the corresponding fields in datasource with that specify the script for filtering Tree nodes.
+In the view page, add TreeView element and map the properties defined in to the corresponding fields in data source with that specify the script for filtering tree nodes.
     
     {% highlight html %}
     
@@ -605,9 +605,9 @@ In the view page, add TreeView element and map the properties defined in to the
         
     {% endhighlight %}
     
-## Angular data binding to update data while add and remove node
+## AngularJS data binding to update data while add and remove node
 
-TreeView allows us to bind and update tree data in mapped data component while adding and removing node using Angular binding. Refer the below code block to know how to update data using Angular binding.
+TreeView allows us to bind and update tree data in mapped data component while adding and removing node using AngularJS binding. Refer the below code block to know how to update data using AngularJS binding.
     
     {% highlight html %}
     
@@ -793,7 +793,7 @@ In the code behind page, create a data list which contains the details about tre
         
     {% endhighlight %}
     
-In the view page, add TreeView element and map the properties defined in to the corresponding fields in datasource.
+In the view page, add TreeView element and map the properties defined in to the corresponding fields in data source.
     
     {% highlight html %}
     
@@ -845,7 +845,7 @@ In the code behind page, create a data list which contains the details about tre
         
     {% endhighlight %}
     
-In the view page, add TreeView element and map the properties defined into the corresponding fields in datasource with that specify the scripts to hide and show the icon for Tree nodes.
+In the view page, add TreeView element and map the properties defined into the corresponding fields in data source with that specify the scripts to hide and show the icon for Tree nodes.
     
     {% highlight html %}
     
@@ -879,7 +879,7 @@ In the view page, add TreeView element and map the properties defined into the c
 
 You can able to customize the TreeView expand and collapse icon by using “**CssClass**” property of TreeView. Refer the below code block to know how to customize the expand/ collapse icons.
 
-In the view page, add TreeView element and map the properties defined in to the corresponding fields in datasource with that specify the styles for customizing expand/ collapse icons of TreeView.
+In the view page, add TreeView element and map the properties defined in to the corresponding fields in data source with that specify the styles for customizing expand/ collapse icons of TreeView.
     
     {% highlight html %}
     

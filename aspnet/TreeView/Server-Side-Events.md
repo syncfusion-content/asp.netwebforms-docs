@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Server Side Events | TreeView | ASP.NET | Syncfusion
-description: server side events
-platform: aspnet
+description: server side events for TreeView
+platform: ASP.NET
 control: TreeView
-documentation: ug
+documentation: UG
 ---
 
 # Server Side Events
 
-You can specify the server side events of TreeView in ASP. To set server side event, you can enable any of the following events.
+You can specify the server side events of TreeView in ASP.NET. To set server side event, you can enable any of the following events.
 
 <table>
 <tr>

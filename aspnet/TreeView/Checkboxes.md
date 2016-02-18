@@ -1,15 +1,15 @@
 ---
-title: Checkboxes | TreeView | ASP.NET | Syncfusion
-description: Checkboxes
-platform: aspnet
+title: Checkboxes in TreeView | TreeView | ASP.NET | Syncfusion
+description: Specify checkboxes in TreeView and its settings
+platform: ASP.NET
 control: TreeView
-documentation: ug
+documentation: UG
 keywords: TreeView,  Syncfusion, ASP Web TreeView UG Doc, Checkboxes
 ---
 
 # Checkboxes
 
-TreeView consists of in-build checkbox option and it can be displayed to the left of the tree node by setting the **ShowCheckbox** property as true. It allows you to select more than one node at a time. 
+TreeView consists of built-in checkbox option and it can be displayed to the left of the tree node by setting the **ShowCheckbox** property as true. It allows you to select more than one node at a time. 
 
 ## Indeterminate Checkboxes 
 
