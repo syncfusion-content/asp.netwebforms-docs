@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started | TreeView | ASP.NET | Syncfusion
-description: getting started
-platform: aspnet
+title: Getting Started with TreeView | TreeView | ASP.NET | Syncfusion
+description: To get start with TreeView by adding references
+platform: ASP.NET
 control: TreeView
-documentation: ug
+documentation: UG
 ---
 
 # Getting started
@@ -13,7 +13,7 @@ This section explains briefly about how to create a TreeView in ASP.NET Web plat
 
 ## Create your first TreeView in ASP.Net Web
 
-Create an ASP Web application and add necessary Dll’s, CSS and scripts with the help of the given [ASP.Net Web-Getting Started ](http://help.syncfusion.com/aspnet/getting-started#) documentation. After creating this project, you can create a TreeView in following ways.
+Create an ASP Web application and add necessary assemblies, CSS and scripts with the help of the given [ASP.NET Web-Getting Started ](http://help.syncfusion.com/aspnet/getting-started#) documentation. After creating this project, you can create a TreeView in following ways.
 
 ## TreeView using “Nodes” Property
 

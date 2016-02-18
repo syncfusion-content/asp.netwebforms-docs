@@ -1,6 +1,6 @@
 ---
 title: Populate Data | TreeView | ASP.NET | Syncfusion
-description: Populate Data
+description: To populate the data for TreeView
 platform: aspnet
 control: TreeView
 documentation: ug
@@ -40,7 +40,7 @@ The data source contains the list of data for generating the TreeView list.
 DataSourceID
 </td>
 <td>
-It specifies the existing datasource id, using this id we can populate data to treeview from existing data source.
+It specifies the existing data source id, using this id we can populate data to treeview from existing data source.
 </td>
 </tr>
 <tr>
@@ -329,7 +329,7 @@ In the code behind page, create a data list which contains the details about tre
     {% endhighlight %}
     
 
-In the view page, add TreeView element and map the properties defined in to the corresponding fields in datasource.
+In the view page, add TreeView element and map the properties defined in to the corresponding fields in data source.
     
     {% highlight html %}
     
@@ -353,7 +353,7 @@ When using remote data binding, the adaptor of [ej.DataManager](http://helpjs.s
 
 **OData** is a standardized protocol for creating and consuming data. The following steps explain how you can bind remote data to TreeView control.
 
-In the code behind page, specify the remote data source URL and query, which is used to filter data. The select property of ejQuery is used to retrieve the specified columns from the data source.
+In the code behind page, specify the remote data source URL and query, which is used to filter data. The select property of ej.Query is used to retrieve the specified columns from the data source.
     
     {% highlight c# %}
     
@@ -377,11 +377,11 @@ In the view page, add an element to configure TreeView.
         
     {% endhighlight %}
     
-### WebApi
+### Web API
 
-Using [ej.WebApiAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#webapi-adaptor), you can bind WebApi service data to TreeView as shown in below code example
+Using [ej.WebApiAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#webapi-adaptor), you can bind Web API service data to TreeView as shown in below code example
 
-In the code behind page, specify the WebAPI data source URL and other settings as follows.
+In the code behind page, specify the Web API data source URL and other settings as follows.
     
     {% highlight c# %}
     
@@ -411,7 +411,7 @@ In the view page, add an element to configure TreeView.
     {% endhighlight %}
     
 ### Other Restful web services
-The Custom Adaptor concept of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) allow you to customize or generate your own adaptor which is used to process query and result data. 
+The custom adaptor concept of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) allow you to customize or generate your own adaptor which is used to process query and result data. 
 [http://helpjs.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor)
 
 When using remote data binding, the adaptor of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
@@ -448,7 +448,7 @@ In the code behind page, create a data list which contains the details about tre
         
     {% endhighlight %}
     
-In the View page, add TreeView element and specify the custom Adaptor as shown below.
+In the view page, add TreeView element and specify the custom adaptor as shown below.
     
     {% highlight html %}
     
@@ -528,11 +528,11 @@ In the view page, assign the values for DataTextField, DataIdField, DataParentId
     
 ## Object DataSource
 
-TreeView provides ObjectDataSource data binding support to populate TreeView nodes, so that the values can be mapped to the TreeView fields from an existing ObjectDataSource by using DataSourceID property.
+TreeView provides object data source binding support to populate TreeView nodes, so that the values can be mapped to the TreeView fields from an existing object data source by using DataSourceID property.
 
-The following steps explain the ObjectDataSource data binding to TreeView.
+The following steps explain the object data source binding to TreeView.
 
-Define an ObjectDataSource in the web page and configure the data source elements. Add the class file to App_Data folder in your web application.
+Define an object data source in the web page and configure the data source elements. Add the class file to App_Data folder in your web application.
     
     {% highlight c# %}
     
@@ -667,7 +667,7 @@ Define an ObjectDataSource in the web page and configure the data source element
     
     {% endhighlight %}
     
-In the view page, assign the values for DataTextField, DataIdField, DataParentIdField, DataHasChildField. In DataSourceID field assign the ID of the existing ObjectDataSource
+In the view page, assign the values for DataTextField, DataIdField, DataParentIdField, DataHasChildField. In DataSourceID field assign the ID of the existing object data source
     
     {% highlight html %}
     
@@ -692,13 +692,13 @@ In the view page, assign the values for DataTextField, DataIdField, DataParentId
         
     {% endhighlight %}
     
-## Linq-to-SQL Data
+## LINQ to SQL Data
 
-TreeView provides extensive data binding support to populate TreeView nodes, so that the values can be mapped to the TreeView fields from an existing Linq-to-SQL data source by using DataSourceID property.
+TreeView provides extensive data binding support to populate TreeView nodes, so that the values can be mapped to the TreeView fields from an existing LINQ to SQL data source by using DataSourceID property.
 
 The following steps explain the SQL data binding to TreeView textbox.
 
-Define a Linq-to-SQL data source in the web page and configure the data source as per your requirement, by using the database. In the following code example, an SQL table is used to create a DBML class
+Define a LINQ to SQL data source in the web page and configure the data source as per your requirement, by using the database. In the following code example, an SQL table is used to create a DBML class
 
 <table>
 <tr>
@@ -711,7 +711,7 @@ Define a Linq-to-SQL data source in the web page and configure the data source a
 </tr>
 </table>
 
-In the view page, assign values for DataTextField, DataIdField, DataParentIdField DataHasChildField. In DataSourceID field assign the ID of the existing Linq-to-SQL data source.
+In the view page, assign values for DataTextField, DataIdField, DataParentIdField DataHasChildField. In DataSourceID field assign the ID of the existing LINQ to SQL data source.
     
     {% highlight html %}
     
@@ -742,7 +742,7 @@ TreeView provides XML data binding support to populate TreeeView nodes, so that 
 
 The following steps explain the XML data binding to TreeView.
 
-In the view page, assign the values for DataTextField, DataParentIdField. In DataSourceID field assign the ID of the existing XML datasource.
+In the view page, assign the values for DataTextField, DataParentIdField. In DataSourceID field assign the ID of the existing XML data source.
     
     {% highlight html %}
     
@@ -764,7 +764,7 @@ In the view page, assign the values for DataTextField, DataParentIdField. In Dat
         
     {% endhighlight %}
     
-Load the node details of TreeView in the xml data as follows.
+Load the node details of TreeView in the XML data as follows.
 
     {% highlight xml %}
     
@@ -835,7 +835,7 @@ In the code behind page, create a data list which contains the details about tre
     
     {% highlight c# %}
     
-        //Define local DataSource elements by using the ID, ParentID, Text and HasChild 
+        //Define local data source elements by using the ID, ParentID, Text and HasChild 
         //fields in code behind and map the list data to DataSource property.
         public partial class TreeViewFeatures : System.Web.UI.Page
         {
