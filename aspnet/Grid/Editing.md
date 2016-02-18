@@ -1720,9 +1720,9 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
+    <ej:DataManager runat="server"  ID="Data" URL="Default.aspx/Data"  Adaptor="WebMethodAdaptor" UpdateURL="Default.aspx/Update" InsertURL="Default.aspx/Insert" RemoveURL="Default.aspx/Remove" />
         <ej:Grid ID="FlatGrid" DataManagerID="Data" runat="server" AllowPaging="True" >
-           <ej:DataManager runat="server"  ID="Data" URL="Default.aspx/Data"  Adaptor="WebMethodAdaptor" UpdateURL="Default.aspx/Update" InsertURL="Default.aspx/Insert" RemoveURL="Default.aspx/Remove" />
-           <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" ></EditSettings>
+          <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" ></EditSettings>
            <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
             <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
@@ -1958,9 +1958,9 @@ The following code example describes the above behavior.
 {% tabs %}
 
 {% highlight html %}
-    
+        
+      <ej:DataManager runat="server" ID="Data"  Adaptor="WebMethodAdaptor" URL="Default.aspx/Data" CrudURL="Default.aspx/CrudUpdate"/>
          <ej:Grid ID="FlatGrid" DataManagerID="Data" runat="server" AllowPaging="True" >
-           <ej:DataManager runat="server" ID="Data"  Adaptor="WebMethodAdaptor" URL="Default.aspx/Data" CrudURL="Default.aspx/CrudUpdate"/>
            <EditSettings AllowEditing="True"  AllowAdding="True" AllowDeleting="True" ></EditSettings>
            <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
             <Columns>
@@ -2003,11 +2003,11 @@ The following code example describes the above behavior.
 {% tabs %}
 
 {% highlight html %}
-    
+         
+       <ej:DataManager runat="server"  Adaptor="WebMethodAdaptor" URL="Default.aspx/Data" BatchURL="Default.aspx/BatchUpdate"/>
          <ej:Grid ID="FlatGrid" DataManagerID="Data" runat="server" AllowPaging="True">
            <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="Batch"></EditSettings>
-           <ej:DataManager runat="server"  Adaptor="WebMethodAdaptor" URL="Default.aspx/Data" BatchURL="Default.aspx/BatchUpdate"  />
-           <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+            <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
               <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
                 <ej:Column Field="CustomerID"/>

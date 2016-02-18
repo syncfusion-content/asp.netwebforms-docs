@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Overview | TreeView | ASP.NET | Syncfusion
-description: overview
-platform: aspnet
+description: TreeView introduction with key features
+platform: ASP.NET
 control: TreeView
-documentation: ug
+documentation: UG
 ---
 
 # Overview
