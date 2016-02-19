@@ -1,9 +1,9 @@
 ---
 title: Template Option| TreeView | ASP.NET | Syncfusion
-description: Template Option
-platform: aspnet
+description: Rendering TreeView using Template option
+platform: ASP.NET
 control: TreeView
-documentation: ug
+documentation: UG
 keywords: TreeView,  Syncfusion, ASP Web TreeView UG Doc, Template Option
 ---
 

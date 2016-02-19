@@ -1,9 +1,9 @@
 ---
-title: Tree Node | TreeView | ASP.NET | Syncfusion
-description: Tree Node
-platform: aspnet
+title: Tree Node manipulation | TreeView | ASP.NET | Syncfusion
+description: Handling node operations in TreeView
+platform: ASP.NET
 control: TreeView
-documentation: ug
+documentation: UG
 keywords: TreeView,  Syncfusion, ASP Web TreeView UG Doc, Tree Node
 ---
 
@@ -155,7 +155,7 @@ In the code behind page, create a data list which contains the details about tre
         
     {% endhighlight %}
     
-In the view page, add TreeView element and map the properties defined in to the corresponding fields in datasource with that also specify button element to get node details.
+In the view page, add TreeView element and map the properties defined in to the corresponding fields in data source with that also specify button element to get node details.
     
     {% highlight html %}
     
