@@ -103,3 +103,5 @@ RibbonTabs is a collection of control `TabGroup` which enables you to organize r
 	<div id="sendReceive">New Tab</div>
 
 {% endhighlight %}
+
+![](Tab_images/Tab_img1.png)
