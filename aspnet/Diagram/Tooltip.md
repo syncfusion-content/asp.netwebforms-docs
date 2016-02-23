@@ -22,22 +22,31 @@ By default, Diagram displays a tooltip to provide the size, position, and angle 
 
 To disable the default tooltip, You need to set `SelectedItems.Tooltip` as `null`. The following code example illustrates how to disable default tooltip.
 
+{% tabs %}
+{% highlight ASPX %}
+
+        <!--Define tooltip template-->       
+        <%--   Initializes Diagram--%>
+        <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px" Tool="SingleSelect">
+           
+        </ej:Diagram>
+        
+{% endhighlight %}
+
 {% highlight c# %}
 
             //Disable tooltip during interaction
              Diagram.Model.SelectedItems.Tooltip = null;
              
 {% endhighlight %} 
-
+{% endtabs %} 
 
 ## Common tooltip for all nodes and connectors
 
 Diagram provides support to show tooltip when mouse hovers over any node/connector. 
 To show tooltip on mouse over, the `Tooltip` property of Diagram model needs to be set with the tooltip `TemplateId` and `Alignment` as shown in the following example.
 
-{% tabs %}
-
-{% highlight ASPX %}
+ {% highlight ASPX %}
 
         <!--Define tooltip template-->
         <script type="text/x-jsrender" id="mouseovertooltip">
@@ -66,7 +75,6 @@ To show tooltip on mouse over, the `Tooltip` property of Diagram model needs to 
         
 {% endhighlight %} 
 
-{% endtabs %} 
 ![](/aspnet/Diagram/Tooltip_images/Tooltip_img4.png)
 
 ### Disable tooltip at runtime
