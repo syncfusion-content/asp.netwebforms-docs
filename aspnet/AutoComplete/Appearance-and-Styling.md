@@ -179,7 +179,7 @@ Define CSS class to customize the AutoComplete control.
 
         /* Customize the PopUp panel */
 
-        .customCss
+        .customCss.e-atc-popup
 
         {
 
