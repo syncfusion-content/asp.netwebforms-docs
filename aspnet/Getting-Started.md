@@ -48,38 +48,31 @@ Toolbox
 DatePicker control displayed in web browser
 {:.caption}
 
-## Through Syncfusion NuGet Packages
+## Configuring Syncfusion NuGet Packages in Visual Studio 
+
 This topic explains how to add the Syncfusion ASP.NET Web controls into the new ASP.NET Web Forms application by making use of Syncfusion NuGet Packages. 
 
-### Configuring Syncfusion NuGet Packages
-The steps to download and configure the required Syncfusion NuGet Packages in Visual Studio are as follows,
+Syncfusion ASP.NET Web Forms NuGet packages are available [here](http://nuget.syncfusion.com/package/aspnet).
 
-* Download the Syncfusion NuGet Packages for ASP.NET from [here](http://nuget.syncfusion.com/login#) and save it in your system. The downloaded file is a zip formatted file, therefore unzip the folders and copy only the below specified packages present within it. Create a new folder namely NuGet Packages in any of the particular location in your system and place the below specified files into it
+### NuGet Configuration  
 
-![](Getting-Started_images/Getting-Started_img4.png)
+The steps to install the Syncfusion ASP.NET Web Forms NuGet Packages in Visual Studio are as follows,
 
-N> For rendering Syncfusion ASP.NET components within the web application, the script and stylesheet references are mandatory. Installing ASP.NET NuGet package automatically includes all the required scripts as well as the stylesheets to the application.
+1. In Visual Studio, navigate to `Tools | NuGet Package Manager | Package Manager Settings`, the options dialog will appear on the screen as shows below,
 
-* In Visual Studio, navigate to Tools -> Library Package Manager -> Package Manager Settings, the Options pop-up will appear on the screen as below
+   ![](Getting-Started_images/NuGetConfig1.jpeg)
 
-![](Getting-Started_images/Getting-Started_img5.png)
-Package Manager Settings - Options window
-{:.caption}
+2. Select `NuGet Package Manager | Package Sources` and click `Add` button to add the `Package Name` and `Package Source` of Syncfusion NuGet Packages.    
 
-* Select Package Manager -> Package Sources in the above pop-up and click on the ![](Getting-Started_images/Getting-Started_img6.jpeg)
-button to navigate to the location where the above collection of NuGet packages are located (namely, within the NuGet Packages folder) in your system
+   **Name**: Name of the package that listed in Available package sources  
+   **Source**: Syncfusion ASP.NET Web Forms NuGet Package feed url 
+   [http://nuget.syncfusion.com/aspnet](http://nuget.syncfusion.com/aspnet)
+    
+   ![](Getting-Started_images/NuGetConfig2.jpeg)
 
-![](Getting-Started_images/Getting-Started_img7.png)
-NuGet Package selected to include
-{:.caption}
-
-N> The Source textbox in the above image denotes the location of the NuGet packages in your machine and the Name section, allows you to provide a unique name which we will refer in the package installation section later.
-
-* Now click the Add button and the package name will be listed in the Available package sources list as shown below and then Click OK.
-
-![](Getting-Started_images/Getting-Started_img8.png)
-Newly Selected NuGet package added to the available package source
-{:.caption}
+   N> The `Source` text box in the above image denotes the location of the NuGet packages and the `Name` section, allows you to provide a unique name for NuGet Packages Source.
+    
+I> Syncfusion other platforms NuGet packages feed links are available [here](http://nuget.syncfusion.com/)
 
 ### Creating ASP.NET Web Application
 Start the Visual Studio. Create a new Web Forms application by using File -> New -> Project and run the application by pressing Ctrl+F5, which shows something similar to the following screenshot in your web browser,
@@ -88,22 +81,17 @@ Start the Visual Studio. Create a new Web Forms application by using File -> New
 Empty Application when run on the web browser
 {:.caption}
 
-### Installing the NuGet Package
-The following steps will help you to add the references of the Syncfusion assemblies, required scripts and CSS files into your Project.
+### NuGet Installation
 
-* Right click on your project in the Solution Explorer and select Manage NuGet Packages options from the sub-menu that pop-up on the screen. Select the Syncfusion NuGet Packages within the Online tab, which will display the list of available packages in it, as shown below
+Syncfusion ASP.NET Web Forms NuGet can install once configured the package source. The NuGet installation steps as below,
 
-![](Getting-Started_images/Getting-Started_img10.png)
- Manage NuGet Packages Pop-up
-{:.caption}
+1. Once configured the Package source with Syncfusion NuGet Packages, right click on project and choose `Manage NuGet Packages | Online | <Package Source Name>`.
 
-* Install the Syncfusion.ASPNET45 (based on the .NET framework (4.5) used in our sample application) package now. The below image depicts that the NuGet Package for ASP.NET (with .NET framework version 4.5) has been successfully installed into your project.
+   ![](Getting-Started_images/NuGetConfig3.jpeg)
 
-![](Getting-Started_images/Getting-Started_img11.png)
-Manage NuGet Packages Pop-up displaying the installed package
- {:.caption}
+2. The NuGet Packages are listed which are available in package source location. Install the required packages to your application by clicking `Install` button.
 
-Once the package installation is completed, all the required assembly references, scripts and CSS files will be automatically added to your application. Also, it configures the web.config file automatically. The remaining changes that you need to do in your application are as follows.
+   N> NuGet packages can be install directly through the **command line** (Package Manager Console). Further details click [here](http://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#install-from-package-manager-console)
 
 ### Adding dependent Scripts and CSS references in Site.Master
 Syncfusion NuGet package will copy all the dependent Scripts and CSS files in the appropriate folders of the project. However you need to manually add the references for those files in the Site.Master page. The code snippet for this is follows.
@@ -141,6 +129,22 @@ Toolbox
 ![](Getting-Started_images/Getting-Started_img13.png)
  DatePicker control displayed on the web browser
  {:.caption}
+
+### Updating a NuGet Package
+
+Using the `Manage NuGet Packages` in Visual Studio, NuGet packages can be update.
+ 
+1. Right click on Project and Navigate to the `Manage NuGet Packages` and click on the `Updates` tab to check for updates.
+
+2. Select the `Updates -> <Syncfusion Package Source>`. Refer to the following screenshot for more information.
+
+   ![](Getting-Started_images/NuGetConfig4.jpeg)
+
+3. If there is a new version of NuGet you will see it in the list of available updates.
+
+4. Select NuGet Package in the list and click `Update`. When the update is complete, close and re-open all open instances of Visual Studio.
+
+   N> By clicking `Update All` button, all NuGet packages are getting update. When the update is complete, close and re-open all open instances of Visual Studio.
 
 ## Manual Integration of Syncfusion ASP.NET controls into the new/existing Application
 This topic mainly focus on how to integrate the Syncfusion ASP.NET controls manually into the newly created/existing ASP.NET Web Forms application.
