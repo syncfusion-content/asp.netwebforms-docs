@@ -28,6 +28,10 @@ ej.data.min.js</td><td>
 Used to handle datamanger operation and should be used while binding data to ASP.NET controls.</td></tr>
 <tr>
 <td>
+ej.globalize.min.js</td><td>
+Must be referred to localize any of the JS control's text and content.</td></tr>
+<tr>
+<td>
 ej.ribbon.min.js</td><td>
 Should be referred when using Ribbon control.</td></tr>
 <tr>
