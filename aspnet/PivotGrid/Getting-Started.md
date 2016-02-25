@@ -208,8 +208,7 @@ namespace PivotGridDemo
             Dictionary<string, object> customDict = new Dictionary<string, object>();
             OlapDataManager DataManager = new OlapDataManager(connectionString);
             DataManager.SetCurrentReport(CreateOlapReport());
-            customDict = htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["gridLayout"].ToString(), Convert.ToBoolean(jsonResult
-["enablePivotFieldList"].ToString()));
+            customDict = htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult.ContainsKey("gridLayout") ? jsonResult["gridLayout"].ToString() : null, Convert.ToBoolean(jsonResult["enablePivotFieldList"].ToString()));
             return customDict;
         }
 
@@ -283,7 +282,7 @@ true);
             OlapDataManager DataManager = new OlapDataManager(connectionString);
             if (!string.IsNullOrEmpty(jsonResult["currentReport"].ToString()))
                 DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
-            return htmlHelper.GetJsonData(jsonResult["actiion"].ToString(), DataManager, jsonResult["checkedStatus"].ToString(), jsonResult["parentNode"].ToString(),
+            return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["checkedStatus"].ToString(), jsonResult["parentNode"].ToString(),
 jsonResult["tag"].ToString(), jsonResult["cubeName"].ToString());
         }
 
