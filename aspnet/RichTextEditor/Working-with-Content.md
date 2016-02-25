@@ -180,11 +180,12 @@ N>  [localstorage](http://www.w3schools.com/html/html5_webstorage.asp#) is not s
 
 ## Change the Font
 
-By default, the editor’s &lt; iframe &gt; is initialized with “Segoe UI” font. To change it, select a different font from the drop-down in the editor’s toolbar. To apply different font for particular section of the content, select the text that you would like to change, and select a required font from the drop-down to apply the changes to the selected text.
+By default, the editor’s &lt; iframe &gt; is initialized with “Segoe UI” font name and 3(12pt) font size. To change it, select a different font name and font size from the drop-down in the editor’s toolbar. To apply different font style for particular section of the content, select the text that you would like to change, and select a required font style from the drop-down to apply the changes to the selected text.
 
-### Set Default Font
+### Set Default Font Name and Font Size
 
-* Set a default font to the font drop-down programmatically.
+* Set a default font name and font size to the font name and size drop-down programmatically
+
 
 {% highlight html %}
 
@@ -205,12 +206,14 @@ By default, the editor’s &lt; iframe &gt; is initialized with “Segoe UI” f
             var editor = $("#<%=RTE1.ClientID%>").ejRTE("instance");
             var ddl = editor._fontStyleDDL.ejDropDownList("instance");
             ddl.selectItemByIndex(7);
+            var ddlSize = editor._fontSizeDDL.ejDropDownList("instance");
+            ddlSize.selectItemByIndex(5);
         }
      </script>
 
 {% endhighlight %}
 
-* You can set default font for &lt; iframe &gt;’s body tag using [IFrameAttributes](user-interface#iframe-attributes) property.
+* You can set default font name and size  for &lt; iframe &gt;’s body tag using [IFrameAttributes](user-interface#iframe-attributes) property.
 
 {% highlight html %}
 
@@ -231,7 +234,7 @@ In code behind, define IFrameAttribute value
 
 {% highlight html %}
 
-	RTE1.IFrameAttributes = new Dictionary<string, object> {{ "style", "font-family:Arial"}};
+	RTE1.IFrameAttributes = new Dictionary<string, object> {{ "style", "font-family:Arial;font-size:14px"}};
     
 {% endhighlight %}
 
@@ -265,9 +268,9 @@ In code behind, define IFrameAttribute value
 
 {% endhighlight %}
 
-### Adding Fonts
+### Adding Font names and size
 
-If you want to add additional fonts to font drop-down, pass the font information as JSON data and bind it with instance of drop-down. 
+If you want to add additional font names and sizes to font drop-down, pass the font information as JSON data and bind it with instance of drop-down. 
 
 {% highlight html %}
 
@@ -285,10 +288,14 @@ If you want to add additional fonts to font drop-down, pass the font information
     <script>
         function onChange() {
             var editor = $("#<%=RTE1.ClientID%>").ejRTE("instance");
-            editor.defaults.fontName.push({ text: "Calibri Light", value: "CalibriLight" }, { text: "Calibri", value: "Calibri" });
-            var ddl = editor._fontStyleDDL.ejDropDownList("instance");
+            editor.defaults.fontName.push({ text: "Calibri Light", value: "CalibriLight" }, { text: "Calibri", value: "Calibri" });
+            editor.defaults.fontSize.push({ text: "8 (42pt)", value: "8" });
+    		var ddl = editor._fontStyleDDL.ejDropDownList("instance");
+    		var ddlSize = editor._fontSizeDDL.ejDropDownList("instance");
             ddl.option({ "dataSource": editor.defaults.fontName });
+    		ddlSize.option({ "dataSource": editor.defaults.fontSize });
             ddl.selectItemByValue("CalibriLight");
+    		ddlSize.selectItemByValue("8");
         }
     </script>
 
@@ -327,13 +334,41 @@ You can validate the RichTextEditor’s value on form submission by applying Val
 
 N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
 
+### jQuery Validation Methods
 
-### Validation Rules
+The following are jquery validation methods.
+
+_List of jquery validation methods_
+
+<table>
+<tr>
+<th>
+Rules</th><th>
+Description</th></tr>
+<tr>
+<td>
+required</td><td>
+ Requires value for the RichTextEditor control.</td></tr>
+<tr>
+<td>
+minWordCount</td><td>
+ Requires the value to be of given minimum words count.</td></tr>
+<tr>
+<td>
+minlength</td><td>
+ Requires the value to be of given minimum characters count.</td></tr>
+<tr>
+<td>
+maxlength</td><td>
+ Requires the value to be of given maximum characters count.</td></tr>
+</table>
+
+#### Validation Rules
 
 The validation rules help you to verify the content by adding validation attributes to the text area. This can be set by using ValidationRules property.
 
 
-### Validation Messages 
+#### Validation Messages 
 
 You can set your own custom error message by using ValidationMessage property. To display the error message, specify the corresponding annotation attribute followed by the message to display.
 
@@ -369,3 +404,29 @@ Required field and minWordCount values validation is demonstrated in the below g
 {% endhighlight %}
 
 ![](Additional_images/Validation.jpg)
+
+### Using ASP.NET Validator
+
+To use ASP.NET validators with RichTextEditor control, set the ID of the RichTextEditor as the value of the ControlToValidate property of the validator.
+
+{% highlight html %}
+
+    <asp:ValidationSummary ID="ValidationSummary1" runat="server" 
+      DisplayMode ="BulletList" ShowSummary ="true" HeaderText="Errors:" />
+
+     <ej:RTE ID="rteSample" Width="550px" Height="440" ShowFooter="true" ShowHtmlSource="true" IsResponsive="true" runat="server">
+     </ej:RTE>
+
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator2"
+        runat="server" ControlToValidate="rteSample"
+        ErrorMessage="Please enter the value">
+        </asp:RequiredFieldValidator>
+
+    <ej:Button Type="Submit" Text="Validate" runat="server"></ej:Button>
+     <br />
+
+{% endhighlight %}
+
+Executing the above code will validate the RichTextEditor control values on every form submit before post back occurs.
+
+![](Additional_images/ValidatorASP.png)
