@@ -409,7 +409,7 @@ To define the template option for tooltip, the `TooltipSettings` must be enabled
 
 <!--Container for ejScheduler widget-->
 <ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData" CurrentDate="5/2/2014">
-    <ToolTipSettings Enable="true" Template="#tooltipTemplate" />
+    <ToolTipSettings Enable="true" TemplateId="#tooltipTemplate" />
     <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Location="Location" Priority="Priority" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule"/>
 </ej:Schedule>
 
