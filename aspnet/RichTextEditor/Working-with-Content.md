@@ -380,25 +380,24 @@ Required field and minWordCount values validation is demonstrated in the below g
 
 {% highlight html %}
 
-    protected void Page_Load(object sender, EventArgs e)
-        {
-            RTE1.ValidationRules = new Dictionary<string, object> { { "minWordCount", 15 }, {"Required", true } };
-            RTE1.ValidationMessages = new Dictionary<string, object> { { "minWordCount", "A minimum of {10} words is required here." },{"Required" ,"Please enter the content" }};
-
-        }
-        
-{% endhighlight %}
-
-{% highlight html %}
-
-    <ej:RTE ID="RTE1" runat="server">
+    <ej:RTE ID="RTE1"  runat="server">
+          <ValidationRule>
+              <ej:KeyValue Key="required" Value="true" />
+              <ej:KeyValue Key="minWordCount" Value="10" />
+              <ej:KeyValue Key="maxWordCount" Value="100" />
+          </ValidationRule>
+          <ValidationMessage >
+              <ej:KeyValue Key="required" Value="Please enter the content" />
+              <ej:KeyValue Key="minWordCount" Value="A minimum of {10} words is required here." />
+              <ej:KeyValue Key="maxWordCount" Value="A maximum of {100} words is required here." />
+          </ValidationMessage>
           <RTEContent>
               When a user          
           </RTEContent>
       </ej:RTE>
       <br />
-      <ej:Button ID="btn1" Text="Validate" OnClick="Unnamed_Click" runat="server"> </ej:Button>
-      
+      <ej:Button ID="btn1" Text="Validate" OnClick="click" runat="server"> </ej:Button>
+   
 {% endhighlight %}
 
 ![](Additional_images/Validation.jpg)
