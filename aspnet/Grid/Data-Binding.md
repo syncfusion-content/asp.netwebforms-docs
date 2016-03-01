@@ -435,9 +435,9 @@ The following output is displayed as a result of the above code example.
 
 ## ITypedList Binding
 
-ITypedList provides functionality to discover the schema for a bindable list, where the properties available to bind differ from the public properties of the object to bind.
+ITypedList provides functionality to discover the schema for a bind-able list, where the properties available to bind differ from the public properties of the object to bind.
 
-To implement ITyped list bindng, create a generic type named class that derives from ITypedList interface. Define the named class based on properties descriptor of the Grid Model class, to return list according to the custom implementation.
+To implement ITypedList binding, create a generic type named class that derives from ITypedList interface. Define the named class based on properties descriptor of the Grid Model class, to return list according to the custom implementation.
 
 For more information on ITypedList interface you can refer [here](https://msdn.microsoft.com/en-us/library/System.ComponentModel.ITypedList%28v=vs.110%29.aspx)
 Create a collection of ITypedList and bind it to Grid using `DataSource` property.
@@ -529,7 +529,7 @@ The following output is displayed as a result of the above code example.
 
 ## WebService 
 
-Web Services are an integral part of the .NET framework that provide a cross-platform solution for exchanging data between distributed systems. Refer here for the steps to create Web Servicein a ASP.Net Webform application.
+Web Services are an integral part of the .NET framework that provide a cross-platform solution for exchanging data between distributed systems. Refer here for the steps to create Web Service in a ASP.Net Webform application.
 
 Using WebMethod Adaptor, Grid can communicate and manipulate data with `WebService`.
 
