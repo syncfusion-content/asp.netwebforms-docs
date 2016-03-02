@@ -91,7 +91,7 @@ The following code example describes the above behavior.
 </asp:ObjectDataSource>
 
 {% endhighlight %} 
-{% hightlight c# %}
+{% highlight c# %}
         
 public class EmployeeDetails
 {
@@ -199,7 +199,7 @@ The following code example describes the above behavior.
             </Columns>          
 </ej:Grid>
 {% endhighlight %} 
-{% hightlight c# %}
+{% highlight c# %}
 namespace Grid
 {
     using Syncfusion.JavaScript;
@@ -248,7 +248,7 @@ The following code example describes the above behavior.
            </Columns>          
 </ej:Grid>
 {% endhighlight %} 
-{% hightlight c# %}
+{% highlight c# %}
 namespace Grid
 {
     public partial class _Default : Page
@@ -295,7 +295,7 @@ The following code example describes the above behavior.
            </Columns>          
 </ej:Grid>
 {% endhighlight %} 
-{% hightlight c# %}
+{% highlight c# %}
 namespace Grid
 {
     
@@ -338,7 +338,7 @@ The following code example describes the above behavior.
            </Columns>          
 </ej:Grid>
 {% endhighlight %} 
-{% hightlight c# %}
+{% highlight c# %}
         
 namespace Grid.Controllers
 {
@@ -381,7 +381,7 @@ The following code example describes the above behavior.
 </ej:Grid>
 
 {% endhighlight %} 
-{% hightlight c# %}
+{% highlight c# %}
         
 namespace EJGrid.Controllers
 {
@@ -451,7 +451,7 @@ The following code example describes the above behavior.
 </ej:Grid>
 
 {% endhighlight %} 
-{% hightlight c# %}
+{% highlight c# %}
 [Serializable()]
     public class SortableBindingList<T> : BindingList<T>, ITypedList
     {
@@ -640,7 +640,7 @@ The following code example describes the above behavior.
 </Columns>
 </ej:Grid>
 {% endhighlight %} 
-{% hightlight c# %}
+{% highlight c# %}
 namespace EJGrid.Controllers {
     
     public class OrdersController: ApiController 
