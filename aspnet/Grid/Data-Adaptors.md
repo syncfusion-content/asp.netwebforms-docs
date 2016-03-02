@@ -29,7 +29,7 @@ The following code example describes the above behavior.
              </Columns>          
      </ej:Grid>
 {% endhighlight %} 
-{% highligh c# %}
+{% highlight c# %}
 
          namespace Grid
          {
