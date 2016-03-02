@@ -8,46 +8,165 @@ documentation: ug
 --- 
 # Cell
 
-## Auto wrap column
+## Auto wrap 
 
-`AllowTextWrap` property enables the Grid to wrap cell content to next line when the content exceeds the boundary of the cell width. 
+Auto wrap enables the Grid to wrap cell content or header content to next line when the content exceeds the boundary of the cell width. To enable auto wrap, set `AllowTextWrap` property as `true`. 
+
+We can specify the mode of auto wrap using `WrapMode` property of the `TextWrapSettings`. 
+
+Three types of `WrapMode` are available and they are,
+  
+ 1. Both
+ 2. Header
+ 3. Content 
+ 
+N> 1. By default the `WrapMode` will be set as `Both`. 
+
+N> 2. While using `TextWrapSettings` then it is must to set `AllowTextWrap` as `True`.
+ 
+## Both
+
+When `WrapMode` of `TextWrapSettings` property set as `Both` then the auto wrap will be enable for both grid content and header. 
 
 The following code example describes the above behavior.
 
 {% tabs %}
+
 {% highlight html %}
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True"  AllowTextWrap="True">
+      <TextWrapSettings WrapMode="Both" />
         <Columns>
                 <ej:Column Field="OrderID"   Width="90" />
                 <ej:Column Field="CustomerID" Width="100" />
                 <ej:Column Field="EmployeeID" Width="100" />
                 <ej:Column Field="Freight" Width="90"  />
-                <ej:Column Field="ShipAddress"  Width="110" />
+                <ej:Column Field="ShipAddress" HeaderText="Ship Address"  Width="110" />
          </Columns>
-     </ej:Grid>
-</asp:Content>
+       </ej:Grid>
+     </asp:Content>
+      
 {% endhighlight  %}
+
 {% highlight c# %}
-namespace WebSampleBrowser.Grid
-{
-    public partial class _Default : Page
+
+    namespace WebSampleBrowser.Grid
     {
-        protected void Page_Load(object sender, EventArgs e)
+        public partial class _Default : Page
         {
+        protected void Page_Load(object sender, EventArgs e)
+            {
             var data = new NorthWndDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
+      }
     }
-}
+    
 {% endhighlight  %}
+
 {% endtabs %} 
 
 The following output is displayed as a result of the above code example.
 
 ![](Cell_images/Cell_img1.png)
 
+### Header
+
+When `WrapMode` of `TextWrapSettings` property set as `Header` then the auto wrap will be enable only for grid header alone. 
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight html %}
+
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True"  AllowTextWrap="True">
+      <TextWrapSettings WrapMode="Header" />
+        <Columns>
+                <ej:Column Field="OrderID"   Width="90" />
+                <ej:Column Field="CustomerID" Width="100" />
+                <ej:Column Field="EmployeeID" Width="100" />
+                <ej:Column Field="Freight" Width="90"  />
+                <ej:Column Field="ShipAddress" HeaderText="Ship Address"  Width="110" />
+         </Columns>
+     </ej:Grid>
+     </asp:Content>
+     
+{% endhighlight  %}
+
+{% highlight c# %}
+
+    namespace WebSampleBrowser.Grid
+    {
+        public partial class _Default : Page
+        {
+        protected void Page_Load(object sender, EventArgs e)
+            {
+            var data = new NorthWndDataContext().Orders.ToList();
+            FlatGrid.DataSource = data;
+            FlatGrid.DataBind();
+        }
+      }
+    }
+    
+{% endhighlight  %}
+
+{% endtabs %} 
+
+The following output is displayed as a result of the above code example.
+
+![](Cell_images/Cell_img1_1.png)
+
+### Content
+
+When `WrapMode` of `TextWrapSettings` property set as `Content` then the auto wrap will be enable only for grid content alone. 
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight html %}
+
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True"  AllowTextWrap="True">
+      <TextWrapSettings WrapMode="Content" />
+        <Columns>
+                <ej:Column Field="OrderID"   Width="90" />
+                <ej:Column Field="CustomerID" Width="100" />
+                <ej:Column Field="EmployeeID" Width="100" />
+                <ej:Column Field="Freight" Width="90"  />
+                <ej:Column Field="ShipAddress" HeaderText="Ship Address"  Width="110" />
+         </Columns>
+     </ej:Grid>
+     </asp:Content>
+     
+{% endhighlight  %}
+
+{% highlight c# %}
+
+    namespace WebSampleBrowser.Grid
+    {
+        public partial class _Default : Page
+        {
+        protected void Page_Load(object sender, EventArgs e)
+            {
+            var data = new NorthWndDataContext().Orders.ToList();
+            FlatGrid.DataSource = data;
+            FlatGrid.DataBind();
+        }
+      }
+    }
+    
+{% endhighlight  %}
+
+{% endtabs %} 
+
+The following output is displayed as a result of the above code example.
+
+![](Cell_images/Cell_img1_2.png)
 
 ## Cell Merging
 
