@@ -29,7 +29,7 @@ The following code example describes the above behavior.
              </Columns>          
      </ej:Grid>
 {% endhighlight %} 
-{% hightlight c# %}
+{% hightligh c# %}
 
          namespace Grid
          {
@@ -61,14 +61,13 @@ For every operations, an AJAX post will be send to the specified data service.
 When using `WebMethodAdaptor`, grid actions such as Paging, Filtering and Sorting should be handled at the server side itself. We have `DataOperation` class to handle the server side operations. Refer to the kb [link](https://www.syncfusion.com/kb/4300).
 
 WebMethod Adaptor supports Model Binding, using `DataManager` class, for the Grid queries, such as sort, paging queries, etc., 
+ 
 
-Note: 
+N> • The response from server should be wrapped in object with properties named `result` to hold the data and `count` to hold the total records count.
 
-•	The response from server should be wrapped in object with properties named `result` to hold the data and `count` to hold the total records count.
+N> • The `count` must be returned along with response when paging is enabled in Grid.
 
-•	The `count` must be returned along with response when paging is enabled in Grid.
-
-•	The data parameter name must be “value” 
+N> • The data parameter name must be “value” 
 
 You can use the following code example to use WebMethod adaptor.
 
@@ -86,7 +85,7 @@ You can use the following code example to use WebMethod adaptor.
            </Columns>
       </ej:Grid>
 {% endhighlight %} 
-{% hightlight c# %}
+{% highlight c# %}
  
        namespace EJGrid
         {
@@ -133,7 +132,7 @@ The following code example describes the above behavior.
             </Columns>         
      </ej:Grid>
 {% endhighlight %} 
-{% hightlight c# %}
+{% highlight c# %}
         
      namespace Grid
       {
@@ -171,7 +170,7 @@ OData Adaptor that is extended from `UrlAdaptor`, is used for consuming data thr
 We have an online OData Service “http://mvc.syncfusion.com/Services/Northwnd.svc/Orders” created specifically for Syncfusion Controls
 
 
-Note: `ODataAdaptor` is the default adaptor of `DataManager` and so no need to specify adaptor when binding OData service
+N> `ODataAdaptor` is the default adaptor of `DataManager` and so no need to specify adaptor when binding OData service
 
 You can use the following code example to use oData adaptor.
 
@@ -245,7 +244,7 @@ You can use the following code example to use WebAPI adaptor.
               </Columns>
          </ej:Grid>
 {% endhighlight %} 
-{% hightlight c# %}
+{% highlight c# %}
         
          namespace EJGrid.Controllers
           {
@@ -274,11 +273,11 @@ The following output is displayed as a result of the above code example.
 
 Sometimes you may need to perform all Grid Actions in client-side except the CRUD operations that should be interacted with server-side to persist data. It can be achieved in Grid by using `RemoteSaveAdaptor`.
 
- Datasource must be set to `Json` Property and set adaptor type as `remoteSaveAdaptor` to the `Adaptor` Property of Grid `DataManager`.
+Datasource must be set to `Json` Property and set adaptor type as `remoteSaveAdaptor` to the `Adaptor` Property of Grid `DataManager`.
  
- CRUD operations can be mapped to server-side using `UpdateUrl`, `InsertUrl`, `RemoveUrl`, `BatchUrl`, `CrudUrl` properties.
+CRUD operations can be mapped to server-side using `UpdateUrl`, `InsertUrl`, `RemoveUrl`, `BatchUrl`, `CrudUrl` properties.
  
- You can use the following code example to use RemoteSave adaptor.
+You can use the following code example to use RemoteSave adaptor.
  
 {% tabs %} 
 {% highlight razor %}
@@ -295,7 +294,7 @@ Sometimes you may need to perform all Grid Actions in client-side except the CRU
           </Columns>
      </ej:Grid>
 {% endhighlight %} 
-{% hightlight c# %}
+{% highlight c# %}
 
        namespace Sample
         {
@@ -357,9 +356,9 @@ The following code example describes the above behavior.
                 <ej:Column Field="Freight" HeaderText="Freight" Format="{0:C2}" TextAlign="Right" />
             </Columns>
             <ClientSideEvents Load="OnLoad" />
-</ej:Grid>
+    </ej:Grid>
 {% endhighlight %} 
-{% hightlight c# %}
+{% highlight c# %}
 
         namespace Grid
          {      
@@ -379,7 +378,7 @@ The following code example describes the above behavior.
        }
      }
 {% endhighlight %} 
-{% hightlight js %}
+{% highlight js %}
 
         <script type="text/javascript">
           <% var serializer = new System.Web.Script.Serialization.JavaScriptSerializer();%>
