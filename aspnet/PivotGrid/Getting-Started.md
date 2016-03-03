@@ -906,13 +906,13 @@ this.PivotGrid1.Model.DataSource.Columns[0].FilterItems.Values = new List<string
 
 ### Apply Summary Types
 
-Allow us to specify the required summary type that PivotGrid should use in its summary cells. **"totalsum"** is the default summary type. Following are the summary types that are supported:
+Allow us to specify the required summary type that PivotGrid should use in its summary cells. **"Sum"** is the default summary type. Following are the summary types that are supported:
 
-* totalsum
-* average
-* count
-* minimum
-* maximum
+* Sum
+* Average
+* Count
+* Min
+* Max
 
 {% highlight html %}
 
@@ -926,7 +926,7 @@ Allow us to specify the required summary type that PivotGrid should use in its s
        </Columns>
        <Values>
             <ej:Field FieldName="Amount" FieldCaption="Amount" SummaryType="Average"></ej:Field>
-            <ej:Field FieldName="Quantity" FieldCaption="Quantity" SummaryType="TotalSum"></ej:Field>
+            <ej:Field FieldName="Quantity" FieldCaption="Quantity" SummaryType="Sum"></ej:Field>
       </Values>
     </DataSource>
     <ClientSideEvents Load="onLoad" />
