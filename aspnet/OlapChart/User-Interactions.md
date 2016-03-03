@@ -219,7 +219,7 @@ Shape and size of the trackball marker can be customized using the `Shape` and `
 ![](User-Interactions_images/trackballmarker.png) 
 
 ##Highlight
-OlapChart provides highlighting support for the series and data points on mouse hover. To enable highlighting, set the **“enable”** property to true in the `highlightsettings` option of the series.
+OlapChart provides highlighting support for the series and data points on mouse hover. To enable highlighting, set the **“enable”** property to true in the `highlightSettings` option of the series.
 
 {% highlight html %}
 
@@ -245,7 +245,7 @@ OlapChart provides highlighting support for the series and data points on mouse 
 {% endhighlight %} 
 
 ###Highlight Mode
-You can set three different modes for highlighting data points and series by using the `mode` property of the `highlightsettings`.
+You can set three different modes for highlighting data points and series by using the `mode` property of the `highlightSettings`.
  
 * series
 * points

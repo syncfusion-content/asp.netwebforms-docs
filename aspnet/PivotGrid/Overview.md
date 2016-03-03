@@ -12,7 +12,7 @@ PivotGrid control is an easily configurable, presentation-quality business contr
 
 Some of the key feature available in PivotGrid are listed below:
 
-1. Data Binding: Supports both OLAP and Relational datasource databinding in the same environment. 
+1. Data Binding: Supports both OLAP and Relational datasource data binding in the same environment. 
 2. PivotTable Field List: Lists the entire datasource bound to PivotGrid and allows UI interaction such as filtering and drag drop operation of any measure, dimension, hierarchy, level and field at runtime.  
 3. Grouping Bar: Supports UI interaction at runtime through sorting, filtering and drag drop operation of the existing field items bound through report. 
 4. Grid Layout: Four different layouts such as normal, top summary, no summary and excel-like layout are supported.

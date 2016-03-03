@@ -13,7 +13,7 @@ documentation: ug
 
 ### Filtering by Member
 
-After clicking Split button of a dimension, Member Editor Dialog opens through which members are filtered by checking and unchecking the check boxes corresponding to the members.  On clicking the OK button, based on the selected members in the Member Editor Dialog, OLAP Report gets updated and refreshes the PivotGrid and OlapChart controls.  The Cancel button is used for cancelling the selection. 
+After clicking Split button of a dimension, Member Editor Dialog opens through which members are filtered by checking and unchecking the check boxes corresponding to the members.  On clicking the OK button, based on the selected members in the Member Editor Dialog, OLAP Report gets updated and refreshes the PivotGrid and OlapChart controls.  The Cancel button is used for canceling the selection. 
 
 ![](Data-Exploration_images/filterbyvalue.png)
 
