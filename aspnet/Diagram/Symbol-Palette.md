@@ -145,14 +145,14 @@ Following code example illustrates how to define default palette header.
 
 Palettes can be annotated with its header texts. Following code example illustrates how to define palette header.
 
-Also, you can embed any Html element into a palette header by defining the ScriptTemplate id to palette's `TemplateId` property. Following code example illustrates how to customize palette headers.
+Also, you can embed any HTML element into a palette header by defining the ScriptTemplate id to palette's `TemplateID` property. Following code example illustrates how to customize palette headers.
 
 {% highlight ASPX %}
 
 
     &lt;!--dependency scripts--&gt;
         &lt;script id="svgTemplate" type="text/x-jsrender"&gt;
-        &lt;!--  define html element --&gt;
+        &lt;!--  define HTML element --&gt;
             &lt;svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="225px" height="28px"&gt;
                 &lt;g visibility="visible"&gt;
                     &lt;image width="26px" height="26px" opacity="1" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="image.png"&gt;&lt;/image&gt;

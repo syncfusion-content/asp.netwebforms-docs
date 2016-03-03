@@ -251,7 +251,7 @@ The following code example illustrates how to add a phase on initializing swimla
                     <Header Text="Swimlane" Height="0" FillColor="#C7D4DF" FontColor="black" FontSize="11" FontFamily="Arial" Italic="true" Bold="true" TextDecoration="Underline">
                     </Header>
                     <%--Defines an lanes Collection--%>
-                    <lanes>
+                    <Lanes>
                         <%--Add the lane in to the lanes collection--%>
                         <ej:DiagramLane Name="lane1" FillColor="#f5f5f5" MinHeight="120" MinWidth="500" MaxHeight="200">
                               <Header Text="Lane" Height="0" FillColor="#C7D4DF" FontColor="black" FontSize="11" FontFamily="Arial" Italic="true" Bold="true" TextDecoration="Underline">
@@ -264,9 +264,9 @@ The following code example illustrates how to add a phase on initializing swimla
                         </ej:BasicShape>
                            </Children>
                         </ej:DiagramLane>
-                    </lanes>
+                    </Lanes>
                     <%--Define the Phase collection--%>
-                    <phases>
+                    <Phases>
                         <%--Define the Phase appearance--%>
                         <ej:DiagramPhase Name="Phase1" LineWidth="1" LineDashArray="3,3" LineColor="#606060">
                             <%--Define the Label for the phase--%>
@@ -275,7 +275,7 @@ The following code example illustrates how to add a phase on initializing swimla
                         <ej:DiagramPhase Name="Phase2" LineWidth="1" LineDashArray="3,3" LineColor="#606060">
                            <Label Text="Phase2"></Label>
                         </ej:DiagramPhase>
-                    </phases>
+                    </Phases>
                 </ej:DiagramSwimlane>
             </Nodes>
         </ej:Diagram>
