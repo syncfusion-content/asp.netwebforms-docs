@@ -27,7 +27,7 @@ To disable the default tooltip, You need to set `SelectedItems.Tooltip` as `null
 
         <!--Define tooltip template-->       
         <%--   Initializes Diagram--%>
-        <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px" Tool="SingleSelect">
+        <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
            
         </ej:Diagram>
         

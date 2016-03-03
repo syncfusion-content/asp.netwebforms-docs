@@ -142,6 +142,6 @@ You can set the desired tool to the `tool` property of the Diagram model. The fo
         </ej:Diagram>
 
       <%--   Initializes Diagram and set the selection tool as single select and zoom pan--%>
-        <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px" Tool="SingleSelect , ZoomPan">
+        <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px" Tool="SingleSelect,ZoomPan">
         </ej:Diagram>
 {% endhighlight %}

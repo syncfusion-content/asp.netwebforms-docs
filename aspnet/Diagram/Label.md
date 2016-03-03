@@ -47,7 +47,7 @@ You can add a label to a node/connector by defining the label object and adding 
 
 ![](/aspnet/Diagram/Label_images/Label_img1.png)
 
-To explore more label properties, refer to [Label Properties](/js/api/ejdiagram#members:nodes-labels "Label Properties").
+To explore more label properties, refer to [Label Properties](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.Label.html "Label Properties").
 
 ## Update Label at runtime
 
@@ -248,51 +248,27 @@ The fill and border appearances of the text can also be customized with appearan
 
 A **Label** can be displaced from its original position to any preferred location interactively. Dragging is disabled by default. You can enable label dragging with the `Constraints` property of node/connector. The following code illustrates how to enable label **dragging**.
 
-{% highlight c# %}
+{% highlight ASPX %}
 
-     protected void Page_Load(object sender, EventArgs e)
-     {
-         DiagramWebControl.Nodes.Add(new BasicShape()
-         {
-             Name = "node",
-             Width = 100,
-             Height = 100,
-             OffsetX = 100,
-             OffsetY = 100,
-             BorderColor = "black",
-             FillColor = "#1BA0E2",
-             //Enable Label dragging
-             Constraints = NodeConstraints.Default | NodeConstraints.DragLabel,
-             //Initializes labels collection
-             Labels = new Collection(){ 
-                 new Label() 
-                 {
-				        //Defines the text to be displayed
-				        Text= "Label"
-			        }
-              }
-         });
+        <%--   Initializes Diagram--%>
+        <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
+            <%--    Add the node to the nodes collection --%>
+            <Nodes>
+                <%--Defines nodes--%>
+                <ej:BasicShape Name="task1" OffsetX="100" OffsetY="100" Height="100" Width="100" FillColor="#1BA0E2" BorderColor="black" Constraints="Default , DragLabel">
+                    <labels>
+                    <ej:DiagramLabel Name="task1" Text="Label" FontColor="White"></ej:DiagramLabel>
+                </labels>
+                </ej:BasicShape>
 
-         DiagramWebControl.Connectors.Add(new Connector()
-         {
-             Name = "connector1",
-             SourcePoint = new DiagramPoint(200, 50),
-             TargetPoint = new DiagramPoint(300, 150),
-             Segments = new Collection() { 
-                 new Segment() { Type = Segments.Orthogonal, Direction = "bottom", Length = 50 } },
-
-             //Enable label dragging
-             Constraints = ConnectorConstraints.Default | ConnectorConstraints.DragLabel,
-             //Initializes labels collection
-             Labels = new Collection(){ 
-                 new Label() 
-                 {
-				        //Defines the text to be displayed
-				        Text= "Label"
-			        }
-              }
-         });
-     }
+            </Nodes>
+            <Connectors>
+                <ej:DiagramConnector>
+                    <sourcepoint x="200" y="50"></sourcepoint>
+                    <targetpoint x="300" y="150"> </targetpoint>
+                </ej:DiagramConnector>
+            </Connectors>
+        </ej:Diagram>
 
 {% endhighlight %}
 

@@ -16,7 +16,7 @@ Connectors are objects used to create link between two points, nodes or ports to
 ## Create Connector
 
 Connector can be created by defining the start and end points. The path to be drawn can be defined with a collection of segments.
-To explore the properties of a `Connector`, refer to [Connector Properties](/js/api/ejDiagram#members:connectors "Connector Properties").
+To explore the properties of a `Connector`, refer to [Connector Properties](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.Connector.html "Connector Properties").
 
 ### Add connectors through connectors collection
 
@@ -67,18 +67,18 @@ diagram.add(connector);
 
 Connectors can be predefined and added to the symbol palette. You can drop those connectors into the Diagram, when required.
 
-For more information about adding connectors from symbol palette, refer to [Symbol Palette](/js/Diagram/Symbol-Palette "Symbol Palette").
+For more information about adding connectors from symbol palette, refer to [Symbol Palette](/aspnet/Diagram/Symbol-Palette "Symbol Palette").
 
 ### Connectors through data source
 
 Connectors are automatically generated based on the relationships defined through the data source.
 The default properties for these connectors are fetched from default settings.
 
-For more information about data source, refer to [Data Binding](/js/Diagram/Data-Binding "Data Binding").
+For more information about data source, refer to [Data Binding](/aspnet/Diagram/Data-Binding "Data Binding").
 
 ### Draw connectors
 
-Connectors can be interactively drawn by clicking and dragging on the Diagram surface by using **DrawingTool**. For more information about drawing connectors, refer to [Draw Connectors](/js/Diagram/Tools#drawing-tools:connectors "Draw Connectors").
+Connectors can be interactively drawn by clicking and dragging on the Diagram surface by using **DrawingTool**. For more information about drawing connectors, refer to [Draw Connectors](/aspnet/Diagram/Tools#drawing-tools:connectors "Draw Connectors").
 
 ## Update Connector at runtime
 
@@ -441,7 +441,7 @@ Multiple segments can be defined one after another. To create a connector with m
 ## Decorator
 
 Start and end points of a connector can be decorated with some customizable shapes like arrows, circles, diamond or path. You can decorate the connection end points with the `SourceDecorator` and `TargetDecorator` properties of connector.
-To explore the properties of decorators, refer to [Decorator Properties](/js/api/ejDiagram#members:connectors-sourcedecorator "Decorator Properties").
+To explore the properties of decorators, refer to [Decorator Properties](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.Decorator_members.html "Decorator Properties").
 
 The `Shape` property of decorator allows to define the shape of the decorators. The following code example illustrates how to create decorators of various shapes.
 
@@ -487,31 +487,29 @@ Padding is used to leave space between the Connector's end point and the object 
 
 The `SourcePadding` and `TargerPadding` properties of connector define the space to be left between the connection end points and the source and target nodes of connector. The following code example illustrates how to leave space between the connection end points and source, target nodes.
 
-{% highlight c# %}
-protected void Page_Load(object sender, EventArgs e)
-{
-	if (!IsPostBack)
-	{
-		//Create nodes
-		Node task1 = new Node() { Name = "task1", OffsetX = 200, OffsetY = 200 };
-		task1.Labels.Add(new Label() { Text = "Task 1" });
-		
-		Node task2 = new Node() { Name = "task2", OffsetX = 400, OffsetY = 200 };
-		task2.Labels.Add(new Label() { Text = "Task 2" });
-		
-		//Sets nodes collection to the Diagram model
-		Diagram.Model.Nodes.Add(task1);
-		Diagram.Model.Nodes.Add(task2);
-		
-		//Create a connector
-		Connector connector = new Connector() { Name = "flow1", SourceNode = "task1", TargetNode = "task2" };
-		//Space between source point and source object
-		connector.SourcePadding = 5;
-		//Space between target point and target object
-		connector.TargetPadding = 10;
-		Diagram.Model.Connectors.Add(connector);
-	}
-}
+{% highlight ASPX %}
+
+        <%--   Initializes Diagram--%>
+        <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
+            <%--    Add the node to the nodes collection --%>
+            <Nodes>
+                <%--Defines nodes--%>
+                <ej:BasicShape Name="task1" OffsetX="100" OffsetY="100" Height="50" Width="100" FillColor="darkCyan" BorderColor="black">
+                    <labels>
+                    <ej:DiagramLabel Name="task1" Text="Task 1" FontColor="White"></ej:DiagramLabel>
+                </labels>
+                </ej:BasicShape>
+                <ej:BasicShape Name="task2" OffsetX="300" OffsetY="100" Height="50" Width="100" FillColor="darkCyan" BorderColor="black">
+                    <labels>
+                    <ej:DiagramLabel Name="task2" Text="Task 2" FontColor="White" ></ej:DiagramLabel>
+                </labels>
+                </ej:BasicShape>
+            </Nodes>
+            <Connectors>
+                <ej:DiagramConnector Name="flow1" SourceNode="task1" TargetNode="task2" SourcePadding="10" TargetPadding="10"></ej:DiagramConnector>
+            </Connectors>
+
+        </ej:Diagram>
 {% endhighlight %}
 
 ![](Connector_images/Connector_img17.png)
@@ -597,7 +595,7 @@ Diagram.Model.Constraints = DiagramConstraints.Default | DiagramConstraints.Brid
 
 The direction of the bridge can be customized with the property `BridgeDirection`. BridgeDirection defines the intersecting segment where the bridge has to be inserted. By default, the bridge direction points to the top.
 
-To explore the bridge directions, refer to [Bridge Directions](/js/api/global#bridgedirection "Bridge Directions").
+To explore the bridge directions, refer to [Bridge Directions](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.DiagramEnums.BridgeDirection.html "Bridge Directions").
 
 The following code example illustrates how to draw the bridge at the bottom direction.
 
@@ -693,7 +691,7 @@ The following code example illustrates how to customize the appearance of the de
 ![](Connector_images/Connector_img23.png)
 
 ## Interaction
-Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [Connection Editing](/js/Diagram/Interaction#connection-editing "Connection Editing").
+Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [Connection Editing](/aspnet/Diagram/Interaction#connection-editing "Connection Editing").
 
 ## Constraints
-The `Constraints` property of connector allows to enable/disable certain features of connectors. For more information about constraints, refer to [Connector Constraints](/js/Diagram/Constraints#connectorconstraints "Connector Constraints").
+The `Constraints` property of connector allows to enable/disable certain features of connectors. For more information about constraints, refer to [Connector Constraints](/aspnet/Diagram/Constraints#connectorconstraints "Connector Constraints").

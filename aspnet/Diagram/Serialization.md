@@ -24,16 +24,16 @@ var json = diagram.save();
 
 {% endhighlight %}
 
-This json data can be converted to string and stored for future use. The following snippet illustrates how to save the serialized JSON into local storage.
+This JSON data can be converted to string and stored for future use. The following snippet illustrates how to save the serialized JSON into local storage.
 
 {% highlight js %}
 
-//Saves the json object in to local storage
+//Saves the JSON object in to local storage
 localStorage.setItem("diagram", JSON.stringify(json));
 
 {% endhighlight %}
 
-Diagram can also be saved as raster or vector image files. For more information about saving the Diagram as images, refer to [Exporting](/js/Diagram/Exporting "Exporting").
+Diagram can also be saved as raster or vector image files. For more information about saving the Diagram as images, refer to [Exporting](/aspnet/Diagram/Exporting "Exporting").
 
 
 ## Load
@@ -42,10 +42,10 @@ Diagram is loaded from the Serialized JSON data. The client side method, `load` 
 
 {% highlight js %}
 
-//Retrieves the json object from local storage
+//Retrieves the JSON object from local storage
 json = JSON.parse(localStorage.getItem("diagram"));
 
-//Loads the Diagram from saved json data
+//Loads the Diagram from saved JSON data
 diagram.load(json);
 
 {% endhighlight %}
@@ -61,15 +61,8 @@ There are some limitations in saving/loading the Diagrams and they are listed as
 {% tabs %}
 {% highlight ASPX %}
 
-    <ej:Diagram ID="DiagramContent" runat="server" Height="400px" Width="100%">
-    </ej:Diagram>
-    
-{% endhighlight %}
-
-{% highlight C# %}
-
-//define the name of the function.
-DiagramContent.OnClientNodeCollectionChange = "nodeCollectionChange";
+<ej:Diagram ID="DiagramContent" runat="server" Height="400px" Width="100%" OnClientNodeCollectionChange="nodeCollectionChange">
+</ej:Diagram>
 
 {% endhighlight %}
 
@@ -81,7 +74,7 @@ function nodeCollectionChange(args) {
 {% endhighlight %}
 {% endtabs %}
 
-* Html / Native template needs to be retained in the application level, while loading the native and html node.
+* HTML / Native template needs to be retained in the application level, while loading the native and html node.
 
 {% highlight ASPX %}
 

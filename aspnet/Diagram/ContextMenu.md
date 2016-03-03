@@ -2,7 +2,7 @@
 layout: post
 title: Add context menu items to ease the execution of frequently used commands
 description: How to execute frequently used commands by using context menu items?
-platform: js
+platform: aspnet
 control: Diagram
 documentation: ug
 ---
@@ -31,36 +31,23 @@ The following code illustrates how to enable the default context menu items.
 Apart from the default context menu items, you can define some additional context menu items. Those additional items have to be defined and added to `ContextMenu.Items`. Sub menu items for context menu can set using `ContextMenu.Items.SubItems`
 The following code example illustrate how to add custom context menu items.
 
-{% tabs %}
+ 
 {% highlight ASPX %}
-<%--Enables the context menu--%>
-<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" EnableContextMenu="true" >
-</ej:Diagram>
+       <%--   Initializes Diagram--%>
+        <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px" EnableContextMenu="true">
+            <ContextMenu ShowCustomMenuItemsOnly="true">
+                <items>
+                   <ej:ContextMenuItem Name="zoom" Text="Zoom">
+                      <SubItems>
+                           <ej:ContextMenuItem Name="zoomIn Text="ZoomIn"></ej:ContextMenuItem>
+                           <ej:ContextMenuItem Name="zoomOut Text="ZoomOut"></ej:ContextMenuItem>
+                      </SubItems>
+                   </ej:ContextMenuItem>
+                </items>
+            </ContextMenu>
+        </ej:Diagram>
 {% endhighlight %}
-
-{% highlight js %}
-$("#DiagramContent").ejDiagram({
-	contextMenu: {
-		// Defines the custom context menu items
-		items: [{
-			name: "zoom",
-			// Text to be displayed
-			text: "Zoom",
-			// Defines the sub items
-			subItems: [{
-				name: "zoomIn",
-				text: "ZoomIn"
-			},{
-				name: "zoomOut",
-				text: "ZoomOut"
-			}]
-		}],
-		// Hides the default context menu items
-		showCustomMenuItemsOnly: true
-	}
-});
-{% endhighlight %}
-{% endtabs %}
+ 
 
 When you want to display only your custom context menu items, you can set true to the `showCustomMenuItemsOnly` property.
 

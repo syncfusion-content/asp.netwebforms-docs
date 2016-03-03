@@ -77,7 +77,7 @@ You can add ports at runtime by using the client side method `addPorts`. The fol
 
 ![](/aspnet/Diagram/Port_images/Port_img1.png)
 
-To explore the set of properties for defining a port, refer to [Port Properties](/aspnet/api/Diagram#members:nodes-ports "Port Properties")
+To explore the set of properties for defining a port, refer to [Port Properties](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.Port_members.html  "Port Properties")
 
 ### Update Port at runtime
 
@@ -99,7 +99,7 @@ For more information about creating connections with port, refer to [Connections
 
 ## Appearance 
 
-You can change the shape of port by using its `Shape` property. To explore the different types of port shapes, refer to [Port Shapes](/aspnet/api/global#portshapes "Port Shapes").
+You can change the shape of port by using its `Shape` property. To explore the different types of port shapes, refer to [Port Shapes](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.DiagramEnums.PortShapes.html "Port Shapes").
 The appearance of ports can be customized with a set of style specific properties. 
 
 The following code illustrates how to change the appearance of port.

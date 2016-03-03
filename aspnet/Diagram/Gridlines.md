@@ -24,11 +24,11 @@ The `SnapSettings.SnapConstraints` enables you to show/hide the gridlines. The f
 
 ![](/Gridlines_images/Gridlines_img1.png)
 
-To show only horizontal/vertical gridlines or to hide gridlines, refer to [Constraints](/js/Diagram/Constraints#snapconstraints "Constraints")
+To show only horizontal/vertical gridlines or to hide gridlines, refer to [Constraints]http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.DiagramEnums.SnapConstraints.html  "Constraints")
 
 ## Appearance
 
-You can customize the appearance of the gridlines by using a set of predefined properties. To explore those properties, refer to [Gridlines](/js/api/ejDiagram#snapsettings:horizontalgridlines "Gridlines")
+You can customize the appearance of the gridlines by using a set of predefined properties. To explore those properties, refer to [Gridlines](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.GridLines.html  "Gridlines")
 The `HorizontalGridLines` and `VerticalGridLines` properties allow to customize the appearance of the gridlines. The following code example illustrates how to customize the appearance of gridlines.
 
 {% highlight ASPX %}
@@ -96,7 +96,7 @@ Snapping to gridlines can be enabled/disabled with the `SnapSettings.SnapConstra
 </ej:Diagram> 
 {% endhighlight %}
 
-To enable/disable snapping to horizontal/vertical lines, refer to [Constraints] (/js/Diagram/Constraints#SnapConstraints "Constraints")
+To enable/disable snapping to horizontal/vertical lines, refer to [Constraints] (http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.DiagramEnums.SnapConstraints.html "Constraints")
 
 ## Customization of Snap Intervals
 

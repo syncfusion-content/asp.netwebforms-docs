@@ -22,15 +22,12 @@ To arrange the nodes in hierarchical structure, you need to specify the layout `
 
 {% tabs %}
 {% highlight ASPX %}
-<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" >
+<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" NodeTemplate="nodeTemplate" >
     <%--Uses layout to auto-arrange nodes on the Diagram page--%>
     <Layout Type="HierarchicalTree" HorizontalSpacing="30" VerticalSpacing="30" />
 
     <%--Configures data source for Diagram--%>
-    <DataSourceSettings Id ="Id" Parent ="ReportingPerson" />
-
-    <%--Initializes the node template.--%>
-    <NodeTemplate>nodeTemplate</NodeTemplate>
+    <DataSourceSettings Id ="Id" Parent ="ReportingPerson" />      
 </ej:Diagram>
 
 <script type="text/javascript">
@@ -479,11 +476,11 @@ public Array GetData(){
 
 Orientation, spacings, and position of layout can be customized with a set of properties.
 
-To explore layout properties, refer to [Layout Properties](/js/api/ejDiagram#members:layout "Layout Properties").
+To explore layout properties, refer to [Layout Properties](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.Layout_members.html "Layout Properties").
 
 ### Layout Orientation
 
-Diagram provides support to customize the orientation of layout. You can set the desired orinetation using `Layout.Orientation`. For more information about orientation, refer to [Layout Orientations](/js/api/global#layoutorientations "Layout Orientations")
+Diagram provides support to customize the orientation of layout. You can set the desired orinetation using `Layout.Orientation`. For more information about orientation, refer to [Layout Orientations](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.Layout~Orientation.html "Layout Orientations")
 
 The following code illustrates how to arrange the nodes in a "BottomToTop" orientation.
 

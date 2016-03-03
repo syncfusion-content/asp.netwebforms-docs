@@ -13,7 +13,7 @@ Diagram tracks the history of actions that are performed after loading the time 
 
 ## Undo and Redo
 
-Diagram provides inbuilt support to track the changes that are made through interaction and through public APIs. The changes can be reverted or restored either through short cut keys or through commands.
+Diagram provides Built-in support to track the changes that are made through interaction and through public APIs. The changes can be reverted or restored either through short cut keys or through commands.
 
 ### Undo redo through short cut keys
 
@@ -77,16 +77,12 @@ The following code example illustrates how to define methods to handle the custo
 
 {% tabs %}
 {% highlight ASPX %}
-    <ej:Diagram ID="DiagramContent" runat="server" Height="400px" Width="100%">
-    </ej:Diagram>
-{% endhighlight %}
 
-{% highlight C# %}
-
-    //Called to revert a custom action
-    DiagramContent.HistoryManager.Undo = "customUndoRedo";
-    //Called to restore the reverted custom action
-    DiagramContent.HistoryManager.Redo = "customUndoRedo";
+        <ej:Diagram ID="DiagramContent" runat="server" Height="400px" Width="100%" OnClientNodeCollectionChange="nodeCollectionChange">
+            <%--  revert and restore the reverted custom action--%>
+            <HistoryManager Undo="customUndoRedo" Redo="customUndoRedo">
+            <HistoryManager />
+        </ej:Diagram>
             
 {% endhighlight %}
 
