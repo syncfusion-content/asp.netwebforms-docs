@@ -218,7 +218,7 @@ The `OpposedPosition` property of Chart axis can be used to place the axis at th
 
 ## Smart Axis Labels
 
-When the axis labels overlap with each other based on the Chart dimensions and label size, you can use `LabelIntersection` property of the axis to avoid overlapping. The default value of the `LabelIntersection` property is none. The other options available are rotate45, rotate90, trim, multiplerows, wrap and hide.
+When the axis labels overlap with each other based on the Chart dimensions and label size, you can use `LabelIntersection` property of the axis to avoid overlapping. The default value of the `LabelIntersection` property is none. The other options available are "Rotate45", "Rotate90", "Trim", "MultipleRows", "Wrap" and "Hide".
 
 {% highlight html %}
 
