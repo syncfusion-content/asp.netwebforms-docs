@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Populate Diagram from external data sources
-description: How to populate the Diagram from the local data, remote data, or html tables?
+description: How to populate the Diagram from the local data, remote data, or HTML tables?
 platform: aspnet
 control: Diagram
 documentation: ug
@@ -17,7 +17,7 @@ To explore those properties, see [Data source settings](http://help.syncfusion.c
 * Diagram supports three different kinds of Data binding.
 	* Local Data
 	* Remote Data
-	* Html Table Data
+	* HTML Table Data
 
 ## Local Data
 
@@ -147,7 +147,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 ![](/Data-Binding_images/Data-Binding_img2.png)
 
-## Html Table Data
+## HTML Table Data
 
 The Diagram provides support to populate the Diagram from the **HTML table**. It is flexible to convert HTML table to Diagram by using **Data Manager**.
 

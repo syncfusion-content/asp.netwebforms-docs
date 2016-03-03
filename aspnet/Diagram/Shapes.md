@@ -13,7 +13,7 @@ Diagram provides support to add different kind of nodes. They are as follows.
 
 * Text Node
 * Image Node
-* Html Node
+* HTML Node
 * Native Node
 * Basic Shapes
 * Flow Shapes
@@ -62,7 +62,7 @@ Diagram allows to add images as image nodes. For image nodes,the **image** node 
 
 ## HTML
 
-**Html** elements can be embedded in the Diagram through **Html** type node. To create a html node, node can be created with HtmlNode class. In addition, you need to set the id of html template to the `TemplateId` property of node. The following code illustrates how an **Html** node is created.
+**HTML** elements can be embedded in the Diagram through **HTML** type node. To create a HTML node, node can be created with HtmlNode class. In addition, you need to set the id of HTML template to the `TemplateId` property of node. The following code illustrates how an **HTML** node is created.
 
 
  
@@ -70,7 +70,7 @@ Diagram allows to add images as image nodes. For image nodes,the **image** node 
 
     <!--dependency scripts-->
     <script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
-    <!—define html element-->
+    <!—define HTML element-->
     <script id="htmlTemplate" type="text/x-jsrender">
         <div style="margin-left: 32px; margin-top: 18px">
             <input type="button" value="Button" />
@@ -83,7 +83,7 @@ Diagram allows to add images as image nodes. For image nodes,the **image** node 
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
             <%--    Add the node to the nodes collection --%>
             <Nodes>
-                <%-- Defines the html node and sets id of html template--%>
+                <%-- Defines the HTML node and sets id of HTML template--%>
                 <ej:HtmlNode OffsetX="100" OffsetY="100" Height="100" Width="100" TemplateId ="htmlTemplate">
                 </ej:HtmlNode>
             </Nodes>
@@ -104,7 +104,7 @@ N> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is 
     <!--dependency scripts-->
     <script src="http://borismoore.github.io/jsrender/jsrender.min.js">
     </script>
-    <!--define html element-->
+    <!--define HTML element-->
     <script id="svgTemplate" type="text/x-jsrender">
         <g>	
             <path d="M 58.813 0 H 3.182 L 30.998 24.141 L 58.813 0 Z

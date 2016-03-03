@@ -15,7 +15,7 @@ This section explains briefly you on how to create a Diagram in your application
 
 ### Initialize Diagram
 
-1\. Create an ASP.Net Application and add necessary Dll’s and Scripts by referring [ASP-Getting Started](http://help.syncfusion.com/aspnet/getting-started) Documentation.
+1\. Create an ASP.NET Application and add necessary assemblies and Scripts by referring [ASP-Getting Started](http://help.syncfusion.com/aspnet/getting-started) Documentation.
 
 2\. Create a web form named as Diagram and add the following template.
 

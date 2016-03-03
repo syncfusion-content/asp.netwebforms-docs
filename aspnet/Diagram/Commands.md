@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Explore the frequently used inbuilt commands
-description: How to explore and use the inbuilt commands?
+title: Explore the frequently used Built-in commands
+description: How to explore and use the Built-in commands?
 platform: aspnet
 control: Diagram
 documentation: ug
@@ -340,7 +340,7 @@ Region specifies the region/bounds of the Diagram content that is to be fit into
 
 ## Command Manager
 
-Diagram provides support to map/bind command execution with desired combination of key gestures. Diagram provides some in-built commands. For more information about inbuilt commands, refer to [Keyboard Interaction](/js/Diagram/Interaction#keyboard "Keyboard Interaction").
+Diagram provides support to map/bind command execution with desired combination of key gestures. Diagram provides some Built-in commands. For more information about Built-in commands, refer to [Keyboard Interaction](/js/Diagram/Interaction#keyboard "Keyboard Interaction").
 Command Manager provides support to define custom commands. The custom commands are executed, when the specified key gesture is recognized.
 
 ### Custom command
@@ -399,7 +399,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 When any one of the default commands is not desired, they can be disabled. To change the functionality of a specific command, the command can be completely modified.
 
-The following code example illustrates how to disable a command and how to modify the in-built commands.
+The following code example illustrates how to disable a command and how to modify the Built-in commands.
 
 {% tabs %}
 {% highlight ASPX %}
