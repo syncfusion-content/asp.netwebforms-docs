@@ -48,8 +48,6 @@ Add the contents for the dialog as below.
 
 {% endhighlight %}
 
-
-
 ![Add dialog content](getting-started_images\getting-started_img2.png)
 
 ### Set Title
@@ -69,8 +67,6 @@ The Dialog widget’s title can be set as follows.
 
 
 {% endhighlight %}
-
-
 
 ![Set the title](getting-started_images\getting-started_img3.png)
 
@@ -121,8 +117,6 @@ Add the following script
 
 
 {% endhighlight %}
-
-
 
 ![Open-Dialog-dynamically](getting-started_images\getting-started_img4.png)
 
