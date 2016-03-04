@@ -11,7 +11,7 @@ documentation: ug
 
 ## Create your first UploadBox in ASP.NET
 
-ASP.NET WebForms UploadBox provides support to upload the files or photos within your webpage. From the following guidelines, you can learn how to upload the file by using Resume Upload scenario. This helps you to restrict some file extensions while uploading the resume in the server by using UploadBox control. The following screenshot demonstrates the functionality of UploadBox with file extension.
+ASP.NET WebForms UploadBox provides support to upload the files or photos within your web page. From the following guidelines, you can learn how to upload the file by using Resume Upload scenario. This helps you to restrict some file extensions while uploading the resume in the server by using UploadBox control. The following screenshot demonstrates the functionality of UploadBox with file extension.
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 

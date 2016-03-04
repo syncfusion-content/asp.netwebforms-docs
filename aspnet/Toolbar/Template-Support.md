@@ -11,7 +11,7 @@ documentation: ug
 
 Templates allows you to insert custom or ASP.NET controls inside the toolbar items. You can also design simple dropdown buttons listing the items and radio button inside the Toolbar.
 
-Set the list forDropDowncontrolinside a list tag and define this tag as a Toolbar item. You can use all simple controls as a ToolBar item. The following code example explains how to add RadioButton and DropDownList to the Toolbar.
+Set the list forDropDowncontrol inside a list tag and define this tag as a Toolbar item. You can use all simple controls as a ToolBar item. The following code example explains how to add RadioButton and DropDownList to the Toolbar.
 
 Add the following code example to the corresponding ASPX page to render the Toolbar Control.
 

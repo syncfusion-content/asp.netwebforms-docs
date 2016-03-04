@@ -144,7 +144,7 @@ In CSS, configure the custom styles for drag and drop.
 
 ## Adjust Drop area size
 
-The UploadBox control provides the ability to change or adjust the drop area size. The DropAreaHeight andDropAreaWidth properties in the UploadBox control allow you to set the maximum height and maximum width for the drop area. The value set to this property is stringornumber type.
+The UploadBox control provides the ability to change or adjust the drop area size. The DropAreaHeight andDropAreaWidth properties in the UploadBox control allow you to set the maximum height and maximum width for the drop area. The value set to this property is string or number type.
 
 The following steps explain how to adjust the Drop Area Size.
 

@@ -11,7 +11,7 @@ documentation: ug
 
 ## Create your first Waiting Popup in ASP.NET  
 
-Essential ASP.NET Waiting Popup provides support to display a Waiting Popup within your webpage. From the following guidelines, you can learn how to create a Waiting Popup in the real-time login page authentication scenario.
+Essential ASP.NET Waiting Popup provides support to display a Waiting Popup within your web page. From the following guidelines, you can learn how to create a Waiting Popup in the real-time login page authentication scenario.
 
 The following screenshot illustrates the functionality of a Waiting Popup with login page scenario.
 
@@ -139,7 +139,7 @@ You can create a WEB Project and add the necessary assemblies, styles, and scr
 
 {% endhighlight %}
 
-The following screenshot displays the Userlogin.
+The following screenshot displays the User login.
 
  ![](Getting-Started_images/Getting-Started_img2.png) 
 
