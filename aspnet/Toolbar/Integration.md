@@ -9,9 +9,9 @@ documentation: ug
 
 # Integration
 
-## Angular Js
+## AngularJS
 
-The Toolbar is availed with two types of angular JS support namely, 
+The Toolbar is availed with two types of AngularJS support namely, 
 
 * One way binding
 * Two way binding 

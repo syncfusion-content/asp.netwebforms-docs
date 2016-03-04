@@ -73,7 +73,7 @@ Details</th></tr>
 {{ '[maxRequestLength](https://msdn.microsoft.com/en-us/library/system.web.configuration.httpruntimesection.maxrequestlength.aspx)' | markdownify }}</td><td>
 Property</td><td>
 28.6 MB</td><td>
-Maximum request sizesupported by ASP.NET.</td></tr>
+Maximum request size supported by ASP.NET.</td></tr>
 <tr>
 <td>
 {{ '[maxAllowedContentLength](https://msdn.microsoft.com/en-us/library/ms689462(v=vs.90).aspx)' | markdownify }}</td><td>
