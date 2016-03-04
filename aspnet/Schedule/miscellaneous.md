@@ -30,7 +30,7 @@ N> When Scheduler rendered with multiple resources, multiple time indicators are
 
 ## Show/Hide All-Day Row
 
-The All-day row cell is a single row region displayed at the top of the workcell area to hold the all-day appointments together. The Scheduler displays it by default and if it needs to be hidden, the `ShowAllDayRow` property can be set to **false** as shown below.
+The All-day row cell is a single row region displayed at the top of the work cells area to hold the all-day appointments together. The Scheduler displays it by default and if it needs to be hidden, the `ShowAllDayRow` property can be set to **false** as shown below.
 
 {% highlight html %}
 
@@ -46,7 +46,7 @@ The All-day row cell is a single row region displayed at the top of the workcell
 
 N> The All-day row expands vertically whenever more number of appointments are populated in the one or more days.
 
-## Show/Hide Headerbar
+## Show/Hide Header bar
 
 The header bar is the topmost region of the Scheduler which includes the date navigation icons and view navigation options – and also shown on the Scheduler by default. To hide the header bar, set the `ShowHeaderBar` property to **false** as shown below.
 
