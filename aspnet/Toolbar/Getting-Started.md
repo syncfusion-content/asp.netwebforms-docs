@@ -74,7 +74,7 @@ The Toolbar consists of a list of items. From the following guidelines, you can
 
 
 
-Apply the styles specified in the code table to show the Toolbar itemsas follows. You can refer to the images from any location. For the following code example, the images are referred from the following location.
+Apply the styles specified in the code table to show the Toolbar items as follows. You can refer to the images from any location. For the following code example, the images are referred from the following location.
 
 [http://js.syncfusion.com/UG/Web/Content/](http://js.syncfusion.com/UG/Web/Content/)pdf-icon.png
 
@@ -156,7 +156,7 @@ Run the above code to render a Toolbar with a list of Toolbar items. 
 
 ### Render remaining Toolbar Items
 
-To achieve the requirements, you need to render all the Toolbar items. You can separate or group the Toolbar items. The separation or grouping of Toolbar items is achieved by setting the EnableSeprator property to true for the Toolbar control. Set the IsSeparator property to true for the ToolbarItem that needs to be separated with other ToolbarItem. In the following sections, you can learn how to initialize the remaining Toolbar items and how to group the toolbar items.
+To achieve the requirements, you need to render all the Toolbar items. You can separate or group the Toolbar items. The separation or grouping of Toolbar items is achieved by setting the EnableSeparator property to true for the Toolbar control. Set the IsSeparator property to true for the ToolbarItem that needs to be separated with other ToolbarItem. In the following sections, you can learn how to initialize the remaining Toolbar items and how to group the toolbar items.
 
 Initialize and group the Toolbar items as follows.
 
@@ -455,7 +455,7 @@ Add the following code example to display the Toolbar items.
 
 {% endhighlight %}
 
-Set the Zoom value as it is one of the items in the Toolbar. You need to render the Dropdown list control for select zoomvalue. Dropdown list control is rendered with the DropDownListItem elements. The ASP.NET Dropdown control with a list of zoom valuesis used to render the Set Zoom value in the above code example. Refer to the following link for Dropdowncreation.
+Set the Zoom value as it is one of the items in the Toolbar. You need to render the Dropdown list control for select zoom value. Dropdown list control is rendered with the DropDownListItem elements. The ASP.NET Dropdown control with a list of zoom values is used to render the Set Zoom value in the above code example. Refer to the following link for Dropdown creation.
 
 [Dropdown – GettingStarted](/aspnet/dropdownlist/getting-started)
 

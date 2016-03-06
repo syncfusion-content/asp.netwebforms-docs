@@ -9,11 +9,11 @@ documentation: ug
 
 # Configure Badge
 
-The -badge property handles badge specific functionalities like enable or disable the badge and setting badge value for Tile.
+The badge property handles badge specific functionalities like enable or disable the badge and setting badge value for Tile.
 
-The“data-ej-badge-enabled” attribute enables or disables the badge for a Tile. The Tile renders with hidden badge when it is set to false.
+The “data-ej-badge-enabled” attribute enables or disables the badge for a Tile. The Tile renders with hidden badge when it is set to false.
 
-The “data-ej-badge-value” attribute is used to set the badge value to a Tile. By default, the Value is set to 1 on initialization. The “data-ej-badge-text” attribute isusedtoset the text instead of number for Tile badge. The “data-ej-badge-maxvalue” attributeisusedto set the maximum badge value to a Tile. When you set the badge value greater than “data-ej-badge-maxvalue”, it shows maximum value in badge with plus symbol. The “data-ej-badge-minvalue” attribute is used to set the minimum badge value to a Tile. When you set the badge value less than “data-ej-badge-minvalue”, it shows minimum value in badge.
+The “data-ej-badge-value” attribute is used to set the badge value to a Tile. By default, the Value is set to 1 on initialization. The “data-ej-badge-text” attribute isused to set the text instead of number for Tile badge. The “data-ej-badge-maxvalue” attribute is used to set the maximum badge value to a Tile. When you set the badge value greater than “data-ej-badge-maxvalue”, it shows maximum value in badge with plus symbol. The “data-ej-badge-minvalue” attribute is used to set the minimum badge value to a Tile. When you set the badge value less than “data-ej-badge-minvalue”, it shows minimum value in badge.
 
 Refer to the following code examples.
 

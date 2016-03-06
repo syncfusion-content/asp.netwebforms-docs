@@ -50,7 +50,7 @@ It specifies the text content of the tag</td></tr>
 <td>
 DataImageUrlField</td><td>
 string</td><td>
-This property defines the imageURL for the image location. While setting images, the folder name in which the images are stored is set to the ImageUrlproperty.</td></tr>
+This property defines the imageURL for the image location. While setting images, the folder name in which the images are stored is set to the ImageUrl property.</td></tr>
 <tr>
 <td>
 DataImageAttributeField</td><td>
@@ -65,7 +65,7 @@ This property sets the Sprite CSS for the image tag in the Toolbar.</td></tr>
 <td>
 DataHtmlAttributeField</td><td>
 object</td><td>
-This property sets the HTMLattribute for the Toolbar item.</td></tr>
+This property sets the HTML attribute for the Toolbar item.</td></tr>
 <tr>
 <td>
 DataTooltipTextField</td><td>
@@ -307,7 +307,7 @@ The following screenshot displays the output of the above code.
 
 ## Sql Data
 
-SqlDataSource is designed to work with SQL Server databases. It uses the SQL Server .NET data provider internally. SQL Server .NET data provider classes are defined in the System.Data.SqlClient namespace. To bind the SqlDataSource to ToolBar, DataSourceID should be the id of sqldatasource. You can select the table from the selectcommand. Create a table with given fields in Sql and refer that in the connectionstring to run the given sample.Refer to the following screenshot for the fields and its corresponding data types.
+Sql DataSource is designed to work with SQL Server databases. It uses the SQL Server .NET data provider internally. SQL Server .NET data provider classes are defined in the System.Data.SqlClient namespace. To bind the Sql DataSource to ToolBar, DataSourceID should be the id of sql datasource. You can select the table from the select command. Create a table with given fields in Sql and refer that in the connection string to run the given sample.Refer to the following screenshot for the fields and its corresponding data types.
 
 ![C:/Users/jeganprakash/Desktop/IMG_22092014_162354.png](Data-binding_images/Data-binding_img3.png) 
 
@@ -335,7 +335,7 @@ The following screenshot displays the output of the above code.
 
 ## Object Data
 
-The objectdatasource control lets you to bind a specific data layer in the same manner by which you bind to the database by using other controls. The objectdatasource control can bind to any method that returns a DataSet or an IEnumerable object (for example, a DataReader or a collection of Classes). The major advantage of binding via objectdatasource is, only records that are required in the current view are retrieved from the database. To bind the objectdatasource to ToolBar, refer to the following code example.
+The object datasource control lets you to bind a specific data layer in the same manner by which you bind to the database by using other controls. The object datasource control can bind to any method that returns a DataSet or an IEnumerable object (for example, a DataReader or a collection of Classes). The major advantage of binding via object datasource is, only records that are required in the current view are retrieved from the database. To bind the object datasource to ToolBar, refer to the following code example.
 
 Add the following code example to the corresponding ASPX page to render the Toolbar Control
 
@@ -531,9 +531,9 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 
 
-### Linq to Sql Data
+### LINQ to SQL Data
 
-The LinqDataSource is used to bind the Toolbar data via Linq to Sql. The property ContextTypeNameindicates the location of the datasource. You can mention the exact table name of your database in the TableNameproperty. The id of LinqDataSource should be given to DataSourceID of Toolbar. To bind data by using Linq to Sql to Toolbar, Create a table with the given fields in Linq to Sql and refer that in the TableName. Location of the database should be given intheContextTypeName. Refer to the following code example.
+The LINQ DataSource is used to bind the Toolbar data via LINQ to SQL. The property ContextTypeName indicates the location of the datasource. You can mention the exact table name of your database in the TableName property. The id of LinqDataSource should be given to DataSourceID of Toolbar. To bind data by using LINQ to SQL to Toolbar, Create a table with the given fields in LINQ to SQL and refer that in the TableName. Location of the database should be given in the ContextTypeName. Refer to the following code example.
 
 
 
