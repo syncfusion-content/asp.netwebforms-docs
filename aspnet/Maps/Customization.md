@@ -202,7 +202,7 @@ Gets or sets the color for mapping.</td></tr>
 
 In equal color mapping, value property contains the values of the field set in ColorValuePath property of shape settings.
 
-Here “Map.aspx.cs” is populated with datas of USA Election in “Map.aspx.cs” to provide election data as input datasource.
+Here “Map.aspx.cs” is populated with data of USA Election in “Map.aspx.cs” to provide election data as input datasource.
 
 
 

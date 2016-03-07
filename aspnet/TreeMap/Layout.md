@@ -20,7 +20,7 @@ There are four different TreeMap layouts such as
 
 ### Squarified Layout
 
-Squarifiedlayout creates rectangles with best aspect ratio.
+Squarified layout creates rectangles with best aspect ratio.
 
 {% tabs %}
 {% highlight c# %}
