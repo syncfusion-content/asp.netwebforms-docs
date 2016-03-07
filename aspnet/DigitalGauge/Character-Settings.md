@@ -11,7 +11,7 @@ documentation: ug
 
 ## Appearance
 
-The opacityof the character is adjustable with the help of opacity property. The space between two characters are adjusted with spacing property as like in the segment settings.
+The opacity of the character is adjustable with the help of opacity property. The space between two characters are adjusted with spacing property as like in the segment settings.
 
 
 

@@ -278,7 +278,7 @@ The output of TreeGrid with Row Template is as follows.
 
 ## Row Drag and Drop
 
-It is possible to dynamically re-arrange the rows in the TreeGrid control by using the AllowDragAndDrop property. With this property, row drag can be enabled or disabled. Rows can be inserted above, below as a sibling or as a child to the existing row with the help of this feature. A default tooltip is rendered while dragging the TreeGrid row and this tooltip can be customized by the DragTooltip property. This propertyhas inner properties such as ShowTooltip, TooltipItems and TooltipTemplate.
+It is possible to dynamically re-arrange the rows in the TreeGrid control by using the AllowDragAndDrop property. With this property, row drag can be enabled or disabled. Rows can be inserted above, below as a sibling or as a child to the existing row with the help of this feature. A default tooltip is rendered while dragging the TreeGrid row and this tooltip can be customized by the DragTooltip property. This property has inner properties such as ShowTooltip, TooltipItems and TooltipTemplate.
 
 The ShowTooltip property is used to enable or disable the tooltip. By default, this property value is false.
 

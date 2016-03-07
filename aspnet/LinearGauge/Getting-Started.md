@@ -64,7 +64,7 @@ Run the above code to get a gauge that is similar to default. Here height and wi
 ### Set Animation option and Label Color
 
 * You can draw the Thermometer with some Label color and Animation.
-* Intially set EnableAnimation property to ‘false’ to avoid unwanted script loads.
+* Initially set EnableAnimation property to ‘false’ to avoid unwanted script loads.
 
 {% highlight html %}
 

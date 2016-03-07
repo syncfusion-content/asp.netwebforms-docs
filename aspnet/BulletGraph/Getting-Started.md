@@ -125,7 +125,7 @@ Once the DataSource property is assigned with the required values, you can bind 
 
 ### Set Default and Scale Values
 
-You can plot any number of measure bars within the BulletGraph by increasing the height and width of the control to locate all the measure bars within the graph. Set the QualitativeRangesize and QuantitativeScaleLength properties according to the following code example.
+You can plot any number of measure bars within the BulletGraph by increasing the height and width of the control to locate all the measure bars within the graph. Set the QualitativeRangeSize and QuantitativeScaleLength properties according to the following code example.
 
 By default, the BulletGraph is rendered in the horizontal orientation with its flow direction set to Forward. In this example, to achieve the desired output, change the horizontal orientation to vertical orientation with the flow direction set to Backward.
 

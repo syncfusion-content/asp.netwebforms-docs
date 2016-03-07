@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create a Ganttchart in your application with ASP.NET.
+This section explains briefly about how to create a Gantt chart in your application with ASP.NET.
 
 ## Create your first Gantt in ASP.NET
 
