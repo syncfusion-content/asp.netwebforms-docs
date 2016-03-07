@@ -9,13 +9,13 @@ documentation: ug
 
 # Button types
 
-Toggle Button is used as normal clickable button, for submitting form data, and resetting the form data to its initial value. According to the usage of button, you can render the Toggle Button in the following three types by using the Type property.
+Toggle Button is used as normal click able button, for submitting form data, and resetting the form data to its initial value. According to the usage of button, you can render the Toggle Button in the following three types by using the Type property.
 
 <table>
 <tr>
 <th>
 Button</th><td>
-The button is a clickable button.</td></tr>
+The button is a click able button.</td></tr>
 <tr>
 <th>
 Submit</th><td>

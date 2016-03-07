@@ -23,8 +23,8 @@ OnChange</td><td>
 It is raised when the Toggle Button is clicked.</td><td>
 <br/>
 Event Argument contains the following parameters:<br/><br/>
-e.Status - Status of Togglebutton.<br/><br/>
-e.IsChecked - Checked Status of Togglebutton<br/><br/>
+e.Status - Status of ToggleButton.<br/><br/>
+e.IsChecked - Checked Status of ToggleButton<br/><br/>
 e.EventType - Event Name<br/><br/>
 e.Arguments - Contain keys and values for Status.<br/>
 </td></tr>

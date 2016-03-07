@@ -9,7 +9,7 @@ documentation: ug
 
 # Template Support
 
-The“data-ej-imagetemplateid” attribute is used to customize the image of Tile with template feature by setting the id. The“data-ej-captiontemplateid” attribute is used to customize the text of Tile with template feature by setting the id. 
+The “data-ej-imagetemplateid” attribute is used to customize the image of Tile with template feature by setting the id. The “data-ej-captiontemplateid” attribute is used to customize the text of Tile with template feature by setting the id. 
 
 Refer to the following code examples.
 
