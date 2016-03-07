@@ -226,7 +226,7 @@ Execute the above code to render the following output.
 ## Responsive 
 
 * For any display devices, the control is to be rendered based on the space in that device. The control must be responsive. For this purpose resizing property is present in Linear Gauge control. 
-* The Linear Gauge renders with the specified value. When the browser changes its size, the canvas element checks the dimension with its parent element and if there are any changes in parent dimension, gauge control also changes the dimension based on its parent changes. You can enable this feature using enableResize property.
+* The Linear Gauge renders with the specified value. When the browser changes its size, the canvas element checks the dimension with its parent element and if there are any changes in parent dimension, gauge control also changes the dimension based on its parent changes. You can enable this feature using isResponsive property.
 
 
 {% highlight html %}
@@ -235,7 +235,7 @@ Execute the above code to render the following output.
 
 <%-- For enabling responsible layout-- %>
 
-<ej:LinearGauge runat="server" Orientation="Horizontal" LabelColor="black" EnableResize="true" ID="PointerGauge" Value="78" Width="400" Height="100" enableAnimation="false" Themes="flatLight" BackgroundColor="transparent">
+<ej:LinearGauge runat="server" Orientation="Horizontal" LabelColor="black" IsResponsive="true" ID="PointerGauge" Value="78" Width="400" Height="100" enableAnimation="false" Themes="flatLight" BackgroundColor="transparent">
 
 <%-- For Adding Scale collection-- %>
 

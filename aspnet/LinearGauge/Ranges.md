@@ -19,7 +19,7 @@ Range collection can be directly added to the scale object. Refer the following 
 
 <%--For Linear gauge rendering-- %>
 
-<ej:LinearGauge runat="server" ID="PointerGauge"  Height="150" width="600" labelColor="black" Orientation="Horizontal" EnableResize="true" EnableAnimation="false">
+<ej:LinearGauge runat="server" ID="PointerGauge"  Height="150" width="600" labelColor="black" Orientation="Horizontal" IsResponsive="true" EnableAnimation="false">
 
 <%-- For setting scale collection-- %>
 
@@ -315,7 +315,7 @@ You can set multiple ranges by adding an array of range objects. Refer the follo
 
 <%--For Linear gauge rendering-- %>
 
-<ej:LinearGauge runat="server" ID="PointerGauge" Height="150" width="600" Orientation="Horizontal" labelColor="black" EnableResize="true" EnableAnimation="false">
+<ej:LinearGauge runat="server" ID="PointerGauge" Height="150" width="600" Orientation="Horizontal" labelColor="black" IsResponsive="true" EnableAnimation="false">
 
 <Scales>
 
