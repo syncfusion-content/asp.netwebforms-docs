@@ -1299,7 +1299,7 @@ Essential Chart allows you to create semi pie and doughnut chart using StartAngl
 
 ## Pyramid Chart
 
-The Pyramid Chart type displays the data that when totalled renders 100%. This type of Chart is a single series Chart representing the data as portions of 100%, and this Chart does not use any axes. You can customize the series color and border using Fill and Border properties in series and each slice of series using Fill and Border properties in point.
+The Pyramid Chart type displays the data that when totaled renders 100%. This type of Chart is a single series Chart representing the data as portions of 100%, and this Chart does not use any axes. You can customize the series color and border using Fill and Border properties in series and each slice of series using Fill and Border properties in point.
 
 
 
