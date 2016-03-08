@@ -13,7 +13,7 @@ The Series property provides access to a collection of all series that are defin
 
 ## Multiple Series
 
-You can plot multipleseries on the same Chart. Series are defined by adding them to the "series" array and rendering order of each series can be controlled using the ZOrder properties of the series. Series with 0 as ZOrder renders first. 
+You can plot multiple series on the same Chart. Series are defined by adding them to the "series" array and rendering order of each series can be controlled using the ZOrder properties of the series. Series with 0 as ZOrder renders first. 
 {% highlight html %}
 
 

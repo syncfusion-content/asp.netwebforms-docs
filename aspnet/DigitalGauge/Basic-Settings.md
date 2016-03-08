@@ -73,7 +73,7 @@ Digital Gauge control with Responsible layout
 
 ## Themes
 
-Themes give the good appearance to the control. There are two types of Themes available for DigitalGauge as folllows
+Themes give the good appearance to the control. There are two types of Themes available for DigitalGauge as follows
 
 * flatlight
 * flatdark

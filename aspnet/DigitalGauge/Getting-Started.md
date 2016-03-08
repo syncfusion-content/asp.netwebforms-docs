@@ -235,7 +235,7 @@ Execute this code to render a Gauge as follows.
 ![](Getting-Started_images/Getting-Started_img6.png)
 
 
-Digiatl gauge with segment location
+Digital gauge with segment location
 {:.caption} 
 
 
@@ -329,6 +329,6 @@ Execute this code to render a Digital thermometer as follows.
 
 ![](Getting-Started_images/Getting-Started_img7.png)
 
-Digiatal gauge with item collection
+Digital gauge with item collection
 {:.caption} 
 

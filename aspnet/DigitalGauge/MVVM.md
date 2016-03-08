@@ -237,7 +237,7 @@ Execute the above code to render the following output.
 ![](MVVM_images/MVVM_img4.png)
 
 
-Digital Gauge with Knockout binding
+Digital Gauge with KnockoutJS binding
 {:.caption} 
 
 

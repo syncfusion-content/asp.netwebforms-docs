@@ -136,7 +136,7 @@ The following screenshot displays Bullet Graph in a backward direction.
 
 ## Qualitative range size
 
-Size of the Qualitativerange is customized using QualitativeRangeSize property. Default value of this property is 32. 
+Size of the qualitative range is customized using QualitativeRangeSize property. Default value of this property is 32. 
 {% highlight html %}
 
 
@@ -157,7 +157,7 @@ The following screenshot displays Bullet Graph with Qualitative range of size 50
 
 ## Quantitative scale length
 
-Length of the Quantitativescale is customized using QuantitativeScaleLength property. Default value of this property is 475. 
+Length of the quantitative scale is customized using QuantitativeScaleLength property. Default value of this property is 475. 
 {% highlight html %}
 
 

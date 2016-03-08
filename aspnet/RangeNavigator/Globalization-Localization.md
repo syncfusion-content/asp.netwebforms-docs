@@ -45,7 +45,7 @@ Localization is the key feature that provides solutions globally with the help o
 
 ![](Globalization-Localization_images/Globalization-Localization_img1.png)
 
-Locialization
+Localization
 {:.caption}
 
 ## RTL

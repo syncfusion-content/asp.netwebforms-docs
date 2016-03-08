@@ -242,7 +242,7 @@ Execute the above code to render the following output.
 
  ![](MVVM_images/MVVM_img4.png)
 
-### Adding Tick Colection
+### Adding Tick Collection
 
 Tick is an array object. You can use the inner tag for it. 
 

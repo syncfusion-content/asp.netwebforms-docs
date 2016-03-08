@@ -41,7 +41,9 @@ endDate
 
 resourceInfo
 
-durationstatus
+duration
+
+status
 
 predecessor
 
@@ -64,7 +66,7 @@ baselineEndDate: "Baseline End Date"
 {% endhighlight %}</td></tr>
 <tr>
 <td>
-Edit Dialog Texts:addFormTitleeditFormTitlesaveButtoncancelButton</td><td>
+Edit Dialog Texts:addFormTitle editFormTitle saveButton cancelButton</td><td>
 {% highlight js %}
 editDialogTexts: {     
 addFormTitle: "New Task",     

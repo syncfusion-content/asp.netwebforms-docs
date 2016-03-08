@@ -33,7 +33,7 @@ The following screenshot displays Legend Title:
 
 ## Legend Position
 
-You can position the legend at top, bottom, left or right position of the Chart. Default value of legendPosition is “Bottom”. And you can align the legend position using “Alignment” property of Legend.  This allows you to align the legend at Center, Far and Near position of Chart area. Default value of legendalignment is “Center”. 
+You can position the legend at top, bottom, left or right position of the Chart. Default value of legendPosition is “Bottom”. And you can align the legend position using “Alignment” property of Legend.  This allows you to align the legend at Center, Far and Near position of Chart area. Default value of legendAlignment is “Center”. 
 {% highlight html %}
  
 

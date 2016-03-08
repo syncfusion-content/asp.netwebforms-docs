@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Behaviour Customization
+# Behavior Customization
 
 Essential Chart allows you to customize the Chart through events. For example, you can add custom marker for highest and lowest data point using the events.
 
@@ -540,9 +540,9 @@ This event is handled when you move the mouse over the legend item; a parameter 
 
 {% endtabs %}
 
-LengendBoundsCalculate: function
+LegendBoundsCalculate: function
 
-This event is handled after the bounds for legend is calculated.  A parameter sender is passed to the handler.  Using sender.data.legendBound, you can access the bounds of the Chartlegend.
+This event is handled after the bounds for legend is calculated.  A parameter sender is passed to the handler.  Using sender.data.legendBound, you can access the bounds of the Chart legend.
 
 {% tabs %}
 
