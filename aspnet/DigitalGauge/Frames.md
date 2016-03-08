@@ -40,7 +40,7 @@ Digital Gauge control with frame inner and outer width
 
 ## Setting Background Image
 
-For a better appearance, you can set the backgroundimage for the Digital Gauge using the property backgroundImageUrl. 
+For a better appearance, you can set the background image for the Digital Gauge using the property backgroundImageUrl. 
 
 
 

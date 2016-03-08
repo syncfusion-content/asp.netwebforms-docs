@@ -17,7 +17,7 @@ Scales are the basic functional block of the Circular Gauge. By customizing the 
 * Indicators
 * Ticks
 * Ranges
-* Subgauges.
+* Sub-gauges.
 
 
 
@@ -93,7 +93,7 @@ Execute the above code to render the following output.
 ### Pointer Cap
 
 * Pointer cap is a circular shape element that is located at the center of the Circular Gauge. The pointer cap is one of the cynosure of the Circular Gauge. By customizing the pointer cap, Gauge style is improved. The pointer cap is modified with the object pointerCap. 
-* It contains radius, borderColor, bordrWidth, interiorGradient and backgroundColor properties. The property radius is used to set the radius for the pointer cap. interiorGradient is used to provide the gradient effects to the pointer cap.
+* It contains radius, borderColor, borderWidth, interiorGradient and backgroundColor properties. The property radius is used to set the radius for the pointer cap. interiorGradient is used to provide the gradient effects to the pointer cap.
 
 {% highlight html %}
 

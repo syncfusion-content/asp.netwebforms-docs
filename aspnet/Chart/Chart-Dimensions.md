@@ -9,7 +9,7 @@ documentation: ug
 
 # Chart Dimensions
 
-In this section you can learn how to change the Chartdimensions. You can change the Chart height and width in terms of pixels and percentage with the size property. When size is specified, the Chart remains to that specific size irrespective of the size of the container. You can always resize the Chart when the browser or Chart container is resized by setting CanResize property to true, where the Chart adapts to the changes in size of the container. By default, Chart height will be 450px and Chart width takes the container width as default value.
+In this section you can learn how to change the Chart dimensions. You can change the Chart height and width in terms of pixels and percentage with the size property. When size is specified, the Chart remains to that specific size irrespective of the size of the container. You can always resize the Chart when the browser or Chart container is resized by setting CanResize property to true, where the Chart adapts to the changes in size of the container. By default, Chart height will be 450px and Chart width takes the container width as default value.
 
 ## Setting dimension in pixel values:
 

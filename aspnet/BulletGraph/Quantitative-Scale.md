@@ -34,7 +34,7 @@ The following screenshot displays a Bullet Graph with start range 0, end range 1
 
 ## Quantitative scale location
 
-Bullet Graph does not position Quantitativescale automatically based on its size or space required for caption text, etc. By default Quantitative scale is positioned at 10 pixels from left and 10 pixels from top. Quantitative scale location is customized as per the requirement using the Location property available in QuantitativeScaleSettings.
+Bullet Graph does not position quantitative scale automatically based on its size or space required for caption text, etc. By default quantitative scale is positioned at 10 pixels from left and 10 pixels from top. Quantitative scale location is customized as per the requirement using the Location property available in QuantitativeScaleSettings.
 
 {% highlight html %}
 
@@ -127,7 +127,7 @@ The following screenshot displays Bullet Graph with ticks positioned above quant
 
 ## Tick Placement
 
-Quantitativescaleticks can be placed either inside or outside the scale using “TickPlacement” property. By default ticks are placed outside the scale.
+Quantitative scale ticks can be placed either inside or outside the scale using “TickPlacement” property. By default ticks are placed outside the scale.
 {% highlight html %}
 
         <ej:BulletGraph ID="BulletGraph1" runat="server" Value="8" ComparativeMeasureValue="5" QualitativeRangeSize="50">
@@ -164,7 +164,7 @@ The following screenshot displays Bullet Graph ticks inside Quantitative Scale
 
 ## Quantitative scale labels
 
-Quantitativescalelabels are customized with prefix, suffix, font, color and size using LabelSettings property. By default, label text is displayed in black color with 12 pixel ‘Segoe UI’ font and there is a padding of 20 pixels space between quantitative scale and labels.
+Quantitative scale labels are customized with prefix, suffix, font, color and size using LabelSettings property. By default, label text is displayed in black color with 12 pixel ‘Segoe UI’ font and there is a padding of 20 pixels space between quantitative scale and labels.
 
 
 {% highlight html %}
@@ -198,7 +198,7 @@ Bullet Graph quantitative scale with customized labels
 
 ## Label Placement
 
-Quantitativescalelabels can be placed either inside or outside the scale using “LabelPlacement” property. By default labels are placed 15 pixels outside the scale. 
+Quantitative scale labels can be placed either inside or outside the scale using “LabelPlacement” property. By default labels are placed 15 pixels outside the scale. 
 {% highlight html %}
 
         <ej:BulletGraph ID="BulletGraph1" runat="server" Value="8" Width="620" ComparativeMeasureValue="5" QualitativeRangeSize="50">
@@ -239,7 +239,7 @@ The following screenshot displays Bullet Graph labels inside Quantitative Scale
 
 ## Performance measure bar
 
-Performancemeasurebar is customized using FeaturedMeasureSettings in QuantitativeScaleSettings property. Color of the bar is customized using Stroke property and width using Width property. By default bar is drawn in black color with 6 pixels of width. 
+Performance measure bar is customized using FeaturedMeasureSettings in QuantitativeScaleSettings property. Color of the bar is customized using Stroke property and width using Width property. By default bar is drawn in black color with 6 pixels of width. 
 {% highlight html %}
 
 

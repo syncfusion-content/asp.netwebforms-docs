@@ -13,7 +13,7 @@ This section explains briefly about how to create a RangeNavigator in your ASP.N
 
 ## Create your first RangeNavigator in ASP.NET
 
-This section encompasses the details on how to configure the RangeNavigator and update the chart control for RangeNavigator’s selected range. It also helps you to learn how to pass the required data to RangeNavigator and customize the scale and selected range for your requirements. In this example, you will learn how to configure the RangeNavigator to analyse sales of a product for a particular quarter in a year.
+This section encompasses the details on how to configure the RangeNavigator and update the chart control for RangeNavigator’s selected range. It also helps you to learn how to pass the required data to RangeNavigator and customize the scale and selected range for your requirements. In this example, you will learn how to configure the RangeNavigator to analyze sales of a product for a particular quarter in a year.
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
@@ -22,7 +22,7 @@ RangeNavigator
 
 ### Create a simple ASP.NET Application for RangeNavigator
 
-You can create a new ASP.NET Rangenavigator using Syncfusion ASP.NET website template.
+You can create a new ASP.NET RangeNavigator using Syncfusion ASP.NET website template.
 
 1. On the File menu, click NewWeb Site. The New Web Site dialog box opens.
 
@@ -42,7 +42,7 @@ You can create a new ASP.NET Rangenavigator using Syncfusion ASP.NET website tem
 
 7. The New ASP.NET web site opens.
 
-8. While creating web site through Sycfusion ASP template, the below changes will be applied in the project.
+8. While creating web site through Syncfusion ASP template, the below changes will be applied in the project.
 
 9. Configure web.config files for assemblies
 
@@ -92,9 +92,9 @@ You can create a new ASP.NET Rangenavigator using Syncfusion ASP.NET website tem
 
    ![](Getting-Started_images/Getting-Started_img5.png)
 
-13.Now you can find Rangenavigator custom control in the Syncfusion Toolbox.
+13.Now you can find RangeNavigator custom control in the Syncfusion Toolbox.
 
-14.Click on Rangenavigator icon and drag and drop in your web page.
+14.Click on RangeNavigator icon and drag and drop in your web page.
 
    ![](Getting-Started_images/Getting-Started_img6.png)
 
@@ -208,7 +208,7 @@ RangeNavigator with the type series as “line”.
 
 ### Enable tooltip
 
-Tooltip can be customized for RangeNavigator using Tooltip option. You can also use ToolipDisplayMode option in Tooltip to display the tooltip “always” or “ondemand” (displays tooltip only while dragging the sliders). You can also specify label format for tooltip using LabelFormat.
+Tooltip can be customized for RangeNavigator using Tooltip option. You can also use TooltipDisplayMode option in Tooltip to display the tooltip “always” or “ondemand” (displays tooltip only while dragging the sliders). You can also specify label format for tooltip using LabelFormat.
 
 {% highlight html %}
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" XName="xDate" YName="yValue">

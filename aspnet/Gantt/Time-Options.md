@@ -14,7 +14,7 @@ Start date and End date in the datasource defines the starting point and ending 
 * Date 
 * Datetime
 
-The datetime datatype for start date and end date defines the exact starting point and ending point of a task along with time details of a day. There are two types of time scales available based on working hours,
+The datetime data type for start date and end date defines the exact starting point and ending point of a task along with time details of a day. There are two types of time scales available based on working hours,
 
 * TimeScale8Hours  for 8 hour working scale
 * TimeScale24Hours for 24 hour working scale

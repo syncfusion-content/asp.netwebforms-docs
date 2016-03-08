@@ -22,7 +22,7 @@ Digital Gauge for Essential Studio encompasses the visualization of the segmente
 Digital Gauge
 {:.caption} 
 
-There are several other properties available in Digital Gauge which enable you to peform various customizations such as changing the space between the characters, segment width, segment length, spacing between the segments, and other customizations.
+There are several other properties available in Digital Gauge which enable you to perform various customizations such as changing the space between the characters, segment width, segment length, spacing between the segments, and other customizations.
 
 ## Key Features
 

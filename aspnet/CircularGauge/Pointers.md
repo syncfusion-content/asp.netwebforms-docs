@@ -144,7 +144,7 @@ Execute the above code to render the following output.
 
 ### Appearance
 
-* Based on the value, thepointer point out the label value. You can set the pointer length and width using length and width property respectively. 
+* Based on the value, the pointer point out the label value. You can set the pointer length and width using length and width property respectively. 
 * And you can also adjust the opacity of the pointer using the property opacity which holds the value between 0 and 1. You can add the gradient effects to the pointer using gradient object.
 
 
@@ -278,7 +278,7 @@ In ASP Circular Gauge, it is possible to replace the pointer with some images. Y
 
 ### ImageUrl
 
-To implement the pointer image we need to give the API called ImageUrl. It is a string datatype. Image type pointer is applicable for both marker and needle type pointers and it is possible to combine the normal marker pointer type with an image type. The three possibilities are
+To implement the pointer image we need to give the API called ImageUrl. It is a string data type. Image type pointer is applicable for both marker and needle type pointers and it is possible to combine the normal marker pointer type with an image type. The three possibilities are
 
 1. Needle Image
 2. Marker Image
@@ -286,7 +286,7 @@ To implement the pointer image we need to give the API called ImageUrl. It is a 
 
 #### Needle Image 
 
-In this type, needle pointer is completely replaced by image. You can implement it with the help of thr following example.
+In this type, needle pointer is completely replaced by image. You can implement it with the help of the following example.
 
 {% highlight html %}
 
@@ -669,7 +669,7 @@ Execute the above code to render the following output.
 
 ## Pointer Value Text
 
-Gauge Pointer valuetext is used to display the current value of the pointer in the Circular Gauge control.
+Gauge Pointer value text is used to display the current value of the pointer in the Circular Gauge control.
 
 ### Positioning the text
 
@@ -772,7 +772,7 @@ Run the above code to render the output as follows.
 
 ## Appearance
 
-Appearance of the Circular Gaugepointer value text is adjusted by using four properties. Such as color, angle, autoAngle and opacity.
+Appearance of the Circular Gauge pointer value text is adjusted by using four properties. Such as color, angle, autoAngle and opacity.
 
 * Color property is used to set the color of the pointer value text.
 * Angle property is used to set the angle in which the text is displayed.

@@ -46,7 +46,7 @@ The following screenshot displays a Bullet Graph with customized caption using t
 
 ## Subtitle
 
-Subtitle is added to Bullet Braph using Text property of Subtitle in CaptionSettings. Subtitle also provides properties like Location, TextAngle and Font to customize subtitle similar to caption.
+Subtitle is added to Bullet Graph using Text property of Subtitle in CaptionSettings. Subtitle also provides properties like Location, TextAngle and Font to customize subtitle similar to caption.
 
 
 {% highlight html %}
