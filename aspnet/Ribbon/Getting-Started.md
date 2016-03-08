@@ -130,7 +130,7 @@ The following screenshot shows designer page of TabGroupCollection
 
 ## Adding Controls to Group
 
-Syncfusion ASP.NET Controls can be added to group’s content with corresponding `Type` specified like Button, Split button, Toggle button, Dropdownlist, Gallery, Custom, etc. Default type is `Button`.
+Syncfusion ASP.NET Controls can be added to group’s content with corresponding `Type` specified like Button, Split button, Toggle button, Dropdown list, Gallery, Custom, etc. Default type is `Button`.
 
 
 {% tabs %}
