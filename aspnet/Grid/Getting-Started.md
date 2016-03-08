@@ -95,7 +95,7 @@ The Paging feature in Grid offers complete navigation support to easily switch
 {% endhighlight %}
 
 
-The following screenshot displays a Grid withpaging.
+The following screenshot displays a Grid with paging.
 
 
 
@@ -105,7 +105,7 @@ The following screenshot displays a Grid withpaging.
 
 ## Enable Filtering
 
-The Filtering feature in Grid is usedto facilitate the extraction of a subset of records that meet a certain criteria. You can apply Filters to one or more columns. This feature is used to filter particular sales data, in order to review the details.
+The Filtering feature in Grid is used to facilitate the extraction of a subset of records that meet a certain criteria. You can apply Filters to one or more columns. This feature is used to filter particular sales data, in order to review the details.
 
 To enable filtering, use the AllowFiltering property of Grid as follows.
 

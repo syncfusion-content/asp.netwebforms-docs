@@ -16,7 +16,7 @@ The following two script files are necessary to perform Localization in Grid.
 1. jquery.globalize.min.js
 2. globalize.culture.en-US.min.js (Changeable)
 
-The globalize.culture.en-US.min.js scripts are changeable based on the culture name. Each culture has its own culture script file that differs by its culture code. For example en-US is the culture codefor English - United States.
+The globalize.culture.en-US.min.js scripts are changeable based on the culture name. Each culture has its own culture script file that differs by its culture code. For example en-US is the culture code for English - United States.
 
 The following code example demonstrates how to switch the culture of Grid as de-DE (German - Germany).
 

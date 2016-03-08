@@ -98,7 +98,7 @@ The following output is displayed as a result of the above code example.
 
 ![](Editing_images/Editing_img1.png)
 
-## Cell edit type and its editoptions
+## Cell edit type and its edit options
 
 The edit type of bound column can be customized using `EditType` property of `Columns`. The following Essential JavaScript controls are supported inbuilt by `EditType`. You can set the `EditType` based on specific data type of the column. 
 
@@ -510,7 +510,7 @@ N> 1. `value` attribute is used to bind the corresponding field value while edit
 N> 2. `name` attribute is used to get the changed field values while saving the edited record.
 N> 3.  It's a standard way to enclose the `Template` within the `script` tag with `type` as "text/x-jsrender".
 
-The following code example describes the above behaviour.
+The following code example describes the above behavior.
 
 {% tabs %}
 
@@ -728,7 +728,7 @@ While using template, you can change the elements that are defined in the `Templ
 N> 1. `value` attribute is used to bind the corresponding field value while editing.
 N> 2. `name` attribute is used to get the changed field values while save the edited record. 
 
-The following code example describes the above behaviour.
+The following code example describes the above behavior.
 
 {% tabs %}
 
@@ -1030,7 +1030,7 @@ While using template, you can change the elements that are defined in the templa
 N> 1. `value` attribute is used to bind the corresponding field value while editing. 
 N> 2. `name` attribute is used to get the changed field values while save the edited record. 
 
-The following code example describes the above behaviour.
+The following code example describes the above behavior.
 
 {% tabs %}
 
@@ -2031,7 +2031,7 @@ The following code example describes the above behavior.
 
 {% endtabs %}
 
-Please refer the below image for more information about batch paramaters
+Please refer the below image for more information about batch parameters
 
 ![](Editing_images/Editing_img25.png)
 

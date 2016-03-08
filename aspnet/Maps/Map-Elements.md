@@ -9,7 +9,7 @@ documentation: ug
 
 # Map Elements
 
-Map control contains a set of map elements, including shapes, bubbles, markers, legend, labels and data items that can be visualized with customized appearance showing additional information on the map using databound datas.
+Map control contains a set of map elements, including shapes, bubbles, markers, legend, labels and data items that can be visualized with customized appearance showing additional information on the map using bound data.
 
 ## Markers 
 

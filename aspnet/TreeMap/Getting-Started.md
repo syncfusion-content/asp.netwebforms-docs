@@ -353,7 +353,7 @@ You can enable the tooltip by setting ShowTooltip to ‘True’. By default, it 
 
 #### Leaf Item Settings
 
-You can customize the Leaf level TreeMapitems using LeafItemSettings. The Label and tooltip values take the property of bound object that is referred in the LabelPath when defined.
+You can customize the Leaf level TreeMap items using LeafItemSettings. The Label and tooltip values take the property of bound object that is referred in the LabelPath when defined.
 
 The following code sample displays how the tooltip is enabled.
 
@@ -414,11 +414,11 @@ TreeMap with tooltip option
 
 You can set the color value of leaf nodes using TreeMapLegend. This legend is appropriate only for the TreeMap whose leaf nodes are colored using RangeColorMapping.
 
-You can set ShowLegend propery value to ‘True’ to make a Legend visible.
+You can set ShowLegend property value to ‘True’ to make a Legend visible.
 
 #### Label for Legend
 
-You can customize the labels of the legenditem using LegendLabel property of RangeColorMapping. 
+You can customize the labels of the legend item using LegendLabel property of RangeColorMapping. 
 
 The following code sample displays how to add labels for legend in a TreeMap.
 

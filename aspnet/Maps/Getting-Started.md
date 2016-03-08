@@ -62,7 +62,7 @@ You can store the “United States of America.json” file in App_Data folder as
 
 ### Prepare DataSource
 
-The dataSource is populated with USA population data inside the controller relative to shape data. For your better understanding, “Map.aspx.cs” is populated with datas of USA Population in “Map.aspx.cs”. Refer to both shape data and datasource as illustrated in the following “Map.aspx.cs”,
+The dataSource is populated with USA population data inside the controller relative to shape data. For your better understanding, “Map.aspx.cs” is populated with data of USA Population in “Map.aspx.cs”. Refer to both shape data and datasource as illustrated in the following “Map.aspx.cs”,
 
 
 
@@ -373,7 +373,7 @@ Map with default properties
 
 ### Data Binding in Map
 
-The following properties in shape layers is used for binding datas in Maps control.
+The following properties in shape layers is used for binding data in Maps control.
 
 * DataSource
 * ShapeDataPath

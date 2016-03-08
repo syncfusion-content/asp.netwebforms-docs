@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 # Sorting
-The Grid control has support to sort databound columns in ascending or descending order. This can be achieved by setting `AllowSorting` property as `true`. 
+The Grid control has support to sort data bound columns in ascending or descending order. This can be achieved by setting `AllowSorting` property as `true`. 
 
 To dynamically sort a particular column, click on its column header. The order switch between ascending and descending each time you click a column header for sorting.
 

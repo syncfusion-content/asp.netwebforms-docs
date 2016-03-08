@@ -11,7 +11,7 @@ documentation: ug
 
 Map is maintained through Layers and it can accommodate one or more layers.
 
-## Multilayers
+## Multilayer
 
 The Multilayer support allows you to load multiple shape files in a single container, enabling maps to display more information.
 

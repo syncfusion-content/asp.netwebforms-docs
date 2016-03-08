@@ -19,7 +19,7 @@ TreeMap contains various elements such as,
 
 You can set the color value of leaf nodes using TreeMapLegend. This legend is appropriate only for the TreeMap whose leaf nodes are colored using RangeColorMapping.
 
-You can set ShowLegend propery value to “True” to enable or disable legend visibility.
+You can set ShowLegend property value to “True” to enable or disable legend visibility.
 
 ## TreeMap Legend
 
@@ -27,7 +27,7 @@ You can decide the size of the legend icons by setting IconWidth and IconHeight 
 
 ### Label for Legend
 
-You can customize the labels of the legenditem using LegendLabel property of RangeColorMapping. 
+You can customize the labels of the legend item using LegendLabel property of RangeColorMapping. 
 
 
 
@@ -81,7 +81,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 ### Header
 
-You can set headers for each level by setting the ShowHeader propery of the each TreeMap levels. The HeaderHeight property helps to set the height of the header and Group path value determines the header value. You can customize the default header appearance by setting the HeaderTemplate of the TreeMap levels.
+You can set headers for each level by setting the ShowHeader property of the each TreeMap levels. The HeaderHeight property helps to set the height of the header and Group path value determines the header value. You can customize the default header appearance by setting the HeaderTemplate of the TreeMap levels.
 
 {% tabs %}
 {% highlight c# %}

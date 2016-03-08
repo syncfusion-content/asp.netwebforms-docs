@@ -26,7 +26,7 @@ A Map is a graphical representation of geographical data. It is used to represen
 * Layers - Map is maintained through Layers and it can accommodate one or more layers.
 * Map Providers Support - Syncfusion Map support map providers such as OpenStreetMap that can be added to any layers in maps.
 * GeoJSON Data Input - The GeoJSON standard allows you to plot your own shapes using customized data to your maps. You can obtain some of the GeoJSON standard shape information from [GEOJSON format shapes](http://www.syncfusion.com/uploads/user/uploads/Maps_GeoJSON.zip) that can be used as data input for maps.
-* Map Elements Customization - Map contains a set of elements, including shapes, bubbles, markers, legend, labels and data items that can be visualized with customized appearance showing additional information on the map using databound datas.
+* Map Elements Customization - Map contains a set of elements, including shapes, bubbles, markers, legend, labels and data items that can be visualized with customized appearance showing additional information on the map using bound data.
 * User Interaction - Options like zooming, panning and map selection enables the effective interaction on map elements.
 
 
