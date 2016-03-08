@@ -25,7 +25,7 @@ Must always be referred to before using all the ASP.NET controls.</td></tr>
 <tr>
 <td>
 ej.data.min.js</td><td>
-Used to handle datamanger operation and should be used while binding data to ASP.NET controls.</td></tr>
+Used to handle data manger operation and should be used while binding data to ASP.NET controls.</td></tr>
 <tr>
 <td>
 ej.globalize.min.js</td><td>
@@ -53,7 +53,7 @@ This file is used to render tabs into the Ribbon control.</td></tr>
 <tr>
 <td>
 ej.dropdownlist.min.js</td><td rowspan = "4">
-  These files are used to render button,split button,toggle button, and dropdownlist controls in the ribbon groups.</td></tr>
+  These files are used to render button,split button,toggle button, and dropdown list controls in the ribbon groups.</td></tr>
 <tr>
 <td>
 ej.splitbutton.min.js</td></tr>
