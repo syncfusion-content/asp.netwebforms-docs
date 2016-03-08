@@ -25,7 +25,7 @@ Must be referred always before using all the JS controls.</td></tr>
 <tr>
 <td>
 ej.data.min.js</td><td>
-Used to handle datamanger operation and should be used while binding data to JS controls.</td></tr>
+Used to handle datamanager operation and should be used while binding data to JS controls.</td></tr>
 <tr>
 <td>
 ej.grid.min.js</td><td>
@@ -41,7 +41,7 @@ Should be referred when using scrolling in grid.  </td></tr>
 <tr>
 <td>
 ej.waitingpopup.min.js</td><td>
-Should be referred when using the remote databinding in grid. The waiting popup will show while requesting the server for data.</td></tr>
+Should be referred when using the remote data binding in grid. The waiting popup will show while requesting the server for data.</td></tr>
 <tr>
 <td>
 ej.gridresize.min.js</td><td>

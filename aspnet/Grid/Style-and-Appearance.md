@@ -13,7 +13,7 @@ Style and appearance of Grid are based on CSS class. You need two style sheets t
 
 ## Customize styles
 
-In some scenarios, you may want to change colour or design of Grid control’s appearance. In that situation, you can override default styles of Grid control using its class names. The following are specific class names you can use to modify styles and appearance in Grid.
+In some scenarios, you may want to change color or design of Grid control’s appearance. In that situation, you can override default styles of Grid control using its class names. The following are specific class names you can use to modify styles and appearance in Grid.
 
 * e-js – Class name, used to represent element ej-widget control, that is present at the container element of Grid control.
 * e-gridheader – This class is applied at the root of header element.

@@ -86,7 +86,7 @@ The following output is displayed as a result of the above code example.
 
 ## Hierarchy
 
-In this section, you can learn how to use the Hierachytree in GridView. The following code example is of HierachyGrid.
+In this section, you can learn how to use the Hierarchy in GridView. The following code example is of HierarchyGrid.
 
 {% tabs %}
 
@@ -277,7 +277,7 @@ The following output is displayed as a result of the above code example.
 
 ## Row Template
 
-Row template is used to render your template in every row. It is used to place elements inside Grid rows. This feature makes it easier to customise Grid rows with HTML elements. Using RowTemplate property achieve row template feature.
+Row template is used to render your template in every row. It is used to place elements inside Grid rows. This feature makes it easier to customize Grid rows with HTML elements. Using RowTemplate property achieve row template feature.
 
 {% tabs %}
 
@@ -501,7 +501,7 @@ The following output is displayed as a result of the above code example.
 
 ## Customize Hover and AltRow 
 
-EnableAltRow and EnableRowHover are graphical features in Grid that are used to enable alternate row color in Grid and enable hover effects while hovering over row cells. By default, these two features are enabled in Grid. In this section, you can learn how to cutomize alternative rows color and hover color in the Grid controls.
+EnableAltRow and EnableRowHover are graphical features in Grid that are used to enable alternate row color in Grid and enable hover effects while hovering over row cells. By default, these two features are enabled in Grid. In this section, you can learn how to customize alternative rows color and hover color in the Grid controls.
 
 {% tabs %}
 
