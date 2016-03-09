@@ -118,7 +118,7 @@ The following example explains the how to bind data to the MaskEditTextbox cont
 
 
 
-The output of NumericTextbox controls with two-way angular bindingis as follows.
+The output of NumericTextbox controls with two-way angular binding is as follows.
 
 ![](Integration_images/Integration_img1.jpeg) 
 

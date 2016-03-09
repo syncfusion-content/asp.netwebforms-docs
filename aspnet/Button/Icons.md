@@ -9,7 +9,7 @@ documentation: ug
 
 # Icons
 
-The Essential Studioprovide icons library that contains the number of in-built icons that can be applied for CSS class names to elements and refer “ej.widgets.all.core.min.css” file. Use the following syntax to apply class names.
+The Essential Studio provide icons library that contains the number of in-built icons that can be applied for CSS class names to elements and refer “ej.widgets.all.core.min.css” file. Use the following syntax to apply class names.
 
 Syntax: .e-icon .e-[icon description]
 

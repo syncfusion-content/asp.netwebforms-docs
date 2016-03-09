@@ -91,7 +91,7 @@ The following properties provides you a way to bind either local or remote data 
             <br/>
         </td>
         <td>
-            It is used to categorize the items based on a specific field. The value mapped to this field must be able tp group the popup items.
+            It is used to categorize the items based on a specific field. The value mapped to this field must be able to group the popup items.
             <br/>
         </td>
     </tr>

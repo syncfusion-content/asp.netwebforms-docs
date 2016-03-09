@@ -118,7 +118,7 @@ The following example explains how to bind data to the NumericTextbox widget t
 
 
 
-The following screenshot displays the output of the NumericTextbox controls with two-way angular bindingis as follows.
+The following screenshot displays the output of the NumericTextbox controls with two-way angular binding is as follows.
 
 
 
@@ -133,7 +133,7 @@ Knockout support allows you to bind the HTML elements against any of the avai
 * One-way binding
 * Two-way binding
 
-One-way binding refers to the process of applying observable values to all the available properties of the NumericTextbox control, but the changes made in the NumericTextbox control are not reflected and triggered in turn to the observable collection. This kind of binding applies to all the properties of the NumericTextboxcontrol.
+One-way binding refers to the process of applying observable values to all the available properties of the NumericTextbox control, but the changes made in the NumericTextbox control are not reflected and triggered in turn to the observable collection. This kind of binding applies to all the properties of the NumericTextbox control.
 
 Two-way binding supports both the processes; it applies the observable values to the NumericTextbox control properties as well as the changes made in the NumericTextbox control are also reflected back and triggered within the observable collections.
 
@@ -255,7 +255,7 @@ The following example explains how to bind data to the NumericTextbox control t
 
 
 
-The following screenshot displays the output of the Knockout binding in the NumericTextbox .
+The following screenshot displays the output of the KnockoutJS binding in the NumericTextbox .
 
 ![](Integration_images/Integration_img2.jpeg) 
 

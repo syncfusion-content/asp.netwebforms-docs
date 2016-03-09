@@ -208,7 +208,7 @@ RangeNavigator with the type series as “line”.
 
 ### Enable tooltip
 
-Tooltip can be customized for RangeNavigator using Tooltip option. You can also use ToolipDisplayMode option in Tooltip to display the tooltip “always” or “ondemand” (displays tooltip only while dragging the sliders). You can also specify label format for tooltip using LabelFormat.
+Tooltip can be customized for RangeNavigator using Tooltip option. You can also use TooltipDisplayMode option in Tooltip to display the tooltip “always” or “ondemand” (displays tooltip only while dragging the sliders). You can also specify label format for tooltip using LabelFormat.
 
 {% highlight html %}
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" XName="xDate" YName="yValue">

@@ -13,7 +13,7 @@ This section explains briefly how to create a Checkbox in your application with 
 
 ## Create your first Checkbox in ASP.NET
 
-ASP.NET Checkbox provides support for multiple selections, within your webpage and allows you to specify an option from the list. From the following guidelines, you can select Multiple or Single Selection List Receiving App by using Checkbox. The following screenshot demonstrates the functionality with Checkbox button action.
+ASP.NET Checkbox provides support for multiple selections, within your web page and allows you to specify an option from the list. From the following guidelines, you can select Multiple or Single Selection List Receiving App by using Checkbox. The following screenshot demonstrates the functionality with Checkbox button action.
 
 ![Description: C:/Users/jeganprakash/Desktop/Documentation/Images/Check/1.PNG](Getting-Started_images/Getting-Started_img1.png)
 

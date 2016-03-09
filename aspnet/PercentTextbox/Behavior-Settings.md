@@ -46,7 +46,7 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 
 
-The output for PercentageTextbox with EnablePersistencebefore page load and after page load is as follows.
+The output for PercentageTextbox with EnablePersistence before page load and after page load is as follows.
 
 ![](Behavior-Settings_images/Behavior-Settings_img2.png) 
 

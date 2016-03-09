@@ -11,7 +11,7 @@ documentation: ug
 
 ListBox items can be grouped by providing a heading (header) for each set of items.
  
-The grouped ListBox is created via databinding which is explained below. The data items can be categorized by using a specific field in the ListBox widget.
+The grouped ListBox is created via data binding which is explained below. The data items can be categorized by using a specific field in the ListBox widget.
 
 The grouping will be defined based on the “GroupBy” property in fields object.
 

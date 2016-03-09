@@ -11,7 +11,7 @@ documentation: ug
 
 In real-time scenario, the progress of ProgressBar is changed according to the length of text in the password field by binding the change in the properties of control and checking the length of the password field.
 
-Add the following code example in the &lt;script&gt; tag of your ASP.NETweb page.
+Add the following code example in the &lt;script&gt; tag of your ASP.NET web page.
 
 {% highlight js %}
 $(function () {

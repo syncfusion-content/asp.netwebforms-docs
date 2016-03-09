@@ -291,7 +291,7 @@ The following example depicts the way to bind data to the PercentageTextbox con
 
 
 
-The output of PercentageTextbox controls with two-way angular bindingis as follows.
+The output of PercentageTextbox controls with two-way AngularJS binding is as follows.
 
 ![](Integration_images/Integration_img3.jpeg)
 

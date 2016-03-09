@@ -7,7 +7,7 @@ control: ListBox
 documentation: ug
 ---
 
-# Databinding 
+# Data Binding 
 
 The ListBox is populated with the node information taken from a data source. The ListBox supports binding data sources containing Object data, Remote data, XML Data, SQL Data and LinqToSql Data.
 

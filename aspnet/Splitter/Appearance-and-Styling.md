@@ -224,7 +224,7 @@ The output for Splitter after adding the properties.
 
 ## Theme
 
-Splitter control’s style and appearance can be controlled based on CSS classes. In order to apply styles to the Splitter control, refer to 2 files namely: ej.widgets.core.min.css and ej.theme.min.css. When you refer to ej.widgets.all.min.css file, it is not necessary to include the filesej.widgets.core.min.css and ej.theme.min.css in your project, as ej.widgets.all.min.css is the combination of these two.
+Splitter control’s style and appearance can be controlled based on CSS classes. In order to apply styles to the Splitter control, refer to 2 files namely: ej.widgets.core.min.css and ej.theme.min.css. When you refer to ej.widgets.all.min.css file, it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project, as ej.widgets.all.min.css is the combination of these two.
 
 By default, there are 13 themes support available for Splitter control namely
 

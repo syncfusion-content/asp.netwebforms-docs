@@ -41,7 +41,7 @@ Create listbox wrapper with its listbox items as in the below code snippet.
 
 ![](Getting-Started_images\Getting-Started_img1.png)
 
-## Databinding
+## Data binding
 
 We can populate data in the ListBox widget using using “DataSource” and “Fields” properties.
 

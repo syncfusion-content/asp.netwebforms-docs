@@ -21,7 +21,7 @@ The following server side event is available in Button control.
 <td>
 OnClick</td><td>
 Triggers when the button is clicked. </td><td>
-Event Argument contains parameters aree.Status – Status of Button.e.EventType – Event Namee.Arguments – Contain keys and values for Status.</td></tr>
+Event Argument contains parameters are .Status – Status of Button.e.EventType – Event Name.Arguments – Contain keys and values for Status.</td></tr>
 </table>
 In the ASPX page, add the Button control to configure Button events.
 
