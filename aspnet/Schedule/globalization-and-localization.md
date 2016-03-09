@@ -10,7 +10,7 @@ keywords: globalize, localize, localization, globalization
 
 ## Globalization
 
-The Scheduler control is built with default **globalization** support as it format the dates according to the user’s locale automatically and processes it internally without any need for manual conversions. This kind of default handling of Scheduler dates is achieved through the reference of **ej.globalize** library which globalizes the date, day and month names accordingly. 
+The Scheduler control is built with default **globalization** support as it format the dates according to the user’s locale automatically and processes it internally without any need for manual conversions. This kind of default handling of Scheduler dates is achieved through the reference of **ej.globalize** library which globalize the date, day and month names accordingly. 
 
 ## Localization
 

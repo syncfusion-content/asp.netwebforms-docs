@@ -66,7 +66,7 @@ Now, after adding the above validations – whenever the fields within the custo
 
 ## Highlight Different Work Hours for Each Resources
 
-By default, the work hours of the Scheduler is highlighted based on the start and end values provided within the `WorkHours` object. It remains same for all the resources, when the Scheduler is rendered with multiple resources. To customize this behaviour so as to highlight different workhour range for each of the resources, the following workaround can be utilised by making use of the Scheduler events **Create** and `ActionComplete`.
+By default, the work hours of the Scheduler is highlighted based on the start and end values provided within the `WorkHours` object. It remains same for all the resources, when the Scheduler is rendered with multiple resources. To customize this behavior so as to highlight different workhours range for each of the resources, the following workaround can be utilized by making use of the Scheduler events **Create** and `ActionComplete`.
 
 Initially, set the **Highlight** as false for the **WorkHours**, so as to disable the highlighting of default work hour range.
 
@@ -301,9 +301,9 @@ The following code example depicts the way to achieve the customization of defau
 
 {% endhighlight %}
 
-## Signalr 
+## SignalR 
 
-To implement SignalR concept in Scheduler, add and refer the appropriate SignalR scripts in your project and then create a hub for initiating the action. The SignalR implemantation can be achived with the following code example.
+To implement SignalR concept in Scheduler, add and refer the appropriate SignalR scripts in your project and then create a hub for initiating the action. The SignalR implementation can be achieved with the following code example.
 
 {% highlight html %}
 
