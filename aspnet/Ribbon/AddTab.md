@@ -9,10 +9,10 @@ documentation: ug
 
 # AddTab
 
-This method is used to add tab dynamically in the Ribbon control. This method requires three arguments addTab(Tabname,TabGroupcollection,index)
+This method is used to add tab dynamically in the Ribbon control. This method requires three arguments addTab(TabName,TabGroupCollection,index)
 
-* Tabname : Name of the tab.
-* TabGroupcollection : Collection of the tab groups that tab needs to add.
+* TabName : Name of the tab.
+* TabGroupCollection : Collection of the tab groups that tab needs to add.
 * Index : Index in which the tab is to be added.It is an optional argument. When this argument is not given, by default the tab is added at the last position.
 
 

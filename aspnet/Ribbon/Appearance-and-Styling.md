@@ -950,7 +950,7 @@ The following output is displayed as a result of the above code example.
 
 ## Add Tab Group
 
-This method is used to add Ribbon Group dynamically in the Ribbon control. This method needs three arguments addTabGroup(Tab index, Groupcollection, Group index)
+This method is used to add Ribbon Group dynamically in the Ribbon control. This method needs three arguments addTabGroup(Tab index, GroupCollection, Group index)
 
 Tab index : Index of tab, where the group is to be added.
 
