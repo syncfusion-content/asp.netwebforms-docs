@@ -141,7 +141,7 @@ In the ASPX page, define the Accordion control and set the contents URL locati
 
 
 
-Output for Accordion control with loaded Ajax content is as follows.
+Output for Accordion control with loaded AJAX content is as follows.
 
 ![](Ajax-settings_images/Ajax-settings_img1.png) 
 

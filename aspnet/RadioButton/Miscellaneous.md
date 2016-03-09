@@ -100,10 +100,10 @@ Argument Details</th></tr>
 <tr>
 <td>
 OnChange</td><td>
-It is raise when Radiobutton status has been changed whether checked to uncheck / unchecked to check.</td><td>
-Event Argument contains parameters aree.IsChecked – Status of Radiobutton.e.EventType – Event Namee.Arguments – Contain keys and values for IsChecked.</td></tr>
+It is raise when RadioButton status has been changed whether checked to uncheck / unchecked to check.</td><td>
+Event Argument contains parameters are .IsChecked – Status of RadioButton.e.EventType – Event Name.Arguments – Contain keys and values for IsChecked.</td></tr>
 </table>
-In the ASPX page, add the Checkbox control to configure Radiobutton events.
+In the ASPX page, add the Checkbox control to configure RadioButton events.
 
 {% highlight html %}
 <%--Add serverside event for Radio Button control as follows--%>

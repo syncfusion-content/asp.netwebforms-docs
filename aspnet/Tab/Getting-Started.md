@@ -22,7 +22,7 @@ The ASP.NET Tab control is an interface that displays the content in multiple se
 
 You can create an ASP Project and add the necessary Dll and scripts with the help of the given [ASP-Getting Started](http://help.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc) Documentation.
 
-Add the following code example to the corresponding ASP page for Tabrendering.
+Add the following code example to the corresponding ASP page for Tab rendering.
 
 {% highlight html %}
 

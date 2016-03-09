@@ -15,7 +15,7 @@ documentation: ug
 
     ![](Getteing-Started_images/Getteing-Started_img3.jpeg)
 
-2. Once the control is dragged and dropped into the page the embedded resource will add dependent script and CSS files from Synfusion.EJ.Web assembly and the assembly will be referred from GAC. This will add the follwing appSetting key in web.config file to load resource files.
+2. Once the control is dragged and dropped into the page the embedded resource will add dependent script and CSS files from Syncfusion.EJ.Web assembly and the assembly will be referred from GAC. This will add the following appSetting key in web.config file to load resource files.
 
     {% highlight xml %}
         
@@ -32,7 +32,7 @@ documentation: ug
 
     ![](Getteing-Started_images/Getteing-Started_img4.jpeg)
 
-    Switching from Design view to Source the DropDownList code looks like the below. Synfusion namespace will be registered and control will be intialized from the Syncfusion.EJ.Web namespace tag prefix "ej". The items to DropDownList are added using the DropDownListItem child element under Items.
+    Switching from Design view to Source the DropDownList code looks like the below. Syncfusion namespace will be registered and control will be initialized from the Syncfusion.EJ.Web namespace tag prefix "ej". The items to DropDownList are added using the DropDownListItem child element under Items.
 
     {% highlight html %}
 

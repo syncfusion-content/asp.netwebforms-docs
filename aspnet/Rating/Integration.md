@@ -79,7 +79,7 @@ The following screenshot displays the output of the above code example.
 
 ![](Integration_images/Integration_img1.png)
 
-## Konckout Binding
+## KnockoutJS Binding
 
 Knockout support allows you to bind the HTML elements with any of the available data models.
 

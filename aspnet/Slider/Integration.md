@@ -25,7 +25,7 @@ All properties in the Slider supports one way data binding. Here one way binding
 
 The Slider properties, value and values are provided with two way binding support. The changes made to these properties are reflected both in the application data (model) and in HTML view.
 
-In an ASPX page, initialize the Slider by using the directive andin JavaScript bind the value and width properties in Angularway. 
+In an ASPX page, initialize the Slider by using the directive and in JavaScript bind the value and width properties in Angular way. 
 
 {% highlight html %}
 

@@ -41,7 +41,7 @@ The CurrencyTextbox control provides state maintenance support. You can maintain
 
 ### Configure Persistence Support 
 
-Add the following code in your ASPX page to render the CurrencyTextbox control with state maintenance by using the EnablePersistenceproperty.
+Add the following code in your ASPX page to render the CurrencyTextbox control with state maintenance by using the EnablePersistence property.
 
 {% highlight html %}
 
@@ -55,7 +55,7 @@ Add the following code in your ASPX page to render the CurrencyTextbox control w
 
 
 
-The output for the CurrencyTextbox with EnablePersistencebefore the page load and after changing the value and page load are as follows.
+The output for the CurrencyTextbox with EnablePersistence before the page load and after changing the value and page load are as follows.
 
 ![](Behavior-Settings_images/Behavior-Settings_img2.png)
 

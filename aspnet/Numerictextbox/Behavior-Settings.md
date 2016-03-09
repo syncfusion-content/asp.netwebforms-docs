@@ -39,7 +39,7 @@ The NumericTextbox control provides state maintenance support. You can maintain 
 
 ### Configure Persistence Support 
 
-Add the following code example in your ASPX page to render the NumericTextbox control with the state maintence.
+Add the following code example in your ASPX page to render the NumericTextbox control with the state maintenance.
 
 {% highlight html %}
 

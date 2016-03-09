@@ -11,7 +11,7 @@ documentation: ug
 
 ## Theme support
 
-You can control the style and appearance of Button control based on CSS classes. In order to apply styles to the Button control, you can refer two files namely, ej.widgets.core.min.css and ej.theme.min.css. When you refer the ej.widgets.all.min.cssfile, then it is not necessary to include the files ej.widgets.core.min.cssand ej.theme.min.cssin your project as ej.widgets.all.min.css is the combination of these two. 
+You can control the style and appearance of Button control based on CSS classes. In order to apply styles to the Button control, you can refer two files namely, ej.widgets.core.min.css and ej.theme.min.css. When you refer the ej.widgets.all.min.css file, then it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project as ej.widgets.all.min.css is the combination of these two. 
 
 By default, there are 13 themes support available for Button control.
 

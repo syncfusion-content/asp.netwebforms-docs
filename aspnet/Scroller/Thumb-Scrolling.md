@@ -13,7 +13,7 @@ Normally, the scrollbar position is changed by dragging the scrollbar handle or 
 
 The following steps explains the configuration of EnableTouchScroll property in Scroller. 
 
-In an ASPXpage, add the following code to render Scroller.
+In an ASPX page, add the following code to render Scroller.
 
 {% highlight html %}
 

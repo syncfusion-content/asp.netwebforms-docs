@@ -364,7 +364,7 @@ Run the code to render the resultant output of the above steps.
 
 ### Set the Strict Mode Option
 
-You can set the EnableStrictModeoptionto restrict entering values defined outside the range. The following code example illustrates how to set strict mode option.
+You can set the EnableStrictMode option to restrict entering values defined outside the range. The following code example illustrates how to set strict mode option.
 
 {% highlight html %}
 

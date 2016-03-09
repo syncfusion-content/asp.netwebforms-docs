@@ -14,9 +14,9 @@ The Accordion control is an interface where lists of items can be collapsed or e
 ## Key Features
 
 * Collapsible Header: All headers are collapsible. 
-* AJAX Load: Load AJAX content in the Accordioncontent panel.
+* AJAX Load: Load AJAX content in the Accordion content panel.
 * Icon Customization: Expand and collapse icons can be customized.
-* Custom Event for Expand Header: By default, Accordionpanels can be expanded and collapsed on a single click. However, this action can be customized to occur on mouse-over or mouse-up through custom events.
+* Custom Event for Expand Header: By default, Accordion panels can be expanded and collapsed on a single click. However, this action can be customized to occur on mouse-over or mouse-up through custom events.
 * Multiple Open: Multiple items can be expanded.
 * Auto Size: The content panel height can be predefined with values such as content, auto, and fill.
 * Theme: Essential JavaScript controls feature 13 built-in themes (six flat themes and six with gradient effects and a bootstrap theme), and also supports custom skin options to set user-defined themes.

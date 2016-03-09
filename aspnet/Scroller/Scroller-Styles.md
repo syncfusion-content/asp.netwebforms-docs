@@ -37,7 +37,7 @@ The Width property is used to set the width for Scroller outer wrapper.
 
 The following steps explains you on how to apply styles in Scroller control.
 
-In an ASPXpage add the following code to render Scroller.
+In an ASPX page add the following code to render Scroller.
 
 {% highlight html %}
 

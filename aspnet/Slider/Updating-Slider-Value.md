@@ -78,6 +78,6 @@ The following screenshot displays the output of the above code example.
 ![](Updating-Slider-Value_images/Updating-Slider-Value_img4.png)
 
 
-In the above example, for Default Slider, the slider value starts from 40 (min value) and ends at 80 (max value). So, the Sliderhandle is placed at the center of the Slider while specifying the value as 60.
+In the above example, for Default Slider, the slider value starts from 40 (min value) and ends at 80 (max value). So, the Slider handle is placed at the center of the Slider while specifying the value as 60.
 
 For Range Slider, the value starts from 10 (min value) and ends at 90 (max value). The range shadow occupies the entire Slider, since the range (values) is specified as [10, 90].

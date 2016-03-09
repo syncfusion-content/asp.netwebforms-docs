@@ -62,7 +62,7 @@ The following screenshot displays the Minimum and Maximum values.
 
 #### Adjusting ProgressBar size
 
-ProgressBar control provides ability to change/adjust the bar size. The Height and Width property allows you to set the maximum height and maximum width for the ProgressBar. The value set to this property should be stringtype.
+ProgressBar control provides ability to change/adjust the bar size. The Height and Width property allows you to set the maximum height and maximum width for the ProgressBar. The value set to this property should be string type.
 
 Add the following code example to the ASPX page.
 
