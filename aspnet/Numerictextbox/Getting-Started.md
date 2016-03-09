@@ -13,7 +13,7 @@ documentation: ug
 
 ## Create your first Editor in ASP.NET
 
-The Essential ASP.NET WebForms Editors control includes numeric, percentage, currency and maskedit textbox controls. Here, you can learn how to use ASP.NET Textboxes controls in the Electricity bill calculator Application. This guides you to use the wide range of TextBoxfunctionalities to complete this application.
+The Essential ASP.NET WebForms Editors control includes numeric, percentage, currency and maskedit textbox controls. Here, you can learn how to use ASP.NET Textboxes controls in the Electricity bill calculator Application. This guides you to use the wide range of TextBox functionalities to complete this application.
 
 ![](Getting-Started_images/Getting-Started_img1.jpeg) 
 
@@ -381,7 +381,7 @@ Run the above code to render the resultant output of the above steps
 
 ## Set the Strict Mode Option
 
-You can set the “EnableStrictMode” optionto restrict entering values defined outside the range. The following code example illustrates how to set strict mode option.
+You can set the “EnableStrictMode” option to restrict entering values defined outside the range. The following code example illustrates how to set strict mode option.
 
 
 
@@ -499,7 +499,7 @@ Run the above code example and you can see that it restricts entering a value ex
 
 You can use events to calculate the total amount and display the value. This is achieved by using the Click event in the button control. The calculation steps are written in the call back function of Click event button.
 
-To customize the button, set the ContentType as TextAndImage to include the icon before the text. Add the PrefixIcon value as “e-calender” and add the ClientSideOnClickevent.
+To customize the button, set the ContentType as TextAndImage to include the icon before the text. Add the PrefixIcon value as “e-calender” and add the ClientSideOnClick event.
 
 {% tabs %}
 

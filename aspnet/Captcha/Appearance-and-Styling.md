@@ -74,7 +74,7 @@ The following screenshot illustrates the Captcha with some of the customized Hat
 
 ## Background and Font color 
 
-You can customize the appearance of Captcha controlby using the following property. PatternForeColor is used to set background pattern color. PatternBackColor is used to set background color for Captcha. ForeColor is used to set Captcha text color.
+You can customize the appearance of Captcha control by using the following property. PatternForeColor is used to set background pattern color. PatternBackColor is used to set background color for Captcha. ForeColor is used to set Captcha text color.
 
 In the ASPX page, include the following Captcha control code example for customized appearance.
 

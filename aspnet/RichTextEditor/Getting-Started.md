@@ -17,7 +17,7 @@ This section explains the step-by-step instructions to create RichTextEdtior in 
 
     ![](GettingStarted_images/RTE.png)
 
-2.  Once the control is dragged and dropped into the page,all the dependent scripts and CSS files will be loaded as an embedded resource from Synfusion.EJ.Web. This will add the following appSetting key in web.config file to load resource files.
+2.  Once the control is dragged and dropped into the page,all the dependent scripts and CSS files will be loaded as an embedded resource from Syncfusion.EJ.Web. This will add the following appSetting key in web.config file to load resource files.
 
     {% highlight html %}
         

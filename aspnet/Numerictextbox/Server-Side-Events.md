@@ -24,7 +24,7 @@ Arguments</th></tr>
 OnFocusOut</td><td>
 Triggers when the focus is moved from textBox</td><td>
 <ul>
-<li>e.Value– Value of the Numerictextbox</li>
+<li>e.Value– Value of the NumericTextbox</li>
 <li>e.EventType – Event Name</li>
 <li>e.Arguments – Contain keys and value of NumericTextbox</li>
 </ul>

@@ -237,7 +237,7 @@ N> Add necessary images to the mentioned directory. &lt;project directory&gt;/Im
 
 ### Set Min and Max Value  
 
-In a real-time movie Rating scenario, you can extend the range by using the properties MinValue and MaxValue. Only rates ranging between the MinValueand MaxValue appear in the Rating.
+In a real-time movie Rating scenario, you can extend the range by using the properties MinValue and MaxValue. Only rates ranging between the MinValue and MaxValue appear in the Rating.
 
 Add the following code example to the corresponding ASPX page to set MinValue and MaxValue to the Rating.
 

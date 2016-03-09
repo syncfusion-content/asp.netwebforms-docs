@@ -237,7 +237,7 @@ Execute the above code to render the following output.
 
 Create Product Key Validation App using Mask Edit Control
 
-In real-time, when you install Microsoft applications, you need to enter the product key for security. The value of product key format is predefined and that is done by using MaskEditcontrol.
+In real-time, when you install Microsoft applications, you need to enter the product key for security. The value of product key format is predefined and that is done by using MaskEdit control.
 
 Add the following code example in the <body> tag.
 

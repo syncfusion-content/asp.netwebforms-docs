@@ -11,7 +11,7 @@ documentation: ug
 
 ## Theme
 
-The MaskEditTextbox control’s style and appearance can be controlled based on CSS classes. In order to apply styles to the MaskEditTextbox control, you need to refer two files namely; ej.widgets.core.min.css and ej.theme.min.css. When the file ej.widgets.all.min.cssis referred, then it is not necessary to include the files ej.widgets.core.min.cssand ej.theme.min.cssin your project, as ej.widgets.all.min.css is the combination of these two. 
+The MaskEditTextbox control’s style and appearance can be controlled based on CSS classes. In order to apply styles to the MaskEditTextbox control, you need to refer two files namely; ej.widgets.core.min.css and ej.theme.min.css. When the file ej.widgets.all.min.css is referred, then it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project, as ej.widgets.all.min.css is the combination of these two. 
 
 By default, there are 13 themes support available for MaskEditTextbox control namely
 

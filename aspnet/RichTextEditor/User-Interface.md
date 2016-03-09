@@ -235,7 +235,7 @@ N> This method completely removes the DOM element along with the events bounded 
 
 #### Enable/Disable Toolbar item
 
-The state of each toolbar item can be controlled by calling the client-side methods such as [enableToolbarItem](http://help.syncfusion.com/js/api/ejrte#methods:enabletoolbaritem) and [disableToolbatItem](http://help.syncfusion.com/js/api/ejrte#methods:disabletoolbaritem).
+The state of each toolbar item can be controlled by calling the client-side methods such as [enableToolbarItem](http://help.syncfusion.com/js/api/ejrte#methods:enabletoolbaritem) and [disableToolbarItem](http://help.syncfusion.com/js/api/ejrte#methods:disabletoolbaritem).
 
 {% highlight js %}
 

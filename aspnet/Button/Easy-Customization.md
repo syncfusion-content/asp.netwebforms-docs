@@ -119,9 +119,9 @@ Supports image with both ends and middle in text.</td></tr>
 
 ## Prefix and suffix icons
 
-Icons inside the Button are added easily by using the PrefixIcon andSuffixIconproperty. Location of the icon in button is necessary and you can easily customize it by using the following mentioned options.
+Icons inside the Button are added easily by using the PrefixIcon and SuffixIcon property. Location of the icon in button is necessary and you can easily customize it by using the following mentioned options.
 
-Button control also supports the build-in icon libraries. The ej.widgets.core.min CSS contains definitions for important icons that can be used in buttons. Simply you can use these build-in icons by mentioning the icon class name as value in PrefixIconandSuffixIcon property. You can use any font icons that are defined in ej.widgets.core.min CSS. It avoids the complexity in specifying icon by using the sprite image and CSS.
+Button control also supports the build-in icon libraries. The ej.widgets.core.min CSS contains definitions for important icons that can be used in buttons. Simply you can use these build-in icons by mentioning the icon class name as value in PrefixIcon and SuffixIcon property. You can use any font icons that are defined in ej.widgets.core.min CSS. It avoids the complexity in specifying icon by using the sprite image and CSS.
 
 For example, the following mentioned build-in CSS class are used to show the font icons that is used by media player.
 
@@ -218,7 +218,7 @@ SuffixIcon="e-uiLight e-palette">
 
 ## Image Position
 
-To provide the best look and feel for Button, position of button images is an important customizable option. With ImagePositionproperty, you can easily customize the position of images inside the button without using any complex CSS. ImagePosition property is applicable only with the TextAndImage ContentType property. This property supports the following values.
+To provide the best look and feel for Button, position of button images is an important customizable option. With ImagePosition property, you can easily customize the position of images inside the button without using any complex CSS. ImagePosition property is applicable only with the TextAndImage ContentType property. This property supports the following values.
 
 <table>
 <tr>

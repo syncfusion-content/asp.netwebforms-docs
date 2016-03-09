@@ -29,7 +29,7 @@ EnableRTL="true">
 
 {% endhighlight %}
 
-In above mentioned code example PrefixIcon property is used and the icon that is to be on left side, (before text) is rendered on right side as EnableRTLproperty is used with the PrefixIcon.  Consequently, the alignment is changed in right to left order.
+In above mentioned code example PrefixIcon property is used and the icon that is to be on left side, (before text) is rendered on right side as EnableRTL property is used with the PrefixIcon.  Consequently, the alignment is changed in right to left order.
 
 ![](RTL-Support_images/RTL-Support_img1.png)
 

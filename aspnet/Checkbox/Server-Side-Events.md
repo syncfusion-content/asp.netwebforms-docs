@@ -21,7 +21,7 @@ The following are the server side events available in the CheckBox control.
 <td>
 OnChange</td><td>
 It raises when the Checkbox status is changed from checked to uncheck / unchecked to check.</td><td>
-Event Argument contains the following parameters,e.IsChecked – Status of Checkbox.e.EventType – Event Namee.Arguments – Contain keys and values for IsChecked.</td></tr>
+Event Argument contains the following parameters,e.IsChecked – Status of Checkbox.e.EventType – Event Name.Arguments – Contain keys and values for IsChecked.</td></tr>
 </table>
 
 
