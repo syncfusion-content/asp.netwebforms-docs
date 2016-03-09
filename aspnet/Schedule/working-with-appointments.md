@@ -115,7 +115,7 @@ The appointments can be created by double-clicking on the Scheduler cells across
 
 N> Select multiple cells both using mouse or keyboard access keys (<kbd>shift</kbd>+<kbd>arrow keys</kbd>) and press <kbd>Alt</kbd>+<kbd>N</kbd> key, so that the default appointment window opens up for the selected date/time range with the Start and End time fields automatically filled in.
 
-To prevent the display of default appointment window on double clicking the Scheduler cells, either the `AppointmentWindowOpen` or `CellDoubleClick` event can be used, within which the **args.cancel** needs to be set to true. This behaviour is depicted in the below code example.
+To prevent the display of default appointment window on double clicking the Scheduler cells, either the `AppointmentWindowOpen` or `CellDoubleClick` event can be used, within which the **args.cancel** needs to be set to true. This behavior is depicted in the below code example.
 
 {% highlight html %}
 
@@ -311,7 +311,7 @@ N> When the `ReadOnly` property is set to true – double clicking the cells wil
 
 ## Drag and Drop
 
-The appointment time can be modified through the drag and drop behaviour, by dragging and dropping it to the new location, so that the start time and end time of the appointment gets changed automatically. We can enable/disable the drag and drop functionality through the `AllowDragAndDrop` property. By default, it is set to `true`.
+The appointment time can be modified through the drag and drop behavior, by dragging and dropping it to the new location, so that the start time and end time of the appointment gets changed automatically. We can enable/disable the drag and drop functionality through the `AllowDragAndDrop` property. By default, it is set to `true`.
 
 {% highlight html %}
 
@@ -873,7 +873,7 @@ The public method `searchAppointments` is used to search the appointments in the
 
 **fields** - It is the field, with which the search operation takes place. It’s an optional argument.
 
-**filterOperator** – It contains the filter type like contains, greaterthan or lessthan. It’s an optional argument.
+**filterOperator** – It contains the filter type like contains, greater than or less than. It’s an optional argument.
 
 **ignoreCase** – It is a boolean value to set the search string as case sensitive or not. It’s an optional argument.
 

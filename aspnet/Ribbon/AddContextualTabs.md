@@ -9,9 +9,9 @@ documentation: ug
 
 # AddContextualTabs
 
-This method is used to add contextual tabs dynamically.This method has two arguments addContextualTabs(Contextualtabs,index)
+This method is used to add contextual tabs dynamically.This method has two arguments addContextualTabs(ContextualTabs,index)
 
-* Contextualtabs: Collection of the contextual tabs that contextual tab needs to add.
+* ContextualTabs: Collection of the contextual tabs that contextual tab needs to add.
 * Index: Index in which the tab is to be added.It is optional argument. When this argument is not given, by default the tab is added at the last position.
 
 

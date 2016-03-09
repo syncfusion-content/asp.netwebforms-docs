@@ -15,7 +15,7 @@ The following are the Technical indicators supported by Essential Chart.
 
 ## Accumulation Distribution Indicator
 
-Accumulation distribution indicator is one of the technical indicator supported by Essential Chart. The indicator rendered is called signal line. Essential Chartalso provides options to customize the width and color of the signal line. 
+Accumulation distribution indicator is one of the technical indicator supported by Essential Chart. The indicator rendered is called signal line. Essential Chart also provides options to customize the width and color of the signal line. 
 {% highlight html %}
  
 
@@ -182,7 +182,7 @@ The following screenshot displays the Exponential Moving Average Indicator
 
 ## Momentum Technical Indicator
 
-Momentum is one of the technical indicator supported by Essential Chart. The indicator renders two lines namely upper band and signal line. Upper band always render at value 100 and signal band is calculated based on the momentum formula. Essential Chartalso provide options to customize the width and color of the upper band and signal line. You can also change the value for period. The default value of period is 14. 
+Momentum is one of the technical indicator supported by Essential Chart. The indicator renders two lines namely upper band and signal line. Upper band always render at value 100 and signal band is calculated based on the momentum formula. Essential Chart also provide options to customize the width and color of the upper band and signal line. You can also change the value for period. The default value of period is 14. 
 {% highlight html %}
 
 
@@ -276,7 +276,7 @@ The following screenshot displays the MACD technical indicator
 
 ## Relative Strength Index Indicator
 
-RSI is one of the technical indicator supported by Essential Chart. It contains three lines namely upper band, lower band and signal line. Upper and lower band always render at value 70 and 30 respectively and signal band is calculated based on the RSI formula. You can alsocustomize the width and color of the upper band, lower band and signal line with tooltip and animation options. 
+RSI is one of the technical indicator supported by Essential Chart. It contains three lines namely upper band, lower band and signal line. Upper and lower band always render at value 70 and 30 respectively and signal band is calculated based on the RSI formula. You can also customize the width and color of the upper band, lower band and signal line with tooltip and animation options. 
 {% highlight html %}
 
 

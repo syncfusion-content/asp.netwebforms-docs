@@ -144,9 +144,9 @@ You can bind the Essential Chart to remote data using DataManager and the Query 
 
 1. JSON
 2. Web Services
-3. oData
+3. OData
 
-The following code example illustrates binding Essential Chart to oData service.   
+The following code example illustrates binding Essential Chart to OData service.   
 
 {% tabs %}
 

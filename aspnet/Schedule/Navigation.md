@@ -80,7 +80,7 @@ To handle the date navigation actions, the `Navigation` event can be used. For e
 
 ## Appointment Navigation
 
-The Appointment navigation bars (labelled **Previous/Next Appointment**) are rendered parallel to each other on the left and right centric corners of the Schedule control. It is controlled by an API `ShowAppointmentNavigator` which is set to true by default. When it is set to false, these bars will not be displayed on the Scheduler.
+The Appointment navigation bars (labeled **Previous/Next Appointment**) are rendered parallel to each other on the left and right centric corners of the Schedule control. It is controlled by an API `ShowAppointmentNavigator` which is set to true by default. When it is set to false, these bars will not be displayed on the Scheduler.
 
 Whenever the previous/Next Appointment bars are clicked, it navigates the Scheduler to the corresponding closest date where the appointments are available. If no appointments are available beyond the current date, then these appointment bars will be disabled.   
 

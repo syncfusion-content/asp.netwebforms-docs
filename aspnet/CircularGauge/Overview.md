@@ -30,6 +30,6 @@ The gauge display can also be customized either as a full circle or a half circl
 * Indicators: Supports for the indicator feature that shows the active or inactive state of the gauge.
 * Ranges: Supports for highlighting the range of values in the gauge scale.
 * Pointers: Supports for adding multiple pointers to the gauge.
-* Frametypes: Supports two types of gauge displays, full circle and half circle.
+* Frame types: Supports two types of gauge displays, full circle and half circle.
 * Animation: Supports the animation of a pointer.
 * CustomLabel: Supports the addition of custom label text in the required location of the gauge.

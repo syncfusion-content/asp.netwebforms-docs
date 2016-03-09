@@ -9,7 +9,7 @@ documentation: ug
 
 # Empty Points
 
-The data that is passed to the Chart can have null or undefined values that are considered as empty points. Series type like line, spline, area, splinearea, stepline, steparea, column, bar, bubble, scatter, hilo, hiloopenclose, candle, rangecolumn and stacking series having empty point support.
+The data that is passed to the Chart can have null or undefined values that are considered as empty points. Series type like line, spline, area, spline area, step line, step area, column, bar, bubble, scatter, hilo, hiloopenclose, candle, range column and stacking series having empty point support.
 
 
 {% highlight html %}

@@ -9,13 +9,13 @@ documentation: ug
 
 # Gallery
 
-The Ribbon control has Gallery support. By using the Galleryin Ribbon, items are displayed with good look and feel and it also enables to classify the items as groups for easy navigation.Gallery can be included in the tabgroups.
+The Ribbon control has Gallery support. By using the Gallery in Ribbon, items are displayed with good look and feel and it also enables to classify the items as groups for easy navigation.Gallery can be included in the tab groups.
 
-To use the Gallery feature, include the following properties under tabgroups.
+To use the Gallery feature, include the following properties under tab groups.
 
 * Id – defines the id of the gallery.
-* Type - defines the type of the item and it must be of Gallerytype.
-* Columns – defines the number of columns to be displayed in a row at intial without gallery expand operation.
+* Type - defines the type of the item and it must be of Gallery type.
+* Columns – defines the number of columns to be displayed in a row at initial without gallery expand operation.
 * ExpandedColumns - defines the number of columns to be displayed in a row at gallery expand operation.
 * ItemHeight – defines the height of the  contents.
 * ItemWidth – defines the width of contents.
