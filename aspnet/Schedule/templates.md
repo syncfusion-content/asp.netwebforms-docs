@@ -11,7 +11,10 @@ keywords: appointment template, template, cell template, resource header
 Template is applicable to all the below specified elements of the Scheduler,
 
 * Appointments
+* Cells
+* Date Header
 * Resource header
+* TimeScale
 * Priority field
 * Date and time columns in Agenda view
 * Tooltip
@@ -27,7 +30,7 @@ Apart from the dataSource field names, the template can also access the current 
 * workweek
 * agenda
 * month
-* customview
+* custom view
 
 It is controlled by an API named `AppointmentTemplateId` which accepts the id value of the template design block preceded by a symbol **#**.
 
@@ -60,11 +63,11 @@ Usually, the appointments are displayed with its **Subject** and **Start/End tim
 
 ## Cell Templates
 
-The template design that applies on the Scheduler elements such as alldaycells, workcells and monthcells which allows the customization to be done based on the date, view, resources and timescale. The cells can be customized to add images, colours, and other elements etc and can also access the current view of the Scheduler using the name **view**.
+The template design that applies on the Scheduler elements such as allday cells, work cells and month cells which allows the customization to be done based on the date, view, resources and timescale. The cells can be customized to add images, colors, and other elements etc and can also access the current view of the Scheduler using the name **view**.
 
-**Alldaycells** - An API named `AllDayCellsTemplateId` can be used to customize the allday cells, which accepts the id of the template design block preceded with a symbol **#**.
+**Allday cells** - An API named `AllDayCellsTemplateId` can be used to customize the allday cells, which accepts the id of the template design block preceded with a symbol **#**.
 
-**Workcells and Monthcells** - An API named `WorkCellsTemplateId` can be used to customize the work cells in all the views, which accepts the id of the template design block preceded by a symbol **#**. 
+**Work cells and Month cells** - An API named `WorkCellsTemplateId` can be used to customize the work cells in all the views, which accepts the id of the template design block preceded by a symbol **#**. 
 
 The cells can be customized with the following code example.
 
@@ -118,11 +121,11 @@ The cells can be customized with the following code example.
  
  {% endhighlight %}
 
-## Dateheader Template
+## Date Header Template
 
 The template design that applies on for the date header part of the Scheduler. An API named `DateHeaderTemplateId` can be used to customize the date header which accepts the id value of the template design block preceded by a symbol **#**. The template can also access the current view of the Scheduler in using the name **view**.
 
-The Dateheader can be customized with the following code example.
+The Date header can be customized with the following code example.
 
 {% highlight html %}
   

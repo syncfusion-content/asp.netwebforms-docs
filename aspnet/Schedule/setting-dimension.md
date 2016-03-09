@@ -119,5 +119,5 @@ The `CellWidth` property allows the Scheduler to set the width of the cells in p
 
 {% endhighlight %}
 
-N> When the **CellHeight** and **CellWidth** properties are set with some specific pixel values, the cell size does not adapt to the responsive behaviour of the Scheduler when it is resized either in desktop/mobile mode.
+N> When the **CellHeight** and **CellWidth** properties are set with some specific pixel values, the cell size does not adapt to the responsive behavior of the Scheduler when it is resized either in desktop/mobile mode.
 

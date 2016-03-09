@@ -28,7 +28,7 @@ Binds the appointment start time field name which is <b>mandatory</b>and also it
 <tr>
 <td>
 StartTimeZone<br/><br/></td><td>
-Binds the name of the start timezone field in the dataSourceand also its related validation rules. If the <b>startTimeZone</b> field is not mentioned, then the appointment makes use of the Scheduler timeZone or System timeZone.<br/><br/></td></tr>
+Binds the name of the start timezone field in the dataSource and also its related validation rules. If the <b>startTimeZone</b> field is not mentioned, then the appointment makes use of the Scheduler timeZone or System timeZone.<br/><br/></td></tr>
 <tr>
 <td>
 EndTime<br/><br/></td><td>
