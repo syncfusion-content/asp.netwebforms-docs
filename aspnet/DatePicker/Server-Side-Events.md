@@ -1,74 +1,34 @@
 ---
 layout: post
-title: Server Side Events | DatePicker | ASP.NET Webforms | Syncfusion
-description: server side events
+title: Validation
+description: Validate the date in server side
 platform: aspnet
 control: DatePicker
 documentation: ug
 ---
 
-# Server Side Events
+## Server side events
 
-The following are the server side events available in the DatePicker control.
+EJWEB DatePicker control supports the Server side events too. This allows you to configure the DatePicker functionality in code-behind also. Please refer the below code, to use the server side events of EJWEB DatePicker
 
-<table>
-<tr>
-<th>
-Event</th><th>
-Event Description</th><th>
-Event Description</th></tr>
-<tr>
-<td>
-OnValueSelect</td><td>
-Occurs when selecting the Date in the DatePicker.</td><td>
-Event Argument contains the following parameters, 
-<ul>
-<li>e.EventType – Event Name.</li>
-<li>e.isSpecialDay – Returns the boolean value for the selected date whether special day or not.</li>
-<li>e.PreviousDate – Holds the previously selected value.</li>
-<li>e.Value – Holds current selected date value.</li>
-<li>e.Arguments – Contains keys and values for event args.</li>
-</ul></td></tr>
-</table>
+{% highlight aspx %}
 
-
-
-
-In the ASPX page, add the DatePicker control to configure the DatePicker events.
-
-{% tabs %}
-
-{% highlight html %}
-
-
-
-<ej:DatePicker ID="datepicker" runat="server" OnSelect=" datepicker_Select"> </ej:DatePicker>
+    <ej:DatePicker ID="datepick" OnSelect="datepick_Select" runat="server">
+    </ej:DatePicker>
 
 {% endhighlight %}
 
-{% highlight c# %}
 
-protected void datepicker_Select(object sender, Syncfusion.JavaScript.Web. DatePickerSelectEventArgs e)
+{% highlight cs %}
 
-    {
-
-//e.EventType – Event Name
-
-//e.Arguments – Contains keys and values for Event and Args
-
-//e. PreviousDate – It holds the previously selected date value.
-
-//e.Value – selected date value.
-
-//e.isSpecialDay– Returns the boolean value for the selected date whether special day or not
-
-
-
-    }
-
-
+    protected void datepick_Select(object sender, Syncfusion.JavaScript.Web.DatePickerSelectEventArgs e)
+        {
+            // write your custom code here
+        }
 
 {% endhighlight %}
 
-{% endtabs %}
+Please refer the below table to know more about the available server side events and its arguments in EJWEB DatePicker
 
+
+<table> <tr> <th> Event</th><th> Event Description</th><th> Event Description</th></tr> <tr> <td> OnSelect</td><td> Occurs when selecting the Date in the DatePicker.</td><td> Event Argument contains the following parameters, <ul> <li>e.EventType – Event Name.</li> <li>e.isSpecialDay – Returns the boolean value for the selected date whether special day or not.</li> <li>e.PreviousDate – Holds the previously selected value.</li> <li>e.Value – Holds current selected date value.</li> <li>e.Arguments – Contains keys and values for event args.</li> </ul></td></tr> </table>
