@@ -31,7 +31,7 @@ Description</th></tr>
 <tr>
 <td>
 data</td><td>
-It consits of the JSON data newly added to the grid.</td></tr>
+It consists of the JSON data newly added to the grid.</td></tr>
 <tr>
 <td>
 action</td><td>
