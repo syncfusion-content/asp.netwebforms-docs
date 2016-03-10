@@ -1,25 +1,24 @@
 ---
 layout: post
-title: State Persistence | DatePicker | ASP.NET Webforms | Syncfusion
-description: state persistence 
+title: State Persistence
+description: DatePicker - State persistence properties 
 platform: aspnet
 control: DatePicker
 documentation: ug
 ---
+# State Persistence
 
-# State Persistence 
+You can sustain the entire widget model of EJWEB DatePicker even after form post or browser refresh by using [EnablePersistence](http://help.syncfusion.com/js/api/ejdatepicker#members:enablepersistence) property. So the entire model values such as 
 
-It Enables or Disables the state maintenance of the DatePicker. DatePicker control can store the model value in the browser cookies and every time after initial rendering, the control gets the model from the cookie only. By using enablePersistence property, you can store the model value in cookies. So, when any changes are made dynamically then those values are updated in cookie. On refreshing the page, the past state of the DatePicker control is rendered from cookies. By default, EnablePersistence property is set to false in the DatePicker.
+* Selected date
+* Highlighted date
+* Start and depth level 
 
-In the ASPX page, include the following DatePicker control code example to enable the state persistence. 
-
-{% highlight html %}
-
-     <ej:DatePicker ID="datepicker" runat="server" EnablePersistence="true"> </ej:DatePicker>
+are stored in local storage / cookies of browser before page refreshes and reinitialized with the restored model after refresh.
 
 
+{% highlight aspx %}
+
+    <ej:DatePicker ID="datepick" EnablePersistence="true" runat="server"></ej:DatePicker>
 
 {% endhighlight %}
-
-
-
