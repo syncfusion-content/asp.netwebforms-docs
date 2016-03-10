@@ -1,494 +1,110 @@
 ---
 layout: post
-title: Behavior Settings | DatePicker | ASP.NET Webforms | Syncfusion
-description: behavior settings
+title: Behaviour Settings
+description: Configure DatePicker Behaviour settings
 platform: aspnet
 control: DatePicker
 documentation: ug
 ---
+# Behaviour Settings
 
-# Behavior Settings
+EJWEB DatePicker has some default behaviour settings which helps you to perform more operation by built-in.
 
-## Button Text
+## Selected Date
 
-Set the display text for the Button in the DatePicker popup. By default, ButtonText is set Today (String). Change this default value by using the ButtonText property to the Button Text.
+EJWEB DatePicker value can be selected through picking date from DatePicker calendar or you can set it by using [Value](http://help.syncfusion.com/js/api/ejdatepicker#members:value) property.
 
-In the ASPX page, include the following DatePicker control code example to configure the Button Text.
+Refer below code example to set selected date at initialization
+
+{% highlight aspx %}
+      
+      <ej:DatePicker ID="datepicker1" Value=<%= DateTime.Now.ToLongTimeString() %> runat="server"></ej:DatePicker>
+
+{% endhighlight %}
+
+EJWEB DatePicker allows only the valid date to be entered and it should be within the specified range. By default, strict mode is enabled in DatePicker, so it will restrict invalid date and resets to previous date if it is not valid. To know more about strict mode refer [Strict Mode](#strict-mode).
+
+## Date Range
+
+EJWEB DatePicker provides an option to restrict the user to pick the date from specified range of value. You can utilize this option by make use of [MinDate](http://help.syncfusion.com/js/api/ejdatepicker#members:mindate) and [MaxDate](http://help.syncfusion.com/js/api/ejdatepicker#members:maxdate) property.
+
+**MinDate** - specifies the minimum date to be picked in DatePicker calendar by disabling below date of minDate.
+
+**MaxDate** -  specifies the maximum date to be picked in DatePicker calendar by disabling above date of maxDate. 
 
 
-
-{% highlight html %}
-
-
-
- <ej:DatePicker ID="datepicker" runat="server" ButtonText="Todaydate"></ej:DatePicker>
-
-
-
-
-
-
+{% highlight aspx %}
+     
+    <ej:DatePicker ID="daterange1" runat="server" MaxDate="06/11/2015" MinDate="06/03/2015"></ej:DatePicker>  
 
 {% endhighlight %}
 
 
+N> You can change the **MinDate** and **MaxDate** value dynamically like **Value** property
 
-The following screenshot displays the output for the above code.
+## Start and Depth Level
 
+Start and depth represents the view of EJWEB DatePicker calendar. EJWEB DatePicker calendar has four different level of views, which are month, year, decade and century. It allows you to quick pick date from different months and years by navigating through different views. 
 
+By default DatePicker starts with month view and can be navigate into year, decade and century. You can also change the start and depth level view by using [StartLevel](http://help.syncfusion.com/js/api/ejdatepicker#members:startlevel) and [DepthLevel](http://help.syncfusion.com/js/api/ejdatepicker#members:depthlevel) property. So that you can initiate DatePicker calendar to view at any level and control the navigation.
 
-![](Behavior-Settings_images/Behavior-Settings_img1.png) 
+* "Month"   -  shows the days in month to pick.
+* "Year"    -  shows the months in year to pick.
+* "Decade"  -  shows the years in decade to pick.
+* "Century" -  shows the decades in century to pick.
 
+{% highlight aspx %}
 
-
-
-
-## Display Default Date
-
-You can display the default date value in input textbox. By default, DisplayDefaultDate property is set to true in the DatePicker Control. 
-
-In the ASPX page, include the following DatePicker control code example to turnoff the date while rendering the DatePicker.
-
-
-
-{% highlight html %}
-
-
-
-<ej:DatePicker ID="datepicker" runat="server" DisplayDefaultDate="false" Value="5/8/2014"></ej:DatePicker>    
-
-
+    <ej:DatePicker ID="daterange1" runat="server" MaxDate="06/11/2015" MinDate="06/03/2015"></ej:DatePicker>
 
 {% endhighlight %}
 
-## Enabled
+## Display Inline Mode
 
-You can Enable or Disable the DatePicker control. By default, Enabled property is set to true in the DatePicker control. You can disable the DatePicker control by setting Enabled property to false.
+EJWEB DatePicker provides an option to act as calendar by setting the [DisplayInline](http://help.syncfusion.com/js/api/ejdatepicker#members:displayinline) property as true. In this mode the DatePicker calendar has been placed open state constantly to pick the date. 
 
-In the ASPX page, include the following DatePicker control code example to disable it.
+Refer below code example to represent DatePicker as calendar. 
 
+{% highlight aspx %}
 
-
-{% highlight html %}
-
-
-
-   <ej:DatePicker ID="datepicker" runat="server" Enabled="false"></ej:DatePicker>
-
-
-
-
+    <ej:DatePicker ID="daterange1" runat="server" DisplayInline="True"></ej:DatePicker>
 
 {% endhighlight %}
 
 
+## Strict Mode
 
-The following screenshot displays the output for the above code.
+Strict mode in  EJWEB DatePicker allows you to enter valid or invalid date in input textbox of this component, but an error class will get added to exhibit if it is an invalid date. When you set [EnableStrictMode](http://help.syncfusion.com/js/api/ejdatepicker#members:enablestrictmode) to false, EJWEB DatePicker allows you to enter only the valid date or else it will resets with previous value. 
 
+Also the valid date should be defined in specified range or else it resets to min or maximum date when the entered date is out of range
 
+By default **EnableStrictMode** is true, so you can enter any value other than date too, but an **error** class (**.** **e** **-** **error**) will get added to wrapper to highlight the invalid date.
 
-![](Behavior-Settings_images/Behavior-Settings_img2.png) 
+{% highlight aspx %}
 
-
-
-
-
-## Enable strict mode
-
-When EnableStrictMode is set to true, DatePicker does not allow the value out of the range. By default, EnableStrictMode property is set to false in the DatePicker.
-
-In the ASPX page, include the following DatePicker control code example to enable the StrictMode.
-
-
-
-{% highlight html %}
-
-
-
-<ej:DatePicker ID="datepicker" runat="server" EnableStrictMode="true"></ej:DatePicker>
-
-
-
-
+    <ej:DatePicker ID="daterange1" runat="server" EnableStrictMode="true"></ej:DatePicker>
 
 {% endhighlight %}
 
 
-
-## Fields
-
-You can specify the fields mapping in the DatePicker. You can also provide the support to add image, image styles, sprite css class, query, and HTML attributes.
-
-The DatePicker control provides support to customize the particular date. You can customize the date with image and tooltip options. The following table specifies the special date fields and its configuration.
+You can also override the **e-error** class to highlight when invalid date is entered.
 
 
+{% highlight aspx %}
 
-<table>
-<tr>
-<th>
-Name</th><th>
-Description</th><th>
-Default value</th><th>
-Data type</th></tr>
-<tr>
-<td>
-Date</td><td>
-The date that needs to be customized. </td><td>
-Null </td><td>
-String </td></tr>
-<tr>
-<td>
-Tooltip</td><td>
-Shows the tooltip to mention date while mouse hovering. </td><td>
-Null </td><td>
-String </td></tr>
-<tr>
-<td>
-Icon </td><td>
-you can set the customized css with this property.
-{{'![] (Behavior-Settings_images/Behavior-Settings_img3.jpeg)' | markdownify }}
-{{ Note: You need to set the image as background url and its styles within this class}}</td><td>
-Null </td><td>
-String</td></tr>
-</table>
-
-
-The following steps explain you how to specify the fields mapping in the DatePicker control.
-
-In the ASPX page, include the following DatePicker control code example.
-
-{% tabs %}
-
-{% highlight html %}
-
-
-
-  <ej:DatePicker ID="datepicker" runat="server"></ej:DatePicker>
-
-
-
-
-
+    <ej:DatePicker ID="daterange1" runat="server" EnableStrictMode="true"></ej:DatePicker>
+		
 {% endhighlight %}
-
-
-
-{% highlight c# %}
-
-    protected void Page_Load(object sender, EventArgs e)
-
-           {
-
-           List< Syncfusion.JavaScript.Models.SpecialDates> data = new List< Syncfusion.JavaScript.Models.SpecialDates>();
-
-               data.Add(new Syncfusion.JavaScript.Models.SpecialDates { Date = "9/23/2014", Tooltip = "America", Icon = "flag-am" });
-
-            this.datepicker.SpecialDates= data;
-
-
-
-        }
-
-
-
-
-
-{% endhighlight %}
-
-{% endtabs %}
-
-
-
-Add the following styles to specify the fields mapping in DatePicker control.
-
-
-N> Images for this example are available in ‘installed location /Content/images’ and you need to define images in the mentioned CSS. Henceforth, the images are displayed.
-
 
 
 {% highlight css %}
 
-    .flag .e-image {
+    <style>
+        /* error class to highlight invalid date */
 
-        background: url("../Content/flags.png") no-repeat scroll -50px -75px rgba(0, 0, 0, 0);
-
-        float: left;
-
-        height: 15px;
-
-        margin-left: 5px;
-
-        margin-top: 3px;
-
-        width: 20px;
-
-    }
-
-
-
-    .e-datepicker.e-calendar {
-
-        width: 350px;
-
-    }
-
-
+        .e-error .e-input {
+            color: Red; /* highlights invalid date font color in input */
+        }
+    </style>
 
 {% endhighlight %}
-
-
-
-
-
-The following screenshot displays the output for the above code.
-
-![](Behavior-Settings_images/Behavior-Settings_img5.png) 
-
-
-
-## Define start day of the week
-
-It specifies the start day of the week in the DatePicker calendar. By default, Value is set to 0 (Sunday). 
-
-In the ASPX page, include the following DatePicker control code example to specify the start day of the week.
-
-
-
-{% highlight html %}
-
-
-
-<ej:DatePicker ID="datepicker" runat="server"  StartDay="2"></ej:DatePicker>
-
-
-
-
-
-{% endhighlight %}
-
-
-
-The following screenshot displays the output for the above code.
-
-![](Behavior-Settings_images/Behavior-Settings_img6.png) 
-
-
-
-## Step months
-
-It specifies the number of months to navigate at one click in next and previous buttons achieved by StepMonths property. You can change the Step months on changing the default value by using the StepMonths property. 
-
-In the ASPX page, include the following DatePicker control code example to specify the number of months to navigate.
-
-
-
-{% highlight html %}
-
-
-
-   <ej:DatePicker ID="datepicker" runat="server" StepMonths="2"></ej:DatePicker>
-
-
-
-
-
-{% endhighlight %}
-
-## Define value
-
-It specifies the selected date value. You can specify the selected date value by using the Value property.
-
-In the ASPX page, include the following DatePicker control code example to specify the value.
-
-{% highlight html %}
-
-
-
-  <ej:DatePicker ID="datepicker" runat="server" Value="5/8/2014"></ej:DatePicker>  
-
-
-
-{% endhighlight %}
-
-
-
- The following screenshot displays the output for the above code.
-
-![](Behavior-Settings_images/Behavior-Settings_img7.png) 
-
-
-
-## Watermark Text
-
-It specifies the Watermark Text to display the input text in the DatePicker. By default, WatermarkText property is set as “select date” in the DatePicker. 
-
-In the ASPX page, include the following DatePicker control code example to specify the Watermark.
-
-
-
-{% highlight html %}
-
-
-
-<ej:DatePicker ID="datepicker" runat="server" WatermarkText="Enter Date"></ej:DatePicker>    
-
-
-
-
-
-{% endhighlight %}
-
-
-
-The following screenshot displays the output for the above code.
-
-
-
-![](Behavior-Settings_images/Behavior-Settings_img8.png) 
-
-
-
-## Display Format
-
-### Date format
-
-Date format defines a format or structure of the displayed date in the textbox. You can change the date format by using DateFormat property.
-
-The standard formats are listed as follows,
-
-<table>
-<tr>
-<th>
-Format Name</th><th>
-Formats</th></tr>
-<tr>
-<td>
-Default</td><td>
-MM/dd/yyyy</td></tr>
-<tr>
-<td>
-Short</td><td>
- d M, y</td></tr>
-<tr>
-<td>
-Medium</td><td>
-d MM, y</td></tr>
-<tr>
-<td>
-Full</td><td>
-dddd,d MMMM,yy</td></tr>
-<tr>
-<td>
-UTC</td><td>
-yyyy-MM-dd</td></tr>
-</table>
-
-
-You can display the date value depending on culture by using the above specified DateFormat.
-
-In the ASPX page, include the following DatePicker control code example to set the date format as "d MM, y".
-
-{% highlight html %}
-
-
-
-<ej:DatePicker ID="datepicker" runat="server" DateFormat="d MM, y"></ej:DatePicker>
-
-
-
-
-
-{% endhighlight %}
-
-
-
-The following screenshot displays the output for the above code.
-
-
-
-![](Behavior-Settings_images/Behavior-Settings_img9.png) 
-
-
-
-### Day header format
-
-It specifies the header format of days in short, long or min types. You can set the DatePicker day header format by using the DayHeaderFormat property. By default, DayHeaderFormat property is set as ShowHeaderMin in the DatePicker control. 
-
-Enum for DatePicker startLevel and depthLevel.
-
-<table>
-<tr>
-<th>
-Day header</th><th>
-Description</th></tr>
-<tr>
-<td>
-ShowHeaderShort</td><td>
-It shows the day header format in short.</td></tr>
-<tr>
-<td>
-ShowHeaderMin</td><td>
-It shows the header format in min.</td></tr>
-<tr>
-<td>
-ShowHeaderLong</td><td>
-It shows the day header format in long.</td></tr>
-<tr>
-<td>
-ShowHeaderNone</td><td>
-Removes the day header.</td></tr>
-</table>
-
-
-In the ASPX page, include the following DatePicker control code example to set the DayHeaderFormat.
-
-
-
-{% highlight html %}
-
-
-
-<ej:DatePicker ID="datepicker" runat="server" DayHeaderFormat="ShowHeaderLong"> </ej:DatePicker>   
-
-
-
-
-
-{% endhighlight %}
-
-
-
-The following screenshot displays the output for the above code.
-
-![](Behavior-Settings_images/Behavior-Settings_img10.png) 
-
-
-
-### Header format
-
-It specifies the Header format to be displayed in the pop up of the DatePicker. The header in the DatePicker popup is displayed in the specified format. By default HeaderFormat property is set as “MMMM/yyyy” in the DatePicker control. 
-
-In the ASPX page, include the following DatePicker control code example to specify the header format.
-
-
-
-{% highlight html %}
-
-
-
-<ej:DatePicker ID="datepicker" runat="server"  HeaderFormat="MMMM/yy"> </ej:DatePicker>
-
-
-
-
-
-{% endhighlight %}
-
-The following screenshot displays the output for the above code.
-
-
-
-![](Behavior-Settings_images/Behavior-Settings_img11.png) 
-
-
-

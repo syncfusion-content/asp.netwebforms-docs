@@ -1,309 +1,142 @@
 ---
 layout: post
-title: Getting Started | DatePicker | ASP.NET Webforms | Syncfusion
-description: getting started
+title: Getting started with DatePicker
+description: Get start with DatePicker by adding references,required script and files.
 platform: aspnet
 control: DatePicker
 documentation: ug
 ---
-
 # Getting Started
 
-This section explains briefly how to create a DatePicker in your application with ASP.NET.
+## A new web application with required files and assemblies
 
-## Create your first DatePicker in ASP.NET
+To get start with The EJWEB DatePicker, create a new web application and add the required assemblies in references and then refer the below specified dependent CSS file as well as scripts
 
-The ASP.NET DatePicker provides you support to display a calendar within your web page and allows you to pick a date from the calendar. In this example, you can learn how to customize two DatePickers in a real-time ticket booking application. The example illustrates you how to use the DatePicker control to book a ticket within a limited number of days. 
+To create a web application and to add necessary assemblies you can use the help of the given [ASP-Getting Started](http://help.syncfusion.com/aspnetmvc/getting-started) documentation.
 
-The following screenshot illustrates the functionality of a DatePicker with date range of maximum 60 days. You can select a date for Onward and Return journeys ranging for a period of 60 days from the current day. This avoids selecting a journey date prior to the current date.
+CSS file
 
-![](Getting-Started_images/Getting-Started_img1.png) 
+* [ej.web.all.min.css](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css) - includes all widgets styles (To know more about theme refer [Theming in Essential JavaScript Component](http://help.syncfusion.com/js/theming-in-essential-javascript-components#))
 
+External script files
 
+* [jQuery 1.7.1](http://jquery.com/#) and later versions.
+* [jQuery.easing.js](http://gsgd.co.uk/sandbox/jquery/easing/#) - to support the animation effects.
 
-### Create a DatePicker 
+Internal script files
 
-ASP.NET DatePicker control basically renders with built-in features such as keyboard navigation, months navigation with animations and flexible API’s. You can easily create the DatePicker control by using simple input textbox element as follows.
-
-You can create an ASP.NET project and add necessary Dll and script with the help of the given [ASP-Getting Started Documentation.](http://help.syncfusion.com/aspnetmvc/datepicker/getting-started)
-
-You can add the following code example to the corresponding ASPX page to render the DatePicker.
-
-
-
-{% highlight html %}
-
-
-
-    <div>
-
-        <table>
-
-            <tr>
-
-                <td class="tdclass">
-
-                    Onward Date
-
-                </td>
-
-                <td class="tdclass">
-
-                    Return date
-
-                </td>
-
-            </tr>
-
-            <tr>
-
-                <td class="tdclass">
-
-                    <span class="innerdp">
-
-                        <ej:DatePicker ID="StartDate" runat="server">
-
-                        </ej:DatePicker>
-
-                    </span>
-
-                </td>
-
-                <td class="tdclass">
-
-                    <span class="innerdp">
-
-                        <ej:DatePicker ID="EndDate" runat="server">
-
-                        </ej:DatePicker>
-
-                    </span>
-
-                </td>
-
-            </tr>
-
-        </table>
-
-    </div>
-
-
-
-{% endhighlight %}
-
-
-
-Apply the following styles to show the DatePicker control in the Horizontal order.
-
-
-
-{% highlight css %}
-
-
-
-        .tdclass
-
-        {
-
-            width: 300px;
-
-            font-weight: bold;
-
-        }
-
-
-
-        .innerdp
-
-        {
-
-            display: inline-block;
-
-        }
-
-
-
-        table
-
-        {
-
-            border: 1px solid #bbbcbb;
-
-            width: 500px;
-
-        }
-
-
-
-{% endhighlight %}
-
-
-
-The following screenshot displays the DatePicker control.
-
-
-
-![](Getting-Started_images/Getting-Started_img2.png) 
-
-
-
-### Set the Min and Max Date
-
-In a real-time ticket booking scenario, the booking is open only for a limited number of days. You have to select a date from the given range. This can be achieved by using the properties MinDate and MaxDate. In this way, only those dates ranging between the MinDate and MaxDate are enabled in the DatePicker.
-
-
-
-{% highlight html %}
-
-
-
+<table>
 <tr>
+<th>
+File </th><th>
+Description / Usage </th></tr>
+<tr>
+<td>
+ej.core.min.js<br/><br/></td><td>
+Must be referred always before using all the JS controls.<br/><br/></td></tr>
+<tr>
+<td>
+ej.datepicker.min.js<br/><br/></td><td>
+DatePicker plugin.<br/><br/></td></tr>
+</table>
+You can make use of **ej.web.all.min.js** file which encapsulates all EJWEB components and frameworks in single file.
 
-                <td class="tdclass">
+* [ej.web.all.min.js](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js) - includes all web widgets.
 
-                    <span class="innerdp">
+N>  In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets#) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) in your server. 
 
-                        <ej:DatePicker ID="StartDate" runat="server" MinDate="7/18/2014" MaxDate="9/18/2014">
+Below is a simple site master page with required CSS and script references added to create EJWEB DatePicker in ASP.NET WEB application
 
-                        </ej:DatePicker>
+{% highlight aspx %}
 
-                    </span>
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+       
+    <link rel="stylesheet" href="http://cdn.syncfusion.com/13.4.0.58/js/web/flat-azure/ej.web.all.min.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/13.4.0.58/js/web/ej.web.all.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/13.4.0.58/js/common/ej.unobtrusive.min.js"></script>
 
-                </td>
+    </head>
+     
+{% endhighlight %}
 
-                <td class="tdclass">
+## DatePicker Initialization
 
-                    <span class="innerdp">
+EJWEB DatePicker can be created using aspx code like as below code
 
-                        <ej:DatePicker ID="EndDate" runat="server" MinDate="7/18/2014" MaxDate="9/18/2014">
+{% highlight aspx %}
 
-                        </ej:DatePicker>
+    <%--initialize DatePicker component--%>
 
-                    </span>
-
-                </td>
-
-            </tr>
-
-
-
-
+    <ej:DatePicker runat="server" ID="datepick"></ej:DatePicker>
 
 {% endhighlight %}
 
 
+N>  DatePicker is a form control, so on form submitting its value can be retrieved by its **name**. By default **id** has been treated as name, if "name" attribute is not specified.
 
-The following screenshot displays the output of the above code example.
+## Get / Set value
 
+EJWEB DatePicker provides an options to configure all its properties and get its value. This DatePicker value can be assigned during initialization or at some action.
+Below code shows how to assign values at initialization
 
+{% highlight aspx %}
 
-![](Getting-Started_images/Getting-Started_img3.png) 
+    <%--initialize DatePicker component with current date--%>
 
-
-
-
-
-![](Getting-Started_images/Getting-Started_img4.png) 
-
-
-
-### Set Event to Process the Min and Max Date Validations
-
-You can select the “Onward journey date” in the first DatePicker and then the “Return journey date” in the second DatePicker. The validation process is done after the selection of “Onward Journey date” and the changes are reflected in the “Return Date” selection DatePicker. You can manipulate this process in the “ClientSideOnSelect” Event of Onward Date Selection DatePicker. 
-
-Add the following code in your ASPX page.
-
-{% tabs %}
-
-{% highlight html %}
-
-            <tr>
-
-                <td class="tdclass">
-
-                    <span class="innerdp">
-
-                        <ej:DatePicker ID="StartDate" runat="server" ClientSideOnSelect="selectedStartDate" MinDate="7/18/2014" MaxDate="9/18/2014">
-
-                        </ej:DatePicker>
-
-                    </span>
-
-                </td>
-
-                <td class="tdclass">
-
-                    <span class="innerdp">
-
-                        <ej:DatePicker ID="EndDate" runat="server" ClientSideOnSelect="selectedEndDate" MinDate="7/18/2014" MaxDate="9/18/2014">
-
-                        </ej:DatePicker>
-
-                    </span>
-
-                </td>
-
-            </tr>
-
-
+    <ej:DatePicker runat="server" ID="datepick" Value=<%= DateTime.Now.ToLongTimeString() %>>
+    </ej:DatePicker>
 
 {% endhighlight %}
+
+You can assign values after initialization of EJWEB DatePicker (it helps to get or set value at run time). Let's consider that going to set date value at button click.
 
 {% highlight js %}
 
+        <script>
 
+        //bind below onClick action to button
+        function onClick() {
 
-            var minDatepicker, maxDatepicker;
+            //create instance for datePicker.
+            // only after control creation we can get dateObj otherwise it throws exception.
+            var dateObj = $("#datepick").ejDatePicker('instance');
 
-            var curdate = "7/18/2014" // mentions the current date.
+            //set value using date object
+            dateObj.option('value', new Date());
 
-            // Sets the return date to 60 days from the current date.
-
-            var rangeDate = "9/18/2014";
-
-            function selectedStartDate(sender) {
-
-                var selDate = new Date(sender.value); // mentions the selected date.
-
-                minDatepicker = $("#<%=EndDate.ClientID%>").data("ejDatePicker"); // Creates the DatePicker object
-
-                minDatepicker.setModel({ "minDate": selDate }); // Sets minDate property through setModel of the DatePicker object.
-
-            }
-
-            function selectedEndDate(sender) {
-
-                var selDate = new Date(sender.value);
-
-                maxDatepicker = $("#<%=StartDate.ClientID%>").data("ejDatePicker"); // Creates the DatePicker object
-
-                maxDatepicker.setModel({ "maxDate": selDate }); // Sets maxDate property through setModel of the DatePicker object.
-
-            }
-
-
-
+            //get value using date object and displays in alert box
+            alert(dateObj.option('value'));
+        }
+  
+    </script>
 
 
 {% endhighlight %}
 
-{% endtabs %}
+N>  Existing EJWEB DatePicker instance can be created by [jQuery.data()](http://api.jquery.com/jQuery.data/#) and you can control the API's of DatePicker behaviour.
 
-You can run the above code and achieve the desired result. By selecting the onward journey date in the first DatePicker, you can select the Return Journey date within the given range. This restricts you from selecting the false date. This scenario is illustrated in the following screenshot.
+## DatePicker events
 
-
-
-![](Getting-Started_images/Getting-Started_img5.png) 
+You can handle the all available [Client side events](http://help.syncfusion.com/js/api/ejdatepicker#events) in Essential JavaScript DatePicker. Refer the below code example to use the client side event in EJWEB DatePicker
 
 
+{% highlight aspx %}
+ 
+    <ej:DatePicker ID="datepicker1" ClientSideOnChange="onChange" Value=<%= DateTime.Now.ToLongTimeString() %> runat="server"></ej:DatePicker>
 
-By using the min/max date range property, you can select a date within a given range as follows.
+    <script type="text/javascript">
+    function onChange(args) {
+        //args contains entire model of DatePicker to get the value of all properties.
 
+        //alert popup shows the previous date and selected date.
+        alert(" previous date is : " + args.prevDate + " \n selected date is : " + args.value);
+    }     
 
+{% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img6.png) 
-
-
-
-You can also add additional functionalities such as localization and date formats to the DatePicker. 
-
+Also, EJWEB DatePicker components have support with server side events please refer the [Server Side Events](http://help.syncfusion.com/aspnet/datepicker/server-side-events) section to know about available server side events in this component.
