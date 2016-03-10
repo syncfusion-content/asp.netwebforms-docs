@@ -146,7 +146,7 @@ The following screenshot illustrates customized formats.
 
 ## Theme
 
-You can control the style and appearance ofthe TagCloud based on the CSS classes. To apply styles to the TagCloud control, refer to the files, ej.widgets.core.min.css and ej.theme.min.css. When you refer to ej.widgets.all.min.css file, it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project as ej.widgets.all.min.css is the combination of these two files. 
+You can control the style and appearance of the TagCloud based on the CSS classes. To apply styles to the TagCloud control, refer to the files, ej.widgets.core.min.css and ej.theme.min.css. When you refer to ej.widgets.all.min.css file, it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project as ej.widgets.all.min.css is the combination of these two files. 
 
 By default, there are 13 themes supported by the TagCloud control,
 

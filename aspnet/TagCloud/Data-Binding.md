@@ -35,7 +35,7 @@ It maps the DataFrequencyField name from the data table or JSON data that is ass
 
 ## Local Binding
 
-Local databinding allows you to map JSON data to TagCloud that the corresponding DataTextField, DataUrlField, and DataFrequencyField are assigned with the respective local JSON data.
+Local data binding allows you to map JSON data to TagCloud that the corresponding DataTextField, DataUrlField, and DataFrequencyField are assigned with the respective local JSON data.
 
 ### Defining the Local data for TagCloud
 

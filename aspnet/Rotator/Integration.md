@@ -37,7 +37,7 @@ This property retrieves data from remote data. This property is applicable only 
 
 ## Local data binding
 
-Rotator provides the data binding support for the Rotatoritem. So, you can bind the data from JSONData. For this behavior, you need to map the corresponding filed with their column names. The data can be bound as a list and it is assigned to the DataSource property. 
+Rotator provides the data binding support for the Rotator item. So, you can bind the data from JSONData. For this behavior, you need to map the corresponding filed with their column names. The data can be bound as a list and it is assigned to the DataSource property. 
 
 In an ASPX page, add the following code example to bind local data.
 
@@ -275,7 +275,7 @@ One-way binding refers to the process of applying scope values to all the avail
 
 Two-way binding supports both the processes. It applies the scope values to the Rotator properties as well as the changes made in the Rotator control that are also reflected back and triggered within the angular scope change function.
 
-To know more details about the Angularbinding, you can refer to the following link location:
+To know more details about the Angular binding, you can refer to the following link location:
 
 <http://help.syncfusion.com/js/angularjs>
 

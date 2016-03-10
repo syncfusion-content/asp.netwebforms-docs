@@ -9,13 +9,13 @@ documentation: ug
 
 # Button Type
 
-Button is used as normal clickable button, submitting form data, resetting the form data to its initial value. According to the usage of button, you can render the button in three types. By using the Typeproperty, you can easily render the button in following types.
+Button is used as normal click able button, submitting form data, resetting the form data to its initial value. According to the usage of button, you can render the button in three types. By using the Type property, you can easily render the button in following types.
 
 <table>
 <tr>
 <td>
 {{ '**Button**' | markdownify }}</td><td>
-The button is a clickable button </td></tr>
+The button is a click able button </td></tr>
 <tr>
 <td>
 {{ '**Submit**' | markdownify }}</td><td>

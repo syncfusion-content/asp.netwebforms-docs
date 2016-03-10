@@ -23,14 +23,14 @@ The following steps explains the implementation of EnablePersistence in MaskEdit
 
 
 
-The output for MaskEditTextbox with EnablePersistencebefore page load and after page load are as follows.
+The output for MaskEditTextbox with EnablePersistence before page load and after page load are as follows.
 
 ![](Configure-Persistence-Support_images/Configure-Persistence-Support_img1.png) ![](Configure-Persistence-Support_images/Configure-Persistence-Support_img2.png)
 
 
 ## Enabled or Disabled
 
-The MaskEditTextbox control have an option to enable or disable its element. You can set the Enabled property as true to enable the MaskEditTextbox control. Enabled property accepts Boolean value. By default the value of enabled isset as true.
+The MaskEditTextbox control have an option to enable or disable its element. You can set the Enabled property as true to enable the MaskEditTextbox control. Enabled property accepts Boolean value. By default the value of enabled is set as true.
 
 ### Configure Enabled or Disabled 
 
@@ -50,7 +50,7 @@ The following steps explains the implementation of Enabled in MaskEditTextbox.
 
 
 
-The output for MaskEditTextbox when “Enabled” is“true”and “Enabled” is “false”.
+The output for MaskEditTextbox when “Enabled” is “true” and “Enabled” is “false”.
 
 ![](Configure-Persistence-Support_images/Configure-Persistence-Support_img3.png) ![](Configure-Persistence-Support_images/Configure-Persistence-Support_img4.png)
 
@@ -62,7 +62,7 @@ The MaskEditTextbox size can be modified by using the Height and Width property.
 
 #### Configure Height and Width 
 
-The following steps explains the implementation of HeightandWidth in MaskEditTextbox.
+The following steps explains the implementation of Height and Width in MaskEditTextbox.
 
 
 
@@ -127,7 +127,7 @@ The MaskEditTextbox supports read only option. When enabling read only property 
 
 #### Configure Read Only
 
-The following steps explains the implementation of ReadOnlyin MaskEditTextbox.
+The following steps explains the implementation of ReadOnly in MaskEditTextbox.
 
 Add the following code example in your ASPX page to render the MaskEditTextbox control.
 
@@ -152,7 +152,7 @@ The MaskEdit Textbox have an option to show the error value with red color text.
 
 #### Configure Error Visibility
 
-The following steps explains the implementation of ShowErrorin Mask Edit Textbox.
+The following steps explains the implementation of ShowError in Mask Edit Textbox.
 
 Add the following code example in your ASPX page to render the Textbox control.
 

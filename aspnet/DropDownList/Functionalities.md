@@ -413,7 +413,7 @@ Configuring the data items for cascading to the series of DropDownList is demons
 
 ![](Functionalities_images/Functionalities_img6.jpeg)
 
-You can also bind the data source to the cascading DropDownList dynamically using ClientSideEventt Cascade as demonstrated below,
+You can also bind the data source to the cascading DropDownList dynamically using ClientSideEvent Cascade as demonstrated below,
 
 {% tabs %}
 

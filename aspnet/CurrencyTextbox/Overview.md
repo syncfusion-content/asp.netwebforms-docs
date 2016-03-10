@@ -16,7 +16,7 @@ Essential ASP.NET Editor includes Numeric, Percentage, and Currency TextBox con
 * Min and Max Values - Specifies value range for the TextBox.
 * Spin Buttons -Enable you to increase or decrease the current value in the TextBox.
 * Step Value - Enables you to increment or decrement the current value by step value.
-* Localization - Essential JavaScript TextBoxes provide localization support. These controlsuse Globalize.js, a simple JavaScript library that enables you to globalize and localize the format, and parse numbers and dates according to the culture. For more information on Glibalize.js, see [GitHub Here](https://github.com/jquery/globalize).
+* Localization - Essential JavaScript TextBoxes provide localization support. These controls use Globalize.js, a simple JavaScript library that enables you to globalize and localize the format, and parse numbers and dates according to the culture. For more information on Globalize.js, see [GitHub Here](https://github.com/jquery/globalize).
 * Keyboard Navigation - You can interact with TextBoxes by using a keyboard.
 * RTL Support - Support for right-to-left alignment of the TextBox input.
 * Decimal Values - You can configure TextBoxes to accept decimal values.

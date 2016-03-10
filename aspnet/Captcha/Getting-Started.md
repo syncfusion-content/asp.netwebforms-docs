@@ -88,7 +88,7 @@ The following screenshot displays the output of the above codes.
 
 ### Show AudioButton and Refresh
 
-The Captcha controlsupports captcha in the form of audio. When you click the audio button, it readouts the captcha characters. You can achieve this by setting the ShowAudioButton property to true. ShowRefreshButton is used to refresh or change the captcha image without full page refresh. This is achieved by adding the ShowRefreshButton property to true. Also include Mapper to refresh support.
+The Captcha control supports captcha in the form of audio. When you click the audio button, it readouts the captcha characters. You can achieve this by setting the ShowAudioButton property to true. ShowRefreshButton is used to refresh or change the captcha image without full page refresh. This is achieved by adding the ShowRefreshButton property to true. Also include Mapper to refresh support.
 
 Add the following code example to ASPX to render captcha with Audio and Refresh.
 

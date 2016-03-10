@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section briefly describes on how to create a QuizApp and RegistrationApp byusing ASP.NET Radio Button control and use the 
+This section briefly describes on how to create a QuizApp and RegistrationApp by using ASP.NET Radio Button control and use the 
 features available in it.
 
 ## Create your first RadioButton in ASP.NET 
@@ -23,7 +23,7 @@ application.
 
 ## Create a RadioButton in a Quiz Application
 
-ASP.NET WebForms Radio Button provides support to display the Radio Button within your webpage and allows you to pick your 
+ASP.NET WebForms Radio Button provides support to display the Radio Button within your web page and allows you to pick your 
 choice. By using the following guidelines, you can customize the Radio Button for a real-time QuizApp and RegistrationApp 
 scenarios. This allows you to select the corresponding choice for each question.
 

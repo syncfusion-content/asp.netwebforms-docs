@@ -514,7 +514,7 @@ In an ASPX page, add the following code example and set the Delay  property as 
 
 ## Theme
 
-Rotator control’s style and appearance are controlled based on CSSclasses. In order to apply styles to the Rotator control, refer to the files,ej.widgets.core.min.css and ej.theme.min.css. When the file ej.widgets.all.min.css is referred, then it is not necessary to include the filesej.widgets.core.min.css and ej.theme.min.css in your project, as ej.widgets.all.min.css is the combination of these.
+Rotator control’s style and appearance are controlled based on CSSclasses. In order to apply styles to the Rotator control, refer to the files,ej.widgets.core.min.css and ej.theme.min.css. When the file ej.widgets.all.min.css is referred, then it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project, as ej.widgets.all.min.css is the combination of these.
 
 By default, there are 13-theme supports available for the Rotator control,
 
@@ -535,7 +535,7 @@ By default, there are 13-theme supports available for the Rotator control,
 ## CSS class
 
 
-This property is used to set rootclass for the Rotator control theme. The value set to this property is string type.
+This property is used to set root class for the Rotator control theme. The value set to this property is string type.
 
 In an ASPX page, add the following code example.
 

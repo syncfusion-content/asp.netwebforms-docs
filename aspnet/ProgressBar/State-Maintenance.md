@@ -9,7 +9,7 @@ documentation: ug
 
 # State Maintenance
 
-Save the current model value to cookies for state maintainance. While refreshing the ProgressBar control, the page retains the 
+Save the current model value to cookies for state maintenance. While refreshing the ProgressBar control, the page retains the 
 model value applied from the browser cookies. By default, EnablePersistence property is set to false in the ProgressBar.
 
 Add the following code example to the corresponding ASPX page to render ProgressBar control.

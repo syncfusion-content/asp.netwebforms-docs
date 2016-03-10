@@ -13,7 +13,7 @@ The Scroller control allows to specify the scroll movement step in a pixel value
 
 The following steps explains the configuration of ScrollOneStepBy property in Scroller. 
 
-In an ASPXpage, add the following code to render the Scroller.
+In an ASPX page, add the following code to render the Scroller.
 
 
 

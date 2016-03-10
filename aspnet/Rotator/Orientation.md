@@ -19,7 +19,7 @@ The following steps explain how to set orientation for the Rotator.
 
 ## Horizontal
 
-This property sets the Rotator in the horizontalorientation. You can refer to the following steps to set horizontalorientation for Rotator control.
+This property sets the Rotator in the horizontal orientation. You can refer to the following steps to set horizontal orientation for Rotator control.
 
 In an ASPX page, add the following code example and set the Orientation property as Horizontal.
 
@@ -87,7 +87,7 @@ The following screenshot displays the output of the above code example.
 
 ## Vertical
 
-This property sets the Rotator in verticalorientation. You can refer to the following steps to set the verticalorientation for  Rotator control.
+This property sets the Rotator in vertical orientation. You can refer to the following steps to set the vertical orientation for  Rotator control.
 
 In an ASPX page, add the following code example and set the Orientation property as Vertical.
 

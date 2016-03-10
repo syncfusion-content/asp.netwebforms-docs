@@ -25,7 +25,7 @@ Add the following code to your ASPX page to render the CurrencyTextbox control w
 
 
 
-The output when the EnableRTListrue. 
+The output when the EnableRTL is true. 
 
 ![](RTL-Support_images/RTL-Support_img1.png)
 

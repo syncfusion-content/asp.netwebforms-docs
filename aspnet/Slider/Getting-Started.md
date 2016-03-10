@@ -11,7 +11,7 @@ documentation: ug
 
 ## Create your first Slider in ASP.NET
 
-ASP.NET Slider control provides support to display a Slider within the webpage. Here, you can learn how to use Sliders in a real-time application. The following example illustrates you how to use the Slider control to select mobile model within the specified price range in a Mobile Purchase Application.
+ASP.NET Slider control provides support to display a Slider within the web page. Here, you can learn how to use Sliders in a real-time application. The following example illustrates you how to use the Slider control to select mobile model within the specified price range in a Mobile Purchase Application.
 
 The following screenshot demonstrates the functionality of Slider control. By selecting mobile model in the dropdown, you can purchase a mobile at any rate specified in the MobilePriceSlider. In addition, you can also specify the number of mobiles required by using the MobileCountSlider. Simultaneously, you can observe the changes in the Mobile Price and Count by using Sliders.
 

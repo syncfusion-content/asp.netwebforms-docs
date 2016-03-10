@@ -11,7 +11,7 @@ documentation: ug
 
 ## Checked status
 
-You have options to set the state of the radio button as either checked or unchecked. When you select any option from the group of radio buttons, a dot mark appears inside the circle. This is called the Checkedstate. Previously selected radio buttons in this group are unselected that is they go to the unChecked state. The Checked property is used to set the state of the radio button.
+You have options to set the state of the radio button as either checked or unchecked. When you select any option from the group of radio buttons, a dot mark appears inside the circle. This is called the Checked state. Previously selected radio buttons in this group are unselected that is they go to the unChecked state. The Checked property is used to set the state of the radio button.
 
 The following steps explain the details about rendering the Radio Button with the Checked option
 

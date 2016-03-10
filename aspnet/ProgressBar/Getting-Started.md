@@ -11,13 +11,13 @@ documentation: ug
 
 ## Create your first Progress Bar in ASP.NET
 
-ASP.NET ProgressBar displays a ProgressBar within a webpage that shows the progress of an event. This article explains how to customize the progress and color of the ProgressBar in a real-time application, to indicate the strength of the password, where the progress changes with respect to the change in length of the password. This enables you to validate the password when typed.
+ASP.NET ProgressBar displays a ProgressBar within a web page that shows the progress of an event. This article explains how to customize the progress and color of the ProgressBar in a real-time application, to indicate the strength of the password, where the progress changes with respect to the change in length of the password. This enables you to validate the password when typed.
 
 ### Create a ProgressBar
 
 ASP.NET ProgressBar control is created by using the &lt;ej:ProgressBar&gt; tag. This element provides an in-built feature that allows you to change the progress, size, and text of the control. You can create the ProgressBar control by using the following steps.
 
-You can create an ASP.NET Project and add the necessary Dlls and scripts with the help of the given [ASP-Getting Started](http://help.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc ) documentation.
+You can create an ASP.NET Project and add the necessary Dll and scripts with the help of the given [ASP-Getting Started](http://help.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc ) documentation.
 
 You can add the following code example to the corresponding ASPX page to render the ProgressBar.
 
