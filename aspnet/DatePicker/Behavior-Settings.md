@@ -16,7 +16,7 @@ EJWEB DatePicker value can be selected through picking date from DatePicker cale
 
 Refer below code example to set selected date at initialization
 
-{% highlight aspx %}
+{% highlight html %}
       
       <ej:DatePicker ID="datepicker1" Value=<%= DateTime.Now.ToLongTimeString() %> runat="server"></ej:DatePicker>
 
@@ -33,7 +33,7 @@ EJWEB DatePicker provides an option to restrict the user to pick the date from s
 **MaxDate** -  specifies the maximum date to be picked in DatePicker calendar by disabling above date of maxDate. 
 
 
-{% highlight aspx %}
+{% highlight html %}
      
     <ej:DatePicker ID="daterange1" runat="server" MaxDate="06/11/2015" MinDate="06/03/2015"></ej:DatePicker>  
 
@@ -53,7 +53,7 @@ By default DatePicker starts with month view and can be navigate into year, deca
 * "Decade"  -  shows the years in decade to pick.
 * "Century" -  shows the decades in century to pick.
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:DatePicker ID="daterange1" runat="server" MaxDate="06/11/2015" MinDate="06/03/2015"></ej:DatePicker>
 
@@ -65,7 +65,7 @@ EJWEB DatePicker provides an option to act as calendar by setting the [DisplayIn
 
 Refer below code example to represent DatePicker as calendar. 
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:DatePicker ID="daterange1" runat="server" DisplayInline="True"></ej:DatePicker>
 
@@ -80,7 +80,7 @@ Also the valid date should be defined in specified range or else it resets to mi
 
 By default **EnableStrictMode** is true, so you can enter any value other than date too, but an **error** class (**.** **e** **-** **error**) will get added to wrapper to highlight the invalid date.
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:DatePicker ID="daterange1" runat="server" EnableStrictMode="true"></ej:DatePicker>
 
@@ -90,7 +90,7 @@ By default **EnableStrictMode** is true, so you can enter any value other than
 You can also override the **e-error** class to highlight when invalid date is entered.
 
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:DatePicker ID="daterange1" runat="server" EnableStrictMode="true"></ej:DatePicker>
 		

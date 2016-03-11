@@ -14,7 +14,7 @@ By default EJWEB DatePicker calendar starts with "Sunday" and ends with "Monda
 
 Refer below code to start Wednesday as start day. 
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:DatePicker ID="datepick" StartDay="2" runat="server"></ej:DatePicker>
 
@@ -24,7 +24,7 @@ Refer below code to start Wednesday as start day.
 
 EJWEB DatePicker calendar allows you to quick navigate back and forth from one month to previous or next month by clicking the arrow button. By default its navigate one by one month. You can also navigate by skipping months in odd or even or any count by using [StepMonths](http://help.syncfusion.com/js/api/ejdatepicker#members:stepmonths) property. 
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:DatePicker ID="datepick" StepMonths="2" runat="server"></ej:DatePicker>
 
@@ -34,7 +34,7 @@ EJWEB DatePicker calendar allows you to quick navigate back and forth from one m
 
 You can make EJWEB DatePicker as read only by setting [ReadOnly](http://help.syncfusion.com/js/api/ejdatepicker#members:readonly) property as true. It allows only to read the value and it can't be changed by interaction.
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:DatePicker ID="datepick" ReadOnly="true" runat="server"></ej:DatePicker>
    
@@ -44,7 +44,7 @@ You can make EJWEB DatePicker as read only by setting [ReadOnly](http://help.syn
 
 You can enable or disable the EJWEB DatePicker textbox by using [Enabled](http://help.syncfusion.com/js/api/ejdatepicker#members:enabled) property. In inline mode EJWEB DatePicker calendar also gets enabled or disabled. 
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:DatePicker ID="datepick" Enabled="false" runat="server"></ej:DatePicker>
 

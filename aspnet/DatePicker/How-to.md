@@ -16,7 +16,7 @@ You can customize the date field to emphasize the particular dates in EJWEB Date
 
 EJWEB DatePicker allows you to restrict date selection in specific range by using date range option. But you can also restrict selective date in DatePicker calendar by utilizing [BeforeDateCreate](http://help.syncfusion.com/js/api/ejdatepicker#events:beforedatecreate) event. This event will get triggered at each date creation. So you can disable the selective date in this event to restrict the user.
 
-{% highlight aspx %}
+{% highlight html %}
 
        <ej:DatePicker ID="datepick" ClientSideOnBeforeDateCreate="beforeCreate" runat="server"></ej:DatePicker>
 
@@ -42,7 +42,7 @@ EJWEB DatePicker allows you to restrict date selection in specific range by usin
 
 EJWEB DatePicker is responsive control, you have to just set the Width as 100% to DatePicker. In Bootstrap grid layout use the below code example to get responsive DatePicker Control. 
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:DatePicker ID="datepick" Height="100%" Width="100%" runat="server"></ej:DatePicker>
 

@@ -17,7 +17,7 @@ N> All the culture-specific script files are available within the below specifie
 <table>
 <tr>
 <td>
-(installed location)\Syncfusion\Essential Studio\13.4.0.58\JavaScript\assets\scripts\cultures<br/><br/>For example, If you have installed the Essential Studio package within C:\Program Files (x86), then navigate to the below location, <br/><br/>C:\Program Files (x86)\Syncfusion\Essential Studio\13.4.0.53\JavaScript\assets\scripts\cultures</td></tr>
+(installed location)\Syncfusion\Essential Studio\13.4.0.63\JavaScript\assets\scripts\cultures<br/><br/>For example, If you have installed the Essential Studio package within C:\Program Files (x86), then navigate to the below location, <br/><br/>C:\Program Files (x86)\Syncfusion\Essential Studio\13.4.0.63\JavaScript\assets\scripts\cultures</td></tr>
 </table>
 
 To translate our control content from default English to any of the culture, say For example - German language, then you need to refer the **ej.culture.de-DE.min.js** file in your application,
@@ -35,7 +35,7 @@ Refer the below German culture file in head section of html page after the refer
 
 Set German culture to DatePicker at initialization.
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:DatePicker ID="datepick" Locale="de-DE" runat="server"></ej:DatePicker>
 
@@ -45,7 +45,7 @@ Set German culture to DatePicker at initialization.
 
 By default EJWEB DatePicker input has "select date" as watermark text, you can also change this value by using [WatermarkText](http://help.syncfusion.com/js/api/ejdatepicker#members:watermarktext) property. Also there is a today button in DatePicker calendar which allows you to quick select the current date and its value can be changed by using **ButtonText** property.
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:DatePicker ID="datepick"  ButtonText="current date" WaterMarkText="enter date value"  runat="server"></ej:DatePicker>
 
