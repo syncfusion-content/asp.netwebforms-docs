@@ -17,7 +17,7 @@ You can sustain the entire widget model of EJWEB DatePicker even after form post
 are stored in local storage / cookies of browser before page refreshes and reinitialized with the restored model after refresh.
 
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:DatePicker ID="datepick" EnablePersistence="true" runat="server"></ej:DatePicker>
 

@@ -11,7 +11,7 @@ documentation: ug
 
 EJWEB DatePicker control supports the Server side events too. This allows you to configure the DatePicker functionality in code-behind also. Please refer the below code, to use the server side events of EJWEB DatePicker
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:DatePicker ID="datepick" OnSelect="datepick_Select" runat="server">
     </ej:DatePicker>

@@ -14,7 +14,7 @@ EJWEB DatePicker appearance can be customized using below listed properties.
 
 By default EJWEB DatePicker has standard height and width (Height: "30px" and Width: "143px"). You can change this height and width by using [Height](http://help.syncfusion.com/js/api/ejdatepicker#members:height) and [Width](http://help.syncfusion.com/js/api/ejdatepicker#members:width) property respectively.
 
-{% highlight aspx %}
+{% highlight html %}
    
     <ej:DatePicker ID="datepick" Height="50px" Width="300px" runat="server"></ej:DatePicker>
 
@@ -22,7 +22,7 @@ By default EJWEB DatePicker has standard height and width (Height: "30px" and Wi
 
 Since EJWEB DatePicker is a form control and you can make it as responsive by specifying its Width as "**100%**".
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:DatePicker ID="datepick" Width="100%" runat="server"></ej:DatePicker>
 
@@ -32,7 +32,7 @@ Since EJWEB DatePicker is a form control and you can make it as responsive by sp
 
 You can show or hide the footer of EJWEB DatePicker calendar by using [ShowFooter](http://help.syncfusion.com/js/api/ejdatepicker#members:showfooter) property. 
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:DatePicker ID="datepick" ShowFooter="false" runat="server"></ej:DatePicker>
 
@@ -46,7 +46,7 @@ EJWEB DatePicker control, contains a button to open the DatePicker calendar. You
 
 By hiding this button, you can open the DatePicker by focusing the input textbox element of EJWEB Datepicker control itself.
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:DatePicker ID="datepick" ShowPopupButton="false" runat="server"></ej:DatePicker>
 
@@ -56,7 +56,7 @@ By hiding this button, you can open the DatePicker by focusing the input textbox
 
 You can show or hide the other month days from EJWEB DatePicker calendar by using [ShowOtherMonths](http://help.syncfusion.com/js/api/ejdatepicker#members:showothermonths) property.
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:DatePicker ID="datepick" ShowOtherMonths="false" runat="server"></ej:DatePicker>
        
@@ -66,7 +66,7 @@ You can show or hide the other month days from EJWEB DatePicker calendar by usin
 
 EJWEB DatePicker allows you to highlight the special dates in DatePicker calendar by using [SpecialDates](http://help.syncfusion.com/js/api/ejdatepicker#members:specialdates) property. It receives the array of JSON data, in which the data should contain the date value, icon CSS class and tooltip as field values with any names.
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:DatePicker ID="datepick" runat="server">
              <ej:SpecialDate Date="specialdate" IconClass="customCss" Tooltip="toolTip" />

@@ -16,14 +16,14 @@ Before using those properties, you need to add the jQuery validate plugin to you
 
 Refer the below jQuery validation plugin script after jQuery script reference.
 
-{% highlight aspx %}
+{% highlight html %}
 
      <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
 
 {% endhighlight %}
 
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:DatePicker ID="datepick" Locale="de-DE" runat="server">
                 <ValidationRule> 
