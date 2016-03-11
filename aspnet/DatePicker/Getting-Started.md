@@ -47,18 +47,18 @@ N>  In production, we highly recommend you to use our [custom script generator](
 
 Below is a simple site master page with required CSS and script references added to create EJWEB DatePicker in ASP.NET WEB application
 
-{% highlight aspx %}
+{% highlight html %}
 
     <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
        
-    <link rel="stylesheet" href="http://cdn.syncfusion.com/13.4.0.58/js/web/flat-azure/ej.web.all.min.css" />
+    <link rel="stylesheet" href="http://cdn.syncfusion.com/13.4.0.63/js/web/flat-azure/ej.web.all.min.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/13.4.0.58/js/web/ej.web.all.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/13.4.0.58/js/common/ej.unobtrusive.min.js"></script>
+    <script src="http://cdn.syncfusion.com/13.4.0.63/js/web/ej.web.all.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/13.4.0.63/js/common/ej.unobtrusive.min.js"></script>
 
     </head>
      
@@ -68,7 +68,7 @@ Below is a simple site master page with required CSS and script references added
 
 EJWEB DatePicker can be created using aspx code like as below code
 
-{% highlight aspx %}
+{% highlight html %}
 
     <%--initialize DatePicker component--%>
 
@@ -84,7 +84,7 @@ N>  DatePicker is a form control, so on form submitting its value can be retriev
 EJWEB DatePicker provides an options to configure all its properties and get its value. This DatePicker value can be assigned during initialization or at some action.
 Below code shows how to assign values at initialization
 
-{% highlight aspx %}
+{% highlight html %}
 
     <%--initialize DatePicker component with current date--%>
 
@@ -125,7 +125,7 @@ N>  Existing EJWEB DatePicker instance can be created by [jQuery.data()](http://
 You can handle the all available [Client side events](http://help.syncfusion.com/js/api/ejdatepicker#events) in Essential JavaScript DatePicker. Refer the below code example to use the client side event in EJWEB DatePicker
 
 
-{% highlight aspx %}
+{% highlight html %}
  
     <ej:DatePicker ID="datepicker1" ClientSideOnChange="onChange" Value=<%= DateTime.Now.ToLongTimeString() %> runat="server"></ej:DatePicker>
 

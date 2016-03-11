@@ -114,7 +114,7 @@ yyyy-MM-dd<br/><br/></td></tr>
 </table>
 By default **en-US** culture date format is "M/d/yyyy".
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:DatePicker ID="datelocalization" DateFormat="yyyy/dd/MM" runat="server"></ej:DatePicker>        
 
@@ -142,7 +142,7 @@ N> by default date format is based on culture specific. You have to refer the re
 
 EJWEB DatePicker calendar consists of header, day header, days and footer section. In which header section shows the current view of DatePicker calendar by displaying the selected day or month or year. It can be formatted as like date format by using [HeaderFormat](http://help.syncfusion.com/js/api/ejdatepicker#members:headerformat) property.
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:DatePicker ID="datelocalization" HeaderFormat="MMMM yyyy" runat="server"></ej:DatePicker>
 
@@ -152,7 +152,7 @@ EJWEB DatePicker calendar consists of header, day header, days and footer sectio
 
 Day header determines the days name to be displayed in terms of short, medium and long in EJWEB DatePicker calendar by using [DayHeaderFormat](http://help.syncfusion.com/js/api/ejdatepicker#members:dayheaderformat) property. Also the DatePicker calendar size varies with this specified values.
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:DatePicker ID="datelocalization" DayHeaderFormat="Long" runat="server"></ej:DatePicker>
 
@@ -164,7 +164,7 @@ EJWEB DatePicker calendar shows tooltip on hovering the date by specifying the f
 
 You can also change the format of tooltip by using â€œ**tooltipFormat**â€ property. Below codes example allows to show tooltip and format its value. 
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:DatePicker ID="datepick" ShowTooltip="true" TooltipFormat="dd/MM/yy" runat="server"></ej:DatePicker>
 
