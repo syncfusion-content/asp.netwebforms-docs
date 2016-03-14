@@ -52,7 +52,7 @@ Add the following handler codes to the web.config file for the Captcha rendering
 
     <httpHandlers>
 
-      <add verb="*" path="captimage.axd" type="Syncfusion.JavaScript.ImageHandler, Syncfusion.EJ, Version={{ site.450esreleaseversion }}, Culture=neutral, PublicKeyToken=3D67ED1F87D44C89" />
+      <add verb="*" path="captimage.axd" type="Syncfusion.JavaScript.ImageHandler, Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3D67ED1F87D44C89" />
 
     </httpHandlers>
 
@@ -68,16 +68,18 @@ Add the following handler codes to the web.config file for the Captcha rendering
 
     <handlers>      
 
-      <add verb="*" path="captimage.axd" name="syncfusion_generatetools" type="Syncfusion.JavaScript.ImageHandler, Syncfusion.EJ, Version= {{ site.450esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />      
+      <add verb="*" path="captimage.axd" name="syncfusion_generatetools" type="Syncfusion.JavaScript.ImageHandler, Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />      
 
     </handlers>
+    
+    <validation validateIntegratedModeConfiguration="false"/>
 
 </system.webserver>
 
 {% endhighlight %}
 
 
-N> Version= site.450esreleaseversion  - It will vary depend up on .Net frame work version and Essential studio version you have using. If you are using Essential studio version as- {{ site.releaseversion }} and .Net frame work is 4.5 use like following Version= site.450esreleaseversion
+N> Version= {{ site.45esreleaseversion }}  - It will vary depend up on .NET Framework version and Essential studio version you are using. If you are using Essential studio version as- {{ site.releaseversion }} and .NET Framework is 4.5 use like following Version= {{ site.45esreleaseversion }}
 
 
 
