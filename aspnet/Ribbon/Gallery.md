@@ -9,146 +9,212 @@ documentation: ug
 
 # Gallery
 
-The Ribbon control has Gallery support. By using the Gallery in Ribbon, items are displayed with good look and feel and it also enables to classify the items as groups for easy navigation.Gallery can be included in the tab groups.
+Galleries are used to display items that can be arranged in a grid-type layout. Items in the gallery can be customized as [`Button`](http://help.syncfusion.com/aspnet/button/getting-started)/[`Menu`](http://help.syncfusion.com/aspnet/menu/getting-started) to display images, text, or both images and text. You can set `Type` of group as `Gallery`.
 
-To use the Gallery feature, include the following properties under tab groups.
+## Gallery Items
 
-* Id – defines the id of the gallery.
-* Type - defines the type of the item and it must be of Gallery type.
-* Columns – defines the number of columns to be displayed in a row at initial without gallery expand operation.
-* ExpandedColumns - defines the number of columns to be displayed in a row at gallery expand operation.
-* ItemHeight – defines the height of the  contents.
-* ItemWidth – defines the width of contents.
-* GalleryItemCollection – defines the collection of the items to be included in the gallery.
-* CustomGalleryItemCollection - defines the additional items to be  displayed at gallery expand operation. It can be of CustomItemType Button or Menu. By default value it is Button.
+GalleryItem are collection of the items to be included in the main gallery. You can set `Text` and `ToolTip` to gallery item which can also be customized with `ButtonSettings `. 
+
+Number of `Columns` to display in gallery for each row should be specified and the Number of columns in Expanded State (`ExpandedColumns`) can be customized, if not set, `Columns` count will be set as default. 
+
+N> The `ItemHeight` and `ItemWidth` for GalleryItem can be set, if not set default values will be used.
 
 {% highlight html %}
-
-  <ej:Ribbon ID="Ribbon1" runat="server" Width="800">
-
-        <ApplicationTab MenuItemID="ribbonmenu" Type="Menu">
-
-        </ApplicationTab>
-
-        <RibbonTabs>
-
-            <ej:RibbonTab Id="RibbonTab1" Text="HOME">
-
-                <TabGroupCollection>
-
-                    <ej:TabGroup Text="Clipboard">
-
-                        <ContentCollection>
-
-                            <ej:TabContent>
-
-                                <ContentGroupCollection>
-
-                                    <ej:ContentGroup Id="ContentGroup1" Type="Custom" ContentID="paste">
-
-                                    </ej:ContentGroup>
-
-                                </ContentGroupCollection>
-
-                            </ej:TabContent>
-
-                        </ContentCollection>
-
-                    </ej:TabGroup>
-
-                    <ej:TabGroup Text="Gallery">
-
-                        <ContentCollection>
-
-                            <ej:TabContent>
-
-                                <ContentGroupCollection>
-
-                                    <ej:ContentGroup Text="Gallery" Type="Gallery" Id="ContentGroup2" Columns="2" ItemHeight="54" ItemWidth="68" ExpandedColumns="3">
-
-<GalleryItemCollection>
-
-                       <ej:GalleryItem Text="Content1" ToolTip="Content1">
-
-                       </ej:GalleryItem >
-
-                       <ej:GalleryItem Text="Content2" ToolTip="Content2">
-
-                       </ej:GalleryItem >
-
-                       <ej:GalleryItem Text="Content3" ToolTip="Content3">
-
-                       </ej:GalleryItem >
-
-                       <ej:GalleryItem Text="Content4" ToolTip="Content4">
-
-                       </ej:GalleryItem >
-
-                       <ej:GalleryItem Text="Content5" ToolTip="Content5">
-
-                       </ej:GalleryItem >
-
-                   </GalleryItemCollection>
-
-                    < CustomGalleryItemCollection >
-
-                        <ej:CustomGalleryItem Text="Save Selection as new quick style" ToolTip="Save" CustomItemType="Button">
-
-                                            </ej:CustomGalleryItem >
-
-                        <ej:CustomGalleryItem CustomItemType="Menu" MenuId="custommenu">
-
-                                            </ej:CustomGalleryItem>
-
-                    </CustomGalleryItemCollection >
-
-                                    </ej:ContentGroup>
-
-                                </ContentGroupCollection>
-
-                            </ej:TabContent>
-
-                        </ContentCollection>
-
-                    </ej:TabGroup>
-
-                </TabGroupCollection>
-
-            </ej:RibbonTab>
-
-        </RibbonTabs>
-
-    </ej:Ribbon>
-
-<ul id="ribbonmenu">
-
-        <li><a>FILE</a> </li>
-
-    </ul>
-
-<div id="paste" style="height:40px;width:43px;">Paste</div>
-
-    <ul id="custommenu">
-
-        <li><a>New Quick Step</a>
-
-
-
-            <ul>
-
-                <li><a>Move to new folder</a></li>
-
-            </ul>
-
-        </li>
-
-    </ul
+	
+	<ej:Ribbon ID="defaultRibbon1" runat="server" Width="500">
+		<ApplicationTab MenuItemID="ribbonmenu" Type="Menu">
+			<MenuSettings OpenOnClick="false"></MenuSettings>
+		</ApplicationTab>
+		<RibbonTabs>
+			<ej:RibbonTab Id="home1" Text="HOME">
+				<TabGroupCollection>
+					<ej:TabGroup Text="Gallery">
+						<ContentCollection>
+							<ej:TabContent>
+								<ContentGroupCollection>
+									<ej:ContentGroup Text="Gallery" Type="Gallery" Id="Gallery1" Columns="2" ItemWidth="73" ItemHeight="54" ExpandedColumns="3">
+										<GalleryItemCollection>
+											<ej:GalleryItem Text="GalleryContent1" ToolTip="GalleryContent1">
+												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-gallerycontent1 e-gbtnimg" />
+											</ej:GalleryItem>
+											<ej:GalleryItem Text="GalleryContent2" ToolTip="GalleryContent2">
+												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-gallerycontent2 e-gbtnimg" />
+											</ej:GalleryItem>
+											<ej:GalleryItem Text="GalleryContent3" ToolTip="GalleryContent3">
+												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-gallerycontent3 e-gbtnimg" />
+											</ej:GalleryItem>
+											<ej:GalleryItem Text="GalleryContent4" ToolTip="GalleryContent4">
+												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-gallerycontent4 e-gbtnimg" />
+											</ej:GalleryItem>
+										</GalleryItemCollection>
+									</ej:ContentGroup>
+								</ContentGroupCollection>
+							</ej:TabContent>
+						</ContentCollection>
+					</ej:TabGroup>
+				</TabGroupCollection>
+			</ej:RibbonTab>
+		</RibbonTabs>
+	</ej:Ribbon>
+	<ul id="ribbonmenu">
+		<li><a>FILE</a>
+			<ul>
+				<li><a>New</a></li>
+				<li><a>Open</a></li>
+			</ul>
+		</li>
+	</ul>
+	<style>
+		.e-gallerycontent1 {
+			background-position: 0 -105px;
+		}
+		
+		.e-gallerycontent2 {
+			background-position: -69px -105px;
+		}
+		
+		.e-gallerycontent3 {
+			background-position: -136px -105px;
+		}
+		
+		.e-gallerycontent4 {
+			background-position: 0 -53px;
+		}
+		
+		.e-gallerycontent5 {
+			background-position: -69px -53px;
+		}
+		
+		.e-gbtnposition {
+			margin-top: 5px;
+		}
+		
+		.e-gbtnimg {
+			background-image: url("../Content/ej/web/common-images/ribbon/homegallery.png");
+			background-repeat: no-repeat;
+			height: 64px;
+			width: 64px;
+		}
+	</style>
 
 {% endhighlight %}
-
-The following output is displayed as a result of the above code example.
 
 ![](Gallery_images/Gallery_img1.png)
 
 
+Ribbon Gallery.
+{:.caption}
+
 ![](Gallery_images/Gallery_img2.png)
+
+Gallery at Expanded State
+{:.caption}
+
+## Custom Gallery Items
+
+CustomGalleryItem are the additional items to be displayed at gallery expanded state. You can set `CustomItemType` as `Button` or `Menu`, Default is `Button`.
+
+You can also set `Text` and `ToolTip` to CustomGalleryItem which can also be customized with [`ButtonSettings`](http://help.syncfusion.com/aspnet/button/getting-started)/[`MenuSettings`](http://help.syncfusion.com/aspnet/menu/getting-started) based on the CustomItemType specified.
+
+{% highlight html %}
+
+		<ej:Ribbon ID="defaultRibbon1" runat="server" Width="500">
+		<ApplicationTab MenuItemID="ribbonmenu" Type="Menu">
+			<MenuSettings OpenOnClick="false"></MenuSettings>
+		</ApplicationTab>
+		<RibbonTabs>
+			<ej:RibbonTab Id="home1" Text="HOME">
+				<TabGroupCollection>
+					<ej:TabGroup Text="Gallery">
+						<ContentCollection>
+							<ej:TabContent>
+								<ContentGroupCollection>
+									<ej:ContentGroup Text="Gallery" Type="Gallery" Id="Gallery1" Columns="2" ItemWidth="73" ItemHeight="54" ExpandedColumns="3">
+										<GalleryItemCollection>
+											<ej:GalleryItem Text="GalleryContent1" ToolTip="GalleryContent1">
+												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-gallerycontent1 e-gbtnimg" />
+											</ej:GalleryItem>
+											<ej:GalleryItem Text="GalleryContent2" ToolTip="GalleryContent2">
+												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-gallerycontent2 e-gbtnimg" />
+											</ej:GalleryItem>
+											<ej:GalleryItem Text="GalleryContent3" ToolTip="GalleryContent3">
+												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-gallerycontent3 e-gbtnimg" />
+											</ej:GalleryItem>
+											<ej:GalleryItem Text="GalleryContent4" ToolTip="GalleryContent4">
+												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-gallerycontent4 e-gbtnimg" />
+											</ej:GalleryItem>
+										</GalleryItemCollection>
+										<CustomGalleryItemCollection>
+											<ej:CustomGalleryItem CustomItemType="Menu" MenuId="custommenu">
+												<MenuSettings OpenOnClick="false" />
+											</ej:CustomGalleryItem>
+											<ej:CustomGalleryItem Text="Clear Formatting" ToolTip="Clear Formatting" CustomItemType="Button">
+												<ButtonSettings CssClass="e-extrabtnstyle" />
+											</ej:CustomGalleryItem>
+										</CustomGalleryItemCollection>
+									</ej:ContentGroup>
+								</ContentGroupCollection>
+							</ej:TabContent>
+						</ContentCollection>
+					</ej:TabGroup>
+				</TabGroupCollection>
+			</ej:RibbonTab>
+		</RibbonTabs>
+	</ej:Ribbon>
+	<ul id="ribbonmenu">
+		<li><a>FILE</a>
+			<ul>
+				<li><a>New</a></li>
+				<li><a>Open</a></li>
+			</ul>
+		</li>
+	</ul>
+	<ul id="custommenu">
+		<li>
+			<a>New Quick Step</a>
+			<ul>
+				<li><a>Flag and Move</a></li>
+			</ul>
+		</li>
+	</ul>
+	<style type="text/css">
+		.e-gallerycontent1 {
+			background-position: 0 -105px;
+		}
+		
+		.e-gallerycontent2 {
+			background-position: -69px -105px;
+		}
+		
+		.e-gallerycontent3 {
+			background-position: -136px -105px;
+		}
+		
+		.e-gallerycontent4 {
+			background-position: 0 -53px;
+		}
+		
+		.e-gallerycontent5 {
+			background-position: -69px -53px;
+		}
+		
+		.e-gbtnposition {
+			margin-top: 5px;
+		}
+		
+		.e-gbtnimg {
+			background-image: url("../Content/ej/web/common-images/ribbon/homegallery.png");
+			background-repeat: no-repeat;
+			height: 64px;
+			width: 64px;
+		}
+		
+		.e-extracontent .e-extrabtnstyle {
+			padding-left: 28px;
+			text-align: left;
+		}
+	</style>
+
+{% endhighlight %}
+
+![](Gallery_images/Gallery_img3.png)
