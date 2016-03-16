@@ -165,6 +165,3 @@ Contextual Tabs are collection of Tabs that extended styling and can be shown ba
 
 
 ![](Contextual-Tab-and-Tab-Set_images/Contextual-Tab-and-Tab-Set_img1.png)
-
-
-

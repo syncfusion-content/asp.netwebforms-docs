@@ -62,7 +62,7 @@ Custom Tooltip is used to set detailed help to the user about the controls. You 
 
 ### For Groups 
 
-` CustomToolTip ` for each group controls can be specified. Such as to the controls button, split button, dropdown list etc.
+`CustomToolTip` for each group controls can be specified. Such as to the controls button, split button, dropdown list etc.
 
 {% highlight html %}
 	
@@ -117,7 +117,7 @@ Custom Tooltip is used to set detailed help to the user about the controls. You 
 
 ### For Gallery
 
-` CustomToolTip` for each ` GalleryItem ` and ` CustomGalleryItem`  button control can be specified. 
+`CustomToolTip` for each `GalleryItem` and `CustomGalleryItem`  button control can be specified. 
 
 N> CustomGalleryItem `Menu` is not supported to CustomToolTip.
 
