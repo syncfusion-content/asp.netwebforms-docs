@@ -29,9 +29,9 @@ The `Height` & `Width` applicable to Button, SplitButton, DropDownList ,ToggleBu
 
 #### _Adding Content Groups_
 
-Controls such as button, split button, dropdown list, toggle button, gallery in the subgroup of the Ribbon tab can be rendered. All of these can be customized using its corresponding settings property such as ` ButtonSettings `, ` DropdownSettings `, etc.
+Controls such as button, split button, dropdown list, toggle button, gallery in the subgroup of the Ribbon tab can be rendered. All of these can be customized using its corresponding settings property such as `ButtonSettings`, `DropdownSettings`, etc.
 
-Custom controls or items (such as table, div etc.) can be added when the `Type` set as ` Custom`. ` ContentDefaults ` control settings of TabGroup can be specified for an `individual group` instead of specifying them to group’s collection commonly.
+Custom controls or items (such as table, div etc.) can be added when the `Type` set as `Custom`. `ContentDefaults` control settings of TabGroup can be specified for an `individual group` instead of specifying them to group’s collection commonly.
 
 Tooltip and Custom Tooltip can be specified for each TabGroup controls.
 
