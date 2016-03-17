@@ -4,7 +4,7 @@ description: Customization of working hours, date, and appointment window
 platform: aspnet
 control: schedule
 documentation: ug
-keywords: customization, work hours, appointment window, display hours 
+keywords: customization, work hours, appointment window, display hours, Query cell info
 ---
 # Customization
 
@@ -233,7 +233,7 @@ The styles to be applied for the controls within the custom appointment window a
 
 {% highlight html %}
 
-<asp:Content runat="server" ID="Style" ContentPlaceHolderID="StyleSection">
+    <asp:Content runat="server" ID="Style" ContentPlaceHolderID="StyleSection">
     <style type="text/css">
      .customcheck {
             float: left;
@@ -254,7 +254,7 @@ The styles to be applied for the controls within the custom appointment window a
             margin-bottom:10px;
         }
     </style>
-</asp:Content>
+    </asp:Content>
 
 {% endhighlight %}
 
@@ -303,13 +303,14 @@ The following function needs to be defined within script section, which gets cal
         }
     </script>
 </asp:Content>   
+
 {% endhighlight %}
 
 On clicking the **Submit** button within the Custom Appointment window, the following function gets executed – which will validate the appointment fields and then save it appropriately.
 
 {% highlight html %}
 
-<asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
+    <asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
     <script type="text/javascript">
      function save() {
             // checks if the subject value is not left blank before saving it.
@@ -391,7 +392,59 @@ On clicking the **Submit** button within the Custom Appointment window, the foll
             $("#customWindow").ejDialog("close");
         }
     </script>
-</asp:Content> 
+    </asp:Content> 
 
 {% endhighlight %}
 
+## Query cell info
+
+It is possible to customize the scheduler DOM element in that scheduler using `QueryCellInfo` event. There are several main things that we can customize through query cell info event.
+
+* Work cell
+* Month cell
+* All day cell
+* Appointment
+* Time cells
+* Date header cells
+* Resource header cell
+* Agenda time cell
+* Agenda resource cell
+* Agenda date cell
+* Agenda event cell
+
+The following code snippet shows how to customize the appointment and work cells based on the query cell info event.
+     
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
+    <div>
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" QueryCellInfo="checkFormat" Width="100%" Height="525px" CurrentDate="5/2/2014">
+    <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule"/>
+</ej:Schedule>
+    </div>
+</asp:Content>
+
+{% endhighlight %}
+
+While loading the above scheduler the below function called by `QueryCellEvent` event and format the DOM element based on given scenario
+
+{% highlight html %}
+
+    <asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
+    <script type="text/javascript">
+     function checkFormat(args) {
+	    switch (args.requestType) {
+		case "workcells":
+			args.element.css("background-color", "#ffe9cc");
+			break;
+		case "monthcells":
+			args.element.css("background-color", "#faa41a");
+			args.element.css("border-color", "#faa41a");
+			break;
+		}
+    }
+    </script>
+    </asp:Content> 
+
+{% endhighlight %}

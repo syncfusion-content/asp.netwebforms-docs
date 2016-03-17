@@ -220,7 +220,7 @@ N> All these CRUD operations on appointments (add/edit/delete) can also be done 
 
 #### Through Programmatically
 
-You can delete the appointments dynamically through the public method `deleteAppointment`, which accepts the Guid of the appointment data as its argument. The Guid is availed as one of the appointment element’s attribute.
+You can delete the appointments dynamically through the public method `deleteAppointment`, which accepts the Guid of the appointment or complete appointment data as its argument. The Guid is availed as one of the appointment element’s attribute.
 
 For example, here the below code example depicts the way to delete the appointments programmatically by calling the **deleteAppointment** function within the `AppointmentClick event, which triggers whenever the user clicks on an appointment.
 
