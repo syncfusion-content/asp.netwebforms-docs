@@ -220,9 +220,11 @@ N> All these CRUD operations on appointments (add/edit/delete) can also be done 
 
 #### Through Programmatically
 
-You can delete the appointments dynamically through the public method `deleteAppointment`, which accepts the Guid of the appointment data as its argument. The Guid is availed as one of the appointment element’s attribute.
+You can delete the appointments dynamically through the public method `deleteAppointment`, which accepts the Guid of the appointment or complete appointment data as its argument. The Guid is availed as one of the appointment element’s attribute.
 
-For example, here the below code example depicts the way to delete the appointments programmatically by calling the **deleteAppointment** function within the `AppointmentClick event, which triggers whenever the user clicks on an appointment.
+#### Example 1 - Using GUID 
+
+The below code example depicts the way to delete the appointments using GUID programmatically by calling the **deleteAppointment** function within the `AppointmentClick event, which triggers whenever the user clicks on an appointment.
 
 {% highlight html %}
 
@@ -241,6 +243,32 @@ For example, here the below code example depicts the way to delete the appointme
             var schObj = $("#Schedule1").data("ejSchedule");
             schObj.deleteAppointment(args.appointment.Guid);
             // $($(".e-appointment")[0]).attr("guid") --> To get the guid attribute value of an element directly.
+        }
+    </script>
+</asp:Content>
+
+{% endhighlight %}
+
+#### Example 2 - Using Appointment object 
+
+The below code example depicts the way to delete the appointments using appointment data programmatically by calling the **deleteAppointment** function within the `AppointmentClick event, which triggers whenever the user clicks on an appointment.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData"  CurrentDate="5/2/2014" AppointmentClick="onAppointmentClick">
+    <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule"/>
+</ej:Schedule>
+
+<asp:SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings:ScheduleConnectionString %>"
+            SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+            
+<asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
+    <script type="text/javascript">
+        //addAppointment is a function, gets called on clicking the Add button
+        function onAppointmentClick(args) {
+            var schObj = $("#Schedule1").data("ejSchedule");
+            schObj.deleteAppointment(args.appointment);
         }
     </script>
 </asp:Content>
