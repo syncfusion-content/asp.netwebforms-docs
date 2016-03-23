@@ -648,6 +648,25 @@ Required field and min value validation is demonstrated in the below given examp
     
 {% endhighlight %}
 
+{% highlight javascript %}
+
+        $.validator.setDefaults({
+            ignore: [],
+            errorClass: 'e-validation-error', // to get the error message on jquery validation
+            errorPlacement: function (error, element) {
+                $(error).insertAfter(element.closest(".e-widget"));
+            }
+            // any other default options and/or rules
+        });
+        //If necessary, we can create custom rules as below. here method defined for min
+        $.validator.addMethod("min",
+            function (value, element, params) {
+                if (!/Invalid|NaN/.test(value)) {
+                    return parseInt(value) > params;
+                }
+            }, 'Must be greater than 30.');
+				
+{% endhighlight %}
 
 ![](Functionalities_images/Functionalities_img10.jpeg)
 
