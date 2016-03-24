@@ -50,7 +50,7 @@ In the ASPX page, add the DropDownList control to configure the DropDownList eve
 
 {% highlight html %}
 
-    <ej:DropDownList ID="dropdownlist" TargetID="list" Width="200px" OnValueSelect="dropdownlist_ValueSelect" ShowCheckbox="true" OnCheckedChange="dropdownlist_ValueSelect" runat="server" OnCascade="dropdownlist_Cascade" OnSearch="dropdownlist_Search" >
+    <ej:DropDownList ID="dropdownlist" TargetID="list" Width="200px" OnValueSelect="dropdownlist_ValueSelect" ShowCheckbox="true" OnCheckedChange="dropdownlist_CheckedChange" runat="server" OnCascade="dropdownlist_Cascade" OnSearch="dropdownlist_Search" >
 
     </ej:DropDownList>
 
@@ -99,7 +99,7 @@ The code Define dropdownlist ValueSelect server side event in behind.
 
     }
 	
-	protected void dropdownlist_ValueSelect(object sender, Syncfusion.JavaScript.Web.DropdownListEventArgs e)
+	protected void dropdownlist_CheckedChange(object sender, Syncfusion.JavaScript.Web.DropdownListEventArgs e)
 	{
 	    //e.IsChecked – Status of Checkbox
 	}
