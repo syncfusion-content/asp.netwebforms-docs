@@ -375,3 +375,61 @@ namespace WebSampleBrowser.Schedule
 
 N> Here, the appointments will make use of the **color** defined for the Owners resource instance as its background color.
 
+
+### Different Working days and Hours for Resources
+
+It is possible to assign different workdays and workhours for each resources present within the Scheduler. The process of assigning different working days for each individual resources is applicable only with vertical Scheduler mode and not in timeline view, whereas the customization of workhours for each resources is applicable on both the Scheduler orientation.  Within the `resourceSettings` property, the custom workdays and workhours can be defined with the following 3 properties.
+
+* Start – `Start` is used to define the work start hour for each individual resources
+* End – `End` is used to define the work end hour for each individual resources
+* WorkWeek – `WorkWeek` is used to define the working days for each individual resources
+
+**Example**: To display the Scheduler with each resources having different workhours and workdays, the code example is depicted below.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/5/2014" CurrentView="Workweek">
+    <Resources>
+        <ej:Resources Field="RoomId" Name="Rooms" Title="Room" AllowMultiple="true">
+            <ResourceSettings Color="color" Id="id" Text="text">
+            </ResourceSettings>
+        </ej:Resources>
+        <ej:Resources Field="OwnerId" Name="Owners" Title="Owner" AllowMultiple="true">
+            <ResourceSettings Color="color" Id="id" Text="text" GroupId="groupId" Start="start" End="end" WorkWeek="workweek">
+            </ResourceSettings>
+        </ej:Resources>
+    </Resources>
+    <Group Resources="Rooms,Owners"/>
+    <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" ResourceFields="RoomId,OwnerId"/>
+</ej:Schedule>
+
+<asp:SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings:ScheduleConnectionString %>" SelectCommand="SELECT * FROM [MultipleResource]"></asp:SqlDataSource>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+namespace WebSampleBrowser.Schedule
+{
+    public partial class ResourceGrouping : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            List<WebSampleBrowser.Schedule.multipleresource.Rooms> rooms = new List<WebSampleBrowser.Schedule.multipleresource.Rooms>();
+            rooms.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Room1", id = "1", color = "#cb6bb2" });
+            rooms.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Room2", id = "2", color = "#56ca85" });
+
+            List<WebSampleBrowser.Schedule.multipleresource.Rooms> owner = new List<WebSampleBrowser.Schedule.multipleresource.Rooms>();
+            owner.Add(new Owners { text = "Nancy", id = "1", groupId = "1", color = "#ffaa00", start = "10", end = "18", workweek = new List<string> {"monday","wednesday","friday"} });
+            owner.Add(new Owners { text = "Steven", id = "3", groupId = "2", color = "#f8a398", start = "6", end = "10", workweek = new List<string> { "tuesday", "thursday" } });
+            owner.Add(new Owners { text = "Michael", id = "5", groupId = "1", color = "#7499e1", start = "11", end = "15", workweek = new List<string> { "sunday", "tuesday", "thursday", "saturday" } });
+
+            Schedule1.Resources[0].ResourceSettings.DataSource = rooms;
+            Schedule1.Resources[1].ResourceSettings.DataSource = owner;
+        }
+    }
+}
+
+{% endhighlight %}
+
