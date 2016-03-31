@@ -378,11 +378,11 @@ N> Here, the appointments will make use of the **color** defined for the Owners 
 
 ### Different Working days and Hours for Resources
 
-It is possible to assign different workdays and workhours for each resources present within the Scheduler. The process of assigning different working days for each individual resources is applicable only with vertical Scheduler mode and not in timeline view, whereas the customization of workhours for each resources is applicable on both the Scheduler orientation.  Within the `resourceSettings` property, the custom workdays and workhours can be defined with the following 3 properties.
+It is possible to assign different workdays and workhours for each resources present within the Scheduler. The process of assigning different working days for every individual resources is applicable only for the vertical Scheduler mode and not for timeline view, whereas the customization of workhours for each resources is applicable on both the Scheduler orientation. The custom workdays and workhours needs to be defined within the `ResourceSettings` property using the following 3 sub-properties available within it.
 
-* Start – `Start` is used to define the work start hour for each individual resources
-* End – `End` is used to define the work end hour for each individual resources
-* WorkWeek – `WorkWeek` is used to define the working days for each individual resources
+* Start – To define the work start hour for each individual resources
+* End – To define the work end hour for each individual resources
+* WorkWeek – To define the working days for each individual resources
 
 **Example**: To display the Scheduler with each resources having different workhours and workdays, the code example is depicted below.
 
