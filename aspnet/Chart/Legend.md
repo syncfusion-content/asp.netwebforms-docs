@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Legend | Chart | ASP.NET Webforms | Syncfusion
-description: legend
+title: Chart legend| Chart  | ASP.NET Webforms | Syncfusion
+description: How to cutomize the legend in Essential JavaScript Chart.
 platform: aspnet
 control: Chart
 documentation: ug
@@ -9,211 +9,322 @@ documentation: ug
 
 # Legend
 
-Essential Chart allows you to customize its legend position, color, border, size, shape, padding, font styles, opacity etc. You can enable and disable Chart legends using legend Visible property. Default value of legendVisible property is set to “true”. 
+The legend contains the list of Chart Series and Trendlines that appear in a chart. 
 
-## Legend Title
+## Legend Visibility
 
-Essential Chart provides Legend Title support to the information about the series. It also provides options to customize the Legend Title with fonts and alignment.
+By default, the legend is enabled in the chart. You can enable or disable it by using the *Visible* option of the **Legend**.
+
 {% highlight html %}
- 
 
-
-
-  <ej:Chart ID="Chart1" runat="server">    
-
- <Legend Visible="true"><Title Text="Countries" TextAlignment="Near" ><font Color="blue"    FontSize="18px"></font> </Title></Legend>
-
+<ej:Chart ID="Chart1" runat="server"> 
+   <%--Visible chart legend--%>
+    <Legend Visible="true"></Legend>
 </ej:Chart>
-{% endhighlight  %}
-The following screenshot displays Legend Title:
-
-![](Legend_images/Legend_img1.png)
-
-
-
-## Legend Position
-
-You can position the legend at top, bottom, left or right position of the Chart. Default value of legendPosition is “Bottom”. And you can align the legend position using “Alignment” property of Legend.  This allows you to align the legend at Center, Far and Near position of Chart area. Default value of legendAlignment is “Center”. 
-{% highlight html %}
- 
-
-  <ej:Chart ID="Chart1" runat="server">       
-
-        <Legend   Visible="true" Alignment="Center" Position="Bottom"></Legend>
-
-  </ej:Chart>
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img2.png) 
+![](Legend_images/Legend_img1.png)
+
+[Click](http://asp.syncfusion.com/demos/web/chart/legendposition1.aspx) here to view the online demo sample for legend customization.
 
 
+## Legend title
 
-## Customization
+To add the title to the legend, you have to specify the **Legend.Title.Text** option.
 
-### Legend border and shape:
-
-In Essential Chart, you can customize the legend shape with different symbols like rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc. Default value of legend “Shape” is “Rectangle”. And you can draw and customize the outline of Chart legends using Border property of Legend. Default value of legend border color is “Transparent”. 
 {% highlight html %}
 
+<ej:Chart ID="Chart1" runat="server"> 
+   <%--Visible chart legend--%>
+    <Legend>
+        <%--Add title to the chart legend--%>
+        <Title Text="Countries"></Title>
+    </Legend>
+</ej:Chart>
 
-  <ej:Chart ID="Chart1" runat="server">       
+{% endhighlight %}
 
-  <Legend   Visible="true" Alignment="Center" Position="Bottom" Shape="Circle" Border-Width="2" Border-Color="red"></Legend>
+![](Legend_images/Legend_img2.png)
 
-  </ej:Chart>
 
-{% endhighlight  %}
+## Position and Align the Legend
+
+By using the **Position** option, you can position the legend at *Left*, *Right*, *Top* or *Bottom* of the chart. The legend is positioned at the **Bottom** of the chart, by default.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+   <%--Place the legend at top of the chart--%>
+    <Legend Position="Top">
+    </Legend>
+</ej:Chart>
+
+{% endhighlight %}
 
 ![](Legend_images/Legend_img3.png)
 
+**Legend Alignment**
 
-
-### Legend rowCount and columnCount:
-
-Essential Chart allows you to display the legend items for row and column wise using “RowCount” and “ColumnCount” property. This is used to avoid overlapping between legends and Chart area when using more legends in Chart area.
-
+You can align the legend to the *Center*, *Far* or *Near* based on its position by using the **Alignment** option.
 
 {% highlight html %}
 
+<ej:Chart ID="Chart1" runat="server"> 
+   <%--The below two settings will place the legend at the top-right corner of the chart--%>
+    <Legend Position="Top" Alignment="Far">
+    </Legend>
+</ej:Chart>
 
-        <ej:Chart ID="Chart1" runat="server">
-
-            <Legend RowCount="2" ColumnCount="3"></Legend>
-
-        </ej:Chart>
-
-
-
-{% endhighlight  %}
+{% endhighlight %}
 
 ![](Legend_images/Legend_img4.png)
 
+## Arrange legend items in the rows and columns
 
+You can arrange the legend items horizontally and vertically by using the **RowCount** and **ColumnCount** options of the legend.
 
-### Legend item style and border customization:
+* When only the RowCount is specified, the legend items are arranged according to the RowCount and number of columns may vary based on the number of legend items.
 
-Essential Chart allows you to customize the legend item size, and border color and width using “ItemStyle” property. Default value of legend item size is (10, 10), and legend item border color is “Transparent”.
+* When only the ColumnCount is specified, the legend items are arranged according to the ColumnCount and number of rows may vary based on the number of legend items.
 
-{% highlight html %}
+* When both the options are specified, then the one which has higher value is given preference. For example, when the RowCount is 4 and ColumnCount is 3, legend items are arranged in 4 rows.
 
+* When both the options are specified and have the same value, the preference is given to the ColumnCount when it is positioned at the top/bottom position. The preference is given to the RowCount when it is positioned at the left/right position.
  
 
-  <ej:Chart ID="Chart1" runat="server">       
+{% highlight html %}
 
-         <Legend Visible="true"  ItemStyle-Width="12" ItemStyle-Height="12" ItemStyle-Border-Color="Magenta" ItemStyle-Border-Width="1.5" />  </ej:Chart>
+<ej:Chart ID="Chart1" runat="server"> 
+   <%--Arrange legend items in 4 rows and approximately 4 columns. Column couldn’t may vary based on number of items.--%>
+    <Legend RowCount="4" ColumnCount="4">
+    </Legend>
+</ej:Chart>
 
+{% endhighlight %}
 
-{% endhighlight  %}
-![](Legend_images/Legend_img5.png) 
+![](Legend_images/Legend_img5.png)
 
+## Customization
 
+### Legend shape
 
-### Legend font
-
-You can customize the legend font family, font style, font weight and size and font styles using “Font” property of Legend. This is illustrated in the following code example.
-
+To change the legend icon shape, you have to specify the shape in the **Shape** property of the legend. When you want the legend icon to display the prototype of the series, you have to set the **SeriesType** as shape.
 
 {% highlight html %}
 
+<ej:Chart ID="Chart1" runat="server"> 
+   <%--Change legend shape--%>
+    <Legend Shape="SeriesType">
+    </Legend>
+</ej:Chart>
 
-        <ej:Chart ID="Chart1" runat="server">
-
-            <Legend>
-
-                <Font FontFamily="SegoeUI" FontSize="15px" FontStyle="Normal" FontWeight="Bold"></Font>
-
-            </Legend>
-
-        </ej:Chart>
-
-
-{% endhighlight  %}
-
+{% endhighlight %}
 
 ![](Legend_images/Legend_img6.png)
 
+### Legend items size and border
 
-
-### Legend opacity and item padding:
-
-Essential Chart allows you to set “Opacity” for Chart legends. And you can define the spacing between the legend items using “ItemPadding” property of legend. Default value of ItemPadding size is 10.
+You can change the size of the legend items by using the *ItemStyle.Width* and *ItemStyle.Height* options. To change the legend item border, use **Border** option of the legend ItemStyle.
 
 {% highlight html %}
 
-
-
-  <ej:Chart ID="Chart1" runat="server">       
-
-           <Legend Visible="true" Opacity="1.5"  ItemPadding="20" /> </ej:Chart
+<ej:Chart ID="Chart1" runat="server"> 
+   
+    <Legend>
+        <%--Change legend items border, height and width--%>
+        <ItemStyle Width="13" Height="13">
+            <Border Width="1" Color="#FF0000" />
+        </ItemStyle>
+    </Legend>
+</ej:Chart>
 
 {% endhighlight %}
 
 ![](Legend_images/Legend_img7.png)
 
+### Legend size
 
+By default, legend takes 20% of the **Height** horizontally when it was placed on the top or bottom position and 20% of the **Width** vertically while placing on the left or right position of the chart. You can change this default legend size by using the **Size** option of the legend.  
 
-### Scrollbar for legends:
-
-Essential Chart allows you to customize the legend Height and Width using Size property. Default value of the Height and Width are null and it varies depending upon the legend position. If the legend is in top or bottom of the chart, default value of Height is 20% of chart height and Width is 100% of chart width. Similarly if it is in the left or right side of the chart, default value of Height is 100% of chart height and Width is 20% of chart width.
-
-This property supports both pixels and percentage values. E.g. 100 or 10%.
-
-Scrollbar is enabled for the legends, when the legend size is greater than the user specified value or than the default value of the legend size. 
 {% highlight html %}
 
-
-<ej:Chart ID="chartcontainer" runat="server">
-
-// ...
-
-       <CommonSeriesOptions Type="Pie"/>
-
-       <Size Height="600" Width="800"/>
-
-       <Legend Visible="True" Type="Circle" ColumnCount="2" >	
-
-            <Size Height="25%" Width="150"/>
-
-       <Legend/>
-
-         // ...
-
-   </ej:Chart>	
+<ej:Chart ID="Chart1" runat="server"> 
+   
+    <Legend>
+        <%--Change legend size--%>
+        <Size Height="100" Width="550" />
+    </Legend>
+</ej:Chart>
 
 {% endhighlight %}
 
-![C:/Users/pongeetha/Pictures/d.jpg](Legend_images/Legend_img8.jpeg)
+![](Legend_images/Legend_img8.png)
 
+### Legend Item Padding
 
-
-### Custom Legend Icons:
-
-You can customize the shape of the legend icon. Normally the available shapes are circle, rectangle, star, wedge, uparrow, downarrow, pentagon, etc. By default, the shape of the legend icon is rectangle, you can modify this by setting Shape property of Legend. If you want series type as icon then set the Shape property value as “SeriesType”. You can customize the height and width of the icon by setting ItemStyle property. 
-
+You can control the spacing between the legend items by using the **ItemPadding** option of the legend.  The default value is 10. 
 
 {% highlight html %}
 
+<ej:Chart ID="Chart1" runat="server"> 
+   <%--Add space between each legend item--%>
+    <Legend ItemPadding="15">
+    </Legend>
+</ej:Chart>
 
-  <ej:Chart ID="Chart1" runat="server">   
+{% endhighlight %}
+
+![](Legend_images/Legend_img9.png)
+
+### Legend border
+
+You can customize the legend border by using the **Border** option in the legend. 
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+   <%--Set border color and width to legend--%>
+    <Legend>
+        <Border Color="#FFC342" Width="2" />
+    </Legend>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Legend_images/Legend_img10.png)
+
+### Scrollbar for legend
+
+You can enable or disable the legend scrollbar by using the **EnableScrollbar** option of the legend. When you disable the scrollbar option, the legend does not consider the default size and chart draws in the reaming space. The default value of EnableScrollbar option is **True**.  
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+   <%--Enable scrollbar option in for legend--%>
+    <Legend EnableScrollbar="true">
+        <Size Width="430" Height="80" />
+    </Legend>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Legend_images/Legend_img11.png)
+
+### Customize the legend text
+
+To customize the legend item text and title you can use the **Legend.Font** and **Legend.Title** options. You can change the legend title alignment by using the TextAlignment option of the legend title.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Legend>
+        <%--Customize the legend item text--%>
+        <Font FontFamily="Segoe UI" FontStyle="Normal" FontWeight="Bold" FontSize="15px"></Font>
+        <Title TextAlignment="Center">
+            <%--Customize the legend title text--%>
+            <Font FontFamily="Segoe UI" FontStyle="Italic" FontWeight="Bold" FontSize="12px"></Font>
+        </Title>
+    </Legend>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Legend_images/Legend_img12.png)
+
+### LegendItems Text Overflow
+
+**Trim**
+
+You can trim the legend item text when its width exceeds the **Legend.TextWidth**, by specifying *TextOverflow* as **Trim**. The original text will be displayed on mouse hover.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--trim the legend text--%>
+    <Legend TextOverflow="Trim" TextWidth="34">
+    </Legend>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Legend_images/Legend_img13.png)
+
+
+**Wrap**
+
+By specifying *TextOverflow* as **Wrap**, you can wrap the legend text by word.
+
+![](Legend_images/Legend_img14.png)
+
+**WrapAndTrim**
+
+You can wrap and trim the legend text by specifying *TextOverflow* as **WrapAndTrim**. The original text will be displayed on mouse hover.
+
+![](Legend_images/Legend_img15.png)
+
+
+## Handle the legend item clicked
+
+You can get the legend item details such as *Index*, *Bounds*, *Shape* and *Series* by subscribing the **LegendItemClick** event on the chart. When the legend item is clicked, it triggers the event and returns the Legend information. 
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server" OnClientLegendItemClick="onlegendclicked"> 
+    <%--trim the legend text--%>
+    <Legend TextOverflow="Trim" TextWidth="34">
+    </Legend>
+</ej:Chart>
+
+{% endhighlight %} 
+     
+{% highlight js %}   
+     
+     function onlegendclicked(sender) {
+        //Get legend item details on legend item click.
+        var legendItem = sender.data;
+      }
+
+{% endhighlight %}
+
+
+## Series selection on legend item click
+
+You can select a specific series or point while clicking on the corresponding legend item through disabling the **ToggleSeriesVisibility** option of the legend. The default value of toggleSeriesVisibility option is **True**. To customize the series selection refer to the series Selection.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Disable series collapsing on legend item clicked--%>
+    <Legend ToggleSeriesVisibility="false">
+    </Legend>
+</ej:Chart>      
+
+{% endhighlight %}
+
+![](Legend_images/Legend_img16.png)
 
 
 
-         <Legend Visible="true" Shape="SeriesType">
+## Collapsing legend item
 
+You can collapse the specific series/point legend item displaying in the chart, by setting the **VisibleOnLegend** as *Hidden* in the point or series.
 
+{% highlight cshtml %}
 
-                 <ItemStyle Height="15" Width="15" />
+        <ej:Chart ID="Chart1" runat="server">
+            <Series>
+                <ej:Series>
+                    <Points>
+                        <ej:Points X="Albania" Y="60.1"></ej:Points>
+                        <%--Collapse the point's legend item in the legend collection--%>
+                        <ej:Points X="New Zealand" Y="82.8" VisibleOnLegend="Hidden"></ej:Points>
+                    </Points>
+                </ej:Series>
+            </Series>            
+        </ej:Chart>
+      
+{% endhighlight %}
 
-
-
-         </Legend>
-
-   </ej:Chart>
-
-{% endhighlight  %}
-
-![C:/Users/pongeetha/Desktop/custom legend ug img.png](Legend_images/Legend_img9.png)
-
-
+![](Legend_images/Legend_img17.png)
 

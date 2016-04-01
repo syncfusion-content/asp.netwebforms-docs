@@ -90,7 +90,7 @@ The value property is the important element in the marker pointer collection whi
 
 <%-- For Linear Gauge rendering-- %>
 
-<ej:LinearGauge runat="server" ID="PointerGauge" width="600" height="150" EnableAnimation="false" Orientation="Horizontal" LabelColor="black" EnableResize="true">
+<ej:LinearGauge runat="server" ID="PointerGauge" width="600" height="150" EnableAnimation="false" Orientation="Horizontal" LabelColor="black" IsResponsive="true">
 
 <%-- Adding Scale Collection-- %>
 
@@ -184,7 +184,7 @@ Appearance
 
 <%-- For Linear Gauge rendering-- %>
 
-<ej:LinearGauge runat="server" ID="PointerGauge" width="600" height="150" EnableAnimation="false" Orientation="Horizontal" LabelColor="black" EnableResize="true">
+<ej:LinearGauge runat="server" ID="PointerGauge" width="600" height="150" EnableAnimation="false" Orientation="Horizontal" LabelColor="black" IsResponsive="true">
 
 <Scales>
 
@@ -273,7 +273,7 @@ Execute the above code to render the following output.
 
 <%-- For Linear Gauge rendering-- %>
 
-<ej:LinearGauge runat="server" ID="PointerGauge" width="600" height="150" EnableAnimation="false" Orientation="Horizontal" LabelColor="black" EnableResize="true">
+<ej:LinearGauge runat="server" ID="PointerGauge" width="600" height="150" EnableAnimation="false" Orientation="Horizontal" LabelColor="black" IsResponsive="true">
 
 <%-- For Adding Scale Collection-- %>
 
@@ -382,7 +382,7 @@ Linear Gauge can contain multiple pointers on it. You can use any combination an
 
 <%-- Render Linear Gauge-- %>
 
-<ej:LinearGauge runat="server" ID="PointerGauge" width="600" height="250" EnableAnimation="false" Orientation="Horizontal" LabelColor="black" EnableResize="true" Themes="FlatLight">
+<ej:LinearGauge runat="server" ID="PointerGauge" width="600" height="250" EnableAnimation="false" Orientation="Horizontal" LabelColor="black" IsResponsive="true" Themes="FlatLight">
 
 <%-- For setting Scale Collection-- %>
 

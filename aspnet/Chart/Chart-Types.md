@@ -7,2111 +7,1945 @@ control: Chart
 documentation: ug
 ---
 
-# Chart Types
-
-Essential ASP.NET Chart control supports more than 20 types of Chart for your business requirements. Each one is highly and easily configurable with built-in support for creating stunning visual effects.
-
-Chart types are specified on each series through the Type property. All the Chart types are required to have at least one x and one y value. Certain Chart types require more than one y value.
-
-You can combine several Chart types in one Chart using the Type property on series to set different Chart types for each series.
-
-{% highlight html %}
-
-
-  <ej:Chart ID="Chart1" runat="server">       
-
-    <Series>
-
-             <ej:Series Name="lineSeries" Type="Line"></ej:Series>
-
-              <ej:Series Name="ColumnSeries" Type="Column"></ej:Series>
-
-
-
-    </Series>
-
-  </ej:Chart>
-
-
-
-{% endhighlight %}
-
-In multiple series case, you can use CommonSeriesOptions property to specify the properties that are common for all series in Chart. 
-{% highlight html %}
-
-
-
-  <ej:Chart ID="Chart1" runat="server">       
-
-   <CommonSeriesOptions EnableAnimation="true" Type="Line" Marker-Shape="Circle"    
-
-             Marker-Visible="true" Marker-Size-Width="12" Marker-Size-Height="12">
-
-
-
-   </CommonSeriesOptions> 
-
- </ej:Chart>
-
-{% endhighlight %}
+# ChartTypes
 
 ## Line Chart
 
-Line Charts join points on a plot using straight lines showing trends in data at equal intervals. Line Charts treats the input as non-numeric, categorical information, equally spaced along the x-axis.
-
-You can configure the appearance of the lines and the points with options Fill used and Width of line.
-
-
-
-![](Chart-Types_images/Chart-Types_img1.png)
-
-
-
-{% highlight html %}
- 
-
-  <ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true">
-
-
-
-           <Series>
-
-             <ej:Series Name="India" Type="Line" Fill="#8CC640">
-
-                    <Points >
-
-                        <ej:Points X="2005" Y="28"/> 
-
-                        <ej:Points X="2006" Y="35"/>  
-
-                        <ej:Points X="2007" Y="32"/>  
-
-                        <ej:Points X="2008" Y="47"/>  
-
-                        <ej:Points X="2009" Y="41"/>
-
-                        <ej:Points X="2010" Y="35"/> 
-
-                        <ej:Points X="2011" Y="37"  />  
-
-                    </Points>
-
-             </ej:Series>                        
-
-         </Series>
-
- </ej:Chart>
-
-{% endhighlight  %}
-
-## StepLine Chart
-
-Step Line Charts use horizontal and vertical lines to connect data points resulting in a step like progression. You can configure the appearance of line using Fill and Width property in series.
-
-
-
-![](Chart-Types_images/Chart-Types_img2.png)
-
-
+To render a Line Chart, set the series **Type** as **Line** in the chart series. To change the line segment color, you can use the **Fill** property of the series.
 
 {% highlight html %}
 
 
-
-  <ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true">
-
-
-
-        <Series>
-
-             <ej:Series Name="India" Type="StepLine">
-
-                    <Points >
-
-                        <ej:Points X="2005" Y="430"/> 
-
-                        <ej:Points X="2006" Y="416"/>  
-
-                        <ej:Points X="2007" Y="404"/>  
-
-                        <ej:Points X="2008" Y="390"/>  
-
-                        <ej:Points X="2009" Y="376"/>
-
-                        <ej:Points X="2010" Y="362"/> 
-
-                        <ej:Points X="2011" Y="351"  />  
-
-                    </Points>
-
-             </ej:Series>
-
-         </Series>
-
- </ej:Chart>
-
-{% endhighlight %}
-
-## Area Chart
-
-Area Chart is rendered using a collection of line segments connected to form a closed-loop area filled with a specified color.You can plot multiple series on the same Chart. You can use Fill in series to customize the series color and the Border to customize the series border color and width.
-
-
-
-![](Chart-Types_images/Chart-Types_img3.png) 
-
-
-{% highlight html %}
-
-
-  <ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true">
-
-
-
-   <Series>
-
-             <ej:Series Name="Product A" Type="Area">
-
-                    <Points >
-
-                        <ej:Points X="1900" Y="2.6"/> 
-
-                        <ej:Points X="1920" Y="2.8"/>  
-
-                        <ej:Points X="1940" Y="2.6"/>  
-
-                        <ej:Points X="1960" Y="3"/>  
-
-                        <ej:Points X="1980" Y="3.6"/>
-
-                        <ej:Points X="2000" Y="3"/> 
-
-
-
-                    </Points>
-
-             </ej:Series>
-
-                   <ej:Series Name="Product B" Type="Area">
-
-                    <Points >
-
-                        <ej:Points X="1900" Y="2.8"/> 
-
-                        <ej:Points X="1920" Y="2.5"/>  
-
-                        <ej:Points X="1940" Y="2.8"/>  
-
-                        <ej:Points X="1960" Y="3.2"/>  
-
-                        <ej:Points X="1980" Y="2.9"/>
-
-                        <ej:Points X="2000" Y="2"/> 
-
-
-
-                    </Points>
-
-             </ej:Series>
-
-     </Series>
-
- </ej:Chart>
-
-{% endhighlight  %}
-
-## Range Area Chart
-
-Range Area Charts are similar to regular area Charts except that, each area is rendered over a range.  Specify the y-axis high and low values for each point for the Range Area Chart. You can customize the series color and border using Fill and Border properties in series.
-
-
-
-![](Chart-Types_images/Chart-Types_img4.png)
-
-
-
-{% highlight html %}
-
-
-
-  <ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true">
-
-
-
-   <Series>
-
-             <ej:Series Name="Product A" Type="RangeArea">
-
-                    <Points >
-
-                        <ej:Points X="1900" High="4" Low ="2"   /> 
-
-                        <ej:Points X="1920" High ="4.5" Low ="2.5"   />  
-
-                        <ej:Points X="1940" High ="5" Low ="3"   />  
-
-                        <ej:Points X="1960" High ="5.3" Low ="3.3"   />  
-
-                        <ej:Points X="1980" High ="5" Low ="3"   />
-
-                        <ej:Points X="2000" High ="4.5" Low ="2.5"   /> 
-
-                        <ej:Points X="2020" High ="4" Low ="2"   /> 
-
-
-
-                    </Points>
-
-             </ej:Series>
-
-                   <ej:Series Name="Product B" Type="RangeArea">
-
-                    <Points >
-
-                        <ej:Points X="1900" High ="2"   Low ="0"   /> 
-
-                        <ej:Points X="1920" High ="2.5" Low ="0.5"   />  
-
-                        <ej:Points X="1940" High ="3"   Low ="1"   />  
-
-                        <ej:Points X="1960" High ="3.3" Low ="1.3"   />  
-
-                        <ej:Points X="1980" High ="3"   Low ="1"   />
-
-                        <ej:Points X="2000" High ="2.5" Low ="0.5"   /> 
-
-                        <ej:Points X="2020" High ="2"   Low ="0"   />                         
-
-                    </Points>
-
-             </ej:Series>
-
-     </Series>
-
- </ej:Chart>
-
-
-
-{% endhighlight  %}
-
-## StepArea Chart
-
-Step Area Charts are similar to regular area Charts except that, instead of a straight line tracing the shortest path between points, the values are connected by continuous vertical and horizontal lines forming a step like progression. You can use the Fill and Border properties in series to customize the series color and border.
-
-
-
-![](Chart-Types_images/Chart-Types_img5.png)
-
-
-{% highlight html %}
-
-
-  <ej:Chart ID="Chart1" runat="server">
-
-
-
-     <Series>
-
-             <ej:Series Name="India" Type="StepArea">
-
-                    <Points >
-
-                        <ej:Points X="2000" Y="416"/> 
-
-                        <ej:Points X="2001" Y="490"/> 
-
-                        <ej:Points X="2002" Y="470"/> 
-
-                        <ej:Points X="2003" Y="500"/> 
-
-                        <ej:Points X="2004" Y="449"/> 
-
-                        <ej:Points X="2005" Y="470"/> 
-
-                        <ej:Points X="2006" Y="416"/>  
-
-                        <ej:Points X="2007" Y="404"/>  
-
-                        <ej:Points X="2008" Y="390"/>  
-
-                        <ej:Points X="2009" Y="376"/>
-
-                        <ej:Points X="2010" Y="520"/> 
-
-                        <ej:Points X="2011" Y="509"  />  
-
-                    </Points>
-
-             </ej:Series>
-
-     </Series>
-
- </ej:Chart>
-{% endhighlight  %}
-
-
-## SplineArea Chart
-
-Spline Area Chart is similar to an Area Chart except the difference in the way the points of a series are connected. It connects each series of points by a smooth spline curve. You can plot multiple series on the same Chart. To customize the series color and border, use the Fill and Border properties in series.
-
-
-
-![](Chart-Types_images/Chart-Types_img6.png)
-
-
-{% highlight html %}
-
-
-  <ej:Chart ID="Chart1" runat="server" >
-
-
-
-  <Series>
-
-             <ej:Series Name="India" Type="SplineArea">
-
-                    <Points >
-
-
-
-                        <ej:Points X="2002" Y="2.2"/> 
-
-                        <ej:Points X="2003" Y="3.4"/> 
-
-                        <ej:Points X="2004" Y="2.8"/> 
-
-                        <ej:Points X="2005" Y="1.6"/> 
-
-                        <ej:Points X="2006" Y="2.3"/>  
-
-                        <ej:Points X="2007" Y="2.5"/>  
-
-                        <ej:Points X="2008" Y="2.9"/>  
-
-                        <ej:Points X="2009" Y="3.8"/>
-
-                        <ej:Points X="2010" Y="1.4"/> 
-
-                        <ej:Points X="2011" Y="3.1"  />  
-
-                    </Points>
-
-             </ej:Series>
-
-                    <ej:Series Name="India" Type="SplineArea">
-
-                    <Points >
-
-
-
-                        <ej:Points X="2002" Y="0.8"/> 
-
-                        <ej:Points X="2003" Y="1.3"/> 
-
-                        <ej:Points X="2004" Y="1.1"/> 
-
-                        <ej:Points X="2005" Y="1"/> 
-
-                        <ej:Points X="2006" Y="1.2"/>  
-
-                        <ej:Points X="2007" Y="1.7"/>  
-
-                        <ej:Points X="2008" Y="2.3"/>  
-
-                        <ej:Points X="2009" Y="2.7"/>
-
-                        <ej:Points X="2010" Y="1.1"/> 
-
-                        <ej:Points X="2011" Y="2.3"  />  
-
-                    </Points>
-
-             </ej:Series>
-
-     </Series>
-
- </ej:Chart>
-
-
-{% endhighlight %}
-
-## StackingArea Chart
-
-Stacking Area Charts are similar to regular area Charts except that the Y values stack on top of each other in the specified series order. This enables you to visualize the relationship of parts to the whole. You can customize the series color and border using Fill and Border properties in series.
-
-
-
-![](Chart-Types_images/Chart-Types_img7.png) 
-
-
-{% highlight html %}
-
-
-  <ej:Chart ID="Chart1" runat="server">
-
-
-
-   <Series>
-
-         <ej:Series Name="India" Type="StackingArea">
-
-                    <Points >
-
-
-
-                        <ej:Points X="2002" Y="6"/> 
-
-                        <ej:Points X="2003" Y="7.5"/> 
-
-                        <ej:Points X="2004" Y="6"/> 
-
-                        <ej:Points X="2005" Y="6.5"/> 
-
-                        <ej:Points X="2006" Y="7.4"/>  
-
-                        <ej:Points X="2007" Y="7.9"/>  
-
-                        <ej:Points X="2008" Y="7.5"/>  
-
-                        <ej:Points X="2009" Y="8.8"/>
-
-                        <ej:Points X="2010" Y="4.8"/> 
-
-                        <ej:Points X="2011" Y="9.3"  />  
-
-                    </Points>
-
-             </ej:Series>
-
-        <ej:Series Name="India" Type="StackingArea">
-
-                    <Points >
-
-
-
-                        <ej:Points X="2002" Y="3.5"/> 
-
-                        <ej:Points X="2003" Y="4.9"/> 
-
-                        <ej:Points X="2004" Y="3.7"/> 
-
-                        <ej:Points X="2005" Y="7.5"/> 
-
-                        <ej:Points X="2006" Y="4.8"/>  
-
-                        <ej:Points X="2007" Y="2.6"/>  
-
-                        <ej:Points X="2008" Y="4.7"/>  
-
-                        <ej:Points X="2009" Y="3.7"/>
-
-                        <ej:Points X="2010" Y="3.5"/> 
-
-                        <ej:Points X="2011" Y="3.6"  />  
-
-                    </Points>
-
-             </ej:Series>
-
-     </Series>
-
- </ej:Chart>
-
-{% endhighlight %}
-
-## 100% Stacking area chart  
-
-100% Stacking area is similar to the stacking area chart. But here, the series display multiple data series as stacked areas and the cumulative portion of each stacked element is summed to 100%. 
-
-{% highlight html %}
-
-
-
-<ej:Chart ID="Chart1" runat="server" >   
-
-      <ej:Series Type="StackingArea100">
-
-          <Points > 
-
-              <ej:Points X=”2006” Y="34"/>
-
-              <ej:Points X="2007" Y="20"/> 
-
-              <ej:Points X="2008" Y="40"/> 
-
-              <ej:Points X="2009" Y="51"/> 
-
-              <ej:Points X="2010" Y="26"/>
-
-              <ej:Points X="2011" Y="37"/>
-
-              <ej:Points X="2012" Y="54"/>
-
-              <ej:Points X="2013" Y="44"/>
-
-              <ej:Points X="2014" Y="48"/>  
-
-          </Points>
-
-      </ej:Series>
-
-      <ej:Series Type="StackingArea100">
-
-          <Points > 
-
-              <ej:Points X=”2006” Y="51"/>
-
-              <ej:Points X="2007" Y="26"/> 
-
-              <ej:Points X="2008" Y="37"/> 
-
-              <ej:Points X="2009" Y="51"/> 
-
-              <ej:Points X="2010" Y="26"/>
-
-              <ej:Points X="2011" Y="37"/>
-
-              <ej:Points X="2012" Y="43"/>
-
-              <ej:Points X="2013" Y="23"/>
-
-              <ej:Points X="2014" Y="55"/>  
-
-          </Points>
-
-       </ej:Series>
-
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Change type and color of the series.--%>
+    <Series>
+        <ej:Series Type="Line" Fill="#E94649"></ej:Series>
+    </Series>
 </ej:Chart>
 
 {% endhighlight %}
 
-The following screenshot displays the 100% Stacking area chart.
-
-![C:/Users/Giftline/Desktop/a.png](Chart-Types_images/Chart-Types_img8.png)
+![](Chart-Types_images/Chart-Types_img1.png)
 
 
-
-## Column Chart
-
-Column Charts are among the most common Chart types that are used. It uses vertical bars (columns) to display different values of one or more items. It is similar to a bar Chart except that the bars are vertical and not horizontal as in bar Chart. Points from adjacent series are drawn as bars next to each other. You can customize the series color and border using Fill and Border properties in series and each segment of series using Fill and Border properties in point.
+[Click](http://asp.syncfusion.com/demos/web/chart/defaultfunctionalities.aspx) here to view the Line Chart online demo sample.
 
 
+### Change the line width
 
-![](Chart-Types_images/Chart-Types_img9.png) 
-
+To change the width of the line segment, you can use the **Width** property in the series.
 
 {% highlight html %}
- 
 
-<ej:Chart ID="Chart1" runat="server">
-
-           <Series>
-
-             <ej:Series Type="Column">
-
-                   <Points>
-
-                        <ej:Points  X="USA" Y="50"/>
-
-                        <ej:Points  X="China" Y="40"/>
-
-                        <ej:Points  X="Japan" Y="70"/>
-
-                        <ej:Points  X="Australia" Y="60"/>
-
-                        <ej:Points  X="France" Y="50"/>
-
-                        <ej:Points  X="Germany" Y="40"/>
-
-                        <ej:Points  X="Italy" Y="40"/>
-
-                        <ej:Points  X="Sweden" Y="30"/>
-
-                    </Points>
-
-             </ej:Series>
-
-                <ej:Series Type="Column">
-
-                   <Points>
-
-                        <ej:Points  X="USA" Y="70"/>
-
-                        <ej:Points  X="China" Y="60"/>
-
-                        <ej:Points  X="Japan" Y="40"/>
-
-                        <ej:Points  X="Australia" Y="36"/>
-
-                        <ej:Points  X="France" Y="25"/>
-
-                        <ej:Points  X="Germany" Y="30"/>
-
-                        <ej:Points  X="Italy" Y="35"/>
-
-                        <ej:Points  X="Sweden" Y="30"/>
-
-                    </Points>
-
-             </ej:Series>             
-
-         </Series>
-
-      </ej:Chart>
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Change the width of line series--%>
+    <Series>
+        <ej:Series Width="3"></ej:Series>
+    </Series>
+</ej:Chart>
 
 {% endhighlight %}
 
-## RangeColumn Chart
+![](Chart-Types_images/Chart-Types_img2.png)
 
-RangeColumn Chart is similar to the Column Chart except that each column is rendered over a range. Specify the y-axis Starting and Ending values for each point for the RangeColumn Chart. You can customize the series color and border using Fill and Border properties in series and each segment of series using Fill and Border properties in point.
 
+### Dashed lines
+
+To render the line series with dotted lines, you can use the **DashArray** option of the series.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Change dash array to display dotted or dashed lines--%>
+    <Series>
+        <ej:Series DashArray="5,5"></ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img3.png)
+
+
+### Changing the line cap
+
+For customizing the start and end caps of the line segment, you can use the **LineCap** property.  
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Change line cap--%>
+    <Series>
+        <ej:Series LineCap="Square"></ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img4.png)
+
+
+### Changing the line join
+
+You can use the **LineJoin** property to specify how two intersecting line segments should be joined.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Change line join--%>
+    <Series>
+        <ej:Series LineJoin="Round"></ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+
+![](Chart-Types_images/Chart-Types_img5.png)
+
+### MultiColor Line
+
+You can change the color of the line segments by using the **Fill** property of the each Points in the series.
+
+{% highlight html %}
+
+
+       $("#chartcontainer").ejChart({
+            //   ...
+            series: [{
+               //  Change the color of a line 
+                points:[{ fill: 'red' },
+                       //  ...         
+                ],
+               //  ...         
+            }],
+            
+            //    ...
+
+        });
+
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img81.png)
+
+[Click](http://asp.syncfusion.com/demos/web/chart/multicolor.aspx) here to view the MultiColor Line Chart online demo sample.
+
+ 
+## Step Line Chart
+
+To render a Step Line Chart, set the series Type as **StepLine"** in the chart series. To change the StepLine segment color, you can use the Fill property of the series.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Change type and color of the series.--%>
+    <Series>
+        <ej:Series Type="StepLine" Fill="#E94649"></ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img6.png)
+
+[Click](http://asp.syncfusion.com/demos/web/chart/stepline.aspx) here to view the Step Line Chart online demo sample.
+
+
+### Changing the line width
+
+To change the line width, you can use the **Width** property.  
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Change the width of step line series--%>
+    <Series>
+        <ej:Series Width="3"></ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img7.png)
+
+
+### Dashed lines
+
+To render the step line series with dotted lines, you can use the DashArray option of the series.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Change dash array to display dotted or dashed lines--%>
+    <Series>
+        <ej:Series DashArray="5,5"></ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img8.png)
+
+
+### Changing the line cap
+
+For customizing the start and end caps of the line segment, you can use the LineCap property.  
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Change line cap--%>
+    <Series>
+        <ej:Series LineCap="Square"></ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img9.png)
+
+
+### Changing the line join
+
+You can use the LineJoin property to specify how two intersecting line segments should be joined.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Change line join--%>
+    <Series>
+        <ej:Series LineJoin="Round"></ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
 
 
 ![](Chart-Types_images/Chart-Types_img10.png)
 
 
+## Area Chart
+
+To render an Area chart, you can specify the series Type as **Area** in the chart series. To change the Area color, you can use the Fill property of the series.
+
 {% highlight html %}
- 
 
-<ej:Chart ID="Chart1" runat="server">
-
-        <Series>
-
-             <ej:Series Name="India" Type="RangeColumn">
-
-                    <Points >                 
-
-                        <ej:Points X="Jan" Low="0.7" High="6.1"/> 
-
-                        <ej:Points X="Feb" Low="1.3" High="6.3"/> 
-
-                        <ej:Points X="Mar" Low="1.9" High="8.5"/> 
-
-                        <ej:Points X="Apr" Low="3.1" High="10.8"/> 
-
-                        <ej:Points X="May" Low="5.7" High="14.4"/> 
-
-                    </Points>
-
-             </ej:Series>
-
-                    <ej:Series Name="India" Type="RangeColumn">
-
-                    <Points >
-
-                        <ej:Points X="Jan" Low="1.7" High="7.1"/> 
-
-                        <ej:Points X="Feb" Low="1.9" High="7.3"/> 
-
-                        <ej:Points X="Mar" Low="1.2" High="7.5"/> 
-
-                        <ej:Points X="Apr" Low="2.5" High="9.8"/> 
-
-                        <ej:Points X="May" Low="4.7" High="11.4"/>   
-
-                    </Points>
-
-             </ej:Series>
-
-     </Series>     
-
- </ej:Chart>
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Change type and color of the series--%>
+    <Series>
+        <ej:Series Type="Area" Fill="#69D2E7"></ej:Series>
+    </Series>
+</ej:Chart>
 
 {% endhighlight %}
-
-## StackingColumn Chart
-
-Stacking Column Charts are similar to regular column Charts except that the Y values stack on top of each other in the specified series order. This enables you to visualize the relationship of parts to the whole.You can customize the series color and border using Fill and Border properties in series and each segment of series using Fill and Border properties in point.
-
-
 
 ![](Chart-Types_images/Chart-Types_img11.png)
 
 
-{% highlight html %}
+[Click](http://asp.syncfusion.com/demos/web/chart/area.aspx) here to view the Area Chart online demo.
 
 
-<ej:Chart ID="Chart1" runat="server">
+## Range Area Chart
 
-   <Series>
+To render a Range Area Chart, set the Type as **RrangeArea** in the chart series. To change the RangeArea color, you can use the Fill property of the series.
 
-       <ej:Series Type="StackingColumn">
+Since the RangeArea series requires two y values for a point, you have to add the *High* and *Low* value. High and Low value specifies the maximum and minimum range of the points.
 
-                    <Points >                 
+* When you are using the Points option, specify the high and low values by using the High and Low option of the point.
 
-                        <ej:Points X="Jan" Y="900"/> 
-
-                        <ej:Points X="Feb" Y="820"/> 
-
-                        <ej:Points X="Mar" Y="880"/> 
-
-                        <ej:Points X="Apr" Y="725"/> 
-
-                        <ej:Points X="May" Y="760"/>                          
-
-                    </Points>
-
-             </ej:Series>
-
-         <ej:Series Type="StackingColumn">
-
-                     <Points >                 
-
-                        <ej:Points X="Jan" Y="190"/> 
-
-                        <ej:Points X="Feb" Y="226"/> 
-
-                        <ej:Points X="Mar" Y="200"/> 
-
-                        <ej:Points X="Apr" Y="250"/> 
-
-                        <ej:Points X="May" Y="222"/>                          
-
-                    </Points>
-
-                </ej:Series>
-
-             <ej:Series Type="StackingColumn">
-
-                     <Points >                 
-
-                        <ej:Points X="Jan" Y="250"/> 
-
-                        <ej:Points X="Feb" Y="145"/> 
-
-                        <ej:Points X="Mar" Y="190"/> 
-
-                        <ej:Points X="Apr" Y="220"/> 
-
-                        <ej:Points X="May" Y="225"/>                          
-
-                    </Points>
-
-                </ej:Series>
-
-     </Series>
-
- </ej:Chart>
-
-{% endhighlight  %}
-
-## 100% Stacking column chart 
-
-100% Stacking column is similar to the stacking column charts. But here, the combined contribution of Y values is the combined total of the vertical column with 100 percent.
+* When you are using the DataSource option to assign the data, map the fields from the dataSource that contain High and Low values by using the Series.High and Series.Low options. 
 
 {% highlight html %}
 
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Change type and color of the series--%>
+    <Series>
+        <ej:Series Type="RangeArea" Fill="Indigo">
+            <Points>
+                <%--Use High and Low values instead of Y--%>
+                <ej:Points X="1935" High="80" Low="70"></ej:Points>
+                <%--...--%>
+            </Points>
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img12.png)
+
+[Click](http://asp.syncfusion.com/demos/web/chart/rangearea.aspx) here to view Range Area Chart online demo.
 
 
-<ej:Chart ID="Chart1" runat="server" >   
+## Step Area Chart
 
-      <ej:Series Type="StackingColumn100">
+To render a Step Area Chart, set the Type as **StepArea** in the chart series. To change the StepArea color, you can use the Fill property of the series.
 
-          <Points > 
+{% highlight js %}
 
-              <ej:Points X="2006" Y="900"/>
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Change type and color of the series--%>
+    <Series>
+        <ej:Series Type="StepArea" Fill="#69D2E7">
+        </ej:Series>
+    </Series>
+</ej:Chart>
 
-              <ej:Points X="2007" Y="544"/> 
+{% endhighlight %}
 
-              <ej:Points X="2008" Y="880"/> 
+![](Chart-Types_images/Chart-Types_img13.png)
 
-              <ej:Points X="2009" Y="725"/> 
 
-              <ej:Points X="2010" Y="765"/>
+[Click](http://asp.syncfusion.com/demos/web/chart/steparea.aspx) here to view Step Area Chart online demo.
 
-              <ej:Points X="2011" Y="679"/>
 
-              <ej:Points X="2012" Y="770"/>
+## Spline Area Chart
 
-          </Points>
+To render a Spline Area Chart, set the Type as **SplineArea** in the chart series. To change the SplineArea color, you can use the Fill property of the series.
 
-      </ej:Series>
+{% highlight html %}
 
-      <ej:Series Type="StackingColumn100">
-
-          <Points > 
-
-              <ej:Points X="2006" Y="190"/>               
-
-              <ej:Points X="2007" Y="226"/> 
-
-              <ej:Points X="2008" Y="194"/> 
-
-              <ej:Points X="2009" Y="545"/> 
-
-              <ej:Points X="2010" Y="222"/>
-
-              <ej:Points X="2011" Y="181"/>
-
-              <ej:Points X="2012" Y="128"/>
-
-          </Points>
-
-       </ej:Series>
-
+ 
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Change type and color of the series--%>
+    <Series>
+        <ej:Series Type="SplineArea" Fill="#C4C24A">
+        </ej:Series>
+    </Series>
 </ej:Chart>
 
 
-{% endhighlight  %}
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img14.png)
+
+[Click](http://asp.syncfusion.com/demos/web/chart/splinearea.aspx) here to view Spline Area Chart online demo.
 
 
-The following screenshot displays the 100% Stacking column chat.
+## Stacked Area Chart
 
-![C:/Users/Giftline/Desktop/a.png](Chart-Types_images/Chart-Types_img12.png)
-
-
-
-## Bar Chart
-
-Bar Chart is the simplest and most versatile of statistical diagrams. It displays horizontal bars for each point in the series and points from adjacent series are drawn as bars next to each other. Bar Charts are used to compare values across categories, to display variations in the value of an item over time or to display the values of several items at a single point in time.You can customize the series color and border using Fill and Border properties in series and each segment of series using Fill and Border properties in point.
-
-
-
-![](Chart-Types_images/Chart-Types_img13.png) 
-
+To render a Stacked Area Chart, set the Type as **StackingArea** in the chart series. To change the StackingArea color, you can use the Fill property of the series.
 
 {% highlight html %}
 
-
-<ej:Chart ID="Chart1" runat="server">
-
-
-
-         <Series>
-
-             <ej:Series Type="Bar">
-
-                    <Points >
-
-
-
-                        <ej:Points X="2006" Y="7.8"/>  
-
-                        <ej:Points X="2007" Y="7.2"/>  
-
-                        <ej:Points X="2008" Y="6.8"/>  
-
-                        <ej:Points X="2009" Y="10.7"/>
-
-                        <ej:Points X="2010" Y="10.8"/> 
-
-                        <ej:Points X="2011" Y="9.8"  />  
-
-                    </Points>
-
-             </ej:Series>
-
-               <ej:Series Type="Bar">
-
-                    <Points >
-
-
-
-                        <ej:Points X="2006" Y="4.8"/>  
-
-                        <ej:Points X="2007" Y="4.6"/>  
-
-                        <ej:Points X="2008" Y="7.2"/>  
-
-                        <ej:Points X="2009" Y="9.3"/>
-
-                        <ej:Points X="2010" Y="9.7"/> 
-
-                        <ej:Points X="2011" Y="9"  />  
-
-                    </Points>
-
-             </ej:Series>
-
-     </Series>
-
- </ej:Chart>
-
-{% endhighlight  %}
-
-## Stacking bar Chart
-
-Stacking Bar Charts are similar to regular bar Charts except that the Y values stack on top of each other in the specified series order. This enables you to visualize the relationship of parts to the whole. You can customize the series color and border using Fill and Border properties in series and each segment of series using Fill and Border properties in point.
-
-
-
-![](Chart-Types_images/Chart-Types_img14.png) 
-
-
-
-{% highlight html %}
-
-
-
-<ej:Chart ID="Chart1" runat="server">
-
-<Series>
-
-             <ej:Series Type="StackingBar">
-
-                    <Points >                         
-
-                        <ej:Points X="Jan" Y="6"/>  
-
-                        <ej:Points X="Feb" Y="8"/>  
-
-                        <ej:Points X="Mar" Y="12"/>  
-
-                        <ej:Points X="Apr" Y="15.5"/>
-
-                        <ej:Points X="May" Y="20"/> 
-
-                        <ej:Points X="Jun" Y="24"  />  
-
-                        <ej:Points X="Jul" Y="28"  />  
-
-                    </Points>
-
-             </ej:Series>
-
-               <ej:Series Type="StackingBar">
-
-                    <Points >
-
-                        <ej:Points X="Jan" Y="-1"/>  
-
-                        <ej:Points X="Feb" Y="-1.5"/>  
-
-                        <ej:Points X="Mar" Y="-2"/>  
-
-                        <ej:Points X="Apr" Y="-2.5"/>
-
-                        <ej:Points X="May" Y="-3"/> 
-
-                        <ej:Points X="Jun" Y="-3.5"  />  
-
-                        <ej:Points X="Jul" Y="-4"  />  
-
-                    </Points>
-
-             </ej:Series>
-
-       </Series>
-
- </ej:Chart>
-
-{% endhighlight  %}
-
-## 100% Stacking bar chart 
-
-
-
-100% Stacking bar is similar to stacking bar charts. Here, the combined contribution of Y values is the combined total of the horizontal bar with 100 percent.
-{% highlight html %}
-
-
-<ej:Chart ID="Chart1" runat="server" >   
-
-      <ej:Series Type="StackingBar100">
-
-          <Points > 
-
-              <ej:Points X="2007" Y="453"/> 
-
-              <ej:Points X="2008" Y="354"/> 
-
-              <ej:Points X="2009" Y="282"/> 
-
-              <ej:Points X="2010" Y="321"/>
-
-              <ej:Points X="2011" Y="333"/>
-
-              <ej:Points X="2012" Y="351"/>
-
-              <ej:Points X="2013" Y="403"/>
-
-              <ej:Points X="2014" Y="421"/>  
-
-          </Points>
-
-      </ej:Series>
-
-      <ej:Series Type="StackingBar100">
-
-          <Points >               
-
-              <ej:Points X="2007" Y="876"/> 
-
-              <ej:Points X="2008" Y="564"/> 
-
-              <ej:Points X="2009" Y="242"/> 
-
-              <ej:Points X="2010" Y="121"/>
-
-              <ej:Points X="2011" Y="343"/>
-
-              <ej:Points X="2012" Y="451"/>
-
-              <ej:Points X="2013" Y="203"/>
-
-              <ej:Points X="2014" Y="431"/>  
-
-          </Points>
-
-       </ej:Series>
-
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Change type and color of the series--%>
+    <Series>
+        <ej:Series Type="StackingArea" Fill="#69D2E7">
+        </ej:Series>
+    </Series>
 </ej:Chart>
 
+{% endhighlight %}
 
-{% endhighlight  %}
-The following screenshot displays the 100% Stacking bar chart.
-
-![C:/Users/Giftline/Desktop/a.png](Chart-Types_images/Chart-Types_img15.png)
+![](Chart-Types_images/Chart-Types_img15.png)
 
 
-
-## Spline Chart
-
-Spline Chart is similar to a Line Chart except that it connects the different data points using splines instead of straight lines. You can configure the appearance of the lines and the points with options Fill used and the Width of lines.
+[Click](http://asp.syncfusion.com/demos/web/chart/stackingarea.aspx) here to view Stacked Area Chart online demo.
 
 
+## 100% Stacked Area Chart  
+
+To render a 100% Stacked Area Chart, set the Type as **StackingArea100** in the chart series. To change the StackingArea100 color, you can use the Fill property of the series.   
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Change type and color of the series--%>
+    <Series>
+        <ej:Series Type="StackingArea100" Fill="#C4C24A">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
 
 ![](Chart-Types_images/Chart-Types_img16.png)
 
 
+[Click](http://asp.syncfusion.com/demos/web/chart/stackingarea100.aspx) here to view 100% Stacked Area Chart online demo.
+
+
+## Column Chart
+
+To render a Column Chart, set the Type as **Column** in the chart series. To change the color of the column series, you can use the Fill property.  
 
 {% highlight html %}
 
-
-
-<ej:Chart ID="Chart1" runat="server">
-
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Change type and color of the series--%>
     <Series>
-
-             <ej:Series Type="Spline">
-
-                    <Points >                         
-
-                        <ej:Points X="Jan" Y="-1"/>  
-
-                        <ej:Points X="Feb" Y="2"/>  
-
-                        <ej:Points X="Mar" Y="2"/>  
-
-                        <ej:Points X="Apr" Y="8"/>
-
-                        <ej:Points X="May" Y="6"/> 
-
-                        <ej:Points X="Jun" Y="18"  />  
-
-                        <ej:Points X="Jul" Y="11"  />  
-
-                    </Points>
-
-             </ej:Series>
-
-               <ej:Series Type="Spline">
-
-                    <Points >
-
-                        <ej:Points X="Jan" Y="3"/>  
-
-                        <ej:Points X="Feb" Y="7"/>  
-
-                        <ej:Points X="Mar" Y="5.5"/>  
-
-                        <ej:Points X="Apr" Y="5.5"/>
-
-                        <ej:Points X="May" Y="3.5"/> 
-
-                        <ej:Points X="Jun" Y="13.5"  />  
-
-                        <ej:Points X="Jul" Y="16"  />  
-
-                    </Points>
-
-             </ej:Series>
-
-     </Series>
-
- </ej:Chart>
-
-
-{% endhighlight %}
-## Pie Chart
-
-A Pie Chart renders y values as slices in a pie. The slices are rendered in proportion to the whole that is the sum of all the y values in the series. Consequently, Pie Charts are used to visualize the proportional contribution in terms of percentage or fraction of categories of data to the whole data set. The x values in the data series are treated only as nominal in categorical, qualitative data. The Pie Chart displays only one Data Series at a time. You can customize the series color and border using Fill and Border properties in series and each slice of series using Fill and Border properties in point.
-
-
-
-![](Chart-Types_images/Chart-Types_img17.png) 
-
-{% highlight html %}
-
-
-
-<ej:Chart ID="Chart1" runat="server">
-
-   <Series>
-
-         <ej:Series Type="Pie" LabelPosition="Outside" ExplodeIndex="2" Explode="true"> 
-
-          <Marker>
-
-                 <DataLabel Visible="true" ConnectorType="Line"></DataLabel>
-
-          </Marker>
-
-
-
-              <Points >                         
-
-                        <ej:Points X="Labour" Y="28" Text="Labour 28%"/>  
-
-                        <ej:Points X="Legal" Y="10" Text="Legal, 10%"/>  
-
-                        <ej:Points X="Production" Y="20" Text="Production, 20%"/>  
-
-                        <ej:Points X="License" Y="15" Text="License, 15%"/>
-
-                        <ej:Points X="Facilities" Y="23" Text="Facilites, 23%"/> 
-
-                        <ej:Points X="Taxes" Y="17" Text="Taxes, 17%"  />  
-
-                        <ej:Points X="Insurance" Y="12" Text="Insurance, 12%" />  
-
-                    </Points>
-
-             </ej:Series>
-
-
-
-     </Series>
-
- </ej:Chart>
+        <ej:Series Type="Column" Fill="#E94649">
+        </ej:Series>
+    </Series>
+</ej:Chart>
 
 {% endhighlight %}
 
-## Doughnut Chart
-
-Doughnut Charts are pie Charts with a hole, whose value is specified as the doughnut coefficient. The Doughnut Chart is best suited for presenting data in proportions. You can customize the series color and border using Fill and Border properties in series and each slice of series using Fill and Border properties in point.
+![](Chart-Types_images/Chart-Types_img17.png)
 
 
+[Click](http://asp.syncfusion.com/demos/web/chart/column.aspx) here to view Column Chart demo.
 
-![](Chart-Types_images/Chart-Types_img18.png) 
 
+### Change a point color
+
+You can change the color of a column by using the Fill property of the point.
 
 {% highlight html %}
- 
 
-<ej:Chart ID="Chart1" runat="server">
-
-   <Series> 
-
-     <ej:Series Type="Doughnut" Name="NewYork" DoughnutCoefficient="0.4"  LabelPosition="Outside"  
-
-              ExplodeIndex="2" Explode="true">
-
-          <Marker>
-
-                 <DataLabel Visible="true" ConnectorType="Line"></DataLabel>
-
-          </Marker>
-
-         <Points >                         
-
-                        <ej:Points X="Labour" Y="28" Text="Labour 28%"/>  
-
-                        <ej:Points X="Legal" Y="10" Text="Legal, 10%"/>  
-
-                        <ej:Points X="Production" Y="20" Text="Production, 20%"/>  
-
-                        <ej:Points X="License" Y="15" Text="License, 15%"/>
-
-                        <ej:Points X="Facilities" Y="23" Text="Facilites, 23%"/> 
-
-                        <ej:Points X="Taxes" Y="17" Text="Taxes, 17%"  />  
-
-                        <ej:Points X="Insurance" Y="12" Text="Insurance, 12%" />  
-
-               </Points>
-
-             </ej:Series>              
-
-     </Series>
-
- </ej:Chart>
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <ej:Series>
+            <Points>
+                <ej:Points Fill="skyblue"></ej:Points>
+            </Points>
+        </ej:Series>
+    </Series>
+</ej:Chart>
 
 {% endhighlight %}
 
-## Semi Pie and Doughnut Chart
-
-The semi pie and doughnut chart is a semicircular chart. Data are represented in different sectors within a semi-circle.
-
-Essential Chart allows you to create semi pie and doughnut chart using StartAngle and EndAngle property. Default values of StartAngle and EndAngle are null. The specified data are represented within start angle to end angle degree.
+![](Chart-Types_images/Chart-Types_img18.png)
 
 
+## RangeColumn Chart
 
+To render a Range Column Chart, set the Type as **RangeColumn** in the chart series. To change the RangeColumn color, use the Fill property of the series.
+
+Since, the RangeColumn series requires two y values for a point, add the High and Low value. High and Low value specifies the maximum and minimum range of the points.
+
+* When you are using the Points option, specify the high and low values by using the High and Low option of the point.
+
+* When you are using the DataSource option to assign the data, you have to map the fields from the dataSource that contains high and low values by using the Series.High and Series.Low) options.  
 
 {% highlight html %}
 
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Change type and color of the series--%>
+    <Series>
+        <ej:Series Type="RangeColumn" Fill="#E94649">
+            <Points>
+                <%--Use high and low values instead of y--%>
+                <ej:Points High="6.1" Low="0.7"></ej:Points>
+            </Points>
+        </ej:Series>
+    </Series>
+</ej:Chart>
 
-<ej:Chart ID="Chart1" runat="server">
+{% endhighlight %}
 
-   <Series>
+![](Chart-Types_images/Chart-Types_img19.png)
 
-         <ej:Series Type="Doughnut" LabelPosition="Outside" Name="Agricultural Land" StartAngle="-90" EndAngle="90" > 
-
-          <Border Color="Black" Width="1"/>
-
-
-
-              <Points >                         
-
-                  <ej:Points X="Australia" Y="53.3" Text="Australia 53.3"/>  
-
-                  <ej:Points X="China" Y="55.7" Text="China 55.7"/>  
-
-                  <ej:Points X="India" Y="60.5" Text="India 60.5"/>  
-
-                  <ej:Points X="Japan" Y="12.5" Text="Japan 12.5"/>
-
-                  <ej:Points X="South Africa" Y="79.4" Text="South Africa 79.4"/> 
-
-                  <ej:Points X="United Kingdom" Y="70.9" Text="United Kingdom 70.9"/>  
-
-                  <ej:Points X="United States" Y="45.0" Text="United States 45.0" />  
-
-              </Points>
-
-             </ej:Series>
+[Click](http://asp.syncfusion.com/demos/web/chart/rangecolumn.aspx) here to view Range Column Chart online demo.
 
 
+### Change a point color 
 
-     </Series>
+To change the color of a range column, you can use the Fill property of point. 
 
- </ej:Chart>
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <ej:Series>
+            <Points>
+                <%--change a point color of Range column--%>
+                <ej:Points Fill="skyblue"></ej:Points>
+            </Points>
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img20.png)
 
 
-{% endhighlight  %}
-![C:/Users/balachandar/Desktop/semi doughnut.JPG](Chart-Types_images/Chart-Types_img19.jpeg)
+## Stacked Column Chart
 
+To render a Stacked Column Chart, set the Type as **StackingColumn** in the chart series. To change the StackingColumn color, you can use the Fill property of the series.
 
+{% highlight html %}
 
-![C:/Users/balachandar/Desktop/semi pie.JPG](Chart-Types_images/Chart-Types_img20.jpeg) 
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Change type and color of the series--%>
+    <Series>
+        <ej:Series Type="StackingColumn" Fill="#E94649">
+        </ej:Series>
+    </Series>
+</ej:Chart>
 
-
-
-## Pyramid Chart
-
-The Pyramid Chart type displays the data that when totaled renders 100%. This type of Chart is a single series Chart representing the data as portions of 100%, and this Chart does not use any axes. You can customize the series color and border using Fill and Border properties in series and each slice of series using Fill and Border properties in point.
-
-
+{% endhighlight %}
 
 ![](Chart-Types_images/Chart-Types_img21.png)
 
+[Click](http://asp.syncfusion.com/demos/web/chart/stackingcolumn.aspx) here to view Stacked Column Chart online demo.
+
+
+### Group stacked columns
+
+You can use the **StackingGroup** property to group the stacked columns. Columns with same group name are stacked on top of each other.
 
 {% highlight html %}
-
 
 <ej:Chart ID="Chart1" runat="server">
+    <Series>
+        <%--For grouping stacked columns--%>
+        <ej:Series StackingGroup="GroupOne">
+        </ej:Series>
+        <%--For grouping stacked columns--%>
+        <ej:Series StackingGroup="GroupOne">
+        </ej:Series>
+    </Series>
+</ej:Chart>
 
-   <Series>
+{% endhighlight %}
 
-    <ej:Series Type="Pyramid" Name="NewYork" LabelPosition="Outside">
-
-                 <Marker>
-
-                     <DataLabel Visible="true" Shape="Rectangle" ConnectorType="Line"></DataLabel>
-
-                 </Marker>
-
-                    <Points >                         
-
-                        <ej:Points X="India" Y="24" Text="India 24%"/>  
-
-                        <ej:Points X="Japan" Y="25" Text="Japan 25%"/>  
-
-                        <ej:Points X="Australia" Y="20" Text="Australia 20%"/>  
-
-                        <ej:Points X="USA" Y="35" Text="USA 35%"/>
-
-                        <ej:Points X="China" Y="23" Text="China 23%"/> 
-
-                        <ej:Points X="Germany" Y="27" Text="Germany 27%"  />  
-
-                        <ej:Points X="France" Y="22" Text="France 22%" />  
-
-                    </Points>
-
-             </ej:Series>
-
- </ej:Chart>
-
-{% endhighlight  %}
-
-## Funnel Chart
-
-The Funnel chart is a single series chart representing the data as portions of 100%, and this chart does not use any axes. Funnel charts are often used to represent stages in a sales process and expresses the amount of potential revenue for each stage. This type of chart can also be useful in identifying potential problem area in an organization’s sales process. You can customize the funnel width and height using FunnelWidth and FunnelHeight properties.
-
-![](Chart-Types_images/Chart-Types_img22.png) 
+![](Chart-Types_images/Chart-Types_img22.png)
 
 
+### Change a point color
 
+To change the color of a stacking column, you can use the Fill property of the point. 
 
 {% highlight html %}
 
-<ej:Chart ID="Chart1" runat="server">
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <ej:Series>
+            <%--change a point color of Stacking column--%>
+            <Points>
+                <ej:Points Fill="skyBlue"></ej:Points>
+            </Points>
+        </ej:Series>
+    </Series>
+</ej:Chart>
 
-   <Series>
-
-    <ej:Series Type="Funnel" FunnelWidth: "32.7%" FunnelHeight: "11.2%" Name="Website" LabelPosition="Outside">
-
-                 <Marker>
-
-                     <DataLabel Visible="true" Shape="Rectangle" ConnectorType="Line"></DataLabel>
-
-                 </Marker>
-
-                    <Points >                        
-
-                        <ej:Points X="Renewed" Y="18.20" Text="Renewed : 18.20%"/> 
-
-                        <ej:Points X="Subscribe" Y="27.3" Text="Subscribe : 27.3%"/> 
-
-                        <ej:Points X="Support" Y="55.9" Text="Contact to Support : 55.9%%"/> 
-
-                        <ej:Points X="Downloaded" Y="76.8" Text="Downloaded a Trail : 76.8%"/>
-
-                        <ej:Points X="Visited" Y="100" Text=" Visited Web Site : 100%"/>
-
-
-
-                    </Points>
-
-             </ej:Series>
-
- </ej:Chart>
-{% endhighlight  %}
-## Bubble Chart
-
-Bubble Chart is an extension of the Scatter Chart (or XY-Chart) where each data marker is represented by a circle whose dimension forms a third variable. Consequently, bubble Charts allow three-variable comparisons allowing for easy visualization of complex interdependencies that are not apparent in two-variable Charts. Bubble Charts are frequently used in market and product comparison studies.
-
-
+{% endhighlight %}
 
 ![](Chart-Types_images/Chart-Types_img23.png)
 
 
+## 100% Stacked Column Chart    
+
+To render a 100% Stacked Column Chart, set the Type as **StackingColumn100** in the chart series. To change the StackingColumn100 color, you can use the Fill property of the series.
 
 {% highlight html %}
 
-
-<ej:Chart ID="Chart1" runat="server">
-
-   <Series>
-
-        <ej:Series Name="Pound" Type="Bubble" EnableAnimation="True" Opacity="0.7">
-
-                    <Points >
-
-                        <ej:Points Fill="#E94649" Size="1.347" Text="China" X="92.2" Y="7.8"/> 
-
-                        <ej:Points Fill="#F6B53F" Size="1.241" Text="India" X="74" Y="6.5"/>  
-
-                        <ej:Points Fill="#6FAAB0" Size="0.238" Text="Indonesia" X="90.4" Y="6.0"/>  
-
-                        <ej:Points Fill="#C4C24A" Size="0.312" Text="US" X="99.4" Y="2.2"/>  
-
-                        <ej:Points Fill="#FB954F" Size="0.197" Text="Brazil" X="88.6" Y="1.3"/>  
-
-                        <ej:Points Fill="#D9CEB2" Size="0.177" Text="Pakistan" X="54.9" Y="3.7"/>  
-
-                        <ej:Points Fill="#FF8D8D" Size="0.0818" Text="Germany" X="99" Y="0.7"/>  
-
-                        <ej:Points Fill="#69D2E7" Size="0.0826" Text="Egypt" X="72" Y="2.0"/>  
-
-                        <ej:Points Fill="#E27F2D" Size="0.143" Text="Russia" X="99.6" Y="3.4"/>  
-
-                        <ej:Points Fill="#6A4B82" Size="0.128" Text="Japan" X="99" Y="0.2"/>  
-
-                        <ej:Points Fill="#F6B53F" Size="0.115" Text="Mexico" X="86.1" Y="4.0"/>  
-
-                        <ej:Points Fill="#C4C24A" Size="0.096" Text="Philippines" X="92.6" Y="6.6"/>  
-
-                        <ej:Points Fill="#FF8D8D" Size="0.162" Text="Nigeria" X="61.3" Y="14.5"/>  
-
-                        <ej:Points Fill="#69D2E7" Size="0.151" Text="Bangladesh" X="56.8" Y="6.1"/>     
-
-                    </Points>
-
-                </ej:Series>
-
-            </Series> 
-
-  </ej:Chart>
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Change type and color of the series--%>
+        <ej:Series Type="StackingColumn100" Fill="#E94649">
+        </ej:Series>
+    </Series>
+</ej:Chart>
 
 {% endhighlight %}
 
-## Scatter
+![](Chart-Types_images/Chart-Types_img24.png)
 
-In Scatter Series, each data point is represented as an ellipse, and the width and height of each ellipse is set using the Size, Width and Height properties of marker. You can also change the color, stroke, and stroke thickness of the series using the Fill, border color, and Width properties of marker respectively.
 
-The following code example is used to create a simple scatter series.
+[Click](http://asp.syncfusion.com/demos/web/chart/stackingcolumn100.aspx) here to view 100% Stacked Column Chart online demo.
 
+
+### Group 100% stacked columns
+
+By using the **StackingGroup** property, you can group the 100% stacking columns. Columns with same group name are stacked on top of each other. 
 
 {% highlight html %}
 
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--For grouping 100% stacked columns--%>
+        <ej:Series StackingGroup="GroupOne">
+        </ej:Series>
+          <%--For grouping 100% stacked columns--%>
+        <ej:Series StackingGroup="GroupOne">
+        </ej:Series>
+    </Series>
+</ej:Chart>
 
-<ej:Chart ID="Chart1" runat="server">
-
-    <Series> 
-
-             <ej:Series Type="Scatter">              
-
-
-
-                    <Points >                         
-
-                      <ej:Points X="10" Y="126.45" />  
-
-                        <ej:Points X="11" Y="150.99" />  
-
-                        <ej:Points X="12" Y="40" />  
-
-                        <ej:Points X="13" Y="160.23" />
-
-                        <ej:Points X="15" Y="200.89" />                        
-
-                    </Points>
-
-             </ej:Series>                
-
-     </Series>
-
-  </ej:Chart>
-
-
-{% endhighlight  %}
-![](Chart-Types_images/Chart-Types_img24.png) 
-
-
-
-## HiLoOpenCloseSeries 
-
-A HiLoOpenCloseSeries displays each data point as a group of two horizontal lines and one vertical line. The height of the vertical line depends on the difference between the high value and low value of the data point. The width of the horizontal lines depends on the time span interval. The line indicating the open value is at the left side of the vertical line, and the line indicating the closed value is at its right side. You can also change the color, and stroke thickness of the series using the Fill, borderWidth properties respectively.
-
-The following properties are useful in mapping the value of each data point in a HiLoOpenCloseSeries: 
-
-_Table2_: _Property Table_
-
-<table>
-<tr>
-<th>
-{{ '**API**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
-<tr>
-<td>
-X</td><td>
-Represents the x-values</td></tr>
-<tr>
-<td>
-Open</td><td>
-Represents the Open values</td></tr>
-<tr>
-<td>
-High</td><td>
-Represents the high values</td></tr>
-<tr>
-<td>
-Low</td><td>
-Represents the low values</td></tr>
-<tr>
-<td>
-Close</td><td>
-Represents the close values</td></tr>
-</table>
-
+{% endhighlight %}
 
 ![](Chart-Types_images/Chart-Types_img25.png)
 
 
+### Change a point color
 
-### BullFillColor
-
-BullFillColor is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval.
-
-### BearFillColor
-
-BearFillColor is used to specify a fill color for the segments that indicate a decrease in stock price in the measured time interval.
-
-### DrawMode
-
-DrawMode is used to specify the open and close draw mode to hiloopenclose series.
-
-* Open - Points only the opening value of that period.
-* Close - Points out the closing value of that period.
-* Both - Points out both the opening and the closing values of that period.
-
- To create a simple HiLoOpenCloseSeries use the following code example.
+To change the color of a 100% stacking column, you can use the Fill property of the point. 
 
 {% highlight html %}
 
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <ej:Series>
+            <Points>
+             <%--change a point color of 100% Stacking column--%>
+                <ej:Points Fill="skyBlue"></ej:Points>
+            </Points>
+        </ej:Series>
+    </Series>
+</ej:Chart>
 
-<ej:Chart ID="Chart1" runat="server">   
-
-         <Series>
-
-             <ej:Series EnableAnimation="True" Name="Candle" Type="HiloOpenClose" DrawMode="Both"  XName="Xvalue" High="YValue1" Low="YValue2" Open="YValue3" Close="YValue4">
-
-         </ej:Series>
-
-            </Series>
-
-        </ej:Chart>
 {% endhighlight %}
-{% highlight c# %}
-
-
-List<HiloOpenCloseChartData> data = new List<HiloOpenCloseChartData>();
-
-
-
-
-
-        data.Add(new HiloOpenCloseChartData(new DateTime(1950,1,12), 125.45, 70.23, 125.22, 90.44));
-
-        data.Add(new HiloOpenCloseChartData(new DateTime(1953, 1, 12), 150.99, 60.23, 120.55, 70.90));
-
-        data.Add(new HiloOpenCloseChartData(new DateTime(1956, 1, 12), 200.19, 130.37, 160.13, 190.78));
-
-        data.Add(new HiloOpenCloseChartData(new DateTime(1959, 1, 12), 160.23, 90.16, 140.38, 110.24));
-
-        data.Add(new HiloOpenCloseChartData(new DateTime(1962, 1, 12), 200.89, 100.23, 180.90, 120.29));
-
-            data.Add(new HiloOpenCloseChartData(new DateTime(1965, 1, 12), 100, 45, 70, 50));
-
-            data.Add(new HiloOpenCloseChartData(new DateTime(1968, 1, 12), 150, 70, 140, 130));
-
-            data.Add(new HiloOpenCloseChartData(new DateTime(1971, 1, 12), 90, 60, 65, 80));
-
-            data.Add(new HiloOpenCloseChartData(new DateTime(1974, 1, 12), 225, 170, 175, 220));
-
-            data.Add(new HiloOpenCloseChartData(new DateTime(1977, 1, 12), 250, 180, 223, 190));
-
-            data.Add(new HiloOpenCloseChartData(new DateTime(1980, 1, 12), 200, 140, 160, 190));
-
-            data.Add(new HiloOpenCloseChartData(new DateTime(1983, 1, 12), 160, 90, 140, 110));
-
-            data.Add(new HiloOpenCloseChartData(new DateTime(1986, 1, 12), 200, 100, 180, 120));
-
-            data.Add(new HiloOpenCloseChartData(new DateTime(1989, 1, 1), 130, 95, 120, 100));
-
-            data.Add(new HiloOpenCloseChartData(new DateTime(1991, 1, 12), 100, 70, 92, 75));
-
-            data.Add(new HiloOpenCloseChartData(new DateTime(1994, 1, 12), 50, 85, 65, 80));
-
-            data.Add(new HiloOpenCloseChartData(new DateTime(1997, 1, 12), 185, 110, 130, 170));
-
-            data.Add(new HiloOpenCloseChartData(new DateTime(2000, 1, 12), 90, 30, 80, 50));
-
-            data.Add(new HiloOpenCloseChartData(new DateTime(2003, 1, 12), 200, 140, 160, 190));
-
-            data.Add(new HiloOpenCloseChartData(new DateTime(2006, 1, 12), 170, 90, 140, 110));
-
-            data.Add(new HiloOpenCloseChartData(new DateTime(2008, 1, 12), 200, 100, 180, 120));
-
-
-
-            this.Chart1.DataSource = data;
-
-            this.Chart1.DataBind();
-
-
-
-public class HiloOpenCloseChartData
-
-    {
-
-        public HiloOpenCloseChartData(DateTime xval, double yvalue1, double yvalue2, double yvalue3, double yvalue4)
-
-        {
-
-            this.Xvalue = xval;
-
-            this.YValue1 = yvalue1;
-
-            this.YValue2 = yvalue2;
-
-            this.YValue3 = yvalue3;
-
-            this.YValue4 = yvalue4;
-
-        }
-
-        public DateTime Xvalue
-
-        {
-
-            get;
-
-            set;
-
-        }
-
-        public double YValue1
-
-        {
-
-            get;
-
-            set;
-
-        }
-
-        public double YValue2
-
-        {
-
-            get;
-
-            set;
-
-        }
-
-        public double YValue3
-
-        {
-
-            get;
-
-            set;
-
-        }
-
-        public double YValue4
-
-        {
-
-            get;
-
-            set;
-
-        }
-
-
-
-    }
-{% endhighlight  %}
-## Candle
-
-A CandleSeries displays each data point with a combination of a vertical column and a vertical line. The height of the vertical line represents the difference between high and low value of a datapoint, whereas the height of the vertical column represents the difference between the Open and Close values of a data point. You can also change the color and stroke thickness of the series using the Fill, borderwidth properties respectively.
-
-The following properties are useful in mapping the value of each data point in a Candle.
-
-_Table3_: _Property Table_
-
-<table>
-<tr>
-<th>
-{{ '**API**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
-<tr>
-<td>
-X</td><td>
-Represents the x-values</td></tr>
-<tr>
-<td>
-Open</td><td>
-Represents the Open values.</td></tr>
-<tr>
-<td>
-High</td><td>
-Represents the high values</td></tr>
-<tr>
-<td>
-Low</td><td>
-Represents the low values</td></tr>
-<tr>
-<td>
-Close</td><td>
-Represents the close values</td></tr>
-</table>
-
 
 ![](Chart-Types_images/Chart-Types_img26.png)
 
 
+## Bar Chart
 
-### BullFillColor
+To render a bar Chart, set the Type as **Bar** in the chart series. To change the bar color, you can use the Fill property of the series.
 
-BullFillColor is used to specify a fill color for the segment that indicates an increase in stock price in the measured time interval.
-
-### BearFillColor
-
-BearFillColor is used to specify a fill color for the segment that indicates a decrease in stock price in the measured time interval.
-
-To create a simple Candle series use the following code example.
-{% highlight html %}
- 
-
-<ej:Chart ID="Chart1" runat="server">   
-
-         <Series>
-
-            <ej:Series Type="Candle" Name="Candle" XName="Xvalue" High="YValue1" Low="YValue2"  
-
-              Open="YValue3" Close="YValue4">
-
-            </ej:Series>
-
-            </Series>
-
-        </ej:Chart>
-
-{% endhighlight  %}
-{% highlight c# %}
-
-
-
-
-            List<CandleChartData> data = new List<CandleChartData>(); 
-
-
-
-            data.Add(new CandleChartData(new DateTime(1950, 1, 12),125,70,115,90));
-
-            data.Add(new CandleChartData(new DateTime(1953, 1, 12),150, 60,120,70 ));
-
-            data.Add(new CandleChartData(new DateTime(1956, 1, 12), 200, 140,160,190));
-
-            data.Add(new CandleChartData(new DateTime(1959, 1, 12),160,90,140,110));
-
-            data.Add(new CandleChartData(new DateTime(1962, 1, 12), 200,100,180,120));
-
-            this.Chart1.DataSource = data;
-
-            this.Chart1.DataBind();
-
-
-
-public class CandleChartData
-
-    {
-
-        public CandleChartData (DateTime xval, double yvalue1, double yvalue2, double yvalue3, double yvalue4)
-
-        {
-
-            this.Xvalue = xval;
-
-            this.YValue1 = yvalue1;
-
-            this.YValue2 = yvalue2;
-
-            this.YValue3 = yvalue3;
-
-            this.YValue4 = yvalue4;
-
-        }
-
-        public DateTime Xvalue
-
-        {
-
-            get;
-
-            set;
-
-        }
-
-        public double YValue1
-
-        {
-
-            get;
-
-            set;
-
-        }
-
-        public double YValue2
-
-        {
-
-            get;
-
-            set;
-
-        }
-
-        public double YValue3
-
-        {
-
-            get;
-
-            set;
-
-        }
-
-        public double YValue4
-
-        {
-
-            get;
-
-            set;
-
-        }
-
-
-
-    }
-{% endhighlight %}
-## Hilo
-
-Ina HiLoSeries, each segment is represented by a line. The height of the line depends on the difference between the high value and low value of the data point. You can also change the color and stroke thickness of the series using the Fill, borderwidth properties respectively.
-
-The following properties are useful in mapping the value of each data point in a Hilo.
-
-_Table4_: _Property Table_
-
-<table>
-<tr>
-<th>
-{{ '**API**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
-<tr>
-<td>
-X</td><td>
-Represents the x-values</td></tr>
-<tr>
-<td>
-High</td><td>
-Represents the high values</td></tr>
-<tr>
-<td>
-Low</td><td>
-Represents the low values</td></tr>
-</table>
-
-
-![C:/Users/ApoorvahR/Desktop/3.png](Chart-Types_images/Chart-Types_img27.png) 
-
-
-
-To create a simple Hilo series use the following code example. 
 {% highlight html %}
 
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Change type and color of the series--%>
+        <ej:Series Type="Bar" Fill="#E94649">
+        </ej:Series>
+    </Series>
+</ej:Chart>
 
-<ej:Chart ID="Chart1" runat="server">   
-
-         <Series>
-
-           <ej:Series Type="Hilo" XName="Xvalue" High="YValue1" Low="YValue2">
-
-
-
-           </ej:Series>
-
-            </Series>
-
-        </ej:Chart>
 {% endhighlight %}
-{% highlight c# %}
+
+![](Chart-Types_images/Chart-Types_img27.png)
 
 
-          List<HiloData> data = new List<HiloData>(); 
+[Click](http://asp.syncfusion.com/demos/web/chart/bar.aspx) here to view Bar Chart demo.
 
 
+### Change the color of a bar
 
-            data.Add(new CandleChartData(new DateTime(1950, 1, 12),126.45,70.23));
+By using the Fill property of the point, you can change the specific point of the series. 
 
-            data.Add(new CandleChartData(new DateTime(1953, 1, 12),150.99, 60.23));
+{% highlight html %}
 
-            data.Add(new CandleChartData(new DateTime(1956, 1, 12), 200.19, 130.37));
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <ej:Series>
+            <Points>
+                <%--change a point color of bar--%>
+                <ej:Points Fill="skyblue"></ej:Points>
+            </Points>
+        </ej:Series>
+    </Series>
+</ej:Chart>
 
-            data.Add(new CandleChartData(new DateTime(1959, 1, 12),160.23, 90.16));
-
-            data.Add(new CandleChartData(new DateTime(1962, 1, 12), 200.89,100.23));
-
-            this.Chart1.DataSource = data;
-
-            this.Chart1.DataBind();
-
-
-
-public class HiloData
-
-    {
-
-        public HiloData (DateTime xval, double yvalue1, double yvalue2)
-
-        {
-
-            this.Xvalue = xval;
-
-            this.YValue1 = yvalue1;
-
-            this.YValue2 = yvalue2;
-
-        }
-
-        public DateTime Xvalue
-
-        {
-
-            get;
-
-            set;
-
-        }
-
-        public double YValue1
-
-        {
-
-            get;
-
-            set;
-
-        }
-
-        public double YValue2
-
-        {
-
-            get;
-
-            set;
-
-        }
-
-        public double YValue3
-
-
-
-    }
-{% endhighlight  %}
-
-## Polar
-
-A Polar Chart is a circular graph on which data is displayed in terms of values and angles. The x values define the angles at which the data points are plotted. The y value defines the distance of the data points from the center of the graph, with the center of the graph usually starting at 0. You can customize the series color and border using Fill and Border properties in series. You can use IsClosed property in series to specify whether the series drawn is in closed form. It supports three types of rendering such as Line, Area and Column.
-
-### LineType
+{% endhighlight %}
 
 ![](Chart-Types_images/Chart-Types_img28.png)
 
 
+## Stacked Bar Chart
 
-### Area Type
+To render a Stacked Bar Chart, set the Type as **StackingBar** in the chart series. To change the StackingBar color, you can use the Fill property of the series.
 
-![](Chart-Types_images/Chart-Types_img29.png) 
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Change type and color of the series--%>
+        <ej:Series Type="StackingBar" Fill="#E94649">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img29.png)
 
 
+[Click](http://asp.syncfusion.com/demos/web/chart/stackingbar.aspx) here to view Stacked Bar Chart online demo.
 
-### Column Type
+
+### Group stacked bars
+
+You can use the **StackingGroup** property to group the stacking bars with the same group name. 
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--For grouping stacking bar--%>
+        <ej:Series StackingGroup="GroupOne">
+        </ej:Series>
+        <%--For grouping stacking bar--%>
+        <ej:Series StackingGroup="GroupOne">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
 
 ![](Chart-Types_images/Chart-Types_img30.png)
 
 
+### Change a point color
 
-
-
-To create a simple Polar series use the following code example.
+You can change the color of a stacking bar by using the Fill property of the point.
 
 {% highlight html %}
 
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <ej:Series>
+            <Points>
+                <%--change a point color of stacking bar--%>
+                <ej:Points Fill="skyblue"></ej:Points>
+            </Points>
+        </ej:Series>
+    </Series>
+</ej:Chart>
 
-
-<ej:Chart ID="Chart1" runat="server">
-
-  <Series> 
-
-             <ej:Series Type="Polar" Width="3">          
-
-                    <Points >                         
-
-                        <ej:Points X="1991" Y="10" />  
-
-                        <ej:Points X="1992" Y="3" />  
-
-                        <ej:Points X="1993" Y="20" />  
-
-                        <ej:Points X="1994" Y="16" />
-
-                        <ej:Points X="1995" Y="10" /> 
-
-                        <ej:Points X="1996" Y="18" />
-
-                        <ej:Points X="1997" Y="15" /> 
-
-
-
-                    </Points>
-
-             </ej:Series>                
-
-   </Series> 
-
- </ej:Chart>
-
-{% endhighlight  %}
-
-## RadarSeries 
-
-RadarSeries is a x, y Chart of three or more quantitative variables represented on multiple axis lines originating from the same point. You can customize the series color and border using Fill and Border properties in series. You can use IsClosed property in series to specify whether the series drawn is in closed form. It supports three types of rendering such as Line, Area and Column.
-
-### Area Type
+{% endhighlight %}
 
 ![](Chart-Types_images/Chart-Types_img31.png)
 
 
+## 100% Stacked Bar Chart
 
-### Line type
+To render a 100% Stacked Bar Chart, set the Type as **StackingBar100** in the chart series. To change the StackingBar100 color, you can use the Fill property of the series.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Change type and color of the series--%>
+        <ej:Series Type="StackingBar100" Fill="#E94649">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
 
 ![](Chart-Types_images/Chart-Types_img32.png)
 
+[Click](http://asp.syncfusion.com/demos/web/chart/stackingbar100.aspx) here to view 100% Stacked Bar Chart online demo.
+
+By using the StackingGroup property, you can group the 100% stacking bars with the same group name. 
+
+{% highlight html %}
 
 
-### Column type
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--For grouping 100% stacking bar--%>
+        <ej:Series StackingGroup="GroupOne">
+        </ej:Series>
+        <%--For grouping 100% stacking bar--%>
+        <ej:Series StackingGroup="GroupOne">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
 
 ![](Chart-Types_images/Chart-Types_img33.png)
 
 
+### Change a point color
 
-To create simple RadarSeries use the following code example. 
+To change the color of a 100% stacking bar, you can use the Fill property of the point. 
+
 {% highlight html %}
 
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <ej:Series>
+            <Points>
+                <%--change a point color of 100% stacking bar--%>
+                <ej:Points Fill="skyblue"></ej:Points>
+            </Points>
+        </ej:Series>
+    </Series>
+</ej:Chart>
 
-<ej:Chart ID="Chart1" runat="server">
+{% endhighlight %}
 
-      <Series> 
-
-             <ej:Series Type="Radar" Width="3" EnableAnimation="true" DrawType="Area">        
-
-                  <Points >                         
-
-                        <ej:Points X="1991" Y="10" />  
-
-                        <ej:Points X="1992" Y="3" />  
-
-                        <ej:Points X="1993" Y="20" />  
-
-                        <ej:Points X="1994" Y="16" />
-
-                        <ej:Points X="1995" Y="10" /> 
-
-                        <ej:Points X="1996" Y="18" />
-
-                        <ej:Points X="1997" Y="15" /> 
+![](Chart-Types_images/Chart-Types_img34.png)
 
 
+## Spline Chart
 
-                    </Points>
+To render a Spline Chart, set the Type as **Spline** in the chart series. To change the Spline segment color, you can use the Fill property of the series.
 
-             </ej:Series>                
+{% highlight html %}
 
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Change type and color of the series--%>
+        <ej:Series Type="Spline" Fill="#6ADCB0">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img35.png)
+
+
+[Click](http://asp.syncfusion.com/demos/web/chart/spline.aspx) here to view the Spline Chart online demo sample.
+
+
+### Change the spline width
+
+To change the spline segment width, you can use the Width property of the series.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Change the width of spline series--%>
+        <ej:Series Width="3">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img36.png)
+
+
+### Dashed lines
+
+To render the spline series with dotted lines, you can use the DashArray option of the series.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Change dash array to display dotted or dashed splines--%>
+        <ej:Series DashArray="5,5">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img37.png)
+
+
+## Pie Chart
+
+You can create a pie chart by setting the series Type as **Pie** in the chart series.
+
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Set chart type to series--%>
+        <ej:Series Type="Pie">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img38.png)
+
+
+[Click](http://asp.syncfusion.com/demos/web/chart/pie.aspx) here to view the Pie chart online demo sample.
+
+
+### Change the pie size
+
+You can use the **PieCoefficient** property to change the diameter of the Pie chart with respect to the plot area. It ranges from 0 to 1 and the default value is **0.8**.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Change pie chart coefficient value--%>
+        <ej:Series PieCoefficient="0.4f">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img39.png)
+
+
+### Explode a pie segment
+
+You can explode a pie segment on the chart load by using the **ExplodeIndex** of the series.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Set point index value to explode the pie segment--%>
+        <ej:Series ExplodeIndex="1">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img40.png)
+
+
+### Explode all the segments
+
+To explode all the segments of the Pie chart, you can enable the **ExplodeAll** property.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Enable explodeAll property for pie chart--%>
+        <ej:Series ExplodeAll="true">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img41.png)
+
+
+### Explode a pie segment on mouse over
+
+To explode a pie segment on a mouse over, you can enable the **Explode** property of the series.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Enable pie explode option on mouse over the chart --%>
+        <ej:Series Explode="true">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img42.png)
+
+
+### Sector of Pie
+
+EjChart allows you to render all the data points/segments in the semi-pie, quarter-pie or in any sector by using the **StartAngle** and **EndAngle** options.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Set startAngle and endAngle to draw the semi pie chart--%>
+        <ej:Series Type="Pie" StartAngle="-90" EndAngle="90">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img43.png)
+
+
+[Click](http://asp.syncfusion.com/demos/web/chart/semipie.aspx) here to view the Semi Pie Chart online demo sample.
+
+
+
+## Doughnut Chart
+
+To create a Doughnut chart, you can specify the series Type as **Doughnut** in the chart series.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Set chart type to series--%>
+        <ej:Series Type="Doughnut">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img44.png)
+
+[Click](http://asp.syncfusion.com/demos/web/chart/doughnut.aspx) here to view the Doughnut Chart online demo sample.
+
+
+### Change Doughnut inner radius
+
+You can change the doughnut chart inner radius by using the **DoughnutCoefficient** with respect to the plot area. It ranges from 0 to 1 and the default value is **0.4**.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Change doughnut chart coefficient value--%>
+        <ej:Series DoughnutCoefficient="0.6f">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img45.png)
+
+
+### Change the doughnut size
+
+You can use the **DoughnutSize** property to change the diameter of the Doughnut chart with respect to the plot area. It ranges from 0 to 1 and the default value is **0.8**.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Change doughnut chart coefficient value--%>
+        <ej:Series DoughnutSize="0.4f">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img46.png)
+
+
+### Explode a doughnut segment
+
+To explode a specific doughnut segment, set the index to be exploded by using the **ExplodeIndex** option of the series.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Set point index value to explode the doughnut segment--%>
+        <ej:Series ExplodeIndex="1">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img47.png)
+
+
+### Explode all the segments
+
+To explode all the segments, you can enable the **ExplodeAll** property of the series.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Enable explodeAll property of doughnut chart--%>
+        <ej:Series ExplodeAll="true">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img48.png)
+
+
+### Explode a doughnut segment on mouse over
+
+To explode a doughnut segment on a mouse over, you can enable the **Explode** property of the series.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Enable doughnut explode option on mouse over the chart--%>
+        <ej:Series Explode="true">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img49.png)
+
+
+### Sector of Doughnut
+
+EjChart allows you to render all the data points/segments in the semi-doughnut, quarter- doughnut or in any sector by using the **StartAngle** and **EndAngle** options.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Set startAngle and endAngle to draw the semi doughnut chart--%>
+        <ej:Series Type="Doughnut" StartAngle="-90" EndAngle="90">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img50.png)
+
+
+[Click](http://asp.syncfusion.com/demos/web/chart/semipie.aspx) here to view the Semi Doughnut Chart online demo sample.
+
+
+
+## Multiple Pie Chart
+
+EjChart provides support to render more than one series in pie and in doughnut chart. Radius of each series is calculated based on the radius of the previous series. And in addition legend is displayed according to the list of chart series.
+
+{% highlight html %}
+
+        <ej:Chart ID="Chart1" runat="server">
+            <Series>
+                <%--Adding multiple pie series--%>
+                <ej:Series Type="Pie">
+                    <%--....--%>
+                </ej:Series>                
+                <ej:Series Type="Pie">
+                    <%--....--%>
+                </ej:Series>
+            </Series>            
+        </ej:Chart>
+
+{% endhighlight %}
+
+**Multiple Pie** 
+
+![](Chart-Types_images/Chart-Types_img82.png)
+
+**Multiple Doughnut** 
+
+![](Chart-Types_images/Chart-Types_img83.png)
+
+[Click](http://asp.syncfusion.com/demos/web/chart/multiplepie.aspx) here to view the Multiple Pie chart online demo sample.
+
+### Start and End Angle Support
+
+In the Multiple Pie chart, the start and end angle property is also supported.
+
+**Sector of Multiple Pie**
+
+![](Chart-Types_images/Chart-Types_img84.png)
+
+**Sector of Multiple Doughnut**
+
+![](Chart-Types_images/Chart-Types_img85.png)
+
+
+## Pyramid Chart
+
+To create a Pyramid chart, you can specify the series Type as **Pyramid** in the chart series.  
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Set chart type to series--%>
+        <ej:Series Type="Pyramid">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img51.png)
+
+[Click](http://asp.syncfusion.com/demos/web/chart/pyramid.aspx) here to view the Pyramid Chart online demo sample.
+
+
+### Pyramid Mode
+
+Pyramid mode has two types, *Linear* and *Surface* respectively. The default **PyramidMode** type is "Linear".
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Change pyramid mode--%>
+        <ej:Series PyramidMode="Surface">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img52.png)
+
+### Gap between the segments
+
+You can control the gap between the segments by using the **GapRatio** option of the series. Its ranges from 0 to 1.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Set gapRatio value to pyramid chart--%>
+        <ej:Series GapRatio="0.1f">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img53.png)
+
+
+### Explode a pyramid segment
+
+You can explode a pyramid segment on the chart load by using the **ExplodeIndex** of the series.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Set point index value to explode the pyramid segment--%>
+        <ej:Series ExplodeIndex="4">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img54.png)
+
+
+## Funnel Chart
+
+You can create a funnel chart by setting the series Type as **Funnel** in the chart series.  
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Set chart type to series--%>
+        <ej:Series Type="Funnel">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img55.png)
+
+[Click](http://asp.syncfusion.com/demos/web/chart/funnel.aspx) here to view the Funnel Chart online demo sample.
+
+
+### Change the funnel width and height
+
+Funnel segments height and width is calculated from the chart size, by default. You can change this height and width directly without changing the chart size by using the **FunnelHeight** and **FunnelWidth** property of the series.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Change funnel height and width--%>
+        <ej:Series FunnelHeight="22%" FunnelWidth="25%">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img56.png)
+
+
+### Explode a funnel segment
+
+You can explode a funnel segment on the chart load by using the **ExplodeIndex** of the series.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Set point index value to explode the funnel segment--%>
+        <ej:Series ExplodeIndex="3">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img57.png)
+
+
+## Bubble Chart
+
+To create a Bubble chart, you can set the series Type as **Bubble** in the chart series. Bubble chart requires 3 fields (*X, Y and Size*) to plot a point. Here, **Size** is used to specify the size of each bubble segment. 
+
+{% highlight csharp %}
+
+      public partial class _Default : Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            List<ChartData> data = new List<ChartData>();
+            data.Add(new ChartData("Jan", 35, 1.34));
+            data.Add(new ChartData("Feb", 28, 1.05));
+            data.Add(new ChartData("Mar", 34, 0.45));
+            data.Add(new ChartData("Apr", 32, 1.10));            
+
+            //Binding DataSource to Chart
+            this.Chart1.DataSource = data;
+            this.Chart1.DataBind();
+           
+        }
+    }
+
+    [Serializable]
+    public class ChartData
+    {
+        public string Month;
+        public double Sales;
+        public double Profit;
+        public ChartData(string month, double sales, double profit)
+        {
+            this.Month = month;
+            this.Sales = sales;
+            this.Profit = profit;
+        }
+    }
+
+
+{% endhighlight %}
+
+           
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Set chart type to series--%>
+    <Series>        
+        <%--Add datasource and set xName, yName and size to bubble chart--%>
+        <ej:Series Type="Bubble" XName="Month" YName="Sales" Size="Profit">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img58.png)
+
+
+[Click](http://asp.syncfusion.com/demos/web/chart/bubble.aspx) here to view the Bubble Chart online demo sample.
+
+## Scatter
+
+To create a Scatter chart, you can set the series Type as **Scatter** in the chart series. 
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Set chart type to series--%>
+    <Series>
+        <ej:Series Type="Scatter" XName="Month" YName="Sales" Size="Profit">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img59.png)
+
+
+[Click](http://asp.syncfusion.com/demos/web/chart/scatter.aspx) here to view the Scatter Chart online demo sample.
+
+### Customize the scatter chart
+
+You can change the scatter size by using the **Size** property of the series marker. And you can change the scatter color by using the series Fill property. 
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Set fill color to scatter series--%>
+        <ej:Series Fill="#41F282">
+            <%--Change scatter size--%>
+            <Marker>
+                <Size Width="15" Height="15" />
+            </Marker>
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img60.png)
+
+
+## HiloOpenClose Chart 
+
+To create a HiloOpenClose chart, you can set the series Type as **HiloOpenClose** in the chart series. HiloOpenClose chart requires 5 fields *(X, High, Low, Open and Close)* to plot a segment.  
+
+
+{% highlight csharp %}
+
+    public partial class _Default : Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            List<ChartData> data = new List<ChartData>();
+            data.Add(new ChartData("Jan", 38, 10, 38, 29));
+            data.Add(new ChartData("Feb", 28, 15, 18, 27));
+            data.Add(new ChartData("Mar", 54, 35, 38, 49));
+            data.Add(new ChartData("Apr", 52, 21, 35, 29));            
+
+            //Binding DataSource to Chart
+            this.Chart1.DataSource = data;
+            this.Chart1.DataBind();
+           
+        }
+    }
+
+    [Serializable]
+    public class ChartData
+    {
+        public string Month;
+        public double High;
+        public double Low;
+        public double Open;
+        public double Close;
+        public ChartData(string month, double high, double low, double open, double close)
+        {
+            this.Month = month;
+            this.High = high;
+            this.Low = low;
+            this.Open = open;
+            this.Close = close;
+        }
+    }
+    
+{% endhighlight %}
+
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Set chart type and map dataSource field to series--%>
+        <ej:Series Type="HiloOpenClose" XName="Month" High="High" Low="Low" Open="Open" Close="Close">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img61.png)
+
+
+[Click](http://asp.syncfusion.com/demos/web/chart/hiloopenclose.aspx) here to view the HiloOpenClose Chart online demo sample.
+
+
+### DrawMode
+
+You can change the HiloOpenClose chart **DrawMode** to *Open, Close* or *Both*. The default value of DrawMode is **Both**. 
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Change the OHLC drawMode type--%>
+        <ej:Series DrawMode="Open">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img62.png)
+
+
+### Bull and Bear Color	
+
+Hiloopenclose chart **BullFillColor** is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval and **BearFillColor** is used to specify a fill color for the segments that indicates a decrease in the stock price in the measured time interval. 
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Change bullFill and bearFill color of hiloopenclose chart--%>
+        <ej:Series BearFillColor="#FF6600" BullFillColor="#336600">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img63.png)
+
+
+## Candle
+
+You can create a Candle chart by specifying the series Type as **Candle** in the chart series. Candle chart requires 5 fields *(X, High, Low, Open and Close)* to plot a segment.
+
+
+{% highlight csharp %}
+
+        public partial class _Default : Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            List<ChartData> data = new List<ChartData>();
+            data.Add(new ChartData("Jan", 38, 10, 38, 29));
+            data.Add(new ChartData("Feb", 28, 15, 18, 27));
+            data.Add(new ChartData("Mar", 54, 35, 38, 49));
+            data.Add(new ChartData("Apr", 52, 21, 35, 29));            
+
+            //Binding DataSource to Chart
+            this.Chart1.DataSource = data;
+            this.Chart1.DataBind();
+           
+        }
+    }
+
+    [Serializable]
+    public class ChartData
+    {
+        public string Month;
+        public double High;
+        public double Low;
+        public double Open;
+        public double Close;
+        public ChartData(string month, double high, double low, double open, double close)
+        {
+            this.Month = month;
+            this.High = high;
+            this.Low = low;
+            this.Open = open;
+            this.Close = close;
+        }
+    }
+
+{% endhighlight %}
+
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Set chart type and map dataSource field to series--%>
+        <ej:Series Type="Candle" XName="Month" High="High" Low="Low" Open="Open" Close="Close">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img64.png)
+
+[Click](http://asp.syncfusion.com/demos/web/chart/candle.aspx) here to view the Candle Chart online demo sample.
+
+
+### Bull and Bear Color
+
+Candle chart **BullFillColor** is used to specify a fill color for the segments that indicates an increase in the stock price in the measured time interval and **BearFillColor** is used to specify a fill color for the segments that indicates a decrease in the stock price in the measured time interval.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Change bullFill and bearFill color of candle chart--%>
+        <ej:Series BearFillColor="#FF6600" BullFillColor="#336600">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img65.png)
+
+
+## Hilo
+
+Hilo chart is created by setting the series Type as **Hilo** in the chart series. Hilo chart requires 3 fields *(X, High and Low)* to plot a segment.  
+
+{% highlight csharp %}
+
+    public partial class _Default : Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            List<ChartData> data = new List<ChartData>();
+            data.Add(new ChartData("Jan", 38, 10));
+            data.Add(new ChartData("Feb", 28, 15));
+            data.Add(new ChartData("Mar", 54, 35));
+            data.Add(new ChartData("Apr", 52, 21));            
+
+            //Binding DataSource to Chart
+            this.Chart1.DataSource = data;
+            this.Chart1.DataBind();
+           
+        }
+    }
+
+    [Serializable]
+    public class ChartData
+    {
+        public string Month;
+        public double High;
+        public double Low;
+        public double Open;
+        public double Close;
+        public ChartData(string month, double high, double low)
+        {
+            this.Month = month;
+            this.High = high;
+            this.Low = low;
+        }
+    }
+
+{% endhighlight %}
+
+            
+{% highlight html %}
+ 
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Set chart type and map dataSource field high, low to series--%>
+        <ej:Series Type="Hilo" XName="Month" High="High" Low="Low">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img66.png)
+
+
+[Click](http://asp.syncfusion.com/demos/web/chart/hilo.aspx) here to view the Hilo Chart online demo sample.
+
+
+## Polar
+
+Polar chart is created by setting the series Type as **Polar** in the chart series. 
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Set chart type to series--%>
+        <ej:Series Type="Polar">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img67.png)
+
+
+[Click](http://asp.syncfusion.com/demos/web/chart/polar.aspx) here to view the Polar Chart online demo sample.
+
+
+### DrawType
+
+Polar **DrawType** property is used to change the series plotting type to *Line*, *Column* or *Area*. The default value of DrawType is **Line**.  
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Change polar series drawType--%>
+        <ej:Series DrawType="Column">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img68.png)
+
+
+### Stack columns in Polar chart
+
+By using the **IsStacking** property, you can specify whether the column has to be stacked when the DrawType is column. Its default value is **False**.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Enable isStacking property for stacked column polar chart--%>
+        <ej:Series IsStacking="true">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img69.png)
+
+
+[Click](http://asp.syncfusion.com/demos/web/chart/windrose.aspx) here to view the Polar Wind Rose Chart online demo sample.
+
+
+## Radar Chart  
+
+To create a Radar chart, you can specify the series Type as **Radar** in the chart series.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Set chart type to series--%>
+        <ej:Series Type="Radar">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+
+![](Chart-Types_images/Chart-Types_img70.png)
+
+[Click](http://asp.syncfusion.com/demos/web/chart/radar.aspx) here to view the Radar Chart online demo sample.
+
+
+### DrawType
+
+Radar **DrawType** property is used to change the series plotting type to *Line*, *Column* or *Area*. The default value of DrawType is **Line**.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Change radar series drawType--%>
+        <ej:Series DrawType="Column">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+
+![](Chart-Types_images/Chart-Types_img71.png)
+
+
+### Stack columns in Radar chart
+
+By using the **IsStacking** property, you can specify whether the column has to be stacked when the DrawType is set as Column. Its default value is set to *False*.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Enable isStacking property for stacked column radar chart--%>
+        <ej:Series IsStacking="true">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+
+![](Chart-Types_images/Chart-Types_img72.png)
+
+
+## Waterfall Chart 
+
+For rendering a Waterfall chart, set series *Type* as **Waterfall** in the chart series. To change the waterfall series segment color use *Fill* option of series and use *PositiveFill* property to differentiate the positive segments.
+
+N> The inline property of the **Series.PositiveFill** has the first priority and override the **Series.Fill**.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Change series type--%>
+        <ej:Series Type="Waterfall" Fill="#C64E4A" PositiveFill="#93C952">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+  
+{% endhighlight %}
+
+
+![](Chart-Types_images/Chart-Types_img73.png)
+
+
+[Click](http://asp.syncfusion.com/demos/web/chart/waterfall.aspx) here to view the Waterfall Chart online demo sample.
+
+
+**ShowIntermediateSum**
+
+To display the summary of values since the last intermediate point of the waterfall series, set **ShowIntermediateSum** property as true in the specific point.
+
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <ej:Series Type="Waterfall">
+            <Points>
+                <%--Enable showIntermediateSum in to a point--%>
+                <ej:Points X="Intermediate sum" ShowIntermediateSum="true"></ej:Points>
+            </Points>
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+
+**ShowTotalSum**
+
+The sum of all previous point in the waterfall series is displayed on enabling the **ShowTotalSum** property for a specific point.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <ej:Series Type="Waterfall">
+            <Points>
+                <%--Enable showTotalSum in to a point--%>
+                <ej:Points X="Total sum" ShowTotalSum="true"></ej:Points>
+            </Points>
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+
+### ConnectorLine
+
+To customize the connector line color, width, opacity and dashArray of the waterfall series, you can use **ConnectorLine** option of series.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <ej:Series Type="Waterfall">
+            <ConnectorLine Color="#333000" DashArray="2,3" Width="1" Opacity="1" />
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+
+![](Chart-Types_images/Chart-Types_img74.png)
+
+
+
+## Errorbar Chart 
+
+EjChart can generate Error bar for Cartesian type series *(Line, Column, Bar, Scatter, Area, Candle, Hilo, etc.)*. To render the Error bar for the series, set *Visibility* as *“Visibile”* to **ErrorBar** in the series.
+
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">  
+      <Series>
+                <ej:Series>
+                     <%-- To toggle the error bar visibility --%>
+                    <ErrorBar Visible="visible"></ErrorBar>
+                </ej:Series>
+            </Series>
+</ej:Chart>      
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img75.png)
+
+
+[Click](http://asp.syncfusion.com/demos/web/chart/errorbar.aspx) here to view the Errorbar Chart online demo sample.
+
+
+### Changing Error Bar Type
+
+You can change the error bar rendering type using **Type** *(like FixedValue, Percentage, StandardDeviation, StandardError and custom)* option of errorBar. To change the error bar line length you can use **VerticalErrorValue** property.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">  
+      <Series>
+                <ej:Series>
+                     <%-- To change the error bar type --%>
+                    <ErrorBar Type="Percentage VerticalErrorValue="3" ></ErrorBar>
+                </ej:Series>
+            </Series>
+</ej:Chart>      
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img76.png)
+
+
+#### Customizing error bar type
+
+To customize the error bar type, set error bar *Type* as **Custom** and then change the horizontal/vertical positive and negative value of error bar.
+
+{% highlight js %}
+
+<ej:Chart ID="Chart1" runat="server">  
+    <Series>
+          <ej:Series>
+              <%-- To change the error bar type --%>
+              <ErrorBar Type="Custom” VerticalPositiveErrorValue="5" 
+                      HorizontalPositiveErrorValue="1" VerticalNegativeErrorValue="5" 
+                           HorizontalNegativeErrorValue="1" ></ErrorBar>
+          </ej:Series>
      </Series>
-
- </ej:Chart>
-
-
-{% endhighlight  %}
+</ej:Chart>      
 
 
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img77.png)
+
+
+### Changing Error Bar Mode
+
+Error bar mode is used to define whether the error bar line has to be drawn *Horizontally, Vertically* or in *Both* side.  To change the error bar mode use **ErrorBar.Mode** option.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">  
+      <Series>
+          <ej:Series>
+             <%-- To change the error bar mode --%>
+             <ErrorBar Type="FixedValue” Mode="Vertical" ></ErrorBar>
+          </ej:Series>
+      </Series>
+</ej:Chart>      
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img78.png)
+
+### Changing Error Bar Direction
+
+You can change the error bar direction to *Plus, Minus or Both* side using **ErrorBar.Directions** option.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">  
+    <Series>
+        <ej:Series>
+           <%-- To change the error bar direction --%>
+           <ErrorBar Type="FixedValue” Mode="Vertical" Direction=”Minus”> </ErrorBar>
+        </ej:Series>
+     </Series>
+</ej:Chart>  
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img79.png)
+
+### Customizing Error bar cap
+
+To customize the errorBar cap visibility, length, width and fill color, you can use **Cap** option in the **Series.ErrorBar**.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">  
+      <Series>
+         <ej:Series>
+              <%-- To customize the error bar cap --%>
+              <ErrorBar>
+                  <Cap Visible="true" Length="20" Width="1" Fill="#000000" />    
+                  </ErrorBar>
+         </ej:Series>
+      </Series>
+</ej:Chart>      
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img80.png)

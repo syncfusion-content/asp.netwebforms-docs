@@ -53,7 +53,7 @@ This event is handled when the RangeNavigator gets loaded. A parameter sender is
 
                function loadingdata(sender) {
 
-                     sender.model. enableAutoResizing = false;
+                     sender.model. isResponsive = false;
 
                }
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | Chart | ASP.NET Webforms | Syncfusion
+title: Getting Started | Chart  | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: Chart
@@ -9,405 +9,285 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly you on how to create a Chart in your application with ASP.NET.
+This section explains you on how to create a simple Chart in your application with ASP.NET and covers only the minimal features that you need to know to get started with the Chart.
 
-## Create your first Chart in ASP.NET
+## Installation and Deployment
 
-This section encompasses how to configure the ASP.NET Charts for your business needs. You can also pass the required data to default Chart and customize it according to your requirements. In this example, you can see how to display the average climate data for Washington, DC during the period 1961 -1990.
+It describes you on how to configure the Syncfusion dependencies in your ASP.NET application to create a Chart.
+
+### Referencing Syncfusion Assemblies
+
+The following assemblies need to be referenced in your application for using Essential Chart ASP
+
+1. Syncfusion.EJ.dll
+2. Syncfusion.EJ.Web.dll
+
+Follow the steps given below to deploy the application in the development server by referencing the dll in **GAC**.
+
+* Web.config file should be configured according to the referenced dlls. 
+* To deploy your application, you have to ensure that the above referenced assemblies (in your web.config files) are present in the GAC.
+
+![](Getting-Started_images/Getting-Started_img1.png)
+
+And, add the Syncfusion namespace in the Web.config file.
+
+![](Getting-Started_images/Getting-Started_img2.png) 
+
+N> If you are referring Syncfusion dll's manually from bin folder to create ASP Chart, then remove Culture, Version and PublicKeyToken attributes used in all, and nodes.
 
 
+###  Adding script reference
 
+By default, Syncfusion JavaScript source files has been included into the EJ.Web.dll as an embedded source. So we no need to refer jquery and syncfusion scripts externally. For debugging purpose want to refer script files externally, set false to **LoadEJResourcesFromAssembly** in Web.config file as shows in the below image and refer jquery and syncfusion script files.
 
-
-![](Getting-Started_images/Getting-Started_img1.png) 
-
-
-
-### Configure Chart
-
-Getting started with your ASP.NET Chart is very easy.  You can start by creating a simple line Chart.
-
-Create an ASP Project and add necessary Dll’s and Scripts by referring [ASP-Getting Started](http://help.syncfusion.com/aspnetmvc/chart/getting-started) Documentation.
-
-Create the web form named as default and add the following template
-
-{% highlight html %}
-
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Chart_ASP.Chart._default" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head runat="server">    
-
-    <title>Getting started for ASP.NET Chart Control</title>
-
-    <link href="../Content/ej/default-theme/ej.theme.min.css" rel="stylesheet" />
-
-    <link href="../Content/ej/ej.widgets.core.min.css" rel="stylesheet" />
-
-    <script src="../Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
-
-    <script src="../Scripts/jsrender.min.js" type="text/javascript"></script>
-
-    <script src="../Scripts/jquery.easing-1.3.min.js" type="text/javascript"></script>
-
-    <script src="../Scripts/jquery.globalize.min.js" type="text/javascript"></script>
-
-    <script src="../Scripts/ej/ej.web.all.js" type="text/javascript"></script>
-
-</head>
-{% endhighlight  %}
-
-Initialize the Chart like below code snippet
+![](Getting-Started_images/Getting-Started_img3.png) 
 
 {% highlight html %}
 
-//...    
 
-<div>
+    <!--  jquery script  -->
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+    
+    <!-- Essential JS UI widget -->
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+    
+{% endhighlight %}
 
-        <ej:Chart ID="Chart1" runat="server">
 
-        </ej:Chart>            
+## Initialize chart
 
-<div>
+Add the following code in the default.aspx file to create the Chart control in View page.
 
-//...  
-{% endhighlight  %}
+{% highlight html %}
 
-The above code example renders a Chart with the default Column series type and some random values assigned to the column series. 
-
-The following screenshot displays the Chart.
-
-
-
-![](Getting-Started_images/Getting-Started_img2.png)
-
-
-
-### Add a Chart Series
-
-By default, line series is used. To create a series, you need to add the following code example to the scripts. For example, the following steps illustrate how to add a column series to the Chart.
-
-1. You need to add the name of the series displayed in the Chart legend.
-2. Then, you need to specify the type of series you want to render using “type” property.
-3. You can add x and y points to the series as in the following code example.
-
-   ~~~ html
-
-        <ej:Chart ID="Chart1" runat="server>
-
-            <Series>
-
-                <ej:Series Name="Precipitation" Type="Column">
-
-                    <Points>                   
-
-
-
-                        <ej:Points  X="Jan" Y="3.03"/>
-
-                        <ej:Points  X="Feb" Y="2.48"/>
-
-                        <ej:Points  X="Mar" Y="3.23"/>
-
-                        <ej:Points  X="Apr" Y="3.15"/>
-
-                        <ej:Points  X="May" Y="4.13 "/>
-
-                        <ej:Points  X="Jun" Y="3.23"/>
-
-                        <ej:Points  X="Jul" Y="4.88"/>
-
-                        <ej:Points  X="AUg" Y="3.82"/>
-
-                        <ej:Points  X="Sep" Y="2.83"/>
-
-                        <ej:Points  X="Oct" Y="2.8"/>
-
-                        <ej:Points  X="Nov" Y="3.07"/>
-
-                        <ej:Points  X="Dec" Y="2.8"/>
-
-
-
-                    </Points>
-
-                </ej:Series>
-
-            </Series>
-
-
-
-        </ej:Chart> 
-
-
-   ~~~
-   {:.pretty-print }
-
-The following screenshot displays a Chart series:
-
-![](Getting-Started_images/Getting-Started_img3.png)
-
-
-
-### Add JSON data to the Chart
-
-You can add JSON data to the Chart using the datasource property in Chart.
-
-
-{% tabs %}
-
-{% highlight c# %}       
-
-	List<chartData> data = new List<chartData>();
-
-	data.Add(new chartData("Jan", 42, 27, 3.03));
-
-	data.Add(new chartData("Feb", 44, 28, 2.48));
-
-	data.Add(new chartData("Mar", 53, 35, 3.23));
-
-	data.Add(new chartData("Apr", 64, 44, 3.15));
-
-	data.Add(new chartData("May", 75, 54, 4.13));
-
-	data.Add(new chartData("Jun", 83, 63, 3.23));
-
-	data.Add(new chartData("Jul", 87, 68, 4.13));
-
-	data.Add(new chartData("Aug", 84, 66, 4.88));
-
-	data.Add(new chartData("Sep", 78, 59, 3.82));
-
-	data.Add(new chartData("Oct", 67, 48, 3.07));
-
-	data.Add(new chartData("Nov", 55, 38, 2.83));
-
-	data.Add(new chartData("Dec", 45, 29, 2.8));
-
-	this.Chart1.DataSource = data;
-
-	this.Chart1.DataBind();
-
-	public class chartData
-
-		{
-
-			public chartData(string xval, double yvalue1, double yvalue2, double yvalue3)
-
-			{
-
-				this.Xmonth = xval;
-
-				this.Precipitation = yvalue1;
-
-				this.Low = yvalue2;
-
-				this.High = yvalue3;
-
-
-
-			}
-
-			public string Xmonth
-
-			{
-
-				get;
-
-				set;
-
-			}
-
-			public double Precipitation
-
-			{
-
-				get;
-
-				set;
-
-			}
-
-			public double Low
-
-			{
-
-				get;
-
-				set;
-
-			}
-
-			public double High
-
-			{
-
-				get;
-
-				set;
-
-			}
-
-
-
-		}
+<ej:Chart ID="Chart1" runat="server" >        
+ </ej:Chart>
 
 {% endhighlight %}
 
 
+Now, the Chart is rendered with some auto-generated random values and with default Column chart type.
+
+![](Getting-Started_images/Getting-Started_img4.png)
+
+
+Initialize the chart by using the ejChart method. The chart is rendered to the size of its container, by default. You can also customize the chart dimension either by setting the width and height of the container element as in the above code example or by using the **Size** option of the Chart. Refer to the [`Chart Dimensions`](chart-dimensions.html) to know more about setting the size of the chart.
+
+
+## Populate chart with data
+
+Now, let’s see how to plot data source to the Chart. First, let us generate a data source containing following fields in controller– Month and Sales.
+
+{% highlight csharp %}
+
+public partial class _Default : Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+   // Create dataSource to chart
+            List<ChartData> data = new List<ChartData>();
+            data.Add(new ChartData("Jan", 35));
+            data.Add(new ChartData("Feb", 28));
+            data.Add(new ChartData("Mar", 34));
+            data.Add(new ChartData("Apr", 32));
+            data.Add(new ChartData("May", 40));
+            data.Add(new ChartData("Jun", 32));
+            data.Add(new ChartData("Jul", 35));
+            data.Add(new ChartData("Aug", 55));
+            data.Add(new ChartData("Sep", 38));
+            data.Add(new ChartData("Oct", 30));
+            data.Add(new ChartData("Nov", 25));
+            data.Add(new ChartData("Dec", 32));
+            this.Chart1.DataSource = data;
+            this.DataBind();
+       } 
+   }
+    public class ChartData {
+        public string Month;
+        public double Sales;
+        public ChartData(string month, double sales)
+        {
+            this.Month = month;
+            this.Sales = sales;
+        }
+    }
+
+{% endhighlight %}
+
+
+Add a Series object to the chart using **Series** option and set the chart type as **Line** using **Type** option. 
+
 {% highlight html %}
 
-<ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true">
 
- <Series>
+<ej:Chart ID="Chart1" runat="server" > 
+           <Series>
+               <ej:Series Type="Line"></ej:Series>
+           </Series>
+</ej:Chart>
 
-   <ej:Series EnableAnimation="True" Type="Column" Name="Sales" XName="Xmonth" YName="Precipitation"/>   
+{% endhighlight %}
 
-   <ej:Series EnableAnimation="True" Type="Line" Name="Sales" XName="Xmonth" YName="Low"/>   
+You can also add multiple series objects based on your requirement. Refer [`Chart Types`](Chart-Types.html) and [`Chart Series`](Chart-Series.html) sections to know more about chart types, how to add multiple series and customize series appearance.
 
-   <ej:Series EnableAnimation="True" Type="Line" Name="Sales" XName="Xmonth" YName="High"/>                  
+Next, map the Month and Sales values in the data source to the Line series by setting XName and YName with the field names respectively, and then set the actual data using DataSource option. Refer [`Data Binding`](working-with-data.html) section to know more about binding local and remote data to the chart.
 
-         </Series>
-
-   </ej:Chart>
-
-{% endhighlight  %}
-
-{% endtabs %}
-
-The following screenshot displays the Chart when JSON data is added.
-
-
-
-![](Getting-Started_images/Getting-Started_img4.png) 
-
-
-
-### Add Chart Axis of your choice
-
-In the Chart when data source is added, the axes are provided explicitly and the Chart initializes the right axis based on the data type. You can also specify the axis type of your choice using ValueType option and customize the options available in the axis. The following axis types are supported:
-
-* Category -   String data can be plotted using category axis. Category axis can be initialized only as x-axis.
-* Double -   Numeric values can be plotted using double axis.
-* Datetime - DateTime can be plotted using datetime axis. This type of axis can be initialized only as x-axis.
-* Logarithmic - Numeric values can be plotted using logarithm axis.
-
-You can use PrimaryXAxis and PrimaryYAxis options to initialize the axes. As the data contains string values along x-axis, you can set ValueType as Category for PrimaryXAxis and Double for PrimaryYAxis. 
-
-Since the values are in Fahrenheit for Temperature and Inches for Precipitation, you need to initialize different axis instance for each unit. You can use “LabelFormat” option to add suffix for axis labels.
-
-In order to add additional Axes to the Chart other than PrimaryXAxis and PrimaryYAxis, you need to initialize axes option with collection of axis and set Name for axis in the Axes collection.
-
-The following code example illustrates how to add Chart axis.
 {% highlight html %}
 
-<ej:Chart ID="Chart1" runat="server">
+<ej:Chart ID="Chart1" runat="server"> 
+           <Series>
+               <ej:Series Type="Line" XName="Month" YName="Sales"></ej:Series>
+           </Series>
+</ej:Chart>
 
-            <PrimaryXAxis ValueType="Category"></PrimaryXAxis>   
 
-            <PrimaryYAxis ValueType="Double"></PrimaryYAxis>
-
-            <Axes>
-
-                <ej:Axis OpposedPosition="true" Orientation="Vertical" Name="Precipitation"  
-
-                 LabelFormat="{value} inch">
-
-                 </ej:Axis>
-
-            </Axes>         
-
- </ej:Chart>
-{% endhighlight  %}
-
-### Assign the axis to the respective series
-
-To assign the axis to the respective series you can set YAxisName property of the series. In the following code example, YAxisName of Column series is set to “Precipitation”. This is the name set to the axis in the above code example.
-{% highlight html %}
-
-   <ej:Chart ID="Chart1" runat="server" CanResize="true">   
-
-       <Series>
-
-         <ej:Series EnableAnimation="True" Type="Column" YAxisName="Precipitation" Name="Sales"  
-
-              XName="Xmonth" YName="Precipitation"/>   
-
-         <ej:Series EnableAnimation="True" Type="Line" Name="Sales" XName="Xmonth" YName="Low"/>   
-
-         <ej:Series EnableAnimation="True" Type="Line" Name="Sales" XName="Xmonth" YName="High"/> 
-
-       </Series>
-
-    </ej:Chart>
-
-{% endhighlight  %}
-
-The following screenshot displays a Chart with desired output.
-
+{% endhighlight %}
 
 
 ![](Getting-Started_images/Getting-Started_img5.png)
 
 
+Since the data is related to Sales, format the vertical axis labels by adding ‘$’ as a prefix and ‘K’ as a suffix to each label. This can be achieved by setting the “${value}K” to the **LabelFormat** option of the axis. Here, {value} acts as a placeholder for each axis label, “$” and “K” are the actual prefix and suffix added to each axis label. 
 
-### Add Data Labels
-
-Data Labels display the series points in Chart. To display the data labels, you need to enable the “Visible” property of DataLabel in the Marker of specific series. By default, it displays the Y value with label format provided in axis (For example: 4.88 inch). The following code example shows how to add DataLabels.
-
+The following code example illustrates this,
 
 {% highlight html %}
-<ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true">
+
+<ej:Chart ID="Chart1" runat="server"> 
+
+    <PrimaryYAxis LabelFormat="${value}K">
+    </PrimaryYAxis>
+
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Getting-Started_images/Getting-Started_img6.png)
 
 
+Refer [`Axis`]() section to know more about axis types, adding multiple axes and other customization options.
 
-     <Series>
 
-          <ej:Series EnableAnimation="True" Type="Column" XName="Xmonth" YName="Precipitation" Marker-DataLabel-Visible="true" Marker-DataLabel-TextPosition="Top" Marker-DataLabel-Fill="#FF7777" Marker-DataLabel-Offset="20" Marker-DataLabel-Shape="Rectangle"/>   
+## Add Data Labels
 
-                <ej:Series EnableAnimation="True" Type="Line" XName="Xmonth" YName="Low"/>   
+You can add data labels to improve the readability of the chart. This can be achieved by enabling the Visible option in the **DataLabel** option. Now, the data labels are rendered at the top of all the data points.
 
-                <ej:Series EnableAnimation="True" Type="Line" XName="Xmonth" YName="High"/>                  
+The following code example illustrates this,
 
-              </Series>
+{% highlight html %}
 
+     <ej:Chart ID="Chart1" runat="server"> 
+            <Series>
+                <ej:Series>
+                    <Marker>
+                        <DataLabel Visible="true"> </DataLabel>
+                    </Marker>
+                </ej:Series>
+            </Series>
         </ej:Chart>
 
+{% endhighlight %}
+
+![](Getting-Started_images/Getting-Started_img7.png)
+
+
+There are situations where the default label content is not sufficient to the user. In this case, you can use the **Template** option to format the label content with some additional information.
+
+ {% highlight html %}
+
+<!DOCTYPE html>
+<html>
+<body>
+      <div id="dataLabelTemplate" style="display:none; padding:3px;background-color:#B9C5C9; opacity:0.8;">
+         <div id="point">#point.x#:$#point.y#K</div>
+      </div>
+</body>
+</html>
+
 
 {% endhighlight %}
-The following screenshot displays the Chart when data Labels are enabled.
 
+The above HTML template is used as a template for each data label. Here, “point.x” and “point.y” are the placeholder text used to display the corresponding data point’s x & y value.
 
+The following code example shows how to set the id of the above template to Template option,
 
-![C:/Users/labuser/Desktop/label.png](Getting-Started_images/Getting-Started_img6.png) 
-
-
-
-### Enable ToolTip
-
-To display the tooltip of Chart series, you can enable the “Visible” property of “Tooltip” in the specific series. By default, it displays X and Y value of points on mouse over the points. The following code example shows how to enable Tooltip.
 {% highlight html %}
 
-  <ej:Chart ID="Chart1" runat="server">
-
+      <ej:Chart ID="Chart1" runat="server"> 
             <Series>
-
-                <ej:Series Name="Precipitation" Tooltip-Visible="true" />
-
+                <ej:Series>
+                    <Marker>
+                        <DataLabel Visible="true" Template="dataLabelTemplate"> 
+                        </DataLabel>
+                    </Marker>
+                </ej:Series>
             </Series>
-
-         </ej:Chart>
+        </ej:Chart>
 
 {% endhighlight %}
-The following screenshot displays the Chart when tooltip is enabled.
+
+![](Getting-Started_images/Getting-Started_img8.png)
 
 
+Refer to the [`Data Markers`](Data-Markers.html) section to know more about the options available to customize it.
 
-![C:/Users/labuser/Desktop/tool.png](Getting-Started_images/Getting-Started_img7.png) 
+## Enable Legend
+
+You can enable or disable the legend by using the Visible option in the **Legend**. It is enabled in the chart, by default.
+
+{% highlight html %}
+
+    <ej:Chart ID="Chart1" runat="server"> 
+            <Series>
+                <ej:Series Name="Sales">
+                </ej:Series>
+            </Series>
+            <Legend Visible="true"></Legend>
+        </ej:Chart>
+
+{% endhighlight %}
+
+![](Getting-Started_images/Getting-Started_img9.png)
 
 
+Refer to the [`Legend`](Legend.html) section to know more about how to position legend and customize its appearance.
 
+## Enable Tooltip
+
+The Tooltip is useful when you cannot display information by using the **DataLabels** due to the space constraints. You can enable tooltip by using the Visible option of the **Tooltip** in the specific series.
+
+The following code example illustrates this,
+
+{% highlight html %}
+
+    <ej:Chart ID="Chart1" runat="server"> 
+            <Series>
+                <ej:Series>
+                    <Tooltip Visible="true"></Tooltip>
+                </ej:Series>
+            </Series>
+        </ej:Chart>
+
+{% endhighlight %}
+
+![](Getting-Started_images/Getting-Started_img10.png)
+
+
+Refer to the [`Tooltip`](user-interactions.html) section to know more about formatting tooltip contents and customizing its appearance.
+
+## Add Chart Title
+
+You need to add a title to the chart to provide quick information to the user about the data being plotted in the chart. You can add it by using the Text option of the **Title**.
+
+{% highlight html %}
+
+      <ej:Chart ID="Chart1" runat="server"> 
+           <Title Text="Sales Analysis"></Title>
+      </ej:Chart>
+
+{% endhighlight %}
+
+![](Getting-Started_images/Getting-Started_img11.png)
+
+
+Refer to the [`Chart Title`](chart-title.html) section to know more about aligning Title, customizing its appearance and adding SubTitle to the chart.

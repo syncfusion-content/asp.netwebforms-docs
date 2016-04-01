@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | Chart | ASP.NET Webforms | Syncfusion
+title: Chart | ASP.NET Webforms | Syncfusion
 description: overview
 platform: aspnet
 control: Chart
@@ -9,14 +9,13 @@ documentation: ug
 
 # Overview
 
-Essential Chart for ASP.NET is an easy to use and visually stunning Charting component. It includes common Chart types ranging from line Charts to specialized financial Charts. The rich feature set of the Chart control includes data binding, multiple axes support, trackball support, drilldown operations, and zooming. It also provides support to implement animations and user-interactions with ease. Essential Chart for ASP.NET is a perfect solution for developers looking to add advanced, feature rich, and visually appealing Charts to their online applications.
+Essential Chart for ASP.NET is a visually stunning Charting component. It includes common Chart types ranging from line Charts to specialized financial Charts.
 
-## Key Features
+Some of the key features are,
 
-Some important features of Chart for Essential JavaScript are as follows:
-
-* Chart Customization—Easy customization options for each and every unit of Chart such as Chart area, Chart series and Chart legend.
-* Chart Data Source—Populate the Chart with any kind of data source.
-* Chart Axis—Supports multiple axes and datetime axis.
-* Chart Series—Highly customizable and interactive Chart series can be added to Chart.
-* Advanced User Interactions—Supports tooltip, zooming and panning, crosshair, and trackball.
+* Supports highly interactive 28 chart types; 8 charts can be viewed in 3D view.
+* Data Binding with local and remote data source.
+* Supports multiple axes, and able to plot data with different data types such as numbers, date time and strings.
+* Supports interactive features like zooming, panning, crosshair, trackball, tooltip and data point selection.
+* Supports 10 types of technical indicators and trend lines.
+* Easily customize each and every element of Chart.
