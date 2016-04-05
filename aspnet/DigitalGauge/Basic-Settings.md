@@ -44,13 +44,13 @@ Digital Gauge control with height and width values
 ## Responsive Layout
 
 * For any display devices, the control will be rendered based on the space available in that device. For this purpose, resizing property is given to the Digital Gauge control. The Digital Gauge renders with a given value. 
-* When the browser resize the canvas element checks the dimension with its parent element. If there are any changes in parent dimension, Gauge control will changes the dimension based on its parent element change. This feature is enabled by using the property canResize.
+* When the browser resize the canvas element checks the dimension with its parent element. If there are any changes in parent dimension, Gauge control will changes the dimension based on its parent element change. This feature is enabled by using the property IsResponsive.
 
 {% highlight c# %}
 
         <%-- Adding Control with Themes and Resizing property --%>
 
-        <ej:DigitalGauge runat="server" ID="DigitalGauge1" EnableResize="true">
+        <ej:DigitalGauge runat="server" ID="DigitalGauge1" IsResponsive="true">
 
 
 
@@ -82,7 +82,7 @@ Themes give the good appearance to the control. There are two types of Themes av
 
         <%-- Adding Control with Themes and Resizing property --%>
 
-        <ej:DigitalGauge runat="server" ID="DigitalGauge1" EnableResize="true"
+        <ej:DigitalGauge runat="server" ID="DigitalGauge1" IsResponsive="true"
 
 
 
