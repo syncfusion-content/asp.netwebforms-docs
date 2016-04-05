@@ -9,561 +9,281 @@ documentation: ug
 
 # 3D Chart
 
-Now Essential Chart allows you to create stunning 3D Charts for Bar, Column, StackingBar, StackingColumn, Pie and Doughnut series. The representation of data in 3D Chart is very clear and easy to understand when compared to 2D charts. Three dimensions of the series are seen by rotating them. The following properties enhance the perception of 3D Charts.
+Essential 3D Chart for ASP.NET allows you to view 8 chart types in 3D view such as Bar, StackingBar, StackingBar100, Column, Stacked Column, 100% Stacked Column, Pie, Doughnut.
 
-## Enable3D:
 
-The property Enable3D renders 3D Charts and accepts only the Boolean values.
+## 3D Column Chart
 
-## WallSize:
-
-In 3D, Cartesian axes lines are represented as walls. The property WallSize defines the width of the wall. The WallSize property does not support for 3D Pie or Doughnut series because they do not have Cartesian axes lines. 
-
-## Depth:
-
-The Depth property defines the depth of the 3D Chart from front view of the series to wall.
-
-## Tilt:
-
-The Tilt property defines the angle of the slope of 3D Chart. The positive and negative values declare the side where the slope is present.
-
-## Rotation:
-
-The Rotation property is used to spin the 3D chart. The direction of the spin depends upon the positive and negative values of Rotation property.
-
-## EnableRotation:
-
-The EnableRotation property allows rotation of the 3D Chart dynamically by dragging the mouse on 3D Chart. Accepting value of this property is Boolean.
-
-## PerspectiveAngle:
-
-The perspectiveAngle declares the appearance of the height, width, depth and wall of the 3D Chart. When the PerspectiveAngle is decreased, the 3D object appears closer to viewer. But when it is increased, the 3D object appears far away from the viewer.
-
-## SideBySideSeriesPlacement:
-
-The SideBySideSeriesPlacement property defines the appearance of the different sets of data on 3D Chart. When it is set to true, the data is displayed side by side, otherwise it is displayed one by one.
-
-## 3D Series Types
-
-The following are 3D series types:
-
-### 3D Column Chart
-
-Column charts represent data in a vertical rectangular shape. The size of the shape depends upon the data. Different sets of data are compared by using column chart. The comparison is easy when it is set in 3 Dimensional view. Now Essential Chart gives its support for 3D by setting the property Enable3D to true. For clear perception, rotate the 3D column chart to 360 degrees by giving the value as true for EnableRotation property. The depth, wall size, tilt, and rotation of the 3D chart are customized by setting the property Depth, WallSize, Tilt, and rotation respectively.      
+For rendering a 3D Column Chart, specify the series **Type** as **Column** in the chart series and set **Enable3D** option as **True** in the chart.
 
 {% highlight html %}
 
+   <ej:Chart ID="Chart1" runat="server" Enable3D="true">
+        <Series>
+            <ej:Series Type="Column"></ej:Series>
+        </Series>
+   </ej:Chart>
 
-<ej:Chart ID="Chart1" runat="server” Depth="100" WallSize="2" Tilt="0" 
-
-
-
-Rotation="34" PerspectiveAngle="90" EnableRotation="true" Enable3D="true">
-
-
-
-</ej:Chart>
-
-
-
-
-
-{% endhighlight  %}
+{% endhighlight %}
 
 ![](3D-Chart_images/3D-Chart_img1.png)
 
 
+[Click](http://asp.syncfusion.com/demos/web/chart/column3d.aspx) here to view the Column 3DChart online demo sample.
 
-### 3D Bar Chart
 
-3D Bar charts are similar to 3D Column charts, but it represents the data in horizontal rectangular shape. The size of the bar depends upon the data. You can customize the depth, wall size, tilt, and rotation of the 3D Bar chart by setting the property Depth, WallSize, Tilt, and rotation respectively
+## 3D Bar Chart
+
+You can create a 3D Bar Chart by setting the series **Type** as **Bar** in the chart series and enable Enable3D option in the chart.
+
 {% highlight html %}
 
-
-<ej:Chart ID="Chart1" runat="server” Depth="100" WallSize="2" Tilt="0" 
-
-
-
-Rotation="34" PerspectiveAngle="90" EnableRotation="true" Enable3D="true">
-
+   <ej:Chart ID="Chart1" runat="server" Enable3D="true">
+        <Series>
+            <ej:Series Type="Bar"></ej:Series>
+        </Series>
+   </ej:Chart>
 
 
-<CommonSeriesOptions Type="Bar"/>
-
-
-
-</ej:Chart>
-
-
-{% endhighlight  %}
-
-
-
+{% endhighlight %}
 
 ![](3D-Chart_images/3D-Chart_img2.png)
 
 
+[Click](http://asp.syncfusion.com/demos/web/chart/bar3d.aspx) here to view the Bar 3DChart online demo sample.
 
-### 3D Stacking Column Chart
 
-3D Stacking Column Charts are similar to 3D Column Charts, but here the Y values of different sets of data are represented in a single vertical bar. You can set different colors and borders for different y values in a single vertical bar by setting the Fill and Border properties. You can customize the depth, wall size, tilt, and rotation of the 3D Stacking Column Chart by setting the property Depth, WallSize, Tilt, and rotation respectively. 
+## 3D Stacked Column Chart
+
+You can create a 3D Stacked Column Chart by setting the series **Type** as **StackingColumn** in the chart series and enable Enable3D option in the chart.
+
 {% highlight html %}
 
-<ej:Chart ID="Chart1" runat="server” Depth="100" WallSize="2" Tilt="0" 
+       <ej:Chart ID="Chart1" runat="server" Enable3D="true">
+          <Series>
+              <ej:Series Type="StackingColumn"></ej:Series>
+              <ej:Series Type="StackingColumn"></ej:Series>
+          </Series>
+       </ej:Chart>
 
 
+{% endhighlight %}
 
-Rotation="34" PerspectiveAngle="90" EnableRotation="true" Enable3D="true">
-
-
-
-<CommonSeriesOptions Type="StackingColumn">
+![](3D-Chart_images/3D-Chart_img3.png)
 
 
-
-   <Series>
-
-                <ej:Series Name="Google">
+[Click](http://asp.syncfusion.com/demos/web/chart/stackingcolumn3d.aspx) here to view the Stacked Column 3DChart online demo sample.
 
 
+## 3D 100% Stacked Column Chart
 
-                    <points>
+100% Stacking Column 3DChart is rendered by specifying the series **Type** as **StackingColumn100** in the chart series and enable Enable3D option in the chart.
 
-                        <ej:points X="2006" Y="8"/>
+{% highlight html %}
 
-                        <ej:points X="2007" Y="5"/>
-
-                        <ej:points X="2008" Y="4"/>
-
-                        <ej:points X="2009" Y="12"/>
-
-                        <ej:points X="2010" Y="16"/>
-
-                        <ej:points X="2011" Y="6"/>
-
-                        <ej:points X="2012" Y="13"/>
-
-                    </points>
+       <ej:Chart ID="Chart1" runat="server" Enable3D="true">
+          <Series>
+              <ej:Series Type="StackingColumn100"></ej:Series>
+              <ej:Series Type="StackingColumn100"></ej:Series>
+          </Series>
+       </ej:Chart>
 
 
+{% endhighlight %}
 
-                </ej:Series>
-
-
-
-                <ej:Series Name="Bing">
+![](3D-Chart_images/3D-Chart_img4.png)
 
 
-
-                    <points>
-
-                        <ej:points X="2006" Y="5"/>
-
-                        <ej:points X="2007" Y="6"/>
-
-                        <ej:points X="2008" Y="7"/>
-
-                        <ej:points X="2009" Y="10"/>
-
-                        <ej:points X="2010" Y="14"/>
-
-                        <ej:points X="2011" Y="14"/>
-
-                        <ej:points X="2012" Y="15"/>
-
-                    </points>
+[Click](http://asp.syncfusion.com/demos/web/chart/stackingcolumn1003d.aspx) here to view the 100% Stacked Column 3DChart online demo sample.
 
 
+## 3D Stacked Bar Chart
 
-                </ej:Series>
+To create Stacking Bar 3DChart, set the series **Type** as **StackingBar** in the chart series and enable Eenable3D option in the chart.
 
-   </Series>
+{% highlight html %}
+
+       <ej:Chart ID="Chart1" runat="server" Enable3D="true">
+          <Series>
+              <ej:Series Type="StackingBar"></ej:Series>
+              <ej:Series Type="StackingBar"></ej:Series>
+          </Series>
+       </ej:Chart>
 
 
+{% endhighlight %}
 
-</ej:Chart>
+![](3D-Chart_images/3D-Chart_img5.png)
+
+
+[Click](http://asp.syncfusion.com/demos/web/chart/stackingbar3d.aspx) here to view the Stacked Bar 3DChart online demo sample.
+
+
+## 3D 100% Stacked Bar Chart
+
+You can create 100% Stacking Bar 3DChart by setting the series **Type** as **StackingBar100** in the chart series and enable Eenable3D option in chart.
+
+{% highlight html %}
+
+       <ej:Chart ID="Chart1" runat="server" Enable3D="true">
+          <Series>
+              <ej:Series Type="StackingBar100"></ej:Series>
+              <ej:Series Type="StackingBar100"></ej:Series>
+          </Series>
+       </ej:Chart>
+
+
+{% endhighlight %}
+
+![](3D-Chart_images/3D-Chart_img6.png)
+
+
+[Click](http://asp.syncfusion.com/demos/web/chart/stackingbar1003d.aspx) here to view the 100% Stacked Bar 3DChart online demo sample.
+
+
+## 3D Pie Chart
+
+To render the Pie Chart in 3D view, enable the **Enbel3D** option in the chart and set the series **Type** as **Pie** in the chart series.
+
+{% highlight html %}
+
+        <ej:Chart ID="Chart1" runat="server" Enable3D="true">
+          <Series>
+              <ej:Series Type="Pie"></ej:Series>
+          </Series>
+        </ej:Chart>
+
+{% endhighlight %}
+
+![](3D-Chart_images/3D-Chart_img7.png)
+
+
+[Click](http://asp.syncfusion.com/demos/web/chart/pie3d.aspx) here to view the Pie 3DChart online demo sample.
+
+
+## 3D Doughnut Chart
+
+To render the Doughnut Chart in 3D view, enable the **Enbel3D** option in the chart and set the series **Type** as **Doughnut** in the chart series.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server" Enable3D="true">
+          <Series>
+              <ej:Series Type="Doughnut"></ej:Series>
+          </Series>
+        </ej:Chart>
+
+
+{% endhighlight %}
+
+![](3D-Chart_images/3D-Chart_img8.png)
+
+
+[Click](http://asp.syncfusion.com/demos/web/chart/doughnut3d.aspx) here to view the Doughnut 3DChart online demo sample.
+
+
+## Configure 3D Chart
+
+### 3D View
+
+To render the EjChart in 3D view, set the **Enable3D** option as **True** in the chart.
+
+{% highlight html %}
+
+        <%--// Enable 3D Chart--%>
+        <ej:Chart ID="Chart1" runat="server" Enable3D="true">
+         
+        </ej:Chart>
+
+{% endhighlight %}
+
+
+![](3D-Chart_images/3D-Chart_img9.png)
+
+
+[Click](http://asp.syncfusion.com/demos/web/chart/column3d.aspx) here to view the 3DChart online demo sample.
+
+
+### Placing Bar / Column kind of series side-by-side
+ 
+ The **SideBySideSeriesPlacement** defines the appearance of the different sets of data on the 3D Chart. When this property is enabled, the data is displayed side by side, otherwise it is displayed along the depth of the axis.
+ 
+ {% highlight html %}
+
+   <%--//Enable SideBySideSeriesPlacement for 3DChart--%>
+   <ej:Chart ID="Chart1" runat="server" Enable3D="true" SideBySideSeriesPlacement="true">
+   </ej:Chart>
 
 
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img3.png)
+![](3D-Chart_images/3D-Chart_img10.png)
 
 
+### Setting Axis Wall Size
 
-### 3D Stacking Bar Chart
-
-3D Stacking Bar Charts are similar to 3D Bar Charts, but here the Y values of different sets of data are represented in a single horizontal bar. So the comparison of different sets of data is easier than the normal bar chart. You can customize the depth, wall size, tilt, and rotation of the 3D Stacking Bar Chart by setting the property Depth, WallSize, Tilt, and Rotation respectively
-{% highlight html %}
-
-
-
-
-<ej:Chart ID="Chart1" runat="server” Depth="100" WallSize="2" Tilt="0" 
-
-
-
-Rotation="34" PerspectiveAngle="90" EnableRotation="true" Enable3D="true">
-
-
-
-       <CommonSeriesOptions  Type="StackingBar"/>
-
-
-
-       <Series>
-
-                <ej:Series Name="Desktop Display">
-
-                    <points>
-
-                        <ej:points X="2009" Y="2.9"/>
-
-                        <ej:points X="2010" Y="3.8"/>
-
-                        <ej:points X="2011" Y="4.9"/>
-
-                        <ej:points X="2012" Y="6.5"/>
-
-                        <ej:points X="2013" Y="7.1"/>
-
-                        <ej:points X="2014" Y="7.5"/>
-
-                    </points>
-
-                </ej:Series>
-
-                <ej:Series Name="Mobile">
-
-                    <points>
-
-                        <ej:points X="2009" Y="0.1"/>
-
-                        <ej:points X="2010" Y="0.5"/>
-
-                        <ej:points X="2011" Y="1.4"/>
-
-                        <ej:points X="2012" Y="2.9"/>
-
-                        <ej:points X="2013" Y="4.9"/>
-
-                        <ej:points X="2014" Y="6.8"/>
-
-                    </points>
-
-                </ej:Series>
-
-
-
-       </Series>
-
-
-
-</ej:Chart>
-
-
-
-{% endhighlight  %}
-
-
-
-![](3D-Chart_images/3D-Chart_img4.png)
-
-
-
-### 3D Pie Chart
-
-Pie Charts are circular with several segments. The segments are calculated from the y value of the series. Normally, in 2D only the front view of the pie chart can be seen. In 3D, there is an option to see the whole side of the pie chart by enabling the EnableRotation property. You can explode a particular segment of pie series by setting the ExplodeIndex property. You can customize the color of each segment by setting the Fill property, and can also customize the depth, perspective angle, rotation, tilt of the pie chart by setting the appropriate properties.   
-{% highlight html %}
-
-
-
-
-<ej:Chart ID="Chart1" runat="server” Depth="30" WallSize="10" Tilt="-30" 
-
-
-
-Rotation="-30" PerspectiveAngle="90" EnableRotation="true" Enable3D="true">
-
-
-
-   <Series>
-
-
-
-      <ej:Series Type="Pie" StartAngle="145" ExplodeIndex="1">
-
-
-
-                    <points>
-
-
-
-                        <ej:points X="Housing" Y="31"/>
-
-                        <ej:points X="Food" Y="16"/>
-
-                        <ej:points X="Transportation" Y="14"/>
-
-                        <ej:points X="Clothing" Y="6"/>
-
-                        <ej:points X="Health care" Y="8"/>
-
-                        <ej:points X="Education" Y="17"/>
-
-                        <ej:points X="Miscellaneous" Y="8"/>
-
-
-
-                    </points>
-
-
-
-                    <Border Width="2" Color="White" />
-
-
-
-       </ej:Series>
-
-
-
-   </Series> 
-
-
-
-</ej:Chart>
-
-
-
-{% endhighlight  %}
-
-![](3D-Chart_images/3D-Chart_img5.png) 
-
-
-
-### 3D Doughnut Chart
-
-3D Doughnut charts are similar to 3D Pie Charts with the difference of having a hole in the center of the Doughnut chart. The size of the hole is customized by using the DoughnutCoefficient property. The size of the doughnut is customized by using the DoughnutSize property. You can rotate the 3D doughnut chart to 360 degrees by enabling the EnableRotation property. You can customize each segment’s color and border by setting Fill and Border property. 
-{% highlight html %}
-
-
-
-
-<ej:Chart ID="Chart1" runat="server” Depth="30" WallSize="10" Tilt="-30" 
-
-
-
-Rotation="-30" PerspectiveAngle="90" EnableRotation="true" Enable3D="true">
-
-
-
-   <Series>
-
-
-
-      <ej:Series Type="Doughnut" DoughnutCoefficient=”0.5”  
-
-
-
-                 DoughnutSize=”0.8”  ExplodeIndex="4">
-
-
-
-                    <points>
-
-
-
-                        <ej:points X="Watching TV" Y="31"/>
-
-                        <ej:points X="Socializing" Y="16"/>
-
-                        <ej:points X="Reading" Y="14"/>
-
-                        <ej:points X="Sports" Y="6"/>
-
-                        <ej:points X="Others" Y="8"/>
-
-
-
-                    </points>
-
-
-
-                    <Border Width="2" Color="White" />
-
-
-
-       </ej:Series>
-
-
-
-   </Series> 
-
-
-
-</ej:Chart>
-
-{% endhighlight  %}
-
-![](3D-Chart_images/3D-Chart_img6.png)
-
-
-
-## 100% 3D Stacking Column
-
-100% 3D Stacking Column charts are similar to 3D stacking Column charts. But here, the combined contribution of Y values is the combined total of the vertical bar with 100 percent. You can customize the depth, wall size, tilt and rotate the 100% 3D Stacking Column by using the Depth, WallSize, Tilt and Rotation property respectively.
-
+In 3DChart, Cartesian axes lines are represented as walls and it defines the width of the 3D wall. 3D Pie and Doughnut Chart does not support **WallSize** because they don’t have axes.  
 
 {% highlight html %}
 
+ <%--  //Change 3DChart axis wall size--%>
+ <ej:Chart ID="Chart1" runat="server" Enable3D="true" WallSize="10">
+ </ej:Chart>
 
 
-
-  <ej:Chart ID="Chart2" runat="server" Depth="100" Wallsize="2"
-
-        Tilt="0" Rotation="34" PerspectiveAngle="90"    
-
-        EnableRotation="true"  Enable3D="true">
+{% endhighlight %}
 
 
+![](3D-Chart_images/3D-Chart_img11.png)
 
-        <CommonSeriesOptions EnableAnimation="true" Type="StackingColumn100">
 
-        </CommonSeriesOptions>       
+ ### 3D Depth
 
-        <Series>
+By using the **Depth** property, you can view the 3D Chart from the front view of the series to the background wall.
 
-          <ej:Series Name="Australia">
+{% highlight html %}
 
-              <points>
-
-                   <ej:points X="2006" Y="80000"/>
-
-                   <ej:points X="2007" Y="22000"/>
-
-                   <ej:points X="2008" Y="60000"/>
-
-                   <ej:points X="2009" Y="39000"/>
-
-                   <ej:points X="2010" Y="62000"/>
-
-                   <ej:points X="2011" Y="90000"/>                          
-
-              </points>
-
-          </ej:Series>
-
-          <ej:Series Name=”China”>
-
-              <points>
-
-                   <ej:points X="2006" Y="50000"/>
-
-                   <ej:points X="2007" Y="41000"/>
-
-                   <ej:points X="2008" Y="52000"/>
-
-                   <ej:points X="2009" Y="43000"/>
-
-                   <ej:points X="2010" Y="47000"/>
-
-                   <ej:points X="2011" Y="93000"/>                          
-
-              </points>
-
-          </ej:Series> 
-
-        </Series>          
-
+  <%--  //Change 3DChart depth value--%>
+  <ej:Chart ID="Chart1" runat="server" Enable3D="true" Depth="120">
   </ej:Chart>
 
-{% endhighlight  %}
-
-The following screenshot displays the 100% 3D Stacking Column.
+{% endhighlight %}
 
 
-
-![F:/bar100/sshot-3.png](3D-Chart_images/3D-Chart_img7.png)
-
+![](3D-Chart_images/3D-Chart_img12.png)
 
 
-## 100% 3D Stacking Bar
+### Rotating and Tilting 3D Chart
 
-100% 3D Stacking Bar charts are similar to 3D stacking Bar charts. But here, the combined contribution of Y values is the combined total of the horizontal bar with 100 percent. You can customize the depth, wall size, tilt and rotate the 100% 3D Stacking Bar by using the Depth, WallSize, Tilt and Rotation properties respectively.
-
+To spin the 3D Chart on mouse dragging, enable **EnableRotation** option in the chart. The **Tilt** property specifies the angle of the slope of the 3D Chart. The positive and negative values are declared to the side where the slope is present. The **Rotation** option is used to rotate the 3D chart towards left or right side of the chart. The direction of the chart depends upon the positive and negative values of the angle.  
 
 {% highlight html %}
 
+    <%--  //Enable and Rotate 3DChart --%>
+        <ej:Chart ID="Chart1" runat="server" Enable3D="true" Tilt="10" 
+                                                 EnableRotation="true" Rotation="40">
+        </ej:Chart>
 
 
-
-  <ej:Chart ID="Chart3" runat="server" Depth="100" Wallsize="2"
-
-        Tilt="0" Rotation="34" PerspectiveAngle="90"    
-
-        EnableRotation="true"  Enable3D="true">
+{% endhighlight %}
 
 
-
-        <CommonSeriesOptions EnableAnimation="true" Type="StackingBar100">
-
-        </CommonSeriesOptions>
+![](3D-Chart_images/3D-Chart_img13.png)
 
 
+### PerspectiveAngle	
 
-        <Series>
+The **PerspectiveAngle** specifies the appearance of the height, width, depth and wall of the 3D Chart. When the PerspectiveAngle is decreased, the 3D object appears very close to the viewer. But when it is increased, the 3D object appears far away from the viewer. 
 
-          <ej:Series Name="Brazil">
+{% highlight html %}
 
-              <points>
-
-                   <ej:points X="2006" Y="8000"/>
-
-                   <ej:points X="2007" Y="12000"/>
-
-                   <ej:points X="2008" Y="20000"/>
-
-                   <ej:points X="2009" Y="21000"/>
-
-                   <ej:points X="2010" Y="28000"/>
-
-                   <ej:points X="2011" Y="29000"/>                          
-
-              </points>
-
-          </ej:Series>
-
-          <ej:Series Name="Nigeria">
-
-              <points>
-
-                   <ej:points X="2006" Y="5000"/>
-
-                   <ej:points X="2007" Y="15000"/>
-
-                   <ej:points X="2008" Y="19000"/>
-
-                   <ej:points X="2009" Y="25000"/>
-
-                   <ej:points X="2010" Y="26000"/>
-
-                   <ej:points X="2011" Y="30000"/>                          
-
-              </points>
-
-          </ej:Series> 
-
-        </Series>   
-
-  </ej:Chart>
-
-{% endhighlight  %}
-
-The following screenshot displays the 100% 3D Stacking Bar.
+     <%--  //Change 3DChart perspective angle --%>
+     <ej:Chart ID="Chart1" runat="server" Enable3D="true" PerspectiveAngle="150">
+     </ej:Chart>
 
 
-
-![F:/bar100/sshot-2.png](3D-Chart_images/3D-Chart_img8.png)
-
+{% endhighlight %}
 
 
+![](3D-Chart_images/3D-Chart_img14.png)

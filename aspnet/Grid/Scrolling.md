@@ -735,7 +735,7 @@ The following code example describes the above behavior.
 
 ## Virtual Scrolling
 
-The virtual scrolling support allows you to load data that you require (load data based on page size) without buffering the entire huge database. To enable virtual scrolling by setting `AllowVirtulScrolling`  property of `ScrollSettings`  as `true`. It supports two mode of virtualization. They are,
+The virtual scrolling support allows you to load data that you require (load data based on page size) without buffering the entire huge database. To enable virtual scrolling by setting `AllowVirtualScrolling`  property of `ScrollSettings`  as `true`. It supports two mode of virtualization. They are,
 
 1. Normal Mode
 2. Continuous Mode

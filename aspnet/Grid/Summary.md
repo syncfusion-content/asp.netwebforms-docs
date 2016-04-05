@@ -9,7 +9,7 @@ documentation: ug
 
 # Summary 
 
-Summary is a key feature of Grid that is used to aggregate a particular column. This is useful to analyse the details of a particular column. It has the following types:
+Summary is a key feature of Grid that is used to aggregate a particular column. This is useful to analyze the details of a particular column. It has the following types:
 
 * Sum
 * Average 
@@ -21,7 +21,7 @@ Summary is a key feature of Grid that is used to aggregate a particular column. 
 ## Default Summary
 
 
-There are some default summary types available for basic summary formula. The following code example is for Default Summary Types. We can render summary ro for grid using ShowSummary and SummaryRows property of Grid.
+There are some default summary types available for basic summary formula. The following code example is for Default Summary Types. We can render summary rows for grid using ShowSummary and SummaryRows property of Grid.
 
 {% tabs %}
 

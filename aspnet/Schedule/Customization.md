@@ -4,7 +4,7 @@ description: Customization of working hours, date, and appointment window
 platform: aspnet
 control: schedule
 documentation: ug
-keywords: customization, work hours, appointment window, display hours 
+keywords: customization, work hours, appointment window, display hours, Query cell info
 ---
 # Customization
 
@@ -233,7 +233,7 @@ The styles to be applied for the controls within the custom appointment window a
 
 {% highlight html %}
 
-<asp:Content runat="server" ID="Style" ContentPlaceHolderID="StyleSection">
+    <asp:Content runat="server" ID="Style" ContentPlaceHolderID="StyleSection">
     <style type="text/css">
      .customcheck {
             float: left;
@@ -254,7 +254,7 @@ The styles to be applied for the controls within the custom appointment window a
             margin-bottom:10px;
         }
     </style>
-</asp:Content>
+    </asp:Content>
 
 {% endhighlight %}
 
@@ -303,13 +303,14 @@ The following function needs to be defined within script section, which gets cal
         }
     </script>
 </asp:Content>   
+
 {% endhighlight %}
 
 On clicking the **Submit** button within the Custom Appointment window, the following function gets executed – which will validate the appointment fields and then save it appropriately.
 
 {% highlight html %}
 
-<asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
+    <asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
     <script type="text/javascript">
      function save() {
             // checks if the subject value is not left blank before saving it.
@@ -391,7 +392,112 @@ On clicking the **Submit** button within the Custom Appointment window, the foll
             $("#customWindow").ejDialog("close");
         }
     </script>
-</asp:Content> 
+    </asp:Content> 
 
 {% endhighlight %}
 
+## Query cell info
+
+It is possible to format and customize almost every child elements of scheduler such as work cells, header cells, time cells and so on using `QueryCellInfo` event.
+
+The following code snippet shows how to customize the appointment and work cells based on the query cell info event.
+     
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
+    <div>
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" QueryCellInfo="checkFormat" Width="100%" Height="525px" CurrentDate="5/2/2014">
+    <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule"/>
+</ej:Schedule>
+    </div>
+</asp:Content>
+
+{% endhighlight %}
+
+While loading the scheduler using above code, the below function gets triggered by the `QueryCellInfo` event which customizes the corresponding DOM element.
+
+{% highlight html %}
+
+    <asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
+    <script type="text/javascript">
+     function checkFormat(args) {
+	    switch (args.requestType) {
+		case "workcells":
+			args.element.css("background-color", "#ffe9cc");
+			break;
+		case "monthcells":
+			args.element.css("background-color", "#faa41a");
+			args.element.css("border-color", "#faa41a");
+			break;
+		}
+    }
+    </script>
+    </asp:Content> 
+
+{% endhighlight %}
+
+The Scheduler elements are listed below which can be formatted through this event. The names are listed in the format with which it can be accessed or used within the requestType argument of the event.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Request Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">appointment</td>
+            <td class="description">Depicts the appointment element within the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">agendacells</td>
+            <td class="description">Depicts the Agenda Cell element within the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">alldaycells</td>
+            <td class="description">Depicts the AllDay cell element within the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">headercells</td>
+            <td class="description">Depicts the header cell element within the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">resourceheadercells</td>
+            <td class="description">Depicts the resource header cell element within the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">leftheadercells</td>
+            <td class="description">Depicts the left empty space on header cell element within the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">leftindentcells</td>
+            <td class="description">Depicts the left empty space on date cell element within the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">timecells</td>
+            <td class="description">Depicts the left side time panel cell element within the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">headerdate</td>
+            <td class="description">Depicts the header date cell element within the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">emptytd</td>
+            <td class="description">Depicts the empty space above the vertical scroller within the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">resourcegroupheader</td>
+            <td class="description">Depicts the header group cell in horizontal orientation in the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">monthcells</td>
+            <td class="description">Depicts the month cell element within the Scheduler.</td>
+        </tr>
+        <tr>
+            <td class="name">workcells</td>
+            <td class="description">Depicts the work cell element within the Scheduler.</td>
+        </tr>
+    </tbody>
+</table>

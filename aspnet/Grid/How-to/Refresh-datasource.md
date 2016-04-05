@@ -9,7 +9,7 @@ documentation: ug
 
 ## Refresh datasource
 
-Grid allows you to refresh datasource dynamically after Gridinitialization. It is useful to refresh Griddatasource.
+Grid allows you to refresh datasource dynamically after Grid initialization. It is useful to refresh Grid datasource.
 
 {% tabs %}
 
