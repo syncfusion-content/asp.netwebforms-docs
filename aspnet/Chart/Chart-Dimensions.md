@@ -9,54 +9,61 @@ documentation: ug
 
 # Chart Dimensions
 
-In this section you can learn how to change the Chart dimensions. You can change the Chart height and width in terms of pixels and percentage with the size property. When size is specified, the Chart remains to that specific size irrespective of the size of the container. You can always resize the Chart when the browser or Chart container is resized by setting CanResize property to true, where the Chart adapts to the changes in size of the container. By default, Chart height will be 450px and Chart width takes the container width as default value.
+You can set the size of the chart directly on the chart or to the container of the chart. When you do not specify the size, it takes 450px as the height and window size as its width, by default. 
 
-## Setting dimension in pixel values:
+## Set size for the container
 
-You can specify the width and height in pixels to change the dimension of the Chart. 
+You can customize the chart dimension by setting the width and height for the container element. 
 
-### Setting size
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server" Width="820" Height="500">    
+</ej:Chart>
+
+{% endhighlight %}
+
+
+## Set size in pixels
+
+You can also set the chart dimension by using the **Size** property of the chart. 
 
 {% highlight html %}
 
 
-<ej:Chart ID="Chart1" runat="server" Width="600" Height="800" CanResize="true">
-
+<ej:Chart ID="Chart1" runat="server">    
+    <Size Width="600" Height="450"></Size>
 </ej:Chart>
 
-
-{% endhighlight  %}
-
-
-In the above code, the width is set as 800px and height as 600px that displays the following Chart with the dimension 800*600.
-
-
+{% endhighlight %}
 
 ![](Chart-Dimensions_images/Chart-Dimensions_img1.png)
 
 
+## Setting size relative to the container size
 
-## Setting dimension in percentage values:
-
-You can also set the width and height of the Chart in percentage. The Chart gets its dimension with respect to its container size.
-
-### Setting size in percentage
-
+You can specify the chart size in percentage by using the Size property. The chart gets its dimension with respect to its container.
 
 {% highlight html %}
 
-
-<ej:Chart ID="Chart1" runat="server" Width="90%" Height="80%">
-
-</ej:Chart>
-
-
-{% endhighlight  %}
+<div style="width:700px; height:500px">  
+   <ej:Chart ID="Chart1" runat="server">    
+       <Size Width="90%" Height="80%"></Size>
+   </ej:Chart>
+</div>
 
 
-
+{% endhighlight %}
 
 ![](Chart-Dimensions_images/Chart-Dimensions_img2.png)
 
 
+## Responsive chart
 
+To resize the Chart when the browser or the chart container is resized, set the **IsResponsive** property to **True**, where the chart adapts to the changes in size of the container.
+
+{% highlight html %}
+
+   <ej:Chart ID="Chart1" runat="server" IsResponsive="true">    
+   </ej:Chart>
+
+{% endhighlight %} 

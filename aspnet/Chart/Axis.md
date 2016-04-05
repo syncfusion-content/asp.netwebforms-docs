@@ -7,1057 +7,928 @@ control: Chart
 documentation: ug
 ---
 
+
 # Axis
 
-Charts typically have two axes that are used to measure and categorize data: a vertical (y) axis, and a horizontal (x) axis. To make a Chart easier to understand, you can add axis titles, tick marks, and labels. You can also change the alignment of axis title and format the labels that are displayed on axes. By default horizontal (x) axis and vertical (y) axis gets added to the Chart with axis labels, gridlines, and tick lines. You can also customize these axis explicitly by adding axis title or removing gridlines, tick lines that are added to the axis by default.
+**Charts** typically have two axes that are used to measure and categorize data: a vertical (y) axis, and a horizontal (x) axis.
 
-Chart Axis supports the following types:
+Vertical axis always uses numerical or logarithmic scale. Horizontal(x) axis supports the following types of scale:
 
-* Double
-* DateTime
 * Category
+* Numeric
+* DateTime
 * Logarithmic
 
-You can choose any of the Chart axis type using the” ValueType” property in axis. Axis calculates the range and interval automatically based on the series data points.
+## Category Axis
 
-
-{% highlight html %}
-
-
-<ej:Chart ID="Chart1" runat="server">
-
-        <PrimaryXAxis MajorTickLines-Visible="false" Title-Text="Country" />
-
-        <PrimaryYAxis Title-Text="Production" />
-
- </ej:Chart>
-
-{% endhighlight %}
-
-
-
-
-
-![](Axis_images/Axis_img1.png) 
-
-
-
-## Double 
-
-By default the ValueType of the axis is double and it represents the numerical data.
+Category axis displays the text labels instead of numbers. To use the categorical axis, you can set the **ValueType** property of the axis to the **Category**. Default value of ValueType is **Double**.
 
 {% highlight html %}
 
+  @(Html.EJ().Chart("chartContainer")
 
-<ej:Chart ID="Chart1" runat="server">
+      // ...
 
-        <PrimaryXAxis MajorTickLines-Visible="false" Title-Text="Year" ValueType="Double"/>
-
-          <series>
-
-                <ej:Series>
-
-                     <Points>
-
-                        <ej:Points  X="200" Y="10"/>
-
-                        <ej:Points  X="210" Y="13"/>
-
-                        <ej:Points  X="220" Y="18"/>
-
-                        <ej:Points  X="230" Y="13"/>
-
-                        <ej:Points  X="240" Y="15"/>
-
-                        <ej:Points  X="250" Y="13"/>
-
-                        <ej:Points  X="260" Y="16"/>
-
-                        <ej:Points  X="270" Y="10"/>
-
-                        <ej:Points  X="280" Y="18"/>
-
-                    </Points>
-
-                </ej:Series>
-
-            </series>
-
- </ej:Chart>
-
+     .PrimaryXAxis(
+          //Use categorical scale in primary X axis
+          px=>px.ValueType(AxisValueType.Category)
+     )
+        // ...
+    )
 
 
 {% endhighlight %}
 
 
-
-With the default auto range calculation, the range padding properties allows you to customize the automatic range calculation.
-
-### Range Padding:
-
-### None:
-
-By default, the RangePadding for Numerical Axis is none.
-
-The following screenshot displays a Chart’s x-axis with RangePadding set to None.
+![](Axis_images/axis_img1.png)
 
 
-
-![](Axis_images/Axis_img2.png)
-
+[Click](http://asp.syncfusion.com/demos/web/chart/column.aspx) here to view our online demo sample that uses Category axis.
 
 
-### Additional:
+### Place labels on ticks
 
-If RangePadding for Numerical Axis is set to Additional, the interval of the axis is added as padding.
+Labels in the category axis can be placed on the ticks by setting the **LabelPlacement** property of axis to the onTicks. The default value of the LabelPlacement property is betweenTicks i.e. labels are placed between the ticks, by default.
 
-The following screenshot illustrates a Chart’s x-axis with RangePadding set to Additional.
+{% highlight html %}
 
+@(Html.EJ().Chart("chartContainer")
 
+      // ...
 
-![](Axis_images/Axis_img3.png)
-
-
-
-### Normal:
-
-Normal RangePadding for a Numerical Axis is used mostly for the y-axis to have padding based on the Range calculation.
-
-The following screenshot illustrates a Chart’s y-axis with RangePadding set to Normal.
-
+     .PrimaryXAxis(
+          //Placing X-axis labels on the ticks
+          px=>px.LabelPlacement("onTicks")
+     )
+        // ...
+    )
 
 
-![](Axis_images/Axis_img4.png)
+{% endhighlight %}
+
+![](Axis_images/axis_img2.png)
 
 
+### Display labels after a fixed interval
 
-### Round:
+To display the labels after a fixed interval n, you can set the **Interval** property of the axis range as **n**. The default value of the interval is 1 i.e. all the labels are displayed.
 
-Round RangePadding for a Numerical Axis rounds the range of the Chart axis to the nearest possible value divisible by the interval.
+{% highlight html %}
 
-The following screenshot illustrates a Chart’s x-axis with RangePadding set to Round.
+@(Html.EJ().Chart("chartContainer")
+
+      // ...
+
+     .PrimaryXAxis(
+          //Displaying labels after 2 intervals
+          px=>px.Range(ra=>ra.Interval(2))
+     )
+        // ...
+    )
 
 
+{% endhighlight %}
 
-![](Axis_images/Axis_img5.png)
+![](Axis_images/axis_img3.png)
 
+
+### Indexed Category Axis
+
+Category axis can also plot points based on index value of data points. Index based plotting can be enabled by setting **IsIndexed** property to true in the axis.
+
+{% highlight html %}
+
+    <ej:Chart ID="Chart1" runat="server">
+         <PrimaryXAxis IsIndexed="true"></PrimaryXAxis>
+       <Series>
+          <ej:Series>
+              <Points>
+                  <ej:Points X="Monday" Y="50"></ej:Points>
+                  <ej:Points X="Tuesday" Y="40"></ej:Points>
+                  <ej:Points X="Wednesday" Y="70"></ej:Points>
+                  <ej:Points X="Thursday" Y="60"></ej:Points>
+                  <ej:Points X="Friday" Y="50"></ej:Points>
+                  <ej:Points X="Monday" Y="40"></ej:Points>
+                  <ej:Points X="Monday" Y="30"></ej:Points>
+              </Points>
+          </ej:Series>
+       </Series>
+    </ej:Chart>
+
+{% endhighlight %}
+
+
+![](Axis_images/axis_img50.png)
+
+**While Category axis isIndexed value false**
+
+![](Axis_images/axis_img51.png)
+
+
+## Numeric Axis 
+
+Numeric axis uses numerical scale and displays numbers as labels. To use numeric axis, you can set the **ValueType** property of the axis to **Double**. 
+
+{% highlight html %}
+
+       <ej:Chart ID="Chart1" runat="server">
+            <%--Use numerical scale in primary Y axis--%>
+            <PrimaryYAxis ValueType="Double"></PrimaryYAxis>
+        </ej:Chart>
+
+
+{% endhighlight %}
+
+![](Axis_images/axis_img4.png)
+
+
+### Customize numeric range
+
+To customize the range of an axis, you can use the **Range** property of the axis to set the **Minimum**, **Maximum** and **Interval** values. Nice range is calculated automatically based on the provided data, by default.
+
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <PrimaryYAxis>
+        <%--Customizing Y-axis range--%>
+        <Range Min="0" Max="50" />
+    </PrimaryYAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img5.png)
+
+
+#### Customizing numeric interval
+
+Axis interval can be customized by using the **Interval** property of the axis range. Nice interval is calculated based on the minimum and maximum value of the provided data, by default.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <PrimaryYAxis>
+        <%--Set interval to PrimaryYAxis--%>
+        <Range Interval="5"/>
+    </PrimaryYAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img6.png)
+
+
+### Apply padding to the range
+
+Padding can be applied to the minimum and maximum extremes of the axis range by using the **RangePadding** property. Numeric axis supports the following types of padding
+
+* None
+* Round
+* Additional
+* Normal
+
+**None**
+
+When the value of the RangePadding property is **None**, padding can not be applied to the axis. This is also the default value of the rangePadding. 
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <%--Applying none as range padding--%>
+    <PrimaryYAxis RangePadding="None">      
+    </PrimaryYAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img7.png)
+
+
+#### Round
+
+When the value of RangePadding property is **Round**, the axis range is rounded to the nearest possible value divided by the interval.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <%--Applying round as range padding--%>
+    <PrimaryYAxis RangePadding="Round">      
+    </PrimaryYAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+**Chart before rounding axis range**
+
+![](Axis_images/axis_img8.png)
+
+
+**Chart after rounding axis range**
+
+![](Axis_images/axis_img9.png)
+
+
+**Additional**
+
+When the value of the RangePadding property is **Additional**, the axis range is rounded and an interval of the axis is added as padding to the minimum and maximum values of the range.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <%--Applying additional as range padding--%>
+    <PrimaryYAxis RangePadding="Additional">      
+    </PrimaryYAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img10.png)
+
+
+**Normal**
+
+When the value of the RangePadding property is **Normal**, the padding is applied to the axis based on the range calculation.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <%--Applying normal as range padding--%>
+    <PrimaryYAxis RangePadding="Normal">      
+    </PrimaryYAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img11.png)
 
 
 ## DateTime Axis
 
-The DateTime Axis has a property IntervalType that sets the DateTime interval to one of the following:
+Date time axis uses date time scale and displays the date time values as axis labels in the specified format. To use date time axis, set the ValueType property of the axis to **Datetime**.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <%--Use date time scale in primary X axis--%>
+    <PrimaryXAxis ValueType="Datetime">
+    </PrimaryXAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img12.png)
+
+
+[Click](http://asp.syncfusion.com/demos/web/chart/datetimeaxis.aspx) here to view our online demo sample for date time axis.
+
+ 
+### Customizing date time range
+ 
+ Axis range can be customized by using the Range property to set the **Minimum**, **Maximum** and **Interval** values. Nice range is calculated automatically based on the provided data, by default.
+ 
+ {% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <%--Customizing X-axis date time range--%>
+    <PrimaryXAxis>
+        <Range Min="2000/6/1" Max="2010/6/1" />
+    </PrimaryXAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img13.png)
+
+
+### Date time intervals
+
+Date time intervals can be customized by using the **Interval** and **IntervalType** properties of the axis. For example, when you set Interval as **2** and IntervalType as **Years**, it considers the 2 years as interval.
+
+Essential Chart supports the following types of interval for date time axis.
 
 * Days
 * Hours
 * Milliseconds
-* Minutes 
+* Minutes
 * Months
 * Seconds
 * Years
 
-The Interval property of DateTime Axis can be any double value based on the IntervalType.
-
-{% tabs %}
-
 {% highlight html %}
 
-
-<ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true">
-
-            <PrimaryXAxis ValueType="Datetime" Title-Text="Years" /> 
-
-             <Series>
-
-               <ej:Series EnableAnimation="True" Type="Line" Name="Sales" XName="Xvalue" YName="YValue1">   
-
-               </ej:Series>
-
-              </Series>
-
-        </ej:Chart>
-
-{% endhighlight  %}
-
-{% highlight c# %}
-
-
-     this.Chart1.PrimaryXAxis.Range.Min = new DateTime(2000, 6, 1);
-
-      this.Chart1.PrimaryXAxis.Range.Max = new DateTime(2010, 6, 1);
-
-      this.Chart1.PrimaryXAxis.Range.Interval = 1;
-
-
-
-      List<DatetimeData> data = new List<DatetimeData>();
-
-
-
-      data.Add(new DatetimeData(new DateTime(2000, 06, 11), 10));
-
-      data.Add(new DatetimeData(new DateTime(2002, 03, 07), 30));
-
-      data.Add(new DatetimeData(new DateTime(2004, 03, 06), 15));
-
-      data.Add(new DatetimeData(new DateTime(2006, 03, 30), 65));
-
-      data.Add(new DatetimeData(new DateTime(2008, 03, 08), 90));
-
-      data.Add(new DatetimeData(new DateTime(2010, 03, 08), 85));
-
-
-
-      this.Chart1.DataSource = data;
-
-      this.Chart1.DataBind();
-
-
-
-[Serializable]
-
-    public class DatetimeData
-
-    {
-
-        public DatetimeData(DateTime xval, double yvalue1)
-
-        {
-
-            this.Xvalue = xval;
-
-            this.YValue1 = yvalue1;
-
-
-
-
-
-        }
-
-        public DateTime Xvalue
-
-        {
-
-            get;
-
-            set;
-
-        }
-
-        public double YValue1
-
-        {
-
-            get;
-
-            set;
-
-        }
-
-    }
-
+<ej:Chart ID="Chart1" runat="server">
+    <%--Customizing X-axis date time interval--%>
+    <PrimaryXAxis IntervalType="Years">
+        <Range Interval="2" />
+    </PrimaryXAxis>
+</ej:Chart>
 
 {% endhighlight %}
 
-{% endtabs %}
 
-
-![](Axis_images/Axis_img6.png)
-
-
-
-With the default auto range calculation, the RangePadding properties for date-time axis allow you to customize the automatic range calculation.
-
-### Range Padding:
-
-### None:
-
-By default, the RangePadding for a DateTime Axis is None.
-
-The following screenshot illustrates a Chart’s x-axis with RangePadding set to None. 
+![](Axis_images/axis_img14.png)
 
 
 
-![](Axis_images/Axis_img7.png)
+### Apply padding to the range
 
+Padding can be applied to the minimum and maximum extremes of the range by using the **RangePadding** property. Date time axis supports the following types of padding
 
+* None
+* Round
+* Aditional
 
-### Additional:
+**None**
 
-If RangePadding for DateTime Axis is set to Additional, the DateTime interval of the axis is added as padding.
-
-The following screenshot illustrates a Chart’s x-axis with RangePadding set to Additional.
-
-
-
-![](Axis_images/Axis_img8.png)
-
-
-
-### Round:
-
-Round RangePadding for a DateTime Axis rounds the range of the Chart axis to the nearest possible Date Time value.
-
-The following screenshot illustrates a Chart’s x-axis with RangePadding set to Round.
-
-
-
-![](Axis_images/Axis_img9.png)
-
-
-
-## Category Axis
-
-Category (x) axis displays text labels instead of numerical intervals. By default, the interval is 1 for which all the labels are displayed. To display every nth label, you can set that in Interval property. For example, to display every 2nd label, you can set Interval as 2
-
-{% tabs %}
+When the value of the RangePadding property is **None**, padding is applied to the axis. This is also the default value of the rangePadding. 
 
 {% highlight html %}
 
+<ej:Chart ID="Chart1" runat="server">
+    <%--Applying none as range padding--%>
+    <PrimaryXAxis RangePadding="None">
+    </PrimaryXAxis>
+</ej:Chart>
 
-<ej:Chart ID="Chart1" runat="server" >
+{% endhighlight %} 
 
-    <PrimaryYAxis Title-Text="Medals"/>       
-
-           <Series>
-
-             <ej:Series Name="Gold">
-
-                   <Points>
-
-                        <ej:Points  X="USA" Y="50"/>
-
-                        <ej:Points  X="China" Y="40"/>
-
-                        <ej:Points  X="Japan" Y="70"/>
-
-                        <ej:Points  X="Australia" Y="60"/>
-
-                        <ej:Points  X="France" Y="50"/>
-
-                        <ej:Points  X="Germany" Y="40"/>
-
-                        <ej:Points  X="Italy" Y="40"/>
-
-                        <ej:Points  X="Sweden" Y="30"/>
-
-                    </Points>
-
-             </ej:Series>
-
-           </Series>
-
-      </ej:Chart>
+![](Axis_images/axis_img15.png)
 
 
-{% endhighlight %}
+**Round**
 
-{% highlight c# %}
+When the value of the RangePadding property is **Round**, the axis range is rounded to the nearest possible date time value.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <%--Applying round as range padding--%>
+    <PrimaryXAxis RangePadding="Round">
+    </PrimaryXAxis>
+</ej:Chart>
+
+{% endhighlight %} 
+
+**Chart before rounding axis range**
+
+![](Axis_images/axis_img16.png)
 
 
-      this.Chart1.PrimaryYAxis.Range.Min =0;
+**Chart after rounding axis range**
 
-      this.Chart1.PrimaryYAxis.Range.Max = 80;
-
-      this.Chart1.PrimaryYAxis.Range.Interval = 20; 
+![](Axis_images/axis_img17.png)
 
 
-{% endhighlight  %}
+**Additional** 
 
-{% endtabs %}
+When the value of the RangePadding property is **Additional**, the range is rounded and date time interval of the axis are added as padding to the minimum and maximum extremes of the range.
 
+{% highlight html %}
 
-![](Axis_images/Axis_img10.png) 
+<ej:Chart ID="Chart1" runat="server">
+    <%--Applying additional as range padding--%>
+    <PrimaryXAxis RangePadding="Additional">
+    </PrimaryXAxis>
+</ej:Chart>
 
+{% endhighlight %} 
+
+![](Axis_images/axis_img18.png)
 
 
 ## Logarithmic Axis
 
-An axis displaying a logarithmic scale is very useful when your data values span orders of magnitude. Log axis is enabled using ValueType property.
+Logarithmic axis uses logarithmic scale and it is very useful in visualizing when the data has values with both lower order of magnitude **(eg: 10<sup>-6</sup>)** and higher order of magnitude **(eg: 10<sup>6</sup>)**. To use logarithmic axis, set the ValueType property of the axis to **Logarithmic**.  
+
 {% highlight html %}
 
+<ej:Chart ID="Chart1" runat="server">
+    <%--Use logarithmic scale in primary X axis--%>
+    <PrimaryXAxis ValueType="Logarithmic">
+    </PrimaryXAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+
+![](Axis_images/axis_img19.png)
+
+
+[Click](http://asp.syncfusion.com/demos/web/chart/logaxis.aspx) here to view our online demo sample link for logarithmic axis.
+
+### Customize Logarithmic range
+
+Logarithmic range can be customized by using the Range property of the axis to change the Minimum, Maximum and Interval values. Nice range is calculated automatically based on the provided data, by default.
+
+{% highlight html %}
 
 <ej:Chart ID="Chart1" runat="server">
+    <%--Customizing logarithmic range--%>
+    <PrimaryYAxis>
+        <Range Min="1" Max="5" />
+    </PrimaryYAxis>
+</ej:Chart>
 
-         <PrimaryYAxis Title-Text="Medals" ValueType="Logarithmic"/>
+{% endhighlight %}
 
-
-
-           <Series>
-
-             <ej:Series Name="India">
-
-                   <Points>
-
-                        <ej:Points  X="1990" Y="80"/>
-
-                        <ej:Points  X="1991" Y="200"/>
-
-                        <ej:Points  X="1992" Y="400"/>
-
-                        <ej:Points  X="1993" Y="600"/>
-
-                        <ej:Points  X="1994" Y="900"/>
-
-                        <ej:Points  X="1995" Y="1400"/>
-
-                        <ej:Points  X="1996" Y="2000"/>
-
-                        <ej:Points  X="1997" Y="4000"/>
-
-                        <ej:Points  X="1998" Y="6000"/>
-
-                        <ej:Points  X="1999" Y="8000"/>
-
-                        <ej:Points  X="2000" Y="9000"/>
-
-                    </Points>
-
-             </ej:Series>
+![](Axis_images/axis_img20.png)
 
 
+### Logarithmic base
 
-         </Series>
+Logarithmic base can be customized by using the **LogBase** property of the axis. The default value of the LogBase is **10**.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <%--Customizing logarithmic base--%>
+    <PrimaryYAxis LogBase="2">
+    </PrimaryYAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img21.png)
 
 
+### Logarithmic interval
 
-      </ej:Chart>
+Logarithmic axis interval can be customized by using the Interval property of the axis. When the logarithmic base is 10 and logarithmic interval is 2, then the axis labels are placed at an interval of 10<sup>2</sup>. The default value of the interval is 1. 
 
-{% endhighlight  %}
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <%--Customizing logarithmic interval--%>
+    <PrimaryYAxis>
+        <Range Interval="2" />
+    </PrimaryYAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img22.png)
+      
+
+## Label Format
+
+### Format numeric labels
+
+Numeric labels can be formatted by using the **LabelFormat** property. Numeric values can be formatted with n (number with decimal points), c (currency) and p (percentage) commands.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <%--Applying currency format to axis labels--%>
+    <PrimaryXAxis LabelFormat="c">
+    </PrimaryXAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img23.png)
 
 
-![](Axis_images/Axis_img11.png) 
+The following table describes the result of applying some commonly used label formats on numeric values. 
+ 
+<table>
+<tr>
+<td><b>Label Value</b></td>
+<td><b>Label Format property value</b></td>
+<td><b>Result </b></td>
+<td><b>Description </b></td>
+</tr>        
+<tr>
+<td>1000</td>
+<td>n1</td>
+<td>1000.0</td>
+<td>The Number is rounded to 1 decimal place</td>
+</tr> 
+<tr>
+<td>1000</td>
+<td>n2</td>
+<td>1000.00</td>
+<td>The Number is rounded to 2 decimal place</td>
+</tr> 
+<tr>
+<td>1000</td>
+<td>n3</td>
+<td>1000.000</td>
+<td>The Number is rounded to 3 decimal place</td>
+</tr>
+<tr>
+<td>0.01</td>
+<td>p1</td>
+<td>1.0%</td>
+<td>The Number is converted to percentage with 1 decimal place</td>
+</tr>
+<tr>
+<td>0.01</td>
+<td>p2</td>
+<td>1.00%</td>
+<td>The Number is converted to percentage with 2 decimal place</td>
+</tr>
+<tr>
+<td>0.01</td>
+<td>p3</td>
+<td>1.000%</td>
+<td>The Number is converted to percentage with 3 decimal place</td>
+</tr>
+<tr>
+<td>1000</td>
+<td>c1</td>
+<td>$1,000.0</td>
+<td>The Currency symbol is appended to number and number is rounded to 1 decimal place</td>
+</tr>
+<tr>
+<td>1000</td>
+<td>c2</td>
+<td>$1,000.00</td>
+<td>The Currency symbol is appended to number and number is rounded to 2 decimal place</td>
+</tr>
+</table>
 
 
-### Chart Axis Properties:
+### Format date time values
 
-Chart Axis Properties Table
+Date time labels can be formatted by using the **LabelFormat** property of the axis.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <%--Formatting date time labels in date/Month name/Year format--%>
+    <PrimaryXAxis LabelFormat="dd/MMMM/yyyy">
+    </PrimaryXAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img24.png)
+
+
+The following table describes the result of applying some common date time formats to the labelFormat property
 
 <table>
 <tr>
-<th>
-{{ '**Chart Axis Properties**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+<td><b>Label Value</b></td>
+<td><b>Label Format Property Value</b></td>
+<td><b>Result </b></td>
+<td><b>Description </b></td>
+</tr>        
 <tr>
-<td>
-DesiredIntervals</td><td>
-An integer property used to indicate the preferred total number of intervals to be displayed for auto range calculation.</td></tr>
+<td>new Date(2000, 03, 10)</td>
+<td>dddd</td>
+<td>Monday</td>
+<td>The Date is displayed in day format</td>
+</tr> 
 <tr>
-<td>
-MaximumLabels</td><td>
-An Integer property used to indicate number of labels per 100 pixels. By default, 3 labels renders for 100 pixels of length.</td></tr>
+<td>new Date(2000, 03, 10)</td>
+<td>MM/dd/yyyy</td>
+<td>04/10/2000</td>
+<td>The Date is displayed in month/date/year format</td>
+</tr> 
+<tr>
+<td>new Date(2000, 03, 10)</td>
+<td>n3</td>
+<td>1000.000</td>
+<td>The Number is rounded to 3 decimal place</td>
+</tr>
+<tr>
+<td>new Date(2000, 03, 10)</td>
+<td>MMM</td>
+<td>Apr</td>
+<td>The Shorthand month for the date is displayed</td>
+</tr>
+<tr>
+<td>new Date(2000, 03, 10)</td>
+<td>t</td>
+<td>12:00 AM</td>
+<td>Time of the date value is displayed as label</td>
+</tr>
+<tr>
+<td>new Date(2000, 03, 10)</td>
+<td>hh:mm:ss</td>
+<td>12:00:00</td>
+<td>The Label is displayed in hours:minutes:seconds format</td>
+</tr>
 </table>
 
+### Custom label format
+
+Prefix and suffix can be added to the category labels by using the LabelFormat property. You can use the *{value}* as placeholder text in your custom text, it is replaced with the corresponding axis label at the runtime.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <%--Adding prefix and suffix to axis labels--%>
+    <PrimaryXAxis LabelFormat="${value} K">
+    </PrimaryXAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img25.png)
+
+
+## Common axis features
+
+Customization of features such as axis title, labels, grid lines and tick lines are common to all the axis. Each of these features are explained in this section.
+
+### Axis Visibility
+
+Axis visibility can be controlled by using the **Visible** property of the axis. The default value of the Visible property is **True**. 
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <%--Disabling visibility of Y-axis--%>
+    <PrimaryYAxis Visible="false">
+    </PrimaryYAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img26.png)
+
+
+### Axis title
+
+The **Title** property in the axis provides options to customize the text and font of the axis title. Axis does not display the title, by default. Title text can also be trimmed based on the title text length or specified length.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <%--Customizing axis title--%>
+    <PrimaryXAxis EnableTrim="true">
+        <Title Text="Month" MaximumTitleWidth="80">
+            <Font Color="grey" FontWeight="Bold" FontFamily="Segoe UI" FontSize="16px">
+            </Font>
+        </Title>
+    </PrimaryXAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img27.png)
+
+
+### Label customization
+
+The **Font** property of the axis provides options to customize the FontFamily, Color, Opacity, Size and FontWeight of the axis labels.  
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <%--Customizing label appearance--%>
+    <PrimaryXAxis EnableTrim="true">
+            <Font Color="blue" FontWeight="Bold" FontFamily="Segoe UI" FontSize="14px">
+            </Font>
+    </PrimaryXAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img28.png)
+
+
+### Label and tick positioning
+ 
+Axis labels and ticks can be positioned inside or outside the chart area by using the **LabelPosition** and **TickPosition** properties. The labels and ticks are positioned outside the chart area, by default.
+ 
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <%--Customizing label and tick positions--%>
+    <PrimaryXAxis AxislabelPosition="Inside" TickLinesPosition="Inside">
+    </PrimaryXAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img29.png)
+
+
+### Edge labels placement
+
+Labels with long text at the edges of an axis may appear partially outside the chart. The **EdgeLabelPlacement** property can be used to avoid the partial appearance of the labels at the corners. 
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <%--Customizing edge label placement--%>
+    <PrimaryXAxis EdgeLabelPlacement="Shift">
+    </PrimaryXAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+**Chart before setting edge label placement to X-axis**
+
+![](Axis_images/axis_img30.png)
+
+
+**Chart after setting edge label placement to X-axis**
+
+![](Axis_images/axis_img31.png)
+
+
+### Grid lines customization
+
+The **MajorGridLines** and **MinorGridLines** properties in the axis are used to customize the major grid lines and minor grid lines of an axis. They provide options to change the Width, Color, Visibility and Opacity of the grid lines. The minor grid lines are not visible, by default.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <%--Customizing grid lines--%>
+    <PrimaryXAxis MinorTicksPerInterval="0">
+        <MajorGridLines Color="blue" Visible="true" Width="1" />
+        <MinorGridLines Color="red" Visible="false" Width="1" />
+    </PrimaryXAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img32.png)
+
+
+### Tick lines customization
+
+The **MajorTickLines** and **MinorTickLines** properties in the axis are used to customize the major tick lines of an axis and minor tick lines of an axis. They provide options to change the Width, Size, Color and Visibility of the grid lines. The minor tick lines are not visible, by default.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <%--Customizing grid lines--%>
+    <PrimaryXAxis MinorTicksPerInterval="0">
+        <MajorTickLines Color="blue" Visible="true" Width="1" Size="5" />
+        <MinorTickLines Color="red" Visible="false" Width="1" Size="5" />
+    </PrimaryXAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img33.png)
+
+  
+### Inversing axis
+
+Axis can be inversed by using the **IsInversed** property of the axis. The default value of the IsInversed property is **False**.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <%--Inversing the X-axis--%>
+    <PrimaryXAxis IsInversed="false">
+    </PrimaryXAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+**Chart before inversing the axes**
+
+![](Axis_images/axis_img34.png)
+
+
+**Chart after inversing the axes**
+
+![](Axis_images/axis_img35.png)
+   
+
+### Place axes at the opposite side
+
+The **OpposedPosition** property of axis can be used to place the axis at the opposite side of its default position. The default value of the OpposedPosition property is **False**. 
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <%--Placing axis at the opposite side of its normal position--%>
+    <PrimaryXAxis OpposedPosition="true">
+    </PrimaryXAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+**Chart with X and Y axes at normal position**
+
+![](Axis_images/axis_img36.png)
+
+
+**Chart with Y-axis at opposed position**
+
+![](Axis_images/axis_img37.png)
+
+
+### Maximum number of labels per 100 pixels
+
+A maximum of 3 labels are displayed for each 100 pixels in the axis, by default. The maximum number of labels that is present within the 100 pixels length can be customized by using the **MaximumLabels** property of the axis. This property is applicable only for an automatic range calculation and it does not work when you set the value for Interval property in the axis range.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <%--Maximum number of labels per 100 pixels--%>
+    <PrimaryXAxis MaximumLabels="1">
+    </PrimaryXAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+**Chart before setting maximum labels per 100 pixels**
+
+![](Axis_images/axis_img38.png)
+
+
+**Chart after setting maximum labels one per 100 pixels**
+
+![](Axis_images/axis_img39.png)
 
 
 
 ## Multiple Axis
 
-In cases of multiple series, a Chart can have multiple x and y axes to represent each series. The axes can be arranged in stacking or side-by-side mode. By default, the axes are arranged in side-by-side mode. In order to arrange the axis in a stacking mode, you can split the Chart into number of rows or columns using RowDefinitions and ColumnDefinitions and then you can place the required axis in the desired row and column. Heights of the vertical axes are customized using the RowHeight property in RowDefinitions and the widths of the horizontal axes are customized using ColumnWidth property in ColumnDefinitions. 
-{% highlight html %}
+Multiple axes can be used in the Chart and chart area can be split into multiple panes to draw multiple series with multiple axes.
 
+![](Axis_images/axis_img40.png)
 
-<ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true">
 
-            <RowDefinitions>
-
-                <ej:RowDefinitions Unit="percentage" RowHeight="50" />
-
-                <ej:RowDefinitions Unit="percentage" RowHeight="50" />
-
-            </RowDefinitions>
-
-            <PrimaryXAxis Title-Text="Month" />
-
-            <PrimaryYAxis Title-Text="Temperature(Fahrenheit)" LabelFormat="{value}F" />
-
-            <Axes>              
-
-                <ej:Axis RowIndex="1" PlotOffset="20" OpposedPosition="false" Name="yAxis1"      
-
-                       Title-Text="Temperature(Celsius)" />
-
-            </Axes>            
-
-           <Series>
-
-             <ej:Series Name="Germany">
-
-                  <Points>
-
-                        <ej:Points  X="Jan" Y="15"/>
-
-                        <ej:Points  X="Feb" Y="20"/>
-
-                        <ej:Points  X="Mar" Y="35"/>
-
-                        <ej:Points  X="Apr" Y="40"/>
-
-                        <ej:Points  X="May" Y="30"/>
-
-                        <ej:Points  X="Jun" Y="40"/>
-
-                        <ej:Points  X="Jul" Y="43"/>
-
-                        <ej:Points  X="Aug" Y="35"/>
-
-
-
-                    </Points>
-
-             </ej:Series>
-
-             <ej:Series Name="India"  YAxisName="yAxis1">
-
-                  <Points>
-
-                        <ej:Points  X="Jan" Y="33"/>
-
-                        <ej:Points  X="Feb" Y="31"/>
-
-                        <ej:Points  X="Mar" Y="30"/>
-
-                        <ej:Points  X="Apr" Y="28"/>
-
-                        <ej:Points  X="May" Y="29"/>
-
-                        <ej:Points  X="Jun" Y="30"/>
-
-                        <ej:Points  X="Jul" Y="33"/>
-
-                        <ej:Points  X="Aug" Y="32"/>
-
-
-
-                    </Points>
-
-             </ej:Series>
-
-
-
-           </Series>
-
-        </ej:Chart>
-
-
-
-
-{% endhighlight  %}
-
-
-![](Axis_images/Axis_img12.png)
-
-
-
-In the above code, you can remove the RowDefinition and RowIndex from axis to arrange the axes in the side-by- side mode.
-
-
-
-![](Axis_images/Axis_img13.png)
-
-
-
-### Spanning Axis:
-
-Charts having multiple series have multiple x and y axis to represent each series. By default, the axes are arranged in the corresponding row/column position. Spanning feature allows you to span the axis across multiple panes/rows. 
-{% highlight html %}
-
-<ej:Chart ID="Chart1" runat="server" Width="970" Height="600" CanResize="true" >
-
-            <RowDefinitions>
-
-                <ej:RowDefinitions RowHeight="25" Unit="percentage" />
-
-                <ej:RowDefinitions RowHeight="25" Unit="percentage" />
-
-                 <ej:RowDefinitions RowHeight="50" Unit="percentage" />
-
-            </RowDefinitions>
-
-            <PrimaryXAxis MajorGridLines-Visible="false" />
-
-            <PrimaryYAxis RowIndex="0" RowSpan="2" Title-Text="Million USD" />
-
-            <Axes>
-
-                <ej:Axis RowIndex="1" RowSpan="2" Font-FontSize="14px" Name="y1SecondQuater" Title-Text="Million USD" />
-
-                 <ej:Axis RowIndex="0"  RowSpan="3" Font-FontSize="14px" Name="y2SecondQuater" Title-Text="Million USD" />
-
-            </Axes>
-
-            <CommonSeriesOptions EnableAnimation="True"></CommonSeriesOptions>
-
-             <Series>
-
-                  <ej:Series Name="Gold" Type="Column">
-
-                  <Points>
-
-                        <ej:Points  X="USA" Y="50"/>
-
-                        <ej:Points  X="China" Y="40"/>
-
-                        <ej:Points  X="Japan" Y="70"/>
-
-                        <ej:Points  X="Australia" Y="60"/>
-
-                        <ej:Points  X="France" Y="50"/>
-
-                        <ej:Points  X="Germany" Y="40"/>
-
-                        <ej:Points  X="Italy" Y="40"/>
-
-                        <ej:Points  X="Sweden" Y="30"/>
-
-                    </Points>
-
-             </ej:Series>
-
-             <ej:Series Name="India" Type="Line" YAxisName="y1SecondQuater" >
-
-                    <Points>
-
-                         <ej:Points  X="USA" Y="70"/>
-
-                        <ej:Points  X="China" Y="60"/>
-
-                        <ej:Points  X="Japan" Y="40"/>
-
-                        <ej:Points  X="Australia" Y="30"/>
-
-                        <ej:Points  X="France" Y="25"/>
-
-                        <ej:Points  X="Germany" Y="40"/>
-
-                        <ej:Points  X="Italy" Y="35"/>
-
-                        <ej:Points  X="Sweden" Y="25"/>
-
-                    </Points>
-
-             </ej:Series>
-
-             <ej:Series Name="Canada" Type="Spline" YAxisName="y2SecondQuater">
-
-                    <Points>
-
-                        <ej:Points  X="USA" Y="10"/>
-
-                        <ej:Points  X="China" Y="19"/>
-
-                        <ej:Points  X="Japan" Y="40"/>
-
-                        <ej:Points  X="Australia" Y="70"/>
-
-                        <ej:Points  X="France" Y="35"/>
-
-                        <ej:Points  X="Germany" Y="82"/>
-
-                        <ej:Points  X="Italy" Y="57"/>
-
-                        <ej:Points  X="Sweden" Y="97"/>
-
-                    </Points>
-
-             </ej:Series>
-
-              </Series>
-
-
-
-        </ej:Chart>
-
-
-
-{% endhighlight %}
-
-
-
-![](Axis_images/Axis_img14.png)
-
-
-
-## Axis Title
-
-You can customize the ejChart Axis title text, font styles and color using “Title” property of axis.
-
-
-{% highlight html %}
-
-
-<ej:Chart ID="Chart1" runat="server">
-
-           <PrimaryXAxis Title-Text="Expenditure" Title-Font-Color="#AA3EEF" Title-Font-FontSize="16px" Title-Font-FontStyle="Normal" Title-Font-Opacity="1"  />
-
-         <PrimaryYAxis Title-Text="Expense" Title-Font-Color="#AA3EEF" Title-Font-FontSize="16px" Title-Font-FontStyle="Normal" Title-Font-Opacity="1"  />      
-
-      </ej:Chart>
-
-
-
-{% endhighlight %}
-
-
-
-![](Axis_images/Axis_img15.png)
-
-
-
-### Trim Title
-
-Essential Chart supports TrimmingAxisTitles with the properties, EnableTrim and MaximumTitleWidth. These are useful for shortening the lengthy titles. On hovering with the mouse, you can see the full title in the tooltip.
-
-![](Axis_images/Axis_img16.png)
-
-
-
-![](Axis_images/Axis_img17.png)
-
-
-
-{% highlight html %}
-
-
-
-<ej:Chart  ID="Chart1" runat="server">
-
-
-
-
-
-    <PrimaryXAxis Title-Text ="List of countries which are using solar power in the year 2014" />
-
-
-
-    <PrimaryYAxis Title-Text ="Measurements of Solar power used in different countries in the year 2014( in GW)" LabelFormat ="{value}GW"/>
-
-
-
-    <CommonSeriesOptions Type="Column" EnableAnimation="true" Tooltip-Visible="true"/>
-
-
-
-//.......
-
-
-
-</ ej:Chart>
-
-
-{% endhighlight %}
-
-## Labels
-
-The axis labels are present along the axis showing the value of the data it corresponds to. You can further customize the Chart axis labels using “Font” and “LabelFormat” properties of the axis.  
-
-{% highlight html %}
-
-
-<ej:Chart ID="Chart1" runat="server">
-
-      <PrimaryXAxis Title-Text="Expenditure" Font-Color="red" Font-FontSize="16px" 
-
-            Font-FontStyle="Normal" Font-Opacity="1"  />
-
-      <PrimaryYAxis Title-Text="Expense" Font-Color="red" Font-FontSize="16px" 
-
-           Font-FontStyle="Normal" Font-Opacity="1"  />      
-
-   </ej:Chart>
-
-
-
-{% endhighlight %}
-
-![](Axis_images/Axis_img18.png)
-
-
-
-### LabelPlacement:
-
-The category axis includes the LabelPlacement property that is used to set the labels of the axis between the tick lines or on the tick lines of the category axis. By default the LabelPlacement value for the category axis is BetweenTicks.
-
-There are two types of LabelPlacement:
-
-* BetweenTicks
-* OnTicks
+An additional horizontal or vertical axis can be added to the chart by adding an axis instance to the **Axes** collection and then you can associate it to a series by specifying the name of the axis to the **XAxisName** or **YAxisName** property of the series.
 
 {% highlight html %}
 
 <ej:Chart ID="Chart1" runat="server">
-
-           <PrimaryXAxis Title-Text="'Countries' " LabelPlacement="onticks" Font-Color="red" 
-
-            Font-FontSize="11px" />           
-
- </ej:Chart>
-
-
-
-
-{% endhighlight %}
-
-
-![](Axis_images/Axis_img19.png)
-
-
-
-
-
-![](Axis_images/Axis_img20.png)
-
-
-
-### Label Position
-
-Axis labels can further be customized to render inside the chart area using the property LabelPosition. By default, it is set as Outside. This helps to display labels in a proper manner while multiple axes are used in the chart.
-{% highlight html %}
-
-
-<ej:Chart ID="Chart1" runat="server">
-
-   <PrimaryXAxis AxislabelPosition="Inside" />
-
-   <PrimaryYAxis AxislabelPosition="Inside"/>
-
-</ej:Chart>
-
-{% endhighlight %}
-
-![](Axis_images/Axis_img21.png) 
-
-### Axis label trimming
-
-Chart provides support for trimming y axis labels and x axis labels by using the properties EnableTrim and MaximumLabelWidth. These are used to show the lengthy labels in a shorter form. On mouse hover, it shows the full label in the tooltip.
-
-
-{% highlight html %}
- 
-
-<ej:Chart ID="Chart1" runat="server" >
-
- <PrimaryXAxis  EnableTrim ="true" MaximumLabelWidth="34" />
-
- <PrimaryYAxis  EnableTrim="true" MaximumLabelWidth ="34" />
-
-</ej:Chart>
-
-
-
-{% endhighlight  %}
-
-The following screenshot displays the Chart Axis with trimming
-
-![](Axis_images/Axis_img22.png)
-
-
-
-## Tick Marks
-
-Tick lines are displayed horizontally and vertically in Chart axis based on the orientation of the axis.
-
-### Major Tick Lines
-It is rendered in Chart axis for each interval of axis range. By default, it is visible. You can collapse it by setting ‘Visible’ as false. You can customize the major tick lines width, opacity, and color.
-
-### Minor Tick Lines
-
-It is rendered between the major tick lines of Chart axis. To display MinorTickLines in Chart axis enable Visible property of “MinorTickLines” and set values to “MinorTicksPerInterval” in the respective axis. By default, it is invisible. You can customize the minor tick lines width, and color.
-{% highlight html %}
-
-
-<ej:Chart ID="Chart1" runat="server">
-
-    <PrimaryXAxis  MajorTickLines-Width="1.5" MajorTickLines-Visible="true" MajorTickLines-Size="6" MinorTickLines-Width="1" MinorTickLines-Size="4" MinorTicksPerInterval="5" />
-
-    <PrimaryYAxis   MajorTickLines-Width="1.5" MajorTickLines-Visible="true"  MajorTickLines-Size="6" MinorTickLines-Width="1" MinorTickLines-Size="4" MinorTicksPerInterval="5" />                    
-
- </ej:Chart>
-
-
-{% endhighlight %}
-
-
-![](Axis_images/Axis_img23.png)
-
-
-
-### Tick lines placement
-
-You can customize tick lines and render them inside the chart area using the property TickLinesPosition. By default, it is set as outside. This property will be used when labels are inside.
-
-{% highlight html %}
-
-
-
-<ej:Chart ID="Chart1" runat="server">
-
-   <PrimaryXAxis TickLinesPosition ="Inside" />
-
-   <PrimaryYAxis TickLinesPosition ="Inside"/>
-
+    <Axes>
+        <%--Creating a secondary horizontal axis--%>
+        <ej:Axis Name="SecondaryX">
+        </ej:Axis>
+        <ej:Axis Name="SecondaryY"></ej:Axis>
+    </Axes>
+    <Series>
+        <ej:Series XAxisName="SecondaryX" YAxisName="SecondaryY">
+        </ej:Series>
+    </Series>
 </ej:Chart>
 
 
 {% endhighlight %}
-![](Axis_images/Axis_img24.png)
 
 
 
-## Grid Lines	
+![](Axis_images/axis_img41.png)
 
-Grid lines are displayed in horizontal and vertical position in Chart area based on the intervals.
-
-### Major Grid Lines
-
-It is rendered in Chart area for each interval of axis range. By default, it is visible. You can collapse it by setting ‘Visible’ property to false. You can customize the major gridlines width, opacity, and dashArray of gridline.
-
-### Minor Grid Lines
-
-It is rendered between the major gridlines of Chart area.To display minor grid lines in Chart area enable Visible property of “MinorGridLines” and set values to “MinorTicksPerInterval” in the respective axis. By default, ‘Visible’ property is set to “false”. You can customize the minor grid lines width, and dashArray of gridline.
-{% highlight html %}
-
-
-<ej:Chart ID="Chart1" runat="server">
-
-     <PrimaryXAxis  MajorGridLines-Width="2" MajorGridLines-Visible="true"  
-
-          MajorGridLines-DashArray="" MinorGridLines-Width="1" MinorGridLines-Visible="true" 
-
-          MinorGridLines-DashArray=""/>  
-
-     <PrimaryYAxis   MajorGridLines-Width="2" MajorGridLines-Visible="true" 
-
-       MajorGridLines-DashArray=""  MinorGridLines-Width="1" MinorGridLines-Visible="true"   
-
-       MinorGridLines-DashArray="" />                    
-
-      </ej:Chart>
-
-
-{% endhighlight %}
-
-
-![](Axis_images/Axis_img25.png) 
-
-
-
-### Alternate Grid Band
-
-Grid Band is the distance between two adjacent major grid lines which are displayed in horizontal and vertical position.
-
-### Even Grid Band
-
-Even Grid Band are counted from axes lines, i.e the band which is immediate adjacent for axes lines. By default, the even grid band color is transparent. You can highlight the even grid band by setting Fill property of Even. You can customize the Opacity of the even grid band color.
-
-### Odd Grid Band
-
-Immediate adjacent band of every even grid bands are Odd Grid Bands. You can discriminate the odd grid band from even by setting Fill property of Odd. You can customize the Opacity of the odd grid band color.
-{% highlight html %}
-
-
-<ej:Chart ID="Chart1" runat="server">
-
-
-
-            <PrimaryXAxis>
-
-
-
-                <AlternateGridBand Even-Fill="#E896E8" Even-Opacity="0.5" />
-
-
-
-            </PrimaryXAxis>
-
-
-
-            <PrimaryYAxis>
-
-
-
-                <AlternateGridBand Odd-Fill="#E6F0E7" Odd-Opacity="0.5" />
-
-
-
-            </PrimaryYAxis> 
-
-
-
-</ej:Chart>
-
-{% endhighlight  %}
-
-
-![C:/Users/dineshkumarn/Desktop/ug line.png](Axis_images/Axis_img26.png)
-
-## Inversed Axis
-
-You can display the Chart series in to inversed position using “IsInversed” property of Chart Axis. This is illustrated in the following code. 
-{% highlight html %}
-
-
-<ej:Chart ID="Chart1" runat="server">          
-
-          <PrimaryYAxis IsInversed="true" />                    
-
- </ej:Chart>
-
-{% endhighlight  %}
-
-
-
-![](Axis_images/Axis_img27.png)
-
-
-
-## Opposed Position
-
-By default, the x-axis is arranged horizontally at the bottom of the Chart and the y-axis is arranged vertically at the left side of the Chart. You can change the alignment of the axis by setting OpposedPosition to true, which arranges the x-axis at the top and the y-axis at the right of the Chart.  
-{% highlight html %}
-
-
-  <ej:Chart ID="Chart1" runat="server">       
-
-        <PrimaryXAxis  OpposedPosition="true" />    
-
-        <PrimaryYAxis  OpposedPosition="true" /> 
-
-   </ej:Chart>
-
-
-{% endhighlight  %}
-
-
-![](Axis_images/Axis_img28.png)
-
+[Click](http://asp.syncfusion.com/demos/web/chart/multipleaxes.aspx) here to view the multiple axis online demo sample.
 
 
 ## Smart Axis Labels
 
-Sometimes the Chart dimensions could cause the labels to intersect. You can avoid overlapping labels using “LabelIntersectAction” property of char axis. The Chart by default renders the texts one over the other. But, it also has some built-in capabilities to work around this overlap and lets you dictate the technique to follow. Refer to the following properties.
+When the Axis labels overlap with each other based on the chart dimensions and label size, you can use the **LabelIntersectAction** property of the axis to avoid overlapping. The default value of the LabelIntersectAction is **None**. The other available values of the Label Intersect Actions are **Rotate45**, **Rotate90**, **Trim**, **MultipleRows**, **Wrap** and **Hide**.
 
-* Rotate45 – Rotate the labels to 45 degree.
-* Rotate90 – Rotate the labels to 90 degree
-* Trim – Intersecting labels will be trim and mouse over the labels, it displays the trimmed text like tooltip.
-* MultipleRows – Split the intersecting labels in to multiple rows and display on the axis
-* Wrap – Wrap the intersecting text and display
-* Hide – It doesn’t display the intersecting label texts on the axis.
 {% highlight html %}
 
-
-  <ej:Chart ID="Chart1" runat="server">       
-
-        <PrimaryXAxis  LabelIntersectAction="Rotate45" />    
-
-         <PrimaryYAxis  LabelIntersectAction="None" />                    
-
-     </ej:Chart>
+<ej:Chart ID="Chart1" runat="server">
+   <%--Avoid overlapping of x-axis labels--%>
+    <PrimaryXAxis LabelIntersectAction="MultipleRows"></PrimaryXAxis>       
+</ej:Chart>
 
 
 {% endhighlight %}
 
 
-![](Axis_images/Axis_img29.png)
+
+![](Axis_images/axis_img42.png)
+
+
+[Click](http://asp.syncfusion.com/demos/web/chart/smartaxislabel.aspx) here to view our online demo sample for smart axis labels.
 
 
 
+The following screenshot displays the result, when the LabelIntersectAction property is set as **Rotate45**.
+
+![](Axis_images/axis_img43.png)
+
+
+The following screenshot displays the result, when the LabelIntersectAction property is set as **Rotate90**.
+
+![](Axis_images/axis_img44.png)
+
+
+The following screenshot displays the result, when the LabelIntersectAction property is set as **Wrap**.
+
+![](Axis_images/axis_img45.png)
+
+
+The following screenshot displays the result, when of setting the **trim** as value to the LabelIntersectAction property.
+
+![](Axis_images/axis_img46.png)
+
+
+The following screenshot displays the result, when the LabelIntersectAction property is set as **Hide**.
+
+![](Axis_images/axis_img47.png)
+
+
+The following screenshot displays the result, when the LabelIntersectAction property is set as **MultipleRows **.
+
+![](Axis_images/axis_img48.png)
+
+The following screenshot displays the result, when the LabelIntersectAction property is set as **WrapByWord**.
+
+![](Axis_images/axis_img49.png)
