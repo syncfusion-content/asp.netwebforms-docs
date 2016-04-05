@@ -1850,7 +1850,7 @@ EjChart can generate Error bar for Cartesian type series *(Line, Column, Bar, Sc
 
 ### Changing Error Bar Type
 
-You can change the error bar rendering type using **Type** *(like FixedValue, Percentage, StandardDeviation, StandardError and custom)* option of errorBar. To change the error bar line length you can use **VerticalErrorValue** property.
+You can change the error bar rendering type using **Type** *(like FixedValue, Percentage, StandardDeviation, StandardError and Custom)* option of errorBar. To change the error bar line length you can use **VerticalErrorValue** property.
 
 {% highlight html %}
 
