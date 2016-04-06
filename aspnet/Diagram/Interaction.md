@@ -1,562 +1,298 @@
 ---
 layout: post
-title: Interaction | Diagram | ASP.NET Webforms | Syncfusion
-description: interaction
+title: Interactively edit nodes and connectors during runtime
+description: How to select and edit nodes and connectors during runtime?
 platform: aspnet
 control: Diagram
 documentation: ug
 ---
 
+
 # Interaction
-
-## Tool
-
-There are many interactive features on Diagram surface. A collection of predefined tools are available in Diagram.
-
-Tool
-
-<table>
-<tr>
-<th>Tool name</th><th>Description</th></tr>
-<tr>
-<td>
-panTool </td><td>
-Allows you to pan the Diagram</td></tr>
-<tr>
-<td>
-move </td><td>
-Allows you to move the selected Node/Connector.</td></tr>
-<tr>
-<td>
-select</td><td>
-Allows you to select the diagram node/connector objects.</td></tr>
-<tr>
-<td>
-textTool</td><td>
-Allows you to add new text or edit an existing text</td></tr>
-<tr>
-<td>
-endPointTool</td><td>
-Allows you to drag connector’s end point </td></tr>
-<tr>
-<td>
-resizeTool</td><td>
-Allows you to resize the nodes </td></tr>
-<tr>
-<td>
-rotateTool</td><td>
-Allows you to rotate nodes</td></tr>
-</table>
-
-
-The following code illustrates how to activate and deactivate the desired tool
-
-{% highlight js %}
-
-
-
-//Activates pan tool
-
-var diagram = $("#Diagram").ejDiagram("instance");
-
-diagram.activateTool("panTool");
-
-
-
-//Deactivates current tool
-
-diagram.deactivateTool();
-
-
-
-{% endhighlight %}
 
 ## Selection
 
-Selection feature allows you to select single or multiple Nodes/Connectors.
-
-* Single selection
-* Multiple selection
+Selector provides a visual representation of selected elements. It behaves like a container and enables you to update the size, position, and rotation angle of the selected elements through interaction and programmatically. Single or multiple elements can be selected at a time.
 
 ### Single selection
 
-The Nodes/Connectors on the Diagram surface is selected when the Select constraint is enabled. Selection is done through the following two ways. 
+An element can be selected by clicking that element. During single click, all previously selected items are cleared. The following image shows how the selected elememts are visually represented.
 
-* Mouse Click
-* addSelection method.
+![](/aspnet/Diagram/Interaction_images/Interaction_img1.png)
 
-#### Mouse Click
+### Selecting a group
 
-The node/connector is selected by clicking a desired node/connector.
+When a child element of any group is clicked, its contained group is selected instead of the child element. With consecutive clicks on the selected element, selection is changed from top to bottom in the hierarchy of parent group to its children.
 
-#### addSelection method
+### Multiple selection
 
-Diagram provides public API addSelection for adding node/connector to the selection.
-The following code illustrates how to add node/connector to selection.
+Multiple elements can be selected with the following ways.
+
+1. Ctrl+Click
+
+	During single click, any existing item in the selection list be cleared, and only the item clicked recently is there in the selection list. To avoid cleaning the old selected item, Ctrl key must be on hold when clicking.
+
+2. Selection rectangle / Rubber band selection
+
+	Clicking and dragging the Diagram area allows to create a rectangular region. The elements that are covered under the rectangular region are selected at the end.
+
+Multiple selected elements are visually represented as shown.
+
+![](/aspnet/Diagram/Interaction_images/Interaction_img2.png)
+
+### Select/Unselect elements programmatically
+
+The client side methods `addSelection`, `clearSelection` and `removeSelection` help select/unselect elements at runtime. The following code example illustrates how to select/unselect an item through programmatically.
 
 {% highlight js %}
 
+var diagram = $("#DiagramContent").ejDiagram("instance");
+var node = diagram.findNode("node1");
 
-
-
-
-var node = diagram.model.nodes[0];
-
-//Adds node to selection
-
+//Selects an element
 diagram.addSelection(node);
 
+//Clears the current selection
+diagram.clearSelection();
 
-
-{% endhighlight %}
-
-
-
-![](Interaction_images/Interaction_img1.png) 
-
-Single selection
-{:.caption} 
-
-### Multiple Selections
-
-Multiple selections are done by using rubber band selection, Ctrl + Click and Ctrl + A.  During Multipleselections, the selector binds all the selected items.
-
-#### Rubber band Selection
-
-Rubber band selection is done by clicking and dragging mouse pointer on the Diagram canvas and rectangle helper appears during Rubber band selection. The Diagram Nodes/Connectors that intersect in the selection rectangle bounds are added to the selection list.
-
-
-
-![](Interaction_images/Interaction_img2.png) 
-
-Multiple Selections
-{:.caption} 
-
-## User Handle
-
-Diagram has an option to create additional selection handles around the selector called User handles. You can create additional handles and assign their command/tool to the desired handles.
-
-The following is the list of User handle properties.
-
-User Handle
-
-<table>
-<tr>
-<th>Properties</th><th>Data Type</th><th>Description</th></tr>
-<tr>
-<td>
-Name</td><td>
-String</td><td>
-Gets or sets the name of the User handle</td></tr>
-<tr>
-<td>
-PathData</td><td>
-String</td><td>
-Gets or sets the path data of the User handle</td></tr>
-<tr>
-<td>
-BorderColor</td><td>
-String</td><td>
-Gets or sets the border color of the User handle</td></tr>
-<tr>
-<td>
-BorderWidth</td><td>
-Int</td><td>
-Gets or sets the border width of the User handle</td></tr>
-<tr>
-<td>
-BackgroundColor</td><td>
-String</td><td>
-Gets or sets the background color of the User handle</td></tr>
-<tr>
-<td>
-Position</td><td>
-UserHandlePositions</td><td>
-Gets or sets the position of  User handle </td></tr>
-<tr>
-<td>
-PathColor</td><td>
-String</td><td>
-Gets or sets the path color of the User handle</td></tr>
-<tr>
-<td>
-Tool</td><td>
-String</td><td>
-Gets or sets the tool that is associated with User handle</td></tr>
-<tr>
-<td>
-Size</td><td>
-Int</td><td>
-Gets or sets the size of the User handle</td></tr>
-<tr>
-<td>
-Visible</td><td>
-Boolean</td><td>
-Gets or sets the visibility of the User handle</td></tr>
-<tr>
-<td>
-EnableMultipleSelection</td><td>
-Boolean</td><td>
-Gets or sets whether the User handle is enabled for  multiple selection </td></tr>
-</table>
-
-
-The following example describes how to create delete user handle in diagram
-
-* Create handle
-* Create tool for handle
-* Add handle in diagram
-
-### Create Delete Userhandle
-
-The following code illustrates how to create Delete User handle
-
-{% highlight js %}
-
-
-
-
-
-//Creates handle
-
-var userHandles = [];
-
-var deleteHandle = { name: "deleteHandle", position: ej.datavisualization.Diagram.UserHandlePositions.BottomRight, showOnMultipleSelection: false, size:30, backgoundColor: "#4D4D4D", pathData: “M33.977998,27.684L33.977998,58.102997 “ +“41.373998,58.102997 41.373998,27.684z M14.841999,27.684L14.841999,58.102997 22.237998,58.102997 “+”22.237998,27.684z M4.0319996,22.433001L52.183,22.433001 52.183,63.999001 4.0319996,63.999001z “+”M15.974,0L40.195001,0 40.195001,7.7260003 56.167001,7.7260003 56.167001,16.000999 0,16.000999 “+”0,7.7260003 15.974,7.7260003z” };
-
-deletHandle.tool = new DeleteTool(deleteHandle.name);
-
-userHandles.push(deletHandle);
-
-
+//Unselects a particular object
+diagram.removeSelection(node);
 
 {% endhighlight %}
 
-### Create tool for Delete Userhandle
-
-The following code illustrates how to create tool for Delete User handle.
+You can get the current selected items from the `children` collection of `selectedItems` property of the Diagram model.
+The client side method `updateSelector` helps you to change the size, position, and rotation angle of the selected elements at runtime. The following code example illustrates how to read the selected items and how to update the position, size, and rotation angle.
 
 {% highlight js %}
 
+var diagram = $("#DiagramContent").ejDiagram("instance");
 
+//Updates the size, position and rotateAngle of selected elements.
 
+diagram.updateSelector({
+	offsetX: 200,
+	offsetY: 200,
+	width: 200,
+	height: 200,
+	rotateAngle: 200
+});
 
-
-//Creates tool for delete handle
-
-var DeleteTool = (function (base) {
-
-ej.datavisualization.Diagram.extends(DeleteTool, base);
-
-function DeleteTool(name) {
-
-base.call(this, name);
-
-this.singleAction = true;
-
+//Iterates the selected elements
+for (var i = 0; i < diagram.model.selectedItems.children.length; i++) {
+	var child = diagram.model.selectedItems.children[i];
 }
 
+{% endhighlight %}
 
-//mouse down for delete tool
+N> SelectedItems’s children is a read-only property. You cannot change the children collection at run time.
 
-DeleteTool.prototype.mousedown = function (evt) {
+## Drag
 
-base.prototype.mousedown.call(this, evt);
+* An object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element.
+* While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/aspnet/Diagram/Gridlines#snapping "Snapping").
 
-this.inAction = true;
+![](/aspnet/Diagram/Interaction_images/Interaction_img3.png)
 
-this.selectedObject = this.diagram.selectionList[0];
+## Resize
 
-};
+* Selector is surrounded by eight thumbs. When dragging these thumbs, selected items can be resized smaller or larger.
+* When one corner of the selector is dragged, opposite corner is in a static position.
+* While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/aspnet/Diagram/Gridlines#snapping "Snapping").
 
+![](/aspnet/Diagram/Interaction_images/Interaction_img4.png)
 
+## Rotate
 
-//mouse move for delete tool
+* A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the node.
+* The node is rotated with reference to the static pivot point.
+* Pivot thumb (thumb at the middle of the node) appears while rotating the node to represent the static point.
+* For more information about pivot, refer to [Position](/aspnet/Diagram/Node#position "Position").
 
-DeleteTool.prototype.mousemove = function (evt) { 
+![](/aspnet/Diagram/Interaction_images/Interaction_img5.png)
 
-base.prototype.mousemove.call(this, evt);
+## Connection editing
 
-};
+* Each segment of a selected connector is editable with some specific handles/thumbs.
 
+### End point handles
 
-//mouse up for delete tool
+Source and target points of the selected connectors are represented with two handles. Clicking and dragging those handles help you to adjust the source and target points.
 
-DeleteTool.prototype.mouseup = function (evt) {
+![](/aspnet/Diagram/Interaction_images/Interaction_img6.png)
 
-var diagram = $(“#diagram”).ejDiagram(“instance”);
+### Straight segment editing
 
-if (this.inAction) 
- {
+* End point of each straight segment is represented by a thumb that enables to edit the segment.
+* Any number of new segments can be inserted into a straight line by clicking that when shift and ctrl keys are pressed. (Ctrl+Shift+Click).
+* Straight segments can be removed by clicking the segment end point, when ctrl and shift keys are pressed. (Ctrl+Shift+Click).
 
-   this.inAction = false;
+### Orthogonal thumbs
 
-   diagram.remove(this.selectedObject);
- }
+* Orthogonal thumbs allow to adjust the length of adjacent segments by clicking and dragging it.
 
- base.prototype.mouseup.call(this, evt);
+![](/aspnet/Diagram/Interaction_images/Interaction_img7.png)
 
-};
+* When necessary, some segments are added or removed automatically, when dragging the segment. This is to maintain proper routing of orthogonality between segments.
 
-return DeleteTool;
+![](/aspnet/Diagram/Interaction_images/Interaction_img8.png)
 
-})
+### Bezier thumbs
 
+* Bezier segments are annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
 
+![](/aspnet/Diagram/Interaction_images/Interaction_img9.png)
+
+## Drag and drop nodes over other elements
+
+Diagram provides support to drop a node/connector over another node/connector. Drop event is raised to notify that an element is dropped over another one and it is disabled by default. It can enabled with the `Constraints` property. The following code illustrates how to enable **dropping**.
+
+{% highlight ASPX %}
+
+    <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px" OnClientDrop="ondrop">
+        <Nodes>
+            <ej:BasicShape Width="100" Height="100" OffsetX="100" OffsetY="100" FillColor="#1BA0E2" Constraints="AllowDrop"></ej:BasicShape>
+        </Nodes>
+        <Connectors>
+            <ej:DiagramConnector Constraints="AllowDrop">
+                <SourcePoint X="200" Y="50"/>
+                <TargetPoint X="300" Y="150"/>
+            </ej:DiagramConnector>
+        </Connectors>
+    </ej:Diagram>
 
 {% endhighlight %}
 
-### Adding delete handle in Diagram
+The following code examples illustrates how to insert a child to a group interactively.
 
-The following code illustrates how to add Delete handle in Diagram.
+{% highlight ASPX %}
+     <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px" OnClientDrop="ondrop">
+     </ej:Diagram> 
+	 
+  	 function ondrop(args) {
+	 	if (args.target && args.element) {
+		 	//Element that is being dropped
+		 	var node = args.element;
+		 	//Element over which another element is dropped
+		 	var target = args.target;
+		 	if (diagram.getObjectType(target) == "group" && diagram.getObjectType(node) == "node") {
+			 	//Inserts the node into group
+			 	node.parent = target.name;
+			 	target.children.push(node.name);
+		 	}
+	 	}
+  	}
+{% endhighlight %}
+
+## User handles
+
+User handles are used to add some frequently used commands around the selector. To create user handles, define and add them to the `userHandles` collection of `selectedItems` property.
+The `tool` property of user handle should be set with any appropriate tool to enable interaction.
+
+The following code example illustrates how to draw a user handle.
 
 {% highlight js %}
 
+// Defines a tool to interact with the user handle
+var CloneTool = (function (base) {
+	ej.datavisualization.Diagram.extend(CloneTool, base);
+	// Initializes the tool
+	function CloneTool(name) {
+		base.call(this, name);
+	}
+	// Defines the required events
+	CloneTool.prototype.mouseup = function (evt) {
+		//clones the selected elements when the custom handle is clicked.
+		this.diagram.copy();
+		//Pastes the cloned elements.
+		this.diagram.paste();
+		base.prototype.mouseup.call(this, evt);
+	};
+	return CloneTool;
+})(ej.datavisualization.Diagram.ToolBase);
 
-
-//Adds user handles to diagram
-
-$(“#Diagram”).ejDiagram({ userHandles: userHandles });
-
-
-
+var userHandles = [];
+//Initializes the handles
+var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+// Name of the user handle.
+cloneHandle.name = "Clone";
+// Sets the tool that you have defined to interact with handle.
+cloneHandle.tool = new CloneTool(cloneHandle.name);
+userHandles.push(cloneHandle);
+//Add user handles to diagram
+$("#DiagramContent").ejDiagram({
+	//Sets user handles
+	selectedItems: {
+		userHandles: userHandles
+	}
+});
 {% endhighlight %}
 
+![](/aspnet/Diagram/Interaction_images/Interaction_img10.png)
 
+### Appearance
 
- ![](Interaction_images/Interaction_img3.png) 
+Position, size, and style of the user handle can be customized with a set of predefined properties.
 
-Delete-User Handle
-{:.caption} 
+The following code example illustrates how to customize the appearance of the user handle.
 
-## Zoom 
+{% highlight js %}
 
-The Diagram is zoomed in and out. Zooming is achieved in the following two ways.
+var UserHandlePositions = ej.datavisualization.Diagram.UserHandlePositions;
+var userHandles = [];
+var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+cloneHandle.name = "Clone";
+// Sets the position of the user handle.
+cloneHandle.position = UserHandlePositions.BottomLeft;
+// Sets the user handle visibility.
+cloneHandle.visible = true;
+// Defines whether user handle should be enabled for multiple selection or not.
+cloneHandle.enableMultiSelection = true;
+// Sets the size of the user handle.
+cloneHandle.size = 30;
+// Customizes the appearance of user handle
+cloneHandle.backgroundColor = "#4D4D4D";
+cloneHandle.pathColor = "white";
+cloneHandle.borderColor = "red";
+cloneHandle.borderWidth = "2";
+cloneHandle.pathData = "M4.6350084,4.8909971 L4.6350084,9.3649971 9.5480137,9.3649971 9.5480137,4.8909971 z M3.0000062,2.8189973 L11.184016,2.8189973 11.184016,10.999997 3.0000062,10.999997 z M0,0 L7.3649998,0 7.3649998,1.4020001 1.4029988,1.4020001 1.4029988,8.0660002 0,8.0660002 0,1.4020001 0,0.70300276 z";
+userHandles.push(cloneHandle);
 
-* By using the zoom commands.
-* By using the mouse wheel.
-
-### MouseWheel
-
-Press the CTRL key and roll the mouse wheel up to zoom in or down to zoom out.
-
-### Zoom Factor
-
-Diagram allows you to set the ZoomFactor where you can zoom in or out. This factor can be specified by using the ZoomFactor property. The default value is 0.2.
-
-{% highlight c# %}
-
-diagram.Model.ZoomFactor = 0.2; 
-
-
-
+$("#DiagramContent").ejDiagram({
+	selectedItems: {
+		userHandles: userHandles
+	}
+});
 {% endhighlight %}
 
-### ZoomCommands
+![](/aspnet/Diagram/Interaction_images/Interaction_img11.png)
 
-Refer to the link ZoomCommand.
+## Zoom pan
+
+* When a large Diagram is loaded, only certain portion of the Diagram is visible. The remaining portions are clipped. Clipped portions can be explored by scrolling the scrollbars or panning the Diagram.
+* Diagram can be zoomed in or out by using Ctrl + mouse wheel.
 
 ## Keyboard
 
-Diagram has several keyboard functions support and they are listed as follows.
-
-Keyboard
-
-<table>
-<tr>
-<th>Shortcut Keys</th><th>Description</th></tr>
-<tr>
-<td>
-Ctrl + A</td><td>
-Selects all nodes/connectors in Diagram.</td></tr>
-<tr>
-<td>
-Ctrl + C</td><td>
-Copies the diagram selected elements.</td></tr>
-<tr>
-<td>
-Ctrl + V</td><td>
-Pastes the copied elements.</td></tr>
-<tr>
-<td>
-Ctrl + X</td><td>
-Cuts the selected elements.</td></tr>
-<tr>
-<td>
-Ctrl + Z</td><td>
-Undo(Reverse the last editing action performed on diagram)</td></tr>
-<tr>
-<td>
-Ctrl + Y</td><td>
-Redo(Restores the last editing action when no other actions have occurred since the last undo on the Diagram).</td></tr>
-<tr>
-<td>
-Delete</td><td>
-Deletes the selected elements. </td></tr>
-<tr>
-<td>
-Ctrl /Shift+ Click on object</td><td>
-Multiple selections (Selector binds all selected nodes/connectors).</td></tr>
-<tr>
-<td>
-Up Arrow</td><td>
-nudgeUp (move the selected elements towards up by one pixel).</td></tr>
-<tr>
-<td>
-Down Arrow</td><td>
-nudgeDown (move the selected elements towards down by one pixel).</td></tr>
-<tr>
-<td>
-Left Arrow</td><td>
-nudgeLeft (move the selected elements towards left by one pixel).</td></tr>
-<tr>
-<td>
-Right Arrow</td><td>
-nudgeRight (move the selected elements towards right by one pixel).</td></tr>
-<tr>
-<td>
-Ctrl+MouseScroll</td><td>
-Zoom(Zoom in/Zoom out the diagram).</td></tr>
-</table>
-
-## Touch
-
-Touch support for Diagram view has the following features:
-
-* Drag and Drop from the SymbolPalette.
-* Dragging the Node and Line Connector on drawing area.
-* Panning.
-* Multiple selection.
-* Contextmenu (touch and hold).
-* Text Editing (double tap).
-
-## Snapping
-
-
-Snapping feature handles snapping operation with gridlines and Nodes/Connectors.
-
-* snapToGrid
-* snapToObject
-
-### SnapToGrid
-
-The snap-to-grid feature allows diagram objects to snap the nearest intersection of gridlines when being dragged or resized. This feature enables easier alignment during layout or design. 
-
-The SnapToGrid feature is enabled by using a snapSetting’s SnapConstraints property.
-
-SnapToGrid
-
-<table>
-<tr>
-<th>Properties</th><th>Data Type</th><th>Descriptions</th></tr>
-<tr>
-<td>
-HorizontalGridLines</td><td>
-Object</td><td>
-Gets or sets the horizontal gridlines </td></tr>
-<tr>
-<td>
-VerticalGridLines</td><td>
-Object</td><td>
-Gets or sets the vertical gridlines</td></tr>
-<tr>
-<td>
-EnableSnapToObject</td><td>
-Boolean</td><td>
-Gets or sets whether snapping to object is enabled or not</td></tr>
-<tr>
-<td>
-SnapAngle</td><td>
-Int</td><td>
-Gets or sets the snap angle</td></tr>
-<tr>
-<td>
-SnapConstraints</td><td>
-SnapConstraints</td><td>
-Gets or sets whether snapping to gridlines option is enabled or not</td></tr>
-</table>
-
-#### Enable snapping 
-
-Snapping to gridlines is enabled or disabled by changing the value of snap Setting’s SnapConstraints as SnapConstraints.
-
-{% highlight c# %}
-
-//Enables snap to horizontal gridlines constraint
-
-Diagram1.SnapSettings.SnapConstraints = SnapConstraints.SnapToHorizontalLines;
-
-//Enables snap to vertical gridlines constraint
-
-Diagram1.SnapSettings.SnapConstraints = SnapConstraints.SnapToVerticalLines;
-
-//Enables snap to both horizontal and vertical gridlines constraint
-
-Diagram1.SnapSettings.SnapConstraints = SnapConstraints.SnapToLines;
-
-
-
-{% endhighlight %}
-
-#### SnapInterval
-
-You can customize the position where a Diagram object snaps by changing the value of the SnapInterval property of grid lines.
-
-SnapInterval is a double collection that determines the space between patterns of gridlines.
-
-{% highlight c# %}
-
-//Sets snap interval
-
-List<decimal> interval = new List<decimal>();
-
-interval.Add(20);
-
-Diagram1.SnapSettings.HorizontalGridlines.SnapInterval = interval;
-
-
-
-{% endhighlight %}
-
-### SnapToObject
-
-The snap-to-object feature provides visual cues to assist with aligning and spacing diagram nodes. You can snap a node with its neighboring objects based on its size and position. Such alignments are visually represented as guidelines.
-
-
-
-![](Interaction_images/Interaction_img4.png) 
-
-Snap to Object
-{:.caption} 
-
-#### Enabling and Disabling snapping to objects
-
-SnapSettings.EnableSnapToObject determines whether nodes are snapped to object.
-
-{% highlight c# %}
-
-//Enables snap to object behavior
-
-Diagram1.SnapSettings.EnableSnapToObject = true;
-
-
-
-{% endhighlight %}
-
-#### SnapAngle
-
-You can rotate the Node with multiples of SnapAngle.
-
-{% highlight c# %}
-
-
-
-//Sets snap angle
-
-Diagram1.SnapSettings.SnapAngle = 5;
-
-
-
-{% endhighlight %}
-
-
-
+Diagram provides support to interact with the elements with key gestures. By default, some Built-in commands are bound with a relevant set of key combinations.
+
+The following table illustrates those commands with the associated key values.
+
+| Shortcut Key | Command | Description |
+|---|---|---|
+| Ctrl + A | selectAll | Select all nodes/connectors in diagram |
+| Ctrl + C | copy | Copy the diagram selected elements |
+| Ctrl + V | paste | Paste the copied elements |
+| Ctrl + X | cut | Cut the selected elements |
+| Ctrl + Z | undo | Undo(Reverse the last editing action performed on diagram) |
+| Ctrl + Y | redo | Redo(Restores the last editing action when no other actions have occurred since the last undo on diagram) |
+| Delete | delete | Delete the selected elements |
+| Ctrl /Shift+ Click on object | | Multiple selection(Selector binds all selected nodes/connectors) |
+| Up Arrow | nudge("up") | nudgeUp(move the selected elements towards up by one pixel) |
+| Down Arrow | nudge("down") | nudgeDown(move the selected elements towards down by one pixel) |
+| Left Arrow | nudge("left") | nudgeLeft(move the selected elements towards left by one pixel) |
+| Right Arrow | nudge("right") | nudgeRight(move the selected elements towards right by one pixel) |
+| Ctrl+MouseScroll | zoom | Zoom(Zoom in/Zoom out the diagram) |
+| F2 | startLabelEditing | Starts to edit the label of selected element |
+| Esc | endLabelEditing | Sets the label mode as View and stops editing. |
+
+To add custom commands, configure or modify key/mouse gesture through [Command Manager](/aspnet/Diagram/commands#command-manager "Command Manager").

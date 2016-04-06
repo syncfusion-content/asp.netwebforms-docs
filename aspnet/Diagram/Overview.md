@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | Diagram | ASP.NET Webforms | Syncfusion
-description: overview
+title: Explore the features of the Diagram control
+description: What are all the main features of the Diagram control?
 platform: aspnet
 control: Diagram
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The EssentialDiagramASP.NET creates rich Visio-like applications. Its framework comprises of many elements that help you to create an application easily. The rich feature set of the Diagram control includes Snapping, Guidelines, Gridlines, Serialization, and Zooming.
+The EssentialDiagram ASP.NET creates rich Visio-like applications. Its framework comprises of many elements that help you to create an application easily. The rich feature set of the Diagram control includes Snapping, Guidelines, Gridlines, Serialization, and Zooming.
 
 
 

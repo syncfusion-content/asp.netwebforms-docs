@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Symbol Palette | Diagram | ASP.NET Webforms | Syncfusion
-description: symbol palette
+title: Define and add the frequently used nodes/connectors to the symbol palette
+description: How to add shapes to the symbol palette and drag and drop them over the drawing area?
 platform: aspnet
 control: Diagram
 documentation: ug
@@ -9,232 +9,261 @@ documentation: ug
 
 # Symbol Palette
 
-The SymbolPalette displays a collection of palettes. The Palette shows nodes and connectors. It allows you to drag and drop the nodes and connectors on the Diagram. The Palette has a header that displays the name and also has an option that allows you to expand or collapse its items. Each node or connector in the palette is called a Palette Item.
+The **SymbolPalette** displays a collection of palettes. The Palette shows a set of nodes and connectors. It allows you to drag and drop the nodes and connectors into the Diagram. 
 
- ![](Symbol-Palette_images/Symbol-Palette_img1.jpeg) 
+## Palettes
+ 
+A palette allows to display a group of related symbols and it textually annotates the group with its header.
+To initialize a palette, define a palette object with the property `Name` that is displayed as the header text of palette. The `Expanded` property of palette allows to expand/collapse its palette items. 
+You can add any number of palettes to the `Palettes` collection of the symbol palette.
+The following code example illustrates how to define a palette and how its added to symbol palette.
 
-SymbolPalette
-{:.caption} 
+{% highlight ASPX %}
 
-## Create and Add Symbols in the Palette
-
-Node and Connector are added to the Palette as Palette Items.
-
-The following code example illustrates how to create and add symbols in Palette.
-
-{% highlight html %}
-
-protected void Page_Load(object sender, EventArgs e)
-
-  {
-
-    if (!IsPostBack)
-
-     {      
-
-     //Adds palette items in palette collection 
-
-       symbolpalette.Model.Palettes.
-
-           Add(GenerateBasicShapes()); 
-
-
-
-       symbolpalette.Model.Palettes.                                              
-
-         Add(GenerateConnectors());                
-
-            }
-
-        }
-
-//Creates palette nodes and add it in symbolpalette
-
- public palette GenerateBasicShapes()
-
-  { 
-
-    Palette basicShapes = new Palette("Basic Shapes");
-
-  //note: for creating node refer to the link Node creation
-
-    basicShapes.AppendChild(node);
-
-      }
-
-//Creates palette connectors and add it in symbolpalette
-
- public palette GenerateConnectors()
-
-  {
-
-   Palette connectors = new Palette("Connectors");
-
- //note: for creating connector refer to the link Connector creation
-
- connectors.AppendChild(connector);
-
-  }
-
-
+    <ej:SymbolPalette ID="symbolpalette" Width="100%" Height="100%" runat="server">
+        <Palettes>
+            <%--define a palette with its name and expands its children.--%>
+            <ej:DiagramPalette Name="Basic Shapes" Expanded="true"></ej:DiagramPalette>
+        </Palettes>
+    </ej:SymbolPalette>
 
 {% endhighlight %}
 
-## Add Nodes and Connectors
+The following image shows the symbol palette with multiple palette Items.
 
-The Diagram provides support to add nodes and connectors through the Symbol Palette. To add a node to the Diagram, drag the desired symbol from the SymbolPalette to the drawing area and release the pointer. The desired palette item clicked is added to the Diagram when you set the desired Diagram ID to the Symbol Palette’s DiagramId.
+![](/aspnet/Diagram/Symbol-Palette_images/Symbol-Palette_img3.png)
 
-![](Symbol-Palette_images/Symbol-Palette_img2.png) 
+### Palette Items
 
-Adding Nodes and Connectors through Symbol Palette
-{:.caption} 
+The palette items need to be defined and added to the `Items` collection of the palette. You can create a palette item as a node, group, connector, lane, or phase except swimlane. To create a palette item, you first need to define that element as JSON. The following code example illustrates how to define a palette item.
 
-## Appearance
+{% highlight ASPX %}
 
-The following properties are used to customize the appearance of the Symbol Palette.
+    <ej:SymbolPalette ID="symbolpalette" Width="100%" Height="100%" runat="server">
+        <Palettes>
+            <%--define a palette with its name and expands its children.--%>
+            <ej:DiagramPalette Name="Basic Shapes" Expanded="true">
+                <Items>
+                    <%--define a node with its size, position and shape.--%>
+                    <ej:BasicShape Width="40" Height="40" OffsetX="20" Name="Ellipse" 
+                        OffsetY="20" Shape="Ellipse">
+                    </ej:BasicShape>
+                </Items>
+            </ej:DiagramPalette>
+        </Palettes>
+    </ej:SymbolPalette>
 
-Appearance
+Note : You can add any item to palette such as node, connector, group, lane, phase except swimlane.
 
-<table>
-<tr>
-<th>Properties</th><th>Data Type</th><th>Description</th></tr>
-<tr>
-<td>
- Width</td><td>
-Int</td><td>
-Gets or sets the width of the palette.</td></tr>
-<tr>
-<td>
- Height</td><td>
-Int</td><td>
-Gets or sets the height of the palette.</td></tr>
-<tr>
-<td>
- PaletteItemWidth</td><td>
-Int</td><td>
-Gets or sets the palette item width.</td></tr>
-<tr>
-<td>
- PaletteItemHeight</td><td>
-Int</td><td>
-Gets or sets the palette item height.</td></tr>
-<tr>
-<td>
- ShowPaletteItemText</td><td>
-Boolean</td><td>
-Show or hide the palette item text.</td></tr>
-<tr>
-<td>
- AllowDrag</td><td>
-Boolean</td><td>
-Allows or prevents you from dragging node or connector from symbol palette.</td></tr>
-<tr>
-<td>
- HeaderHeight</td><td>
-Int</td><td>
-Gets or sets the palette header height.</td></tr>
-<tr>
-<td>
- CssClass</td><td>
-String</td><td>
-Gets or sets the class of the palette.</td></tr>
-<tr>
-<td>
- Palettes</td><td>
-Array</td><td>
-Gets or sets the palette items.</td></tr>
-<tr>
-<td>
- SelectedPaletteName</td><td>
-String</td><td>
-Gets or sets the name of the selected item in the palette</td></tr>
-</table>
+{% endhighlight %}  
 
+#### Customize the size of palette items
 
-The following code illustrates how to customize the Appearance ofthe Palette.
+You can customize the size of the individual palette items. The `PaletteItem` property of node enables you to define the size of the symbol items. The following code example illustrates how to change the size of a palette item.
 
-{% highlight c# %}
+{% highlight ASPX %}
 
-protected void Page_Load(object sender, EventArgs e)
-
- {
-
-   if (!IsPostBack)
-
-    {
-
- // Properties to symbol palette
-
-       symbolpalettes.DiagramId = "DiagramContent";
-
-       symbolpalettes.Height = "100%";
-
-       symbolpalettes.Width = "100%";
-
-       symbolpalettes.PaletteItemHeight = 45;
-
-       symbolpalettes.PaletteItemWidth = 45;
-
-       symbolpalettes.HeaderHeight = 30;
-
-       symbolpalettes.SelectedPaletteName = "Basic Shapes";
-
-       symbolpalettes.ShowPaletteItemText = true;
-
-       symbolpalettes.AllowDrag = true;      }
-
-   } 
-
-
+    <ej:SymbolPalette ID="symbolpalette" Width="100%" Height="100%" runat="server">
+        <Palettes>
+            <ej:DiagramPalette Name="Basic Shapes" Expanded="true">
+                <Items>
+                    <ej:BasicShape Width="40" Height="80" Name="Rectangle">
+                        <%--Specifies the size of palette Item--%>
+                        <PaletteItem Width="50" Height="50">
+                            <Margin Left="20" Top="20" Right="20" Bottom="20">
+                            </Margin>
+                        </PaletteItem>
+                    </ej:BasicShape>
+                </Items>
+            </ej:DiagramPalette>
+        </Palettes>
+    </ej:SymbolPalette>
 
 {% endhighlight %}
 
-## Preview for Drag and Drop
+Palette item size is set based on the precedence flow given in the following table.
 
-Diagram provides preview support to Paletteitem during drag and drop. When you drag an item from the palette to Diagram, a preview of the dragged item is displayed.
+| Palette Item | Rendering Size |  
+|---|---|---|
+| Precedence - Width | paletteItem.width > model.paletteItemWidth > node.width |  
+| Precedence - Height | paletteItem.height > model.paletteItem.Height > node.height |  
 
-### Preview Appearance
+Palette item size can be based on the actual size of the node, regardless of the precedence. 
 
-You can customize the preview size and position by using the following properties.
+#### Stretch the shape in to the Palette Item
 
-Preview Appearance
+The `enableScale` property of the palette item enables you to customize the size of the item regardless of the precedence. The following code example illustrates how to customize the palette item size.
 
-<table>
-<tr>
-<th>Properties</th><th>Data Type</th><th>Description</th></tr>
-<tr>
-<td>
-PreviewWidth</td><td>
- number</td><td>
-Gets or sets the preview width of palette item.</td></tr>
-<tr>
-<td>
-PreviewHeight</td><td>
- number</td><td>
-Gets or sets the preview height of palette item.</td></tr>
-<tr>
-<td>
-PreviewOffset</td><td>
- object</td><td>
-Gets or sets the preview x and y value of palette item.</td></tr>
-</table>
+{% highlight ASPX %}
+
+    <ej:SymbolPalette ID="symbolpalette" Width="100%" Height="100%" runat="server">
+        <Palettes>
+            <%--define a palette with its name and expands its children.--%>
+            <ej:DiagramPalette Name="Basic Shapes" Expanded="true">
+                <Items>
+                    <ej:BasicShape Width="40" Height="80" Name="Rectangle">
+                        <%--Enables to fit the content into the specified palette item size--%>
+                        <PaletteItem EnableScale="true">
+                        </PaletteItem>
+                        <%--When it is set as false, the element is rendered with actual node size--%>
+                    </ej:BasicShape>
+                </Items>
+            </ej:DiagramPalette>
+        </Palettes>
+    </ej:SymbolPalette>
+
+{% endhighlight %}
+
+![](/aspnet/Diagram/Symbol-Palette_images/Symbol-Palette_img1.png)
+
+![](/aspnet/Diagram/Symbol-Palette_images/Symbol-Palette_img2.png)
 
 
-The following code example illustrates how to customize Preview Content.
+### Palette header 
 
-{% highlight c# %}
+Palette headers are often used to display unit of information that proceeds the information about the palette. By default, the header content is the name of the palette by default, so when you customize the header of the palette, it will update on all the palette as well.
 
-//Sets properties to symbol palette preview
+Following code example illustrates how to define default palette header.
 
-symbolpalette.Model.PreviewHeight=100
 
-symbolpalette.Model.PreviewWidth=100
+{% highlight C# %}
 
-symbolpalette.Model.PreviewOffset= new DiagramPoint(102,102)
+    <ej:SymbolPalette ID="symbolpalette" Width="100%" Height="100%" runat="server">
+        <Palettes>
+            <%--Defines the default header--%>
+            <ej:DiagramPalette Name="Basic Shapes" Expanded="true">
+            </ej:DiagramPalette>
+        </Palettes>
+    </ej:SymbolPalette>
 
+{% endhighlight %}
+
+
+![](/aspnet/Diagram/Symbol-Palette_images/Symbol-Palette_img7.png)
+
+#### Customize the Palette Header
+
+Palettes can be annotated with its header texts. Following code example illustrates how to define palette header.
+
+Also, you can embed any HTML element into a palette header by defining the ScriptTemplate id to palette's `TemplateID` property. Following code example illustrates how to customize palette headers.
+
+{% highlight ASPX %}
+
+
+    &lt;!--dependency scripts--&gt;
+        &lt;script id="svgTemplate" type="text/x-jsrender"&gt;
+        &lt;!--  define HTML element --&gt;
+            &lt;svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="225px" height="28px"&gt;
+                &lt;g visibility="visible"&gt;
+                    &lt;image width="26px" height="26px" opacity="1" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="image.png"&gt;&lt;/image&gt;
+                    &lt;text x="40" y="18" font-size="14"&gt;
+                        <tspan>Basic Shapes</tspan>
+                    &lt;/text&gt;
+                &lt;/g&gt;
+            &lt;/svg&gt;
+        &lt;/script&gt;												
 
 
 {% endhighlight %}
 
 
+{% highlight ASPX %}
 
+    <ej:SymbolPalette ID="symbolpalette" Width="100%" Height="100%" runat="server">
+        <Palettes>
+            <%--Create a palette with custom header and set the id of the script template--%>
+            <ej:DiagramPalette Name="Basic Shapes" TemplateId="svgTemplate">
+            </ej:DiagramPalette>
+        </Palettes>
+    </ej:SymbolPalette>
+
+{% endhighlight %}
+
+The following image shows the customized palette header
+
+![](/aspnet/Diagram/Symbol-Palette_images/customizethepaletteheader_img1.png)
+
+## Symbol Previews
+
+Image, simple snippet to customize the preview size
+
+You can customize the preview size of the individual palette items. The `PaletteItem` property of node enables you to define the preview size of the symbol items. The following code example illustrates how to change the preview size of a palette item.
+
+{% highlight ASPX %}
+
+    <ej:SymbolPalette ID="symbolpalette" Width="100%" Height="100%" DiagramId="DiagramContent"  runat="server">
+        <Palettes>
+            <ej:DiagramPalette Name="Basic Shapes">
+                <Items>
+                    <ej:BasicShape Width="50" Height="50" Name="Rectangle">
+                        <%--Specifies the individual palette item preview size--%>
+                        <PaletteItem PreviewHeight="100" PreviewWidth="100">
+                        </PaletteItem>
+                    </ej:BasicShape>
+                </Items>
+            </ej:DiagramPalette>
+        </Palettes>
+    </ej:SymbolPalette>
+
+{% endhighlight %}
+
+![](/aspnet/Diagram/Symbol-Palette_images/customizethepaletteheader_img5.png)
+
+You can also customize the preview size of the all palette items. The `PreviewWidth` and `PreviewHeight` property of SymbolPalette enables you to define the preview size to all the symbol palette items. The following code example illustrates how to change the preview size of a symbol palette items.
+
+{% highlight ASPX %}
+
+    <ej:SymbolPalette ID="symbolpalette" Width="100%" Height="100%" DiagramId="DiagramContent"
+        PreviewWidth="100" PreviewHeight="100" runat="server"><%--Specifies the preview size to symbol palette items. --%>
+        <%--Defines the palette collection--%>
+        <Palettes>
+            <ej:DiagramPalette Name="Basic Shapes">
+                <Items>
+                    <ej:BasicShape Width="50" Height="50" Name="Rectangle" Shape="Rectangle">
+                    </ej:BasicShape>
+                </Items>
+            </ej:DiagramPalette>
+        </Palettes>
+    </ej:SymbolPalette>
+
+{% endhighlight %}
+
+![](/aspnet/Diagram/Symbol-Palette_images/customizethepaletteheader_img4.png)
+
+Symbol palette allows to sets the offset of the dragging helper relative to the mouse cursor.
+
+
+{% highlight ASPX %}
+
+    <ej:SymbolPalette ID="symbolpalette" Width="100%" Height="100%" runat="server">
+        <%--Specifies the offset of the dragging helper relative to the mouse cursor.--%>
+        <PreviewOffset X="50" Y="50" />
+    </ej:SymbolPalette>
+
+{% endhighlight %}
+
+![](/aspnet/Diagram/Symbol-Palette_images/customizethepaletteheader_img5.png)
+
+
+preview size is set based on the precedence flow given in the following table.
+
+| Palette Item |   Preview Size |
+|---|---|---|
+| Precedence - Width |  paletteItem.previewWidth > model.previewWidth > node.width |
+| Precedence - Height | paletteItem.previewHeight > model.previewHeight > node.height |
+
+Preview item size can be based on the actual size of the node, regardless of the precedence.
+
+
+## Appearance 
+
+You can show/hide the palette item texts by using the `ShowPaletteItemText` property of symbol palette and you can change the height of palette header by using `HeaderHeight` property of symbol palette. The following code illustrates how to customize the appearance of the symbol Palette.
+
+{% highlight C# %}
+
+    <%--Specifies whether palette item text should be visible or not and height of the symbol palette header.--%>
+    <ej:SymbolPalette ID="symbolPalette" Width="100%" Height="100%"
+        ShowPaletteItemText="true" HeaderHeight="30"> 
+    </ej:SymbolPalette>
+
+{% endhighlight %}

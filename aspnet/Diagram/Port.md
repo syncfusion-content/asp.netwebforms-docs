@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Port | Diagram | ASP.NET Webforms | Syncfusion
-description: port
+title: Create custom connection points to draw connections with any specific point of node
+description: How to draw connections with specific points of node?
 platform: aspnet
 control: Diagram
 documentation: ug
@@ -9,226 +9,122 @@ documentation: ug
 
 # Port
 
-Port is a specific connection point on node to make a static connection with nodes. You can define any number of ports on a node. 
+Essential Diagram for ASP.NET provides support to define custom ports for making connections.
+
+![](/aspnet/Diagram/Port_images/Port_img3.png)
+
+When a connector is connected between two nodes, its end points are automatically docked to node's nearest boundary as shown in the following image. 
+
+![](/aspnet/Diagram/Port_images/Port_img4.png)
+
+Ports act as the connection points of node and allows to create connections with only those specific points as shown in the following image.
+
+![](/aspnet/Diagram/Port_images/Port_img5.png)
 
 ## Create Port
 
-The following code illustrates how to create a port and add it to nodes port array.
+### Add ports when initializing nodes
 
+To add a connection port, you need to define the port object and add it to node's `Ports` collection. The `Offset` property of port accepts an object of fractions and used to determine the position of ports. The following code illustrates how to add ports when initializing the node.
 
-{% highlight c# %}
+{% highlight ASPX %}
 
-//Creates a port and adds it to node’s ports collection.
+        <%--  To Create a port  --%>
+        <ej:Diagram ID="Diagram" runat="server" Height="400px" Width="400px">
+            <Nodes>
+                <ej:BasicShape Name="node1" OffsetX="100" OffsetY="100" BorderColor="black" BorderWidth="2" FillColor="darkcyan">
+                    <%-- Adding the ports to the ports collection --%>
+                    <Ports>
+                        <ej:DiagramPort Name="port1" Visibility="Visible">
+                            <%-- Specifies the offset of the port --%>
+                            <ej:Offset X="0" Y=".5"></ej:Offset>
+                        </ej:DiagramPort>
+                    </Ports>
+                </ej:BasicShape>
+            </Nodes>
+        </ej:Diagram>
 
-Port port = new Port();
+{% endhighlight %} 
 
-port.Name = "port1";
+### Add ports at runtime
 
-port.Visibility = PortVisibility.Visible;
+You can add ports at runtime by using the client side method `addPorts`. The following code illustrates how to add ports to node at runtime.
 
-port.FillColor = "yellow";
+{% highlight js %}
 
-port.Offset = new DiagramPoint(0, 0.5f);
+    // Defines a collection of ports that have to be added at runtime
+    var ports = [
+        {
+            name: "port1",
+            // Specifies the port offset – fraction value relative
+            to node bounds – determines the position of port on node
+            offset: {	
+                x: 0,	
+                y: 0.5
+            }
+        },
+        { name: "port2",offset: {x: 1,y: 0.5 }},
+        { name: "port3",offset: {x: 0.5,y: 0 }},
+        { name: "port4",offset: {x: 0.5,y: 1 }}
+    ];
 
-node.Ports.Add(port);
-
-
-
-{% endhighlight %}
-
-
-
-![](Port_images/Port_img1.png)
-
-Port
-{:.caption} 
-
-## Connecting Ports
-
-The connection between specific ports on the node is established by assigning the name of the node’s port to the connector’s TargetPort/SourcePort.
-
-The following code illustrates how to establish a port connection:
-
-
-
-{% highlight c# %}
-
-//Creates nodes with ports
-
-Node node1 = CreateNodes("node1", 300, 300);
-
-Node node2 = CreateNodes("node2", 450, 500);
-
-Connector connector = new Connector();
-
-//Creates connector refer the link Connector Creation
-
-connector.SourcePort = node1.Ports[2] as Port;
-
-connector.TargetPort = node2.Ports[0] as Port;
-
-
-
-private Node CreateNodes(string name ,float offsetx, float offsety){
-
-    Node node = new Node(); //for creating node refer the link Node Creation
-
-    node.Ports.Add(GetPort(0, 0.5f, "port1"));
-
-    node.Ports.Add(GetPort(0.5f, 0, "port2"));
-
-    node.Ports.Add(GetPort(1, 0.5f, "port2"));
-
-    node.Ports.Add(GetPort(0.5f, 1, "port2"));
-
-    return node;
-
-}
-
-
-
-private Port GetPort(float offsetX, float offsetY, string name){
-
-    Port port = new Port();
-
-    port.Name = name;
-
-    port.Visibility = PortVisibility.Visible;
-
-    port.FillColor = "yellow";
-
-    port.Shape = PortShapes.Square;
-
-    port.Offset = new DiagramPoint(offsetX, offsetY);
-
-    return port;
-
-}
-
-
+    // Gets the instance for the Diagram
+    var diagram = $("#diagram").ejDiagram("instance");
+    // Adds the ports to the node of name "node"
+    diagram.addPorts("node", ports)
 
 {% endhighlight %}
 
+![](/aspnet/Diagram/Port_images/Port_img1.png)
 
+To explore the set of properties for defining a port, refer to [Port Properties](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.Port_members.html  "Port Properties")
 
- ![](Port_images/Port_img2.png) 
+### Update Port at runtime
 
-Port to Port Connection
-{:.caption} 
+The client side API `updatePort` is used to update the ports at run time. The following code example illustrates how to change the port properties.
 
-## Appearance
+{% highlight js %}
 
-You can customize the Port’s appearance by setting desired values to the appropriate appearance property.
-
-Properties
-
-<table>
-<tr>
-<th>Properties</th><th>
-Data Type</th><th>
-Description</th></tr>
-<tr>
-<td>
- Visibility</td><td>
-boolean</td><td>
-Gets or sets the visibility of port</td></tr>
-<tr>
-<td>
- Size</td><td>
-number</td><td>
-Gets or sets the size of the port</td></tr>
-<tr>
-<td>
- Offset</td><td>
-points</td><td>
-Gets or sets the offset of the port</td></tr>
-<tr>
-<td>
- BorderColor</td><td>
-string</td><td>
-Gets or sets the border color of the port</td></tr>
-<tr>
-<td>
- BorderWidth</td><td>
-number</td><td>
-Gets or sets the border width of the port</td></tr>
-<tr>
-<td>
- FillColor</td><td>
-string</td><td>
-Gets or sets the fill color of the port</td></tr>
-<tr>
-<td>
- PathData</td><td>
-string</td><td>
-Gets or sets the path data of the port</td></tr>
-</table>
-
-
-The following code illustrates how to customize the port.
-
-
-
-{% highlight c# %}
-
-//Sets various appearance properties to port
-
-Port port = new Port();
-
-port.Visibility = PortVisibility.Visible;
-
-port.FillColor = "yellow";
-
-port.Shape = PortShapes.Square;
-
-port.Size = 12;
-
-port.BorderColor = "black";
-
-port.BorderWidth = 2;
-
-
+    var diagram = $("#diagram").ejDiagram("instance");
+    var selectedObject = diagram.model.selectedItems.children[0];
+    var visibility = ej.datavisualization.Diagram.PortVisibility.Visible;
+    diagram.updatePort(selectedObject.name, selectedObject.ports[0], { fillColor: "red", visibility: visibility });
 
 {% endhighlight %}
+
+## Connect with ports
+
+Connector’s `SourcePort` and `TargetPort` properties allow to create connections between some specific points of source/target nodes. 
+For more information about creating connections with port, refer to [Connections with ports](/aspnet/Diagram/Connector#connections-with-ports "Connections with ports")
+
+## Appearance 
+
+You can change the shape of port by using its `Shape` property. To explore the different types of port shapes, refer to [Port Shapes](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.DiagramEnums.PortShapes.html "Port Shapes").
+The appearance of ports can be customized with a set of style specific properties. 
+
+The following code illustrates how to change the appearance of port.
+
+{% highlight ASPX %}
+         
+        <ej:Diagram ID="Diagram" runat="server" Height="400px" Width="400px">
+            <Nodes>
+                <ej:BasicShape Name="node1" OffsetX="100" OffsetY="100" BorderColor="black" BorderWidth="2" FillColor="darkcyan">
+                    <%-- Adding the ports to the ports collection --%>
+                    <ports>
+                        <%--Customizes the appearance and Defines the shape of port--%>
+                        <ej:DiagramPort Name="port1" Visibility="Visible" Shape="Circle" FillColor="yellow" Size="12" BorderColor="black" BorderWidth="2">
+                            <%-- Specifies the port position --%>
+                            <ej:Offset X="1" Y=".5"></ej:Offset>
+                        </ej:DiagramPort>
+                    </ports>
+                </ej:BasicShape>
+            </Nodes>
+        </ej:Diagram>
+
+{% endhighlight %}
+
+![](/aspnet/Diagram/Port_images/Port_img2.png)
 
 ## Constraints
 
-You can enable or disable certain behaviors of Port by using Port’s Constraints property. 
-
-Constraints
-
-<table>
-<tr>
-<th>Constraints</th><th>
-Description</th></tr>
-<tr>
-<td>
-None</td><td>
-Disable all constraints</td></tr>
-<tr>
-<td>
-Connect</td><td>
-Enables connections with connector</td></tr>
-</table>
-
-
-The following code illustrates how to set port constraints.
-
-
-
-{% highlight c# %}
-
-//Sets port’s “Connect” constraint
-
-Port port = new Port();
-
-port.Constraints = PortConstraints.Connect;
-
-
-
-{% endhighlight %}
-
-
-
-N> Port’s constraints property is manipulated by using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations.
-
+The `Constraints` property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/aspnet/Diagram/Constraints#portconstraints)

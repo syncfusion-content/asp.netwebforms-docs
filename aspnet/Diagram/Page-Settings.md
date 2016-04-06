@@ -1,229 +1,82 @@
 ---
 layout: post
-title: Page Settings | Diagram | ASP.NET Webforms | Syncfusion
-description: page settings
+title: Customize the size and appearance of single or multiple Diagram pages
+description: How to customize the size and appearance of the Diagram pages?
 platform: aspnet
 control: Diagram
 documentation: ug
 ---
 
-# Page Settings
 
-Page settings enable you to customize the width and height of the Diagram page. The properties of PageSetting are listed as follows.
+# Page Settings 
 
-Page settings
+Page settings enable to customize the appearance, width, and height of the Diagram page.
 
-<table>
-<tr>
-<th>Properties</th><th>
-Data Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-PageWidth</td><td>
-Int</td><td>
-Gets or sets the width of the page</td></tr>
-<tr>
-<td>
-PageHeight</td><td>
-Int</td><td>
-Gets or sets the height of the page</td></tr>
-<tr>
-<td>
-MultiplePage</td><td>
-Boolean</td><td>
-Gets or sets whether  multiple page option is enabled or not</td></tr>
-<tr>
-<td>
-PageBorderWidth</td><td>
-Int</td><td>
-Gets or sets the border width of the page</td></tr>
-<tr>
-<td>
-PageBackgroundColor</td><td>
-String</td><td>
-Gets or sets the background color of the page</td></tr>
-<tr>
-<td>
-PageBorderColor</td><td>
-String</td><td>
-Gets or sets the border color of the page</td></tr>
-<tr>
-<td>
-PageMargin</td><td>
-Int</td><td>
-Gets or sets the  margin of the page</td></tr>
-<tr>
-<td>
-ShowPageBreak</td><td>
-Boolean</td><td>
-Gets or sets whether  page break option is enabled or not</td></tr>
-<tr>
-<td>
-PageOrientation</td><td>
-PageOrientation</td><td>
-Gets or sets the orientation of the page</td></tr>
-</table>
+![](/aspnet/Diagram/Page-Settings_images/Page-Settings_img1.png)
 
+## Page size and appearance
 
-The following code illustrates how to customize Page Settings
+The size and appearance of the Diagram pages can be customized with the `PageSettings` property. 
 
-{% highlight c# %}
+The `PageWidth` and `PageHeight` properties of page settings define the size of the page. In addition to that, you can customize the appearance of the page with a set of appearance specific properties.
+To explore those properties, refer [Page Settings](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.PageSettings.html "Page Settings").
 
-//Sets page setting properties
+You can also customize the appearance of off-page regions with the property `BackgroundColor`.
 
-Diagram1.PageSettings.PageHeight = 300;
+The following code illustrates how to customize the page size and the appearance of page and off-page.
 
-Diagram1.PageSettings.PageWidth = 450;
+{% highlight ASPX %}
 
-Diagram1.PageSettings.PageBorderWidth = 4;
-
-Diagram1.PageSettings.PageBackgroundColor = "lightBlue";
-
-Diagram1.PageSettings.PageBorderColor = "black";
-
-Diagram1.PageSettings.PageMargin = 35;
-
-Diagram1.PageSettings.ShowPageBreaks = true;
-
-Diagram1.PageSettings.MultiplePage = true;
-
-Diagram1.PageSettings.PageOrientation = PageOrientation.Portrait;
-
-
-
+        <%--   Initializes Diagram--%>
+        <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
+            <%-- Sets page size and Customizes the appearance of page--%>
+            <PageSettings PageHeight="500" PageWidth="500" PageBorderWidth="4"
+                PageBackgroundColor="white" PageBorderColor="lightgray" PageMargin="24"
+                ShowPageBreak="true" MultiplePage="true" PageOrientation="Portrait"></PageSettings>
+        </ej:Diagram>
 {% endhighlight %}
 
 
+![](/aspnet/Diagram/Page-Settings_images/Page-Settings_img2.png)
 
- ![](Page-Settings_images/Page-Settings_img1.png) 
+![](/aspnet/Diagram/Page-Settings_images/Page-Settings_img3.png)
 
-Page Appearance-PageSettings based
-{:.caption} 
+N>When the PageWidth and PageHeight are not specified, the rectangular region that completely fits all nodes and connectors are considered as page size.
 
 ## MultiplePage and PageBreaks
 
-When MultiplePage is enabled, size of the page dynamically increases or decreases in multiples of page width and height and completely fits the Diagram within the page boundaries. PageBreaks is used as a visual guide to see how pages are split into multiple pages.
+When MultiplePage is enabled, size of the page dynamically increases or decreases in multiples of page width and height and completely fits diagram within the page boundaries. Page Breaks is used as a visual guide to see how pages are split into multiple pages.
 
-![](Page-Settings_images/Page-Settings_img2.png) 
+![](/aspnet/Diagram/Page-Settings_images/Page-Settings_img4.png)
 
-Multiple Page and Page Breaks
-{:.caption} 
+`MultiplePage` and `ShowPageBreak` properties of page settings allow you to enable/disable multiple pages and page breaks respectively.
+The following code illustrates how to enable multiple page and page break lines.
 
-## AutoScroll
+{% highlight ASPX %}
 
-Autoscroll feature automatically scrolls the Diagram whenever the node or connector is beyond the boundary of the diagram, so that, it is always visible during dragging, resizing, and multiple selection operations.
-
-Autoscroll is automatically triggered when any one of the following is dragged towards the edge of the Diagram.
-
-* Node dragging
-* Node’s control points: resizer, rotator
-* Connector’s control points: end point, segment
-* Rubber band selection
-* Dropping item from palette
-
-Properties table
-
-<table>
-<tr>
-<th>Properties</th><th>
-Data Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-ScrollLimit</td><td>
-String</td><td>
-Gets or sets the scroll limit of the page</td></tr>
-<tr>
-<td>
-ScrollableArea</td><td>
-Object</td><td>
-Gets or sets the scrollable region of the page</td></tr>
-<tr>
-<td>
-AutoScrollBorder</td><td>
-Object</td><td>
-Gets or sets the auto scroll starting point </td></tr>
-</table>
-
-### Autoscroll border
-
-The Autoscroll border is used to specify the distance from where the autoscroll is to be enabled when moving the node or connector. The default value is set to 15 for all the sides (left, right, top, and bottom).
-
-The following code example illustrates how to set Autoscroll border.
-
-{% highlight c# %}
-
-// Specifies Autoscroll border
-
-DiagramContent.PageSettings.AutoScrollBorder.Left = 150;
-
-DiagramContent.PageSettings.AutoScrollBorder.Right = 15;
-
-DiagramContent.PageSettings.AutoScrollBorder.Top = 15;
-
-DiagramContent.PageSettings.AutoScrollBorder.Bottom = 15;
-
-
+     <%--   Initializes Diagram--%>
+        <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
+            <%-- Enables the multiple page and the page break lines --%>
+            <PageSettings ShowPageBreak="true" MultiplePage="true" PageOrientation="Portrait"></PageSettings>
+        </ej:Diagram>
 
 {% endhighlight %}
 
-### Scroll limit
+## Boundary Constraints
 
-The scroll limit allows you to scroll the diagram page along X and Y axes based on the options specified. 
+ Diagram provides support to restrict/customize the interactive region, out of which the elements cannot be dragged, resized or rotated. 
+ `BoundaryConstraints` property of page settings allows you to customize the interactable region. To explore the boundary constraints, refer refer [Boundary Constraints](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.BoundaryConstraints.html "Boundary Constraints").
 
-* By default, the value is set to infinity to scroll in all directions without any restriction. 
-* When scroll limit is set as diagram, you are restricted to scroll the page beyond the diagram content. 
-* By specifying the value as limited, you can set the limit of the scrollable area through scrollable area property. 
+The following code example illustrates how to define boundaryConstraints.
 
-N> Refer to the scrollable area for more details.
-
-The following code example illustrates how to specify scroll limit. 
-
-{% highlight c# %}
-
-//Scrolllimit for Diagram by default
-
-<PageSettings ScrollLimit="Inifinity" />
+{% highlight ASPX %}
 
 
+        <%--   Initializes Diagram--%>
+        <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
+            <%-- Allows to drag within the diagram content --%>
+            <PageSettings BoundaryConstraints="Diagram"></PageSettings>
+        </ej:Diagram>
 
+    
 {% endhighlight %}
-
-### Scrollable Area
-
-You can restrict scrolling beyond a particular rectangular area and the rectangular area is specified by using ScrollableArea property. This is applicable only when the scroll limit for the Diagram is specified as limited. 
-
-The following code example illustrates how to customize scrollable area of diagram.
-
-{% highlight c# %}
-
-  //Scrolllimit for Diagram as limited
-
-DiagramContent.PageSettings.ScrollLimit=  
-
-  ScrollLimit.Limited;
-
-
-
-  //Sets limit of the scrollable area
-
-  DiagramContent.PageSettings.ScrollableArea.X = 0;
-
-  DiagramContent.PageSettings.ScrollableArea.Y = 0;
-
-  DiagramContent.PageSettings.ScrollableArea.Width = 5000;
-
-  DiagramContent.PageSettings.ScrollableArea.Height = 5000;
-
-
-
-{% endhighlight %}
-
-
-
- ![](Page-Settings_images/Page-Settings_img4.png) 
-
-AutoScroll Border
-{:.caption} 
-

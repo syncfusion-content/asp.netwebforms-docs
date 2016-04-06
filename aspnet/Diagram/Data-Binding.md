@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding | Diagram | ASP.NET Webforms | Syncfusion
-description: data binding
+title: Populate Diagram from external data sources
+description: How to populate the Diagram from the local data, remote data, or HTML tables?
 platform: aspnet
 control: Diagram
 documentation: ug
@@ -9,276 +9,255 @@ documentation: ug
 
 # Data Binding
 
-Diagram can be populated with the node and connector based on information from an external data source by using data binding. Diagram supports binding data sources containing hierarchical data and also supports both local data and remote data for retrieving data from a specified data source. Diagram exposes its specific data-related properties allowing you to specify the data source fields from where the node information has to be retrieved.
+* Diagram can be populated with the nodes and connectors based on the information provided from an external data source.
+* Diagram exposes its specific data-related properties allowing you to specify the data source fields from where the node information has to be retrieved from.
 
-You can populate Diagram elements by using data binding support such as JSON and OData services.
+To explore those properties, see [Data source settings](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.DiagramProperties~DataSourceSettings.html "Data source settings")
 
-## DataSource Settings
-
-The DataSourceSettings property of Diagram includes the required data source fields and it can be set with appropriate values as follows.
-
-Field properties
-
-<table>
-<tr>
-<th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
-<tr>
-<td>
-DataSource</td><td>
-Object</td><td>
-Null</td><td>
-DataSource receives  Essential DataManager object and JSON object.</td></tr>
-<tr>
-<td>
-Query</td><td>
-Object</td><td>
-Null</td><td>
-It receives query to retrieve data from the table (query is same as SQL).Example:  ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);take(3);</td></tr>
-<tr>
-<td>
-TableName</td><td>
-String</td><td>
-Null</td><td>
-It receives table name to execute query on the corresponding table.</td></tr>
-<tr>
-<td>
-Id</td><td>
-String</td><td>
-Null</td><td>
-Specifies the ID to Diagram node items list.</td></tr>
-<tr>
-<td>
-Parent</td><td>
-String</td><td>
-Null</td><td>
-Specifies the parent ID of the table.</td></tr>
-</table>
-
+* Diagram supports three different kinds of Data binding.
+	* Local Data
+	* Remote Data
+	* HTML Table Data
 
 ## Local Data
 
-To bind the Local Data to the Diagram control, map the user-defined JSON data names with its appropriate data source field. You can bind data to the Diagram by mapping fields such as DataSource, ID, and Parent.
+Diagram can be populated based on the user defined JSON data (**Local Data**) by mapping the relevant data source fields.
 
-The following code example illustrates how to bind local data to the Diagram.
+To map the user defined JSON data with Diagram, you have to configure the fields of `DataSourceSettings`. The following code example illustrates how to bind local data with the Diagram.
 
 {% tabs %}
+{% highlight ASPX %}
+<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" NodeTemplate="nodeTemplate" Height="600px" Width="100%" EnableContextMenu="false" Tool="ZoomPan">
+	<%--Uses layout to auto-arrange nodes on the Diagram page--%>
+	<Layout Type="HierarchicalTree" HorizontalSpacing="30" VerticalSpacing="30" />
+	
+	<%--Configures data source for Diagram--%>
+    <DataSourceSettings Id ="Id" Parent ="ReportingPerson" />
+</ej:Diagram>
 
-{% highlight html %}
-
-// Node template.
-
-function nodeTemplate(diagram, node) {
-
-            node.labels[0].text = node.Name;
-
-        }
-
-//Initializes the node template
-
-$(window).load(function () {
-
-           $("#Diagram").ejDiagram({ nodeTemplate: nodeTemplate });
-
-        });
-
-
-
-
-
-
-
+<script type="text/javascript">
+	//Binds custom JSON with node
+	function nodeTemplate(diagram, node) {
+		// Sets the Name field of JSON data as label.
+		node.labels[0].text = node.Name;
+	}
+</script>
 {% endhighlight %}
-
-
 
 {% highlight c# %}
+protected void Page_Load(object sender, EventArgs e)
+{
+	if (!IsPostBack)
+	{
+		//Sets the default properties for nodes and connectors
+		Label label = new Label() { Name = "label1", FontColor = "white", Bold = true };
+		Diagram.Model.DefaultSettings.Node = new Node() { Width = 100, Height = 40, FillColor = "darkcyan" };
+		Diagram.Model.DefaultSettings.Node.Labels.Add(label);
+		Diagram.Model.DefaultSettings.Connector = new Connector()
+		{
+			Segments = new Collection() { new Segment(Segments.Orthogonal) },
+			TargetDecorator = new Decorator() { Shape = DecoratorShapes.None },
+		};
 
-Diagram.Model.Layout.Type  = LayoutTypes.HierarchicalTree;
+		//Configures data source for Diagram
+		//Sets the local data source to the diagram.
+		Diagram.Model.DataSourceSettings.DataSource = GetData();
+	}
+}
 
-
-
-//Configures data source for diagram
-
-Diagram.Model.DataSourceSettings.DataSource =  GetData();
-
-Diagram.Model.DataSourceSettings.Parent = "ReportingPerson";
-
-Diagram.Model.DataSourceSettings.Id = "Id";
-
-
-
-//Sets the default properties of the nodes.
-
-Diagram.Model.DefaultSettings.Node = new Node() { 
-
-            Width = 140,
-
-            Height = 50,
-
-            Labels = new Collection() { 
-
-                new Label() { Name = "label, Bold = true }
-
-         }
-
-};
-
-
-
-//Sets the default properties of the connectors.
-
-Diagram.Model.DefaultSettings.Connector = new Connector() {
-
-  Segments = new Collection() { 
-
-       new Segment(Segments.Orthogonal) },
-
-  TargetDecorator = 
-
-       new Decorator() { Shape = DecoratorShapes.None }  };   
-
-  }
-
-
-
- public Array GetData(){
-
-// Returns datasource
-
-   }
-
-
-
+//returns datasource
+public Array GetData()
+{
+	String allText = System.IO.File.ReadAllText(Server.MapPath("~/App_Data/Data.json"));
+	Dictionary<string, object> requestArgs = (Dictionary<string, object>)new JavaScriptSerializer().DeserializeObject(allText);
+	requestArgs = (Dictionary<string, object>)requestArgs["root"];
+	return (Array)requestArgs.Values.ElementAt(0);
+}
 {% endhighlight %}
 
+{% highlight js %}
+{root: {data: [ 
+	{ "Name": "Director" },
+	{ "Name": "Manager", "ReportingPerson": "Director" },
+	{ "Name": "TeamLead", "ReportingPerson": "Director" },
+	{ "Name": "Software Developer", "ReportingPerson": "TeamLead" },
+	{ "Name": "Testing engineer", "ReportingPerson": "TeamLead" },
+	{ "Name": "Software Developer", "ReportingPerson": "Manager" },
+	{ "Name": "Testing engineer", "ReportingPerson": "Manager" }
+]}}
+{% endhighlight %}
 {% endtabs %}
 
- ![](Data-Binding_images/Data-Binding_img1.png) 
-
-Local Data binding
-{:.caption} 
+![](/Data-Binding_images/Data-Binding_img1.png)
 
 ## Remote Data
 
-You can bind the Diagram to Remote Data by using dataManager and the query in fields is used to retrieve the data. dataManager supports the following types of data-binding: JSON, Web Services, oData. It uses two different classes; ej.DataManager for processing, and ej.Query for serving data. ej.DataManager communicates with data source and ej.Query generates data queries that are read by the dataManager. The following link explains in detail the way to create dataManager.
-<http://help.syncfusion.com/js>
+You can bind the Diagram with Remote Data by using dataManager.
 
-The following code illustrates how to bind remote data to the Diagram.
+* DataManager supports the following types of data-binding: JSON, Web Services, oData.
+* It uses two different classes: ej.DataManager for processing and ej.Query for serving data. ej.DataManager communicates with data source and ej.Query generates data queries that are read by the dataManager.
+* To learn more, refer to [Data Manager](/aspnet/DataManager/Getting-Started "Data Manager").
+
+To bind remote data to the Diagram, you have to configure the fields of `DataSourceSettings`. The following code illustrates how to bind remote data to the Diagram.
 
 {% tabs %}
+{% highlight ASPX %}
+<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" NodeTemplate="nodeTemplate" Height="660px" Width="100%">
+	<%--Uses layout to auto-arrange nodes on the Diagram page--%>
+	<Layout Type="HierarchicalTree" HorizontalSpacing="30" VerticalSpacing="30" />
+	
+	<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/" />
+	<DataSourceSettings Query="ej.Query().from('Employees').select('EmployeeID,ReportsTo,FirstName')" Id="EmployeeID" Parent="ReportsTo" TableName="Employees" />
+	
+</ej:Diagram>
 
-{% highlight html %}
-//Initializes Automatic Layout
-
-DiagramWebControl1.Model.Layout.Type = LayoutTypes.HierarchicalTree;   
-
-//Configures data source
-
-DiagramWebControl1.Model.DataSourceSettings.Parent = "ReportsTo";
-
-DiagramWebControl1.Model.DataSourceSettings.Id = "EmployeeID";
-
-//Initializes Default node properties
-
-DiagramWebControl1.Model.DefaultSettings.Node = new Node()
-
-        {
-
-          Width = 100, Height = 40,FillColor = "DarkCyan",
-
-          BorderColor = "transparent",
-
-          Labels = new Collection() { 
-
-          new Label() { Name = "label", FontColor = "white" }            
-
-         } };
-
-//Initialize Default connector properties
-
-DiagramWebControl1.Model.DefaultSettings.Connector = new Connector() {
-
-             Segments = new Collection() { new Segment(Segments.Orthogonal) } };
-
-DiagramWebControl1.Model.NodeTemplate = "nodeTemplate";
+<script type="text/javascript">
+	//Binds custom JSON with node
+	function nodeTemplate(diagram, node) {
+		// Sets the Name field of JSON data as label.
+		node.labels[0].text = node.FirstName;
+	}
+</script>
 
 {% endhighlight %}
-
-{% highlight html %}
-
-//Customizes node before rendering
-
-function nodeTemplate(diagram, node) {
-
-     node.labels[0].text = node.FirstName;
-
-}
-
-var dataManager = ej.DataManager({
-
-url: [http://mvc.syncfusion.com/Services/Northwnd.svc/](http://mvc.syncfusion.com/Services/Northwnd.svc/) });
-
-//Initializes remote data binding
-
-$(window).load(function () {
-
- var diagram = $("#DiagramWebControl1").ejDiagram("instance");
-
- $("#DiagramWebControl1").ejDiagram({
-
-        dataSourceSettings: {
-
-           dataSource: dataManager, 
-
-           tableName: "Employees", 
-
-           parent: "ReportsTo", id: "EmployeeID",
-
-           query:  ej.Query().from("Employees").select("EmployeeID,ReportsTo,FirstName"),}
-
-            });
-
-        });    
-
-
-
-{% endhighlight %}
-
-{% endtabs %}
-
- ![](Data-Binding_images/Data-Binding_img2.png) 
-
-Remote data binding
-{:.caption} 
-
-### Root
-
-During automatic layout, node without parent is treated as root of the layout. You can specify this root by using the data source settings.
-
-The following code example illustrates how to specify the root object for the Diagram.
 
 {% highlight c# %}
+protected void Page_Load(object sender, EventArgs e)
+{
+	if (!IsPostBack)
+	{
+		//Sets the default properties for nodes and connectors
+		Label label = new Label() { Name = "label1", FontColor = "white", Bold = true };
+		Diagram.Model.DefaultSettings.Node = new Node() { Width = 100, Height = 40, FillColor = "darkcyan" };
+		Diagram.Model.DefaultSettings.Node.Labels.Add(label);
+		Diagram.Model.DefaultSettings.Connector = new Connector()
+		{
+			Segments = new Collection() { new Segment(Segments.Orthogonal) },
+			TargetDecorator = new Decorator() { Shape = DecoratorShapes.None },
+		};
+	}
+}
+{% endhighlight %}
+{% endtabs %}
 
-//Configures data source for diagram
+![](/Data-Binding_images/Data-Binding_img2.png)
 
-Diagram.Model.DataSourceSettings.Parent = "ReportingPerson";
+## HTML Table Data
 
-Diagram.Model.DataSourceSettings.Id = "Id";
+The Diagram provides support to populate the Diagram from the **HTML table**. It is flexible to convert HTML table to Diagram by using **Data Manager**.
 
- //Specifies the root
+The following code illustrates how to convert HTML table to the Diagram.
 
- Diagram.Model.DataSourceSettings.Root = "Manager";
+{% tabs %}
+{% highlight ASPX %}
+<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" NodeTemplate="nodeTemplate" Height="600px" Width="100%" EnableContextMenu="false" Tool="ZoomPan">
+	<DataManager Table="#htmlbinding"></DataManager>
+	<PageSettings ScrollLimit="Diagram" />
+	<Layout Type="HierarchicalTree" HorizontalSpacing="30" VerticalSpacing="40" />
+	<SnapSettings SnapConstraints="None" />	
+	
+    <%--Configures data source for Diagram--%>
+    <DataSourceSettings Id ="Id" Parent ="ReportingPerson" />
+</ej:Diagram>
 
-
-
+<!-- HTML Table -->
+<script id="htmlbinding" type="text/template" >
+	<table style="display: none">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Designation</th>
+				<th>Color</th>
+				<th>ReportingPerson</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>parent</td>
+				<td>Managing Director</td>
+				<td>#822b86</td>
+				<td>null</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Project manager</td>
+				<td>#3c418d</td>
+				<td>parent</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Project manager</td>
+				<td>#108d8d</td>
+				<td>parent</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Product Lead</td>
+				<td>#3c418d</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Product Lead</td>
+				<td>#3c418d</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Product Lead</td>
+				<td>#108d8d</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>Product Lead</td>
+				<td>#108d8d</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>S/W engineer</td>
+				<td>#3c418d</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>S/W engineer</td>
+				<td>#3c418d</td>
+				<td>4</td>
+			</tr>
+		</tbody>
+	</table>
+</script>
+<script type="text/javascript">
+	//Binds custom JSON with node
+	function nodeTemplate(diagram, node) {
+		node.labels[0].text = node.Designation;
+		node.fillColor = node.Color;
+	}
+</script>
 {% endhighlight %}
 
+{% highlight c# %}
+protected void Page_Load(object sender, EventArgs e)
+{
+	if (!IsPostBack)
+	{
+		//Sets the default properties for nodes and connectors
+		Label label = new Label() { Name = "label1", FontColor = "#ffffff" };
+		Diagram.Model.DefaultSettings.Node = new Node() { Width = 120, Height = 40, BorderColor = "transparent" };
+		Diagram.Model.DefaultSettings.Node.Labels.Add(label);
+		Diagram.Model.DefaultSettings.Connector = new Connector()
+		{
+			Segments = new Collection() { new Segment(Segments.Orthogonal) },
+			TargetDecorator = new Decorator() { FillColor = "#4F4F4F", BorderColor = "#4F4F4F" },
+		};
+	}
+}
+{% endhighlight %}
+{% endtabs %}
 
-
-![](Data-Binding_images/Data-Binding_img3.png) 
-
-DataSource with Root
-{:.caption} 
+![](Data-Binding_images/Data-Binding_img4.png)
 
 ## SQL data for ASP.NET
 
@@ -290,234 +269,48 @@ To retrieve data from a database by using the SqlDataSource control, set the fol
 2. ConnectionString - Set to a connection string that works for your database. 
 3. SelectCommand - Set to an SQL query or stored procedure that returns data from the database.
 
-
-
 The following code example illustrates how to create SQL binding.
 
-{% highlight c# %}
-
-// Specifies Connection String 
-
-<ej:Diagram ClientIDMode="Static" ID="DiagramWebControl1" runat="server" Height="500px" Width="800px" DataSourceID="SqlDataSource1">
-
-    <DataSourceSettings Id="EmployeeID" Parent="ReportsTo" />
-
-    <PageSettings ScrollLimit="Diagram" />
-
+{% tabs %}
+{% highlight ASPX %}
+<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="500px" NodeTemplate="nodeTemplate" Width="100%" DataSourceID="SqlDataSource1">
+	<DataSourceSettings Id="EmployeeID" Parent="ReportsTo" />
+	<Layout Type="HierarchicalTree" HorizontalSpacing="30" VerticalSpacing="40" />
+	<SnapSettings SnapConstraints="None" />
 </ej:Diagram>
 
 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SQLConnectionString %>"
-
- SelectCommand="SELECT * FROM [Employees] "></asp:SqlDataSource>
-
- // Layout type 
-
- var layoutDetails = {
-
-     type: "hierarchicaltree"            
-
- };
-
-
-
-{% endhighlight %}
-
-
-The following screenshot illustrates the SQL binding.
-
- ![](Data-Binding_images/Data-Binding_img4.png) 
-
-SQL Binding
-{:.caption} 
-
-## HTML Binding
-
-The Diagram provides support to form diagram from the HTML table. It is easy to convert HTML table to Diagram by using Data Manager.
-
-The following code example illustrates how to convert HTML table to Diagram.
-
-{% tabs %}
-
-{% highlight html %}
-
-<script id="htmlbinding" type="text/template" >
-
-  <thead>
-
-             <tr>
-
-                 <th>
-
-                     Id
-
-                 </th>
-
-                 <th>
-
-                     Designation
-
-                 </th>
-
-                 <th>
-
-                     Color
-
-                     </th>
-
-                 <th>
-
-                     ReportingPerson
-
-                 </th>
-
-
-
-             </tr>
-
-         </thead>
-
-         <tbody>
-
-             <tr>
-
-                 <td>parent</td>                
-
-                 <td>Managing Director</td>
-
-                 <td>#822b86</td>
-
-                 <td>null</td>
-
-
-
-             </tr>
-
-             <tr>
-
-                 <td>1</td>
-
-                 <td>Project manager</td>
-
-                  <td>#3c418d</td>
-
-                 <td>parent</td>
-
-             </tr>
-
-             <tr>
-
-                 <td>2</td>
-
-                 <td>Project manager</td>
-
-                  <td>#108d8d</td>
-
-                 <td>parent</td>
-
-             </tr>
-
-              <tr>
-
-                 <td>3</td>
-
-                 <td>Product Lead</td>
-
-                      <td>#3c418d</td>
-
-                 <td>1</td>
-
-             </tr>
-
-             <tr>
-
-                 <td>4</td>
-
-                 <td>Product Lead</td>
-
-                  <td>#3c418d</td>
-
-                 <td>1</td>
-
-             </tr>
-
-             <tr>
-
-                 <td>5</td>
-
-                 <td>Product Lead</td>
-
-                   <td>#108d8d</td>
-
-                 <td>2</td>
-
-             </tr>
-
-             <tr>
-
-                 <td>6</td>
-
-                 <td>Product Lead</td>
-
-                   <td>#108d8d</td>
-
-                 <td>2</td>
-
-             </tr>
-
-             <tr>
-
-                 <td>7</td>
-
-                 <td>S/W engineer</td>
-
-                   <td>#3c418d</td>
-
-                 <td>4</td>
-
-             </tr>
-
-             <tr>
-
-                 <td>8</td>
-
-                 <td>S/W engineer</td>
-
-                 <td>#3c418d</td>
-
-                 <td>4</td>
-
-             </tr>
-
-         </tbody>
-
-     </table>
-
-  </script>
-
-<ej:Diagram ID="HTMLBinding" runat="server" Height="490px" Width="950px">
-
-// Specifies table name
-
-   <DataManager Table="#Table1"></DataManager> 
-
-</ej:Diagram>  
+	SelectCommand="SELECT * FROM [Employees] "></asp:SqlDataSource>
+
+<script type="text/javascript">
+	//Binds custom JSON with node
+	function nodeTemplate(diagram, node) {
+		node.labels[0].text = node.FirstName;
+		node.labels[1].text = node.Title;
+	}
+</script>
 
 {% endhighlight %}
 
 {% highlight c# %}
-
-//Configures data source for diagram
-
-Diagram.Model.DataSourceSettings.Parent = "ReportingPerson";
-
-Diagram.Model.DataSourceSettings.Id = "Id"; 
-
+protected void Page_Load(object sender, EventArgs e)
+{
+	if (!IsPostBack)
+	{
+		//Sets the default properties for nodes and connectors
+		Label label1 = new Label() { Name = "label1", FontColor = "white", Offset = new DiagramPoint(0.5f, 0.3f) };
+		Label label2 = new Label() { Name = "label2", FontColor = "white", Offset = new DiagramPoint(0.5f, 0.6f) };
+		Diagram.Model.DefaultSettings.Node = new Node() { Width = 150, Height = 50, FillColor= "darkCyan" };
+		Diagram.Model.DefaultSettings.Node.Labels.Add(label1);
+		Diagram.Model.DefaultSettings.Node.Labels.Add(label2);
+		Diagram.Model.DefaultSettings.Connector = new Connector()
+		{
+			Segments = new Collection() { new Segment(Segments.Orthogonal) },
+			TargetDecorator = new Decorator() { FillColor = "#4F4F4F", BorderColor = "#4F4F4F" },
+		};
+	}
+}
 {% endhighlight %}
-
 {% endtabs %}
 
 ![](Data-Binding_images/Data-Binding_img5.png) 
-
-
-HTML Data Binding
-{:.caption} 
