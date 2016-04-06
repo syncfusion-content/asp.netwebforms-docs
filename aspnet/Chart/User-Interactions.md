@@ -657,7 +657,7 @@ To fetch the selected area data points value, you can set the **Mode** as **Rang
 
 ![](User-Interactions_images/User-Interactions_img23.png)
 
-[Click](http://asp.syncfusion.com/demos/web/chart/multiplerangeselection.aspx) here to view the Multiple data selection online demo sample.
+[Click](http://asp.syncfusion.com/demos/web/chart/multipleselection.aspx) here to view the Multiple data selection online demo sample.
 
 ### Selection Type
 
