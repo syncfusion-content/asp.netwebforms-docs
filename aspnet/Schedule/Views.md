@@ -86,10 +86,14 @@ Workweek view displays the working days of the week (count of 5 days) and its as
 
 Month view displays the entire days of a particular month and all its related appointments. An alternative way to navigate to a particular date in a day view directly from Month view, clicking on the appropriate month cell date header will do so. If the week date range column is clicked, it will navigate to the corresponding week view.
 
+The next and previous month date cells in the Month view can be shown/hidden on the Scheduler using `ShowNextPrevMonth` property by setting it to *false*.
+
+For example – To set the Month view as current view in Scheduler and to hide the other month days in it, refer the below code example.
+
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData"  CurrentView="Month" CurrentDate="5/2/2014">
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData"  CurrentView="Month" CurrentDate="5/2/2014" ShowNextPrevMonth ="false">
     <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule"/>
 </ej:Schedule>
 
