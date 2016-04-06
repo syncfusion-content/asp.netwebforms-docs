@@ -28,16 +28,13 @@ Keyboard shortcut keys are,
 </tr>
 <tr>
     <td>
-        {{'[Access key](http://en.wikipedia.org/wiki/Access_key)'| markdownify }} + j
-        <br/>
+       [Access key](http://en.wikipedia.org/wiki/Access_key) + j
     </td>
     <td>
         Sets focus to the input
-        <br/>
     </td>
     <td>
         Sets focus to the input
-        <br/>
     </td>
 </tr>
 <tr>
