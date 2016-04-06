@@ -94,15 +94,13 @@ To arrange nodes in a radial tree structure, you need to set the `Layout.Type` a
 
 {% tabs %}
 {% highlight ASPX %}
-<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" >
+<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" NodeTemplate="nodeTemplate" >
     <%--Uses layout to auto-arrange nodes on the Diagram page--%>
     <Layout Type="RadialTree" HorizontalSpacing="30" VerticalSpacing="30" />
 
     <%--Configures data source for Diagram--%>
     <DataSourceSettings Id ="Id" Parent ="ReportingPerson" />
-
-    <%--Initializes the node template.--%>
-    <NodeTemplate>nodeTemplate</NodeTemplate>
+    
 </ej:Diagram>
 
 <script type="text/javascript">
@@ -178,15 +176,13 @@ The following code example illustrates how to create an organizational chart.
 
 {% tabs %}
 {% highlight ASPX %}
-<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%">
+<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" NodeTemplate="nodeTemplate">
     <%--Uses layout to auto-arrange nodes on the Diagram page--%>
     <Layout Type="OrganizationalChart" HorizontalSpacing="30" VerticalSpacing="30" />
 
     <%--Configures data source for Diagram--%>
     <DataSourceSettings Id="Id" Parent="Team" />
-
-    <%--Initializes the node template.--%>
-    <NodeTemplate>nodeTemplate</NodeTemplate>
+    
 </ej:Diagram>
 
 <script type="text/javascript">
@@ -317,15 +313,12 @@ The following code example illustrates how to set the vertical right arrangement
 
 {% tabs %}
 {% highlight ASPX %}
-<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%">
+<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" NodeTemplate="nodeTemplate">
     <%--Uses layout to auto-arrange nodes on the Diagram page--%>
     <Layout Type="OrganizationalChart" HorizontalSpacing="30" VerticalSpacing="30" GetLayoutInfo="getLayoutInfo" />
 
     <%--Configures data source for Diagram--%>
     <DataSourceSettings Id="Id" Parent="Manager" />
-
-    <%--Initializes the node template.--%>
-    <NodeTemplate>nodeTemplate</NodeTemplate>
 </ej:Diagram>
 
 <script type="text/javascript">
@@ -403,15 +396,12 @@ The following code example illustrates how to add assistants to layout.
 
 {% tabs %}
 {% highlight ASPX %}
-<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%">
+<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" NodeTemplate="nodeTemplate">
     <%--Uses layout to auto-arrange nodes on the Diagram page--%>
     <Layout Type="OrganizationalChart" HorizontalSpacing="30" VerticalSpacing="30" GetLayoutInfo="getLayoutInfo" />
 
     <%--Configures data source for Diagram--%>
     <DataSourceSettings Id="Id" Parent="Team" />
-
-    <%--Initializes the node template.--%>
-    <NodeTemplate>nodeTemplate</NodeTemplate>
 </ej:Diagram>
 
 <script type="text/javascript">
@@ -486,7 +476,7 @@ The following code illustrates how to arrange the nodes in a "BottomToTop" orien
 
 {% tabs %}
 {% highlight ASPX %}
-<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%">
+<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" NodeTemplate="nodeTemplate">
     <%--Uses layout to auto-arrange nodes on the Diagram page--%>
     <%--Sets the orientation--%>
     <%--Sets the space to be horizontally left between nodes--%>
@@ -495,9 +485,6 @@ The following code illustrates how to arrange the nodes in a "BottomToTop" orien
 
     <%--Configures data source for Diagram--%>
     <DataSourceSettings Id="Id" Parent="Manager" />
-
-    <%--Initializes the node template.--%>
-    <NodeTemplate>nodeTemplate</NodeTemplate>
 </ej:Diagram>
 
 <script type="text/javascript">
@@ -554,15 +541,13 @@ This is helpful when you try to expand/collapse a node. It might be expected tha
 
 {% tabs %}
 {% highlight ASPX %}
-<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%">
+<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" NodeTemplate="nodeTemplate">
     <%--Uses layout to auto-arrange nodes on the Diagram page--%>
     <Layout Type="OrganizationalChart" HorizontalSpacing="30" VerticalSpacing="30" FixedNode="parent" GetLayoutInfo="getLayoutInfo"/>
 
     <%--Configures data source for Diagram--%>
     <DataSourceSettings Id="name" Parent="Manager" />
-
-    <%--Initializes the node template.--%>
-    <NodeTemplate>nodeTemplate</NodeTemplate>
+    
 </ej:Diagram>
 
 <script type="text/javascript">

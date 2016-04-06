@@ -27,15 +27,12 @@ To map the user defined JSON data with Diagram, you have to configure the fields
 
 {% tabs %}
 {% highlight ASPX %}
-<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" EnableContextMenu="false" Tool="ZoomPan">
+<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" NodeTemplate="nodeTemplate" Height="600px" Width="100%" EnableContextMenu="false" Tool="ZoomPan">
 	<%--Uses layout to auto-arrange nodes on the Diagram page--%>
 	<Layout Type="HierarchicalTree" HorizontalSpacing="30" VerticalSpacing="30" />
 	
 	<%--Configures data source for Diagram--%>
     <DataSourceSettings Id ="Id" Parent ="ReportingPerson" />
-
-    <%--Initializes the node template.--%>
-    <NodeTemplate>nodeTemplate</NodeTemplate>
 </ej:Diagram>
 
 <script type="text/javascript">
@@ -105,15 +102,13 @@ To bind remote data to the Diagram, you have to configure the fields of `DataSou
 
 {% tabs %}
 {% highlight ASPX %}
-<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="660px" Width="100%">
+<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" NodeTemplate="nodeTemplate" Height="660px" Width="100%">
 	<%--Uses layout to auto-arrange nodes on the Diagram page--%>
 	<Layout Type="HierarchicalTree" HorizontalSpacing="30" VerticalSpacing="30" />
 	
 	<DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/" />
 	<DataSourceSettings Query="ej.Query().from('Employees').select('EmployeeID,ReportsTo,FirstName')" Id="EmployeeID" Parent="ReportsTo" TableName="Employees" />
 	
-	<%--Initializes the node template.--%>
-	<NodeTemplate>nodeTemplate</NodeTemplate>
 </ej:Diagram>
 
 <script type="text/javascript">
@@ -155,7 +150,7 @@ The following code illustrates how to convert HTML table to the Diagram.
 
 {% tabs %}
 {% highlight ASPX %}
-<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" EnableContextMenu="false" Tool="ZoomPan">
+<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" NodeTemplate="nodeTemplate" Height="600px" Width="100%" EnableContextMenu="false" Tool="ZoomPan">
 	<DataManager Table="#htmlbinding"></DataManager>
 	<PageSettings ScrollLimit="Diagram" />
 	<Layout Type="HierarchicalTree" HorizontalSpacing="30" VerticalSpacing="40" />
@@ -163,9 +158,6 @@ The following code illustrates how to convert HTML table to the Diagram.
 	
     <%--Configures data source for Diagram--%>
     <DataSourceSettings Id ="Id" Parent ="ReportingPerson" />
-
-    <%--Initializes the node template.--%>
-    <NodeTemplate>nodeTemplate</NodeTemplate>
 </ej:Diagram>
 
 <!-- HTML Table -->
@@ -281,13 +273,10 @@ The following code example illustrates how to create SQL binding.
 
 {% tabs %}
 {% highlight ASPX %}
-<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="500px" Width="100%" DataSourceID="SqlDataSource1">
+<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="500px" NodeTemplate="nodeTemplate" Width="100%" DataSourceID="SqlDataSource1">
 	<DataSourceSettings Id="EmployeeID" Parent="ReportsTo" />
 	<Layout Type="HierarchicalTree" HorizontalSpacing="30" VerticalSpacing="40" />
 	<SnapSettings SnapConstraints="None" />
-	
-	<%--Initializes the node template.--%>
-    <NodeTemplate>nodeTemplate</NodeTemplate>
 </ej:Diagram>
 
 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SQLConnectionString %>"

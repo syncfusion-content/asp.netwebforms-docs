@@ -93,12 +93,12 @@ diagram.load(json);
 
 {% endhighlight %}
 
-* Css classes have to be retained in the application level, while loading the Diagram.
+* CSS classes have to be retained in the application level, while loading the Diagram.
 
 {% highlight ASPX %}
 
 <style>
-	<!-- css class needs to be retained while loading the Diagram.-->
+	<!-- CSS class needs to be retained while loading the Diagram.-->
 	.nodeCss {
 		fill: black;
 		stroke: cyan;
