@@ -69,7 +69,7 @@ To create a new web form in the application
    * Syncfusion.Pdf.Base
    * Syncfusion.XlsIO.Base
    * Syncfusion.DocIO.Base
-   * Synfusion.Shared.Wpf
+   * Syncfusion.Shared.Wpf
    * Syncfusion.Chart.Wpf
    * Syncfusion.Gauge.Wpf
    * Syncfusion.SfMaps.Wpf 
@@ -231,7 +231,7 @@ ReportViewer supports to load RDL/RDLC files from SSRS Server. The following ste
    ~~~ html   
    <form id="form1" runat="server">
        <div style="height: 650px;width: 950px;min-height:404px;">
-           <ej:ReportViewer ID="viewer" runat="server" ReportServiceUrl="/api/SSRSReport" ReportServerUrl="http://mvc.syncfusion.com/ReportServer" ReportPath="/SSRSSamples2/Territory Sales">
+           <ej:ReportViewer ID="viewer" runat="server" ReportServiceUrl="/api/ReportApi" ReportServerUrl="http://mvc.syncfusion.com/ReportServer" ReportPath="/SSRSSamples2/Territory Sales">
            </ej:ReportViewer>
        </div>
    </form>
