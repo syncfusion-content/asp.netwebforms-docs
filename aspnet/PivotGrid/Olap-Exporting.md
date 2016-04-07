@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Exporting | PivotGrid | ASP.NET | Syncfusion
 description: exporting
@@ -9,14 +9,107 @@ documentation: ug
 
 # Exporting
 
-The PivotGrid control can be exported to the following file formats.
+The following table lists the exported file format for both Client and Server Mode of OLAP datasource.
 
-* Excel 
-* CSV
-* Word
-* PDF
+<table>
+<tr>
+<th>
+Mode
+</th>
+<th>
+File Formats
+</th>
+</tr>
+<tr>
+<td>
+Client Mode
+</td>
+<td>
+Excel
+</td>
+</tr>
+<tr>
+<td>
+Server Mode
+</td>
+<td>
+Excel, Word, PDF and CSV
+</td>
+</tr>
+</table>
 
 The PivotGrid control can be exported by invoking **"exportPivotGrid"** method, with an appropriate export option as parameter.
+
+##Client Mode
+
+For client side, OLAP datasource contents can be exported only to Excel. The document can be saved from the browser to the local disk drive for later use.
+
+To achieve Excel export, we need to add the following dependency library into the application.
+
+* Syncfusion.EJ.Export
+
+{% highlight js %}
+
+<ej:PivotGrid ID="PivotGrid1" runat="server" OnServerExcelExporting="PivotGrid_ServerExcelExporting" ClientIDMode="Static">
+    <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll">
+        <Rows>
+            <ej:Field FieldName="[Date].[Fiscal]"></ej:Field>
+        </Rows>
+        <Columns>
+            <ej:Field FieldName="[Customer].[Customer Geography]"></ej:Field>
+        </Columns>
+        <Values>
+            <ej:Field Axis="Column">
+                <Measures>
+                    <ej:MeasuresItems FieldName="[Measures].[Internet Sales Amount]" />
+                </Measures>
+            </ej:Field>
+        </Values>
+    </DataSource>
+</ej:PivotGrid>
+<div>
+    <button id="btnExport" value="Excel" name="Excel" title="Excel Export">Export</button>
+</div>
+
+<script type="text/javascript">
+    $(function() {
+        $("#btnExport").ejButton({
+            roundedCorner: true,
+            size: "small",
+            click: "btnExportClick",
+            type: ej.ButtonType.Button,
+            contentType: "textandimage",
+            prefixIcon: "e-excel-export"
+        });
+    });
+
+    function btnExportClick(args) {
+        var gridObj = $('#PivotGrid1').data("ejPivotGrid");
+        gridObj.exportPivotGrid("ExcelExport");
+    }
+</script>
+        
+{% endhighlight %}
+
+
+Added the below method in code-behind file to perform exporting
+ 
+{% highlight c# %}
+
+protected void PivotGrid_ServerExcelExporting(object sender, Syncfusion.JavaScript.Web.PivotGridEventArgs e) {
+    PivotGridExport pGrid = new PivotGridExport();
+    dynamic args = e.Arguments;
+    string fileName = "Sample";
+    pGrid.ExportToExcel(fileName, args["args"].ToString(), HttpContext.Current.Response);
+}
+
+{% endhighlight %}
+
+
+![](Exporting_images/OlapClientmode.png)
+
+
+##Server Mode
 
 {% highlight html %}
 
@@ -24,7 +117,7 @@ The PivotGrid control can be exported by invoking **"exportPivotGrid"** method, 
 
     <ej:button ID="Button1" runat="server" ClientSideOnClick="btnClick" Text="Export PivotGrid"></ej:button>
 
-    <ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc"></ej:PivotGrid>
+    <ej:PivotGrid ID="PivotGrid1" runat="server" Url="../PivotGridService"></ej:PivotGrid>
 
 </asp:Content>
 
@@ -145,6 +238,7 @@ function exportBtnClick(args) {
 
 ![](Exporting_images/pdfexport.png)
 
+
 ## Customize the export document name
 
 The document name could be customized inside the method in WebAPI Controller. Following code sample illustrates the same.
@@ -175,8 +269,5 @@ public void Export(System.IO.Stream stream) {
 }
 
 {% endhighlight %}
-
-
-
 
 

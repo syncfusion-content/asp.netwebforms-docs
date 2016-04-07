@@ -15,7 +15,7 @@ On resizing the browser, the PivotTable Field list will get collapse and an icon
 
 {% highlight CSHTML %}
 
-<ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/PivotGridService.svc" IsResponsive="true"></ej:PivotGrid>
+<ej:PivotGrid ID="PivotGrid1" runat="server" Url="../PivotGridService" IsResponsive="true"></ej:PivotGrid>
 
 {% endhighlight %}
 

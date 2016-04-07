@@ -13,13 +13,60 @@ documentation: ug
 
 Field List, also known as Pivot Schema Designer, allows user to add, rearrange, filter and remove fields to show data in PivotGrid exactly the way they want.
 
-Based on the datasource, OLAP or Relational, bound to the PivotGrid control, PivotTable Field List will be automatically populated with Cube Information or Field Names respectively. PivotTable Field List provides an Excel like appearance and behavior.
+Based on the datasource, OLAP, bound to the PivotGrid control, PivotTable Field List will be automatically populated with Cube Information or Field Names. PivotTable Field List provides an Excel like appearance and behavior.
 
-In-order to initialize PivotTable Field List, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for the widget. Then you need to initialize the PivotTable Field List by using the **"PivotSchemaDesigner"** method. 
+In-order to initialize PivotTable Field List, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for the widget. Then you need to initialize the PivotTable Field List by using the **"PivotSchemaDesigner"** method.
+
+##Client Mode
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat=server url="../wcf/PivotGridService.svc">
+<ej:PivotGrid ID="PivotGrid1" runat="server" EnableGroupingBar="true">
+    <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll">
+        <Rows>
+            <ej:Field FieldName="[Customer].[Customer Geography]"></ej:Field>
+        </Rows>
+        <Columns>
+            <ej:Field FieldName="[Date].[Fiscal]"></ej:Field>
+        </Columns>
+        <Values>
+            <ej:Field Axis="Column">
+                <Measures>
+                    <ej:MeasuresItems FieldName="[Measures].[Internet Sales Amount]" />
+                </Measures>
+            </ej:Field>
+        </Values>
+    </DataSource>
+    <ClientSideEvents RenderSuccess="loadSchemaDesigner" />
+</ej:PivotGrid>
+<ej:PivotSchemaDesigner ID="PivotSchemaDesigner1" runat="server">
+    <OlapSettings ShowKPI="true" ShowNamedSets="true" />
+</ej:PivotSchemaDesigner>
+    
+
+<script type="text/javascript">
+    function loadSchemaDesigner(args) {
+        var PivotSchemaDesigner = $(".e-pivotschemadesigner").data('ejPivotSchemaDesigner');
+
+        if (PivotSchemaDesigner.model.pivotControl == null) {
+            PivotSchemaDesigner.model.pivotControl = this;
+            PivotSchemaDesigner.model.layout = "excel";
+            PivotSchemaDesigner.model.enableWrapper = true;
+            PivotSchemaDesigner._load();
+        }
+        args.model.renderComplete = null;
+    }
+</script>
+    
+{% endhighlight %}
+
+![](PivotTable-Field-List_images/OlapClientMode.png)
+
+##Server Mode 
+
+{% highlight html %}
+
+<ej:PivotGrid ID="PivotGrid1" runat=server url="../PivotGridService">
     <ClientSideEvents  AfterServiceInvoke="OnAfterServiceInvoke"/>
 </ej:PivotGrid>
 
@@ -42,6 +89,7 @@ In-order to initialize PivotTable Field List, first you need to define a “div�
 {% endhighlight %}
 
 ![](PivotTable-Field-List_images/pivotschema.png)
+
 
 ## Layout 
 
@@ -70,4 +118,6 @@ Values can be filtered by checking/unchecking the check box besides them, inside
 
 ![](PivotTable-Field-List_images/filter.png) 
 
-![](PivotTable-Field-List_images/filter1.png) 
+![](PivotTable-Field-List_images/filter1.png)
+
+ 
