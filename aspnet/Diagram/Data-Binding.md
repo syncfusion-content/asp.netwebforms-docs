@@ -88,7 +88,7 @@ public Array GetData()
 {% endhighlight %}
 {% endtabs %}
 
-![](/Data-Binding_images/Data-Binding_img1.png)
+![](Data-Binding_images/Data-Binding_img1.png)
 
 ## Remote Data
 
@@ -140,7 +140,7 @@ protected void Page_Load(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](/Data-Binding_images/Data-Binding_img2.png)
+![](Data-Binding_images/Data-Binding_img2.png)
 
 ## HTML Table Data
 

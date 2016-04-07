@@ -20,7 +20,7 @@ diagram.exportDiagram();
 
 {% endhighlight %}
 
-![](/Exporting_images/Exporting_img1.png)
+![](Exporting_images/Exporting_img1.png)
 
 ## Exporting options
 

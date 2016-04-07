@@ -22,9 +22,9 @@ The `SnapSettings.SnapConstraints` enables you to show/hide the gridlines. The f
 </ej:Diagram> 
 {% endhighlight %}
 
-![](/Gridlines_images/Gridlines_img1.png)
+![](Gridlines_images/Gridlines_img1.png)
 
-To show only horizontal/vertical gridlines or to hide gridlines, refer to [Constraints]http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.DiagramEnums.SnapConstraints.html  "Constraints")
+To show only horizontal/vertical gridlines or to hide gridlines, refer to [Constraints](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.DiagramEnums.SnapConstraints.html  "Constraints")
 
 ## Appearance
 
@@ -40,7 +40,7 @@ The `HorizontalGridLines` and `VerticalGridLines` properties allow to customize 
 </ej:Diagram>
 {% endhighlight %}
 
-![](/Gridlines_images/Gridlines_img4.png)
+![](Gridlines_images/Gridlines_img4.png)
 
 ### Line Intervals
 
@@ -79,7 +79,7 @@ Diagram.Model.SnapSettings = new SnapSettings()
 };
 {% endhighlight %}
 
-![](/Gridlines_images/Gridlines_img2.png)
+![](Gridlines_images/Gridlines_img2.png)
 
 # Snapping
 
@@ -96,7 +96,7 @@ Snapping to gridlines can be enabled/disabled with the `SnapSettings.SnapConstra
 </ej:Diagram> 
 {% endhighlight %}
 
-To enable/disable snapping to horizontal/vertical lines, refer to [Constraints] (http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.DiagramEnums.SnapConstraints.html "Constraints")
+To enable/disable snapping to horizontal/vertical lines, refer to [Constraints](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.DiagramEnums.SnapConstraints.html "Constraints")
 
 ## Customization of Snap Intervals
 
@@ -127,4 +127,4 @@ The `EnableSnapToObject` property allows you to enable/disable smart guides. The
 </ej:Diagram> 
 {% endhighlight %}
 
-![](/Gridlines_images/Gridlines_img4.png)
+![](Gridlines_images/Gridlines_img4.png)
