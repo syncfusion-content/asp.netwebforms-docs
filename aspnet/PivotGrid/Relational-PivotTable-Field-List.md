@@ -60,6 +60,8 @@ In-order to initialize PivotTable Field List, first you need to define a â€œdivâ
 
 </ej:PivotGrid>
 
+{% endhighlight %}
+
 ![](PivotTable-Field-List_images/RelationalClientside.png)
 
 ##Server Mode 
