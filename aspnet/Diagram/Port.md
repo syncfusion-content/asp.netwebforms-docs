@@ -27,7 +27,7 @@ Ports act as the connection points of node and allows to create connections with
 
 To add a connection port, you need to define the port object and add it to node's `Ports` collection. The `Offset` property of port accepts an object of fractions and used to determine the position of ports. The following code illustrates how to add ports when initializing the node.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
         <%--  To Create a port  --%>
         <ej:Diagram ID="Diagram" runat="server" Height="400px" Width="400px">
@@ -104,7 +104,7 @@ The appearance of ports can be customized with a set of style specific propertie
 
 The following code illustrates how to change the appearance of port.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
          
         <ej:Diagram ID="Diagram" runat="server" Height="400px" Width="400px">
             <Nodes>

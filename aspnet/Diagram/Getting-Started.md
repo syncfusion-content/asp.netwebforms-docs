@@ -19,7 +19,7 @@ This section explains briefly you on how to create a Diagram in your application
 
 2\. Create a web form named as Diagram and add the following template.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Diagram.aspx.cs" Inherits="WebApplication2.Diagram" %>
 
@@ -53,7 +53,7 @@ This section explains briefly you on how to create a Diagram in your application
 Let us create and add a `node` with specific position, size, label and shape.
 
 {% tabs %}
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
     <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px"></ej:Diagram>
 
@@ -296,7 +296,7 @@ Initializing diagram is already discussed in Flow Diagram > [Initialize diagram]
 
 {% tabs %}
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
      <ej:Diagram runat="server" ID="Diagram" ClientIDMode="Static" Width="100%" Height="600px">
          <DataSourceSettings Id="Name" Parent="ReportingPerson" />
@@ -372,7 +372,7 @@ Following code examples indicate how to define the default appearance of node an
 
 * Next you need to arrange nodes in an organizational chart structure, and to do this you can apply layout as shown in following code example. You can see that spacing, margin and orientation are defined, that can also be customized based on the needs.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
      <ej:Diagram runat="server" ID="DiagramWebControl" ClientIDMode="Static" Width="100%" Height="600px">
          <DataSourceSettings Id="Name" Parent="ReportingPerson" />

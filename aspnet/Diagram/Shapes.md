@@ -23,7 +23,7 @@ Diagram provides support to add different kind of nodes. They are as follows.
 
 Texts can be added to the Diagram as text nodes. For text nodes, the text node can be created with TextNode class . In addition, you need to define the `TextBlock` object that is used to define the `TextNode` to be added and to customize the appearance of that text. The following code illustrates how to create a text node.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
         <%--   Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
@@ -44,7 +44,7 @@ Texts can be added to the Diagram as text nodes. For text nodes, the text node c
 ## Image
 Diagram allows to add images as image nodes. For image nodes,the **image** node can be created with ImageNode class. In addition, the `Source` property of node enables you to set the image source. The following code illustrates how an **Image** node is created.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
         <%--   Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
@@ -66,7 +66,7 @@ Diagram allows to add images as image nodes. For image nodes,the **image** node 
 
 
  
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
     <!--dependency scripts-->
     <script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
@@ -99,7 +99,7 @@ N> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is 
 
 **Diagram** provides support to embed **SVG** element into a node. To create a native node, the node can be created with NativeNode class. Also, you need to define the id of the svg template by using the `TemplateId` property of node. The following code illustrates how a **Native node** is created.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
     <!--dependency scripts-->
     <script src="http://borismoore.github.io/jsrender/jsrender.min.js">
@@ -136,7 +136,7 @@ N> Like HTML node, Native node also cannot be exported to image format. Fill col
 The Basic shapes are common shapes that are used to represent the geometrical information visually. Its `Shape` property can be set with any one of the inbuilts [Basic Shapes](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.DiagramEnums.BasicShapes.html "Basic Shapes"). 
 The following code example illustrates how to create a basic shape. 
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
         <%--   Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
@@ -160,7 +160,7 @@ N> When the `Shape` is not set for a basic shape, it is considered a "rectangle"
 
 Path node is a commonly used basic shape that allows visually to represent the geometrical information. To create a path node, node can be created with PathNode class and PathData property. The `PathData` property of node allows you to define the path to be drawn. The following code illustrates how a Path node is created.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
        <%--   Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
@@ -189,7 +189,7 @@ The list of basic shapes are as follows.
 
 The flow shapes are used to represent the process flow. It is used for analyzing, designing, and managing for documentation process. To create a flow shape, node can be created with FlowShape class. Its `Shape` property can be set with any one of the inbuilts [Flow Shapes](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.DiagramEnums.FlowShapes.html "Flow Shapes") and by default, it is considered as "Process". The following code example illustrates how to create a flow shape. 
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
         <%--   Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
@@ -214,7 +214,7 @@ The list of flow shapes are as follows.
 
 BPMN shapes are used to represent the internal business procedure in a graphical notation and enables you to communicate the procedures in a standard manner. To create a bpmn shape, node can be created with BPMNNode class and its `Shape` should be set as any one of the inbuilts [BPMN Shapes](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.DiagramEnums.BPMNShapes.html "BPMN Shapes"). The following code example illustrates how to create a simple business process. 
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
         <%--   Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
@@ -256,7 +256,7 @@ An event is notated with a circle and it represents an event in a business proce
 
 The `Event` property of the node allows you to define the type of the event. The default value of the `Event` is "Start". The following code example illustrates how to create a BPMN Event.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
 
         <%--   Initializes Diagram--%>
@@ -300,7 +300,7 @@ Event triggers are notated as icons inside the circle and they represent the spe
 
 Gateway is used to control the flow of a process. It is represented as a diamond shape. To create a gateway, the `Shape` property of node should be set as "Gateway" and the `Gateway` property can be set with any of the appropriate [Gateways](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.DiagramEnums.BPMNGateways.html "Gateways"). The following code example illustrates how to create a BPMN Gateway.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
         <%--   Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
@@ -340,7 +340,7 @@ There are two types of activities .They are listed as follows.
 
 To create a BPMN activity, you need to set the `Shape` as "Activity". You also need to set the type of the [BPMN Activity](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.DiagramEnums.BPMNActivity.html "BPMN Activity") by using the `Activity` property of node. By default, the type of the `Activity` is set as "Task". The following code example illustrates how to create an activity.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
 
         <%--   Initializes Diagram--%>
@@ -364,7 +364,7 @@ The different activities of BPMN process are listed as follows.
 
 The `Task` property of node allows you to define the `Type` of task such as sending, receiving, user based task etc… By default, the `Type` property of task is set as "None". The following code illustrates how to create different types of BPMN tasks. 
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
        <%--   Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
@@ -400,7 +400,7 @@ The various types of BPMN tasks are tabulated as follows.
 
 Loop is a task that is internally being looped. The `Loop` property of task allows you to define the type of loop. The default value for `Loop` is "None". 
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
         <%--   Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
@@ -437,7 +437,7 @@ The following table contains various types of BPMN loops.
 
 Compensation is triggered when operation is partially failed and you can enable it with the `Compensation` property of task.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
         <%--   Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
@@ -465,7 +465,7 @@ Compensation is triggered when operation is partially failed and you can enable 
 
 A call activity is a global sub-process that is reused at various points of the business flow and you can set it with the `Call` property of task.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
       <%--   Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
@@ -488,7 +488,7 @@ A call activity is a global sub-process that is reused at various points of the 
 
 An ad hoc subprocess is a group of tasks that are executed in any order or skipped in order to fulfill the end condition and you can set it with the `Adhoc` property of subprocess. 
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
         <%--   Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
@@ -511,7 +511,7 @@ An ad hoc subprocess is a group of tasks that are executed in any order or skipp
 
 Boundary represents the type of task that is being processed. The `Boundary` property of sub process allows you to define the type of boundary. By default, it is set as "Default".
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
         <%--   Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
@@ -540,7 +540,7 @@ The following table contains various types of BPMN boundaries.
 
 A data object represents information flowing through the process, such as data placed into the process, data resulting from the process, data that needs to be collected, or data that must be stored. To define a data object, set the `Shape` as "Dataobject". You can create multiple instances of data object with the `Collection` property of node.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
         <%--   Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
@@ -561,7 +561,7 @@ A data object represents information flowing through the process, such as data p
 
 DataSource is used to store or access data associated with a business process. To create a data source, set the `Shape` as "Datasource". The following code example illustrate how to create data source.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
  
         <%--   Initializes Diagram--%>

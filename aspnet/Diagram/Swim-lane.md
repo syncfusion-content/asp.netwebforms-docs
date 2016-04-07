@@ -14,7 +14,7 @@ Swim-lane Diagrams are typically used to visualize the relationship between a bu
 ##Initialize tha Diagram model 
 Create a diagram properties model element that can be used to initialize the diagram widget as shown below.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
             //Initialize the Diagram Model
             <ej:Diagram ID="Diagram" runat="server" Height="700px" Width="900px">
@@ -28,7 +28,7 @@ To create a swimlane, you need to use the `Swimlane` class. By default, the swim
 
 The following code example illustrates how to define a swimlane object.
 
-{% highlight ASPX %} 
+{% highlight aspx-cs %} 
            
                 <ej:DiagramSwimlane Name="Swimlane" Orientation="horizontal" OffsetX="400" OffsetY="200" Height="100" Width="700 ">
                 </ej:DiagramSwimlane> 
@@ -42,7 +42,7 @@ For more information about adding a node/swimlane to the Diagram, refer to [Add 
 
 The following code example illustrates how to add a swimlane to the Diagram through `Nodes` collection.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
        <!-- Add the swimlane in to the Nodes collection -->
        <ej:Diagram ID="Diagram" runat="server" Height="700px" Width="900px">
@@ -60,7 +60,7 @@ The following code example illustrates how to add a swimlane to the Diagram thro
 
 Swimlane allows to define a header to textually describe it. The `Header` property of swimlane allows you to define its textual description(`Text`) and to customize its appearance. The following code example illustrates how to define swimlane header.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
 
         <ej:Diagram ID="Diagram" runat="server" Height="700px" Width="900px">
@@ -109,7 +109,7 @@ Swimlane headers can be updated at runtime with the client side method `updateNo
 
 You can hide the swimlane headers. The following code example illustrates how to hide headers.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
  
            
        <!--  // Defines the header and Sets "0" to hide header -->
@@ -127,7 +127,7 @@ You can add any number of lanes to a swimlane and the lanes are automatically st
 
 To create an empty lane, you need to define an object with `Type` property that helps identify the object as a lane. The following example illustrates how to define a swimlane with a lane.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
         <ej:Diagram ID="Diagram" runat="server" Height="700px" Width="900px">
             <%--Add the swimlane in to the Nodes collection--%>
@@ -155,7 +155,7 @@ To create an empty lane, you need to define an object with `Type` property that 
 The `Header` property of the lane allows you to textually describe the lane(`text`) and to customize the appearance of the description. The following code example illustrates how to define a lane header.
 You can limit the size of a lane with its `MinWidth`, `MinHeight`, `MaxWidth`, and `MaxHeight` properties.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
        <ej:Diagram ID="Diagram" runat="server" Height="700px" Width="900px">
             <%--Add the swimlane in to the Nodes collection--%>
@@ -196,7 +196,7 @@ You can disable/update the lane header at runtime with the client side method, `
 
 To add nodes to a lane, You need to add them to the `Children` collection of lane. The following code example illustrates how to add nodes to a lane.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
 
         <ej:Diagram ID="Diagram" runat="server" Height="700px" Width="900px">
@@ -240,7 +240,7 @@ To define a phase, you have to set the length of the region to the `Offset` prop
 
 The following code example illustrates how to add a phase on initializing swimlane.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
         <ej:Diagram ID="Diagram" runat="server" Height="700px" Width="900px">
             <%--Add the swimlane in to the Nodes collection--%>

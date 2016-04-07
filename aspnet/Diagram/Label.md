@@ -15,7 +15,7 @@ documentation: ug
 
 You can add a label to a node/connector by defining the label object and adding that to the `Labels` collection of node/connector. The `Text` property of label defines the text to be displayed. The following code illustrates how to create a Label. 
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
    <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px">
        <Nodes>
@@ -96,7 +96,7 @@ The following tables illustrates all the possible alignments visually with **off
 
 The following codes illustrates how to align labels.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
    <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px">
        <Nodes>
@@ -121,7 +121,7 @@ The following codes illustrates how to align labels.
 **Margin** is an absolute value used to add some blank space in any one of its four sides. You can displace the labels with the `Margin` property.
 The following code example illustrates how to align a label based on its `Offset`, `HorizontalAlignment`, `VerticalAlignment` and `Margin` values.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
    <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px">
        <Nodes>
@@ -146,7 +146,7 @@ The following code example illustrates how to align a label based on its `Offset
 
 The `TextAlign` property of label allows you to set how the text should be aligned (left, right, center, or justify) inside the text block. The following codes illustrate how to set textAlign for a label.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
    <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px">
        <Nodes>
@@ -175,7 +175,7 @@ The `TextAlign` property of label allows you to set how the text should be align
 
 When text overflows node boundaries, you can control it by using text wrapping. So, it is wrapped into multiple lines. The `Wrapping` property of label defines how the text should be wrapped. The following code illustrates how to wrap a text in a node.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
    <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px">
        <Nodes>
@@ -203,7 +203,7 @@ When text overflows node boundaries, you can control it by using text wrapping. 
 
 You can change the font style of the labels with the font specific properties(`FontSize`,`FontFamily`,`FontColor`.,). The following code illustrates how to customize the appearance of a label.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
    <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px">
        <Nodes>
@@ -226,7 +226,7 @@ You can change the font style of the labels with the font specific properties(`F
 
 The fill and border appearances of the text can also be customized with appearance specific properties of label.The following code illustrates how to customize background and border of a label.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
    <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px">
        <Nodes>
@@ -248,7 +248,7 @@ The fill and border appearances of the text can also be customized with appearan
 
 A **Label** can be displaced from its original position to any preferred location interactively. Dragging is disabled by default. You can enable label dragging with the `Constraints` property of node/connector. The following code illustrates how to enable label **dragging**.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
         <%--   Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
@@ -278,7 +278,7 @@ A **Label** can be displaced from its original position to any preferred locatio
 
 You can rotate the labels to any desired angle. Labels are rotated to the angle that is defined by the `RotateAngle` property of label. The following code illustrates how to rotate a label.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
      <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px">
          <Nodes>
@@ -327,7 +327,7 @@ diagram.updateLabel(node.name, node.labels[0], options);
 
 Diagram allows to create read only labels. You have to set the `ReadOnly` property of label to enable/disable the read only mode. The following code illustrates how to enable **readOnly** mode.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
      <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px">
          <Nodes>
@@ -347,7 +347,7 @@ Diagram allows to create read only labels. You have to set the `ReadOnly` proper
 
 You can add any number of labels to a node or connector. The following code illustrates how to add multiple labels to a node. 
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
      <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px">
          <Nodes>

@@ -27,7 +27,7 @@ The following example illustrates how to disable page editing.
 
 {% tabs %}
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
   <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" >
   </ej:Diagram>

@@ -26,7 +26,7 @@ Diagram can be populated based on the user defined JSON data (**Local Data**) by
 To map the user defined JSON data with Diagram, you have to configure the fields of `DataSourceSettings`. The following code example illustrates how to bind local data with the Diagram.
 
 {% tabs %}
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" NodeTemplate="nodeTemplate" Height="600px" Width="100%" EnableContextMenu="false" Tool="ZoomPan">
 	<%--Uses layout to auto-arrange nodes on the Diagram page--%>
 	<Layout Type="HierarchicalTree" HorizontalSpacing="30" VerticalSpacing="30" />
@@ -101,7 +101,7 @@ You can bind the Diagram with Remote Data by using dataManager.
 To bind remote data to the Diagram, you have to configure the fields of `DataSourceSettings`. The following code illustrates how to bind remote data to the Diagram.
 
 {% tabs %}
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" NodeTemplate="nodeTemplate" Height="660px" Width="100%">
 	<%--Uses layout to auto-arrange nodes on the Diagram page--%>
 	<Layout Type="HierarchicalTree" HorizontalSpacing="30" VerticalSpacing="30" />
@@ -149,7 +149,7 @@ The Diagram provides support to populate the Diagram from the **HTML table**. I
 The following code illustrates how to convert HTML table to the Diagram.
 
 {% tabs %}
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" NodeTemplate="nodeTemplate" Height="600px" Width="100%" EnableContextMenu="false" Tool="ZoomPan">
 	<DataManager Table="#htmlbinding"></DataManager>
 	<PageSettings ScrollLimit="Diagram" />
@@ -272,7 +272,7 @@ To retrieve data from a database by using the SqlDataSource control, set the fol
 The following code example illustrates how to create SQL binding.
 
 {% tabs %}
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="500px" NodeTemplate="nodeTemplate" Width="100%" DataSourceID="SqlDataSource1">
 	<DataSourceSettings Id="EmployeeID" Parent="ReportsTo" />
 	<Layout Type="HierarchicalTree" HorizontalSpacing="30" VerticalSpacing="40" />

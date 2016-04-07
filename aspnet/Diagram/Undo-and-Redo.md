@@ -76,7 +76,7 @@ You need to define the methods to handle the custom changes and you need to assi
 The following code example illustrates how to define methods to handle the custom changes.
 
 {% tabs %}
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
         <ej:Diagram ID="DiagramContent" runat="server" Height="400px" Width="100%" OnClientNodeCollectionChange="nodeCollectionChange">
             <%--  revert and restore the reverted custom action--%>

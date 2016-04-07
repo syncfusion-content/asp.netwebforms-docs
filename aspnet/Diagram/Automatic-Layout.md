@@ -21,7 +21,7 @@ The Hierarchical Tree Layout arranges nodes in a tree-like structure, where the 
 To arrange the nodes in hierarchical structure, you need to specify the layout `Type` as hierarchical tree. The following example shows how to arrange the nodes in a hierarchical structure.
 
 {% tabs %}
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" NodeTemplate="nodeTemplate" >
     <%--Uses layout to auto-arrange nodes on the Diagram page--%>
     <Layout Type="HierarchicalTree" HorizontalSpacing="30" VerticalSpacing="30" />
@@ -93,7 +93,7 @@ The Radial Tree layout arranges nodes on a virtual concentric circles around a r
 To arrange nodes in a radial tree structure, you need to set the `Layout.Type` as `RadialTree`. The following code illustrates how to arrange the nodes in a radial tree structure.
 
 {% tabs %}
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" NodeTemplate="nodeTemplate" >
     <%--Uses layout to auto-arrange nodes on the Diagram page--%>
     <Layout Type="RadialTree" HorizontalSpacing="30" VerticalSpacing="30" />
@@ -175,7 +175,7 @@ An **Organizational Chart** is a Diagram that displays the structure of an organ
 The following code example illustrates how to create an organizational chart.
 
 {% tabs %}
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" NodeTemplate="nodeTemplate">
     <%--Uses layout to auto-arrange nodes on the Diagram page--%>
     <Layout Type="OrganizationalChart" HorizontalSpacing="30" VerticalSpacing="30" />
@@ -264,7 +264,7 @@ You can set Chart orientations, chart types, and offset to be left between paren
 
 The following code example illustrates how to define the method getLayoutInfo.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" >
     <%--Uses layout to auto-arrange nodes on the Diagram page--%>
     <Layout Type="OrganizationalChart" HorizontalSpacing="30" VerticalSpacing="30" GetLayoutInfo="getLayoutInfo" />
@@ -312,7 +312,7 @@ The following table illustrates the different chart orientations and chart types
 The following code example illustrates how to set the vertical right arrangement to the leaf level trees.
 
 {% tabs %}
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" NodeTemplate="nodeTemplate">
     <%--Uses layout to auto-arrange nodes on the Diagram page--%>
     <Layout Type="OrganizationalChart" HorizontalSpacing="30" VerticalSpacing="30" GetLayoutInfo="getLayoutInfo" />
@@ -395,7 +395,7 @@ public Array GetData(){
 The following code example illustrates how to add assistants to layout.
 
 {% tabs %}
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" NodeTemplate="nodeTemplate">
     <%--Uses layout to auto-arrange nodes on the Diagram page--%>
     <Layout Type="OrganizationalChart" HorizontalSpacing="30" VerticalSpacing="30" GetLayoutInfo="getLayoutInfo" />
@@ -475,7 +475,7 @@ Diagram provides support to customize the orientation of layout. You can set the
 The following code illustrates how to arrange the nodes in a "BottomToTop" orientation.
 
 {% tabs %}
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" NodeTemplate="nodeTemplate">
     <%--Uses layout to auto-arrange nodes on the Diagram page--%>
     <%--Sets the orientation--%>
@@ -540,7 +540,7 @@ Layout provides support to arrange the nodes with reference to the position of a
 This is helpful when you try to expand/collapse a node. It might be expected that the position of the double-clicked node should not be changed.
 
 {% tabs %}
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" NodeTemplate="nodeTemplate">
     <%--Uses layout to auto-arrange nodes on the Diagram page--%>
     <Layout Type="OrganizationalChart" HorizontalSpacing="30" VerticalSpacing="30" FixedNode="parent" GetLayoutInfo="getLayoutInfo"/>
@@ -607,7 +607,7 @@ public Array GetData(){
 Diagram allows to expand/collapse the sub trees of a layout. `Node.IsExpanded` allows you to expand/collapse its children. The following code example shows how to expand/collapse the children of a node.
 
 {% tabs %}
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%">
     <%--Uses layout to auto-arrange nodes on the Diagram page--%>
     <Layout Type="OrganizationalChart" HorizontalSpacing="30" VerticalSpacing="30" FixedNode="parent" GetLayoutInfo="getLayoutInfo"/>

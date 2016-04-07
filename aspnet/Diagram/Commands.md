@@ -355,7 +355,7 @@ To explore the properties of custom commands, refer to [Commands](/js/api/ejDiag
 The following code example illustrates how to define a custom command.
 
 {% tabs %}
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%">
 </ej:Diagram>
 
@@ -402,7 +402,7 @@ When any one of the default commands is not desired, they can be disabled. To ch
 The following code example illustrates how to disable a command and how to modify the built-in commands.
 
 {% tabs %}
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%">
 </ej:Diagram>
 

@@ -146,7 +146,7 @@ Source and target points of the selected connectors are represented with two han
 
 Diagram provides support to drop a node/connector over another node/connector. Drop event is raised to notify that an element is dropped over another one and it is disabled by default. It can enabled with the `Constraints` property. The following code illustrates how to enable **dropping**.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
     <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px" OnClientDrop="ondrop">
         <Nodes>
@@ -164,7 +164,7 @@ Diagram provides support to drop a node/connector over another node/connector. D
 
 The following code examples illustrates how to insert a child to a group interactively.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
      <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px" OnClientDrop="ondrop">
      </ej:Diagram> 
 	 

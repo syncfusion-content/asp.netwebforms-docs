@@ -23,7 +23,7 @@ By default, Diagram displays a tooltip to provide the size, position, and angle 
 To disable the default tooltip, You need to set `SelectedItems.Tooltip` as `null`. The following code example illustrates how to disable default tooltip.
 
 {% tabs %}
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
         <!--Define tooltip template-->       
         <%--   Initializes Diagram--%>
@@ -46,7 +46,7 @@ To disable the default tooltip, You need to set `SelectedItems.Tooltip` as `null
 Diagram provides support to show tooltip when mouse hovers over any node/connector. 
 To show tooltip on mouse over, the `Tooltip` property of Diagram model needs to be set with the tooltip `TemplateId` and `Alignment` as shown in the following example.
 
- {% highlight ASPX %}
+ {% highlight aspx-cs %}
 
         <!--Define tooltip template-->
         <script type="text/x-jsrender" id="mouseovertooltip">
@@ -94,7 +94,7 @@ Tooltips on mouse over can be disabled by assigning `tooltip` property as `null`
 
 Tooltips can be customized for every node. Tooltip can be defined for individual node/connector by using the `Tooltip` property of that node/connector. In addition to that, you have to remove the **InheritTooltip** option from the `Constraints` of that node/connector. The following code example illustrates how to customize tooltips for individual elements.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
             <Nodes>
                 <%--Defines nodes--%>
@@ -117,7 +117,7 @@ Diagram provides support to show tooltip around the node/connector that is hover
 
 {% tabs %}
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
     <!--Define tooltip template-->
     <script type="text/x-jsrender" id="mouseovertooltip">
@@ -150,7 +150,7 @@ Diagram provides support to show tooltip around the node/connector that is hover
 
 To display the tooltip at mouse position, you need to set "Mouse" option to the `RelativeMode` property of tooltip. The following code example illustrates how to show tooltip at mouse position.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
      <%--    Add the node to the nodes collection --%>
             <Nodes>
