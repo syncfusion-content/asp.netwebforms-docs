@@ -43,7 +43,7 @@ The **"KpiElements"** class in OLAP Base library holds the KPI name and when its
     </DataSource>
 </ej:PivotGrid>
         
-{% highlight html %}
+{% endhighlight %}
 
 
 ![](KPI_images/ClientSideKPI.png)

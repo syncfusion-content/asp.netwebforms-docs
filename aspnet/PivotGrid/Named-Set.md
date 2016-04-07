@@ -35,7 +35,7 @@ You can bind the Named Sets in PivotGrid by setting it's unique name in the `Fil
     </DataSource>
 </ej:PivotGrid>
 
-{% highlight html %}
+{% endhighlight %}
 
 ![](KPI_images/namedset.png)
 
@@ -65,7 +65,7 @@ olapReport.CategoricalElements.Add(dimensionElementColumn);
 olapReport.CategoricalElements.Add(measureElementColumn);
 olapReport.SeriesElements.Add(dimensionElementRow);
 
-{% highlight html %}
+{% endhighlight %}
 
 ![](KPI_images/servernamedset.png)
 
