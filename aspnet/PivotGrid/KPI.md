@@ -20,6 +20,36 @@ The different indicators available in KPI are:
 
 The **"KpiElements"** class in OLAP Base library holds the KPI name and when its object is added to an OlapReport, you can view the resultant information in PivotGrid.
 
+##Client Mode
+
+{% highlight html %}
+
+<ej:PivotGrid ID="PivotGrid1" runat="server">
+    <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll">
+        <Rows>
+            <ej:Field FieldName="[Customer].[Customer Geography]"></ej:Field>
+        </Rows>
+        <Columns>
+            <ej:Field FieldName="[Product].[Product Categories]"></ej:Field>
+        </Columns>
+        <Values>
+            <ej:Field Axis="Column">
+                <Measures>
+                    <ej:MeasuresItems FieldName="[Measures].[Internet Sales Amount]" />
+                    <ej:MeasuresItems FieldName="[Measures].[Growth in Customer Base Trend]" />
+                </Measures>
+            </ej:Field>
+        </Values>
+    </DataSource>
+</ej:PivotGrid>
+        
+{% highlight html %}
+
+
+![](KPI_images/ClientSideKPI.png)
+
+##Server Mode
+
 {% highlight C# %}
 
 OlapReport olapReport = new OlapReport();
@@ -43,3 +73,6 @@ olapReport.SeriesElements.Add(dimensionElementRow);
 {% endhighlight %}
 
 ![](KPI_images/kpi.png)
+
+
+

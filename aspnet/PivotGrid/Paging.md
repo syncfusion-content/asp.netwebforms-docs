@@ -9,7 +9,7 @@ documentation: ug
 
 # Paging
 
-I> This feature is applicable only for OLAP datasource.
+I> This feature is applicable only for OLAP datasource only at Server Mode.
 
 ## Pager
 
@@ -82,3 +82,4 @@ measureElementColumn.Elements.Add(new MeasureElement { Name = "Internet Sales Am
 olapReport.CategoricalElements.Add(measureElementColumn);
 
 {% endhighlight %}
+
