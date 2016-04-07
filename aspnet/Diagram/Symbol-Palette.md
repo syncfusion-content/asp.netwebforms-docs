@@ -31,7 +31,7 @@ The following code example illustrates how to define a palette and how its added
 
 The following image shows the symbol palette with multiple palette Items.
 
-![](/aspnet/Diagram/Symbol-Palette_images/Symbol-Palette_img3.png)
+![](Symbol-Palette_images/Symbol-Palette_img3.png)
 
 ### Palette Items
 
@@ -114,9 +114,9 @@ The `enableScale` property of the palette item enables you to customize the size
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Symbol-Palette_images/Symbol-Palette_img1.png)
+![](Symbol-Palette_images/Symbol-Palette_img1.png)
 
-![](/aspnet/Diagram/Symbol-Palette_images/Symbol-Palette_img2.png)
+![](Symbol-Palette_images/Symbol-Palette_img2.png)
 
 
 ### Palette header 
@@ -139,7 +139,7 @@ Following code example illustrates how to define default palette header.
 {% endhighlight %}
 
 
-![](/aspnet/Diagram/Symbol-Palette_images/Symbol-Palette_img7.png)
+![](Symbol-Palette_images/Symbol-Palette_img7.png)
 
 #### Customize the Palette Header
 
@@ -181,7 +181,7 @@ Also, you can embed any HTML element into a palette header by defining the Scri
 
 The following image shows the customized palette header
 
-![](/aspnet/Diagram/Symbol-Palette_images/customizethepaletteheader_img1.png)
+![](Symbol-Palette_images/customizethepaletteheader_img1.png)
 
 ## Symbol Previews
 
@@ -207,7 +207,7 @@ You can customize the preview size of the individual palette items. The `Palette
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Symbol-Palette_images/customizethepaletteheader_img5.png)
+![](Symbol-Palette_images/customizethepaletteheader_img5.png)
 
 You can also customize the preview size of the all palette items. The `PreviewWidth` and `PreviewHeight` property of SymbolPalette enables you to define the preview size to all the symbol palette items. The following code example illustrates how to change the preview size of a symbol palette items.
 
@@ -228,7 +228,7 @@ You can also customize the preview size of the all palette items. The `PreviewWi
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Symbol-Palette_images/customizethepaletteheader_img4.png)
+![](Symbol-Palette_images/customizethepaletteheader_img4.png)
 
 Symbol palette allows to sets the offset of the dragging helper relative to the mouse cursor.
 
@@ -242,7 +242,7 @@ Symbol palette allows to sets the offset of the dragging helper relative to the 
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Symbol-Palette_images/customizethepaletteheader_img5.png)
+![](Symbol-Palette_images/customizethepaletteheader_img5.png)
 
 
 preview size is set based on the precedence flow given in the following table.
