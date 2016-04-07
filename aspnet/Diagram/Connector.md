@@ -22,7 +22,7 @@ To explore the properties of a `Connector`, refer to [Connector Properties](http
 
 The `SourcePoint` and `TargetPoint` properties of connector allow you to define the end points of a `Connector`. The following code example illustrates how to add a connector through connector collection.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" >
 	<%--Create Connectors--%>
 	<Connectors>
@@ -100,7 +100,7 @@ diagram.updateConnector("connectorName", {
 The `SourceNode` and `TargetNode` properties allow to define the nodes to be connected. The following code example illustrates how to connect two nodes.
 
 {% tabs %}
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" >
 	<%--Create Nodes--%>
 	<Nodes>
@@ -150,7 +150,7 @@ N> By default, connections are created at the intersecting point of segments and
 The `SourcePort` and `TargetPort` properties allow to create connections between some specific points of source/target nodes. The following code example illustrates how to create port to port connections.
 
 {% tabs %}
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" >
 	<%--Create Nodes--%>
 	<Nodes>
@@ -222,7 +222,7 @@ The path of the connector is defined with a collection of segments. There are th
 Straight segment allows to create a straight line.
 To create a straight line, you should specify the `Type` of the segment as "straight" and add a straight segment to `Segments` collection. The following code example illustrates how to create a default straight segment.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" >
 	<%--Create Connectors--%>
 	<Connectors>
@@ -246,7 +246,7 @@ To create a straight line, you should specify the `Type` of the segment as "stra
 
 The `Point` property of straight segment allows you to define the end point of it. The following code example illustrates how to define the end point of a straight segment.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" >
 	<%--Create Connectors--%>
 	<Connectors>
@@ -277,7 +277,7 @@ Orthogonal segments are used to create segments that are perpendicular to each o
 
 Set the segment `Type` as "Othogonal" to create a default orthogonal segment. The following code example illustrates how to create a default orthogonal segment.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" >
 	<%--Create Connectors--%>
 	<Connectors>
@@ -300,7 +300,7 @@ Set the segment `Type` as "Othogonal" to create a default orthogonal segment. Th
 
 The `Length` and `Direction` properties allow to define the flow and length of segment. The following code example illustrates how to create customized orthogonal segments.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" >
 	<%--Create Connectors--%>
 	<Connectors>
@@ -339,7 +339,7 @@ Bezier segments are used to create curve segments and the curves are configurabl
 
 To create a bezier segment, the `Segment.Type` is set as `Bezier`. The following code example illustrates how to create a default Bezier segment.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" >
 	<%--Create Connectors--%>
 	<Connectors>
@@ -362,7 +362,7 @@ To create a bezier segment, the `Segment.Type` is set as `Bezier`. The following
 
 The `Point1` and `Point2` properties of bezier segment enable you to set the control points. The following code example illustrates how to configure the Bezier segments with control points.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" >
 	<%--Create Connectors--%>
 	<Connectors>
@@ -415,7 +415,7 @@ connectors.push(connector);
 
 Multiple segments can be defined one after another. To create a connector with multiple segments, define and add the segments to `Connector.Segments` collection. The Following code example illustrates how to create a connector with multiple segments.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" >
 	<%--Create Connectors--%>
 	<Connectors>
@@ -445,7 +445,7 @@ To explore the properties of decorators, refer to [Decorator Properties](http://
 
 The `Shape` property of decorator allows to define the shape of the decorators. The following code example illustrates how to create decorators of various shapes.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" >
 	<%--Create Connectors--%>
 	<Connectors>
@@ -487,7 +487,7 @@ Padding is used to leave space between the Connector's end point and the object 
 
 The `SourcePadding` and `TargerPadding` properties of connector define the space to be left between the connection end points and the source and target nodes of connector. The following code example illustrates how to leave space between the connection end points and source, target nodes.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
         <%--   Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
@@ -617,7 +617,7 @@ Diagram.Model.Constraints = DiagramConstraints.Default | DiagramConstraints.Brid
 
 Corner radius allows to create connectors with rounded corners. The radius of the rounded corner is set with `CornerRadius` property.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" >
 	<%--Create Nodes--%>
 	<Nodes>
@@ -654,7 +654,7 @@ Stroke width, stroke color, and style of the lines and decorators can be customi
 
 The following code example illustrates how to customize the segment appearance.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" >
 	<%--Create Connectors--%>
 	<Connectors>
@@ -672,7 +672,7 @@ The following code example illustrates how to customize the segment appearance.
 
 The following code example illustrates how to customize the appearance of the decorator.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" >
 	<%--Create Connectors--%>
 	<Connectors>

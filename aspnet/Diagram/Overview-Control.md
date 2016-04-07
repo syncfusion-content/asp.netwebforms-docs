@@ -21,7 +21,7 @@ Overview control solves these problems by showing you a preview, that is, an ove
 
 The `SourceID` property of overview should be set with the corresponding Diagram ID for you need the overall view. The following code illustrates how to create overview. 
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
 //Initializes overview
 

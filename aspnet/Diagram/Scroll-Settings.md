@@ -18,7 +18,7 @@ Scroll settings allows you to read the scroll status, view port size, and curren
 ## Define scroll status
 Diagram allows you to pan the Diagram before loading, so that any desired region of a large Diagram is made to view. You can programmatically pan the Diagram with the `HorizontalOffset` and `VerticalOffset` properties of scroll settings. The following code illustrates how to set pan the Diagram programmatically.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
 
         <%--  To Enables multiple tools  --%>
@@ -68,7 +68,7 @@ Autoscroll feature automatically scrolls the Diagram whenever the node or connec
 
 The Autoscroll border is used to specify the maximum distance between the object and Diagram edge to trigger Autoscroll. The default value is set as 15 for all sides (left, right, top, and bottom) and it can be changed by using the `AutoScrollBorder` property of page settings. The following code example illustrates how to set Autoscroll border. 
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
         <%--  To Enables multiple tools  --%>
         <ej:Diagram ID="Diagram" runat="server" Height="400px" Width="400px">
@@ -93,7 +93,7 @@ The scroll limit allows you to define the scrollable region of the Diagram. It i
 
 The following code example illustrates how to specify the scroll limit.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
         <%--  To Enables multiple tools  --%>
         <ej:Diagram ID="Diagram" runat="server" Height="400px" Width="400px">
@@ -108,7 +108,7 @@ The following code example illustrates how to specify the scroll limit.
 
 You can restrict scrolling beyond any particular rectangular area by using the `ScrollableArea` property of scroll settings. To restrict scrolling beyond any custom region, you have to set the `ScrollLimit` as "Limited". The following code example illustrates how to customize scrollable area.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
         <%--  To Enables multiple tools  --%>
         <ej:Diagram ID="Diagram" runat="server" Height="400px" Width="400px">

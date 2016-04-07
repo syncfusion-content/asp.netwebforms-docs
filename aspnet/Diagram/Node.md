@@ -21,7 +21,7 @@ A node can be created and added to the Diagram, either programmatically or inter
 
 To create a node, You have to create the node tag and add that to `Nodes` collection of the Diagram Model. The following code example illustrates how to add a node to the Diagram.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
       <%--Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="1000px">
@@ -106,7 +106,7 @@ The following table illustrates how pivot relates offset values with node bounda
 
 The following code illustrates how to change the `Pivot` value.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
       <%--Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
@@ -130,7 +130,7 @@ Diagram allows to add different kind of nodes. To explore the types of nodes, re
 
 You can customize the appearance of a node by changing its fill colors, patterns, line weight and style, or shadow. The following code illustrates how to customize the appearance of the shape.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
       <%--   Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
             <Nodes>
@@ -211,7 +211,7 @@ The `Gradient` property of Node allows you to define and applies the gradient ef
 
 **Diagram** provides support to add **shadow** effect to a node that is disabled by default. It can be enabled with the `Constraints` property of node. The following code illustrates how to drop shadow.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
       <%--   Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">
@@ -246,7 +246,7 @@ The following code illustrates how to disable shadow effect at runtime.
 
 The angle, translation, and opacity of the Shadow can be customized with the `Shadow` property of node. The following code example illustrates how to customize shadow.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 
       <%--   Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px">

@@ -17,7 +17,7 @@ Diagram provides some built-in context menu items and allows to define custom me
 The `EnableContextMenu` property helps you to enable/disable the context menu. Diagram provides some default context menu items to ease the execution of some frequently used commands.
 The following code illustrates how to enable the default context menu items.
 
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <%--Disables the context menu--%>
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" EnableContextMenu="false" >
 </ej:Diagram>
@@ -32,7 +32,7 @@ Apart from the default context menu items, you can define some additional contex
 The following code example illustrate how to add custom context menu items.
 
  
-{% highlight ASPX %}
+{% highlight aspx-cs %}
        <%--   Initializes Diagram--%>
         <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px" EnableContextMenu="true">
             <ContextMenu ShowCustomMenuItemsOnly="true">
@@ -75,7 +75,7 @@ The following code example illustrates how to customize the icon of context menu
 You would be notified with events when you try to open the context menu items(`contextMenuBeforeOpen`) and when you click the menu items(`contextMenuClick`). The following code example illustrates how to define those events.
 
 {% tabs %}
-{% highlight ASPX %}
+{% highlight aspx-cs %}
 <%--Enables the context menu--%>
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%"  
 	EnableContextMenu="false" OnClientContextMenuBeforeOpen="contextMenuBeforeOpen"
