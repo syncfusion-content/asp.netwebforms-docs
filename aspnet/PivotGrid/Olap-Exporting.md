@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Exporting | PivotGrid | ASP.NET | Syncfusion
 description: exporting
