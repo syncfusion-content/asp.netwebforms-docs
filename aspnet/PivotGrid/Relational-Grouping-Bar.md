@@ -12,7 +12,7 @@ documentation: ug
 ## Initialization 
 Grouping Bar allows user to dynamically alter the report by filter, sort and remove operations in the PivotGrid control. Based on the Relational datasource and report bound to the PivotGrid control, Grouping Bar will be automatically populated. You can enable Grouping Bar option in PivotGrid by setting the `EnableGroupingBar` property to true.
 
-##Client Mode
+### Client Mode
 
 {% highlight html %}
 
@@ -49,7 +49,7 @@ Grouping Bar allows user to dynamically alter the report by filter, sort and rem
 
 ![](Grouping-Bar_images/RealtionalClientGR.png)
 
-##Server Mode
+### Server Mode
 
 {% highlight html %}
 

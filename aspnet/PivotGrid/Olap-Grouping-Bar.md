@@ -13,7 +13,7 @@ documentation: ug
 
 Grouping Bar allows user to dynamically alter the report by filter and remove operations in the PivotGrid control. Based on the OLAP datasource and report bound to the PivotGrid control, Grouping Bar will be automatically populated. You can enable Grouping Bar option in PivotGrid by setting the `EnableGroupingBar` property to true.
 
-##Client Mode
+### Client Mode
 
 {% highlight html %}
 
@@ -41,7 +41,7 @@ Grouping Bar allows user to dynamically alter the report by filter and remove op
 
 ![](Grouping-Bar_images/OLAPClientGB.png)
 
-##Server Mode
+### Server Mode
 
 {% highlight html %}
 
