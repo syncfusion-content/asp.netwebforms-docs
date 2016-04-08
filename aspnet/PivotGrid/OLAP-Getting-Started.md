@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-#Getting Started
+# Getting Started
 
 ## Creating a simple application with PivotGrid and OLAP datasource (Client Mode)
 
@@ -93,13 +93,13 @@ The above code will generate a simple PivotGrid with "Fiscal" field in Row, "Cus
 ![](Getting-Started_images/OlapClientside.png)
 
 
-##Creating a simple application PivotGrid and OLAP datasource (Server Mode)
+## Creating a simple application PivotGrid and OLAP datasource (Server Mode)
 
 This section covers the information required to create a simple PivotGrid bound to OLAP datasource. 
 
 N> ASP.NET MVC Web Application will contain a service that transfers data to server-side, processes and returns back to client-side for control rendering and re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement.
 
-###Project Initialization
+### Project Initialization
 
 Create a new **ASP.NET Empty Web Application** using Visual Studio IDE and name the project as **“PivotGridDemo”**.
 
@@ -122,7 +122,7 @@ Now add the following dependency libraries as references into your Web Applicati
 
 N> If any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility is installed, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET].
 
-###Scripts and CSS Initialization
+### Scripts and CSS Initialization
 
 The scripts and style sheets that are mandatorily required to render PivotGrid widget in a Web Application are mentioned in an appropriate order below:
 
@@ -146,7 +146,7 @@ Scripts and style sheets are referred under the <head> tag in **GettingStarted.a
 
 {% endhighlight %}
 
-###Control Initialization
+### Control Initialization
 
 Either drag and drop the **PivotGrid** control from the toolbox (under **Syncfusion BI Web** category) or manually define the widget like in the below code sample inside **"GettingStarted.aspx"** page.
  
@@ -198,7 +198,7 @@ If you are manually entering the code instead of drag and drop operation from to
     
 {% endhighlight %}
 
-###WebAPI
+### WebAPI
 
 **Adding a WebAPI Controller**
 
@@ -431,7 +431,7 @@ Now, **PivotGrid** will be rendered with Internet Sales Amount over a period of 
 
 ![](Getting-Started_images/pivotgrid.png) 
 
-###WCF
+### WCF
 
 This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotGrid. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/pivotgrid/olap-connectivity#wcf).
 

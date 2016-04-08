@@ -18,7 +18,7 @@ Based on the datasource, Relational, bound to the PivotGrid control, PivotTable 
 In-order to initialize PivotTable Field List, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for the widget. Then you need to initialize the PivotTable Field List by using the **"PivotSchemaDesigner"** method.
 
 
-##Client Mode
+### Client Mode
 
 {% highlight html %}
 
@@ -64,7 +64,7 @@ In-order to initialize PivotTable Field List, first you need to define a “div�
 
 ![](PivotTable-Field-List_images/RelationalClientside.png)
 
-##Server Mode 
+### Server Mode 
 
 {% highlight html %}
 

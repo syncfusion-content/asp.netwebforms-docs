@@ -9,9 +9,7 @@ documentation: ug
 
 # Data Binding
 
-## OLAP
-
-### Binding PivotGrid to Offline Cube
+## Binding PivotGrid to Offline Cube
 
 To connect an OLAP Cube available in local machine, physical path of the Cube needs to be set in the connection string. Below code sample illustrates the same.
 
@@ -22,7 +20,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-### Binding PivotGrid to Cube in local SQL Server
+## Binding PivotGrid to Cube in local SQL Server
 
 To connect an OLAP Cube available in SQL Server Analysis Service in local machine, server name and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
 
@@ -33,7 +31,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-### Binding PivotGrid to Cube in online SQL Server
+## Binding PivotGrid to Cube in online SQL Server
 
 To connect an OLAP Cube available in SQL Server Analysis Service in online server through XML/A, host server link and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
 
@@ -44,7 +42,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-### Binding PivotGrid to Cube in online Mondrian Server
+## Binding PivotGrid to Cube in online Mondrian Server
 
 To connect an OLAP Cube available in Mondrian Server through XML/A, host server link and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
 
@@ -56,7 +54,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 
 {% endhighlight %}
 
-### Binding PivotGrid to Cube in online ActivePivot Server
+## Binding PivotGrid to Cube in online ActivePivot Server
 
 {% highlight c# %}
 
@@ -66,7 +64,7 @@ DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.Act
 
 {% endhighlight %}
 
-### WCF
+## WCF
 **Adding a WCF Service**
 
 To add a WCF service in an existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it as `PivotGridService.svc`, click Add.

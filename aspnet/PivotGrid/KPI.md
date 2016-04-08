@@ -20,7 +20,7 @@ The different indicators available in KPI are:
 
 The **"KpiElements"** class in OLAP Base library holds the KPI name and when its object is added to an OlapReport, you can view the resultant information in PivotGrid.
 
-##Client Mode
+## Client Mode
 
 {% highlight html %}
 
@@ -48,7 +48,7 @@ The **"KpiElements"** class in OLAP Base library holds the KPI name and when its
 
 ![](KPI_images/ClientSideKPI.png)
 
-##Server Mode
+## Server Mode
 
 {% highlight C# %}
 

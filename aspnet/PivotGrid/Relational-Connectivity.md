@@ -9,9 +9,7 @@ documentation: ug
 
 # Data Binding
 
-## Relational
-
-### Binding PivotGrid to Collection
+## Binding PivotGrid to Collection
 
 This section demonstrates binding of a collection to the PivotGrid control as datasource. For more information on this datasource refer the following links.
 
@@ -20,7 +18,7 @@ If you are using WebAPI controller, refer the "Datasource Initialization" sectio
 Or, if you are using WCF service, refer the "Datasource Initialization" section under the following [link](http://help.syncfusion.com/aspnet/pivotgrid/olap-connectivity#Datasource-Initialization).
 
 
-### WCF
+## WCF
 **Adding a WCF Service**
 
 To add a WCF service in an existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it as `RelationalService.svc`, click Add.

@@ -23,7 +23,7 @@ A layout in which summary cells are positioned at the bottom of each parent memb
 
 ![](Grid-Layout_images/layout-normal.png) 
 
-##No Summaries Layout
+## No Summaries Layout
 
 A layout in which summary cells are completely hidden and the child members appear next to their parent member.  The enumeration property `Layout` needs to be set to **"NoSummaries"** in-order to view PivotGrid without summaries. 
 
@@ -36,7 +36,7 @@ A layout in which summary cells are completely hidden and the child members appe
 ![](Grid-Layout_images/layout-nosummary.png) 
 
 
-##Excel-like Layout
+## Excel-like Layout
 
 A layout in which summary cells are positioned besides each parent member and their child members appear next to them. The enumeration property `Layout` needs to be set to **"ExcelLikeLayout"** in-order to view PivotGrid in excel-like layout.
 
@@ -48,7 +48,7 @@ A layout in which summary cells are positioned besides each parent member and th
 
 ![](Grid-Layout_images/layout-excel.png) 	
 
-##Top Summary Layout 
+## Top Summary Layout 
 
 A layout in which summary cells are positioned at the top of each parent member and their child members appear next to them. The enumeration property `Layout` needs to be set to **"NormalTopSummary"** in-order to view PivotGrid in top summaries layout.
 
