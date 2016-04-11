@@ -552,7 +552,7 @@ The server-side code to retrieve the appointments are as follows.
 
 {% endhighlight %}
 
-## Databinding using OLEDB
+## Data Binding using OLEDB
 
 The appointment data can also be bound to the Scheduler using OLEDB database as depicted below.
 
