@@ -184,7 +184,7 @@ ExportToWord</td><td>
 <tr>
 <td>
 ExportToPdf</td><td>
-"Exporter vers Pdf"</td></tr>
+"Exporter vers PDF"</td></tr>
 <tr>
 <td>
 FullScreen</td><td>

@@ -11,7 +11,7 @@ documentation: ug
 
 ##Built-in Themes
 
-Following are the build-in themes available in the OlapChart.
+Following are the built-in themes available in the OlapChart.
 
 * flatlight
 * flatdark

@@ -188,7 +188,7 @@ The options available in the toolbar are,
 * **Defer Update** – This option lets the user to update the widget on-demand rather than updating it for every interaction.
 * **Export to Excel** - This option is used to export the Grid and Chart into an Excel worksheet.
 * **Export to Word** – This option is used to export the Grid and Chart into a Word document.
-* **Export to Pdf** – This option is used to export the Grid and Chart into a Pdf document.
+* **Export to PDF** – This option is used to export the Grid and Chart into a Pdf document.
 * **Full Screen View** – Displays the active control (Chart/Grid) in full/maximized view.
 * **Filter/Sort Column** - Filters/Sorts the data in the OlapReport with respect to Column.
 * **Filter/Sort Row** - Filters/Sorts the data in the OlapReport with respect to Row.

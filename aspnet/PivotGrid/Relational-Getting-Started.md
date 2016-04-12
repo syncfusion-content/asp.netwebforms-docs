@@ -19,9 +19,9 @@ This section covers the information that you need to know to populate a simple P
 create a Default.aspx page and scripts and style sheets that are mandatorily required to render PivotGrid widget in a Web Application are mentioned in an appropriate order below:
 
 1. ej.widgets.all.min.css
-2. jquery-1.10.2.min.js
-3. jquery.easing.1.3.min.js
-4. jquery.linq.js
+2. jQuery-1.10.2.min.js
+3. jQuery.easing.1.3.min.js
+4. jQuery.linq.js
 5. ej.web.all.min.js
 
 Scripts and style sheets are referred under the <head> tag in Default.aspx page.
@@ -246,8 +246,8 @@ N> If any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET u
 The scripts and style sheets that are mandatorily required to render PivotGrid widget in a Web Application are mentioned in an appropriate order below:
 
 1. ej.widgets.all.min.css
-2. jquery-1.10.2.min.js
-3. jquery.easing.1.3.min.js
+2. jQuery-1.10.2.min.js
+3. jQuery.easing.1.3.min.js
 4. ej.web.all.min.js
 
 [Click here](http://help.syncfusion.com/js/cdn) to know more about scripts and style sheets available online (CDN Link).
@@ -291,7 +291,7 @@ Once the widget is placed into the web page, add **'ScriptManager'** next to it 
 
 The **“Url”** property in PivotGrid widget points the service endpoint, where data are processed and fetched in the form of JSON. The services used in PivotGrid widget as endpoint are WCF and WebAPI.
 
-N> The above “GettingStarted.aspx” contains WebAPI Url, which is “../RelationalService”. If WCF service is used as endpoint, the Url would look like “../RelationalService.svc”.
+N> The above “GettingStarted.aspx” contains WebAPI URL, which is “../RelationalService”. If WCF service is used as endpoint, the URL would look like “../RelationalService.svc”.
 
 If you are manually entering the code instead of drag and drop operation from toolbox, then you need to register the referenced assemblies in Web.config file. 
 
