@@ -66,7 +66,7 @@ By default, the following resources shipped as embedded resources from assembly.
 And component related scripts will embed dynamically from assembly in your application. 
 
 ##CDN integration with Embedded Resources
-You can get these embedded resources from CDN (Content Delivery Networks) also. To achieve this behaviour you should enable the **EnableCdn** property in ASP script manager control.  Please refer below code snippet:
+You can get these embedded resources from CDN (Content Delivery Networks) also. To achieve this behavior you should enable the **EnableCdn** property in ASP script manager control.  Please refer below code snippet:
 
 {% highlight aspx-cs %}
 
@@ -75,7 +75,7 @@ You can get these embedded resources from CDN (Content Delivery Networks) also. 
 
 {% endhighlight %}
 
-You can embed the resources from assembly when CDN (Content Delivery Network) is unavailable. To achieve this behaviour you should enable **EnableCdnFallback** property in script manager. Please refer the below code snippet:
+You can embed the resources from assembly when CDN (Content Delivery Network) is unavailable. To achieve this behavior you should enable **EnableCdnFallback** property in script manager. Please refer the below code snippet:
 
 {% highlight aspx-cs %}
 
@@ -86,4 +86,4 @@ You can embed the resources from assembly when CDN (Content Delivery Network) is
 
 N> 1. EnableCdnFallback property is supported from 4.5 and above frameworks.
 N> 2. EnableCdnFallback is not applicable for theme file. 
-N> 3. Both script and style resources can also be accessed through https (secure connection ) from CDN 
+N> 3. Both script and style resources can also be accessed through HTTPS (secure connection ) from CDN 
