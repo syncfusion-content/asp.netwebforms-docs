@@ -119,7 +119,7 @@ Once the widget is placed into the web page, add **‘ScriptManager’** next to
 
 The **“Url”** property in OlapGauge widget points the service endpoint, where data are processed and fetched in the form of JSON. The services used in OlapGauge widget as endpoint are WCF and WebAPI.
 
-N> The above “GettingStarted.aspx” contains WebAPI Url, which is, “../OlapGauge”. If WCF service is used as endpoint, the Url would look like “../OlapGaugeService.svc”.
+N> The above “GettingStarted.aspx” contains WebAPI URL, which is, “../OlapGauge”. If WCF service is used as endpoint, the URL would look like “../OlapGaugeService.svc”.
 
 If you are manually entering the code instead of dragging and dropping the OlapGauge widget from toolbox, then you need to register the referenced assemblies in Web.config file. 
 

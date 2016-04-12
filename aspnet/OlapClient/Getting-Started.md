@@ -89,7 +89,7 @@ Once the widget is placed into the web page, add **‘ScriptManager’** next to
  
  The **“Url”** property in OlapClient widget points the service endpoint, where data are processed and fetched in the form of JSON. The services used in OlapClient widget as endpoint are WCF and WebAPI.
 
-N> The above “GettingStarted.aspx” contains WebAPI Url, which is, “../OlapClient”. If WCF service is used as endpoint, the Url would look like “../OlapClientService.svc”.
+N> The above “GettingStarted.aspx” contains WebAPI URL, which is, “../OlapClient”. If WCF service is used as endpoint, the URL would look like “../OlapClientService.svc”.
 
 If you are manually entering the code instead of dragging and dropping the OlapClient widget from toolbox, then you need to register the referenced assemblies in Web.config file.
 

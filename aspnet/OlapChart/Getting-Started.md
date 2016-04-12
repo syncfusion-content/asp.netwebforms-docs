@@ -90,7 +90,7 @@ Once the widget is placed into the web page, add **‘ScriptManager’** next to
 
 The **“Url”** property in OlapChart widget points the service endpoint, where data are processed and fetched in the form of JSON. The services used in OlapChart widget as endpoint are WCF and WebAPI.
 
-N> The above “GettingStarted.aspx” contains WebAPI Url, which is, “../OlapChart”. If WCF service is used as endpoint, the Url would look like “../OlapChartService.svc”.
+N> The above “GettingStarted.aspx” contains WebAPI URL, which is, “../OlapChart”. If WCF service is used as endpoint, the URL would look like “../OlapChartService.svc”.
 
 If you are manually entering the code instead of dragging and dropping the OlapChart widget from toolbox, then you need to register the referenced assemblies in Web.config file. 
 
