@@ -74,6 +74,8 @@ To create a new web form in the application
    * Syncfusion.Gauge.Wpf
    * Syncfusion.SfMaps.Wpf 
    
+   N> Refer the above assemblies from the installed location, C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies
+   N>
    N> Refer System.Web.Http, System.Web.WebHost, System.Net.Http.WebRequest and System.Net.Http.Formatting assemblies from ASP.NET WebApi NuGet package.
 
 3. Click OK
@@ -122,7 +124,7 @@ N> Use the following code example while adding scripts and styles.
    </form>   
    ~~~
    
-   N> Add your report files to your application’s App_Data folder.You can obtain sample rdl/rdlc files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\ XX.X.X.XX\Common\Data\ejReportTemplate). “X.X.X.X” is the Essential Studio Release Version.
+   N> Add your report files to your application’s App_Data folder.You can obtain sample rdl/rdlc files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Common\Data\ejReportTemplate). “X.X.X.X” is the Essential Studio Release Version.
 	
 ### Add WebAPI controller for ReportViewer
 
