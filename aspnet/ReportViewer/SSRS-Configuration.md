@@ -9,7 +9,7 @@ documentation: ug
 
 # SSRS Configuration
 
-The ReportViewer has support to load RDL/RDLC reports from SSRS server. You have to set your SSRS server URL to ReportViewer’sreportServerUrl property and set the relative path of RDL/RDLC file in SSRS to ReportViewer’sreportPath property. 
+The ReportViewer has support to load RDL/RDLC reports from SSRS server. You have to set your SSRS server URL to ReportViewer’s ReportServiceUrl property and set the relative path of RDL/RDLC file in SSRS to ReportViewer’s ReportPath property. 
 
 {% highlight html %}
 

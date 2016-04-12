@@ -74,7 +74,7 @@ To create a new web form in the application
    * Syncfusion.Gauge.Wpf
    * Syncfusion.SfMaps.Wpf 
    
-   N> Refer System.Web.Http, System.Web.WebHost, System.Net.Http.WebRequest and System.Net.Http.Formatting dlls from ASP.NET WebApi nuget package.
+   N> Refer System.Web.Http, System.Web.WebHost, System.Net.Http.WebRequest and System.Net.Http.Formatting assemblies from ASP.NET WebApi NuGet package.
 
 3. Click OK
 
