@@ -24,7 +24,7 @@ Project Creation Wizard
 
 ### Create ASPX Page
 
-To create a new web form in the application
+To create a new Web Forms in the application
 
 1. Right-Click on the project and select Add
 
@@ -37,7 +37,7 @@ To create a new web form in the application
 
    ![](Getting-Started_images/Getting-Started_img4.png) 
    
-   Adding Web Form
+   Adding Web Forms
    {:.caption}
    
 3. Name the page as Default.aspx and click OK.

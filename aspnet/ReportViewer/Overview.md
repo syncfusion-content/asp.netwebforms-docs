@@ -25,7 +25,7 @@ The ReportViewer supports the following features.
 * List
 * Chart
 * Sparkline
-* Databar
+* DataBar
 * Map
 * Gauge
 * Indicator
