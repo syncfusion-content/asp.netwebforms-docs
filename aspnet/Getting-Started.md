@@ -18,7 +18,7 @@ This section describes how to configure the Syncfusion ASP.NET components into t
 The procedure that are followed in manual integration process is entirely automated, when we create an application using Syncfusion Project template.
 
 ## Using Syncfusion Project Template
-For creating new ASP.Net Website, you can use the Syncfusion’s Visual Studio project templates. Here, you will see how to add the `DatePicker` control into the ASP.NET Website selecting from the “New Web Site” pop-up,
+For creating new ASP.NET Website, you can use the Syncfusion’s Visual Studio project templates. Here, you will see how to add the `DatePicker` control into the ASP.NET Website selecting from the “New Web Site” pop-up,
 
 * Start the Visual Studio and select File -> New -> Website. You can now see the built-in `Syncfusion ASP.NET Website` template in the "New Web Site" pop-up as shown below
 
@@ -26,7 +26,7 @@ For creating new ASP.Net Website, you can use the Syncfusion’s Visual Studio p
 Visual Studio 2012 - New Web Site Pop-up
 {:.caption}
 
-* Type the application name and click `OK`. This will create a new Web Site with all the Syncfusion ASP.Net control’s client and server side dependencies are preconfigured and copied to it appropriate folders
+* Type the application name and click `OK`. This will create a new Web Site with all the Syncfusion ASP.NET control’s client and server side dependencies are preconfigured and copied to it appropriate folders
 
 * Now you can add your required controls in the ASPX Page. The code for adding `DatePicker` control within the "Default.aspx" file is follows
 
@@ -65,7 +65,7 @@ The steps to install the Syncfusion ASP.NET Web Forms NuGet Packages in Visual S
 2. Select `NuGet Package Manager | Package Sources` and click `Add` button to add the `Package Name` and `Package Source` of Syncfusion NuGet Packages.    
 
    **Name**: Name of the package that listed in Available package sources  
-   **Source**: Syncfusion ASP.NET Web Forms NuGet Package feed url 
+   **Source**: Syncfusion ASP.NET Web Forms NuGet Package feed URL 
    [http://nuget.syncfusion.com/aspnet](http://nuget.syncfusion.com/aspnet)
     
    ![](Getting-Started_images/NuGetConfig2.jpeg)
@@ -189,14 +189,14 @@ Once the CSS files are added in your application, include the reference to "ej.w
 {% endhighlight %}
 
 ### Adding required Script files
-Essential ASP.Net controls has the following list of external JavaScript dependencies. 
+Essential ASP.NET controls has the following list of external JavaScript dependencies. 
 
-* jquery-1.10.2.min.js
+* jQuery-1.10.2.min.js
 * jquery.easing.1.3.min.js
 * jsrender.min.js
 
 
-Apart from the above external dependencies, each control has its own list of internal dependencies. This dependencies are listed within each component documentation. For the getting started, you can use “ej.web.all.min.js” file which encapsulates all the `ej` controls and frameworks in one single file. Also, Essential ASP.Net controls has additional script dependency to “ej.webform.min.js” which is responsible for raising server-side events.
+Apart from the above external dependencies, each control has its own list of internal dependencies. This dependencies are listed within each component documentation. For the getting started, you can use “ej.web.all.min.js” file which encapsulates all the `ej` controls and frameworks in one single file. Also, Essential ASP.NET controls has additional script dependency to “ej.webform.min.js” which is responsible for raising server-side events.
 The dependencies are available in the following locations of your machine. Please copy these files from location given
 
 <table>
@@ -205,7 +205,7 @@ The dependencies are available in the following locations of your machine. Pleas
 <th>Location</th>
 </tr>
 <tr>
-<td>jquery-1.10.2.min.js<br/>jquery.easing.1.3.min.js<br/>jsrender.min.js</td>
+<td>jquery-1.10.2.min.js<br/>jQuery.easing.1.3.min.js<br/>jsrender.min.js</td>
 <td>&lt;Syncfusion Installed Location&gt;\Essential Studio\13.1.0.21\JavaScript\assets\external</td>
 </tr>
 <tr>
