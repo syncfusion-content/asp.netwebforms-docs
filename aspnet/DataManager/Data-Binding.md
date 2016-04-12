@@ -101,7 +101,7 @@ The result of the above code example is illustrated as follows.
 
 ### OData binding
 
-OData is standardized protocol for creating and consuming data. You can retrieve data from oData service by using DataManager. You can refer to the following code example of remote Data binding by using oData service.
+OData is standardized protocol for creating and consuming data. You can retrieve data from OData service by using DataManager. You can refer to the following code example of remote Data binding by using OData service.
 
 {% highlight html %}
 
@@ -241,7 +241,7 @@ The result for the above code example is illustrated as follows.
 
 ## Other Web Services binding
 
-The DataManager can also retrieve data from ASP.Net Web methods and ASP.Net MVC Controller`s action. You can achieve this by using the UrlAdaptor of DataManager. The UrlAdaptor is discussed briefly in the adaptor section.  By default, the Url Adaptor is used when accessing remote data. 
+The DataManager can also retrieve data from ASP.NET Web methods and ASP.NET MVC Controller`s action. You can achieve this by using the UrlAdaptor of DataManager. The UrlAdaptor is discussed briefly in the adaptor section.  By default, the URL Adaptor is used when accessing remote data. 
 
 Refer to the following code example to know how the DataManager can be used to consume data from the web method.
 
@@ -286,7 +286,7 @@ Refer to the following code example to know how the DataManager can be used to c
 
 ## Offline Mode
 
-The offline mode is one of the useful feature of DataManager that can be enabled by setting offline property of the datamanager as true. With offline as true, the DataManager requests the server only once and further data manipulation operation can be done at client side itself.
+The offline mode is one of the useful feature of DataManager that can be enabled by setting offline property of the data manager as true. With offline as true, the DataManager requests the server only once and further data manipulation operation can be done at client side itself.
 
 In the following code example, the offline property of the DataManager is set as true.
 
@@ -424,7 +424,7 @@ The request and the response for the above code is as follows.
 
 You can add custom request headers by using DataManager and the headers can be added to the request headers in two ways that is illustrated in the following code example.
 
-You can add custom request headers to every request made by the DataManager by using the headers property. Refer to the following code example for setting the custom request headers by using the headersproperty.
+You can add custom request headers to every request made by the DataManager by using the headers property. Refer to the following code example for setting the custom request headers by using the headers property.
 
 {% highlight html %}
 
@@ -468,7 +468,7 @@ The above method generates the request header with custom header as follows.
 
 ## Cross domain & JSONP
 
-The DataManager contains support for creating cross domain request, you can achieve this by using crossDomain and jsonp property of the DataManager. The following code example illustrate on how to create cross domain request. 
+The DataManager contains support for creating cross domain request, you can achieve this by using crossDomain and JSONP property of the DataManager. The following code example illustrate on how to create cross domain request. 
 
 {% highlight html %}
 
@@ -512,7 +512,7 @@ Result of above code example is illustrated as follows.
 
 
 
-## Html Table
+## HTML Table
 
 The DataManager can also fetch and use data from HTML element. You can achieve this by using the table property of the DataManager. The DataManager can fetch data from the HTML table element.
 
