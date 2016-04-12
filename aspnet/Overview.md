@@ -9,7 +9,7 @@ documentation: ug
 ---
 # Overview
 
-Essential Studio for ASP.Net is a set of server-side wrappers for Essential JavaScript controls which enables you to create Essential Studio’s HTML5 JavaScript controls through ASP.Net Designer and/or Code Behind file. It includes rich designer support, server-side events and better ViewState handling for all server-side wrappers. 
+Essential Studio for ASP.NET is a set of server-side wrappers for Essential JavaScript controls which enables you to create Essential Studio’s HTML5 JavaScript controls through ASP.NET Designer and/or Code Behind file. It includes rich designer support, server-side events and better ViewState handling for all server-side wrappers. 
 
 ## How to best read this user guide
 
@@ -17,7 +17,7 @@ Essential Studio for ASP.Net is a set of server-side wrappers for Essential Java
 
 * Now that you are familiar with the basics of using the component, the next step would be to start integrating the component into your application. A good starting point would be to refer to the code snippets in the [online sample browser](http://asp.syncfusion.com/demos/web/#) which contains hundreds of code samples, it is very likely that you will find a code sample that resembles your intended usage scenario.
 
-* After you have integrated the component into your application using one of the sample code snippets as a starting point, it is likely that you would want additonal information on specific features and API. The best option would be to search a the specific topic using the search box that is available at the top of the user guide.
+* After you have integrated the component into your application using one of the sample code snippets as a starting point, it is likely that you would want additional information on specific features and API. The best option would be to search a the specific topic using the search box that is available at the top of the user guide.
 
 * Another valuable resource is the [API reference](http://help.syncfusion.com/js/api#) which provides detailed information on the object hierarchy as well as the settings available on every object.
 
