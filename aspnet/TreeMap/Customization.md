@@ -21,7 +21,7 @@ ColorMapping is categorized into three different types such as,
 * RangeBrushColorMapping
 * DesaturationColorMapping
 
-### Uni Color Mapping
+### UniColorMapping
 
 You can color, all the leaf nodes with the same color by setting the color value of the UniColorMapping property of the TreeMap.
 

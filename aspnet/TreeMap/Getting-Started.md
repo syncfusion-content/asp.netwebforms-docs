@@ -21,7 +21,7 @@ You can configure ASP.NET TreeMap in simple steps. This manual provides instruct
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
-### Create a simple ASP.Net Application
+### Create a simple ASP.NET Application
 
 You can create a new ASP.NET project application by adding the necessary dll's and scripts.
 
