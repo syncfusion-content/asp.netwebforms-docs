@@ -66,7 +66,7 @@ Apply the plugin and property assigning the Map element through the directive 
 
 ![](AngularJS-Support_images/AngularJS-Support_img1.png)
 
-Angular Support Map
+AngularJS Support Map
 {:.caption} 
 
 

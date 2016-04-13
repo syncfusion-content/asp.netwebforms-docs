@@ -22,6 +22,6 @@ Essential TreeMap for JavaScript is ideal for visualizing large amounts of data.
 TreeMap is used to represent large or complex data sets in various applications, such as:
 
 * Stock market analysis where the weight of each stock in the index is represented by the size of the rectangle and its range of loss or gain is represented by the color of the rectangle.
-* Visualizing internet usage in certain categories, such as retail, social networks, and search.
+* Visualizing Internet usage in certain categories, such as retail, social networks, and search.
 * Categorizing the news aggregated by Google News where the colors represent different sections, such as business or politics, and the size of the boxes represent how many similar stories also appear in Google News.
 * Indicating weather report analysis around the world. The opacity of each rectangle can differ based on its humidity.
