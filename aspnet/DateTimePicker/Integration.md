@@ -9,9 +9,9 @@ documentation: ug
 
 # Integration
 
-## Angular Support
+## AngularJS Support
 
-AngularJS is an open-source web application framework. AngularJS extends HTML with new attributes. AngularJS is a JavaScript framework. It can be added to an ASPX page with a <script> tag. AngularJS extends HTML attributes with Directives, and binds data to HTML with Expressions. The support is achieved by an integration JS library file. You can know more about the Angular support in our documentation. You can find the online documentation in the following link location. 
+AngularJS is an open-source web application Framework. AngularJS extends HTML with new attributes. AngularJS is a JavaScript Framework. It can be added to an ASPX page with a <script> tag. AngularJS extends HTML attributes with Directives, and binds data to HTML with Expressions. The support is achieved by an integration JS library file. You can know more about the AngularJS support in our documentation. You can find the online documentation in the following link location. 
 
 <http://help.syncfusion.com/js/angularjs>
 
@@ -65,9 +65,9 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 
 
-## Knockout Support
+## KnockoutJS Support
 
-KnockoutJS is a MVVM library that allows the separation of concerns. Essential JavaScript has full support for KnockoutJS. Knockout support is achieved by an integrated JS library file. Add the following code for Knockout Binding menu rendering.
+KnockoutJS is a MVVM library that allows the separation of concerns. Essential JavaScript has full support for KnockoutJS. KnockoutJS support is achieved by an integrated JS library file. Add the following code for KnockoutJS Binding menu rendering.
 
 When you use KO with your applications, you can get following benefits:
 

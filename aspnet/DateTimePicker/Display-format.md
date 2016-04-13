@@ -58,7 +58,7 @@ You can also customize the format. Refer to the following list to create your cu
 * ss – Seconds.
 * tt - The AM/PM designator.
 
-In the following example, set DateTimeFormat to fulldatetime format.
+In the following example, set DateTimeFormat to full datetime format.
 
 In the ASPX page, include the following DateTimePicker control code example.
 
