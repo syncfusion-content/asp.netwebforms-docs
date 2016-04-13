@@ -79,7 +79,7 @@ Value</th><th>
 Description</th></tr>
 <tr>
 <td>
-Always</td><td>
+always</td><td>
 Tooltip get displayed for RangeNavigator always.</td></tr>
 <tr>
 <td>
