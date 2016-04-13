@@ -39,7 +39,7 @@ The following 13 themes are supported by the DateTimePicker:
 
 
 
-## Css Class
+## CSS Class
 
 DateTimePicker control also allows you to customize its appearance by using user-defined CSS and custom skin options such as colors and backgrounds. To apply custom themes, you have a property CssClass. CssClass property sets the root class for DateTimePicker theme.
 

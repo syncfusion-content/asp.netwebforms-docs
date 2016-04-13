@@ -20,6 +20,6 @@ The Essential ASP.NET WEB DatePicker control is created as a server side wrapper
 * Responsive dimension.
 * Flexible customization.
 * Custom styling.
-* Built-in JQuery validation.
+* Built-in jQuery validation.
 * Server side events
 * Accessibility (keyboard and ARIA).

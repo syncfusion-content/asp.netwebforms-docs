@@ -13,7 +13,7 @@ This section explains briefly how to create a DateTimePicker in your application
 
 ## Create your first DateTimePicker in ASP.NET	
 
-ASP.NET DateTimePicker provides support to display a calendar within a webpage and allows you to pick a date and time from the calendar. In this example, you can learn how to customize the DateTimePicker in a real-time application for an appointment and to choose current time for one week. 
+ASP.NET DateTimePicker provides support to display a calendar within a web page and allows you to pick a date and time from the calendar. In this example, you can learn how to customize the DateTimePicker in a real-time application for an appointment and to choose current time for one week. 
 
 The following screenshot illustrates the functionality of a DateTimePicker with date range of maximum one week.
 
@@ -23,7 +23,7 @@ The following screenshot illustrates the functionality of a DateTimePicker with 
 
 ### Create DateTimePicker 
 
-You can create an ASP.NET Project and add necessary Dll and script with the help of the given [ASP-Getting Started](http://help.syncfusion.com/aspnetmvc/datetimepicker/getting-started) Documentation.
+You can create an ASP.NET Project and add necessary assemblies and scripts with the help of the given [ASP-Getting Started](http://help.syncfusion.com/aspnetmvc/datetimepicker/getting-started) Documentation.
 
 
 

@@ -21,7 +21,7 @@ In the ASPX page, include the following TimePicker control and configure the Ena
 
 {% endhighlight %}
 
-The following screenshot illustrates aTimePickercontrol whenEnableRTL is set to true.
+The following screenshot illustrates a TimePicker control whenEnableRTL is set to true.
 
 
 ![](RTL_images/RTL_img1.png) 

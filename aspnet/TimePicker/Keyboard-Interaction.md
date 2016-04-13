@@ -9,7 +9,7 @@ documentation: ug
 
 # Keyboard Interaction
 
-You can use Keyboardshortcut keys as an alternative to the mouse on using TimePicker control. TimePicker control allows you to perform all kinds of actions by using keyboard shortcuts.
+You can use Keyboard shortcut keys as an alternative to the mouse on using TimePicker control. TimePicker control allows you to perform all kinds of actions by using keyboard shortcuts.
 
 <table>
 <tr>
@@ -66,7 +66,7 @@ Closes the pop up.</td></tr>
 
 ## Configure Keyboard Interaction
 
-In the ASPX page, include the following TimePicker control and enable keyboard interaction by setting the accesskey property.
+In the ASPX page, include the following TimePicker control and enable keyboard interaction by setting the access key property.
 
 
 

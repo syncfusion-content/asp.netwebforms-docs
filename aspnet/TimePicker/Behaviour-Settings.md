@@ -7,7 +7,7 @@ control: TimePicker
 documentation: ug
 ---
 
-# Behaviour Settings
+# Behavior Settings
 
 ## Set value of the TimePicker Control
 
@@ -129,7 +129,7 @@ Run the above code to render the following output.
 
 ## Rounded Corner
 
-You can customize the shape of the TimePicker control from regular rectangular shape to rounded rectangle shape by using the ShowRoundedCornerproperty set to false by default.
+You can customize the shape of the TimePicker control from regular rectangular shape to rounded rectangle shape by using the ShowRoundedCorner property set to false by default.
 
 ### Configure Rounded corner to TimePicker Text box
 
