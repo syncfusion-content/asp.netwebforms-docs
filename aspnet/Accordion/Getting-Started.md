@@ -11,13 +11,13 @@ documentation: ug
 
 ## Create your first Accordion in ASP.NET
 
-The ASP.NET WebForms Accordion control allows you to provide multiple panes and display them one at a time. In this section, you can learn how the Accordion control is configured and how to customize it with various properties such as multiple open, rounded corner and icons for the Accordion header according to your requirement.
+The ASP.NET Web Forms Accordion control allows you to provide multiple panes and display them one at a time. In this section, you can learn how the Accordion control is configured and how to customize it with various properties such as multiple open, rounded corner and icons for the Accordion header according to your requirement.
 
 ## Create a Simple Accordion
 
 The following steps describe the creation of Accordion control.
 
-* You can create an ASP.NET WebFormsProject and add necessary Dll’s and Scripts with the help of the given [ASP.NET WebForms-Getting Started](http://help.syncfusion.com/aspnetmvc/accordion/getting-started) Documentation.
+* You can create an ASP.NET Web Forms Project and add necessary Dll’s and Scripts with the help of the given [ASP.NET WebForms-Getting Started](http://help.syncfusion.com/aspnetmvc/accordion/getting-started) Documentation.
 * Add the following code example to the corresponding aspx page to render Accordion.
 * Add Accordion widget, and initialize Accordion control as follows.
 {% highlight html %}
@@ -515,7 +515,7 @@ You can customize the Header icon by using CustomIcon property. This property is
 
 You can change the +/- symbol in the Accordion header, that are default icons with Up/Down arrow icon. 
 
-Up/Down arrow icons are available in e-arrowheadup and e- arrowheaddown classes respectively in the ej.widgets.core.min.css stylesheets from the sample. You can set the Up/Down arrow icon to Accordion header, by adding e-arrowheadup and e-arrowheaddown class to SelectedHeader and Header properties respectively.
+Up/Down arrow icons are available in e-arrowheadup and e-arrowheaddown classes respectively in the ej.widgets.core.min.css stylesheets from the sample. You can set the Up/Down arrow icon to Accordion header, by adding e-arrowheadup and e-arrowheaddown class to SelectedHeader and Header properties respectively.
 
 {% highlight html %}
 

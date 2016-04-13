@@ -11,7 +11,7 @@ documentation: ug
 
 ## Create your first Captcha in ASP.NET 
 
-This section enables you to configure the Captcha control in your ASP.NET WEB application and also in learning how to use Captcha with auto validation in web forms.
+This section enables you to configure the Captcha control in your ASP.NET WEB application and also in learning how to use Captcha with auto validation in Web forms.
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
@@ -22,7 +22,7 @@ The Captcha is one of the ways to prevent dictionary attacks. It basically comes
 
 The following steps are used to create the Captcha control.  
 
-You can create a WEB Project and add necessary Dll and script with the given [ASP-Getting Started Documentation](http://help.syncfusion.com/aspnet/captcha/getting-started).
+You can create a Web Project and add necessary assembly and script with the given [ASP-Getting Started Documentation](http://help.syncfusion.com/aspnet/captcha/getting-started).
 
 
 
@@ -79,7 +79,7 @@ Add the following handler codes to the web.config file for the Captcha rendering
 {% endhighlight %}
 
 
-N> Version= {{ site.45esreleaseversion }}  - It will vary depend up on .NET Framework version and Essential studio version you are using. If you are using Essential studio version as- {{ site.releaseversion }} and .NET Framework is 4.5 use like following Version= {{ site.45esreleaseversion }}
+N> Version= {{ site.45esreleaseversion }}  - It will vary depend up on .NET Framework version and Essential Studio version you are using. If you are using Essential Studio version as- {{ site.releaseversion }} and .NET Framework is 4.5 use like following Version= {{ site.45esreleaseversion }}
 
 
 
@@ -110,7 +110,7 @@ Add the following code example to ASPX to render captcha with Audio and Refres
 
 Add the following code example to the corresponding CS page to render Captcha with Audio and Refresh.
 
-This method is used to handle Ajax post when refresh and validation actions are performed. When these actions are performed, the following values are received from client-side by Ajax post and the values are forwarded to source to perform the corresponding action. The following values are required to perform validation and refresh action.
+This method is used to handle AJAX post when refresh and validation actions are performed. When these actions are performed, the following values are received from client-side by AJAX post and the values are forwarded to source to perform the corresponding action. The following values are required to perform validation and refresh action.
 
 {% highlight c# %}
 

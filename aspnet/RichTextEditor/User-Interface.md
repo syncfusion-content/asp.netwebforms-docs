@@ -410,7 +410,7 @@ This option allows you to specify which footer elements should be shown at the b
 4. Clear Format
 5. Resizer
 
-When the footer is enabled, it displays the html tag, word Count, character count, clear format, resize icon and clear all the content icons, by default.
+When the footer is enabled, it displays the HTML tag, word Count, character count, clear format, resize icon and clear all the content icons, by default.
 
 {% highlight html %}
 

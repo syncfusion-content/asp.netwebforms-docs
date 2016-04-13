@@ -50,7 +50,7 @@ It specifies the text content of the tag</td></tr>
 <td>
 DataImageUrlField</td><td>
 string</td><td>
-This property defines the imageURL for the image location. While setting images, the folder name in which the images are stored is set to the ImageUrl property.</td></tr>
+This property defines the imageURL for the image location. While setting images, the folder name in which the images are stored is set to the ImageURL property.</td></tr>
 <tr>
 <td>
 DataImageAttributeField</td><td>
@@ -80,7 +80,7 @@ This property is used to group the Toolbar items.</td></tr>
 <td>
 DataMember</td><td>
 string</td><td>
-This property is used to assign the tag name in which the Toolbar items can be defined in xml.</td></tr>
+This property is used to assign the tag name in which the Toolbar items can be defined in XML.</td></tr>
 </table>
 
 
@@ -88,7 +88,7 @@ This property is used to assign the tag name in which the Toolbar items can be d
 
 Toolbar provides extensive data binding support to generate Toolbar items so that the values can be mapped to the ToolBar fields, namely key and text.
 
-The support to add image, image styles, sprite css class, query and html attributes options with data binding fields are also provided. 
+The support to add image, image styles, sprite CSS class, query and HTML attributes options with data binding fields are also provided. 
 
 The following code example explains the details about the data binding with the Toolbar.
 
@@ -305,13 +305,13 @@ The following screenshot displays the output of the above code.
 
 
 
-## Sql Data
+## SQL Data
 
-Sql DataSource is designed to work with SQL Server databases. It uses the SQL Server .NET data provider internally. SQL Server .NET data provider classes are defined in the System.Data.SqlClient namespace. To bind the Sql DataSource to ToolBar, DataSourceID should be the id of sql datasource. You can select the table from the select command. Create a table with given fields in Sql and refer that in the connection string to run the given sample.Refer to the following screenshot for the fields and its corresponding data types.
+SQL DataSource is designed to work with SQL Server databases. It uses the SQL Server .NET data provider internally. SQL Server .NET data provider classes are defined in the System.Data.SqlClient namespace. To bind the Sql DataSource to ToolBar, DataSourceID should be the id of sql datasource. You can select the table from the select command. Create a table with given fields in SQL and refer that in the connection string to run the given sample.Refer to the following screenshot for the fields and its corresponding data types.
 
 ![C:/Users/jeganprakash/Desktop/IMG_22092014_162354.png](Data-binding_images/Data-binding_img3.png) 
 
-Refer to the following code example to bind Sql data in the Toolbar.
+Refer to the following code example to bind SQL data in the Toolbar.
 
 Add the following code example to the corresponding ASPX page to render the Toolbar Control
 
@@ -449,7 +449,7 @@ The following screenshot displays the output of the above code.
 
 
 
-## Xml Data
+## XML Data
 
 XmlDataSource is used to work with XML documents. To bind the XmlDataSource to ToolBar, DataSourceID of the toolbar should be the id of XmlDataSource. Refer to the following code example.
 

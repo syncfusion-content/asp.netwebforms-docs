@@ -9,11 +9,11 @@ documentation: ug
 
 # Integration
 
-## Angular Binding
+## AngularJS Binding
 
-For Angular Binding, you can include angular.min.js, ej.unobtrusive.min.js, and ej.widget.angular.min.js files.
+For AngularJS Binding, you can include angular.min.js, ej.unobtrusive.min.js, and ej.widget.angular.min.js files.
 
-Rating control is availed with two types of angular JS supports namely,
+Rating control is availed with two types of AngularJS supports namely,
 
 * One-way binding
 * Two-way binding
@@ -62,7 +62,7 @@ Add the following code example to the corresponding ASPX page to render the Rat
 </div>
 {% endhighlight %}
 
-Include the following Script to achieve the angular binding.
+Include the following Script to achieve the AngularJS binding.
 
 {% highlight js %}
 angular.module('syncApp', ['ejangular'])
@@ -81,11 +81,11 @@ The following screenshot displays the output of the above code example.
 
 ## KnockoutJS Binding
 
-Knockout support allows you to bind the HTML elements with any of the available data models.
+KnockoutJS support allows you to bind the HTML elements with any of the available data models.
 
-For Knockout Binding, you can include the files knockout-min.js and ej.widget.ko.min.
+For KnockoutJS Binding, you can include the files knockout-min.js and ej.widget.ko.min.
 
-Knockout Binding is of two types:
+KnockoutJS Binding is of two types:
 
 * One-way binding
 * Two-way binding

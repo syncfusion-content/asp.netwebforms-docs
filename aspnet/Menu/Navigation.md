@@ -9,7 +9,7 @@ documentation: ug
 
 # Navigation
 
-Navigation in Menu control is the default usage to navigate into the other web page. You can navigate to another page in the menu item by giving link to the menu items. Navigation in Menu control can be achieved by placing “href” path to the Url property in Menu items. Use following code example for navigating in Menu control.
+Navigation in Menu control is the default usage to navigate into the other web page. You can navigate to another page in the menu item by giving link to the menu items. Navigation in Menu control can be achieved by placing “href” path to the URL property in Menu items. Use following code example for navigating in Menu control.
 
 Add the following code example in your ASPX page.
 

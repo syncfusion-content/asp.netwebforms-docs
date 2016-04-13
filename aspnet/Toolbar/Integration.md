@@ -18,19 +18,19 @@ The Toolbar is availed with two types of AngularJS support namely,
 
 One way binding refers to the process of applying scope values to all the available properties of the Toolbar, but the changes made in the Toolbar widget does not reflect or get triggered in turn to the scope collection. This kind of binding applies to all the properties of the Toolbar.
 
-Two-way binding supports both the processes – it applies the scope values to the Toolbar properties as well as the changes made in the Toolbar widget is also reflected back and triggered within the angular scope change function.
+Two-way binding supports both the processes – it applies the scope values to the Toolbar properties as well as the changes made in the Toolbar widget is also reflected back and triggered within the AngularJS scope change function.
 
 To know more detail about the Angular binding, refer to the following link location,
 
 <http://help.syncfusion.com/js/angularjs>
 
-N> Add the following script files as given in the following example to access the angular binding. They provide JS library for angular binding.
+N> Add the following script files as given in the following example to access the AngularJS binding. They provide JS library for AngularJS binding.
 N>
 N> _angular-min.js_
 N>
 N> _ej.widget.angular.min.js_
 
-The following code example explains the way to bind the data to the Toolbar widget through angular support.
+The following code example explains the way to bind the data to the Toolbar widget through AngularJS support.
 
 Add the following code example into the corresponding ASPX page to render the ToolBar Control
 
@@ -277,11 +277,11 @@ The following screenshot displays the output of the above code.
 
 
 
-### KnockoutJs
+### KnockoutJS
 
-Knockout support allows you to bind the html elements against any of the available data models.
+KnockoutJS support allows you to bind the HTML elements against any of the available data models.
 
-Two types of knockout binding is supported,
+Two types of KnockoutJS binding is supported,
 
 * One-way binding
 * Two-way binding
@@ -290,11 +290,11 @@ One way binding refers to the process of applying observable values to all the a
 
 Two-way binding supports both the processes – it applies the observable values to the Toolbar properties as well as the changes made in the Toolbar widget is also reflected back and triggered within the observable collections. 
 
-For more information about the knockout binding, refer to the following online documentation in the following link location,
+For more information about the KnockoutJS binding, refer to the following online documentation in the following link location,
 
 <http://help.syncfusion.com/js/knockoutjs>
 
-N> Add the following script files along with the given code to access the knockout binding. They provide JS library for knockout binding.
+N> Add the following script files along with the given code to access the KnockoutJS binding. They provide JS library for KnockoutJS binding.
 N>
 N> _knockout-min.js_
 N>
@@ -306,7 +306,7 @@ The link for those script files are as follows:
 
 [http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js)
 
-The following code example explains how to bind data to the Toolbar through the knockout support. 
+The following code example explains how to bind data to the Toolbar through the KnockoutJS support. 
 
 Add the following code example into the corresponding ASPX page to render the Toolbar control
 

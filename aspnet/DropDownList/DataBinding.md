@@ -241,7 +241,7 @@ The following properties provides you a way to bind either local or remote data 
             <br/>
         </td>
         <td>
-            It maps the field name that has the html attributes such as ID, class, styles for the item.
+            It maps the field name that has the HTML attributes such as ID, class, styles for the item.
             <br/>
         </td>
     </tr>
@@ -590,7 +590,7 @@ In the ASPX page, add DropDownList.
 
 {% endhighlight %}
 
-Create new xml file in App_Data folder as ‘XMLData.xml’ and add the following codes in the page. 
+Create new XML file in App_Data folder as ‘XMLData.xml’ and add the following codes in the page. 
 
 {% highlight xml %}
 
@@ -653,7 +653,7 @@ OData is a standardized protocol for creating and consuming data. You can provi
            
 ## Virtual Scrolling 
 
-To improve the performance when displaying large data set, you can use “AllowVirtualScrolling” and VirtualScrollMode property. This retrieves only a fixed amount of list items and loads remaining data on scrolling. The items will be fetched via Ajax request.
+To improve the performance when displaying large data set, you can use “AllowVirtualScrolling” and VirtualScrollMode property. This retrieves only a fixed amount of list items and loads remaining data on scrolling. The items will be fetched via AJAX request.
 
 This supports two modes of virtualization. They are,
 
