@@ -9,9 +9,9 @@ documentation: ug
 
 # MVVM
 
-## Angular JS
+## AngularJS
 
-Digital Gauge contains angular support. It is possible to add object as well as array object in the Digital Gauge. The two way binding support is given to the value for displaying the text. 
+Digital Gauge contains AngularJS support. It is possible to add object as well as array object in the Digital Gauge. The two way binding support is given to the value for displaying the text. 
 
 
 
@@ -61,7 +61,7 @@ Execute the above code to render the following output.
 
 ![](MVVM_images/MVVM_img1.png)
 
-Default Digital Gauge in Angular JS
+Default Digital Gauge in AngularJS
 {:.caption} 
 
 ### Adding the Digital Gauge Items
@@ -106,7 +106,7 @@ Finally while running the above codes, the following output will be rendered.
 
 ![](MVVM_images/MVVM_img2.png) 
 
-Digital Gauge Rendered in Angular JS
+Digital Gauge Rendered in AngularJS
 {:.caption} 
 
 
@@ -175,14 +175,14 @@ Execute the above code to render the following output.
 
 ![](MVVM_images/MVVM_img3.png)
 
-Digital Gauge with two way binding in Angular JS
+Digital Gauge with two way binding in AngularJS
 {:.caption} 
 
-### Knockout Binding
+### KnockoutJS Binding
 
 
 
-* Knockout support allows you to bind the html elements against any of the available data models.Two types of knockout binding is supported as of angular,
+* KnockoutJS support allows you to bind the HTML elements against any of the available data models.Two types of KnockoutJS binding is supported as of AngularJS,
   
   1. one-way binding
   
@@ -196,8 +196,7 @@ Digital Gauge with two way binding in Angular JS
 
 
 
-  ~~~ html
-
+{% highlight html %}
         <%--For Linear Gauge rendering-- %>
 
         <asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
@@ -228,7 +227,7 @@ Digital Gauge with two way binding in Angular JS
 
         </script>
 
-  ~~~
+{% endhighlight %}
 
 Execute the above code to render the following output.
 

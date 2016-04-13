@@ -102,7 +102,7 @@ Execute the above code to render the following output.
 
 ### Unit text and Position
 
-* unitText is used to add some text along with the labels. For example, in speedometer, you need to mention the units in kmph. You can also add the unit text in front of the labels. You can achieve this by using an enumerable property unitTextPosition. With this you can position the unit text in front or back.
+* unitText is used to add some text along with the labels. For example, in speedometer, you need to mention the units in kph. You can also add the unit text in front of the labels. You can achieve this by using an enumerable property unitTextPosition. With this you can position the unit text in front or back.
 * Labels can be positioned with the help of two properties such as distanceFromScale and placement. distanceFromScale property defines the distance between the scale and labels.  Placement property is used to locate the labels with respect to scale either inside the scale or outside the scale or along the scale. It is an enumerable data type.
 
 

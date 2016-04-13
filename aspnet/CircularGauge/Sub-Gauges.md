@@ -9,7 +9,7 @@ documentation: ug
 
 # Sub Gauges
 
-A Circular Gauge containing another circular gauge is said to be Sub Gauges. Inorder to make  a sample like watch that has second gauge, minute gauge and hour gauge, sub gauges are used.
+A Circular Gauge containing another circular gauge is said to be Sub Gauges. In order to make  a sample like watch that has second gauge, minute gauge and hour gauge, sub gauges are used.
 
 ## Adding Sub Gauges
 

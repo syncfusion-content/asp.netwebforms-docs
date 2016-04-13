@@ -88,7 +88,7 @@ You can create a new ASP.NET RangeNavigator using Syncfusion ASP.NET website tem
     
    ![](Getting-Started_images/Getting-Started_img4.png)
 
-12.Syncfusion EJ and EJ.Web dll added in website property page
+12.Syncfusion EJ and EJ.Web assembly added in website property page
 
    ![](Getting-Started_images/Getting-Started_img5.png)
 
