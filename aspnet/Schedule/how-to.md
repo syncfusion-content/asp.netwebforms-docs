@@ -14,7 +14,7 @@ The client-side validation of the fields present within the custom appointment w
 
 Refer the steps [here](/aspnet/schedule/customization#appointment-window-customization) and create a sample for Custom Appointment window, before proceeding with the following validations.
 
-In the custom appointment window sample, create an additional css class **validation** as mentioned below to add it to the appropriate fields, if the validation of such fields fails.
+In the custom appointment window sample, create an additional CSS class **validation** as mentioned below to add it to the appropriate fields, if the validation of such fields fails.
 
 {% highlight html %}
 
@@ -66,7 +66,7 @@ Now, after adding the above validations – whenever the fields within the custo
 
 ## Highlight Different Work Hours for Each Resources
 
-By default, the work hours of the Scheduler is highlighted based on the start and end values provided within the `WorkHours` object. It remains same for all the resources, when the Scheduler is rendered with multiple resources. To customize this behavior so as to highlight different workhours range for each of the resources, the following workaround can be utilized by making use of the Scheduler events **Create** and `ActionComplete`.
+By default, the work hours of the Scheduler is highlighted based on the start and end values provided within the `WorkHours` object. It remains same for all the resources, when the Scheduler is rendered with multiple resources. To customize this behavior so as to highlight different work hours range for each of the resources, the following workaround can be utilized by making use of the Scheduler events `Create` and `ActionComplete`.
 
 Initially, set the **Highlight** as false for the **WorkHours**, so as to disable the highlighting of default work hour range.
 
@@ -301,7 +301,7 @@ The following code example depicts the way to achieve the customization of defau
 
 {% endhighlight %}
 
-## SignalR 
+## SignalR
 
 To implement SignalR concept in Scheduler, add and refer the appropriate SignalR scripts in your project and then create a hub for initiating the action. The SignalR implementation can be achieved with the following code example.
 

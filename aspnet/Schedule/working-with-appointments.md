@@ -751,7 +751,7 @@ It holds the binding name for <b>Color</b> field in the categorize dataSource.<b
 <tr>
 <td>
 FontColor<br/><br/></td><td>
-It holds the binding name for <b>Fontcolor</b> field in the categorize dataSource. This font color apply in the appointment.<br/><br/></td></tr>
+It holds the binding name for <b>FontColor</b> field in the categorize dataSource. This font color gets applied for the appointment.<br/><br/></td></tr>
 </table>
 
 {% highlight html %}
@@ -895,7 +895,7 @@ namespace WebSampleBrowser.Schedule
 
 ### Appointment Search
 
-The public method `searchAppointments` is used to search the appointments in the scheduler dataSource. It contains below four arguments such as search string, search field, filter operator and ignorecase.
+The client-side public method `searchAppointments` is used to search the appointments in the scheduler dataSource. It contains the below four arguments such as search string, search field, filter operator and ignore case.
 
 **searchString** - It is used to search the given word / sentence with in the appointments data.
 
