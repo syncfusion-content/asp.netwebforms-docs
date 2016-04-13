@@ -556,5 +556,272 @@ The following output is displayed as a result of the above code example.
 
 ![](Row_images/Row_img4.png)
 
+## Drag-and-Drop
+
+Grid rows can be reordered, dropped to another Grid or custom control by enabling `AllowRowDragAndDrop` Grid property.
+
+N> To enable selection of multiple rows by mouse dragging on Grid rows, `SelectionType` property of Grid must be set to “multiple”.
+
+### Reorder
+
+By simply enabling the property `AllowRowDragAndDrop`, Grid rows can be reordered within the same Grid.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+{% highlight html %}
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowRowDragAndDrop="true" Selectiontype="Multiple">
+            <RowDropSettings DropMapper="DragAndDrop.aspx/Reordering"/>
+            <Columns>
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" />
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="110" />
+            </Columns>
+</ej:Grid>
+{% endhighlight  %}
+{% highlight c# %}
+public partial class RowTemplate : System.Web.UI.Page
+{
+           
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            var data = OrderRepository.GetAllRecords();                          
+            this.OrdersGrid.DataManager = new DataSource() { Json = data, Adaptor = "remoteSaveAdaptor" };
+        }
+
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public static object Reordering(List<Orders> changed)
+        {
+            JavaScriptSerializer ser = new JavaScriptSerializer();
+            HttpContext context = HttpContext.Current;
+            RowDropModel dropDetails = (RowDropModel)ser.Deserialize(context.Request.Headers["rowDropDetails"], typeof(RowDropModel));
+            var count = 0;
+            foreach (var item in added)
+                {
+                EditableOrder result = OrderRepository.GetAllRecords().Where(o => o.OrderID == item.OrderID).FirstOrDefault();
+                OrderRepository.GetAllRecords().Remove(result);
+                OrderRepository.GetAllRecords().Insert(dropDetails.DestinationRowIndex + count, item);
+                count++;
+
+            }
+            return changes;
+        }
+
+    }
+}
+{% endhighlight  %}
+{% endtabs %} 
+
+The following output is displayed before reordering rows. 
+
+![](Row_images/Row_img5.png)
+
+The following output is displayed after reordering rows.
+
+![](Row_images/Row_img6.png)
+
+### Grid-to-Grid
+
+To drag and drop rows between two Grid, enable the Grid property `AllowRowDragAndDrop` and specify the target Grid ID in `DropTargetID` property of Grid `RowDropSettings`.
+
+Dragged and Dropped rows can be mapped to server-side using `RowDragMapper` and `RowDropMapper` property of Grid `RowDropSettings`.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+{% highlight html %}
+<div style="float:left;width:49%">
+        <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowRowDragAndDrop="true" Selectiontype="Multiple">
+            <RowDropSettings DragMapper="DragAndDrop.aspx/RowDragHandler1" DropMapper="DragAndDrop.aspx/RowDropHandler1"/>
+            <EditSettings AllowEditing="true"/>
+            <Columns>
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" />
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="110" />
+            </Columns>
+        </ej:Grid>
+            </div>
+        <div style="float:right;width:49%">
+            <ej:Grid ID="DestGrid" runat="server" AllowPaging="True" AllowRowDragAndDrop="true" Selectiontype="Multiple">
+                <RowDropSettings DragMapper="DragAndDrop.aspx/RowDragHandler2" DropMapper="DragAndDrop.aspx/RowDropHandler2"/>
+            <Columns>
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" />
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="110" />
+            </Columns>
+                </ej:Grid>
+</div>
+
+{% endhighlight  %}
+{% highlight c# %}
+public partial class RowTemplate : System.Web.UI.Page
+{
+        JavaScriptSerializer ser = new JavaScriptSerializer();
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            var data = OrderRepository.GetAllRecords();
+            var data2 = OrderRepository.GetAllRecords2();
+                          
+            this.OrdersGrid.DataManager = new DataSource() { Json = data, Adaptor = "remoteSaveAdaptor" };
+            this.DestGrid.DataManager = new DataSource() { Json = data2, Adaptor = "remoteSaveAdaptor" };
+
+        }
+
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public static object RowDragHandler1(List<Orders> deleted)
+        {
+            OrderRepository.Delete(deleted);
+            return deleted;
+        }
+        
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public static object RowDragHandler2(List<Orders> deleted)
+        {
+            OrderRepository.Delete2(deleted);
+            return deleted;
+        }
+
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public static object RowDropHandler1(List<Orders> added)
+        {
+            RowDropModel dropDetails = (RowDropModel)ser.Deserialize(Request.Headers["rowDropDetails"], typeof(RowDropModel));
+            var count = 0;
+            var data = OrderRepository.GetAllRecords();
+            if (added != null)
+            {
+                foreach (var item in added)
+                {
+                    data.Insert(dropDetails.DestinationRowIndex + count, item);
+                    count++;
+                }
+            }
+            return added;
+        }
+      
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public static object RowDropHandler2(List<Orders> added)
+        {
+            RowDropModel dropDetails = (RowDropModel)ser.Deserialize(Request.Headers["rowDropDetails"], typeof(RowDropModel));
+            var count = 0;
+            var data = OrderRepository.GetAllRecords2();
+            if (added != null)
+            {
+                foreach (var item in added)
+                {
+                    data.Insert(dropDetails.DestinationRowIndex + count, item);
+                    count++;
+                }
+            }
+            return added;
+        }
 
 
+    }
+}
+
+{% endhighlight  %}
+{% endtabs %} 
+
+{% endhighlight %}
+
+The following output is displayed before dropping Grid rows.
+
+![](Row_images/Row_img7.png)
+
+The following output is displayed after dropping Grid rows.
+
+![](Row_images/Row_img8.png)
+
+### Grid-to-Custom control
+
+You can also drag and drop grid rows to any custom control. For instance, let it be a form.
+
+Enable the Grid property `AllowRowDragAndDrop` and specify the target form element ID in `DropTargetID` property of Grid `RowDropSettings`.
+
+On dropping the Grid records on Form element, Grid event “RowDrop” would be triggered by which we can populate input elements in Form.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+{% highlight  html %}
+<div style="float:left;width:49%">
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowRowDragAndDrop="true" Selectiontype="Multiple">
+            <ClientSideEvents RowDrop="rowDropHandler"/>
+            <Columns>
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" />
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="110" />
+            </Columns>
+        </ej:Grid>    </div>
+
+<div style="float:right;width:38%">
+    <form role="form" id="dropForm" style="width:98%">
+        <fieldset style="text-align:center; font-weight:700"><legend>Record Details</legend></fieldset>
+        <div class="form-group row">
+            <label for="OrderID">Order ID:</label>
+            <input class="form-control" name="OrderID">
+        </div>
+        <div class="form-group row">
+            <label for="CustomerID">Customer ID:</label>
+            <input name="CustomerID" class="form-control">
+        </div>
+        <div class="form-group row">
+            <label for="EmployeeID">Employee ID:</label>
+            <input name="EmployeeID" class="form-control">
+        </div>
+        <div class="form-group row">
+            <label for="Freight">Freight:</label>
+            <input name="Freight" class="form-control">
+        </div>
+        <div class="form-group row">
+            <label for="ShipCity">Ship City:</label>
+            <input name="ShipCity" class="form-control">
+        </div>
+        <br />
+    </form>
+</div>
+
+
+{% endhighlight  %}
+{% highlight c# %}
+public partial class RowTemplate : System.Web.UI.Page
+{
+           
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            this.OrdersGrid.DataSource = OrderRepository.GetAllRecords();
+        }
+}
+{% endhighlight  %}
+{% highlight js %}
+<script type="text/javascript">
+    function rowDropHandler(args) {
+        for (var key in args.data[0]) {
+            $('#dropForm input[name=' + key + ']').val(args.data[0][key]);
+        }
+    }
+</script>
+
+{% endhighlight  %}
+{% endtabs %} 
+
+The following output is displayed before dropping the rows on Form.
+
+![](Row_images/Row_img9.png)
+
+The following output is displayed after dropping the rows on Form.
+
+![](Row_images/Row_img10.png)
