@@ -14,7 +14,7 @@ The editor allows you to manage the images and files using **FileExplorer**. The
 
 ## Insert a Image from Online Source
 
-If you want to insert an image from online source like google, ping, etc., you need to enable images tool on the editor’s toolbar. By default, the images tool is open a simple dialog which allows you to inserting an image from online source.
+If you want to insert an image from online source like Google, ping, etc., you need to enable images tool on the editor’s toolbar. By default, the images tool is open a simple dialog which allows you to inserting an image from online source.
 
 {% highlight html %}
 	

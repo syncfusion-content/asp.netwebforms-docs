@@ -9,7 +9,7 @@ documentation: ug
 ---
 # Getting Started
 
-This section explains the step-by-step instructions to create RichTextEdtior in an ASP.NET web application.
+This section explains the step-by-step instructions to create RichTextEditor in an ASP.NET web application.
 
 ## Create your First RichTextEditor in ASP.NET
 

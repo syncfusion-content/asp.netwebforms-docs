@@ -9,9 +9,9 @@ documentation: ug
 
 # Integration 
 
-## Angular binding
+## AngularJS binding
 
-AngularJS is an open-source web application framework. AngularJS extends HTML with new attributes. AngularJS is a JavaScript framework. You can add it to an ASPX page with a <script> tag. AngularJS extends HTML attributes with Directives, and binds data to HTML with Expressions. The support is achieved by an integration JS library file. You can know more about the Angular support in the following link location.
+AngularJS is an open-source web application Framework. AngularJS extends HTML with new attributes. AngularJS is a JavaScript framework. You can add it to an ASPX page with a <script> tag. AngularJS extends HTML attributes with Directives, and binds data to HTML with Expressions. The support is achieved by an integration JS library file. You can know more about the AngularJS support in the following link location.
 
 <http://help.syncfusion.com/js/angularjs>
 
@@ -51,7 +51,7 @@ Add the following code example in your ASPX page.
 
 
 
-Add the following code example to configure Angular JS for the menu control
+Add the following code example to configure AngularJS for the menu control
 
 {% highlight js %}
 
@@ -293,9 +293,9 @@ The following screenshot displays the output of the above code example.    �
 
 
 
-## Knockout binding
+## KnockoutJS binding
 
-KnockoutJS is a MVVM library that allows the separation of concerns. Essential ASP.NET WebForm provides full support for KnockoutJS. The Knockout support is achieved by an integration JS library file. Add the following code example for knockout binding Menu rendering.
+KnockoutJS is a MVVM library that allows the separation of concerns. Essential ASP.NET Web Form provides full support for KnockoutJS. The KnockoutJS support is achieved by an integration JS library file. Add the following code example for knockout binding Menu rendering.
 
 When you use KO with your applications, you can get the following benefits. 
 

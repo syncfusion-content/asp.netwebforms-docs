@@ -59,7 +59,7 @@ Specifies the image attribute to “img” tag inside items list </td></tr>
 <tr>
 <td>
 DataHtmlAttributeField</td><td>
-Specifies the html attributes to “li” item list</td></tr>
+Specifies the HTML attributes to “li” item list</td></tr>
 <tr>
 <td>
 DataImageUrlField</td><td>
@@ -119,7 +119,7 @@ The following screenshot displays the output of the above code example.
 
 SqlDataSource is designed to work with SQL Server databases. It uses the SQL Server .NET data provider internally. SQL Server .NET data provider classes are defined in the System.Data.SqlClient namespace. To bind the SqlDataSource to Menu, DataSourceID should be the id of SqlDataSource. You can select the table from SelectCommand. 
 
-Add the following code example in your ASPX page to SQL Databinding.
+Add the following code example in your ASPX page to SQL Data binding.
 
 {% highlight html %}
 
@@ -443,17 +443,17 @@ Load the menu items in the xml data as illustrated in the following code example
 
 
 
-The following screenshot displays the output for the XML Databinding.                                                                                                       
+The following screenshot displays the output for the XML Data binding.                                                                                                       
 
 ![](Data-binding_images/Data-binding_img4.png) 
 
 
 
-### Linq-to-SQL Data binding
+### LINQ-to-SQL Data binding
 
-The linq data source is used to bind Menu data via Linq to Sql. The property ContextTypeName indicates the location of the data source. You have to mention exact table name of your data base in TableName property. The id of LinqDataSource must be provided to DataSourceID of Menu. Define a Linq-to-SQL data source in the web page and configure the data source as per your requirement by using the database.
+The LINQ data source is used to bind Menu data via LINQ to SQL. The property ContextTypeName indicates the location of the data source. You have to mention exact table name of your database in TableName property. The id of LinqDataSource must be provided to DataSourceID of Menu. Define a LINQ-to-SQL data source in the web page and configure the data source as per your requirement by using the database.
 
-In the Design page, assign values for DataTextField, DataIdField, DataParentIdField. In DataSourceID field assign the ID of the existing Linq-to-SQL data source
+In the Design page, assign values for DataTextField, DataIdField, DataParentIdField. In DataSourceID field assign the ID of the existing LINQ-to-SQL data source
 
 
 

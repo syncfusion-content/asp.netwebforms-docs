@@ -113,7 +113,7 @@ The following screenshot displays the output.
 
 ## Show or Hide File details 
 
-You have an option to show or hide filedetails in the uploaded file list dialog. By using this property, the uploaded file dialog does not display the file details once selected. To enable this, set the ShowFileDetails to false. By default, its value is set to true. The data type is Boolean.
+You have an option to show or hide file details in the uploaded file list dialog. By using this property, the uploaded file dialog does not display the file details once selected. To enable this, set the ShowFileDetails to false. By default, its value is set to true. The data type is Boolean.
 
 The following steps explains the configuration of the ShowFileDetails property in the UploadBox.
 
@@ -133,7 +133,7 @@ The following screenshot displays the output.
 
 ## Customize the file details 
 
-You have an option to customize the default filedetails in the uploaded file list dialog. By using this, you can configure the CustomFileDetails to modify the file upload dialog.
+You have an option to customize the default file details in the uploaded file list dialog. By using this, you can configure the CustomFileDetails to modify the file upload dialog.
 
 The following steps explains the configuration of the CustomFileDetails in the UploadBox.
 

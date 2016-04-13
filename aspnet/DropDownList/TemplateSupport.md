@@ -17,7 +17,7 @@ You can create the popup header by using HeaderTemplate property. You can add an
 
 ## Template Field
 
-Create a set of div containers with common syntax or elements and assign it to the Template property. You can add any Html mark-up element inside the DropDownList list using this property.
+Create a set of div containers with common syntax or elements and assign it to the Template property. You can add any HTML mark-up element inside the DropDownList list using this property.
 
 In the demo, a List data is created with Text, Image, Role and Country which is initialized with DataSource property. Content template is created by using the corresponding fields and assigned in template property. The content template is customized with images and custom CSS styles to visualize the items in popup.
 

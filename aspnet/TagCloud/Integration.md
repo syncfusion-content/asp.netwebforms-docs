@@ -9,24 +9,24 @@ documentation: ug
 
 # Integration 
 
-## Angular binding
+## AngularJS binding
 
-TagCloud control is availed with two types of Angular JS support namely, 
+TagCloud control is availed with two types of AngularJS support namely, 
 
 * One-way binding
 * Two-way binding 
 
 One-way binding refers to the process of applying scope values to all the available properties of the TagCloud control, but the changes made in the TagCloud control are not reflected or triggered in turn in the scope collection. This kind of binding applies to all the properties of the TagCloud control.
 
-Two-way binding supports both the processes. It applies the scope values to the TagCloud properties and the changes made in the TagCloud control are also reflected and triggered within the angular scope change function.
+Two-way binding supports both the processes. It applies the scope values to the TagCloud properties and the changes made in the TagCloud control are also reflected and triggered within the AngularJS scope change function.
 
 Apply the plugin and property assigning to the TagCloud control element through the directive that starts with a letter “e-“.
 
-To know more detail about the Angular binding, refer to the following link location,
+To know more detail about the AngularJS binding, refer to the following link location,
 
 <http://help.syncfusion.com/js/angularjs>
 
-The following example shows the way to bind data to the TagCloud control by using Angular support.
+The following example shows the way to bind data to the TagCloud control by using AngularJS support.
 
 {% highlight html %}
 
@@ -124,15 +124,15 @@ The following example shows the way to bind data to the TagCloud control by usin
 
 
 
-The following screenshot illustrates the TagCloud control with Angular data binding.
+The following screenshot illustrates the TagCloud control with AngularJS data binding.
 
 ![](Integration_images/Integration_img1.png) 
 
 
 
-## Knockout binding
+## KnockoutJS binding
 
-Two types of knockout binding are supported by TagCloud,
+Two types of KnockoutJS binding are supported by TagCloud,
 
 * One-way binding
 * Two-way binding
@@ -141,11 +141,11 @@ One-way binding refers to the process of applying observable values to all the a
 
 Two-way binding supports both the processes. It applies the observable values to the TagCloud control properties and the changes made in the TagCloud control are also reflected back and triggered within the observable collections. 
 
-For more information about the knockout binding, refer to the following link location,
+For more information about the KnockoutJS binding, refer to the following link location,
 
 <http://help.syncfusion.com/js/knockoutjs>
 
-The following code example shows the way to bind data to the TagCloud control by using knockout support.
+The following code example shows the way to bind data to the TagCloud control by using KnockoutJS support.
 
 {% highlight html %}
 

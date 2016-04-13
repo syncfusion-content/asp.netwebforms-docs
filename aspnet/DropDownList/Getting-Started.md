@@ -11,7 +11,7 @@ documentation: ug
 
 ## Creating your first DropDownList in ASP Web Forms
 
-1. Create an ASP.Net Web Forms application and add DropDownList control to the Default.aspx page.
+1. Create an ASP.NET Web Forms application and add DropDownList control to the Default.aspx page.
 
     ![](Getteing-Started_images/Getteing-Started_img3.jpeg)
 
@@ -26,7 +26,7 @@ documentation: ug
             
     {% endhighlight %}
     
-    >Refer the [ASP.NET-Getting Started](http://help.syncfusion.com/aspnet/getting-started#manual-integration-of-syncfusion-aspnet-controls-into-the-newexisting-application) Documentation to know further details about necessary DLLs, Script and CSS files.
+    >Refer the [ASP.NET-Getting Started](http://help.syncfusion.com/aspnet/getting-started#manual-integration-of-syncfusion-aspnet-controls-into-the-newexisting-application) Documentation to know further details about necessary assemblies, Script and CSS files.
 
 3. Configure the DropDownList control using smart tag, to add DropDownList items
 

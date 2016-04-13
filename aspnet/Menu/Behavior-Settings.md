@@ -657,7 +657,7 @@ The following screenshot displays the output of the above code example.
 
 ## Show root level arrows
 
-Specifies the main menu items arrows only to be displayed when it contains child menu items. You can use “ShowRooltLevelArrows” property to show the arrows of main menu items only when it contains child menu items. This property accepts Boolean value. Its default value is true. 
+Specifies the main menu items arrows only to be displayed when it contains child menu items. You can use “ShowRootLevelArrows” property to show the arrows of main menu items only when it contains child menu items. This property accepts Boolean value. Its default value is true. 
 
 Add the following code example in the ASPX page.
 
@@ -665,7 +665,7 @@ Add the following code example in the ASPX page.
 
 
 
- <ej:Menu ID="MenuControl" Width="500" ShowRooltLevelArrows="false" runat="server">
+ <ej:Menu ID="MenuControl" Width="500" ShowRootLevelArrows="false" runat="server">
 
             <Items>
 

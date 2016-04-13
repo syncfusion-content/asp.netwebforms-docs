@@ -255,7 +255,7 @@ The below given example explains the behavior of grouping with List data binding
 
 N> Grouping has restrictions in the following scenarios,
 N> 1.  It is not supported on using HTML "select" element with predefined set of options
-N> 2.  When using UL-LI elements you need to use “e-category” class in li element to specify it as the grouping header. The following code will explain this behavior,
+N> 2.  When using UL-LI elements you need to use “e-category” class in 'li' element to specify it as the grouping header. The following code will explain this behavior,
 
 
 {% highlight html %}
@@ -597,10 +597,10 @@ I> When VirtualScrolling enabled with searching, then filter will be applied onl
 ## Validation
 
 DropDownList value can be validated in two ways,
-1. Using jQuery Validators
+1. Using jQuery Validator
 2. ASP Validators
 
-### jQuery Validators
+### jQuery Validator
  
 You can validate the DropDownList value on form submission using jQuery Validators, by applying “ValidationRules” and “ValidationMessage” to the DropDownList. 
 
