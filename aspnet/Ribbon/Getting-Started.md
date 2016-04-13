@@ -42,7 +42,7 @@ Define the Application Tab with `Type` as `Menu` to render simple Ribbon control
 
 N> _Set the required `Width` to Ribbon, else default parent container or window width will be considered_
 
-1. Create a Syncfusion ASP.NET Web form application.
+1. Create a Syncfusion ASP.NET Web Forms application.
 
 2. Drag and drop the Ribbon control in the Index.aspx page from the toolbox.
  
