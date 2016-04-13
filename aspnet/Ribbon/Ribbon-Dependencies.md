@@ -25,7 +25,7 @@ Must always be referred to before using all the ASP.NET controls.</td></tr>
 <tr>
 <td>
 ej.data.min.js</td><td>
-Used to handle data manger operation and should be used while binding data to ASP.NET controls.</td></tr>
+Used to handle data manager operation and should be used while binding data to ASP.NET controls.</td></tr>
 <tr>
 <td>
 ej.globalize.min.js</td><td>
