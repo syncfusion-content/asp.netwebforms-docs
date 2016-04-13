@@ -49,5 +49,5 @@ XDimension="8"></ej:Barcode>
 
 ## DataMatrix
 
-DataMatrixBarcodeis a two dimensional Barcodethat consistsof a grid of dark and light dots or blocks forming square or rectangular symbol. The data encoded in the Barcodecan either be numbers or alphanumeric. They are widely used in printed media such as labels and letters. You can read iteasily with the help of a Barcodereader and mobile phones.
+DataMatrix Barcode is a two dimensional Barcode that consists of a grid of dark and light dots or blocks forming square or rectangular symbol. The data encoded in the Barcode can either be numbers or alphanumeric. They are widely used in printed media such as labels and letters. You can read it easily with the help of a Barcode reader and mobile phones.
 

@@ -20,7 +20,7 @@ This section explains you briefly on how to create a Barcode in your application
 
 The ASP.NET Barcode provides you support to encode data and display it in your web page; it takes text and symbology as input and renders the encoded text as barcode.
 
-The following guideline explains you on how to create a QR barcode for a real time scenario of encoding a url. The following screenshot demonstrates a two dimensional barcode encoding the value “HTTP://WWW.SYNCFUSION.COM”.
+The following guideline explains you on how to create a QR barcode for a real time scenario of encoding a URL. The following screenshot demonstrates a two dimensional barcode encoding the value “HTTP://WWW.SYNCFUSION.COM”.
 
 
 
