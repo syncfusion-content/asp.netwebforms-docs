@@ -1017,9 +1017,11 @@ The following output is displayed as a result of the above code example.
 
 Lookup data source can be bound to `DataSource` property of `Columns`. Data `Field` and `Text` can be set using `ForeignKeyField` and `ForeignKeyValue` property of `Columns`.
 
+In the `DataSource` property, we can bound local and remote data. 
+
 I> For foreign key column the sorting and grouping is based on `ForeignKeyField` instead of `ForeignKeyValue`.
 
-I> `ForeignKeyField` and `Field` key name must be same.
+N> In remote data, datasource should be configured to perform select and filter operations since the Grid will try to fetch required columns using select operation and required data using filter operation.
 
 The following code example describes the above behavior.
 
@@ -1082,6 +1084,8 @@ namespace WebSampleBrowser.Grid
 
             var index = this.FlatGrid.Columns.FindIndex(col => col.Field == "EmployeeID");
             this.FlatGrid.Columns.ElementAt(index).DataSource = employee;
+                 //(or)
+            this.FlatGrid.Columns.ElementAt(index).DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/Employees/";
         }
 
         [Serializable]
