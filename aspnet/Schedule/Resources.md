@@ -62,7 +62,7 @@ Binds the Color field name in the dataSource to the resourceSettings <b>Color</b
 <tr>
 <td>
 AppointmentClass<br/><br/></td><td>
-Binds the AppointmentClass field name in the dataSource. It applies the custom css class name to the appointments based on the resources.<br/><br/><br/><br/></td></tr>
+Binds the AppointmentClass field name in the dataSource. It applies the custom CSS class name to the appointments based on the resources.<br/><br/><br/><br/></td></tr>
 </table>
 
 **Example**: To set the Resources options using all the above specified fields,
@@ -171,7 +171,7 @@ namespace WebSampleBrowser.Schedule
 
 ### Remote Data
 
-**Example**: To set the resource data through remote service url,
+**Example**: To set the resource data through remote service URL,
 
 {% highlight html %}
 

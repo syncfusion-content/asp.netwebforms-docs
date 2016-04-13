@@ -52,7 +52,7 @@ Binds the appointment description field name and also its related validation rul
 <tr>
 <td>
 AllDay<br/><br/></td><td>
-Binds the name of the allDay field. It accepts the <b>boolean</b> value and indicates whether the appointment is an allday appointment or not.<br/><br/></td></tr>
+Binds the name of the allDay field. It accepts the <b>boolean</b> value and indicates whether the appointment is an all-day appointment or not.<br/><br/></td></tr>
 <tr>
 <td>
 Categorize<br/><br/></td><td>
@@ -1241,7 +1241,7 @@ namespace WebSampleBrowser.Schedule
 
 ## XML Data Binding
 
-Scheduler also supports binding events data from the xml configured file through Xml DataSource which can be referred from the below code example.
+Scheduler supports binding events data from the XML configured file through XML DataSource which can be referred from the below code example.
 
 {% highlight html %}
 
@@ -1318,7 +1318,7 @@ Scheduler also supports binding events data from the xml configured file through
 
 ## Binding Data through LINQ to SQL
 
-Scheduler supports binding events data through linq-to-sql, which can be referred from the below code example.
+Scheduler supports binding events data through LINQ-to-SQL, which can be referred from the below code example.
 
 {% highlight html %}
 
@@ -1568,9 +1568,9 @@ The code to handle the CRUD operation of the appointments at code behind can be 
 
 {% endhighlight %}
 
-## Binding to Data with entity framework
+## Binding Data with Entity Framework
 
-To bind the Scheduler events data through entity framework, refer the below code example.
+To bind the Scheduler events data through Entity Framework, refer the below code example.
 
 {% highlight html %}
 
@@ -1580,7 +1580,7 @@ To bind the Scheduler events data through entity framework, refer the below code
 
 {% endhighlight %}
 
-Create a Data entity with necessary database tables and then create a object of its generated classes to access the tables and fields within it.
+Create a data entity with necessary database tables and then create a object of its generated classes to access the tables and fields within it.
 
 {% highlight c# %}
 

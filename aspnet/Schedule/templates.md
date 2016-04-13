@@ -63,9 +63,9 @@ Usually, the appointments are displayed with its **Subject** and **Start/End tim
 
 ## Cell Templates
 
-The template design that applies on the Scheduler elements such as allday cells, work cells and month cells which allows the customization to be done based on the date, view, resources and timescale. The cells can be customized to add images, colors, and other elements etc and can also access the current view of the Scheduler using the name **view**.
+The template design that applies on the Scheduler elements such as all-day cells, work cells and month cells which allows the customization to be done based on the date, view, resources and timescale. The cells can be customized to add images, colors, and other elements etc and can also access the current view of the Scheduler using the name **view**.
 
-**Allday cells** - An API named `AllDayCellsTemplateId` can be used to customize the allday cells, which accepts the id of the template design block preceded with a symbol **#**.
+**All-day cells** - An API named `AllDayCellsTemplateId` can be used to customize the all-day cells, which accepts the id of the template design block preceded with a symbol **#**.
 
 **Work cells and Month cells** - An API named `WorkCellsTemplateId` can be used to customize the work cells in all the views, which accepts the id of the template design block preceded by a symbol **#**. 
 
