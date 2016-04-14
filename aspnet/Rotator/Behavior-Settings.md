@@ -11,7 +11,7 @@ documentation: ug
 
 ## Enabling Rotator
 
-Enabled property enables or disables the Rotator control. The default value is true. The value set to this property is Boolean type. The Rotator items are given directly without data base. It is achieved by Items tag under the Rotator. The properties, Caption and URL can be used in the items. The tag RotatorItem is used to set the Rotator items under the tag name, Items.
+Enabled property enables or disables the Rotator control. The default value is true. The value set to this property is Boolean type. The Rotator items are given directly without database. It is achieved by Items tag under the Rotator. The properties, Caption and URL can be used in the items. The tag RotatorItem is used to set the Rotator items under the tag name, Items.
 
 In an ASPX page, add the following code example and set the Enabled property to true.
 

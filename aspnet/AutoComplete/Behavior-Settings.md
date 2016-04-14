@@ -209,7 +209,7 @@ AutoComplete textbox control provides ReadOnly property to disable editing in th
 
 The following steps help you disable editing in an AutoComplete textbox.
 
-In the design page, define the AutoComplete control and configure ReadOnlyproperty
+In the design page, define the AutoComplete control and configure ReadOnly property
 
 
 
@@ -235,7 +235,7 @@ The following screenshot is the output for the AutoComplete textbox configured t
 
 ## Empty Result settings
 
-TheAutoComplete control allows you to configure the display message when the list doesn’t return any values. By default, ShowEmptyResultTextis set to True and EmptyResultText is set to the string value “No suggestions_”._ 
+TheAutoComplete control allows you to configure the display message when the list doesn’t return any values. By default, ShowEmptyResultText is set to True and EmptyResultText is set to the string value “No suggestions_”._ 
 
 ### Configure Empty result setting
 

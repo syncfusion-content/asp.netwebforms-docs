@@ -11,7 +11,7 @@ documentation: ug
 
 We can dynamically populate data of a list box while selecting an item in another list box i.e. rendering child list box based on the item selection in parent list box. This can be achieved using “CascadeTo” property.
 
-In the design page, add two listboxes and in code behind create data sources and assign it. The parent child relationship should be defined in data sources of both the list boxes. I.e. both data sources should contain a common field for mapping (just like [primary key and foreign key definitions](https://msdn.microsoft.com/en-IN/library/ms179610.aspx)).
+In the design page, add two list boxes and in code behind create data sources and assign it. The parent child relationship should be defined in data sources of both the list boxes. I.e. both data sources should contain a common field for mapping (just like [primary key and foreign key definitions](https://msdn.microsoft.com/en-IN/library/ms179610.aspx)).
 
 The parent ListBox widget’s “CascadeTo” property should point to its child ListBox widget by specifying the id of the child ListBox widget. The child ListBox widget can be displayed with empty data on initialize by setting its “LoadDataOnInit” property as false.
 
@@ -86,7 +86,7 @@ N> In the above data source definition, the “CategoryId” column is act as a 
 
 Please refer the below code snippets which is expanded from the above example, to achieve multi-level (three level here) cascading of the ListBox widgets.
 
-In the design page, add four listboxes and create the data sources for the listboxes and assign it.
+In the design page, add four list boxes and create the data sources for the list boxes and assign it.
 
 In the code behind add the below codes.
 

@@ -85,7 +85,7 @@ In the design page, define the AutoComplete control with corresponding data fiel
 
 
 
-Define the Java Script to focus the AutoComplete Textbox on Alt + J key press.
+Define the JavaScript to focus the AutoComplete Textbox on Alt + J key press.
 
 
 
@@ -134,13 +134,13 @@ Arguments</th></tr>
 <tr>
 <td>
 OnValueSelect                     </td><td>
-Triggerd when the focus is moved from the text box.</td><td>
-e.Key- Defines the key for the items to differentiate two items with same.e.Text- Defines the tag value or display text..e.Value- Defines the default value to be displayed in the autocomplete textbox.e.EventType – Event Namee.Arguments – Contain keys and value of AutoComplete</td></tr>
+Triggered when the focus is moved from the text box.</td><td>
+e.Key- Defines the key for the items to differentiate two items with same. e.Text- Defines the tag value or display text. e.Value- Defines the default value to be displayed in the autocomplete textbox. e.EventType – Event Name e.Arguments – Contain keys and value of AutoComplete</td></tr>
 <tr>
 <td>
     OnFocusOut</td><td>
 Triggered when the value is selected</td><td>
-e.Key- Defines the key for the items to differentiate two items with same.e.EventType – Event Namee.Arguments – Contain keys and value of AutoCompletee.Value- Defines the default value to be displayed in the autocomplete textbox.</td></tr>
+e.Key- Defines the key for the items to differentiate two items with same. e.EventType – Event Name e.Arguments – Contain keys and value of AutoComplete e.Value- Defines the default value to be displayed in the autocomplete textbox.</td></tr>
 </table>
 
 

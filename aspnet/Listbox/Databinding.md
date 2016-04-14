@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding 
 
-The ListBox is populated with the node information taken from a data source. The ListBox supports binding data sources containing Object data, Remote data, XML Data, SQL Data and LinqToSql Data.
+The ListBox is populated with the node information taken from a data source. The ListBox supports binding data sources containing Object data, Remote data, XML Data, SQL Data and LINQ-to-SQL Data.
 
 ## Data fields and configuration
 
@@ -55,7 +55,7 @@ It specifies the name of the column value that binds the sprite CSS class name.<
 <tr>
 <td>
 DataHtmlAttributesField</td><td>
-It specifies the name of the column value that binds the html attributes such as id, class, styles for the item</td></tr>
+It specifies the name of the column value that binds the HTML attributes such as id, class, styles for the item</td></tr>
 <tr>
 <td>
 DataSelectedField</td><td>
@@ -220,17 +220,17 @@ In the Design page, assign the values for DataTextField, DataValueField. In Data
 ![](Databinding_images/Databinding_img4.png)
 
 
-## LinqToSQL Data
+## LINQ-to-SQL Data
 
 LinqDataSource is designed to work with DataContext. It uses internally, the data model (dbml) file. Data model contains list of tables from specific database. 
 
-Define a Linq-to-SQL data source in the web page and configure the data source as per your requirement by using the database. In the following example, an SQL table is used to create a DBML class.
+Define a LINQ-to-SQL data source in the web page and configure the data source as per your requirement by using the database. In the following example, an SQL table is used to create a DBML class.
 
 The following screenshot illustrates the sample database used.
 
 ![](Databinding_images/Databinding_img5.jpeg)
 
-In the Design page, assign values for DataTextField, DataValueField. In DataSourceID field assign the ID of the existing Linq-to-SQL data source.
+In the Design page, assign values for DataTextField, DataValueField. In DataSourceID field assign the ID of the existing LINQ-to-SQL data source.
 
 
 {% highlight html %}
@@ -264,7 +264,7 @@ In the Design page, assign the values for DataTextField, DataValueField. In Data
 
 {% endhighlight %}
 
-Create a new xml file in App_Data folder as ‘ListBoxXml.xml’ and add the following data.
+Create a new XML file in App_Data folder as ‘ListBoxXml.xml’ and add the following data.
 
 {% highlight xml %}
 

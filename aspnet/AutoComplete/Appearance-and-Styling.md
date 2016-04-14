@@ -43,7 +43,7 @@ By enabling the ShowRoundedCorner property, you can customize the shape of the A
 
 ### Enabling Rounded corner property
 
-In the design page, define the AutoComplete control and configure the ShowRoundedCornerproperty for it
+In the design page, define the AutoComplete control and configure the ShowRoundedCorner property for it
 
 {% highlight html %}
 
@@ -69,7 +69,7 @@ Watermark text property provides with an option to display a faded text in the A
 
 ### Defining Watermark text 
 
-In the design page, define the AutoComplete control and set a text value for WatermarkTextproperty
+In the design page, define the AutoComplete control and set a text value for WatermarkText property
 
 {% highlight html %}
 
@@ -97,7 +97,7 @@ AutoComplete control provides you with a property to define the dimensions of th
 
 ### Configure dimensions of PopUp panel
 
-In the design page, define the AutoComplete control and set the value for PopupHeightand PopupWidthproperty
+In the design page, define the AutoComplete control and set the value for PopupHeight and PopupWidth property
 
 {% highlight html %}
 
@@ -215,7 +215,7 @@ Define CSS class to customize the AutoComplete control.
 
 
 
-In the design page, define the AutoComplete control and set the value for CssClassproperty
+In the design page, define the AutoComplete control and set the value for CssClass property
 
 {% highlight html %}
 

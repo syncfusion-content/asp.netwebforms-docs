@@ -19,7 +19,7 @@ Visual mode selects multiple items by enclosing the item in a rounded rectangle 
 
 The following steps explain the configuration of the MultiSelectMode for an AutoComplete textbox.
 
-In the design page, define the AutoComplete control and configure its MultiSelectModeproperty accordingly.
+In the design page, define the AutoComplete control and configure its MultiSelectMode property accordingly.
 
 {% highlight html %}
 

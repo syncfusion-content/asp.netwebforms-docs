@@ -131,11 +131,11 @@ The following screenshot displays the output of the above code example.
 
 
 
-## Knockout support
+## KnockoutJS support
 
-Knockout support allows you to bind the HTML elements against any of the available data model.
+KnockoutJS support allows you to bind the HTML elements against any of the available data model.
 
-The two types of Knockout binding supported are,
+The two types of KnockoutJS binding supported are,
 
 * One-way binding
 * Two-way binding
@@ -144,9 +144,9 @@ One-way binding refers to the process of applying observable values to all the 
 
 Two-way binding supports both the processes. It applies the observable values to the Rotator properties as well as the changes made in the Rotator control that are also reflected back and triggered within the observable collections.
 
-For more information on the Knockout binding, you can refer to the online documentation in the following link location: <http://help.syncfusion.com/js/knockoutjs>
+For more information on the KnockoutJS binding, you can refer to the online documentation in the following link location: <http://help.syncfusion.com/js/knockoutjs>
 
-N> Add the following script files along with the given code to access Knockout binding. They have JS library for Knockout binding.
+N> Add the following script files along with the given code to access KnockoutJS binding. They have JS library for KnockoutJS binding.
 
 * knockout-min.js
 * ej.widget.ko-latest.min.js
@@ -157,7 +157,7 @@ The link for those script files are as follows:
 
 [http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.ko.min.js](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.ko.min.js)
 
-In the ASPX page, add the following code example that shows the way to bind data to the Rotator through the Knockout support.
+In the ASPX page, add the following code example that shows the way to bind data to the Rotator through the KnockoutJS support.
 
 {% highlight html %}
 
@@ -171,7 +171,7 @@ In the ASPX page, add the following code example that shows the way to bind data
 
 
 
-Add the following script to achieve knockout.
+Add the following script to achieve knockoutJS.
 
 {% highlight js %}
 
@@ -264,7 +264,7 @@ The following screenshot displays the output of the above code example.
 
 
 
-## Angular support
+## AngularJS support
 
 Rotator is availed with two types of AngularJS support namely,
 
@@ -273,19 +273,19 @@ Rotator is availed with two types of AngularJS support namely,
 
 One-way binding refers to the process of applying scope values to all the available properties of the Rotator. But the changes made in the Rotator control are not reflected or triggered in turn to the scope collection. This kind of binding is applied to all the properties of the Rotator.
 
-Two-way binding supports both the processes. It applies the scope values to the Rotator properties as well as the changes made in the Rotator control that are also reflected back and triggered within the angular scope change function.
+Two-way binding supports both the processes. It applies the scope values to the Rotator properties as well as the changes made in the Rotator control that are also reflected back and triggered within the angularJS scope change function.
 
-To know more details about the Angular binding, you can refer to the following link location:
+To know more details about the AngularJS binding, you can refer to the following link location:
 
 <http://help.syncfusion.com/js/angularjs>
 
-N> Add the following script files as given in the following example to access Knockout binding. They have JS library for 
-angular binding.
+N> Add the following script files as given in the following example to access KnockoutJS binding. They have JS library for 
+AngularJS binding.
 
 * angular-min.js
 * ej.widget.angular-latest.min.js
 
-The following code example shows the way to bind data to the Rotator control through Angular support.
+The following code example shows the way to bind data to the Rotator control through AngularJS support.
 
 {% tabs %}
 

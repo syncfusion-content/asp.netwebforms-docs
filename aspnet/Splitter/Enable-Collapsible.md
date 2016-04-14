@@ -9,7 +9,7 @@ documentation: ug
 
 # Enable Collapsible
 
-The Splitter provides you the option to enable or disable the pane collapse functionality. You can click the icon in Splitbar to collapse or expand the corresponding pane element in Splitter. Setting the Collapsible property to “False” disables the pane collapse functionality in the Splitter control.
+The Splitter provides you the option to enable or disable the pane collapse functionality. You can click the icon in Split bar to collapse or expand the corresponding pane element in Splitter. Setting the Collapsible property to “False” disables the pane collapse functionality in the Splitter control.
 
 ## Configure Collapsible
 
