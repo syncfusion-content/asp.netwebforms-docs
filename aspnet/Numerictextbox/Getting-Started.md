@@ -13,7 +13,7 @@ documentation: ug
 
 ## Create your first Editor in ASP.NET
 
-The Essential ASP.NET WebForms Editors control includes numeric, percentage, currency and maskedit textbox controls. Here, you can learn how to use ASP.NET Textboxes controls in the Electricity bill calculator Application. This guides you to use the wide range of TextBox functionalities to complete this application.
+The Essential ASP.NET Web Forms Editors control includes numeric, percentage, currency and maskedit textbox controls. Here, you can learn how to use ASP.NET Textboxes controls in the Electricity bill calculator Application. This guides you to use the wide range of TextBox functionalities to complete this application.
 
 ![](Getting-Started_images/Getting-Started_img1.jpeg) 
 
@@ -21,7 +21,7 @@ The Essential ASP.NET WebForms Editors control includes numeric, percentage, c
 
 ## Create Textboxes Controls
 
-You can create a WebForms Project and add the necessary Dll’s and Scripts with the help of the given [WebForms-Getting Started](http://help.syncfusion.com/aspnetmvc/numerictextbox/getting-started) Documentation.
+You can create a Web Forms Project and add the necessary Dll’s and Scripts with the help of the given [Web Forms-Getting Started](http://help.syncfusion.com/aspnetmvc/numerictextbox/getting-started) Documentation.
 
 Add necessary TextBox control and initialize the corresponding TextBox control.
 

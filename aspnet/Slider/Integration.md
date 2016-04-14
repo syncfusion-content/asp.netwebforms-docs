@@ -9,17 +9,17 @@ documentation: ug
 
 # Integration
 
-## Angular binding
+## AngularJS binding
 
-Angular JS is structural Framework to create dynamic web apps. It is distributed as a JavaScript file. It extends HTML attributes with Directives, and binds data to HTML with Expressions. To learn more about Angular JS, refer to the following link
+AngularJS is structural Framework to create dynamic web apps. It is distributed as a JavaScript file. It extends HTML attributes with Directives, and binds data to HTML with Expressions. To learn more about AngularJS, refer to the following link
 
 <https://angularjs.org/>
 
-Slider control is provided with Angular JS support. The support is achieved by including the ej.widget.angular.min.js file. Refer to the following link to know more about the AngularJS support.
+Slider control is provided with AngularJS support. The support is achieved by including the ej.widget.angular.min.js file. Refer to the following link to know more about the AngularJS support.
 
 <http://help.syncfusion.com/js/angularjs>
 
-Slider control is defined by using the directive slider. The properties of the Slider control can be included as inline HTML attributes by prefixing the properties with e-. The properties are not case sensitive when defining it. Angular JS provides two types of data binding one way binding and two way binding.
+Slider control is defined by using the directive slider. The properties of the Slider control can be included as inline HTML attributes by prefixing the properties with e-. The properties are not case sensitive when defining it. AngularJS provides two types of data binding one way binding and two way binding.
 
 All properties in the Slider supports one way data binding. Here one way binding specifies that the values for the Slider properties are assigned automatically when specified through the data binding notation, but the property values is not changed in the model. That is, the values are displayed only in the HTML view not in the application data.
 
@@ -59,7 +59,7 @@ In an ASPX page, initialize the Slider by using the directive and in JavaScript 
 
 
 
-Include the following Script to achieve the angular binding.
+Include the following Script to achieve the angularJS binding.
 
 {% highlight js %}
 
@@ -81,7 +81,7 @@ The following screenshot displays the output of the above code example.
 
 
 
-## Knockout binding
+## JS binding
 
 KnockOutJS is a JavaScript library that follows the MVVM pattern to build sophisticated user interface with a clean underlying data model. It supports to update the UI dynamically. Refer to the following link to know more about KnockOutJS.
 
@@ -95,7 +95,7 @@ The binding handler name for Slider component is Slider. Both one way binding
 
 Two way binding support is included only for the applicable Slider properties, value and values. To activate two way binding support, you can specify these properties as observables in the ViewModel. Then, use the ko.applyBindings to activate it. Now these properties bind the underlying data model and the changes are reflected automatically.
 
-The following example explains you the binding of value property by using the Knockout support.
+The following example explains you the binding of value property by using the KnockoutJS support.
 
 In an ASPX page, initialize the Slider and bind the value property. 
 

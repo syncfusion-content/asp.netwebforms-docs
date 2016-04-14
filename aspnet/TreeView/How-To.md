@@ -60,7 +60,7 @@ In the code behind page, create a data list which contains the details about tre
         
     {% endhighlight %}
     
-In the view page, add TreeView element and specify the scripts for sending modified data through Ajax action with that also specify clear cache option.
+In the view page, add TreeView element and specify the scripts for sending modified data through AJAX action with that also specify clear cache option.
     
     {% highlight html %}
     
@@ -383,7 +383,7 @@ In the code behind page, create a data list which contains the details about tre
         
     {% endhighlight %}
     
-In the view page, add TreeView element and specify the scripts for sending modified data through Ajax action.
+In the view page, add TreeView element and specify the scripts for sending modified data through AJAX action.
     
     {% highlight html %}
     
@@ -920,7 +920,7 @@ In the view page, add TreeView element and map the properties defined in to the
     
 ## How to get all checked nodes details of TreeView in server end
 
-In button click, you need to get all checked node details of TreeView and send it to server using Ajax. 
+In button click, you need to get all checked node details of TreeView and send it to server using AJAX. 
 
 Refer the following code block to know how to get checked nodes details in server end.
 

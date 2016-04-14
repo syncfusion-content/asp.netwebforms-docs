@@ -738,7 +738,7 @@ In the view page, assign values for DataTextField, DataIdField, DataParentIdFiel
     
 ## XML Data
 
-TreeView provides XML data binding support to populate TreeeView nodes, so that the values can be mapped to the TreeView fields from an existing XML data by using DataSourceID property.
+TreeView provides XML data binding support to populate TreeView nodes, so that the values can be mapped to the TreeView fields from an existing XML data by using DataSourceID property.
 
 The following steps explain the XML data binding to TreeView.
 

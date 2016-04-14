@@ -9,24 +9,24 @@ documentation: ug
 
 # Integration
 
-## Angular Binding
+## AngularJS Binding
 
-The ColorPicker control is availed with two types of angular JS support namely, 
+The ColorPicker control is availed with two types of angularJS support namely, 
 
 * One-way binding
 * Two-way binding 
 
 One-way binding refers to the process of applying scope values to all the available properties of the ColorPicker control. The changes made in the ColorPicker control are not reflected or triggered in turn to the scope collection. This kind of binding is applied to all the properties of the ColorPicker control.
 
-Two-way binding supports both the processes. It applies the scope values to the ColorPicker properties, as well as the changes made in the ColorPicker control are reflected back and triggered within the angular scope change function.
+Two-way binding supports both the processes. It applies the scope values to the ColorPicker properties, as well as the changes made in the ColorPicker control are reflected back and triggered within the angularJS scope change function.
 
 Apply the plugin and property assigning to the ColorPicker control element through the directive that starts with “e-“.
 
-To know more about the Angular binding, you can refer to the online documentation in the following link location,
+To know more about the AngularJS binding, you can refer to the online documentation in the following link location,
 
 <http://help.syncfusion.com/js/angularjs>
 
-The following code example explains how to bind data to the ColorPicker control through angular support.
+The following code example explains how to bind data to the ColorPicker control through angularJS support.
 
 {% highlight html %}
 
@@ -134,11 +134,11 @@ The following screenshot displays the output of the above code example.
 
 
 
-## Knockout Binding
+## KnockoutJS Binding
 
-Knockout support allows you to bind the HTML elements against any of the available data models.
+KnockoutJS support allows you to bind the HTML elements against any of the available data models.
 
-Two types of knockout binding is supported,
+Two types of knockoutJS binding is supported,
 
 * One-way binding
 * Two-way binding
@@ -147,11 +147,11 @@ One-way binding refers to the process of applying observable values to all the a
 
 Two-way binding supports both the processes. It applies the observable values to the ColorPicker control properties and also the changes made in the ColorPicker control are reflected back and triggered within the observable collections. 
 
-For more information about Knockout binding, you can refer to the online documentation in the following link location,
+For more information about KnockoutJS binding, you can refer to the online documentation in the following link location,
 
 <http://help.syncfusion.com/js/knockoutjs>
 
-The following code example explains how you can bind data to the ColorPicker control through knockout support that enables and populates data to a ColorPicker control based on the value set to the other ColorPicker control.
+The following code example explains how you can bind data to the ColorPicker control through knockoutJS support that enables and populates data to a ColorPicker control based on the value set to the other ColorPicker control.
 
 {% highlight html %}
 

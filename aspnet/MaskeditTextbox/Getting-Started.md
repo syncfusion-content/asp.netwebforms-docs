@@ -23,7 +23,7 @@ The following screenshot illustrates the functionality of a MaskEdit. Here, Mob
 
 ## Create a MaskEdit control
 
-You can create an ASP.NETProject and add the necessary Dll’s and scripts with the help of the given [ASP.NET WebForms-Getting Started](/aspnet/maskedittextbox/getting-started) Documentation.
+You can create an ASP.NETProject and add the necessary assemblies and scripts with the help of the given [ASP.NET Web Forms-Getting Started](/aspnet/maskedittextbox/getting-started) Documentation.
 
 Add the following code to the corresponding ASPX page to render the MaskEdit control.
 
