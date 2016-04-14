@@ -9,9 +9,9 @@ documentation: ug
 
 # MVVM
 
-## Angular JS
+## AngularJS
 
-Circular Gauge contains angular support. You can add object as well as array object in the Circular Gauge. The two way binding support is given to the pointer value, minimum scale value and maximum scale value. 
+Circular Gauge contains AngularJS support. You can add object as well as array object in the Circular Gauge. The two way binding support is given to the pointer value, minimum scale value and maximum scale value. 
 
 ### Rendering the Circular Gauge
 
@@ -412,11 +412,11 @@ Circular Gauge support the two way binding for the property value, minimum and m
 
 e-radius="130" e-showScaleBar="true" e-size="1"
 
-<!—binding maximum value using angular JS -->
+<!—binding maximum value using AngularJS -->
 
 e-maximum="nmaximum"
 
-<!—binding minimum value using angular JS -->
+<!—binding minimum value using AngularJS -->
 
 e-minimum="nminimum"
 
@@ -538,9 +538,9 @@ Execute the above code to render the following output.
 
 
 
-### Knockout JS
+### KnockoutJS
 
-* Knockout support allows you to bind the HTML elements against any of the available data models.Two types of knockout binding is supported as of angular,
+* KnockoutJS support allows you to bind the HTML elements against any of the available data models.Two types of KnockoutJS binding is supported as of angular,
 
   1. one-way binding
   

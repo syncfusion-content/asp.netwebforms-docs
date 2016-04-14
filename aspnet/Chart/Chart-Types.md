@@ -1370,9 +1370,9 @@ You can change the scatter size by using the **Size** property of the series mar
 ![](Chart-Types_images/Chart-Types_img60.png)
 
 
-## HiloOpenClose Chart 
+## HiLoOpenClose Chart 
 
-To create a HiloOpenClose chart, you can set the series Type as **HiloOpenClose** in the chart series. HiloOpenClose chart requires 5 fields *(X, High, Low, Open and Close)* to plot a segment.  
+To create a HiLoOpenClose chart, you can set the series Type as **HiloOpenClose** in the chart series. HiLoOpenClose chart requires 5 fields *(X, High, Low, Open and Close)* to plot a segment.  
 
 
 {% highlight csharp %}
@@ -1430,12 +1430,12 @@ To create a HiloOpenClose chart, you can set the series Type as **HiloOpenClose*
 ![](Chart-Types_images/Chart-Types_img61.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/hiloopenclose.aspx) here to view the HiloOpenClose Chart online demo sample.
+[Click](http://asp.syncfusion.com/demos/web/chart/hiloopenclose.aspx) here to view the HiLoOpenClose Chart online demo sample.
 
 
 ### DrawMode
 
-You can change the HiloOpenClose chart **DrawMode** to *Open, Close* or *Both*. The default value of DrawMode is **Both**. 
+You can change the HiLoOpenClose chart **DrawMode** to *Open, Close* or *Both*. The default value of DrawMode is **Both**. 
 
 {% highlight html %}
 
@@ -1454,7 +1454,7 @@ You can change the HiloOpenClose chart **DrawMode** to *Open, Close* or *Both*. 
 
 ### Bull and Bear Color	
 
-Hiloopenclose chart **BullFillColor** is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval and **BearFillColor** is used to specify a fill color for the segments that indicates a decrease in the stock price in the measured time interval. 
+HiLoOpenClose chart **BullFillColor** is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval and **BearFillColor** is used to specify a fill color for the segments that indicates a decrease in the stock price in the measured time interval. 
 
 {% highlight html %}
 
@@ -1552,9 +1552,9 @@ Candle chart **BullFillColor** is used to specify a fill color for the segments 
 ![](Chart-Types_images/Chart-Types_img65.png)
 
 
-## Hilo
+## HiLo
 
-Hilo chart is created by setting the series Type as **Hilo** in the chart series. Hilo chart requires 3 fields *(X, High and Low)* to plot a segment.  
+HiLo chart is created by setting the series Type as **Hilo** in the chart series. HiLo chart requires 3 fields *(X, High and Low)* to plot a segment.  
 
 {% highlight csharp %}
 
@@ -1609,7 +1609,7 @@ Hilo chart is created by setting the series Type as **Hilo** in the chart series
 ![](Chart-Types_images/Chart-Types_img66.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/hilo.aspx) here to view the Hilo Chart online demo sample.
+[Click](http://asp.syncfusion.com/demos/web/chart/hilo.aspx) here to view the HiLo Chart online demo sample.
 
 
 ## Polar
@@ -1826,7 +1826,7 @@ To customize the connector line color, width, opacity and dashArray of the water
 
 ## Errorbar Chart 
 
-EjChart can generate Error bar for Cartesian type series *(Line, Column, Bar, Scatter, Area, Candle, Hilo, etc.)*. To render the Error bar for the series, set *Visibility* as *“Visibile”* to **ErrorBar** in the series.
+EjChart can generate Error bar for Cartesian type series *(Line, Column, Bar, Scatter, Area, Candle, HiLo, etc.)*. To render the Error bar for the series, set *Visibility* as *“Visibile”* to **ErrorBar** in the series.
 
 
 {% highlight html %}

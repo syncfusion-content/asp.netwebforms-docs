@@ -11,7 +11,7 @@ documentation: ug
 
 * The ASP.NET Circular Gauge provides support to display the CircularGauge within your web page and allows you to customize it. This section encompasses the details on how to configure Circular Gauge. 
 * You will learn how to provide data for a Circular Gauge and to display that data in the required way. In addition, you will learn how to customize the default Circular Gauge appearance to your requirements. 
-* As a result, you will get a Circular Gauge that shows how the Automobile speedometer works with rpm (Rotation per Minute), KmpH (Kilometer per hour) and denotes the speed level indication (Safe, Caution and Danger). 
+* As a result, you will get a Circular Gauge that shows how the Automobile speedometer works with rpm (Rotation per Minute), kph (Kilometer per hour) and denotes the speed level indication (Safe, Caution and Danger). 
 
 Speedometer Gauge
 

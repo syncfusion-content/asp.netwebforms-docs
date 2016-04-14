@@ -146,7 +146,7 @@ Use of ZoomCoordinates
 
 ## Thumb Template
 
-You can customize Thumb template by using LeftThumbTemplate and RightThumbTemplate property. You can add the required template as a “div” element with an “id” to the web page and assign the id or assign the html string to this property under NavigatorStyleSettings. 
+You can customize Thumb template by using LeftThumbTemplate and RightThumbTemplate property. You can add the required template as a “div” element with an “id” to the web page and assign the id or assign the HTML string to this property under NavigatorStyleSettings. 
 
 {% tabs %}
 

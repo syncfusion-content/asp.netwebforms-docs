@@ -22,9 +22,9 @@ The following assemblies need to be referenced in your application for using Ess
 1. Syncfusion.EJ.dll
 2. Syncfusion.EJ.Web.dll
 
-Follow the steps given below to deploy the application in the development server by referencing the dll in **GAC**.
+Follow the steps given below to deploy the application in the development server by referencing the assembly in **GAC**.
 
-* Web.config file should be configured according to the referenced dlls. 
+* Web.config file should be configured according to the referenced assemblies. 
 * To deploy your application, you have to ensure that the above referenced assemblies (in your web.config files) are present in the GAC.
 
 ![](Getting-Started_images/Getting-Started_img1.png)
@@ -33,12 +33,12 @@ And, add the Syncfusion namespace in the Web.config file.
 
 ![](Getting-Started_images/Getting-Started_img2.png) 
 
-N> If you are referring Syncfusion dll's manually from bin folder to create ASP Chart, then remove Culture, Version and PublicKeyToken attributes used in all, and nodes.
+N> If you are referring Syncfusion assemblies manually from bin folder to create ASP Chart, then remove Culture, Version and PublicKeyToken attributes used in all, and nodes.
 
 
 ###  Adding script reference
 
-By default, Syncfusion JavaScript source files has been included into the EJ.Web.dll as an embedded source. So we no need to refer jquery and syncfusion scripts externally. For debugging purpose want to refer script files externally, set false to **LoadEJResourcesFromAssembly** in Web.config file as shows in the below image and refer jquery and syncfusion script files.
+By default, Syncfusion JavaScript source files has been included into the EJ.Web assembly as an embedded source. So we no need to refer jquery and syncfusion scripts externally. For debugging purpose want to refer script files externally, set false to **LoadEJResourcesFromAssembly** in Web.config file as shows in the below image and refer jquery and syncfusion script files.
 
 ![](Getting-Started_images/Getting-Started_img3.png) 
 

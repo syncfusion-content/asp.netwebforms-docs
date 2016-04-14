@@ -9,9 +9,9 @@ documentation: ug
 
 # MVVM
 
-Angular JS
+AngularJS
 
-Linear Gauge contains angular support. It is possible to add object as well as array object in the Linear Gauge. The two way binding support is given to the pointer value, minimum scale value and maximum scale value. 
+Linear Gauge contains AngularJS support. It is possible to add object as well as array object in the Linear Gauge. The two way binding support is given to the pointer value, minimum scale value and maximum scale value. 
 
 
 ## Rendering the Linear gauge
@@ -392,9 +392,9 @@ Execute the above code to render the following output.
 
 
 
-## Knockout JS
+## KnockoutJS
 
-* Knockout support allows you to bind the html elements against any of the available data models.Two types of knockout binding is supported as of angular,
+* KnockoutJS support allows you to bind the HTML elements against any of the available data models.Two types of KnockoutJS binding is supported as of AngularJS,
 * one-way binding
 * two-way binding
 * One way binding refers to the process of applying observable values to all the available properties of the Linear Gauge control, but the changes made in it does not reflect and trigger in turn to the observable collection. This kind of binding applies to all the properties of the Linear Gauge control.
