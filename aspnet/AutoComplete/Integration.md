@@ -11,14 +11,14 @@ documentation: ug
 
 ## AngularJS
 
-AutoComplete control is availed with two types of angular support namely, 
+AutoComplete control is availed with two types of AngularJS support namely, 
 
 * One-way binding
 * Two-way binding 
 
 One-way binding refers to the process of applying scope values to all the available properties of the AutoComplete control, but the changes made in AutoComplete control is not reflected or triggered in turn, to the scope collection. This kind of binding applies to all the properties of the AutoComplete control.
 
-Two-way binding supports both the processes. It applies the scope values to the AutoComplete properties, as well as the changes made in the AutoComplete control are reflected back and triggered within the angular scope change function.
+Two-way binding supports both the processes. It applies the scope values to the AutoComplete properties, as well as the changes made in the AutoComplete control are reflected back and triggered within the AngularJS scope change function.
 
 Apply the plugin and property assigning to the AutoComplete control element through the directive that starts with “e-“.
 
@@ -26,7 +26,7 @@ To know more about the Angular binding, refer to the following online documentat
 
 <http://help.syncfusion.com/js/angularjs>
 
-The following example depicts the way to bind data to the AutoComplete control through angular support.
+The following example depicts the way to bind data to the AutoComplete control through AngularJS support.
 
 Add the following code example to corresponding ASPX page to render AutoComplete control
 
@@ -104,7 +104,7 @@ Add the following code example to corresponding ASPX page to render AutoComplete
 
 
 
-In the Script section, define the data to be bid and by using angular support, map fields to AutoComplete.
+In the Script section, define the data to be bid and by using AngularJS support, map fields to AutoComplete.
 
 
 
@@ -152,7 +152,7 @@ In the Script section, define the data to be bid and by using angular support, m
 
 
 
-The following screenshot is the output of AutoComplete control with two way angular binding.
+The following screenshot is the output of AutoComplete control with two way AngularJS binding.
 
 ![](Integration_images/Integration_img1.png)
 
@@ -160,9 +160,9 @@ The following screenshot is the output of AutoComplete control with two way angu
 
 ## KnockoutJs
 
-Knockout support allows you to bind the html elements against any of the available data models.
+Knockout support allows you to bind the HTML elements against any of the available data models.
 
-Two types of knockout binding is supported,
+Two types of KnockoutJS binding is supported,
 
 * One-way binding
 * Two-way binding
@@ -175,7 +175,7 @@ For more information about Knockout binding, refer to the following online docum
 
 <http://help.syncfusion.com/js/knockoutjs>
 
-The following example depicts how you can bind data to the AutoComplete control through knockout support that enables and populates data to an AutoComplete control, based on the value set to the other AutoComplete control.
+The following example depicts how you can bind data to the AutoComplete control through KnockoutJS support that enables and populates data to an AutoComplete control, based on the value set to the other AutoComplete control.
 
 Add the following code example to corresponding ASPX page to render AutoComplete control.
 

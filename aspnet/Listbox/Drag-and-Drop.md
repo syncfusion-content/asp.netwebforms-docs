@@ -144,9 +144,9 @@ Both the ListBox widgets are bound to a remote data source.
         }
     </style>
     <script>
-        function itemDroped(args) {
+        function itemDropped(args) {
             // Handle the datasource here
-            alert("Item Droped")
+            alert("Item Dropped")
         }
     </script>
 
@@ -178,7 +178,7 @@ protected void Page_Load(object sender, EventArgs e)
 
             selectedskills.DataTextField = "CustomerID";
 
-            selectedskills.ClientSideOnItemDrop = "itemDroped";
+            selectedskills.ClientSideOnItemDrop = "itemDropped";
 
 
 
@@ -187,7 +187,7 @@ protected void Page_Load(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-In the “ClientSideOnItemDrop” event, we can implement “itemDroped” function to update the datasource of the second ListBox widget. The “ClientSideOnItemDrop” event’s argument contains the details of the dropped item.
+In the “ClientSideOnItemDrop” event, we can implement “itemDropped” function to update the datasource of the second ListBox widget. The “ClientSideOnItemDrop” event’s argument contains the details of the dropped item.
 
 ## Reordering
 

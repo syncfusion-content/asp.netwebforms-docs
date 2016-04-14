@@ -17,7 +17,7 @@ AutoComplete control allows you to highlight the search text in the AutoComplete
 
 The following steps explain how you can enable the highlightSearch property for an AutoComplete textbox.
 
-In the design page define the AutoComplete control and enable the HightlightSearch property by using MinCharacter you can set the minimal number of characters to be enter for searching the list items.
+In the design page define the AutoComplete control and enable the HighlightSearch property by using MinCharacter you can set the minimal number of characters to be enter for searching the list items.
 
 
 

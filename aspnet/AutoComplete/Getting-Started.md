@@ -25,7 +25,7 @@ The following screenshot illustrates the AutoComplete control that searches th
 
 You can create an ASP.NET Project and add necessary Dll’s and Scripts with the help of the given 
 [WebForms-Getting Started](http://help.syncfusion.com/aspnetmvc/autocomplete/getting-started) documentation.  
-Initialize the corresponding AutoCompletecontrol in the ASPX page.
+Initialize the corresponding AutoComplete control in the ASPX page.
 
 {% highlight html %}
 
@@ -61,7 +61,7 @@ The data provided to the AutoComplete customizes the list of Data either local
 
 ### Remote Data Binding
 
-You can assign the required Data from the remote URL to the DataSource property in codebehind file. You can also generate a query to get the required Data from the remote file by using Queryproperty and define the query to get the remote Data. By using DataTextFieldandDataUniqueKeyField property, you can map the Data fields to the textbox as illustrated in the following code example.
+You can assign the required Data from the remote URL to the DataSource property in code behind file. You can also generate a query to get the required Data from the remote file by using Query property and define the query to get the remote Data. By using DataTextField andDataUniqueKey Field property, you can map the Data fields to the textbox as illustrated in the following code example.
 
 {% highlight c# %}
 
@@ -139,7 +139,7 @@ Select a component/s:
 
 
 
-The following screenshot displays the AutoCompletetextbox with selection visual mode.
+The following screenshot displays the AutoComplete textbox with selection visual mode.
 
 ![](Getting-Started_images/Getting-Started_img4.png) 
 
@@ -167,7 +167,7 @@ FilterType="StartsWith" MultiSelectMode="VisualMode"HighlightSearch="true" Sho
 
 When you set the HighlightSearch property to ‘true’, the characters typed in textbox gets highlighted in the suggestion list. To display the textbox with rounded ends, you can enable the ShowRoundedCorner property.
 
-The following screenshot displays the AutoCompletetextbox with highlight search enabled.
+The following screenshot displays the AutoComplete textbox with highlight search enabled.
 
 ![](Getting-Started_images/Getting-Started_img5.png) 
 
@@ -221,7 +221,7 @@ FilterType="StartsWith" MultiSelectMode="VisualMode"HighlightSearch="true" Sho
 
 
 
-The following screenshot displays the AutoCompletetextbox with dropdown icon.
+The following screenshot displays the AutoComplete textbox with dropdown icon.
 
 
 

@@ -15,7 +15,7 @@ In order to render the AutoComplete control, the data needs to be bound to it in
 
 ### DataSource 
 
-This property assigns the local json data or remote data, that is the url binding, to the AutoComplete control.
+This property assigns the local JSON data or remote data, that is the URL binding, to the AutoComplete control.
 
 ### Query 
 
@@ -23,19 +23,19 @@ It accepts the data of object type, usually the query string, to fetch the requi
 
 ### DataUniqueKeyField
 
-It maps the corresponding key field name from the data table or json data that is assigned to the dataSource, with the key property of the AutoComplete control. The key value that is fetched from the table has to be unique for each records.
+It maps the corresponding key field name from the data table or JSON data that is assigned to the dataSource, with the key property of the AutoComplete control. The key value that is fetched from the table has to be unique for each records.
 
 ### DataTextField
 
-It maps the corresponding text field name from the data table or json data that is assigned to the dataSource, with the text property of the AutoComplete control. The text value that is fetched from the table gets the value to be displayed in the AutoComplete textbox.
+It maps the corresponding text field name from the data table or JSON data that is assigned to the dataSource, with the text property of the AutoComplete control. The text value that is fetched from the table gets the value to be displayed in the AutoComplete textbox.
 
 ### DataCategoryField
 
-It maps the category field name from the data table or json data that is assigned to the dataSource. The category value that is fetched from the table is made available when Grouping is enabled.
+It maps the category field name from the data table or JSON data that is assigned to the dataSource. The category value that is fetched from the table is made available when Grouping is enabled.
 
 ### DataHtmlAttributesField
 
-This allows you to map the CSS styles or classes to the corresponding data from table or json data with the AutoComplete items. The DataHtmlAttributesField value customizes the AutoComplete items, based on html styling or class assigned to it. 
+This allows you to map the CSS styles or classes to the corresponding data from table or JSON data with the AutoComplete items. The DataHtmlAttributesField value customizes the AutoComplete items, based on HTML styling or class assigned to it. 
 
 ## Local data
 
@@ -502,7 +502,7 @@ The following screenshot is the output for AutoComplete control with ObjectDataS
 
 
 
-## Linq-to-SQL data
+## LINQ-to-SQL data
 
 The [LinqDataSource](http://msdn.microsoft.com/en-us/library/vstudio/system.web.ui.webcontrols.linqdatasource(v=vs.100).aspx) control exposes Language-Integrated Query (LINQ) to Web developers through the ASP.NET data-source control architecture. It doesn’t connect directly to the database, instead, interacts with entity classes that represent the database and the tables. You can generate the entity classes with one class that represents the database and one class for each table in the database and it is typically be located in the App_Code folder of the Web application. 
 
@@ -514,19 +514,19 @@ To retrieve data from Entity classes by using LinqDataSource, define the followi
 
 
 
-AutoComplete provides an extensive data binding support to populate AutoComplete items, so that the values can be mapped to the AutoComplete fields from an existing Linq-to-SQL data source. You can achieve this by using DataSourceID property.
+AutoComplete provides an extensive data binding support to populate AutoComplete items, so that the values can be mapped to the AutoComplete fields from an existing LINQ-to-SQL data source. You can achieve this by using DataSourceID property.
 
-### Configuring Linq-to-SQL data for AutoComplete
+### Configuring LINQ-to-SQL data for AutoComplete
 
 The following steps explain the SQL data binding to an AutoComplete textbox.
 
 The following steps explain local data binding of a list data to an AutoComplete textbox.
 
-Define a Linq-to-SQL data source in the web page and configure the data source as per your requirement by using the database. In the following code example, an SQL table with TerritoryID and TerritoryDescription in varchar type is used, to create a DBML class.
+Define a LINQ-to-SQL data source in the web page and configure the data source as per your requirement by using the database. In the following code example, an SQL table with TerritoryID and TerritoryDescription in varchar type is used, to create a DBML class.
 
 ![](Data-Binding_images/Data-Binding_img6.png)
 
-In the Design page, add an AutoComplete element from ToolBox and assign values for DataTextField and DataUniqueKeyField. In DataSourceID field, assign the ID of the existing Linq-to-SQL data source. 
+In the Design page, add an AutoComplete element from ToolBox and assign values for DataTextField and DataUniqueKeyField. In DataSourceID field, assign the ID of the existing LINQ-to-SQL data source. 
 
 {% highlight html %}
 
@@ -538,7 +538,7 @@ DataTextField="TerritoryDescription" DataUniqueKeyField="TerritoryID" />
 
         <%--DataBase configured for AutoComplete control--%>
 
-        <%--DataClassesDataContext is the Linq-To-Sql class in the web application--%>
+        <%--DataClassesDataContext is the LINQ-To-Sql class in the web application--%>
 
         <asp:LinqDataSource ID="LinqDataSource" runat="server"
 
@@ -558,7 +558,7 @@ DataTextField="TerritoryDescription" DataUniqueKeyField="TerritoryID" />
 
 
 
-The following screenshot is the output for AutoComplete control with Linq-to-SQL data binding.
+The following screenshot is the output for AutoComplete control with LINQ-to-SQL data binding.
 
 ![](Data-Binding_images/Data-Binding_img7.png) 
 

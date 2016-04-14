@@ -9,7 +9,7 @@ keywords: ejdialog, ASP Dialog, ASP.NET Dialog, ASP.NET Web Dialog, EJ ASP.NET D
 ---
 # Overview
 
-The Dialog control displays a Dialog window within a webpage. The Dialog enables a message to be displayed, such as supplementary content like images and text, and an interactive content like forms.
+The Dialog control displays a Dialog window within a web page. The Dialog enables a message to be displayed, such as supplementary content like images and text, and an interactive content like forms.
 
 ## Key Features
 

@@ -291,7 +291,7 @@ Define CSS class for customizing the Splitter.
 
 
 
-//Customize Splitbar
+//Customize Split bar
 
 .customCSS .e-splitbar {
 
@@ -334,11 +334,11 @@ Description</th></tr>
 <tr>
 <td>
 Left</td><td>
-Moves the Splitbar left.</td></tr>
+Moves the Split bar left.</td></tr>
 <tr>
 <td>
 Right</td><td>
-Moves the Splitbar right.</td></tr>
+Moves the Split bar right.</td></tr>
 <tr>
 <td>
 Ctrl + Left</td><td>
@@ -350,11 +350,11 @@ Collapses the right pane.</td></tr>
 <tr>
 <td>
 Up</td><td>
-Moves the Splitbar up.</td></tr>
+Moves the Split bar up.</td></tr>
 <tr>
 <td>
 Down</td><td>
-Moves the Splitbar down.</td></tr>
+Moves the Split bar down.</td></tr>
 <tr>
 <td>
 Ctrl + Up</td><td>
@@ -366,11 +366,11 @@ Collapses the bottom pane.</td></tr>
 <tr>
 <td>
 Enter</td><td>
-Resizes the pane to the current Splitbar position.</td></tr>
+Resizes the pane to the current Split bar position.</td></tr>
 <tr>
 <td>
 Esc</td><td>
-Focuses out from the Splitbar.</td></tr>
+Focuses out from the Split bar.</td></tr>
 </table>
 
 
