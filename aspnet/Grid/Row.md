@@ -618,10 +618,12 @@ public partial class RowTemplate : System.Web.UI.Page
 The following output is displayed before reordering rows. 
 
 ![](Row_images/Row_img5.png)
+{:Before Drop}
 
 The following output is displayed after reordering rows.
 
 ![](Row_images/Row_img6.png)
+{:After Drop}
 
 ### Grid-to-Grid
 
@@ -738,10 +740,12 @@ public partial class RowTemplate : System.Web.UI.Page
 The following output is displayed before dropping Grid rows.
 
 ![](Row_images/Row_img7.png)
+{:Before Drop}
 
 The following output is displayed after dropping Grid rows.
 
 ![](Row_images/Row_img8.png)
+{:After Drop}
 
 ### Grid-to-Custom control
 
@@ -821,7 +825,9 @@ public partial class RowTemplate : System.Web.UI.Page
 The following output is displayed before dropping the rows on Form.
 
 ![](Row_images/Row_img9.png)
+{:Before Drop}
 
 The following output is displayed after dropping the rows on Form.
 
 ![](Row_images/Row_img10.png)
+{:After Drop}
