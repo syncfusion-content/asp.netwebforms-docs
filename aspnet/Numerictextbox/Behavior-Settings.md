@@ -226,7 +226,7 @@ The minimum value limit can be assigned to the NumericTextbox by using the MinVa
 
 ### Configure Basic Properties
 
-Add the following code example in your ASPX page to render the NumericTextbox control with the MaxValueandMinValue properties.
+Add the following code example in your ASPX page to render the NumericTextbox control with the MaxValue and MinValue properties.
 
 {% highlight html %}
 

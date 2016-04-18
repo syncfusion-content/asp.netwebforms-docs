@@ -9,7 +9,7 @@ documentation: ug
 
 # Thumb Scrolling
 
-Normally, the scrollbar position is changed by dragging the scrollbar handle or click the arrows. The Scroller control allows you to pan or drag the scroll content area. To achieve this in your Scroller control, set the EnableTouchScroll set as true_._ In___S_croller control, the default value for EnableTouchScroll is true. When you want to prevent panning or dragging the scroll content area, set EnableTouchScroll to false.
+Normally, the scrollbar position is changed by dragging the scrollbar handle or click the arrows. The Scroller control allows you to pan or drag the scroll content area. To achieve this in your Scroller control, set the EnableTouchScroll set as true_._ In___Scroller control, the default value for EnableTouchScroll is true. When you want to prevent panning or dragging the scroll content area, set EnableTouchScroll to false.
 
 The following steps explains the configuration of EnableTouchScroll property in Scroller. 
 

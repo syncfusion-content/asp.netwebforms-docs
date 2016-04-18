@@ -31,7 +31,7 @@ OnNodeChecked
 Occurs when treeView node checkbox is checked.
 </td>
 <td>
-Event Argument contains parameters are<br/><br/>e.NodeText - Text of TreeView Selected Node<br/><br/>e.NodeID - Id of TreeView Selected Node<br/><br/>e.Checked - Status of TreeView Node Checkbox<br/><br/>e.CurrentChekcedNodes - List of TreeView Current Checked Nodes<br/><br/>e.EventType - Event Name<br/><br/>e.Arguments - Contain keys and values for NodeText,NodeID,Checked and CurrentCheckedNodes<br/><br/></td>
+Event Argument contains parameters are<br/><br/>e.NodeText - Text of TreeView Selected Node<br/><br/>e.NodeID - Id of TreeView Selected Node<br/><br/>e.Checked - Status of TreeView Node Checkbox<br/><br/>e.CurrentCheckedNodes - List of TreeView Current Checked Nodes<br/><br/>e.EventType - Event Name<br/><br/>e.Arguments - Contain keys and values for NodeText,NodeID,Checked and CurrentCheckedNodes<br/><br/></td>
 </tr>
 <tr>
 <td>

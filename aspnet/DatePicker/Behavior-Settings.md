@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Behaviour Settings
-description: Configure DatePicker Behaviour settings
+title: Behavior Settings
+description: Configure DatePicker Behavior settings
 platform: aspnet
 control: DatePicker
 documentation: ug
 ---
-# Behaviour Settings
+# Behavior Settings
 
-EJWEB DatePicker has some default behaviour settings which helps you to perform more operation by built-in.
+EJWEB DatePicker has some default behavior settings which helps you to perform more operation by built-in.
 
 ## Selected Date
 

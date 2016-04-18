@@ -172,7 +172,7 @@ Add the following code in your ASPX page to render the Textbox control.
 
 
 
-The output for MaskEditTextbox when “TextAlign”is“right”.
+The output for MaskEditTextbox when “TextAlign” is “right”.
 
 ![C:/Users/giftline.jebamani/Desktop/dd.png](Appearance-and-styling_images/Appearance-and-styling_img4.png) 
 

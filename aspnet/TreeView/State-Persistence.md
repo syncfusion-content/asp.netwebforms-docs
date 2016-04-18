@@ -17,7 +17,7 @@ The model values of below are maintained through id basis of tree node.
 * checked
 * expanded/ collapsed state
 
-N>**In UL li template state has been persisted by index.**
+N>**In UL LI template state has been persisted by index.**
 
 TreeView stores its model in local storage/ cookies of browser before page refreshes and reinitialized with their stored model after refresh.
 
@@ -53,7 +53,7 @@ In the code behind page, create a data list which contains the details about tre
         
     {% endhighlight %}
     
-In the ASPX page, add TreeView elemnt with following properties.
+In the ASPX page, add TreeView element with following properties.
     
     {% highlight html %}
     

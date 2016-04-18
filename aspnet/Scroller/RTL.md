@@ -13,7 +13,7 @@ EnableRTL API provides right-to-left functionality and features for languages
 
 The following steps explains you the configuration of EnableRTL property in Scroller.
 
-In an ASP Xpage, add the following code to render Scroller.
+In an ASPX page, add the following code to render Scroller.
 
 {% highlight html %}
 

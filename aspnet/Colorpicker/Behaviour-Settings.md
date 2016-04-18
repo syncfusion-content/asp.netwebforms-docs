@@ -7,7 +7,7 @@ control: ColorPicker
 documentation: ug
 ---
 
-# Behaviour Settings
+# Behavior Settings
 
 ## ShowPreview
 
@@ -530,7 +530,7 @@ The following screenshot displays the output of the above code example.
 
 ### Theme Support
 
-The ColorPicker control support rich appearance. The ColorPicker supports 13 different themes of EssentialJavaSscript and bootstrap themes. To use these twelve themes, refer to the themes files in HTML page. 
+The ColorPicker control support rich appearance. The ColorPicker supports 13 different themes of EssentialJavaScript and bootstrap themes. To use these twelve themes, refer to the themes files in HTML page. 
 
 You need two style sheets to apply styles to ColorPicker control; ej.widgets.core.min.css and ej.theme.min.css. When you use ej.widgets.all.min.css then, you don’t need to use ej.widgets.core.min.css and ej.theme.min.css because ej.widgets.all.min.css is a combination of these two.
 
@@ -632,7 +632,7 @@ Add the following code example to the corresponding ASPX page to render the Colo
 
 
 
-Custom Css Styles.
+Custom CSS Styles.
 
 {% highlight css %}
 

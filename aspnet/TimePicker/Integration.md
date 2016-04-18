@@ -9,9 +9,9 @@ documentation: ug
 
 # Integration
 
-## Angular Support
+## AngularJS Support
 
-TimePicker control is availed with two types of Angular JS supports namely, 
+TimePicker control is availed with two types of AngularJS supports namely, 
 
 * One way binding
 * Two way binding 
@@ -22,11 +22,11 @@ Two-way binding supports both the processes – it applies the scope values to t
 
 Apply the plugin property assigning to the TimePicker control element through the directive that starts with a letter “e-“.
 
-To know more details about Angular binding, refer to the following link location,
+To know more details about AngularJS binding, refer to the following link location,
 
 <http://help.syncfusion.com/js/angularjs>
 
-The following code example depicts you the way to bind data to the TimePicker control through Angular support.
+The following code example depicts you the way to bind data to the TimePicker control through AngularJS support.
 
 
 {% highlight html %}
@@ -35,7 +35,7 @@ The following code example depicts you the way to bind data to the TimePicker co
 
 <head>
 
-    <title>Essential Studio for JavaScript : Timepicker angular</title>
+    <title>Essential Studio for JavaScript : Timepicker AngularJS</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
 
@@ -83,7 +83,7 @@ The following code example depicts you the way to bind data to the TimePicker co
 
                       <input id="time" type="text" ej-timepicker e-value="tvalue" />
 
-                        <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px;">Note:Two Way Angular Support</span></h6>
+                        <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px;">Note:Two Way AngularJS Support</span></h6>
 
                     </div>
 
@@ -153,11 +153,11 @@ Run the above code to render the following output.
 
 
 
-## Knockout Support
+## KnockoutJS Support
 
-Knockout support allows you to bind the ASPX elements against any of the available data model.
+KnockoutJS support allows you to bind the ASPX elements against any of the available data model.
 
-Two types of Knockout binding are supported,
+Two types of KnockoutJS binding are supported,
 
 * One-way binding
 * Two-way binding
@@ -166,11 +166,11 @@ One way binding refers to the process of applying observable values to all the a
 
 Two-way binding supports both the processes – it applies the observable values to the TimePicker control properties as well as the changes made in the TimePicker control are also reflected back and triggered within the observable collections. 
 
-For more information about the Knockout binding, refer to the following link location,
+For more information about the KnockoutJS binding, refer to the following link location,
 
 <http://help.syncfusion.com/js/knockoutjs>
 
-The following example depicts the way to bind data to the TimePicker control through the Knockout support that enables and populates data to the TimePicker control based on the value set to another TimePicker control.
+The following example depicts the way to bind data to the TimePicker control through the KnockoutJS support that enables and populates data to the TimePicker control based on the value set to another TimePicker control.
 
 {% highlight html %}
 
@@ -178,7 +178,7 @@ The following example depicts the way to bind data to the TimePicker control thr
 
 <head>
 
-    <title>Essential Studio for JavaScript : Timepicker KnockOut</title>
+    <title>Essential Studio for JavaScript : Timepicker KnockoutJS</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
 

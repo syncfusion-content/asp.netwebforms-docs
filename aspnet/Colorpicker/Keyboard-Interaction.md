@@ -38,11 +38,11 @@ Decrease the brightness value</td></tr>
 <tr>
 <td>
 Right</td><td>
-Increase the staturation value</td></tr>
+Increase the saturation value</td></tr>
 <tr>
 <td>
 Left</td><td>
-Decrease the staturation value</td></tr>
+Decrease the saturation value</td></tr>
 <tr>
 <td>
 Enter</td><td>

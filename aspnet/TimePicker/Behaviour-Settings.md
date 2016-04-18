@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Behaviour Settings | TimePicker | ASP.NET | Syncfusion
-description: behaviour settings
+title: Behavior Settings | TimePicker | ASP.NET | Syncfusion
+description: behavior settings
 platform: aspnet
 control: TimePicker
 documentation: ug

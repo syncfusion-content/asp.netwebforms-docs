@@ -22,7 +22,7 @@ The server side events present in the ColorPicker control are as follows.
 <td>
 OnSelect</td><td>
 triggers on selecting any color</td><td>
-e.Value– Value of the Colorpickere.EventType – Event Namee.Arguments – Contain keys and value of Colorpicker</td></tr>
+e.Value– Value of the Colorpicker.EventType – Event Name.Arguments – Contain keys and value of Colorpicker</td></tr>
 </table>
 
 

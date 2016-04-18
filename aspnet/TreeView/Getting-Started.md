@@ -11,7 +11,7 @@ documentation: UG
 	
 This section explains briefly about how to create a TreeView in ASP.NET Web platform.
 
-## Create your first TreeView in ASP.Net Web
+## Create your first TreeView in ASP.NET Web
 
 Create an ASP Web application and add necessary assemblies, CSS and scripts with the help of the given [ASP.NET Web-Getting Started ](http://help.syncfusion.com/aspnet/getting-started#) documentation. After creating this project, you can create a TreeView in following ways.
 

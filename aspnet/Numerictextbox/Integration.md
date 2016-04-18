@@ -9,7 +9,7 @@ documentation: ug
 
 # Integration
 
-## Angular Support
+## AngularJS Support
 
 The NumericTextbox control supports two types of Angular JS support namely,
 
@@ -18,7 +18,7 @@ The NumericTextbox control supports two types of Angular JS support namely,
 
 One-way binding refers to the process of applying scope values to all the available properties of the NumericTextbox control, but the changes made in the NumericTextbox control are not reflected or triggered in turn to the scope collection. This kind of binding applies to all the properties of the NumericTextbox control.
 
-Two-way binding supports both the processes; it applies the scope values to the Numeric Textbox properties as well as the changes made in the NumericTextbox control also get reflected back and triggered within the Angular scope change function.
+Two-way binding supports both the processes; it applies the scope values to the Numeric Textbox properties as well as the changes made in the NumericTextbox control also get reflected back and triggered within the AngularJS scope change function.
 
 Apply the plugin and property assigning to the NumericTextbox control element through the directive that starts with the letter “e-“.
 
@@ -118,7 +118,7 @@ The following example explains how to bind data to the NumericTextbox widget t
 
 
 
-The following screenshot displays the output of the NumericTextbox controls with two-way angular binding is as follows.
+The following screenshot displays the output of the NumericTextbox controls with two-way angularJS binding is as follows.
 
 
 
@@ -126,9 +126,9 @@ The following screenshot displays the output of the NumericTextbox controls wit
 
 
 
-## Knockout Support
+## KnockoutJS Support
 
-Knockout support allows you to bind the HTML elements against any of the available data models. It is of two types.
+KnockoutJS support allows you to bind the HTML elements against any of the available data models. It is of two types.
 
 * One-way binding
 * Two-way binding

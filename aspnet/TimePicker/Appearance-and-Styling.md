@@ -75,7 +75,7 @@ By default, there are 13 themes support available for the TimePicker control nam
 
 
 
-## Css Class
+## CSS Class
 
 To apply custom styles to your TimePicker control, you can specify CssClass property. The specified CSS name is added in the root of the TimePicker control.
 
