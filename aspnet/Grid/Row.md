@@ -637,7 +637,7 @@ The following code example describes the above behavior.
 {% highlight html %}
 <div style="float:left;width:49%">
         <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowRowDragAndDrop="true" Selectiontype="Multiple">
-            <RowDropSettings DragMapper="DragAndDrop.aspx/RowDragHandler1" DropMapper="DragAndDrop.aspx/RowDropHandler1"/>
+            <RowDropSettings DragMapper="DragAndDrop.aspx/GridDragHandler" DropMapper="DragAndDrop.aspx/GridDropHandler"/>
             <EditSettings AllowEditing="true"/>
             <Columns>
                 <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
@@ -650,7 +650,7 @@ The following code example describes the above behavior.
             </div>
         <div style="float:right;width:49%">
             <ej:Grid ID="DestGrid" runat="server" AllowPaging="True" AllowRowDragAndDrop="true" Selectiontype="Multiple">
-                <RowDropSettings DragMapper="DragAndDrop.aspx/RowDragHandler2" DropMapper="DragAndDrop.aspx/RowDropHandler2"/>
+                <RowDropSettings DragMapper="DragAndDrop.aspx/DestGridDragHandler" DropMapper="DragAndDrop.aspx/DestGridDropHandler"/>
             <Columns>
                 <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
                 <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
@@ -678,7 +678,7 @@ public partial class RowTemplate : System.Web.UI.Page
 
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public static object RowDragHandler1(List<Orders> deleted)
+        public static object GridDragHandler(List<Orders> deleted)
         {
             OrderRepository.Delete(deleted);
             return deleted;
@@ -686,7 +686,7 @@ public partial class RowTemplate : System.Web.UI.Page
         
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public static object RowDragHandler2(List<Orders> deleted)
+        public static object DestGridDragHandler(List<Orders> deleted)
         {
             OrderRepository.Delete2(deleted);
             return deleted;
@@ -694,7 +694,7 @@ public partial class RowTemplate : System.Web.UI.Page
 
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public static object RowDropHandler1(List<Orders> added)
+        public static object GridDropHandler(List<Orders> added)
         {
             RowDropModel dropDetails = (RowDropModel)ser.Deserialize(Request.Headers["rowDropDetails"], typeof(RowDropModel));
             var count = 0;
@@ -712,7 +712,7 @@ public partial class RowTemplate : System.Web.UI.Page
       
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public static object RowDropHandler2(List<Orders> added)
+        public static object DestGridDropHandler(List<Orders> added)
         {
             RowDropModel dropDetails = (RowDropModel)ser.Deserialize(Request.Headers["rowDropDetails"], typeof(RowDropModel));
             var count = 0;
