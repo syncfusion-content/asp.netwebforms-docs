@@ -735,8 +735,6 @@ public partial class RowTemplate : System.Web.UI.Page
 {% endhighlight  %}
 {% endtabs %} 
 
-{% endhighlight %}
-
 The following output is displayed before dropping Grid rows.
 
 ![](Row_images/Row_img7.png)
