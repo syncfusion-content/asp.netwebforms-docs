@@ -36,6 +36,10 @@ ej.core.min.js<br/><br/></td><td>
 Must be referred always before using all the JS controls.<br/><br/></td></tr>
 <tr>
 <td>
+ej.globalize.min.js<br/><br/></td><td>
+Must be referred for processing specific source-side actions globally.<br/><br/></td></tr>
+<tr>
+<td>
 ej.datepicker.min.js<br/><br/></td><td>
 DatePicker plugin.<br/><br/></td></tr>
 </table>
