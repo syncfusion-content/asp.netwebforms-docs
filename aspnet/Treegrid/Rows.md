@@ -331,7 +331,7 @@ The following code shows how to render row drag tooltip with the desired field i
 
 {% endhighlight %}
 
-The TooltipTemplate property renders the template tooltip for row drag and drop in the TreeGrid control by using the JS Render template. You can provide either the id value of the script element or the script element to the property.
+The TooltipTemplate property renders the template tooltip for row drag and drop in the TreeGrid control by using the JsRender template. You can provide either the id value of the script element or the script element to the property.
 
 The following code shows how to render row drag tooltip with tooltip template.
 
