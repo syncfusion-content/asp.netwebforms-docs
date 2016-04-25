@@ -358,7 +358,7 @@ The TreeGrid control has sorting functionality, to arrange the data in ascending
 
 ### Multicolumn Sorting
 
-Enable the multicolumn sorting in TreeGrid by setting AllowMultiSorting as True. You can sort multiple columns in TreeGrid, by selecting the desired column header 	while holding the CTRL key.
+Enable the multicolumn sorting in TreeGrid by setting AllowMultiSorting as True. You can sort multiple columns in TreeGrid, by selecting the desired column header 	while holding the `CTRL` key.
 
 {% highlight html %}
 
@@ -397,10 +397,10 @@ You can enable Editing in TreeGrid by using the EditSettings as follows.
 
 And also, the following editors are provided for support in TreeGrid control.
 
-* stringedit
-* booleanedit
-* numericedit
-* dropdownedit
+* string 
+* boolean 
+* numeric 
+* dropdown 
 * datepicker
 
 You can set the editor type for a particular column as follows.
