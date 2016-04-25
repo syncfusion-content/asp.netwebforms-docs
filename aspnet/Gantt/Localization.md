@@ -31,23 +31,23 @@ emptyRecord: "No records to display"
 <td>
 Column Header Texts:
 
-taskId
+taskId<br/>
 
-taskName
+taskName<br/>
 
-startDate
+startDate<br/>
 
-endDate
+endDate<br/>
 
-resourceInfo
+resourceInfo<br/>
 
-duration
+duration<br/>
 
-status
+status<br/>
 
-predecessor
+predecessor<br/>
 
-baselineStartDate
+baselineStartDate<br/>
 
 baselineEndDate</td><td>
 {% highlight js %}
@@ -66,7 +66,7 @@ baselineEndDate: "Baseline End Date"
 {% endhighlight %}</td></tr>
 <tr>
 <td>
-Edit Dialog Texts:addFormTitle editFormTitle saveButton cancelButton</td><td>
+Edit Dialog Texts:addFormTitle<br/> editFormTitle <br/>saveButton <br/>cancelButton</td><td>
 {% highlight js %}
 editDialogTexts: {     
 addFormTitle: "New Task",     
