@@ -337,9 +337,9 @@ Filtering type can be defined by FilterEditType property in each column object.
 
 ### FilterEditType:
 
-* Stringedit
-* Numericedit
-* Booleanedit
+* String edit
+* Numeric edit
+* Boolean edit
 * Dropdownlist
 * Datepicker
 * Datetimepicker
