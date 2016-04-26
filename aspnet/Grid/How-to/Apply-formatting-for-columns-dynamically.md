@@ -9,7 +9,7 @@ documentation: ug
 
 ## Apply formatting for columns dynamically
 
-Column format can be used dynamically to change data values format with the help of the public method. The following code example illustrates the Essential Javascript with column formatting in public method.
+Column format can be used dynamically to change data values format with the help of the public method. The following code example illustrates the Essential JavaScript with column formatting in public method.
 
 {% highlight c# %}
 

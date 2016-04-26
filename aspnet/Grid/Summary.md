@@ -190,7 +190,7 @@ The following output is displayed as a result of the above code example.
 
 ## Custom Summary by String
 
-This property helps you to create custom summary formula for summary. The following code example is for custom summary using Essential Asp.Net. We can achieve custom summary using CustomSummaryValue property.
+This property helps you to create custom summary formula for summary. The following code example is for custom summary using Essential ASP.NET. We can achieve custom summary using CustomSummaryValue property.
 
 {% highlight html %}
 
@@ -245,7 +245,7 @@ The following output is displayed as a result of the above code example.
 
 ## Custom Summary by Function
 
-Custom Summary is used to create custom summary formula for summary. The following code example is for custom summary using Essential Asp.Net.
+Custom Summary is used to create custom summary formula for summary. The following code example is for custom summary using Essential ASP.NET.
 
 {% tabs %}
 

@@ -673,7 +673,7 @@ It returns the current index of toolbar item.</td></tr>
 <tr>
 <td>
 itemCurrentTarget</td><td>
-It returns the current html item.</td></tr>
+It returns the current HTML item.</td></tr>
 <tr>
 <td>
 Gridmodel</td><td>
@@ -681,7 +681,7 @@ It returns the grid model in dictionary format.</td></tr>
 <tr>
 <td>
 itemTarget</td><td>
-It returns the html element of the target item.</td></tr>
+It returns the HTML element of the target item.</td></tr>
 <tr>
 <td>
 toolbarData</td><td>
@@ -990,7 +990,7 @@ public partial class _Default : System.Web.UI.Page
     
 ### OnServerPdfExporting
 
-The **OnServerPdfExporting** event is triggered when a request to Export the grid to Pdf document. The grid model details can be obtained server-side, as explained in the following table.
+The **OnServerPdfExporting** event is triggered when a request to Export the grid to PDF document. The grid model details can be obtained server-side, as explained in the following table.
 
 _Table 12: Syncfusion.JavaScript.Web.GridEventArgs argument of OnServerPdfExporting event_
 

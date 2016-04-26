@@ -9,13 +9,13 @@ documentation: ug
 
 # Overview 
 
-DataManager helps in managing relational data in ASP.NET. Its rich features make querying data sources easier. The OData Client fully supports OData queries that are enabled in Web API & WCF data services.
+DataManager helps in managing relational data in ASP.NET. Its rich features make querying data sources easier. The OData Client fully supports oData queries that are enabled in Web API & WCF data services.
 
 DataManager supports different type of data binding, such as:
 
 1. JSON
 2. Web Services
-3. OData
+3. oData
 
 Basically, all services that have JSON acts as a transport.
 

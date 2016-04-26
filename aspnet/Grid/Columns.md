@@ -355,7 +355,7 @@ The following output is displayed as a result of the above code example.
 
 ## Format
 
-`Format` is the process of customizing the particular column data with specified jquery recognized globalize formats, such as currency, numeric, decimal, percentage or dates. The globalize format can be specified by using `Format` property of `Columns`.
+`Format` is the process of customizing the particular column data with specified jQuery recognized globalize formats, such as currency, numeric, decimal, percentage or dates. The globalize format can be specified by using `Format` property of `Columns`.
 
 The `Format` value should be wrapped within "{0:" and "}". (For ex: "{0:C3}"). The [data format](https://github.com/jquery/globalize/tree/v0.1.1#format "data format") strings are available for the Date and Number types.
 
@@ -616,7 +616,7 @@ The following output is displayed as a result of the above code example.
 
 ## Column Template
 
-Html templates can be specified in the `Template` property of the particular column as a string (HTML element) or ID of the template's HTML element.
+HTML templates can be specified in the `Template` property of the particular column as a string (HTML element) or ID of the template's HTML element.
 
 You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [this link](http://www.jsviews.com/#jsrapi "this link"). 
 
@@ -860,7 +860,7 @@ Using `Command` column, you can add CRUD action buttons as one of the Grid colum
 3. Delete
 4. Cancel
 
-Through `ButtonOptions` property of `Commands`, you can specify all the button options which are supported by Essential Studio Asp.Net `Button` control. 
+Through `ButtonOptions` property of `Commands`, you can specify all the button options which are supported by Essential Studio ASP.NET `Button` control. 
 
 The following code example describes the above behavior.
 

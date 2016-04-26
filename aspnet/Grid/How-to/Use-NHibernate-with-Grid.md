@@ -11,7 +11,7 @@ documentation: ug
 
 ### NHibernate
 
-NHibernate is an object-relational mapping (ORM) solution for the Microsoft .NET platform. It provides a framework for mapping an object-oriented domain model to a traditional relational database.
+NHibernate is an object-relational mapping (ORM) solution for the Microsoft .NET platform. It provides a Framework for mapping an object-oriented domain model to a traditional relational database.
 
 ### Populate Grid with data by using NHibernate
 
@@ -249,7 +249,7 @@ public static class AppSession
  {% endhighlight %}
 
 
-N> In the above code example, the ORM mapping is performed by using the xml-documents and the mapping files are Employee.cfg.xml and EmployeeMap.hbm.xml
+N> In the above code example, the ORM mapping is performed by using the XML-documents and the mapping files are Employee.cfg.xml and EmployeeMap.hbm.xml
 
 
 

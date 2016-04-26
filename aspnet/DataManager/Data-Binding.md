@@ -141,7 +141,7 @@ The result of the above code example is illustrated as follows.
 
 ### OData V4
 
-The OData v4 is an improved version of OData protocols and the DataManager can also retrieve and consume OData v4 services.  For more details on OData v4 Services, refer to the [odata documentation](http://www.odata.org/documentation/).
+The OData v4 is an improved version of OData protocols and the DataManager can also retrieve and consume OData v4 services.  For more details on OData v4 Services, refer to the [OData documentation](http://www.odata.org/documentation/).
 
 You can refer to the following code example for consuming OData v4 services and bind the result to the Grid. In the the following code, crossDomain is enabled to make cross domain request.
 
@@ -241,7 +241,7 @@ The result for the above code example is illustrated as follows.
 
 ## Other Web Services binding
 
-The DataManager can also retrieve data from ASP.NET Web methods and ASP.NET MVC Controller`s action. You can achieve this by using the UrlAdaptor of DataManager. The UrlAdaptor is discussed briefly in the adaptor section.  By default, the URL Adaptor is used when accessing remote data. 
+The DataManager can also retrieve data from ASP.NET Web methods and ASP.NET MVC Controller`s action. You can achieve this by using the UrlAdaptor of DataManager. The UrlAdaptor is discussed briefly in the adaptor section.  By default, the Url Adaptor is used when accessing remote data. 
 
 Refer to the following code example to know how the DataManager can be used to consume data from the web method.
 
@@ -286,7 +286,7 @@ Refer to the following code example to know how the DataManager can be used to c
 
 ## Offline Mode
 
-The offline mode is one of the useful feature of DataManager that can be enabled by setting offline property of the data manager as true. With offline as true, the DataManager requests the server only once and further data manipulation operation can be done at client side itself.
+The offline mode is one of the useful feature of DataManager that can be enabled by setting offline property of the datamanager as true. With offline as true, the DataManager requests the server only once and further data manipulation operation can be done at client side itself.
 
 In the following code example, the offline property of the DataManager is set as true.
 

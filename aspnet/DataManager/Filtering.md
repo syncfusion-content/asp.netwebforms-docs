@@ -23,19 +23,19 @@ Filter operators are used to specify the filter type. The various filter operato
 <tr>
 <td>
 Number</td><td>
-ej.FilterOperators.greaterThan,ej.FilterOperators.greaterThanOrEqual,ej.FilterOperators.lessThan,ej.FilterOperators.lessThanOrEqual,ej.FilterOperators.equal</td></tr>
+ej.FilterOperators.greaterThan ej.FilterOperators.greaterThanOrEqual ej.FilterOperators.lessThan ej.FilterOperators.lessThanOrEqual ej.FilterOperators.equal</td></tr>
 <tr>
 <td>
 String</td><td>
-ej.FilterOperators.startsWith,ej.FilterOperators.endsWith,ej.FilterOperators.contains,ej.FilterOperators.equal,ej.FilterOperators.notEqual</td></tr>
+ej.FilterOperators.startsWith ej.FilterOperators.endsWith ej.FilterOperators.contains ej.FilterOperators.equal ej.FilterOperators.notEqual</td></tr>
 <tr>
 <td>
 Boolean</td><td>
-ej.FilterOperators.equal,ej.FilterOperators.notEqual</td></tr>
+ej.FilterOperators.equalej.FilterOperators.notEqual</td></tr>
 <tr>
 <td>
 Date</td><td>
-ej.FilterOperators.greaterThan,ej.FilterOperators.greaterThanOrEqual,ej.FilterOperators.lessThan,ej.FilterOperators.lessThanOrEqual,ej.FilterOperators.equal</td></tr>
+ej.FilterOperators.greaterThan ej.FilterOperators.greaterThanOrEqual ej.FilterOperators.lessThan ej.FilterOperators.lessThanOrEqual ej.FilterOperators.equal</td></tr>
 </table>
 
 

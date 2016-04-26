@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-## Adding header and footer in the Exported file (Excel, Word or Pdf)
+## Adding header and footer in the Exported file (Excel, Word or PDF)
 
 We can add header and footer in the exported file while exporting the grid control.
 
@@ -122,9 +122,9 @@ We can add header and footer to the word document using the HeadersFooters prope
 {% endhighlight %}
 {% endtabs %}
 
-# Adding header and footer in Exported Pdf document
+# Adding header and footer in Exported PDF document
 
-We can add header/footer to a pdf documents using PdfPageTemplateElement class. The header and footer can contain any types of element including dynamic fields.
+We can add header/footer to a PDF documents using PdfPageTemplateElement class. The header and footer can contain any types of element including dynamic fields.
 
 {% tabs %}
 

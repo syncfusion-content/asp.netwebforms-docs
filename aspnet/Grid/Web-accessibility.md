@@ -9,13 +9,13 @@ documentation: ug
 
 # Web accessibility
 
-Web accessibility is an easy way to create a website or application by world wide users, including disabled users. You can develop sites with the help of assistive technologies. Essential Javascript supports the Web UI accessibility resources. They are:
+Web accessibility is an easy way to create a website or application by world wide users, including disabled users. You can develop sites with the help of assistive technologies. Essential JavaScript supports the Web UI accessibility resources. They are:
 
-## WAI – ARIA supports in Essential Javascript.Net Grid
+## WAI – ARIA supports in Essential JavaScript.Net Grid
 
 This helps enable better user interaction in Grid control and this uses the W3C’s Widget Design Patterns in the WAI specification and added customize attributes.
 
-## Full Keyboard control supports in Essential Javascript Grid
+## Full Keyboard control supports in Essential JavaScript Grid
 
 This helps to support Grid control with keyboard interaction. The key descriptions are:
 

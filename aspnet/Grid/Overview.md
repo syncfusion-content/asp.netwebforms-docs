@@ -9,13 +9,13 @@ documentation: ug
 
 # Overview
 
-The Grid control for ASP.NET is an efficient display engine for tabular data. It will pull from a datasource, such as ListCollection, OData web services, or SqlData, binding data fields to columns and displaying a column header to identify the field. It is a feature-rich control that provides extensive appearance customization options with support for grouped records. This Grid is very useful for generating complex grid-based reports with rich formatting. The most important features available in the Grid control for ASP.NET are paging, sorting, filtering, searching, grouping, and editing. 
+The Grid control for ASP.NET is an efficient display engine for tabular data. It will pull from a datasource, such as ListCollection, OData web services, or SQLData, binding data fields to columns and displaying a column header to identify the field. It is a feature-rich control that provides extensive appearance customization options with support for grouped records. This Grid is very useful for generating complex grid-based reports with rich formatting. The most important features available in the Grid control for ASP.NET are paging, sorting, filtering, searching, grouping, and editing. 
 
 ## Key Features
 
 Some important features of the Grid control for ASP.NET are:
 
-* Data sources—Bind the Grid control with list collection or sql data or any other data.
+* Data sources—Bind the Grid control with list collection or SQL data or any other data.
 * Sorting and grouping—Supports _n_ levels of sorting and grouping.
 * Filtering—Offers Excel-like filtering for filter data.
 * Editing—Offers two editing modes for inserting, editing, and deleting records in a grid.
