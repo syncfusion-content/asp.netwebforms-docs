@@ -37,14 +37,14 @@ Includes only the widget basic functions and framework features. Must be referre
 <tr>
 <td>
 ej.globalize.min.js<br/><br/></td><td>
-Provides number formatting and parsing, date and time formatting and parsing, currency formatting, message formatting (ICU message format pattern), and plural support.<br/><br/></td></tr>
+To support the globalization.<br/><br/></td></tr>
 <tr>
 <td>
 ej.datepicker.min.js<br/><br/></td><td>
 DatePicker plugin.<br/><br/></td></tr>
 </table>
 
-N> From V13.4.0.53 onwards, jQuery.globalize.min.js file has been replaced with our ej.globalize.min.js. For version lower than 13.4.0.53, refer jQuery.globalize.min.js
+N> From V13.4.0.53 onwards, jQuery.globalize.min.js file has been replaced with our script file ej.globalize.min.js to support the globalization. For version lower than 13.4.0.53, refer jQuery.globalize.min.js.
 
 You can make use of **ej.web.all.min.js** file which encapsulates all EJWEB components and frameworks in single file.
 
