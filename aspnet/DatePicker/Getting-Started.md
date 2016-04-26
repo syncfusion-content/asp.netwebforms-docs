@@ -33,7 +33,7 @@ Description / Usage </th></tr>
 <tr>
 <td>
 ej.core.min.js<br/><br/></td><td>
-Includes only the widget basic functions and framework features.<br/><br/></td></tr>
+Includes only the widget basic functions and framework features. Must be referred always before using all the JS controls<br/><br/></td></tr>
 <tr>
 <td>
 ej.globalize.min.js<br/><br/></td><td>
