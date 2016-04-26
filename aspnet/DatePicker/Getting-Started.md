@@ -44,7 +44,7 @@ ej.datepicker.min.js<br/><br/></td><td>
 DatePicker plugin.<br/><br/></td></tr>
 </table>
 
-N> From V13.4.0.53 onwards, jQuery.globalize.min.js file has been replaced with our script file ej.globalize.min.js to support the globalization. For version lower than 13.4.0.53, refer jQuery.globalize.min.js.
+N> From V13.4.0.53 onwards, jQuery.globalize.min.js file has been replaced with our script file ej.globalize.min.js to support the globalization for our widgets. For version lower than 13.4.0.53, refer jQuery.globalize.min.js.
 
 You can make use of **ej.web.all.min.js** file which encapsulates all EJWEB components and frameworks in single file.
 
