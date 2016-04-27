@@ -77,7 +77,7 @@ public partial class DataManager : System.Web.UI.Page
 
 {% endtabs %}
 
-In this application, as you have web service for NorthWind database, you can assign the web service URL link to the URL property of DataManager, and you can enable crossDomain to retrieve data from another domain.
+In this application, as you have web service for Northwind database, you can assign the web service URL link to the URL property of DataManager, and you can enable crossDomain to retrieve data from another domain.
 
 {% highlight html %}
 
