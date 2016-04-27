@@ -241,7 +241,7 @@ The result for the above code example is illustrated as follows.
 
 ## Other Web Services binding
 
-The DataManager can also retrieve data from ASP.NET Web methods and ASP.NET MVC Controller`s action. You can achieve this by using the UrlAdaptor of DataManager. The UrlAdaptor is discussed briefly in the adaptor section.  By default, the Url Adaptor is used when accessing remote data. 
+The DataManager can also retrieve data from ASP.NET Web methods and ASP.NET MVC Controller`s action. You can achieve this by using the UrlAdaptor of DataManager. The UrlAdaptor is discussed briefly in the adaptor section.  By default, the URL Adaptor is used when accessing remote data. 
 
 Refer to the following code example to know how the DataManager can be used to consume data from the web method.
 
