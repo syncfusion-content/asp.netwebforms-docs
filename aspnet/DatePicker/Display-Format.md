@@ -98,7 +98,7 @@ Default<br/><br/></td><td>
 <tr>
 <td>
 Short<br/><br/></td><td>
-d, M, y<br/><br/></td></tr>
+d M, y<br/><br/></td></tr>
 <tr>
 <td>
 Medium <br/><br/></td><td>
@@ -106,7 +106,7 @@ d MM, y<br/><br/></td></tr>
 <tr>
 <td>
 Full <br/><br/></td><td>
-dddd, MMMM, yy<br/><br/></td></tr>
+dddd, d MMMM, yy<br/><br/></td></tr>
 <tr>
 <td>
 UTC<br/><br/></td><td>
