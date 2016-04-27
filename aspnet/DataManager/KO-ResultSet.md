@@ -9,7 +9,7 @@ documentation: ug
 
 # KO ResultSet
 
-The DataManager contains a default method to subscribe the view model properties as KO observable. This is done at the success of the executeQuery by using the getKnockoutModel. You can also provide computed properties to the viewmodel by using the getKnockoutModel.
+The DataManager contains a default method to subscribe the view model properties as KO observable. This is done at the success of the executeQuery by using the getKnockoutModel. You can also provide computed properties to the view model by using the getKnockoutModel.
 
 The following code example illustrates on how the model is made observable and updated.
 
