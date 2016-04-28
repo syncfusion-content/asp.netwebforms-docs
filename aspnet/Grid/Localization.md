@@ -395,7 +395,7 @@ public partial class Localization : System.Web.UI.Page
 {% endtabs %}
 
 
-The Grid and Pager has its own locale labels for applying the information about specific fields in its control. You can set them in the sample side for each culture based translation. The following code example is applied in the sample side for all the above platforms.
+The Grid and Pager has its own locale labels for applying the information about specific fields in its control. You can set them in the sample side for each culture based translation. The following code example is applied in the sample side.
 
 {% highlight js %}
 
@@ -907,7 +907,7 @@ public partial class Localization : System.Web.UI.Page
 
 ![](Localization_images/Localization_img3.png)
 
-I> In the above example, you need to use `globalize.culture.de-DE` script file to globalize values. 
+I> In the above example, you need to use `ej.culture.de-DE` script file to globalize values. 
 
 ## Right to Left - RTL
 
