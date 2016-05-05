@@ -258,7 +258,10 @@ Last Page</td></tr>
 </table>
 
 
+{% tabs %}
+
 {% highlight html %}
+
 
 <script src="../Scripts/cultures/ej.culture.de-DE.min.js" type="text/javascript"></script>
 
@@ -283,6 +286,7 @@ Last Page</td></tr>
         </ej:Grid>
 
 {% endhighlight %}
+
 {% highlight c# %}
 
 
@@ -610,6 +614,8 @@ Search</td></tr>
 
 Please find the code
 
+{% tabs %}
+
 {% highlight html %}
 
 <script src="../Scripts/cultures/ej.culture.de-DE.min.js" type="text/javascript"></script>
@@ -742,8 +748,6 @@ public partial class Localization : System.Web.UI.Page
 
 {% endhighlight  %}
 
-{% endtabs %}
-
 {% highlight js %}
 
 <script type="text/javascript">
@@ -762,12 +766,16 @@ ej.ExcelFilter.Locale["de-DE"] = {
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![](Localization_images/Localization_img2.png)
 
 
 ## Globalization
 
 `ej.globalize` library is used to globalize numeric values in Grid control using [`Format`](http://help.syncfusion.com/js/api/ejgrid#members:Columns-Format "Format") property in [`Columns`](http://help.syncfusion.com/js/api/ejgrid#members:Columns "Columns"). Globalize values will be automatically used when [`Locale`](http://help.syncfusion.com/js/api/ejgrid#members:Locale "Locale") property is set with Locale string value for example `de-DE`.
+
+{% tabs %}
 
 {% highlight html %}
 
@@ -794,6 +802,7 @@ ej.ExcelFilter.Locale["de-DE"] = {
         </ej:Grid>
 
 {% endhighlight %}
+
 {% highlight c# %}
 
 
@@ -902,6 +911,7 @@ public partial class Localization : System.Web.UI.Page
     }
 
 {% endhighlight  %}
+
 {% endtabs %}
 
 
@@ -912,6 +922,7 @@ I> In the above example, you need to use `ej.culture.de-DE` script file to globa
 ## Right to Left - RTL
 
 By default, Grid render its text and layout from left to right. To customize Grid's direction, you can change direction from LTR to RTL by using [`EnableRTL`](http://help.syncfusion.com/js/api/ejgrid#members:EnableRTL "EnableRTL") as true.
+{% tabs %}
 
 {% highlight html %}
 
