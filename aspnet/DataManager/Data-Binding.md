@@ -286,7 +286,7 @@ Refer to the following code example to know how the DataManager can be used to c
 
 ## Offline Mode
 
-The offline mode is one of the useful feature of DataManager that can be enabled by setting offline property of the datamanager as true. With offline as true, the DataManager requests the server only once and further data manipulation operation can be done at client side itself.
+The offline mode is one of the useful feature of DataManager that can be enabled by setting offline property of the DataManager as true. With offline as true, the DataManager requests the server only once and further data manipulation operation can be done at client side itself.
 
 In the following code example, the offline property of the DataManager is set as true.
 
