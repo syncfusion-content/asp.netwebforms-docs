@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-## Adding comments in the Exported file (Excel, Word or Pdf)
+## Adding comments in the Exported file (Excel, Word or PDF)
 
 We can add comments in the exported file while exporting the grid control.
 
@@ -61,7 +61,7 @@ The following screenshot displays the exported grid with comments added to cells
 
 # Adding Comments in Exported Word document
 
-We can add comments to the word document using the AppendComment method in the WComment class of the DocIO namespace. We can traverse through the required row/cell with the help of WTable class and thus can append the comment to the table cell.
+We can add comments to the word document using the AppendComment method in the WComment class of the DocIO namespace. We can traverse through the required row/cell with the help of Wtable class and thus can append the comment to the table cell.
 
 {% tabs %}
 
@@ -107,9 +107,9 @@ The following screenshot shows the exported grid with comments added to the docu
 
 ![](Add-comments-in-the-Exported-file_images/Add-comments-in-the-Exported-file_img2.png)
 
-# Adding Comments in Exported Pdf document
+# Adding Comments in Exported PDF document
 
-We can add comments to a pdf documents using the annotation support provided in the Pdf namespace. The Annotation added can be of any format such as freeTextAnnotation, popUpAnnotation, LineAnnotation etc., Based on our requirement, we can add annotation which is available under Syncfusion.Pdf.Interactive namespace.
+We can add comments to a PDF documents using the annotation support provided in the PDF namespace. The Annotation added can be of any format such as freeTextAnnotation, popUpAnnotation, LineAnnotation etc., Based on our requirement, we can add annotation which is available under Syncfusion.Pdf.Interactive namespace.
 
 {% tabs %}
 

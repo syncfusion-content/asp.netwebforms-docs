@@ -557,7 +557,7 @@ The following output is displayed as a result of the above code example.
 ![](Data-Binding_images/Data-Binding_img10.png)
 
 
-## WCF DataService / OData Service
+## WCF Data Service / OData Service
 
 WCF Data Services is a component of the .NET Framework that enables you to create services that use the Open Data Protocol (OData) to expose and consume data over the Web or intranet by using the semantics of representational state transfer (REST).
 

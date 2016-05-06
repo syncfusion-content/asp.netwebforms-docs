@@ -9,9 +9,9 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create a Grid in your application with ASP.Net.
+This section explains briefly about how to create a Grid in your application with ASP.NET.
 
-## Create your first Grid ASP.Net Web Forms Application
+## Create your first Grid ASP.NET Web Forms Application
 
 You can create a Grid with a highly customizable look and feel. You can use the Grid control to generate complex, grid-based reports, with rich formatting. In the following example, you can take a look at how the transaction of a product is managed, analysis of a particular sale using filtering and grouping feature. This section describes how you can add a group, filter and page sales products.
 
@@ -21,7 +21,7 @@ You can create a Grid with a highly customizable look and feel. You can use th
 
 
 
-1. Create a Syncfusion ASP.Net Web Forms application.
+1. Create a Syncfusion ASP.NET Web Forms application.
 2. Add a Grid in the Index.aspx page. 
 
    ![](Getting-Started_images/Getting-Started_img2.png)

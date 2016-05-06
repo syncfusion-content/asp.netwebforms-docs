@@ -228,7 +228,7 @@ The following output is displayed as a result of the above code example.
 
 You can add `Custom attribute` for particular column `td` element by using `CustomAttributes` property of the column.
 
-Based on custom attribute you can customize the style and appearance of the `td` element or handling Jquery functionalities. 
+Based on custom attribute you can customize the style and appearance of the `td` element or handling jQuery functionalities. 
 
 You can use JsRender syntax in the template.For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "the link").
 
@@ -280,7 +280,7 @@ The following output is displayed as a result of the above code example.
 
 ## Displaying HTML content
 
-This will helps you to show actual `HTML` value in grid content and header. To disable html code, set `disableHtmlEncode` property of `Columns` as true. 
+This will helps you to show actual `HTML` value in grid content and header. To disable HTML code, set `disableHtmlEncode` property of `Columns` as true. 
 
 The following code example describes the above behavior.
 
@@ -322,7 +322,7 @@ When you move the cursor over the particular cell it provides an information abo
 
 **Template**
 
-Html templates can be specified in the `Tooltip` property of the particular column cell as a string (HTML element) or ID of the template's HTML element.You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [this link](http://www.jsviews.com/#jsrapi "this link"). 
+HTML templates can be specified in the `Tooltip` property of the particular column cell as a string (HTML element) or ID of the template's HTML element.You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [this link](http://www.jsviews.com/#jsrapi "this link"). 
 
 N> It's a standard way to enclose the template within the `script` tag with `type` as "text/x-jsrender".
  

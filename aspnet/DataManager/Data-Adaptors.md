@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Adaptors
 
-DataManger uses adaptors to process data. There are three types of adaptors in DataManger. They are
+DataManager uses adaptors to process data. There are three types of adaptors in DataManager. They are
 
 * JSON Adaptor
 * URL Adaptor

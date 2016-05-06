@@ -9,11 +9,11 @@ documentation: ug
 
 # Exporting
 
-Exporting feature provides support to export Grid data into excel, word and pdf files. The tool bar has ExcelExport, WordExport, PdfExport icons that are used to perform exporting. When you click the toolbar exporting icon, it internally invokes the export() public method of Grid object to make export. You can also invoke export() method manually to make export.
+Exporting feature provides support to export Grid data into excel, word and PDF files. The tool bar has ExcelExport, WordExport, PdfExport icons that are used to perform exporting. When you click the toolbar exporting icon, it internally invokes the export() public method of Grid object to make export. You can also invoke export() method manually to make export.
 
 ## ASP
 
-In ASP, exporting is achieved by using Grid control server side method. Using Export() server method in Grid server side event, you can export the Grid into excel, pdf and word documents.
+In ASP, exporting is achieved by using Grid control server side method. Using Export() server method in Grid server side event, you can export the Grid into excel, PDF and word documents.
 
 {% tabs %}
 
