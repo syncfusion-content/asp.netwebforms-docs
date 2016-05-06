@@ -78,45 +78,6 @@ Marker, DataLabel and Fill color of each point in a series can be customized ind
 ![](Appearance_images/Appearance_img3.png)
 
 
-## Column Width customization
-
-Width of any column type series can be customized by using the **ColumnWidth** property. Default value of *ColumnWidth* is 0.7. Value ranges from 0 to 1. Here 1 corresponds to 100% of available width and 0 corresponds to 0% of available width.
-
-N> Width of a column also depends upon the *ColumnSpacing* property, because *ColumnSpacing* will reduce the space available for drawing a column
-
-{% highlight html %}
-
-	<ej:Chart ID="Chart1" runat="server">
-		<Series>
-			<ej:Series ColumnWidth = "0.8">            
-			</ej:Series>
-		</Series>
-	</ej:Chart>	
-
-{% endhighlight %}
-
-![](Appearance_images/Appearance_img10.png)
-
-## Spacing between Column Series
-
-Spacing between column type series can be customized using the **ColumnSpacing** property. Default value of *ColumnSpacing* is 0. Value ranges from 0 to 1. Here 1 corresponds to 100% available space and 0 corresponds to 0% available space.
-
-N> Space between columns will also affect the width of the column. For example, setting 20% spacing and 100% width will render columns with 80% of total width.
-
-{% highlight cshtml %}
-
-	<ej:Chart ID="Chart1" runat="server">
-		<Series>
-			<ej:Series ColumnWidth = "0.2">            
-			</ej:Series>
-		</Series>
-	</ej:Chart>	
-
-{% endhighlight %}
-
-![](Appearance_images/Appearance_img11.png)
-
-
 ## Series border customization
 
 To customize the series border color, width and dashArray, you can use **Series.Border** option. 
