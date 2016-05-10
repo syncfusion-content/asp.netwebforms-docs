@@ -2,7 +2,7 @@
 layout: post
 title: Overview Of the RichTextEditor control for Syncfusion Essential ASP.NET
 description: Overview for the RichTextEditor
-platform: ASP.NET
+platform: aspnet
 control: RTE
 documentation: ug
 

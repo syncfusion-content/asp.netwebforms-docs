@@ -2,7 +2,7 @@
 layout: post
 title: Working with content selection in RichTextEditor control for Syncfusion Essential ASP.NET
 description: Working with content selection in RichTextEditor control
-platform: ASP.NET
+platform: aspnet
 control: RTE
 documentation: ug
 

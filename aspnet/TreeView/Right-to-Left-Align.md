@@ -1,7 +1,7 @@
 ---
 title: Right to Left Align | TreeView | ASP.NET | Syncfusion
 description: Right to Left alignment support in TreeView
-platform: ASP.NET
+platform: aspnet
 control: TreeView
 documentation: UG
 keywords: TreeView,  Syncfusion, ASP Web TreeView UG Doc, Right to Left Align

@@ -2,7 +2,7 @@
 layout: post
 title: Getting started with RichTextEditor control for Syncfusion Essential ASP.NET
 description: Getting started with RichTextEditor and configure the toolbar and other functionalities.
-platform: ASP.NET
+platform: aspnet
 control: RTE
 documentation: ug
 

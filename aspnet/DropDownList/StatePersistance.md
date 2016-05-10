@@ -2,7 +2,7 @@
 layout: post
 title: State Persistance with DropDownList control for Syncfusion ASP.NET 
 description: State Persistence support to DropDownList control for Syncfusion ASP.NET 
-platform: ASP.NET
+platform: aspnet
 control: DropDownList
 documentation: ug
 

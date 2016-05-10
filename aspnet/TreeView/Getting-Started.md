@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with TreeView | TreeView | ASP.NET | Syncfusion
 description: To get start with TreeView by adding references
-platform: ASP.NET
+platform: aspnet
 control: TreeView
 documentation: UG
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Working with hyperlink customization in RichTextEditor control for Syncfusion Essential ASP.NET
 description: Working with Hyperlinks customization in RichTextEditor control
-platform: ASP.NET
+platform: aspnet
 control: RTE
 documentation: ug
 

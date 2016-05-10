@@ -2,7 +2,7 @@
 layout: post
 title: Working with Tables opreation in RichTextEditor control for Syncfusion Essential ASP.NET
 description: Working with Tables customization for RichTextEditor control
-platform: ASP.NET 
+platform: aspnet 
 control: RTE
 documentation: ug
 

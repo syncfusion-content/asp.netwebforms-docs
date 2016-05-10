@@ -2,7 +2,7 @@
 layout: post
 title: XHTML Validation in RichTextEditor control for Syncfusion Essential ASP.NET Webform
 description: XHTML Validation to format the RichTextEditor control's content
-platform: ASP.NET
+platform: aspnet
 control: RTE
 documentation: ug
 
