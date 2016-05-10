@@ -2,7 +2,7 @@
 layout: post
 title: Demension in DropDownList control for Syncfusion ASP.NET 
 description: Setting Dimensions to DropDownList control for Syncfusion ASP.NET 
-platform: ASP.NET
+platform: aspnet
 control: DropDownList
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Keyboard Support for RichTextEditor control in Syncfusion Essential ASP.NET
 description: Keyboard navigation support for RichTextEditor widget
-platform: ASP.NET
+platform: aspnet
 control: RTE
 documentation: ug
 

@@ -2,7 +2,7 @@
 layout: post
 title: TreeView with Drag and Drop option | TreeView | ASP.NET | Syncfusion
 description: Specify Drag and Drop option in TreeView and its settings
-platform: ASP.NET
+platform: aspnet
 control: TreeView
 documentation: UG
 ---

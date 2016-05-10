@@ -2,7 +2,7 @@
 layout: post
 title: Working with content related operation in RichTextEditor control for Syncfusion Essential ASP.NET
 description: Working with Content related changes in RichTextEditor control
-platform: ASP.NET
+platform: aspnet
 control: RTE
 documentation: ug
 

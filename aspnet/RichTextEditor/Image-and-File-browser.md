@@ -2,7 +2,7 @@
 layout: post
 title: Image and File browser in RichTextEditor control for Syncfusion Essential ASP.NET
 description: Configuring and working with Image and File browser in RichTextEditor  
-platform: ASP.NET
+platform: aspnet
 control: RTE
 documentation: ug
 

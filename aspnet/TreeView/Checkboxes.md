@@ -1,7 +1,7 @@
 ---
 title: Checkboxes in TreeView | TreeView | ASP.NET | Syncfusion
 description: Specify checkboxes in TreeView and its settings
-platform: ASP.NET
+platform: aspnet
 control: TreeView
 documentation: UG
 keywords: TreeView,  Syncfusion, ASP Web TreeView UG Doc, Checkboxes

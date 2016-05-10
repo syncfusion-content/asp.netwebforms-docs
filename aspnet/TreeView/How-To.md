@@ -1,7 +1,7 @@
 ---
 title: How To | TreeView | ASP.NET | Syncfusion
 description: How to do - section for TreeView
-platform: ASP.NET
+platform: aspnet
 control: TreeView
 documentation: UG
 keywords: TreeView,  Syncfusion, ASP Web TreeView UG Doc, How To

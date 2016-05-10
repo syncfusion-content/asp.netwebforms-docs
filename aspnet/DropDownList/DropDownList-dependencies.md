@@ -2,7 +2,7 @@
 layout: post
 title: Dependencies of the DropDownList control for Syncfusion ASP.NET WebForm
 description: Dependencies of the DropDownList control for Syncfusion ASP.NET WebForm 
-platform: ASP.NET WebForm
+platform: aspnet
 control: DropDownList
 documentation: ug
 ---

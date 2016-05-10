@@ -2,7 +2,7 @@
 layout: post
 title: Template support with DropDownList control for Syncfusion ASP.NET 
 description: Template Support with DropDownList control for Syncfusion ASP.NET
-platform: ASP.NET 
+platform: aspnet 
 control: DropDownList
 documentation: ug
 ---

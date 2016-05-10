@@ -2,7 +2,7 @@
 layout: post
 title: Server Side Events | TreeView | ASP.NET | Syncfusion
 description: server side events for TreeView
-platform: ASP.NET
+platform: aspnet
 control: TreeView
 documentation: UG
 ---

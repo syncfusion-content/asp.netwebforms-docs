@@ -1,7 +1,7 @@
 ---
 title: Tree Node manipulation | TreeView | ASP.NET | Syncfusion
 description: Handling node operations in TreeView
-platform: ASP.NET
+platform: aspnet
 control: TreeView
 documentation: UG
 keywords: TreeView,  Syncfusion, ASP Web TreeView UG Doc, Tree Node
