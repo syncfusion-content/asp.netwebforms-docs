@@ -8,7 +8,7 @@ keywords: FileExplorer,  Syncfusion, ASP.NET Web FileExplorer, UG document, Cont
 ---
 # Context Menu
 
-The context-menu has [list of items](#_Context_menu_items) which helps to perform FileExplorer operations, and it appears based on the target such as file or folder.
+The context-menu has [list of items](#context-menu-items) which helps to perform FileExplorer operations, and it appears based on the target such as file or folder.
 
 ## Context menu items
 

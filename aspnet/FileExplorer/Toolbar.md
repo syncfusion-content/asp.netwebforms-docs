@@ -114,7 +114,7 @@ It refreshes the current directory.<br/><br/><br/><br/></td>
 <td>
 Upload <br/><br/></td>
 <td>
-It uploads a file or list of files into the current directory.<br/><br/>And you can customize the upload configurations, for details check <br/>{{'[here](#_Customizing_the_Upload)'| markdownify }}.<br/><br/><br/><br/></td>
+It uploads a file or list of files into the current directory.<br/><br/>And you can customize the upload configurations, for details check <br/>{{'[here](#customizing-the-upload-functionality)'| markdownify }}.<br/><br/><br/><br/></td>
 </tr>
 <tr>
 <td>
@@ -162,7 +162,7 @@ It displays the details of the current selected file or folder.<br/><br/><br/><b
 <td>
 Searchbar<br/><br/></td>
 <td>
-The Search bar is the textbox which is used to search the files from the current directory. It list the files based on the user search.<br/><br/>The search behavior of the “searchbar” can be customize, for details check <br/>{{'[here](#_Search_bar"")'| markdownify }}.<br/><br/></td>
+The Search bar is the textbox which is used to search the files from the current directory. It list the files based on the user search.<br/><br/>The search behavior of the “searchbar” can be customize, for details check <br/>{{'[here](#search-bar)'| markdownify }}.<br/><br/></td>
 </tr>
 </table>
 
@@ -191,7 +191,7 @@ In the view page, add FileExplorer element and specify “**ShowToolbar**” as 
     
 ## Toolbar Configuration
 
-As you can see the available toolbar items from [here](#_Toolbar_items ""). From the list of available items, you can configure and group your required toolbar items only through the “[Tools](http://help.syncfusion.com/js/api/ejfileexplorer#members:tools)” property. And also you can arrange the toolbar items by the “[ToolsList](http://help.syncfusion.com/js/api/ejfileexplorer#members:toolslist)” property.
+As you can see the available toolbar items from [here](#toolbar-items). From the list of available items, you can configure and group your required toolbar items only through the “[Tools](http://help.syncfusion.com/js/api/ejfileexplorer#members:tools)” property. And also you can arrange the toolbar items by the “[ToolsList](http://help.syncfusion.com/js/api/ejfileexplorer#members:toolslist)” property.
 
 Add the following code example to the corresponding code behind page to create the tools list.
     
@@ -252,8 +252,11 @@ In the view page, add FileExplorer element as shown below
 The Search bar can be customize through the “[FilterSettings](http://help.syncfusion.com/js/api/ejfileexplorer#members:filtersettings)” property. By default the search doesn’t consider the case sensitivity, and the search works based on “[FilterType](http://help.syncfusion.com/js/api/ejfileexplorer#members:filtersettings-filtertype)”.
 
 The FileExplorer allows the following filter types in the search functionality.
+
 * “FilterOperator.StartsWith” – Supports to search text with starts with
+
 * “FilterOperator.Contains” – Supports to search text with contains with
+
 * “FilterOperator.EndsWith” – Supports to search text with ends with
 
 In the view page, you can configure the filter type with enabling case sensitivity like below:
@@ -278,7 +281,7 @@ In the view page, you can configure the filter type with enabling case sensitivi
     
 ## Custom Tool in Toolbar
 
-From the [toolbar items ](#_Toolbar_items)you can see the list of built-in tools to perform the operations. Along with this built-in tools, you can add your custom tool with the custom functionality.
+From the [toolbar items ](#toolbar-items)you can see the list of built-in tools to perform the operations. Along with this built-in tools, you can add your custom tool with the custom functionality.
 
 You can find an online demo sample of FileExplorer with custom tool from [here](http://mvc.syncfusion.com/demos/web/fileexplorer/customtool#). 
 
