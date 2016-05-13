@@ -19,10 +19,13 @@ To create an ASP Web Project and add necessary assemblies you can use the help o
 ## Adding the references
 
 To include the control in the application the following references need to be added:
+
 * CSS references
+
 * Script references
 
 CSS file
+
 * [ej.web.all.min.css](http://cdn.syncfusion.com/13.4.0.58/js/web/flat-azure/ej.web.all.min.css#) includes all widgets styles (To know more about theme refer [Theming in Essential JavaScript Component](http://help.syncfusion.com/js/theming-in-essential-javascript-components#))
 
 
@@ -31,8 +34,11 @@ N> Essential JS widgets having the support for 13 built-in themes, to know more 
 ### Script references
 
 The external script dependencies of the FileExplorer widget are,
+
 * [jQuery 1.7.1](http://jquery.com/#) or later versions.
+
 * [jQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing/#) - to support the animation effects.
+
 * [jsrender](https://www.jsviews.com/#jsrender) – for grid view template.
 
 And the internal script dependencies of the FileExplorer widget are:

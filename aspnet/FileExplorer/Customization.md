@@ -62,7 +62,7 @@ The content pane is the main part of the Fie explorer UI which displays all the 
 * Tile
 * Large Icons
 
-The **grid view** displays the files and folders in a grid layout with the details in separate columns. By default the grid view having the four columns which displays the file name, type, date modified and size of the file. For more details about grid view customization, refer [here](http://help.syncfusion.com/js/fileexplorer/customization#customizing-the-grid).
+The **grid view** displays the files and folders in a grid layout with the details in separate columns. By default the grid view having the four columns which displays the file name, type, date modified and size of the file. For more details about grid view customization, refer [here](#customizing-the-grid-view).
 
 The **tile view** display the files and folders like a small size icons in left side and file details in right. This allows the thumbnails for the image files so that you can view the tiny preview of all image files.
 
