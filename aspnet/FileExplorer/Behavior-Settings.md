@@ -14,7 +14,7 @@ Here are the some properties to customize the behavior of FileExplorer.
 
 FileExplorer control showcase all the files from the filesystem, here you can customize the file types that what you want to show by using “[FileTypes](http://help.syncfusion.com/js/api/ejfileexplorer#members:filetypes)” property. It filter the files based on the file extensions.
 
-By default it having the value “*.*”, so it allows all the file types. In case of image browser you can allow the image files only by setting “*.png, *.gif, *.jpg, *.jpeg”, so it doesn’t allow the other type of files.
+By default it having the value “\*.\*”, so it allows all the file types. In case of image browser you can allow the image files only by setting “*.png, *.gif, *.jpg, *.jpeg”, so it doesn’t allow the other type of files.
 
 In the view page, add FileExplorer element and specify the file type restriction as shown below.
 
