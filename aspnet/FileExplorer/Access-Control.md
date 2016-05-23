@@ -434,7 +434,7 @@ It used to search all the matched files and sub-folders in the given folder path
 </tr>
 </table>
 
-N> If needed, customer can also add additional data along with existing properties using **FileExplorerDirectoryContent** class.
+I> If needed, customer can also add additional data along with existing properties using **FileExplorerDirectoryContent** class
 
 ### Example
 
@@ -513,7 +513,4 @@ We can make a FileExplorer with access rule by doing following steps,
 
 The following screenshot displays the output of the above code.
 
-![](Access-Control_images/Access-Control_img1.png)
-
-FileExplorer with Access Rule
-{:.caption}
+{% include image.html url="/AccessControl_images/AccessControl_img1.png" caption="FileExplorer with Access Rule"%}
