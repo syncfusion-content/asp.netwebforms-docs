@@ -630,7 +630,7 @@ The following code example describes the above behavior.
     <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
         <PageSettings PageSize="4"></PageSettings>
         <Columns>
-            <ej:Column HeaderText="Photo" Template="True" TemplateID="#columnTemplate" TextAlign="Center" />
+            <ej:Column HeaderText="Photo" Template="<img style='width: 75px; height: 70px' src='/13.2.0.29/themes/web/images/employees/{{:EmployeeID}}.png' alt='{{:EmployeeID}}.png' />" TextAlign="Center" />
             <ej:Column Field="EmployeeID" />
             <ej:Column Field="FirstName" />
             <ej:Column Field="LastName" />
@@ -639,11 +639,7 @@ The following code example describes the above behavior.
     </ej:Grid>
 </asp:Content>
 {% endhighlight  %}
-{% highlight js %}	
-    <script type="text/x-jsrender" id="columnTemplate">
-        <img style="width: 75px; height: 70px" src="/13.2.0.29/themes/web/images/employees/{{"{{"}}:EmployeeID {{}}}}.png" alt="{{"{{"}}:EmployeeID {{}}}}" />
-    </script>
-{% endhighlight  %}
+
 {% highlight c# %}
 namespace WebSampleBrowser.Grid
 {
@@ -874,7 +870,7 @@ The following code example describes the above behavior.
             <ej:Column Field="EmployeeID" />
             <ej:Column Field="Freight" />
             <ej:Column Field="ShipCountry" />
-            <ej:Column HeaderText="Manage Records" IsUnbound="True" Width="130">
+            <ej:Column HeaderText="Manage Records" Width="130">
                 <Command>
                     <ej:Commands Type="edit">
                         <ButtonOptions Text="Edit"></ButtonOptions>
@@ -929,7 +925,7 @@ The following code example describes the above behavior.
         <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"></EditSettings>
         <Columns>
             <ej:Column Field="EmployeeID" />
-            <ej:Column HeaderText="Employee Details" IsUnbound="True" Width="130" TextAlign="Center">
+            <ej:Column HeaderText="Employee Details" Width="130" TextAlign="Center">
                 <Command>
                     <ej:Commands Type="detail">
                         <ButtonOptions Text="Details" Width="100" Click="onClick"></ButtonOptions>
