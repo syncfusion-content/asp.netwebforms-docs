@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Drill Operation | OLAPChart | ASP.NET | Syncfusion
+title: Drill Operation | PivotChart | ASP.NET | Syncfusion
 description: drill operation
 platform: aspnet
-control: OLAPChart
+control: PivotChart
 documentation: ug
 ---
 
 # Drill Operation
 
-This is a basic feature of OlapChart through which the amount of information can be limited, for a better view. It allows you to drill down to access the detailed level of data or drill up to see the summarized data by using the Context Menu present in the OlapChart.
+This is a basic feature of PivotChart through which the amount of information can be limited, for a better view. It allows you to drill down to access the detailed level of data or drill up to see the summarized data by using the Context Menu present in the PivotChart.
 
 Drill up, also called roll up, navigates from more detailed data to less detailed data, by climbing up a concept hierarchy for a dimension.
 
@@ -21,18 +21,18 @@ Drill down, also called roll down, is the reverse of drill up. It navigates from
 ![](Drill-Operation_images/Drill-Operation_img2.png)
 
 
-DrillSuccess event gets triggered when you right-click on the OlapChart and select any option available from the context menu to perform drill up or drill down operation.
+DrillSuccess event gets triggered when you right-click on the PivotChart and select any option available from the context menu to perform drill up or drill down operation.
 
 {% tabs %}
 
 {% highlight html %}
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc">;
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc">;
 
 <ClientSideEvents DrillSuccess="DrillSuccess" />
 
 <Size Width="950px" Height="460px"></Size>
 
-</ej:OlapChart>
+</ej:PivotChart>
 {% endhighlight %}
 
 {% highlight js %}

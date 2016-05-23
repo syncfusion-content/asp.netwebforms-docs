@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Series | OLAPChart | ASP.NET | Syncfusion
+title: Series | PivotChart | ASP.NET | Syncfusion
 description: series
 platform: aspnet
-control: OLAPChart
+control: PivotChart
 documentation: ug
 ---
 
 #Series
 
 ##Series Point customization
-By using the `fill` and `border` properties of Chart series, you can customize the OlapChart series color, border color and border width.
+By using the `fill` and `border` properties of Chart series, you can customize the PivotChart series color, border color and border width.
  
 {% highlight html %}
 
@@ -18,10 +18,10 @@ By using the `fill` and `border` properties of Chart series, you can customize t
 //...
 
 <body>
-    <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
         <ClientSideEvents Load="loadTheme" SeriesRendering="onSeriesRenders" />
           <Size Width="100%" Height="460px"></Size>
-    </ej:OlapChart>
+    </ej:PivotChart>
     <script type="text/javascript">
         function onSeriesRenders(args) {
             this.model.series[0].points[0].fill = "aqua";

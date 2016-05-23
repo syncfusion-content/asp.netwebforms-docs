@@ -3,7 +3,7 @@ layout: post
 title: User-Interactions
 description: user interactions
 platform: aspnet
-control: OlapChart
+control: PivotChart
 documentation: ug
 ---
 
@@ -12,15 +12,15 @@ documentation: ug
 ##Tooltip
 
 ###Enable Tooltip for Data Points
-Tooltip for the data points can be enabled using the **"Visible"** option of the `Tooltip` property under **"commonSeriesOptions"** of the OlapChart.
+Tooltip for the data points can be enabled using the **"Visible"** option of the `Tooltip` property under **"commonSeriesOptions"** of the PivotChart.
 
 {% highlight html %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
     //Enabling tooltip of data point
     <CommonSeriesOptions Tooltip-Visible="True" />
     <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %}
 
@@ -42,11 +42,11 @@ HTML elements can be displayed inside the tooltip by using the `Template` option
         </div>
     </div>
 </div>
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
     //Enabling tooltip of data point
     <CommonSeriesOptions Tooltip-Visible="True" Tooltip-Template="Tooltip" />
     <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %}
 
@@ -57,11 +57,11 @@ By using `Fill` and `Border` properties of tooltip, you can customize its backgr
 
 {% highlight html %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
     //Change tooltip color and border
     <CommonSeriesOptions Tooltip-Visible="True" Tooltip-Fill="#FF9933" Tooltip-Border-Width="1" Tooltip-Border-Color="#993300" />
     <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %}   
 
@@ -72,11 +72,11 @@ The tooltip properties, `Rx` and `Ry` are used to customize its corner radius.
 
 {% highlight html %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
     //Customize the corner radius of the tooltip rectangle.
     <CommonSeriesOptions Tooltip-Visible="True" Tooltip-RX="50" Tooltip-RY="50" />
     <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %} 
 
@@ -94,9 +94,9 @@ There are two ways to zoom the Chart:
 {% highlight html %}
 
 //Enable zooming in chart
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Zooming-Enable="true" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" Zooming-Enable="true" ClientIDMode="Static">
 <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %} 
 
@@ -112,16 +112,16 @@ You can zoom the particular axis like horizontal axis or vertical axis or both a
 {% highlight html %}
 
 //Enable horizontal zooming 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" Zooming-Enable="true" Zooming-Type="x" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" Zooming-Enable="true" Zooming-Type="x" ClientIDMode="Static">
 <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %}
 
 ##Marker and Crosshair
 
 ###Marker Shape Customization
-In OlapChart, you can customize the marker `Shape` with different symbols like rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc.
+In PivotChart, you can customize the marker `Shape` with different symbols like rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc.
 
 {% highlight html %}
 
@@ -129,11 +129,11 @@ In OlapChart, you can customize the marker `Shape` with different symbols like r
 //...
 
 <body>
-    <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Line" />
         <ClientSideEvents Load="loadTheme" SeriesRendering="onSeriesRenders" />
         <Size Width="950px" Height="460px"></Size>
-    </ej:OlapChart>
+    </ej:PivotChart>
     <script type="text/javascript">
         function onSeriesRenders(args) {
             for (var seriescount = 0; seriescount < this.model.series.length; seriescount++)
@@ -153,7 +153,7 @@ Crosshair helps you to view the value at mouse position or touch contact point. 
 
 {% highlight html %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
     //Initializing Crosshair
     <CrossHair Visible="true"></CrossHair>
     //Enable crosshairLabel to X-Axis
@@ -161,7 +161,7 @@ Crosshair helps you to view the value at mouse position or touch contact point. 
     //Enable crosshairLabel to Y-Axis
     <PrimaryYAxis CrosshairLabel-Visible="true"></PrimaryYAxis>
     <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %}
 
@@ -172,7 +172,7 @@ By using `Line` property of crosshair, you can customize its line color and widt
 
 {% highlight html %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
     //Customizing the crosshair line
     <CrossHair Visible="true" Line-Width="2" Line-Color="Gray"></CrossHair>
     //Customizing the crosshair label background color and border
@@ -180,7 +180,7 @@ By using `Line` property of crosshair, you can customize its line color and widt
     </PrimaryXAxis>
     <PrimaryYAxis CrosshairLabel-Visible="true"></PrimaryYAxis>
     <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %}
 
@@ -193,11 +193,11 @@ Trackball can be enabled by setting both - 'Visible' option of the crosshair to 
 
 {% highlight html %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
     //Change crosshair type to track ball
     <CrossHair Visible="true" Type="TrackBall"></CrossHair>
     <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %}
 
@@ -208,18 +208,18 @@ Shape and size of the trackball marker can be customized using the `Shape` and `
 
 {% highlight html %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
     //Customize the trackball line color and width, marker shape and visibility
     <CrossHair Visible="true" Line-Width="2" Line-Color="#800000'" Type="TrackBall" Marker-Shape="Pentagon" Marker-Visible="true"></CrossHair>
     <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %} 
 
 ![](User-Interactions_images/trackballmarker.png) 
 
 ##Highlight
-OlapChart provides highlighting support for the series and data points on mouse hover. To enable highlighting, set the **“enable”** property to true in the `highlightSettings` option of the series.
+PivotChart provides highlighting support for the series and data points on mouse hover. To enable highlighting, set the **“enable”** property to true in the `highlightSettings` option of the series.
 
 {% highlight html %}
 
@@ -227,11 +227,11 @@ OlapChart provides highlighting support for the series and data points on mouse 
 //...
 
 <body>
-    <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
         <Size Width="950px" Height="460px"></Size>
-    </ej:OlapChart>
+    </ej:PivotChart>
     <script type="text/javascript">
         function onSeriesRenders(args) {
             for (var seriescount = 0; seriescount < this.model.series.length; seriescount++)
@@ -257,11 +257,11 @@ You can set three different modes for highlighting data points and series by usi
 //...
 
 <body>
-    <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
         <Size Width="950px" Height="460px"></Size>
-    </ej:OlapChart>
+    </ej:PivotChart>
     <script type="text/javascript">
         function onSeriesRenders(args) {
             for (var seriescount = 0; seriescount < this.model.series.length; seriescount++) {
@@ -288,11 +288,11 @@ To customize the highlighted series, use `border.color`, `border.width` and `opa
 //...
 
 <body>
-    <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
         <Size Width="950px" Height="460px"></Size>
-    </ej:OlapChart>
+    </ej:PivotChart>
     <script type="text/javascript">
         function onSeriesRenders(args) {
             for (var seriescount = 0; seriescount < this.model.series.length; seriescount++) {
@@ -312,7 +312,7 @@ To customize the highlighted series, use `border.color`, `border.width` and `opa
 ![](User-Interactions_images/customizehighlight.png) 
 
 ###Patterns to Highlight
-OlapChart provides pattern support for highlighting the data by setting an appropriate value to the `pattern` property of the `highlightSettings`. The different types of highlight patterns are as follows.
+PivotChart provides pattern support for highlighting the data by setting an appropriate value to the `pattern` property of the `highlightSettings`. The different types of highlight patterns are as follows.
 
 * chessboard
 * crosshatch
@@ -341,11 +341,11 @@ OlapChart provides pattern support for highlighting the data by setting an appro
 //...
 
 <body>
-    <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
         <Size Width="950px" Height="460px"></Size>
-    </ej:OlapChart>
+    </ej:PivotChart>
     <script type="text/javascript">
         function onSeriesRenders(args) {
             for (var seriescount = 0; seriescount < this.model.series.length; seriescount++) {
@@ -363,7 +363,7 @@ OlapChart provides pattern support for highlighting the data by setting an appro
 ![](User-Interactions_images/patternhighlight.png) 
 
 ##Selection
-OlapChart provides selection support for the series and data points on mouse click. To enable selection, set the **“enable”** property to true in the `selectionSettings` option of the series.
+PivotChart provides selection support for the series and data points on mouse click. To enable selection, set the **“enable”** property to true in the `selectionSettings` option of the series.
 
 {% highlight html %}
 
@@ -371,11 +371,11 @@ OlapChart provides selection support for the series and data points on mouse cli
 //...
 
 <body>
-    <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
         <Size Width="950px" Height="460px"></Size>
-    </ej:OlapChart>
+    </ej:PivotChart>
     <script type="text/javascript">
         function onSeriesRenders(args) {
             for (var seriescount = 0; seriescount < this.model.series.length; seriescount++) {
@@ -403,11 +403,11 @@ You can set three different selection mode for highlighting the data points and 
 //...
 
 <body>
-    <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
         <Size Width="950px" Height="460px"></Size>
-    </ej:OlapChart>
+    </ej:PivotChart>
     <script type="text/javascript">
         function onSeriesRenders(args) {
             for (var seriescount = 0; seriescount < this.model.series.length; seriescount++) {
@@ -433,11 +433,11 @@ To customize the selection styles, use the `border.color`, `border.width` and `o
 //...
 
 <body>
-    <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
         <Size Width="950px" Height="460px"></Size>
-    </ej:OlapChart>
+    </ej:PivotChart>
     <script type="text/javascript">
         function onSeriesRenders(args) {
             for (var seriescount = 0; seriescount < this.model.series.length; seriescount++) {
@@ -456,7 +456,7 @@ To customize the selection styles, use the `border.color`, `border.width` and `o
 ![](User-Interactions_images/customizeselection.png) 
 
 ###Patterns for Selection
-OlapChart provides pattern support for the selecting the data by setting an appropriate value to the `pattern` property of the `selectionSettings` option. The different types of selection patterns are as follows.
+PivotChart provides pattern support for the selecting the data by setting an appropriate value to the `pattern` property of the `selectionSettings` option. The different types of selection patterns are as follows.
 
 * chessboard
 * crosshatch
@@ -484,11 +484,11 @@ OlapChart provides pattern support for the selecting the data by setting an appr
 //...
 
 <body>
-    <ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
         <Size Width="950px" Height="460px"></Size>
-    </ej:OlapChart>
+    </ej:PivotChart>
     <script type="text/javascript">
         function onSeriesRenders(args) {
             for (var seriescount = 0; seriescount < this.model.series.length; seriescount++) {
