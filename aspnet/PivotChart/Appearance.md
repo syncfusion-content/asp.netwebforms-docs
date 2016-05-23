@@ -3,7 +3,7 @@ layout: post
 title: Appearance
 description: appearance
 platform: aspnet
-control: OlapChart
+control: PivotChart
 documentation: ug
 ---
 
@@ -11,7 +11,7 @@ documentation: ug
 
 ##Built-in Themes
 
-Following are the built-in themes available in the OlapChart.
+Following are the built-in themes available in the PivotChart.
 
 * flatlight
 * flatdark
@@ -30,45 +30,45 @@ Following are the built-in themes available in the OlapChart.
 * gradient-saffron
 * gradient-saffrondark
 
-By using the `Theme` property, you can set the desired theme in OlapChart. By default, **"Flat Light"** theme is applied to OlapChart.
+By using the `Theme` property, you can set the desired theme in PivotChart. By default, **"Flat Light"** theme is applied to PivotChart.
 
 {% highlight html %}
 
 //Using gradient theme
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc"  Theme="GradientLight" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc"  Theme="GradientLight" ClientIDMode="Static">
   <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %}
 
 ![](Appearance_images/themes.png)
 
-##OlapChart - Area Customization
+##PivotChart - Area Customization
 
 ###Border Customization
-To customize the OlapChart border, use `Border` property in OlapChart.
+To customize the PivotChart border, use `Border` property in PivotChart.
 
 {% highlight html %}
 
 //Customize the chart border and opacity
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc"  Border-Width="2" Border-Color="#FF0000" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc"  Border-Width="2" Border-Color="#FF0000" ClientIDMode="Static">
 <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %}
 
 ![](Appearance_images/bordercustomize.png)
 
 ###Background Customization
-The OlapChart control background can be customized by using the `Background` property in the Chart area.
+The PivotChart control background can be customized by using the `Background` property in the Chart area.
 
 {% highlight html %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
     //Setting background for Chart area
     <ChartArea Background="skyblue"></ChartArea>
     <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %}
 
@@ -79,27 +79,27 @@ By using the `AlternateGridBand` property of the axis, you can provide different
 
 {% highlight html %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
     //Customizing horizontal grid bands at even position
     <primaryyaxis>
         <AlternateGridBand Even-Fill="#A7A9AB" Even-Opacity="0.1" />
     </primaryyaxis>
     <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %}
 
 ![](Appearance_images/gridbands.png)
 
 ###Animation
-You can enable animation by using the `EnableAnimation` property under `CommonSeriesOptions` of the OlapChart control. This animates the Chart series on two occasions - when the Chart is loaded for the first time and when you change the series type by using the `Type` property.
+You can enable animation by using the `EnableAnimation` property under `CommonSeriesOptions` of the PivotChart control. This animates the Chart series on two occasions - when the Chart is loaded for the first time and when you change the series type by using the `Type` property.
 
 {% highlight html %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
     //Enabling animation in series
     <CommonSeriesOptions EnableAnimation="True" />
     <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %}   

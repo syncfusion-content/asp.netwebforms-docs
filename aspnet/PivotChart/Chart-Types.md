@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Chart Types | OLAPChart | ASP.NET | Syncfusion
+title: Chart Types | PivotChart | ASP.NET | Syncfusion
 description: chart types
 platform: aspnet
-control: OLAPChart
+control: PivotChart
 documentation: ug
 ---
 
 # Chart Types
 
-Essential **OlapChart ASP.NET** supports 14 different types of chart as follows:
+Essential **PivotChart ASP.NET** supports 14 different types of chart as follows:
 
 * Column
 * Stacking Column
@@ -31,14 +31,14 @@ Essential **OlapChart ASP.NET** supports 14 different types of chart as follows:
 **Column Chart** is the most commonly used chart type. It uses vertical bars (called columns) to display different values of one or more items. Points from adjacent series are drawn as bars next to each other. It is used to compare the frequency, count, total or average of data in different categories. It is ideal to show the variations in the value of an item over a period of time.
 
 {% highlight html %}
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" >
 
 <CommonSeriesOptions Type="Column" Tooltip-Visible="true" />
 <Size Width="950px" Height="460px"></Size>
 
 <Legend  Visible="true"></Legend>
 
-</ej:OlapChart>
+</ej:PivotChart>
 {% endhighlight %}
 
 The following screenshot displays a **Column Chart**.
@@ -53,7 +53,7 @@ Column chart
 **Stacking Column** Chart is similar to column charts except the Y-values. These Y-values stack on top of each other in a specified series order. This helps to visualize the relationship of parts to whole across categories.
 
 {% highlight html %}
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" >
 
 <CommonSeriesOptions type="StackingColumn" tooltip-visible="true" />
 
@@ -61,7 +61,7 @@ Column chart
 
 <Legend visible="true"></Legend>
 
-</ej:OlapChart>
+</ej:PivotChart>
 {% endhighlight %}
 
 The following screenshot displays the **stacking Column Chart**.
@@ -77,7 +77,7 @@ Stacking Column Chart
 The **Bar Chart** displays horizontal bars for each point in the series and points from adjacent series. Bar charts are used to compare values across categories, for displaying the variations in the value of an item over time or for comparing the values of several items at a single point in time.
 
 {% highlight html %}
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" >
 
 <CommonSeriesOptions type="Bar"/>
 
@@ -85,7 +85,7 @@ The **Bar Chart** displays horizontal bars for each point in the series and poin
 
 <Legend visible="true"></Legend>
 
-</ej:OlapChart>
+</ej:PivotChart>
 {% endhighlight %}
 
 The following screenshot displays a **Bar Chart**.
@@ -101,7 +101,7 @@ Bar Chart
 
 {% highlight html %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" >
 
 <CommonSeriesOptions type="StackingBar"/>
 
@@ -109,7 +109,7 @@ Bar Chart
 
 <Legend visible="true"></Legend>
 
-</ej:OlapChart>
+</ej:PivotChart>
 {% endhighlight %}
 
 The following screenshot displays the **Stacking Bar Chart**.
@@ -124,7 +124,7 @@ Stacking Bar Chart
 A **Pie chart** is used to summarize a set of categorical data or displaying different values of a given variable (e.g., percentage distribution). This type of chart is a circle divided into a series of segments. Each segment represents a particular category.
 
 {% highlight html %}
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" >
 
 <CommonSeriesOptions type="Pie"/>
 
@@ -132,7 +132,7 @@ A **Pie chart** is used to summarize a set of categorical data or displaying dif
 
 <Legend visible="true"></Legend>
 
-</ej:OlapChart>
+</ej:PivotChart>
 {% endhighlight %}
 
 
@@ -148,7 +148,7 @@ Pie Chart
 The **Pyramid Chart** type displays the data in the form of a triangle. It helps you to visualize data in a hierarchical structure without any axes.
 
 {% highlight html %}
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" >
 
 <CommonSeriesOptions type="Pyramid"/>
 
@@ -156,7 +156,7 @@ The **Pyramid Chart** type displays the data in the form of a triangle. It helps
 
 <Legend visible="true"></Legend>
 
-</ej:OlapChart>
+</ej:PivotChart>
 {% endhighlight %}
 
 The following screen shot displays the **Pyramid Chart**.
@@ -174,7 +174,7 @@ The **Funnel Chart**  type displays the data in the form of an inverted triangle
 
 {% highlight html %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" >
 
 <CommonSeriesOptions type="Funnel"/>
 
@@ -182,7 +182,7 @@ The **Funnel Chart**  type displays the data in the form of an inverted triangle
 
 <Legend visible="true"></Legend>
 
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %}
 
@@ -200,7 +200,7 @@ The **Line Chart** joins the data points on a plot using straight lines that sho
 
 {% highlight html %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" >
 
 <CommonSeriesOptions type="Line"/>
 
@@ -208,7 +208,7 @@ The **Line Chart** joins the data points on a plot using straight lines that sho
 
 <Legend visible="true"></Legend>
 
-</ej:OlapChart>
+</ej:PivotChart>
 {% endhighlight %}
 
 
@@ -224,7 +224,7 @@ Line Chart
 **Step Line Chart** uses horizontal and vertical lines to connect the data points resulting in a step like progression. 
 
 {% highlight html %}
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" >
 
 <CommonSeriesOptions type="StepLine"/>
 
@@ -232,7 +232,7 @@ Line Chart
 
 <Legend visible="true"></Legend>
 
-</ej:OlapChart>
+</ej:PivotChart>
 {% endhighlight %}
 
 
@@ -248,7 +248,7 @@ Step Line Chart
 The **Spline Chart** is similar to line charts except it connects different data points using curve lines instead of straight lines.
 
 {% highlight html %}
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" >
 
 <CommonSeriesOptions type="Spline"/>
 
@@ -256,7 +256,7 @@ The **Spline Chart** is similar to line charts except it connects different data
 
 <Legend visible="true"></Legend>
 
-</ej:OlapChart>
+</ej:PivotChart>
 {% endhighlight %}
 
 The following screenshot displays the **Spline Chart**.
@@ -271,7 +271,7 @@ Spline Chart
 **Area Chart** emphasizes the degree of change of values over a period of time. Instead of rendering data as discrete bars or columns, an area chart renders it in a continuous ebb-and-flow pattern as defined against the y-axis.
 
 {% highlight html %}
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" >
 
 <CommonSeriesOptions type="Area"/>
 
@@ -279,7 +279,7 @@ Spline Chart
 
 <Legend visible="true"></Legend>
 
-</ej:OlapChart>
+</ej:PivotChart>
 {% endhighlight %}
 
 
@@ -295,7 +295,7 @@ Area Chart
 **Step Area** chart is similar to the regular area chart except for a straight line tracing the shortest path between the data points. The values are connected by continuous vertical and horizontal lines forming a step like progression.
 
 {% highlight html %}
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" >
 
 <CommonSeriesOptions type="StepArea"/>
 
@@ -303,7 +303,7 @@ Area Chart
 
 <Legend visible="true"></Legend>
 
-</ej:OlapChart>
+</ej:PivotChart>
 {% endhighlight %}
 
 
@@ -319,7 +319,7 @@ Step Area Chart
 **Spline Area** chart is similar to Area Chart with the difference in which the data points of a series are connected. It connects each series of points by a smooth **spline curve**.
 
 {% highlight html %}
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" >
 
 <CommonSeriesOptions type="SplineArea"/>
 
@@ -327,7 +327,7 @@ Step Area Chart
 
 <Legend visible="true"></Legend>
 
-</ej:OlapChart>
+</ej:PivotChart>
 {% endhighlight %}
 
 
@@ -343,7 +343,7 @@ Spline Area Chart
 **Stacking Area** chart is similar to regular area chart except the “Y-values”. These “Y-values” stack on top of each other in the specified series order. This helps to visualize the relationship of parts to whole across categories.
 
 {% highlight html %}
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" >
 
 <CommonSeriesOptions type="StackingArea"/>
 
@@ -351,7 +351,7 @@ Spline Area Chart
 
 <Legend visible="true"></Legend>
 
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %}
 
@@ -374,7 +374,7 @@ A **combination Chart** combines two or more series types in a single Chart. But
 
 {% highlight CSHTML %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" >
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" >
 
 <CommonSeriesOptions Type="Column" Tooltip-Visible="true" />
 
@@ -384,11 +384,11 @@ A **combination Chart** combines two or more series types in a single Chart. But
 
 <Legend visible="true" rowcount="2"></Legend>
 
-</ej:OlapChart>
+</ej:PivotChart>
     
 <script>
 function onSeriesRenders(args) {
-    this.model.series[5].type = ej.olap.OlapChart.ChartTypes.Line;
+    this.model.series[5].type = ej.olap.PivotChart.ChartTypes.Line;
     this.model.series[5].marker.visible = true;
 </script>
 

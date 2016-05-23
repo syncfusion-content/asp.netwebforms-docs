@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Axes | OLAPChart | ASP.NET | Syncfusion
+title: Axes | PivotChart | ASP.NET | Syncfusion
 description: axes 
 platform: aspnet
-control: OLAPChart
+control: PivotChart
 documentation: ug
 ---
 
@@ -16,11 +16,11 @@ By using the `LabelFormat` property, you can format the numeric labels. Numeric 
 
 {% highlight html %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
     //Applying currency format to axis labels
     <PrimaryYAxis LabelFormat="c"></PrimaryYAxis>
     <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %}
 
@@ -91,11 +91,11 @@ By using the `LabelFormat` property of `PrimaryYAxis`, you can add the category 
 
 {% highlight html %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
     //Adding prefix and suffix to axis labels
     <PrimaryYAxis LabelFormat="${value} K"></PrimaryYAxis>
     <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %}
 
@@ -108,11 +108,11 @@ Axis visibility can be set by using the `Visible` property of the respective axi
 
 {% highlight html %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
     //Disabling visibility of Y-axis
     <PrimaryYAxis Visible="false"></PrimaryYAxis>
     <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %}
 
@@ -123,12 +123,12 @@ By using the `Font` property of the axis, we can customize the labels – font f
 
 {% highlight html %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
     //Customizing label appearance
     <PrimaryXAxis Font-Color="Blue" Font-FontSize="14px" Font-FontFamily="Segoe UI" Font-FontWeight="Bold">
     </PrimaryXAxis>
     <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %}
 
@@ -139,12 +139,12 @@ Axis labels and ticks can be positioned inside or outside the Chart area by usin
 
 {% highlight html %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
     //Customizing label and tick positions
     <PrimaryXAxis AxislabelPosition="Inside" TickLinesPosition="Inside">
     </PrimaryXAxis>
     <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %}
 
@@ -155,12 +155,12 @@ By using the `MajorGridLines` and `MinorGridLines` properties of the axis, you c
 
 {% highlight html %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
     // Customizing grid lines
     <PrimaryXAxis MajorGridLines-Width="5" MajorGridLines-Visible="true" MajorGridLines-Color="Blue" MinorTicksPerInterval="1" MinorGridLines-Width="25" MinorGridLines-Visible="true" MinorGridLines-Color="Red">
     </PrimaryXAxis>
      <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %}
 
@@ -171,12 +171,12 @@ By using the `MajorTickLines` and `MinorTickLines` properties of the axis, you c
 
 {% highlight html %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
     // Customizing tick lines
     <PrimaryXAxis MajorTickLines-Width="10" MajorTickLines-Visible="true" MajorTickLines-Size="15" MajorTickLines-Color="Blue" MinorTicksPerInterval="1" MinorTickLines-Width="15" MinorTickLines-Size="25" MinorTickLines-Visible="true" MinorTickLines-Color="Red">
     </PrimaryXAxis>
      <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %}
 
@@ -187,13 +187,13 @@ Axis can be inversed by using the `IsInversed` property of the axis. By default,
 
 {% highlight html %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
     //Inversing the X-axis
     <PrimaryXAxis IsInversed="true"></PrimaryXAxis>
     //Inversing the Y-axis
     <PrimaryYAxis IsInversed="true"></PrimaryYAxis>
      <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %}
 
@@ -204,13 +204,13 @@ The `OpposedPosition` property of Chart axis can be used to place the axis at th
 
 {% highlight html %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
     //Placing axis at the opposite side of its normal position
     <PrimaryXAxis OpposedPosition="true"></PrimaryXAxis>
     //Placing axis at the opposite side of its normal position
     <PrimaryYAxis OpposedPosition="true"></PrimaryYAxis>
      <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %}
 
@@ -222,11 +222,11 @@ When the axis labels overlap with each other based on the Chart dimensions and l
 
 {% highlight html %}
 
-<ej:OlapChart ID="OlapChart1" runat="server" Url="../wcf/OlapChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
     // Avoid overlapping of x-axis labels
     <PrimaryXAxis LabelIntersectAction="MultipleRows"></PrimaryXAxis>
      <Size Width="950px" Height="460px"></Size>
-</ej:OlapChart>
+</ej:PivotChart>
 
 {% endhighlight %} 
 
