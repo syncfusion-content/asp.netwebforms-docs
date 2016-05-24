@@ -1,10 +1,10 @@
 ---
-title: Access Control | FileExplorer | ASP.NET | Syncfusion
+title: Access Control | FileExplorer | ASP.NET Web | Syncfusion
 description: Control the File Management on server side 
-platform: ASP.NET
+platform: ASP.NET Web
 control: FileExplorer
 documentation: UG
-keywords: FileExplorer,  Syncfusion, ASP.NET FileExplorer, Access Control 
+keywords: FileExplorer,  Syncfusion, ASP.NET Web FileExplorer, UG document, Access Control 
 ---
 # Access Control
 
@@ -249,10 +249,10 @@ Details
 Read
 </td>
 <td>
-string path, string filter, IEnumerable<object> selectedItems
+string path, string filter, IEnumerable&lt;object&gt; selectedItems
 </td>
 <td>
-It should be in JSON format with key name as `files` and `cwd`. The JSON fields contains the following field names '*name,  isFile, hasChild, permission*'.
+It should be in JSON format with key name as <b>files</b> and <b>cwd</b>. The JSON fields contains the following field names '<b>name,  isFile, hasChild, permission</b>'.
 <br/>
 For example:
 <br/>
@@ -263,9 +263,9 @@ For example:
     "error":null}
 </td>
 <td>
-It used to get all immediate files and sub-folders of the given path and it returns the matched type of files only, which are specified in '*filter*' parameter. 
+It used to get all immediate files and sub-folders of the given path and it returns the matched type of files only, which are specified in '<b>filter</b>' parameter. 
 
-(here `cwd` represents details of the given path and `files` represents details of the child files and folders of the given path)
+(here <b>cwd</b> represents details of the given path and <b>files</b> represents details of the child files and folders of the given path)
 </td>
 </tr>
 <tr>
@@ -273,10 +273,10 @@ It used to get all immediate files and sub-folders of the given path and it retu
 CreateFolder
 </td>
 <td>
-string path, string name, IEnumerable<object> selectedItems
+string path, string name, IEnumerable&lt;object&gt; selectedItems
 </td>
 <td>
-It is in JSON format with key name as `files`. The '*name*' and '*permission*' fields are necessary on return JSON data.
+It is in JSON format with key name as <b>files</b>. The '<b>name</b>' and '<b>permission</b>' fields are necessary on return JSON data.
 <br/>
 For example:
 <br/>
@@ -288,7 +288,7 @@ For example:
 <td>
 It used to create a new folder in given path with specified name.
 
-(here `files` represents details of the newly added folder’s)
+(here <b>files</b> represents details of the newly added folder’s)
 </td>
 </tr>
 <tr>
@@ -296,7 +296,7 @@ It used to create a new folder in given path with specified name.
 Paste
 </td>
 <td>
-string sourceDir, string backupDir, string[] names, string option, IEnumerable<CommonFileDetails> commonFiles, IEnumerable<object> selectedItems, IEnumerable<object> targetFolder
+string sourceDir, string backupDir, string[] names, string option, IEnumerable&lt;CommonFileDetails&gt; commonFiles, IEnumerable&lt;object&gt; selectedItems, IEnumerable&lt;object&gt; targetFolder
 </td>
 <td>
 It returns the pasted file details or null.
@@ -311,7 +311,7 @@ For example:
 <td>
 This method helps to copy or move files from one location to another location.
 
-(here `files` represents details of the pasted items)
+(here <b>files</b> represents details of the pasted items)
 
 </td>
 </tr>
@@ -320,7 +320,7 @@ This method helps to copy or move files from one location to another location.
 Remove
 </td>
 <td>
-string[] names, string path, IEnumerable<object> selectedItems
+string[] names, string path, IEnumerable&lt;object&gt; selectedItems
 </td>
 <td>
 It returns the removed file details or null.
@@ -335,7 +335,7 @@ For example:
 <td>
 It helps to remove the specified items from given path. 
 
-(here `files` represents details of the removed item)
+(here <b>files</b> represents details of the removed item)
 </td>
 </tr>
 <tr>
@@ -343,7 +343,7 @@ It helps to remove the specified items from given path.
 Rename
 </td>
 <td>
-string path, string oldName, string newName, IEnumerable<CommonFileDetails> commonFiles, IEnumerable<object> selectedItems
+string path, string oldName, string newName, IEnumerable&lt;CommonFileDetails&gt; commonFiles, IEnumerable&lt;object&gt; selectedItems
 </td>
 <td>
 It returns the renamed file details or null.
@@ -358,7 +358,7 @@ For example:
 <td>
 This method helps to rename the file/folder, which is available in given path.
 
-(here `files` represents details of the renamed items)
+(here <b>files</b> represents details of the renamed items)
 </td>
 </tr>
 <tr>
@@ -366,10 +366,10 @@ This method helps to rename the file/folder, which is available in given path.
 GetDetails
 </td>
 <td>
-string path, string[] names, IEnumerable<object> selectedItems
+string path, string[] names, IEnumerable&lt;object&gt; selectedItems
 </td>
 <td>
-It is in JSON data with key name as `details`.
+It is in JSON data with key name as <b>details</b>.
 <br/>
 For example:
 <br/>
@@ -381,7 +381,7 @@ For example:
 <td>
 This method used to get the details of the specified file or directory.
 
-(here `details` represents details of the given path which is need to be showcased to user)
+(here <b>details</b> represents details of the given path which is need to be showcased to user)
 </td>
 </tr>
 <tr>
@@ -389,7 +389,7 @@ This method used to get the details of the specified file or directory.
 Download
 </td>
 <td>
-string path, string[] names, IEnumerable<object> selectedItems
+string path, string[] names, IEnumerable&lt;object&gt; selectedItems
 </td>
 <td>
 Void
@@ -403,7 +403,7 @@ This method helps to download the specified files in the given path.
 Upload
 </td>
 <td>
-IEnumerable<System.Web.HttpPostedFileBase> files, string path, IEnumerable<object> selectedItems
+IEnumerable&lt;System.Web.HttpPostedFileBase&gt; files, string path, IEnumerable&lt;object&gt; selectedItems
 </td>
 <td>
 Void
@@ -417,10 +417,10 @@ This method helps to upload the specified files to given path.
 Search
 </td>
 <td>
-string path, string filter, string searchString,  bool caseSensitive, IEnumerable<object> selectedItems
+string path, string filter, string searchString,  bool caseSensitive, IEnumerable&lt;object&gt; selectedItems
 </td>
 <td>
-It returns JSON data with key name as `files` and JSON fields need to be with following field names '**name, isFile, hasChild, permission**'.
+It returns JSON data with key name as <b>files</b> and JSON fields need to be with following field names '<b>name, isFile, hasChild, permission</b>'.
 <br/>
 For example:
 <br/>
@@ -434,7 +434,7 @@ It used to search all the matched files and sub-folders in the given folder path
 </tr>
 </table>
 
-I> If needed, customer can also add additional data along with existing properties using **FileExplorerDirectoryContent** class
+N> If needed, customer can also add additional data along with existing properties using **FileExplorerDirectoryContent** class
 
 ### Example
 
@@ -513,4 +513,7 @@ We can make a FileExplorer with access rule by doing following steps,
 
 The following screenshot displays the output of the above code.
 
-{% include image.html url="/AccessControl_images/AccessControl_img1.png" caption="FileExplorer with Access Rule"%}
+![FileExplorer with Access Rule ](AccessControl_images/AccessControl_img1.png)
+
+FileExplorer with Access Rule
+{:.caption}
