@@ -7,25 +7,38 @@ control: NumericTextbox
 documentation: ug
 ---
 
-# Localization Support
+# Globalization Support
 
-Localization is a language support based on the culture in the NumericTextbox. You can achieve Localization by using the “Locale” property in the NumericTextbox.
+**Globalization** is language support based on the culture in **Textboxes**. You can achieve the **Globalization** using “**locale”** property in **PercentageTextBox** . 
 
-The NumericTextbox control provides multi-language support by using the globalization. You can customize the NumericTextbox with your own language style by using this feature. You can change the localization by using the Locale property. The default value for Locale property is en-US in the NumericTextbox control.
+The **PercentageTextBox** widget provides multi-language support using globalization. You can customize the **PercentageTextBox** with your own language style by using this feature. You can change the globalization by using the **locale** property. The default value for **locale** property is **en-US** in **PercentageTextBox** control.
 
-In order to enable [localization](http://help.syncfusion.com/aspnetmvc/numerictextbox/localization-support), refer to the following scripts: globalize.cultures.js and globalize.js. The “globalize.cultures.js” includes different language support for JavaScript controls and the “globalize.js” is a simple JavaScript library that allows you to format the value based on the specified culture.
 
-You can refer to the following online link reference for globalize.js
+More than 350 culture specific files are available to localize the value. To know more about EJ globalize support, please refer the below link      
+ [http://help.syncfusion.com/js/localization](http://help.syncfusion.com/js/localization) 
+ 
+ N> All the culture-specific script files are available within the below specified location, once you have installed Essential Studio in your machine, therefore it is not necessary to download these files explicitly.
 
-[http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js](http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js)
+<table>
+<tr>
+<td>
 
-You can refer to the following online link reference for globalize.culture.js
+    (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\cultures
 
-[http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/cultures/globalize.cultures.js](http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/cultures/globalize.cultures.js)
+    For example, If you have installed the Essential Studio package within C:\Program Files (x86), then navigate to the below location, 
+    C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\cultures
 
-You can get the script file of various cultures from the following path:
+</td></tr>
+</table>
 
-"<Installed Location>\Syncfusion\Essential Studio\<version>\JavaScript\assets\external\cultures"
+Refer the below German culture file in head section of html page after the reference of **ej.web.all.min.js** file.
+
+ {% highlight javascript %}
+   
+           <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/cultures/ej.culture.de-DE.min.js"></script>
+                
+ {% endhighlight %}
+
 
 You can dynamically change the language based on their culture.
 
