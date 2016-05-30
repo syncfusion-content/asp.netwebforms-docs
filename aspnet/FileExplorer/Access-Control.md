@@ -439,9 +439,10 @@ N> If needed, customer can also add additional data along with existing properti
 ### Example
 
 We can make a FileExplorer with access rule by doing following steps,
+
 1.	Add the following code example to the corresponding ASPX page to render the FileExplorer.
 
-{% highlight c# %}
+    ~~~ csharp
     
     <ej:FileExplorer ID="fileexplorer" runat="server" Layout="LargeIcons" IsResponsive="true" Width="100%" AjaxAction="AccessControl.aspx/FileActionDefault" Path="~/FileContent/">
         <AjaxSettings>
@@ -450,11 +451,11 @@ We can make a FileExplorer with access rule by doing following steps,
         </AjaxSettings>
     </ej:FileExplorer>
 
-{% endhighlight %}
+    ~~~
 
 2.	Add the following code example to the corresponding code behind page. The `FileAccessDefault` method triggers from Ajax request with specific ActionType value as parameter.
 
-{% highlight c# %}
+    ~~~ csharp
     
     public static object FileActionDefault(string ActionType, string Path, string ExtensionsAllow, string LocationFrom, string LocationTo, string Name, string[] Names, string NewName, string Action, bool CaseSensitive, string SearchString, IEnumerable<CommonFileDetails> CommonFiles)
     {
@@ -507,9 +508,8 @@ We can make a FileExplorer with access rule by doing following steps,
         rules.RootPath = "~/FileContent/";
         return rules;
     }
-
-
-{% endhighlight %}
+    
+    ~~~
 
 The following screenshot displays the output of the above code.
 
