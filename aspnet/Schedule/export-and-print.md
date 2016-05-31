@@ -192,9 +192,17 @@ namespace WebSampleBrowser.Schedule
         }
         protected void Schedule1_OnServerExportPDF(object sender, ScheduleEventArgs e)
         {
+            JavaScriptSerializer serializer = new JavaScriptSerializer();
+            SchedulePDFExport convert = new SchedulePDFExport();
+            // Here calling the public method to convert the model values to ScheduleProperties type from string type
+            ScheduleProperties scheduleObject = convert.ScheduleSerializeModel(e.Arguments["model"].ToString());
+            // Here converting the schedule appointments data into enumerable object by deserializing
+            IEnumerable scheduleAppointments = (IEnumerable)serializer.Deserialize(e.Arguments["processedApp"].ToString(), typeof(IEnumerable));
             PdfExport exp = new PdfExport();
-            PdfDocument document = exp.Export(e.Arguments["model"].ToString(), e.Arguments["processedApp"].ToString(), "flat-lime", e.Arguments["locale"].ToString(),
-                PdfPageOrientation.Landscape);
+            PdfPageSettings pageSettings = new PdfPageSettings(50f);
+            pageSettings.Orientation = PdfPageOrientation.Landscape;
+            // Here passing the theme values from enum collection
+            PdfDocument document = exp.Export(scheduleObject, scheduleAppointments, ExportTheme.FlatSaffron, e.Arguments["locale"], pageSettings);
             document.Save("Schedule.pdf", Response, HttpReadType.Save);
         }
     }
@@ -202,6 +210,159 @@ namespace WebSampleBrowser.Schedule
 
 {% endhighlight %}
 
+N> To pass the theme value as a string instead of the enum value, refer to the following code example of passing the string type theme value.
+{% highlight c# %}
+    PdfDocument document = exp.Export(scheduleObject, scheduleAppointments, "flat-saffron",e.Arguments["locale"]);
+{% endhighlight %}
+
+### Setting Page Options:
+
+It is possible to set/change the Pdf page settings such as size, margins (left, right, top and bottom), transition, and rotate angle and header/footer values by passing the page settings and page document template object values into the export method. 
+
+#### Page Settings:
+
+You can set/apply the following page property values to the PDF file before exporting it with the Scheduler by using the `PdfPageSettings` object. 
+a)	Page Size
+b)	Orientation
+c)	Margins ( Left, Right, Top, Bottom)
+d)	Transition ( Direction, Dimension, Duration, Motion, PageDuration, Scale, Style)
+e)	Rotate ( RotateAngle0, RotateAngle90, RotateAngle180, RotateAngle270)
+f)	Height
+g)	Width
+
+To apply the above page setting values, you need to create an object for the `PdfPageSettings` class. Then, you can assign the values to the available properties within it such as Size = PdfPageSize.A3, Orientation = PdfPageOrientation.Landscape and so on. Once done, pass this object into the export method which will set these page settings values to the PDF file before exporting it. Refer to the following code example (server-side) to set/change the page settings values.
+
+{% highlight c# %}
+        protected void Schedule1_OnServerExportPDF(object sender, ScheduleEventArgs e)
+        {
+
+            JavaScriptSerializer serializer = new JavaScriptSerializer();
+            SchedulePDFExport convert= new SchedulePDFExport();
+            ScheduleProperties scheduleObject = convert.ScheduleSerializeModel(e.Arguments["model"].ToString()); // Here calling the public method to convert the model values to ScheduleProperties type from string type
+
+            IEnumerable scheduleAppointments = (IEnumerable)serializer.Deserialize(e.Arguments["processedApp"].ToString(), typeof(IEnumerable)); // Here deserialize the appointments to enumerable object
+
+            PdfExport exp = new PdfExport();
+
+            // Here the 50f is the default value for the margins. If you are not assigning any separate values like Margins.Left = 15 means 50f value will be setting to all the Margin properties.
+            PdfPageSettings pageSettings = new PdfPageSettings(50f);  
+
+            // Here you can assign the PdfPageSize enum value (ex: A3, A4)
+            pageSettings.Size = PdfPageSize.A3;  
+
+            // Here Landscape value assigned to the orientation. You can set either Landscape/Portrait for this Orientation property
+            pageSettings.Orientation = PdfPageOrientation.Landscape; 
+
+            // Here assigned different values for the margins 
+            pageSettings.Margins.Left = 15;
+
+            pageSettings.Margins.Right = 15;
+
+            pageSettings.Margins.Top = 20;
+
+            pageSettings.Margins.Bottom = 20;
+
+            // Here assigned the Transition Direction as BottomToTop. You can also set any of the Transition values to this property
+
+            pageSettings.Transition.Direction= PdfTransitionDirection.BottomToTop;
+
+            // Here assigned the Rotate Angle as RotateAngle180. You can also set any of the Rotate values to this property
+            pageSettings.Rotate = PdfPageRotateAngle.RotateAngle180;
+
+            // Here passing the page settings object value into the export method.
+
+            PdfDocument document = exp.Export(scheduleObject, scheduleAppointments, ExportTheme.FlatSaffron, e.Arguments["locale"], pageSettings);
+            document.Save("Schedule.pdf", Response, HttpReadType.Save);
+        }
+{% endhighlight %}
+
+#### Header/Footer Settings:
+
+You can also set the header and footer options to the PDF page before it is being exported, by passing the `PDFDocumentTemplate` object values as mentioned in the following code example. 
+
+{% highlight c# %}
+        protected void Schedule1_OnServerExportPDF(object sender, ScheduleEventArgs e)
+        {
+            JavaScriptSerializer serializer = new JavaScriptSerializer();
+            SchedulePDFExport convert= new SchedulePDFExport();
+            ScheduleProperties scheduleObject = convert.ScheduleSerializeModel(e.Arguments["model"].ToString()); // Here calling the public method to convert the model values to ScheduleProperties type from string type
+
+            IEnumerable scheduleAppointments = (IEnumerable)serializer.Deserialize(e.Arguments["processedApp"].ToString(), typeof(IEnumerable)); // Here deserialize the appointments to enumerable object
+            PdfExport exp = new PdfExport();
+            PdfDocument document = new PdfDocument();
+            PdfPage pdfPage = document.Pages.Add();
+
+            //Create a header and draw the string.
+            // Here the bounds value is used to store the position/axis value, where the header and footer content to be displayed
+            RectangleF bounds = new RectangleF(0, 0, document.Pages[0].GetClientSize().Width, 50);
+
+            // Creating object for the PdfPageTemplateElement
+            PdfPageTemplateElement header = new PdfPageTemplateElement(bounds);
+
+            // Here setting the font style and color to display the header/footer content
+
+            PdfSolidBrush brush = new PdfSolidBrush(Color.Gray);
+
+            PdfFont font = new PdfStandardFont(PdfFontFamily.Helvetica, 6, PdfFontStyle.Bold);
+
+            PdfStringFormat format = new PdfStringFormat();
+
+            format.Alignment = PdfTextAlignment.Center;
+
+            format.LineAlignment = PdfVerticalAlignment.Middle;
+
+            header.Graphics.DrawString("Schedule", font, brush, new RectangleF(0, 18, header.Width, header.Height), format);
+
+            //Create a Page template that can be used as footer (here creating template to display the page number).
+            PdfPageTemplateElement footer = new PdfPageTemplateElement(bounds);
+
+            //Create page number field.
+            PdfPageNumberField pageNumber = new PdfPageNumberField(font, brush);
+
+            //Create page count field.
+            PdfPageCountField count = new PdfPageCountField(font, brush);
+
+            //Add the fields in composite fields.
+            PdfCompositeField compositeField = new PdfCompositeField(font, brush, "Page {0} of {1}", pageNumber, count);
+
+            compositeField.Bounds = footer.Bounds;
+
+            //Draw the composite field in footer.
+            compositeField.Draw(footer.Graphics, new PointF(470, 40));
+
+            PdfDocumentTemplate headerFooterTemplate = new PdfDocumentTemplate();
+            
+            //Here assigning the header template value to the PdfDocumentTemplate Object.
+            headerFooterTemplate.Top = header; 
+
+            //Here assigning the footer template value to the PdfDocumentTemplate Object.
+            headerFooterTemplate.Bottom = footer;
+
+            //Here passing the PdfDocumentTemplate Object value into the export method.
+
+            document = exp.Export(scheduleObject, scheduleAppointments, ExportTheme.FlatSaffron, e.Arguments["locale"], headerFooterTemplate);
+
+            document.Save("Schedule.pdf", Response, HttpReadType.Save);
+        }
+
+{% endhighlight %}
+
+N>The header and footer values can be passed to the PDF file only through the template option. In the above mentioned code example, the template has been written with the text “Schedule” to display it as the header text and the page number (ex: Page 1 of 2) has been displayed in the footer part. 
+
+It is also possible to pass both the `PageSettings` and header/footer template objects in the export method altogether to apply the page settings as well as the header and footer options to the PDF file which can be referred from the following code example,
+
+{% highlight c# %}
+        public ActionResult ExportAsPDF(string scheduleModel)
+        {
+            //Here add the code example of both the page settings and header/footer values settings.
+            
+            //Then pass both PdfPageSettings and PdfDocumentTemplate object into the export method.            
+            
+            document = exp.Export(scheduleObject, scheduleAppointments, ExportTheme.FlatSaffron, e.Arguments["locale"], pageSettings, headerFooterTemplate);
+            document.Save("Schedule.pdf", Response, HttpReadType.Save);
+        }
+
+{% endhighlight %}
 
 ## Print
 
