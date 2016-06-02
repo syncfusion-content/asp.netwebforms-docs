@@ -12,10 +12,12 @@ The Scheduler can be customized in various aspects like -
 
 * Setting different Start/end hour limits
 * Highlighting the working hours 
-* Setting different date format 
+* Setting different [Date format](/aspnet/schedule/globalization-and-localization#date-format)
 * Specifying minimum and maximum date ranges 
 * Customize the entire appointment window with the user required fields
 * Setting different time Slot duration
+* Complete Scheduler customization using QueryCellInfo event
+* Setting different [FirstDayOfWeek](/aspnet/schedule/globalization-and-localization#first-day-of-week)
 
 ## Hour Customization
 
@@ -25,8 +27,8 @@ It includes customization of displaying Scheduler with specific Start/End hours 
 
 It denotes the start and end hour time limits to be displayed on the Scheduler. To set this time limit, two properties namely `StartHour` and `EndHour` can be used. 
 
-* **StartHour** - Sets the start time. The hour from which the Scheduler time display actually starts.
-* **EndHour** - Sets the end time. The hour on which the Scheduler time display should end.
+* **StartHour** - The hour from which the Scheduler time display actually starts.
+* **EndHour** - The hour on which the Scheduler time display should end.
 
 The following code example renders the scheduler from 7.00 AM to 6.00 PM.
 
@@ -44,13 +46,11 @@ The following code example renders the scheduler from 7.00 AM to 6.00 PM.
 
 ### Working Hours
 
-Working hours indicates the work hour limit within the Scheduler. To enable the highlighting of work hours on the Scheduler, set the **highlight** option available within the WorkHours property to **true**. By default, it is set to true. `WorkHours` property contains the below specified options,
+Working hours indicates the work hour limit within the Scheduler, which is highlighted visually with white colored work cells. To enable the highlighting of work hours on the Scheduler, set the **highlight** option available within the workHours property to **true**. By default, it is set to true. `WorkHours` is a object property which contains the below specified options,
 
-* **Highlight** – enables/disables the work hour highlighting functionality.
-* **Start** - sets the time to be depicted as the start of the working/business hour in a day. 
-* **End** - sets the time limit to denote the end of the working/business hour in a day. 
-
-The work hours are differentiated from other normal hours, by depicting the Scheduler cells in different color shade that belongs to this working hour time range. 
+* **Highlight** – enables/disables the highlighting of work hours.
+* **Start** - sets the start time of the working/business hour in a day.  
+* **End** - sets the end time limit of the working/business hour in a day.  
 
 {% highlight html %}
 
@@ -65,15 +65,16 @@ The work hours are differentiated from other normal hours, by depicting the Sche
 
 {% endhighlight %}
 
-N> By default, work hour **Start** is set to **9** and work hour **End** is set to **18**. Also, the Scheduler cells automatically scrolls up or down based on the work start hour that is set to it, to make the user to view that particular time initially.
+N> By default, work hour **Start** is set to **9** and **End** is set to **18**. Also, the Scheduler cells automatically scrolls up or down based on the starting work hour, to make the user to view that particular time initially.
 
 ## TimeScale
 
-The `TimeScale` is an object collection which allows the user to set the required time slot duration to be displayed on the Scheduler. It provides option to customize both the major and minor slots using template option. It includes the below properties such as,
+The `TimeScale` allows the user to set the required time slot duration for the work cells that displays on the Scheduler. It provides option to customize both the major and minor slots using template option. It includes the below properties such as,
 
-* `Enable` - It accepts true or false value, denoting whether to show or hide the timescale option. Its default value is `true`.
+* `Enable` - It accepts true or false value, denoting whether to show or hide the time slots. Its default value is `true`.
 * `MajorSlot` – Specifies the major time slot duration.
-* `MinorSlotCount` – Specifies the value based on which the minor time slots are divided.
+* `MinorSlotCount` – Specifies the value, based on which the minor time slots are divided into appropriate count.
+* `TimeScale templates` - 2 template options available for customizing timeScales namely `MinorSlotTemplateId` and `MajorSlotTemplateId`. 
 
 The MajorSlot and MinorSlot can be set on the Scheduler with the following code example.
 
@@ -93,7 +94,7 @@ The MajorSlot and MinorSlot can be set on the Scheduler with the following code 
 
 ## Date Customization
 
-The dates in the Scheduler can be customized by setting specific minimum and maximum date ranges and also defining various date formats to it.
+The date in the Scheduler can be customized by setting specific minimum and maximum date ranges and also defining various date formats to it.
 
 ### Current Date
 
@@ -111,13 +112,13 @@ The Current date indicates the date with which the Scheduler loads initially and
 
 {% endhighlight %}
 
-N> By default, the System current date will be taken as Scheduler’s Current date.
+N> By default, the System current date will be taken as Scheduler’s current date.
 
 ### MinDate and MaxDate
 
-Providing the `MinDate` and `MaxDate` property with some date values, allows the Scheduler to set the minimum and maximum date range. The Scheduler dates that lies beyond these minimum and maximum date range will be in a disabled state, so that the date navigation is blocked beyond these specified date range. Also, the appointments that belongs beyond these date ranges will not be displayed on the Scheduler.  
+Providing the `MinDate` and `MaxDate` property with some date values, allows the Scheduler to set the minimum and maximum date range. The Scheduler date that lies beyond these minimum and maximum date range will be in a disabled state, so that the date navigation is blocked beyond these specified date range. Also, the appointments that lies beyond these date ranges will not be displayed on the Scheduler.    
 
-The following code example shows how to set the MinDate and MaxDate properties of the Scheduler.
+The following code example shows how to set the minDate and maxDate properties of the Scheduler.
 
 {% highlight html %}
 
@@ -137,7 +138,7 @@ N> The **MaxDate** value provided should always be greater than that of **MinDat
 
 It is possible to use the custom appointment window option to design it with the user-required extra fields apart from the other default available fields. To make use of the customized appointment window, it is necessary to use the `AppointmentWindowOpen` event within which the display of default appointment window is prevented.
 
-The following code example lets you create the custom appointment with a single extra field for defining the appointment type.
+The following code example lets you create the custom appointment window with a single extra field for defining the appointment type.
 
 {% highlight html %}
 
@@ -396,7 +397,7 @@ On clicking the **Submit** button within the Custom Appointment window, the foll
 
 {% endhighlight %}
 
-## Query cell info
+## Scheduler Customization using QueryCellInfo
 
 It is possible to format and customize almost every child elements of scheduler such as work cells, header cells, time cells and so on using `QueryCellInfo` event.
 

@@ -12,7 +12,7 @@ Navigation in Scheduler can be classified based on Scheduler views, date and als
 
 ## View Navigation
 
-By default, all the [available view options](/aspnet/schedule/views) except the Custom View are available at the top right corner of the Schedule header, which can be traverse through continuously as and when needed. 
+By default, all the [available view options](/aspnet/schedule/views) except the Custom View are available at the top right corner of the Schedule header, which can be traverse through continuously as and when needed.  
 
 Clicking on the particular date header in the Week/Work Week/Month/Custom View will navigate to the day view automatically. Also, clicking on the week header ranges displayed at the left side in the month view will navigate to the Week view. These particular actions can take place only if the Week and Day view options are present in the `Views` Collection.
 
@@ -46,9 +46,9 @@ N> Based on the navigation, the appointments that lies between the particular da
 
 ## Date Navigation
 
-The Scheduler dates can be navigated on two aspects either in a continuous or random manner. On pressing the previous and next navigation arrow keys in the Scheduler header will move the scheduler one date back and forth respectively.
+The Scheduler date can be navigated on two aspects either in a continuous or random manner. On pressing the previous and next navigation arrow icons in the Scheduler header will move the scheduler one date back and forth respectively.
 
-Another way of navigating through dates is by making use of the built-in calendar available within the Scheduler which pops out when the header date range is clicked. Selecting any date in the calendar will make the Scheduler to move to that particular date appropriately.
+Another way of navigating through date is by making use of the built-in calendar available within the Scheduler, which pops out when the header date range is clicked. Selecting any date in the calendar will make the Scheduler to move to that particular date appropriately.
 
 ### Handling Date Navigation actions
 
@@ -82,7 +82,7 @@ To handle the date navigation actions, the `Navigation` event can be used. For e
 
 The Appointment navigation bars (labeled **Previous/Next Appointment**) are rendered parallel to each other on the left and right centric corners of the Schedule control. It is controlled by an API `ShowAppointmentNavigator` which is set to true by default. When it is set to false, these bars will not be displayed on the Scheduler.
 
-Whenever the previous/Next Appointment bars are clicked, it navigates the Scheduler to the corresponding closest date where the appointments are available. If no appointments are available beyond the current date, then these appointment bars will be disabled.   
+Whenever the previous/Next Appointment bars are clicked, it navigates the Scheduler to the corresponding closest date where the appointments are available. If no appointments are available beyond the current date, then these appointment bars will be in a disabled state.      
 
 The following code example shows the way to define the **ShowAppointmentNavigator** property for Scheduler.
 

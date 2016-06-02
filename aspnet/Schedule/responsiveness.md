@@ -26,26 +26,27 @@ By default, setting 100% width to the Scheduler makes it adaptable to the window
 
 {% endhighlight %}
 
-N> When the Scheduler width is set to **less** **than** **600px**, then the View selection options will be displayed in a **navigation** **drawer**. 
+N> When the Scheduler width is set to have **less** **than** **600px**, then the View selection options will be displayed in a **navigation** **drawer**.  
 
-Also, whenever the Scheduler resizes - the width of the work cells adjusts automatically (if no **cellWidth** property is specified with pixel values), but the height of the cells are kept to remain as same as 20px until **cellHeight** property is set with some pixel values.
+Also, whenever the Scheduler resizes - the width of the work cells adjusts automatically (if no **CellWidth** property is specified with pixel values), but the height of the cells are kept to remain as same as 20px until **CellHeight** property is set explicitly with some pixel values.
 
 ## Scheduler in Mobile/Tablets
 
-The Scheduler layout adapts automatically in the mobile and tablet devices with the appropriate UI changes, as the `IsResponsive` property is set to **true** by default. In case, if the user wants to display the normal scheduler in mobile devices without any adaptive enhancements, then the isResponsive property can be set to false.
+The Scheduler layout adapts automatically in the mobile and tablet devices with the appropriate UI changes, as the `IsResponsive` property is set to **true** by default. In case, if the user wants to display the normal scheduler in mobile devices without any adaptive enhancements, then the `isResponsive` property can be set to false.
 
 Some of the default changes done for adaptive Scheduler to render in mobile devices are as follows,
 
 * Animation effect introduced between view/date navigation.
 * Cell Height increased
 * The header date display changes (displayed next to the navigation icons).
-* Views selection displayed in Navigation drawer
+* View options displayed in Navigation drawer
 * Time cell width decreased
 * Quick window display blocked on cell/appointment single click.
 * Appointment resizing action blocked.
 * Multiple cell selection blocked.
 * Delete appointment option made available within the appointment window.
 * Week header display in month view hidden.
+* With Multiple resources - only one resource is viewable initially on the screen and to further look onto other resources, user need to swipe the screen.
 
 N> To make the Scheduler control to react as responsive in mobile/tablet devices, it is necessary to refer the additional [ej.responsive.css](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css) file in the application.
 

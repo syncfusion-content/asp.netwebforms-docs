@@ -4,7 +4,7 @@ description: Working with Scheduler appointments and its related options like Re
 platform: aspnet
 control: schedule
 documentation: ug
-keywords: appointments, appointment, recurrence, recurring appoitnment, all day 
+keywords: appointments, recurrence, recurring appointment, resize, drag and drop, search, categorize, priority, occurrence, reminder, filter and CRUD  
 ---
 # Working with Appointments
 
@@ -16,19 +16,19 @@ The types of appointments available within Scheduler can be categorized as follo
 
 ### Normal 
 
-Represents an appointment that is created for a certain time interval on a single or more number of days. If the normal appointment is created for more than 24 hours, then those longer appointments will be rendered on the all-day row.
+Represents an appointment that is created for a certain time interval in one or more number of days. If the normal appointment is created for more than 24 hours, then those longer appointments will be rendered on the all-day row.
 
-N> If the normal appointment is to be created for two days (say from November 25, 2015 – 11.00 PM to November 26, 2015 2.00 AM) but less than 24 hour time interval, then the appointment is split into two parts and will be displayed appropriately on both the days.
+N> If the normal appointment is to be created for two days (say from November 25, 2015 – 11.00 PM to November 26, 2015 2.00 AM) but less than 24 hour time interval, then the appointment is split into two partitions and will be displayed appropriately on both the days.
 
 ### All-Day 
 
-Represents an appointment that is created for an entire day such as holiday events. It renders separately in an All-day cell, a separate place for all-day appointments. In Timeline (horizontal) view, all-day appointment renders in the usual work cells, as no all-day cells are present in that view. 
+Represents an appointment that is created for an entire day such as holiday events. It renders separately in All-day row, a separate place for all-day appointments. In Timeline (horizontal) view, all-day appointment renders in the usual work cells, as no all-day cells are present in that view.  
 
 N> An all-day row is normally visible on the Scheduler, as the `ShowAllDayRow` property is set to true by default. 
 
 ### Recurrence
 
-Represents an appointment that is created for a certain time interval that occurs repeatedly in a daily, weekly, monthly or yearly basis at the same time interval based on the Recurrence rule. The other available options and validations that can be performed on recurrence appointments can be referred from [here](/aspnet/schedule/working-with-appointments#recurrence-options).
+Represents an appointment that is created for a certain time interval that occurs repeatedly in a daily, weekly, monthly, yearly or every weekday basis at the same time interval based on the recurrence rule. The other available options and validations that can be performed on recurrence appointments can be referred from [here](/aspnet/schedule/working-with-appointments#recurrence-options).
 
 ## CRUD operation 
 
@@ -111,7 +111,7 @@ The other additional options available are listed below for which the appropriat
 * Categorize 
 * Resources   
 
-The appointments can be created by double-clicking on the Scheduler cells across the required time slots, which makes the create Appointment window to pop-up. The start and end time will gets automatically populated, according to the time-slot selection. Clicking on the done button in an appointment window will create the appointment for the selected time cells.
+The appointments can be created by double-clicking the Scheduler cells across the required time slots, which makes the Create Appointment window to pop-up. The start and end time fields will get automatically populated, according to the time-slot selection. Clicking on the done button in an appointment window will create the appointment for the selected time cells.
 
 N> Select multiple cells both using mouse or keyboard access keys (<kbd>shift</kbd>+<kbd>arrow keys</kbd>) and press <kbd>Alt</kbd>+<kbd>N</kbd> key, so that the default appointment window opens up for the selected date/time range with the Start and End time fields automatically filled in.
 
@@ -176,21 +176,21 @@ You can add/edit the appointments dynamically through the public method `saveApp
 
 ### Delete Appointments
 
-The appointments can be deleted using either of the following ways,
+The appointments can be deleted in either of the following ways,
 
-* Selecting an appointment and clicking on the delete icon in the quick appointment window.
+* Selecting an appointment and clicking the delete icon in the quick appointment window.
 * Hovering the mouse over appointments and clicking on Inline delete option which is enabled by default for all the appointments.
 * Selecting an appointment and pressing <kbd>Delete</kbd> key.
 * Through Programmatically.
 
-A pop-up with a confirmation message will get displayed before deleting an appointment, which can be customized as mentioned [here](/aspnet/schedule/globalization-and-localization#localization:localizing-specific-words).
+A pop-up with a confirmation message will get displayed before deleting an appointment, which can be either switched on/off using the API `ShowDeleteConfirmationDialog`. Also, the confirmation text in that pop-up can be customized as mentioned [here](/aspnet/schedule/globalization-and-localization#localization:localizing-specific-words).
 
 **For example**, to localize only the delete confirmation message in the delete window - 
 
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData"  CurrentDate="5/2/2014">
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData"  CurrentDate="5/2/2014" ShowDeleteConfirmationDialog="true">
     <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule"/>
 </ej:Schedule>
 
@@ -220,7 +220,7 @@ N> All these CRUD operations on appointments (add/edit/delete) can also be done 
 
 #### Through Programmatically
 
-You can delete the appointments dynamically through the public method `deleteAppointment`, which accepts the Guid of the appointment or complete appointment data as its argument. The Guid is availed as one of the appointment element’s attribute.
+You can delete the appointments dynamically using the method `deleteAppointment`, which accepts the Guid of the appointment or complete appointment data as its argument. The Guid is availed as one of the appointment element’s attribute.
 
 #### Example 1 - Using GUID 
 
@@ -238,7 +238,6 @@ The below code example depicts the way to delete the appointments using GUID pro
             
 <asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
     <script type="text/javascript">
-        //addAppointment is a function, gets called on clicking the Add button
         function onAppointmentClick(args) {
             var schObj = $("#Schedule1").data("ejSchedule");
             schObj.deleteAppointment(args.appointment.Guid);
@@ -265,7 +264,6 @@ The below code example depicts the way to delete the appointments using appointm
             
 <asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
     <script type="text/javascript">
-        //addAppointment is a function, gets called on clicking the Add button
         function onAppointmentClick(args) {
             var schObj = $("#Schedule1").data("ejSchedule");
             schObj.deleteAppointment(args.appointment);
@@ -277,7 +275,7 @@ The below code example depicts the way to delete the appointments using appointm
 
 ## Handling Appointment Actions
 
-It is possible to define some specific actions to take place after the CRUD operation occurs on the Scheduler appointments through the following available client-side events,
+It is possible to define some specific actions to take place before the CRUD operation occurs on the Scheduler appointments through the following available client-side events,
 
 * BeforeAppointmentCreate
 * BeforeAppointmentChange
@@ -636,7 +634,7 @@ namespace WebSampleBrowser.Schedule
 
 ## Resize
 
-Resizing an appointment is another way to change its start or end time. Mouse hover on the appointments, so that the resizing handlers gets displayed on either sides of the appointment which allows resizing. The resizing functionality can be enabled/disabled by setting the `EnableAppointmentResize` property. By default it is set to `true`.
+Resizing an appointment is another way to change its start and end time. Mouse hover on the appointments, so that the resizing handlers gets displayed on either sides of the appointment which allows resizing. The resizing functionality can be enabled/disabled by setting the `EnableAppointmentResize` property. By default it is set to `true`.
 
 {% highlight html %}
 
@@ -692,11 +690,13 @@ It allows to differentiate the appointments with various categorize options and 
 
 ### Categorize Settings
 
-The `CategorizeSettings` is an object collection that holds below categorize related properties such as,
+The `CategorizeSettings` holds the below categorize related properties such as,
 
 * `Enable` - It accepts true or false value, denoting whether to enable/disable the categorize option. Its default value is `false`.
 * `AllowMultiple` – It enables or disables the multiple selection of categories for each appointments in the appointment window as well as in the context menu. Its default value is `false`.
-* `DataSource` – Bind the categorize collection. This property should be assigned with the List data collection or [DataManger](/aspnet/datamanager/overview). We have below 6 default values for data source collection.
+* `DataSource` – Binds the categorize dataSource collection. This property should be assigned with the JSON data array collection or instance of [DataManger](/aspnet/datamanager/overview). We have below 6 default values for data source collection.
+
+We have below 6 default values for Categorize dataSource collection.
 
 {% highlight c# %}
 
@@ -805,11 +805,13 @@ This option prioritize the appointments based on its importance and it can be di
 
 ### Priority Settings
 
-The `PrioritySettings` is an object collection that holds the below priority related properties such as,
+The `PrioritySettings` holds the below priority related properties such as,
 
 * `Enable` - It accepts true or false value, denoting whether to enable/disable the priority option. Its default value is **false**.
-* `Template` – Customize the priority icon/images using template options. Refer this [priority template](/aspnet/schedule/templates#priority-settings-template) topic.
-* `DataSource` – binds the priority collection. This property should be assigned with the list data collection or [DataManger](/aspnet/datamanager/overview). We have below 4 default values for priority data source collection.
+* `Template` – Customize the priority icon/images using template options.
+* `DataSource` – binds the priority dataSource collection. This property should be assigned with the JSON data array collection or instance of [DataManger](/aspnet/datamanager/overview). 
+
+We have below 4 default values for priority data source collection.
 
 {% highlight c# %}
 
@@ -845,11 +847,11 @@ Field name<br/><br/></th><th>
 Description<br/><br/></th></tr>
 <tr>
 <td>
-Text<br/><br/></td><td>
+text<br/><br/></td><td>
 It holds the binding name for <b>Text</b> field in the priority dataSource<br/><br/></td></tr>
 <tr>
 <td>
-Value<br/><br/></td><td>
+value<br/><br/></td><td>
 It holds the binding name for <b>Value</b> field in the priority dataSource.<br/><br/></td></tr>
 </table>
 
@@ -895,13 +897,13 @@ namespace WebSampleBrowser.Schedule
 
 ### Appointment Search
 
-The client-side public method `searchAppointments` is used to search the appointments in the scheduler dataSource. It contains the below four arguments such as search string, search field, filter operator and ignore case.
+The public method `searchAppointments` is used to search the appointments in the Scheduler dataSource. It contains the below four arguments such as search string, search field, filter operator and ignorecase.
 
-**searchString** - It is used to search the given word / sentence with in the appointments data.
+**searchString** - It is used to search the given word/sentence within the appointment data.
 
-**fields** - It is the field, with which the search operation takes place. It’s an optional argument.
+**fields** - It is the field with which the search operation takes place. It’s an optional argument.
 
-**filterOperator** – It contains the filter type like contains, greater than or less than. It’s an optional argument.
+**filterOperator** – It denotes the filter type like `contains`, `greaterthan` or `lessthan`. It’s an optional argument.
 
 **ignoreCase** – It is a boolean value to set the search string as case sensitive or not. It’s an optional argument.
 
@@ -956,7 +958,7 @@ The appointments can be filtered or shortlisted based on the simple or complex c
 
 **value** – It is the filter keyword based on which the records are filtered.
 
-**predicate** – Add more than one condition query using **and**, **or** [predicate](/aspnet/datamanager/filtering#and-predicate).
+**predicate** – To add more than one conditional query, need to use `and`, `or` [predicate](/aspnet/datamanager/filtering#and-predicate).
 
 {% highlight html %}
 
@@ -1012,15 +1014,15 @@ The appointments can be filtered or shortlisted based on the simple or complex c
 
 ## Recurrence Options
 
-There are scenarios where you require the same appointments to be repeatedly created for multiple days on daily, weekly, monthly, and yearly or every weekday basis. 
+There are scenarios where you require the same appointments to be repeatedly created for multiple days on daily, weekly, monthly, and yearly or on every weekday basis.  
 
-In appointment data collection, **recurrence** and **recurrenceRule** are depended fields. While creating or binding the recurrence appointment, the **recurrence** field is set to **true** and **recurrenceRule** contains recurrence pattern details in string format.
+In appointment data collection, **recurrence** and **recurrenceRule** are dependent fields. While creating or binding the recurrence appointment, the **recurrence** field is set to **true** and **recurrenceRule** contains recurrence pattern in string format.
 
 ### Recurrence Rule
 
 The recurrence appointments are created based on the recurrence rule. The RecurrenceRule is a string value that contains the details of the recurrence appointments like 
 
-* repeat type - daily/weekly/monthly/yearly 
+* repeat type - daily/weekly/monthly/yearly/every weekday  
 * how many times it needs to be repeated 
 * the interval duration
 * the time period to render the appointment, etc.,
@@ -1037,7 +1039,7 @@ Purpose<br/><br/></th></tr>
 <td>
 1<br/><br/></td><td>
 FREQ<br/><br/></td><td>
-Maintains the Repeat type value of the appointment. <br/><br/>(<b>Example</b>: Daily, Weekly, Monthly, Yearly, Every week day)<br/><br/>Example: <b>FREQ=DAILY</b>;INTERVAL=1<br/><br/></td></tr>
+Maintains the Repeat type value of the appointment. <br/><br/>(<b>Example</b>: Daily, Weekly, Monthly, Yearly, Every weekday)<br/><br/>Example: <b>FREQ=DAILY</b>;INTERVAL=1<br/><br/></td></tr>
 <tr>
 <td>
 2<br/><br/></td><td>
@@ -1105,7 +1107,7 @@ To know more about other possible combinations of above specified recurrence rul
 
 ### Recurrence Validation
 
-The default recurrence validation has been included for recurrence appointments similar to the one available in outlook. The validation occurs during the recurrence appointment creation, drag and drop of the recurrence appointments and also if any single occurrence changes. The validation can be disabled by setting the `EnableRecurrenceValidation` to `false`.
+The default recurrence validation has been included for recurrence appointments similar to the one available in outlook. The validation occurs during the recurrence appointment creation, drag and drop or resizing of the recurrence appointments and also if any single occurrence changes. The validation can be disabled by setting the `EnableRecurrenceValidation` to `false`.
 
 {% highlight html %}
 
@@ -1123,15 +1125,11 @@ N> You can parse the **RecurrenceRule** of an appointment from the server-side b
 
 ## Reminder
 
-Reminder option notifies all the appointments before some specific time. By default, it notifies before 5 minutes. Each and every appointment triggers the `Reminder` event and can utilize this event for other user actions like mailing particular event to someone or to do any kind of manipulations with the reminder appointments and so on.
+Reminder option notifies all the appointments before some specific time. By default, it notifies before 5 minutes. Each and every appointment triggers the `Reminder` event and can utilize this event for other user actions like mailing particular event to someone or to do any kind of manipulations with the reminder appointments and so on. The `ReminderSettings` includes the following 2 properties namely,
 
-**Enable**
+* **Enable** - To enable the reminder settings of the Schedule control, set the **Enable** property as `true` within the `ReminderSettings` option.
 
-To enable the reminder settings of the Schedule control, set the **Enable** property as `true` within the `ReminderSettings` option.
-
-**Alert Before**
-
-The ReminderSettings option includes another optional property **AlertBefore** that accepts integer value to denote the time before how long the reminder should be notified to the user.
+* **AlertBefore** - Accepts the integer value to denote the time, before how long the reminder should be notified to the user.
 
 {% highlight html %}
 
@@ -1154,5 +1152,5 @@ The ReminderSettings option includes another optional property **AlertBefore** t
 
 {% endhighlight %}
 
-N> Whenever the reminder setting is enabled in the Scheduler with some specific value (in minutes) assigned to the **AlertBefore** property, the **Reminder** event gets triggered before this specified value. It includes the reminder appointment’s entire information in its arguments.
+N> Whenever the reminder setting is enabled in the Scheduler with some specific value (in minutes) assigned to the **AlertBefore** property, the **Reminder** event gets triggered before this specified value. It includes the reminder appointment’s entire information within its arguments.
 

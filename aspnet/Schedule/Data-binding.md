@@ -28,7 +28,7 @@ Binds the appointment start time field name which is <b>mandatory</b>and also it
 <tr>
 <td>
 StartTimeZone<br/><br/></td><td>
-Binds the name of the start timezone field in the dataSource and also its related validation rules. If the <b>startTimeZone</b> field is not mentioned, then the appointment makes use of the Scheduler timeZone or System timeZone.<br/><br/></td></tr>
+Binds the name of the start timezone field in the dataSource and also its related validation rules. If the <b>StartTimeZone</b> field is not mentioned, then the appointment makes use of the Scheduler timeZone or System timeZone.<br/><br/></td></tr>
 <tr>
 <td>
 EndTime<br/><br/></td><td>
@@ -36,7 +36,7 @@ Binds the appointment end time field name which is <b>mandatory</b>and also its 
 <tr>
 <td>
 EndTimeZone<br/><br/></td><td>
-Binds the name of the end timezone field in the dataSource and also its related validation rules. If the <b>endTimeZone</b> field is not mentioned, then the appointment makes use of the Scheduler timeZone or System timeZone.<br/><br/></td></tr>
+Binds the name of the end timezone field in the dataSource and also its related validation rules. If the <b>EndTimeZone</b> field is not mentioned, then the appointment makes use of the Scheduler timeZone or System timeZone.<br/><br/></td></tr>
 <tr>
 <td>
 Subject<br/><br/></td><td>
@@ -44,7 +44,7 @@ Binds the appointment subject field name which holds the summary of the appointm
 <tr>
 <td>
 Location<br/><br/></td><td>
-Binds the name of the location field and also its related validation rules. It indicates the appointment location/occurrence place. This field needs to be bind to the Scheduler, when an API <b>showLocationField</b> is set to true.<br/><br/></td></tr>
+Binds the name of the location field and also its related validation rules. It indicates the appointment location/occurrence place. This field needs to be bind to the Scheduler, when an API <b>ShowLocationField</b> is set to true.<br/><br/></td></tr>
 <tr>
 <td>
 Description<br/><br/></td><td>
@@ -60,7 +60,7 @@ Binds the name of the categorize field and also its related validation rules. It
 <tr>
 <td>
 Priority<br/><br/></td><td>
-Binds the name of the priority field, its related validation rules and also indicates the priority (high, low, medium and none) of the appointments. This field should be bind to the Scheduler, when <b>prioritySettings.enable</b> is set to true.<br/><br/></td></tr>
+Binds the name of the priority field and its related validation rules, which indicates the priority (high, low, medium and none) of the appointments. This field should be bind to the Scheduler, when <b>PrioritySettings.Enable</b> is set to true.<br/><br/></td></tr>
 <tr>
 <td>
 ResourceFields<br/><br/></td><td>
@@ -132,7 +132,7 @@ The below code defined in the aspx.cs page shows the list of resources to be ass
 
 ## Appointment Field Validation
 
-It is possible to validate the required fields of the appointment window from client-side before submitting it, by adding appropriate validation rules to each fields. The appointment fields have been extended to accept both String and object type values. Therefore, in order to perform validations, it is necessary to specify object values for the appointment fields.  
+It is possible to validate the required fields of the appointment window from client-side before submitting it, by adding appropriate validation rules to each of the fields. The appointment fields have been extended to accept both String and object type values. Therefore, in order to perform validations, it is necessary to specify object values for the appointment fields.    
 
 Refer the appointment fields specified with validation rules from the following code example.
 
@@ -528,7 +528,7 @@ The OData v4 is an improved version of OData protocols. Scheduler supports retri
 
 ## WebAPI Binding
 
-The appointment data can be bound to the Scheduler through Web API service which serves as a programmatic interface to define the request and response messaging system.
+The Schedule appointment data can also be bound through the Web API services. It is a programmatic interface to define the request and response messages system that is mostly exposed in **JSON** or **XML**.
 
 {% highlight html %}
 
@@ -1009,7 +1009,7 @@ namespace ScheduleCRUDWithWebServices
 
 ## Loading Data on Demand
 
-Scheduler supports load on demand concept by retrieving only the filtered appointment data (for the current Scheduler date range) from the service/database during **loading** **time**, and that too only for the current Scheduler view**.** There are 3 parameters made accessible on the server-side namely **CurrentDate**, **CurrentView** and **CurrentAction** through which only the necessary appointments are retrieved from the database and then assigned to the Scheduler dataSource. With this kind of action, Scheduler consumes only lesser data and also reduces the usage of network bandwidth size and loading time. 
+Load on demand feature allows the Scheduler to retrieve only the filtered appointment data (for the current Scheduler date range) from the service/database during **loading time**, and that too only for the current Scheduler view. There are 3 parameters made available on the server-side namely **CurrentDate**, **CurrentView** and **CurrentAction** through which only the necessary appointments are retrieved from the database and then assigned to the Scheduler dataSource. With this kind of Scheduler action, consuming only lesser data will reduce the usage of network bandwidth size and loading time. 
 
 The **enableLoadOnDemand** property is used to enable or disable the load on demand functionality of the schedule.
 

@@ -225,7 +225,7 @@ namespace WebSampleBrowser.Schedule
 
 ## Display Scheduler with Appointments Filtered by Subject
 
-It is possible to display the Scheduler with the appointments, which is filtered based on the Subject. For example, if we keep a text box and start typing a character – the appointment’s subject that matches the typed character alone will be shown on the Scheduler. The following code example depicts the way to achieve this.
+It is possible to display the Scheduler with appointments, which is filtered based on the Subject. For example, if we keep a text box and start typing a character – the list of appointments whose subject matches the typed character alone will be shown on the Scheduler. The following code example depicts the way to achieve this.
 
 {% highlight html %}
 
