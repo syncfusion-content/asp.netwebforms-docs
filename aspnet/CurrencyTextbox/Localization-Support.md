@@ -7,25 +7,37 @@ control: Currency TextBox
 documentation: ug
 ---
 
-# Localization Support
+# Globalization Support
 
-Localization is the language support based on the culture. You can achieve the Localization by using the Locale property in the CurrencyTextbox.
+**Globalization** is language support based on the culture in CurrencyTextBox. You can achieve the **Globalization** using “**locale”** property in CurrencyTextBox. 
 
-The CurrencyTextbox control provides multi-language support by using globalization. You can customize the CurrencyTextbox in your own language by using this feature. You can change the localization by using the Locale property. The default value for Locale property is en-US.
+The CurrencyTextBox widget provides multi-language support using globalization. You can customize the CurrencyTextBox with your own language style by using this feature. You can change the globalization by using the **locale** property. The default value for **locale** property is **en-US** in CurrencyTextBox controls.
 
-In order to enable [localization](http://help.syncfusion.com/aspnetmvc/currencytextbox/localization-support) refer to the following scripts: globalize.cultures.js and globalize.js. The “globalize.cultures.js” includes different language support for JavaScript controls and the “globalize.js” is a simple JavaScript library that allows you to format the value based on the specified culture.
+More than 350 culture specific files are available to localize the value. To know more about EJ globalize support, please refer the below link      
+ [http://help.syncfusion.com/js/localization](http://help.syncfusion.com/js/localization) 
+ 
+ N> All the culture-specific script files are available within the below specified location, once you have installed Essential Studio in your machine, therefore it is not necessary to download these files explicitly.
 
-You can refer to the following online link reference for globalize.js:
+<table>
+<tr>
+<td>
 
-[http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js](http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js)
+    (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\cultures
 
-You can refer to the following online link reference for globalize.culture.js:
+    For example, If you have installed the Essential Studio package within C:\Program Files (x86), then navigate to the below location, 
+    C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\cultures
 
-[http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/cultures/globalize.cultures.js](http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/cultures/globalize.cultures.js)
+</td></tr>
+</table>
 
-You can get the script file of various cultures from the following path also:
+Refer the below German culture file in head section of html page after the reference of **ej.web.all.min.js** file.
 
-"&lt;Installed Location&gt;\Syncfusion\Essential Studio\ {{site.releaseversion}} JavaScript\assets\external\cultures"
+ {% highlight javascript %}
+   
+           <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/cultures/ej.culture.de-DE.min.js"></script>
+                
+ {% endhighlight %}
+
 
 You can dynamically change the language based on their culture.
 
