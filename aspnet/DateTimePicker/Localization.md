@@ -9,28 +9,37 @@ documentation: ug
 
 # Localization
 
-You can globalize your DateTimePicker control. People of different culture can make use of it. All culture files are supported by Syncfusion components
+EJWEB DateTimePicker has been provided with built-in localization support, so that it can adapt based on culture specific locale defined for it. 
 
-Globalize.js is a simple JavaScript library that allows you to format and parse numbers and dates in a culture-specific fashion. The globalize cultures is the open source and you can get all the culture files online. Refer to the online link given,
+More than 350 culture specific files are available to localize the datetime. To know more about EJ globalize support, please refer the below link      
+ [http://help.syncfusion.com/js/localization](http://help.syncfusion.com/js/localization) 
 
-[http://cdnjs.com/libraries/globalize/](http://cdnjs.com/libraries/globalize/)
+N> All the culture-specific script files are available within the below specified location, once you have installed Essential Studio in your machine, therefore it is not necessary to download these files explicitly.
 
-You can get the script file of various cultures from the following path also:
-"<Installed Location>\Syncfusion\Essential Studio\{{site.releaseversion}}\JavaScript\assets\external\cultures"
+<table>
+<tr>
+<td>
 
-To use any cultures, add the script files of those corresponding culture in the sample. In order to add UK Culture in the DateTimePicker, you can refer to a script file globalize.culture.es-ES.js. 
+    (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\cultures
 
-You can also customize the culture to your own by using the following steps.
+    For example, If you have installed the Essential Studio package within C:\Program Files (x86), then navigate to the below location, 
+    C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\cultures
 
-Open the Culture script file, included in your project.
+</td></tr>
+</table>
+To translate our control content from default English to any of the culture, say For example - Spanish language, then you need to refer the ej.culture.es-ES.min.js file in your application,
 
-Replace existing calendar locale information by your own culture information or to your customized format.
+The **en-US** locale is currently being used as default culture in DateTimePicker. You can set any other culture to DateTimePicker using **Locale** property. Below code example shows Spanish cultured DateTimePicker.
 
-Refer to this section for more details: [localization](http://help.syncfusion.com/aspnetmvc/datetimepicker/localization)
+Refer the below Spanish culture file in head section of html page after the reference of **ej.web.all.min.js** file.
 
-For example, to change month names to your culture month, just replace month names with your culture month names or your customized format.
+ {% highlight javascript %}
+   
+           <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/cultures/ej.culture.es-ES.min.js"></script>
+                
+ {% endhighlight %}
 
-The following code example can be used to get Spanish culture in the DateTimePicker.
+The following code example is used to set DateTimePicker in Spanish language.
 
 In the ASPX page, include the following DateTimePicker control code example.
 
