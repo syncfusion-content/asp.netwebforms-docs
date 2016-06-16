@@ -29,9 +29,9 @@ It maps the corresponding key field name from the data table or JSON data that i
 
 It maps the corresponding text field name from the data table or JSON data that is assigned to the dataSource, with the text property of the AutoComplete control. The text value that is fetched from the table gets the value to be displayed in the AutoComplete textbox.
 
-### DataCategoryField
+### DataGroupByField
 
-It maps the category field name from the data table or JSON data that is assigned to the dataSource. The category value that is fetched from the table is made available when Grouping is enabled.
+It maps the groupBy field name from the data table or JSON data that is assigned to the dataSource. The groupBy value that is fetched from the table is made to group the values in the datasource.
 
 ### DataHtmlAttributesField
 
