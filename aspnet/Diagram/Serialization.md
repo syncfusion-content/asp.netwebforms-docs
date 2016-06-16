@@ -74,7 +74,7 @@ function nodeCollectionChange(args) {
 {% endhighlight %}
 {% endtabs %}
 
-* HTML / Native template needs to be retained in the application level, while loading the native and html node.
+* HTML / Native template needs to be retained in the application level, while loading the native and HTML node.
 
 {% highlight aspx-cs %}
 

@@ -275,7 +275,7 @@ The `Point` property of straight segment allows you to define the end point of i
 
 Orthogonal segments are used to create segments that are perpendicular to each other.
 
-Set the segment `Type` as "Othogonal" to create a default orthogonal segment. The following code example illustrates how to create a default orthogonal segment.
+Set the segment `Type` as "Orthogonal" to create a default orthogonal segment. The following code example illustrates how to create a default orthogonal segment.
 
 {% highlight aspx-cs %}
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" >
@@ -485,7 +485,7 @@ The `Shape` property of decorator allows to define the shape of the decorators. 
 
 Padding is used to leave space between the Connector's end point and the object to where it is connected.
 
-The `SourcePadding` and `TargerPadding` properties of connector define the space to be left between the connection end points and the source and target nodes of connector. The following code example illustrates how to leave space between the connection end points and source, target nodes.
+The `SourcePadding` and `TargetPadding` properties of connector define the space to be left between the connection end points and the source and target nodes of connector. The following code example illustrates how to leave space between the connection end points and source, target nodes.
 
 {% highlight aspx-cs %}
 

@@ -111,7 +111,7 @@ Diagram allows you to create a textNode as soon as you click on the Diagram pag
 
 {% endhighlight %}
 
-Once you activate the texttool, you can also able to perform label editing of a node/connector.
+Once you activate the text tool, you can also able to perform label editing of a node/connector.
 
 ## Tool Selection
 

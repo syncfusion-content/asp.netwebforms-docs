@@ -470,7 +470,7 @@ To explore layout properties, refer to [Layout Properties](http://help.syncfusio
 
 ### Layout Orientation
 
-Diagram provides support to customize the orientation of layout. You can set the desired orinetation using `Layout.Orientation`. For more information about orientation, refer to [Layout Orientations](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.Layout~Orientation.html "Layout Orientations")
+Diagram provides support to customize the orientation of layout. You can set the desired orientation using `Layout.Orientation`. For more information about orientation, refer to [Layout Orientations](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.Layout~Orientation.html "Layout Orientations")
 
 The following code illustrates how to arrange the nodes in a "BottomToTop" orientation.
 

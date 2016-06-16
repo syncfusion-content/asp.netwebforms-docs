@@ -16,7 +16,7 @@ Selector provides a visual representation of selected elements. It behaves like 
 
 ### Single selection
 
-An element can be selected by clicking that element. During single click, all previously selected items are cleared. The following image shows how the selected elememts are visually represented.
+An element can be selected by clicking that element. During single click, all previously selected items are cleared. The following image shows how the selected elements are visually represented.
 
 ![](/aspnet/Diagram/Interaction_images/Interaction_img1.png)
 
