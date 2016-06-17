@@ -202,67 +202,67 @@ To configure the TooltipText, use the following listed elements and its correspo
 {{ '**Default value**' | markdownify }}</th></tr>
 <tr>
 <td>
-switcher</td><td>
+Switcher</td><td>
 Switcher</td></tr>
 <tr>
 <td>
-addbutton</td><td>
+AddButton</td><td>
 Add Color</td></tr>
 <tr>
 <td>
-basic</td><td>
+Basic</td><td>
 Basic</td></tr>
 <tr>
 <td>
-monochrome</td><td>
+MonoChrome</td><td>
 Mono Chrome</td></tr>
 <tr>
 <td>
-flatcolors</td><td>
+FlatColors</td><td>
 Flat Colors</td></tr>
 <tr>
 <td>
-seawolf</td><td>
+SeaWolf</td><td>
 Sea Wolf</td></tr>
 <tr>
 <td>
-webcolors</td><td>
+WebColors</td><td>
 Web Colors</td></tr>
 <tr>
 <td>
-sandy</td><td>
+Sandy</td><td>
 Sandy</td></tr>
 <tr>
 <td>
-pinkshades</td><td>
+PinkShades</td><td>
 Pink Shades</td></tr>
 <tr>
 <td>
-misty</td><td>
+Misty</td><td>
 Misty</td></tr>
 <tr>
 <td>
-vintage</td><td>
+Vintage</td><td>
 Vintage</td></tr>
 <tr>
 <td>
-moonlight</td><td>
+MoonLight</td><td>
 Moon Light</td></tr>
 <tr>
 <td>
-candycrush</td><td>
+CandyCrush</td><td>
 Candy Crush</td></tr>
 <tr>
 <td>
-currentcolor</td><td>
+CurrentColor</td><td>
 Current Color</td></tr>
 <tr>
 <td>
-selectedcolor</td><td>
+SelectedColor</td><td>
 Selected Color</td></tr>
 <tr>
 <td>
-citrus</td><td>
+Citrus</td><td>
 Citrus</td></tr>
 </table>
 

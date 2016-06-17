@@ -33,7 +33,7 @@ Description / Usage </th></tr>
 <tr>
 <td>
 ej.core.min.js<br/><br/></td><td>
-Includes only the widget basic functions and framework features. Must be referred always before using all the JS controls<br/><br/></td></tr>
+Includes only the widget basic functions and Framework features. Must be referred always before using all the JS controls<br/><br/></td></tr>
 <tr>
 <td>
 ej.globalize.min.js<br/><br/></td><td>
@@ -125,7 +125,7 @@ You can assign values after initialization of EJWEB DatePicker (it helps to get 
 
 {% endhighlight %}
 
-N>  Existing EJWEB DatePicker instance can be created by [jQuery.data()](http://api.jquery.com/jQuery.data/#) and you can control the API's of DatePicker behaviour.
+N>  Existing EJWEB DatePicker instance can be created by [jQuery.data()](http://api.jquery.com/jQuery.data/#) and you can control the API's of DatePicker behavior.
 
 ## DatePicker events
 

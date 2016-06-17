@@ -15,7 +15,7 @@ AngularJS is an open-source web application Framework. AngularJS extends HTML
 
 <http://help.syncfusion.com/js/angularjs>
 
-Sometimes you need to use DateTimePicker value for sorting and retrieving the information from database. Consider you are going to sort the number of users registered in your site. Whenever you select the date and time from the DateTimePicker popup window, the result of sorting should be changed based on date and timings. To achieve this, date and time values have to bind to the model while you change the values of date and time in the DateTimePicker control. You can achieve data binding with lesser code by integrating the angular concept with your control.  
+Sometimes you need to use DateTimePicker value for sorting and retrieving the information from database. Consider you are going to sort the number of users registered in your site. Whenever you select the date and time from the DateTimePicker popup window, the result of sorting should be changed based on date and timings. To achieve this, date and time values have to bind to the model while you change the values of date and time in the DateTimePicker control. You can achieve data binding with lesser code by integrating the AngularJS concept with your control.  
 
 In the following example, the DateTimePicker value is bounded with simple textbox. The textbox values are updated while updating the values in the DateTimePicker control. Also, changing the date and time informations from textbox is reflected in the DateTimePicker control.
 
