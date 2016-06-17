@@ -23,19 +23,19 @@ Creates button with content size.</td></tr>
 <tr>
 <td>
 {{ '**Mini**' | markdownify }}</td><td>
-Creates button with inbuilt mini size height, width specified.</td></tr>
+Creates button with Built-in mini size height, width specified.</td></tr>
 <tr>
 <td>
 {{ '**Small**' | markdownify }}</td><td>
-Creates button with inbuilt small size height, width specified.</td></tr>
+Creates button with Built-in small size height, width specified.</td></tr>
 <tr>
 <td>
 {{ '**Medium**' | markdownify }}</td><td>
-Creates button with inbuilt medium size height, width specified.</td></tr>
+Creates button with Built-in medium size height, width specified.</td></tr>
 <tr>
 <td>
 {{ '**Large**' | markdownify }}</td><td>
-Creates button with inbuilt large size height, width specified.</td></tr>
+Creates button with Built-in large size height, width specified.</td></tr>
 </table>
 
 
@@ -121,9 +121,9 @@ Supports image with both ends and middle in text.</td></tr>
 
 Icons inside the Button are added easily by using the PrefixIcon and SuffixIcon property. Location of the icon in button is necessary and you can easily customize it by using the following mentioned options.
 
-Button control also supports the build-in icon libraries. The ej.widgets.core.min CSS contains definitions for important icons that can be used in buttons. Simply you can use these build-in icons by mentioning the icon class name as value in PrefixIcon and SuffixIcon property. You can use any font icons that are defined in ej.widgets.core.min CSS. It avoids the complexity in specifying icon by using the sprite image and CSS.
+Button control also supports the Built-in icon libraries. The ej.widgets.core.min CSS contains definitions for important icons that can be used in buttons. Simply you can use these Built-in icons by mentioning the icon class name as value in PrefixIcon and SuffixIcon property. You can use any font icons that are defined in ej.widgets.core.min CSS. It avoids the complexity in specifying icon by using the sprite image and CSS.
 
-For example, the following mentioned build-in CSS class are used to show the font icons that is used by media player.
+For example, the following mentioned Built-in CSS class are used to show the font icons that is used by media player.
 
 * e-mediaback
 * e-mediaforward

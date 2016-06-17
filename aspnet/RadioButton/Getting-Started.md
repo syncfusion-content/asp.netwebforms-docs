@@ -14,7 +14,7 @@ features available in it.
 
 ## Create your first RadioButton in ASP.NET 
 
-By using ASP.NET WebForms Radio Button supports RTL, custom skins and events to display customized Radio Buttons.In this example, 
+By using ASP.NET Web Forms Radio Button supports RTL, custom skins and events to display customized Radio Buttons.In this example, 
 you can learn how to use Radio Button in a Quiz application. The following guidelines illustrate you on how to use the Radio 
 Button to select the answers in the application and get the selected items. The following screenshot shows a sample Quiz 
 application.
@@ -23,7 +23,7 @@ application.
 
 ## Create a RadioButton in a Quiz Application
 
-ASP.NET WebForms Radio Button provides support to display the Radio Button within your web page and allows you to pick your 
+ASP.NET Web Forms Radio Button provides support to display the Radio Button within your web page and allows you to pick your 
 choice. By using the following guidelines, you can customize the Radio Button for a real-time QuizApp and RegistrationApp 
 scenarios. This allows you to select the corresponding choice for each question.
 
