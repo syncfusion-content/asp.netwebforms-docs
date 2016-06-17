@@ -30,7 +30,7 @@ To suppress this warning, you need to specify the "*Access data sources across d
 
 **Option 2: Using JSONP for cross-origin request**
 
-Using JSONP datatype, you can perform cross origin-request. To enable cross-origin request, in your FileExplorer, you have to specify “**AjaxDataType”**as “**jsonp**”. And we have provided “**doJSONPAction**” method to handle “jsonp” type Ajax request on server side. 
+Using JSONP data type, you can perform cross origin-request. To enable cross-origin request, in your FileExplorer, you have to specify “**AjaxDataType”**as “**jsonp**”. And we have provided “**doJSONPAction**” method to handle “jsonp” type AJAX request on server side. 
 
 In the view page, add FileExplorer element and specify “**AjaxDataType**” as “**jsonp**”.
     
@@ -168,7 +168,7 @@ To get image from server, you have to create a handler file “getImage.ashx” 
     
 ## Adding Custom column in grid view of FileExplorer
 
-You can add custom column in grid view of FileExplorer. To achieve this requirement, in the code behind page you have to add the custom column with existing Ajax response by overriding the “Read” method, which is available in “[FileExplorerOperations](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations.html#)”. 
+You can add custom column in grid view of FileExplorer. To achieve this requirement, in the code behind page you have to add the custom column with existing AJAX response by overriding the “Read” method, which is available in “[FileExplorerOperations](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations.html#)”. 
 
 Add the following code example in code behind page to specify the custom column in grid view of FileExplorer.
     

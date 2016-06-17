@@ -36,9 +36,9 @@ In the view page, add FileExplorer element and specify the file type restriction
         
     {% endhighlight %}
     
-## Customize the Ajax request settings
+## Customize the AJAX request settings
 
-As you already know FileExplorer is a client – server based control and each action performed in the client sends an Ajax request to the server to perform the server side operations. While the Ajax request, the Ajax configurations can be customized through “[AjaxSettings](http://help.syncfusion.com/js/api/ejfileexplorer#members:ajaxsettings)” property.
+As you already know FileExplorer is a client – server based control and each action performed in the client sends an Ajax request to the server to perform the server side operations. While the AJAX request, the AJAX configurations can be customized through “[AjaxSettings](http://help.syncfusion.com/js/api/ejfileexplorer#members:ajaxsettings)” property.
 
 You can see the following requests passed during the **client – server** actions:
 
@@ -53,11 +53,11 @@ You can see the following requests passed during the **client – server** acti
 * Get Image
 * Search
 
-The actions “Read, CreateFolder, Remove, Rename, Paste, GetDetails, Search” are supported all the jQuery Ajax configurations. The remaining actions “Upload, Download, GetImage” are accepted the URL only.
+The actions “Read, CreateFolder, Remove, Rename, Paste, GetDetails, Search” are supported all the jQuery AJAX configurations. The remaining actions “Upload, Download, GetImage” are accepted the URL only.
 
 If you want to customize read action alone, the Ajax “**Url”** and “**DataType”** are changed for the “Read” action.
 
-In the view page, add FileExplorer element and specify the Ajax settings for Read request as shown below.
+In the view page, add FileExplorer element and specify the AJAX settings for Read request as shown below.
     
     {% highlight html %}
     

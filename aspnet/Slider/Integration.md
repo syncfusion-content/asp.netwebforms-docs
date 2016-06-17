@@ -25,7 +25,7 @@ All properties in the Slider supports one way data binding. Here one way binding
 
 The Slider properties, value and values are provided with two way binding support. The changes made to these properties are reflected both in the application data (model) and in HTML view.
 
-In an ASPX page, initialize the Slider by using the directive and in JavaScript bind the value and width properties in Angular way. 
+In an ASPX page, initialize the Slider by using the directive and in JavaScript bind the value and width properties in AngularJS way. 
 
 {% highlight html %}
 
@@ -59,7 +59,7 @@ In an ASPX page, initialize the Slider by using the directive and in JavaScript 
 
 
 
-Include the following Script to achieve the angularJS binding.
+Include the following Script to achieve the AngularJS binding.
 
 {% highlight js %}
 
@@ -83,11 +83,11 @@ The following screenshot displays the output of the above code example.
 
 ## JS binding
 
-KnockOutJS is a JavaScript library that follows the MVVM pattern to build sophisticated user interface with a clean underlying data model. It supports to update the UI dynamically. Refer to the following link to know more about KnockOutJS.
+KnockoutJS is a JavaScript library that follows the MVVM pattern to build sophisticated user interface with a clean underlying data model. It supports to update the UI dynamically. Refer to the following link to know more about KnockOutJS.
 
 [http://knockoutjs.com/documentation/introduction.html](http://knockoutjs.com/documentation/introduction.html)
 
-Slider control includes support to use it with the KnockOutJS. The support is achieved by integration of the JS library ej.widget.ko.min.js file. Refer to the following link to know more about the KnockOutJS support.
+Slider control includes support to use it with the KnockoutJS. The support is achieved by integration of the JS library ej.widget.ko.min.js file. Refer to the following link to know more about the KnockoutJS support.
 
 <http://help.syncfusion.com/js/knockoutjs>
 
