@@ -172,7 +172,7 @@ We have an online OData Service “http://mvc.syncfusion.com/Services/Northwnd.s
 
 N> `ODataAdaptor` is the default adaptor of `DataManager` and so no need to specify adaptor when binding OData service
 
-You can use the following code example to use oData adaptor.
+You can use the following code example to use OData adaptor.
 
 {% tabs %} 
 {% highlight razor %}
