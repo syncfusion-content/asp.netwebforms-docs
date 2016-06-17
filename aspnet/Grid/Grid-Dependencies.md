@@ -25,7 +25,7 @@ Must be referred always before using all the JS controls.</td></tr>
 <tr>
 <td>
 ej.data.min.js</td><td>
-Used to handle datamanager operation and should be used while binding data to JS controls.</td></tr>
+Used to handle data manager operation and should be used while binding data to JS controls.</td></tr>
 <tr>
 <td>
 ej.grid.min.js</td><td>
