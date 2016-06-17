@@ -118,7 +118,7 @@ The following example explains how to bind data to the NumericTextbox widget t
 
 
 
-The following screenshot displays the output of the NumericTextbox controls with two-way angularJS binding is as follows.
+The following screenshot displays the output of the NumericTextbox controls with two-way AngularJS binding is as follows.
 
 
 

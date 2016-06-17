@@ -11,7 +11,7 @@ documentation: ug
 
 ## Create your first Editor in ASP.NET
 
-The Essential ASP.NET WebForms Editor control includes numeric, percentage, currency and maskedit TextBox controls. You can learn how to use ASP.NET Textbox control in the Electricity Bill Calculator Application from the following documentation. This guides you to use the wide range of Textbox functionalities to complete this application.
+The Essential ASP.NET Web Forms Editor control includes numeric, percentage, currency and maskedit TextBox controls. You can learn how to use ASP.NET Textbox control in the Electricity Bill Calculator Application from the following documentation. This guides you to use the wide range of Textbox functionalities to complete this application.
 
 ![](Getting-Started_images/Getting-Started_img1.jpeg) 
 
@@ -19,7 +19,7 @@ The Essential ASP.NET WebForms Editor control includes numeric, percentage, cu
 
 ### Create TextBox Controls
 
-You can create a WebForms Project and add the necessary Dlls and Scripts with the help of the given [WebForms-Getting Started](http://help.syncfusion.com/aspnetmvc/currencytextbox/getting-started) documentation.
+You can create a Web Forms Project and add the necessary Dll and Scripts with the help of the given [WebForms-Getting Started](http://help.syncfusion.com/aspnetmvc/currencytextbox/getting-started) documentation.
 
 Add the necessary Textbox control and initialize the control.
 
@@ -480,7 +480,7 @@ Run the above code example and you can see that it restricts entering a value ex
 
 You can use events to calculate the total amount and display the value. This is achieved by using the Click event in the button control. The calculation steps are written in the call back function of the Click event button.
 
-To customize the button, set the ContentType as TextAndImage to include the icon before the text. Add the PrefixIcon value as e-calender and add the ClientSideOnClickevent.
+To customize the button, set the ContentType as TextAndImage to include the icon before the text. Add the PrefixIcon value as e-calender and add the ClientSideOnClick event.
 
 {% highlight html %}
 

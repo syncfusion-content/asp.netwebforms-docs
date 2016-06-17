@@ -13,7 +13,7 @@ The EJ Web FileExplorer component provides all the functionalities that is avail
 For a live demo of FileExplorer check the online sample from [here](http://asp.syncfusion.com/demos/web/fileexplorer/defaultfunctionalities.aspx#).
 
 
-N> The FileExplorer control was officially added with the Essential studio ASP.NET Web package from the v13.2 release only.
+N> The FileExplorer control was officially added with the Essential Studio ASP.NET Web package from the v13.2 release only.
 
 ![](Overview_images/Overview_img1.jpeg)
 

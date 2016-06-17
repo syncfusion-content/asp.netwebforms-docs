@@ -18,7 +18,7 @@ For more details about file action through toolbar, please refer [here](toolbar
 
 ## File action through Context menu
 
-The FileExplorer having the support for context menu which opens while right click on any file or folder. The context menu having the set of items which is used to perform the corresponding operations in a handy pic way. For example the user can delete the file through the context menu by right click on it.
+The FileExplorer having the support for context menu which opens while right click on any file or folder. The context menu having the set of items which is used to perform the corresponding operations in a handy picture way. For example the user can delete the file through the context menu by right click on it.
 
 In FileExplorer, in the following places the context menu appears.
 

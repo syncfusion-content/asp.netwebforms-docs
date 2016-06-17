@@ -9,7 +9,7 @@ documentation: ug
 
 # Integration
 
-## Angular Support
+## AngularJS Support
 
 The CurrencyTextbox control supports two types of Angular JS support,
 
@@ -138,7 +138,7 @@ The following example shows the way to bind data to the CurrencyTextbox control
 
 
 
-The following is the output of CurrencyTextbox control with two-way Angular binding.
+The following is the output of CurrencyTextbox control with two-way AngularJS binding.
 
 ![](Integration_images/Integration_img1.jpeg)
 

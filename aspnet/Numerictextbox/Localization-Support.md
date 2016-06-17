@@ -31,7 +31,7 @@ More than 350 culture specific files are available to localize the value. To kno
 </td></tr>
 </table>
 
-Refer the below German culture file in head section of html page after the reference of **ej.web.all.min.js** file.
+Refer the below German culture file in head section of HTML page after the reference of **ej.web.all.min.js** file.
 
  {% highlight javascript %}
    
