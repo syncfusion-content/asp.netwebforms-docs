@@ -65,7 +65,7 @@ The following code illustrates how to enable multiple page and page break lines.
 ## Boundary Constraints
 
  Diagram provides support to restrict/customize the interactive region, out of which the elements cannot be dragged, resized or rotated. 
- `BoundaryConstraints` property of page settings allows you to customize the interactable region. To explore the boundary constraints, refer refer [Boundary Constraints](http://help.syncfusion.com/cr/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.PageSettings~BoundaryConstraints.html "Boundary Constraints").
+ `BoundaryConstraints` property of page settings allows you to customize the Interactive region. To explore the boundary constraints, refer refer [Boundary Constraints](http://help.syncfusion.com/cr/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.PageSettings~BoundaryConstraints.html "Boundary Constraints").
 
 The following code example illustrates how to define boundaryConstraints.
 

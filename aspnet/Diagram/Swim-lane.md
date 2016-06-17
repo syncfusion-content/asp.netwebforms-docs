@@ -11,7 +11,7 @@ documentation: ug
 
 Swim-lane Diagrams are typically used to visualize the relationship between a business process and the department responsible for it by focusing on the logical relationships between activities. Swimlanes may be arranged either horizontally or vertically.
 
-##Initialize tha Diagram model 
+##Initialize the Diagram model 
 Create a diagram properties model element that can be used to initialize the diagram widget as shown below.
 
 {% highlight aspx-cs %}
