@@ -68,7 +68,7 @@ Refer to this [link](https://msdn.microsoft.com/en-us/library/dz12d98w.aspx) for
  
 ### ObjectDataSource
 
-The Grid can be bound with ObjectDataSource control as the datasource interface. The ObjectDataSource control allows developers to structure their applications using this traditional three-tiered architecture and still take advantage of the ease-of-use benefits of the declarative databinding model in ASP.NET.
+The Grid can be bound with ObjectDataSource control as the datasource interface. The ObjectDataSource control allows developers to structure their applications using this traditional three-tiered architecture and still take advantage of the ease-of-use benefits of the declarative data binding model in ASP.NET.
 
 The Id of the ObjectDataSource control should be assigned to the `DataSourceID` to bind with Grid control and specify the `TypeName` and `SelectMethod` properties of the ObjectDataSource to fetch the data.
 
