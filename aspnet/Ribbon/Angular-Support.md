@@ -7,9 +7,9 @@ control: Ribbon
 documentation: ug
 ---
 
-# Angular Support
+# AngularJS-Support
 
-It is possible to add object, array collection in the Ribbon control with angular. The one way binding support is provided for Ribbon control.
+It is possible to add object, array collection in the Ribbon control with AngularJS. The one way binding support is provided for Ribbon control.
 
 `ej-ribbon` is the control tag where, `ej` is tag prefix and `Ribbon` is the control name.
 
