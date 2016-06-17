@@ -136,7 +136,7 @@ To get the culture and date format of EJWEB DatePicker, refer the below code exa
 
 {% endhighlight %}
 
-N> by default date format is based on culture specific. You have to refer the required culture specific files in head section of html page in order to localize DatePicker and customize different format for that culture. 
+N> by default date format is based on culture specific. You have to refer the required culture specific files in head section of HTML page in order to localize DatePicker and customize different format for that culture. 
 
 ## Header Format
 

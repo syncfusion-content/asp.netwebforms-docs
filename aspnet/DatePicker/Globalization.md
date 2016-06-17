@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Globalization
 
-EJWEB DatePicker has been provided with inbuilt localization support, so that it will be able adapt based on culture specific locale defined for it. 
+EJWEB DatePicker has been provided with Built-in localization support, so that it will be able adapt based on culture specific locale defined for it. 
 
 More than 350 culture specific files are available to localize the date. To know more about EJ globalization support, pleaser refer [EJ globalize](http://help.syncfusion.com/js/localization) support    
 
@@ -24,7 +24,7 @@ To translate our control content from default English to any of the culture, say
 
 The "en-US" locale is currently being used as default culture in DatePicker. You can set any other culture to DatePicker by using [Locale](http://help.syncfusion.com/js/api/ejdatepicker#members:locale) property. Below code example shows German cultured DatePicker.
 
-Refer the below German culture file in head section of html page after the reference of **ej.web.all.min.js** file.
+Refer the below German culture file in head section of HTML page after the reference of **ej.web.all.min.js** file.
 
  {% highlight js %}
    
