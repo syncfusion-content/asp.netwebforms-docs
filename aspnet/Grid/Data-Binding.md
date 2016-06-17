@@ -27,7 +27,7 @@ In the following section, let us see on how to bind various datasources to Grid 
 
 ## Binding with Datasource controls
  
- The Grid can be bound with major ASP.Net DataSource controls to display data from various data source. Some of the main datasource controls which works in conjunction with Grid are:
+ The Grid can be bound with major ASP.NET DataSource controls to display data from various data source. Some of the main datasource controls which works in conjunction with Grid are:
 
 *	SqlDataSource
 *	ObjectDataSource
@@ -280,7 +280,7 @@ The following output is displayed as a result of the above code example.
 
 ## Entity Framework
 	
-The collection of business objects generated from Entity Framework ORM can be used as Grid`s datasource. The Grid can be used with entity framework using either code first technique or Database first technique.
+The collection of business objects generated from Entity Framework ORM can be used as Grid`s datasource. The Grid can be used with Entity Framework using either code first technique or Database first technique.
 
 The following code example describes the above behavior.
 
@@ -321,9 +321,9 @@ The following output is displayed as a result of the above code example.
 For more information on creating and consuming Entity Framework, please refer this [link]( http://www.asp.net/web-forms/overview/older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1)
 {% endseealso %}
 
-## Linq to SQL
+## LINQ to SQL
 	
-The Linq to SQL can be used as the data source of the Grid in which the data model of a relational database is mapped to an object model and allow us to use the LINQ technology to access SQL database.
+The LINQ to SQL can be used as the data source of the Grid in which the data model of a relational database is mapped to an object model and allow us to use the LINQ technology to access SQL database.
 
 The following code example describes the above behavior.
 
@@ -363,7 +363,7 @@ The following output is displayed as a result of the above code example.
 
 
 {% seealso %}
-For more information on using Linq to SQL please refer to the [link](http://weblogs.asp.net/scottgu/using-linq-to-sql-part-1)
+For more information on using LINQ to SQL please refer to the [link](http://weblogs.asp.net/scottgu/using-linq-to-sql-part-1)
 {% endseealso %}
 
 ## DataTable
@@ -529,7 +529,7 @@ The following output is displayed as a result of the above code example.
 
 ## WebService 
 
-Web Services are an integral part of the .NET framework that provide a cross-platform solution for exchanging data between distributed systems. Refer here for the steps to create Web Service in a ASP.Net Webform application.
+Web Services are an integral part of the .NET Framework that provide a cross-platform solution for exchanging data between distributed systems. Refer here for the steps to create Web Service in a ASP.NET Web Form application.
 
 Using WebMethod Adaptor, Grid can communicate and manipulate data with `WebService`.
 
@@ -866,7 +866,7 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% endtabs %} 
 
-N> Attempting to add custom parameters with key name same as any default Ajax parameters used by `DataManager` will results in error.
+N> Attempting to add custom parameters with key name same as any default AJAX parameters used by `DataManager` will results in error.
 
 The following output is displayed as a result of the above code example.
 
@@ -905,7 +905,7 @@ The following output is displayed as a result of the above code example.
 ![](Data-Binding_images/Data-Binding_img19.png)
 
 
-### Handling Http Errors
+### Handling HTTP Errors
 	
 During server interaction from the Grid, there may occur some server-side exceptions and you can acquire those error messages or exception details in client-side using `ActionFailure` event of Grid Control.
 
