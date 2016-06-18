@@ -158,7 +158,7 @@ The following screenshot is the output of AutoComplete control with two way Angu
 
 
 
-## KnockoutJs
+## KnockoutJS
 
 Knockout support allows you to bind the HTML elements against any of the available data models.
 

@@ -13,7 +13,7 @@ The Splitter provides nested pane support that allows you to add a pane betwee
 
 ## Configure Nested Splitter
 
-The following steps explain the implementation of the “nestedsplitter” option.
+The following steps explain the implementation of the “nested splitter” option.
 
 In an ASPX page set the corresponding <div> elements for outer and inner Splitter control.
 
