@@ -11,7 +11,7 @@ documentation: ug
 
 ## Create your first Captcha in ASP.NET 
 
-This section enables you to configure the Captcha control in your ASP.NET WEB application and also in learning how to use Captcha with auto validation in Web forms.
+This section enables you to configure the Captcha control in your ASP.NET WEB application and also in learning how to use Captcha with auto validation in Web Forms.
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
