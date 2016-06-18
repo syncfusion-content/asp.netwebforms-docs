@@ -598,11 +598,11 @@ I> When VirtualScrolling enabled with searching, then filter will be applied onl
 
 DropDownList value can be validated in two ways,
 1. Using jQuery Validator
-2. ASP Validators
+2. ASP Validator
 
 ### jQuery Validator
  
-You can validate the DropDownList value on form submission using jQuery Validators, by applying “ValidationRules” and “ValidationMessage” to the DropDownList. 
+You can validate the DropDownList value on form submission using jQuery Validator, by applying “ValidationRules” and “ValidationMessage” to the DropDownList. 
 
 N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
 
@@ -670,9 +670,9 @@ Required field and min value validation is demonstrated in the below given examp
 
 ![](Functionalities_images/Functionalities_img10.jpeg)
 
-#### Integration with ASP Validators
+#### Integration with ASP Validator
 
-To use ASP.NET validators with DropDownList control, set the ID of the DropDownList as the value of the ControlToValidate property of the validator.
+To use ASP.NET validator with DropDownList control, set the ID of the DropDownList as the value of the ControlToValidate property of the validator.
 
 
 {% tabs %}
