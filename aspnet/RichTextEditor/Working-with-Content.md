@@ -406,7 +406,7 @@ Required field and minWordCount values validation is demonstrated in the below g
 
 ### Using ASP.NET Validator
 
-To use ASP.NET validators with RichTextEditor control, set the ID of the RichTextEditor as the value of the ControlToValidate property of the validator.
+To use ASP.NET validator with RichTextEditor control, set the ID of the RichTextEditor as the value of the ControlToValidate property of the validator.
 
 {% highlight html %}
 
