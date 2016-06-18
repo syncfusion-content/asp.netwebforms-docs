@@ -168,7 +168,7 @@ Close the popup if it’s opened
 </tr>
 <tr>
 <td>
-Spacebar
+Space bar
 </td>
 <td>
 Close the popup is it’s opened
