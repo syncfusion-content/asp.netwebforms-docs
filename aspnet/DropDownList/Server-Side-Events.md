@@ -42,7 +42,7 @@ Event Argument contains the following parameters,
 <li>e.Value – Value of the DropDownList Selected list.</li>
 <li>e.SelectedText – Selected Node Text of the DropDownList Selected list.</li>
 <li>e.ItemId – Index Value of the DropDownList Selected list.</li>
-<li>e.EventType – Event Namee.Arguments – Contain keys and values for IsChecked, Text, Value, SelectedText and ItemId.</li>
+<li>e.EventType – Event Name.Arguments – Contain keys and values for IsChecked, Text, Value, SelectedText and ItemId.</li>
 </ul></td></tr>
 </table>
 
