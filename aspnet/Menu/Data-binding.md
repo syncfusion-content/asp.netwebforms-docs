@@ -375,7 +375,7 @@ In the Design page, assign the values for DataTextField, DataParentIdField.In Da
 
 
 
-Load the menu items in the xml data as illustrated in the following code example in a XML file “XMLData.xml”.
+Load the menu items in the XML data as illustrated in the following code example in a XML file “XMLData.xml”.
 
 {% highlight xml %}
 
