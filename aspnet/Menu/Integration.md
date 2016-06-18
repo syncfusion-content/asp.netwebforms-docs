@@ -295,7 +295,7 @@ The following screenshot displays the output of the above code example.    �
 
 ## KnockoutJS binding
 
-KnockoutJS is a MVVM library that allows the separation of concerns. Essential ASP.NET Web Form provides full support for KnockoutJS. The KnockoutJS support is achieved by an integration JS library file. Add the following code example for knockout binding Menu rendering.
+KnockoutJS is a MVVM library that allows the separation of concerns. Essential ASP.NET Web Form provides full support for KnockoutJS. The KnockoutJS support is achieved by an integration JS library file. Add the following code example for Knockout binding Menu rendering.
 
 When you use KO with your applications, you can get the following benefits. 
 
