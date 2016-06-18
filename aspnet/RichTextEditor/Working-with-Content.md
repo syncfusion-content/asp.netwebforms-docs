@@ -336,9 +336,9 @@ N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.val
 
 ### jQuery Validation Methods
 
-The following are jquery validation methods.
+The following are jQuery validation methods.
 
-_List of jquery validation methods_
+_List of jQuery validation methods_
 
 <table>
 <tr>
