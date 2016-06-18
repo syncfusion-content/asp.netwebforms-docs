@@ -727,7 +727,7 @@ To use ASP.NET validators with DropDownList control, set the ID of the DropDownL
     
  {% endtabs %}
  
- Excecuting the above code will validate the DropDownList control values on every form submit before post back occurs as given below.
+ Executing the above code will validate the DropDownList control values on every form submit before post back occurs as given below.
  
  ![](Functionalities_images/IntegrationwithASPValidator_img1.png)
  
