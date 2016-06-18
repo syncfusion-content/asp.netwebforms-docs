@@ -19,7 +19,7 @@ ASP.NET Checkbox provides support for multiple selections, within your web page 
 
 
 
-In the above screenshot, you can select Hobbies, Interests list and Social networks Receiving App by using Checkbox, Tri-state Checkboxand perform the action to render the checked values when the button is clicked.
+In the above screenshot, you can select Hobbies, Interests list and Social networks Receiving App by using Checkbox, Tri-state Checkbox and perform the action to render the checked values when the button is clicked.
 
 ### Create a Checkbox 
 

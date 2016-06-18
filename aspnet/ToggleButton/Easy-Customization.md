@@ -48,9 +48,9 @@ Run the above code to render the following output.
 
 You can add prefix and suffix icons to the Toggle Button. Location of Icon is customized easily by using the following mentioned option. This is applicable for the content type’s ImageOnly, TextAndImage, ImageTextImage and ImageBoth.
 
-Toggle Button control also supports the build-in icon libraries. The ej.widgets.core.min CSS contains the definition of important icons used in Toggle Buttons. You can use these build-in icons by mentioning the icon class name as value in the DefaultPrefixIcon, DefaultSuffixIcon, ActivePrefixIcon,and ActiveSuffixIcon properties. You can use any font icon defined in the ej.widgets.core.min CSS. It avoids the complexity of specifying icon by using sprite image and CSS.
+Toggle Button control also supports the Built-in icon libraries. The ej.widgets.core.min CSS contains the definition of important icons used in Toggle Buttons. You can use these Built-in icons by mentioning the icon class name as value in the DefaultPrefixIcon, DefaultSuffixIcon, ActivePrefixIcon,and ActiveSuffixIcon properties. You can use any font icon defined in the ej.widgets.core.min CSS. It avoids the complexity of specifying icon by using sprite image and CSS.
 
-For example, the following mentioned build-in CSS classes are used to show the font icons used by media player.
+For example, the following mentioned Built-in CSS classes are used to show the font icons used by media player.
 
 * e-mediaback
 * e-mediaforward
@@ -360,7 +360,7 @@ Execute the above code to render the following output.
 
 ## Image position
 
-To provide the best look and feel, position of images in the Toggle Button is important. You can customize the position of images in the Toggle Button by using the ImagePosition property without using any complex CSS. ImagePosition property is applicable only with the TextAndImagecontent type property. This property represents the position of the images with respect to the text.
+To provide the best look and feel, position of images in the Toggle Button is important. You can customize the position of images in the Toggle Button by using the ImagePosition property without using any complex CSS. ImagePosition property is applicable only with the TextAndImage content type property. This property represents the position of the images with respect to the text.
 
 <table>
 <tr>
