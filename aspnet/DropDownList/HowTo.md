@@ -59,7 +59,7 @@ You can use HeaderTemplate property to add any HTML element. Code snippet to add
 
     {% highlight html %}
 
-        <ej:DropDownList ID="DropDownList1" runat="server" DataTextField="Text" DataValueField="Value" ShowCheckbox="true" HeaderTemplate="<div class='temp' ><input id ='check' type='checkbox' " ClientSideOnCreate="OnCreate">  </ej:DropDownList>
+        <ej:DropDownList ID="DropDownList1" runat="server" DataTextField="Text" DataValueField="Value" ShowCheckbox="true" HeaderTemplate="<div class='temp' ><input id ='check' type='checkbox'></div>" ClientSideOnCreate="OnCreate">  </ej:DropDownList>
         
     {% endhighlight %}
 
