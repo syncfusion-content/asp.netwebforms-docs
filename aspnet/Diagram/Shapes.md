@@ -133,7 +133,7 @@ N> Like HTML node, Native node also cannot be exported to image format. Fill col
 
 ## Basic Shapes
 
-The Basic shapes are common shapes that are used to represent the geometrical information visually. Its `Shape` property can be set with any one of the inbuilt [Basic Shapes](http://help.syncfusion.com/cr/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.BasicShape~Shape.html "Basic Shapes"). 
+The Basic shapes are common shapes that are used to represent the geometrical information visually. Its `Shape` property can be set with any one of the built-in [Basic Shapes](http://help.syncfusion.com/cr/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.BasicShape~Shape.html "Basic Shapes"). 
 The following code example illustrates how to create a basic shape. 
 
 {% highlight aspx-cs %}
@@ -187,7 +187,7 @@ The list of basic shapes are as follows.
 
 ## Flow Shapes
 
-The flow shapes are used to represent the process flow. It is used for analyzing, designing, and managing for documentation process. To create a flow shape, node can be created with FlowShape class. Its `Shape` property can be set with any one of the inbuilt [Flow Shapes](http://help.syncfusion.com/cr/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.FlowShape~Shape.html "Flow Shapes") and by default, it is considered as "Process". The following code example illustrates how to create a flow shape. 
+The flow shapes are used to represent the process flow. It is used for analyzing, designing, and managing for documentation process. To create a flow shape, node can be created with FlowShape class. Its `Shape` property can be set with any one of the built-in [Flow Shapes](http://help.syncfusion.com/cr/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.FlowShape~Shape.html "Flow Shapes") and by default, it is considered as "Process". The following code example illustrates how to create a flow shape. 
 
 {% highlight aspx-cs %}
 
@@ -212,7 +212,7 @@ The list of flow shapes are as follows.
 
 ## BPMN Shapes
 
-BPMN shapes are used to represent the internal business procedure in a graphical notation and enables you to communicate the procedures in a standard manner. To create a BPMN shape, node can be created with BPMNNode class and its `Shape` should be set as any one of the inbuilt [BPMN Shapes](http://help.syncfusion.com/cr/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.BPMNNode~Shape.html "BPMN Shapes"). The following code example illustrates how to create a simple business process. 
+BPMN shapes are used to represent the internal business procedure in a graphical notation and enables you to communicate the procedures in a standard manner. To create a BPMN shape, node can be created with BPMNNode class and its `Shape` should be set as any one of the built-in [BPMN Shapes](http://help.syncfusion.com/cr/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.BPMNNode~Shape.html "BPMN Shapes"). The following code example illustrates how to create a simple business process. 
 
 {% highlight aspx-cs %}
 
