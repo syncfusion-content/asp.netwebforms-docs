@@ -20,7 +20,7 @@ Rating control is availed with two types of AngularJS supports namely,
 
 One-way binding refers to the process of applying scope values to all the available properties of the Rating control. But the changes made in the Rating control are not reflected or triggered in the scope collection. This kind of binding is applied to all the properties of the Rating control.
 
-Two-way binding supports both the processes; it applies the scope values to the Rating properties and also the changes made in the Rating control are reflected back and triggered within the angular scope change function. The Rating property called Value supports two-way binding.
+Two-way binding supports both the processes; it applies the scope values to the Rating properties and also the changes made in the Rating control are reflected back and triggered within the AngularJS scope change function. The Rating property called Value supports two-way binding.
 
 Apply the plugin and property assigning the Rating element through the directive that starts with the letter “e-“.
 
