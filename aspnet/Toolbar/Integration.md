@@ -20,7 +20,7 @@ One way binding refers to the process of applying scope values to all the availa
 
 Two-way binding supports both the processes – it applies the scope values to the Toolbar properties as well as the changes made in the Toolbar widget is also reflected back and triggered within the AngularJS scope change function.
 
-To know more detail about the Angular binding, refer to the following link location,
+To know more detail about the AngularJS binding, refer to the following link location,
 
 <http://help.syncfusion.com/js/angularjs>
 
