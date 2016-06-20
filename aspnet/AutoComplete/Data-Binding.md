@@ -293,7 +293,7 @@ The following steps explain the SQL data binding to an AutoComplete textbox.
 The following steps explain local data binding of a list data to an AutoComplete textbox.
 
 * Define an SQL data source in the web page and configure the data source as per requirement.
-* In the following code example, an SQL data table with a ProductID in integer type and ProductName in varchar type is created.
+* In the following code example, an SQL data table with a ProductID in integer type and ProductName in var char type is created.
 * The following screenshot illustrates the sample database used.
 
 ![C:/Users/apoorvah.ramanathan/Desktop/1.png](Data-Binding_images/Data-Binding_img3.png) 
@@ -522,7 +522,7 @@ The following steps explain the SQL data binding to an AutoComplete textbox.
 
 The following steps explain local data binding of a list data to an AutoComplete textbox.
 
-Define a LINQ-to-SQL data source in the web page and configure the data source as per your requirement by using the database. In the following code example, an SQL table with TerritoryID and TerritoryDescription in varchar type is used, to create a DBML class.
+Define a LINQ-to-SQL data source in the web page and configure the data source as per your requirement by using the database. In the following code example, an SQL table with TerritoryID and TerritoryDescription in var char type is used, to create a DBML class.
 
 ![](Data-Binding_images/Data-Binding_img6.png)
 
