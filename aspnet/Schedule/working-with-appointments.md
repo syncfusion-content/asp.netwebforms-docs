@@ -1290,7 +1290,7 @@ namespace WebSampleBrowser.Schedule
 The `BlockoutSettings` holds the below properties to customize the block intervals such as,
 
 * `TemplateId` - Template design that applies on the block intervals.
-* `CustomStyle` - The custom css that applies on the blocked intervals.
+* `CustomStyle` - The custom CSS that applies on the blocked intervals.
 
 {% highlight html %}
 
@@ -1339,7 +1339,7 @@ namespace WebSampleBrowser.Schedule
 
 ### Blocking time interval based on resources
 
-* `ResourceId` - property used within the `BlockoutSettings` which accepts the resource id's can be used to apply the block intervals based on the resources.
+* `ResourceId` property used within the `BlockoutSettings` which accepts the resource id's can be used to apply the block intervals based on the resources.
 
 {% highlight html %}
 
