@@ -65,7 +65,7 @@ List of custom classes that are need to override styles. The following are speci
 
 *	`e-ribbonbackstagepage`,`e-ribbonbackstagetop`,`e-backstagetopicon` – Applies to back stage top header.
 
-*	`e-ribbonbackstagebody` ,`e-backstageheader`,`e-backstagecontent`,`e-backstageli`,`e- backstageseparator`, `e-backstageactive` – Applies Backstage page side header and its contents.
+*	`e-ribbonbackstagebody` ,`e-backstageheader`,`e-backstagecontent`,`e-backstageli`,`e-backstageseparator`, `e-backstageactive` – Applies Backstage page side header and its contents.
 
 ### Quick Access Toolbar
 

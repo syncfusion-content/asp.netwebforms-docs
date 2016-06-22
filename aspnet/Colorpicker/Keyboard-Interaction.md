@@ -70,7 +70,7 @@ Upwards to value 100</td></tr>
 
 The following steps explain how you can enable keyboard interaction for the ColorPicker textbox.
 
-Add the following code example to the corresponding ASPX page to render the ColorPicker control and enable keyboard interaction by the accesskey property.
+Add the following code example to the corresponding ASPX page to render the ColorPicker control and enable keyboard interaction by the access key property.
 
 
 

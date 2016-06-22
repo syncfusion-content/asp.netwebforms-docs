@@ -540,7 +540,7 @@ Execute the above code to render the following output.
 
 ### KnockoutJS
 
-* KnockoutJS support allows you to bind the HTML elements against any of the available data models.Two types of KnockoutJS binding is supported as of angular,
+* KnockoutJS support allows you to bind the HTML elements against any of the available data models.Two types of KnockoutJS binding is supported as of AngularJS,
 
   1. one-way binding
   

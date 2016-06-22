@@ -86,7 +86,7 @@ Set `IsResponsive` as true to enable resizing in Ribbon.
 
 Based on window size, detailed group is shrined into single button and you can expand group items with group button click.
 
-For each group shirked for resizing, Custom Class will be added based on group text.ie, `e-action` whereas `action` is group text. Using this custom class, group button can be customized such as to set icons etc.
+For each group shirked for resizing, Custom Class will be added based on group text `e-action` whereas `action` is group text. Using this custom class, group button can be customized such as to set icons etc.
 
 {% highlight html %}
 

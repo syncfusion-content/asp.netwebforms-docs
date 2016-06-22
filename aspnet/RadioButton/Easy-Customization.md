@@ -115,11 +115,11 @@ Description</th></tr>
 <tr>
 <td>
 Small</td><td>
-Creates radio button with inbuilt small size height, width specified.</td></tr>
+Creates radio button with Built-in small size height, width specified.</td></tr>
 <tr>
 <td>
 Medium</td><td>
-Creates radio button with inbuilt medium size height, width specified.</td></tr>
+Creates radio button with Built-in medium size height, width specified.</td></tr>
 </table>
 
 The following steps explain the details about rendering Radio Button with different size options.

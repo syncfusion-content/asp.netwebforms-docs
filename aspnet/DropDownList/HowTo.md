@@ -59,7 +59,7 @@ You can use HeaderTemplate property to add any HTML element. Code snippet to add
 
     {% highlight html %}
 
-        <ej:DropDownList ID="DropDownList1" runat="server" DataTextField="Text" DataValueField="Value" ShowCheckbox="true" HeaderTemplate="<div class='temp' ><input id ='check' type='checkbox' " ClientSideOnCreate="OnCreate">  </ej:DropDownList>
+        <ej:DropDownList ID="DropDownList1" runat="server" DataTextField="Text" DataValueField="Value" ShowCheckbox="true" HeaderTemplate="<div class='temp' ><input id ='check' type='checkbox'></div>" ClientSideOnCreate="OnCreate">  </ej:DropDownList>
         
     {% endhighlight %}
 
@@ -125,7 +125,7 @@ The following screenshot exhibits the output of the above code,
 ![](HowTo_images/HowTo_img2.jpeg)
 
 ## To maintain data bound values after post back
-By default behavior of Syncfusion DropDownList, if DataSource is bound from code behind once on rendering the control. Then the control will lose its data binding on any post back actions. Because on postbac control will be reinitialized and the datasource will not be set if it is bind page load event when postback is false. If you need to maintain the DataSource bound after postback, you have to use DataSourceCachingMode property with enum value ViewState or Session. This will maintain the data bound values in our controls after post back. 
+By default behavior of Syncfusion DropDownList, if DataSource is bound from code behind once on rendering the control. Then the control will lose its data binding on any post back actions. Because on postback control will be reinitialized and the datasource will not be set if it is bind page load event when postback is false. If you need to maintain the DataSource bound after postback, you have to use DataSourceCachingMode property with enum value ViewState or Session. This will maintain the data bound values in our controls after post back. 
 <table>
 <tr>
 <th>

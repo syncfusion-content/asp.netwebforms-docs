@@ -18,7 +18,7 @@ TimePicker control is availed with two types of AngularJS supports namely,
 
 One way binding refers to the process of applying scope values to all the available properties of the TimePicker control where the changes made in the control are not reflected or triggered in turn to the scope collection. This kind of binding applies to all the properties of the TimePicker control.
 
-Two-way binding supports both the processes – it applies the scope values to the TimePicker properties as well as the changes made in the control are also reflected back and triggered within the Angular scope change function.
+Two-way binding supports both the processes – it applies the scope values to the TimePicker properties as well as the changes made in the control are also reflected back and triggered within the AngularJS scope change function.
 
 Apply the plugin property assigning to the TimePicker control element through the directive that starts with a letter “e-“.
 

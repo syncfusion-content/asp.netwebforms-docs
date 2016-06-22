@@ -200,7 +200,7 @@ In the view page, add FileExplorer element as shown below.
     
     {% endhighlight %}
     
-In above code block, “Path” denotes the URL of filesystem that are to be explored in "FileExplorer" and “AjaxAction” specifies the URL of server side Ajax handling method that handles the file operations of FileExplorer control. So “[Path](http://help.syncfusion.com/js/api/ejfileexplorer#members:path)” and “[AjaxAction](http://help.syncfusion.com/js/api/ejfileexplorer#members:ajaxaction)” are the mandatory configuration at here along with that you have to specify handler file names in “[AjaxSettings](http://help.syncfusion.com/js/api/ejfileexplorer#members:ajaxsettings)” API to perform “download” and “upload” operation.
+In above code block, “Path” denotes the URL of filesystem that are to be explored in "FileExplorer" and “AjaxAction” specifies the URL of server side AJAX handling method that handles the file operations of FileExplorer control. So “[Path](http://help.syncfusion.com/js/api/ejfileexplorer#members:path)” and “[AjaxAction](http://help.syncfusion.com/js/api/ejfileexplorer#members:ajaxaction)” are the mandatory configuration at here along with that you have to specify handler file names in “[AjaxSettings](http://help.syncfusion.com/js/api/ejfileexplorer#members:ajaxsettings)” API to perform “download” and “upload” operation.
 
 
 Add the following code example to the corresponding code behind page. 

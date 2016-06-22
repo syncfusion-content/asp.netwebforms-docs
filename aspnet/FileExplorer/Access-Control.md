@@ -227,7 +227,7 @@ You can associate any number of access rules with specific security roles, it al
 
 The **FileAccessOperations** class allows user to perform the most common file operations such as read, create, rename, copy, paste or move, delete and file searching. The class helps to handle the file access operations in server end. You implement a new custom class for handling file operations in server end by inheriting this class.
 
-By default, we send following parameters in data field of corresponding Ajax request to handle the server side operation. The request parameter and response data are explained in following table.
+By default, we send following parameters in data field of corresponding AJAX request to handle the server side operation. The request parameter and response data are explained in following table.
 
 <table>
 <tr>
@@ -453,7 +453,7 @@ We can make a FileExplorer with access rule by doing following steps,
 
     ~~~
 
-2.	Add the following code example to the corresponding code behind page. The `FileAccessDefault` method triggers from Ajax request with specific ActionType value as parameter.
+2.	Add the following code example to the corresponding code behind page. The `FileAccessDefault` method triggers from AJAX request with specific ActionType value as parameter.
 
     ~~~ csharp
     

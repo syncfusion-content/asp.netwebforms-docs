@@ -11,14 +11,14 @@ documentation: ug
 
 ## AngularJS Binding
 
-The ColorPicker control is availed with two types of angularJS support namely, 
+The ColorPicker control is availed with two types of AngularJS support namely, 
 
 * One-way binding
 * Two-way binding 
 
 One-way binding refers to the process of applying scope values to all the available properties of the ColorPicker control. The changes made in the ColorPicker control are not reflected or triggered in turn to the scope collection. This kind of binding is applied to all the properties of the ColorPicker control.
 
-Two-way binding supports both the processes. It applies the scope values to the ColorPicker properties, as well as the changes made in the ColorPicker control are reflected back and triggered within the angularJS scope change function.
+Two-way binding supports both the processes. It applies the scope values to the ColorPicker properties, as well as the changes made in the ColorPicker control are reflected back and triggered within the AngularJS scope change function.
 
 Apply the plugin and property assigning to the ColorPicker control element through the directive that starts with “e-“.
 
@@ -26,7 +26,7 @@ To know more about the AngularJS binding, you can refer to the online documentat
 
 <http://help.syncfusion.com/js/angularjs>
 
-The following code example explains how to bind data to the ColorPicker control through angularJS support.
+The following code example explains how to bind data to the ColorPicker control through AngularJS support.
 
 {% highlight html %}
 
@@ -138,7 +138,7 @@ The following screenshot displays the output of the above code example.
 
 KnockoutJS support allows you to bind the HTML elements against any of the available data models.
 
-Two types of knockoutJS binding is supported,
+Two types of KnockoutJS binding is supported,
 
 * One-way binding
 * Two-way binding
@@ -151,7 +151,7 @@ For more information about KnockoutJS binding, you can refer to the online docum
 
 <http://help.syncfusion.com/js/knockoutjs>
 
-The following code example explains how you can bind data to the ColorPicker control through knockoutJS support that enables and populates data to a ColorPicker control based on the value set to the other ColorPicker control.
+The following code example explains how you can bind data to the ColorPicker control through KnockoutJS support that enables and populates data to a ColorPicker control based on the value set to the other ColorPicker control.
 
 {% highlight html %}
 

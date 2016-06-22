@@ -307,7 +307,7 @@ The following screenshot displays the output of the above code.
 
 ## SQL Data
 
-SQL DataSource is designed to work with SQL Server databases. It uses the SQL Server .NET data provider internally. SQL Server .NET data provider classes are defined in the System.Data.SqlClient namespace. To bind the Sql DataSource to ToolBar, DataSourceID should be the id of sql datasource. You can select the table from the select command. Create a table with given fields in SQL and refer that in the connection string to run the given sample.Refer to the following screenshot for the fields and its corresponding data types.
+SQL DataSource is designed to work with SQL Server databases. It uses the SQL Server .NET data provider internally. SQL Server .NET data provider classes are defined in the System.Data.SqlClient namespace. To bind the SQL DataSource to ToolBar, DataSourceID should be the id of SQL datasource. You can select the table from the select command. Create a table with given fields in SQL and refer that in the connection string to run the given sample.Refer to the following screenshot for the fields and its corresponding data types.
 
 ![C:/Users/jeganprakash/Desktop/IMG_22092014_162354.png](Data-binding_images/Data-binding_img3.png) 
 

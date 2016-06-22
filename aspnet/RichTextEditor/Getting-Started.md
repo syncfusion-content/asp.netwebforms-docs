@@ -28,7 +28,7 @@ This section explains the step-by-step instructions to create RichTextEditor in 
             
     {% endhighlight %}
     
-    >Refer the [ASP.NET-Getting Started](http://help.syncfusion.com/aspnet/getting-started#manual-integration-of-syncfusion-aspnet-controls-into-the-newexisting-application) Documentation to know further details about necessary DLLs, Script and CSS files.
+    >Refer the [ASP.NET-Getting Started](http://help.syncfusion.com/aspnet/getting-started#manual-integration-of-syncfusion-aspnet-controls-into-the-newexisting-application) Documentation to know further details about necessary DLL's, Script and CSS files.
         
 3.  Customize the RichTextEditor control using properties panel as well as set the value for the RichTextEditor as given below.
 

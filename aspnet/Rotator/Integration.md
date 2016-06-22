@@ -171,7 +171,7 @@ In the ASPX page, add the following code example that shows the way to bind data
 
 
 
-Add the following script to achieve knockoutJS.
+Add the following script to achieve KnockoutJS.
 
 {% highlight js %}
 
@@ -273,7 +273,7 @@ Rotator is availed with two types of AngularJS support namely,
 
 One-way binding refers to the process of applying scope values to all the available properties of the Rotator. But the changes made in the Rotator control are not reflected or triggered in turn to the scope collection. This kind of binding is applied to all the properties of the Rotator.
 
-Two-way binding supports both the processes. It applies the scope values to the Rotator properties as well as the changes made in the Rotator control that are also reflected back and triggered within the angularJS scope change function.
+Two-way binding supports both the processes. It applies the scope values to the Rotator properties as well as the changes made in the Rotator control that are also reflected back and triggered within the AngularJS scope change function.
 
 To know more details about the AngularJS binding, you can refer to the following link location:
 

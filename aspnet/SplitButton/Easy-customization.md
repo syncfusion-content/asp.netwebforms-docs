@@ -69,11 +69,11 @@ Creates the Split Button with in-built small size height and width specified.<
 <tr>
 <th>
 medium</th><td>
-Creates the Split Button with inbuilt medium size height and width specified.</td></tr>
+Creates the Split Button with Built-in medium size height and width specified.</td></tr>
 <tr>
 <th>
 Large</th><td>
-Creates the Split Button with inbuilt large size height and width specified.</td></tr>
+Creates the Split Button with Built-in large size height and width specified.</td></tr>
 </table>
 
 
@@ -214,23 +214,23 @@ The content of the Split Button is mainly rendered as text and images. Instead
 <table>
 <tr>
 <th>
-Textonly</th><td>
+TextOnly</th><td>
 Supports the text content only.</td></tr>
 <tr>
 <th>
-Imageonly</th><td>
+ImageOnly</th><td>
 Supports the image content only</td></tr>
 <tr>
 <th>
-Imageboth</th><td>
+ImageBoth</th><td>
 Supports image for both ends of the button.</td></tr>
 <tr>
 <th>
-Textandimage</th><td>
+TexAandImage</th><td>
 Supports image with the text content.</td></tr>
 <tr>
 <th>
-Imagetextimage</th><td>
+ImageTextImage</th><td>
 Supports image for both ends and middle in the text.</td></tr>
 </table>
 
@@ -238,9 +238,9 @@ Supports image for both ends and middle in the text.</td></tr>
 
 Icons inside the Split Button are added easily by using the PrefixIcon and SuffixIcon properties. Location of the icon in the Split Button is a necessary thing. You can customize the location of Icon easily by using the following mentioned options.
 
-Split Button control also supports the build-in icon libraries. The ej.widgets.core.min CSS contains definitions for important icons that are used in the Split Buttons. You can use these build-in icons by mentioning the icon class name as value in the PrefixIcon and SuffixIcon properties. You can use any font icon defined in the ej.widgets.core.min CSS. It avoids the complexity in specifying the icon by using the sprite image and CSS.
+Split Button control also supports the Built-in icon libraries. The ej.widgets.core.min CSS contains definitions for important icons that are used in the Split Buttons. You can use these Built-in icons by mentioning the icon class name as value in the PrefixIcon and SuffixIcon properties. You can use any font icon defined in the ej.widgets.core.min CSS. It avoids the complexity in specifying the icon by using the sprite image and CSS.
 
-For example, the following build-in CSS class is used to display the font icons used by media player.
+For example, the following Built-in CSS class is used to display the font icons used by media player.
 
 * e-mediaback
 * e-mediaforward
@@ -262,7 +262,7 @@ It inserts the icon at the ending position of the Split Button. Before this suf
 
 The following steps explain the details on rendering the Split Button with above mentioned content type, prefix and suffix icon options
 
-In an ASPX page, define the Split Button control. Set the different content types and use the necessary build-in icons.
+In an ASPX page, define the Split Button control. Set the different content types and use the necessary Built-in icons.
 
 {% highlight html %}
 
@@ -372,24 +372,24 @@ The following screenshot displays the output of the above code example.
 
 ## Image Position
 
-To provide the best look and feel for the Split Button, position of images in the Split Button is important. By using ImagePosition property, you can easily customize the position of images inside the Split Button without by using any complex CSS. ImagePosition property is applicable only with the textandimage content type property. This property represents the position of images with respect to text.
+To provide the best look and feel for the Split Button, position of images in the Split Button is important. By using ImagePosition property, you can easily customize the position of images inside the Split Button without by using any complex CSS. ImagePosition property is applicable only with the TextAndImage content type property. This property represents the position of images with respect to text.
 
 <table>
 <tr>
 <th>
-Imageleft</th><td>
+ImageLeft</th><td>
 Support for aligning text in the right and image in the left.</td></tr>
 <tr>
 <th>
-Imageright</th><td>
+ImageRight</th><td>
 Support for aligning text in the left and image in the right.</td></tr>
 <tr>
 <th>
-Imagetop</th><td>
+ImageTop</th><td>
 Support for aligning text at the bottom and image at the top.</td></tr>
 <tr>
 <th>
-Imagebottom</th><td>
+ImageBottom</th><td>
 Support for aligning text at the top and image at the bottom.</td></tr>
 </table>
 
