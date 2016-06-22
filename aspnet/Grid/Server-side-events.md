@@ -676,7 +676,7 @@ itemCurrentTarget</td><td>
 It returns the current HTML item.</td></tr>
 <tr>
 <td>
-Gridmodel</td><td>
+gridModel</td><td>
 It returns the grid model in dictionary format.</td></tr>
 <tr>
 <td>
