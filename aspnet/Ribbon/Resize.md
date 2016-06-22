@@ -88,6 +88,9 @@ Based on window size, detailed group is shrined into single button and you can e
 
 For each group shirked for resizing, Custom Class will be added based on group text `e-action` whereas `action` is group text. Using this custom class, group button can be customized such as to set icons etc.
 
+
+{% tabs %}
+
 {% highlight html %}
 
         <ej:Ribbon ID="defaultRibbon" runat="server" Width="46%" AllowResizing="true" Create="createControl">
@@ -212,5 +215,20 @@ For each group shirked for resizing, Custom Class will be added based on group t
         </style>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+     protected void Page_Load(object sender, EventArgs e)
+        {
+            var fontlist = new List<string> { "Segoe UI", "Arial", "Times New Roman", "Tahoma", "Helvetica" };
+            var fontsize = new List<string>() { "1pt", "2pt", "3pt", "4pt", "5pt" };
+            this.fontfamily.DropdownSettings.DataSource = fontlist;
+            this.fontsize.DropdownSettings.DataSource = fontsize;
+        }
+
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Resize_images/Resize_img2.png)
