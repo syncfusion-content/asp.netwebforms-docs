@@ -18,7 +18,7 @@ Scheduler also comes with default localization support which allows it to custom
 
 N> By default, the Schedule control is localized in **en-US** culture.
 
-To localize Scheduler into a particular culture, it is necessary to refer the culture-specific script files in your application after the reference of **ej.web.all.min.js** file, which are available under the following location.                   
+To localize Scheduler into any particular culture, it is necessary to refer the culture-specific script files in your application after the reference of **ej.web.all.min.js** file, which are available under the following location.                                      
 
 _<**Installed location**>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\cultures_
 
@@ -173,7 +173,7 @@ To customize or localize only some specific words in the default `Locale["en-US"
 
 ## Time Zone
 
-The Scheduler makes use of the System time zone by default. If it needs to be provided with some other user-specific time zone value, then the API `TimeZone` can be used. Also, the Scheduler can be set to observe the Daylight Saving Time (DST) with its `IsDST` property which is set to **false** by default. 
+The Scheduler makes use of the System time zone by default. If it needs to follow some other user-specific time zone, then the API `TimeZone` can be used. Also, the Scheduler can be set to observe the Daylight Saving Time (DST) with its **isDST** property which is set to **false** by default.  
 
 When `IsDST` property is set to **true**, the Scheduler internally processes the time difference values (for the Start and end time of the appointments) related to the Scheduler time zone that observes daylight savings time. 
 
@@ -190,7 +190,9 @@ The following code example shows the way to set the specific time zone value wit
 
 {% endhighlight %}
 
-Apart from the default Scheduler time zone, it is also possible to set the different time zone values for each appointments through the properties **startTimeZone** and **endTimeZone** which can be defined as separate fields within the appointment dataSource. When these properties are not explicitly defined for appointments, the appointments Start and End time will be processed based on the Scheduler time zone.
+### TimeZone for Scheduler Appointments
+
+Apart from the default action of applying specific timezone to the entire Scheduler, it is also possible to set different time zone values for each appointments through the properties **StartTimeZone** and **EndTimeZone** which can be defined as separate fields within the appointment dataSource. When these properties are not explicitly defined for appointments, the appointments Start and End time will be processed based on the Scheduler time zone.
 
 N> The **isDST** property closely relies on the appointment fields like `StartTimeZone` and `EndTimeZone` for appropriate time difference calculations. If these two fields are not defined for appointments, then **IsDST** depends on the System **TimeZone** value.
 
@@ -206,6 +208,8 @@ The following code snippet shows how to define isDST and the time zones for spec
             SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
 
 {% endhighlight %}
+
+### Customizing the TimeZone Collection
 
 It is also possible to define or customize the default time zone collection of the Scheduler, by using the `TimeZoneCollection` API as follows.
 
@@ -266,7 +270,7 @@ The time mode of the Scheduler can be either **12** or **24 hours** format which
 
 The user can also set specific time mode for the Scheduler using `TimeMode` property which accepts either **String** or **enum** value.
 
-The following code snippet shows the way to set specific **24 hour format time mode** for the Scheduler.
+The following code snippet shows the way to set specific **24 hour format** time mode for the Scheduler.
 
 {% highlight html %}
 
@@ -298,3 +302,21 @@ If the `DateFormat` property is not specified particularly, then it will be take
 
 {% endhighlight %}
 
+## First Day of Week
+
+The `FirstDayOfWeek` property allows to set any of the week days as start of the week/workweek/month view in Scheduler. It accepts either the `integer` (Sunday=0, Monday=1, Tuesday=2, etc) or `string` (“Sunday”, “Monday”, etc). The default value of this `FirstDayOfWeek` depends on the current culture (language) assigned to the Scheduler.
+
+To set different first day of week in Scheduler,
+
+{% highlight html %}
+
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" FirstDayOfWeek="Tuesday" CurrentDate="5/2/2014">
+    <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule"/>
+</ej:Schedule>
+
+<asp:SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings:ScheduleConnectionString %>"
+            SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+{% endhighlight %}
+
+N> The sub-control datepicker which is used within Scheduler for start/end time fields in appointment window and for date navigation purposes will also follow the same first day of week. 

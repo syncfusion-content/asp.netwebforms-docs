@@ -30,7 +30,7 @@ Apart from the dataSource field names, the template can also access the current 
 * workweek
 * agenda
 * month
-* custom view
+* customview
 
 It is controlled by an API named `AppointmentTemplateId` which accepts the id value of the template design block preceded by a symbol **#**.
 
@@ -156,7 +156,7 @@ The Date header can be customized with the following code example.
 
 ## Resource Header Template
 
-The template structure that applies on the resource headers of the Scheduler. By default, only the resource names will be displayed on the resource header bar. Also, the way of rendering resource headers on the Scheduler is comparatively different for both vertical and horizontal scheduler views. 
+The template structure that applies on the resource headers of the Scheduler. By default, only the resource names will be displayed on the resource header bar. Also, the way of rendering resource headers on the Scheduler is comparatively different for both the vertical and horizontal scheduler views.  
 
 The field names that are mapped from the dataSource to the appropriate field properties within the **ResourceSettings** can be accessed within the resource header template.
 

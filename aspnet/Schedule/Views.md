@@ -68,7 +68,7 @@ It’s a view displaying a count of 7 days (from Sunday to Saturday) with all it
 
 ## Work Week 
 
-Workweek view displays the working days of the week (count of 5 days) and its associated appointments. It is also possible to customize the days to be displayed in the work week view using `WorkWeek` API which accepts the string array such as ["Monday", "Tuesday", "Wednesday", "Thursday" and "Friday"]. By default, it renders from Monday to Friday (5 days).
+Work week view displays the working days of the week (count of 5 days) and its associated appointments. It is also possible to customize the days to be displayed in the work week view using `WorkWeek` API which accepts the string array such as ["Monday", "Tuesday", "Wednesday", "Thursday" and "Friday"]. By default, it renders from Monday to Friday (5 days).
 
 {% highlight html %}
 
