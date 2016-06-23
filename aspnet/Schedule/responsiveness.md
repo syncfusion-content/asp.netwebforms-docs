@@ -32,7 +32,7 @@ Also, whenever the Scheduler resizes - the width of the work cells adjusts autom
 
 ## Scheduler in Mobile/Tablets
 
-The Scheduler layout adapts automatically in the mobile and tablet devices with the appropriate UI changes, as the `IsResponsive` property is set to **true** by default. In case, if the user wants to display the normal scheduler in mobile devices without any adaptive enhancements, then the `isResponsive` property can be set to false.
+The Scheduler layout adapts automatically in the mobile and tablet devices with the appropriate UI changes, as the `IsResponsive` property is set to **true** by default. In case, if the user wants to display the normal scheduler in mobile devices without any adaptive enhancements, then the `IsResponsive` property can be set to false.
 
 Some of the default changes done for adaptive Scheduler to render in mobile devices are as follows,
 
