@@ -97,7 +97,7 @@ The following code snippet shows how to enable the context menu settings in Sche
 
 {% endhighlight %}
 
-N> In agenda view, only the appointment menu items shows up in the context menu options. For default menu items, the id must be defined the same as mentioned in the above code example – as we have processed the menus based on this id within our source.
+N> In agenda view, only the appointment menu items shows up in the context menu options. For default menu items, the Id must be defined the same as mentioned in the above code example – as we have processed the menus based on this Id within our source.
 
 
 ## Custom Menu Options
@@ -130,7 +130,7 @@ The following code example depicts how **to add the custom menu items** to the a
 
 {% endhighlight %}
 
-N> The **id** given for the custom menu items **must be unique** in both the appointment and cell collection.  
+N> The **Id** given for the custom menu items **must be unique** in both the appointment and cell collection.  
 
 ## Handling Menu Actions
 
