@@ -46,7 +46,7 @@ The following code example renders the scheduler from 7.00 AM to 6.00 PM.
 
 ### Working Hours
 
-Working hours indicates the work hour limit within the Scheduler, which is highlighted visually with white colored work cells. To enable the highlighting of work hours on the Scheduler, set the **highlight** option available within the workHours property to **true**. By default, it is set to true. `WorkHours` is a object property which contains the below specified options,
+Working hours indicates the work hour limit within the Scheduler, which is highlighted visually with white colored work cells. To enable the highlighting of work hours on the Scheduler, set the **Highlight** option available within the `WorkHours` property to **true**. By default, it is set to true. `WorkHours` property includes the below options,
 
 * **Highlight** – enables/disables the highlighting of work hours.
 * **Start** - sets the start time of the working/business hour in a day.  
@@ -74,7 +74,7 @@ The `TimeScale` allows the user to set the required time slot duration for the w
 * `Enable` - It accepts true or false value, denoting whether to show or hide the time slots. Its default value is `true`.
 * `MajorSlot` – Specifies the major time slot duration.
 * `MinorSlotCount` – Specifies the value, based on which the minor time slots are divided into appropriate count.
-* `TimeScale templates` - 2 template options available for customizing timeScales namely `MinorSlotTemplateId` and `MajorSlotTemplateId`. 
+* TimeScale templates - 2 template options available for customizing time scales namely `MinorSlotTemplateId` and `MajorSlotTemplateId`. 
 
 The MajorSlot and MinorSlot can be set on the Scheduler with the following code example.
 
@@ -118,7 +118,7 @@ N> By default, the System current date will be taken as Scheduler’s current da
 
 Providing the `MinDate` and `MaxDate` property with some date values, allows the Scheduler to set the minimum and maximum date range. The Scheduler date that lies beyond these minimum and maximum date range will be in a disabled state, so that the date navigation is blocked beyond these specified date range. Also, the appointments that lies beyond these date ranges will not be displayed on the Scheduler.    
 
-The following code example shows how to set the minDate and maxDate properties of the Scheduler.
+The following code example shows how to set the MinDate and MaxDate properties of the Scheduler.
 
 {% highlight html %}
 
