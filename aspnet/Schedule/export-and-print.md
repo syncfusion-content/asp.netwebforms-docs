@@ -222,13 +222,14 @@ It is possible to set/change the Pdf page settings such as size, margins (left, 
 #### Page Settings:
 
 You can set/apply the following page property values to the PDF file before exporting it with the Scheduler by using the `PdfPageSettings` object. 
-a)	Page Size
-b)	Orientation
-c)	Margins ( Left, Right, Top, Bottom)
-d)	Transition ( Direction, Dimension, Duration, Motion, PageDuration, Scale, Style)
-e)	Rotate ( RotateAngle0, RotateAngle90, RotateAngle180, RotateAngle270)
-f)	Height
-g)	Width
+
+* Page Size
+* Orientation
+* Margins (Left, Right, Top, Bottom)
+* Transition (Direction, Dimension, Duration, Motion, PageDuration, Scale, Style)
+* Rotate (RotateAngle0, RotateAngle90, RotateAngle180, RotateAngle270)
+* Height
+* Width
 
 To apply the above page setting values, you need to create an object for the `PdfPageSettings` class. Then, you can assign the values to the available properties within it such as Size = PdfPageSize.A3, Orientation = PdfPageOrientation.Landscape and so on. Once done, pass this object into the export method which will set these page settings values to the PDF file before exporting it. Refer to the following code example (server-side) to set/change the page settings values.
 
