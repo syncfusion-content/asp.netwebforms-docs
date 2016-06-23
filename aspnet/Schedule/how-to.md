@@ -366,3 +366,161 @@ To implement SignalR concept in Scheduler, add and refer the appropriate SignalR
 </asp:Content>
 
 {% endhighlight %}
+
+## Synchronize the Schedule with Outlook
+
+Schedule appointments can be synchronized with Outlook and vice versa. This can be achieved through the server side event `OnServerBeforeAppointmentCreate` of the Scheduler.
+
+The following code example depicts the way to synchronize the Schedule with Outlook.
+
+{% highlight html %}
+
+<ej:Schedule ID="Schedule1" ClientIDMode="Static" Height="525px" Width="100%" CurrentDate="4/27/2015" runat="server"  OnServerBeforeAppointmentCreate="Schedule1_ServerAppointmentSaved">
+        <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Recurrence="Recurrence" RecurrenceRule= "RecurrenceRule"  />
+</ej:Schedule>
+
+{% endhighlight %}
+
+Schedule control is not directly compatible with the Outlook calendar object, as it returns the COM object. Therefore, in order to bind the schedule control with those data retrieved from outlook, then it is necessary to convert the COM object into the schedule acceptable object format. To do so add the following code example in your code behind.
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+using Microsoft.Office.Interop.Outlook; // required Microsoft DLL 
+using System.Web.Script.Serialization;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using ScheduleCRUDCS.Models;
+namespace ScheduleCRUDCS
+{
+    public partial class _Default : Page
+    {
+        ScheduleDataDataContext db = new ScheduleDataDataContext();
+        static string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+        //change your database name and server name
+        SqlConnection conn = new SqlConnection(connectionString);
+        DataSet drugs = new DataSet();
+        SqlDataAdapter adapter1 = new SqlDataAdapter();
+        string sql = null;
+        string locationValue = "";
+        string recurrenceValue = "";
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+               
+                Schedule1.AppointmentSettings.DataSource = GetData();
+            }
+        }
+
+        public class ScheduleAppointment
+        {
+            public int Id { get; set; }
+            public string Subject { get; set; }
+            public DateTime StartTime { get; set; }
+            public DateTime EndTime { get; set; }
+            public bool AllDay { get; set; }
+            public bool Recurrence { get; set; }
+            public string RecurrenceRule { get; set; }
+
+        }
+
+        [DataObjectMethod(DataObjectMethodType.Select)]
+        public List<ScheduleAppointment> GetData()
+        {
+            Microsoft.Office.Interop.Outlook.Application oApp = new Microsoft.Office.Interop.Outlook.Application();
+            Microsoft.Office.Interop.Outlook.NameSpace mapiNamespace = oApp.GetNamespace("MAPI");
+            Microsoft.Office.Interop.Outlook.MAPIFolder CalendarFolder = mapiNamespace.GetDefaultFolder(Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderCalendar);
+            Microsoft.Office.Interop.Outlook.Items outlookCalendarItems = CalendarFolder.Items;
+            List<Microsoft.Office.Interop.Outlook.AppointmentItem> lst = new List<Microsoft.Office.Interop.Outlook.AppointmentItem>();
+
+            foreach (Microsoft.Office.Interop.Outlook.AppointmentItem item in outlookCalendarItems)
+            {
+                lst.Add(item);
+            }
+
+            List<ScheduleAppointment> newApp = new List<ScheduleAppointment>();
+            // converting COM object into IEnumerable object
+            for (var i = 0; i < lst.Count; i++)
+            {
+                ScheduleAppointment app = new ScheduleAppointment();
+                app.Id = i;
+                app.Subject = lst[i].Subject;
+                app.AllDay = lst[i].AllDayEvent;
+                app.StartTime = Convert.ToDateTime(lst[i].Start.ToString());
+                string endTime = lst[i].End.ToString();
+                DateTime appEndDate = Convert.ToDateTime(endTime);
+                if (endTime.Contains("12:00:00 AM") && app.AllDay)
+                    app.EndTime = appEndDate.AddMinutes(-1);
+                else
+                    app.EndTime = appEndDate;
+                app.Recurrence = false;
+                app.RecurrenceRule = null;
+                newApp.Add(app);
+            }
+            return newApp;
+        }
+
+
+        //The following block of codes used to display the appointments after the adding the appointments
+        private void BindAppointments()
+        { 
+            Schedule1.AppointmentSettings.DataSource = GetData();
+        }
+        private Dictionary<string, object> m_Arguments;
+        public Dictionary<string, object> Arguments
+        {
+            get { return m_Arguments; }
+            set { m_Arguments = value; }
+        }
+        private Dictionary<string, object> list1;
+        public Dictionary<string, object> list
+        {
+            get { return list1; }
+            set { list1 = value; }
+        }      
+        //The following block of codes will trigger and perform the storing appointments details after the add/saving the appointments
+        protected void Schedule1_ServerAppointmentSaved(object sender, Syncfusion.JavaScript.Web.ScheduleEventArgs e)
+        {
+            Arguments = e.Arguments["appointment"] as Dictionary<string, object>;
+            if(Arguments==null)
+            {
+                var Arguments1 = (System.Collections.ArrayList)e.Arguments["appointment"];
+                 list = (Dictionary<String, Object>)Arguments1[0];
+            }
+            else
+                 list = Arguments as Dictionary<string, object>;
+            sql = "Select Id from ScheduleAppointments Where Id='" + list["Id"].ToString() + "'";
+            adapter1.SelectCommand = new SqlCommand(sql, conn);
+            adapter1.Fill(drugs);
+            recurrenceValue = list["Recurrence"].ToString() == "True" ? list["RecurrenceRule"].ToString() : null;
+            if (drugs.Tables[0].Rows.Count == 0)
+            {
+                conn.Open();
+                sql = "insert into ScheduleAppointments (Id,EndTime,Recurrence,StartTime,Subject,AllDay,RecurrenceRule) values(" + list["Id"].ToString() + ",'" + Convert.ToDateTime(list["EndTime"]).ToUniversalTime().ToString() + "','" + list["Recurrence"].ToString() + "','" + Convert.ToDateTime(list["StartTime"]).ToUniversalTime().ToString() + "','" + list["Subject"].ToString() + "','" + list["AllDay"].ToString() + "','" + recurrenceValue + "')";
+                adapter1.InsertCommand = new SqlCommand(sql, conn);
+                adapter1.InsertCommand.ExecuteNonQuery();
+                conn.Close();
+            }
+            Microsoft.Office.Interop.Outlook.Application outlookApp = new Microsoft.Office.Interop.Outlook.Application();
+            Microsoft.Office.Interop.Outlook.AppointmentItem newAppointment = null;
+            newAppointment = (Microsoft.Office.Interop.Outlook.AppointmentItem)outlookApp.CreateItem(Microsoft.Office.Interop.Outlook.OlItemType.olAppointmentItem);
+            newAppointment.Start = Convert.ToDateTime(list["StartTime"]).ToUniversalTime();
+            newAppointment.End = Convert.ToDateTime(list["EndTime"]).ToUniversalTime();
+            newAppointment.Subject = list["Subject"].ToString();
+            newAppointment.Save();
+            BindAppointments();
+        }
+    }
+}
+
+{% endhighlight %}
+
+N> In order to achieve the above scenario, need to refer the Microsoft DLL (Microsoft Outlook 12/15 Object library [Microsoft.Office.Interop.Outlook]) in your application and add it in the controller page as shown above.
