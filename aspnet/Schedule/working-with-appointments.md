@@ -1154,3 +1154,251 @@ Reminder option notifies all the appointments before some specific time. By defa
 
 N> Whenever the reminder setting is enabled in the Scheduler with some specific value (in minutes) assigned to the **AlertBefore** property, the **Reminder** event gets triggered before this specified value. It includes the reminder appointment’s entire information within its arguments.
 
+## Block Time Intervals
+
+It allows to block the particular timeslots in Schedule. When specific timeslots are blocked, the appointments that lies in that range can either be made read-only or else can be allowed to interact with the users based on the value assigned to the `IsBlockAppointment` property.
+
+### Blockout Settings
+
+The `BlockoutSettings` holds the below block intervals related properties such as,
+
+* `Enable` - It accepts true or false value, denoting whether to enable/disable the block intervals option. It's default value is `false`.
+* `TemplateId` – It applies the template design to block the intervals.
+* `Datasource` – Binds the block intervals dataSource collection. This property should be assigned either with the JSON data array collection or instance of DataManager (`ej.DataManager`).
+
+The below blockout fields holds the appropriate column names from the dataSource - 
+
+<table>
+<tr>
+<th>
+Field name<br/><br/></th><th>
+Description<br/><br/></th></tr>
+<tr>
+<td>
+Id<br/><br/></td><td>
+It holds the binding name for <b>Id</b> field in the blockout dataSource<br/><br/></td></tr>
+<tr>
+<td>
+Subject<br/><br/></td><td>
+It holds the binding name for <b>Subject</b> field in the blockout dataSource<br/><br/></td></tr>
+<tr>
+<td>
+StartTime<br/><br/></td><td>
+It holds the binding name for <b>StartTime</b> field in the blockout dataSource.<br/><br/></td></tr>
+<tr>
+<td>
+EndTime<br/><br/></td><td>
+It holds the binding name for <b>EndTime</b> field in the blockout dataSource.<br/><br/></td></tr>
+<tr>
+<td>
+IsBlockAppointment<br/><br/></td><td>
+It holds the binding name for <b>IsBlockAppointment</b> field in the blockout dataSource.<br/><br/></td></tr>
+<tr>
+<td>
+IsAllDay<br/><br/></td><td>
+It holds the binding name for <b>IsAllDay</b> field in the blockout dataSource.<br/><br/></td></tr>
+<tr>
+<td>
+ResourceId<br/><br/></td><td>
+It holds the binding name for <b>ResourceId</b> field in the blockout dataSource.<br/><br/></td></tr>
+<tr>
+<td>
+CustomStyle<br/><br/></td><td>
+It holds the binding name for <b>CustomStyle</b> field in the blockout dataSource.<br/><br/></td></tr>
+</table>
+The below example depicts the appointment fields accepting the string type mapper fields.
+
+{% highlight html %}
+   
+<!--Container for ejScheduler widget-->
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" Width="100%" Height="525px" CurrentDate="11/10/2015">
+            <BlockoutSettings Enable="true" Id="Id" Subject="Subject" StartTime="StartTime" EndTime="EndTime" IsBlockAppointment="IsBlockAppointment" IsAllDay="IsAllDay" />    
+</ej:Schedule>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public partial class BlockIntervals : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            List<BlockData> blockData = new List<BlockData>();
+            blockData.Add(new BlockData { Id = 1, Subject = "Service", StartTime = new DateTime(2015, 11, 10, 9, 00, 00), EndTime = new DateTime(2015, 11, 10, 10, 00, 00), IsBlockAppointment = true });
+            blockData.Add(new BlockData { Id = 2, Subject = "Maintenance", StartTime = new DateTime(2015, 11, 11, 11, 00, 00), EndTime = new DateTime(2015, 11, 11, 13, 00, 00), IsBlockAppointment = true });
+            Schedule1.BlockoutSettings.DataSource = blockData;
+        }
+        public class BlockData
+        {
+            public int Id { get; set; }
+            public string Subject { get; set; }
+            public DateTime StartTime { get; set; }
+            public DateTime EndTime { get; set; }
+            public Boolean IsBlockAppointment { get; set; }
+            public Boolean IsAllDay { get; set; }           
+        }
+    }
+
+{% endhighlight %}
+
+### Blocking Appointments
+
+The Appointments that lies within the blocked time range can be restricted to perform CRUD operations in it and can be made read-only. This can be achieved by setting `IsBlockAppointment` property to true.
+
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" Width="100%" Height="525px" CurrentDate="11/10/2015">
+            <BlockoutSettings Enable="true" Id="Id" Subject="Subject" StartTime="StartTime" EndTime="EndTime" IsBlockAppointment="IsBlockAppointment" />    
+</ej:Schedule>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public partial class BlockIntervals : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            List<BlockData> blockData = new List<BlockData>();
+            blockData.Add(new BlockData { Id = 1, Subject = "Service", StartTime = new DateTime(2015, 11, 10, 9, 00, 00), EndTime = new DateTime(2015, 11, 10, 10, 00, 00), IsBlockAppointment = true });
+            //Datasource for Block Intervals
+            Schedule1.BlockoutSettings.DataSource = blockData;
+        }
+        public class BlockData
+        {
+            public int Id { get; set; }
+            public string Subject { get; set; }
+            public DateTime StartTime { get; set; }
+            public DateTime EndTime { get; set; }
+            public Boolean IsBlockAppointment { get; set; }           
+        }
+    }
+
+{% endhighlight %}
+
+### Customizing block time intervals
+
+The `BlockoutSettings` holds the below properties to customize the block intervals such as,
+
+* `TemplateId` - Template design that applies on the block intervals.
+* `CustomStyle` - The custom CSS that applies on the blocked intervals.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" Width="100%" Height="525px" CurrentDate="11/10/2015">
+            <BlockoutSettings Enable="true" TemplateId="#blocktemplate" Id="Id" Subject="Subject" StartTime="StartTime" EndTime="EndTime" IsBlockAppointment="IsBlockAppointment" IsAllDay="IsAllDay" />    
+</ej:Schedule>
+
+<asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
+<!--Template to apply block intervals-->
+<script id="blocktemplate" type="text/x-jsrender">
+   <div style="height:100%">
+      <div>{{:Subject}}</div>
+   </div>
+</script>
+</asp:Content> 
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public partial class BlockIntervals : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            List<BlockData> blockData = new List<BlockData>();
+            blockData.Add(new BlockData { Id = 1, Subject = "Service", StartTime = new DateTime(2015, 11, 10, 9, 00, 00), EndTime = new DateTime(2015, 11, 10, 10, 00, 00), IsBlockAppointment = true });
+            //Datasource for Block Intervals
+            Schedule1.BlockoutSettings.DataSource = blockData;
+        }
+        public class BlockData
+        {
+            public int Id { get; set; }
+            public string Subject { get; set; }
+            public DateTime StartTime { get; set; }
+            public DateTime EndTime { get; set; }
+            public Boolean IsBlockAppointment { get; set; }
+            public Boolean IsAllDay { get; set; }           
+        }
+    }
+
+{% endhighlight %}
+
+### Blocking time interval based on resources
+
+* `ResourceId` property used within the `BlockoutSettings` which accepts the resource id's can be used to apply the block intervals based on the resources.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" Width="100%" Height="525px" CurrentDate="11/10/2015">
+    <BlockoutSettings Enable="true" Id="Id" Subject="Subject" StartTime="StartTime" EndTime="EndTime" IsBlockAppointment="IsBlockAppointment" IsAllDay="IsAllDay" ResourceId="ResourceId" />
+    <Group Resources="Owners" />
+    <Resources>
+        <ej:Resources Field="OwnerId" Name="Owners" Title="Owner" AllowMultiple="true">
+            <ResourceSettings Color="color" Id="id" Text="text">
+            </ResourceSettings>
+        </ej:Resources>
+    </Resources>
+    <AppointmentSettings Id="Id" Subject="Subject" StartTime="StartTime" EndTime="EndTime" AllDay="AllDay" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule" ResourceFields="OwnerId"/>
+</ej:Schedule>    
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public partial class BlockIntervals : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            //Datasource for Block Intervals
+            List<BlockData> blockData = new List<BlockData>();
+            blockData.Add(new BlockData { Id = 1, Subject = "Service", StartTime = new DateTime(2015, 11, 10, 9, 00, 00), EndTime = new DateTime(2015, 11, 10, 10, 00, 00), IsBlockAppointment = true, ResourceId = 1 });
+            Schedule1.BlockoutSettings.DataSource = blockData;
+
+            //Datasource for Appointments
+            List<ScheduleData> Appoint = new List<ScheduleData>();
+            Appoint.Add(new ScheduleData { Id = 1, Subject = "Meeting", StartTime = new DateTime(2015, 11, 11, 10, 00, 00), EndTime = new DateTime(2015, 11, 11, 11, 00, 00), Description = "", AllDay = false, Recurrence = false, RecurrenceRule = "", OwnerId = 1 });
+            Schedule1.AppointmentSettings.DataSource = Appoint;
+
+            //Datasource for Owners
+            List<Rooms> owners = new List<Rooms>();
+            owners.Add(new Rooms { text = "Nancy", id = 1, color = "#f8a398" });
+            owners.Add(new Rooms { text = "Steven", id = 2, color = "#56ca85" });
+            Schedule1.Resources[0].ResourceSettings.DataSource = owners;        }
+        
+        public class Rooms
+        {
+            public string text { set; get; }
+            public int id { set; get; }
+            public string color { set; get; }
+        }
+        public class ScheduleData
+        {
+            public int Id { get; set; }
+            public string Subject { get; set; }
+            public DateTime StartTime { get; set; }
+            public DateTime EndTime { get; set; }
+            public Boolean AllDay { get; set; }
+            public Boolean Recurrence { get; set; }
+            public string RecurrenceRule { get; set; }
+            public string Description { get; set; }
+            public int OwnerId { get; set; }
+        }
+        public class BlockData
+        {
+            public int Id { get; set; }
+            public string Subject { get; set; }
+            public DateTime StartTime { get; set; }
+            public DateTime EndTime { get; set; }
+            public Boolean IsBlockAppointment { get; set; }
+            public Boolean IsAllDay { get; set; }
+            public int ResourceId { get; set; }
+        }
+    }
+
+{% endhighlight %}
+
