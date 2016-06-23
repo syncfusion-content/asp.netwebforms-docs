@@ -1166,7 +1166,7 @@ The `BlockoutSettings` holds the below block intervals related properties such a
 
 * `Enable` - It accepts true or false value, denoting whether to enable/disable the block intervals option. It's default value is `false`.
 * `TemplateId` – It applies the template design to block the intervals.
-* `DataSource` – Binds the block intervals dataSource collection. This property should be assigned either with the JSON data array collection or instance of DataManager (`ej.DataManager`).
+* `Datasource` – Binds the block intervals dataSource collection. This property should be assigned either with the JSON data array collection or instance of DataManager (`ej.DataManager`).
 
 The below blockout fields holds the appropriate column names from the dataSource - 
 
@@ -1221,8 +1221,6 @@ The below example depicts the appointment fields accepting the string type mappe
 
 {% highlight c# %}
 
-namespace WebSampleBrowser.Schedule
-{
     public partial class BlockIntervals : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
@@ -1242,9 +1240,9 @@ namespace WebSampleBrowser.Schedule
             public Boolean IsAllDay { get; set; }           
         }
     }
-}
 
 {% endhighlight %}
+
 ### Blocking Appointments
 
 The Appointments that lies within the blocked time range can be restricted to perform CRUD operations in it and can be made read-only. This can be achieved by setting `IsBlockAppointment` property to true.
@@ -1261,8 +1259,6 @@ The Appointments that lies within the blocked time range can be restricted to pe
 
 {% highlight c# %}
 
-namespace WebSampleBrowser.Schedule
-{
     public partial class BlockIntervals : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
@@ -1281,7 +1277,6 @@ namespace WebSampleBrowser.Schedule
             public Boolean IsBlockAppointment { get; set; }           
         }
     }
-}
 
 {% endhighlight %}
 
@@ -1312,8 +1307,6 @@ The `BlockoutSettings` holds the below properties to customize the block interva
 
 {% highlight c# %}
 
-namespace WebSampleBrowser.Schedule
-{
     public partial class BlockIntervals : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
@@ -1333,7 +1326,6 @@ namespace WebSampleBrowser.Schedule
             public Boolean IsAllDay { get; set; }           
         }
     }
-}
 
 {% endhighlight %}
 
@@ -1360,8 +1352,6 @@ namespace WebSampleBrowser.Schedule
 
 {% highlight c# %}
 
-namespace WebSampleBrowser.Schedule
-{
     public partial class BlockIntervals : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
@@ -1411,7 +1401,6 @@ namespace WebSampleBrowser.Schedule
             public int ResourceId { get; set; }
         }
     }
-}
 
 {% endhighlight %}
 
