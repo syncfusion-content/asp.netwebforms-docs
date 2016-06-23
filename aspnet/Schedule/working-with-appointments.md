@@ -694,7 +694,7 @@ The `CategorizeSettings` holds the below categorize related properties such as,
 
 * `Enable` - It accepts true or false value, denoting whether to enable/disable the categorize option. Its default value is `false`.
 * `AllowMultiple` – It enables or disables the multiple selection of categories for each appointments in the appointment window as well as in the context menu. Its default value is `false`.
-* `DataSource` – Binds the categorize dataSource collection. This property should be assigned with the JSON data array collection or instance of [DataManger](/aspnet/datamanager/overview). We have below 6 default values for data source collection.
+* `Datasource` – Binds the categorize dataSource collection. This property should be assigned with the JSON data array collection or instance of [DataManger](/aspnet/datamanager/overview). We have below 6 default values for data source collection.
 
 We have below 6 default values for Categorize dataSource collection.
 
@@ -809,7 +809,7 @@ The `PrioritySettings` holds the below priority related properties such as,
 
 * `Enable` - It accepts true or false value, denoting whether to enable/disable the priority option. Its default value is **false**.
 * `Template` – Customize the priority icon/images using template options.
-* `DataSource` – binds the priority dataSource collection. This property should be assigned with the JSON data array collection or instance of [DataManger](/aspnet/datamanager/overview). 
+* `Datasource` – binds the priority dataSource collection. This property should be assigned with the JSON data array collection or instance of [DataManger](/aspnet/datamanager/overview). 
 
 We have below 4 default values for priority data source collection.
 
@@ -847,11 +847,11 @@ Field name<br/><br/></th><th>
 Description<br/><br/></th></tr>
 <tr>
 <td>
-text<br/><br/></td><td>
+Text<br/><br/></td><td>
 It holds the binding name for <b>Text</b> field in the priority dataSource<br/><br/></td></tr>
 <tr>
 <td>
-value<br/><br/></td><td>
+Value<br/><br/></td><td>
 It holds the binding name for <b>Value</b> field in the priority dataSource.<br/><br/></td></tr>
 </table>
 
@@ -897,7 +897,7 @@ namespace WebSampleBrowser.Schedule
 
 ### Appointment Search
 
-The public method `searchAppointments` is used to search the appointments in the Scheduler dataSource. It contains the below four arguments such as search string, search field, filter operator and ignorecase.
+The client-side method `searchAppointments` is used to search the appointments in the Scheduler. It contains the below four arguments such as search string, search field, filter operator and ignore case.
 
 **searchString** - It is used to search the given word/sentence within the appointment data.
 
@@ -1016,7 +1016,7 @@ The appointments can be filtered or shortlisted based on the simple or complex c
 
 There are scenarios where you require the same appointments to be repeatedly created for multiple days on daily, weekly, monthly, and yearly or on every weekday basis.  
 
-In appointment data collection, **recurrence** and **recurrenceRule** are dependent fields. While creating or binding the recurrence appointment, the **recurrence** field is set to **true** and **recurrenceRule** contains recurrence pattern in string format.
+In appointment data collection, **Recurrence** and **RecurrenceRule** are dependent fields. While creating or binding the recurrence appointment, the **Recurrence** field is set to **true** and **RecurrenceRule** contains recurrence pattern in string format.
 
 ### Recurrence Rule
 
