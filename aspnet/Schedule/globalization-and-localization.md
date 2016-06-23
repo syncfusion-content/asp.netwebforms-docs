@@ -190,7 +190,7 @@ The following code example shows the way to set the specific time zone value wit
 
 {% endhighlight %}
 
-### Setting different TimeZone for Scheduler Appointments
+### TimeZone for Scheduler Appointments
 
 Apart from the default action of applying specific timezone to the entire Scheduler, it is also possible to set different time zone values for each appointments through the properties **StartTimeZone** and **EndTimeZone** which can be defined as separate fields within the appointment dataSource. When these properties are not explicitly defined for appointments, the appointments Start and End time will be processed based on the Scheduler time zone.
 
