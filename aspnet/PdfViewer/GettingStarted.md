@@ -14,13 +14,13 @@ This section explains briefly about how to include PDF viewer in ASP.NET Web For
 
 ##Create your first PDF viewer application in ASP.NET
 
-Create a new project in the visual studio by selecting the ASP.NET Empty Web Application template. The following screenshot displays the Project Creation Wizard in Visual Studio 2012.
+Create a new project in the Visual Studio by selecting the ASP.NET Empty Web Application template. The following screenshot displays the Project Creation Wizard in Visual Studio 2012.
 
 ![](Gettingstarted_images/Gettingstarted_img1.jpeg)
 
 ###Adding Web Form
 
-Add a new Web Form to the project and name it as **Defaut.aspx**
+Add a new Web Form to the project and name it as **Default.aspx**
 
 ![](Gettingstarted_images/Gettingstarted_img2.jpeg)
 
@@ -30,7 +30,7 @@ Add below references to the project and set the Copy Local property to **True**
 * Syncfusion.Pdf.Base
 * Syncfusion.EJ
 * Syncfusion.EJ.PdfViewer
-* Sycnfusion.EJ.Web
+* Syncfusion.EJ.Web
 
 ###i) PDF viewer using remote service
 
@@ -68,7 +68,7 @@ N> For adding scripts and styles, please refer **Add Scripts and Styles** sectio
 
 ###ii) PDF viewer using Web API
 
-Add new folder **webapi** in the solution and create new Web API Controller Class to it. Name it as **PdfViewerController** and click Add.
+Add new folder **WebApi** in the solution and create new Web API Controller Class to it. Name it as **PdfViewerController** and click Add.
 
 ![](Gettingstarted_images/Gettingstarted_img3.jpeg)
 
