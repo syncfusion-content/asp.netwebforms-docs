@@ -12,15 +12,12 @@ The Recurrence Editor includes the entire recurrence related information in a se
 
 ## Getting Started
 
-Follow the steps as mentioned in the [Getting Started](http://help.syncfusion.com/aspnet/getting-started) page of the Introduction part to create an MVC application with required assembly references, scripts and stylesheets to render the Recurrence Editor.
-
-Add the basic Recurrence Editor code as shown below,
+Follow the steps mentioned in the [Getting Started](http://help.syncfusion.com/aspnet/getting-started#manual-integration-of-syncfusion-aspnet-controls-into-the-newexisting-application) page of the Introduction part to create an ASP.NET application with the required assemblies, scripts and stylesheet reference. Simply add the below Recurrence Editor rendering code in the Source code section of the application.
 
 {% highlight html %}
 
-<body>
-    <ej:RecurrenceEditor ID="RecurrenceEditor" runat="server"></ej:RecurrenceEditor>
-</body>
+    <!--Container for ejRecurrenceEditor widget-->
+    <ej:RecurrenceEditor ID="RecurrenceEditor1" runat="server"></ej:RecurrenceEditor>
 
 {% endhighlight %}
 
@@ -34,7 +31,9 @@ The following code example depicts the way to generate the recurrence rule.
 
 <!--Container for ejRecurrenceEditor widget-->
 <asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
-    <ej:RecurrenceEditor runat="server" SelectedRecurrenceType="2" Create="onCreate"></ej:RecurrenceEditor>
+    <ej:RecurrenceEditor ID="RecurrenceEditor1" runat="server" SelectedRecurrenceType="2" Create="onCreate"></ej:RecurrenceEditor>
+    
+    <!--Place a button control - so that while clicking on it, generate the recurrence rule for the selected options in the recurrence editor-->
     <ej:Button ID="donerecur1" runat="server"  Type="Button" Text="Generate Rule" ShowRoundedCorner="true" ClientSideOnClick="closerecurrence"></ej:Button>
 </asp:Content>
 
@@ -43,8 +42,8 @@ The following code example depicts the way to generate the recurrence rule.
         this.element.find("#recurrencetype_wrapper").css("width", "33%");
     }
     function closerecurrence() {
-        var obj = $(".e-recurrenceeditor").data("ejRecurrenceEditor")
-        obj.closeRecurPublic();
+        var obj = $("#RecurrenceEditor1").data("ejRecurrenceEditor")
+        obj.getRecurrenceRule();
         alert(obj._recRule);
     }
  </script>
