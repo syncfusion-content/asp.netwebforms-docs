@@ -112,5 +112,66 @@ Add the following script
 
 {% endhighlight %}
 
+## Create Confirmation Dialog with Footer Option
+
+Essential JS library supports Alert Dialog widgets.
+
+Using `ShowFooter` property to render Alert Dialog with Footers in Dialog widget.
+
+Create a Dialog Widget with enabling Footer property.
+
+{% highlight html %}
+
+        <div class="control">    
+             <ej:Button ID="btnOpen" runat="server" Size="Medium" Type="Button" Height="30" Width="150" ClientSideOnClick="onOpen" Text="Click to open dialog"></ej:Button> 
+             <ej:Dialog ID="basicDialog" Title="Software Installation Agreement" runat="server" ClientSideOnCreate="onCreate" Target=".control" ShowFooter="True" FooterTemplateId="sample" ClientSideOnClose="onDialogClose">
+                <DialogContent>
+                    <div class="cnt">
+                       Do you really leave the session?                                
+                    </div>
+                </DialogContent>
+        </ej:Dialog>
+    </div>
+	
+{% endhighlight %}
+
+Add the following script to open and close the Dialog widget.
+
+{% highlight javascript %}
+
+    $("#btnOpen").hide();
+    function onDialogClose(args) {
+        $("#btnOpen").show();
+    }
+    function onOpen() {
+        $("#btnOpen").hide();
+        $("#basicDialog").ejDialog("open");
+	});
+
+{% endhighlight %}
+
+Initialize Footer in Dialog widgets by adding the script section in JSrender as below.
+
+{% highlight javascript %}
+
+    <script id="sample" type="text/x-jsrender">
+
+	<div class="footerspan" style="float:right">
+	
+        <ej:Button ID="btn1" runat="server" Size="Mini" Height="30" Width="70" Text="Ok"></ej:Button>
+		  
+        <ej:Button ID="btn2" runat="server" Size="Mini" Height="30" Width="70" Text="Cancel"></ej:Button>
+		  
+    </div>
+    <div class="condition" style="float:left; margin-left:15px">
+  
+        <ej:CheckBox ID="check1" runat="server" Text="Dont ask me this again"></ej:CheckBox>
+  
+    </div>
+ 
+{% endhighlight %}
+
+![Create Alert Dialog](how-to_images\dialog-footer1.png)
+
 
 
