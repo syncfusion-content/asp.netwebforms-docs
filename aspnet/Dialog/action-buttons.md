@@ -43,3 +43,36 @@ You can display only the necessary buttons in the Dialog widget by configuring t
 
 ![Action Buttons](action-buttons_images\action-buttons_img1.png)
 
+## Customizing Action Buttons
+
+We can customize the action buttons in dialog widget.
+
+You can add new action button in the dialog widget by configuring the `actionButtonClick` event.
+
+{% highlight html %}
+
+
+    <ej:Dialog ID="dialog" Title="Dialog" ActionButtons="close,maximize,minimize,collapsible,pin,mediaplay,search" ClientSideOnActionButtonClick="playMedia" runat="server">
+
+        <DialogContent>
+            <p>This is a Dialog</p>
+        </DialogContent>
+
+    </ej:Dialog>
+
+{% endhighlight %}
+
+
+{% highlight javascript %}
+          
+		  function playMedia(args)
+		    {
+               console.log(args.buttonID);
+            }
+			
+{% endhighlight %}
+
+
+
+![Action Buttons](action-buttons_images\action-buttons_img2.png)
+
