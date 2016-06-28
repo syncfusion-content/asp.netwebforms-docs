@@ -61,11 +61,11 @@ Creates the Split Button with content size.</td></tr>
 <tr>
 <th>
 mini</th><td>
-Creates the Split Button with in-built mini size height and width specified.</td></tr>
+Creates the Split Button with Built-in mini size height and width specified.</td></tr>
 <tr>
 <th>
 small</th><td>
-Creates the Split Button with in-built small size height and width specified.</td></tr>
+Creates the Split Button with Built-in small size height and width specified.</td></tr>
 <tr>
 <th>
 medium</th><td>
