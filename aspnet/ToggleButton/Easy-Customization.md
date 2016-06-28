@@ -144,19 +144,19 @@ Creates the Toggle Button with content size.</th></tr>
 <tr>
 <td>
 Mini</td><td>
-Creates the Toggle Button with in-built mini size height and width specified.</td></tr>
+Creates the Toggle Button with Built-in mini size height and width specified.</td></tr>
 <tr>
 <td>
 Small</td><td>
-Creates the Toggle Button with in-built small size height and width specified.</td></tr>
+Creates the Toggle Button with Built-in small size height and width specified.</td></tr>
 <tr>
 <td>
 Medium</td><td>
-Creates the Toggle Button with in-built medium size height and width specified.</td></tr>
+Creates the Toggle Button with Built-in medium size height and width specified.</td></tr>
 <tr>
 <td>
 Large</td><td>
-Creates toggle button with in-built large size height and width specified.</td></tr>
+Creates toggle button with Built-in large size height and width specified.</td></tr>
 </table>
 You can also set your own width and height for the Toggle Button by using height and width property.
 
