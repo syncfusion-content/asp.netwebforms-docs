@@ -93,15 +93,24 @@ The following screenshot illustrates aTimePicker textbox configured to restrict 
 
 Localization is a language support based on the culture in the TimePicker. You can achieve Localization by using Locale property in the TimePicker.
 
-In order to enable [localization](http://help.syncfusion.com/js), refer to the following scripts: globalize.cultures.js and globalize.js. The “globalize.cultures.js” includes different language support for JavaScript controls and the “globalize.js” is a simple JavaScript library that allows you to format dates based on the specified culture.
+EJWEB TimePicker has been provided with built-in localization support, so that it can adapt based on culture specific locale defined for it. 
 
-You can refer to the following online link reference for globalize.js,
+More than 350 culture specific files are available to localize the time. To know more about EJ globalize support, please refer the below link      
+ [http://help.syncfusion.com/js/localization](http://help.syncfusion.com/js/localization) 
 
-[http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js](http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js)
+N> All the culture-specific script files are available within the below specified location, once you have installed Essential Studio in your machine, therefore it is not necessary to download these files explicitly.
 
-You can refer to the following online link reference for globalize.culture.js,
+<table>
+<tr>
+<td>
 
-[http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/cultures/globalize.cultures.js](http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/cultures/globalize.cultures.js)
+    (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\i18n
+
+    For example, If you have installed the Essential Studio package within C:\Program Files (x86), then navigate to the below location, 
+    C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\i18n
+
+</td></tr>
+</table>
 
 You can dynamically change the language based on their culture.
 
