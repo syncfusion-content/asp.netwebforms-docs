@@ -15,7 +15,7 @@ You can customize the PivotChart dimension by setting the width and height of th
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
     //Set size to Chart container
     <Size Width="80%" Height="80%"></Size>
 </ej:PivotChart>
@@ -28,7 +28,7 @@ You can customize the PivotChart dimension by setting the width and height of th
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc"  ClientIDMode="Static">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc"  ClientIDMode="Static">
     //Set size to Chart container
     <Size Width="950px" Height="460px"></Size>
  </ej:PivotChart>
@@ -44,7 +44,7 @@ PivotChart widget supports responsive rendering based on the target device (desk
 {% highlight html %}
 
 //Enable responsiveness to change the Chart size dynamically.
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc"  ClientIDMode="Static" IsResponsive="true">
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc"  ClientIDMode="Static" IsResponsive="true">
     <Size Width="950px" Height="460px"></Size>
  </ej:PivotChart>
 
