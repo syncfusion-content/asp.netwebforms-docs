@@ -11,7 +11,7 @@ documentation: ug
 
 ## Localization in PivotChart
 
-We can localize the PivotChart controls text with a collection of localized strings using **"ej.olap.PivotChart.locale"** for different cultures. By default, the PivotChart control is localized in **“en-US”.**
+We can localize the PivotChart controls text with a collection of localized strings using **"ej.PivotChart.locale"** for different cultures. By default, the PivotChart control is localized in **“en-US”.**
 
 Following code example illustrates on how to localize PivotChart based on **“French”** culture.
 
@@ -21,11 +21,11 @@ Following code example illustrates on how to localize PivotChart based on **“F
 //...
 
 <body>
-    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc" Locale="fr-FR" ClientIDMode="Static">
+    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" Locale="fr-FR" ClientIDMode="Static">
     <Size Width="950px" Height="460px"></Size>
     </ej:PivotChart>
     <script type="text/javascript">
-        ej.olap.PivotChart.locale["fr-FR"] = {
+        ej.PivotChart.Locale["fr-FR"] = {
             Measure: "Mesure",
             Row: "Rangée",
             Column: "Colonne",
@@ -78,7 +78,28 @@ Exit</td><td>
 “Quitter "</td></tr>
 </table>
 
-## Localization and Globalization of Cube Info
+## Localization and Globalization of Cube Info (Client Mode)
+
+Content displayed within the PivotChart control are obtained from the OLAP Cube. So following are the steps that needs to be done to get the localized and globalized Cube content.
+
+* To get localized data from OLAP Cube, we need to set **"Locale Identifier"** in the connection string to a specific culture in the **"Data"** property present inside **"DataSource"**. 
+* To bind the globalized content in PivotChart control, we need to set **"Locale"** property to a specific culture and want to refer specific culture file in the sample.
+ 
+N> Culture files are present under **"Syncfusion\EssentialStudio\14.2.0.26\Web\Samples\Web\Scripts\cultures".**
+ 
+{% highlight html %}
+
+//1036 refers to “fr-FR” culture.
+    <ej:PivotChart ID="PivotChart1" runat="server" IsResponsive="true" Locale="fr-FR" ClientIDMode="Static">
+            <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll;Locale Identifier=1036;">
+                .....
+            </DataSource
+            ....
+    </ej:PivotChart>
+
+{% endhighlight %}
+
+## Localization and Globalization of Cube Info (Server Mode)
 
 Content displayed within the PivotChart control are obtained from the OLAP Cube. So following are the steps that needs to be done to get the localized and globalized Cube content.
 
