@@ -20,10 +20,10 @@ N> All the culture-specific script files are available within the below specifie
 <tr>
 <td>
 
-    (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\cultures
+    (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\i18n
 
     For example, If you have installed the Essential Studio package within C:\Program Files (x86), then navigate to the below location, 
-    C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\cultures
+    C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\i18n
 
 </td></tr>
 </table>
@@ -35,7 +35,7 @@ Refer the below Spanish culture file in head section of html page after the refe
 
  {% highlight javascript %}
    
-           <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/cultures/ej.culture.es-ES.min.js"></script>
+           <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/i18n/ej.culture.es-ES.min.js"></script>
                 
  {% endhighlight %}
 

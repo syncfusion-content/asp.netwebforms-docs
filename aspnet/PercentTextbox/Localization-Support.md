@@ -23,10 +23,10 @@ More than 350 culture specific files are available to localize the value. To kno
 <tr>
 <td>
 
-    (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\cultures
+    (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\i18n
 
     For example, If you have installed the Essential Studio package within C:\Program Files (x86), then navigate to the below location, 
-    C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\cultures
+    C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\i18n
 
 </td></tr>
 </table>
@@ -35,7 +35,7 @@ Refer the below German culture file in head section of html page after the refer
 
  {% highlight javascript %}
    
-           <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/cultures/ej.culture.de-DE.min.js"></script>
+           <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/i18n/ej.culture.de-DE.min.js"></script>
                 
  {% endhighlight %}
 
