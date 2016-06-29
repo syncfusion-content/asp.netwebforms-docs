@@ -263,7 +263,7 @@ Last Page</td></tr>
 {% highlight html %}
 
 
-<script src="../Scripts/cultures/ej.culture.de-DE.min.js" type="text/javascript"></script>
+<script src="../Scripts/i18n/ej.culture.de-DE.min.js" type="text/javascript"></script>
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True" AllowPaging="True" Locale="de-DE">
 
@@ -618,7 +618,7 @@ Please find the code
 
 {% highlight html %}
 
-<script src="../Scripts/cultures/ej.culture.de-DE.min.js" type="text/javascript"></script>
+<script src="../Scripts/i18n/ej.culture.de-DE.min.js" type="text/javascript"></script>
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowFiltering="True" AllowPaging="True" Locale="de-DE">
 
@@ -779,7 +779,7 @@ ej.ExcelFilter.Locale["de-DE"] = {
 
 {% highlight html %}
 
-<script src="../Scripts/cultures/ej.culture.de-DE.min.js" type="text/javascript"></script>
+<script src="../Scripts/i18n/ej.culture.de-DE.min.js" type="text/javascript"></script>
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True" AllowPaging="True" Locale="de-DE">
 
@@ -926,7 +926,7 @@ By default, Grid render its text and layout from left to right. To customize Gri
 
 {% highlight html %}
 
-<script src="../Scripts/cultures/ej.culture.de-DE.min.js" type="text/javascript"></script>
+<script src="../Scripts/i18n/ej.culture.de-DE.min.js" type="text/javascript"></script>
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True" AllowPaging="True" EnableRTL="True" Locale="de-DE">
 
@@ -1068,5 +1068,5 @@ public partial class Localization : System.Web.UI.Page
 
 
 
-N> You can get the various minified and unminified formatted culture script files from the local folder “C:\Program Files (x86)\Syncfusion\Essential Studio\xx.x.x.xx\JavaScript\assets\external\cultures”. xx.x.x.xx denotes the current version of Essential Studio, for example 12.4.0.34.
+N> You can get the various minified and unminified formatted culture script files from the local folder “C:\Program Files (x86)\Syncfusion\Essential Studio\xx.x.x.xx\JavaScript\assets\external\i18n”. xx.x.x.xx denotes the current version of Essential Studio, for example 12.4.0.34.
 

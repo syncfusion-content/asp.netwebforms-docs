@@ -20,7 +20,7 @@ N> By default, the Schedule control is localized in **en-US** culture.
 
 To localize Scheduler into any particular culture, it is necessary to refer the culture-specific script files in your application after the reference of **ej.web.all.min.js** file, which are available under the following location.                                      
 
-_<**Installed location**>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\cultures_
+_<**Installed location**>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\i18n_
 
 The following code example shows how to localize the Schedule control in **fr-FR** culture.
 
