@@ -26,7 +26,7 @@ DrillSuccess event gets triggered when you right-click on the PivotChart and sel
 {% tabs %}
 
 {% highlight html %}
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/PivotChartService.svc">;
+<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc">;
 
 <ClientSideEvents DrillSuccess="DrillSuccess" />
 
