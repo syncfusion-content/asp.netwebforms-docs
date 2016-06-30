@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Custom labels | OLAPGauge | ASP.NET | Syncfusion
+title: Custom labels | PivotGauge | ASP.NET | Syncfusion
 description: custom labels
 platform: aspnet
-control: OLAPGauge
+control: PivotGauge
 documentation: ug
 ---
 
@@ -11,21 +11,21 @@ documentation: ug
 
 ## Adding Custom Label Collection
 
-Custom label collection can be directly added to the scales option within the OlapGauge widget as an array.
+Custom label collection can be directly added to the scales option within the PivotGauge control as an array.
 
-{% highlight html %}
+{% highlight ASPX %}
 
-<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">
-    <Scales>
-        <ej:CircularScales>
-            <CustomLabelCollection>
-                <ej:CircularCustomLabel>
-                    <Position X="180" Y="290" />
-                </ej:CircularCustomLabel>
-            </CustomLabelCollection>
-        </ej:CircularScales>
-    </Scales>
-</ej:OlapGauge>
+    <ej:PivotGauge ID="PivotGauge1" runat="server">
+        <Scales>
+            <ej:CircularScales>
+                <CustomLabelCollection>
+                    <ej:CircularCustomLabel>
+                        <Position X="180" Y="290" />
+                    </ej:CircularCustomLabel>
+                </CustomLabelCollection>
+            </ej:CircularScales>
+        </Scales>
+    </ej:PivotGauge>
 
 {% endhighlight %}
 
@@ -38,49 +38,49 @@ The appearance of the custom labels can be changed through the following propert
 * **Color** – sets the color of the label text.
 * **TextAngle** – rotates the label to a specified angle. By default, the value is 0.
 
-{% highlight html %}
+{% highlight ASPX %}
 
-<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">
-    <Scales>
-        <ej:CircularScales>
-            <CustomLabelCollection>
-                <ej:CircularCustomLabel Color="blue" TextAngle="20">
-                    <Position X="180" Y="320" />
-                    <Font FontFamily="Segoe UI" FontStyle="Normal" Size="12px"></Font>
-                </ej:CircularCustomLabel>
-            </CustomLabelCollection>
-        </ej:CircularScales>
-    </Scales>
-</ej:OlapGauge>
+    <ej:PivotGauge ID="PivotGauge1" runat="server">
+        <Scales>
+            <ej:CircularScales>
+                <CustomLabelCollection>
+                    <ej:CircularCustomLabel Color="blue" TextAngle="20">
+                        <Position X="180" Y="320" />
+                        <Font FontFamily="Segoe UI" FontStyle="Normal" Size="12px"></Font>
+                    </ej:CircularCustomLabel>
+                </CustomLabelCollection>
+            </ej:CircularScales>
+        </Scales>
+    </ej:PivotGauge>
 
 {% endhighlight %}
 
-![](Custom-Label_images/customlabel customization.png) 
+![](Custom-Label/AppearanceCustomization.png) 
 
 ## Multiple Custom Labels
 
-Multiple custom labels can be set to an OlapGauge widget by adding an array of objects within the `CustomLabels` option. 
+Multiple custom labels can be set to an PivotGauge control by adding an array of objects within the `CustomLabels` option. 
 
-{% highlight html %}
+{% highlight ASPX %}
 
-<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">
-    <Scales>
-        <ej:CircularScales>
-            <CustomLabelCollection>
-                <ej:CircularCustomLabel Color="red">
-                    <Position X="180" Y="150" />
-                </ej:CircularCustomLabel>
-                <ej:CircularCustomLabel Color="green">
-                    <Position X="180" Y="320" />
-                </ej:CircularCustomLabel>
-                <ej:CircularCustomLabel Color="blue">
-                    <Position X="180" Y="290" />
-                </ej:CircularCustomLabel>
-            </CustomLabelCollection>
-        </ej:CircularScales>
-    </Scales>
-</ej:OlapGauge>
+    <ej:PivotGauge ID="PivotGauge1" runat="server">
+        <Scales>
+            <ej:CircularScales>
+                <CustomLabelCollection>
+                    <ej:CircularCustomLabel Color="red">
+                        <Position X="180" Y="150" />
+                    </ej:CircularCustomLabel>
+                    <ej:CircularCustomLabel Color="green">
+                        <Position X="180" Y="320" />
+                    </ej:CircularCustomLabel>
+                    <ej:CircularCustomLabel Color="blue">
+                        <Position X="180" Y="290" />
+                    </ej:CircularCustomLabel>
+                </CustomLabelCollection>
+            </ej:CircularScales>
+        </Scales>
+    </ej:PivotGauge>
 
 {% endhighlight %}
 
-![](Custom-Label_images/multiple custom labels.png) 
+![](Custom-Label/MultipleCustomLabels.png) 

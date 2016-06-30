@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Tooltip | OLAPGauge | ASP.NET | Syncfusion
+title: Tooltip | PivotGauge | ASP.NET | Syncfusion
 description: tooltip
 platform: aspnet
-control: OLAPGauge
+control: PivotGauge
 documentation: ug
 ---
 
@@ -11,10 +11,10 @@ documentation: ug
 
 Tooltip can be enabled by using the `EnableTooltip` property. By default, this property is set to "false".
 
-{% highlight html %}
+{% highlight ASPX %}
 
-<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server" EnableTooltip="true">
-</ej:OlapGauge>
+    <ej:PivotGauge ID="PivotGauge1" runat="server" EnableTooltip="true">
+    </ej:PivotGauge>
 
 {% endhighlight  %}
 
@@ -22,17 +22,17 @@ Tooltip appearance can be customized by overriding its CSS class.
 
 {% highlight css %}
 
-.e-olapgauge-tooltip {
-    background-color: aqua!important;
-    border: 2 px solid red!important;
-    color: black!important;
-    border-radius: 18 px!important;
-    margin-top: 20 px;
-    text-align: left;
-    font: 12 px Segoe UI;
-    line-height: 20 px;
-}
+    .e-pivotgauge-tooltip {
+        background-color: #D2E9FE!important;
+        border: 2px solid #01465C!important;
+        color: #01232E!important;
+        border-radius: 5px!important;
+        margin-top: 20px;
+        text-align: left;
+        font: 12 px Segoe UI;
+        line-height: 20px;
+    }
 
 {% endhighlight %}
 
-![](Tooltip_images/tooltip.png) 
+![](Tooltip/Tooltip.png) 
