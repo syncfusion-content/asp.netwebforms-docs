@@ -215,6 +215,8 @@ Either drag and drop the **PivotChart** control from the toolbox (under Syncfusi
     </body>
     
     </html>
+    
+{% endhighlight %}
 
 The **“Url”** property in PivotChart widget points the service endpoint, where data are processed and fetched in the form of JSON. The services used in PivotChart widget as endpoint are WCF and WebAPI.
 
