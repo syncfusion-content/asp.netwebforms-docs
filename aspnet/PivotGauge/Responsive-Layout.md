@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Responsive Layout | OLAPGauge | ASP.NET | Syncfusion
+title: Responsive Layout | PivotGauge | ASP.NET | Syncfusion
 description: responsive layout
 platform: aspnet
-control: OLAPGauge
+control: PivotGauge
 documentation: ug
 ---
 
 # Responsive Layout
 
-OlapGauge widget supports responsive rendering based on the target device (desktop & tablet) resolution. It supports resolution upto 1024x600. You can enable responsiveness in OlapGauge by setting `IsResponsive` property to true.
+PivotGauge control supports responsive rendering based on the target device (desktop & tablet) resolution. It supports resolution upto 1024x600. You can enable responsiveness in PivotGauge by setting `IsResponsive` property to true.
 
-{% highlight html %}
+{% highlight ASPX %}
 
-<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server" IsResponsive="true">
-</ej:OlapGauge>
+    <ej:PivotGauge ID="PivotGauge1" runat="server" IsResponsive="true">
+    </ej:PivotGauge>
 
 {% endhighlight %}
 
-![](Responsive-Layout_images/responsive 1.png) 
+![](Responsive-Layout/Responsive1.png) 
 
-![](Responsive-Layout_images/responsive 2.png) 
+![](Responsive-Layout/Responsive2.png) 
 

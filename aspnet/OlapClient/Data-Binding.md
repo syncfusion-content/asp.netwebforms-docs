@@ -163,6 +163,7 @@ namespace OlapClientDemo
             "\\wcf"
         }, StringSplitOptions.None)[0] + "\\database\\ReportsTable.sdf; Persist Security Info=False", reportTableName = "ReportsTable";
         OlapChart htmlHelper = new OlapChart();
+        PivotTreeMap treemapHelper = new PivotTreeMap();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         ……
         ……
@@ -189,7 +190,11 @@ namespace OlapClientDemo
         [OperationContract]
         Dictionary < string, object > InitializeChart(string action, string currentReport, string customObject);
         [OperationContract]
+        Dictionary <string, object> InitializeTreeMap(string action, string currentReport, string customObject);
+        [OperationContract]
         Dictionary < string, object > DrillChart(string action, string drilledSeries, string olapReport, string clientReports);
+        [OperationContract]
+        Dictionary <string, object> DrillTreeMap(string action, string drillInfo, string olapReport, string clientReports);
         [OperationContract]
         Dictionary < string, object > InitializeGrid(string action, string currentReport, string gridLayout, string customObject);
         [OperationContract]
@@ -243,6 +248,7 @@ namespace OlapClientDemo
             "\\wcf"
         }, StringSplitOptions.None)[0] + "\\database\\ReportsTable.sdf; Persist Security Info=False", reportTableName = "ReportsTable";
         OlapChart htmlHelper = new OlapChart();
+        PivotTreeMap treemapHelper = new PivotTreeMap();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         //This method provides the required information from the server side for initializing the OlapClient.
         public Dictionary < string, object > InitializeClient(string action, string customObject, string clientParams)
@@ -266,6 +272,13 @@ namespace OlapClientDemo
                 DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
                 return htmlHelper.GetJsonData(action, DataManager);
             }
+            //This method provides the required information from the server side for initializing the PivotTreeMap.
+         public Dictionary <string, object> InitializeTreeMap(string action, string currentReport, string customObject)
+            {
+                OlapDataManager DataManager = new OlapDataManager(connectionString);
+                DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
+                return treemapHelper.GetJsonData(action, DataManager);
+            }
             //This method provides the required information from the server side while drill up/down operation is performed in OlapChart.
         public Dictionary < string, object > DrillChart(string action, string drilledSeries, string olapReport, string clientReports)
             {
@@ -273,6 +286,14 @@ namespace OlapClientDemo
                 DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(olapReport));
                 DataManager.Reports = olapClientHelper.DeserializedReports(clientReports);
                 return htmlHelper.GetJsonData(action, DataManager, drilledSeries);
+            }
+            //This method provides the required information from the server side while drill up/down operation is performed in PivotTreeMap.
+        public Dictionary <string, object> DrillTreeMap(string action, string drillInfo, string olapReport, string clientReports)
+            {
+                OlapDataManager DataManager = new OlapDataManager(connectionString);
+                DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(olapReport));
+                DataManager.Reports = olapClientHelper.DeserializedReports(clientReports);
+                return treemapHelper.GetJsonData(action, DataManager, drillInfo);
             }
             //This method provides the required information from server-side while the filtering operation is performed with the members inside respective dimension.
         public Dictionary < string, object > FilterElement(string action, string clientParams, string olapReport, string clientReports)

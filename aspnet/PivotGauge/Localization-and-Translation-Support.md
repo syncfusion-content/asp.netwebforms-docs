@@ -1,35 +1,35 @@
 ---
 layout: post
-title: Localization | OLAPGauge | ASP.NET | Syncfusion
+title: Localization | PivotGauge | ASP.NET | Syncfusion
 description: localization
 platform: aspnet
-control: OLAPGauge
+control: PivotGauge
 documentation: ug
 ---
 
 # Localization
 
-## Localization in OlapGauge Control
-We can localize the OlapGauge controls text with a collection of localized strings using **"ej.olap.OlapGauge.locale"** for different cultures. By default, the OlapGauge control is localized in **"en-US"**.
+## Localization in PivotGauge Control
+We can localize the PivotGauge controls text with a collection of localized strings using **"ej.PivotGauge.locale"** for different cultures. By default, the PivotGauge control is localized in **"en-US"**.
 
-Following code example illustrates on how to localize OlapGauge based on **"French"** culture.
+Following code example illustrates on how to localize PivotGauge based on **"French"** culture.
 
-{% highlight html %}
+{% highlight ASPX %}
 
-<script>
-    ej.olap.OlapGauge.locale["fr-FR"] = {
-        RevenueGoal: "Objectif de chiffre d'affaires",
-        RevenueValue: "Valeur du chiffre d'affaires"
-    }
-</script>
+    <script>
+        ej.PivotGauge.locale["fr-FR"] = {
+            RevenueGoal: "Objectif de chiffre d'affaires",
+            RevenueValue: "Valeur du chiffre d'affaires"
+        }
+    </script>
 
-<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server" Locale="fr-FR">
+    <ej:PivotGauge ID="PivotGauge1" runat="server" Locale="fr-FR">
 
-</ej:OlapGauge>
+    </ej:PivotGauge>
 
 {% endhighlight %}
 
-Following table localizes the in-built keywords to **"French"** culture for OlapGauge.
+Following table localizes the in-built keywords to **"French"** culture for PivotGauge.
 
 <table>
 <tr>
@@ -48,19 +48,28 @@ RevenueValue</td><td>
 
 ## Localization and Globalization of Cube Info
 
-Content displayed within the OlapGauge control are obtained from the OLAP Cube. So following are the steps that needs to be done to get the localized and globalized Cube content.
- 
-* To get the localized string based on different cultures, from OLAP Cube, we need to set **"Locale Identifier"** in the connection string to a specific culture. 
-* To bind the globalized content in OlapGauge control, we need to set **"Culture"** and **"OverrideDefaultFormatStrings"** properties in OlapDataManager class to a specific culture. 
+Content displayed within the PivotGauge control are obtained from the OLAP Cube. So following are the steps that needs to be done to get the localized and globalized Cube content.
 
-{% highlight C# %}
+To get the localized string based on different cultures, from OLAP Cube, we need to set **"Locale Identifier"** in the connection string to a specific culture. The attribute is set for PivotGauge in Client Mode as shown below
 
-//1036 refers to “fr-FR” culture.
-string connectionString = "Data Source=localhost; Initial Catalog=Adventure Works DW; Locale Identifier=1036;";
-DataManager = new OlapDataManager(connectionString);
-DataManager.Culture = new System.Globalization.CultureInfo(1036);
-DataManager.OverrideDefaultFormatStrings = true;
+{% highlight ASPX %}
+
+    <ej:PivotGauge ID="PivotGauge1" runat="server" Locale="fr-FR">
+         <DataSource Data="http://bi.syncfusion.com/olap/msmdpump.dll;LocaleIdentifier=1036;"></DataSource>
+    </ej:PivotGauge>
 
 {% endhighlight %}
 
-![](Localization_images/Localization.png) 
+For Server Mode, we need to set **"Culture"** and **"OverrideDefaultFormatStrings"** properties in OlapDataManager class to a specific culture along with setting **"Locale Identifier"** in connection string. 
+
+{% highlight C# %}
+
+    //1036 refers to “fr-FR” culture.
+    string connectionString = "Data Source=localhost; Initial Catalog=Adventure Works DW; Locale Identifier=1036;";
+    DataManager = new OlapDataManager(connectionString);
+    DataManager.Culture = new System.Globalization.CultureInfo(1036);
+    DataManager.OverrideDefaultFormatStrings = true;
+
+{% endhighlight %}
+
+![](Localization-and-Translation-Support/Localization.png) 

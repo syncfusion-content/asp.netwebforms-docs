@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Ticks | OLAPGauge | ASP.NET | Syncfusion
+title: Ticks | PivotGauge | ASP.NET | Syncfusion
 description: ticks
 platform: aspnet
-control: OLAPGauge
+control: PivotGauge
 documentation: ug
 ---
 
@@ -11,19 +11,19 @@ documentation: ug
 
 ## Adding Tick Collection
 
-Tick collection can be directly added to the scales option within the OlapGauge widget as an array.
+Tick collection can be directly added to the scales option within the PivotGauge control as an array.
 
-{% highlight html %}
+{% highlight ASPX %}
 
-<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">
-    <Scales>
-        <ej:CircularScales>
-            <TickCollection>
-                <ej:CircularTicks Type="Major" />
-            </TickCollection>
-        </ej:CircularScales>
-    </Scales>
-</ej:OlapGauge>
+    <ej:PivotGauge ID="PivotGauge1" runat="server">
+        <Scales>
+            <ej:CircularScales>
+                <TickCollection>
+                    <ej:CircularTicks Type="Major" />
+                </TickCollection>
+            </ej:CircularScales>
+        </Scales>
+    </ej:PivotGauge>
 
 {% endhighlight %}
 
@@ -39,19 +39,19 @@ The appearance of the tick can be customized through the following properties.
 * **DistanceFromScale** – sets the distance between scale and ticks. By default, the values is 0.
 * **Placement** – positions the ticks with respect to the scale.  By default, the value is set to "Far".
 
-{% highlight html %}
+{% highlight ASPX %}
 
-<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">
-    <Scales>
-        <ej:CircularScales>
-            <TickCollection>
-                <ej:CircularTicks Type="Major" Height="15" Width="4" Angle="0" Color="green" DistanceFromScale="2" Placement="Near" />
-            </TickCollection>
-        </ej:CircularScales>
-    </Scales>
-</ej:OlapGauge>
+    <ej:PivotGauge ID="PivotGauge1" runat="server">
+        <Scales>
+            <ej:CircularScales>
+                <TickCollection>
+                    <ej:CircularTicks Type="Major" Height="15" Width="4" Angle="0" Color="green" DistanceFromScale="2" Placement="Near" />
+                </TickCollection>
+            </ej:CircularScales>
+        </Scales>
+    </ej:PivotGauge>
 
 {% endhighlight %}
 
-![](Ticks_images/tick customization.png) 
+![](Ticks/TickCustomization.png) 
 

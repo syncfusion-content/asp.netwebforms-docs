@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Layout | OLAPGauge | ASP.NET | Syncfusion
+title: Layout | PivotGauge | ASP.NET | Syncfusion
 description: layout 
 platform: aspnet
-control: OLAPGauge
+control: PivotGauge
 documentation: ug
 ---
 
@@ -13,25 +13,25 @@ documentation: ug
 
 Gauges can be arranged in specified number of rows by using the `RowsCount` property.
 
-{% highlight html %}
+{% highlight ASPX %}
 
-<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server" RowsCount="2">
-</ej:OlapGauge>
+    <ej:PivotGauge ID="PivotGauge1" runat="server" RowsCount="2">
+    </ej:PivotGauge>
 
 {% endhighlight %}
 
-![](Layout_images/row based.png) 
+![](Layout/RowBased.png) 
 
 ## Column-wise Layout
 
 Gauges can be arranged in specified number of columns by using the `ColumnsCount` property.
 
-{% highlight html %}
+{% highlight ASPX %}
 
-<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server" ColumnsCount="2">
-</ej:OlapGauge>
+    <ej:PivotGauge ID="PivotGauge1" runat="server" ColumnsCount="2">
+    </ej:PivotGauge>
 
 {% endhighlight %}
 
-![](Layout_images/column based.png)
+![](Layout/ColumnBased.png)
 

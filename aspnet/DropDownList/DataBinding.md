@@ -650,6 +650,93 @@ OData is a standardized protocol for creating and consuming data. You can provi
     }
 
 {% endhighlight %}
+
+### WebMethod Adaptor
+
+The WebMethod Adaptor is used to bind data source from remote services and code behind methods. 
+
+By using “WebMethodAdaptor” we can bind data from WebService to the DropDownList control and also we need to include “ScirptService” Attribute to WebService in order to enable request from client-side.
+
+{% highlight html %}
+
+    [System.Web.Script.Services.ScriptService]
+    public class WebService1 : System.Web.Services.WebService
+    {
+
+        [WebMethod]
+        public object Get()
+        {
+
+            List<Employee> EmpData = new List<Employee>();
+            EmpData.Add(new Employee
+            {
+                Name = "Erik Linden",
+                Role = "Executive"
+                
+            });
+            EmpData.Add(new Employee
+            {
+                Name = "John Linden",
+                Role = "Representative"
+                
+            });
+            EmpData.Add(new Employee
+            {
+                Name = "Louis",
+                Role = "Representative"
+               
+            });
+            EmpData.Add(new Employee
+            {
+                Name = "Lawrence",
+                Role = "Executive"
+               
+            });
+            dynamic count = EmpData.Count;
+            return new
+            {
+                result = EmpData,
+                count = count
+            };
+
+        }
+        public class Employee
+        {
+            public string Name { get; set; }
+            public string Role { get; set; }
+         
+        }
+
+    }
+    
+{% endhighlight %}
+
+Intialize the DropDownList as follows
+
+{% highlight html %}
+
+    <ej:DropDownList ID="myList" Width="116px" Query="ej.Query().requiresCount()" DataTextField="Name" DataValueField="Country" runat="server">
+    </ej:DropDownList>
+
+{% endhighlight %}
+
+You can use the following code example to use WebMethod adaptor and bind the data to the DropDownList.
+
+![](Databinding_images/Data-binding_img1.png)
+
+{% highlight html %}
+
+    <script type="text/javascript">
+        var data = ej.DataManager({
+            url: "WebService1.asmx/Get",
+            adaptor: new ej.WebMethodAdaptor()
+        });
+        $("#myList").ejDropDownList({
+            dataSource: data
+        });
+    </script>
+
+{% endhighlight %}
            
 ## Virtual Scrolling 
 
