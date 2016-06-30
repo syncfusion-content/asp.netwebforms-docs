@@ -138,7 +138,7 @@ N> The **MaxDate** value provided should always be greater than that of **MinDat
 
 It is possible to use the custom appointment window option to design it with the user-required extra fields apart from the other default available fields. To make use of the customized appointment window, it is necessary to use the `AppointmentWindowOpen` event within which the display of default appointment window is prevented.
 
-The following code example lets you create the custom appointment window with a single extra field for defining the appointment type.
+The following code example lets you create the custom appointment window (using recurrence editor feature) with a single extra field for defining the appointment type.
 
 {% highlight html %}
 
@@ -152,74 +152,87 @@ The following code example lets you create the custom appointment window with a 
     <ej:Dialog runat="server"  ClientIDMode="Static" ID="customWindow" Width="600" Height="auto" EnableModal="true" ShowOnInit="false" Title="Create Appointment" EnableResize="false" AllowKeyboardNavigation="false" ClientSideOnClose="clearFields" Containment=".custom">
         <DialogContent>
             <div>
+            <div id="customWindow" style="display: none">
+        <div id="appWindow">
             <div id="custom">
-            <table width="100%" cellpadding="5">
-                <tbody>
-                    <tr style="display: none">
-                        <td>Id:
-                        </td>
-                        <td colspan="2">
-                            <input id="customId" type="text" name="Id" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Subject:
-                        </td>
-                        <td colspan="2">
-                            <input id="subject" type="text" value="" name="Subject" onfocus="temp()" style="width: 100%" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Description:
-                        </td>
-                        <td colspan="2">
-                            <textarea id="customdescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>StartTime:
-                        </td>
-                        <td>
-                            <ej:DateTimePicker ClientIDMode="Static" runat="server" ID="StartTime" Width="150"></ej:DateTimePicker>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>EndTime:
-                        </td>
-                        <td>
-                           <ej:DateTimePicker ClientIDMode="Static" runat="server" ID="EndTime" Width="150"></ej:DateTimePicker>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">
-                            <div class="customcheck">AllDay:</div>
-                            <div class="customcheck">
-                                <input id="allday" type="checkbox" name="AllDay" onchange="alldayCheck()"/>
-                            </div>
-                            <div class="customcheck">Recurrence:</div>
-                            <div>
-                                <input id="recurrence" type="checkbox" name="Recurrence" onchange="recurCheck()" />
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="recurrence" style="display: none">
-                        <td>Type:
-                        </td>
-                        <td>
-                            <select id="rType" name="freq">
-                                <option value="daily">Daily</option>
-                                <option value="weekly">Weekly</option>
-                                <option value="monthly">Monthly</option>
-                                <option value="yearly">Yearly</option>
-                            </select>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+                <table width="100%" cellpadding="5">
+                    <tbody>
+                        <tr style="display: none">
+                            <td>Id:
+                            </td>
+                            <td colspan="2">
+                                <input id="customId" type="text" name="Id" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Subject:
+                            </td>
+                            <td colspan="2">
+                                <input id="subject" type="text" value="" name="Subject" onfocus="temp()" style="width: 100%" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Description:
+                            </td>
+                            <td colspan="2">
+                                <textarea id="customdescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>StartTime:
+                            </td>
+                            <td>
+                                <ej:DateTimePicker ClientIDMode="Static" runat="server" ID="StartTime" Width="150"></ej:DateTimePicker>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>EndTime:
+                            </td>
+                            <td>
+                                <ej:DateTimePicker ClientIDMode="Static" runat="server" ID="EndTime" Width="150"></ej:DateTimePicker>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <div class="customcheck">AllDay:</div>
+                                <div class="customcheck">
+                                    <input id="allday" type="checkbox" name="AllDay" onchange="alldayCheck()" />
+                                </div>
+                                <div class="customcheck">Recurrence:</div>
+                                <div>
+                                    <input id="recurrence" type="checkbox" name="Recurrence" onchange="recurCheck()" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="summarytr" style="display: none;">
+                            <td colspan="3">
+                                <div class="recsummary">Summary:</div>
+                                <div>
+                                    <label id="recsummary" name="Summary"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="edittr" style="display: none;">
+                            <td colspan="3">
+                                <div><a id="recedit" onclick="Recurrencerule()">Edit</a></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <div>
-                <ej:Button ID="btncancel" runat="server" Width="85px" CssClass="btn" ClientSideOnClick="cancel">Cancel</ej:Button>
-                <ej:Button ID="btnsubmit" runat="server" Width="85px" CssClass="btn" ClientSideOnClick="save">Submit</ej:Button>
+                <button type="submit" onclick="cancel()" id="btncancel" style="float: right; margin-right: 20px; margin-bottom: 10px;">Cancel</button>
+                <button type="submit" onclick="save()" id="btnsubmit" style="float: right; margin-right: 20px; margin-bottom: 10px;">Submit</button>
+            </div>
+        </div>
+        <div id="recWindow" style="display: none">
+            <div style="margin: 0 15%;">
+                <ej:RecurrenceEditor ClientIDMode="Static" ID="recurrenceEditor" SelectedRecurrenceType="0" Frequencies="daily,weekly,monthly,yearly,everyweekday" runat="server"></ej:RecurrenceEditor>
+            </div>
+            <div>
+                <button type="submit" id="reccancel">Cancel</button>
+                <button type="submit" id="recsubmit">Submit</button>
+            </div>
         </div>
        </div>
         </DialogContent>
@@ -265,42 +278,50 @@ The following function needs to be defined within script section, which gets cal
 
 <asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
     <script type="text/javascript">
+    $(function () {
+            // defining sub-controls used within custom appointment window
+            $("#btncancel").ejButton({ width: '85px' });
+            $("#btnsubmit").ejButton({ width: '85px' });
+            $("#recurrence").ejCheckBox({ change: "recurCheck" });
+            $("#reccancel,#recsubmit").ejButton({ click: "onRecurrenceClick" });
+        });
+
      function onAppointmentWindowOpen(args) {
             args.cancel = true; // prevents the display of default appointment window
-            var quickobj = $("#Schedule1AppointmentQuickWindow").data("ejDialog");
-            quickobj.close();
+            var schObj = $("#Schedule1").data("ejSchedule");
             // When double clicked on the Scheduler cells, fills the StartTime and EndTime fields appropriately
             $("#StartTime").ejDateTimePicker({ value: args.startTime });
             $("#EndTime").ejDateTimePicker({ value: args.endTime });
+            $("#recWindow").css("display", "none");
+            $("#appWindow").css("display", "");
             if (!ej.isNullOrUndefined(args.target)) {
                 // When double clicked on the Scheduler cells, if the target is allday or month cells – only then enable check mark on the allday checkbox
-                if ($(args.target.currentTarget).hasClass("e-alldaycells"))
+                if ($(args.target.currentTarget).hasClass("e-alldaycells") || (args.startTime.getHours() == 0 && args.endTime.getHours() == 23))
                     $("#allday").prop("checked", true);
                 else
                     args.model.currentView == "month" ? $("#allday").prop("checked", true) : $("#allday").prop("checked", false);
                 // If the target is allday or month cells – disable the StartTime and EndTime fields
-                $("#StartTime,#EndTime").ejDateTimePicker({ enabled: ($(args.target.currentTarget).hasClass("e-alldaycells") || $(args.target.currentTarget).hasClass("e-monthcells") || args.model.currentView == "month") ? false : true });
+                $("#StartTime,#EndTime").ejDateTimePicker({
+                    enabled: ($(args.target.currentTarget).hasClass("e-alldaycells") || (args.startTime.getHours() == 0 && args.endTime.getHours() == 23) || $(args.target.currentTarget).hasClass("e-monthcells") || args.model.currentView == "month") ? false : true
+                });
             }
             // If double clicked on the appointments, fill the custom appointment window fields with appropriate values.
             if (!ej.isNullOrUndefined(args.appointment)) {
-                if (args.appointment.Recurrence)
-                    $("#customId").val(args.appointment.ParentId);
-                else
-                    $("#customId").val(args.appointment.Id);
+                $("#customId").val(args.appointment.Id);
                 $("#subject").val(args.appointment.Subject);
-                $("#customdescription").val(args.appointment.Description);
                 $("#StartTime").ejDateTimePicker({ value: new Date(args.appointment.StartTime) });
                 $("#EndTime").ejDateTimePicker({ value: new Date(args.appointment.EndTime) });
-                $("#allday").prop("checked", args.appointment.AllDay);
-                $("#recurrence").prop("checked", args.appointment.Recurrence);
+                $("#recurrence").ejCheckBox({ checked: args.appointment.Recurrence });
                 if (args.appointment.Recurrence) {
-                    $("#rType").val(args.appointment.RecurrenceRule.split(";")[0].split("=")[1].toLowerCase());
-                    $("tr.recurrence").css("display", "table-row");
+                    $("#edittr").css("display", "");
+                    $("#recsummary").html(args.appointment.RecurrenceRule);
+                    $("#summarytr").css("display", "");
+                    recObj._recRule = args.appointment.RecurrenceRule; // app recurrence rule is stored in Recurrence editor object
+                    recObj.recurrenceRuleSplit(args.appointment.RecurrenceRule, args.appointment.recurrenceExDate); //splitting the recurrence rule
+                    recObj.showRecurrenceSummary(args.appointment.Id); // updating the recurrence rule in Recurrence editor
                 }
-                $("#customWindow").ejDialog("open");
             }
-            else
-                $("#customWindow").ejDialog("open");
+            $("#customWindow").ejDialog("open");
         }
     </script>
 </asp:Content>   
@@ -319,7 +340,9 @@ On clicking the **Submit** button within the Custom Appointment window, the foll
                 $("#subject").addClass("error");
                 return false;
             }
-            var obj = {};
+            var obj = {}, temp = {}, rType;
+            var formelement = $("#customWindow").find("#custom").get(0);
+            // looping through the custom form elements to get each value and form a JSON object
             obj["Id"] = $("#customId").val() == "" ? $("#customId").val() : parseInt($("#customId").val());
             obj["Subject"] = $("#subject")[0].value;
             obj["Description"] = $("#customdescription")[0].value;
@@ -327,42 +350,64 @@ On clicking the **Submit** button within the Custom Appointment window, the foll
             obj["EndTime"] = new Date($("#EndTime")[0].value);
             obj["AllDay"] = $("#allday")[0].checked;
             obj["Recurrence"] = $("#recurrence")[0].checked;
-            if ($("#recurrence")[0].checked) {
-                if ($("#rType")[0].value.toUpperCase() == "DAILY")
-                    obj["RecurrenceRule"] = "FREQ=DAILY;INTERVAL=1;COUNT=5";
-                else if ($("#rType")[0].value.toUpperCase() == "WEEKLY")
-                    obj["RecurrenceRule"] = "FREQ=WEEKLY;BYDAY=MO,WE,TH;INTERVAL=1;COUNT=10";
-                else if ($("#rType")[0].value.toUpperCase() == "MONTHLY")
-                    obj["RecurrenceRule"] = "FREQ=MONTHLY;BYMONTHDAY=" + obj.StartTime.getDate() + ";INTERVAL=1;COUNT=5";
-                else if ($("#rType")[0].value.toUpperCase() == "YEARLY")
-                    obj["RecurrenceRule"] = "FREQ=YEARLY;BYMONTHDAY=" + obj.StartTime.getDate() + ";BYMONTH=" + (obj.StartTime.getMonth() + 1) + ";INTERVAL=1;COUNT=3";
-            }
-            else
-                obj["RecurrenceRule"] = null;
+            obj["RecurrenceRule"] = (obj.Recurrence) ? recurRule : null;
             $("#customWindow").ejDialog("close");
             var object = $("#Schedule1").data("ejSchedule");
             object.saveAppointment(obj);
             clearFields();
         }
 
+        // This function executes when the submit/cancel button in the recurrence editor window is pressed.
+        function onRecurrenceClick(args) {
+            if ($(args.e.currentTarget).attr("id") == "recsubmit") {
+                recObj = $("#recurrenceEditor").ejRecurrenceEditor('instance');
+                recObj.closeRecurPublic();
+                recurRule = recObj._recRule;
+                $("#recsummary").html(recurRule);
+            }
+            else
+                if (($(args.e.currentTarget).attr("id") == "reccancel")) {
+                    if ($("#recsummary").html() == "") {
+                        $("#edittr").css("display", "none");
+                        $("#recurrence").ejCheckBox({ checked: false });
+                    }
+                    else
+                        $("#recurrence").ejCheckBox({ checked: true });
+                }
+            $("#recWindow").css("display", "none");
+            $("#appWindow").css("display", "");
+            if ($("#recsummary").html() != "")
+                $("#summarytr").css("display", "");
+        }
+
         // Clears all the field values of the custom window after saving appointments
         function clearFields() {
             $("#customId").val("");
+            recObj.clearRecurrenceFields();
             $("#subject").val("");
-            $("#customdescription").val("");
-            $("#allday").prop("checked", false);
-            $("#recurrence").prop("checked", false);
-            document.getElementById("rType").selectedIndex = "0";
-            $("tr.recurrence").css("display", "none");
+            $("#recsummary").html("");
+            $("#summarytr").css("display", "none");
+            $("#recurrence").ejCheckBox({ checked: false });
+            $("#edittr").css("display", "none");
+            $("#StartTime,#EndTime").ejDateTimePicker({ enabled: true });
         }
 
         // This function executes when the recurrence checkbox is checked in the custom appointment window
-        function recurCheck() {
-            // Displays the recurrence field, when recurrence checkbox is checked.
-            if ($("#recurrence").get(0).checked == true)
-                $("tr.recurrence").css("display", "table-row");
-            else
-                $("tr.recurrence").css("display", "none");
+        function recurCheck(args) {
+            if (args.isInteraction) {
+                if ($("#recurrence").get(0).checked == true) {  // Displays the recurrence field, when recurrence checkbox is checked.
+                    $("#recWindow").css("display", "");
+                    $("#appWindow").css("display", "none");
+                    $("#edittr").css("display", "");
+
+                }
+                else {
+                    $("#recWindow").css("display", "none");
+                    $("#edittr").css("display", "none");
+                    $("#recsummary").html("");
+                    $("#summarytr").css("display", "none");
+                }
+            }
         }
 
         // This function executes when the All-day checkbox is checked in the custom appointment window
@@ -373,13 +418,51 @@ On clicking the **Submit** button within the Custom Appointment window, the foll
                 a.setHours(0, 0, 0);
                 var b = $("#EndTime").data("ejDateTimePicker").model.value;
                 b.setHours(23, 59, 0);
-                $("#StartTime").ejDateTimePicker({ value: new Date(a), enabled: false });
-                $("#EndTime").ejDateTimePicker({ value: new Date(b), enabled: false });
+                $("#StartTime").ejDateTimePicker({
+                    value: new Date(a),
+                    enabled: false
+                });
+                $("#EndTime").ejDateTimePicker({
+                    value: new Date(b),
+                    enabled: false
+                });
+            } else {
+                $("#StartTime").ejDateTimePicker({
+                    enabled: true
+                });
+                $("#EndTime").ejDateTimePicker({
+                    enabled: true
+                });
             }
-            else {
-                $("#StartTime").ejDateTimePicker({ enabled: true });
-                $("#EndTime").ejDateTimePicker({ enabled: true });
+        }
+
+        // This function executes when the submit/cancel button in the recurrence editor window is pressed.
+        function onRecurrenceClick(args) {
+            if ($(args.e.currentTarget).attr("id") == "recsubmit") {
+                recObj = $("#recurrenceEditor").ejRecurrenceEditor('instance');
+                recObj.closeRecurPublic();
+                recurRule = recObj._recRule;
+                $("#recsummary").html(recurRule);
             }
+            else
+                if (($(args.e.currentTarget).attr("id") == "reccancel")) {
+                    if ($("#recsummary").html() == "") {
+                        $("#edittr").css("display", "none");
+                        $("#recurrence").ejCheckBox({ checked: false });
+                    }
+                    else
+                        $("#recurrence").ejCheckBox({ checked: true });
+                }
+            $("#recWindow").css("display", "none");
+            $("#appWindow").css("display", "");
+            if ($("#recsummary").html() != "")
+                $("#summarytr").css("display", "");
+        }
+
+        // This function executes when the Edit anchor tag in the edit appointment window is clicked.
+        function Recurrencerule() {
+            $("#recWindow").css("display", "");
+            $("#appWindow").css("display", "none");
         }
 
         // This function executes when the subject text field is currently being focussed
@@ -389,6 +472,7 @@ On clicking the **Submit** button within the Custom Appointment window, the foll
 
         // This function executes when the cancel button in the custom appointment window is pressed.
         function cancel() {
+            recObj = $("#recurrenceEditor").ejRecurrenceEditor('instance');
             clearFields();
             $("#customWindow").ejDialog("close");
         }
