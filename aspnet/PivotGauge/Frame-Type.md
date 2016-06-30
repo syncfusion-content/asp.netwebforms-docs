@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Frame Type | OLAPGauge | ASP.NET | Syncfusion
+title: Frame Type | PivotGauge | ASP.NET | Syncfusion
 description: frame type 
 platform: aspnet
-control: OLAPGauge
+control: PivotGauge
 documentation: ug
 ---
 
@@ -11,28 +11,28 @@ documentation: ug
 
 ## Full Circle
 
-Full Circle frame lets the OlapGauge display in circular shape. Frame type can be set using the `FrameType` property.  By default, the frame type is "FullCircle". 
+Full Circle frame lets the PivotGauge display in circular shape. Frame type can be set using the `FrameType` property.  By default, the frame type is "FullCircle". 
 
-{% highlight html %}
+{% highlight ASPX %}
 
-<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">
-    <Frame FrameType="FullCircle" />
-</ej:OlapGauge>
+    <ej:PivotGauge ID="PivotGauge1" runat="server">
+        <Frame FrameType="FullCircle" />
+    </ej:PivotGauge>
 
 {% endhighlight  %}
 
-![](Frame-Type_images/fullCircle.png) 
+![](Frame-Type/FullCircle.png) 
 
 ## Half Circle
 
-Half Circle frame lets the OlapGauge display in semi-circular shape. For this, frame type needs to be set as "HalfCircle" within the `FrameType` property.
+Half Circle frame lets the PivotGauge display in semi-circular shape. For this, frame type needs to be set as "HalfCircle" within the `FrameType` property.
 
-{% highlight html %}
+{% highlight ASPX %}
 
-<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">
-    <Frame FrameType="HalfCircle" />
-</ej:OlapGauge>
+    <ej:PivotGauge ID="PivotGauge1" runat="server">
+        <Frame FrameType="HalfCircle" />
+    </ej:PivotGauge>
 
 {% endhighlight  %}
 
-![](Frame-Type_images/halfCircle.png) 
+![](Frame-Type/HalfCircle.png) 

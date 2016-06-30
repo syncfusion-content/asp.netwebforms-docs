@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Ranges | OLAPGauge | ASP.NET | Syncfusion
+title: Ranges | PivotGauge | ASP.NET | Syncfusion
 description: ranges
 platform: aspnet
-control: OLAPGauge
+control: PivotGauge
 documentation: ug
 ---
 
@@ -11,19 +11,19 @@ documentation: ug
 
 ## Adding Range Collection
 
-Range collection can be directly added to the scales option within the OlapGauge widget as an array.
+Range collection can be directly added to the scales option within the PivotGauge control as an array.
 
-{% highlight html %}
+{% highlight ASPX %}
 
-<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">
-    <Scales>
-        <ej:CircularScales>
-            <RangeCollection>
-                <ej:CircularRanges DistanceFromScale="10"></ej:CircularRanges>
-            </RangeCollection>
-        </ej:CircularScales>
-    </Scales>
-</ej:OlapGauge>
+    <ej:PivotGauge ID="PivotGauge1" runat="server">
+        <Scales>
+            <ej:CircularScales>
+                <RangeCollection>
+                    <ej:CircularRanges DistanceFromScale="10"></ej:CircularRanges>
+                </RangeCollection>
+            </ej:CircularScales>
+        </Scales>
+    </ej:PivotGauge>
 
 {% endhighlight  %}
 
@@ -42,26 +42,26 @@ The appearance of the range can be customized through the following properties.
 
 Positioning the range could be set either through `placement` or `distanceFromScale` property. By default, placement takes the value “near”, whereas other enumeration values available are “far” and “center”.
 
-{% highlight html %}
+{% highlight ASPX %}
 
-<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">
-    <Scales>
-        <ej:CircularScales>
-            <RangeCollection>
-                <ej:CircularRanges StartValue="20" EndValue="50" StartWidth="2" EndWidth="6" BackgroundColor="yellow" DistanceFromScale="20">
-                    <Border Color="red" Width="2" />
-                </ej:CircularRanges>
-                <ej:CircularRanges StartValue="50" EndValue="100" StartWidth="2" EndWidth="7" BackgroundColor="blue" Placement="Near">
-                    <Border Color="green" Width="2" />
-                </ej:CircularRanges>
-            </RangeCollection>
-        </ej:CircularScales>
-    </Scales>
-</ej:OlapGauge>
+    <ej:PivotGauge ID="PivotGauge1" runat="server">
+        <Scales>
+            <ej:CircularScales>
+                <RangeCollection>
+                    <ej:CircularRanges StartValue="20" EndValue="50" StartWidth="2" EndWidth="6" BackgroundColor="yellow" DistanceFromScale="20">
+                        <Border Color="red" Width="2" />
+                    </ej:CircularRanges>
+                    <ej:CircularRanges StartValue="50" EndValue="100" StartWidth="2" EndWidth="7" BackgroundColor="blue" Placement="Near">
+                        <Border Color="green" Width="2" />
+                    </ej:CircularRanges>
+                </RangeCollection>
+            </ej:CircularScales>
+        </Scales>
+    </ej:PivotGauge>
 
 {% endhighlight  %}
 
-![](Ranges_images/range customization.png)
+![](Ranges/AppearanceCustomization.png)
 
 N> On setting both the position properties - "DistanceFromScale" and "Placement" for a range, the value set in "DistanceFromScale" is given preference. 
 
@@ -69,20 +69,20 @@ N> On setting both the position properties - "DistanceFromScale" and "Placement"
 
 Multiple ranges can be added by placing an array of objects in **"Ranges"** option.
 
-{% highlight html %}
+{% highlight ASPX %}
 
-<ej:OlapGauge ID="OlapGauge1" Url="../OlapGauge" runat="server">
-    <Scales>
-        <ej:CircularScales>
-            <RangeCollection>
-                <ej:CircularRanges StartValue="0" EndValue="10" BackgroundColor="green" DistanceFromScale="-5"></ej:CircularRanges>
-                <ej:CircularRanges StartValue="10" EndValue="30" BackgroundColor="yellow" DistanceFromScale="-5"></ej:CircularRanges>
-                <ej:CircularRanges StartValue="30" EndValue="50" BackgroundColor="red" DistanceFromScale="-5"></ej:CircularRanges>
-            </RangeCollection>
-        </ej:CircularScales>
-    </Scales>
-</ej:OlapGauge>
+    <ej:PivotGauge ID="PivotGauge1" runat="server">
+        <Scales>
+            <ej:CircularScales>
+                <RangeCollection>
+                    <ej:CircularRanges StartValue="0" EndValue="10" BackgroundColor="green" DistanceFromScale="-5"></ej:CircularRanges>
+                    <ej:CircularRanges StartValue="10" EndValue="30" BackgroundColor="yellow" DistanceFromScale="-5"></ej:CircularRanges>
+                    <ej:CircularRanges StartValue="30" EndValue="50" BackgroundColor="red" DistanceFromScale="-5"></ej:CircularRanges>
+                </RangeCollection>
+            </ej:CircularScales>
+        </Scales>
+    </ej:PivotGauge>
 
 {% endhighlight %}
 
-![](Ranges_images/multiple ranges.png)
+![](Ranges/MultipleRanges.png)
