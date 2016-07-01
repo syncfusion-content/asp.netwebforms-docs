@@ -332,7 +332,7 @@ On clicking the **Submit** button within the Custom Appointment window, the foll
 
 {% highlight html %}
 
-    <asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
+   <asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
     <script type="text/javascript">
      function save() {
             // checks if the subject value is not left blank before saving it.
@@ -477,7 +477,7 @@ On clicking the **Submit** button within the Custom Appointment window, the foll
             $("#customWindow").ejDialog("close");
         }
     </script>
-    </asp:Content> 
+    </asp:Content>  
 
 {% endhighlight %}
 

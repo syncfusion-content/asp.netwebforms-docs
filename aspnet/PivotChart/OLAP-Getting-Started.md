@@ -115,7 +115,7 @@ Initializes the OLAP datasource for PivotChart widget as shown below.
 
 {% endhighlight %}
 
-Now, **PivotChart** is rendered with internet sales amount over a period of fiscal years across different customer geographic locations.
+Now, **PivotChart** is rendered with Internet Sales Amount over a period of fiscal years across different customer geographic locations.
 
 ![](OLAP-Getting-Started/PopulatePivotChartWithDataSource.png) 
 
