@@ -308,7 +308,7 @@ Scripts and style sheets are referred under the <head> tag in **Default.aspx** f
 
 Either drag and drop the **PivotChart** control from the toolbox (under Syncfusion BI Web category) or manually define the widget like in the below code sample inside “Default.aspx” page.
 
-{% highlight aspx %}
+{% highlight html %}
 
     <%@ Register Assembly="Syncfusion.EJ.Olap" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
     <%@ Register Assembly="Syncfusion.EJ.Olap" Namespace="Syncfusion.JavaScript.Models" TagPrefix="ej" %>
