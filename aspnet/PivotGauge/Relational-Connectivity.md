@@ -1,3 +1,12 @@
+---
+layout: post
+title: Relational Connectivity | PivotGauge | ASP.NET  | Syncfusion
+description: relational connectivity 
+platform: aspnet
+control: PivotGauge
+documentation: ug
+---
+
 # DataBinding 
 
 ## Binding PivotGauge to Collection

@@ -2,7 +2,7 @@
 layout: post
 title: OLAP Connectivity | PivotGauge | ASP.NET  | Syncfusion
 description: olap connectivity 
-platform: ejasp
+platform: aspnet
 control: PivotGauge
 documentation: ug
 ---

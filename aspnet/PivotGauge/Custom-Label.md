@@ -13,7 +13,7 @@ documentation: ug
 
 Custom label collection can be directly added to the scales option within the PivotGauge control as an array.
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>
@@ -38,7 +38,7 @@ The appearance of the custom labels can be changed through the following propert
 * **Color** – sets the color of the label text.
 * **TextAngle** – rotates the label to a specified angle. By default, the value is 0.
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>
@@ -61,7 +61,7 @@ The appearance of the custom labels can be changed through the following propert
 
 Multiple custom labels can be set to an PivotGauge control by adding an array of objects within the `CustomLabels` option. 
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>

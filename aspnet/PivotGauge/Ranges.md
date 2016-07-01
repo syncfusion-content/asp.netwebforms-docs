@@ -13,7 +13,7 @@ documentation: ug
 
 Range collection can be directly added to the scales option within the PivotGauge control as an array.
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>
@@ -42,7 +42,7 @@ The appearance of the range can be customized through the following properties.
 
 Positioning the range could be set either through `placement` or `distanceFromScale` property. By default, placement takes the value “near”, whereas other enumeration values available are “far” and “center”.
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>
@@ -69,7 +69,7 @@ N> On setting both the position properties - "DistanceFromScale" and "Placement"
 
 Multiple ranges can be added by placing an array of objects in **"Ranges"** option.
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>

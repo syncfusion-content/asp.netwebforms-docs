@@ -2,7 +2,7 @@
 layout: post
 title: OLAP Getting Started | PivotChart| ASP.NET | Syncfusion
 description: olap getting started
-platform: ejasp
+platform: aspnet
 control: PivotChart
 documentation: ug
 ---
@@ -52,7 +52,7 @@ The scripts and style sheets that are mandatorily required to render PivotChart 
 
 Scripts and style sheets are referred under the <head> tag in **Default.aspx** file.
     
-{% highlight aspx %}
+{% highlight html %}
 
     <head>
         <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
@@ -67,7 +67,7 @@ Scripts and style sheets are referred under the <head> tag in **Default.aspx** f
 
 Either drag and drop the **PivotChart** control from the toolbox (under Syncfusion BI Web category) or manually define the widget like in the below code sample inside “Default.aspx” page.
 
-{% highlight aspx %}
+{% highlight html %}
 
     <%@ Register Assembly="Syncfusion.EJ.Olap" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
     <%@ Register Assembly="Syncfusion.EJ.Olap" Namespace="Syncfusion.JavaScript.Models" TagPrefix="ej" %>
@@ -92,7 +92,7 @@ Either drag and drop the **PivotChart** control from the toolbox (under Syncfusi
 Initializes the OLAP datasource for PivotChart widget as shown below.
 
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:PivotChart ID="MyPivotChart1" runat="server">
         <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll">
@@ -183,7 +183,7 @@ The scripts and style sheets that are mandatorily required to render PivotChart 
 
 Scripts and style sheets are referred under the **head** tag in **Default.aspx** file.
     
-{% highlight aspx %}
+{% highlight html %}
 
     <head>
         <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
@@ -197,7 +197,7 @@ Scripts and style sheets are referred under the **head** tag in **Default.aspx**
 
 Either drag and drop the **PivotChart** control from the toolbox (under Syncfusion BI Web category) or manually define the widget like in the below code sample inside “Default.aspx” page.
 
-{% highlight aspx %}
+{% highlight html %}
 
     <%@ Register Assembly="Syncfusion.EJ.Olap" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
     <%@ Register Assembly="Syncfusion.EJ.Olap" Namespace="Syncfusion.JavaScript.Models" TagPrefix="ej" %>

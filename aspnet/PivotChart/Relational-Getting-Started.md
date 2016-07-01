@@ -2,7 +2,7 @@
 layout: post
 title: Relational Getting Started | PivotChart| ASP.NET | Syncfusion
 description: relational getting started
-platform: ejasp
+platform: aspnet
 control: PivotChart
 documentation: ug
 ---
@@ -51,7 +51,7 @@ The scripts and style sheets that are mandatorily required to render PivotChart 
 
 Scripts and style sheets are referred under the <head> tag in **Default.aspx** file.
     
-{% highlight aspx %}
+{% highlight html %}
 
     <head>
         <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
@@ -66,7 +66,7 @@ Scripts and style sheets are referred under the <head> tag in **Default.aspx** f
 
 Either drag and drop the **PivotChart** control from the toolbox (under Syncfusion BI Web category) or manually define the widget like in the below code sample inside “Default.aspx” page.
 
-{% highlight aspx %}
+{% highlight html %}
 
     <%@ Register Assembly="Syncfusion.EJ.Olap" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
     <%@ Register Assembly="Syncfusion.EJ.Olap" Namespace="Syncfusion.JavaScript.Models" TagPrefix="ej" %>
@@ -91,7 +91,7 @@ Either drag and drop the **PivotChart** control from the toolbox (under Syncfusi
 
 Let us now see how to populate the PivotChart control using a sample JSON data as shown below. 
 
-{% highlight aspx %}
+{% highlight html %}
 
     <html>
         <body>
@@ -119,7 +119,7 @@ Let us now see how to populate the PivotChart control using a sample JSON data a
 
 The JSON data is set to the **"data"** property present inside the **"dataSource"** object. **"dataSource"** object allows us to set both datasource as well as the fields that needs to be displayed in the row, column, value and filter section of the PivotChart control.
   
-{% highlight aspx %}
+{% highlight html %}
   
     <!DOCTYPE html>
     <html>
@@ -167,7 +167,7 @@ Now, **PivotChart** will be rendered with Amount over a set of products across d
 
 You can sort a field either to ascending or descending order using the "sortOrder" property. Sorting is applicable only for Row and Column fields. By default, fields are arranged in ascending order.
  
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:PivotChart ID="MyPivotChart1" runat="server" ClientIDMode="Static">
     <DataSource>
@@ -198,7 +198,7 @@ Filtering option allows you to specify a set of values that either need to be di
 * FilterType -  indicates whether the values should be included or excluded.
 * Values -  contains an array of values that needs to be included or excluded within the particular field.
 
-{% highlight aspx %}
+{% highlight html %}
 
      <ej:PivotChart ID="MyPivotChart1" runat="server" ClientIDMode="Static">
         <DataSource>
@@ -224,7 +224,7 @@ Filtering option allows you to specify a set of values that either need to be di
 
 The values for filtering are given in the Default.aspx.cs as shown in the below snippet.
 
-{% highlight aspx %}
+{% highlight html %}
 
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -294,7 +294,7 @@ The scripts and style sheets that are mandatorily required to render PivotChart 
 
 Scripts and style sheets are referred under the <head> tag in **Default.aspx** file.
     
-{% highlight aspx %}
+{% highlight html %}
 
     <head>
         <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
