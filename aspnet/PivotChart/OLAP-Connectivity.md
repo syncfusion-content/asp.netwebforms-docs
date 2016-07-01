@@ -2,7 +2,7 @@
 layout: post
 title: OLAP Connectivity | PivotChart | ASP.NET | Syncfusion
 description: olap connectivity 
-platform: ejasp
+platform: aspnet
 control: PivotChart
 documentation: ug
 ---

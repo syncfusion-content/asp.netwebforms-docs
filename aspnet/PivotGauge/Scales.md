@@ -13,7 +13,7 @@ documentation: ug
 
 Scale can be added within the PivotGauge control as an array.
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>
@@ -36,7 +36,7 @@ Pointer Cap is a circular shape element that is located at the center of the Piv
 * **BorderWidth** – sets the width of the pointer cap border.
 * **BackgroundColor** – sets the background color of the pointer cap.
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>
@@ -65,7 +65,7 @@ The appearance of the scale can be customized through the following properties.
 
 The `ShowIndicators`, `ShowTicks`, `ShowRanges`, `ShowPointers` and `ShowScaleBar` properties are used to enable/disable the indicators, ticks, ranges, pointers and scale bar respectively.  By default, these properties are set to true. 
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>

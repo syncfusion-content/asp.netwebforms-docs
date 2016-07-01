@@ -2,7 +2,7 @@
 layout: post
 title: OLAP Getting Started | PivotGauge| ASP.NET | Syncfusion
 description: olap getting started
-platform: ejasp
+platform: aspnet
 control: PivotGauge
 documentation: ug
 ---
@@ -52,7 +52,7 @@ The scripts and style sheets that are mandatorily required to render PivotGauge 
 
 Scripts and style sheets are referred under the <head> tag in **Default.aspx** file.
     
-{% highlight aspx %}
+{% highlight html %}
 
     <head>
         <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
@@ -89,7 +89,7 @@ Either drag and drop the **PivotGauge** control from the toolbox (under Syncfusi
 
 Initializes the OLAP datasource for PivotGauge widget as shown below.
 
-{% highlight aspx %}
+{% highlight html %}
 
     <html>
 
@@ -232,7 +232,7 @@ The scripts and style sheets that are mandatorily required to render PivotGauge 
 
 Scripts and style sheets are referred under the **head** tag in **Default.aspx**.
     
-{% highlight aspx %}
+{% highlight html %}
 
     <head>
         <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />

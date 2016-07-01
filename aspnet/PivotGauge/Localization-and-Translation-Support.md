@@ -14,7 +14,7 @@ We can localize the PivotGauge controls text with a collection of localized stri
 
 Following code example illustrates on how to localize PivotGauge based on **"French"** culture.
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <script>
         ej.PivotGauge.locale["fr-FR"] = {
@@ -52,7 +52,7 @@ Content displayed within the PivotGauge control are obtained from the OLAP Cube.
 
 To get the localized string based on different cultures, from OLAP Cube, we need to set **"Locale Identifier"** in the connection string to a specific culture. The attribute is set for PivotGauge in Client Mode as shown below
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server" Locale="fr-FR">
          <DataSource Data="http://bi.syncfusion.com/olap/msmdpump.dll;LocaleIdentifier=1036;"></DataSource>
