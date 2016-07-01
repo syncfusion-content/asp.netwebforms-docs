@@ -2,7 +2,7 @@
 layout: post
 title: PivotChart | PivotChart | ASP.NET | Syncfusion
 description: overview
-platform: ejasp
+platform: aspnet
 control: PivotChart
 documentation: ug
 ---

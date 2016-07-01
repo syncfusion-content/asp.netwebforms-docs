@@ -11,7 +11,7 @@ documentation: ug
 
 Tooltip can be enabled by using the `EnableTooltip` property. By default, this property is set to "false".
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server" EnableTooltip="true">
     </ej:PivotGauge>

@@ -2,7 +2,7 @@
 layout: post
 title: Relational Getting Started | PivotGauge| ASP.NET | Syncfusion
 description: relational getting started
-platform: ejasp
+platform: aspnet
 control: PivotGauge
 documentation: ug
 ---
@@ -53,7 +53,7 @@ The scripts and style sheets that are mandatorily required to render PivotGauge 
 
 Scripts and style sheets are referred under the <head> tag in **Default.aspx** file.
     
-{% highlight aspx %}
+{% highlight html %}
 
     <head>
         <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
@@ -93,7 +93,7 @@ Either drag and drop the **PivotGauge** control from the toolbox (under Syncfusi
 
 Let us now see how to populate the PivotGauge control using a sample JSON data as shown below. 
 
-{% highlight aspx %}
+{% highlight html %}
 
     <ej:PivotGauge ID="MyPivotGauge1" runat="server" ClientIDMode="Static">
     <ClientSideEvents Load="onLoad" />
@@ -113,7 +113,7 @@ Let us now see how to populate the PivotGauge control using a sample JSON data a
 
 The JSON data is set to the **"Data"** property present inside the **"DataSource"** object. **"DataSource"** object allows us to set both datasource as well as the fields that needs to be displayed in the row, column, value and filter section of the PivotGauge control.
   
-{% highlight aspx %}
+{% highlight html %}
    <!DOCTYPE html>
     <html>
 
@@ -251,7 +251,7 @@ The scripts and style sheets that are mandatorily required to render PivotGauge 
 
 Scripts and style sheets are referred under the **head** tag in **Default.aspx**.
     
-{% highlight aspx %}
+{% highlight html %}
 
     <head>
         <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
@@ -265,7 +265,7 @@ Scripts and style sheets are referred under the **head** tag in **Default.aspx**
 
 Either drag and drop the **PivotGauge** control from the toolbox (under Syncfusion BI Web category) or manually define the widget like in the below code sample inside “Default.aspx” page.
 
-{% highlight aspx %}
+{% highlight html %}
      <%@ Register Assembly="Syncfusion.EJ.Olap" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
     <%@ Register Assembly="Syncfusion.EJ.Olap" Namespace="Syncfusion.JavaScript.Models" TagPrefix="ej" %>
     <%@ Register Assembly="Syncfusion.EJ" Namespace="Syncfusion.JavaScript.DataVisualization.Models" TagPrefix="ej" %> 

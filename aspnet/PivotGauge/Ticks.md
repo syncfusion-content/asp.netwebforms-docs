@@ -13,7 +13,7 @@ documentation: ug
 
 Tick collection can be directly added to the scales option within the PivotGauge control as an array.
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>
@@ -39,7 +39,7 @@ The appearance of the tick can be customized through the following properties.
 * **DistanceFromScale** – sets the distance between scale and ticks. By default, the values is 0.
 * **Placement** – positions the ticks with respect to the scale.  By default, the value is set to "Far".
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>

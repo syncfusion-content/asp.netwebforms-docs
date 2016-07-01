@@ -13,7 +13,7 @@ documentation: ug
 
 Label collection can be directly added to the scales option within the PivotGauge control as an array.
 
-{% highlight ASPX %}
+{% highlight html %}
     
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>
@@ -38,7 +38,7 @@ The appearance of the Label can be customized through the following properties.
 * **IncludeFirstValue** – includes the initial value based on user requirement.  By default, the value is “true”.
 * **Font** – sets the font size, font style and font family of the label.
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>
@@ -65,7 +65,7 @@ The appearance of the Label can be customized through the following properties.
 
 The `UnitText` property is used to add some text along with the labels. Normally, we indicate the unit/measurement of the numeric value through unit text. Using the `UnitTextPosition` property, the text can be positioned either in front or back.  By default, text appears at the back.
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>

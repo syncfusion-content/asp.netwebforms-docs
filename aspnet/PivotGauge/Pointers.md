@@ -18,7 +18,7 @@ PivotGauge pointers has two types such as,
 
 Needle type pointers are the default pointers which is always located at the center of the Gauge. There are 5 different shapes for the needle pointers which are Rectangle, Triangle, Trapezoid, Arrow and Image.
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>
@@ -36,7 +36,7 @@ Needle type pointers are the default pointers which is always located at the cen
 
 For marker pointer, the available shapes are Rectangle, Triangle, Ellipse, Diamond, Pentagon, Circle, Slider, Pointer, Wedge, Trapezoid, RoundedRectangle and Image.
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>
@@ -56,7 +56,7 @@ For marker pointer, the available shapes are Rectangle, Triangle, Ellipse, Diamo
 
 Pointer collection can be directly added to the scales option within the PivotGauge control as an array. 
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>
@@ -84,7 +84,7 @@ The appearance of the pointer can be customized through the following properties
 * **Opacity** – sets the opacity of the pointer.  By default, the value is 1.
 * **Type** – sets the type of the pointer.  By default, the type is “Needle”.
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>
@@ -116,7 +116,7 @@ Pointer can be positioned with the help of below two properties.
 
 N> Both the properties can be applied only if the pointer type is set to “Marker”. Needle pointer type appears only at the center of the control, which is its default position.
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>
@@ -137,7 +137,7 @@ N> Both the properties can be applied only if the pointer type is set to “Mark
 
 It is possible to replace the pointers with image. To view the pointers as image, we need to set the appropriate location in the `ImageUrl` property.
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>
@@ -167,7 +167,7 @@ To display the current value of the pointers in PivotGauge control, **"PointerVa
 * **Angle** – sets the rotation angle of the text. By default, its value is 0.
 * **Font** – sets the font size, font style and font family of the text.
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>

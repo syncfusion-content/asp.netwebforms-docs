@@ -13,7 +13,7 @@ documentation: ug
 
 Gauges can be arranged in specified number of rows by using the `RowsCount` property.
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server" RowsCount="2">
     </ej:PivotGauge>
@@ -26,7 +26,7 @@ Gauges can be arranged in specified number of rows by using the `RowsCount` prop
 
 Gauges can be arranged in specified number of columns by using the `ColumnsCount` property.
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server" ColumnsCount="2">
     </ej:PivotGauge>

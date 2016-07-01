@@ -13,7 +13,7 @@ documentation: ug
 
 Full Circle frame lets the PivotGauge display in circular shape. Frame type can be set using the `FrameType` property.  By default, the frame type is "FullCircle". 
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Frame FrameType="FullCircle" />
@@ -27,7 +27,7 @@ Full Circle frame lets the PivotGauge display in circular shape. Frame type can 
 
 Half Circle frame lets the PivotGauge display in semi-circular shape. For this, frame type needs to be set as "HalfCircle" within the `FrameType` property.
 
-{% highlight ASPX %}
+{% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Frame FrameType="HalfCircle" />

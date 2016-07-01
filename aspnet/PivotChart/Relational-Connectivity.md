@@ -2,7 +2,7 @@
 layout: post
 title: Relational Connectivity | PivotChart | ASP.NET | Syncfusion
 description: relational connectivity 
-platform: ejasp
+platform: aspnet
 control: PivotChart
 documentation: ug
 ---
