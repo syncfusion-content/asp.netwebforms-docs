@@ -265,5 +265,5 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
 
 Now, PivotChart will be rendered with customer count over a period of fiscal years across different customer geographic locations.
 
-![](OLAP-Connectivity/ServerModeWCF.png)
+![](OLAP-Connectivity_images/ServerModeWCF.png)
 

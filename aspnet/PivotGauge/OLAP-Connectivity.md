@@ -258,4 +258,4 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
 
 Now, PivotGauge is rendered with Internet Revenue for Internet Sales Amount over a Fiscal Year 2004 across different customer geographic locations
 
-![](Olap-Connectivity/ServerModeWCF.png)
+![](Olap-Connectivity_images/ServerModeWCF.png)

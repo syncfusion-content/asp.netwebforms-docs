@@ -117,7 +117,7 @@ Initializes the OLAP datasource for PivotChart widget as shown below.
 
 Now, **PivotChart** is rendered with Internet Sales Amount over a period of fiscal years across different customer geographic locations.
 
-![](OLAP-Getting-Started/PopulatePivotChartWithDataSource.png) 
+![](OLAP-Getting-Started_images/PopulatePivotChartWithDataSource.png) 
 
 ## Creating a simple application with PivotChart and OLAP datasource (Server Mode)
  
@@ -376,7 +376,7 @@ Once you finish adding the **Global.asax** file, delete all the methods inside t
 Now, **PivotChart** is rendered with customer count over a period of fiscal years across different customer geographic locations.
 
 
-![](OLAP-Getting-Started/ServerMode.png) 
+![](OLAP-Getting-Started_images/ServerMode.png) 
 
 ### WCF
 

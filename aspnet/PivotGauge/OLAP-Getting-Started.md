@@ -168,7 +168,7 @@ Initializes the OLAP datasource for PivotGauge widget as shown below.
 
 The above code will generate a simple PivotGauge as shown in below figure.
 
-![](OLAP-Getting-Started/PopulatePivotGaugeWithDataSource.png) 
+![](OLAP-Getting-Started_images/PopulatePivotGaugeWithDataSource.png) 
 
 ## Creating a simple application with PivotGauge and OLAP datasource (Server Mode)
  
@@ -417,7 +417,7 @@ Once you finish adding the **Global.asax** file, delete all the methods inside t
 
 Now, PivotGauge will be rendered with the provided data as shown below.
 
-![](OLAP-Getting-Started/ServerMode.png) 
+![](OLAP-Getting-Started_images/ServerMode.png) 
 
 ### WCF
 
