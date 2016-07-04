@@ -91,16 +91,18 @@ Now to bind the above defined data to the Scheduler, drag and drop the **ObjectD
 
 {% endhighlight %}
 
-Set the **SelectMethod** property of the _ObjectDataSource_ pointing to the **GetRecords** method defined within the SchedulerData Class in code page. Also set the *TypeName* property of the ObjectDataSource with the appropriate class name *SchedulerData* and map the ID of the ObjectDataSource with the Scheduler’s DataSourceID as shown below,
+Set the **SelectMethod** property of the _ObjectDataSource_ pointing to the **GetRecords** method defined within the SchedulerData Class in code page. Also set the *TypeName* property of the ObjectDataSource with the appropriate class name *SchedulerData* (including the namespace name) and map the ID of the ObjectDataSource with the Scheduler’s DataSourceID as shown below,
 
 {% highlight html %}
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <ej:Schedule ID="Schedule1" DataSourceID="ObjectDataSource1" runat="server"></ej:Schedule>
-    <asp:ObjectDataSource ID="ObjectDataSource1" TypeName="SchedulerData" SelectMethod="GetRecords" runat="server" > </asp:ObjectDataSource>
+    <asp:ObjectDataSource ID="ObjectDataSource1" TypeName="NameSpace.SchedulerData" SelectMethod="GetRecords" runat="server" > </asp:ObjectDataSource>
 </asp:Content>
 
 {% endhighlight %}
+
+N> In TypeName="NameSpace.SchedulerData" replace the NameSpace with the namespace name where the *SchedulerData* class is defined.
 
 Map the Scheduler data fields with the appropriate appointmentSettings properties as shown below,
 
