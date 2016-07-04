@@ -297,5 +297,5 @@ N> In this example, **“PivotChartDemo”** indicates the name and root namespa
 Now, **PivotChart** will be rendered with Amount over a set of products across different customer geographic locations.
 
 
-![](Relational-Connectivity/ServerModeWCF.png) 
+![](Relational-Connectivity_images/ServerModeWCF.png) 
 

@@ -35,4 +35,4 @@ Tooltip appearance can be customized by overriding its CSS class.
 
 {% endhighlight %}
 
-![](Tooltip/Tooltip.png) 
+![](Tooltip_images/Tooltip.png) 

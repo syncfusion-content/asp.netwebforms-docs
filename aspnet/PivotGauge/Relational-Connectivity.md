@@ -288,4 +288,4 @@ N> In this example, **“PivotGaugeDemo”** indicates the name and root namespa
 
 Now, **PivotGauge** will be rendered as shown in the below figure.
 
-![](Relational-Connectivity/ServerModeWCF.png)
+![](Relational-Connectivity_images/ServerModeWCF.png)

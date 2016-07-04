@@ -59,7 +59,7 @@ The appearance of the Label can be customized through the following properties.
 
 {% endhighlight %}
 
-![](Labels/AppearanceCustomization.png) 
+![](Labels_images/AppearanceCustomization.png) 
 
 ## Unit Text
 
@@ -82,4 +82,4 @@ The `UnitText` property is used to add some text along with the labels. Normally
 
 {% endhighlight %}
 
-![](Labels/UnitText.png) 
+![](Labels_images/UnitText.png) 

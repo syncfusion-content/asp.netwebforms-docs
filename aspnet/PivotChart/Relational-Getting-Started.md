@@ -161,7 +161,7 @@ The JSON data is set to the **"data"** property present inside the **"dataSource
 
 Now, **PivotChart** will be rendered with Amount over a set of products across different customer geographic locations.
 
-![](Relational-Getting-Started/PopulatePivotChartWithData.png) 
+![](Relational-Getting-Started_images/PopulatePivotChartWithData.png) 
 
 ### Apply Sorting
 
@@ -187,7 +187,7 @@ You can sort a field either to ascending or descending order using the "sortOrde
  
 {% endhighlight %}
 
-![](Relational-Getting-Started/ApplySorting.png) 
+![](Relational-Getting-Started_images/ApplySorting.png) 
 
 ### Apply Filtering
 
@@ -234,7 +234,7 @@ The values for filtering are given in the Default.aspx.cs as shown in the below 
 
 {% endhighlight %}
 
-![](Relational-Getting-Started/ApplyFiltering.png) 
+![](Relational-Getting-Started_images/ApplyFiltering.png) 
 
 ## Creating a simple application with PivotChart and Relational datasource (Server Mode)
 
@@ -572,7 +572,7 @@ Once you finish adding the **Global.asax** file, delete all the methods inside t
 
 Now, **PivotChart** will be rendered with Amount over a set of products across different customer geographic locations.
 
-![](Getting-Started_images/relaionalwebapi.png) 
+![](Getting-Started_images_images/relaionalwebapi.png) 
 
 ### WCF
 
