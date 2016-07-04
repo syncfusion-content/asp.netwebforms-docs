@@ -20,7 +20,7 @@ Gauges can be arranged in specified number of rows by using the `RowsCount` prop
 
 {% endhighlight %}
 
-![](Layout/RowBased.png) 
+![](Layout_images/RowBased.png) 
 
 ## Column-wise Layout
 
@@ -33,5 +33,5 @@ Gauges can be arranged in specified number of columns by using the `ColumnsCount
 
 {% endhighlight %}
 
-![](Layout/ColumnBased.png)
+![](Layout_images/ColumnBased.png)
 
