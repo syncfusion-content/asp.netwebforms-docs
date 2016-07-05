@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ReportWriter | ReportWriter | ASP.NET | Syncfusion
-description: to export rdlc
+description: export rdlc
 platform: aspnet
 control: ReportWriter
 documentation: ug

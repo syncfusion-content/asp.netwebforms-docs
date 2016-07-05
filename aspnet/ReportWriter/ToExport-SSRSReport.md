@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ReportWriter | ReportWriter | ASP.NET | Syncfusion
-description: to export ssrs
+description: export ssrs
 platform: aspnet
 control: ReportWriter
 documentation: ug
