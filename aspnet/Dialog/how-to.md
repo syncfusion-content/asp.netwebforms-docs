@@ -150,7 +150,7 @@ Add the following script to open and close the Dialog widget.
 
 {% endhighlight %}
 
-Initialize Footer in Dialog widgets by adding the script section in JSrender as below.
+Initialize Footer in Dialog widgets by adding the script section in JsRender as below.
 
 {% highlight javascript %}
 
