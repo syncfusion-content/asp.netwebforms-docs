@@ -235,7 +235,7 @@ Run the code to get the following output.
 
 ### CSS Class
 
-CSSclass customizes the UploadBox control’s appearance. Define a CSS class as per the requirement and assign the class name to CssClass property. The data type is string. 
+CSS class customizes the UploadBox control’s appearance. Define a CSS class as per the requirement and assign the class name to CssClass property. The data type is string. 
 
 <table>
 <tr>
