@@ -1,3 +1,12 @@
+---
+layout: post
+title: ReportWriter | ReportWriter | ASP.NET | Syncfusion
+description: to export ssrs
+platform: aspnet
+control: ReportWriter
+documentation: ug
+---
+
 ## To Export SSRS Reports
 
 The ReportWriter has options to export the SSRS reports. The following code example helps you to generate the SSRS report using ReportWriter.
