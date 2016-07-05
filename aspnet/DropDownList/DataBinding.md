@@ -655,7 +655,7 @@ OData is a standardized protocol for creating and consuming data. You can provi
 
 The WebMethod Adaptor is used to bind data source from remote services and code behind methods. 
 
-By using “WebMethodAdaptor” we can bind data from WebService to the DropDownList control and also we need to include “ScirptService” Attribute to WebService in order to enable request from client-side.
+By using “WebMethodAdaptor” we can bind data from WebService to the DropDownList control and also we need to include “ScriptService” Attribute to WebService in order to enable request from client-side.
 
 {% highlight html %}
 
@@ -711,7 +711,7 @@ By using “WebMethodAdaptor” we can bind data from WebService to the DropDown
     
 {% endhighlight %}
 
-Intialize the DropDownList as follows
+Initialize the DropDownList as follows
 
 {% highlight html %}
 

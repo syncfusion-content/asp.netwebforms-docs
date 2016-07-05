@@ -17,7 +17,7 @@ The ASP.NET Web Forms Accordion control allows you to provide multiple panes and
 
 The following steps describe the creation of Accordion control.
 
-* You can create an ASP.NET Web Forms Project and add necessary Dll’s and Scripts with the help of the given [ASP.NET WebForms-Getting Started](http://help.syncfusion.com/aspnetmvc/accordion/getting-started) Documentation.
+* You can create an ASP.NET Web Forms Project and add necessary Dll’s and Scripts with the help of the given [ASP.NET Web Forms-Getting Started](http://help.syncfusion.com/aspnetmvc/accordion/getting-started) Documentation.
 * Add the following code example to the corresponding aspx page to render Accordion.
 * Add Accordion widget, and initialize Accordion control as follows.
 {% highlight html %}
