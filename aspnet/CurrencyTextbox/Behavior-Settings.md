@@ -69,7 +69,7 @@ The CurrencyTextbox control provides strict mode option by setting the EnableStr
 
 ### Configure Strict Mode Support 
 
-Add the following code in your ASPX page to render THE CurrencyTextbox control with strictmode by using the EnableStrictMode property.
+Add the following code in your ASPX page to render THE CurrencyTextbox control with strict mode by using the EnableStrictMode property.
 
 {% highlight html %}
 
