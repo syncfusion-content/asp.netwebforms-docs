@@ -1,3 +1,12 @@
+---
+layout: post
+title: ReportWriter | ReportWriter | ASP.NET | Syncfusion
+description: overview
+platform: aspnet
+control: ReportWriter
+documentation: ug
+---
+
 # Overview 
 
 Report Writer is a class library that enables the user to render reports defined in Microsoft’s RDL format (2008 or 2008 R2) as PDF, Word, Excel, PPT or HTML documents.

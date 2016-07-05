@@ -1,3 +1,12 @@
+---
+layout: post
+title: ReportWriter | ReportWriter | ASP.NET | Syncfusion
+description: reportwriter api
+platform: aspnet
+control: ReportWriter
+documentation: ug
+---
+
 # ReportWriter API
 
 ## Constructors

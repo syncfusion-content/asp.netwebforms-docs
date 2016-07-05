@@ -1,3 +1,12 @@
+---
+layout: post
+title: ReportWriter | ReportWriter | ASP.NET | Syncfusion
+description: export types
+platform: aspnet
+control: ReportWriter
+documentation: ug
+---
+
 ## Export Types
 
 The ReportWriter provides support for exporting report as PDF, Word, Excel, PPT and HTML documents with the help of the ReportWriter class.

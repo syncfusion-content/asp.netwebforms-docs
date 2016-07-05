@@ -1,3 +1,12 @@
+---
+layout: post
+title: ReportWriter | ReportWriter | ASP.NET | Syncfusion
+description: getting started
+platform: aspnet
+control: ReportWriter
+documentation: ug
+---
+
 # Getting Started with ASP.NET Application
 
 This section describes how to export the Report Server report as PDF, Word, Excel, PPT and HTML formats in ASP.NET application using ReportWriter.

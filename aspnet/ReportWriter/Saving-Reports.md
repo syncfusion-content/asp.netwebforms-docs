@@ -1,3 +1,12 @@
+---
+layout: post
+title: ReportWriter | ReportWriter | ASP.NET | Syncfusion
+description: saving reports
+platform: aspnet
+control: ReportWriter
+documentation: ug
+---
+
 # Saving Reports
 
 Essential ReportWriter provides support for saving a report as a PDF, Word, Excel, PPT and HTML documents with the help of the class ReportWriter. The report elements such as Tablix, matrices, charts, gauges, shapes, and text boxes are supported in this feature. 

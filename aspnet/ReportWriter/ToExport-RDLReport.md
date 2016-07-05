@@ -1,3 +1,12 @@
+---
+layout: post
+title: ReportWriter | ReportWriter | ASP.NET | Syncfusion
+description: to export rdl
+platform: aspnet
+control: ReportWriter
+documentation: ug
+---
+
 ## To Export RDL Reports
 
 The ReportWriter has options to export the RDL reports. The following code example helps you to export the RDL report using ReportWriter.
