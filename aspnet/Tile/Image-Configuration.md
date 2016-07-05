@@ -42,7 +42,7 @@ Refer to the following code examples.
 ![](Image-Configuration_images/Image-Configuration_img1.png) 
 
 
-You can give images for each tile through css classes by using the data-ej-imageclass attribute. You can define your desired styles in the specified class.
+You can give images for each tile through CSS classes by using the data-ej-imageclass attribute. You can define your desired styles in the specified class.
 
 Refer to the following code examples.
 
