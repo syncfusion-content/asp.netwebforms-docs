@@ -83,7 +83,7 @@ always</td><td>
 Tooltip get displayed for RangeNavigator always.</td></tr>
 <tr>
 <td>
-ondemand</td><td>
+OnDemand</td><td>
 Tooltip get displayed only when we move the slider.</td></tr>
 </table>
 
