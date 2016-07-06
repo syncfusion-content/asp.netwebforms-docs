@@ -333,7 +333,7 @@ For the Stochastic indicator, you need to set the Indicators.Type as **Stochasti
 
 ### Triangular Moving Average (TMA)
 
-To render the TMA indicator, you should specify the Indicators.Type as **Tma**. 
+To render the TMA indicator, you should specify the Indicators.Type as **TMA**. 
 
 {% highlight html %}
 

@@ -337,7 +337,7 @@ Padding can be applied to the minimum and maximum extremes of the range by using
 
 * None
 * Round
-* Aditional
+* Additional
 
 **None**
 
