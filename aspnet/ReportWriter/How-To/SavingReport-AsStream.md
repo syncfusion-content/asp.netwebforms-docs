@@ -1,15 +1,15 @@
 ---
 layout: post
-title: ReportWriter | ReportWriter | ASP.NET | Syncfusion
-description: how to
+title: Explore the How To Do Options for ReportWriter
+description: how to do the various operations with reportwriter?
 platform: aspnet
 control: ReportWriter
 documentation: ug
 ---
 
-#How To
+# How To
 
-##Save a Report as a Stream?
+## Save a Report as a Stream?
 
 You can save a report as a stream using Save(Stream,WriterFormat) (overloaded method). This method is useful when generating the report on the server side and sending it to a client-side application. The following code explains how to save a report as a stream.
 

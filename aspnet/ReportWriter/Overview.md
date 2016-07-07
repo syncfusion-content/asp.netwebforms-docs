@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ReportWriter | ReportWriter | ASP.NET | Syncfusion
-description: overview
+title: Explore the features of the ReportWriter control
+description: What are all the main features of the ReportWriter control?
 platform: aspnet
 control: ReportWriter
 documentation: ug
