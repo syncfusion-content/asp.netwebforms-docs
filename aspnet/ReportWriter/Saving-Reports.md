@@ -13,8 +13,7 @@ Essential ReportWriter provides support for saving a report as a PDF, Word, Exce
 
 ## Saving Report as PDF 
 
-The report generated using the ReportDesigner can be exported as a PDF document using the following code.
-
+The report used in ReportWriter can be saved as PDF document using the following code.
 
 ~~~csharp
 //Instantiate the report writer with the parameter "ReportPath" and "ReportDataSource" Collection.
@@ -32,7 +31,7 @@ reportWriter.Save("Sample.pdf", WriterFormat.PDF)
 
 ## Saving Report as Excel 
 
-The report generated using the ReportDesigner can be exported as an Excel document using the following code example. 
+The report used in ReportWriter can be saved as Excel document using the following code example. 
 
 ~~~csharp
 //Instantiate the report writer with the parameter "ReportPath" and "ReportDataSource" Collection.
@@ -49,7 +48,7 @@ reportWriter.Save("Sample.xls", WriterFormat.Excel)
 
 ## Saving Report as Word 
 
-The report generated using the ReportDesigner can also be exported as a Word document using the following code example.
+The report used in ReportWriter can be saved as Word document using the following code example.
 
 ~~~csharp
 // Instantiate the report writer with the parameter "ReportPath" and "ReportDataSource" Collection
@@ -64,9 +63,9 @@ reportWriter.Save("Sample.doc", WriterFormat.WORD)
 
 ![](ASP_Images/RDLExportWord.png)
 
-## Saving Report as an HTML 
+## Saving Report as HTML 
 
-The report generated using the ReportDesigner can be exported as an HTML document using the following code example. 
+The report used in ReportWriter can be saved as HTML document using the following code example. 
 
 ~~~csharp
 //Instantiate the report writer with the parameter "ReportPath" and "ReportDataSource" Collection.
@@ -81,9 +80,9 @@ reportWriter.Save("Sample.html", WriterFormat.HTML)
 
 ![](ASP_Images/RDLExportHtml.png) 
 
-## Saving Report as an PPT 
+## Saving Report as PPT 
 
-The report generated using the ReportDesigner can be exported as an PPT document using the following code example. 
+The report used in ReportWriter can be saved as PPT document using the following code example. 
 
 ~~~csharp
 //Instantiate the report writer with the parameter "ReportPath" and "ReportDataSource" Collection.
