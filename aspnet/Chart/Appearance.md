@@ -82,7 +82,7 @@ Marker, DataLabel and Fill color of each point in a series can be customized ind
 
 To customize the series border color, width and dashArray, you can use **Series.Border** option. 
 
-N> Series border can be applied to all the series (except line, spline, hilo, hiloopenclose and stepline series).
+N> Series border can be applied to all the series (except Line, Spline, HiLo, HiLoOpenClose and StepLine series).
 
 {% highlight html %}
 
