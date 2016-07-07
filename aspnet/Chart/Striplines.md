@@ -124,7 +124,7 @@ To customize the stripLine styles, use the *Color, Opacity, BorderWidth and Bord
 ![](Striplines_images/Striplines_img5.png)
 
 
-## Change the zorder of the stripline
+## Change the Z-order of the stripline
 
 Stripline **ZIndex** property is used to display the stripLine either behind or over the series.  
 

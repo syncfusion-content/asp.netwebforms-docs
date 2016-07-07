@@ -73,7 +73,7 @@ The following code example illustrates this,
 
 ## Add labels
 
-Data label can be added to a chart series by enabling the *Vsible* property in the **DataLabel** option. The labels appear at the top of the data point, by default.
+Data label can be added to a chart series by enabling the *Visible* property in the **DataLabel** option. The labels appear at the top of the data point, by default.
 
 The following code example shows how to enable data label and set its horizontal and vertical text alignment. 
 
@@ -147,7 +147,7 @@ The following code example shows how to add background shapes and set template t
 
 The appearance of the labels can be customized by using the *Font* and *Offset* options. The Offset option is used to move the labels vertically. Also, labels can be rotated by using the *Rotate* option.
 
-The following code example shows how to rotate datalabel text and customize the font.
+The following code example shows how to rotate data label text and customize the font.
 
 {% highlight html %}
 
@@ -292,7 +292,7 @@ When the data is provided by using the Points option, you can add marker for eac
 ![](Data-Markers_images/Data-Markers_img10.png)
 
 
-When the data is bound to the series by using the DataSource option, you can customize the points in the **SeriesRendering** event as illustarted in the following code example,
+When the data is bound to the series by using the DataSource option, you can customize the points in the **SeriesRendering** event as illustrated  in the following code example,
 
 {% highlight html %}
 
@@ -352,7 +352,7 @@ When the data is bound to the series by using the DataSource option, you can cus
 
 ## Connect Line
 
-This feature is used to connect label and data point by using a line. It can be enabled only for Pie, Doughnut, Pyramid and Funnel chart types. **ConnecterLine** types can be set as *Bezier* or *Line* by using the **Type** option.
+This feature is used to connect label and data point by using a line. It can be enabled only for Pie, Doughnut, Pyramid and Funnel chart types. **ConnectorLine** types can be set as *Bezier* or *Line* by using the **Type** option.
 
  The following code example illustrates this,
 
@@ -376,7 +376,7 @@ This feature is used to connect label and data point by using a line. It can be 
 ![](Data-Markers_images/Data-Markers_img11.png)
 
 
-## Smartlabels
+## SmartLabels
 
 Overlapping of the labels can be avoided by enabling the **EnableSmartLabels** property. The default value is *True* for *Accumulation type series* and *False* for *other series types*.
 
@@ -404,4 +404,4 @@ The following code example shows how to enable smart labels,
 ![](Data-Markers_images/Data-Markers_img12.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/pie.aspx) here to view the Smartlabels online demo sample.
+[Click](http://asp.syncfusion.com/demos/web/chart/pie.aspx) here to view the SmartLabels online demo sample.

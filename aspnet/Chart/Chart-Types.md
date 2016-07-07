@@ -248,7 +248,7 @@ To render an Area chart, you can specify the series Type as **Area** in the char
 
 ## Range Area Chart
 
-To render a Range Area Chart, set the Type as **RrangeArea** in the chart series. To change the RangeArea color, you can use the Fill property of the series.
+To render a Range Area Chart, set the Type as **RangeArea** in the chart series. To change the RangeArea color, you can use the Fill property of the series.
 
 Since the RangeArea series requires two y values for a point, you have to add the *High* and *Low* value. High and Low value specifies the maximum and minimum range of the points.
 
@@ -1862,9 +1862,9 @@ To customize the connector line color, width, opacity and dashArray of the water
 
 
 
-## Errorbar Chart 
+## ErrorBar Chart 
 
-EjChart can generate Error bar for Cartesian type series *(Line, Column, Bar, Scatter, Area, Candle, HiLo, etc.)*. To render the Error bar for the series, set *Visibility* as *“Visibile”* to **ErrorBar** in the series.
+EjChart can generate Error bar for Cartesian type series *(Line, Column, Bar, Scatter, Area, Candle, HiLo, etc.)*. To render the Error bar for the series, set *Visibility* as *“Visible”* to **ErrorBar** in the series.
 
 
 {% highlight html %}
@@ -1883,7 +1883,7 @@ EjChart can generate Error bar for Cartesian type series *(Line, Column, Bar, Sc
 ![](Chart-Types_images/Chart-Types_img75.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/errorbar.aspx) here to view the Errorbar Chart online demo sample.
+[Click](http://asp.syncfusion.com/demos/web/chart/errorbar.aspx) here to view the ErrorBar Chart online demo sample.
 
 
 ### Changing Error Bar Type

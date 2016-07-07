@@ -17,7 +17,7 @@ To split the chart area vertically into a number of rows, use RowDefinitions of 
 
 * You can allocate space for each row by using the **Unit** option that determines whether the chart area should be split by *percentage* or *pixels* for the given **RowHeight** value of the RowDefinitions.
  
-* To associate a vertical axis to a row, specify the RowDefintions **Index** value to the RowIndex property of the chart axis.
+* To associate a vertical axis to a row, specify the RowDefinitions **Index** value to the RowIndex property of the chart axis.
 
 * To customize each row’s horizontal line, use LineColor and LineWidth property.
 
@@ -86,7 +86,7 @@ To split the chart area horizontally into a number of columns, use ColumnDefinit
 
 * You can allocate space for each column by using the **Unit** option that determines whether the chart area should be split by *percentage* or *pixels* for the given **ColumnWidth** value of the ColumnDefinitions.
  
-* To associate a horizontal axis to a column, specify the columnDefintions **Index** value to the **ColumnIndex** property of the chart axis.
+* To associate a horizontal axis to a column, specify the ColumnDefinitions **Index** value to the **ColumnIndex** property of the chart axis.
  
 {% highlight html %}
 
