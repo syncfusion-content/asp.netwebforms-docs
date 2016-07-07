@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ReportWriter | ReportWriter | ASP.NET | Syncfusion
-description: reportwriter api
+title: Explore the Information about ReportWriter API
+description: What are the api used in reportwriter and why we need it?
 platform: aspnet
 control: ReportWriter
 documentation: ug

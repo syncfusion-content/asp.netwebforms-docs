@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ReportWriter | ReportWriter | ASP.NET | Syncfusion
-description: getting started
+title: Getting started with Syncfusion Essential ReportWriter for ASP.NET Webforms
+description: Getting started walk through to create ReportWriter control.
 platform: aspnet
 control: ReportWriter
 documentation: ug
