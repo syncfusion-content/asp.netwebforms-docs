@@ -13,7 +13,7 @@ The ReportWriter provides support for exporting report as PDF, Word, Excel, PPT 
 
 ### Exporting Report as PDF
 
-The report used in ReportWriter can be exported as a PDF document using the following code.
+The report used in ReportWriter can be exported as PDF document using the following code.
 
 ~~~csharp
 
@@ -26,7 +26,7 @@ reportWriter.Save(Sample.pdf, WriterFormat.PDF);
 
 ### Exporting Report as Word
 
-The report used in ReportWriter can be exported as a Word document using the following code.
+The report used in ReportWriter can be exported as Word document using the following code.
 
 ~~~csharp
 
@@ -39,7 +39,7 @@ reportWriter.Save(Sample.doc, WriterFormat.Word);
 
 ### Exporting Report as Excel
 
-The report used in ReportWriter can be exported as an Excel document using the following code.
+The report used in ReportWriter can be exported as Excel document using the following code.
 
 ~~~csharp
 
@@ -52,7 +52,7 @@ reportWriter.Save(Sample.xls, WriterFormat.Excel);
 
 ### Exporting Report as HTML
 
-The report used in ReportWriter can be exported as an HTML document using the following code.
+The report used in ReportWriter can be exported as HTML document using the following code.
 
 ~~~csharp
 
@@ -65,7 +65,7 @@ reportWriter.Save(Sample.html, WriterFormat.HTML);
 
 ### Exporting Report as PPT
 
-The report used in ReportWriter can be exported as an PPT document using the following code.
+The report used in ReportWriter can be exported as PPT document using the following code.
 
 ~~~csharp
 
