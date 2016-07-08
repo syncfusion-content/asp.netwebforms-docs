@@ -42,7 +42,7 @@ N> The Grid will fetch all data based on the SELECT command of the SqlDataSource
 The following code example describes the above behavior.
 
 {% tabs %}
-{% highlight razor %}
+{% highlight html %}
 
 <ej:Grid runat="server" ID="Grid" DataSourceID="SqlData" AllowPaging="true">
             <Columns>
@@ -77,7 +77,7 @@ N> The Grid will fetch all data based on the `SelectMethod` of the ObjectDataSou
 The following code example describes the above behavior.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 <ej:Grid ID="EmployeesGrid" runat="server" DataSourceID="ObjectData" AllowSorting="True">
             <Columns>                
                 <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="100" />
@@ -146,7 +146,7 @@ To bind XmlDataSource in Grid, assign the Id of the data source control to the `
 The following code example describes the above behavior.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 <ej:Grid runat="server" ID="Grid" DataSourceID="OrderData">
             <Columns>
                 <ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right" />
@@ -186,7 +186,7 @@ Essential ASP.NET DataManager control can be used as interface between the data 
 The following code example describes the above behavior.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 <ej:DataManager runat="server" ID="DataManager" URL="Default.aspx/DataSource" Adaptor="UrlAdaptor">
 </ej:DataManager>
         
@@ -239,7 +239,7 @@ The Grid can be bound with either non-generic collection or generic collection t
 The following code example describes the above behavior.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 <ej:Grid runat="server" ID="Grid">                        
            <Columns>
                <ej:Column Field="FirstName" HeaderText="First Name"></ej:Column>
@@ -285,7 +285,7 @@ The collection of business objects generated from Entity Framework ORM can be us
 The following code example describes the above behavior.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 <ej:Grid runat="server" ID="Grid" AllowPaging="true">                        
            <Columns>
                <ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right"/>
@@ -328,7 +328,7 @@ The LINQ to SQL can be used as the data source of the Grid in which the data mod
 The following code example describes the above behavior.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 <ej:Grid runat="server" ID="Grid" AllowPaging="true">                        
            <Columns>
                <ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right"/>
@@ -375,7 +375,7 @@ Binding DataTable to Grid is a very simpler way that you only need to set DataTa
 The following code example describes the above behavior.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 
 <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
 </ej:Grid>
@@ -445,7 +445,7 @@ Create a collection of ITypedList and bind it to Grid using `DataSource` propert
 The following code example describes the above behavior.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 
 <ej:Grid ID="FlatGrid" runat="server"  AllowGrouping="true" AllowPaging="True">
 </ej:Grid>
@@ -538,7 +538,7 @@ N> You need to uncomment or include the "ScriptService" Attribute to WebService 
 The following code example describes the above behavior.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 <ej:Grid ID="EmployeesGrid2" runat="server" AllowPaging="True">
         <DataManager URL="WebService.asmx/Get" Adaptor="WebMethodAdaptor" />
         <Columns>
@@ -571,7 +571,7 @@ The following code example describes the above behavior.
 
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
  <DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"></DataManager>   
 <Columns>
@@ -599,7 +599,7 @@ N> ODL supports to parse the `$search` query option, however, Web API OData does
 The following code example describes the above behavior.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
 <DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"  Adaptor="ODataV4Adaptor"></DataManager>   
 <Columns>
@@ -628,7 +628,7 @@ DataOperation queries such as sorting, filtering, etc., would be sent to Web API
 The following code example describes the above behavior.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
     <DataManager URL="/api/Orders/"  Adaptor="WebApiAdaptor"></DataManager>   
 <Columns>
@@ -674,7 +674,7 @@ N> HTML table is the only valid element to use through `DataManager`.
 The following code example describes the above behavior.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 <script id="GridTable" type="text/template">
     <table>
         <thead>
@@ -759,7 +759,7 @@ By Default, Grid with remote data binding will work in “On-Demand” concept f
 The following code example describes the above behavior.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
             <DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"></DataManager>   
@@ -790,7 +790,7 @@ The following output is displayed as a result of the above code example.
 The following code example describes the above behavior.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
             <DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"></DataManager>   
@@ -825,7 +825,7 @@ N> window`s localStorage is used to cache the loaded data.
 The following code example describes the above behavior.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 <ej:Grid runat="server" ID="Grid" AllowPaging="true">
             <DataManager URL="Default.aspx/DataSource" EnableCaching="true" CachingPageSize="4" TimeTillExpiration="120000" Adaptor="WebMethodAdaptor" />
             <Columns>
@@ -853,7 +853,7 @@ The following code example describes the above behavior.
 
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 <ej:Grid runat="server" ID="Grid" AllowPaging="true" Query="new ej.Query().addParams('Syncfusion', true)">
             <DataManager URL="Default.aspx/DataSource" Adaptor="WebMethodAdaptor"/>              
             <Columns>
@@ -880,7 +880,7 @@ The Custom header can be added through `DataManager` `Headers` options. While pe
 The following code example describes the above behavior.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 <ej:Grid runat="server" ID="Grid" AllowPaging="true">
  <DataManager URL="Default.aspx/DataSource" Adaptor="WebMethodAdaptor">
          <Header>
@@ -929,7 +929,7 @@ It returns the error message.</td></tr>
 The following code example describes the above behavior.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 <ej:Grid runat="server" ID="Grid" AllowPaging="true">
             <DataManager URL="Default.aspx/DataSource" Adaptor="WebMethodAdaptor"/>              
             <Columns>
