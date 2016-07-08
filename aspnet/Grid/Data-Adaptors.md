@@ -19,7 +19,7 @@ The Json Adaptor is used when the grid is bound with local datasource. It can be
 The following code example describes the above behavior.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 
      <ej:Grid runat="server" ID="Grid">                        
              <Columns>
@@ -72,7 +72,7 @@ N> • The data parameter name must be “value”
 You can use the following code example to use WebMethod adaptor.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 
         <ej:Grid ID="EmployeesGrid2" runat="server" AllowPaging="True">
           <DataManager URL="Default.aspx/DataSource" Adaptor="WebMethodAdaptor" />
@@ -120,7 +120,7 @@ When using `UrlAdaptor`, grid actions such as Paging, Filtering and Sorting shou
 The following code example describes the above behavior.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 
         <ej:Grid runat="server" ID="Grid" AllowPaging="true">
             <DataManager URL="Default.aspx/DataSource" Adaptor="UrlAdaptor"/>              
@@ -175,7 +175,7 @@ N> `ODataAdaptor` is the default adaptor of `DataManager` and so no need to spec
 You can use the following code example to use OData adaptor.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 
      <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
          <DataManager URL=http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/ Adaptor="ODataAdaptor></DataManager>   
@@ -203,7 +203,7 @@ To consume OData V4 service, set the service link to the `Url` property and you 
 You can use the following code example to use ODataV4 adaptor.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 
         <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
             <DataManager URL=http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/ Adaptor="ODataAdaptor></DataManager>   
@@ -231,7 +231,7 @@ To consume Web API service, set the service link to the `Url` property and set t
 You can use the following code example to use WebAPI adaptor.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 	
         <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
             <DataManager URL=http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/ Adaptor="WebApiAdaptor></DataManager>   
@@ -280,7 +280,7 @@ CRUD operations can be mapped to server-side using `UpdateUrl`, `InsertUrl`, `Re
 You can use the following code example to use RemoteSave adaptor.
  
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
     
        <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True"> 
             <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"></EditSettings>
@@ -346,7 +346,7 @@ It works by specifying a virtual column (which is not in the grid datasource) in
 The following code example describes the above behavior.
 
 {% tabs %} 
-{% highlight razor %}
+{% highlight html %}
 
           <ej:Grid runat="server" ID="Grid" AllowPaging="true" AllowSorting="true">
             <Columns>
