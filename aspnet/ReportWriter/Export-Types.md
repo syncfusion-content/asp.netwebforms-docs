@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Saving a Report as Various Documents
-description: How To save a report as PDF, Word, Excel, PPT and HTML documents?
+title: Exporting a Report as Various Document formats
+description: How To export a report as PDF, Word, Excel, PPT and HTML documents?
 platform: aspnet
 control: ReportWriter
 documentation: ug
 ---
 
-# Saving Reports
+# Export Types
 
-Essential ReportWriter provides support for saving a report as a PDF, Word, Excel, PPT and HTML documents with the help of the class ReportWriter. The report elements such as Tablix, matrices, charts, gauges, shapes, and text boxes are supported in this feature. 
+Essential ReportWriter provides support for Exporting a report as a PDF, Word, Excel, PPT and HTML documents with the help of the class ReportWriter. The report elements such as Tablix, matrices, charts, gauges, shapes, and text boxes are supported in this feature. 
 
 ### Exporting Report as PDF
 
