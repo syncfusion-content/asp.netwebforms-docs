@@ -47,23 +47,23 @@ Specifies the text of menu items list</td></tr>
 <tr>
 <td>
 DataSpriteCssField</td><td>
-Specifies the sprite CSS class to “li” item list</td></tr>
+Specifies the sprite CSS class to “LI” item list</td></tr>
 <tr>
 <td>
 DataLinkAttributeField</td><td>
-Specifies the link attribute to “a” tag in item list</td></tr>
+Specifies the link attribute to “A” tag in item list</td></tr>
 <tr>
 <td>
 DataImageAttributeField</td><td>
-Specifies the image attribute to “img” tag inside items list </td></tr>
+Specifies the image attribute to “IMG” tag inside items list </td></tr>
 <tr>
 <td>
 DataHtmlAttributeField</td><td>
-Specifies the HTML attributes to “li” item list</td></tr>
+Specifies the HTML attributes to “LI” item list</td></tr>
 <tr>
 <td>
 DataImageUrlField</td><td>
-Specifies the image URL to “img” tag inside item list. </td></tr>
+Specifies the image URL to “IMG” tag inside item list. </td></tr>
 </table>
 
 
