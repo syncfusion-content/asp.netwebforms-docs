@@ -217,7 +217,7 @@ N> To pass the theme value as a string instead of the enum value, refer to the f
 
 ### Setting Page Options:
 
-It is possible to set/change the Pdf page settings such as size, margins (left, right, top and bottom), transition, and rotate angle and header/footer values by passing the page settings and page document template object values into the export method. 
+It is possible to set/change the PDF page settings such as size, margins (left, right, top and bottom), transition, and rotate angle and header/footer values by passing the page settings and page document template object values into the export method. 
 
 #### Page Settings:
 
