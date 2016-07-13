@@ -523,4 +523,4 @@ namespace ScheduleCRUDCS
 
 {% endhighlight %}
 
-N> In order to achieve the above scenario, need to refer the Microsoft DLL (Microsoft Outlook 12/15 Object library [Microsoft.Office.Interop.Outlook]) in your application and add it in the controller page as shown above.
+N> In order to achieve the above scenario, need to refer the Microsoft assembly (Microsoft Outlook 12/15 Object library [Microsoft.Office.Interop.Outlook]) in your application and add it in the controller page as shown above.
