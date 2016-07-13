@@ -83,7 +83,7 @@ The following screenshot displays the output of the above code example.
 
 ## JS binding
 
-KnockoutJS is a JavaScript library that follows the MVVM pattern to build sophisticated user interface with a clean underlying data model. It supports to update the UI dynamically. Refer to the following link to know more about KnockOutJS.
+KnockoutJS is a JavaScript library that follows the MVVM pattern to build sophisticated user interface with a clean underlying data model. It supports to update the UI dynamically. Refer to the following link to know more about KnockoutJS.
 
 [http://knockoutjs.com/documentation/introduction.html](http://knockoutjs.com/documentation/introduction.html)
 
