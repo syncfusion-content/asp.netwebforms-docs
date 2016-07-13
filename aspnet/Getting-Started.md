@@ -44,7 +44,7 @@ Toolbox
 
 * Finally build and run the project by pressing F5, so that you can now see the output similar to the below screenshot in your web browser.
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+![](Getting-Started_images/Getting-Started_img13.png)
 DatePicker control displayed in web browser
 {:.caption}
 
