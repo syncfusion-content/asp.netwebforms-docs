@@ -572,7 +572,7 @@ Once you finish adding the **Global.asax** file, delete all the methods inside t
 
 Now, **PivotChart** will be rendered with Amount over a set of products across different customer geographic locations.
 
-![](Getting-Started_images_images/ServerMode.png) 
+![](Relational-Getting-Started_images/ServerMode.png) 
 
 ### WCF
 
