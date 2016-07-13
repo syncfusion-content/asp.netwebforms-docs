@@ -19,7 +19,7 @@ The Essential ASP.NET Web Forms Editor control includes numeric, percentage, c
 
 ### Create TextBox Controls
 
-You can create a Web Forms Project and add the necessary Dll and Scripts with the help of the given [WebForms-Getting Started](http://help.syncfusion.com/aspnetmvc/currencytextbox/getting-started) documentation.
+You can create a Web Forms Project and add the necessary assembly and Scripts with the help of the given [WebForms-Getting Started](http://help.syncfusion.com/aspnetmvc/currencytextbox/getting-started) documentation.
 
 Add the necessary Textbox control and initialize the control.
 

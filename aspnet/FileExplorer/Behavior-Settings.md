@@ -38,7 +38,7 @@ In the view page, add FileExplorer element and specify the file type restriction
     
 ## Customize the AJAX request settings
 
-As you already know FileExplorer is a client – server based control and each action performed in the client sends an Ajax request to the server to perform the server side operations. While the AJAX request, the AJAX configurations can be customized through “[AjaxSettings](http://help.syncfusion.com/js/api/ejfileexplorer#members:ajaxsettings)” property.
+As you already know FileExplorer is a client – server based control and each action performed in the client sends an AJAX request to the server to perform the server side operations. While the AJAX request, the AJAX configurations can be customized through “[AjaxSettings](http://help.syncfusion.com/js/api/ejfileexplorer#members:ajaxsettings)” property.
 
 You can see the following requests passed during the **client – server** actions:
 
