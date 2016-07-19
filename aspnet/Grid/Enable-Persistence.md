@@ -1,186 +1,77 @@
 ---
 layout: post
-title: Enable Persistence | Grid | ASP.NET Webforms | Syncfusion
-description: enable persistence
-platform: aspnet
+title: Enable Persistence with Grid widget for Syncfusion Essential ASP.NET
+description: How to persist grid state across page refresh
+platform: ejweb
 control: Grid
 documentation: ug
 ---
 
 # Enable Persistence
 
-EnablePersistence is used to maintain the current state of the Grid model. When you refresh the page, the current grid state is stored in localStorage and it renders from stored model. 
-
-{% tabs %}
-
-{% highlight html %}
-
-
-
-
-   <div>
-
-        <ej:Grid ID="OrdersGrid" runat="server" AllowSorting="true" AllowPaging="True" AllowGrouping="True"
-
-            EnableAltRow="True" EnablePersistence="True">
-
-            <Columns>
-
-                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="90" />
-
-                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" />
-
-                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="110" />
-
-                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="90" Format="{0:C}" />
-
-                <ej:Column Field="OrderDate" HeaderText="Order Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" />
-
-                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
-
-            </Columns>
-
-            <PageSettings PageSize="9" />
-
-        </ej:Grid>
-
-    </div>
-{% endhighlight  %}
-{% highlight c#  %}
-
-
-
-
-using System;
-
-using System.Collections.Generic;
-
-using System.Linq;
-
-using System.Web;
-
-using System.Web.UI;
-
-using System.Web.UI.WebControls;
-
-
-
-namespace WebSampleBrowser.Grid
-
-{
-
-    public partial class StateMaintenance : System.Web.UI.Page
-
-    {
-
-        private List<Orders> order = new List<Orders>();
-
-        protected void Page_Load(object sender, EventArgs e)
-
-        {
-
-            BindDataSource();
-
-        }
-
-
-
-        private void BindDataSource()
-
-        {
-
-            int orderId = 10000;
-
-            int empId = 0;
-
-            for (int i = 1; i < 9; i++)
-
-            {
-
-                order.Add(new Orders(orderId + 1, "VINET", empId + 1, 32.38, new DateTime(2014, 12, 25), "Reims"));
-
-                order.Add(new Orders(orderId + 2, "TOMSP", empId + 2, 11.61, new DateTime(2014, 12, 21), "Munster"));
-
-                order.Add(new Orders(orderId + 3, "ANATER", empId + 3, 45.34, new DateTime(2014, 10, 18), "Berlin"));
-
-                order.Add(new Orders(orderId + 4, "ALFKI", empId + 4, 37.28, new DateTime(2014, 11, 23), "Mexico"));
-
-                order.Add(new Orders(orderId + 5, "FRGYE", empId + 5, 67.00, new DateTime(2014, 05, 05), "Colchester"));
-
-                order.Add(new Orders(orderId + 6, "JGERT", empId + 6, 23.32, new DateTime(2014, 10, 18), "Newyork"));
-
-                orderId += 6;
-
-                empId += 6;
-
-            }
-
-            this.OrdersGrid.DataSource = order;
-
-            this.OrdersGrid.DataBind();
-
-        }
-
-
-
-        [Serializable]
-
-        public class Orders
-
-        {
-
-            public Orders()
-
-            {
-
-
-
-            }
-
-            public Orders(int orderId, string customerId, int empId, double freight, DateTime orderDate, string shipCity)
-
-            {
-
-                this.OrderID = orderId;
-
-                this.CustomerID = customerId;
-
-                this.EmployeeID = empId;
-
-                this.Freight = freight;
-
-                this.OrderDate = orderDate;
-
-                this.ShipCity = shipCity;
-
-            }
-
-            public int OrderID { get; set; }
-
-            public string CustomerID { get; set; }
-
-            public int EmployeeID { get; set; }
-
-            public double Freight { get; set; }
-
-            public DateTime OrderDate { get; set; }
-
-            public string ShipCity { get; set; }
-
-        }
-
-    }
-
-}
-
-
-{% endhighlight  %}
-
-{% endtabs %}
-
-The following output is displayed as a result of the above code example.
-
-![](Enable-Persistence_images/Enable-Persistence_img1.png)
+Enable Persistence is to maintain the grid state in browser's [local storage](http://www.w3schools.com/html/html5_webstorage.asp#) even if browser refresh or move to next page. State persistence stores Grid's model object in local storage while defining `EnablePersistence` as true. 
+
+I>  [localstorage](http://www.w3schools.com/html/html5_webstorage.asp#) is not supported below IE9 then grid state persistence technique is fallback to [cookie](http://www.w3schools.com/js/js_cookies.asp#).
+
+## List of properties are not Persisted by default
+
+The following properties are not included while maintaining Grid state in local storage to keep localStorage compact.
+
+* Query
+* isEdit
+* toolbarClick
+* queryCellInfo
+* mergeCellInfo
+* currentViewData
+* EnableAltRow
+* EnableRTL 
+* ContextClick 
+* ContextOpen
+* RowDataBound
+* RowTemplate
+* DetailsDataBound
+* DetailsTemplate
+* childGrid 
+* SummaryRows 
+* ToolbarSettings
+* EditSettings
+* AllowMultiSorting 
+* EnableAutoSaveOnSelectionChange 
+* locale 
+* AllowScrolling 
+* AllowCellMerging
+* AllowTextWrap 
+* cssClass 
+* DataSource 
+* GroupSettings.EnableDropAreaAnimation 
+* EnableRowHover 
+* ShowSummary 
+* AllowGrouping
+* EnableHeaderHover 
+* AllowKeyboardNavigation 
+* ScrollSettings.FrozenRows 
+* ScrollSettings.FrozenColumns 
+* EnableTouch 
+* EditSettings.RowPosition 
+* EditSettings.showAddNewRow 
+* ContextMenuSettings.enableContextMenu
+
+I> The Grid model properties can be included or excluded in persist state using `addToPersist` and `ignoreOnPersist`.
+
+## Accessing currently stored state
+
+Persisted state can be accessed through local storage using corresponding key name. Key name is the combination of plugin name and control id.
+
+{% highlight javascript %}
+
+var gridStateString = window.localStorage.$ej$ejGridGrid; // grid state as string
+
+var gridStateObject = JSON.parse(window.localStorage.$ej$ejGridGrid); //grid state as object
+
+{% endhighlight %}
+
+
+I> In the above example, "ejGrid" is plugin name and "Grid" is control id.
 
 
 

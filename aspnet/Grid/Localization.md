@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Localization | Grid | ASP.NET Webforms | Syncfusion
-description: localization
-platform: aspnet
+title: Localization with Grid widget for Syncfusion Essential ASP.NET
+description: How to use globalization and localization
+platform: ejweb
 control: Grid
 documentation: ug
 ---
@@ -773,7 +773,7 @@ ej.ExcelFilter.Locale["de-DE"] = {
 
 ## Globalization
 
-`ej.globalize` library is used to globalize numeric values in Grid control using [`Format`](http://help.syncfusion.com/js/api/ejgrid#members:Columns-Format "Format") property in [`Columns`](http://help.syncfusion.com/js/api/ejgrid#members:Columns "Columns"). Globalize values will be automatically used when [`Locale`](http://help.syncfusion.com/js/api/ejgrid#members:Locale "Locale") property is set with Locale string value for example `de-DE`.
+`ej.globalize` library is used to globalize numeric values in Grid control using `Format` property in `Columns`. Globalize values will be automatically used when `Locale` property is set with Locale string value for example `de-DE`.
 
 {% tabs %}
 
@@ -921,7 +921,7 @@ I> In the above example, you need to use `ej.culture.de-DE` script file to globa
 
 ## Right to Left - RTL
 
-By default, Grid render its text and layout from left to right. To customize Grid's direction, you can change direction from LTR to RTL by using [`EnableRTL`](http://help.syncfusion.com/js/api/ejgrid#members:EnableRTL "EnableRTL") as true.
+By default, Grid render its text and layout from left to right. To customize Grid's direction, you can change direction from LTR to RTL by using `EnableRTL` as true.
 {% tabs %}
 
 {% highlight html %}
