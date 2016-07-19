@@ -1,15 +1,13 @@
 ---
 layout: post
-title: Server-side-event-arguments
+title: Server-side-event-arguments with Grid widget for Syncfusion Essential ASP.NET
 description: server side event arguments in asp grid
-platform: aspnet
+platform: ejweb
 control: Grid
 documentation: ug
 ---
 
 ## Server side event arguments in ASP Grid
-
-
 
 This section explains in detail about the various server-side events available in the **ASP Grid control** and the arguments that are obtained server-side. 
 
@@ -17,7 +15,7 @@ The **sender** parameter of all the server-side events returns the grid model de
 
 The various server-side events and the arguments corresponding to the events are as follows:
 
-### OnServerAddRow
+## OnServerAddRow
 
 The **OnServerAddRow** event is triggered upon saving the added record to the grid. The details of the added record can be obtained server-side, as explained in the following table.
 
@@ -64,7 +62,7 @@ It indicates the action performed in the grid.</td></tr>
 
 {% endhighlight %}
 
-{% highlight c# %}
+ {% highlight c# %}
 
 public partial class _Default : System.Web.UI.Page
 
@@ -165,7 +163,7 @@ public partial class _Default : System.Web.UI.Page
 
 {% endtabs %}
     
-### OnServerDeleteRow
+## OnServerDeleteRow
 
 The **OnServerDeleteRow** event is triggered upon deleting a record from the grid. The details of the deleted record can be obtained from the server-side, as explained in the following table.
 
@@ -241,7 +239,7 @@ public partial class _Default : System.Web.UI.Page
 
 {% endtabs %}
     
-### OnServerEditRow
+## OnServerEditRow
 
 The **OnServerEditRow** event is triggered upon saving the edited record to the grid. The details of the edited record can be obtained from server-side, as explained in the following table.
 
@@ -317,7 +315,7 @@ public partial class _Default : System.Web.UI.Page
 
 {% endtabs %}
     
-### OnServerCommandButtonClick
+## OnServerCommandButtonClick
 
 The **OnServerCommandButtonClick** event is triggered when a command(pre-defined or custom) button is clicked. The selected row details and the button details is obtained from server-side.
 
@@ -415,7 +413,7 @@ public partial class _Default : System.Web.UI.Page
 
 {% endtabs %}
     
-### OnServerRecordClick
+## OnServerRecordClick
 
 The **OnServerRecordClick** event is triggered when a record is clicked. The selected record details and the selected record index is obtained from server-side.
 
@@ -491,7 +489,7 @@ public partial class _Default : System.Web.UI.Page
 
 {% endtabs %}
     
-### OnServerRecordDoubleClick
+## OnServerRecordDoubleClick
 
 The **OnServerRecordDoubleClick** event is triggered when any grid record is double clicked. The details of the record double clicked can be obtained from server-side, as explained in the following table.
 
@@ -567,7 +565,7 @@ public partial class _Default : System.Web.UI.Page
 
 {% endtabs %}
     
-### OnServerRowSelected
+## OnServerRowSelected
 
 The **OnServerRowSelected** event is triggered when any of the rows are selected. The details of the row selected is obtained from server-side in the event argument.
 
@@ -647,7 +645,7 @@ public partial class _Default : System.Web.UI.Page
 
 {% endtabs %}
     
-### OnServerToolBarClick
+## OnServerToolBarClick
 
 The **OnServerToolBarClick** event is triggered when any of the toolbar icon is clicked. The details of the icon clicked can be obtained from server-side, as explained in the following table.
 
@@ -743,7 +741,7 @@ public partial class _Default : System.Web.UI.Page
 
 {% endtabs %}
     
-### OnServerExcelExporting
+## OnServerExcelExporting
 
 The **OnServerExcelExporting** event is triggered when a request is made to Export the grid to excel file. The grid model details can be obtained from server-side, as explained in the following table.
 
@@ -817,7 +815,7 @@ public partial class _Default : System.Web.UI.Page
 
 {% endtabs %}
     
-### OnServerExcelQueryCellInfo
+## OnServerExcelQueryCellInfo
 
 The **OnServerExcelQueryCellInfo** event is triggered every time a data is entered into a cell of the Excel sheet. So this event is triggered as many times as the data is entered into a cell written in the excel sheet. The properties corresponding to the XlsIO IRange Class are obtained from server-side, as explained in the following table.
 
@@ -902,7 +900,7 @@ public partial class _Default : System.Web.UI.Page
 
 {% endtabs %}
     
-### OnServerExcelRowInfo
+## OnServerExcelRowInfo
 
 The **OnServerExcelRowInfo** event is triggered every time a row is appended to the excel sheet. The properties corresponding to the XlsIO IRange Class are obtained server-side, as explained in the following table.
 
@@ -988,7 +986,7 @@ public partial class _Default : System.Web.UI.Page
 
 {% endtabs %}
     
-### OnServerPdfExporting
+## OnServerPdfExporting
 
 The **OnServerPdfExporting** event is triggered when a request to Export the grid to PDF document. The grid model details can be obtained server-side, as explained in the following table.
 
@@ -1062,7 +1060,7 @@ public partial class _Default : System.Web.UI.Page
 
 {% endtabs %}
     
-### OnServerPdfQueryCellInfo
+## OnServerPdfQueryCellInfo
 
 The **OnServerPdfQueryCellInfo** event is triggered every time data is written to the cell of the PdfGrid table. So this event is triggered as many times as that of the cell written to the grid table. The properties corresponding to the Pdf.Grid.PdfGridCell Class are obtained server-side, as explained in the following table.
 
@@ -1148,7 +1146,7 @@ public partial class _Default : System.Web.UI.Page
 
 {% endtabs %}
     
-### OnServerPdfRowInfo
+## OnServerPdfRowInfo
 
 The **OnServerPdfRowInfo** event is triggered every time a row is inserted to the PdfGrid. The properties corresponding to the Pdf.Grid.PdfGridRow Class are obtained server-side, as explained in the following table.
 
@@ -1232,7 +1230,7 @@ public partial class _Default : System.Web.UI.Page
 
 {% endtabs %}
     
-### OnServerWordExporting
+## OnServerWordExporting
 
 The **OnServerWordExporting** event is triggered when a request to export the grid to a word document. The grid model details can be obtained server-side as explained in the following table.
 
@@ -1306,7 +1304,7 @@ public partial class _Default : System.Web.UI.Page
 
 {% endtabs %}
     
-### OnServerWordQueryCellInfo
+## OnServerWordQueryCellInfo
 
 The **OnServerWordQueryCellInfo** event is triggered every time a cell data is written to the Word document. So this event is triggered as many times as that of the cell written to the word document. The properties corresponding to the DocIO.DLS.WTableCell Class is obtained server-side as explained in the following table.
 
@@ -1390,7 +1388,7 @@ public partial class _Default : System.Web.UI.Page
 
 {% endtabs %}
     
-### OnServerWordRowInfo
+## OnServerWordRowInfo
 
 The **OnServerWordRowInfo** event is triggered every time a row is inserted into the word document. The properties corresponding to the DocIO.DLS.WTableRow Class is obtained server-side as explained in the following table.
 

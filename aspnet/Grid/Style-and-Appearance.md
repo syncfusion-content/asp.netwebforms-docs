@@ -1,32 +1,214 @@
 ---
 layout: post
-title: Style and Appearance | Grid | ASP.NET Webforms | Syncfusion
-description: style and appearance
-platform: aspnet
+title: Style and Appearance with Grid widget for Syncfusion Essential ASP.NET
+description: How to apply styling and appearance
+platform: ejweb
 control: Grid
 documentation: ug
 ---
 
 # Style and Appearance
 
-Style and appearance of Grid are based on CSS class. You need two style sheets to apply styles to Grid control; one ej.widgets.core.min.css and one ej.theme.min.css. If you use ej.widgets.all.min.css then you don’t need to use ej.widgets.core.min.css and ej.theme.min.css because ej.widgets.all.min.css is a combination of these two. 
+## List of classes and its purposes
 
-## Customize styles
+To modify Grid appearance, you need to override default CSS of Grid. Please find the list of CSS classes and its corresponding section in Grid. Also you have an option to create your own custom theme for all ASP.NET controls using our `Theme Studio`. 
 
-In some scenarios, you may want to change color or design of Grid control’s appearance. In that situation, you can override default styles of Grid control using its class names. The following are specific class names you can use to modify styles and appearance in Grid.
+<table>
+        <tr>
+            <th>
+                Section
+            </th>
+            <th>
+                CSS class
+            </th>
+            <th>
+                Purpose of CSS class
+            </th>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                Root 
+            </td>
+            <td>
+                e-grid 
+            </td>
+            <td rowspan="2">
+                This classes are in this root element (div) of grid control. 
+            </td>
+        </tr>
+        <tr>          
+            <td>
+                e-js
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="5">
+                Header
+            </td>
+            <td>
+                e-gridheader
+            </td>
+            <td>
+                This is class is added in the root element of header element. In this class, You can override thin line between header and content of grid.
+            </td>
+        </tr>
+        <tr> 
+            <td>
+                e-table
+            </td>
+            <td>
+                This class is added at 'table' of grid header. This CSS class makes table width as 100 %.
+            </td>
+        </tr>
+        <tr>   
+            <td>
+                e-columnheader
+            </td>
+            <td>
+                This class is added at 'tr' of grid header. 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                e-headercell
+            </td>
+            <td>
+                This class is added in 'th' element of grid header. You can override background color of header and border color
+            </td>
+        </tr>
+        <tr> 
+            <td>
+                e-headercelldiv
+            </td>
+            <td>
+                This class is add in div which present 'th' element in header. You recommend you to use e-headercelldiv to override skeleton of header.
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="7">
+                Body
+            </td>
+            <td>
+                e-gridcontent
+            </td>
+            <td>
+                This class is added at root of body content. This is to override background color of body.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                e-table
+            </td>
+            <td>
+                This class is added to table of content. This CSS class makes table width as 100 %.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                e-alt_row
+            </td>
+            <td>
+                This class is added to alternate rows of grid. This is to override alternate row color of grid.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                e-rowcell
+            </td>
+            <td>
+                This class is added to all cells in grid. This is to override cells appearance and styling.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                e-groupcaption
+            </td>
+            <td>
+                This class is added to 'td' of group caption which is to change background color of caption cell.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                e-selectionbackground
+            </td>
+            <td>
+                This class is added to rowcell's of grid. this is override selection.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                e-hover 
+            </td>
+            <td>
+                This class adds to row of grid while hover grid rows.
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3">
+                Pager
+            </td>
+            <td>
+                e-pager
+            </td>
+            <td>
+                This class is added to root element of pager. This to change appearance of background color and color of font.
+            </td>
+        </tr>
+        <tr>  
+            <td>
+                e-pagercontainer
+            </td>
+            <td>
+                This class is added to numeric items of pager.
+            </td>
+        </tr>
+        <tr>   
+            <td>
+                e-parentmsgbar
+            </td>
+            <td>
+                This class is added to pager info of pager.
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="4">
+                Summary
+            </td>
+            <td>
+                e-gridfooter
+            </td>
+            <td>
+                This class is added to root of summary div.
+            </td>
+        </tr>
+        <tr>    
+            <td>
+                e-gridsummary
+            </td>
+            <td>
+                This class is added to table of summary. This CSS class makes table width as 100 %.
+            </td>
+        </tr>
+        <tr>   
+            <td>
+                e-gridSummaryRows
+            </td>
+            <td>
+                This class is added to rows of grid summary. 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                e-summaryrow
+            </td>
+            <td>
+                This class is added to cells of summary row. This to override background color of summary.
+            </td>
+        </tr>
+    </table>
+	
+## Toolbar Customization
 
-* e-js – Class name, used to represent element ej-widget control, that is present at the container element of Grid control.
-* e-gridheader – This class is applied at the root of header element.
-* e-gridcontent – This class is applied at the root of the body of the Grid.
-* e-table – This class is applied to all table elements inside Grid.
-* e-columnheader – This class is applied to row of Grid header.
-* e-headercell – This class is applied to th element of Grid header.
-* e-headercelldiv – This class is applied to dive element inside e-headercell.
-* e-hide – This class is applied to hidden elements in Grid control.
-* e-rowcell – This class is applied to td elements of Grid content.
-* e-alt_row – This class is applied to alternate rows of Grid.
-* e-hover – This class is applied to hover row of Grid.
-* e-selectionbackground – This is applied to selected cells.
-* e-gridfooter – This class is applied at the root of summary dive in Grid.
-* e-summaryrow – This class is applied to cells of summary row.
-* e-groupdroparea – This class is applied to group drop area in Grid.
+To customize toolbar, you need to use toolbar default CSS class to override icon in toolbar. 
+
+{% seealso %} [customize toolbar ](http://www.syncfusion.com/kb/5076/how-to-change-custom-icons-for-default-edit-toolbar-items "customize toolbar") {% endseealso %}
