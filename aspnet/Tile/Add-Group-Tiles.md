@@ -57,177 +57,23 @@ To render small-col-2 grouped tile, you need to render the number of tiles insid
 
 {% highlight html %}
 
-<div class="group">
-
-        <div class="column">
-
-            <div id="tile1">
-
-            </div>
-
-            <div id="tile2">
-
-            </div>
-
-            <div id="tile3">
-
-            </div>
-
-            <div id="tile4">
-
-            </div>
-
-            <div id="tile5">
-
-            </div>
-
+  <div class="e-tile-group">
+        <div class="e-tile-column">
+            <ej:Tile ID="tile1" runat="server" ImagePosition="center" TileSize="Medium" ImageUrl="../Content/themes/images/tile/windows/alerts.png" Text="Alerts"></ej:Tile>
+            <ej:Tile ID="tile2" runat="server" ImagePosition="Center" TileSize="Medium" ImageUrl="../Content/themes/images/tile/windows/pictures.png" Text="Pictures"></ej:Tile>            
+            <ej:Tile ID="tile6" runat="server" ImagePosition="Center" TileSize="Medium" ImageUrl="../Content/themes/images/tile/windows/camera.png" Text="Camera"></ej:Tile>
+            <ej:Tile ID="tile7" runat="server" ImagePosition="center" TileSize="Medium" ImageUrl="../Content/themes/images/tile/windows/messages.png" Text="Messages"></ej:Tile>
+            <ej:Tile ID="tile8" runat="server" ImagePosition="center" TileSize="Wide" ImageUrl="../Content/themes/images/tile/windows/games.png" Text="Games"></ej:Tile>
         </div>
-
-        <div class="column">
-
-            <div id="tile6">
-
-            </div>
-
-            <div id="tile7">
-
-            </div>
-
-            <div id="tile8">
-
-            </div>
-
-            <div id="tile9">
-
-            </div>
-
-            <div id="tile10">
-
-            </div>
-
-            <div id="tile11">
-
-            </div>
-
+        <div class="e-tile-column">
+            <ej:Tile ID="tile9" runat="server" ImagePosition="center" TileSize="Medium" ImageUrl="../Content/themes/images/tile/windows/map.png" Text="Map"></ej:Tile>
+            <ej:Tile ID="tile10" runat="server" ImagePosition="Center" TileSize="Medium" ImageUrl="../Content/themes/images/tile/windows/bing.png" Text="Bing"></ej:Tile>
+            <ej:Tile ID="tile11" runat="server" ImagePosition="Center" TileSize="medium" ImageUrl="../Content/themes/images/tile/windows/health.png" Text="Health"></ej:Tile>
+            <ej:Tile ID="tile3" runat="server" ImagePosition="fill" TileSize="medium" ImageUrl="../Content/themes/images/tile/windows/people_1.png" Text="Peoples"></ej:Tile>
+            <ej:Tile ID="tile12" runat="server" ImagePosition="Center" TileSize="Medium" ImageUrl="../Content/themes/images/tile/windows/weather.png" Text="weather"></ej:Tile>
+            <ej:Tile ID="tile13" runat="server" ImagePosition="Center" TileSize="Medium" ImageUrl="../Content/themes/images/tile/windows/music.png" Text="Music"></ej:Tile>
         </div>
-
     </div>
-
-
-
-    <script>
-
-        $("#tile1").ejTile({
-
-            tileSize: "medium", 
-
-            imageUrl: "http://js.syncfusion.com/UG/Web/Content/tile/alerts.png",
-
-            text: "Alerts"
-
-        });
-
-        $("#tile2").ejTile({
-
-            tileSize: "medium", 
-
-            imageUrl: "http://js.syncfusion.com/UG/Web/Content/tile/pictures.png",
-
-            text: "Pictures"
-
-        });
-
-        $("#tile3").ejTile({
-
-            tileSize: "medium", 
-
-            imageUrl: "http://js.syncfusion.com/UG/Web/Content/tile/camera.png",
-
-            text: "Camera"
-
-        });
-
-        $("#tile4").ejTile({
-
-            tileSize: "medium", 
-
-            imageUrl: "http://js.syncfusion.com/UG/Web/Content/tile/messages.png",
-
-            text: "Messages"
-
-        });
-
-        $("#tile5").ejTile({
-
-            tileSize: "wide", 
-
-            imageUrl: "http://js.syncfusion.com/UG/Web/Content/tile/games.png",
-
-            text: "Games"
-
-        });
-
-        $("#tile6").ejTile({
-
-            tileSize: "medium", 
-
-            imageUrl: "http://js.syncfusion.com/UG/Web/Content/tile/map.png",
-
-            text: "Map"
-
-        });
-
-        $("#tile7").ejTile({
-
-            tileSize: "medium", 
-
-            imageUrl: "http://js.syncfusion.com/UG/Web/Content/tile/bing.png",
-
-            text: "Bing"
-
-        });
-
-        $("#tile8").ejTile({
-
-            tileSize: "medium", 
-
-            imageUrl: "http://js.syncfusion.com/UG/Web/Content/tile/favs.png",
-
-            text: "Health"
-
-        });
-
-        $("#tile9").ejTile({
-
-            tileSize: "medium", imagePosition: "fill",
-
-            imageUrl: "http://js.syncfusion.com/UG/Web/Content/tile/people_2.png",
-
-            text: "Peoples"
-
-        });
-
-        $("#tile10").ejTile({
-
-            tileSize: "medium", 
-
-            imageUrl: "http://js.syncfusion.com/UG/Web/Content/tile/weather.png",
-
-            text: "Weather"
-
-        });
-
-        $("#tile11").ejTile({
-
-            tileSize: "medium", 
-
-            imageUrl: "http://js.syncfusion.com/UG/Web/Content/tile/music.png",
-
-            text: "Music"
-
-        });
-
-    </script>
 
 {% endhighlight %}
 

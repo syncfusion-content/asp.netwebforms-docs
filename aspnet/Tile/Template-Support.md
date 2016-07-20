@@ -9,52 +9,31 @@ documentation: ug
 
 # Template Support
 
-The “data-ej-imagetemplateid” attribute is used to customize the image of Tile with template feature by setting the id. The “data-ej-captiontemplateid” attribute is used to customize the text of Tile with template feature by setting the id. 
+The “imageTemplateId” attribute is used to customize the image of Tile with template feature by setting the id. 
 
 Refer to the following code examples.
 
 {% highlight html %}
 
-    <div id="tile"></div>
+     <ej:Tile runat="server"  ImageTemplateId="imageTemplate" TileSize="Wide" >  </ej:Tile>    
+ 
+          <div id="imageTemplate">
 
-    <div id="imageTemplate">
+            <div id="appimage">
 
-        <div id="appimage">
+            </div> 
 
+            <div class="tileMargin">
+
+                <span class="caption">Google Search</span><br />
+
+                <span class="description">The world’s information</span><br />
+
+                <span class="sub">Free</span>
+            </div>    
         </div>
-
-        <div class="tileMargin">
-
-            <span class="caption">Google Search</span><br />
-
-            <span class="description">The world’s information</span><br />
-
-            <span class="sub">Free</span>
-
-        </div>
-
-    </div>
-
-    <div id="captionTemplate" class="title">Windows Store</div>
-
-    <script>
-
-        $("#tile").ejTile({ tileSize: "wide", imageTemplateId: "imageTemplate", captionTemplateId: "captionTemplate" })
-
-    </script>
-
-
-{% endhighlight %}
-
-
-
-Add the following code example.
-
-{% highlight html %}
-
 <style>
-
-	#appimage {
+      #appimage {
 
 		background-image: url("http://js.syncfusion.com/UG/mobile/content/google.png");
 

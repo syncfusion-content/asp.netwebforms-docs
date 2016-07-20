@@ -57,25 +57,11 @@ Create an HTML file and paste the following template for web layout.
 
 
 
-Create a div element that acts as a container for Tile control. Initialize ejTile as in the following code example and specify the tile text, size and image url.
+Initialize ejTile as in the following code example and specify the tile text, size and image url.
 
 {% highlight html %}
 
-<div id="tile1">
-
-        </div>
-
-<script>
-
-    $(function ()
-
-    {
-
-     $("#tile1").ejTile({ text: "Map", tileSize: "medium", imageUrl: 'http://js.syncfusion.com/ug/web/content/tile/map.png' });
-
-    });
-
-</script>
+<ej:Tile runat="server" ImageUrl="../Content/images/tile/windows/map.png" TileSize="Medium" Text="People"></ej:Tile>
 
 {% endhighlight %}
 
@@ -95,89 +81,25 @@ Refer to the following code example.
 
 {% highlight html %}
 
-<div id="tile" style="margin-top: 45px;">
 
-    <div class="group">
-
-        <div class="column">
-
-            <div id="tile1">
-
+         <div class="e-tile-group">
+            <div class="e-tile-column">
+                <ej:Tile ID="tile1" runat="server" ImagePosition="Fill" TileSize="Medium" ImageUrl="../Content/themes/images/Tile/people_1.png" Text="People"></ej:Tile>
+                <div class="e-tile-small-col-2">
+                    <ej:Tile ID="tile2" runat="server" ImagePosition="Center" TileSize="Small" ImageUrl="../Content/themes/images/Tile/alerts.png"></ej:Tile>
+                    <ej:Tile ID="tile3" runat="server" ImagePosition="Center" TileSize="Small" ImageUrl="../Content/themes/images/Tile/bing.png"></ej:Tile>
+                    <ej:Tile ID="tile4" runat="server" TileSize="Small" ImageUrl="../Content/themes/images/Tile/camera.png"></ej:Tile>
+                    <ej:Tile ID="tile5" runat="server" ImagePosition="Center" TileSize="Small" ImageUrl="../Content/images/Tile/messages.png"></ej:Tile>
+                </div>
+                <ej:Tile ID="tile6" runat="server" ImagePosition="Center" TileSize="Medium" ImageUrl="../Content/themes/images/Tile/games.png" Text="Play"></ej:Tile>
+                <ej:Tile ID="tile7" runat="server" TileSize="Medium" ImageUrl="../Content/themes/images/Tile/map.png" Text="Maps"></ej:Tile>
             </div>
-
-            <div id="tile2">
-
+            <div class="e-tile-column">
+                <ej:Tile ID="tile9" runat="server" ImagePosition="Fill" TileSize="Medium" ImageUrl="../Content/themes/images/Tile/people_2.png" Text="People"></ej:Tile>
+                <ej:Tile ID="tile10" runat="server" ImagePosition="Center" TileSize="Medium" ImageUrl="../Content/themes/images/Tile/pictures.png" Text="Photo"></ej:Tile>
+                <ej:Tile ID="tile11" runat="server" ImagePosition="Center" TileSize="Wide" ImageUrl="../Content/themes/images/Tile/weather.png" Text="Weather"></ej:Tile>
             </div>
-
-            <div id="tile3">
-
-            </div>
-
-            <div id="tile4">
-
-            </div>
-
-            <div id="tile5">
-
-            </div>
-
-            <div id="tile6">
-
-            </div>
-
-            <div id="tile7">
-
-            </div>   
-
         </div>
-
-        <div class="column">
-
-            <div id="tile8">
-
-            </div>
-
-            <div id="tile9">
-
-            </div>
-
-            <div id="tile10">
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-<script>
-
-    $(function () {
-
-        $("#tile1").ejTile({ imageUrl: 'http://js.syncfusion.com/ug/web/content/tile/people_1.png', imagePosition: "fill", tileSize: "medium", text: "People" });
-
-        $("#tile2").ejTile({ imageUrl: 'http://js.syncfusion.com/ug/web/content/tile/alerts.png'});
-
-        $("#tile3").ejTile({ imageUrl: 'http://js.syncfusion.com/ug/web/content/tile/bing.png'});
-
-        $("#tile4").ejTile({ imageUrl: 'http://js.syncfusion.com/ug/web/content/tile/camera.png'});
-
-        $("#tile5").ejTile({ imageUrl: 'http://js.syncfusion.com/ug/web/content/tile/messages.png'});
-
-        $("#tile6").ejTile({ imageUrl: 'http://js.syncfusion.com/ug/web/content/tile/games.png', tileSize: "medium", text: "Play" });
-
-        $("#tile7").ejTile({ imageUrl: 'http://js.syncfusion.com/ug/web/content/tile/map.png', tileSize: "medium", text: "Maps" });
-
-        $("#tile8").ejTile({ imageUrl: 'http://js.syncfusion.com/ug/web/content/tile/people_2.png', imagePosition: "fill", tileSize: "medium", text: "People" });
-
-        $("#tile9").ejTile({ imageUrl: 'http://js.syncfusion.com/ug/web/content/tile/pictures.png', tileSize: "medium", text: "Photo" });
-
-        $("#tile10").ejTile({ imageUrl: 'http://js.syncfusion.com/ug/web/content/tile/weather.png',  tileSize: "wide", text: "Weather" });
-
-    });
-
-</script>
 
 {% endhighlight %}
 

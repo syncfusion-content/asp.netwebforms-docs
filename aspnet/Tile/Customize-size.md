@@ -9,7 +9,7 @@ documentation: ug
 
 # Customize size
 
-You can customize the size of the Tile by using the “data-ej-tileSize” attribute. The following built-in tile sizes are supported.
+You can customize the size of the Tile by using the “tileSize” attribute. The following built-in tile sizes are supported.
 
 1. medium
 2. small
@@ -22,21 +22,11 @@ Refer to the following code examples.
 
 {% highlight html %}
 
-<div id="tile"></div>
 
-<script>
 
-	$("#tile").ejTile({
+ <ej:Tile runat="server" ImagePosition="Center" ImageUrl="../content/images/tile/pictures.png" TileSize="Medium" >
 
-		tileSize: "medium", imagePosition: "center",
-
-		imageUrl: "http://js.syncfusion.com/UG/Web/Content/tile/pictures.png",
-
-		text: "Pictures"
-
-	})
-
-</script>	
+	</ej:Tile> 	
 
 {% endhighlight %}
 
