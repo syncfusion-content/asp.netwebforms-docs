@@ -18,11 +18,11 @@ I>  [localstorage](http://www.w3schools.com/html/html5_webstorage.asp#) is not s
 The following properties are not included while maintaining Grid state in local storage to keep localStorage compact.
 
 * Query
-* isEdit
-* toolbarClick
-* queryCellInfo
-* mergeCellInfo
-* currentViewData
+* IsEdit
+* ToolbarClick
+* QueryCellInfo
+* MergeCellInfo
+* CurrentViewData
 * EnableAltRow
 * EnableRTL 
 * ContextClick 
@@ -31,17 +31,17 @@ The following properties are not included while maintaining Grid state in local 
 * RowTemplate
 * DetailsDataBound
 * DetailsTemplate
-* childGrid 
+* ChildGrid 
 * SummaryRows 
 * ToolbarSettings
 * EditSettings
 * AllowMultiSorting 
 * EnableAutoSaveOnSelectionChange 
-* locale 
+* Locale 
 * AllowScrolling 
 * AllowCellMerging
 * AllowTextWrap 
-* cssClass 
+* CssClass 
 * DataSource 
 * GroupSettings.EnableDropAreaAnimation 
 * EnableRowHover 
@@ -53,10 +53,10 @@ The following properties are not included while maintaining Grid state in local 
 * ScrollSettings.FrozenColumns 
 * EnableTouch 
 * EditSettings.RowPosition 
-* EditSettings.showAddNewRow 
-* ContextMenuSettings.enableContextMenu
+* EditSettings.ShowAddNewRow 
+* ContextMenuSettings.EnableContextMenu
 
-I> The Grid model properties can be included or excluded in persist state using `addToPersist` and `ignoreOnPersist`.
+I> The Grid model properties can be maintained or prevented from being persisted using `addToPersist` and `ignoreOnPersist` methods.
 
 ## Accessing currently stored state
 
