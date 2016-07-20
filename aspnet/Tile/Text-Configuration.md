@@ -9,9 +9,9 @@ documentation: ug
 
 # Text Configuration
 
-The “data-ej-showtext” attribute is used to show or hide the Tile caption. By default, the “data-ej-showtext” attribute is to true on initialization. The“data-ej-text” attribute is used to set the caption of a Tile as a Text on initialization. The “data-ej-textalignment” attribute is used to align the Tile text as normal on initialization. The possible position values for “data-ej-textalignment” are as follows: 
+The“caption-text” attribute is used to set the caption of a Tile as a Text on initialization. The “caption-alignment” attribute is used to align the Tile text as normal on initialization. Befoer that we need to set true to the “caption-enabled” property. The possible position values for “caption-alignment” are as follows: 
 
-1. normal
+1. normal 
 2. left
 3. right
 4. center
@@ -22,13 +22,11 @@ Refer to the following code examples.
 
 {% highlight html %}
 
-    <div id="tile"></div>
 
-<script>
+      <ej:Tile runat="server" ImagePosition="Center" ImageUrl="../Content/images/tile/camera.png" TileSize="Medium" >
+             <CaptionTile Enabled="true" Text="Camera" Alignment="Center" />
+      </ej:Tile>    
 
-    $("#tile").ejTile({ tileSize: "medium", imagePosition: "center", textAlignment: "center", imageUrl: "http://js.syncfusion.com/UG/web/Content/tile/camera.png", text: "Camera" })
-
-</script>
 
 {% endhighlight %}
 
