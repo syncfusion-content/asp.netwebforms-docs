@@ -31,7 +31,7 @@ To translate our control content from default English to any of the culture, say
 
 The **en-US** locale is currently being used as default culture in DateTimePicker. You can set any other culture to DateTimePicker using **Locale** property. Below code example shows Spanish cultured DateTimePicker.
 
-Refer the below Spanish culture file in head section of html page after the reference of **ej.web.all.min.js** file.
+Refer the below Spanish culture file in head section of HTML page after the reference of **ej.web.all.min.js** file.
 
  {% highlight javascript %}
    
