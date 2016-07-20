@@ -165,20 +165,20 @@ Add the following code in your style section.
 
 {% highlight css %}
 
-    .Purple-dark {
 
-        background: pink;
-
-    }
-
-
-
-    .Purple-dark.e-horizontal .e-list > a {
-
-            color: #4800ff;
-
+      .Purple-dark .e-menu,.e-menu.e-horizontal .e-list > ul {     
+         
+       background: pink;              
+     
      }
-
+     
+     
+    
+    .Purple-dark .e-menu.e-horizontal .e-list > a {    
+    
+      color: blue;      
+      
+     }
 
 
 
