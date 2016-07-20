@@ -18,7 +18,7 @@ The MaskEditTextbox control supports two types of AngularJS support namely,
 
 One-way binding refers to the process of applying scope values to all the available properties of the MaskEditTextbox control, but the changes made in MaskEditTextbox control are not reflected or triggered in turn to the scope collection. This kind of binding applies to all the properties of the MaskEditTextbox control.
 
-Two-way binding supports both the processes; it applies the scope values to the MaskEditTextbox properties as well as the changes made in the MaskEditTextbox control also get reflected back and triggered within the angularJS scope change function.
+Two-way binding supports both the processes; it applies the scope values to the MaskEditTextbox properties as well as the changes made in the MaskEditTextbox control also get reflected back and triggered within the AngularJS scope change function.
 
 Apply the plugin and property assigning to the MaskEditTextbox control element through the directive that starts with the letter “e-“.
 
@@ -118,7 +118,7 @@ The following example explains the how to bind data to the MaskEditTextbox cont
 
 
 
-The output of NumericTextbox controls with two-way angularJS binding is as follows.
+The output of NumericTextbox controls with two-way AngularJS binding is as follows.
 
 ![](Integration_images/Integration_img1.jpeg) 
 
