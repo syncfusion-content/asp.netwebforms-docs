@@ -160,7 +160,7 @@ Now you need to register the below mentioned two namespaces in the web.config fi
                    <div id="description_Pane" style="text-align: justify;">
                        <h3>Description</h3>
                        <span>
-                           Essential Report Writer is a powerful control for exporting RDL files into specified
+                           Essential ReportWriter is a powerful control for exporting RDL files into specified
                            format files.The following are some of the key features of this component: Provides
                            support for various chart types that include Area, Bar, Column, Pie, Funnel, Radar,
                            Line and so on. Provides support for both Matrix and Table and also provides support for

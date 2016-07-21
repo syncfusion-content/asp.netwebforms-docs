@@ -19,7 +19,7 @@ ReportDataSourceCollection dataSources = new ReportDataSourceCollection();
 
 dataSources.Add(new ReportDataSource() { Name = "Sales", Value = GetDataSource() });
 
-//Step 2: Instantiate the report writer with the parameter "ReportPath" and ReportDataSource Collection
+//Step 2: Instantiate the reportwriter with the parameter "ReportPath" and ReportDataSource Collection
 ReportWriter reportWriter = new ReportWriter(reportPath, dataSources);
 
 MemoryStream stream = new MemoryStream();
