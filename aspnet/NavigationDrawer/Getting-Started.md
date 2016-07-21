@@ -193,7 +193,7 @@ You can display the drawer either by clicking on the target icon or by swiping f
 
 
 
-You can set the images for Navigation Drawer by using data-ej-imageclass attribute in the inner list elements.
+You can set the images for Navigation Drawer by using data-ej-imageClass attribute in the inner list elements.
 
 {% highlight html %}
 
