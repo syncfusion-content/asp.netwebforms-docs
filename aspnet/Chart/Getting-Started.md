@@ -38,7 +38,7 @@ N> If you are referring Syncfusion assemblies manually from bin folder to create
 
 ###  Adding script reference
 
-By default, Syncfusion JavaScript source files has been included into the EJ.Web assembly as an embedded source. So we no need to refer jQuery and Syncfusion scripts externally. For debugging purpose want to refer script files externally, set false to **LoadEJResourcesFromAssembly** in Web.config file as shows in the below image and refer jquery and syncfusion script files.
+By default, Syncfusion JavaScript source files has been included into the EJ.Web assembly as an embedded source. So we no need to refer jQuery and Syncfusion scripts externally. For debugging purpose want to refer script files externally, set false to **LoadEJResourcesFromAssembly** in Web.config file as shows in the below image and refer jQuery and Syncfusion script files.
 
 ![](Getting-Started_images/Getting-Started_img3.png) 
 
