@@ -245,7 +245,11 @@ Custom context menu is used to create your own menu item and its action. To add 
         <div>
             <ej:Grid ID="Grid" runat="server" AllowPaging="True" AllowSorting="true" AllowGrouping="true">
                 <ClientSideEvents ContextClick="contextClick" />
-                <ContextMenuSettings EnableContextMenu="true" ContextMenuItem=" " CustomContextMenuItem="Clear Selection"></ContextMenuSettings>
+                <ContextMenuSettings EnableContextMenu="true" DisableDefaultItems="true">
+                    <CustomContextMenuItem>
+                        <ej:CustomContexMenuItems Text="Clear Selection" />
+                    </CustomContextMenuItem>
+                </ContextMenuSettings>
                 <Columns>
                     <ej:Column Field="OrderID" IsPrimaryKey="true" HeaderText="Order ID" Width="90" TextAlign="Right"/>
                     <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90"/>
@@ -340,7 +344,11 @@ Sub context menu is used to add customized sub menu to the custom context menu i
         <div>
             <ej:Grid ID="Grid" runat="server" AllowPaging="True" AllowSorting="true" AllowGrouping="true">
                 <ClientSideEvents ContextClick="contextClick" />
-                <ContextMenuSettings EnableContextMenu="true" ContextMenuItems=" " CustomContextMenuItem="Clear Selection","Hide Column">
+                <ContextMenuSettings EnableContextMenu="true" DisableDefaultItems="true">
+                    <CustomContextMenuItem>
+                        <ej:CustomContexMenuItems Text="Clear Selection" />
+                        <ej:CustomContexMenuItems Text="Hide Column" />
+                    </CustomContextMenuItem>
                     <SubContextMenu>
                         <ej:SubContextMenu  ContextMenuItem="Hide Column" SubMenu="Order ID","Customer ID","Employee ID"/>
                     </SubContextMenu>
