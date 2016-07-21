@@ -226,7 +226,7 @@ ImageBoth</th><td>
 Supports image for both ends of the button.</td></tr>
 <tr>
 <th>
-TexAandImage</th><td>
+TextAndImage</th><td>
 Supports image with the text content.</td></tr>
 <tr>
 <th>
