@@ -18,7 +18,7 @@ The CurrencyTextbox control supports two types of Angular JS support,
 
 One-way binding refers to the process of applying scope values to all the available properties of the CurrencyTextbox control, but the changes made in the CurrencyTextbox control are not reflected or triggered in turn to the scope collection. This kind of binding applies to all the properties of the CurrencyTextbox control.
 
-Two-way binding supports both the processes. It applies the scope values to the CurrencyTextbox properties and the changes made in the CurrencyTextbox control are reflected back and triggered within the angularJS scope change function.
+Two-way binding supports both the processes. It applies the scope values to the CurrencyTextbox properties and the changes made in the CurrencyTextbox control are reflected back and triggered within the AngularJS scope change function.
 
 Apply the plugin and property assigning to the CurrencyTextbox control element through the directive that starts with the letter “e-“.
 
