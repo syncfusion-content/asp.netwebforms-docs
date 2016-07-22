@@ -89,7 +89,7 @@ Value="female">
 
 ## Server Side Events
 
-The following server side event is available in Radio Button control.__
+The following server side event is available in Radio Button control.
 
 <table>
 <tr>
@@ -121,7 +121,7 @@ OnChange="RadBtn_Male_Change">
 </ej:RadioButton>
 {% endhighlight %}
 
-The code Define RadBtn_Male_Change server side event in behind
+The code **RadBtn_Male_Change** defines the server side "onChange" event in code behind.
 
 {% highlight c# %}
 
