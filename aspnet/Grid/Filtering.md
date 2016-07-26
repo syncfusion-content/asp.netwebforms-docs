@@ -102,7 +102,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img1.png)
+![](Filtering_images/Filtering_img1.png)
 
 
 ## Menu Filter
@@ -185,19 +185,19 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img2.png)
+![](Filtering_images/Filtering_img2.png)
 
 Numeric Filter
 
-![](filtering_images/filtering_img3.png)
+![](Filtering_images/Filtering_img3.png)
 
 String Filter
 
-![](filtering_images/filtering_img4.png)
+![](Filtering_images/Filtering_img4.png)
 
 Date Filter
 
-![](filtering_images/filtering_img5.png)
+![](Filtering_images/Filtering_img5.png)
 
 Boolean Filter
 
@@ -280,7 +280,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img6.png)
+![](Filtering_images/Filtering_img6.png)
 
 
 Checkbox list generation:
@@ -365,7 +365,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img7.png)
+![](Filtering_images/filtering_img7.png)
 
 
 ### Case Sensitivity
@@ -446,7 +446,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img8.png)
+![](Filtering_images/filtering_img8.png)
 
 
 ## Filter Bar
@@ -665,7 +665,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img9.png)
+![](Filtering_images/filtering_img9.png)
 
 
 Filter bar modes:
@@ -754,7 +754,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img10.png)
+![](Filtering_images/filtering_img10.png)
 
 
 ## Filter Operators
