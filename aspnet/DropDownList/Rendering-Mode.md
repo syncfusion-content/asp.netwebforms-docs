@@ -13,7 +13,7 @@ DropDownList control can be created using UL-LI element.
 
 By default DropDownList control is rendered using DropDownList ej tag to which you can pass popup items using DataSource and DropDownMapperFields property. 
 
-## Using UL-LI
+## Target Rendering
 
 You can bind the predefined set of UL-LI elements to generate the list of popup items. These items can be customized by adding any images, div elements, radio buttons, text boxes etc.
 
