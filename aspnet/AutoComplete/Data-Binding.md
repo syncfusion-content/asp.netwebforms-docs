@@ -498,7 +498,7 @@ DataTextField="Text" DataUniqueKeyField="ID" />
 
 The following screenshot is the output for AutoComplete control with ObjectDataSource data binding.
 
-![](/Data-Binding_images/Data-Binding_img5.png) 
+![](Data-Binding_images/Data-Binding_img5.png) 
 
 
 
