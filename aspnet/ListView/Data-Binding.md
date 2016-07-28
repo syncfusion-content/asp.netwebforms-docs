@@ -84,11 +84,11 @@ protected void Page_Load(object sender, EventArgs e)
 
 Run the code to get the following output
 
-![](/js/ListView/Data-Binding_images/Data-Binding_img1.png) 
+![](Data-Binding_images/Data-Binding_img1.png) 
 
 **FieldSettings**
 
-The `FieldSettings` property is used to map the **DataSource** field with the list item fields. In addition to the list [item specific properties](/asp/listview/grouped-list), the following fields are available while mapping.
+The `FieldSettings` property is used to map the **DataSource** field with the list item fields. In addition to the list [item specific properties](/aspnet/listview/grouped-list), the following fields are available while mapping.
 
 _FieldSettings_
 
@@ -121,11 +121,11 @@ Please refer the following code examples.
 
 Run the code to get the following output
 
-![](/js/ListView/Data-Binding_images/Data-Binding_img2.png) 
+![](Data-Binding_images/Data-Binding_img2.png) 
 
 
 When you click on the parent item, it navigates to its corresponding child list item as follows.
 
 
-![](/js/ListView/Data-Binding_images/Data-Binding_img3.png) 
+![](Data-Binding_images/Data-Binding_img3.png) 
 

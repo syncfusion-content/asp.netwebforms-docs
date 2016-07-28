@@ -36,4 +36,4 @@ Refer to the following code examples.
 
 Run the code to get the following output
 
-![](/js/ListView/Dimensions_images/Dimensions_img1.png) 
+![](Dimensions_images/Dimensions_img1.png) 
