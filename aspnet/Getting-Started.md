@@ -240,6 +240,17 @@ Add the below script references in the Site.Master file within the head section,
 
 {% endhighlight %}
 
+### Adding Script Manager
+
+Add ASP Script Manager in your layout page for registering the EJ resources and its dependent cleint side scripts in your page as shown below.
+
+{% highlight html %}
+<asp:ScriptManager runat="server">
+</asp:ScriptManager>
+{% endhighlight %}
+
+N> Without adding the Script Manager in your layout page, the controls might be rendered properly but may not work as expected.
+
 ### Assembly Reference
 Refer the following assemblies in your newly created ASP.NET application, which allows you to use any of the Syncfusion ASP.NET controls within it.
 
