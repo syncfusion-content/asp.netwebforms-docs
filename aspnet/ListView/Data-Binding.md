@@ -26,6 +26,7 @@ You can use the following code example to give you the exact output.
 
 In code behind:
 {% highlight html %}
+
 protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -78,9 +79,8 @@ protected void Page_Load(object sender, EventArgs e)
             }
  }
 
- </ej:ListView>
 
-
+{% endhighlight %}
 
 Run the code to get the following output
 
@@ -112,8 +112,8 @@ Please refer the following code examples.
 
 {% highlight html %}
 
-
     <ej:ListView ID="ListView"   Height="450" Width="400" ShowHeader="true" HeaderTitle="Favourite" DataPrimaryKeyField="primaryKeys" DataTextField="text" DataParentPrimaryKeyField="parentPrimaryKeyss" DataChildHeaderTitleField="Title" DataChildHeaderBackButtonTextField="BackIconText"  runat="server" >
+    
    </ej:ListView>
    
    

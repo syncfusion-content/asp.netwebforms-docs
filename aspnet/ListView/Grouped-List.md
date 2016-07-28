@@ -81,7 +81,6 @@ Refer the following code examples.
         </GroupItems> 
 </ej:ListView>
 
-
 {% endhighlight %}
 
 Run the codes to get the following output
