@@ -43,7 +43,7 @@ Refer the following code example.
 
 Run the codes to get the following output
 
-![](/js/ListView/Grouped-List_images/Grouped-List_img1.png) 
+![](Grouped-List_images/Grouped-List_img1.png) 
 
 
 **Nested Child Group List**
@@ -85,7 +85,7 @@ Refer the following code examples.
 
 Run the codes to get the following output
 
-![](/js/ListView/Grouped-List_images/Grouped-List_img2.png) 
+![](Grouped-List_images/Grouped-List_img2.png) 
 
 
 
