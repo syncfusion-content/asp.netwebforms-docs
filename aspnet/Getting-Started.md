@@ -213,7 +213,7 @@ The dependencies are available in the following locations of your machine. Pleas
 <td>&lt;Syncfusion Installed Location&gt;\Essential Studio\13.1.0.21\JavaScript\assets\scripts\web</td>
 </tr>
 <tr>
-<td>ej.web.all.min.js</td>
+<td>ej.webform.min.js</td>
 <td>&lt;Syncfusion Installed Location&gt;\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common</td>
 </tr>
 </table>
