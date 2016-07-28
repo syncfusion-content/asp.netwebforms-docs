@@ -61,7 +61,7 @@ The following screenshot displays the exported grid with comments added to cells
 
 # Adding Comments in Exported Word document
 
-We can add comments to the word document using the AppendComment method in the WComment class of the DocIO namespace. We can traverse through the required row/cell with the help of Wtable class and thus can append the comment to the table cell.
+We can add comments to the word document using the AppendComment method in the WComment class of the DocIO namespace. We can traverse through the required row/cell with the help of WTable class and thus can append the comment to the table cell.
 
 {% tabs %}
 

@@ -57,7 +57,7 @@ Create an HTML file and paste the following template for web layout.
 
 
 
-Initialize ejTile as in the following code example and specify the tile text, size and image url.
+Initialize ejTile as in the following code example and specify the tile text, size and image URL.
 
 {% highlight html %}
 

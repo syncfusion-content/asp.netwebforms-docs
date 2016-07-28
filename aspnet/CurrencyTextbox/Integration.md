@@ -18,7 +18,7 @@ The CurrencyTextbox control supports two types of Angular JS support,
 
 One-way binding refers to the process of applying scope values to all the available properties of the CurrencyTextbox control, but the changes made in the CurrencyTextbox control are not reflected or triggered in turn to the scope collection. This kind of binding applies to all the properties of the CurrencyTextbox control.
 
-Two-way binding supports both the processes. It applies the scope values to the CurrencyTextbox properties and the changes made in the CurrencyTextbox control are reflected back and triggered within the angular scope change function.
+Two-way binding supports both the processes. It applies the scope values to the CurrencyTextbox properties and the changes made in the CurrencyTextbox control are reflected back and triggered within the AngularJS scope change function.
 
 Apply the plugin and property assigning to the CurrencyTextbox control element through the directive that starts with the letter “e-“.
 
@@ -45,10 +45,6 @@ The following example shows the way to bind data to the CurrencyTextbox control
     <link href=" http://cdn.syncfusion.com/ {{site.releaseversion}}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
 
     <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>  
 

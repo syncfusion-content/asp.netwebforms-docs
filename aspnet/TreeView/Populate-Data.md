@@ -144,7 +144,7 @@ It defines the sprite CSS for the image tag.
 DataHtmlAttributeField
 </td>
 <td>
-It defines the HTML attributes such as class and styles for a node (li tag).
+It defines the HTML attributes such as class and styles for a node ("li" tag).
 </td>
 </tr>
 <tr>

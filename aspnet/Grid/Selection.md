@@ -19,11 +19,11 @@ There are two types of selections available in grid. They are
 
 ### Single Selection
 
-Single selection is an interactive support to select a specific row, cell or column in grid by mouse or keyboard interactions. To enable single selection by setting `Selectiontype` property as `Single` and also set `AllowSelection` property as `true`.
+Single selection is an interactive support to select a specific row, cell or column in grid by mouse or keyboard interactions. To enable single selection by setting `SelectionType` property as `Single` and also set `AllowSelection` property as `true`.
 
 ### Multiple Selections
 
-Multiple selections is an interactive support to select a group of rows, cells or columns in grid by mouse or keyboard interactions. To enable multiple selections by set `Selectiontype`  property as `Multiple` and also set `AllowSelection` property as `true`.
+Multiple selections is an interactive support to select a group of rows, cells or columns in grid by mouse or keyboard interactions. To enable multiple selections by set `SelectionType`  property as `Multiple` and also set `AllowSelection` property as `true`.
 
 ## Row Selection
 

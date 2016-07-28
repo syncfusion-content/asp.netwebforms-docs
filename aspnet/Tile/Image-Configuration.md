@@ -9,7 +9,7 @@ documentation: ug
 
 # Image Configuration
 
-The “imageposition” attribute is used to adjust the position of Tile image at the center on initialization. The possible values for the “imageposition” are as follows
+The “imagePosition” attribute is used to adjust the position of Tile image at the center on initialization. The possible values for the “imageposition” are as follows
 
 1. center
 2. topcenter
@@ -21,7 +21,7 @@ The “imageposition” attribute is used to adjust the position of Tile image a
 8. bottomleft 
 9. fill
 
-The “imageurl” attribute is used to set the background image for Tile, where the image is given in the path specified by “imageurl” attribute.
+The “imageUrl” attribute is used to set the background image for Tile, where the image is given in the path specified by “imageUrl” attribute.
 
 Refer to the following code examples.
 
@@ -38,14 +38,14 @@ Refer to the following code examples.
 ![](Image-Configuration_images/Image-Configuration_img1.png) 
 
 
-You can give images for each tile through CSS classes by using the imageclass attribute. You can define your desired styles in the specified class.
+You can give images for each tile through CSS classes by using the imageClass attribute. You can define your desired styles in the specified class.
 
 Refer to the following code examples.
 
 {% highlight html %}
 
    
-         <ej:Tile runat="server" ImagePosition="Center" imageclass="pictures" TileSize="Medium" Text="People"></ej:Tile>
+         <ej:Tile runat="server" ImagePosition="Center" ImageClass="pictures" TileSize="Medium" Text="People"></ej:Tile>
 
 
     <style>

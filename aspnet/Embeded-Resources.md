@@ -18,7 +18,7 @@ The EJ resources and dependent scripts are encapsulated as embedded in our assem
 For themes, necessary stylesheets will be added in header section of current page dynamically to render the EJ components.  To get the embed resources in your application, you should register an App Key in Web.Config file. 
 
 ##Access Embedded Resources
-When drag and drop the control from toolbox to web page at design time, the following key settings are configures in web.config file. Please refer below code snippet:
+When drag and drop the control from toolbox to web page at design time, the following key settings will configure in web.config file. Please refer below code snippet:
 
 {% highlight xml %}
 
@@ -28,6 +28,8 @@ When drag and drop the control from toolbox to web page at design time, the foll
       </appSettings>
 
 {% endhighlight %}
+
+N> The above key setting will configure automatically when drag and drop the control in design page only otherwise we should configure it manually in web.config file.
 
 ###LoadEJResourcesFromAssembly 
 The key denotes that whether resources are referred from assembly or not. If you don’t want to load resources from assembly, you can disable this key value. Please refer below code snippet:

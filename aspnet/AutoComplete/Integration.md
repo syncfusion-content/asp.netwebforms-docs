@@ -22,7 +22,7 @@ Two-way binding supports both the processes. It applies the scope values to the 
 
 Apply the plugin and property assigning to the AutoComplete control element through the directive that starts with “e-“.
 
-To know more about the Angular binding, refer to the following online documentation link.
+To know more about the AngularJS binding, refer to the following online documentation link.
 
 <http://help.syncfusion.com/js/angularjs>
 
@@ -171,7 +171,7 @@ One-way binding refers to the process of applying observable values to all the a
 
 Two-way binding supports both the processes. It applies the observable values to the AutoComplete control properties, and also the changes made in the AutoComplete control are reflected back and triggered within the observable collections. 
 
-For more information about Knockout binding, refer to the following online documentation link,
+For more information about KnockoutJS binding, refer to the following online documentation link,
 
 <http://help.syncfusion.com/js/knockoutjs>
 
