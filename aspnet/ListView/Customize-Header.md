@@ -40,5 +40,5 @@ Refer the following code example.
 
 Run the code to get the following output
 
-![](/js/ListView/Customize-Header_images/Customize-Header_img1.png) 
+![](Customize-Header_images/Customize-Header_img1.png) 
 

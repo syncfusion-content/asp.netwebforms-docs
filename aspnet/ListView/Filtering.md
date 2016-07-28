@@ -38,14 +38,14 @@ Refer the following code examples.
 
 **Screenshot:**
 
-![](/js/ListView/Filtering_images/Filtering_img1.png)
+![](Filtering_images/Filtering_img1.png)
 
 Before Filtering
 {:.caption}
 
 
 
-![](/js/ListView/Filtering_images/Filtering_img2.png)
+![](Filtering_images/Filtering_img2.png)
 
 After Filtering
 {:.caption}

@@ -37,7 +37,7 @@ Refer the following code examples.
 
 Run the codes to get the following output
 
-![](/js/ListView/Selection_images/Selection_img1.png) 
+![](Selection_images/Selection_img1.png) 
 
 **PreventSelection**
 
@@ -97,4 +97,4 @@ Refer the following code examples.
 
 Run the codes to get the following output
 
-![](/js/ListView/Selection_images/Selection_img2.png) 
+![](Selection_images/Selection_img2.png) 
