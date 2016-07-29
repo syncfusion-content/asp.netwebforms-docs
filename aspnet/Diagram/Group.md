@@ -166,7 +166,7 @@ group.Children.Add(node4);
 Diagram.Model.Nodes.Add(group);
 {% endhighlight %}
 
-![](/Group_images/Group_img9.png)
+![](/aspnet/Diagram/Group_images/Group_img9.png)
 
 ### Stack
 
