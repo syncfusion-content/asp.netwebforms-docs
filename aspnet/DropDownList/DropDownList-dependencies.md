@@ -34,10 +34,6 @@ The internal script dependency ej.web.all.js is a bundle of all Syncfusion ASP.N
 		<td>The dropdownlist’s main file</td>
 	</tr>
 	<tr>
-		<td>ej.checkbox.min.js</td>
-		<td>Should be referred when using checkbox functionalities in DropDownList.</td>
-	</tr>
-	<tr>
 		<td>ej.scroller.min.js</td>
 		<td>Should be referred when using scrolling in DropDownList.</td>
 	</tr>

@@ -5,6 +5,7 @@ description: Describes about the data adaptor in DropDownList control for Syncfu
 platform: Web
 control: DropDownList
 documentation: ug
+keywords: DropDownList, dropdown, data binding, REStFul Binding, WebAPI, Web Method, OData, OData4
 ---
 # Data Adaptors
 

@@ -5,6 +5,7 @@ description: Describes about rendering mode in DropDownList control for Syncfusi
 platform: Webform
 control: DropDownList
 documentation: ug
+keywords: Rendering, DropDownList, dropdown, Rendering Mode
 ---
 
 # Rendering Mode

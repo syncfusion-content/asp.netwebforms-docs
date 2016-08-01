@@ -5,6 +5,8 @@ description: Describes about the Validation in DropDownList control for Syncfusi
 platform: Web
 control: DropDownList
 documentation: ug
+keywords: Validation, DropDownList, dropdown, jQuery Validator, ASP Validator
+
 ---
 
 # Validation

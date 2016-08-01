@@ -5,7 +5,7 @@ description: State Persistence support to DropDownList control for Syncfusion AS
 platform: aspnet
 control: DropDownList
 documentation: ug
-
+keywords: Persistence, DropDownList, dropdown, State Persistence, View state Maintenance
 ---
 
 # State Maintenance

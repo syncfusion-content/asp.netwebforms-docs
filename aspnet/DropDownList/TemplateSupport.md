@@ -5,6 +5,8 @@ description: Template Support with DropDownList control for Syncfusion ASP.NET
 platform: aspnet 
 control: DropDownList
 documentation: ug
+keywords: Template Support, DropDownList, dropdown, Header Template
+
 ---
 
 # Template Support
@@ -14,6 +16,8 @@ By default you can add any text or image to the DropDownList list item. To custo
 ## Header Template
 
 You can create the popup header by using HeaderTemplate property. You can add any HTML content in header template.
+
+N> Please refer the [How to](http://help.syncfusion.com/aspnet/dropdownlist/howto?cs-save-lang=1&cs-lang=js#add-check-all-option-in-popup-list) for check all option in Header
 
 ## Template Field
 

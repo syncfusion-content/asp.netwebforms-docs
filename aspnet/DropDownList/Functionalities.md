@@ -4,6 +4,7 @@ title: Functionalities in the DropDownList control for Syncfusion ASP.NET WebFor
 description: Functionalities in the DropDownList control for Syncfusion ASP.NET WebForm
 control: DropDownList
 documentation: ug
+keywords: DropDownList, dropdown, Selection, Grouping, Sorting
 ---
 # Functionalities
 
@@ -26,29 +27,29 @@ The following API’s, select the items in the DropDownList via text or value or
     </tr>
     <tr>
         <td>
-            [Value](http://help.syncfusion.com/js/api/ejdropdownlist#members:value)
+            {{'[value](http://help.syncfusion.com/js/api/ejdropdownlist#members:value)'| markdownify }} 
             <br/>
         </td>
         <td>
             To select an item initially, you can pass the item’s value via value property.
             <br/>
-            N> Also multiple items can select via Value property, the given values should be separated by delimiter character. 
+            {{'N> Also multiple items can select via Value property, the given values should be separated by delimiter character. ' | markdownify }}
         </td>
     </tr>
     <tr>
         <td>
-            [Text](http://help.syncfusion.com/js/api/ejdropdownlist#members:text)
+            {{'[text](http://help.syncfusion.com/js/api/ejdropdownlist#members:text)'| markdownify }} 
             <br/>
         </td>
         <td>
             To select an item initially, you can pass the item’s text via text property.
             <br/>
-            N> Also multiple items can select via Value property, the given values should be separated by delimiter character. 
+            {{'N> Also multiple items can select via Value property, the given values should be separated by delimiter character. ' | markdownify }}
         </td>
     </tr>
     <tr>
         <td>
-            [selectedIndex](http://help.syncfusion.com/js/api/ejdropdownlist#members:selectedindex)
+            {{'[selectedIndex](http://help.syncfusion.com/js/api/ejdropdownlist#members:selectedindex)'| markdownify }} 
             <br/>
         </td>
         <td>
@@ -58,7 +59,7 @@ The following API’s, select the items in the DropDownList via text or value or
     </tr>
     <tr>
         <td>
-            [selectedIndices](http://help.syncfusion.com/js/api/ejdropdownlist#members:selectedindices)
+             {{'[selectedIndices](http://help.syncfusion.com/js/api/ejdropdownlist#members:selectedindices)'| markdownify }}
             <br/>
         </td>
         <td>
@@ -86,7 +87,7 @@ The following methods, select the items in the DropDownList.
     </tr>
     <tr>
         <td>
-            [selectItemByIndices](http://help.syncfusion.com/js/api/ejdropdownlist#methods:selectitembyindices)
+            {{'[selectItemByIndices](http://help.syncfusion.com/js/api/ejdropdownlist#methods:selectitembyindices)'| markdownify }}
             <br/>
         </td>
         <td>
@@ -95,7 +96,7 @@ The following methods, select the items in the DropDownList.
     </tr>
     <tr>
         <td>
-            [selectItemByText](http://help.syncfusion.com/js/api/ejdropdownlist#methods:selectitembytext)
+            {{'[selectItemByText](http://help.syncfusion.com/js/api/ejdropdownlist#methods:selectItemByText)'| markdownify }}
             <br/>
         </td>
         <td>
@@ -104,7 +105,7 @@ The following methods, select the items in the DropDownList.
     </tr>
     <tr>
         <td>
-            [selectItemByValue](http://help.syncfusion.com/js/api/ejdropdownlist#methods:selectitembyvalue)
+            {{'[selectItemByValue](http://help.syncfusion.com/js/api/ejdropdownlist#methods:selectitembyvalue)'| markdownify }}
             <br/>
         </td>
         <td>
@@ -129,7 +130,7 @@ The following methods, used to retrieve the items from the DropDownList.
     </tr>
     <tr>
         <td>
-            [getListData](http://help.syncfusion.com/js/api/ejdropdownlist#methods:getlistdata)
+            {{'[getListData](http://help.syncfusion.com/js/api/ejdropdownlist#methods:getlistdata)'| markdownify }}
             <br/>
         </td>
         <td>
@@ -138,7 +139,7 @@ The following methods, used to retrieve the items from the DropDownList.
     </tr>
     <tr>
         <td>
-            [getSelectedItem](http://help.syncfusion.com/js/api/ejdropdownlist#methods:getselecteditem)
+            {{'[getSelectedItem](http://help.syncfusion.com/js/api/ejdropdownlist#methods:getselecteditem)'| markdownify }}
             <br/>
         </td>
         <td>
@@ -147,7 +148,7 @@ The following methods, used to retrieve the items from the DropDownList.
     </tr>
     <tr>
         <td>
-            [getSelectedValue](http://help.syncfusion.com/js/api/ejdropdownlist#methods:getselectedvalue)
+            {{'[getSelectedValue](http://help.syncfusion.com/js/api/ejdropdownlist#methods:getSelectedValue)'| markdownify }}
             <br/>
         </td>
         <td>
