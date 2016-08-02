@@ -4,12 +4,161 @@ title: Functionalities in the DropDownList control for Syncfusion ASP.NET WebFor
 description: Functionalities in the DropDownList control for Syncfusion ASP.NET WebForm
 control: DropDownList
 documentation: ug
+keywords: DropDownList, dropdown, Selection, Grouping, Sorting
 ---
 # Functionalities
 
 ## Selection
 
 By default only one item can be selected from the popup list. For multiple selection, you have to enable [checkboxes](Checkbox). The selected item consist of active class (“e-active”) to differentiate it from other items.
+
+The following API’s, select the items in the DropDownList via text or value or indices.
+
+<table>
+    <tr>
+        <th>
+            Properties
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+        </th>
+    </tr>
+    <tr>
+        <td>
+            {{'[value](http://help.syncfusion.com/js/api/ejdropdownlist#members:value)'| markdownify }} 
+            <br/>
+        </td>
+        <td>
+            To select an item initially, you can pass the item’s value via value property.
+            <br/>
+            {{'N> Also multiple items can select via Value property, the given values should be separated by delimiter character. ' | markdownify }}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[text](http://help.syncfusion.com/js/api/ejdropdownlist#members:text)'| markdownify }} 
+            <br/>
+        </td>
+        <td>
+            To select an item initially, you can pass the item’s text via text property.
+            <br/>
+            {{'N> Also multiple items can select via Value property, the given values should be separated by delimiter character. ' | markdownify }}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[selectedIndex](http://help.syncfusion.com/js/api/ejdropdownlist#members:selectedindex)'| markdownify }} 
+            <br/>
+        </td>
+        <td>
+            Select a single item by passing an index value to the selectedIndex property.
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+             {{'[selectedIndices](http://help.syncfusion.com/js/api/ejdropdownlist#members:selectedindices)'| markdownify }}
+            <br/>
+        </td>
+        <td>
+            Select more than one items by passing index values to the selectedIndices property when multi selection enabled. 
+            <br/>
+        </td>
+    </tr>
+</table>
+
+N> Index starts from 0 here.
+N> To use “selectedIndices” property, you should enable wither showCheckbox or multipSelectMode property.
+
+The following methods, select the items in the DropDownList.
+
+<table>
+    <tr>
+        <th>
+            Methods
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+        </th>
+    </tr>
+    <tr>
+        <td>
+            {{'[selectItemByIndices](http://help.syncfusion.com/js/api/ejdropdownlist#methods:selectitembyindices)'| markdownify }}
+            <br/>
+        </td>
+        <td>
+            This method is used to select the list of items in the DropDownList through the Index of the items.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[selectItemByText](http://help.syncfusion.com/js/api/ejdropdownlist#methods:selectItemByText)'| markdownify }}
+            <br/>
+        </td>
+        <td>
+            This method is used to select an item in the DropDownList by using the given text value.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[selectItemByValue](http://help.syncfusion.com/js/api/ejdropdownlist#methods:selectitembyvalue)'| markdownify }}
+            <br/>
+        </td>
+        <td>
+            This method is used to select an item in the DropDownList by using the given value.
+            <br/>
+        </td>
+    </tr>
+</table>
+
+The following methods, used to retrieve the items from the DropDownList.
+
+<table>
+    <tr>
+        <th>
+            Methods
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+        </th>
+    </tr>
+    <tr>
+        <td>
+            {{'[getListData](http://help.syncfusion.com/js/api/ejdropdownlist#methods:getlistdata)'| markdownify }}
+            <br/>
+        </td>
+        <td>
+            This method is used to retrieve the items that are bound with the DropDownList.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[getSelectedItem](http://help.syncfusion.com/js/api/ejdropdownlist#methods:getselecteditem)'| markdownify }}
+            <br/>
+        </td>
+        <td>
+            This method is used to get the selected items in the DropDownList.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[getSelectedValue](http://help.syncfusion.com/js/api/ejdropdownlist#methods:getSelectedValue)'| markdownify }}
+            <br/>
+        </td>
+        <td>
+            This method is used to retrieve the items value that are selected in the DropDownList.
+            <br/>
+        </td>
+    </tr>
+</table>
+
+I> When multiSelectMode is enabled in a DropDownList and selected items having same text but its value is different means, the items can be selected. Please refer the online link
 
 ### Using value or text
 
@@ -256,7 +405,15 @@ The below given example explains the behavior of grouping with List data binding
 N> Grouping has restrictions in the following scenarios,
 N> 1.  It is not supported on using HTML "select" element with predefined set of options
 N> 2.  When using UL-LI elements you need to use “e-category” class in LI element to specify it as the grouping header. The following code will explain this behavior,
-
+N> 3.  The sorting behavior varies when grouping is enabled in the DropDownList, based on browser as we have used browser based stable sorting method when there is multiple level of sorting. 
+N> 4.  To overcome this behavior on sorting order with browser, we suggest you to set ej.support.stableSort as false from the script when the page is loaded or in document ready function.
+   {% highlight javascript %}
+    <script type="text/javascript">
+            $(document).ready(function () {
+                ej.support.stableSort = false;            
+            });
+    </script>
+   {% endhighlight %}
 
 {% highlight html %}
 
@@ -413,7 +570,9 @@ Configuring the data items for cascading to the series of DropDownList is demons
 
 ![](Functionalities_images/Functionalities_img6.jpeg)
 
-You can also bind the data source to the cascading DropDownList dynamically using ClientSideEvent Cascade as demonstrated below,
+### Binding the data source to the cascading DropDownList using cascade event
+
+Bind the data source to the cascading DropDownList dynamically using ClientSideEvent Cascade as demonstrated below,
 
 {% tabs %}
 
@@ -510,6 +669,137 @@ You can also bind the data source to the cascading DropDownList dynamically usin
 
 ![](Functionalities_images/Functionalities_img7.jpeg)
 
+### Multi-Level Cascading
+
+The below scenario can be explained with three DropDownList for the multi-level cascading.
+
+{% tabs %}
+
+	{% highlight C# %}
+    
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        List<GroupsList> groups = new List<GroupsList>();
+        groups.Add(new GroupsList("a", "Group A"));
+        groups.Add(new GroupsList("b", "Group B"));
+        groups.Add(new GroupsList("c", "Group C"));
+        groups.Add(new GroupsList("d", "Group D"));
+        groups.Add(new GroupsList("e", "Group E"));
+        this.groupsList.DataSource = groups;
+
+        List<CountryList> countries = new List<CountryList>();
+        countries.Add(new CountryList(11, "a", "Algeria", "flag-dz"));
+        countries.Add(new CountryList(12, "a", "Armenia", "flag-am"));
+        countries.Add(new CountryList(13, "a", "Bangladesh", "flag-bd"));
+        countries.Add(new CountryList(14, "a", "Cuba", "flag-cu"));
+        countries.Add(new CountryList(15, "b", "Denmark", "flag-dk"));
+        countries.Add(new CountryList(16, "b", "Egypt", "flag-eg"));
+        countries.Add(new CountryList(17, "c", "Finland", "flag-fi"));
+        countries.Add(new CountryList(18, "c", "India", "flag-in"));
+        countries.Add(new CountryList(19, "c", "Malaysia", "flag-my"));
+        countries.Add(new CountryList(20, "d", "New Zealand", "flag-nz"));
+        countries.Add(new CountryList(21, "d", "Norway", "flag-no"));
+        countries.Add(new CountryList(22, "d", "Poland", "flag-pl"));
+        countries.Add(new CountryList(23, "e", "Romania", "flag-ro"));
+        countries.Add(new CountryList(24, "e", "Singapore", "flag-sg"));
+        countries.Add(new CountryList(25, "e", "Thailand", "flag-th"));
+        countries.Add(new CountryList(26, "e", "Ukraine", "flag-ua"));
+        this.countryList.DataSource = countries;
+
+        List<CapitalList> capital = new List<CapitalList>();
+        capital.Add(new CapitalList(11, "Algiers"));
+        capital.Add(new CapitalList(12, "Cairo"));
+        capital.Add(new CapitalList(13, "Yerevan"));
+        capital.Add(new CapitalList(14, "Dhaka"));
+        capital.Add(new CapitalList(18, "New Delhi"));
+        capital.Add(new CapitalList(16, "Copenhagen"));
+        capital.Add(new CapitalList(17, "Helsinki"));
+        capital.Add(new CapitalList(15, "Havana"));
+        capital.Add(new CapitalList(19, "Washington, D.C."));
+        capital.Add(new CapitalList(20, "Brasília"));
+        capital.Add(new CapitalList(21, "Lima"));
+        capital.Add(new CapitalList(22, "Canberra"));
+        capital.Add(new CapitalList(23, "Wellington"));
+        capital.Add(new CapitalList(24, "Alfred Faure"));
+        capital.Add(new CapitalList(25, "King Edward Point"));
+        this.capitalList.DataSource = capital;
+    }
+    [Serializable]
+    class CapitalList
+    {
+        public int value { get; set; }
+        public string text { get; set; }
+        public CapitalList(int cvalue, string gtext)
+        {
+            this.value = cvalue;
+            this.text = gtext;
+        }
+    }
+    [Serializable]
+    class CountryList
+    {
+        public int value { get; set; }
+        public string parentId { get; set; }
+        public string text { get; set; }
+        public string sprite { get; set; }
+        public CountryList(int cvalue, string cid, string ctext, string sprt)
+        {
+            this.value = cvalue;
+            this.parentId = cid;
+            this.text = ctext;
+            this.sprite = sprt;
+
+        }
+    }
+    [Serializable]
+    class GroupsList
+    {
+        public string parentId { get; set; }
+        public string text { get; set; }
+        public GroupsList(string gID, string gtext)
+        {
+            this.parentId = gID;
+            this.text = gtext;
+        }
+    }
+    
+    {% endhighlight %}
+    {% highlight html %}
+    
+        <div class="col-xs-8 col-sm-4">
+            <span class="txt">Select Group</span>
+            <ej:DropDownList ID="groupsList" runat="server" DataTextField="text" DataValueField="parentId" CascadeTo="MainContent_countryList" ClientSideOnChange="onChange"></ej:DropDownList>
+        </div>
+                    <div class="col-xs-8 col-sm-4">
+            <span class="txt">Select Country</span>
+            <ej:DropDownList ID="countryList" runat="server" CascadeTo="MainContent_capitalList" Enabled="false" ClientSideOnChange="onSelect"></ej:DropDownList>
+        </div>
+            <div class="col-xs-8 col-sm-4">
+            <span class="txt">Select </span>
+            <ej:DropDownList ID="capitalList" runat="server" Enabled="false"></ej:DropDownList>
+        </div>
+        
+     {% endhighlight %}
+     
+     {% highlight html %}
+     
+     <script type="text/javascript">
+        function onChange() {
+            var ctry = $('#<%=countryList.ClientID%>').data("ejDropDownList");
+            ctry.element.val("");
+        }
+        function onSelect() {
+            var ctry = $('#<%=capitalList.ClientID%>').data("ejDropDownList");
+            ctry.element.val("");
+        }
+    </script>
+    
+    {% endhighlight %}
+
+{% endtabs %}
+
+First two DropDownList cascaded based on the parentId, and then from second to third, cascading performed based on the value field.
+
 ## Search
 
 Items are searched based on the keyed in values to the textbox. There are two types of searches,
@@ -594,145 +884,3 @@ N> Items are filtered based on “contains” filter type by default.
 
 I> When VirtualScrolling enabled with searching, then filter will be applied only on the DropDownList items available at the moment.
 
-## Validation
-
-DropDownList value can be validated in two ways,
-1. Using jQuery Validator
-2. ASP Validator
-
-### jQuery Validator
- 
-You can validate the DropDownList value on form submission using jQuery Validator, by applying “ValidationRules” and “ValidationMessage” to the DropDownList. 
-
-N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
-
-#### Validation Rules
-
-The validation rules help you to verify the selected text by adding validation attributes to the input element. This can be set by using ValidationRules property.
-
-#### Validation Messages 
-
-You can set your own custom error message by using ValidationMessage property. To display the error message, specify the corresponding annotation attribute followed by the message to display.
-
-N> jQuery predefined error messages to that annotation attribute will be shown when this property is not defined. The below given example explain this behavior of ‘required’ attribute,
-
-When the DropDownList control is rendered, it creates an input hidden element which is used to store the selected items value. Hence, the validation is performed based on the value stored in this hidden element.
-
-Required field and min value validation is demonstrated in the below given example.
-
-{% highlight html %}
-
-     <ej:DropDownList ID="DropDownList1" runat="server">
-        <Items>
-            <ej:DropDownListItem ID="DropDownListItem1" runat="server" Text="10" Value="10">
-            </ej:DropDownListItem>
-            <ej:DropDownListItem ID="DropDownListItem2" runat="server" Text="20" Value="20">
-            </ej:DropDownListItem>
-            <ej:DropDownListItem ID="DropDownListItem3" runat="server" Text="30" Value="30">
-            </ej:DropDownListItem>
-            <ej:DropDownListItem ID="DropDownListItem4" runat="server" Text="40" Value="40">
-            </ej:DropDownListItem>
-            <ej:DropDownListItem ID="DropDownListItem5" runat="server" Text="50" Value="50">
-            </ej:DropDownListItem>
-        </Items>
-         <ValidationRule>
-            <ej:KeyValue Key="required" Value="true" />
-            <ej:KeyValue Key="min" Value="30" />
-        </ValidationRule>
-        <ValidationMessage>
-            <ej:KeyValue Key="required" Value="* required" />
-            <ej:KeyValue Key="min" Value="Select > 30" />
-        </ValidationMessage>
-    </ej:DropDownList>
-    <asp:Button runat="server" ID="Button1" Text="Submit" />
-    
-{% endhighlight %}
-
-{% highlight javascript %}
-
-        $.validator.setDefaults({
-            ignore: [],
-            errorClass: 'e-validation-error', // to get the error message on jquery validation
-            errorPlacement: function (error, element) {
-                $(error).insertAfter(element.closest(".e-widget"));
-            }
-            // any other default options and/or rules
-        });
-        //If necessary, we can create custom rules as below. here method defined for min
-        $.validator.addMethod("min",
-            function (value, element, params) {
-                if (!/Invalid|NaN/.test(value)) {
-                    return parseInt(value) > params;
-                }
-            }, 'Must be greater than 30.');
-				
-{% endhighlight %}
-
-![](Functionalities_images/Functionalities_img10.jpeg)
-
-#### Integration with ASP Validator
-
-To use ASP.NET validator with DropDownList control, set the ID of the DropDownList as the value of the ControlToValidate property of the validator.
-
-
-{% tabs %}
-
-	{% highlight html %}
-    
-            <ej:DropDownList ID="DropDownList1" runat="server">
-                <Items>
-                    <ej:DropDownListItem ID="DropDownListItem1" runat="server" Text="ListItem 1" Value="item1">
-                    </ej:DropDownListItem>
-                    <ej:DropDownListItem ID="DropDownListItem2" runat="server" Text="ListItem 2" Value="item2">
-                    </ej:DropDownListItem>
-                    <ej:DropDownListItem ID="DropDownListItem3" runat="server" Text="ListItem 3" Value="item3">
-                    </ej:DropDownListItem>
-                    <ej:DropDownListItem ID="DropDownListItem4" runat="server" Text="ListItem 4" Value="item4">
-                    </ej:DropDownListItem>
-                    <ej:DropDownListItem ID="DropDownListItem5" runat="server" Text="ListItem 5" Value="item5">
-                    </ej:DropDownListItem>
-                </Items>
-            </ej:DropDownList>
-                <!-- DropDownList1 can't be left empty to submit the form -->
-            <asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator1" ControlToValidate="DropDownList1" ErrorMessage="Select an item" ></asp:RequiredFieldValidator><br />
-            <ej:DropDownList ID="DropDownList2" runat="server">
-                <Items>
-                    <ej:DropDownListItem ID="DropDownListItem6" runat="server" Text="ListItem 1" Value="item1">
-                    </ej:DropDownListItem>
-                    <ej:DropDownListItem ID="DropDownListItem7" runat="server" Text="ListItem 2" Value="item2">
-                    </ej:DropDownListItem>
-                    <ej:DropDownListItem ID="DropDownListItem8" runat="server" Text="ListItem 3" Value="item3">
-                    </ej:DropDownListItem>
-                    <ej:DropDownListItem ID="DropDownListItem9" runat="server" Text="ListItem 4" Value="item4">
-                    </ej:DropDownListItem>
-                    <ej:DropDownListItem ID="DropDownListItem10" runat="server" Text="ListItem 5" Value="item5">
-                    </ej:DropDownListItem>
-                </Items>
-            </ej:DropDownList>
-                <!-- Compares the value of DropDownList1 and DropDownList2 to be equal -->
-            <asp:CompareValidator runat="server" ID="CompareValidator1" ControlToCompare="DropDownList1" ControlToValidate="DropDownList2" ErrorMessage="Value not equals to DropDownList 1"></asp:CompareValidator><br />
-            <asp:Button runat="server" ID="Button1" Text="Submit" OnClick="Button1_Click" /><br />
-            <asp:Label runat="server" ID="Label1"></asp:Label>
-		
-	{% endhighlight %}
-    
-    {% highlight c# %}
-    
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            Label1.Text = "DropDownList controls validated";
-        }
-        
-    {% endhighlight %}
-    
- {% endtabs %}
- 
- Executing the above code will validate the DropDownList control values on every form submit before post back occurs as given below.
- 
- ![](Functionalities_images/IntegrationwithASPValidator_img1.png)
- 
- ![](Functionalities_images/IntegrationwithASPValidator_img2.png)
- 
- Output after postback on form submit
- 
- ![](Functionalities_images/IntegrationwithASPValidator_img3.png)

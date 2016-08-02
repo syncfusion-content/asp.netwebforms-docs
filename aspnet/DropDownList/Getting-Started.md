@@ -5,6 +5,7 @@ description: To get start with DropDownList by adding references.
 platform: WebForms
 control: DropDownList
 documentation: ug
+keywords: DropDownList, dropdown, Populating data
 ---
 
 # Getting Started
@@ -26,7 +27,7 @@ documentation: ug
             
     {% endhighlight %}
     
-    >Refer the [ASP.NET-Getting Started](http://help.syncfusion.com/aspnet/getting-started#manual-integration-of-syncfusion-aspnet-controls-into-the-newexisting-application) Documentation to know further details about necessary assemblies, Script and CSS files.
+N> Refer the [ASP.NET-Getting Started](http://help.syncfusion.com/aspnet/getting-started#manual-integration-of-syncfusion-aspnet-controls-into-the-newexisting-application) Documentation to know further details about necessary assemblies, Script and CSS files.
 
 3. Configure the DropDownList control using smart tag, to add DropDownList items
 

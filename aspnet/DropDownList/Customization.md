@@ -5,6 +5,7 @@ description: Customization in DropDownList control for Syncfusion ASP.NET WebFor
 platform: web
 control: DropDownList
 documentation: ug
+keywords: Customization, DropDownList, dropdown, watermark text
 
 ---
 

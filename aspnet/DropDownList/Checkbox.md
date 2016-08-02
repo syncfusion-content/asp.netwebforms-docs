@@ -5,6 +5,7 @@ description: Describes about Checkbox functionalities in DropDownList control fo
 platform: web
 control: DropDownList
 documentation: ug
+keywords: Checkbox, dropdown, Selection Modes, Visual Mode, Delimiter
 ---
 
 # Checkbox

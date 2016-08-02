@@ -124,131 +124,111 @@ The following screenshot exhibits the output of the above code,
 
 ![](HowTo_images/HowTo_img2.jpeg)
 
-## To maintain data bound values after post back
-By default behavior of Syncfusion DropDownList, if DataSource is bound from code behind once on rendering the control. Then the control will lose its data binding on any post back actions. Because on postback control will be reinitialized and the datasource will not be set if it is bind page load event when postback is false. If you need to maintain the DataSource bound after postback, you have to use DataSourceCachingMode property with enum value ViewState or Session. This will maintain the data bound values in our controls after post back. 
-<table>
-<tr>
-<th>
-Value
-</th>
-<th>
-Description
-</th>
-</tr>
-<tr>
-<td>
-None
-</td>
-<td>
-DataSource object will not be maintained
-</td>
-</tr>
-<tr>
-<td>
-ViewState
-</td>
-<td>
-DataSource object will be maintained using view state in client side
-</td>
-</tr>
-<tr>
-<td>
-Session
-</td>
-<td>
-DataSource object will be maintained using session variable in server
-</td>
-</tr>
-</table>
+## Dynamically bind the data to the DropDownList using asp.net data bound method called “onDataBound” method
+
+The items can be added to the DropDownList in DataBound event using a generic DataView and refresh the DataSource of DropDownList.
+
+{% tabs %}
+
+    {% highlight html %}
+    
+    <ej:DropDownList ID="DropDown" runat="server" DataSourceID="SqlDataSource1" Width="280px" 
+           DataTextField="ContactName" DataValueField="CustomerID" OnDataBound="DropDown_DataBound"></ej:DropDownList>
+
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [CustomerID], [ContactName] FROM [Customers]"></asp:SqlDataSource>
+
+    {% endhighlight %}
+    
+     {% highlight c# %}
+        protected void DropDown_DataBound(object sender, EventArgs e)
+        {
+            // Create a DataView to get the current datasource from DropDownList
+            DataView ddDataSource = (DataView)DropDown.DataSource;
+            //Initialze a row element for the DataView created
+            DataRow dr = ddDataSource.Table.NewRow();
+            if (sender == DropDown)
+            {
+                if (ddDataSource.Count == 0)
+                {      
+                    //Add the fields using the corresponding names     
+                    dr["CustomerID"] = "11011";
+                    dr["ContactName"] = "John Peter";
+                    // Insert the new item to DataView Table
+                    ddDataSource.Table.Rows.InsertAt(dr, 0);
+                }
+                else
+                {
+                    dr["CustomerID"] = "11012";
+                    dr["ContactName"] = "Nancy";
+                    //Insert at the index of 4
+                    ddDataSource.Table.Rows.InsertAt(dr, 4);
+                    
+                }
+            }
+            else
+            {
+                throw new Exception("Invalid binder for drop down list items");
+            }
+            //Refresh the DropDownList DataSource with the DataView updated
+            DropDown.DataSource = ddDataSource;
+        }
+        
+        {% endhighlight %}
+        
+{% endtabs %}
+
+In the OnDataBound event copy the current DataSource to a DataView instance and intiate a new row for the DataView table using DataRow instance. Based on the requirement add the dynamic items to the DataRow instance using the Data fields bound to the DropDownList control. Finally assign the updated DataView to the DropDownList data source. 
+
+![](HowTo_images/DataBound.jpg)
+
+## Create user control as DropDownList, to set/get the items in DropDownList in code behind
+
+A user control is a kind of composite control that works much like an ASP.NET Web page—you can add our Syncfusion web controls and markup to a user control, and define properties and methods for the control. You can then embed them in ASP.NET Web pages, where they act as a unit.
+
+Step 1:  Add the Web user control in your form
+Please refer the following links for more information: [Link](http://www.c-sharpcorner.com/uploadfile/jayendra/how-to-create-user-control-in-Asp-Net/)
+
+In web user control, add DropDownList and Bind the data to it as follows
 
 {% highlight html %}
 
-    <ej:DropDownList ID="DropDownList1" runat="server" DataTextField="Text" DataValueField="ID" DataSourceCachingMode="ViewState" >
-    </ej:DropDownList>
-    <asp:Button runat="server" ID="button1" Text="Submit" />
+    <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="myControl.ascx.cs" Inherits="UserControl.myControl" %>
 
+    <ej:DropDownList ID="DropDownList1" DataTextField="FirstName" DataValueField="EmployeeID" runat="server">
+
+    </ej:DropDownList>
+    
 {% endhighlight %}
 
-Here data is bound only on initial page load and not on every post back. 
+In code behind, bind the data source to the DropDownList
 
 {% highlight c# %}
 
-    protected void Page_Load(object sender, EventArgs e)
-        {
-            if (!IsPostBack)
-            {
-                DropDownList1.DataSource = new DropDownData().GetItems();
-            }
-        }
-    public class DropDownData
+    public partial class myControl : System.Web.UI.UserControl
     {
-
-        public DropDownData(int _id, string _text)
+        protected void Page_Load(object sender, EventArgs e)
         {
-
-            this.ID = _id;
-
-            this.Text = _text;
-
+            NORTHWNDEntities db = new NORTHWNDEntities();
+            List<Employee> data = new List<Employee>();
+            data = db.Employees.ToList();
+            DropDownList1.DataSource = data;
         }
-
-        public DropDownData() { }
-
-        [Browsable(true)]
-
-        public int ID
-        {
-
-            get;
-
-            set;
-
-        }
-
-        [Browsable(true)]
-
-        public string Text
-        {
-
-            get;
-
-            set;
-
-        }
-
-        public List<DropDownData> GetItems()
-        {
-
-            List<DropDownData> data = new List<DropDownData>();
-
-            data.Add(new DropDownData(1, "Railways"));
-
-            data.Add(new DropDownData(2, "Roadways"));
-
-            data.Add(new DropDownData(3, "Airways"));
-
-            data.Add(new DropDownData(4, "Waterways"));
-
-            data.Add(new DropDownData(5, "Electric Trains"));
-
-            data.Add(new DropDownData(6, "Diesel Trains"));
-
-            data.Add(new DropDownData(7, "Heavy Motor Vehicles"));
-
-            data.Add(new DropDownData(8, "Light Motor Vehicles"));
-
-            data.Add(new DropDownData(9, "Aeroplanes"));
-
-            data.Add(new DropDownData(10, "Helicopters"));
-
-            data.Add(new DropDownData(11, "Ships"));
-
-            data.Add(new DropDownData(12, "Submarines"));
-
-            return data;
-
-        }
-
     }
+    
+ {% endhighlight %}
+ 
+ Step 2: To add the user control in your page 
+ 
+To use the user control, make the web page aware of the control by using a Register directive that specified the tag prefix which will use, the tag name and the location of the user control's page
+
+{% highlight c# %}
+
+    <%@ Register Src="~/myControl.ascx" TagPrefix="my" TagName="DropDown" %> 
+
+    <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+
+    <span> Select an Employee</span>
+        <my:DropDown id="empList" runat="server"></my:DropDown>
+    </asp:Content>
 
 {% endhighlight %}
