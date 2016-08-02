@@ -72,7 +72,7 @@ You can get these embedded resources from CDN (Content Delivery Networks) also. 
 
 {% highlight aspx-cs %}
 
-      <asp:scriptmanager id="ScriptManager1" runat="server" enablecdn="True">
+      <asp:scriptmanager id="ScriptManager1" runat="server" EnableCdn="true">
       </asp:scriptmanager>
 
 {% endhighlight %}
@@ -81,7 +81,7 @@ You can embed the resources from assembly when CDN (Content Delivery Network) is
 
 {% highlight aspx-cs %}
 
-      <asp:ScriptManager runat="server" EnableCdn="True" EnableCdnFallback="True">
+      <asp:ScriptManager runat="server" EnableCdn="true" EnableCdnFallback="true">
       </asp:scriptmanager>
 
 {% endhighlight %}
