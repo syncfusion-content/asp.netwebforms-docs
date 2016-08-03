@@ -48,6 +48,17 @@ Toolbox
 DatePicker control displayed in web browser
 {:.caption}
 
+N> The Script Manager is mandatory in order to place our control initialization script in the page.<BR>
+Ensure whether the “ScriptManager” is added in the “Site.Master” or else add the “ScriptManager” to your web page. <BR>
+You just need to drag the “ScriptManager” from the toolbox under the “AJAX Extension” and then drop it into the Content section of the Default.aspx page, so that the required scripts to initiate our component will be added to your web page. 
+
+{% highlight html %}
+
+     <asp:ScriptManager ID="ScriptManager1" runat="server"> 
+     </asp:ScriptManager> 
+     
+{% endhighlight %}
+
 ## Configuring Syncfusion NuGet Packages in Visual Studio 
 
 This topic explains how to add the Syncfusion ASP.NET Web controls into the new ASP.NET Web Forms application by making use of Syncfusion NuGet Packages. 
@@ -129,6 +140,17 @@ Toolbox
 ![](Getting-Started_images/Getting-Started_img13.png)
  DatePicker control displayed on the web browser
  {:.caption}
+ 
+N> The Script Manager is mandatory in order to place our control initialization script in the page.<BR>
+Ensure whether the “ScriptManager” is added in the “Site.Master” or else add the “ScriptManager” to your web page. <BR>
+You just need to drag the “ScriptManager” from the toolbox under the “AJAX Extension” and then drop it into the Content section of the Default.aspx page, so that the required scripts to initiate our component will be added to your web page. 
+
+{% highlight html %}
+
+     <asp:ScriptManager ID="ScriptManager1" runat="server"> 
+     </asp:ScriptManager> 
+     
+{% endhighlight %}
 
 ### Updating a NuGet Package
 
@@ -289,11 +311,9 @@ Finally build and run the project by pressing F5, so that you can now see the ou
 DatePicker control displaying on the web browser
 {:.caption}
 
-N> The Script Manager is mandatory in order to place our control initialization script in the page.
-
-N> Ensure whether the “ScriptManager” is added in the “Site.Master” or else add the “ScriptManager” to your web page. 
-
-N> You just need to drag the “ScriptManager” from the toolbox under the “AJAX Extension” and then drop it into the Content section of the Default.aspx page, so that the required scripts to initiate our component will be added to your web page. 
+N> The Script Manager is mandatory in order to place our control initialization script in the page.<BR>
+Ensure whether the “ScriptManager” is added in the “Site.Master” or else add the “ScriptManager” to your web page. <BR>
+You just need to drag the “ScriptManager” from the toolbox under the “AJAX Extension” and then drop it into the Content section of the Default.aspx page, so that the required scripts to initiate our component will be added to your web page. 
 
 {% highlight html %}
 
