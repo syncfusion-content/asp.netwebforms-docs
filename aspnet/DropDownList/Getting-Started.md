@@ -81,7 +81,7 @@ The DropDownList can be bounded to both local list data binding like SQLDataSour
         
     {% endhighlight %}
 
-    Switching from Design view to Source the DropDownList code looks like the below with DataSource, DataTextField and DataValueField mapped.
+Switching from Design view to Source the DropDownList code looks like the below with DataSource, DataTextField and DataValueField mapped.
 
     {% highlight html %}
         
