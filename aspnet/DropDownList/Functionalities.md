@@ -33,7 +33,7 @@ The following API’s, select the items in the DropDownList via text or value or
         <td>
             To select an item initially, you can pass the item’s value via value property.
             <br/>
-            {{'N> Also multiple items can select via Value property, the given values should be separated by delimiter character. ' | markdownify }}
+            Multiple items can select via Value property, the given values should be separated by delimiter character.
         </td>
     </tr>
     <tr>
@@ -44,7 +44,7 @@ The following API’s, select the items in the DropDownList via text or value or
         <td>
             To select an item initially, you can pass the item’s text via text property.
             <br/>
-            {{'N> Also multiple items can select via Value property, the given values should be separated by delimiter character. ' | markdownify }}
+            Multiple items can select via Text property, the given values should be separated by delimiter character.
         </td>
     </tr>
     <tr>
@@ -402,11 +402,12 @@ The below given example explains the behavior of grouping with List data binding
 
 ![](Functionalities_images/Functionalities_img3.jpeg)
 
-N> Grouping has restrictions in the following scenarios,
-N> 1.  It is not supported on using HTML "select" element with predefined set of options
-N> 2.  When using UL-LI elements you need to use “e-category” class in LI element to specify it as the grouping header. The following code will explain this behavior,
-N> 3.  The sorting behavior varies when grouping is enabled in the DropDownList, based on browser as we have used browser based stable sorting method when there is multiple level of sorting. 
-N> 4.  To overcome this behavior on sorting order with browser, we suggest you to set ej.support.stableSort as false from the script when the page is loaded or in document ready function.
+N> Grouping has restrictions in the following scenarios, <BR>
+1.  It is not supported on using HTML "select" element with predefined set of options<BR>
+2.  When using UL-LI elements you need to use “e-category” class in LI element to specify it as the grouping header. The following code will explain this behavior,<BR>
+3.  The sorting behavior varies when grouping is enabled in the DropDownList, based on browser as we have used browser based stable sorting method when there is multiple level of sorting. <BR>
+4.  To overcome this behavior on sorting order with browser, we suggest you to set ej.support.stableSort as false from the script when the page is loaded or in document ready function.
+   
    {% highlight javascript %}
     <script type="text/javascript">
             $(document).ready(function () {
