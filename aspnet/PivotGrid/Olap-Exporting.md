@@ -28,6 +28,8 @@ The PivotGrid control can be exported by invoking **“exportPivotGrid”** meth
      //If you want to render PivotGrid in Client Mode.
     <ej:PivotGrid ID="PivotGrid1" runat="server" OnServerExcelExporting="PivotGrid_ServerExcelExporting" ClientIDMode="Static">
         <DataSource>
+        ----
+        ----
         </DataSource>
      </ej:PivotGrid>
      
@@ -114,6 +116,8 @@ To achieve Excel export, server side trigger event **"excelExport"** and file na
 
     <ej:PivotGrid ID="PivotGrid1" runat="server" OnServerExcelExporting="PivotGrid_ServerExcelExporting" ClientIDMode="Static">
         <DataSource>
+        ----
+        ----
         </DataSource>
      </ej:PivotGrid>
     <ej:Button runat="server" ClientSideOnClick="exportBtnClick" Text="Export">
@@ -175,6 +179,8 @@ To achieve Word export, server side trigger event **"wordExport"** and file name
 
     <ej:PivotGrid ID="PivotGrid1" runat="server" OnServerWordExporting="PivotGrid_ServerWordExporting" ClientIDMode="Static">
         <DataSource>
+        ----
+        ----
         </DataSource>
      </ej:PivotGrid>
     <ej:Button runat="server" ClientSideOnClick="exportBtnClick" Text="Export">
@@ -237,6 +243,8 @@ To achieve Word export, server side trigger event **"pdfExport"** and file name 
 
     <ej:PivotGrid ID="PivotGrid1" runat="server" OnServerPDFExporting="PivotGrid_ServerPDFExporting" ClientIDMode="Static">
         <DataSource>
+        ----
+        ----
         </DataSource>
      </ej:PivotGrid>
     <ej:Button runat="server" ClientSideOnClick="exportBtnClick" Text="Export">
@@ -299,6 +307,8 @@ To achieve CSV export, server side trigger event **"csvExport"** and file name i
 
     <ej:PivotGrid ID="PivotGrid1" runat="server" OnServerCSVExporting="PivotGrid_ServerCSVExporting" ClientIDMode="Static">
         <DataSource>
+        ----
+        ----
         </DataSource>
      </ej:PivotGrid>
     <ej:Button runat="server" ClientSideOnClick="exportBtnClick" Text="Export">

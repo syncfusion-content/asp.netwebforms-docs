@@ -11,7 +11,7 @@ documentation: ug
 
 ## Adding Scale
 
-Scale can be added within the PivotGauge control as an array.
+Scale can be added within the PivotGauge control.
 
 {% highlight html %}
 
@@ -29,7 +29,7 @@ Scale can be added within the PivotGauge control as an array.
 
 ### Pointer Cap
 
-Pointer Cap is a circular shape element that is located at the center of the PivotGauge. It can be customized with the `PointerCap` option inside scales. Following are the properties used to customize its appearance.
+Pointer Cap is a circular shape element which is located at the center of the PivotGauge. It can be customized with the property `PointerCap` inside the scales option. Following are the properties used to customize its appearance.
 
 * **Radius** – sets the radius of the pointer cap.
 * **BorderColor** – sets the color of the pointer cap border.

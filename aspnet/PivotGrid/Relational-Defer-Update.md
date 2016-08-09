@@ -15,7 +15,7 @@ Defer Update support allows you to refresh the control only on-demand and not du
 
 {% highlight html %}
 
-<cc1:PivotGrid ID="PivotGrid1" runat=server url="../RelationalService" ClientIDMode="Static" >
+<cc1:PivotGrid ID="PivotGrid1" runat=server url="/RelationalService" ClientIDMode="Static" >
     <ClientSideEvents AfterServiceInvoke="OnAfterServiceInvoke" /> </cc1:PivotGrid>
 
 <cc1:PivotSchemaDesigner ID="PivotSchemaDesigner" runat=server></cc1:PivotSchemaDesigner>

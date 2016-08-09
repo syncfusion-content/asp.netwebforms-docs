@@ -11,7 +11,7 @@ documentation: ug
 
 ## Adding Tick Collection
 
-Tick collection can be directly added to the scales option within the PivotGauge control as an array.
+Tick collection can be directly added to the scales option within the PivotGauge control.
 
 {% highlight html %}
 

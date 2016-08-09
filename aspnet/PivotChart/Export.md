@@ -26,13 +26,15 @@ The PivotChart control can be exported by invoking **“exportPivotChart”** me
 <body>
     //...
      //If you want to render PivotChart in Client Mode.
-    <ej:PivotChart ID="PivotChart1" runat="server" OnServerExcelExporting="PivotChart_ServerExcelExporting" ClientIDMode="Static">
+    <ej:PivotChart ID="MyPivotChart1" runat="server" OnServerExcelExporting="PivotChart_ServerExcelExporting" ClientIDMode="Static">
         <DataSource>
+        ....
+        ....
         </DataSource>
      </ej:PivotChart>
      
      //If you want to render PivotChart in Server Mode.
-    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" IsResponsive="true">
+    <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" IsResponsive="true">
     <Size Width="950px" Height="460px"></Size>
     </ej:PivotChart>
     
@@ -40,7 +42,7 @@ The PivotChart control can be exported by invoking **“exportPivotChart”** me
     </ej:Button>
     <script type="text/javascript">
         function exportBtnClick(args) {
-            var chartObj = $('#PivotChart1').data("ejPivotChart");
+            var chartObj = $('#MyPivotChart1').data("ejPivotChart");
             //If you render PivotChart in Client Mode, set the export option like below.
             chartObj.exportPivotChart("excelExport","fileName");
             
@@ -110,7 +112,7 @@ To achieve Excel export, server side trigger event **"excelExport"** and file na
 
 {% highlight html %}
 
-    <ej:PivotChart ID="PivotChart1" runat="server" OnServerExcelExporting="PivotChart_ServerExcelExporting" ClientIDMode="Static">
+    <ej:PivotChart ID="MyPivotChart1" runat="server" OnServerExcelExporting="PivotChart_ServerExcelExporting" ClientIDMode="Static">
         <DataSource>
         </DataSource>
      </ej:PivotChart>
@@ -119,7 +121,7 @@ To achieve Excel export, server side trigger event **"excelExport"** and file na
     <script type="text/javascript">
        function exportBtnClick(args)
        {
-          var chartObj = $('#PivotChart1').data("ejPivotChart ");
+          var chartObj = $('#MyPivotChart1').data("ejPivotChart ");
           chartObj.exportPivotChart("excelExport","fileName");
        }
     </script>
@@ -154,7 +156,7 @@ For Excel export, **“ej.PivotChart.ExportOptions.Excel”** enumeration value 
 
 function exportBtnClick(args)
 {
-    var chartObj = $('#PivotChart1').data("ejPivotChart");
+    var chartObj = $('#MyPivotChart1').data("ejPivotChart");
     //Setting export option as Excel in the exportPivotChart method for ServerMode
     chartObj.exportPivotChart(ej.PivotChart.ExportOptions.Excel);
 }
@@ -172,7 +174,7 @@ To achieve Word export, server side trigger event **"wordExport"** and file name
 
 {% highlight html %}
 
-    <ej:PivotChart ID="PivotChart1" runat="server" OnServerWordExporting="PivotChart_ServerWordExporting" ClientIDMode="Static">
+    <ej:PivotChart ID="MyPivotChart1" runat="server" OnServerWordExporting="PivotChart_ServerWordExporting" ClientIDMode="Static">
         <DataSource>
         </DataSource>
      </ej:PivotChart>
@@ -181,7 +183,7 @@ To achieve Word export, server side trigger event **"wordExport"** and file name
     <script type="text/javascript">
        function exportBtnClick(args)
        {
-          var chartObj = $('#PivotChart1').data("ejPivotChart ");
+          var chartObj = $('#MyPivotChart1').data("ejPivotChart ");
           chartObj.exportPivotChart("wordExport","fileName");
        }
     </script>
@@ -216,7 +218,7 @@ For Word export, **“ej.PivotChart.ExportOptions.Word”** enumeration value is
 
 function exportBtnClick(args)
 {
-    var chartObj = $('#PivotChart1').data("ejPivotChart");
+    var chartObj = $('#MyPivotChart1').data("ejPivotChart");
     //Setting export option as Word in the exportPivotChart method
     chartObj.exportPivotChart(ej.PivotChart.ExportOptions.Word);
 }
@@ -235,7 +237,7 @@ To achieve Word export, server side trigger event **"pdfExport"** and file name 
 
 {% highlight html %}
 
-    <ej:PivotChart ID="PivotChart1" runat="server" OnServerPDFExporting="PivotChart_ServerPDFExporting" ClientIDMode="Static">
+    <ej:PivotChart ID="MyPivotChart1" runat="server" OnServerPDFExporting="PivotChart_ServerPDFExporting" ClientIDMode="Static">
         <DataSource>
         </DataSource>
      </ej:PivotChart>
@@ -244,7 +246,7 @@ To achieve Word export, server side trigger event **"pdfExport"** and file name 
     <script type="text/javascript">
        function exportBtnClick(args)
        {
-          var chartObj = $('#PivotChart1').data("ejPivotChart ");
+          var chartObj = $('#MyPivotChart1').data("ejPivotChart ");
           chartObj.exportPivotChart("pdfExport","fileName");
        }
     </script>
@@ -279,7 +281,7 @@ For PDF export, **“ej.PivotChart.ExportOptions.PDF”** enumeration value is s
 
 function exportBtnClick(args)
 {
-    var chartObj = $('#PivotChart1').data("ejPivotChart ");
+    var chartObj = $('#MyPivotChart1').data("ejPivotChart ");
     //Setting export option as PDF in the exportPivotChart method
     chartObj.exportPivotChart(ej.PivotChart.ExportOptions.PDF);
 }
@@ -303,7 +305,7 @@ To achieve image export, server side trigger event **"imageExport"** ,**“ej.Pi
 
 {% highlight html %}
 
-    <ej:PivotChart ID="PivotChart1" runat="server" OnServerImageExporting="PivotChart_ServerImageExporting" ClientIDMode="Static">
+    <ej:PivotChart ID="MyPivotChart1" runat="server" OnServerImageExporting="PivotChart_ServerImageExporting" ClientIDMode="Static">
         <DataSource>
         </DataSource>
      </ej:PivotChart>
@@ -312,7 +314,7 @@ To achieve image export, server side trigger event **"imageExport"** ,**“ej.Pi
     <script type="text/javascript">
        function exportBtnClick(args)
        {
-          var chartObj = $('#PivotChart1').data("ejPivotChart ");
+          var chartObj = $('#MyPivotChart1').data("ejPivotChart ");
           chartObj.exportPivotChart("imageExport","fileName",ej.PivotChart.ExportOptions.PNG);
        }
     </script>
@@ -342,7 +344,7 @@ To export PivotChart in PNG format, **“ej.PivotChart.ExportOptions.PNG”** en
 
 function exportBtnClick(args)
 {
-    var chartObj = $('#PivotChart1').data("ejPivotChart ");
+    var chartObj = $('#MyPivotChart1').data("ejPivotChart ");
     //Setting export option as PNG in the exportPivotChart method
     chartObj.exportPivotChart(ej.PivotChart.ExportOptions.PNG);
 }
@@ -362,7 +364,7 @@ For customizing file name, we need to send file name as parameter to the **“ex
 
 function exportBtnClick(args)
 {
-    var chartObj = $('#PivotChart1').data("ejPivotChart ");
+    var chartObj = $('#MyPivotChart1').data("ejPivotChart ");
     chartObj.exportPivotChart("excelExport","fileName");
 }
    

@@ -32,7 +32,7 @@ The PivotGrid control can be exported by invoking **“exportPivotGrid”** meth
      </ej:PivotGrid>
      
      //If you want to render PivotGrid in Server Mode.
-    <ej:PivotGrid ID="PivotGrid1" runat="server" Url="../wcf/RelationalService.svc" IsResponsive="true">
+    <ej:PivotGrid ID="PivotGrid1" runat="server" Url="/RelationalService.svc" IsResponsive="true">
     </ej:PivotGrid>
     
     <ej:Button runat="server" ClientSideOnClick="exportBtnClick" Text="Export">

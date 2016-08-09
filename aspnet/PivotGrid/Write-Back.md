@@ -18,7 +18,7 @@ N> Write-back is only supported for measures that use the **SUM** aggregation.
 
 {% highlight js %}
 
-<ej:PivotGrid ID="PivotGrid1" runat="server" url="../PivotGridService" EnableCellEditing="true">
+<ej:PivotGrid ID="PivotGrid1" runat="server" url="/PivotGridService" EnableCellEditing="true">
 </ej:PivotGrid>
 
 {% endhighlight %}

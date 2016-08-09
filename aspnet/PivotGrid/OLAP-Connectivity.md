@@ -109,6 +109,7 @@ N> If you have installed any version of SQL Server Analysis Service (SSAS) or Mi
 * Syncfusion.Pdf.Base
 * Syncfusion.DocIO.Base
 * Syncfusion.EJ
+* Syncfusion.EJ.Web
 * Syncfusion.EJ.Olap
 
 **List of Namespaces**
@@ -195,6 +196,9 @@ namespace PivotGridDemo
 
         [OperationContract]
         void Export(System.IO.Stream stream);
+        
+        [OperationContract]
+        Dictionary<string, object> DeferUpdate(string action, string filterParams, string currentReport);
     }
 }
 
@@ -290,6 +294,14 @@ namespace PivotGridDemo
             OlapDataManager DataManager = new OlapDataManager(connectionString);
             string fileName = "Sample";
             htmlHelper.ExportPivotGrid(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
+        }
+        
+         //This method Defer Update the Rows and Columns
+         public Dictionary<string, object> DeferUpdate(string action, string filterParams, string currentReport)
+        {
+            OlapDataManager DataManager = new OlapDataManager(connectionString);
+            DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
+            return htmlHelper.GetJsonData(action, DataManager, null, filterParams);
         }
 
         //This method carries the information about the default report which when be rendered within PivotGrid initially.

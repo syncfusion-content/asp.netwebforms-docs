@@ -28,12 +28,12 @@ Register the referenced assemblies in Web.config files available at the root of 
 
 {% highlight xml %}
 
-    <compilation debug="true" targetFramework={framework version}>
+    <compilation debug="true" targetFramework="4.5">
         <assemblies> 
             ……
             ……
-            <add assembly="Syncfusion.EJ, Version= {{ site.releaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-            <add assembly="Syncfusion.EJ.Olap, Version= {{ site.releaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+            <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+            <add assembly="Syncfusion.EJ.Olap, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
             
         </assemblies>
     </compilation>
@@ -44,7 +44,7 @@ Register the referenced assemblies in Web.config files available at the root of 
 
 The scripts and style sheets that are mandatorily required to render PivotGauge widget in a  Web Application are mentioned in an appropriate order below:
 
-1.  ej.widgets.all.min.css
+1.  ej.web.all.min.css
 2.	jquery-1.10.2.min.js
 3.	jquery.easing.1.3.min.js
 4.	ej.web.all.min.js 
@@ -216,23 +216,25 @@ Now add the following dependency libraries as references into your Web Applicati
 * Syncfusion.Pdf.Base
 * Syncfusion.DocIO.Base
 * Syncfusion.EJ
+* Syncfusion.EJ.Web
 * Syncfusion.EJ.Olap
 
 Register the referenced assemblies in Web.config files available at the root of the application.
 
 {% highlight xml %}
 
-    <compilation debug="true" targetFramework={framework version}>
+    <compilation debug="true" targetFramework="4.5">
         <assemblies> 
             …… 
             ……
-            <add assembly="Syncfusion.EJ, Version= {{ site.releaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-            <add assembly="Syncfusion.EJ.Olap, Version= {{ site.releaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-            <add assembly="Syncfusion.Linq.Base, Version= {{ site.releaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-            <add assembly="Syncfusion.Olap.Base, Version= {{ site.releaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-            <add assembly="Syncfusion.Pdf.Base, Version= {{ site.releaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-            <add assembly="Syncfusion.XlsIO.Base, Version= {{ site.releaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-            <add assembly="Syncfusion.DocIO.Base, Version= {{ site.releaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
+            <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+            <add assembly="Syncfusion.EJ.Web, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+            <add assembly="Syncfusion.EJ.Olap, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+            <add assembly="Syncfusion.Linq.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+            <add assembly="Syncfusion.Olap.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+            <add assembly="Syncfusion.Pdf.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+            <add assembly="Syncfusion.XlsIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+            <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
         </assemblies>
     </compilation>
 
@@ -242,7 +244,7 @@ Register the referenced assemblies in Web.config files available at the root of 
 
 The scripts and style sheets that are mandatorily required to render PivotGauge widget in a Web Application are mentioned in an appropriate order below:
 
-1.  ej.widgets.all.min.css
+1.  ej.web.all.min.css
 2.	jquery-1.10.2.min.js
 3.	jquery.easing.1.3.min.js
 4.	ej.web.all.min.js 
@@ -475,6 +477,9 @@ Now you need to define the service methods inside RelationalGaugeController clas
                 return pivotSetting;
             }
         }
+        .....
+        ..... // Datasource initialization
+        .....
     }
 {% endhighlight %}
 
@@ -505,4 +510,4 @@ Now, **PivotGauge** will be rendered as shown in the below figure.
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotGauge. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/PivotGauge/olap-connectivity#wcf-1).
+This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotGauge. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/PivotGauge/relational-connectivity#wcf-1).

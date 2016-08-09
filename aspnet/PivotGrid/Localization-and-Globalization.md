@@ -15,7 +15,7 @@ You can localize the PivotGrid controls text with a collection of localized stri
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat="server" Url="../PivotGridService" Locale="fr-FR" EnableVirtualScrolling="false">
+<ej:PivotGrid ID="PivotGrid1" runat="server" Url="/PivotGridService" Locale="fr-FR" EnableVirtualScrolling="false">
         <ClientSideEvents AfterServiceInvoke="OnAfterServiceInvoke" />
 </ej:PivotGrid>
 
@@ -1154,7 +1154,7 @@ You can render our PivotGrid control from Right to Left by setting `EnableRTL` p
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat="server" Url="../PivotGridService" EnableRTL="true"></ej:PivotGrid>
+<ej:PivotGrid ID="PivotGrid1" runat="server" Url="/PivotGridService" EnableRTL="true"></ej:PivotGrid>
 
 
 {% endhighlight %}

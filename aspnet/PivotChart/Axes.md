@@ -16,7 +16,7 @@ By using the `LabelFormat` property, you can format the numeric labels. Numeric 
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
     //Applying currency format to axis labels
     <PrimaryYAxis LabelFormat="c"></PrimaryYAxis>
     <Size Width="950px" Height="460px"></Size>
@@ -91,7 +91,7 @@ By using the `LabelFormat` property of `PrimaryYAxis`, you can add the category 
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
     //Adding prefix and suffix to axis labels
     <PrimaryYAxis LabelFormat="${value} K"></PrimaryYAxis>
     <Size Width="950px" Height="460px"></Size>
@@ -104,11 +104,13 @@ By using the `LabelFormat` property of `PrimaryYAxis`, you can add the category 
 ##Common Axis Features
 
 ###Axis Visibility
-Axis visibility can be set by using the `Visible` property of the respective axis. The default value of the `Visible` property is true.
+Axis visibility can be set by using the `Visible` property of the respective axis.
+
+N> By default, the value of `Visible` property is true in PivotChart.
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
     //Disabling visibility of Y-axis
     <PrimaryYAxis Visible="false"></PrimaryYAxis>
     <Size Width="950px" Height="460px"></Size>
@@ -123,7 +125,7 @@ By using the `Font` property of the axis, we can customize the labels – font f
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
     //Customizing label appearance
     <PrimaryXAxis Font-Color="Blue" Font-FontSize="14px" Font-FontFamily="Segoe UI" Font-FontWeight="Bold">
     </PrimaryXAxis>
@@ -139,7 +141,7 @@ Axis labels and ticks can be positioned inside or outside the Chart area by usin
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
     //Customizing label and tick positions
     <PrimaryXAxis AxislabelPosition="Inside" TickLinesPosition="Inside">
     </PrimaryXAxis>
@@ -151,11 +153,13 @@ Axis labels and ticks can be positioned inside or outside the Chart area by usin
 ![](Chart-Axes_images/Chart-Axes_img5.png)
 
 ###Grid Lines Customization
-By using the `MajorGridLines` and `MinorGridLines` properties of the axis, you can customize the width, color, visibility and opacity of the grid lines. The minor grid lines are not visible by default.
+By using the `MajorGridLines` and `MinorGridLines` properties of the axis, you can customize the width, color, visibility and opacity of the grid lines.
+
+N> By default, the minor grid lines are not visible in PivotChart.
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
     // Customizing grid lines
     <PrimaryXAxis MajorGridLines-Width="5" MajorGridLines-Visible="true" MajorGridLines-Color="Blue" MinorTicksPerInterval="1" MinorGridLines-Width="25" MinorGridLines-Visible="true" MinorGridLines-Color="Red">
     </PrimaryXAxis>
@@ -167,11 +171,13 @@ By using the `MajorGridLines` and `MinorGridLines` properties of the axis, you c
 ![](Chart-Axes_images/Chart-Axes_img6.png)
 
 ###Tick Line Customization
-By using the `MajorTickLines` and `MinorTickLines` properties of the axis, you can customize the width, color, visibility, size and opacity of the tick lines. The minor tick lines are not visible by default.
+By using the `MajorTickLines` and `MinorTickLines` properties of the axis, you can customize the width, color, visibility, size and opacity of the tick lines.
+
+N> By default, the minor tick lines are not visible in PivotChart.
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
     // Customizing tick lines
     <PrimaryXAxis MajorTickLines-Width="10" MajorTickLines-Visible="true" MajorTickLines-Size="15" MajorTickLines-Color="Blue" MinorTicksPerInterval="1" MinorTickLines-Width="15" MinorTickLines-Size="25" MinorTickLines-Visible="true" MinorTickLines-Color="Red">
     </PrimaryXAxis>
@@ -183,11 +189,13 @@ By using the `MajorTickLines` and `MinorTickLines` properties of the axis, you c
 ![](Chart-Axes_images/Chart-Axes_img7.png)
 
 ###Inversing Axis
-Axis can be inversed by using the `IsInversed` property of the axis. By default, the value of the `IsInversed` property is false.
+Axis can be inversed by using the `IsInversed` property of the axis.
+
+N> By default, the `IsInversed` property is false in PivotChart.
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
     //Inversing the X-axis
     <PrimaryXAxis IsInversed="true"></PrimaryXAxis>
     //Inversing the Y-axis
@@ -200,11 +208,13 @@ Axis can be inversed by using the `IsInversed` property of the axis. By default,
 ![](Chart-Axes_images/Chart-Axes_img8.png)
 
 ###Placing Axes at Opposite Side
-The `OpposedPosition` property of Chart axis can be used to place the axis at the opposite direction from its default position. By default, the value of `OpposedPosition` property is false.
+The `OpposedPosition` property of Chart axis can be used to place the axis at the opposite direction from its default position.
+
+N> By default, the `OpposedPosition` property is false in PivotChart.
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
     //Placing axis at the opposite side of its normal position
     <PrimaryXAxis OpposedPosition="true"></PrimaryXAxis>
     //Placing axis at the opposite side of its normal position
@@ -218,11 +228,21 @@ The `OpposedPosition` property of Chart axis can be used to place the axis at th
 
 ## Smart Axis Labels
 
-When the axis labels overlap with each other based on the Chart dimensions and label size, you can use `LabelIntersection` property of the axis to avoid overlapping. The default value of the `LabelIntersection` property is none. The other options available are "Rotate45", "Rotate90", "Trim", "MultipleRows", "Wrap" and "Hide".
+When the axis labels overlap with each other based on the Chart dimensions and label size, you can use `LabelIntersection` property of the axis to avoid overlapping.
+
+N> By default, the `LabelIntersection` property is none in PivotChart.
+
+The following options that are supported for `LabelIntersection` property are: 
+* Rotate45
+* Rotate90
+* Trim
+* MultipleRows
+* Wrap
+* Hide. 
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
     // Avoid overlapping of x-axis labels
     <PrimaryXAxis LabelIntersectAction="MultipleRows"></PrimaryXAxis>
      <Size Width="950px" Height="460px"></Size>

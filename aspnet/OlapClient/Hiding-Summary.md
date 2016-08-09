@@ -13,7 +13,7 @@ By setting the “GridLayout” property as “NoSummaries”, the summary cells
 
 {% highlight html %}
 
-<ej:OlapClient Url="../OlapClient" Title="OLAP Browser" runat="server" GridLayout="NoSummaries"></ej:OlapClient>
+<ej:OlapClient Url="/OlapClient" Title="OLAP Browser" runat="server" GridLayout="NoSummaries"></ej:OlapClient>
     
 {% endhighlight %}
 

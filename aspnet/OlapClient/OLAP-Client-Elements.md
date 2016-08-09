@@ -11,7 +11,7 @@ documentation: ug
 
 ## Cube Selector
 
-Cube Selector allows to select any one of the cube from the cubes available in connected database.  This can be achieved with a dropdown list displaying the list of names of cubes. On selecting a cube from the dropdown list the corresponding cube elements get loaded.
+Cube Selector allows to select any one of the cubes that are available in connected database. This can be achieved with a dropdown list displaying the list of cube names. On selecting a cube from the dropdown list the corresponding cube elements get loaded.
 
 ![](OLAP-Client-Elements_images/cubeSelector.png) 
 
@@ -33,9 +33,9 @@ Cube Dimension Browser is a treeview like structure that organizes the cube elem
 
 Attribute hierarchy contains the following levels:
 
-* A leaf level contains each distinct attribute member called leaf member with each member of the leaf level.
+* A leaf level that contains each distinct attribute member, with each member of the leaf level also known as a leaf member.
 * Intermediate levels if the attribute hierarchy is a parent-child hierarchy.
-* An optional (All) level (IsAggregatable=True) containing the aggregated value of the attribute hierarchy’s leaf members, with the member of the (All) level also known as the (All) member.
+* An optional (All) level (IsAggregatable=True) containing the aggregated value of the attribute hierarchy's leaf members, with the member of the (All) level also known as the (All) member
 
 ### User-Defined Hierarchy
 
@@ -112,7 +112,7 @@ The categorical axis defines one or more elements that are displayed along the C
 
 ### Series (Row)
 
-The series axis defines one or more dimensions that are displayed along the Chart’s x-axis as labels and in the rows of the Grid. If more than one dimension is on the series axis, the Chart/Grid will stack each dimension. The order in which the dimensions are stacked is based on the order that they appear on the series axis.
+The slicer axis filters the multidimensional data displayed in the Chart/Grid. It lets you analyze any member of a dimension, in-depth. For the slicer to display the member’s data, that member must not be present on both categorical axis and series axis.
 
 ### Slicer
 
@@ -122,11 +122,11 @@ The slicer axis is used as a filter to narrow the focus of the multidimensional 
 
 ### Split Button
 
-Split Button highlights the elements in the Axis Element Builder. It holds measures, dimensions, named set. When a dimension/hierarchy/level/named set node is dragged and dropped from Cube Dimensional Browser into Axis Element Builder, a Split Button is created displaying the corresponding dimension/named set caption. 
+Split Button highlights the elements in the Axis Element Builder. It holds measures, dimensions, named set. When a dimension/hierarchy/level/named set node is dragged and dropped from Cube Dimensional Browser into Axis Element Builder, a Split Button is created along with displaying the corresponding dimension/named set caption. 
 
-When a measure node is dragged and dropped, the Axis Element Builder will create a Split Button for holding the Measures. The next time a measure is added, it maintains the same single Split Button to hold the entire measure collection. 
-
-Split Buttons can be removed with the help of delete icon available in it.
+When a measure node is dragged and dropped, the Axis Element Builder will create a Split Button for holding the Measures. The next time when a measure is added, it maintains the same single Split Button to hold the entire measure collection.
+ 
+Split Buttons can be removed with the help of remove button which is available on its side.
 
 ![](OLAP-Client-Elements_images/Measure split button.png) 
 
@@ -140,7 +140,7 @@ The measure, dimension, hierarchy, level and named set elements can be dragged f
 
 ### Remove Elements from an Axis
 
-In order to remove measures, dimension, hierarchy, level and named set element from the Axis Element Builder, click the remove symbol available next to the Split Button.
+In order to remove measures, dimension, hierarchy, level and named set element from the Axis Element Builder, click the remove button available next to the Split Button.
 
 ![](OLAP-Client-Elements_images/removeelement.png) 
 
@@ -160,7 +160,7 @@ Measure Editor is a dialog that displays the collection of measures in the curre
 
 ![](OLAP-Client-Elements_images/measureeditor.png) 
 
-To remove a measure, click the remove button next to the corresponding measure. To avoid removing the current selection, click Cancel.
+To remove a measure, click the remove icon next to the corresponding measure. To avoid removing the current selection, click Cancel.
 
 ![](OLAP-Client-Elements_images/deletemeasureeditor.png) 
 
@@ -180,7 +180,7 @@ The options available in the toolbar are,
 
 * **New Report** - Creates a new reports list, clearing the existing report collection in order to provide a new platform for new deployment based on the existing cube elements.
 * **Add Report** - Adds a new report to the existing list of reports.
-* **Remove Report** - Removes the current report from the report list.  It could not be possible if the report list contains only one report in it.
+* **Remove Report** - Removes the current report from the report list.  It could not be possible to remove if the report list contains only one report in it.
 * **Rename Report** - The rename option lets the user to change the name of the current report.
 * **Save Report** - The save option stores the report collection at the instant in a database.
 * **Load Report** - The load report option picks the saved report collection from the database and loads it by clearing the existing collection of reports.
@@ -194,13 +194,13 @@ The options available in the toolbar are,
 * **Filter/Sort Row** - Filters/Sorts the data in the OlapReport with respect to Row.
 * **Toggle Axis** – Interchanges the items between Categorical and Series axes.
 * **Chart types** – Allows user to change the Chart type dynamically.
-* **Report List** - Report List will hold all the reports of the current session of the OlapClient control and displays in a dropdown list.  From the dropdown list a report can be selected.
+* **Report List** - It holds all the reports of the current session of the OlapClient control and displays in a dropdown list. By default, from the dropdown list a report can be selected.
 
 ## Report Manipulation
 
 ### New Report
 
-New Report option helps the user to clear the existing report collection and to create a new report collection with a single report.  On clicking the New Report icon in toolbar, the New Report dialog opens as shown below.
+New Report option helps the user to create a new report collection with a single report along with clear the existing report collection. On clicking the New Report icon in toolbar, the New Report dialog opens as shown below.
 
 ![](OLAP-Client-Elements_images/newreport.png) 
 
@@ -226,7 +226,7 @@ Remove Report option removes the current/active report from the report collectio
 
 On clicking OK button, the report gets removed from the collection. On clicking Cancel button, the operation gets aborted.
   
-This option works only if the report collection has more than one report.  If not, the below dialog opens on clicking the Remove Report toolbar icon displaying a message that single report cannot be moved as Report collection must have at least one report in it.
+This option works only if the report collection has more than one report.  If not, the below dialog opens on clicking the Remove Report toolbar icon which displays a message that single report cannot be removed.
 
 ![](OLAP-Client-Elements_images/aferremovereport.png) 
 
@@ -256,7 +256,7 @@ Load Report option loads a report collection from the database via service.  Cli
 
 ![](OLAP-Client-Elements_images/loadreport.png) 
 
-Any one of the report from the report collection could be selected from the drop-down list and OK button is clicked for loading the selected report collection. Cancel button is for dropping the loading operation.
+Any one of the report from the report collection could be selected from the drop-down list and OK button is clicked for loading the selected report collection. Cancel button is used for to abort the report loading operation.
 
 ![](OLAP-Client-Elements_images/afterloadreport.png) 
 

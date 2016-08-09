@@ -40,7 +40,7 @@ In this example, we have bound the raw items obtained into our Grid control. Ple
             </ej:Field>
         </Values>
     </DataSource>
-    <ClientSideEvents DrillThrough="drillData" />
+    <ClientSideEvents DrillThrough="drilledData" />
 </ej:PivotGrid>
 
 <script type="text/javascript">
