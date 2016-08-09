@@ -11,7 +11,7 @@ documentation: ug
 
 ## Adding Label Collection
 
-Label collection can be directly added to the scales option within the PivotGauge control as an array.
+`LabelCollection` can be directly added to the scales option within the PivotGauge control.
 
 {% highlight html %}
     
@@ -63,7 +63,9 @@ The appearance of the Label can be customized through the following properties.
 
 ## Unit Text
 
-The `UnitText` property is used to add some text along with the labels. Normally, we indicate the unit/measurement of the numeric value through unit text. Using the `UnitTextPosition` property, the text can be positioned either in front or back.  By default, text appears at the back.
+The `UnitText` property is used to add some text along with the labels. Normally, we indicate the unit/measurement of the numeric value through unit text. Using the `UnitTextPosition` property, the text can be positioned either in front or back.
+
+N> By default, text appears at the back.
 
 {% highlight html %}
 

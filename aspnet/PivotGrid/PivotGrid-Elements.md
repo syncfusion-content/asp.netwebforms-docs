@@ -28,7 +28,7 @@ Also hyperlink option provides separate event for row, column, value and summary
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat="server" Url="../PivotGridService">
+<ej:PivotGrid ID="PivotGrid1" runat="server" Url="/PivotGridService">
         <HyperlinkSettings EnableColumnHeaderHyperlink="true" EnableValueCellHyperlink="true" EnableRowHeaderHyperlink="true" EnableSummaryCellHyperlink="true" />
         <ClientSideEvents ValueCellHyperlinkClick="CellClickEvent" RowHeaderHyperlinkClick="CellClickEvent" ColumnHeaderHyperlinkClick="CellClickEvent" SummaryCellHyperlinkClick="CellClickEvent" />
 </ej:PivotGrid> 
@@ -51,7 +51,7 @@ The **"CellSelection"** event would be triggered as soon as the selection proces
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat="server" url="../PivotGridService" EnableCellSelection="true" >
+<ej:PivotGrid ID="PivotGrid1" runat="server" url="/PivotGridService" EnableCellSelection="true" >
     <ClientSideEvents CellSelection="valueCellClick"/>
 </ej:PivotGrid> 
 
@@ -77,7 +77,7 @@ Cell context is enabled by setting the `EnableCellContext` property to true. The
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat="server" url="../PivotGridService" EnableCellContext="true">
+<ej:PivotGrid ID="PivotGrid1" runat="server" url="/PivotGridService" EnableCellContext="true">
     <clientsideevents CellContext="cell_RightClick" />
 </ej:PivotGrid> 
 
@@ -97,7 +97,7 @@ Conditional formatting is enabled by setting `EnableConditionalFormatting` prope
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat="server" url="../PivotGridService" EnableConditionalFormatting="true">
+<ej:PivotGrid ID="PivotGrid1" runat="server" url="/PivotGridService" EnableConditionalFormatting="true">
 </ej:PivotGrid>
 
 <ej:Button ClientSideOnClick="btnClick" runat="server" Text="Conditional"></ej:Button>

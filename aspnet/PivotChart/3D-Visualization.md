@@ -9,7 +9,13 @@ documentation: ug
 
 # 3D Visualization
 
-The PivotChart control allows you to view the data in a 3D view with 5 different chart types namely Bar, Column, Stacking Bar, Stocking Column and Pie.
+The PivotChart control allows you to view the data in a 3D view. Following are the chart types that are supported:
+
+* Bar
+* Column
+* Stacking Bar
+* Stocking Column 
+* Pie
 
 ## 3D Column Chart
 
@@ -17,7 +23,7 @@ The PivotChart control allows you to view the data in a 3D view with 5 different
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" Enable3D="true" Rotation="24" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" Enable3D="true" Rotation="24" ClientIDMode="Static">
     //Set chart type as Column to series
     <CommonSeriesOptions Type="Column" />
     <Size Width="100%" Height="460px"></Size>
@@ -33,7 +39,7 @@ The PivotChart control allows you to view the data in a 3D view with 5 different
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" Enable3D="true" Rotation="24" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" Enable3D="true" Rotation="24" ClientIDMode="Static">
     //Set chart type as Bar to series
     <CommonSeriesOptions Type="Bar" />
     <Size Width="100%" Height="460px"></Size>
@@ -48,7 +54,7 @@ The PivotChart control allows you to view the data in a 3D view with 5 different
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" Enable3D="true" Rotation="24" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" Enable3D="true" Rotation="24" ClientIDMode="Static">
     //Set chart type as StackingBar to series
     <CommonSeriesOptions Type="StackingBar" />
     <Size Width="100%" Height="460px"></Size>
@@ -63,7 +69,7 @@ The PivotChart control allows you to view the data in a 3D view with 5 different
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" Enable3D="true" Rotation="24" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" Enable3D="true" Rotation="24" ClientIDMode="Static">
     //Set chart type as StackingColumn to series
     <CommonSeriesOptions Type="StackingColumn" />
     <Size Width="100%" Height="460px"></Size>
@@ -78,7 +84,7 @@ The PivotChart control allows you to view the data in a 3D view with 5 different
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" Enable3D="true" Rotation="24" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" Enable3D="true" Rotation="24" ClientIDMode="Static">
     //Set chart type as pie to series
     <CommonSeriesOptions Type="Pie" />
     <Size Width="100%" Height="460px"></Size>
@@ -94,7 +100,7 @@ We can rotate the 3D Chart towards left or right by setting an appropriate angle
 {% highlight html %}
 
 //Rotates the 3D Chart 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc"  Enable3D="true" Rotation="40" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc"  Enable3D="true" Rotation="40" ClientIDMode="Static">
     //Set chart type as Column to series
     <CommonSeriesOptions Type="Column" />
     <Size Width="100%" Height="460px"></Size>

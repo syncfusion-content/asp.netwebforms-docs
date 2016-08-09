@@ -20,5 +20,9 @@ PivotGauge control supports responsive rendering based on the target device (des
 
 ![](Responsive-Layout_images/Responsive1.png) 
 
+_Normal View_
+
+
 ![](Responsive-Layout_images/Responsive2.png) 
 
+_Responsive View_

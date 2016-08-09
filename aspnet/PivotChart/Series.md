@@ -18,7 +18,7 @@ By using the `fill` and `border` properties of Chart series, you can customize t
 //...
 
 <body>
-    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+    <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
         <ClientSideEvents Load="loadTheme" SeriesRendering="onSeriesRenders" />
           <Size Width="100%" Height="460px"></Size>
     </ej:PivotChart>

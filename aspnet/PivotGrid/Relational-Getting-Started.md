@@ -16,12 +16,11 @@ This section covers the information that you need to know to populate a simple P
 
 ### Scripts and CSS References  
 
-create a Default.aspx page and scripts and style sheets that are mandatorily required to render PivotGrid widget in a Web Application are mentioned in an appropriate order below:
+create a Default.aspx page and scripts and style sheets that are mandatorily required to render PivotGrid control in a Web Application are mentioned in an appropriate order below:
 
-1. ej.widgets.all.min.css
+1. ej.web.all.min.css
 2. jQuery-1.10.2.min.js
 3. jQuery.easing.1.3.min.js
-4. jQuery.linq.js
 5. ej.web.all.min.js
 
 Scripts and style sheets are referred under the <head> tag in Default.aspx page.
@@ -32,7 +31,6 @@ Scripts and style sheets are referred under the <head> tag in Default.aspx page.
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/linq.js/2.2.0.2/jquery.linq.js" type="text/javascript"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
     
 </head>    
@@ -41,7 +39,7 @@ Scripts and style sheets are referred under the <head> tag in Default.aspx page.
 
 ### Initialize PivotGrid
 
-Either drag and drop the PivotGrid control from the toolbox (under Syncfusion BI Web category) or manually define the widget like in the below code sample inside "GettingStarted.aspx" page.
+Either drag and drop the PivotGrid control from the toolbox (under Syncfusion BI Web category) or manually define the control like in the below code sample inside "GettingStarted.aspx" page.
 
 {% highlight html %}
 
@@ -74,11 +72,30 @@ Let us now see how to populate the PivotGrid control using a sample JSON data as
 <script type="text/javascript">
     function onLoad(args) {
         args.model.dataSource.data = [
-            { Amount: 100, Country: "Canada", Product: "Bike" },
-            { Amount: 200, Country: "Germany", Product: "Van" },
-            { Amount: 300, Country: "Germany", Product: "Car" },
-            { Amount: 150, Country: "United Kingdom", Product: "Bike" },
-            { Amount: 200, Country: "Canada", Product: "Car" }
+    { Amount: 100, Country: "Canada", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Alberta" },
+    { Amount: 200, Country: "Canada", Date: "FY 2006", Product: "Van", Quantity: 3, State: "British Columbia" },
+    { Amount: 300, Country: "Canada", Date: "FY 2007", Product: "Car", Quantity: 4, State: "Brunswick" },
+    { Amount: 150, Country: "Canada", Date: "FY 2008", Product: "Bike", Quantity: 3, State: "Manitoba" },
+    { Amount: 200, Country: "Canada", Date: "FY 2006", Product: "Car", Quantity: 4, State: "Ontario" },
+    { Amount: 100, Country: "Canada", Date: "FY 2007", Product: "Van", Quantity: 1, State: "Quebec" },
+    { Amount: 200, Country: "France", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Charente-Maritime" },
+    { Amount: 250, Country: "France", Date: "FY 2006", Product: "Van", Quantity: 4, State: "Essonne" },
+    { Amount: 300, Country: "France", Date: "FY 2007", Product: "Car", Quantity: 3, State: "Garonne (Haute)" },
+    { Amount: 150, Country: "France", Date: "FY 2008", Product: "Van", Quantity: 2, State: "Gers" },
+    { Amount: 200, Country: "Germany", Date: "FY 2006", Product: "Van", Quantity: 3, State: "Bayern" },
+    { Amount: 250, Country: "Germany", Date: "FY 2007", Product: "Car", Quantity: 3, State: "Brandenburg" },
+    { Amount: 150, Country: "Germany", Date: "FY 2008", Product: "Car", Quantity: 4, State: "Hamburg" },
+    { Amount: 200, Country: "Germany", Date: "FY 2008", Product: "Bike", Quantity: 4, State: "Hessen" },
+    { Amount: 150, Country: "Germany", Date: "FY 2007", Product: "Van", Quantity: 3, State: "Nordrhein-Westfalen" },
+    { Amount: 100, Country: "Germany", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Saarland" },
+    { Amount: 150, Country: "United Kingdom", Date: "FY 2008", Product: "Bike", Quantity: 5, State: "England" },
+    { Amount: 250, Country: "United States", Date: "FY 2007", Product: "Car", Quantity: 4, State: "Alabama" },
+    { Amount: 200, Country: "United States", Date: "FY 2005", Product: "Van", Quantity: 4, State: "California" },
+    { Amount: 100, Country: "United States", Date: "FY 2006", Product: "Bike", Quantity: 2, State: "Colorado" },
+    { Amount: 150, Country: "United States", Date: "FY 2008", Product: "Car", Quantity: 3, State: "New Mexico" },
+    { Amount: 200, Country: "United States", Date: "FY 2005", Product: "Bike", Quantity: 4, State: "New York" },
+    { Amount: 250, Country: "United States", Date: "FY 2008", Product: "Car", Quantity: 3, State: "North Carolina" },
+    { Amount: 300, Country: "United States", Date: "FY 2007", Product: "Van", Quantity: 4, State: "South Carolina" }
         ]
      }
 </script> 
@@ -237,15 +254,16 @@ Now add the following dependency libraries as references into your Web Applicati
 * Syncfusion.Pdf.Base
 * Syncfusion.DocIO.Base
 * Syncfusion.EJ
+* Syncfusion.EJ.Web
 * Syncfusion.EJ.Olap
 
 N> If any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility is installed, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET].
 
 ### Scripts and CSS Initialization
 
-The scripts and style sheets that are mandatorily required to render PivotGrid widget in a Web Application are mentioned in an appropriate order below:
+The scripts and style sheets that are mandatorily required to render PivotGrid control in a Web Application are mentioned in an appropriate order below:
 
-1. ej.widgets.all.min.css
+1. ej.web.all.min.css
 2. jQuery-1.10.2.min.js
 3. jQuery.easing.1.3.min.js
 4. ej.web.all.min.js
@@ -267,9 +285,9 @@ Scripts and style sheets are referred under the <head> tag in **GettingStarted.a
 
 ### Control Initialization
 
-Either drag and drop the **PivotGrid** control from the toolbox (under **Syncfusion BI Web** category) or manually define the widget like in the below code sample inside **"GettingStarted.aspx"** page.
+Either drag and drop the **PivotGrid** control from the toolbox (under **Syncfusion BI Web** category) or manually define the control like in the below code sample inside **"GettingStarted.aspx"** page.
  
-Once the widget is placed into the web page, add **'ScriptManager'** next to it in-order to generate appropriate scripts.
+Once the control is placed into the web page, add **'ScriptManager'** next to it in-order to generate appropriate scripts.
 
 {% highlight html %}
 
@@ -280,7 +298,7 @@ Once the widget is placed into the web page, add **'ScriptManager'** next to it 
 
 <body>
     <form runat="server">
-        <ej:PivotGrid ID="PivotGrid1" Url="../RelationalService" runat="server" ClientIDMode="Static"></ej:PivotGrid>
+        <ej:PivotGrid ID="PivotGrid1" Url="/RelationalService" runat="server" ClientIDMode="Static"></ej:PivotGrid>
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     </form>
 </body>
@@ -289,9 +307,9 @@ Once the widget is placed into the web page, add **'ScriptManager'** next to it 
 
 {% endhighlight %}
 
-The **“Url”** property in PivotGrid widget points the service endpoint, where data are processed and fetched in the form of JSON. The services used in PivotGrid widget as endpoint are WCF and WebAPI.
+The **“Url”** property in PivotGrid control points the service endpoint, where data are processed and fetched in the form of JSON. The services used in PivotGrid control as endpoint are WCF and WebAPI.
 
-N> The above “GettingStarted.aspx” contains WebAPI URL, which is “../RelationalService”. If WCF service is used as endpoint, the URL would look like “../RelationalService.svc”.
+N> The above “GettingStarted.aspx” contains WebAPI URL, which is “/RelationalService”. If WCF service is used as endpoint, the URL would look like “/RelationalService.svc”.
 
 If you are manually entering the code instead of drag and drop operation from toolbox, then you need to register the referenced assemblies in Web.config file. 
 
@@ -302,6 +320,7 @@ If you are manually entering the code instead of drag and drop operation from to
         …… 
         ……
         <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.EJ.Web, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.EJ.Olap, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
          <add assembly="Syncfusion.Compression.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Linq.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
@@ -346,23 +365,20 @@ The following are the list of namespaces to be added on top of the main class in
 
 {% highlight c# %}
 
+using Syncfusion.JavaScript;
+using Syncfusion.PivotAnalysis.Base;
 using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web;
 using System.Web.Http;
 using System.Web.Script.Serialization;
-using Syncfusion.JavaScript.Olap;
-using Syncfusion.Olap.Manager;
-using Syncfusion.Olap.Reports;
-using Syncfusion.PivotAnalysis.Base; 
 
 namespace PivotGridDemo
 {
-   public class RelationalServiceController : ApiController
+    public class RelationalServiceController : ApiController
     {
 
     }
@@ -553,15 +569,27 @@ namespace PivotGridDemo
             return dict;
         }
 
+        [System.Web.Http.ActionName("DeferUpdate")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> DeferUpdate(Dictionary<string, object> jsonResult)
+        {
+            htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
+            dict = htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), null, null, null, jsonResult["sortedHeaders"].ToString(), jsonResult["filterParams"].ToString());
+            return dict;
+        }
+        
         private PivotReport BindDefaultData()
         {
             PivotReport pivotSetting = new PivotReport();
-            pivotSetting.PivotRows.Add(new PivotItem { FieldMappingName = "Product", FieldHeader = "Product", TotalHeader = "Total", ShowSubTotal = false });
-            pivotSetting.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", FieldHeader = "Country", TotalHeader = "Total", ShowSubTotal = false });
+            pivotSetting.PivotRows.Add(new PivotItem { FieldMappingName = "Product", FieldHeader = "Product", TotalHeader = "Total" });
+            pivotSetting.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", FieldHeader = "Country", TotalHeader = "Total" });
             pivotSetting.PivotCalculations.Add(new PivotComputationInfo { CalculationName = "Amount", Description = "Amount", FieldHeader = "Amount", FieldName = "Amount", Format = "C", SummaryType = Syncfusion.PivotAnalysis.Base.SummaryType.DoubleTotalSum });
             return pivotSetting;
         }
     }
+        .....
+        ..... // Initialize the datasource
+        .....
 }
 
 {% endhighlight %}
@@ -592,7 +620,7 @@ Now, **PivotGrid** will be rendered with Sales Amount over a set of products acr
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotGrid. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/pivotgrid/olap-connectivity#wcf-1).
+This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotGrid. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/pivotgrid/relational-connectivity#wcf-1).
 
 
 

@@ -10,8 +10,10 @@ documentation: ug
 # Localization
 
 ## Localization in PivotGauge Control
-We can localize the PivotGauge controls text with a collection of localized strings using **"ej.PivotGauge.locale"** for different cultures. By default, the PivotGauge control is localized in **"en-US"**.
-
+ We can localize the PivotGauge control texts with a collection of localized strings using **"ej.PivotGauge.locale"** for different cultures.
+ 
+ N> By default, the PivotGauge control is localized in **"en-US"**.
+ 
 Following code example illustrates on how to localize PivotGauge based on **"French"** culture.
 
 {% highlight html %}

@@ -11,7 +11,7 @@ documentation: ug
 
 ## Adding Range Collection
 
-Range collection can be directly added to the scales option within the PivotGauge control as an array.
+`RangeCollection` can be directly added to the scales option within the PivotGauge control.
 
 {% highlight html %}
 
@@ -40,7 +40,9 @@ The appearance of the range can be customized through the following properties.
 * **Placement** – sets the position of the range.
 * **DistanceFromScale** – sets the distance between the range and scale.
 
-Positioning the range could be set either through `placement` or `distanceFromScale` property. By default, placement takes the value “near”, whereas other enumeration values available are “far” and “center”.
+Positioning the range could be set either through `Placement` or `DistanceFromScale` property. 
+
+N> By default, placement takes the value “near”, whereas other enumeration values available are “far” and “center”.
 
 {% highlight html %}
 
@@ -67,7 +69,7 @@ N> On setting both the position properties - "DistanceFromScale" and "Placement"
 
 ## Multiple Ranges
 
-Multiple ranges can be added by placing an array of objects in **"Ranges"** option.
+Multiple ranges can be added in `RangeCollection` to the scales option within the PivotGauge control.
 
 {% highlight html %}
 

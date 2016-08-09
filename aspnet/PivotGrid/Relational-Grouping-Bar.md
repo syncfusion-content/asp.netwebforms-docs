@@ -36,15 +36,8 @@ Grouping Bar allows user to dynamically alter the report by filter, sort and rem
         </Filters>
     </DataSource>
     <ClientSideEvents Load="onLoad" />
-
 </ej:PivotGrid>
-
-<script type="text/javascript">
-        function onLoad(args) {
-            args.model.dataSource.data = pivot_dataset;
-        }
-</script>
-    
+   
 {% endhighlight %}
 
 ![](Grouping-Bar_images/RealtionalClientGR.png)
@@ -53,7 +46,7 @@ Grouping Bar allows user to dynamically alter the report by filter, sort and rem
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat=server url="../RelationalService" EnableGroupingBar="true">
+<ej:PivotGrid ID="PivotGrid1" runat=server url="/RelationalService" EnableGroupingBar="true">
 </ej:PivotGrid>
 
 {% endhighlight %}

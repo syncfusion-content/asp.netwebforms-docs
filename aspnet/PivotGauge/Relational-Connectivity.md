@@ -57,6 +57,7 @@ To add them to your application, right-click on **References** in Solution Explo
 * Syncfusion.Pdf.Base
 * Syncfusion.DocIO.Base
 * Syncfusion.EJ
+* Syncfusion.EJ.Web
 * Syncfusion.EJ.Olap
 
 **List of Namespaces**
@@ -240,6 +241,9 @@ Secondly, you need to elaborate the service methods inside the main class, found
                 return pivotSetting;
             }
         }
+        .....
+        ..... // Datasource initialization
+        .....
     }
 {% endhighlight %}
 

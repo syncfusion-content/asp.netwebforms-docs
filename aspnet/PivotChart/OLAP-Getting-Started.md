@@ -28,12 +28,12 @@ Register the referenced assemblies in Web.config files available at the root of 
 
 {% highlight xml %}
 
-    <compilation debug="true" targetFramework={framework version}>
+    <compilation debug="true" targetFramework="4.5">
         <assemblies> 
             ……
             ……
-            <add assembly="Syncfusion.EJ, Version= {{ site.releaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-            <add assembly="Syncfusion.EJ.Olap, Version= {{ site.releaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />            
+            <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+            <add assembly="Syncfusion.EJ.Olap, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />            
 
         </assemblies>
     </compilation>
@@ -41,9 +41,9 @@ Register the referenced assemblies in Web.config files available at the root of 
 
 ### Scripts and CSS Initialization
 
-The scripts and style sheets that are mandatorily required to render PivotChart widget in a Web Application are mentioned in an appropriate order below:
+The scripts and style sheets that are mandatorily required to render PivotChart control in a Web Application are mentioned in an appropriate order below:
 
-1.  ej.widgets.all.min.css
+1.  ej.web.all.min.css
 2.	jquery-1.10.2.min.js
 3.	jquery.easing.1.3.min.js
 4.	ej.web.all.min.js 
@@ -65,7 +65,7 @@ Scripts and style sheets are referred under the <head> tag in **Default.aspx** f
 
 ### Initialize PivotChart
 
-Either drag and drop the **PivotChart** control from the toolbox (under Syncfusion BI Web category) or manually define the widget like in the below code sample inside “Default.aspx” page.
+Either drag and drop the **PivotChart** control from the toolbox (under Syncfusion BI Web category) or manually define the control like in the below code sample inside “Default.aspx” page.
 
 {% highlight html %}
 
@@ -73,9 +73,16 @@ Either drag and drop the **PivotChart** control from the toolbox (under Syncfusi
     <%@ Register Assembly="Syncfusion.EJ.Olap" Namespace="Syncfusion.JavaScript.Models" TagPrefix="ej" %>
 
     <html> 
-        …… 
-        ……
-
+    <head>
+    .....
+    .....
+    <style>
+        #MyPivotChart1 {
+            width:100%;
+            height:460px;
+        }
+    </style>
+    </head>
     <body>
         <form runat="server">
             <ej:PivotChart ID="MyPivotChart1" runat="server" ClientIDMode="Static">
@@ -89,7 +96,7 @@ Either drag and drop the **PivotChart** control from the toolbox (under Syncfusi
 
 ### Populate PivotChart With DataSource
 
-Initializes the OLAP datasource for PivotChart widget as shown below.
+Initializes the OLAP datasource for PivotChart control as shown below.
 
 
 {% highlight html %}
@@ -142,6 +149,7 @@ Now add the following dependency libraries as references into your Empty Web App
 * Syncfusion.Pdf.Base
 * Syncfusion.DocIO.Base
 * Syncfusion.EJ
+* Syncfusion.EJ.Web
 * Syncfusion.EJ.Olap
 
 N> If any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility is installed, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET].
@@ -151,19 +159,19 @@ Register the referenced assemblies in Web.config files at the root of the applic
 
 {% highlight xml %}
 
-    <compilation debug="true" targetFramework={framework version}>
+    <compilation debug="true" targetFramework="4.5">
         <assemblies> 
             …… 
             ……
-            <add assembly="Syncfusion.EJ, Version= {{ site.releaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-            <add assembly="Syncfusion.EJ.Olap, Version= {{ site.releaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-            <add assembly="Syncfusion.Linq.Base, Version= {{ site.releaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-            <add assembly="Syncfusion.Olap.Base, Version= {{ site.releaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-            <add assembly="Syncfusion.Compression.Base, Version= {{ site.releaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
-            <add assembly="Syncfusion.PivotAnalysis.Base, Version= {{ site.releaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
-            <add assembly="Syncfusion.Pdf.Base, Version= {{ site.releaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-            <add assembly="Syncfusion.XlsIO.Base, Version= {{ site.releaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-            <add assembly="Syncfusion.DocIO.Base, Version= {{ site.releaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
+            <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+            <add assembly="Syncfusion.EJ.Olap, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+            <add assembly="Syncfusion.Linq.Base, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+            <add assembly="Syncfusion.Olap.Base, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+            <add assembly="Syncfusion.Compression.Base, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
+            <add assembly="Syncfusion.PivotAnalysis.Base, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
+            <add assembly="Syncfusion.Pdf.Base, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+            <add assembly="Syncfusion.XlsIO.Base, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+            <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
         </assemblies>
     </compilation>
 
@@ -172,9 +180,9 @@ Register the referenced assemblies in Web.config files at the root of the applic
 
 ### Scripts and CSS Initialization
 
-The scripts and style sheets that are mandatorily required to render PivotChart widget in a Web Application are mentioned in an appropriate order below:
+The scripts and style sheets that are mandatorily required to render PivotChart control in a Web Application are mentioned in an appropriate order below:
 
-1.  ej.widgets.all.min.css
+1.  ej.web.all.min.css
 2.	jquery-1.10.2.min.js
 3.	jquery.easing.1.3.min.js
 4.	ej.web.all.min.js 
@@ -195,7 +203,7 @@ Scripts and style sheets are referred under the **head** tag in **Default.aspx**
 
 ### Control Initialization
 
-Either drag and drop the **PivotChart** control from the toolbox (under Syncfusion BI Web category) or manually define the widget like in the below code sample inside “Default.aspx” page.
+Either drag and drop the **PivotChart** control from the toolbox (under Syncfusion BI Web category) or manually define the control like in the below code sample inside “Default.aspx” page.
 
 {% highlight html %}
 
@@ -203,9 +211,16 @@ Either drag and drop the **PivotChart** control from the toolbox (under Syncfusi
     <%@ Register Assembly="Syncfusion.EJ.Olap" Namespace="Syncfusion.JavaScript.Models" TagPrefix="ej" %>
 
     <html> 
-        …… 
-        ……
-
+    <head>
+    .....
+    .....
+    <style>
+        #MyPivotChart1 {
+            width:100%;
+            height:460px;
+        }
+    </style>
+    </head>
     <body>
         <form runat="server">
             <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/OlapChart" ClientIDMode="Static">
@@ -218,7 +233,7 @@ Either drag and drop the **PivotChart** control from the toolbox (under Syncfusi
     
 {% endhighlight %}
 
-The **“Url”** property in PivotChart widget points the service endpoint, where data are processed and fetched in the form of JSON. The services used in PivotChart widget as endpoint are WCF and WebAPI.
+The **“Url”** property in PivotChart control points the service endpoint, where data are processed and fetched in the form of JSON. The services used in PivotChart control as endpoint are WCF and WebAPI.
 
 N> The above "Default.aspx" contains WebAPI URL, which is "/OlapChart". If WCF service is used as endpoint, the URL would look like "/OlapChartService.svc".
 

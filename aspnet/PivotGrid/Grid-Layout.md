@@ -17,7 +17,7 @@ A layout in which summary cells are positioned at the bottom of each parent memb
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat="server" Url="../PivotGridService" Layout="Normal"></ej:PivotGrid>
+<ej:PivotGrid ID="PivotGrid1" runat="server" Url="/PivotGridService" Layout="Normal"></ej:PivotGrid>
 
 {% endhighlight %}
 
@@ -29,7 +29,7 @@ A layout in which summary cells are completely hidden and the child members appe
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat="server" Url="../PivotGridService" Layout="NoSummaries"></ej:PivotGrid>
+<ej:PivotGrid ID="PivotGrid1" runat="server" Url="/PivotGridService" Layout="NoSummaries"></ej:PivotGrid>
 
 {% endhighlight %}
 
@@ -42,7 +42,7 @@ A layout in which summary cells are positioned besides each parent member and th
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat="server" Url="../PivotGridService" Layout="ExcelLikeLayout"></ej:PivotGrid>
+<ej:PivotGrid ID="PivotGrid1" runat="server" Url="/PivotGridService" Layout="ExcelLikeLayout"></ej:PivotGrid>
 
 {% endhighlight %}
 
@@ -54,7 +54,7 @@ A layout in which summary cells are positioned at the top of each parent member 
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat="server" Url="../PivotGridService" Layout="NormalTopSummary"></ej:PivotGrid>
+<ej:PivotGrid ID="PivotGrid1" runat="server" Url="/PivotGridService" Layout="NormalTopSummary"></ej:PivotGrid>
 
 {% endhighlight %}
 

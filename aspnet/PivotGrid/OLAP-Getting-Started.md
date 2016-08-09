@@ -16,12 +16,11 @@ This section covers the information that you need to know to populate a simple P
 
 ### Scripts and CSS References  
 
-create a Default.aspx page and scripts and style sheets that are mandatorily required to render PivotGrid widget in a Web Application are mentioned in an appropriate order below:
+Create a Default.aspx page and scripts and style sheets that are mandatorily required to render PivotGrid control in a Web Application are mentioned in an appropriate order below:
 
-1. ej.widgets.all.min.css
+1. ej.web.all.min.css
 2. jQuery-1.10.2.min.js
 3. jQuery.easing.1.3.min.js
-4. jQuery.linq.js
 5. ej.web.all.min.js
 
 Scripts and style sheets are referred under the <head> tag in Default.aspx page.
@@ -41,7 +40,7 @@ Scripts and style sheets are referred under the <head> tag in Default.aspx page.
 
 ### Initialize PivotGrid
 
-Either drag and drop the PivotGrid control from the toolbox (under Syncfusion BI Web category) or manually define the widget like in the below code sample inside "GettingStarted.aspx" page.
+Either drag and drop the PivotGrid control from the toolbox (under Syncfusion BI Web category) or manually define the control like in the below code sample inside "GettingStarted.aspx" page.
 
 {% highlight html %}
 
@@ -65,7 +64,7 @@ Either drag and drop the PivotGrid control from the toolbox (under Syncfusion BI
 
 ### Populate PivotGrid with dataSource
 
-Initializes the OLAP datasource for PivotGrid widget as shown below.
+Initializes the OLAP datasource for PivotGrid control as shown below.
 
 {% highlight html %}
 <ej:PivotGrid ID="PivotGrid1" runat="server">
@@ -124,7 +123,7 @@ N> If any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET u
 
 ### Scripts and CSS Initialization
 
-The scripts and style sheets that are mandatorily required to render PivotGrid widget in a Web Application are mentioned in an appropriate order below:
+The scripts and style sheets that are mandatorily required to render PivotGrid control in a Web Application are mentioned in an appropriate order below:
 
 1. ej.web.all.min.css
 2. jQuery-1.10.2.min.js
@@ -148,9 +147,9 @@ Scripts and style sheets are referred under the <head> tag in **GettingStarted.a
 
 ### Control Initialization
 
-Either drag and drop the **PivotGrid** control from the toolbox (under **Syncfusion BI Web** category) or manually define the widget like in the below code sample inside **"GettingStarted.aspx"** page.
+Either drag and drop the **PivotGrid** control from the toolbox (under **Syncfusion BI Web** category) or manually define the control like in the below code sample inside **"GettingStarted.aspx"** page.
  
-Once the widget is placed into the web page, add **'ScriptManager'** next to it in-order to generate appropriate scripts.
+Once the control is placed into the web page, add **'ScriptManager'** next to it in-order to generate appropriate scripts.
 
 {% highlight html %}
 
@@ -161,7 +160,7 @@ Once the widget is placed into the web page, add **'ScriptManager'** next to it 
 
 <body>
     <form runat="server">
-        <ej:PivotGrid ID="PivotGrid1" Url="../PivotGridService" runat="server" ClientIDMode="Static"></ej:PivotGrid>
+        <ej:PivotGrid ID="PivotGrid1" Url="/PivotGridService" runat="server" ClientIDMode="Static"></ej:PivotGrid>
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     </form>
 </body>
@@ -170,9 +169,9 @@ Once the widget is placed into the web page, add **'ScriptManager'** next to it 
 
 {% endhighlight %}
 
-The **“Url”** property in PivotGrid widget points the service endpoint, where data are processed and fetched in the form of JSON. The services used in PivotGrid widget as endpoint are WCF and WebAPI.
+The **“Url”** property in PivotGrid control points the service endpoint, where data are processed and fetched in the form of JSON. The services used in PivotGrid control as endpoint are WCF and WebAPI.
 
-N> The above “GettingStarted.aspx” contains WebAPI URL, which is “../PivotGridService”. If WCF service is used as endpoint, the URL would look like “../PivotGridService.svc”.
+N> The above “GettingStarted.aspx” contains WebAPI URL, which is “/PivotGridService”. If WCF service is used as endpoint, the URL would look like “/PivotGridService.svc”.
 
 If you are manually entering the code instead of drag and drop operation from toolbox, then you need to register the referenced assemblies in Web.config file. 
 
@@ -380,6 +379,15 @@ jsonResult["tag"].ToString(), jsonResult["cubeName"].ToString());
             htmlHelper.ExportPivotGrid(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
         }
 
+        [System.Web.Http.ActionName("DeferUpdate")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> DeferUpdate(Dictionary<string, object> jsonResult)
+        {
+            OlapDataManager DataManager = new OlapDataManager(connectionString);
+            DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
+            return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, null, jsonResult["filterParams"].ToString());
+        }
+        
         private OlapReport CreateOlapReport()
         {
             OlapReport olapReport = new OlapReport();

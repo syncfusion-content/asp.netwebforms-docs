@@ -242,6 +242,12 @@ namespace PivotGridDemo
         
         [OperationContract]
         Dictionary<string, object> Sorting(string action, string sortedHeaders, string currentReport);
+        
+        [OperationContract]
+        void Export(System.IO.Stream stream);
+        
+        [OperationContract]
+        Dictionary<string, object> DeferUpdate(string action, string filterParams, string sortedHeaders, string currentReport);
     }
 }
 
@@ -302,15 +308,35 @@ namespace PivotGridDemo
             return dict;
         }
 
+         public void Export(System.IO.Stream stream)
+        {
+            System.IO.StreamReader sReader = new System.IO.StreamReader(stream);
+            string args = System.Web.HttpContext.Current.Server.UrlDecode(sReader.ReadToEnd()).Remove(0, 5);
+            Dictionary<string, string> gridParams = serializer.Deserialize<Dictionary<string, string>>(args);
+            htmlHelper.PopulateData(gridParams["currentReport"]);
+            string fileName = "Sample";
+            htmlHelper.ExportPivotGrid(ProductSales.GetSalesData(), args, fileName, System.Web.HttpContext.Current.Response);
+        }
+        
+        public Dictionary<string, object> DeferUpdate(string action, string filterParams, string sortedHeaders, string currentReport)
+        {
+            htmlHelper.PopulateData(currentReport);
+            dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData(), null, null, null, sortedHeaders, filterParams);
+            return dict;
+        }
+        
         private PivotReport BindDefaultData()
         {
             PivotReport pivotSetting = new PivotReport();
-            pivotSetting.PivotRows.Add(new PivotItem { FieldMappingName = "Product", FieldHeader = "Product", TotalHeader = "Total", ShowSubTotal = false });
-            pivotSetting.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", FieldHeader = "Country", TotalHeader = "Total", ShowSubTotal = false });
+            pivotSetting.PivotRows.Add(new PivotItem { FieldMappingName = "Product", FieldHeader = "Product", TotalHeader = "Total" });
+            pivotSetting.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", FieldHeader = "Country", TotalHeader = "Total" });
             pivotSetting.PivotCalculations.Add(new PivotComputationInfo { CalculationName = "Amount", Description = "Amount", FieldHeader = "Amount", FieldName = "Amount", Format = "C", SummaryType = Syncfusion.PivotAnalysis.Base.SummaryType.DoubleTotalSum });
             return pivotSetting;
         }
     }
+    .....
+    ..... // Datasourse initialization
+    .....
 }
 
 {% endhighlight %}

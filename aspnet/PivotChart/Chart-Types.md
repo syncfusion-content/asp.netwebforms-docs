@@ -31,13 +31,10 @@ Essential **PivotChart ASP.NET** supports 14 different types of chart as follows
 **Column Chart** is the most commonly used chart type. It uses vertical bars (called columns) to display different values of one or more items. Points from adjacent series are drawn as bars next to each other. It is used to compare the frequency, count, total or average of data in different categories. It is ideal to show the variations in the value of an item over a period of time.
 
 {% highlight html %}
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" >
 
-<CommonSeriesOptions Type="Column" Tooltip-Visible="true" />
-<Size Width="950px" Height="460px"></Size>
-
-<Legend  Visible="true"></Legend>
-
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" >
+    <CommonSeriesOptions Type="Column" />
+    <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 {% endhighlight %}
 
@@ -53,14 +50,9 @@ Column chart
 **Stacking Column** Chart is similar to column charts except the Y-values. These Y-values stack on top of each other in a specified series order. This helps to visualize the relationship of parts to whole across categories.
 
 {% highlight html %}
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" >
-
-<CommonSeriesOptions type="StackingColumn" tooltip-visible="true" />
-
-<Size Width="950px" Height="460px"></Size>
-
-<Legend visible="true"></Legend>
-
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" >
+    <CommonSeriesOptions type="StackingColumn" />
+    <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 {% endhighlight %}
 
@@ -77,14 +69,9 @@ Stacking Column Chart
 The **Bar Chart** displays horizontal bars for each point in the series and points from adjacent series. Bar charts are used to compare values across categories, for displaying the variations in the value of an item over time or for comparing the values of several items at a single point in time.
 
 {% highlight html %}
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" >
-
-<CommonSeriesOptions type="Bar"/>
-
-<Size Width="950px" Height="460px"></Size>
-
-<Legend visible="true"></Legend>
-
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" >
+    <CommonSeriesOptions type="Bar"/>
+    <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 {% endhighlight %}
 
@@ -101,14 +88,9 @@ Bar Chart
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" >
-
-<CommonSeriesOptions type="StackingBar"/>
-
-<Size Width="950px" Height="460px"></Size>
-
-<Legend visible="true"></Legend>
-
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" >
+    <CommonSeriesOptions type="StackingBar"/>
+    <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 {% endhighlight %}
 
@@ -124,14 +106,9 @@ Stacking Bar Chart
 A **Pie chart** is used to summarize a set of categorical data or displaying different values of a given variable (e.g., percentage distribution). This type of chart is a circle divided into a series of segments. Each segment represents a particular category.
 
 {% highlight html %}
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" >
-
-<CommonSeriesOptions type="Pie"/>
-
-<Size Width="950px" Height="460px"></Size>
-
-<Legend visible="true"></Legend>
-
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" >
+    <CommonSeriesOptions type="Pie"/>
+    <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 {% endhighlight %}
 
@@ -148,14 +125,9 @@ Pie Chart
 The **Pyramid Chart** type displays the data in the form of a triangle. It helps you to visualize data in a hierarchical structure without any axes.
 
 {% highlight html %}
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" >
-
-<CommonSeriesOptions type="Pyramid"/>
-
-<Size Width="950px" Height="460px"></Size>
-
-<Legend visible="true"></Legend>
-
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" >
+    <CommonSeriesOptions type="Pyramid"/>
+    <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 {% endhighlight %}
 
@@ -174,14 +146,9 @@ The **Funnel Chart**  type displays the data in the form of an inverted triangle
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" >
-
-<CommonSeriesOptions type="Funnel"/>
-
-<Size Width="950px" Height="460px"></Size>
-
-<Legend visible="true"></Legend>
-
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" >
+    <CommonSeriesOptions type="Funnel"/>
+    <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 
 {% endhighlight %}
@@ -200,14 +167,9 @@ The **Line Chart** joins the data points on a plot using straight lines that sho
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" >
-
-<CommonSeriesOptions type="Line"/>
-
-<Size Width="950px" Height="460px"></Size>
-
-<Legend visible="true"></Legend>
-
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" >
+    <CommonSeriesOptions type="Line"/>
+    <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 {% endhighlight %}
 
@@ -224,14 +186,9 @@ Line Chart
 **Step Line Chart** uses horizontal and vertical lines to connect the data points resulting in a step like progression. 
 
 {% highlight html %}
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" >
-
-<CommonSeriesOptions type="StepLine"/>
-
-<Size Width="950px" Height="460px"></Size>
-
-<Legend visible="true"></Legend>
-
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" >
+    <CommonSeriesOptions type="StepLine"/>
+    <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 {% endhighlight %}
 
@@ -248,14 +205,9 @@ Step Line Chart
 The **Spline Chart** is similar to line charts except it connects different data points using curve lines instead of straight lines.
 
 {% highlight html %}
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" >
-
-<CommonSeriesOptions type="Spline"/>
-
-<Size Width="950px" Height="460px"></Size>
-
-<Legend visible="true"></Legend>
-
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" >
+    <CommonSeriesOptions type="Spline"/>
+    <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 {% endhighlight %}
 
@@ -271,14 +223,9 @@ Spline Chart
 **Area Chart** emphasizes the degree of change of values over a period of time. Instead of rendering data as discrete bars or columns, an area chart renders it in a continuous ebb-and-flow pattern as defined against the y-axis.
 
 {% highlight html %}
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" >
-
-<CommonSeriesOptions type="Area"/>
-
-<Size Width="950px" Height="460px"></Size>
-
-<Legend visible="true"></Legend>
-
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" >
+    <CommonSeriesOptions type="Area"/>
+    <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 {% endhighlight %}
 
@@ -295,14 +242,9 @@ Area Chart
 **Step Area** chart is similar to the regular area chart except for a straight line tracing the shortest path between the data points. The values are connected by continuous vertical and horizontal lines forming a step like progression.
 
 {% highlight html %}
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" >
-
-<CommonSeriesOptions type="StepArea"/>
-
-<Size Width="950px" Height="460px"></Size>
-
-<Legend visible="true"></Legend>
-
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" >
+    <CommonSeriesOptions type="StepArea"/>
+    <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 {% endhighlight %}
 
@@ -319,14 +261,9 @@ Step Area Chart
 **Spline Area** chart is similar to Area Chart with the difference in which the data points of a series are connected. It connects each series of points by a smooth **spline curve**.
 
 {% highlight html %}
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" >
-
-<CommonSeriesOptions type="SplineArea"/>
-
-<Size Width="950px" Height="460px"></Size>
-
-<Legend visible="true"></Legend>
-
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" >
+    <CommonSeriesOptions type="SplineArea"/>
+    <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 {% endhighlight %}
 
@@ -343,14 +280,9 @@ Spline Area Chart
 **Stacking Area** chart is similar to regular area chart except the “Y-values”. These “Y-values” stack on top of each other in the specified series order. This helps to visualize the relationship of parts to whole across categories.
 
 {% highlight html %}
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" >
-
-<CommonSeriesOptions type="StackingArea"/>
-
-<Size Width="950px" Height="460px"></Size>
-
-<Legend visible="true"></Legend>
-
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" >
+    <CommonSeriesOptions type="StackingArea"/>
+    <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 
 {% endhighlight %}
@@ -374,16 +306,10 @@ A **combination Chart** combines two or more series types in a single Chart. But
 
 {% highlight CSHTML %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" >
-
-<CommonSeriesOptions Type="Column" Tooltip-Visible="true" />
-
-<ClientSideEvents Load="loadTheme" SeriesRendering="onSeriesRenders" />
-
-<Size Width="950px" Height="460px"></Size>
-
-<Legend visible="true" rowcount="2"></Legend>
-
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" >
+    <CommonSeriesOptions Type="Column" />
+    <ClientSideEvents Load="loadTheme" SeriesRendering="onSeriesRenders" />
+    <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
     
 <script>

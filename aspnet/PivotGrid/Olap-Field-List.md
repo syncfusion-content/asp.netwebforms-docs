@@ -15,7 +15,7 @@ Field List, also known as Pivot Schema Designer, allows user to add, rearrange, 
 
 Based on the datasource, OLAP, bound to the PivotGrid control, PivotTable Field List will be automatically populated with Cube Information or Field Names. PivotTable Field List provides an Excel like appearance and behavior.
 
-In-order to initialize PivotTable Field List, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for the widget. Then you need to initialize the PivotTable Field List by using the **"PivotSchemaDesigner"** method.
+In-order to initialize PivotTable Field List, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for the control. Then you need to initialize the PivotTable Field List by using the **"PivotSchemaDesigner"** method.
 
 ### Client Mode
 
@@ -47,7 +47,6 @@ In-order to initialize PivotTable Field List, first you need to define a “div�
 <script type="text/javascript">
     function loadSchemaDesigner(args) {
         var PivotSchemaDesigner = $(".e-pivotschemadesigner").data('ejPivotSchemaDesigner');
-
         if (PivotSchemaDesigner.model.pivotControl == null) {
             PivotSchemaDesigner.model.pivotControl = this;
             PivotSchemaDesigner.model.layout = "excel";
@@ -66,7 +65,7 @@ In-order to initialize PivotTable Field List, first you need to define a “div�
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat=server url="../PivotGridService">
+<ej:PivotGrid ID="PivotGrid1" runat=server url="/PivotGridService">
     <ClientSideEvents  AfterServiceInvoke="OnAfterServiceInvoke"/>
 </ej:PivotGrid>
 
