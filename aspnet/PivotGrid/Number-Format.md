@@ -11,7 +11,18 @@ documentation: ug
 
 I> This feature is applicable only for Relational datasource only at Client Mode.
 
-The PivotGrid widget values could be formatted to number, decimal, currency, percentage, date and time etc… by setting an appropriate `Format` option.
+Allow us to specify the required number format that PivotGrid should use in its values by setting the `format` option. Following number formats that are supported:
+
+* number
+* decimal
+* currency
+* percentage
+* date
+* time
+* scientific
+* accounting
+* fraction
+
 
 {% highlight js %}
 
@@ -35,7 +46,7 @@ The PivotGrid widget values could be formatted to number, decimal, currency, per
 
 <script type="text/javascript">
         function onLoad(args) {
-            args.model.dataSource.data = pivot_dataset;
+            args.model.dataSource.data = pivot_dataset; // Datasource
         }
 </script>
 

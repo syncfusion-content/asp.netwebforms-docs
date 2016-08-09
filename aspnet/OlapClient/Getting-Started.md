@@ -29,6 +29,7 @@ Now add the following dependency libraries as references into your Web Applicati
 * Syncfusion.Linq.Base.dll
 * Syncfusion.Olap.Base.dll
 * Syncfusion.EJ.dll
+* Syncfusion.EJ.Web.dll
 * Syncfusion.EJ.Olap.dll
 * Syncfusion.XlsIO.Base.dll
 * Syncfusion.DocIO.Base.dll
@@ -38,7 +39,7 @@ Now add the following dependency libraries as references into your Web Applicati
 N> If any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility is installed, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]
 
 ###Scripts and CSS Initialization
-The scripts and style sheets that are mandatorily required to render OlapClient widget in a Web Application are mentioned in an appropriate order below:
+The scripts and style sheets that are mandatorily required to render OlapClient control in a Web Application are mentioned in an appropriate order below:
 
 1.	ej.web.all.min.css
 2.	jquery-1.10.2.min.js
@@ -64,9 +65,9 @@ Scripts and style sheets are referred under the <head> tag in **GettingStarted.a
 
 ###Control Initialization
 
-Either drag and drop the **OlapClient** control from the toolbox (under **Syncfusion BI Web** category) or manually define the widget like in the below code sample inside **“GettingStarted.aspx”** page.
+Either drag and drop the **OlapClient** control from the toolbox (under **Syncfusion BI Web** category) or manually define the control like in the below code sample inside **“GettingStarted.aspx”** page.
  
-Once the widget is placed into the web page, add **‘ScriptManager’** next to it in-order to generate appropriate scripts.
+Once the control is placed into the web page, add **‘ScriptManager’** next to it in-order to generate appropriate scripts.
 
 {% highlight html %}
 
@@ -78,7 +79,7 @@ Once the widget is placed into the web page, add **‘ScriptManager’** next to
 
 <body>
     <form runat="server">
-        <ej:OlapClient ID="OlapClient1" Url="../OlapClient" runat="server"> </ej:OlapClient>
+        <ej:OlapClient ID="OlapClient1" Url="/OlapClient" runat="server"> </ej:OlapClient>
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     </form>
 </body>
@@ -87,11 +88,11 @@ Once the widget is placed into the web page, add **‘ScriptManager’** next to
  
  {% endhighlight %}
  
- The **“Url”** property in OlapClient widget points the service endpoint, where data are processed and fetched in the form of JSON. The services used in OlapClient widget as endpoint are WCF and WebAPI.
+ The **“Url”** property in OlapClient control points the service endpoint, where data are processed and fetched in the form of JSON. The services used in OlapClient control as endpoint are WCF and WebAPI.
 
-N> The above “GettingStarted.aspx” contains WebAPI URL, which is, “../OlapClient”. If WCF service is used as endpoint, the URL would look like “../OlapClientService.svc”.
+N> The above “GettingStarted.aspx” contains WebAPI URL, which is, “/OlapClient”. If WCF service is used as endpoint, the URL would look like “/OlapClientService.svc”.
 
-If you are manually entering the code instead of dragging and dropping the OlapClient widget from toolbox, then you need to register the referenced assemblies in Web.config file.
+If you are manually entering the code instead of dragging and dropping the OlapClient control from toolbox, then you need to register the referenced assemblies in Web.config file.
 
 {% highlight xml %}
 
@@ -233,7 +234,7 @@ namespace OlapClientDemo
             }
             [System.Web.Http.ActionName("InitializeTreeMap")]
             [System.Web.Http.HttpPost]
-        public Dictionary <string, object> InitializeTreeMap(Dictionary<string, object> jsonResult)
+        public Dictionary < string, object > InitializeTreeMap(Dictionary< string, object > jsonResult)
             {
                 OlapDataManager DataManager = new OlapDataManager(connectionString);
                 DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
@@ -250,7 +251,7 @@ namespace OlapClientDemo
             }
             [System.Web.Http.ActionName("DrillTreeMap")]
             [System.Web.Http.HttpPost]
-        public Dictionary<string, object> DrillTreeMap(Dictionary<string, object> jsonResult)
+        public Dictionary< string, object > DrillTreeMap(Dictionary< string, object > jsonResult)
             {
                 OlapDataManager DataManager = new OlapDataManager(connectionString);
                 DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(jsonResult["olapReport"].ToString()));

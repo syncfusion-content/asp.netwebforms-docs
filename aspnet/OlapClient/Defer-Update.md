@@ -13,7 +13,7 @@ Defer Update support allows the user to refresh the control on-demand and not du
 
 {% highlight html %}
 
-   <ej:OlapClient ID="OlapClient1" runat="server" Url="../wcf/OlapClientService.svc" Title="OLAP Browser" EnableDeferUpdate="true" ClientIDMode="Static"> </ej:OlapClient>
+   <ej:OlapClient ID="OlapClient1" runat="server" Url="/OlapClientService.svc" Title="OLAP Browser" EnableDeferUpdate="true" ClientIDMode="Static"> </ej:OlapClient>
 
 {% endhighlight %}
 

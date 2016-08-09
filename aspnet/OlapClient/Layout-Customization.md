@@ -17,7 +17,7 @@ In Tab View representation, both Grid and Chart will be displayed in a separate 
 
 {% highlight html %}
 
-<ej:OlapClient Url="../OlapClient" Title="OLAP Browser" runat="server">
+<ej:OlapClient Url="/OlapClient" Title="OLAP Browser" runat="server">
     <DisplaySettings ControlPlacement="Tab" />
 </ej:OlapClient>
 
@@ -31,7 +31,7 @@ In Tile View representation, both Grid and Chart will be displayed one over the 
 
 {% highlight html %}
 
-<ej:OlapClient Url="../OlapClient" Title="OLAP Browser" runat="server">
+<ej:OlapClient Url="/OlapClient" Title="OLAP Browser" runat="server">
     <DisplaySettings ControlPlacement="Tile" />
 </ej:OlapClient>
 
@@ -47,7 +47,7 @@ To display Grid control by default, set `DefaultView` property under `DisplaySet
 
 {% highlight html %}
 
-<ej:OlapClient Url="../OlapClient" Title="OLAP Browser" runat="server">
+<ej:OlapClient Url="/OlapClient" Title="OLAP Browser" runat="server">
     <DisplaySettings DefaultView="Grid" />
 </ej:OlapClient>
 
@@ -61,7 +61,7 @@ To display Chart control by default, set the property `DefaultView` property to 
 
 {% highlight html %}
 
-<ej:OlapClient Url="../OlapClient" Title="OLAP Browser" runat="server">
+<ej:OlapClient Url="/OlapClient" Title="OLAP Browser" runat="server">
     <DisplaySettings DefaultView="Chart" />
 </ej:OlapClient>
 
@@ -77,7 +77,7 @@ After setting the `Mode` property under `DisplaySettings` option to **GridOnly**
 
 {% highlight html %}
 
-<ej:OlapClient Url="../OlapClient" Title="OLAP Browser" runat="server">
+<ej:OlapClient Url="/OlapClient" Title="OLAP Browser" runat="server">
     <DisplaySettings Mode="GridOnly" />
 </ej:OlapClient>
 
@@ -92,7 +92,7 @@ After setting the `Mode` property under `DisplaySettings` option to **ChartOnly*
 
 {% highlight html %}
 
-<ej:OlapClient Url="../OlapClient" Title="OLAP Browser" runat="server">
+<ej:OlapClient Url="/OlapClient" Title="OLAP Browser" runat="server">
     <DisplaySettings Mode="ChartOnly" />
 </ej:OlapClient>
 
@@ -106,7 +106,7 @@ After setting the `Mode` property under `DisplaySettings` option to **ChartAndGr
 
 {% highlight html %}
 
-<ej:OlapClient Url="../OlapClient" Title="OLAP Browser" runat="server">
+<ej:OlapClient Url="/OlapClient" Title="OLAP Browser" runat="server">
     <DisplaySettings Mode="ChartAndGrid" />
 </ej:OlapClient>
 
@@ -120,7 +120,7 @@ Toggle panel option lets the user to toggle the visibility of Axis Element Build
 
 {% highlight html %}
 
-<ej:OlapClient Url="../OlapClient" Title="OLAP Browser" runat="server">
+<ej:OlapClient Url="/OlapClient" Title="OLAP Browser" runat="server">
     <DisplaySettings EnableTogglePanel="true" />
 </ej:OlapClient>
 
@@ -134,7 +134,7 @@ Full screen view helps to visualize the PivotGrid and OlapChart controls inside 
 
 {% highlight html %}
 
-<ej:OlapClient Url="../OlapClient" Title="OLAP Browser" runat="server">
+<ej:OlapClient Url="/OlapClient" Title="OLAP Browser" runat="server">
     <DisplaySettings EnableFullScreen="true" />
 </ej:OlapClient>
 
@@ -159,7 +159,7 @@ The layout is set using the `GridLayout` property. By default, normal layout is 
 
 {% highlight html %}
 
-<ej:OlapClient Url="../OlapClient" Title="OLAP Browser" runat="server" GridLayout="NoSummaries"></ej:OlapClient>
+<ej:OlapClient Url="/OlapClient" Title="OLAP Browser" runat="server" GridLayout="NoSummaries"></ej:OlapClient>
 
 {% endhighlight  %}	
 
@@ -171,7 +171,7 @@ While loading the OlapClient initially, the OlapChart widget can be rendered in 
 
 {% highlight html %}
 
-<ej:OlapClient Url="../OlapClient" Title="OLAP Browser" runat="server" ChartType="Column"></ej:OlapClient>
+<ej:OlapClient Url="/OlapClient" Title="OLAP Browser" runat="server" ChartType="Column"></ej:OlapClient>
 
 {% endhighlight  %}	
 

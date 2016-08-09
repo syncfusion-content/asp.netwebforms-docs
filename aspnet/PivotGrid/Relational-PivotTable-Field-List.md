@@ -15,7 +15,7 @@ Field List, also known as Pivot Schema Designer, allows user to add, rearrange, 
 
 Based on the datasource, Relational, bound to the PivotGrid control, PivotTable Field List will be automatically populated with Cube Information or Field Names. PivotTable Field List provides an Excel like appearance and behavior.
 
-In-order to initialize PivotTable Field List, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for the widget. Then you need to initialize the PivotTable Field List by using the **"PivotSchemaDesigner"** method.
+In-order to initialize PivotTable Field List, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for the control. Then you need to initialize the PivotTable Field List by using the **"PivotSchemaDesigner"** method.
 
 
 ### Client Mode
@@ -46,7 +46,7 @@ In-order to initialize PivotTable Field List, first you need to define a “div�
 
 <script type="text/javascript">
     function onLoad(args) {
-        args.model.dataSource.data = pivot_dataset;
+        args.model.dataSource.data = pivot_dataset; // Datasource
     }
 
     function loadSchemaDesigner(args) {
@@ -68,11 +68,11 @@ In-order to initialize PivotTable Field List, first you need to define a “div�
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat=server url="../RelationalService">
+<ej:PivotGrid ID="PivotGrid1" runat=server url="/RelationalService">
     <ClientSideEvents AfterServiceInvoke="OnAfterServiceInvoke" />
 </ej:PivotGrid>
 
-<ej:PivotSchemaDesigner ID="PivotSchemaDesigner" runat=server></ej:PivotSchemaDesigner>
+<ej:PivotSchemaDesigner ID="PivotSchemaDesigner1" runat=server></ej:PivotSchemaDesigner>
 
 <script type="text/javascript">
     OnAfterServiceInvoke = function(evt) {

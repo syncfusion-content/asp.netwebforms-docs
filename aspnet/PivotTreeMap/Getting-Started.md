@@ -25,7 +25,7 @@ To set an appropriate start page, right-click on the **“GettingStarted.aspx”
 
 Create a Default.aspx page and add scripts and style sheets that are mandatorily required to render a PivotTreeMap control in a Web Application which are highlighted below in an appropriate order.
 
-1.	ej.widgets.all.min.css
+1.	ej.web.all.min.css
 2.	jQuery-1.10.2.min.js
 3.	jQuery.easing.1.3.min.js
 4.	ej.web.all.min.js
@@ -141,7 +141,7 @@ N> If any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET u
 ### Scripts and CSS Initialization
 The scripts and style sheets that are mandatorily required to render a PivotTreeMap control in a Web Application are mentioned in an appropriate order.
 
-1.	ej.widgets.all.min.css
+1.	ej.web.all.min.css
 2.	jQuery-1.10.2.min.js
 3.	jQuery.easing.1.3.min.js
 4.	ej.web.all.min.js

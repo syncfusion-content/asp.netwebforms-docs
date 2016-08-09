@@ -16,7 +16,7 @@ Tooltip for the data points can be enabled using the **"Visible"** option of the
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
     //Enabling tooltip of data point
     <CommonSeriesOptions Tooltip-Visible="True" />
     <Size Width="950px" Height="460px"></Size>
@@ -42,7 +42,7 @@ HTML elements can be displayed inside the tooltip by using the `Template` option
         </div>
     </div>
 </div>
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
     //Enabling tooltip of data point
     <CommonSeriesOptions Tooltip-Visible="True" Tooltip-Template="Tooltip" />
     <Size Width="950px" Height="460px"></Size>
@@ -57,7 +57,7 @@ By using `Fill` and `Border` properties of tooltip, you can customize its backgr
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
     //Change tooltip color and border
     <CommonSeriesOptions Tooltip-Visible="True" Tooltip-Fill="#FF9933" Tooltip-Border-Width="1" Tooltip-Border-Color="#993300" />
     <Size Width="950px" Height="460px"></Size>
@@ -72,7 +72,7 @@ The tooltip properties, `Rx` and `Ry` are used to customize its corner radius.
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
     //Customize the corner radius of the tooltip rectangle.
     <CommonSeriesOptions Tooltip-Visible="True" Tooltip-RX="50" Tooltip-RY="50" />
     <Size Width="950px" Height="460px"></Size>
@@ -94,7 +94,7 @@ There are two ways to zoom the Chart:
 {% highlight html %}
 
 //Enable zooming in chart
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" Zooming-Enable="true" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" Zooming-Enable="true" ClientIDMode="Static">
 <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 
@@ -107,12 +107,14 @@ After zooming the Chart, a zooming toolbar will appear with options to *zoom, pa
 ![](User-Interactions_images/pan.png) 
 
 ###Types of Zooming
-You can zoom the particular axis like horizontal axis or vertical axis or both axis using `Type` option in zooming. The default value is “x,y” (indicating both axis).
+You can zoom the particular axis like horizontal axis or vertical axis or both axis using `Type` option in zooming.
+
+N> By default, the value for the `Type` option in zooming is “x,y” (indicating both axis) in PivotChart.
 
 {% highlight html %}
 
 //Enable horizontal zooming 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" Zooming-Enable="true" Zooming-Type="x" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" Zooming-Enable="true" Zooming-Type="x" ClientIDMode="Static">
 <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 
@@ -121,7 +123,16 @@ You can zoom the particular axis like horizontal axis or vertical axis or both a
 ##Marker and Crosshair
 
 ###Marker Shape Customization
-In PivotChart, you can customize the marker `Shape` with different symbols like rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc.
+In PivotChart, you can customize the marker `Shape` with following symbols.
+* Rectangle
+* Circle
+* Cross
+* Diamond 
+* Pentagon
+* Hexagon
+* Star
+* Ellipse
+* Triangle etc.
 
 {% highlight html %}
 
@@ -129,7 +140,7 @@ In PivotChart, you can customize the marker `Shape` with different symbols like 
 //...
 
 <body>
-    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+    <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Line" />
         <ClientSideEvents Load="loadTheme" SeriesRendering="onSeriesRenders" />
         <Size Width="950px" Height="460px"></Size>
@@ -153,7 +164,7 @@ Crosshair helps you to view the value at mouse position or touch contact point. 
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
     //Initializing Crosshair
     <CrossHair Visible="true"></CrossHair>
     //Enable crosshairLabel to X-Axis
@@ -172,7 +183,7 @@ By using `Line` property of crosshair, you can customize its line color and widt
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
     //Customizing the crosshair line
     <CrossHair Visible="true" Line-Width="2" Line-Color="Gray"></CrossHair>
     //Customizing the crosshair label background color and border
@@ -193,7 +204,7 @@ Trackball can be enabled by setting both - 'Visible' option of the crosshair to 
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
     //Change crosshair type to track ball
     <CrossHair Visible="true" Type="TrackBall"></CrossHair>
     <Size Width="950px" Height="460px"></Size>
@@ -208,7 +219,7 @@ Shape and size of the trackball marker can be customized using the `Shape` and `
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
     //Customize the trackball line color and width, marker shape and visibility
     <CrossHair Visible="true" Line-Width="2" Line-Color="#800000'" Type="TrackBall" Marker-Shape="Pentagon" Marker-Visible="true"></CrossHair>
     <Size Width="950px" Height="460px"></Size>
@@ -227,7 +238,7 @@ PivotChart provides highlighting support for the series and data points on mouse
 //...
 
 <body>
-    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+    <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
         <Size Width="950px" Height="460px"></Size>
@@ -257,7 +268,7 @@ You can set three different modes for highlighting data points and series by usi
 //...
 
 <body>
-    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+    <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
         <Size Width="950px" Height="460px"></Size>
@@ -288,7 +299,7 @@ To customize the highlighted series, use `border.color`, `border.width` and `opa
 //...
 
 <body>
-    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+    <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
         <Size Width="950px" Height="460px"></Size>
@@ -341,7 +352,7 @@ PivotChart provides pattern support for highlighting the data by setting an appr
 //...
 
 <body>
-    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+    <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
         <Size Width="950px" Height="460px"></Size>
@@ -371,7 +382,7 @@ PivotChart provides selection support for the series and data points on mouse cl
 //...
 
 <body>
-    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+    <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
         <Size Width="950px" Height="460px"></Size>
@@ -403,7 +414,7 @@ You can set three different selection mode for highlighting the data points and 
 //...
 
 <body>
-    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+    <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
         <Size Width="950px" Height="460px"></Size>
@@ -433,7 +444,7 @@ To customize the selection styles, use the `border.color`, `border.width` and `o
 //...
 
 <body>
-    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+    <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
         <Size Width="950px" Height="460px"></Size>
@@ -484,7 +495,7 @@ PivotChart provides pattern support for the selecting the data by setting an app
 //...
 
 <body>
-    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+    <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
         <CommonSeriesOptions Type="Column" />
         <ClientSideEvents SeriesRendering="onSeriesRenders" />
         <Size Width="950px" Height="460px"></Size>

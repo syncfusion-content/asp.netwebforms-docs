@@ -35,7 +35,7 @@ By using the `Theme` property, you can set the desired theme in PivotChart. By d
 {% highlight html %}
 
 //Using gradient theme
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc"  Theme="GradientLight" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc"  Theme="GradientLight" ClientIDMode="Static">
   <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 
@@ -51,7 +51,7 @@ To customize the PivotChart border, use `Border` property in PivotChart.
 {% highlight html %}
 
 //Customize the chart border and opacity
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc"  Border-Width="2" Border-Color="#FF0000" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc"  Border-Width="2" Border-Color="#FF0000" ClientIDMode="Static">
 <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 
@@ -64,7 +64,7 @@ The PivotChart control background can be customized by using the `Background` pr
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
     //Setting background for Chart area
     <ChartArea Background="skyblue"></ChartArea>
     <Size Width="950px" Height="460px"></Size>
@@ -79,7 +79,7 @@ By using the `AlternateGridBand` property of the axis, you can provide different
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
     //Customizing horizontal grid bands at even position
     <primaryYaxis>
         <AlternateGridBand Even-Fill="#A7A9AB" Even-Opacity="0.1" />
@@ -96,7 +96,7 @@ You can enable animation by using the `EnableAnimation` property under `CommonSe
 
 {% highlight html %}
 
-<ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" ClientIDMode="Static">
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
     //Enabling animation in series
     <CommonSeriesOptions EnableAnimation="True" />
     <Size Width="950px" Height="460px"></Size>

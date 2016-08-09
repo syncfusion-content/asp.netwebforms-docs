@@ -21,7 +21,7 @@ Following code example illustrates on how to localize PivotChart based on **“F
 //...
 
 <body>
-    <ej:PivotChart ID="PivotChart1" runat="server" Url="../wcf/RelationalChartService.svc" Locale="fr-FR" ClientIDMode="Static">
+    <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" Locale="fr-FR" ClientIDMode="Static">
     <Size Width="950px" Height="460px"></Size>
     </ej:PivotChart>
     <script type="text/javascript">
@@ -90,7 +90,7 @@ N> Culture files are present under **"Syncfusion\EssentialStudio\14.2.0.26\Web\S
 {% highlight html %}
 
 //1036 refers to “fr-FR” culture.
-    <ej:PivotChart ID="PivotChart1" runat="server" IsResponsive="true" Locale="fr-FR" ClientIDMode="Static">
+    <ej:PivotChart ID="MyPivotChart1" runat="server" IsResponsive="true" Locale="fr-FR" ClientIDMode="Static">
             <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll;Locale Identifier=1036;">
                 .....
             </DataSource

@@ -45,7 +45,7 @@ Grouping Bar allows user to dynamically alter the report by filter and remove op
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat=server url="../PivotGridService" EnableGroupingBar="true">
+<ej:PivotGrid ID="PivotGrid1" runat=server url="/PivotGridService" EnableGroupingBar="true">
 </ej:PivotGrid>
 
 {% endhighlight %}
