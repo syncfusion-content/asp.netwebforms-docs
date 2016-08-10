@@ -11,7 +11,7 @@ documentation: ug
 
 ## Create your first Editor in ASP.NET
 
-The Essential ASP.NET Web Forms Editor control includes numeric, percentage, currency and maskedit TextBox controls. You can learn how to use ASP.NET Textbox control in the Electricity Bill Calculator Application from the following documentation. This guides you to use the wide range of Textbox functionalities to complete this application.
+The Essential ASP.NET Web Forms Editor control includes Numeric, Percentage, Currency and MaskEdit TextBox controls. You can learn how to use ASP.NET Textbox control in the Electricity Bill Calculator Application from the following documentation. This guides you to use the wide range of Textbox functionalities to complete this application.
 
 ![](Getting-Started_images/Getting-Started_img1.jpeg) 
 
@@ -252,7 +252,7 @@ Run the code to render a Textbox control as follows.
 
 ### Set the MinValue, MaxValue, and value in Textboxes
 
-In the above mentioned use case scenario, you can set the MinValue, MaxValue, and Value in Numeric, percentage and Currency TextBoxes for maintaining the range in TextBox controls. You can also enter the values between the ranges that are set as default. You can get the phone number from the user in the Maskedit control by using the MaskFormat property. You can get the decimal values for CurrencyTextBox control by using DecimalPlaces property. The following code example illustrates how to achieve this.
+In the above mentioned use case scenario, you can set the MinValue, MaxValue, and Value in Numeric, percentage and Currency TextBoxes for maintaining the range in TextBox controls. You can also enter the values between the ranges that are set as default. You can get the phone number from the user in the MaskEdit control by using the MaskFormat property. You can get the decimal values for CurrencyTextBox control by using DecimalPlaces property. The following code example illustrates how to achieve this.
 
 {% highlight html %}
 
@@ -474,7 +474,7 @@ You can set the EnableStrictMode option to restrict entering values defined outs
 
 
 
-Run the above code example and you can see that it restricts entering a value exceeding the MinValue and MaxValue range mentioned in the numeric TextBox.
+Run the above code example and you can see that it restricts entering a value exceeding the MinValue and MaxValue range mentioned in the Numeric TextBox.
 
 ### Set Calculation process with Textboxes Controls
 
