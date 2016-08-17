@@ -1,7 +1,7 @@
 ---
 title: Behavior Settings | FileExplorer | ASP.NET Web | Syncfusion
 description: Customize the behavior of FileExplorer.
-platform: ASP.NET Web
+platform: aspnet
 control: FileExplorer
 documentation: UG
 keywords: FileExplorer,  Syncfusion,  ASP.NET Web FileExplorer, UG document, Behavior settings

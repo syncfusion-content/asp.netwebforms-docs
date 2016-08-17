@@ -1,7 +1,7 @@
 ---
 title: User Interface| FileExplorer | ASP.NET Web | Syncfusion
 description: FileExplorer UI sections
-platform: ASP.NET Web
+platform: aspnet
 control: FileExplorer
 documentation: UG
 keywords: FileExplorer,  Syncfusion, ASP.NET Web FileExplorer, UG document, User interface 

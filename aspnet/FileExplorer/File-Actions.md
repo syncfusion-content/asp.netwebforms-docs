@@ -1,7 +1,7 @@
 ---
 title: File Actions | FileExplorer | ASP.NET Web | Syncfusion
 description: Explains different file and folder related operations in FileExplorer control.
-platform: ASP.NET Web 
+platform: aspnet
 control: FileExplorer
 documentation: UG
 keywords: FileExplorer,  Syncfusion, ASP.NET Web FileExplorer, UG document, File actions
