@@ -8,6 +8,533 @@ keywords: FileExplorer,  Syncfusion, ASP.NET Web FileExplorer, UG document, How 
 ---
 # How To
 
+## File handling operations
+
+When you have made AJAX request on client-side, “FileActionDefault” method is triggered and it calls the corresponding built-in methods of “[FileExplorerOperations](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations_members.html#)” class using “ActionType” property.
+
+In code behind page, we have specified some built-in classes at FileActionDefault action method. It helps to perform the server side operation of FileExplorer and you can find the details about these classes at below.
+
+**BasicFileOperations class**
+
+“BasicFileOperations” is an abstract class and it is useful for handling file operations in server end. By inheriting this class, easily you can implement a new custom class for handling file operations in server end. Refer [class reference](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.BasicFileOperations.html#) of “BasicFileOperations”.
+
+**FileExplorerOperations class**
+
+This class is useful for handling file operations in server end. This class inherits the “BasicFileOperations” class and its abstract methods has been implemented here for managing files in **underlying machine's physical file system**. Refer [class reference](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations.html#) of “FileExplorerOperations”.
+
+N> Here “ActionType” specifies following operations such as “Read”, “CreateFolder”, “Paste”, “Remove”, “Rename”, “Getdetails”, “Download”, “Upload”, “Search”. Following [section](#_Abstract_methods_in) contains the details about each operation.
+
+## Customizing AJAX handling functions
+
+In FileExplorer, server side functionalities are necessary to handle the AJAX request of FileExplorer. Here “Syncfusion.EJ” assembly contains built-in “[BasicFileOperations](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.BasicFileOperations.html#)” abstract class and implementation of “[FileExplorerOperations](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations.html#)” class for providing the content to FileExplorer and handling AJAX requests. If is it necessary, you can customize the server side functionalities of FileExplorer as per your requirement. 
+
+### Override the existing Syncfusion.JavaScript.FileExplorerOperations class
+
+Using “[FileExplorerOperations](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations.html#)” class, you can manage the underlying machine's physical file system with the help of FileExplorer control. Here you can override the necessary methods that is available in “**FileExplorerOperations**” by sub classing the existing “**FileExplorerOperations**” class.
+
+Below code example shows how to override “[GetDetails](#_GetDetails(string,_string[],_IEnume)” method, which is available in “**FileExplorerOperations**”
+
+    
+    {% highlight c# %}
+    
+        public class FileExplorerCustomOperations : FileExplorerOperations
+        {
+            FileExplorerOperations operation = new FileExplorerOperations();
+            CustomFileExplorerResponse customDetails = new CustomFileExplorerResponse();        
+            public override object GetDetails(string path, string[] names, IEnumerable<object> selectedItems = null)
+            {
+                FileExplorerResponse response = (FileExplorerResponse) operation.GetDetails(path, names);            
+                FileDetails fDetails = response.details.ElementAt(0) ;            
+                CustomFileDetails cfDetails =new CustomFileDetails() ;
+                CustomFileDetails[] responseDetails = new CustomFileDetails[1];
+                cfDetails.Name= fDetails.Name;
+                cfDetails.Location= fDetails.Location;            
+                cfDetails.Size= fDetails.Size;
+                cfDetails.Created= fDetails.Created;            
+                cfDetails.IsFile = (fDetails.Type == "File Folder"? "false" : "true");
+                responseDetails[0] = cfDetails;
+                customDetails.details = responseDetails;
+                return customDetails;
+            }
+        }
+        public class CustomFileDetails
+        {
+            public string Name { get; set; }
+            public string Location { get; set; }        
+            public long Size { get; set; }
+            public string Created { get; set; }        
+            public string IsFile { get; set; }
+        }
+        public class CustomFileExplorerResponse
+        {
+            public IEnumerable<FileExplorerDirectoryContent> files { get; set; }
+            public IEnumerable<CustomFileDetails> details { get; set; }
+            public object error { get; set; }
+        }
+    
+    
+    {% endhighlight %}
+    
+### Implement a new custom class to handle AJAX request and provide content for FileExplorer
+
+When overriding the particular methods were not enough, you can create a new custom class using “[BasicFileOperations](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.BasicFileOperations.html#)” abstract class. It helps to provide different file sources to be used the content for FileExplorer control, such as database system, physical system or online storage system such as Azure. 
+
+#### Notes to Implementers
+
+When you implement a derived class of “BasicFileOperations”, you must provide implementations for following methods and its details has been given in this [section](#_Abstract_methods_in)
+
+* Read
+* CreateFolder
+* Remove
+* Rename
+* Paste
+* Upload
+* Download
+* GetDetails
+* GetImage
+* Search
+
+### Abstract methods in BasicFileOperations class
+
+<table>
+<tr>
+<td>
+{{'**Operation and Request Parameter**'| markdownify }}
+</td>
+<td>
+{{'**Response data**'| markdownify }}
+</td>
+<td>
+{{'**Details**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'**Operation**'| markdownify }}: Read 
+<br/><br/>
+{{'**Request Parameter:**'| markdownify }}
+{{'**Name**'| markdownify }}: path
+<br/>
+{{'**Type  :** '| markdownify }}String
+<br/>
+{{'**Description:**'| markdownify }}
+Specifies the path of selected folder
+<br/><br/>
+{{'**Name**'| markdownify }}: filter
+<br/>
+{{'**Type  :** '| markdownify }}String
+<br/>
+{{'**Description:**'| markdownify }}
+Specifies the file types that need to be filter
+<br/><br/>
+{{'**Name**'| markdownify }}: selectedItems
+<br/>
+{{'**Type  :** '| markdownify }}IEnumerable&lt;object&gt;
+<br/>
+{{'**Description:**'| markdownify }}
+It contains the details about selected folder
+<br/><br/>
+</td>
+<td>
+Response data should be in JSON format with key name as ‘{{'**files’** '| markdownify }} and JSON fields should be with following field names
+<br/>
+<br/>
+ {{'*“name,  isFile, hasChild”.*'| markdownify }}
+<br/><br/>
+{{'*For example:*'| markdownify }}
+{
+"{{'**files**'| markdownify }}":[{"{{'**name":"bird.jpg**'| markdownify }}","type":"File","size":102182,"dateModified":"1/9/2016 6:48:42 AM","{{'**hasChild":false,"isFile":true**'| markdownify }},"filterPath":null},
+{"{{'**name":"sea.jpg**'| markdownify }}","type":"File","size":97145,"dateModified":"1/9/2016 6:48:42 AM","{{'**hasChild":false,"isFile":true**'| markdownify }},"filterPath":null }],
+"details":null,
+"error":null
+}
+<br/><br/>
+
+Note: If needed, customer can also add additional data along with existing properties of “{{'[FileExplorerDirectoryContent](https://help.syncfusion.com/cr/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerDirectoryContent.html#)'| markdownify }}” class.
+<br/>
+</td>
+<td>
+It used to get all immediate files and sub-folders of the given path and it returns the matched type of files only, which are specified in “filter” parameter.
+
+</td>
+</tr>
+<tr>
+<td>
+{{'**Operation**'| markdownify }}: CreateFolder<br/><br/>
+{{'**Request Parameter:**'| markdownify }}
+{{'**Name**'| markdownify }}: path<br/>
+{{'**Type  :** '| markdownify }}String<br/>
+{{'**Description:**'| markdownify }}
+Specifies the path of selected folder<br/><br/>
+{{'**Name**'| markdownify }}: name<br/>
+{{'**Type  :** '| markdownify }}String<br/>
+{{'**Description:**'| markdownify }}
+specifies the name of new folder <br/><br/>
+{{'**Name**'| markdownify }}: selectedItems<br/>
+{{'**Type  :** '| markdownify }}IEnumerable&lt;object&gt;<br/>
+{{'**Description:**'| markdownify }}
+It contains the details about selected folder
+<br/><br/>
+</td>
+<td>
+Response data should be in JSON format with key name as ‘{{'**files’**'| markdownify }}. 
+<br/><br/>
+In that returning JSON, “{{'**name**'| markdownify }}” field is necessary.
+<br/>
+<br/>
+{{'*For example:*'| markdownify }}
+{"files":[{"{{'**name":"New folder**'| markdownify }}","type":"Directory","size":0,"dateModified":"2/25/2016 7:31:02 AM","hasChild":true,"isFile":false,"filterPath":null}],"details":null,"error":null}
+<br/><br/>
+</td>
+<td>
+It used to create a new folder in given path with specified name
+
+</td>
+</tr>
+<tr>
+<td>
+{{'**Operation:**'| markdownify }}Remove<br/><br/>
+{{'**Request Parameter:**'| markdownify }}
+{{'**Name:**'| markdownify }}names<br/>
+{{'**Type  :** '| markdownify }}String[]<br/>
+{{'**Description:**'| markdownify }}
+specifies the selected item names, which is going to be removed<br/><br/> 
+{{'**Name**'| markdownify }}: path<br/>
+{{'**Type  :** '| markdownify }}String<br/>
+{{'**Description:**'| markdownify }}
+specifies the parent folder path of selected items<br/><br/> 
+{{'**Name**'| markdownify }}: selectedItems<br/>
+{{'**Type  :** '| markdownify }}IEnumerable&lt;object&gt;<br/>
+{{'**Description:**'| markdownify }}
+It contains the details about selected items, which is going to be removed<br/><br/>
+</td>
+<td>
+Here you may return the removed file details or empty.
+
+</td>
+<td>
+It helps to remove the specified items from given path.
+</td>
+</tr>
+<tr>
+<td>
+{{'**Operation:**'| markdownify }}Rename<br/><br/>
+{{'**Request Parameter:**'| markdownify }}
+{{'**Name**'| markdownify }}: path<br/>
+{{'**Type  :** '| markdownify }}String<br/>
+{{'**Description:**'| markdownify }}
+specifies the parent folder path of renaming item<br/><br/> 
+{{'**Name**'| markdownify }}: oldName<br/>
+{{'**Type  :** '| markdownify }}String<br/>
+{{'**Description:**'| markdownify }}
+specifies the existing file name <br/> <br/>
+{{'**Name**'| markdownify }}: newName<br/>
+{{'**Type  :** '| markdownify }}String<br/>
+{{'**Description:**'| markdownify }}
+specifies the new file name <br/><br/>
+{{'**Name**'| markdownify }}: selectedItems<br/>
+{{'**Type  :** '| markdownify }}IEnumerable&lt;object&gt;<br/>
+{{'**Description:**'| markdownify }}
+It contains the details about selected items, which is going to be renamed<br/><br/>
+{{'**Name**'| markdownify }}: commonFiles<br/>
+{{'**Type  :** '| markdownify }}IEnumerable<{{'[CommonFileDetails](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.CommonFileDetails.html#)'| markdownify }}><br/>
+{{'**Description:**'| markdownify }}
+It contains the details about already existing files, which contains same name and type as given in new file with same parent folder.<br/><br/>
+
+</td>
+<td>
+Here you may return the renamed file details or empty.
+
+</td>
+<td>
+This method helps to rename the file/folder, which is available in given path.
+</td>
+</tr>
+<tr>
+<td>
+{{'**Operation:**'| markdownify }}Paste<br/><br/>
+{{'**Request Parameter:**'| markdownify }}
+{{'**Name**'| markdownify }}: sourceDir<br/>
+{{'**Type  :** '| markdownify }}String<br/>
+{{'**Description:**'| markdownify }}
+specifies the path of source directory <br/><br/>
+{{'**Name**'| markdownify }}: backupDir<br/>
+{{'**Type  :** '| markdownify }}String<br/>
+{{'**Description:**'| markdownify }}
+specifies the path of destination directory<br/><br/> 
+{{'**Name**'| markdownify }}: names<br/>
+{{'**Type  :** '| markdownify }}String[]<br/>
+{{'**Description:**'| markdownify }}
+Specifies the name of file/ folders, which are going to be pasted in destination folder.<br/><br/>
+{{'**Name**'| markdownify }}: option<br/>
+{{'**Type  :** '| markdownify }}String<br/>
+{{'**Description:**'| markdownify }}
+specifies the operation type “move” or “copy”.<br/><br/>
+{{'**Name**'| markdownify }}: selectedItems<br/>
+{{'**Type  :** '| markdownify }}IEnumerable&lt;object&gt;<br/>
+{{'**Description:**'| markdownify }}
+It contains the details about selected items, which is going to be pasted<br/><br/> 
+{{'**Name**'| markdownify }}: commonFiles<br/>
+{{'**Type  :** '| markdownify }}IEnumerable<{{'[CommonFileDetails](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.CommonFileDetails.html#)'| markdownify }}><br/>
+{{'**Description:**'| markdownify }}
+It contains the details about already existing files in destination folder, which contains the files in same name and type as same as newly copied files.<br/><br/>
+{{'**Name**'| markdownify }}: targetFolder<br/>
+{{'**Type  :** '| markdownify }}IEnumerable&lt;object&gt;<br/>
+{{'**Description:**'| markdownify }}
+It contains the details about target folder, where the files are going to be pasted.
+<br/><br/>
+</td>
+<td>
+Here you may return the pasted file details or empty.
+
+</td>
+<td>
+This method helps to copy or move files from one location to another location.
+</td>
+</tr>
+<tr>
+<td>
+{{'**Operation:**'| markdownify }}Upload<br/><br/>
+{{'**Request Parameter:**'| markdownify }}
+{{'**Name**'| markdownify }}: files<br/>
+{{'**Type  :** '| markdownify }}IEnumerable&lt;System.Web.HttpPostedFileBase&gt;<br/>
+{{'**Description:**'| markdownify }}
+Specifies the file details that is going to be uploaded <br/><br/>
+{{'**Name**'| markdownify }}: path<br/>
+{{'**Type  :** '| markdownify }}String <br/>
+{{'**Description:**'| markdownify }}
+specifies the path of destination directory, where the files need to be uploaded<br/><br/> 
+{{'**Name**'| markdownify }}: selectedItems<br/>
+{{'**Type  :** '| markdownify }}IEnumerable&lt;object&gt;<br/>
+{{'**Description:**'| markdownify }}
+It contains the details about selected items, which is going to be uploaded.<br/><br/>
+</td>
+<td>
+Return type of this method is “void”
+
+</td>
+<td>
+This method helps to upload the specified files to given directory 
+
+</td>
+</tr>
+<tr>
+<td>
+{{'**Operation:**'| markdownify }}Download<br/><br/>
+{{'**Request Parameter:**'| markdownify }}
+{{'**Name**'| markdownify }}: path<br/>
+{{'**Type  :** '| markdownify }}String <br/>
+{{'**Description:**'| markdownify }}
+Specifies the parent directory path of selected files, which is going to be download<br/><br/> 
+{{'**Name**'| markdownify }}: names<br/>
+{{'**Type  :** '| markdownify }}String {{'**[]**'| markdownify }}<br/>
+{{'**Description:**'| markdownify }}
+specifies the name of files that is need to be downloaded<br/><br/> 
+{{'**Name**'| markdownify }}: selectedItems<br/>
+{{'**Type  :** '| markdownify }}IEnumerable&lt;object&gt;<br/>
+{{'**Description:**'| markdownify }}
+It contains the details about files, which is going to be downloaded.<br/><br/>
+</td>
+<td>
+Return type of this method is “void”
+
+</td>
+<td>
+This method helps to download the specified files.
+</td>
+</tr>
+<tr>
+<td>
+{{'**Operation:**'| markdownify }}GetDetails<br/><br/>
+{{'**Request Parameter:**'| markdownify }}
+{{'**Name**'| markdownify }}: path<br/>
+{{'**Type  :** '| markdownify }}String <br/>
+{{'**Description:**'| markdownify }}
+Specifies the parent directory path of selected file<br/><br/> 
+{{'**Name**'| markdownify }}: names<br/>
+{{'**Type  :** '| markdownify }}String {{'**[]**'| markdownify }}<br/>
+{{'**Description:**'| markdownify }}
+Specifies the name of files in order to get it’s details<br/><br/> 
+{{'**Name**'| markdownify }}: selectedItems<br/>
+{{'**Type  :** '| markdownify }}IEnumerable&lt;object&gt;<br/>
+{{'**Description:**'| markdownify }}
+It contains the basic details about selected files<br/><br/>
+</td>
+<td>
+Response data should be in JSON format like below
+<br/><br/>
+{{{'**details**'| markdownify }}:[{CreationTime:"4/28/2015 9:44:32 AM", Extension:".png", Format:"Archive", FullName:"F:\All samples\FileExplorer_Custom\FileExplorerContent\human.png", LastAccessTime:"4/28/2015 9:44:32 AM", LastWriteTime:"3/31/2015 3:16:35 PM", Length:11059, Name:"human.png"}]}
+<br/><br/>
+Note: Here you may add additional date fields along with existing JSON data using “FileDetails” class.
+
+</td>
+<td>
+This method used to get the details of the specified file or directory.
+
+</td>
+</tr>
+<tr>
+<td>
+{{'**Operation:**'| markdownify }}GetImage<br/><br/>
+{{'**Request Parameter:**'| markdownify }}
+{{'**Name**'| markdownify }}: path<br/>
+{{'**Type  :** '| markdownify }}String <br/>
+{{'**Description:**'| markdownify }}
+specifies the path of image file <br/><br/>
+{{'**Name**'| markdownify }}: selectedItems<br/>
+{{'**Type  :** '| markdownify }}IEnumerable&lt;object&gt;<br/>
+{{'**Description:**'| markdownify }}
+It contains the details about selected image <br/><br/>
+</td>
+<td>
+Return type of this method is void.
+</td>
+<td>
+This method helps to get an image using “HttpResponse” option 
+
+</td>
+</tr>
+<tr>
+<td>
+{{'**Operation:**'| markdownify }}Search<br/><br/>
+{{'**Request Parameter:**'| markdownify }}
+{{'**Name**'| markdownify }}: path<br/>
+{{'**Type  :** '| markdownify }}String<br/>
+{{'**Description:**'| markdownify }}
+specifies the directory path <br/><br/>
+{{'**Name**'| markdownify }}: filter<br/>
+{{'**Type  :** '| markdownify }}String<br/>
+{{'**Description:**'| markdownify }}
+Specifies the file types that need to be filter<br/><br/>
+{{'**Name**'| markdownify }}: searchString<br/>
+{{'**Type  :** '| markdownify }}String<br/>
+{{'**Description:**'| markdownify }}
+specifies the search string <br/><br/>
+{{'**Name**'| markdownify }}: caseSensitive<br/>
+{{'**Type  :** '| markdownify }}String<br/>
+{{'**Description:**'| markdownify }}
+specifies the case sensitive option<br/><br/>
+{{'**Name**'| markdownify }}: selectedItems<br/>
+{{'**Type  :** '| markdownify }}IEnumerable&lt;object&gt;<br/>
+{{'**Description:**'| markdownify }}
+It contains the details about selected folder<br/><br/>
+</td>
+<td>
+It should return data in JSON format with key name as ‘{{'**files’** '| markdownify }} and JSON fields need to be with following field names
+<br/><br/>
+ {{'*“name,  isFile, hasChild”.*'| markdownify }}
+ <br/><br/>
+{
+"{{'**files**'| markdownify }}":[{"{{'**name":"bird.jpg**'| markdownify }}","type":"File","size":102182,"dateModified":"1/9/2016 6:48:42 AM","{{'**hasChild":false,"isFile":true**'| markdownify }},"filterPath":null},
+{"{{'**name":"sea.jpg**'| markdownify }}","type":"File","size":97145,"dateModified":"1/9/2016 6:48:42 AM","{{'**hasChild":false,"isFile":true**'| markdownify }},"filterPath":null }],
+"details":null,
+"error":null
+}
+<br/>
+</td>
+<td>
+It used to search all the matched files and sub-folders in the given folder path also it filters the specified files using it types.
+
+</td>
+</tr>
+</table>
+
+Here you need to implement new class by sub classing the existing “**BasicFileOperations”**abstract class.
+
+    
+    {% highlight c# %}
+    
+    public class NewClass : BasicFileOperations
+        {
+    
+            public override object CreateFolder(string path, string name, IEnumerable<object> selectedItems = null)
+            {
+                throw new NotImplementedException();
+            }
+    
+            public override void Download(string path, string[] names, IEnumerable<object> selectedItems = null)
+            {
+                throw new NotImplementedException();
+            }
+    
+            public override object GetDetails(string path, string[] names, IEnumerable<object> selectedItems = null)
+            {
+                throw new NotImplementedException();
+            }
+    
+            public override void GetImage(string path, IEnumerable<object> selectedItems = null)
+            {
+                throw new NotImplementedException();
+            }
+    
+            public override object Paste(string sourceDir, string targetDir, string[] names, string option, IEnumerable<CommonFileDetails> commonFiles, IEnumerable<object> selectedItems = null, IEnumerable<object> targetFolder = null)
+            {
+                throw new NotImplementedException();
+            }
+    
+            public override object Read(string path, string filter, IEnumerable<object> selectedItems = null)
+            {
+                throw new NotImplementedException();
+            }
+    
+            public override object Remove(string[] names, string path, IEnumerable<object> selectedItems = null)
+            {
+                throw new NotImplementedException();
+            }
+    
+            public override object Rename(string path, string oldName, string newName, IEnumerable<CommonFileDetails> commonFiles, IEnumerable<object> selectedItems = null)
+            {
+                throw new NotImplementedException();
+            }
+    
+            public override object Search(string path, string filter, string searchString, bool caseSensitive, IEnumerable<object> selectedItems = null)
+            {
+                throw new NotImplementedException();
+            }
+    
+            public override void Upload(IEnumerable<HttpPostedFileBase> files, string path, IEnumerable<object> selectedItems = null)
+            {
+                throw new NotImplementedException();
+            }
+        }
+    
+    {% endhighlight %}
+    
+
+Also we have option to configure the AJAX request in client side, please refer link: [http://help.syncfusion.com/js/fileexplorer/behavior-settings#customize-the-ajax-request-settings](http://help.syncfusion.com/js/fileexplorer/behavior-settings#customize-the-ajax-request-settings) 
+
+### Managing files that is available in SQL database
+
+You can manage the files that are available in database using our FileExplorer control. Here you may use this custom “SQLFileExplorerOperations" class for handling file management related operations using SQL database. This class is used to simplify the process on server side. It contains some built-in methods that are used to handle file operations (like read, copy, move, delete, etc.) using SQL database. This class is created by inheriting the abstract class “[BasicFileOperations](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.BasicFileOperations.html#)”. If is it necessary, you may override the methods in “SQLFileExplorerOperations” class.
+
+* To make connection with SQL database (FileManager.mdf) services, please specify connection string in "Web.config" file as specified in the following code example. 
+
+    
+    {% highlight c# %}
+    
+    <add name="FileExplorerConnection" connectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\FileManager.mdf;Integrated Security=True;Trusted_Connection=true" />
+    
+    {% endhighlight %}
+    
+
+* In code behind part, you need to create an object of "SQLFileExplorerOperations" class as shown in the following code example.
+
+    
+    {% highlight c# %}
+    
+    //Here "FileExplorerConnection" is a connection string name, which is defined in Web.config file.
+    
+    //"Product" is a table name, which is defined in SQL database
+    
+    SQLFileExplorerOperations sqlobj = new SQLFileExplorerOperations("FileExplorerConnection", "Product");
+    
+    {% endhighlight %}
+    
+
+After creating the object for “SQLFileExplorerOperations” class in code behind part, you have to call the corresponding built-in file operation handling methods available in “SQLFileExplorerOperations” class based on the file operation type.
+
+We have prepared the following sample based on this, [FileExplorer SQL sample](http://www.syncfusion.com/downloads/support/directtrac/general/7z/SQLFE-1995168054.7z#)
+
 ## Cross-origin resource sharing support for FileExplorer
 
 **Cross-origin request**
