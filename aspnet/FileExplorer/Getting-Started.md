@@ -1,7 +1,7 @@
 ---
 title: Getting Started | FileExplorer | ASP.NET Web | Syncfusion
 description: To get start with FileExplorer by adding references
-platform: ASP.NET Web
+platform: aspnet
 control: FileExplorer
 documentation: UG
 keywords: FileExplorer,  Syncfusion, ASP.NET Web FileExplorer, UG document, Getting Started

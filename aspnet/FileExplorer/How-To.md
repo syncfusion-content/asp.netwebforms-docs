@@ -1,7 +1,7 @@
 ---
 title: How To | FileExplorer | ASP.NET Web | Syncfusion
 description: “How to do” section for FileExplorer
-platform: ASP.NET Web
+platform: aspnet
 control: FileExplorer
 documentation: UG
 keywords: FileExplorer,  Syncfusion, ASP.NET Web FileExplorer, UG document, How To

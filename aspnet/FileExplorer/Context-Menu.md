@@ -1,7 +1,7 @@
 ---
 title: Context Menu | FileExplorer | ASP.NET Web | Syncfusion
 description: Context Menu support in FileExplorer 
-platform: ASP.NET Web
+platform: aspnet
 control: FileExplorer
 documentation: UG
 keywords: FileExplorer,  Syncfusion, ASP.NET Web FileExplorer, UG document, Context Menu
