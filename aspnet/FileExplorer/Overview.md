@@ -1,7 +1,7 @@
 ---
 title: Overview| FileExplorer | ASP.NET Web | Syncfusion
 description: FileExplorer introduction with key features.
-platform: ASP.NET Web
+platform: aspnet
 control: FileExplorer
 documentation: UG
 keywords: FileExplorer,  Syncfusion, ASP.NET Web FileExplorer, UG document, Overview

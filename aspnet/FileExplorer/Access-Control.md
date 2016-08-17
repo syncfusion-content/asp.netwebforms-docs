@@ -1,7 +1,7 @@
 ---
 title: Access Control | FileExplorer | ASP.NET Web | Syncfusion
 description: Control the File Management on server side 
-platform: ASP.NET Web
+platform: aspnet
 control: FileExplorer
 documentation: UG
 keywords: FileExplorer,  Syncfusion, ASP.NET Web FileExplorer, UG document, Access Control 
