@@ -124,7 +124,7 @@ The following screenshot exhibits the output of the above code,
 
 ![](HowTo_images/HowTo_img2.jpeg)
 
-## Dynamically bind the data to the DropDownList using asp.net data bound method called “onDataBound” method
+## Dynamically bind the data to the DropDownList using ASP.NET data bound method called “onDataBound” method
 
 The items can be added to the DropDownList in DataBound event using a generic DataView and refresh the DataSource of DropDownList.
 
@@ -177,7 +177,7 @@ The items can be added to the DropDownList in DataBound event using a generic Da
         
 {% endtabs %}
 
-In the OnDataBound event copy the current DataSource to a DataView instance and intiate a new row for the DataView table using DataRow instance. Based on the requirement add the dynamic items to the DataRow instance using the Data fields bound to the DropDownList control. Finally assign the updated DataView to the DropDownList data source. 
+In the OnDataBound event copy the current DataSource to a DataView instance and initiate a new row for the DataView table using DataRow instance. Based on the requirement add the dynamic items to the DataRow instance using the Data fields bound to the DropDownList control. Finally assign the updated DataView to the DropDownList data source. 
 
 ![](HowTo_images/DataBound.jpg)
 
