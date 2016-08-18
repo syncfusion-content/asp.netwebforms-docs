@@ -9,7 +9,7 @@ documentation: ug
 
 # Text Configuration
 
-The“caption-text” attribute is used to set the caption of a Tile as a Text on initialization. The “caption-alignment” attribute is used to align the Tile text as normal on initialization. Before that we need to set true to the “caption-enabled” property. The possible position values for “caption-alignment” are as follows: 
+The “caption-text” attribute is used to set the caption of a Tile as a Text on initialization. The “caption-alignment” attribute is used to align the Tile text as normal on initialization. Before that we need to set true to the “caption-enabled” property. The possible position values for “caption-alignment” are as follows: 
 
 1. normal 
 2. left
