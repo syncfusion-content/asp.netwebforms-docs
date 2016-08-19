@@ -316,4 +316,4 @@ Once you have completed the above steps, you will get an output like below.
 
 ![](GettingStarted_images/GettingStarted_img1.jpeg)
 
-N> In the [section](#_File_handling_operations), you can know the details about file handling operations, which are performed at server side of “FileExplorer”.
+N> In the [section](how-to#file-handling-operations), you can know the details about file handling operations, which are performed at server side of “FileExplorer”.
