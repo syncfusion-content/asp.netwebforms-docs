@@ -10,19 +10,20 @@ keywords: FileExplorer,  Syncfusion, ASP.NET Web FileExplorer, UG document, How 
 
 ## File handling operations
 
+In code behind page, we have specified some built-in classes at "**FileActionDefault**" action method. It helps to perform the server side operation of FileExplorer and you can find the details about these classes at below.
+
 When you have made AJAX request on client-side, “FileActionDefault” method is triggered and it calls the corresponding built-in methods of “[FileExplorerOperations](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations_members.html#)” class using “ActionType” property.
 
-In code behind page, we have specified some built-in classes at FileActionDefault action method. It helps to perform the server side operation of FileExplorer and you can find the details about these classes at below.
 
-**BasicFileOperations class**
-
+**BasicFileOperations class** -
 “BasicFileOperations” is an abstract class and it is useful for handling file operations in server end. By inheriting this class, easily you can implement a new custom class for handling file operations in server end. Refer [class reference](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.BasicFileOperations.html#) of “BasicFileOperations”.
 
-**FileExplorerOperations class**
-
+**FileExplorerOperations class** -
 This class is useful for handling file operations in server end. This class inherits the “BasicFileOperations” class and its abstract methods has been implemented here for managing files in **underlying machine's physical file system**. Refer [class reference](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations.html#) of “FileExplorerOperations”.
 
-N> Here “ActionType” specifies following operations such as “Read”, “CreateFolder”, “Paste”, “Remove”, “Rename”, “Getdetails”, “Download”, “Upload”, “Search”. Following [section](#_Abstract_methods_in) contains the details about each operation.
+N> Here “ActionType” specifies following operations such as “Read”, “CreateFolder”, “Paste”, “Remove”, “Rename”, “Getdetails”, “Download”, “Upload”, “Search”. Following [section](#abstract-methods-in-basicfileoperations-class) contains the details about each operation.
+
+<br/>
 
 ## Customizing AJAX handling functions
 
@@ -32,7 +33,7 @@ In FileExplorer, server side functionalities are necessary to handle the AJAX re
 
 Using “[FileExplorerOperations](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations.html#)” class, you can manage the underlying machine's physical file system with the help of FileExplorer control. Here you can override the necessary methods that is available in “**FileExplorerOperations**” by sub classing the existing “**FileExplorerOperations**” class.
 
-Below code example shows how to override “[GetDetails](#_GetDetails(string,_string[],_IEnume)” method, which is available in “**FileExplorerOperations**”
+Below code example shows how to override “**GetDetails**” method, which is available in “**FileExplorerOperations**”
 
     
     {% highlight c# %}
@@ -81,7 +82,7 @@ When overriding the particular methods were not enough, you can create a new cus
 
 #### Notes to Implementers
 
-When you implement a derived class of “BasicFileOperations”, you must provide implementations for following methods and its details has been given in this [section](#_Abstract_methods_in)
+When you implement a derived class of “BasicFileOperations”, you must provide implementations for following methods and its details has been given in this [section](#abstract-methods-in-basicfileoperations-class)
 
 * Read
 * CreateFolder
@@ -93,6 +94,8 @@ When you implement a derived class of “BasicFileOperations”, you must provi
 * GetDetails
 * GetImage
 * Search
+
+<br/>
 
 ### Abstract methods in BasicFileOperations class
 
@@ -112,7 +115,8 @@ When you implement a derived class of “BasicFileOperations”, you must provi
 <td>
 {{'**Operation**'| markdownify }}: Read 
 <br/><br/>
-{{'**Request Parameter:**'| markdownify }}
+{{'**Request Parameter**'| markdownify }}
+<br/>
 {{'**Name**'| markdownify }}: path
 <br/>
 {{'**Type  :** '| markdownify }}String
@@ -136,12 +140,13 @@ It contains the details about selected folder
 <br/><br/>
 </td>
 <td>
-Response data should be in JSON format with key name as ‘{{'**files’** '| markdownify }} and JSON fields should be with following field names
+Response data should be in JSON format with key name as "{{'**files**'| markdownify }}" and JSON fields should be with following field names
 <br/>
 <br/>
  {{'*“name,  isFile, hasChild”.*'| markdownify }}
 <br/><br/>
 {{'*For example:*'| markdownify }}
+<br/>
 {
 "{{'**files**'| markdownify }}":[{"{{'**name":"bird.jpg**'| markdownify }}","type":"File","size":102182,"dateModified":"1/9/2016 6:48:42 AM","{{'**hasChild":false,"isFile":true**'| markdownify }},"filterPath":null},
 {"{{'**name":"sea.jpg**'| markdownify }}","type":"File","size":97145,"dateModified":"1/9/2016 6:48:42 AM","{{'**hasChild":false,"isFile":true**'| markdownify }},"filterPath":null }],
@@ -161,7 +166,8 @@ It used to get all immediate files and sub-folders of the given path and it retu
 <tr>
 <td>
 {{'**Operation**'| markdownify }}: CreateFolder<br/><br/>
-{{'**Request Parameter:**'| markdownify }}
+{{'**Request Parameter**'| markdownify }}
+<br/>
 {{'**Name**'| markdownify }}: path<br/>
 {{'**Type  :** '| markdownify }}String<br/>
 {{'**Description:**'| markdownify }}
@@ -177,12 +183,13 @@ It contains the details about selected folder
 <br/><br/>
 </td>
 <td>
-Response data should be in JSON format with key name as ‘{{'**files’**'| markdownify }}. 
+Response data should be in JSON format with key name as "{{'**files**'| markdownify }}". 
 <br/><br/>
 In that returning JSON, “{{'**name**'| markdownify }}” field is necessary.
 <br/>
 <br/>
 {{'*For example:*'| markdownify }}
+<br/>
 {"files":[{"{{'**name":"New folder**'| markdownify }}","type":"Directory","size":0,"dateModified":"2/25/2016 7:31:02 AM","hasChild":true,"isFile":false,"filterPath":null}],"details":null,"error":null}
 <br/><br/>
 </td>
@@ -194,7 +201,8 @@ It used to create a new folder in given path with specified name
 <tr>
 <td>
 {{'**Operation:**'| markdownify }}Remove<br/><br/>
-{{'**Request Parameter:**'| markdownify }}
+{{'**Request Parameter**'| markdownify }}
+<br/>
 {{'**Name:**'| markdownify }}names<br/>
 {{'**Type  :** '| markdownify }}String[]<br/>
 {{'**Description:**'| markdownify }}
@@ -219,7 +227,8 @@ It helps to remove the specified items from given path.
 <tr>
 <td>
 {{'**Operation:**'| markdownify }}Rename<br/><br/>
-{{'**Request Parameter:**'| markdownify }}
+{{'**Request Parameter**'| markdownify }}
+<br/>
 {{'**Name**'| markdownify }}: path<br/>
 {{'**Type  :** '| markdownify }}String<br/>
 {{'**Description:**'| markdownify }}
@@ -253,7 +262,8 @@ This method helps to rename the file/folder, which is available in given path.
 <tr>
 <td>
 {{'**Operation:**'| markdownify }}Paste<br/><br/>
-{{'**Request Parameter:**'| markdownify }}
+{{'**Request Parameter**'| markdownify }}
+<br/>
 {{'**Name**'| markdownify }}: sourceDir<br/>
 {{'**Type  :** '| markdownify }}String<br/>
 {{'**Description:**'| markdownify }}
@@ -295,7 +305,8 @@ This method helps to copy or move files from one location to another location.
 <tr>
 <td>
 {{'**Operation:**'| markdownify }}Upload<br/><br/>
-{{'**Request Parameter:**'| markdownify }}
+{{'**Request Parameter**'| markdownify }}
+<br/>
 {{'**Name**'| markdownify }}: files<br/>
 {{'**Type  :** '| markdownify }}IEnumerable&lt;System.Web.HttpPostedFileBase&gt;<br/>
 {{'**Description:**'| markdownify }}
@@ -321,13 +332,14 @@ This method helps to upload the specified files to given directory
 <tr>
 <td>
 {{'**Operation:**'| markdownify }}Download<br/><br/>
-{{'**Request Parameter:**'| markdownify }}
+{{'**Request Parameter**'| markdownify }}
+<br/>
 {{'**Name**'| markdownify }}: path<br/>
 {{'**Type  :** '| markdownify }}String <br/>
 {{'**Description:**'| markdownify }}
 Specifies the parent directory path of selected files, which is going to be download<br/><br/> 
 {{'**Name**'| markdownify }}: names<br/>
-{{'**Type  :** '| markdownify }}String {{'**[]**'| markdownify }}<br/>
+{{'**Type  :** '| markdownify }}String []<br/>
 {{'**Description:**'| markdownify }}
 specifies the name of files that is need to be downloaded<br/><br/> 
 {{'**Name**'| markdownify }}: selectedItems<br/>
@@ -346,13 +358,14 @@ This method helps to download the specified files.
 <tr>
 <td>
 {{'**Operation:**'| markdownify }}GetDetails<br/><br/>
-{{'**Request Parameter:**'| markdownify }}
+{{'**Request Parameter**'| markdownify }}
+<br/>
 {{'**Name**'| markdownify }}: path<br/>
 {{'**Type  :** '| markdownify }}String <br/>
 {{'**Description:**'| markdownify }}
 Specifies the parent directory path of selected file<br/><br/> 
 {{'**Name**'| markdownify }}: names<br/>
-{{'**Type  :** '| markdownify }}String {{'**[]**'| markdownify }}<br/>
+{{'**Type  :** '| markdownify }}String []<br/>
 {{'**Description:**'| markdownify }}
 Specifies the name of files in order to get it’s details<br/><br/> 
 {{'**Name**'| markdownify }}: selectedItems<br/>
@@ -363,7 +376,9 @@ It contains the basic details about selected files<br/><br/>
 <td>
 Response data should be in JSON format like below
 <br/><br/>
-{{{'**details**'| markdownify }}:[{CreationTime:"4/28/2015 9:44:32 AM", Extension:".png", Format:"Archive", FullName:"F:\All samples\FileExplorer_Custom\FileExplorerContent\human.png", LastAccessTime:"4/28/2015 9:44:32 AM", LastWriteTime:"3/31/2015 3:16:35 PM", Length:11059, Name:"human.png"}]}
+{{'*For example:*'| markdownify }}
+<br/>
+{details:[{CreationTime:"4/28/2015 9:44:32 AM", Extension:".png", Format:"Archive", FullName:"F:\All samples\FileExplorer_Custom\FileExplorerContent\human.png", LastAccessTime:"4/28/2015 9:44:32 AM", LastWriteTime:"3/31/2015 3:16:35 PM", Length:11059, Name:"human.png"}]}
 <br/><br/>
 Note: Here you may add additional date fields along with existing JSON data using “FileDetails” class.
 
@@ -376,7 +391,8 @@ This method used to get the details of the specified file or directory.
 <tr>
 <td>
 {{'**Operation:**'| markdownify }}GetImage<br/><br/>
-{{'**Request Parameter:**'| markdownify }}
+{{'**Request Parameter**'| markdownify }}
+<br/>
 {{'**Name**'| markdownify }}: path<br/>
 {{'**Type  :** '| markdownify }}String <br/>
 {{'**Description:**'| markdownify }}
@@ -397,7 +413,8 @@ This method helps to get an image using “HttpResponse” option
 <tr>
 <td>
 {{'**Operation:**'| markdownify }}Search<br/><br/>
-{{'**Request Parameter:**'| markdownify }}
+{{'**Request Parameter**'| markdownify }}
+<br/>
 {{'**Name**'| markdownify }}: path<br/>
 {{'**Type  :** '| markdownify }}String<br/>
 {{'**Description:**'| markdownify }}
@@ -420,10 +437,12 @@ specifies the case sensitive option<br/><br/>
 It contains the details about selected folder<br/><br/>
 </td>
 <td>
-It should return data in JSON format with key name as ‘{{'**files’** '| markdownify }} and JSON fields need to be with following field names
+It should return data in JSON format with key name as "{{'**files**'| markdownify }}" and JSON fields need to be with following field names
 <br/><br/>
- {{'*“name,  isFile, hasChild”.*'| markdownify }}
- <br/><br/>
+ "{{'*name,  isFile, hasChild.*'| markdownify }}"
+<br/><br/>
+{{'*For example:*'| markdownify }}
+<br/>
 {
 "{{'**files**'| markdownify }}":[{"{{'**name":"bird.jpg**'| markdownify }}","type":"File","size":102182,"dateModified":"1/9/2016 6:48:42 AM","{{'**hasChild":false,"isFile":true**'| markdownify }},"filterPath":null},
 {"{{'**name":"sea.jpg**'| markdownify }}","type":"File","size":97145,"dateModified":"1/9/2016 6:48:42 AM","{{'**hasChild":false,"isFile":true**'| markdownify }},"filterPath":null }],
