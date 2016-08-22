@@ -15,10 +15,10 @@ In code behind page, we have specified some built-in classes at "**FileActionDef
 When you have made AJAX request on client-side, “FileActionDefault” method is triggered and it calls the corresponding built-in methods of “[FileExplorerOperations](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations_members.html#)” class using “ActionType” property.
 
 
-**BasicFileOperations class** -
+**BasicFileOperations class**
 “BasicFileOperations” is an abstract class and it is useful for handling file operations in server end. By inheriting this class, easily you can implement a new custom class for handling file operations in server end. Refer [class reference](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.BasicFileOperations.html#) of “BasicFileOperations”.
 
-**FileExplorerOperations class** -
+**FileExplorerOperations class**
 This class is useful for handling file operations in server end. This class inherits the “BasicFileOperations” class and its abstract methods has been implemented here for managing files in **underlying machine's physical file system**. Refer [class reference](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations.html#) of “FileExplorerOperations”.
 
 N> Here “ActionType” specifies following operations such as “Read”, “CreateFolder”, “Paste”, “Remove”, “Rename”, “Getdetails”, “Download”, “Upload”, “Search”. Following [section](#abstract-methods-in-basicfileoperations-class) contains the details about each operation.
