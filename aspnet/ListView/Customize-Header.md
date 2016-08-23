@@ -9,9 +9,9 @@ documentation: ug
 
 # Customize Header
 
-In **ListView**, you can enable the built-in **Header** support. To show or hide the **Header** in **ListView**, use the `Showheader` property. By default, **ListView** is rendered with the **Header**. You can set the title for the **Header** by using the `Headertitle` property.
+In **ListView**, you can enable the built-in **Header** support. To show or hide the **Header** in **ListView**, use the `ShowHeader` property. By default, **ListView** is rendered with the **Header**. You can set the title for the **Header** by using the `HeaderTitle` property.
 
-In some cases, for the purpose of navigation, you may want to show the **Back** button in **ListView Header**. To achieve this, **Showheaderbackbutton** attribute is used. By default, **ListView** is not rendered with the header back button in parent page. To customize the text shown in **ListView Header Back** button, the property `Headerbackbuttontext` is used. 
+In some cases, for the purpose of navigation, you may want to show the **Back** button in **ListView Header**. To achieve this, **ShowHeaderBackButton** attribute is used. By default, **ListView** is not rendered with the header back button in parent page. To customize the text shown in **ListView Header Back** button, the property `HeaderBackButtonText` is used. 
 
 Refer the following code example.
 
