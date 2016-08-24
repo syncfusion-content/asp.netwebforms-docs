@@ -102,7 +102,7 @@ Set the **SelectMethod** property of the _ObjectDataSource_ pointing to the **Ge
 
 {% endhighlight %}
 
-N> In TypeName="NameSpace.SchedulerData" replace the NameSpace with the namespace name where the *SchedulerData* class is defined.
+N> In TypeName="NameSpace.SchedulerData" replace the `NameSpace` with the namespace name where the *SchedulerData* class is defined.
 
 Map the Scheduler data fields with the appropriate appointmentSettings properties as shown below,
 
