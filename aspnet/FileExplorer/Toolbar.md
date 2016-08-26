@@ -28,7 +28,7 @@ From below you can see the available toolbar items and its categorization:
                     "addressBar",                
                     "copyPaste",                
                     "searchBar" ,
-                     "sortby"               
+                     "sortBy"               
                 };
     
                 //all tools grouped under following categories
@@ -51,8 +51,8 @@ From below you can see the available toolbar items and its categorization:
                 this.fileexplorer.Tools.SearchBar = new List<string>() {
                     "Searchbar"
                 };
-                this.fileexplorer.Tools.sortby = new List<string>() {
-                    "Sortby"
+                this.fileexplorer.Tools.SortBy = new List<string>() {
+                    "SortBy"
                 };
             }
     

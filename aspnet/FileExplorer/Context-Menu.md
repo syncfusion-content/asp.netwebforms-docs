@@ -115,7 +115,7 @@ It displays the details of the current selected file or folder.<br/><br/></td>
 </tr>
 <tr>
 <td>
-Sort by<br/><br/></td><td>
+Sort By<br/><br/></td><td>
 It's used to sorting the files and folders from the current directory.The sorting can be done based on the columns availbale from grid,in both ascending and descending order.<br/><br/></td>
 </tr>
 <tr>
