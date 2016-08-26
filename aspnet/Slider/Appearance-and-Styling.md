@@ -81,7 +81,7 @@ The following screenshot displays the output of the above code example.
 
 ## CSS Class
 
-To display the Slider control in different styles based on the appearance of your application, use CssClass property that applies custom theme for the Slider. Specify a class name as the value for CssClass property. The specified class is added to the wrapper of the Slider control. Now, you can easily override the styles of the Slider control by accessing the styles from the root level by using the Cssclass specified.
+To display the Slider control in different styles based on the appearance of your application, use CssClass property that applies custom theme for the Slider. Specify a class name as the value for CssClass property. The specified class is added to the wrapper of the Slider control. Now, you can easily override the styles of the Slider control by accessing the styles from the root level by using the CssClass specified.
 
 In an ASPX page, define the Slider control and configure the Slider with custom theme by using the CssClass property.
 
