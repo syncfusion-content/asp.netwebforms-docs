@@ -5,11 +5,12 @@ description: Working with Tables customization for RichTextEditor control
 platform: aspnet 
 control: RTE
 documentation: ug
+keywords: RichTextEditor, Tables, Insert Row, Remove Row, Remove Columns, Insert Columns
 
 ---
 # Working with Tables
 
-The editor provides tools to add tables in your content. You can add, edit, and remove the table as well as perform other table related tasks.
+The editor provides tools to add tables in your content. Can add, edit, and remove the table as well as perform other table related tasks.
 
 ## Create a Table
 
@@ -20,19 +21,21 @@ By default, [Insert Table](http://help.syncfusion.com/js/api/ejrte#members:tools
 
 {% highlight html %}
 
-    <ej:RTE ID="RTE1" ToolsList="tables" runat="server">
-            <RTEContent>
-                 Description:
-                    <p> The Rich Text Editor (RTE) control is an easy to render in
-                    client side. Customer easy to edit the contents and get the HTML content for
-                    the displayed content. A rich text editor control provides users with a toolbar
-                    that helps them to apply rich text formats to the text entered in the text
-                    area. </p>
-            </RTEContent>
-            <Tools Tables="createTable,addRowAbove,addRowBelow,addColumnLeft,addColumnRight,deleteRow,deleteColumn,deleteTable">
+<ej:RTE ID="RTE1" ToolsList="tables" runat="server">
+
+    <RTEContent>
+            Description:
+            <p> The Rich Text Editor (RTE) control is an easy to render in
+            client side. Customer easy to edit the contents and get the HTML content for
+            the displayed content. A rich text editor control provides users with a toolbar
+            that helps them to apply rich text formats to the text entered in the text
+            area. </p>
+    </RTEContent>
+    <Tools Tables="createTable,addRowAbove,addRowBelow,addColumnLeft,addColumnRight,deleteRow,deleteColumn,deleteTable">
+
+    </Tools>
     
-            </Tools>
-    </ej:RTE>
+</ej:RTE>
     
 {% endhighlight %}
 
@@ -71,8 +74,6 @@ N> You can also quickly add a new row by clicking on the lower-right cell of the
 ## Format a Table
 
 After you create a table, you can format the entire table by using **Table** **Properties** dialog. In the Table Properties dialog, set or modify each table styles to apply the styles to table elements. 
-
-
 
 * Table - width, height, style, border, and alignment.
 * Cell - border, spacing, and padding.
