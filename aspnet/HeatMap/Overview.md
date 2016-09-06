@@ -2,14 +2,14 @@
 layout: post
 title: Explore the features of the HeatMap control.
 description: Explore the features of the HeatMap control.
-platform: aspnet
+platform: ejweb
 control: HeatMap
 documentation: ug
 ---
 
 # Overview
 
-**Essential HeatMap ASP.NET** represents tabular data values as gradient colors instead of numbers. Low and high values are different colors with different gradients.
+**Essential HeatMap Web** represents tabular data values as gradient colors instead of numbers. Low and high values are different colors with different gradients.
  
 ![](Overview_images/Overview_images_img1.png)
 
