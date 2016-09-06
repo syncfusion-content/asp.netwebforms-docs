@@ -2,7 +2,7 @@
 layout: post
 title: Create and configure color codes for heatmap value. 
 description: How to configure colors codes for heatmap?
-platform: ejweb
+platform: aspnet
 control: HeatMap
 documentation: ug
 ---
@@ -15,17 +15,16 @@ In color mapping, when white color is set to value 0 and red color is set for va
 
 {% highlight aspx-cs %}
 
-            <ej:HeatMap runat="server" ID="heatmap" IsResponsive="true" Width="830">
-                <ColorMappingCollection>
-                    <ej:HeatMapColorMapping Color="#8ec8f8" Value="0">
-                        <label text="0"></label>
-                    </ej:HeatMapColorMapping>
-                    <ej:HeatMapColorMapping Color="#0d47a1" Value="100">
-                        <label text="100"></label>
-                    </ej:HeatMapColorMapping>
-                </ColorMappingCollection>
-            </ej:HeatMap>
-
+<ej:HeatMap runat="server" ID="heatmap" IsResponsive="true" Width="830">
+    <ColorMappingCollection>
+        <ej:HeatMapColorMapping Color="#8ec8f8" Value="0">
+            <label text="0"></label>
+        </ej:HeatMapColorMapping>
+        <ej:HeatMapColorMapping Color="#0d47a1" Value="100">
+            <label text="100"></label>
+        </ej:HeatMapColorMapping>
+    </ColorMappingCollection>
+</ej:HeatMap>
 
 {% endhighlight %}
 

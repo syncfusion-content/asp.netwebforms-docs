@@ -2,7 +2,7 @@
 layout: post
 title: Legend gives visual guideline for mapping between value and color.
 description: How to create and configure legend for HeatMap
-platform: ejweb
+platform: aspnet
 control: HeatMapLegend
 documentation: ug
 ---
@@ -17,23 +17,22 @@ Legend can be created with color mapping as shown below.
 
 {% highlight aspx-cs %}
 
-            <ej:HeatMapLegend runat="server" ID="LegendHeatmapLegend" Height="50px" Width="75%" legendmode="Gradient" orientation="Horizontal" IsResponsive="true">
-                <ColorMappingCollection>
-                    <ej:HeatMapColorMapping Color="#fe0002" Value="0">
-                        <label text="Poor"></label>
-                    </ej:HeatMapColorMapping>
-                    <ej:HeatMapColorMapping Color="#ffff01" Value="3">
-                        <label text="Average"></label>
-                    </ej:HeatMapColorMapping>
-                    <ej:HeatMapColorMapping Color="#13ab11" Value="6">
-                        <label text="Good"></label>
-                    </ej:HeatMapColorMapping>
-                    <ej:HeatMapColorMapping Color="#005ba2" Value="10">
-                        <label text="Excellent"></label>
-                    </ej:HeatMapColorMapping>
-                </ColorMappingCollection>
-            </ej:HeatMapLegend>
-
+<ej:HeatMapLegend runat="server" ID="LegendHeatmapLegend" Height="50px" Width="75%" legendmode="Gradient" orientation="Horizontal" IsResponsive="true">
+    <ColorMappingCollection>
+        <ej:HeatMapColorMapping Color="#fe0002" Value="0">
+            <label text="Poor"></label>
+        </ej:HeatMapColorMapping>
+        <ej:HeatMapColorMapping Color="#ffff01" Value="3">
+            <label text="Average"></label>
+        </ej:HeatMapColorMapping>
+        <ej:HeatMapColorMapping Color="#13ab11" Value="6">
+            <label text="Good"></label>
+        </ej:HeatMapColorMapping>
+        <ej:HeatMapColorMapping Color="#005ba2" Value="10">
+            <label text="Excellent"></label>
+        </ej:HeatMapColorMapping>
+    </ColorMappingCollection>
+</ej:HeatMapLegend>
 
 {% endhighlight %}
 
@@ -51,11 +50,8 @@ There are two modes for Legend
 
 {% highlight aspx-cs %}
 
-
-    <ej:HeatMapLegend runat="server" ID="LegendHeatmapLegend" Height="50px" Width="75%" legendmode="Gradient" orientation="Horizontal" IsResponsive="true">
-
-    </ej:HeatMapLegend>
-
+<ej:HeatMapLegend runat="server" ID="LegendHeatmapLegend" Height="50px" Width="75%" legendmode="Gradient" orientation="Horizontal" IsResponsive="true">
+</ej:HeatMapLegend>
 
 {% endhighlight %}
 
@@ -65,9 +61,8 @@ There are two modes for Legend
 
 {% highlight aspx-cs %}
 
-    <ej:HeatMapLegend runat="server" ID="LegendHeatmapLegend" Height="50px" Width="75%" legendmode="List" orientation="Horizontal" IsResponsive="true">
-
-    </ej:HeatMapLegend>
+<ej:HeatMapLegend runat="server" ID="LegendHeatmapLegend" Height="50px" Width="75%" legendmode="List" orientation="Horizontal" IsResponsive="true">
+</ej:HeatMapLegend>
         
 {% endhighlight %}
 
@@ -76,6 +71,7 @@ There are two modes for Legend
 ## Orientation
 
 There are 2 types of Orientation, applicable for Gradient and List Mode 
+
 * Horizontal
 * Vertical
 
@@ -83,9 +79,8 @@ There are 2 types of Orientation, applicable for Gradient and List Mode
 
 {% highlight aspx-cs %}
 
-    <ej:HeatMapLegend runat="server" ID="LegendHeatmapLegend" Height="50px" Width="75%" legendmode="List" orientation="Horizontal" IsResponsive="true">
-
-    </ej:HeatMapLegend>
+<ej:HeatMapLegend runat="server" ID="LegendHeatmapLegend" Height="50px" Width="75%" legendmode="List" orientation="Horizontal" IsResponsive="true">
+</ej:HeatMapLegend>
         
 {% endhighlight %}
 
@@ -95,9 +90,8 @@ There are 2 types of Orientation, applicable for Gradient and List Mode
 
 {% highlight aspx-cs %} 
 
-    <ej:HeatMapLegend runat="server" ID="LegendHeatmapLegend" Height="50px" Width="75%" legendmode="List" orientation="Vertical" IsResponsive="true">
-
-    </ej:HeatMapLegend>
+<ej:HeatMapLegend runat="server" ID="LegendHeatmapLegend" Height="50px" Width="75%" legendmode="List" orientation="Vertical" IsResponsive="true">
+</ej:HeatMapLegend>
         
 {% endhighlight %}
 
