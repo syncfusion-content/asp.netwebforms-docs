@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Data source given to HeatMap is configured using ItemsMapping
 description: How to populate data for heatmap?
