@@ -42,12 +42,12 @@ The customOrderedList having below options for an ordered list customization.
 <th>
 Option<br/><br/></th><th>
 Summary<br/><br/></th></tr>
-<tr><td>name</td><td>Specifies the name for customOrderedList item.</td></tr>
-<tr><td>tooltip</td><td>Specifies the title for customOrderedList item.</td></tr>
-<tr><td>css</td><td>Specifies the styles for customOrderedList item.</td></tr>
-<tr><td>text</td><td>Specifies the text for customOrderedList item.</td></tr>
-<tr><td>listStyle</td><td>Specifies the list style for customOrderedList item.</td></tr>
-<tr><td>listImage</td><td>Specifies the image for customOrderedList item.</td></tr>
+<tr><td>Name</td><td>Specifies the name for customOrderedList item.</td></tr>
+<tr><td>Tooltip</td><td>Specifies the title for customOrderedList item.</td></tr>
+<tr><td>CSS</td><td>Specifies the styles for customOrderedList item.</td></tr>
+<tr><td>Text</td><td>Specifies the text for customOrderedList item.</td></tr>
+<tr><td>ListStyle</td><td>Specifies the list style for customOrderedList item.</td></tr>
+<tr><td>ListImage</td><td>Specifies the image for customOrderedList item.</td></tr>
 </table>
 
 {% highlight html %}
@@ -76,12 +76,12 @@ The customUnorderedList having below options for an unordered list customization
 <th>
 Option<br/><br/></th><th>
 Summary<br/><br/></th></tr>
-<tr><td>name</td><td>Specifies the name for customUnorderedList item.</td></tr>
-<tr><td>tooltip</td><td>Specifies the title for customUnorderedList item.</td></tr>
-<tr><td>css</td><td>Specifies the styles for customUnorderedList item.</td></tr>
-<tr><td>text</td><td>Specifies the text for customUnorderedList item.</td></tr>
-<tr><td>listStyle</td><td>Specifies the list style for customUnorderedList item.</td></tr>
-<tr><td>listImage</td><td>Specifies the image for customUnorderedList item.</td></tr>
+<tr><td>Name</td><td>Specifies the name for customUnorderedList item.</td></tr>
+<tr><td>Tooltip</td><td>Specifies the title for customUnorderedList item.</td></tr>
+<tr><td>CSS</td><td>Specifies the styles for customUnorderedList item.</td></tr>
+<tr><td>Text</td><td>Specifies the text for customUnorderedList item.</td></tr>
+<tr><td>ListStyle</td><td>Specifies the list style for customUnorderedList item.</td></tr>
+<tr><td>ListImage</td><td>Specifies the image for customUnorderedList item.</td></tr>
 </table>
 
 {% highlight html %}
