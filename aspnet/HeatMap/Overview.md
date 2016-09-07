@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Explore the features of the HeatMap control.
 description: Explore the features of the HeatMap control.
