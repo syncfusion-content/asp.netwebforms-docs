@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Create and configure color codes for heatmap value. 
 description: How to configure colors codes for heatmap?
