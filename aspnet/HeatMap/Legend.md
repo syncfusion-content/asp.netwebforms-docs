@@ -6,7 +6,6 @@ platform: aspnet
 control: HeatMapLegend
 documentation: ug
 ---
-
 # Legend
 
 Legend is a control used to summarize the range of colors in HeatMap. This gives visual guideline for mapping between value and color.
