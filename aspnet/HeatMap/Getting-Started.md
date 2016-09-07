@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting started with Syncfusion Essential HeatMap for ASP.NET MVC
 description: Getting started walk through to create your first HeatMap.
@@ -6,7 +6,6 @@ platform: aspnet
 control: HeatMap
 documentation: ug
 ---
-
 # Getting Started
 
 This section explains briefly you on how to create a HeatMap control in your application with ASP.NET. Getting started with your ASP.NET HeatMap is very easy.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Legend gives visual guideline for mapping between value and color.
 description: How to create and configure legend for HeatMap
@@ -6,7 +6,6 @@ platform: aspnet
 control: HeatMapLegend
 documentation: ug
 ---
-
 # Legend
 
 Legend is a control used to summarize the range of colors in HeatMap. This gives visual guideline for mapping between value and color.

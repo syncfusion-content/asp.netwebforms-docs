@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Data source given to HeatMap is configured using ItemsMapping
 description: How to populate data for heatmap?
@@ -6,7 +6,6 @@ platform: aspnet
 control: HeatMap
 documentation: ug
 ---
-
 # Items Mapping
 
 External data source can be mapped with HeatMap using `ItemsMapping` property. It supports 2 kind of data source.
