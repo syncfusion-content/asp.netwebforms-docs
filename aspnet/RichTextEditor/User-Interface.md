@@ -5,7 +5,7 @@ description: User Interface for RichTextEditor control (toolbar, content area, a
 platform: aspnet
 control: RTE
 documentation: ug
-keywords: RichTextEditor, Toolbar Configuration, Toolbar Items
+keywords: RichTextEditor, Toolbar Configuration, Toolbar Items, Custom Tools
 
 ---
 

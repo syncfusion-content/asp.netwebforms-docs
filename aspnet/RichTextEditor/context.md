@@ -5,7 +5,7 @@ description: Context Menu in RichTextEditor control
 platform: aspnet
 control: RTE
 documentation: ug
-keywords: RichTextEditor, Context Menu, Resizer, HTML Tag Info, Clear Format
+keywords: RichTextEditor, Context Menu
 
 ---
 

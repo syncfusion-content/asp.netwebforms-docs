@@ -5,7 +5,7 @@ description: Validation to format the RichTextEditor control's content
 platform: aspnet
 control: RTE
 documentation: ug
-keywords: RichTextEditor, Footer, Resizer, HTML Tag Info, Clear Format
+keywords: RichTextEditor, Footer, Resizer, HTML Tag Info, Clear Format, Characters Count, Word Count
 
 ---
 

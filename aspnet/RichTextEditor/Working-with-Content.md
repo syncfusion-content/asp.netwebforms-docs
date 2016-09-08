@@ -5,7 +5,7 @@ description: Working with Content related changes in RichTextEditor control
 platform: aspnet
 control: RTE
 documentation: ug
-keywords: RichTextEditor, Submit Content, Refresh
+keywords: RichTextEditor, Submit Content, Refresh, IFrame Attributes, Persistence
 
 ---
 # Working with Content
