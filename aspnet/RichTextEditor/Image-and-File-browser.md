@@ -5,7 +5,7 @@ description: Configuring and working with Image and File browser in RichTextEdit
 platform: aspnet
 control: RTE
 documentation: ug
-
+keywords: RichTextEditor, Image and File browser, From Local Source, From Online Source
 ---
 
 # Image and File browser
@@ -18,18 +18,18 @@ If you want to insert an image from online source like Google, ping, etc., you n
 
 {% highlight html %}
 	
-    <ej:RTE ID="RTE1" ToolsList="images" runat="server">
-        <RTEContent>
-             Description:
-                <p> The Rich Text Editor (RTE) control is an easy to render in
-                client side. Customer easy to edit the contents and get the HTML content for
-                the displayed content. A rich text editor control provides users with a toolbar
-                that helps them to apply rich text formats to the text entered in the text
-                area. </p>
-        </RTEContent>
-        <Tools Images="image">
-        </Tools>
-    </ej:RTE>
+<ej:RTE ID="RTE1" ToolsList="images" runat="server">
+    <RTEContent>
+            Description:
+            <p> The Rich Text Editor (RTE) control is an easy to render in
+            client side. Customer easy to edit the contents and get the HTML content for
+            the displayed content. A rich text editor control provides users with a toolbar
+            that helps them to apply rich text formats to the text entered in the text
+            area. </p>
+    </RTEContent>
+    <Tools Images="image">
+    </Tools>
+</ej:RTE>
     
 {% endhighlight %}
 
@@ -41,19 +41,19 @@ Configure the ImageBrowser and FileBrowser property to insert an image from your
 
 {% highlight html %}
 
-    <ej:RTE ID="RTE1" ToolsList="images" runat="server">
-        <RTEContent>
-                Description:
-                <p> The Rich Text Editor (RTE) control is an easy to render in
-                client side. Customer easy to edit the contents and get the HTML content for
-                the displayed content. A rich text editor control provides users with a toolbar
-                that helps them to apply rich text formats to the text entered in the text
-                area. </p>
-        </RTEContent>
-        <Tools Images="image"> </Tools>
-        <ImageBrowser ExtensionAllow="*.png,*.gif,*.jpg,*.jpeg" FilePath="~/FileBrowser/"  AjaxAction="Default.aspx/FileActionDefault"/>
-        <FileBrowser ExtensionAllow="*.png,*.txt,*.jpg,*.docx" FilePath="~/FileBrowser/" AjaxAction="Default.aspx/FileActionDefault"/>
-    </ej:RTE>
+<ej:RTE ID="RTE1" ToolsList="images" runat="server">
+    <RTEContent>
+            Description:
+            <p> The Rich Text Editor (RTE) control is an easy to render in
+            client side. Customer easy to edit the contents and get the HTML content for
+            the displayed content. A rich text editor control provides users with a toolbar
+            that helps them to apply rich text formats to the text entered in the text
+            area. </p>
+    </RTEContent>
+    <Tools Images="image"> </Tools>
+    <ImageBrowser ExtensionAllow="*.png,*.gif,*.jpg,*.jpeg" FilePath="~/FileBrowser/"  AjaxAction="Default.aspx/FileActionDefault"/>
+    <FileBrowser ExtensionAllow="*.png,*.txt,*.jpg,*.docx" FilePath="~/FileBrowser/" AjaxAction="Default.aspx/FileActionDefault"/>
+</ej:RTE>
     
 {% endhighlight %}
 
@@ -61,31 +61,31 @@ Configure the ImageBrowser and FileBrowser property to insert an image from your
 
 {% highlight html %}
 
-    [System.Web.Services.WebMethod]
-        public static object FileActionDefault(string ActionType, string Path, string ExtensionsAllow, string LocationFrom, string LocationTo, string Name, string[] Names, string NewName, string Action, IEnumerable<CommonFileDetails> CommonFiles)
-        {
-            FileExplorerOperations opeartion = new FileExplorerOperations();
-            switch (ActionType)
-            {
-                case "Read":
-                    return (opeartion.Read(Path, ExtensionsAllow));
-                case "CreateFolder":
-                    return (opeartion.CreateFolder(Path, Name));
-                case "Paste":
-                    opeartion.Paste(LocationFrom, LocationTo, Names, Action, CommonFiles);
-                    break;
-                case "Remove":
-                    opeartion.Remove(Names, Path);
-                    break;
-                case "Rename":
-                    opeartion.Rename(Path, Name, NewName, CommonFiles);
-                    break;
-                case "GetDetails":
-                    return (opeartion.GetDetails(Path, Names));
-            }
-            return "";
-        }
-     
+[System.Web.Services.WebMethod]
+public static object FileActionDefault(string ActionType, string Path, string ExtensionsAllow, string LocationFrom, string LocationTo, string Name, string[] Names, string NewName, string Action, IEnumerable<CommonFileDetails> CommonFiles)
+{
+    FileExplorerOperations opeartion = new FileExplorerOperations();
+    switch (ActionType)
+    {
+        case "Read":
+            return (opeartion.Read(Path, ExtensionsAllow));
+        case "CreateFolder":
+            return (opeartion.CreateFolder(Path, Name));
+        case "Paste":
+            opeartion.Paste(LocationFrom, LocationTo, Names, Action, CommonFiles);
+            break;
+        case "Remove":
+            opeartion.Remove(Names, Path);
+            break;
+        case "Rename":
+            opeartion.Rename(Path, Name, NewName, CommonFiles);
+            break;
+        case "GetDetails":
+            return (opeartion.GetDetails(Path, Names));
+    }
+    return "";
+}
+    
 {% endhighlight %}        
 
 ![](ImageandFilebrowser_images/ImageandFilebrowser_img2.png)
@@ -104,6 +104,8 @@ You can set or modify the properties of an image by using the image dialog. It a
 
 You can resize an image either manually or by setting width and height in the image dialog. 
 
+N> Set the default height and width of the Images which was inserted into the RTE text area in the client side event called “change” event of RTE - {{'[Link](http://jsplayground.syncfusion.com/Sync_rghpsadi)'| markdownify }}
+
 ### Resize Manually
 
 You can resize an image manually by selecting an image. And drag the handle until the image is resized to the desired size. 
@@ -117,21 +119,81 @@ The editor provides you to set the width and height properties to change the siz
 
 {% highlight html %}
 
-     <ej:RTE ID="RTE1" ToolsList="images" ShowDimensions="true" runat="server">
-        <RTEContent>
-             Description:
-                <p> The Rich Text Editor (RTE) control is an easy to render in
-                client side. Customer easy to edit the contents and get the HTML content for
-                the displayed content. A rich text editor control provides users with a toolbar
-                that helps them to apply rich text formats to the text entered in the text
-                area. </p>
-        </RTEContent>
-        <Tools Images="image">
+<ej:RTE ID="RTE1" ToolsList="images" ShowDimensions="true" runat="server">
+    <RTEContent>
+            Description:
+            <p> The Rich Text Editor (RTE) control is an easy to render in
+            client side. Customer easy to edit the contents and get the HTML content for
+            the displayed content. A rich text editor control provides users with a toolbar
+            that helps them to apply rich text formats to the text entered in the text
+            area. </p>
+    </RTEContent>
+    <Tools Images="image">
 
-        </Tools>
-    </ej:RTE>
+    </Tools>
+</ej:RTE>
+
 {% endhighlight %}
 
 ![](ImageandFilebrowser_images/ImageandFilebrowser_img5.png)
 
+## Suppression of the Image Browser
 
+The General and Advanced tabs in the RTE Image browser can be removed by setting its corresponding display CSS property to none.
+
+{% highlight CSS %}
+
+<style type="text/css" class="cssStyles">
+    div.e-rte-imageTab.e-tab.e-js.e-widget {
+        display: none;
+    }
+</style>
+    
+ {% endhighlight %}
+ 
+ Can remove the Add Newfolder button by using [removeToolbarItem](https://help.syncfusion.com/js/api/ejrte#methods:removetoolbaritem) property of Image Browser in the RTE create event. 
+
+{% highlight html %}
+
+<ej:RTE ID="browser" ClientSideOnCreate="onCreate" Width="100%" Height="440" runat="server" MinWidth="200px">
+    <RTEContent>
+        The Rich Text Editor (RTE) control is an easy to render in
+        client side. Customer easy to edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. 
+    </RTEContent>
+    <ImageBrowser ExtensionAllow="*.png,*.gif,*.jpg,*.jpeg" FilePath="~/FileBrowser/" AjaxAction="FileAndImageBrowser.aspx/FileActionDefault" UploadAction="../FileExplorer/uploadFiles.ashx{0}"/>
+    <FileBrowser ExtensionAllow="*.png,*.txt,*.jpg,*.docx" FilePath="~/FileBrowser/" AjaxAction="FileAndImageBrowser.aspx/FileActionDefault" UploadAction="../FileExplorer/uploadFiles.ashx{0}"/>
+</ej:RTE>
+<script>
+    function onCreate(args){
+        this._explorerObj.removeToolbarItem("NewFolder");
+    }
+</script>
+
+ {% endhighlight %}
+ 
+ In RTE control, there is no direct support for the autoUpload option. But this can be achieved by enabling the autoUpload at create event of RTE.
+
+{% highlight html %}
+
+<ej:RTE ID="browser" ClientSideOnCreate="onCreate" Width="100%" Height="440" runat="server" MinWidth="200px">
+    <RTEContent>
+        The Rich Text Editor (RTE) control is an easy to render in
+        client side. Customer easy to edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. 
+    </RTEContent>
+    <ImageBrowser ExtensionAllow="*.png,*.gif,*.jpg,*.jpeg" FilePath="~/FileBrowser/" AjaxAction="FileAndImageBrowser.aspx/FileActionDefault" UploadAction="../FileExplorer/uploadFiles.ashx{0}"/>
+    <FileBrowser ExtensionAllow="*.png,*.txt,*.jpg,*.docx" FilePath="~/FileBrowser/" AjaxAction="FileAndImageBrowser.aspx/FileActionDefault" UploadAction="../FileExplorer/uploadFiles.ashx{0}"/>
+</ej:RTE>
+<script>
+    function onCreate(args){
+        //setting autoUpload property as true                   
+        this._explorerObj._uploadtag.data("ejUploadbox").option("autoUpload", true);
+    }
+</script>
+    
+ {% endhighlight %}

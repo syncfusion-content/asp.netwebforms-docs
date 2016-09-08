@@ -5,6 +5,7 @@ description: Working with Hyperlinks customization in RichTextEditor control
 platform: aspnet
 control: RTE
 documentation: ug
+keywords: RichTextEditor, Hyperlinks
 
 ---
 # Working with Hyperlinks
@@ -27,16 +28,16 @@ N> Leave this textbox blank if you want to display the full link as hyperlink in
 
 {% highlight html %}
 
-	 <ej:RTE ID="RTE2" runat="server" ToolsList="links">
-        <RTEContent>
-            <ul>
-                <li>The Rich Text Editor  (RTE) control is an easy to render in client side. </li>
-                <li>Customer easy to edit the contents and get the HTML content for the displayed content. </li>
-                <li> A rich text editor control provides users with a toolbar that helps them to apply rich text formats to the text entered  in the text area.</li>
-            </ul>       
-	    </RTEContent>
-        <Tools Links="createLink,removeLink"> </Tools>
-    </ej:RTE>
+<ej:RTE ID="RTE2" runat="server" ToolsList="links">
+    <RTEContent>
+        <ul>
+            <li>The Rich Text Editor  (RTE) control is an easy to render in client side. </li>
+            <li>Customer easy to edit the contents and get the HTML content for the displayed content. </li>
+            <li> A rich text editor control provides users with a toolbar that helps them to apply rich text formats to the text entered  in the text area.</li>
+        </ul>       
+    </RTEContent>
+    <Tools Links="createLink,removeLink"> </Tools>
+</ej:RTE>
 
 {% endhighlight %}
 

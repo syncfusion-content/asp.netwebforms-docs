@@ -5,6 +5,8 @@ description: working-with-lists
 platform: aspnet
 control: RichTextEditor
 documentation: ug
+keywords: RichTextEditor, Create a Lists, Custom Lists, customOrderedList, customUnorderedList
+
 ---
 # Working with Lists
 
@@ -16,10 +18,10 @@ By default, [Insert Lists](http://help.syncfusion.com/js/api/ejrte#members:tools
 
 {% highlight html %}
 
-    <ej:RTE ID="rteSample" AllowEditing="true" ToolsList="lists" runat="server">
-        <Tools Lists="unorderedList,orderedList">
-        </Tools>
-    </ej:RTE>
+<ej:RTE ID="rteSample" AllowEditing="true" ToolsList="lists" runat="server">
+    <Tools Lists="unorderedList,orderedList">
+    </Tools>
+</ej:RTE>
     
 {% endhighlight %}
 
@@ -52,13 +54,13 @@ Summary<br/><br/></th></tr>
 
 {% highlight html %}
 
-    <ej:RTE ID="rteSample" AllowEditing="true" ToolsList="lists" runat="server">
-       <Tools Lists="unorderedList,orderedList">
-             <CustomOrderedList>
-                        <ej:CustomOrderedList Text="Lower-Greek" ListStyle="lower-greek" Name="orderInsert" Tooltip="Custom OrderList" Css="e-rte-toolbar-icon e-rte-listitems customOrder" />
-             </CustomOrderedList> 
-       </Tools>
-    </ej:RTE>
+<ej:RTE ID="rteSample" AllowEditing="true" ToolsList="lists" runat="server">
+    <Tools Lists="unorderedList,orderedList">
+            <CustomOrderedList>
+                    <ej:CustomOrderedList Text="Lower-Greek" ListStyle="lower-greek" Name="orderInsert" Tooltip="Custom OrderList" Css="e-rte-toolbar-icon e-rte-listitems customOrder" />
+            </CustomOrderedList> 
+    </Tools>
+</ej:RTE>
     
 {% endhighlight %}
 
@@ -86,13 +88,13 @@ Summary<br/><br/></th></tr>
 
 {% highlight html %}
 
-    <ej:RTE ID="rteSample" AllowEditing="true" ToolsList="lists" runat="server">
-       <Tools Lists="unorderedList,orderedList">
-             <CustomUnorderedList>
-                    <ej:CustomUnorderedList Text="Smiley" ListImage="url('../Content/images/rte/Smiley-GIF.gif')" Name="unOrderInsert" Tooltip="Custom UnOrderList" Css="e-rte-toolbar-icon e-rte-unlistitems customUnOrder" />
-             </CustomUnorderedList>
-        </Tools>
-    </ej:RTE>
+<ej:RTE ID="rteSample" AllowEditing="true" ToolsList="lists" runat="server">
+    <Tools Lists="unorderedList,orderedList">
+        <CustomUnorderedList>
+            <ej:CustomUnorderedList Text="Smiley" ListImage="url('../Content/images/rte/Smiley-GIF.gif')" Name="unOrderInsert" Tooltip="Custom UnOrderList" Css="e-rte-toolbar-icon e-rte-unlistitems customUnOrder" />
+        </CustomUnorderedList>
+    </Tools>
+</ej:RTE>
     
 {% endhighlight %}
 

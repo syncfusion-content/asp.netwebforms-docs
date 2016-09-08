@@ -5,6 +5,7 @@ description: Working with content selection in RichTextEditor control
 platform: aspnet
 control: RTE
 documentation: ug
+keywords: RichTextEditor, Select All, Select a Range, Get Selection
 
 ---
 # Working with Selection
@@ -19,21 +20,21 @@ N> the selection highlight is invisible if the editor does not have focus. So, i
 
 {% highlight html %}
 
-	<ej:RTE ID="RTE2" runat="server">
-        <RTEContent>
-	            The Rich Text Editor  (RTE) control is an easy to render in client side. Customer easy to edit the contents and get the HTML content for the displayed content. A rich text editor control provides users with a toolbar that helps them to apply rich text formats to the text entered  in the text area.
-	    </RTEContent>
-    </ej:RTE>
-    <br />
-    <ej:Button ID="Button" runat="server" Text="Select All" ClientSideOnClick="selectAll"></ej:Button>
-	
-	<script type="text/javascript">
-	    function selectAll() {
-	        var editor = $("#<%=RTE2.ClientID%>").ejRTE("instance");
-	        editor.selectAll();
-	    }
+<ej:RTE ID="RTE2" runat="server">
+    <RTEContent>
+            The Rich Text Editor  (RTE) control is an easy to render in client side. Customer easy to edit the contents and get the HTML content for the displayed content. A rich text editor control provides users with a toolbar that helps them to apply rich text formats to the text entered  in the text area.
+    </RTEContent>
+</ej:RTE>
+<br />
+<ej:Button ID="Button" runat="server" Text="Select All" ClientSideOnClick="selectAll"></ej:Button>
 
-	</script>
+<script type="text/javascript">
+    function selectAll() {
+        var editor = $("#<%=RTE2.ClientID%>").ejRTE("instance");
+        editor.selectAll();
+    }
+
+</script>
     
 {% endhighlight %}
 
@@ -43,35 +44,35 @@ You can programmatically select a range of content in the editor using the [sele
 
 {% highlight html %}
 
-	<ej:RTE ID="RTE2" runat="server" >
-	        <RTEContent>
-                <ul>
-                    <li>The Rich Text Editor  (RTE) control is an easy to render in client side. </li>
-                    <li>Customer easy to edit the contents and get the HTML content for the displayed content. </li>
-                    <li> A rich text editor control provides users with a toolbar that helps them to apply rich text formats to the text entered  in the text area.</li>
-                </ul>       
-		    </RTEContent>
-    </ej:RTE>
-    <br />
-    <ej:Button ID="Button" runat="server" Text="Range" ClientSideOnClick="selectAll"></ej:Button>
+<ej:RTE ID="RTE2" runat="server" >
+    <RTEContent>
+        <ul>
+            <li>The Rich Text Editor  (RTE) control is an easy to render in client side. </li>
+            <li>Customer easy to edit the contents and get the HTML content for the displayed content. </li>
+            <li> A rich text editor control provides users with a toolbar that helps them to apply rich text formats to the text entered  in the text area.</li>
+        </ul>       
+    </RTEContent>
+</ej:RTE>
+<br />
+<ej:Button ID="Button" runat="server" Text="Range" ClientSideOnClick="selectAll"></ej:Button>
 
-	<script type="text/javascript">
-	    function selectAll() {
-	        var editor = $("#<%=RTE2.ClientID%>").ejRTE("instance");
-	        range = editor.createRange();
-	        var liTag = $(editor.getDocument().body).find("li");
-	        if (!editor._isIE8()) {
-	            range.setStart(liTag[1], 0);
-	            range.setEnd(liTag[2], 1);
-	        }
-	        else {
-	            range = editor.getDocument().body.createTextRange()
-	            range.moveToElementText(liTag[2]);
-	        }
-	        editor.selectRange(range);
-	    }
+<script type="text/javascript">
+    function selectAll() {
+        var editor = $("#<%=RTE2.ClientID%>").ejRTE("instance");
+        range = editor.createRange();
+        var liTag = $(editor.getDocument().body).find("li");
+        if (!editor._isIE8()) {
+            range.setStart(liTag[1], 0);
+            range.setEnd(liTag[2], 1);
+        }
+        else {
+            range = editor.getDocument().body.createTextRange()
+            range.moveToElementText(liTag[2]);
+        }
+        editor.selectRange(range);
+    }
 
-	</script>
+</script>
     
 {% endhighlight %}
 
@@ -84,21 +85,21 @@ The following public methods helps you to retrieve the selected content from the
 
 {% highlight html %}
 
-	<ej:RTE ID="RTE2" runat="server">
-        <RTEContent>
-             The Rich Text Editor  (RTE) control is an easy to render in client side. Customer easy to edit the contents and get the HTML content for the displayed content. A rich text editor control provides users with a toolbar that helps them to apply rich text formats to the text entered  in the text area.      
-	    </RTEContent>
-    </ej:RTE>
-    <br />
-    <ej:Button ID="Button" runat="server" Text="Get Selection" ClientSideOnClick="selectAll"></ej:Button>
+<ej:RTE ID="RTE2" runat="server">
+    <RTEContent>
+            The Rich Text Editor  (RTE) control is an easy to render in client side. Customer easy to edit the contents and get the HTML content for the displayed content. A rich text editor control provides users with a toolbar that helps them to apply rich text formats to the text entered  in the text area.      
+    </RTEContent>
+</ej:RTE>
+<br />
+<ej:Button ID="Button" runat="server" Text="Get Selection" ClientSideOnClick="selectAll"></ej:Button>
 
-	<script type="text/javascript">
-	    function selectAll() {
-	        var editor = $("#<%=RTE2.ClientID%>").ejRTE("instance");
-	        var selectedText = editor.getText();
-	        var selectedHtml = editor.getSelectedHtml();
-	    }
-	
-	</script>
+<script type="text/javascript">
+    function selectAll() {
+        var editor = $("#<%=RTE2.ClientID%>").ejRTE("instance");
+        var selectedText = editor.getText();
+        var selectedHtml = editor.getSelectedHtml();
+    }
+
+</script>
     
 {% endhighlight %}
