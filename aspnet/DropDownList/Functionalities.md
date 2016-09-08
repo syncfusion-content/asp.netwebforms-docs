@@ -856,7 +856,7 @@ N> Items are filtered based on “contains” filter type by default.
 {% tabs %}
 
 	{% highlight html %}
-        <ej:DropDownList ID="DropDownList1" runat="server" DataTextField="Text" DataValueField="Value" EnableFilterSearch="false" FilterType="StartsWith"></ej:DropDownList>
+        <ej:DropDownList ID="DropDownList1" runat="server" DataTextField="Text" DataValueField="Value" EnableFilterSearch="true" FilterType="StartsWith"></ej:DropDownList>
 		
 	{% endhighlight %}
     
