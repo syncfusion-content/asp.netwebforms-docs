@@ -1,80 +1,138 @@
 ---
 layout: post
-title: Getting started with Syncfusion Essential HeatMap for ASP.NET MVC
-description: Getting started walk through to create your first HeatMap.
-platform: aspnet
+title: Getting started with Syncfusion Essential HeatMap for JavaScript
+description: Getting started walk through to create your first Heat map.
+platform: ejweb
 control: HeatMap
 documentation: ug
 ---
+
 # Getting Started
 
-This section explains briefly you on how to create a HeatMap control in your application with ASP.NET. Getting started with your ASP.NET HeatMap is very easy.
+## Initialize the SfHeatMap
 
-## Initialize the HeatMap
-
-1\. Create an ASP.NET Application and add necessary assemblies and Scripts by referring [ASP-Getting Started](http://help.syncfusion.com/aspnet/getting-started) Documentation.
-
-2\. Create a Web Form named as HeatMap and add the following template.
-
+Initialize `HeatMap` to the Html Page as shown in the following code sample.
 
 {% highlight aspx-cs %}
 
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Diagram.aspx.cs" Inherits="WebApplication2.Diagram" %>
+@*Initializes heat map control*@
 
-<!DOCTYPE html>
-<html>
-<head runat="server">
-    <title>Getting started for ASP.NET HeatMap Control</title>
-    <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
-    <script src='<%= Page.ResolveClientUrl("~/Scripts/jquery-2.1.4.min.js")%>' type="text/javascript"></script>
-    <script src='<%= Page.ResolveClientUrl("~/Scripts/jquery.easing-1.3.min.js")%>' type="text/javascript"></script>
-    <script src='<%= Page.ResolveClientUrl("~/Scripts/jquery.globalize.min.js")%>' type="text/javascript"></script>
-    <script src='<%= Page.ResolveClientUrl("~/Scripts/jsrender.min.js")%>' type="text/javascript"></script>
-    <script src='<%= Page.ResolveClientUrl("~/Scripts/ej/ej.web.all.min.js")%>' type="text/javascript"></script>
-    <script src='<%= Page.ResolveClientUrl("~/Scripts/ej/ej.webform.min.js")%>' type="text/javascript"></script>
-</head>
-<body>
-    <form runat="server">
-        <ej:HeatMap runat="server" ID="heatmap" IsResponsive="true" Width="830">
-        </ej:HeatMap>
-    </form>
-</body>
-</html>
-
-{% endhighlight %}} 
+<div>
+    <ej:HeatMap runat="server" ID="TableHeatmap" Width="950">
+    </ej:HeatMap>
+</div>
+    
+{% endhighlight %}
  
 
-## Prepare and Populate data
+## Prepare data
 
 Populate product information in a collection
 
-{% tabs %}
-{% highlight aspx-cs %}
-
-<ej:HeatMap runat="server" ID="heatmap" IsResponsive="true" Width="830">
-</ej:HeatMap>
-
-{% endhighlight %}
-
 {% highlight c# %}
+
+[Serializable]
+public class SampleTableData
+{
+    private string productName;
+    [JsonProperty("ProductName")]
+    [DefaultValue("")]
+    public string ProductName
+    {
+        get { return productName; }
+        set { productName = value; }
+    }
+
+    private double y2010;
+    [JsonProperty("Y2010")]
+    [DefaultValue("")]
+    public double Y2010
+    {
+        get { return y2010; }
+        set { y2010 = value; }
+    }
+
+    private double y2011;
+    [JsonProperty("Y2011")]
+    [DefaultValue("")]
+    public double Y2011
+    {
+        get { return y2011; }
+        set { y2011 = value; }
+    }
+
+    private double y2012;
+    [JsonProperty("Y2012")]
+    [DefaultValue("")]
+    public double Y2012
+    {
+        get { return y2012; }
+        set { y2012 = value; }
+    }
+
+    private double y2013;
+    [JsonProperty("Y2013")]
+    [DefaultValue("")]
+    public double Y2013
+    {
+        get { return y2013; }
+        set { y2013 = value; }
+    }
+
+    private double y2014;
+    [JsonProperty("Y2014")]
+    [DefaultValue("")]
+    public double Y2014
+    {
+        get { return y2014; }
+        set { y2014 = value; }
+    }
+
+    private double y2015;
+    [JsonProperty("Y2015")]
+    [DefaultValue("")]
+    public double Y2015
+    {
+        get { return y2015; }
+        set { y2015 = value; }
+    }
+}
  
-CellMapping CellMapping = new CellMapping();
-CellMapping.Column = new PropertyMapping() { PropertyName = "ProductName", DisplayName = "Product Name" };
-CellMapping.Row = new PropertyMapping() { PropertyName = "Year", DisplayName = "Year" };
-CellMapping.Value = new PropertyMapping() { PropertyName = "Value" };
-Collection columnMapping = new Collection();
-columnMapping.Add(new HeaderMapping() { PropertyName = "Vegie-spread", DisplayName = "Vegie-spread" });
-columnMapping.Add(new HeaderMapping() { PropertyName = "Tofuaa", DisplayName = "Tofuaa" });
-columnMapping.Add(new HeaderMapping() { PropertyName = "Alice Mutton", DisplayName = "Alice Mutton" });
-columnMapping.Add(new HeaderMapping() { PropertyName = "Konbu", DisplayName = "Konbu" });
-columnMapping.Add(new HeaderMapping() { PropertyName = "Fløtemysost", DisplayName = "Fløtemysost" });
-columnMapping.Add(new HeaderMapping() { PropertyName = "Perth Pasties", DisplayName = "Perth Pasties" });
-CellMapping.ColumnMapping = columnMapping;
-HeaderMapping headerMapping = new HeaderMapping() { PropertyName = "Year", DisplayName = "Year", ColumnStyle = new ColumnStyle() { Width = 105, TextAlign = HeatMapTextAlign.Right } };
-CellMapping.HeaderMapping = headerMapping;
+{% endhighlight %}
+
+## Populate data
+
+Populate product information in a collection.
+
+{% highlight c# %} 
+       
+public void CreateTableHeatmap()
+{
+    TableHeatmap.ItemsSource = GetTableSource();
+}
+
+public Collection GetTableSource()
+{
+    Collection collection = new Collection();
+    Random random = new Random();
+    string[] rows = { "Vegie-spread", "Tofuaa", "Alice Mutton", "Konbu", "Fløtemysost", "Perth Pasties", "Boston Crab Meat", "Raclette Courdavault" };
+    for (int i = 0; i < 8; i++)
+    {
+        collection.Add(new SampleTableData()
+        {
+            ProductName = rows[i],
+            Y2010 = random.Next(0, 100),
+            Y2011 = random.Next(0, 100),
+            Y2012 = random.Next(0, 100),
+            Y2013 = random.Next(0, 100),
+            Y2014 = random.Next(0, 100),
+            Y2015 = random.Next(0, 100)
+        });
+    }
+    return collection;
+}
 
 {% endhighlight %}
-{% endtabs %}
 
 ## Map data into HeatMap
 
@@ -84,104 +142,30 @@ Now data is ready, next we need to configure data source and map rows and column
 
 {% highlight c# %}
 
-CellMapping CellMapping = new CellMapping();
-CellMapping.Column = new PropertyMapping() { PropertyName = "ProductName", DisplayName = "Product Name" };
-CellMapping.Row = new PropertyMapping() { PropertyName = "Year", DisplayName = "Year" };
-CellMapping.Value = new PropertyMapping() { PropertyName = "Value" };
-Collection columnMapping = new Collection();
-columnMapping.Add(new HeaderMapping() { PropertyName = "Vegie-spread", DisplayName = "Vegie-spread" });
-columnMapping.Add(new HeaderMapping() { PropertyName = "Tofuaa", DisplayName = "Tofuaa" });
-columnMapping.Add(new HeaderMapping() { PropertyName = "Alice Mutton", DisplayName = "Alice Mutton" });
-columnMapping.Add(new HeaderMapping() { PropertyName = "Konbu", DisplayName = "Konbu" });
-columnMapping.Add(new HeaderMapping() { PropertyName = "Fløtemysost", DisplayName = "Fløtemysost" });
-columnMapping.Add(new HeaderMapping() { PropertyName = "Perth Pasties", DisplayName = "Perth Pasties" });
-CellMapping.ColumnMapping = columnMapping;
-HeaderMapping headerMapping = new HeaderMapping() { PropertyName = "Year", DisplayName = "Year", ColumnStyle = new ColumnStyle() { Width = 105, TextAlign = HeatMapTextAlign.Right } };
-CellMapping.HeaderMapping = headerMapping;
-
+TableMapping TableMapping = new TableMapping();
+TableMapping.HeaderMapping = new HeaderMapping() { PropertyName = "ProductName", DisplayName = "Product Name" };
+TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2010", DisplayName = "Y2010" });
+TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2011", DisplayName = "Y2011" });
+TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2012", DisplayName = "Y2012" });
+TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2013", DisplayName = "Y2013" });
+TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2014", DisplayName = "Y2014" });
+TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2015", DisplayName = "Y2015" });
+TableHeatmap.ItemsMapping = TableMapping;
+        
 {% endhighlight %}
 
-* Set items source and mapping
-
-{% highlight c# %}
-
-public partial class CellMapBinding : System.Web.UI.Page
-{
-    protected void Page_Load(object sender, EventArgs e)
-    {
-        if (!IsPostBack)
-        {
-        heatmap.ItemsSource = GetCellSource();
-        heatmap.ItemsMapping = CellMapping;
-        }
-    }
-
-    public Collection GetCellSource()
-    {
-        Collection collection = new Collection();
-        string[] name = { "Vegie-spread", "Tofuaa", "Alice Mutton", "Konbu", "Fløtemysost", "Perth Pasties" };
-        Random random = new Random();
-
-        foreach (string item in name)
-        {
-            for (int i = 0; i < 6; i++)
-            {
-                double value = random.Next(0, random.Next(0, 100));
-                collection.Add(new SampleCellData() { ProductName = item, Year = "Y" + (2011 + i), Value = value });
-            }
-        }
-        return collection;
-    }
-}
-
-
-[Serializable]
-public class SampleCellData
-{
-    private string productName;
-
-    [JsonProperty("ProductName")]
-    [DefaultValue("")]
-    public string ProductName
-    {
-        get { return productName; }
-        set { productName = value; }
-    }
-
-    private string year;
-    [JsonProperty("Year")]
-    [DefaultValue("")]
-    public string Year
-    {
-        get { return year; }
-        set { year = value; }
-    }
-
-    private Double valuex;
-    [JsonProperty("Value")]
-    [DefaultValue("")]
-    public Double Value
-    {
-        get { return valuex; }
-        set { valuex = value; }
-    }
-
-
-}
-
-{% endhighlight %}
-
+ 
 ![](Getting-Started_images/Getting-Started_img1.png)
  
-## Color Mapping
+##Color Mapping
   
 Next we can configure color range for these values using color mapping
  
 * Configure items mapping based on items source.
  
-{% highlight aspx-cs %}
-       
-<ej:HeatMap runat="server" ID="heatmap" IsResponsive="true" Width="830">
+{% highlight aspx-cs %}  
+        
+<ej:HeatMap runat="server" ID="TableHeatmap" Width="950">
     <ColorMappingCollection>
         <ej:HeatMapColorMapping Color="#8ec8f8" Value="0">
             <label text="0"></label>
@@ -191,32 +175,44 @@ Next we can configure color range for these values using color mapping
         </ej:HeatMapColorMapping>
     </ColorMappingCollection>
 </ej:HeatMap>
-
-{% endhighlight %}  
- 
-* This will show the grid data with color based on the range given.
-
-![](Getting-Started_images/Getting-Started_img2.png)
- 
-# Legend
-
-A legend control is used to represent range value in a gradient, create a legend with the same color mapping as shown below.
-  
-{% highlight HTML %}
-
-<ej:HeatMapLegend runat="server" ID="heatmapLegend" Height="50px" Width="75%" legendmode="Gradient" orientation="Horizontal" IsResponsive="true"> 
-</ej:HeatMapLegend>
             
 {% endhighlight %} 
  
 
-* Final code files looks like this.
+* This will show the grid data with color based on the range given.
+ 
+![](Getting-Started_images/Getting-Started_img2.png)
+ 
+ 
+## Legend
+ 
+A legend control is used to represent range value in a gradient, create a legend with the same color mapping as shown below.
+  
+{% highlight aspx-cs %}
+   
+@*Initializes heat map control*@
+<div>
+        <ej:HeatMapLegend runat="server" ClientIDMode="static" ID="TableHeatmapLegend" Height="50px" Width="75%" legendmode="Gradient" orientation="Horizontal" IsResponsive="true">
+            <ColorMappingCollection>
+                <ej:HeatMapColorMapping Color="#8ec8f8" Value="0">
+                    <label text="0"></label>
+                </ej:HeatMapColorMapping>
+                <ej:HeatMapColorMapping Color="#0d47a1" Value="100">
+                    <label text="100"></label>
+                </ej:HeatMapColorMapping>
+            </ColorMappingCollection>
+        </ej:HeatMapLegend>
+</div>
+    
+{% endhighlight %}
+
+Final script file looks like this.
 
 {% tabs %}
 {% highlight aspx-cs %}
 
-<div style="width: 870px; margin: 0 auto; text-align: center;">
-    <ej:HeatMap runat="server" ID="heatmap" IsResponsive="true" Width="830">
+<div style="width: 950px; margin: 0 auto; text-align: center;">
+    <ej:HeatMap runat="server" ID="TableHeatmap" Width="950" IsResponsive="true">
         <ColorMappingCollection>
             <ej:HeatMapColorMapping Color="#8ec8f8" Value="0">
                 <label text="0"></label>
@@ -227,7 +223,7 @@ A legend control is used to represent range value in a gradient, create a legend
         </ColorMappingCollection>
     </ej:HeatMap>
     <div style="height: 15px; width: 100%;"></div>
-    <ej:HeatMapLegend runat="server" ID="heatmapLegend" Height="50px" Width="75%" ClientIDMode="static" legendmode="Gradient" orientation="Horizontal" IsResponsive="true">
+    <ej:HeatMapLegend runat="server" ClientIDMode="static" ID="TableHeatmapLegend" Height="50px" Width="75%" legendmode="Gradient" orientation="Horizontal" IsResponsive="true">
         <ColorMappingCollection>
             <ej:HeatMapColorMapping Color="#8ec8f8" Value="0">
                 <label text="0"></label>
@@ -238,64 +234,59 @@ A legend control is used to represent range value in a gradient, create a legend
         </ColorMappingCollection>
     </ej:HeatMapLegend>
 </div>
-
+        
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
-public partial class CellMapBinding : System.Web.UI.Page
+public class TableMapBinding : System.Web.UI.Page
 {
 
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack)
         {
-            CreateHeatmap();
+            TableHeatmap.LegendCollection.Add("TableHeatmapLegend");
+            TableMapping TableMapping = new TableMapping();
+            TableMapping.HeaderMapping = new HeaderMapping() { PropertyName = "ProductName", DisplayName = "Product Name", ColumnStyle = new ColumnStyle() { Width = 140, TextAlign = HeatMapTextAlign.Right } };
+            TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2010", DisplayName = "Y2010" });
+            TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2011", DisplayName = "Y2011" });
+            TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2012", DisplayName = "Y2012" });
+            TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2013", DisplayName = "Y2013" });
+            TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2014", DisplayName = "Y2014" });
+            TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2015", DisplayName = "Y2015" });
+            TableHeatmap.ItemsMapping = TableMapping;
+            TableHeatmap.ItemsSource = GetTableSource();
 
         }
     }
-    public void CreateHeatmap()
-    {
-        heatmap.LegendCollection.Add("heatmapLegend");
-        CellMapping CellMapping = new CellMapping();
-        CellMapping.Column = new PropertyMapping() { PropertyName = "ProductName", DisplayName = "Product Name" };
-        CellMapping.Row = new PropertyMapping() { PropertyName = "Year", DisplayName = "Year" };
-        CellMapping.Value = new PropertyMapping() { PropertyName = "Value" };
-        Collection columnMapping = new Collection();
-        columnMapping.Add(new HeaderMapping() { PropertyName = "Vegie-spread", DisplayName = "Vegie-spread" });
-        columnMapping.Add(new HeaderMapping() { PropertyName = "Tofuaa", DisplayName = "Tofuaa" });
-        columnMapping.Add(new HeaderMapping() { PropertyName = "Alice Mutton", DisplayName = "Alice Mutton" });
-        columnMapping.Add(new HeaderMapping() { PropertyName = "Konbu", DisplayName = "Konbu" });
-        columnMapping.Add(new HeaderMapping() { PropertyName = "Fløtemysost", DisplayName = "Fløtemysost" });
-        columnMapping.Add(new HeaderMapping() { PropertyName = "Perth Pasties", DisplayName = "Perth Pasties" });
-        CellMapping.ColumnMapping = columnMapping;
-        HeaderMapping headerMapping = new HeaderMapping() { PropertyName = "Year", DisplayName = "Year", ColumnStyle = new ColumnStyle() { Width = 105, TextAlign = HeatMapTextAlign.Right } };
-        CellMapping.HeaderMapping = headerMapping;
-        heatmap.ItemsSource = GetCellSource();
-        heatmap.ItemsMapping = CellMapping;
-    }
-    public Collection GetCellSource()
+
+    public Collection GetTableSource()
     {
         Collection collection = new Collection();
-        string[] name = { "Vegie-spread", "Tofuaa", "Alice Mutton", "Konbu", "Fløtemysost", "Perth Pasties" };
         Random random = new Random();
-
-        foreach (string item in name)
+        string[] rows = { "Vegie-spread", "Tofuaa", "Alice Mutton", "Konbu", "Fløtemysost", "Perth Pasties", "Boston Crab Meat", "Raclette Courdavault" };
+        for (int i = 0; i < 8; i++)
         {
-            for (int i = 0; i < 6; i++)
+            collection.Add(new SampleTableData()
             {
-                double value = random.Next(0, random.Next(0, 100));
-                collection.Add(new SampleCellData() { ProductName = item, Year = "Y" + (2011 + i), Value = value });
-            }
+                ProductName = rows[i],
+                Y2010 = random.Next(0, 100),
+                Y2011 = random.Next(0, 100),
+                Y2012 = random.Next(0, 100),
+                Y2013 = random.Next(0, 100),
+                Y2014 = random.Next(0, 100),
+                Y2015 = random.Next(0, 100)
+            });
         }
         return collection;
     }
 }
+
 [Serializable]
-public class SampleCellData
+public class SampleTableData
 {
     private string productName;
-
     [JsonProperty("ProductName")]
     [DefaultValue("")]
     public string ProductName
@@ -304,26 +295,62 @@ public class SampleCellData
         set { productName = value; }
     }
 
-    private string year;
-    [JsonProperty("Year")]
+    private double y2010;
+    [JsonProperty("Y2010")]
     [DefaultValue("")]
-    public string Year
+    public double Y2010
     {
-        get { return year; }
-        set { year = value; }
+        get { return y2010; }
+        set { y2010 = value; }
     }
 
-    private Double valuex;
-    [JsonProperty("Value")]
+    private double y2011;
+    [JsonProperty("Y2011")]
     [DefaultValue("")]
-    public Double Value
+    public double Y2011
     {
-        get { return valuex; }
-        set { valuex = value; }
+        get { return y2011; }
+        set { y2011 = value; }
+    }
+
+    private double y2012;
+    [JsonProperty("Y2012")]
+    [DefaultValue("")]
+    public double Y2012
+    {
+        get { return y2012; }
+        set { y2012 = value; }
+    }
+
+    private double y2013;
+    [JsonProperty("Y2013")]
+    [DefaultValue("")]
+    public double Y2013
+    {
+        get { return y2013; }
+        set { y2013 = value; }
+    }
+
+    private double y2014;
+    [JsonProperty("Y2014")]
+    [DefaultValue("")]
+    public double Y2014
+    {
+        get { return y2014; }
+        set { y2014 = value; }
+    }
+
+    private double y2015;
+    [JsonProperty("Y2015")]
+    [DefaultValue("")]
+    public double Y2015
+    {
+        get { return y2015; }
+        set { y2015 = value; }
     }
 }
 
 {% endhighlight %}
 {% endtabs %}
- 
+
 ![](Getting-Started_images/Getting-Started_img3.png)
