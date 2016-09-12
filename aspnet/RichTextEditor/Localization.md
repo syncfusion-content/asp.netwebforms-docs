@@ -5,7 +5,7 @@ description: Initialize the RichTextEditor control with specified Localization
 platform: aspnet 
 control: RTE
 documentation: ug
-
+keywords: RichTextEditor, Localization
 ---
 # Localization
 

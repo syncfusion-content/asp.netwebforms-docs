@@ -5,6 +5,8 @@ description: server side events
 platform: aspnet
 control: RichTextEditor
 documentation: ug
+keywords: RichTextEditor, Server side events
+
 ---
 
 # Server side events
@@ -34,7 +36,7 @@ In an ASPX page, define the RTE control and add server side event
 
 {% highlight html %}
 
-    <ej:RTE ID="RTESample" Width="650" Height="440" runat="server" OnToolbarItemClick="RTESample_ToolbarItemClick"></ej:RTE>
+<ej:RTE ID="RTESample" Width="650" Height="440" runat="server" OnToolbarItemClick="RTESample_ToolbarItemClick"></ej:RTE>
 
 {% endhighlight %}
 
@@ -45,9 +47,7 @@ In the code behind define the action to be performed on clicking the toolbar ite
 protected void RTESample_ToolbarItemClick(object sender, Syncfusion.JavaScript.Web.RTEEventArgs e)
 
 {    
-
     // e.CommandName – returns the currently clicked ToolBar item operation command
-
 }
 
 {% endhighlight %}

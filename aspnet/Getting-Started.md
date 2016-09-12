@@ -297,11 +297,13 @@ In your application’s web.config file, add the below assembly information with
 	  <add assembly="Syncfusion.EJ.Web, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
 	</assemblies>
   </compilation>
+  <pages>
   <controls>
       <add namespace="Syncfusion.JavaScript.Web" assembly="Syncfusion.EJ.Web, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/>
       <add namespace="Syncfusion.JavaScript.Web" assembly="Syncfusion.EJ, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/>
       <add namespace="Syncfusion.JavaScript.Models" assembly="Syncfusion.EJ, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/>
   </controls>
+ </pages>
 </system.web>
 {% endhighlight %}
 
