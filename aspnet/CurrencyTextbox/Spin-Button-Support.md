@@ -17,17 +17,19 @@ Add the following code to your ASPX page to render the CurrencyTextbox control w
 
 {% highlight html %}
 
-<ej:CurrencyTextBox ID="currency"   Value="3" ShowSpinButton="true" runat="server"></ej:CurrencyTextBox>
+<ej:CurrencyTextBox ID="currency"   Value="3" ShowSpinButton="false" runat="server"></ej:CurrencyTextBox>
 
 
 
 {% endhighlight %}
 
-The output when ShowSpinButton is set to true and false.
+The output when ShowSpinButton is set to false and true.
+
+![](Spin-Button-Support_images/Spin-Button-Support_img2.png) 
 
 ![](Spin-Button-Support_images/Spin-Button-Support_img1.png)
 
-![](Spin-Button-Support_images/Spin-Button-Support_img2.png) 
+
 
 
 
