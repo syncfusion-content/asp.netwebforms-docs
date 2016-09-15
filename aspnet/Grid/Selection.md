@@ -104,6 +104,46 @@ The following output is displayed as a result of the above code example
 
 ![](Selection_images/Selection_img1.png)
 
+## Row Selection By Checkbox Column
+
+Row selection by Checkbox can be enabled using column `Type` as `checkbox`. It enables grid to select rows using checkbox column. It also provides the option to select/deselect all the rows in Grid using a checkbox in the corresponding column header. 
+
+Without `Field` property of Checkox column, it acts as a template column and if sorting, editing, etc., are need to be handled by checkbox column, then it is necessary to specify `Field` property.
+
+The following code example describes the above behavior.
+
+{% tabs %} 
+{% highlight html %}  
+
+        <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" AllowSelection="true">
+              <Columns>                
+                  <ej:Column Field="OrderID"/>
+                  <ej:Column Field="EmployeeID"/>
+                   <ej:Column Field="ShipCity"/>                
+                  <ej:Column Field="ShipCountry"/>
+                  <ej:Column Field="Freight" />
+             </Columns> 
+        </ej:Grid>  
+{% endhighlight  %}
+{% highlight c# %} 
+
+      namespace WebSampleBrowser.Grid
+       {
+        public partial class Selection : System.Web.UI.Page
+        {
+          protected void Page_Load(object sender, EventArgs e)
+          {
+              this.OrdersGrid.DataSource = new NorthwindDataContext().OrdersViews.ToList();
+              this.OrdersGrid.DataBind();
+          }
+        }
+      }
+{% endhighlight  %}
+{% endtabs %}
+
+The following output is displayed as a result of the above code example
+
+![](Selection_images/Selection_img12.png)
 
 ## Cell Selection
 
@@ -116,12 +156,12 @@ The following code example describes the above behavior.
 
         <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" AllowSelection="true" Selectiontype="Multiple">
              <SelectionSettings SelectionMode="cell"/> 
-              <Columns>                
-                 <ej:Column Field="OrderID"/>
-                 <ej:Column Field="EmployeeID"/>
-                 <ej:Column Field="ShipCity"/>                
-                 <ej:Column Field="ShipCountry"/>
-                 <ej:Column Field="Freight" />
+              <Columns>
+                 <ej:Column Type="Checkbox" Width="50"/>                
+                 <ej:Column Field="OrderID" IsPrimaryKey="true" TextAlign="Right" Width="80"/>
+                 <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75"/>
+                 <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75"/>
+                 <ej:Column Field="Freight" HeaderText="Freight" Format="{0:C}" TextAlign="Right" Width="75"/>
               </Columns>
         </ej:Grid>
 {% endhighlight  %}
