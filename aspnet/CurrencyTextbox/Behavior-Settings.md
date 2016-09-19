@@ -112,7 +112,7 @@ Add the following code to your ASPX page to render the CurrencyTextbox control.
 
 
 
-<ej:CurrencyTextBox ID="currency"  Value="3" Enabled="true" runat="server"> </ej:CurrencyTextBox>
+<ej:CurrencyTextBox ID="currency"  Value="3" Enabled="false" runat="server"> </ej:CurrencyTextBox>
 
 
 
@@ -120,11 +120,12 @@ Add the following code to your ASPX page to render the CurrencyTextbox control.
 
 
 
-The output for CurrencyTextbox when Enabled is true and Enabled is false.
+The output for CurrencyTextbox when Enabled is false and Enabled is true.
+
+![](Behavior-Settings_images/Behavior-Settings_img7.png)
 
 ![](Behavior-Settings_images/Behavior-Settings_img6.png)
 
-![](Behavior-Settings_images/Behavior-Settings_img7.png)
 
 
 

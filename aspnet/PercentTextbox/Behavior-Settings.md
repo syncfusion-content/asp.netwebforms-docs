@@ -92,11 +92,17 @@ Add the following code example in your ASPX page to render PercentageTextbox con
 
 {% highlight html %}
 
-<ej:PercentageTextBox ID="percentage"  Value="2" Enabled="true" runat="server"> </ej:PercentageTextBox>
+<ej:PercentageTextBox ID="percentage"  Value="2" Enabled="false" runat="server"> </ej:PercentageTextBox>
 
 {% endhighlight %}
 
-The output for PercentageTextbox when Enabled is “true” and Enabled is “false”.
+The output for PercentageTextbox when Enabled is “false” and Enabled is “true”.
+
+
+![](Behavior-Settings_images/Behavior-Settings_img4.png) 
+
+PercentageTextbox with enabled as false
+{:.caption}
 
 
 ![](Behavior-Settings_images/Behavior-Settings_img5.png)   
@@ -104,10 +110,7 @@ The output for PercentageTextbox when Enabled is “true” and Enabled is “fa
 PercentageTextbox with enabled as true
 {:.caption}
 
-![](Behavior-Settings_images/Behavior-Settings_img4.png) 
 
-PercentageTextbox with enabled as false
-{:.caption}
 
 ## Adjusting Textbox Size
 
