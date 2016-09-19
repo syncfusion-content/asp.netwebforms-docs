@@ -40,7 +40,13 @@ Add the following styles to render the WaitingPopup control
         width: 600px;
 
     }
-
+	
+	.e-waitpopup-pane .e-text {
+	
+		color: white;
+		
+	}
+	
 </style>
 
 {% endhighlight %}
@@ -141,7 +147,9 @@ N> Images for this sample are available at â€˜installed location/Content/imagesâ
         height: 100%;
 
         text-align: left;
-
+		
+		color:white;
+		
     }
 
 
@@ -194,6 +202,7 @@ Run the above code for the following output.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
 
+N> Images for this sample are available in (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Web\samples\web\content\images\waitingpopup<br/>
 
 
 ## CSS Class
@@ -239,6 +248,8 @@ Define the CSS class for customizing the WaitingPopup control.
         font-weight: bolder;
 
         opacity: 0.5;
+		
+		color: white;
 
     }
 
