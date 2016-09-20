@@ -1,63 +1,140 @@
 ---
 layout: post
-title: Web accessibility | Grid | ASP.NET Webforms | Syncfusion
-description: web accessibility
-platform: aspnet
+title: Web accessibility with Grid widget for Syncfusion Essential ASP.NET
+description: Web accessibilties standard used in Grid
+platform: ejweb
 control: Grid
 documentation: ug
 ---
 
 # Web accessibility
 
-Web accessibility is an easy way to create a website or application by world wide users, including disabled users. You can develop sites with the help of assistive technologies. Essential JavaScript supports the Web UI accessibility resources. They are:
+Web Accessibility is achieved in the Grid control through Keyboard Navigation and WAI-ARIA Standard.
 
-## WAI – ARIA supports in Essential JavaScript.Net Grid
+## Keyboard Navigation
 
-This helps enable better user interaction in Grid control and this uses the W3C’s Widget Design Patterns in the WAI specification and added customize attributes.
+Supported Keyboard Interactions keys with its description are tabulated as follows
 
-## Full Keyboard control supports in Essential JavaScript Grid
+<table>
+<tr>
+<th>
+Interaction Keys</th><th>
+Description</th></tr>
+<tr>
+<td>
+Alt + j</td><td>
+Focus the Grid</td></tr>
+<tr>
+<td>
+Insert</td><td>
+Insert record in Grid</td></tr>
+<tr>
+<td>
+Delete</td><td>
+Delete record in Grid</td></tr>
+<tr>
+<td>
+F2</td><td>
+Edit record in Grid</td></tr>
+<tr>
+<td>
+Enter </td><td>
+Save edited or added </td></tr>
+<tr>
+<td>
+Esc</td><td>
+Cancel add or edit state</td></tr>
+<tr>
+<td>
+PgDn</td><td>
+Go to next Page</td></tr>
+<tr>
+<td>
+PgUp</td><td>
+Go to previous Page</td></tr>
+<tr>
+<td>
+Ctrl +Alt +PgDn</td><td>
+Go to last page</td></tr>
+<tr>
+<td>
+Ctrl + Alt + PgUp</td><td>
+Go to first page </td></tr>
+<tr>
+<td>
+Alt + PgDown</td><td>
+Go to next Pager</td></tr>
+<tr>
+<td>
+Alt + PgUp</td><td>
+Go to previous Pager</td></tr>
+<tr>
+<td>
+Home</td><td>
+Go to first cell</td></tr>
+<tr>
+<td>
+End</td><td>
+Go to last cell</td></tr>
+<tr>
+<td>
+Ctrl + Home</td><td>
+Go to first row</td></tr>
+<tr>
+<td>
+Ctrl + End</td><td>
+Go to last row</td></tr>
+<tr>
+<td>
+Up arrow</td><td>
+Move to up cell selection</td></tr>
+<tr>
+<td>
+Down arrow</td><td>
+Move to down cell selection</td></tr>
+<tr>
+<td>
+Right arrow</td><td>
+Move to right cell selection</td></tr>
+<tr>
+<td>
+Left arrow</td><td>
+Move to left cell selection</td></tr>
+<tr>
+<td>
+Tab</td><td>
+Go to next cell</td></tr>
+<tr>
+<td>
+Shift + tab</td><td>
+Go to previous cell</td></tr>
+<tr>
+<td>
+Alt + DownArrow</td><td>
+Expand selected group</td></tr>
+<tr>
+<td>
+Ctrl + DownArrow</td><td>
+Expand All visible groups</td></tr>
+<tr>
+<td>
+Alt + UpArrow</td><td>
+Collapse selected group</td></tr>
+<tr>
+<td>
+Ctrl + UpArrow</td><td>
+Collapse All visible groups</td></tr>
+</table>
 
-This helps to support Grid control with keyboard interaction. The key descriptions are:
 
-{% highlight text %}
+## WAI - ARIA
 
-Alt + j            = focus
+This helps enable better user interaction in Grid and uses the W3C's Widget Design Patterns in the WAI specification and added customize attributes. Please find the list of ARIA attribute used in Grid.
 
-Ctrl + Home  = first row in Grid
-
-Ctrl + End      = last row in Grid
-
-PgDn              = next page to Grid
-
-PgUp              = previous page to Grid
-
-Home             = first cell in grid
-
-End                 = last cell in grid
-
-F2                    = Edit            //to enable editing [edit:{allowEditing:true}]
-
-Enter              = Save request
-
-Esc                  = Cancel request
-
-Tab                 = Move Cell right
-
-Shift                = Move Cell left
-
-Ctrl + PgDn    = Last page in grid
-
-Ctrl + Alt + PgUp     = First page in grid
-
-Alt + Down Arrow  = Expand selected group //to enable [grouping{allowGrouping:true}]
-
-Alt + Up Arrow       = Collapse selected group //to enable [grouping{allowGrouping:true}]
-
-Ctrl + Down Arrow = Expand All //to enable [grouping{allowGrouping:true}]
-
-Ctrl + UP Arrow      = Collapse All //to enable [grouping{allowGrouping:true}]
-
-{% endhighlight %}
+* grid (role)
+* row (role)
+* gridcell (role)
+* aria-selected (attribute)
 
 
 

@@ -1,206 +1,442 @@
 ---
 layout: post
-title: Context Menu | Grid | ASP.NET Webforms | Syncfusion
-description: context menu
-platform: aspnet
+title: Context Menu with Grid widget for Syncfusion Essential ASP.NET
+description: How to enable contextMenu and its functionalities
+platform: ejweb
 control: Grid
 documentation: ug
 ---
 
 # Context Menu
 
-Context Menu is one of the user interaction controls related with Grid. It is handy to use the Context Menu to trigger more actions. The default Context Menu items created for Grid are:
+Context menu is used to improve user action with Grid using popup menu. It can be shown by defining `EnableContextMenu` property of `ContextMenuSettings` as true. Context menu has option to add default items in `ContextMenuItems` property of `ContextMenuSettings` and customized items in `CustomContextMenuItems` property of `ContextMenuSettings`.
 
-1. Header
+## Default Context Menu items
 
-   a. Sort In Ascending Order
-   
-   b. Sort In Descending Order
-   
-   c. Grouping
-   
-   d. UnGrouping
-   
-2. Content
+Please find the below table for default context menu items and its actions.
 
-   a. Add Record
-   
-   b. Edit Record
-   
-   c. Delete Record       
-   
-3. Footer 
+ <table>
+        <tr>
+            <th>
+                Section
+            </th>
+            <th>
+                Context menu items
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+        <tr>
+            <td rowspan="4">
+                Header
+            </td>
+            <td>
+                Sort in Ascending Order
+            </td>
+            <td>
+                Sort column in Ascending order
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Sort in Descending Order
+            </td>
+            <td>
+                Sort column in Descending order
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Group
+            </td>
+            <td>
+                Group the current column
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ungroup
+            </td>
+            <td>
+                Ungroup the current column if already grouped
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="5">
+                Body
+            </td>
+            <td>
+                Add Record
+            </td>
+            <td>
+                Start Add new record
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Edit Record
+            </td>
+            <td>
+                Start Edit in current record
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Delete Record
+            </td>
+            <td>
+                Delete the current record
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Save
+            </td>
+            <td>
+                Save the record if Add/Edit record is started
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Cancel
+            </td>
+            <td>
+                Cancel Added/Edited state
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="4">
+                Pager
+            </td>
+            <td>
+                Next Page
+            </td>
+            <td>
+                Go to Next Page
+            </td>
+        </tr>
+        <tr>            
+            <td>
+                Last Page
+            </td>
+            <td>
+                Go to Last page
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Previous page
+            </td>
+            <td>
+                Go to previous page
+            </td>
+        </tr>
+        <tr>
+            <td>
+                First page
+            </td>
+            <td>
+                Go to first page
+            </td>
+        </tr>
+ </table>
+ {% tabs %}
+{% highlight html %}
+  <ej:Grid ID="Grid" runat="server" AllowPaging="True" AllowSorting="true" AllowGrouping="true">
+        <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"></EditSettings>
+          <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+           <ContextMenuSettings EnableContextMenu="true"></ContextMenuSettings>
+            <Columns>
+                <ej:Column Field="OrderID" IsPrimaryKey="true" HeaderText="Order ID" Width="90" TextAlign="Right"/>
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90"/>
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="80" EditType="Dropdown" TextAlign="Right"/>
+                <ej:Column Field="Freight" HeaderText="Freight" EditType="Numeric" Format="{0:C}" TextAlign="Right"  Width="80">
+                    <NumericEditOptions DecimalPlaces="2"></NumericEditOptions>
+                </ej:Column>    
+                <ej:Column Field="ShipName" HeaderText="Ship Name" Width="150"/>
+            </Columns>   
+        </ej:Grid>          
+         
+{% endhighlight  %}
 
-   a. Next Page     
-   
-   b. Last Page
-   
-   c. Previous Page
-   
-   d. First Page
+{% highlight c# %}
 
-## Context Menu action
+    namespace WebSampleBrowser.Grid
+        {
+            public partial class Default : Page
+              { 
+                 List<Orders> order = new List<Orders>();
+                 protected void Page_Load(object sender, EventArgs e)
+                 {
+                    BindDataSource();
+                 }
+                 private void BindDataSource()
+                 {   
+                    int orderId = 10643;
+                    int empId = 0;
+                    for (int i = 1; i < 10; i++)
+                    {
+                        order.Add(new Orders(orderId + 1, "ALFKI", empId + 1, 32.38, "Alfreds Futterkiste "));
+                        order.Add(new Orders(orderId + 2, "ANATR", empId + 2, 11.61, "Ana Trujillo Emparedados y helados"));
+                        order.Add(new Orders(orderId + 3, "ANTON", empId + 3, 45.34, "Antonio Moreno Taquería"));
+                        order.Add(new Orders(orderId + 4, "AROUT", empId + 4, 37.28, "Around the Horn"));
+                        order.Add(new Orders(orderId + 5, "BERGS", empId + 5, 67.00, "Berglunds snabbköp"));
+                        order.Add(new Orders(orderId + 6, "BLONP", empId + 6, 23.32, "Blondel père et fils"));
+                        orderId += 6;
+                        empId += 6;
+                    }
+                    this.Grid.DataSource = order;
+                    this.Grid.DataBind();
+                 }
+                 [Serializable]
+                 public class Orders
+                 {
+                    public Orders()
+                    {
 
+                    }   
+                    public Orders(long OrderId, string CustomerId, int EmployeeId ,int Freight,string ShipName)
+                    {
+                        this.OrderID = OrderId;
+                        this.CustomerID = CustomerId;
+                        this.EmployeeID = EmployeeId;
+                        this.Freight= Freight;
+                        this.ShipName = ShipName;
+                    }
+                    public long OrderID { get; set; }
+                    public string CustomerID { get; set; }
+                    public int EmployeeID { get; set; }
+                    public string Freight{ get; set; }
+                    public string ShipName{ get; set; }
+                 }
+              }
+        } 
+{% endhighlight  %}
+    
+{% endtabs %}    
+    
+![](Context-Menu_images/ContextMenu_img1.png)
+{:caption}
 
-To enable Context Menu in Grid use EnableContextMenu property in ContextMenuSettings at Grid initialize. The following code example illustrates you on how to set Context Menu.
+Contextmenu at header
+
+![](Context-Menu_images/ContextMenu_img2.png)
+{:caption}
+
+Contextmenu at body
+
+![](Context-Menu_images/ContextMenu_img3.png)
+{:caption}
+
+Contextmenu at pager
+
+N> `AllowGrouping`, `AllowSorting` should be enabled to perform default context menu actions in Grid header. `AllowEditing`, `AllowDeleting` and `AllowAdding` should be enabled to perform default actions in body.
+
+## Custom Context Menu
+
+Custom context menu is used to create your own menu item and its action. To add customized context menu items, you need to use  `CustomContextMenuItems` property of `ContextMenuSettings` and to bind required actions for this, use `ContextClick` event.
 
 {% tabs %}
 
 {% highlight html %}
 
-        <ej:Grid ID="Grid" runat="server" DataSourceID="ObjectData" AllowScrolling="True" AllowGrouping="True" AllowSorting="True" AllowPaging="True"  >
-
-            <Columns>
-
-                <ej:Column Field="OrderID" HeaderText="Order ID" TextAlign="Right"   />
-
-                <ej:Column Field="CustomerID" HeaderText="Customer ID" />
-
-                <ej:Column Field="EmployeeID" HeaderText="Employee ID " TextAlign="Right"   />
-
-                <ej:Column Field="ShipCity" HeaderText="Ship City" />
-
-            </Columns>
-
-            <ScrollSettings Height="300" Width="900" ></ScrollSettings>
-
-            <EditSettings RowPosition="Bottom” AllowAdding="True” AllowEditing="True” AllowDeleting="True” ></EditSettings>
-
-<ContextMenuSettings EnableContextMenu="true” ></ContextMenuSettings>
-
-        </ej:Grid>
-{% endhighlight %}
-{% highlight c#%}
-
-
-using System;
-
-using System.Collections.Generic;
-
-using System.Linq;
-
-using System.Web;
-
-using System.Web.UI;
-
-using System.Web.UI.WebControls;
-
-
-
-namespace WebSampleBrowser.Grid
-
-{
-
-    public partial class RowPosition: System.Web.UI.Page
-
-    {
-
-        List<Orders> order = new List<Orders>();
-
-        protected void Page_Load(object sender, EventArgs e)
-
-        {
-
-            BindDataSource();
-
-        }
-
-
-
-        private void BindDataSource()
-
-        {
-
-            int code = 10000;
-
-            for (int i = 1; i < 10; i++)
-
-            {
-
-                order.Add(new Orders(code + 1, i + 0, "Berlin", 2.3 * i));
-
-                order.Add(new Orders(code + 2, i + 2, "Madrid", 3.3 * i));
-
-                order.Add(new Orders(code + 3, i + 1, "Cholchester", 4.3 * i));
-
-                order.Add(new Orders(code + 4, i + 3, "Marseille", 5.3 * i));
-
-                order.Add(new Orders(code + 5, i + 4, "London", 6.3 * i));
-
-                code += 5;
-
+    <asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
+        <div>
+            <ej:Grid ID="Grid" runat="server" AllowPaging="True" AllowSorting="true" AllowGrouping="true">
+                <ClientSideEvents ContextClick="contextClick" />
+                <ContextMenuSettings EnableContextMenu="true" DisableDefaultItems="true">
+                    <CustomContextMenuItem>
+                        <ej:CustomContexMenuItems Text="Clear Selection" />
+                    </CustomContextMenuItem>
+                </ContextMenuSettings>
+                <Columns>
+                    <ej:Column Field="OrderID" IsPrimaryKey="true" HeaderText="Order ID" Width="90" TextAlign="Right"/>
+                    <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90"/>
+                    <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="80" EditType="Dropdown" TextAlign="Right"/>
+                    <ej:Column Field="Freight" HeaderText="Freight" EditType="Numeric" Format="{0:C}" TextAlign="Right"  Width="80">
+                        <NumericEditOptions DecimalPlaces="2"></NumericEditOptions>
+                    </ej:Column>    
+                    <ej:Column Field="ShipName" HeaderText="Ship Name" Width="150"/>
+                </Columns>   
+            </ej:Grid> 
+        </div>  
+    </asp:Content>
+    
+    <asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">    
+        <script type="text/javascript">
+            function contextClick(args) {
+                if (args.text == "Clear Selection")
+                    this.clearSelection();
             }
-
-            this.OrdersGrid.DataSource = order;
-
-            this.OrdersGrid.DataBind();
-
-        }
-
-        [Serializable]
-
-        public class Orders
-
-        {
-
-            public Orders()
-
-            {
-
-
-
-            }
-
-            public Orders(long OrderId, int EmployeeId, string CustomerId, double Freight)
-
-            {
-
-                this.OrderID = OrderId;
-
-                this.CustomerID = CustomerId;
-
-                this.EmployeeID = EmployeeId;
-
-                this.Freight = Freight;
-
-            }
-
-            public long OrderID { get; set; }
-
-            public int CustomerID { get; set; }
-
-            public string EmployeeID { get; set; }
-
-            public double Freight { get; set; }
-
-        }
-
-    }
-
-}
-
-
+        </script> 
+    </asp:Content>      
+         
 {% endhighlight  %}
 
-{% endtabs %}
-The following output is displayed as a result of the above code example.
+{% highlight c# %}
 
-### Content
+    namespace WebSampleBrowser.Grid
+        {
+            public partial class Default : Page
+              { 
+                 List<Orders> order = new List<Orders>();
+                 protected void Page_Load(object sender, EventArgs e)
+                 {
+                    BindDataSource();
+                 }
+                 private void BindDataSource()
+                 {   
+                    int orderId = 10643;
+                    int empId = 0;
+                    for (int i = 1; i < 10; i++)
+                    {
+                        order.Add(new Orders(orderId + 1, "ALFKI", empId + 1, 32.38,  "Germany"));
+                        order.Add(new Orders(orderId + 2, "ANATR", empId + 2, 11.61,  "Mexico"));
+                        order.Add(new Orders(orderId + 3, "ANTON", empId + 3, 45.34,  "Mexico"));
+                        order.Add(new Orders(orderId + 4, "AROUT", empId + 4, 37.28,  "UK"));
+                        order.Add(new Orders(orderId + 5, "BERGS", empId + 5, 67.00,  "Sweden"));
+                        order.Add(new Orders(orderId + 6, "BLONP", empId + 6, 23.32,  "France"));
+                        orderId += 6;
+                        empId += 6;
+                    }
+                    this.Grid.DataSource = order;
+                    this.Grid.DataBind();
+                 }
+                 [Serializable]
+                 public class Orders
+                 {
+                    public Orders()
+                    {
 
-![C:/Users/ApoorvahR/Desktop/1.png](Context-Menu_images/Context-Menu_img1.png)
+                    }   
+                    public Orders(long OrderId, string CustomerId, int EmployeeId ,int Freight,string ShipName)
+                    {
+                        this.OrderID = OrderId;
+                        this.CustomerID = CustomerId;
+                        this.EmployeeID = EmployeeId;
+                        this.Freight= Freight;
+                        this.ShipName = ShipName;
+                    }
+                    public long OrderID { get; set; }
+                    public string CustomerID { get; set; }
+                    public int EmployeeID { get; set; }
+                    public string Freight{ get; set; }
+                    public string ShipName{ get; set; }
+                 }
+              }
+        } 
+{% endhighlight  %}
+    
+{% endtabs %}    
 
+![](Context-Menu_images/ContextMenu_img4.png)
 
+## Sub Context Menu
 
-### Header
+Sub context menu is used to add customized sub menu to the custom context menu item. To add a sub context menu, you need to use `SubContextMenu` property of `ContextMenuSettings` and to bind required actions for this, use `ContextClick` event.
 
-![C:/Users/ApoorvahR/Desktop/2.png](Context-Menu_images/Context-Menu_img2.png)
+{% tabs %}
 
+{% highlight html %}
 
+    <asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
+        <div>
+            <ej:Grid ID="Grid" runat="server" AllowPaging="True" AllowSorting="true" AllowGrouping="true">
+                <ClientSideEvents ContextClick="contextClick" />
+                <ContextMenuSettings EnableContextMenu="true" DisableDefaultItems="true">
+                    <CustomContextMenuItem>
+                        <ej:CustomContexMenuItems Text="Clear Selection" />
+                        <ej:CustomContexMenuItems Text="Hide Column" />
+                    </CustomContextMenuItem>
+                    <SubContextMenu>
+                        <ej:SubContextMenu  ContextMenuItem="Hide Column" SubMenu="Order ID","Customer ID","Employee ID"/>
+                    </SubContextMenu>
+                </ContextMenuSettings>    
+                <Columns>
+                    <ej:Column Field="OrderID" IsPrimaryKey="true" HeaderText="Order ID" Width="90" TextAlign="Right"/>
+                    <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90"/>
+                    <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="80" TextAlign="Right"/>
+                    <ej:Column Field="Freight" HeaderText="Freight" Format="{0:C}" TextAlign="Right"  Width="80">
+                        <NumericEditOptions DecimalPlaces="2"></NumericEditOptions>
+                    </ej:Column>    
+                    <ej:Column Field="ShipCountry" HeaderText="Ship Country" Width="90"/>
+                </Columns>   
+            </ej:Grid> 
+        </div>  
+    </asp:Content>
+    
+    <asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">    
+        <script type="text/javascript">
+            function contextClick(args) {
+                if (args.text == "Clear Selection")
+                    this.clearSelection();
+                else if (args.text != "Hide Column")
+                    this.hideColumns(args.text);
+            }
+        </script>   
+    </asp:Content>    
+         
+{% endhighlight  %}
 
+{% highlight c# %}
 
-### Footer
+    namespace WebSampleBrowser.Grid
+        {
+            public partial class Default : Page
+              { 
+                 List<Orders> order = new List<Orders>();
+                 protected void Page_Load(object sender, EventArgs e)
+                 {
+                    BindDataSource();
+                 }
+                 private void BindDataSource()
+                 {   
+                    int orderId = 10643;
+                    int empId = 0;
+                    for (int i = 1; i < 10; i++)
+                    {
+                        order.Add(new Orders(orderId + 1, "ALFKI", empId + 1, 32.38, "Alfreds Futterkiste "));
+                        order.Add(new Orders(orderId + 2, "ANATR", empId + 2, 11.61, "Ana Trujillo Emparedados y helados"));
+                        order.Add(new Orders(orderId + 3, "ANTON", empId + 3, 45.34, "Antonio Moreno Taquería"));
+                        order.Add(new Orders(orderId + 4, "AROUT", empId + 4, 37.28, "Around the Horn"));
+                        order.Add(new Orders(orderId + 5, "BERGS", empId + 5, 67.00, "Berglunds snabbköp"));
+                        order.Add(new Orders(orderId + 6, "BLONP", empId + 6, 23.32, "Blondel père et fils"));
+                        orderId += 6;
+                        empId += 6;
+                    }
+                    this.Grid.DataSource = order;
+                    this.Grid.DataBind();
+                 }
+                 [Serializable]
+                 public class Orders
+                 {
+                    public Orders()
+                    {
 
-![](Context-Menu_images/Context-Menu_img3.png)
+                    }   
+                    public Orders(long OrderId, string CustomerId, int EmployeeId ,int Freight,string ShipCountry)
+                    {
+                        this.OrderID = OrderId;
+                        this.CustomerID = CustomerId;
+                        this.EmployeeID = EmployeeId;
+                        this.Freight= Freight;
+                        this.ShipCountry = ShipCountry;
+                    }
+                    public long OrderID { get; set; }
+                    public string CustomerID { get; set; }
+                    public int EmployeeID { get; set; }
+                    public string Freight{ get; set; }
+                    public string ShipCountry{ get; set; }
+                 }
+              }
+        } 
+{% endhighlight  %}
+    
+{% endtabs %} 
+
+![](Context-Menu_images/ContextMenu_img5.png)
+    
 
 
 
