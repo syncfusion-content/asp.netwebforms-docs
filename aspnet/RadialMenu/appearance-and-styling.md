@@ -76,6 +76,7 @@ In the HTML page, define the li items for RadialMenu component.
 
         </ej:RadialMenu>
 
+{% endhighlight %}
 
 Customize **Radial Menu** control with CssClass in script as follows.
 
