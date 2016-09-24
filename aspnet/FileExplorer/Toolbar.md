@@ -27,7 +27,8 @@ From below you can see the available toolbar items and its categorization:
                     "navigation",
                     "addressBar",                
                     "copyPaste",                
-                    "searchBar" ,        
+                    "searchBar" ,
+                     "sortBy"               
                 };
     
                 //all tools grouped under following categories
@@ -49,6 +50,9 @@ From below you can see the available toolbar items and its categorization:
                 };
                 this.fileexplorer.Tools.SearchBar = new List<string>() {
                     "Searchbar"
+                };
+                this.fileexplorer.Tools.SortBy = new List<string>() {
+                    "SortBy"
                 };
             }
     
@@ -163,6 +167,11 @@ It displays the details of the current selected file or folder.<br/><br/><br/><b
 Search bar<br/><br/></td>
 <td>
 The Search bar is the textbox which is used to search the files from the current directory. It list the files based on the user search.<br/><br/>The search behavior of the “search bar” can be customize, for details check <br/>{{'[here](#search-bar)'| markdownify }}.<br/><br/></td>
+</tr>
+<tr>
+<td>
+Sort by <br/><br/></td><td>
+It's used to sorting the files from the current directory.The sorting can be done based on the columns available from grid,in both ascending and descending order.<br/><br/><br/><br/></td>
 </tr>
 </table>
 
