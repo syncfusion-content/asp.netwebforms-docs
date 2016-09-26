@@ -27,7 +27,7 @@ From below you can see the available toolbar items and its categorization:
                     "navigation",
                     "addressBar",                
                     "copyPaste",                
-                    "searchBar" ,
+                    "searchBar",
                      "sortBy"               
                 };
     
