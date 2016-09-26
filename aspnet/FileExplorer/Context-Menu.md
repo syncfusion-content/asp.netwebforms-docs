@@ -15,7 +15,8 @@ The context-menu has [list of items](#context-menu-items) which helps to perfo
 
 
 The below table shows the context menu items corresponding to the location where it is opened:
-
+ 
+ 
 <table>
 <tr>
 <td>
