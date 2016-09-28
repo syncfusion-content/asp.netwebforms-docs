@@ -735,11 +735,20 @@ The following code example describes the above behavior.
 
 ## Virtual Scrolling
 
-The virtual scrolling support allows you to load data that you require (load data based on page size) without buffering the entire huge database. To enable virtual scrolling by setting `AllowVirtualScrolling`  property of `ScrollSettings`  as `true`. It supports two mode of virtualization. They are,
+The virtual scrolling support allows you to load data that you require (load data based on page size) without buffering the entire huge database. To enable virtual scrolling by setting `AllowVirtualScrolling`  property of `ScrollSettings`  as `true`. 
+
+We also have an enhanced virtual scrolling feature with an improvised virtual scrolling performance. To enable improvised virtual scrolling feature by setting `EnableVirtualization` property of `ScrollSettings` as true and it doesn't requires `AllowVirtualScrolling` to enabled. It allows you to load the grid with data while scrolling. In order to enable this, you need to enable `EnableVirtualization` property of the `ScrollSettings`. Some of the relevant functionalities of this are,
+
+1.	White space will not be appeared in the Grid. 
+2.	Improved page rendering performance. 
+3.  It can render nearly 5 lakhs records.
+
+It supports two mode of virtualization. They are,
 
 1. Normal Mode
 2. Continuous Mode
-    
+
+N> Enhanced Virtual Scrolling supports only Normal mode
 N> The following features are not supported by virtual scrolling 
 N> 1. Grouping
 N> 2. Frozen Rows 
@@ -836,6 +845,93 @@ The following output is displayed as a result of the above code example.
 
 ![](Scrolling_images/Scrolling_img8.png)
 
+#### Enhanced Virtual Scrolling:
+
+In order to enable this, you need to set the `EnableVirtualization` property of the `ScrollSettings` as true. 
+
+The following code example describes the above behavior.
+
+{% tabs %} 
+{% highlight html %}
+
+      <ej:Grid ID="OrdersGrid" runat="server" AllowScrolling="true">
+        <ScrollSettings Width="550" Height="300" EnableVirtualization="true" /> 
+          <Columns>                
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID" />
+                <ej:Column Field="CustomerID" />
+                <ej:Column Field="ShipCity"/> 
+                <ej:Column Field="ShipCountry"/>               
+                <ej:Column Field="ShipPostalCode"/>
+                <ej:Column Field="Freight"/>
+            </Columns>
+        </ej:Grid>
+{% endhighlight  %}
+{% highlight c# %}
+		
+     namespace MVCSampleBrowser.Grid
+     {
+       public partial class Scrolling : System.Web.UI.Page
+        {
+         List<Orders> order = new List<Orders>();
+         protected void Page_Load(object sender, EventArgs e)
+         {
+            BindDataSource();
+         }
+         private void BindDataSource()
+          {
+            int orderId = 10000;
+            int empId = 0;
+            for (int i = 0; i < 9; i++)
+              {
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", "France","59 rue de l'Abbaye",51100, 32.38));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster","Brazil","Luisenstr. 48",44087, 11.61));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro","France","2, rue du Commerce",05454-876, 45.34));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon","Germany","Rua do Paço, 67",69004, 37.28));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", "Germany","Hauptstr. 31",8010, 67.00));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève","USA","Starenweg 5",1204, 23.32));
+                orderId += 6;
+                empId += 6;
+              }
+              this.OrdersGrid.DataSource = order;
+              this.OrdersGrid.DataBind();
+          }
+          [Serializable]
+          public class Orders
+          {
+             public Orders()
+             {
+
+             }
+             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             {
+                this.OrderID = OrderId;
+                this.EmployeeID = empId;
+                this.CustomerID = CustomerId;
+                this.ShipCity = shipcity;                
+                this.ShipCountry = shipCountry;
+                this.ShipAddress=shipaddress;
+                this.ShipPostalCode = shippostalcode;
+                this.Freight = freight;
+             }
+             public int OrderID { get; set; }
+             public int EmployeeID { get; set; }
+             public string CustomerID { get; set; }
+             public string ShipCity { get; set; }
+             public string ShipCountry { get; set; }
+             public string ShipAddress { get; set; }
+             public int ShipPostalCode { get; set; }
+             public double Freight { get; set; }
+          }
+        }
+      }
+{% endhighlight  %}
+{% endtabs %}
+
+The following output is displayed as a result of the above code example.
+
+![](Scrolling_images/Scrolling_img10.png)
+
 
 ### Continuous Mode:
 
@@ -924,3 +1020,5 @@ The following code example describes the above behavior.
 The following output is displayed as a result of the above code example.
 
  ![](Scrolling_images/Scrolling_img9.png)
+
+
