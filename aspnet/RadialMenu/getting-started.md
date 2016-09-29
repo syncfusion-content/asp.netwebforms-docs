@@ -63,7 +63,7 @@ N> Refer the [ASP.NET-Getting Started](http://help.syncfusion.com/aspnet/getting
 
 The following steps guide you to add a **Radial Menu** control.
 
-Create an ASP Project and add the necessary DLL and scripts with the help of the given [ASP Getting Started](http://help.syncfusion.com/aspnet/getting-started) documentation.
+Create an ASP Project and add the necessary assemblies and scripts with the help of the given [ASP Getting Started](http://help.syncfusion.com/aspnet/getting-started) documentation.
 
 Add the following code snippet in corresponding ASPX page to render the RadialMenu.
 
