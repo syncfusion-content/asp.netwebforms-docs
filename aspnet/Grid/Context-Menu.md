@@ -219,17 +219,17 @@ Please find the below table for default context menu items and its actions.
 ![](Context-Menu_images/ContextMenu_img1.png)
 {:caption}
 
-Contextmenu at header
+Context menu at header
 
 ![](Context-Menu_images/ContextMenu_img2.png)
 {:caption}
 
-Contextmenu at body
+Context menu at body
 
 ![](Context-Menu_images/ContextMenu_img3.png)
 {:caption}
 
-Contextmenu at pager
+Context menu at pager
 
 N> `AllowGrouping`, `AllowSorting` should be enabled to perform default context menu actions in Grid header. `AllowEditing`, `AllowDeleting` and `AllowAdding` should be enabled to perform default actions in body.
 
