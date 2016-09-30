@@ -13,7 +13,7 @@ documentation: ug
 
 ## Key Features
 
-* **Nested Menu**: Supports to render the mutiple level of sub menu items.
+* **Nested Menu**: Supports to render the multiple level of sub menu items.
 * **Image Customization**: Enables to customize images for all levels of menu item.
 * **Item Customization**: Supports to customize Radial Menu items with badges and slider settings.
 * **Dimension**:  Allows to customize Radial Menu radius and position.  

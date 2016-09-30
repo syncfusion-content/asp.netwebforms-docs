@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Appearance and Styling
 
-You can customize RadialSlider control style and apperance by using available themes or cssClass property.
+You can customize RadialSlider control style and appearance by using available themes or cssClass property.
 
 ## Theme
 
