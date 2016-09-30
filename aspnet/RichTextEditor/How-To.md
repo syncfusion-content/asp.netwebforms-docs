@@ -48,7 +48,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 ## Add the Page Breaker to the RTE’s tools
 
-We don't have support for page break in RTE inbuilt. But this can be achieved in custom tool options in RTE. We have prepared a sample by using line break in RTE.
+We don't have support for page break built-in RTE. But this can be achieved in custom tool options in RTE. We have prepared a sample by using line break in RTE.
 
 Initialize the RTE with custom tool in the ToolsList.
 
