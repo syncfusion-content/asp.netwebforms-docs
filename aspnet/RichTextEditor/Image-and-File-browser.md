@@ -151,7 +151,7 @@ The General and Advanced tabs in the RTE Image browser can be removed by setting
     
  {% endhighlight %}
  
- Can remove the Add Newfolder button by using [removeToolbarItem](https://help.syncfusion.com/js/api/ejrte#methods:removetoolbaritem) property of Image Browser in the RTE create event. 
+ Can remove the Add New folder button by using [removeToolbarItem](https://help.syncfusion.com/js/api/ejrte#methods:removetoolbaritem) property of Image Browser in the RTE create event. 
 
 {% highlight html %}
 
