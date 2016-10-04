@@ -104,7 +104,7 @@ The following output is displayed as a result of the above code example
 
 ![](Selection_images/Selection_img1.png)
 
-## Row Selection By Checkbox Column
+## Multiple Row Selection using Checkbox Column
 
 Row selection by Checkbox can be enabled using column `Type` as `checkbox`. It enables grid to select rows using checkbox column. It also provides the option to select/deselect all the rows in Grid using a checkbox in the corresponding column header. 
 
