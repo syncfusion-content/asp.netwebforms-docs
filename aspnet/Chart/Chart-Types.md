@@ -434,7 +434,7 @@ Spacing between column type series can be customized using the **ColumnSpacing**
 
 N> Space between columns will also affect the width of the column. For example, setting 20% spacing and 100% width will render columns with 80% of total width. This is also applicable for StackingColumn, StackingColumn100, Bar, StackingBar, StackingBar100, RangeColumn, HiLo, HiLoOpenClose, Candle and Waterfall charts.
 
-{% highlight cshtml %}
+{% highlight html %}
 
 	<ej:Chart ID="Chart1" runat="server">
 		<Series>
@@ -446,6 +446,30 @@ N> Space between columns will also affect the width of the column. For example, 
 {% endhighlight %}
 
 ![](Chart-Types_images/Chart-Types_img87.png)
+
+
+### Cylindrical Chart
+
+To render a cylindrical chart, set the **ColumnFacet** property as "Cylinder" in the chart series along with the series type. 
+
+The following chart types can be rendered as cylinder in both 2D and in 3D view.
+
+* Column Chart, Bar Chart, Stacked Column Chart, Stacked Bar Chart, 100% Stacked Column Chart, 100% Stacked Bar Chart.
+
+
+{% highlight html %}
+
+    <ej:Chart ID="Chart2" runat="server"> 
+      <%-- To change the shape of the series--%>
+      <Series>
+          <ej:Series Type="Column" ColumnFacet="Cylinder">
+          </ej:Series>
+      </Series>
+   </ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img89.png)
 
 
 ## RangeColumn Chart
