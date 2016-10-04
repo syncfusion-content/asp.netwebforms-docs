@@ -16,8 +16,8 @@ Essential ASP.NET Editors include Numeric, Percentage and Currency Text Box con
 * Min and Max Values—Specifies value range for the Text Box.
 * Spin Buttons—Enables you to increase or decrease the current value in the Text Box.
 * Step Value—Enables you to increment or decrement the current value by step value.
-* Localization— Essential JavaScript Text Boxes provide localization support. These controls use ej.globalize.js to globalize and localize the format, and parse numbers and dates according to the culture.
+* Globalization— Essential JavaScript PercentageTextBox provide globalization support. This control use ej.globalize.js to globalize the number format, and parse numbers according to the culture.
 * Keyboard Navigation—You can interact with Text Boxes by using keyboard.
 * RTL Support—Support for right to left alignment of Text Box input.
 * Decimal Values—You can configure Text Boxes to accept decimal values.
-* Themes—Essential JavaScript Text Boxes consist of 13 built-in themes (6 – flat 6 – gradient effects and 1 bootstrap theme), and also support custom skins for creating user-defined themes.
+* Themes—Essential JavaScript Text Boxes consist of 16 built-in themes, and also support custom skins for creating user-defined themes.

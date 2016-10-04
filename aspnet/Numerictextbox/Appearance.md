@@ -11,11 +11,10 @@ documentation: ug
 
 ## Theme
 
-The NumericTextbox controls’ style and appearance can be controlled based on the CSS classes. In order to apply styles to the NumericTextbox control, you need to refer two files namely, ej.widgets.core.min.css and ej.theme.min.css. When the ej.widgets.all.min.css file is referred, then it is not necessary to include the ej.widgets.core.min.css and ej.theme.min.css files in your project, as ej.widgets.all.min.css is the combination of these two. 
+The NumericTextbox controls’ style and appearance can be controlled based on the CSS classes. In order to apply styles to the NumericTextbox control, you need to refer two files namely, ej.widgets.core.min.css and ej.theme.min.css. When the ej.web.all.min.css file is referred, then it is not necessary to include the ej.widgets.core.min.css and ej.theme.min.css files in your project, as ej.web.all.min.css is the combination of these two. 
 
-By default, there are 13 themes support available for NumericTextbox control namely
+By default, there are 16 themes support available for NumericTextbox control namely
 
-* default-theme
 * bootstrap
 * flat-azure-dark
 * fat-lime
@@ -28,7 +27,10 @@ By default, there are 13 themes support available for NumericTextbox control nam
 * gradient-lime-dark
 * gradient-saffron
 * gradient-saffron-dark
-
+* high-contrast-01
+* high-contrast-02
+* material
+* office-365
 
 
 ## CSS Class
@@ -111,7 +113,7 @@ The following screenshot displays the output of the NumericTextbox when the “S
 
 ## Spin Button Support
 
-The NumericTextbox provides the option whether to display the split button in the widget or remove it from the control by using the ShowSpinButton property. The default value of the ShowSpinButton property is true in the NumericTextbox.
+The NumericTextbox provides the option whether to display the spin button in the widget or remove it from the control by using the ShowSpinButton property. The default value of the ShowSpinButton property is true in the NumericTextbox.
 
 ### Configure Spin Button
 
