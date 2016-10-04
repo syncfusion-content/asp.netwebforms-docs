@@ -158,7 +158,11 @@ There are two ways you can zoom the chart,
 
 * When the **Zooming.Enable** option is set to true, you can zoom the chart by using the rubber band selection.
 
-* When the **Zooming.EnableMouseWheel** option is set to true, you can zoom the chart on mouse wheel scrolling. 
+* When the **Zooming.EnableMouseWheel** option is set to true, you can zoom the chart on mouse wheel scrolling.
+
+* When **Zooming.EnablePinching** option is set to *true*, you can zoom the chart through pinch gesture.
+
+N> Pinch zooming is supported only in browsers that support multi-touch gestures. Currently IE10, IE11, Chrome and Opera browsers support multi-touch in desktop devices. 
 
 {% highlight html %}
 
