@@ -156,12 +156,12 @@ The following code example describes the above behavior.
 
         <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" AllowSelection="true" Selectiontype="Multiple">
              <SelectionSettings SelectionMode="cell"/> 
-              <Columns>
-                 <ej:Column Type="Checkbox" Width="50"/>                
-                 <ej:Column Field="OrderID" IsPrimaryKey="true" TextAlign="Right" Width="80"/>
-                 <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75"/>
-                 <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75"/>
-                 <ej:Column Field="Freight" HeaderText="Freight" Format="{0:C}" TextAlign="Right" Width="75"/>
+             <Columns>                
+                 <ej:Column Field="OrderID"/>
+                 <ej:Column Field="EmployeeID"/>
+                 <ej:Column Field="ShipCity"/>                
+                 <ej:Column Field="ShipCountry"/>
+                <ej:Column Field="Freight" />
               </Columns>
         </ej:Grid>
 {% endhighlight  %}
