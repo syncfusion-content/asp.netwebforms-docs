@@ -156,12 +156,12 @@ The following code example describes the above behavior.
 
         <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" AllowSelection="true" Selectiontype="Multiple">
              <SelectionSettings SelectionMode="cell"/> 
-             <Columns>                
+              <Columns>                
                  <ej:Column Field="OrderID"/>
                  <ej:Column Field="EmployeeID"/>
                  <ej:Column Field="ShipCity"/>                
                  <ej:Column Field="ShipCountry"/>
-                <ej:Column Field="Freight" />
+                 <ej:Column Field="Freight" />
               </Columns>
         </ej:Grid>
 {% endhighlight  %}
