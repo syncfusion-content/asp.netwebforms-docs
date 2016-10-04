@@ -106,9 +106,9 @@ The following output is displayed as a result of the above code example
 
 ## Multiple Row Selection using Checkbox Column
 
-Row selection by Checkbox can be enabled using column `Type` as `checkbox`. It enables grid to select rows using checkbox column. It also provides the option to select/deselect all the rows in Grid using a checkbox in the corresponding column header. 
+Select multiple rows in grid by using Checkbox column and it can be enabled by set column `Type` as `checkbox`. It also provides the option to select/deselect all the rows in Grid using a checkbox in the corresponding column header.
 
-Without `Field` property of Checkox column, it acts as a template column and if sorting, editing, etc., are need to be handled by checkbox column, then it is necessary to specify `Field` property.
+If the `Field` property of Checkbox column is not defined, then it acts as a template column. So `Field` property is necessary to perform grid actions like sorting, editing, etc., for the corresponding Checkbox column.
 
 The following code example describes the above behavior.
 
