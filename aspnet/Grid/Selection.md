@@ -117,11 +117,11 @@ The following code example describes the above behavior.
 
         <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" AllowSelection="true">
                <Columns>                
-                  <ej:Column Field="OrderID"/>
-                  <ej:Column Field="EmployeeID"/>
-                   <ej:Column Field="ShipCity"/>                
-                  <ej:Column Field="ShipCountry"/>
-                   <ej:Column Field="Freight" />
+                  <ej:Column Type="checkbox" Width="50"/>
+                  <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+                  <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
+                  <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" />
+                  <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}"/>
              </Columns> 
         </ej:Grid>  
 {% endhighlight  %}
