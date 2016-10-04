@@ -104,6 +104,46 @@ The following output is displayed as a result of the above code example
 
 ![](Selection_images/Selection_img1.png)
 
+## Multiple Row Selection using Checkbox Column
+
+Select multiple rows in grid by using Checkbox column and it can be enabled by set column `Type` as `checkbox`. It also provides the option to select/deselect all the rows in Grid using a checkbox in the corresponding column header.
+
+If the `Field` property of Checkbox column is not defined, then it acts as a template column. So `Field` property is necessary to perform grid actions like sorting, editing, etc., for the corresponding Checkbox column.
+
+The following code example describes the above behavior.
+
+{% tabs %} 
+{% highlight html %}  
+
+        <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" AllowSelection="true">
+               <Columns>                
+                  <ej:Column Field="OrderID"/>
+                  <ej:Column Field="EmployeeID"/>
+                   <ej:Column Field="ShipCity"/>                
+                  <ej:Column Field="ShipCountry"/>
+                   <ej:Column Field="Freight" />
+             </Columns> 
+        </ej:Grid>  
+{% endhighlight  %}
+{% highlight c# %} 
+
+      namespace WebSampleBrowser.Grid
+       {
+        public partial class Selection : System.Web.UI.Page
+        {
+          protected void Page_Load(object sender, EventArgs e)
+          {
+              this.OrdersGrid.DataSource = new NorthwindDataContext().OrdersViews.ToList();
+              this.OrdersGrid.DataBind();
+          }
+        }
+      }
+{% endhighlight  %}
+{% endtabs %}
+
+The following output is displayed as a result of the above code example
+
+![](Selection_images/Selection_img12.png)
 
 ## Cell Selection
 
