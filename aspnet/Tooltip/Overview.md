@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Overview
+title: Overview | Tooltip | ASP.NET | Syncfusion
 description: overview
 platform: aspnet
 control: Tooltip Control
 documentation: ug
-keywords : ejTooltip, Tooltip, js Tooltip, Tooltip widget
+keywords : aspTooltip, ASP Tooltip, asp Tooltip,ASP Tooltip widget
 ---
 
 # Overview

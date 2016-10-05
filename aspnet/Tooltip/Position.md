@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Position attribute in Tooltip widget for Syncfusion Essential JS
+title: Position | Tooltip | ASP.NET | Syncfusion
 description: Positionining support to Tooltip widget for Syncfusion Essential JS
 platform: aspnet
 control: Tooltip
 documentation: ug
-keywords : ejTooltip, Tooltip, js Tooltip, Tooltip widget, Tooltip position, Tooltip collision
+keywords : aspTooltip, ASP Tooltip, asp Tooltip,ASP Tooltip widget,ASP Tooltip position,ASP Tooltip collision
 ---
 
 # Position
@@ -18,7 +18,7 @@ Lets position the Tooltips (stems) left center corner at the right center of the
  
     <div class="img" id="sample">
         <a target="_blank" href="image/taj.png">
-            <img src="http://js.syncfusion.com/demos/web/images/tooltip/template-05.png" alt="Delphi">
+            <img src="http://asp.syncfusion.com/demos/web/content/images/tooltip/template-05.png" alt="Delphi">
         </a>
         <div class="desc">Delphi Succinctly</div>
     </div>
@@ -70,11 +70,11 @@ Let's append our Tooltip to a custom 'frame' container:
  
     <div class="frame">
         <div class="control">
-            TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+            TypeScript lets you write <a id="tooltip1"><u> JavaScript</u> </a>the way you really want to.
         </div>
     </div>
     
-    <ej:Tooltip For="test" runat="server" ClientIDMode="Static" Containment=".frame"  Content="JavaScript is the programming language of HTML and the Web."></ej:Tooltip>
+    <ej:Tooltip For="tooltip1" runat="server" ClientIDMode="Static" Containment=".frame"  Content="JavaScript is the programming language of HTML and the Web."></ej:Tooltip>
     
 {% endhighlight %}
 
@@ -90,11 +90,11 @@ N> By default all Tooltips are appended to the document.body element.
  
     <div class="frame">
         <div class="control">
-            TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+            TypeScript lets you write <a id="tooltip2"><u> JavaScript</u> </a>the way you really want to.
         </div>
     </div>
 
-    <ej:Tooltip For="test" runat="server" ClientIDMode="Static" Containment=".frame"  Content="JavaScript is the programming language of HTML and the Web."></ej:Tooltip>
+    <ej:Tooltip For="tooltip2" runat="server" ClientIDMode="Static" Containment=".frame"  Content="JavaScript is the programming language of HTML and the Web."></ej:Tooltip>
     
 {% endhighlight %}
  
@@ -104,11 +104,11 @@ We can also position the Tooltip in relation to the mouse.
  
     <div class="frame">
         <div class="control">
-            TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+            TypeScript lets you write <a id="tooltip3"><u> JavaScript</u> </a>the way you really want to.
         </div>
     </div>
 
-    <ej:Tooltip For="test" runat="server" ClientIDMode="Static" Associate="Mousefollow"  Content="JavaScript is the programming language of HTML and the Web."></ej:Tooltip>
+    <ej:Tooltip For="tooltip3" runat="server" ClientIDMode="Static" Associate="Mousefollow"  Content="JavaScript is the programming language of HTML and the Web."></ej:Tooltip>
     
 {% endhighlight %}
 
@@ -118,11 +118,11 @@ Position the tooltip at the current mouse position, once enter to the target ele
  
     <div class="frame">
         <div class="control">
-            TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+            TypeScript lets you write <a id="tooltip4"><u> JavaScript</u> </a>the way you really want to.
         </div>
     </div>
 
-    <ej:Tooltip For="test" runat="server" ClientIDMode="Static" Associate="Mouseenter"  Content="JavaScript is the programming language of HTML and the Web."></ej:Tooltip>
+    <ej:Tooltip For="tooltip4" runat="server" ClientIDMode="Static" Associate="Mouseenter"  Content="JavaScript is the programming language of HTML and the Web."></ej:Tooltip>
     
 {% endhighlight %}
 
@@ -133,11 +133,11 @@ It also possible to place the tooltip relation to the window as follows
  
     <div class="frame">
         <div class="control">
-            TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+            TypeScript lets you write <a id="tooltip5"><u> JavaScript</u> </a>the way you really want to.
         </div>
     </div>
 
-    <ej:Tooltip For="test" runat="server" ClientIDMode="Static" Associate="Window"  Content="JavaScript is the programming language of HTML and the Web.">
+    <ej:Tooltip For="tooltip5" runat="server" ClientIDMode="Static" Associate="Window"  Content="JavaScript is the programming language of HTML and the Web.">
     <Position>
             <Target Horizontal="right" Vertical="bottom" />
         </Position>
@@ -151,11 +151,11 @@ And last but not least, absolute positioning via X,Y co-ordinates e.g. a Tooltip
  
     <div class="frame">
         <div class="control">
-            TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+            TypeScript lets you write <a id="tooltip6"><u> JavaScript</u> </a>the way you really want to.
         </div>
     </div>
 
-    <ej:Tooltip For="test" runat="server" ClientIDMode="Static" Associate="Axis"  Content="JavaScript is the programming language of HTML and the Web.">
+    <ej:Tooltip For="tooltip6" runat="server" ClientIDMode="Static" Associate="Axis"  Content="JavaScript is the programming language of HTML and the Web.">
     <Position>
             <Target Horizontal="10" Vertical="10" />
         </Position>
@@ -196,10 +196,10 @@ Does not apply any collision detection.<br/></td></tr>
  
     <div class="frame">
         <div class="control">
-            TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+            TypeScript lets you write <a id="tooltip7"><u> JavaScript</u> </a>the way you really want to.
         </div>
     </div>
 
-    <ej:Tooltip For="test" runat="server" ClientIDMode="Static" Collision="Fit"  Content="JavaScript is the programming language of HTML and the Web."></ej:Tooltip>
+    <ej:Tooltip For="ttooltip7est" runat="server" ClientIDMode="Static" Collision="Fit"  Content="JavaScript is the programming language of HTML and the Web."></ej:Tooltip>
     
 {% endhighlight %}
