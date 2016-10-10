@@ -22,30 +22,29 @@ Now add a “Web Form” to the Empty Web Application. For adding a “Web Form�
 Now add the following dependency libraries as references into your Web Application. In order to add them to your application, right-click on **References** in Solution Explorer and select Add Reference. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
 
 * Syncfusion.EJ
-* Syncfusion.EJ.Olap
+* Syncfusion.EJ.Pivot
 
 Register the referred assemblies in Web.config files available at the root of the application.
 
 {% highlight xml %}
 
-    <compilation debug="true" targetFramework="4.5">
-        <assemblies> 
-            ……
-            ……
-            <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-            <add assembly="Syncfusion.EJ.Olap, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        </assemblies>
-    </compilation>
+<compilation debug="true" targetFramework="4.5">
+    <assemblies> 
+        ……
+        ……
+        <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.EJ.Pivot, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    </assemblies>
+</compilation>
 {% endhighlight %}
 
 ### Scripts and CSS Initialization
 
 The scripts and style sheets that are mandatorily required to render PivotChart control in Web Application are mentioned in an appropriate order below:
 
-1.  ej.web.all.min.css
-2.	jquery-1.10.2.min.js
-3.	jquery.easing.1.3.min.js
-4.	ej.web.all.min.js 
+1. ej.web.all.min.css
+2. jQuery-3.0.0.min.js
+3. ej.web.all.min.js
 
 [Click here](http://help.syncfusion.com/js/cdn) here to know more about scripts and style sheets available online (CDN Link).
 
@@ -53,12 +52,11 @@ Scripts and style sheets are referred under the <head> tag in **Default.aspx** f
     
 {% highlight html %}
 
-    <head>
-        <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-        <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"> </script>
-        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
-        <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
-    </head>
+<head>
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js" type="text/javascript"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
+</head>
 {% endhighlight %}
 
 
@@ -68,29 +66,30 @@ Either drag and drop the **PivotChart** control from the toolbox (under Syncfusi
 
 {% highlight html %}
 
-    <%@ Register Assembly="Syncfusion.EJ.Olap" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
-    <%@ Register Assembly="Syncfusion.EJ.Olap" Namespace="Syncfusion.JavaScript.Models" TagPrefix="ej" %>
+<%@ Register Assembly="Syncfusion.EJ.Pivot" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
+<%@ Register Assembly="Syncfusion.EJ.Pivot" Namespace="Syncfusion.JavaScript.Models" TagPrefix="ej" %>
 
-    <html> 
-    <head>
-    .....
-    .....
-    <style>
-        #MyPivotChart1 {
-            width:100%;
-            height:460px;
-        }
-    </style>
-    </head>
-    <body>
-        <form runat="server">
-            <ej:PivotChart ID="MyPivotChart1" runat="server" ClientIDMode="Static">
-            <Size Width="100%" Height="460px"></Size>
-            </ej:PivotChart>
-        </form>
-    </body>
-    
-    </html>
+<html> 
+<head>
+.....
+.....
+<style>
+    #MyPivotChart1 {
+        width:100%;
+        height:460px;
+    }
+</style>
+</head>
+<body>
+    <form runat="server">
+        <ej:PivotChart ID="MyPivotChart1" runat="server" ClientIDMode="Static">
+        <Size Width="100%" Height="460px"></Size>
+        </ej:PivotChart>
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    </form>
+</body>
+
+</html>
     
  {% endhighlight %}   
 
@@ -100,27 +99,28 @@ Let us now see how to populate the PivotChart control using a sample JSON data a
 
 {% highlight html %}
 
-    <html>
-        <body>
-            <form id="form1" runat="server">
-                <ej:PivotChart ID="MyPivotChart1" runat="server" ClientIDMode="Static">
-                    <ClientSideEvents Load="onLoad" />
-                    <Size Width="100%" Height="460px"></Size>
-                </ej:PivotChart>
-                <script type="text/javascript">
-                    function onLoad(args) {
-                        args.model.dataSource.data = [
-                            { Amount: 100, Country: "Canada", Product: "Bike" },
-                            { Amount: 200, Country: "Germany", Product: "Van" },
-                            { Amount: 300, Country: "Germany", Product: "Car" },
-                            { Amount: 150, Country: "United Kingdom", Product: "Bike" },
-                            { Amount: 200, Country: "Canada", Product: "Car" }
-                        ]
-                    }
-                </script>
-            </form>
-        </body>
-    </html>
+<html>
+    <body>
+        <form id="form1" runat="server">
+            <ej:PivotChart ID="MyPivotChart1" runat="server" ClientIDMode="Static">
+                <ClientSideEvents Load="onLoad" />
+                <Size Width="100%" Height="460px"></Size>
+            </ej:PivotChart>
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+            <script type="text/javascript">
+                function onLoad(args) {
+                    args.model.dataSource.data = [
+                        { Amount: 100, Country: "Canada", Product: "Bike" },
+                        { Amount: 200, Country: "Germany", Product: "Van" },
+                        { Amount: 300, Country: "Germany", Product: "Car" },
+                        { Amount: 150, Country: "United Kingdom", Product: "Bike" },
+                        { Amount: 200, Country: "Canada", Product: "Car" }
+                    ]
+                }
+            </script>
+        </form>
+    </body>
+</html>
     
 {% endhighlight %}
 
@@ -128,41 +128,42 @@ The JSON data is set to the **"data"** property present inside the **"dataSource
   
 {% highlight html %}
   
-    <!DOCTYPE html>
-    <html>
+<!DOCTYPE html>
+<html>
 
-        //....
-        <body>
-            <form id="form1" runat="server">
-                <ej:PivotChart ID="MyPivotChart1" runat="server" ClientIDMode="Static">
-                    <DataSource>
-                    <Rows>
-                        <ej:Field FieldName="Country" FieldCaption="Country"></ej:Field>
-                    </Rows>
-                    <Columns>
-                        <ej:Field FieldName="Product" FieldCaption="Product"></ej:Field>
-                    </Columns>
-                    <Values>
-                        <ej:Field FieldName="Amount" FieldCaption="Amount"></ej:Field>
-                    </Values>
-                    </DataSource>
-                    <ClientSideEvents Load="onLoad" />
-                    <Size Width="100%" Height="460px"></Size>
-                </ej:PivotChart>
-                <script type="text/javascript">
-                    function onLoad(args) {
-                        args.model.dataSource.data = [
-                            { Amount: 100, Country: "Canada", Product: "Bike" },
-                            { Amount: 200, Country: "Germany", Product: "Van" },
-                            { Amount: 300, Country: "Germany", Product: "Car" },
-                            { Amount: 150, Country: "United Kingdom", Product: "Bike" },
-                            { Amount: 200, Country: "Canada", Product: "Car" }
-                        ]
-                    }
-                </script>
-            </form>
-        </body>
-    </html>
+    //....
+    <body>
+        <form id="form1" runat="server">
+            <ej:PivotChart ID="MyPivotChart1" runat="server" ClientIDMode="Static">
+                <DataSource>
+                <Rows>
+                    <ej:Field FieldName="Country" FieldCaption="Country"></ej:Field>
+                </Rows>
+                <Columns>
+                    <ej:Field FieldName="Product" FieldCaption="Product"></ej:Field>
+                </Columns>
+                <Values>
+                    <ej:Field FieldName="Amount" FieldCaption="Amount"></ej:Field>
+                </Values>
+                </DataSource>
+                <ClientSideEvents Load="onLoad" />
+                <Size Width="100%" Height="460px"></Size>
+            </ej:PivotChart>
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+            <script type="text/javascript">
+                function onLoad(args) {
+                    args.model.dataSource.data = [
+                        { Amount: 100, Country: "Canada", Product: "Bike" },
+                        { Amount: 200, Country: "Germany", Product: "Van" },
+                        { Amount: 300, Country: "Germany", Product: "Car" },
+                        { Amount: 150, Country: "United Kingdom", Product: "Bike" },
+                        { Amount: 200, Country: "Canada", Product: "Car" }
+                    ]
+                }
+            </script>
+        </form>
+    </body>
+</html>
     
 {% endhighlight %}
 
@@ -178,21 +179,22 @@ N> By default, fields are arranged in ascending order.
  
 {% highlight html %}
 
-    <ej:PivotChart ID="MyPivotChart1" runat="server" ClientIDMode="Static">
-    <DataSource>
-        <Rows>
-            <ej:Field FieldName="Country" FieldCaption="Country" SortOrder="Descending"></ej:Field>
-        </Rows>
-        <Columns>
-            <ej:Field FieldName="Product" FieldCaption="Product"></ej:Field>
-        </Columns>
-        <Values>
-            <ej:Field FieldName="Amount" FieldCaption="Amount"></ej:Field>
-        </Values>
-    </DataSource>
-    <ClientSideEvents Load="onLoad" />
-    <Size Width="100%" Height="460px"></Size>
-    </ej:PivotChart>
+<ej:PivotChart ID="MyPivotChart1" runat="server" ClientIDMode="Static">
+<DataSource>
+    <Rows>
+        <ej:Field FieldName="Country" FieldCaption="Country" SortOrder="Descending"></ej:Field>
+    </Rows>
+    <Columns>
+        <ej:Field FieldName="Product" FieldCaption="Product"></ej:Field>
+    </Columns>
+    <Values>
+        <ej:Field FieldName="Amount" FieldCaption="Amount"></ej:Field>
+    </Values>
+</DataSource>
+<ClientSideEvents Load="onLoad" />
+<Size Width="100%" Height="460px"></Size>
+</ej:PivotChart>
+<asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
  
 {% endhighlight %}
 
@@ -209,25 +211,26 @@ Filtering option allows you to specify a set of values that either need to be di
 
 {% highlight html %}
 
-     <ej:PivotChart ID="MyPivotChart1" runat="server" ClientIDMode="Static">
-        <DataSource>
-            <Rows>
-                <ej:Field FieldName="Country" FieldCaption="Country">
-                    <FilterItems FilterType="Exclude"/>
-                </ej:Field>
-            </Rows>
-            <Columns>
-                <ej:Field FieldName="Product" FieldCaption="Product">
-                    <FilterItems FilterType="Include" />
-                </ej:Field>
-            </Columns>
-            <Values>
-                <ej:Field FieldName="Amount" FieldCaption="Amount"></ej:Field>
-            </Values>
-        </DataSource>
-        <ClientSideEvents Load="onLoad" />
-        <Size Width="100%" Height="460px"></Size>
-    </ej:PivotChart>
+<ej:PivotChart ID="MyPivotChart1" runat="server" ClientIDMode="Static">
+    <DataSource>
+        <Rows>
+            <ej:Field FieldName="Country" FieldCaption="Country">
+                <FilterItems FilterType="Exclude"/>
+            </ej:Field>
+        </Rows>
+        <Columns>
+            <ej:Field FieldName="Product" FieldCaption="Product">
+                <FilterItems FilterType="Include" />
+            </ej:Field>
+        </Columns>
+        <Values>
+            <ej:Field FieldName="Amount" FieldCaption="Amount"></ej:Field>
+        </Values>
+    </DataSource>
+    <ClientSideEvents Load="onLoad" />
+    <Size Width="100%" Height="460px"></Size>
+</ej:PivotChart>
+<asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
 
 {% endhighlight %}
 
@@ -235,11 +238,11 @@ The values for filtering are given in the Default.aspx.cs as shown in the below 
 
 {% highlight html %}
 
-    protected void Page_Load(object sender, EventArgs e)
-    {
-        this.MyPivotChart1.Model.DataSource.Rows[0].FilterItems.Values = new List<string>() { "United Kingdom" };
-        this.MyPivotChart1.Model.DataSource.Columns[0].FilterItems.Values = new List<string>() { "Bike", "Car" };
-    }
+protected void Page_Load(object sender, EventArgs e)
+{
+    this.MyPivotChart1.Model.DataSource.Rows[0].FilterItems.Values = new List<string>() { "United Kingdom" };
+    this.MyPivotChart1.Model.DataSource.Columns[0].FilterItems.Values = new List<string>() { "Bike", "Car" };
+}
 
 {% endhighlight %}
 
@@ -268,29 +271,29 @@ Now add the following dependency libraries as references into your Web Applicati
 * Syncfusion.DocIO.Base
 * Syncfusion.EJ
 * Syncfusion.EJ.Web
-* Syncfusion.EJ.Olap
+* Syncfusion.EJ.Pivot
 
 Register the referred assemblies in Web.config files available at the root of the application.
 
 {% highlight xml %}
 
-    <compilation debug="true" targetFramework="4.5.1">
-        <assemblies> 
-            ……
-            ……
-        <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.EJ.Olap, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.EJ.Web, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.Compression.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.Linq.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.Olap.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.PivotAnalysis.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.Pdf.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.XlsIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        
-        </assemblies>
-    </compilation>
+<compilation debug="true" targetFramework="4.5.1">
+    <assemblies> 
+        ……
+        ……
+    <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <add assembly="Syncfusion.EJ.Pivot, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <add assembly="Syncfusion.EJ.Web, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <add assembly="Syncfusion.Compression.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <add assembly="Syncfusion.Linq.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <add assembly="Syncfusion.Olap.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <add assembly="Syncfusion.PivotAnalysis.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <add assembly="Syncfusion.Pdf.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <add assembly="Syncfusion.XlsIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    
+    </assemblies>
+</compilation>
     
 {% endhighlight %}
 
@@ -299,10 +302,9 @@ Register the referred assemblies in Web.config files available at the root of th
 
 The scripts and style sheets that are mandatorily required to render PivotChart control in a Web Application are mentioned in an appropriate order below:
 
-1.  ej.web.all.min.css
-2.	jquery-1.10.2.min.js
-3.	jquery.easing.1.3.min.js
-4.	ej.web.all.min.js 
+1. ej.web.all.min.css
+2. jQuery-3.0.0.min.js
+3. ej.web.all.min.js
 
 [Click here](http://help.syncfusion.com/js/cdn) here to know more about scripts and style sheets available online (CDN Link).
 
@@ -310,12 +312,11 @@ Scripts and style sheets are referred under the <head> tag in **Default.aspx** f
     
 {% highlight html %}
 
-    <head>
-        <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-        <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"> </script>
-        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
-        <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
-    </head>
+<head>
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js" type="text/javascript"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
+</head>
 {% endhighlight %}
 
 ### Control Initialization
@@ -324,251 +325,252 @@ Either drag and drop the **PivotChart** control from the toolbox (under Syncfusi
 
 {% highlight html %}
 
-    <%@ Register Assembly="Syncfusion.EJ.Olap" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
-    <%@ Register Assembly="Syncfusion.EJ.Olap" Namespace="Syncfusion.JavaScript.Models" TagPrefix="ej" %>
+<%@ Register Assembly="Syncfusion.EJ.Pivot" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
+<%@ Register Assembly="Syncfusion.EJ.Pivot" Namespace="Syncfusion.JavaScript.Models" TagPrefix="ej" %>
 
-    <html> 
-    <head>
-    .....
-    .....
-    <style>
-        #MyPivotChart1 {
-            width:100%;
-            height:460px;
-        }
-    </style>
-    </head>
-    <body>
-        <form runat="server">
-            <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChart" ClientIDMode="Static">
-            <Size Width="100%" Height="460px"></Size>
-            </ej:PivotChart>
-        </form>
-    </body>
-    
-    </html>
+<html> 
+<head>
+.....
+.....
+<style>
+    #MyPivotChart1 {
+        width:100%;
+        height:460px;
+    }
+</style>
+</head>
+<body>
+    <form runat="server">
+        <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/Relational" ClientIDMode="Static">
+        <Size Width="100%" Height="460px"></Size>
+        </ej:PivotChart>
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    </form>
+</body>
+
+</html>
 
 {% endhighlight %}
 
 The **“Url”** property in PivotChart control points the service endpoint, where data are processed and fetched in the form of JSON. The services used in PivotChart control as endpoint are WCF and WebAPI.
 
-N> The above "Default.aspx" contains WebAPI URL, which is "/RelationalChart". If WCF service is used as endpoint, the URL would look like "/RelationalChartService.svc".
+N> The above "Default.aspx" contains WebAPI URL, which is "/Relational". If WCF service is used as endpoint, the URL would look like "/RelationalService.svc".
 
 
 ### WebAPI
 
 **Adding a WebAPI Controller**
 
-To add a WebAPI controller in an existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **WebAPI Controller Class** and name it as **“RelationalChartController.cs”**, click **Add**.
+To add a WebAPI controller in an existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **WebAPI Controller Class** and name it as **“RelationalController.cs”**, click **Add**.
 
-Now, WebAPI controller is added to the application successfully with the file **“RelationalChartController.cs”**.
+Now, WebAPI controller is added to the application successfully with the file **“RelationalController.cs”**.
 
-N> While adding WebAPI Controller Class, name it with the suffix ‘Controller’ which is mandatory. For example, in this demo the controller is named as “RelationalChartController”.
+N> While adding WebAPI Controller Class, name it with the suffix ‘Controller’ which is mandatory. For example, in this demo the controller is named as “RelationalController”.
 
-Next, remove all the existing methods such as "Get", "Post", "Put" and "Delete" present inside `RelationalChartController.cs` file.
+Next, remove all the existing methods such as "Get", "Post", "Put" and "Delete" present inside `RelationalController.cs` file.
 
 {% highlight c# %}
 
-    namespace PivotChartDemo
+namespace PivotChartDemo
+{
+    public class RelationalController: ApiController
     {
-        public class RelationalChartController: ApiController
-        {
-        
-        }
+    
     }
+}
 
 {% endhighlight %}
 
 **Adding the List of Namespaces**
 
-The following are the list of namespaces to be added on top of the main class inside `RelationalChartController.cs` file.
+The following are the list of namespaces to be added on top of the main class inside `RelationalController.cs` file.
 
 {% highlight c# %}
 
-    using Syncfusion.JavaScript;
-    using Syncfusion.PivotAnalysis.Base; 
+using Syncfusion.JavaScript;
+using Syncfusion.PivotAnalysis.Base; 
 
-    namespace PivotChartDemo
+namespace PivotChartDemo
+{
+    public class RelationalController : ApiController
     {
-        public class RelationalChartController : ApiController
-        {
 
-        }
     }
+}
 {% endhighlight %}
 
 **Datasource Initialization**
 
-A simple collection is provided as a datasource for the PivotChart in this demo section. This datasource is placed inside a separate class “ProductSales” in `RelationalChartController.cs` file. Refer to the following code example.
+A simple collection is provided as a datasource for the PivotChart in this demo section. This datasource is placed inside a separate class “ProductSales” in `RelationalController.cs` file. Refer to the following code example.
 
 {% highlight c# %}
 
-    namespace PivotChartDemo {
-        //....
-        //....
-        internal class ProductSales
+namespace PivotChartDemo {
+    //....
+    //....
+    internal class ProductSales
+    {
+        public string Product
         {
-            public string Product
-            {
-                get;
-                set;
-            }
-
-            public string Date
-            {
-                get;
-                set;
-            }
-
-            public string Country
-            {
-                get;
-                set;
-            }
-
-            public string State
-            {
-                get;
-                set;
-            }
-
-            public int Quantity
-            {
-                get;
-                set;
-            }
-
-            public double Amount
-            {
-                get;
-                set;
-            }
-
-            public static ProductSalesCollection GetSalesData()
-            {
-                /// Geography
-                string[] countries = new string[] { "Australia", "Canada", "France", "Germany", "United Kingdom", "United States" };
-                string[] ausStates = new string[] { "New South Wales", "Queensland", "South Australia", "Tasmania", "Victoria" };
-                string[] canadaStates = new string[] { "Alberta", "British Columbia", "Brunswick", "Manitoba", "Ontario", "Quebec" };
-                string[] franceStates = new string[] { "Charente-Maritime", "Essonne", "Garonne (Haute)", "Gers" };
-                string[] germanyStates = new string[] { "Bayern", "Brandenburg", "Hamburg", "Hessen", "Nordrhein-Westfalen", "Saarland" };
-                string[] ukStates = new string[] { "England" };
-                string[] ussStates = new string[] { "New York", "North Carolina", "Alabama", "California", "Colorado", "New Mexico", "South Carolina" };
-
-                /// Time
-                string[] dates = new string[] { "FY 2005", "FY 2006", "FY 2007", "FY 2008", "FY 2009" };
-
-                /// Products
-                string[] products = new string[] { "Bike", "Van", "Car" };
-                Random r = new Random(123345345);
-
-                int numberOfRecords = 2000;
-                ProductSalesCollection listOfProductSales = new ProductSalesCollection();
-                for (int i = 0; i < numberOfRecords; i++)
-                {
-                    ProductSales sales = new ProductSales();
-                    sales.Country = countries[r.Next(1, countries.GetLength(0))];
-                    sales.Quantity = r.Next(1, 12);
-                    /// 1 percent discount for 1 quantity
-                    double discount = (30000 * sales.Quantity) * (double.Parse(sales.Quantity.ToString()) / 100);
-                    sales.Amount = (30000 * sales.Quantity) - discount;
-                    sales.Date = dates[r.Next(r.Next(dates.GetLength(0) + 1))];
-                    sales.Product = products[r.Next(r.Next(products.GetLength(0) + 1))];
-                    switch (sales.Product)
-                    {
-                        case "Car":
-                            {
-                                sales.Date = "FY 2005";
-                                break;
-                            }
-                    }
-                    switch (sales.Country)
-                    {
-                        case "Australia":
-                            {
-                                sales.State = ausStates[r.Next(ausStates.GetLength(0))];
-                                break;
-                            }
-                        case "Canada":
-                            {
-                                sales.State = canadaStates[r.Next(canadaStates.GetLength(0))];
-                                break;
-                            }
-                        case "France":
-                            {
-                                sales.State = franceStates[r.Next(franceStates.GetLength(0))];
-                                break;
-                            }
-                        case "Germany":
-                            {
-                                sales.State = germanyStates[r.Next(germanyStates.GetLength(0))];
-                                break;
-                            }
-                        case "United Kingdom":
-                            {
-                                sales.State = ukStates[r.Next(ukStates.GetLength(0))];
-                                break;
-                            }
-                        case "United States":
-                            {
-                                sales.State = ussStates[r.Next(ussStates.GetLength(0))];
-                                break;
-                            }
-                    }
-                    listOfProductSales.Add(sales);
-                }
-                return listOfProductSales;
-            }
-
-            public override string ToString()
-            {
-                return string.Format("{0}-{1}-{2}", this.Country, this.State, this.Product);
-            }
-
-            public class ProductSalesCollection : List<ProductSales> { }
+            get;
+            set;
         }
+
+        public string Date
+        {
+            get;
+            set;
+        }
+
+        public string Country
+        {
+            get;
+            set;
+        }
+
+        public string State
+        {
+            get;
+            set;
+        }
+
+        public int Quantity
+        {
+            get;
+            set;
+        }
+
+        public double Amount
+        {
+            get;
+            set;
+        }
+
+        public static ProductSalesCollection GetSalesData()
+        {
+            /// Geography
+            string[] countries = new string[] { "Australia", "Canada", "France", "Germany", "United Kingdom", "United States" };
+            string[] ausStates = new string[] { "New South Wales", "Queensland", "South Australia", "Tasmania", "Victoria" };
+            string[] canadaStates = new string[] { "Alberta", "British Columbia", "Brunswick", "Manitoba", "Ontario", "Quebec" };
+            string[] franceStates = new string[] { "Charente-Maritime", "Essonne", "Garonne (Haute)", "Gers" };
+            string[] germanyStates = new string[] { "Bayern", "Brandenburg", "Hamburg", "Hessen", "Nordrhein-Westfalen", "Saarland" };
+            string[] ukStates = new string[] { "England" };
+            string[] ussStates = new string[] { "New York", "North Carolina", "Alabama", "California", "Colorado", "New Mexico", "South Carolina" };
+
+            /// Time
+            string[] dates = new string[] { "FY 2005", "FY 2006", "FY 2007", "FY 2008", "FY 2009" };
+
+            /// Products
+            string[] products = new string[] { "Bike", "Van", "Car" };
+            Random r = new Random(123345345);
+
+            int numberOfRecords = 2000;
+            ProductSalesCollection listOfProductSales = new ProductSalesCollection();
+            for (int i = 0; i < numberOfRecords; i++)
+            {
+                ProductSales sales = new ProductSales();
+                sales.Country = countries[r.Next(1, countries.GetLength(0))];
+                sales.Quantity = r.Next(1, 12);
+                /// 1 percent discount for 1 quantity
+                double discount = (30000 * sales.Quantity) * (double.Parse(sales.Quantity.ToString()) / 100);
+                sales.Amount = (30000 * sales.Quantity) - discount;
+                sales.Date = dates[r.Next(r.Next(dates.GetLength(0) + 1))];
+                sales.Product = products[r.Next(r.Next(products.GetLength(0) + 1))];
+                switch (sales.Product)
+                {
+                    case "Car":
+                        {
+                            sales.Date = "FY 2005";
+                            break;
+                        }
+                }
+                switch (sales.Country)
+                {
+                    case "Australia":
+                        {
+                            sales.State = ausStates[r.Next(ausStates.GetLength(0))];
+                            break;
+                        }
+                    case "Canada":
+                        {
+                            sales.State = canadaStates[r.Next(canadaStates.GetLength(0))];
+                            break;
+                        }
+                    case "France":
+                        {
+                            sales.State = franceStates[r.Next(franceStates.GetLength(0))];
+                            break;
+                        }
+                    case "Germany":
+                        {
+                            sales.State = germanyStates[r.Next(germanyStates.GetLength(0))];
+                            break;
+                        }
+                    case "United Kingdom":
+                        {
+                            sales.State = ukStates[r.Next(ukStates.GetLength(0))];
+                            break;
+                        }
+                    case "United States":
+                        {
+                            sales.State = ussStates[r.Next(ussStates.GetLength(0))];
+                            break;
+                        }
+                }
+                listOfProductSales.Add(sales);
+            }
+            return listOfProductSales;
+        }
+
+        public override string ToString()
+        {
+            return string.Format("{0}-{1}-{2}", this.Country, this.State, this.Product);
+        }
+
+        public class ProductSalesCollection : List<ProductSales> { }
     }
+}
 {% endhighlight %}
 
 
 **Service methods in WebAPI Controller**
 
-Define the service methods inside RelationalChartController class, found inside `RelationalChartController.cs` file, created while adding WebAPI Controller Class to the Application.
+Define the service methods inside RelationalController class, found inside `RelationalController.cs` file, created while adding WebAPI Controller Class to the Application.
 
 {% highlight c# %}
 
-    namespace PivotChartDemo {
-        public class RelationalChartController: ApiController {
-            PivotChart pivotChart = new PivotChart();
+namespace PivotChartDemo {
+    public class RelationalController: ApiController {
+        PivotChart pivotChart = new PivotChart();
 
-            [System.Web.Http.ActionName("InitializeChart")]
-            [System.Web.Http.HttpPost]
-            public Dictionary<string, object> InitializeChart(Dictionary<string, object> jsonResult)
-            {
-                this.BindData();
-                return pivotChart.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData());
-            }
-
-            [System.Web.Http.ActionName("DrillChart")]
-            [System.Web.Http.HttpPost]
-            public Dictionary<string, object> DrillChart(Dictionary<string, object> jsonResult)
-            {
-                this.BindData();
-                return pivotChart.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["drilledSeries"].ToString());
-            }
-
-            private void BindData()
-            {
-                this.pivotChart.PivotEngine.PivotRows.Add(new PivotItem { FieldMappingName = "Country", FieldHeader = "Country", TotalHeader = "Total" });
-                this.pivotChart.PivotEngine.PivotRows.Add(new PivotItem { FieldMappingName = "State", FieldHeader = "State", TotalHeader = "Total" });
-                this.pivotChart.PivotEngine.PivotColumns.Add(new PivotItem { FieldMappingName = "Product", FieldHeader = "Product", TotalHeader = "Total" });
-                this.pivotChart.PivotEngine.PivotCalculations.Add(new PivotComputationInfo { CalculationName = "Amount", Description = "Amount", FieldHeader = "Amount", FieldName = "Amount", Format = "C", SummaryType = Syncfusion.PivotAnalysis.Base.SummaryType.DoubleTotalSum });
-            }
+        [System.Web.Http.ActionName("InitializeChart")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> InitializeChart(Dictionary<string, object> jsonResult)
+        {
+            this.BindData();
+            return pivotChart.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData());
         }
-        .....
-        ..... // Datasource initialize
-        .....
+
+        [System.Web.Http.ActionName("DrillChart")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> DrillChart(Dictionary<string, object> jsonResult)
+        {
+            this.BindData();
+            return pivotChart.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["drilledSeries"].ToString());
+        }
+
+        private void BindData()
+        {
+            this.pivotChart.PivotEngine.PivotRows.Add(new PivotItem { FieldMappingName = "Country", FieldHeader = "Country", TotalHeader = "Total" });
+            this.pivotChart.PivotEngine.PivotRows.Add(new PivotItem { FieldMappingName = "State", FieldHeader = "State", TotalHeader = "Total" });
+            this.pivotChart.PivotEngine.PivotColumns.Add(new PivotItem { FieldMappingName = "Product", FieldHeader = "Product", TotalHeader = "Total" });
+            this.pivotChart.PivotEngine.PivotCalculations.Add(new PivotComputationInfo { CalculationName = "Amount", Description = "Amount", FieldHeader = "Amount", FieldName = "Amount", Format = "C", SummaryType = Syncfusion.PivotAnalysis.Base.SummaryType.DoubleTotalSum });
+        }
     }
+    .....
+    ..... // Datasource initialize
+    .....
+}
 
 {% endhighlight %}
 
@@ -580,17 +582,17 @@ Once you finish adding the **Global.asax** file, delete all the methods inside t
 
 {% highlight c# %}
 
-    public class Global : System.Web.HttpApplication
+public class Global : System.Web.HttpApplication
+{
+    protected void Application_Start(object sender, EventArgs e)
     {
-        protected void Application_Start(object sender, EventArgs e)
-        {
-            GlobalConfiguration.Configuration.Routes.MapHttpRoute(
-                name: "DefaultApi",
-                routeTemplate: "{controller}/{action}/{id}",
-                defaults: new { id = RouteParameter.Optional });
-            AppDomain.CurrentDomain.SetData("SQLServerCompactEditionUnderWebHosting", true);
-        }
+        GlobalConfiguration.Configuration.Routes.MapHttpRoute(
+            name: "DefaultApi",
+            routeTemplate: "{controller}/{action}/{id}",
+            defaults: new { id = RouteParameter.Optional });
+        AppDomain.CurrentDomain.SetData("SQLServerCompactEditionUnderWebHosting", true);
     }
+}
 {% endhighlight %}
 
 

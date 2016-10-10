@@ -65,24 +65,24 @@ DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.Act
 ## WCF
 **Adding a WCF Service**
 
-To add a WCF service in an existing Web application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it as `PivotTreeMapService.svc`, click **Add**.
+To add a WCF service in an existing Web application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it as `OlapService.svc`, click **Add**.
  
 Now WCF service is added into your application successfully which in-turn comprise of the following files. The utilization of these files will be explained in the immediate sections. 
 
-* PivotTreeMapService.svc
-* PivotTreeMapService.svc.cs
-* IPivotTreeMapService.cs
+* OlapService.svc
+* OlapService.svc.cs
+* IOlapService.cs
 
 **Configuring WCF Service Class**
 
-Remove the **“DoWork”** method present inside both `PivotTreeMapService.svc.cs` and `IPivotTreeMapService.cs files`. Next, add **“AspNetCompatibilityRequirements”** attribute on top of main class present inside PivotTreeMapService.svc.cs and set **“RequirementsMode”** value to **“Allowed”**.
+Remove the **“DoWork”** method present inside both `OlapService.svc.cs` and `IOlapService.cs files`. Next, add **“AspNetCompatibilityRequirements”** attribute on top of main class present inside OlapService.svc.cs and set **“RequirementsMode”** value to **“Allowed”**.
 
 {% highlight c# %}
 
 namespace PivotTreeMapDemo
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    public class PivotTreeMapService : IPivotTreeMapService
+    public class OlapService : IOlapService
     {
 
     }
@@ -109,11 +109,11 @@ N> If you have installed any version of SQL Server Analysis Service (SSAS) or Mi
 * Syncfusion.DocIO.Base
 * Syncfusion.EJ
 * Syncfusion.EJ.Web
-* Syncfusion.EJ.Olap
+* Syncfusion.EJ.Pivot
 
 **List of Namespaces**
 
-Following are the list of namespaces to be added on top of the main class inside `PivotTreeMapService.svc.cs` file.
+Following are the list of namespaces to be added on top of the main class inside `OlapService.svc.cs` file.
 
 {% highlight c# %}
 
@@ -133,7 +133,7 @@ using OLAPUTILS = Syncfusion.JavaScript.Olap;
 namespace PivotTreeMaptDemo
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    public class PivotTreeMapService : IPivotTreeMapService
+    public class OlapService : IOlapService
     {
 
     }
@@ -143,14 +143,14 @@ namespace PivotTreeMaptDemo
 
 **Datasource Initialization**
 
-Now the connection string to connect OLAP Cube and PivotTreeMap instances are created immediately inside the main class in `PivotTreeMapService.svc.cs` file.
+Now the connection string to connect OLAP Cube and PivotTreeMap instances are created immediately inside the main class in `OlapService.svc.cs` file.
 
 {% highlight c# %}
 
 namespace PivotTreeMaptDemo
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    public class PivotTreeMapService : IPivotTreeMapService
+    public class OlapService : IOlapService
     {
         PivotTreeMap htmlHelper = new PivotTreeMap();
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
@@ -163,14 +163,14 @@ namespace PivotTreeMaptDemo
 
 **Service methods in WCF Service**
 
-First, declare the service methods inside **IPivotTreeMapService** interface, found in `IPivotTreeMapService.cs` file, created while adding WCF Service to the Application.
+First, declare the service methods inside **IOlapService** interface, found in `IOlapService.cs` file, created while adding WCF Service to the Application.
 
  {% highlight c# %}
 
 namespace PivotTreeMaptDemo
 {
     [ServiceContract]
-    public interface IPivotTreeMapService
+    public interface IOlapService
     {
         [OperationContract]
         Dictionary< string, object > InitializeTreeMap(string action, string currentReport, string customObject);
@@ -181,14 +181,14 @@ namespace PivotTreeMaptDemo
 }
 
 {% endhighlight %}
-Then, elaborate the service methods inside the main class, found in `PivotTreeMapService.svc.cs` file. 
+Then, elaborate the service methods inside the main class, found in `OlapService.svc.cs` file. 
 
 {% highlight c# %}
 
 namespace PivotTreeMaptDemo 
 { 
-      [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)] 
-    public class PivotTreeMapService : IPivotTreeMapService
+    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)] 
+    public class OlapService : IOlapService
     {
         PivotTreeMap htmlHelper = new PivotTreeMap(); 
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
@@ -246,7 +246,7 @@ namespace PivotTreeMaptDemo
 
 The services could be exposed through the properties, binding, contract and address by using an endpoint.
 
-* Contract: This property indicates that the contract of the endpoint is exposing. Here you are referring to `IPivotTreeMapService` contract and hence it is `PivotTreeMapDemo.IPivotTreeMapService`.
+* Contract: This property indicates that the contract of the endpoint is exposing. Here you are referring to `IOlapService` contract and hence it is `PivotTreeMapDemo.IOlapService`.
 * Binding: In your application, you use `webHttpBinding` to post and receive the requests and responses between the client-end and the service.
 * BehaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
 
@@ -258,8 +258,8 @@ The endpointBehaviors are illustrated as follows.
     ...... 
     ...... 
     <services> 
-        <service name="PivotTreeMapDemo.PivotTreeMapService"> 
-            <endpoint address="" behaviorConfiguration="PivotTreeMapDemo.PivotTreeMapServiceAspNetAjaxBehavior" binding="webHttpBinding" contract="PivotTreeMapDemo.IPivotTreeMapService" /> 
+        <service name="PivotTreeMapDemo.OlapService"> 
+            <endpoint address="" behaviorConfiguration="PivotTreeMapDemo.OlapServiceAspNetAjaxBehavior" binding="webHttpBinding" contract="PivotTreeMapDemo.IOlapService" /> 
         </service> 
     </services> 
 </system.serviceModel>
@@ -271,9 +271,9 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
 {% highlight xaml %}
 
 <system.serviceModel> 
-   <behaviors> 
+<behaviors> 
         <endpointBehaviors> 
-            <behavior name="PivotTreeMapDemo.PivotTreeMapServiceAspNetAjaxBehavior"> 
+            <behavior name="PivotTreeMapDemo.OlapServiceAspNetAjaxBehavior"> 
                 <enableWebScript /> 
             </behavior> 
         </endpointBehaviors> 
@@ -285,7 +285,7 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
 
 {% endhighlight %}
 
-N> In this example, **“PivotTreeMapDemo”** indicates the name and root namespace of the Application created in Visual Studio IDE and **“PivotTreeMapService”** indicates the name of the WCF service created.
+N> In this example, **“PivotTreeMapDemo”** indicates the name and root namespace of the Application created in Visual Studio IDE and **“OlapService”** indicates the name of the WCF service created.
 
 The above code will generate a simple PivotTreeMap showing Customer Count over different customer geographic locations across a period of fiscal years.
 

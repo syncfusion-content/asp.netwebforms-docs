@@ -1,7 +1,7 @@
 ---
 layout: post
-title: OLAP Connectivity | PivotGrid | ASP.NET | Syncfusion
-description: olap connectivity 
+title: Relational Connectivity | PivotGrid | ASP.NET | Syncfusion
+description: relational connectivity 
 platform: aspnet
 control: PivotGrid
 documentation: ug
@@ -13,10 +13,9 @@ documentation: ug
 
 This section demonstrates binding of a collection to the PivotGrid control as datasource. For more information on this datasource refer the following links.
 
-If you are using WebAPI controller, refer the "Datasource Initialization" section under the following [link](http://help.syncfusion.com/aspnet/pivotgrid/relational-getting-started#creating-a-simple-application-with-pivotgrid-and-relational-datasource-server-mode). 
+If you are using WebAPI controller, refer the "Datasource Initialization" section under the following [link](http://help.syncfusion.com/aspnet/pivotgrid/relational-getting-started#creating-a-simple-application-with-pivotgrid-and-relational-datasource-server-mode).
 
-Or, if you are using WCF service, refer the "Datasource Initialization" section under the following [link](http://help.syncfusion.com/aspnet/pivotgrid/olap-connectivity).
-
+If you are using WCF Service, refer the "Datasource Initialization" section below.
 
 ## WCF
 **Adding a WCF Service**
@@ -56,11 +55,14 @@ To add them to your Web Application, right-click on **References** in Solution E
 * Syncfusion.Linq.Base
 * Syncfusion.Olap.Base
 * Syncfusion.PivotAnalysis.Base
+* System.Data.SqlServerCe (Version: 4.0.0.0)
 * Syncfusion.XlsIO.Base
 * Syncfusion.Pdf.Base
 * Syncfusion.DocIO.Base
 * Syncfusion.EJ
-* Syncfusion.EJ.Olap
+* Syncfusion.EJ.Export
+* Syncfusion.EJ.Pivot
+* Syncfusion.EJ.Web
 
 **List of Namespaces**
 
@@ -68,19 +70,19 @@ Following are the list of namespaces to be added on top of the main class inside
 
 {% highlight c# %}
 
+using Syncfusion.JavaScript;
+using Syncfusion.PivotAnalysis.Base;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
+using System.Data;
 using System.ServiceModel.Activation;
+using System.Data.SqlServerCe;
+using System.Linq;
 using System.Text;
-using System.Configuration;
+using System.Web;
+using System.Web.Http;
 using System.Web.Script.Serialization;
-using Syncfusion.JavaScript.Olap;
 using OLAPUTILS = Syncfusion.JavaScript.Olap;
-using Syncfusion.Olap.Manager;
-using Syncfusion.Olap.Reports;
 
 namespace PivotGridDemo
 {
@@ -105,8 +107,8 @@ namespace PivotGridDemo
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     public class RelationalService : IRelationalService
     {
-     ……
-     …… 
+    ……
+    …… 
     }
 
     internal class ProductSales
@@ -227,27 +229,28 @@ namespace PivotGridDemo
     {
         [OperationContract]
         Dictionary<string, object> InitializeGrid(string action);
-
         [OperationContract]
         Dictionary<string, object> FetchMembers(string action, string headerTag, string sortedHeaders, string currentReport);
-
         [OperationContract]
         Dictionary<string, object> Filtering(string action, string filterParams, string sortedHeaders, string currentReport);
-
         [OperationContract]
         Dictionary<string, object> NodeStateModified(string action, string headerTag, string dropAxis, string sortedHeaders, string filterParams, string currentReport);
-        
         [OperationContract]
         Dictionary<string, object> NodeDropped(string action, string dropAxis, string headerTag, string sortedHeaders, string filterParams, string currentReport);
-        
         [OperationContract]
         Dictionary<string, object> Sorting(string action, string sortedHeaders, string currentReport);
-        
         [OperationContract]
         void Export(System.IO.Stream stream);
-        
         [OperationContract]
         Dictionary<string, object> DeferUpdate(string action, string filterParams, string sortedHeaders, string currentReport);
+        [OperationContract]
+        Dictionary<string, object> CalculatedField(string action, string headerTag, string currentReport);
+        [OperationContract]
+        Dictionary<string, object> CellEditing(string action, string index, string valueHeaders, string summaryValues, string currentReport);
+        [OperationContract]
+        Dictionary<string, object> SaveReport(string reportName, string operationalMode, string olapReport, string clientReports);
+        [OperationContract]
+        Dictionary<string, object> LoadReportFromDB(string reportName, string operationalMode, string olapReport, string clientReports);
     }
 }
 
@@ -265,6 +268,9 @@ namespace PivotGridDemo
         PivotGrid htmlHelper = new PivotGrid();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         Dictionary<string, object> dict = new Dictionary<string, object>();
+        static int cultureIDInfoval = 1033;
+        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports
 
         public Dictionary<string, object> InitializeGrid(string action)
         {
@@ -272,7 +278,6 @@ namespace PivotGridDemo
             dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData());
             return dict;
         }
-
         public Dictionary<string, object> FetchMembers(string action, string headerTag, string sortedHeaders, string currentReport)
         {
             htmlHelper.PopulateData(currentReport);
@@ -300,15 +305,19 @@ namespace PivotGridDemo
             dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData(), dropAxis, headerTag, filterParams, sortedHeaders);
             return dict;
         }
-
         public Dictionary<string, object> Sorting(string action, string sortedHeaders, string currentReport)
         {
             htmlHelper.PopulateData(currentReport);
             dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData(), sortedHeaders);
             return dict;
         }
-
-         public void Export(System.IO.Stream stream)
+        public Dictionary<string, object> CalculatedField(string action, string headerTag, string currentReport)
+        {
+            htmlHelper.PopulateData(currentReport);
+            dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData(), null, headerTag);
+            return dict;
+        }
+        public void Export(System.IO.Stream stream)
         {
             System.IO.StreamReader sReader = new System.IO.StreamReader(stream);
             string args = System.Web.HttpContext.Current.Server.UrlDecode(sReader.ReadToEnd()).Remove(0, 5);
@@ -317,14 +326,76 @@ namespace PivotGridDemo
             string fileName = "Sample";
             htmlHelper.ExportPivotGrid(ProductSales.GetSalesData(), args, fileName, System.Web.HttpContext.Current.Response);
         }
-        
+
+        public Dictionary<string, object> SaveReport(string reportName, string operationalMode, string olapReport, string clientReports)
+        {
+            string mode = operationalMode;
+            SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
+            con.Open();
+            SqlCeCommand cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+            cmd1.Parameters.Add("@ReportName", reportName);
+            //cmd1.Parameters.Add("@Reports", OLAPUTILS.Utils.GetReportStream(clientReports).ToArray());
+            if (mode == "serverMode")
+                cmd1.Parameters.Add("@Reports", OLAPUTILS.Utils.GetReportStream(clientReports).ToArray());
+            else if (mode == "clientMode")
+                cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(clientReports).ToArray());
+            cmd1.ExecuteNonQuery();
+            con.Close();
+            return null;
+        }
+
+        public Dictionary<string, object> LoadReportFromDB(string reportName, string operationalMode, string olapReport, string clientReports)
+        {
+            byte[] reportString = new byte[2 * 1024];
+            PivotReport report = new PivotReport();
+            var reports = "";
+            string mode = operationalMode;
+            Dictionary<string, object> dictionary = new Dictionary<string, object>();
+            foreach (DataRow row in GetDataTable().Rows)
+            {
+                if ((row.ItemArray[0] as string).Equals(reportName))
+                {
+                    if (mode == "clientMode")
+                    {
+                        reportString = (row.ItemArray[1] as byte[]);
+                        dictionary.Add("report", Encoding.UTF8.GetString(reportString));
+                        break;
+                    }
+                    else if (mode == "serverMode")
+                    {
+                        reports = OLAPUTILS.Utils.CompressData(row.ItemArray[1] as byte[]);
+                        report = htmlHelper.DeserializedReports(reports);
+                        htmlHelper.PivotReport = report;
+                        dictionary = htmlHelper.GetJsonData("loadOperation", ProductSales.GetSalesData(), "Load Report", reportName);
+                        break;
+                    }
+                }
+            }
+            return dictionary;
+        }
+
+        private DataTable GetDataTable()
+        {
+            SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
+            con.Open();
+            DataSet dSet = new DataSet();
+            new SqlCeDataAdapter("Select * from ReportsTable", con).Fill(dSet);
+            con.Close();
+            return dSet.Tables[0];
+        }
+
         public Dictionary<string, object> DeferUpdate(string action, string filterParams, string sortedHeaders, string currentReport)
         {
             htmlHelper.PopulateData(currentReport);
             dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData(), null, null, null, sortedHeaders, filterParams);
             return dict;
         }
-        
+        public Dictionary<string, object> CellEditing(string action, string index, string valueHeaders, string summaryValues, string currentReport)
+        {
+            htmlHelper.PopulateData(currentReport);
+            dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData(), index, summaryValues, valueHeaders);
+            return dict;
+        }
         private PivotReport BindDefaultData()
         {
             PivotReport pivotSetting = new PivotReport();
@@ -335,7 +406,7 @@ namespace PivotGridDemo
         }
     }
     .....
-    ..... // Datasourse initialization
+    ..... // Initialize the datasourse
     .....
 }
 
@@ -357,10 +428,10 @@ The endpointBehaviors are illustrated as follows
     ……
     ……
     <services>
-      <service name="PivotGridDemo.RelationalService">
+    <service name="PivotGridDemo.RelationalService">
         <endpoint address="" behaviorConfiguration="PivotGridDemo.RelationalServiceAspNetAjaxBehavior"
         binding="webHttpBinding" contract="PivotGridDemo.IRelationalService" />
-      </service>
+    </service>
     </services>
 </system.serviceModel>
 
@@ -372,14 +443,14 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
 
 <system.serviceModel>
     <behaviors>
-      <endpointBehaviors>
+    <endpointBehaviors>
         <behavior name="PivotGridDemo.RelationalServiceAspNetAjaxBehavior">
-          <enableWebScript />
+        <enableWebScript />
         </behavior>
-      </endpointBehaviors>
+    </endpointBehaviors>
     </behaviors>
-……
-……
+    ……
+    ……
 </system.serviceModel>
 
 {% endhighlight %}
