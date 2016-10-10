@@ -12,7 +12,6 @@ Selection provides an interactive support to highlight the card that you select.
 
 You can see the mouse hovering effect on the corresponding cards using `AllowHover` property. By default selection and hovering is `true`.
  
-
 ## Types of Selection
 
 Two types of selections available in Kanban are,
@@ -20,6 +19,7 @@ Two types of selections available in Kanban are,
 2.	Multiple
 
 ### Single Selection
+
 To enable single selection by setting `SelectionType` property as single.
 
 ### Multiple Selections
@@ -48,7 +48,9 @@ To unselect selected cards, by press “Shift + mouse left” click on selected 
 The following code example describes the above behavior.
 
 {% tabs %}
+
 {% highlight html %}
+
   	<ej:Kanban ID="Kanban" runat="server" KeyField="Status" SelectionType="Multiple">
                 <Columns>
                     <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
@@ -57,7 +59,9 @@ The following code example describes the above behavior.
                 </Columns>
                 <Fields Content="Summary" PrimaryKey="Id" Tag="Tags" />
      </ej:Kanban>
+
 {% endhighlight  %}
+
 {% highlight c# %}
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
@@ -80,7 +84,9 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+
 {% endhighlight  %}
+
 {% endtabs %}  
 
 The following output is displayed as a result of the above code example.

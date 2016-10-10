@@ -136,20 +136,24 @@ Please find the below table for default context menu items and its actions.
  
  The following code example describes the above behavior.
  
- {% tabs %}
+{% tabs %}
+
 {% highlight html %}
-  <ej:Kanban ID="Kanban" runat="server" KeyField="Status">
-                <Columns>
-                    <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
-                    <ej:KanbanColumn HeaderText="In Progress" Key="InProgress" />
-                    <ej:KanbanColumn HeaderText="Done" Key="Close" />
-                </Columns>
-                <ContextMenuSettings Enable="true" />
-                <Fields Content="Summary" PrimaryKey="Id" Tag="Tags" SwimlaneKey="Assignee" />
-   </ej:Kanban>
+
+    <ej:Kanban ID="Kanban" runat="server" KeyField="Status">
+                    <Columns>
+                        <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
+                        <ej:KanbanColumn HeaderText="In Progress" Key="InProgress" />
+                        <ej:KanbanColumn HeaderText="Done" Key="Close" />
+                    </Columns>
+                    <ContextMenuSettings Enable="true" />
+                    <Fields Content="Summary" PrimaryKey="Id" Tag="Tags" SwimlaneKey="Assignee" />
+    </ej:Kanban>
+
 {% endhighlight  %}
 
 {% highlight c# %}
+
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -171,7 +175,8 @@ Please find the below table for default context menu items and its actions.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
-{% endhighlight  %}
+
+{% endhighlight %}
     
 {% endtabs %}    
 
@@ -190,6 +195,7 @@ The following code example describes the above behavior.
 {% tabs %}
 
 {% highlight html %}
+
       <ej:Kanban ID="Kanban" runat="server" KeyField="Status">
                 <Columns>
                     <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
@@ -204,9 +210,11 @@ The following code example describes the above behavior.
                 </ContextMenuSettings>
                 <Fields Content="Summary" PrimaryKey="Id" Tag="Tags" SwimlaneKey="Assignee" />
         </ej:Kanban>
+        
 {% endhighlight  %}
 
 {% highlight c# %}
+
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -228,6 +236,7 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+
 {% endhighlight  %}
     
 {% endtabs %}    
@@ -245,6 +254,7 @@ The following code example describes the above behavior.
 {% tabs %}
 
 {% highlight html %}
+
       <ej:Kanban ID="Kanban" runat="server" KeyField="Status">
                 <Columns>
                     <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
@@ -273,9 +283,11 @@ The following code example describes the above behavior.
                         this.clearSelection();
                 }
             </script>
+
 {% endhighlight  %}
 
 {% highlight c# %}
+
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -297,6 +309,7 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+
 {% endhighlight  %}
     
 {% endtabs %} 

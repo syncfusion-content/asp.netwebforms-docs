@@ -9,6 +9,7 @@ documentation: ug
 # Editing
 
 The Kanban control has support for dynamic insertion, updating and deletion of cards.
+
 Set `AllowEditing` and `AllowAdding` property as true to enable editing/inserting respectively. The primary key for the data source should be defined in `PrimaryKey`, for editing to work properly.
 You can start the edit action by double clicking the particular card. Similarly, you can add new card to Kanban either by double clicking the particular cell or on an external button which is bound to call `addCard` method of Kanban.
 Deletion of the card is possible by using `deleteCard` by passing primary key as attribute.
@@ -26,6 +27,7 @@ The following code example describes the above behavior.
 {% tabs %}
 
 {% highlight html %}
+
           <ej:Kanban ID="Kanban" runat="server" KeyField="Status">
                 <Columns>
                     <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
@@ -47,8 +49,11 @@ The following code example describes the above behavior.
                     </EditItems>
                 </EditSettings>
             </ej:Kanban>
+
 {% endhighlight  %}
+
 {% highlight c# %}
+
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -70,7 +75,9 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+
 {% endhighlight  %}
+
 {% endtabs %}  
 
 The following output is displayed as a result of the above code example.
@@ -88,6 +95,7 @@ The following code example describes the above behavior
 {% tabs %}
 
 {% highlight html %}
+
      <ej:Kanban ID="Kanban" runat="server" KeyField="Status">
                 <Columns>
                     <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
@@ -109,9 +117,11 @@ The following code example describes the above behavior
                     </EditItems>
                 </EditSettings>
             </ej:Kanban>
+
 {% endhighlight  %}
 
 {% highlight c# %}  
+
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -133,7 +143,9 @@ The following code example describes the above behavior
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+
 {% endhighlight  %}
+
 {% endtabs %}  
 
 The following output is displayed as a result of the above code example.
@@ -156,6 +168,7 @@ N> :
 The following code example describes the above behavior.
 
 {% highlight html %}
+
      <script type="text/template" id="template">
                 <table cellspacing="10">
                     <tr>
@@ -223,11 +236,13 @@ The following code example describes the above behavior.
                     </tr>
                 </table>
             </script>
+
 {% endhighlight  %}
 
 {% tabs %}
 
 {% highlight html %}
+
      <ej:Kanban ID="Kanban" runat="server" KeyField="Status">
                 <Columns>
                     <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
@@ -239,9 +254,11 @@ The following code example describes the above behavior.
                 </EditSettings>
                 <ClientSideEvents ActionComplete="complete" />
      </ej:Kanban>
+
 {% endhighlight  %}
 
 {% highlight c# %}
+
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -263,12 +280,15 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+
 {% endhighlight  %}
+
 {% endtabs %}  
 
 While using template, you can change the elements that are defined in the `template`, to appropriate Syncfusion JS controls based on the column type. This can be achieved by using `ActionComplete` event of Kanban. Please refer to following code snippets.
 
 {% highlight html %}
+
       <script type="text/javascript">
                 function complete(args) {
                     if (args.requestType == "refresh" || args.requestType == "save") {
@@ -288,6 +308,7 @@ While using template, you can change the elements that are defined in the `templ
                    }
                }
         </script>
+
 {% endhighlight  %}
 
 The following output is displayed as a result of the above code example.
@@ -356,6 +377,7 @@ The following code example describes the above behavior.
 {% tabs %}
 
 {% highlight html %}
+
      <ej:Kanban ID="Kanban" runat="server" KeyField="Status">
                 <Columns>
                     <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
@@ -378,9 +400,11 @@ The following code example describes the above behavior.
                     </EditItems>
                 </EditSettings>
             </ej:Kanban>
+
 {% endhighlight  %}
 
 {% highlight c# %}
+
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -402,7 +426,9 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+
 {% endhighlight  %}
+
 {% endtabs %}  
 
 The following output is displayed as a result of the above code example.
@@ -505,6 +531,7 @@ The following code example describes the above behavior.
 {% tabs %}
 
 {% highlight html %}
+
      <ej:Kanban ID="Kanban" runat="server" KeyField="Status">
                 <Columns>
                     <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
@@ -535,9 +562,11 @@ The following code example describes the above behavior.
                     </EditItems>
                 </EditSettings>
             </ej:Kanban>
+
 {% endhighlight  %}
 
 {% highlight c# %}
+
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -559,7 +588,9 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+
 {% endhighlight  %}
+
 {% endtabs %}  
 
 The following output is displayed as a result of the above code example.
@@ -579,6 +610,7 @@ You can use the `WebMethodAdaptor` of `DataManager` when binding `DataSource` fr
 The following code example describes the above behavior.
 
 {% highlight html %}
+
      <ej:Kanban ID="Kanban" runat="server" KeyField="Status">
                 <DataManager URL="KanbanFeatures.aspx/GetData" CrudURL="KanbanFeatures.aspx/Crud" Adaptor="WebMethodAdaptor" />
                 <Columns>
@@ -627,6 +659,7 @@ The following code example describes the above behavior.
                     display: inline-block;
                 }
             </style>
+
 {% endhighlight  %}
 
 Also when you use `WebMethodAdaptor`, you need to return the data as JSON and the JSON object must contain a properties result & count. The `result` holds the `dataSource` as its value and `count` holds the total cards count as its value.
@@ -634,6 +667,7 @@ Also when you use `WebMethodAdaptor`, you need to return the data as JSON and th
 The following code example describes the above behavior.
 
 {% highlight c# %}
+
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
         public static object GetData(Syncfusion.JavaScript.DataManager value)
@@ -645,6 +679,7 @@ The following code example describes the above behavior.
             Data = operation.Execute(Data, value);
             return new { result = Data, count = count };
         } 
+
 {% endhighlight  %}
 
 Please refer to the below screenshot.
@@ -686,6 +721,7 @@ Using `CrudURL` property, you can specify the controller action mapping URL to p
 The following code example describes the above behavior.
 
 {% highlight c# %}
+
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
         public static object Crud(List<Task> changed, List<Task> `added`, List<Task> deleted)
@@ -717,6 +753,7 @@ Using `CrudURL` property, you can specify the controller action mapping URL to p
 The following code example describes the above behavior.
 
 {% highlight c# %}
+
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
         public static object Crud(List<Task> `changed`, List<Task> added, List<Task> deleted)
@@ -739,6 +776,7 @@ The following code example describes the above behavior.
             var dataSource = db.Tasks.ToList();
             return dataSource;
         }
+
 {% endhighlight  %}
 
 The updated card details are bound to the `changed` parameter. Please refer the below image.
@@ -752,6 +790,7 @@ Using `CrudURL` property, you can specify the controller action mapping URL to p
 The following code example describes the above behavior.
 
 {% highlight c# %}
+
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
         public static object Crud(List<Task> changed, List<Task> added, List<Task> `deleted`)
@@ -770,6 +809,7 @@ The following code example describes the above behavior.
             var dataSource = db.Tasks.ToList();
             return dataSource;
         } 
+        
 {% endhighlight  %}
 
 The deleted card details are bound to the `deleted` parameter. Please refer the below image.

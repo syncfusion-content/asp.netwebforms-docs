@@ -17,7 +17,9 @@ To stack columns in stacked header, you need to define `KanbanStackedHeaderColum
 The following code example describes the above behavior.
 
 {% tabs %}
+
 {% highlight html %}
+
   	<ej:Kanban ID="Kanban" runat="server" KeyField="Status">
                 <Columns>
                     <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
@@ -35,8 +37,11 @@ The following code example describes the above behavior.
                 </StackedHeaderRows>
                 <Fields Content="Summary" PrimaryKey="Id" Tag="Tags" />
      </ej:Kanban>
+
 {% endhighlight  %}
+
 {% highlight c# %}
+
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -58,7 +63,9 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+
 {% endhighlight  %}
+
 {% endtabs %}  
 
 The following output is displayed as a result of the above code example.

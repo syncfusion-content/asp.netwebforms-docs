@@ -18,7 +18,9 @@ By default, the Kanban is adaptable to its parent container. It can adjust its w
 The following code example describes the above behavior.
 
 {% tabs %}
+
 {% highlight html %}
+
   	 <ej:Kanban ID="Kanban" runat="server" KeyField="Status" IsResponsive="true">
                 <Columns>
                     <ej:KanbanColumn HeaderText="Backlog" Key="Open" Width="10%" />
@@ -27,8 +29,11 @@ The following code example describes the above behavior.
                 </Columns>
                 <Fields Content="Summary" PrimaryKey="Id" Tag="Tags" />
       </ej:Kanban>
+
 {% endhighlight  %}
+
 {% highlight c# %}
+
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -50,7 +55,9 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+
 {% endhighlight  %}
+
 {% endtabs %}  
  
 N> : AllowScrolling should be false while defining width in percentage.
@@ -62,7 +69,9 @@ Min Width is used to maintain minimum width for the Kanban. If the Kanban width 
 The following code example describes the above behavior.
 
 {% tabs %}
+
 {% highlight html %}
+
   	 <ej:Kanban ID="Kanban" runat="server" KeyField="Status" IsResponsive="true" MinWidth="500">
                 <Columns>
                     <ej:KanbanColumn HeaderText="Backlog" Key="Open" Width="120" />
@@ -71,8 +80,11 @@ The following code example describes the above behavior.
                 </Columns>
                 <Fields Content="Summary" PrimaryKey="Id" Tag="Tags" />
       </ej:Kanban>
+
 {% endhighlight  %}
+
 {% highlight c# %}
+
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -94,7 +106,9 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+
 {% endhighlight  %}
+
 {% endtabs %}  
 
 The following output is displayed as a result of the above code example.

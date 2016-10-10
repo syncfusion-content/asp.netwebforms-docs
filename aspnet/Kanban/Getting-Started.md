@@ -18,7 +18,7 @@ You can create a Kanban with a highly customizable look and feel. This section d
 1. Create a Syncfusion ASP.NET Web Forms application.
 2. Add a Kanban in the Index.aspx page. 
 
-   ![](Getting-Started_images/Getting-Started_img1.png)
+![](Getting-Started_images/Getting-Started_img1.png)
 
 3. By Columns definition, the Is Collapsed property is used in the column collapse or expand state. The Width property is used to define the width of the columns. The Header text property is used to render the Kanban with specified columns header text. The Key property is used to render the Kanban with specified columns key.
 
@@ -26,20 +26,23 @@ You can create a Kanban with a highly customizable look and feel. This section d
 
    ![](Getting-Started_images/Getting-Started_img2.png) 
    
-   ~~~ html
+   {% highlight html %}
+
 	   <ej:Kanban ID="Kanban1" runat="server" DataSourceID="SqlDataSource1">
        </ej:Kanban>
        <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:NORTHWNDConnectionString %>' SelectCommand="SELECT * FROM [Tasks]"></asp:SqlDataSource>
-   ~~~
+   
+   {% highlight html %}
    
    N> Create a connection string in Web.config file using SQL database.
 
-   ~~~ html
+   {% highlight html %}
+
 		<connectionStrings>
           <add name="NORTHWNDConnectionString" connectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\NORTHWND.MDF;Integrated Security=True" providerName="System.Data.SqlClient" />
         </connectionStrings>
 
-   ~~~
+   {% highlight html %}
    
    For more information about SQL data source configuration refer the following link: [http://msdn.microsoft.com/en-us/library/vstudio/w1kdt8w2(v=vs.100).aspx](http://msdn.microsoft.com/en-us/library/vstudio/w1kdt8w2(v=vs.100).aspx)
    
@@ -71,7 +74,7 @@ N> :  ODataAdaptor is the default adaptor used within DataManager. While binding
 In order to display cards in Kanban control, you need to map the database fields to Kanban cards and columns. The required mapping field are listed as follows.
 
  * KeyField - Map the column name to use as `Key` values to columns.
- * Columns -  Map the corresponding `key` values of `KeyField` column to each columns.
+ * Columns -  Map the corresponding `Key` values of `KeyField` column to each columns.
  * Content - Map the column name to use as content to cards.
  * PrimaryKey - Map the column name to use as primary Key.
 

@@ -66,7 +66,9 @@ Set as true to enable title for card.
 The following code example describes the above behavior.
 
 {% tabs %}
+
 {% highlight html %}
+
   	<ej:Kanban ID="Kanban" runat="server" KeyField="Status" AllowTitle="true" AllowSelection="true">
                 <Columns>
                     <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
@@ -82,9 +84,12 @@ The following code example describes the above behavior.
                     </ColorMappings>
                 </CardSettings>
                 <Fields Content="Summary" Tag="Tags" Color="Type" ImageUrl="ImgUrl" PrimaryKey="Id" Priority="RankId" />
-     </ej:Kanban>     
+     </ej:Kanban>  
+
 {% endhighlight  %}
+
 {% highlight c# %}
+
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -106,7 +111,9 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+
 {% endhighlight  %}
+
 {% endtabs %}  
 
 The following output is displayed as a result of the above code example.
@@ -121,6 +128,7 @@ You can use JsRender syntax in the template. For more information about JsRender
 The following code example describes the above behavior.
 
 {% highlight html %}
+
   	<script id="cardtemplate" type="text/x-jsrender">
                 <table class="e-templatetable">
                     <colgroup>
@@ -158,9 +166,11 @@ The following code example describes the above behavior.
                     </tbody>
                 </table>
             </script>     
+
 {% endhighlight  %}
 
 {% highlight html %}
+
   	<!--CSS for card template-->
             <style type="text/css">
                 .e-templatetable {
@@ -192,10 +202,13 @@ The following code example describes the above behavior.
                     padding-right: 10px;
                 }
             </style>
+
 {% endhighlight  %}
 
 {% tabs %}
+
 {% highlight html %}
+
   	<ej:Kanban ID="Kanban" runat="server" KeyField="Status">
                 <Columns>
                     <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
@@ -212,8 +225,11 @@ The following code example describes the above behavior.
                 </CardSettings>
                 <Fields Color="Type" PrimaryKey="Id" />
       </ej:Kanban>     
+
 {% endhighlight  %}
+
 {% highlight c# %}
+
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -235,7 +251,9 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+
 {% endhighlight  %}
+
 {% endtabs %}  
 
 The following output is displayed as a result of the above code example.
@@ -249,7 +267,9 @@ You can enable HTML tooltip for Kanban card elements by setting Enable property 
 The following code example describes the above behavior.
 
 {% tabs %}
+
 {% highlight html %}
+
   	<ej:Kanban ID="Kanban" runat="server" KeyField="Status">
                 <Columns>
                     <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
@@ -267,8 +287,11 @@ The following code example describes the above behavior.
                 </CardSettings>
                 <Fields Content="Summary" Tag="Tags" Color="Type" ImageUrl="ImgUrl" PrimaryKey="Id" />
      </ej:Kanban>     
+
 {% endhighlight  %}
+
 {% highlight c# %}
+
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -290,7 +313,9 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+
 {% endhighlight  %}
+
 {% endtabs %}  
 
 The following output is displayed as a result of the above code example.
@@ -304,6 +329,7 @@ By making use of template feature with tooltip, all the field names that are map
 The following code example describes the tooltip template.
 
 {% highlight html %}
+
   	  <script id="tooltipTemp" type="text/x-jsrender">
                 <div class='e-kanbantooltiptemp'>
                     <table>
@@ -341,10 +367,11 @@ The following code example describes the tooltip template.
                     </table>
                 </div>
             </script>
+
 {% endhighlight  %}
 
-
 {% highlight html %}
+
   	<!--toolTip template releated css -->
             <style>
                 .details > table {
@@ -375,10 +402,13 @@ The following code example describes the tooltip template.
                     font-weight: bolder;
                 }
             </style>     
+
 {% endhighlight  %}
 
 {% tabs %}
+
 {% highlight html %}
+
   	<ej:Kanban ID="Kanban1" runat="server" KeyField="Status">
                 <Columns>
                     <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
@@ -388,8 +418,11 @@ The following code example describes the tooltip template.
                 <ToolTipSettings Enable="true" Template="#tooltipTemp" />
                 <Fields Content="Summary" Tag="Tags" PrimaryKey="Id" />
     </ej:Kanban>     
+
 {% endhighlight  %}
+
 {% highlight c# %}
+
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -411,7 +444,9 @@ The following code example describes the tooltip template.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+
 {% endhighlight  %}
+
 {% endtabs %}  
 
 The following output is displayed as a result of the above code example.
