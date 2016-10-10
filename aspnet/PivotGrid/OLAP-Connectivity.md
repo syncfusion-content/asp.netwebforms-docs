@@ -67,24 +67,24 @@ DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.Act
 ## WCF
 **Adding a WCF Service**
 
-To add a WCF service in an existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it as `PivotGridService.svc`, click Add.
+To add a WCF service in an existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it as `OlapService.svc`, click Add.
 
 Now, WCF service is added into the application successfully that comprises of the following files. The utilization of these files is explained in the immediate sections
 
-* PivotGridService.svc
-* PivotGridService.svc.cs
-* IPivotGridService.cs
+* OlapService.svc
+* OlapService.svc.cs
+* IOlapService.cs
 
 **Configuring WCF Service Class**
 
-Remove the **“DoWork”** method present inside both `PivotGridService.svc.cs` and `IPivotGridService.cs` files.  Next, add **“AspNetCompatibilityRequirements”** attribute on top of main class present inside PivotGridService.svc.cs and set **“RequirementsMode”** value to **“Allowed”**.
+Remove the **“DoWork”** method present inside both `OlapService.svc.cs` and `IOlapService.cs` files.  Next, add **“AspNetCompatibilityRequirements”** attribute on top of main class present inside OlapService.svc.cs and set **“RequirementsMode”** value to **“Allowed”**.
 
 {% highlight c# %}
 
 namespace PivotGridDemo
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    public class PivotGridService : IPivotGridService
+    public class OlapService : IOlapService
     {
 
     }
@@ -105,30 +105,40 @@ N> If you have installed any version of SQL Server Analysis Service (SSAS) or Mi
 * Syncfusion.Linq.Base
 * Syncfusion.Olap.Base
 * Syncfusion.PivotAnalysis.Base
+* System.Data.SqlServerCe (Version: 4.0.0.0)
 * Syncfusion.XlsIO.Base
 * Syncfusion.Pdf.Base
 * Syncfusion.DocIO.Base
 * Syncfusion.EJ
 * Syncfusion.EJ.Web
-* Syncfusion.EJ.Olap
+* Syncfusion.EJ.Export
+* Syncfusion.EJ.Pivot
 
 **List of Namespaces**
 
-Following are the list of namespaces to be added on top of the main class inside `PivotGridService.svc.cs` file.
+Following are the list of namespaces to be added on top of the main class inside `OlapService.svc.cs` file.
 
 {% highlight c# %}
 
-using System.Web.Script.Serialization;
+using System;
+using System.Web;
+using System.Collections.Generic;
+using System.Linq;
+using System.ServiceModel;
+using System.Text;
 using System.ServiceModel.Activation;
+using System.Web.Script.Serialization;
 using Syncfusion.Olap.Manager;
 using Syncfusion.Olap.Reports;
-using Syncfusion.JavaScript;
+using Syncfusion.JavaScript.Olap;
+using System.Data.SqlServerCe;
+using System.Data;
 using OLAPUTILS = Syncfusion.JavaScript.Olap;
 
 namespace PivotGridDemo
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    public class PivotGridService : IPivotGridService
+    public class OlapService : IOlapService
     {
 
     }
@@ -139,21 +149,22 @@ namespace PivotGridDemo
 
 **Datasource Initialization**
 
-Now the connection string to connect OLAP Cube, PivotGrid and JavaScriptSerializer instances are created immediately inside the main class in `PivotGridService.svc.cs` file.
+Now the connection string to connect OLAP Cube, PivotGrid and JavaScriptSerializer instances are created immediately inside the main class in `OlapService.svc.cs` file.
 
 {% highlight c# %}
 
 namespace PivotGridDemo
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    public class PivotGridService: IPivotGridService
+    public class OlapService: IOlapService
     {
-        PivotGrid htmlHelper = new PivotGrid();
+        Syncfusion.JavaScript.PivotGrid htmlHelper = new Syncfusion.JavaScript.PivotGrid();
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
-        ....
-		....
-		
+        string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports            public Dictionary<string, object> InitializeGrid(string action, string gridLayout, bool enablePivotFieldList, object customObject)
+        public Dictionary<string, object> InitializeGrid(string action, string gridLayout, bool enablePivotFieldList, object customObject)
+        //Other codes
+        
     }
 }
 
@@ -161,14 +172,14 @@ namespace PivotGridDemo
 
 **Service methods in WCF Service**
 
-First, declare the service methods inside **IPivotGridService** interface, found in `IPivotGridService.cs` file created while adding WCF Service to the Application.
+First, declare the service methods inside **IOlapService** interface, found in `IOlapService.cs` file created while adding WCF Service to the Application.
 
 {% highlight c# %}
 
 namespace PivotGridDemo
 {
     [ServiceContract]
-    public interface IPivotGridService
+    public interface IOlapService
     {
         [OperationContract]
         Dictionary<string, object> InitializeGrid(string action, string gridLayout, bool enablePivotFieldList, object customObject);
@@ -180,88 +191,86 @@ namespace PivotGridDemo
         Dictionary<string, object> Paging(string action, string pagingInfo, string currentReport, string gridLayout, object customObject);
 
         [OperationContract]
-        Dictionary<string, object> NodeDropped(string action, string dropType, string nodeInfo, string filterParams, string currentReport);
+        Dictionary<string, object> NodeDropped(string action, string dropType, string nodeInfo, string filterParams, string gridLayout, string currentReport);
 
         [OperationContract]
-        Dictionary<string, object> RemoveButton(string action, string headerInfo, string currentReport);
+        Dictionary<string, object> RemoveButton(string action, string headerInfo, string gridLayout, string currentReport);
 
         [OperationContract]
         Dictionary<string, object> FetchMembers(string action, string headerTag, string currentReport);
 
         [OperationContract]
-        Dictionary<string, object> Filtering(string action, string filterParams, string currentReport);
+        Dictionary<string, object> Filtering(string action, string filterParams, string gridLayout, string currentReport);
 
         [OperationContract]
         Dictionary<string, object> MemberExpanded(string action, bool checkedStatus, string parentNode, string tag, string cubeName, string currentReport);
 
         [OperationContract]
         void Export(System.IO.Stream stream);
-        
+
         [OperationContract]
         Dictionary<string, object> DeferUpdate(string action, string filterParams, string currentReport);
+
+        [OperationContract]
+        Dictionary<string, object> SaveReport(string reportName, string operationalMode, string olapReport, string clientReports);
+
+        [OperationContract]
+        Dictionary<string, object> LoadReportFromDB(string action, string gridLayout, bool enablePivotFieldList, object customObject, string reportName, string operationalMode, string olapReport, string clientReports);
     }
 }
 
 {% endhighlight %}
 
-Then, elaborate the service methods inside the main class, found in `PivotGridService.svc.cs` file.
+Then, elaborate the service methods inside the main class, found in `OlapService.svc.cs` file.
 
 {% highlight c# %}
 
 namespace PivotGridDemo
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    public class PivotGridService : IPivotGridService
+    public class OlapService : IOlapService
     {
-        PivotGrid htmlHelper = new PivotGrid();
+                    Syncfusion.JavaScript.PivotGrid htmlHelper = new Syncfusion.JavaScript.PivotGrid();
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
-
-        //This method provides the required information from the server side when initializing the PivotGrid.
+        string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports            public Dictionary<string, object> InitializeGrid(string action, string gridLayout, bool enablePivotFieldList, object customObject)
         public Dictionary<string, object> InitializeGrid(string action, string gridLayout, bool enablePivotFieldList, object customObject)
         {
             OlapDataManager DataManager = null;
-            dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());
             DataManager = new OlapDataManager(connectionString);
             DataManager.SetCurrentReport(CreateOlapReport());
             return htmlHelper.GetJsonData(action, DataManager, gridLayout, enablePivotFieldList);
         }
 
-        //This method provides the required information from the server side when drill up/down operation is performed in PivotGrid.
         public Dictionary<string, object> DrillGrid(string action, string cellPosition, string currentReport, string headerInfo, string layout, object customObject)
         {
-            dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());
             OlapDataManager DataManager = new OlapDataManager(connectionString);
             DataManager = new OlapDataManager(connectionString);
-            DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
+            DataManager.SetCurrentReport(Utils.DeserializeOlapReport(currentReport));
             return htmlHelper.GetJsonData(action, connectionString, DataManager, cellPosition, headerInfo, layout);
         }
 
-        //This method provides the required information from the server side when tree node is dropped in PivotTable Field List.
-        public Dictionary<string, object> NodeDropped(string action, string dropType, string nodeInfo, string filterParams, string currentReport)
+        public Dictionary<string, object> NodeDropped(string action, string dropType, string nodeInfo, string filterParams, string gridLayout, string currentReport)
         {
             OlapDataManager DataManager = new OlapDataManager(connectionString);
-            DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
-            return htmlHelper.GetJsonData(action, DataManager, dropType, nodeInfo, filterParams, true);
+            DataManager.SetCurrentReport(Utils.DeserializeOlapReport(currentReport));
+            return htmlHelper.GetJsonData(action, DataManager, dropType, nodeInfo, filterParams, gridLayout, true);
         }
 
-        //This method provides the required information from the server side when filtering values in PivotTable Field List.
-        public Dictionary<string, object> Filtering(string action, string filterParams, string currentReport)
+        public Dictionary<string, object> Filtering(string action, string filterParams, string gridLayout, string currentReport)
         {
             OlapDataManager DataManager = new OlapDataManager(connectionString);
-            DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
-            return htmlHelper.GetJsonData(action, DataManager, null, filterParams);
+            DataManager.SetCurrentReport(Utils.DeserializeOlapReport(currentReport));
+            return htmlHelper.GetJsonData(action, connectionString, DataManager, null, filterParams, gridLayout);
         }
 
-        //This method provides the required information from the server side when opening the editor in PivotTable Field List.
         public Dictionary<string, object> FetchMembers(string action, string headerTag, string currentReport)
         {
             OlapDataManager DataManager = new OlapDataManager(connectionString);
-            DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
+            DataManager.SetCurrentReport(Utils.DeserializeOlapReport(currentReport));
             return htmlHelper.GetJsonData(action, DataManager, null, headerTag);
         }
 
-        //This method provides the required information from the server side when paging is done in PivotGrid.
         public Dictionary<string, object> Paging(string action, string pagingInfo, string currentReport, string gridLayout, object customObject)
         {
             OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -269,42 +278,94 @@ namespace PivotGridDemo
             return htmlHelper.GetJsonData(action, DataManager, gridLayout);
         }
 
-        //This method provides the required information from the server side when removing the split button from PivotTable Field List.
-        public Dictionary<string, object> RemoveButton(string action, string headerInfo, string currentReport)
+        public Dictionary<string, object> RemoveButton(string action, string headerInfo, string gridLayout, string currentReport)
         {
             OlapDataManager DataManager = new OlapDataManager(connectionString);
-            DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
-            return htmlHelper.GetJsonData(action, DataManager, null, headerInfo);
+            DataManager.SetCurrentReport(Utils.DeserializeOlapReport(currentReport));
+            return htmlHelper.GetJsonData(action, connectionString, DataManager, null, headerInfo, gridLayout);
         }
 
-        //This method provides the required information from the server side when expanding member in member editor.
         public Dictionary<string, object> MemberExpanded(string action, bool checkedStatus, string parentNode, string tag, string cubeName, string currentReport)
         {
             OlapDataManager DataManager = new OlapDataManager(connectionString);
             if (!string.IsNullOrEmpty(currentReport))
-                DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
+                DataManager.SetCurrentReport(Utils.DeserializeOlapReport(currentReport));
             return htmlHelper.GetJsonData(action, DataManager, checkedStatus, parentNode, tag, cubeName);
         }
 
-        //This method export PivotGrid to Excel, CSV, Word and PDF.
         public void Export(System.IO.Stream stream)
         {
             System.IO.StreamReader sReader = new System.IO.StreamReader(stream);
-            string args = System.Web.HttpContext.Current.Server.UrlDecode(sReader.ReadToEnd());
+            string args = System.Web.HttpContext.Current.Server.UrlDecode(sReader.ReadToEnd()).Remove(0, 5); ;
             OlapDataManager DataManager = new OlapDataManager(connectionString);
             string fileName = "Sample";
             htmlHelper.ExportPivotGrid(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
         }
-        
-         //This method Defer Update the Rows and Columns
-         public Dictionary<string, object> DeferUpdate(string action, string filterParams, string currentReport)
+
+        public Dictionary<string, object> SaveReport(string reportName, string operationalMode, string olapReport, string clientReports)
         {
-            OlapDataManager DataManager = new OlapDataManager(connectionString);
-            DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
-            return htmlHelper.GetJsonData(action, DataManager, null, filterParams);
+            string mode = operationalMode;
+            SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
+            con.Open();
+            SqlCeCommand cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+            cmd1.Parameters.Add("@ReportName", reportName);
+            //cmd1.Parameters.Add("@Reports", OLAPUTILS.Utils.GetReportStream(clientReports).ToArray());
+            if (mode == "serverMode")
+                cmd1.Parameters.Add("@Reports", OLAPUTILS.Utils.GetReportStream(clientReports).ToArray());
+            else if (mode == "clientMode")
+                cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(clientReports).ToArray());
+            cmd1.ExecuteNonQuery();
+            con.Close();
+            return null;
         }
 
-        //This method carries the information about the default report which when be rendered within PivotGrid initially.
+        public Dictionary<string, object> LoadReportFromDB(string action, string layout, bool enablePivotFieldList, object customObject, string reportName, string operationalMode, string olapReport, string clientReports)
+        {
+            string mode = operationalMode;
+            byte[] reportString = new byte[4 * 1024];
+            Dictionary<string, object> dictionary = new Dictionary<string, object>();
+            foreach (DataRow row in GetDataTable().Rows)
+            {
+                if ((row.ItemArray[0] as string).Equals(reportName))
+                {
+                    if (mode == "clientMode")
+                    {
+                        reportString = row.ItemArray[1] as byte[];
+                        dictionary.Add("report", Encoding.UTF8.GetString(reportString));
+                        break;
+                    }
+                    else if (mode == "serverMode")
+                    {
+                        OlapDataManager DataManager = new OlapDataManager(connectionString);
+                        var reports = "";
+                        if ((row.ItemArray[0] as string).Equals(reportName))
+                        {
+                            reports = OLAPUTILS.Utils.CompressData(row.ItemArray[1] as byte[]);
+                        }
+                        DataManager.SetCurrentReport(Utils.DeserializeOlapReport(reports));
+                        DataManager.OverrideDefaultFormatStrings = true;
+                        dictionary = htmlHelper.GetJsonData(action, DataManager, layout, enablePivotFieldList);
+                    }
+                }
+            }
+            return dictionary;
+        }
+
+        private DataTable GetDataTable()
+        {
+            SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
+            con.Open();
+            DataSet dSet = new DataSet();
+            new SqlCeDataAdapter("Select * from ReportsTable", con).Fill(dSet);
+            con.Close();
+            return dSet.Tables[0];
+        }
+        public Dictionary<string, object> DeferUpdate(string action, string filterParams, string currentReport)
+        {
+            OlapDataManager DataManager = new OlapDataManager(connectionString);
+            DataManager.SetCurrentReport(Utils.DeserializeOlapReport(currentReport));
+            return htmlHelper.GetJsonData(action, DataManager, null, filterParams);
+        }
         private OlapReport CreateOlapReport()
         {
             OlapReport olapReport = new OlapReport();
@@ -336,7 +397,7 @@ namespace PivotGridDemo
 
 The services could be exposed through the properties, binding, contract and address by using an endpoint.
 
-* Contract: This property indicates that the contract of the endpoint is exposing. Here you are referring to `IPivotGridService` contract and hence it is `PivotGridDemo.IPivotGridService`.
+* Contract: This property indicates that the contract of the endpoint is exposing. Here you are referring to `IOlapService` contract and hence it is `PivotGridDemo.IOlapService`.
 * Binding: In your application, you use `webHttpBinding` to post and receive the requests and responses between the client-end and the service.
 * BehaviorConfiguration: This property contains the name of the behavior to be used in the endpoint
 
@@ -348,8 +409,8 @@ The endpointBehaviors are illustrated as follows
     …… 
     ……
     <services>
-        <service name="PivotGridDemo.PivotGridService">
-            <endpoint address="" behaviorConfiguration="PivotGridDemo.PivotGridServiceAspNetAjaxBehavior" binding="webHttpBinding" contract="PivotGridDemo.IPivotGridService" /> </service>
+        <service name="PivotGridDemo.OlapService">
+            <endpoint address="" behaviorConfiguration="PivotGridDemo.OlapServiceAspNetAjaxBehavior" binding="webHttpBinding" contract="PivotGridDemo.IOlapService" /> </service>
     </services>
 </system.serviceModel>
 
@@ -360,13 +421,13 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
 {% highlight xml %}
 
 <system.serviceModel>
-     …… 
-     ……
+    …… 
+    ……
     <behaviors> 
         …… 
         ……
         <endpointBehaviors>
-            <behavior name="PivotGridDemo.PivotGridServiceAspNetAjaxBehavior">
+            <behavior name="PivotGridDemo.OlapServiceAspNetAjaxBehavior">
                 <enableWebScript /> </behavior>
         </endpointBehaviors>
     </behaviors>
@@ -374,7 +435,7 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
 
 {% endhighlight %}
 
-N> In this example, **"PivotGridDemo"** indicates the name and root namespace of the Application created in Visual Studio IDE and **"PivotGridService"** indicates the name of the WCF service created.
+N> In this example, **"PivotGridDemo"** indicates the name and root namespace of the Application created in Visual Studio IDE and **"OlapService"** indicates the name of the WCF service created.
 
 Now, **PivotGrid** will be rendered with Internet Sales Amount over a period of fiscal years across different customer geographic locations.
 
