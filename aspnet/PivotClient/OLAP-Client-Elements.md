@@ -170,7 +170,7 @@ Member Editor is a dialog which displays the members of the current hierarchy in
 
 ![](OLAP-Client-Elements_images/membereditor.png) 
 
-The "Check All" and "Uncheck All" option in the dialog lets the user to select and unselect entire nodes for filtering. For more details, about filtering, [click here](http://help.syncfusion.com/js/pivotclient/olap-data-exploration#filtering-by-member).
+The "Check All" and "Uncheck All" option in the dialog lets the user to select and unselect entire nodes for filtering. For more details, about filtering, [click here](http://help.syncfusion.com/aspnet/pivotclient/olap-data-exploration#filtering-by-member).
 
 ## Toolbar
 
