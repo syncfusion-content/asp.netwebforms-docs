@@ -1,29 +1,28 @@
 ---
 layout: post
-title: OLAPClient | OLAPClient | ASP.NET | Syncfusion
+title: PivotClient | PivotClient | ASP.NET | Syncfusion
 description: overview
 platform: aspnet
-control: OLAPClient
+control: PivotClient
 documentation: ug
 ---
-
 # Overview
 
-The **OlapClient** control for ASP.NET provides support to browse multidimensional data that is organized in the form of dimensions, 
-measures, named sets, and **KPIs** (key performance indicators) in a cubic format. You can visualize the results in graphical and 
-tabular formats (charts and grids). The **OlapClient** control is also used to create and edit a report on-the-fly that is stored 
-for later use.
+The **PivotClient** control for ASP.NET provides support to bind both OLAP and Relational data source.  You can visualize the results in graphical and tabular formats (chart and grid).The **PivotClient** control is also used to create and edit a report on-the-fly that is stored for later use.
+
 
 ## Key Features
 
-The key features of the **OlapClient** control is as follows:
+The key features of the **PivotClient** control is as follows:
 
-* **Data Source:** Binds the **OlapClient** control with Microsoft Analysis Services databases and **XML/A** data sources.
-* **Axis Element Builder:** Allows building an **OLAP** report by placing elements in the different axes of the **OlapClient**. There are three axes that are supported namely column, row and slicer.
-* **Cube Selector:** Enables you to select a cube from the collection populated by a data source.
-* **Cube Dimension Browser:** A tree-view-like structure that organizes the dimensions, measures and named sets from the selected cube into independent logical groups.
-* **Member Editor:** A tree-view-like structure contains members of a selected dimension that are used for manipulation purposes.
-* **Measure Editor:** Comprises of a collection of measures.
-* **Toolbar:** The toolbar of the **OlapClient** component provide options for exporting and manipulating the **OLAP**	 report such as add report, new report, remove report, rename report, and report selector. 
-* **Chart:** A chart is a graphical representation of multidimensional data.
-* **Grid:** A grid is a tabular representation of data, arranged in the form of rows and columns categorized accordingly.
+* **Data Source:** Binds the **PivotClient** control with Relational data source and with Microsoft Analysis Services databases and **XML/A** data sources.
+* **Axis Element Builder:** Allows building an **OLAP/Pivot** report by placing elements in the different axes of the **PivotClient**. There are four axes that are supported namely column, row, slicer and values.
+* **Member Editor:** Lists out the members of the selected field for Relational data source and members of the selected hierarchy in a tree-view-like structure for OLAP data source.
+* **Toolbar:** The toolbar of the **PivotClient** component provide options for exporting and manipulating the **OLAP/Pivot** report such as add report, new report, remove report, etc.,
+* **Cube Dimension Browser:** A tree-view-like structure that organizes the dimensions, measures and named sets from the selected OLAP cube into independent logical groups.
+* **Field List:** List which explores the fields available in Relational data source connected.
+* **Visualization Controls:** For a diagrammatic representation of multidimensional data.
+
+
+
+
