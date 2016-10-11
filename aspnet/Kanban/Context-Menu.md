@@ -58,7 +58,7 @@ Please find the below table for default context menu items and its actions.
             </td>
         </tr>
         <tr>
-            <td rowspan="9">
+            <td rowspan="10">
                 Card
             </td>
             <td>
@@ -130,6 +130,14 @@ Please find the below table for default context menu items and its actions.
             </td>
             <td>
                Move the card to Swim lane which is chosen from given list
+            </td>
+        </tr>
+        <tr>
+            <td>
+              Print Card
+            </td>
+            <td>
+                Print the specific card
             </td>
         </tr>
  </table>
