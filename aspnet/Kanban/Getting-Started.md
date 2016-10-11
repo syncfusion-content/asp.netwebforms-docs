@@ -26,20 +26,19 @@ You can create a Kanban with a highly customizable look and feel. This section d
 
    ![](Getting-Started_images/Getting-Started_img2.png) 
    
-   ~~~ html
+  {% highlight html %}
 	   <ej:Kanban ID="Kanban1" runat="server" DataSourceID="SqlDataSource1">
        </ej:Kanban>
        <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:NORTHWNDConnectionString %>' SelectCommand="SELECT * FROM [Tasks]"></asp:SqlDataSource>
-   ~~~
+ {% endhighlight %}
    
    N> Create a connection string in Web.config file using SQL database.
 
-   ~~~ html
+  {% highlight html %}
 		<connectionStrings>
           <add name="NORTHWNDConnectionString" connectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\NORTHWND.MDF;Integrated Security=True" providerName="System.Data.SqlClient" />
         </connectionStrings>
-
-   ~~~
+ {% endhighlight %}
    
    For more information about SQL data source configuration refer the following link: [http://msdn.microsoft.com/en-us/library/vstudio/w1kdt8w2(v=vs.100).aspx](http://msdn.microsoft.com/en-us/library/vstudio/w1kdt8w2(v=vs.100).aspx)
    
