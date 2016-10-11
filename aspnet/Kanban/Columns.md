@@ -102,7 +102,9 @@ You can use JsRender syntax in the template. For more information about JsRender
 The following code example describes the above behavior.
 
 {% tabs %}
+
 {% highlight html %}
+
   	<ej:Kanban ID="Kanban" runat="server" AllowSelection="false" AllowTitle="true" KeyField="Status">
             <Columns>
                 <ej:KanbanColumn HeaderText="Backlog" Key="Open" HeaderTemplate="#column1" />
@@ -120,8 +122,11 @@ The following code example describes the above behavior.
             <span class="e-done e-icon"></span>
             Done
         </script>
+        
 {% endhighlight  %}
+
 {% highlight c# %}
+
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -143,7 +148,9 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+           
 {% endhighlight  %}
+
 {% endtabs %}  
 
 {% highlight css %}
@@ -173,7 +180,9 @@ You can specify the width for particular column by setting `Width` property of `
 The following code example describes the above behavior.
 
 {% tabs %}
+
 {% highlight html %}
+
   	 <ej:Kanban ID="Kanban" runat="server" AllowSelection="false" AllowTitle="true" KeyField="Status">
             <Columns>
                 <ej:KanbanColumn HeaderText="Backlog" Key="Open" Width="5%"/>
@@ -183,8 +192,11 @@ The following code example describes the above behavior.
             </Columns>
             <Fields Content="Summary" />
         </ej:Kanban>
+        
 {% endhighlight  %}
+
 {% highlight c# %}
+
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -207,6 +219,7 @@ The following code example describes the above behavior.
             this.Kanban.DataBind();
            }
 {% endhighlight  %}
+
 {% endtabs %}  
 
 The following output is displayed as a result of the above code example.
@@ -220,7 +233,9 @@ You can hide particular column in Kanban by setting `Visible` property of it as 
 The following code example describes the above behavior.
 
 {% tabs %}
+
 {% highlight html %}
+
   	  <ej:Kanban ID="Kanban" runat="server" AllowSelection="false" AllowTitle="true" KeyField="Status">
             <Columns>
                 <ej:KanbanColumn HeaderText="Backlog" Key="Open"/>
@@ -230,8 +245,11 @@ The following code example describes the above behavior.
             </Columns>
             <Fields Content="Summary" />
         </ej:Kanban>
+        
 {% endhighlight  %}
+
 {% highlight c# %}
+
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -253,7 +271,9 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+           
 {% endhighlight  %}
+
 {% endtabs %}  
 
 The following output is displayed as a result of the above code example.
@@ -267,7 +287,9 @@ You can set particular column collapsed state in Kanban by setting `IsCollapsed`
 The following code example describes the above behavior.
 
 {% tabs %}
+
 {% highlight html %}
+
   	  <ej:Kanban ID="Kanban" runat="server" AllowToggleColumn="true" AllowSelection="false" AllowTitle="true" KeyField="Status">
             <Columns>
                 <ej:KanbanColumn HeaderText="Backlog" Key="Open" IsCollapsed="true"/>
@@ -277,8 +299,11 @@ The following code example describes the above behavior.
             </Columns>
             <Fields Content="Summary" />
         </ej:Kanban>
+        
 {% endhighlight  %}
+
 {% highlight c# %}
+
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -300,7 +325,9 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+
 {% endhighlight  %}
+
 {% endtabs %}  
 
 The following output is displayed as a result of the above code example.
