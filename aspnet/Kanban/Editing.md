@@ -315,6 +315,263 @@ The following output is displayed as a result of the above code example.
 
 ![](Editing_images/Editing_img2.png)
 
+### External Form
+
+Set the `EditMode` as externalform to open the edit form in outside kanban content.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight html %}
+
+     <ej:Kanban ID="Kanban" runat="server" KeyField="Status">
+                <Columns>
+                    <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
+                    <ej:KanbanColumn HeaderText="In Progress" Key="InProgress" />
+                    <ej:KanbanColumn HeaderText="Done" Key="Close" />
+                </Columns>
+                <Fields Content="Summary" PrimaryKey="Id" />
+                <EditSettings AllowAdding="true" AllowEditing="true" EditMode="ExternalForm">
+                    <EditItems>
+                        <ej:KanbanEditItem Field="Id">
+                        </ej:KanbanEditItem>
+                        <ej:KanbanEditItem EditType="Dropdown" Field="Status"></ej:KanbanEditItem>
+                        <ej:KanbanEditItem EditType="TextArea" Field="Summary">
+                        </ej:KanbanEditItem>
+                    </EditItems>
+                </EditSettings>
+            </ej:Kanban>
+
+{% endhighlight  %}
+
+{% highlight c# %}  
+
+          List<Tasks> Task = new List<Tasks>();  
+          protected void Page_Load(object sender, EventArgs e)
+          {
+            Task.Add(new Tasks(1, "Open", "Analyze the new requirements gathered from the customer.", "Story", "Low", "Analyze,Customer", 3.5, "Nancy Davloio", "../content/images/kanban/1.png", 1));
+            Task.Add(new Tasks(2, "InProgress", "Improve application performance", "Improvement", "Normal", "Improvement", 6, "Andrew Fuller", "../content/images/kanban/2.png", 1));
+            Task.Add(new Tasks(3, "Open", "Arrange a web meeting with the customer to get new requirements.", "Others", "Critical", "Meeting", 5.5, "Janet Leverling", "../content/images/kanban/3.png", 2));
+            Task.Add(new Tasks(4, "InProgress", "Fix the issues reported in the IE browser.", "Bug", "Release Breaker", "IE", 2.5, "Janet Leverling", "../content/images/kanban/3.png", 2));
+            Task.Add(new Tasks(5, "Testing", "Fix the issues reported by the customer.", "Bug", "Low", "Customer", 3.5, "Steven walker", "../content/images/kanban/5.png", 1));
+            Task.Add(new Tasks(6, "Close", "Arrange a web meeting with the customer to get the login page requirements.", "Others", "Low", "Meeting", 2, "Michael Suyama", "../content/images/kanban/6.png", 1));
+            Task.Add(new Tasks(7, "Validate", "Validate new requirements", "Improvement", "Low", "Validation", 1.5, "Robert King", "../content/images/kanban/7.png", 4));
+            Task.Add(new Tasks(8, "Close", "Login page validation", "Story", "Release Breaker", "Validation,Fix", 2.5, "Laura Callahan", "../content/images/kanban/8.png", 2));
+            Task.Add(new Tasks(9, "Testing", "Fix the issues reported in Safari browser.", "Bug", "Release Breaker", "Fix,Safari", 1.5, "Nancy Davloio", "../content/images/kanban/1.png", 2));
+            Task.Add(new Tasks(10, "Close", "Test the application in the IE browser.", "Story", "Low", "Testing,IE", 5.5, "Margaret hamilt", "../content/images/kanban/4.png", 3));
+            Task.Add(new Tasks(11, "Validate", "Validate the issues reported by the customer.", "Story", "High", "Validation,Fix", 1, "Steven walker", "../content/images/kanban/5.png", 5));
+            Task.Add(new Tasks(12, "Testing", "Check Login page validation.", "Story", "Release Breaker", "Testing", 0.5, "Michael Suyama", "../content/images/kanban/6.png", 3));
+            Task.Add(new Tasks(13, "Open", "API improvements.", "Improvement", "High", "Grid,API", 3.5, "Robert King", "../content/images/kanban/7.png", 3));
+            Task.Add(new Tasks(14, "InProgress", "Add responsive support to application", "Epic", "Critical", "Responsive", 6, "Laura Callahan", "../content/images/kanban/8.png", 3));
+            Task.Add(new Tasks(15, "Open", "Show the retrieved data from the server in grid control.", "Story", "High", "Database,SQL", 5.5, "Margaret hamilt", "../content/images/kanban/4.png", 4));
+            this.Kanban.DataSource = Task;
+            this.Kanban.DataBind();
+           }
+
+{% endhighlight  %}
+
+{% endtabs %}  
+
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/editing_img11.png)
+
+Form Position:
+
+Form Position can be customized by setting the `FormPosition` as "right" or "bottom".
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight html %}
+
+     <ej:Kanban ID="Kanban" runat="server" KeyField="Status">
+                <Columns>
+                    <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
+                    <ej:KanbanColumn HeaderText="In Progress" Key="InProgress" />
+                    <ej:KanbanColumn HeaderText="Done" Key="Close" />
+                </Columns>
+                <Fields Content="Summary" PrimaryKey="Id" />
+                <EditSettings AllowAdding="true" AllowEditing="true" EditMode="ExternalForm" FormPosition="Right">
+                     <EditItems>
+                        <ej:KanbanEditItem Field="Id">
+                        </ej:KanbanEditItem>
+                        <ej:KanbanEditItem EditType="Dropdown" Field="Status"></ej:KanbanEditItem>
+                        <ej:KanbanEditItem EditType="Dropdown" Field="Assignee"></ej:KanbanEditItem>
+                        <ej:KanbanEditItem EditType="Numeric" Field="Estimate">
+                            <NumericEditOptions DecimalPlaces="2" />
+                        </ej:KanbanEditItem>
+                        <ej:KanbanEditItem EditType="TextArea" Field="Summary">
+                        </ej:KanbanEditItem>
+                    </EditItems>
+                </EditSettings>
+            </ej:Kanban>
+
+{% endhighlight  %}
+
+{% highlight c# %}  
+
+          List<Tasks> Task = new List<Tasks>();  
+          protected void Page_Load(object sender, EventArgs e)
+          {
+            Task.Add(new Tasks(1, "Open", "Analyze the new requirements gathered from the customer.", "Story", "Low", "Analyze,Customer", 3.5, "Nancy Davloio", "../content/images/kanban/1.png", 1));
+            Task.Add(new Tasks(2, "InProgress", "Improve application performance", "Improvement", "Normal", "Improvement", 6, "Andrew Fuller", "../content/images/kanban/2.png", 1));
+            Task.Add(new Tasks(3, "Open", "Arrange a web meeting with the customer to get new requirements.", "Others", "Critical", "Meeting", 5.5, "Janet Leverling", "../content/images/kanban/3.png", 2));
+            Task.Add(new Tasks(4, "InProgress", "Fix the issues reported in the IE browser.", "Bug", "Release Breaker", "IE", 2.5, "Janet Leverling", "../content/images/kanban/3.png", 2));
+            Task.Add(new Tasks(5, "Testing", "Fix the issues reported by the customer.", "Bug", "Low", "Customer", 3.5, "Steven walker", "../content/images/kanban/5.png", 1));
+            Task.Add(new Tasks(6, "Close", "Arrange a web meeting with the customer to get the login page requirements.", "Others", "Low", "Meeting", 2, "Michael Suyama", "../content/images/kanban/6.png", 1));
+            Task.Add(new Tasks(7, "Validate", "Validate new requirements", "Improvement", "Low", "Validation", 1.5, "Robert King", "../content/images/kanban/7.png", 4));
+            Task.Add(new Tasks(8, "Close", "Login page validation", "Story", "Release Breaker", "Validation,Fix", 2.5, "Laura Callahan", "../content/images/kanban/8.png", 2));
+            Task.Add(new Tasks(9, "Testing", "Fix the issues reported in Safari browser.", "Bug", "Release Breaker", "Fix,Safari", 1.5, "Nancy Davloio", "../content/images/kanban/1.png", 2));
+            Task.Add(new Tasks(10, "Close", "Test the application in the IE browser.", "Story", "Low", "Testing,IE", 5.5, "Margaret hamilt", "../content/images/kanban/4.png", 3));
+            Task.Add(new Tasks(11, "Validate", "Validate the issues reported by the customer.", "Story", "High", "Validation,Fix", 1, "Steven walker", "../content/images/kanban/5.png", 5));
+            Task.Add(new Tasks(12, "Testing", "Check Login page validation.", "Story", "Release Breaker", "Testing", 0.5, "Michael Suyama", "../content/images/kanban/6.png", 3));
+            Task.Add(new Tasks(13, "Open", "API improvements.", "Improvement", "High", "Grid,API", 3.5, "Robert King", "../content/images/kanban/7.png", 3));
+            Task.Add(new Tasks(14, "InProgress", "Add responsive support to application", "Epic", "Critical", "Responsive", 6, "Laura Callahan", "../content/images/kanban/8.png", 3));
+            Task.Add(new Tasks(15, "Open", "Show the retrieved data from the server in grid control.", "Story", "High", "Database,SQL", 5.5, "Margaret hamilt", "../content/images/kanban/4.png", 4));
+            this.Kanban.DataSource = Task;
+            this.Kanban.DataBind();
+           }
+
+{% endhighlight  %}
+
+{% endtabs %}  
+
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/editing_img12.png)
+
+### External Template Form
+
+You can edit any of the fields pertaining to a single card of data and apply it to a template so that the same format is applied to all the other cards that you may edit later. 
+
+Using this template support, you can edit the fields that are not bound to Kanban Edit Items.
+
+To edit the cards using External template form, set `EditMode` as externalformtemplate and specify the template id to `ExternaFormTemplate` property of `EditSettings`.
+
+While using template, you can change the elements that are defined in the template, to appropriate Syncfusion JS controls based on the column type. This can be achieved by using `ActionComplete` event of Kanban.
+
+N> 1. `value` attribute is used to bind the corresponding field value while editing. 
+N> 2. `name` attribute is used to get the changed field values while save the edited card. 
+N> 3. For `EditMode` property you can assign either `string` value ("externalformtemplate") or `enum` value (`ej.Kanban.EditMode.ExternalFormTemplate`).
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+
+     <script type="text/template" id="template">
+                <table cellspacing="10">
+                    <tr>
+                        <td style="text-align: right;">Id
+                        </td>
+                        <td style="text-align: left">
+                            <input id="Id" name="Id" value="{{: Id}}" class="e-field e-ejinputtext valid e-disable" style="text-align: right; width: 175px; height: 28px" disabled="disabled" />
+                        </td>
+                        <td style="text-align: right;">Status
+                        </td>
+                        <td style="text-align: left">
+                            <select id="Status" name="Status">
+                                <option value="Close">Close</option>
+                                <option value="InProgress">InProgress</option>
+                                <option value="Open">Open</option>
+                                <option value="Testing">Testing</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">Assignee
+                        </td>
+                        <td style="text-align: left">
+                            <select id="Assignee" name="Assignee">
+                                <option value="Nancy Davloio">Nancy Davloio</option>
+                                <option value="Andrew Fuller">Andrew Fuller</option>
+                                <option value="Janet Leverling">Janet Leverling</option>
+                                <option value="Margaret hamilt">Margaret hamilt</option>
+                                <option value="Steven walker">Steven walker</option>
+                                <option value="Michael Suyama">Michael Suyama</option>
+                                <option value="Robert King">Robert King</option>
+                                <option value="Laura Callahan">Laura Callahan</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </script>
+
+{% endhighlight  %}
+
+{% tabs %}
+
+{% highlight html %}
+
+     <ej:Kanban ID="Kanban" runat="server" KeyField="Status">
+                <Columns>
+                    <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
+                    <ej:KanbanColumn HeaderText="In Progress" Key="InProgress" />
+                    <ej:KanbanColumn HeaderText="Done" Key="Close" />
+                </Columns>
+                <Fields Content="Summary" PrimaryKey="Id" />
+                <EditSettings AllowAdding="true" AllowEditing="true" EditMode="ExternalFormTemplate" ExternalFormTemplate="#template">
+                </EditSettings>
+                <ClientSideEvents ActionComplete="complete" />
+     </ej:Kanban>
+
+{% endhighlight  %}
+
+{% highlight c# %}
+
+          List<Tasks> Task = new List<Tasks>();  
+          protected void Page_Load(object sender, EventArgs e)
+          {
+            Task.Add(new Tasks(1, "Open", "Analyze the new requirements gathered from the customer.", "Story", "Low", "Analyze,Customer", 3.5, "Nancy Davloio", "../content/images/kanban/1.png", 1));
+            Task.Add(new Tasks(2, "InProgress", "Improve application performance", "Improvement", "Normal", "Improvement", 6, "Andrew Fuller", "../content/images/kanban/2.png", 1));
+            Task.Add(new Tasks(3, "Open", "Arrange a web meeting with the customer to get new requirements.", "Others", "Critical", "Meeting", 5.5, "Janet Leverling", "../content/images/kanban/3.png", 2));
+            Task.Add(new Tasks(4, "InProgress", "Fix the issues reported in the IE browser.", "Bug", "Release Breaker", "IE", 2.5, "Janet Leverling", "../content/images/kanban/3.png", 2));
+            Task.Add(new Tasks(5, "Testing", "Fix the issues reported by the customer.", "Bug", "Low", "Customer", 3.5, "Steven walker", "../content/images/kanban/5.png", 1));
+            Task.Add(new Tasks(6, "Close", "Arrange a web meeting with the customer to get the login page requirements.", "Others", "Low", "Meeting", 2, "Michael Suyama", "../content/images/kanban/6.png", 1));
+            Task.Add(new Tasks(7, "Validate", "Validate new requirements", "Improvement", "Low", "Validation", 1.5, "Robert King", "../content/images/kanban/7.png", 4));
+            Task.Add(new Tasks(8, "Close", "Login page validation", "Story", "Release Breaker", "Validation,Fix", 2.5, "Laura Callahan", "../content/images/kanban/8.png", 2));
+            Task.Add(new Tasks(9, "Testing", "Fix the issues reported in Safari browser.", "Bug", "Release Breaker", "Fix,Safari", 1.5, "Nancy Davloio", "../content/images/kanban/1.png", 2));
+            Task.Add(new Tasks(10, "Close", "Test the application in the IE browser.", "Story", "Low", "Testing,IE", 5.5, "Margaret hamilt", "../content/images/kanban/4.png", 3));
+            Task.Add(new Tasks(11, "Validate", "Validate the issues reported by the customer.", "Story", "High", "Validation,Fix", 1, "Steven walker", "../content/images/kanban/5.png", 5));
+            Task.Add(new Tasks(12, "Testing", "Check Login page validation.", "Story", "Release Breaker", "Testing", 0.5, "Michael Suyama", "../content/images/kanban/6.png", 3));
+            Task.Add(new Tasks(13, "Open", "API improvements.", "Improvement", "High", "Grid,API", 3.5, "Robert King", "../content/images/kanban/7.png", 3));
+            Task.Add(new Tasks(14, "InProgress", "Add responsive support to application", "Epic", "Critical", "Responsive", 6, "Laura Callahan", "../content/images/kanban/8.png", 3));
+            Task.Add(new Tasks(15, "Open", "Show the retrieved data from the server in grid control.", "Story", "High", "Database,SQL", 5.5, "Margaret hamilt", "../content/images/kanban/4.png", 4));
+            this.Kanban.DataSource = Task;
+            this.Kanban.DataBind();
+           }
+
+{% endhighlight  %}
+
+{% endtabs %}  
+
+{% highlight html %}
+
+      <script type="text/javascript">
+                function complete(args) {
+                    if (args.requestType == "refresh" || args.requestType == "save") {
+                        $('#<%= Kanban.ClientID %>').ejWaitingPopup("hide");
+                   }
+                   if ((args.requestType == "beginedit" || args.requestType == "add") && args.model.editSettings.editMode == "externalformtemplate") {
+                       $("#Assignee").ejDropDownList({ width: '175px' });
+                       $("#Status").ejDropDownList({ width: '175px' });
+                       if (args.requestType == "beginedit" || args.requestType == "add") {
+                           $("#Assignee").ejDropDownList("setSelectedValue", args.data['Assignee']);
+                           $("#Status").ejDropDownList("setSelectedValue", args.data['Status']);
+                       }
+                       $(".e-field").css({ 'width': '175px', 'text-align': 'left' });
+                   }
+               }
+        </script>
+
+{% endhighlight  %}
+
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/editing_img13.png)
+
 ### Cell edit type and its params
 
 The edit type of bound column can be customized using `EditType` property of `Columns`. The following Essential JavaScript controls are supported built-in by `EditType`. You can set the `EditType` based on specific data type of the column.
