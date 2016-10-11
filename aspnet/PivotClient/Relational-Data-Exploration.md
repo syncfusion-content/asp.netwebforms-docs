@@ -17,7 +17,7 @@ By clicking the  Split Button of a field, Member Editor dialog opens through whi
 
 ![](Data-Exploration_images/relational-filterbymember.png)
 
- On clicking the "OK" button, based on the selected members in the Member Editor dialog, PivotReport gets updated and refreshes the PivotGrid and PivotChart controls.  The "Cancel" button is used for cancelling the selection. 
+ On clicking the "OK" button, based on the selected members in the Member Editor dialog, PivotReport gets updated and refreshes the PivotGrid and PivotChart controls.  The "Cancel" button is used to cancel the selection. 
 
 ![](Data-Exploration_images/relational-filter-grouping.png)
 
