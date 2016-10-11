@@ -618,7 +618,7 @@ public class Global: System.Web.HttpApplication
 
 Now, **PivotClient** is rendered with PivotChart and PivotGrid with "Country" field in Row, "Product" field in Column and "Amount" field in Value section.
 
-![](Getting-Started_images/relational.png) 
+![](Getting-Started_images/relaionalwebapi.png) 
 
 ### WCF
 

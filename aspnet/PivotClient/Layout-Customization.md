@@ -1,25 +1,37 @@
 ---
 layout: post
-title: Layout Customization | OLAPClient | ASP.NET | Syncfusion
+title: Layout Customization | PivotClient | ASP.NET | Syncfusion
 description: layout customization
 platform: aspnet
-control: OLAPClient
+control: PivotClient
 documentation: ug
 ---
 
 # Layout Customization
 
-## Display View
+## Control Placement
 
 ### Tab View
 
-In Tab View representation, both Grid and Chart will be displayed in a separate tab.  This could be set using the `ControlPlacement` property under the `DisplaySettings` option.  By default, **Tab** value is set.
+In Tab View representation, both Grid and Chart will be displayed in separate tabs.  This could be set by using the `ControlPlacement` property under the `DisplaySettings` option.  By default, **Tab** value is set.
 
 {% highlight html %}
 
-<ej:OlapClient Url="/OlapClient" Title="OLAP Browser" runat="server">
-    <DisplaySettings ControlPlacement="Tab" />
-</ej:OlapClient>
+    <ej:PivotClient  ID="PivotClient1"  runat="server">
+         <DataSource>
+            <Rows>
+                <ej:Field FieldName="Country" FieldCaption="Country"></ej:Field>
+            </Rows>
+            <Columns>
+                <ej:Field FieldName="Product" FieldCaption="Product"></ej:Field>
+            </Columns>
+            <Values>
+                <ej:Field FieldName="Amount" FieldCaption="Amount"></ej:Field>
+            </Values>
+        </DataSource>
+        <DisplaySettings ControlPlacement="Tab" />
+        <ClientSideEvents Load="onLoad" />
+    </ej:PivotClient>
 
 {% endhighlight  %}
 
@@ -27,13 +39,25 @@ In Tab View representation, both Grid and Chart will be displayed in a separate 
 
 ### Tile View
 
-In Tile View representation, both Grid and Chart will be displayed one over the other, in the same layout.  Tile view can be set by using the `ControlPlacement` property under the `DisplaySettings` option.
+In Tile View representation, both Grid and Chart will be displayed one above the other, in the same layout.  Tile view can be set by using the `ControlPlacement` property under the `DisplaySettings` option.
 
 {% highlight html %}
 
-<ej:OlapClient Url="/OlapClient" Title="OLAP Browser" runat="server">
-    <DisplaySettings ControlPlacement="Tile" />
-</ej:OlapClient>
+    <ej:PivotClient  ID="PivotClient1" runat="server">
+         <DataSource>
+            <Rows>
+                <ej:Field FieldName="Country" FieldCaption="Country"></ej:Field>
+            </Rows>
+            <Columns>
+                <ej:Field FieldName="Product" FieldCaption="Product"></ej:Field>
+            </Columns>
+            <Values>
+                <ej:Field FieldName="Amount" FieldCaption="Amount"></ej:Field>
+            </Values>
+        </DataSource>
+        <ClientSideEvents Load="onLoad"/>
+        <DisplaySettings ControlPlacement="Tile" />
+    </ej:PivotClient>
 
 {% endhighlight  %}
 
@@ -47,9 +71,21 @@ To display Grid control by default, set `DefaultView` property under `DisplaySet
 
 {% highlight html %}
 
-<ej:OlapClient Url="/OlapClient" Title="OLAP Browser" runat="server">
-    <DisplaySettings DefaultView="Grid" />
-</ej:OlapClient>
+    <ej:PivotClient  ID="PivotClient1" runat="server">
+        <DataSource>
+                <Rows>
+                    <ej:Field FieldName="Country" FieldCaption="Country"></ej:Field>
+                </Rows>
+                <Columns>
+                    <ej:Field FieldName="Product" FieldCaption="Product"></ej:Field>
+                </Columns>
+                <Values>
+                    <ej:Field FieldName="Amount" FieldCaption="Amount"></ej:Field>
+                </Values>
+            </DataSource>
+            <ClientSideEvents Load="onLoad"/>
+            <DisplaySettings DefaultView="Grid" />
+    </ej:PivotClient>
 
 {% endhighlight  %}
 
@@ -61,9 +97,21 @@ To display Chart control by default, set the property `DefaultView` property to 
 
 {% highlight html %}
 
-<ej:OlapClient Url="/OlapClient" Title="OLAP Browser" runat="server">
+    <ej:PivotClient  ID="PivotClient1" runat="server">
+     <DataSource>
+            <Rows>
+                <ej:Field FieldName="Country" FieldCaption="Country"></ej:Field>
+            </Rows>
+            <Columns>
+                <ej:Field FieldName="Product" FieldCaption="Product"></ej:Field>
+            </Columns>
+            <Values>
+                <ej:Field FieldName="Amount" FieldCaption="Amount"></ej:Field>
+            </Values>
+        </DataSource>
+    <ClientSideEvents Load="onLoad"/>
     <DisplaySettings DefaultView="Chart" />
-</ej:OlapClient>
+</ej:PivotClient>
 
 {% endhighlight  %}
 
@@ -73,13 +121,25 @@ To display Chart control by default, set the property `DefaultView` property to 
 
 ### Grid Only
 
-After setting the `Mode` property under `DisplaySettings` option to **GridOnly**, the Chart is hidden and the data is displayed only in the Grid.
+By the `Mode` property under `DisplaySettings` option to **GridOnly**, PivotGrid component alone will get rendered and PivotChart will not be rendered.
 
 {% highlight html %}
 
-<ej:OlapClient Url="/OlapClient" Title="OLAP Browser" runat="server">
-    <DisplaySettings Mode="GridOnly" />
-</ej:OlapClient>
+    <ej:PivotClient  ID="PivotClient1" runat="server">
+        <DataSource>
+                <Rows>
+                    <ej:Field FieldName="Country" FieldCaption="Country"></ej:Field>
+                </Rows>
+                <Columns>
+                    <ej:Field FieldName="Product" FieldCaption="Product"></ej:Field>
+                </Columns>
+                <Values>
+                    <ej:Field FieldName="Amount" FieldCaption="Amount"></ej:Field>
+                </Values>
+            </DataSource>
+            <ClientSideEvents Load="onLoad"/>
+        <DisplaySettings Mode="GridOnly" />
+    </ej:PivotClient>
 
 {% endhighlight  %}
 
@@ -88,13 +148,25 @@ After setting the `Mode` property under `DisplaySettings` option to **GridOnly**
 
 ### Chart Only
 
-After setting the `Mode` property under `DisplaySettings` option to **ChartOnly**, the Grid is hidden and data is displayed only in the Chart.
+By the `Mode` property under `DisplaySettings` option to **ChartOnly**, PivotChart component alone will get rendered and PivotChart will not be rendered .
 
 {% highlight html %}
 
-<ej:OlapClient Url="/OlapClient" Title="OLAP Browser" runat="server">
-    <DisplaySettings Mode="ChartOnly" />
-</ej:OlapClient>
+    <ej:PivotClient  ID="PivotClient1" runat="server">
+            <DataSource>
+                <Rows>
+                    <ej:Field FieldName="Country" FieldCaption="Country"></ej:Field>
+                </Rows>
+                <Columns>
+                    <ej:Field FieldName="Product" FieldCaption="Product"></ej:Field>
+                </Columns>
+                <Values>
+                    <ej:Field FieldName="Amount" FieldCaption="Amount"></ej:Field>
+                </Values>
+            </DataSource>
+            <ClientSideEvents Load="onLoad"/>
+        <DisplaySettings Mode="ChartOnly" />
+    </ej:PivotClient>
 
 {% endhighlight  %}
 
@@ -102,27 +174,51 @@ After setting the `Mode` property under `DisplaySettings` option to **ChartOnly*
 
 ### Both Chart and Grid
 
-After setting the `Mode` property under `DisplaySettings` option to **ChartAndGrid**, data is displayed in both Grid and Chart.  This is the default value of the property.
+By the `Mode` property under `DisplaySettings` option to **ChartAndGrid**, data is displayed in both Grid and Chart.  This is the default value of the property.
 
 {% highlight html %}
 
-<ej:OlapClient Url="/OlapClient" Title="OLAP Browser" runat="server">
-    <DisplaySettings Mode="ChartAndGrid" />
-</ej:OlapClient>
+    <ej:PivotClient   ID="PivotClient1" runat="server">
+        <DataSource>
+            <Rows>
+                <ej:Field FieldName="Country" FieldCaption="Country"></ej:Field>
+            </Rows>
+            <Columns>
+                <ej:Field FieldName="Product" FieldCaption="Product"></ej:Field>
+            </Columns>
+            <Values>
+                <ej:Field FieldName="Amount" FieldCaption="Amount"></ej:Field>
+            </Values>
+        </DataSource>
+        <ClientSideEvents Load="onLoad"/>
+        <DisplaySettings Mode="ChartAndGrid" />
+    </ej:PivotClient>
 
 {% endhighlight  %}	
 
-![](Layout-Customization_images/chartandgrid.png) 
+![](Layout-Customization_images/tileview.png) 
 
 ## Toggle Panel
 
-Toggle panel option lets the user to toggle the visibility of Axis Element Builder and Cube Dimension Browser panels in OlapClient with a use of a button. The button could be added to the control by using the `EnableTogglePanel` property under `DisplaySettings` option.  This property is disabled by default.
+Toggle panel option lets the user to toggle the visibility of Axis Element Builder and Cube Dimension Browser panels in PivotClient with a use of a button. The button could be added to the control by enabling the `EnableTogglePanel` property under `DisplaySettings` option.  This property is disabled by default.
 
 {% highlight html %}
 
-<ej:OlapClient Url="/OlapClient" Title="OLAP Browser" runat="server">
-    <DisplaySettings EnableTogglePanel="true" />
-</ej:OlapClient>
+    <ej:PivotClient  ID="PivotClient1"  runat="server">
+        <DataSource>
+            <Rows>
+                <ej:Field FieldName="Country" FieldCaption="Country"></ej:Field>
+            </Rows>
+            <Columns>
+                <ej:Field FieldName="Product" FieldCaption="Product"></ej:Field>
+            </Columns>
+            <Values>
+                <ej:Field FieldName="Amount" FieldCaption="Amount"></ej:Field>
+            </Values>
+        </DataSource>
+        <ClientSideEvents Load="onLoad"/>
+        <DisplaySettings EnableTogglePanel="true" />
+    </ej:PivotClient>
 
 {% endhighlight  %}	
 
@@ -130,13 +226,26 @@ Toggle panel option lets the user to toggle the visibility of Axis Element Build
 
 ## Maximized/Full Screen View
 
-Full screen view helps to visualize the PivotGrid and OlapChart controls inside OlapClient precisely according to the browser window size.  By selecting full screen icon in the toolbar, PivotGrid/OlapChart is maximized depending on the selected tab.  Drilldown action can also be performed in both PivotGrid and OlapChart in the maximized view.  This option is enabled by setting the `EnableFullScreen` property under `DisplaySettings` option to true.  The value is false by default.
+Full screen view helps to visualize the PivotGrid and PivotChart controls inside PivotClient precisely according to the browser window size.  By selecting full screen icon in the toolbar, the control which is in the view gets maximized.  Drilldown action can also be performed in both PivotGrid and PivotChart in the maximized view.  This option is enabled by setting the `EnableFullScreen` property under `DisplaySettings` option to true.  The value is false by default.
+
 
 {% highlight html %}
 
-<ej:OlapClient Url="/OlapClient" Title="OLAP Browser" runat="server">
-    <DisplaySettings EnableFullScreen="true" />
-</ej:OlapClient>
+    <ej:PivotClient  ID="PivotClient1"  runat="server">
+        <DataSource>
+            <Rows>
+                <ej:Field FieldName="Country" FieldCaption="Country"></ej:Field>
+            </Rows>
+            <Columns>
+                <ej:Field FieldName="Product" FieldCaption="Product"></ej:Field>
+            </Columns>
+            <Values>
+                <ej:Field FieldName="Amount" FieldCaption="Amount"></ej:Field>
+            </Values>
+        </DataSource>
+        <ClientSideEvents Load="onLoad" />
+        <DisplaySettings EnableFullScreen="true" />
+    </ej:PivotClient>
 
 {% endhighlight  %}	
 
@@ -146,32 +255,27 @@ The following screenshot shows the maximized view of PivotGrid.
 
 ![](Layout-Customization_images/maximizedview1.png) 
 
-## Grid Layout
-
-PivotGrid inside OlapClient control can be rendered in any of the following layouts.
-
-* Normal
-* NormalTopSummary
-* NoSummaries
-* ExcelLikeLayout
-
-The layout is set using the `GridLayout` property. By default, normal layout is set.
-
-{% highlight html %}
-
-<ej:OlapClient Url="/OlapClient" Title="OLAP Browser" runat="server" GridLayout="NoSummaries"></ej:OlapClient>
-
-{% endhighlight  %}	
-
-![](Layout-Customization_images/gridlayout.png) 
 
 ## Chart Types
 
-While loading the OlapClient initially, the OlapChart widget can be rendered in any one of the available chart types using the `ChartType` property.
+While loading the PivotClient initially, the PivotChart widget can be rendered in any one of the available chart types using the `ChartType` property.
 
 {% highlight html %}
 
-<ej:OlapClient Url="/OlapClient" Title="OLAP Browser" runat="server" ChartType="Column"></ej:OlapClient>
+    <ej:PivotClient   ID="PivotClient1" runat="server" ChartType="Column">
+        <DataSource>
+            <Rows>
+                <ej:Field FieldName="Country" FieldCaption="Country"></ej:Field>
+            </Rows>
+            <Columns>
+                <ej:Field FieldName="Product" FieldCaption="Product"></ej:Field>
+            </Columns>
+            <Values>
+                <ej:Field FieldName="Amount" FieldCaption="Amount"></ej:Field>
+            </Values>
+        </DataSource>
+        <ClientSideEvents Load="onLoad"/>
+    </ej:PivotClient>
 
 {% endhighlight  %}	
 
