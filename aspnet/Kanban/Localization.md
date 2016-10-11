@@ -68,6 +68,7 @@ Cards</td></tr>
 The following code example describes the above behavior. 
 
 {% highlight js %}
+
           <script type="text/javascript">
                 ej.Kanban.Locale["de-DE"] = {
                     EmptyCard: "Keine Karten angezeigt werden",
@@ -82,14 +83,14 @@ The following code example describes the above behavior.
                     Min: "Min.",
                     ItemsCount: "Artikel Graf :"
                 };
-            </script>
-    </script>
+            </script>    
 
 {% endhighlight  %}
 
 {% tabs %}
 
 {% highlight html %}
+
      <ej:Kanban ID="Kanban" runat="server" KeyField="Status" Locale="de-DE" EnableTotalCount="true">
                 <Columns>
                     <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
@@ -101,8 +102,11 @@ The following code example describes the above behavior.
                 <ClientSideEvents ContextClick="contextclick" />
                 <Fields Content="Summary" PrimaryKey="Id" Tag="Tags" SwimlaneKey="Assignee" />
       </ej:Kanban>
+
 {% endhighlight %}
+
 {% highlight c# %}
+
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -124,7 +128,9 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+
 {% endhighlight  %}
+
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.
@@ -137,9 +143,8 @@ By default, Kanban render its text and layout from left to right. To customize K
 
 The following code example describes the above behavior.
 
-The following code example describes the above behavior. 
-
 {% highlight js %}
+
             <script type="text/javascript">
                 ej.Kanban.Locale["ar-AE"] = {
                     EmptyCard: "لا بطاقات لعرض",
@@ -154,13 +159,13 @@ The following code example describes the above behavior.
                     Min: "دقيقة"
                 };
             </script>
-    </script>
 
 {% endhighlight  %}
 
 {% tabs %}
 
 {% highlight html %}
+
      <ej:Kanban ID="Kanban" runat="server" Locale="ar-AE" EnableRTL="true" AllowTitle="true" KeyField="Status">
                 <Columns>
                     <ej:KanbanColumn HeaderText="تراكم الأعمال غير المنجزة" Key="Open" />
@@ -171,8 +176,11 @@ The following code example describes the above behavior.
                 </Columns>
                 <Fields Content="Summary" ImageUrl="ImgUrl" PrimaryKey="Id" SwimlaneKey="Assignee" />
       </ej:Kanban>
+
 {% endhighlight %}
+
 {% highlight c# %}
+
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -196,6 +204,7 @@ The following code example describes the above behavior.
         }
 
 {% endhighlight  %}
+
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.

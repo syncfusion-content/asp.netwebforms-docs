@@ -32,9 +32,11 @@ The following code example describes the above behavior.
                 </FilterSettings>
                 <Fields Content="Summary" PrimaryKey="Id" Tag="Tags" />
      </ej:Kanban>
+
 {% endhighlight  %}
 
 {% highlight c# %}
+
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -56,6 +58,7 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+           
 {% endhighlight  %}
     
 {% endtabs %}  

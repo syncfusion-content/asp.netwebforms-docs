@@ -18,8 +18,10 @@ To specify the `ScrollSettings.Height` and `ScrollSettings.Width` in pixel, by s
 
 The following code example describes the above behavior.
 
-{% tabs %} 
+{% tabs %}
+
 {% highlight html %}
+
      <ej:Kanban ID="Kanban" runat="server" KeyField="Status" AllowScrolling="true">
                 <ScrollSettings Width="900" Height="400" />
                 <Columns>
@@ -29,8 +31,11 @@ The following code example describes the above behavior.
                 </Columns>
                 <Fields Content="Summary" PrimaryKey="Id" Tag="Tags" />
       </ej:Kanban>
+
 {% endhighlight  %}
+
 {% highlight c# %}
+
 	      List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -52,7 +57,9 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+
 {% endhighlight  %}
+
 {% endtabs %} 
 
 The following output is displayed as a result of the above code example.
@@ -65,8 +72,10 @@ To specify the `ScrollSettings.Height` and `ScrollSettings.Width` percentage, by
 
 The following code example describes the above behavior.
 
-{% tabs %} 
+{% tabs %}
+
 {% highlight html %}
+
      <ej:Kanban ID="Kanban" runat="server" KeyField="Status" AllowScrolling="true">
                 <ScrollSettings Width="70%" Height="70%" />
                 <Columns>
@@ -77,7 +86,9 @@ The following code example describes the above behavior.
                 <Fields Content="Summary" PrimaryKey="Id" Tag="Tags" />
      </ej:Kanban>
 {% endhighlight  %}
+
 {% highlight c# %}
+
 	      List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -99,7 +110,9 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+
 {% endhighlight  %}
+
 {% endtabs %} 
 
 The following output is displayed as a result of the above code example.
@@ -113,7 +126,9 @@ To specify the `ScrollSettings.Height` and `ScrollSettings.Width` as auto, then 
 The following code example describes the above behavior.
 
 {% tabs %} 
+
 {% highlight html %}
+
      <ej:Kanban ID="Kanban" runat="server" KeyField="Status" AllowScrolling="true">
                 <ScrollSettings Width="auto" Height="400" />
                 <Columns>
@@ -124,8 +139,11 @@ The following code example describes the above behavior.
                 </Columns>
                 <Fields Content="Summary" PrimaryKey="Id" Tag="Tags" />
       </ej:Kanban>
+
 {% endhighlight  %}
+
 {% highlight c# %}
+
 	      List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -147,7 +165,9 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+
 {% endhighlight  %}
+
 {% endtabs %} 
 
 The following output is displayed as a result of the above code example.
@@ -161,7 +181,9 @@ Set `AllowFreezeSwimlane` as true. This enables scrolling with freezing of swim 
 The following code example describes the above behavior.
 
 {% tabs %} 
+
 {% highlight html %}
+
       <ej:Kanban ID="Kanban" runat="server" KeyField="Status" AllowScrolling="true">
                 <ScrollSettings Width="auto" Height="400" AllowFreezeSwimlane="true" />
                 <Columns>
@@ -172,8 +194,11 @@ The following code example describes the above behavior.
                 </Columns>
                 <Fields Content="Summary" PrimaryKey="Id" Tag="Tags" SwimlaneKey="Assignee" />
       </ej:Kanban>
+
 {% endhighlight  %}
+
 {% highlight c# %}
+
 	 List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
@@ -195,7 +220,9 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+
 {% endhighlight  %}
+
 {% endtabs %} 
 
 The following output is displayed as a result of the above code example.
