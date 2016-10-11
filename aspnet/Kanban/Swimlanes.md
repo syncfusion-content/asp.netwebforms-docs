@@ -64,6 +64,8 @@ The following output is displayed as a result of the above code example.
 
 You can set 'AllowDragAndDrop' property of 'SwimlaneSettings' as true to enable Drag and Drop between the swim lanes.
 
+If a card is to be dragged in the same swim lane, only a droppable target cell is added to the dotted line border. If a card is dragged from one swim lane to another, all the Kanban cells will be added to the dotted line borders, except the dragged card cell.
+
 The following code example describes the above behavior.
 
 {% tabs %}
