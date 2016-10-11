@@ -23,7 +23,7 @@ The property `ClientExportMode` takes any one of the following value:
 
 ## JSON Export
     
-I>By default JSON Export mode will be applied for server and client mode.
+I>By default, exporting is done with the use of JSON Records maintained in client-side for both client and server modes.
 
 In order to make use of exporting with client side JSON data. The control can be exported by invoking “beforeExport” event, with an appropriate export option as parameter.
 
