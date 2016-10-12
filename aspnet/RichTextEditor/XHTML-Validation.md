@@ -5,7 +5,7 @@ description: XHTML Validation to format the RichTextEditor control's content
 platform: aspnet
 control: RTE
 documentation: ug
-keywords: RichTextEditor, XHTML Validation, RTE import, RTE export
+keywords: RichTextEditor, XHTML Validation, RTE import, RTE export, export to PDF, export to Word
 
 ---
 # XHTML Validation
@@ -38,30 +38,19 @@ The editor checks the following settings on validation:
   
 # Import 
 
-Import feature provides support to import a word document into the editor textarea. To enable import option in the RTE tool bar,  `import` toolbar items needs to be added in RTE toolbar toolsList using `importExport` which adds the tool in the toolbar. When you click the toolbar import icon, it opens a dialog to browse the select a word file. The selected word file will be imported into the editor textarea.
+Import feature provides support to import a word document into the editor textarea. To enable import option in the RTE tool bar,  `import` toolbar items needs to be added in RTE toolbar toolsList using `importExport` which adds the tool in the toolbar. In `ImportSettings` Url option, the server page for import is needed to be mapped. When you click the toolbar import icon, it opens a dialog to browse the select a word file. The selected word file will be imported into the editor textarea.
 
 {% tabs %}
  
 {% highlight html %}
 
     <ej:RTE ID="ImportExportSample" Width="100%" Height="100%"  runat="server" MinWidth="200px" >
-            <RTEContent>
-                &lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-    &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
-    client side. Customer easy to edit the contents and get the HTML content for
-    the displayed content. A rich text editor control provides users with a toolbar
-    that helps them to apply rich text formats to the text entered in the text
-    area. &lt;/p&gt;
-    &lt;p&gt;&lt;b&gt;Functional
-    Specifications/Requirements:&lt;/b&gt;&lt;/p&gt;
-    &lt;ol&gt;&lt;li&gt;&lt;p&gt;Provide
-    the tool bar support, it’s also customizable.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Options
-    to get the HTML elements with styles.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Support
-    to insert image from a defined path.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Footer
-    elements and styles(tag / Element information , Action button (Upload, Cancel))&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Re-size
-    the editor support. &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Provide
-    efficient public methods and client side events.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Keyboard
-    navigation support.&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;
+        <RTEContent>
+            &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+            client side. Customer easy to edit the contents and get the HTML content for
+            the displayed content. A rich text editor control provides users with a toolbar
+            that helps them to apply rich text formats to the text entered in the text
+            area. &lt;/p&gt;
         </RTEContent>
         <ImportSettings Url="Import.ashx" />
         <Tools ImportExport="import"></Tools>
@@ -155,30 +144,19 @@ Full list of assemblies needed for RTE Import are as follows
 
 # Export 
 
-Export feature provides support to export editor textarea content into word and PDF files. To enable Export option in the RTE tool bar,  `wordExport` , `pdfExport` toolbar items needs to be added in RTE toolbar toolsList using `importExport` which adds the tool in the toolbar. When you click the toolbar pdfExport or wordExport icon, it performs server side XHTML Validation on the editor textarea content and exports it into a Word or pdf File.
+Export feature provides support to export editor textarea content into word and PDF files. To enable Export option in the RTE tool bar,  `wordExport` , `pdfExport` toolbar items needs to be added in RTE toolbar toolsList using `importExport` which adds the tool in the toolbar. `ExportToWordSettings` consists of Url and FileName sub properties. In Url property, the server page for export to word is needed to be mapped and In FileName property, the name for the exported word file is given. `ExportToPdfSettings` consists of Url and FileName sub properties. In Url property, the server page for export to pdf is needed to be mapped and In FileName property, the name for the exported pdf file is given. When you click the toolbar pdfExport or wordExport icon, it performs server side XHTML Validation on the editor textarea content and exports it into a Word or pdf File.
 
 {% tabs %}
  
 {% highlight html %}
 
     <ej:RTE ID="ImportExportSample" Width="100%" Height="100%"  runat="server" MinWidth="200px" >
-            <RTEContent>
-                &lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-    &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
-    client side. Customer easy to edit the contents and get the HTML content for
-    the displayed content. A rich text editor control provides users with a toolbar
-    that helps them to apply rich text formats to the text entered in the text
-    area. &lt;/p&gt;
-    &lt;p&gt;&lt;b&gt;Functional
-    Specifications/Requirements:&lt;/b&gt;&lt;/p&gt;
-    &lt;ol&gt;&lt;li&gt;&lt;p&gt;Provide
-    the tool bar support, it’s also customizable.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Options
-    to get the HTML elements with styles.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Support
-    to insert image from a defined path.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Footer
-    elements and styles(tag / Element information , Action button (Upload, Cancel))&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Re-size
-    the editor support. &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Provide
-    efficient public methods and client side events.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Keyboard
-    navigation support.&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;
+        <RTEContent>
+            &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+            client side. Customer easy to edit the contents and get the HTML content for
+            the displayed content. A rich text editor control provides users with a toolbar
+            that helps them to apply rich text formats to the text entered in the text
+            area. &lt;/p&gt;
         </RTEContent>
         <ExportToWordSettings Url="ImportExport.aspx/ExportToWord" FileName="WordExport" />
         <ExportToPdfSettings Url="ImportExport.aspx/ExportToPDF" FileName="PdfExport" />
@@ -199,7 +177,8 @@ Export feature provides support to export editor textarea content into word and 
             if (RequestURL.Contains(exportDoc)) ExportToWord();
             else if (RequestURL.Contains(exportPdf)) ExportToPDF();
         }
-      
+        
+        //Export to Word Document
         public void ExportToWord()
         {
 
@@ -210,7 +189,7 @@ Export feature provides support to export editor textarea content into word and 
             document.Save(FileName + ".docx", FormatType.Docx, HttpContext.Current.Response, HttpContentDisposition.Attachment);
         }
 
-     
+        //Export to PDF Document
         public void ExportToPDF()
         {
             string RTEID = HttpContext.Current.Request.QueryString["rteid"];
