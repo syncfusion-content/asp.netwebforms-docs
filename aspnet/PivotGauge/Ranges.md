@@ -17,7 +17,7 @@ documentation: ug
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>
-            <ej:CircularScales>
+            <ej:CircularScales ShowRanges="true">
                 <RangeCollection>
                     <ej:CircularRanges DistanceFromScale="10"></ej:CircularRanges>
                 </RangeCollection>
@@ -48,7 +48,7 @@ N> By default, placement takes the value “near”, whereas other enumeration v
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>
-            <ej:CircularScales>
+            <ej:CircularScales ShowRanges="true">
                 <RangeCollection>
                     <ej:CircularRanges StartValue="20" EndValue="50" StartWidth="2" EndWidth="6" BackgroundColor="yellow" DistanceFromScale="20">
                         <Border Color="red" Width="2" />
@@ -75,7 +75,7 @@ Multiple ranges can be added in `RangeCollection` to the scales option within th
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>
-            <ej:CircularScales>
+            <ej:CircularScales ShowRanges="true">
                 <RangeCollection>
                     <ej:CircularRanges StartValue="0" EndValue="10" BackgroundColor="green" DistanceFromScale="-5"></ej:CircularRanges>
                     <ej:CircularRanges StartValue="10" EndValue="30" BackgroundColor="yellow" DistanceFromScale="-5"></ej:CircularRanges>

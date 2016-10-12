@@ -69,12 +69,15 @@ Multiple ranges can be added in `CustomLabelCollection` to the scales option wit
                 <CustomLabelCollection>
                     <ej:CircularCustomLabel Color="red">
                         <Position X="180" Y="150" />
+                        <Font FontFamily="Segoe UI" FontStyle="Normal" Size="12px"></Font>
                     </ej:CircularCustomLabel>
                     <ej:CircularCustomLabel Color="green">
                         <Position X="180" Y="320" />
+                        <Font FontFamily="Segoe UI" FontStyle="Normal" Size="10px"></Font>
                     </ej:CircularCustomLabel>
                     <ej:CircularCustomLabel Color="blue">
                         <Position X="180" Y="290" />
+                        <Font FontFamily="Segoe UI" FontStyle="Normal" Size="10px"></Font>
                     </ej:CircularCustomLabel>
                 </CustomLabelCollection>
             </ej:CircularScales>

@@ -14,7 +14,6 @@ documentation: ug
 Following are the built-in themes available in the PivotChart.
 
 * flatlight
-* flatdark
 * gradientlight
 * gradientdark
 * azure
@@ -23,12 +22,13 @@ Following are the built-in themes available in the PivotChart.
 * limedark
 * saffron
 * saffrondark
-* gradient-azure
-* gradient-azuredark
-* gradient-lime
-* gradient-limedark
-* gradient-saffron
-* gradient-saffrondark
+* gradientlight
+* gradientdark
+* highcontrast01
+* highcontrast02
+* material
+* office365
+* bootstrap
 
 By using the `Theme` property, you can set the desired theme in PivotChart. By default, **"Flat Light"** theme is applied to PivotChart.
 

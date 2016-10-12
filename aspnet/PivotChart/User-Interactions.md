@@ -12,7 +12,7 @@ documentation: ug
 ##Tooltip
 
 ###Enable Tooltip for Data Points
-Tooltip for the data points can be enabled using the **"Visible"** option of the `Tooltip` property under **"commonSeriesOptions"** of the PivotChart.
+Tooltip for the data points can be enabled using the **"Visible"** option of the `Tooltip` property under **"CommonSeriesOptions"** of the PivotChart.
 
 {% highlight html %}
 
@@ -124,6 +124,7 @@ N> By default, the value for the `Type` option in zooming is “x,y” (indicati
 
 ###Marker Shape Customization
 In PivotChart, you can customize the marker `Shape` with following symbols.
+
 * Rectangle
 * Circle
 * Cross

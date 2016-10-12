@@ -11,7 +11,7 @@ documentation: ug
 
 ## Localization in PivotChart
 
-We can localize the PivotChart controls text with a collection of localized strings using **"ej.PivotChart.locale"** for different cultures. By default, the PivotChart control is localized in **“en-US”.**
+We can localize the PivotChart controls text with a collection of localized strings using **"ej.PivotChart.Locale"** for different cultures. By default, the PivotChart control is localized in **“en-US”.**
 
 Following code example illustrates on how to localize PivotChart based on **“French”** culture.
 
@@ -85,7 +85,7 @@ Content displayed within the PivotChart control are obtained from the OLAP Cube.
 * To get localized data from OLAP Cube, we need to set **"Locale Identifier"** in the connection string to a specific culture in the **"Data"** property present inside **"DataSource"**. 
 * To bind the globalized content in PivotChart control, we need to set **"Locale"** property to a specific culture and want to refer specific culture file in the sample.
  
-N> Culture files are present under **"Syncfusion\EssentialStudio\14.2.0.26\Web\Samples\Web\Scripts\cultures".**
+N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\Web\Samples\Web\Scripts\cultures".**
  
 {% highlight html %}
 
