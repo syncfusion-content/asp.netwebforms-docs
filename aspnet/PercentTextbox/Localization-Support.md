@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization Support | PercentageTextBox | ASP.NET | Syncfusion
-description: localization support
+title: Globalization Support | PercentageTextBox | ASP.NET | Syncfusion
+description: globalization support
 platform: aspnet
 control: PercentageTextBox
 documentation: ug
@@ -23,8 +23,11 @@ More than 350 culture specific files are available to localize the value. To kno
 <tr>
 <td>
 
-    (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\i18n
-
+    '(installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\i18n'
+</td>
+</tr>
+<tr>
+<td>
     For example, If you have installed the Essential Studio package within C:\Program Files (x86), then navigate to the below location, 
     C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\i18n
 

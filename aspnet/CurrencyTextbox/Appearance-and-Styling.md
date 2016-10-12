@@ -11,12 +11,12 @@ documentation: ug
 
 ## Theme
 
-The CurrencyTextbox control’s style and appearance can be controlled based on CSS classes. In order to apply styles to the CurrencyTextbox control, refer to the files, ej.widgets.core.min.css and ej.theme.min.css. When the file ej.widgets.all.min.css is referred, then it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project, as ej.widgets.all.min.css is the combination of these two files. 
+The CurrencyTextbox control’s style and appearance can be controlled based on CSS classes. In order to apply styles to the CurrencyTextbox control, refer to the files, ej.widgets.core.min.css and ej.theme.min.css. When the file ej.web.all.min.css is referred, then it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project, as ej.web.all.min.css is the combination of these two files. 
 
-By default, there are 13 themes available for the CurrencyTextbox control,
+By default, there are 17 themes available for the CurrencyTextbox control,
 
-* default-theme
 * bootstrap
+* flat-azure
 * flat-azure-dark
 * fat-lime
 * flat-lime-dark
@@ -28,6 +28,10 @@ By default, there are 13 themes available for the CurrencyTextbox control,
 * gradient-lime-dark
 * gradient-saffron
 * gradient-saffron-dark
+* high-contrast-01
+* high-contrast-02
+* material
+* office-365
 
 ## CSS Class
 
