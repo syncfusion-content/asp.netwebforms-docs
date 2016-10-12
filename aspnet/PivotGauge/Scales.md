@@ -17,7 +17,7 @@ Scale can be added within the PivotGauge control.
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>
-            <ej:CircularScales Radius="150"></ej:CircularScales>
+            <ej:CircularScales ShowScaleBar="true" Radius="150"></ej:CircularScales>
         </Scales>
     </ej:PivotGauge>
 
@@ -40,7 +40,7 @@ Pointer Cap is a circular shape element which is located at the center of the Pi
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>
-            <ej:CircularScales Radius="150">
+            <ej:CircularScales ShowScaleBar="true" Radius="150">
                 <PointerCap BackgroundColor="yellow" BorderColor="green" Radius="5" BorderWidth="2"></PointerCap>
             </ej:CircularScales>
         </Scales>
@@ -63,13 +63,13 @@ The appearance of the scale can be customized through the following properties.
 * **MinorIntervalValue** – sets the interval between major ticks in the scale.
 * **Direction** – sets the direction of the scale.  By default it takes “Clockwise” direction.
 
-The `ShowIndicators`, `ShowTicks`, `ShowRanges`, `ShowPointers` and `ShowScaleBar` properties are used to enable/disable the indicators, ticks, ranges, pointers and scale bar respectively.  By default, these properties are set to true. 
+The `ShowIndicators`, `ShowTicks`, `ShowRanges`, `ShowPointers` and `ShowScaleBar` properties are used to enable/disable the indicators, ticks, ranges, pointers and scale bar respectively.  By default, `ShowTicks` and `ShowPointers` are set to true, other properties are set as false. 
 
 {% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server">
         <Scales>
-            <ej:CircularScales Radius="120" BackgroundColor="yellow" Size="10" Minimum="20" Maximum="120" MajorIntervalValue="20" MinorIntervalValue="5" Direction="CounterClockwise">
+            <ej:CircularScales ShowScaleBar="true" Radius="120" BackgroundColor="yellow" Size="10" Minimum="20" Maximum="120" MajorIntervalValue="20" MinorIntervalValue="5" Direction="CounterClockwise">
                 <Border Color="blue" Width="3" />
             </ej:CircularScales>
         </Scales>
