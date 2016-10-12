@@ -234,3 +234,4 @@ Export Helper functions are available in the Assembly `Syncfusion.EJ.Export`, wh
 
 
 ![](XHTML-Validation_images/export_images.png)
+![](XHTML-Validation_images/export_pdf_images.png)
