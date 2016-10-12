@@ -20,4 +20,4 @@ Essential ASP.NET Editor includes Numeric, Percentage, and Currency TextBox con
 * Keyboard Navigation - You can interact with TextBoxes by using a keyboard.
 * RTL Support - Support for right-to-left alignment of the TextBox input.
 * Decimal Values - You can configure TextBoxes to accept decimal values.
-* Themes - Essential JavaScript TextBox consist of 16 built-in themes, and also support custom skins for creating user-defined themes.
+* Themes - Essential JavaScript TextBox consist of 17 built-in themes, and also support custom skins for creating user-defined themes.

@@ -13,9 +13,10 @@ documentation: ug
 
 The NumericTextbox controls’ style and appearance can be controlled based on the CSS classes. In order to apply styles to the NumericTextbox control, you need to refer two files namely, ej.widgets.core.min.css and ej.theme.min.css. When the ej.web.all.min.css file is referred, then it is not necessary to include the ej.widgets.core.min.css and ej.theme.min.css files in your project, as ej.web.all.min.css is the combination of these two. 
 
-By default, there are 16 themes support available for NumericTextbox control namely
+By default, there are 17 themes support available for NumericTextbox control namely
 
 * bootstrap
+* flat-azure
 * flat-azure-dark
 * fat-lime
 * flat-lime-dark

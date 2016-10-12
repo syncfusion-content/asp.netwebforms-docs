@@ -13,9 +13,10 @@ documentation: ug
 
 The PercentageTextbox control’s style and appearance can be controlled based on CSS classes. In order to apply styles to the PercentageTextbox control, refer to two files namely, ej.widgets.core.min.css and ej.theme.min.css. When you refer to the file ej.web.all.min.css, then it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project, as ej.web.all.min.css is the combination of these two. 
 
-By default, there are 16 themes support available for PercentageTextbox control namely,
+By default, there are 17 themes support available for PercentageTextbox control namely,
 
 * bootstrap
+* flat-azure
 * flat-azure-dark
 * fat-lime
 * flat-lime-dark
