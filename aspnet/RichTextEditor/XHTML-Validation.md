@@ -14,12 +14,12 @@ The editor provides option to validate its content through the EnableXHTML prope
 
 {% highlight html %}
 
-<ej:RTE ID="RTE1" runat="server" EnableXHTML="true">
-    <RTEContent>
-            The Rich Text Editor  (RTE) control is an easy to render in client side. Customer easy to edit the contents and get the HTML content for the displayed content. A rich text editor control provides users with a toolbar that helps them to apply rich text formats to the text entered  in the text area.
-    </RTEContent>
-</ej:RTE>
-	
+  <ej:RTE ID="RTE1" runat="server" EnableXHTML="true">
+      <RTEContent>
+              The Rich Text Editor  (RTE) control is an easy to render in client side. Customer easy to edit the contents and get the HTML content for the displayed content. A rich text editor control provides users with a toolbar that helps them to apply rich text formats to the text entered  in the text area.
+      </RTEContent>
+  </ej:RTE>
+    
 {% endhighlight %}
 
 The editor checks the following settings on validation:
@@ -34,3 +34,4 @@ The editor checks the following settings on validation:
   * Must be in lowercase 
   * All opening tags must be closed
   * Allows only the valid HTML elements
+
