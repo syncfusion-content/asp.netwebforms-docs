@@ -120,7 +120,7 @@ To modify Kanban appearance, you need to override default CSS of Kanban. Please 
                 e-swimlanerow
             </td>
             <td>
-               This class is added to all swim lane â€˜trâ€™s in Kanban.   
+               This class is added to all swim lane ‘tr’s in Kanban.   
             </td>
         </tr>
         <tr>
@@ -128,7 +128,7 @@ To modify Kanban appearance, you need to override default CSS of Kanban. Please 
               e-columnrow
             </td>
             <td>
-              This class is added to all next row of swimlane â€˜trâ€™s in Kanban
+              This class is added to all next row of swimlane ‘tr’s in Kanban
             </td>
         </tr>
         <tr>
