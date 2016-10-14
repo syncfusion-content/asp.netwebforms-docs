@@ -7,7 +7,7 @@ control: PivotGrid
 documentation: ug
 ---
 
-#Exporting
+# Exporting
 
 The PivotGrid control can be exported to the following file formats.
 
@@ -18,6 +18,10 @@ The PivotGrid control can be exported to the following file formats.
 
 The PivotGrid control can be exported by invoking **“exportPivotGrid”** method, with an appropriate export option as parameter.
 
+## JSON Export
+
+I> By default JSON export mode will be applied for server and client mode.
+
 {% highlight html %}
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -25,14 +29,14 @@ The PivotGrid control can be exported by invoking **“exportPivotGrid”** meth
 
 <body>
     //...
-     //If you want to render PivotGrid in Client Mode.
+    //For PivotGrid in Client Mode.
     <ej:PivotGrid ID="PivotGrid1" runat="server" OnServerExcelExporting="PivotGrid_ServerExcelExporting" ClientIDMode="Static">
         <DataSource>
         </DataSource>
      </ej:PivotGrid>
-     
-     //If you want to render PivotGrid in Server Mode.
-    <ej:PivotGrid ID="PivotGrid1" runat="server" Url="/RelationalService.svc" IsResponsive="true">
+    
+    //For PivotGrid in Server Mode.
+    <ej:PivotGrid ID="PivotGrid1" runat="server" Url="../RelationalService" IsResponsive="true">
     </ej:PivotGrid>
     
     <ej:Button runat="server" ClientSideOnClick="exportBtnClick" Text="Export">
@@ -40,12 +44,8 @@ The PivotGrid control can be exported by invoking **“exportPivotGrid”** meth
     <script type="text/javascript">
         function exportBtnClick(args) {
             var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-            //If you render PivotGrid in Client Mode, set the export option like below.
             pGridObj.exportPivotGrid("excelExport","fileName");
-            
-            //If you render PivotGrid in Server Mode, set the export option like below.
-            pGridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.Excel);;
-            }
+        }
     </script>
 </body>
 
@@ -53,11 +53,14 @@ The PivotGrid control can be exported by invoking **“exportPivotGrid”** meth
 
 {% endhighlight %}
 
-To achieve exporting in client mode, we need to add **"Syncfusion.EJ.Export"** dependency library into the application.
+To achieve exporting in JSON mode, we need to add **"Syncfusion.EJ.Export"** dependency library into the application.
 
-When PivotGrid is rendered in Client Mode, a server side event method needs to be added in code behind file of the application and we need to import **"Syncfusion.EJ.Export"** namespace in the code behind file. 
+When PivotGrid is rendered, a server side event method needs to be added in code behind file of the application and we need to import **"Syncfusion.EJ.Export"** namespace in the code behind file. 
 
 {% highlight c# %}
+
+//...
+using Syncfusion.EJ.Export;
 
 protected void PivotGrid_ServerExcelExporting(object sender, Syncfusion.JavaScript.Web.PivotGridEventArgs e)
 {
@@ -69,11 +72,230 @@ protected void PivotGrid_ServerExcelExporting(object sender, Syncfusion.JavaScri
         
 {% endhighlight %}
 
-When PivotGrid is rendered in Server Mode, a service method needs to be added in WCF/WebAPI for server side operations.
+### Excel Export
+
+User can export the contents of PivotGrid to an Excel document for future archival, references and analysis purposes.
+
+To achieve Excel export, the **"excelExport"** server side event is triggered and file name is sent as the parameter.
+
+{% highlight html %}
+
+    <ej:PivotGrid ID="PivotGrid1" runat="server" OnServerExcelExporting="PivotGrid_ServerExcelExporting" ClientIDMode="Static">
+        <DataSource>
+        </DataSource>
+     </ej:PivotGrid>
+    <ej:Button runat="server" ClientSideOnClick="exportBtnClick" Text="Export">
+    </ej:Button>
+    <script type="text/javascript">
+       function exportBtnClick(args)
+       {
+          var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
+          pGridObj.exportPivotGrid("excelExport","fileName");
+       }
+    </script>
+    
+{% endhighlight %}  
+
+Following server side event method need to be added in code behind file of the application.
+
+{% highlight c# %}
+
+//...
+using Syncfusion.EJ.Export;
+
+protected void PivotGrid_ServerExcelExporting(object sender, Syncfusion.JavaScript.Web.PivotGridEventArgs e)
+{
+    PivotGridExcelExport pGrid = new PivotGridExcelExport();
+    dynamic args = e.Arguments;
+    string fileName = "Sample";
+    pGrid.ExportToExcel(fileName, args["args"].ToString(), HttpContext.Current.Response);
+}
+
+{% endhighlight %}
+
+### Word Export
+
+User can export the contents of PivotGrid to a Word document for future archival, references and analysis purposes.
+
+To achieve Word export, the **"wordExport"** server side event is triggered and file name is sent as the parameter.
+
+{% highlight html %}
+
+    <ej:PivotGrid ID="PivotGrid1" runat="server" OnServerWordExporting="PivotGrid_ServerWordExporting" ClientIDMode="Static">
+        <DataSource>
+        </DataSource>
+     </ej:PivotGrid>
+    <ej:Button runat="server" ClientSideOnClick="exportBtnClick" Text="Export">
+    </ej:Button>
+    <script type="text/javascript">
+       function exportBtnClick(args)
+       {
+          var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
+          pGridObj.exportPivotGrid("wordExport","fileName");
+       }
+    </script>
+    
+{% endhighlight %}  
+
+Following server side event method need to be added in code behind file of the application.
+
+{% highlight c# %}
+
+//...
+using Syncfusion.EJ.Export;
+
+protected void PivotGrid_ServerWordExporting(object sender, Syncfusion.JavaScript.Web.PivotGridEventArgs e)
+{
+     PivotGridWordExport pGrid = new PivotGridWordExport();
+     dynamic args = e.Arguments;
+     string fileName = "Sample";
+     pGrid.ExportToWord(fileName, args["args"].ToString(), HttpContext.Current.Response);
+}
+
+{% endhighlight %}
+
+### PDF Export
+
+User can export the contents of PivotGrid to a PDF document for future archival, references and analysis purposes.
+
+To achieve Word export, the **"pdfExport"** server side event is triggered and file name is sent as the parameter.
+
+{% highlight html %}
+
+    <ej:PivotGrid ID="PivotGrid1" runat="server" OnServerPDFExporting="PivotGrid_ServerPDFExporting" ClientIDMode="Static">
+        <DataSource>
+        </DataSource>
+     </ej:PivotGrid>
+    <ej:Button runat="server" ClientSideOnClick="exportBtnClick" Text="Export">
+    </ej:Button>
+    <script type="text/javascript">
+       function exportBtnClick(args)
+       {
+          var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
+          pGridObj.exportPivotGrid("pdfExport","fileName");
+       }
+    </script>
+    
+{% endhighlight %}  
+
+Following server side event method need to be added in code behind file of the application.
+
+{% highlight c# %}
+
+//...
+using Syncfusion.EJ.Export;
+
+protected void PivotGrid_ServerPDFExporting(object sender, Syncfusion.JavaScript.Web.PivotGridEventArgs e)
+{
+     PivotGridPDFExport pGrid = new PivotGridPDFExport();
+     dynamic args = e.Arguments;
+     string fileName = "Sample";
+     pGrid.ExportToPDF(fileName, args["args"].ToString(), HttpContext.Current.Response);
+}
+
+{% endhighlight %}
+
+### CSV Export
+
+User can export the contents of PivotGrid to a CSV document for future archival, references and analysis purposes.
+
+To achieve CSV export, the **"csvExport"** server side event is triggered and file name is sent as the parameter.
+
+{% highlight html %}
+
+    <ej:PivotGrid ID="PivotGrid1" runat="server" OnServerCSVExporting="PivotGrid_ServerCSVExporting" ClientIDMode="Static">
+        <DataSource>
+        </DataSource>
+     </ej:PivotGrid>
+    <ej:Button runat="server" ClientSideOnClick="exportBtnClick" Text="Export">
+    </ej:Button>
+    <script type="text/javascript">
+       function exportBtnClick(args)
+       {
+          var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
+          pGridObj.exportPivotGrid("csvExport","fileName");
+       }
+    </script>
+    
+{% endhighlight %}  
+
+Following server side event method need to be added in code behind file of the application.
+
+{% highlight c# %}
+
+//...
+using Syncfusion.EJ.Export;
+
+protected void PivotGrid_ServerCSVExporting(object sender, Syncfusion.JavaScript.Web.PivotGridEventArgs e)
+{
+     PivotGridCSVExport pGrid = new PivotGridCSVExport();
+     dynamic args = e.Arguments;
+     string fileName = "Sample";
+     pGrid.ExportToCSV(fileName, args["args"].ToString(), HttpContext.Current.Response);
+}
+
+{% endhighlight %}
+
+### Customize the export document name
+
+For customizing file name, we need to send file name as parameter to the **“exportPivotGrid”**  method along with server side trigger event.
+
+{% highlight js %}
+
+function exportBtnClick(args)
+{
+    var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
+    pGridObj.exportPivotGrid("excelExport","fileName");
+}
+ 
+{% endhighlight %}
+
+## PivotEngine Export
+
+I> This feature is applicable only at server mode operation.
+
+In order to perform exporting with the use of PivotEngine available in server-side, the 'url' property obtained in the “BeforeExport” event is set to the value "server" as shown below.
+
+{% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+//...
+
+<body>
+    //...
+
+    <ej:PivotGrid ID="PivotGrid1" runat="server" Url="/RelationalService" IsResponsive="true">
+        <ClientSideEvents  BeforeExport="Export"/>
+    </ej:PivotGrid>
+    
+    <ej:Button runat="server" ClientSideOnClick="exportBtnClick" Text="Export">
+    </ej:Button>
+    <script type="text/javascript">
+        function exportBtnClick(args) {
+            var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
+            pGridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.Excel);;
+        }
+        function Export(args) {
+            args.url = "server";
+        }
+    </script>
+</body>
+
+</html>                                            
+
+{% endhighlight %}
+
+When PivotGrid is rendered in server mode, a service method needs to be added in WCF/WebAPI for server side operations.
 
 For WebAPI controller, the below method needs to be added.
 
 {% highlight c# %}
+
+//...
+using Syncfusion.Compression.Base;
+using Syncfusion.XlsIO;
+using Syncfusion.DocIO.Base;
+using Syncfusion.Pdf.Base;
 
 [System.Web.Http.ActionName("Export")]
 [System.Web.Http.HttpPost]
@@ -92,6 +314,12 @@ For WCF service, the below method needs to be added.
 
 {% highlight c# %}
 
+//...
+using Syncfusion.Compression.Base;
+using Syncfusion.XlsIO;
+using Syncfusion.DocIO.Base;
+using Syncfusion.Pdf.Base;
+
 public void Export(System.IO.Stream stream)
 {
     System.IO.StreamReader sReader = new System.IO.StreamReader(stream);
@@ -104,47 +332,9 @@ public void Export(System.IO.Stream stream)
 
 {% endhighlight %}
 
-##Excel Export
+### Excel Export
 
-User can export contents of the PivotGrid to Excel document for future archival, references and analysis purposes.
-
-###Client Mode
-
-To achieve Excel export, server side trigger event **"excelExport"** and file name is sent as the parameter.
-
-{% highlight html %}
-
-    <ej:PivotGrid ID="PivotGrid1" runat="server" OnServerExcelExporting="PivotGrid_ServerExcelExporting" ClientIDMode="Static">
-        <DataSource>
-        </DataSource>
-     </ej:PivotGrid>
-    <ej:Button runat="server" ClientSideOnClick="exportBtnClick" Text="Export">
-    </ej:Button>
-    <script type="text/javascript">
-       function exportBtnClick(args)
-       {
-          var pGridObj = $('#PivotGrid1').data("ejPivotGrid ");
-          pGridObj.exportPivotGrid("excelExport","fileName");
-       }
-    </script>
-    
-{% endhighlight %}  
-
-Following server side event method need to be added in code behind file of the application.
-
-{% highlight c# %}
-
-protected void PivotGrid_ServerExcelExporting(object sender, Syncfusion.JavaScript.Web.PivotGridEventArgs e)
-{
-    PivotGridExcelExport pGrid = new PivotGridExcelExport();
-    dynamic args = e.Arguments;
-    string fileName = "Sample";
-    pGrid.ExportToExcel(fileName, args["args"].ToString(), HttpContext.Current.Response);
-}
-
-{% endhighlight %}
-
-###Server Mode
+User can export the contents of PivotGrid to an Excel document for future archival, references and analysis purposes.
 
 To achieve Excel export, we need to add the following dependency libraries into the application.
 
@@ -164,48 +354,9 @@ function exportBtnClick(args)
 
 {% endhighlight %}  
 
-![](Exporting_images/ExportPivotExcel.png)
+### Word Export
 
-##Word Export
-User can export contents of the PivotGrid to Word document for future archival, references and analysis purposes.
-
-###Client Mode
-
-To achieve Word export, server side trigger event **"wordExport"** and file name is sent as the parameter.
-
-{% highlight html %}
-
-    <ej:PivotGrid ID="PivotGrid1" runat="server" OnServerWordExporting="PivotGrid_ServerWordExporting" ClientIDMode="Static">
-        <DataSource>
-        </DataSource>
-     </ej:PivotGrid>
-    <ej:Button runat="server" ClientSideOnClick="exportBtnClick" Text="Export">
-    </ej:Button>
-    <script type="text/javascript">
-       function exportBtnClick(args)
-       {
-          var pGridObj = $('#PivotGrid1').data("ejPivotGrid ");
-          pGridObj.exportPivotGrid("wordExport","fileName");
-       }
-    </script>
-    
-{% endhighlight %}  
-
-Following server side event method need to be added in code behind file of the application.
-
-{% highlight c# %}
-
-protected void PivotGrid_ServerWordExporting(object sender, Syncfusion.JavaScript.Web.PivotGridEventArgs e)
-{
-     PivotGridWordExport pGrid = new PivotGridWordExport();
-     dynamic args = e.Arguments;
-     string fileName = "Sample";
-     pGrid.ExportToWord(fileName, args["args"].ToString(), HttpContext.Current.Response);
-}
-
-{% endhighlight %}
-
-###Server Mode
+User can export the contents of PivotGrid to a Word document for future archival, references and analysis purposes.
 
  To achieve Word export, we need to add the following dependency libraries into the application.
 
@@ -225,49 +376,9 @@ function exportBtnClick(args)
 
 {% endhighlight %}
 
-![](Exporting_images/ExportPivotWord.png)
+### PDF Export
 
-##PDF Export
-
-User can export contents of the PivotGrid to PDF document for future archival, references and analysis purposes.
-
-###Client Mode
-
-To achieve Word export, server side trigger event **"pdfExport"** and file name is sent as the parameter.
-
-{% highlight html %}
-
-    <ej:PivotGrid ID="PivotGrid1" runat="server" OnServerPDFExporting="PivotGrid_ServerPDFExporting" ClientIDMode="Static">
-        <DataSource>
-        </DataSource>
-     </ej:PivotGrid>
-    <ej:Button runat="server" ClientSideOnClick="exportBtnClick" Text="Export">
-    </ej:Button>
-    <script type="text/javascript">
-       function exportBtnClick(args)
-       {
-          var pGridObj = $('#PivotGrid1').data("ejPivotGrid ");
-          pGridObj.exportPivotGrid("pdfExport","fileName");
-       }
-    </script>
-    
-{% endhighlight %}  
-
-Following server side event method need to be added in code behind file of the application.
-
-{% highlight c# %}
-
-protected void PivotGrid_ServerPDFExporting(object sender, Syncfusion.JavaScript.Web.PivotGridEventArgs e)
-{
-     PivotGridPDFExport pGrid = new PivotGridPDFExport();
-     dynamic args = e.Arguments;
-     string fileName = "Sample";
-     pGrid.ExportToPDF(fileName, args["args"].ToString(), HttpContext.Current.Response);
-}
-
-{% endhighlight %}
-
-###Server Mode
+User can export the contents of PivotGrid to a PDF document for future archival, references and analysis purposes.
 
 To achieve PDF export, we need to add the following dependency libraries into the application.
 
@@ -280,56 +391,16 @@ For PDF export, **“ej.PivotGrid.ExportOptions.PDF”** enumeration value is se
 
 function exportBtnClick(args)
 {
-    var pGridObj = $('#PivotGrid1').data("ejPivotGrid ");
+    var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
     //Setting export option as PDF in the exportPivotGrid method
     pGridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.PDF);
 }
 
 {% endhighlight %} 
 
-![](Exporting_images/ExportPivotPDF.png)
+### CSV Export
 
-##CSV Export
-
-User can export contents of the PivotGrid to CSV document for future archival, references and analysis purposes.
-
-###Client Mode
-
-To achieve CSV export, server side trigger event **"csvExport"** and file name is sent as the parameter.
-
-{% highlight html %}
-
-    <ej:PivotGrid ID="PivotGrid1" runat="server" OnServerCSVExporting="PivotGrid_ServerCSVExporting" ClientIDMode="Static">
-        <DataSource>
-        </DataSource>
-     </ej:PivotGrid>
-    <ej:Button runat="server" ClientSideOnClick="exportBtnClick" Text="Export">
-    </ej:Button>
-    <script type="text/javascript">
-       function exportBtnClick(args)
-       {
-          var pGridObj = $('#PivotGrid1').data("ejPivotGrid ");
-          pGridObj.exportPivotGrid("csvExport","fileName");
-       }
-    </script>
-    
-{% endhighlight %}  
-
-Following server side event method need to be added in code behind file of the application.
-
-{% highlight c# %}
-
-protected void PivotGrid_ServerCSVExporting(object sender, Syncfusion.JavaScript.Web.PivotGridEventArgs e)
-{
-     PivotGridCSVExport pGrid = new PivotGridCSVExport();
-     dynamic args = e.Arguments;
-     string fileName = "Sample";
-     pGrid.ExportToCSV(fileName, args["args"].ToString(), HttpContext.Current.Response);
-}
-
-{% endhighlight %}
-
-###Server Mode
+User can export the contents of PivotGrid to a CSV document for future archival, references and analysis purposes.
 
 For CSV export, **“ej.PivotGrid.ExportOptions.CSV”** enumeration value is sent as the parameter.
 
@@ -337,36 +408,24 @@ For CSV export, **“ej.PivotGrid.ExportOptions.CSV”** enumeration value is se
 
 function exportBtnClick(args)
 {
-    var pGridObj = $('#PivotGrid1').data("ejPivotGrid ");
+    var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
     //Setting export option as CSV in the exportPivotGrid method
     pGridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.CSV);
 }
 
 {% endhighlight %} 
 
-![](Exporting_images/ExportPivotCSV.png)
-
-##Customize the export document name
-
-###Client Mode
-
-For customizing file name, we need to send file name as parameter to the **“exportPivotGrid”**  method along with server side trigger event.
-
-{% highlight js %}
-
-function exportBtnClick(args)
-{
-    var pGridObj = $('#PivotGrid1').data("ejPivotGrid ");
-    pGridObj.exportPivotGrid("excelExport","fileName");
-}
- 
-{% endhighlight %}
-    
-###Server Mode
+### Customize the export document name
 
 For customizing name in WebAPI controller, below code snippet is used.
 
 {% highlight c# %}
+
+//...
+using Syncfusion.Compression.Base;
+using Syncfusion.XlsIO;
+using Syncfusion.DocIO.Base;
+using Syncfusion.Pdf.Base;
 
 [System.Web.Http.ActionName("Export")]
 [System.Web.Http.HttpPost]
@@ -385,6 +444,12 @@ For customizing name in WCF Service, below code snippet is used.
 
 {% highlight c# %}
 
+//...
+using Syncfusion.Compression.Base;
+using Syncfusion.XlsIO;
+using Syncfusion.DocIO.Base;
+using Syncfusion.Pdf.Base;
+
 public void Export(System.IO.Stream stream)
 {
     System.IO.StreamReader sReader = new System.IO.StreamReader(stream);
@@ -396,4 +461,20 @@ public void Export(System.IO.Stream stream)
 }
 
 {% endhighlight %}
+
+The below screenshot shows the PivotGrid control exported to Excel document.
+
+![](Exporting_images/ExportPivotExcel.png)
+
+The below screenshot shows the PivotGrid control exported to Word document.
+
+![](Exporting_images/ExportPivotWord.png)
+
+The below screenshot shows the PivotGrid control exported to PDF document.
+
+![](Exporting_images/ExportPivotPDF.png)
+
+The below screenshot shows the PivotGrid control exported to CSV document.
+
+![](Exporting_images/ExportPivotCSV.png)
 

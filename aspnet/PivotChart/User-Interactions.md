@@ -7,11 +7,12 @@ control: PivotChart
 documentation: ug
 ---
 
-#User Interactions
+# User Interactions
 
-##Tooltip
+## Tooltip
 
-###Enable Tooltip for Data Points
+### Enable Tooltip for Data Points
+
 Tooltip for the data points can be enabled using the **"Visible"** option of the `Tooltip` property under **"CommonSeriesOptions"** of the PivotChart.
 
 {% highlight html %}
@@ -26,7 +27,8 @@ Tooltip for the data points can be enabled using the **"Visible"** option of the
 
 ![](User-Interactions_images/tooltip.png) 
 
-###Tooltip Template
+### Tooltip Template
+
 HTML elements can be displayed inside the tooltip by using the `Template` option. The template option takes the value of the "id" attribute from the HTML element. You can use the **#point.x#** and **#point.y#** as place holders in the HTML element to display the X and Y values of the corresponding data points.
 
 {% highlight html %}
@@ -52,7 +54,8 @@ HTML elements can be displayed inside the tooltip by using the `Template` option
 
 ![](User-Interactions_images/tooltiptemplate.png) 
 
-###Tooltip Customization
+### Tooltip Customization
+
 By using `Fill` and `Border` properties of tooltip, you can customize its background color, border color and border width.
 
 {% highlight html %}
@@ -67,7 +70,8 @@ By using `Fill` and `Border` properties of tooltip, you can customize its backgr
 
 ![](User-Interactions_images/tooltipcustomization.png) 
 
-###Tooltip with Rounded Corners
+### Tooltip with Rounded Corners
+
 The tooltip properties, `Rx` and `Ry` are used to customize its corner radius.
 
 {% highlight html %}
@@ -82,9 +86,9 @@ The tooltip properties, `Rx` and `Ry` are used to customize its corner radius.
 
 ![](User-Interactions_images/tooltiprouded.png) 
 
-##Zooming and Panning
+## Zooming and Panning
 
-###Enable Zooming
+### Enable Zooming
 
 There are two ways to zoom the Chart:
 
@@ -106,7 +110,8 @@ After zooming the Chart, a zooming toolbar will appear with options to *zoom, pa
 
 ![](User-Interactions_images/pan.png) 
 
-###Types of Zooming
+### Types of Zooming
+
 You can zoom the particular axis like horizontal axis or vertical axis or both axis using `Type` option in zooming.
 
 N> By default, the value for the `Type` option in zooming is “x,y” (indicating both axis) in PivotChart.
@@ -120,9 +125,10 @@ N> By default, the value for the `Type` option in zooming is “x,y” (indicati
 
 {% endhighlight %}
 
-##Marker and Crosshair
+## Marker and Crosshair
 
-###Marker Shape Customization
+### Marker Shape Customization
+
 In PivotChart, you can customize the marker `Shape` with following symbols.
 
 * Rectangle
@@ -160,7 +166,8 @@ In PivotChart, you can customize the marker `Shape` with following symbols.
 
 ![](User-Interactions_images/marker.png) 
 
-###Enable Crosshair and Crosshair Label
+### Enable Crosshair and Crosshair Label
+
 Crosshair helps you to view the value at mouse position or touch contact point. Crosshair can be enabled by using the `Visible` option in `Crosshair` property. Crosshair label can be enabled by using the **“Visible”** option in `CrosshairLabel` property within its corresponding axis.
 
 {% highlight html %}
@@ -179,7 +186,8 @@ Crosshair helps you to view the value at mouse position or touch contact point. 
 
 ![](User-Interactions_images/crosshair.png) 
 
-###Crosshair Line and Label Customization
+### Crosshair Line and Label Customization
+
 By using `Line` property of crosshair, you can customize its line color and width. Also by using `Fill` and `Border` properties of crosshair label, you can customize its background color, border color and border width.
 
 {% highlight html %}
@@ -198,9 +206,10 @@ By using `Line` property of crosshair, you can customize its line color and widt
 
 ![](User-Interactions_images/crosshairline.png) 
 
-##Trackball
+## Trackball
 
-###Enable trackball
+### Enable trackball
+
 Trackball can be enabled by setting both - 'Visible' option of the crosshair to true and `Type` option of the crosshair to **“Trackball”.** The default value of type is **“Crosshair”.**
 
 {% highlight html %}
@@ -215,7 +224,8 @@ Trackball can be enabled by setting both - 'Visible' option of the crosshair to 
 
 ![](User-Interactions_images/trackball.png) 
 
-###Trackball Marker and Line Customization
+### Trackball Marker and Line Customization
+
 Shape and size of the trackball marker can be customized using the `Shape` and `Size` options of the crosshair marker. Color and width of the trackball line can be customized using the **“Line”** option in the crosshair.
 
 {% highlight html %}
@@ -230,7 +240,8 @@ Shape and size of the trackball marker can be customized using the `Shape` and `
 
 ![](User-Interactions_images/trackballmarker.png) 
 
-##Highlight
+## Highlight
+
 PivotChart provides highlighting support for the series and data points on mouse hover. To enable highlighting, set the **“enable”** property to true in the `highlightSettings` option of the series.
 
 {% highlight html %}
@@ -256,7 +267,8 @@ PivotChart provides highlighting support for the series and data points on mouse
 
 {% endhighlight %} 
 
-###Highlight Mode
+### Highlight Mode
+
 You can set three different modes for highlighting data points and series by using the `mode` property of the `highlightSettings`.
  
 * series
@@ -290,7 +302,8 @@ You can set three different modes for highlighting data points and series by usi
 
 ![](User-Interactions_images/highlightmode.png) 
 
-###Customize the Highlight Styles
+### Customize the Highlight Styles
+
 To customize the highlighted series, use `border.color`, `border.width` and `opacity`
  options in the `highlightSettings` property.
 
@@ -323,7 +336,8 @@ To customize the highlighted series, use `border.color`, `border.width` and `opa
 
 ![](User-Interactions_images/customizehighlight.png) 
 
-###Patterns to Highlight
+### Patterns to Highlight
+
 PivotChart provides pattern support for highlighting the data by setting an appropriate value to the `pattern` property of the `highlightSettings`. The different types of highlight patterns are as follows.
 
 * chessboard
@@ -374,7 +388,8 @@ PivotChart provides pattern support for highlighting the data by setting an appr
 
 ![](User-Interactions_images/patternhighlight.png) 
 
-##Selection
+## Selection
+
 PivotChart provides selection support for the series and data points on mouse click. To enable selection, set the **“enable”** property to true in the `selectionSettings` option of the series.
 
 {% highlight html %}
@@ -401,7 +416,7 @@ PivotChart provides selection support for the series and data points on mouse cl
 
 {% endhighlight %}
 
-###Selection Mode
+### Selection Mode
 
 You can set three different selection mode for highlighting the data points and series by using the `mode` property of the `selectionSettings`.
 
@@ -436,7 +451,8 @@ You can set three different selection mode for highlighting the data points and 
 
 ![](User-Interactions_images/selectionmode.png) 
 
-###Customize the Selection Styles
+### Customize the Selection Styles
+
 To customize the selection styles, use the `border.color`, `border.width` and `opacity` options in the `selectionSettings`.
 
 {% highlight html %}
@@ -467,7 +483,8 @@ To customize the selection styles, use the `border.color`, `border.width` and `o
 
 ![](User-Interactions_images/customizeselection.png) 
 
-###Patterns for Selection
+### Patterns for Selection
+
 PivotChart provides pattern support for the selecting the data by setting an appropriate value to the `pattern` property of the `selectionSettings` option. The different types of selection patterns are as follows.
 
 * chessboard
