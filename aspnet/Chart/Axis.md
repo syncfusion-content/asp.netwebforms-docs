@@ -1067,7 +1067,7 @@ You can change the alignment of the text to far, near and center position using 
 
 ![](Axis_images/axis_img60.png)
 
-You can trim, wrap or wrapandtrim the text if it exceeds the maximum text width value using the property **TextOverflow**
+You can trim, wrap or wrapAndTrim the text if it exceeds the maximum text width value using the property **TextOverflow**
 
 {% highlight html %}
 
