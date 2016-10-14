@@ -21,7 +21,7 @@ Also hyperlink option provides separate events for row header, column header, va
  
 * **ColumnHeaderHyperlinkClick** - Returns column header information through event on hyperlink click.
 * **RowHeaderHyperlinkClick** - Returns row header information through event on hyperlink click.
-* **SummaryCellHyperlinkClick** - Returns column header information through event on hyperlink click.
+* **SummaryCellHyperlinkClick** - Returns summary cell information through event on hyperlink click.
 * **ValueCellHyperlinkClick** - Returns value cell information through event on hyperlink click.
 
 
@@ -113,20 +113,22 @@ Conditional formatting allows user to highlight particular cells with certain co
 
 We can export the PivotGrid with highlighted particular cells along with its formatting styles. 
 
-LIMITATION FOR WORD:
+LIMITATIONS FOR WORD:
 
 The following border styles are not supported
+
 * Solid
 * Groove
 * Ridge
 
-LIMITATION FOR PDF:
+LIMITATIONS FOR PDF:
 
 Border styles are not applicable.
 
 LIMITATIONS FOR EXCEL:
 
 The following border styles are alone supported
+
 * Dashed
 * Dotted
 * Double

@@ -65,6 +65,7 @@ Virtual Scrolling is a technique that allows user to view the PivotGrid informat
 ## Page Settings
 
 The properties associated to paging are:
+
 * EnablePaging – This property is used to enable/disable paging in PivotClient control.
 * PagerOptions.CategoricalPageSize - Specifies the number of categorical columns to be displayed within a page of the PivotClient control.
 * PagerOptions.SeriesPageSize - Specifies the number of series rows to be displayed within a page of the PivotClient control.

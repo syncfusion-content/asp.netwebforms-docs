@@ -11,7 +11,7 @@ documentation: ug
 
 The **PivotChart** control for **Essential ASP.NET ** is a lightweight control that reads both **OLAP** and **Relational** datasource and visualizes it in graphical format with the ability to drill up and down.
 
-##Key Features
+## Key Features
 
 The key features of the **PivotChart** control is listed as follows:
 
