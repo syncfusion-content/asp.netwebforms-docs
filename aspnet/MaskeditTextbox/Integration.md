@@ -161,10 +161,6 @@ The following example explains the how to bind data to the MaskEditTextbox cont
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
 
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>
 
     <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/ej.web.all.min.js"></script>

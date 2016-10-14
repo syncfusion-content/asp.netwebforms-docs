@@ -13,9 +13,9 @@ Ribbon control dynamically resizes to display possible number of controls in the
 
 As the window is narrowed, controls in the Ribbon will be combined as group button with dropdown arrow, in which controls can be expanded with dropdown arrow.
 
-## IsResponsive 
+## Tablet Layout 
 
-Set `IsResponsive` as true to enable resizing in Ribbon.
+Set `IsResponsive` as true to enable resizing in Ribbon.If client width is above  420px or control content exceeds the page then, the ribbon will render in Tablet mode.
 
 {% highlight html %}
 
@@ -81,6 +81,132 @@ Set `IsResponsive` as true to enable resizing in Ribbon.
 {% endhighlight %}
 
 ![](Resize_images/Resize_img1.png)
+
+## Mobile Layout
+
+If client width is less than 420px, the ribbon will render in mobile mode. In which, you can see that ribbon user interface is customized and redesigned for best view in small screens.
+The customized features includes responsive tab & group rendering, backstage, gallery and button controls.
+   
+### Responsive Tab and group
+
+Set `IsResponsive` as true to enable responsive mode in Ribbon.
+   
+
+{% highlight html %}
+
+    <ej:Ribbon ID="defaultRibbon" runat="server" Width="100%"  IsResponsive="true">
+                        <RibbonTabs>
+                            <ej:RibbonTab Id="home" Text="HOME">
+                                <TabGroupCollection>
+                                   <ej:TabGroup Text="Font" AlignType="Rows">
+                                        <ContentCollection>
+                                            <ej:TabContent>
+                                                <ContentGroupCollection>
+                                                   <ej:ContentGroup Id="bold" Text="Bold" IsMobileOnly="true" Type="ToggleButton">
+                                                        <toggleButtonSettings ContentType="ImageOnly" ActiveText="Bold" ActivePrefixIcon="e-icon e-ribbon e-resbold" DefaultPrefixIcon ="e-icon e-ribbon e-resbold" />
+                                                    </ej:ContentGroup>
+                                                    <ej:ContentGroup Id="italic" Text="Italic"  IsMobileOnly="true" Type="ToggleButton">
+                                                        <toggleButtonSettings ContentType="ImageOnly" ActiveText="Italic" ActivePrefixIcon="e-icon e-ribbon e-resitalic" DefaultPrefixIcon="e-icon e-ribbon e-resitalic" />
+                                                    </ej:ContentGroup>
+                                                    <ej:ContentGroup Id="underline" Text="Underline" IsMobileOnly="true"  Type="ToggleButton">
+                                                        <toggleButtonSettings ContentType="ImageOnly" ActiveText="Underline" ActivePrefixIcon="e-icon e-ribbon e-resunderline" DefaultPrefixIcon="e-ribbon e-icon e-resunderline"  />
+                                                    </ej:ContentGroup>
+                                                    <ej:ContentGroup Id="strikethrough" Text="strikethrough"  Type="ToggleButton">
+                                                        <toggleButtonSettings ContentType="ImageOnly" ActiveText="Strikethrough" ActivePrefixIcon="e-icon e-ribbon strikethrough" DefaultPrefixIcon="e-ribbon e-icon strikethrough"  />
+                                                    </ej:ContentGroup>
+                                                    <ej:ContentGroup Id="superscript" Text="superscript" >
+                                                        <ButtonSettings ContentType="ImageOnly" Type="Button" PrefixIcon="e-icon e-ribbon  e-superscripticon" />
+                                                    </ej:ContentGroup>
+                                                </ContentGroupCollection>
+                                                <ContentDefaults Type="Button" IsBig="false" />
+                                            </ej:TabContent>
+                                        </ContentCollection>
+                                    </ej:TabGroup>
+                                </TabGroupCollection>
+                            </ej:RibbonTab>
+                        </RibbonTabs>
+                    </ej:Ribbon>
+
+{% endhighlight %}
+
+![](Resize_images/responsive1.png)
+{:caption}
+Ribbon Responsive with tab content 
+
+
+N> To make the Ribbon control to react as responsive in mobile devices, it is necessary to refer the additional `ej.responsive.css` file in the application.
+
+## Mobile Toolbar Customization
+
+ Set `IsMobileOnly` as true to group control to show the controls 
+ in the Mobile Toolbar of the ribbon. For each tab , first row of mobile ribbon will pick and display the controls which is set as `IsMobileOnly` with look adapt to mobile mode.If `IsMobileOnly` property is not defined to any of the control within tab, then by default fist group content will be displayed in first row toolbar.
+
+ To adapt to proper display of controls , following layout will be customized with constants display.
+
+  * First ribbon toolbar and Button controls with min-height. 
+  * Drop down control will adapt to full screen width.
+  * All button controls icon will be displayed commonly as Top position.
+  
+  
+  {% highlight html %}
+
+       <ej:Ribbon ID="defaultRibbon" runat="server" Width="100%"  IsResponsive="true">
+                        <RibbonTabs>
+                            <ej:RibbonTab Id="home" Text="HOME">
+                                <TabGroupCollection>
+                                   <ej:TabGroup Text="Font" AlignType="Rows">
+                                        <ContentCollection>
+                                            <ej:TabContent>
+                                                <ContentGroupCollection>
+                                                   <ej:ContentGroup Id="bold" Text="Bold" IsMobileOnly="true" Type="ToggleButton">
+                                                        <toggleButtonSettings ContentType="ImageOnly" ActiveText="Bold" ActivePrefixIcon="e-icon e-ribbon e-resbold" DefaultPrefixIcon ="e-icon e-ribbon e-resbold" />
+                                                    </ej:ContentGroup>
+                                                    <ej:ContentGroup Id="italic" Text="Italic"  IsMobileOnly="true" Type="ToggleButton">
+                                                        <toggleButtonSettings ContentType="ImageOnly" ActiveText="Italic" ActivePrefixIcon="e-icon e-ribbon e-resitalic" DefaultPrefixIcon="e-icon e-ribbon e-resitalic" />
+                                                    </ej:ContentGroup>
+                                                    <ej:ContentGroup Id="underline" Text="Underline" IsMobileOnly="true"  Type="ToggleButton">
+                                                        <toggleButtonSettings ContentType="ImageOnly" ActiveText="Underline" ActivePrefixIcon="e-icon e-ribbon e-resunderline" DefaultPrefixIcon="e-ribbon e-icon e-resunderline"  />
+                                                    </ej:ContentGroup>
+                                                    <ej:ContentGroup Id="strikethrough" Text="strikethrough"  Type="ToggleButton">
+                                                        <toggleButtonSettings ContentType="ImageOnly" ActiveText="Strikethrough" ActivePrefixIcon="e-icon e-ribbon strikethrough" DefaultPrefixIcon="e-ribbon e-icon strikethrough"  />
+                                                    </ej:ContentGroup>
+                                                    <ej:ContentGroup Id="superscript" Text="superscript" >
+                                                        <ButtonSettings ContentType="ImageOnly" Type="Button" PrefixIcon="e-icon e-ribbon  e-superscripticon" />
+                                                    </ej:ContentGroup>
+                                                </ContentGroupCollection>
+                                                <ContentDefaults Type="Button" IsBig="false" />
+                                            </ej:TabContent>
+                                        </ContentCollection>
+                                    </ej:TabGroup>
+                                </TabGroupCollection>
+                            </ej:RibbonTab>
+                        </RibbonTabs>
+                    </ej:Ribbon>
+
+{% endhighlight %}
+
+![](Resize_images/responsive2.png)
+{:caption}
+Ribbon Responsive with MobileToolbar 
+
+### Customized Features
+
+The customized layout for  Quick Access Toolbar, backstage, gallery can be seen following screen shots.
+ 
+ ![](Resize_images/responsive3.png)
+ {:caption}
+Ribbon Responsive with Quick Access Toolbar 
+ 
+ ![](Resize_images/responsive4.png)
+ ![](Resize_images/responsive5.png)
+ {:caption}
+Ribbon Responsive with backstage
+ 
+ ![](Resize_images/responsive6.png)
+ {:caption}
+Ribbon Responsive with gallery
+
+
 
 ## Group Button Customization 
 

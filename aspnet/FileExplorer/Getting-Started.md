@@ -37,8 +37,6 @@ The external script dependencies of the FileExplorer widget are,
 
 * [jQuery 1.7.1](http://jquery.com/#) or later versions.
 
-* [jQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing/#) - to support the animation effects.
-
 * [jsrender](https://www.jsviews.com/#jsrender) – for grid view template.
 
 And the internal script dependencies of the FileExplorer widget are:
