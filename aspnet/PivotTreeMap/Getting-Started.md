@@ -124,7 +124,7 @@ Initializes the OLAP datasource for PivotTreeMap control as shown below.
 
 {% endhighlight %}
 
-The above code will generate a simple PivotTreeMap with internet sales amount over a period of fiscal years across different customer geographic locations.
+The above code will generate a simple PivotTreeMap with "Internet Sales Amount" over a period of fiscal years across different customer geographic locations.
 
 ![](Getting-Started_images/OlapClientside.png) 
 

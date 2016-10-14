@@ -232,7 +232,8 @@ When the axis labels overlap with each other based on the Chart dimensions and l
 
 N> By default, the `LabelIntersection` property is none in PivotChart.
 
-The following options that are supported for `LabelIntersection` property are: 
+The following options that are supported for `LabelIntersection` property are:
+ 
 * Rotate45
 * Rotate90
 * Trim

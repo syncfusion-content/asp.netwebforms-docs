@@ -9,7 +9,7 @@ documentation: ug
 
 # Spin Button Support
 
-The CurrencyTextbox provides the option to display the split button in the widget or remove it from the control by using the ShowSpinButton property. The default value for ShowSpinButton property is true.
+The CurrencyTextbox provides the option to display the spin button in the widget or remove it from the control by using the ShowSpinButton property. The default value for ShowSpinButton property is true.
 
 ## Configure Spin Button
 

@@ -113,7 +113,6 @@ Syncfusion NuGet package will copy all the dependent Scripts and CSS files in th
   <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
   <!-- If your head section already contain jQuery reference, please remove this jQuery reference -->
   <script src='<%= Page.ResolveClientUrl("~/Scripts/jquery-1.10.2.min.js")%>' type="text/javascript"></script>
-  <script src='<%= Page.ResolveClientUrl("~/Scripts/jquery.easing.1.3.min.js")%>' type="text/javascript"></script>
   <script src='<%= Page.ResolveClientUrl("~/Scripts/jsrender.min.js")%>' type="text/javascript"></script>
   <script src='<%= Page.ResolveClientUrl("~/Scripts/ej/ej.web.all.min.js")%>' type="text/javascript"></script>
   <script src='<%= Page.ResolveClientUrl("~/Scripts/ej/ej.webform.min.js")%>' type="text/javascript"></script>
@@ -214,7 +213,6 @@ Once the CSS files are added in your application, include the reference to "ej.w
 Essential ASP.NET controls has the following list of external JavaScript dependencies. 
 
 * jQuery-1.10.2.min.js
-* jquery.easing.1.3.min.js
 * jsrender.min.js
 
 
@@ -227,7 +225,7 @@ The dependencies are available in the following locations of your machine. Pleas
 <th>Location</th>
 </tr>
 <tr>
-<td>jquery-1.10.2.min.js<br/>jQuery.easing.1.3.min.js<br/>jsrender.min.js</td>
+<td>jquery-1.10.2.min.js<br/>jsrender.min.js</td>
 <td>&lt;Syncfusion Installed Location&gt;\Essential Studio\13.1.0.21\JavaScript\assets\external</td>
 </tr>
 <tr>
@@ -255,7 +253,6 @@ Add the below script references in the Site.Master file within the head section,
 
 <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
 <script src='<%= Page.ResolveClientUrl("~/Scripts/jquery-1.10.2.min.js")%>' type="text/javascript"></script>
-<script src='<%= Page.ResolveClientUrl("~/Scripts/jquery.easing.1.3.min.js")%>' type="text/javascript"></script>
 <script src='<%= Page.ResolveClientUrl("~/Scripts/jsrender.min.js")%>' type="text/javascript"></script>
 <script src='<%= Page.ResolveClientUrl("~/Scripts/ej/ej.web.all.min.js")%>' type="text/javascript"></script>
 <script src='<%= Page.ResolveClientUrl("~/Scripts/ej/ej.webform.min.js")%>' type="text/javascript"></script>

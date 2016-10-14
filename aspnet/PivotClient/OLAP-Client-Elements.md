@@ -1,13 +1,13 @@
 ---
 layout: post
-title: OlapClient Elements | OLAPClient | ASP.NET | Syncfusion
-description: OlapClient elements 
+title: PivotClient Elements | PivotClient | ASP.NET | Syncfusion
+description: PivotClient elements 
 platform: aspnet
-control: OLAPClient
+control: PivotClient
 documentation: ug
 ---
 
-# OlapClient: Elements
+# PivotClient: Elements
 
 ## Cube Selector
 
@@ -104,7 +104,7 @@ User-defined hierarchy organizes the members of a dimension into hierarchical st
 
 ## Axis Element Builder
 
-Axis Element Builder allows you to build the elements in the axes of OlapClient.  It supports three axes namely Categorical, Series and Slicer. Based on the construction of axes, PivotGrid and OlapChart will display the resultant data.
+Axis Element Builder allows you to build the elements in the axes of PivotClient.  It supports three axes namely Categorical, Series and Slicer. Based on the construction of axes, PivotGrid and PivotChart will display the resultant data.
 
 ### Categorical (Column)
 
@@ -170,7 +170,7 @@ Member Editor is a dialog which displays the members of the current hierarchy in
 
 ![](OLAP-Client-Elements_images/membereditor.png) 
 
-The "Check All" and "Uncheck All" option in the dialog lets the user to select and unselect entire nodes for filtering. For more details, about filtering, [click here](http://help.syncfusion.com/js/olapclient/data-exploration#filtering-by-member).
+The "Check All" and "Uncheck All" option in the dialog lets the user to select and unselect entire nodes for filtering. For more details, about filtering, [click here](http://help.syncfusion.com/aspnet/pivotclient/olap-data-exploration#filtering-by-member).
 
 ## Toolbar
 
@@ -194,7 +194,7 @@ The options available in the toolbar are,
 * **Filter/Sort Row** - Filters/Sorts the data in the OlapReport with respect to Row.
 * **Toggle Axis** – Interchanges the items between Categorical and Series axes.
 * **Chart types** – Allows user to change the Chart type dynamically.
-* **Report List** - It holds all the reports of the current session of the OlapClient control and displays in a dropdown list. By default, from the dropdown list a report can be selected.
+* **Report List** - It holds all the reports of the current session of the PivotClient control and displays in a dropdown list. By default, from the dropdown list a report can be selected.
 
 ## Report Manipulation
 

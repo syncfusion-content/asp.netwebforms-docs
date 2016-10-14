@@ -30,6 +30,7 @@ N> By default, the legend is visible in PivotChart.
 ##Legend Shape
 
 You can customize the legend `Shape` in PivotChart control. Default value of legend shape is “rectangle”. Following legend shapes that are supported:
+
 * rectangle
 * circle
 * cross
