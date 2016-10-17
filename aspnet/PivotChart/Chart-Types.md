@@ -9,7 +9,7 @@ documentation: ug
 
 # Chart Types
 
-Essential **PivotChart ASP.NET** supports 14 different types of chart as follows:
+Essential **PivotChart ASP.NET** supports 17 different types of chart as follows:
 
 * Column
 * Stacking Column
@@ -25,6 +25,9 @@ Essential **PivotChart ASP.NET** supports 14 different types of chart as follows
 * Step Area
 * Spline Area
 * Stacking Area
+* Doughnut
+* Scatter
+* Bubble
 
 ## Column Chart
 
@@ -294,8 +297,64 @@ The following screenshot displays a **Stacking Area Chart**.
 Stacking Area Chart
 {:.caption}
 
+## Doughnut Chart
 
-## combination Chart 
+A **Doughnut chart** is also used to summarize a set of categorical data which possesses a doughnut like structure divided into a series of segments. Each segment represents a particular category.
+
+{% highlight html %}
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" >
+    <CommonSeriesOptions type="Doughnut"/>
+    <Size Width="950px" Height="460px"></Size>
+</ej:PivotChart>
+
+{% endhighlight %}
+
+The following screenshot displays a **Doughnut Chart**.
+
+![](Chart-Types_images/DoughnutChart.png)
+
+Doughnut Chart
+{:.caption}
+
+## Scatter Chart
+
+The **Scatter Chart**  type displays the data as a collection of points corresponding to the associated values.
+
+{% highlight html %}
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" >
+    <CommonSeriesOptions type="Scatter"/>
+    <Size Width="950px" Height="460px"></Size>
+</ej:PivotChart>
+
+{% endhighlight %}
+
+The following screen shot displays the **Scatter Chart.**
+
+![](Chart-Types_images/ScatterChart.png) 
+
+Scatter Chart
+{:.caption}
+
+## Bubble Chart
+
+The **Bubble Chart**  type displays the data as a collection of bubbles.
+
+{% highlight html %}
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" >
+    <CommonSeriesOptions type="Bubble"/>
+    <Size Width="950px" Height="460px"></Size>
+</ej:PivotChart>
+
+{% endhighlight %}
+
+The following screen shot displays the **Bubble Chart.**
+
+![](Chart-Types_images/BubbleChart.png)
+
+Bubble Chart
+{:.caption}
+
+## Combination Chart 
 
 A **combination Chart** combines two or more series types in a single Chart. But there are some limitations in the combination Chart. They are:
 
