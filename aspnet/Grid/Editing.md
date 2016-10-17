@@ -1611,7 +1611,7 @@ The following code example describes the above behavior.
                      <ej:KeyValue Key="customRegex" Value="5" />
                    </ValidationRule>
                 </ej:Column>
-                <ej:Column Field="Freight" EditType="Numeric"/>
+                <ej:Column Field="Freight" EditType="Numeric">
                    <ValidationRule>
                      <ej:KeyValue Key="customCompare" Value="[0,1000]"/>
                    </ValidationRule>
