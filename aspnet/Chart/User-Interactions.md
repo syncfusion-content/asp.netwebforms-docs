@@ -359,6 +359,31 @@ X and Y values displayed in the trackball tooltip are formatted based on its axi
 ![](User-Interactions_images/User-Interactions_img14.png)
 
 
+You can able to show the trackball tooltip in two modes, using trackballTooltipSettings.
+
+                1.	Grouping.
+                2.	Float. 
+
+{% highlight javascript %}
+
+
+<ej:Chart ID="Chart1" runat="server"> 
+   //…
+    <%--Enable crosshair and trackball mode --%>
+       <Crosshair Visible="true" Type="trackball">
+         <TrackballTooltipSettings Rx=”3” Ry=”3” Fill=”whitesmoke” Mode=”grouping”>
+                 <Border Width=”1” Color=”grey”></Border>
+         </TrackballTooltipSettings>
+       </Crosshair>
+   //..
+</ej:Chart>
+
+
+{% endhighlight %}
+
+![](User-Interactions_images/User-Interactions_img30.png)
+
+
 ## Highlight
 
 EjChart provides highlighting support for the series and data points on mouse hover. To enable the highlighting option, set the *Enable* property to *True* in the **HighlightSettings** of the series.
@@ -830,5 +855,24 @@ To get the series information when selecting the specific series, subscribe to t
 {% endhighlight %}
 
 
+### Selection on Load
+
+We can able to select the point/series programmatically on chart load, by setting series and point index in the selectedDataPointIndexes property.
+
+{% highlight javascript %}
+
+<%--Added Selected Data point indexes--%>
+<ej:Chart ID="Chart1" runat="server"> 
+          //.... . . 
+        <SelectedDataPointIndexes> 
+                  <ej:SelectedDataPointIndexes SeriesIndex=”0”  PointIndex=”2” />
+                  <ej:SelectedDataPointIndexes SeriesIndex=”1”  PointIndex=”4” />
+         </SelectedDataPointIndexes> 
+                //.... . . 
+</ej:Chart>
+
+{% endhighlight %}
+
+![](User-Interactions_images/User-Interactions_img29.png)
 
 
