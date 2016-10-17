@@ -2222,7 +2222,7 @@ The following code example describes the above behavior.
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
                 <ej:Column Field="CustomerID" />
                 <ej:Column Field="ShipCity" DefaultValue="Bern" />
-                <ej:Column Field="Freight" EditType="Numeric" DefaultValue="45">
+                <ej:Column Field="Freight" EditType="Numeric" DefaultValue="45" />
                 <ej:Column Field="ShipCountry" DefaultValue="Brazil" />
            </Columns>                   
          </ej:Grid>
