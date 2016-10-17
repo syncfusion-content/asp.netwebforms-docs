@@ -8,7 +8,8 @@ documentation: ug
 ---
 
 # Styling
-By default, PivotGrid supports **13** different themes.
+
+By default, PivotGrid supports **17** different themes.
 
 * default-theme
 * flat-azure-dark
@@ -23,6 +24,10 @@ By default, PivotGrid supports **13** different themes.
 * gradient-saffron
 * gradient-saffron-dark
 * bootstrap-theme
+* high-contrast-01
+* high-contrast-02
+* material
+* office-365
 
 You can also customize the appearance of the following component manually.
 
@@ -105,13 +110,13 @@ To change the appearance of PivotTable Field List, apply the below customized CS
 .e-pivotschemadesigner .e-treeview .e-active {
      background: white;
 }
-.e-pivotschemadesigner .e-chkbox-wrap .e-chk-image.e-chk-indetericon, .e-chkbox-wrap .e-chk-image.e-chk-activeicon {
+.e-pivotschemadesigner .e-chkbox-wrap .e-chk-image.e-stop, .e-chkbox-wrap .e-chk-image.e-checkmark {
      color:green
 }
 .e-pivotschemadesigner .subheadText, .e-pivotschemadesigner .centerHead, .e-pivotschemadesigner .schemaFieldTree.e-treeview .e-text{
      color: black;
 }
-.e-pivotschemadesigner .pivotButton > .pvtBtn {
+.e-pivotschemadesigner .pivotButton .pvtBtn {
      background: green;
      color: white;
 }
