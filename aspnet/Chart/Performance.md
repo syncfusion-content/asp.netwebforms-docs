@@ -26,7 +26,7 @@ documentation: ug
 
 ## Lazy Loading
 
-Lazy loading feature provides an effective way for selecting a smaller range from a large collection.
+Lazy loading feature provides an effective way for loading data on demand by scrolling and viewing a smaller range of data from a larger collection.
 
 {% highlight javascript %}
 
