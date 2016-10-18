@@ -35,6 +35,30 @@ By using the **Title** option, you can add the *Text* as well as customize its *
 [Click](http://asp.syncfusion.com/demos/web/chart/subtitle.aspx) here to view the Chart Title online demo sample.
 
 
+
+
+We can trim, wrap and wrapAndTrim to the chart title using textOverflow property. The original text will be displayed as tooltip on mouse hover.
+
+
+{% highlight javascript %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+       //……
+              <Title Text="Efficiency of oil-fired power production " EnableTrim= ”true” 
+                              MaximumWidth=150 TextOverflow="trim" >
+               </Title>             
+ 
+      //….…
+</ej:Chart>
+
+
+
+
+{% endhighlight %}
+
+![](Chart-Title_images/Chart-Title_img5.png)
+
+
 ### Title Alignment
 
 You can change the title alignment to *Center*, *Far* and *Near* by using the **TextAlignment** property of the chart title. 
@@ -76,6 +100,26 @@ By using the **SubTitle** option, you can add the SubTitle to the chart title an
 
 ![](Chart-Title_images/Chart-Title_img3.png)
 
+We can trim, wrap and wrapAndTrim to the chart sub title using textOverflow property. The original text will be displayed as tooltip on mouse hover.
+
+
+{% highlight javascript %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+       //……
+              <Title>
+                     <SubTitle Text="( in a week ) " EnableTrim= ”true”   MaximumWidth=150                                       
+                                   TextOverflow="wrap"> 
+                     </SubTitle >
+              </Title>             
+ 
+      //….…
+</ej:Chart>
+
+
+{% endhighlight %}
+
+![](Chart-Title_images/Chart-Title_img6.png)
 
 ### Subtitle Alignment
 

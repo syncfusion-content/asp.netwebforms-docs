@@ -24,3 +24,22 @@ documentation: ug
 
 * Instead of enabling data markers and labels when there are large number of data points, you can use **Trackball** and **Tooltip** to view point information.
 
+## Lazy Loading
+
+Lazy loading feature provides an effective way for loading data on demand by scrolling and viewing a smaller range of data from a larger collection.
+
+{% highlight javascript %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+       <PrimaryXAxis>
+               // Enable the scroll bar and set the range options
+              <ScrollbarSettings Visible="true" CanResize="true">
+                   <Range Min="2009/1/1" Max="2014/1/1"></Range>
+              </ScrollbarSettings>
+          </PrimaryXAxis>
+   //..
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Performance_images/Perform_img1.png)

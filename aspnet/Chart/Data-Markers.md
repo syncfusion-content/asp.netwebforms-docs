@@ -234,6 +234,28 @@ The following screenshot displays the labels when the LabelPosition is set as *O
 ![](Data-Markers_images/Data-Markers_img9.png)
 
 
+The label can be wrapped for pie, doughnut, funnel, and pyramid series by setting the enableWrap property. 
+
+{% highlight javascript %} 
+
+<ej:Chart ID="Chart1" runat="server"> 
+         <Series> 
+              <ej:Series> 
+                //.... . . 
+                    <Marker>
+                        <DataLabel Visible=’true’ EnableWrap=’true’ MaximumLabelWidth=’32’/>
+                    </Marker>
+                //.... . . 
+               </ej:Series> 
+         </Series> 
+    //.... . . 
+</ej:Chart>
+
+
+{% endhighlight %} 
+
+![](Data-Markers_images/Data-Markers_img13.png)
+
 ## Customize specific points
 
 By using the ejChart, you can also customize the individual/specific markers with different colors, shapes and also with different images.
