@@ -317,7 +317,7 @@ The following output is displayed as a result of the above code example.
 
 ### External Form
 
-Set the `EditMode` as externalform to open the edit form in outside kanban content.
+Set the `EditMode` as `externalform` to open the edit form in outside kanban content.
 
 The following code example describes the above behavior.
 
@@ -449,13 +449,13 @@ You can edit any of the fields pertaining to a single card of data and apply it 
 
 Using this template support, you can edit the fields that are not bound to Kanban Edit Items.
 
-To edit the cards using External template form, set `EditMode` as externalformtemplate and specify the template id to `ExternaFormTemplate` property of `EditSettings`.
+To edit the cards using External template form, set `EditMode` as `externalformtemplate` and specify the template id to `ExternalFormTemplate` property of `EditSettings`.
 
 While using template, you can change the elements that are defined in the template, to appropriate Syncfusion JS controls based on the column type. This can be achieved by using `ActionComplete` event of Kanban.
 
 N> 1. `value` attribute is used to bind the corresponding field value while editing. 
 N> 2. `name` attribute is used to get the changed field values while save the edited card. 
-N> 3. For `EditMode` property you can assign either `string` value ("externalformtemplate") or `enum` value (`ej.Kanban.EditMode.ExternalFormTemplate`).
+N> 3. For `EditMode` property you can assign either `string` value (`externalformtemplate`) or `enum` value (`ej.Kanban.EditMode.ExternalFormTemplate`).
 
 The following code example describes the above behavior.
 
