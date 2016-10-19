@@ -20,8 +20,9 @@ CSS file
 
 External script files
 
-* [jQuery 1.7.1](http://jquery.com/#) and later versions.
-* [jQuery.easing.js](http://gsgd.co.uk/sandbox/jquery/easing/#) - to support the animation effects.
+* [jQuery](http://jquery.com/#) (from the version 1.7.1 to 3.1.0)
+
+N> From V13.4.0.53 onwards, jQuery.globalize.min.js file has been replaced with our script file ej.globalize.min.js to support the globalization for our widgets. For version lower than 13.4.0.53, refer jQuery.globalize.min.js. jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49 in order to support animation effects.
 
 Internal script files
 
