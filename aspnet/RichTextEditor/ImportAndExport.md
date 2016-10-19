@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Import and Export in RichTextEditor control for Syncfusion Essential ASP.NET Webform
-description: Import a word document into the RichTextEditor and Export the  control's content into a word or pdf file
+description: Import a word document into the RichTextEditor and Export the  control's content into a word or PDF file
 platform: aspnet
 control: RTE
 documentation: ug
@@ -117,7 +117,7 @@ Full list of assemblies needed for RTE Import are as follows
 
 # Export 
 
-Export feature provides support to export editor textarea content into word and PDF files. To enable Export option in the RTE tool bar,  `wordExport` , `pdfExport` toolbar items needs to be added in RTE toolbar toolsList using `importExport` which adds the tool in the toolbar. `ExportToWordSettings` consists of Url and FileName sub properties. In Url property, the server page for export to word is needed to be mapped and In FileName property, the name for the exported word file is given. `ExportToPdfSettings` consists of Url and FileName sub properties. In Url property, the server page for export to pdf is needed to be mapped and In FileName property, the name for the exported pdf file is given. When you click the toolbar pdfExport or wordExport icon, the contents of RTE are sent to the server. It performs XHTML Validation on the editor textarea content on the server. Once the XHTML validation and formatting is sucessful, it exports the content into a Word or pdf File.
+Export feature provides support to export editor textarea content into word and PDF files. To enable Export option in the RTE tool bar,  `wordExport` , `pdfExport` toolbar items needs to be added in RTE toolbar toolsList using `importExport` which adds the tool in the toolbar. `ExportToWordSettings` consists of Url and FileName sub properties. In Url property, the server page for export to word is needed to be mapped and In FileName property, the name for the exported word file is given. `ExportToPdfSettings` consists of Url and FileName sub properties. In Url property, the server page for export to PDF is needed to be mapped and In FileName property, the name for the exported PDF file is given. When you click the toolbar pdfExport or wordExport icon, the contents of RTE are sent to the server. It performs XHTML Validation on the editor textarea content on the server. Once the XHTML validation and formatting is sucessful, it exports the content into a Word or PDF File.
 
 {% tabs %}
  
