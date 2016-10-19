@@ -180,7 +180,7 @@ You can customize the **Radial Menu** slider settings by using the **Ticks**, **
 
 Refer to the following code example.
 
-You can add slidersettings in radial menu items by referring this section.
+You can add SliderSettings in radial menu items by referring this section.
 
 {% highlight html %}
 
