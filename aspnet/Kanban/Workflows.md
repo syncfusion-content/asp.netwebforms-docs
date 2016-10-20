@@ -16,7 +16,7 @@ You can set `WorkFlow` as array of Objects which consists of `Key` and `AllowedT
 
 If a card is to be dragged to not allowed transition columns , then not supported warning symbol will be displayed for denoting the error.
         
-The following code example describes the above Workflow behavior.
+The following code example describes the above Workflow functionality.
 
 {% highlight html %}
 
