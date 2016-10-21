@@ -240,7 +240,7 @@ The example below demonstrates how to add a custom tool button
     </RTEContent>
         <Tools>
             <CustomTools>
-                <ej:CustomTools Action="CustomTool" Css="insertsc" Name="specialCharacter" Text="Insert - O" Tooltip="Special Characters" />
+                <ej:CustomTools Action="CustomTool" Css="insert-special-character" Name="specialCharacter" Text="Insert - O" Tooltip="Special Characters" />
             </CustomTools>      
     </Tools>
 </ej:RTE>
@@ -253,7 +253,7 @@ Upon clicking the "Insert" button, the special character will be added to the RT
 
 <script>
         var rteObj =  $("#<%=AllToolsSample.ClientID%>").data("ejRTE");
-    $(".insertsc").ejButton();
+    $(".insert-special-character").ejButton();
     $("#specialcharacter").ejDialog({ enableResize: false, enableModal: true, showOnInit: false, width: "auto", position: { X: 218, Y: 38 } });
     $(".specialtbl tbody tr td" ).addClass("specialtd").on( "click", customTdClick);
     function customTdClick(args) {
@@ -285,4 +285,4 @@ Define the CSS that will be applied to the custom tool.
 
 N> The CSS class that defined for custom tool is directly applies to the newly added toolbar item. 
 
-I> The custom buttons get a insertsc CSS class to allow styling, where name is the name specified in the custom tool configuration.
+I> The custom buttons get a `insert-special-character` CSS class to allow styling, where name is the name specified in the custom tool configuration.
