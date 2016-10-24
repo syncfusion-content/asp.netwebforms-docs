@@ -177,3 +177,132 @@ These methods only accepts the context menu item name as the parameter.
             
     {% endhighlight %}
     
+## Context Menu Customization
+
+You can customize the ContextMenu of FileExplorer control by using [ContextMenuSettings](https://help.syncfusion.com/api/js/ejfileexplorer#members:contextmenusettings) property. 
+
+You can add your own context menu items and its action along with default context menu items of FileExplorer control. You can also remove the default context menu items in FileExplorer control. 
+
+To add/remove/re-arrange context menu items, you need to use [ContextMenuSettings.Items](https://help.syncfusion.com/api/js/ejfileexplorer#members:contextmenusettings-items) property and to bind required actions for newly added menu items and add sub menu items, use [ContextMenuSettings.CustomMenuFields](https://help.syncfusion.com/api/js/ejfileexplorer#members:contextmenusettings-custommenufields) property.
+
+Add the following code example to the corresponding code behind page.
+
+{% highlight c# %}
+
+[System.Web.Services.WebMethod]
+public static object FileActionContextMenu(string ActionType, string Path, string ExtensionsAllow, string LocationFrom, string LocationTo, string Name, string[] Names, string NewName, string Action, bool CaseSensitive, string SearchString, IEnumerable<CommonFileDetails> CommonFiles)
+{
+    FileExplorerOperations opeartion = new FileExplorerOperations();
+    switch (ActionType)
+    {
+        case "Read":
+            return (opeartion.Read(Path, ExtensionsAllow));
+        case "CreateFolder":
+            return (opeartion.CreateFolder(Path, Name));
+        case "Paste":
+            opeartion.Paste(LocationFrom, LocationTo, Names, Action, CommonFiles);
+            break;
+        case "Remove":
+            opeartion.Remove(Names, Path);
+            break;
+        case "Rename":
+            opeartion.Rename(Path, Name, NewName, CommonFiles);
+            break;
+        case "GetDetails":
+            return (opeartion.GetDetails(Path, Names));
+        case "Search":
+            return (opeartion.Search(Path, ExtensionsAllow, SearchString, CaseSensitive));
+    }
+    return "";
+}
+
+{% endhighlight %}
+
+In the ASPX page, add FileExplorer element with following properties.
+
+{% highlight html %}
+
+<ej:FileExplorer ID="fileexplorer" runat="server" IsResponsive="true" Width="100%" MinWidth="150px" 
+    AjaxAction="CustomContextMenu.aspx/FileActionContextMenu" Path="~/FileBrowser/"
+    ClientSideOnLayoutChange="onLayoutChange" ClientSideOnMenuOpen="onMenuOpen">
+    <AjaxSettings>
+        <Download Url="downloadFile.ashx{0}" />
+        <Upload Url="uploadFiles.ashx{0}" />
+    </AjaxSettings>
+    <ContextMenuSettings>
+        <Items Navbar="Upload,|,Delete,Rename,|,Cut,Copy,Paste,|,Getinfo"
+            Cwd="Refresh,Paste,|,SortBy,View,|,NewFolder,Upload,|,Getinfo"
+            Files="Open,Download,|,Delete,Rename,|,Cut,Copy,Paste,|,OpenFolderLocation,Getinfo" />
+        <CustomMenuFields>
+            <ej:FileExplorerCustomMenuFields Id="View" Text="View by" SpriteCssClass="custom-grid">
+                <Child>
+                    <ej:FileExplorerCustomMenuFields Id="tile" Text="Tile view" Action="onLayout">
+                    </ej:FileExplorerCustomMenuFields>
+                    <ej:FileExplorerCustomMenuFields Id="grid" Text="Grid view" Action="onLayout">
+                    </ej:FileExplorerCustomMenuFields>
+                    <ej:FileExplorerCustomMenuFields Id="largeicons" Text="Large icons view" Action="onLayout">
+                    </ej:FileExplorerCustomMenuFields>
+                </Child>
+            </ej:FileExplorerCustomMenuFields>
+        </CustomMenuFields>
+    </ContextMenuSettings>
+</ej:FileExplorer>
+
+{% endhighlight %}
+
+Icons of context menu items can be customized by overriding the default context menu item style. The following code example illustrates how to customize the icon of context menu items.
+
+{% highlight css %}
+
+<style>
+    .fe-context-menu .custom-grid:before {
+        content: "\e7b9";
+    }
+
+    .fe-context-menu .custom-largeicons:before {
+        content: "\e7bb";
+    }
+
+    .fe-context-menu .custom-tile:before {
+        content: "\e7be";
+    }
+</style>
+
+{% endhighlight %}
+
+The following screenshot displays the customization of context menu in FileExplorer control.
+
+![](Context-Menu_images/Context-Menu_img1.png)
+
+## Context Menu Events
+
+You would be notified with events when you try to open the context menu items (**ClientSideOnMenuBeforeOpen**), after context menu items is opened (**ClientSideOnMenuOpen**) and when you click the menu items (**ClientSideOnMenuClick**). The following code example illustrates how to define those events.
+
+{% highlight html %}
+
+<ej:FileExplorer ID="fileexplorer" runat="server" AjaxAction="CustomContextMenu.aspx/FileActionContextMenu" Path="~/FileBrowser/" ClientSideOnMenuBeforeOpen="menuBeforeOpen" ClientSideOnMenuOpen="menuOpen" ClientSideOnMenuClick="menuClick"></ej:FileExplorer>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+function menuBeforeOpen(args) {
+    //you add/remove the context menu items in run time
+    //do your custom action here.
+    args.dataSource.pop();
+}
+function menuOpen(args) {
+    //you can also idendify which context menu is opened by 
+    if (args.contextMenu == "cwd") {
+        //do your custom action here.
+    }
+}
+function menuClick(args) {
+    switch (args.text) {
+        case "largeicons":
+            //do your custom action here.
+            break;
+    }
+}
+
+{% endhighlight %}
