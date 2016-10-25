@@ -45,7 +45,7 @@ SwimlaneCaptionFormat</td><td>
 "- item items "</td></tr>
 <tr>
 <td>
-Filters</td><td>
+FilterSettings</td><td>
 Filters:</td></tr>
 <tr>
 <td>
@@ -63,6 +63,18 @@ Of</td></tr>
 <td>
 Cards</td><td>
 Cards</td></tr>
+<tr>
+<td>
+ItemsCount
+</td><td>
+Items Count :
+</td></tr>
+<tr>
+<td>
+Unassigned
+</td><td>
+Unassigned
+</td></tr>
 </table>
 
 The following code example describes the above behavior. 
@@ -81,7 +93,9 @@ The following code example describes the above behavior.
                     FilterOfText: "Von",
                     Max: "Max.",
                     Min: "Min.",
+                    Cards: "Karten",
                     ItemsCount: "Artikel Graf :"
+                    Unassigned:"Nicht zugewiesen",
                 };
             </script>    
 
@@ -156,7 +170,10 @@ The following code example describes the above behavior.
                     FilterSettings: "مرشحات:",
                     FilterOfText: "من",
                     Max: "ماكس",
-                    Min: "دقيقة"
+                    Min: "دقيقة",
+                    Cards: "  بطاقات",
+                    ItemsCount: "عد العناصر:",
+                    Unassigned: "غير معين",
                 };
             </script>
 
