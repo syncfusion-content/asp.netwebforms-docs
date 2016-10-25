@@ -190,9 +190,9 @@ Please find the below table for default context menu items and its actions.
 
 The following output is displayed as a result of the above code example
     
-![](Context-Menu_images/ContextMenu_img1.png)
+![](Context-Menu_images/context_img1.png)
 
-![](Context-Menu_images/ContextMenu_img2.png)
+![](Context-Menu_images/context_img2.png)
 
 ## Custom Context Menu
 
@@ -251,7 +251,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Context-Menu_images/ContextMenu_img3.png)
+![](Context-Menu_images/context_img3.png)
 
 ## Sub Context Menu
 
@@ -324,7 +324,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example. 
 
-![](Context-Menu_images/ContextMenu_img4.png)
+![](Context-Menu_images/context_img4.png)
     
 
 
