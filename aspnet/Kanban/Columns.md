@@ -93,7 +93,7 @@ The following output is displayed as a result of the above code example.
 
 ## Multiple Key Mapping
 
-You can map more than one datasource fields as `Key` values to show different key cards into single column. For e.g , you can map "Validate,Inprogress" keys under "In progress" column. 
+You can map more than one datasource fields as `Key` values to show different key cards into single column. For e.g , you can map "Validate,In progress" keys under "In progress" column. 
 
 The following code example and screenshot which describes the above behavior.
 
