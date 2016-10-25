@@ -115,4 +115,4 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Swimlane_images/swimlane_img2.png)
+![](Swimlanes_images/Swimlanes_img2.png)
