@@ -37,9 +37,9 @@ Fields.Content</td><td>
 Map the column name to use as content to cards.</td></tr>
 </table>
 
-N> : 1. If the column with `KeyField` is not in the `DataSource` and key values specified will not available in column values, then the cards will not be rendered.
+N> 1.If the column with `KeyField` is not in the `DataSource` and key values specified will not available in column values, then the cards will not be rendered.
 
-2.If the `Fields.Content` is not in the `DataSource`, then empty cards will be rendered.
+N> 2.If the `Fields.Content` is not in the `DataSource`, then empty cards will be rendered.
 
 The following code example describes the above behavior.
 
@@ -494,7 +494,7 @@ The following output is displayed as a result of the above code example.
 
 ![](Columns_images/column_img6.png)
 
-# Items Count
+## Items Count
 
 You can show total cards count in each column's header using the property `EnableTotalCount` and the default value is `false`.
 

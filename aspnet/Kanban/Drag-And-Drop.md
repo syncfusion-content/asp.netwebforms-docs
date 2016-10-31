@@ -10,7 +10,7 @@ documentation: ug
 
 By default, `AllowDragAndDrop` is true. Cards can be transited from one column to another column, by dragging and dropping. And it has drop position indicator which enables easier positioning of cards.
 
-N> : It is not possible transit cards to other swim lanes through Drag and Drop.
+N> It is not possible transit cards to other swim lanes through Drag and Drop.
 
 ## Prioritization of cards
 

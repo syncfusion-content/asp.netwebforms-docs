@@ -101,7 +101,7 @@ Searching in mobile layout
 
 ![](Responsive_images/Responsive_img7.png)
 {:caption}
-Kanban with Swim-lane
+Kanban with Swim-lanes
 
 ## Width
 
@@ -152,7 +152,7 @@ The following code example describes the above behavior.
 
 {% endtabs %}  
  
-N> : AllowScrolling should be false while defining width in percentage.
+N>AllowScrolling should be false while defining width in percentage.
 
 ## Min Width
 

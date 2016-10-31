@@ -14,7 +14,7 @@ Set `AllowEditing` and `AllowAdding` property as true to enable editing/insertin
 You can start the edit action by double clicking the particular card. Similarly, you can add new card to Kanban either by double clicking the particular cell or on an external button which is bound to call `addCard` method of Kanban.
 Deletion of the card is possible by using `deleteCard` by passing primary key as attribute.
 
-N> : In Kanban, the `primary key` column will be automatically set to read only while editing the card which is to avoid duplicate entry in the cards. 
+N> In Kanban, the `primary key` column will be automatically set to read only while editing the card which is to avoid duplicate entry in the cards. 
 
 ## Configuring Edit Items
 
@@ -86,7 +86,7 @@ The following output is displayed as a result of the above code example.
 
 ## Edit modes
 
-## Dialog
+### Dialog
 
 Set `EditMode` as `Dialog` to edit data using a dialog box, which displays the fields associated with the data card being edited. Default value is `Dialog`.
 
@@ -160,9 +160,8 @@ Using this template support, you can edit the fields that are not bound to `Edit
 
 To edit the cards using Dialog template form, set `EditMode` as `DialogTemplate` and specify the template id to `DialogTemplate` property of `EditSettings`.
 
-N> : 
- 1.	`value` attribute is used to bind the corresponding field value while editing.
- 2.	`name` attribute is used to get the changed field values while save the edited card.
+N> 1.`value` attribute is used to bind the corresponding field value while editing.
+N> 2.`name` attribute is used to get the changed field values while save the edited card.
 
 
 The following code example describes the above behavior.
@@ -572,7 +571,7 @@ The following output is displayed as a result of the above code example.
 
 ![](Editing_images/editing_img13.png)
 
-### Cell edit type and its params
+## Cell edit type and its params
 
 The edit type of bound column can be customized using `EditType` property of `Columns`. The following Essential JavaScript controls are supported built-in by `EditType`. You can set the `EditType` based on specific data type of the column.
 
@@ -588,7 +587,7 @@ Example</th></tr>
 Numeric</td><td>
 TextBoxes</td><td>
 control for integers, double and decimal data’s</td><td>
-`<NumericEditOptions DecimalPlaces="2" />`</td></tr>
+<NumericEditOptions DecimalPlaces="2" /></td></tr>
 <tr>
 <td>
 String</td><td>
@@ -600,25 +599,25 @@ HTML Textbox</td><td>
 DatePicker</td><td>
 DatePicker</td><td>
 control for date data</td><td>
-`<DateEditOptions ButtonText="Now" />`</td></tr>
+<DateEditOptions ButtonText="Now" /></td></tr>
 <tr>
 <td>
 DateTimePicker</td><td>
 DateTimePicker</td><td>
 control for date data-time data</td><td>
-`<DateTimeEditOptions Enabled="true"/>`</td></tr>
+<DateTimeEditOptions Enabled="true"/></td></tr>
 <tr>
 <td>
 DropDown</td><td>
 DropDownList</td><td>
 control for list of data</td><td>
-`<DropdownEditOptions AllowGrouping="true"/>`</td></tr>
+<DropdownEditOptions AllowGrouping="true"/></td></tr>
 <tr>
 <td>
 RTE</td><td>
 RTE</td><td>
 control for customizing text in RTE format</td><td>
-`<RTEEditOptions EnableResize="true"></RTEEditOptions>`</td></tr>
+<RTEEditOptions EnableResize="true"></RTEEditOptions></td></tr>
 <tr>
 <td>
 TextArea</td><td>
@@ -627,7 +626,7 @@ Control for multi-line plain-text editing</td><td>
 -</td></tr>
 </table>
 
-N> :If `EditType` is not set, then by default it will display HTML `textbox` while editing a card.
+N> If `EditType` is not set, then by default it will display HTML `textbox` while editing a card.
 
 The following code example describes the above behavior.
 
@@ -693,18 +692,18 @@ The following output is displayed as a result of the above code example.
 ![](Editing_images/Editing_img3.png)
 
 
-### Column Validation
+## Column Validation
 
 We can validate the value of the added or edited card cell before saving. The below validation script files are needed when editing is enabled with validation.
 
   1. jquery.validate.min.js
   2. jquery.validate.unobtrusive.min.js
 
-N> :If you enabled the unobtrusive option, then need to refer the jquery.validate.unobtrusive.min.js
+N> If you enabled the unobtrusive option, then need to refer the jquery.validate.unobtrusive.min.js
 
 file in your application along with the other script.
 
-#### jQuery Validation
+### jQuery Validation
 
 You can set validation rules using `ValidationRules` property of `Columns`. The following are jQuery validation methods.
 
@@ -854,13 +853,13 @@ The following output is displayed as a result of the above code example.
 
 ![](Editing_images/Editing_img4.png)
 
-### Persisting data in server
+## Persisting data in server
 
 Edited data can be persisted in database using RESTful web services.
 
 All the CRUD operations in Kanban are done through DataManager. DataManager have an option to bind all the CRUD related data in server side. Please refer the [link](https://help.syncfusion.com/aspnet/datamanager/overview) to know about the DataManager.
 
-#### WebMethod Adaptor
+### WebMethod Adaptor
 
 You can use the `WebMethodAdaptor` of `DataManager` when binding `DataSource` from remote data. At initial load of Kanban, using URL property of DataManager, data are fetched from remote data and bound to Kanban. You can map CRUD operation in Kanban to Server-Side Controller action using the property `CrudURL`.
 
@@ -949,11 +948,11 @@ Using `DataOperations` helper class you can perform Kanban action at server side
 2.	PerformSelect
 3.	Execute
 
-#### Accessing CRUD action request details in server side
+### Accessing CRUD action request details in server side
 
 The Server-Side function must be declared with the following parameter name for each editing functionality.
 
-##### Parameters Table
+#### Parameters Table
 
 <table>
 <tr>
@@ -963,7 +962,7 @@ Parameter Name</th><th>
 Example</th></tr>
 <tr>
 <td>
-Update, Insert, Remove, Crud Update, Crud Insert</td><td>
+Update, Insert, Remove, Crud Update, Crud Insert
 Changed values,
 Added values,
 Deleted value
@@ -971,7 +970,7 @@ Deleted value
 public static object Crud(List<Task> `changed`, List<Task> `added`, List<Task> `deleted`)
 </td></tr></table>
 
-#### Insert Card
+### Insert Card
 
 Using `CrudURL` property, you can specify the controller action mapping URL to perform `insert` operation at server side.
 
@@ -1003,7 +1002,7 @@ The newly added card details are bound to the `added` parameter. Please refer th
 
 ![](Editing_images/Editing_img6.png)
 
-#### Update Card
+### Update Card
 
 Using `CrudURL` property, you can specify the controller action mapping URL to perform `save/update` operation at server side. 
 
@@ -1040,7 +1039,7 @@ The updated card details are bound to the `changed` parameter. Please refer the 
 
 ![](Editing_images/Editing_img7.png)
 
-#### Delete Card
+### Delete Card
 
 Using `CrudURL` property, you can specify the controller action mapping URL to perform `delete`  operation at server side.
 
