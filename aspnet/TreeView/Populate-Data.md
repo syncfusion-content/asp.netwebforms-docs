@@ -829,110 +829,212 @@ Load the node details of TreeView in the XML data as follows.
 
 ## Load on demand
 
-Load on demand is a technique (Lazy load) that is used to reduce the bandwidth size of consuming huge data. You can load data on demand in TreeView by using “**LoadOnDemand**” property when you’re going to use huge data. Refer below code example to load data on demand from local data source.
+Load on demand is a technique (Lazy load) that is used to reduce the bandwidth size of consuming huge data. You can load data on demand in TreeView by using “**LoadOnDemand**” property when you’re going to use huge data.
+
+For local data source, TreeView loads the first level nodes initially. While expand a parent node then TreeView loads it’s the child nodes from the data source based on the parentId member. It reduces the time to render TreeView with huge data.
 
 In the code behind page, create a data list which contains the details about tree nodes and map the list data to the DataSource property of TreeView.
     
-    {% highlight c# %}
+{% highlight c# %}
     
-        //Define local data source elements by using the ID, ParentID, Text and HasChild 
-        //fields in code behind and map the list data to DataSource property.
-        public partial class TreeViewFeatures : System.Web.UI.Page
-        {
-            List<LoadData> treeData = new List<LoadData>();
-            protected void Page_Load(object sender, EventArgs e)
-            {
-                treeData.Add(new LoadData
-                {
-                    Id = 1,
-                    Parent = 0,
-                    Text = "Item 1",
-                    HasChild = true
-                });
-                treeData.Add(new LoadData
-                {
-                    Id = 2,
-                    Parent = 0,
-                    Text = "Item 2",
-                });
-                treeData.Add(new LoadData
-                {
-                    Id = 3,
-                    Parent = 0,
-                    Text = "Item 3",
-                    HasChild = true
-                });
-                treeData.Add(new LoadData
-                {
-                    Id = 4,
-                    Parent = 0,
-                    Text = "Item 4"
-                });
-                treeData.Add(new LoadData
-                {
-                    Id = 5,
-                    Parent = 1,
-                    Text = "Item 1.1",
-                    HasChild = true
-                });
-                treeData.Add(new LoadData
-                {
-                    Id = 6,
-                    Parent = 1,
-                    Text = "Item 1.2"
-                });
-                treeData.Add(new LoadData
-                {
-                    Id = 7,
-                    Parent = 1,
-                    Text = "Item 1.3"
-                });
-                treeData.Add(new LoadData
-                {
-                    Id = 8,
-                    Parent = 3,
-                    Text = "Item 3.1"
-                });
-                treeData.Add(new LoadData
-                {
-                    Id = 9,
-                    Parent = 3,
-                    Text = "Item 3.2"
-                });
-                treeData.Add(new LoadData
-                {
-                    Id = 10,
-                    Parent = 5,
-                    Text = "Item 1.1.1"
-                });
-                this.treeView.DataSource = treeData;
-            }
-        }
-        public class LoadData
-        {
-            public int Id { get; set; }
-            public int Parent { get; set; }
-            public string Text { get; set; }
-            public bool HasChild { get; set; }
-            public bool Expanded { get; set; }
-        }
+[Serializable]
+public class loadondemand
+{
+    public loadondemand(int _id, int _parentid = 0, string _text = "", string _hasChild = "")
+    {
+        this.ID = _id;
+        this.ParentID = _parentid;
+        this.Text = _text;
+        this.HasChild = _hasChild;
+    }
+    public loadondemand() { }
+
+    [Browsable(true)]
+    public int ID { get; set; }
+
+    [Browsable(true)]
+    public int ParentID { get; set; }
+
+    [Browsable(true)]
+    public string Text { get; set; }
+
+    [Browsable(true)]
+    public string HasChild { get; set; }
+
+    public List<loadondemand> GetTreeItems()
+    {
+        List<loadondemand> data = new List<loadondemand>();
+        data.Add(new loadondemand(1, 0, "Local Disk(C:)", "true" ));
+        data.Add(new loadondemand(2, 0, "Local Disk(D:)", "true" ));
+        data.Add(new loadondemand(3, 0, "Local Disk(E:)", "true" ));
+        data.Add(new loadondemand(4, 1, "Folder 1", "true" ));
+        data.Add(new loadondemand(5, 1, "Folder 2" ));
+        data.Add(new loadondemand(6, 1, "Folder 3" ));
+        data.Add(new loadondemand(7, 2, "Folder 4" ));
+        data.Add(new loadondemand(8, 2, "Folder 5", "true" ));
+        data.Add(new loadondemand(9, 2, "Folder 6" ));
+        data.Add(new loadondemand(10, 3, "Folder 7" ));
+        data.Add(new loadondemand(11, 3, "Folder 8" ));
+        data.Add(new loadondemand(12, 3, "Folder 9", "true" ));
+        data.Add(new loadondemand(13, 4, "File 1" ));
+        data.Add(new loadondemand(14, 4, "File 2" ));
+        data.Add(new loadondemand(15, 4, "File 3" ));
+        data.Add(new loadondemand(16, 8, "File 4" ));
+        data.Add(new loadondemand(17, 8, "File 5" ));
+        data.Add(new loadondemand(18, 8, "File 6" ));
+        data.Add(new loadondemand(19, 12, "File 7" ));
+        data.Add(new loadondemand(20, 12, "File 8" ));
+        data.Add(new loadondemand(21, 12, "File 9" ));
+        return data;
+    }
+}
         
-    {% endhighlight %}
+{% endhighlight %}
     
 In the view page, add a TreeView element and map the properties defined in to the corresponding fields of “Datasource” and enable load on demand option.
     
-    {% highlight html %}
+{% highlight html %}
     
-        <ej:TreeView
-            ID="treeView"
-            runat="server"
-            DataTextField="Text"
-            DataIdField="Id"
-            DataParentIdField="Parent"
-            DataHasChildField="HasChild"
-            DataExpandedField="Expanded"
-            LoadOnDemand="true">
-        </ej:TreeView>
+<ej:TreeView ID="Treeview" runat="server" DataSourceID="ObjectDataSource1" DataTextField="Text" DataIdField="ID"
+    DataParentIdField="ParentID" DataHasChildField="HasChild" LoadOnDemand="true">
+</ej:TreeView>
+<asp:ObjectDataSource ID="ObjectDataSource1" runat="server" TypeName="loadondemand"
+    SelectMethod="GetTreeItems"></asp:ObjectDataSource>
         
-    {% endhighlight %}
+{% endhighlight %}
+
+The following screenshot displays the load on demand for local data source in TreeView control.
+
+![](Populate-Data_images/Populate-Data_img5.png)
+
+While expanding the parent node {:.caption}
+
+![](Populate-Data_images/Populate-Data_img6.png)
+
+After expanding the parent node {:.caption}
+
+For more details about load on demand for local data source, refer the sample [here](http://asp.syncfusion.com/demos/web/treeview/loadondemand.aspx).
+
+
+For remote data source, TreeView loads the first level nodes initially. While expand the node from TreeView, the data manager passes the query to the controller. Based on this query, you can filter the data from table and return to TreeView.
+   
+Refer below code example to load data on demand from remote data source.
+
+{% highlight html %}
     
+<ej:TreeView runat="server" ID="tree" LoadOnDemand="true" DataIdField="CategoryID" DataTextField="CategoryName"
+    DataHasChildField="CategoryName" Query="ej.Query().from('Categories').select('CategoryID,CategoryName').take(3)">
+    <DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/" />
+    <Child TableName="Products" ParentId="CategoryID" Text="ProductName">
+        <DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/" />
+    </Child>
+</ej:TreeView>
+        
+{% endhighlight %}
+
+For Web Method Adaptor, TreeView loads the first level nodes initially. While expand the node from TreeView, the data manager passes the Data Manager instance to the controller. The Data Manager instance contains the parent Id and filter options. Based on the Data Manager instance, you can filter the data from data source and return to TreeView.
+
+In the code behind page, create a data list which contains the details about tree nodes and map the list data to the DataSource property of TreeView and create method to handle client side request.
+
+{% highlight c# %}
+
+namespace WebApplication
+{
+    public partial class _Default : Page
+    {
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public static object Data(Syncfusion.JavaScript.DataManager value)
+        {
+            var load = new loadondemand();
+            List<loadondemand> treeData = load.GetTreeItems();
+            IEnumerable<loadondemand> results;
+            if (value.Where == null)
+            {
+                //return the first level nodes
+                results = treeData.Where(item => item.ParentID == 0);
+            }
+            else
+            {
+                //return the nodes which has parentId as you request
+                results = treeData.Where(s => s.ParentID == Convert.ToInt32(value.Where[0].value));
+            }
+            return results;
+        }
+    }    
+}
+
+[Serializable]
+public class loadondemand
+{
+    public loadondemand(int _id, int _parentid = 0, string _text = "", string _hasChild = "")
+    {
+        this.ID = _id;
+        this.ParentID = _parentid;
+        this.Text = _text;
+        this.HasChild = _hasChild;
+    }
+    public loadondemand() { }
+
+    [Browsable(true)]
+    public int ID { get; set; }
+
+    [Browsable(true)]
+    public int ParentID { get; set; }
+
+    [Browsable(true)]
+    public string Text { get; set; }
+
+    [Browsable(true)]
+    public string HasChild { get; set; }
+
+    public List<loadondemand> GetTreeItems()
+    {
+        List<loadondemand> data = new List<loadondemand>();
+        data.Add(new loadondemand(1, 0, "Local Disk(C:)", "true"));
+        data.Add(new loadondemand(2, 0, "Local Disk(D:)", "true"));
+        data.Add(new loadondemand(3, 0, "Local Disk(E:)", "true"));
+        data.Add(new loadondemand(4, 1, "Folder 1", "true"));
+        data.Add(new loadondemand(5, 1, "Folder 2"));
+        data.Add(new loadondemand(6, 1, "Folder 3"));
+        data.Add(new loadondemand(7, 2, "Folder 4"));
+        data.Add(new loadondemand(8, 2, "Folder 5", "true"));
+        data.Add(new loadondemand(9, 2, "Folder 6"));
+        data.Add(new loadondemand(10, 3, "Folder 7"));
+        data.Add(new loadondemand(11, 3, "Folder 8"));
+        data.Add(new loadondemand(12, 3, "Folder 9", "true"));
+        data.Add(new loadondemand(13, 4, "File 1"));
+        data.Add(new loadondemand(14, 4, "File 2"));
+        data.Add(new loadondemand(15, 4, "File 3"));
+        data.Add(new loadondemand(16, 8, "File 4"));
+        data.Add(new loadondemand(17, 8, "File 5"));
+        data.Add(new loadondemand(18, 8, "File 6"));
+        data.Add(new loadondemand(19, 12, "File 7"));
+        data.Add(new loadondemand(20, 12, "File 8"));
+        data.Add(new loadondemand(21, 12, "File 9"));
+        return data;
+    }
+}
+
+{% endhighlight %}
+    
+In the view page, add a TreeView element and map the properties defined in to the corresponding fields of “Datasource” and enable load on demand option.
+    
+{% highlight html %}
+    
+<ej:TreeView runat="server" ID="tree" LoadOnDemand="true" DataIdField="ID" DataTextField="Text"
+    DataHasChildField="HasChild" DataParentIdField="ParentID">
+    <DataManager URL="Default.aspx/Data" Adaptor="WebMethodAdaptor" />
+</ej:TreeView> 
+        
+{% endhighlight %}
+
+The following screenshot displays the load on demand for Web Method Adaptor in TreeView control.
+
+![](Populate-Data_images/Populate-Data_img5.png)
+
+While expanding the parent node {:.caption}
+
+![](Populate-Data_images/Populate-Data_img6.png)
+
+After expanding the parent node {:.caption}
