@@ -907,11 +907,13 @@ The following screenshot displays the load on demand for local data source in Tr
 
 ![](Populate-Data_images/Populate-Data_img5.png)
 
-While expanding the parent node {:.caption}
+While expanding the parent node
+{:.caption}
 
 ![](Populate-Data_images/Populate-Data_img6.png)
 
-After expanding the parent node {:.caption}
+After expanding the parent node
+{:.caption}
 
 For more details about load on demand for local data source, refer the sample [here](http://asp.syncfusion.com/demos/web/treeview/loadondemand.aspx).
 
@@ -1033,8 +1035,10 @@ The following screenshot displays the load on demand for Web Method Adaptor in T
 
 ![](Populate-Data_images/Populate-Data_img5.png)
 
-While expanding the parent node {:.caption}
+While expanding the parent node
+{:.caption}
 
 ![](Populate-Data_images/Populate-Data_img6.png)
 
-After expanding the parent node {:.caption}
+After expanding the parent node
+{:.caption}
