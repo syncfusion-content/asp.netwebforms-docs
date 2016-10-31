@@ -9,7 +9,7 @@ documentation: ug
 
 # Print
 
- Set 'AllowPrinting' as true, to enable Print icon in the Kanban toolbar.  You can also use 'print()' method from Kanban instance to print the Kanban.
+ Set `AllowPrinting` as true, to enable Print icon in the Kanban toolbar.  You can also use `print()` method from Kanban instance to print the Kanban.
 
 The following code example describes the above behavior.
 

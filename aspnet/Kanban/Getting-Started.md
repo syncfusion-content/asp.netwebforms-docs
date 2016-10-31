@@ -63,7 +63,7 @@ You can create a Kanban with a highly customizable look and feel. This section d
 
 ![](Getting-Started_images/Getting_Started_img2.png) 
 
-N> :  ODataAdaptor is the default adaptor used within DataManager. While binding to other web services, proper [data adaptor] (http://help.syncfusion.com/aspnet/datamanager/data-adaptors) needs to be set for `adaptor` option of DataManager.
+N> ODataAdaptor is the default adaptor used within DataManager. While binding to other web services, proper [data adaptor](http://help.syncfusion.com/aspnet/datamanager/data-adaptors) needs to be set for `adaptor` option of DataManager.
 
 ## Mapping Values
 
@@ -90,7 +90,7 @@ In order to display cards in Kanban control, you need to map the database fields
 
 ![](Getting-Started_images/Getting_Started_img3.png) 
 
-N> : `PrimaryKey` field is mandatory for “Drag and Drop”, ”Selection” and “Editing” Features.
+N> `PrimaryKey` field is mandatory for “Drag and Drop”, ”Selection” and “Editing” Features.
 
 ## SwimlaneKey
 
@@ -114,7 +114,7 @@ N> : `PrimaryKey` field is mandatory for “Drag and Drop”, ”Selection” an
 
 ## Adding Filters
 
-Filters allows to filter the collection of cards from `DataManager` which meets the predefined `Query ` in the filters collection. To enable filtering, define `FilterSettings` collection with display `Text` and [ej.Query] (http://help.syncfusion.com/aspnet/datamanager/query).
+Filters allows to filter the collection of cards from `DataManager` which meets the predefined `Query ` in the filters collection. To enable filtering, define `FilterSettings` collection with display `Text` and [ej.Query](http://help.syncfusion.com/aspnet/datamanager/query).
 
 {% highlight html %}
 

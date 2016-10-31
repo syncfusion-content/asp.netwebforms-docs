@@ -229,4 +229,4 @@ The following output is displayed as a result of the above code example.
 
 ![](Scrolling_images/Scrolling_img4.png)
 
-N> :`AllowFreezeSwimlane` is applicable when swim lane grouping enabled by setting `SwimlaneKey`.
+N> `AllowFreezeSwimlane` is applicable when swim lane grouping enabled by setting `SwimlaneKey`.

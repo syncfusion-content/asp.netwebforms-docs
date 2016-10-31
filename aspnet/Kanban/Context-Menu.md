@@ -210,12 +210,11 @@ The following code example describes the above behavior.
                     <ej:KanbanColumn HeaderText="In Progress" Key="InProgress" />
                     <ej:KanbanColumn HeaderText="Done" Key="Close" />
                 </Columns>
-                <ContextMenuSettings Enable="true">
-                    <MenuItems></MenuItems>
-                    <CustomMenuItems>
-                        <ej:CustomMenuItem Text="Clear Selection" Target="All" />
-                    </CustomMenuItems>
-                </ContextMenuSettings>
+                <ContextMenuSettings Enable="true" MenuItems=" ">
+                 <CustomMenuItems> 
+                  <ej:CustomMenuItem Text="Clear Selection" />
+                   </CustomMenuItems>
+                  </ContextMenuSettings>
                 <Fields Content="Summary" PrimaryKey="Id" Tag="Tags" SwimlaneKey="Assignee" />
         </ej:Kanban>
         
