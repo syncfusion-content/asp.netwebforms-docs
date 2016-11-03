@@ -48,7 +48,7 @@ SplitButton :  <http://help.syncfusion.com/js/splitbutton/getting-started>
 
                     activetext="Pause" size="Large" clientsideonclick="playpause" contenttype="TextAndImage"
 
-                    activeprefixicon="e-mediapause e-uiLight" defaultprefixicon="e-mediaplay e-uiLight">
+                    activeprefixicon="e-icon e-mediapause" defaultprefixicon="e-icon e-mediaplay">
 
                     </ej:togglebutton>
 

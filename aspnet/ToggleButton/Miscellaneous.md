@@ -17,7 +17,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
 {% highlight html %}
 
-<ej:ToggleButton ID="ToggleButton_RoundedCorner" runat="server" Size="Small" ShowRoundedCorner="true" DefaultText="Play" ActiveText="Pause" ContentType="TextAndImage" DefaultPrefixIcon="e-mediaplay" ActivePrefixIcon="e-mediapause">
+<ej:ToggleButton ID="ToggleButton_RoundedCorner" runat="server" Size="Small" ShowRoundedCorner="true" DefaultText="Play" ActiveText="Pause" ContentType="TextAndImage" DefaultPrefixIcon="e-icon e-mediaplay" ActivePrefixIcon="e-icon e-mediapause">
 
 </ej:ToggleButton>
 
@@ -39,7 +39,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
 {% highlight html %}
 
-<ej:ToggleButton ID="ToggleButton_Prevent" runat="server" Size="Small" DefaultText="Play" ActiveText="Pause" ContentType="TextAndImage" DefaultPrefixIcon="e-mediaplay" ActivePrefixIcon="e-mediapause" PreventToggle="true">
+<ej:ToggleButton ID="ToggleButton_Prevent" runat="server" Size="Small" DefaultText="Play" ActiveText="Pause" ContentType="TextAndImage" DefaultPrefixIcon="e-icon e-mediaplay" ActivePrefixIcon="e-icon e-mediapause" PreventToggle="true">
 
 </ej:ToggleButton>
 

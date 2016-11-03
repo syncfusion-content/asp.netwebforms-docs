@@ -49,7 +49,7 @@ In the ASPX page, add the following button elements to configure button for conf
 
 <ej:Button ID="ButtonNormal" runat="server" Type="Button" Text="login" Size="Normal"
 
-    ShowRoundedCorner="true" ContentType="ImageOnly" PrefixIcon="e-uiLight e-handup">
+    ShowRoundedCorner="true" ContentType="ImageOnly" PrefixIcon="e-icon e-handup">
 
 </ej:Button>
 
@@ -73,11 +73,11 @@ In the ASPX page, add the following button elements to configure button for conf
 
 <ej:Button ID="ButtonLarge" runat="server" Type="Button" Text="login" Size="Large"
 
-    ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-uiLight e-handup">
+    ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup">
 
 </ej:Button>
 
-<ej:Button ID="ButtonCustomSize" runat="server" Type="Button" Text="login" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-uiLight e-handup" Height="50" Width="150">
+<ej:Button ID="ButtonCustomSize" runat="server" Type="Button" Text="login" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" Height="50" Width="150">
 
 </ej:Button>
 
@@ -149,7 +149,7 @@ In the ASPX page, add the ContentType, Prefix and Suffix icon properties in butt
 
 <%--Set the different content types and use the necessary build-in icons for button control as follows.--%>
 
-<ej:Button ID="button_imageOnly" runat="server" Type="Button" Text="login" ShowRoundedCorner="true" ContentType="ImageOnly" PrefixIcon="e-uiLight e-handup">
+<ej:Button ID="button_imageOnly" runat="server" Type="Button" Text="login" ShowRoundedCorner="true" ContentType="ImageOnly" PrefixIcon="e-icon e-handup">
 
 </ej:Button>
 
@@ -159,15 +159,15 @@ ContentType="TextOnly">
 
 </ej:Button>
 
-<ej:Button ID="button_imageBoth" runat="server" Type="Button" Text="login" ShowRoundedCorner="true" ContentType="ImageBoth" PrefixIcon="e-uiLight e-handup" SuffixIcon="e-uiLight e-palette">
+<ej:Button ID="button_imageBoth" runat="server" Type="Button" Text="login" ShowRoundedCorner="true" ContentType="ImageBoth" PrefixIcon="e-icon e-handup" SuffixIcon="e-icon e-palette">
 
 </ej:Button>
 
-<ej:Button ID="button_textAndImage" runat="server" Type="Button" Text="login" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-uiLight e-handup">
+<ej:Button ID="button_textAndImage" runat="server" Type="Button" Text="login" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup">
 
 </ej:Button>
 
-<ej:Button ID="button_imageTextImage" runat="server" Type="Button" Text="login" ShowRoundedCorner="true" ContentType="ImageTextImage" PrefixIcon="e-uiLight e-handup" SuffixIcon="e-uiLight e-palette">
+<ej:Button ID="button_imageTextImage" runat="server" Type="Button" Text="login" ShowRoundedCorner="true" ContentType="ImageTextImage" PrefixIcon="e-icon e-handup" SuffixIcon="e-icon e-palette">
 
 </ej:Button>
 
@@ -177,7 +177,7 @@ ContentType="TextOnly">
 
 <ej:Button ID="button_small_imageOnly" runat="server" Type="Button" Text="login"
 
-    Size="Small" ShowRoundedCorner="true" ContentType="ImageOnly" PrefixIcon="e-uiLight e-handup">
+    Size="Small" ShowRoundedCorner="true" ContentType="ImageOnly" PrefixIcon="e-icon e-handup">
 
 </ej:Button>
 
@@ -189,21 +189,21 @@ ContentType="TextOnly">
 
 <ej:Button ID="button_small_imageBoth" runat="server" Type="Button" Text="login"
 
-    Size="Small" ShowRoundedCorner="true" ContentType="ImageBoth" PrefixIcon="e-uiLight e-handup"
+    Size="Small" ShowRoundedCorner="true" ContentType="ImageBoth" PrefixIcon="e-icon e-handup"
 
-SuffixIcon="e-uiLight e-palette">
+SuffixIcon="e-icon e-palette">
 
 </ej:Button>
 
 <ej:Button ID="button_small_textAndImage" runat="server" Type="Button" Text="login"
 
-    Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-uiLight e-handup">
+    Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup">
 
 </ej:Button>
 
 <ej:Button ID="button_small_imageTextImage" runat="server" Type="Button" Text="login"
 
-    Size="Small" ShowRoundedCorner="true" ContentType="ImageTextImage" PrefixIcon="e-uiLight e-handup" SuffixIcon="e-uiLight e-palette">
+    Size="Small" ShowRoundedCorner="true" ContentType="ImageTextImage" PrefixIcon="e-icon e-handup" SuffixIcon="e-icon e-palette">
 
 </ej:Button>
 
@@ -248,25 +248,25 @@ In the ASPX page, add the following button elements to configure Button image po
 
 <ej:Button ID="ButtonNormal_ImageLeft" runat="server" Type="Button" Text="login"
 
-    Size="Normal" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-uiLight e-handup" ImagePosition="ImageLeft">
+    Size="Normal" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" ImagePosition="ImageLeft">
 
 </ej:Button>
 
-<ej:Button ID="ButtonMini_ImageLeft" runat="server" Type="Button" Text="login" Size="Mini" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-uiLight e-handup" ImagePosition="ImageLeft">
+<ej:Button ID="ButtonMini_ImageLeft" runat="server" Type="Button" Text="login" Size="Mini" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" ImagePosition="ImageLeft">
 
 </ej:Button>
 
-<ej:Button ID="ButtonSmall_ImageLeft" runat="server" Type="Button" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-uiLight e-handup" ImagePosition="ImageLeft">
+<ej:Button ID="ButtonSmall_ImageLeft" runat="server" Type="Button" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" ImagePosition="ImageLeft">
 
 </ej:Button>
 
 <ej:Button ID="ButtonMedium_ImageLeft" runat="server" Type="Button" Text="login"
 
-    Size="Medium" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-uiLight e-handup" ImagePosition="ImageLeft">
+    Size="Medium" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" ImagePosition="ImageLeft">
 
 </ej:Button>
 
-<ej:Button ID="ButtonLarge_ImageLeft" runat="server" Type="Button" Text="login" Size="Large" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-uiLight e-handup" ImagePosition="ImageLeft">
+<ej:Button ID="ButtonLarge_ImageLeft" runat="server" Type="Button" Text="login" Size="Large" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" ImagePosition="ImageLeft">
 
 </ej:Button>
 
@@ -276,29 +276,29 @@ In the ASPX page, add the following button elements to configure Button image po
 
 <ej:Button ID="ButtonNormal_ImageRight" runat="server" Type="Button" Text="login"
 
-    Size="Normal" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-uiLight e-handup" ImagePosition="ImageRight">
+    Size="Normal" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" ImagePosition="ImageRight">
 
 </ej:Button>
 
-<ej:Button ID="ButtonMini_ImageRight" runat="server" Type="Button" Text="login" Size="Mini" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-uiLight e-handup" ImagePosition="ImageRight">
+<ej:Button ID="ButtonMini_ImageRight" runat="server" Type="Button" Text="login" Size="Mini" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" ImagePosition="ImageRight">
 
 </ej:Button>
 
 <ej:Button ID="ButtonSmall_ImageRight" runat="server" Type="Button" Text="login"
 
-    Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-uiLight e-handup" ImagePosition="ImageRight">
+    Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" ImagePosition="ImageRight">
 
 </ej:Button>
 
 <ej:Button ID="ButtonMedium_ImageRight" runat="server" Type="Button" Text="login"
 
-    Size="Medium" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-uiLight e-handup" ImagePosition="ImageRight">
+    Size="Medium" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" ImagePosition="ImageRight">
 
 </ej:Button>
 
 <ej:Button ID="ButtonLarge_ImageRight" runat="server" Type="Button" Text="login"
 
-    Size="Large" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-uiLight e-handup" ImagePosition="ImageRight">
+    Size="Large" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" ImagePosition="ImageRight">
 
 </ej:Button>
 
@@ -306,13 +306,13 @@ In the ASPX page, add the following button elements to configure Button image po
 
 <br />
 
-<ej:Button ID="Button_ImageTop" runat="server" Type="Button" Text="login" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-uiLight e-handup" ImagePosition="ImageTop"
+<ej:Button ID="Button_ImageTop" runat="server" Type="Button" Text="login" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" ImagePosition="ImageTop"
 
     Width="60">
 
 </ej:Button>
 
-<ej:Button ID="Button_ImageBottom" runat="server" Type="Button" Text="login" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-uiLight e-handup" ImagePosition="ImageBottom" Width="60">
+<ej:Button ID="Button_ImageBottom" runat="server" Type="Button" Text="login" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" ImagePosition="ImageBottom" Width="60">
 
 </ej:Button>
 

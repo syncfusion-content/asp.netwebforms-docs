@@ -19,7 +19,7 @@ In the ASPX page, add the following button elements to configure button to rende
 
 <ej:Button ID="Button_RTL" runat="server" Type="Button" Text="button" Size="Large"
 
-    ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-uiLight e-login"
+    ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-login"
 
 EnableRTL="true">
 

@@ -46,7 +46,7 @@ In the ASPX page, add the following button elements to configure Toggle Button.
 
         <td>
 
-            <ej:ToggleButton ID="ToggleButton_CustomCss1" runat="server" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-mediaplay e-uiLight"                ActivePrefixIcon="e-mediapause e-uiLight" CssClass="customCss1">
+            <ej:ToggleButton ID="ToggleButton_CustomCss1" runat="server" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-icon e-mediaplay"                ActivePrefixIcon="e-icon e-mediapause" CssClass="customCss1">
 
             </ej:ToggleButton>
 
@@ -54,7 +54,7 @@ In the ASPX page, add the following button elements to configure Toggle Button.
 
         <td>
 
-            <ej:ToggleButton ID="ToggleButton_CustomCss2" runat="server" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-mediaplay e-uiLight"                ActivePrefixIcon="e-mediapause e-uiLight" CssClass="customCss2">
+            <ej:ToggleButton ID="ToggleButton_CustomCss2" runat="server" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-icon e-mediaplay"                ActivePrefixIcon="e-icon e-mediapause" CssClass="customCss2">
 
             </ej:ToggleButton>
 
@@ -62,7 +62,7 @@ In the ASPX page, add the following button elements to configure Toggle Button.
 
         <td>
 
-            <ej:ToggleButton ID="ToggleButton_CustomCss3" runat="server" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-mediaplay e-uiLight"                ActivePrefixIcon="e-mediapause e-uiLight" CssClass="customCss3">
+            <ej:ToggleButton ID="ToggleButton_CustomCss3" runat="server" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-icon e-mediaplay"                ActivePrefixIcon="e-icon e-mediapause" CssClass="customCss3">
 
             </ej:ToggleButton>
 
@@ -70,7 +70,7 @@ In the ASPX page, add the following button elements to configure Toggle Button.
 
         <td>
 
-            <ej:ToggleButton ID="ToggleButton_CustomCss4" runat="server" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-mediaplay e-uiLight"                ActivePrefixIcon="e-mediapause e-uiLight" CssClass="customCss4">
+            <ej:ToggleButton ID="ToggleButton_CustomCss4" runat="server" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-icon e-mediaplay"                ActivePrefixIcon="e-icon e-mediapause" CssClass="customCss4">
 
             </ej:ToggleButton>
 
@@ -78,7 +78,7 @@ In the ASPX page, add the following button elements to configure Toggle Button.
 
         <td>
 
-            <ej:ToggleButton ID="ToggleButton_CustomCss5" runat="server" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-mediaplay e-uiLight"                ActivePrefixIcon="e-mediapause e-uiLight" CssClass="customCss5">
+            <ej:ToggleButton ID="ToggleButton_CustomCss5" runat="server" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-icon e-mediaplay"                ActivePrefixIcon="e-icon e-mediapause" CssClass="customCss5">
 
             </ej:ToggleButton>
 
