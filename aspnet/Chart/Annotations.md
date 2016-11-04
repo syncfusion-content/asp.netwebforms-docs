@@ -34,6 +34,9 @@ You can add annotations to the chart by using the **Annotations** option. By usi
 [Click](http://asp.syncfusion.com/demos/web/chart/annotations.aspx) here to view the Annotations online demo sample.
 
 
+N> Annotations are not supported in 3D chart types.
+
+
 ## Rotate the annotation template
 
 To rotate the annotation template, you can use the **Angle** property of the annotations. 
