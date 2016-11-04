@@ -19,7 +19,7 @@ In an ASPX page, define the Split Button control. Set the EnableRTL property to 
 
 <div class="page-align">
 
-      <ej:SplitButton ID="SplitButton_RTL" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-login e-uiLight" EnableRTL="true">
+      <ej:SplitButton ID="SplitButton_RTL" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-login" EnableRTL="true">
 
         <Items>
 

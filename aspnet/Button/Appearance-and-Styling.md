@@ -40,23 +40,23 @@ In the ASPX page, add the CssClass property in button elements for get the custo
 
 <%--Set Custom CSS class for button control as follows--%>
 
-<ej:Button ID="Button_CustomCss1" runat="server" Type="Button" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-uiLight e-handup" CssClass="customCss1">
+<ej:Button ID="Button_CustomCss1" runat="server" Type="Button" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon  e-handup" CssClass="customCss1">
 
 </ej:Button>
 
-<ej:Button ID="Button_CustomCss2" runat="server" Type="Button" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-uiLight e-handup" CssClass="customCss2">
+<ej:Button ID="Button_CustomCss2" runat="server" Type="Button" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" CssClass="customCss2">
 
 </ej:Button>
 
-<ej:Button ID="Button_CustomCss3" runat="server" Type="Button" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-uiLight e-handup" CssClass="customCss3">
+<ej:Button ID="Button_CustomCss3" runat="server" Type="Button" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" CssClass="customCss3">
 
 </ej:Button>
 
-<ej:Button ID="Button_CustomCss4" runat="server" Type="Button" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-uiLight e-handup" CssClass="customCss4">
+<ej:Button ID="Button_CustomCss4" runat="server" Type="Button" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" CssClass="customCss4">
 
 </ej:Button>
 
-<ej:Button ID="Button_CustomCss5" runat="server" Type="Button" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-uiLight e-handup" CssClass="customCss5">
+<ej:Button ID="Button_CustomCss5" runat="server" Type="Button" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" CssClass="customCss5">
 
 </ej:Button>
 

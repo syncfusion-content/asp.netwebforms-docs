@@ -21,7 +21,7 @@ In an ASPX page, define the Split Button control and add the contents for the Sp
 
 {% highlight html %}
 
-<ej:SplitButton ID="SplitButton_Text" runat="server" Text="login" ShowRoundedCorner="true" Size="Small" ContentType="TextAndImage" PrefixIcon="e-login e-uiLight">
+<ej:SplitButton ID="SplitButton_Text" runat="server" Text="login" ShowRoundedCorner="true" Size="Small" ContentType="TextAndImage" PrefixIcon="e-icon e-login">
 
         <Items>
 
@@ -91,7 +91,7 @@ In an ASPX page, define the Split Button control and set the different size type
 
             <td>
 
-                <ej:SplitButton ID="ButtonSizeNormal" runat="server" Text="login" Size="Normal" ShowRoundedCorner="true" ContentType="ImageOnly" PrefixIcon="e-uiLight e-login" Height="27">
+                <ej:SplitButton ID="ButtonSizeNormal" runat="server" Text="login" Size="Normal" ShowRoundedCorner="true" ContentType="ImageOnly" PrefixIcon="e-icon e-login" Height="27">
 
                     <Items>
 
@@ -163,7 +163,7 @@ In an ASPX page, define the Split Button control and set the different size type
 
             <td>
 
-                <ej:SplitButton ID="ButtonSizeLarge" runat="server" Text="login" Size="Large" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-login e-uiLight">
+                <ej:SplitButton ID="ButtonSizeLarge" runat="server" Text="login" Size="Large" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-login">
 
                     <Items>
 
@@ -181,7 +181,7 @@ In an ASPX page, define the Split Button control and set the different size type
 
             <td>
 
-                <ej:SplitButton ID="CustomSizeButton" runat="server" Text="login" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-login e-uiLight" Height="50" Width="150">
+                <ej:SplitButton ID="CustomSizeButton" runat="server" Text="login" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-login" Height="50" Width="150">
 
                     <Items>
 
@@ -272,7 +272,7 @@ In an ASPX page, define the Split Button control. Set the different content type
 
             <td>
 
-                <ej:SplitButton ID="Content_ImageOnly" runat="server" Text="login" Size="Medium" ShowRoundedCorner="true" ContentType="ImageOnly" PrefixIcon="e-uiLight e-handup">
+                <ej:SplitButton ID="Content_ImageOnly" runat="server" Text="login" Size="Medium" ShowRoundedCorner="true" ContentType="ImageOnly" PrefixIcon="e-icon e-handup">
 
                     <Items>
 
@@ -308,7 +308,7 @@ In an ASPX page, define the Split Button control. Set the different content type
 
             <td>
 
-                <ej:SplitButton ID="Content_ImagesBoth" runat="server" Text="login" Size="Medium" ShowRoundedCorner="true" ContentType="ImageBoth" PrefixIcon="e-handup e-uiLight" SuffixIcon="e-palette  e-uiLight">
+                <ej:SplitButton ID="Content_ImagesBoth" runat="server" Text="login" Size="Medium" ShowRoundedCorner="true" ContentType="ImageBoth" PrefixIcon="e-icon e-handup" SuffixIcon="e-icon e-palette">
 
                     <Items>
 
@@ -326,7 +326,7 @@ In an ASPX page, define the Split Button control. Set the different content type
 
             <td>
 
-                <ej:SplitButton ID="Content_TextAndImage" runat="server" Text="login" Size="Medium" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight">
+                <ej:SplitButton ID="Content_TextAndImage" runat="server" Text="login" Size="Medium" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup">
 
                     <Items>
 
@@ -344,7 +344,7 @@ In an ASPX page, define the Split Button control. Set the different content type
 
             <td>
 
-                <ej:SplitButton ID="Content_ImageTextImage" runat="server" Text="login" Size="Medium" ShowRoundedCorner="true" ContentType="ImageTextImage" PrefixIcon="e-handup e-uiLight" SuffixIcon="e-palette e-uiLight">
+                <ej:SplitButton ID="Content_ImageTextImage" runat="server" Text="login" Size="Medium" ShowRoundedCorner="true" ContentType="ImageTextImage" PrefixIcon="e-icon e-handup" SuffixIcon="e-icon e-palette">
 
                     <Items>
 
@@ -405,7 +405,7 @@ In an ASPX page, define the Split Button control. Set the different image positi
 
             <td>
 
-                <ej:SplitButton ID="NormalSptButton_ImageLeft" runat="server" Text="login" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageLeft">
+                <ej:SplitButton ID="NormalSptButton_ImageLeft" runat="server" Text="login" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" ImagePosition="ImageLeft">
 
                     <Items>
 
@@ -423,7 +423,7 @@ In an ASPX page, define the Split Button control. Set the different image positi
 
             <td>
 
-                <ej:SplitButton ID="SmallSptButton_ImageLeft" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageLeft">
+                <ej:SplitButton ID="SmallSptButton_ImageLeft" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" ImagePosition="ImageLeft">
 
                     <Items>
 
@@ -441,7 +441,7 @@ In an ASPX page, define the Split Button control. Set the different image positi
 
             <td>
 
-                <ej:SplitButton ID="MediumSptButton_ImageLeft" runat="server" Text="login" Size="Medium" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageLeft">
+                <ej:SplitButton ID="MediumSptButton_ImageLeft" runat="server" Text="login" Size="Medium" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" ImagePosition="ImageLeft">
 
                     <Items>
 
@@ -459,89 +459,7 @@ In an ASPX page, define the Split Button control. Set the different image positi
 
             <td>
 
-                <ej:SplitButton ID="LargeSptButton_ImageLeft" runat="server" Text="login" Size="Large" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageLeft">
-
-                    <Items>
-
-                        <ej:SplitItem Text="User"></ej:SplitItem>
-
-                        <ej:SplitItem Text="Guest"></ej:SplitItem>
-
-                        <ej:SplitItem Text="Admin"></ej:SplitItem>
-
-                    </Items>
-
-                </ej:SplitButton>
-
-            </td>
-
-        </tr>
-
-</table>
-
-<br />
-
-<table>
-
-        <tr>
-
-            <td>
-
-                <ej:SplitButton ID="NormalSptButton_ImageRight" runat="server" Text="login" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageRight">
-
-                    <Items>
-
-                        <ej:SplitItem Text="User"></ej:SplitItem>
-
-                        <ej:SplitItem Text="Guest"></ej:SplitItem>
-
-                        <ej:SplitItem Text="Admin"></ej:SplitItem>
-
-                    </Items>
-
-                </ej:SplitButton>
-
-            </td>
-
-            <td>
-
-                <ej:SplitButton ID="SmallSptButton_ImageRight" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageRight">
-
-                    <Items>
-
-                        <ej:SplitItem Text="User"></ej:SplitItem>
-
-                        <ej:SplitItem Text="Guest"></ej:SplitItem>
-
-                        <ej:SplitItem Text="Admin"></ej:SplitItem>
-
-                    </Items>
-
-                </ej:SplitButton>
-
-            </td>
-
-            <td>
-
-                <ej:SplitButton ID="MediumSptButton_ImageRight" runat="server" Text="login" Size="Medium" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageRight">
-
-                    <Items>
-
-                        <ej:SplitItem Text="User"></ej:SplitItem>
-
-                        <ej:SplitItem Text="Guest"></ej:SplitItem>
-
-                        <ej:SplitItem Text="Admin"></ej:SplitItem>
-
-                    </Items>
-
-                </ej:SplitButton>
-
-            </td>
-
-            <td>
-
-                <ej:SplitButton ID="LargeSptButton_ImageRight" runat="server" Text="login" Size="Large" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageRight">
+                <ej:SplitButton ID="LargeSptButton_ImageLeft" runat="server" Text="login" Size="Large" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" ImagePosition="ImageLeft">
 
                     <Items>
 
@@ -569,7 +487,7 @@ In an ASPX page, define the Split Button control. Set the different image positi
 
             <td>
 
-                <ej:SplitButton ID="SplitButton_ImageTop" runat="server" Text="login" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageTop" Height="60" Width="84">
+                <ej:SplitButton ID="NormalSptButton_ImageRight" runat="server" Text="login" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" ImagePosition="ImageRight">
 
                     <Items>
 
@@ -587,7 +505,89 @@ In an ASPX page, define the Split Button control. Set the different image positi
 
             <td>
 
-                <ej:SplitButton ID="SplitButton_ImageBottom" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" ImagePosition="ImageBottom" Height="60" Width="84">
+                <ej:SplitButton ID="SmallSptButton_ImageRight" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" ImagePosition="ImageRight">
+
+                    <Items>
+
+                        <ej:SplitItem Text="User"></ej:SplitItem>
+
+                        <ej:SplitItem Text="Guest"></ej:SplitItem>
+
+                        <ej:SplitItem Text="Admin"></ej:SplitItem>
+
+                    </Items>
+
+                </ej:SplitButton>
+
+            </td>
+
+            <td>
+
+                <ej:SplitButton ID="MediumSptButton_ImageRight" runat="server" Text="login" Size="Medium" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" ImagePosition="ImageRight">
+
+                    <Items>
+
+                        <ej:SplitItem Text="User"></ej:SplitItem>
+
+                        <ej:SplitItem Text="Guest"></ej:SplitItem>
+
+                        <ej:SplitItem Text="Admin"></ej:SplitItem>
+
+                    </Items>
+
+                </ej:SplitButton>
+
+            </td>
+
+            <td>
+
+                <ej:SplitButton ID="LargeSptButton_ImageRight" runat="server" Text="login" Size="Large" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" ImagePosition="ImageRight">
+
+                    <Items>
+
+                        <ej:SplitItem Text="User"></ej:SplitItem>
+
+                        <ej:SplitItem Text="Guest"></ej:SplitItem>
+
+                        <ej:SplitItem Text="Admin"></ej:SplitItem>
+
+                    </Items>
+
+                </ej:SplitButton>
+
+            </td>
+
+        </tr>
+
+</table>
+
+<br />
+
+<table>
+
+        <tr>
+
+            <td>
+
+                <ej:SplitButton ID="SplitButton_ImageTop" runat="server" Text="login" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" ImagePosition="ImageTop" Height="60" Width="84">
+
+                    <Items>
+
+                        <ej:SplitItem Text="User"></ej:SplitItem>
+
+                        <ej:SplitItem Text="Guest"></ej:SplitItem>
+
+                        <ej:SplitItem Text="Admin"></ej:SplitItem>
+
+                    </Items>
+
+                </ej:SplitButton>
+
+            </td>
+
+            <td>
+
+                <ej:SplitButton ID="SplitButton_ImageBottom" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" ImagePosition="ImageBottom" Height="60" Width="84">
 
                     <Items>
 
@@ -654,7 +654,7 @@ In an ASPX page, define the Split Button control and set custom CSS class.
 
             <td>
 
-                <ej:SplitButton ID="SplitButton_CustomCss1" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" CssClass="customCss1">
+                <ej:SplitButton ID="SplitButton_CustomCss1" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" CssClass="customCss1">
 
                     <Items>
 
@@ -672,7 +672,7 @@ In an ASPX page, define the Split Button control and set custom CSS class.
 
             <td>
 
-                <ej:SplitButton ID="SplitButton_CustomCss2" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" CssClass="customCss2">
+                <ej:SplitButton ID="SplitButton_CustomCss2" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" CssClass="customCss2">
 
                     <Items>
 
@@ -690,7 +690,7 @@ In an ASPX page, define the Split Button control and set custom CSS class.
 
             <td>
 
-                <ej:SplitButton ID="SplitButton_CustomCss3" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" CssClass="customCss3">
+                <ej:SplitButton ID="SplitButton_CustomCss3" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" CssClass="customCss3">
 
                     <Items>
 
@@ -708,7 +708,7 @@ In an ASPX page, define the Split Button control and set custom CSS class.
 
             <td>
 
-                <ej:SplitButton ID="SplitButton_CustomCss4" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" CssClass="customCss4">
+                <ej:SplitButton ID="SplitButton_CustomCss4" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" CssClass="customCss4">
 
                     <Items>
 
@@ -726,7 +726,7 @@ In an ASPX page, define the Split Button control and set custom CSS class.
 
             <td>
 
-                <ej:SplitButton ID="SplitButton_CustomCss5" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-handup e-uiLight" CssClass="customCss5">
+                <ej:SplitButton ID="SplitButton_CustomCss5" runat="server" Text="login" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" PrefixIcon="e-icon e-handup" CssClass="customCss5">
 
                     <Items>
 
