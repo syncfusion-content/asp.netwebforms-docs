@@ -23,13 +23,13 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
 {% highlight html %}
 
-<ej:ToggleButton ID="Default_ToggleButton" runat="server" Size="Small" DefaultText="Play" ActiveText="Pause" ContentType="TextAndImage" DefaultPrefixIcon="e-mediaplay" ActivePrefixIcon="e-mediapause" ToggleState="false">
+<ej:ToggleButton ID="Default_ToggleButton" runat="server" Size="Small" DefaultText="Play" ActiveText="Pause" ContentType="TextAndImage" DefaultPrefixIcon="e-icon e-mediaplay" ActivePrefixIcon="e-icon e-mediapause" ToggleState="false">
 
 </ej:ToggleButton>
 
 <br />
 
-<ej:ToggleButton ID="Active_ToggleButton" runat="server" Size="Small" DefaultText="Play" ActiveText="Pause" ContentType="TextAndImage" DefaultPrefixIcon="e-mediaplay" ActivePrefixIcon="e-mediapause" ToggleState="true">
+<ej:ToggleButton ID="Active_ToggleButton" runat="server" Size="Small" DefaultText="Play" ActiveText="Pause" ContentType="TextAndImage" DefaultPrefixIcon="e-icon e-mediaplay" ActivePrefixIcon="e-icon e-mediapause" ToggleState="true">
 
 </ej:ToggleButton>
 
@@ -112,9 +112,9 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
 <ej:ToggleButton ID="ToggleButton_IconsAndStates" runat="server" DefaultText="forward"
 
-ActiveText="backward" ShowRoundedCorner="true" ContentType="ImageTextImage" DefaultPrefixIcon="e-mediaforward
+ActiveText="backward" ShowRoundedCorner="true" ContentType="ImageTextImage" DefaultPrefixIcon="e-icon e-mediaforward
 
-" ActivePrefixIcon="e-mediaback " DefaultSuffixIcon="e-undo " ActiveSuffixIcon="e-redo">
+" ActivePrefixIcon="e-icon e-mediaback " DefaultSuffixIcon="e-icon e-undo " ActiveSuffixIcon="e-icon e-redo">
 
 </ej:ToggleButton>
 
@@ -166,7 +166,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
 {% highlight html %}
 
-<ej:ToggleButton ID="ToggleButtonNormal" runat="server" Size="Normal" ShowRoundedCorner="true" ContentType="ImageOnly" DefaultPrefixIcon="e-mediaplay e-uiLight" ActivePrefixIcon="e-mediapause e-uiLight">
+<ej:ToggleButton ID="ToggleButtonNormal" runat="server" Size="Normal" ShowRoundedCorner="true" ContentType="ImageOnly" DefaultPrefixIcon="e-icon e-mediaplay" ActivePrefixIcon="e-icon e-mediapause">
 
 </ej:ToggleButton>
 
@@ -190,7 +190,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
 <br />
 
-<ej:ToggleButton ID="ToggleButtonLarge" runat="server" Size="Large" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-mediaplay e-uiLight" ActivePrefixIcon="e-mediapause e-uiLight">
+<ej:ToggleButton ID="ToggleButtonLarge" runat="server" Size="Large" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-icon e-mediaplay" ActivePrefixIcon="e-icon e-mediapause">
 
 </ej:ToggleButton>
 
@@ -198,7 +198,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
 <ej:ToggleButton ID="ToggleButtonCustomSize" runat="server" ShowRoundedCorner="true"
 
-ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-mediaplay e-uiLight" ActivePrefixIcon="e-mediapause e-uiLight" Height="50" Width="150">
+ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-icon e-mediaplay" ActivePrefixIcon="e-icon e-mediapause" Height="50" Width="150">
 
 </ej:ToggleButton>
 
@@ -252,7 +252,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
         <td>
 
-            <ej:ToggleButton ID="ToggleButton_ImagesOnly" runat="server" ShowRoundedCorner="true" ContentType="ImageOnly" DefaultPrefixIcon="e-mediaplay e-uiLight" ActivePrefixIcon="e-mediapause e-uiLight">
+            <ej:ToggleButton ID="ToggleButton_ImagesOnly" runat="server" ShowRoundedCorner="true" ContentType="ImageOnly" DefaultPrefixIcon="e-icon e-mediaplay" ActivePrefixIcon="e-icon e-mediapause">
 
             </ej:ToggleButton>
 
@@ -268,7 +268,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
         <td>
 
-            <ej:ToggleButton ID="ToggleButton_BothImages" runat="server" ShowRoundedCorner="true" ContentType="ImageBoth" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-mediaforward  e-uiLight" ActivePrefixIcon="e-mediaback  e-uiLight" DefaultSuffixIcon="e-undo" ActiveSuffixIcon="e-redo">
+            <ej:ToggleButton ID="ToggleButton_BothImages" runat="server" ShowRoundedCorner="true" ContentType="ImageBoth" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-icon e-mediaforward" ActivePrefixIcon="e-icon e-mediaback" DefaultSuffixIcon="e-icon e-undo" ActiveSuffixIcon="e-icon e-redo">
 
             </ej:ToggleButton>
 
@@ -276,9 +276,9 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
         <td>
 
-            <ej:ToggleButton ID="ToggleButton_TextAndImage" runat="server" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-mediaplay e-uiLight"
+            <ej:ToggleButton ID="ToggleButton_TextAndImage" runat="server" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-icon e-mediaplay"
 
-                ActivePrefixIcon="e-mediapause e-uiLight">
+                ActivePrefixIcon="e-icon e-mediapause">
 
             </ej:ToggleButton>
 
@@ -286,7 +286,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
         <td>
 
-            <ej:ToggleButton ID="ToggleButton_ImageTextImage" runat="server" ShowRoundedCorner="true" ContentType="ImageTextImage" DefaultText="forward" ActiveText="backward" DefaultPrefixIcon="e-mediaforward  e-uiLight"                ActivePrefixIcon="e-mediaback  e-uiLight" DefaultSuffixIcon="e-undo" ActiveSuffixIcon="e-redo">
+            <ej:ToggleButton ID="ToggleButton_ImageTextImage" runat="server" ShowRoundedCorner="true" ContentType="ImageTextImage" DefaultText="forward" ActiveText="backward" DefaultPrefixIcon="e-icon e-mediaforward" ActivePrefixIcon="e-icon e-mediaback" DefaultSuffixIcon="e-icon e-undo" ActiveSuffixIcon="e-icon e-redo">
 
             </ej:ToggleButton>
 
@@ -304,7 +304,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
         <td>
 
-            <ej:ToggleButton ID="SmallToggleButton_ImagesOnly" runat="server" Size="Small" ShowRoundedCorner="true" ContentType="ImageOnly" DefaultPrefixIcon="e-mediaplay e-uiLight" ActivePrefixIcon="e-mediapause e-uiLight">
+            <ej:ToggleButton ID="SmallToggleButton_ImagesOnly" runat="server" Size="Small" ShowRoundedCorner="true" ContentType="ImageOnly" DefaultPrefixIcon="e-icon e-mediaplay" ActivePrefixIcon="e-icon e-mediapause">
 
             </ej:ToggleButton>
 
@@ -322,7 +322,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
             <ej:ToggleButton ID="SmallToggleButton_BothImages" runat="server" Size="Small" ShowRoundedCorner="true" ContentType="ImageBoth" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-mediaforward  e-uiLight"
 
-                ActivePrefixIcon="e-mediaback  e-uiLight" DefaultSuffixIcon="e-undo" ActiveSuffixIcon="e-redo">
+                ActivePrefixIcon="e-icon e-mediaback" DefaultSuffixIcon="e-icon e-undo" ActiveSuffixIcon="e-icon e-redo">
 
             </ej:ToggleButton>
 
@@ -330,7 +330,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
         <td>
 
-            <ej:ToggleButton ID="SmallToggleButton_TextAndImage" runat="server" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-mediaplay e-uiLight" ActivePrefixIcon="e-mediapause e-uiLight">
+            <ej:ToggleButton ID="SmallToggleButton_TextAndImage" runat="server" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-icon e-mediaplay" ActivePrefixIcon="e-icon e-mediapause">
 
             </ej:ToggleButton>
 
@@ -338,7 +338,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
         <td>
 
-            <ej:ToggleButton ID="SmallToggleButton_ImageTextImage" runat="server" Size="Small" ShowRoundedCorner="true" ContentType="ImageTextImage" DefaultText="forward" ActiveText="backward" DefaultPrefixIcon="e-mediaforward  e-uiLight" ActivePrefixIcon="e-mediaback  e-uiLight" DefaultSuffixIcon="e-undo" ActiveSuffixIcon="e-redo">
+            <ej:ToggleButton ID="SmallToggleButton_ImageTextImage" runat="server" Size="Small" ShowRoundedCorner="true" ContentType="ImageTextImage" DefaultText="forward" ActiveText="backward" DefaultPrefixIcon="e-icon e-mediaforward" ActivePrefixIcon="e-icon e-mediaback" DefaultSuffixIcon="e-icon e-undo" ActiveSuffixIcon="e-icon e-redo">
 
             </ej:ToggleButton>
 
@@ -393,7 +393,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
         <td>
 
-            <ej:ToggleButton ID="ToggleButtonNormal_ImageLeft" runat="server" Size="Normal" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-mediaplay e-uiLight" ActivePrefixIcon="e-mediapause e-uiLight" ImagePosition="ImageLeft">
+            <ej:ToggleButton ID="ToggleButtonNormal_ImageLeft" runat="server" Size="Normal" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-icon e-mediaplay" ActivePrefixIcon="e-icon e-mediapause" ImagePosition="ImageLeft">
 
             </ej:ToggleButton>
 
@@ -401,7 +401,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
         <td>
 
-            <ej:ToggleButton ID="ToggleButtonMini_ImageLeft" runat="server" Size="Mini" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-mediaplay e-uiLight" ActivePrefixIcon="e-mediapause e-uiLight" ImagePosition="ImageLeft">
+            <ej:ToggleButton ID="ToggleButtonMini_ImageLeft" runat="server" Size="Mini" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-icon e-mediaplay" ActivePrefixIcon="e-icon e-mediapause" ImagePosition="ImageLeft">
 
             </ej:ToggleButton>
 
@@ -409,7 +409,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
         <td>
 
-            <ej:ToggleButton ID="ToggleButtonSmall_ImageLeft" runat="server" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-mediaplay e-uiLight" ActivePrefixIcon="e-mediapause e-uiLight" ImagePosition="ImageLeft">
+            <ej:ToggleButton ID="ToggleButtonSmall_ImageLeft" runat="server" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-icon e-mediaplay" ActivePrefixIcon="e-icon e-mediapause" ImagePosition="ImageLeft">
 
             </ej:ToggleButton>
 
@@ -417,7 +417,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
         <td>
 
-            <ej:ToggleButton ID="ToggleButtonMedium_ImageLeft" runat="server" Size="Medium" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-mediaplay e-uiLight" ActivePrefixIcon="e-mediapause e-uiLight" ImagePosition="ImageLeft">
+            <ej:ToggleButton ID="ToggleButtonMedium_ImageLeft" runat="server" Size="Medium" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-icon e-mediaplay" ActivePrefixIcon="e-icon e-mediapause" ImagePosition="ImageLeft">
 
             </ej:ToggleButton>
 
@@ -425,59 +425,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
         <td>
 
-            <ej:ToggleButton ID="ToggleButtonLarge_ImageLeft" runat="server" Size="Large" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-mediaplay e-uiLight" ActivePrefixIcon="e-mediapause e-uiLight" ImagePosition="ImageLeft">
-
-            </ej:ToggleButton>
-
-        </td>
-
-    </tr>
-
-</table>
-
-<br />
-
-<table>
-
-    <tr>
-
-        <td>
-
-            <ej:ToggleButton ID="ToggleButtonNormal_ImageRight" runat="server" Size="Normal" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-mediaplay e-uiLight" ActivePrefixIcon="e-mediapause e-uiLight" ImagePosition="ImageRight">
-
-            </ej:ToggleButton>
-
-        </td>
-
-        <td>
-
-            <ej:ToggleButton ID="ToggleButtonMini_ImageRight" runat="server" Size="Mini" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-mediaplay e-uiLight"
-
-                ActivePrefixIcon="e-mediapause e-uiLight" ImagePosition="ImageRight">
-
-            </ej:ToggleButton>
-
-        </td>
-
-        <td>
-
-            <ej:ToggleButton ID="ToggleButtonSmall_ImageRight" runat="server" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-mediaplay e-uiLight" ActivePrefixIcon="e-mediapause e-uiLight" ImagePosition="ImageRight">
-
-            </ej:ToggleButton>
-
-        </td>
-
-        <td>
-
-            <ej:ToggleButton ID="ToggleButtonMedium_ImageRight" runat="server" Size="Medium" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-mediaplay e-uiLight" ActivePrefixIcon="e-mediapause e-uiLight" ImagePosition="ImageRight">
-
-            </ej:ToggleButton>
-
-        </td>
-
-        <td>
-
-            <ej:ToggleButton ID="ToggleButtonLarge_ImageRight" runat="server" Size="Large" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-mediaplay e-uiLight" ActivePrefixIcon="e-mediapause e-uiLight" ImagePosition="ImageRight">
+            <ej:ToggleButton ID="ToggleButtonLarge_ImageLeft" runat="server" Size="Large" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-icon e-mediaplay" ActivePrefixIcon="e-icon e-mediapause" ImagePosition="ImageLeft">
 
             </ej:ToggleButton>
 
@@ -495,7 +443,7 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
         <td>
 
-            <ej:ToggleButton ID="ToggleButton_ImageTop" runat="server" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-mediaplay e-uiLight" ActivePrefixIcon="e-mediapause e-uiLight" ImagePosition="ImageTop" Height="60" Width="50">
+            <ej:ToggleButton ID="ToggleButtonNormal_ImageRight" runat="server" Size="Normal" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-icon e-mediaplay" ActivePrefixIcon="e-icon e-mediapause" ImagePosition="ImageRight">
 
             </ej:ToggleButton>
 
@@ -503,7 +451,59 @@ In the ASPX page, add the following button elements to configure the Toggle Butt
 
         <td>
 
-            <ej:ToggleButton ID="ToggleButton_ImageBottom" runat="server" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-mediaplay e-uiLight" ActivePrefixIcon="e-mediapause e-uiLight" ImagePosition="ImageBottom" Height="60" Width="50">
+            <ej:ToggleButton ID="ToggleButtonMini_ImageRight" runat="server" Size="Mini" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-icon e-mediaplay"
+
+                ActivePrefixIcon="e-icon e-mediapause" ImagePosition="ImageRight">
+
+            </ej:ToggleButton>
+
+        </td>
+
+        <td>
+
+            <ej:ToggleButton ID="ToggleButtonSmall_ImageRight" runat="server" Size="Small" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-icon e-mediaplay" ActivePrefixIcon="e-icon e-mediapause" ImagePosition="ImageRight">
+
+            </ej:ToggleButton>
+
+        </td>
+
+        <td>
+
+            <ej:ToggleButton ID="ToggleButtonMedium_ImageRight" runat="server" Size="Medium" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-icon e-mediaplay" ActivePrefixIcon="e-icon e-mediapause" ImagePosition="ImageRight">
+
+            </ej:ToggleButton>
+
+        </td>
+
+        <td>
+
+            <ej:ToggleButton ID="ToggleButtonLarge_ImageRight" runat="server" Size="Large" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-icon e-mediaplay" ActivePrefixIcon="e-icon e-mediapause" ImagePosition="ImageRight">
+
+            </ej:ToggleButton>
+
+        </td>
+
+    </tr>
+
+</table>
+
+<br />
+
+<table>
+
+    <tr>
+
+        <td>
+
+            <ej:ToggleButton ID="ToggleButton_ImageTop" runat="server" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-icon e-mediaplay" ActivePrefixIcon="e-icon e-mediapause" ImagePosition="ImageTop" Height="60" Width="50">
+
+            </ej:ToggleButton>
+
+        </td>
+
+        <td>
+
+            <ej:ToggleButton ID="ToggleButton_ImageBottom" runat="server" ShowRoundedCorner="true" ContentType="TextAndImage" DefaultText="Play" ActiveText="Next" DefaultPrefixIcon="e-icon e-mediaplay" ActivePrefixIcon="e-icon e-mediapause" ImagePosition="ImageBottom" Height="60" Width="50">
 
             </ej:ToggleButton>
 

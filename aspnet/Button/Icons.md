@@ -33,17 +33,17 @@ Also in the button sample, you can use the icon class names as follows,
 
 {% highlight html %}
 
-<ej:Button ID="buttonid" runat="server" Type="Button" ContentType="ImageOnly" PrefixIcon="e-handup">
+<ej:Button ID="buttonid" runat="server" Type="Button" ContentType="ImageOnly" PrefixIcon="e-icon e-handup">
 
 </ej:Button>
 
-<ej:SplitButton ID="SplitButton" runat="server" ContentType="ImageOnly" PrefixIcon="e-calender">
+<ej:SplitButton ID="SplitButton" runat="server" ContentType="ImageOnly" PrefixIcon="e-icon e-calender">
 
 </ej:SplitButton>
 
-<ej:ToggleButton ID="ToggleButton" runat="server" ContentType="ImageOnly" DefaultPrefixIcon="e-mediaplay"
+<ej:ToggleButton ID="ToggleButton" runat="server" ContentType="ImageOnly" DefaultPrefixIcon="e-icon e-mediaplay"
 
-ActivePrefixIcon="e-mediapause">
+ActivePrefixIcon="e-icon e-mediapause">
 
 </ej:ToggleButton>
 

@@ -36,7 +36,7 @@ In an ASPX page, define the Split Button control and configure the ArrowPosition
 
 {% highlight html %}
 
-<ej:SplitButton ID="spltbutton11" runat="server" Text="login" Size="Large" ShowRoundedCorner="true" ContentType="ImageOnly" ArrowPosition="Left" PrefixIcon="e-uiLight e-login">
+<ej:SplitButton ID="spltbutton11" runat="server" Text="login" Size="Large" ShowRoundedCorner="true" ContentType="ImageOnly" ArrowPosition="Left" PrefixIcon="e-icon e-login">
 
     <Items>
 
