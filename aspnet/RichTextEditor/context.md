@@ -71,7 +71,7 @@ However we can disable the context menu by using ShowContextMenu API and it need
 
 ## Adding an item with the context menu:
 
-To add a new item to the editor ContextMenu, you need to use the ‘[insertMenuOption’](http://help.syncfusion.com/js/api/ejrte#methods:insertMenuOption "") method and in order to handle the contextmenu item click using the ‘[contextMenuClick](http://help.syncfusion.com/js/api/ejrte#events:contextMenuClick "")’ client side-event.
+To add a new item to the editor `ContextMenu`, you need to use the ‘[insertMenuOption’](http://help.syncfusion.com/js/api/ejrte#methods:insertMenuOption "") method and in order to handle the contextmenu item click using the ‘[contextMenuClick](http://help.syncfusion.com/js/api/ejrte#events:contextMenuClick "")’ client side-event.
 
 {% highlight html %}
 
