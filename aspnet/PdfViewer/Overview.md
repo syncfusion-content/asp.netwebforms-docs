@@ -9,14 +9,28 @@ documentation: ug
 
 #Overview
 
-PDF viewer for ASP .NET is a visualization component for viewing and printing PDF documents in web pages. It is powered by HTML5/JavaScript and provides various customizations.
+PDF viewer for JavaScript is a visualization component to view PDF documents in web pages. It is powered by HTML5/JavaScript and provides various customization.
 
-## Key Features
 
-* View and print PDF documents from disk, as stream and byte array.
-* Supports viewing password protected PDF documents.
-* Allows customization of the default toolbar and also creation of your own toolbar as per requirements.
-* Provides magnification tools and view modes for better viewing experience.
+**Key Features**
+
+The key features of the **PDF viewer** control are listed as follows:
+
+* Supports uploading PDF document into the server as byte array or as stream and supports displaying the same in the client.
+
+* Supports viewing password protected/encrypted PDF documents.
+
+* Supports customizing the default toolbar or creation of a toolbar as per the application requirements.
+
+* Supports zooming tools and viewing modes for better viewing experience.
+
 * Supports built-in themes for enhancing appearance.
-* Supports localization to adopt to the machines culture and language.
-* Compatible with all the modern browsers that provides HTML5/CSS3/JavaScript support.
+
+* Supports printing the PDF document.
+
+* Supports responsive rendering while resizing the control/window.
+
+* Supports downloading the PDF document being displayed.
+
+* Compatible with all the modern browsers that provides support for HTML5/CSS3/JavaScript.
+

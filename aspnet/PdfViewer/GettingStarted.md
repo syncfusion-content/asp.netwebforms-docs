@@ -53,8 +53,8 @@ Add below code snippet to Default.aspx. Here, PDF viewer uses the hosted service
     <form id="form1" runat="server">
     <div class="control">
         <ej:pdfviewer id="PdfViewer1" Height="800"  
-            ServiceUrl="http://mvc.syncfusion.com/PDFViewer/pdfviewer.asmx/PostViewerAction"
-            PdfService="Remote"
+            ServiceUrl="http://js.syncfusion.com/ejServices/api/PdfViewer"
+            PdfService="Local"
             runat="server">
         </ej:pdfviewer>
     </div>
@@ -182,5 +182,5 @@ N> For adding scripts and styles, please refer **Add Scripts and Styles** sectio
 
 Run the sample and you will see the PDF viewer control as in the below screenshot.
 
-![](Gettingstarted_images/Gettingstarted_img5.jpeg)
+![](Gettingstarted_images/Gettingstarted_img5.png)
 
