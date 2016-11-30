@@ -962,7 +962,7 @@ The Server-Side function must be declared with the following parameter name for 
 </tr>
 <tr>
 <td>
-Update, Insert, Remove, Bulk Update, Bulk Insert
+Update, Insert, Remove, Crud Update(Multiple cards data will be passed to the server when drag and drop enabled with priority.)
 </td>
 <td>
 Changed values,
