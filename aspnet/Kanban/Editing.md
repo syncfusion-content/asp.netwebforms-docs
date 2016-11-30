@@ -956,19 +956,24 @@ The Server-Side function must be declared with the following parameter name for 
 
 <table>
 <tr>
-<th>
-Action</th><th>
-Parameter Name</th><th>
-Example</th></tr>
+<th>Action</th>
+<th>Parameter Name</th>
+<th>Example</th>
+</tr>
 <tr>
 <td>
-Update, Insert, Remove, Crud Update, Crud Insert
+Update, Insert, Remove, Crud Update(Multiple cards data will be passed to the server when drag and drop enabled with priority.)
+</td>
+<td>
 Changed values,
 Added values,
 Deleted value
-</td><td>
+</td>
+<td>
 public static object Crud(List<Task> `changed`, List<Task> `added`, List<Task> `deleted`)
-</td></tr></table>
+</td>
+</tr>
+</table>
 
 ### Insert Card
 
