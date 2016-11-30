@@ -247,7 +247,7 @@ Custom context menu is used to create your own menu item and its action. To add 
                 <ClientSideEvents ContextClick="contextClick" />
                 <ContextMenuSettings EnableContextMenu="true" DisableDefaultItems="true">
                     <CustomContextMenuItem>
-                        <ej:CustomContexMenuItems Text="Clear Selection" />
+                        <ej:CustomContexMenuItems Id="clear" Text="Clear Selection" /> 
                     </CustomContextMenuItem>
                 </ContextMenuSettings>
                 <Columns>
@@ -345,14 +345,14 @@ Sub context menu is used to add customized sub menu to the custom context menu i
             <ej:Grid ID="Grid" runat="server" AllowPaging="True" AllowSorting="true" AllowGrouping="true">
                 <ClientSideEvents ContextClick="contextClick" />
                 <ContextMenuSettings EnableContextMenu="true" DisableDefaultItems="true">
-                    <CustomContextMenuItem>
-                        <ej:CustomContexMenuItems Text="Clear Selection" />
-                        <ej:CustomContexMenuItems Text="Hide Column" />
-                    </CustomContextMenuItem>
-                    <SubContextMenu>
-                        <ej:SubContextMenu  ContextMenuItem="Hide Column" SubMenu="Order ID","Customer ID","Employee ID"/>
-                    </SubContextMenu>
-                </ContextMenuSettings>    
+                <CustomContextMenuItem>
+                    <ej:CustomContexMenuItems Id="clear" Text="Clear Selection" />
+                    <ej:CustomContexMenuItems Id="hide" Text="Hide Column" />
+                </CustomContextMenuItem>
+                <SubContextMenu>
+                    <ej:SubContextMenu ContextMenuItem="hide" SubMenu="Order ID,Customer ID,Employee ID"  />
+                </SubContextMenu>
+                </ContextMenuSettings>
                 <Columns>
                     <ej:Column Field="OrderID" IsPrimaryKey="true" HeaderText="Order ID" Width="90" TextAlign="Right"/>
                     <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90"/>
