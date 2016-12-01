@@ -2,7 +2,7 @@
 layout: post
 title: Altering apperance of Syncfusion Essential ASP.NET PDF viewer.
 description: Altering apperance of Syncfusion Essential ASP.NET PDF viewer.
-platform: ASP .NET
+platform: ASP.NET
 control: PDF viewer
 documentation: ug
 ---
