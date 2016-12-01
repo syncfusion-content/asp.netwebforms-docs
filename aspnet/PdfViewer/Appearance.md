@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Altering apperance of Syncfusion Essential ASP .NET PDF viewer.
-description: Altering apperance of Syncfusion Essential ASP .NET PDF viewer.
+title: Altering apperance of Syncfusion Essential ASP.NET PDF viewer.
+description: Altering apperance of Syncfusion Essential ASP.NET PDF viewer.
 platform: ASP .NET
 control: PDF viewer
 documentation: ug
@@ -35,6 +35,8 @@ By default, ‘flat-azure’ theme is applied to PDF viewer. You can change the 
 <!—style sheet for ‘gradient-saffron’ theme.-->
 <link href="assets/css/web/gradient-saffron/ej.widgets.all.min.css" rel="stylesheet" type="text/css" />
 {% endhighlight %}
+
 The following screenshot shows the PDF viewer in ‘gradient-saffron’ theme.
+
 ![](Appearance_images/Appearance_img1.png)
 
