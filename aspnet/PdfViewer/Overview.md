@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | PDF viewer | ASP .NET | Syncfusion
+title: Overview | PDF viewer | ASP.NET | Syncfusion
 description: Overview
-platform: ASP .NET
+platform: ASP.NET
 control: PDF viewer
 documentation: ug
 ---
@@ -17,20 +17,12 @@ PDF viewer for JavaScript is a visualization component to view PDF documents in 
 The key features of the **PDF viewer** control are listed as follows:
 
 * Supports uploading PDF document into the server as byte array or as stream and supports displaying the same in the client.
-
 * Supports viewing password protected/encrypted PDF documents.
-
 * Supports customizing the default toolbar or creation of a toolbar as per the application requirements.
-
 * Supports zooming tools and viewing modes for better viewing experience.
-
 * Supports built-in themes for enhancing appearance.
-
 * Supports printing the PDF document.
-
 * Supports responsive rendering while resizing the control/window.
-
 * Supports downloading the PDF document being displayed.
-
 * Compatible with all the modern browsers that provides support for HTML5/CSS3/JavaScript.
 
