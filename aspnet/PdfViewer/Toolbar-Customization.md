@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Toolbar customization of Syncfusion Essential ASP .NET PDF viewer.
-description: Toolbar customization of Syncfusion Essential ASP .NET PDF viewer.
-platform: ASP .NET
+title: Toolbar customization of Syncfusion Essential ASP.NET PDF viewer.
+description: Toolbar customization of Syncfusion Essential ASP.NET PDF viewer.
+platform: ASP.NET
 control: PDF viewer
 documentation: ug
 keywords: pdfviewer, PDF viewer
@@ -60,7 +60,7 @@ The PDF viewer has an option to show or hide these grouped items in the default 
 
 **Adding Custom toolbar**
 
-The toolbar can be customized as per the application’s needs, by hiding the existing toolbar.
+The toolbar can be customized as required, by hiding the existing toolbar.
 
 The below code snippet shows how to create a customer toolbar by using the client side APIs.
 
