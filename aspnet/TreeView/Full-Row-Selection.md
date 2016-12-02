@@ -146,10 +146,10 @@ In the ASPX page, add TreeView element with following properties.
 
 <script id="treeTemplate" type="text/x-jsrender">
 
-    {{if !hasChild}}
-    <span class="con-img {{>cls}}"></span>
-    {{/if}}
-    {{>name}}
+    {{"{{"}}if !hasChild{{}}}}
+    <span class="con-img {{"{{"}}>cls{{}}}}"></span>
+    {{"{{"}}/if{{}}}}
+    {{"{{"}}>name{{}}}}
 
 </script>
 	

@@ -82,22 +82,22 @@ In the view page, specify template format and add TreeView element
     {% highlight html %}
     
         <script id="treeTemplate" type="text/x-jsrender">
-            {{if HasChild}}
-                <div class={{>Cls}}>{{>Name}}</div>
-            {{else}}
+            {{"{{"}}if HasChild{{}}}}
+                <div class={{"{{"}}>Cls}}>{{"{{"}}>Name{{}}}}</div>
+            {{"{{"}}else{{}}}}
                 <div class="cont-list">
                     <img class="con-img"
-                        src="http://asp.syncfusion.com/demos/web/Content/images/treeview/template-image-{{>ImgId}}.png" />
+                        src="http://asp.syncfusion.com/demos/web/Content/images/treeview/template-image-{{"{{"}}>ImgId{{}}}}.png" />
                     <div class="cont-del"></div>
                     <div class="cont-details">
-                        <b>{{>Name}}</b><br />
-                        <span>{{>City}}</span>
+                        <b>{{"{{"}}>Name{{}}}}</b><br />
+                        <span>{{"{{"}}>City{{}}}}</span>
                         <br />
-                        <span>{{>Phone}}</span>
+                        <span>{{"{{"}}>Phone{{}}}}</span>
                     </div>
                     <div class="treeFooter"></div>
                 </div>
-            {{/if}}
+            {{"{{"}}/if{{}}}}
     
         </script>
     
