@@ -99,7 +99,7 @@ The document name could be customized. Following code sample illustrates the sam
 
 I> This feature is applicable only at server mode operation.
  
-In order to perform exporting with the use of PivotEngine available in server-side, the 'url' property obtained in the “beforeExport” event is set to empty as shown below.
+In order to perform exporting with the use of PivotEngine available in server-side, the 'exportMode' property obtained in the “BeforeExport” event is set to "ej.PivotClient.ExportMode.PivotEngine" as shown below.
 
 {% highlight html %}
 
@@ -109,8 +109,8 @@ In order to perform exporting with the use of PivotEngine available in server-si
 
     <script type="text/javascript">
     function export(args) {
-                args.url = "";
-            }
+       args.exportMode = ej.PivotClient.ExportMode.PivotEngine;
+    }
     </script>
     
 {% endhighlight %}
