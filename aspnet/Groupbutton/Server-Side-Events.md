@@ -59,9 +59,34 @@ protected void server_events_ItemSelect(object sender, Syncfusion.JavaScript.Web
 
 The server model of currently selected item can be accessed by using event arguments available in postback event.
 
-The event Argument in Postback event contains the following key value pairs. 
+The event Argument `e.Arguments` in Postback event contains the following key value pairs. 
 
-![](Server-Side-Events_image/img1.png)
+<table class="params">
+<thead>
+<tr>
+<th>Index</th>
+<th>Key value Pairs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="index">[0]</td>
+<td class="key">{[id, s1]}</td>
+</tr>
+<tr>
+<td class="index">[1]</td>
+<td class="key">{[selected, True]}</td>
+</tr>
+<tr>
+<td class="index">[2]</td>
+<td class="key">{[disabled, False]}</td>
+</tr>
+<tr>
+<td class="index">[3]</td>
+<td class="key">{[index, 0]}</td>
+</tr>
+</tbody>
+</table>
 
 Using the above index value, the Server model of currently selected item can be accessed as given below. 
 
@@ -74,7 +99,3 @@ Using the above index value, the Server model of currently selected item can be 
   string itemtext = Grp_btn.Items[(int)e.Arguments["index"]].Text;  
 
 {% endhighlight %}
-
-
-
-
