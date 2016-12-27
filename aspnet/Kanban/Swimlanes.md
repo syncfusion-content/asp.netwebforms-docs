@@ -60,7 +60,7 @@ The following output is displayed as a result of the above code example.
 
 ![](Swimlanes_images/Swimlanes_img1.png)
 
-# Drag And Drop between swim lanes
+## Drag And Drop between swim lanes
 
 You can set `AllowDragAndDrop` property of `SwimlaneSettings` as true to enable Drag and Drop between the swim lanes.
 
@@ -117,17 +117,20 @@ The following output is displayed as a result of the above code example.
 
 ![](Swimlanes_images/Swimlanes_img2.png)
 
-# Unassigned swim lane group
+## Unassigned swim lane group
 
-Kanban cards which have null,undefined, empty string("") swimlane key values or user specified swimlane key values in the `Keys(SwimlaneSettings.UnassignedGroup.Keys)` collection will be grouped under the Unassigned swimlane group.You can enable and disble this behavior using the property `Enable(SwimlaneSettings.UnassignedGroup.Enable)` and the default value is `true`.
-  
-Default values in the `Keys(SwimlaneSettings.UnassignedGroup.Keys)` collection are null,undefined,empty string("").You can also add your own(user-defined) swim-lane key values in the `Keys(SwimlaneSettings.UnassignedGroup.Keys)` collection.
-  
-## Unassigned swim lane group with default values
+Unassigned swim lane feature provides option to group some common swim lane key values as separate swim lane group. You can enable and disable this behavior using the property `Enable`.
+User can use default common key values or user defined key values. 
 
-Kanban cards which have null,undefined, empty string("") swimlane key values will be grouped under the Unassigned swimlane group when Unassigned swim lane group is enabled.(set `true` to `Enable(SwimlaneSettings.UnassignedGroup.Enable)` property and the default value is `true`).
+    *	Using default values
+    * 	Using user defined values
 
-Default values in the `Keys(SwimlaneSettings.UnassignedGroup.Keys)` collection are null,undefined,empty string("").
+N> By default, given common keys are grouped under the swim lane name `Unassigned`, user can customize the name using localization.
+
+### Using default values
+
+By default, the swim lane keys of card which is having null, undefined, empty string ("") values will be grouped as unassigned category when `Enable` property is set as true. 
+Default values in the `Keys` collection are null, undefined, empty string ("").
 
 The following code example describes the above behavior.
 
@@ -136,13 +139,13 @@ The following code example describes the above behavior.
 {% highlight html %}
 
   	<ej:Kanban ID="Kanban" runat="server" KeyField="Status">
-                <Columns>
-                    <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
-                    <ej:KanbanColumn HeaderText="In Progress" Key="InProgress" />
-                    <ej:KanbanColumn HeaderText="Done" Key="Close" />
-                </Columns>
-                <Fields Content="Summary" ImageUrl="ImgUrl" SwimlaneKey="Assignee" />
-   </ej:Kanban>     
+        <Columns>
+            <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
+            <ej:KanbanColumn HeaderText="In Progress" Key="InProgress" />
+            <ej:KanbanColumn HeaderText="Done" Key="Close" />
+        </Columns>
+        <Fields Content="Summary" ImageUrl="ImgUrl" SwimlaneKey="Assignee" />
+    </ej:Kanban>
 
 {% endhighlight  %}
 
@@ -151,7 +154,7 @@ The following code example describes the above behavior.
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
-            Task.Add(new Tasks(1, "Open", "Analyze the new requirements gathered from the customer.", "Story", "Low", "Analyze,Customer", 3.5, "Andrew Fuller", "../content/images/kanban/2.png", 1));
+            Task.Add(new Tasks(1, "Open", "Analyze the new requirements gathered from the customer.", "Story", "Low", "Analyze,Customer", 3.5, "Nancy Davloio", "../content/images/kanban/1.png", 1));
             Task.Add(new Tasks(2, "InProgress", "Improve application performance", "Improvement", "Normal", "Improvement", 6, "Andrew Fuller", "../content/images/kanban/2.png", 1));
             Task.Add(new Tasks(3, "Open", "Arrange a web meeting with the customer to get new requirements.", "Others", "Critical", "Meeting", 5.5, "", "", 2));
             Task.Add(new Tasks(4, "InProgress", "Fix the issues reported in the IE browser.", "Bug", "Release Breaker", "IE", 2.5, null, "", 2));
@@ -164,13 +167,13 @@ The following code example describes the above behavior.
 
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The output of the above code example.
 
-![](Swimlanes_images/Swimlanes_img3.png)
+![](Swimlane_images/swimlane_img3.png)
 
-## Unassigned swim lane group with user specified values
+### Using user defined values
 
-User specified swimlane key values in the `Keys(SwimlaneSettings.UnassignedGroup.Keys)` collection will be grouped under the Unassigned swimlane group when Unassigned swim lane group is enabled.(set `true` to `Enable(SwimlaneSettings.UnassignedGroup.Enable)` propertyproperty and the default value is `true`).
+You can override default values for unassigned swim lane group using the property `Keys`.
 
 The following code example describes the above behavior.
 
@@ -210,52 +213,6 @@ The following code example describes the above behavior.
 
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The output of the above code example.
 
-![](Swimlanes_images/Swimlanes_img4.png)
-
-## Enable/Disable unassigned swim lane group
-
-You can enable and disble the unassigned swim lane group using the property `Enable(SwimlaneSettings.UnassignedGroup.Enable)` and the default value is `true`.
-
-The following code example describes the above behavior.
-
-{% tabs %}
-
-{% highlight html %}
-
-  	 <ej:Kanban ID="Kanban" runat="server" KeyField="Status">
-        <Columns>
-            <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
-            <ej:KanbanColumn HeaderText="In Progress" Key="InProgress" />
-            <ej:KanbanColumn HeaderText="Done" Key="Close" />
-        </Columns>
-        <SwimlaneSettings>
-            <UnassignedGroup Enable="false" />
-        </SwimlaneSettings>
-        <Fields Content="Summary" ImageUrl="ImgUrl" SwimlaneKey="Assignee" />
-    </ej:Kanban>
-
-{% endhighlight  %}
-
-{% highlight c# %}
-
-          List<Tasks> Task = new List<Tasks>();  
-          protected void Page_Load(object sender, EventArgs e)
-          {
-            Task.Add(new Tasks(1, "Open", "Analyze the new requirements gathered from the customer.", "Story", "Low", "Analyze,Customer", 3.5, "Andrew Fuller", "../content/images/kanban/2.png", 1));
-            Task.Add(new Tasks(2, "InProgress", "Improve application performance", "Improvement", "Normal", "Improvement", 6, "Andrew Fuller", "../content/images/kanban/2.png", 1));
-            Task.Add(new Tasks(3, "Open", "Arrange a web meeting with the customer to get new requirements.", "Others", "Critical", "Meeting", 5.5, null, "", 2));
-            Task.Add(new Tasks(4, "InProgress", "Fix the issues reported in the IE browser.", "Bug", "Release Breaker", "IE", 2.5, null, "", 2));
-            Task.Add(new Tasks(5, "Close", "Fix the issues reported by the customer.", "Bug", "Low", "Customer", 3.5, null, "", 1));
-            this.Kanban.DataSource = Task;
-            this.Kanban.DataBind();
-           }
-
-{% endhighlight  %}
-
-{% endtabs %}  
-
-The following output is displayed as a result of the above code example.
-
-![](Swimlanes_images/Swimlanes_img5.png)
+![](Swimlane_images/swimlane_img4.png)
