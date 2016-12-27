@@ -549,7 +549,7 @@ The following output is displayed as a result of the above code example.
 
 ## Customize Items Count Text
 
-You can customize the Items count text using the property `TotalCount.Text`.
+You can customize the Items count text using the property `Text` of `TotalCount`.
 
 The following code example describes the above behavior.
 
