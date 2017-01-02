@@ -106,7 +106,7 @@ public class DataSource
 
 The following screenshot displays the output of above code.
 
-![](Datasource/object.png)
+![](Datasource_images/object.png)
 
 ### Remote Datasource
 
@@ -135,7 +135,7 @@ Add the following code example in your ASPX page.
 
 The following screenshot displays the output of the above code example. 
 
-![](Datasource/remote.png)
+![](Datasource_images/remote.png)
 
 ## XML Data binding
 
@@ -172,4 +172,4 @@ Load the Groupbutton items in the XML data as illustrated in the following code 
 
 The following screenshot displays the output for the XML Data binding.                                                                                                       
 
-![](Datasource/xml.png) 
+![](Datasource_images/xml.png) 
