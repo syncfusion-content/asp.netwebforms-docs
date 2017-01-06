@@ -53,7 +53,7 @@ Grouping Bar allows user to dynamically alter the report by filter and remove op
 ![](Grouping-Bar_images/OLAPServerMode.png)
 
 ## Searching Values
-Search option available in Grouping Bar allows you to search a specific value that needs to be filtered and displayed from the list of values inside the filter pop-up window.
+Search option available in Grouping Bar allows you to search a specific value that needs to be filtered from the list of values inside the filter pop-up window.
 
 ![](Grouping-Bar_images/OlapFilterIcon.png)
 
@@ -66,27 +66,6 @@ Filtering option available in Grouping Bar allows you to select a specific set o
 ![](Grouping-Bar_images/OlapFilterIcon.png)
 
 ![](Grouping-Bar_images/OlapFilterDialog.png)
-
-## Filtering Filter Values
-Filtering option available in Filter field in Grouping Bar allows you to filter the values with respect to the field which is not visible in PivotGrid control.
-
-N> By default, all the members are included which is indicated in the split button.
-
-![](Grouping-Bar_images/olapclientslicer.png)
-
-The below example denotes filtering all Customer Geography values except "Australia" from the list in the filter pop-up window.
-
-![](Grouping-Bar_images/olapclientslicer1.png)
-
-When click on "OK" button, the split button in slicer filter indicates the filter as shown in the below image. 
-
-![](Grouping-Bar_images/olapclientslicer2.png)
-
-The below example denotes filtered multiple the Customer Geography values from the list in the filter pop-up window.
-
-![](Grouping-Bar_images/olapclientslicer3.png)
-
-![](Grouping-Bar_images/olapclientslicer4.png)
 
 ## Removing Field
 

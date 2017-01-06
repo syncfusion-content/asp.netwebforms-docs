@@ -17,11 +17,11 @@ N> Drill-through is supported in PivotGrid only when we configure and enable dri
 
 ![](DrillThrough_images/pivotclient.png)
 
-On clicking any value cell, the "Drill Through Information" dialog will be opened.  It consists of grid table with data which are associated with the measure values of clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and the values of the dimensions which are associated with this measure are alone displayed in the grid table. 
+On clicking any value cell, the "Drill Through Information" dialog will be opened. It consists of Grid with data which are associated with the measure values of the clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and the values of the dimensions which are associated with this measure are alone displayed in the Grid. 
 
 ![](DrillThrough_images/DrillThroughData.png)
 
-On clicking the "Hierarchy Selector" button which displayed below the grid table, the "Hierarchy Selector" dialog will be opened. It consists of the dimensions which are associated with the measure of clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and the dimensions associated with this measure are alone displayed in the dialog.   
+On clicking the "Hierarchy Selector" button which is displayed below the Grid, the "Hierarchy Selector" dialog will be opened. It consists of the dimensions which are associated with the measure of clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and the dimensions associated with this measure are alone displayed in the dialog. 
 
 ![](DrillThrough_images/hierarchy_selector.png)
 

@@ -195,12 +195,12 @@ The options available in the toolbar are,
 * **Chart types** – Allows user to change the Chart type dynamically.
 * **Report List** - It holds all the reports of the current session of the PivotClient control and displays in a dropdown list. By default, from the dropdown list a report can be selected.
 
-Following are the options available in data base report manipulation,
+Following are the options available for database report manipulation,
 
 ![](OLAP-Client-Elements_images/Toolbar1.png)
 
 * **Save** - The save option stores the report collection by only one name in a database.
-* **Save As** - The save as option stores the report collection by two or more names in a database.
+* **Save As** - The save as option stores the report collection by more than one name in a database.
 * **Load** - The load option picks the saved report collection from the database and loads it by clearing the existing collection of reports.
 * **Remove** - Removes the selected report from the saved report list in a database.
 * **Rename** - The rename option lets the user to change the name of the selected report from the saved report list in a database.

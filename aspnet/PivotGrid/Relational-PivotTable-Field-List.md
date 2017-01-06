@@ -116,7 +116,7 @@ You can also alter the report on fly through check and uncheck option as an alte
 ![](PivotTable-Field-List_images/Relationalchecknuncheck.png) 
 
 ## Searching Values
-Search option available in Field List allows you to search a specific value that needs to be filtered and displayed from the list of values inside the filter pop-up window.
+Search option available in Field List allows you to search a specific value that needs to be filtered from the list of values inside the filter pop-up window.
 
 ![](PivotTable-Field-List_images/RelationalFilterIcon.png)
 

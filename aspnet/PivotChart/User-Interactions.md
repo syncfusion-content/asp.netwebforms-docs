@@ -127,7 +127,7 @@ N> By default, the value for the `Type` option in zooming is “x,y” (indicati
 
 ### Enable Scrollbar
 
-* When `zooming.enableScrollbar` option is set to true, you can scroll the Chart by using scroll bar or by using mouse whell scrolling.
+* When `zooming.enableScrollbar` option is set to true, the PivotChart is rendered along with the scroll bars for precise view of data. The data can be viewed by using scroll bar or by using mouse whell scrolling.
 
 {% highlight html %}
 
