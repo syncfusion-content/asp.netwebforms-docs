@@ -125,6 +125,21 @@ N> By default, the value for the `Type` option in zooming is “x,y” (indicati
 
 {% endhighlight %}
 
+### Enable Scrollbar
+
+* When `zooming.enableScrollbar` option is set to true, the PivotChart is rendered along with the scroll bars for precise view of data. The data can be viewed by using scroll bar or by using mouse whell scrolling.
+
+{% highlight html %}
+
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
+<Zooming EnableScrollbar="true" />
+<Size Width="950px" Height="460px"></Size>
+</ej:PivotChart>
+
+{% endhighlight %} 
+
+![](User-Interactions_images/scrollbar.png)
+
 ## Marker and Crosshair
 
 ### Marker Shape Customization

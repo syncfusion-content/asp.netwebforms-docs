@@ -112,11 +112,16 @@ You can also alter the report on fly through check and uncheck option as an alte
 
 ![](PivotTable-Field-List_images/check-uncheck.png) 
 
+## Searching Values
+Search option available in Field List allows you to search a specific value that needs to be filtered from the list of values inside the filter pop-up window.
+
+![](PivotTable-Field-List_images/filter.png)
+
+![](PivotTable-Field-List_images/search.png)
+
 ## Filtering
 Values can be filtered by checking/unchecking the check box besides them, inside the filter pop-up window. At least one value needed to be checked state while filtering otherwise “Ok” button will be disabled.
 
 ![](PivotTable-Field-List_images/filter.png) 
 
 ![](PivotTable-Field-List_images/filter1.png)
-
- 

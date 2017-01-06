@@ -519,6 +519,50 @@ namespace PivotClientDemo
             return null;
         }
 
+        [System.Web.Http.ActionName("RemoveReportFromDB")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> RemoveReportFromDB(Dictionary<string, object> jsonResult)
+        {
+            string operationalMode = jsonResult["operationalMode"].ToString(), analysisMode = jsonResult["analysisMode"].ToString(), reportName = string.Empty;
+            SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
+            con.Open();
+            reportName = jsonResult["reportName"].ToString() + "##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower();
+            SqlCeCommand cmd1 = null;
+            foreach (DataRow row in GetDataTable().Rows)
+            {
+                if ((row.ItemArray[0] as string).Equals(reportName))
+                {
+                    cmd1 = new SqlCeCommand("DELETE FROM ReportsTable WHERE ReportName LIKE '%" + reportName + "%'", con);
+                }
+            }
+            cmd1.ExecuteNonQuery();
+            con.Close();
+            return null;
+        }
+
+        [System.Web.Http.ActionName("RenameReportInDB")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> RenameReportInDB(Dictionary<string, object> jsonResult)
+        {
+            string operationalMode = jsonResult["operationalMode"].ToString(), analysisMode = jsonResult["analysisMode"].ToString(), reportName = string.Empty, renameReport = string.Empty;
+            SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
+            con.Open();
+            reportName = jsonResult["selectedReport"].ToString() + "##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower();
+            renameReport = jsonResult["renameReport"].ToString() + "##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower();
+            SqlCeCommand cmd1 = null;
+            foreach (DataRow row in GetDataTable().Rows)
+            {
+                if ((row.ItemArray[0] as string).Equals(reportName))
+                {
+                    cmd1 = new SqlCeCommand("update ReportsTable set ReportName=@RenameReport where ReportName like '%" + reportName + "%'", con);
+                }
+            }
+            cmd1.Parameters.Add("@RenameReport", renameReport);
+            cmd1.ExecuteNonQuery();
+            con.Close();
+            return null;
+        }
+
         [System.Web.Http.ActionName("FetchReportListFromDB")]
         [System.Web.Http.HttpPost]
         public Dictionary<string, object> FetchReportListFromDB(Dictionary<string, object> jsonResult)
@@ -535,6 +579,7 @@ namespace PivotClientDemo
             }
             Dictionary<string, object> dictionary = new Dictionary<string, object>();
             dictionary.Add("ReportNameList", reportNames);
+            dictionary.Add("action", jsonResult["action"].ToString());
             return dictionary;
         }
 
