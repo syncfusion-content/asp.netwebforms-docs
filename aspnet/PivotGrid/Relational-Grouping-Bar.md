@@ -53,6 +53,12 @@ Grouping Bar allows user to dynamically alter the report by filter, sort and rem
 
 ![](Grouping-Bar_images/groupingbar.png)
 
+## Searching Values
+Search option available in Grouping Bar allows you to search a specific value that needs to be filtered and displayed from the list of values inside the filter pop-up window.
+
+![](Grouping-Bar_images/filter.png)
+
+![](Grouping-Bar_images/groupingbar-search.png)
 
 ## Filtering Values
 
@@ -61,6 +67,27 @@ Filtering option available in Grouping Bar allows you to select a specific set o
 ![](Grouping-Bar_images/filter.png)
 
 ![](Grouping-Bar_images/filter1.png)
+
+## Filtering Filter Values
+Filtering option available in Filter field in Grouping Bar allows you to filter the values with respect to the field which is not visible in PivotGrid control.
+
+N> By default, all the members are included which is indicated in the split button.
+
+![](Grouping-Bar_images/groupingbar-slicer.png)
+
+The below example denotes filtering all product values except "Bike" from the list in the filter pop-up window.
+
+![](Grouping-Bar_images/groupingbar-slicer3.png)
+
+When click on "OK" button, the split button in slicer filter indicates the filter as shown in the below image.   
+
+![](Grouping-Bar_images/groupingbar-slicer4.png)
+
+The below example denotes filtered multiple the product values from the list in the filter pop-up window.
+
+![](Grouping-Bar_images/groupingbar-slicer1.png)
+
+![](Grouping-Bar_images/groupingbar-slicer2.png)
 
 ## Sorting Values
 

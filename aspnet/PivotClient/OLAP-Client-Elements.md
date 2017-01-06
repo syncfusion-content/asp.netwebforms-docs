@@ -182,8 +182,7 @@ The options available in the toolbar are,
 * **Add Report** - Adds a new report to the existing list of reports.
 * **Remove Report** - Removes the current report from the report list.  It could not be possible to remove if the report list contains only one report in it.
 * **Rename Report** - The rename option lets the user to change the name of the current report.
-* **Save Report** - The save option stores the report collection at the instant in a database.
-* **Load Report** - The load report option picks the saved report collection from the database and loads it by clearing the existing collection of reports.
+* **Report Manipulation in DB** - which contains the options to manipulate the reports in the Database.
 * **MDX Query** – This option displays the MDX query executed to retrieve the data at that instant.
 * **Defer Update** – This option lets the user to update the widget on-demand rather than updating it for every interaction.
 * **Export to Excel** - This option is used to export the Grid and Chart into an Excel worksheet.
@@ -195,6 +194,16 @@ The options available in the toolbar are,
 * **Toggle Axis** – Interchanges the items between Categorical and Series axes.
 * **Chart types** – Allows user to change the Chart type dynamically.
 * **Report List** - It holds all the reports of the current session of the PivotClient control and displays in a dropdown list. By default, from the dropdown list a report can be selected.
+
+Following are the options available in data base report manipulation,
+
+![](OLAP-Client-Elements_images/Toolbar1.png)
+
+* **Save** - The save option stores the report collection by only one name in a database.
+* **Save As** - The save as option stores the report collection by two or more names in a database.
+* **Load** - The load option picks the saved report collection from the database and loads it by clearing the existing collection of reports.
+* **Remove** - Removes the selected report from the saved report list in a database.
+* **Rename** - The rename option lets the user to change the name of the selected report from the saved report list in a database.
 
 ## Report Manipulation
 
@@ -216,7 +225,7 @@ Add Report option lets the user to add a report to the existing report collectio
 
 On clicking OK button after giving appropriate name in the respective column, a report with the entered name is added to the collection. On clicking Cancel button, report creation gets canceled.
 
-![](OLAP-Client-Elements_images/addreport1.png) 
+![](OLAP-Client-Elements_images/newreport1.png) 
 
 ### Remove Report
 
@@ -240,25 +249,46 @@ After giving a name and clicking OK, the active report gets refreshed with the n
 
 ![](OLAP-Client-Elements_images/afterrenamereport.png) 
 
-### Save Report
+### Save
+Save option saves the entire report collection by only one name to a database. The database is connected to the application through a connection string provided in the service.
 
-Save Report option saves the entire report collection to a database.  The database is connected to the application through a connection string provided in the service.
+On clicking the Save icon, the Save dialog is opened prompting for a name with which the report collection needs to be stored.
 
-On clicking the Save Report icon, the Save Report dialog is opened prompting for a name with which the report collection needs to be stored.
-
-![](OLAP-Client-Elements_images/savereport.png) 
+![](OLAP-Client-Elements_images/savereport.png)
 
 After providing appropriate name and clicking OK, the report collection will get saved to the connected database. Clicking Cancel button, withdraws the saving operation.
 
-### Load Report
+### Save As
+Save As option saves the entire report collection by two or more name to a database. The database is connected to the application through a connection string provided in the service.
 
-Load Report option loads a report collection from the database via service.  Clicking the respective icon at toolbar, the Load Report dialog opens.
+On clicking the Save As icon, the Save As dialog is opened prompting for a name with which the report collection needs to be stored.
 
-![](OLAP-Client-Elements_images/loadreport.png) 
+![](OLAP-Client-Elements_images/saveasreport.png)
+
+After providing appropriate name and clicking OK, the report collection will get saved to the connected database. Clicking Cancel button, withdraws the saving operation.
+
+### Load
+Load option loads a saved report collection from the database via service.  Clicking the respective icon at toolbar, the Load dialog opens.
+
+![](OLAP-Client-Elements_images/loadreport.png)
 
 Any one of the report from the report collection could be selected from the drop-down list and OK button is clicked for loading the selected report collection. Cancel button is used for to abort the report loading operation.
 
-![](OLAP-Client-Elements_images/afterloadreport.png) 
+![](OLAP-Client-Elements_images/loadreport1.png)
+
+### Remove
+Remove option removes the saved report from the report collection.  On clicking the icon at toolbar, a dialog will open prompting for user’s confirmation on removal of report as shown below.
+
+![](OLAP-Client-Elements_images/removerecord1.png)
+
+On clicking OK button, the report gets removed from the collection. On clicking Cancel button, the operation gets aborted.
+
+### Rename
+Rename option lets the user to rename the saved report.  On clicking the corresponding icon at toolbar, the below dialog opens prompting the new name.
+
+![](OLAP-Client-Elements_images/renameRecord.png)
+
+After giving a name and clicking OK, the active report gets refreshed with the new name. On clicking Cancel button, the operation gets canceled.
 
 ### Report List
 

@@ -419,30 +419,47 @@ namespace PivotGridDemo
         {
             string mode = jsonResult["operationalMode"].ToString();
             byte[] reportString = new byte[4 * 1024];
+            var reports = "";
             Dictionary<string, object> dictionary = new Dictionary<string, object>();
-            foreach (DataRow row in GetDataTable().Rows)
+            if (mode == "serverMode" && jsonResult.ContainsKey("clientReports"))
             {
-                if ((row.ItemArray[0] as string).Equals(jsonResult["reportName"].ToString()))
+                reports = jsonResult["clientReports"].ToString();
+            }
+            else
+            {
+                foreach (DataRow row in GetDataTable().Rows)
                 {
-                    if (mode == "clientMode")
+                    if ((row.ItemArray[0] as string).Equals(jsonResult["reportName"].ToString()))
                     {
-                        reportString = row.ItemArray[1] as byte[];
-                        dictionary.Add("report", Encoding.UTF8.GetString(reportString));
-                        break;
-                    }
-                    else if (mode == "serverMode")
-                    {
-                        OlapDataManager DataManager = new OlapDataManager(connectionString);
-                        var reports = "";
-                        if ((row.ItemArray[0] as string).Equals(jsonResult["reportName"].ToString()))
+                        if (mode == "clientMode")
+                        {
+                            reportString = row.ItemArray[1] as byte[];
+                            dictionary.Add("report", Encoding.UTF8.GetString(reportString));
+                            break;
+                        }
+                        else if (mode == "serverMode")
                         {
                             reports = OLAPUTILS.Utils.CompressData(row.ItemArray[1] as byte[]);
+                            break;
                         }
-                        DataManager.SetCurrentReport(Utils.DeserializeOlapReport(reports));
-                        DataManager.OverrideDefaultFormatStrings = true;
-                        dictionary = htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["gridLayout"].ToString(), Convert.ToBoolean(jsonResult["enablePivotFieldList"].ToString()));
                     }
                 }
+            }
+            if (reports != "")
+            {
+                OlapDataManager DataManager = new OlapDataManager(connectionString);
+                dynamic customData = serializer.Deserialize<dynamic>(jsonResult["customObject"].ToString());
+                var cultureIDInfo = new System.Globalization.CultureInfo(("en-US")).LCID;
+                if (customData is Dictionary<string, object> && customData.ContainsKey("Language"))
+                {
+                    cultureIDInfo = new System.Globalization.CultureInfo((customData["Language"])).LCID;
+                }
+                connectionString = connectionString.Replace("" + cultureIDInfoval + "", "" + cultureIDInfo + "");
+                cultureIDInfoval = cultureIDInfo;
+                DataManager.Culture = new System.Globalization.CultureInfo((cultureIDInfo));
+                DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(reports));
+                DataManager.OverrideDefaultFormatStrings = true;
+                dictionary = htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["gridLayout"].ToString(), Convert.ToBoolean(jsonResult["enablePivotFieldList"].ToString()));
             }
             return dictionary;
         }

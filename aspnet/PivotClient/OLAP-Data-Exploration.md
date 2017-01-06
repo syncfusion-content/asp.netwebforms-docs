@@ -9,6 +9,14 @@ documentation: ug
 
 # Data Exploration
 
+## Searching
+
+### Searching by Member
+
+By clicking the Split Button of a field, Member Editor dialog opens through which members are searched and get displayed from the members list inside the Member Editor dialog.
+
+![](Data-Exploration_images/Searchingbymember.png) 
+
 ## Filtering
 
 ### Filtering by Member
