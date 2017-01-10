@@ -1886,7 +1886,7 @@ __Parameters__ __Table__
                 action, key, keyColumn
             </td>
             <td>
-                 public static object CrudUrl(string action, int key, string keyColumn){ }
+                 public static object CrudUrl(string action, int? key, string keyColumn){ }
             </td>
         </tr>
         <tr>
