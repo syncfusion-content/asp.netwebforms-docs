@@ -385,7 +385,7 @@ The following code example describes the above behavior.
           var employeeData = <%=serializer.Serialize(this.EmployeeView)%>
           function OnLoad(args) {
                   this.model.dataSource.adaptor = new ej.ForeignKeyAdaptor([
-                  { field: "EmployeeID", foreignKeyField: "EmployeeID", foreignKeyValue: "FirstName", dataSource: employeeData }]
+                  { foreignKeyField: "EmployeeID", foreignKeyValue: "FirstName", dataSource: employeeData }]
                     , "JsonAdaptor");
                }
        </script>
