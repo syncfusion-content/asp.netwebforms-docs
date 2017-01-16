@@ -65,10 +65,10 @@ In the view page, add FileExplorer element and specify the AJAX settings for Rea
             ID="fileexplorer"
             runat="server"
             Layout="Tile"
-            AjaxAction="http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
-            Path="http://mvc.syncfusion.com/ODataServices/FileBrowser/">
+            AjaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"
+            Path="http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/">
             <AjaxSettings>
-                <Read Url="http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONPAction" DataType="jsonp" />
+                <Read Url="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperationsCors" DataType="jsonp" />
             </AjaxSettings>
         </ej:FileExplorer>
         

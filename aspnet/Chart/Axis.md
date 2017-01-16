@@ -17,6 +17,7 @@ Vertical axis always uses numerical or logarithmic scale. Horizontal(x) axis sup
 * Category
 * Numeric
 * DateTime
+* DateTime Category
 * Logarithmic
 
 ## Category Axis
@@ -263,6 +264,21 @@ When the value of the RangePadding property is **Normal**, the padding is applie
 ![](Axis_images/axis_img11.png)
 
 
+#### Customizing the starting range of the axis
+
+By default the Y axis will be always calculated from the value 0 for column, bar, stacking column and stacking bar series types. You can modify this behavior by setting false to the property **startFromZero** in the axis. On setting this the axis minimum value will be calculated based on the value for the data points.
+
+{% highlight html %}
+
+<ej:Chart ID="chartcontainer" runat="server">
+         <PrimaryYAxis RangePadding="None" StartFromZero="false" /> 
+      </ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img66.png)
+
+
 ## DateTime Axis
 
 Date time axis uses date time scale and displays the date time values as axis labels in the specified format. To use date time axis, set the ValueType property of the axis to **Datetime**.
@@ -395,6 +411,64 @@ When the value of the RangePadding property is **Additional**, the range is roun
 {% endhighlight %} 
 
 ![](Axis_images/axis_img18.png)
+
+
+## DateTime Category Axis
+
+DateTime category axis takes date time value as input but behaves like category axis. This is used to display the date time values with nonlinear intervals (used to depict the business days by skipping holidays). To use date time axis, set the **ValueType** property of the axis to **DateTimeCategory**.
+
+{% highlight html %}
+
+<ej:Chart ID="chartcontainer" runat="server">
+         <PrimaryXAxis ValueType="DateTimeCategory"/> 
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img63.png)
+
+[Click](http://asp.syncfusion.com/demos/web/chart/datetimecategoryaxis.aspx) here to view our online demo sample for date time axis.
+
+### Customizing DateTime Category range
+
+Axis range can be customized by using the **Range** property to set the **Minimum**, **Maximum** and **Interval** values. Datetime category axis takes numeric input for minimum and maximum property.
+
+{% highlight html %}
+
+<ej:Chart ID="chartcontainer" runat="server">
+       <%--Customizing X-axis date time category range--%>
+         <PrimaryXAxis>
+            <Range Min=0 Max=4/>
+         </PrimaryXAxis>
+      </ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img64.png)
+
+### DateTime Category intervals
+
+Date time category intervals can be customized by using the **Interval** and **IntervalType** properties of the axis. For example, when you set the intervalType as months, it displays only the first label of all the months from the data.
+
+Essential Chart supports the following types of interval for date time category axis.
+* Days
+* Hours
+* Milliseconds
+* Minutes
+* Months
+* Seconds
+* Years
+* Auto
+
+{% highlight html %}
+
+<ej:Chart ID="chartcontainer" runat="server">
+         <PrimaryXAxis IntervalType="Months"/> 
+      </ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img65.png)
 
 
 ## Logarithmic Axis
