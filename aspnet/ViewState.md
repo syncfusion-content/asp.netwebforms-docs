@@ -18,3 +18,9 @@ Sustain the entire widget model of EJWEB DatePicker even after form post or brow
 •	Start and depth level
 
 are stored in local storage / cookies of browser before page refreshes and reinitialized with the restored model after refresh.
+
+{% highlight html %}
+
+    <ej:DatePicker ID="datepick" EnablePersistence="true" runat="server"></ej:DatePicker>
+
+{% endhighlight %}
