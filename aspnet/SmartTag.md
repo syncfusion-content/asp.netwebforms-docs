@@ -5,6 +5,7 @@ description: Smart tag Syncfusion ASP.NET controls
 platform: ASP.NET
 control: Introduction
 documentation: ug
+
 ---
 # Design Time Support
 

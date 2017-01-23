@@ -5,6 +5,7 @@ description: Server Data Binding to Syncfusion ASP.NET controls
 platform: ASP.NET
 control: Introduction
 documentation: ug
+
 ---
 # Server Data Binding
 

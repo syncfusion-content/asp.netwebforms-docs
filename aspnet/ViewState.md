@@ -1,9 +1,11 @@
+---
 layout: post
 title: View State Syncfusion ASP.NET controls
 description: View State of Syncfusion ASP.NET controls
 platform: ASP.NET
 control: Introduction
 documentation: ug
+
 ---
 
 # View State 

@@ -5,6 +5,7 @@ description: How to localize the syncfusion ASP.NET controls during application 
 platform: ASP.NET
 control: Introduction
 documentation: ug
+
 ---
 
 # Localization
