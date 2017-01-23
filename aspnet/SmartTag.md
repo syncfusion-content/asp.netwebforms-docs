@@ -1,3 +1,4 @@
+---
 layout: post
 title: Smart tag Syncfusion ASP.NET controls
 description: Smart tag Syncfusion ASP.NET controls
@@ -5,12 +6,17 @@ platform: ASP.NET
 control: Introduction
 documentation: ug
 ---
+# Design Time Support
 
-# Smart tag
+Syncfusion ASP.NET component provides the rich design-time support for controls in the .NET development environment. Developers can drag server controls from the Visual studio .NET toolbox onto a page, access their properties through the Properties window.
+
+![](Core_images/Smarttag5.png)
+
+## Smart tag
 
 The Smart Tag facility added to the controls will have an extra benefit to the developers. They could customize the controls according to their needs in different forms in the project during design-time by setting various properties and behaviors. 
 
-## Smart Tag of DropDownList
+### Smart Tag of DropDownList
 
 The DropDownList Smart Tag allows easy access to frequently needed tasks. You can display the Smart Tag by right clicking on a DropDownList control in the design window, and choosing Show Smart Tag.
 
@@ -83,7 +89,7 @@ You can add, edit, delete items as follows
 
 ### Smart Tag of bound DropDownList
 
-When RadDropDownList is bound to a data source, the Smart Tag looks like the following:
+When DropDownList is bound to a data source, the Smart Tag looks like the following:
 
 ![](Core_images/Smarttag4.png)
 
