@@ -876,3 +876,36 @@ We can able to select the point/series programmatically on chart load, by settin
 ![](User-Interactions_images/User-Interactions_img29.png)
 
 
+## Data Editing
+
+EjChart provides support to change the location of the rendered points. This can be done by dragging the point and dropping it on another location in chart. To enable the data editing, set the **enable** property to true in the **dragSettings** of the series.
+
+{% highlight html %}
+
+<ej:Chart ID="chartcontainer" runat="server">
+        <CommonSeriesOptions>
+                <DragSettings Enable="true" />
+            </CommonSeriesOptions>
+      </ej:Chart>
+
+{% endhighlight %}
+
+![](User-Interactions_images/User-Interactions_img31.png)
+
+[Click](http://asp.syncfusion.com/demos/web/chart/dragdrop.aspx) here to view the data editing online demo sample.
+
+### Customize Dragging direction
+
+To drag the point along x and y axes, you can specify **type** as xy in **dragSettings**. And to drag along x axis alone, specify the type as x and to drag along y axis, specify type as y.
+
+{% highlight html %}
+
+<ej:Chart ID="chartcontainer" runat="server">
+        <CommonSeriesOptions>
+                <DragSettings Type="Y" />
+            </CommonSeriesOptions>
+      </ej:Chart>
+
+{% endhighlight %}
+
+![](User-Interactions_images/User-Interactions_img32.png)

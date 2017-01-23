@@ -351,25 +351,34 @@ namespace PivotGridDemo
             var reports = "";
             string mode = operationalMode;
             Dictionary<string, object> dictionary = new Dictionary<string, object>();
-            foreach (DataRow row in GetDataTable().Rows)
+            if (mode == "serverMode" && !string.IsNullOrEmpty(clientReports))
             {
-                if ((row.ItemArray[0] as string).Equals(reportName))
+                reports = clientReports;
+            }
+            else
+            {
+                foreach (DataRow row in GetDataTable().Rows)
                 {
-                    if (mode == "clientMode")
+                    if ((row.ItemArray[0] as string).Equals(reportName))
                     {
-                        reportString = (row.ItemArray[1] as byte[]);
-                        dictionary.Add("report", Encoding.UTF8.GetString(reportString));
-                        break;
-                    }
-                    else if (mode == "serverMode")
-                    {
-                        reports = OLAPUTILS.Utils.CompressData(row.ItemArray[1] as byte[]);
-                        report = htmlHelper.DeserializedReports(reports);
-                        htmlHelper.PivotReport = report;
-                        dictionary = htmlHelper.GetJsonData("loadOperation", ProductSales.GetSalesData(), "Load Report", reportName);
-                        break;
+                        if (mode == "clientMode")
+                        {
+                            reportString = (row.ItemArray[1] as byte[]);
+                            dictionary.Add("report", Encoding.UTF8.GetString(reportString));
+                            break;
+                        }
+                        else if (mode == "serverMode")
+                        {
+                            reports = OLAPUTILS.Utils.CompressData(row.ItemArray[1] as byte[]);
+                            break;
+                        }
                     }
                 }
+            }
+            if (reports != "") {
+                report = htmlHelper.DeserializedReports(reports);
+                htmlHelper.PivotReport = report;
+                dictionary = htmlHelper.GetJsonData("loadOperation", ProductSales.GetSalesData(), "Load Report", reportName);
             }
             return dictionary;
         }

@@ -585,8 +585,8 @@ In the view page, add FileExplorer element and specify “**AjaxDataType**” as
         <ej:FileExplorer
             ID="fileexplorer"
             runat="server"
-            AjaxAction="http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONPAction"
-            Path="http://mvc.syncfusion.com/ODataServices/FileBrowser/" 
+            AjaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"
+            Path="http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/" 
             AjaxDataType="jsonp">      
         </ej:FileExplorer>
         

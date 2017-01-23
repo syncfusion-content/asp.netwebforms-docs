@@ -244,9 +244,13 @@ namespace PivotClientDemo
         [OperationContract]
         Dictionary<string, object> SaveReportToDB(string reportName, string operationalMode, string analysisMode, string olapReport, string clientReports);
         [OperationContract]
+        Dictionary<string, object> RemoveReportFromDB(string reportName, string operationalMode, string analysisMode);
+        [OperationContract]
+        Dictionary<string, object> RenameReportInDB(string selectedReport, string renameReport, string operationalMode, string analysisMode);
+        [OperationContract]
         Dictionary<string, object> LoadReportFromDB(string reportName, string operationalMode, string analysisMode, string olapReport, string clientReports);
         [OperationContract]
-        Dictionary<string, object> FetchReportListFromDB(string operationalMode, string analysisMode);
+        Dictionary<string, object> FetchReportListFromDB(string action, string operationalMode, string analysisMode);
         [OperationContract]
         void Export(System.IO.Stream stream);
     }
@@ -318,7 +322,45 @@ namespace PivotClientDemo
             return null;
         }
 
-        public Dictionary<string, object> FetchReportListFromDB(string operationalMode, string analysisMode)
+        public Dictionary<string, object> RemoveReportFromDB(string reportName, string operationalMode, string analysisMode)
+        {
+            SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
+            con.Open();
+            reportName = reportName + "##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower();
+            SqlCeCommand cmd1 = null;
+            foreach (DataRow row in GetDataTable().Rows)
+            {
+                if ((row.ItemArray[0] as string).Equals(reportName))
+                {
+                    cmd1 = new SqlCeCommand("DELETE FROM ReportsTable WHERE ReportName LIKE '%" + reportName + "%'", con);
+                }
+            }
+            cmd1.ExecuteNonQuery();
+            con.Close();
+            return null;
+        }
+
+        public Dictionary<string, object> RenameReportInDB(string selectedReport, string renameReport, string operationalMode, string analysisMode)
+        {
+            SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
+            con.Open();
+            selectedReport = selectedReport + "##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower();
+            renameReport = renameReport + "##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower();
+            SqlCeCommand cmd1 = null;
+            foreach (DataRow row in GetDataTable().Rows)
+            {
+                if ((row.ItemArray[0] as string).Equals(selectedReport))
+                {
+                    cmd1 = new SqlCeCommand("update ReportsTable set ReportName=@RenameReport where ReportName like '%" + selectedReport + "%'", con);
+                }
+            }
+            cmd1.Parameters.Add("@RenameReport", renameReport);
+            cmd1.ExecuteNonQuery();
+            con.Close();
+            return null;
+        }
+
+        public Dictionary<string, object> FetchReportListFromDB(string action, string operationalMode, string analysisMode)
         {
             string reportNames = string.Empty;
             string currentRptName = string.Empty;
@@ -333,6 +375,7 @@ namespace PivotClientDemo
             }
             Dictionary<string, object> dictionary = new Dictionary<string, object>();
             dictionary.Add("ReportNameList", reportNames);
+            dictionary.Add("action", action);
             return dictionary;
         }
 
