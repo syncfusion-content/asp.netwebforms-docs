@@ -84,7 +84,7 @@ For more information, see  [Binding EntityDataSource To DropDownList](https://he
 
 {% highlight html %}
 
-   <ej:DropDownList ID="Transportlist" runat="server"
+    <ej:DropDownList ID="Transportlist" runat="server"
         DataSourceID="ObjectDataSource1"
         DataTextField="Text" 
         DataValueField="ID" WatermarkText="Select a Transport" Width="100%">
@@ -143,6 +143,8 @@ GetItems methods returns the DropDownList's items, let we define the GetItems me
         }
 
     }
+
+{% endhighlight %}
 
 For more information, see  [Binding ObjectDataSource To DropDownList](https://help.syncfusion.com/aspnet/dropdownlist/datasource#objectdatasource)
 
