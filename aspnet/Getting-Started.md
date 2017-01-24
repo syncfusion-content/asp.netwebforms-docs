@@ -167,8 +167,9 @@ Using the `Manage NuGet Packages` in Visual Studio, NuGet packages can be update
 
    N> By clicking `Update All` button, all NuGet packages are getting update. When the update is complete, close and re-open all open instances of Visual Studio.
 
+## Configure client side resources
 
-## Configuring Syncfusion Bower Packages
+### Configuring Syncfusion Bower Packages
 
 ### Overview
 
@@ -239,7 +240,7 @@ bower update syncfusion-javascript
 
 ![](Getting-Started_images/Bower_Configuration_img6.jpeg)
 
-## Configuring Syncfusion npm Packages
+### Configuring Syncfusion npm Packages
 
 ### Overview
 
@@ -326,7 +327,7 @@ npm update
 
 ![](Getting-Started_images/npminstallationsteps_img7.jpeg)
 
-## Configuring Syncfusion JSPM Packages
+### Configuring Syncfusion JSPM Packages
 
 ### Overview
 
