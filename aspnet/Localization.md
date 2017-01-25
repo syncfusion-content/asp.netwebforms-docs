@@ -5,6 +5,7 @@ description: How to localize the syncfusion ASP.NET controls during application 
 platform: ASP.NET
 control: Introduction
 documentation: ug
+
 ---
 
 # Localization
@@ -43,13 +44,13 @@ The Syncfusion components can be localized on two ways,
 i.	Built-in localized words <BR>
 ii.	Applying the user-defined localized words collection.
 
-### Use of Built-in localized words in the DatePicker control
+## Use of Built-in localized words in the DatePicker control
 
 The date formats, day names and month names are automatically translated into the specific culture based on the culture-code assigned to the locale property, as these date related common conversions are processed as built-in within the source. Here, the above code will render the DatePicker control in French culture, as shown below,
 
 ![](Core_images/Localization2.png)
 
-#### Steps for defining locale property in the DatePicker control [Uses built-in localized texts]
+### Steps for defining locale property in the DatePicker control [Uses built-in localized texts]
 
 1.	Refer the Getting Started document for creating an ASP.NET web application with Syncfusion component from the link [here](https://help.syncfusion.com/aspnet/getting-started). Now, we will see the steps to localize the DatePicker control into fr-FR culture.
 
@@ -102,7 +103,7 @@ N> C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\JavaScript\asset
 
 ![](Core_images/Localization3.png)
 
-### Applying the user-defined localized words collection in Grid control
+## Applying the user-defined localized words collection in Grid control
 
 Unlike DatePicker, there are other Syncfusion components like Grid, Gantt, FileExplorer and Schedule which defines a collection of custom localized-text for each culture. In order to apply those localized label collections appropriately for each custom-texts, we need to define separately a collection of culture based translated words for each culture as shown below,
 
@@ -163,7 +164,7 @@ For example, to define the localized words for the grid control in fr-FR culture
 
 {% endhighlight %}
 
-#### Steps for defining locale property in the Grid control [Uses collection of localized text]
+### Steps for defining locale property in the Grid control [Uses collection of localized text]
 
 1.	Refer the Getting Started for ASP.NET document for creating an ASP.NET web application with Syncfusion component from the link here. Now, the steps to localize the Grid control into de-DE culture are as follows.
 

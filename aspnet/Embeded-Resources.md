@@ -66,6 +66,8 @@ By default, the following resources shipped as embedded resources from assembly.
 
 And component related scripts will embed dynamically from assembly in your application. 
 
+N> jquery.easing.js library already avails in within ej.web.all.min.js file, therefore it is not necessary to externally refer it in your application if you have referred ej.web.all.min.js already. For version lower than 14.3.0.49 refer jQuery.easing.min.js along with ej.web.all.min.js
+
 ## CDN integration with Embedded Resources
 You can get these embedded resources from CDN (Content Delivery Networks) also. To achieve this behavior you should enable the **EnableCdn** property in ASP script manager control.  Please refer below code snippet:
 
