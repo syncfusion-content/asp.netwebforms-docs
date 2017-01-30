@@ -42,7 +42,7 @@ Now, this section explains how to populate JSON data to the Spreadsheet. You can
 
          <ej:Spreadsheet ID="Spreadsheet"  runat="server">
             <ClientSideEvents LoadComplete="loadComplete" OpenFailure="openfailure" />
-        </ej:Spreadsheet>
+</ej:Spreadsheet>
 
 <script type="text/javascript">
         function loadComplete(args) {
@@ -57,7 +57,7 @@ Now, this section explains how to populate JSON data to the Spreadsheet. You can
         function openfailure(args) {
             this.alert(args.statusText);
         }
-    </script>
+ </script>
 {% endhighlight %}
 
 
@@ -97,9 +97,9 @@ To apply conditional formats for a range use [`setCFRule`](http://help.syncfusio
 
 {% highlight html %}
 
-          <ej:Spreadsheet ID="Spreadsheet"  runat="server">
+         <ej:Spreadsheet ID="Spreadsheet"  runat="server">
             <ClientSideEvents LoadComplete="loadComplete" OpenFailure="openfailure" />
-        </ej:Spreadsheet>
+</ej:Spreadsheet>
         
 <script type="text/javascript">
        function loadComplete() {                
@@ -115,18 +115,41 @@ N> For more details about `Conditional Formatting` refer following [`link`](http
 
 ## Export Spreadsheet as Excel File
 
-The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [`AllowExporting`](http://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") option in [`ExportSettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") as `true`. Since Spreadsheet uses server side helper to save documents set [`ExcelUrl`](http://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-excelurl "excelUrl") in [`ExportSettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") option. The following code example illustrates this,
+The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [`AllowExporting`](http://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") option in [`ExportSettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") as `true`. Since Spreadsheet uses server side event `OnServerExcelExporting` to save documents. The following code example illustrates this,
+
+{% tabs %}
 
 {% highlight html %}
 
-<ej:Spreadsheet ID="Spreadsheet"  runat="server">
-     <ImportSettings ImportMapper="http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/Import"/>
-     <ExportSettings ExcelUrl="http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/ExcelExport"
-                     CsvUrl="http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/CsvExport" 
-                     PdfUrl="http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/PdfExport"/>
+         <ej:Spreadsheet ID="Spreadsheet" OnServerExcelExporting="Spreadsheet_ServerExcelExporting" runat="server">
+            <ClientSideEvents LoadComplete="loadComplete" OpenFailure="openfailure" />
 </ej:Spreadsheet>
 
 {% endhighlight %}
+
+
+
+{% highlight c# %}
+
+
+     protected void Spreadsheet_ServerExcelExporting(object sender, Syncfusion.JavaScript.Web.SpreadsheetEventArgs e)
+        {
+            var args = e.Arguments;
+            string password = args["password"].ToString();
+            string sheetModel = args["sheetModel"].ToString();
+            string sheetData = args["sheetData"].ToString();
+
+            if (!string.IsNullOrEmpty(password))
+                
+                Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.XLSX, ExcelVersion.Excel2013, password);
+            else
+                Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.XLSX, ExcelVersion.Excel2013);
+        }
+
+
+{% endhighlight %}
+
+{% endtabs %}
 
 Use shortcut [`Ctrl + S`](http://help.syncfusion.com/js/spreadsheet/keyboard-shortcuts "Ctrl + S") to save Spreadsheet as excel file.
 
