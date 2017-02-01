@@ -14,7 +14,7 @@ Syncfusion controls can be validated in two ways.
 1. Using jQuery Validator
 2. Using ASP.NET validator 
 
-## JQuery validation
+## jQuery validation
 
 To perform the jQuery validation for EJ form controls, please refer following steps.
 
@@ -53,13 +53,13 @@ Step 3: After configuring above jQuery validation settings, you have to specify 
 
 ### Validation Rule
 
-A validation rule associates an element with a validation method. For example, validate DatePicker control with the Jquery methods like required and range etc. 
+A validation rule associates an element with a validation method. For example, validate DatePicker control with the jQuery methods like required and range etc. 
 
 ### Validation Messages
 
 Set your own custom error message by using ValidationMessage property. To display the error message, specify the corresponding annotation attribute followed by the message to display.
 
-N> JQuery predefined error messages to that annotation attribute will be shown when this property is not defined.
+N> jQuery predefined error messages to that annotation attribute will be shown when this property is not defined.
 
 {% highlight html %}
 
