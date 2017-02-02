@@ -12,9 +12,9 @@ documentation: ug
 
 Events raised by ASP.NET server controls work somewhat differently than events in traditional client forms or in client-based Web applications. The difference arises primarily because of the separation of the event itself from where the event is handled.
 
-In client-based applications, events are raised and handled on the client. In Web Forms pages, on the other hand, events associated with server controls are raised on the client but handled on the Web server by the ASP.NET page framework.
+In client-based applications, events are raised and handled on the client. In Web Forms pages, on the other hand, events associated with server controls are raised on the client but handled on the Web server by the ASP.NET page Framework.
 
-For events raised on the client, the Web Forms control event model requires that the event information be captured on the client and an event message transmitted to the server, via an HTTP post. The page framework must interpret the post to determine what event occurred and then call the appropriate method in your code on the server to handle the event.
+For events raised on the client, the Web Forms control event model requires that the event information be captured on the client and an event message transmitted to the server, via an HTTP post. The page Framework must interpret the post to determine what event occurred and then call the appropriate method in your code on the server to handle the event.
 
 Syncfusion control supports the Server side events too. This allows you to configure the controls functionality in code-behind also. 
 

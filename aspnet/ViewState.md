@@ -10,7 +10,7 @@ documentation: ug
 
 # View State 
 
-View State is the method that the ASP.NET page framework uses to preserve page and control values between round trips. When the HTML markup for the page is rendered, the current state of the page and values that must be retained during postback.
+View State is the method that the ASP.NET page Framework uses to preserve page and control values between round trips. When the HTML markup for the page is rendered, the current state of the page and values that must be retained during postback.
 
 Syncfusion controls can maintain theirs values even after form post or browser refresh by using EnablePersistence property. 
 

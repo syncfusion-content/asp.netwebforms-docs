@@ -66,8 +66,8 @@ Each and every widget available within the Syncfusion Essential JavaScript suite
 
  ![](Core_images/Accessibility1.png)
 
-Initially, the focus is on the first editor (numeric textbox) – which is indicated with the text selection and the border effect provided for the widget’s outline through css.
-Having the current focus on the numeric text box, now pressing the up arrow will increment the numeric value and down arrow will decrement the value. Pressing tab key will advance the focus to the next widget present in the page - here the percentage textbox which is placed as second will get focussed on pressing the tab key. 
+Initially, the focus is on the first editor (numeric textbox) – which is indicated with the text selection and the border effect provided for the widget’s outline through CSS.
+Having the current focus on the numeric text box, now pressing the up arrow will increment the numeric value and down arrow will decrement the value. Pressing tab key will advance the focus to the next widget present in the page - here the percentage textbox which is placed as second will get focused on pressing the tab key. 
 
 To enable the default tab key navigation, all the Syncfusion widgets are set with appropriate tabIndex property with the provided value as 0 (zero). The element with keyboard focus is essential because it communicates essential information about the widget to the assistive technologies like screen readers.
 
