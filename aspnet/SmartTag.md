@@ -9,7 +9,7 @@ documentation: ug
 ---
 # Design Time Support
 
-Syncfusion ASP.NET component provides the rich design-time support for controls in the .NET development environment. Developers can drag server controls from the Visual studio .NET toolbox onto a page, access their properties through the Properties window.
+Syncfusion ASP.NET component provides the rich design-time support for controls in the .NET development environment. Developers can drag server controls from the Visual Studio .NET toolbox onto a page, access their properties through the Properties window.
 
 ![](Core_images/Smarttag5.png)
 

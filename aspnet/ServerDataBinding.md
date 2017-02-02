@@ -9,7 +9,7 @@ documentation: ug
 ---
 # Server Data Binding
 
-Seamlessly data-bind to any .NET framework data source controls such as SqlDataSource, ObjectDataSource, LinqDataSource and XmlDataSource to reduce our efforts. The data source control connects to a data source such as a database or middle-tier object and then retrieves or updates data. The data-bound control can then use this data. To perform the binding, you set the data-bound control's DataSourceID property to point to a data source control. When a data-bound control is bound to a data source control, little or no additional code is required for data operations, because the data-bound control can automatically take advantage of the data services provided by the data source control.
+Seamlessly data-bind to any .NET Framework data source controls such as SqlDataSource, ObjectDataSource, LinqDataSource and XmlDataSource to reduce our efforts. The data source control connects to a data source such as a database or middle-tier object and then retrieves or updates data. The data-bound control can then use this data. To perform the binding, you set the data-bound control's DataSourceID property to point to a data source control. When a data-bound control is bound to a data source control, little or no additional code is required for data operations, because the data-bound control can automatically take advantage of the data services provided by the data source control.
 
 DropDownList supports binding to all DataSource components, including:
 
