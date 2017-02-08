@@ -388,7 +388,7 @@ jspm update syncfusion=github:syncfusion/JavaScript-Widgets
 
 ## Manual Integration of Syncfusion ASP.NET controls into the new/existing Application
 
-This topic mainly focusses on how to integrate the Syncfusion ASP.NET controls manually into the newly created/existing ASP.NET Web Forms application. Let’s look onto the procedure for making use of any of our ASP.NET controls within the ASP.NET Web application. 
+This topic mainly focuses on how to integrate the Syncfusion ASP.NET controls manually into the newly created/existing ASP.NET Web Forms application. Let’s look onto the procedure for making use of any of our ASP.NET controls within the ASP.NET Web application. 
 
 ### Creation of First ASP.NET Web Application
 
@@ -402,7 +402,7 @@ Follow the below steps to create a normal ASP.NET Web application
 
 ![](Getting-Started_images/Getting-Started_img14.png)
 
-You have successfully created your first simple Asp.NET web application and now it’s time to add some other essential things to your application that allows you to make use of our Syncfusion ASP.NET controls into it.
+You have successfully created your first simple ASP.NET web application and now it’s time to add some other essential things to your application that allows you to make use of our Syncfusion ASP.NET controls into it.
 
 ### For Existing Applications
 
@@ -424,7 +424,7 @@ Before pasting it into your application, create a folder structure with names ej
 
 
 ![](Getting-Started_images/Getting-Started_img16.png)
-Solution Explorer - Project with css files copied into the Content folder
+Solution Explorer - Project with CSS files copied into the Content folder
 {:.caption}
 
 
@@ -495,7 +495,7 @@ N> As like the above mentioned order, the script file of ej.webform.min.js shoul
 
 ### CDN Link reference
 
-If you want to refer the cdn links instead of the direct script and css references in your application, then you need to make use of the below references in the Site.Master file,
+If you want to refer the CDN links instead of the direct script and CSS references in your application, then you need to make use of the below references in the Site.Master file,
 
 {% highlight html %}
 
@@ -569,7 +569,7 @@ The reference to the Syncfusion assemblies can be added to your application in e
 Right click on the References --> choose Add Reference option
 {:.caption}
 
-2.	Now the Reference Manager pop-up will appear on the screen. In that pop-up, select the required assemblies from the Extensions tab as below, by choosing the appropriate versions (13.1450.0.21). The version to be chosen for the reference assemblies is based on the framework used in the application.
+2.	Now the Reference Manager pop-up will appear on the screen. In that pop-up, select the required assemblies from the Extensions tab as below, by choosing the appropriate versions (13.1450.0.21). The version to be chosen for the reference assemblies is based on the Framework used in the application.
 
 ![](Getting-Started_images/Getting-Started_img26.png)
 Reference Manager Pop-up
@@ -595,9 +595,9 @@ N> C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\precompiledassem
 Reference Manager Pop-up with Browse button clicked
 {:.caption}
 
-N> In the above image, the folders 3.5, 4.0, 4.5, 4.5.1 denotes the .NET framework version. Based on the framework version used in your application, you can choose assemblies from the appropriate folders. The Syncfusion.EJ.Web and other core assemblies like Syncfusion.Core, Syncfusion.EJ are available within these folders.
+N> In the above image, the folders 3.5, 4.0, 4.5, 4.5.1 denotes the .NET Framework version. Based on the Framework version used in your application, you can choose assemblies from the appropriate folders. The Syncfusion.EJ.Web and other core assemblies like Syncfusion.Core, Syncfusion.EJ are available within these folders.
 
-3.	Add the Sycfusion.EJ, Syncfusion.EJ.Web and Syncfusion.Core assemblies to your application from the below specified location,
+3.	Add the Syncfusion.EJ, Syncfusion.EJ.Web and Syncfusion.Core assemblies to your application from the below specified location,
 
 N> <installed location>\Syncfusion\Essential Studio\13.1.0.21\precompiledassemblies\13.1.0.21\4.5 <BR>
 For example, If you have installed the Essential Studio package within C:\Program Files (x86), then navigate to the below location, <BR>

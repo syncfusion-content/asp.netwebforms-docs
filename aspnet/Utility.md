@@ -18,7 +18,7 @@ The Syncfusion ASP.NET Utilities provide quick access to create or configure the
 
 ## Project conversion
 
-Syncfusion provides the project conversion add-on with visual studio, which will convert your project into a Syncfusion ASP.NET (EJWEB) project by adding the required assemblies and resource files.
+Syncfusion provides the project conversion add-on with Visual Studio, which will convert your project into a Syncfusion ASP.NET (EJWEB) project by adding the required assemblies and resource files.
 
 I>	The Syncfusion ASP.NET Web Application Project Conversion utility is available from v13.1.0.30.
 
@@ -26,7 +26,7 @@ For more details [view](https://help.syncfusion.com/extension/aspnet-extension/p
 
 ## Project migration 
 
-Syncfusion provides the project migration add-on with the visual studio, which will easily migrate the existing Syncfusion ASP.NET project from one Essential Studio version to another version.
+Syncfusion provides the project migration add-on with the Visual studio, which will easily migrate the existing Syncfusion ASP.NET project from one Essential Studio version to another version.
 
 I>	The Syncfusion ASP.NET Web Application Project Migration utility is available from v13.1.0.30.
 

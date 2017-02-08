@@ -78,7 +78,7 @@ N> <installed location>\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets
 N> For example, If you have installed the Essential Studio package within C:\Program Files (x86), then navigate to the below location,
 N> C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external\cultures\minified
 
-Copy the required file globalize.culture.fr-FR.min.js into the Scripts folder of your application and then refer it along with the other script and css references in the head section of Site.Master page as shown below,
+Copy the required file globalize.culture.fr-FR.min.js into the Scripts folder of your application and then refer it along with the other script and CSS references in the head section of Site.Master page as shown below,
 
 {% highlight html %}
 

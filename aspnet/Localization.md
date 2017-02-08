@@ -12,7 +12,7 @@ documentation: ug
 
 In general, Localization is a term that defines the translation of any product or components to suit the different languages or cultures followed in various countries. It mainly emphasis on the process of translating the product to make it adaptive to the native or local cultural needs of a specific region in the world. All our Syncfusion Components has been provided with the built-in Localization support, so that it will be able to adapt based on the culture-specific locale defined for it. The en-US locale is currently being used in all the Syncfusion components by default.
 
-If you need to make the Syncfusion components to follow a user-specified culture, then you need to define the locale property of it with a particular culture code declared by JQuery globalize script. 
+If you need to make the Syncfusion components to follow a user-specified culture, then you need to define the locale property of it with a particular culture code declared by jQuery globalize script. 
 
 For example, you can see our Syncfusion DatePicker control localized in fr-FR culture as shown below,
 
@@ -62,7 +62,7 @@ N> <installed location>\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets
 N> For example, If you have installed the Essential Studio package within C:\Program Files (x86), then navigate to the below location,
 N> C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external\cultures\minified
 
-4.	Copy the required file globalize.culture.fr-FR.min.js into the Scripts folder of your application and then refer it along with the other script and css references in the head section of Site.Master page as shown below,
+4.	Copy the required file globalize.culture.fr-FR.min.js into the Scripts folder of your application and then refer it along with the other script and CSS references in the head section of Site.Master page as shown below,
 
 {% highlight html %}
 
@@ -176,7 +176,7 @@ N> <installed location>\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets
 N> For example, If you have installed the Essential Studio package within C:\Program Files (x86), then navigate to the below location,
 N> C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external\cultures\minified
 
-4.	Copy the required file globalize.culture.de-DE.min.js into the Scripts folder of your application and then refer it along with the other script and css references in the head section of the Site.Master page as shown below,
+4.	Copy the required file globalize.culture.de-DE.min.js into the Scripts folder of your application and then refer it along with the other script and CSS references in the head section of the Site.Master page as shown below,
 
 {% highlight html %}
 
