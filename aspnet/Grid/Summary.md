@@ -743,3 +743,106 @@ The following output is displayed as a result of the above code example.
 
 
 
+## Handling Aggregation in server side
+
+The Aggregation at server side is handled by using aggregate key. While using remote data, Summary Row must be handled by returning summary column datasource into the aggregate property of result object.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight html %}
+
+
+
+<ej:DataManager runat="server" ID="FlatData" URL="/Default.aspx/Data" Adaptor="WebMethodAdaptor" />
+    
+<ej:Grid ID="OrdersGrid" runat="server" DataManagerID="FlatData" ShowSummary="True" AllowPaging="True">
+
+    <PageSettings PageSize="10"></PageSettings>
+
+    <SummaryRows>
+
+        <ej:SummaryRow ShowTotalSummary="True" Title="Avg">
+
+            <SummaryColumn>
+
+                <ej:SummaryColumn SummaryType="Average" Format="{0:C}" DisplayColumn="Freight" DataMember="Freight" Prefix="Average = " />
+
+            </SummaryColumn>
+
+            </ej:SummaryRow>
+
+    </SummaryRows>
+
+    <Columns>
+
+        <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="80" />
+
+        <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90" />
+
+        <ej:Column Field="ShipCity" HeaderText="Ship City" Width="90" />
+
+        <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="80" />
+
+        <ej:Column Field="Freight" HeaderText="Freight" Width="80" TextAlign="Right"  Format="{0:C}" />
+
+    </Columns>
+    
+</ej:Grid>
+
+
+{% endhighlight  %}
+{% highlight c# %}
+
+
+public partial class _Default : Page
+{
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        
+    }
+
+    [WebMethod]
+    [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+    public static object Data(Syncfusion.JavaScript.DataManager value)
+    {
+        IEnumerable DataSource = OrderRepository.GetAllRecords();
+        DataResult result = new DataResult();
+        DataOperations operation = new DataOperations();
+        List<string> str = new List<string>();
+        if (value.Aggregates != null)
+        {
+            for (var i = 0; i < value.Aggregates.Count; i++)
+                str.Add(value.Aggregates[i].Field);
+            result.aggregate = operation.PerformSelect(DataSource, str);
+        }
+        DataSource = operation.PerformSkip(DataSource, value.Skip);
+        result.result = operation.PerformTake(DataSource, value.Take);
+        result.count = DataSource.AsQueryable().Count();
+        return result;
+    }
+
+    public class DataResult
+    {
+        public IEnumerable result { get; set; }
+        public int count { get; set; }
+        public IEnumerable aggregate { get; set; }
+        public IEnumerable groupDs { get; set; }
+    }
+
+}
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+The following output is displayed as a result of the above code example.
+
+
+
+![](Summary_images/Summary_img6.png)
+
+
+
