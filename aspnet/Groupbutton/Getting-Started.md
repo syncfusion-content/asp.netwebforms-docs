@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | GroupButton | ASP.NET Web Forms | Syncfusion
+title: Getting Started | GroupButton | ASP.NET Webforms | Syncfusion
 description: getting started
 platform: aspnet
 control: GroupButton
@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started
 
-This section provides details on how to create and customize Groupbutton control in an ASP.NET Web Forms application.
+This section provides details on how to create and customize **Groupbutton** control in an ASP.net Webforms application.
 
 ## Create a simple GroupButton control
 
-Create ASP.NET Web Forms project and add necessary assemblies and script dependencies with the help of given Getting started document.
+Create ASP.net webforms project and add necessary DLLs and script dependencies with the help of given [Getting started document](https://help.syncfusion.com/aspnet/getting-started).
 
 Add the below code the aspx page to render a simple groupbutton control.
 

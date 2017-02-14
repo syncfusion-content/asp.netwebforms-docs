@@ -110,7 +110,7 @@ The following screenshot displays the output of above code.
 
 ### Remote Datasource
 
-The GroupButton control provides support to bind the items with Remote source. Here the datasource is accessed from a web service in the form of JSON Data in page load event.
+The Groupbutton control provides support to bind the items with Remote source. Here the datasource is accessed from a webservice in the form of JSON Data in page load event.
 
 In the following code example, [http://mvc.syncfusion.com/Services/Northwnd.svc/](http://mvc.syncfusion.com/Services/Northwnd.svc/) is used as the URL. Here, it acts as web service that is located in the Syncfusion server. The web service used here is Northwnd.svc. 
 

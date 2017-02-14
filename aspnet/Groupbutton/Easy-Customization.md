@@ -39,9 +39,9 @@ Creates button with Built-in large size height, width specified.</td></tr>
 </table>
 
 
-Apart from the above mentioned predefined size option, you can set your own width and height of GroupButton by using Height and Width property.
+Apart from the above mentioned predefined size option, you can set your own width and height of Grouptbutton by using Height and Width property.
 
-In the ASPX page, add the following GroupButton elements to configure button for configure the size
+In the ASPX page, add the following GroupButton elements to configure the button size
 
 {% highlight html %}
 
