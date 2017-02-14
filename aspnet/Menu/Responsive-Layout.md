@@ -139,7 +139,25 @@ Add the following code example in your ASPX page.
 
 The following screenshot displays the output for the above code example. 
 
-![](Responsive-Layout_images/Responsive-Layout_img1.png) 
+![](Responsive-Layout_images/Responsive.png) 
+
+## Responsive in Desktop:
+
+When menu width is small and window width is normal as desktop ,only the  overflown menu  items will be moved inside menu popup.You can also set width and height for popup menu using **overflowHeight** and **overflowWidth** API
+
+The following output shows the output of menu with Width of "300px" in Desktop mode
+
+![](Responsive-Layout_images/Responsive-img1.png)
+
+## Responsive in Mobile or Tablet:
+
+Menu will be displayed  in mobile or Tablet as shown in the below image:
+
+![](Responsive-Layout_images/responsivemenu.png)
+
+N> Window width below  767px is considered as Mobile or Tablet mode in our menu.
+
+
 
 
 
