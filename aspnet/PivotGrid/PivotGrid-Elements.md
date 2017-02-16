@@ -27,7 +27,7 @@ Also hyperlink option provides separate events for row header, column header, va
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat="server" Url="/PivotGridService">
+<ej:PivotGrid ID="PivotGrid1" runat="server">
         <HyperlinkSettings EnableColumnHeaderHyperlink="true" EnableValueCellHyperlink="true" EnableRowHeaderHyperlink="true" EnableSummaryCellHyperlink="true" />
         <ClientSideEvents ValueCellHyperlinkClick="CellClickEvent" RowHeaderHyperlinkClick="CellClickEvent" ColumnHeaderHyperlinkClick="CellClickEvent" SummaryCellHyperlinkClick="CellClickEvent" />
 </ej:PivotGrid> 
@@ -49,7 +49,7 @@ The **"cellSelection"** event would be triggered as soon as the selection proces
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat="server" url="/PivotGridService" EnableCellSelection="true" >
+<ej:PivotGrid ID="PivotGrid1" runat="server" EnableCellSelection="true" >
     <ClientSideEvents CellSelection="valueCellClick"/>
 </ej:PivotGrid> 
 
@@ -73,7 +73,7 @@ Cell context is enabled by setting the `EnableCellContext` property to true. The
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat="server" url="/PivotGridService" EnableCellContext="true">
+<ej:PivotGrid ID="PivotGrid1" runat="server" EnableCellContext="true">
     <clientsideevents CellContext="cell_RightClick" />
 </ej:PivotGrid> 
 

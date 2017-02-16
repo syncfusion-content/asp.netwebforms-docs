@@ -81,8 +81,10 @@ PivotChart control supports responsive rendering based on the target device (des
     .....
     <style>
         #MyPivotChart1 {
-            min-width:650px;
+            min-width:525px;
             min-height:460px;
+            height: 460px; 
+            width: 100%;
         }
     </style>
 </head>

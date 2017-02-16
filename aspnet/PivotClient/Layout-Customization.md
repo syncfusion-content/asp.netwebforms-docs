@@ -9,6 +9,48 @@ documentation: ug
 
 # Layout Customization
 
+# Size
+
+Allows you to render PivotClient in different sizes. You can set height and width under `size` property.
+
+## Set size in Pixels
+
+{% highlight html %}
+
+    <ej:PivotClient  ID="PivotClient1"  runat="server">
+         <DataSource>
+            <Rows>
+                <ej:Field FieldName="Country" FieldCaption="Country"></ej:Field>
+            </Rows>
+            <Columns>
+                <ej:Field FieldName="Product" FieldCaption="Product"></ej:Field>
+            </Columns>
+            <Values>
+                <ej:Field FieldName="Amount" FieldCaption="Amount"></ej:Field>
+            </Values>
+        </DataSource>
+        <size Height="685px" Width="1000px"></size>
+        <ClientSideEvents Load="onLoad" />
+    </ej:PivotClient>
+
+{% endhighlight  %}
+
+PivotClient with decreased size from default size
+
+![](Layout-Customization_images/small-size.png)
+
+## Set size in Percentage
+
+You can set the PivotClient size in percentage also.
+
+N> Size of the parent container Should be set in Pixels.
+
+{% highlight html %}
+//...
+<size Height="80%" Width="50%"></size>
+
+{% endhighlight  %}
+
 ## Control Placement
 
 ### Tab View
@@ -287,9 +329,39 @@ The Chart Type can also be changed dynamically through the toolbar icon.
 
 ![](Layout-Customization_images/linechart.png)  
 
+### PivotTreeMap
+
+I> This feature is applicable only for OLAP data source bound from server-side.
+
+You can include the PivotTreeMap component as one of the chart types by setting `EnablePivotTreeMap` property to true.
+
+{% highlight html %}
+
+    <ej:PivotClient ID="PivotClient1" runat="server" EnablePivotTreeMap="true">
+            <DataSource>
+                <Rows>
+                    <ej:Field FieldName="Country" FieldCaption="Country"></ej:Field>
+                </Rows>
+                <Columns>
+                    <ej:Field FieldName="Product" FieldCaption="Product"></ej:Field>
+                </Columns>
+                <Values>
+                    <ej:Field FieldName="Amount" FieldCaption="Amount" Format="currency"></ej:Field>
+                </Values>
+            </DataSource>
+            <ClientSideEvents Load="onLoad" />
+    </ej:PivotClient>
+
+{% endhighlight %}
+
+![](Layout-Customization_images/TreeMap1.png)
+
+![](Layout-Customization_images/TreeMap2.png)
+
+
 ## Report Toolbar
 
-Icons can be either enabled/disabled inside the report toolbar. This can be achieved by setting the properties under `ToolbarIconSettings` option to false. The value is true by default.
+You can customize the display of toolbar by enabling/disabling the visibility of each of the icons. This can be achieved by setting the properties under `ToolbarIconSettings` option to false. The values are true by default.​​​
 
 {% highlight html %}
 
