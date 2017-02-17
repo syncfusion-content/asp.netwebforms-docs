@@ -15,7 +15,7 @@ You can localize the PivotGrid controls text with a collection of localized stri
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat="server" Url="/PivotGridService" Locale="fr-FR" EnableVirtualScrolling="false">
+<ej:PivotGrid ID="PivotGrid1" runat="server" Locale="fr-FR" ...>
     <ClientSideEvents AfterServiceInvoke="OnAfterServiceInvoke" />
 </ej:PivotGrid>
 
@@ -925,6 +925,454 @@ CalcValue
 Champ calculé peut être inséré que dans le champ de la zone de valeur
 </td>
 </tr>
+<tr>
+<td>
+Total
+</td>
+<td>
+Total
+</td>
+</tr>
+<tr>
+<td>
+GrandTotal
+</td>
+<td>
+GrandTotal
+</td>
+</tr>
+<tr>
+<td>
+DoesNotBeginsWith
+</td>
+<td>
+N'a pas commence par
+</td>
+</tr>
+<tr>
+<td>
+DoesNotEndsWith
+</td>
+<td>
+Ne se termine par
+</td>
+</tr>
+<tr>
+<td>
+DoesNotContains
+</td>
+<td>
+Ne contient
+</td>
+</tr>
+<tr>
+<td>
+DoesNotEquals
+</td>
+<td>
+N'est pas égaux
+</td>
+</tr>
+<tr>
+<td>
+IsGreaterThan
+</td>
+<td>
+Est supérieure à
+</td>
+</tr>
+<tr>
+<td>
+IsGreaterThanOrEqualTo
+</td>
+<td>
+Est supérieure ou égale à
+</td>
+</tr>
+<tr>
+<td>
+IsLessThan
+</td>
+<td>
+Est inférieure à
+</td>
+</tr>
+<tr>
+<td>
+IsLessThanOrEqualTo
+</td>
+<td>
+Est inférieure ou égale à
+</td>
+</tr>
+<tr>
+<td>
+NumberFormatting
+</td>
+<td>
+Formatage des chiffres
+</td>
+</tr>
+<tr>
+<td>
+FrozenHeaders
+</td>
+<td>
+En-têtes congelé
+</td>
+</tr>
+<tr>
+<td>
+CellSelection
+</td>
+<td>
+Sélection de cellules
+</td>
+</tr>
+<tr>
+<td>
+CellContext
+</td>
+<td>
+Contexte cellulaire
+</td>
+</tr>
+<tr>
+<td>
+ColumnResize
+</td>
+<td>
+Redimensionner la colonne
+</td>
+</tr>
+<tr>
+<td>
+ExcelLikeLayout
+</td>
+<td>
+Comme la mise en page d'Excel
+</td>
+</tr>
+<tr>
+<td>
+FrozenHeader
+</td>
+<td>
+En-tête congelée
+</td>
+</tr>
+<tr>
+<td>
+AdvancedFiltering
+</td>
+<td>
+Filtrage avancé
+</td>
+</tr>
+<tr>
+<td>
+Amount
+</td>
+<td>
+Quantité
+</td>
+</tr>
+<tr>
+<td>
+Quantity
+</td>
+<td>
+Quantity
+</td>
+</tr>
+<tr>
+<td>
+Measures
+</td>
+<td>
+Mesures visant
+</td>
+</tr>
+<tr>
+<td>
+NumberFormats
+</td>
+<td>
+Les formats de nombre
+</td>
+</tr>
+<tr>
+<td>
+Exporting
+</td>
+<td>
+L'exportation
+</td>
+</tr>
+<tr>
+<td>
+FileName
+</td>
+<td>
+Nom de fichier
+</td>
+</tr>
+<tr>
+<td>
+ToolTip
+</td>
+<td>
+Extrémité de l'outil
+</td>
+</tr>
+<tr>
+<td>
+RTL
+</td>
+<td>
+RTL
+</td>
+</tr>
+<tr>
+<td>
+CollapseByDefault
+</td>
+<td>
+Par défaut l'effondrement
+</td>
+</tr>
+<tr>
+<td>
+EnableDisablePaging
+</td>
+<td>
+Enalbe / Désactiver la pagination
+</td>
+</tr>
+<tr>
+<td>
+PagingOptions
+</td>
+<td>
+Options d'appel
+</td>
+</tr>
+<tr>
+<td>
+CategoricalPageSize
+</td>
+<td>
+Taille de page catégorique
+</td>
+</tr>
+<tr>
+<td>
+SeriesPageSize
+</td>
+<td>
+Taille de page série
+</td>
+</tr>
+<tr>
+<td>
+HyperLink
+</td>
+<td>
+Hyper Link
+</td>
+</tr>
+<tr>
+<td>
+CellEditing
+</td>
+<td>
+Montage de cellules
+</td>
+</tr>
+<tr>
+<td>
+GroupingBar
+</td>
+<td>
+Bar de groupement
+</td>
+</tr>
+<tr>
+<td>
+SummaryCustomization
+</td>
+<td>
+Personnalisation Sommaire
+</td>
+</tr>
+<tr>
+<td>
+SummaryTypes
+</td>
+<td>
+Types Sommaire
+</td>
+</tr>
+<tr>
+<td>
+SummaryType
+</td>
+<td>
+Type de statistique
+</td>
+</tr>
+<tr>
+<td>
+EnableRowHeaderHyperlink
+</td>
+<td>
+Activer l'en-tête de ligne HyperLink
+</td>
+</tr>
+<tr>
+<td>
+EnableColumnHeaderHyperlink
+</td>
+<td>
+Activer l'en-tête de colonne HyperLink
+</td>
+</tr>
+<tr>
+<td>
+EnableValueCellHyperlink
+</td>
+<td>
+Activer la cellule Valeur HyperLink
+</td>
+</tr>
+<tr>
+<td>
+EnableSummaryCellHyperlink
+</td>
+<td>
+Activer la cellule de synthèse HyperLink
+</td>
+</tr>
+<tr>
+<td>
+HideGrandTotal
+</td>
+<td>
+Masquer Grand Total
+</td>
+</tr>
+<tr>
+<td>
+HideSubTotal
+</td>
+<td>
+Masquer Sous-total
+</td>
+</tr>
+<tr>
+<td>
+Both
+</td>
+<td>
+Les deux
+</td>
+</tr>
+<tr>
+<td>
+Sum
+</td>
+<td>
+Somme
+</td>
+</tr>
+<tr>
+<td>
+Average
+</td>
+<td>
+La moyenne
+</td>
+</tr>
+<tr>
+<td>
+Count
+</td>
+<td>
+Count
+</td>
+</tr>
+<tr>
+<td>
+Min
+</td>
+<td>
+Min
+</td>
+</tr>
+<tr>
+<td>
+Max
+</td>
+<td>
+Max
+</td>
+</tr>
+<tr>
+<td>
+Excel
+</td>
+<td>
+Excel
+</td>
+</tr>
+<tr>
+<td>
+Word
+</td>
+<td>
+Mot
+</td>
+</tr>
+<tr>
+<td>
+PDF
+</td>
+<td>
+PDF
+</td>
+</tr>
+<tr>
+<td>
+CSV
+</td>
+<td>
+CSV
+</td>
+</tr>
+<tr>
+<td>
+MultipleItems
+</td>
+<td>
+Plusieurs éléments
+</td>
+</tr>
+<tr>
+<td>
+All
+</td>
+<td>
+Tous les
+</td>
+</tr>
+<tr>
+<td>
+Search
+</td>
+<td>
+Recherchez
+</td>
+</tr>
 </table>
 
 The following table lists the default keywords in French culture for PivotTable Field List.
@@ -1032,6 +1480,122 @@ PivotTableFieldList</td>
 <td>Close</td>
 <td>Fermer</td>
 </tr>
+<tr>
+<td>DoesNotBeginsWith</td>
+<td>N'a pas commence par</td>
+</tr>
+<tr>
+<td>DoesNotEndsWith</td>
+<td>Ne se termine par</td>
+</tr>
+<tr>
+<td>DoesNotContains</td>
+<td>Ne contient</td>
+</tr>
+<tr>
+<td>DoesNotEquals</td>
+<td>N'est pas égaux</td>
+</tr>
+<tr>
+<td>IsGreaterThan</td>
+<td>Est supérieure à</td>
+</tr>
+<tr>
+<td>IsGreaterThanOrEqualTo</td>
+<td>Est supérieure ou égale à</td>
+</tr>
+<tr>
+<td>IsLessThan</td>
+<td>Est inférieure à</td>
+</tr>
+<tr>
+<td>IsLessThanOrEqualTo</td>
+<td>Est inférieure ou égale à</td>
+</tr>
+<tr>
+<td>Sort</td>
+<td>Trier</td>
+</tr>
+<tr>
+<td>LabelFilterLabel</td>
+<td>Afficher les éléments pour lesquels l'étiquette</td>
+</tr>
+<tr>
+<td>ValueFilterLabel</td>
+<td>Afficher les éléments pour lesquels</td>
+</tr>
+<tr>
+<td>LabelFilters</td>
+<td>Les filtres de l'étiquette</td>
+</tr>
+<tr>
+<td>BeginsWith</td>
+<td>Commence par</td>
+</tr>
+<tr>
+<td>NotBeginsWith</td>
+<td>Commence pas avec</td>
+</tr>
+<tr>
+<td>EndsWith</td>
+<td>Se termine par</td>
+</tr>
+<tr>
+<td>NotEndsWith</td>
+<td>Pas une fin avec</td>
+</tr>
+<tr>
+<td>Contains</td>
+<td>Contient</td>
+</tr>
+<tr>
+<td>NotContains</td>
+<td>Contient pas</td>
+</tr>
+<tr>
+<td>ValueFilters</td>
+<td>Les filtres de valeur</td>
+</tr>
+<tr>
+<td>ClearFilter</td>
+<td>Clear Filter</td>
+</tr>
+<tr>
+<td>Equals</td>
+<td>Est égal à</td>
+</tr>
+<tr>
+<td>NotEquals</td>
+<td>Pas égaux</td>
+</tr>
+<tr>
+<td>GreaterThan</td>
+<td>Plus de </td>
+</tr>
+<tr>
+<td>GreaterThanOrEqualTo</td>
+<td>Supérieure ou égale à </td>
+</tr>
+<tr>
+<td>LessThan</td>
+<td>Moins de</td>
+</tr>
+<tr>
+<td>LessThanOrEqualTo</td>
+<td>Inférieure ou égale à </td>
+</tr>
+<tr>
+<td>Between</td>
+<td>Entre</td>
+</tr>
+<tr>
+<td>NotBetween</td>
+<td>Pas entre</td>
+</tr>
+<tr>
+<td>Search</td>
+<td>Recherchez</td>
+</tr>
 </table>
 
 The following table lists the default keywords in French culture for Pivot Pager.
@@ -1048,6 +1612,22 @@ The following table lists the default keywords in French culture for Pivot Pager
 <tr>
 <td>CategoricalPage</td>
 <td>Catégorique Page</td>
+</tr>
+<tr>
+<td>Error</td>
+<td>Error</td>
+</tr>
+<tr>
+<td>OK</td>
+<td>OK</td>
+</tr>
+<tr>
+<td>Close</td>
+<td>Fermer</td>
+</tr>
+<tr>
+<td>PageCountErrorMsg</td>
+<td>Entrez le numéro de page valide</td>
 </tr>
 </table>
 

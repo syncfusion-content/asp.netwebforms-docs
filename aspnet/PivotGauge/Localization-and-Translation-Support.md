@@ -57,7 +57,7 @@ To get the localized string based on different cultures, from OLAP Cube, we need
 {% highlight html %}
 
     <ej:PivotGauge ID="PivotGauge1" runat="server" Locale="fr-FR">
-         <DataSource Data="http://bi.syncfusion.com/olap/msmdpump.dll;LocaleIdentifier=1036;"></DataSource>
+         <DataSource Data="http://bi.syncfusion.com/olap/msmdpump.dll;Locale Identifier=1036;"></DataSource>
     </ej:PivotGauge>
 
 {% endhighlight %}
