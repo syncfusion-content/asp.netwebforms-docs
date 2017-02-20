@@ -169,7 +169,7 @@ The following code example describes the above behavior.
 
 The output of the above code example.
 
-![](Swimlane_images/swimlane_img3.png)
+![](Swimlane_images/swimlanes_img3.png)
 
 ### Using user defined values
 
@@ -215,4 +215,4 @@ The following code example describes the above behavior.
 
 The output of the above code example.
 
-![](Swimlane_images/swimlane_img4.png)
+![](Swimlane_images/swimlanes_img4.png)
