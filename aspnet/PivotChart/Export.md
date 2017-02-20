@@ -163,7 +163,6 @@ function exportBtnClick(args)
 
 {% endhighlight %}  
 
-![](Export_images/Export_ExcelClient.png)
 
 ## Word Export
 
@@ -226,7 +225,6 @@ function exportBtnClick(args)
 
 {% endhighlight %}
 
-![](Export_images/Export_WordClient.png)
 
 ## PDF Export
 
@@ -289,7 +287,7 @@ function exportBtnClick(args)
 
 {% endhighlight %} 
 
-![](Export_images/Export_PDFClient.png)
+
 
 ## Image Export
 
@@ -353,28 +351,148 @@ function exportBtnClick(args)
 
 {% endhighlight %}  
 
+## Exporting Customization
 
-![](Export_images/Export_PNGClient.png)
+You can add title and description to the exporting document by using title and description property obtained in the "beforeExport" event.
 
-## Customize the export document name
+N> Title and description cannot be added to image formats.
 
-### Client Mode
+{% highlight html %}
 
-For customizing file name, we need to send file name as parameter to the **“exportPivotChart”**  method along with server side trigger event.
+    <ej:PivotChart ID="MyPivotChart1" runat="server" OnServerExcelExporting="PivotChart_ServerExcelExporting" OnServerPDFExporting="PivotChart_ServerPDFExporting" OnServerWordExporting="PivotChart_ServerWordExporting" OnServerImageExporting="PivotChart_ServerImageExporting" ClientIDMode="Static">
+       //....
+        <ClientSideEvents BeforeExport="Exporting" />
+     </ej:PivotChart>
+    <ej:Button runat="server" ClientSideOnClick="exportBtnClick" Text="Export">
+    </ej:Button>
+    <script type="text/javascript">
+       function exportBtnClick(args)
+       {
+          var chartObj = $('#MyPivotChart1').data("ejPivotChart ");
+          //If you render PivotChart in Client Mode, set the export option like below.
+          chartObj.exportPivotChart("excelExport","fileName");
+          //If you render PivotChart in Server Mode, set the export option like below.
+          chartObj.exportPivotChart(ej.PivotChart.ExportOptions.Excel);
+       }
+        function Exporting(args) {
+            args.title = "PivotChart";
+            args.description = "Visualizes both OLAP and Relational datasource in graphical format";
+        }
+    </script>
+    
+{% endhighlight %}
 
-{% highlight js %}
+You can also edit the exporting document with the use of a server side event for required exporting option.
+
+{% highlight c# %}
+
+//...
+using Syncfusion.EJ.Export;
+using Syncfusion.Compression.Base;
+using Syncfusion.XlsIO;
+using Syncfusion.DocIO.Base;
+using Syncfusion.Pdf.Base;
+
+//Following server side event method need to be added in code behind file of the application for JSON export.
+protected void PivotChart_ServerExcelExporting(object sender, Syncfusion.JavaScript.Web.PivotChartEventArgs e)
+{
+    PivotChartExcelExport pivotChartExcelExport = new PivotChartExcelExport();
+    dynamic args = e.Arguments;
+    pivotChartExcelExport.ExcelExport += pivotChartExcelExport_ExcelExport;
+    Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args["args"].ToString());
+    pivotChartExcelExport.ExportToExcel(chartParams);
+}
+
+void pivotChartExcelExport_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook workBook)
+{
+    //You can customize exporting document here.
+}
+
+protected void PivotChart_ServerWordExporting(object sender, Syncfusion.JavaScript.Web.PivotChartEventArgs e)
+{
+    PivotChartWordExport pivotChartWordExport = new PivotChartWordExport();
+    dynamic args = e.Arguments;
+    pivotChartWordExport.WordExport += pivotChartWordExport_WordExport;
+    Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args["args"].ToString());
+    pivotChartWordExport.ExportToWord(chartParams);
+}
+
+void pivotChartWordExport_WordExport(object sender, Syncfusion.DocIO.DLS.WordDocument document)
+{
+    //You can customize exporting document here.
+}
+
+protected void PivotChart_ServerPDFExporting(object sender, Syncfusion.JavaScript.Web.PivotChartEventArgs e)
+{
+    PivotChartPDFExport pivotChartPDFExport = new PivotChartPDFExport();
+    dynamic args = e.Arguments;
+    pivotChartPDFExport.AddPDFHeaderFooter += pivotChartPDFExport_AddPDFHeaderFooter;
+    pivotChartPDFExport.PDFExport += pivotChartPDFExport_PDFExport;
+    Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args["args"].ToString());
+    pivotChartPDFExport.ExportToPDF(chartParams);
+}
+
+void pivotChartPDFExport_PDFExport(object sender, Syncfusion.Pdf.PdfDocument pdfDoc)
+{
+    //You can customize exporting document here.
+}
+
+void pivotChartPDFExport_AddPDFHeaderFooter(object sender, Syncfusion.Pdf.PdfDocument pdfDoc)
+{
+    //You can add header/footer information to the pdf document.
+}
+
+//Following service method needs to be added in WCF/WebAPI for PivotEngine export
+
+[System.Web.Http.ActionName("Export")]
+[System.Web.Http.HttpPost]
+public void Export()
+{
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    string fileName = "Sample";
+    htmlHelper.ExcelExport += htmlHelper_ExcelExport;
+    htmlHelper.WordExport += htmlHelper_WordExport;
+    htmlHelper.AddPDFHeaderFooter += htmlHelper_AddPDFHeaderFooter;
+    htmlHelper.PDFExport += htmlHelper_PDFExport;
+    htmlHelper.ExportPivotChart(args, fileName, System.Web.HttpContext.Current.Response);
+}
+
+void htmlHelper_PDFExport(object sender, Syncfusion.Pdf.PdfDocument pdfDoc)
+{
+    //You can customize exporting document here.
+}
+
+void htmlHelper_AddPDFHeaderFooter(object sender, Syncfusion.Pdf.PdfDocument pdfDoc)
+{
+    //You can add header/footer information to the pdf document.
+}
+
+void htmlHelper_WordExport(object sender, Syncfusion.DocIO.DLS.WordDocument document)
+{
+    //You can customize exporting document here.
+}
+
+void htmlHelper_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook workBook)
+{
+    //You can customize exporting document here.
+}
+
+{% endhighlight %}
+
+The name of the document can be customized as per the users requirement.
+
+For Client mode, we need to send file name as parameter to the **“exportPivotChart”**  method along with service URL.
+
+{% highlight javascript %}
 
 function exportBtnClick(args)
 {
-    var chartObj = $('#MyPivotChart1').data("ejPivotChart ");
-    chartObj.exportPivotChart("excelExport","fileName");
+    var chartObj = $('#PivotChart1').data("ejPivotChart ");
+    chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport", "fileName");
 }
-   
-{% endhighlight %}
-  
-### Server Mode
+{% endhighlight %}    
 
-For customizing name in WebAPI controller, below code snippet is used.
+For Server mode, the exporting document name is provided in the WebAPI controller as found in the below code snippet.
 
 {% highlight c# %}
 
@@ -382,7 +500,7 @@ For customizing name in WebAPI controller, below code snippet is used.
 [System.Web.Http.HttpPost]
 public void Export() {
     string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-    string fileName = " File name is customized here ";
+    string fileName = "File name is customized here";
     htmlHelper.ExportPivotChart(args, fileName, System.Web.HttpContext.Current.Response);
 }
 
@@ -401,3 +519,18 @@ public void Export(System.IO.Stream stream) {
 
 {% endhighlight %}
 
+The below screenshot shows the PivotChart control exported to Excel document.
+
+![](Export_images/Export_ExcelClient.png)
+
+The below screenshot shows the PivotChart control exported to Word document.
+
+![](Export_images/Export_WordClient.png)
+
+The below screenshot shows the PivotChart control exported to PDF document.
+
+![](Export_images/Export_PDFClient.png)
+
+The below screenshot shows the PivotChart control exported to PNG format.
+
+![](Export_images/Export_PNGClient.png)

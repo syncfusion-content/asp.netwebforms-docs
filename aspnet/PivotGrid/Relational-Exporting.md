@@ -462,6 +462,151 @@ public void Export(System.IO.Stream stream)
 
 {% endhighlight %}
 
+## Exporting Customization
+
+You can add title and description to the exporting document by using title and description property obtained in the "beforeExport" event.
+
+{% highlight html %}
+
+    <ej:PivotGrid ID="PivotGrid1" runat="server" OnServerExcelExporting="PivotGrid_ServerExcelExporting" OnServerPDFExporting="PivotGrid_ServerPDFExporting" OnServerWordExporting="PivotGrid_ServerWordExporting" OnServerCSVExporting="PivotGrid_ServerCSVExporting" ClientIDMode="Static">
+         //...
+       <ClientSideEvents BeforeExport="Exporting" />
+     </ej:PivotGrid>
+    <ej:Button runat="server" ClientSideOnClick="exportBtnClick" Text="Export">
+    </ej:Button>
+    <script type="text/javascript">
+       function exportBtnClick(args)
+       {
+          var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
+          //JSON export
+          pGridObj.exportPivotGrid("excelExport","fileName");
+          //PivotEngine Export 
+          pGridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.Excel);
+       }
+        function Exporting(args) {
+            args.title = "PivotGrid";
+            args.description = "Displays both OLAP and Relational datasource in tabular format";
+        }
+    </script>                                    
+
+{% endhighlight %}
+
+You can also edit the exporting document with the use of a server side event for required exporting option.
+
+{% highlight c# %}
+
+//...
+using Syncfusion.EJ.Export;
+using Syncfusion.Compression.Base;
+using Syncfusion.XlsIO;
+using Syncfusion.DocIO.Base;
+using Syncfusion.Pdf.Base;
+
+//Following server side event method need to be added in code behind file of the application for JSON Export.
+
+protected void PivotGrid_ServerExcelExporting(object sender, Syncfusion.JavaScript.Web.PivotGridEventArgs e)
+{
+    PivotGridExcelExport pGrid = new PivotGridExcelExport();
+    dynamic args = e.Arguments;
+    string fileName = "Sample";
+    pGrid.ExcelExport += pGrid_ExcelExport;
+    pGrid.ExportToExcel(fileName, args["args"].ToString(), HttpContext.Current.Response);
+}
+
+void pGrid_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook workBook)
+{
+    //You can customize exporting document here.
+}
+
+protected void PivotGrid_ServerPDFExporting(object sender, Syncfusion.JavaScript.Web.PivotGridEventArgs e)
+{
+    PivotGridPDFExport pGrid = new PivotGridPDFExport();
+    dynamic args = e.Arguments;
+    string fileName = "Sample";
+    pGrid.AddPDFHeaderFooter += pGrid_AddPDFHeaderFooter;
+    pGrid.PDFExport += pGrid_PDFExport;
+    pGrid.ExportToPDF(fileName, args["args"].ToString(), HttpContext.Current.Response);
+}
+
+void pGrid_PDFExport(object sender, Syncfusion.Pdf.PdfDocument pdfDoc)
+{
+    //You can customize exporting document here.
+}
+
+void pGrid_AddPDFHeaderFooter(object sender, Syncfusion.Pdf.PdfDocument pdfDoc)
+{
+    //You can add header/footer information to the pdf document.
+}
+
+protected void PivotGrid_ServerCSVExporting(object sender, Syncfusion.JavaScript.Web.PivotGridEventArgs e)
+{
+    PivotGridCSVExport pGrid = new PivotGridCSVExport();
+    dynamic args = e.Arguments;
+    string fileName = "Sample";
+    pGrid.CSVExport += pGrid_CSVExport;
+    pGrid.ExportToCSV(fileName, args["args"].ToString(), HttpContext.Current.Response);
+}
+
+void pGrid_CSVExport(object sender, string csvString)
+{
+    //You can customize exporting document here.
+}
+
+protected void PivotGrid_ServerWordExporting(object sender, Syncfusion.JavaScript.Web.PivotGridEventArgs e)
+{
+    PivotGridWordExport pGrid = new PivotGridWordExport();
+    dynamic args = e.Arguments;
+    string fileName = "Sample";
+    pGrid.WordExport += pGrid_WordExport;
+    pGrid.ExportToWord(fileName, args["args"].ToString(), HttpContext.Current.Response);
+}
+
+void pGrid_WordExport(object sender, Syncfusion.DocIO.DLS.WordDocument document)
+{
+    //You can customize exporting document here.
+}
+ 
+//Following service method needs to be added in WCF/WebAPI for PivotEngine Export.
+
+[System.Web.Http.ActionName("Export")]
+[System.Web.Http.HttpPost]
+public void Export()
+{
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    Dictionary<string, string> gridParams = serializer.Deserialize<Dictionary<string, string>>(args);
+    htmlHelper.PopulateData(gridParams["currentReport"]);
+    htmlHelper.ExcelExport += htmlHelper_ExcelExport;
+    htmlHelper.WordExport += htmlHelper_WordExport;
+    htmlHelper.AddPDFHeaderFooter += htmlHelper_AddPDFHeaderFooter;
+    htmlHelper.PDFExport += htmlHelper_PDFExport;
+    htmlHelper.CSVExport += htmlHelper_CSVExport;
+    string fileName = "Sample";
+    htmlHelper.ExportPivotGrid(ProductSales.GetSalesData(), args, fileName, System.Web.HttpContext.Current.Response);
+}
+
+void htmlHelper_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook workBook)
+{
+    //You can customize exporting document here.
+}
+void htmlHelper_WordExport(object sender, Syncfusion.DocIO.DLS.WordDocument document)
+{
+    //You can customize exporting document here.
+}
+void htmlHelper_AddPDFHeaderFooter(object sender, Syncfusion.Pdf.PdfDocument pdfDoc)
+{
+    //You can add header/footer information to the pdf document.
+}
+void htmlHelper_PDFExport(object sender, Syncfusion.Pdf.PdfDocument pdfDoc)
+{
+    //You can customize exporting document here.
+}
+void htmlHelper_CSVExport(object sender, string csvString)
+{
+    //You can customize exporting document here.
+}
+
+{% endhighlight %}
+
 The below screenshot shows the PivotGrid control exported to Excel document.
 
 ![](Exporting_images/ExportPivotExcel.png)
