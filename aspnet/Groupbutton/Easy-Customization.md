@@ -59,6 +59,8 @@ In the ASPX page, add the following GroupButton elements to configure the button
 
 
 ![](Easy-Customization_images/mini.png)
+Mini sized Groupbutton 
+{:.caption}
 
 {% highlight html %}
 
@@ -76,7 +78,8 @@ In the ASPX page, add the following GroupButton elements to configure the button
 
 
 ![](Easy-Customization_images/medium.png)
-Mini sized Groupbutton {:.caption}
+Medium sized Groupbutton 
+{:.caption}
 
 ## Orientation
 
@@ -94,6 +97,3 @@ You can change the orientation of Groupbutton as given in the below code snippet
 </ej:GroupButton>
 
 {% endhighlight %}
-
-![](Easy-Customization_images/Easy-Customization_img1.png)
-Medium sized Groupbutton {:.caption}
