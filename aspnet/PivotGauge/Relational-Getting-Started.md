@@ -120,6 +120,7 @@ The JSON data is set to the **"Data"** property present inside the **"DataSource
 
     //....
     <body>
+        <form runat="server">
         <ej:PivotGauge ID="MyPivotGauge1" runat="server" BackgroundColor="transparent" ClientIDMode="Static">
             <DataSource>
                 <Rows>
@@ -187,6 +188,7 @@ The JSON data is set to the **"Data"** property present inside the **"DataSource
                     ]
                 }
             </script>
+            </form>
     </body>
 </html>
 
@@ -214,9 +216,6 @@ Now add the following dependency libraries as references into your Web Applicati
 * Syncfusion.Linq.Base
 * Syncfusion.Olap.Base
 * Syncfusion.PivotAnalysis.Base
-* Syncfusion.XlsIO.Base
-* Syncfusion.Pdf.Base
-* Syncfusion.DocIO.Base
 * Syncfusion.EJ
 * Syncfusion.EJ.Web
 * Syncfusion.EJ.Pivot
@@ -234,9 +233,6 @@ Register the referenced assemblies in Web.config files available at the root of 
         <add assembly="Syncfusion.EJ.Pivot, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Linq.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Olap.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.Pdf.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.XlsIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
     </assemblies>
 </compilation>
 
@@ -277,10 +273,46 @@ Either drag and drop the **PivotGauge** control from the toolbox (under Syncfusi
 …… 
 ……
 <body>
-<form runat="server">
         <ej:PivotGauge ID="MyPivotGauge1" runat="server" Url="/Relational"  ClientIDMode="Static">
-        </ej:PivotGauge>
-        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <ClientSideEvents RenderSuccess="loadPivotGaugeTheme"/>
+        <Scales>
+            <ej:CircularScales ShowRanges="true" Radius="150" ShowScaleBar="true" Size="1"  ShowIndicators="true" ShowLabels="true">
+                <Border Width ="0.5" />
+                <PointerCollection>                    
+                    <ej:Pointers ShowBackNeedle="true" BackNeedleLength="20"  Length="125" Width="7" ></ej:Pointers>
+                    <ej:Pointers Type="Marker" MarkerType="Diamond" DistanceFromScale="5" Placement="Center" BackgroundColor="#29A4D9" Length="25" Width="15"></ej:Pointers>
+                </PointerCollection>
+                <TickCollection>
+                    <ej:CircularTicks Type="Major" DistanceFromScale="2" Height="16" Width="1" Color="#8c8c8c" />
+                    <ej:CircularTicks Type="Minor" Height="6" Width="1" DistanceFromScale="2" Color="#8c8c8c" />
+                </TickCollection>
+                <LabelCollection>
+                    <ej:CircularLabels Color="#8c8c8c"></ej:CircularLabels>
+                </LabelCollection>
+                <RangeCollection>
+                    <ej:CircularRanges DistanceFromScale="-5" BackgroundColor="#fc0606">
+                        <Border Color="#fc0606"/></ej:CircularRanges>
+                    <ej:CircularRanges DistanceFromScale="-5"></ej:CircularRanges>
+                </RangeCollection>
+                <CustomLabelCollection>
+                    <ej:CircularCustomLabel Color="#666666">
+                        <Position X="180" Y="290" />
+                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
+                    </ej:CircularCustomLabel>
+                    <ej:CircularCustomLabel Color="#666666">
+                        <Position X="180" Y="320" />
+                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
+                    </ej:CircularCustomLabel>
+                    <ej:CircularCustomLabel Color="#666666">
+                        <Position X="180" Y="150" />
+                        <Font Size="12px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
+                    </ej:CircularCustomLabel>
+                </CustomLabelCollection>   
+            </ej:CircularScales>
+        </Scales>
+        <LabelFormatSettings DecimalPlaces="2" />
+      </ej:PivotGauge>
+      <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
 </form>
 </body>
 

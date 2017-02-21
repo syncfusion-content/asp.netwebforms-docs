@@ -28,12 +28,12 @@ Register the referenced assemblies in Web.config files available at the root of 
 
 {% highlight xml %}
 
-<compilation debug="true" targetFramework={framework version}>
+<compilation debug="true" targetFramework="4.5">
     <assemblies> 
         ……
         ……
-        <add assembly="Syncfusion.EJ, Version= {{ site.releaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.EJ.Pivot, Version= {{ site.releaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.EJ.Pivot, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
 
     </assemblies>
 </compilation>
@@ -94,6 +94,7 @@ Initializes the OLAP datasource for PivotGauge widget as shown below.
 
     //....
     <body>
+        <form runat="server">
         <ej:PivotGauge ID="MyPivotGauge1" runat="server">
         <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll" >
             <Rows>
@@ -160,7 +161,7 @@ Initializes the OLAP datasource for PivotGauge widget as shown below.
             args.model.dataSource.rows[0].filterItems = { values: ["[Date].[Fiscal].[Fiscal Year].&amp;[2004]"] };
         }
         </script>
-        
+       </form> 
     </body>
 </html>
 
@@ -188,9 +189,6 @@ Now add the following dependency libraries as references into your Web Applicati
 * Syncfusion.Linq.Base
 * Syncfusion.Olap.Base
 * Syncfusion.PivotAnalysis.Base
-* Syncfusion.XlsIO.Base
-* Syncfusion.Pdf.Base
-* Syncfusion.DocIO.Base
 * Syncfusion.EJ
 * Syncfusion.EJ.Web
 * Syncfusion.EJ.Pivot
@@ -206,15 +204,12 @@ Register the referenced assemblies in Web.config files available at the root of 
         …… 
         ……
         <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.EJ.Web, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.EJ.Pivot, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Linq.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Olap.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Compression.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
         <add assembly="Syncfusion.PivotAnalysis.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
-        <add assembly="Syncfusion.Pdf.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.XlsIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
     </assemblies>
 </compilation>
 
@@ -259,7 +254,44 @@ Either drag and drop the **PivotGauge** control from the toolbox (under Syncfusi
 ……
 <body>
 <form runat="server">
-        <ej:PivotGauge ID="MyPivotGauge1" runat="server" Url="/Olap"  ClientIDMode="Static">
+       <ej:PivotGauge ID="MyPivotGauge1" runat="server" Url="/Olap"  ClientIDMode="Static">
+         <ClientSideEvents RenderSuccess="loadPivotGaugeTheme"/>
+        <Scales>
+            <ej:CircularScales ShowRanges="true" Radius="150" ShowScaleBar="true" Size="1"  ShowIndicators="true" ShowLabels="true">
+                <Border Width ="0.5" />
+                <PointerCollection>                    
+                    <ej:Pointers ShowBackNeedle="true" BackNeedleLength="20"  Length="125" Width="7" ></ej:Pointers>
+                    <ej:Pointers Type="Marker" MarkerType="Diamond" DistanceFromScale="5" Placement="Center" BackgroundColor="#29A4D9" Length="25" Width="15"></ej:Pointers>
+                </PointerCollection>
+                <TickCollection>
+                    <ej:CircularTicks Type="Major" DistanceFromScale="2" Height="16" Width="1" Color="#8c8c8c" />
+                    <ej:CircularTicks Type="Minor" Height="6" Width="1" DistanceFromScale="2" Color="#8c8c8c" />
+                </TickCollection>
+                <LabelCollection>
+                    <ej:CircularLabels Color="#8c8c8c"></ej:CircularLabels>
+                </LabelCollection>
+                <RangeCollection>
+                    <ej:CircularRanges DistanceFromScale="-5" BackgroundColor="#fc0606">
+                        <Border Color="#fc0606"/></ej:CircularRanges>
+                    <ej:CircularRanges DistanceFromScale="-5"></ej:CircularRanges>
+                </RangeCollection>
+                <CustomLabelCollection>
+                    <ej:CircularCustomLabel Color="#666666">
+                        <Position X="180" Y="290" />
+                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
+                    </ej:CircularCustomLabel>
+                    <ej:CircularCustomLabel Color="#666666">
+                        <Position X="180" Y="320" />
+                        <Font Size="10px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
+                    </ej:CircularCustomLabel>
+                    <ej:CircularCustomLabel Color="#666666">
+                        <Position X="180" Y="150" />
+                        <Font Size="12px" FontFamily="Segoe UI" FontStyle="Normal"></Font>
+                    </ej:CircularCustomLabel>
+                </CustomLabelCollection>   
+            </ej:CircularScales>
+        </Scales>
+        <LabelFormatSettings DecimalPlaces="2" />
         </ej:PivotGauge>
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
 </form>
