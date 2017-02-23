@@ -502,21 +502,6 @@ namespace PivotClientDemo
             Dictionary<string, object> dict = pivotClient.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["args"].ToString());
             return dict;
         }
-        [System.Web.Http.ActionName("SaveReportToDB")]
-        [System.Web.Http.HttpPost]
-        public Dictionary<string, object> SaveReportToDB(Dictionary<string, object> jsonResult)
-        {
-            string operationalMode = jsonResult["operationalMode"].ToString(), analysisMode = jsonResult["analysisMode"].ToString(), reportName = string.Empty;
-            reportName = jsonResult["reportName"].ToString() + "##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower();
-            SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
-            con.Open();
-            SqlCeCommand cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
-            cmd1.Parameters.Add("@ReportName", reportName);
-            cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(jsonResult["clientReports"].ToString()).ToArray());
-            cmd1.ExecuteNonQuery();
-            con.Close();
-            return null;
-        }
 
         [System.Web.Http.ActionName("Export")]
         [System.Web.Http.HttpPost]
@@ -527,6 +512,35 @@ namespace PivotClientDemo
             pivotClient.PopulateData(gridParams["currentReport"]);
             string fileName = "Sample";
             pivotClient.ExportPivotClient(ProductSales.GetSalesData(), args, fileName, System.Web.HttpContext.Current.Response);
+        }
+
+        [System.Web.Http.ActionName("SaveReportToDB")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> SaveReportToDB(Dictionary<string, object> jsonResult)
+        {
+            string operationalMode = jsonResult["operationalMode"].ToString(), analysisMode = jsonResult["analysisMode"].ToString(), reportName = string.Empty;
+            bool isDuplicate = true;
+            SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
+            con.Open();
+            reportName = jsonResult["reportName"].ToString() + "##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower();
+            SqlCeCommand cmd1 = null;
+            foreach (DataRow row in GetDataTable().Rows)
+            {
+                if ((row.ItemArray[0] as string).Equals(reportName))
+                {
+                    isDuplicate = false;
+                    cmd1 = new SqlCeCommand("update ReportsTable set Report=@Reports where ReportName like @ReportName", con);
+                }
+            }
+            if (isDuplicate)
+            {
+                cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+            }
+            cmd1.Parameters.Add("@ReportName", reportName);
+            cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(jsonResult["clientReports"].ToString()).ToArray());
+            cmd1.ExecuteNonQuery();
+            con.Close();
+            return null;
         }
 
         [System.Web.Http.ActionName("RemoveReportFromDB")]

@@ -46,13 +46,29 @@ For WebAPI controller, the below method needs to be added.
 [System.Web.Http.HttpPost]
 public Dictionary<string, object> SaveReportToDB(Dictionary<string, object> jsonResult)
 {
-    string operationalMode = jsonResult["operationalMode"].ToString(), analysisMode = jsonResult["analysisMode"].ToString();
-    string reportName = jsonResult["reportName"].ToString() + "##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower();
+    string operationalMode = jsonResult["operationalMode"].ToString(), analysisMode = jsonResult["analysisMode"].ToString(), reportName = string.Empty;
+    bool isDuplicate = true;
     SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
     con.Open();
-    SqlCeCommand cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+    reportName = jsonResult["reportName"].ToString() + "##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower();
+    SqlCeCommand cmd1 = null;
+    foreach (DataRow row in GetDataTable().Rows)
+    {
+        if ((row.ItemArray[0] as string).Equals(reportName))
+        {
+            isDuplicate = false;
+            cmd1 = new SqlCeCommand("update ReportsTable set Report=@Reports where ReportName like @ReportName", con);
+        }
+    }
+    if (isDuplicate)
+    {
+        cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+    }
     cmd1.Parameters.Add("@ReportName", reportName);
-    cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(jsonResult["clientReports"].ToString()).ToArray());
+    if (operationalMode.ToLower() == "servermode" && analysisMode == "olap")
+        cmd1.Parameters.Add("@Reports", OLAPUTILS.Utils.GetReportStream(jsonResult["clientReports"].ToString()).ToArray());
+    else
+        cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(jsonResult["clientReports"].ToString()).ToArray());
     cmd1.ExecuteNonQuery();
     con.Close();
     return null;
@@ -67,11 +83,27 @@ For WCF controller, the below method needs to be added.
 public Dictionary<string, object> SaveReportToDB(string reportName, string operationalMode, string analysisMode, string olapReport, string clientReports)
 {
     reportName = reportName + "##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower();
+    bool isDuplicate = true;
     SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
     con.Open();
-    SqlCeCommand cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+    SqlCeCommand cmd1 = null;
+    foreach (DataRow row in GetDataTable().Rows)
+    {
+        if ((row.ItemArray[0] as string).Equals(reportName))
+        {
+            isDuplicate = false;
+            cmd1 = new SqlCeCommand("update ReportsTable set Report=@Reports where ReportName like @ReportName", con);
+        }
+    }
+    if (isDuplicate)
+    {
+        cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+    }
     cmd1.Parameters.Add("@ReportName", reportName);
-    cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(clientReports).ToArray());
+    if (operationalMode.ToLower() == "servermode" && analysisMode == "olap")
+        cmd1.Parameters.Add("@Reports", OLAPUTILS.Utils.GetReportStream(clientReports).ToArray());
+    else 
+        cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(clientReports).ToArray());
     cmd1.ExecuteNonQuery();
     con.Close();
     return null;
@@ -149,6 +181,7 @@ public Dictionary<string, object> FetchReportListFromDB(Dictionary<string, objec
     }
     Dictionary<string, object> dictionary = new Dictionary<string, object>();
     dictionary.Add("ReportNameList", reportNames);
+    dictionary.Add("action", jsonResult["action"].ToString());
     return dictionary;
 }
 
@@ -165,17 +198,30 @@ public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> js
         currentRptName = (row.ItemArray[0] as string).Replace("##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower(), "");
         if (currentRptName.Equals(jsonResult["reportName"].ToString()))
         {
-            byte[] reportString = new byte[2 * 1024];
-            reportString = (row.ItemArray[1] as byte[]);
-            if (analysisMode.ToLower() == "pivot" && operationalMode.ToLower() == "servermode")
-                dictionary = pivotClient.GetJsonData("LoadReport", ProductSales.GetSalesData(), Encoding.UTF8.GetString(reportString));
+            if (operationalMode.ToLower() == "servermode" && analysisMode == "olap")
+            {
+                var reportString = "";
+                OlapDataManager DataManager = new OlapDataManager(connectionString);
+                reportString = OLAPUTILS.Utils.CompressData(row.ItemArray[1] as byte[]);
+                DataManager.Reports = olapClientHelper.DeserializedReports(reportString);
+                DataManager.SetCurrentReport(DataManager.Reports[0]);
+                return olapClientHelper.GetJsonData("toolbarOperation", DataManager, "Load Report", jsonResult["reportName"].ToString());
+            }
             else
-                dictionary.Add("report", Encoding.UTF8.GetString(reportString));
-            break;
+            {
+                byte[] reportString = new byte[2 * 1024];
+                reportString = (row.ItemArray[1] as byte[]);
+                if (analysisMode.ToLower() == "pivot" && operationalMode.ToLower() == "servermode")
+                    dictionary = olapClientHelper.GetJsonData("LoadReport", ProductSales.GetSalesData(), Encoding.UTF8.GetString(reportString));
+                else
+                    dictionary.Add("report", Encoding.UTF8.GetString(reportString));
+                break;
+            }
         }
     }
     return dictionary;
 }
+
 private DataTable GetDataTable()
 {
     SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
@@ -192,7 +238,7 @@ For WCF controller, the below methods need to be added.
 
 {% highlight c# %}
 
-public Dictionary<string, object> FetchReportListFromDB(string operationalMode, string analysisMode)
+public Dictionary<string, object> FetchReportListFromDB(string action, string operationalMode, string analysisMode)
 {
     string reportNames = string.Empty;
     string currentRptName = string.Empty;
@@ -207,11 +253,13 @@ public Dictionary<string, object> FetchReportListFromDB(string operationalMode, 
     }
     Dictionary<string, object> dictionary = new Dictionary<string, object>();
     dictionary.Add("ReportNameList", reportNames);
+    dictionary.Add("action", action);
     return dictionary;
 }
 
 public Dictionary<string, object> LoadReportFromDB(string reportName, string operationalMode, string analysisMode, string olapReport, string clientReports)
 {
+
     PivotReport report = new PivotReport();
     Dictionary<string, object> dictionary = new Dictionary<string, object>();
     string currentRptName = string.Empty;
@@ -223,23 +271,22 @@ public Dictionary<string, object> LoadReportFromDB(string reportName, string ope
             if (operationalMode.ToLower() == "servermode" && analysisMode == "olap")
             {
                 var reportString = "";
-                OlapDataManager DataManager = new OlapDataManager();
+                OlapDataManager DataManager = new OlapDataManager(connectionString);
                 reportString = OLAPUTILS.Utils.CompressData(row.ItemArray[1] as byte[]);
-                DataManager.Reports = pivotClient.DeserializedReports(reportString);
+                DataManager.Reports = olapClientHelper.DeserializedReports(reportString);
                 DataManager.SetCurrentReport(DataManager.Reports[0]);
-                return pivotClient.GetJsonData("toolbarOperation", DataManager, "Load Report", reportName);
+                return olapClientHelper.GetJsonData("toolbarOperation", DataManager, "Load Report", reportName);
             }
             else
             {
                 byte[] reportString = new byte[2 * 1024];
                 reportString = (row.ItemArray[1] as byte[]);
                 if (analysisMode.ToLower() == "pivot" && operationalMode.ToLower() == "servermode")
-                    dictionary = pivotClient.GetJsonData("LoadReport", ProductSales.GetSalesData(), Encoding.UTF8.GetString(reportString));
+                    dictionary = olapClientHelper.GetJsonData("LoadReport", ProductSales.GetSalesData(), Encoding.UTF8.GetString(reportString));
                 else
                     dictionary.Add("report", Encoding.UTF8.GetString(reportString));
                 break;
             }
-
         }
     }
     return dictionary;
