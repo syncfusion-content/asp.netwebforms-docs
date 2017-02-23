@@ -18,12 +18,20 @@ You can hide the **Sub Total** for respective fields in rows and columns by sett
 {% highlight html %}
 
 <ej:PivotGrid ID="PivotGrid1" runat="server">
-    <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll">
-        //...
-        <Columns>
-            <ej:Field FieldName="[Date].[Fiscal]"></ej:Field>
-            <ej:Field ShowSubTotal="false"></ej:Field>
-        </Columns>
+    <DataSource>
+    <Rows>
+        <ej:Field FieldName="Date" FieldCaption="Date" ShowSubTotal="False" >
+        </ej:Field>
+        <ej:Field FieldName="Country" FieldCaption="Country">
+        </ej:Field>
+    </Rows>
+    <Columns>
+        <ej:Field FieldName="Product" FieldCaption="Product">
+        </ej:Field>
+    </Columns>
+    <Values>
+        <ej:Field FieldName="Amount" FieldCaption="Amount"></ej:Field>
+    </Values>
     </DataSource>
 </ej:PivotGrid>
 

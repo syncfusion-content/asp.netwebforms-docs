@@ -104,9 +104,6 @@ N> If you have installed any version of SQL Server Analysis Service (SSAS) or Mi
 * Syncfusion.Linq.Base
 * Syncfusion.Olap.Base
 * Syncfusion.PivotAnalysis.Base
-* Syncfusion.XlsIO.Base
-* Syncfusion.Pdf.Base
-* Syncfusion.DocIO.Base
 * Syncfusion.EJ
 * Syncfusion.EJ.Web
 * Syncfusion.EJ.Pivot
@@ -122,11 +119,10 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Net;
-using System.Net.Http;
-using System.Web.Http;
 using System.Web.Script.Serialization;
 using Syncfusion.Olap.Manager;
 using Syncfusion.Olap.Reports;
+using System.ServiceModel.Activation;
 using Syncfusion.JavaScript;
 using OLAPUTILS = Syncfusion.JavaScript.Olap;
 
