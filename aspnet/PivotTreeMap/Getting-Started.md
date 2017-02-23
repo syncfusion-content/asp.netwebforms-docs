@@ -73,9 +73,16 @@ Either drag and drop the PivotTreeMap control from the toolbox (under Syncfusion
 <%@ Register Assembly="Syncfusion.EJ.Pivot" Namespace="Syncfusion.JavaScript.Models" TagPrefix="ej" %>
 
 <html> 
-    …… 
-    ……
-
+<head>
+.....
+.....
+<style>
+    #PivotTreeMap1 {
+        width:100%;
+        height:460px;
+    }
+</style>
+</head>
 <body>
     <form runat="server">
         <ej:PivotTreeMap ID="PivotTreeMap1" runat="server" ClientIDMode="Static">
@@ -115,12 +122,12 @@ Initializes the OLAP datasource for PivotTreeMap control as shown below.
     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
 </form>
 
-<! --Tooltip labels can be localized here-->
-<script id="tooltipTemplate" type="application/jsrender">
-    <div style="background:White; color:black; font-size:12px; font-weight:normal; border: 1px solid #4D4D4D; white-space: nowrap;border-radius: 2px; margin-right: 25px; min-width: 110px;padding-right: 5px; padding-left: 5px; padding-bottom: 2px ;width: auto; height: auto;">
-        <div>Measure(s) : {{:~Measures(#data)}}</div><div>Row : {{:~Row(#data)}}</div><div>Column : {{:~Column(#data)}}</div><div>Value : {{:~Value(#data)}}</div>
-    </div>
-</script>  
+    <!--Tooltip labels can be localized here-->
+    <script id="tooltipTemplate" type="application/jsrender"> 
+        <div style="background:White; color:black; font-size:12px; font-weight:normal; border: 1px solid #4D4D4D; white-space: nowrap;border-radius: 2px; margin-right: 25px; min-width: 110px;padding-right: 5px; padding-left: 5px; padding-bottom: 2px ;width: auto; height: auto;">
+            <div>Measure(s) : {{:~Measures(#data)}}</div><div>Row : {{:~Row(#data)}}</div><div>Column : {{:~Column(#data)}}</div><div>Value : {{:~Value(#data)}}</div>
+        </div>
+    </script>  
 
 {% endhighlight %}
 
@@ -148,9 +155,6 @@ Now add the following dependency libraries as references into your Web Applicati
 * Syncfusion.Linq.Base
 * Syncfusion.Olap.Base
 * Syncfusion.PivotAnalysis.Base
-* Syncfusion.XlsIO.Base
-* Syncfusion.Pdf.Base
-* Syncfusion.DocIO.Base
 * Syncfusion.EJ
 * Syncfusion.EJ.Web
 * Syncfusion.EJ.Pivot
@@ -191,7 +195,12 @@ Once the control is placed into the web page, add **‘ScriptManager’** next t
 <html> 
     …… 
     ……
-
+<style>
+    #PivotTreeMap1 {
+        width:100%;
+        height:460px;
+    }
+</style>
 <body>
     <form runat="server">
         <ej:PivotTreeMap ID="PivotTreeMap1" Url="/Olap" runat="server" ClientIDMode="Static"></ej:PivotTreeMap>
@@ -230,10 +239,7 @@ If you are manually entering the code instead of drag and drop operation from to
         <add assembly="Syncfusion.Linq.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Olap.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.PivotAnalysis.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.Pdf.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.XlsIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
-    
+   
     </assemblies>
 </compilation>
 

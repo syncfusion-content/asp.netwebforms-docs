@@ -213,6 +213,7 @@ If you are manually entering the code instead of drag and drop operation from to
         …… 
         ……
         <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.EJ.Web, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.EJ.Pivot, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Compression.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Linq.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
@@ -293,6 +294,7 @@ namespace PivotGridDemo
     public class OlapController : ApiController
     {
         Syncfusion.JavaScript.PivotGrid htmlHelper = new Syncfusion.JavaScript.PivotGrid();
+        static int cultureIDInfoval = 1033; 
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports
@@ -312,7 +314,8 @@ namespace PivotGridDemo
 {
     public class OlapController : ApiController
     {
-                    Syncfusion.JavaScript.PivotGrid htmlHelper = new Syncfusion.JavaScript.PivotGrid();
+        Syncfusion.JavaScript.PivotGrid htmlHelper = new Syncfusion.JavaScript.PivotGrid();
+        static int cultureIDInfoval = 1033; 
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports
@@ -399,9 +402,22 @@ namespace PivotGridDemo
         public Dictionary<string, object> SaveReport(Dictionary<string, object> jsonResult)
         {
             string mode = jsonResult["operationalMode"].ToString();
+            bool isDuplicate = true;
             SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
             con.Open();
-            SqlCeCommand cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+            SqlCeCommand cmd1 = null;
+            foreach (DataRow row in GetDataTable().Rows)
+            {
+                if ((row.ItemArray[0] as string).Equals(jsonResult["reportName"].ToString()))
+                {
+                    isDuplicate = false;
+                    cmd1 = new SqlCeCommand("update ReportsTable set Report=@Reports where ReportName like @ReportName", con);
+                }
+            }
+            if (isDuplicate)
+            {
+                cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+            }
             cmd1.Parameters.Add("@ReportName", jsonResult["reportName"].ToString());
             if (mode == "clientMode")
                 cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(jsonResult["clientReports"].ToString()).ToArray());
@@ -473,6 +489,7 @@ namespace PivotGridDemo
             con.Close();
             return dSet.Tables[0];
         }
+
 
         [System.Web.Http.ActionName("DeferUpdate")]
         [System.Web.Http.HttpPost]
