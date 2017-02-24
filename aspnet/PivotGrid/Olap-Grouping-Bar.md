@@ -52,7 +52,20 @@ Grouping Bar allows user to dynamically alter the report by filter and remove op
 
 ![](Grouping-Bar_images/OLAPServerMode.png)
 
+## Drag and Drop
+
+You can alter the report on fly through drag-and-drop operation.
+
+![](Grouping-Bar_images/GBar_Olap.png)
+
+## Context Menu
+
+You can also alter the report by using context menu.
+
+![](Grouping-Bar_images/CMenu_Olap.png)
+
 ## Searching Values
+
 Search option available in Grouping Bar allows you to search a specific value that needs to be filtered from the list of values inside the filter pop-up window.
 
 ![](Grouping-Bar_images/OlapFilterIcon.png)

@@ -107,7 +107,9 @@ Conditional formatting allows user to highlight particular cells with certain co
 
 {% endhighlight %}
 
-![](PivotGrid-Elements_images/conditional.png)
+![](PivotGrid-Elements_images/FormatDialog.png)
+
+![](PivotGrid-Elements_images/FormattedGrid.png)
 
 ### Export
 

@@ -104,15 +104,29 @@ The bottom portion of the layout is segregated as below.
 * Row Section: It is used to display item(s) as row header and values in the PivotGrid control.
 
 ## UI Interactions 
+
+### By Drag and Drop
+
 You can alter the report on fly through drag-and-drop operation. You can drag any item from Field List and drop into column, row, value or filter section available at the bottom of the Field List.
 
 ![](PivotTable-Field-List_images/schema.png) 
+
+### By Treeview Selection
 
 You can also alter the report on fly through check and uncheck option as an alternate. By default, fields will be added to the Row Label when checked.
 
 ![](PivotTable-Field-List_images/check-uncheck.png) 
 
+### By Context Menu
+
+You can also alter the report by using context menu.
+
+![](PivotTable-Field-List_images/Olap_Pivotbutton_Context.png)
+
+![](PivotTable-Field-List_images/Olap_Treeview_Context.png)
+
 ## Searching Values
+
 Search option available in Field List allows you to search a specific value that needs to be filtered from the list of values inside the filter pop-up window.
 
 ![](PivotTable-Field-List_images/filter.png)
