@@ -53,7 +53,20 @@ Grouping Bar allows user to dynamically alter the report by filter, sort and rem
 
 ![](Grouping-Bar_images/groupingbar.png)
 
+## Drag and Drop
+
+You can alter the report on fly through drag-and-drop operation.
+
+![](Grouping-Bar_images/GBar_Rel.png)
+
+## Context Menu
+
+You can also alter the report by using context menu.
+
+![](Grouping-Bar_images/CMenu_Rel.png)
+
 ## Searching Values
+
 Search option available in Grouping Bar allows you to search a specific value that needs to be filtered from the list of values inside the filter pop-up window.
 
 ![](Grouping-Bar_images/filter.png)

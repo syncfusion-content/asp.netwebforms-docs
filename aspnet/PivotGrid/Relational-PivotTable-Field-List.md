@@ -114,13 +114,23 @@ You can alter the report on fly through drag-and-drop operation. You can drag an
 
 ![](PivotTable-Field-List_images/RelationalDragnDrop.png) 
 
+### By Drag and Drop to Grid Headers
+
+You can also drag and drop elements from fieldlist to grid headers.
+
+![](PivotTable-Field-List_images/HeaderDrop.png)
+
+![](PivotTable-Field-List_images/HeaderDrop1.png)
+
+![](PivotTable-Field-List_images/HeaderDrop2.png)
+
 ### By Treeview Selection
 
 You can also alter the report on fly through check and uncheck option as an alternate. By default, fields will be added to the Row Label when checked.
 
 ![](PivotTable-Field-List_images/Relationalchecknuncheck.png) 
 
-### By Context Menu
+ ### By Context Menu
  
 You can also alter the report by using context menu.
 
