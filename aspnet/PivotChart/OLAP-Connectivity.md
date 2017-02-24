@@ -159,8 +159,6 @@ namespace PivotChartDemo
         Dictionary<string, object> InitializeChart(string action, string customObject);
         [OperationContract]
         Dictionary<string, object> DrillChart(string action, string drilledSeries, string olapReport, string customObject);
-        [OperationContract]
-        void Export(System.IO.Stream stream);
     }
 }
 {% endhighlight %}

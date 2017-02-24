@@ -80,7 +80,6 @@ using System.Data.SqlServerCe;
 using System.Linq;
 using System.Text;
 using System.Web;
-using System.Web.Http;
 using System.Web.Script.Serialization;
 using OLAPUTILS = Syncfusion.JavaScript.Olap;
 
@@ -330,9 +329,22 @@ namespace PivotGridDemo
         public Dictionary<string, object> SaveReport(string reportName, string operationalMode, string olapReport, string clientReports)
         {
             string mode = operationalMode;
+            bool isDuplicate = true;
             SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
             con.Open();
-            SqlCeCommand cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+            SqlCeCommand cmd1 = null;
+            foreach (DataRow row in GetDataTable().Rows)
+            {
+                if ((row.ItemArray[0] as string).Equals(reportName))
+                {
+                    isDuplicate = false;
+                    cmd1 = new SqlCeCommand("update ReportsTable set Report=@Reports where ReportName like @ReportName", con);
+                }
+            }
+            if (isDuplicate)
+            {
+                cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+            }
             cmd1.Parameters.Add("@ReportName", reportName);
             //cmd1.Parameters.Add("@Reports", OLAPUTILS.Utils.GetReportStream(clientReports).ToArray());
             if (mode == "serverMode")

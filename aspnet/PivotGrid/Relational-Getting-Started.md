@@ -251,7 +251,7 @@ Allow us to specify the required summary type that PivotGrid should use in its s
     </Columns>
     <Values>
             <ej:Field FieldName="Amount" FieldCaption="Amount" SummaryType="Average"></ej:Field>
-            <ej:Field FieldName="Quantity" FieldCaption="Quantity" SummaryType="Sum"></ej:Field>
+            <ej:Field FieldName="Quantity" FieldCaption="Quantity" SummaryType="Average"></ej:Field>
     </Values>
     </DataSource>
     <ClientSideEvents Load="onLoad" />
@@ -323,7 +323,7 @@ Once the control is placed into the web page, add **'ScriptManager'** next to it
 
 {% highlight html %}
 
-<%@ Register Assembly="Syncfusion.EJ.Pivot, Version={{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web.Olap" TagPrefix="ej" %> 
+<%@ Register Assembly="Syncfusion.EJ.Pivot, Version={{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %> 
 <html> 
     …… 
     ……
@@ -354,6 +354,7 @@ If you are manually entering the code instead of drag and drop operation from to
         <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.EJ.Web, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.EJ.Pivot, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.EJ.Export, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Compression.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Linq.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Olap.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
@@ -631,9 +632,22 @@ namespace PivotGridDemo
             public Dictionary<string, object> SaveReport(Dictionary<string, object> jsonResult)
             {
                 string mode = jsonResult["operationalMode"].ToString();
+                bool isDuplicate = true;
                 SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
                 con.Open();
-                SqlCeCommand cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+                SqlCeCommand cmd1 = null;
+                foreach (DataRow row in GetDataTable().Rows)
+                {
+                    if ((row.ItemArray[0] as string).Equals(jsonResult["reportName"].ToString()))
+                    {
+                        isDuplicate = false;
+                        cmd1 = new SqlCeCommand("update ReportsTable set Report=@Reports where ReportName like @ReportName", con);
+                    }
+                }
+                if (isDuplicate)
+                {
+                    cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+                }
                 cmd1.Parameters.Add("@ReportName", jsonResult["reportName"].ToString());
                 if (mode == "serverMode")
                     cmd1.Parameters.Add("@Reports", OLAPUTILS.Utils.GetReportStream(jsonResult["clientReports"].ToString()).ToArray());
@@ -643,50 +657,50 @@ namespace PivotGridDemo
                 con.Close();
                 return null;
             }
-
-        [System.Web.Http.ActionName("LoadReportFromDB")]
-        [System.Web.Http.HttpPost]
-        public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> jsonResult)
-        {
-            byte[] reportString = new byte[2 * 1024];
-            PivotReport report = new PivotReport();
-            var reports = "";
-            string mode = jsonResult["operationalMode"].ToString();
-            Dictionary<string, object> dictionary = new Dictionary<string, object>();
-            if (mode == "serverMode" && jsonResult.ContainsKey("clientReports"))
+    
+            [System.Web.Http.ActionName("LoadReportFromDB")]
+            [System.Web.Http.HttpPost]
+            public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> jsonResult)
             {
-                reports = jsonResult["clientReports"].ToString();
-            }
-            else
-            {
-                foreach (DataRow row in GetDataTable().Rows)
+                byte[] reportString = new byte[2 * 1024];
+                PivotReport report = new PivotReport();
+                var reports = "";
+                string mode = jsonResult["operationalMode"].ToString();
+                Dictionary<string, object> dictionary = new Dictionary<string, object>();
+                if (mode == "serverMode" && jsonResult.ContainsKey("clientReports"))
                 {
-                    if ((row.ItemArray[0] as string).Equals(jsonResult["reportName"].ToString()))
+                    reports = jsonResult["clientReports"].ToString();
+                }
+                else
+                {
+                    foreach (DataRow row in GetDataTable().Rows)
                     {
-                        if (mode == "clientMode")
+                        if ((row.ItemArray[0] as string).Equals(jsonResult["reportName"].ToString()))
                         {
-                            reportString = (row.ItemArray[1] as byte[]);
-                            dictionary.Add("report", Encoding.UTF8.GetString(reportString));
-                            break;
-                        }
-                        else if (mode == "serverMode")
-                        {
-                            reports = OLAPUTILS.Utils.CompressData(row.ItemArray[1] as byte[]);
-                            break;
+                            if (mode == "clientMode")
+                            {
+                                reportString = (row.ItemArray[1] as byte[]);
+                                dictionary.Add("report", Encoding.UTF8.GetString(reportString));
+                                break;
+                            }
+                            else if (mode == "serverMode")
+                            {
+                                reports = OLAPUTILS.Utils.CompressData(row.ItemArray[1] as byte[]);
+                                break;
+                            }
                         }
                     }
                 }
+                if (reports != "")
+                {
+                    report = htmlHelper.DeserializedReports(reports);
+                    htmlHelper.PivotReport = report;
+                    dictionary = htmlHelper.GetJsonData("loadOperation", ProductSales.GetSalesData(), "Load Report", jsonResult["reportName"].ToString());
+                }
+                return dictionary;
             }
-            if (reports != "")
-            {
-                report = htmlHelper.DeserializedReports(reports);
-                htmlHelper.PivotReport = report;
-                dictionary = htmlHelper.GetJsonData("loadOperation", ProductSales.GetSalesData(), "Load Report", jsonResult["reportName"].ToString());
-            }
-            return dictionary;
-        }
-
-
+    
+    
             private DataTable GetDataTable()
             {
                 SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
@@ -696,6 +710,7 @@ namespace PivotGridDemo
                 con.Close();
                 return dSet.Tables[0];
             }
+
 
 
             [System.Web.Http.ActionName("DeferUpdate")]
