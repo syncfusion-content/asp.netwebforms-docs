@@ -19,6 +19,18 @@ Cube Selector allows to select any one of the cubes that are available in connec
 
 Cube Dimension Browser is a treeview like structure that organizes the cube elements such as dimensions, hierarchies, measures, etc., from the selected cube into independent, logical groups.
 
+### Drag and Drop
+
+You can alter the report on fly through drag-and-drop operation.
+
+![](OLAP-Client-Elements_images/ClientTreeview_Drop.png) 
+
+### Context Menu
+
+You can also alter the report by using context menu.
+
+![](OLAP-Client-Elements_images/ClientTreeview_Menu.png) 
+
 ### Types of Node in Cube Dimension Browser
 
 * **Display Folder** - Folder that contains a set of similar elements.
@@ -151,6 +163,12 @@ Rearranging can be done by dragging an element and dropping at desired position.
 ![](OLAP-Client-Elements_images/rearrangeelement.png) 
 
 ![](OLAP-Client-Elements_images/rearrange 1.png) 
+
+### Context Menu
+
+You can alter the report by using context menu.
+
+![](OLAP-Client-Elements_images/ClientBtn_Menu.png)
 
 ## Elements Editor
 
