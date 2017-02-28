@@ -9,7 +9,7 @@ documentation: ug
 
 # Strict mode of the TimePicker
 
-TimePicker control provides you an option to set default value when there is no default value between minTime and maxTime by using EnableStrictMode property.
+TimePicker control provides you an option to set default value when there is no default value between minTime and maxTime by using **EnableStrictMode property**.
 
 ## StrictMode property
 

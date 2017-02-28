@@ -9,11 +9,11 @@ documentation: ug
 
 # Icons
 
-The Essential Studio provide icons library that contains the number of in-built icons that can be applied for CSS class names to elements and refer “ej.widgets.all.core.min.css” file. Use the following syntax to apply class names.
-
-Syntax: .e-icon .e-[icon description]
+The Essential Studio provide icons library that contains the number of in-built icons that can be applied for CSS class names to elements and refer **“ej.widgets.all.core.min.css”** file. Use the following syntax to apply class names.
 
 {% highlight css %}
+
+Syntax: .e-icon .e-[icon description]
 
 .e-icon .e-search
 
@@ -23,7 +23,7 @@ Syntax: .e-icon .e-[icon description]
 
 ## Adding icon in Button
 
-For example, you can render the desired icon in the button by using the following table that contains the listed icons’ CSS class names in the “PrefixIcon” property of button component. Also, use “ContentType” property to display the icon in the button. In the following code example, specify the “ContentType” of the button as ImageOnly.    
+For example, you can render the desired icon in the button by using the following table that contains the listed icons’ CSS class names in the **“PrefixIcon”** property of button component. Also, use **“ContentType”** property to display the icon in the button. In the following code example, specify the “ContentType” of the button as ImageOnly.    
 
 Refer to the following link to know what are the values passed in the “ContentType” property
 

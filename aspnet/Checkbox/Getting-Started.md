@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly how to create a Checkbox in your application with ASP.NET.
+This section explains briefly how to create a **Checkbox** in your application with ASP.NET.
 
 ## Create your first Checkbox in ASP.NET
 
@@ -25,213 +25,112 @@ In the above screenshot, you can select Hobbies, Interests list and Social netwo
 
 ASP.NET Checkbox widget has built-in features like intermediate selections. You can create the Checkbox widget by using an input Checkbox element as follows.
 
-You can create an ASP.NET Project and add necessary assemblies, styles and scripts with the help of the given [ASP.NET-Getting Started](http://help.syncfusion.com/aspnet/checkbox/getting-started) Documentation.
+You can create an ASP.NET Project and add necessary assemblies, styles and scripts with the help of the given [ASP.NET-Getting Started](https://help.syncfusion.com/aspnet/getting-started) Documentation.
 
 Create an ASPX file and add ejCheckBox element to render the Checkbox.
 
 {% highlight html %}
 
 <div class="frame">
-
         Hobbies
-
         <br />
-
         <br />
-
         <table>
-
             <tr>
-
                 <td class="chkrad">
-
                     <ej:CheckBox ID="Checkbox1" runat="server" Value="Music">
-
                     </ej:CheckBox>
-
                     <label for="Checkbox1">Music</label>
-
                 </td>
-
                 <td class="chkrad">
-
                     <ej:CheckBox ID="Checkbox3" runat="server" Value="Sports">
-
                     </ej:CheckBox>
-
                     <label for="Checkbox3">Sports</label>
-
                 </td>
-
                 <td class="chkrad">
-
                     <ej:CheckBox ID="Checkbox4" runat="server" Value="Bike riding">
-
                     </ej:CheckBox>
-
                     <label for="Checkbox4" class="clslab">Bike Riding</label>
-
                 </td>
-
             </tr>
-
         </table>
-
         <br />
-
         <br />
-
         Favorite Search Engines<br />
-
         <br />
-
         <table>
-
             <tr>
-
                 <td class="chkrad">
-
                     <ej:CheckBox ID="Checkbox9" runat="server" Value="Playing Games">
-
                     </ej:CheckBox>
-
                     <label for="Checkbox9">Playing Games</label>
-
                 </td>
-
                 <td class="chkrad">
-
                     <ej:CheckBox ID="Checkbox5" runat="server" Value="Hearing Songs">
-
                     </ej:CheckBox>
-
                     <label for="Checkbox5">Hearing Songs</label>
-
                 </td>
-
                 <td class="chkrad">
-
                     <ej:CheckBox ID="Checkbox6" runat="server" Value="Watching tv">
-
                     </ej:CheckBox>
-
                     <label for="Checkbox6">Watching Tv</label>
-
                 </td>
-
             </tr>
-
         </table>
-
         <br />
-
         <br />
-
         Media Player<br />
-
         <br />
-
         <table>
-
             <tr>
-
                 <td class="chkrad">
-
                     <ej:CheckBox ID="Checkbox2" runat="server" Value="Video" EnableTriState="true">
-
                     </ej:CheckBox>
-
                     <label for="Checkbox2">
-
                         Video</label>
-
                 </td>
-
                 <td class="chkrad">
-
                     <ej:CheckBox ID="Checkbox7" runat="server" Value="Audio" EnableTriState="true">
-
                     </ej:CheckBox>
-
                     <label for="Checkbox7">
-
                         Audio</label>
-
                 </td>
-
                 <td class="chkrad">
-
                     <ej:CheckBox ID="Checkbox8" runat="server" Value="Picture" EnableTriState="true">
-
                     </ej:CheckBox>
-
                     <label for="Checkbox8">
-
                         Picture</label>
-
                 </td>
-
             </tr>
-
         </table>
-
         <br />
-
         <table>
-
             <tr>
-
                 <td class="btnsht">
-
                     <ej:Button ID="Button" runat="server" Text="SUBMIT" Type="Button"
-
 ClientSideOnClick="click" ShowRoundedCorner="true">
-
                     </ej:Button>
-
-                </td>
-
             </tr>
-
         </table>
-
     </div>
-
-
 
 {% endhighlight %}
 
-
-
 Add the following styles to show the Checkbox control in an order.
-
-
 
 {% highlight css %}
 
         .frame
-
         {
-
             width: 600px;
-
             padding: 20px;
-
             border: 1px solid gray;
-
         }
-
         .chkrad
-
         {
-
             font-weight: bold;
-
             width: 200px;
-
         }    
-
-
 
 {% endhighlight %}
 
@@ -240,31 +139,19 @@ Add the script into your ASPX page.
 {% highlight js %}
 
         function click() {
-
             var checkeditem = "";
-
             $(".e-checkbox").each(function (index, args) {
-
                 if ($(this).data('ejCheckBox').isChecked) {
-
                     checkeditem += $(this).data('ejCheckBox').model.value;
-
                 }
-
             });
-
             alert("Checked items are -"+checkeditem);
-
         }
-
-
 
 {% endhighlight %}
 
 
-
 ![Description: C:/Users/jeganprakash/Desktop/Documentation/Images/Check/2.PNG](Getting-Started_images/Getting-Started_img2.png)
-
 
 
 ## File Selection in Media Player
@@ -276,147 +163,76 @@ Add the following code in the <body> element of the corresponding ASPX page.
 {% highlight html %}
 
     <div class="frame">
-
         Audio
-
         <br />
-
         <br />
-
         <table>
-
             <tr>
-
                 <td>
-
                     <ej:CheckBox ID="Checkbox1" runat="server" Value="Mp3">
-
                     </ej:CheckBox>
-
                     <label for="Checkbox1">
-
                         *.Mp3</label>
-
                 </td>
-
                 <td>
-
                     <ej:CheckBox ID="Checkbox2" runat="server" Value="Wav">
-
                     </ej:CheckBox>
-
                     <label for="Checkbox2">
-
                         *.Wav</label>
-
                 </td>
-
             </tr>
-
         </table>
-
         <br />
-
         <br />
-
         Video<br />
-
         <br />
-
         <table>
-
             <tr>
-
                 <td>
-
                     <ej:CheckBox ID="Checkbox3" runat="server" Value="Avi">
-
                     </ej:CheckBox>
-
                     <label for="Checkbox3">
-
                         *.Avi</label>
-
                 </td>
-
                 <td>
-
                     <ej:CheckBox ID="Checkbox4" runat="server" Value="MP4">
-
                     </ej:CheckBox>
-
                     <label for="Checkbox4">
-
                         *.MP4</label>
-
                 </td>
-
             </tr>
-
         </table>
-
         <br />
-
         <br />
-
         Picture<br />
-
         <br />
-
         <table>
-
             <tr>
-
                 <td>
-
                     <ej:CheckBox ID="Checkbox5" runat="server" Value="PNG">
-
                     </ej:CheckBox>
-
                     <label for="Checkbox5">
-
                         *.PNG</label>
-
                 </td>
-
                 <td>
-
                     <ej:CheckBox ID="Checkbox6" runat="server" Value="JPG">
-
                     </ej:CheckBox>
-
                     <label for="Checkbox6">
-
                         *.JPG</label>
-
                 </td>
-
             </tr>
-
         </table>
-
         <br />
-
         <table>
-
             <tr>
-
                 <td>
-
                     <ej:Button ID="Button" runat="server" Text="SUBMIT" Type="Button"
-
 ClientSideOnClick="click" ShowRoundedCorner="true">
-
                     </ej:Button>
-
                 </td>
-
             </tr>
-
         </table>
-
     </div>
-
 
 
 {% endhighlight %}
@@ -428,25 +244,14 @@ Add the script into your ASPX page.
 {% highlight js %}
 
         function click() {
-
                 var checkeditem = "";
-
                 $(".e-checkbox").each(function (index, args) {
-
                     if ($(this).data('ejCheckBox').isChecked) {
-
                         checkeditem += $(this).data('ejCheckBox').model.value;
-
                     }
-
                 });
-
                 alert("Checked Items are -"+checkeditem);
-
             }   
-
-
-
 
 
 {% endhighlight %}
@@ -458,15 +263,10 @@ Add the following styles to show the Checkbox control in an order.
 {% highlight js %}
 
         .frame
-
         {
-
             padding: 20px;
-
             background: #f1efef;
-
         }
-
 
 
 {% endhighlight %}

@@ -9,7 +9,7 @@ documentation: ug
 
 # State persistence
 
-TimePicker control provides options to maintain the selected value after you refresh the page by using State persistence property.
+TimePicker control provides options to maintain the selected value after you refresh the page by using **State persistence property**.
 
 ## State persistence of the TimePicker
 
