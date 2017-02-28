@@ -9,7 +9,7 @@ documentation: ug
 
 # RTL support
 
-In some cases, it is necessary to use right-to-left alignment. You can render RTL support by using the EnableRTL property. In RTL mode, when there is more than one content (image/text, image/image) in button, the content is aligned in the right-to-left format. For example, when text is in the left and image is in the right positions, after applying right to left alignment these positions are interchanged.
+In some cases, it is necessary to use right-to-left alignment. You can render RTL support by using the **EnableRTL property**. In RTL mode, when there is more than one content (image/text, image/image) in button, the content is aligned in the right-to-left format. For example, when text is in the left and image is in the right positions, after applying right to left alignment these positions are interchanged.
 
 The following steps explain the rendering of the Toggle Button with right-to-left alignment support.
 

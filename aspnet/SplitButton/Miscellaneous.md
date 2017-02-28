@@ -11,7 +11,7 @@ documentation: ug
 
 ## Text
 
-It is necessary to display the user-defined text for the Split Button. By using the Text property, you can easily set text content for the Split Button. This Text property overwrites the text that is provided on input button element.
+It is necessary to display the user-defined text for the Split Button. By using the **Text property**, you can easily set text content for the Split Button. This Text property overwrites the text that is provided on input button element.
 
 The following step explains the details about rendering the Split Button with specified text.
 
@@ -61,7 +61,7 @@ The following screenshot displays the output of the above code example.
 
 ## Show Rounded Corner
 
-Specifies the corner of the Split Button in a rounded shape. By default, the edges of the Split Button are not rounded. To set rounded corner, you can enable the ShowRoundedCorner property.
+Specifies the corner of the Split Button in a rounded shape. By default, the edges of the Split Button are not rounded. To set rounded corner, you can enable the **ShowRoundedCorner property**.
 
 The following step explains the details about rendering the Split Button with rounded corner.
 

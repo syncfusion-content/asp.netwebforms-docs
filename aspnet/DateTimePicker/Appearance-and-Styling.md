@@ -41,7 +41,7 @@ The following 13 themes are supported by the DateTimePicker:
 
 ## CSS Class
 
-DateTimePicker control also allows you to customize its appearance by using user-defined CSS and custom skin options such as colors and backgrounds. To apply custom themes, you have a property CssClass. CssClass property sets the root class for DateTimePicker theme.
+DateTimePicker control also allows you to customize its appearance by using user-defined CSS and custom skin options such as colors and backgrounds. To apply custom themes, you have a property **CssClass**. CssClass property sets the root class for DateTimePicker theme.
 
 By using this CssClass, you can override the existing styles under the theme style sheet. The theme style sheet applies theme-specific styles like colors and backgrounds. In the following example, the value of CssClass property is set as Purple-dark. Purple-dark is added as root class to DateTimePicker control at the runtime. From this root class, you can customize the DateTimePicker control theme.
 
@@ -61,74 +61,33 @@ Add the following code in your style section. In the following CSS style, exitin
 
 {% highlight css %}
 
-.Purple-dark .e-week-header {
-
+    .Purple-dark .e-week-header {
         color: #EBADD6;
-
     }
-
-
-
     .Purple-dark .e-text {
-
         color: black;
-
     }
-
-
-
     .Purple-dark .e-state-default {
-
         color: pink;
-
     }
-
-
-
     .Purple-dark .e-active {
-
         background-color: #FF1975;
-
     }
-
-
-
     .Purple-dark .e-state-default:hover {
-
         color: #EBADD6;
-
     }
-
-
-
     .Purple-dark .e-dt-button {
-
         color: black;
-
         background-color: #E085C2;
-
     }
-
-
-
     .Purple-dark .e-header {
-
         background-color: #E085C2;
-
         color: black;
-
     }
-
-
-
     .Purple-dark .e-timecontainer .e-header {
-
         background-color: #E085C2;
-
         color: black;
-
     }
-
 
 
 {% endhighlight %}

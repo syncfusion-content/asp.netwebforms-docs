@@ -31,120 +31,60 @@ The following code example depicts you the way to bind data to the TimePicker co
 
 {% highlight html %}
 
-<html ng-app="TimeCtrl">
-
-<head>
-
-    <title>Essential Studio for JavaScript : Timepicker AngularJS</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
-
-    <link href="[http://cdn.syncfusion.com/{{site.releaseversion}} /js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)" rel="stylesheet" />
-
-    <!--scripts-->
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-
-
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
-
-
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-
-
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
-
-
-
-    <script src="[http://cdn.syncfusion.com/{{site.releaseversion}} /js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
-
-
-
-    <script src="[http://cdn.syncfusion.com/{{site.releaseversion}} /js/web/ej.unobtrusive.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js)"></script>
-
-    <script src="[http://cdn.syncfusion.com/{{site.releaseversion}} /js/ej.widget.angular.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js)"> </script>
-
-</head>
-
-<body ng-controller="TimePickerCtrl">
-
-    <div class="content-container-fluid">
-
-        <div class="row">
-
-            <div class="cols-sample-area">
-
-                <div class="frame" style="width: 30%; height: 17px;">
-
-                    <div id="control" style="float: left;width: 45%;">
-
-                      <input id="time" type="text" ej-timepicker e-value="tvalue" />
-
-                        <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px;">Note:Two Way AngularJS Support</span></h6>
-
+ <html ng-app="TimeCtrl">
+    <head>
+        <title>Essential Studio for JavaScript : Timepicker AngularJS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+        <link href="[http://cdn.syncfusion.com/{{site.releaseversion}} /js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)" rel="stylesheet" />
+        <!--scripts-->
+        <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
+        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+        <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
+        <script src="[http://cdn.syncfusion.com/{{site.releaseversion}} /js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+        <script src="[http://cdn.syncfusion.com/{{site.releaseversion}} /js/web/ej.unobtrusive.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js)"></script>
+        <script src="[http://cdn.syncfusion.com/{{site.releaseversion}} /js/ej.widget.angular.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js)"> </script>
+    </head>
+    <body ng-controller="TimePickerCtrl">
+        <div class="content-container-fluid">
+            <div class="row">
+                <div class="cols-sample-area">
+                    <div class="frame" style="width: 30%; height: 17px;">
+                        <div id="control" style="float: left;width: 45%;">
+                            <input id="time" type="text" ej-timepicker e-value="tvalue" />
+                            <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px;">Note:Two Way AngularJS Support</span></h6>
+                        </div>
+                        <div id="binding" style=" float right;width 45%;">
+                            <input id="timectrl" type="text" ej-timepicker e-value="tvalue" e-interval="10" />
+                        </div>
                     </div>
-
-                    <div id="binding" style=" float: right;width: 45%;">
-
-                        <input id="timectrl" type="text" ej-timepicker e-value="tvalue" e-interval="10"/>
-
-                    </div>
-
                 </div>
-
             </div>
-
         </div>
-
-    </div>
-
-
-
-    <script type="text/javascript">
-
+        <script type="text/javascript">
         angular.module('TimeCtrl', ['ejangular'])
-
                .controller('TimePickerCtrl', function ($scope) {
-
                    $scope.tvalue = "12:50 AM";
-
                });
+        </script>
+        <style type="text/css" class="cssStyles">
+            .control {
+                margin: 0 auto;
+                width: 136px;
+            }
 
-    </script>
+            #time_timewidget, #timectrl_timewidget {
+                width: 84%;
+            }
 
-    <style type="text/css" class="cssStyles">
-
-        .control {
-
-            margin: 0 auto;
-
-            width: 136px;
-
-        }
-
-    #time_timewidget, #timectrl_timewidget {
-
-            width: 84%;
-
-        }
-
-        #timeValue {
-
-            text-indent: 10px;
-
-        }
-
-    </style>
-
-</body>
-
+            #timeValue {
+                text-indent: 10px;
+            }
+        </style>
+    </body>
 </html>
 
 {% endhighlight %}
-
 
 
 Run the above code to render the following output.
@@ -175,135 +115,65 @@ The following example depicts the way to bind data to the TimePicker control thr
 {% highlight html %}
 
 <html>
-
 <head>
-
     <title>Essential Studio for JavaScript : Timepicker KnockoutJS</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
-
     <!-- Style sheet for default theme (flat azure) -->
-
     <link href=" [http://cdn.syncfusion.com/{{site.releaseversion}} /js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)" rel="stylesheet" />
-
     <!--scripts-->
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-
-
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
-
-
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>    
-
-
-
     <script src="[http://cdn.syncfusion.com/{{site.releaseversion}} /js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
-
-
-
     <script src="[http://cdn.syncfusion.com/{{site.releaseversion}} /js/web/ej.unobtrusive.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js)"></script>
-
-
-
     <script src="[http://cdn.syncfusion.com/{{site.releaseversion}} /js/ej.widget.ko.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js)"></script>
-
 </head>
-
     <!--Adds custom scripts here -->
-
 </head>
-
 <body>
-
     <div class="content-container-fluid">      
-
             <div class="row">                
-
                 <div class="cols-sample-area">                                  
-
                     <div class="frame">
-
                         <div class="control" style="width: 136px;">
-
                              <label style="width: 130px;">Select Show Time </label>
-
                              <input id="time" type="text" data-bind="ejTimePicker:{value:tvalue }"/>
-
                         </div>
-
                      </div>                    
-
                 </div>
-
                 <div id="sampleProperties">
-
                    <div class="prop-grid">
-
                       <div class="row">
-
                          <div class="col-md-3">Time Value</div>
-
                          <div class="col-md-3">
-
                              <input type="text" id="timeValue" class="input ejinputtext" value="" data-bind="value: tvalue" />
-
                          </div>
-
                          <div class="col-md-3">Selected time</div>
-
                          <div class="col-md-3">
-
                             <input type="button" class="e-btn inputBtn" id="gettime" value="Get Time" />
-
    				         </div>
-
                       </div>		
-
                   </div>
-
            </div>
-
        </div>
-
     </div>
-
     <script type="text/javascript">
-
        window.viewModel = {
-
             //TimePicker
-
             tvalue: ko.observable("11:30 AM")       
-
         }
-
         $(function () {
-
             // Declaration
-
             ko.applyBindings(viewModel);
-
             var timeObj = $('#time').data("ejTimePicker");
-
             $("#gettime").click(function () {
-
                 alert("Selected time is : " + timeObj.getValue());
-
             });
-
             $("#sampleProperties").ejPropertiesPanel();
-
         });
-
     </script>
-
  </body>
-
 </html>
 
 {% endhighlight %}

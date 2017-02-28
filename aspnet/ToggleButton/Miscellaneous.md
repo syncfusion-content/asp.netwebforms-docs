@@ -11,7 +11,7 @@ documentation: ug
 
 ## Show Rounded Corner 
 
-It sets the corner of the Toggle Button in rounded shape. The Toggle Button, by default, does not have rounded corners. To set rounded corners, you can enable the ShowRoundedCorner property.
+It sets the corner of the Toggle Button in rounded shape. The Toggle Button, by default, does not have rounded corners. To set rounded corners, you can enable the **ShowRoundedCorner property**.
 
 In the ASPX page, add the following button elements to configure the Toggle Button.
 
@@ -33,7 +33,7 @@ Run the above code to render the following output.
 
 ## Prevent Toggle
 
-This property is used to prevent the state change of the Toggle Button when it is clicked. When you set the PreventToggle property to true, the state of the Toggle Button is not changed even though it is clicked.
+This property is used to prevent the state change of the Toggle Button when it is clicked. When you set the **PreventToggle property** to true, the state of the Toggle Button is not changed even though it is clicked.
 
 In the ASPX page, add the following button elements to configure the Toggle Button.
 

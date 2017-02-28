@@ -11,7 +11,7 @@ documentation: ug
 
 ## Checked status
 
-You have options to set the state of the radio button as either checked or unchecked. When you select any option from the group of radio buttons, a dot mark appears inside the circle. This is called the Checked state. Previously selected radio buttons in this group are unselected that is they go to the unChecked state. The Checked property is used to set the state of the radio button.
+You have options to set the state of the radio button as either checked or unchecked. When you select any option from the group of radio buttons, a dot mark appears inside the circle. This is called the Checked state. Previously selected radio buttons in this group are unselected that is they go to the unChecked state. The **Checked property** is used to set the state of the radio button.
 
 The following steps explain the details about rendering the Radio Button with the Checked option
 
@@ -45,15 +45,10 @@ Configure the CSS styles to align the radio buttons.
 
 {% highlight css %}
 <style type="text/css">
-
     .page-align
-
     {
-
         margin: 100px;
-
     }
-
 </style>
 {% endhighlight %}
 
@@ -61,7 +56,7 @@ Configure the CSS styles to align the radio buttons.
 
 ## Text
 
-Specifies the text content for the radio button. In previous programs, separate labels were created for each radio button. But now you have the option to set the text for radio button by using the Text property. So here you do not have to add a label tag for each radio button in the HTML code.
+Specifies the text content for the radio button. In previous programs, separate labels were created for each radio button. But now you have the option to set the text for radio button by using the **Text property**. So here you do not have to add a label tag for each radio button in the HTML code.
 
 The following steps explain the details about rendering the Radio Button with Text and without using the label tag options.
 
@@ -89,15 +84,10 @@ Configure the CSS styles to align the radio buttons.
 
 {% highlight css %}
 <style type="text/css">
-
     .page-align
-
     {
-
         margin: 100px;
-
     }
-
 </style>
 {% endhighlight %}
 
@@ -182,13 +172,9 @@ Configure the CSS styles to align the radio buttons
 
 {% highlight css %}
 <style type="text/css">
-
     .page-align
-
     {
-
         margin: 100px;
-
     }
 </style>
 {% endhighlight %}
@@ -197,7 +183,7 @@ Configure the CSS styles to align the radio buttons
 
 ## RTL Support 
 
-In some cases, you need to use right-to-left alignment. You can give RTL support by using EnableRTL property.  RTL mode works when you use the Text property in Radio Button. The Radio Buttons and text are aligned in the right-to-left format. For example, when text is right-aligned and Radio button is left-aligned, after you apply right-to-left alignment, these positions are interchanged. 
+In some cases, you need to use right-to-left alignment. You can give RTL support by using **EnableRTL property**.  RTL mode works when you use the Text property in Radio Button. The Radio Buttons and text are aligned in the right-to-left format. For example, when text is right-aligned and Radio button is left-aligned, after you apply right-to-left alignment, these positions are interchanged. 
 
 The following steps explain the details about rendering the Radio Button with right-to-left alignment support. Here the Text property is necessary.
 
@@ -207,40 +193,24 @@ In the ASPX page, add the following button elements to configure Radio Button.
 <%--set radio button with right to left format--%>
 
 <div class="page-align">
-
     <table class="rightAlign">
-
         <tr>
-
             <td>
-
                 <ej:RadioButton Name="Gender" ID="RadBtn_male" runat="server" Size="Small" Text="Male"
-
                 EnableRTL="true">
-
                 </ej:RadioButton>
-
             </td>
-
         </tr>
-
         <tr>
-
             <td>
-
                 <ej:RadioButton Name="Gender" ID="RadBtn_female" runat="server" Size="Small" Text="Female"
-
                 EnableRTL="true">
-
                 </ej:RadioButton>
-
             </td>
-
         </tr>
-
     </table>
-
 </div>
+
 {% endhighlight %}
 
 In the above mentioned code, the Text property has been used. In LTR format, the RadioButton is on the left side. In RTL format, the RadioButton appears on the right side. Here the Text property is used and the EnableRTL property is set as “True”. It changes the alignment to right-to-left.
@@ -249,24 +219,16 @@ Configure the CSS styles to align the RadioButtons.
 
 {% highlight css %}
 <style type="text/css">
-
     .page-align
-
     {
-
         margin: 100px;
-
     }
-
     .rightAlign
-
     {
-
         text-align: right;
-
     }
-
 </style>
+
 {% endhighlight %}
 
 ![](Easy-Customization_images/Easy-Customization_img4.png)
