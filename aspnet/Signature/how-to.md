@@ -2,7 +2,7 @@
 layout: post
 title: How To
 description: How To
-platform: js
+platform: aspnet
 control: Signature
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: signature customization
 description: signature customization
-platform: js
+platform: aspnet
 control: Signature
 documentation: ug
 ---
