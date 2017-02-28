@@ -41,7 +41,7 @@ Creates button with Built-in large size height, width specified.</td></tr>
 
 Apart from the above mentioned predefined size option, you can set your own width and height of Grouptbutton by using Height and Width property.
 
-In the ASPX page, add the following GroupButton elements to configure button for configure the size
+In the ASPX page, add the following GroupButton elements to configure the button size
 
 {% highlight html %}
 
@@ -59,6 +59,8 @@ In the ASPX page, add the following GroupButton elements to configure button for
 
 
 ![](Easy-Customization_images/mini.png)
+Mini sized Groupbutton 
+{:.caption}
 
 {% highlight html %}
 
@@ -76,7 +78,8 @@ In the ASPX page, add the following GroupButton elements to configure button for
 
 
 ![](Easy-Customization_images/medium.png)
-Mini sized Groupbutton {:.caption}
+Medium sized Groupbutton 
+{:.caption}
 
 ## Orientation
 
@@ -94,6 +97,3 @@ You can change the orientation of Groupbutton as given in the below code snippet
 </ej:GroupButton>
 
 {% endhighlight %}
-
-![](Easy-Customization_images/Easy-Customization_img1.png)
-Medium sized Groupbutton {:.caption}

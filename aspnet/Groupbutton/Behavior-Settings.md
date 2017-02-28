@@ -28,7 +28,9 @@ The default behavior of Groupbutton is like Radiobutton, i.e., only one item can
 {% endhighlight %}
 
 ![](Behavior-Settings_images/Radiobutton.png)
-RadioButton mode {:.caption}
+
+RadioButton mode
+{:.caption}
 
 To enable selection of one or more Groupbutton items at a time, you can set the Groupbutton mode to Checkbox. With this, you can toggle the each button’s state to perform actions, since all the button will behave like individual buttons.
 
@@ -45,4 +47,6 @@ To enable selection of one or more Groupbutton items at a time, you can set the 
 {% endhighlight %}
 
 ![](Behavior-Settings_images/Checkbox.png)
-CheckBox mode {:.caption}
+
+CheckBox mode
+{:.caption}

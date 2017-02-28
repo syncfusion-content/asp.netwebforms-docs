@@ -11,7 +11,7 @@ documentation: ug
 
 ## Set value of the TimePicker Control
 
-You can use Value property to set default time for the TimePicker.
+You can use **Value property** to set default time for the TimePicker.
 
 The following step explains how to set the default value of the TimePicker.
 
@@ -35,7 +35,7 @@ Run the above code to render the following output.
 
 ## Enable/Disable TimePicker Control
 
-TimePicker control provides you an option to enable /disable the control. You can disable the TimePicker by setting the Enabled property value to false.
+TimePicker control provides you an option to enable /disable the control. You can disable the TimePicker by setting the **Enabled property** value to false.
 
 The following step explains you to enable/disable property in the TimePicker control.
 
@@ -65,7 +65,7 @@ Run the above code to render the following output.
 
 ## Restrict editing
 
-TimePicker control provides ReadOnly property to disable editing in the control. Therefore, you can only read the value that is set to the TimePicker and cannot modify it. The value property allows you to set the default value for the TimePicker control when it is created.
+TimePicker control provides **ReadOnly property** to disable editing in the control. Therefore, you can only read the value that is set to the TimePicker and cannot modify it. The value property allows you to set the default value for the TimePicker control when it is created.
 
 ### Configure TimePicker textbox to restrict editing
 
@@ -138,7 +138,7 @@ Run the above code to render the following output.
 
 ## Rounded Corner
 
-You can customize the shape of the TimePicker control from regular rectangular shape to rounded rectangle shape by using the ShowRoundedCorner property set to false by default.
+You can customize the shape of the TimePicker control from regular rectangular shape to rounded rectangle shape by using the **ShowRoundedCorner property** set to false by default.
 
 ### Configure Rounded corner to TimePicker Text box
 

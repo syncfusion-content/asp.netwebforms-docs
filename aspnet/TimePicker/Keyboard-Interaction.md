@@ -81,21 +81,13 @@ In the ASPX page, include the following TimePicker control and enable keyboard i
 {% highlight js %}
 
 <script type="text/javascript">
-
     $(function () {
-
          $(document).on("keydown", function (e) {
-
                if (e.altKey && e.keyCode === 74) { // j- key code.
-
                      $("#<%= time.ClientID %>").focus();
-
           }
-
        });
-
     });
-
 </script>
 
 {% endhighlight %}

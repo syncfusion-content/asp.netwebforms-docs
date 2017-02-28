@@ -15,7 +15,7 @@ This section explains briefly how to create a ToggleButton in your application w
 
 Essential ASP.NET ToggleButton control contains built-in features like click and different display options. You can create the ToggleButton control by using the HTML helper as follows.
 
-You can also create a WEB Project and add necessary assemblies, styles, and scripts to it.  Refer to the [ASP-Getting Started.](http://help.syncfusion.com/aspnetmvc/captcha/getting-started#create-your-first-captcha-in-aspnet-mvc)
+You can also create a WEB Project and add necessary assemblies, styles, and scripts to it.  Refer to the [ASP-Getting Started.](https://help.syncfusion.com/aspnet/getting-started)
 
 Create an aspx file and add the following code to aspx file for ejToggleButton creation.
 

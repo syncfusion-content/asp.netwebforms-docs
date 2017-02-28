@@ -11,7 +11,7 @@ documentation: ug
 
 ## ShowPreview
 
-The ColorPicker control provides live preview support for current cursor selection color and selected color. “ShowPreview” property allows you to preview the selected color in the picker or from the palette.
+The ColorPicker control provides live preview support for current cursor selection color and selected color. **“ShowPreview”** property allows you to preview the selected color in the picker or from the palette.
 
 The “ShowPreview” property is a Boolean type and its default value is true.
 
@@ -45,7 +45,7 @@ The following screenshot displays the output of the above code example
 
 ## ShowRecentColors
 
-The ColorPicker Control allows you to store the color values in custom list by using “ShowRecentColors” property. The ColorPicker keeps up to 11 colors in a custom list.  By clicking the add button, the selected color from picker or palette gets added in the recent color list.  
+The ColorPicker Control allows you to store the color values in custom list by using **“ShowRecentColors”** property. The ColorPicker keeps up to 11 colors in a custom list.  By clicking the add button, the selected color from picker or palette gets added in the recent color list.  
 
 The “ShowRecentColors” property is Boolean type and its default value is false.
 
@@ -73,7 +73,7 @@ The following screenshot displays the output of the above code example.
 
 
 
-The ColorPicker control allows you to enable or disable the opacity slider. You can achieve this by using the “EnableOpacity” property. 
+The ColorPicker control allows you to enable or disable the opacity slider. You can achieve this by using the **“EnableOpacity”** property. 
 
 The “EnableOpacity” property is Boolean type and its default value is true.
 
@@ -103,7 +103,7 @@ The following screenshot displays the output of the above code example.
 
 The Palette model consists of color values in the rows and columns order. Palette consists of predefined colors and allows you to select anyone color from it. The “Columns” property allow you to modify the number of columns in palette model. 
 
-The “Columns” property is the Number type and its default value is 10.
+The **“Columns”** property is the Number type and its default value is 10.
 
 Add the following code example to the corresponding ASPX page to render the ColorPicker control as columns.
 
@@ -135,7 +135,7 @@ The following screenshot displays the output of the above code example.
 
 #### OpacityValue
 
-The ColorPicker control allows you to change the opacity value by using the “OpacityValue“ property. The selected color opacity is adjusted by using the OpacityValue. 
+The ColorPicker control allows you to change the opacity value by using the **“OpacityValue“** property. The selected color opacity is adjusted by using the OpacityValue. 
 
 The “OpacityValue” property is the Number type and its default value is 10.
 
@@ -167,7 +167,7 @@ The following screenshot displays the output of the above code example.
 
 #### ButtonText
 
-The ColorPicker control allows you to define the text to be displayed in button elements. You can specify the text by using the “ButtonText” property. In the ColorPicker control, the popup contains two button elements “Apply” and “Cancel”.
+The ColorPicker control allows you to define the text to be displayed in button elements. You can specify the text by using the **“ButtonText”** property. In the ColorPicker control, the popup contains two button elements “Apply” and “Cancel”.
 
 To configure the ButtonText property for the button elements, use the corresponding default values listed in the following table. 
 
@@ -190,7 +190,7 @@ Cancel</td></tr>
 
 #### TooltipText
 
-The ColorPicker control consists of more number of sub controls and elements. To provide some information about each element and sub control you can use the tooltip concept and you can achieve this by using the “TooltipText” property.
+The ColorPicker control consists of more number of sub controls and elements. To provide some information about each element and sub control you can use the tooltip concept and you can achieve this by using the **“TooltipText”** property.
 
 To configure the TooltipText, use the following listed elements and its corresponding default value.
 
@@ -301,7 +301,7 @@ The following screenshot displays the output of the above code example.
 
 ### ModelType
 
-The ColorPicker allows you to define the model type to be displayed in control at initial time by using the property called “ModelType”. 
+The ColorPicker allows you to define the model type to be displayed in control at initial time by using the property called **“ModelType”**. 
 
 The “ModelType” property is Enum type and its default value is “default”.
 
@@ -360,7 +360,7 @@ The following screenshot displays the output of the above code example.
 
 #### Palette
 
-The ColorPicker allows you to define the palette type to be displayed in control at initial time by using the “palette” property. The “Palette” property is Enum type and its default value is “BasicPalette”.
+The ColorPicker allows you to define the palette type to be displayed in control at initial time by using the **“palette”** property. The “Palette” property is Enum type and its default value is “BasicPalette”.
 
 
 
@@ -391,7 +391,7 @@ The BasicPalette type rendered with predefined color values. The BasicPalette mo
 
 ##### PresetType
 
-The ColorPicker control allows you to define the preset model to be rendered initially in palette type. This can be achieved by using the “PresetType” property. Totally 12 types of presets available.
+The ColorPicker control allows you to define the preset model to be rendered initially in palette type. This can be achieved by using the **“PresetType”** property. Totally 12 types of presets available.
 
 The “PresetType” property is Enum type and its default value is “basic”.
 
@@ -480,7 +480,7 @@ The following screenshot displays the output of the above code example.
 
 ##### CustomPalette
 
-The ColorPicker control allows you to define the custom colors in the palette model by using the “Palette” property. Custom palettes are created by passing a comma delimited string of HEX values or an array of colors in “custom” property. The CustomPalette model is only applicable when you set ModelType as “Palette”.
+The ColorPicker control allows you to define the custom colors in the palette model by using the **“Palette”** property. Custom palettes are created by passing a comma delimited string of HEX values or an array of colors in “custom” property. The CustomPalette model is only applicable when you set ModelType as “Palette”.
 
 The CustomPalette property dependent property of “Palette” and “ModelType” property.
 
@@ -506,7 +506,7 @@ The following screenshot displays the output of the above code example.
 
 ### DisplayInline
 
-The ColorPicker control allows to embed the popup in the order of DOM element flow by using the property called “DisplayInline”. By using DisplayInline property to make ColorPicker popup always in visible state. Also associate ColorPicker with <div> element instead of input. 
+The ColorPicker control allows to embed the popup in the order of DOM element flow by using the property called **“DisplayInline”**. By using DisplayInline property to make ColorPicker popup always in visible state. Also associate ColorPicker with <div> element instead of input. 
 
 The “DisplayInline” property is Boolean type and its default value is false. The following steps explain you how to get the ColorPicker popup in DisplayInline state.
 
@@ -610,7 +610,7 @@ The following screenshot displays the output of the above code example.
 
 ### CustomCss
 
-The ColorPicker control also allows you to customize its appearance by using the user-defined CSS and custom skin options such as colors and backgrounds. To apply custom themes, you have a property called CssClass. CssClass property sets the root class for ColorPicker theme.
+The ColorPicker control also allows you to customize its appearance by using the user-defined CSS and custom skin options such as colors and backgrounds. To apply custom themes, you have a property called **CssClass**. CssClass property sets the root class for ColorPicker theme.
 
 By using this CssClass, you can override the existing styles under the theme style sheet. The theme style sheet applies theme-specific styles like colors and backgrounds. In the following example, the value of CssClass property is set as “Light-Blue”. Light-Blue is added as the root class to ColorPicker control at the runtime. From this root class, you can customize the ColorPicker control theme.
 

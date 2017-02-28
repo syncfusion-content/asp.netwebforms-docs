@@ -9,7 +9,7 @@ documentation: ug
 
 ## RTL Support
 
-In some cases, where you want to display the content in Right to Left direction, you can use RTL support by using the EnableRTL property. In RTL mode, when you have more than one content (image/text, image/image) in button, then these content are aligned in right to left format. With this property enabled, the Groupbutton items are rendered in reverse order.
+In some cases, where you want to display the content in Right to Left direction, you can use RTL support by using the **EnableRTL property**. In RTL mode, when you have more than one content (image/text, image/image) in button, then these content are aligned in right to left format. With this property enabled, the Groupbutton items are rendered in reverse order.
 
 In the ASPX page, add the following Groupbutton to configure the Items with Right to left alignment
 

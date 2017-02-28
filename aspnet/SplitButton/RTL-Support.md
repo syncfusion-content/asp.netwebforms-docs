@@ -9,7 +9,7 @@ documentation: ug
 
 # RTL Support
 
-In some cases, it is necessary to use right to left alignment. RTL support is provided by using EnableRTL property. In RTL mode, when there is more than one content (image/text, image/image) in the Split Button, then the content is aligned in right to left format. For example, when text is in left and image is in right position, after applying right to left alignment these positions are interchanged.
+In some cases, it is necessary to use right to left alignment. RTL support is provided by using **EnableRTL property**. In RTL mode, when there is more than one content (image/text, image/image) in the Split Button, then the content is aligned in right to left format. For example, when text is in left and image is in right position, after applying right to left alignment these positions are interchanged.
 
 The following step explains the details about rendering the Button with Right to left alignment support.
 

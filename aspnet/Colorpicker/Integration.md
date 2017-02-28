@@ -30,98 +30,46 @@ The following code example explains how to bind data to the ColorPicker control 
 
 {% highlight html %}
 
-
-
-
-
-<script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
-
-<script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/ej.unobtrusive.min.js"></script>
-
-<script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/ej.widget.angular.min.js"></script>
-
-
-
-<div class="content-container-fluid" ng-app="PickerCtrl">
-
-    <div class="row" style="width: 100%" ng-controller="ColorPickerCtrl">
-
-        <div class="cols-sample-area" style="width: 100%">
-
-            <div class="frame">
-
-                <div id="control">
-
-                    <div class="element" style="margin-left: 45px;">
-
-                        <input id="picker" ej-colorpicker e-value="colorValue" e-modeltype="palette" />
-
+    <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/ej.unobtrusive.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/ej.widget.angular.min.js"></script>
+    <div class="content-container-fluid" ng-app="PickerCtrl">
+        <div class="row" style="width: 100%" ng-controller="ColorPickerCtrl">
+            <div class="cols-sample-area" style="width: 100%">
+                <div class="frame">
+                    <div id="control">
+                        <div class="element" style="margin-left: 45px;">
+                            <input id="picker" ej-colorpicker e-value="colorValue" e-modeltype="palette" />
+                        </div>
+                        <div class="element" style="margin-left: 234px">
+                            <input id="custom" ej-colorpicker e-value="colorValue" e-modeltype="picker" />
+                        </div>
+                        <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px; margin-left: 45px;">Note:Two Way Angular Support</span></h6>
                     </div>
-
-                    <div class="element" style="margin-left: 234px">
-
-                        <input id="custom" ej-colorpicker e-value="colorValue" e-modeltype="picker" />
-
-                    </div>
-
-                    <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px; margin-left: 45px;">Note:Two Way Angular Support</span></h6>
-
                 </div>
-
             </div>
-
-        </div>
-
-
-
-        <script>
-
+            <script>
             angular.module('PickerCtrl', ['ejangular'])
-
               .controller('ColorPickerCtrl', function ($scope) {
-
                   $scope.colorValue = "#278787";
-
               });
-
-        </script>
-
+            </script>
+        </div>
     </div>
+    <style>
+        .element {
+            display: inline-block;
+        }
 
-</div>
+        .frame {
+            width: 457px;
+            border: 0px;
+        }
 
-
-
-<style>
-
-    .element {
-
-        display: inline-block;
-
-    }
-
-
-
-    .frame {
-
-        width: 457px;
-
-        border: 0px;
-
-    }
-
-
-
-    #control {
-
-        width: 600px;
-
-    }
-
-</style>
-
-
-
+        #control {
+            width: 600px;
+        }
+    </style>
 
 
 {% endhighlight %}
@@ -155,97 +103,48 @@ The following code example explains how you can bind data to the ColorPicker con
 
 {% highlight html %}
 
-
-
-
-
-<script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>
-
-<script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/ej.unobtrusive.min.js "> </script>
-
-<script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/ej.widget.ko.min.js"></script>
-
-
-
-<div class="content-container-fluid">
-
-    <div class="row" style="width: 100%">
-
-        <div class="cols-sample-area" style="width: 100%">
-
-            <div class="frame" style="width: 420px">
-
-                <div id="control" style="float: left; width: 70%; margin-left: 10px">
-
-                    <input id="colorpick" data-bind="ejColorPicker: { value: value, modelType: palette }" />
-
-                    <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px;">Note:Two Way Knockout Support</span></h6>
-
+    <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/ej.unobtrusive.min.js "> </script>
+    <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/ej.widget.ko.min.js"></script>
+    <div class="content-container-fluid">
+        <div class="row" style="width: 100%">
+            <div class="cols-sample-area" style="width: 100%">
+                <div class="frame" style="width: 420px">
+                    <div id="control" style="float: left; width: 70%; margin-left: 10px">
+                        <input id="colorpick" data-bind="ejColorPicker: { value: value, modelType: palette }" />
+                        <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px;">Note:Two Way Knockout Support</span></h6>
+                    </div>
+                    <div id="binding" style="float: left; width: 23%">
+                        <input id="colorpick1" data-bind="ejColorPicker: { value: value, modelType: picker }" />
+                    </div>
                 </div>
-
-                <div id="binding" style="float: left; width: 23%">
-
-                    <input id="colorpick1" data-bind="ejColorPicker: { value: value, modelType: picker }" />
-
-                </div>
-
             </div>
-
         </div>
-
     </div>
-
-</div>
-
-<script>
-
+    <script>
     window.viewModel = {
-
         value: ko.observable("#278787"),
-
         palette: ko.observable("palette"),
-
         picker: ko.observable("picker")
-
     };
-
     $(function () {
-
         ko.applyBindings(viewModel);
-
     });
+    </script>
+    <style>
+        .element {
+            display: inline-block;
+        }
 
-</script>
+        .frame {
+            width: 600px;
+            border: 0px;
+        }
 
-<style>
-
-    .element {
-
-        display: inline-block;
-
-    }
-
-
-
-    .frame {
-
-        width: 600px;
-
-        border: 0px;
-
-    }
-
-
-
-    #control {
-
-        width: 600px;
-
-    }
-
-</style>
-
-
+        #control {
+            width: 600px;
+        }
+    </style>
 
 {% endhighlight %}
 
