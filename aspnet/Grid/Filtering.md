@@ -896,3 +896,145 @@ List of Column type and Filter operators
         </tr>
     </table>
 
+     ## FilterBar Template
+
+Usually enabling allowFiltering, will create default textbox in Grid FilterBar. So, Using [`filterBarTemplate`] property of `columns` we can render any other controls like autoComplete, DropDownList etc to filter the grid data for the particular column.  
+It has three functions. They are    
+
+1. `create` - It is used to create the control at time of initialize.
+2. `read` - It is used to read the input value at end of typing.
+3. `write` - It is used to assign the value to control at time of filtering.
+
+
+The following code example describes the above behavior.
+{% tabs %}
+
+{% highlight html %}
+    
+        <ej:Grid ID="OrdersGrid" runat="server" AllowFiltering="True" AllowPaging="True">
+            <Columns>
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" >
+                    <FilterBarTemplate Create="autoComplete_create" Write="autoComplete_write" Read ="autoComplete_read" />
+                </ej:Column>
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75">
+                    <FilterBarTemplate Write="dropdown_write" Read="dropdown_read" />
+                </ej:Column>
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}">
+                    <FilterBarTemplate Write="numeric_write" Read ="numeric_read" />
+                </ej:Column>
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="110" />                              
+            </Columns>            
+         </ej:Grid>
+{% endhighlight  %}
+
+{% highlight js %}
+
+     <script type="text/javascript">
+      
+        function autoComplete_create(args) {
+            return "<input>"
+        }
+
+        function autoComplete_write(args) {
+			var gridObj = $('#<%= OrdersGrid.ClientID %>').data("ejGrid");
+            var data = ej.DataManager(gridObj.model.dataSource).executeLocal(new ej.Query().select("CustomerID"));
+            args.element.ejAutocomplete({ width: "100%", dataSource: data, enableDistinct: true, focusOut: ej.proxy(args.column.filterBarTemplate.read, this, args) });
+        }
+
+        function autoComplete_read(args) {
+            this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)
+        }
+
+        function dropdown_write(args) {
+            var data = [{ text: "clear", value: "clear" }, { text: "1", value: 1 }, { text: "2", value: 2 }, { text: "3", value: 3 }, { text: "4", value: 4 },
+                                                            { text: "5", value: 5 }, { text: "6", value: 6 }, { text: "7", value: 7 }, { text: "8", value: 8 }, { text: "9", value: 9 }
+            ]
+            args.element.ejDropDownList({ width: "100%", dataSource: data, change: ej.proxy(args.column.filterBarTemplate.read, this, args) })
+        }
+
+        function dropdown_read(args) {
+            if (args.element.val() == "clear") {
+                this.clearFiltering(args.column.field);
+                args.element.val("")
+            }
+            this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)
+        }
+        function numeric_write(args) {
+            args.element.ejNumericTextbox({ width: "100%",decimalPlaces: 2, focusOut: ej.proxy(args.column.filterBarTemplate.read, this, args) });
+        }
+
+        function numeric_read(args) {
+            this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)
+        }
+    </script>
+{% endhighlight %}
+
+{% highlight c# %}
+namespace WebSampleBrowser.Grid
+  {
+    public partial class DefaultFiltering : System.Web.UI.Page
+     {
+        List<Orders> order = new List<Orders>();
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            BindDataSource();
+        }
+
+        private void BindDataSource()
+        {
+            int orderId = 10000;
+            int empId = 0;
+            for (int i = 1; i < 9; i++)
+            {
+                order.Add(new Orders(orderId + 1, "VINET", empId + 1, 32.38, new DateTime(2014, 12, 25), "Reims"));
+                order.Add(new Orders(orderId + 2, "TOMSP", empId + 2, 11.61, new DateTime(2014, 12, 21), "Munster"));
+                order.Add(new Orders(orderId + 3, "ANATER", empId + 3, 45.34, new DateTime(2014, 10, 18), "Berlin"));
+                order.Add(new Orders(orderId + 4, "ALFKI", empId + 4, 37.28, new DateTime(2014, 11, 23), "Mexico"));
+                order.Add(new Orders(orderId + 5, "FRGYE", empId + 5, 67.00, new DateTime(2014, 05, 05), "Colchester"));
+                order.Add(new Orders(orderId + 6, "JGERT", empId + 6, 23.32, new DateTime(2014, 10, 18), "Newyork"));
+                orderId += 6;
+                empId += 6;
+            }
+            this.OrdersGrid.DataSource = order;
+            this.OrdersGrid.DataBind();
+        }
+
+        [Serializable]
+        public class Orders
+        {
+           public Orders()
+            {
+
+            }
+            public Orders(int orderId, string customerId, int empId, double freight, DateTime orderDate, string shipCity)
+            {
+                this.OrderID = orderId;
+                this.CustomerID = customerId;
+                this.EmployeeID = empId;
+                this.Freight = freight;
+                this.OrderDate = orderDate;
+                this.ShipCity = shipCity;
+            }
+            public int OrderID { get; set; }
+            public string CustomerID { get; set; }
+            public int EmployeeID { get; set; }
+            public double Freight { get; set; }
+            public DateTime OrderDate { get; set; }
+            public string ShipCity { get; set; }
+        }
+     }
+ }
+{% endhighlight  %}
+    
+{% endtabs %}
+
+The following output is displayed as a result of the above code example.
+
+![](filtering_images/filtering_img11.png)
+{:caption}
+FilterBar Template
+
+![](filtering_images/filtering_img12.png)
+{:caption}
+After Filtering
