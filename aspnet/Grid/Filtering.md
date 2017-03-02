@@ -896,7 +896,7 @@ List of Column type and Filter operators
         </tr>
     </table>
 
-     ## FilterBar Template
+## FilterBar Template
 
 Usually enabling allowFiltering, will create default textbox in Grid FilterBar. So, Using [`filterBarTemplate`] property of `columns` we can render any other controls like autoComplete, DropDownList etc to filter the grid data for the particular column.  
 It has three functions. They are    
@@ -923,7 +923,8 @@ The following code example describes the above behavior.
                 <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}">
                     <FilterBarTemplate Write="numeric_write" Read ="numeric_read" />
                 </ej:Column>
-                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="110" />                              
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="110" />  
+                <ej:column Field="Verified" HeaderText="Verified" width="75"/>                            
             </Columns>            
          </ej:Grid>
 {% endhighlight  %}
