@@ -63,3 +63,5 @@ N> The SaveUrl and RemoveUrl are the same as above (see Save File Action and Rem
 The following screenshot displays the output when multiple files of different file types are selected and the denied file extensions are not uploaded.
 
 ![](Restricting-uploading-files-based-on-its-extension_images/Restricting-uploading-files-based-on-its-extension_img2.png)
+
+N> When **ExtensionsDeny** and **ExtensionsAllow** properties have same file extension, the extension will be allowed.
