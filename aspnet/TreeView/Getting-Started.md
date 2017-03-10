@@ -186,7 +186,7 @@ In the code behind page, specify the remote data source URL and query in corresp
         {
             protected void Page_Load(object sender, EventArgs e)
             {
-                this.treeview.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/";
+                this.treeview.DataSource = "//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/";
     
                 this.treeview.Query = "ej.Query().from('Customers').take(3)";
             }
