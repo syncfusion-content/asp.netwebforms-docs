@@ -359,7 +359,7 @@ In the code behind page, specify the remote data source URL and query, which is 
     
             protected void Page_Load(object sender, EventArgs e)
             {
-                this.treeview.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/"; 
+                this.treeview.DataSource = "//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/"; 
                 this.treeview.Query = "ej.Query().from('Customers').take(3)"; 
             }
             
@@ -926,9 +926,9 @@ Refer below code example to load data on demand from remote data source.
     
 <ej:TreeView runat="server" ID="tree" LoadOnDemand="true" DataIdField="CategoryID" DataTextField="CategoryName"
     DataHasChildField="CategoryName" Query="ej.Query().from('Categories').select('CategoryID,CategoryName').take(3)">
-    <DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/" />
+    <DataManager URL="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/" />
     <Child TableName="Products" ParentId="CategoryID" Text="ProductName">
-        <DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/" />
+        <DataManager URL="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/" />
     </Child>
 </ej:TreeView>
         
