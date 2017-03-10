@@ -45,11 +45,11 @@ To bind local data to the Spreadsheet, you can assign a List to the worksheet [`
 
             for (int i = 1; i <= 40; i++)
             {
-                order.Add(new Orders(code + 1, "TOMSP", i + 0, "M�nster", "Toms Spezialit�ten", "Germany"));
+                order.Add(new Orders(code + 1, "TOMSP", i + 0, "Munster", "Toms Spezialitaten", "Germany"));
                 order.Add(new Orders(code + 2, "HANAR", i + 2, "Rio de Janeiro", "Hanari Carnes", "Brazil"));
                 order.Add(new Orders(code + 3, "VICTE", i + 1, "Lyon", "Victuailles en stock", "France"));
                 order.Add(new Orders(code + 4, "VINET", i + 3, "Reims", "Vins et alcools Chevalier", "France"));
-                order.Add(new Orders(code + 5, "SUPRD", i + 4, "Charleroi", "Supr�mes d�lices", "Belgium"));
+                order.Add(new Orders(code + 5, "SUPRD", i + 4, "Charleroi", "Supremes delices", "Belgium"));
                 code += 5;
             }
             this.FlatSpreadsheet.Sheets.Add(new Syncfusion.JavaScript.Models.Sheet()
