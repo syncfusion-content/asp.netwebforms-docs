@@ -898,8 +898,7 @@ List of Column type and Filter operators
 
 ## FilterBar Template
 
-Usually enabling allowFiltering, will create default textbox in Grid FilterBar. So, Using [`filterBarTemplate`] property of `columns` we can render any other controls like autoComplete, DropDownList etc in filterbar to filter.  
-It has three functions. They are    
+Usually enabling allowFiltering, will create default textbox in Grid FilterBar. So, Using [`filterBarTemplate`] property of `columns` we can render any other controls like autoComplete, DropDownList etc in filterbar to filter the grid data for the particular column.  It has three functions. They are    
 
 1. `create` - It is used to create the control at time of initialize.
 2. `read`   - It is used to read the Filter value selected.
