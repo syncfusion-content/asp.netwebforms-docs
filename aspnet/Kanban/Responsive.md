@@ -13,6 +13,10 @@ The Kanban control has support for responsive behavior based on client browserâ€
 * Mobile(<480px)
 * Desktop(>480px)
 
+You can check the image representation of touch actions from the below image.
+
+![](Responsive_images/KanbanOverlayImage.png)
+
 ## Mobile Layout
 
 If client width is less than 480px, the Kanban will render in mobile mode. In which, you can see that kanban user interface is customized and redesigned for best view in small screens.To enable responsive, `isResponsive` property should be true.
