@@ -573,7 +573,7 @@ The following code example describes the above behavior.
 {% tabs %} 
 {% highlight html %}
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
- <DataManager URL="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders"></DataManager>   
+ <DataManager URL="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/"></DataManager>   
 <Columns>
                 <ej:Column Field="OrderID" />
                 <ej:Column Field="EmployeeID" />
@@ -601,7 +601,7 @@ The following code example describes the above behavior.
 {% tabs %} 
 {% highlight html %}
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
-<DataManager URL="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders"  Adaptor="ODataV4Adaptor"></DataManager>   
+<DataManager URL="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/"  Adaptor="ODataV4Adaptor"></DataManager>   
 <Columns>
                 <ej:Column Field="OrderID" />
                 <ej:Column Field="EmployeeID" />
@@ -762,7 +762,7 @@ The following code example describes the above behavior.
 {% highlight html %}
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
-            <DataManager URL="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders"></DataManager>   
+            <DataManager URL="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/"></DataManager>   
 <Columns>
                 <ej:Column Field="OrderID" />
                 <ej:Column Field="EmployeeID" />
@@ -793,7 +793,7 @@ The following code example describes the above behavior.
 {% highlight html %}
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
-            <DataManager URL="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders" Offline="true"></DataManager>   
+            <DataManager URL="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/" Offline="true"></DataManager>   
 <Columns>
                 <ej:Column Field="OrderID" />
                 <ej:Column Field="EmployeeID" />
