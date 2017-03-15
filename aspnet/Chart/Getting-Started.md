@@ -49,10 +49,11 @@ By default, Syncfusion JavaScript source files has been included into the EJ.Web
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
     
     <!-- Essential JS UI widget -->
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
     
 {% endhighlight %}
 
+N> If you are using the Essential Studio below 13.4.0.53 version, then you need to refer **jQuery.globalize.js** script file along with the above references to render the Chart control.
 
 ## Initialize chart
 

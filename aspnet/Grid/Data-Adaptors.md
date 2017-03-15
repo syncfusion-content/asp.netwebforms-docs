@@ -167,7 +167,7 @@ The following output is displayed as a result of the above code example.
 ##  OData Adaptor
 
 OData Adaptor that is extended from `UrlAdaptor`, is used for consuming data through OData Service. 
-We have an online OData Service “http://mvc.syncfusion.com/Services/Northwnd.svc/Orders” created specifically for Syncfusion Controls
+We have an online OData Service “http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders” created specifically for Syncfusion Controls
 
 
 N> `ODataAdaptor` is the default adaptor of `DataManager` and so no need to specify adaptor when binding OData service
@@ -178,7 +178,7 @@ You can use the following code example to use OData adaptor.
 {% highlight html %}
 
      <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
-         <DataManager URL=http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/ Adaptor="ODataAdaptor></DataManager>   
+         <DataManager URL=http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/ Adaptor="ODataAdaptor></DataManager>   
            <Columns>
                 <ej:Column Field="OrderID" />
                 <ej:Column Field="EmployeeID" />
@@ -206,7 +206,7 @@ You can use the following code example to use ODataV4 adaptor.
 {% highlight html %}
 
         <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
-            <DataManager URL=http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/ Adaptor="ODataAdaptor></DataManager>   
+            <DataManager URL= http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/ Adaptor="ODataAdaptor></DataManager>   
               <Columns>
                   <ej:Column Field="OrderID" />
                   <ej:Column Field="EmployeeID" />
@@ -234,7 +234,7 @@ You can use the following code example to use WebAPI adaptor.
 {% highlight html %}
 	
         <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
-            <DataManager URL=http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/ Adaptor="WebApiAdaptor></DataManager>   
+            <DataManager URL=http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/ Adaptor="WebApiAdaptor></DataManager>   
                <Columns>
                    <ej:Column Field="OrderID" />
                    <ej:Column Field="EmployeeID" />
