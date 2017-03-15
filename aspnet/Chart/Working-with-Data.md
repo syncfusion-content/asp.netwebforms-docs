@@ -119,8 +119,8 @@ N> All the properties in EjChart supports one way AngularJS binding except inner
 <head>
     <script type="text/javascript" src="http://cdn.syncfusion.com/js/assets/external/jquery-2.1.4.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
-    <script src="https://cdn.syncfusion.com/13.3.0.7/js/web/ej.web.all.min.js"></script>
-	<script src="https://cdn.syncfusion.com/13.2.0.29/js/common/ej.widget.angular.min.js"></script>
+    <script src="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+	<script src="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js"></script>
 </head>
 <body ng-controller="Chart">    
   <div id="chartContainer" style="width:100%" ej-chart
