@@ -388,7 +388,7 @@ In the code behind page, specify the Web API data source URL and other settings 
         protected void Page_Load(object sender, EventArgs e)
         {
             DataSource treeData = new DataSource();
-            treeData.URL = "http://mvc.syncfusion.com/OdataServices/treeView/TreeViewData/GetAllData";
+            treeData.URL = "http://js.syncfusion.com/demos/ejServices/api/TreeViewData/GetAllData";
             treeData.Adaptor = AdaptorType.WebApiAdaptor.ToString();
             treeData.CrossDomain = true;
             this.treeview.DataSource = treeData;
