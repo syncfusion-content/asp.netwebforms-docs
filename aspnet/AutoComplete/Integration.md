@@ -40,7 +40,7 @@ Add the following code example to corresponding ASPX page to render AutoComplete
 
 <head runat="server">
 
-    <title>Essential Studio for JavaScript :Angular JS Support for Autocomplete</title>
+    <title>Essential Studio for JavaScript :AngularJS Support for Autocomplete</title>
 
     <link href=" http://cdn.syncfusion.com/ {{site.releaseversion}}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
@@ -78,7 +78,7 @@ Add the following code example to corresponding ASPX page to render AutoComplete
 
                     <span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px;">
 
-                        Note:Two Way Angular Support</span>
+                        Note:Two Way AngularJS Support</span>
 
                 </h6>
 
@@ -124,7 +124,7 @@ In the Script section, define the data to be bid and by using AngularJS support,
 
                     <span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px;">
 
-                        Note:Two Way Angular Support</span>
+                        Note:Two Way AngularJS Support</span>
 
                 </h6>
 
@@ -187,7 +187,7 @@ Add the following code example to corresponding ASPX page to render AutoComplete
 
 <head runat="server">
 
-    <title>Essential Studio for JavaScript :Knockout JS Support for Autocomplete</title>
+    <title>Essential Studio for JavaScript :KnockoutJS Support for Autocomplete</title>
 
     <link href=" http://cdn.syncfusion.com/ {{site.releaseversion}}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
