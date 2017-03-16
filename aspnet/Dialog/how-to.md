@@ -32,7 +32,7 @@ Initialize the Dialog widgets by configuring as below.
     <ej:Dialog ID="seconddialog" Title="Window" Width="250" runat="server">
 
         <DialogContent>
-            <p>This is a diferent Dialog</p>
+            <p>This is a different Dialog</p>
         </DialogContent>
 
         <Position XValue="300px" YValue="20px" />

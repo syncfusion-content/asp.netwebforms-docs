@@ -89,7 +89,7 @@ In an ASPX page, define the Splitter control and add the contents corresponding
 
 
 
-                        Essential Mvc Grid offers full featured a Grid control with extensive support for
+                        Essential MVC Grid offers full featured a Grid control with extensive support for
 
 
 
