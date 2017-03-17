@@ -427,7 +427,7 @@ namespace PivotGridDemo
         }
     }
     .....
-    ..... // Initialize the datasourse
+    ..... // Initialize the datasource
     .....
 }
 

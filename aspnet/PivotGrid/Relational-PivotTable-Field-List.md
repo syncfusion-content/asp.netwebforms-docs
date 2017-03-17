@@ -116,7 +116,7 @@ You can alter the report on fly through drag-and-drop operation. You can drag an
 
 ### By Drag and Drop to Grid Headers
 
-You can also drag and drop elements from fieldlist to grid headers.
+You can also drag and drop elements from field list to grid headers.
 
 ![](PivotTable-Field-List_images/HeaderDrop.png)
 
