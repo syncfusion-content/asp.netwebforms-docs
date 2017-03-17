@@ -337,6 +337,28 @@ If you want to add additional font names and sizes to font drop-down, pass the f
 
 {% endhighlight %}
 
+## Apply Font color and Background color
+
+If you want to apply font  color or background color for a selected content of RTE you can use font color and background color tools. These tools contains a color palette with basic colors along with an option called **"More colors.."** in order to choose custom colors from color picker dialog.You can apply transparent background color for selected text through **transparent** button available in background color palette.
+
+{% highlight html %}
+
+      <ej:RTE ID="RTE1" runat="server" >
+        <RTEContent>
+          Description:
+          <p> The Rich Text Editor (RTE) control is an easy to render in
+          client side. Customer easy to edit the contents and get the HTML content for
+           the displayed content. A rich text editor control provides users with a toolbar
+           that helps them to apply rich text formats to the text entered in the text
+           area. </p>
+         </RTEContent>
+            <Tools Font="fontName,fontSize,fontColor,backgroundColor">               
+            </Tools>
+        </ej:RTE>
+
+
+{% endhighlight %}
+
 ## Insert the content at cursor
 
 If you want to insert/paste the content at the current cursor position (or) to replace the selected content with some formatting, you can use pasteContent method in the editor.
