@@ -286,3 +286,25 @@ Define the CSS that will be applied to the custom tool.
 N> The CSS class that defined for custom tool is directly applies to the newly added toolbar item. 
 
 I> The custom buttons get a `insert-special-character` CSS class to allow styling, where name is the name specified in the custom tool configuration.
+
+## Types of responsive toolbar
+
+Two types of toolbar modes are available for RTE in responsive mode. This includes "inline" and "popup". Toolbar Type can be set through API [toolbarOverflowMode](https://help.syncfusion.com/api/js/ejrte#members:toolbarOverflowMode)  whose default value is "popup".
+
+{% highlight html %}
+
+    
+      <ej:RTE ID="RTE1"  runat="server" IsResponsive=true toolbarOverflowMode="inline">
+        <RTEContent>
+          Description:
+        <p> The Rich Text Editor (RTE) control is an easy to render in
+        client side. Customer easy to edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p>
+       </RTEContent>
+     </ej:RTE>
+
+{% endhighlight %}
+
+N> If you are not specifying toolbarOverflowMode, responsive RTE will be rendered with default popup toolbar.
