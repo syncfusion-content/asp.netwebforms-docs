@@ -439,7 +439,7 @@ void pivotChartPDFExport_PDFExport(object sender, Syncfusion.Pdf.PdfDocument pdf
 
 void pivotChartPDFExport_AddPDFHeaderFooter(object sender, Syncfusion.Pdf.PdfDocument pdfDoc)
 {
-    //You can add header/footer information to the pdf document.
+    //You can add header/footer information to the PDF document.
 }
 
 //Following service method needs to be added in WCF/WebAPI for PivotEngine export
@@ -464,7 +464,7 @@ void htmlHelper_PDFExport(object sender, Syncfusion.Pdf.PdfDocument pdfDoc)
 
 void htmlHelper_AddPDFHeaderFooter(object sender, Syncfusion.Pdf.PdfDocument pdfDoc)
 {
-    //You can add header/footer information to the pdf document.
+    //You can add header/footer information to the PDF document.
 }
 
 void htmlHelper_WordExport(object sender, Syncfusion.DocIO.DLS.WordDocument document)
