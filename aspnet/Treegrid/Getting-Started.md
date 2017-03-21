@@ -17,7 +17,7 @@ This section explains how to create a TreeGrid control in your application with 
 
 
 
-1. First create a new ASP.NET Web Forms project; please refer the [ASP-Getting Started documentation](http://help.syncfusion.com/js) to create new project and add necessary DLL’s and script files.
+1. First create a new ASP.NET Web Forms project; please refer the [ASP-Getting Started documentation](https://help.syncfusion.com/aspnet/getting-started) to create new project and add necessary DLL’s and script files.
 
 2. Create the Web Forms  named as default and add the following template
 
