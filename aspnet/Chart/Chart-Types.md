@@ -2024,3 +2024,122 @@ To customize the errorBar cap visibility, length, width and fill color, you can 
 {% endhighlight %}
 
 ![](Chart-Types_images/Chart-Types_img80.png)
+
+## Box and Whisker Chart 
+
+To render a Box and Whisker Chart, set the series type as **"boxandwhisker"** .Box and Whisker chart requires2 fields (x and y) to plot a segment. The feild y requires n number of data or it  should contain minimum of five values to plot a segment.
+
+{% highlight html %}
+
+
+        public partial class _Default : Page
+   {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            List<BoxPlotData> data = new List<BoxPlotData>();
+            Double[] y1 = {22,22,23,25,25,25,26,27,27,28,28,29,30,32,34,32,34,36,35,38};
+            Double[] y2 = {22,33,23,25,26,28,29,30,34,33,32,31,50};
+            Double[] y3 = {22,24,25,30,32,34,36,38,39,41,35,36,40,56};
+            Double[] y4 = {26,27,28,30,32,34,35,37,35,37,45};
+            Double[] y5 = {26,27,29,32,34,35,36,37,38,39,41,43,58 };
+            data.Add(new BoxPlotData("Development", y1));
+            data.Add(new BoxPlotData("Testing", y2));
+            data.Add(new BoxPlotData("HR", y3));
+            data.Add(new BoxPlotData("Finance", y4));
+            data.Add(new BoxPlotData("R&D", y5));
+
+            //Binding Datasource to Chart
+            this.Chart1.DataSource = data;
+            this.Chart1.DataBind();          
+
+        }
+       }
+    [Serializable]
+    public class BoxPlotData
+    {
+        public BoxPlotData(string xval,Double[] yvalue)
+        {
+            this.Xvalue = xval;
+            this.YValue1 = yvalue;
+            
+        }
+        public string Xvalue
+        {
+            get;
+            set;
+        }
+        public Double[] YValue1
+        {
+            get;
+            set;
+        }
+       
+    }
+
+
+{% endhighlight %}
+
+
+{% highlight html %}
+
+<ej:Chart ID="Chart2" runat="server"> 
+    <Series>
+        <%--Set chart type and map dataSource to series--%>
+        <ej:Series Type="BoxAndWhisker" XName="Xvalue" YName="YValue1">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+
+![](Chart-Types_images/Chart-Types_img90.png)
+
+### BoxPlotMode
+You can change the rendering mode of the  Box and Whisker series using the *BoxPlotMode* property. The default value of `BoxPlotMode` is **"exclusive"**.The other BoxPlotModes available are `inclusive` and *normal*. 
+
+{% highlight html %}
+
+<Series>
+    <ej:Series BoxPlotMode="Inclusive">            
+       </ej:Series>
+</Series> 
+
+{% endhighlight %}
+
+### ShowMedian
+
+Box and Whisker *showMedian* property is used to show the box and whisker average value. The default value of showMedian is **"false"**.  
+
+{% highlight html %}
+
+<Series>
+      <ej:Series ShowMedian="true">            
+       </ej:Series>
+</Series>
+
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img91.png)
+
+###  Customize the Outlier
+
+Outlier symbol, width and height can be customized using outlierSettings through **outlierSettings** property. By default Outlier symbol is displayed as circle with a height and width of 6 pixels.
+
+{% highlight html %}
+
+<Series>
+      <ej:Series>
+            <OutlierSettings Shape = “Triangle”>
+                <Size Height="10" Width="10" />
+            </OutlierSettings>            
+       </ej:Series>
+</Series>
+
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img92.png)
+
+[Click](http://asp.syncfusion.com/demos/web/chart/boxplot.aspx) here to view the Box and Whisker Chart online demo sample.
