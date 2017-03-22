@@ -2027,7 +2027,7 @@ To customize the errorBar cap visibility, length, width and fill color, you can 
 
 ## Box and Whisker Chart 
 
-To render a Box and Whisker Chart, set the series type as **"boxandwhisker"** .Box and Whisker chart requires2 fields (x and y) to plot a segment. The feild y requires n number of data or it  should contain minimum of five values to plot a segment.
+To render a Box and Whisker Chart, set the series type as **boxandwhisker** .Box and Whisker chart requires2 fields (x and y) to plot a segment. The feild y requires n number of data or it  should contain minimum of five values to plot a segment.
 
 {% highlight html %}
 
@@ -2096,7 +2096,7 @@ To render a Box and Whisker Chart, set the series type as **"boxandwhisker"** .B
 ![](Chart-Types_images/Chart-Types_img90.png)
 
 ### BoxPlotMode
-You can change the rendering mode of the  Box and Whisker series using the *BoxPlotMode* property. The default value of `BoxPlotMode` is **"exclusive"**.The other BoxPlotModes available are `inclusive` and *normal*. 
+You can change the rendering mode of the  Box and Whisker series using the *BoxPlotMode* property. The default value of `BoxPlotMode` is **"exclusive"**.The other BoxPlotModes available are `inclusive` and `normal`. 
 
 {% highlight html %}
 
@@ -2109,7 +2109,7 @@ You can change the rendering mode of the  Box and Whisker series using the *BoxP
 
 ### ShowMedian
 
-Box and Whisker *showMedian* property is used to show the box and whisker average value. The default value of showMedian is **"false"**.  
+Box and Whisker *showMedian* property is used to show the box and whisker average value. The default value of showMedian is **false**.  
 
 {% highlight html %}
 
