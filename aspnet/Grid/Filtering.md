@@ -975,7 +975,6 @@ namespace WebSampleBrowser.Grid
   {
     public partial class DefaultFiltering : System.Web.UI.Page
      {
-        List<Orders> order = new List<Orders>();
         protected void Page_Load(object sender, EventArgs e)
         {
            var data = new NorthWndDataContext().Orders.ToList();
