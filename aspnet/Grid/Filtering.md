@@ -910,7 +910,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-        <ej:Grid ID="OrdersGrid" runat="server" AllowFiltering="True" AllowPaging="True">
+        <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowPaging="True">
             <Columns>
                 <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
                 <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" >
@@ -937,7 +937,7 @@ The following code example describes the above behavior.
         }
 
         function autoComplete_write(args) {
-			var gridObj = $('#<%= OrdersGrid.ClientID %>').data("ejGrid");
+			var gridObj = $('#<%= FlatGrid.ClientID %>').data("ejGrid");
             var data = ej.DataManager(gridObj.model.dataSource).executeLocal(new ej.Query().select("CustomerID"));
             args.element.ejAutocomplete({ width: "100%", dataSource: data, enableDistinct: true, focusOut: ej.proxy(args.column.filterBarTemplate.read, this, args) });
         }
@@ -978,50 +978,9 @@ namespace WebSampleBrowser.Grid
         List<Orders> order = new List<Orders>();
         protected void Page_Load(object sender, EventArgs e)
         {
-            BindDataSource();
-        }
-
-        private void BindDataSource()
-        {
-            int orderId = 10000;
-            int empId = 0;
-            for (int i = 1; i < 9; i++)
-            {
-                order.Add(new Orders(orderId + 1, "VINET", empId + 1, 32.38, new DateTime(2014, 12, 25), "Reims"));
-                order.Add(new Orders(orderId + 2, "TOMSP", empId + 2, 11.61, new DateTime(2014, 12, 21), "Munster"));
-                order.Add(new Orders(orderId + 3, "ANATER", empId + 3, 45.34, new DateTime(2014, 10, 18), "Berlin"));
-                order.Add(new Orders(orderId + 4, "ALFKI", empId + 4, 37.28, new DateTime(2014, 11, 23), "Mexico"));
-                order.Add(new Orders(orderId + 5, "FRGYE", empId + 5, 67.00, new DateTime(2014, 05, 05), "Colchester"));
-                order.Add(new Orders(orderId + 6, "JGERT", empId + 6, 23.32, new DateTime(2014, 10, 18), "Newyork"));
-                orderId += 6;
-                empId += 6;
-            }
-            this.OrdersGrid.DataSource = order;
-            this.OrdersGrid.DataBind();
-        }
-
-        [Serializable]
-        public class Orders
-        {
-           public Orders()
-            {
-
-            }
-            public Orders(int orderId, string customerId, int empId, double freight, DateTime orderDate, string shipCity)
-            {
-                this.OrderID = orderId;
-                this.CustomerID = customerId;
-                this.EmployeeID = empId;
-                this.Freight = freight;
-                this.OrderDate = orderDate;
-                this.ShipCity = shipCity;
-            }
-            public int OrderID { get; set; }
-            public string CustomerID { get; set; }
-            public int EmployeeID { get; set; }
-            public double Freight { get; set; }
-            public DateTime OrderDate { get; set; }
-            public string ShipCity { get; set; }
+           var data = new NorthWndDataContext().Orders.ToList();
+            FlatGrid.DataSource = data;
+            FlatGrid.DataBind();
         }
      }
  }
