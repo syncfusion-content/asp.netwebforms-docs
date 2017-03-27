@@ -11,7 +11,7 @@ documentation: ug
 
 ## getValue
 
-The getValue() method in the ColorPicker returns the hexadecimal value.
+The **getValue()** method in the ColorPicker returns the hexadecimal value.
 
 Add the following code example to the corresponding ASPX page to render the ColorPicker control.
 
@@ -57,7 +57,7 @@ Add the following code in the script section.
 
 ## setValue
 
-The setValue() method in ColorPicker is used to set the color value. The given value is hexadecimal form.
+The **setValue()** method in ColorPicker is used to set the color value. The given value is hexadecimal form.
 
 Add the following code example to the corresponding ASPX page to render the ColorPicker control
 
@@ -103,7 +103,7 @@ Add the following code in the script section.
 
 ## getColor
 
-The getColor() method in ColorPicker control returns the color value in r,g,b form.
+The **getColor()** method in ColorPicker control returns the color value in r,g,b form.
 
 Add the following code example to the corresponding ASPX page to render the ColorPicker control
 

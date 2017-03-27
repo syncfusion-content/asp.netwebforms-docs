@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly how to create a DateTimePicker in your application with the ASP.NET.
+This section explains briefly how to create a **DateTimePicker** in your application with the ASP.NET.
 
 ## Create your first DateTimePicker in ASP.NET	
 
@@ -23,7 +23,7 @@ The following screenshot illustrates the functionality of a DateTimePicker with 
 
 ### Create DateTimePicker 
 
-You can create an ASP.NET Project and add necessary assemblies and scripts with the help of the given [ASP-Getting Started](http://help.syncfusion.com/aspnetmvc/datetimepicker/getting-started) Documentation.
+You can create an ASP.NET Project and add necessary assemblies and scripts with the help of the given [ASP-Getting Started](https://help.syncfusion.com/aspnet/getting-started) Documentation.
 
 
 
@@ -70,15 +70,10 @@ Add the following styles to show the DateTimePicker control in a horizontal orde
 {% highlight css %}
 
         .control
-
         {
-
             margin: 0 auto;
-
             width: 210px;
-
         }
-
 
 
 {% endhighlight %}
@@ -93,7 +88,7 @@ The following screenshot displays a DateTimePicker control.
 
 ### Set the Min and Max Date with Time Interval
 
-In a real-time appointment scenario, the appointment is open only for a limited number of days. You have to select a date and time within the given range. This can be achieved by using the properties MinDateTime and MaxDateTime that enable the specified date range in the DateTimePicker control.
+In a real-time appointment scenario, the appointment is open only for a limited number of days. You have to select a date and time within the given range. This can be achieved by using the properties **MinDateTime** and **MaxDateTime** that enable the specified date range in the DateTimePicker control.
 
 
 

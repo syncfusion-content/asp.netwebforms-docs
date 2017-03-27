@@ -41,7 +41,7 @@ SaveButton</td><td>
 Save</td></tr>
 <tr>
 <td>
-OkButton</td><td>
+OKButton</td><td>
 OK</td></tr>
 <tr>
 <td>
@@ -55,14 +55,6 @@ Details of</td></tr>
 <td>
 AddFormTitle</td><td>
 Add New Record</td></tr>
-<tr>
-<td>
-Notactionkeyalert</td><td>
-This Key-Combination is not available </td></tr>
-<tr>
-<td>
-Keyconfigalerttext</td><td>
-This Key-Combination has already been assigned to</td></tr>
 <tr>
 <td>
 GroupCaptionFormat</td><td>
@@ -560,7 +552,7 @@ PredicateAnd</td><td>
 AND</td></tr>
 <tr>
 <td>
-Ok</td><td>
+OK</td><td>
 OK</td></tr>
 <tr>
 <td>
@@ -770,6 +762,7 @@ ej.ExcelFilter.Locale["de-DE"] = {
 
 ![](Localization_images/Localization_img2.png)
 
+I> We have uploaded the predefined language packs for some commonly used cultures in [`this`](https://github.com/syncfusion/ej-global/tree/master/l10n) github location. Refer to the github location for getting the predefined language packs for the corresponding culture. The culture file has localized texts for all the Syncfusion controls.
 
 ## Globalization
 

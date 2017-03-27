@@ -11,7 +11,7 @@ documentation: ug
 
 ## Radio Button ID
 
-Radio Button ID is not shown in the user interface. Here ID denotes the ID attribute of the root element of RadioButton control. This ID value is unique. You can give ID through element and through the ID property. When you use two IDs for a single radio button at initialization, the element ID is considered.
+Radio Button ID is not shown in the user interface. Here ID denotes the ID attribute of the root element of RadioButton control. This ID value is unique. You can give ID through element and through the **ID property**. When you use two IDs for a single radio button at initialization, the element ID is considered.
 
 Set ID for RadioButton control as follows.
 
@@ -31,7 +31,7 @@ Set ID for RadioButton control as follows.
 
 ### Radio Button Prefix id
 
-Id prefix value is appended to id value. It is used to mention the prefix for the wrapper’s id attribute. When you assign a value for IdPrefix property, the older prefix id gets replaced by the new prefix id. 
+Id prefix value is appended to id value. It is used to mention the prefix for the wrapper’s id attribute. When you assign a value for **IdPrefix property**, the older prefix id gets replaced by the new prefix id. 
 
 Setting a new prefix id for RadioButton control is as follows.
 
@@ -63,7 +63,7 @@ The Name attribute is also used to identify form data after it has been submitte
 
 The Value setting defines what can be submitted when checked.
 
-For Radio Buttons, the contents of the value property do not appear in the user interface. The Value property only has meaning when submitting a form. If a radio button is in the checked state when the form is submitted, the name of the Radio button is sent along with the value of the value property, if the radio button is not checked, no information is sent.
+For Radio Buttons, the contents of the **value property** do not appear in the user interface. The Value property only has meaning when submitting a form. If a radio button is in the checked state when the form is submitted, the name of the Radio button is sent along with the value of the value property, if the radio button is not checked, no information is sent.
 
 To identify, on the server side, which one was checked, give different values for radio buttons in the same group, 
 

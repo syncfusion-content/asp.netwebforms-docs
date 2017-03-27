@@ -12,7 +12,7 @@ documentation: ug
 
 To get start with The EJWEB DatePicker, create a new web application and add the required assemblies in references and then refer the below specified dependent CSS file as well as scripts
 
-To create a web application and to add necessary assemblies you can use the help of the given [ASP-Getting Started](http://help.syncfusion.com/aspnetmvc/getting-started) documentation.
+To create a web application and to add necessary assemblies you can use the help of the given [ASP-Getting Started](https://help.syncfusion.com/aspnet/getting-started) documentation.
 
 CSS file
 

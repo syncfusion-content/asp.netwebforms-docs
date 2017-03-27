@@ -106,7 +106,7 @@ private PivotReport BindDefaultData()
 
 ### Server Mode
 
- Olap server mode supports the following number formats in addition to the above mentioned formats. 
+ OLAP server mode supports the following number formats in addition to the above mentioned formats. 
 * General
 * RoundTrip
 * FixedPoint
