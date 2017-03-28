@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding
 
-**Local Data Binding**
+### Local Data Binding
 
 **Essential Studio Web ASP ListView** provides support for **Data Binding**. **Data Binding** provides a simple and consistent way for applications to present and interact with data. Elements can be bounded to data from a variety of data sources. In local data binding, the data source is written inside the program. Then it is handled by the **ListView** control. **DataSource** is used to get the **data source** that holds the list items.
 
@@ -86,7 +86,66 @@ Run the code to get the following output
 
 ![](Data-Binding_images/Data-Binding_img1.png) 
 
-**FieldSettings**
+## Remote Data Binding
+
+**Essential Studio Web ASP ListView** provides support for **Remote Data Binding**.
+
+### OData
+
+OData is a standardized protocol for creating and consuming data. You can provide the [OData service](http://www.odata.org/) URL directly to the Datasource URL property or can give it in the DataManager.
+
+{% highlight html %}
+
+  <ej:ListView ID="List" runat="server" ShowHeader="false" Width="400" Height="450" Query="ej.Query().from('Customers').take(10)" DataTextField="CustomerID" >
+                <DataManager URL="http://js.syncfusion.com/ejservices/Wcf/Northwind.svc/" CrossDomain="true" />           
+            </ej:ListView>
+
+{% endhighlight %}
+
+
+Run the code to get the following output
+
+
+![](Data-Binding_images/odata_img1.png)
+
+### OData4
+
+ODataV4Adaptor is used for consuming data from OData V4 Service. To consume OData service, set the service link to the Url property and set adaptor type as **ODataAdaptor** to the Adaptor Property of DataManager and then you can assign it to ListView **DataSource**.
+
+
+
+{% highlight html %}
+
+   <ej:ListView ID="ListView1" runat="server"  Width="400" Height="450" Query="ej.Query()" DataTextField="RegionDescription" >
+                <DataManager URL="http://services.odata.org/V4/Northwind/Northwind.svc/Regions/" Adaptor="ODataV4Adaptor" CrossDomain="true" />           
+            </ej:ListView>
+
+{% endhighlight %}
+
+
+Run the code to get the following output.
+
+![](Data-Binding_images/odata4_img1.png)
+
+### WebAPI Adaptor
+
+WebAPI Adaptor that is extended from ODataAdaptor, is used for consuming data from WebApi Service.To consume Web API service, set the service link to the Url property and set the adaptor type as **WebApiAdaptor** to the Adaptor Property of ListView **DataManager**.
+
+You can use the following code example to use WebAPI adaptor.
+
+{% highlight html %}
+
+<ej:ListView ID="ListView1" runat="server"  Width="400" Height="450" Query="ej.Query().from('Customers').take(10)" DataTextField="CompanyName" >
+                <DataManager URL="http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/" Adaptor="WebApiAdaptor" CrossDomain="true" />           
+            </ej:ListView>
+{% endhighlight %}
+
+Run the code to get the following output.
+
+![](Data-Binding_images/webapiadaptor_img1.png)
+
+
+## FieldSettings
 
 The `FieldSettings` property is used to map the **DataSource** field with the list item fields. In addition to the list [item specific properties](/aspnet/listview/grouped-list), the following fields are available while mapping.
 
