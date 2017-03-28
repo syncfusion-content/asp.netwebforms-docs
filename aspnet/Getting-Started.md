@@ -56,6 +56,8 @@ You just need to drag the “ScriptManager” from the toolbox under the “AJAX
      
 {% endhighlight %}
 
+N> Refer to [Embeded Resources](https://help.syncfusion.com/aspnet/embeded-resources) section for more information on automatically loading script files from assemblies
+
 ## Configuring Syncfusion NuGet Packages in Visual Studio 
 
 This topic explains how to add the Syncfusion ASP.NET Web controls into the new ASP.NET Web Forms application by making use of Syncfusion NuGet Packages. 
