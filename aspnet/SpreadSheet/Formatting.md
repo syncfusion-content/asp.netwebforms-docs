@@ -321,13 +321,13 @@ Clear option is used to clear cell contents, formats or any attached comments fr
 To clear content, format, comment, hyperlink etc. from a cell or range of cells, use clear all option in Spreadsheet. Use [`clearAll`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:clearall "clearAll") method to clear cells via code.
 
 #### Clear Formats
-To clear [`formats`](https://help.syncfusion.com/js/spreadsheet/formatting, "formats") in a cell or range of cells use clear formats option in Spreadsheet. Use [`clearAllFormat`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:clearallformat "clearAllFormat") method to clear formats via code.
+To clear [`formats`](https://help.syncfusion.com/js/spreadsheet/formatting "formats") in a cell or range of cells use clear formats option in Spreadsheet. Use [`clearAllFormat`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:clearallformat "clearAllFormat") method to clear formats via code.
 
 #### Clear Contents
 To clear contents in a cell or range of cells use clear contents option in Spreadsheet. Use [`clearContents`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:clearcontents "clearContents") method to clear contents via code.
 
 #### Clear Comments
-To clear [`comment`](https://help.syncfusion.com/js/spreadsheet/cell-ranges#comment "comments") in a cell or range of cells use clear comments option in Spreadsheet. Use `clearComments` method to clear comments via code.
+To clear [`comment`](https://help.syncfusion.com/js/spreadsheet/cell-range#comment "comments") in a cell or range of cells use clear comments option in Spreadsheet. Use `clearComments` method to clear comments via code.
 
 #### Clear Hyperlinks
 To clear [`hyperlink`](https://help.syncfusion.com/js/spreadsheet/formatting#hyperlink "hyperlink") in a cell or range of cells use clear hyperlink option in Spreadsheet. Use `clearHyperlinks` method to clear hyperlinks via code.
