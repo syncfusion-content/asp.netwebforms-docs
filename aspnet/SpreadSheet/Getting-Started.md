@@ -72,13 +72,39 @@ Now, this section explains how to populate JSON data to the Spreadsheet. You can
 
     private void BindDataSource()
         {
-            var dataSource = new OrderItemsDataContext().GetAllItemDetails.ToList();
+             var dataSource = GetAllItemDetails().ToList();
             this.Spreadsheet.Sheets.Add(new Syncfusion.JavaScript.Models.Sheet()
             {
                 Datasource = dataSource
             });
         }
 
+    private List<ItemDetail> GetAllItemDetails()
+        {
+            List<ItemDetail> Items = new List<ItemDetail>();
+            Items.Add(new ItemDetail() { ItemName = "Casual Shoes", Date = "02/14/2014", Time = "11:34:32 AM", Quantity = 10, Price = 20, Amount = 200, Discount = 1, Profit = 10 });
+            Items.Add(new ItemDetail() { ItemName = "Sports Shoes", Date = "06/11/2014", Time = "05:56:32 AM", Quantity = 20, Price = 30, Amount = 600, Discount = 5, Profit = 50 });
+            Items.Add(new ItemDetail() { ItemName = "Formal Shoes", Date = "07/27/2014", Time = "03:32:44 AM", Quantity = 20, Price = 15, Amount = 300, Discount = 7, Profit = 27 });
+            Items.Add(new ItemDetail() { ItemName = "Sandals & Floaters", Date = "11/21/2014", Time = "06:23:54 AM", Quantity = 15, Price = 20, Amount = 300, Discount = 11, Profit = 67 });
+            Items.Add(new ItemDetail() { ItemName = "Flip- Flops & Slippers", Date = "06/23/2014", Time = "12:43:59 AM", Quantity = 30, Price = 10, Amount = 300, Discount = 10, Profit = 70 });
+            Items.Add(new ItemDetail() { ItemName = "Sneakers", Date = "07/22/2014", Time = "10:55:53 AM", Quantity = 40, Price = 20, Amount = 800, Discount = 13, Profit = 66 });
+            Items.Add(new ItemDetail() { ItemName = "Running Shoes", Date = "02/04/2014", Time = "03:44:34 AM", Quantity = 20, Price = 10, Amount = 200, Discount = 3, Profit = 14 });
+            Items.Add(new ItemDetail() { ItemName = "Loafers", Date = "11/30/2014", Time = "03:12:52 AM", Quantity = 31, Price = 10, Amount = 310, Discount = 6, Profit = 29 });
+            Items.Add(new ItemDetail() { ItemName = "Cricket Shoes", Date = "07/09/2014", Time = "11:32:14 AM", Quantity = 41, Price = 30, Amount = 1210, Discount = 12, Profit = 166 });
+            Items.Add(new ItemDetail() { ItemName = "T-Shirts", Date = "10/31/2014", Time = "12:01:44 AM", Quantity = 50, Price = 10, Amount = 500, Discount = 9, Profit = 55 });
+            return Items;
+        }
+        public class ItemDetail
+        {
+            public string ItemName { get; set; }
+            public string Date { get; set; }
+            public string Time { get; set; }
+            public int Quantity { get; set; }
+            public int Price { get; set; }
+            public int Amount { get; set; }
+            public int Discount { get; set; }
+            public int Profit { get; set; }
+        }
 
 {% endhighlight %}
 
