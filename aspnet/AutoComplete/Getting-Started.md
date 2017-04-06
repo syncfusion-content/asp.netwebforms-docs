@@ -75,126 +75,40 @@ Define local DataSource elements by using the Key and Text fields in code behind
 
             {
 
-    this.AutoComplete.DataSource = new LocalData().GetDataItems().ToList();
+    this.AutoComplete.DataSource = new ComponentsList().GetComponentsList().ToList();
 
             }
 
 
+    public class ComponentsList
+        {
 
-    public class LocalData
-
+            public int ComponentId { get; set; }
+            public string ComponentName { get; set; }          
+            public static List<ComponentsList> GetComponentsList()
             {
-
-
-
-                public LocalData(int _id, string _text)
-
-                {
-
-                    this.ID = _id;
-
-                    this.Text = _text;
-
-                }
-
-                public LocalData() { }
-
-
-
-
-
-                public int ID
-
-                {
-
-                    get;
-
-                    set;
-
-                }
-
-
-
-                public string Text
-
-                {
-
-                    get;
-
-                    set;
-
-                }
-
-                public List<LocalData> GetDataItems()
-
-                {
-
-                    List<LocalData> data = new List<LocalData>();
-
-                    data.Add(new LocalData(1, "Audi S6"));
-
-                    data.Add(new LocalData(2, "Austin-Healey"));
-
-                    data.Add(new LocalData(3, "Aston Martin"));
-
-                    data.Add(new LocalData(4, "BMW 7"));
-
-                    data.Add(new LocalData(5, "Bentley Mulsanne"));
-
-                    data.Add(new LocalData(6, "Bugatti Veyron"));
-
-                    data.Add(new LocalData(7, "Chevrolet Camaro"));
-
-                    data.Add(new LocalData(8, "Cadillac "));
-
-                    data.Add(new LocalData(9, "Honda S2000"));
-
-                    data.Add(new LocalData(10, "Hyundai Santro"));
-
-                    data.Add(new LocalData(11, "Mercedes-Benz "));
-
-                    data.Add(new LocalData(12, "Mercury Coupe"));
-
-                    data.Add(new LocalData(13, "Maruti Alto 800"));
-
-                    data.Add(new LocalData(14, "Volkswagen Shirako"));
-
-                    data.Add(new LocalData(15, "Lotus Esprit "));
-
-                    data.Add(new LocalData(16, "Lamborghini Diablo"));
-
-                    data.Add(new LocalData(17, "Nissan Qashqai "));
-
-                    data.Add(new LocalData(18, "Oldsmobile S98 "));
-
-                    data.Add(new LocalData(19, "Opel Superboss "));
-
-                    data.Add(new LocalData(20, "Scion SRS/SC/SD "));
-
-                    data.Add(new LocalData(21, "Saab Sportcombi "));
-
-                    data.Add(new LocalData(22, "Subaru Sambar "));
-
-                    data.Add(new LocalData(23, "Suzuki Swift "));
-
-                    data.Add(new LocalData(24, "Volvo P1800 "));
-
-                    data.Add(new LocalData(25, "Kia Sedona EX "));
-
-                    data.Add(new LocalData(26, "Koenigsegg Agera "));
-
-                    data.Add(new LocalData(27, "Ford Boss 302 "));
-
-                    data.Add(new LocalData(28, "Ferrari 360 "));
-
-                    data.Add(new LocalData(29, "Ford Thunderbird "));
-
-                    data.Add(new LocalData(30, "Alfa Romeo"));
-
-                    return data;
-
-                }
-
+                List<ComponentsList> component = new List<ComponentsList>();
+                component.Add(new ComponentsList { ComponentName = "Autocomplete" });
+                component.Add(new ComponentsList { ComponentName = "Accordion" });
+                component.Add(new ComponentsList { ComponentName = "BulletGraph" });
+                component.Add(new ComponentsList { ComponentName = "Chart" });
+                component.Add(new ComponentsList { ComponentName = "DatePicker" });
+                component.Add(new ComponentsList { ComponentName = "Dialog" });
+                component.Add(new ComponentsList { ComponentName = "Diagram" });
+                component.Add(new ComponentsList { ComponentName = "DropDown" });
+                component.Add(new ComponentsList { ComponentName = "Gauge" });
+                component.Add(new ComponentsList { ComponentName = "Schedule" });
+                component.Add(new ComponentsList { ComponentName = "Scrollbar" });
+                component.Add(new ComponentsList { ComponentName = "Slider" });
+                component.Add(new ComponentsList { ComponentName = "RangeNavigatior" });
+                component.Add(new ComponentsList { ComponentName = "Rating" });
+                component.Add(new ComponentsList { ComponentName = "RichTextEditor" });
+                component.Add(new ComponentsList { ComponentName = "Tab" });
+                component.Add(new ComponentsList { ComponentName = "TagCloud" });
+                component.Add(new ComponentsList { ComponentName = "Toolbar" });
+                component.Add(new ComponentsList { ComponentName = "TreeView" });               
+                return component;
+            }
         }
 
 {% endhighlight %}
@@ -211,7 +125,7 @@ In the Design page, add an AutoComplete element from ToolBox and assign values f
 
 Select a component/s:
 
-<ej:Autocomplete ID="ComponentList" runat="server" DataTextField="Text" DataUniqueKeyField="ID" Width="500px"></ej:Autocomplete>
+<ej:Autocomplete ID="ComponentList" runat="server" DataTextField="ComponentName" DataUniqueKeyField="ComponentId" Width="500px"></ej:Autocomplete>
 
 </div>
 
@@ -240,7 +154,7 @@ By default, the AutoComplete is rendered with single-value selection that is s
 
 Select a component/s:
 
-<ej:Autocomplete ID="ComponentList" runat="server" DataTextField="Text" DataUniqueKeyField="ID" FilterType="StartsWith" MultiSelectMode="VisualMode" Width="500px"> </ej:Autocomplete>
+<ej:Autocomplete ID="ComponentList" runat="server" DataTextField="ComponentName" DataUniqueKeyField="ComponentId" FilterType="StartsWith" MultiSelectMode="VisualMode" Width="500px"> </ej:Autocomplete>
 
 </div>
 
@@ -266,7 +180,7 @@ The following screenshot displays the AutoComplete textbox with selection visu
 
 Select a component/s:
 
-<ej:Autocomplete ID="ComponentList" runat="server"DataTextField="Text" DataUniqueKeyField="ID"
+<ej:Autocomplete ID="ComponentList" runat="server"DataTextField="ComponentName" DataUniqueKeyField="ComponentId"
 
 FilterType="StartsWith" MultiSelectMode="VisualMode" HighlightSearch="true" ShowRoundedCorner="true" Width="500px"></ej:Autocomplete>
 
@@ -301,11 +215,7 @@ To enable the Popup button, you can set ShowPopupButton property to ‘true
 </style>
 
 
-
-
-
 {% endhighlight %}
-
 
 
 {% highlight html %}
@@ -316,7 +226,7 @@ To enable the Popup button, you can set ShowPopupButton property to ‘true
 
 Select a component/s:
 
-<ej:Autocomplete ID="ComponentList" runat="server" DataTextField="Text" DataUniqueKeyField="ID" 
+<ej:Autocomplete ID="ComponentList" runat="server" DataTextField="ComponentName" DataUniqueKeyField="ComponentId" 
 
 FilterType="StartsWith" MultiSelectMode="VisualMode" HighlightSearch="true" ShowRoundedCorner="true" ShowPopupButton="true"Width="500px"> </ej:Autocomplete>
 
