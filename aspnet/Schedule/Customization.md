@@ -44,6 +44,24 @@ The following code example renders the scheduler from 7.00 AM to 6.00 PM.
 
 {% endhighlight %}
 
+## Hide Weekend
+
+The Scheduler can be render based on the customized days. The customized days can be render based on the `WorkWeek` days. To customize the days, use the `ShowWeekend` property.
+
+The following code example renders the scheduler with hiding weekend.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%"  Height="525px" CurrentDate="5/2/2014" ShowWeekend="false">
+    <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule"/>
+</ej:Schedule>
+
+<asp:SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings:ScheduleConnectionString %>"
+            SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+{% endhighlight %}
+
 ### Working Hours
 
 Working hours indicates the work hour limit within the Scheduler, which is highlighted visually with white colored work cells. To enable the highlighting of work hours on the Scheduler, set the **Highlight** option available within the `WorkHours` property to **true**. By default, it is set to true. `WorkHours` property includes the below options,
