@@ -59,48 +59,75 @@ Execute the above code to create the AutoComplete textbox as illustrated in th
 
 The data provided to the AutoComplete customizes the list of Data either locally or remotely. 
 
-### Remote Data Binding
+### Local Data Binding
 
-You can assign the required Data from the remote URL to the DataSource property in code behind file. You can also generate a query to get the required Data from the remote file by using Query property and define the query to get the remote Data. By using DataTextField andDataUniqueKey Field property, you can map the Data fields to the textbox as illustrated in the following code example.
+AutoComplete provides data binding support to populate AutoComplete items, so that the values can be mapped to the AutoComplete fields, namely DataUniqueKeyField and DataTextField. DataBinding helps you bind a key value pair to AutoComplete textbox. DataUniqueKeyField takes the unique id of the dataSource elements. DataTextField gets the value to be displayed in the AutoComplete textbox.
+
+#### Defining the Local data for AutoComplete
+
+The following steps explain local data binding of a list data to an AutoComplete textbox.
+
+Define local DataSource elements by using the Key and Text fields in code behind and map the list data to DataSource property
 
 {% highlight c# %}
 
+    protected void Page_Load(object sender, EventArgs e)
+
+            {
+
+    this.AutoComplete.DataSource = new ComponentsList().GetComponentsList().ToList();
+
+            }
 
 
-//Map the datasource URL to the DataSource property
+    public class ComponentsList
+        {
 
-protectedvoid Page_Load(object sender, EventArgs e)
-
-{
-
-this.ComponentList.DataSource ="http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/";
-
-}
-
-
+            public int ComponentId { get; set; }
+            public string ComponentName { get; set; }          
+            public static List<ComponentsList> GetComponentsList()
+            {
+                List<ComponentsList> component = new List<ComponentsList>();
+                component.Add(new ComponentsList { ComponentName = "Autocomplete" });
+                component.Add(new ComponentsList { ComponentName = "Accordion" });
+                component.Add(new ComponentsList { ComponentName = "BulletGraph" });
+                component.Add(new ComponentsList { ComponentName = "Chart" });
+                component.Add(new ComponentsList { ComponentName = "DatePicker" });
+                component.Add(new ComponentsList { ComponentName = "Dialog" });
+                component.Add(new ComponentsList { ComponentName = "Diagram" });
+                component.Add(new ComponentsList { ComponentName = "DropDown" });
+                component.Add(new ComponentsList { ComponentName = "Gauge" });
+                component.Add(new ComponentsList { ComponentName = "Schedule" });
+                component.Add(new ComponentsList { ComponentName = "Scrollbar" });
+                component.Add(new ComponentsList { ComponentName = "Slider" });
+                component.Add(new ComponentsList { ComponentName = "RangeNavigatior" });
+                component.Add(new ComponentsList { ComponentName = "Rating" });
+                component.Add(new ComponentsList { ComponentName = "RichTextEditor" });
+                component.Add(new ComponentsList { ComponentName = "Tab" });
+                component.Add(new ComponentsList { ComponentName = "TagCloud" });
+                component.Add(new ComponentsList { ComponentName = "Toolbar" });
+                component.Add(new ComponentsList { ComponentName = "TreeView" });               
+                return component;
+            }
+        }
 
 {% endhighlight %}
 
 
+In the Design page, add an AutoComplete element from ToolBox and assign values for DataTextField and DataUniqueKeyField.
 
 {% highlight html %}
 
-
-
 <%-- Map the data fields to the corresponding Field items--%>
+
 
 <div>
 
 Select a component/s:
 
-<ej:Autocomplete ID="ComponentList" runat="server" Query="ej.Query().from('ComponentLists').select('ComponentId', 'ComponentName')"
-
-DataTextField="ComponentName" DataUniqueKeyField="ComponentId"Width="500px"></ej:Autocomplete>
+<ej:Autocomplete ID="ComponentList" runat="server" DataTextField="ComponentName" DataUniqueKeyField="ComponentId" Width="500px"></ej:Autocomplete>
 
 </div>
-
-
-
 
 
 {% endhighlight %}
@@ -127,7 +154,7 @@ By default, the AutoComplete is rendered with single-value selection that is s
 
 Select a component/s:
 
-<ej:Autocomplete ID="ComponentList" runat="server"DataTextField="ComponentName" DataUniqueKeyField="ComponentId"FilterType="StartsWith" MultiSelectMode="VisualMode" Width="500px"> </ej:Autocomplete>
+<ej:Autocomplete ID="ComponentList" runat="server" DataTextField="ComponentName" DataUniqueKeyField="ComponentId" FilterType="StartsWith" MultiSelectMode="VisualMode" Width="500px"> </ej:Autocomplete>
 
 </div>
 
@@ -155,12 +182,9 @@ Select a component/s:
 
 <ej:Autocomplete ID="ComponentList" runat="server"DataTextField="ComponentName" DataUniqueKeyField="ComponentId"
 
-FilterType="StartsWith" MultiSelectMode="VisualMode"HighlightSearch="true" ShowRoundedCorner="true" Width="500px"></ej:Autocomplete>
+FilterType="StartsWith" MultiSelectMode="VisualMode" HighlightSearch="true" ShowRoundedCorner="true" Width="500px"></ej:Autocomplete>
 
 </div>
-
-
-
 
 
 {% endhighlight %}
@@ -170,7 +194,6 @@ When you set the HighlightSearch property to ‘true’, the characters typed
 The following screenshot displays the AutoComplete textbox with highlight search enabled.
 
 ![](Getting-Started_images/Getting-Started_img5.png) 
-
 
 
 ### Configure Popup button
@@ -192,11 +215,7 @@ To enable the Popup button, you can set ShowPopupButton property to ‘true
 </style>
 
 
-
-
-
 {% endhighlight %}
-
 
 
 {% highlight html %}
@@ -207,14 +226,11 @@ To enable the Popup button, you can set ShowPopupButton property to ‘true
 
 Select a component/s:
 
-<ej:Autocomplete ID="ComponentList" runat="server"DataTextField="ComponentName" DataUniqueKeyField="ComponentId" 
+<ej:Autocomplete ID="ComponentList" runat="server" DataTextField="ComponentName" DataUniqueKeyField="ComponentId" 
 
-FilterType="StartsWith" MultiSelectMode="VisualMode"HighlightSearch="true" ShowRoundedCorner="true" ShowPopupButton="true"Width="500px"> </ej:Autocomplete>
+FilterType="StartsWith" MultiSelectMode="VisualMode" HighlightSearch="true" ShowRoundedCorner="true" ShowPopupButton="true"Width="500px"> </ej:Autocomplete>
 
 </div>
-
-
-
 
 
 {% endhighlight %}
