@@ -23,8 +23,16 @@ Basically, all services that have JSON acts as a transport.
 
 Some important features of the DataManager for ASP.NET are:
 
-1. DataManager - Communicates with data source and returns the desired result based on the Query provided.
-2. Query – DataManager has APIs for generating data query with ease.
-3. CRUD in individual requests and Batch – CRUD operations are fully supported. The options are enabled to commit the data as a single or multiple requests.
-4. Adaptors – Adaptors are specific dataSource type, aware of interfaces used by DataManager to communicate with DataSource. Three adaptors are created. They are, ODataAdaptor, JsonAdaptor and UrlAdaptor
-5. Model binding – Simple model binding is made by using DataManager. You can directly bind Query result to HTML element.
+1. **DataManager** - Communicates with data source and returns the desired result based on the Query provided.
+
+2. **JavaScript Query** – **DataManager** have APIs for generating JavaScript data query with ease.
+
+3. **CRUD in individual requests and Batch** – **CRUD** operations are fully supported. The options are enabled to commit the data as a single or multiple requests.
+
+4. **Adaptors** – **Adaptors** are specific dataSource type aware interfaces that are used by **DataManager** to communicate with DataSource. Three adaptors are created. They are, ODataAdaptor, JsonAdaptor and UrlAdaptor
+
+5. **Model binding** – Simple model binding is made using **DataManager**. You can directly bind Query result to **HTML** element.
+
+6. Calculate and maintain aggregates, sorting order and paging
+
+In other words, the DataManager fully supports CRUD (Create, Read, Update, Destroy) data operations, and provides both client-side and server-side support for sorting, paging, filtering, grouping, and aggregates.
