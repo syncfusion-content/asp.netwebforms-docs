@@ -17,7 +17,7 @@ DataManager is used to manage relational data. It supports CRUD (Create, Read, U
 
 This section briefly describes how to make a connection to WCF “Northwind” OData service and generate a report with top five orders from customer HANAR with higher “Freight” charges.  In this application scenario, you can learn how to bind DataManager to the Grid control, to do paging, filtering and sorting by using ej.Query.
 
-### Create Connection
+## Create Connection
 
 To define connection to data source, you can use DataManager control. The data source can be local or remote. Local data source is the local list items and remote data source is any web services. 
 
@@ -87,7 +87,7 @@ In this application, as you have web service for Northwind database, you can ass
 
 You can use ej.Query to generate the report from web service.
 
-### Binding with Grid Control
+## Binding with Grid Control
 
 You can bind the DataManager with Grid by defining the ID of DataManager in the DataManagerID property of Grid control. 
 
@@ -125,7 +125,7 @@ When you execute it, the following table is displayed.
 
 
 
-### Filter
+## Filter
 
 You can generate the Filter query to filter the CustomerID column based on VINET value and it is executed by using the DataManager.
 
@@ -171,7 +171,7 @@ When you execute the filter query and binding the result to the Grid, the follow
 
 
 
-### Sort
+## Sort
 
 You can generate the Sort query to sort the Freight column in descending order and that is executed by using the DataManager. 
 
@@ -208,7 +208,7 @@ The sortBy property of ejQuery is used to sort the records based on the field an
 When you execute the sort query and binding the result to the table, the following table is displayed.![](Getting-Started_images/Getting-Started_img3.png)
 
 
-### Page
+## Page
 
 You can generate the Paging query to get the top four orders and it is executed by using the DataManager.  
 
