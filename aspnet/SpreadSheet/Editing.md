@@ -157,15 +157,15 @@ The following code example describes the above behavior.
 {% highlight html %}
 
 <div>
-        <ej:DataManager ID="dataManager" runat="server" URL="http://js.syncfusion.com/demos/ejServices/wcf/Northwind.svc/Orders" CrossDomain="true"/>
-    </div>
+   <ej:DataManager ID="dataManager" runat="server"  URL= "GetAllItemDetails" Adaptor= "UrlAdaptor" BatchURL= "BatchUpdate" />
+</div>
 
 <ej:Spreadsheet ID="FlatSpreadsheet" runat="server">
    <ClientSideEvents LoadComplete="loadComplete" />
        <Sheets>
           <ej:Sheet DataManagerID="dataManager">
-             </ej:Sheet>
-   </Sheets>
+            </ej:Sheet>
+     </Sheets>
 </ej:Spreadsheet>
 <script>
 function loadComplete(args) {
@@ -184,8 +184,30 @@ function loadComplete(args) {
         {
             
         }
-     
+[WebMethod]
+[ScriptMethod(ResponseFormat = ResponseFormat.Json)]
 
+public static object GetAllItemDetails()
+         {
+            List<ItemDetail> lItems = new List<ItemDetail>();
+            lItems.Add(new ItemDetail() { ItemName = "Casual Shoes", Date = "02/14/2014", Time = "11:34:32 AM", Quantity = 10, Price = 20, Amount = 200, Discount = 1, Profit = 10 });
+            lItems.Add(new ItemDetail() { ItemName = "Sports Shoes", Date = "06/11/2014", Time = "05:56:32 AM", Quantity = 20, Price = 30, Amount = 600, Discount = 5, Profit = 50 });
+            lItems.Add(new ItemDetail() { ItemName = "Formal Shoes", Date = "07/27/2014", Time = "03:32:44 AM", Quantity = 20, Price = 15, Amount = 300, Discount = 7, Profit = 27 });
+            lItems.Add(new ItemDetail() { ItemName = "Sandals & Floaters", Date = "11/21/2014", Time = "06:23:54 AM", Quantity = 15, Price = 20, Amount = 300, Discount = 11, Profit = 67 });
+            lItems.Add(new ItemDetail() { ItemName = "Flip- Flops & Slippers", Date = "06/23/2014", Time = "12:43:59 AM", Quantity = 30, Price = 10, Amount = 300, Discount = 10, Profit = 70 });
+            lItems.Add(new ItemDetail() { ItemName = "Sneakers", Date = "07/22/2014", Time = "10:55:53 AM", Quantity = 40, Price = 20, Amount = 800, Discount = 13, Profit = 66 });
+            lItems.Add(new ItemDetail() { ItemName = "Running Shoes", Date = "02/04/2014", Time = "03:44:34 AM", Quantity = 20, Price = 10, Amount = 200, Discount = 3, Profit = 14 });
+            lItems.Add(new ItemDetail() { ItemName = "Loafers", Date = "11/30/2014", Time = "03:12:52 AM", Quantity = 31, Price = 10, Amount = 310, Discount = 6, Profit = 29 });
+            lItems.Add(new ItemDetail() { ItemName = "Cricket Shoes", Date = "07/09/2014", Time = "11:32:14 AM", Quantity = 41, Price = 30, Amount = 1210, Discount = 12, Profit = 166 });
+            lItems.Add(new ItemDetail() { ItemName = "T-Shirts", Date = "10/31/2014", Time = "12:01:44 AM", Quantity = 50, Price = 10, Amount = 500, Discount = 9, Profit = 55 });
+            var dataSource = lItems.ToList();
+            return new { result = dataSource, count = dataSource.Count };
+        }
+
+ public ActionResult BatchUpdate( List<ItemDetail> changed,  List<ItemDetail> added,  List<ItemDetail> deleted, string action, string key)
+        {
+            //Save the batch changes
+        }
 {% endhighlight %}
 
 {% endtabs %}
