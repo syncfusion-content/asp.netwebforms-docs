@@ -204,7 +204,9 @@ public static object GetAllItemDetails()
             return new { result = dataSource, count = dataSource.Count };
         }
 
- public ActionResult BatchUpdate( List<ItemDetail> changed,  List<ItemDetail> added,  List<ItemDetail> deleted, string action, string key)
+[WebMethod]
+
+ public static void BatchUpdate( List<ItemDetail> changed,  List<ItemDetail> added,  List<ItemDetail> deleted, string action, string key)
         {
             //Save the batch changes
         }
