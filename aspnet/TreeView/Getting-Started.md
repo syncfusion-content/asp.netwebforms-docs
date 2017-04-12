@@ -48,7 +48,7 @@ In the view page, add an element to render the TreeView with specified items.
     
 ## Tree View using Data Binding
 
-Another way of creating TreeView is binding with the data source, you can bind local data or remote data source to create a TreeView. 
+Another way of creating TreeView is binding with the data source, you can bind local data source to create a TreeView. 
 
 Render TreeView with local data source.
 
@@ -175,39 +175,6 @@ In the view page, add an element and map the properties defined to the correspon
         </ej:TreeView>
         
     {% endhighlight %}
-    
-Render TreeView with remote data source
-
-In the code behind page, specify the remote data source URL and query in corresponding DataSource and Query properties of TreeView.
-    
-    {% highlight c# %}
-    
-    public partial class DefaultFunctionalities : System.Web.UI.Page
-        {
-            protected void Page_Load(object sender, EventArgs e)
-            {
-                this.treeview.DataSource = "//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/";
-    
-                this.treeview.Query = "ej.Query().from('Customers').take(3)";
-            }
-        }
-        
-    {% endhighlight %}
-    
-    
-In the ASPX page, add an element to configure TreeView.
-    
-    {% highlight html %}
-    
-        <ej:TreeView
-            ID="treeview"
-            runat="server"
-            DataTextField="CustomerID">
-        </ej:TreeView>
-        
-    {% endhighlight %}
-    
-N>**In remote data source, [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) is used to process the data from services and the value has been assigned to DataSource.**
 
 ## Create Instance for TreeView
 
