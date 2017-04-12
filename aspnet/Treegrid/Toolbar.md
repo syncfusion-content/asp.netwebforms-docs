@@ -93,7 +93,4 @@ To insert EJ Controls in TreeGrid toolbar we need to initiate the control in [`c
 
    ![](Toolbar_images/Toolbar_img2.png)
 
-   [Click](http://asp.syncfusion.com/demos/web/treegrid/treeGridtoolbartemplate.aspx) here to view the demo sample for custom toolbar item
-
-
-
+   
