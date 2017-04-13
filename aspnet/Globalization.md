@@ -10,17 +10,48 @@ documentation: ug
 
 # Globalization
 
-As per MSDN, “Globalization involves designing and developing a world-ready app that supports localized interfaces and regional data for users in the multiple cultures”.
+Syncfusion Components has been provided with the built-in globalization support, so that it will be able to adapt for the culture-specific number and date format based on the defined **locale** property. Globalization values will be automatically used when locale property is set with locale value (e.g.) en-US. The **en-US** locale is currently being used in all the Syncfusion components by default. 
 
-The ejGlobalize plugin provides options parse numeric, currency and date values using culture file. The assets/scripts/i18n contains more than 350 cultures currently. You can load the particular culture into application using preferredCulture method.
+To globalize the Syncfusion components into a particular culture, it is necessary to refer the below specified scripts in your application,
 
-The Internationalize any of our Syncfusion components/page into particular culture, please follow the below steps.
+* **ej.globalize.min.js** is mandatory for processing specific source-side actions globally, in this we are having methods to set the culture.
+* Culture-specific script files(eg: ej.culture.de-DE.min.js ), which contains specific culture that you need to adapt any of our Syncfusion control.
 
-EJWEB DatePicker has been provided with Built-in localization support, so that it will be able adapt based on culture specific locale defined for it.
+I> **ej.globalize.min.js** library avails as built-in within ej.web.all.min.js file, therefore it is not necessary to externally refer it in your application (applicable for version 13.4.0.53 and higher). For version lower than 13.4.0.53, refer jQuery.globalize.min.js along with ej.web.all.min.js
 
-To translate DatePicker content from default English to any of the culture, for an example - German language, then you need to refer the ej.culture.de-DE.min.js file in your application. Let see a simple example. 
+<table>
+<tr>
+<td>
+<b>(installed location)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\i18n
+</td>
+</tr>
+<tr>
+<td>
+<b>For example,</b> If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
+<br/>
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\i18n
+</td>
+</tr>
+</table>
 
-DatePicker control has been rendered in “en-US” and DatePicker control content will be translated to the following cultures en-US, vi-VN and fr-FR.
+N>   To translate our control content from default English to any of the culture, say For example - German language, then you need to refer the **ej.culture.de-DE.min.js** file in your application, after the reference of ej.web.all.min.js file.
+N>   Seven culture-specific script files are available in the below specified location. For all other culture files, please download from the [GitHub](https://github.com/syncfusion/ej-global/tree/master/i18n) location.
+
+## Globalizing the Syncfusion components
+
+Syncfusion components like DatePicker which supports globalization to display day name, month name, date format for each culture, based on the specified **locale** property. Usually, the culture codes are defined in short forms like **en-US** for English culture, **de-DE** for German culture, **fr-FR** for French culture and so on. The below sample code shows how to define the locale property for **DatePicker** control,
+
+{% highlight html %}
+
+    <ej:DatePicker ID="datelocalization" Value="05/28/2016" Locale="de-DE" ButtonText="heute" WatermarkText="Datum auswählen" runat="server"></ej:DatePicker>
+
+{% endhighlight %}
+
+## To change the locale property dynamically in DatePicker control
+
+Define a dropdownlist control additionally in your HTML page along with the DatePicker control, to hold the required culture codes. When the user selects a particular culture code option from the dropdownlist, the datepicker will get localized appropriately based on the dynamic selection made – which is depicted in the below code.
+
+N> In the below example, copy the culture files of **vi-VN** and **fr-FR** into the **scripts** folder of your application and refer it in the head section along with the other CSS and script references, so that the **locale** of the datepicker switches between the selected culture appropriately.
 
 {% highlight html %}
 
