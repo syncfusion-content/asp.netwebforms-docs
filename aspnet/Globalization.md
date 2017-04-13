@@ -10,13 +10,11 @@ documentation: ug
 
 # Globalization
 
-Globalization involves designing and developing a world-ready app that supports localized interfaces and regional data for users in multiple cultures. 
+As per MSDN, “Globalization involves designing and developing a world-ready app that supports localized interfaces and regional data for users in the multiple cultures”.
 
-As developers, we all have assumptions about user interfaces and data that are formed by our cultures. For example, for an English-speaking developer in the United States, serializing date and time data as a string in the format MM/dd/yyyy hh:mm:ss seems perfectly reasonable. However, deserializing that string on a system in a different culture is likely to throw a [FormatException](https://msdn.microsoft.com/en-us/library/system.formatexception) exception or produce inaccurate data. Globalization enables us to identify such culture-specific assumptions and ensure that they do not affect our app's design or code.
+The ejGlobalize plugin provides options parse numeric, currency and date values using culture file. The assets/scripts/i18n contains more than 350 cultures currently. You can load the particular culture into application using preferredCulture method.
 
-Globalization is a combination of localization and internationalization. so we have achieved with locale property of Syncfusion components.
-
-More than 350 culture specific files are available to localize the date. To know more about EJ globalization support, please refer EJ globalize support
+The Internationalize any of our Syncfusion components/page into particular culture, please follow the below steps.
 
 EJWEB DatePicker has been provided with Built-in localization support, so that it will be able adapt based on culture specific locale defined for it.
 
