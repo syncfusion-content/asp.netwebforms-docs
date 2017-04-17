@@ -15,7 +15,7 @@ The below code snippet explains the above behavior,
 {% tabs %}
 {% highlight html %}
 
-<ej:Gantt runat="server" ID="GanttControlExporting" OnServerPdfExporting="GanttControlExporting_ServerPdfExporting">
+<ej:Gantt runat="server" ID="GanttControlExporting" OnServerPdfExporting="GanttControlExporting_ServerPdfExporting" OnServerExcelExporting="GanttControlExporting_ServerExcelExporting">
 <ToolbarSettings ShowToolbar="true" ToolbarItems="pdfExport, excelExport" />
 </ej:Gantt>
 
