@@ -74,9 +74,7 @@ The Toolbar consists of a list of items. From the following guidelines, you can
 
 
 
-Apply the styles specified in the code table to show the Toolbar items as follows. You can refer to the images from any location. For the following code example, the images are referred from the following location.
-
-[http://js.syncfusion.com/UG/Web/Content/](http://js.syncfusion.com/UG/Web/Content/)pdf-icon.png
+Apply the styles specified in the code table to show the Toolbar items as follows. You can refer to the images from any location. 
 
 {% highlight css %}
 
