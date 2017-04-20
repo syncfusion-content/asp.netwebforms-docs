@@ -11,19 +11,19 @@ documentation: ug
 
 ## Save signature image with user defined format
 
-By default, the downloaded image form the signature canvas will be in **png** format. We can define our own format to download the image with **SaveImageFormat** property. And we can also save the image along with the background by using the **SaveWithBackground** property.
+By default, the downloaded image from the signature canvas will be in **png** format. We can define our own format to download the image with **SaveImageFormat** property. And we can also save the image along with the background by using the **SaveWithBackground** property.
 
 In the ASPX page, define the following code.
 
 {% highlight html %}
 
-<ej:Signature ID="apisignature" Height="400px" StrokeWidth="3" BackgroundImage="../Content/images/progressbar/water.png" SaveWithBackground="true" IsResponsive="true" runat="server"></ej:Signature>
+<ej:Signature ID="apisignature" Height="400px" StrokeWidth="3" BackgroundImage="../Content/images/progressbar/water.png" SaveWithBackground="true" IsResponsive="true" SaveImageFormat="jpg"  runat="server"></ej:Signature>
 
-<a id="download">
 
- <input id="signsave" class="e-btn" type="button" value="Save" />
 
-</a> 
+<ej:Button runat="server" Type="Button" ID="signsave" ClientSideOnClick="onsave" Size="Normal" ShowRoundedCorner="true" Text="Save"></ej:Button>
+
+
 
 {% endhighlight %}
 
@@ -31,27 +31,11 @@ Add the following script to define the download format for the canvas
 
 {% highlight js %}
 
-   $(function () {
 
-   $("#signsave").ejButton({
-                size: "normal",
-                showRoundedCorner: true,
-            });
-
-            var clientPng = document.getElementById('download');
-            if (clientPng.addEventListener)
-                clientPng.addEventListener('click', downloadClient, false);
-            else
-                clientPng.attachEvent('onclick', downloadClient, false);
-
-            function downloadClient(e) {
-                var sign = $("#<%=apisignature.ClientID%>").ejSignature("instance");
-
-                this.download = "Signature." + sign.model.saveImageFormat + "";
-                var div = $("#<%=apisignature.ClientID%>");
-                var canvas = div["children"]()[0];
-                this.href = canvas.toDataURL("image/" + sign.model.saveImageFormat + "", 1.0);
-            } });
+    function onsave() {
+            var sign = $("#<%=apisignature.ClientID%>").ejSignature("instance");
+            sign.save("MySignature");
+        }
 
 {% endhighlight %}
 
