@@ -19,7 +19,7 @@ The WAI-ARIA specification suite defines a set of roles, states and properties f
 
 This section describes about the approaches followed to make the widgets accessible using the Roles, States and Properties defined by WAI-ARIA specifications. The WAI-ARIA specifications recommends several attributes to be used along with the DOM element structure, in order to make it accessible.
 
-The common widgets that can be made as accessible using WAI-ARIA are listed [here](https://www.w3.org/WAI/PF/aria-practices/%20-%20aria_ex). The various ARIA attributes that are used to make the widgets accessible are listed [here](https://msdn.microsoft.com/en-us/library/hh801958%28v=vs.85%29.aspx).
+The common widgets that can be made as accessible using WAI-ARIA are listed [here](https://www.w3.org/TR/wai-aria-practices-1.1/). The various ARIA attributes that are used to make the widgets accessible are listed [here](https://msdn.microsoft.com/en-us/library/hh801958%28v=vs.85%29.aspx).
 
 The basic steps for converting a common widget into accessible are as follows, 
 
