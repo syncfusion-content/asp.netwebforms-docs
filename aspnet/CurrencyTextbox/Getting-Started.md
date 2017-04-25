@@ -29,8 +29,6 @@ Add the necessary Textbox control and initialize the control.
 
   <div class="editors">
 
-        <div class="ele-icon">
-
         </div>
 
         <div class="ele-txt" style="">Electricity Bill Calculator</div>
@@ -121,7 +119,7 @@ Add the necessary Textbox control and initialize the control.
 
         <div class="paybill">
 
-           <ej:Button ID="Button" runat="server" Text="Calculate" Type="Button"Size="Small" ContentType="TextAndImage" PrefixIcon="e-calender">
+           <ej:Button ID="Button" runat="server" Text="Calculate" Type="Button"Size="Small">
 
             </ej:Button>
 
@@ -135,30 +133,9 @@ Add the necessary Textbox control and initialize the control.
 
 {% endhighlight %}
 
-The following styles are added to arrange the Textboxes.  You can add the following location in the URL path for the background image: [http://js.syncfusion.com/UG/Web/Content/electricity.png](http://js.syncfusion.com/UG/Web/Content/electricity.png). 
+The following styles are added to arrange the Textboxes.
 
 {% highlight css %}
-        .ele-icon
-
-        {
-
-            display: inline-block;
-
-            background-image:url(http://js.syncfusion.com/UG/Web/Content/electricity.png);
-
-            background-repeat: no-repeat;
-
-            background-size: contain;
-
-            height: 50px;
-
-            width: 50px;
-
-            margin-left: 50px;
-
-            margin-top: 15px;
-
-        }
 
         .ele-txt
 
@@ -258,8 +235,6 @@ In the above mentioned use case scenario, you can set the MinValue, MaxValue,�
 
    <div class="editors">
 
-        <div class="ele-icon">
-
         </div>
 
         <div class="ele-txt" style="">Electricity Bill Calculator</div>
@@ -344,7 +319,7 @@ In the above mentioned use case scenario, you can set the MinValue, MaxValue,�
 
         <div class="paybill">
 
-            <ej:Button ID="Button" runat="server" Text="Calculate" Type="Button"Size="Small" ContentType="TextAndImage" PrefixIcon="e-calender">
+            <ej:Button ID="Button" runat="server" Text="Calculate" Type="Button"Size="Small">
 
             </ej:Button>
 
@@ -369,8 +344,6 @@ You can set the EnableStrictMode option to restrict entering values defined outs
 {% highlight html %}
 
    <div class="editors">
-
-        <div class="ele-icon">
 
         </div>
 
@@ -460,7 +433,7 @@ You can set the EnableStrictMode option to restrict entering values defined outs
 
         <div class="paybill">
 
-            <ej:Button ID="Button" runat="server" Text="Calculate" Type="Button"Size="Small" ContentType="TextAndImage" PrefixIcon="e-calender">
+            <ej:Button ID="Button" runat="server" Text="Calculate" Type="Button"Size="Small">
 
             </ej:Button>
 
@@ -480,7 +453,7 @@ Run the above code example and you can see that it restricts entering a value ex
 
 You can use events to calculate the total amount and display the value. This is achieved by using the Click event in the button control. The calculation steps are written in the call back function of the Click event button.
 
-To customize the button, set the ContentType as TextAndImage to include the icon before the text. Add the PrefixIcon value as e-calender and add the ClientSideOnClick event.
+To customize the button, you can set the ContentType as TextAndImage to include the icon before the text and add the ClientSideOnClick event.
 
 {% highlight html %}
 
@@ -492,7 +465,7 @@ To customize the button, set the ContentType as TextAndImage to include the 
 
   <div class="paybill">
 
-            <ej:Button ID="Button" runat="server" Text="Calculate" Type="Button"Size="Small" ContentType="TextAndImage" PrefixIcon="e-calender"ClientSideOnClick="calculateBill">
+            <ej:Button ID="Button" runat="server" Text="Calculate" Type="Button"Size="Small" ClientSideOnClick="calculateBill">
 
             </ej:Button>
 
