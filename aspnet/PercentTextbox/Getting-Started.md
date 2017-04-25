@@ -29,8 +29,6 @@ Add necessary Textbox control and initialize the corresponding Textboxes cont
 
   <div class="editors">
 
-        <div class="ele-icon">
-
         </div>
 
         <div class="ele-txt" style="">Electricity Bill Calculator</div>
@@ -117,7 +115,7 @@ Add necessary Textbox control and initialize the corresponding Textboxes cont
 
         <div class="paybill">
 
-           <ej:Button ID="Button" runat="server" Text="Calculate" Type="Button"Size="Small" ContentType="TextAndImage" PrefixIcon="e-calender">
+           <ej:Button ID="Button" runat="server" Text="Calculate" Type="Button"Size="Small">
 
             </ej:Button>
 
@@ -129,33 +127,11 @@ Add necessary Textbox control and initialize the corresponding Textboxes cont
 
 
 
-The following styles are added to arrange the Textboxes.  You can add the following location in the URL path for the background image [http://js.syncfusion.com/UG/Web/Content/electricity.png](http://js.syncfusion.com/UG/Web/Content/electricity.png)
+The following styles are added to arrange the Textboxes.
 
 
 
 {% highlight css %}
-
-.ele-icon
-
-{
-
-    display: inline-block;
-
-    background-image:url(http://js.syncfusion.com/UG/Web/Content/electricity.png);
-
-    background-repeat: no-repeat;
-
-    background-size: contain;
-
-    height: 50px;
-
-    width: 50px;
-
-    margin-left: 50px;
-
-    margin-top: 15px;
-
-}
 
 .ele-txt
 
@@ -241,7 +217,7 @@ table.editors
 
 Execute the code example to render a Textboxes control as follows
 
-![](Getting-Started_images/Getting-Started_img2.jpeg) 
+![](Getting-Started_images/Getting-Started_img2.png) 
 
 
 
@@ -252,8 +228,6 @@ In the above mentioned use case scenario, you can set the MinValue, MaxValue 
 {% highlight html %}
 
    <div class="editors">
-
-        <div class="ele-icon">
 
         </div>
 
@@ -339,7 +313,7 @@ In the above mentioned use case scenario, you can set the MinValue, MaxValue 
 
         <div class="paybill">
 
-            <ej:Button ID="Button" runat="server" Text="Calculate" Type="Button"Size="Small" ContentType="TextAndImage" PrefixIcon="e-calender">
+            <ej:Button ID="Button" runat="server" Text="Calculate" Type="Button"Size="Small">
 
             </ej:Button>
 
@@ -353,7 +327,7 @@ In the above mentioned use case scenario, you can set the MinValue, MaxValue 
 
 Execute the above code example to render the resultant output of the above steps.
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -455,7 +429,7 @@ You can set the “EnableStrictMode” option to restrict entering values defi
 
         <div class="paybill">
 
-            <ej:Button ID="Button" runat="server" Text="Calculate" Type="Button"Size="Small" ContentType="TextAndImage" PrefixIcon="e-calender">
+            <ej:Button ID="Button" runat="server" Text="Calculate" Type="Button"Size="Small">
 
             </ej:Button>
 
@@ -473,7 +447,7 @@ Execute the above code example and you can see that it restricts entering a valu
 
 You can use events to calculate the total amount and display the value. This is achieved by using the Click event in the button control. The calculation steps are written in the call back function of Click event button.
 
-To customize the button, set the ContentType as TextAndImage to include the icon before the text. Add the PrefixIcon value as “e-calender” and add the ClientSideOnClick event.
+To customize the button,you can set the ContentType as TextAndImage to include the icon before the text and add the ClientSideOnClick event.
 
 {% highlight html %}
 
@@ -483,7 +457,7 @@ To customize the button, set the ContentType as TextAndImage to include the 
 
         <div class="paybill">
 
-            <ej:Button ID="Button" runat="server" Text="Calculate" Type="Button"Size="Small" ContentType="TextAndImage" PrefixIcon="e-calender"ClientSideOnClick="calculateBill">
+            <ej:Button ID="Button" runat="server" Text="Calculate" Type="Button"Size="Small" ClientSideOnClick="calculateBill">
 
             </ej:Button>
 
@@ -531,7 +505,7 @@ function calculateBill() {
 
 Execute the above code to render the Textboxes control. Fill the required Textbox fields and click the Calculate button. The values are displayed and an alert message is displayed. The following screenshot illustrates the final output of the Electricity bill calculator.
 
-![](Getting-Started_images/Getting-Started_img4.jpeg)
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
