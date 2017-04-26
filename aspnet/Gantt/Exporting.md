@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Exporting| Gantt | ASP.NET MVC | Syncfusion
+title: Exporting| Gantt | ASP.NET | Syncfusion
 description: exporting
-platform: ejmvc
+platform: aspnet
 control: Gantt
 documentation: ug
 ---
