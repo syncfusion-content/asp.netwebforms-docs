@@ -8,7 +8,7 @@ documentation: UG
 
 # Formatting
 
-Spreadsheet supports many formatting options to make your data easier to view and understand. Use [`AllowCellFormatting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowcellformatting "AllowCellFormatting") API to enable / disable formatting option in Spreadsheet. The different types of formatting supported in Spreadsheet are,
+Spreadsheet supports many formatting options to make your data easier to view and understand. Use `AllowCellFormatting` API to enable / disable formatting option in Spreadsheet. The different types of formatting supported in Spreadsheet are,
     
 1) Number Formatting
 
@@ -48,7 +48,7 @@ You can apply number format for a cell in following ways,
 
 ### Initial Load
 
-You can set number format for a cell by specifying [`Format`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-format "Format") property in cell data binding. The following code example describes the above behavior,
+You can set number format for a cell by specifying `Format` property in cell data binding. The following code example describes the above behavior,
 
 {% highlight html %}
 
@@ -145,7 +145,7 @@ You can apply text format for a cell in following ways,
 
 #### Initial Load
 
-You can apply text format for a cell by specifying [`Style`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-style "Style") property in cell data binding. The following code example describes the above behavior,
+You can apply text format for a cell by specifying `Style` property in cell data binding. The following code example describes the above behavior,
 
 {% highlight html %}
 
@@ -209,7 +209,7 @@ You can apply text format for a cell through text formatting options in ribbon `
 
 ### Wrap Text 
 
-To make text appearance on multiple lines in a cell, you can apply wrap text to the cell. So, that the text wraps automatically or you can enter a manual line break using `ALT + ENTER` key in edit mode. Use [`AllowWrap`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowwrap "AllowWrap") API to enable/disable wrap text. You can apply wrap text for a cell in following ways,
+To make text appearance on multiple lines in a cell, you can apply wrap text to the cell. So, that the text wraps automatically or you can enter a manual line break using `ALT + ENTER` key in edit mode. Use `AllowWrap` API to enable/disable wrap text. You can apply wrap text for a cell in following ways,
 
 1) Method
 
@@ -321,13 +321,13 @@ Clear option is used to clear cell contents, formats or any attached comments fr
 To clear content, format, comment, hyperlink etc. from a cell or range of cells, use clear all option in Spreadsheet. Use [`clearAll`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:clearall "clearAll") method to clear cells via code.
 
 #### Clear Formats
-To clear [`formats`](https://help.syncfusion.com/js/spreadsheet/formatting "formats") in a cell or range of cells use clear formats option in Spreadsheet. Use [`clearAllFormat`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:clearallformat "clearAllFormat") method to clear formats via code.
+To clear [`formats`](https://help.syncfusion.com/aspnet/spreadsheet/formatting "formats") in a cell or range of cells use clear formats option in Spreadsheet. Use [`clearAllFormat`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:clearallformat "clearAllFormat") method to clear formats via code.
 
 #### Clear Contents
 To clear contents in a cell or range of cells use clear contents option in Spreadsheet. Use [`clearContents`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:clearcontents "clearContents") method to clear contents via code.
 
 #### Clear Comments
-To clear [`comment`](https://help.syncfusion.com/js/spreadsheet/cell-range#comment "comments") in a cell or range of cells use clear comments option in Spreadsheet. Use `clearComments` method to clear comments via code.
+To clear [`comment`](https://help.syncfusion.com/aspnet/spreadsheet/cell-range#comment "comments") in a cell or range of cells use clear comments option in Spreadsheet. Use `clearComments` method to clear comments via code.
 
 #### Clear Hyperlinks
-To clear [`hyperlink`](https://help.syncfusion.com/js/spreadsheet/formatting#hyperlink "hyperlink") in a cell or range of cells use clear hyperlink option in Spreadsheet. Use `clearHyperlinks` method to clear hyperlinks via code.
+To clear [`hyperlink`](https://help.syncfusion.com/aspnet/spreadsheet/formatting#hyperlink "hyperlink") in a cell or range of cells use clear hyperlink option in Spreadsheet. Use `clearHyperlinks` method to clear hyperlinks via code.

@@ -18,7 +18,7 @@ This section explains you the steps required to populate the Spreadsheet with da
  ![](Getting-Started_images/Getting-Started_img4.png)
 
 
-The Spreadsheet is rendered based on default `Width` and `Height`. You can also customize the Spreadsheet dimension by setting the [`Width`](http://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-width "width") and [`Height`](http://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-height "height") property in [`ScrollSettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings "scrollSettings").
+The Spreadsheet is rendered based on default `Width` and `Height`. You can also customize the Spreadsheet dimension by setting the `Width` and `Height` property in `ScrollSettings`.
 
 {% highlight html %}
 
@@ -34,7 +34,7 @@ Now, the Spreadsheet is rendered with default row and column count.
 
 ## Populate Spreadsheet with data
 
-Now, this section explains how to populate JSON data to the Spreadsheet. You can set [`DataSource`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-datasource "dataSource") property in [`Sheet`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets "sheet") settings to populate JSON data in Spreadsheet.
+Now, this section explains how to populate JSON data to the Spreadsheet. You can set `DataSource` property in `Sheet` settings to populate JSON data in Spreadsheet.
 
 {% tabs %}
 
@@ -113,11 +113,11 @@ Now, this section explains how to populate JSON data to the Spreadsheet. You can
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
-N> For more details about `data binding` refer following [`link`](http://help.syncfusion.com/js/spreadsheet/data-binding "link")
+N> For more details about `data binding` refer following [`link`](http://help.syncfusion.com/aspnet/spreadsheet/data-binding "link")
 
 ## Apply Conditional Formatting
 
-Conditional formatting helps you to apply formats to a cell or range with certain color based on the cells values. You can use [`AllowConditionalFormats`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowconditionalformats "allowConditionalFormats") property to enable/disable Conditional formats.
+Conditional formatting helps you to apply formats to a cell or range with certain color based on the cells values. You can use `AllowConditionalFormats` property to enable/disable Conditional formats.
 
 To apply conditional formats for a range use [`setCFRule`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcformat-setcfrule "setCFRule") method. The following code example illustrates this,
 
@@ -141,7 +141,7 @@ N> For more details about `Conditional Formatting` refer following [`link`](http
 
 ## Export Spreadsheet as Excel File
 
-The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [`AllowExporting`](http://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") option in [`ExportSettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") as `true`. Since Spreadsheet uses server side event `OnServerExcelExporting` to save documents. The following code example illustrates this,
+The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set `AllowExporting` option in `ExportSettings` as `true`. Since Spreadsheet uses server side event `OnServerExcelExporting` to save documents. The following code example illustrates this,
 
 {% tabs %}
 
@@ -177,9 +177,9 @@ The Spreadsheet can save its data, style, format into an excel file. To enable s
 
 {% endtabs %}
 
-Use shortcut [`Ctrl + S`](http://help.syncfusion.com/js/spreadsheet/keyboard-shortcuts "Ctrl + S") to save Spreadsheet as excel file.
+Use shortcut [`Ctrl + S`](http://help.syncfusion.com/aspnet/spreadsheet/keyboard-shortcuts "Ctrl + S") to save Spreadsheet as excel file.
 
-N> 1. For more details about `Export` refer following [`link`](http://help.syncfusion.com/js/spreadsheet/open-and-save#save "link")
-N> 2. For more details about `Server Configuration` refer following [`link`](http://help.syncfusion.com/js/spreadsheet/open-and-save#server-configuration "link")
+N> 1. For more details about `Export` refer following [`link`](http://help.syncfusion.com/aspnet/spreadsheet/open-and-save#save "link")
+N> 2. For more details about `Server Configuration` refer following [`link`](http://help.syncfusion.com/aspnet/spreadsheet/open-and-save#server-configuration "link")
 
 
