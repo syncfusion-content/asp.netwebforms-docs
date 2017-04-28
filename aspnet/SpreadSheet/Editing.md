@@ -9,9 +9,9 @@ documentation: ug
 
 # Editing 
 
-You can edit the contents of a cell directly in the cell. You can also do this by typing in the formula bar. When you edit the cell, Spreadsheet is operating in edit mode. In editing mode formatting options are not available. You can use [`AllowEditing`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowediting "AllowEditing") property to enable/disable editing feature.
+You can edit the contents of a cell directly in the cell. You can also do this by typing in the formula bar. When you edit the cell, Spreadsheet is operating in edit mode. In editing mode formatting options are not available. You can use `AllowEditing` property to enable/disable editing feature.
 
-N> By default [`AllowEditing`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowediting "AllowEditing") property is set to true.
+N> By default `AllowEditing` property is set to true.
 
 ## Edit cell content
 
@@ -85,7 +85,7 @@ The following output is displayed as a result of the above code example.
 
 ## Read-Only cells
 
-You can restrict/prevent the editing in the specified range. You can use [`AllowLockCell`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowlockcell "AllowLockCell") property to enable/disable the lock cells. You can do using following ways,
+You can restrict/prevent the editing in the specified range. You can use `AllowLockCell` property to enable/disable the lock cells. You can do using following ways,
 
 * Using [`lockCells`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:lockcells "lockCells") method to lock the specified range. Then you need to protect the sheet using [`protectSheet`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:protectsheet "protectSheet") method to restrict the editing.
 * Using "Lock Cells" option under Changes group of REVIEW tab in ribbon. Then Using "Protect Sheet" option under Changes group of REVIEW tab in ribbon to restrict editing.

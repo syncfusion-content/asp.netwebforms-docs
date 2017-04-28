@@ -9,7 +9,7 @@ documentation: ug
 
 # Context Menu
 
-Context Menu is used to improve user interaction with Spreadsheet using popup menu. This will open when right clicking on Cell/Column Header/Row Header/ Pager in Spreadsheet. You can use [`EnableContextMenu`](http://help.syncfusion.com/api/js/ejspreadsheet#members:enablecontextmenu "EnableContextMenu") property to enable/disable context menu. 
+Context Menu is used to improve user interaction with Spreadsheet using popup menu. This will open when right clicking on Cell/Column Header/Row Header/ Pager in Spreadsheet. You can use `EnableContextMenu` property to enable/disable context menu. 
 
 ## Default Context Menu items
 

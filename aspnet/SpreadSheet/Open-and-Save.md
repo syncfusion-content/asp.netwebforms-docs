@@ -25,11 +25,11 @@ function loadFromJSON() {
 {% endhighlight %}
 
 
-When you open an excel file, it needs to be read and converted to client side Spreadsheet model. The converted client side Spreadsheet model is sent as JSON which is used to render Spreadsheet. Similarly, when you save the Spreadsheet, the client Spreadsheet model is sent to the server as JSON for processing and saved. [`Server configuration`](https://help.syncfusion.com/js/spreadsheet/open-and-save#server-configuration "Server configuration") is used for this process.
+When you open an excel file, it needs to be read and converted to client side Spreadsheet model. The converted client side Spreadsheet model is sent as JSON which is used to render Spreadsheet. Similarly, when you save the Spreadsheet, the client Spreadsheet model is sent to the server as JSON for processing and saved. [`Server configuration`](https://help.syncfusion.com/aspnet/spreadsheet/open-and-save#server-configuration "Server configuration") is used for this process.
 
 ## Open 
 
-The Spreadsheet can open excel documents as like excel application with its data, style, format. To enable open option in Spreadsheet set [`AllowImport`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowimport "AllowImport") option as `true`. Since Spreadsheet uses a server side helper to open document, set [`ImportMapper`](http://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings-importmapper "ImportMapper") in [`ImportSettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings "ImportSettings") to map server action.
+The Spreadsheet can open excel documents as like excel application with its data, style, format. To enable open option in Spreadsheet set `AllowImport` option as `true`. Since Spreadsheet uses a server side helper to open document, set `ImportMapper` in `ImportSettings` to map server action.
 
 {% highlight html %}
 
@@ -55,7 +55,7 @@ You can open excel documents in following ways,
 ### Initial settings
 
 The Spreadsheet can load excel documents initially. The document can be specified either from client side or in server side.
-To load excel documents initially from client side, set [`ImportUrl`](http://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings-importurl "ImportUrl") as excel file URL in [`ImportSettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings "ImportSettings"). The code snippets for document initial load on client side are as follows,
+To load excel documents initially from client side, set `ImportUrl` as excel file URL in `ImportSettings`. The code snippets for document initial load on client side are as follows,
 
 {% highlight html %}
 
@@ -65,7 +65,7 @@ To load excel documents initially from client side, set [`ImportUrl`](http://hel
 
 {% endhighlight %}
 
-To load excel documents initially from server side, set [`ImportOnLoad`](http://help.syncfusion.com/api/js/ejspreadsheet#members:importonload "ImportOnLoad") as `true` and assign document stream or URL in the server. The code snippets for document initial load from server side are as follows,
+To load excel documents initially from server side, set `ImportOnLoad` as `true` and assign document stream or URL in the server. The code snippets for document initial load from server side are as follows,
 
 {% highlight html %}
 <ej:Spreadsheet ID="FlatSpreadsheet" AllowImport="true" runat="server">
@@ -167,7 +167,7 @@ You can dynamically open excel document by clicking the file menu in ribbon and 
 
 ## Save
 
-The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [`AllowExporting`](http://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-allowexporting "AllowExporting") option in [`ExportSettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "ExportSettings") as `true`. Since Spreadsheet uses server side event to save documents set `OnServerExcelExporting` option as `Spreadsheet_ServerExcelExporting`
+The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set `AllowExporting` option in `ExportSettings` as `true`. Since Spreadsheet uses server side event to save documents set `OnServerExcelExporting` option as `Spreadsheet_ServerExcelExporting`
 
 {% tabs %}
 

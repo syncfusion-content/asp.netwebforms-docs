@@ -7,7 +7,7 @@ documentation: ug
 ---
 # Data Binding
 
-Spreadsheet can be populated with external datasource using [`Datasource`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-datasource "dataSource") property. The [`Datasource`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-datasource "dataSource") property can be assigned either with the instance of [`ej.DataManager`](http://help.syncfusion.com/api/js/ejdatamanager "ej.DataManager") or List collection. Spreadsheet supports three different kinds of Data binding.
+Spreadsheet can be populated with external datasource using `Datasource` property. The `Datasource` property can be assigned either with the instance of `ej.DataManager` or List collection. Spreadsheet supports three different kinds of Data binding.
 
 * Local Data
 * Remote Data
@@ -15,7 +15,7 @@ Spreadsheet can be populated with external datasource using [`Datasource`](http:
 
 ## Local Data
 
-To bind local data to the Spreadsheet, you can assign a List to the worksheet [`Datasource`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-datasource "dataSource") property. The following code illustrates how to bind local data to the Spreadsheet,
+To bind local data to the Spreadsheet, you can assign a List to the worksheet `Datasource` property. The following code illustrates how to bind local data to the Spreadsheet,
 
 {% tabs %}
 
@@ -90,7 +90,7 @@ The following output is displayed as a result of the above code snippets.
 
 ## Remote Data
 
-To bind remote data to the Spreadsheet, you can assign a service data as an instance of [`ej.DataManager`](http://help.syncfusion.com/api/js/ejdatamanager "ej.DataManager") to the worksheet [`Datasource`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-datasource "dataSource") property. The following code illustrates how to bind remote data to the Spreadsheet,
+To bind remote data to the Spreadsheet, you can assign a service data as an instance of `ej.DataManager` to the worksheet `Datasource` property. The following code illustrates how to bind remote data to the Spreadsheet,
 
 {% tabs %}
 
@@ -129,7 +129,7 @@ The following output is displayed as a result of the above code snippets.
 
 ### Offline Mode
 
-To avoid sending post back request to server on every action, Spreadsheet allows user to create, update and delete data on client side. To enable this, set `offline` property of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager "ej.DataManager") as `true` to fetch all data from server on initial rendering of Spreadsheet and perform all operation on client side.
+To avoid sending post back request to server on every action, Spreadsheet allows user to create, update and delete data on client side. To enable this, set `offline` property of `ej.DataManager` as `true` to fetch all data from server on initial rendering of Spreadsheet and perform all operation on client side.
 
 The following code illustrates offline data binding for Spreadsheet,
 
@@ -167,11 +167,11 @@ The following code illustrates offline data binding for Spreadsheet,
 The following output is displayed as a result of the above code snippets.
 ![](Data-Binding_images/Data-Binding_img2.png)
 
-N> For further reference about `offline` property in [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager "ej.DataManager") refer following [`link`](http://help.syncfusion.com/js/datamanager/data-binding#offline-mode "link")
+N> For further reference about `offline` property in `ej.DataManager` refer following [`link`](http://help.syncfusion.com/aspnet/datamanager/data-binding#offline-mode "link")
 
 ## HTML Table Data
 
-An HTML Table element can also be used as the data source of Spreadsheet. To use HTML Table as data source, the table element should be passed to worksheet [`Datasource`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-datasource "dataSource") property of Spreadsheet as an instance of the [`ej.DataManager`](http://help.syncfusion.com/api/js/ejdatamanager "ej.DataManager"). The following code illustrates how to bind HTML Table data to the Spreadsheet,
+An HTML Table element can also be used as the data source of Spreadsheet. To use HTML Table as data source, the table element should be passed to worksheet `Datasource` property of Spreadsheet as an instance of the `ej.DataManager`. The following code illustrates how to bind HTML Table data to the Spreadsheet,
 
 {% tabs %}
 
@@ -505,7 +505,7 @@ The following output is displayed as a result of the above code snippets.
 
 ### Range Binding
 
-Spreadsheet can bind data for one or more range in a sheet using [`RangeSettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rangesettings "rangeSettings"). The individual range properties are listed below,
+Spreadsheet can bind data for one or more range in a sheet using `RangeSettings`. The individual range properties are listed below,
 
 <table>
     <tr>
@@ -518,23 +518,23 @@ Spreadsheet can bind data for one or more range in a sheet using [`RangeSettings
     </tr>
     <tr>
         <td>
-            {{'[`dataSource`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rangesettings-datasource "dataSource")'| markdownify }}
+            {{'dataSource'| markdownify }}
         </td>
         <td>
-            To specify List or {{'[`ej.DataManager`](http://help.syncfusion.com/api/js/ejdatamanager "ej.DataManager")'| markdownify }}
+            To specify List or {{'ej.DataManager'| markdownify }}
         </td>
     </tr>
     <tr>    
         <td>
-            {{'[`query`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rangesettings-query "query")'| markdownify }}
+            {{'query'| markdownify }}
         </td>
         <td>
-            To specify query for {{'[`ej.DataManager`](http://help.syncfusion.com/api/js/ejdatamanager "ej.DataManager")'| markdownify }}
+            To specify query for {{'ej.DataManager'| markdownify }}
         </td>
     </tr>
     <tr>
         <td>    
-            {{'[`startCell`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rangesettings-startcell "startCell")'| markdownify }}
+            {{'startCell'| markdownify }}
         </td>
         <td>
             To specify start cell of a range
@@ -542,7 +542,7 @@ Spreadsheet can bind data for one or more range in a sheet using [`RangeSettings
     </tr>
     <tr>
         <td>
-            {{'[`primarykey`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rangesettings-primarykey "primarykey")'| markdownify }}
+            {{'primarykey'| markdownify }}
         </td>
         <td>
             To specify data source primary key
@@ -550,7 +550,7 @@ Spreadsheet can bind data for one or more range in a sheet using [`RangeSettings
     </tr>
     <tr>
         <td>
-            {{'[`showHeader`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rangesettings-showheader "showHeader")'| markdownify }}
+            {{'showHeader'| markdownify }}
         </td>
         <td>
             To show data source header
@@ -558,7 +558,7 @@ Spreadsheet can bind data for one or more range in a sheet using [`RangeSettings
     </tr>
     <tr>
         <td>
-            {{'[`headerStyles`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rangesettings-headerstyles "headerStyles")'| markdownify }}
+            {{'headerStyles'| markdownify }}
         </td>
         <td>
             To specify header styles
@@ -625,23 +625,23 @@ Spreadsheet can bind data for a sheet. The individual sheet properties are liste
     </tr>
     <tr>
         <td>
-            {{'[`dataSource`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-datasource "dataSource")'| markdownify }}
+            {{'dataSource'| markdownify }}
         </td>
         <td>
-            To specify List or {{'[`ej.DataManager`](http://help.syncfusion.com/api/js/ejdatamanager "ej.DataManager")'| markdownify }}
-        </td>
-    </tr>
-    <tr>
-        <td>
-            {{'[`query`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-query "query")'| markdownify }}
-        </td>
-        <td>
-            To specify query for {{'[`ej.DataManager`](http://help.syncfusion.com/api/js/ejdatamanager "ej.DataManager")'| markdownify }}
+            To specify List or {{'ej.DataManager'| markdownify }}
         </td>
     </tr>
     <tr>
         <td>
-            {{'[`startCell`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-startcell "startCell")'| markdownify }}
+            {{'query'| markdownify }}
+        </td>
+        <td>
+            To specify query for {{'ej.DataManager'| markdownify }}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'startCell'| markdownify }}
         </td>
         <td>
             To specify start cell of a range
@@ -649,7 +649,7 @@ Spreadsheet can bind data for a sheet. The individual sheet properties are liste
     </tr>
     <tr>
         <td>
-            {{'[`primarykey`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-primarykey "primarykey")'| markdownify }}
+            {{'primarykey'| markdownify }}
         </td>
         <td>
             To specify data source primary key
@@ -657,7 +657,7 @@ Spreadsheet can bind data for a sheet. The individual sheet properties are liste
     </tr>
     <tr>
         <td>
-            {{'[`showHeader`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-showheader "showHeader")'| markdownify }}
+            {{'showHeader'| markdownify }}
         </td>
         <td>
             To show data source header
@@ -665,7 +665,7 @@ Spreadsheet can bind data for a sheet. The individual sheet properties are liste
     </tr>
     <tr>
         <td>
-            {{'[`headerStyles`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-headerstyles "headerStyles")'| markdownify }}
+            {{'headerStyles'| markdownify }}
         </td>
         <td>
             To specify header styles
@@ -673,7 +673,7 @@ Spreadsheet can bind data for a sheet. The individual sheet properties are liste
     </tr>
     <tr>
         <td>
-            {{'[`fieldAsColumnHeader`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-fieldascolumnheader  "fieldAsColumnHeader")'| markdownify }}
+            {{'fieldAsColumnHeader'| markdownify }}
         </td>
         <td>
             To show data source fields in column header

@@ -9,7 +9,7 @@ documentation: ug
 
 # Searching
 
-This feature is used to search the contents in the Spreadsheet. You can use [`AllowSearching`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowsearching "AllowSearching") property to enable or disable this feature.
+This feature is used to search the contents in the Spreadsheet. You can use `AllowSearching` property to enable or disable this feature.
 
 You have following options in Searching.
 
