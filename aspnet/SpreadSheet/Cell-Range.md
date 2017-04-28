@@ -22,7 +22,7 @@ You have following features in Cell Range,
 
 ## Comment
 
-Comment is used to give additional information for an individual cell about the data it contains. When a cell has a comment, a red indicator appears in the corner of the cell. When mouse hover on the cell, the comment will appear. You can use [`AllowComments`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowcomments "allowComments") property to enable/disable comments. 
+Comment is used to give additional information for an individual cell about the data it contains. When a cell has a comment, a red indicator appears in the corner of the cell. When mouse hover on the cell, the comment will appear. You can use `AllowComments` property to enable/disable comments. 
 
 ### To insert a Comment
 
@@ -91,7 +91,7 @@ The following output is displayed as a result of the above code example.
 
 ## Cell Navigation
 
-Cell navigation is used to navigate through the cells using keyboard. You can use [`AllowKeyBoardNavigation`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowkeyboardnavigation "allowKeyboardNavigation") property to enable/disable cell navigation. The following list of keys used for cell navigation are,
+Cell navigation is used to navigate through the cells using keyboard. You can use `AllowKeyBoardNavigation` property to enable/disable cell navigation. The following list of keys used for cell navigation are,
 
 <table>
 <colgroup><col width="180px" /></colgroup>
@@ -123,7 +123,7 @@ N> In the above table, "Ctrl + Home" and "Ctrl + End" is based on the used range
 
 ## Data Validation
 
-Data Validation is used to restrict the user to enter the invalid data. You can use [`AllowDataValidation`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowdatavalidation "allowDataValidation") property to enable/disable data validation. 
+Data Validation is used to restrict the user to enter the invalid data. You can use `AllowDataValidation` property to enable/disable data validation. 
 
 N> The below validation script files are needed for validation.
 N> * jquery.validate.min.js
@@ -290,7 +290,7 @@ The following output is displayed as a result of the above code example.
 
 ## Drag and Drop
 
-Drag and drop is used to pick a selected cells and drop it into a new place on the worksheet. You can use [`AllowDragAndDrop`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowdraganddrop "allowDragAndDrop") property to enable/disable drag and drop. 
+Drag and drop is used to pick a selected cells and drop it into a new place on the worksheet. You can use `AllowDragAndDrop` property to enable/disable drag and drop. 
 
 You can do this by one of the following ways,
 
@@ -344,7 +344,7 @@ The following output is displayed as a result of the above code example.
 
 ## Auto Fill
 
-Auto Fill is used to fill the cells with data based on adjacent cells. It also follows a pattern from adjacent cells if available. There is no need to enter the repeated data manually. You can use [`AllowAutoFill`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowautofill "allowautofill") property to enable/disable the auto fill support. You can also use [`ShowFillOptions`](http://help.syncfusion.com/api/js/ejspreadsheet#members:autofillsettings-showfilloptions "showFillOptions") property to enable/disable the fill option and [`FillType`](http://help.syncfusion.com/api/js/ejspreadsheet#members:autofillsettings-filltype "FillType") property to change the default auto fill option which is available in [`AutoFillSettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:autofillsettings "autoFillSettings"). 
+Auto Fill is used to fill the cells with data based on adjacent cells. It also follows a pattern from adjacent cells if available. There is no need to enter the repeated data manually. You can use `AllowAutoFill` property to enable/disable the auto fill support. You can also use `ShowFillOptions` property to enable/disable the fill option and `FillType` property to change the default auto fill option which is available in `AutoFillSettings`. 
 
 You can do this by one of the following ways,
 
@@ -359,7 +359,7 @@ In Auto Fill we have following options,
 * Fill Without Formatting
 * Flash Fill
 
-N> The default auto fill option is "FillSeries" which can be referred from [`FillType`](http://help.syncfusion.com/api/js/ejspreadsheet#members:autofillsettings-filltype "fillType") property.
+N> The default auto fill option is "FillSeries" which can be referred from `FillType` property.
 
 #### Copy Cells
 
@@ -498,7 +498,7 @@ The following output is displayed as a result of the above code example.
 
 ## Hyperlink
 
-Hyperlink is used to navigate to web links or cell reference within the sheet or to other sheets in Spreadsheet. You can use [`AllowHyperLink`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowhyperlink "allowHyperlink") property to enable/disable Hyperlink.
+Hyperlink is used to navigate to web links or cell reference within the sheet or to other sheets in Spreadsheet. You can use `AllowHyperLink` property to enable/disable Hyperlink.
 
 ### To insert a Hyperlink
 
@@ -569,7 +569,7 @@ The following output is displayed as a result of the above code example.
 
 ## Merge Cell
 
-Merge cell is a single cell created by combining two or more individual cells together. You can use [`AllowMerging`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowmerging "allowMerging") property to enable/disable merge cells. The cell reference for a merged cell is the cell in the upper left corner of the original selected range or group of cells. 
+Merge cell is a single cell created by combining two or more individual cells together. You can use `AllowMerging` property to enable/disable merge cells. The cell reference for a merged cell is the cell in the upper left corner of the original selected range or group of cells. 
 
 You have following options in Merge Cell,
 
