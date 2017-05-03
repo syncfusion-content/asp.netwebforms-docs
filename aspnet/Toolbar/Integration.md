@@ -42,7 +42,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
 <head runat="server">
 
-    <title>Essential Studio for JavaScript :Angular JS Support for Toolbar</title>
+    <title>Essential Studio for JavaScript :AngularJS Support for Toolbar</title>
 
     <link href=" http://cdn.syncfusion.com/ {{site.releaseversion}}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
@@ -318,7 +318,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
 <head runat="server">
 
-    <title>Essential Studio for JavaScript :Angular JS Support for Toolbar</title>
+    <title>Essential Studio for JavaScript :AngularJS Support for Toolbar</title>
 
     <link href=" http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 

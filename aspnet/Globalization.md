@@ -80,22 +80,22 @@ Upon changing the cultures in DropDownList, the DatePicker control will be refle
 
     <script type="text/javascript">
         $(function () {
-            var ddobject = $("#<%=culture.ClientID%>").data("ejDropDownList");
+            var ddlobject = $("#<%=culture.ClientID%>").data("ejDropDownList");
             $("#sampleProperties").ejPropertiesPanel();
         });
         function onChange(args) {
-            var datebject = $("#<%=datelocalization.ClientID%>").data("ejDatePicker");
+            var dateobject = $("#<%=datelocalization.ClientID%>").data("ejDatePicker");
             // localizable text
             if (args.text == "vi-VN") {
-                datebject.option({ buttonText: "Hôm nay" });
+                dateobject.option({ buttonText: "Hôm nay" });
             }
             else if (args.text == "fr-FR") {
-                datebject.option({ buttonText: "aujourd'hui" });
+                dateobject.option({ buttonText: "aujourd'hui" });
             }
             else {
-                datebject.option({ buttonText: "Today" });
+                dateobject.option({ buttonText: "Today" });
             }
-            datebject.setModel({ locale: args.text });
+            dateobject.setModel({ locale: args.text });
         }
 
     </script>
