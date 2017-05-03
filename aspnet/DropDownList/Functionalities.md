@@ -368,7 +368,7 @@ The below given example explains the behavior of grouping with List data binding
             VegeList.Add(new VegetableList { Name = "Cabbage", Category = "Leafy and Salad" });
             VegeList.Add(new VegetableList { Name = "Pea", Category = "Leafy and Salad" });
             VegeList.Add(new VegetableList { Name = "Spinach", Category = "Leafy and Salad" });
-            VegeList.Add(new VegetableList { Name = "Wheatgrass", Category = "Leafy and Salad" });
+            VegeList.Add(new VegetableList { Name = "Wheat grass", Category = "Leafy and Salad" });
             VegeList.Add(new VegetableList { Name = "Yarrow", Category = "Leafy and Salad" });
             VegeList.Add(new VegetableList { Name = "Chickpea", Category = "Beans" });
             VegeList.Add(new VegetableList { Name = "Green bean", Category = "Beans" });
@@ -502,8 +502,8 @@ Configuring the data items for cascading to the series of DropDownList is demons
     {% highlight js %}
 
         function onChange() {
-            var ctry = $('#<%=countryList.ClientID%>').data("ejDropDownList");
-            ctry.element.val("");
+            var country = $('#<%=countryList.ClientID%>').data("ejDropDownList");
+            country.element.val("");
         }
 
     {% endhighlight %}
@@ -543,12 +543,12 @@ Configuring the data items for cascading to the series of DropDownList is demons
             public string parentId { get; set; }
             public string text { get; set; }
             public string sprite { get; set; }           
-            public CountryList(int cvalue, string cid, string ctext, string sprt)
+            public CountryList(int cvalue, string cid, string ctext, string spriteclass)
             {
                 this.value = cvalue;
                 this.parentId = cid;
                 this.text = ctext;
-                this.sprite = sprt;
+                this.sprite = spriteclass;
                
             }
         }
@@ -602,8 +602,8 @@ Bind the data source to the cascading DropDownList dynamically using ClientSideE
     {% highlight js %}
 
         function onChange() {
-            var ctry = $('#<%=DropDownList2.ClientID%>').data("ejDropDownList");
-            ctry.enable();
+            var country = $('#<%=DropDownList2.ClientID%>').data("ejDropDownList");
+            country.enable();
             var player = $('#<%=DropDownList3.ClientID%>').data("ejDropDownList");
             player.enable();
         }
@@ -743,12 +743,12 @@ The below scenario can be explained with three DropDownList for the multi-level 
         public string parentId { get; set; }
         public string text { get; set; }
         public string sprite { get; set; }
-        public CountryList(int cvalue, string cid, string ctext, string sprt)
+        public CountryList(int cvalue, string cid, string ctext, string spriteclass)
         {
             this.value = cvalue;
             this.parentId = cid;
             this.text = ctext;
-            this.sprite = sprt;
+            this.sprite = spriteclass;
 
         }
     }
@@ -786,12 +786,12 @@ The below scenario can be explained with three DropDownList for the multi-level 
      
      <script type="text/javascript">
         function onChange() {
-            var ctry = $('#<%=countryList.ClientID%>').data("ejDropDownList");
-            ctry.element.val("");
+            var country = $('#<%=countryList.ClientID%>').data("ejDropDownList");
+            country.element.val("");
         }
         function onSelect() {
-            var ctry = $('#<%=capitalList.ClientID%>').data("ejDropDownList");
-            ctry.element.val("");
+            var country = $('#<%=capitalList.ClientID%>').data("ejDropDownList");
+            country.element.val("");
         }
     </script>
     

@@ -36,7 +36,7 @@ The following example shows the way to bind data to the TagCloud control by usin
 
 <head>
 
-    <title>Essential Studio for JavaScript : Angular JS Support for Tagcloud </title>
+    <title>Essential Studio for JavaScript : AngularJS Support for Tagcloud </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
 

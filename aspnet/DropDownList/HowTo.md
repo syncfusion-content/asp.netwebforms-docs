@@ -144,7 +144,7 @@ The items can be added to the DropDownList in DataBound event using a generic Da
         {
             // Create a DataView to get the current datasource from DropDownList
             DataView ddDataSource = (DataView)DropDown.DataSource;
-            //Initialze a row element for the DataView created
+            //Initialize a row element for the DataView created
             DataRow dr = ddDataSource.Table.NewRow();
             if (sender == DropDown)
             {

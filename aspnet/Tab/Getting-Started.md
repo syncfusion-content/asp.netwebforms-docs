@@ -620,7 +620,7 @@ Add the third Tab content with the header image in the <ej:Tab > element during 
 
                                 Rate : $55<br />
 
-                                Ingredients : tomato ,olive, oninor &amp;garlic.<br />
+                                Ingredients : tomato ,olive, onion &amp;garlic.<br />
 
                                 Description: Canned tuna is used to make this yummy tomato sauce.
 
@@ -644,9 +644,9 @@ Add the third Tab content with the header image in the <ej:Tab > element during 
 
                                 Rate : $30<br />
 
-                                Ingredients : sautered spinach mix, sweet corn, parsley &amp;mozarella cheese. .<br />
+                                Ingredients : sauntered spinach mix, sweet corn, parsley &amp;mozzarella cheese. .<br />
 
-                                Description: This is a pasta dish make with leftover channa masala (chole). This can be made from scratch too by making the channa masala first and then tossing in the cooked pasta.
+                                Description: This is a pasta dish make with leftover Channa masala (choler). This can be made from scratch too by making the Channa masala first and then tossing in the cooked pasta.
 
                             </p>
 
