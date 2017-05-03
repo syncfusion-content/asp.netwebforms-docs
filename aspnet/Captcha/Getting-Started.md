@@ -114,7 +114,7 @@ This method is used to handle AJAX post when refresh and validation actions are 
 
 {% highlight c# %}
 
-    public static string GetCurrentItme(Dictionary<object, object> captchaModel)
+    public static string GetCurrentItem(Dictionary<object, object> captchaModel)
 
     {
 

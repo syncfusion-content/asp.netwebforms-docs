@@ -346,7 +346,7 @@ Add the following script code to provide KO support .
 
             { id: 13, parentId: 1, text: "Spinach" },
 
-            { id: 14, parentId: 1, text: "Wheatgrass" },
+            { id: 14, parentId: 1, text: "Wheat grass" },
 
             { id: 15, parentId: 1, text: "Yarrow" },
 

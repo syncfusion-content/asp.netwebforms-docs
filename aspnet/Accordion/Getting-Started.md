@@ -45,7 +45,7 @@ The following steps describe the creation of Accordion control.
 
                             <li>
 
-                                <h5>Pdf  </h5>
+                                <h5>PDF  </h5>
 
                             </li>
 
@@ -213,7 +213,7 @@ You can also open all the panels during initialization by using the SelectedItem
 
                         <li>
 
-                            <h5>Pdf  </h5>
+                            <h5>PDF  </h5>
 
                         </li>
 
@@ -375,7 +375,7 @@ N> ShowRoundedCorner _property is False by default.
 
                         <li>
 
-                            <h5>Pdf  </h5>
+                            <h5>PDF  </h5>
 
                         </li>
 
@@ -543,7 +543,7 @@ Up/Down arrow icons are available in e-arrowheadup and e-arrowheaddown classes r
 
                         <li>
 
-                            <h5>Pdf  </h5>
+                            <h5>PDF  </h5>
 
                         </li>
 

@@ -58,13 +58,13 @@ public class SaveFiles : IHttpHandler
 
                 string fileName = uploadedFiles[i].FileName;
 
-                int indx = fileName.LastIndexOf("\\");
+                int index = fileName.LastIndexOf("\\");
 
-                if (indx > -1)
+                if (index > -1)
 
                 {
 
-                    fileName = fileName.Substring(indx + 1);
+                    fileName = fileName.Substring(index + 1);
 
                 }
 
