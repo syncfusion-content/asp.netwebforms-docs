@@ -9,13 +9,13 @@ documentation: ug
 
 # Localization
 
-## Localization in PivotClient control
+## Localization in pivot client control
 
-We can localize the PivotClient control texts with a collection of localized strings using **"ej.PivotClient.Locale"** for different cultures.
+You can localize the pivot client control texts with a collection of localized strings by using the **"ej.PivotClient.Locale"** for different cultures.
 
-N> By default, the PivotClient control is localized in **"en-US".**
+N> By default, the pivot client control is localized in **"en-US".**
 
-Following code example illustrates on how to localize PivotClient based on **"French"** culture.
+Following code example illustrates how to localize the pivot client based on **"French"** culture:
 
 {% highlight html %}
 
@@ -62,7 +62,7 @@ Following code example illustrates on how to localize PivotClient based on **"Fr
 
 {% endhighlight  %}
 
-Following table localizes the in-built keywords to **"French"** culture for PivotClient.
+Following table localizes the in-built keywords to **"French"** culture for the pivot client:
 
 <table>
 <tr>
@@ -636,12 +636,12 @@ Types de graphiques</td></tr>
 
 
 
-## Localization and Globalization of Cube Info (Client Mode)
+## Localization and globalization of cube info (client mode)
 
-Content displayed within the PivotClient control are obtained from the OLAP Cube. Following are the steps to get the localized and globalized cube content.
+The content displayed within the pivot client control is obtained from the OLAP cube.
 
-* To get localized data from OLAP cube, we need to set **"Locale Identifier"** in the connection string to a specific culture in the **"Data"** property present inside **"DataSource"**. 
-* To bind the globalized content in PivotClient control, we need to set **"Locale"** property to a specific culture and the specific culture file is referred in the sample.
+* To get localized data from OLAP cube, set the **"Locale Identifier"** in the connection string to a specific culture in the **"Data"** property present in the **"DataSource"**.
+* To bind the globalized content in the pivot client control, set the **"Locale"** property to a specific culture and the specific culture file is referred in the sample.
    
  
 N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\Web\Samples\Web\Scripts\cultures".**
@@ -655,12 +655,12 @@ N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppD
 
 ![](Localization_images/localization.png)
 
-## Localization and Globalization of Cube Info (Server Mode)
+## Localization and globalization of cube info (server mode)
 
-Content displayed within the PivotClient control are obtained from the OLAP cube. Following are the steps to get the localized and globalized Cube content.
+The content displayed within the pivot client control is obtained from the OLAP cube.
  
-* To get the localized string based on different cultures, from OLAP cube, you need to set **"Locale Identifier"** in the connection string to a specific culture.
-* To bind the globalized content in PivotClient control, you need to set **"Culture"** and `OverrideDefaultFormatStrings` properties in OlapDataManager class to a specific culture. 
+* To get the localized string based on different cultures, set the **"Locale Identifier"** in the connection string to a specific culture in the OLAP cube.
+* To bind the globalized content in the pivot client control, set the **"Culture"** and `OverrideDefaultFormatStrings` properties in the OlapDataManager class to a specific culture.
 
 {% highlight c# %}
 
@@ -676,11 +676,11 @@ Content displayed within the PivotClient control are obtained from the OLAP cube
 ![](Localization_images/localization-servermode.png)
 
 
-## Localization and Globalization of Relational Info (Client Mode)
-Content displayed within the PivotClient control are obtained from the Relational datasource. Following are the steps to get localized as well as globalized content.
+## Localization and globalization of relational info (client mode)
+The content displayed within the pivot client control is obtained from the relational data source.
  
-* To get the localized content, the Relational datasource must have localized headers in them which will be directly applied to PivotClient.  
-* To globalize the values appeared in PivotClient, we need to set the **"Format"** and **"Locale"** property accordingly.  Also the specific culture file is referred in the sample. 
+* To get the localized content, the relational data source must have localized headers in them which will be directly applied to pivot client.
+* To globalize the values appeared in the pivot client, set the **"Format"** and **"Locale"** properties accordingly. Also the specific culture file is referred in the sample.
 
 N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\Web\Samples\Web\Scripts\cultures".** 
  
@@ -704,11 +704,11 @@ N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppD
 
 ![](Localization_images/relational-localization.png)
 
-## Localization and Globalization of Relational Info (Server Mode)
-Content displayed within the PivotClient control are obtained from the Relational datasource. Following are the steps to get localized as well as globalized content.
+## Localization and globalization of relational info (server mode)
+The content displayed within the pivot client control is obtained from the relational data source.
  
-* To get the localized content, the Relational datasource must have localized headers in them which will be directly applied to PivotClient.  
-* **“Format”** settings in PivotComputationInfo class would globalize the values appeared in PivotClient.
+* To get the localized content, the relational data source must have localized headers in them which will be directly applied to the pivot client.
+* **“Format”** settings in PivotComputationInfo class will globalize the values appeared in the pivot client.
 
 {% highlight c# %}
 
@@ -725,7 +725,7 @@ Content displayed within the PivotClient control are obtained from the Relationa
 
 ## RTL
 
-You can render our PivotClient control from Right to Left by setting `EnableRTL` property to true.
+You can render the pivot client control from right to left by setting the `EnableRTL` property to true.
 
 {% highlight html %}
 

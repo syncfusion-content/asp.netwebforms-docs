@@ -8,21 +8,21 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting started
 
-## Creating a simple application with PivotGrid and Relational datasource (Client Mode)
+## Creating a simple application with pivot grid and relational data source (client mode)
 
-This section covers the information that you need to know to populate a simple PivotGrid with Relational data completely on the client-side.
+This section covers the information required to populate a simple pivot grid with relational data completely on the client-side.
 
-### Project Initialization
+### Project initialization
 
-Create a new **ASP.NET Empty Web Application** using Visual Studio IDE and name the project as **“PivotGridDemo”**.
+Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project **“PivotGridDemo”**.
 
-Now add a “Web Form” to the Empty Web Application. For adding a “Web Form”, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select “Web Form” and name it as `GettingStarted.aspx` and click “Add”.
+Now, add a web form to the empty web application. For adding a web form, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select web form and name it `GettingStarted.aspx`, and then click Add.
 
-To set an appropriate start page, right-click on the **“GettingStarted.aspx”** in Solution Explorer and select **“Set As Start Page”**.  
+To set an appropriate start page, right-click the **“GettingStarted.aspx”** in the solution explorer and select **“Set As Start Page”**.
 
-Now add the following dependency libraries as references into your Web Application. In order to add them to your application, right-click on **References** in Solution Explorer and select Add Reference. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
+Now, add the following dependency libraries as references to your web application. To add them to your application, right-click **References** in the solution explorer and select Add Reference. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
 
 * Syncfusion.EJ
 * Syncfusion.EJ.Pivot
@@ -42,15 +42,15 @@ Register the referenced assemblies in Web.config files available at the root of 
 </compilation>
 {% endhighlight %}
 
-### Scripts and CSS References  
+### Scripts and CSS references 
 
-create a GettingStarted.aspx page and scripts and style sheets that are mandatorily required to render PivotGrid control in a Web Application are mentioned in an appropriate order below:
+create a GettingStarted.aspx page, and scripts and style sheets that are required to render the pivot grid control in a web application are mentioned below in an appropriate order:
 
 1. ej.web.all.min.css
 2. jQuery-3.0.0.min.js
 3. ej.web.all.min.js
 
-Scripts and style sheets are referred under the <head> tag in GettingStarted.aspx page.
+Scripts and style sheets are referred under the <head> tag in the GettingStarted.aspx page.
 
 {% highlight html %}    
 
@@ -63,9 +63,9 @@ Scripts and style sheets are referred under the <head> tag in GettingStarted.asp
 
 {% endhighlight %}
 
-### Initialize PivotGrid
+### Initialize pivot grid
 
-Either drag and drop the PivotGrid control from the toolbox (under Syncfusion BI Web category) or manually define the control like in the below code sample inside "GettingStarted.aspx" page.
+You can drag and drop the pivot grid control from the toolbox (under Syncfusion BI Web category) or manually define the control as shown in the following code sample of the "GettingStarted.aspx" page.
 
 {% highlight html %}
 
@@ -88,8 +88,8 @@ Either drag and drop the PivotGrid control from the toolbox (under Syncfusion BI
 
 {% endhighlight %}
 
-### Populate PivotGrid With Data
-Let us now see how to populate the PivotGrid control using a sample JSON data as shown below.
+### Populate pivot grid with data
+This section illustrates how to populate the pivot grid control using a sample JSON data as shown below:
 
 {% highlight html %}
 
@@ -130,7 +130,7 @@ Let us now see how to populate the PivotGrid control using a sample JSON data as
      
 {% endhighlight %}
      
-The JSON data is set to the **"data"** property present inside the **"dataSource"** object. **"dataSource"** object allows us to set both datasource as well as the fields that needs to be displayed in the row, column, value and filter section of the PivotGrid control.
+The JSON data is set to the **"Data"** property present in the **"DataSource"** object. The **"DataSource"** object allows you to set both the data source and fields that should be displayed in the row, column, value, and filter section of the pivot grid control.
 
 {% highlight html %}
   
@@ -152,13 +152,13 @@ The JSON data is set to the **"data"** property present inside the **"dataSource
 
 {% endhighlight %}
 
-The above code will generate a simple PivotGrid with "Country" field in Row, "Product" field in Column and "Amount" field in Value section.
+The above code will generate a simple pivot grid with "Country" field in the row, "Product" field in the column, and "Amount" field in the value section.
 
 ![](Getting-Started_images/purejs.png)
 
-### Apply Sorting
+### Apply sorting
 
-You can sort a field either to ascending or descending order using the "sortOrder" property. Sorting is applicable only for Row and Column fields. By default, fields are arranged in ascending order.
+You can sort a field to ascending or descending order by using the **"SortOrder"** property. The sorting is applicable only for row and column fields. By default, the fields are arranged in the ascending order.
  
 {% highlight html %}
 
@@ -182,14 +182,14 @@ You can sort a field either to ascending or descending order using the "sortOrde
 
 ![](Getting-Started_images/purejssorting.png)
 
-### Apply Filtering
+### Apply filtering
 
-Filtering option allows you to specify a set of values that either need to be displayed or hided. Also filtering option is applicable only for Row, Column and Filter areas.
+The filtering option allows you to specify a set of values that should be displayed or hidden. Also, the filtering option is applicable only for the row, column, and filter areas.
 
-**"filterItems"** object allow us to apply filtering to the fields using the following properties:
+**"filterItems"** object allows you to apply filtering to fields by using the following properties:
 
-* filterType -  indicates whether the values should be included or excluded.
-* values -  specify an array of values that needs to be included or excluded within the particular field.
+* filterType: indicates whether the values should be included or excluded.
+* values: specifies an array of values that should be included or excluded within the particular field.
 
 {% highlight html %}
 
@@ -215,7 +215,7 @@ Filtering option allows you to specify a set of values that either need to be di
 
 {% endhighlight %}
 
-The values for filtering are given in the GettingStarted.aspx.cs as shown in the below snippet.
+The values for filtering are given in the GettingStarted.aspx.cs file as shown in the following snippet:
 
 {% highlight html %}
 
@@ -229,9 +229,9 @@ protected void Page_Load(object sender, EventArgs e)
 
 ![](Getting-Started_images/purejsfiltering.png)
 
-### Apply Summary Types
+### Apply summary types
 
-Allow us to specify the required summary type that PivotGrid should use in its summary cells. **"Sum"** is the default summary type. Following are the summary types that are supported:
+Allows you to specify the required summary type to be used in summary cells of the pivot grid. **"Sum"** is the default summary type. Following are the summary types that are supported:
 
 * Sum
 * Average
@@ -262,21 +262,21 @@ Allow us to specify the required summary type that PivotGrid should use in its s
 
 ![](Getting-Started_images/purejssummarytype.png)
 
-## Creating a simple application with PivotGrid and Relational datasource(Server Mode)
+## Creating a simple application with pivot grid and relational data source(server mode)
 
-This section covers the information required to create a simple PivotGrid bound to Relational datasource. 
+This section covers the information required to create a simple pivot grid bound to the relational data source.
 
-N> ASP.NET MVC Web Application will contain a service that transfers data to server-side, processes and returns back to client-side for control rendering and re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement.
+N> ASP.NET MVC web application contains a service that will transfer the data to server-side, process it, and return it to client-side for control rendering and re-rendering. The service utilized for communication can be either the WCF or WebAPI based on user requirement.
 
-### Project Initialization
+### Project initialization
 
-Create a new **ASP.NET Empty Web Application** using Visual Studio IDE and name the project as **“PivotGridDemo”**.
+Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project **“PivotGridDemo”**.
 
-Now add a “Web Form” to the Empty Web Application. For adding a “Web Form”, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select “Web Form” and name it as `GettingStarted.aspx` and click “Add”.
+Now, add a web form to the empty web application. For adding a web form, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select web form and name it `GettingStarted.aspx`, and then click Add.
 
-To set an appropriate start page, right-click on the **“GettingStarted.aspx”** in Solution Explorer and select **“Set As Start Page”**.
+To set an appropriate start page, right-click the **“GettingStarted.aspx”** in the solution explorer and select **“Set As Start Page”**.
 
-Now add the following dependency libraries as references into your Web Application. In order to add them to your application, right-click on **References** in Solution Explorer and select **Add Reference**. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.  
+Now, add the following dependency libraries as references to your web application. To add them to your application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
 
 * Syncfusion.Compression.Base
 * Syncfusion.Linq.Base
@@ -293,17 +293,17 @@ Now add the following dependency libraries as references into your Web Applicati
 
 N> If any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility is installed, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET].
 
-### Scripts and CSS Initialization
+### Scripts and CSS initialization
 
-The scripts and style sheets that are mandatorily required to render PivotGrid control in a Web Application are mentioned in an appropriate order below:
+The scripts and style sheets that are required to render the control in a web application are mentioned below in an appropriate order:
 
 1. ej.web.all.min.css
 2. jQuery-3.0.0.min.js
 3. ej.web.all.min.js
 
-[Click here](http://help.syncfusion.com/js/cdn) to know more about scripts and style sheets available online (CDN Link).
+[Click here](http://help.syncfusion.com/js/cdn) to know more about scripts and style sheets available in online (CDN link).
 
-Scripts and style sheets are referred under the <head> tag in **GettingStarted.aspx** page.
+Scripts and style sheets are referred under the <head> tag in the **GettingStarted.aspx** page.
 
 {% highlight html %}
 
@@ -315,11 +315,11 @@ Scripts and style sheets are referred under the <head> tag in **GettingStarted.a
 
 {% endhighlight %}
 
-### Control Initialization
+### Control initialization
 
-Either drag and drop the **PivotGrid** control from the toolbox (under **Syncfusion BI Web** category) or manually define the control like in the below code sample inside **"GettingStarted.aspx"** page.
+You can drag and drop the **pivot grid** control from the toolbox (under **Syncfusion BI Web** category) or manually define the control as shown in the following code sample of the **"GettingStarted.aspx"** page.
  
-Once the control is placed into the web page, add **'ScriptManager'** next to it in-order to generate appropriate scripts.
+After placing the control in the web page, add the **'ScriptManager'** next to it to generate appropriate scripts.
 
 {% highlight html %}
 
@@ -339,11 +339,11 @@ Once the control is placed into the web page, add **'ScriptManager'** next to it
 
 {% endhighlight %}
 
-The **“Url”** property in PivotGrid control points the service endpoint, where data are processed and fetched in the form of JSON. The services used in PivotGrid control as endpoint are WCF and WebAPI.
+The **Url** property in the pivot grid control points the service endpoint, where the data is processed and fetched in the form of JSON. The services used in the pivot grid control as endpoint are WCF and WebAPI.
 
-N> The above “GettingStarted.aspx” contains WebAPI URL, which is “/Relational”. If WCF service is used as endpoint, the URL would look like “/RelationalService.svc”.
+N> The above “GettingStarted.aspx” contains WebAPI URL, which is “/Relational”. If the WCF service is used as an endpoint, then the URL will look like “/RelationalService.svc”.
 
-If you are manually entering the code instead of drag and drop operation from toolbox, then you need to register the referenced assemblies in Web.config file. 
+If you enter the code manually instead of drag and drop from the toolbox, then you need to register the referenced assemblies in the Web.config file.
 
 {% highlight xml %}
 
@@ -370,15 +370,15 @@ If you are manually entering the code instead of drag and drop operation from to
 
 ### WebAPI
 
-**Adding a WebAPI Controller**
+**Adding a WebAPI controller**
 
-To add a WebAPI controller in an existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **WebAPI Controller Class** and name it as `RelationalController.cs`, click Add.
+To add a WebAPI controller in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **WebAPI Controller Class** and name it `RelationalController.cs`, and then click Add.
 
-Now, WebAPI controller is added to the application successfully containing the file **"RelationalController.cs"**.
+Now, the WebAPI controller is added to the application that contains the **"RelationalController.cs"** file.
 
-N> While adding WebAPI Controller Class, name it with the suffix 'Controller' that is mandatory. For example, in this demo the controller is named as "RelationalController".
+N> While adding the WebAPI controller class, add the mandatory suffix 'Controller'. For example, in this demo, the controller is named "RelationalController".
 
-Next, remove all the existing methods such as "Get", "Post", "Put" and "Delete" present inside `RelationalController.cs` file.
+Next, remove all the existing methods such as "Get", "Post", "Put", and "Delete" present in the `RelationalController.cs` file.
 
 {% highlight c# %}
 
@@ -392,9 +392,9 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
-**Adding the List of Namespaces**
+**Adding the list of namespaces**
 
-The following are the list of namespaces to be added on top of the main class inside `RelationalController.cs` file.
+The following are the list of namespaces to be added on top of the main class in the `RelationalController.cs` file:
 
 {% highlight c# %}
 
@@ -421,9 +421,9 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
-**Datasource Initialization**
+**Data source initialization**
 
-A simple collection is provided as a datasource for our PivotGrid in this demo section. This datasource is placed inside a separate class named "ProductSales" in `RelationalController.cs` file. Please find the code sample below.
+A simple collection is provided as a data source for the pivot grid in this demo section. This data source is placed inside a separate class named "ProductSales" in the `RelationalController.cs` file. Find the code sample below:
 
 {% highlight c# %}
 
@@ -536,9 +536,9 @@ internal class ProductSales
 
 {% endhighlight %}
 
-**Service methods in WebAPI Controller**
+**Service methods in WebAPI controller**
 
-Now you need to define the service methods inside RelationalController class, found inside `RelationalController.cs` file, created while adding WebAPI Controller Class to your Web Application.
+Now, you can define the service methods in the RelationalController class, find in the `RelationalController.cs` file which was created while adding the WebAPI controller class to your web application.
 
 {% highlight c# %}
 
@@ -747,9 +747,9 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
-**Configure routing in Global Application Class**
+**Configure routing in global application class**
 
-To add a Global.asax, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **Global Application Class** and name it as `Global.asax`, click **Add**. After the addition of **Global.asax** file, immediately add the namespace **“using System.Web.Http;”** and then you can configure routing like in the following code example.
+To add a Global.asax, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **Global Application Class** and name it `Global.asax`, and then click **Add**. After adding the **Global.asax** file, immediately add the namespace **“using System.Web.Http;”**, and then configure the routing as shown in the following code example:
 
 {% highlight c# %}
 
@@ -767,13 +767,13 @@ public class Global: System.Web.HttpApplication
 
 {% endhighlight %}
 
-Now, **PivotGrid** will be rendered with Sales Amount over a set of products across different customer geographic locations.
+Now, the **pivot grid** will be rendered with sales amount over a set of products across different customer geographic locations.
 
 ![](Getting-Started_images/relational.png) 
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotGrid. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/pivotgrid/relational-connectivity#wcf-1).
+This section demonstrates the utilization of WCF service as an endpoint binding relational data source to a simple pivot grid. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/pivotgrid/relational-connectivity#wcf-1).
 
 
 

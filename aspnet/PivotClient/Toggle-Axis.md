@@ -7,9 +7,9 @@ control: PivotClient
 documentation: ug
 ---
 
-# Toggle Axis
+# Toggle axis
 
-Toggle Axis support swaps all the axis elements between column and row axes, thereby refreshing PivotChart and PivotGrid view. This can be achieved with the use of a toolbar icon.
+The toggle axis support swaps all the axis elements between the column and row axes, thereby refreshing the pivot chart and pivot grid views. This can be achieved by using a toolbar icon.
 
 ![](Toggle-Axis_images/toggleaxis.png)
 

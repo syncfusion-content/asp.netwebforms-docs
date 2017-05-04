@@ -7,11 +7,11 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Data Binding
+# Data binding
 
-## Binding PivotGrid to Offline Cube
+## Binding pivot grid to offline cube
 
-To connect an OLAP Cube available in local machine, physical path of the Cube needs to be set in the connection string. Below code sample illustrates the same.
+To connect an OLAP cube available in the local machine, the physical path of the cube should be set in the connection string. The following code sample illustrates this process:
 
 {% highlight c# %}
 
@@ -20,9 +20,9 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-## Binding PivotGrid to Cube in local SQL Server
+## Binding pivot grid to cube in local SQL Server
 
-To connect an OLAP Cube available in SQL Server Analysis Service in local machine, server name and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
+To connect to an OLAP cube available in the SQL Server Analysis Service of the local machine, the server name and database name should be set in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code sample illustrates this process:
 
 {% highlight c# %}
 
@@ -31,9 +31,9 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-## Binding PivotGrid to Cube in online SQL Server
+## Binding pivot grid to cube in online SQL Server
 
-To connect an OLAP Cube available in SQL Server Analysis Service in online server through XML/A, host server link and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
+To connect to an OLAP cube available in the SQL Server Analysis Service in online server through XML/A, the host server link and database name should be set in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code sample illustrates this process:
 
 {% highlight c# %}
 
@@ -42,9 +42,9 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-## Binding PivotGrid to Cube in online Mondrian Server
+## Binding pivot grid to cube in online Mondrian Server
 
-To connect an OLAP Cube available in Mondrian Server through XML/A, host server link and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
+To connect to an OLAP cube available in the Mondrian Server through XML/A, the host server link and database name should be set in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code sample illustrates this process:
 
 {% highlight c# %}
 
@@ -54,7 +54,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 
 {% endhighlight %}
 
-## Binding PivotGrid to Cube in online ActivePivot Server
+## Binding pivot grid to cube in online Active Pivot Server
 
 {% highlight c# %}
 
@@ -65,19 +65,19 @@ DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.Act
 {% endhighlight %}
 
 ## WCF
-**Adding a WCF Service**
+**Adding a WCF service**
 
-To add a WCF service in an existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it as `OlapService.svc`, click Add.
+To add a WCF service in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select the WCF service and name it `OlapService.svc`, and then click Add.
 
-Now, WCF service is added into the application successfully that comprises of the following files. The utilization of these files is explained in the immediate sections
+Now, the WCF service is added to the application that comprises the following files. The utilization of these files will be explained in the immediate sections.
 
 * OlapService.svc
 * OlapService.svc.cs
 * IOlapService.cs
 
-**Configuring WCF Service Class**
+**Configuring WCF service class**
 
-Remove the **“DoWork”** method present inside both `OlapService.svc.cs` and `IOlapService.cs` files.  Next, add **“AspNetCompatibilityRequirements”** attribute on top of main class present inside OlapService.svc.cs and set **“RequirementsMode”** value to **“Allowed”**.
+Remove the **“DoWork”** method present in both `OlapService.svc.cs` and `IOlapService.cs` files. Next, add **“AspNetCompatibilityRequirements”** attribute on top of the main class present in OlapService.svc.cs file and set the **“RequirementsMode”** value to **“Allowed”**.
 
 {% highlight c# %}
 
@@ -92,11 +92,11 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
-**List of Dependency Libraries**
+**List of dependency libraries**
 
-Next you need to add the below mentioned dependency libraries into your Web Application. These libraries could be found in GAC (Global Assembly Cache) as well.
+Next, you can add the below-mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
  
-To add them to your Web Application, right-click on **References** in Solution Explorer and select **Add Reference**. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
+To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
 N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]
 
@@ -114,9 +114,9 @@ N> If you have installed any version of SQL Server Analysis Service (SSAS) or Mi
 * Syncfusion.EJ.Export
 * Syncfusion.EJ.Pivot
 
-**List of Namespaces**
+**List of namespaces**
 
-Following are the list of namespaces to be added on top of the main class inside `OlapService.svc.cs` file.
+Following are the list of namespaces to be added on top of the main class in the `OlapService.svc.cs` file:
 
 {% highlight c# %}
 
@@ -147,9 +147,9 @@ namespace PivotGridDemo
 {% endhighlight %}
 
 
-**Datasource Initialization**
+**Data source initialization**
 
-Now the connection string to connect OLAP Cube, PivotGrid and JavaScriptSerializer instances are created immediately inside the main class in `OlapService.svc.cs` file.
+Now, the connection string to connect the OLAP cube, pivot grid and JavaScriptSerializer instances is created immediately in the main class of the `OlapService.svc.cs` file.
 
 {% highlight c# %}
 
@@ -171,9 +171,9 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
-**Service methods in WCF Service**
+**Service methods in WCF service**
 
-First, declare the service methods inside **IOlapService** interface, found in `IOlapService.cs` file created while adding WCF Service to the Application.
+First, declare the service methods in the **IOlapService** interface, find in the `IOlapService.cs` file which was created while adding the WCF Service to the application.
 
 {% highlight c# %}
 
@@ -222,7 +222,7 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
-Then, elaborate the service methods inside the main class, found in `OlapService.svc.cs` file.
+Then, elaborate the service methods in the main class that is found in the `OlapService.svc.cs` file.
 
 {% highlight c# %}
 
@@ -425,15 +425,15 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
-**Configuring Web Configuration File**
+**Configuring web configuration file**
 
-The services could be exposed through the properties, binding, contract and address by using an endpoint.
+The services can be exposed through the properties such as, binding, contract, and address by using an endpoint.
 
-* Contract: This property indicates that the contract of the endpoint is exposing. Here you are referring to `IOlapService` contract and hence it is `PivotGridDemo.IOlapService`.
-* Binding: In your application, you use `webHttpBinding` to post and receive the requests and responses between the client-end and the service.
-* BehaviorConfiguration: This property contains the name of the behavior to be used in the endpoint
+* Contract: This property indicates that the contract of the endpoint is exposed. Refer to the `IOlapService` contract, and it is written as `PivotGridDemo.IOlapService`.
+* Binding: In your application, you can use the `webHttpBinding` to post and receive requests and responses between the client-end and the service.
+* BehaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
 
-The endpointBehaviors are illustrated as follows
+The endpointBehaviors are illustrated as follows:
 
 {% highlight xml %}
 
@@ -448,7 +448,7 @@ The endpointBehaviors are illustrated as follows
 
 {% endhighlight %}
 
-The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using this name property.
+The endpointBehaviors contain all behaviors for an endpoint. You can link each endpoint to the respective behavior only by using the name property.
 
 {% highlight xml %}
 
@@ -467,9 +467,9 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
 
 {% endhighlight %}
 
-N> In this example, **"PivotGridDemo"** indicates the name and root namespace of the Application created in Visual Studio IDE and **"OlapService"** indicates the name of the WCF service created.
+N> In this example, the **"PivotGridDemo"** indicates the name and root namespace of the application that is created in the Visual Studio IDE, and the **"OlapService"** indicates the name of the created WCF service.
 
-Now, **PivotGrid** will be rendered with Internet Sales Amount over a period of fiscal years across different customer geographic locations.
+Now, the **pivot grid** will be rendered with internet sales amount over a period of fiscal years across different customer geographic locations.
 
 ![](Getting-Started_images/pivotgrid.png) 
 

@@ -7,18 +7,18 @@ control: PivotGauge
 documentation: ug
 ---
 
-# Label Format
+# Label format
 
-You can customize the format of labels displayed in the PivotGauge control using `LabelFormatSettings` property.
+You can customize the format of labels displayed in the pivot gauge control by using the `LabelFormatSettings` property.
 
-Following are the formats that can be applied to labels in PivotGauge:
+Following are the formats that can be applied to labels in the pivot gauge:
 
-* `NumberFormat`  - Allows the user to change the number format of the label values in PivotGauge.
-* `DecimalPlaces` - Allows you to set the number of digits displayed after decimal point.
+* `NumberFormat`  - Allows you to change the number format of label values in the pivot gauge.
+* `DecimalPlaces` - Allows you to set the number of digits to be displayed after a decimal point.
 * `PrefixText`  - Allows you to add a text at the beginning of the label.
-* `SuffixText` - Allows you to add text at the end of the label.
+* `SuffixText` - Allows you to add a text at the end of the label.
 
-Number format for the label values can be set to any of the following type:
+The number format for label values can be set to any of the following types:
 
 * Default	
 * Currency

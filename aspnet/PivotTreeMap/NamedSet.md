@@ -7,13 +7,13 @@ control: PivotTreeMap
 documentation: ug
 ---
 
-# Named Sets
+# Named sets
 
-Named Sets is a multidimensional expression (MDX) that returns a set of dimension members, which can be created by combining cube data, arithmetic operators, numbers and functions.
+Named sets is a multidimensional expression (MDX) that returns a set of dimension members, that can be created by combining the cube data, arithmetic operators, numbers, and functions.
 
-## Client Mode
+## Client mode
 
-You can bind the Named Sets in PivotTreeMap by setting it's unique name in the `fieldName` property either in row or column axis and `isNamedSets` boolean property to "true".
+You can bind the named sets in the pivot tree map by setting it's unique name in the `FieldName` property in the row or column axis and `isNamedSets` Boolean property to true.
 
 {% highlight js %}
 
@@ -51,9 +51,9 @@ You can bind the Named Sets in PivotTreeMap by setting it's unique name in the `
 ![](NamedSets_images/namedset.png)
 
 
-## Server Mode
+## Server mode
 
-You can add Named Sets in the PivotTreeMap by using `NamedSetElement` class in the OlapReport.
+You can add the named sets to the pivot tree map by using the `NamedSetElement` class in the OlapReport.
 
 {% highlight C# %}
 

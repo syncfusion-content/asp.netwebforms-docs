@@ -9,9 +9,9 @@ documentation: ug
 
 # Ticks
 
-## Adding Tick Collection
+## Adding tick collection
 
-Tick collection can be directly added to the scales option within the PivotGauge control.
+The tick collection can be directly added to the scales option within the pivot gauge control.
 
 {% highlight html %}
 
@@ -27,17 +27,17 @@ Tick collection can be directly added to the scales option within the PivotGauge
 
 {% endhighlight %}
 
-## Tick Customization
+## Tick customization
 
-The appearance of the tick can be customized through the following properties.
+The appearance of the tick can be customized through the following properties:
 
-* **Type** – indicates whether ticks are for major or minor intervals. By default, the type is "Major".
-* **Height** – sets the height of the ticks.
-* **Width** – sets the width of the ticks.
-* **Angle** – rotates the ticks to a specified angle. By default, the angle value is 0.
-* **Color** – displays the ticks in specified color.
-* **DistanceFromScale** – sets the distance between scale and ticks. By default, the values is 0.
-* **Placement** – positions the ticks with respect to the scale.  By default, the value is set to "Far".
+* **Type**: Indicates whether ticks are for major or minor intervals. By default, the type is Major.
+* **Height**: Sets the height of the ticks.
+* **Width**: Sets the width of the ticks.
+* **Angle**: Rotates the ticks to a specified angle. By default, the angle value is 0.
+* **Color**: Displays the ticks in specified color.
+* **DistanceFromScale**: Sets the distance between the scale and ticks. By default, the values is 0.
+* **Placement**: Positions the ticks with respect to the scale.  By default, the value is set to Far.
 
 {% highlight html %}
 

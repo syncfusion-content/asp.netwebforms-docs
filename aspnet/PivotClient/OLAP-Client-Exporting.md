@@ -9,23 +9,23 @@ documentation: ug
 
 # Exporting
 
-PivotChart and PivotGrid in the PivotClient widget can be exported to Excel, Word and PDF documents by clicking the respective toolbar icons.
+The pivot chart and pivot grid in the pivot client widget can be exported to Microsoft Excel, Microsoft Word, and PDF documents by clicking the respective toolbar icons.
 
 ![](Exporting_images/exporticon.png) 
 
-Exporting feature provides an option that allows you to export either PivotChart or PivotGrid or both with the use of the property `ClientExportMode`.  The following code example illustrates the same. 
+Exporting feature provides an option that allows you to export the pivot chart or pivot grid or both by using the `ClientExportMode` property. The following code example illustrates this process:
 
-The property `ClientExportMode` takes any one of the following value:
+The `ClientExportMode` property takes any one of the following value:
 
-* **ChartAndGrid** – Exports both PivotChart and PivotGrid controls. This is the default mode.
-* **ChartOnly** – Exports PivotChart control alone.
-* **GridOnly** – Exports PivotGrid control alone.
+* **ChartAndGrid**: Exports both pivot chart and pivot grid controls. This is the default mode.
+* **ChartOnly**: Exports the pivot chart control alone.
+* **GridOnly**: Exports the pivot grid control alone.
 
-## JSON Export
+## JSON export
     
-I>By default, exporting is done with the use of JSON Records maintained in client-side for both client and server modes.
+I>By default, exporting is done with the use of JSON records, which is maintained in the client-side for both client and server modes.
 
-In order to make use of exporting with client side JSON data. The control can be exported by invoking “beforeExport” event, with an appropriate export option as parameter.
+Make use of the exporting with the client side JSON data. The control can be exported by invoking the “BeforeExport” event with an appropriate export option as a parameter.
 
  {% highlight html %}
     
@@ -41,7 +41,7 @@ In order to make use of exporting with client side JSON data. The control can be
     
  {% endhighlight %}
     
-  When PivotClient is rendered in Client Mode, a server side event method needs to be added in code behind file of the application
+  When the pivot client is rendered in client mode, a server-side event method should be added in the code behind file of the application.
     
   {% highlight C# %}
     
@@ -56,7 +56,7 @@ In order to make use of exporting with client side JSON data. The control can be
     
 ### Customize the export document name
 
-The document name could be customized. Following code sample illustrates the same.
+The document name can be customized. Following code sample illustrates this process:
 
 {% highlight html %}
 
@@ -71,11 +71,11 @@ The document name could be customized. Following code sample illustrates the sam
         
 {% endhighlight %}
 
-## PivotEngine Export
+## Pivot engine export
 
 I> This feature is applicable only at server mode operation.
  
-In order to perform exporting with the use of PivotEngine available in server-side, the 'exportMode' property obtained in the “BeforeExport” event is set to "ej.PivotClient.ExportMode.PivotEngine" as shown below.
+To export by using the pivot engine available in server-side, the 'exportMode' property obtained in the “BeforeExport” event is set to "ej.PivotClient.ExportMode.PivotEngine" as follows:
 
 {% highlight html %}
 
@@ -93,7 +93,7 @@ In order to perform exporting with the use of PivotEngine available in server-si
 
 
 
-For WebAPI controller, the below method needs to be added to perform exporting.
+For WebAPI controller, the following method should be added:
 
 {% highlight C# %}
 
@@ -109,7 +109,7 @@ For WebAPI controller, the below method needs to be added to perform exporting.
     
 {% endhighlight %}
 
-For WCF service, the below service method needs to be added to perform exporting.
+For WCF service, the following service method should be added:
 
 {% highlight C# %}
 
@@ -126,7 +126,7 @@ For WCF service, the below service method needs to be added to perform exporting
 
 ### Customize the export document name
 
-The document name could be customized inside the method in WebAPI Controller. Following code sample illustrates the same.
+The document name can be customized in the method of the WebAPI controller. Following code sample illustrates this process:
 
 {% highlight c# %}
 
@@ -142,7 +142,7 @@ The document name could be customized inside the method in WebAPI Controller. Fo
 
 {% endhighlight %}
 
-For customizing name in WCF Service, below code snippet is used.
+For customizing name in the WCF service, the following code snippet is used:
 
 {% highlight c# %}
 
@@ -157,9 +157,9 @@ For customizing name in WCF Service, below code snippet is used.
 
 {% endhighlight %}
 
-## Exporting Customization
+## Exporting customization
 
-You can add title and description to the exporting document by using title and description property obtained in the "beforeExport" event.
+You can add the title and description to the exporting document by using the title and description property obtained in the "BeforeExport" event.
 
 {% highlight html %}
 
@@ -181,7 +181,7 @@ You can add title and description to the exporting document by using title and d
     
 {% endhighlight %}
 
-You can also edit the exporting document with the use of a server side event for required exporting option.
+You can also edit the exporting document by using a server-side event for the required exporting option.
 
 {% highlight c# %}
 
@@ -264,14 +264,14 @@ void olapClientHelper_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook work
 {% endhighlight %}
 
 
-The below screenshot shows the PivotGrid and PivotChart controls exported to Excel document.
+The following screenshot shows the pivot grid and pivot chart controls exported to an Excel document:
 
 ![](Exporting_images/exportexcel.png) 
 
-The below screenshot shows the PivotGrid and PivotChart controls exported to Word document.
+The following screenshot shows the pivot grid and pivot chart controls exported to a Word document:
 
 ![](Exporting_images/exportword.png) 
 
-The below screenshot shows the PivotGrid and PivotChart controls exported to PDF document.
+The following screenshot shows the pivot grid and pivot chart controls exported to a PDF document:
 
-![](Exporting_images/exportpdf.png) 
+![](Exporting_images/exportpdf.png)

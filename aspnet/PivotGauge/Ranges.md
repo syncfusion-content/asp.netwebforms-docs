@@ -9,9 +9,9 @@ documentation: ug
 
 # Ranges
 
-## Adding Range Collection
+## Adding range collection
 
-`RangeCollection` can be directly added to the scales option within the PivotGauge control.
+The `RangeCollection` can be directly added to the scales option within the pivot gauge control.
 
 {% highlight html %}
 
@@ -27,22 +27,22 @@ documentation: ug
 
 {% endhighlight  %}
 
-## Appearance Customization
+## Appearance customization
 
-The appearance of the range can be customized through the following properties.
+The appearance of the range can be customized through the following properties:
 
-* **StartValue** – defines the start position of the range.
-* **EndValue** – defines the end position of the range.
-* **StartWidth** – sets the width at starting position of the range.
-* **EndWidth** – sets the width at ending position of the range.
-* **BackgroundColor** – sets the background color of the range.
-* **Border** – sets the height and width of the border of the range.
-* **Placement** – sets the position of the range.
-* **DistanceFromScale** – sets the distance between the range and scale.
+* **StartValue**: Defines the start position of the range.
+* **EndValue**: Defines the end position of the range.
+* **StartWidth**: Sets the width at starting position of the range.
+* **EndWidth**: Sets the width at ending position of the range.
+* **BackgroundColor**: Sets the background color of the range.
+* **Border**: Sets the height and width of the border of the range.
+* **Placement**: Sets the position of the range.
+* **DistanceFromScale**: Sets the distance between the range and the scale.
 
-Positioning the range could be set either through `Placement` or `DistanceFromScale` property. 
+Positioning the range can be set through the `Placement` or `DistanceFromScale` property. 
 
-N> By default, placement takes the value “near”, whereas other enumeration values available are “far” and “center”.
+N> By default, the placement takes the value "near", whereas other enumeration values available are "far" and "center".
 
 {% highlight html %}
 
@@ -65,11 +65,11 @@ N> By default, placement takes the value “near”, whereas other enumeration v
 
 ![](Ranges_images/AppearanceCustomization.png)
 
-N> On setting both the position properties - "DistanceFromScale" and "Placement" for a range, the value set in "DistanceFromScale" is given preference. 
+N> When you set both the position properties - "DistanceFromScale" and "Placement" for a range, preference is given to the value that is set in the "DistanceFromScale" property.
 
-## Multiple Ranges
+## Multiple ranges
 
-Multiple ranges can be added in `RangeCollection` to the scales option within the PivotGauge control.
+Multiple ranges can be added to the `RangeCollection` in the scales option within the pivot gauge control.
 
 {% highlight html %}
 

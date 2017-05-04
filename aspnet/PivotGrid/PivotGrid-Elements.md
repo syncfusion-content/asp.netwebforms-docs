@@ -7,22 +7,22 @@ control: PivotGrid
 documentation: ug
 ---
 
-# PivotGrid: Elements
+# Pivot grid: Elements
 
 ## Hyperlink
-The PivotGrid control supports hyperlink option to link data for each individual cell. Hyperlink can be enabled separately for row header, column header, value and summary cells. Following are the respective properties:
+The pivot grid control supports hyperlink option to link data for each individual cell. The hyperlink can be enabled separately for row header, column header, value cell, and summary cell. Following are the respective properties:
 
-* **EnableColumnHeaderHyperlink** - Enables hyperlink for column headers.
-* **EnableRowHeaderHyperlink** - Enables hyperlink for row headers.
-* **EnableSummaryCellHyperlink** - Enables hyperlink for summary cell.
-* **EnableValueCellHyperlink** - Enables hyperlink for value cell.
+* **EnableColumnHeaderHyperlink**: Enables hyperlink for column headers.
+* **EnableRowHeaderHyperlink**: Enables hyperlink for row headers.
+* **EnableSummaryCellHyperlink**: Enables hyperlink for a summary cell.
+* **EnableValueCellHyperlink**: Enables hyperlink for a value cell.
 
-Also hyperlink option provides separate events for row header, column header, value and summary cells as mentioned below.
+Also, hyperlink option provides separate events for row header, column header, and value and summary cells as mentioned below:
  
-* **ColumnHeaderHyperlinkClick** - Returns column header information through event on hyperlink click.
-* **RowHeaderHyperlinkClick** - Returns row header information through event on hyperlink click.
-* **SummaryCellHyperlinkClick** - Returns summary cell information through event on hyperlink click.
-* **ValueCellHyperlinkClick** - Returns value cell information through event on hyperlink click.
+* **ColumnHeaderHyperlinkClick**: Returns column header information through the event by clicking the hyperlink.
+* **RowHeaderHyperlinkClick**: Returns row header information through the event by clicking the hyperlink.
+* **SummaryCellHyperlinkClick**: Returns summary cell information through the event by clicking the hyperlink.
+* **ValueCellHyperlinkClick**: Returns value cell information through the event by clicking the hyperlink.
 
 
 {% highlight html %}
@@ -43,9 +43,9 @@ Also hyperlink option provides separate events for row header, column header, va
 ![](PivotGrid-Elements_images/hyperlink.png)
 
 ## Selection
-You can select a particular range of value cells from PivotGrid and manipulate/display them. Cell selection is applicable only for value cells and you can enable this functionality by setting `enableCellSelection` property to true.
+You can select a particular range of value cells from the pivot grid and manipulate/display them. The cell selection is applicable only for value cells and you can enable this functionality by setting the `EnableCellSelection` property to true.
 
-The **"cellSelection"** event would be triggered as soon as the selection process is over, that is, when the mouse left click is released. The event argument contains a collection of JSON records and header values, which contains information about the selected cells.
+The **"CellSelection"** event will be triggered as soon as the selection process is over, i.e., the event will be triggered when you release the mouse left-click. The event argument contains a collection of JSON records, and header values contains information about the selected cells.
 
 {% highlight html %}
 
@@ -66,10 +66,10 @@ The **"cellSelection"** event would be triggered as soon as the selection proces
 
 ![](PivotGrid-Elements_images/cellselection.png)
 
-## Cell Context
-Cell context allows user to perform any custom operation on cell right-click. For example, you can create and display context menu on cell right-click.
+## Cell context
+The cell context allows you to perform any custom operation by right-clicking the cell. For example, you can create and display the context menu by right-clicking the cell.
 
-Cell context is enabled by setting the `EnableCellContext` property to true. The **"cellContext"** event would be raised as soon as right-click is done providing cell information through event argument.
+The cell context is enabled by setting the `EnableCellContext` property to true. The **"CellContext"** event will be raised as soon as the right-click is done to provide cell information through the event argument.
 
 {% highlight html %}
 
@@ -85,8 +85,8 @@ Cell context is enabled by setting the `EnableCellContext` property to true. The
 
 {% endhighlight %}
 
-## Conditional Formatting
-Conditional formatting allows user to highlight particular cells with certain color, font-style, font-family etc. based on the condition they have met. It is enabled by setting `EnableConditionalFormatting` property to true and the formatting dialog is launched when **"createConditionalDialog"** method is invoked.
+## Conditional formatting
+The conditional formatting allows you to highlight the particular cells with certain color, font-style, font-family etc., based on the conditions they have met. It is enabled by setting the `EnableConditionalFormatting` property to true, and the formatting dialog will be launched when the **"createConditionalDialog"** method is invoked.
 
 {% highlight html %}
 
@@ -113,29 +113,29 @@ Conditional formatting allows user to highlight particular cells with certain co
 
 ### Export
 
-We can export the PivotGrid with highlighted particular cells along with its formatting styles. 
+You can export the pivot grid with highlighted particular cells along with its formatting styles. 
 
-LIMITATIONS FOR WORD:
+Limitations for Word:
 
-The following border styles are not supported
+The following border styles are not supported:
 
 * Solid
 * Groove
 * Ridge
 
-LIMITATIONS FOR PDF:
+Limitations for PDF:
 
 Border styles are not applicable.
 
-LIMITATIONS FOR EXCEL:
+Limitations for Excel:
 
-The following border styles are alone supported
+The following border styles are alone supported:
 
 * Dashed
 * Dotted
 * Double
 
-Also border size is not supported.
+Also, the border size is not supported.
 
 ![](PivotGrid-Elements_images/conditional_export.png)
 

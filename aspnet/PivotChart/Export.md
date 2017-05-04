@@ -9,14 +9,14 @@ documentation: ug
 
 # Exporting
 
-The PivotChart control can be exported to the following file formats.
+The pivot chart control can be exported to the following file formats:
 
-* Excel
-* Word
+* Microsoft Excel
+* Microsoft Word
 * PDF
 * Image
 
-The PivotChart control can be exported by invoking **“exportPivotChart”** method, with an appropriate export option as parameter.
+The pivot chart control can be exported by invoking the **“exportPivotChart”** method with an appropriate export option as a parameter.
 
 {% highlight html %}
 
@@ -56,9 +56,9 @@ The PivotChart control can be exported by invoking **“exportPivotChart”** me
 
 {% endhighlight %}
 
-To achieve exporting in client mode, we need to add **"Syncfusion.EJ.Export"** dependency library into the application.
+To achieve exporting in client mode, you should add the **"Syncfusion.EJ.Export"** dependency library to the application.
 
-When PivotChart is rendered in Client Mode, a server side event method needs to be added in code behind file of the application and we need to import **"Syncfusion.EJ.Export"** namespace in the code behind file. 
+When the pivot chart is rendered in client mode, a server-side event method should be added to the code behind file of the application and you should import the **"Syncfusion.EJ.Export"** namespace in the code behind file.
 
 {% highlight c# %}
 
@@ -73,9 +73,9 @@ protected void PivotChart_ServerExcelExporting(object sender, Syncfusion.JavaScr
         
 {% endhighlight %}
 
-When PivotChart is rendered in Server Mode, a service method needs to be added in WCF/WebAPI for server side operations.
+When the pivot chart is rendered in server mode, the service method should be added to WCF/WebAPI for server side operations.
 
-For WebAPI controller, the below method needs to be added.
+For WebAPI controller, the following method should be added:
 
 {% highlight c# %}
 
@@ -89,7 +89,7 @@ public void Export() {
 
 {% endhighlight %}
 
-For WCF service, the below method needs to be added.
+For WCF service, the following method should be added:
 
 {% highlight c# %}
 
@@ -102,13 +102,13 @@ public void Export(System.IO.Stream stream) {
 
 {% endhighlight %}
 
-## Excel Export
+## Excel export
 
-User can export contents of the PivotChart to Excel document for future archival, references and analysis purposes.
+You can export the contents of the pivot chart to an Excel document for future archival, references, and analysis purposes.
 
-### Client Mode
+### Client mode
 
-To achieve Excel export, server side trigger event **"excelExport"** and file name is sent as the parameter.
+To achieve Excel export, the **"excelExport"** server-side trigger event and file name are set as parameters.
 
 {% highlight html %}
 
@@ -128,7 +128,7 @@ To achieve Excel export, server side trigger event **"excelExport"** and file na
     
 {% endhighlight %}  
 
-Following server side event method need to be added in code behind file of the application.
+Following server-side event method should be added to code behind file of the application:
 
 {% highlight c# %}
 
@@ -143,14 +143,14 @@ protected void PivotChart_ServerExcelExporting(object sender, Syncfusion.JavaScr
 
 {% endhighlight %}
 
-### Server Mode
+### Server mode
 
-To achieve Excel export, we need to add the following dependency libraries into the application.
+To achieve Excel export, you should add the following dependency libraries to the application:
 
 * Syncfusion.Compression.Base
 * Syncfusion.XlsIO.Base
 
-For Excel export, **“ej.PivotChart.ExportOptions.Excel”** enumeration value is sent as the parameter.
+For Excel export, the **“ej.PivotChart.ExportOptions.Excel”** enumeration value is set as the parameter.
 
 {% highlight js %}
 
@@ -164,13 +164,13 @@ function exportBtnClick(args)
 {% endhighlight %}  
 
 
-## Word Export
+## Word export
 
-User can export contents of the PivotChart to Word document for future archival, references and analysis purposes.
+You can export the contents of the pivot chart to a Word document for future archival, references, and analysis purposes.
 
-### Client Mode
+### Client mode
 
-To achieve Word export, server side trigger event **"wordExport"** and file name is sent as the parameter.
+To achieve Word export, the **"wordExport"** server-side trigger event and the file name are set as parameters.
 
 {% highlight html %}
 
@@ -190,7 +190,7 @@ To achieve Word export, server side trigger event **"wordExport"** and file name
     
 {% endhighlight %}  
 
-Following server side event method need to be added in code behind file of the application.
+Following server-side event method should be added to code behind file of the application:
 
 {% highlight c# %}
 
@@ -205,14 +205,14 @@ protected void PivotChart_ServerWordExporting(object sender, Syncfusion.JavaScri
 
 {% endhighlight %}
 
-### Server Mode
+### Server mode
 
- To achieve Word export, we need to add the following dependency libraries into the application.
+ To achieve Word export, you can add the following dependency libraries to the application:
 
 * Syncfusion.Compression.Base
 * Syncfusion.DocIO.Base
 
-For Word export, **“ej.PivotChart.ExportOptions.Word”** enumeration value is sent as the parameter.
+For Word export, the **“ej.PivotChart.ExportOptions.Word”** enumeration value is set as the parameter.
 
 {% highlight js %}
 
@@ -226,13 +226,13 @@ function exportBtnClick(args)
 {% endhighlight %}
 
 
-## PDF Export
+## PDF export
 
-User can export contents of the PivotChart to PDF document for future archival, references and analysis purposes.
+You can export the contents of the pivot chart to PDF document for future archival, references, and analysis purposes.
 
-### Client Mode
+### Client mode
 
-To achieve Word export, server side trigger event **"pdfExport"** and file name is sent as the parameter.
+To achieve Word export, the **"pdfExport"** server-side trigger event and file name are set as parameters.
 
 {% highlight html %}
 
@@ -252,7 +252,7 @@ To achieve Word export, server side trigger event **"pdfExport"** and file name 
     
 {% endhighlight %}  
 
-Following server side event method need to be added in code behind file of the application.
+Following server-side event method should be added to code behind file of the application:
 
 {% highlight c# %}
 
@@ -267,14 +267,14 @@ protected void PivotChart_ServerPDFExporting(object sender, Syncfusion.JavaScrip
 
 {% endhighlight %}
 
-### Server Mode
+### Server mode
 
-To achieve PDF export, we need to add the following dependency libraries into the application.
+To achieve PDF export, you can add the following dependency libraries to the application:
 
 * Syncfusion.Compression.Base
 * Syncfusion.Pdf.Base
 
-For PDF export, **“ej.PivotChart.ExportOptions.PDF”** enumeration value is sent as the parameter.
+For PDF export, the **“ej.PivotChart.ExportOptions.PDF”** enumeration value is set as the parameter.
 
 {% highlight js %}
 
@@ -289,9 +289,9 @@ function exportBtnClick(args)
 
 
 
-## Image Export
+## Image export
 
-User can export contents of the PivotChart to image format for future archival, references and analysis purposes. We can export PivotChart to the following image formats.
+You can export the contents of the pivot chart to an image format for future archival, references, and analysis purposes. You can export the pivot chart to the following image formats:
 
 * PNG
 * EMF
@@ -299,9 +299,9 @@ User can export contents of the PivotChart to image format for future archival, 
 * GIF
 * BMP
 
-###Client Mode
+###Client mode
 
-To achieve image export, server side trigger event **"imageExport"** ,**“ej.PivotChart.ExportOptions.PNG”** and file name is sent as the parameter.This is similar to other image formats.
+To achieve image export, the server-side trigger event **"imageExport"** ,**“ej.PivotChart.ExportOptions.PNG”**, and file name are set as parameters. This is similar to other image formats.
 
 {% highlight html %}
 
@@ -321,7 +321,7 @@ To achieve image export, server side trigger event **"imageExport"** ,**“ej.Pi
     
 {% endhighlight %}  
 
-Following server side event method need to be added in code behind file of the application.
+Following server-side event method should be added to code behind file of the application:
 
 {% highlight c# %}
 
@@ -336,9 +336,9 @@ protected void PivotChart_ServerImageExporting(object sender, Syncfusion.JavaScr
 
 {% endhighlight %}
 
-### Server Mode
+### Server mode
 
-To export PivotChart in PNG format, **“ej.PivotChart.ExportOptions.PNG”** enumeration value is sent as the parameter. This is similar to other image formats.
+To export pivot chart in PNG format, the **“ej.PivotChart.ExportOptions.PNG”** enumeration value is set as the parameter. This is similar to other image formats.
 
 {% highlight js %}
 
@@ -351,9 +351,9 @@ function exportBtnClick(args)
 
 {% endhighlight %}  
 
-## Exporting Customization
+## Exporting customization
 
-You can add title and description to the exporting document by using title and description property obtained in the "beforeExport" event.
+You can add the title and description to the exporting document by using the title and description property obtained in the "BeforeExport" event.
 
 N> Title and description cannot be added to image formats.
 
@@ -382,7 +382,7 @@ N> Title and description cannot be added to image formats.
     
 {% endhighlight %}
 
-You can also edit the exporting document with the use of a server side event for required exporting option.
+You can also edit the exporting document by using a server-side event for the required exporting option.
 
 {% highlight c# %}
 
@@ -479,9 +479,9 @@ void htmlHelper_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook workBook)
 
 {% endhighlight %}
 
-The name of the document can be customized as per the users requirement.
+The name of the document can be customized as per the user's requirement.
 
-For Client mode, we need to send file name as parameter to the **“exportPivotChart”**  method along with service URL.
+For client mode, you should set the file name as parameter to the **“exportPivotChart”** method along with the service URL.
 
 {% highlight javascript %}
 
@@ -492,7 +492,7 @@ function exportBtnClick(args)
 }
 {% endhighlight %}    
 
-For Server mode, the exporting document name is provided in the WebAPI controller as found in the below code snippet.
+For server mode, the exporting document name is provided in the WebAPI controller as found in the following code snippet:
 
 {% highlight c# %}
 
@@ -506,7 +506,7 @@ public void Export() {
 
 {% endhighlight %}
 
-For customizing name in WCF Service, below code snippet is used.
+For customizing name in the WCF Service, the following code snippet is used:
 
 {% highlight c# %}
 
@@ -519,18 +519,18 @@ public void Export(System.IO.Stream stream) {
 
 {% endhighlight %}
 
-The below screenshot shows the PivotChart control exported to Excel document.
+The following screenshot shows the pivot chart control exported to an Excel document:
 
 ![](Export_images/Export_ExcelClient.png)
 
-The below screenshot shows the PivotChart control exported to Word document.
+The following screenshot shows the pivot chart control exported to a Word document:
 
 ![](Export_images/Export_WordClient.png)
 
-The below screenshot shows the PivotChart control exported to PDF document.
+The following screenshot shows the pivot chart control exported to a PDF document:
 
 ![](Export_images/Export_PDFClient.png)
 
-The below screenshot shows the PivotChart control exported to PNG format.
+The following screenshot shows the pivot chart control exported to a PNG format:
 
 ![](Export_images/Export_PNGClient.png)

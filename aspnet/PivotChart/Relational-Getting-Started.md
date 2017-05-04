@@ -7,19 +7,19 @@ control: PivotChart
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
-## Creating a simple application with PivotChart and Relational datasource (Client Mode)
+## Creating a simple application with pivot chart and relational data source (client mode)
 
-This section covers the information that you need to know to populate a simple PivotChart with Relational data completely on the client-side.
+This section covers the information required to populate a simple pivot chart with relational data completely on the client-side.
 
-## Project Initialization
+## Project initialization
 
-Create a new **ASP.NET Empty Web Application** using Visual Studio IDE and name the project as **“PivotChartDemo”**.
+Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project **“PivotChartDemo”**.
 
-Now add a “Web Form” to the Empty Web Application. For adding a “Web Form”, right-click on the project in Solution Explorer and select **Add > New Item**. In the Add New Item window, select “Web Form” and name it as Default.aspx and click “Add”.
+Now, add a web form to the empty web application. For adding a web form, right-click the project in the solution explorer and select **Add > New Item**. In the Add New Item window, select web form and name it Default.aspx, and then click Add.
 
-Now add the following dependency libraries as references into your Web Application. In order to add them to your application, right-click on **References** in Solution Explorer and select Add Reference. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
+Add the following dependency libraries as references to your web application. To add them to your application, right-click **References** in the solution explorer and select Add Reference. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
 
 * Syncfusion.EJ
 * Syncfusion.EJ.Pivot
@@ -38,17 +38,17 @@ Register the referred assemblies in Web.config files available at the root of th
 </compilation>
 {% endhighlight %}
 
-### Scripts and CSS Initialization
+### Scripts and CSS initialization
 
-The scripts and style sheets that are mandatorily required to render PivotChart control in Web Application are mentioned in an appropriate order below:
+The scripts and style sheets that are required to render the pivot chart control in web application are mentioned below in an appropriate order:
 
 1. ej.web.all.min.css
 2. jQuery-3.0.0.min.js
 3. ej.web.all.min.js
 
-[Click here](http://help.syncfusion.com/js/cdn) here to know more about scripts and style sheets available online (CDN Link).
+[Click here](http://help.syncfusion.com/js/cdn) here to know more about scripts and style sheets available in online (CDN link).
 
-Scripts and style sheets are referred under the <head> tag in **Default.aspx** file.
+Scripts and style sheets are referred under the <head> tag in the **Default.aspx** file.
     
 {% highlight html %}
 
@@ -60,9 +60,9 @@ Scripts and style sheets are referred under the <head> tag in **Default.aspx** f
 {% endhighlight %}
 
 
-### Initialize PivotChart
+### Initialize pivot chart
 
-Either drag and drop the **PivotChart** control from the toolbox (under Syncfusion BI Web category) or manually define the control like in the below code sample inside “Default.aspx” page.
+You can drag and drop the **pivot chart** control from the toolbox (under Syncfusion BI Web category) or manually define the control as shown in the following code sample of the “Default.aspx” page.
 
 {% highlight html %}
 
@@ -93,9 +93,9 @@ Either drag and drop the **PivotChart** control from the toolbox (under Syncfusi
     
  {% endhighlight %}   
 
-### Populate PivotChart With Data
+### Populate pivot chart with data
 
-Let us now see how to populate the PivotChart control using a sample JSON data as shown below. 
+This section illustrates how to populate the pivot chart control by using a sample JSON data as shown below: 
 
 {% highlight html %}
 
@@ -124,7 +124,7 @@ Let us now see how to populate the PivotChart control using a sample JSON data a
     
 {% endhighlight %}
 
-The JSON data is set to the **"data"** property present inside the **"dataSource"** object. **"dataSource"** object allows us to set both datasource as well as the fields that needs to be displayed in the row, column, value and filter section of the PivotChart control.
+The JSON data is set to the **"Data"** property present in the **"DataSource"** object. The **"DataSource"** object allows you to set both data source and fields that should be displayed in the row, column, value, and filter section of the pivot chart control.
   
 {% highlight html %}
   
@@ -167,13 +167,13 @@ The JSON data is set to the **"data"** property present inside the **"dataSource
     
 {% endhighlight %}
 
-Now, **PivotChart** will be rendered with Amount over a set of products across different customer geographic locations.
+Now, the **pivot chart** will be rendered with amount over a set of products across different customer geographic locations.
 
 ![](Relational-Getting-Started_images/PopulatePivotChartWithData.png) 
 
-### Apply Sorting
+### Apply sorting
 
-You can sort a field either to ascending or descending order using the "sortOrder" property. Sorting is applicable only for Row and Column fields.
+You can sort a field to ascending or descending order by using the `SortOrder` property. Sorting is applicable only for the row and column fields.
 
 N> By default, fields are arranged in ascending order.
  
@@ -200,14 +200,14 @@ N> By default, fields are arranged in ascending order.
 
 ![](Relational-Getting-Started_images/ApplySorting.png) 
 
-### Apply Filtering
+### Apply filtering
 
-Filtering option allows you to specify a set of values that either need to be displayed or hidden. Also filtering option is applicable only for Row, Column and Filter areas.
+The filtering option allows you to display or hide a set of values. This option is applicable only for row, column, and filter areas.
 
-**"FilterItems"** object allow us to apply filtering to the fields using the following properties:
+**"FilterItems"** object allow you to apply filtering to the fields by using the following properties:
 
-* FilterType -  indicates whether the values should be included or excluded.
-* Values -  contains an array of values that needs to be included or excluded within the particular field.
+* FilterType: Indicates whether the values should be included or excluded.
+* Values: Contains an array of values that should be included or excluded within the particular field.
 
 {% highlight html %}
 
@@ -234,7 +234,7 @@ Filtering option allows you to specify a set of values that either need to be di
 
 {% endhighlight %}
 
-The values for filtering are given in the Default.aspx.cs as shown in the below snippet.
+The values for filtering are given in the Default.aspx.cs as shown in the following snippet:
 
 {% highlight html %}
 
@@ -248,19 +248,19 @@ protected void Page_Load(object sender, EventArgs e)
 
 ![](Relational-Getting-Started_images/ApplyFiltering.png) 
 
-## Creating a simple application with PivotChart and Relational datasource (Server Mode)
+## Creating a simple application with pivot chart and relational data sources (server mode)
 
-This section covers the information required to create a simple PivotChart bound to Relational datasource. 
+This section covers the information required to create a simple pivot chart bound to the relational data source.
 
-N> ASP.NET Web Application will contain a service that transfers data to server-side, processes and returns back to client-side for control rendering and re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement.
+N> ASP.NET Web Application contains a service that will transfer the data to server-side, process it, and return it to client-side for control rendering and re-rendering. The service utilized for communication can be either WCF or WebAPI based on user requirement.
 
-### Project Initialization
+### Project initialization
 
-Create a new **ASP.NET Empty Web Application** using Visual Studio IDE and name the project as **“PivotChartDemo”**.
+Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project **“PivotChartDemo”**.
 
-Now add a “Web Form” to the Empty Web Application. For adding a “Web Form”, right-click on the project in Solution Explorer and select **Add > New Item**. In the Add New Item window, select “Web Form” and name it as Default.aspx and click “Add”.
+Now, add a web form to the empty web application. For adding a web form, right-click the project in the solution explorer and select **Add > New Item**. In the Add New Item window, select web form and name it Default.aspx, and then click Add.
 
-Now add the following dependency libraries as references into your Web Application. In order to add them to your application, right-click on **References** in Solution Explorer and select Add Reference. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
+Add the following dependency libraries as references to your web application. To add them to your application, right-click **References** in the solution explorer and select Add Reference. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
 
 * Syncfusion.Compression.Base
 * Syncfusion.Linq.Base
@@ -298,17 +298,17 @@ Register the referred assemblies in Web.config files available at the root of th
 {% endhighlight %}
 
 
-### Scripts and CSS Initialization
+### Scripts and CSS initialization
 
-The scripts and style sheets that are mandatorily required to render PivotChart control in a Web Application are mentioned in an appropriate order below:
+The scripts and style sheets that are required to render the pivot chart control in a web application are mentioned below in an appropriate order:
 
 1. ej.web.all.min.css
 2. jQuery-3.0.0.min.js
 3. ej.web.all.min.js
 
-[Click here](http://help.syncfusion.com/js/cdn) here to know more about scripts and style sheets available online (CDN Link).
+[Click here](http://help.syncfusion.com/js/cdn) here to know more about scripts and style sheets available in online (CDN link).
 
-Scripts and style sheets are referred under the <head> tag in **Default.aspx** file.
+Scripts and style sheets are referred under the <head> tag in the **Default.aspx** file.
     
 {% highlight html %}
 
@@ -319,9 +319,9 @@ Scripts and style sheets are referred under the <head> tag in **Default.aspx** f
 </head>
 {% endhighlight %}
 
-### Control Initialization
+### Control initialization
 
-Either drag and drop the **PivotChart** control from the toolbox (under Syncfusion BI Web category) or manually define the control like in the below code sample inside “Default.aspx” page.
+You can drag and drop the **pivot chart** control from the toolbox (under Syncfusion BI Web category) or manually define the control as shown in the following code sample of the “Default.aspx” page.
 
 {% highlight html %}
 
@@ -352,22 +352,22 @@ Either drag and drop the **PivotChart** control from the toolbox (under Syncfusi
 
 {% endhighlight %}
 
-The **“Url”** property in PivotChart control points the service endpoint, where data are processed and fetched in the form of JSON. The services used in PivotChart control as endpoint are WCF and WebAPI.
+The **“Url”** property in the pivot chart control points the service endpoint, where the data is processed and fetched in the form of JSON. The services used in the pivot chart control as endpoint are WCF and WebAPI.
 
-N> The above "Default.aspx" contains WebAPI URL, which is "/Relational". If WCF service is used as endpoint, the URL would look like "/RelationalService.svc".
+N> The above "Default.aspx" contains WebAPI URL, which is "/Relational". If the WCF service is used as an endpoint, then the URL will look like "/RelationalService.svc".
 
 
 ### WebAPI
 
-**Adding a WebAPI Controller**
+**Adding a WebAPI controller**
 
-To add a WebAPI controller in an existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **WebAPI Controller Class** and name it as **“RelationalController.cs”**, click **Add**.
+To add a WebAPI controller in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **WebAPI Controller Class** and name it **“RelationalController.cs”**, and then click **Add**.
 
-Now, WebAPI controller is added to the application successfully with the file **“RelationalController.cs”**.
+Now, the WebAPI controller is added to the application with the **“RelationalController.cs”** file.
 
-N> While adding WebAPI Controller Class, name it with the suffix ‘Controller’ which is mandatory. For example, in this demo the controller is named as “RelationalController”.
+N> While adding WebAPI controller class, add the mandatory suffix ‘Controller’. For example, in this demo, the controller is named as “RelationalController”.
 
-Next, remove all the existing methods such as "Get", "Post", "Put" and "Delete" present inside `RelationalController.cs` file.
+Next, remove all existing methods such as "Get", "Post", "Put", and "Delete" present in the `RelationalController.cs` file.
 
 {% highlight c# %}
 
@@ -381,9 +381,9 @@ namespace PivotChartDemo
 
 {% endhighlight %}
 
-**Adding the List of Namespaces**
+**Adding the list of namespaces**
 
-The following are the list of namespaces to be added on top of the main class inside `RelationalController.cs` file.
+The following are the list of namespaces to be added on top of the main class in the `RelationalController.cs` file.
 
 {% highlight c# %}
 
@@ -399,9 +399,9 @@ namespace PivotChartDemo
 }
 {% endhighlight %}
 
-**Datasource Initialization**
+**Data source initialization**
 
-A simple collection is provided as a datasource for the PivotChart in this demo section. This datasource is placed inside a separate class “ProductSales” in `RelationalController.cs` file. Refer to the following code example.
+A simple collection is provided as a data source for the pivot chart in this demo section. This data source is placed inside a separate class “ProductSales” in the `RelationalController.cs` file. Refer to the following code example:
 
 {% highlight c# %}
 
@@ -533,9 +533,9 @@ namespace PivotChartDemo {
 {% endhighlight %}
 
 
-**Service methods in WebAPI Controller**
+**Service methods in WebAPI controller**
 
-Define the service methods inside RelationalController class, found inside `RelationalController.cs` file, created while adding WebAPI Controller Class to the Application.
+Define the service methods in the RelationalController class, find inside the `RelationalController.cs` file which was created while adding the WebAPI controller class to the application.
 
 {% highlight c# %}
 
@@ -574,11 +574,11 @@ namespace PivotChartDemo {
 
 {% endhighlight %}
 
-**Configure routing in Global Application Class**
+**Configure routing in global application class**
 
-To add a Global.asax in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New** Item. In the **Add New Item** window, select **Global Application** Class and name it as **“Global.asax”**, click **Add.**
+To add a Global.asax in your existing web application, right-click the project in the solution explorer and select **Add > New** item. In the **Add New Item** window, select **Global Application** class and name it **“Global.asax”**, and then click **Add.**
  
-Once you finish adding the **Global.asax** file, delete all the methods inside the **Global** class and add the namespace **“using System.Web.Http;”** and then you can configure routing like in the following code example.
+After adding the **Global.asax** file, delete all methods in the **Global** class and add the namespace **“using System.Web.Http;”**, and then configure the routing as shown in the following code example.
 
 {% highlight c# %}
 
@@ -596,12 +596,12 @@ public class Global : System.Web.HttpApplication
 {% endhighlight %}
 
 
-Now, **PivotChart** will be rendered with Amount over a set of products across different customer geographic locations.
+Now, the **pivot chart** will be rendered with amount over a set of products across different customer geographic locations.
 
 ![](Relational-Getting-Started_images/ServerMode.png) 
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotChart. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/PivotChart/relational-connectivity#wcf-1).
+This section demonstrates the utilization of WCF service as endpoint binding the relational data source to a simple pivot chart. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/PivotChart/relational-connectivity#wcf-1).
 
 

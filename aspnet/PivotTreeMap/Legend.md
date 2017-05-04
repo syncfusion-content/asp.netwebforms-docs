@@ -9,15 +9,15 @@ documentation: ug
 
 #Legend
 
-##Legend Visibility
+##Legend visibility
 
-The legend shows the value range differences and color occurrence in the respective leaf node while you hover it with the cursor.
+The legend shows the value range differences and color occurrence in the respective leaf node while hovering it with a cursor.
 
-N> By default, the legend is visible in PivotTreeMap.
+N> By default, the legend is visible in the pivot tree map.
 
 ![](Legend_images/Legend_img1.png)
 
-You can disable the legend by setting the property **showLegend** as **false**. The following code example shows how to disable the legend.
+You can disable the legend by setting the **showLegend** property to **false**. The following code example illustrates how to disable the legend:
 
 {% highlight js %}
 

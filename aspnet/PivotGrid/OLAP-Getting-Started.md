@@ -8,26 +8,26 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting started
 
-## Creating a simple application with PivotGrid and OLAP datasource (Client Mode)
+## Creating a simple application with pivot grid and OLAP data sources (client mode)
 
-This section covers the information that you need to know to populate a simple PivotGrid with OLAP data completely on the client-side.
+This section covers the information required to populate a simple pivot grid with OLAP data completely on the client-side.
 
-### Project Initialization
+### Project initialization
 
-Create a new **ASP.NET Empty Web Application** using Visual Studio IDE and name the project as **“PivotGridDemo”**.
+Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project **“PivotGridDemo.”**
 
-Now add a “Web Form” to the Empty Web Application. For adding a “Web Form”, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select “Web Form” and name it as `GettingStarted.aspx` and click “Add”.
+Now, add a web form to the empty web application. For adding a web form, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select web form and name it `GettingStarted.aspx`, and then click Add.
 
-To set an appropriate start page, right-click on the **“GettingStarted.aspx”** in Solution Explorer and select **“Set As Start Page”**.  
+To set an appropriate start page, right-click the **“GettingStarted.aspx”** in the solution explorer and select **“Set As Start Page”**.
 
-Now add the following dependency libraries as references into your Web Application. In order to add them to your application, right-click on **References** in Solution Explorer and select Add Reference. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
+Now, add the following dependency libraries as references to your web application. To add them to your application, right-click **References** in the solution explorer and select Add Reference. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
 
 * Syncfusion.EJ
 * Syncfusion.EJ.Pivot
 
-Register the referenced assemblies in Web.config files available at the root of the application.
+Register the referenced assemblies in the Web.config files available at the root of the application.
 
 {% highlight xml %}
 
@@ -42,15 +42,15 @@ Register the referenced assemblies in Web.config files available at the root of 
 </compilation>
 {% endhighlight %}
 
-### Scripts and CSS References  
+### Scripts and CSS references
 
-Create a GettingStarted.aspx page and scripts and style sheets that are mandatorily required to render PivotGrid control in a Web Application are mentioned in an appropriate order below:
+Create a GettingStarted.aspx page, and scripts and style sheets that are required to render a pivot grid control in a web application are mentioned below in an appropriate order:
 
 1. ej.web.all.min.css
 2. jQuery-3.0.0.min.js
 3. ej.web.all.min.js
 
-Scripts and style sheets are referred under the <head> tag in GettingStarted.aspx page.
+Scripts and style sheets are referred under the <head> tag in the GettingStarted.aspx page.
 
 {% highlight html %}    
 
@@ -63,9 +63,9 @@ Scripts and style sheets are referred under the <head> tag in GettingStarted.asp
 
 {% endhighlight %}
 
-### Initialize PivotGrid
+### Initialize pivot grid
 
-Either drag and drop the PivotGrid control from the toolbox (under Syncfusion BI Web category) or manually define the control like in the below code sample inside "GettingStarted.aspx" page.
+You can drag and drop the pivot grid control from the toolbox (under Syncfusion BI Web category) or manually define the control as shown in the following code sample in the "GettingStarted.aspx" page.
 
 {% highlight html %}
 
@@ -88,9 +88,9 @@ Either drag and drop the PivotGrid control from the toolbox (under Syncfusion BI
 
 {% endhighlight %}
 
-### Populate PivotGrid with dataSource
+### Populate pivot grid with data source
 
-Initializes the OLAP datasource for PivotGrid control as shown below.
+Initializes the OLAP data source for the pivot grid control as shown below:
 
 {% highlight html %}
 
@@ -115,26 +115,26 @@ Initializes the OLAP datasource for PivotGrid control as shown below.
      
 {% endhighlight %}
 
-The above code will generate a simple PivotGrid with "Fiscal" field in Row, "Customer Geography" field in Column and "Internet Sales Amount" field in Value section.
+The above code will generate a simple pivot grid with "Fiscal" field in the row, "Customer Geography" field in the column, and "Internet Sales Amount" field in the value section.
 
 ![](Getting-Started_images/OlapClientside.png)
 
 
-## Creating a simple application PivotGrid and OLAP datasource (Server Mode)
+## Creating a simple application pivot grid and OLAP data source (server mode)
 
-This section covers the information required to create a simple PivotGrid bound to OLAP datasource. 
+This section covers the information required to create a simple pivot grid bound to the OLAP data source.
 
-N> ASP.NET MVC Web Application will contain a service that transfers data to server-side, processes and returns back to client-side for control rendering and re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement.
+N> ASP.NET MVC Web Application contains a service that will transfer the data to server-side, process it, and return it to client-side for control rendering and re-rendering. The service utilized for communication can be either WCF or WebAPI based on user requirement.
 
-### Project Initialization
+### Project initialization
 
-Create a new **ASP.NET Empty Web Application** using Visual Studio IDE and name the project as **“PivotGridDemo”**.
+Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project **“PivotGridDemo”**.
 
-Now add a "Web Form" to the Empty Web Application. For adding a "Web Form", right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select "Web Form" and name it as `GettingStarted.aspx` and click **"Add"**.
+Now, add a web form to the empty web application. For adding a web form, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select web form and name it `GettingStarted.aspx`, and then click **Add**.
 
-To set an appropriate start page, right-click on the **"GettingStarted.aspx"** in Solution Explorer and select **"Set As Start Page"**.
+To set an appropriate start page, right-click the **"GettingStarted.aspx"** in the solution explorer and select **"Set As Start Page"**.
 
-Now add the following dependency libraries as references into your Web Application. In order to add them to your application, right-click on **References** in Solution Explorer and select **Add Reference**. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.  
+Now, add the following dependency libraries as references to your web application. To add them to your application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
 
 * Microsoft.AnalysisServices.AdomdClient
 * Syncfusion.Compression.Base
@@ -152,17 +152,17 @@ Now add the following dependency libraries as references into your Web Applicati
 
 N> If any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility is installed, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET].
 
-### Scripts and CSS Initialization
+### Scripts and CSS initialization
 
-The scripts and style sheets that are mandatorily required to render PivotGrid control in a Web Application are mentioned in an appropriate order below:
+The scripts and style sheets that are required to render the pivot grid control in a web application are mentioned below in an appropriate order:
 
 1. ej.web.all.min.css
 2. jQuery-3.0.0.min.js
 3. ej.web.all.min.js
 
-[Click here](http://help.syncfusion.com/js/cdn) to know more about scripts and style sheets available online (CDN Link).
+[Click here](http://help.syncfusion.com/js/cdn) to know more about scripts and style sheets available in online (CDN link).
 
-Scripts and style sheets are referred under the <head> tag in **GettingStarted.aspx** page.
+Scripts and style sheets are referred under the <head> tag in the **GettingStarted.aspx** page.
 
 {% highlight html %}
 
@@ -174,11 +174,11 @@ Scripts and style sheets are referred under the <head> tag in **GettingStarted.a
 
 {% endhighlight %}
 
-### Control Initialization
+### Control initialization
 
-Either drag and drop the **PivotGrid** control from the toolbox (under **Syncfusion BI Web** category) or manually define the control like in the below code sample inside **"GettingStarted.aspx"** page.
+You can drag and drop the **pivot grid** control from the toolbox (under **Syncfusion BI Web** category) or manually define the control as shown in the following code sample of the **"GettingStarted.aspx"** page.
  
-Once the control is placed into the web page, add **'ScriptManager'** next to it in-order to generate appropriate scripts.
+After placing the control in the web page, add the **'ScriptManager'** next to it to generate appropriate scripts.
 
 {% highlight html %}
 
@@ -199,11 +199,11 @@ Once the control is placed into the web page, add **'ScriptManager'** next to it
 
 {% endhighlight %}
 
-The **“Url”** property in PivotGrid control points the service endpoint, where data are processed and fetched in the form of JSON. The services used in PivotGrid control as endpoint are WCF and WebAPI.
+The `Url` property in the pivot grid control points the service endpoint, where the data is processed and fetched in the form of JSON. The services used in the pivot grid control as endpoint are WCF and WebAPI.
 
-N> The above “GettingStarted.aspx” contains WebAPI URL, which is “/Olap”. If WCF service is used as endpoint, the URL would look like “/OlapService.svc”.
+N> The above “GettingStarted.aspx” contains WebAPI URL, which is “/Olap”. If the WCF service is used as an endpoint, then the URL will look like “/OlapService.svc”.
 
-If you are manually entering the code instead of drag and drop operation from toolbox, then you need to register the referenced assemblies in Web.config file. 
+If you enter the code manually instead of drag and drop from the toolbox, then you should register the referenced assemblies in the Web.config file.
 
 
 {% highlight xml %}
@@ -230,15 +230,15 @@ If you are manually entering the code instead of drag and drop operation from to
 
 ### WebAPI
 
-**Adding a WebAPI Controller**
+**Adding a WebAPI controller**
 
-To add a WebAPI controller in an existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **WebAPI Controller Class** and name it as `OlapController.cs`, click Add.
+To add a WebAPI controller in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **WebAPI Controller Class** and name it `OlapController.cs`, and then click Add.
 
-Now, WebAPI controller is added to the application successfully containing the file **“OlapController.cs”**.
+Now, the WebAPI controller is added to the application, which, in-turn, comprises the **“OlapController.cs”** file.
 
-N> While adding WebAPI Controller Class, name it with the suffix 'Controller' that is mandatory. For example, in this demo the controller is named as "OlapController".
+N> While adding WebAPI controller class, add the mandatory suffix 'Controller'. For example, in this demo, the controller is named "OlapController".
 
-Next, remove all the existing methods such as "Get", "Post", "Put" and "Delete" present inside `OlapController.cs` file.
+Next, remove all the existing methods such as "Get", "Post", "Put", and "Delete" present in the `OlapController.cs` file.
 
 {% highlight c# %}
 
@@ -252,9 +252,9 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
-**Adding the List of Namespaces**
+**Adding the list of namespaces**
 
-The following are the list of namespaces to be added on top of the main class inside `OlapController.cs` file.
+The following are the list of namespaces to be added on top of the main class in the `OlapController.cs` file:
 
 {% highlight c# %}
 
@@ -283,9 +283,9 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
-**Datasource Initialization**
+**Data source initialization**
 
-Now, the connection string to connect OLAP Cube, PivotGrid and JavaScriptSerializer instances are created immediately inside the main class in OlapController.cs file.
+Now, the connection string to connect the OLAP cube, pivot grid, and JavaScriptSerializer instances is created immediately in the main class of the OlapController.cs file.
 
 {% highlight c# %}
 
@@ -304,9 +304,9 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
-**Service methods in WebAPI Controller**
+**Service methods in WebAPI controller**
 
-Define the service methods inside OlapController class, found inside `OlapController.cs` file, created while adding WebAPI Controller Class to the Application.
+Define the service methods in the OlapController class, find in the `OlapController.cs` file which was created while adding the WebAPI controller class to the application.
 
 {% highlight c# %}
 
@@ -536,9 +536,9 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
-**Configure routing in Global Application Class**
+**Configure routing in global application class**
 
-To add a Global.asax, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **Global Application Class** and name it as `Global.asax`, click **Add**. After the addition of **Global.asax** file, immediately add the namespace **“using System.Web.Http;”** and then you can configure routing like in the following code example.
+To add a Global.asax, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **Global Application Class** and name it `Global.asax`, and then click **Add**. After adding the **Global.asax** file, immediately add the namespace **“using System.Web.Http;”**, and then configure the routing as shown in the following code example:
 
 {% highlight c# %}
 
@@ -556,12 +556,12 @@ public class Global : System.Web.HttpApplication
 
 {% endhighlight %}
 
-Now, **PivotGrid** will be rendered with Internet Sales Amount over a period of fiscal years across different customer geographic locations.
+Now, the **PivotGrid** will be rendered with internet sales amount over a period of fiscal years across different customer geographic locations.
 
 ![](Getting-Started_images/pivotgrid.png) 
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotGrid. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/pivotgrid/olap-connectivity#wcf).
+This section demonstrates the utilization of WCF service as endpoint binding the OLAP data source to a simple pivot grid. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/pivotgrid/olap-connectivity#wcf).
 
 

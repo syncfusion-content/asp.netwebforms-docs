@@ -7,12 +7,12 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Grouping Bar
+# Grouping bar
 
 ## Initialization 
-Grouping Bar allows user to dynamically alter the report by filter, sort and remove operations in the PivotGrid control. Based on the Relational datasource and report bound to the PivotGrid control, Grouping Bar will be automatically populated. You can enable Grouping Bar option in PivotGrid by setting the `EnableGroupingBar` property to true.
+Grouping bar allows you to dynamically alter the report by filter, sort, and remove operations in the pivot grid control. Based on the relational data source and report bound to the pivot grid control, the grouping bar will be automatically populated. You can enable this option in the pivot grid by setting the `EnableGroupingBar` property to true.
 
-### Client Mode
+### Client mode
 
 {% highlight html %}
 
@@ -42,7 +42,7 @@ Grouping Bar allows user to dynamically alter the report by filter, sort and rem
 
 ![](Grouping-Bar_images/RealtionalClientGR.png)
 
-### Server Mode
+### Server mode
 
 {% highlight html %}
 
@@ -53,45 +53,45 @@ Grouping Bar allows user to dynamically alter the report by filter, sort and rem
 
 ![](Grouping-Bar_images/groupingbar.png)
 
-## Drag and Drop
+## Drag and drop
 
-You can alter the report on fly through drag-and-drop operation.
+You can alter the report on fly through the drag and drop operation.
 
 ![](Grouping-Bar_images/GBar_Rel.png)
 
-## Context Menu
+## Context menu
 
-You can also alter the report by using context menu.
+You can also alter the report by using the context menu.
 
 ![](Grouping-Bar_images/CMenu_Rel.png)
 
-## Searching Values
+## Searching values
 
-Search option available in Grouping Bar allows you to search a specific value that needs to be filtered from the list of values inside the filter pop-up window.
+The search option available in the grouping bar allows you to search a specific value that should be filtered from the list of values in the filter pop-up window.
 
 ![](Grouping-Bar_images/filter.png)
 
 ![](Grouping-Bar_images/groupingbar-search.png)
 
-## Filtering Values
+## Filtering values
 
-Filtering option available in Grouping Bar allows you to select a specific set of values that needs to be displayed in the PivotGrid control. At least one value needed to be in checked state while filtering otherwise “Ok” button will be disabled.
+The filtering option available in the grouping bar allows you to select a specific set of values that should be displayed in the pivot grid control. Atleast, one value should be present in checked state while filtering, otherwise, the Ok button will be disabled.
 
 ![](Grouping-Bar_images/filter.png)
 
 ![](Grouping-Bar_images/filter1.png)
 
-## Sorting Values
+## Sorting values
 
-Sorting option available in Grouping Bar allows you to arrange headers either in ascending or descending order. Sorting option is applicable for fields available only in Row and Column region. By default, headers are sorted in ascending order. Regarding sorting indicator, up arrow denotes ascending order and down arrow denotes descending order.
+The sorting option available in the grouping bar allows you to arrange headers in ascending or descending order. This option is applicable for fields available only in the row and column region. By default, headers are sorted in the ascending order. In the sorting indicator, up arrow denotes the ascending order and a down arrow denotes the descending order.
 
 ![](Grouping-Bar_images/sort.png)
 
 ![](Grouping-Bar_images/sort-gird.png)
 
-## Removing Field
+## Removing field
 
-Remove option available in the Grouping Bar allows you to completely remove a specific field from the PivotGrid control. Remove operation can be either achieved by clicking remove icon available inside each field or by dragging and dropping field out of Grouping Bar region.
+The remove option available in the grouping bar allows you to completely remove a specific field from the pivot grid control. The remove operation can be achieved by clicking the remove icon available in each field or by dragging and dropping the field out of the grouping bar region.
 
 ![](Grouping-Bar_images/remove.png)
 
