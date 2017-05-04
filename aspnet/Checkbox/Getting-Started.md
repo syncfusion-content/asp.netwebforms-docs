@@ -175,7 +175,7 @@ Add the following code in the <body> element of the corresponding ASPX page.
                         *.Mp3</label>
                 </td>
                 <td>
-                    <ej:CheckBox ID="Checkbox2" runat="server" Value="Wave">
+                    <ej:CheckBox ID="Checkbox2" runat="server" Value="WAV">
                     </ej:CheckBox>
                     <label for="Checkbox2">
                         *.wav</label>
