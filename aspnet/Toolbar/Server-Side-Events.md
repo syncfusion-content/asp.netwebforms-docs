@@ -52,7 +52,7 @@ protected void toolbarcontent_ItemClick(object sender, EventArgs e)
 
 {
 
-   Response.Write("Serverside event has been triggered");
+   Response.Write("Server side event has been triggered");
 
 }
 

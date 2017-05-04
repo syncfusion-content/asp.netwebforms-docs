@@ -64,24 +64,24 @@ Configure the ImageBrowser and FileBrowser property to insert an image from your
 [System.Web.Services.WebMethod]
 public static object FileActionDefault(string ActionType, string Path, string ExtensionsAllow, string LocationFrom, string LocationTo, string Name, string[] Names, string NewName, string Action, IEnumerable<CommonFileDetails> CommonFiles)
 {
-    FileExplorerOperations opeartion = new FileExplorerOperations();
+    FileExplorerOperations operation = new FileExplorerOperations();
     switch (ActionType)
     {
         case "Read":
-            return (opeartion.Read(Path, ExtensionsAllow));
+            return (operation.Read(Path, ExtensionsAllow));
         case "CreateFolder":
-            return (opeartion.CreateFolder(Path, Name));
+            return (operation.CreateFolder(Path, Name));
         case "Paste":
-            opeartion.Paste(LocationFrom, LocationTo, Names, Action, CommonFiles);
+            operation.Paste(LocationFrom, LocationTo, Names, Action, CommonFiles);
             break;
         case "Remove":
-            opeartion.Remove(Names, Path);
+            operation.Remove(Names, Path);
             break;
         case "Rename":
-            opeartion.Rename(Path, Name, NewName, CommonFiles);
+            operation.Rename(Path, Name, NewName, CommonFiles);
             break;
         case "GetDetails":
-            return (opeartion.GetDetails(Path, Names));
+            return (operation.GetDetails(Path, Names));
     }
     return "";
 }
