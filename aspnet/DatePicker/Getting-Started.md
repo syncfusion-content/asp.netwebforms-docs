@@ -80,7 +80,7 @@ EJWEB DatePicker can be created using aspx code like as below code
 
     <%--initialize DatePicker component--%>
 
-    <ej:DatePicker runat="server" ID="datepick"></ej:DatePicker>
+    <ej:DatePicker runat="server" ID="datepicker"></ej:DatePicker>
 
 {% endhighlight %}
 
@@ -96,7 +96,7 @@ Below code shows how to assign values at initialization
 
     <%--initialize DatePicker component with current date--%>
 
-    <ej:DatePicker runat="server" ID="datepick" Value=<%= DateTime.Now.ToLongTimeString() %>>
+    <ej:DatePicker runat="server" ID="datepicker" Value=<%= DateTime.Now.ToLongTimeString() %>>
     </ej:DatePicker>
 
 {% endhighlight %}
@@ -112,7 +112,7 @@ You can assign values after initialization of EJWEB DatePicker (it helps to get 
 
             //create instance for datePicker.
             // only after control creation we can get dateObj otherwise it throws exception.
-            var dateObj = $("#datepick").ejDatePicker('instance');
+            var dateObj = $("#datepicker").ejDatePicker('instance');
 
             //set value using date object
             dateObj.option('value', new Date());

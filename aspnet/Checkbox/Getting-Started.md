@@ -73,7 +73,7 @@ Create an ASPX file and add ejCheckBox element to render the Checkbox.
                 <td class="chkrad">
                     <ej:CheckBox ID="Checkbox6" runat="server" Value="Watching tv">
                     </ej:CheckBox>
-                    <label for="Checkbox6">Watching Tv</label>
+                    <label for="Checkbox6">Watching TV</label>
                 </td>
             </tr>
         </table>
@@ -175,10 +175,10 @@ Add the following code in the <body> element of the corresponding ASPX page.
                         *.Mp3</label>
                 </td>
                 <td>
-                    <ej:CheckBox ID="Checkbox2" runat="server" Value="Wav">
+                    <ej:CheckBox ID="Checkbox2" runat="server" Value="Wave">
                     </ej:CheckBox>
                     <label for="Checkbox2">
-                        *.Wav</label>
+                        *.wav</label>
                 </td>
             </tr>
         </table>
@@ -192,7 +192,7 @@ Add the following code in the <body> element of the corresponding ASPX page.
                     <ej:CheckBox ID="Checkbox3" runat="server" Value="Avi">
                     </ej:CheckBox>
                     <label for="Checkbox3">
-                        *.Avi</label>
+                        *.avi</label>
                 </td>
                 <td>
                     <ej:CheckBox ID="Checkbox4" runat="server" Value="MP4">
