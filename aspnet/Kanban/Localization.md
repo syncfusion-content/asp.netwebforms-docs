@@ -75,6 +75,90 @@ Unassigned
 </td><td>
 Unassigned
 </td></tr>
+<tr>
+<td>
+AddCard
+</td><td>
+Add Card
+</td></tr>
+<tr>
+<td>
+EditCard
+</td><td>
+Edit Card
+</td></tr>
+<tr>
+<td>
+DeleteCard
+</td><td>
+Delete Card
+</td></tr>
+<tr>
+<td>
+TopofRow
+</td><td>
+Top of Row
+</td></tr>
+<tr>
+<td>
+BottomofRow
+</td><td>
+Bottom of Row
+</td></tr>
+<tr>
+<td>
+MoveUp
+</td><td>
+Move Up
+</td></tr>
+<tr>
+<td>
+MoveDown
+</td><td>
+Move Down
+</td></tr>
+<tr>
+<td>
+MoveLeft
+</td><td>
+Move Left
+</td></tr>
+<tr>
+<td>
+MoveRight
+</td><td>
+Move Right
+</td></tr>
+<tr>
+<td>
+MovetoSwimlane
+</td><td>
+Move to Swimlane
+</td></tr>
+<tr>
+<td>
+HideColumn
+</td><td>
+Hide Column
+</td></tr>
+<tr>
+<td>
+VisibleColumns
+</td><td>
+Visible Columns
+</td></tr>
+<tr>
+<td>
+PrintCard
+</td><td>
+Print Card
+</td></tr>
+<tr>
+<td>
+Search
+</td><td>
+Search
+</td></tr>
 </table>
 
 The following code example describes the above behavior. 
