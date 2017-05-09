@@ -761,6 +761,24 @@ Axis will be placed in the opposite side if value of *CrossesAt* property is gre
 
 ![](Axis_images/axis_img54.png)
 
+#### Positioning the axis elements while crossing
+
+The `ShowNextToAxisLine` property is used for controlling the axis elements movement along with the axis line while axis crossing is performed. When the showNextToAxisLine is set as false only the axis line and the tick lines are placed at the crossing Value and the axis elements will be placed outside the chart area. The default value of `ShowNextToAxisLine` is **true**.  
+
+{% highlight html %}
+
+	<ej:Chart ID="Chart1" runat="server">
+		
+		<%--Crosses primary Y axis at the value 0 --%>
+		<PrimaryXAxis CrossesAt="0" ShowNextToAxisLine="false" >
+		</PrimaryXAxis>
+		
+	</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img67.png)
+
 ### Axis Visibility
 
 Axis visibility can be controlled by using the **Visible** property of the axis. The default value of the Visible property is **True**. 
