@@ -1015,7 +1015,7 @@ Lookup data source can be bound to `DataSource` property of `Columns`. Data `Fie
 
 In the `DataSource` property, we can bound local and remote data. 
 
-I> For foreign key column the sorting and grouping is based on `ForeignKeyField` instead of `ForeignKeyValue`.
+I> For foreign key column the sorting and grouping is based on `ForeignKeyField` instead of `ForeignKeyValue`. You can refer [Foreign Key Adaptor](https://help.syncfusion.com/aspnet/grid/data-adaptors#foreign-key-adaptor) to sort and group the foreign key column based on `ForeignKeyField`.
 
 N> In remote data, server should be configured to perform select and filter operations since the Grid will try to fetch required columns using select operation and required data using filter operation.
 
