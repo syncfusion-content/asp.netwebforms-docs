@@ -222,7 +222,7 @@ OnClientLegendItemRender event triggers before rendering the legend items. This 
 
 You can get the legend item details such as *Rangeindex, bounds and shape* by subscribing the **OnClientLegendItemClick** event of the circular gauge. When the legend item is clicked, it triggers the event and returns the legend information 
 
-{{% highlight html %}
+{% highlight html %}
 
 <ej:CircularGauge ID="ScaleCircularGauge" runat="server" OnClientLegendItemClick="onlegendclicked"> 
 </ej:CircularGauge>
