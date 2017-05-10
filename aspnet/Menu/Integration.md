@@ -67,47 +67,47 @@ Add the following code example to configure AngularJS for the menu control
 
     //first level child
 
-            {id: 11, parentId: 1, text: "Inbox", sprite: "mailicon sprite-inbox" },
+            {id: 11, parentId: 1, text: "Inbox", sprite: "mail sprite-inbox" },
 
-            { id: 12, parentId: 1, text: "Drafts", sprite: "mailicon sprite-drafts" },
+            { id: 12, parentId: 1, text: "Drafts", sprite: "mail sprite-drafts" },
 
-            { id: 13, parentId: 1, text: "Sent items", sprite: "mailicon sprite-sentitems" },
+            { id: 13, parentId: 1, text: "Sent items", sprite: "mail sprite-sentitems" },
 
-            { id: 14, parentId: 1, text: "Deleted", sprite: "mailicon sprite-deleted" },
+            { id: 14, parentId: 1, text: "Deleted", sprite: "mail sprite-deleted" },
 
-            { id: 15, parentId: 1, text: "Junk mails", sprite: "mailicon sprite-junk" },
+            { id: 15, parentId: 1, text: "Junk mails", sprite: "mail sprite-junk" },
 
-            { id: 16, parentId: 1, text: "Personal", sprite: "mailicon sprite-folders" },
+            { id: 16, parentId: 1, text: "Personal", sprite: "mail sprite-folders" },
 
-            { id: 17, parentId: 2, text: "My Calender", sprite: "mailicon sprite-calendar" },
+            { id: 17, parentId: 2, text: "My Calender", sprite: "mail sprite-calendar" },
 
-            { id: 18, parentId: 2, text: "Team", sprite: "mailicon sprite-calendar" },
+            { id: 18, parentId: 2, text: "Team", sprite: "mail sprite-calendar" },
 
-            { id: 19, parentId: 2, text: "Others", sprite: "mailicon sprite-calendar" },
+            { id: 19, parentId: 2, text: "Others", sprite: "mail sprite-calendar" },
 
-            { id: 20, parentId: 3, text: "My Reference", sprite: "mailicon sprite-folder" },
+            { id: 20, parentId: 3, text: "My Reference", sprite: "mail sprite-folder" },
 
-            { id: 21, parentId: 3, text: "Team Meeting", sprite: "mailicon sprite-folder" },
+            { id: 21, parentId: 3, text: "Team Meeting", sprite: "mail sprite-folder" },
 
-            { id: 22, parentId: 3, text: "Others", sprite: "mailicon sprite-folder" },
+            { id: 22, parentId: 3, text: "Others", sprite: "mail sprite-folder" },
 
-            { id: 23, parentId: 4, text: "Suggested", sprite: "mailicon sprite-contacts" },
+            { id: 23, parentId: 4, text: "Suggested", sprite: "mail sprite-contacts" },
 
-            { id: 24, parentId: 4, text: "My Team", sprite: "mailicon sprite-contacts" },
+            { id: 24, parentId: 4, text: "My Team", sprite: "mail sprite-contacts" },
 
-            { id: 25, parentId: 4, text: "Others", sprite: "mailicon sprite-contacts" },
+            { id: 25, parentId: 4, text: "Others", sprite: "mail sprite-contacts" },
 
     //second level child
 
-            {id: 111, parentId: 11, text: "Development", sprite: "mailicon sprite-folders" },
+            {id: 111, parentId: 11, text: "Development", sprite: "mail sprite-folders" },
 
-            { id: 111, parentId: 11, text: "Supports", sprite: "mailicon sprite-folders" },
+            { id: 111, parentId: 11, text: "Supports", sprite: "mail sprite-folders" },
 
-            { id: 111, parentId: 11, text: "HR Team", sprite: "mailicon sprite-folders" },
+            { id: 111, parentId: 11, text: "HR Team", sprite: "mail sprite-folders" },
 
-            { id: 112, parentId: 12, text: "Support Template", sprite: "mailicon sprite-folders" },
+            { id: 112, parentId: 12, text: "Support Template", sprite: "mail sprite-folders" },
 
-            { id: 112, parentId: 12, text: "Personal", sprite: "mailicon sprite-folders" }
+            { id: 112, parentId: 12, text: "Personal", sprite: "mail sprite-folders" }
 
             ];
 
@@ -141,7 +141,7 @@ Add the following code example in your style section.
 
         {
 
-            background-image: url("mail/mailicons.png");
+            background-image: url("mail/mails.png");
 
             height: 25px;
 

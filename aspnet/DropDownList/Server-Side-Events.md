@@ -96,7 +96,7 @@ The code Define dropdownlist ValueSelect server side event in behind.
 
         //e.SelectedText – Text  of selected node
 
-        //e.ItemId – Index value of slected node
+        //e.ItemId – Index value of selected node
 
     }
 	

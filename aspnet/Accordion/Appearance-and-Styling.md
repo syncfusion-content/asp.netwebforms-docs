@@ -56,7 +56,7 @@ In an ASPX page, define the Accordion control and add the contents correspondi
 
                 <ContentSection>
 
-                     Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame. 
+                     Orubase is the only mobile application development Framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame. 
 
                 </ContentSection>
 
@@ -102,7 +102,7 @@ In an ASPX page, define the Accordion control and add the contents correspondi
 
                 <ContentSection>
 
-                     Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame. 
+                     Orubase is the only mobile application development Framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame. 
 
                 </ContentSection>
 
@@ -176,7 +176,7 @@ In an ASPX page, define the Accordion control and add the contents correspondin
 
                 <ContentSection>
 
-                     Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame. 
+                     Orubase is the only mobile application development Framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame. 
 
                 </ContentSection>
 
@@ -251,7 +251,7 @@ In an ASPX page, define the Accordion control and add the contents correspondin
 
                 <ContentSection>
 
-                     Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame. 
+                     Orubase is the only mobile application development Framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame. 
 
                 </ContentSection>
 
@@ -317,7 +317,7 @@ Following code disables Animation for Accordion.
 
                 <ContentSection>
 
-                    Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame. 
+                    Orubase is the only mobile application development Framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame. 
 
                 </ContentSection>
 
@@ -373,7 +373,7 @@ The following code example sets value for ExpandSpeed and CollapseSpeed properti
 
                 <ContentSection>
 
-                     Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame. 
+                     Orubase is the only mobile application development Framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame. 
 
                 </ContentSection>
 
@@ -478,7 +478,7 @@ In the ASPX page, define the Accordion control and add the contents correspondi
 
                 <ContentSection>
 
-                     Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame. 
+                     Orubase is the only mobile application development Framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame. 
 
                 </ContentSection>
 

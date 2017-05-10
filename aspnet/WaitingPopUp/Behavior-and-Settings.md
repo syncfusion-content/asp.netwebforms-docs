@@ -19,9 +19,9 @@ Add the following code example to the corresponding ASPX page to render the Wait
 
 {% highlight html %}
 
-<div id="targetelement"></div>
+<div id="target"></div>
 
-<ej:WaitingPopup ID="target" Target="#targetelement" runat="server" ShowOnInit="True"></ej:WaitingPopup>
+<ej:WaitingPopup ID="target" Target="#target" runat="server" ShowOnInit="True"></ej:WaitingPopup>
 
 {% endhighlight %}
 
@@ -33,7 +33,7 @@ Add the following styles to render the WaitingPopup control
 
 <style type="text/css">
 
-    #targetelement {
+    #target {
 
         height: 320px;
 
@@ -64,15 +64,15 @@ Add the following code example to the corresponding ASPX page to enable or disab
 
 Enable popup indicator:
 
-<div id="targetelement"></div>
+<div id="target"></div>
 
-<ej:WaitingPopup ID="target" runat="server" Target="#targetelement" ShowOnInit="True" ShowImage="true" Text="Loading... Please wait..."></ej:WaitingPopup>
+<ej:WaitingPopup ID="target" runat="server" Target="#target" ShowOnInit="True" ShowImage="true" Text="Loading... Please wait..."></ej:WaitingPopup>
 
 Disable popup indicator:
 
-<div id="targetelement1"></div>
+<div id="target1"></div>
 
-<ej:WaitingPopup ID="target1" runat="server" Target="#targetelement1" ShowOnInit="True" ShowImage="false" Text="Loading... Please wait..."></ej:WaitingPopup>    
+<ej:WaitingPopup ID="target1" runat="server" Target="#target1" ShowOnInit="True" ShowImage="false" Text="Loading... Please wait..."></ej:WaitingPopup>    
 
 {% endhighlight %}
 
@@ -84,7 +84,7 @@ Add the following styles to render the WaitingPopup control.
 
 <style type="text/css">
 
-    #targetelement, #targetelement1 {
+    #target, #target1 {
 
         height: 320px;
 
@@ -118,9 +118,9 @@ Add the following code example to the corresponding ASPX page to show/hide the W
 
 {% highlight html %}
 
-<div id="targetelement"></div>
+<div id="target"></div>
 
-<ej:WaitingPopup ID="target" runat="server" Target="#targetelement" ShowOnInit="True"></ej:WaitingPopup>
+<ej:WaitingPopup ID="target" runat="server" Target="#target" ShowOnInit="True"></ej:WaitingPopup>
 
 {% endhighlight %}
 
@@ -176,7 +176,7 @@ Add the following styles to render the WaitingPopup control.
 
 <style type="text/css">
 
-    #targetelement {
+    #target {
 
         height: 320px;
 

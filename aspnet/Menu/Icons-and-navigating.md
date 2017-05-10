@@ -43,37 +43,37 @@ public partial class Menu : System.Web.UI.Page
 
         List<icons> menu = new List<icons>();
 
-        menu.Add(new icons { id = 1, text = "Inbox", parentId = null, sprite = "mailicon sprite-root" });
+        menu.Add(new icons { id = 1, text = "Inbox", parentId = null, sprite = "mail sprite-root" });
 
-        menu.Add(new icons { id = 2, text = "Sent items", parentId = null, sprite = "mailicon sprite-sentitems" });
+        menu.Add(new icons { id = 2, text = "Sent items", parentId = null, sprite = "mail sprite-sentitems" });
 
-        menu.Add(new icons { id = 3, text = "All mail", parentId = null, sprite = "mailicon sprite-notes" });
+        menu.Add(new icons { id = 3, text = "All mail", parentId = null, sprite = "mail sprite-notes" });
 
-        menu.Add(new icons { id = 4, text = "Outbox", parentId = null, sprite = "mailicon sprite-outbox" });
+        menu.Add(new icons { id = 4, text = "Outbox", parentId = null, sprite = "mail sprite-outbox" });
 
-        menu.Add(new icons { id = 11, parentId = "1", text = "Mark as unread", sprite = "mailicon sprite-folder" });
+        menu.Add(new icons { id = 11, parentId = "1", text = "Mark as unread", sprite = "mail sprite-folder" });
 
-        menu.Add(new icons { id = 12, parentId = "1", text = "Forward", sprite = "mailicon sprite-drafts" });
+        menu.Add(new icons { id = 12, parentId = "1", text = "Forward", sprite = "mail sprite-drafts" });
 
-        menu.Add(new icons { id = 13, parentId = "1", text = "Mark as favourite", sprite = "mailicon sprite-folder" });
+        menu.Add(new icons { id = 13, parentId = "1", text = "Mark as favourite", sprite = "mail sprite-folder" });
 
-        menu.Add(new icons { id = 14, parentId = "1", text = "Mark as important", sprite = "mailicon sprite-folder" });
+        menu.Add(new icons { id = 14, parentId = "1", text = "Mark as important", sprite = "mail sprite-folder" });
 
-        menu.Add(new icons { id = 15, parentId = "2", text = "Move to trash", sprite = "mailicon sprite-junk" });
+        menu.Add(new icons { id = 15, parentId = "2", text = "Move to trash", sprite = "mail sprite-junk" });
 
-        menu.Add(new icons { id = 16, parentId = "2", text = "Delete", sprite = "mailicon sprite-deleted" });
+        menu.Add(new icons { id = 16, parentId = "2", text = "Delete", sprite = "mail sprite-deleted" });
 
-        menu.Add(new icons { id = 17, parentId = "3", text = "New mail", sprite = "mailicon sprite-folder" });
+        menu.Add(new icons { id = 17, parentId = "3", text = "New mail", sprite = "mail sprite-folder" });
 
-        menu.Add(new icons { id = 18, parentId = "3", text = "Read mail", sprite = "mailicon sprite-folder" });
+        menu.Add(new icons { id = 18, parentId = "3", text = "Read mail", sprite = "mail sprite-folder" });
 
-        menu.Add(new icons { id = 19, parentId = "3", text = "Unread mail", sprite = "mailicon sprite-folder" });
+        menu.Add(new icons { id = 19, parentId = "3", text = "Unread mail", sprite = "mail sprite-folder" });
 
-        menu.Add(new icons { id = 20, parentId = "4", text = "Discard draft", sprite = "mailicon sprite-drafts" });
+        menu.Add(new icons { id = 20, parentId = "4", text = "Discard draft", sprite = "mail sprite-drafts" });
 
-        menu.Add(new icons { id = 21, parentId = "4", text = "Send again", sprite = "mailicon sprite-folder" });
+        menu.Add(new icons { id = 21, parentId = "4", text = "Send again", sprite = "mail sprite-folder" });
 
-        menu.Add(new icons { id = 22, parentId = "4", text = "Delete", sprite = "mailicon sprite-deleted" });
+        menu.Add(new icons { id = 22, parentId = "4", text = "Delete", sprite = "mail sprite-deleted" });
 
         menujson.DataSource = menu;
 
@@ -119,9 +119,9 @@ Add the following code example in your style section.
 
     }
 
-    .mailicon {
+    .mail {
 
-        background-image: url("Content/mailicons.png");
+        background-image: url("Content/mails.png");
 
         height: 18px;
 

@@ -19,7 +19,7 @@ Create an ASPX file and add the following code to the file.
 
 {% highlight html %}
 
-<ej:TagCloud ID="TagEvents" Title="Tech Sites" runat="server" DataTextField="text"
+<ej:TagCloud ID="Events" Title="Tech Sites" runat="server" DataTextField="text"
 
         DataUrlField="url" DataFrequencyField="frequency"></ej:TagCloud>
 

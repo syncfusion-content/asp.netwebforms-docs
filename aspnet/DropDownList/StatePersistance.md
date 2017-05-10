@@ -169,7 +169,7 @@ Here data is bound only on initial page load and not on every post back.
             data.Add(new DropDownData(6, "Diesel Trains"));
             data.Add(new DropDownData(7, "Heavy Motor Vehicles"));
             data.Add(new DropDownData(8, "Light Motor Vehicles"));
-            data.Add(new DropDownData(9, "Aeroplanes"));
+            data.Add(new DropDownData(9, "Aero planes"));
             data.Add(new DropDownData(10, "Helicopters"));
             data.Add(new DropDownData(11, "Ships"));
             data.Add(new DropDownData(12, "Submarines"));
