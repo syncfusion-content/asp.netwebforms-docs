@@ -830,4 +830,4 @@ The following output is displayed after dropping the rows on Form.
 ![](Row_images/Row_img10.png)
 {:After Drop}
 
-N>   The default behavior of drag and drop between Grid or any other controls is as cut and paste. For copy and paste behavior specify the drag behavior in [`dragBehavior`] property of Grid as copy.
+N>   The default behavior of drag and drop between Grid or any other controls is as cut and paste. For copy and paste behavior specify the drag behavior in `DragBehavior` property of Grid as "copy".
