@@ -754,9 +754,8 @@ N> 1. Grouping
 N> 2. Frozen Rows 
 N> 3. Cell merging 
 N> 4. Detail template 
-N> 5. Row template 
-N> 6. Hierarchy
-N> 7. Editing
+N> 5. Hierarchy
+N> 6. Editing
 
 ### Normal Mode:
 
