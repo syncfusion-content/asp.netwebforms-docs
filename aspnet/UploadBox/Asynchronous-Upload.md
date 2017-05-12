@@ -9,7 +9,7 @@ documentation: ug
 
 # Asynchronous Upload
 
-This feature allows you to upload and remove files asynchronously. To achieve this, set the AsyncUpload property to true. The default value of AsyncUpload property is true. The data type is Boolean.
+This feature allows you to upload and remove files asynchronously. When we choose multiple files in Asynchronous upload,files will be uploaded one by one to the server.User interaction with the page will not be interrupted at the time of upload.User can also remove the file even after uploading.This is the best way of file upload when compared to synchronous so by default UploadBox works with asynchronous upload option only.To achieve this, set the AsyncUpload property to true. The default value of AsyncUpload property is true. The data type is Boolean.
 
 The following steps guide you to upload the file asynchronously.
 
