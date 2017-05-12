@@ -9,7 +9,7 @@ documentation: ug
 
 # Synchronous Upload 
 
-This features allow you to upload and remove the files synchronously. To achieve this, set the AsyncUpload property to false. The data type is Boolean.
+This features allow you to upload and remove the files synchronously.When we choose multiple files in Synchronous upload,all files will be uploaded only on form submission.Multitasking is not possible here.To achieve this, set the AsyncUpload property to false. The data type is Boolean.
 
 N> By default, UploadBox control works with asynchronous upload option only.
 
