@@ -287,7 +287,7 @@ Checkbox list generation:
 
 By default, the checkbox list is generated from distinct values of the filter column from dataSource which gives an option to search and select the required items.
 
-Also on checkbox list generation, if the number of distinct values are greater than 1000, then the excel filter will display only first 1000 values to ensure the best performance on rendering and searching. However this limit has been customized according to your requirement by setting `MaxFilterChoices` with required limit in integer.
+Also on checkbox list generation, if the number of distinct values are greater than 1000, then the excel filter will display only first 1000 values and show "Not all items shown" label to ensure the best performance on rendering and searching. However this limit has been customized according to your requirement by setting `MaxFilterChoices` with required limit in integer.
 
 N> 1. Using excel filter events you can change the dataSource of the checkbox list. 
 N> 2. `Query` of checkbox list can also be changed using excel filter events.
