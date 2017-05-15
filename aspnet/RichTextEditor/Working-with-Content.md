@@ -240,8 +240,8 @@ N> •	By default, the editor’s < iframe > is initialized with “Segoe UI” 
 <script type="text/javascript">
     function onChange() {
         var editor = $("#<%=RTE1.ClientID%>").ejRTE("instance");
-        var ddl = editor._fontStyleDDL.ejDropDownList("instance");
-        ddl.selectItemByIndex(7);
+        var object = editor._fontStyleDDL.ejDropDownList("instance");
+        object.selectItemByIndex(7);
         var ddlSize = editor._fontSizeDDL.ejDropDownList("instance");
         ddlSize.selectItemByIndex(5);
     }
@@ -326,11 +326,11 @@ If you want to add additional font names and sizes to font drop-down, pass the f
         var editor = $("#<%=RTE1.ClientID%>").ejRTE("instance");
         editor.defaults.fontName.push({ text: "Calibri Light", value: "CalibriLight" }, { text: "Calibri", value: "Calibri" });
         editor.defaults.fontSize.push({ text: "8 (42pt)", value: "8" });
-        var ddl = editor._fontStyleDDL.ejDropDownList("instance");
+        var object = editor._fontStyleDDL.ejDropDownList("instance");
         var ddlSize = editor._fontSizeDDL.ejDropDownList("instance");
-        ddl.option({ "dataSource": editor.defaults.fontName });
+        object.option({ "dataSource": editor.defaults.fontName });
         ddlSize.option({ "dataSource": editor.defaults.fontSize });
-        ddl.selectItemByValue("CalibriLight");
+        object.selectItemByValue("CalibriLight");
         ddlSize.selectItemByValue("8");
     }
 </script>

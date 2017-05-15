@@ -155,9 +155,9 @@ In a real-time login page scenario, when you click the Login button, the Wait
 
         function btnClick(e) {
 
-            var wp = $("#target").data("ejWaitingPopup");
+            var popup = $("#target").data("ejWaitingPopup");
 
-            wp.show();
+            popup.show();
 
             setTimeout(success, 5000);
 

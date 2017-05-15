@@ -279,13 +279,13 @@ N> The columns are bounded automatically when the fields are specified with the 
 
 	{% highlight html %}
        
-       <ej:DropDownList ID="DropDownList1" runat="server" DataTextField="Text" DataValueField="Country" DataGroupByField="Role" DataImageUrlField="Image" DataImageAttributesField="ImgAttr"></ej:DropDownList>
+       <ej:DropDownList ID="DropDownList1" runat="server" DataTextField="Text" DataValueField="Country" DataGroupByField="Role" DataImageUrlField="Image" DataImageAttributesField="ImageAttr"></ej:DropDownList>
 	
     {% endhighlight %}
     
     {% highlight css %}
 
-    	.imgId {
+    	.ImageId {
         	margin: -7px;
         	padding: 3px 10px 3px 3px;
         	border: 0 none;
@@ -299,40 +299,40 @@ N> The columns are bounded automatically when the fields are specified with the 
     {% highlight c# %}
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<Employee> EmpData = new List<Employee>();
-            EmpData.Add(new Employee
+            List<Employee> Data = new List<Employee>();
+            Data.Add(new Employee
             {
                 Text = "Erik Linden",
                 Role = "Executive",
                 Country = "England",
                 Image = "../Content/Employees/3.png",
-                ImgAttr = "class='imgId'"
+                ImageAttr = "class='ImageId'"
             });
-            EmpData.Add(new Employee
+            Data.Add(new Employee
             {
                 Text = "John Linden",
                 Role = "Representative",
                 Country = "Norway",
                 Image = "../Content/Employees/6.png",
-                ImgAttr = "class='imgId'"
+                ImageAttr = "class='ImageId'"
             });
-            EmpData.Add(new Employee
+            Data.Add(new Employee
             {
                 Text = "Louis",
                 Role = "Representative",
                 Country = "Australia",
                 Image = "../Content/Employees/7.png",
-                ImgAttr = "class='imgId'"
+                ImageAttr = "class='ImageId'"
             });
-            EmpData.Add(new Employee
+            Data.Add(new Employee
             {
                 Text = "Lawrence",
                 Role = "Executive",
                 Country = "India",
                 Image = "../Content/Employees/8.png",
-                ImgAttr = "class='imgId'"
+                ImageAttr = "class='ImageId'"
             });
-            DropDownList1.DataSource = EmpData;
+            DropDownList1.DataSource = Data;
         }
         public class Employee
         {
@@ -340,14 +340,14 @@ N> The columns are bounded automatically when the fields are specified with the 
             public string Role { get; set; }
             public string Country { get; set; }
             public string Image { get; set; }
-            public string ImgAttr { get; set; }
+            public string ImageAttr { get; set; }
         }
     {% endhighlight %}
     
 {% endtabs %}
 
 
-![](DataBinding_images/DataBinding_img1.jpeg)
+![](DataBinding_images/DataBinding_Image1.jpeg)
 
 N> Images for this sample are available in (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\samples\web\themes\images<br/> 
            

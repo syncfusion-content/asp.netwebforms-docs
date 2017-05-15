@@ -38,7 +38,7 @@ In an ASPX page, add the Toolbar control with OnItemClick event as shown in the 
 
 <%--Refer Local Data section for style and data bound for toolbar items.--%>
 
-<ej:Toolbar ID="toolbarcontent" runat="server" Width="300px" OnItemClick="toolbarcontent_ItemClick" DataIdField="Id" DataTooltipTextField="Tooltip" DataSpriteCssClassField="Css"></ej:Toolbar>
+<ej:Toolbar ID="toolbar" runat="server" Width="300px" OnItemClick="toolbar_ItemClick" DataIdField="Id" DataTooltipTextField="Tooltip" DataSpriteCssClassField="Css"></ej:Toolbar>
 
 {% endhighlight %}
 
@@ -48,7 +48,7 @@ In the code behind, define the action to be performed.
 
 {% highlight c# %}
 
-protected void toolbarcontent_ItemClick(object sender, EventArgs e)
+protected void toolbar_ItemClick(object sender, EventArgs e)
 
 {
 

@@ -84,10 +84,10 @@ You can use HeaderTemplate property to add any HTML element. Code snippet to add
 
             function OnCreate(args) {
 
-                $("#check").ejCheckBox({ text: "Check All", change: "onallChange" });
+                $("#check").ejCheckBox({ text: "Check All", change: "Change" });
 
             }
-            function onallChange(args) {
+            function Change(args) {
                 window.flag = true;
                 var obj = $("#<%=DropDownList1.ClientID%>").ejDropDownList("instance");
                 if (args.isChecked) obj.checkAll();
@@ -145,23 +145,23 @@ The items can be added to the DropDownList in DataBound event using a generic Da
             // Create a DataView to get the current datasource from DropDownList
             DataView ddDataSource = (DataView)DropDown.DataSource;
             //Initialize a row element for the DataView created
-            DataRow dr = ddDataSource.Table.NewRow();
+            DataRow row = ddDataSource.Table.NewRow();
             if (sender == DropDown)
             {
                 if (ddDataSource.Count == 0)
                 {      
                     //Add the fields using the corresponding names     
-                    dr["CustomerID"] = "11011";
-                    dr["ContactName"] = "John Peter";
+                    row["CustomerID"] = "11011";
+                    row["ContactName"] = "John Peter";
                     // Insert the new item to DataView Table
-                    ddDataSource.Table.Rows.InsertAt(dr, 0);
+                    ddDataSource.Table.Rows.InsertAt(row, 0);
                 }
                 else
                 {
-                    dr["CustomerID"] = "11012";
-                    dr["ContactName"] = "Nancy";
+                    row["CustomerID"] = "11012";
+                    row["ContactName"] = "Nancy";
                     //Insert at the index of 4
-                    ddDataSource.Table.Rows.InsertAt(dr, 4);
+                    ddDataSource.Table.Rows.InsertAt(row, 4);
                     
                 }
             }
