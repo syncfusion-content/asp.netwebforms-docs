@@ -741,7 +741,85 @@ The following output is displayed as a result of the above code example.
 
 ![](Summary_images/Summary_img5.png)
 
+## Summary Template
 
+Using `Template` property of `SummaryColumns` you can render any type of JsRender templates or customizing the summary value.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight html %}
+
+<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True" ShowSummary="True">
+    
+    <SummaryRows>
+
+        <ej:SummaryRow ShowCaptionSummary="True" ShowTotalSummary="False">
+
+          <SummaryColumn>
+
+                <ej:SummaryColumn SummaryType="Average" DisplayColumn="Freight" DataMember="Freight" Format="{0:C}" Template = "#templateData" />
+
+          </SummaryColumn>
+
+       </ej:SummaryRow>
+
+    </SummaryRows>
+
+    <Columns>
+
+         <ej:Column Field="OrderID" />
+
+         <ej:Column Field="EmployeeID" />
+
+         <ej:Column Field="Freight" Format="{0:C}" />
+
+    </Columns>
+
+</ej:Grid>
+
+
+{% endhighlight  %}
+{% highlight c# %}
+
+
+public partial class DefaultFunctionalities : System.Web.UI.Page
+
+    {
+
+        List<Orders> order = new List<Orders>();
+
+        protected void Page_Load(object sender, EventArgs e)
+
+        {
+
+            var DataSource = new NorthwindDataContext().OrdersViews.Take(5).ToList();
+            
+            this.OrdersGrid.DataSource = DataSource;
+            
+            this.OrdersGrid.DataBind();
+
+        }
+
+    }
+
+{% endhighlight  %}
+
+{% highlight js %}
+
+<script id="templateData" type="text/x-jsrender">
+     Freight has Average of {{:summaryValue}} in  dollars
+</script>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+The following output is displayed as a result of the above code example.
+
+![](Summary_images/Summary_img7.png)
 
 ## Handling Aggregation in server side
 
