@@ -17,7 +17,7 @@ In the ASPX page, add the UploadBox element with the customized file size by usi
 
 {% highlight html %}
 
-<ej:UploadBox ID="Uploadbox2" runat="server" FileSize="1048576" SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx" ClientSideOnError="fileuploaderror"></ej:UploadBox>
+<ej:UploadBox ID="Uploadbox2" runat="server" FileSize="1048576" SaveUrl="SaveFiles.ashx" RemoveUrl="RemoveFiles.ashx" ClientSideOnError="error"></ej:UploadBox>
 
 {% endhighlight %}
 
@@ -25,7 +25,7 @@ In the ClientSideOnError event display, an alert message is displayed when the f
 
 {% highlight css %}
 
-function fileuploaderror(e, ui) {
+function error(e, ui) {
 
   alert(e.error);
 

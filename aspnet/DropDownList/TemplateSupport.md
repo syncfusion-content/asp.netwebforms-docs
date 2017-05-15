@@ -29,14 +29,14 @@ In the demo, a List data is created with Text, Image, Role and Country which is 
 
 	{% highlight html %}
     
-        <ej:DropDownList ID="selectFolder" runat="server" Width="200px" Template="&lt;img class='eimg' src='../Content/images/Employee/${eimg}.png' alt='employee' height='50px' width='50px'/><div class='ename'> ${text} </div><div class='desig'> ${desig} </div><div class='cont'> ${country} </div>" WatermarkText="Select an item">
+        <ej:DropDownList ID="selectFolder" runat="server" Width="200px" Template="&lt;img class='image' src='../Content/images/Employee/${image}.png' alt='employee' height='50px' width='50px'/><div class='ename'> ${text} </div><div class='designation'> ${designation} </div><div class='cont'> ${country} </div>" WatermarkText="Select an item">
         </ej:DropDownList>
 		
 	{% endhighlight %}
     
     {% highlight css %}
 
-    	.eimg {
+    	.image {
             margin: 0;
             padding: 3px 10px 3px 3px;
             border: 0 none;
@@ -50,7 +50,7 @@ In the demo, a List data is created with Text, Image, Role and Country which is 
             padding: 6px 3px 1px 3px;
         }
 
-        .desig, .cont {
+        .designation, .cont {
             font-size: smaller;
             padding: 3px 3px -1px 0px;
         }
@@ -61,18 +61,18 @@ In the demo, a List data is created with Text, Image, Role and Country which is 
        
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<EmployeeSpecialists> empl = new List<EmployeeSpecialists>();
-            empl.Add(new EmployeeSpecialists { text = "Erik Linden", eimg = "3", desig = "Representative", country = "England" });
-            empl.Add(new EmployeeSpecialists { text = "John Linden", eimg = "6", desig = "Representative", country = "Norway" });
-            empl.Add(new EmployeeSpecialists { text = "Louis", eimg = "7", desig = "Representative", country = "Australia" });
-            empl.Add(new EmployeeSpecialists { text = "Lawrence", eimg = "8", desig = "Representative", country = "India" });
-            selectFolder.DataSource = empl;
+            List<EmployeeSpecialists> employee = new List<EmployeeSpecialists>();
+            employee.Add(new EmployeeSpecialists { text = "Erik Linden", image = "3", designation = "Representative", country = "England" });
+            employee.Add(new EmployeeSpecialists { text = "John Linden", image = "6", designation = "Representative", country = "Norway" });
+            employee.Add(new EmployeeSpecialists { text = "Louis", image = "7", designation = "Representative", country = "Australia" });
+            employee.Add(new EmployeeSpecialists { text = "Lawrence", image = "8", designation = "Representative", country = "India" });
+            selectFolder.DataSource = employee;
         }
         public class EmployeeSpecialists
         {
             public string text { get; set; }
-            public string eimg { get; set; }
-            public string desig { get; set; }
+            public string image { get; set; }
+            public string designation { get; set; }
             public string country { get; set; }
         }
     

@@ -60,9 +60,9 @@ $(document).keypress(function () {  /*Captures the keypress inside the documen
           
     else  if  (i > 7) {
                
-        var  pwd = $("input").val();
+        var  password = $("input").val();
               
-        if  (/^[a-zA-Z0-9- ]*$/.test(pwd) ==  false);
+        if  (/^[a-zA-Z0-9- ]*$/.test(password) ==  false);
 
                         {
                     

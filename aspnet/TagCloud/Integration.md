@@ -203,7 +203,7 @@ The following code example shows the way to bind data to the TagCloud control by
 
 	 $(function () { 
 
-     var tagview = [
+     var view = [
 
         { text: "Google", url: "http://www.google.com", frequency: 12 },
 
@@ -245,7 +245,7 @@ The following code example shows the way to bind data to the TagCloud control by
 
 			window.viewModel = { 
 
-                dataList: ko.observableArray(tagview),
+                dataList: ko.observableArray(view),
 
                 title: ko.observable("Popular Sites"),
 
