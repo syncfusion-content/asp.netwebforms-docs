@@ -199,7 +199,7 @@ public class MenuSource
 
         { }
 
-        public MenuLocalDataSource(int _id, int? _parentid, string _text, string _hasChild, string _expanded)
+        public MenuLocalDataSource(int _id, int? _parent, string _text, string _hasChild, string _expanded)
 
         {
 
@@ -207,7 +207,7 @@ public class MenuSource
 
             this.ID = _id;
 
-            this.ParentID = _parentid;
+            this.ParentID = _parent;
 
             this.Text = _text;
 

@@ -163,7 +163,7 @@ Create new CS file in App_Data folder and name as ‘Data.cs’ and add the foll
             data.Add(new DropDownData(6, "Diesel Trains"));
             data.Add(new DropDownData(7, "Heavy Motor Vehicles"));
             data.Add(new DropDownData(8, "Light Motor Vehicles"));
-            data.Add(new DropDownData(9, "Aeroplanes"));
+            data.Add(new DropDownData(9, "Aero planes"));
             data.Add(new DropDownData(10,"Helicopters"));
             data.Add(new DropDownData(11,"Ships"));
             data.Add(new DropDownData(12,"Submarines"));
@@ -286,21 +286,21 @@ The server-side code to retrieve and bind the data to DropDownList are as follow
         conn.Open();
         OleDbCommand cmd = new OleDbCommand(" SELECT * from [Employees]", conn);
         OleDbDataReader reader = null;
-        List<EmpDetails> data = new List<EmpDetails>();
+        List<Details> data = new List<Details>();
         reader = cmd.ExecuteReader();
         while (reader.Read())
         {
-            data.Add(new EmpDetails(reader["Name"].ToString(), reader["Designation"].ToString())); 
+            data.Add(new Details(reader["Name"].ToString(), reader["Designation"].ToString())); 
         }
         conn.Close();
         DropDownList2.DataSource = data;
 
     }
-    public class EmpDetails
+    public class Details
     {
         public string Name { get; set; }
         public string Designation { get; set; }
-        public EmpDetails(string name, string deg)
+        public Details(string name, string deg)
         {
             this.Name = name;
             this.Designation = deg;

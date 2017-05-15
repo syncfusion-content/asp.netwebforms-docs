@@ -29,7 +29,7 @@ You can enable or disable the Accordion control on initial rendering by using th
 
                 <ContentSection>
 
-                     Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame. 
+                     Orubase is the only mobile application development Framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame. 
 
                 </ContentSection>
 
@@ -99,7 +99,7 @@ In an ASPX page, define a &lt;div&gt; element that is a container for Accordi
 
             <contentsection>
 
-                Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame. 
+                Orubase is the only mobile application development Framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame. 
 
             </contentsection>
 
@@ -191,7 +191,7 @@ In an ASPX page, define a &lt;div&gt; element that is a container for Accordi
 
             <contentsection>
 
-                Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame. 
+                Orubase is the only mobile application development Framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame. 
 
             </contentsection>
 

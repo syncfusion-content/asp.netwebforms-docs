@@ -364,30 +364,30 @@ The below given example explains the behavior of grouping with List data binding
     
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<VegetableList> VegeList = new List<VegetableList>();
-            VegeList.Add(new VegetableList { Name = "Cabbage", Category = "Leafy and Salad" });
-            VegeList.Add(new VegetableList { Name = "Pea", Category = "Leafy and Salad" });
-            VegeList.Add(new VegetableList { Name = "Spinach", Category = "Leafy and Salad" });
-            VegeList.Add(new VegetableList { Name = "Wheat grass", Category = "Leafy and Salad" });
-            VegeList.Add(new VegetableList { Name = "Yarrow", Category = "Leafy and Salad" });
-            VegeList.Add(new VegetableList { Name = "Chickpea", Category = "Beans" });
-            VegeList.Add(new VegetableList { Name = "Green bean", Category = "Beans" });
-            VegeList.Add(new VegetableList { Name = "Horse gram", Category = "Beans" });
-            VegeList.Add(new VegetableList { Name = "Peanut", Category = "Beans" });
-            VegeList.Add(new VegetableList { Name = "Pigeon pea", Category = "Beans" });
-            VegeList.Add(new VegetableList { Name = "Garlic", Category = "Bulb and Stem" });
-            VegeList.Add(new VegetableList { Name = "Garlic Chives", Category = "Bulb and Stem" });
-            VegeList.Add(new VegetableList { Name = "Lotus root", Category = "Bulb and Stem" });
-            VegeList.Add(new VegetableList { Name = "Nopal", Category = "Bulb and Stem" });
-            VegeList.Add(new VegetableList { Name = "Onion", Category = "Bulb and Stem" });
-            VegeList.Add(new VegetableList { Name = "Shallot", Category = "Bulb and Stem" });
-            VegeList.Add(new VegetableList { Name = "Beetroot", Category = "Root and Tuberous" });
-            VegeList.Add(new VegetableList { Name = "Carrot", Category = "Root and Tuberous" });
-            VegeList.Add(new VegetableList { Name = "Ginger", Category = "Root and Tuberous" });
-            VegeList.Add(new VegetableList { Name = "Potato", Category = "Root and Tuberous" });
-            VegeList.Add(new VegetableList { Name = "Radish", Category = "Root and Tuberous" });
-            VegeList.Add(new VegetableList { Name = "Turmeric", Category = "Root and Tuberous" });
-            DropDownList1.DataSource = VegeList;
+            List<VegetableList> Vegetables = new List<VegetableList>();
+            Vegetables.Add(new VegetableList { Name = "Cabbage", Category = "Leafy and Salad" });
+            Vegetables.Add(new VegetableList { Name = "Pea", Category = "Leafy and Salad" });
+            Vegetables.Add(new VegetableList { Name = "Spinach", Category = "Leafy and Salad" });
+            Vegetables.Add(new VegetableList { Name = "Wheat grass", Category = "Leafy and Salad" });
+            Vegetables.Add(new VegetableList { Name = "Yarrow", Category = "Leafy and Salad" });
+            Vegetables.Add(new VegetableList { Name = "Chickpea", Category = "Beans" });
+            Vegetables.Add(new VegetableList { Name = "Green bean", Category = "Beans" });
+            Vegetables.Add(new VegetableList { Name = "Horse gram", Category = "Beans" });
+            Vegetables.Add(new VegetableList { Name = "Peanut", Category = "Beans" });
+            Vegetables.Add(new VegetableList { Name = "Pigeon pea", Category = "Beans" });
+            Vegetables.Add(new VegetableList { Name = "Garlic", Category = "Bulb and Stem" });
+            Vegetables.Add(new VegetableList { Name = "Garlic Chives", Category = "Bulb and Stem" });
+            Vegetables.Add(new VegetableList { Name = "Lotus root", Category = "Bulb and Stem" });
+            Vegetables.Add(new VegetableList { Name = "Nopal", Category = "Bulb and Stem" });
+            Vegetables.Add(new VegetableList { Name = "Onion", Category = "Bulb and Stem" });
+            Vegetables.Add(new VegetableList { Name = "Shallot", Category = "Bulb and Stem" });
+            Vegetables.Add(new VegetableList { Name = "Beetroot", Category = "Root and Tuberous" });
+            Vegetables.Add(new VegetableList { Name = "Carrot", Category = "Root and Tuberous" });
+            Vegetables.Add(new VegetableList { Name = "Ginger", Category = "Root and Tuberous" });
+            Vegetables.Add(new VegetableList { Name = "Potato", Category = "Root and Tuberous" });
+            Vegetables.Add(new VegetableList { Name = "Radish", Category = "Root and Tuberous" });
+            Vegetables.Add(new VegetableList { Name = "Turmeric", Category = "Root and Tuberous" });
+            DropDownList1.DataSource = Vegetables;
             
         }
         public class VegetableList
@@ -543,12 +543,12 @@ Configuring the data items for cascading to the series of DropDownList is demons
             public string parentId { get; set; }
             public string text { get; set; }
             public string sprite { get; set; }           
-            public CountryList(int cvalue, string cid, string ctext, string spriteclass)
+            public CountryList(int value, string id, string text, string sprite)
             {
-                this.value = cvalue;
-                this.parentId = cid;
-                this.text = ctext;
-                this.sprite = spriteclass;
+                this.value = value;
+                this.parentId = id;
+                this.text = text;
+                this.sprite = sprite;
                
             }
         }
@@ -557,10 +557,10 @@ Configuring the data items for cascading to the series of DropDownList is demons
         {          
             public string parentId { get; set; }
             public string text { get; set; }
-            public GroupsList(string gID, string gtext)
+            public GroupsList(string gID, string group)
             {
                 this.parentId = gID;
-                this.text = gtext;
+                this.text = group;
             }
         }
     {% endhighlight %}
@@ -636,10 +636,10 @@ Bind the data source to the cascading DropDownList dynamically using ClientSideE
         {
             public string parentId { get; set; }
             public string text { get; set; }
-            public Groups(string cid, string ctext)
+            public Groups(string id, string text)
             {
-                this.parentId = cid;
-                this.text = ctext;
+                this.parentId = id;
+                this.text = text;
             }
         }
         [Serializable]
@@ -647,10 +647,10 @@ Bind the data source to the cascading DropDownList dynamically using ClientSideE
         {
             public string parentId { get; set; }
             public string text { get; set; }
-            public Country(string cid, string ctext)
+            public Country(string id, string text)
             {
-                this.parentId = cid;
-                this.text = ctext;
+                this.parentId = id;
+                this.text = text;
             }
         }
         [Serializable]
@@ -658,10 +658,10 @@ Bind the data source to the cascading DropDownList dynamically using ClientSideE
         {
             public string parentId { get; set; }
             public string text { get; set; }
-            public Players(string cid, string ctext)
+            public Players(string id, string text)
             {
-                this.parentId = cid;
-                this.text = ctext;
+                this.parentId = id;
+                this.text = text;
             }
         }
     {% endhighlight %}
@@ -730,10 +730,10 @@ The below scenario can be explained with three DropDownList for the multi-level 
     {
         public int value { get; set; }
         public string text { get; set; }
-        public CapitalList(int cvalue, string gtext)
+        public CapitalList(int value, string group)
         {
-            this.value = cvalue;
-            this.text = gtext;
+            this.value = value;
+            this.text = group;
         }
     }
     [Serializable]
@@ -743,12 +743,12 @@ The below scenario can be explained with three DropDownList for the multi-level 
         public string parentId { get; set; }
         public string text { get; set; }
         public string sprite { get; set; }
-        public CountryList(int cvalue, string cid, string ctext, string spriteclass)
+        public CountryList(int value, string id, string text, string sprite)
         {
-            this.value = cvalue;
-            this.parentId = cid;
-            this.text = ctext;
-            this.sprite = spriteclass;
+            this.value = value;
+            this.parentId = id;
+            this.text = text;
+            this.sprite = sprite;
 
         }
     }
@@ -757,10 +757,10 @@ The below scenario can be explained with three DropDownList for the multi-level 
     {
         public string parentId { get; set; }
         public string text { get; set; }
-        public GroupsList(string gID, string gtext)
+        public GroupsList(string gID, string group)
         {
             this.parentId = gID;
-            this.text = gtext;
+            this.text = group;
         }
     }
     
