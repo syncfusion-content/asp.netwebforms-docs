@@ -130,6 +130,67 @@ N> 3. Selection can be used to mention cell references within formula
 
 ## User Defined Functions
 
+The list of formulas supported in Spreadsheet is sufficient for most of your calculations. If not, you can create and use your own function using user defined function option. You can add user defined function to Spreadsheet in following ways,
+
+1. Initial Load
+
+2. Method
+
+
+### Initial Load
+
+You can add your own function to Spreadsheet at initial load with `CustomFormula` property. The following code example describes the above behavior,
+
+{% highlight html %}
+
+<ej:Spreadsheet ID="FlatSpreadsheet" runat="server">
+    <CustomFormula>
+        <ej:CustomFormula FormulaName="CUSTOMTOTAL" FunctionName="customTotal" />
+    </CustomFormula>
+    <Sheets>
+        <ej:Sheet>
+            <Rows>
+                <ej:Row>
+                    <Cells>
+                        <ej:Cell Value="1">
+                        </ej:Cell>
+                    </Cells>
+                </ej:Row>
+                <ej:Row>
+                    <Cells>
+                        <ej:Cell Value="2">
+                        </ej:Cell>
+                    </Cells>
+                </ej:Row>
+                <ej:Row>
+                    <Cells>
+                        <ej:Cell Value="=CUSTOMTOTAL(A1,A2,3)">
+                        </ej:Cell>
+                    </Cells>
+                </ej:Row>
+            </Rows>
+        </ej:Sheet>
+    </Sheets>
+</ej:Spreadsheet>
+
+<script type="text/javascript">
+function customTotal(args) {
+	var param1, param2, param3, value, xlObj = $('#FlatSpreadsheet').data("ejSpreadsheet"),
+	argument = xlObj.getValueFromFormulaArg(args);
+	param1 = argument["arg1"];
+	param2 = argument["arg2"];
+	param3 = argument["arg3"];
+	value = param1 * param2 + param3;
+	return value;
+}
+</script>
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+![](Formulas_images/Formula_img5.png)
+
+### Method
+
 The list of formulas supported in Spreadsheet is sufficient for most of your calculations. If not, you can create and use your own function using user defined function option.
 
 You can add your own function to Spreadsheet using [`addCustomFormula`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:addcustomformula "addCustomFormula") method. The following code example describes the above behavior,
@@ -186,10 +247,53 @@ To remove user defined function from Spreadsheet use [`removeCustomFormula`](htt
 ## Named Ranges
 
 To understand the purpose of cell reference or table, you can define a meaningful name using named ranges support. By using names, you can make your formula much easier to understand and maintain. You can add named ranges to Spreadsheet in following ways,
+    
+1. Initial Load
 
-1. Method
+2. Method
 
-2. User Interface
+3. User Interface
+
+### Initial Load
+
+You can add named ranges at initial load with `NameManagers` property. The following code example describes the above behavior,
+
+{% highlight html %}
+
+<ej:Spreadsheet ID="FlatSpreadsheet" runat="server">
+    <NameManagers>
+        <ej:NameManager Name="inputrange" Refersto="=Sheet1!$A$1:$A$2" />
+    </NameManagers>
+    <Sheets>
+        <ej:Sheet>
+            <Rows>
+                <ej:Row>
+                    <Cells>
+                        <ej:Cell Value="1">
+                        </ej:Cell>
+                    </Cells>
+                </ej:Row>
+                <ej:Row>
+                    <Cells>
+                        <ej:Cell Value="2">
+                        </ej:Cell>
+                    </Cells>
+                </ej:Row>
+                <ej:Row>
+                    <Cells>
+                        <ej:Cell Value="=SUM(inputrange)">
+                        </ej:Cell>
+                    </Cells>
+                </ej:Row>
+            </Rows>
+        </ej:Sheet>
+    </Sheets>
+</ej:Spreadsheet>
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+![](Formulas_images/Formula_img3.png)
 
 ### Method
 
