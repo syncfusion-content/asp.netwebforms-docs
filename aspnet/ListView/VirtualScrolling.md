@@ -22,7 +22,7 @@ Please refer the following code examples.
 {% highlight html %} 
 
      <ej:ListView ID="List" runat="server" ShowHeader="false" Width="200" Height="200" Query="ej.Query().from('Customers')" DataTextField="CustomerID" AllowVirtualScrolling="true" VirtualScrollMode="Continuous" >
-                <DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/" CrossDomain="true" />           
+                <DataManager URL="http://js.syncfusion.com/ejservices/Wcf/Northwind.svc/" CrossDomain="true" />           
             </ej:ListView>
 
  {% endhighlight %}
