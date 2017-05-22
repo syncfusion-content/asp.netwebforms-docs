@@ -819,7 +819,7 @@ public partial class DefaultFunctionalities : System.Web.UI.Page
 
 The following output is displayed as a result of the above code example.
 
-![](Summary_images/Summary_img7.png)
+![](Summary_images/summaryGrid_img7.PNG)
 
 ## Handling Aggregation in server side
 
