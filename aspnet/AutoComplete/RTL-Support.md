@@ -168,7 +168,7 @@ protected void AutoComplete_FocusOut(object sender,EventArgs e)
 
         {
 
-            Response.Write("Serverside event has been triggered");
+            Response.Write("Server side event has been triggered");
 
         }
 
@@ -178,7 +178,7 @@ protected void AutoComplete_FocusOut(object sender,EventArgs e)
 
         {
 
-            Response.Write("Serverside event has been triggered");
+            Response.Write("Server side event has been triggered");
 
         } 
 
