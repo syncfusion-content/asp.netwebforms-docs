@@ -102,14 +102,14 @@ namespace PdfViewerEJWeb.WebApi
             _dataPath += @"\" + path;
             return _dataPath;
         }
-        static string GetCommonFolder(DirectoryInfo dtInfo)
+        static string GetCommonFolder(DirectoryInfo directoryInfo)
         {
-            var _folderNames = dtInfo.GetDirectories("Data");
+            var _folderNames = directoryInfo.GetDirectories("Data");
             if (_folderNames.Length > 0)
             {
                 return _folderNames[0].FullName;
             }
-            return dtInfo.Parent != null ? GetCommonFolder(dtInfo.Parent) : string.Empty;
+            return directoryInfo.Parent != null ? GetCommonFolder(directoryInfo.Parent) : string.Empty;
         }
     }
 }
