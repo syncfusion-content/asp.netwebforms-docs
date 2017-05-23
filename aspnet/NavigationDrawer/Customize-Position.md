@@ -12,44 +12,66 @@ documentation: ug
 Position property is used to specify the position whether it is in fixed or relative to the page. When you set a normal value to position property, it appears within the container. Otherwise, it appears in the whole body .The possible position values are fixed and normal. The Default value is normal.
 
 {% highlight html %}
+        
+    <div class="cols-sample-area" style="padding: 0px; position:relative;  margin: 0px; min-height: 451px; width: 100%;">
+         <div id="butdrawer" class="drawericon e-icon"></div>
+              <ej:NavigationDrawer runat="server"  ID="navpane" Position="Fixed" Type="Slide" EnableListView="true" TargetId="butdrawer" >
+                      <ListViewSettings Width="300" SelectedItemIndex="0" />
+                       <Items>
+                            <ej:NavigationDrawerItems  Text="Home"  />
+                            <ej:NavigationDrawerItems  Text="Profile" />
+                            <ej:NavigationDrawerItems  Text="Photos" />
+                            <ej:NavigationDrawerItems  Text="Location" />
+                        </Items>
+                    </ej:NavigationDrawer>
+             </div>
 
-    <div id="main" style="height:700px;">
+{% endhighlight %}
 
-        <div id="navpane">
+Add following code in style section,
 
-            <ul>
+{% highlight css %}
 
-                <li>Settings</li>
+    <style type="text/css">
+       
+       .e-header {
+            padding-top: 8px;
+        }
+        #container p {
+            padding: 10px;
+            text-align: justify;
+        }
 
-                <li>Read</li>
-
-                <li>Help</li>
-
-                <li>About</li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-    <script>
-
-        $("#navpane").ejNavigationDrawer({ position: "fixed", enableListView: true, listViewSettings: { width: 300 } });
-
-    </script>
-
-
+        #container {
+           -moz-user-select: none;
+           -webkit-user-select: none;
+           -ms-user-select: none;
+           user-select: none;
+           position: relative;
+           overflow: hidden;
+           min-height: 451px;
+        }
+            .drawericon {
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 32px;
+            width: 32px;
+            background-size: 100% 100%;
+            padding-right: 10px;
+                  }
+         .drawericon:before{
+			content: "\e76b";
+            font-size: 28px;
+            height:26px;
+		}
+    </style>
 
 {% endhighlight %}
 
 
-
-
-
 The following screenshot illustrates the output by swiping from left to right at the left end of the screen.
 
-![](Customize-Position_images/Customize-Position_img1.png) 
+![](Customize-Position_images/img2.png) 
 
 
 
