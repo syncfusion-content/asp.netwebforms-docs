@@ -20,37 +20,48 @@ The default value is Overlay.
 
 {% highlight html %}
 
-    <div id="main" style="height:1000px;">
+       <div class="cols-sample-area" style="padding: 0px; position:relative;  margin: 0px; min-height: 451px; width: 100%;">
+              <button id="drawerTarget" style="top:200px;left:50%;position:absolute">Target Button</button>
 
-        <div id="navpane">
+        <ej:NavigationDrawer runat="server"  ID="navpane" Position="Fixed" Type="Slide"  EnableListView="true" TargetId="drawerTarget" >
+                        <ListViewSettings Width="300" SelectedItemIndex="0" />
+                        <Items>
+                            <ej:NavigationDrawerItems  Text="Home"  />
+                            <ej:NavigationDrawerItems  Text="Profile" />
+                            <ej:NavigationDrawerItems  Text="Photos" />
+                            <ej:NavigationDrawerItems  Text="Location" />
+                        </Items>
+                    </ej:NavigationDrawer>
+                </div>
 
-            <ul>
+{% endhighlight %}
 
-                <li>Settings</li>
+Add following code in style section,
 
-                <li>Read</li>
+{% highlight css %}
 
-                <li>Help</li>
+    <style type="text/css">
+       
+       .e-header {
+            padding-top: 8px;
+        }
 
-                <li>About</li>
+        #container p {
+            padding: 10px;
+            text-align: justify;
+        }
 
-            </ul>
-
-        </div>
-
-        <button id="drawerTarget" style="top:200px;left:600px;position:absolute"></button>
-
-    </div>
-
-    <script>
-
-        $("#navpane").ejNavigationDrawer({ type: "slide", position: "fixed", targetId: "drawerTarget", enableListView: true, listViewSettings: { width: 300 }});
-
-        $("#drawerTarget").ejButton({ text: "OpenDrawer" });
-
-    </script>
-
-
+        #container {
+           -moz-user-select: none;
+           -webkit-user-select: none;
+           -ms-user-select: none;
+           user-select: none;
+           position: relative;
+           overflow: hidden;
+           min-height: 451px;
+        }     
+    
+    </style>
 
 {% endhighlight %}
 
@@ -60,11 +71,11 @@ The default value is Overlay.
 
 The following screenshot illustrates the output.
 
-![](Animations_images/Animations_img2.png) 
+![](Animations_images/img2.png) 
 
 
 
-![](Animations_images/Animations_img3.png) 
+![](Animations_images/img1.png) 
 
 
 
