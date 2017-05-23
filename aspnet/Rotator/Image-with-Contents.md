@@ -107,7 +107,7 @@ This feature allows you to add text along with the image in the Rotator cont
 
                                 <li>A credit card is a payment card issued to users as a system of payment</li>
 
-                                <li>It allows the cardholder to pay for goods and services based on the holder's promise to pay for them</li>
+                                <li>It allows the card holder to pay for goods and services based on the holder's promise to pay for them</li>
 
 
 
