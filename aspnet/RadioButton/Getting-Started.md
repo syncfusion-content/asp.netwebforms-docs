@@ -60,7 +60,7 @@ Add the following code to render Radio Button.
     <br />
     <br />
     <br />
-    2. What is the Expanson for USB ?<br />
+    2. What is the Expansion for USB ?<br />
     <table>
         <tr>
             <td>
@@ -86,7 +86,7 @@ Add the following code to render Radio Button.
     <br />
     <br />
     <br />
-    3. What is the Expanson for HTML ?<br />
+    3. What is the Expansion for HTML ?<br />
     <table>
         <tr>
             <td>
