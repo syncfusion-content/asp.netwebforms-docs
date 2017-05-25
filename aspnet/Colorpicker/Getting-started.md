@@ -167,11 +167,11 @@ Initialize the element in &lt;script&gt; tag. 
 
     jQuery(function ($) {
 
-        //initliaze the listbox with object creation
+        //initialize the listbox with object creation
 
         listBoxObj = $("#selectPriority").data('ejListBox');
 
-        //initliaze the colorpicker with object creation
+        //initialize the colorpicker with object creation
 
         colorObj = $("#CategoryColor").data('ejColorPicker');       
 
