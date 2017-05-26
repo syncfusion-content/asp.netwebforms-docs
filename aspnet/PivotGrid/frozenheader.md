@@ -45,3 +45,16 @@ We can also freeze the row/column headers individually by setting the below prop
 {% endhighlight %}
 
 ![](FrozenHeader_images/col_freeze.png)
+
+We can also set the size of the scroller (horizontal and vertical) in PivotGrid by using below property.
+
+{% highlight html %}
+
+<ej:PivotGrid ID="PivotGrid1" runat="server">
+    //...
+    <FrozenHeaderSettings ScrollerSize=18></FrozenHeaderSettings>
+</ej:PivotGrid>
+    
+{% endhighlight %}
+
+![](FrozenHeader_images/scroll_size.png)
