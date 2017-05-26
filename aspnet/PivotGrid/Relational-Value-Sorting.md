@@ -9,11 +9,12 @@ documentation: ug
 
 # Value Sorting
 
-I> This feature is applicable for Relational datasource only at Client Mode.
+I> This feature is applicable for Relational datasource.
 
 Value Sorting allows to sort columns and rows based on value fields.
 
 The headers of the column to be sorted is given in the 'HeaderText' property under 'ValueSortSettings' in field wise order separated by a string.  The string which is used to separate the headers is given in the property 'HeaderDelimiters'.
+Also you can sort column by clicking the column header. On clicking the same header once again will reverse the sorting direction.
 
 {% highlight js %}
   
