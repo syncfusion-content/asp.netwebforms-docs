@@ -63,15 +63,10 @@ Add following code in style section,
 
 
 
-The following screenshots illustrates the output.
+The following screenshot illustrates the output.
 
 ![](TargetId_images/img1.png) 
 
-
-
-
-
-![](TargetId_images/TargetId_img2.png) 
 
 
 
