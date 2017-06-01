@@ -194,11 +194,11 @@ The following code example describes the above behavior.
 {% highlight js %}
     <script type="text/javascript">
         function mergeCellInfo(args) {
-            if (args.column.field == "EmployeeID" && args.data.OrderID == 10261)
+            if (args.column.field == "EmployeeID" && args.rowData.OrderID == 10261)
                 args.rowMerge(3);
-            else if (args.column.field == "ShipCity" && args.data.OrderID == 10265)
+            else if (args.column.field == "ShipCity" && args.rowData.OrderID == 10265)
                 args.colMerge(3);
-            else if (args.column.field == "ShipCity" && args.data.OrderID == 10268)
+            else if (args.column.field == "ShipCity" && args.rowData.OrderID == 10268)
                 args.merge(0, 3);
         }
     </script>
