@@ -1274,4 +1274,45 @@ The following output is displayed as a result of the above code example.
 
 ![](Columns_images/Columns_img24.png)
 
+## Column Layout
+
+You can set the Grid's columns layout based on either Grid width or its columns width using `ColumnLayout` property of Grid. There are two ways to set the column layout, they are 
+
+1. Auto
+2. Fixed
+
+{% tabs %}
+{% highlight html %}
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True" ColumnLayout="Fixed">
+        <Columns>
+            <ej:Column Field="OrderID" Width="80" />
+            <ej:Column Field="EmployeeID" Width="80" />
+            <ej:Column Field="ShipCity" Width="90" />
+            <ej:Column Field="ShipName" Width="110" />
+            <ej:Column Field="ShipCountry" Width="100" />
+            <ej:Column Field="Freight" Width="80" />
+        </Columns>
+    </ej:Grid>
+</asp:Content>
+{% endhighlight  %}
+{% highlight c# %}
+namespace WebSampleBrowser.Grid
+{
+    public partial class _Default : Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            var data = new NorthWndDataContext().Orders.ToList();
+            FlatGrid.DataSource = data;
+            FlatGrid.DataBind();
+        }
+    }
+}
+{% endhighlight  %}
+{% endtabs %} 
+
+The following output is displayed as a result of the above code example.
+
+![](columns_images/columns_img25.png)
 
