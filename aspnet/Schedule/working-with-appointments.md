@@ -115,7 +115,7 @@ The inline option can be enabled/disabled on Scheduler by using the `AllowInline
 
 Enabling Inline Edit alone
 
-A workaround can be done with Scheduler to disable the inline appointment creation and enabling only the editing mode of inline by making use of the cellClick event. The below code example shows the way to disable the inline appointment creation while clicking on the cells, but appointments can be edited while clicking on the appointment’s subject.
+A workaround can be done with Scheduler to disable the inline appointment creation and enabling only the editing mode of inline by making use of the `CellClick` event. The below code example shows the way to disable the inline appointment creation while clicking on the cells, but appointments can be edited while clicking on the appointment’s subject.
 
 {% highlight html %}
 
