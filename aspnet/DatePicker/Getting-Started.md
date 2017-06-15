@@ -96,7 +96,7 @@ Below code shows how to assign values at initialization
 
     <%--initialize DatePicker component with current date--%>
 
-    <ej:DatePicker runat="server" ID="datepick" Value=<%= DateTime.Now.ToLongTimeString() %>>
+    <ej:DatePicker runat="server" ID="datepick" Value="<%# DateTime.Now %>">
     </ej:DatePicker>
 
 {% endhighlight %}
@@ -126,6 +126,17 @@ You can assign values after initialization of EJWEB DatePicker (it helps to get 
 
 {% endhighlight %}
 
+In ASP.NET to bind all the data sources to their server controls, we can use Page.DataBind() in the code behind page. Pleae refer the below code example.
+
+{% highlight javascript %}
+
+    protected void Page_Load(object sender, EventArgs e)
+        {
+            Page.DataBind();
+        }
+
+{% endhighlight %}
+
 N>  Existing EJWEB DatePicker instance can be created by [jQuery.data()](http://api.jquery.com/jQuery.data/#) and you can control the API's of DatePicker behavior.
 
 ## DatePicker events
@@ -135,7 +146,7 @@ You can handle the all available [Client side events](http://help.syncfusion.com
 
 {% highlight html %}
  
-    <ej:DatePicker ID="datepicker1" ClientSideOnChange="onChange" Value=<%= DateTime.Now.ToLongTimeString() %> runat="server"></ej:DatePicker>
+    <ej:DatePicker ID="datepicker1" ClientSideOnChange="onChange" Value="<%# DateTime.Now %>" runat="server"></ej:DatePicker>
 
     <script type="text/javascript">
     function onChange(args) {
@@ -144,6 +155,17 @@ You can handle the all available [Client side events](http://help.syncfusion.com
         //alert popup shows the previous date and selected date.
         alert(" previous date is : " + args.prevDate + " \n selected date is : " + args.value);
     }     
+
+{% endhighlight %}
+
+In Code Behind page,
+
+{% highlight javascript %}
+
+    protected void Page_Load(object sender, EventArgs e)
+        {
+            Page.DataBind();
+        }
 
 {% endhighlight %}
 

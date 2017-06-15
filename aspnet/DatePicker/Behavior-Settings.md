@@ -18,9 +18,20 @@ Refer below code example to set selected date at initialization
 
 {% highlight html %}
       
-      <ej:DatePicker ID="datepicker1" Value=<%= DateTime.Now.ToLongTimeString() %> runat="server"></ej:DatePicker>
+      <ej:DatePicker ID="datepicker1" Value="<%# DateTime.Now %>" runat="server"></ej:DatePicker>
 
 {% endhighlight %}
+
+In ASP.NET to bind all the data sources to their server controls, we can use Page.DataBind() in the code behind page. Pleae refer the below code example.
+
+{% highlight javascript %}
+
+    protected void Page_Load(object sender, EventArgs e)
+       {
+           Page.DataBind();
+       }
+
+{% ndhighlight %}
 
 EJWEB DatePicker allows only the valid date to be entered and it should be within the specified range. By default, strict mode is enabled in DatePicker, so it will restrict invalid date and resets to previous date if it is not valid. To know more about strict mode refer [Strict Mode](#strict-mode).
 
