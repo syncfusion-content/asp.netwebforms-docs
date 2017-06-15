@@ -112,6 +112,7 @@ namespace Sample.Models
     }
 }
 
+{% endhighlight %}
 
 Add a new Repository Data Model class. Name it EmployeeRepository.
 
