@@ -812,7 +812,7 @@ public partial class RowTemplate : System.Web.UI.Page
 <script type="text/javascript">
     function rowDropHandler(args) {
         for (var key in args.data[0]) {
-            $('#dropForm input[name=' + key + ']').val(args.data[0][key]);
+            $('#dropForm input[name=' + key + ']').val(args.rowData[0][key]);
         }
     }
 </script>
