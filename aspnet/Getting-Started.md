@@ -111,11 +111,11 @@ Syncfusion NuGet package will copy all the dependent Scripts and CSS files in th
 <head runat="server">
   <!-- Insert the following content within "head" tag -->
   <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
-  <!-- If your head section already contain jQuery reference, please remove this jQuery reference -->
+  <!-- If your head section already contain jQuery reference, please remove  jQuery reference from ScriptManager in master page-->
   <script src='<%= Page.ResolveClientUrl("~/Scripts/jquery-1.10.2.min.js")%>' type="text/javascript"></script>
   <script src='<%= Page.ResolveClientUrl("~/Scripts/jsrender.min.js")%>' type="text/javascript"></script>
-  <script src='<%= Page.ResolveClientUrl("~/Scripts/ej/ej.web.all.min.js")%>' type="text/javascript"></script>
-  <script src='<%= Page.ResolveClientUrl("~/Scripts/ej/ej.webform.min.js")%>' type="text/javascript"></script>
+  <script src='<%= Page.ResolveClientUrl("~/Scripts/ej/web/ej.web.all.min.js")%>' type="text/javascript"></script>
+  <script src='<%= Page.ResolveClientUrl("~/Scripts/ej/common/ej.webform.min.js")%>' type="text/javascript"></script>
 </head>
 {% endhighlight %}
 
