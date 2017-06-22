@@ -31,7 +31,7 @@ In ASP.NET to bind all the data sources to their server controls, we can use Pag
            Page.DataBind();
        }
 
-{% ndhighlight %}
+{% endhighlight %}
 
 EJWEB DatePicker allows only the valid date to be entered and it should be within the specified range. By default, strict mode is enabled in DatePicker, so it will restrict invalid date and resets to previous date if it is not valid. To know more about strict mode refer [Strict Mode](#strict-mode).
 
