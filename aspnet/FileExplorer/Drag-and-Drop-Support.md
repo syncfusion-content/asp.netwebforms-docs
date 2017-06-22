@@ -9,7 +9,7 @@ keywords: Drag and drop option
 
 # Drag and Drop Support
 
-The FileExplorer allows files to be moved from one folder to another by using drag and drop. It also supports uploading a file by dragging it from Windows Explorer to a folder in the FileExplorer control.You can enable or disable this support by using “**AllowDragAndDrop**” API of FileExplorer.
+The FileExplorer allows files to be moved from one folder to another by using drag and drop. It also supports uploading a file by dragging it from Windows Explorer to a folder in the FileExplorer control. You can enable or disable this support by using “**AllowDragAndDrop**” API of FileExplorer.
 
 In the aspx page, add “FileExplorer” element and specify the drag and drop option as specified below.
 
