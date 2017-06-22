@@ -9,8 +9,7 @@ keywords: Thumbnail image compression option
 
 # Thumbnail Image Compression Support
 
-The “FileExplorer” allows thumbnail images to be compressed on the server side and loaded into the “FileExplorer” layout to improve performance when working with large size images.
-You can enable this option using “**EnableThumbnailCompress**” API of FileExplorer. Refer following code block that will be helpful to you.
+The “FileExplorer” allows thumbnail images to be compressed on the server side and loaded into the “FileExplorer” layout to improve performance when working with large size images.You can enable this option using “**EnableThumbnailCompress**” API of FileExplorer. Refer following code block that will be helpful to you.
 
 In the aspx page, add “FileExplorer” element and specify the thumbnail image compress option as specified below.
 
