@@ -44,6 +44,29 @@ The following screenshot illustrates the Signature with saving (downloading) the
 ![](how_to_images\savesignatureimagewithuserdefinedformat_img1.png)
 
 
+## To clear the Siganture
+
+To clear the signature, you can simply use the **clear()** method. This method will clear all the drawn strokes in the signature canvas and leaves it empty.
+
+{% highlight html %}
+
+<ej:Signature ID="apisignature" Height="400px" StrokeWidth="3" IsResponsive="true" runat="server"></ej:Signature>
+
+<ej:Button runat="server" Type="Button" ID="signclear" ClientSideOnClick="onclear" Size="Normal" ShowRoundedCorner="true" Text="Clear"></ej:Button>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+<script type="text/javascript">
+    function onsave() {
+            var sign = $("#<%=apisignature.ClientID%>").ejSignature("instance");
+            sign.clear();
+        }
+ </script>
+
+{% endhighlight %}
+
 ## Make signature as responsive
 
 When the signature control is resized or even the window is resized the strokes drawn in the signature will be disappeared. To make the strokes visible even after resizing the window, we must set the **IsResponsive** property as true.
@@ -68,3 +91,21 @@ After giving the Responsiveness:
 
 
 
+### To check whether any input to the signature control since render
+
+We can detect whether not there has been any input to the signature control since render. To detect we can use the storeSnap public variable, which is an array that stores all the canvas inputs. At initial rendering this array is empty and we can use this variable to check for the drwan strokes.
+
+
+{% highlight js %}
+
+   <script type="text/javascript">
+      var sign = $("#signature").ejSignature("instance");
+
+            if (ej.isNullOrUndefined(sign.storeSnap)) {
+               
+                //Something
+
+            }
+    </script>   
+
+{% endhighlight %}
