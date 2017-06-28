@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Member Editor Paging | PivotClient | ASP.NET | Syncfusion 
+title: Member Editor Paging | PivotGrid | ASP.NET | Syncfusion 
 description: memebr editor paging
 platform: aspnet
-control: PivotClient
+control: PivotGrid
 documentation: ug
 ---
 
@@ -11,12 +11,12 @@ documentation: ug
 
 Member editor paging helps to improve the rendering performance of the dialog by dividing large amount of data into sections and displaying them.
 
-You can enable member editor paging and set member editor page size in PivotClient control by setting the [`EnableMemberEditorPaging`] and [`MemberEditorPageSize`] properties.
+You can enable member editor paging and set member editor page size in PivotGrid control by setting the [`EnableMemberEditorPaging`] and [`MemberEditorPageSize`] properties.
 
 
 {% highlight html %}
 
-<ej:PivotClient ID="PivotClient1" runat="server" EnableMemberEditorPaging="true" MemberEditorPageSize="100" >
+<ej:PivotClient ID="PivotGrid1" runat="server" EnableMemberEditorPaging="true" MemberEditorPageSize="100" >
     //...
 </ej:PivotClient>
 

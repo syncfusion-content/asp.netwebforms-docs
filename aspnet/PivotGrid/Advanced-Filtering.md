@@ -13,14 +13,12 @@ It allows to filter and sort the field members in PivotGrid.
 
 ### Client Mode
 
-In client mode, you can enable Advanced Filtering and Sorting option in PivotGrid by setting the [`EnableAdvancedFilter`] property under [`DataSource`] to true.
+In client mode, you can enable Advanced Filtering and Sorting option in PivotGrid by setting the [`EnableAdvancedFilter`] property to true.
 
 {% highlight html %}
 
-<ej:PivotGrid ID=" PivotGrid1" runat="server">
-    <DataSource EnableAdvancedFilter ="true">
-        //...
-    </DataSource>
+<ej:PivotGrid ID="PivotGrid1" EnableAdvancedFilter ="true" runat="server">
+    //...
 </ej:PivotGrid>
 
 {% endhighlight %}
@@ -40,8 +38,6 @@ In server mode, you can enable the Advanced Filtering and Sorting option in Pivo
 ## Sorting
 
 Sorting provides an option to sort the members of a field either in ascending or descending order. 
-
-I> This feature is not applicable for OLAP datasource bound from server-side. 
 
 ![](AdvanceFiltering_images/sorting.png)
 
