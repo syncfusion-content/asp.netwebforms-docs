@@ -184,9 +184,9 @@ You can sort a field either to ascending or descending order using the "sortOrde
 
 ### Sort Row/Column by Date
 
-You can sort a field either to ascending or descending order acording to date by using the **sortOrder** property. Sorting is applicable only for Row and Column fields. By default, fields are arranged in ascending order.
+You can sort a field either in ascending or descending order according for date type by using the **sortOrder** property. Sorting is applicable only for Row and Column fields. By default, fields are arranged in ascending order.
 
-N> To apply sorting by date, you need to specify the require `format` and `formatString` to the field.
+N> To apply sorting by date, you need to specify the `format` and `formatString` in the field.
 
 {% highlight html %}
 
