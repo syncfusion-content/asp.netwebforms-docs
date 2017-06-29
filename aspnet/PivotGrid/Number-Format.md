@@ -20,6 +20,7 @@ Allows us to specify the required number format that PivotGrid should use in its
 * scientific
 * accounting
 * fraction
+* string
 
 ## Relational
 
