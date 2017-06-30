@@ -126,7 +126,7 @@ Add the folling code in your Script Section,
 
 Use following in style section to render svg icon,
 
-{% highlight javascript %}
+{% highlight css %}
 
   
         #rteSampleone {
