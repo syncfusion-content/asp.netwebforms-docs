@@ -812,7 +812,7 @@ public partial class RowTemplate : System.Web.UI.Page
 <script type="text/javascript">
     function rowDropHandler(args) {
         for (var key in args.data[0]) {
-            $('#dropForm input[name=' + key + ']').val(args.data[0][key]);
+            $('#dropForm input[name=' + key + ']').val(args.rowData[0][key]);
         }
     }
 </script>
@@ -829,3 +829,5 @@ The following output is displayed after dropping the rows on Form.
 
 ![](Row_images/Row_img10.png)
 {:After Drop}
+
+N>   The default behavior of drag and drop between Grid or any other controls is as cut and paste. For copy and paste behavior specify the drag behavior in `DragBehavior` property of `RowDropSettings` as "Copy".
