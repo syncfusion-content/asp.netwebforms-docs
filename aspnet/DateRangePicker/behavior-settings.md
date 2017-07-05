@@ -16,7 +16,7 @@ DateRangePicker has some default behavior settings which helps you to perform mo
 
 #### Value
 
-DateRangePicker value can be selected through picking two date values from available two DatePicker calendar or you can set it by using **value** property.
+DateRangePicker value can be selected through picking two date values from available two DatePicker calendar or you can set it by using **Value** property.
 
 {% highlight html %}
 
@@ -46,19 +46,7 @@ The value of the DateRangePicker popup will presented with two date strings whic
 {% highlight html %}
 
 
-     $(function () {
-
-            // creates DateRangePicker from input with some date range.
-
-            $("#dateRangePicker").ejDateRangePicker({
-
-                value: "11/1/2016 - 11/2/2017", // sets the date range
-
-                separator: "&" // sets the separator to & instead of "-"
-
-            });
-
-        });
+<ej:DateRangePicker ID="dateRange" runat="server" Separator="&"></ej:DateRangePicker>
 
 
 {% endhighlight %}
@@ -180,7 +168,7 @@ These ranges can be processed and updated to popup by using the **setRange** met
 
 ### TimePicker Option
 
-The ranges can be set with time value also by enable the TimePicker in popup using **enableTimePicker** API. Each start date and end date, have separate Time Pickers. Please check with the below code example to enable the time picker.
+The ranges can be set with time value also by enable the TimePicker in popup using **EnableTimePicker** API. Each start date and end date, have separate Time Pickers. Please check with the below code example to enable the time picker.
 
 {% highlight js %}
 
