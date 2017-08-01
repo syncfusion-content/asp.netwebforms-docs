@@ -67,5 +67,99 @@ The Toolbar property Hide is used to show or hide the Toolbar. The value set to 
 
 {% endhighlight %}
 
+## Disable Or Enable Separate Toolbar Item
+
+### Disable Item
+
+The **Toolbar** property **disableItem** and **disableItemByID** can be used to disable separate toolbar item. 
+
+{% highlight html %}
+
+    <ej:Toolbar ID="editingToolbar" runat="server" Width="100%">
+        <Items>
+            <ej:ToolbarItem Id="cut" SpriteCssClass="e-icon e-cut_01" TooltipText="cut"></ej:ToolbarItem>
+            <ej:ToolbarItem Id="copy" SpriteCssClass="e-icon e-copy_02" TooltipText="copy"></ej:ToolbarItem>
+            <ej:ToolbarItem Id="paste" SpriteCssClass="e-icon e-paste_01" TooltipText="paste" IsSeparator="true"></ej:ToolbarItem>
+        </Items>
+        <Items>
+            <ej:ToolbarItem Id="Bold" SpriteCssClass="e-icon e-bold_01" TooltipText="Bold"></ej:ToolbarItem>
+            <ej:ToolbarItem Id="UnderLine" SpriteCssClass="e-icon e-underline_01" TooltipText="UnderLine"></ej:ToolbarItem>
+            <ej:ToolbarItem Id="StrikeThrough" SpriteCssClass="e-icon e-strikethrough_01" TooltipText="StrikeThrough"></ej:ToolbarItem>
+        </Items>
+        <Items>
+            <ej:ToolbarItem Id="Left" SpriteCssClass="e-icon e-align-left_01" TooltipText="Left"></ej:ToolbarItem>
+            <ej:ToolbarItem Id="Center" SpriteCssClass="e-icon e-align-center_01" TooltipText="Center"></ej:ToolbarItem>
+            <ej:ToolbarItem Id="Right" SpriteCssClass="e-icon e-align-right_01" TooltipText="Right"></ej:ToolbarItem>
+            <ej:ToolbarItem Id="Justify" SpriteCssClass="e-icon e-align-justify_0" TooltipText="Justify"></ej:ToolbarItem>
+        </Items>
+    </ej:Toolbar>
+    
+{% endhighlight %}
+
+{% highlight javascript %}
+         $(function () {
+            var obj = $("#<%=editingToolbar.ClientID%>").data("ejToolbar");
+            obj.disableItem($(".e-toolbar li")[2]);
+        })
+{% endhighlight %}
+
+OR
+
+{% highlight javascript %}
+       
+        $(function () {
+            var obj = $("#<%=editingToolbar.ClientID%>").data("ejToolbar");
+            obj.disableItemByID("paste");
+        })
+    
+
+{% endhighlight %}
+
+
+![](Behaviour-settings_images/Behaviour-settings1.jpg)
+
+### Enable Item
+
+The **Toolbar** property **enableItem** and **enableItemByID** can be used to enable separate toolbar item. 
+
+{% highlight html %}
+
+	<ej:Toolbar ID="editingToolbar" runat="server" Width="100%">
+        <Items>
+            <ej:ToolbarItem Id="cut" SpriteCssClass="e-icon e-cut_01" TooltipText="cut"></ej:ToolbarItem>
+            <ej:ToolbarItem Id="copy" SpriteCssClass="e-icon e-copy_02" TooltipText="copy"></ej:ToolbarItem>
+            <ej:ToolbarItem Id="paste" SpriteCssClass="e-icon e-paste_01" TooltipText="paste" IsSeparator="true"></ej:ToolbarItem>
+        </Items>
+        <Items>
+            <ej:ToolbarItem Id="Bold" SpriteCssClass="e-icon e-bold_01" TooltipText="Bold"></ej:ToolbarItem>
+            <ej:ToolbarItem Id="UnderLine" SpriteCssClass="e-icon e-underline_01" TooltipText="UnderLine"></ej:ToolbarItem>
+            <ej:ToolbarItem Id="StrikeThrough" SpriteCssClass="e-icon e-strikethrough_01" TooltipText="StrikeThrough"></ej:ToolbarItem>
+        </Items>
+        <Items>
+            <ej:ToolbarItem Id="Left" SpriteCssClass="e-icon e-align-left_01" TooltipText="Left"></ej:ToolbarItem>
+            <ej:ToolbarItem Id="Center" SpriteCssClass="e-icon e-align-center_01" TooltipText="Center"></ej:ToolbarItem>
+            <ej:ToolbarItem Id="Right" SpriteCssClass="e-icon e-align-right_01" TooltipText="Right"></ej:ToolbarItem>
+            <ej:ToolbarItem Id="Justify" SpriteCssClass="e-icon e-align-justify_0" TooltipText="Justify"></ej:ToolbarItem>
+        </Items>
+    </ej:Toolbar>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+          $(function () {
+            var obj = $("#<%=editingToolbar.ClientID%>").data("ejToolbar");
+            obj.enableItem($(".e-toolbar li")[2]);
+        })
+{% endhighlight %}
+
+OR
+{% highlight javascript %}
+        $(function () {
+                     var obj = $("#<%=editingToolbar.ClientID%>").data("ejToolbar");
+                    obj.enableItemByID("paste");
+                    
+                });
+
+{% endhighlight %}
 
 
