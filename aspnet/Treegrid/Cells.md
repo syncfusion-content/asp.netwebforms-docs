@@ -248,7 +248,7 @@ The following code example describes the above behavior.
 
 The following output is shows the result of the above code example.
 
-![](Cell/ecllipsismode.png)
+![](Cell/ellipsisMode.png)
 
 ## Text Wrap
 Text wrap enables the TreeGrid to wrap cell content or header content to next line when the content exceeds the boundary of the cell width.
