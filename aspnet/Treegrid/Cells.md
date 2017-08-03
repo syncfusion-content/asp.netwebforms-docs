@@ -178,7 +178,7 @@ Please refer the following code example for setting a custom tooltip for a speci
 
 The following output shows the result of above code example.
 
-![](Cell/headetTooltipTemplate.png)
+![](Cell/headerTooltipTemplate.png)
 
 
 ## Clip Mode
