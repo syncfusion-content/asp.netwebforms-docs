@@ -9,8 +9,6 @@ documentation: ug
 
 # Member Editor Paging
 
-I> This feature is applicable for OLAP data source only.
-
 Member editor paging helps to improve the rendering performance of the dialog by dividing large amount of data into sections and displaying them.
 
 You can enable member editor paging and set member editor page size in PivotClient control by setting the [`EnableMemberEditorPaging`] and [`MemberEditorPageSize`] properties.

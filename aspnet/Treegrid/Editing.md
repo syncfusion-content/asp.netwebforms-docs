@@ -150,3 +150,61 @@ The following code example describes the above behavior.
 The following output is displayed as a result of the above code example.
 
 ![](Editing_images/dialogTemplate.png)
+
+
+## Cell Edit Template
+
+Edit template is used to create custom editor for editing the column values. It can be created by using `EditTemplate` property of `Columns`.
+
+The following are the functions available for edit template,
+
+* `create` - It is used to create the control at time of initialize.
+* `read` - It is used to read the input value at time of save.
+* `write` - It is used to assign the value to control at time of editing.
+
+The following code example describes edit template behavior
+
+{% highlight html %}
+
+<ej:TreeGrid runat="server ID="TreeGridControlEditing">
+      <Columns>
+           <ej:TreeGridColumn HeaderText="Task Name" Field="TaskName">
+                <EditTemplate Create="create" Read="read" Write="write" />
+           </ej:TreeGridColumn>
+      </Columns>
+</ej:TreeGrid>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+<script>
+var autocompleteData = ["Planning", "Plan Timeline", "Plan Budget", "Allocate Resources", "Planning Complete"];
+
+function create()
+{
+      return "<input>";
+}
+
+function write(args)
+{
+      args.element.ejAutocomplete({ 
+           width: "100%", 
+           dataSource: autocompleteData,
+           enableDistinct: true,
+           value: args.rowdata !== undefined ? args.rowdata["taskName"] : "" 
+      });
+}
+
+function read(args)
+{
+      args.ejAutocomplete('suggestionList').css('display', 'none');
+      return args.ejAutocomplete("getValue");
+}
+</script>
+
+{% endhighlight %}
+
+The output of the TreeGrid width EditTemplate as follows
+
+![](Editing_images/editTemplate.png)

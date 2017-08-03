@@ -21,17 +21,17 @@ Details Template feature provides a detailed view about additional information o
 
     <script id="tabGridContents" type="text/x-jsrender">
 
-    <div id="contact{{:EmployeeID}}" style="font-weight: bold; padding: 5px;">
+    <div id="contact{{"{{"}}:EmployeeID {{}}}}" style="font-weight: bold; padding: 5px;">
 
         <div id="cont">
 
-            contact:{{:Address}}<br />
+            contact:{{"{{"}}:Address {{}}}}<br />
 
-            city:{{:City}}<br />
+            city:{{"{{"}}:City {{}}}}<br />
 
-            Country:{{:Country}}<br />
+            Country:{{"{{"}}:Country {{}}}}<br />
 
-            phone:{{:HomePhone}}<br />
+            phone:{{"{{"}}:HomePhone {{}}}}<br />
 
         </div>
 
@@ -126,7 +126,7 @@ In this section, you can learn how to use the Hierarchy in GridView. The followi
 
         </div>
 
-        <label id="employeeDet" style="display: none">{{:EmployeeID}}</label>
+        <label id="employeeDet" style="display: none">{{"{{"}}:EmployeeID {{}}}}</label>
 
     </div>
 
@@ -290,7 +290,7 @@ Row template is used to render your template in every row. It is used to place e
 
         <td class="photo">
 
-            <img style="width: 130px; height: 160px" src="http://js.syncfusion.com/demos/web/themes/images/Employees//{{:EmployeeID}}.png" alt="{{:EmployeeID}}" />
+            <img style="width: 130px; height: 160px" src="http://js.syncfusion.com/demos/web/themes/images/Employees//{{"{{"}}:EmployeeID {{}}}}.png" alt="{{"{{"}}:EmployeeID {{}}}}" />
 
         </td>
 
@@ -312,7 +312,7 @@ Row template is used to render your template in every row. It is used to place e
 
                         <td class="CardHeader">First Name: </td>
 
-                        <td style="padding: 20px">{{:FirstName}} </td>
+                        <td style="padding: 20px">{{"{{"}}:FirstName {{}}}} </td>
 
                     </tr>
 
@@ -324,7 +324,7 @@ Row template is used to render your template in every row. It is used to place e
 
                         </td>
 
-                        <td style="padding: 20px">{{:BirthDate.toLocaleDateString()}}
+                        <td style="padding: 20px">{{"{{"}}:BirthDate.toLocaleDateString(){{}}}}
 
                         </td>
 
@@ -338,7 +338,7 @@ Row template is used to render your template in every row. It is used to place e
 
                         </td>
 
-                        <td style="padding: 20px">{{:HireDate.toLocaleDateString()}}
+                        <td style="padding: 20px">{{"{{"}}:HireDate.toLocaleDateString(){{}}}}
 
                         </td>
 
@@ -812,7 +812,7 @@ public partial class RowTemplate : System.Web.UI.Page
 <script type="text/javascript">
     function rowDropHandler(args) {
         for (var key in args.data[0]) {
-            $('#dropForm input[name=' + key + ']').val(args.data[0][key]);
+            $('#dropForm input[name=' + key + ']').val(args.rowData[0][key]);
         }
     }
 </script>
@@ -829,3 +829,5 @@ The following output is displayed after dropping the rows on Form.
 
 ![](Row_images/Row_img10.png)
 {:After Drop}
+
+N>   The default behavior of drag and drop between Grid or any other controls is as cut and paste. For copy and paste behavior specify the drag behavior in `DragBehavior` property of `RowDropSettings` as "Copy".

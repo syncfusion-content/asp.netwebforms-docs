@@ -44,7 +44,7 @@ The following code example explains how to bind data to the ColorPicker control 
                         <div class="element" style="margin-left: 234px">
                             <input id="custom" ej-colorpicker e-value="colorValue" e-modeltype="picker" />
                         </div>
-                        <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px; margin-left: 45px;">Note:Two Way Angular Support</span></h6>
+                        <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px; margin-left: 45px;">Note:Two Way AngularJS Support</span></h6>
                     </div>
                 </div>
             </div>

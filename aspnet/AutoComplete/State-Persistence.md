@@ -175,7 +175,7 @@ Define the CSS classes for the sprite images, you can find the images in the fol
 
 <style type="text/css">
 
-        /* Sprite css for country flags */
+        /* Sprite CSS for country flags */
 
         .flag
 

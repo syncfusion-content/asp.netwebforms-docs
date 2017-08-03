@@ -16,9 +16,11 @@ When you have made AJAX request on client-side, “FileActionDefault” method i
 
 
 **BasicFileOperations class**
+
 “BasicFileOperations” is an abstract class and it is useful for handling file operations in server end. By inheriting this class, easily you can implement a new custom class for handling file operations in server end. Refer [class reference](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.BasicFileOperations.html#) of “BasicFileOperations”.
 
 **FileExplorerOperations class**
+
 This class is useful for handling file operations in server end. This class inherits the “BasicFileOperations” class and its abstract methods has been implemented here for managing files in **underlying machine's physical file system**. Refer [class reference](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations.html#) of “FileExplorerOperations”.
 
 N> Here “ActionType” specifies following operations such as “Read”, “CreateFolder”, “Paste”, “Remove”, “Rename”, “GetDetails”, “Download”, “Upload”, “Search”. Following [section](#abstract-methods-in-basicfileoperations-class) contains the details about each operation.
@@ -439,7 +441,7 @@ It contains the details about selected folder<br/><br/>
 <td>
 It should return data in JSON format with key name as "{{'**files**'| markdownify }}" and JSON fields need to be with following field names
 <br/><br/>
- "{{'*name,  isFile, hasChild.*'| markdownify }}"
+ "{{'*name,  isFile, hasChild, filterPath.*'| markdownify }}"
 <br/><br/>
 {{'*For example:*'| markdownify }}
 <br/>
@@ -524,7 +526,7 @@ Also we have option to configure the AJAX request in client side, please refer l
 
 ### Managing files that is available in SQL database
 
-You can manage the files that are available in database using our FileExplorer control. Here you may use this custom “SQLFileExplorerOperations" class for handling file management related operations using SQL database. This class is used to simplify the process on server side. It contains some built-in methods that are used to handle file operations (like read, copy, move, delete, etc.) using SQL database. This class is created by inheriting the abstract class “[BasicFileOperations](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.BasicFileOperations.html#)”. If is it necessary, you may override the methods in “SQLFileExplorerOperations” class.
+You can manage the files that are available in database using our FileExplorer control. Here you may use this custom “**SQLFileExplorerOperations**" class for handling file management related operations using SQL database. This class is used to simplify the process on server side. It contains some built-in methods that are used to handle file operations (like read, copy, move, delete, etc.) using SQL database. This class is created by inheriting the abstract class “[BasicFileOperations](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.BasicFileOperations.html#)”. If is it necessary, you may override the methods in “**SQLFileExplorerOperations**” class.
 
 * To make connection with SQL database (FileManager.mdf) services, please specify connection string in "Web.config" file as specified in the following code example. 
 
@@ -536,7 +538,7 @@ You can manage the files that are available in database using our FileExplorer c
     {% endhighlight %}
     
 
-* In code behind part, you need to create an object of "SQLFileExplorerOperations" class as shown in the following code example.
+* In code behind part, you need to create an object of "**SQLFileExplorerOperations**" class as shown in the following code example.
 
     
     {% highlight c# %}
