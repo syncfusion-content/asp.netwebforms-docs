@@ -69,9 +69,11 @@ The Toolbar property Hide is used to show or hide the Toolbar. The value set to 
 
 ## Disable Or Enable Separate Toolbar Item
 
+The following are some methods which can be used to disable or enable separate toolbar item.
+
 ### Disable Item
 
-The **Toolbar** property **disableItem** and **disableItemByID** can be used to disable separate toolbar item. 
+The **Toolbar** method **disableItem** and **disableItemByID** can be used to disable separate toolbar item.  In the below code we have disabled the third toolbar item by using these two methods
 
 {% highlight html %}
 
@@ -120,11 +122,11 @@ OR
 
 ### Enable Item
 
-The **Toolbar** property **enableItem** and **enableItemByID** can be used to enable separate toolbar item. 
+The **Toolbar** method **enableItem** and **enableItemByID** can be used to enable separate toolbar item. In the below code we have disbaled the first five items initially and enabled the third toolbar item by using these two methods
 
 {% highlight html %}
 
-	<ej:Toolbar ID="editingToolbar" runat="server" Width="100%">
+	 <ej:Toolbar ID="editingToolbar" runat="server" Width="100%" DisabledItemIndices="0,1,2,3,4">
         <Items>
             <ej:ToolbarItem Id="cut" SpriteCssClass="e-icon e-cut_01" TooltipText="cut"></ej:ToolbarItem>
             <ej:ToolbarItem Id="copy" SpriteCssClass="e-icon e-copy_02" TooltipText="copy"></ej:ToolbarItem>
@@ -162,4 +164,4 @@ OR
 
 {% endhighlight %}
 
-
+![](Behaviour-settings_images/Behaviour-settings2.jpg)
