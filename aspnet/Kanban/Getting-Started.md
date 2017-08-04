@@ -40,7 +40,7 @@ You can create a Kanban with a highly customizable look and feel. This section d
         </connectionStrings>
  {% endhighlight %}
  
-   For more information about SQL data source configuration refer the following link: [http://msdn.microsoft.com/en-us/library/vstudio/w1kdt8w2(v=vs.100).aspx](http://msdn.microsoft.com/en-us/library/vstudio/w1kdt8w2(v=vs.100).aspx)
+   For more information about SQL data source configuration refer the following link: [https://msdn.microsoft.com/en-us/library/dz12d98w.aspx](https://msdn.microsoft.com/en-us/library/dz12d98w.aspx)
    
    ![](Getting-Started_images/Getting_Started_img1.png) 
 

@@ -276,13 +276,13 @@ The following screenshot is the output for AutoComplete control with remote data
 
 ## SQL data
 
-The [SqlDataSource](http://msdn.microsoft.com/en-us/library/vstudio/system.web.ui.webcontrols.sqldatasource(v=vs.100).aspx) control enables you to use a Web server control to access data that is located in a relational database. It can work with any database that has an associated ADO.NET provider including Microsoft SQL Server, Oracle, ODBC, or OLE DB databases such as Microsoft Access. 
+The [SqlDataSource](https://msdn.microsoft.com/en-us/library/dz12d98w.aspx) control enables you to use a Web server control to access data that is located in a relational database. It can work with any database that has an associated ADO.NET provider including Microsoft SQL Server, Oracle, ODBC, or OLE DB databases such as Microsoft Access. 
 
-To retrieve data from a database by using the [SqlDataSource](http://msdn.microsoft.com/en-us/library/vstudio/system.web.ui.webcontrols.sqldatasource(v=vs.100).aspx) control, set the following properties:
+To retrieve data from a database by using the [SqlDataSource](https://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.sqldatasource.aspx) control, set the following properties:
 
-  * [ProviderName](http://msdn.microsoft.com/en-us/library/vstudio/system.web.ui.webcontrols.sqldatasource.providername(v=vs.100).aspx) - Set to the name of the ADO.NET provider that represents the database you are working with. When you are working with Microsoft SQL Server, set the [ProviderName](http://msdn.microsoft.com/en-us/library/vstudio/system.web.ui.webcontrols.sqldatasource.providername(v=vs.100).aspx) property to System.Data.SqlClient; When working with an Oracle database, set the [ProviderName](http://msdn.microsoft.com/en-us/library/vstudio/system.web.ui.webcontrols.sqldatasource.providername(v=vs.100).aspx) property to "System.Data.OracleClient"; and so on.
-  * [ConnectionString](http://msdn.microsoft.com/en-us/library/vstudio/system.web.ui.webcontrols.sqldatasource.connectionstring(v=vs.100).aspx) - Set to a connection string that works for your database.	
-  * [SelectCommand](http://msdn.microsoft.com/en-us/library/vstudio/system.web.ui.webcontrols.sqldatasource.selectcommand(v=vs.100).aspx) - Set to an SQL query or stored procedure that returns data from the database. 
+  * [ProviderName](https://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.sqldatasource.providername.aspx) - Set to the name of the ADO.NET provider that represents the database you are working with. When you are working with Microsoft SQL Server, set the [ProviderName](https://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.sqldatasource.providername.aspx) property to System.Data.SqlClient; When working with an Oracle database, set the [ProviderName](https://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.sqldatasource.providername.aspx) property to "System.Data.OracleClient"; and so on.
+  * [ConnectionString](https://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.sqldatasource.connectionstring.aspx) - Set to a connection string that works for your database.	
+  * [SelectCommand](https://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.sqldatasource.selectcommand.aspx) - Set to an SQL query or stored procedure that returns data from the database. 
 
 AutoComplete provides an extensive data binding support to populate AutoComplete items, so that the values can be mapped to the AutoComplete fields from an existing SQL data source. You can achieve this by using DataSourceID property. 
 
@@ -334,12 +334,11 @@ The following screenshot is the output for AutoComplete control with SQL data bi
 
 The ObjectDataSource control allows you to bind a specific data layer, in a similar manner to which other controls bind to the database. The ObjectDataSource control can bind to any method that returns a DataSet or an IEnumerable object (for example, a DataReader or a collection of Classes). The major advantage of binding through ObjectDataSource is, only the records that are required in the current view are retrieved from the database, greatly optimizing the performance and runtime memory usage.
 
-To retrieve data using the ObjectDataSource[](http://msdn.microsoft.com/en-us/library/vstudio/system.web.ui.webcontrols.sqldatasource(v=vs.100).aspx) control, set the following properties:
+To retrieve data using the [ObjectDataSource](https://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.objectdatasource(v=vs.110).aspx) control, set the following properties:
 
-TypeName[](http://msdn.microsoft.com/en-us/library/vstudio/system.web.ui.webcontrols.sqldatasource.connectionstring(v=vs.100).aspx)- specifies an object type (class name) to instantiate for performing data operations.
+[TypeName](https://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.objectdatasource.typename(v=vs.110).aspx)- specifies an object type (class name) to instantiate for performing data operations.
 
-[SelectCommand](http://msdn.microsoft.com/en-us/library/vstudio/system.web.ui.webcontrols.sqldatasource.selectcommand(v=vs.100).aspx) - Specify methods of the associated type to call to perform data operations that returns a DataSet or an IEnumerable object
-
+[SelectMethod](https://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.objectdatasource.selectmethod(v=vs.110).aspx) - Specify methods of the associated type to call to perform data operations that returns a DataSet or an IEnumerable object
 AutoComplete provides ObjectDataSource data binding support to populate AutoComplete items, so that the values can be mapped to the AutoComplete fields from an existing ObjectDataSource. You can achieve this by using DataSourceID property.
 
 ### Configuring ObjectDataSource for AutoComplete
@@ -504,14 +503,13 @@ The following screenshot is the output for AutoComplete control with ObjectDataS
 
 ## LINQ-to-SQL data
 
-The [LinqDataSource](http://msdn.microsoft.com/en-us/library/vstudio/system.web.ui.webcontrols.linqdatasource(v=vs.100).aspx) control exposes Language-Integrated Query (LINQ) to Web developers through the ASP.NET data-source control architecture. It doesn’t connect directly to the database, instead, interacts with entity classes that represent the database and the tables. You can generate the entity classes with one class that represents the database and one class for each table in the database and it is typically be located in the App_Code folder of the Web application. 
+The [LinqDataSource](https://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.linqdatasource(v=vs.110).aspx) control exposes Language-Integrated Query (LINQ) to Web developers through the ASP.NET data-source control architecture. It doesn’t connect directly to the database, instead, interacts with entity classes that represent the database and the tables. You can generate the entity classes with one class that represents the database and one class for each table in the database and it is typically be located in the App_Code folder of the Web application. 
 
 To retrieve data from Entity classes by using LinqDataSource, define the following properties,
 
-1. [ContextTypeName](http://msdn.microsoft.com/en-us/library/vstudio/system.web.ui.webcontrols.linqdatasource.contexttypename(v=vs.100).aspx) – Set the name of the class that represents the database.
-2. [TableName](http://msdn.microsoft.com/en-us/library/vstudio/system.web.ui.webcontrols.linqdatasource.tablename(v=vs.100).aspx) – Set the name of the class that represents the data table.
-3. [Select](http://msdn.microsoft.com/en-us/library/vstudio/system.web.ui.webcontrols.linqdatasource.select(v=vs.100).aspx) - Set the names of the properties that has to be retrieved from the table class
-
+1. [ContextTypeName](https://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.linqdatasource.contexttypename(v=vs.110).aspx) – Set the name of the class that represents the database.
+2. [TableName](https://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.linqdatasource.tablename(v=vs.110).aspx) – Set the name of the class that represents the data table.
+3. [Select](https://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.linqdatasource.select(v=vs.110).aspx) - Set the names of the properties that has to be retrieved from the table class
 
 
 AutoComplete provides an extensive data binding support to populate AutoComplete items, so that the values can be mapped to the AutoComplete fields from an existing LINQ-to-SQL data source. You can achieve this by using DataSourceID property.
