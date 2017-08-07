@@ -113,6 +113,40 @@ In the view page, add TreeView element and specify the scripts for sending modif
         </script>
         
     {% endhighlight %}
+
+You can also get the updated data source for remote data binding after performing the operation like editing, selecting/unselecting, expanding/collapsing, checking/unchecking and removing node. You cannot get the updated data source when you perform operation like drag and drop, adding node for remote data binding.
+
+The updated data source also contains custom attributes ("ContactTitle", "OrderID", "EmployeeID", "Freight") if you return these from server.
+
+Refer the following code block to know more about how to get updated data with custom attributes from TreeView for remote data binding.
+
+In the view page, add TreeView element and specify the scripts for getting updated data source.
+
+{% highlight html %}
+<button id="btn1" onclick="getSelectedNodeObject()" type="button">GetSelectedNodeObject</button>
+
+<ej:TreeView runat="server" ID="tree1" DataIdField="CustomerID" DataTextField="CustomerID" Query="ej.Query().from('Orders').select('CustomerID,OrderID,EmployeeID,Freight').take(3)">
+    <DataManager URL="//js.syncfusion.com/ejServices/Wcf/Northwind.svc/" CrossDomain="true"></DataManager>
+    <Child Id="Country" ParentId="CustomerID" Text="ContactName" Query="ej.Query().from('Customers').select('CustomerID,ContactTitle,ContactName,Country')">
+        <DataManager URL="//js.syncfusion.com/ejServices/Wcf/Northwind.svc/" CrossDomain="true"></DataManager>
+    </Child>
+</ej:TreeView>
+
+<script>
+    function getSelectedNodeObject() {
+        var treeObj = $("#<%=tree1.ClientID%>").data("ejTreeView");
+        var nodeid = treeObj.getSelectedNode().attr("id"); //get selected node id
+        if (nodeid != null) {
+            var node = treeObj.getTreeData(nodeid); //get the given node object
+            if (node[0].OrderID != null)
+                alert("The OrderID of node '" + node[0].CustomerID + "' is: '" + node[0].OrderID + "'");
+            else
+                alert("The ContactTitle of node '" + node[0].ContactName + "' is: '" + node[0].ContactTitle + "'");
+        } else
+            alert("Select any node");
+    }
+</script>
+{% endhighlight %}
     
 ## TreeView context menu to process node operations.
 
