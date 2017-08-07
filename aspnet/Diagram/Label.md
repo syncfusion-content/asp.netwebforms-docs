@@ -352,6 +352,12 @@ The diagram control now supports defining the drag limit to the label while drag
     <ej:Diagram ClientIDMode="Static" ID="DiagramWebControl1" runat="server" Height="600px" Width="100%" EnableContextMenu="false">
         <Connectors>
             <ej:DiagramConnector Name="Connector3" Constraints="Default, DragLabel, DragLimit"></ej:DiagramConnector>
+                <labels>
+                     <ej:DiagramLabel>
+                       <Draglimit Left="30" Top="30" Right="30" Bottom="30">
+                      </Draglimit>
+                    </ej:DiagramLabel>
+                </labels>
         </Connectors>
     </ej:Diagram>
 
