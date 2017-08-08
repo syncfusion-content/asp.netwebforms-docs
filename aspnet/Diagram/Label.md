@@ -343,6 +343,28 @@ Diagram allows to create read only labels. You have to set the `ReadOnly` proper
 
 {% endhighlight %}
 
+### Drag Limit
+
+Diagram label dragging can be restricted by enabling/disabling `DragLimit` constraints of the connectors. Also we can define the drag limit in all direction using `DragLimit` property of the connector. Drag limit only applicable for connector labels.
+
+{% highlight aspx-cs %}
+
+    <ej:Diagram ClientIDMode="Static" ID="DiagramWebControl1" runat="server" Height="600px" Width="100%" EnableContextMenu="false">
+        <Connectors>
+        <%-- Enable DragLimit constraints to the connector --%>
+            <ej:DiagramConnector Name="Connector3" Constraints="Default, DragLabel, DragLimit"></ej:DiagramConnector>
+                <labels>
+                     <ej:DiagramLabel>
+                     <%-- Defines the drag limit property in all direction --%>
+                       <Draglimit Left="30" Top="30" Right="30" Bottom="30">
+                      </Draglimit>
+                    </ej:DiagramLabel>
+                </labels>
+        </Connectors>
+    </ej:Diagram>
+
+{% endhighlight %}
+
 ## Multiple labels
 
 You can add any number of labels to a node or connector. The following code illustrates how to add multiple labels to a node. 
