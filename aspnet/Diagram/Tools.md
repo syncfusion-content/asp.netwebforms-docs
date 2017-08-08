@@ -113,6 +113,28 @@ Diagram allows you to create a textNode as soon as you click on the Diagram pag
 
 Once you activate the text tool, you can also able to perform label editing of a node/connector.
 
+### Polyline Tool
+
+Diagram allows to create the polyline segments with straight lines and angled vertices at the control points by clicking and moving the mouse at run time on the diagram page.
+
+{% highlight javascript %}
+
+    var diagram = $("#diagram").ejDiagram("instance");
+    // set the default segment type as polyline
+    diagram.model.drawType = {
+        type: "connector",
+        segments: [{ type: "polyline" }]
+    };
+    var tool = diagram.tool();
+    //To draw an object once, activate draw once
+    diagram.update({ tool: tool | ej.datavisualization.Diagram.Tool.DrawOnce })
+
+{% endhighlight %}
+
+Once you activate the polyline tool, you can also able to draw the polyline connector on diagram page.
+
+![](/aspnet/Diagram/Tools_images/Tools_img4.png)
+
 ## Tool Selection
 
 There are some functionalities that can be achieved by clicking and dragging on the Diagram surface. They are as follows.
