@@ -345,15 +345,17 @@ Diagram allows to create read only labels. You have to set the `ReadOnly` proper
 
 ### Drag Limit
 
-The diagram control now supports defining the drag limit to the label while dragging from the connector and also update the postion to the nearest segment offset.
+Diagram label dragging can be restricted by enabling/disabling `DragLimit` constraints of the connectors. Also we can define the drag limit in all direction using `DragLimit` property of the connector. Drag limit only applicable for connector labels.
 
 {% highlight aspx-cs %}
 
     <ej:Diagram ClientIDMode="Static" ID="DiagramWebControl1" runat="server" Height="600px" Width="100%" EnableContextMenu="false">
         <Connectors>
+        <%-- Enable DragLimit constraints to the connector --%>
             <ej:DiagramConnector Name="Connector3" Constraints="Default, DragLabel, DragLimit"></ej:DiagramConnector>
                 <labels>
                      <ej:DiagramLabel>
+                     <%-- Defines the drag limit property in all direction --%>
                        <Draglimit Left="30" Top="30" Right="30" Bottom="30">
                       </Draglimit>
                     </ej:DiagramLabel>
