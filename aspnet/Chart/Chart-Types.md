@@ -366,6 +366,42 @@ To render a 100% Stacked Area Chart, set the Type as **StackingArea100** in the 
 
 [Click](http://asp.syncfusion.com/demos/web/chart/stackingarea100.aspx) here to view 100% Stacked Area Chart online demo.
 
+## Stacked Spline Area Chart
+
+To render a Stacked Spline Area Chart, set the `type` as **"StackingSplineArea"** in the chart series. 
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Change type and color of the series--%>
+    <Series>
+        <ej:Series Type="StackingSplineArea">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img97.png)
+
+
+## 100% Stacked Spline Area Chart  
+
+To render a 100% Stacked Spline Area Chart, set the `type` as **"StackingSplineArea100"** in the chart series. 
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <%--Change type and color of the series--%>
+    <Series>
+        <ej:Series Type="StackingSplineArea100">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img98.png)
+
 
 ## Column Chart
 
@@ -862,6 +898,43 @@ To render a Spline Chart, set the Type as **Spline** in the chart series. To cha
 
 
 [Click](http://asp.syncfusion.com/demos/web/chart/spline.aspx) here to view the Spline Chart online demo sample.
+
+
+
+
+### Spline Types
+
+Spline series supports four types of curves, namely natural, monotonic, cardinal and clamped. To change the spline type, you can use the **SplineType** property in the series. 
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Change type and color of the series--%>
+        <ej:Series Type="Spline" SplineType="Natural">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+
+### Change the cardinal spline tension
+
+To change cardinal spline tension, you can use the **CardinalSplineTension** property in the series. The default value of cardinalSplineTension is **0.5**. Its value ranges from 0 to 1.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+        <%--Change type and color of the series--%>
+        <ej:Series Type="Spline" SplineType="Natural" CardinalSplineTension="0.7">
+        </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
 
 
 ### Change the spline width
