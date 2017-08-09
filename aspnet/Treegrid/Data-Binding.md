@@ -591,7 +591,7 @@ The following output shows how load on demand works for expanding action
 
 ### Load at once:
 
-On remote data binding, for every action such as paging, sorting, filtering, the data will be fetched from remote server each time. To avoid requesting the data from the remote server for each action, we can set TreeGrid to load all the data on initialization and make all the data operations in client side. To enable this, we can use offline property of `ej.DataManager`. the following code example explains this.
+On remote data binding, for every action such as paging, sorting, filtering, the data will be fetched from remote server each time. To avoid requesting the data from the remote server for each action, we can set TreeGrid to load all the data on initialization and make all the data operations in client side. To enable this, we can use Offline property of `ej.DataManager`. the following code example explains this.
 
 {% highlight javascript %}
 
