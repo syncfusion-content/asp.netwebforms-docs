@@ -422,3 +422,68 @@ You can also disable the visibility of the particular column in column collectio
 {% endhighlight %}
 
 ![](Columns_images/Columns_img4.png) 
+
+
+## Command Column
+
+### Default action buttons
+
+Using command columns in TreeGrid, we can display a separate column to perform CRUD operations.It is also possible to perform any custom actions by using custom command buttons. Command column can be defined in TreeGrid using `columns.commands` property.
+A command column can be customized by using `type` and `buttonOptions` properties.
+
+* **type** – Using this property we can add required action buttons in TreeGrid command column such as edit,delete,save and cancel.
+* **buttonOptions** - Using this property we can customize the button in the command column with the properties available in [ejButton](https://help.syncfusion.com/api/js/ejbutton#members "ejButton").
+
+{% highlight html %}
+<ej:TreeGrid runat="server" ID="TreeGridControlCommand">
+            <Columns>
+                <ej:TreeGridColumn HeaderText="Manage Records">
+                    <Command>
+                        <ej:TreeGridCommands Type="edit">
+                            <ButtonOptions Text="Edit" Width="58" />
+                        </ej:TreeGridCommands>
+                        <ej:TreeGridCommands Type="delete">
+                            <ButtonOptions Text="Delete" Width="58" />
+                        </ej:TreeGridCommands>
+                        <ej:TreeGridCommands Type="save">
+                            <ButtonOptions Text="save" Width="58" />
+                        </ej:TreeGridCommands>
+                        <ej:TreeGridCommands Type="cancel">
+                            <ButtonOptions Text="cancel" Width="58" />
+                        </ej:TreeGridCommands>
+                    </Command>
+                </ej:TreeGridColumn>
+            </Columns>
+    </ej:TreeGrid>
+{% endhighlight %}
+
+![](Columns_images/Columns_img5.png) 
+
+### Custom buttons
+
+We can also add custom buttons to the command column by specifying text value other than default buttons to the type property. We can also bind actions to the custom button using [click](https://help.syncfusion.com/api/js/ejbutton#events:click "click") client side event of ejButton.
+
+{% highlight html %}
+<ej:TreeGrid runat="server" ID="TreeGridControlCommand">
+            <Columns>
+               <ej:TreeGridColumn HeaderText="Manage Records">
+                    <Command>
+                        <ej:TreeGridCommands Type="details">
+                            <ButtonOptions Text="Details" Width="58" click="onClick" />
+                        </ej:TreeGridCommands>                        
+                    </Command>
+                </ej:TreeGridColumn>
+            </Columns>
+</ej:TreeGrid>
+<script type="text/javascript">
+        function onClick(args) {
+            var $tr = $(args.e.target).closest('tr'),
+                treeObj = $("#TreeGridControlCommand").data("ejTreeGrid"),
+                rowIndex = treeObj.getIndexByRow($tr),
+                record = treeObj.model.currentViewData[rowIndex];
+            alert("Task Name: " + record.item.TaskName);
+        }       
+</script>
+{% endhighlight %}
+
+![](Columns_images/Columns_img6.png) 
