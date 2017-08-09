@@ -428,11 +428,11 @@ You can also disable the visibility of the particular column in column collectio
 
 ### Default action buttons
 
-Using command columns in TreeGrid, we can display a separate column to perform CRUD operations.It is also possible to perform any custom actions by using custom command buttons. Command column can be defined in TreeGrid using `columns.commands` property.
-A command column can be customized by using `type` and `buttonOptions` properties.
+Using command columns in TreeGrid, we can display a separate column to perform CRUD operations.It is also possible to perform any custom actions by using custom command buttons. Command column can be defined in TreeGrid using `Commands` property.
+A command column can be customized by using `Type` and `ButtonOptions` properties.
 
-* **type** – Using this property we can add required action buttons in TreeGrid command column such as edit,delete,save and cancel.
-* **buttonOptions** - Using this property we can customize the button in the command column with the properties available in [ejButton](https://help.syncfusion.com/api/js/ejbutton#members "ejButton").
+* **Type** – Using this property we can add required action buttons in TreeGrid command column such as edit,delete,save and cancel.
+* **ButtonOptions** - Using this property we can customize the button in the command column with the properties available in [Button](https://help.syncfusion.com/api/js/ejbutton#members "Button").
 
 {% highlight html %}
 <ej:TreeGrid runat="server" ID="TreeGridControlCommand">
@@ -461,7 +461,7 @@ A command column can be customized by using `type` and `buttonOptions` propertie
 
 ### Custom buttons
 
-We can also add custom buttons to the command column by specifying text value other than default buttons to the type property. We can also bind actions to the custom button using [click](https://help.syncfusion.com/api/js/ejbutton#events:click "click") client side event of ejButton.
+We can also add custom buttons to the command column by specifying text value other than default buttons to the type property. We can also bind actions to the custom button using [Click](https://help.syncfusion.com/api/js/ejbutton#events:click "click") client side event of Button.
 
 {% highlight html %}
 <ej:TreeGrid runat="server" ID="TreeGridControlCommand">
