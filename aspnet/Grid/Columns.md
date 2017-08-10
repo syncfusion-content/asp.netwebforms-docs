@@ -1140,13 +1140,13 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight css %}
     <style>
-        .customcss.e-headercell {
+        .customizes.e-headercell {
             background-color: #2382c3;
             color: white;
             font-family: 'Bell MT';
             font-size: 20px;
         }
-         .customcss.e-rowcell {
+         .customizes.e-rowcell {
             background-color: #ecedee;
             font-family: 'Bell MT';
             color: red;
@@ -1160,7 +1160,7 @@ The following code example describes the above behavior.
         <Columns>
             <ej:Column Field="OrderID" />
             <ej:Column Field="CustomerID" />
-            <ej:Column Field="EmployeeID" CssClass="customcss" />
+            <ej:Column Field="EmployeeID" CssClass="customizes" />
             <ej:Column Field="Freight" />
         </Columns>
     </ej:Grid>
