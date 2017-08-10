@@ -1171,6 +1171,26 @@ The default recurrence validation has been included for recurrence appointments 
 
 N> You can parse the **RecurrenceRule** of an appointment from the server-side by making use of a new generic utility class **RecurrenceHelper**. Refer this [KB document](https://www.syncfusion.com/kb/5390/how-to-parse-the-recurrencerule-in-server-side).
 
+### Recurrence Edit and Delete options
+
+The recurring appointments can be edited or deleted in three ways as below:
+
+* Single occurrence
+* Following appointments
+* Entire series
+
+#### Single occurrence
+
+When an option "Only this Appointment" is selected, a single occurrence of the recurrence appointment alone will be edited or deleted.
+
+#### Following appointments
+
+When an option "Following Appointments" is selected, all the following events of the recurrence appointment from the current instance will be edited or deleted. The previous instances of the reccurrence appointment before this current instances will be retained as it is on the Scheduler.
+
+#### Entire series
+
+The entire recurrence series will be edited / deleted, on selecting this option.
+
 ## Reminder
 
 Reminder option notifies all the appointments before some specific time. By default, it notifies before 5 minutes. Each and every appointment triggers the `Reminder` event and can utilize this event for other user actions like mailing particular event to someone or to do any kind of manipulations with the reminder appointments and so on. The `ReminderSettings` includes the following 2 properties namely,
