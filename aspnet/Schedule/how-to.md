@@ -268,7 +268,7 @@ The following code example depicts the way to achieve the customization of defau
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014" ShowLocationField="true" Create="onCreate" AppointmentWindowOpen="onAppointmentOpen">
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014" ShowLocationField="true" AppointmentWindowOpen="onAppointmentOpen">
     <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" Location="Location" RecurrenceRule="RecurrenceRule"/>
 </ej:Schedule>
 
@@ -277,23 +277,23 @@ The following code example depicts the way to achieve the customization of defau
 
 <asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
     <script type="text/javascript">
-      
-        // This function executes when the checkboxes are checked/unchecked
-        function onCreate(args) {
-            var customDesign = "<tr class='customfields'><td class='e-textlabel'>Event Type</td><td><input class='apptype' type='text'/></td><td class='e-textlabel'>Event Status </td><td><input class='status' type='text'/></td></tr>";
-            $("." + this._id + "parrow").after(customDesign);
-        }
-
+    
         // This function executes before the appointment window gets opened.
         function onAppointmentOpen(args) {
-            if (!ej.isNullOrUndefined(args.appointment)) {
-                // if double clicked on the appointments, retrieve the custom field values from the appointment object and fills it in the appropriate fields.               this._appointmentAddWindow.find(".apptype").val(args.appointment.AppointmentType);
-                this._appointmentAddWindow.find(".status").val(args.appointment.Status);
-            } else {
-                // if double clicked on the cells, clears the field values.               
-                this._appointmentAddWindow.find(".apptype").val("");
-                this._appointmentAddWindow.find(".status").val("");
+            // to add custom element in default appointment window
+            if (this._appointmentAddWindow.find(".customfields").length == 0) {
+	            var customDesign = "<tr class='customfields'><td class='e-textlabel'>Event Type</td><td><input class='apptype' type='text'/></td><td class='e-textlabel'>Event Status </td><td><input class='status' type='text'/></td></tr>";
+		        $(customDesign).insertAfter(this._appointmentAddWindow.find("." + this._id + "parrow"));
             }
+            
+	        if (!ej.isNullOrUndefined(args.appointment)) {
+	            // if double clicked on the appointments, retrieve the custom field values from the appointment object and fills it in the appropriate fields.               this._appointmentAddWindow.find(".apptype").val(args.appointment.AppointmentType);
+		        this._appointmentAddWindow.find(".status").val(args.appointment.Status);
+	        } else {
+	            // if double clicked on the cells, clears the field values.               
+		        this._appointmentAddWindow.find(".apptype").val("");
+		        this._appointmentAddWindow.find(".status").val("");
+	        }
         }
 
     </script>
