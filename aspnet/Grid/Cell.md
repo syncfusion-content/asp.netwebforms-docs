@@ -57,7 +57,7 @@ The following code example describes the above behavior.
         {
         protected void Page_Load(object sender, EventArgs e)
             {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -105,7 +105,7 @@ The following code example describes the above behavior.
         {
         protected void Page_Load(object sender, EventArgs e)
             {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -153,7 +153,7 @@ The following code example describes the above behavior.
         {
         protected void Page_Load(object sender, EventArgs e)
             {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -210,7 +210,7 @@ namespace WebSampleBrowser.Grid
     {
          protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -265,7 +265,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -290,7 +290,7 @@ The following code example describes the above behavior.
     <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
         <Columns>
             <ej:Column Field="OrderID" />
-            <ej:Column Field="CustomerID" HeaderText="<div>Cust ID</div>" disableHtmlEncode="true"/>
+            <ej:Column Field="CustomerID" HeaderText="<div>Customer ID</div>" disableHtmlEncode="true"/>
             <ej:Column Field="EmployeeID" HeaderText="<div>Employee ID</div>" disableHtmlEncode="false"/>
             <ej:Column Field="ShipCountry" />
         </Columns>
@@ -304,7 +304,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -355,7 +355,7 @@ namespace WebSampleBrowser.Grid
     {
        protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -407,7 +407,7 @@ namespace WebSampleBrowser.Grid
     {
        protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -446,7 +446,7 @@ namespace WebSampleBrowser.Grid
     {
        protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -493,7 +493,7 @@ namespace WebSampleBrowser.Grid
     {
        protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
