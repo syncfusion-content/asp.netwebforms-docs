@@ -44,11 +44,11 @@ The following code example renders the scheduler from 7.00 AM to 6.00 PM.
 
 {% endhighlight %}
 
-## Hide Weekend
+## Hide Weekend days
 
-The Scheduler can be render based on the customized days. The customized days can be render based on the `WorkWeek` days. To customize the days, use the `ShowWeekend` property.
+The Scheduler can be customized to display only the working days, thus hiding the weekend days from it. The working days render based on the values given in the `WorkWeek` property. The days that are not mentioned in the `WorkWeek` collection is considered to be the weekend days and it can be hidden from the Scheduler by setting `false` to the `ShowWeekend` property.
 
-The following code example renders the scheduler with hiding weekend.
+The following code example renders the Scheduler by hiding the weekend days.
 
 {% highlight html %}
 
