@@ -119,7 +119,7 @@ namespace WebSampleBrowser.Grid
     {
          protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -155,7 +155,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }   
@@ -195,7 +195,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -240,7 +240,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -291,7 +291,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -339,7 +339,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -382,7 +382,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -423,7 +423,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -466,7 +466,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -507,7 +507,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -548,7 +548,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -580,14 +580,14 @@ The following code example describes the above behavior.
             <ej:Column Field="CustomerID" />
             <ej:Column Field="EmployeeID" />
             <ej:Column Field="Freight" />
-            <ej:Column HeaderText="" Format="<a onclick = clk(this) href=#>Delete</a>" />
+            <ej:Column HeaderText="" Format="<a onclick = click(this) href=#>Delete</a>" />
         </Columns>
     </ej:Grid>
 </asp:Content>
 {% endhighlight  %}
 {% highlight js %}	
     <script type="text/javascript">
-        function clk(e) {
+        function click(e) {
             var obj = $("#MainContent_FlatGrid").data("ejGrid");
             obj.deleteRecord("OrderID", obj.getSelectedRecords()[0]);
         }
@@ -600,7 +600,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -719,7 +719,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -756,7 +756,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -823,9 +823,9 @@ namespace WebSampleBrowser.Grid
             {
 
             }
-            public Orders(string foodname, int protein, int fat, int carbohydrate)
+            public Orders(string name, int protein, int fat, int carbohydrate)
             {
-                this.FoodName = foodname;
+                this.FoodName = name;
                 this.Protein = protein;
                 this.Fat = fat;
                 this.Carbohydrate = carbohydrate;
@@ -897,7 +897,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -953,7 +953,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -995,7 +995,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -1075,7 +1075,7 @@ namespace WebSampleBrowser.Grid
             employee.Add(new Employee(9, "Steven"));
             employee.Add(new Employee(10, "James"));
             employee.Add(new Employee(11, "Smith"));
-            employee.Add(new Employee(12, "Jhonson"));
+            employee.Add(new Employee(12, "Johnson"));
             employee.Add(new Employee(13, "George"));
 
             var index = this.FlatGrid.Columns.FindIndex(col => col.Field == "EmployeeID");
@@ -1173,7 +1173,7 @@ namespace WebSampleBrowser.Grid
     {
        protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -1261,7 +1261,7 @@ namespace WebSampleBrowser.Grid
     {
        protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -1303,7 +1303,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
