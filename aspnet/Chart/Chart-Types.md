@@ -864,43 +864,6 @@ To render a Spline Chart, set the Type as **Spline** in the chart series. To cha
 [Click](http://asp.syncfusion.com/demos/web/chart/spline.aspx) here to view the Spline Chart online demo sample.
 
 
-
-
-### Spline Types
-
-Spline series supports four types of curves, namely natural, monotonic, cardinal and clamped. To change the spline type, you can use the **SplineType** property in the series. 
-
-{% highlight html %}
-
-<ej:Chart ID="Chart1" runat="server"> 
-    <Series>
-        <%--Change type and color of the series--%>
-        <ej:Series Type="Spline" SplineType="Natural">
-        </ej:Series>
-    </Series>
-</ej:Chart>
-
-{% endhighlight %}
-
-
-### Change the cardinal spline tension
-
-To change cardinal spline tension, you can use the **CardinalSplineTension** property in the series. The default value of cardinalSplineTension is **0.5**. Its value ranges from 0 to 1.
-
-{% highlight html %}
-
-<ej:Chart ID="Chart1" runat="server"> 
-    <Series>
-        <%--Change type and color of the series--%>
-        <ej:Series Type="Spline" SplineType="Natural" CardinalSplineTension="0.7">
-        </ej:Series>
-    </Series>
-</ej:Chart>
-
-{% endhighlight %}
-
-
-
 ### Change the spline width
 
 To change the spline segment width, you can use the Width property of the series.
