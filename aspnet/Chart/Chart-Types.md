@@ -366,42 +366,6 @@ To render a 100% Stacked Area Chart, set the Type as **StackingArea100** in the 
 
 [Click](http://asp.syncfusion.com/demos/web/chart/stackingarea100.aspx) here to view 100% Stacked Area Chart online demo.
 
-## Stacked Spline Area Chart
-
-To render a Stacked Spline Area Chart, set the `type` as **"StackingSplineArea"** in the chart series. 
-
-{% highlight html %}
-
-<ej:Chart ID="Chart1" runat="server"> 
-    <%--Change type and color of the series--%>
-    <Series>
-        <ej:Series Type="StackingSplineArea">
-        </ej:Series>
-    </Series>
-</ej:Chart>
-
-{% endhighlight %}
-
-![](Chart-Types_images/Chart-Types_img97.png)
-
-
-## 100% Stacked Spline Area Chart  
-
-To render a 100% Stacked Spline Area Chart, set the `type` as **"StackingSplineArea100"** in the chart series. 
-{% highlight html %}
-
-<ej:Chart ID="Chart1" runat="server"> 
-    <%--Change type and color of the series--%>
-    <Series>
-        <ej:Series Type="StackingSplineArea100">
-        </ej:Series>
-    </Series>
-</ej:Chart>
-
-{% endhighlight %}
-
-![](Chart-Types_images/Chart-Types_img98.png)
-
 
 ## Column Chart
 
