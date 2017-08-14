@@ -184,35 +184,3 @@ protected void Page_Load(object sender, EventArgs e)
 {% endtabs %}
 
 ![](TreeMap-Elements_images/TreeMap-Elements_img3.png) 
-
-## Customizing the Overflow labels
-
-You can handle the label overflow, by specifying any one of the following values to the property `TextOverflow`as
-
-**None**       - By specifying textOverflow as “none”, it displays the default label text.
-**Hide**       - By specifying textOverflow as “hide”, You can hide the label, when it exceeds the header width.
-**Wrap**       - By specifying textOverflow as “wrap”, you can wrap the label text.
-**Wrapbyword** - By specifying textOverflow as “wrapbyword”, you can wrap the label text by word.
-
-
-{% highlight html %}
-
-<div style="min-height:404px">
-
-    <ej:Treemap ID="treemap" runat="server" ColorValuePath = "Growth" WeightValuePath = "Population" ShowLegend = "true" >
-
-       <TreeMapLegend IconHeight = "17" IconWidth = "17"></TreeMapLegend>
-
-        <LeafItemSettings LabelPath = "Country" TextOverFlow = "Wrap"></LeafItemSettings>
-		
-        <Levels>
-
-            <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25"></ej:TreeMapLevel>
-
-        </Levels>
-
-    </ej:Treemap>
-
-</div>
-	
-{% endhighlight %}
