@@ -445,7 +445,7 @@ namespace PivotClientDemo
             {
                 DataManager.CurrentReport.EnablePaging = true;
                 DataManager.CurrentReport.PagerOptions.SeriesPageSize = 5;
-                DataManager.CurrentReport.PagerOptions.CategorialPageSize = 3;
+                DataManager.CurrentReport.PagerOptions.CategoricalPageSize = 3;
             }
             return pivotClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["cubeName"].ToString(), jsonResult["clientParams"].ToString());
         }
@@ -476,7 +476,7 @@ namespace PivotClientDemo
             {
                 DataManager.CurrentReport.EnablePaging = true;
                 DataManager.CurrentReport.PagerOptions.SeriesPageSize = 5;
-                DataManager.CurrentReport.PagerOptions.CategorialPageSize = 3;
+                DataManager.CurrentReport.PagerOptions.CategoricalPageSize = 3;
             }
             return pivotClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, toolbarOperation, jsonResult["clientInfo"].ToString());
         }
