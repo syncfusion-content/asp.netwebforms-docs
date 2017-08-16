@@ -228,19 +228,5 @@ However, you can force the chart to animate series by calling the animate method
         
       }
 
-{% endhighlight %}
-
-### Control the Speed of animation
-
-To control the speed of animation, you can use the **AnimationDuration** property in the series.
-
-{% highlight html %}
-
-<ej:Chart ID="Chart1" runat="server">
-   <Series>
-       <%--Enabling animation of series--%>
-       <ej:Series EnableAnimation="true" AnimationDuration="2000"></ej:Series>
-   </Series>
-</ej:Chart>
 
 {% endhighlight %}

@@ -395,31 +395,31 @@ namespace EJGrid.Controllers
             cl = new DataColumn("Name");
             dt.Columns.Add(cl);
 
-            DataRow dr = dt.NewRow();
-            dr[0] = 1;
-            dr[1] = "John";
-            dt.Rows.Add(dr);
+            DataRow datarow = dt.NewRow();
+            datarow[0] = 1;
+            datarow[1] = "John";
+            dt.Rows.Add(datarow);
 
 
-            dr = dt.NewRow();
-            dr[0] = 2;
-            dr[1] = "Smith";
-            dt.Rows.Add(dr);
+            datarow = dt.NewRow();
+            datarow[0] = 2;
+            datarow[1] = "Smith";
+            dt.Rows.Add(datarow);
 
-            dr = dt.NewRow();
-            dr[0] = 3;
-            dr[1] = "Tomps";
-            dt.Rows.Add(dr);
+            datarow = dt.NewRow();
+            datarow[0] = 3;
+            datarow[1] = "Tomps";
+            dt.Rows.Add(datarow);
 
-            dr = dt.NewRow();
-            dr[0] = 4;
-            dr[1] = "Hanar";
-            dt.Rows.Add(dr);
+            datarow = dt.NewRow();
+            datarow[0] = 4;
+            datarow[1] = "Hanar";
+            dt.Rows.Add(datarow);
 
-            dr = dt.NewRow();
-            dr[0] = 5;
-            dr[1] = "Reek";
-            dt.Rows.Add(dr);
+            datarow = dt.NewRow();
+            datarow[0] = 5;
+            datarow[1] = "Reek";
+            dt.Rows.Add(datarow);
             this.EmployeesGrid2.DataSource = dt;
         } 
     }
@@ -462,33 +462,33 @@ The following code example describes the above behavior.
             : base()
         {
             // Get the 'shape' of the list. 
-            // Only get the public properties marked with Browsable = true.
-            PropertyDescriptorCollection pdc = TypeDescriptor.GetProperties(
+            // Only get the public properties marked with Browable = true.
+            PropertyDescriptorCollection propertydescriptorcollection = TypeDescriptor.GetProperties(
                 typeof(T),
                 new Attribute[] { new BrowsableAttribute(true) });
 
             // Sort the properties.
-            properties = pdc.Sort();
+            properties = propertydescriptorcollection.Sort();
         }
 
         #region ITypedList Implementation
 
         public PropertyDescriptorCollection GetItemProperties(PropertyDescriptor[] listAccessors)
         {
-            PropertyDescriptorCollection pdc;
+            PropertyDescriptorCollection propertydescriptorcollection;
 
             if (listAccessors != null && listAccessors.Length > 0)
             {
                 // Return child list shape.
-                pdc = ListBindingHelper.GetListItemProperties(listAccessors[0].PropertyType);
+                propertydescriptorcollection = ListBindingHelper.GetListItemProperties(listAccessors[0].PropertyType);
             }
             else
             {
                 // Return properties in sort order.
-                pdc = properties;
+                propertydescriptorcollection = properties;
             }
 
-            return pdc;
+            return propertydescriptorcollection;
         }
 
         // This method is only used in the design-time framework 

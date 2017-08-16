@@ -131,44 +131,6 @@ protected void Page_Load(object sender, EventArgs e)
 
  ![](TreeMap-Elements_images/TreeMap-Elements_img2.png) 
 
-
-## Customizing the header
-
-The text in the header can be customized by triggering the event `HeaderTemplateRendering` of the **TreeMap**. This event is triggered before rendering the header template. 
-
-{% highlight html %}
-
-<div style="min-height:404px">
-
-    <ej:Treemap ID="treemap" runat="server" ColorValuePath = "Growth" WeightValuePath = "Population" OnClientHeaderTemplateRendering="loadTemplate" >
-
-       <TreeMapLegend IconHeight = "17" IconWidth = "17"></TreeMapLegend>
-
-        <LeafItemSettings LabelPath = "Country"></LeafItemSettings>
-         
-
-        <Levels>
-
-            <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25"></ej:TreeMapLevel>
-
-        </Levels>
-
-    </ej:Treemap>
-
-    </div> 
-
-    <script>
-        function loadTemplate(){
-            //...
-        } 
-    </script>
-
-{% endhighlight %}
-
-
-![](TreeMap-Elements_images/TreeMap-Elements_img4.png)
-
-
 ### Label
 
 You can also set labels for the leaf nodes by setting the ShowLabels property as true. Group path value is displayed as a label for leaf nodes. You can customize the default label appearance by setting the LabelTemplate of the TreeMap levels.
@@ -221,36 +183,4 @@ protected void Page_Load(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](TreeMap-Elements_images/TreeMap-Elements_img3.png) 
-
-## Customizing the Overflow labels
-
-You can handle the label overflow, by specifying any one of the following values to the property `TextOverflow`as
-
-**None**       - By specifying textOverflow as “none”, it displays the default label text.
-**Hide**       - By specifying textOverflow as “hide”, You can hide the label, when it exceeds the header width.
-**Wrap**       - By specifying textOverflow as “wrap”, you can wrap the label text.
-**Wrapbyword** - By specifying textOverflow as “wrapbyword”, you can wrap the label text by word.
-
-
-{% highlight html %}
-
-<div style="min-height:404px">
-
-    <ej:Treemap ID="treemap" runat="server" ColorValuePath = "Growth" WeightValuePath = "Population" ShowLegend = "true" >
-
-       <TreeMapLegend IconHeight = "17" IconWidth = "17"></TreeMapLegend>
-
-        <LeafItemSettings LabelPath = "Country" TextOverFlow = "Wrap"></LeafItemSettings>
-		
-        <Levels>
-
-            <ej:TreeMapLevel GroupPath = "Continent" GroupGap = "5" HeaderHeight = "25"></ej:TreeMapLevel>
-
-        </Levels>
-
-    </ej:Treemap>
-
-</div>
-	
-{% endhighlight %}
+![](TreeMap-Elements_images/TreeMap-Elements_img3.png)
