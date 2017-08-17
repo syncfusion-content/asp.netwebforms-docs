@@ -65,7 +65,7 @@ function btnClick(args) { //updating dataSource in an external button click even
 
             var value = $("#colValue").val();
 
-            //Add custom paramter to the server
+            //Add custom parameter to the server
 
             var query = new ej.Query().addParams("EmployeeID", value);
 
