@@ -69,15 +69,15 @@ The following code example describes the above behavior.
              {
 
              }
-             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             public Orders(int OrderId, int empId, string CustomerId, string shipCity, string shipCountry,string shipAddress,int shipPostalCode, double freight)
              {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
                 this.CustomerID = CustomerId;
-                this.ShipCity = shipcity;                
+                this.ShipCity = shipCity;                
                 this.ShipCountry = shipCountry;
-                this.ShipAddress = shipaddress
-                this.ShipPostalCode = shippostalcode;
+                this.ShipAddress = shipAddress
+                this.ShipPostalCode = shipPostalCode;
                 this.Freight = freight;
              }
              public int OrderID { get; set; }
@@ -157,14 +157,14 @@ The following code example describes the above behavior.
              {
 
              }
-             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             public Orders(int OrderId, int empId, string CustomerId, string shipCity, string shipCountry,string shipAddress,int shipPostalCode, double freight)
              {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
                 this.CustomerID = CustomerId;
-                this.ShipCity = shipcity;                
+                this.ShipCity = shipCity;                
                 this.ShipCountry = shipCountry;
-                this.ShipPostalCode = shippostalcode;
+                this.ShipPostalCode = shipPostalCode;
                 this.Freight = freight;
              }
              public int OrderID { get; set; }
@@ -244,15 +244,15 @@ The following code example describes the above behavior.
              {
 
              }
-             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             public Orders(int OrderId, int empId, string CustomerId, string shipCity, string shipCountry,string shipAddress,int shipPostalCode, double freight)
              {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
                 this.CustomerID = CustomerId;
-                this.ShipCity = shipcity;                
+                this.ShipCity = shipCity;                
                 this.ShipCountry = shipCountry;
-                this.ShipAddress = shipaddress;
-                this.ShipPostalCode = shippostalcode;
+                this.ShipAddress = shipAddress;
+                this.ShipPostalCode = shipPostalCode;
                 this.Freight = freight;
              }
              public int OrderID { get; set; }
@@ -333,15 +333,15 @@ The following code example describes the above behavior.
              {
 
              }
-             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             public Orders(int OrderId, int empId, string CustomerId, string shipCity, string shipCountry,string shipAddress,int shipPostalCode, double freight)
              {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
                 this.CustomerID = CustomerId;
-                this.ShipCity = shipcity;                
+                this.ShipCity = shipCity;                
                 this.ShipCountry = shipCountry;
-                this.ShipAddress=shipaddress;
-                this.ShipPostalCode = shippostalcode;
+                this.ShipAddress=shipAddress;
+                this.ShipPostalCode = shipPostalCode;
                 this.Freight = freight;
              }
              public int OrderID { get; set; }
@@ -423,15 +423,15 @@ The following code example describes the above behavior.
              {
 
              }
-             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             public Orders(int OrderId, int empId, string CustomerId, string shipCity, string shipCountry,string shipAddress,int shipPostalCode, double freight)
              {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
                 this.CustomerID = CustomerId;
-                this.ShipCity = shipcity;                
+                this.ShipCity = shipCity;                
                 this.ShipCountry = shipCountry;
-                this.ShipAddress=shipaddress;
-                this.ShipPostalCode = shippostalcode;
+                this.ShipAddress=shipAddress;
+                this.ShipPostalCode = shipPostalCode;
                 this.Freight = freight;
              }
              public int OrderID { get; set; }
@@ -513,17 +513,17 @@ The following code example describes the above behavior.
              {
 
              }
-             public Orders(int OrderId, int empId, string CustomerId, double freight,DateTime orderdate,string shipcity, string shipCountry,string shipaddress,int shippostalcode)
+             public Orders(int OrderId, int empId, string CustomerId, double freight,DateTime orderDate,string shipCity, string shipCountry,string shipAddress,int shipPostalCode)
              {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
                 this.CustomerID = CustomerId;
                 this.Freight = freight;
-                this.OrderDate = orderdate;
-                this.ShipCity = shipcity;                
+                this.OrderDate = orderDate;
+                this.ShipCity = shipCity;                
                 this.ShipCountry = shipCountry;
-                this.ShipAddress=shipaddress;
-                this.ShipPostalCode = shippostalcode;                
+                this.ShipAddress=shipAddress;
+                this.ShipPostalCode = shipPostalCode;                
              }
              public int OrderID { get; set; }
              public int EmployeeID { get; set; }
@@ -619,15 +619,15 @@ The following code example describes the above behavior.
              {
 
              }
-             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             public Orders(int OrderId, int empId, string CustomerId, string shipCity, string shipCountry,string shipAddress,int shipPostalCode, double freight)
              {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
                 this.CustomerID = CustomerId;
-                this.ShipCity = shipcity;                
+                this.ShipCity = shipCity;                
                 this.ShipCountry = shipCountry;
-                this.ShipAddress=shipaddress;
-                this.ShipPostalCode = shippostalcode;
+                this.ShipAddress=shipAddress;
+                this.ShipPostalCode = shipPostalCode;
                 this.Freight = freight;
              }
              public int OrderID { get; set; }
@@ -708,15 +708,15 @@ The following code example describes the above behavior.
              {
 
              }
-             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             public Orders(int OrderId, int empId, string CustomerId, string shipCity, string shipCountry,string shipAddress,int shipPostalCode, double freight)
              {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
                 this.CustomerID = CustomerId;
-                this.ShipCity = shipcity;                
+                this.ShipCity = shipCity;                
                 this.ShipCountry = shipCountry;
-                this.ShipAddress=shipaddress;
-                this.ShipPostalCode = shippostalcode;
+                this.ShipAddress=shipAddress;
+                this.ShipPostalCode = shipPostalCode;
                 this.Freight = freight;
              }
              public int OrderID { get; set; }
@@ -815,15 +815,15 @@ The following code example describes the above behavior.
              {
 
              }
-             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             public Orders(int OrderId, int empId, string CustomerId, string shipCity, string shipCountry,string shipAddress,int shipPostalCode, double freight)
              {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
                 this.CustomerID = CustomerId;
-                this.ShipCity = shipcity;                
+                this.ShipCity = shipCity;                
                 this.ShipCountry = shipCountry;
-                this.ShipAddress=shipaddress;
-                this.ShipPostalCode = shippostalcode;
+                this.ShipAddress=shipAddress;
+                this.ShipPostalCode = shipPostalCode;
                 this.Freight = freight;
              }
              public int OrderID { get; set; }
@@ -902,15 +902,15 @@ The following code example describes the above behavior.
              {
 
              }
-             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             public Orders(int OrderId, int empId, string CustomerId, string shipCity, string shipCountry,string shipAddress,int shipPostalCode, double freight)
              {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
                 this.CustomerID = CustomerId;
-                this.ShipCity = shipcity;                
+                this.ShipCity = shipCity;                
                 this.ShipCountry = shipCountry;
-                this.ShipAddress=shipaddress;
-                this.ShipPostalCode = shippostalcode;
+                this.ShipAddress=shipAddress;
+                this.ShipPostalCode = shipPostalCode;
                 this.Freight = freight;
              }
              public int OrderID { get; set; }
@@ -991,15 +991,15 @@ The following code example describes the above behavior.
              {
 
              }
-             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             public Orders(int OrderId, int empId, string CustomerId, string shipCity, string shipCountry,string shipAddress,int shipPostalCode, double freight)
              {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
                 this.CustomerID = CustomerId;
-                this.ShipCity = shipcity;                
+                this.ShipCity = shipCity;                
                 this.ShipCountry = shipCountry;
-                this.ShipAddress=shipaddress;
-                this.ShipPostalCode = shippostalcode;
+                this.ShipAddress=shipAddress;
+                this.ShipPostalCode = shipPostalCode;
                 this.Freight = freight;
              }
              public int OrderID { get; set; }
