@@ -126,7 +126,7 @@ In this section, you can learn how to use the Hierarchy in GridView. The followi
 
         </div>
 
-        <label id="employeeDet" style="display: none">{{"{{"}}:EmployeeID {{}}}}</label>
+        <label id="employeeData" style="display: none">{{"{{"}}:EmployeeID {{}}}}</label>
 
     </div>
 
@@ -138,7 +138,7 @@ In this section, you can learn how to use the Hierarchy in GridView. The followi
 
     function detailGridData(e) {
 
-        var filteredData = e.detailsElement.find("#employeeDet").text();
+        var filteredData = e.detailsElement.find("#employeeData").text();
 
         // the datasource "window.ordersView" is referred from jsondata.min.js
 
@@ -649,8 +649,8 @@ The following code example describes the above behavior.
         </ej:Grid>
             </div>
         <div style="float:right;width:49%">
-            <ej:Grid ID="DestGrid" runat="server" AllowPaging="True" AllowRowDragAndDrop="true" Selectiontype="Multiple">
-                <RowDropSettings DragMapper="DragAndDrop.aspx/DestGridDragHandler" DropMapper="DragAndDrop.aspx/DestGridDropHandler"/>
+            <ej:Grid ID="EmployeeGrid" runat="server" AllowPaging="True" AllowRowDragAndDrop="true" Selectiontype="Multiple">
+                <RowDropSettings DragMapper="DragAndDrop.aspx/EmployeeGridDragHandler" DropMapper="DragAndDrop.aspx/EmployeeGridDropHandler"/>
             <Columns>
                 <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
                 <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
@@ -672,7 +672,7 @@ public partial class RowTemplate : System.Web.UI.Page
             var data2 = OrderRepository.GetAllRecords2();
                           
             this.OrdersGrid.DataManager = new DataSource() { Json = data, Adaptor = "remoteSaveAdaptor" };
-            this.DestGrid.DataManager = new DataSource() { Json = data2, Adaptor = "remoteSaveAdaptor" };
+            this.EmployeeGrid.DataManager = new DataSource() { Json = data2, Adaptor = "remoteSaveAdaptor" };
 
         }
 
@@ -686,7 +686,7 @@ public partial class RowTemplate : System.Web.UI.Page
         
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public static object DestGridDragHandler(List<Orders> deleted)
+        public static object EmployeeGridDragHandler(List<Orders> deleted)
         {
             OrderRepository.Delete2(deleted);
             return deleted;
@@ -712,7 +712,7 @@ public partial class RowTemplate : System.Web.UI.Page
       
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public static object DestGridDropHandler(List<Orders> added)
+        public static object EmployeeGridDropHandler(List<Orders> added)
         {
             RowDropModel dropDetails = (RowDropModel)ser.Deserialize(Request.Headers["rowDropDetails"], typeof(RowDropModel));
             var count = 0;
