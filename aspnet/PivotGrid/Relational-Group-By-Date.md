@@ -40,7 +40,7 @@ protected void Page_Load(object sender, EventArgs e)
 The properties associated with group by date option is,
 
 * Format - To set the data type format. 
-* FotmatString - Specifies the structure of the date format.
+* FormatString - Specifies the structure of the date format.
 * Delimiter - Specifies the separator of the date values.
 * GroupByDate.Interval - Specifies the pattern in which date type to be displayed.
 
