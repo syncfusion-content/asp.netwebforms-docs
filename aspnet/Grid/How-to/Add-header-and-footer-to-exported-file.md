@@ -154,9 +154,9 @@ We can add header/footer to a PDF documents using PdfPageTemplateElement class. 
         protected void FlatGrid_ServerPdfExporting(object sender, Syncfusion.JavaScript.Web.GridEventArgs e)
         {
             PdfExport exp = new PdfExport();
-            PdfDocument pdfdocument = exp.Export(FlatGrid.Model, (IEnumerable)FlatGrid.DataSource, "Export.pdf", false, false, "flat-lime", true);
+            PdfDocument pdfDocument = exp.Export(FlatGrid.Model, (IEnumerable)FlatGrid.DataSource, "Export.pdf", false, false, "flat-lime", true);
             
-            RectangleF rect = new RectangleF(0, 0, pdfdocument.PageSettings.Width, 50);
+            RectangleF rect = new RectangleF(0, 0, pdfDocument.PageSettings.Width, 50);
             
             //create a header pager template
             PdfPageTemplateElement header = new PdfPageTemplateElement(rect);
@@ -169,12 +169,12 @@ We can add header/footer to a PDF documents using PdfPageTemplateElement class. 
             PdfFont font = new PdfTrueTypeFont(f, true);
             
             header.Graphics.DrawString("Demo Report", font, PdfBrushes.Black, new Point(250, 0)); //Add custom text to the Header
-            pdfdocument.Template.Top = header; //Append custom template to the document           
+            pdfDocument.Template.Top = header; //Append custom template to the document           
             
             footer.Graphics.DrawString("CopyRights", font, PdfBrushes.Gray, new Point(250, 0));//Add Custom text to footer
-            pdfdocument.Template.Bottom = footer;//Add the footer template to document
+            pdfDocument.Template.Bottom = footer;//Add the footer template to document
             
-            pdfdocument.Save("Export.pdf", Response, HttpReadType.Save);
+            pdfDocument.Save("Export.pdf", Response, HttpReadType.Save);
         }
 
 
