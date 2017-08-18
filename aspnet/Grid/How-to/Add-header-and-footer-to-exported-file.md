@@ -37,7 +37,7 @@ Using the Range Text property and SetValue method of the XlsIO IRange Class, we 
     { 
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.FlatGrid.DataSource = OrderRepository.GetAllrecords().ToList();
+            this.FlatGrid.DataSource = OrderRepository.GetAllRecords().ToList();
             this.FlatGrid.DataBind();
         }        
 
@@ -90,7 +90,7 @@ We can add header and footer to the word document using the HeadersFooters prope
     { 
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.FlatGrid.DataSource = OrderRepository.GetAllrecords().ToList();
+            this.FlatGrid.DataSource = OrderRepository.GetAllRecords().ToList();
             this.FlatGrid.DataBind();
         }        
 
@@ -147,7 +147,7 @@ We can add header/footer to a PDF documents using PdfPageTemplateElement class. 
     { 
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.FlatGrid.DataSource = OrderRepository.GetAllrecords().ToList();
+            this.FlatGrid.DataSource = OrderRepository.GetAllRecords().ToList();
             this.FlatGrid.DataBind();
         }        
 
