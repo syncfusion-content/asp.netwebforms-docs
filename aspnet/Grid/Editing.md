@@ -301,13 +301,13 @@ The following code example describes the above behavior.
                       {
 
                       }
-                     public Orders(long OrderId, string CustomerId,double Freight, string ShipCountry,int Shippostalcode )
+                     public Orders(long OrderId, string CustomerId,double Freight, string ShipCountry,int ShipPostalCode )
                       {
                         this.OrderID = OrderId;
                         this.CustomerID = CustomerId;
                         this.Freight = Freight;
                         this.ShipCountry = ShipCountry;
-                        this.ShipPostalCode =Shippostalcode;
+                        this.ShipPostalCode =ShipPostalCode;
                      }
                      public long OrderID { get; set; }
                      public string CustomerID { get; set; }

@@ -81,11 +81,11 @@ The following code example describes the above behavior.
             {
 
             }
-            public Orders(int OrderId, int empId, string  shipcity, string shipCountry, double freight)
+            public Orders(int OrderId, int empId, string  shipCity, string shipCountry, double freight)
             {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
-                this.ShipCity =  shipcity
+                this.ShipCity =  shipCity
                 this.ShipCountry = shipCountry;
                 this.Freight = freight;
             }
@@ -202,11 +202,11 @@ The following code example describes the above behavior.
                {
 
                }
-              public Orders(int OrderId, int empId, string  shipcity, string shipCountry, double freight)
+              public Orders(int OrderId, int empId, string  shipCity, string shipCountry, double freight)
                {
                  this.OrderID = OrderId;
                  this.EmployeeID = empId;
-                 this.ShipCity =  shipcity
+                 this.ShipCity =  shipCity
                  this.ShipCountry = shipCountry;
                  this.Freight = freight;
                }
@@ -286,11 +286,11 @@ The following code example describes the above behavior.
                {
 
                }
-              public Orders(int OrderId, int empId, string  shipcity, string shipCountry, double freight)
+              public Orders(int OrderId, int empId, string  shipCity, string shipCountry, double freight)
                {
                  this.OrderID = OrderId;
                  this.EmployeeID = empId;
-                 this.ShipCity =  shipcity
+                 this.ShipCity =  shipCity
                  this.ShipCountry = shipCountry;
                  this.Freight = freight;
                }
@@ -366,11 +366,11 @@ The following code example describes the above behavior.
                {
 
                }
-              public Orders(int OrderId, int empId, string  shipcity, string shipCountry, double freight)
+              public Orders(int OrderId, int empId, string  shipCity, string shipCountry, double freight)
                {
                  this.OrderID = OrderId;
                  this.EmployeeID = empId;
-                 this.ShipCity =  shipcity
+                 this.ShipCity =  shipCity
                  this.ShipCountry = shipCountry;
                  this.Freight = freight;
                }
@@ -445,11 +445,11 @@ The following code example describes the above behavior.
                {
 
                }
-              public Orders(int OrderId, int empId, string  shipcity, string shipCountry, double freight)
+              public Orders(int OrderId, int empId, string  shipCity, string shipCountry, double freight)
                {
                  this.OrderID = OrderId;
                  this.EmployeeID = empId;
-                 this.ShipCity =  shipcity
+                 this.ShipCity =  shipCity
                  this.ShipCountry = shipCountry;
                  this.Freight = freight;
                }
@@ -527,11 +527,11 @@ The following code example describes the above behavior.
                {
 
                }
-              public Orders(int OrderId, int empId, string  shipcity, string shipCountry, double freight)
+              public Orders(int OrderId, int empId, string  shipCity, string shipCountry, double freight)
                {
                  this.OrderID = OrderId;
                  this.EmployeeID = empId;
-                 this.ShipCity =  shipcity
+                 this.ShipCity =  shipCity
                  this.ShipCountry = shipCountry;
                  this.Freight = freight;
                }

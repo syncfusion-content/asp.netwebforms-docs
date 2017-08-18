@@ -300,9 +300,9 @@ Custom Summary is used to create custom summary formula for summary. The followi
 
             var rs = 100000;
 
-            var dol = 0.017
+            var interest = 0.017
 
-            return (rs * dol);
+            return (rs * interest);
 
         }
 
