@@ -37,7 +37,7 @@ Using the Range property and AddComment method of the XlsIO IRange Class, we wil
     { 
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.FlatGrid.DataSource = OrderRepository.GetAllrecords().ToList();
+            this.FlatGrid.DataSource = OrderRepository.GetAllRecords().ToList();
             this.FlatGrid.DataBind();
         }        
 
@@ -84,7 +84,7 @@ We can add comments to the word document using the AppendComment method in the W
     { 
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.FlatGrid.DataSource = OrderRepository.GetAllrecords().ToList();
+            this.FlatGrid.DataSource = OrderRepository.GetAllRecords().ToList();
             this.FlatGrid.DataBind();
         }        
 
