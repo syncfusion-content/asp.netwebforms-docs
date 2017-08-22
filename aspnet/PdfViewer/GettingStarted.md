@@ -53,7 +53,7 @@ Add below code snippet to Default.aspx. Here, PDF viewer uses the hosted service
     <form id="form1" runat="server">
     <div class="control">
         <ej:pdfviewer id="PdfViewer1" Height="800"  
-            ServiceUrl="http://js.syncfusion.com/demos/ejservices/api/PdfViewer"
+            ServiceUrl="http://js.syncfusion.com/ejServices/api/PdfViewer"
             PdfService="Local"
             runat="server">
         </ej:pdfviewer>

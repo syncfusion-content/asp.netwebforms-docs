@@ -743,9 +743,9 @@ The following code snippet illustrates you to change the localization to German 
                         contentText: ' Laden Sie das PDF-Dokument'
                     },
                     search: {
-		                headerText: 'Suche Text',
-		                contentText: 'Suchen Sie Text in den PDF-Seiten.',
-		            },
+                        headerText: 'Suche Text',
+                        contentText: 'Suchen Sie Text in den PDF-Seiten.',
+                    },
                     highlight: {
                         headerText: 'hervorheben Text',
                         contentText: 'Markieren Sie Text in den PDF-Seiten.',
