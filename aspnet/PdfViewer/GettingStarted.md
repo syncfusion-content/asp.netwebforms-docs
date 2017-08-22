@@ -85,6 +85,7 @@ namespace PdfViewerEJWeb.WebApi
 {
     public class PdfViewerController : ApiController
     {
+        //Post action for processing the PDF documents.
         public object Load(Dictionary<string, string> jsonResult)
         {
             PdfViewerHelper helper = new PdfViewerHelper();
