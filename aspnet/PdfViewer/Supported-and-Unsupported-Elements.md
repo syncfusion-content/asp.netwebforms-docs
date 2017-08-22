@@ -309,10 +309,10 @@ No
 </tr>
 <tr>
 <td>
-Annotations
+Annotations**
 </td>
 <td>
-No
+Yes
 </td>
 </tr>
 <tr>
@@ -430,3 +430,5 @@ No
 </table>
 
 Supported only for shapes and texts*
+
+Supports only text markup annotations**
