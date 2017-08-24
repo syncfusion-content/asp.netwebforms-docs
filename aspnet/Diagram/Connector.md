@@ -576,7 +576,7 @@ Line Bridging creates a bridge for lines to smartly cross over other lines, at p
 Bridging can be enabled/disabled either with the `Connector.Constraints` or `Diagram.Constraints`. The following code example illustrates how to enable line bridging.
 
 {% highlight c# %}
-//Enables briding for a single connector
+//Enables bridging for a single connector
 Connector connector = new Connector()
 {
 	Name = "connector1",
