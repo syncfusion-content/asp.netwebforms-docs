@@ -243,7 +243,7 @@ The following code illustrates how to execute Nudge command.
 
 {% highlight js %}
 
-var diagram = $("#diagramcontent").ejDiagram("instance");
+var diagram = $("#diagramContent").ejDiagram("instance");
 //Nudges up
 diagram.nudge("up", 5);
 
