@@ -200,12 +200,12 @@ var CloneTool = (function (base) {
 		base.call(this, name);
 	}
 	// Defines the required events
-	CloneTool.prototype.mouseup = function (evt) {
+	CloneTool.prototype.mouseup = function (eventArgs) {
 		//clones the selected elements when the custom handle is clicked.
 		this.diagram.copy();
 		//Pastes the cloned elements.
 		this.diagram.paste();
-		base.prototype.mouseup.call(this, evt);
+		base.prototype.mouseup.call(this, eventArgs);
 	};
 	return CloneTool;
 })(ej.datavisualization.Diagram.ToolBase);
