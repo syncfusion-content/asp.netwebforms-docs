@@ -74,13 +74,13 @@ The following example explains the how to bind data to the MaskEditTextbox cont
 
                     <td>
 
-                        <input id="numeric" type="text" ej-numerictextbox e-value="nvalue" />
+                        <input id="numeric" type="text" ej-numerictextbox e-value="numericValue" />
 
                     </td>
 
                     <td>
 
-                        <input type="text" class="input ejinputtext" ng-model="nvalue" />
+                        <input type="text" class="input ejinputtext" ng-model="numericValue" />
 
                     </td>
 
@@ -98,7 +98,7 @@ The following example explains the how to bind data to the MaskEditTextbox cont
 
            .controller('TextboxCtrl', function ($scope) {
 
-               $scope.nvalue = 600;
+               $scope.numericValue = 600;
 
            });
 
@@ -199,7 +199,7 @@ The following example explains the how to bind data to the MaskEditTextbox cont
 
 
 
-                        <input id="maskedit" type="text" data-bind="ejMaskEdit: { value: mvalue, inputMode: ej.InputMode.Text, maskFormat: '(999)999-9999' }" />
+                        <input id="maskedit" type="text" data-bind="ejMaskEdit: { value: maskValue, inputMode: ej.InputMode.Text, maskFormat: '(999)999-9999' }" />
 
 
 
@@ -211,7 +211,7 @@ The following example explains the how to bind data to the MaskEditTextbox cont
 
 
 
-                        <input type="text" class="input ejinputtext" data-bind="value: mvalue" />
+                        <input type="text" class="input ejinputtext" data-bind="value: maskValue" />
 
 
 
@@ -231,11 +231,11 @@ The following example explains the how to bind data to the MaskEditTextbox cont
 
     <script type="text/javascript">
 
-        var maskobject;
+        var maskObject;
 
         window.viewModel = {
 
-            mvalue: ko.observable("")
+            maskValue: ko.observable("")
 
         }
 
@@ -243,7 +243,7 @@ The following example explains the how to bind data to the MaskEditTextbox cont
 
             ko.applyBindings(viewModel);
 
-            maskobject = $("#maskedit").data("ejMaskEdit");
+            maskObject = $("#maskedit").data("ejMaskEdit");
 
         });
 

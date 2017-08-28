@@ -575,7 +575,7 @@ Now the required toolbar items are added and its appearance is configured. When 
 
 {% highlight html %}
 
-<ej:Toolbar ID="PdfSimulator" EnableSeparator="true"ClientSideOnClick="onItemclick" runat="server" Width="637px">
+<ej:Toolbar ID="PdfSimulator" EnableSeparator="true"ClientSideOnClick="onItemClick" runat="server" Width="637px">
 
 <!--Add toolbar items from above code snippet -->
 
@@ -589,7 +589,7 @@ Now the required toolbar items are added and its appearance is configured. When 
 
  <script type="text/javascript">
 
-    function onItemclick(args) {
+    function onItemClick(args) {
 
 
         //Finds Out the Item that was Clicked in Toolbar

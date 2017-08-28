@@ -65,9 +65,9 @@ The paging operation can be dynamically performed by using the DataManager. With
         </Columns>
     </ej:Grid>
 
-    pageIndex: <input id="pageindex" type="text" placeholder="pageindex" />
+    pageIndex: <input id="pageIndex" type="text" placeholder="pageIndex" />
 
-    pageSize:  <input id="pagesize" type="text" placeholder="pagesize" />
+    pageSize:  <input id="pageSize" type="text" placeholder="pageSize" />
 
     <ej:Button runat="server" Type="Button" Text="Execute" ClientSideOnClick="onClick" ID="submit"></ej:Button>
 
@@ -79,8 +79,8 @@ The paging operation can be dynamically performed by using the DataManager. With
 
     function onClick(e)
     {
-        var from = parseInt($("#pageindex").val());
-        var to = parseInt($("#pagesize").val());
+        var from = parseInt($("#pageIndex").val());
+        var to = parseInt($("#pageSize").val());
         var obj = $("#MainContent_OrdersGrid").ejGrid("instance")
         tempQuery = new ej.Query();
         tempQuery.page(from, to);

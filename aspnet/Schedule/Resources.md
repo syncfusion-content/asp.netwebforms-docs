@@ -109,14 +109,14 @@ namespace WebSampleBrowser.Schedule
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<WebSampleBrowser.Schedule.multipleresource.Rooms> owner = new List<WebSampleBrowser.Schedule.multipleresource.Rooms>();
-            List<WebSampleBrowser.Schedule.multipleresource.Rooms> rooms = new List<WebSampleBrowser.Schedule.multipleresource.Rooms>();
-            rooms.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Room1", id = "1", color = "#cb6bb2",workHourStart= 10, workHourEnd= 18, customDays= new List<string> {"monday","wednesday","friday"} });
-            rooms.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Room2", id = "2", color = "#56ca85",workHourStart= 6, workHourEnd= 10, customDays= new List<string> {"monday","saturday"} });
+            List<WebSampleBrowser.Schedule.multipleResource.Rooms> owner = new List<WebSampleBrowser.Schedule.multipleResource.Rooms>();
+            List<WebSampleBrowser.Schedule.multipleResource.Rooms> rooms = new List<WebSampleBrowser.Schedule.multipleResource.Rooms>();
+            rooms.Add(new WebSampleBrowser.Schedule.multipleResource.Rooms { text = "Room1", id = "1", color = "#cb6bb2",workHourStart= 10, workHourEnd= 18, customDays= new List<string> {"Monday","Wednesday","Friday"} });
+            rooms.Add(new WebSampleBrowser.Schedule.multipleResource.Rooms { text = "Room2", id = "2", color = "#56ca85",workHourStart= 6, workHourEnd= 10, customDays= new List<string> {"Monday","Saturday"} });
 
-            owner.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Nancy", id = "1", groupId = "1", color = "#ffaa00" });
-            owner.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Steven", id = "3", groupId = "2", color = "#f8a398" });
-            owner.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Michael", id = "5", groupId = "1", color = "#7499e1" });
+            owner.Add(new WebSampleBrowser.Schedule.multipleResource.Rooms { text = "Nancy", id = "1", groupId = "1", color = "#ffaa00" });
+            owner.Add(new WebSampleBrowser.Schedule.multipleResource.Rooms { text = "Steven", id = "3", groupId = "2", color = "#f8a398" });
+            owner.Add(new WebSampleBrowser.Schedule.multipleResource.Rooms { text = "Michael", id = "5", groupId = "1", color = "#7499e1" });
 
             Schedule1.Resources[0].ResourceSettings.DataSource = rooms;
             Schedule1.Resources[1].ResourceSettings.DataSource = owner;
@@ -159,7 +159,7 @@ The resources data can be bound to the Schedule control through the **ResourceSe
 
 namespace WebSampleBrowser.Schedule
 {
-    public partial class multipleresource : System.Web.UI.Page
+    public partial class multipleResource : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -208,7 +208,7 @@ namespace WebSampleBrowser.Schedule
 
 namespace WebSampleBrowser.Schedule
 {
-    public partial class multipleresource : System.Web.UI.Page
+    public partial class multipleResource : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -368,14 +368,14 @@ namespace WebSampleBrowser.Schedule
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<WebSampleBrowser.Schedule.multipleresource.Rooms> owner = new List<WebSampleBrowser.Schedule.multipleresource.Rooms>();
-            List<WebSampleBrowser.Schedule.multipleresource.Rooms> rooms = new List<WebSampleBrowser.Schedule.multipleresource.Rooms>();
-            rooms.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Room1", id = "1", color = "#cb6bb2" });
-            rooms.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Room2", id = "2", color = "#56ca85" });
+            List<WebSampleBrowser.Schedule.multipleResource.Rooms> owner = new List<WebSampleBrowser.Schedule.multipleResource.Rooms>();
+            List<WebSampleBrowser.Schedule.multipleResource.Rooms> rooms = new List<WebSampleBrowser.Schedule.multipleResource.Rooms>();
+            rooms.Add(new WebSampleBrowser.Schedule.multipleResource.Rooms { text = "Room1", id = "1", color = "#cb6bb2" });
+            rooms.Add(new WebSampleBrowser.Schedule.multipleResource.Rooms { text = "Room2", id = "2", color = "#56ca85" });
 
-            owner.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Nancy", id = "1", groupId = "1", color = "#ffaa00" });
-            owner.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Steven", id = "3", groupId = "2", color = "#f8a398" });
-            owner.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Michael", id = "5", groupId = "1", color = "#7499e1" });
+            owner.Add(new WebSampleBrowser.Schedule.multipleResource.Rooms { text = "Nancy", id = "1", groupId = "1", color = "#ffaa00" });
+            owner.Add(new WebSampleBrowser.Schedule.multipleResource.Rooms { text = "Steven", id = "3", groupId = "2", color = "#f8a398" });
+            owner.Add(new WebSampleBrowser.Schedule.multipleResource.Rooms { text = "Michael", id = "5", groupId = "1", color = "#7499e1" });
 
             Schedule1.Resources[0].ResourceSettings.DataSource = rooms;
             Schedule1.Resources[1].ResourceSettings.DataSource = owner;
@@ -428,14 +428,14 @@ namespace WebSampleBrowser.Schedule
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<WebSampleBrowser.Schedule.multipleresource.Rooms> rooms = new List<WebSampleBrowser.Schedule.multipleresource.Rooms>();
-            rooms.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Room1", id = "1", color = "#cb6bb2" });
-            rooms.Add(new WebSampleBrowser.Schedule.multipleresource.Rooms { text = "Room2", id = "2", color = "#56ca85" });
+            List<WebSampleBrowser.Schedule.multipleResource.Rooms> rooms = new List<WebSampleBrowser.Schedule.multipleResource.Rooms>();
+            rooms.Add(new WebSampleBrowser.Schedule.multipleResource.Rooms { text = "Room1", id = "1", color = "#cb6bb2" });
+            rooms.Add(new WebSampleBrowser.Schedule.multipleResource.Rooms { text = "Room2", id = "2", color = "#56ca85" });
 
-            List<WebSampleBrowser.Schedule.multipleresource.Rooms> owner = new List<WebSampleBrowser.Schedule.multipleresource.Rooms>();
-            owner.Add(new Owners { text = "Nancy", id = "1", groupId = "1", color = "#ffaa00", start = "10", end = "18", workweek = new List<string> {"monday","wednesday","friday"} });
-            owner.Add(new Owners { text = "Steven", id = "3", groupId = "2", color = "#f8a398", start = "6", end = "10", workweek = new List<string> { "tuesday", "thursday" } });
-            owner.Add(new Owners { text = "Michael", id = "5", groupId = "1", color = "#7499e1", start = "11", end = "15", workweek = new List<string> { "sunday", "tuesday", "thursday", "saturday" } });
+            List<WebSampleBrowser.Schedule.multipleResource.Rooms> owner = new List<WebSampleBrowser.Schedule.multipleResource.Rooms>();
+            owner.Add(new Owners { text = "Nancy", id = "1", groupId = "1", color = "#ffaa00", start = "10", end = "18", workweek = new List<string> {"Monday","Wednesday","Friday"} });
+            owner.Add(new Owners { text = "Steven", id = "3", groupId = "2", color = "#f8a398", start = "6", end = "10", workweek = new List<string> { "Tuesday", "Thursday" } });
+            owner.Add(new Owners { text = "Michael", id = "5", groupId = "1", color = "#7499e1", start = "11", end = "15", workweek = new List<string> { "Sunday", "Tuesday", "Thursday", "Saturday" } });
 
             Schedule1.Resources[0].ResourceSettings.DataSource = rooms;
             Schedule1.Resources[1].ResourceSettings.DataSource = owner;

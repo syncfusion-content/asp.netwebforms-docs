@@ -198,17 +198,17 @@ Create a sample using ASP.NET Web Services
             getData.Connection = con;
             if (con.State != ConnectionState.Open)
                 con.Open();
-            DataTable sqldata = new DataTable();
-            SqlDataAdapter sqladapter = new SqlDataAdapter(getData);
-            sqldata.TableName = "Suppliers";
-            sqladapter.Fill(sqldata);
-            return sqldata;
+            DataTable sqlData = new DataTable();
+            SqlDataAdapter sqlAdapter = new SqlDataAdapter(getData);
+            sqlData.TableName = "Suppliers";
+            sqlAdapter.Fill(sqlData);
+            return sqlData;
         }
     }
 
 {% endhighlight %}
 
-In the above code snippet, we have created webservices by using the ASP.NET web service and bound dataSource to Grid, in code behind GetDataSource method.
+In the above code snippet, we have created web services by using the ASP.NET web service and bound dataSource to Grid, in code behind GetDataSource method.
 
 {% highlight html %}
 
@@ -217,9 +217,9 @@ In the above code snippet, we have created webservices by using the ASP.NET web 
     public static object GetDataSource()
     {
         CRUD_Service.WebService1 service = new CRUD_Service.WebService1();
-        var sqldata = service.Get();   // Get data from webservices
+        var sqlData = service.Get();   // Get data from web services
         DataResult result = new DataResult();
-        List<EditableCustomer> data = (from ord in sqldata.AsEnumerable() // Perform skip take for on demand load paging
+        List<EditableCustomer> data = (from ord in sqlData.AsEnumerable() // Perform skip take for on demand load paging
                                         select new EditableCustomer
                                         {
                                             OrderID = ord.ItemArray[0].ToString(),

@@ -129,7 +129,7 @@ Refer to the following link to know details on TextBoxes controls.
 
             </table>
 
-            <div class="paybill">
+            <div class="pay-bill">
 
                 <ej:Button ID="Pbill" Type="Button" runat="server" Text="Pay Bill">
 
@@ -171,7 +171,7 @@ Refer to the following link to know details on TextBoxes controls.
 
         }
 
-        .control .paybill
+        .control .pay-bill
 
         {
 
