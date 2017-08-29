@@ -78,10 +78,10 @@ To change the appearance of Grouping Bar, apply the below customized CSS.
    background-color: aqua !important;
    color: #565656;
 }
-.e-pivotgrid .grpRow, .e-pivotgrid .values, .e-pivotgrid .columns, .e-pivotgrid .drag {
+.e-pivotgrid .e-grpRow, .e-pivotgrid .values, .e-pivotgrid .columns, .e-pivotgrid .e-drag {
    background: green;
 }
-.e-pivotgrid .pivotButton .e-btn.e-select, .e-pivotgrid .rows .pivotButton, .e-pivotgrid .values .pivotButton, .e-pivotgrid .columns .pivotButton, .e-pivotgrid .drag .pivotButton {
+.e-pivotgrid .e-pivotButton .e-btn.e-select, .e-pivotgrid .e-rows .e-pivotButton, .e-pivotgrid .values .e-pivotButton, .e-pivotgrid .columns .e-pivotButton, .e-pivotgrid .e-drag .e-pivotButton {
    background: blanchedalmond;    
 }
 .e-pivotgrid .colheader, .e-pivotgrid .rowheader {
@@ -103,7 +103,7 @@ To change the appearance of PivotTable Field List, apply the below customized CS
 
 {% highlight CSS %}
 
-.e-pivotschemadesigner, .e-pivotschemadesigner .fieldTable {
+.e-pivotschemadesigner, .e-pivotschemadesigner .e-fieldTable {
      background-color: white;
      color: black;   
 }
@@ -113,10 +113,10 @@ To change the appearance of PivotTable Field List, apply the below customized CS
 .e-pivotschemadesigner .e-chkbox-wrap .e-chk-image.e-stop, .e-chkbox-wrap .e-chk-image.e-checkmark {
      color:green
 }
-.e-pivotschemadesigner .subheadText, .e-pivotschemadesigner .centerHead, .e-pivotschemadesigner .schemaFieldTree.e-treeview .e-text{
+.e-pivotschemadesigner .subheadText, .e-pivotschemadesigner .centerHead, .e-pivotschemadesigner .e-schemaFieldTree.e-treeview .e-text{
      color: black;
 }
-.e-pivotschemadesigner .pivotButton .pvtBtn {
+.e-pivotschemadesigner .e-pivotButton .e-pvtBtn {
      background: green;
      color: white;
 }
