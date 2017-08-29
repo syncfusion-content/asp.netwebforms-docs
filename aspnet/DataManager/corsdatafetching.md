@@ -23,7 +23,7 @@ This policy defined the rule for, “how a web page can be accessed by an extern
 Cross-domain requests require common procedure between the Web page and the server. Initiate a cross-domain request in a web page and opening a connection to the mentioned domain. The browser will request the service (i.e data) from the domain's server by sending an Origin header with the value of the origin. It will only complete the connection if the server responds with an Access-Control-Allow-Origin header of either * or the exact URL of the requesting page.
 When you set, Access-Control-Allow-Origin value as “Testing1.com”.
 
-With this rule, only scripts that originate from http://“Testing1.com are allowed to load resources. Any other domain trying to use Ajax to load resources will be given the security error message. 
+With this rule, only scripts that originate from http://“Testing1.com are allowed to load resources. Any other domain trying to use AJAX to load resources will be given the security error message. 
 
 By using this rule, the domain owners can restrict which domains are allowed to use the resource.
 
@@ -41,7 +41,7 @@ Alternatively, the owners can grant wide-open access with the always ready to pa
 
 {% endhighlight %}
 
-Now, any website that wants to load a resource using Ajax can do so without getting the security error. 
+Now, any website that wants to load a resource using AJAX can do so without getting the security error. 
 
 ## Access-Control-Request-Method
 

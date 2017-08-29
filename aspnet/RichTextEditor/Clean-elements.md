@@ -9,7 +9,7 @@ keywords: RichTextEditor, cleanup, paste-cleanup
 
 ---
 
-# Clean unwanted elements and styles when copy paste from MS Word
+# Clean unwanted elements and styles when copy paste from Microsoft Word
 
 While copy pasting content from MSWord document, the content will be processed in the paste action event.[pasteCleanupSettings](https://help.syncfusion.com/api/js/ejrte#members:pasteCleanupSettings) API can be used for removing unwanted elements.
 This will convert an unformatted html element (MOS XML format) content to a proper html element.Table elements also will be converted with proper elements. 

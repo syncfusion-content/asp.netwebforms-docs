@@ -496,7 +496,7 @@ The following code example lets you drag and drop the external items from the tr
                             Description:
                         </td>
                         <td colspan="2">
-                            <textarea id="customdescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
+                            <textarea id="customDescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
                         </td>
                     </tr>
                     <tr>
@@ -535,8 +535,8 @@ The following code example lets you drag and drop the external items from the tr
             </table>
         </div>
         <div>
-            <button type="submit" onclick="cancel()" id="btncancel" style="float:right;margin-right:20px;margin-bottom:10px;">Cancel</button>
-            <button type="submit" onclick="save()" id="btnsubmit" style="float:right;margin-right:20px;margin-bottom:10px;">Save</button>
+            <button type="submit" onclick="cancel()" id="buttonCancel" style="float:right;margin-right:20px;margin-bottom:10px;">Cancel</button>
+            <button type="submit" onclick="save()" id="buttonSubmit" style="float:right;margin-right:20px;margin-bottom:10px;">Save</button>
         </div>
     </div>
 
@@ -559,8 +559,8 @@ The following code example lets you drag and drop the external items from the tr
                 close: "clearFields",
 
             });
-            $("#btncancel").ejButton({ width: '85px' });
-            $("#btnsubmit").ejButton({ width: '85px' });
+            $("#buttonCancel").ejButton({ width: '85px' });
+            $("#buttonSubmit").ejButton({ width: '85px' });
         });
         function onNodeDrag(e) {
             if (e.targetElementData.parentId == "") return false;
@@ -580,8 +580,8 @@ The following code example lets you drag and drop the external items from the tr
                 var _target = $($(e.target).context);
                 if ($(_target).hasClass("e-workcells") && (scheduleObj.model.showTimeScale) && scheduleObj.currentView() !== "month" && !(scheduleObj._isCustomView())) {
                     var time = scheduleObj.model.orientation == "vertical" ? scheduleObj.model.startHour + ($(e.event.target).parent().index() / 2) : scheduleObj.model.startHour + (($(e.event.target).index() - (((scheduleObj.model.endHour - scheduleObj.model.startHour) * 2) * index)) / 2);
-                    var timemin = time.toString().split(".");
-                    var cur_StartTime = new Date(curDate).setHours(parseInt(timemin[0]), parseInt(timemin[1]) == 5 ? 30 : 00);
+                    var timeMin = time.toString().split(".");
+                    var cur_StartTime = new Date(curDate).setHours(parseInt(timeMin[0]), parseInt(timeMin[1]) == 5 ? 30 : 00);
                     var min = (parseInt(new Date(cur_StartTime).getHours()) == 23 && parseInt(new Date(cur_StartTime).getMinutes()) == 30) ? new Date(cur_StartTime).getMinutes() + 29 : new Date(cur_StartTime).getMinutes() + 30;
                     var cur_EndTime = new Date(new Date(cur_StartTime).setMinutes(min));
                 }
@@ -602,10 +602,10 @@ The following code example lets you drag and drop the external items from the tr
                 // To find the resource details               
                 var resource = scheduleObj._getResourceValue($($(e.target).context));
 
-                // custom appointmnt window 
+                // custom appointment window 
 
                 $("#subject").val(e.droppedElementData.text);
-                $("#customdescription").val(e.droppedElementData.text);
+                $("#customDescription").val(e.droppedElementData.text);
                 $("#StartTime").ejDateTimePicker({ value: new Date(StartTime) });
                 $("#EndTime").ejDateTimePicker({ value: new Date(endTime) });
                 $("#resource").val(resource.text);
@@ -616,7 +616,7 @@ The following code example lets you drag and drop the external items from the tr
         function save() {
             var obj = {};
             obj["Subject"] = $("#subject")[0].value;
-            obj["Description"] = $("#customdescription")[0].value;
+            obj["Description"] = $("#customDescription")[0].value;
             obj["StartTime"] = new Date($("#StartTime")[0].value);
             obj["EndTime"] = new Date($("#EndTime")[0].value);
             obj["OwnerId"] = $("#ownerId")[0].value;

@@ -510,7 +510,7 @@ The second and third Tab contents are declared in the same method the first Tab 
 
                             Ingredients : onions, grilled chicken, chicken salami &amp; tomatoes.<br />
 
-                            Description: Juicy chunks of boneless chicken roasted on open fire. This takeaway favourite is freezer-friendly and quick to reheat, giving you the chance to get ahead. 
+                            Description: Juicy chunks of boneless chicken roasted on open fire. This takeaway favorite is freezer-friendly and quick to reheat, giving you the chance to get ahead. 
 
                         </div>
 

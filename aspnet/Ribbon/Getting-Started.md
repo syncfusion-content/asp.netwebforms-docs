@@ -159,7 +159,7 @@ Syncfusion ASP.NET Controls can be added to group’s content with corresponding
                                 <ej:TabContent>
                                     <ContentDefaults Height="28" Type="DropDownList" />
                                     <ContentGroupCollection>
-                                        <ej:ContentGroup Id="fontfamily" ToolTip="Font" Type="DropDownList">
+                                        <ej:ContentGroup Id="fontFamily" ToolTip="Font" Type="DropDownList">
                                             <DropdownSettings Text="Segoe UI" Width="150"></DropdownSettings>        
                                         </ej:ContentGroup>
                                     </ContentGroupCollection>
@@ -190,9 +190,9 @@ Syncfusion ASP.NET Controls can be added to group’s content with corresponding
 
     protected void Page_Load(object sender, EventArgs e)
         {
-            var fontlist = new List<string> { "Segoe UI", "Arial"};
+            var fontList = new List<string> { "Segoe UI", "Arial"};
             var fontsize = new List<string>() { "1pt", "2pt"};
-            this.fontfamily.DropdownSettings.DataSource = fontlist;
+            this.fontFamily.DropdownSettings.DataSource = fontList;
         }
 
 

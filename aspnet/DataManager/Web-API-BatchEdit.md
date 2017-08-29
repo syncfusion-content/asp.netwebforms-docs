@@ -282,7 +282,7 @@ namespace Sample.Controllers
 
 {% endhighlight %}
 
-In the view, configure the Datamanager to use the Post/Put/Delete methods created in the previous steps.
+In the view, configure the DataManager to use the Post/Put/Delete methods created in the previous steps.
 
 {% highlight C# %}
 

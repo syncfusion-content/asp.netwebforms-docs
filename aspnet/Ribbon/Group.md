@@ -178,7 +178,7 @@ Set `EnableGroupExpander` as true to show Group Expander for each TabGroup in Ri
 
 {% highlight html %}
 	
-	<ej:Ribbon ID="defaultRibbon" runat="server" Width="500px" GroupExpand="groupexpand">
+	<ej:Ribbon ID="defaultRibbon" runat="server" Width="500px" GroupExpand="groupExpand">
 		<ApplicationTab MenuItemID="ribbonmenu" Type="Menu">
 			<MenuSettings OpenOnClick="false"></MenuSettings>
 		</ApplicationTab>
@@ -201,7 +201,7 @@ Set `EnableGroupExpander` as true to show Group Expander for each TabGroup in Ri
 	</ul>
 	<button id="btn">Home button</button>	
 	<script type="text/javascript">
-		function groupexpand(arg) {
+		function groupExpand(arg) {
 			alert("Group expander click triggered")
 		}
 	</script>
