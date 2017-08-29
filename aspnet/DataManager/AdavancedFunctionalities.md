@@ -63,9 +63,9 @@ You can use the following code example for implementing load on demand using Dat
             </Columns>
         </ej:Grid>
 
-    pageIndex: <input id="pageIndex" type="text" placeholder="pageindex" />
+    pageIndex: <input id="pageIndex" type="text" placeholder="page index" />
 
-    pageSize:  <input id="pageSize" type="text" placeholder="pageSize" />
+    pageSize:  <input id="pageSize" type="text" placeholder="page size" />
 
     <ej:Button runat="server" Type="Button" Text="Loadondemand" ClientSideOnClick="onClick" ID="submit"></ej:Button>
 
