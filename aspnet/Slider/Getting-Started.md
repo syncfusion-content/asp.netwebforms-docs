@@ -63,7 +63,7 @@ Add the following code example to the corresponding ASPX page to render Slide
 
         </ej:DropDownList>
 
-        <span class="columnleft"><span>Price</span> </span><span>
+        <span class="column-left"><span>Price</span> </span><span>
 
             <span>Rs </span><span class="value">
 
@@ -127,7 +127,7 @@ Add the following styles for Sliders.
 
 }
 
-.ctrllabel, .loan
+.ctrl-label, .loan
 
 {
 
@@ -217,13 +217,13 @@ Add the following code for Slider to the corresponding ASPX page.
 
     <div class="inner">
 
-        <div id="loanheading">
+        <div id="loanHeading">
 
             Details of Loan
 
         </div>
 
-        <span class="Columnleft"><span>Loan Amount</span> </span><spanclass ="columnright">
+        <span class="Columnleft"><span>Loan Amount</span> </span><spanclass ="column-right">
 
             <span>
 
@@ -237,7 +237,7 @@ Add the following code for Slider to the corresponding ASPX page.
 
             </ej:Slider>
 
-            <span class="columnleft"><span>Interest Rate</span> </span><spanclass ="columnright">
+            <span class="column-left"><span>Interest Rate</span> </span><spanclass ="column-right">
 
                 <span class="value"></span><span>% pa</span> </span>
 
@@ -247,7 +247,7 @@ Add the following code for Slider to the corresponding ASPX page.
 
                 </ej:Slider>
 
-                <span class="columnleft"><span>Tenure</span> </span><spanclass ="columnright">
+                <span class="column-left"><span>Tenure</span> </span><spanclass ="column-right">
 
                     <span class="value"></span><span>Years</span> </span>
 
@@ -361,7 +361,7 @@ Include the following styles for Slider.
 
 
 
-.columnleft
+.column-left
 
 {
 
@@ -377,7 +377,7 @@ Include the following styles for Slider.
 
 
 
-.columnright
+.column-right
 
 {
 
@@ -393,7 +393,7 @@ Include the following styles for Slider.
 
 
 
-#loanheading
+#loanHeading
 
 {
 
@@ -437,13 +437,13 @@ function calculate() {
 
 	var y = interest / 1200;
 
-	var tenureamt = tenure * 12;
+	var tenureAmount = tenure * 12;
 
 	//actual processing
 
-	var top = y * (Math.pow((1 + y), tenureamt));
+	var top = y * (Math.pow((1 + y), tenureAmount));
 
-	var bottom = (Math.pow((1 + y), tenureamt)) - 1;
+	var bottom = (Math.pow((1 + y), tenureAmount)) - 1;
 
 	var ans = top / bottom;
 

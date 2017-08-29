@@ -290,10 +290,10 @@ Include following code block in “downloadFile.ashx.cs” file.
                     for (int i = 0; i < uploadedFiles.Count; i++)
                     {
                         string fileName = uploadedFiles[i].FileName;
-                        int indx = fileName.LastIndexOf("\\");
-                        if (indx > -1)
+                        int index = fileName.LastIndexOf("\\");
+                        if (index > -1)
                         {
-                            fileName = fileName.Substring(indx + 1);
+                            fileName = fileName.Substring(index + 1);
                         }
                         uploadedFiles[i].SaveAs(targetFolder + "\\" + fileName);
                     }

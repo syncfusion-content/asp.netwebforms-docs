@@ -87,8 +87,8 @@ To add a new item to the editor `ContextMenu`, you need to use the ‘[insertMen
 <script>
     $("#<%=RTE1.ClientID%>").ejRTE({ contextMenuClick: function(args){//handle menu-item click action.
     } });
-    var rteeObj =  $("#<%=RTE1.ClientID%>").data("ejRTE");// Inserts new item to the ContextMenu 
-    rteeObj.insertMenuOption({newItem:"Show Table Details",                                                 
+    var rteObj =  $("#<%=RTE1.ClientID%>").data("ejRTE");// Inserts new item to the ContextMenu 
+    rteObj.insertMenuOption({newItem:"Show Table Details",                                                 
     targetItem: "Table Properties",
     insertType:("insertAfter"),
     menuType:{text:false,image:false,hyperlink:false,table:true},                             
@@ -113,8 +113,8 @@ To add a new item to the editor `ContextMenu`, you need to use the ‘[insertMen
     </RTEContent>
 </ej:RTE>
 <script>
-    var rteeObj = $("#<%=RTE1.ClientID%>").data("ejRTE"); 
-    rteeObj.removeMenuOption("Table-Properties");
+    var rteObj = $("#<%=RTE1.ClientID%>").data("ejRTE"); 
+    rteObj.removeMenuOption("Table-Properties");
 </script> 
 
 {% endhighlight %}

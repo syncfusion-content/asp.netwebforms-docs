@@ -74,13 +74,13 @@ The following example explains how to bind data to the NumericTextbox widget t
 
                     <td>
 
-                        <input id="numeric" type="text" ej-numerictextbox e-value="nvalue" />
+                        <input id="numeric" type="text" ej-numerictextbox e-value="numericValue" />
 
                     </td>
 
                     <td>
 
-                        <input type="text" class="input ejinputtext" ng-model="nvalue" />
+                        <input type="text" class="input ejinputtext" ng-model="numericValue" />
 
                     </td>
 
@@ -98,7 +98,7 @@ The following example explains how to bind data to the NumericTextbox widget t
 
            .controller('TextboxCtrl', function ($scope) {
 
-               $scope.nvalue = 600;
+               $scope.numericValue = 600;
 
            });
 
@@ -183,13 +183,13 @@ The following example explains how to bind data to the NumericTextbox control t
 
                     <td>
 
-                        <input id="numeric" type="text" data-bind="ejNumericTextbox: { value: nvalue }" />
+                        <input id="numeric" type="text" data-bind="ejNumericTextbox: { value: numericValue }" />
 
                     </td>
 
                     <td>
 
-                        <input type="text" class="input ejinputtext" data-bind="value: nvalue" />
+                        <input type="text" class="input ejinputtext" data-bind="value: numericValue" />
 
                     </td>
 
@@ -205,11 +205,11 @@ The following example explains how to bind data to the NumericTextbox control t
 
     <script type="text/javascript">
 
-        var numobject;
+        var numericObject;
 
         window.viewModel = {
 
-            nvalue: ko.observable(100)
+            numericValue: ko.observable(100)
 
         }
 
@@ -217,7 +217,7 @@ The following example explains how to bind data to the NumericTextbox control t
 
             ko.applyBindings(viewModel);
 
-            numobject = $("#numeric").data("ejNumericTextbox");
+            numericObject = $("#numeric").data("ejNumericTextbox");
 
 
 
@@ -227,7 +227,7 @@ The following example explains how to bind data to the NumericTextbox control t
 
                 if (!isNaN(val)) {
 
-                    numobject.option(this.id, val);
+                    numericObject.option(this.id, val);
 
                 }
 

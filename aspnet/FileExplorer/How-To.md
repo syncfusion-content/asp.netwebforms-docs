@@ -547,7 +547,7 @@ You can manage the files that are available in database using our FileExplorer c
     
     //"Product" is a table name, which is defined in SQL database
     
-    SQLFileExplorerOperations sqlobj = new SQLFileExplorerOperations("FileExplorerConnection", "Product");
+    SQLFileExplorerOperations sqlObj = new SQLFileExplorerOperations("FileExplorerConnection", "Product");
     
     {% endhighlight %}
     
@@ -699,8 +699,8 @@ To get image from server, you have to create a handler file “getImage.ashx” 
             {
                 HttpRequest request = context.Request;
                 string path = request.QueryString["Path"];
-                FileExplorerOperations opeartion = new FileExplorerOperations();
-                opeartion.GetImage(path);
+                FileExplorerOperations operation = new FileExplorerOperations();
+                operation.GetImage(path);
             }
     
             public bool IsReusable
@@ -769,8 +769,8 @@ Add the following code example in code behind page to specify the custom column 
                             type = "File",
                             dateModified = file.LastWriteTime.ToString(),
                             hasChild = false,
-                            //assign the value in extention property
-                            extention = file.Extension
+                            //assign the value in extension property
+                            extension = file.Extension
                         });
     
                     var directories = directory.GetDirectories().Select(subDirectory => new CustomFileExplorerDirectoryContent
@@ -781,7 +781,7 @@ Add the following code example in code behind page to specify the custom column 
                         type = "Directory",
                         dateModified = subDirectory.LastWriteTime.ToString(),
                         hasChild = subDirectory.GetDirectories().Length > 0 ? true : false,
-                        extention = ""
+                        extension = ""
                     });
     
                     object fileDetails = files.Concat(directories);
@@ -804,7 +804,7 @@ Add the following code example in code behind page to specify the custom column 
             public bool hasChild { get; set; }
             public bool isFile { get; set; }
             //add custom property
-            public string extention { get; set; }
+            public string extension { get; set; }
         }
     
         //customize the FileExplorer response
@@ -834,7 +834,7 @@ In the view page, add the custom column in grid using “[GridSettings](http://h
                 <Columns>
                     <ej:Column Field="name" HeaderText="Name" Width="30%" ></ej:Column>
                     <ej:Column Field="type" HeaderText="Type" ></ej:Column>
-                    <ej:Column Field="extention" HeaderText="Extention" ></ej:Column>
+                    <ej:Column Field="extension" HeaderText="Extention" ></ej:Column>
                     <ej:Column Field="size" HeaderText="Size" ></ej:Column>
                     <ej:Column Field="dateModified" HeaderText="Date Modified" ></ej:Column>
                 </Columns>

@@ -80,7 +80,7 @@ The following example depicts the way to bind data to the PercentageTextbox con
 
 
 
-                        <input id="percent" type="text" data-bind="ejPercentageTextbox: { value: pvalue }" />
+                        <input id="percent" type="text" data-bind="ejPercentageTextbox: { value: percentValue }" />
 
 
 
@@ -92,7 +92,7 @@ The following example depicts the way to bind data to the PercentageTextbox con
 
 
 
-                        <input type="text" class="input ejinputtext" data-bind="value: pvalue" />
+                        <input type="text" class="input ejinputtext" data-bind="value: percentValue" />
 
 
 
@@ -112,11 +112,11 @@ The following example depicts the way to bind data to the PercentageTextbox con
 
     <script type="text/javascript">
 
-        var percentobject;
+        var percentObject;
 
         window.viewModel = {
 
-            pvalue: ko.observable(50)
+            percentValue: ko.observable(50)
 
         }
 
@@ -124,7 +124,7 @@ The following example depicts the way to bind data to the PercentageTextbox con
 
             ko.applyBindings(viewModel);
 
-            percentobject = $("#percent").data("ejPercentageTextbox");
+            percentObject = $("#percent").data("ejPercentageTextbox");
 
 
 
@@ -134,7 +134,7 @@ The following example depicts the way to bind data to the PercentageTextbox con
 
                 if (!isNaN(val)) {
 
-                    percentobject.option(this.id, val);
+                    percentObject.option(this.id, val);
 
                 }
 
@@ -235,7 +235,7 @@ The following example depicts the way to bind data to the PercentageTextbox con
 
 
 
-                        <input id="percent" type="text" ej-percentagetextbox e-value="pvalue" />
+                        <input id="percent" type="text" ej-percentagetextbox e-value="percentValue" />
 
 
 
@@ -247,7 +247,7 @@ The following example depicts the way to bind data to the PercentageTextbox con
 
 
 
-                        <input type="text" class="input ejinputtext" ng-model="pvalue" />
+                        <input type="text" class="input ejinputtext" ng-model="percentValue" />
 
 
 
@@ -269,7 +269,7 @@ The following example depicts the way to bind data to the PercentageTextbox con
 
            .controller('TextboxCtrl', function ($scope) {
 
-               $scope.pvalue = 400;
+               $scope.percentValue = 400;
 
            });
 

@@ -99,7 +99,7 @@ Then the model is bound with the element using the **bindTo.**
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-4 col-sm-4">
-                            <button type="button" id="formsubmit" class="btn btn-default">Change</button>
+                            <button type="button" id="formSubmit" class="btn btn-default">Change</button>
                         </div>
                     </div>
                 </form>
@@ -128,7 +128,7 @@ Then the model is bound with the element using the **bindTo.**
             });
         }, 1000);
           
-        $("#formsubmit").click(function (e) {
+        $("#formSubmit").click(function (e) {
             var empId = parseInt($("#empId").val(), 10);
             var fName = $("#first").val();
             var lName = $("#last").val();

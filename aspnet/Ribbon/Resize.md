@@ -255,7 +255,7 @@ For each group shirked for resizing, Custom Class will be added based on group t
                             <ej:TabContent>
                                 <ContentDefaults Height="28" Type="DropDownList" IsBig="false" />
                                 <ContentGroupCollection>
-                                    <ej:ContentGroup Id="fontfamily" ToolTip="Font" Type="DropDownList">
+                                    <ej:ContentGroup Id="fontFamily" ToolTip="Font" Type="DropDownList">
                                         <DropdownSettings Text="Segoe UI" Width="150" Select="executeAction"></DropdownSettings>
                                     </ej:ContentGroup>
                                     <ej:ContentGroup Id="fontsize" ToolTip="FontSize" Type="DropDownList">
@@ -346,9 +346,9 @@ For each group shirked for resizing, Custom Class will be added based on group t
 
      protected void Page_Load(object sender, EventArgs e)
         {
-            var fontlist = new List<string> { "Segoe UI", "Arial", "Times New Roman", "Tahoma", "Helvetica" };
+            var fontList = new List<string> { "Segoe UI", "Arial", "Times New Roman", "Tahoma", "Helvetica" };
             var fontsize = new List<string>() { "1pt", "2pt", "3pt", "4pt", "5pt" };
-            this.fontfamily.DropdownSettings.DataSource = fontlist;
+            this.fontFamily.DropdownSettings.DataSource = fontList;
             this.fontsize.DropdownSettings.DataSource = fontsize;
         }
 

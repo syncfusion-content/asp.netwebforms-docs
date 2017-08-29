@@ -26,12 +26,12 @@ In the code behind page, create a data list which contains the details about tre
                     Name = "UK",
                     HasChild = true,
                     Expanded = true,
-                    Cls = "UK-style"
+                    ClassName = "UK-style"
                 });
                 templateData.Add(new Template {
                     Id = 2,
                     PId = 1,
-                    ImgId = 1,
+                    ImageId = 1,
                     Name = "Steven John",
                     City = "London",
                     Phone = "555-5665-2323"
@@ -41,12 +41,12 @@ In the code behind page, create a data list which contains the details about tre
                     Name = "USA",
                     HasChild = true,
                     Expanded = true,
-                    Cls = "USA-style"
+                    ClassName = "USA-style"
                 });
                 templateData.Add(new Template {
                     Id = 5,
                     PId = 3,
-                    ImgId = 2,
+                    ImageId = 2,
                     Name = "Andrew",
                     City = "Capital way",
                     Phone = "934-8374-2455"
@@ -54,7 +54,7 @@ In the code behind page, create a data list which contains the details about tre
                 templateData.Add(new Template {
                     Id = 4,
                     PId = 3,
-                    ImgId = 3,
+                    ImageId = 3,
                     Name = "Angelica",
                     City = "Dayton",
                     Phone = "988-4243-0806"
@@ -66,13 +66,13 @@ In the code behind page, create a data list which contains the details about tre
         {
             public int Id { get; set; }
             public int PId { get; set; }
-            public int ImgId { get; set; }
+            public int ImageId { get; set; }
             public string Name { get; set; }
             public bool HasChild { get; set; }
             public bool Expanded { get; set; }
             public string City { get; set; }
             public string Phone { get; set; }
-            public string Cls { get; set; }
+            public string ClassName { get; set; }
         }
         
     {% endhighlight %}
@@ -83,12 +83,12 @@ In the view page, specify template format and add TreeView element
     
         <script id="treeTemplate" type="text/x-jsrender">
             {{"{{"}}if HasChild{{}}}}
-                <div class={{"{{"}}>Cls}}>{{"{{"}}>Name{{}}}}</div>
+                <div class={{"{{"}}>ClassName}}>{{"{{"}}>Name{{}}}}</div>
             {{"{{"}}else{{}}}}
                 <div class="cont-list">
                     <img class="con-img"
-                        src="http://asp.syncfusion.com/demos/web/Content/images/treeview/template-image-{{"{{"}}>ImgId{{}}}}.png" />
-                    <div class="cont-del"></div>
+                        src="http://asp.syncfusion.com/demos/web/Content/images/treeview/template-image-{{"{{"}}>ImageId{{}}}}.png" />
+                    <div class="cont-delete"></div>
                     <div class="cont-details">
                         <b>{{"{{"}}>Name{{}}}}</b><br />
                         <span>{{"{{"}}>City{{}}}}</span>
@@ -104,7 +104,7 @@ In the view page, specify template format and add TreeView element
         <script type="text/javascript">
             $(function () {
                 var treeObj = $("#<%=treeview.ClientID%>").data("ejTreeView");
-                $("#<%=treeview.ClientID%>").find(".cont-del").bind("click", function (e) {
+                $("#<%=treeview.ClientID%>").find(".cont-delete").bind("click", function (e) {
                     treeObj.removeNode($(e.target).parents("li").first());
                 });
             });
@@ -158,7 +158,7 @@ In the view page, specify template format and add TreeView element
                 color: #FFFFFF !important;
             }
     
-            .cont-del {
+            .cont-delete {
                 background-image: url("http://asp.syncfusion.com/demos/web/Content/images/treeview/remove-icon.png");
                 background-position: -6px -10px;
                 background-repeat: no-repeat;
@@ -185,9 +185,9 @@ You can able to perform custom action in TreeView template node. You can able to
     {% highlight html %}
     
     <script type="text/javascript">
-        function oncreate(args) {
+        function onCreate(args) {
             var treeObj = $("#<%= treeView.ClientID %>").data("ejTreeView");
-            $("#<%= treeView.ClientID %>").find(".cont-del").bind("click", function (e) {
+            $("#<%= treeView.ClientID %>").find(".cont-delete").bind("click", function (e) {
                 e.preventDefault();
                 treeObj.removeNode($(e.target).parents("li").first());
             });

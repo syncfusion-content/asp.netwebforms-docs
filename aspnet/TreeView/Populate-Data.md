@@ -405,7 +405,7 @@ In the view page, add an element to configure TreeView.
             runat="server"
             DataTextField="name"
             DataIdField="id"
-            DataParentIdField="pid">
+            DataParentIdField="parent">
         </ej:TreeView>
         
     {% endhighlight %}
@@ -544,12 +544,12 @@ Define an object data source in the web page and configure the data source eleme
     
             public TreeObjectDataSource() { }
     
-            public TreeObjectDataSource(int _id, int _parentid, string _text, string _hasChild, string _expanded)
+            public TreeObjectDataSource(int _id, int _parentId, string _text, string _hasChild, string _expanded)
             {
     
                 this.ID = _id;
     
-                this.ParentID = _parentid;
+                this.ParentID = _parentId;
     
                 this.Text = _text;
     
@@ -838,16 +838,16 @@ In the code behind page, create a data list which contains the details about tre
 {% highlight c# %}
     
 [Serializable]
-public class loadondemand
+public class loadOnDemand
 {
-    public loadondemand(int _id, int _parentid = 0, string _text = "", string _hasChild = "")
+    public loadOnDemand(int _id, int _parentId = 0, string _text = "", string _hasChild = "")
     {
         this.ID = _id;
-        this.ParentID = _parentid;
+        this.ParentID = _parentId;
         this.Text = _text;
         this.HasChild = _hasChild;
     }
-    public loadondemand() { }
+    public loadOnDemand() { }
 
     [Browsable(true)]
     public int ID { get; set; }
@@ -861,30 +861,30 @@ public class loadondemand
     [Browsable(true)]
     public string HasChild { get; set; }
 
-    public List<loadondemand> GetTreeItems()
+    public List<loadOnDemand> GetTreeItems()
     {
-        List<loadondemand> data = new List<loadondemand>();
-        data.Add(new loadondemand(1, 0, "Local Disk(C:)", "true" ));
-        data.Add(new loadondemand(2, 0, "Local Disk(D:)", "true" ));
-        data.Add(new loadondemand(3, 0, "Local Disk(E:)", "true" ));
-        data.Add(new loadondemand(4, 1, "Folder 1", "true" ));
-        data.Add(new loadondemand(5, 1, "Folder 2" ));
-        data.Add(new loadondemand(6, 1, "Folder 3" ));
-        data.Add(new loadondemand(7, 2, "Folder 4" ));
-        data.Add(new loadondemand(8, 2, "Folder 5", "true" ));
-        data.Add(new loadondemand(9, 2, "Folder 6" ));
-        data.Add(new loadondemand(10, 3, "Folder 7" ));
-        data.Add(new loadondemand(11, 3, "Folder 8" ));
-        data.Add(new loadondemand(12, 3, "Folder 9", "true" ));
-        data.Add(new loadondemand(13, 4, "File 1" ));
-        data.Add(new loadondemand(14, 4, "File 2" ));
-        data.Add(new loadondemand(15, 4, "File 3" ));
-        data.Add(new loadondemand(16, 8, "File 4" ));
-        data.Add(new loadondemand(17, 8, "File 5" ));
-        data.Add(new loadondemand(18, 8, "File 6" ));
-        data.Add(new loadondemand(19, 12, "File 7" ));
-        data.Add(new loadondemand(20, 12, "File 8" ));
-        data.Add(new loadondemand(21, 12, "File 9" ));
+        List<loadOnDemand> data = new List<loadOnDemand>();
+        data.Add(new loadOnDemand(1, 0, "Local Disk(C:)", "true" ));
+        data.Add(new loadOnDemand(2, 0, "Local Disk(D:)", "true" ));
+        data.Add(new loadOnDemand(3, 0, "Local Disk(E:)", "true" ));
+        data.Add(new loadOnDemand(4, 1, "Folder 1", "true" ));
+        data.Add(new loadOnDemand(5, 1, "Folder 2" ));
+        data.Add(new loadOnDemand(6, 1, "Folder 3" ));
+        data.Add(new loadOnDemand(7, 2, "Folder 4" ));
+        data.Add(new loadOnDemand(8, 2, "Folder 5", "true" ));
+        data.Add(new loadOnDemand(9, 2, "Folder 6" ));
+        data.Add(new loadOnDemand(10, 3, "Folder 7" ));
+        data.Add(new loadOnDemand(11, 3, "Folder 8" ));
+        data.Add(new loadOnDemand(12, 3, "Folder 9", "true" ));
+        data.Add(new loadOnDemand(13, 4, "File 1" ));
+        data.Add(new loadOnDemand(14, 4, "File 2" ));
+        data.Add(new loadOnDemand(15, 4, "File 3" ));
+        data.Add(new loadOnDemand(16, 8, "File 4" ));
+        data.Add(new loadOnDemand(17, 8, "File 5" ));
+        data.Add(new loadOnDemand(18, 8, "File 6" ));
+        data.Add(new loadOnDemand(19, 12, "File 7" ));
+        data.Add(new loadOnDemand(20, 12, "File 8" ));
+        data.Add(new loadOnDemand(21, 12, "File 9" ));
         return data;
     }
 }
@@ -898,7 +898,7 @@ In the view page, add a TreeView element and map the properties defined in to t
 <ej:TreeView ID="Treeview" runat="server" DataSourceID="ObjectDataSource1" DataTextField="Text" DataIdField="ID"
     DataParentIdField="ParentID" DataHasChildField="HasChild" LoadOnDemand="true">
 </ej:TreeView>
-<asp:ObjectDataSource ID="ObjectDataSource1" runat="server" TypeName="loadondemand"
+<asp:ObjectDataSource ID="ObjectDataSource1" runat="server" TypeName="loadOnDemand"
     SelectMethod="GetTreeItems"></asp:ObjectDataSource>
         
 {% endhighlight %}
@@ -915,7 +915,7 @@ While expanding the parent node
 After expanding the parent node
 {:.caption}
 
-For more details about load on demand for local data source, refer the sample [here](http://asp.syncfusion.com/demos/web/treeview/loadondemand.aspx).
+For more details about load on demand for local data source, refer the sample [here](http://asp.syncfusion.com/demos/web/treeview/loadOnDemand.aspx).
 
 
 For remote data source, TreeView loads the first level nodes initially. While expand the node from TreeView, the data manager passes the query to the controller. Based on this query, you can filter the data from table and return to TreeView.
@@ -948,9 +948,9 @@ namespace WebApplication
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
         public static object Data(Syncfusion.JavaScript.DataManager value)
         {
-            var load = new loadondemand();
-            List<loadondemand> treeData = load.GetTreeItems();
-            IEnumerable<loadondemand> results;
+            var load = new loadOnDemand();
+            List<loadOnDemand> treeData = load.GetTreeItems();
+            IEnumerable<loadOnDemand> results;
             if (value.Where == null)
             {
                 //return the first level nodes
@@ -967,16 +967,16 @@ namespace WebApplication
 }
 
 [Serializable]
-public class loadondemand
+public class loadOnDemand
 {
-    public loadondemand(int _id, int _parentid = 0, string _text = "", string _hasChild = "")
+    public loadOnDemand(int _id, int _parentId = 0, string _text = "", string _hasChild = "")
     {
         this.ID = _id;
-        this.ParentID = _parentid;
+        this.ParentID = _parentId;
         this.Text = _text;
         this.HasChild = _hasChild;
     }
-    public loadondemand() { }
+    public loadOnDemand() { }
 
     [Browsable(true)]
     public int ID { get; set; }
@@ -990,30 +990,30 @@ public class loadondemand
     [Browsable(true)]
     public string HasChild { get; set; }
 
-    public List<loadondemand> GetTreeItems()
+    public List<loadOnDemand> GetTreeItems()
     {
-        List<loadondemand> data = new List<loadondemand>();
-        data.Add(new loadondemand(1, 0, "Local Disk(C:)", "true"));
-        data.Add(new loadondemand(2, 0, "Local Disk(D:)", "true"));
-        data.Add(new loadondemand(3, 0, "Local Disk(E:)", "true"));
-        data.Add(new loadondemand(4, 1, "Folder 1", "true"));
-        data.Add(new loadondemand(5, 1, "Folder 2"));
-        data.Add(new loadondemand(6, 1, "Folder 3"));
-        data.Add(new loadondemand(7, 2, "Folder 4"));
-        data.Add(new loadondemand(8, 2, "Folder 5", "true"));
-        data.Add(new loadondemand(9, 2, "Folder 6"));
-        data.Add(new loadondemand(10, 3, "Folder 7"));
-        data.Add(new loadondemand(11, 3, "Folder 8"));
-        data.Add(new loadondemand(12, 3, "Folder 9", "true"));
-        data.Add(new loadondemand(13, 4, "File 1"));
-        data.Add(new loadondemand(14, 4, "File 2"));
-        data.Add(new loadondemand(15, 4, "File 3"));
-        data.Add(new loadondemand(16, 8, "File 4"));
-        data.Add(new loadondemand(17, 8, "File 5"));
-        data.Add(new loadondemand(18, 8, "File 6"));
-        data.Add(new loadondemand(19, 12, "File 7"));
-        data.Add(new loadondemand(20, 12, "File 8"));
-        data.Add(new loadondemand(21, 12, "File 9"));
+        List<loadOnDemand> data = new List<loadOnDemand>();
+        data.Add(new loadOnDemand(1, 0, "Local Disk(C:)", "true"));
+        data.Add(new loadOnDemand(2, 0, "Local Disk(D:)", "true"));
+        data.Add(new loadOnDemand(3, 0, "Local Disk(E:)", "true"));
+        data.Add(new loadOnDemand(4, 1, "Folder 1", "true"));
+        data.Add(new loadOnDemand(5, 1, "Folder 2"));
+        data.Add(new loadOnDemand(6, 1, "Folder 3"));
+        data.Add(new loadOnDemand(7, 2, "Folder 4"));
+        data.Add(new loadOnDemand(8, 2, "Folder 5", "true"));
+        data.Add(new loadOnDemand(9, 2, "Folder 6"));
+        data.Add(new loadOnDemand(10, 3, "Folder 7"));
+        data.Add(new loadOnDemand(11, 3, "Folder 8"));
+        data.Add(new loadOnDemand(12, 3, "Folder 9", "true"));
+        data.Add(new loadOnDemand(13, 4, "File 1"));
+        data.Add(new loadOnDemand(14, 4, "File 2"));
+        data.Add(new loadOnDemand(15, 4, "File 3"));
+        data.Add(new loadOnDemand(16, 8, "File 4"));
+        data.Add(new loadOnDemand(17, 8, "File 5"));
+        data.Add(new loadOnDemand(18, 8, "File 6"));
+        data.Add(new loadOnDemand(19, 12, "File 7"));
+        data.Add(new loadOnDemand(20, 12, "File 8"));
+        data.Add(new loadOnDemand(21, 12, "File 9"));
         return data;
     }
 }

@@ -143,13 +143,13 @@ protected void Page_Load(object sender, EventArgs e)
 
         {
 
-            List<int> enableditem = new List<int>() { 1, 2 };
+            List<int> enabledItem = new List<int>() { 1, 2 };
 
-            List<int> disableditem = new List<int>() { 0 };
+            List<int> disabledItem = new List<int>() { 0 };
 
-            this.BasicAccordion.EnabledItems = enableditem;
+            this.BasicAccordion.EnabledItems = enabledItem;
 
-            this.BasicAccordion.DisableItems = disableditem;
+            this.BasicAccordion.DisableItems = disabledItem;
 
         }
 

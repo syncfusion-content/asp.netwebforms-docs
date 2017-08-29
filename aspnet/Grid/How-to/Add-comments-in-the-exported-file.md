@@ -132,7 +132,7 @@ We can add comments to a PDF documents using the annotation support provided in 
     { 
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.FlatGrid.DataSource = OrderRepository.GetAllrecords().ToList();
+            this.FlatGrid.DataSource = OrderRepository.GetAllRecords().ToList();
             this.FlatGrid.DataBind();
         }        
 

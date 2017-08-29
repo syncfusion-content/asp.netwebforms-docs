@@ -17,7 +17,7 @@ Add the following code example in your ASPX page.
 
 
 
-<ej:Menu ID="menujson" DataIdField="id" DataParentIdField="parentId" DataTextField="text" DataSpriteCssField="sprite" runat="server"></ej:Menu>
+<ej:Menu ID="menuJson" DataIdField="id" DataParentIdField="parentId" DataTextField="text" DataSpriteCssField="sprite" runat="server"></ej:Menu>
 
 
 
@@ -55,7 +55,7 @@ public partial class Menu : System.Web.UI.Page
 
         menu.Add(new icons { id = 12, parentId = "1", text = "Forward", sprite = "mail sprite-drafts" });
 
-        menu.Add(new icons { id = 13, parentId = "1", text = "Mark as favourite", sprite = "mail sprite-folder" });
+        menu.Add(new icons { id = 13, parentId = "1", text = "Mark as favorite", sprite = "mail sprite-folder" });
 
         menu.Add(new icons { id = 14, parentId = "1", text = "Mark as important", sprite = "mail sprite-folder" });
 
@@ -75,7 +75,7 @@ public partial class Menu : System.Web.UI.Page
 
         menu.Add(new icons { id = 22, parentId = "4", text = "Delete", sprite = "mail sprite-deleted" });
 
-        menujson.DataSource = menu;
+        menuJson.DataSource = menu;
 
     }
 
@@ -107,7 +107,7 @@ Add the following code example in your style section.
 
 
 
-    #<%=menujson.ClientID%> {
+    #<%=menuJson.ClientID%> {
 
         margin-left: 50px;
 
