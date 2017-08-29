@@ -52,57 +52,57 @@ Assign the data in BulletLocalDataBind variable to the DataSource property of Bu
 
 List<BulletLocalDataBind> data = new List<BulletLocalDataBind>();
 
-            data.Add(new BulletLocalDataBind { category = "1988", value = "95", comparitiveMeasureValue = "85" });
+            data.Add(new BulletLocalDataBind { category = "1988", value = "95", comparativeMeasureValue = "85" });
 
-            data.Add(new BulletLocalDataBind { category = "1989", value = "99", comparitiveMeasureValue = "87" });
+            data.Add(new BulletLocalDataBind { category = "1989", value = "99", comparativeMeasureValue = "87" });
 
-            data.Add(new BulletLocalDataBind { category = "1990", value = "105", comparitiveMeasureValue = "95" });
+            data.Add(new BulletLocalDataBind { category = "1990", value = "105", comparativeMeasureValue = "95" });
 
-            data.Add(new BulletLocalDataBind { category = "1991", value = "75", comparitiveMeasureValue = "85" });
+            data.Add(new BulletLocalDataBind { category = "1991", value = "75", comparativeMeasureValue = "85" });
 
-            data.Add(new BulletLocalDataBind { category = "1992", value = "85", comparitiveMeasureValue = "95" });
+            data.Add(new BulletLocalDataBind { category = "1992", value = "85", comparativeMeasureValue = "95" });
 
-            data.Add(new BulletLocalDataBind { category = "1993", value = "90", comparitiveMeasureValue = "86" });
+            data.Add(new BulletLocalDataBind { category = "1993", value = "90", comparativeMeasureValue = "86" });
 
-            data.Add(new BulletLocalDataBind { category = "1994", value = "110", comparitiveMeasureValue = "76" });
+            data.Add(new BulletLocalDataBind { category = "1994", value = "110", comparativeMeasureValue = "76" });
 
-            data.Add(new BulletLocalDataBind { category = "1995", value = "101", comparitiveMeasureValue = "66" });
+            data.Add(new BulletLocalDataBind { category = "1995", value = "101", comparativeMeasureValue = "66" });
 
-            data.Add(new BulletLocalDataBind { category = "1996", value = "82", comparitiveMeasureValue = "76" });
+            data.Add(new BulletLocalDataBind { category = "1996", value = "82", comparativeMeasureValue = "76" });
 
-            data.Add(new BulletLocalDataBind { category = "1997", value = "87", comparitiveMeasureValue = "96" });
+            data.Add(new BulletLocalDataBind { category = "1997", value = "87", comparativeMeasureValue = "96" });
 
-            data.Add(new BulletLocalDataBind { category = "1998", value = "96", comparitiveMeasureValue = "96" });
+            data.Add(new BulletLocalDataBind { category = "1998", value = "96", comparativeMeasureValue = "96" });
 
-            data.Add(new BulletLocalDataBind { category = "1999", value = "100", comparitiveMeasureValue = "106" });
+            data.Add(new BulletLocalDataBind { category = "1999", value = "100", comparativeMeasureValue = "106" });
 
-            data.Add(new BulletLocalDataBind { category = "2000", value = "112", comparitiveMeasureValue = "83" });
+            data.Add(new BulletLocalDataBind { category = "2000", value = "112", comparativeMeasureValue = "83" });
 
-            data.Add(new BulletLocalDataBind { category = "2001", value = "97", comparitiveMeasureValue = "73" });
+            data.Add(new BulletLocalDataBind { category = "2001", value = "97", comparativeMeasureValue = "73" });
 
-            data.Add(new BulletLocalDataBind { category = "2002", value = "90", comparitiveMeasureValue = "85" });
+            data.Add(new BulletLocalDataBind { category = "2002", value = "90", comparativeMeasureValue = "85" });
 
-            data.Add(new BulletLocalDataBind { category = "2003", value = "80", comparitiveMeasureValue = "65" });
+            data.Add(new BulletLocalDataBind { category = "2003", value = "80", comparativeMeasureValue = "65" });
 
-            data.Add(new BulletLocalDataBind { category = "2004", value = "75", comparitiveMeasureValue = "82" });
+            data.Add(new BulletLocalDataBind { category = "2004", value = "75", comparativeMeasureValue = "82" });
 
-            data.Add(new BulletLocalDataBind { category = "2005", value = "85", comparitiveMeasureValue = "54" });
+            data.Add(new BulletLocalDataBind { category = "2005", value = "85", comparativeMeasureValue = "54" });
 
-            data.Add(new BulletLocalDataBind { category = "2006", value = "95", comparitiveMeasureValue = "64" });
+            data.Add(new BulletLocalDataBind { category = "2006", value = "95", comparativeMeasureValue = "64" });
 
-            data.Add(new BulletLocalDataBind { category = "2007", value = "97", comparitiveMeasureValue = "87" });
+            data.Add(new BulletLocalDataBind { category = "2007", value = "97", comparativeMeasureValue = "87" });
 
-            data.Add(new BulletLocalDataBind { category = "2008", value = "103", comparitiveMeasureValue = "72" });
+            data.Add(new BulletLocalDataBind { category = "2008", value = "103", comparativeMeasureValue = "72" });
 
-            data.Add(new BulletLocalDataBind { category = "2009", value = "108", comparitiveMeasureValue = "94" });
+            data.Add(new BulletLocalDataBind { category = "2009", value = "108", comparativeMeasureValue = "94" });
 
-            data.Add(new BulletLocalDataBind { category = "2010", value = "93", comparitiveMeasureValue = "100" });
+            data.Add(new BulletLocalDataBind { category = "2010", value = "93", comparativeMeasureValue = "100" });
 
-            data.Add(new BulletLocalDataBind { category = "2011", value = "75", comparitiveMeasureValue = "60" });
+            data.Add(new BulletLocalDataBind { category = "2011", value = "75", comparativeMeasureValue = "60" });
 
-            data.Add(new BulletLocalDataBind { category = "2012", value = "115", comparitiveMeasureValue = "79" });
+            data.Add(new BulletLocalDataBind { category = "2012", value = "115", comparativeMeasureValue = "79" });
 
-            data.Add(new BulletLocalDataBind { category = "2013", value = "109", comparitiveMeasureValue = "90" });
+            data.Add(new BulletLocalDataBind { category = "2013", value = "109", comparativeMeasureValue = "90" });
 
             this.BulletGraph1.DataSource = data;
 

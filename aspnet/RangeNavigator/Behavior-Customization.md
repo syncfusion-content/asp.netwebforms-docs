@@ -39,7 +39,7 @@ This event is handled when the RangeNavigator gets loaded. A parameter sender is
 {% tabs %}
 
 {% highlight html %}
-<ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideLoaded="loadingdata">
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideLoaded="loadingData">
 
 <%--Code --%>
 
@@ -51,7 +51,7 @@ This event is handled when the RangeNavigator gets loaded. A parameter sender is
 {% highlight js %}
 <script type="text/javascript">
 
-               function loadingdata(sender) {
+               function loadingData(sender) {
 
                      sender.model. isResponsive = false;
 
@@ -70,7 +70,7 @@ This event gets fired whenever the selected range changes in RangeNavigator. A p
 
 {% highlight html %}
 
-<ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="onchartload">
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="onChartLoad">
 
 <%--Code --%>
 
@@ -83,7 +83,7 @@ This event gets fired whenever the selected range changes in RangeNavigator. A p
 {% highlight js %}
 <script type="text/javascript">
 
-    function onchartload(sender) {
+    function onChartLoad(sender) {
 
          console.log(sender.selectedRangeSettings.start);
 
@@ -104,7 +104,7 @@ You can easily update the data for chart by assigning the ZoomFactor and ZoomPos
 
 {% highlight html %}
 
-<ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="loadingdata">
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="loadingData">
 
 <%--Code --%>
 
@@ -118,15 +118,15 @@ You can easily update the data for chart by assigning the ZoomFactor and ZoomPos
 
   // setting zoom factor and position for chart axis in rangeChanged event.
 
-     function loadingdata(sender) {
+     function loadingData(sender) {
 
-         var chartobj = $("#RangeNavigator1").data("ejChart");
+         var chartObj = $("#RangeNavigator1").data("ejChart");
 
-         if (chartobj != null) {
+         if (chartObj != null) {
 
-             chartobj.model.axes[0].zoomPosition = sender. zoomPosition;                                                               
+             chartObj.model.axes[0].zoomPosition = sender. zoomPosition;                                                               
 
-             chartobj.model.axes[0].zoomFactor = sender. zoomFactor;
+             chartObj.model.axes[0].zoomFactor = sender. zoomFactor;
 
             }
 

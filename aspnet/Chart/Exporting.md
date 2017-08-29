@@ -70,7 +70,7 @@ Server-side operations can be done at the code behind page.
     <script>
         //Export chart to excel
         function download() {
-            $("#chartcontainer").ejChart("export");
+            $("#container").ejChart("export");
         }
 
     </script>
@@ -225,7 +225,7 @@ Export multiple chart to excel at server-side
             foreach (string chartProperty in ChartModel)
             {
                 ChartProperties obj = ConvertChartObject(ChartModel);
-                if(intial)
+                if(initial)
                 {
                     var book= exp.Export(obj, null, "Export.xlsx", ExcelVersion.Excel2010, true, null, null);
                     initial = false;

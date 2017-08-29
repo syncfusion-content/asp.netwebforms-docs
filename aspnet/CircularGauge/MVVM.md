@@ -51,11 +51,11 @@ angular.module('syncApp', ['ejangular'])
 
 .controller('CircularGauge', function ($scope) {
 
-$scope.nvalue = 50;
+$scope.value = 50;
 
-$scope.nminimum = 0;
+$scope.minimum = 0;
 
-$scope.nmaximum = 120;
+$scope.maximum = 120;
 
 
 
@@ -404,7 +404,7 @@ Circular Gauge support the two way binding for the property value, minimum and m
 
 <div ng-controller="CircularGauge">
 
-<ej-CircularGauge id="CircularGauge1" e-backgroundColor="transparent" e-value="nvalue" e-width="500" e-readOnly="false" e-load= "loadGaugeTheme" e-enableAnimation="false">
+<ej-CircularGauge id="CircularGauge1" e-backgroundColor="transparent" e-value="value" e-width="500" e-readOnly="false" e-load= "loadGaugeTheme" e-enableAnimation="false">
 
 <e-scales>
 
@@ -414,11 +414,11 @@ e-radius="130" e-showScaleBar="true" e-size="1"
 
 <!—binding maximum value using AngularJS -->
 
-e-maximum="nmaximum"
+e-maximum="maximum"
 
 <!—binding minimum value using AngularJS -->
 
-e-minimum="nminimum"
+e-minimum="minimum"
 
 e-majorIntervalValue="20"
 
@@ -432,7 +432,7 @@ e-length="95" e-width="7"
 
 <!—binding pointer value using angular JS -->
 
-e-value="nvalue"
+e-value="value"
 
 e-pointerCap-radius="12">
 
@@ -494,7 +494,7 @@ e-border-color="#f5b43f">
 
 
 
-<input type="text" id="txtMax" e-value="nvalue" ej-numerictextbox ng-model="nvalue"  e-decimalplaces="2" e-showspinbutton="false" Style="width:110px"/>
+<input type="text" id="txtMax" e-value="value" ej-numerictextbox ng-model="value"  e-decimalplaces="2" e-showspinbutton="false" Style="width:110px"/>
 
 </asp:Content>
 
@@ -516,11 +516,11 @@ angular.module('syncApp', ['ejangular'])
 
 .controller('CircularGauge', function ($scope) {
 
-$scope.nvalue = 50;
+$scope.value = 50;
 
-$scope.nminimum = 0;
+$scope.minimum = 0;
 
-$scope.nmaximum = 120;
+$scope.maximum = 120;
 
 
 
@@ -636,11 +636,11 @@ Execute the above code to render the following output.
 
         window.viewModel = {
 
-        samplevalue: ko.observable(50),
+        sampleValue: ko.observable(50),
 
-        sampleminimum: ko.observable(0),
+        sampleMinimum: ko.observable(0),
 
-        samplemaximum: ko.observable(120),
+        sampleMaximum: ko.observable(120),
 
         };
 
