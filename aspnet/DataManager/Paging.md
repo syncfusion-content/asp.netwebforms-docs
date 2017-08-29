@@ -65,9 +65,9 @@ The paging operation can be dynamically performed by using the DataManager. With
         </Columns>
     </ej:Grid>
 
-    pageIndex: <input id="pageIndex" type="text" placeholder="pageIndex" />
+    pageIndex: <input id="pageIndex" type="text" placeholder="page index" />
 
-    pageSize:  <input id="pageSize" type="text" placeholder="pageSize" />
+    pageSize:  <input id="pageSize" type="text" placeholder="page size" />
 
     <ej:Button runat="server" Type="Button" Text="Execute" ClientSideOnClick="onClick" ID="submit"></ej:Button>
 
