@@ -263,7 +263,7 @@ public partial class CellMapBinding : System.Web.UI.Page
         CellMapping.Value = new PropertyMapping() { PropertyName = "Value" };
         Collection columnMapping = new Collection();
         columnMapping.Add(new HeaderMapping() { PropertyName = "Veggie-spread", DisplayName = "Veggie-spread" });
-        columnMapping.Add(new HeaderMapping() { PropertyName = "Tofu", DisplayName = "Tofuaa" });
+        columnMapping.Add(new HeaderMapping() { PropertyName = "Tofu", DisplayName = "Tofu" });
         columnMapping.Add(new HeaderMapping() { PropertyName = "Alice Mutton", DisplayName = "Alice Mutton" });
         columnMapping.Add(new HeaderMapping() { PropertyName = "Donut", DisplayName = "Donut" });
         columnMapping.Add(new HeaderMapping() { PropertyName = "Burger", DisplayName = "Burger" });
