@@ -48,7 +48,7 @@ angular.module('syncApp', ['ejangular'])
 
 .controller('LinearGauge', function ($scope) {
 
-$scope.nvalue = 0;
+$scope.value = 0;
 
 });
 
@@ -352,13 +352,13 @@ Linear Gauge support the two way binding for the property value, minimum and max
 
 <div id="linearframe">
 
-<ej-LinearGauge id="linearCore" e-value="nvalue" e-readOnly="false" e-load="loadGaugeTheme" e-enableAnimation="false" e-labelColor="#8c8c8c">
+<ej-LinearGauge id="linearCore" e-value="value" e-readOnly="false" e-load="loadGaugeTheme" e-enableAnimation="false" e-labelColor="#8c8c8c">
 
 </ej-LinearGauge>
 
 </div>
 
-<input type="text" id="txtMax" e-value="nvalue" ej-numerictextbox ng-model="nvalue"  e-decimalplaces="2" e-showspinbutton="false" Style="width:110px"/>
+<input type="text" id="txtMax" e-value="value" ej-numerictextbox ng-model="value"  e-decimalplaces="2" e-showspinbutton="false" Style="width:110px"/>
 
 </asp:Content>
 
@@ -374,7 +374,7 @@ angular.module('syncApp', ['ejangular'])
 
 .controller('LinearGauge', function ($scope) {
 
-$scope.nvalue = 50;
+$scope.value = 50;
 
 });
 
@@ -471,11 +471,11 @@ border: { color: '#E94649' }, startWidth: 4, endWidth: 4
 
 window.viewModel = {
 
-samplevalue: ko.observable(50),
+sampleValue: ko.observable(50),
 
-sampleminimum: ko.observable(0),
+sampleMinimum: ko.observable(0),
 
-samplemaximum: ko.observable(100),
+sampleMaximum: ko.observable(100),
 
 };
 

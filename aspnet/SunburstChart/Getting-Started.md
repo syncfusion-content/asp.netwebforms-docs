@@ -124,7 +124,7 @@ Now, let’s see how to plot data source to the SunburstChart. First, let us gen
 {% endhighlight %}
 
 ### Initialize Sunburst Chart with data
-Now, bind the DEfaultData to `DataSource` property of the Sunburst Chart. The`Levels`property determines the number of hierarchical levels. Each hierarchy level is formed based on the property specified in `GroupMemberPath` property, and each arc segment size is calculated using `ValueMemberPath`.
+Now, bind the DefaultData to `DataSource` property of the Sunburst Chart. The`Levels`property determines the number of hierarchical levels. Each hierarchy level is formed based on the property specified in `GroupMemberPath` property, and each arc segment size is calculated using `ValueMemberPath`.
 
 2. Add SunburstChart() action in SunburstChartController and add the following code.
 

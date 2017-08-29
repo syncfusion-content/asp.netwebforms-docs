@@ -171,7 +171,7 @@ Execute the above code to render the following output.
 
         <ej:circulargauge runat="server" id="circularGaugeTooltip" backgroundcolor="transparent" enableanimation="false"
 
-        OuterCutomLabelPosition="Right">
+        OuterCustomLabelPosition="Right">
 
 
 

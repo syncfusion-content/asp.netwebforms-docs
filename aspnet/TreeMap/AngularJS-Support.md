@@ -86,18 +86,18 @@ public partial class AngularTreemap : Page
 
     //Initializes controller
 
-    <div ng-controller="TreeMapcontroller">
+    <div ng-controller="TreeMapController">
 
         //Initializes TreeMap
 
-        <div id="treemap" ej-treemap e-datasource="ndatasource" e-uniColorMapping-color="ncolor" e-weightvaluepath="nweightValuePath"
-             e-colorvaluepath="ncolorValuePath" e-leafitemsettings-labelpath="nlabelPath" style="width: 700px;height:370px;">
+        <div id="treemap" ej-treemap e-datasource="nDataSource" e-uniColorMapping-color="nColor" e-weightvaluepath="nWeightValuePath"
+             e-colorvaluepath="nColorValuePath" e-leafitemsettings-labelpath="nLabelPath" style="width: 700px;height:370px;">
 
 
 
               <e-levels>
 
-                  <e-level e-grouppath="ngroupPath" e-groupgap="ngroupGap"    e-showheader="nshowHeader">          
+                  <e-level e-grouppath="nGroupPath" e-groupgap="nGroupGap"    e-showheader="nShowHeader">          
 
                   </e-level>
 
@@ -111,7 +111,7 @@ public partial class AngularTreemap : Page
 
         <div>
 
-            Show Header:  <input type="checkbox" ng-model="nshowHeader" style="outline: none;"/>   
+            Show Header:  <input type="checkbox" ng-model="nShowHeader" style="outline: none;"/>   
 
        </div> 
 
@@ -129,27 +129,27 @@ public partial class AngularTreemap : Page
 
 
 
-           .controller('TreeMapcontroller', function ($scope) {
+           .controller('TreeMapController', function ($scope) {
 
-                $scope.ndatasource = population_data;
+                $scope.nDataSource = population_data;
 
-                $scope.ncolorValuePath = "Growth";
+                $scope.nColorValuePath = "Growth";
 
-                $scope.nweightValuePath = "Growth";
+                $scope.nWeightValuePath = "Growth";
 
-                $scope.nlabelPath = "Country";
-
-
-
-                $scope.ngroupPath = "Continent";
-
-                $scope.ngroupGap = 5;
-
-                $scope.nshowHeader = true;
+                $scope.nLabelPath = "Country";
 
 
 
-                $scope.ncolor = "#2380BB";
+                $scope.nGroupPath = "Continent";
+
+                $scope.nGroupGap = 5;
+
+                $scope.nShowHeader = true;
+
+
+
+                $scope.nColor = "#2380BB";
 
             });
 

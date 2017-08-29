@@ -270,7 +270,7 @@ You can get the legend item details such as *Index*, *Bounds*, *Shape* and *Seri
 
 {% highlight html %}
 
-<ej:Chart ID="Chart1" runat="server" OnClientLegendItemClick="onlegendclicked"> 
+<ej:Chart ID="Chart1" runat="server" OnClientLegendItemClick="onLegendClicked"> 
     <%--trim the legend text--%>
     <Legend TextOverflow="Trim" TextWidth="34">
     </Legend>
@@ -280,7 +280,7 @@ You can get the legend item details such as *Index*, *Bounds*, *Shape* and *Seri
      
 {% highlight js %}   
      
-     function onlegendclicked(sender) {
+     function onLegendClicked(sender) {
         //Get legend item details on legend item click.
         var legendItem = sender.data;
       }

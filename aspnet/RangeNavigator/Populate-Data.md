@@ -18,7 +18,7 @@ The Series property provides access to a collection of all series that are defin
 {% tabs %}
 
 {% highlight html %}
-<ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideLoad="loadingdata">
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideLoad="loadingData">
 
          <Series>
 
@@ -34,7 +34,7 @@ The Series property provides access to a collection of all series that are defin
 {% highlight js %}
 <script type="text/javascript">
 
-function loadingdata(sender) {
+function loadingData(sender) {
 
                  data = GetData();
 

@@ -73,7 +73,7 @@ You can change the size of the legend items by using the **ItemStyle-Width** and
 
 ## Legend Size
 
-By default, legend takes 20% of the height horizontally when it was placed on the top or bottom position and 20% of the width vertically while placing on the left or right position of the chart. You can change this default legend size by using the e-legend-sizeproperty of the legend.
+By default, legend takes 20% of the height horizontally when it was placed on the top or bottom position and 20% of the width vertically while placing on the left or right position of the chart. You can change this default legend size by using the e-legend-size property of the legend.
 
 {% highlight html %}
 
@@ -87,13 +87,13 @@ By default, legend takes 20% of the height horizontally when it was placed on th
 
  ![](Legend_images/Legend_img5.png)
 
-## Legend Row and Colums
+## Legend Row and Columns
 
 You can arrange the legend items horizontally and vertically by using the **RowCount** and **ColumnCount**properties of the legend.
 •	When only the rowCount is specified, the legend items are arranged according to the rowCount and number of columns may vary based on the number of legend items.
 •	When only the columnCount is specified, the legend items are arranged according to the columnCount and number of rows may vary based on the number of legend items.
-•	When both theproperties are specified, then the one which has higher value is given preference. For example, when the rowCount is 4 and columnCount is 3, legend items are arranged in 4 rows.
-•	When both theproperties are specified and have the same value, the preference is given to the columnCount when it is positioned at the top/bottom position. The preference is given to the rowCount when it is positioned at the left/right position.
+•	When both the properties are specified, then the one which has higher value is given preference. For example, when the rowCount is 4 and columnCount is 3, legend items are arranged in 4 rows.
+•	When both the properties are specified and have the same value, the preference is given to the columnCount when it is positioned at the top/bottom position. The preference is given to the rowCount when it is positioned at the left/right position.
  
 {% highlight html %}
 
@@ -112,7 +112,7 @@ You can select a specific category while clicking on corresponding legend item t
 
 It has three types of action
 *	ToggleSegmentSelection
-*	ToggleSegmentVisiblity
+*	ToggleSegmentVisibility
 *	None
 
 ## ToggleSegmentSelection
