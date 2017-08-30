@@ -39,7 +39,7 @@ Header Tooltip
 
 ### Tooltip Template
 
-It is possible to display a custom tooltip accross all the TreeGrid cells using the property `CellTooltipTemplate` with the property `ShowGridCellTooltip` enabled. We need to set the template of the custom tooltip to this property.
+It is possible to display a custom tooltip across all the TreeGrid cells using the property `CellTooltipTemplate` with the property `ShowGridCellTooltip` enabled. We need to set the template of the custom tooltip to this property.
 
 Please find code example describes the cell tooltip template support.
 
