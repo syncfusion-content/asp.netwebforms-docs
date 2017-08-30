@@ -554,7 +554,7 @@ public class ResourceList
 
         resourceDetails.Add(new ResourceListData() { ResourceID = 3, ResourceName = "Developer" });
 
-        resourceDetails.Add(new ResourceListData() { ResourceID = 4, ResourceName = "Testing Engi-neer" });
+        resourceDetails.Add(new ResourceListData() { ResourceID = 4, ResourceName = "Testing Engineer" });
 
 
 
