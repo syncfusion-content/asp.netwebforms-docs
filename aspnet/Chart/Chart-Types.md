@@ -110,7 +110,7 @@ You can change the color of the line segments by using the **Fill** property of 
 {% highlight html %}
 
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
             //   ...
             series: [{
                //  Change the color of a line 
@@ -2027,7 +2027,7 @@ To customize the errorBar cap visibility, length, width and fill color, you can 
 
 ## Box and Whisker Chart 
 
-To render a Box and Whisker Chart, set the series type as **boxandwhisker** .Box and Whisker chart requires2 fields (x and y) to plot a segment. The feild y requires n number of data or it  should contain minimum of five values to plot a segment.
+To render a Box and Whisker Chart, set the series type as **BoxAndWhisker** .Box and Whisker chart requires2 fields (x and y) to plot a segment. The field y requires n number of data or it  should contain minimum of five values to plot a segment.
 
 {% highlight html %}
 
@@ -2057,13 +2057,13 @@ To render a Box and Whisker Chart, set the series type as **boxandwhisker** .Box
     [Serializable]
     public class BoxPlotData
     {
-        public BoxPlotData(string xval,Double[] yvalue)
+        public BoxPlotData(string xVal,Double[] yValue)
         {
-            this.Xvalue = xval;
-            this.YValue1 = yvalue;
+            this.XValue = xVal;
+            this.YValue1 = yValue;
             
         }
-        public string Xvalue
+        public string XValue
         {
             get;
             set;
@@ -2085,7 +2085,7 @@ To render a Box and Whisker Chart, set the series type as **boxandwhisker** .Box
 <ej:Chart ID="Chart2" runat="server"> 
     <Series>
         <%--Set chart type and map dataSource to series--%>
-        <ej:Series Type="BoxAndWhisker" XName="Xvalue" YName="YValue1">
+        <ej:Series Type="BoxAndWhisker" XName="XValue" YName="YValue1">
         </ej:Series>
     </Series>
 </ej:Chart>
@@ -2145,7 +2145,7 @@ Outlier symbol, width and height can be customized using outlierSettings through
 [Click](http://asp.syncfusion.com/demos/web/chart/boxplot.aspx) here to view the Box and Whisker Chart online demo sample.
 
 ## Pie Of Pie Chart
-To render the pie of pie chart, set the series `type` as **pieofpie**. Pie of pie chart is used for displaying the data of a pie slice as another pie chart. The values in the second pie is displayed based on the **splitMode**  property.
+To render the pie of pie chart, set the series `type` as **PieOfPie**. Pie of pie chart is used for displaying the data of a pie slice as another pie chart. The values in the second pie is displayed based on the **splitMode**  property.
 
 {% highlight html %}
 

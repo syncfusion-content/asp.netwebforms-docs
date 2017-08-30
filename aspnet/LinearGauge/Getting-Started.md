@@ -503,59 +503,59 @@ if (args.customLabelIndex == 2) {
 
 var temp = args.scaleElement.barPointers[0].value;
 
-var fahValue = (temp * (9 / 5)) + 32;
+var faValue = (temp * (9 / 5)) + 32;
 
 if (temp == -10) {
 
-args.style.textValue = "Very Cold Weather" + "(" + fahValue.toFixed(1) + "° F)";
+args.style.textValue = "Very Cold Weather" + "(" + faValue.toFixed(1) + "° F)";
 
 }
 
 else if ((temp > -10 && temp < 0) || (temp > 0 && temp < 15)) {
 
-args.style.textValue = "Cool Weather" + " (" + fahValue.toFixed(1) + "° F)";
+args.style.textValue = "Cool Weather" + " (" + faValue.toFixed(1) + "° F)";
 
 }
 
 else if (temp == 0) {
 
-args.style.textValue = "Freezing point of Water" + " (" + fahValue.toFixed(1) + "° F)";
+args.style.textValue = "Freezing point of Water" + " (" + faValue.toFixed(1) + "° F)";
 
 }
 
 else if (temp >= 15 && temp < 30) {
 
-args.style.textValue = "Room Temperature" + " (" + fahValue.toFixed(1) + "° F)";
+args.style.textValue = "Room Temperature" + " (" + faValue.toFixed(1) + "° F)";
 
 }
 
 else if (temp == 30) {
 
-args.style.textValue = "Beach Weather" + " (" + fahValue.toFixed(1) + "° F)";
+args.style.textValue = "Beach Weather" + " (" + faValue.toFixed(1) + "° F)";
 
 }
 
 else if (temp == 37) {
 
-args.style.textValue = "Body Temperature" + " (" + fahValue.toFixed(1) + "° F)";
+args.style.textValue = "Body Temperature" + " (" + faValue.toFixed(1) + "° F)";
 
 }
 
 else if (temp == 40) {
 
-args.style.textValue = "Hot Bath Temperature" + " (" + fahValue.toFixed(1) + "° F)";
+args.style.textValue = "Hot Bath Temperature" + " (" + faValue.toFixed(1) + "° F)";
 
 }
 
 else if (temp > 40 && temp < 100) {
 
-args.style.textValue = "Very Hot Temperature" + " (" + fahValue.toFixed(1) + "° F)";
+args.style.textValue = "Very Hot Temperature" + " (" + faValue.toFixed(1) + "° F)";
 
 }
 
 else if (temp == 100) {
 
-args.style.textValue = "Boiling point of Water" + " (" + fahValue.toFixed(1) + "° F)";
+args.style.textValue = "Boiling point of Water" + " (" + faValue.toFixed(1) + "° F)";
 
 }
 

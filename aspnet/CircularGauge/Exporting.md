@@ -78,15 +78,15 @@ documentation: ug
 
         $("#sampleProperties").ejPropertiesPanel();
 
-        $("#Button1").ejButton({ width: "100px", click: "buttonclickevent" });
+        $("#Button1").ejButton({ width: "100px", click: "buttonClickEvent" });
 
         });
 
-        function buttonclickevent() {
+        function buttonClickEvent() {
 
         var FileName = $("#fileName").val();
 
-        var FileFormat = $("#ddlExportImage").ejDropDownList("option", "value");
+        var FileFormat = $("#ddExportImage").ejDropDownList("option", "value");
 
         $("#CoreExportGauge").ejCircularGauge("exportImage", FileName, FileFormat);
 

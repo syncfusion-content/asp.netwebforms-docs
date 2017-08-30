@@ -220,18 +220,18 @@ OnClientLegendItemRender event triggers before rendering the legend items. This 
 
 ### Legend Item Click
 
-You can get the legend item details such as *Rangeindex, bounds and shape* by subscribing the **OnClientLegendItemClick** event of the circular gauge. When the legend item is clicked, it triggers the event and returns the legend information 
+You can get the legend item details such as *RangeIndex, bounds and shape* by subscribing the **OnClientLegendItemClick** event of the circular gauge. When the legend item is clicked, it triggers the event and returns the legend information 
 
 {% highlight html %}
 
-<ej:CircularGauge ID="ScaleCircularGauge" runat="server" OnClientLegendItemClick="onlegendclicked"> 
+<ej:CircularGauge ID="ScaleCircularGauge" runat="server" OnClientLegendItemClick="onLegendClicked"> 
 </ej:CircularGauge>
 
 {% endhighlight %} 
      
 {% highlight js %}   
      
-     function onlegendclicked(sender) {
+     function onLegendClicked(sender) {
         //Get legend item details on legend item click.
         var legendItem = sender.data;
       }

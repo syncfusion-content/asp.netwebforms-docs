@@ -87,17 +87,17 @@ $(function () {
 
 $("#sampleProperties").ejPropertiesPanel();
 
-$("#Button1").ejButton({ width: "100px", click: "buttonclickevent" });
+$("#Button1").ejButton({ width: "100px", click: "buttonClickEvent" });
 
 });
 
 
 
-function buttonclickevent() {
+function buttonClickEvent() {
 
 var FileName = $("#fileName").val();
 
-var FileFormat = $("#ddlImageFormat").ejDropDownList("option", "value");
+var FileFormat = $("#ddImageFormat").ejDropDownList("option", "value");
 
 $("#CoreExportGauge").ejLinearGauge("exportImage", FileName, FileFormat);
 

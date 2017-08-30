@@ -43,7 +43,7 @@ N> You can get the chart **instance** using instance method.
         
         var point = chart.model.series[0].points;
         var xValue = point.length > 0 ? point[point.length - 1].x + 1 : 1;
-        point[point.length] = { x:  xValue, y: getRandomNum( 1000 ) }
+        point[point.length] = { x:  xValue, y: getRandomNumber( 1000 ) }
                 
         //Update Chart dynamically using redraw option
         //chart.redraw() can also be used here instead of redraw option
