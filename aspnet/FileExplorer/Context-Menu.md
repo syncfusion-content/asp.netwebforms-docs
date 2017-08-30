@@ -192,26 +192,26 @@ Add the following code example to the corresponding code behind page.
 [System.Web.Services.WebMethod]
 public static object FileActionContextMenu(string ActionType, string Path, string ExtensionsAllow, string LocationFrom, string LocationTo, string Name, string[] Names, string NewName, string Action, bool CaseSensitive, string SearchString, IEnumerable<CommonFileDetails> CommonFiles)
 {
-    FileExplorerOperations opeartion = new FileExplorerOperations();
+    FileExplorerOperations operation = new FileExplorerOperations();
     switch (ActionType)
     {
         case "Read":
-            return (opeartion.Read(Path, ExtensionsAllow));
+            return (operation.Read(Path, ExtensionsAllow));
         case "CreateFolder":
-            return (opeartion.CreateFolder(Path, Name));
+            return (operation.CreateFolder(Path, Name));
         case "Paste":
-            opeartion.Paste(LocationFrom, LocationTo, Names, Action, CommonFiles);
+            operation.Paste(LocationFrom, LocationTo, Names, Action, CommonFiles);
             break;
         case "Remove":
-            opeartion.Remove(Names, Path);
+            operation.Remove(Names, Path);
             break;
         case "Rename":
-            opeartion.Rename(Path, Name, NewName, CommonFiles);
+            operation.Rename(Path, Name, NewName, CommonFiles);
             break;
         case "GetDetails":
-            return (opeartion.GetDetails(Path, Names));
+            return (operation.GetDetails(Path, Names));
         case "Search":
-            return (opeartion.Search(Path, ExtensionsAllow, SearchString, CaseSensitive));
+            return (operation.Search(Path, ExtensionsAllow, SearchString, CaseSensitive));
     }
     return "";
 }
@@ -292,7 +292,7 @@ function menuBeforeOpen(args) {
     args.dataSource.pop();
 }
 function menuOpen(args) {
-    //you can also idendify which context menu is opened by 
+    //you can also identify which context menu is opened by 
     if (args.contextMenu == "cwd") {
         //do your custom action here.
     }

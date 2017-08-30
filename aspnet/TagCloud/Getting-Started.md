@@ -136,7 +136,7 @@ Add the above mentioned DataSource binding codes.
 
 <ej:TagCloud ID="TagEvents" Title="Tech Sites" runat="server" DataTextField="text"
 
-        DataUrlField="url" DataFrequencyField="frequency" OnClick="Tagevents_Click">
+        DataUrlField="url" DataFrequencyField="frequency" OnClick="TagEvents_Click">
 
     </ej:TagCloud>
 
@@ -150,7 +150,7 @@ Add the above mentioned DataSource binding codes.
 
 {% highlight c# %}
 
-protected void Tagevents_Click(object sender, Syncfusion.JavaScript.Web.TagCloudEventArgs e)
+protected void TagEvents_Click(object sender, Syncfusion.JavaScript.Web.TagCloudEventArgs e)
 {
 
 	this.EventLog.InnerHtml += "\n" + "TagCloud Item " + e.Value + "has been clicked< \r\n";

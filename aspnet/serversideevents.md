@@ -20,13 +20,13 @@ DatePicker control allows you to configure the DatePicker functionality in code-
 
 {% highlight html %}
 
-    <ej:DatePicker ID="datepick" EnablePersistence="true" runat="server"></ej:DatePicker>
+    <ej:DatePicker ID="datePicker" EnablePersistence="true" runat="server"></ej:DatePicker>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-    protected void datepick_Select(object sender, Syncfusion.JavaScript.Web.DatePickerSelectEventArgs e) 
+    protected void datePicker_Select(object sender, Syncfusion.JavaScript.Web.DatePickerSelectEventArgs e) 
     { 
         // write your custom code here 
     }

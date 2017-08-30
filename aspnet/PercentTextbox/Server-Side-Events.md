@@ -48,7 +48,7 @@ protected void focus(object Sender, EventArgs e)
 
 {
 
-    Response.Write("Serverside event has been trigerred");
+    Response.Write("Server side event has been triggered");
 
 }
 

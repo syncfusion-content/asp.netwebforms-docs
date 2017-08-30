@@ -152,8 +152,8 @@ Refer the appointment fields specified with validation rules from the following 
     <script type="text/javascript">
         $(function () {
             $.validator.addMethod("customRule", function (value, element, options) {
-                var ptn = /^[a-zA-Z0-9- ]*$/;
-                return ptn.test(value);
+                var expression = /^[a-zA-Z0-9- ]*$/;
+                return expression.test(value);
             }, "Special character(s) not allowed in Location field");
         });
     </script>
@@ -211,22 +211,22 @@ public class ScheduleAppointmentsObjDatum
     {
 
         List<ScheduleAppointmentsObjData> list = new List<ScheduleAppointmentsObjData>();
-        list.Add(new ScheduleAppointmentsObjData(100, "Bering Sea Gold", "chn", "05/02/2014 09:00:00 AM", "05/02/2014 10:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=2;COUNT=10",null,null));
+        list.Add(new ScheduleAppointmentsObjData(100, "Bering Sea Gold", "chennai", "05/02/2014 09:00:00 AM", "05/02/2014 10:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=2;COUNT=10",null,null));
         list.Add(new ScheduleAppointmentsObjData(101, "Bering Sea Gold", "mum", "05/02/2014 04:00:00 AM", "05/02/2014 05:00:00 AM", "", "1", "", false, "", "", "", "", false, "", "", "", null, null));
-        list.Add(new ScheduleAppointmentsObjData(102, "Bering Sea Gold", "trcy", "05/02/2014 04:00:00 PM", "05/02/2014 05:30:00 PM", "", "1", "", false, "", "", "", "", false, "", "", "", null, null));
-        list.Add(new ScheduleAppointmentsObjData(103, "What Happened Next?", "chn", "05/04/2014 03:00:00 AM", "05/04/2014 04:30:00 AM", "", "1", "", false, "", "", "", "", false, "", "", "", null, null));
-        list.Add(new ScheduleAppointmentsObjData(104, "Bering Sea Gold", "trcy", "05/04/2014 05:00:00 AM", "05/04/2014 05:40:00 AM", "", "1", "", false, "", "", "", "", false, "", "", "", null,null));
-        list.Add(new ScheduleAppointmentsObjData(105, "Daily Planet", "chn", "05/03/2014 01:00:00 AM", "05/03/2014 02:00:00 AM", "", "1", "", false, "", "", "", "", false, "", "", "", null, null));
-        list.Add(new ScheduleAppointmentsObjData(106, "Alaska: The Last Frontier", "chn", "05/03/2014 08:00:00 AM", "05/03/2014 09:00:00 AM", "", "1", "", false, "", "", "", "", false, "", "", "", null, null));
-        list.Add(new ScheduleAppointmentsObjData(107, "How It's Made", "chn", "05/01/2014 06:00:00 AM", "05/01/2014 06:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=WEEKLY;BYDAY=MO,TU;INTERVAL=1;COUNT=15", null, null));
-        list.Add(new ScheduleAppointmentsObjData(108, "Deadest Catch", "chn", "05/03/2014 04:00:00 PM", "05/03/2014 05:00:00 PM", "", "1", "", false, "", "", "", "", false, "", "", "", null, null));
-        list.Add(new ScheduleAppointmentsObjData(109, "MayDay", "chn", "04/30/2014 06:30:00 AM", "04/30/2014 07:30:00 AM", "", "1", "", false, "", "", "", "", false, "", "", "", null, null));
-        list.Add(new ScheduleAppointmentsObjData(110, "MoonShiners", "chn", "05/02/2014 02:00:00 AM", "05/02/2014 02:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=1;COUNT=5", null, null));
-        list.Add(new ScheduleAppointmentsObjData(111, "Close Encounters", "chn", "04/30/2014 02:00:00 PM", "04/30/2014 03:00:00 PM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=WEEKLY;BYDAY=MO,TH;INTERVAL=1;COUNT=5", null, null));
+        list.Add(new ScheduleAppointmentsObjData(102, "Bering Sea Gold", "trichy", "05/02/2014 04:00:00 PM", "05/02/2014 05:30:00 PM", "", "1", "", false, "", "", "", "", false, "", "", "", null, null));
+        list.Add(new ScheduleAppointmentsObjData(103, "What Happened Next?", "chennai", "05/04/2014 03:00:00 AM", "05/04/2014 04:30:00 AM", "", "1", "", false, "", "", "", "", false, "", "", "", null, null));
+        list.Add(new ScheduleAppointmentsObjData(104, "Bering Sea Gold", "trichy", "05/04/2014 05:00:00 AM", "05/04/2014 05:40:00 AM", "", "1", "", false, "", "", "", "", false, "", "", "", null,null));
+        list.Add(new ScheduleAppointmentsObjData(105, "Daily Planet", "chennai", "05/03/2014 01:00:00 AM", "05/03/2014 02:00:00 AM", "", "1", "", false, "", "", "", "", false, "", "", "", null, null));
+        list.Add(new ScheduleAppointmentsObjData(106, "Alaska: The Last Frontier", "chennai", "05/03/2014 08:00:00 AM", "05/03/2014 09:00:00 AM", "", "1", "", false, "", "", "", "", false, "", "", "", null, null));
+        list.Add(new ScheduleAppointmentsObjData(107, "How It's Made", "chennai", "05/01/2014 06:00:00 AM", "05/01/2014 06:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=WEEKLY;BYDAY=MO,TU;INTERVAL=1;COUNT=15", null, null));
+        list.Add(new ScheduleAppointmentsObjData(108, "Deadest Catch", "chennai", "05/03/2014 04:00:00 PM", "05/03/2014 05:00:00 PM", "", "1", "", false, "", "", "", "", false, "", "", "", null, null));
+        list.Add(new ScheduleAppointmentsObjData(109, "MayDay", "chennai", "04/30/2014 06:30:00 AM", "04/30/2014 07:30:00 AM", "", "1", "", false, "", "", "", "", false, "", "", "", null, null));
+        list.Add(new ScheduleAppointmentsObjData(110, "MoonShiners", "chennai", "05/02/2014 02:00:00 AM", "05/02/2014 02:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=1;COUNT=5", null, null));
+        list.Add(new ScheduleAppointmentsObjData(111, "Close Encounters", "chennai", "04/30/2014 02:00:00 PM", "04/30/2014 03:00:00 PM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=WEEKLY;BYDAY=MO,TH;INTERVAL=1;COUNT=5", null, null));
         list.Add(new ScheduleAppointmentsObjData(112, "Close Encounters", "mum", "04/30/2014 03:00:00 AM", "04/30/2014 03:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=WEEKLY;BYDAY=WE;INTERVAL=1;COUNT=3", null, null));
-        list.Add(new ScheduleAppointmentsObjData(113, "Highway Thru Hell", "chn", "05/01/2014 03:00:00 AM", "05/01/2014 07:00:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=2;COUNT=10", null, null));
-        list.Add(new ScheduleAppointmentsObjData(114, "Moon Shiners", "chn", "05/02/2014 04:20:00 AM", "05/02/2014 05:50:00 AM", "", "1", "", false, "", "", "", "", false, "", "", "", null, null));
-        list.Add(new ScheduleAppointmentsObjData(115, "Cash Cab", "chn", "04/30/2014 03:00:00 PM", "04/30/2014 04:30:00 PM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=1;COUNT=5", null, null));
+        list.Add(new ScheduleAppointmentsObjData(113, "Highway Through Hell", "chennai", "05/01/2014 03:00:00 AM", "05/01/2014 07:00:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=2;COUNT=10", null, null));
+        list.Add(new ScheduleAppointmentsObjData(114, "Moon Shiners", "chennai", "05/02/2014 04:20:00 AM", "05/02/2014 05:50:00 AM", "", "1", "", false, "", "", "", "", false, "", "", "", null, null));
+        list.Add(new ScheduleAppointmentsObjData(115, "Cash Cab", "chennai", "04/30/2014 03:00:00 PM", "04/30/2014 04:30:00 PM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=1;COUNT=5", null, null));
         return list;
 
     }
@@ -925,8 +925,8 @@ namespace ScheduleCRUDWithWebServices
         [WebMethod]
         public DataTable BindAppointments()
         {
-            string constr = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
-            SqlConnection conn = new SqlConnection(constr);
+            string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+            SqlConnection conn = new SqlConnection(connectionString);
             SqlDataAdapter adapter1 = new SqlDataAdapter();
             DataSet drugs = new DataSet();
             conn.Open();
@@ -941,8 +941,8 @@ namespace ScheduleCRUDWithWebServices
         [WebMethod]
         public void Insert(int id, string subject, string description, string startTime, string endTime, bool allDay)
         {
-            string constr = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
-            using (SqlConnection con = new SqlConnection(constr))
+            string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+            using (SqlConnection con = new SqlConnection(connectionString))
             {
                 using (SqlCommand cmd = new SqlCommand("INSERT INTO Appointments (Id, Subject, Description, StartTime, EndTime, AllDay) VALUES (@Id, @Subject, @Description, @StartTime, @EndTime, @AllDay)"))
                 {
@@ -964,8 +964,8 @@ namespace ScheduleCRUDWithWebServices
         [WebMethod]
         public void Update(int id, string subject, string description, string startTime, string endTime, bool allDay)
         {
-            string constr = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
-            using (SqlConnection con = new SqlConnection(constr))
+            string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+            using (SqlConnection con = new SqlConnection(connectionString))
             {
                 using (SqlCommand cmd = new SqlCommand("UPDATE Appointments SET Id = @Id, Subject = @Subject, Description=@Description, StartTime=@StartTime, EndTime=@EndTime, AllDay=@AllDay WHERE Id = @Id"))
                 {
@@ -987,8 +987,8 @@ namespace ScheduleCRUDWithWebServices
         [WebMethod]
         public void Delete(int id)
         {
-            string constr = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
-            using (SqlConnection con = new SqlConnection(constr))
+            string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+            using (SqlConnection con = new SqlConnection(connectionString))
             {
                 using (SqlCommand cmd = new SqlCommand("DELETE FROM Appointments WHERE Id = @Id"))
                 {
@@ -1116,9 +1116,9 @@ namespace WebSampleBrowser.Schedule
             }
             if (deleted != null && deleted.Count > 0)
             {
-                foreach (var dele in deleted)
+                foreach (var scheduleDelete in deleted)
                 {
-                    ScheduleAppointmentsObjData value = GetObjectValue(dele as Dictionary<string, object>);
+                    ScheduleAppointmentsObjData value = GetObjectValue(scheduleDelete as Dictionary<string, object>);
                     ScheduleAppointmentsObjData removeApp = GetAllRecords().Where(c => c.ID == value.ID).FirstOrDefault();
                     if (removeApp != null)
                         GetAllRecords().Remove(removeApp);
@@ -1131,30 +1131,30 @@ namespace WebSampleBrowser.Schedule
             Dictionary<string, object> KeyVal = objValue;
             ScheduleAppointmentsObjData appointValue = new ScheduleAppointmentsObjData();
 
-            foreach (KeyValuePair<string, object> keyval in KeyVal)
+            foreach (KeyValuePair<string, object> keyValue in KeyVal)
             {
-                if (keyval.Key == "ID")
-                    appointValue.ID = Convert.ToInt32(keyval.Value);
-                else if (keyval.Key == "Subject")
-                    appointValue.Subject = Convert.ToString(keyval.Value);
-                else if (keyval.Key == "Location")
-                    appointValue.Location = Convert.ToString(keyval.Value);
-                else if (keyval.Key == "StartTime")
-                    appointValue.StartTime = Convert.ToDateTime(keyval.Value).ToString("MM'/'dd'/'yyyy hh:mm:ss tt");
-                else if (keyval.Key == "EndTime")
-                    appointValue.EndTime = Convert.ToDateTime(keyval.Value).ToString("MM'/'dd'/'yyyy hh:mm:ss tt");
-                else if (keyval.Key == "Description")
-                    appointValue.Description = Convert.ToString(keyval.Value);
-                else if (keyval.Key == "AllDay")
-                    appointValue.AllDay = Convert.ToBoolean(keyval.Value);
-                else if (keyval.Key == "Recurrence")
-                    appointValue.Recurrence = Convert.ToBoolean(keyval.Value);
-                else if (keyval.Key == "RecurrenceRule")
-                    appointValue.RecurrenceRule = Convert.ToString(keyval.Value);
-                else if (keyval.Key == "StartTimeZone")
-                    appointValue.StartTimeZone = Convert.ToString(keyval.Value);
-                else if (keyval.Key == "EndTimeZone")
-                    appointValue.EndTimeZone = Convert.ToString(keyval.Value);
+                if (keyValue.Key == "ID")
+                    appointValue.ID = Convert.ToInt32(keyValue.Value);
+                else if (keyValue.Key == "Subject")
+                    appointValue.Subject = Convert.ToString(keyValue.Value);
+                else if (keyValue.Key == "Location")
+                    appointValue.Location = Convert.ToString(keyValue.Value);
+                else if (keyValue.Key == "StartTime")
+                    appointValue.StartTime = Convert.ToDateTime(keyValue.Value).ToString("MM'/'dd'/'yyyy hh:mm:ss tt");
+                else if (keyValue.Key == "EndTime")
+                    appointValue.EndTime = Convert.ToDateTime(keyValue.Value).ToString("MM'/'dd'/'yyyy hh:mm:ss tt");
+                else if (keyValue.Key == "Description")
+                    appointValue.Description = Convert.ToString(keyValue.Value);
+                else if (keyValue.Key == "AllDay")
+                    appointValue.AllDay = Convert.ToBoolean(keyValue.Value);
+                else if (keyValue.Key == "Recurrence")
+                    appointValue.Recurrence = Convert.ToBoolean(keyValue.Value);
+                else if (keyValue.Key == "RecurrenceRule")
+                    appointValue.RecurrenceRule = Convert.ToString(keyValue.Value);
+                else if (keyValue.Key == "StartTimeZone")
+                    appointValue.StartTimeZone = Convert.ToString(keyValue.Value);
+                else if (keyValue.Key == "EndTimeZone")
+                    appointValue.EndTimeZone = Convert.ToString(keyValue.Value);
             }
             return appointValue;
         }
@@ -1260,7 +1260,7 @@ Scheduler supports binding events data from the XML configured file through XML 
    <APPOINTMENT 
    Id ="100"
    Subject="Bering Sea Gold"
-   Location="chn"
+   Location="chennai"
    StartTime="5/2/2014 9:00:00 AM"
    EndTime="5/2/2014 10:30:00 AM"
    Description=""
@@ -1296,7 +1296,7 @@ Scheduler supports binding events data from the XML configured file through XML 
    <APPOINTMENT 
    Id ="102"
    Subject="Bering Sea Gold"
-   Location="trcy"
+   Location="trichy"
    StartTime="5/2/2014 4:00:00 PM"
    EndTime="5/2/2014 5:30:00 PM"
    Description=""
@@ -1349,7 +1349,7 @@ The code to handle the CRUD operation of the appointments at code behind can be 
             Schedule1.DataBind();
         }
            
-        //The following block of codes will trigger and perform the storing appointments detials after the add/saving the appointments
+        //The following block of codes will trigger and perform the storing appointments details after the add/saving the appointments
         protected void Schedule1_ServerAppointmentSaved(object sender, Syncfusion.JavaScript.Web.ScheduleEventArgs e)
         {
            
@@ -1393,7 +1393,7 @@ The code to handle the CRUD operation of the appointments at code behind can be 
             BindAppointments();
         }
         
-       //The following block of codes will trigger and perform the storing appointments detials after the editing/modify the appointments
+       //The following block of codes will trigger and perform the storing appointments details after the editing/modify the appointments
         protected void Schedule1_ServerAppointmentEdited(object sender, Syncfusion.JavaScript.Web.ScheduleEventArgs e)
         {
             IEnumerable div = e.Arguments["appointment"] as IEnumerable;
@@ -1435,7 +1435,7 @@ The code to handle the CRUD operation of the appointments at code behind can be 
             db.SubmitChanges();
             BindAppointments();
         }
-        //The following block of codes will trigger and perform the deleting appointments detials after deleting the appointment
+        //The following block of codes will trigger and perform the deleting appointments details after deleting the appointment
         protected void Schedule1_ServerAppointmentDeleted(object sender, Syncfusion.JavaScript.Web.ScheduleEventArgs e)
         {
             IEnumerable div = e.Arguments["appointment"] as IEnumerable;
@@ -1470,7 +1470,7 @@ The code to handle the CRUD operation of the appointments at code behind can be 
            BindAppointments();
         }     
         
-        //The following block of codes will trigger and perform the update appointments detials after drag and drop the appointment
+        //The following block of codes will trigger and perform the update appointments details after drag and drop the appointment
         protected void Schedule1_ServerDragStop(object sender, Syncfusion.JavaScript.Web.ScheduleEventArgs e)
         {
             IEnumerable div = e.Arguments["appointment"] as IEnumerable;
@@ -1511,7 +1511,7 @@ The code to handle the CRUD operation of the appointments at code behind can be 
             db.SubmitChanges();
            BindAppointments();
         }
-        //The following block of codes will trigger and perform the update appointments detials after resizing the appointment
+        //The following block of codes will trigger and perform the update appointments details after resizing the appointment
         protected void Schedule1_ServerResizeStop(object sender, Syncfusion.JavaScript.Web.ScheduleEventArgs e)
         {
             IEnumerable div = e.Arguments["appointment"] as IEnumerable;
@@ -1603,7 +1603,7 @@ namespace ScheduleCRUDCS
             Schedule1.DataBind();
         }
            
-        //The following block of codes will trigger and perform the storing appointments detials after the add/saving the appointments
+        //The following block of codes will trigger and perform the storing appointments details after the add/saving the appointments
         protected void Schedule1_ServerAppointmentSaved(object sender, Syncfusion.JavaScript.Web.ScheduleEventArgs e)
         {
             IEnumerable div = e.Arguments["appointment"] as IEnumerable;
@@ -1647,7 +1647,7 @@ namespace ScheduleCRUDCS
            
         }
         
-       //The following block of codes will trigger and perform the storing appointments detials after the editing/modify the appointments
+       //The following block of codes will trigger and perform the storing appointments details after the editing/modify the appointments
         protected void Schedule1_ServerAppointmentEdited(object sender, Syncfusion.JavaScript.Web.ScheduleEventArgs e)
         {
             IEnumerable div = e.Arguments["appointment"] as IEnumerable;
@@ -1688,7 +1688,7 @@ namespace ScheduleCRUDCS
             db.SaveChanges();
             BindAppointments();
         }
-        //The following block of codes will trigger and perform the deleting appointments detials after deleting the appointment
+        //The following block of codes will trigger and perform the deleting appointments details after deleting the appointment
         protected void Schedule1_ServerAppointmentDeleted(object sender, Syncfusion.JavaScript.Web.ScheduleEventArgs e)
         {
             IEnumerable div = e.Arguments["appointment"] as IEnumerable;
@@ -1723,7 +1723,7 @@ namespace ScheduleCRUDCS
             BindAppointments();
         }     
         
-        The following block of codes will trigger and perform the update appointments detials after drag and drop the appointment
+        The following block of codes will trigger and perform the update appointments details after drag and drop the appointment
         protected void Schedule1_ServerDragStop(object sender, Syncfusion.JavaScript.Web.ScheduleEventArgs e)
         {
             IEnumerable div = e.Arguments["appointment"] as IEnumerable;
@@ -1764,7 +1764,7 @@ namespace ScheduleCRUDCS
             db.SaveChanges();
             BindAppointments();
         }
-        //The following block of codes will trigger and perform the update appointments detials after resizing the appointment
+        //The following block of codes will trigger and perform the update appointments details after resizing the appointment
         protected void Schedule1_ServerResizeStop(object sender, Syncfusion.JavaScript.Web.ScheduleEventArgs e)
         {
             IEnumerable div = e.Arguments["appointment"] as IEnumerable;

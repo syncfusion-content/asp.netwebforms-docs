@@ -233,13 +233,13 @@ To use the user control, make the web page aware of the control by using a Regis
 
 {% endhighlight %}
 
-## Select a specific item in dropdownlist via codebehind as like asp dropdownlist FindByValue/FindByText method
+## Select a specific item in dropdownlist via code behind as like asp dropdownlist FindByValue/FindByText method
 
-You can select a specific item in dropdownlist via codebehind by matching the search string with the dropdownlist item text. Initially, set the index value to dropdownlist by using the “SelectedIndex” property in the button click event as shown below code:
+You can select a specific item in dropdownlist via code behind by matching the search string with the dropdownlist item text. Initially, set the index value to dropdownlist by using the “SelectedIndex” property in the button click event as shown below code:
 
 {% highlight c# %}
 
-		protected void setvalue_Click(object sender, EventArgs e) 
+		protected void setValue_Click(object sender, EventArgs e) 
         { 
  
             selectCar.SelectedIndex = DropDownListIndex(selectCar.Items.ToList(), "Audi A6"); 
@@ -251,10 +251,10 @@ Now, index value will be return in the DropDownListIndex method by matching the 
 
 {% highlight c# %}
 
-		public int DropDownListIndex(List<Syncfusion.JavaScript.Web.DropDownListItem> ddlList,string search) 
+		public int DropDownListIndex(List<Syncfusion.JavaScript.Web.DropDownListItem> dropdownList,string search) 
         { 
  
-            int indexVal = ddlList.Select((item, i) => new { Item = item, Index = i }) 
+            int indexVal = dropdownList.Select((item, i) => new { Item = item, Index = i }) 
                 .First(x => x.Item.Text == search).Index; 
             return indexVal; 
         } 

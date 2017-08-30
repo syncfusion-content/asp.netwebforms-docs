@@ -392,11 +392,11 @@ These methods accepts the tool name as the parameter. It also allows the paramet
     
             $(function () {
                 var fileExpObj = $("#fileexplorer").data("ejFileExplorer");
-                // this disables the NewFoler item
+                // this disables the NewFolder item
                 fileExpObj.disableToolbarItem("NewFolder");
                 // this disables the Layout item (since index of Layout is 0)
                 fileExpObj.disableToolbarItem(0);
-                // this enables the NewFoler item
+                // this enables the NewFolder item
                 fileExpObj.enableToolbarItem("NewFolder");
             });
     

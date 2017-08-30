@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Highlight 
-EhtmlunburstChart provides highlighting support for the points on mouse hover. To enable the highlighting , set the *Enable* property to true in the **HighlightSettings**. 
+SunburstChart provides highlighting support for the points on mouse hover. To enable the highlighting , set the *Enable* property to true in the **HighlightSettings**. 
 
 {% highlight html %}
 

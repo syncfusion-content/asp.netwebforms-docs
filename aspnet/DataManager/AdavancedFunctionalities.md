@@ -63,9 +63,9 @@ You can use the following code example for implementing load on demand using Dat
             </Columns>
         </ej:Grid>
 
-    pageIndex: <input id="pageindx" type="text" placeholder="pageindex" />
+    pageIndex: <input id="pageIndex" type="text" placeholder="page index" />
 
-    pageSize:  <input id="pagesize" type="text" placeholder="pagesize" />
+    pageSize:  <input id="pageSize" type="text" placeholder="page size" />
 
     <ej:Button runat="server" Type="Button" Text="Loadondemand" ClientSideOnClick="onClick" ID="submit"></ej:Button>
 
@@ -77,8 +77,8 @@ You can use the following code example for implementing load on demand using Dat
 
         function onClick(e)
         {
-            var from = parseInt($("#pageindx").val());
-            var to = parseInt($("#pagesize").val());
+            var from = parseInt($("#pageIndex").val());
+            var to = parseInt($("#pageSize").val());
             var obj = $("#MainContent_OrdersGrid").ejGrid("instance")
             tempQuery = new ej.Query();
             tempQuery.page(from, to);

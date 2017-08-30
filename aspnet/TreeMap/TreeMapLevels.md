@@ -63,7 +63,7 @@ TreeMap Hierarchical level is used to define levels for hierarchical data collec
 {% tabs %}
 {% highlight c# %}
 
-public partial class flatcollection : Page
+public partial class flatCollection : Page
 
 {
 

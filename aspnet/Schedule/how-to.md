@@ -43,9 +43,9 @@ The sample contains the fields like Subject, Description, StartTime and EndTime 
             })
 
             // To Validate the Description field.
-            $("#customdescription").focusout(function () {
-                if ($.trim($("#customdescription").val()) == "") {
-                    $("#customdescription").addClass("validation");
+            $("#customDescription").focusout(function () {
+                if ($.trim($("#customDescription").val()) == "") {
+                    $("#customDescription").addClass("validation");
                     return false;
                 }
             })
@@ -106,12 +106,12 @@ Initially, set the **Highlight** as false for the **WorkHours**, so as to disabl
 
                 this.option("workHours.highlight", (this.currentView() != "month") ? false : true);
 
-                // Get the Scheduler workcell rows
+                // Get the Scheduler work cell rows
                 var trElements = this.$WorkCellDiv.find("tr");
 
                 for (var i = 0; i < trElements.length; i++) {
 
-                    // Get the Scheduler workcell columns
+                    // Get the Scheduler work cell columns
                     var tdElements = $(trElements[i]).find("td");
 
                     for (var j = 0; j < tdElements.length; j++) {
@@ -201,7 +201,7 @@ Initially, set the **Highlight** as false for the **WorkHours**, so as to disabl
 
 namespace WebSampleBrowser.Schedule
 {
-    public partial class multipleresource : System.Web.UI.Page
+    public partial class multipleResource : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -439,23 +439,23 @@ namespace ScheduleCRUDCS
             Microsoft.Office.Interop.Outlook.NameSpace mapiNamespace = oApp.GetNamespace("MAPI");
             Microsoft.Office.Interop.Outlook.MAPIFolder CalendarFolder = mapiNamespace.GetDefaultFolder(Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderCalendar);
             Microsoft.Office.Interop.Outlook.Items outlookCalendarItems = CalendarFolder.Items;
-            List<Microsoft.Office.Interop.Outlook.AppointmentItem> lst = new List<Microsoft.Office.Interop.Outlook.AppointmentItem>();
+            List<Microsoft.Office.Interop.Outlook.AppointmentItem> appointmentList = new List<Microsoft.Office.Interop.Outlook.AppointmentItem>();
 
             foreach (Microsoft.Office.Interop.Outlook.AppointmentItem item in outlookCalendarItems)
             {
-                lst.Add(item);
+                appointmentList.Add(item);
             }
 
             List<ScheduleAppointment> newApp = new List<ScheduleAppointment>();
             // converting COM object into IEnumerable object
-            for (var i = 0; i < lst.Count; i++)
+            for (var i = 0; i < appointmentList.Count; i++)
             {
                 ScheduleAppointment app = new ScheduleAppointment();
                 app.Id = i;
-                app.Subject = lst[i].Subject;
-                app.AllDay = lst[i].AllDayEvent;
-                app.StartTime = Convert.ToDateTime(lst[i].Start.ToString());
-                string endTime = lst[i].End.ToString();
+                app.Subject = appointmentList[i].Subject;
+                app.AllDay = appointmentList[i].AllDayEvent;
+                app.StartTime = Convert.ToDateTime(appointmentList[i].Start.ToString());
+                string endTime = appointmentList[i].End.ToString();
                 DateTime appEndDate = Convert.ToDateTime(endTime);
                 if (endTime.Contains("12:00:00 AM") && app.AllDay)
                     app.EndTime = appEndDate.AddMinutes(-1);

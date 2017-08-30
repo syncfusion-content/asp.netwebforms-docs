@@ -19,10 +19,10 @@ In the code behind page, create a data list which contains the details about tre
 [Serializable]
 public class FullRowSelectDataSource
 {
-    public FullRowSelectDataSource(int _id, int _parentid, string _text, string _hasChild = "", string _expanded = "", string _selected = "")
+    public FullRowSelectDataSource(int _id, int _parentId, string _text, string _hasChild = "", string _expanded = "", string _selected = "")
     {
         this.ID = _id;
-        this.ParentID = _parentid;
+        this.ParentID = _parentId;
         this.Text = _text;
         this.HasChild = _hasChild;
         this.Expanded = _expanded;
@@ -85,7 +85,7 @@ In the ASPX page, add TreeView element with following properties.
 
 {% highlight html %}
 
-<ej:TreeView ID="fullrowtree" runat="server" DataSourceID="ObjectData" DataTextField="Text"
+<ej:TreeView ID="fullRowTree" runat="server" DataSourceID="ObjectData" DataTextField="Text"
     DataIdField="ID" DataParentIdField="ParentID" DataHasChildField="HasChild"
     DataExpandedField="Expanded" DataSelectedField="Selected" FullRowSelect="true" >
 </ej:TreeView>
@@ -106,31 +106,31 @@ In the code behind page, create a data list which contains the details about tre
 
 public partial class FullRowSelection : System.Web.UI.Page
 {
-    List<loadondemand> fullRowData = new List<loadondemand>();
+    List<loadOnDemand> fullRowData = new List<loadOnDemand>();
     protected void Page_Load(object sender, EventArgs e)
     {
-        fullRowData.Add(new loadondemand { id = 1, name = "Browsers", cls = "browser", hasChild = true, expanded = true });
-        fullRowData.Add(new loadondemand { id = 2, pid = 1, name = "Internet Explorer", cls = "ieb", selected = true });
-        fullRowData.Add(new loadondemand { id = 3, pid = 1, name = "Chrome", cls = "chromeb" });
-        fullRowData.Add(new loadondemand { id = 4, pid = 1, name = "Firefox", cls = "firefoxb" });
-        fullRowData.Add(new loadondemand { id = 6, pid = 1, name = "Bitty", cls = "bittyb" });
-        fullRowData.Add(new loadondemand { id = 7, pid = 1, name = "Opera", cls = "operab" });
+        fullRowData.Add(new loadOnDemand { id = 1, name = "Browsers", className = "browser", hasChild = true, expanded = true });
+        fullRowData.Add(new loadOnDemand { id = 2, parent = 1, name = "Internet Explorer", className = "ie-browser", selected = true });
+        fullRowData.Add(new loadOnDemand { id = 3, parent = 1, name = "Chrome", className = "chrome-browser" });
+        fullRowData.Add(new loadOnDemand { id = 4, parent = 1, name = "Firefox", className = "firefox-browser" });
+        fullRowData.Add(new loadOnDemand { id = 6, parent = 1, name = "Bitty", className = "bitty-browser" });
+        fullRowData.Add(new loadOnDemand { id = 7, parent = 1, name = "Opera", className = "opera-browser" });
 
-        this.fullrowtree.Fields.DataSource = fullRowData;
+        this.fullRowTree.Fields.DataSource = fullRowData;
 
     }
 }
-public class loadondemand
+public class loadOnDemand
 {
     public int id { get; set; }
-    public int? pid { get; set; }
+    public int? parent { get; set; }
     public string name { get; set; }
     public bool? hasChild { get; set; }
     public bool? expanded { get; set; }
     public bool? ischecked { get; set; }
     public bool? selected { get; set; }
     public string spriteCss { get; set; }
-    public string cls { get; set; }
+    public string className { get; set; }
 }
 
 {% endhighlight %}
@@ -139,15 +139,15 @@ In the ASPX page, add TreeView element with following properties.
 
 {% highlight html %}
 
-<ej:TreeView ID="fullrowtree" runat="server" DataTextField="name" DataIdField="id" 
-    DataParentIdField="pid" DataHasChildField="hasChild" DataExpandedField="expanded" 
+<ej:TreeView ID="fullRowTree" runat="server" DataTextField="name" DataIdField="id" 
+    DataParentIdField="parent" DataHasChildField="hasChild" DataExpandedField="expanded" 
     DataSelectedField="selected" FullRowSelect="true" Template="#treeTemplate" CssClass="custom">
 </ej:TreeView>
 
 <script id="treeTemplate" type="text/x-jsrender">
 
     {{"{{"}}if !hasChild{{}}}}
-    <span class="con-img {{"{{"}}>cls{{}}}}"></span>
+    <span class="con-img {{"{{"}}>className{{}}}}"></span>
     {{"{{"}}/if{{}}}}
     {{"{{"}}>name{{}}}}
 
@@ -178,23 +178,23 @@ In the ASPX page, add TreeView element with following properties.
         background-image: url("http://asp.syncfusion.com/demos/web/Content/images/toolbar/browserl.png");
     }
     
-    .custom .ieb {
+    .custom .ie-browser {
         background-position: -84px 0px;
     }
     
-    .custom .chromeb {
+    .custom .chrome-browser {
         background-position: -42px 0px;
     }
     
-    .custom .firefoxb {
+    .custom .firefox-browser {
         background-position: 0px 0px;
     }
     
-    .custom .bittyb {
+    .custom .bitty-browser {
         background-position: -126px 0px;
     }
     
-    .custom .operab {
+    .custom .opera-browser {
         background-position: -168px 0px;
     }
     

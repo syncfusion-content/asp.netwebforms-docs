@@ -84,7 +84,7 @@ The following example shows the way to bind data to the CurrencyTextbox control
 
 
 
-                        <input id="currency" type="text" ej-currencytextbox e-value="cvalue" />
+                        <input id="currency" type="text" ej-currencytextbox e-value="currencyValue" />
 
 
 
@@ -96,7 +96,7 @@ The following example shows the way to bind data to the CurrencyTextbox control
 
 
 
-                        <input type="text" class="input ejinputtext" ng-model="cvalue" />
+                        <input type="text" class="input ejinputtext" ng-model="currencyValue" />
 
 
 
@@ -118,7 +118,7 @@ The following example shows the way to bind data to the CurrencyTextbox control
 
            .controller('TextboxCtrl', function ($scope) {
 
-               $scope.cvalue = 400;
+               $scope.currencyValue = 400;
 
            });
 
@@ -213,7 +213,7 @@ The following example depicts the way to bind data to the CurrencyTextbox contr
 
 
 
-                        <input id="currency" type="text" data-bind="ejCurrencyTextbox: { value: cvalue }" />
+                        <input id="currency" type="text" data-bind="ejCurrencyTextbox: { value: currencyValue }" />
 
 
 
@@ -225,7 +225,7 @@ The following example depicts the way to bind data to the CurrencyTextbox contr
 
 
 
-                        <input type="text" class="input ejinputtext" data-bind="value: cvalue" />
+                        <input type="text" class="input ejinputtext" data-bind="value: currencyValue" />
 
 
 
@@ -245,11 +245,11 @@ The following example depicts the way to bind data to the CurrencyTextbox contr
 
     <script type="text/javascript">
 
-        var currencyobject;
+        var currencyObject;
 
         window.viewModel = {
 
-            cvalue: ko.observable(80)
+            currencyValue: ko.observable(80)
 
         }
 
@@ -257,7 +257,7 @@ The following example depicts the way to bind data to the CurrencyTextbox contr
 
             ko.applyBindings(viewModel);
 
-            currencyobject = $("#currency").data("ejCurrencyTextbox");
+            currencyObject = $("#currency").data("ejCurrencyTextbox");
 
 
 
@@ -267,7 +267,7 @@ The following example depicts the way to bind data to the CurrencyTextbox contr
 
                 if (!isNaN(val)) {
 
-                    currencyobject.option(this.id, val);
+                    currencyObject.option(this.id, val);
 
                 }
 

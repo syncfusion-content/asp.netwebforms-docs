@@ -97,7 +97,7 @@ N> You can specify type either to `ContentGroup` or to `ContentDefault`.
 							<ej:TabContent>
 								<ContentDefaults Height="28" Type="DropDownList" />
 								<ContentGroupCollection>
-									<ej:ContentGroup Id="fontfamily" ToolTip="Font" Type="DropDownList">
+									<ej:ContentGroup Id="fontFamily" ToolTip="Font" Type="DropDownList">
 										<DropdownSettings Text="Segoe UI" Width="150"></DropdownSettings>
 									</ej:ContentGroup>
 									<ej:ContentGroup Id="fontsize" ToolTip="FontSize" Type="DropDownList">
@@ -140,9 +140,9 @@ N> You can specify type either to `ContentGroup` or to `ContentDefault`.
 
     protected void Page_Load(object sender, EventArgs e)
         {
-            var fontlist = new List<string> { "Segoe UI", "Arial", "Times New Roman", "Tahoma", "Helvetica" };
+            var fontList = new List<string> { "Segoe UI", "Arial", "Times New Roman", "Tahoma", "Helvetica" };
             var fontsize = new List<string>() { "1pt", "2pt", "3pt", "4pt", "5pt" };
-            this.fontfamily.DropdownSettings.DataSource = fontlist;
+            this.fontFamily.DropdownSettings.DataSource = fontList;
             this.fontsize.DropdownSettings.DataSource = fontsize;        
         }
 

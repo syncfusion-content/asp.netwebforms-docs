@@ -254,14 +254,14 @@ Upon clicking the "Insert" button, the special character will be added to the RT
 <script>
         var rteObj =  $("#<%=AllToolsSample.ClientID%>").data("ejRTE");
     $(".insert-special-character").ejButton();
-    $("#specialcharacter").ejDialog({ enableResize: false, enableModal: true, showOnInit: false, width: "auto", position: { X: 218, Y: 38 } });
+    $("#specialCharacter").ejDialog({ enableResize: false, enableModal: true, showOnInit: false, width: "auto", position: { X: 218, Y: 38 } });
     $(".specialtbl tbody tr td" ).addClass("specialtd").on( "click", customTdClick);
     function customTdClick(args) {
         rteObj.executeCommand("inserthtml", args.currentTarget.innerText);
-        $("#specialcharacter").ejDialog("close");
+        $("#specialCharacter").ejDialog("close");
     }  
     function CustomTool(args){
-        $("#specialcharacter").ejDialog("open");   
+        $("#specialCharacter").ejDialog("open");   
     }
 </script>
     
