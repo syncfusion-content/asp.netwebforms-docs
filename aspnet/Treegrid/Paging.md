@@ -121,7 +121,7 @@ You can also find the demo for TreeGrid with pager template [here](http://asp.sy
 The below image displays TreeGrid with paging template.
 ![](Paging_images/Paging_img2.png)
 
-## Pagging - Touch Option
+## Paging - Touch Option
 
 With paging and responsive mode enabled in TreeGrid, it is possible to change the current page using swipe action.
 

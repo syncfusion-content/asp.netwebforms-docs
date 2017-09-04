@@ -11,7 +11,7 @@ documentation: ug
 
 ## Editing Modes
 
-TreeGrid provides support to add, edit and delete the records and the folllowing are the types of editing modes available, 
+TreeGrid provides support to add, edit and delete the records and the following are the types of editing modes available, 
 
 * Cell Editing
 * Row Editing
