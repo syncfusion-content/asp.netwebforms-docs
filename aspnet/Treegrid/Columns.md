@@ -63,9 +63,9 @@ namespace WebSampleBrowser.TreeGrid
 
         {
 
-            FileInfoCollection Fileinfocollection = new FileInfoCollection();
+            FileDataCollection collection = new FileDataCollection();
 
-            this.TreeGridColumnTemplate.DataSource = Fileinfocollection.GetFileInfoCollections();
+            this.TreeGridColumnTemplate.DataSource = collection.GetFileDataCollections();
 
             this.TreeGridColumnTemplate.DataBind();            
 
@@ -75,19 +75,19 @@ namespace WebSampleBrowser.TreeGrid
 
 
 
-    public class FileInfoCollection
+    public class FileDataCollection
 
     {
 
 
 
-        public List<FileInfo> GetFileInfoCollections()
+        public List<FileData> GetFileDataCollections()
 
         {
 
-            List<FileInfo> FileinfoCollection = new List<FileInfo>();
+            List<FileData> dataCollection = new List<FileData>();
 
-            FileinfoCollection.Add(new FileInfo()
+            dataCollection.Add(new FileData()
 
             {
 
@@ -103,11 +103,11 @@ namespace WebSampleBrowser.TreeGrid
 
 
 
-            FileinfoCollection[0].SubFolder = new List<FileInfo>();
+            dataCollection[0].SubFolder = new List<FileData>();
 
 
 
-            FileinfoCollection[0].SubFolder.Add(new FileInfo()
+            dataCollection[0].SubFolder.Add(new FileData()
 
             {
 
@@ -123,11 +123,11 @@ namespace WebSampleBrowser.TreeGrid
 
 
 
-            FileinfoCollection[0].SubFolder[0].SubFolder = new List<FileInfo>();
+            dataCollection[0].SubFolder[0].SubFolder = new List<FileData>();
 
 
 
-            FileinfoCollection[0].SubFolder[0].SubFolder.Add(new FileInfo()
+            dataCollection[0].SubFolder[0].SubFolder.Add(new FileData()
 
             {
 
@@ -143,9 +143,9 @@ namespace WebSampleBrowser.TreeGrid
 
 
 
-            FileinfoCollection[0].SubFolder[0].SubFolder[0].SubFolder = new List<FileInfo>();
+            dataCollection[0].SubFolder[0].SubFolder[0].SubFolder = new List<FileData>();
 
-            FileinfoCollection[0].SubFolder[0].SubFolder[0].SubFolder.Add(new FileInfo()
+            dataCollection[0].SubFolder[0].SubFolder[0].SubFolder.Add(new FileData()
 
             {
 
@@ -161,11 +161,11 @@ namespace WebSampleBrowser.TreeGrid
 
 
 
-            FileinfoCollection[0].SubFolder[0].SubFolder[0].SubFolder[0].SubFolder = new List<FileInfo>();
+            dataCollection[0].SubFolder[0].SubFolder[0].SubFolder[0].SubFolder = new List<FileData>();
 
 
 
-            FileinfoCollection[0].SubFolder[0].SubFolder[0].SubFolder[0].SubFolder.Add(new FileInfo()
+            dataCollection[0].SubFolder[0].SubFolder[0].SubFolder[0].SubFolder.Add(new FileData()
 
             {
 
@@ -185,7 +185,7 @@ namespace WebSampleBrowser.TreeGrid
            //...
 
 
-            return FileinfoCollection;
+            return dataCollection;
 
         }  
 
@@ -193,7 +193,7 @@ namespace WebSampleBrowser.TreeGrid
 
 
 
-    public class FileInfo
+    public class FileData
 
     {
 
@@ -205,7 +205,7 @@ namespace WebSampleBrowser.TreeGrid
 
         public string DateCreated { get; set; }
 
-        public List<FileInfo> SubFolder { get; set; }
+        public List<FileData> SubFolder { get; set; }
 
     }
 
@@ -228,7 +228,7 @@ namespace WebSampleBrowser.TreeGrid
 
        <div class='{{if expanded}}e-treegridexpand {{else hasChildRecords}}e-treegridcollapse {{/if}} {{if level===4}}e-doc{{/if}}' style='height:20px;width:30px;margin:auto;float:left;margin-left:10px;
 
-       style='float: left;display:inline-block; unselectable='on'></div>
+       style='float: left;display:inline-block;></div>
 
        <div class='e-cell' style='display:inline-block;width:100%' unselectable='on'>{{:#data['Name']}}</div>
 
