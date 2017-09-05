@@ -16,7 +16,7 @@ The following code illustrates how to provide localization support for Context M
 
 {% highlight aspx-cs %}
 
-  // Defines the context menu items with spanish language
+  // Defines the context menu items with Spanish language
   ej.datavisualization.Diagram.Locale["es-ES"] = {
 	cut: "Corte",
 	copy: "Copia",
