@@ -23,11 +23,11 @@ Apply the plugin and property assigning the Map element through the directive 
 
    <div ng-controller="MapController"> 
 
-       <div id="AngularMap" style="width:700px;height:400px" ej-map e-zoomsettings-enablezoom="enablezoom">
+       <div id="AngularMap" style="width:700px;height:400px" ej-map e-zoomsettings-enablezoom="enableZoom">
 
           <div e-layers>
 
-              <div e-layer e-shapedata="shapedata" e-shapesettings-fill="nfill" e-shapesettings-strokethickness="strokethickness" e-shapesettings-stroke="stroke" >
+              <div e-layer e-shapedata="shapeData" e-shapesettings-fill="nfill" e-shapesettings-strokethickness="strokeThickness" e-shapesettings-stroke="stroke" >
 
               </div>
 
@@ -47,13 +47,13 @@ Apply the plugin and property assigning the Map element through the directive 
 
                .controller('MapController', function ($scope) {                  
 
-                   $scope.enablezoom = true,                                    
+                   $scope.enableZoom = true,                                    
 
-                   $scope.shapedata = world_map;            
+                   $scope.shapeData = world_map;            
 
                    $scope.fill = "#4E7EC4";
 
-                   $scope.strokethickness = "0.5";
+                   $scope.strokeThickness = "0.5";
 
                    $scope.stroke = "white";                               
 

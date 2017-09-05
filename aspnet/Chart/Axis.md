@@ -82,7 +82,7 @@ To display the labels after a fixed interval n, you can set the **Interval** pro
 
      .PrimaryXAxis(
           //Displaying labels after 2 intervals
-          px=>px.Range(ra=>ra.Interval(2))
+          axis=>axis.Range(range=>range.Interval(2))
      )
         // ...
     )
