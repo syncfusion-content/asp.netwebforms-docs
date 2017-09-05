@@ -64,7 +64,7 @@ In the HTML page, define the li items for RadialMenu component.
 
 {% highlight html %}
 
-        <ej:RadialMenu ID="defaultradialmenu" runat="server" TargetElementId="radialtargetone" CssClass="customCss" >         
+        <ej:RadialMenu ID="defaultRadialMenu" runat="server" TargetElementId="radialRargetOne" CssClass="customCss" >         
             <Items>
            
                 <ej:RadialMenuItems ImageURL="asp.syncfusion.com/demos/web/Content/images/RadialMenu/copy.png" Text="Copy" ></ej:RadialMenuItems>
@@ -85,13 +85,13 @@ Customize **Radial Menu** control with CssClass in script as follows.
 {% highlight javascript %}
   
       function radialShow(e) {
-            var target = $("#radialtargetone"), radialRadius = 150, radialDiameter = 2 * radialRadius,
+            var target = $("#radialTargetOne"), radialRadius = 150, radialDiameter = 2 * radialRadius,
             // To get Iframe positions
             iframeY = target.offset().top + e.event.clientY, iframeX = target.offset().left + e.event.clientX,
             // To set Radial Menu position within target
             x = iframeX > target.width() - radialRadius ? target.width() - radialDiameter : (iframeX > radialRadius ? iframeX - radialRadius : 0),
             y = iframeY > target.height() - radialRadius ? target.height() - radialDiameter : (iframeY > radialRadius ? iframeY - radialRadius : 0);
-            $('#<%=defaultradialmenu.ClientID%>').ejRadialMenu("setPosition", x, y);
+            $('#<%=defaultRadialMenu.ClientID%>').ejRadialMenu("setPosition", x, y);
         }               
       
 {% endhighlight %}

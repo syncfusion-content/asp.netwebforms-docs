@@ -18,7 +18,7 @@ You can customize the **Radial Menu** size by using the **Radius** property. By 
 
 {% highlight html %}
 
-        <ej:RadialMenu ID="defaultradialmenu" runat="server" TargetElementId="radialtargetone" Radius="200" >         
+        <ej:RadialMenu ID="defaultRadialMenu" runat="server" TargetElementId="radialTargetOne" Radius="200" >         
             <Items>
                 <ej:RadialMenuItems ImageURL="asp.syncfusion.com/demos/web/Content/images/RadialMenu/font.png" Text="Bold" ></ej:RadialMenuItems>
                 <ej:RadialMenuItems ImageURL="asp.syncfusion.com/demos/web/Content/images/RadialMenu/f1.png" Text="Italic" ></ej:RadialMenuItems>
@@ -34,13 +34,13 @@ Add the following script in your code.
 {% highlight javascript %}
 
         function radialShow(e) {
-            var target = $("#radialtargetone"), radialRadius = 200, radialDiameter = 2 * radialRadius,
+            var target = $("#radialTargetOne"), radialRadius = 200, radialDiameter = 2 * radialRadius,
                 // To get Iframe positions
                 iframeY = target.offset().top + e.event.clientY, iframeX = target.offset().left + e.event.clientX,
                 // To set Radial Menu position within target
                 x = iframeX > target.width() - radialRadius ? target.width() - radialDiameter : (iframeX > radialRadius ? iframeX - radialRadius : 0),
                 y = iframeY > target.height() - radialRadius ? target.height() - radialDiameter : (iframeY > radialRadius ? iframeY - radialRadius : 0);
-                $('#<%=defaultradialmenu.ClientID%>').ejRadialMenu("setPosition", x, y);
+                $('#<%=defaultRadialMenu.ClientID%>').ejRadialMenu("setPosition", x, y);
          }
 
 {% endhighlight %}
@@ -58,7 +58,7 @@ Refer to the following code example.
 
 {% highlight html %}
 
-      <ej:RadialMenu ID="defaultradialmenu" runat="server" TargetElementId="radialtargetone">      
+      <ej:RadialMenu ID="defaultRadialMenu" runat="server" TargetElementId="radialtargetone">      
             <Position X="10" Y="10" />   
             <Items>
                 <ej:RadialMenuItems ImageURL="asp.syncfusion.com/demos/web/Content/images/RadialMenu/copy.png" Text="Copy" ></ej:RadialMenuItems>
