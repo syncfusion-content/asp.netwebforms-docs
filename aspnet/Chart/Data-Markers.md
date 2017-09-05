@@ -290,12 +290,12 @@ var chartData = [
           { month: 'Feb', sales: 28 , text: 'February' }
 ];
           
-    function onChartLoad(sender) {
-        var data = GetData();
-        sender.model.series[0].dataSource = chartData;
-        sender.model.series[0].xName = "month";
-        sender.model.series[0].yName = "sales";
-    }
+function onChartLoad(sender) {
+    var data = GetData();
+    sender.model.series[0].dataSource = chartData;
+    sender.model.series[0].xName = "month";
+    sender.model.series[0].yName = "sales";
+}
    
 {% endhighlight %}
 
@@ -321,18 +321,18 @@ You can bind the color value to the points from the datasource and then you need
 
 {% highlight js %}
 
-//data source for chart with label 
+//data source for chart with fill color
 var chartData = [
           { month: 'Jan', sales: 35 , color: 'red' },
           { month: 'Feb', sales: 28 , color: 'blue' }
 ];
           
-    function onChartLoad(sender) {
-        var data = GetData();
-        sender.model.series[0].dataSource = chartData;
-        sender.model.series[0].xName = "month";
-        sender.model.series[0].yName = "sales";
-    }
+function onChartLoad(sender) {
+    var data = GetData();
+    sender.model.series[0].dataSource = chartData;
+    sender.model.series[0].xName = "month";
+    sender.model.series[0].yName = "sales";
+}
    
 {% endhighlight %}
 
