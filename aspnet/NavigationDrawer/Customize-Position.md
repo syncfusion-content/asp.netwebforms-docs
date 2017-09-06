@@ -51,7 +51,7 @@ Add following code in style section,
            overflow: hidden;
            min-height: 451px;
         }
-            .drawericon {
+            .e-drawericon {
             background-position: center center;
             background-repeat: no-repeat;
             height: 32px;
@@ -59,7 +59,7 @@ Add following code in style section,
             background-size: 100% 100%;
             padding-right: 10px;
                   }
-         .drawericon:before{
+         .e-drawericon:before{
 			content: "\e76b";
             font-size: 28px;
             height:26px;

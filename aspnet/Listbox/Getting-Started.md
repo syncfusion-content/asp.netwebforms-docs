@@ -51,7 +51,7 @@ In the code behind, create and assign the data source to listbox as below.
 
 protected void Page_Load(object sender, EventArgs e)
         {
-            listboxsample.DataSource = GetData();
+            listBoxSample.DataSource = GetData();
         }
         private List<Languages> GetData()
         {

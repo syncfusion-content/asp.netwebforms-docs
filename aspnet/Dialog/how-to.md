@@ -72,13 +72,13 @@ Create a div element to render the child Dialog widget and use it as a content o
 
     <ej:Button ID="outerbutton" Text="Open Dialog" Type="Button" ClientSideOnClick="openDialog" runat="server"></ej:Button>
 
-    <ej:Dialog ID="outerdialog" Title="Dialog" ShowOnInit="false" Height="400px" Width="500px" runat="server">
+    <ej:Dialog ID="outerDialog" Title="Dialog" ShowOnInit="false" Height="400px" Width="500px" runat="server">
 
         <DialogContent>
 
             <ej:Button ID="innerbutton" Text="Open Nested Dialog" Type="Button" ClientSideOnClick="openNestedDialog" runat="server"></ej:Button>
 
-            <ej:Dialog ID="innerdialog" Title="Nested Dialog" ShowOnInit="false" Height="300px" Width="400px" runat="server">
+            <ej:Dialog ID="innerDialog" Title="Nested Dialog" ShowOnInit="false" Height="300px" Width="400px" runat="server">
 
                 <DialogContent>
                     <div>This is a nested Dialog</div>
@@ -101,10 +101,10 @@ Add the following script
 
     <script>
         function openDialog() {
-            $("#MainContent_outerdialog").ejDialog("open");
+            $("#MainContent_outerDialog").ejDialog("open");
         }
         function openNestedDialog() {
-            $("#MainContent_outerdialog_innerdialog").ejDialog("open");
+            $("#MainContent_outerDialog_innerDialog").ejDialog("open");
         }
     </script>
 
