@@ -752,3 +752,99 @@ The following screenshot shows the output of the above steps.
 Self-Referential Data Binding
 {:.caption}
 
+## Remote data
+
+### OData
+
+OData is a standardized protocol for creating and consuming data. You can provide the OData service URL directly to the ej.DataManager class and then you can assign it to Gantt dataSource.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Gantt.aspx.cs" Inherits="ASP_Doc.Gantt.Gantt" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+
+    <title>Gantt ASP sample</title>
+
+<%--Script Reference--%>
+
+</head>
+
+<body>
+
+<form id="form1" runat="server">
+ <ej:Gantt ID="Gantt" runat="server"
+    TaskIdMapping="TaskID"   
+    TaskNameMapping="TaskName" 
+    StartDateMapping="StartDate" 
+    EndDateMapping="EndDate"             
+    ProgressMapping="PercentDone"
+    ParentTaskIdMapping="ParentID"
+    DurationMapping="Duration"> 
+    <DataManager URL="http://js.syncfusion.com/demos/ejServices/Wcf/TreeGridGantt/TreeGantt.svc/SelfReferenceDatas"></DataManager>
+</ej:Gantt>  
+</form>
+
+</body>
+
+</html>
+
+{% endhighlight %}
+
+The following output is displayed for the code above,
+
+![](Data-Binding_images/Data-Binding_img3.png)
+![](Data-Binding_images/Data-Binding_img4.png)
+
+### WebAPI
+
+You can bind WebApi service data to Gantt. The data from WebApi service must be returned as object that has property Items with its value as datasource and this object can be pass to dataSource property of Gantt control.
+
+The following code example describes the above behavior.
+
+{% highlight javascript %}
+
+ <ej:Gantt ID="Gantt" runat="server"
+    TaskIdMapping="TaskID"   
+    TaskNameMapping="TaskName" 
+    StartDateMapping="StartDate" 
+    EndDateMapping="EndDate"             
+    ProgressMapping="PercentDone"
+    ParentTaskIdMapping="ParentID"
+    DurationMapping="Duration"> 
+    <DataManager URL="api/Home/GetGanttData"></DataManager>
+</ej:Gantt> 
+
+{% endhighlight %}
+
+{% highlight cs %}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
+using GanttExportService.Models;
+namespace GanttExportService {
+    public class HomeController: ApiController {
+        GanttDataEntities data = new GanttDataEntities();
+        public object GetGanttData() {
+            var Data = data.Table1.ToList();
+            return Data;
+        }
+    }
+}
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Data-Binding_images/Data-Binding_img5.png)
+![](Data-Binding_images/Data-Binding_img6.png)
