@@ -17,7 +17,7 @@ In the design page set the template property and create the data source in code 
 {% highlight html %}
 
 <div class="control">
-     <ej:ListBox ID="ListBox" runat="server" Width="350" Template='<div><img class="image" src="../content/images/Employees/${eimg}.png" alt="employee"/><div class="ename"> ${Text} </div><div class="desig"> ${desig} </div><div class="country"> ${country} </div></div>'>
+     <ej:ListBox ID="ListBox" runat="server" Width="350" Template='<div><img class="image" src="../content/images/Employees/${eimg}.png" alt="employee"/><div class="ename"> ${Text} </div><div class="design"> ${design} </div><div class="country"> ${country} </div></div>'>
      </ej:ListBox>
 </div>
 
@@ -28,19 +28,19 @@ public partial class Template : System.Web.UI.Page
         {
             protected void Page_Load(object sender, EventArgs e)
             {
-                List<EmployeeSpecialists> empl = new List<EmployeeSpecialists>();
-                empl.Add(new EmployeeSpecialists { Text = "Erik Linden", Eimg = "3", Desig = "Representative", Country = "England" });
-                empl.Add(new EmployeeSpecialists { Text = "John Linden", Eimg = "6", Desig = "Representative", Country = "Norway" });
-                empl.Add(new EmployeeSpecialists { Text = "Louis", Eimg = "7", Desig = "Representative", Country = "Australia" });
-                empl.Add(new EmployeeSpecialists { Text = "Lawrence", Eimg = "8", Desig = "Representative", Country = "India" });
-                selectExperts.DataSource = empl;
+                List<EmployeeSpecialists> employee = new List<EmployeeSpecialists>();
+                employee.Add(new EmployeeSpecialists { Text = "Erik Linden", Eimg = "3", Design = "Representative", Country = "England" });
+                employee.Add(new EmployeeSpecialists { Text = "John Linden", Eimg = "6", Design = "Representative", Country = "Norway" });
+                employee.Add(new EmployeeSpecialists { Text = "Louis", Eimg = "7", Design = "Representative", Country = "Australia" });
+                employee.Add(new EmployeeSpecialists { Text = "Lawrence", Eimg = "8", Design = "Representative", Country = "India" });
+                selectExperts.DataSource = employee;
             }
         }
         public class EmployeeSpecialists
         {
             public string Text { get; set; }
             public string Eimg { get; set; }
-            public string Desig { get; set; }
+            public string Design { get; set; }
             public string Country { get; set; }
         }
 
@@ -67,7 +67,7 @@ Define the styles for the template as below.
             padding: 6px 3px 1px 3px;
         }
 
-        .desig, .country {
+        .e-design, .country {
             font-size: smaller;
             padding: 3px 3px 0px 0px;
         }

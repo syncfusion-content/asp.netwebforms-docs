@@ -26,8 +26,8 @@ The following steps guide you in adding a Navigation Drawer control for a web ap
 
 {% highlight html %}
 
-     <div id="butdrawer" class="drawericon e-icon"></div>
-    <ej:NavigationDrawer runat="server" ID="navpane" Direction="Left" Type="Overlay" EnableListView="true" TargetId="butdrawer" >
+     <div id="butDrawer" class="drawericon e-icon"></div>
+    <ej:NavigationDrawer runat="server" ID="navpane" Direction="Left" Type="Overlay" EnableListView="true" TargetId="butDrawer" >
                         <ListViewSettings Width="300" SelectedItemIndex="0" PersistSelection="true" />
                         <Items>
                             <ej:NavigationDrawerItems  Text="Home"  ID="navhome" />
@@ -48,7 +48,7 @@ Create a div element that acts as a container for Navigation Drawer's Content. R
     <div id="container">
                         <div class="e-lv">
                             <div class="e-header">
-                                <div id="butdrawer" class="drawericon e-icon"></div>
+                                <div id="butDrawer" class="drawericon e-icon"></div>
                                 <h2>Home</h2>
                             </div>
                         </div>
@@ -100,7 +100,7 @@ To set the target icon image from sprite and to positioning the target icon and 
            min-height: 451px;
         }
 
-            .drawericon {
+            .e-drawericon {
             background-position: center center;
             background-repeat: no-repeat;
             height: 32px;
@@ -119,7 +119,7 @@ To set the target icon image from sprite and to positioning the target icon and 
         #<%=navpane.ClientID%> .subpage {
             padding: 0px;
         }
-         .drawericon:before{
+         .e-drawericon:before{
 			content: "\e76b";
             font-size: 28px;
             height:26px;
@@ -148,7 +148,7 @@ You can set contents and navigate to the contents from the navigationDrawers lis
 
 {% highlight html %}
 
-    <ej:NavigationDrawer runat="server" ID="navpane" Direction="Left" Type="Overlay" EnableListView="true" TargetId="butdrawer" ContentId="content_container">
+    <ej:NavigationDrawer runat="server" ID="navpane" Direction="Left" Type="Overlay" EnableListView="true" TargetId="butDrawer" ContentId="content_container">
                         <ListViewSettings Width="300" SelectedItemIndex="0" PersistSelection="true" MouseUp="headChange" />
                         <Items>
                             <ej:NavigationDrawerItems ImageURL="../Content/images/navigationdrawer/home.png" Text="Home" Href="#home" ID="navhome" />
@@ -161,7 +161,7 @@ You can set contents and navigate to the contents from the navigationDrawers lis
 
 {% endhighlight %}
 
-In the above code we have added targetId and contentId to find and navigate to subpages.
+In the above code we have added targetId and contentId to find and navigate to sub pages.
 
 
 Run the above code to render the following output.
@@ -180,7 +180,7 @@ You can load the appropriate content for the navigation items by updating the co
             $(".e-lv").addClass("e-navigation");
         });
         function headChange(e) {
-            $("#butdrawer").parent().children("h2").text(e.text);
+            $("#butDrawer").parent().children("h2").text(e.text);
         }
     </script>
 

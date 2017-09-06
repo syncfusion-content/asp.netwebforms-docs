@@ -33,7 +33,7 @@ Add the following code example to the corresponding ASPX page to render Split
 
         <div class="cols-sample-area">
 
-            <ej:Splitter ID="outterSplitter" runat="server" Height="280" Width="501">
+            <ej:Splitter ID="outerSplitter" runat="server" Height="280" Width="501">
 
                 <ej:splitpane panesize="200">
 
@@ -125,7 +125,7 @@ Add the following styles to show the Splitter control in horizontal order.
 
 {% highlight css %}
 
-#outterSplitter
+#outerSplitter
 
 {
 

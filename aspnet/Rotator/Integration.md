@@ -45,7 +45,7 @@ In an ASPX page, add the following code example to bind local data.
 
 
 
-<ej:Rotator ID="slidercontent" runat="server" SlideWidth="600px" SlideHeight="350px" DataCaptionField="Caption" DataUrlField="Url"></ej:Rotator>
+<ej:Rotator ID="sliderContent" runat="server" SlideWidth="600px" SlideHeight="350px" DataCaptionField="Caption" DataUrlField="Url"></ej:Rotator>
 
 
 
@@ -113,7 +113,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 
 
-            this.slidercontent.DataSource = data;
+            this.sliderContent.DataSource = data;
 
 
 
@@ -163,7 +163,7 @@ In the ASPX page, add the following code example that shows the way to bind data
 
 
 
-<ul id="slidercontent" data-bind="ejRotator: { dataSource: dataList, slideWidth: width, slideHeight: height }" />
+<ul id="sliderContent" data-bind="ejRotator: { dataSource: dataList, slideWidth: width, slideHeight: height }" />
 
 
 
@@ -292,15 +292,15 @@ The following code example shows the way to bind data to the Rotator control t
 {% highlight html %}
 
 
-<div ng-app="rotatApp">
+<div ng-app="rotatorApp">
 
 
 
-        <div ng-controller="RotatCtrl">
+        <div ng-controller="RotatorCtrl">
 
 
 
-            <ul id="slidercontent" ej-rotator e-datasource="dataList" e-slidewidth="600px" e-slideheight="350px" />
+            <ul id="sliderContent" ej-rotator e-datasource="dataList" e-slidewidth="600px" e-slideheight="350px" />
 
 
 
@@ -358,7 +358,7 @@ The following code example shows the way to bind data to the Rotator control t
 
 
 
-        angular.module('rotatApp', ['ejangular']).controller('RotatCtrl', function ($scope) {
+        angular.module('rotatorApp', ['ejangular']).controller('RotatorCtrl', function ($scope) {
 
 
 
