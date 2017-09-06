@@ -197,10 +197,10 @@ The following code example describes the above behavior.
                         </td>
                         <td style="text-align: left">
                             <select id="Assignee" name="Assignee">
-                                <option value="Nancy">Nancy Davloio</option>
+                                <option value="Nancy">Nancy Davolio</option>
                                 <option value="Andrew">Andrew Fuller</option>
                                 <option value="Janet">Janet Leverling</option>
-                                <option value="Margaret">Margaret hamilt</option>
+                                <option value="Margaret">Margaret Hamilton</option>
                                 <option value="Steven">Steven walker</option>
                                 <option value="Michael">Michael Suyama</option>
                                 <option value="Robert">Robert King</option>
@@ -484,10 +484,10 @@ The following code example describes the above behavior.
                         </td>
                         <td style="text-align: left">
                             <select id="Assignee" name="Assignee">
-                                <option value="Nancy">Nancy Davloio</option>
+                                <option value="Nancy">Nancy Davolio</option>
                                 <option value="Andrew">Andrew Fuller</option>
                                 <option value="Janet">Janet Leverling</option>
-                                <option value="Margaret">Margaret hamilt</option>
+                                <option value="Margaret">Margaret Hamilton</option>
                                 <option value="Steven">Steven walker</option>
                                 <option value="Michael">Michael Suyama</option>
                                 <option value="Robert">Robert King</option>

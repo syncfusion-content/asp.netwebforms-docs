@@ -71,7 +71,7 @@ You can set the images for each item by giving the image URL to the **ImageURL**
 
 {% highlight html %}
 
-      <ej:RadialMenu ID="defaultradialmenu" runat="server" TargetElementId="radialtargetone" >         
+      <ej:RadialMenu ID="defaultRadialMenu" runat="server" TargetElementId="radialTargetOne" >         
             <Items>
            
                 <ej:RadialMenuItems ImageURL="asp.syncfusion.com/demos/web/Content/images/RadialMenu/copy.png" Text="Copy" ></ej:RadialMenuItems>
@@ -91,7 +91,7 @@ Refer to the following code example to add target content to the **Radial Menu**
 
      <div id="contentDiv">
 
-            <div id="radialtargetone" class="content-container-fluid">
+            <div id="radialTargetOne" class="content-container-fluid">
                 <div class="row">
                         <ej:RTE ID="rteSampleone" runat="server" Width="100%" ShowToolBar="false"  ClientSideOnSelect="radialShow">
                         <RTEContent>
@@ -132,7 +132,7 @@ You can display the **Radial Menu** by performing desired action on the target c
 
            
             function radialShow(e) {
-            var target = $("#radialtargetone"), radialRadius = 150, radialDiameter = 2 * radialRadius,
+            var target = $("#radialTargetOne"), radialRadius = 150, radialDiameter = 2 * radialRadius,
             // To get Iframe positions
             iframeY = target.offset().top + e.event.clientY, iframeX = target.offset().left + e.event.clientX,
             // To set Radial Menu position within target

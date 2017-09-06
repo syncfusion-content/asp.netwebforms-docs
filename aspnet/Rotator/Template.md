@@ -36,18 +36,18 @@ In an ASPX page, add the following code example to render the Rotator control.
         {
             protected void Page_Load(object sender, EventArgs e)
             {
-                List<localdata> LocalValues = new List<localdata>();
-                LocalValues.Add(new localdata{ text= "Beautiful Bird", url= "../Images/rotator/bird.jpg" });
-                LocalValues.Add(new localdata { text = "Colorful Night", url = "../Images/rotator/night.jpg" });
-                LocalValues.Add(new localdata { text = "Technology", url = "../Images/rotator/tablet.jpg" });
-                LocalValues.Add(new localdata { text = "Nature", url = "../Images/rotator/nature.jpg" });
-                LocalValues.Add(new localdata { text = "Snow Fall", url = "../Images/rotator/snowfall.jpg" });
-                LocalValues.Add(new localdata { text = "Credit Card", url = "../Images/rotator/card.jpg" });
-                LocalValues.Add(new localdata { text = "Amazing Sculptures", url = "../Images/rotator/sculpture.jpg" });
+                List<LocalData> LocalValues = new List<LocalData>();
+                LocalValues.Add(new LocalData{ text= "Beautiful Bird", url= "../Images/rotator/bird.jpg" });
+                LocalValues.Add(new LocalData { text = "Colorful Night", url = "../Images/rotator/night.jpg" });
+                LocalValues.Add(new LocalData { text = "Technology", url = "../Images/rotator/tablet.jpg" });
+                LocalValues.Add(new LocalData { text = "Nature", url = "../Images/rotator/nature.jpg" });
+                LocalValues.Add(new LocalData { text = "Snow Fall", url = "../Images/rotator/snowfall.jpg" });
+                LocalValues.Add(new LocalData { text = "Credit Card", url = "../Images/rotator/card.jpg" });
+                LocalValues.Add(new LocalData { text = "Amazing Sculptures", url = "../Images/rotator/sculpture.jpg" });
                 ViewBag.datasource=LocalValues;
             }
         }
-        public class localdata
+        public class LocalData
         {
             public string Text { get; set; }
             public string url { get; set; }
