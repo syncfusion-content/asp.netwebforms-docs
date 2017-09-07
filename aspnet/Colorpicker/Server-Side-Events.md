@@ -51,7 +51,7 @@ protected void onSelect(object Sender, EventArgs e)
 
 {
 
-    Response.Write("Serverside event has been triggered");
+    Response.Write("Server side event has been triggered");
 
 }
 

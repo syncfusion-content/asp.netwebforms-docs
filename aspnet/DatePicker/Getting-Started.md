@@ -80,7 +80,7 @@ EJWEB DatePicker can be created using aspx code like as below code
 
     <%--initialize DatePicker component--%>
 
-    <ej:DatePicker runat="server" ID="datepick"></ej:DatePicker>
+    <ej:DatePicker runat="server" ID="datePicker"></ej:DatePicker>
 
 {% endhighlight %}
 
@@ -96,7 +96,7 @@ Below code shows how to assign values at initialization
 
     <%--initialize DatePicker component with current date--%>
 
-    <ej:DatePicker runat="server" ID="datepick" Value="<%# DateTime.Now %>">
+    <ej:DatePicker runat="server" ID="datePicker" Value="<%# DateTime.Now %>">
     </ej:DatePicker>
 
 {% endhighlight %}
@@ -112,7 +112,7 @@ You can assign values after initialization of EJWEB DatePicker (it helps to get 
 
             //create instance for datePicker.
             // only after control creation we can get dateObj otherwise it throws exception.
-            var dateObj = $("#datepick").ejDatePicker('instance');
+            var dateObj = $("#datePicker").ejDatePicker('instance');
 
             //set value using date object
             dateObj.option('value', new Date());
@@ -126,7 +126,7 @@ You can assign values after initialization of EJWEB DatePicker (it helps to get 
 
 {% endhighlight %}
 
-In ASP.NET to bind all the data sources to their server controls, we can use Page.DataBind() in the code behind page. Pleae refer the below code example.
+In ASP.NET to bind all the data sources to their server controls, we can use Page.DataBind() in the code behind page. Please refer the below code example.
 
 {% highlight javascript %}
 

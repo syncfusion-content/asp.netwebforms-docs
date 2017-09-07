@@ -40,24 +40,24 @@ SplitButton :  <http://help.syncfusion.com/js/splitbutton/getting-started>
         <table>
             <tr>
                 <td>
-                    <ej:togglebutton id="Play" runat="server" showroundedcorner="true" defaulttext="Play"
-                                     activetext="Pause" size="Large" clientsideonclick="playpause" contenttype="TextAndImage"
-                                     activeprefixicon="e-icon e-mediapause" defaultprefixicon="e-icon e-mediaplay">
+                    <ej:togglebutton ID="Play" runat="server" ShowRoundedCorner="true" DefaultText="Play"
+                                     ActiveText="Pause" Size="Large" ClientSideOnClick="playPause" ContentType="TextAndImage"
+                                     ActivePrefixIcon="e-icon e-mediapause" DefaultPrefixIcon="e-icon e-mediaplay">
                     </ej:togglebutton>
                 </td>
                 <td>
-                    <ej:button id="Start" runat="server" text="Start" size="Large" showroundedcorner="true"
-                               clientsideonclick="stop"></ej:button>
+                    <ej:button ID="Start" runat="server" Text="Start" Size="Large" ShowRoundedCorner="true"
+                               ClientSideOnClick="stop"></ej:button>
                 </td>
                 <td>
-                    <ej:button id="Stop" runat="server" text="stop" size="Large" showroundedcorner="true"
-                               clientsideonclick="start"></ej:button>
+                    <ej:button ID="Stop" runat="server" Text="stop" Size="Large" ShowRoundedCorner="true"
+                               ClientSideOnClick="start"></ej:button>
                 </td>
                 <td>
-                    <ej:button id="Open" runat="server" text="Open" size="Large" showroundedcorner="true"></ej:button>
+                    <ej:button ID="Open" runat="server" Text="Open" Size="Large" ShowRoundedCorner="true"></ej:button>
                 </td>
                 <td>
-                    <ej:splitbutton id="Save" runat="server" size="Large" showroundedcorner="true" text="save">
+                    <ej:splitbutton ID="Save" runat="server" Size="Large" ShowRoundedCorner="true" Text="save">
                         <Items>
                             <ej:SplitItem Text="Open...">
                             </ej:SplitItem>
@@ -113,18 +113,18 @@ Add Button controls by using the following code example. 
 {% highlight html %}
 
  <td>
-        <ej:togglebutton id="Bold" runat="server" defaulttext="Bold" activetext="Bold" showroundedcorner="true"
-                         size="Small" clientsideonclick="boldSetunset">
+        <ej:togglebutton ID="Bold" runat="server" DefaultText="Bold" ActiveText="Bold" ShowRoundedCorner="true"
+                         Size="Small" ClientSideOnClick="boldSetUnset">
         </ej:togglebutton>
     </td>
     <td>
-        <ej:togglebutton id="Italic" runat="server" defaulttext="Italic" showroundedcorner="true"
-                         size="Small" clientsideonclick="italicSetunset">
+        <ej:togglebutton ID="Italic" runat="server" DefaultText="Italic" ShowRoundedCorner="true"
+                         Size="Small" ClientSideOnClick="italicSetUnset">
         </ej:togglebutton>
     </td>
     <td>
-        <ej:splitbutton id="Underline" runat="server" text="Underline" size="Small" showroundedcorner="true"
-                        clientsideonclick="underlineSetunset" clientsideonitemselected="select">
+        <ej:splitbutton ID="Underline" runat="server" Text="Underline" Size="Small" ShowRoundedCorner="true"
+                        ClientSideOnClick="underlineSetUnset" ClientSideOnTtemSelected="select">
             <Items>
                 <ej:SplitItem Text="Dotted Line">
                 </ej:SplitItem>
@@ -143,7 +143,7 @@ Add Function Definition from click event to Button function. 
 {% highlight js %}
 
 <script type="text/javascript">
-    function boldSetunset(e) {
+    function boldSetUnset(e) {
         if (e.isChecked) {
             $(".sample span").wrap("<b></b>");<%--add the bold tag to span--%>
         }
@@ -151,7 +151,7 @@ Add Function Definition from click event to Button function. 
             $(".sample span").unwrap("<b></b>");<%--remove the bold tag to span--%>
         }
     }
-    function italicSetunset(e) {
+    function italicSetUnset(e) {
         if ($(".sample span").parents().is("i")) {
             $(".sample span").unwrap("<i></i>");<%--remove the italic tag to span--%>
         }
@@ -159,7 +159,7 @@ Add Function Definition from click event to Button function. 
             $(".sample span").wrap("<i></i>");<%--add the italic tag to span--%>
         }
     }
-    function underlineSetunset(e) {
+    function underlineSetUnset(e) {
         if ($(".sample span").parents().is("u")) {
             $(".sample span").unwrap("<u></u>");<%--remove the underline tag to span--%>
         } else {

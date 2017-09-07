@@ -22,7 +22,7 @@ Refer below code example to set selected date at initialization
 
 {% endhighlight %}
 
-In ASP.NET to bind all the data sources to their server controls, we can use Page.DataBind() in the code behind page. Pleae refer the below code example.
+In ASP.NET to bind all the data sources to their server controls, we can use Page.DataBind() in the code behind page. Please refer the below code example.
 
 {% highlight javascript %}
 
