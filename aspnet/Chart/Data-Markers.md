@@ -84,7 +84,7 @@ The following code example shows how to enable data label and set its horizontal
     <Series>
         <ej:Series>
             <Marker>
-                <%--Set text alignment to datalabel text--%>
+                <%--Set text alignment to data label text--%>
                 <DataLabel Visible="true" HorizontalTextAlignment="Center" VerticalTextAlignment="Far"></DataLabel>
             </Marker>
         </ej:Series>
@@ -179,7 +179,7 @@ The following code example shows how to set textPosition to display data label i
     <Series>
         <ej:Series>
             <Marker>
-                <%--Place the datalabel text position in the centre of the rectangle--%>
+                <%--Place the data label text position in the centre of the rectangle--%>
                 <DataLabel TextPosition="Middle">
                 </DataLabel>
             </Marker>
@@ -210,7 +210,7 @@ The following code example shows how to set the LabelPosition,
                 <ej:Points X="France" Y="22" Text="France 22%"></ej:Points>
             </Points>
             <Marker>
-                <%--Place the datalabel text position in the centre of the rectangle--%>
+                <%--Place the data label text position in the centre of the rectangle--%>
                 <DataLabel Visible="true" Shape="Rectangle">
                     <Font Color="white"></Font>
                 </DataLabel>
@@ -300,7 +300,7 @@ When the data is provided by using the Points option, you can add marker for eac
                 <ej:Points X="Dec" Y="32"></ej:Points>
             </Points>
             <Marker>
-                <%--Place the datalabel text position in the centre of the rectangle--%>
+                <%--Place the data label text position in the centre of the rectangle--%>
                 <DataLabel Visible="true" Shape="Rectangle">
                     <Font Color="white"></Font>
                 </DataLabel>
