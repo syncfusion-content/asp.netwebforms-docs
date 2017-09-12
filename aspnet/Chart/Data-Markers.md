@@ -261,7 +261,7 @@ The label can be wrapped for pie, doughnut, funnel, and pyramid series by settin
 
 ## Binding label from the datasource
 
-You can bind the text value to the datalabel from the datasource and then you need to map the text value field with the **TextMappingName** property respectively.
+You can bind the text value to the data label from the datasource and then you need to map the text value field with the **TextMappingName** property respectively.
 
 
 
