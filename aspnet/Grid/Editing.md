@@ -247,7 +247,7 @@ The following code example describes the above behavior.
 
 {% highlight js %}
 
-     <script id="template" type="text/x-jsrender">
+     <script id="template" type="application/javascript">
         function create() 
             {
 	          return $("<input>");
