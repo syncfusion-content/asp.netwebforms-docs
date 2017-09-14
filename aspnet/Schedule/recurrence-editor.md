@@ -39,7 +39,7 @@ The following code example depicts the way to generate the recurrence rule.
 
 <script type="text/javascript">
     function onCreate() {
-        this.element.find("#recurrencetype_wrapper").css("width", "33%");
+        this.element.find("#RecurrenceType_Wrapper").css("width", "33%");
     }
     function closeRecurrence() {
         var obj = $("#RecurrenceEditor1").data("ejRecurrenceEditor");        

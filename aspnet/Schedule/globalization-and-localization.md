@@ -68,7 +68,7 @@ The following code example shows how to localize the Schedule control in **fr-FR
                 EveryWeekDay: "chaque jour de la semaine",
                 Never: "jamais",
                 After: "après",
-                Occurence: "apparition",
+                Occurrence: "apparition",
                 On: "sur",
                 Edit: "Modifier",
                 RecurrenceDay: "Jour (s)",

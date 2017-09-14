@@ -41,20 +41,20 @@ Now, this section explains how to populate JSON data to the Spreadsheet. You can
 {% highlight html %}
 
          <ej:Spreadsheet ID="Spreadsheet"  runat="server">
-            <ClientSideEvents LoadComplete="loadComplete" OpenFailure="openfailure" />
+            <ClientSideEvents LoadComplete="loadComplete" OpenFailure="openFailure" />
 </ej:Spreadsheet>
 
 <script type="text/javascript">
         function loadComplete(args) {
-            var xlFormat = this.XLFormat;
+            var excelFormat = this.XLFormat;
             if (!this.isImport) {
                 this.setWidthToColumns([142, 132, 110, 105, 102, 112, 122, 122, 102]);
-                xlFormat.format({ "style": { "font-weight": "bold" } }, "A1:H1");
-                xlFormat.format({ "type": "currency" }, "E2:H11");
+                excelFormat.format({ "style": { "font-weight": "bold" } }, "A1:H1");
+                excelFormat.format({ "type": "currency" }, "E2:H11");
                 this.XLRibbon.updateRibbonIcons();
             }
         }
-        function openfailure(args) {
+        function openFailure(args) {
             this.alert(args.statusText);
         }
  </script>
@@ -124,7 +124,7 @@ To apply conditional formats for a range use [`setCFRule`](http://help.syncfusio
 {% highlight html %}
 
          <ej:Spreadsheet ID="Spreadsheet"  runat="server">
-            <ClientSideEvents LoadComplete="loadComplete" OpenFailure="openfailure" />
+            <ClientSideEvents LoadComplete="loadComplete" OpenFailure="openFailure" />
 </ej:Spreadsheet>
         
 <script type="text/javascript">
@@ -148,7 +148,7 @@ The Spreadsheet can save its data, style, format into an excel file. To enable s
 {% highlight html %}
 
          <ej:Spreadsheet ID="Spreadsheet" OnServerExcelExporting="Spreadsheet_ServerExcelExporting" runat="server">
-            <ClientSideEvents LoadComplete="loadComplete" OpenFailure="openfailure" />
+            <ClientSideEvents LoadComplete="loadComplete" OpenFailure="openFailure" />
 </ej:Spreadsheet>
 
 {% endhighlight %}

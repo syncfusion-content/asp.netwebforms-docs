@@ -63,15 +63,15 @@ public class TagCloudData
 
 		sites.Add(new TagCloudData { text = "Blekko", url = "http://blekko.com/", frequency = 4 });
 
-		sites.Add(new TagCloudData { text = "Alhea", url = "http://www.alhea.com/", frequency = 3 });
+		sites.Add(new TagCloudData { text = "AlHea", url = "http://www.alhea.com/", frequency = 3 });
 
 		sites.Add(new TagCloudData { text = "MyWebSearch", url = "http://home.mywebsearch.com/index.jhtml", frequency = 10 });
 
-		sites.Add(new TagCloudData { text = "Infospace", url = "http://infospace.com/", frequency = 8 });
+		sites.Add(new TagCloudData { text = "InfoSpace", url = "http://infospace.com/", frequency = 8 });
 
 		sites.Add(new TagCloudData { text = "Google", url = "https://www.google.co.in/", frequency = 24 });
 
-		sites.Add(new TagCloudData { text = "Dogpile", url = "http://www.dogpile.com/", frequency = 4 });
+		sites.Add(new TagCloudData { text = "DogPile", url = "http://www.dogpile.com/", frequency = 4 });
 
 
 
@@ -81,9 +81,9 @@ public class TagCloudData
 
 		sites.Add(new TagCloudData { text = "WebCrawler", url = "http://www.webcrawler.com/", frequency = 12 });
 
-		sites.Add(new TagCloudData { text = "Contenko", url = "http://www.contenko.com/", frequency = 3 });
+		sites.Add(new TagCloudData { text = "ContenKO", url = "http://www.contenko.com/", frequency = 3 });
 
-		sites.Add(new TagCloudData { text = "Aol Search", url = "http://search.aol.com", frequency = 16 });
+		sites.Add(new TagCloudData { text = "AOL Search", url = "http://search.aol.com", frequency = 16 });
 
 
 

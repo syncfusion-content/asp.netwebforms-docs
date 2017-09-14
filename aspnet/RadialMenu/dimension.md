@@ -58,7 +58,7 @@ Refer to the following code example.
 
 {% highlight html %}
 
-      <ej:RadialMenu ID="defaultRadialMenu" runat="server" TargetElementId="radialtargetone">      
+      <ej:RadialMenu ID="defaultRadialMenu" runat="server" TargetElementId="radialTargetOne">      
             <Position X="10" Y="10" />   
             <Items>
                 <ej:RadialMenuItems ImageURL="asp.syncfusion.com/demos/web/Content/images/RadialMenu/copy.png" Text="Copy" ></ej:RadialMenuItems>
@@ -76,7 +76,7 @@ Add the following script in your code.
 {% highlight javascript %}
 
         function radialShow(e) {
-            var target = $("#radialtargetone"), radialRadius = 150, radialDiameter = 2 * radialRadius,
+            var target = $("#radialTargetOne"), radialRadius = 150, radialDiameter = 2 * radialRadius,
                 // To get Iframe positions
                 iframeY = target.offset().top + e.event.clientY, iframeX = target.offset().left + e.event.clientX,              
          }

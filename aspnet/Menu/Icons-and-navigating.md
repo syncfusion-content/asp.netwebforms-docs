@@ -45,7 +45,7 @@ public partial class Menu : System.Web.UI.Page
 
         menu.Add(new icons { id = 1, text = "Inbox", parentId = null, sprite = "mail sprite-root" });
 
-        menu.Add(new icons { id = 2, text = "Sent items", parentId = null, sprite = "mail sprite-sentitems" });
+        menu.Add(new icons { id = 2, text = "Sent items", parentId = null, sprite = "mail sprite-sent-items" });
 
         menu.Add(new icons { id = 3, text = "All mail", parentId = null, sprite = "mail sprite-notes" });
 
@@ -149,7 +149,7 @@ Add the following code example in your style section.
 
     .sprite-outbox { background-position: -24px -500px; }
 
-    .sprite-sentitems{ background-position: -26px -118px; }
+    .sprite-sent-items{ background-position: -26px -118px; }
 
 
 

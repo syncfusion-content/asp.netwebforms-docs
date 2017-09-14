@@ -199,7 +199,7 @@ Refer to the following link to know details on TextBoxes controls.
 
         }
 
-        .ctrllabel
+        .ctrl-label
 
         {
 
