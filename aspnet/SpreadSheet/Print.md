@@ -38,12 +38,12 @@ The following code example describes the above behavior.
 
 <script type="text/javascript">
  function printClick(e) {
-            var xlObj = $('#<%= FlatSpreadsheet.ClientID %>').data("ejSpreadsheet");
-            xlObj.XLPrint.printSheet();
+            var excelObj = $('#<%= FlatSpreadsheet.ClientID %>').data("ejSpreadsheet");
+            excelObj.XLPrint.printSheet();
         }
 function printSelClick(e) {
-            var xlObj = $('#<%= FlatSpreadsheet.ClientID %>').data("ejSpreadsheet");
-            xlObj.XLPrint.printSelection();
+            var excelObj = $('#<%= FlatSpreadsheet.ClientID %>').data("ejSpreadsheet");
+            excelObj.XLPrint.printSelection();
         }
 </script>
 {% endhighlight %}

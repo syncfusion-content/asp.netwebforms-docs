@@ -555,7 +555,7 @@ In the view page, add TreeView element and map the properties defined in to the
         </div>
         <script type="text/javascript">
             var treeObj, inputObj, count = 0;
-            var onFirstChk = true;
+            var onFirstCheck = true;
             window._temp = [];
             function onCreate(args) {
                 // Creating Objects for TreeView & MaskEdit TextBox
@@ -651,7 +651,7 @@ TreeView allows us to bind and update tree data in mapped data component while a
                 <div style="width: 400px; float:left">
                     <button type="button" ng-click="add()">Add</button>
                     <button type="button" ng-click="remove()">Remove</button>
-                    <div id="treeView" e-allowediting="true" ej-treeview e-fields-datasource="dataList" e-fields-id="filedsId" e-fields-parentid="parentId" e-fields-text="name" e-fields-haschild="hasChild" e-fields-expanded="expanded" e-showcheckbox="true" e-allowediting="true"></div>
+                    <div id="treeView" e-allowediting="true" ej-treeview e-fields-datasource="dataList" e-fields-id="fieldsId" e-fields-parentid="parentId" e-fields-text="name" e-fields-haschild="hasChild" e-fields-expanded="expanded" e-showcheckbox="true" e-allowediting="true"></div>
                 </div>
                 <div style="width: 400px; float:left">
                     <table>
@@ -659,7 +659,7 @@ TreeView allows us to bind and update tree data in mapped data component while a
                             <td>
                                 <p>direct to $scope.dataList</p>
                                 <div ng-repeat="icon in dataList">
-                                    <input type="text" ng-model="icon.name" class="sampleText" /><button type="button" ng-click="delete(icon.filedsId)">Delete</button><br />
+                                    <input type="text" ng-model="icon.name" class="sampleText" /><button type="button" ng-click="delete(icon.fieldsId)">Delete</button><br />
                                 </div>
                             </td>
                         </tr>
@@ -672,33 +672,33 @@ TreeView allows us to bind and update tree data in mapped data component while a
     <script>
     
         var phones = [
-                { filedsId: 1, name: "Fiction Book Lists", hasChild: true, expanded: true },
-                { filedsId: 2, parentId: 1, name: "To Kill a Mockingbird " },
-                { filedsId: 3, parentId: 1, name: "Pride and Prejudice " },
-                { filedsId: 4, parentId: 1, name: "Harry Potter and the Sorcerer's Stone" },
-                { filedsId: 5, parentId: 1, name: "The Hobbit " },
-                { filedsId: 6, name: "Mystery Book Lists", hasChild: true, expanded: true },
-                { filedsId: 7, parentId: 6, name: "And Then There Were None " },
-                { filedsId: 8, parentId: 6, name: "Angels & Demons" },
-                { filedsId: 9, parentId: 6, name: "In Cold Blood " },
-                { filedsId: 10, parentId: 6, name: "The Name of the Rose " },
-                { filedsId: 11, name: "Horror Novels", hasChild: true },
-                { filedsId: 12, parentId: 11, name: "The Shining (The Shining, #1) " },
-                { filedsId: 13, parentId: 11, name: "The Haunting of Hill House " },
-                { filedsId: 14, parentId: 11, name: "The Silence of the Lambs (Hannibal Lecter, #2) " },
-                { filedsId: 15, name: "Novel Lists", hasChild: true },
-                { filedsId: 16, parentId: 15, name: "Shadow Hills (Shadow Hills, #1) " },
-                { filedsId: 17, parentId: 15, name: "After Forever Ends " },
-                { filedsId: 18, parentId: 15, name: "Angel Star" },
-                { filedsId: 19, parentId: 15, name: "Raised by Wolves" },
-                { filedsId: 20, parentId: 15, name: "Falling From Grace" }];
+                { fieldsId: 1, name: "Fiction Book Lists", hasChild: true, expanded: true },
+                { fieldsId: 2, parentId: 1, name: "To Kill a Mockingbird " },
+                { fieldsId: 3, parentId: 1, name: "Pride and Prejudice " },
+                { fieldsId: 4, parentId: 1, name: "Harry Potter and the Sorcerer's Stone" },
+                { fieldsId: 5, parentId: 1, name: "The Hobbit " },
+                { fieldsId: 6, name: "Mystery Book Lists", hasChild: true, expanded: true },
+                { fieldsId: 7, parentId: 6, name: "And Then There Were None " },
+                { fieldsId: 8, parentId: 6, name: "Angels & Demons" },
+                { fieldsId: 9, parentId: 6, name: "In Cold Blood " },
+                { fieldsId: 10, parentId: 6, name: "The Name of the Rose " },
+                { fieldsId: 11, name: "Horror Novels", hasChild: true },
+                { fieldsId: 12, parentId: 11, name: "The Shining (The Shining, #1) " },
+                { fieldsId: 13, parentId: 11, name: "The Haunting of Hill House " },
+                { fieldsId: 14, parentId: 11, name: "The Silence of the Lambs (Hannibal Lecter, #2) " },
+                { fieldsId: 15, name: "Novel Lists", hasChild: true },
+                { fieldsId: 16, parentId: 15, name: "Shadow Hills (Shadow Hills, #1) " },
+                { fieldsId: 17, parentId: 15, name: "After Forever Ends " },
+                { fieldsId: 18, parentId: 15, name: "Angel Star" },
+                { fieldsId: 19, parentId: 15, name: "Raised by Wolves" },
+                { fieldsId: 20, parentId: 15, name: "Falling From Grace" }];
         var Nodes = ["1", "2"];
         angular.module('treeApp', ['ejangular']).controller('TreeCtrl', function ($scope) {
             $scope.dataList = phones;
     
             $scope.add = function () {
                 var treeObj = $("#<%= treeView.ClientID %>").data("ejTreeView"), obj;
-                //obj = [{ filedsId: 21, parentId: 1, name: "Newnode" }];
+                //obj = [{ fieldsId: 21, parentId: 1, name: "Newnode" }];
                 obj = "New TextNode";
                 treeObj.addNode(obj);    // Two way binding when add node
             };
@@ -710,13 +710,13 @@ TreeView allows us to bind and update tree data in mapped data component while a
             };
     
             // Delete from outside Tree
-            $scope.delete = function (filedsId) {
+            $scope.delete = function (fieldsId) {
                 for (var i = $scope.dataList.length - 1; i > -1; i--) {
-                    if ($scope.dataList[i].filedsId === filedsId)
+                    if ($scope.dataList[i].fieldsId === fieldsId)
                         $scope.dataList.splice(i, 1); // Delete parent node
                 }
                 for (var i = $scope.dataList.length - 1; i > -1; i--) {
-                    if ($scope.dataList[i].parentId === filedsId)
+                    if ($scope.dataList[i].parentId === fieldsId)
                         $scope.dataList.splice(i, 1); // Delete child nodes
                 }
             };

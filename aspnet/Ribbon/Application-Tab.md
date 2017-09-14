@@ -188,7 +188,7 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
 				<div class="e-accuser e-newpageicon"></div>
 				<div class="e-userCon">
 					<div>user</div>
-					<div>xyz@syncfusion.com</div>
+					<div>any@syncfusion.com</div>
 				</div>
 			</div>
 		</div>

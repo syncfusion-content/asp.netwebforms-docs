@@ -13,13 +13,13 @@ The native data format for Spreadsheet is JSON. You can load and store JSON data
 {% highlight javascript %}
 
 function SaveAsJSON() {
-    var xlObj = $("#FlatSpreadsheet").data("ejSpreadsheet");
-    window.xlData = xlObj.saveAsJSON();
+    var excelObj = $("#FlatSpreadsheet").data("ejSpreadsheet");
+    window.excelData = excelObj.saveAsJSON();
 }
 
 function loadFromJSON() {
-    var xlObj = $("#FlatSpreadsheet").data("ejSpreadsheet");
-    xlObj.loadFromJSON(window.xlData);
+    var excelObj = $("#FlatSpreadsheet").data("ejSpreadsheet");
+    excelObj.loadFromJSON(window.excelData);
 }
 
 {% endhighlight %}
@@ -86,9 +86,9 @@ Spreadsheet can open excel document as a stream and the document stream was eith
 {% highlight javascript %}
 
 function fileOpen(args) {
-    var xlObj = $("#FlatSpreadsheet").data("ejSpreadsheet"),
+    var excelObj = $("#FlatSpreadsheet").data("ejSpreadsheet"),
     stream = args.files[0]; // file stream from ejUploadbox
-    xlObj["import"]({ file: stream });
+    excelObj["import"]({ file: stream });
 }
 
 {% endhighlight %}
@@ -101,8 +101,8 @@ The code snippets to open excel document as URL from client side are as follows,
 {% highlight javascript %}
 
 function fileOpen() {
-    var xlObj = $("#FlatSpreadsheet").data("ejSpreadsheet");
-    xlObj["import"]({Url: "http://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx"});
+    var excelObj = $("#FlatSpreadsheet").data("ejSpreadsheet");
+    excelObj["import"]({Url: "http://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx"});
 }
 
 {% endhighlight %}
@@ -233,8 +233,8 @@ To save Spreadsheet document as excel file, [`export`](http://help.syncfusion.co
 {% highlight javascript %}
 
 function saveAsFile() {
-    var xlObj = $("#FlatSpreadsheet").data("ejSpreadsheet");
-    xlObj.XLExport["export"](ej.Spreadsheet.exportType.Excel);
+    var excelObj = $("#FlatSpreadsheet").data("ejSpreadsheet");
+    excelObj.XLExport["export"](ej.Spreadsheet.exportType.Excel);
 }
 
 {% endhighlight %}

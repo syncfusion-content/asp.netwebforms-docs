@@ -184,7 +184,7 @@ When you move the editor’s wrapper element into another DOM element, the edito
 <script type="text/javascript">
     function appendTo() {
         var editor = $("#<%=RTE1.ClientID%>").ejRTE("instance");
-        editor._rteWapper.appendTo($("#<%=Dialog1.ClientID%>"));
+        editor._rteWrapper.appendTo($("#<%=Dialog1.ClientID%>"));
     }
     function refresh() {
         var editor = $("#<%=RTE1.ClientID%>").ejRTE("instance");

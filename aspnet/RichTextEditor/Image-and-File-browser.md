@@ -192,7 +192,7 @@ The General and Advanced tabs in the RTE Image browser can be removed by setting
 <script>
     function onCreate(args){
         //setting autoUpload property as true                   
-        this._explorerObj._uploadtag.data("ejUploadbox").option("autoUpload", true);
+        this._explorerObj._uploadTag.data("ejUploadbox").option("autoUpload", true);
     }
 </script>
     

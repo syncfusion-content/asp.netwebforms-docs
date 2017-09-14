@@ -240,7 +240,7 @@ The following code example lets you create the custom appointment window (using 
             </div>
             <div>
                 <button type="submit" onclick="cancel()" id="buttonCancel" style="float: right; margin-right: 20px; margin-bottom: 10px;">Cancel</button>
-                <button type="submit" onclick="save()" id="btnsubmit" style="float: right; margin-right: 20px; margin-bottom: 10px;">Submit</button>
+                <button type="submit" onclick="save()" id="buttonSubmit" style="float: right; margin-right: 20px; margin-bottom: 10px;">Submit</button>
             </div>
         </div>
         <div id="recWindow" style="display: none">
@@ -299,7 +299,7 @@ The following function needs to be defined within script section, which gets cal
     $(function () {
             // defining sub-controls used within custom appointment window
             $("#buttonCancel").ejButton({ width: '85px' });
-            $("#btnsubmit").ejButton({ width: '85px' });
+            $("#buttonSubmit").ejButton({ width: '85px' });
             $("#recurrence").ejCheckBox({ change: "recurCheck" });
             $("#recCancel,#recSubmit").ejButton({ click: "onRecurrenceClick" });
         });

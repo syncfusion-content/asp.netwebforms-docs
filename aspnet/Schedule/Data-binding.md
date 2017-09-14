@@ -213,9 +213,9 @@ public class ScheduleAppointmentsObjDatum
         List<ScheduleAppointmentsObjData> list = new List<ScheduleAppointmentsObjData>();
         list.Add(new ScheduleAppointmentsObjData(100, "Bering Sea Gold", "chennai", "05/02/2014 09:00:00 AM", "05/02/2014 10:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=2;COUNT=10",null,null));
         list.Add(new ScheduleAppointmentsObjData(101, "Bering Sea Gold", "mum", "05/02/2014 04:00:00 AM", "05/02/2014 05:00:00 AM", "", "1", "", false, "", "", "", "", false, "", "", "", null, null));
-        list.Add(new ScheduleAppointmentsObjData(102, "Bering Sea Gold", "trichy", "05/02/2014 04:00:00 PM", "05/02/2014 05:30:00 PM", "", "1", "", false, "", "", "", "", false, "", "", "", null, null));
+        list.Add(new ScheduleAppointmentsObjData(102, "Bering Sea Gold", "tiruchirapalli", "05/02/2014 04:00:00 PM", "05/02/2014 05:30:00 PM", "", "1", "", false, "", "", "", "", false, "", "", "", null, null));
         list.Add(new ScheduleAppointmentsObjData(103, "What Happened Next?", "chennai", "05/04/2014 03:00:00 AM", "05/04/2014 04:30:00 AM", "", "1", "", false, "", "", "", "", false, "", "", "", null, null));
-        list.Add(new ScheduleAppointmentsObjData(104, "Bering Sea Gold", "trichy", "05/04/2014 05:00:00 AM", "05/04/2014 05:40:00 AM", "", "1", "", false, "", "", "", "", false, "", "", "", null,null));
+        list.Add(new ScheduleAppointmentsObjData(104, "Bering Sea Gold", "tiruchirapalli", "05/04/2014 05:00:00 AM", "05/04/2014 05:40:00 AM", "", "1", "", false, "", "", "", "", false, "", "", "", null,null));
         list.Add(new ScheduleAppointmentsObjData(105, "Daily Planet", "chennai", "05/03/2014 01:00:00 AM", "05/03/2014 02:00:00 AM", "", "1", "", false, "", "", "", "", false, "", "", "", null, null));
         list.Add(new ScheduleAppointmentsObjData(106, "Alaska: The Last Frontier", "chennai", "05/03/2014 08:00:00 AM", "05/03/2014 09:00:00 AM", "", "1", "", false, "", "", "", "", false, "", "", "", null, null));
         list.Add(new ScheduleAppointmentsObjData(107, "How It's Made", "chennai", "05/01/2014 06:00:00 AM", "05/01/2014 06:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=WEEKLY;BYDAY=MO,TU;INTERVAL=1;COUNT=15", null, null));
@@ -1296,7 +1296,7 @@ Scheduler supports binding events data from the XML configured file through XML 
    <APPOINTMENT 
    Id ="102"
    Subject="Bering Sea Gold"
-   Location="trichy"
+   Location="tiruchirapalli"
    StartTime="5/2/2014 4:00:00 PM"
    EndTime="5/2/2014 5:30:00 PM"
    Description=""
@@ -1334,7 +1334,7 @@ The code to handle the CRUD operation of the appointments at code behind can be 
 
     public partial class _Default : Page
     {
-        ScheduledataDataContext db = new ScheduledataDataContext();
+        ScheduleDataDataContext db = new ScheduleDataDataContext();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
            
         protected void Page_Load(object sender, EventArgs e)
