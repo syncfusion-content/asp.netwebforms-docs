@@ -37,17 +37,17 @@ Create an ASPX file and add ejCheckBox element to render the Checkbox.
         <br />
         <table>
             <tr>
-                <td class="chkrad">
+                <td class="check-rad">
                     <ej:CheckBox ID="Checkbox1" runat="server" Value="Music">
                     </ej:CheckBox>
                     <label for="Checkbox1">Music</label>
                 </td>
-                <td class="chkrad">
+                <td class="check-rad">
                     <ej:CheckBox ID="Checkbox3" runat="server" Value="Sports">
                     </ej:CheckBox>
                     <label for="Checkbox3">Sports</label>
                 </td>
-                <td class="chkrad">
+                <td class="check-rad">
                     <ej:CheckBox ID="Checkbox4" runat="server" Value="Bike riding">
                     </ej:CheckBox>
                     <label for="Checkbox4" class="clslab">Bike Riding</label>
@@ -60,20 +60,20 @@ Create an ASPX file and add ejCheckBox element to render the Checkbox.
         <br />
         <table>
             <tr>
-                <td class="chkrad">
+                <td class="check-rad">
                     <ej:CheckBox ID="Checkbox9" runat="server" Value="Playing Games">
                     </ej:CheckBox>
                     <label for="Checkbox9">Playing Games</label>
                 </td>
-                <td class="chkrad">
+                <td class="check-rad">
                     <ej:CheckBox ID="Checkbox5" runat="server" Value="Hearing Songs">
                     </ej:CheckBox>
                     <label for="Checkbox5">Hearing Songs</label>
                 </td>
-                <td class="chkrad">
+                <td class="check-rad">
                     <ej:CheckBox ID="Checkbox6" runat="server" Value="Watching tv">
                     </ej:CheckBox>
-                    <label for="Checkbox6">Watching Tv</label>
+                    <label for="Checkbox6">Watching TV</label>
                 </td>
             </tr>
         </table>
@@ -83,19 +83,19 @@ Create an ASPX file and add ejCheckBox element to render the Checkbox.
         <br />
         <table>
             <tr>
-                <td class="chkrad">
+                <td class="check-rad">
                     <ej:CheckBox ID="Checkbox2" runat="server" Value="Video" EnableTriState="true">
                     </ej:CheckBox>
                     <label for="Checkbox2">
                         Video</label>
                 </td>
-                <td class="chkrad">
+                <td class="check-rad">
                     <ej:CheckBox ID="Checkbox7" runat="server" Value="Audio" EnableTriState="true">
                     </ej:CheckBox>
                     <label for="Checkbox7">
                         Audio</label>
                 </td>
-                <td class="chkrad">
+                <td class="check-rad">
                     <ej:CheckBox ID="Checkbox8" runat="server" Value="Picture" EnableTriState="true">
                     </ej:CheckBox>
                     <label for="Checkbox8">
@@ -126,7 +126,7 @@ Add the following styles to show the Checkbox control in an order.
             padding: 20px;
             border: 1px solid gray;
         }
-        .chkrad
+        .e-check-rad
         {
             font-weight: bold;
             width: 200px;
@@ -139,13 +139,13 @@ Add the script into your ASPX page.
 {% highlight js %}
 
         function click() {
-            var checkeditem = "";
+            var checkedItem = "";
             $(".e-checkbox").each(function (index, args) {
                 if ($(this).data('ejCheckBox').isChecked) {
-                    checkeditem += $(this).data('ejCheckBox').model.value;
+                    checkedItem += $(this).data('ejCheckBox').model.value;
                 }
             });
-            alert("Checked items are -"+checkeditem);
+            alert("Checked items are -"+checkedItem);
         }
 
 {% endhighlight %}
@@ -175,10 +175,10 @@ Add the following code in the <body> element of the corresponding ASPX page.
                         *.Mp3</label>
                 </td>
                 <td>
-                    <ej:CheckBox ID="Checkbox2" runat="server" Value="Wav">
+                    <ej:CheckBox ID="Checkbox2" runat="server" Value="WAV">
                     </ej:CheckBox>
                     <label for="Checkbox2">
-                        *.Wav</label>
+                        *.WAV</label>
                 </td>
             </tr>
         </table>
@@ -189,10 +189,10 @@ Add the following code in the <body> element of the corresponding ASPX page.
         <table>
             <tr>
                 <td>
-                    <ej:CheckBox ID="Checkbox3" runat="server" Value="Avi">
+                    <ej:CheckBox ID="Checkbox3" runat="server" Value="AVI">
                     </ej:CheckBox>
                     <label for="Checkbox3">
-                        *.Avi</label>
+                        *.AVI</label>
                 </td>
                 <td>
                     <ej:CheckBox ID="Checkbox4" runat="server" Value="MP4">
@@ -244,13 +244,13 @@ Add the script into your ASPX page.
 {% highlight js %}
 
         function click() {
-                var checkeditem = "";
+                var checkedItem = "";
                 $(".e-checkbox").each(function (index, args) {
                     if ($(this).data('ejCheckBox').isChecked) {
-                        checkeditem += $(this).data('ejCheckBox').model.value;
+                        checkedItem += $(this).data('ejCheckBox').model.value;
                     }
                 });
-                alert("Checked Items are -"+checkeditem);
+                alert("Checked Items are -"+checkedItem);
             }   
 
 

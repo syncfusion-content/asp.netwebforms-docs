@@ -1185,7 +1185,7 @@ When an option "Only this Appointment" is selected, a single occurrence of the r
 
 #### Following appointments
 
-When an option "Following Appointments" is selected, all the following events of the recurrence appointment from the current instance will be edited or deleted. The previous instances of the reccurrence appointment before this current instances will be retained as it is on the Scheduler.
+When an option "Following Appointments" is selected, all the following events of the recurrence appointment from the current instance will be edited or deleted. The previous instances of the recurrence appointment before this current instances will be retained as it is on the Scheduler.
 
 #### Entire series
 

@@ -74,13 +74,13 @@ The following example shows the way to bind data to the TagCloud control by usin
 
         { text: "Arts Technica", url: "http://arstechnica.com/", frequency: 8 },
 
-        { text: "Bxslider", url: "http://bxslider.com/examples", frequency: 2 },
+        { text: "BxSlider", url: "http://bxslider.com/examples", frequency: 2 },
 
         { text: "Yahoo", url: "http://in.yahoo.com/", frequency: 12 },
 
         { text: "Facebook", url: "https://www.facebook.com/", frequency: 5 },
 
-        { text: "Blogspot", url: "http://www.blogspot.com/", frequency: 8 },
+        { text: "BlogSpot", url: "http://www.blogspot.com/", frequency: 8 },
 
         { text: "Microsoft", url: "http://www.microsoft.com/", frequency: 20 },
 
@@ -94,15 +94,15 @@ The following example shows the way to bind data to the TagCloud control by usin
 
         { text: "Twitter", url: "http://www.Twitter.com/", frequency: 0 },
 
-        { text: "Menucool", url: "http://www.menucool.com", frequency: 3 },
+        { text: "MenuCool", url: "http://www.menucool.com", frequency: 3 },
 
         { text: "BBC", url: "http://www.bbc.co.uk/", frequency: 11 },
 
-        { text: "Valleywag", url: "http://valleywag.gawker.com/", frequency: 6 },
+        { text: "ValleyWag", url: "http://valleywag.gawker.com/", frequency: 6 },
 
-        { text: "WOWslider", url: "http://wowslider.com", frequency: 9 },
+        { text: "WOWSlider", url: "http://wowslider.com", frequency: 9 },
 
-        { text: "W3schools", url: "http://www.w3schools.com/", frequency: 2 }
+        { text: "W3Schools", url: "http://www.w3schools.com/", frequency: 2 }
 
     ];
 
@@ -211,7 +211,7 @@ The following code example shows the way to bind data to the TagCloud control by
 
         { text: "Arts Technica", url: "http://arstechnica.com/", frequency: 8 },
 
-        { text: "Bxslider", url: "http://bxslider.com/examples", frequency: 2 },
+        { text: "BxSlider", url: "http://bxslider.com/examples", frequency: 2 },
 
         { text: "Yahoo", url: "http://in.yahoo.com/", frequency: 12 },
 
@@ -231,15 +231,15 @@ The following code example shows the way to bind data to the TagCloud control by
 
         { text: "Information Week",url:"http://www.informationweek.com/",frequency:0 },
 
-        { text: "Menucool", url: "http://www.menucool.com", frequency: 11 },
+        { text: "MenuCool", url: "http://www.menucool.com", frequency: 11 },
 
         { text: "Tech Republic", url: "http://techrepublic.com/", frequency: 3 },
 
-        { text: "Valleywag", url: "http://valleywag.gawker.com/", frequency: 6 },
+        { text: "ValleyWag", url: "http://valleywag.gawker.com/", frequency: 6 },
 
-        { text: "WOWslider", url: "http://wowslider.com", frequency: 9 },
+        { text: "WOWSlider", url: "http://wowslider.com", frequency: 9 },
 
-        { text: "W3schools", url: "http://www.w3schools.com/", frequency: 2 }
+        { text: "W3Schools", url: "http://www.w3schools.com/", frequency: 2 }
 
      ];	
 

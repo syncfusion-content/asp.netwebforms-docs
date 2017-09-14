@@ -784,7 +784,7 @@ Add the following code example in code behind page to specify the custom column 
                         extension = ""
                     });
     
-                    object fileDetails = files.Concat(directories);
+                    object fileDetails = files.concat(directories);
                     ReadResponse.files = (IEnumerable<CustomFileExplorerDirectoryContent>)fileDetails;
                     return ReadResponse;
                 }

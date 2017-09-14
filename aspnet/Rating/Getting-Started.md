@@ -49,7 +49,7 @@ Add the following code example to the corresponding ASPX page to render Ratin
 
                         <tr>
 
-                            <td class="movies-img" valign="top">
+                            <td class="movies-image" valign="top">
 
                                 <img src="../Content/images/rating/mos.png" alt="mos" />
 
@@ -97,7 +97,7 @@ Add the following code example to the corresponding ASPX page to render Ratin
 
                         <tr>
 
-                            <td class="movies-img" valign="top">
+                            <td class="movies-image" valign="top">
 
                                 <img src="../Content/images/rating/wwz.png" alt="mos" />
 
@@ -145,7 +145,7 @@ Add the following code example to the corresponding ASPX page to render Ratin
 
                         <tr>
 
-                            <td class="movies-img" valign="top">
+                            <td class="movies-image" valign="top">
 
                                 <img src="../Content/images/rating/mu.png" alt="mos" />
 
@@ -198,7 +198,7 @@ Add the following styles to the corresponding view page to show the Rating in 
 
 {% highlight css %}
 
-.movies-img
+.e-movies-image
 
         {
 

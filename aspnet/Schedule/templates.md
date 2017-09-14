@@ -346,7 +346,7 @@ When template is applied for the `PrioritySettings`, these default icons will be
 <asp:Content runat="server" ID="Style" ContentPlaceHolderID="StyleSection">
     <style type="text/css">
     .Critical,
-	.Ultracritical,
+	.UltraCritical,
 	.None {
 		height: 13px;
 		width: 13px;
@@ -363,7 +363,7 @@ When template is applied for the `PrioritySettings`, these default icons will be
 		background-position: -13px;
 	}
 
-	.Ultracritical {
+	.UltraCritical {
 		background-color: #56ca85;
 		background-position: -59px;
 	}

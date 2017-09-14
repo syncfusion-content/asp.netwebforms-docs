@@ -71,7 +71,7 @@ Add the following code example to configure AngularJS for the menu control
 
             { id: 12, parentId: 1, text: "Drafts", sprite: "mail sprite-drafts" },
 
-            { id: 13, parentId: 1, text: "Sent items", sprite: "mail sprite-sentitems" },
+            { id: 13, parentId: 1, text: "Sent items", sprite: "mail sprite-sent-items" },
 
             { id: 14, parentId: 1, text: "Deleted", sprite: "mail sprite-deleted" },
 
@@ -267,7 +267,7 @@ Add the following code example in your style section.
 
 
 
-        .sprite-sentitems
+        .sprite-sent-items
 
         {
 
