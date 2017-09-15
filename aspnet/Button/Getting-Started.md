@@ -124,7 +124,7 @@ Add Button controls by using the following code example. 
     </td>
     <td>
         <ej:splitbutton ID="Underline" runat="server" Text="Underline" Size="Small" ShowRoundedCorner="true"
-                        ClientSideOnClick="underlineSetUnset" ClientSideOnTtemSelected="select">
+                        ClientSideOnClick="underlineSetUnset" ClientSideOnItemSelected="select">
             <Items>
                 <ej:SplitItem Text="Dotted Line">
                 </ej:SplitItem>

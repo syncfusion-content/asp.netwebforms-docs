@@ -281,9 +281,9 @@ The following code example depicts the way to achieve the customization of defau
         // This function executes before the appointment window gets opened.
         function onAppointmentOpen(args) {
             // to add custom element in default appointment window
-            if (this._appointmentAddWindow.find(".customfields").length == 0) {
-	            var customDesign = "<tr class='customfields'><td class='e-textlabel'>Event Type</td><td><input class='apptype' type='text'/></td><td class='e-textlabel'>Event Status </td><td><input class='status' type='text'/></td></tr>";
-		        $(customDesign).insertAfter(this._appointmentAddWindow.find("." + this._id + "parrow"));
+            if (this._appointmentAddWindow.find(".custom-fields").length == 0) {
+	            var customDesign = "<tr class='custom-fields'><td class='e-textlabel'>Event Type</td><td><input class='apptype' type='text'/></td><td class='e-textlabel'>Event Status </td><td><input class='status' type='text'/></td></tr>";
+		        $(customDesign).insertAfter(this._appointmentAddWindow.find("." + this._id + "parow"));
             }
             
 	        if (!ej.isNullOrUndefined(args.appointment)) {
@@ -436,8 +436,8 @@ namespace ScheduleCRUDCS
         public List<ScheduleAppointment> GetData()
         {
             Microsoft.Office.Interop.Outlook.Application oApp = new Microsoft.Office.Interop.Outlook.Application();
-            Microsoft.Office.Interop.Outlook.NameSpace mapiNamespace = oApp.GetNamespace("MAPI");
-            Microsoft.Office.Interop.Outlook.MAPIFolder CalendarFolder = mapiNamespace.GetDefaultFolder(Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderCalendar);
+            Microsoft.Office.Interop.Outlook.NameSpace MAPINamespace = oApp.GetNamespace("MAPI");
+            Microsoft.Office.Interop.Outlook.MAPIFolder CalendarFolder = MAPINamespace.GetDefaultFolder(Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderCalendar);
             Microsoft.Office.Interop.Outlook.Items outlookCalendarItems = CalendarFolder.Items;
             List<Microsoft.Office.Interop.Outlook.AppointmentItem> appointmentList = new List<Microsoft.Office.Interop.Outlook.AppointmentItem>();
 

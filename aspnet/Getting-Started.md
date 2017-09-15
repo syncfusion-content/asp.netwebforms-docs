@@ -56,7 +56,7 @@ You just need to drag the “ScriptManager” from the toolbox under the “AJAX
      
 {% endhighlight %}
 
-N> Refer to [Embeded Resources](https://help.syncfusion.com/aspnet/embeded-resources) section for more information on automatically loading script files from assemblies
+N> Refer to [Embedded Resources](https://help.syncfusion.com/aspnet/embeded-resources) section for more information on automatically loading script files from assemblies
 
 ## Configuring Syncfusion NuGet Packages in Visual Studio 
 

@@ -240,7 +240,7 @@ In the ASPX page, add FileExplorer element with following properties.
                     </ej:FileExplorerCustomMenuFields>
                     <ej:FileExplorerCustomMenuFields Id="grid" Text="Grid view" Action="onLayout">
                     </ej:FileExplorerCustomMenuFields>
-                    <ej:FileExplorerCustomMenuFields Id="largeicons" Text="Large icons view" Action="onLayout">
+                    <ej:FileExplorerCustomMenuFields Id="largeIcons" Text="Large icons view" Action="onLayout">
                     </ej:FileExplorerCustomMenuFields>
                 </Child>
             </ej:FileExplorerCustomMenuFields>

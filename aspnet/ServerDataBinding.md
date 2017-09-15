@@ -52,7 +52,7 @@ For more information, see  [Binding SqlDataSource To DropDownList](https://help.
 
     <asp:LinqDataSource ID="LinqDataSource1" runat="server" 
         ContextTypeName="WebSampleBrowser.database.Linq_Common_DataDataContext" EntityTypeName="" 
-        TableName="Databindings">
+        TableName="DataBindings">
     </asp:LinqDataSource>
 
 {% endhighlight %}

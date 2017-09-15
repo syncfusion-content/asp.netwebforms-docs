@@ -522,7 +522,7 @@ The second and third Tab contents are declared in the same method the first Tab 
 
                    <ContentSection>
 
-                        <img src="http://js.syncfusion.com/demos/web/images/accordion/paneer-tikka.png" alt="paneer-tikka">
+                        <img src="http://js.syncfusion.com/demos/web/images/accordion/paneer-tikka.png" alt="Paneer-tikka">
 
                         <div class="ingredients">
 
@@ -534,7 +534,7 @@ The second and third Tab contents are declared in the same method the first Tab 
 
                             <br />
 
-                            Description: Delve into the tasty Paneer Tikka Kebabs made from marinated paneer or cottage cubes. Relish these grilled delicacies with green mint chutney and onion rings. 
+                            Description: Delve into the tasty Paneer Tikka Kebabs made from marinated Paneer or cottage cubes. Relish these grilled delicacies with green mint chutney and onion rings. 
 
                         </div>
 

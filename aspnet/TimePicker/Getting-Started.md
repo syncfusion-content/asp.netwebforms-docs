@@ -31,29 +31,29 @@ Add the following code to the corresponding ASPX page to render the TimePicker.
 
     <table>
         <tr>
-            <td class="tdclass">
+            <td class="table-data">
                 Select date
             </td>
-            <td class="tdclass">
+            <td class="table-data">
                 Select time
             </td>
-            <td class="tdclass">
+            <td class="table-data">
                 Select party size
             </td>
         </tr>
         <tr>
-            <td class="tdclass">
-                <span class="innerdp">
+            <td class="table-data">
+                <span class="inner-datepicker">
                     <ej:DatePicker ID="DatePicker" runat="server" />
                 </span>
             </td>
-            <td class="tdclass">
-                <span class="innerdp">
+            <td class="table-data">
+                <span class="inner-datepicker">
                     <ej:TimePicker ID="TimePicker" runat="server" />
                 </span>
             </td>
-            <td class="tdclass">
-                <span class="innerdp">
+            <td class="table-data">
+                <span class="inner-datepicker">
                     <ej:DropDownList name="party_size" ID="DropDownList" SelectedItemIndex="0" runat="server">
                         <Items>
                             <ej:DropDownListItem Text="select people">
@@ -72,7 +72,7 @@ Add the following code to the corresponding ASPX page to render the TimePicker.
             </td>
         </tr>
         <tr>
-            <td class="tdclass">
+            <td class="table-data">
                 <ej:Button ID="Book" Type="Button" Text="Book" ClientSideOnClick="acknowledge" runat="server">
                 </ej:Button>
             </td>
@@ -85,12 +85,12 @@ Add the following styles to show the TimePicker control.
 
 {% highlight css %}
 
-.tdclass
+.e-table-data
 {
 	width: 200px;
 	font-weight: bold;
 }
-.innerdp
+.inner-datepicker
 {
 	display: inline-block;
 }
@@ -180,39 +180,39 @@ Add input element to render Two TimePickers.
 
 <table>
         <tr>
-            <td class="tdclass">
+            <td class="table-data">
                 Select Date
             </td>
-            <td class="tdclass">
+            <td class="table-data">
                 Select start time
             </td>
-            <td class="tdclass">
+            <td class="table-data">
                 Select end time
             </td>
-            <td class="tdclass">
+            <td class="table-data">
                 Select party size
             </td>
         </tr>
         <tr>
-            <td class="tdclass">
-                <span class="innerdp">
+            <td class="table-data">
+                <span class="inner-datepicker">
                     <ej:DatePicker ID="DatePicker" runat="server" />
                 </span>
             </td>
-            <td class="tdclass">
-                <span class="innerdp">
+            <td class="table-data">
+                <span class="inner-datepicker">
                     <ej:TimePicker ID="TimePicker" ClientSideOnSelect="selectedStartTime" MinTime="9:00:00"
                         MaxTime="18:00:00" Interval="60" runat="server" />
                 </span>
             </td>
-            <td class="tdclass">
-                <span class="innerdp">
+            <td class="table-data">
+                <span class="inner-datepicker">
                     <ej:TimePicker ID="TimePickerEnd" MinTime="9:00:00" MaxTime="18:00:00" Interval="60"
                         runat="server" />
                 </span>
             </td>
-            <td class="tdclass">
-               <span class="innerdp">
+            <td class="table-data">
+               <span class="inner-datepicker">
                     <ej:DropDownList name="party_size" ID="DropDownList" SelectedItemIndex="0" runat="server">
                         <Items>
                             <ej:DropDownListItem Text="select people">
@@ -231,15 +231,15 @@ Add input element to render Two TimePickers.
             </td>
         </tr>
         <tr>
-            <td class="tdclass">
+            <td class="table-data">
                 <ej:Button ID="Book" Type="Button" Text="Book" ClientSideOnClick="acknowledge" runat="server">
                </ej:Button>
             </td>
             <td>
             </td>
-            <td class="tdclass">
+            <td class="table-data">
             </td>
-            <td class="tdclass">
+            <td class="table-data">
             </td>
         </tr>
    </table>
