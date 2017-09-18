@@ -29,17 +29,17 @@ public partial class Template : System.Web.UI.Page
             protected void Page_Load(object sender, EventArgs e)
             {
                 List<EmployeeSpecialists> employee = new List<EmployeeSpecialists>();
-                employee.Add(new EmployeeSpecialists { Text = "Erik Linden", Eimg = "3", Design = "Representative", Country = "England" });
-                employee.Add(new EmployeeSpecialists { Text = "John Linden", Eimg = "6", Design = "Representative", Country = "Norway" });
-                employee.Add(new EmployeeSpecialists { Text = "Louis", Eimg = "7", Design = "Representative", Country = "Australia" });
-                employee.Add(new EmployeeSpecialists { Text = "Lawrence", Eimg = "8", Design = "Representative", Country = "India" });
+                employee.Add(new EmployeeSpecialists { Text = "Erik Linden", EmployeeImg = "3", Design = "Representative", Country = "England" });
+                employee.Add(new EmployeeSpecialists { Text = "John Linden", EmployeeImg = "6", Design = "Representative", Country = "Norway" });
+                employee.Add(new EmployeeSpecialists { Text = "Louis", EmployeeImg = "7", Design = "Representative", Country = "Australia" });
+                employee.Add(new EmployeeSpecialists { Text = "Lawrence", EmployeeImg = "8", Design = "Representative", Country = "India" });
                 selectExperts.DataSource = employee;
             }
         }
         public class EmployeeSpecialists
         {
             public string Text { get; set; }
-            public string Eimg { get; set; }
+            public string EmployeeImg { get; set; }
             public string Design { get; set; }
             public string Country { get; set; }
         }

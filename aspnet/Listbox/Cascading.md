@@ -109,7 +109,7 @@ In the code behind add the below codes.
     </div>
     <div class="listboxcontrol">
         <!-- second level child listbox element-->
-        <ej:ListBox ID="subproductList" runat="server"></ej:ListBox>
+        <ej:ListBox ID="subProductList" runat="server"></ej:ListBox>
     </div>
     <style>
         .listboxcontrol {
