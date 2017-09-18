@@ -604,7 +604,7 @@ The following code example describes the above behavior.
 
 <script type="text/javascript">
  function loadComplete() {
-    var excelSort = this.XLSort, xlFormat = this.XLFormat;
+    var excelSort = this.XLSort, XLFormat = this.XLFormat;
     if (!this.isImport) {
         excelSort.sortByRange("A2:A10", "A", "ascending");
         excelSort.sortByRange("E2:E10", "E", "descending");     
