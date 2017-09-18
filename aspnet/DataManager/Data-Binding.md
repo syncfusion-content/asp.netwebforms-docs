@@ -135,7 +135,7 @@ Refer to the following code example for consuming Web API data using DataManager
     public class EmployeeController : ApiController
     {
         static readonly IEmployeeRepository repository = new EmployeeRepository();
-        // GET api/<controller>
+        // GET API/<controller>
         [HttpGet]
         public object Get()
         {
@@ -193,7 +193,7 @@ Create a sample using ASP.NET Web Services
         public DataTable Get()
         {
             SqlCommand getData = new SqlCommand();
-            getData.CommandText = "usp_DEV_ChangeLog_Select"; // Stored procedure for retrieve data from suppliers table
+            getData.CommandText = "USP_DEV_ChangeLog_Select"; // Stored procedure for retrieve data from suppliers table
             getData.CommandType = CommandType.StoredProcedure;
             getData.Connection = con;
             if (con.State != ConnectionState.Open)

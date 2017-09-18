@@ -520,20 +520,20 @@ Configuring the data items for cascading to the series of DropDownList is demons
             List<CountryList> countries = new List<CountryList>();            
             countries.Add(new CountryList(11, "a", "Algeria", "flag-dz"));
             countries.Add(new CountryList(12, "a", "Armenia", "flag-am"));
-            countries.Add(new CountryList(13, "a", "Bangladesh", "flag-bangladesh"));
+            countries.Add(new CountryList(13, "a", "Bangladesh", "flag-bd"));
             countries.Add(new CountryList(14, "a", "Cuba", "flag-cu"));
-            countries.Add(new CountryList(15, "b", "Denmark", "flag-denmark"));
+            countries.Add(new CountryList(15, "b", "Denmark", "flag-dk"));
             countries.Add(new CountryList(16, "b", "Egypt", "flag-eg"));
             countries.Add(new CountryList(17, "c", "Finland", "flag-fi"));
             countries.Add(new CountryList(18, "c", "India", "flag-in"));
             countries.Add(new CountryList(19, "c", "Malaysia", "flag-my"));
-            countries.Add(new CountryList(20, "d", "New Zealand", "flag-new-zealand"));
+            countries.Add(new CountryList(20, "d", "New Zealand", "flag-nz"));
             countries.Add(new CountryList(21, "d", "Norway", "flag-no"));
             countries.Add(new CountryList(22, "d", "Poland", "flag-pl"));
             countries.Add(new CountryList(23, "e", "Romania", "flag-ro"));
-            countries.Add(new CountryList(24, "e", "Singapore", "flag-singapore"));
+            countries.Add(new CountryList(24, "e", "Singapore", "flag-sg"));
             countries.Add(new CountryList(25, "e", "Thailand", "flag-th"));
-            countries.Add(new CountryList(26, "e", "Ukraine", "flag-ukraine"));                        
+            countries.Add(new CountryList(26, "e", "Ukraine", "flag-uk"));                        
             this.countryList.DataSource = countries;
         }
         [Serializable]
@@ -691,20 +691,20 @@ The below scenario can be explained with three DropDownList for the multi-level 
         List<CountryList> countries = new List<CountryList>();
         countries.Add(new CountryList(11, "a", "Algeria", "flag-dz"));
         countries.Add(new CountryList(12, "a", "Armenia", "flag-am"));
-        countries.Add(new CountryList(13, "a", "Bangladesh", "flag-bangladesh"));
+        countries.Add(new CountryList(13, "a", "Bangladesh", "flag-bd"));
         countries.Add(new CountryList(14, "a", "Cuba", "flag-cu"));
-        countries.Add(new CountryList(15, "b", "Denmark", "flag-denmark"));
+        countries.Add(new CountryList(15, "b", "Denmark", "flag-dk"));
         countries.Add(new CountryList(16, "b", "Egypt", "flag-eg"));
         countries.Add(new CountryList(17, "c", "Finland", "flag-fi"));
         countries.Add(new CountryList(18, "c", "India", "flag-in"));
         countries.Add(new CountryList(19, "c", "Malaysia", "flag-my"));
-        countries.Add(new CountryList(20, "d", "New Zealand", "flag-new-zealand"));
+        countries.Add(new CountryList(20, "d", "New Zealand", "flag-nz"));
         countries.Add(new CountryList(21, "d", "Norway", "flag-no"));
         countries.Add(new CountryList(22, "d", "Poland", "flag-pl"));
         countries.Add(new CountryList(23, "e", "Romania", "flag-ro"));
-        countries.Add(new CountryList(24, "e", "Singapore", "flag-singapore"));
+        countries.Add(new CountryList(24, "e", "Singapore", "flag-sg"));
         countries.Add(new CountryList(25, "e", "Thailand", "flag-th"));
-        countries.Add(new CountryList(26, "e", "Ukraine", "flag-ukraine"));
+        countries.Add(new CountryList(26, "e", "Ukraine", "flag-uk"));
         this.countryList.DataSource = countries;
 
         List<CapitalList> capital = new List<CapitalList>();

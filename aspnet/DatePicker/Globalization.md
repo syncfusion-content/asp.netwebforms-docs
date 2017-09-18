@@ -47,7 +47,7 @@ By default EJWEB DatePicker input has "select date" as watermark text, you can
 
 {% highlight html %}
 
-    <ej:DatePicker ID="datepick"  ButtonText="current date" WaterMarkText="enter date value"  runat="server"></ej:DatePicker>
+    <ej:DatePicker ID="datePicker"  ButtonText="current date" WaterMarkText="enter date value"  runat="server"></ej:DatePicker>
 
 {% endhighlight %}
 
@@ -63,7 +63,7 @@ Refer below code example to update those value based some culture say for exampl
 
     //create instance for datePicker.
     // only after control creation we can get dateObj otherwise it throws exception.
-    var dateObj = $("#datepick").ejDatePicker('instance');
+    var dateObj = $("#datePicker").ejDatePicker('instance');
 
     //condition to check English culture and change watermark and button text using dateObj.
     if (ej.cultureObject.name == "en-US") {
