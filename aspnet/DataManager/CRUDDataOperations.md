@@ -83,8 +83,8 @@ The insert method of the data manager is used to add a new record to the table. 
         </Columns>
     </ej:Grid>
 
-    <ej:button id="submit" runat="server" text="Insert" size="Large" showroundedcorner="true"
-                               clientsideonclick="onClick"></ej:button>
+    <ej:button ID="submit" runat="server" Text="Insert" Size="Large" ShowRoundedCorner="true"
+                               ClientSideOnClick="onClick"></ej:button>
 
     <script type="text/javascript" class="jsScript">
 
@@ -166,8 +166,8 @@ The update method is used to update the modified changes made to a record in the
         </Columns>
     </ej:Grid>
 
-    <ej:button id="submit" runat="server" text="Update" size="Large" showroundedcorner="true"
-                               clientsideonclick="onClick"></ej:button>
+    <ej:button ID="submit" runat="server" Text="Update" Size="Large" ShowRoundedCorner="true"
+                               ClientSideOnClick="onClick"></ej:button>
 
     <script type="text/javascript" class="jsScript">
 
@@ -248,8 +248,8 @@ The remove function receives the items to be deleted in the Data Table. The func
         </Columns>
     </ej:Grid>
 
-    <ej:button id="submit" runat="server" text="Remove" size="Large" showroundedcorner="true"
-                               clientsideonclick="onClick"></ej:button>
+    <ej:button ID="submit" runat="server" Text="Remove" Size="Large" ShowRoundedCorner="true"
+                               ClientSideOnClick="onClick"></ej:button>
 
     <script type="text/javascript" class="jsScript">
 
@@ -372,7 +372,7 @@ The insert method of the data manager is used to add a new record to the table. 
     public class EmployeeController : ApiController
     {
         static readonly IEmployeeRepository repository = new EmployeeRepository();
-        // GET api/<controller>
+        // GET API/<controller>
         [HttpGet]
         public object Get()
         {
@@ -393,7 +393,7 @@ The insert method of the data manager is used to add a new record to the table. 
             return emp;
         }
 
-        // POST api/<controller>
+        // POST API/<controller>
         public HttpResponseMessage PostEmployee(Employee emp)
         {
             emp = repository.Add(emp);
@@ -404,7 +404,7 @@ The insert method of the data manager is used to add a new record to the table. 
             return response;
         }
          [HttpPut]
-        // PUT api/<controller>
+        // PUT API/<controller>
         public void PutEmployee(Employee emp)
         {
             if (!repository.Update(emp))
@@ -443,8 +443,8 @@ The insert method of the data manager is used to add a new record to the table. 
         </Columns>
     </ej:Grid>
 
-    <ej:button id="submit" runat="server" text="Insert" size="Large" showroundedcorner="true"
-                               clientsideonclick="onClick"></ej:button>
+    <ej:button ID="submit" runat="server" Text="Insert" Size="Large" ShowRoundedCorner="true"
+                               ClientSideOnClick="onClick"></ej:button>
 
     <script type="text/javascript" class="jsScript">
 
@@ -490,8 +490,8 @@ The update method is used to update the modified changes made to a record in the
         </Columns>
     </ej:Grid>
 
-    <ej:button id="submit" runat="server" text="Update" size="Large" showroundedcorner="true"
-                               clientsideonclick="onClick"></ej:button>
+    <ej:button ID="submit" runat="server" Text="Update" Size="Large" ShowRoundedCorner="true"
+                               ClientSideOnClick="onClick"></ej:button>
 
     <script type="text/javascript" class="jsScript">
 
@@ -535,8 +535,8 @@ The remove action submits the data items that should be deleted, or just its IDs
         </Columns>
     </ej:Grid>
 
-    <ej:button id="submit" runat="server" text="Remove" size="Large" showroundedcorner="true"
-                               clientsideonclick="onClick"></ej:button>
+    <ej:button ID="submit" runat="server" Text="Remove" Size="Large" ShowRoundedCorner="true"
+                               ClientSideOnClick="onClick"></ej:button>
 
     <script type="text/javascript" class="jsScript">
 

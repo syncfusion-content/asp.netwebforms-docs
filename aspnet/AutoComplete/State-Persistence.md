@@ -111,17 +111,17 @@ namespace ASPWeb
 
             data.Add(new ObjectData(Text = "Brazil", Sprite = "flag-br"));
 
-            data.Add(new ObjectData(Text = "Bangladesh", Sprite = "flag-bangladesh"));
+            data.Add(new ObjectData(Text = "Bangladesh", Sprite = "flag-bd"));
 
             data.Add(new ObjectData(Text = "Canada", Sprite = "flag-ca"));
 
             data.Add(new ObjectData(Text = "Cuba", Sprite = "flag-cu"));
 
-            data.Add(new ObjectData(Text = "China", Sprite = "flag-china"));
+            data.Add(new ObjectData(Text = "China", Sprite = "flag-cn"));
 
-            data.Add(new ObjectData(Text = "Denmark", Sprite = "flag-denmark"));
+            data.Add(new ObjectData(Text = "Denmark", Sprite = "flag-dk"));
 
-            data.Add(new ObjectData(Text = "Estonia", Sprite = "flag-estonia"));
+            data.Add(new ObjectData(Text = "Estonia", Sprite = "flag-ea"));
 
             data.Add(new ObjectData(Text = "Egypt", Sprite = "flag-eg"));
 
@@ -137,9 +137,9 @@ namespace ASPWeb
 
             data.Add(new ObjectData(Text = "Malaysia", Sprite = "flag-my"));
 
-            data.Add(new ObjectData(Text = "Mexico", Sprite = "flag-mexico"));
+            data.Add(new ObjectData(Text = "Mexico", Sprite = "flag-mx"));
 
-            data.Add(new ObjectData(Text = "New Zealand", Sprite = "flag-new-zealand"));
+            data.Add(new ObjectData(Text = "New Zealand", Sprite = "flag-nz"));
 
             data.Add(new ObjectData(Text = "Netherlands", Sprite = "flag-nl"));
 
@@ -149,7 +149,7 @@ namespace ASPWeb
 
             data.Add(new ObjectData(Text = "Poland", Sprite = "flag-pl"));
 
-            data.Add(new ObjectData(Text = "Qatar", Sprite = "flag-qatar"));
+            data.Add(new ObjectData(Text = "Qatar", Sprite = "flag-qr"));
 
             return data;
 
@@ -201,21 +201,21 @@ Define the CSS classes for the sprite images, you can find the images in the fol
 
         .flag.flag-ar {background-position: -50px 0}
 
-        .flag.flag-bangladesh {background-position: -75px 0}
+        .flag.flag-bd {background-position: -75px 0}
 
         .flag.flag-br {background-position: -100px 0}
 
         .flag.flag-ca {background-position: -125px 0}
 
-        .flag.flag-china {background-position: 0 -15px}
+        .flag.flag-cn {background-position: 0 -15px}
 
         .flag.flag-cu {background-position: -25px -15px}
 
-        .flag.flag-denmark {background-position: -50px -15px}
+        .flag.flag-dk {background-position: -50px -15px}
 
         .flag.flag-dz {background-position: -75px -15px}
 
-        .flag.flag-estonia {background-position: -100px -15px}
+        .flag.flag-ea {background-position: -100px -15px}
 
         .flag.flag-eg {background-position: -125px -15px}
 
@@ -231,7 +231,7 @@ Define the CSS classes for the sprite images, you can find the images in the fol
 
         .flag.flag-in {background-position: -125px -30px}
 
-        .flag.flag-mexico {background-position: 0 -45px}
+        .flag.flag-mx {background-position: 0 -45px}
 
         .flag.flag-my {background-position: -25px -45px}
 
@@ -239,13 +239,13 @@ Define the CSS classes for the sprite images, you can find the images in the fol
 
         .flag.flag-no {background-position: -75px -45px}
 
-        .flag.flag-new-zealand {background-position: -100px -45px}
+        .flag.flag-nz {background-position: -100px -45px}
 
         .flag.flag-pl {background-position: -125px -45px}
 
         .flag.flag-pt {background-position: 0 -60px}
 
-        .flag.flag-qatar {background-position: -25px -60px}
+        .flag.flag-qr {background-position: -25px -60px}
 
         .flag.flag-ro {background-position: -50px -60px}
 

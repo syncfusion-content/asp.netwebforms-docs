@@ -109,10 +109,10 @@ The following code example describes the above behavior.
 
 <script type="text/javascript">
 function loadComplete() {
-    var xlSearch = this.XLSearch;
+    var excelSearch = this.XLSearch;
     if (!this.isImport) {
-        xlSearch.replaceAllBySheet("Shoes", "Slippers", true, false); 
-        //xlSearch.replaceAllByBook("Shoes", "Slippers", true, false);
+        excelSearch.replaceAllBySheet("Shoes", "Slippers", true, false); 
+        //excelSearch.replaceAllByBook("Shoes", "Slippers", true, false);
     }
 }
 </script>
