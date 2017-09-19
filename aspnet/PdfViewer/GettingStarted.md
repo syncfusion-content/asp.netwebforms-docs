@@ -100,8 +100,8 @@ namespace PdfViewerEJWeb.WebApi
             PdfViewerHelper helper = new PdfViewerHelper();
             if (jsonResult.ContainsKey("uploadedFile"))
             {
-                var fileurl = jsonResult["uploadedFile"];
-                byte[] byteArray = Convert.FromBase64String(fileurl);
+                var fileUrl = jsonResult["uploadedFile"];
+                byte[] byteArray = Convert.FromBase64String(fileUrl);
                 MemoryStream stream = new MemoryStream(byteArray);
                 helper.Load(stream);
             }
