@@ -729,7 +729,7 @@ In the view page, assign values for DataTextField, DataIdField, DataParentIdFiel
         <asp:LinqDataSource
             ID="LinqDataSource1"
             runat="server"
-            ContextTypeName="ASPwebTreeView.Tree_Linq_To_SqlDataContext"
+            ContextTypeName="ASPWebTreeView.Tree_Linq_To_SqlDataContext"
             EntityTypeName=""
             TableName="TreeLinqs">
         </asp:LinqDataSource>
