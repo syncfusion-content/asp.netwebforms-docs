@@ -28,7 +28,7 @@ N> In the above data source definition, the “CategoryId” column is act as a 
     </div>
     <div class="childlistbox">
         <!-- child listbox element-->
-        <ej:ListBox ID="subcategoryList" runat="server"></ej:ListBox>
+        <ej:ListBox ID="subCategoryList" runat="server"></ej:ListBox>
     </div>
     <style>
         .e-parentlistbox, .e-childlistbox {
@@ -58,7 +58,7 @@ N> In the above data source definition, the “CategoryId” column is act as a 
 
                 MainCategory.DataSource = category;
                 MainCategory.DataValueField = "CategoryId";
-                MainCategory.CascadeTo = "LayoutSection_subcategoryList";
+                MainCategory.CascadeTo = "LayoutSection_subCategoryList";
 
                 subcategoryList.DataSource = subCategory;
                 subcategoryList.LoadDataOnInit = false;
@@ -101,7 +101,7 @@ In the code behind add the below codes.
     </div>
     <div class="listboxcontrol">
         <!-- First level child listbox element-->
-        <ej:ListBox ID="subcategoryList" runat="server"></ej:ListBox>
+        <ej:ListBox ID="subCategoryList" runat="server"></ej:ListBox>
     </div>
     <div class="listboxcontrol">
         <!-- second level child listbox element-->
@@ -172,7 +172,7 @@ public partial class Cascading : System.Web.UI.Page
 
             MainCategory.DataSource = category;
             MainCategory.DataValueField = "CategoryId";
-            MainCategory.CascadeTo = "LayoutSection_subcategoryList";
+            MainCategory.CascadeTo = "LayoutSection_subCategoryList";
 
             subcategoryList.DataSource = subCategory;
             subcategoryList.LoadDataOnInit = false;
@@ -182,7 +182,7 @@ public partial class Cascading : System.Web.UI.Page
             productList.DataSource = productList;
             productList.LoadDataOnInit = false;
             productList.DataValueField = "ProductId";
-            productList.CascadeTo = "LayoutSection_subproductList";
+            productList.CascadeTo = "LayoutSection_subProductList";
 
             subProductList.DataSource = subProductList;
             subProductList.LoadDataOnInit = false;
