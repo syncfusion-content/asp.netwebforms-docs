@@ -51,7 +51,7 @@ The following code example depicts you the way to bind data to the TimePicker co
                 <div class="cols-sample-area">
                     <div class="frame" style="width: 30%; height: 17px;">
                         <div id="control" style="float: left;width: 45%;">
-                            <input id="time" type="text" ej-timepicker e-value="timevalue" />
+                            <input id="time" type="text" ej-timepicker e-value="timeValue" />
                             <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px;">Note:Two Way AngularJS Support</span></h6>
                         </div>
                         <div id="binding" style=" float right;width 45%;">
@@ -161,7 +161,7 @@ The following example depicts the way to bind data to the TimePicker control thr
     <script type="text/javascript">
        window.viewModel = {
             //TimePicker
-            timevalue: ko.observable("11:30 AM")       
+            timeValue: ko.observable("11:30 AM")       
         }
         $(function () {
             // Declaration
