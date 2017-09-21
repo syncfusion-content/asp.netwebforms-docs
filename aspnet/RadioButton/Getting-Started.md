@@ -246,17 +246,17 @@ Add the following ClientSide event for submit button to get the selected items.�
 
 function buttonClicked() {
 
-            var checkeditem = "";
+            var checkedItem = "";
 
             $(".e-radiobtn:checked").each(function () {
 
-                checkeditem += $(this).parent().siblings().html();
+                checkedItem += $(this).parent().siblings().html();
 
             });
 
-            if (checkeditem != "")
+            if (checkedItem != "")
 
-                alert("The form is submitted with the following Selection" + checkeditem);
+                alert("The form is submitted with the following Selection" + checkedItem);
 
             else
 
