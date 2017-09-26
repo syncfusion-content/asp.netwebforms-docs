@@ -9,7 +9,7 @@ documentation: ug
 
 # Globalization Support in MaskEdit
 
-We have provided the globalization support in **MaskEdit** control. Our **MaskEdit** control mainly rendered based on the **maskFormat** property, so we have provided the globalization support based on the maskFormat literals. We have given this globalization support option on below maskFomat literals in **MaskEdit** control. 
+We have provided the globalization support in **MaskEdit** control. Our **MaskEdit** control mainly rendered based on the **maskFormat** property, so we have provided the globalization support based on the maskFormat literals. We have given this globalization support option on below maskFormat literals in **MaskEdit** control. 
 
 <table class="props">
 <thead>
