@@ -79,7 +79,7 @@ The following code example demonstrates how to handle the TabSelect event to get
 
                                     <ej:ContentGroup Id="New" Text="New" Type="Button">
 
-                                      <ButtonSettings Type="Button" ContentType="ImageOnly" ImagePosition="ImageTop" PrefixIcon="e-ribbon e-new" Click="executeAction" />
+                                      <ButtonSettings Type="Button" ContentType="ImageOnly" ImagePosition="ImageTop" PrefixIcon="e-icon e-ribbon e-new" Click="executeAction" />
 
                                     </ej:ContentGroup>
 
