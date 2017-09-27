@@ -32,7 +32,7 @@ Standard `html tooltip` can be set using `ToolTip` property of each group item.
 									<ej:ContentGroup Id="cut" Text="Cut" ToolTip="Remove the selection and put it on clipboard">
 									</ej:ContentGroup>
 									<ej:ContentGroup Id="copy" Text="Copy" ToolTip="Put a copy of selection on clipboard">
-										<ButtonSettings ContentType="TextAndImage" PrefixIcon="e-ribbon e-ribboncopy" />
+										<ButtonSettings ContentType="TextAndImage" PrefixIcon="e-icon e-ribbon e-ribboncopy" />
 									</ej:ContentGroup>
 								</ContentGroupCollection>
 							</ej:TabContent>
@@ -83,7 +83,7 @@ Custom Tooltip is used to set detailed help to the user about the controls. You 
 									</ej:ContentGroup>
 									<ej:ContentGroup Id="copy" Text="Copy">
 										<CustomToolTip Title="Copy" Content="<h6>Copy the content.</h6>" />
-										<ButtonSettings ContentType="TextAndImage" PrefixIcon="e-ribbon e-ribboncopy" />
+										<ButtonSettings ContentType="TextAndImage" PrefixIcon="e-icon e-ribbon e-ribboncopy" />
 									</ej:ContentGroup>
 								</ContentGroupCollection>
 							</ej:TabContent>
@@ -138,19 +138,19 @@ N> CustomGalleryItem `Menu` is not supported to CustomToolTip.
 										<GalleryItemCollection>
 											<ej:GalleryItem Text="Style 1">
 												<CustomToolTip Title="Style 1" Content="<I>Style 1 to customize the table</I>" />
-												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-gallerycontent1 e-gbtnimg" />
+												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-icon e-gallerycontent1 e-gbtnimg" />
 											</ej:GalleryItem>
 											<ej:GalleryItem Text="Style 2">
 												<CustomToolTip Title="Style 2" Content="<I>Style 2 to customize the table</I>" />
-												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-gallerycontent2 e-gbtnimg" />
+												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-icon e-gallerycontent2 e-gbtnimg" />
 											</ej:GalleryItem>
 											<ej:GalleryItem Text="Style 3">
 												<CustomToolTip Title="Style 3" Content="<I>Style 3 to customize the table</I>" />
-												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-gallerycontent3 e-gbtnimg" />
+												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-icon e-gallerycontent3 e-gbtnimg" />
 											</ej:GalleryItem>
 											<ej:GalleryItem Text="Style 4">
 												<CustomToolTip Title="Style 4" Content="<I>Style 4 to customize the table</I>" />
-												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-gallerycontent4 e-gbtnimg" />
+												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-icon e-gallerycontent4 e-gbtnimg" />
 											</ej:GalleryItem>
 										</GalleryItemCollection>
 										<CustomGalleryItemCollection>
@@ -246,7 +246,7 @@ Specifies the `CustomToolTip` for expand pin in the Ribbon.
 							<ej:TabContent>
 								<ContentGroupCollection>
 									<ej:ContentGroup Id="new" Text="New" ToolTip="New" Type="Button">
-										<ButtonSettings Type="Button" ContentType="ImageOnly" ImagePosition="ImageTop" PrefixIcon="e-ribbon e-new" />
+										<ButtonSettings Type="Button" ContentType="ImageOnly" ImagePosition="ImageTop" PrefixIcon="e-icon e-ribbon e-new" />
 									</ej:ContentGroup>
 								</ContentGroupCollection>
 								<ContentDefaults Width="60" Height="70" Type="Button" />
@@ -292,7 +292,7 @@ Specifies the `CustomToolTip` for collapse pin in the Ribbon.
 							<ej:TabContent>
 								<ContentGroupCollection>
 									<ej:ContentGroup Id="new" Text="New" ToolTip="New" Type="Button">
-										<ButtonSettings Type="Button" ContentType="ImageOnly" ImagePosition="ImageTop" PrefixIcon="e-ribbon e-new" />
+										<ButtonSettings Type="Button" ContentType="ImageOnly" ImagePosition="ImageTop" PrefixIcon="e-icon e-ribbon e-new" />
 									</ej:ContentGroup>
 								</ContentGroupCollection>
 								<ContentDefaults Width="60" Height="70" Type="Button" />
@@ -337,7 +337,7 @@ Specifies the `CustomToolTip` for collapse pin in the Ribbon.
 							<ej:TabContent>
 								<ContentGroupCollection>
 									<ej:ContentGroup Id="new" Text="New" ToolTip="New" Type="Button">
-										<ButtonSettings Type="Button" ContentType="ImageOnly" ImagePosition="ImageTop" PrefixIcon="e-ribbon e-new" />
+										<ButtonSettings Type="Button" ContentType="ImageOnly" ImagePosition="ImageTop" PrefixIcon="e-icon e-ribbon e-new" />
 									</ej:ContentGroup>
 								</ContentGroupCollection>
 								<ContentDefaults Width="60" Height="70" Type="Button" />

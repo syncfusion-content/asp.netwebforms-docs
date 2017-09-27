@@ -88,12 +88,12 @@ Contextual Tabs are collection of Tabs that extended styling and can be shown ba
 										<ContentGroupCollection>
 											
 											<ej:ContentGroup Id="uppercase1" Text="uppercase">
-												<ButtonSettings ContentType="ImageOnly" Type="Button" PrefixIcon="e-ribbon e-uppercase" />
+												<ButtonSettings ContentType="ImageOnly" Type="Button" PrefixIcon="e-icon e-ribbon e-uppercase" />
 											
 											</ej:ContentGroup>
 											
 											<ej:ContentGroup Id="lowercase1" Text="Lower Case">
-												<ButtonSettings ContentType="ImageOnly" Type="Button" PrefixIcon="e-ribbon e-lowercase" />
+												<ButtonSettings ContentType="ImageOnly" Type="Button" PrefixIcon="e-icon e-ribbon e-lowercase" />
 											
 											</ej:ContentGroup>
 										

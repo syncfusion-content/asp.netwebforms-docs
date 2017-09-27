@@ -37,7 +37,7 @@ The client side event for Quick Access Toolbar menu click is `QatMenuItemClick` 
 								<ContentDefaults Width="50" Height="70" />
 								<ContentGroupCollection>
 									<ej:ContentGroup Id="paste" ToolTip="Paste" Text="paste" Type="SplitButton" QuickAccessMode="ToolBar">
-										<SplitButtonSettings ContentType="ImageOnly" PrefixIcon="e-ribbon e-ribbonpaste" ButtonMode="Dropdown" TargetID="split" ArrowPosition="Bottom" />
+										<SplitButtonSettings ContentType="ImageOnly" PrefixIcon="e-icon e-ribbon e-ribbonpaste" ButtonMode="Dropdown" TargetID="split" ArrowPosition="Bottom" />
 									</ej:ContentGroup>
 								</ContentGroupCollection>
 							</ej:TabContent>
@@ -49,7 +49,7 @@ The client side event for Quick Access Toolbar menu click is `QatMenuItemClick` 
 							<ej:TabContent>
 								<ContentGroupCollection>
 									<ej:ContentGroup Id="italic" ToolTip="italic" Text="italic" Type="Button" QuickAccessMode="ToolBar">
-										<ButtonSettings ContentType="ImageOnly" PrefixIcon="e-ribbon e-ribbonitalic" />
+										<ButtonSettings ContentType="ImageOnly" PrefixIcon="e-icon e-ribbon e-ribbonitalic" />
 									</ej:ContentGroup>
 								</ContentGroupCollection>
 							</ej:TabContent>
@@ -60,7 +60,7 @@ The client side event for Quick Access Toolbar menu click is `QatMenuItemClick` 
 							<ej:TabContent>
 								<ContentGroupCollection>
 									<ej:ContentGroup ToolTip="Bold" Text="bold" Type="ToggleButton" QuickAccessMode="ToolBar">
-										<ToggleButtonSettings defaultText="Bold" activeText="Bold" defaultPrefixIcon="e-ribbon bold" activePrefixIcon="e-ribbon bold" />
+										<ToggleButtonSettings defaultText="Bold" activeText="Bold" defaultPrefixIcon="e-icon e-ribbon bold" activePrefixIcon="e-icon e-ribbon bold" />
 									</ej:ContentGroup>
 								</ContentGroupCollection>
 							</ej:TabContent>

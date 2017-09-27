@@ -50,7 +50,7 @@ Tooltip and Custom Tooltip can be specified for each TabGroup controls.
 								<ContentDefaults Width="50" Height="75" Type="SplitButton" />
 								<ContentGroupCollection>
 									<ej:ContentGroup Id="paste" ToolTip="Paste">
-										<SplitButtonSettings ButtonMode="Dropdown" ArrowPosition="Bottom" TargetID="pasteul" ContentType="TextAndImage" PrefixIcon="e-ribbon e-ribbonpaste" />
+										<SplitButtonSettings ButtonMode="Dropdown" ArrowPosition="Bottom" TargetID="pasteul" ContentType="TextAndImage" PrefixIcon="e-icon e-ribbon e-ribbonpaste" />
 									</ej:ContentGroup>
 								</ContentGroupCollection>
 							</ej:TabContent>

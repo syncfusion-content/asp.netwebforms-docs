@@ -27,7 +27,7 @@ The following table describes about the built in controls `Type` and their corre
 <tr>
 <td class="type">Button</td>
 <td class="control settings"><span class="param-type">Button - ButtonSettings</span></td><td class="example last">
-    ButtonSettings Width="70" ContentType="ImageOnly" PrefixIcon="e-ribbon e-new"
+    ButtonSettings Width="70" ContentType="ImageOnly" PrefixIcon="e-icon e-ribbon e-new"
  </td>
 </tr>
 <tr>
@@ -73,7 +73,7 @@ N> You can specify type either to `ContentGroup` or to `ContentDefault`.
 							<ej:TabContent>
 								<ContentGroupCollection>
 									<ej:ContentGroup Id="new" Text="New" ToolTip="New" Type="Button">
-										<ButtonSettings Type="Button" ContentType="ImageOnly" ImagePosition="ImageTop" PrefixIcon="e-ribbon e-new" Click="executeAction" />
+										<ButtonSettings Type="Button" ContentType="ImageOnly" ImagePosition="ImageTop" PrefixIcon="e-icon e-ribbon e-new" Click="executeAction" />
 									</ej:ContentGroup>
 								</ContentGroupCollection>
 								<ContentDefaults Width="60" Height="70" Type="Button" />
@@ -86,7 +86,7 @@ N> You can specify type either to `ContentGroup` or to `ContentDefault`.
 								<ContentDefaults Width="50" Height="75" Type="SplitButton" />
 								<ContentGroupCollection>
 									<ej:ContentGroup Id="paste" ToolTip="Paste">
-										<SplitButtonSettings ButtonMode="Dropdown" ArrowPosition="Bottom" TargetID="pasteul" ContentType="TextAndImage" PrefixIcon="e-ribbon e-ribbonpaste" />
+										<SplitButtonSettings ButtonMode="Dropdown" ArrowPosition="Bottom" TargetID="pasteul" ContentType="TextAndImage" PrefixIcon="e-icon e-ribbon e-ribbonpaste" />
 									</ej:ContentGroup>
 								</ContentGroupCollection>
 							</ej:TabContent>
@@ -108,10 +108,10 @@ N> You can specify type either to `ContentGroup` or to `ContentDefault`.
 							<ej:TabContent>
 								<ContentGroupCollection>
 									<ej:ContentGroup Id="bold" Text="Bold" ToolTip="Bold" Type="ToggleButton">
-										<toggleButtonSettings ContentType="ImageOnly" ActiveText="Bold" ActivePrefixIcon="e-ribbon bold" DefaultPrefixIcon="e-ribbon bold" />
+										<toggleButtonSettings ContentType="ImageOnly" ActiveText="Bold" ActivePrefixIcon="e-icon e-ribbon bold" DefaultPrefixIcon="e-icon e-ribbon bold" />
 									</ej:ContentGroup>
 									<ej:ContentGroup Id="italic" Text="Italic" ToolTip="Italic" Type="ToggleButton">
-										<toggleButtonSettings ContentType="ImageOnly" ActiveText="Italic" ActivePrefixIcon="e-ribbon e-ribbonitalic" DefaultPrefixIcon="e-ribbon e-ribbonitalic" />
+										<toggleButtonSettings ContentType="ImageOnly" ActiveText="Italic" ActivePrefixIcon="e-icon e-ribbon e-ribbonitalic" DefaultPrefixIcon="e-icon e-ribbon e-ribbonitalic" />
 									</ej:ContentGroup>
 								</ContentGroupCollection>
 								<ContentDefaults Type="Button" IsBig="false" />
