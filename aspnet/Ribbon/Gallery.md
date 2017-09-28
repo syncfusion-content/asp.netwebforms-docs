@@ -35,16 +35,16 @@ N> The `ItemHeight` and `ItemWidth` for GalleryItem can be set, if not set defau
 									<ej:ContentGroup Text="Gallery" Type="Gallery" Id="Gallery1" Columns="2" ItemWidth="73" ItemHeight="54" ExpandedColumns="3">
 										<GalleryItemCollection>
 											<ej:GalleryItem Text="GalleryContent1" ToolTip="GalleryContent1">
-												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-gallerycontent1 e-gbtnimg" />
+												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-icon e-gallerycontent1 e-gbtnimg" />
 											</ej:GalleryItem>
 											<ej:GalleryItem Text="GalleryContent2" ToolTip="GalleryContent2">
-												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-gallerycontent2 e-gbtnimg" />
+												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-icon e-gallerycontent2 e-gbtnimg" />
 											</ej:GalleryItem>
 											<ej:GalleryItem Text="GalleryContent3" ToolTip="GalleryContent3">
-												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-gallerycontent3 e-gbtnimg" />
+												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-icon e-gallerycontent3 e-gbtnimg" />
 											</ej:GalleryItem>
 											<ej:GalleryItem Text="GalleryContent4" ToolTip="GalleryContent4">
-												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-gallerycontent4 e-gbtnimg" />
+												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-icon e-gallerycontent4 e-gbtnimg" />
 											</ej:GalleryItem>
 										</GalleryItemCollection>
 									</ej:ContentGroup>
@@ -132,16 +132,16 @@ You can also set `Text` and `ToolTip` to CustomGalleryItem which can also be cus
 									<ej:ContentGroup Text="Gallery" Type="Gallery" Id="Gallery1" Columns="2" ItemWidth="73" ItemHeight="54" ExpandedColumns="3">
 										<GalleryItemCollection>
 											<ej:GalleryItem Text="GalleryContent1" ToolTip="GalleryContent1">
-												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-gallerycontent1 e-gbtnimg" />
+												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-icon e-gallerycontent1 e-gbtnimg" />
 											</ej:GalleryItem>
 											<ej:GalleryItem Text="GalleryContent2" ToolTip="GalleryContent2">
-												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-gallerycontent2 e-gbtnimg" />
+												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-icon e-gallerycontent2 e-gbtnimg" />
 											</ej:GalleryItem>
 											<ej:GalleryItem Text="GalleryContent3" ToolTip="GalleryContent3">
-												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-gallerycontent3 e-gbtnimg" />
+												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-icon e-gallerycontent3 e-gbtnimg" />
 											</ej:GalleryItem>
 											<ej:GalleryItem Text="GalleryContent4" ToolTip="GalleryContent4">
-												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-gallerycontent4 e-gbtnimg" />
+												<ButtonSettings ContentType="ImageOnly" CssClass="e-gbtnposition" PrefixIcon="e-icon e-gallerycontent4 e-gbtnimg" />
 											</ej:GalleryItem>
 										</GalleryItemCollection>
 										<CustomGalleryItemCollection>

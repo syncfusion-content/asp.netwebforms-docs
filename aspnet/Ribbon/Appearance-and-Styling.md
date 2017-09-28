@@ -30,7 +30,7 @@ In an ASPX page, define the Ribbon control and configure the Ribbon with custom 
                                 <ej:TabContent>
                                     <ContentGroupCollection>
                                         <ej:ContentGroup Id="new1" Text="New" Type="Button">
-                                            <ButtonSettings Type="Button" ContentType="ImageOnly" PrefixIcon="e-ribbon e-new" />
+                                            <ButtonSettings Type="Button" ContentType="ImageOnly" PrefixIcon="e-icon e-ribbon e-new" />
                                         </ej:ContentGroup>
                                     </ContentGroupCollection>
                                 </ej:TabContent>

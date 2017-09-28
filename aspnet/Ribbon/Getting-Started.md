@@ -106,7 +106,7 @@ The following screenshot shows designer page of TabGroupCollection
                             <ej:TabContent>
                                 <ContentGroupCollection>
                                     <ej:ContentGroup Id="new1" Text="New" Type="Button">
-                                        <ButtonSettings Type="Button" ContentType="ImageOnly" PrefixIcon="e-ribbon e-new" />
+                                        <ButtonSettings Type="Button" ContentType="ImageOnly" PrefixIcon="e-icon e-ribbon e-new" />
                                     </ej:ContentGroup>
                                 </ContentGroupCollection>
                             </ej:TabContent>
@@ -150,7 +150,7 @@ Syncfusion ASP.NET Controls can be added to group’s content with corresponding
                                     <ContentDefaults Width="50" Height="75" Type="SplitButton" />
                                     <ContentGroupCollection>
                                         <ej:ContentGroup Id="paste" ToolTip="Paste">
-                                            <SplitButtonSettings ButtonMode="Dropdown" ArrowPosition="Bottom" TargetID="pasteul" ContentType="TextAndImage" PrefixIcon="e-ribbon e-ribbonpaste" Click="executeAction" />
+                                            <SplitButtonSettings ButtonMode="Dropdown" ArrowPosition="Bottom" TargetID="pasteul" ContentType="TextAndImage" PrefixIcon="e-icon e-ribbon e-ribbonpaste" Click="executeAction" />
                                         </ej:ContentGroup>
                                     </ContentGroupCollection>
                                 </ej:TabContent>
