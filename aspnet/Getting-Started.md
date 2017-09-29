@@ -64,6 +64,8 @@ This topic explains how to add the Syncfusion ASP.NET Web controls into the new 
 
 Syncfusion ASP.NET Web Forms NuGet packages are available [here](http://nuget.syncfusion.com/package/aspnet).
 
+N> If you wish to use the ASP.NET NuGet packages then Essential Studio or ASP.NET platform installation not required to implement with Syncfusion ASP.NET controls. 
+
 ### NuGet Configuration  
 
 Syncfusion NuGet Package feed links are configured in Visual Studio in the following ways,
