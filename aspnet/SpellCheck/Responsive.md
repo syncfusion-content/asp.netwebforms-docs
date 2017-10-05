@@ -23,7 +23,7 @@ The following code example describes the above behavior.
 
 {% endhighlight %}
 
-The dialog of spell check control is rendering based on the client browser’s width and height. Refer to the following code to render the spellcheck dialog control with responsive.
+The dialog of spell check control is rendering based on the client browser’s width and height. Refer to the following code snippet to render the SpellCheck dialog control with responsive.
 
 {% highlight html %}
 
