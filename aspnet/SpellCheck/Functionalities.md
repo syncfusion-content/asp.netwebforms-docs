@@ -213,7 +213,7 @@ You can also add the custom words into the custom dictionary file through the di
 
 ## Checking content on typing
 
-SpellCheck control support for spell check the content on press the Enter and Space key. The cursor position also properly retained while processing the spellcheck operations. If you enable **EnableValidateOnType** property, the spellcheck operation will be performed on type. 
+SpellCheck control supports for checking the content, while pressing the `Enter` and `Space` key. The cursor position also properly retained, while processing the spell check operations. If you set `true` to the **EnableValidateOnType** property, the spell check operation will be performed on typing the text. 
 
 The following code example describes the above behavior.
 
@@ -261,7 +261,7 @@ The following code example describes the above behavior.
 
 {% endhighlight %}
 
-N> You can get the suggestion words after some time interval once the method called. Since, ajax request processing in the background.
+N> You can get the suggestion words after some time interval once the method is called, since the AJAX request is processing in the background.
 
 ## Synchronous request
 
