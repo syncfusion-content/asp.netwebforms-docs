@@ -195,6 +195,162 @@ Using the `Manage NuGet Packages` in Visual Studio, NuGet packages can be update
 
    N> By clicking `Update All` button, all NuGet packages are getting update. When the update is complete, close and re-open all open instances of Visual Studio.
 
+## NuGet Packages Structure
+
+The following structure is maintained for the ASP.NET platform NuGet packages from 2015 Volume 2.
+
+<table>
+   <tr>
+		<td colspan="1" rowspan="2">
+			Categories/Package Name<br/>
+		</td>
+		<td colspan="1" rowspan="2">
+			Supported Controls<br/>
+		</td>
+		<td colspan="1" rowspan="2">
+			Assemblies<br/>
+		</td>
+		<td colspan="2" rowspan="1">
+			Assets<br/>
+		</td>
+		<td>
+			Dependencies<br/>
+		</td>
+	</tr>
+    <tr>
+		<td>
+			Scripts<br/>
+		</td>
+		<td>
+			CSS<br/>
+		</td>
+		<td>
+			<br/>
+		</td>
+	</tr>
+  	<tr>
+		<td>
+			Syncfusion.AspNet<br/>
+		</td>
+		<td>
+			Grid<br/>Data Visualization<br/>Layout<br/>Editors<br/>Navigation<br/>Notification<br/>To know more information about the controls for above categories navigate the below link.<br/> {{'<http://www.syncfusion.com/products/aspnet>'| markdownify }}<br/><br/>
+		</td>
+		<td>
+			EJ.Web<br/>
+		</td>
+		<td>
+			ej.webform.min.js<br/><br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			Syncfusion.Web.Base<br/>
+            Syncfusion.Web.FileFormatsBase<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Syncfusion.AspNet.ReportViewer<br/>
+		</td>
+		<td>
+			Report Viewer<br/>
+		</td>
+		<td>
+			Shared.WPF<br/>RichTextBoxAdv.WPF<br/>Chart.WPF<br/>GridCommon.WPF<br/>Grid.WPF<br/>SfMaps.WPF<br/>ReportControls.WPF<br/>ReportWriter.Base<br/>EJ.ReportViewer<br/>Gauge.WPF<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			Syncfusion.AspNet<br/>Syncfusion.Web.Base<br/>Syncfusion.Web.FileFormatsBase<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Syncfusion.AspNet.FileFormats<br/>
+		</td>
+		<td>
+			Excel<br/>Word<br/>PDF<br/>Power Point(Preview)<br/>
+		</td>
+		<td>
+			DocToPDFConverter.Base<br/>ExcelToPDFConverter.Base<br/>PresentationToPDFConverter.Base<br/>HtmlConverter.Base<br/>OfficeChartToImageConverter.WPF<br/>ExcelChartToImageConverter.WPF<br/>SfChart.WPF<br/>Shared.WPF<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			Syncfusion.Web.FileFormatsBase<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Syncfusion.AspNet.Pivot<br/>
+		</td>
+		<td>
+			Pivot Grid<br/>Pivot Chart<br/>Pivot Client<br/>Pivot Gauge<br/>
+		</td>
+		<td>
+			Olap.Base<br/>EJ.Pivot<br/>PivotAnalysis.Base<br/>
+		</td>
+		<td>
+			ej.webform.min.js<br/><br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			Syncfusion.Web.Base<br/>Syncfusion.Web.FileFormatsBase<br/>
+		</td>
+	</tr>
+  <tr>
+		<td>
+			Syncfusion.Web.Base<br/>
+		</td>
+    <td>
+			-<br/>
+		</td>
+		<td>
+			Linq.Base<br/>EJ<br/>EJ.Export<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			Syncfusion.JavaScript<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Syncfusion.Web.FileFormatsBase<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			Compression.Base<br/>XlsIO.Base<br/>Pdf.Base<br/>DocIO.Base<br/>OfficeChart.Base<br/>Presentation.Base<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+	</tr>
+</table>
+
 ## Configure client side resources
 
 ### Configuring Syncfusion Bower Packages
