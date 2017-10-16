@@ -295,4 +295,4 @@ You can show/hide the symbol text by using the `ShowPaletteItemText` property of
     </ej:SymbolPalette>
 
 {% endhighlight %}
-To explore the properties of symbol palette, refer to [Symbol Palette Properties](/api/aspnet/ejsymbolpalette#members "Symbol Palette Properties").
+To explore the properties of symbol palette, refer to [Symbol Palette Properties](https://help.syncfusion.com/cr/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.SymbolPaletteProperties_members.html "Symbol Palette Properties").
