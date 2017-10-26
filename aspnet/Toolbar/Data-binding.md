@@ -154,7 +154,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 	data.Add(new ToolData {Id ="1", Css = "ToolbarItems LeftAlign_tool", Tooltip = "left"});
 
-	data.Add(new ToolData {Id ="2", Css="ToolbarItems CenterAlign_tool", Tooltip="centre"});
+	data.Add(new ToolData {Id ="2", Css="ToolbarItems CenterAlign_tool", Tooltip="center"});
 
 	data.Add(new ToolData {Id="3", Css="ToolbarItems RightAlign_tool", Tooltip="right"});
 
