@@ -18,7 +18,7 @@ RangeNavigator provides support for you to customize the text display in the too
 {% highlight html %}
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" Locale="fr-FR">
 
-<TooltipSettings Visible="True" BackgroundColor="black" TooltipDisplayMode="ondemand">        
+<TooltipSettings Visible="True" BackgroundColor="black" TooltipDisplayMode="onDemand">        
 
 <Font Color="red"  Family="Segoe UI" Style="Normal" FontSize="12px"  Opacity="1" Weight="Regular"></Font>
 
@@ -83,14 +83,14 @@ always</td><td>
 Tooltip get displayed for RangeNavigator always.</td></tr>
 <tr>
 <td>
-ondemand</td><td>
+onDemand</td><td>
 Tooltip get displayed only when we move the slider.</td></tr>
 </table>
 
 {% highlight html %}
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" Locale="fr-FR">
 
-<TooltipSettings Visible="True" TooltipDisplayMode="ondemand">   
+<TooltipSettings Visible="True" TooltipDisplayMode="onDemand">   
 
 </TooltipSettings>
 
