@@ -249,6 +249,27 @@ The following structure is maintained for ASP.NET platform NuGet packages from 2
             Syncfusion.Web.FileFormatsBase<br/>
 		</td>
 	</tr>
+		<tr>
+		<td>
+			Syncfusion.AspNet.PdfViewer<br/>
+		</td>
+		<td>
+			Pdf Viewer<br/>
+		</td>
+		<td>
+			EJ.PdfViewer<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			Syncfusion.AspNet<br/>
+            Syncfusion.Web.FileFormatsBase<br/>
+		</td>
+	</tr>
 	<tr>
 		<td>
 			Syncfusion.AspNet.ReportViewer<br/>
