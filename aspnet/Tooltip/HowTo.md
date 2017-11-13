@@ -306,7 +306,7 @@ Defines the style for the tip as follow as
 
 ## Initialize Tooltip for the target element
 
-Tooltips are also useful for form elements, to show some additional information in the context of each field.
+Tooltips are also useful for input elements, to show hint in the context of each field.
 
 Rather than using multiple Tooltips, a single Tooltip can be used to show the information of each and every field of the form/table element. This can be achieved using “target” API. Target property Specifies a selector for elements, within the container, for which the Tooltip will be displayed.
 
