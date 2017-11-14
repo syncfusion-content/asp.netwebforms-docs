@@ -42,14 +42,14 @@ Then the model is bound with the element using the **bindTo.**
             {
 
             }
-            public Employee(int EmployeeId, string FullName, string LastName)
+            public Employee(int EmployeeId, string FirstName, string LastName)
             {
                 this.EmployeeID = EmployeeId;
-                this.FullName = FullName;
-                this.ShipCity = LastName;
+                this.FirstName = FirstName;
+                this.LastName = LastName;
             }
             public int EmployeeID { get; set; }
-            public string FullName { get; set; }
+            public string FirstName { get; set; }
             public string LastName { get; set; }
         }
 
@@ -71,7 +71,7 @@ Then the model is bound with the element using the **bindTo.**
                     </thead>
                     <tbody id="tbody1">
                         <tr>
-                            <td ej-observe="EmployeeID"></td>
+                            <td ej-observe="EmployeeID" ej-computed="EmployeeIndex"></td>
                             <td ej-computed="FullName"></td>
                         </tr>
                     </tbody>
@@ -122,6 +122,12 @@ Then the model is bound with the element using the **bindTo.**
                                 return this.FirstName + ' ' + this.LastName;
                             },
                             deps: ["FirstName", "LastName"]
+                        },
+                        EmployeeIndex: {
+                            value: function () {
+                                return this.EmployeeID;
+                            },
+                            deps: ["EmployeeID"]
                         }
                 });
                 employees.bindTo($("#tbody1"));
@@ -145,5 +151,5 @@ The result for the above code example is illustrated as follows.
 
 ![](Table-Model_images/Table-Model_img1.png) 
 
-
+[Sample Link](http://www.syncfusion.com/downloads/support/directtrac/general/7z/DMtableModel618709880)
 
