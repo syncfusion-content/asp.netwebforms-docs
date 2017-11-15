@@ -52,7 +52,7 @@ Yes
 </tr>
 <tr>
 <td>
-TrueType Fonts
+TrueType Fonts***
 </td>
 <td>
 Yes
@@ -432,3 +432,5 @@ No
 Supported only for shapes and texts*
 
 Supports only text markup annotations**
+
+When the document contains texts that uses TrueType System Fonts to be rendered, then the content in the PDF document is rendered using the font installed in the system/machine in the PDF Viewer control. If the required font is not installed in the system, then the contents would be rendered using **Arial** font.***
