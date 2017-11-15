@@ -196,17 +196,17 @@ public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> js
         currentRptName = (row.ItemArray[0] as string).Replace("##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower(), "");
         if (currentRptName.Equals(jsonResult["reportName"].ToString()))
         {                  
-            byte[] reportString = new byte[2 * 1024];
-            reportString = (row.ItemArray[1] as byte[]);
+            byte[] reportByte = new byte[2 * 1024];
+            reportByte = (row.ItemArray[1] as byte[]);
             if (operationalMode.ToLower() == "servermode" && analysisMode == "olap")
             {
-                var repCol = Encoding.UTF8.GetString(reportString);
+                var repCol = Encoding.UTF8.GetString(reportByte);
                 OlapDataManager DataManager = new OlapDataManager(connectionString);
                 if (repCol.IndexOf("<?xml version") == 0)
                 {
-                    var reportStr = "";
-                    reportStr = Syncfusion.JavaScript.Olap.Utils.CompressData(row.ItemArray[1] as byte[]);
-                    DataManager.Reports = pivotClientHelper.DeserializedReports(reportStr);
+                    var reportString = "";
+                    reportString = Syncfusion.JavaScript.Olap.Utils.CompressData(row.ItemArray[1] as byte[]);
+                    DataManager.Reports = pivotClientHelper.DeserializedReports(reportString);
                     DataManager.SetCurrentReport(DataManager.Reports[0]);
                     return pivotClientHelper.GetJsonData("toolbarOperation", DataManager, "Load Report", jsonResult["reportName"].ToString());
                 }
@@ -222,9 +222,9 @@ public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> js
             else
             {
                 if (analysisMode.ToLower() == "pivot" && operationalMode.ToLower() == "servermode")
-                    dictionary = pivotClientHelper.GetJsonData("LoadReport", ProductSales.GetSalesData(), Encoding.UTF8.GetString(reportString));
+                    dictionary = pivotClientHelper.GetJsonData("LoadReport", ProductSales.GetSalesData(), Encoding.UTF8.GetString(reportByte));
                 else
-                    dictionary.Add("report", Encoding.UTF8.GetString(reportString));
+                    dictionary.Add("report", Encoding.UTF8.GetString(reportByte));
                 break;
             }
         }
@@ -277,17 +277,17 @@ public Dictionary<string, object> LoadReportFromDB(string reportName, string ope
         currentRptName = (row.ItemArray[0] as string).Replace("##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower(), "");
         if (currentRptName.Equals(reportName))
         {
-            byte[] reportString = new byte[2 * 1024];
-            reportString = (row.ItemArray[1] as byte[]);
+            byte[] reportByte = new byte[2 * 1024];
+            reportByte = (row.ItemArray[1] as byte[]);
             if (operationalMode.ToLower() == "servermode" && analysisMode == "olap")
             {
-                var repCol = Encoding.UTF8.GetString(reportString);
+                var repCol = Encoding.UTF8.GetString(reportByte);
                 OlapDataManager DataManager = new OlapDataManager(connectionString);
                 if (repCol.IndexOf("<?xml version") == 0)
                 {
-                    var reportStr = "";
-                    reportStr = Syncfusion.JavaScript.Olap.Utils.CompressData(row.ItemArray[1] as byte[]);
-                    DataManager.Reports = pivotClientHelper.DeserializedReports(reportStr);
+                    var reportString = "";
+                    reportString = Syncfusion.JavaScript.Olap.Utils.CompressData(row.ItemArray[1] as byte[]);
+                    DataManager.Reports = pivotClientHelper.DeserializedReports(reportString);
                     DataManager.SetCurrentReport(DataManager.Reports[0]);
                     return pivotClientHelper.GetJsonData("toolbarOperation", DataManager, "Load Report", reportName);
                 }
@@ -303,9 +303,9 @@ public Dictionary<string, object> LoadReportFromDB(string reportName, string ope
             else
             {
                 if (analysisMode.ToLower() == "pivot" && operationalMode.ToLower() == "servermode")
-                    dictionary = pivotClientHelper.GetJsonData("LoadReport", ProductSales.GetSalesData(), Encoding.UTF8.GetString(reportString));
+                    dictionary = pivotClientHelper.GetJsonData("LoadReport", ProductSales.GetSalesData(), Encoding.UTF8.GetString(reportByte));
                 else
-                    dictionary.Add("report", Encoding.UTF8.GetString(reportString));
+                    dictionary.Add("report", Encoding.UTF8.GetString(reportByte));
                 break;
             }
         }
