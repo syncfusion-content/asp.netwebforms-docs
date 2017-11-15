@@ -287,8 +287,6 @@ function exportBtnClick(args)
 
 {% endhighlight %} 
 
-
-
 ## Image Export
 
 User can export contents of the PivotChart to image format for future archival, references and analysis purposes. We can export PivotChart to the following image formats.
@@ -350,6 +348,40 @@ function exportBtnClick(args)
 }
 
 {% endhighlight %}  
+
+## PivotChart - Exporting Format
+
+I> This option is applicable only for PivotChart specifically when exported to Excel document.
+
+You can set an option to export PivotChart to an Excel document, either as image or PivotChart format itself by setting the boolean property `exportChartAsImage`, inside the `BeforeExport` event.
+
+N> By default PivotChart will be exported as image format to Excel document.
+
+{% highlight html %}
+
+<ej:PivotChart ID="MyPivotChart1" runat="server" OnServerPDFExporting="PivotChart_ServerPDFExporting" ClientIDMode="Static">
+    //..
+    <ClientSideEvents BeforeExport="Exporting" />
+    </ej:PivotChart>
+<ej:Button runat="server" ClientSideOnClick="exportBtnClick" Text="Export">
+</ej:Button>
+<script type="text/javascript">
+    function exportBtnClick(args)
+    {
+        var chartObj = $('#MyPivotChart1').data("ejPivotChart ");
+        chartObj.exportPivotChart("excelExport","fileName");
+    }
+
+    function Exporting(args) {
+        args.exportChartAsImage = false; //You can set the chart format here
+    }
+</script>
+    
+{% endhighlight %} 
+
+The below screenshot shows the control exported to Excel document showing its own format (Pivoting Chart).
+
+![](Export_images/Export_ExcelChartClient.png)
 
 ## Exporting Customization
 

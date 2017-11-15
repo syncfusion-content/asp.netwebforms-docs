@@ -333,7 +333,9 @@ namespace PivotClientDemo
             cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(clientReports).ToArray());
             cmd1.ExecuteNonQuery();
             con.Close();
-            return null;
+            Dictionary<string, object> dictionary = new Dictionary<string, object>();
+            dictionary.Add("CurrentAction", "Save");
+            return dictionary;
         }
 
         public Dictionary<string, object> RemoveReportFromDB(string reportName, string operationalMode, string analysisMode)
@@ -351,7 +353,9 @@ namespace PivotClientDemo
             }
             cmd1.ExecuteNonQuery();
             con.Close();
-            return null;
+            Dictionary<string, object> dictionary = new Dictionary<string, object>();
+            dictionary.Add("CurrentAction", "Remove");
+            return dictionary;
         }
 
         public Dictionary<string, object> RenameReportInDB(string selectedReport, string renameReport, string operationalMode, string analysisMode)
@@ -371,7 +375,9 @@ namespace PivotClientDemo
             cmd1.Parameters.Add("@RenameReport", renameReport);
             cmd1.ExecuteNonQuery();
             con.Close();
-            return null;
+            Dictionary<string, object> dictionary = new Dictionary<string, object>();
+            dictionary.Add("CurrentAction", "Rename");
+            return dictionary;
         }
 
         public Dictionary<string, object> FetchReportListFromDB(string action, string operationalMode, string analysisMode)
