@@ -415,6 +415,44 @@ function exportBtnClick(args)
 
 {% endhighlight %} 
 
+### File format selection
+
+I> This option is applicable only for PivotGrid when exporting to Excel document.
+
+You can set the option for exporting the control to Excel document either in *.xls* or *.xlsx* format, using `fileFormat` property inside the `BeforeExport` event.
+
+N> By default excel document will be exported to ".xls" format using PivotEngine export.
+
+{% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+//...
+
+<body>
+    //...
+
+    <ej:PivotGrid ID="PivotGrid1" runat="server" Url="/RelationalService" IsResponsive="true">
+        <ClientSideEvents  BeforeExport="Export"/>
+    </ej:PivotGrid>
+    
+    <ej:Button runat="server" ClientSideOnClick="exportBtnClick" Text="Export">
+    </ej:Button>
+    <script type="text/javascript">
+        function exportBtnClick(args) {
+            var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
+            pGridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.Excel);;
+        }
+        function Export(args) {
+            args.exportMode = ej.PivotGrid.ExportMode.PivotEngine;
+            args.fileFormat = ".xlsx"; //you can set the excel sheet format here
+        }
+    </script>
+</body>
+
+</html>                                            
+
+{% endhighlight %}
+
 ### Customize the export document name
 
 For customizing name in WebAPI controller, below code snippet is used.

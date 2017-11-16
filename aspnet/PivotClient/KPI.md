@@ -9,8 +9,6 @@ documentation: ug
 
 # KPI
 
-I> This feature is applicable for OLAP datasource only in Server Mode.
-
 Key Performance Indicators (KPIs) are business metric that help to figure out the progress of an enterprise in meeting its business goals.
 
 The different indicators available in KPI are:
@@ -21,6 +19,38 @@ The different indicators available in KPI are:
 * KPI Trend: Evaluate the current trend of the value compared to the goal.
 
 The **“KpiElements”** class in OLAP Base library holds the KPI name and when its object is added to an OlapReport, you can view the resultant information in PivotClient.
+
+To enable KPI option set the property `EnableKPI` to `true`.
+
+## Client Mode
+
+{% highlight html %}
+
+<ej:PivotGrid ID="PivotClient1" EnableKPI="true" runat="server">
+    <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll">
+        <Rows>
+            <ej:Field FieldName="[Customer].[Customer Geography]"></ej:Field>
+        </Rows>
+        <Columns>
+            <ej:Field FieldName="[Product].[Product Categories]"></ej:Field>
+        </Columns>
+        <Values>
+            <ej:Field Axis="Column">
+                <Measures>
+                    <ej:MeasuresItems FieldName="[Measures].[Internet Sales Amount]" />
+                    <ej:MeasuresItems FieldName="[Measures].[Growth in Customer Base Trend]" />
+                    <ej:MeasuresItems FieldName="[Measures].[Growth in Customer Base Status]" />
+                </Measures>
+            </ej:Field>
+        </Values>
+    </DataSource>
+</ej:PivotGrid>
+        
+{% endhighlight %}
+
+![](KPI_images/clientmode-kpi.png)
+
+## Server Mode
 
 ### Client side property declaration
 

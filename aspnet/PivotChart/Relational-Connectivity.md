@@ -60,6 +60,7 @@ N> If you have installed any version of Essential Studio, then the location of S
 * Syncfusion.DocIO.Base
 * Syncfusion.EJ
 * Syncfusion.EJ.Web
+* Syncfusion.EJ.Export
 * Syncfusion.EJ.Pivot
 
 **List of Namespaces**
