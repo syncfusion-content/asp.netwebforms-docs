@@ -79,7 +79,7 @@ Fires before rendering trackball tooltip. You can use `TooltipInitialize` event 
 
 {% highlight html %}
 
-<ej:Sparkline ClientIDMode="Static" ID="Sparkline1" runat="server" OnClientTooltipInitialize="onTooltipInitialze">    
+<ej:Sparkline ClientIDMode="Static" ID="Sparkline1" runat="server" OnClientTooltipInitialize="onTooltipInitialize">    
 </ej:Sparkline>
 
 {% endhighlight %}
@@ -87,7 +87,7 @@ Fires before rendering trackball tooltip. You can use `TooltipInitialize` event 
 {% highlight js %}
 
  <script type="text/javascript">
-    function onTooltipInitialze(sender) {
+    function onTooltipInitialize(sender) {
                 //Do something
     }
 </script>

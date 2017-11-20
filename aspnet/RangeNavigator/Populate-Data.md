@@ -48,7 +48,7 @@ function loadingData(sender) {
 
        }
 
-// Method to get data in json format
+// Method to get data in JSON format
 
 function GetData() {
 
