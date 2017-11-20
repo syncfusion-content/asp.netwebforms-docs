@@ -75,3 +75,19 @@ documentation: ug
 Execute the above code to render the following output.
 
 ![](Interaction-and-Animation_images/Interaction-and-Animation_img1.png)
+
+### Enable Marker Pointer Animation
+
+Specifies the animate state for marker pointer, you can set `enableMarkerPointer`property as **true**
+
+{% highlight html %}
+
+<%-- For Linear Gauge rendering -- %>
+
+<%-- For enable Animation, Animation speed and user interaction-- %>
+
+<ej:LinearGauge runat="server" Value="78" ID="PointerGauge"  enableAnimation="true" AnimationSpeed="1000" EnableMarkerPointer="true">
+
+</ej:LinearGauge>
+
+{% endhighlight %}
