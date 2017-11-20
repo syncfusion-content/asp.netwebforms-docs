@@ -846,6 +846,44 @@ The **Font** property of the axis provides options to customize the FontFamily, 
 
 ![](Axis_images/axis_img28.png)
 
+#### Axis Labels Line Break
+
+Axis Labels can be placed in multiple lines by specifying **<br>** for data points x value and in label format.
+
+For category value type, **<br>** can be specified in x value of data points.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+       <ej:Series>
+           <Points>
+               <ej:Points X="India" Y="61.3"></ej:Points>
+               <ej:Points X="United<br>States<br>of<br>America" Y="31"></ej:Points>
+               <ej:Points X="South<br>Korea" Y="39.4"></ej:Points>
+               <ej:Points X="United<br>Arab<br>Emirates" Y="65.1"></ej:Points>
+               <ej:Points X="United<br>Kingdom" Y="75.9"></ej:Points>
+           </Points>
+       </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img68.png)
+
+For numeric, datetime and datetimeCategory value type, **<br>** can be specified in labelFormat.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <PrimaryXAxis LabelFormat="MMM<br>dd<br>yyyy" ValueType="Datetime">
+    </PrimaryXAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img69.png)
 
 ### Label and tick positioning
  
