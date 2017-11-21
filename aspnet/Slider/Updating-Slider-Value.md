@@ -84,39 +84,23 @@ For Range Slider, the value starts from 10 (min value) and ends at 90 (max valu
 
 ## Buttons
 
-**Slider** includes the button support for increment or decrement the values of the slider.
+Slider includes the button support for increment or decrement the values of the slider.
 
 ### Enabling Buttons
 
-Use the **showButtons** property to enable the button support. By default this property is disabled. Data type of this property is “Boolean”.
+Use the ShowButtons property to enable the button support. By default this property is disabled. Data type of this property is “Boolean”.
 
-The following steps explains you on how to enable button support in **Slider**.
+The following steps explains you on how to enable button support in Slider.
 
-In an **HTML** page, specify the **&lt;div&gt;** elements to render the **Range Slider.**
-
-
+In an ASPX page, define the Slider control and set the ShowButtons property to true.
 
 {% highlight html %}
 
-   <div class="txt">Range Slider</div>
-   <div id="rangeSlider"></div>
-
+  <ej:Slider ID="RangeSlider" runat="server" Width="500" Values="30,60" SliderType="Range" ShowButtons="true"></ej:Slider>
 
 {% endhighlight %}
 
-{% highlight javascript %}
 
-        // In JavaScript, when initializing the Slider, specify the value for “showButtons” property as “true” 
-        $("#rangeSlider").ejSlider({
-            sliderType: ej.SliderType.Range,
-            values: [30,60],
-            width: "500",
-            showButtons:true
-        });
-
-
-{% endhighlight %}
-
-Execute the above code example to render the following output.
+The following screenshot displays the output of the above code example.
 
 ![](Button-Support_images/Button-Support_img1.png)
