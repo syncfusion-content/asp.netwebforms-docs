@@ -111,6 +111,8 @@ You can enable menu filter by setting `FilterType` as `Menu` in `FilterSettings`
 
 There is an option to show or hide the additional filter options in the Menu by setting `ShowPredicate` as `true` or `false` in `FilterSettings` respectively.
 
+We can also filter a specified range of values by using the `between` operator for the column type `number`, `date` and `datetime`.
+
 The following code example describes the above behavior.
 
 {% tabs %}
