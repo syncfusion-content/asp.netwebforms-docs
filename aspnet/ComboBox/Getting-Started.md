@@ -101,7 +101,7 @@ To assign a value initially to the ComboBox, you can use <b>Value</b> property.
     
 {% highlight c# %}
 
-public partial class DefultFunctionalities : System.Web.UI.Page
+public partial class DefaultFunctionalities : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {

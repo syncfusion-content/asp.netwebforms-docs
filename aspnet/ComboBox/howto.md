@@ -41,8 +41,8 @@ to the ComboBox.
 
 <script type="text/javascript">
     function onChange(e) {
-        var ctry = $('#<%=countryList.ClientID%>').data("ejComboBox");
-        ctry.option({ enabled: true, query: new ej.Query().where('parentId', 'equal', e.model.value), value: null });
+        var country = $('#<%=countryList.ClientID%>').data("ejComboBox");
+        country.option({ enabled: true, query: new ej.Query().where('parentId', 'equal', e.model.value), value: null });
     }
 </script>
 
@@ -86,12 +86,12 @@ class CountryList
     public string parentId { get; set; }
     public string text { get; set; }
     public string sprite { get; set; }
-    public CountryList(int cvalue, string cid, string ctext, string sprt)
+    public CountryList(int cvalue, string cid, string ctext, string sprite)
     {
         this.value = cvalue;
         this.parentId = cid;
         this.text = ctext;
-        this.sprite = sprt;
+        this.sprite = sprite;
 
     }
 }
@@ -156,7 +156,7 @@ In the following sample, icon classes are mapped with `DataIconCSSField` field.
         font-size: 20px;
 
     }
-    .dsc-sort:before {
+    .desc-sort:before {
         content: '\e721';
         font-family: 'e-icons';   
         font-size: 20px;
@@ -182,9 +182,9 @@ public partial class Icons : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        this.selectmailtools.DataSource = IconCss.GetIconList();
-        this.selectmailtools.DataTextField = "Name";
-        this.selectmailtools.DataIconCSSField = "IconClass";
+        this.selectIcon.DataSource = IconCss.GetIconList();
+        this.selectIcon.DataTextField = "Name";
+        this.selectIcon.DataIconCSSField = "IconClass";
     }
 }
 
@@ -196,7 +196,7 @@ public class IconCss
     {
         List<IconCss> icon = new List<IconCss>();
         icon.Add(new IconCss { IconClass = "asc-sort", Name = "Sort A to Z" });
-        icon.Add(new IconCss { IconClass = "dsc-sort", Name = "Sort Z to A " });
+        icon.Add(new IconCss { IconClass = "desc-sort", Name = "Sort Z to A " });
         icon.Add(new IconCss { IconClass = "filter", Name = "Filter" });
         icon.Add(new IconCss { IconClass = "clear", Name = "Clear" });
         return icon;
@@ -209,7 +209,7 @@ public class IconCss
 
 ## Autofill supported with ComboBox
 
-The ComboBox supports the `AutoFill` behaviour with the help of AutoFill property. Whenever you change the input value, the ComboBox will autocomplete your data by matching the typed character. Suppose, if no matches
+The ComboBox supports the `AutoFill` behavior with the help of AutoFill property. Whenever you change the input value, the ComboBox will autocomplete your data by matching the typed character. Suppose, if no matches
 found then, comboBox doesn't suggest any item.
 
 In the following sample, showcase that how to work autofill with ComboBox.
