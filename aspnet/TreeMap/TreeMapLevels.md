@@ -9,20 +9,46 @@ documentation: ug
 
 # TreeMapLevels
 
-The levels of TreeMap can be categorized into two types as,
+The `Levels` of TreeMap can be categorized into two types as,
 
 * FlatLevel
 * Hierarchical Level
+
+Following customization options are available to customize the treemap level as per your requirements.
+
+* To specify the background color for the group, you can use `GroupBackground` property.
+
+* To specify the border color for the group, you can use `GroupBorderColor` property.
+
+* To maintain the border thickness for the group, you can use `GroupBorderThickness` property.
+
+* You can specify the gaps between groups using `GroupGap` property.
+
+* You can specify the padding using `GroupPadding` property.
+
+* For specifying the header height, you can use `HeaderHeight` property.
+
+* You can customize the header template using `HeaderTemplate` property.
+
+* To specify the label position, you can use `LabelPosition` property.
+
+* To specify the label template for treemap, you can use `LabelTemplate` property.
+
+* You can specify the label visibility using `LabelVisibilityMode` property.
+
+* You can control the label visibility using `ShowLabels` property.
+
+* For controlling text overflow, you can use `TextOverflow` property.
 
 ### Flat Level
 
 #### Group Path
 
-You can use GroupPath property for every flat level of the TreeMap control. It is a path to a field on the source object that serves as the “Group” for the level specified. You can group the data based on the GroupPath in the TreeMap control. When the GroupPath is not specified, then the items are not grouped and the data is displayed in the order specified in the DataSource.
+You can use `GroupPath` property for every flat level of the TreeMap control. It is a path to a field on the source object that serves as the “Group” for the level specified. You can group the data based on the GroupPath in the TreeMap control. When the GroupPath is not specified, then the items are not grouped and the data is displayed in the order specified in the DataSource.
 
 #### Group Gap
 
-You can use GroupGap property to separate the items from every flat level and to differentiate the levels mentioned in the TreeMap control.
+You can use `GroupGap` property to separate the items from every flat level and to differentiate the levels mentioned in the TreeMap control.
 
 {% highlight c# %}
 
