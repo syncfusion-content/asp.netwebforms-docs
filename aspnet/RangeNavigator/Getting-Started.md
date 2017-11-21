@@ -115,7 +115,7 @@ RangeNavigator with a range from 2010 January 1st to December 31st.
 
 ### Add series
 
-To add a series to RangeNavigator, you need to set DataSource property, as given in the following code example. 
+To add a series to RangeNavigator, you need to set `DataSource` property, as given in the following code example. 
 
 You can add JSON data to the Range Navigator using the Datasource property.
 
@@ -208,7 +208,7 @@ RangeNavigator with the type series as “line”.
 
 ### Enable tooltip
 
-Tooltip can be customized for RangeNavigator using Tooltip option. You can also use TooltipDisplayMode option in Tooltip to display the tooltip “always” or “ondemand” (displays tooltip only while dragging the sliders). You can also specify label format for tooltip using LabelFormat.
+Tooltip can be customized for RangeNavigator using `TooltipSettings` option. You can also use `TooltipDisplayMode` option in Tooltip to display the tooltip “always” or “ondemand” (displays tooltip only while dragging the sliders). You can also specify label format for tooltip using `LabelFormat`.
 
 {% highlight html %}
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" XName="xDate" YName="yValue">
@@ -230,7 +230,7 @@ RangeNavigator is used along with the controls like chart and grid to view the r
 
 In order to update chart, whenever the selected range changes in RangeNavigator, you need to use RangeChanged event of RangeNavigator and then update the chart with the selected data in this event. 
 
-Now, add the DataSource to the series and provide the field name to get the values from the DataSource in XName and YName options and also trigger the RangeChanged event for updating the chart.
+Now, add the DataSource to the series and provide the field name to get the values from the DataSource in `XName` and `YName` options and also trigger the RangeChanged event for updating the chart.
 
 {% tabs %}
 
@@ -288,7 +288,7 @@ this.RangeNavigator1.DataBind();
 
 {% endtabs %}
 
-The following code example illustrates how to use the RangeChanged event of RangeNavigator for updating the chart with the selected data.
+The following code example illustrates how to use the `RangeChanged` event of RangeNavigator for updating the chart with the selected data.
 
 {% highlight js %}
 <script type="text/javascript" language="javascript">
@@ -318,7 +318,7 @@ RangeNavigator is updated when the selected range is changed.
 
 ### Set value type
 
-RangeNavigator can also be used with numerical values. You can specify the data type using ValueType option. 
+RangeNavigator can also be used with numerical values. You can specify the data type using `ValueType` option. 
 
 First let’s create a DataSource for Chart Series with integer Values. 
 

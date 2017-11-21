@@ -9,7 +9,7 @@ documentation: ug
 
 # Sub Gauges
 
-A Circular Gauge containing another circular gauge is said to be Sub Gauges. In order to make  a sample like watch that has second gauge, minute gauge and hour gauge, sub gauges are used.
+A Circular Gauge containing another circular gauge is said to be `SubGauges`. In order to make  a sample like watch that has second gauge, minute gauge and hour gauge, sub gauges are used.
 
 ## Adding Sub Gauges
 
@@ -67,7 +67,7 @@ Sub gauge collection is directly added to the scale object. Refer the following 
 
 ### Basic Customization
 
-Basic attributes such as height and width property are used to set height and width of the sub gauge. You can easily position the gauge in another gauge using the position object and by giving the X and Y Coordinates value. controlID attribute is used to specify the sub gauge ID.
+Basic attributes such as `Height` and `Width` property are used to set height and width of the sub gauge. You can easily position the gauge in another gauge using the `Position` object and by giving the `X` and `Y` Coordinates value. **ControlID** attribute is used to specify the sub gauge ID.
 
 {% highlight html %}
 
