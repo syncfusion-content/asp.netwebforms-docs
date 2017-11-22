@@ -449,3 +449,100 @@ The following screenshot illustrates a map control displaying a Tooltip with tem
 
 _Map with tooltip template_
 
+
+### Customize map background
+
+The Map background can be customized by using the `Background` property of the Map. 
+
+
+{% highlight html %}
+
+
+    <ej:Map  ID =“map” runat =“server” Background="skyblue">
+
+
+    </ ej:Map > 
+
+
+
+{% endhighlight %}
+
+
+
+
+### Base Map Index 
+
+Specifies the index of the map to determine the shape layer to be displayed, you can use `BaseMapIndex` property and the default value is 0.
+
+
+{% highlight html %}
+
+
+    <ej:Map  ID =“map” runat =“server” BaseMapIndex="0">
+
+
+    </ ej:Map > 
+
+
+
+{% endhighlight %}
+
+
+
+### Center Position 
+
+
+Specify the `centerPosition` where map should be displayed
+
+
+{% highlight html %}
+
+
+    <ej:Map  ID =“map” runat =“server” BaseMapIndex="0" centerPosition= "">
+
+
+    </ ej:Map > 
+
+
+
+{% endhighlight %}
+
+
+### Label Settings
+
+The `labelSettings` defines the basic customization settings of labels in the map. 
+
+The below properties are used for `labelSettings`
+
+* `enableSmartLabel` - enable or disable the enableSmartLabel property.
+* `labelLength` - set the labelLength property.
+* `labelPath` - set the labelPath property.
+* `showLabels` - The property specifies whether to show labels or not
+* `smartLabelSize` - set the smartLabelSize property.
+
+
+
+{% highlight html %}
+
+
+    <ej:Map  ID =“map” runat =“server” BaseMapIndex="0" centerPosition= "">
+
+
+    <Layers>
+
+            <ej:ShapeLayer ShowTooltip="true" TooltipTemplate="template">
+
+             <LabelSettings ShowLabels = "true" LabelPath = "iso_3166_2" EnableSmartLabel = "true"></LabelSettings>
+
+            </ej:ShapeLayer>
+
+    </Layers>
+
+
+    </ ej:Map > 
+
+
+
+{% endhighlight %}
+
+

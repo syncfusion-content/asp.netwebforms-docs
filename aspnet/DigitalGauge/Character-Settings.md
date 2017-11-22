@@ -231,3 +231,59 @@ Digital Gauge control with shadow option
 {:.caption} 
 
 
+
+## Font Customization
+
+You can customize the **font** of the text as per your requirement. To customize the font, you have to set `enableCustomFont`. Following font customization options are available.
+
+**Font-family**- used to set the font-family of the text.
+
+**Font-style**- used to set the font-style of the text.
+
+**Font-size**- used to set the font-size of the text.
+
+
+
+
+{% highlight html %}
+
+<ej:DigitalGauge runat="server" ID="DigitalGauge1" Width="800">
+
+
+
+<Items>
+
+
+
+<%-- Adding shadow effects --%>
+
+
+
+<ej:DigitalGaugeItems Value="WELCOME">
+
+
+
+<SegmentSettings Length="3" Width="3"/>
+
+
+<Font Color="white"  Family="Arial"  Style="Normal" FontSize="12px">
+
+
+</Font>
+
+
+
+</ej:DigitalGaugeItems>
+
+
+
+</Items>
+
+
+
+</ej:DigitalGauge>
+
+{% endhighlight %}
+
+
+
