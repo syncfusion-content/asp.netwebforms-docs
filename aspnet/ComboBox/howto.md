@@ -86,11 +86,11 @@ class CountryList
     public string parentId { get; set; }
     public string text { get; set; }
     public string sprite { get; set; }
-    public CountryList(int cvalue, string cid, string ctext, string sprite)
+    public CountryList(int value, string id, string country, string sprite)
     {
-        this.value = cvalue;
-        this.parentId = cid;
-        this.text = ctext;
+        this.value = value;
+        this.parentId = id;
+        this.text = country;
         this.sprite = sprite;
 
     }
@@ -100,10 +100,10 @@ class GroupsList
 {
     public string parentId { get; set; }
     public string text { get; set; }
-    public GroupsList(string gID, string gtext)
+    public GroupsList(string gID, string group)
     {
         this.parentId = gID;
-        this.text = gtext;
+        this.text = group;
     }
 }
 
