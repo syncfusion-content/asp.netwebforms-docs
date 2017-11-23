@@ -68,11 +68,11 @@ public class empList
     public static List<empList> GetEmpList()
     {
         List<empList> emp = new List<empList>();
-        emp.Add(new empList { text = "Mona Sak", eimg = "1", status = "Available", country = "USA" });
-        emp.Add(new empList { text = "Kapil Sharma", eimg = "2", status = "Available", country = "USA" });
+        emp.Add(new empList { text = "John Linden", eimg = "1", status = "Available", country = "USA" });
+        emp.Add(new empList { text = "Lawrence", eimg = "2", status = "Available", country = "USA" });
         emp.Add(new empList { text = "Erik Linden", eimg = "3", status = "Available", country = "England" });
-        emp.Add(new empList { text = "Kavi Tam", eimg = "4", status = "Available", country = "England" });
-        emp.Add(new empList { text = "Harish Sree", eimg = "5", status = "Available", country = "USA" });
+        emp.Add(new empList { text = "Tam", eimg = "4", status = "Available", country = "England" });
+        emp.Add(new empList { text = "Louis", eimg = "5", status = "Available", country = "USA" });
         return emp;
     }
 }
@@ -314,7 +314,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 <style>
 
-    .norecord:before{
+    .record:before{
         content: '\e7c3';
         font-family: 'e-icons';
         font-size: 18px;
