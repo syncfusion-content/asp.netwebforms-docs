@@ -9,7 +9,7 @@ documentation: ug
 
 # Pointers
 
-Pointer value points out the actual value set in the Circular Gauge. You can customize the pointers to improve the appearance of Gauge.
+Pointer value points out the actual value set in the Circular Gauge. You can customize the `Pointers` to improve the appearance of Gauge.
 
 
 ## Adding Pointer Collection
@@ -48,7 +48,7 @@ Execute the above code to render the following output.
 
 ## Adding Pointer Value
 
-Pointer value is the important element in the Circular Gauge that indicates the Gauge value. Real purpose of the Circular Gauge is based on the pointer value. You can set the pointer value either directly during rendering the control or it can be achieved by public method too.
+Pointer value is the important element in the Circular Gauge that indicates the Gauge value. Real purpose of the Circular Gauge is based on the pointer value. You can set the pointer `Value` either directly during rendering the control or it can be achieved by public method too.
 
 
 
@@ -100,8 +100,8 @@ Execute the above code to render the following output.
 
 ### Colors and Border
 
-* The Pointers border is modified with the object called border as in scales. It has two border property called color and width which are used to customize the border color of the pointer and border width of the pointer. 
-* You can set the background color to improve the look of the Circular Gauge and you can customize the background color of the scale using backgroundColor.
+* The Pointers border is modified with the object called `Border` as in scales. It has two border property called `Color` and `Width` which are used to customize the border color of the pointer and border width of the pointer. 
+* You can set the background color to improve the look of the **Circular Gauge** and you can customize the background color of the scale using `BackgroundColor`.
 
 
 
@@ -144,8 +144,8 @@ Execute the above code to render the following output.
 
 ### Appearance
 
-* Based on the value, the pointer point out the label value. You can set the pointer length and width using length and width property respectively. 
-* And you can also adjust the opacity of the pointer using the property opacity which holds the value between 0 and 1. You can add the gradient effects to the pointer using gradient object.
+* Based on the value, the **pointer** point out the label value. You can set the pointer length and width using `Length` and `Width` property respectively. 
+* And you can also adjust the opacity of the pointer using the property `Opacity` which holds the value between 0 and 1. You can add the gradient effects to the pointer using `Gradients` object.
 
 
 {% highlight html %}
@@ -189,8 +189,8 @@ Execute the above code to render the following output.
 
 ### Position the pointer
 
-* Pointer can be positioned with the help of two properties such as distanceFromScale and placement. distanceFromScale property defines the distance between the scale and pointer.  Placement property is used to locate the pointer with respect to scale either inside the scale or outside the scale or along the scale. 
-* It is an enumerable data type. Both the property is applied only if pointer type is marker. For needle type marker, it renders with default position that is unchangeable.
+* Pointer can be positioned with the help of two properties such as **DistanceFromScale** and **Placement**. `DistanceFromScale` property defines the distance between the scale and pointer. `Placement` property is used to locate the pointer with respect to scale either inside the scale or outside the scale or along the scale. 
+* It is an enumerable data type. Both the property is applied only if pointer `Type` is marker. For `NeedleType` marker, it renders with default position that is unchangeable.
 
 
 
@@ -278,7 +278,7 @@ In ASP Circular Gauge, it is possible to replace the pointer with some images. Y
 
 ### ImageUrl
 
-To implement the pointer image we need to give the API called ImageUrl. It is a string data type. Image type pointer is applicable for both marker and needle type pointers and it is possible to combine the normal marker pointer type with an image type. The three possibilities are
+To implement the pointer image we need to give the API called `ImageUrl`. It is a string data type. Image type pointer is applicable for both marker and needle type pointers and it is possible to combine the normal marker pointer type with an image type. The three possibilities are
 
 1. Needle Image
 2. Marker Image
@@ -286,7 +286,7 @@ To implement the pointer image we need to give the API called ImageUrl. It is a 
 
 #### Needle Image 
 
-In this type, needle pointer is completely replaced by image. You can implement it with the help of the following example.
+In `NeedleType`, needle pointer is completely replaced by image. You can implement it with the help of the following example.
 
 {% highlight html %}
 
@@ -398,7 +398,7 @@ StartValue="70" EndValue="100">
 
 #### Marker Image 
 
-In this type, the marker pointer is completely replaced by the image. You can implement it with the help of the following example.
+In `MarkerType`, the marker pointer is completely replaced by the image. You can implement it with the help of the following example.
 
 {% highlight html %}
 
@@ -669,11 +669,11 @@ Execute the above code to render the following output.
 
 ## Pointer Value Text
 
-Gauge Pointer value text is used to display the current value of the pointer in the Circular Gauge control.
+Gauge `PointerValueText` is used to display the current value of the pointer in the **Circular Gauge** control.
 
 ### Positioning the text
 
-You can position the Circular Gauge pointer value with the gauge as center by using the API called distance. You can Disable/ Enable these pointers value by using the API showValue.
+You can position the Circular Gauge pointer value with the gauge as center by using the API called `Distance`. You can Disable/ Enable these pointers value by using the API `ShowValue`.
 
 {% highlight html %}
 
@@ -772,12 +772,12 @@ Run the above code to render the output as follows.
 
 ## Appearance
 
-Appearance of the Circular Gauge pointer value text is adjusted by using four properties. Such as color, angle, autoAngle and opacity.
+Appearance of the Circular Gauge `PointerValueText` is adjusted by using four properties. Such as **color**, **angle**, **autoAngle** and **opacity**.
 
-* Color property is used to set the color of the pointer value text.
-* Angle property is used to set the angle in which the text is displayed.
-* Auto Angle is used to display the text in certain angle based on pointer position angle.
-* Opacity is used to customize the brightness of the text. 
+* `Color` property is used to set the color of the pointer value text.
+* `Angle` property is used to set the angle in which the text is displayed.
+* `AutoAngle` is used to display the text in certain angle based on pointer position angle.
+* `Opacity` is used to customize the brightness of the text. 
 
 {% highlight html %}
 
@@ -887,7 +887,7 @@ Run the above code to render the output as follows.
 
 ## Font Options
 
-Similar to other collection, font option is also available in this pointer value text such as size, fontFamily and fontStyle. 
+Similar to other collection, `Font` option is also available in this pointer value text such as `Size`, `FontFamily` and `FontStyle`.
 
 {% highlight html %}
 

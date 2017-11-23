@@ -9,7 +9,7 @@ documentation: ug
 
 # Range Types
 
-RangeNavigator control is designed to visualize large number of data and navigate to particular data from the large collection at ease. The data for the RangeNavigator is either numeric values or DateTime values and the ValueType property in RangeNavigator indicates the type of the data that should be passed for the control. By default the ValueType of RangeNavigator is DateTime
+RangeNavigator control is designed to visualize large number of data and navigate to particular data from the large collection at ease. The data for the RangeNavigator is either numeric values or DateTime values and the ValueType property in RangeNavigator indicates the type of the data that should be passed for the control. By default the `ValueType` of RangeNavigator is DateTime
 
 * Numeric                   
 * DateTime
@@ -57,7 +57,7 @@ RangeNavigator with DateTime values
 
 ### DateTime Intervals
 
-The DateTime range type contains an IntervalType property that sets the DateTime interval to one of the following:
+The DateTime range type contains an `IntervalType` property that sets the DateTime interval to one of the following:
 
 * Years
 * Quarters

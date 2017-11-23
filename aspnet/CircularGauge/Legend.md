@@ -9,7 +9,7 @@ documentation: ug
 
 # Legend
 
-The legend contains the list of the ranges that appear in the circular gauge  
+The `Legend` contains the list of the ranges that appear in the circular gauge  
 
 ## Legend Visibility
 
@@ -80,6 +80,20 @@ You can align the legend to the *center*, *far* or *near* based on its position 
 
 ## Customization
 
+### Legend Fill and Opacity
+
+You can change the opacity and fill color of legend text using `Opacity` and `Fill` property of legend. 
+
+{% highlight html %}
+
+<ej:CircularGauge ID="ScaleCircularGauge" runat="server"> 
+   <%--Change legend shape--%>
+    <Legend Fill="red" Opacity="0.5">
+    </Legend>
+</ej:CircularGauge>
+
+{% endhighlight %}
+
 ### Legend shape
 
 To change the legend item shape, you have to specify the desired shape in the `Shape` property of the legend. By default, the shape of the legend is **circle**.It also supports rectangle,diamond,triangle,slider,line,pentagon,trapezoid and wedge shapes.
@@ -121,7 +135,7 @@ You can change the size of the legend items by using the `Width` and `Height` pr
 
 ### Legend size
 
-You can change the default legend size by using the `Size` property of the legend.  
+You can change the default legend size by using the `Size` property of the legend. The height and width of legend size can customized using `Height` and `Width` property.    
 
 {% highlight html %}
 
@@ -175,7 +189,7 @@ You can customize the legend border by using the `Border` option in the legend.
 
 ### Font of the legend text
 
-The font of the legend item text can be customized by using the `Font`  property in legend.
+The `Font` of the legend item text can be customized by using properties such as `FontFamily`, `FontStyle`, `FontWeight` and `Size` of legend font.
 
 
 {% highlight html %}
@@ -196,7 +210,7 @@ The font of the legend item text can be customized by using the `Font`  property
 
 ### Legend Item Render
 
-OnClientLegendItemRender event triggers before rendering the legend items. This event is triggered for each legend item in Circular gauge. You can use this event to customize legend item shape or add custom text to legend item dynamically
+`OnClientLegendItemRender` event triggers before rendering the legend items. This event is triggered for each legend item in Circular gauge. You can use this event to customize legend item shape or add custom text to legend item dynamically
 
 
 {% highlight html %}

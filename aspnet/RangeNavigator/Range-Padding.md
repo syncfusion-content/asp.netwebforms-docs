@@ -27,7 +27,7 @@ RangeNavigator.
 
 ### None:
 
-By default, the RangePadding for numerical range is none. The range is calculated from the minimum value to the maximum value of data in the RangeNavigator.
+By default, the `RangePadding` for numerical range is none. The range is calculated from the minimum value to the maximum value of data in the RangeNavigator.
 
 The following screenshot illustrates a RangeNavigator with RangePadding set to none.
 
@@ -102,6 +102,74 @@ The following screenshot illustrates a RangeNavigator with RangePadding set to R
 
 RangeNavigator with RangePadding set to Round
 {:.caption}
+
+## Padding
+
+The gap between the container and the **RangeNavigator** can be specified using `Padding` property.
+
+{% highlight html %}
+
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" Padding="15"> 
+</ej:RangeNavigator>
+
+{% endhighlight %}
+
+## AllowSnapping
+
+An `AllowSnapping` property toggles the placement of slider exactly on the place it left or on the nearest interval.
+
+{% highlight html %}
+
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" AllowSnapping="true"> 
+</ej:RangeNavigator>
+
+{% endhighlight %}
+
+## Responsive
+
+Set `IsResponsive` value to make the **RangeNavigator** responsive on resize.
+
+{% highlight html %}
+
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" IsResponsive="true"> 
+</ej:RangeNavigator>
+
+{% endhighlight %}
+
+## Auto Resizing
+
+Enable `EnableAutoResizing` option to resize the **RangeNavigator**.
+
+{% highlight html %}
+
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" EnableAutoResizing="true"> 
+</ej:RangeNavigator>
+
+{% endhighlight %}
+
+## Customize range Navigator border
+
+**RangeNavigator** provides options to customize the `Color`, `Opacity` and `Width` of range navigator `Border`.
+
+{% highlight html %}
+
+<ej:RangeNavigator ID="RangeNavigator1" runat="server"> 
+    <Border Color="Green" Opacity="0.5" Width="2"></Border>
+</ej:RangeNavigator>
+
+{% endhighlight %}
+
+## Customize size of range navigator
+
+The `Height` and `Width` of **RangeNavigator** can be customized using `SizeSettings` property.
+
+{% highlight html %}
+
+<ej:RangeNavigator ID="RangeNavigator1" runat="server"> 
+    <Size Height="130" Width="900"></Size>
+</ej:RangeNavigator>
+
+{% endhighlight %}
 
 ## Customize axis range of navigator
 

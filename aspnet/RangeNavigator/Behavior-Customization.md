@@ -13,7 +13,7 @@ RangeNavigator allows you to customize the control using events. You can change 
 
 ## Deferred update
 
-If you set EnableDeferredUpdate to true, the RangeChanged event gets fired after dragging and dropping the slider. By default the EnableDeferredUpdate is true. If EnableDeferredUpdate is false then the RangeChanged event gets fired while dragging the slider. 
+If you set `EnableDeferredUpdate` to true, the `RangeChanged` event gets fired after dragging and dropping the slider. By default the EnableDeferredUpdate is true. If EnableDeferredUpdate is false then the RangeChanged event gets fired while dragging the slider. 
 
 {% highlight html %}
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" EnableDeferredUpdate="True" >
@@ -30,7 +30,56 @@ If you set EnableDeferredUpdate to true, the RangeChanged event gets fired after
 Deferred update
 {:.caption}
 
+## Use of Destroy method 
+
+`_destroy`: function
+
+This method is used to destroy the **RangeNavigator** widget. 
+
+{% highlight hmtl %}
+ 
+<ej:RangeNavigator ID="RangeNavigator1" runat="server">
+</ej:RangeNavigator>
+
+<script type="text/javascript"> 
+    // destroy the range navigator
+     $("#RangeNavigator1").ejRangeNavigator("_destroy"); 
+</script>
+
+{% endhighlight  %}
+
 ## Handle Events
+
+### `Load`: function
+
+This event is fired when **RangeNavigator** is loading. A parameter **sender** is passed to the handler. Using **sender.model**, you can access the RangeNavigator properties. 
+
+{% tabs %}
+
+{% highlight html %}
+
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideLoad="loadData">
+
+</ej:RangeNavigator>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+<script type="text/javascript">
+
+	function loadData(sender) 
+	{
+
+		 sender.model.allowSnapping = false;
+
+	}
+
+</script>
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ### Loaded: function
 
@@ -81,6 +130,7 @@ This event gets fired whenever the selected range changes in RangeNavigator. A p
 {% endhighlight %}
 
 {% highlight js %}
+
 <script type="text/javascript">
 
     function onChartLoad(sender) {
@@ -89,16 +139,166 @@ This event gets fired whenever the selected range changes in RangeNavigator. A p
 
          }  
 
-</script>     
+</script>  
+
 {% endhighlight %}    
+
+{% endtabs %}
+
+### `SelectedRangeStart` : function
+
+This event is fired when starting to change the slider position in **RangeNavigator**. A parameter **sender** is passed to the handler. Using **sender.selectedRangeSettings**, you can access the start value of range for the selected region. 
+
+{% tabs %}
+
+{% highlight hmtl %}
+
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideSelectedRangeStart="selectedRangeStart">
+
+</ej:RangeNavigator>
+
+{% endhighlight %}    
+
+{% highlight js %}
+
+<script type="text/javascript">
+
+   function selectedRangeStart(sender) 
+   {
+
+		 console.log(sender.selectedRangeSettings.start);
+
+   }
+
+</script>   
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### `SelectedRangeEnd` : function
+
+This event is fired when selection ends in **RangeNavigator**. A parameter **sender** is passed to the handler. Using sender.selectedRangeSettings, you can access the end value of range for the selected region. 
+
+{% tabs %}
+
+{% highlight html %}
+
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideSelectedRangeEnd="selectedRangeEnd">
+
+</ej:RangeNavigator>
+
+{% endhighlight %}    
+
+{% highlight js %}
+
+<script type="text/javascript">
+
+   function selectedRangeEnd(sender) 
+   {
+
+		 console.log(sender.selectedRangeSettings.end);
+
+   }
+
+</script>   
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### `ScrollStart` : function
+
+This event is fired when starting to change the scrollbar position of **RangeNavigator**. A parameter **sender** is passed to the handler. Using sender.data startRange and sender.data endRange, you can access the scrollbar position starting and ending range value on changed scrollbar. 
+
+{% tabs %}
+
+{% highlight hmtl %}
+
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideScrollStart="scrollStart">
+
+</ej:RangeNavigator>
+
+{% endhighlight %}    
+
+{% highlight js %}
+
+<script type="text/javascript">
+
+   function scrollStart(sender) 
+   {
+	   	console.log(sender.type);
+   }
+
+</script>  
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### `ScrollEnd` : function
+
+This event is fired while ending the change in scrollbar position of **RangeNavigator**. A parameter **sender** is passed to the handler. Using data oldRange and data newRange, you can access the scrollbar position old and new range values on changing scrollbar. 
+
+{% tabs %}
+
+{% highlight hmtl %}
+
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideScrollEnd="scrollEnd">
+
+</ej:RangeNavigator>
+
+{% endhighlight %}    
+
+{% highlight js %}
+
+<script type="text/javascript">
+
+   function scrollEnd(sender) 
+   {
+	   	console.log(sender.type);
+   }
+
+</script>  
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### `ScrollChanged` : function
+
+This event is fired when changing the scrollbar position of **RangeNavigator**. A parameter **sender** is passed to the handler. Using data oldRange and data newRange, you can access the old and new range values of changed scrollbar position. 
+
+{% tabs %}
+
+{% highlight hmtl %}
+
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideScrollChanged="scrollChanged">
+
+</ej:RangeNavigator>
+
+{% endhighlight %}    
+
+{% highlight js %}
+
+<script type="text/javascript">
+
+   function scrollChanged(sender) 
+   {
+	   	console.log(sender.type);
+   }
+
+</script>  
+
+{% endhighlight %}
 
 {% endtabs %}
 
 ## Use of ZoomCoordinates
 
-RangeNavigator is used along with the controls like chart and grid to view the selected data. To update chart/grid, whenever the selected range changes in RangeNavigator, you can use RangeChanged event of RangeNavigator and then update the chart/grid with the selected data in this event. 
+RangeNavigator is used along with the controls like chart and grid to view the selected data. To update chart/grid, whenever the selected range changes in RangeNavigator, you can use `RangeChanged` event of RangeNavigator and then update the chart/grid with the selected data in this event. 
 
-You can easily update the data for chart by assigning the ZoomFactor and ZoomPosition of the RangeNavigator to the chart axis. 
+You can easily update the data for chart by assigning the  `ZoomFactor` and `ZoomPosition` of the RangeNavigator to the chart axis. 
 
 {% tabs %}
 
@@ -146,7 +346,7 @@ Use of ZoomCoordinates
 
 ## Thumb Template
 
-You can customize Thumb template by using LeftThumbTemplate and RightThumbTemplate property. You can add the required template as a “div” element with an “id” to the web page and assign the id or assign the HTML string to this property under NavigatorStyleSettings. 
+You can customize Thumb template by using `LeftThumbTemplate` and `RightThumbTemplate` property. You can add the required template as a “div” element with an “id” to the web page and assign the id or assign the HTML string to this property under `NavigatorStyleSettings`. 
 
 {% tabs %}
 
@@ -193,3 +393,42 @@ The following screenshot displays the RangeNavigator using thumb template.
 
 Thumb template
 {:.caption}
+
+## Value Axis Settings
+
+You can customize the line, `Font` `Size`, gridline, tickline, range, `RangePadding` and visibility of **RangeNavigator** axis.
+
+To enable the visibility of axis line, you need to set `Visible` property of `AxisLine` in `ValueAxisSettings`. 
+
+You can customize the axis range by specifying `Min`, `Max` and `Interval` for `Range` property.
+
+The `MajorGridLines` can be enabled by specifying `Visible` property. The `Size`, `Width` and `Visible` property of `MajorTickLines` is used to customize the axis tick lines.
+
+The visibility of `ValueAxisSettings` is enabled by setting `Visible` property as true. 
+
+{% highlight html %}
+
+<ej:RangeNavigator ID="Range1" runat="server">
+    <ValueAxisSettings RangePadding="Normal" Visible="true">
+        <AxisLine Visible="true"></AxisLine>
+        <Font Size="12px"></Font>
+        <MajorGridLines Visible="true"></MajorGridLines>
+		<MajorTickLines Size="3" Visible="false" Width="3"></MajorTickLines>
+        <Range Min="0" Max="100" Interval="10"></Range>
+    </ValueAxisSettings>           
+</ej:RangeNavigator>
+
+{% endhighlight %}
+
+## Selected Range Settings
+
+The start and end range values of selected range can be customized using `Start` and `End` property of `SelectedRangeSettings`.
+
+{% highlight html %}
+
+<ej:RangeNavigator ID="Range1" runat="server">
+    <SelectedRangeSettings Start="01/05/1992" End="01/05/1993">
+    </SelectedRangeSettings>           
+</ej:RangeNavigator>  
+
+{% endhighlight %}
