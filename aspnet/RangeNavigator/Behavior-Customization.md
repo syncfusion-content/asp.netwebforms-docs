@@ -36,7 +36,7 @@ Deferred update
 
 This method is used to destroy the **RangeNavigator** widget. 
 
-{% highlight hmtl %}
+{% highlight html %}
  
 <ej:RangeNavigator ID="RangeNavigator1" runat="server">
 </ej:RangeNavigator>
@@ -151,7 +151,7 @@ This event is fired when starting to change the slider position in **RangeNaviga
 
 {% tabs %}
 
-{% highlight hmtl %}
+{% highlight html %}
 
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideSelectedRangeStart="selectedRangeStart">
 
@@ -213,7 +213,7 @@ This event is fired when starting to change the scrollbar position of **RangeNav
 
 {% tabs %}
 
-{% highlight hmtl %}
+{% highlight html %}
 
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideScrollStart="scrollStart">
 
@@ -242,7 +242,7 @@ This event is fired while ending the change in scrollbar position of **RangeNavi
 
 {% tabs %}
 
-{% highlight hmtl %}
+{% highlight html %}
 
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideScrollEnd="scrollEnd">
 
@@ -271,7 +271,7 @@ This event is fired when changing the scrollbar position of **RangeNavigator**. 
 
 {% tabs %}
 
-{% highlight hmtl %}
+{% highlight html %}
 
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideScrollChanged="scrollChanged">
 
