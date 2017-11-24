@@ -15,7 +15,7 @@ documentation: ug
 
 The `destroy` method is used to destroy the **CircularGauge** widget. All events bound using this._on will be unbind automatically and bring the control to pre-init state.
 
-{% highlight hmtl %}
+{% highlight html %}
 
 <ej:CircularGauge runat="server" ID="CoreCircularGauge">
 </ej:CircularGauge>
