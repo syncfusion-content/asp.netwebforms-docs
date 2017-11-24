@@ -54,7 +54,7 @@ This method is used to destroy the **RangeNavigator** widget.
 
 This event is fired when **RangeNavigator** is loading. A parameter **sender** is passed to the handler. Using **sender.model**, you can access the RangeNavigator properties. 
 
-{% tabs %}
+
 
 {% highlight html %}
 
@@ -79,13 +79,13 @@ This event is fired when **RangeNavigator** is loading. A parameter **sender** i
 
 {% endhighlight %}
 
-{% endtabs %}
+
 
 ### Loaded: function
 
 This event is handled when the RangeNavigator gets loaded. A parameter sender is passed to the handler. Using sender.model, you can access the RangeNavigator properties. 
 
-{% tabs %}
+
 
 {% highlight html %}
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideLoaded="loadingData">
@@ -109,13 +109,13 @@ This event is handled when the RangeNavigator gets loaded. A parameter sender is
 </script>         
 {% endhighlight %}
 
-{% endtabs %}
+
 
 ### RangeChanged: function
 
 This event gets fired whenever the selected range changes in RangeNavigator. A parameter sender is passed to the handler. Using sender.selectedRangeSettings, you can access the start and end value of range for the selected region. 
 
-{% tabs %}
+
 
 {% highlight html %}
 
@@ -143,13 +143,13 @@ This event gets fired whenever the selected range changes in RangeNavigator. A p
 
 {% endhighlight %}    
 
-{% endtabs %}
+
 
 ### `SelectedRangeStart` : function
 
 This event is fired when starting to change the slider position in **RangeNavigator**. A parameter **sender** is passed to the handler. Using **sender.selectedRangeSettings**, you can access the start value of range for the selected region. 
 
-{% tabs %}
+
 
 {% highlight html %}
 
@@ -174,13 +174,13 @@ This event is fired when starting to change the slider position in **RangeNaviga
 
 {% endhighlight %}
 
-{% endtabs %}
+
 
 ### `SelectedRangeEnd` : function
 
 This event is fired when selection ends in **RangeNavigator**. A parameter **sender** is passed to the handler. Using sender.selectedRangeSettings, you can access the end value of range for the selected region. 
 
-{% tabs %}
+
 
 {% highlight html %}
 
@@ -205,13 +205,13 @@ This event is fired when selection ends in **RangeNavigator**. A parameter **sen
 
 {% endhighlight %}
 
-{% endtabs %}
+
 
 ### `ScrollStart` : function
 
 This event is fired when starting to change the scrollbar position of **RangeNavigator**. A parameter **sender** is passed to the handler. Using sender.data startRange and sender.data endRange, you can access the scrollbar position starting and ending range value on changed scrollbar. 
 
-{% tabs %}
+
 
 {% highlight html %}
 
@@ -234,13 +234,13 @@ This event is fired when starting to change the scrollbar position of **RangeNav
 
 {% endhighlight %}
 
-{% endtabs %}
+
 
 ### `ScrollEnd` : function
 
 This event is fired while ending the change in scrollbar position of **RangeNavigator**. A parameter **sender** is passed to the handler. Using data oldRange and data newRange, you can access the scrollbar position old and new range values on changing scrollbar. 
 
-{% tabs %}
+
 
 {% highlight html %}
 
@@ -263,13 +263,13 @@ This event is fired while ending the change in scrollbar position of **RangeNavi
 
 {% endhighlight %}
 
-{% endtabs %}
+
 
 ### `ScrollChanged` : function
 
 This event is fired when changing the scrollbar position of **RangeNavigator**. A parameter **sender** is passed to the handler. Using data oldRange and data newRange, you can access the old and new range values of changed scrollbar position. 
 
-{% tabs %}
+
 
 {% highlight html %}
 
@@ -292,7 +292,7 @@ This event is fired when changing the scrollbar position of **RangeNavigator**. 
 
 {% endhighlight %}
 
-{% endtabs %}
+
 
 ## Use of ZoomCoordinates
 
@@ -300,7 +300,7 @@ RangeNavigator is used along with the controls like chart and grid to view the s
 
 You can easily update the data for chart by assigning the  `ZoomFactor` and `ZoomPosition` of the RangeNavigator to the chart axis. 
 
-{% tabs %}
+
 
 {% highlight html %}
 
@@ -337,7 +337,7 @@ You can easily update the data for chart by assigning the  `ZoomFactor` and `Zoo
 </script>         
 {% endhighlight %} 
 
-{% endtabs %}
+
 
 ![](Behavior-Customization_images/Behavior-Customization_img2.png)
 
@@ -348,7 +348,7 @@ Use of ZoomCoordinates
 
 You can customize Thumb template by using `LeftThumbTemplate` and `RightThumbTemplate` property. You can add the required template as a “div” element with an “id” to the web page and assign the id or assign the HTML string to this property under `NavigatorStyleSettings`. 
 
-{% tabs %}
+
 
 {% highlight html %}
 <script type="text/x-jsrender" id="left" >
@@ -385,7 +385,7 @@ You can customize Thumb template by using `LeftThumbTemplate` and `RightThumbTem
 </ej:RangeNavigator>
 {% endhighlight %} 
 
-{% endtabs %}
+
 
 The following screenshot displays the RangeNavigator using thumb template.
 
