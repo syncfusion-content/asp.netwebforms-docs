@@ -232,7 +232,7 @@ In order to update chart, whenever the selected range changes in RangeNavigator,
 
 Now, add the DataSource to the series and provide the field name to get the values from the DataSource in `XName` and `YName` options and also trigger the RangeChanged event for updating the chart.
 
-{% tabs %}
+
 
 {% highlight c# %}
 List<NavigatorData> dataTable = new List<NavigatorData>();
@@ -286,7 +286,7 @@ this.RangeNavigator1.DataBind();
 </ej:RangeNavigator>
 {% endhighlight %}
 
-{% endtabs %}
+
 
 The following code example illustrates how to use the `RangeChanged` event of RangeNavigator for updating the chart with the selected data.
 

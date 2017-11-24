@@ -17,7 +17,7 @@ The `Series` property provides access to a collection of all series that are def
 
 Animation can be enabled by setting `EnableAnimation` property as true and the series color can be customized by using `Fill` property in series.
 
-{% tabs %}
+
 
 {% highlight html %}
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideLoad="loadingData">
@@ -95,7 +95,7 @@ function GetData() {
 </script>         
 {% endhighlight %}
 
-{% endtabs %}
+
 
 The following screenshot illustrates the RangeNavigator that is populated with data using DataSource property in series.
 
