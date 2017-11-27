@@ -12,7 +12,6 @@ documentation: ug
 The external script dependencies of the ComboBox control are,
 
 * [jQuery 1.7.1](http://jquery.com/) and later versions.
-* [jQuery.easing](http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js) - to support the animation effects.
 
 The internal script dependency ej.web.all.js is a bundle of all Syncfusion ASP.NET controls. If you use ej.web.all.js in your application, you can leave this section or else you can try to render ComboBox in your application using ej.combobox.min.js file. You can refer the following frameworks and controls in your project.
 
@@ -36,6 +35,10 @@ The internal script dependency ej.web.all.js is a bundle of all Syncfusion ASP.N
 	<tr>
 		<td>ej.scroller.min.js</td>
 		<td>Should be referred when using scrolling in ComboBox.</td>
+	</tr>
+	<tr>
+		<td>ej.globalize.min.js</td>
+		<td>processing specific source-side actions globally.</td>
 	</tr>
     <tr>
 		<td>ej.webform.min.js</td>

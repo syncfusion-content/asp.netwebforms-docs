@@ -113,6 +113,8 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endtabs %}
 
+![](Templates_images/Templates_image6.png)
+
 ## Header template
 
 The header element is shown statically at the top of the popup list items within the
@@ -377,4 +379,4 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endtabs %}
 
-
+![](Templates_images/Templates_image5.png)
