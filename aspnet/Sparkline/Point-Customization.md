@@ -11,7 +11,7 @@ documentation: ug
 
 You can customize points by initializing the point colors. The customization options allow you to differentiate the `First`, `Last`, `Highest`, `Lowest`, and `Negative` points. This customization only applicable for line, column and area type Sparkline.
 
-{% highlight hmtl %}
+{% highlight html %}
 
 <ej:Sparkline ClientIDMode="Static" ID="Sparkline1" runat="server"
     NegativePointColor="Red"
