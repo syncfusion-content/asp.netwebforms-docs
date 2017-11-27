@@ -44,7 +44,7 @@ You can customize the tooltip `Fill`, `Border` `Color`, `Width` and `Font` prope
 
 HTML elements can be displayed in the tooltip by using the `Template` option of the tooltip. The template option takes the value of the id attribute of the HTML element. You can use the **#point.x#** and **#point.y#** as place holders in the HTML element to display the x and y values of the corresponding point.
 
-{% highlight hmtl %}
+{% highlight html %}
 
 <div id="item" style="display: none;">
     <div>
