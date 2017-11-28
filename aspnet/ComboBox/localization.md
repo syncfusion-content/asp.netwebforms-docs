@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ComboBox control for Syncfusion ASP.NET WebForm
-description: To get start with ComboBox by adding references.
+title: Localization in ComboBox widget for Syncfusion ASP.NET WebForm
+description: Describes about the localization in ComboBox widget for Syncfusion ASP.NET WebForm
 platform: WebForm
 control: ComboBox
 documentation: ug

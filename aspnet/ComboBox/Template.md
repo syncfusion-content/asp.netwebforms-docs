@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Templates in ComboBox widget for Syncfusion Essential WebForm
-description: Describes about the Templates in ComboBox widget for Syncfusion Essential WebForm
+description: Describes about the templates in ComboBox widget for Syncfusion Essential WebForm
 platform: WebForm
 control: ComboBox
 documentation: ug
@@ -24,7 +24,7 @@ In the following sample, each list item is split into two columns to display rel
 	
 {% highlight html %}
 	
-<ej:ComboBox ID="selectCountry" runat="server" Width="100%" DataTextField="text"
+<ej:ComboBox ID="empList" runat="server" Width="100%" DataTextField="text"
                     ItemTemplate="<span><span class='name'>${text}</span><span class ='city'>${country}</span></span>"
                     Placeholder="Select a country"></ej:ComboBox>		
 {% endhighlight %}
@@ -56,7 +56,7 @@ public partial class Template : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        this.selectCountry.DataSource = empList.GetEmpList();
+        this.empList.DataSource = empList.GetEmpList();
     }
 }
 public class empList
@@ -128,7 +128,7 @@ similar to multiple columns of the grid.
 	
 {% highlight html %}
 	
-<ej:ComboBox ID="selectCountry" runat="server" Width="100%" DataTextField="text"
+<ej:ComboBox ID="empList" runat="server" Width="100%" DataTextField="text"
                     HeaderTemplate="<span class='head'><span class='name'>Name</span><span class='city'>City</span></span>"
                     Placeholder="Select a country"></ej:ComboBox>		
 {% endhighlight %}
@@ -181,7 +181,7 @@ public partial class Template : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        this.selectCountry.DataSource = empList.GetEmpList();
+        this.empList.DataSource = empList.GetEmpList();
     }
 }
 public class empList

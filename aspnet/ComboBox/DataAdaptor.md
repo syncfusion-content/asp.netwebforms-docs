@@ -19,7 +19,7 @@ OData is a standardized protocol for creating and consuming data. You can provi
 
 {% highlight html %}
     
-<ej:ComboBox ID="searchCustomer" AutoFill="true" runat="server" Width="100%" DataTextField="ShipName" DataValueField="ShipCountry" Placeholder="Search a Ship">
+<ej:ComboBox ID="countryList" AutoFill="true" runat="server" Width="100%" DataTextField="ShipName" DataValueField="ShipCountry" Placeholder="Search a Ship">
     <DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders" Adaptor="ODataAdaptor" CrossDomain="true"></DataManager>
 </ej:ComboBox>
 
@@ -37,7 +37,7 @@ ODataV4Adaptor is used for consuming data from OData V4 Service. To consume ODat
 
 {% highlight html %}
     
-<ej:ComboBox ID="searchCustomer" AutoFill="true" runat="server" Width="100%" DataTextField="RegionDescription" DataValueField="RegionID" Placeholder="Search a Ship">
+<ej:ComboBox ID="regionList" AutoFill="true" runat="server" Width="100%" DataTextField="RegionDescription" DataValueField="RegionID" Placeholder="Search a Ship">
     <DataManager URL="http://services.odata.org/V4/Northwind/Northwind.svc/Regions/" Adaptor="ODataV4Adaptor"  CrossDomain="true"></DataManager>
 </ej:ComboBox>
 
@@ -125,7 +125,7 @@ Initialize the ComboBox as follows
 
 {% highlight html %}
 
-    <ej:ComboBox ID="myList" Width="116px" Query="ej.Query().requiresCount()" DataTextField="Name" DataValueField="Country" runat="server"
+    <ej:ComboBox ID="employeeList" Width="116px" Query="ej.Query().requiresCount()" DataTextField="Name" DataValueField="Country" runat="server"
         DataManager URL="Default.aspx/Get" CrossDomain="true" Adaptor="WebMethodAdaptor">
     </ej:ComboBox>
 

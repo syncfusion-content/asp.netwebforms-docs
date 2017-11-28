@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CheckBox with ComboBox widget for Syncfusion ASP.NET WebForm
-description: Describes about Checkbox functionalities in ComboBox control for Syncfusion ASP.NET WebForm
+title: DataSource with ComboBox widget for Syncfusion ASP.NET WebForm
+description: Describes about data source functionalities in ComboBox control for Syncfusion ASP.NET WebForm
 platform: WebForm
 control: ComboBox
 documentation: ug
@@ -25,7 +25,7 @@ In the ASPX page, add ComboBox.
 <asp:Content ID="Content1" ContentPlaceHolderID="ControlsSection" runat="server">
     <div class="frame">
         <div class="control">
-            <ej:ComboBox ID="Menusql" runat="server" Width="100%"
+            <ej:ComboBox ID="transportList" runat="server" Width="100%"
                 DataTextField="MenuText" DataValueField="ID"
                 DataSourceID="SqlDataSource1" Placeholder="Search a transport">
             </ej:ComboBox>
@@ -74,7 +74,7 @@ In the ASPX page, add ComboBox.
 <asp:Content ID="Content1" ContentPlaceHolderID="ControlsSection" runat="server">
     <div class="frame">
         <div class="control">
-            <ej:ComboBox ID="AutoLinqtoSql" runat="server" Width="100%" DataTextField="Text" DataSourceID="LinqDataSource1" DataValueField="Id" Placeholder="Select an item" />
+            <ej:ComboBox ID="itemList" runat="server" Width="100%" DataTextField="Text" DataSourceID="LinqDataSource1" DataValueField="Id" Placeholder="Select an item" />
         </div>
     </div>
     <asp:LinqDataSource ID="LinqDataSource1" runat="server" ContextTypeName="WebSampleBrowser.database.Linq_Common_DataDataContext" EntityTypeName="" TableName="Databindings" Select="new(Id,ParentId,Text)">
@@ -118,7 +118,7 @@ In the ASPX page, add ComboBox.
  <asp:Content ID="Content1" ContentPlaceHolderID="ControlsSection" runat="server">
     <div class="frame">
         <div class="control">
-            <ej:ComboBox ID="Auto" runat="server" Width="100%" DataSourceID="ObjectDataSource1"
+            <ej:ComboBox ID="transportList" runat="server" Width="100%" DataSourceID="ObjectDataSource1"
                 DataTextField="Text" DataValueField="ID" Placeholder="Search a transport">
             </ej:ComboBox>
         </div>
@@ -202,7 +202,7 @@ In the ASPX page, add ComboBox.
 <asp:Content ID="Content1" ContentPlaceHolderID="ControlsSection" runat="server">
     <div class="frame">
         <div class="control">
-            <ej:ComboBox ID="Menuxml" runat="server" Width="100%" DataSourceID="XmlDataSource1" DataTextField="Text" DataMember="RootItem" Placeholder="Select an apple product">
+            <ej:ComboBox ID="itemList" runat="server" Width="100%" DataSourceID="XmlDataSource1" DataTextField="Text" DataMember="RootItem" Placeholder="Select an apple product">
             </ej:ComboBox>
         </div>
     </div>

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ComboBox widget for Syncfusion ASP.NET WebForm
-description: To get start with ComboBox by adding references.
+title: Accessibility with ComboBox control for Syncfusion ASP.NET WebForm.
+description: Describes about the accessibility in ComboBox control for Syncfusion Essential WebForm.
 platform: WebForm
 control: ComboBox
 documentation: ug

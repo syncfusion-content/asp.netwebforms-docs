@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping in ComboBox widget for Syncfusion ASP.NET WebForm
-description: Describes about the Grouping in ComboBox widget for Syncfusion ASP.NET WebForm
+description: Describes about the grouping in ComboBox widget for Syncfusion ASP.NET WebForm
 platform: WebForm
 control: ComboBox
 documentation: ug

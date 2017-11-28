@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in ComboBox widget for Syncfusion Essential WebForm
-description: Describes about the data binding in ComboBox widget for Syncfusion Essential WebForm
+title: Cascading in ComboBox widget for Syncfusion Essential WebForm
+description: Describes about the cascading in ComboBox widget for Syncfusion Essential WebForm
 platform: WebForm
 control: ComboBox
 documentation: ug

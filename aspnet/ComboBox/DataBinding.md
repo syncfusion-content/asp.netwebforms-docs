@@ -27,7 +27,7 @@ The below listed fields are the data collection fields which maps fields for the
 
 > When binding complex data to the ComboBox, fields should be mapped correctly. Otherwise, the selected item remains undefined.
 
-## Binding local data
+## Binding Local Data
 
 Define a List data and initialize the control with DataSource property. Specify the column names in the Fields property. <br/>
 
@@ -82,7 +82,7 @@ public class Employee
 
 {% endtabs %}
 
-## Binding remote data
+## Binding Remote Data
 
 The ComboBox supports retrieval of data from remote data services with the help of [DataManager](/data/api-dataManager.html) component. The [Query](/data/api-query.html) property is used to fetch
 data from the database and bind it to the ComboBox.

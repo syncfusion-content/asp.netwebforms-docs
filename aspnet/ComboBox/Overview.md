@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ComboBox widget for Syncfusion Essential WebForm
-description: To get start with ComboBox by adding references.
+title: Overview of ComboBox control for Syncfusion Essential WebForm
+description: Descripes about overview of ComboBox by adding references.
 platform: WebForm
 control: ComboBox
 documentation: ug

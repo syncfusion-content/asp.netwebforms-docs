@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dependencies of the ComboBox control for Syncfusion ASP.NET WebForm
-description: Dependencies of the ComboBox control for Syncfusion ASP.NET WebForm 
+description: Describes about dependencies of the ComboBox control for Syncfusion ASP.NET WebForm 
 platform: WebForm
 control: ComboBox
 documentation: ug

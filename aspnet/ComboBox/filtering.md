@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in ComboBox widget for Syncfusion Essential JS
-description: Describes about the data binding in ComboBox widget for Syncfusion Essential JS
+title: Filtering in ComboBox widget for Syncfusion Essential JS
+description: Describes about the filtering in ComboBox widget for Syncfusion Essential JS
 platform: js
 control: ComboBox
 documentation: ug
