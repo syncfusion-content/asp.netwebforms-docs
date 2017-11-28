@@ -245,6 +245,10 @@ You can modify the template column of exporting files using server events. The c
 
 {% highlight html %}
 
+<script type="text/x-jsrender" id="columnTemplate">
+        <a href="https://www.syncfusion.com">{{:FirstName}}</a>
+</script>
+
 <ej:Grid ID="EmployeesGrid" runat="server" AllowPaging="True" OnServerExcelExporting="EmployeesGrid_ServerExcelExporting" OnServerWordExporting="EmployeesGrid_ServerWordExporting" OnServerPdfExporting="EmployeesGrid_ServerPdfExporting" OnServerExcelColumnTemplateInfo="EmployeesGrid_ServerExcelColumnTemplateInfo" OnServerWordColumnTemplateInfo="EmployeesGrid_ServerWordColumnTemplateInfo" OnServerPdfColumnTemplateInfo="EmployeesGrid_ServerPdfColumnTemplateInfo">
      <ToolbarSettings ShowToolbar="true" ToolbarItems="excelExport,wordExport,pdfExport"></ToolbarSettings>
         <Columns>
@@ -254,7 +258,7 @@ You can modify the template column of exporting files using server events. The c
             <ej:Column Field="BirthDate" HeaderText="Birth Date" TextAlign="Right" Width="100" Format="{0:MM/dd/yyyy}" />
             <ej:Column Field="Country" Width="100" HeaderText="Country" />
         </Columns>
-</ej:Grid>
+   </ej:Grid>
 
 {% endhighlight %}
 
