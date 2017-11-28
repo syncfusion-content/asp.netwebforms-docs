@@ -186,5 +186,464 @@ public partial class ExcelExporting : System.Web.UI.Page
 
 ![](Exporting_images/Exporting_img1.png)
 
+## ColumnTemplate Exporting
+
+To export the grid with columnTemplate we have to set `IsTemplateColumnIncluded` as true in the parameter of the export method. You can handle the template elements in server side event while exporting grid to various files such as Excel, PDF and Word.
+
+The server side events available in template column exporting and its argument types are listed in the following table.
+
+<table>
+<tr>
+<th>
+Event Name
+</th>
+<th>
+Argument
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+ServerExcelColumnTemplateInfo
+</td>
+<td>
+currentCell, Row
+</td>
+<td>
+It returns the current cell and row of excel sheet.
+</td>
+</tr>
+<tr>
+<td>
+ServerWordColumnTemplateInfo
+</td>
+<td>
+currentCell, Row
+</td>
+<td>
+It returns the current cell and row of word.
+</td>
+</tr>
+<tr>
+<td>
+ServerPdfColumnTemplateInfo
+</td>
+<td>
+currentCell, Row
+</td>
+<td>
+It returns the current cell and row of PDF.
+</td>
+</tr>
+</table>
+
+You can modify the template column of exporting files using server events. The code snippet for this is
+
+{% tabs %}
+
+{% highlight html %}
+
+<ej:Grid ID="EmployeesGrid" runat="server" AllowPaging="True" OnServerExcelExporting="EmployeesGrid_ServerExcelExporting" OnServerWordExporting="EmployeesGrid_ServerWordExporting" OnServerPdfExporting="EmployeesGrid_ServerPdfExporting" OnServerExcelColumnTemplateInfo="EmployeesGrid_ServerExcelColumnTemplateInfo" OnServerWordColumnTemplateInfo="EmployeesGrid_ServerWordColumnTemplateInfo" OnServerPdfColumnTemplateInfo="EmployeesGrid_ServerPdfColumnTemplateInfo">
+     <ToolbarSettings ShowToolbar="true" ToolbarItems="excelExport,wordExport,pdfExport"></ToolbarSettings>
+        <Columns>
+            <ej:Column HeaderText="First Name" Template="#columnTemplate" TextAlign="Center" Width="110" />
+            <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="100" />
+            <ej:Column Field="LastName" HeaderText="Last Name" Width="100" />
+            <ej:Column Field="BirthDate" HeaderText="Birth Date" TextAlign="Right" Width="100" Format="{0:MM/dd/yyyy}" />
+            <ej:Column Field="Country" Width="100" HeaderText="Country" />
+        </Columns>
+</ej:Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+public partial class ColumnTemplateExporting : System.Web.UI.Page
+{
+    List<Orders> order = new List<Orders>();
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+       BindDataSource();
+    }
+
+    private void BindDataSource()
+    {
+       order.Add(new Orders(1, "Nancy", "Davolio", new DateTime(1948, 12, 08), "USA"));
+       order.Add(new Orders(2, "Andrew", "Fuller", new DateTime(1952, 02, 19), "USA"));
+       order.Add(new Orders(3, "Janet", "Leverling", new DateTime(1963, 08, 30), "USA"));
+       order.Add(new Orders(4, "Margaret", "Peacock", new DateTime(1937, 09, 19), "USA"));
+       order.Add(new Orders(5, "Steven", "Buchanan", new DateTime(1955, 03, 04), "UK"));
+       order.Add(new Orders(6, "Michael", "Suyama", new DateTime(1963, 07, 02), "UK"));
+       order.Add(new Orders(7, "Robert", "King", new DateTime(1960, 05, 29), "UK"));
+       order.Add(new Orders(8, "Laura", "Callahan", new DateTime(1958, 01, 09), "USA"));
+
+       this.EmployeesGrid.DataSource = order;
+       this.EmployeesGrid.DataBind();
+    }
+
+    [Serializable]
+    public class Orders
+    {
+       public Orders()
+       {
+
+       }
+       public Orders(int EmployeeId, string FirstName, string LastName, DateTime BirthDate, string Country)
+       {
+          this.EmployeeID = EmployeeId;
+          this.FirstName = FirstName;
+          this.LastName = LastName;
+          this.BirthDate = BirthDate;
+          this.Country = Country;
+        }
+        
+        public int EmployeeID { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public DateTime BirthDate { get; set; }
+        public string Country { get; set; }
+    }
+
+    protected void EmployeesGrid_ServerExcelExporting(object sender, Syncfusion.JavaScript.Web.GridEventArgs e)
+    {
+        ExcelExport exp = new ExcelExport();
+        GridProperties obj = ConvertGridObject(e.Arguments["model"].ToString());
+        GridExcelExport exp1 = new GridExcelExport() {  IsTemplateColumnIncluded = true, Theme = "flat-lime", FileName = "Export.xlsx" };
+        exp.Export(obj, (IEnumerable)EmployeesGrid.DataSource, exp1);
+    }
+
+    protected void EmployeesGrid_ServerWordExporting(object sender, Syncfusion.JavaScript.Web.GridEventArgs e)
+    {
+        WordExport exp = new WordExport();
+        GridProperties obj = ConvertGridObject(e.Arguments["model"].ToString());
+        GridWordExport exp1 = new GridWordExport() { IsTemplateColumnIncluded = true, Theme = "flat-lime", FileName = "Export.docx" };
+        exp.Export(obj, (IEnumerable)EmployeesGrid.DataSource, exp1);
+    }
+
+    protected void EmployeesGrid_ServerPdfExporting(object sender, Syncfusion.JavaScript.Web.GridEventArgs e)
+    {
+        PdfExport exp = new PdfExport();
+        GridProperties obj = ConvertGridObject(e.Arguments["model"].ToString());
+        GridPdfExport exp1 = new GridPdfExport() { IsTemplateColumnIncluded = true, Theme = "flat-lime", FileName = "Export.pdf" };
+        exp.Export(obj, (IEnumerable)EmployeesGrid.DataSource, exp1);
+    }
+
+    private GridProperties ConvertGridObject(string gridProperty)
+    {
+       JavaScriptSerializer serializer = new JavaScriptSerializer();
+       IEnumerable div = (IEnumerable)serializer.Deserialize(gridProperty, typeof(IEnumerable));
+       GridProperties gridProp = this.EmployeesGrid.Model;
+       foreach (KeyValuePair<string, object> data in div)
+       {
+          var property = gridProp.GetType().GetProperty(data.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+
+          if (property != null)
+          {
+             Type type = property.PropertyType;
+             string serialize = serializer.Serialize(data.Value);
+             object value = serializer.Deserialize(serialize, type);
+             property.SetValue(gridProp, value, null);
+          }
+        }
+        return gridProp;
+     }
+
+     protected void EmployeesGrid_ServerExcelColumnTemplateInfo(object arg1, object arg2)
+     {
+        IRange range = (IRange)arg1;
+        object templates;
+        foreach (var data in arg2.GetType().GetProperties())
+        {
+            if (range.Value.Contains(data.Name))
+            {
+              templates = arg2.GetType().GetProperty(data.Name).GetValue(arg2, null);
+              range.Value = range.Value.Replace(data.Name, templates.ToString());
+              var regex = new Regex("<a [^>]*href=(?:'(?<href>.*?)')|(?:\"(?<href>.*?)\")", RegexOptions.IgnoreCase);
+              var urls = regex.Matches(range.Value.ToString()).OfType<Match>().Select(m => m.Groups["href"].Value).SingleOrDefault();
+              IHyperLink hyperlink = (range.Parent as Syncfusion.XlsIO.Implementation.WorksheetImpl).HyperLinks.Add(range);
+              hyperlink.Type = ExcelHyperLinkType.Url;
+              hyperlink.TextToDisplay = templates.ToString();
+              hyperlink.Address = urls;
+            }
+          }
+     }
+
+     protected void EmployeesGrid_ServerWordColumnTemplateInfo(object arg1, object arg2)
+     {
+        WTableCell wCell = (WTableCell)arg1;
+        object templates;
+        foreach (var data in arg2.GetType().GetProperties())
+        {
+            if (wCell.LastParagraph.Text.ToString().Contains(data.Name))
+            {
+                templates = arg2.GetType().GetProperty(data.Name).GetValue(arg2, null);
+                var regex = new Regex("<a [^>]*href=(?:'(?<href>.*?)')|(?:\"(?<href>.*?)\")", RegexOptions.IgnoreCase);
+                var urls = regex.Matches(wCell.LastParagraph.Text).OfType<Match>().Select(m => m.Groups["href"].Value).SingleOrDefault();
+                wCell.LastParagraph.Text = "";
+                IWField field = wCell.LastParagraph.AppendHyperlink(urls, templates.ToString(), HyperlinkType.WebLink);
+            }
+        }
+    }
+
+    protected void EmployeesGrid_ServerPdfColumnTemplateInfo(object arg1, object arg2)
+    {
+        Syncfusion.Pdf.Grid.PdfGridCell range = (Syncfusion.Pdf.Grid.PdfGridCell)arg1;
+        object templates;
+        range.Value = Uri.UnescapeDataString(range.Value.ToString());
+        foreach (var data in arg2.GetType().GetProperties())
+        {
+            if (range.Value.ToString().Contains(data.Name))
+            {
+                templates = arg2.GetType().GetProperty(data.Name).GetValue(arg2, null);
+                var regex = new Regex("<a [^>]*href=(?:'(?<href>.*?)')|(?:\"(?<href>.*?)\")", RegexOptions.IgnoreCase);
+                var urls = regex.Matches(range.Value.ToString()).OfType<Match>().Select(m => m.Groups["href"].Value).SingleOrDefault();
+                RectangleF rectangle = new RectangleF(10, 40, 30, 30);
+                PdfUriAnnotation uriAnnotation = new PdfUriAnnotation(rectangle, urls);
+                uriAnnotation.Text = templates.ToString();
+                range.Value = uriAnnotation;
+            }
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## DetailTemplate Exporting
+
+To export the grid with detail template we have to set `IncludeDetailRow` as true in the parameter of the export method. You can handle template elements using server side event while exporting grid to various files such as Excel, PDF and Word.
+
+The server side events available in detail template exporting and its argument types are listed in the following table.
+
+<table>
+<tr>
+<th>
+Event Name
+</th>
+<th>
+Argument
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+ServerExcelDetailTemplateInfo
+</td>
+<td>
+currentCell, Row
+</td>
+<td>
+It returns the current cell and row of excel sheet.
+</td>
+</tr>
+<tr>
+<td>
+ServerWordDetailTemplateInfo
+</td>
+<td>
+currentCell, Row
+</td>
+<td>
+It returns the current cell and row of word.
+</td>
+</tr>
+<tr>
+<td>
+ServerPdfDetailTemplateInfo
+</td>
+<td>
+currentCell, Row
+</td>
+<td>
+It returns the current cell and row of PDF.
+</td>
+</tr>
+</table>
+
+You can modify the detailTemplate of exporting files using server events. The code snippet for this is
+
+{% tabs %}
+
+{% highlight html %}
+
+<script id="tabGridContents" type="text/x-jsrender">
+    <b> More Details: </b> <br /><br /> <b class='detail'>Last Name</b> - {{:LastName}} <br /> <br /> <b class='detail'>Home Phone</b> - {{:HomePhone}} <br /> <br /> <b class='detail'>Exten No</b> - {{:Extension}}
+  
+</script>
+
+<ej:Grid ID="EmployeesGrid" runat="server" DetailsTemplate="#tabGridContents" OnServerExcelDetailTemplateInfo="EmployeesGrid_ServerExcelDetailTemplateInfo" OnServerWordDetailTemplateInfo="EmployeesGrid_ServerWordDetailTemplateInfo" OnServerPdfDetailTemplateInfo="EmployeesGrid_ServerPdfDetailTemplateInfo" OnServerExcelExporting="EmployeesGrid_ServerExcelExporting" OnServerWordExporting="EmployeesGrid_ServerWordExporting" OnServerPdfExporting="EmployeesGrid_ServerPdfExporting">
+      <Columns>
+         <ej:Column Field="EmployeeID" HeaderText="Employee ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+         <ej:Column Field="FirstName" HeaderText="First Name" Width="100" />
+         <ej:Column Field="Title" HeaderText="Title" Width="120" />
+         <ej:Column Field="City" HeaderText="City" Width="100" />
+         <ej:Column Field="Country" HeaderText="Country" Width="100" />
+      </Columns>
+</ej:Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+public partial class DetailTemplateExporting : System.Web.UI.Page
+{
+    List<Orders> order = new List<Orders>();
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+       BindDataSource();
+    }
+
+    private void BindDataSource()
+    {
+       order.Add(new Orders(1, "Nancy", "Davolio", new DateTime(1948, 12, 08), "USA"));
+       order.Add(new Orders(2, "Andrew", "Fuller", new DateTime(1952, 02, 19), "USA"));
+       order.Add(new Orders(3, "Janet", "Leverling", new DateTime(1963, 08, 30), "USA"));
+       order.Add(new Orders(4, "Margaret", "Peacock", new DateTime(1937, 09, 19), "USA"));
+       order.Add(new Orders(5, "Steven", "Buchanan", new DateTime(1955, 03, 04), "UK"));
+       order.Add(new Orders(6, "Michael", "Suyama", new DateTime(1963, 07, 02), "UK"));
+       order.Add(new Orders(7, "Robert", "King", new DateTime(1960, 05, 29), "UK"));
+       order.Add(new Orders(8, "Laura", "Callahan", new DateTime(1958, 01, 09), "USA"));
+
+       this.EmployeesGrid.DataSource = order;
+       this.EmployeesGrid.DataBind();
+    }
+
+    [Serializable]
+    public class Orders
+    {
+       public Orders()
+       {
+
+       }
+       public Orders(int EmployeeId, string FirstName, string LastName, DateTime BirthDate, string Country)
+       {
+          this.EmployeeID = EmployeeId;
+          this.FirstName = FirstName;
+          this.LastName = LastName;
+          this.BirthDate = BirthDate;
+          this.Country = Country;
+        }
+        
+        public int EmployeeID { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public DateTime BirthDate { get; set; }
+        public string Country { get; set; }
+    }
+
+    protected void EmployeesGrid_ServerExcelExporting(object sender, Syncfusion.JavaScript.Web.GridEventArgs e)
+    {
+        ExcelExport exp = new ExcelExport();
+        GridProperties obj = ConvertGridObject(e.Arguments["model"].ToString());
+        GridExcelExport exp1 = new GridExcelExport() {  IncludeDetailRow = true, Theme = "flat-lime", FileName = "Export.xlsx" };
+        exp.Export(obj, (IEnumerable)EmployeesGrid.DataSource, exp1);
+    }
+
+    protected void EmployeesGrid_ServerWordExporting(object sender, Syncfusion.JavaScript.Web.GridEventArgs e)
+    {
+        WordExport exp = new WordExport();
+        GridProperties obj = ConvertGridObject(e.Arguments["model"].ToString());
+        GridWordExport exp1 = new GridWordExport() { IncludeDetailRow = true, Theme = "flat-lime", FileName = "Export.docx" };
+        exp.Export(obj, (IEnumerable)EmployeesGrid.DataSource, exp1);
+    }
+
+    protected void EmployeesGrid_ServerPdfExporting(object sender, Syncfusion.JavaScript.Web.GridEventArgs e)
+    {
+        PdfExport exp = new PdfExport();
+        GridProperties obj = ConvertGridObject(e.Arguments["model"].ToString());
+        GridPdfExport exp1 = new GridPdfExport() { IncludeDetailRow = true, Theme = "flat-lime", FileName = "Export.pdf" };
+        exp.Export(obj, (IEnumerable)EmployeesGrid.DataSource, exp1);
+    }
+
+    private GridProperties ConvertGridObject(string gridProperty)
+    {
+       JavaScriptSerializer serializer = new JavaScriptSerializer();
+       IEnumerable div = (IEnumerable)serializer.Deserialize(gridProperty, typeof(IEnumerable));
+       GridProperties gridProp = this.EmployeesGrid.Model;
+       foreach (KeyValuePair<string, object> data in div)
+       {
+          var property = gridProp.GetType().GetProperty(data.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+
+          if (property != null)
+          {
+             Type type = property.PropertyType;
+             string serialize = serializer.Serialize(data.Value);
+             object value = serializer.Deserialize(serialize, type);
+             property.SetValue(gridProp, value, null);
+          }
+        }
+        return gridProp;
+     }
+
+     protected void EmployeesGrid_ServerExcelDetailTemplateInfo(object arg1, object arg2)
+     {
+        IRange range = (IRange)arg1;
+        object templates;
+        foreach (var data in arg2.GetType().GetProperties())
+        {
+          if (range.Value.Contains(data.Name))
+          {
+            templates = arg2.GetType().GetProperty(data.Name).GetValue(arg2, null);
+            range.Value = range.Value.Replace(data.Name, templates.ToString());
+            var charsToRemove = new string[] { '{', '}', '<b>', ':', '</b>', '<br />', 'style', '=', 'class', '</div>', '<p>', '</p>', 'detail', '<b', '>', };
+            foreach (var c in charsToRemove)
+            {
+              range.Value = range.Value.ToString().Replace(c, string.Empty);
+            }
+            range.HorizontalAlignment = ExcelHAlign.HAlignCenter;
+          }
+        }
+     }
+
+     protected void EmployeesGrid_ServerWordDetailTemplateInfo(object arg1, object arg2)
+     {
+        WTableCell wCell = (WTableCell)arg1;
+        object templates;
+        foreach (var data in arg2.GetType().GetProperties())
+        {
+          if (wCell.LastParagraph.Text.ToString().Contains(data.Name))
+          {
+             templates = arg2.GetType().GetProperty(data.Name).GetValue(arg2, null);
+             wCell.LastParagraph.Text = wCell.LastParagraph.Text.ToString().Replace(data.Name, templates.ToString());
+             var charsToRemove = new string[] { '{', '}', '<b>', ':', '</b>', '<br />', 'style', '=', 'class', '</div>', '<p>', '</p>', 'detail', '<b', '>', };
+             foreach (var c in charsToRemove)
+             {
+               wCell.LastParagraph.Text  = wCell.LastParagraph.Text.ToString().Replace(c, string.Empty); //
+             }
+          }
+        }
+     }
+
+    protected void EmployeesGrid_ServerPdfDetailTemplateInfo(object arg1, object arg2)
+    {
+      Syncfusion.Pdf.Grid.PdfGridCell range = (Syncfusion.Pdf.Grid.PdfGridCell)arg1;
+      object templates;
+      foreach (var data in arg2.GetType().GetProperties())
+      {
+        if (range.Value.ToString().Contains(data.Name))
+        {
+          templates = arg2.GetType().GetProperty(data.Name).GetValue(arg2, null);
+          range.Value = range.Value.ToString().Replace(data.Name, templates.ToString());
+          var charsToRemove = new string[] { '{', '}', '<b>', ':', '</b>', '<br />', 'style', '=', 'class', '</div>', '<p>', '</p>', 'detail', '<b', '>', };
+          foreach (var c in charsToRemove)
+          {
+            range.Value = range.Value.ToString().Replace(c, string.Empty);
+          }
+        }
+      }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
 
 
