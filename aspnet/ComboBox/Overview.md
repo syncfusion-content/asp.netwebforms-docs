@@ -5,7 +5,7 @@ description: Descripes about overview of ComboBox by adding references.
 platform: WebForm
 control: ComboBox
 documentation: ug
-keywords: ComboBox, combobox, overview of ComboBox
+keywords: ComboBox, combobox, overview of ComboBox, Data binding, Custom values, Grouping, Sorting, Filtering, Templates, Accessibility
 ---
 
 # Overview
