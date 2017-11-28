@@ -207,7 +207,7 @@ public class IconCss
 
 {% endtabs %}
 
-## Autofill supported with ComboBox
+## AutoFill supported with ComboBox
 
 The ComboBox supports the `AutoFill` behavior with the help of AutoFill property. Whenever you change the input value, the ComboBox will autocomplete your data by matching the typed character. Suppose, if no matches
 found then, comboBox doesn't suggest any item.
