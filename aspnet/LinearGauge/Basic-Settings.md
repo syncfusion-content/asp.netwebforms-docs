@@ -305,7 +305,7 @@ Execute the above code to render the following output.
 ![](Basic-Settings_images/Basic-Settings_img4.png)
 
 
-Responsiveness of the linear gauge is controlled by using [`enableResize`](../api/ejlineargauge#members:enableresize) property.
+Responsiveness of the linear gauge is controlled by using `enableResize` property.
 
 
 {% highlight html %}
