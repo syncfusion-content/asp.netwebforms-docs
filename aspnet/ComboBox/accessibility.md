@@ -10,15 +10,11 @@ keywords: ComboBox, ComboBox, Accessibility, ARIA attributes, Keyboard interacti
 
 # Accessibility
 
-The ComboBox component has been designed, keeping in mind the `WAI-ARIA` specifications, and applies
-the WAI-ARIA roles, states, and properties along with `keyboard support`. This component is characterized
-by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who
-use assistive technologies (AT) or those who completely rely on keyboard navigation.
+The ComboBox component has been designed, keeping in mind the `WAI-ARIA` specifications, and applies the WAI-ARIA roles, states, and properties along with `keyboard support`. This component is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
 
 ## ARIA attributes
 
-The ComboBox component uses the `combobox` role, and each list item has an `option` role. The following
-`ARIA attributes` denote the ComboBox state.
+The ComboBox component uses the `combobox` role, and each list item has an `option` role. The following `ARIA attributes` denote the ComboBox state.
 
 | **Properties** | **Functionalities** |
 | --- | --- |
