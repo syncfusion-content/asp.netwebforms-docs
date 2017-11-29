@@ -33,10 +33,6 @@ The internal script dependency ej.web.all.js is a bundle of all Syncfusion ASP.N
 		<td>The ComboBox's main file</td>
 	</tr>
 	<tr>
-		<td>ej.scroller.min.js</td>
-		<td>Should be referred when using scrolling in ComboBox.</td>
-	</tr>
-	<tr>
 		<td>ej.globalize.min.js</td>
 		<td>processing specific source-side actions globally.</td>
 	</tr>
