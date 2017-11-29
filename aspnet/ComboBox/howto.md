@@ -12,9 +12,7 @@ keywords: ComboBox, combobox, Cascading ComboBox, Autofill supported with ComboB
 
 ## Configure the Cascading ComboBox
 
-The cascading ComboBox is a series of ComboBox, where the value of one ComboBox depends
-upon  another's value. This can be configured by using the `ClientSideOnChange` event of the parent ComboBox.
-Within that change event handler, data has to be loaded to the child ComboBox based on the selected
+The cascading ComboBox is a series of ComboBox, where the value of one ComboBox depends upon  another's value. This can be configured by using the `ClientSideOnChange` event of the parent ComboBox. Within that change event handler, data has to be loaded to the child ComboBox based on the selected
 value of the parent ComboBox.
 
 The following example, shows the cascade behavior of Group and Country ComboBox. Here, the `dataBind` method is used to reflect the property changes immediately
@@ -115,8 +113,7 @@ class GroupsList
 
 ## Show the list items with icons
 
-You can render **icons** to the list items by mapping the
-DataIconCSSField field. This `DataIconCSSField` field create a span in the list item with mapped class name
+You can render **icons** to the list items by mapping the DataIconCSSField field. This `DataIconCSSField` field create a span in the list item with mapped class name
 to allow styling as per your need.
 
 In the following sample, icon classes are mapped with `DataIconCSSField` field.
