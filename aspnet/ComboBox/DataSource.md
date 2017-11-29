@@ -136,10 +136,10 @@ Create new CS file in App_Data folder and name as ‘Data.cs’ and add the foll
 public class TabData
 {
 
-    public TabData(int _id, int _parentid, string _text)
+    public TabData(int _id, int parent, string _text)
     {
         this.ID = _id;
-        this.ParentID = _parentid;
+        this.ParentID = parent;
         this.Text = _text;
     }
     public TabData()

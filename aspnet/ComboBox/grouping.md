@@ -10,10 +10,8 @@ keywords: ComboBox, combobox, Grouping, combobox Customization, HTML select
 
 # Grouping
 
-The ComboBox supports wrapping nested elements into a group based on different categories. The category
-of each list item can be mapped through the `DataGroupByField` field in
-the data table. The group header is displayed both as inline and fixed headers. The fixed group header content
-is updated dynamically on scrolling the popup list with its category value.
+The ComboBox supports wrapping nested elements into a group based on different categories. The category of each list item can be mapped through the `DataGroupByField` field in
+the data table. The group header is displayed both as inline and fixed headers. The fixed group header content is updated dynamically on scrolling the popup list with its category value.
 
 In the following sample, countries are grouped according on its category using `DataGroupByField` field.
 
