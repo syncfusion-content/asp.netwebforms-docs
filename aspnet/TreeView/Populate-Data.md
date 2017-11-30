@@ -343,7 +343,57 @@ In the view page, add TreeView element and map the properties defined in to the
         </ej:TreeView>
         
     {% endhighlight %}
+
+### Nested Object Support 
+
+The nested object support is provided for the TreeView component.
+
+In the code behind page, create a data list which contains the details about tree nodes and map the list data to the DataSource property of TreeView.
     
+    {% highlight c# %}
+    
+        public partial class TreeViewFeatures : System.Web.UI.Page
+        {
+            List<LoadData> load = new List<LoadData>();
+            protected void Page_Load(object sender, EventArgs e)
+            {
+                load.Add(new LoadData { Id = 1, Parent = 0, Text = new InnerData { fName = "Item 1" } });
+                load.Add(new LoadData { Id = 2, Parent = 0, Text = new InnerData { fName = "Item 2" } });
+                load.Add(new LoadData { Id = 3, Parent = 0, Text = new InnerData { fName = "Item 3" } });
+                load.Add(new LoadData { Id = 4, Parent = 1, Text = new InnerData { fName = "Item 1.1" } });
+                load.Add(new LoadData { Id = 5, Parent = 1, Text = new InnerData { fName = "Item 1.2" } });
+                load.Add(new LoadData { Id = 6, Parent = 3, Text = new InnerData { fName = "Item 3.1" } });
+                this.treeview.DataSource = load;
+            }
+        }
+        public class LoadData
+        {
+            public int Id { get; set; }
+            public int Parent { get; set; }
+            public InnerData Text { get; set; }
+        }
+        public class InnerData
+        {
+            public string fName { get; set; }
+        }
+        
+    {% endhighlight %}
+    
+
+In the view page, add TreeView element and map the properties defined in to the corresponding fields in data source.
+    
+    {% highlight html %}
+    
+        <ej:TreeView 
+            ID="treeview" 
+            runat="server" 
+            DataTextField="Text.fName" 
+            DataIdField="Id" 
+            DataParentIdField="Parent">
+        </ej:TreeView>
+        
+    {% endhighlight %}
+
 ## Remote Data
 
 When using remote data binding, the adaptor of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
