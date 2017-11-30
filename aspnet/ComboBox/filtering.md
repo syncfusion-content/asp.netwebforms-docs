@@ -12,7 +12,7 @@ keywords: ComboBox, combobox, Filtering, minimum filter character, filter type
 
 The ComboBox has built-in support to filter data items when `AllowFiltering` is enabled. The filter operation starts as soon as you start typing characters in the component.
 
-To display filtered items in the popup, filter the required data and return it to the ComboBox via [updateData](api-filteringEventArgs.html#updatedata) method by using the [filtering](/combo-box/api-comboBox.html#filtering--emittypefilteringeventargs) event.
+To display filtered items in the popup, filter the required data and return it to the ComboBox via `updateData` method by using the [filtering](https://help.syncfusion.com/api/js/ejcombobox#events:filtering) event.
 
 The following sample illustrates how to query the data source and pass the data to the ComboBox through the `updateData` method in `filtering` event.
 
