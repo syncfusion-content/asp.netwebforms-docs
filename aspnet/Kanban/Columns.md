@@ -601,3 +601,59 @@ The following code example describes the above behavior.
 The following output is displayed as a result of the above code example.
 
 ![](Columns_images/column_img8.png)
+
+## Show Empty Kanban Columns
+
+You can render empty kanban columns using the property `ShowColumnWhenEmpty`.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight html %}
+
+  	<ej:Kanban ID="Kanban" runat="server" AllowSelection="true" KeyField="Status" ShowColumnWhenEmpty="true">
+        <Columns>
+                <ej:KanbanColumn HeaderText="Backlog" Key="Open" ShowAddButton="true"/>
+                <ej:KanbanColumn HeaderText="In Progress" Key="InProgress"/>
+                <ej:KanbanColumn HeaderText="Done" Key="Close" />
+        </Columns>
+        <Fields Content="Summary" Color="Type" ImageUrl="ImgUrl" Tag="Tags"  SwimlaneKey="Assignee" PrimaryKey="Id" />
+		<EditSettings AllowAdding="true" AllowEditing="true" EditMode="Dialog">
+            <EditItems>
+                <ej:KanbanEditItem  EditType="String" Field="Id">
+                    <ValidationRules><ej:KeyValue Key="required" Value="true"  /></ValidationRules>
+                </ej:KanbanEditItem>
+                <ej:KanbanEditItem  EditType="String"  Field="Status"></ej:KanbanEditItem>
+                <ej:KanbanEditItem  EditType="String" Field="Assignee"></ej:KanbanEditItem>
+                <ej:KanbanEditItem EditType="Numeric" Field="Estimate">
+                    <NumericEditOptions DecimalPlaces="2" /><ValidationRules><ej:KeyValue Key="range" Value="[0, 1000]" /></ValidationRules>
+                </ej:KanbanEditItem>
+                <ej:KanbanEditItem EditType="TextArea" Field="Summary"><ValidationRules><ej:KeyValue Key="required" Value="true" /></ValidationRules>  </ej:KanbanEditItem>
+            </EditItems>
+        </EditSettings> 
+    </ej:Kanban>  
+
+{% endhighlight  %}
+
+{% highlight c# %}
+
+          List<Tasks> Task = new List<Tasks>();  
+          protected void Page_Load(object sender, EventArgs e)
+          {
+            Task.Add(new Tasks(1, "Open", "Analyze the new requirements gathered from the customer.", "Story", "Low", "Analyze,Customer", 3.5, "Nancy", "../content/images/kanban/1.png", 1));
+            Task.Add(new Tasks(2, "InProgress", "Improve application performance", "Improvement", "Normal", "Improvement", 6, "Andrew", "../content/images/kanban/2.png", 1));
+            Task.Add(new Tasks(3, "Open", "Arrange a web meeting with the customer to get new requirements.", "Others", "Critical", "Meeting", 5.5, "Janet", "../content/images/kanban/3.png", 2));
+            Task.Add(new Tasks(4, "InProgress", "Fix the issues reported in the IE browser.", "Bug", "Release Breaker", "IE", 2.5, "Janet", "../content/images/kanban/3.png", 2));
+            Task.Add(new Tasks(5, "Testing", "Fix the issues reported by the customer.", "Bug", "Low", "Customer", 3.5, "Steven", "../content/images/kanban/5.png", 1));
+            this.Kanban.DataSource = Task.Take(0);
+            this.Kanban.DataBind();
+           }
+
+{% endhighlight  %}
+
+{% endtabs %} 
+
+The following output is displayed as a result of the above code example.
+
+![](Columns_images/column_img10.png)
