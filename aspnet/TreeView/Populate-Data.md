@@ -357,12 +357,12 @@ In the code behind page, create a data list which contains the details about tre
             List<LoadData> load = new List<LoadData>();
             protected void Page_Load(object sender, EventArgs e)
             {
-                load.Add(new LoadData { Id = 1, Parent = 0, Text = new InnerData { fName = "Item 1" } });
-                load.Add(new LoadData { Id = 2, Parent = 0, Text = new InnerData { fName = "Item 2" } });
-                load.Add(new LoadData { Id = 3, Parent = 0, Text = new InnerData { fName = "Item 3" } });
-                load.Add(new LoadData { Id = 4, Parent = 1, Text = new InnerData { fName = "Item 1.1" } });
-                load.Add(new LoadData { Id = 5, Parent = 1, Text = new InnerData { fName = "Item 1.2" } });
-                load.Add(new LoadData { Id = 6, Parent = 3, Text = new InnerData { fName = "Item 3.1" } });
+                load.Add(new LoadData { Id = 1, Parent = 0, Text = new InnerData { nodeName = "Item 1" } });
+                load.Add(new LoadData { Id = 2, Parent = 0, Text = new InnerData { nodeName = "Item 2" } });
+                load.Add(new LoadData { Id = 3, Parent = 0, Text = new InnerData { nodeName = "Item 3" } });
+                load.Add(new LoadData { Id = 4, Parent = 1, Text = new InnerData { nodeName = "Item 1.1" } });
+                load.Add(new LoadData { Id = 5, Parent = 1, Text = new InnerData { nodeName = "Item 1.2" } });
+                load.Add(new LoadData { Id = 6, Parent = 3, Text = new InnerData { nodeName = "Item 3.1" } });
                 this.treeview.DataSource = load;
             }
         }
@@ -374,7 +374,7 @@ In the code behind page, create a data list which contains the details about tre
         }
         public class InnerData
         {
-            public string fName { get; set; }
+            public string nodeName { get; set; }
         }
         
     {% endhighlight %}
@@ -387,7 +387,7 @@ In the view page, add TreeView element and map the properties defined in to the
         <ej:TreeView 
             ID="treeview" 
             runat="server" 
-            DataTextField="Text.fName" 
+            DataTextField="Text.nodeName" 
             DataIdField="Id" 
             DataParentIdField="Parent">
         </ej:TreeView>
