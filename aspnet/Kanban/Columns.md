@@ -602,9 +602,9 @@ The following output is displayed as a result of the above code example.
 
 ![](Columns_images/column_img8.png)
 
-## Show Empty Kanban Columns
+## Display Empty Column
 
-You can render empty kanban columns using the property `ShowColumnWhenEmpty`.
+On binding empty data source to Kanban control, it displays "No cards to display" text. Using `ShowColumnWhenEmpty` property, we can render empty kanban columns. Set allowEditing and allowAdding property as true to add new data into the empty kanban column. 
 
 The following code example describes the above behavior.
 
