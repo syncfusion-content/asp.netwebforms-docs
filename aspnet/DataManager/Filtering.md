@@ -445,7 +445,7 @@ This operator used to fetch the records with value not match with the given filt
 
 ## Lambda Operators
 
-### aLL
+### all
 
 The ALL operator returns TRUE if all the sub query values meet the condition. This operator used to fetch the records of the fields match with the given value’s fields.
 
