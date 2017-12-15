@@ -11,7 +11,7 @@ documentation: ug
 
 ## Decimal Places
 
-The DecimalPlaces declares the decimal point to the value of the CurrencyTextbox control. The default value of the DecimalPlaces is 0 in the CurrencyTextbox control. To set the DecimalPlaces to “-1”, that allows the decimals without any limit in CurrencyTextbox control.
+The DecimalPlaces declares the decimal point to the value of the CurrencyTextbox control. The default value of the DecimalPlaces is 0 in the CurrencyTextbox control. To set the DecimalPlaces to “-1”, that allows the decimals without any limit in CurrencyTextBox control.
 
 ### Configure Decimal Places
 
