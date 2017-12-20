@@ -253,7 +253,8 @@ The following code example describes the above behavior.
 </asp:Content>
 {% endhighlight  %}
 {% highlight css %}
-  .e-rowcell[employeeid = "5"] {
+    <style>
+        .e-rowcell[employeeid = "5"] {
             color: red;
         }	
     </style>
