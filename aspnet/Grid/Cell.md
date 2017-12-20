@@ -228,7 +228,7 @@ The following output is displayed as a result of the above code example.
 
 You can add `Custom attribute` for particular column `td` element by using `CustomAttributes` property of the column.
 
-Based on custom attribute you can customize the style and appearance of the `td` element or handling jQuery functionalities. 
+Based on custom attribute you can customize the style and appearance of the `td` element for particular column or handling jQuery functionalities. 
 
 You can use JsRender syntax in the template.For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "the link").
 
@@ -243,7 +243,7 @@ The following code example describes the above behavior.
             <ej:Column Field="CustomerID" />
             <ej:Column Field="EmployeeID" HeaderText="Employee Name">
                 <CustomAttribute>
-                    <ej:KeyValue Key="employeeid" Value="''" />
+                    <ej:KeyValue Key="employeeid" Value="5" />
                 </CustomAttribute>
             </ej:Column>
             <ej:Column Field="ShipCity" />
