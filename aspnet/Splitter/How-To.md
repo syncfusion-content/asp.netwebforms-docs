@@ -18,7 +18,7 @@ By default, you are provided with collpase/expand icons in **Split bar** to coll
 
 {% highlight html %}
 
-<ej:Splitter ID="innersplitter" Height="250" Width="80%" ExpanderTemplate="<img class='eimg' src='../Content/basketball.png' ClientSideOnClickOnExpander="template" alt='employee'/>" runat="server" >
+<ej:Splitter ID="innersplitter" Height="250" Width="80%" ExpanderTemplate="<img class='eimg' src='../Content/basketball.png' ClientSideOnClickOnExpander="onClick" alt='employee'/>" runat="server" >
     <ej:SplitPane>
         <div>
             <div class="cont">Pane 1</div>
@@ -35,7 +35,7 @@ By default, you are provided with collpase/expand icons in **Split bar** to coll
 
 {% highlight js %}
 
-       function template(args) {
+       function onClick(args) {
             if (flag) { this.collapse(0); flag = false; }
             else { this.expand(0); flag = true; }
         }
@@ -53,20 +53,12 @@ By default, you are provided with collpase/expand icons in **Split bar** to coll
             width:35px;
 			margin-left: -13px;
         }  
-
-		.ediv {
-           height: 30px;
-			width: 45px;
-			background-color: darkblue;
-			margin-top: -130px;
-			margin-left: -20px;
-        }  
        .e-splitter .e-splitbar .e-splitter-h-template {
             top: 15%;
        }
 
 {% endhighlight %}
 
-The output for Splitter with **Tempalet support**.
+The output for Splitter with **Template support**.
 
 ![](How-To_images/Template_Support_img.png) 
