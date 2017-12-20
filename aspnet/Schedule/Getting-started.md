@@ -118,3 +118,6 @@ Map the Scheduler data fields with the appropriate appointmentSettings propertie
 {% endhighlight %}
 
 To bind the data from database or any other dataSources, refer [here](/aspnet/schedule/data-binding).
+
+
+![](Getting-Started_images/Getting-Started_img1.png)
