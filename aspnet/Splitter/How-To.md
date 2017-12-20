@@ -10,7 +10,7 @@ documentation: ug
 
 ### Change Expand/Collapse icons
 
-By default, you are provided with collpase/expand icons in **Split bar** to collapse or expand the splitter panes. We have provided template support to replace existing expand/collapse icons.
+By default, you are provided with collapse/expand icons in **Split bar** to collapse or expand the splitter panes. We have provided template support to replace existing expand/collapse icons.
 
 * **expanderTemplate** Specifies HTML element string to replace template with existing expand/collapse icons. 
 
