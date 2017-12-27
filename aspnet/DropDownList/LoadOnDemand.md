@@ -9,9 +9,10 @@ documentation: ug
 keywords: DropDownList, dropdown, loadOnDemand
 
 ---
-## loadOnDemand
+## Load On Demand
 
-The load on demand feature helps to reduce the performance of DropDownList. The popup and lists will be generated while click on dropdown or text box. For this feature, the loadOnDemand property must be enabled.
+The popup and lists will be generated while click on dropdown icon or text box. For this feature, the loadOnDemand property must be enabled.
+
 {% highlight html %}
 
     <ej:DropDownList ID="selectCar" runat="server" TargetId="carsList" Width="100%" WatermarkText="Select a Car" LoadOnDemand="true"></ej:DropDownList>
