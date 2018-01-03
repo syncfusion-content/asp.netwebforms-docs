@@ -145,7 +145,7 @@ Syncfusion NuGet package will copy all the dependent Scripts and CSS files in th
 </head>
 {% endhighlight %}
 
-N> As the above mentioned order, the script file of ej.webform.min.js should be referred at last whether we use individual script reference or ej.web.all.min.js script reference.
+N> As the above mentioned order, the script file of ej.webform.min.js should be referred at the last, that is whether we use individual script reference or ej.web.all.min.js script reference.
 
 ### Adding Syncfusion ASP.NET control
 Here, you will see how to add the `DatePicker` control into the newly created Syncfusion ASP.NET Web Application. To add the control in the Application, you can use either of the following two ways.
@@ -647,7 +647,7 @@ Once the CSS files are added in your application, include the reference to "ej.w
 
 Adding the required JavaScript files into your application plays an important role, without which the Syncfusion controls cannot be created. It requires the following mandatory common script files.
 
-*	jquery-1.10.2.min.js 
+*	jquery-1.10.2.min.js
 * jquery.easing.1.3.min.js
 *	jquery.globalize.min.js
 *	jsrender.min.js
@@ -696,7 +696,7 @@ Add the following script references in the Site.Master file within the head sect
 
 {% endhighlight %}
 
-N> As the above mentioned order, the script file of ej.webform.min.js should be referred at last whether we use individual script reference or ej.web.all.min.js script reference.
+N> As the above mentioned order, the script file of ej.webform.min.js should be referred at the last, that is whether we use individual script reference or ej.web.all.min.js script reference.
 
 ### CDN Link reference
 

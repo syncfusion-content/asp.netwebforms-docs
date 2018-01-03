@@ -55,7 +55,7 @@ The Smart Tag looks like the following, When the Grid is unbound.
 
 * AllowGrouping check box sets the AllowGrouping property of the Grid control. It specifies whether to enable dynamic grouping behavior. Grouping can be done by drag and drop desired columns to grid’s GroupDropArea. It can be further customized through “GroupSettings” property.
 
-* AllowCellMerging check box sets the AllowCellMerging property of the Grid control. It specifies whether to customizing cell based on our needs.
+* AllowCellMerging check box sets the AllowCellMerging property of the Grid control. It allows you to merge the cells of Grid control.
 
 * AllowEditing check box sets the AllowEditing property of the Grid control. Edit the action either by double clicking the particular row, or by selecting the required row and click the Edit icon in the toolbar.
 
@@ -65,4 +65,4 @@ The Smart Tag looks like the following, when the Grid is bound to a data source.
 
 ![](Core_images/Smarttag1.png)
 
-Using the Smart Tag of bound Grid helps you to perform any task you can perform with the Smart Tag of unbound Grid. In addition, you can choose Configure Data Source to open the standard [Data Source Configuration](http://msdn2.microsoft.com/en-us/library/ms247282(VS.80).aspx) Wizard where you can configure the currently bound data source component.
+Similar to Grid bound with datasource, you can perform any task on Grid without datasource bound to it using Smart Tag. In addition, you can choose Configure Data Source to open the standard [Data Source Configuration](http://msdn2.microsoft.com/en-us/library/ms247282(VS.80).aspx) Wizard where you can configure the currently bound data source component.

@@ -29,7 +29,7 @@ These are stored in local storage/cookies of browser before page refreshes, and 
 
 ## Maintain data bound values after post back
 
-By default, behavior of the Syncfusion DataSource controls such as DropDownList, Treeview, if DataSource is bound from code behind once on rendering the control. Then the control will lose its data binding on any post back actions. Because on postback control will be reinitialized and the datasource will not be set if it is bind page load event when postback is false. If you need to maintain the DataSource bound after postback, you have to use DataSourceCachingMode property with enum value ViewState or Session. This will maintain the data bound values in our controls after post back.
+By default, behavior of the Syncfusion DataSource controls such as DropDownList, Treeview, if DataSource is bound from code behind once on rendering the control. Then the control will lose the data that is bound on any post back actions. Because on postback, the control will be reinitialized and the datasource will not be set. Also in the page load method the "IsPostback" is false. If you need to maintain the DataSource bound after postback, you have to use DataSourceCachingMode property with enum value ViewState or Session. This will maintain the data bound values in our controls after post back.
 
 <table>
 <tr>
