@@ -64,7 +64,7 @@ By default, the following resources are shipped as embedded resources from assem
 *	jQuery Easing v1.3
 *	Default Theme (Azure Flat)
 
-And component related scripts will be embeded dynamically from assembly in your application.
+And component related scripts will be embedded dynamically from assembly in your application.
 
 N> The jquery.easing.js library already avails within ej.web.all.min.js file, therefore it is not necessary to externally refer it in your application if you have referred ej.web.all.min.js already. For version lower than 14.3.0.49, refer to the jQuery.easing.min.js along with the ej.web.all.min.js.
 
