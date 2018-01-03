@@ -11,7 +11,9 @@ keywords: DropDownList, dropdown, loadOnDemand
 ---
 ## Load On Demand
 
-The popup and lists will be generated while click on dropdown icon or text box. For this feature, the loadOnDemand property must be enabled.
+Load on demand feature allows the DropDownList items load on request from the service/database, during only on click the DropDown icon or DropDownList. This functionality helps to improve performance on control initial rendering time. Because data items load on request. 
+
+The loadOnDemand property is used to enable or disable the load on demand functionality of the DropDownList.
 
 {% highlight html %}
 
