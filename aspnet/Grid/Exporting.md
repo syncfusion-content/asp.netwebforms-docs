@@ -24,7 +24,7 @@ N> Refer the knowledge base [link](https://www.syncfusion.com/kb/5442/how-to-exp
 
 
 
-<ej:Grid ID="FlatGrid" runat="server" AllowSorting="True" OnServerWordExporting="FlatGrid_ServerWordExporting" OnServerPdfExporting="FlatGrid_ServerPdfExporting" OnServerExcelExporting="FlatGrid_ServerExcelExporting" AllowPaging="True">
+<ej:Grid ID="FlatGrid" runat="server" AllowSorting="true" OnServerWordExporting="FlatGrid_ServerWordExporting" OnServerPdfExporting="FlatGrid_ServerPdfExporting" OnServerExcelExporting="FlatGrid_ServerExcelExporting" AllowPaging="true">
 
             <ToolbarSettings ShowToolbar="true" ToolbarItems="excelExport,wordExport,pdfExport"></ToolbarSettings>
 
@@ -249,7 +249,7 @@ You can modify the template column of exporting files using server events. The c
         <a href="https://www.syncfusion.com">{{:FirstName}}</a>
 </script>
 
-<ej:Grid ID="EmployeesGrid" runat="server" AllowPaging="True" OnServerExcelExporting="EmployeesGrid_ServerExcelExporting" OnServerWordExporting="EmployeesGrid_ServerWordExporting" OnServerPdfExporting="EmployeesGrid_ServerPdfExporting" OnServerExcelColumnTemplateInfo="EmployeesGrid_ServerExcelColumnTemplateInfo" OnServerWordColumnTemplateInfo="EmployeesGrid_ServerWordColumnTemplateInfo" OnServerPdfColumnTemplateInfo="EmployeesGrid_ServerPdfColumnTemplateInfo">
+<ej:Grid ID="EmployeesGrid" runat="server" AllowPaging="true" OnServerExcelExporting="EmployeesGrid_ServerExcelExporting" OnServerWordExporting="EmployeesGrid_ServerWordExporting" OnServerPdfExporting="EmployeesGrid_ServerPdfExporting" OnServerExcelColumnTemplateInfo="EmployeesGrid_ServerExcelColumnTemplateInfo" OnServerWordColumnTemplateInfo="EmployeesGrid_ServerWordColumnTemplateInfo" OnServerPdfColumnTemplateInfo="EmployeesGrid_ServerPdfColumnTemplateInfo">
      <ToolbarSettings ShowToolbar="true" ToolbarItems="excelExport,wordExport,pdfExport"></ToolbarSettings>
         <Columns>
             <ej:Column HeaderText="First Name" Template="#columnTemplate" TextAlign="Center" Width="110" />
@@ -483,7 +483,7 @@ You can modify the detailTemplate of exporting files using server events. The co
 
 <ej:Grid ID="EmployeesGrid" runat="server" DetailsTemplate="#tabGridContents" OnServerExcelDetailTemplateInfo="EmployeesGrid_ServerExcelDetailTemplateInfo" OnServerWordDetailTemplateInfo="EmployeesGrid_ServerWordDetailTemplateInfo" OnServerPdfDetailTemplateInfo="EmployeesGrid_ServerPdfDetailTemplateInfo" OnServerExcelExporting="EmployeesGrid_ServerExcelExporting" OnServerWordExporting="EmployeesGrid_ServerWordExporting" OnServerPdfExporting="EmployeesGrid_ServerPdfExporting">
       <Columns>
-         <ej:Column Field="EmployeeID" HeaderText="Employee ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+         <ej:Column Field="EmployeeID" HeaderText="Employee ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
          <ej:Column Field="FirstName" HeaderText="First Name" Width="100" />
          <ej:Column Field="Title" HeaderText="Title" Width="120" />
          <ej:Column Field="City" HeaderText="City" Width="100" />
