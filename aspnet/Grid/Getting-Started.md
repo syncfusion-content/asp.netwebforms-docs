@@ -84,7 +84,7 @@ The Paging feature in Grid offers complete navigation support to easily switch
 
 <ej:Grid ID="FlatGrid" runat="server" DataSourceID="SqlData" AllowPaging="true">
     <Columns>
-       <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+       <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
        <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
        <ej:Column Field="ShipName" HeaderText="Ship Name" Width="100" />
        <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
@@ -113,7 +113,7 @@ To enable filtering, use the AllowFiltering property of Grid as follows.
 
 <ej:Grid ID="FlatGrid" runat="server" DataSourceID="SqlData" AllowPaging="true" AllowFiltering="true">
     <Columns>
-        <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+        <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
         <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
         <ej:Column Field="ShipName" HeaderText="Ship Name" Width="100" />
         <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
@@ -151,7 +151,7 @@ To enable grouping, use the AllowGrouping property of Grid as follows.
          AllowPaging="true" AllowFiltering="true" AllowGrouping="true">
     <Columns>
         <ej:Column Field="OrderID" HeaderText="Order ID" 
-            IsPrimaryKey="True" TextAlign="Right" Width="75" />
+            IsPrimaryKey="true" TextAlign="Right" Width="75" />
         <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
         <ej:Column Field="ShipName" HeaderText="Ship Name" Width="100" />
         <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
@@ -187,7 +187,7 @@ The following code example shows how you can enable ShowSummary.
 
 <ej:Grid ID="FlatGrid" runat="server" DataSourceID="SqlData" AllowPaging="true" AllowFiltering="true" AllowGrouping="true" ShowSummary="true">
     <Columns>
-        <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+        <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
         <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
         <ej:Column Field="ShipName" HeaderText="Ship Name" Width="100" />
         <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" />
