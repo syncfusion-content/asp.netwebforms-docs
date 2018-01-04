@@ -74,7 +74,7 @@ You can use the following code example to use WebMethod adaptor.
 {% tabs %} 
 {% highlight html %}
 
-        <ej:Grid ID="EmployeesGrid2" runat="server" AllowPaging="True">
+        <ej:Grid ID="EmployeesGrid2" runat="server" AllowPaging="true">
           <DataManager URL="Default.aspx/DataSource" Adaptor="WebMethodAdaptor" />
             <Columns>
                 <ej:Column Field="OrderID" />
@@ -177,7 +177,7 @@ You can use the following code example to use OData adaptor.
 {% tabs %} 
 {% highlight html %}
 
-     <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
+     <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true">
          <DataManager URL=http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/ Adaptor="ODataAdaptor></DataManager>   
            <Columns>
                 <ej:Column Field="OrderID" />
@@ -205,7 +205,7 @@ You can use the following code example to use ODataV4 adaptor.
 {% tabs %} 
 {% highlight html %}
 
-        <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
+        <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true">
             <DataManager URL= http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/ Adaptor="ODataAdaptor></DataManager>   
               <Columns>
                   <ej:Column Field="OrderID" />
@@ -233,7 +233,7 @@ You can use the following code example to use WebAPI adaptor.
 {% tabs %} 
 {% highlight html %}
 	
-        <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
+        <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true">
             <DataManager URL=http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/ Adaptor="WebApiAdaptor></DataManager>   
                <Columns>
                    <ej:Column Field="OrderID" />
@@ -282,11 +282,11 @@ You can use the following code example to use RemoteSave adaptor.
 {% tabs %} 
 {% highlight html %}
     
-       <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True"> 
-            <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"></EditSettings>
-            <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+       <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true"> 
+            <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
+            <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
             <Columns>
-                <ej:Column Field="OrderID" IsPrimaryKey="True" />
+                <ej:Column Field="OrderID" IsPrimaryKey="true" />
                 <ej:Column Field="EmployeeID" />
                 <ej:Column Field="CustomerID" />
                 <ej:Column Field="ShipCountry" />
