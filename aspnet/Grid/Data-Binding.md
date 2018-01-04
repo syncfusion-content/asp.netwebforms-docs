@@ -78,7 +78,7 @@ The following code example describes the above behavior.
 
 {% tabs %} 
 {% highlight html %}
-<ej:Grid ID="EmployeesGrid" runat="server" DataSourceID="ObjectData" AllowSorting="True">
+<ej:Grid ID="EmployeesGrid" runat="server" DataSourceID="ObjectData" AllowSorting="true">
             <Columns>                
                 <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="100" />
                 <ej:Column Field="FirstName" HeaderText="First Name" Width="100" />
@@ -377,7 +377,7 @@ The following code example describes the above behavior.
 {% tabs %} 
 {% highlight html %}
 
-<ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+<ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
 </ej:Grid>
 
 {% endhighlight %} 
@@ -447,7 +447,7 @@ The following code example describes the above behavior.
 {% tabs %} 
 {% highlight html %}
 
-<ej:Grid ID="FlatGrid" runat="server"  AllowGrouping="true" AllowPaging="True">
+<ej:Grid ID="FlatGrid" runat="server"  AllowGrouping="true" AllowPaging="true">
 </ej:Grid>
 
 {% endhighlight %} 
@@ -539,7 +539,7 @@ The following code example describes the above behavior.
 
 {% tabs %} 
 {% highlight html %}
-<ej:Grid ID="EmployeesGrid2" runat="server" AllowPaging="True">
+<ej:Grid ID="EmployeesGrid2" runat="server" AllowPaging="true">
         <DataManager URL="WebService.asmx/Get" Adaptor="WebMethodAdaptor" />
         <Columns>
             <ej:Column Field="OrderID" />
@@ -572,7 +572,7 @@ The following code example describes the above behavior.
 
 {% tabs %} 
 {% highlight html %}
-<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true">
  <DataManager URL="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/"></DataManager>   
 <Columns>
                 <ej:Column Field="OrderID" />
@@ -600,7 +600,7 @@ The following code example describes the above behavior.
 
 {% tabs %} 
 {% highlight html %}
-<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true">
 <DataManager URL="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/"  Adaptor="ODataV4Adaptor"></DataManager>   
 <Columns>
                 <ej:Column Field="OrderID" />
@@ -629,7 +629,7 @@ The following code example describes the above behavior.
 
 {% tabs %} 
 {% highlight html %}
-<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true">
     <DataManager URL="/api/Orders/"  Adaptor="WebApiAdaptor"></DataManager>   
 <Columns>
                 <ej:Column Field="OrderID" />
@@ -761,7 +761,7 @@ The following code example describes the above behavior.
 {% tabs %} 
 {% highlight html %}
 
-<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true">
             <DataManager URL="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/"></DataManager>   
 <Columns>
                 <ej:Column Field="OrderID" />
@@ -792,7 +792,7 @@ The following code example describes the above behavior.
 {% tabs %} 
 {% highlight html %}
 
-<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true">
             <DataManager URL="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/" Offline="true"></DataManager>   
 <Columns>
                 <ej:Column Field="OrderID" />
