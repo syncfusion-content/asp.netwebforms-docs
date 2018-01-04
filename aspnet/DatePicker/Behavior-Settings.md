@@ -78,7 +78,7 @@ Refer below code example to represent DatePicker as calendar.
 
 {% highlight html %}
 
-    <ej:DatePicker ID="daterange1" runat="server" DisplayInline="True"></ej:DatePicker>
+    <ej:DatePicker ID="daterange1" runat="server" DisplayInline="true"></ej:DatePicker>
 
 {% endhighlight %}
 
