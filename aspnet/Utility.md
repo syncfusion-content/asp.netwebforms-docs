@@ -18,7 +18,7 @@ The Syncfusion ASP.NET Utilities provide quick access to create or configure the
 
 ## Project Conversion
 
-Syncfusion provides the Project Conversion add-on with Visual Studio, which will converts an existing ASP.NET project into a Syncfusion ASP.NET (EJWEB) project by adding the required assemblies and resource files.
+Syncfusion provides the Project Conversion add-on with Visual Studio that will converts an existing ASP.NET project into a Syncfusion ASP.NET (EJWEB) project by adding the required assemblies and resource files.
 
 I>	The Syncfusion ASP.NET Web Application Project Conversion utility is available from v13.1.0.30.
 
@@ -28,7 +28,7 @@ The following steps direct you to use the Syncfusion Project Conversion in the e
 
 1. Open an existing Microsoft ASP.NET Project or create a new Microsoft ASP.NET Project.
 
-2. Right-click on **Project** from Solution Explorer and select **Syncfusion VS Extensions** and choose the **Convert to Syncfusion ASP.NET Application**. Refer to the following screenshot for more information.
+2. Right-click the **Project** from Solution Explorer and select **Syncfusion VS Extensions**, then choose the **Convert to Syncfusion ASP.NET Application**. Refer to the following screenshot for more information.
 
    ![](Utility_images/Project-Conversion_img1.jpeg)
 
@@ -42,17 +42,17 @@ The following configurations are used in the Project Conversion Wizard.
 
    Choose the assembly location:
 
-   * Added From GAC - Refer to the assemblies from Global Assembly Cache. 
+   * Added From GAC: Refer to the assemblies from Global Assembly Cache.
 
-   * Added from Installed Location - Refer to the assemblies from Syncfusion Installed locations.
+   * Added from Installed Location: Refer to the assemblies from Syncfusion Installed locations.
 
-   * Add Referenced Assemblies to Solution - Copy and refer to the assemblies from project's solution file lib directory.     
+   * Add Referenced Assemblies to Solution: Copy and refer to the assemblies from project's solution file lib directory.
    
    ![](Utility_images/Project-Conversion_img3.jpeg)
    
    **Choose the Theme:**
    
-   The master page of project will be updated based on selected theme. The Theme Preview section shows the controls preview before convert into a Syncfusion project
+   The master page of project will be updated based on the selected theme. The Theme Preview section shows the controls preview before converting to a Syncfusion project
    
    ![](Utility_images/Project-Conversion_img4.jpeg)
 
@@ -66,13 +66,13 @@ The following configurations are used in the Project Conversion Wizard.
     
    The localization culture files will be shipped into Scripts\ej\i18n directory of the project.
 
-   ![](Utility_images/Project-Conversion_img14.jpeg)   
+   ![](Utility_images/Project-Conversion_img14.jpeg)
 
 4. Choose the required controls from Components section and Click the **Convert** button to convert it into a Syncfusion Project.
 
    ![](Utility_images/ProjectConversion_img5.jpg)
    
-   The **Project Backup** dialog will be opened. If click Yes it will backup the current project before converting it to Syncfusion project. If click No it will convert the project to Syncfusion project without backup. 
+   The **Project Backup** dialog will be opened. Click Yes to backup the current project before converting it to Syncfusion project, and click No to convert the project to Syncfusion project without backup.
    
    ![](Utility_images/Project-Conversion_img6.jpg)
 
@@ -87,38 +87,38 @@ The following configurations are used in the Project Conversion Wizard.
 
 ### Rendering Control after Syncfusion ASP.NET Conversion
 
-Once you converted your ASP.NET Project to Syncfusion ASP.NET Project using Syncfusion Visual Studio Extension, Perform the following steps to render the Syncfusion controls to your project.
+Once you converted your ASP.NET Project to Syncfusion ASP.NET Project using Syncfusion Visual Studio Extension, perform the following steps to render the Syncfusion controls to your project.
 
-1. The CSS, Scripts, Syncfusion References and required Web.config file entries are added to your project by the Syncfusion ASP.NET Conversion.  
+1. The CSS, Scripts, Syncfusion References, and required Web.config file entries are added to your project by the Syncfusion ASP.NET Conversion.
 
-2. Add the required CSS and Script files references in master page (Site.Master file) of the project. Please refer to the below screenshot for more information.
+2. Add the required CSS and Script files references in master page (Site.Master file) of the project. Refer to the following screenshot for more information.
 
    ![](Utility_images\Project-Conversion_img10.jpeg)
    
-3. Now, include the Syncfusion controls to your project. Refer the following screenshot for more information.
+3. Now, include the Syncfusion controls to your project. Refer to the following screenshot for more information.
 
    ![](Utility_images\Project-Conversion_img11.jpeg)
 
-4. Run the project and the following output will be displayed.
+4. Run the project, and the following output will be displayed.
 
    ![](Utility_images\Project-Conversion_img12.jpeg)
 
 
-## Project Migration 
+## Project Migration
 
-Syncfusion provides the Project Migration add-on with the Visual Studio, which will easily migrate the existing Syncfusion ASP.NET project from one Essential Studio version to another version.
+Syncfusion provides the Project Migration add-on with the Visual Studio that will easily migrate the existing Syncfusion ASP.NET project from one Essential Studio version to another version.
 
 I>	The Syncfusion ASP.NET Web Application Project Migration utility is available from v13.1.0.30.
 
 ### Migrate Syncfusion Project 
 
-The following steps direct you to migrate your existing Syncfusion ASP.NET application. 
+The following steps direct you to migrate your existing Syncfusion ASP.NET application.
 
-1. Right-click on **Syncfusion ASP.NET Project** from Solution Explorer and select **Syncfusion VS Extensions**. Choose **Migrate the Project to Another version**
+1. Right-click the **Syncfusion ASP.NET Project** from Solution Explorer and select **Syncfusion VS Extensions**. Then choose **Migrate the Project to Another version**.
 
    ![](Utility_images/Project-Migration_img1.jpeg)
 
-2. The **Project Migration** window appears. You can choose the required Essential Studio version that is installed in the machine. 
+2. The **Project Migration** window appears. Choose the required Essential Studio version that has to be installed in the machine.
 
    ![](Utility_images/Project-Migration_img2.jpeg)
 
@@ -128,61 +128,61 @@ The following steps direct you to migrate your existing Syncfusion ASP.NET appli
    
    ii. **Assemblies From:** Choose the assembly location from where it is going to be added to the project.
    
-4. Click the Migrate Button. The **Project Backup** dialog will be opened. If click Yes it will backup the current project before migrate the Syncfusion project. If click No it will migrate the project to required Syncfusion version without backup
+4. Click the Migrate Button. The **Project Backup** dialog will be opened. Click Yes to backup the current project before migrating to the Syncfusion project, and click No to migrate the project to required Syncfusion version without backup.
    
    ![](Utility_images/Project-Migration_img3.jpeg)
    
    
-5. The Syncfusion Reference Assemblies, Scripts and CSS are updated to the corresponding version in the project.
+5. The Syncfusion Reference Assemblies, Scripts, and CSS are updated to the corresponding version in the project.
 
 
 ## Sample Creator
 
-Syncfusion provides support for Sample Creator utility, which allows you to create Syncfusion ASP.NET Projects along with the samples based on Controls and Features selection.
+Syncfusion provides support for Sample Creator utility that allows you to create Syncfusion ASP.NET Projects along with the samples based on Controls and Features selection.
 
 ### Create Syncfusion ASP.NET Web Project from Sample Creator
 
-Sample Creator can be download from the Syncfusion Dashboard. After installing the complete Essential Studio suite or ASP.NET setup, following below steps help you to create the Syncfusion ASP.NET Project via the Sample Creator utility.
+Sample Creator can be downloaded from the Syncfusion Dashboard. After installing the complete Essential Studio suite or ASP.NET setup, the following steps will help you to create the Syncfusion ASP.NET Project via the Sample Creator utility.
 
-1. Launch the Syncfusion Essential Studio Dashboard and select the ASP.NET platform. Select the **Sample Creator** button to launch the ASP.NET Sample Creator Wizard. Refer the following screenshot for more information.
+1. Launch the Syncfusion Essential Studio Dashboard and select the ASP.NET platform. Then, select the **Sample Creator** button to launch the ASP.NET Sample Creator Wizard. Refer to the following screenshot for more information.
 
    ![](Sample-Creator_images/SampleCreator_img1.jpeg)
 
-2. Syncfusion Sample Creator Wizard displaying the **Controls and its Feature Selection** section
+2. Syncfusion Sample Creator Wizard displays the **Controls and its Feature Selection** section.
 
    ![](Sample-Creator_images/SampleCreator_img2.jpeg)
 
 
-#### Controls Selection
+#### Controls selection
 
 Listed here are the Syncfusion ASP.NET controls so you can choose the required controls.
 
    ![](Sample-Creator_images/SampleCreator_img3.jpeg)
 
-#### Feature Selection
+#### Feature selection
 
 Based on the controls, the Feature is enabled to choose the features of the corresponding controls.
 
    ![](Sample-Creator_images/SampleCreator_img4.jpeg)
 
 
-#### Project Configuration
+#### Project configuration
 
 1. You can configure the following project details in the Sample Creator.
 
-   * Project Type – Select the type of ASP.NET Project, either Web Application or Web Site.
+   * Project Type: Select the type of ASP.NET Project, it can be either Web Application or Web Site.
 
-   * Language – Select the language, either C# or VB.
+   * Language: Select the language, either C# or VB.
 
-   * VS Version – Choose the Visual Studio version.
+   * VS Version: Choose the Visual Studio version.
 
-   * .NET Framework – Choose the .NET Framework version.
+   * .NET Framework: Choose the .NET Framework version.
 
-   * Name – Name your Syncfusion ASP.NET Application.
+   * Name: Name your Syncfusion ASP.NET Application.
 
-   * Location – Choose the target location of your project.
+   * Location: Choose the target location of your project.
 
-   * Theme Selection – Choose the required theme.The Theme Preview section shows the controls preview before create the Syncfusion project.
+   * Theme Selection: Choose the required theme. The Theme Preview section shows the controls preview before creating the Syncfusion project.
 
    ![](Sample-Creator_images/SampleCreator_img6.jpeg)
 
@@ -201,11 +201,11 @@ Based on the controls, the Feature is enabled to choose the features of the corr
 
      ![](Sample-Creator_images/SampleCreator_img9.jpeg)
 
-   * Configure the Web.Config file by adding the Syncfusion reference assemblies, namespaces and controls.
+   * Configure the Web.Config file by adding the Syncfusion reference assemblies, namespaces, and controls.
 
      ![](Sample-Creator_images/SampleCreator_img10.jpeg)
 
-3. Once the project is created you can open the project by clicking the Yes button. If you click No button the corresponding location of the project will be opened. Refer the following screenshot for more information.
+3. Once the project is created, open the project by clicking the Yes button. If you click No button, the corresponding location of the project will be opened. Refer to the following screenshot for more information.
 
    ![](Sample-Creator_images/SampleCreator_img11.jpeg)
 

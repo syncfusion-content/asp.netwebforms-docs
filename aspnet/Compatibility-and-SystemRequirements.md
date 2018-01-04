@@ -9,13 +9,13 @@ documentation: ug
 
 # Compatibility and System Requirements
 
-## Operating System:
+## Operating system:
 
 Our Syncfusion components are compatible with Windows OS.
 
 ## Web browsers
 
-Syncfusion components are also mostly compatible with all the major browsers that we use on these days, which includes the following - 
+Syncfusion components are also mostly compatible with all the major browsers that we are using these days. It includes the following:
 
 * Internet Explorer 8+
 * Microsoft Edge
@@ -24,9 +24,9 @@ Syncfusion components are also mostly compatible with all the major browsers tha
 * Opera 12 +
 * Safari 5 +
 
-## System Requirements
+## System requirements
 
-To work with Syncfusion ASP components, you need to install the following 
+To work with Syncfusion ASP components, you need to install the following:
 
 * **Visual Studio 2010** or higher
 * **.NET Framework version 4.0** or higher
