@@ -87,7 +87,7 @@ The following output is displayed as a result of the above code example.
 
 ### How to set isPrimaryKey for auto generated columns when editing is enabled:
 
-Using `DataBound` event, you can set `IsPrimaryKey` value as `True` by two ways. The following code example demonstrates the above behavior.
+Using `DataBound` event, you can set `IsPrimaryKey` value as `true` by two ways. The following code example demonstrates the above behavior.
 
 1. If primary key "column index" is known then refer the following code example
 
@@ -481,7 +481,7 @@ The following output is displayed as a result of the above code example.
 
 ## Reorder
 
-Reordering can be done by drag and drop the particular column header from one index to another index within the Grid. Reordering can be enabled by setting `AllowReordering` property as `True`.
+Reordering can be done by drag and drop the particular column header from one index to another index within the Grid. Reordering can be enabled by setting `AllowReordering` property as `true`.
 
 The following code example describes the above behavior.
 
@@ -523,7 +523,7 @@ The following output is displayed as a result of the above code example.
 
 ## Visibility
 
-You can hide particular column in Grid view by setting `Visible` property of it as `False`.
+You can hide particular column in Grid view by setting `Visible` property of it as `false`.
 
 The following code example describes the above behavior.
 
@@ -730,7 +730,7 @@ namespace WebSampleBrowser.Grid
 
 ## Read only
 
-To make a column as "read-only" then set `AllowEditing` property of `Columns` as `False`.
+To make a column as "read-only" then set `AllowEditing` property of `Columns` as `false`.
 
 The following code example describes the above behavior.
 
@@ -968,9 +968,9 @@ The following output is displayed as a result of the above code example.
 
 ## Column Chooser
 
-Column chooser contains the list of all the columns which are defined in the `Columns` property. Using this you can control the visibility of columns in Grid. You can prevent to show the particular column name in column chooser by setting `ShowInColumnChooser` property of `Columns` as `False`. 
+Column chooser contains the list of all the columns which are defined in the `Columns` property. Using this you can control the visibility of columns in Grid. You can prevent to show the particular column name in column chooser by setting `ShowInColumnChooser` property of `Columns` as `false`. 
 
-Column Chooser would be shown in the top right corner of Grid. To enable column chooser, set `ShowColumnChooser` property as `True`. 
+Column Chooser would be shown in the top right corner of Grid. To enable column chooser, set `ShowColumnChooser` property as `true`. 
 
 The following code example describes the above behavior.
 
