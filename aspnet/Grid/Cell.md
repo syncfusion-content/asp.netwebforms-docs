@@ -22,7 +22,7 @@ Three types of `WrapMode` are available and they are,
  
 N> 1. By default the `WrapMode` will be set as `Both`. 
 
-N> 2. While using `TextWrapSettings` then it is must to set `AllowTextWrap` as `True`.
+N> 2. While using `TextWrapSettings` then it is must to set `AllowTextWrap` as `true`.
  
 ## Both
 
@@ -170,7 +170,7 @@ The following output is displayed as a result of the above code example.
 
 ## Cell Merging
 
-The Grid has options to merge the Grid cells based on the required conditions. This can be enabled by setting `AllowCellMerging` property as `True` and the merge conditions can be defined in `MergeCellInfo` event. In this event, you can get the column details and data of that particular row and column which is helpful in defining conditions. 
+The Grid has options to merge the Grid cells based on the required conditions. This can be enabled by setting `AllowCellMerging` property as `true` and the merge conditions can be defined in `MergeCellInfo` event. In this event, you can get the column details and data of that particular row and column which is helpful in defining conditions. 
 
 You can merge the rows and cells of grid, using `rowMerge`, `colMerge` and `merge` functions available in `MergeCellInfo` event's argument.
 
