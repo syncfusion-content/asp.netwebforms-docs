@@ -22,7 +22,7 @@ The following code example shows auto-generate columns behavior.
 {% tabs %}
 {% highlight html %}
   	<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-       <ej:Grid id="FlatGrid"  runat="server"  AllowPaging="True">
+       <ej:Grid id="FlatGrid"  runat="server"  AllowPaging="true">
        </ej:Grid>
      </asp:Content>          
 {% endhighlight  %}
@@ -94,9 +94,9 @@ Using `DataBound` event, you can set `IsPrimaryKey` value as `true` by two ways.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True" >
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" >
        <ClientSideEvents Databound="dataBound" />
-       <EditSettings AllowEditing="True"></EditSettings>
+       <EditSettings AllowEditing="true"></EditSettings>
     </ej:Grid>
 </asp:Content>
 {% endhighlight  %}
@@ -132,9 +132,9 @@ namespace WebSampleBrowser.Grid
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True" >
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" >
        <ClientSideEvents Databound="dataBound" />
-        <EditSettings AllowEditing="True"></EditSettings>
+        <EditSettings AllowEditing="true"></EditSettings>
     </ej:Grid>
 </asp:Content>
 {% endhighlight  %}
@@ -177,7 +177,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="OrderID" HeaderText="Order ID" />
             <ej:Column Field="EmployeeID" HeaderText="Emp ID" />
@@ -222,7 +222,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="OrderID" HeaderText="Order ID" />
             <ej:Column Field="EmployeeID" HeaderText="Emp ID"  HeaderTextAlign = "Right" />
@@ -267,7 +267,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="OrderID" HeaderText="Order ID" />
             <ej:Column Field="EmployeeID" HeaderText="Emp ID" HeaderTemplateID="#empTemplate" />
@@ -321,7 +321,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="OrderID" TextAlign="Right" />
             <ej:Column Field="EmployeeID" TextAlign="Right" />
@@ -364,7 +364,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="OrderID" />
             <ej:Column Field="EmployeeID" />
@@ -405,7 +405,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="OrderID" Width="10%" />
             <ej:Column Field="EmployeeID" Width="15%" />
@@ -448,7 +448,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True" AllowResizeToFit="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" AllowResizeToFit="true">
         <Columns>
             <ej:Column Field="OrderID" Width="100" />
             <ej:Column Field="EmployeeID" />
@@ -489,7 +489,7 @@ The following code example describes the above behavior.
 {% highlight html %}
 </asp:Content>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True"  AllowReordering="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true"  AllowReordering="true">
         <Columns>
             <ej:Column Field="OrderID" />
             <ej:Column Field="EmployeeID"  />
@@ -530,10 +530,10 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="EmployeeID" />
-            <ej:Column Field="OrderID" Visible="False" />
+            <ej:Column Field="OrderID" Visible="false" />
             <ej:Column Field="Freight" />
             <ej:Column Field="ShipCity" />
             <ej:Column Field="ShipCountry" />
@@ -573,10 +573,10 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <EditSettings AllowDeleting="True"></EditSettings>
         <Columns>
-            <ej:Column Field="OrderID" IsPrimaryKey="True" />
+            <ej:Column Field="OrderID" IsPrimaryKey="true" />
             <ej:Column Field="CustomerID" />
             <ej:Column Field="EmployeeID" />
             <ej:Column Field="Freight" />
@@ -627,7 +627,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <PageSettings PageSize="4"></PageSettings>
         <Columns>
             <ej:Column HeaderText="Photo" Template="<img style='width: 75px; height: 70px' src='/13.2.0.29/themes/web/images/employees/{{:EmployeeID}}.png' alt='{{:EmployeeID}}.png' />" TextAlign="Center" />
@@ -700,11 +700,11 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True" AllowFiltering="true" AllowGrouping="true" AllowSorting="true" AllowResizing="true">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" AllowFiltering="true" AllowGrouping="true" AllowSorting="true" AllowResizing="true">
         <EditSettings AllowEditing="True"></EditSettings>
         <Columns>
-            <ej:Column Field="OrderID" IsPrimaryKey="True" />
-            <ej:Column Field="EmployeeID" AllowEditing="True" AllowGrouping="true" AllowFiltering="true" AllowSorting="true" AllowResizing="true" />
+            <ej:Column Field="OrderID" IsPrimaryKey="true" />
+            <ej:Column Field="EmployeeID" AllowEditing="true" AllowGrouping="true" AllowFiltering="true" AllowSorting="true" AllowResizing="true" />
             <ej:Column Field="Freight" />
             <ej:Column Field="ShipCity" />
             <ej:Column Field="ShipCountry" />
@@ -737,11 +737,11 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <EditSettings AllowEditing="True"></EditSettings>
         <Columns>
-            <ej:Column Field="OrderID" IsPrimaryKey="True" />
-            <ej:Column Field="EmployeeID" AllowEditing="False" />
+            <ej:Column Field="OrderID" IsPrimaryKey="true" />
+            <ej:Column Field="EmployeeID" AllowEditing="false" />
             <ej:Column Field="Freight" />
             <ej:Column Field="ShipCity" />
             <ej:Column Field="ShipCountry" />
@@ -783,8 +783,8 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
-        <EditSettings AllowEditing="True"></EditSettings>
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
+        <EditSettings AllowEditing="true"></EditSettings>
         <Columns>
             <ej:Column Field="FoodName" />
             <ej:Column Field="Protein" />
@@ -863,10 +863,10 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
-        <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"></EditSettings>
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
+        <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
         <Columns>
-            <ej:Column Field="OrderID" IsPrimaryKey="True" />
+            <ej:Column Field="OrderID" IsPrimaryKey="true" />
             <ej:Column Field="EmployeeID" />
             <ej:Column Field="Freight" />
             <ej:Column Field="ShipCountry" />
@@ -921,8 +921,8 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
-        <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"></EditSettings>
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
+        <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
         <Columns>
             <ej:Column Field="EmployeeID" />
             <ej:Column HeaderText="Employee Details" Width="130" TextAlign="Center">
@@ -977,7 +977,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True" ShowColumnChooser="true">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" ShowColumnChooser="true">
         <Columns>
             <ej:Column Field="OrderID" HeaderText="Order ID" />
             <ej:Column Field="EmployeeID" HeaderText="Employee Name" ShowInColumnChooser="false" />
@@ -1024,8 +1024,8 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
-	  <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"></EditSettings>
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
+	  <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
         <Columns>
             <ej:Column Field="OrderID" HeaderText="Order ID" />
             <ej:Column Field="EmployeeID" HeaderText="Employee Name" ForeignKeyField="EmployeeID"
@@ -1156,7 +1156,7 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="OrderID" />
             <ej:Column Field="CustomerID" />
@@ -1243,7 +1243,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="OrderID" />
             <ej:Column Field="CustomerID" Type="string" />
@@ -1284,7 +1284,7 @@ You can set the Grid's columns layout based on either Grid width or its columns 
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True" ColumnLayout="Fixed">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" ColumnLayout="Fixed">
         <Columns>
             <ej:Column Field="OrderID" Width="80" />
             <ej:Column Field="EmployeeID" Width="80" />
