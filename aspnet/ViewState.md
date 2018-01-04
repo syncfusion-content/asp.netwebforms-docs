@@ -10,16 +10,16 @@ documentation: ug
 
 # View State 
 
-View State is the method that the ASP.NET page Framework uses to preserve page and control values between round trips. When the HTML markup for the page is rendered, the current state of the page and values that must be retained during postback.
+View State is the method that the ASP.NET page Framework uses to preserve page and control values between round trips. When the HTML markup for the page is rendered, the current state of the page and values should be retained during postback.
 
-Syncfusion controls can maintain theirs values even after form post or browser refresh by using EnablePersistence property. 
+Syncfusion controls can maintain their values even after form post or browser refresh by using the EnablePersistence property.
 
-Sustain the entire widget model of EJWEB DatePicker even after form post or browser refresh by using EnablePersistence property. So the entire model values such as
+Sustain the entire widget model of EJWEB DatePicker even after form post or browser refresh by using the EnablePersistence property. The entire model values are as follows:
 •	Selected date
 •	Highlighted date
 •	Start and depth level
 
-are stored in local storage / cookies of browser before page refreshes and reinitialized with the restored model after refresh.
+These are stored in local storage/cookies of browser before page refreshes, and reinitialized with the restored model after refresh.
 
 {% highlight html %}
 
@@ -29,7 +29,7 @@ are stored in local storage / cookies of browser before page refreshes and reini
 
 ## Maintain data bound values after post back
 
-By default behavior of Syncfusion DataSource controls such as DropDownList, Treeview, if DataSource is bound from code behind once on rendering the control. Then the control will lose its data binding on any post back actions. Because on postback control will be reinitialized and the datasource will not be set if it is bind page load event when postback is false. If you need to maintain the DataSource bound after postback, you have to use DataSourceCachingMode property with enum value ViewState or Session. This will maintain the data bound values in our controls after post back. 
+By default, behavior of the Syncfusion DataSource controls such as DropDownList, Treeview, if DataSource is bound from code behind once on rendering the control. Then the control will lose the data that is bound on any post back actions. Because on postback, the control will be reinitialized and the datasource will not be set if it is binding page load event when IsPostBack is false. If you need to maintain the DataSource bound after postback, you have to use DataSourceCachingMode property with enum value ViewState or Session. This will maintain the data bound values in our controls after post back.
 
 <table>
 <tr>
@@ -45,7 +45,7 @@ Description
 None
 </td>
 <td>
-DataSource object will not be maintained
+DataSource object will not be maintained.
 </td>
 </tr>
 <tr>
@@ -53,7 +53,7 @@ DataSource object will not be maintained
 ViewState
 </td>
 <td>
-DataSource object will be maintained using view state in client side
+DataSource object will be maintained using view state in client side.
 </td>
 </tr>
 <tr>
@@ -61,7 +61,7 @@ DataSource object will be maintained using view state in client side
 Session
 </td>
 <td>
-DataSource object will be maintained using session variable in server
+DataSource object will be maintained using session variable in server.
 </td>
 </tr>
 </table>
@@ -76,7 +76,7 @@ Let see an example, how to maintain the DataSource of DropDownList control after
 
 {% endhighlight %}
 
-Here data is bound only on initial page load and not on every post back. 
+Here data is bound only on initial page load and not on every post back.
 
 {% highlight c# %}
 
