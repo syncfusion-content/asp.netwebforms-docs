@@ -81,7 +81,7 @@ Map with selectionMode property
 ## Dragging On Selection
 
 This feature enables you to select the shapes by dragging over the shapes. While dragging over the shapes, a rectangle is generated and the shapes that come within the rectangle is selected.
-You can enable this feature by setting the property `DraggingOnSelection` in the `Layers` to **True**.
+You can enable this feature by setting the property `DraggingOnSelection` in the `Layers` to **true**.
 
 {% highlight js %}
 
@@ -207,7 +207,7 @@ Map with zoom
 
 Map shape is zoomed to the whole map area, on the shape selected. Animation can be applied for that zooming with the EnableAnimation property as true. 
 
-You can enable this feature by setting the EnableZoomOnSelection property value as ‘_True_’. 
+You can enable this feature by setting the EnableZoomOnSelection property value as ‘_true_’. 
 
 When EnableZoomOnSelection property is set to true, then zooming of the Map control is muted on double click.
 

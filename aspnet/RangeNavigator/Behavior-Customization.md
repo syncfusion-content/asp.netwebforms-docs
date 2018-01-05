@@ -16,7 +16,7 @@ RangeNavigator allows you to customize the control using events. You can change 
 If you set `EnableDeferredUpdate` to true, the `RangeChanged` event gets fired after dragging and dropping the slider. By default the EnableDeferredUpdate is true. If EnableDeferredUpdate is false then the RangeChanged event gets fired while dragging the slider. 
 
 {% highlight html %}
-<ej:RangeNavigator ID="RangeNavigator1" runat="server" EnableDeferredUpdate="True" >
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" EnableDeferredUpdate="true" >
 
 <%--Code --%>
 

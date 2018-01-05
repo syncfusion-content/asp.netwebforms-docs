@@ -349,7 +349,7 @@ The following screenshot displays customized TreeMap Appearance by Range.
 
 ### Enable Tooltip
 
-You can enable the tooltip by setting `ShowTooltip` to ‘True’. By default, it takes the property of the bound object that is referred in the `WeightValuePath` and displays its content when the corresponding node is hovered. You can customize the template for tooltip using `TooltipTemplate` property.
+You can enable the tooltip by setting `ShowTooltip` to ‘true’. By default, it takes the property of the bound object that is referred in the `WeightValuePath` and displays its content when the corresponding node is hovered. You can customize the template for tooltip using `TooltipTemplate` property.
 
 #### Leaf Item Settings
 
@@ -414,7 +414,7 @@ TreeMap with tooltip option
 
 You can set the color value of leaf nodes using TreeMap `LegendSettings`. This legend is appropriate only for the TreeMap whose leaf nodes are colored using `RangeColorMapping`.
 
-You can set `ShowLegend` property value to ‘True’ to make a Legend visible.
+You can set `ShowLegend` property value to ‘true’ to make a Legend visible.
 
 #### Label for Legend
 
