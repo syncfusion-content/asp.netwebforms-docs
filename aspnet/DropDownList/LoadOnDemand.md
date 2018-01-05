@@ -32,4 +32,4 @@ The loadOnDemand property is used to enable or disable the load on demand functi
 {% endhighlight %}
 
 
-![](LoadOnDemand/loadondemand.png)
+![](LoadOnDemand_images/loadondemand.png)
