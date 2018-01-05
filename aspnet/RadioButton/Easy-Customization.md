@@ -213,7 +213,7 @@ In the ASPX page, add the following button elements to configure Radio Button.
 
 {% endhighlight %}
 
-In the above mentioned code, the Text property has been used. In LTR format, the RadioButton is on the left side. In RTL format, the RadioButton appears on the right side. Here the Text property is used and the EnableRTL property is set as “True”. It changes the alignment to right-to-left.
+In the above mentioned code, the Text property has been used. In LTR format, the RadioButton is on the left side. In RTL format, the RadioButton appears on the right side. Here the Text property is used and the EnableRTL property is set as “true”. It changes the alignment to right-to-left.
 
 Configure the CSS styles to align the RadioButtons.
 
