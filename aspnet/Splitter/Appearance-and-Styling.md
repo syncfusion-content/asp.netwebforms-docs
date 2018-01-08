@@ -88,7 +88,7 @@ The output for Splitter when EnableAutoResize is “True”.
 
 
 
-The output for Splitter when EnableAutoResize is “False”.
+The output for Splitter when EnableAutoResize is “false”.
 
 
 
@@ -168,7 +168,7 @@ Defines the pane size in the Splitter control. The default value of PaneSize�
 
 #### Resizable
 
-Defines whether the pane in the Splitter is resizable or not. Setting the Resizable property as “False” disables the resize option to the pane. The default value of Resizable property is true in Splitter.
+Defines whether the pane in the Splitter is resizable or not. Setting the Resizable property as “false” disables the resize option to the pane. The default value of Resizable property is true in Splitter.
 
 The following steps explain the implementation of Splitter properties.
 

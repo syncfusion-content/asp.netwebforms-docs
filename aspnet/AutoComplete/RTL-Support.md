@@ -29,7 +29,7 @@ In the design page, define the AutoComplete control and configure the EnableRTL 
 
 
 
-The following screenshot is the output for AutoComplete when EnableRTL is set to True.
+The following screenshot is the output for AutoComplete when EnableRTL is set to true.
 
 ![](RTL-Support_images/RTL-Support_img1.png)
 
