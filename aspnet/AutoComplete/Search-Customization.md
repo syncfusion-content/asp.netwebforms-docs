@@ -11,7 +11,7 @@ documentation: ug
 
 ## HighlightSearch
 
-AutoComplete control allows you to highlight the search text in the AutoComplete suggestions list by using the HighlightSearch property. When this property is set to True, the suggestions list appears, with the search text it contains, highlighted.
+AutoComplete control allows you to highlight the search text in the AutoComplete suggestions list by using the HighlightSearch property. When this property is set to true, the suggestions list appears, with the search text it contains, highlighted.
 
 ### Enabling highlightSearch option
 
@@ -33,7 +33,7 @@ In the design page define the AutoComplete control and enable the HighlightSearc
 
 
 
-The following screenshot is the output for AutoComplete when HighlightSearch is set to True.
+The following screenshot is the output for AutoComplete when HighlightSearch is set to true.
 
 ![](Search-Customization_images/Search-Customization_img1.png)
 
@@ -41,7 +41,7 @@ The following screenshot is the output for AutoComplete when HighlightSearch is 
 
 ## Case sensitive Search
 
-AutoComplete allows you to enable case sensitivity, to filter the suggest list items based on the entered text casing. This property enables strict filtering of list items, based on entered text. To enable it, set CaseSensitiveSearch value as True. It is False, by default.
+AutoComplete allows you to enable case sensitivity, to filter the suggest list items based on the entered text casing. This property enables strict filtering of list items, based on entered text. To enable it, set CaseSensitiveSearch value as true. It is false, by default.
 
 ### Configure case sensitivity for AutoComplete
 
@@ -65,7 +65,7 @@ In the design page, define the AutoComplete control and enable the CaseSensitive
 
 
 
-The following screenshot is the output for AutoComplete when CaseSensitiveSearch is set to True.
+The following screenshot is the output for AutoComplete when CaseSensitiveSearch is set to true.
 
 ![](Search-Customization_images/Search-Customization_img2.png) 
 
