@@ -29,7 +29,7 @@ In the design page, add an AutoComplete element from ToolBox and set EnablePersi
 
 
 
-The following screenshot is the output for AutoComplete when EnablePersistence is set to True.
+The following screenshot is the output for AutoComplete when EnablePersistence is set to true.
 
 ![](State-Persistence_images/State-Persistence_img1.png)
 

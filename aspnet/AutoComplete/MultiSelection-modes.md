@@ -81,7 +81,7 @@ The following screenshot is the output for AutoComplete control with configured 
 
 ## Grouping
 
-AutoComplete control provides grouping support for the suggestions list based on the category specified in the dataSource. By default AllowGrouping is set to False. To enable grouping for your AutoComplete control, set the value to True.
+AutoComplete control provides grouping support for the suggestions list based on the category specified in the dataSource. By default AllowGrouping is set to false. To enable grouping for your AutoComplete control, set the value to true.
 
 ### Configuring Grouping for AutoComplete
 
