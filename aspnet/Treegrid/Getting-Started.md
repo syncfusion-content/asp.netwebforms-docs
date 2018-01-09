@@ -358,7 +358,7 @@ The TreeGrid control has sorting functionality, to arrange the data in ascending
 
 ### Multicolumn Sorting
 
-Enable the multicolumn sorting in TreeGrid by setting AllowMultiSorting as True. You can sort multiple columns in TreeGrid, by selecting the desired column header 	while holding the `CTRL` key.
+Enable the multicolumn sorting in TreeGrid by setting AllowMultiSorting as true. You can sort multiple columns in TreeGrid, by selecting the desired column header 	while holding the `CTRL` key.
 
 {% highlight html %}
 

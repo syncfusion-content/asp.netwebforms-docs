@@ -11,7 +11,7 @@ documentation: ug
 
 **MultiSelection**
 
-**ListView** has a checklist feature that is used to select multiple list items at the same time in the **ListView**. For this, set `EnableCheckMark` property to **“True”**.
+**ListView** has a checklist feature that is used to select multiple list items at the same time in the **ListView**. For this, set `EnableCheckMark` property to **“true”**.
 
 Refer the following code examples.
 
@@ -41,9 +41,9 @@ Run the codes to get the following output
 
 **PreventSelection**
 
-When selecting a specific list item, it is highlighted with an active color. `PreventSelection` property is used to prevent this behavior by setting it to **“True”**. 
+When selecting a specific list item, it is highlighted with an active color. `PreventSelection` property is used to prevent this behavior by setting it to **“true”**. 
 
-N> When the click or select action is completed, the highlight is undone automatically even when the  property is set to “False”.
+N> When the click or select action is completed, the highlight is undone automatically even when the  property is set to “false”.
 
 Refer the following code examples.
 
