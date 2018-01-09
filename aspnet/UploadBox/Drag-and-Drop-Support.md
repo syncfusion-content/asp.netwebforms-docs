@@ -19,7 +19,7 @@ The following screenshot displays the drag and drop support.
 
 ## Enable drag and drop 
 
-You can enable or disable drag and drop by using the AllowDragAndDrop property. By default, the AllowDragAndDrop property is set to False in the UploadBox control. You can enable drag and drop by setting the AllowDragAndDrop property to True. When you want to drag and drop multiple files, you can enable multiple file selection by setting MultipleFilesSelection to True in the UploadBox control.
+You can enable or disable drag and drop by using the AllowDragAndDrop property. By default, the AllowDragAndDrop property is set to false in the UploadBox control. You can enable drag and drop by setting the AllowDragAndDrop property to true. When you want to drag and drop multiple files, you can enable multiple file selection by setting MultipleFilesSelection to true in the UploadBox control.
 
 The following steps explain how to enable drag and drop in the UploadBox control.
 
@@ -170,7 +170,7 @@ You can click anywhere in the droppable area to browse and upload the files. The
 
 ### Droppable area behavior
 
-Enable the AllowDragAndDrop property to achieve this feature. Next, set the ShowBrowseButton to False in the UploadBox control.
+Enable the AllowDragAndDrop property to achieve this feature. Next, set the ShowBrowseButton to false in the UploadBox control.
 
 The following steps explains the droppable area containing the browse button behavior
 
