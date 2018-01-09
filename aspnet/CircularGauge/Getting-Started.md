@@ -360,7 +360,7 @@ Run the above code to get the following output.
 
 ### Add Range Values
 
-* Ranges denote the property of the scale value in the speedometer. The color values of the `Ranges` denote speed variation. Set `ShowRanges` as **True** for showing the ranges in the **Circular Gauge**.
+* Ranges denote the property of the scale value in the speedometer. The color values of the `Ranges` denote speed variation. Set `ShowRanges` as **true** for showing the ranges in the **Circular Gauge**.
 * For Low speed, you can mention it as safe zone; for moderate speed, you can call it as caution zone and for high speed, you can mark it as high speed.
 * You can customize the range with properties such as `StartValue`, `EndValue`, `StartWidth`, `EndWidth`, `BackgroundColor` , `Border` `Color`, `DistanceFromScale`,etc.,
 

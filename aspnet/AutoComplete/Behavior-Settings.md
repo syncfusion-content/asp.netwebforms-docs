@@ -43,7 +43,7 @@ The following screenshot is the output for AutoComplete control that filters the
 
 ## AutoFill
 
-The AutoComplete textbox control offers an AutoFill option. This feature is used to automatically fill the item when text is entered, when EnableAutoFill is set to True. The first Item in the suggestions list that matches the entered text is automatically displayed in the AutoComplete textbox. The search text is selected in the AutoComplete textbox for identification. 
+The AutoComplete textbox control offers an AutoFill option. This feature is used to automatically fill the item when text is entered, when EnableAutoFill is set to true. The first Item in the suggestions list that matches the entered text is automatically displayed in the AutoComplete textbox. The search text is selected in the AutoComplete textbox for identification. 
 
 This feature reduces the requirement to type the entire text and makes the search box more efficient. This can be used only with filterType “StartsWith”, since text is filled automatically, based on the text entered.
 
@@ -69,7 +69,7 @@ In the design page define the AutoComplete control and enable the AutoFill for i
 
 
 
-The following screenshot is the output for AutoComplete when EnableAutoFill is set to True.
+The following screenshot is the output for AutoComplete when EnableAutoFill is set to true.
 
 ![](Behavior-Settings_images/Behavior-Settings_img2.png)
 
@@ -77,7 +77,7 @@ The following screenshot is the output for AutoComplete when EnableAutoFill is s
 
 ## Sorting Items
 
-AutoComplete control allows you to sort the suggestions list items and set the sorting order. To enable sorting, set AllowSorting to True. It is enabled by default. The SortOrder property takes enum values, Ascending or Descending.
+AutoComplete control allows you to sort the suggestions list items and set the sorting order. To enable sorting, set AllowSorting to true. It is enabled by default. The SortOrder property takes enum values, Ascending or Descending.
 
 ### Steps to define sorting order
 
@@ -109,7 +109,7 @@ The following screenshot is the output for AutoComplete when “SortOrder” is 
 
 ## Distinct List items
 
-AutoComplete control provides an option to extract repeating items in the PopUp list. By setting EnableDistinct property to True, you can prevent the duplicate items in the suggestions list.
+AutoComplete control provides an option to extract repeating items in the PopUp list. By setting EnableDistinct property to true, you can prevent the duplicate items in the suggestions list.
 
 ### Steps to enable distinct items
 
@@ -163,7 +163,7 @@ EnableDistinct="true"/>
 
 
 
-The following screenshot is the output for AutoComplete when EnableDistinct is set to True.
+The following screenshot is the output for AutoComplete when EnableDistinct is set to true.
 
 ![](Behavior-Settings_images/Behavior-Settings_img4.png)
 
@@ -235,7 +235,7 @@ The following screenshot is the output for the AutoComplete textbox configured t
 
 ## Empty Result settings
 
-TheAutoComplete control allows you to configure the display message when the list doesn’t return any values. By default, ShowEmptyResultText is set to True and EmptyResultText is set to the string value “No suggestions_”._ 
+TheAutoComplete control allows you to configure the display message when the list doesn’t return any values. By default, ShowEmptyResultText is set to true and EmptyResultText is set to the string value “No suggestions_”._ 
 
 ### Configure Empty result setting
 

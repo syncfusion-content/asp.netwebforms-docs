@@ -180,7 +180,7 @@ The title, subtitle and indicator text can be overlapped to the scale group. You
 
 <ej:BulletGraph Value="8" ComparativeMeasureValue="8" Width="650" Height="150" runat="server">
 
-      <CaptionSettings Text="Bullet Graph Title" EnableTrim=True />
+      <CaptionSettings Text="Bullet Graph Title" EnableTrim=true />
 
 </ej:BulletGraph>
 

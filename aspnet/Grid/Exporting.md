@@ -477,7 +477,7 @@ You can modify the detailTemplate of exporting files using server events. The co
 {% highlight html %}
 
 <script id="tabGridContents" type="text/x-jsrender">
-    <b> More Details: </b> <br /><br /> <b class='detail'>Last Name</b> - {{:LastName}} <br /> <br /> <b class='detail'>Home Phone</b> - {{:HomePhone}} <br /> <br /> <b class='detail'>Exten No</b> - {{:Extension}}
+    <b> More Details: </b> <br /><br /> <b class='detail'>Last Name</b> - {{:LastName}} <br /> <br /> <b class='detail'>Home Phone</b> - {{:HomePhone}} <br /> <br /> <b class='detail'>Extension No</b> - {{:Extension}}
   
 </script>
 
