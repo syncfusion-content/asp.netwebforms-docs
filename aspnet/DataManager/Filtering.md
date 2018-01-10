@@ -447,7 +447,7 @@ This operator used to fetch the records with value not match with the given filt
 
 ### all
 
-The ALL operator returns TRUE if all the sub query values meet the condition. This operator used to fetch the records of the fields match with the given value’s fields.
+The ALL operator returns true if all the sub query values meet the condition. This operator used to fetch the records of the fields match with the given value’s fields.
 
 {% highlight html %}
 
@@ -486,7 +486,7 @@ The ALL operator returns TRUE if all the sub query values meet the condition. Th
 
 ### any
 
-The ANY operator returns TRUE if any of the sub query values meet the condition. The returned data match with any one of the field in existing table.
+The ANY operator returns true if any of the sub query values meet the condition. The returned data match with any one of the field in existing table.
 
 {% highlight html %}
 

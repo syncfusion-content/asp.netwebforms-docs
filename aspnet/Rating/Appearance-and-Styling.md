@@ -11,9 +11,9 @@ documentation: ug
 
 ## Show ToolTip
 
-Rating control provides support for Tooltip values. This is achieved by enabling the ShowTooltip property to True. When you 
+Rating control provides support for Tooltip values. This is achieved by enabling the ShowTooltip property to true. When you 
 move the mouse over the Rating control, it displays the Tooltip value as rating value. By default, this property value is set 
-to True.
+to true.
 
 Add the following code example to the corresponding ASPX to render the Rating with Tooltip.
 
