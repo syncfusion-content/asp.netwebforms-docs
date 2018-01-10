@@ -218,8 +218,8 @@ The following screenshot displays the output of the above code example.
 
 ## Resetting values
 
-EJ Rating control provides support for value reset at runtime. This is achieved by enabling the AllowReset property to be True. 
-By default, the property value is set to True.
+EJ Rating control provides support for value reset at runtime. This is achieved by enabling the AllowReset property to be true. 
+By default, the property value is set to true.
 
 Add the following code example to the corresponding ASPX page to render the Rating with AllowReset.
 
@@ -268,8 +268,8 @@ The following screenshot displays the output of the above code example.
 ## Read Only
 
 Rating control provides support for changeable or unchangeable values for Rating control. This is achieved by the ReadOnly 
-property. When this property is set to True, the Rating value becomes unchangeable. By default, this property value is set to 
-False.
+property. When this property is set to true, the Rating value becomes unchangeable. By default, this property value is set to 
+false.
 
 Add the following code example to the corresponding ASPX page to render Rating with ReadOnly.
 
@@ -304,7 +304,7 @@ The following screenshot displays the output of the above code example.
 ## Enable or Disable
 
 Rating control provides support to enable or disable the control. This is achieved by the Enabled property. By default, the 
-property value is True.
+property value is true.
 
 Add the following code example to the corresponding ASPX page to render the Rating with enable or disable support.
 
