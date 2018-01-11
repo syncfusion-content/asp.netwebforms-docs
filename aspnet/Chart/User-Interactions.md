@@ -298,7 +298,7 @@ Trackball is used to track a data point close to the mouse position or touch con
 
 ### Enable Trackball
 
-Trackball can be enabled by setting the *Visible* option of the crosshair to *True* and then set the **Type** as *Trackball*. The default value of type is *Crosshair*.
+Trackball can be enabled by setting the *Visible* option of the crosshair to *true* and then set the **Type** as *Trackball*. The default value of type is *Crosshair*.
 
 {% highlight html %}
 
@@ -386,7 +386,7 @@ You can able to show the trackball tooltip in two modes, using trackballTooltipS
 
 ## Highlight
 
-EjChart provides highlighting support for the series and data points on mouse hover. To enable the highlighting option, set the *Enable* property to *True* in the **HighlightSettings** of the series.
+EjChart provides highlighting support for the series and data points on mouse hover. To enable the highlighting option, set the *Enable* property to *true* in the **HighlightSettings** of the series.
 
 N> When hovering mouse on the data points, the corresponding series legend also will be highlighted.
 

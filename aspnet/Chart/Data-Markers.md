@@ -481,7 +481,7 @@ This feature is used to connect label and data point by using a line. It can be 
 
 ## SmartLabels
 
-Overlapping of the labels can be avoided by enabling the **EnableSmartLabels** property. The default value is *True* for *Accumulation type series* and *False* for *other series types*.
+Overlapping of the labels can be avoided by enabling the **EnableSmartLabels** property. The default value is *true* for *Accumulation type series* and *false* for *other series types*.
 
 The following code example shows how to enable smart labels,
 
