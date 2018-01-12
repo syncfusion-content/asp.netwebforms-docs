@@ -17,7 +17,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server" AllowSorting="True" AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowSorting="true" AllowPaging="true" >
            <Columns>
                 <ej:Column Field="OrderID" />
                 <ej:Column Field="EmployeeID" />
@@ -98,7 +98,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server" AllowSorting="True" AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowSorting="true" AllowPaging="true" >
            <SortedColumns><ej:SortedColumn Field="EmployeeID" Direction="Descending" /></SortedColumns>
            <Columns>
                 <ej:Column Field="OrderID" />
@@ -182,7 +182,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server" AllowSorting="True" AllowMultiSorting="True" AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowSorting="true" AllowMultiSorting="true" AllowPaging="true" >
            <SortedColumns><ej:SortedColumn Field="EmployeeID" Direction="Descending" />
            <ej:SortedColumn Field="CustomerID" />
            </SortedColumns>
@@ -270,7 +270,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server" AllowSorting="True" AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowSorting="true" AllowPaging="true" >
            <Columns>
                 <ej:Column Field="OrderID" />
                 <ej:Column Field="EmployeeID" />
@@ -363,7 +363,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server" AllowSorting="True" AllowMultiSorting="True" AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowSorting="true" AllowMultiSorting="true" AllowPaging="true" >
            <Columns>
                 <ej:Column Field="OrderID" />
                 <ej:Column Field="EmployeeID" />

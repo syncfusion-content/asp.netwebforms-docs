@@ -374,7 +374,7 @@ Row template is used to render your template in every row. It is used to place e
 {% endhighlight  %}
 {% highlight html %}
 
-<ej:Grid ID="Grid" runat="server" AllowScrolling="True" RowTemplate="#templateData">
+<ej:Grid ID="Grid" runat="server" AllowScrolling="true" RowTemplate="#templateData">
 
     <ScrollSettings Height="480" Width="500" />
 
@@ -527,7 +527,7 @@ EnableAltRow and EnableRowHover are graphical features in Grid that are used to 
 
 {% endhighlight  %}
 {% highlight html %}
-<ej:Grid ID="Grid" runat="server" AllowPaging="True" EnableAltRow="True" EnableRowHover="True">
+<ej:Grid ID="Grid" runat="server" AllowPaging="true" EnableAltRow="true" EnableRowHover="true">
 
     <PageSettings PageSize="5"></PageSettings>
 
@@ -570,10 +570,10 @@ The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight html %}
-<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowRowDragAndDrop="true" Selectiontype="Multiple">
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" AllowRowDragAndDrop="true" Selectiontype="Multiple">
             <RowDropSettings DropMapper="DragAndDrop.aspx/Reordering"/>
             <Columns>
-                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
                 <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
                 <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" />
                 <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />
@@ -636,11 +636,11 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <div style="float:left;width:49%">
-        <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowRowDragAndDrop="true" Selectiontype="Multiple">
+        <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" AllowRowDragAndDrop="true" Selectiontype="Multiple">
             <RowDropSettings DragMapper="DragAndDrop.aspx/GridDragHandler" DropMapper="DragAndDrop.aspx/GridDropHandler"/>
             <EditSettings AllowEditing="true"/>
             <Columns>
-                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
                 <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
                 <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" />
                 <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />
@@ -649,10 +649,10 @@ The following code example describes the above behavior.
         </ej:Grid>
             </div>
         <div style="float:right;width:49%">
-            <ej:Grid ID="EmployeeGrid" runat="server" AllowPaging="True" AllowRowDragAndDrop="true" Selectiontype="Multiple">
+            <ej:Grid ID="EmployeeGrid" runat="server" AllowPaging="true" AllowRowDragAndDrop="true" Selectiontype="Multiple">
                 <RowDropSettings DragMapper="DragAndDrop.aspx/EmployeeGridDragHandler" DropMapper="DragAndDrop.aspx/EmployeeGridDropHandler"/>
             <Columns>
-                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
                 <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
                 <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" />
                 <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />
@@ -758,10 +758,10 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight  html %}
 <div style="float:left;width:49%">
-<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowRowDragAndDrop="true" Selectiontype="Multiple">
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" AllowRowDragAndDrop="true" Selectiontype="Multiple">
             <ClientSideEvents RowDrop="rowDropHandler"/>
             <Columns>
-                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
                 <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
                 <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" />
                 <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />

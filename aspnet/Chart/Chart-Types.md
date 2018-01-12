@@ -1730,7 +1730,7 @@ Polar **DrawType** property is used to change the series plotting type to *Line*
 
 ### Stack columns in Polar chart
 
-By using the **IsStacking** property, you can specify whether the column has to be stacked when the DrawType is column. Its default value is **False**.
+By using the **IsStacking** property, you can specify whether the column has to be stacked when the DrawType is column. Its default value is **false**.
 
 {% highlight html %}
 
@@ -1794,7 +1794,7 @@ Radar **DrawType** property is used to change the series plotting type to *Line*
 
 ### Stack columns in Radar chart
 
-By using the **IsStacking** property, you can specify whether the column has to be stacked when the DrawType is set as Column. Its default value is set to *False*.
+By using the **IsStacking** property, you can specify whether the column has to be stacked when the DrawType is set as Column. Its default value is set to *false*.
 
 {% highlight html %}
 

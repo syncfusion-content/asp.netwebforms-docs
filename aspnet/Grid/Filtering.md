@@ -34,7 +34,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="true" >
            <Columns>
                 <ej:Column Field="OrderID" />
                 <ej:Column Field="EmployeeID"  />
@@ -119,7 +119,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="true" >
            <FilterSettings FilterType="Menu" />  
            <Columns>
                 <ej:Column Field="OrderID" />
@@ -214,7 +214,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="true" >
            <FilterSettings FilterType="Excel" />  
            <Columns>
                 <ej:Column Field="OrderID" />
@@ -300,7 +300,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="true" >
            <FilterSettings FilterType="Excel" MaxFilterChoices="4" /> 
             <Columns>
                 <ej:Column Field="OrderID" />
@@ -389,7 +389,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="true" >
            <FilterSettings FilterType="Excel" EnableCaseSensitivity="true" /> 
             <Columns>
                 <ej:Column Field="OrderID" />
@@ -608,7 +608,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="true" >
            <FilterSettings FilterType="FilterBar"  /> 
              <Columns>
                 <ej:Column Field="OrderID" />
@@ -696,8 +696,8 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowPaging="True" >
-            <FilterSettings ShowFilterBarStatus="True"  /> 
+           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="true" >
+            <FilterSettings ShowFilterBarStatus="true"  /> 
               <Columns>
                 <ej:Column Field="OrderID" />
                 <ej:Column Field="EmployeeID"  />
@@ -921,9 +921,9 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-        <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowPaging="True">
+        <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="true">
             <Columns>
-                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
                 <ej:Column Field="CustomerID" HeaderText="CustomerID" Width="80" >
                     <FilterBarTemplate Create="autoComplete_create" Write="autoComplete_write" Read ="autoComplete_read" />
                 </ej:Column>
