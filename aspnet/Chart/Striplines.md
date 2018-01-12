@@ -13,7 +13,7 @@ EjChart supports horizontal and vertical striplines.
 
 ## Horizontal Stripline
 
-You can create horizontal stripline by adding the **Stripline** in the *vertical axis* and set **Visible** option to *True*. Striplines are rendered in the specified **Start** to **End** range and you can add more than one stripline for an axis.
+You can create horizontal stripline by adding the **Stripline** in the *vertical axis* and set **Visible** option to *true*. Striplines are rendered in the specified **Start** to **End** range and you can add more than one stripline for an axis.
 
 
 {% highlight html %}
@@ -39,7 +39,7 @@ You can create horizontal stripline by adding the **Stripline** in the *vertical
 
 ## Vertical Stripline
 
-You can create vertical stripline by adding the Stripline in the *horizontal axis* and set Visible option to *True*.  
+You can create vertical stripline by adding the Stripline in the *horizontal axis* and set Visible option to *true*.  
 
 
 {% highlight html %}

@@ -22,7 +22,7 @@ Three types of `WrapMode` are available and they are,
  
 N> 1. By default the `WrapMode` will be set as `Both`. 
 
-N> 2. While using `TextWrapSettings` then it is must to set `AllowTextWrap` as `True`.
+N> 2. While using `TextWrapSettings` then it is must to set `AllowTextWrap` as `true`.
  
 ## Both
 
@@ -35,7 +35,7 @@ The following code example describes the above behavior.
 {% highlight html %}
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True"  AllowTextWrap="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true"  AllowTextWrap="true">
       <TextWrapSettings WrapMode="Both" />
         <Columns>
                 <ej:Column Field="OrderID"   Width="90" />
@@ -83,7 +83,7 @@ The following code example describes the above behavior.
 {% highlight html %}
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True"  AllowTextWrap="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true"  AllowTextWrap="true">
       <TextWrapSettings WrapMode="Header" />
         <Columns>
                 <ej:Column Field="OrderID"   Width="90" />
@@ -131,7 +131,7 @@ The following code example describes the above behavior.
 {% highlight html %}
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True"  AllowTextWrap="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true"  AllowTextWrap="true">
       <TextWrapSettings WrapMode="Content" />
         <Columns>
                 <ej:Column Field="OrderID"   Width="90" />
@@ -170,7 +170,7 @@ The following output is displayed as a result of the above code example.
 
 ## Cell Merging
 
-The Grid has options to merge the Grid cells based on the required conditions. This can be enabled by setting `AllowCellMerging` property as `True` and the merge conditions can be defined in `MergeCellInfo` event. In this event, you can get the column details and data of that particular row and column which is helpful in defining conditions. 
+The Grid has options to merge the Grid cells based on the required conditions. This can be enabled by setting `AllowCellMerging` property as `true` and the merge conditions can be defined in `MergeCellInfo` event. In this event, you can get the column details and data of that particular row and column which is helpful in defining conditions. 
 
 You can merge the rows and cells of grid, using `rowMerge`, `colMerge` and `merge` functions available in `MergeCellInfo` event's argument.
 
@@ -179,7 +179,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True" AllowCellMerging="true">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" AllowCellMerging="true">
         <ClientSideEvents MergeCellInfo="mergeCellInfo" />
         <Columns>
             <ej:Column Field="OrderID" />
@@ -237,7 +237,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="OrderID" />
             <ej:Column Field="CustomerID" />
@@ -288,7 +288,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="OrderID" />
             <ej:Column Field="CustomerID" HeaderText="<div>Customer ID</div>" disableHtmlEncode="true"/>
@@ -334,7 +334,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="OrderID" />
             <ej:Column Field="EmployeeID" />
@@ -391,7 +391,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
      <Columns>
             <ej:Column Field="OrderID" />
             <ej:Column Field="ShipCity" />
@@ -430,7 +430,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
      <Columns>
             <ej:Column Field="OrderID" />
             <ej:Column Field="ShipCity" />
@@ -472,7 +472,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
      <Columns>
             <ej:Column Field="OrderID" />
             <ej:Column Field="ShipCity" />

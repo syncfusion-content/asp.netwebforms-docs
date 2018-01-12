@@ -97,7 +97,7 @@ The following code example describes the above behavior.
 {% tabs %} 
 {% highlight razor %}
 
-        <ej:Grid ID="OrdersGrid" runat="server" AllowSearching="true" AllowPaging="True"> 
+        <ej:Grid ID="OrdersGrid" runat="server" AllowSearching="true" AllowPaging="true"> 
              <ToolbarSettings ShowToolbar="true" ToolbarItems="search"/>
              <SearchSettings Fields="CustomerID" Operator="Contains" Key="ra" IgnoreCase="false" />
              <Columns>                

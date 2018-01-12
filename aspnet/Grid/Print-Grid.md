@@ -16,7 +16,7 @@ Printing is easy with Grid control by using Print Grid feature. Toolbar has the 
 {% highlight html %}
 
 
-<ej:Grid ID="FlatGrid" runat="server" AllowSorting="True" AllowPaging="True">
+<ej:Grid ID="FlatGrid" runat="server" AllowSorting="true" AllowPaging="true">
 
             <ToolbarSettings ShowToolbar="true" ToolbarItems="printGrid"></ToolbarSettings>
 
