@@ -27,9 +27,9 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
-           <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"></EditSettings>
-           <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+           <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
+           <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
+           <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
            <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
                 <ej:Column Field="CustomerID" />
@@ -141,9 +141,9 @@ The following code example describes the above behavior
 
 {% highlight html %}
     
-          <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
-           <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="Normal"></EditSettings>
-           <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+          <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
+           <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true" EditMode="Normal"></EditSettings>
+           <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
            <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
                 <ej:Column Field="CustomerID" EditType="String"/>
@@ -230,9 +230,9 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
-           <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"></EditSettings>
-           <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+           <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
+           <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
+           <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
            <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
                 <ej:Column Field="CustomerID"/>
@@ -338,9 +338,9 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-        <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
-           <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="Normal"></EditSettings>
-           <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+        <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
+           <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true" EditMode="Normal"></EditSettings>
+           <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
            <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
                 <ej:Column Field="CustomerID" EditType="String"/>
@@ -422,9 +422,9 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-         <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
-           <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="InlineForm"></EditSettings>
-           <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+         <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
+           <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true" EditMode="InlineForm"></EditSettings>
+           <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
            <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
                 <ej:Column Field="CustomerID" EditType="String"/>
@@ -516,10 +516,10 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-          <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
-           <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="InlineFormTemplate" InlineFormTemplateID="#template" ></EditSettings>
+          <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
+           <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true" EditMode="InlineFormTemplate" InlineFormTemplateID="#template" ></EditSettings>
            <ClientSideEvents ActionComplete ="complete" />
-           <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+           <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
            <Columns>
                 <ej:Column Field="OrderID"  IsPrimaryKey="true" />
                 <ej:Column Field="CustomerID"/>
@@ -642,9 +642,9 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-          <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True" >
-           <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="Dialog"></EditSettings>
-           <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+          <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" >
+           <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true" EditMode="Dialog"></EditSettings>
+           <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
            <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
                 <ej:Column Field="CustomerID" EditType="String"/>
@@ -734,10 +734,10 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-          <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True" >
-           <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="DialogTemplate" DialogEditorTemplateID="#template"></EditSettings>
+          <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" >
+           <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true" EditMode="DialogTemplate" DialogEditorTemplateID="#template"></EditSettings>
            <ClientSideEvents ActionComplete ="complete"/>
-           <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+           <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
            <Columns>
                 <ej:Column Field="OrderID"  IsPrimaryKey="true"/>
                 <ej:Column Field="CustomerID"/>
@@ -860,9 +860,9 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server"  AllowPaging="True" >
-           <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="ExternalForm"></EditSettings>
-           <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+           <ej:Grid ID="FlatGrid" runat="server"  AllowPaging="true" >
+           <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true" EditMode="ExternalForm"></EditSettings>
+           <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
            <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true" />
                 <ej:Column Field="CustomerID" EditType="String"/>
@@ -948,9 +948,9 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-         <ej:Grid ID="FlatGrid" runat="server"  AllowPaging="True" >
-           <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="ExternalForm" FormPosition="TopRight"></EditSettings>
-           <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+         <ej:Grid ID="FlatGrid" runat="server"  AllowPaging="true" >
+           <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true" EditMode="ExternalForm" FormPosition="TopRight"></EditSettings>
+           <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
            <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true" />
                 <ej:Column Field="CustomerID" EditType="String"/>
@@ -1036,10 +1036,10 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-          <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True" >
-           <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="ExternalFormTemplate" ExternalFormTemplateID="#template"></EditSettings>
+          <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" >
+           <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true" EditMode="ExternalFormTemplate" ExternalFormTemplateID="#template"></EditSettings>
            <ClientSideEvents ActionComplete ="complete"/>
-           <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+           <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
            <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
                 <ej:Column Field="CustomerID" />
@@ -1164,9 +1164,9 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-          <ej:Grid ID="FlatGrid" runat="server"  AllowPaging="True">
-           <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="Batch"></EditSettings>
-           <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+          <ej:Grid ID="FlatGrid" runat="server"  AllowPaging="true">
+           <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true" EditMode="Batch"></EditSettings>
+           <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
              <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true" />
                 <ej:Column Field="CustomerID" EditType="String" />
@@ -1249,9 +1249,9 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-         <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
-           <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="Batch" ShowConfirmDialog="true"></EditSettings>
-           <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+         <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
+           <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true" EditMode="Batch" ShowConfirmDialog="true"></EditSettings>
+           <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
             <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true" />
                 <ej:Column Field="CustomerID" EditType="String"/>
@@ -1332,9 +1332,9 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server"  AllowPaging="True">
-           <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="Batch"  ShowDeleteConfirmDialog="true"  ></EditSettings>
-           <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+           <ej:Grid ID="FlatGrid" runat="server"  AllowPaging="true">
+           <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true" EditMode="Batch"  ShowDeleteConfirmDialog="true"  ></EditSettings>
+           <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
             <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
                 <ej:Column Field="CustomerID" EditType="String"/>
@@ -1501,9 +1501,9 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-          <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
-           <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"></EditSettings>
-           <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+          <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
+           <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
+           <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
            <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true">
                    <ValidationRule>
@@ -1602,9 +1602,9 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-         <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True" >
-           <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"></EditSettings>
-           <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+         <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" >
+           <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
+           <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
            <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true" />
                 <ej:Column Field="CustomerID" EditType="String" >
@@ -1722,9 +1722,9 @@ The following code example describes the above behavior.
 {% highlight html %}
     
     <ej:DataManager runat="server"  ID="Data" URL="Default.aspx/Data"  Adaptor="WebMethodAdaptor" UpdateURL="Default.aspx/Update" InsertURL="Default.aspx/Insert" RemoveURL="Default.aspx/Remove" />
-        <ej:Grid ID="FlatGrid" DataManagerID="Data" runat="server" AllowPaging="True" >
-          <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" ></EditSettings>
-           <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+        <ej:Grid ID="FlatGrid" DataManagerID="Data" runat="server" AllowPaging="true" >
+          <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true" ></EditSettings>
+           <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
             <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
                 <ej:Column Field="CustomerID" />
@@ -1983,9 +1983,9 @@ The following code example describes the above behavior.
 {% highlight html %}
         
       <ej:DataManager runat="server" ID="Data"  Adaptor="WebMethodAdaptor" URL="Default.aspx/Data" CrudURL="Default.aspx/CrudUpdate"/>
-         <ej:Grid ID="FlatGrid" DataManagerID="Data" runat="server" AllowPaging="True" >
-           <EditSettings AllowEditing="True"  AllowAdding="True" AllowDeleting="True" ></EditSettings>
-           <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+         <ej:Grid ID="FlatGrid" DataManagerID="Data" runat="server" AllowPaging="true" >
+           <EditSettings AllowEditing="true"  AllowAdding="true" AllowDeleting="true" ></EditSettings>
+           <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
             <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
                 <ej:Column Field="CustomerID" />
@@ -2028,9 +2028,9 @@ The following code example describes the above behavior.
 {% highlight html %}
          
        <ej:DataManager runat="server"  Adaptor="WebMethodAdaptor" URL="Default.aspx/Data" BatchURL="Default.aspx/BatchUpdate"/>
-         <ej:Grid ID="FlatGrid" DataManagerID="Data" runat="server" AllowPaging="True">
-           <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="Batch"></EditSettings>
-            <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+         <ej:Grid ID="FlatGrid" DataManagerID="Data" runat="server" AllowPaging="true">
+           <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true" EditMode="Batch"></EditSettings>
+            <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
               <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
                 <ej:Column Field="CustomerID"/>
@@ -2069,9 +2069,9 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-         <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True" >
-           <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" RowPosition="Bottom"></EditSettings>
-           <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+         <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" >
+           <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true" RowPosition="Bottom"></EditSettings>
+           <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
             <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
                 <ej:Column Field="CustomerID" />
@@ -2153,9 +2153,9 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-         <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True" >
-           <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" ShowAddNewRow="True"></EditSettings>
-           <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+         <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" >
+           <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true" ShowAddNewRow="true"></EditSettings>
+           <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
                <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
                 <ej:Column Field="CustomerID" />
@@ -2238,9 +2238,9 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-        <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True" >
-           <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" ShowAddNewRow="True"></EditSettings>
-           <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+        <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" >
+           <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true" ShowAddNewRow="true"></EditSettings>
+           <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
            <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
                 <ej:Column Field="CustomerID" />
