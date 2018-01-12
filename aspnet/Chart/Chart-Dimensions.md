@@ -59,7 +59,7 @@ You can specify the chart size in percentage by using the Size property. The cha
 
 ## Responsive chart
 
-To resize the Chart when the browser or the chart container is resized, set the **IsResponsive** property to **True**, where the chart adapts to the changes in size of the container.
+To resize the Chart when the browser or the chart container is resized, set the **IsResponsive** property to **true**, where the chart adapts to the changes in size of the container.
 
 {% highlight html %}
 

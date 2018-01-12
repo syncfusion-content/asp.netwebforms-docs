@@ -51,7 +51,7 @@ You can customize the empty points visibility and change its **DisplayMode** *(G
         <Series> 
             <ej:Series> 
                  // visible the EmptyPointSettings width DisplayMode as Average
-                 <EmptyPointSettings Visible="True" DisplayMode="Average"/>
+                 <EmptyPointSettings Visible="true" DisplayMode="Average"/>
          </ej:Series> 
      </Series> 
   </ej:Chart>
@@ -60,7 +60,7 @@ You can customize the empty points visibility and change its **DisplayMode** *(G
 
 ![](Empty-Points_images/Empty-Points_img2.png)
 
-If the *Visible* property of *EmptyPointSettings* is **False**, then the empty points has been dropped and chart will be rendered without empty points.
+If the *Visible* property of *EmptyPointSettings* is **false**, then the empty points has been dropped and chart will be rendered without empty points.
 
 ![](Empty-Points_images/Empty-Points_img3.png)
 
@@ -74,7 +74,7 @@ Empty points color and border can be customized using **Style** property of *Emp
 <ej:Chart ID="Chart1" runat="server"> 
         <Series> 
             <ej:Series> 
-                <EmptyPointSettings Visible="True">             
+                <EmptyPointSettings Visible="true">             
                  <Style Color="Pink"> 
                     <Border Color="Gray" Width="2"/>
                  </Style>
