@@ -420,7 +420,7 @@ namespace EJGrid.Controllers
             dataRow[0] = 5;
             dataRow[1] = "Reek";
             dt.Rows.Add(dataRow);
-            this.EmployeesGrid2.DataSource = dt;
+            this.FlatGrid.DataSource = dt;
         } 
     }
 }
@@ -514,7 +514,7 @@ namespace EJGrid.Controllers
             {
                 ord.Add(temp);
             }
-            this.EmployeesGrid2.DataSource = ord;
+            this.FlatGrid.DataSource = ord;
         }
     }
 }
