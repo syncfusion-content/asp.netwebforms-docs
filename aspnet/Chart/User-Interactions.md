@@ -393,8 +393,7 @@ Trackball tooltip template is used to display the tooltip in customized template
 <ej:Chart ID="Chart1" runat="server"> 
    //…
   <Crosshair Visible="true" Type="Trackball" >
-        <TrackballTooltipSettings Mode="Float"  tooltipTemplate: "Tooltip">
-
+        <TrackballTooltipSettings Mode="Float"  TooltipTemplate: "Tooltip">
         </TrackballTooltipSettings>
     </Crosshair>
    //..
