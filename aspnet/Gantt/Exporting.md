@@ -205,7 +205,7 @@ The following code snippets shows how to bind `ServerExcelQueryCellInfo` event i
 
 {% highlight c# %}
 
-    public partial class GanttCondtionalExporting : System.Web.UI.Page
+    public partial class ConditionalExporting : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -278,7 +278,7 @@ The following code snippets shows how to bind `ServerPdfQueryCellInfo` event in 
 
 {% highlight c# %}
 
-    public partial class GanttCondtionalExporting : System.Web.UI.Page
+    public partial class ConditionalExporting : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -359,7 +359,7 @@ The following code snippets shows how to bind `ServerPdfQueryTaskbarInfo` event 
 
 {% highlight c# %}
 
-    public partial class GanttCondtionalExporting : System.Web.UI.Page
+    public partial class ConditionalExporting : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
