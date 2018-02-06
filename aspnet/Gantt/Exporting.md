@@ -55,7 +55,7 @@ The below code snippet explains the above behavior,
 {% endhighlight %}
 {% endtabs %} 
 
-The below screen shot shows Gantt with excel and Pdf exporting enabled.
+The below screen shot shows Gantt with excel and PDF exporting enabled.
 ![](Export_images/Export_img1.png)
 
 ## Server dependencies
@@ -167,3 +167,238 @@ The desired theme should be passed as a parameter to the Export method and the c
           }
 
 {% endhighlight %}
+
+## Customization
+
+In Gantt, we can customize Grid cells, taskbars in Excel and PDF files by using exporting events. While exporting the Gantt as Excel or PDF files, events are triggered to customize the Grid cells and taskbars.
+
+### Customize Excel cell
+
+Excel cells can be customized by using `ServerExcelQueryCellInfo` event, in this event we can get the details about current record, Excel cell and current column information. Using this information we can customize the background color, font color and value of Excel cell, please find the event argument details below.
+
+<table>
+<tr>
+<th>Name</th><th>Description</th><th>Type</th>
+</tr>
+<tr>
+<td>Data</td><td>Returns the current row details </td><td>GanttRecordDetails</td>
+</tr>
+<td>Cell</td><td>Returns current Excel cell information</td><td>IRange</td>
+</tr>
+<tr>
+<td>Column</td><td>Returns current column information</td><td>GanttColumn</td>
+</tr>
+</table>
+
+The following code snippets shows how to bind `ServerExcelQueryCellInfo` event in code behind and how to customize Excel cell using this event.
+{% tabs %} 
+{% highlight html %}
+    <ej:Gantt runat="server" ID="GanttControlExporting"
+        //...
+        OnServerExcelExporting="GanttConditionalExporting_ServerExcelExporting" 
+        OnServerExcelQueryCellInfo="GanttConditionalExporting_ServerExcelQueryCellInfo"
+        >
+        <ToolbarSettings ShowToolbar="true" ToolbarItems="excelExport, pdfExport" />
+    </ej:Gantt>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public partial class GanttCondtionalExporting : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            //...
+        }
+
+        protected void GanttConditionalExporting_ServerExcelExporting(object sender, Syncfusion.JavaScript.Web.GanttEventArgs e)
+        {
+            ExcelExport exp = new ExcelExport();
+            GanttExportSettings settings = new GanttExportSettings();
+            settings.Theme = ExportTheme.FlatLime;
+            exp.Export(this.GanttConditionalExporting.Model, (IEnumerable)this.GanttConditionalExporting.DataSource, "Export.xlsx", ExcelVersion.Excel2010, new GanttExportSettings() { Theme = ExportTheme.FlatLime });
+        }
+
+        protected void GanttConditionalExporting_ServerExcelQueryCellInfo(object model, object args)
+        {
+            var record = (GanttRecordDetails)((Dictionary<string, object>)args)["Data"];
+            var cell = (IRange)((Dictionary<string, object>)args)["Cell"];
+            var column = (GanttColumn)((Dictionary<string, object>)args)["Column"];
+            var ganttModel = (GanttProperties)model;
+            
+            if (column.MappingName == ganttModel.ProgressMapping && !record.IsParentRow)
+            {
+                if (float.Parse(cell.Value) > 80)
+                    cell.CellStyle.Color = ColorConversion.GetColor(new PdfColor(165, 105, 189));
+                else if (float.Parse(cell.Value) < 20)
+                    cell.CellStyle.Color = ColorConversion.GetColor(new PdfColor(240, 128, 128));
+            }
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %} 
+
+[Click](https://asp.syncfusion.com/demos/web/gantt/GanttConditionalExporting.aspx) here to view the online demo sample with above code example.
+
+N> Refer this [link](https://help.syncfusion.com/cr/cref_files/aspnetmvc/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IExtendedFormat_members.html) to know more about what are the properties are available in Excel cell and it's type values.
+
+### Customize PDF cell
+
+PDF cells in Gantt can be customized by using `ServerPdfQueryCellInfo` event, in this event we can get the details about current record, PDF cell and current column information. Using this information we can customize the background color and font color of PDF cells, please find the event argument details below.
+
+<table>
+<tr>
+<th>Name</th><th>Description</th><th>Type</th>
+</tr>
+<tr>
+<td>Data</td><td>Returns the current row details </td><td>GanttRecord</td>
+</tr>
+<td>Cell</td><td>Returns current Excel cell information</td><td>PdfTreeGridCell</td>
+</tr>
+<tr>
+<td>Column</td><td>Returns current column information</td><td>GanttColumn</td>
+</tr>
+</table>
+
+The following code snippets shows how to bind `ServerPdfQueryCellInfo` event in Web API controller and how to customize PDF cell using this event.
+
+{% tabs %} 
+{% highlight html %}
+    <ej:Gantt runat="server" ID="GanttControlExporting"
+        //...
+        OnServerPdfExporting="GanttConditionalExporting_ServerPdfExporting"
+        OnServerPdfQueryCellInfo="GanttConditionalExporting_ServerPdfQueryCell"
+        >
+        <ToolbarSettings ShowToolbar="true" ToolbarItems="excelExport, pdfExport" />
+    </ej:Gantt>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public partial class GanttCondtionalExporting : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            //...
+        }
+        
+        protected void GanttConditionalExporting_ServerPdfExporting(object sender, Syncfusion.JavaScript.Web.GanttEventArgs e)
+        {
+            PdfExport exp = new PdfExport();
+            GanttPdfExportSettings settings = new GanttPdfExportSettings();
+            settings.EnableFooter = true;
+            settings.ProjectName = "Project Tracker";
+            settings.Locale = e.Arguments["locale"].ToString();
+            settings.Theme = GanttExportTheme.FlatLime;
+            settings.IsFitToWidth = true;
+            exp.Export(this.GanttConditionalExporting.Model, (IEnumerable)this.GanttConditionalExporting.DataSource, settings, "Gantt");
+        }
+
+        protected void GanttConditionalExporting_ServerPdfQueryCell(object model, object args)
+        {
+            var record = (GanttRecord)((Dictionary<string, object>)args)["Data"];
+            var cell = (PdfTreeGridCell)((Dictionary<string, object>)args)["Cell"];
+            var column = (GanttColumn)((Dictionary<string, object>)args)["Column"];
+            var ganttModel = (GanttProperties)model;
+
+            if (column.MappingName == ganttModel.ProgressMapping && !record.IsParentRow)
+            {
+                if (record.Progress > 80)
+                {
+                    PdfBrush color = new PdfSolidBrush(new PdfColor(165, 105, 189));
+                    cell.Style.BackgroundBrush = color;
+                }
+                else if (record.Progress < 20)
+                {
+                    PdfBrush color = new PdfSolidBrush(new PdfColor(240, 128, 128));
+                    cell.Style.BackgroundBrush = color;
+                }
+
+            }
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+[Click](https://asp.syncfusion.com/demos/web/gantt/GanttConditionalExporting.aspx) here to view the online demo sample with above code example.
+
+N> Refer this [link](http://help.syncfusion.com/cr/cref_files/aspnetmvc/ejmvc/Syncfusion.EJ.Export~Syncfusion.EJ.Export.PdfTreeGridCellStyle_members.html) to know more about what are the properties are available in PDF cell and it's type values.
+
+### Customize PDF taskbar
+
+PDF taskbars in Gantt can be customized by using `ServerPdfQueryTaskbarInfo` event, in this event we can get the details about current record and taskbar information. Using this information we can customize the background color of taskbar and progress bar, please find the event argument details below.
+
+<table>
+<tr>
+<th>Name</th><th>Description</th><th>Type</th>
+</tr>
+<tr>
+<td>Data</td><td>Returns the current row details </td><td>GanttRecord</td>
+</tr>   
+<td>Taskbar</td><td>Returns current Excel cell information</td><td>PdfGanttTaskbar</td>
+</tr>
+</table>
+
+The following code snippets shows how to bind `ServerPdfQueryTaskbarInfo` event in Web API controller and how to customize PDF taskbar using this event.
+
+{% tabs %} 
+{% highlight html %}
+    <ej:Gantt runat="server" ID="GanttControlExporting"
+        //...
+        OnServerPdfExporting="GanttConditionalExporting_ServerPdfExporting"
+        OnServerPdfQueryTaskbarInfo="GanttConditionalExporting_ServerPdfTaskbarInfo"
+        >
+        <ToolbarSettings ShowToolbar="true" ToolbarItems="excelExport, pdfExport" />
+    </ej:Gantt>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public partial class GanttCondtionalExporting : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            //...
+        }
+        
+        protected void GanttConditionalExporting_ServerPdfExporting(object sender, Syncfusion.JavaScript.Web.GanttEventArgs e)
+        {
+            PdfExport exp = new PdfExport();
+            GanttPdfExportSettings settings = new GanttPdfExportSettings();
+            settings.EnableFooter = true;
+            settings.ProjectName = "Project Tracker";
+            settings.Locale = e.Arguments["locale"].ToString();
+            settings.Theme = GanttExportTheme.FlatLime;
+            settings.IsFitToWidth = true;
+            exp.Export(this.GanttConditionalExporting.Model, (IEnumerable)this.GanttConditionalExporting.DataSource, settings, "Gantt");
+        }
+
+        protected void GanttConditionalExporting_ServerPdfTaskbarInfo(object model, object args)
+        {
+            var record = (GanttRecord)((Dictionary<string, object>)args)["Data"];
+            var taskbar = (PdfGanttTaskbar)((Dictionary<string, object>)args)["Taskbar"];
+            if (!record.IsParentRow)
+            {
+                if (record.Progress > 80)
+                {
+                    taskbar.ProgressColor = new PdfColor(108, 52, 131);
+                    taskbar.TaskBorderColor = taskbar.TaskColor = new PdfColor(165, 105, 189);
+                }
+                else if (record.Progress < 20)
+                {
+                    taskbar.ProgressColor = new PdfColor(205, 92, 92);
+                    taskbar.TaskBorderColor = taskbar.TaskColor = new PdfColor(240, 128, 128);
+                }
+            }
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+[Click](https://asp.syncfusion.com/demos/web/gantt/GanttConditionalExporting.aspx) here to view the online demo sample with above code example.
