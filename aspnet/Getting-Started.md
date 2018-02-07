@@ -102,9 +102,9 @@ The steps to configure the Syncfusion ASP.NET Web Forms NuGet Packages in Visual
 
    **Name**: Name of the package that listed in Available package sources
    **Source**: Syncfusion ASP.NET Web Forms NuGet Package feed URL
-   [http://nuget.syncfusion.com/aspnet](http://nuget.syncfusion.com/aspnet)
+   [http://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet](http://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet)
     
-   ![](Getting-Started_images/NuGetConfig2.jpeg)
+   ![](Getting-Started_images/NuGetConfig2.png)
 
    N> The `Source` text box in the above image denotes the location of the NuGet packages, and the `Name` section allows you to provide a unique name for NuGet Packages Source.
     
