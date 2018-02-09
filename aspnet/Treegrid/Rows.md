@@ -378,3 +378,30 @@ The following code shows how to render row drag tooltip with tooltip template.
 {% endhighlight %}
 
  ![](Rows_images/Rows_img3.png) 
+ 
+## Multiple Row drag and drop
+		
+Using Multiple row drag and drop we can re-order multiple rows at a time.Using this we can drop the rows as above, below and child position as like single row drag and drop.
+In TreeGrid we can enable the multiple drag and drop by setting `SelectionSettings.SelectionType` as `Multiple` or  `Checkbox` and also we should enable the `AllowDragAndDrop`.
+
+Please find the code example below to enable multiple drag and drop in TreeGrid.
+
+{% highlight html %}
+
+ <ej:TreeGrid runat="server" ID="TreeGridControlDragAndDrop" AllowDragAndDrop="true"> 
+           //..
+           <SelectionSettings SelectionType= "Multiple" />
+          //..
+      </ej:TreeGrid>
+
+{% endhighlight %}
+
+We can also customize row drag and drop actions by using below properties
+
+* canDrag – It is used to enable/disable the row drag action for draggedRecords collection in `RowDragStart` client side event.
+
+* canDrop – It is used to enable/disable the row drop action for draggedRecords collection in `RowDropActionBegin` client side event. 
+
+![](Rows_images/Rows_img4.png)
+
+[Click](https://asp.syncfusion.com/demos/web/treegrid/treegridrowdraganddrop.aspx) here to view the demo sample for multiple drag and drop action.
