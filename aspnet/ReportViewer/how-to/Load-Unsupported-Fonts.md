@@ -12,7 +12,7 @@ In RDL, the defined fonts are not supported in cross-platform browsers. The unsu
 
 ## Using @font-face in Style Section
 
- * Add the &lt;style&gt; tag to headsection of the HTML page.
+ * Add the &lt;style&gt; tag to head section of the HTML page.
  * Create the CSS rule **font-face** and then add the **font-family** and **src** resources as mentioned below.
  * **font-family** -- Specifies a name that will be used as a font face value for font properties.
  * **src** -- Specifies the resource containing the font data. This can be a URL to a font file location.
@@ -24,7 +24,7 @@ In RDL, the defined fonts are not supported in cross-platform browsers. The unsu
  <style>
      @font-face {
          font-family: Segoe UI;
-         src: url(segoeui.ttf);
+         src: url(segoe_ui.ttf);
      }
  </style>
 
