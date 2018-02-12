@@ -555,6 +555,7 @@ The following output is displayed as a result of the above code example.
  Detail Template
  Hierarchy Grid 
  Batch Editing
+ Virtual Scrolling
 
 If any one of the above feature is enabled along with Frozen Rows and Columns, then "Frozen Columns and Rows are not supported for Grouping, Row Template, Detail Template, Hierarchy Grid and Batch Editing" alert message is thrown.
 
