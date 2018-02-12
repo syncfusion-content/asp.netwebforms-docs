@@ -626,4 +626,4 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](selection_images/selection_img11.png)
+![](selection_images/Selection_img13.png)
