@@ -15,7 +15,6 @@ Adding the required JavaScript and CSS files into your application plays an impo
 
 *	jquery-1.10.2.min.js
 * jquery.easing.1.3.min.js
-*	jquery.globalize.min.js
 *	jsrender.min.js
 
 Apart from the above common scripts, it is also necessary to refer to the ej.web.all.min.js file in your application that plays a major role in control creation. It also requires reference to the ej.webform.min.js file in your application, as it is responsible for the server-side event functionalities of the ASP.NET controls.
@@ -43,7 +42,7 @@ The dependencies are available in the following locations of your machine. Pleas
 
 N> Example for "Syncfusion Installed location" is "C:\Program Files (x86)\Syncfusion"
 
-ej.web.all.js is a bundle of all ASP.NET controls. If you use ej.web.all.js in your application, you can ignore below table section or else you can try to render grid in your application using ej.grid.min.js file. You can refer the following frameworks and controls in your project.
+ej.web.all.min.js is a bundle of all ASP.NET controls. If you use ej.web.all.js in your application, you can ignore below table section or else you can try to render grid in your application using ej.grid.min.js file. You can refer the following frameworks and controls in your project.
 
 Grid Dependency
 
