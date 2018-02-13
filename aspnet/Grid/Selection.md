@@ -545,3 +545,85 @@ The following code example describes the above behavior.
            }
 {% endhighlight  %}
 {% endtabs %}  
+
+
+## Drag Selection
+
+The Drag selection allows to perform selection of the particular rows or cells by performing mouse dragging.  To enable drag selection, set `AllowDragSelection` property of the `SelectionSettings` as `true`. Now you can select the cells or rows in the Grid by dragging the mouse. 
+
+N> The `SelectionType` property should be set as `multiple`, to select multiple cells in Grid by mouse dragging. 
+
+The following code example describes the above behavior. 
+
+{% tabs %} 
+{% highlight razor %}
+
+        <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" EnableRowHover="false" Selectiontype="Multiple">
+            <SelectionSettings SelectionMode="cell" AllowDragSelection="true"/> 
+             <Columns>                
+                <ej:Column Field="OrderID" />
+                <ej:Column Field="EmployeeID"/>
+                <ej:Column Field="ShipCity"/>                
+                <ej:Column Field="ShipCountry"/>
+                <ej:Column Field="Freight"/>
+              </Columns>
+       </ej:Grid>
+{% endhighlight  %}
+{% highlight c# %}
+		
+	   namespace WebSampleBrowser.Grid
+         {
+             public partial class Selection : System.Web.UI.Page
+              {
+                 List<Orders> order = new List<Orders>();
+                 protected void Page_Load(object sender, EventArgs e)
+                  {
+                     BindDataSource();
+                  }
+                private void BindDataSource()
+                {
+                 int orderId = 10000;
+                 int empId = 0;
+                 for (int i = 0; i < 9; i++)
+                 {
+                    order.Add(new Orders(orderId + 1, empId + 1, "Reims", "France", 32.38));
+                    order.Add(new Orders(orderId + 2, empId + 2, "Rio de Janeiro", "Brazil", 11.61));
+                    order.Add(new Orders(orderId + 3, empId + 3, "Lyon", "France", 45.34));
+                    order.Add(new Orders(orderId + 4, empId + 4, "Charlerio", "Germany", 37.28));
+                    order.Add(new Orders(orderId + 5, empId + 5,"Bern", "Germany", 67.00));
+                    order.Add(new Orders(orderId + 6, empId + 6, "Graz", "USA", 23.32));
+                    orderId += 6;
+                    empId += 6;
+                 }
+                this.OrdersGrid.DataSource = order;
+                this.OrdersGrid.DataBind();
+              }
+             [Serializable]
+             public class Orders
+             {
+              public Orders()
+               {
+
+               }
+              public Orders(int OrderId, int empId, string  shipCity, string shipCountry, double freight)
+               {
+                 this.OrderID = OrderId;
+                 this.EmployeeID = empId;
+                 this.ShipCity =  shipCity
+                 this.ShipCountry = shipCountry;
+                 this.Freight = freight;
+               }
+               public int OrderID { get; set; }
+               public int EmployeeID { get; set; }
+               public string ShipCity{ get; set; }
+               public string ShipCountry { get; set; }
+               public double Freight { get; set; }
+              }
+            }
+           }
+{% endhighlight  %}
+{% endtabs %}  
+
+The following output is displayed as a result of the above code example.
+
+![](selection_images/Selection_img13.png)
