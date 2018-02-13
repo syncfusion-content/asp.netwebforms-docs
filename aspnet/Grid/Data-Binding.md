@@ -30,7 +30,6 @@ In the following section, let us see on how to bind various datasources to Grid 
  The Grid can be bound with major ASP.NET DataSource controls to display data from various data source. Some of the main datasource controls which works in conjunction with Grid are:
 
 *	SqlDataSource
-*   SqlDataSource with LoadOnDemand
 *	ObjectDataSource
 *	XmlDataSource 
 *	DataManager control
@@ -70,7 +69,7 @@ Refer to this [link](https://msdn.microsoft.com/en-us/library/dz12d98w.aspx) for
 
 ### SqlDataSource with LoadOnDemand
 
-SqlDataSource control support has been added with on-demand loading for paging, sorting, and filtering in grid. Each of these grid actions is performed on the server side and the result is returned to the client. This has been achieved by enabling the property as `EnableLoadOnDemand` in grid.
+SqlDataSource control support has been added with on-demand data loading for paging, sorting, and filtering in grid. Each of these grid actions is performed on the server side and the result is returned to the client. This has been achieved by enabling the property as `EnableLoadOnDemand` in grid.
 
 N> The default value for `EnableLoadOnDemand` property will be false.
 The following code example describes the above behavior.
@@ -86,6 +85,8 @@ The following code example describes the above behavior.
         <ej:Column Field="ShipCity" HeaderText="Ship City" Width="110" />
         <ej:Column Field="ShipCountry" HeaderText="Ship Country" Width="110" />
     </Columns>
+     <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"></EditSettings>
+     <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 </ej:Grid>
 <asp:SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings:NORTHWNDConnectionString %>" SelectCommand="SELECT * FROM [Orders]">
 </asp:SqlDataSource>
