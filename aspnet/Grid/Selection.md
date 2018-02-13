@@ -549,7 +549,7 @@ The following code example describes the above behavior.
 
 ## Drag Selection
 
-The Drag selection allows to perform selection of the particular rows or cells by performing mouse dragging.  To enable drag selection, set `AllowDragSelection` property of the `SelectionSettings` as `true`. Now you can select the cells, rows or columns in the Grid by dragging the mouse. 
+The Drag selection allows to perform selection of the particular rows or cells by performing mouse dragging.  To enable drag selection, set `AllowDragSelection` property of the `SelectionSettings` as `true`. Now you can select the cells r rows in the Grid by dragging the mouse. 
 
 N> The `SelectionType` property as should be set as `multiple`, to select multiple cells in Grid by mouse dragging. 
 
