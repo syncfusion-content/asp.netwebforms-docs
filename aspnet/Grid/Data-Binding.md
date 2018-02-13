@@ -81,12 +81,9 @@ The following code example describes the above behavior.
     <Columns>
         <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
         <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />
-        <ej:Column Field="ShipName" HeaderText="Ship Name" Width="110" />
-        <ej:Column Field="ShipCity" HeaderText="Ship City" Width="110" />
-        <ej:Column Field="ShipCountry" HeaderText="Ship Country" Width="110" />
+        <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="110" />
+        <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="110" />
     </Columns>
-     <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"></EditSettings>
-     <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 </ej:Grid>
 <asp:SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings:NORTHWNDConnectionString %>" SelectCommand="SELECT * FROM [Orders]">
 </asp:SqlDataSource>
