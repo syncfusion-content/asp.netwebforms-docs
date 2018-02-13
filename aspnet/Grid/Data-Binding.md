@@ -30,6 +30,7 @@ In the following section, let us see on how to bind various datasources to Grid 
  The Grid can be bound with major ASP.NET DataSource controls to display data from various data source. Some of the main datasource controls which works in conjunction with Grid are:
 
 *	SqlDataSource
+*   SqlDataSource with LoadOnDemand
 *	ObjectDataSource
 *	XmlDataSource 
 *	DataManager control
@@ -65,7 +66,38 @@ The following output is displayed as a result of the above code example.
 {% seealso %} 
 Refer to this [link](https://msdn.microsoft.com/en-us/library/dz12d98w.aspx) for more information on SqlDataSource.
 {% endseealso %}
+
+
+### SqlDataSource with LoadOnDemand
+
+SqlDataSource control support has been added with on-demand loading for paging, sorting, and filtering in grid. Each of these grid actions is performed on the server side and the result is returned to the client. This has been achieved by enabling the property as `EnableLoadOnDemand` in grid.
+
+N> The default value for `EnableLoadOnDemand` property will be false.
+The following code example describes the above behavior.
+
+{% tabs %}
+{% highlight html %}
+
+<ej:Grid ID="FlatGrid" runat="server" DataSourceID="SqlData" EnableLoadonDemand="true" AllowSorting="True" AllowPaging="True">
+    <Columns>
+        <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+        <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />
+        <ej:Column Field="ShipName" HeaderText="Ship Name" Width="110" />
+        <ej:Column Field="ShipCity" HeaderText="Ship City" Width="110" />
+        <ej:Column Field="ShipCountry" HeaderText="Ship Country" Width="110" />
+    </Columns>
+</ej:Grid>
+<asp:SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings:NORTHWNDConnectionString %>" SelectCommand="SELECT * FROM [Orders]">
+</asp:SqlDataSource>
+
+{% endhighlight %}
+{% endtabs %}
+
+The following output is displayed as a result of the above code example.
+
+![](Data-Binding_images/Data-Binding_img21.png)
  
+
 ### ObjectDataSource
 
 The Grid can be bound with ObjectDataSource control as the datasource interface. The ObjectDataSource control allows developers to structure their applications using this traditional three-tiered architecture and still take advantage of the ease-of-use benefits of the declarative data binding model in ASP.NET.
