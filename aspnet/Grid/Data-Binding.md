@@ -843,8 +843,10 @@ The following output is displayed as a result of the above code example.
 
 
 ### Data caching
+
+#### Load on demand	
 	
-The `DataManager` can cache loaded data. The caching functionality can be enabled by setting the `EnableCaching` property in `DataManager`.
+The `DataManager` can cache on demand loaded data. The caching functionality can be enabled by setting the `EnableCaching` property in `DataManager`.
 
 The `TimeTillExpiration` and `CachingPageSize` properties are used to control the expiration time of data and the cache page size settings respectively.
 
@@ -871,6 +873,92 @@ The following code example describes the above behavior.
 The following output is displayed as a result of the above code example.
 
 ![](Data-Binding_images/Data-Binding_img17.png)
+
+
+#### Load at once
+
+DataSourceCachingMode can holds the datasource object and no need to initialize the datasource after each and every postback. It’s a enumeration type and it contains the following values.
+
+##### ViewState:
+
+The Data Source object will be serialized and added to the View State. So, no need to initialize the Data Source after each and every postback.
+
+##### None:
+
+This mode turns off data caching and the data source must be initialized for every postback.The default property of DataSourceCachingMode is None.
+
+##### Session:
+
+The reference to the Data Source object will be added to Session.
+
+{% tabs %} 
+{% highlight html %}
+<ej:Grid ID="FlatGrid" runat="server"  AllowPaging="true"  DataSourceCachingMode="ViewState" >
+    <Columns>
+        <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+        <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
+        <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" />
+        <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />
+        <ej:Column Field="OrderDate" HeaderText="Order Date" TextAlign="Right" Width="80" Format="{0:MM/dd/yyyy}" />
+        <ej:Column Field="ShipCity" HeaderText="Ship City" Width="110" />
+    </Columns>
+</ej:Grid>
+{% endhighlight %} 
+{% highlight c# %}
+    public partial class _Default : Page
+    {
+        List<Orders> order = new List<Orders>();
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+                BindDataSource();
+        }
+        private void BindDataSource()
+        {
+            int code = 10000;
+            for (int i = 1; i < 10; i++)
+            {
+                order.Add(new Orders(code + 1, "ALFKI", i + 0, 2.3 * i, new DateTime(1991, 05, 15), "Berlin"));
+                order.Add(new Orders(code + 2, "ANATR", i + 2, 3.3 * i, new DateTime(1990, 04, 04), "Madrid"));
+                order.Add(new Orders(code + 3, "ANTON", i + 1, 4.3 * i, new DateTime(1957, 11, 30), "Cholchester"));
+                order.Add(new Orders(code + 4, "BLONP", i + 3, 5.3 * i, new DateTime(1930, 10, 22), "Marseille"));
+                order.Add(new Orders(code + 5, "BOLID", i + 4, 6.3 * i, new DateTime(1953, 02, 18), "Tsawassen"));
+                code += 5;
+            }
+            this.FlatGrid.DataSource = order;
+            this.FlatGrid.DataBind();
+        }
+        [Serializable]
+        public class Orders
+        {
+            public Orders()
+            {
+
+            }
+            public Orders(long OrderId, string CustomerId, int EmployeeId, double Freight, DateTime OrderDate, string ShipCity)
+            {
+                this.OrderID = OrderId;
+                this.CustomerID = CustomerId;
+                this.EmployeeID = EmployeeId;
+                this.Freight = Freight;
+                this.OrderDate = OrderDate;
+                this.ShipCity = ShipCity;
+            }
+            public long OrderID { get; set; }
+            public string CustomerID { get; set; }
+            public int EmployeeID { get; set; }
+            public double Freight { get; set; }
+            public DateTime OrderDate { get; set; }
+            public string ShipCity { get; set; }
+        }
+    }
+{% endhighlight  %}
+{% endtabs %} 
+
+The following output is displayed as a result of the above code example.
+
+![](Data-Binding_images/Data-Binding_img22.png)
 
 
 ### Custom request parameters and HTTP Header
