@@ -437,6 +437,81 @@ The following output is displayed as a result of the above code example.
 ![](Columns_images/Columns_img7.png)
 
 
+## Resizing
+
+
+The [`AllowResizing`](https://help.syncfusion.com/api/js/ejgrid#members:allowresizing "AllowResizing") property enables the grid to set the width to columns based on resizing the grid column manually.
+
+
+### Resizing modes
+
+
+[`ResizeSettings.ResizeMode`](https://help.syncfusion.com/api/js/ejgrid#members:resizesettings-resizemode "ResizeSettings.ResizeMode") mode is used to change the resizing modes. It indicates whether to define mode of resizing.
+
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Normal</td>
+<td class="description">New column size will be adjusted by all other Columns</td>
+</tr>
+<tr>
+<td class="name">NextColumn</td>
+<td class="description">New column Size will be adjusted using next column.</td>
+</tr>
+<tr>
+<td class="name">Control</td>
+<td class="description">New column Size will be adjusted using entire control</td>
+</tr>
+</table>
+
+
+The following code example describes the above behavior.
+
+
+{% tabs %}
+{% highlight html %}
+
+
+<asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+<ej:Grid ID="Grid" runat="server" ClientIDMode="Static" AllowPaging="true" AllowResizing="true"> 
+        <ResizeSettings ResizeMode="NextColumn"></ResizeSettings>
+        <Columns>
+            <ej:Column Field="ShipCity" HeaderText="Ship City" Width="80"/>
+            <ej:Column Field="ShipPostalCode" HeaderText="Ship Postal Code" Width="40"/>
+            <ej:Column Field="ShipName" HeaderText="Ship Name" Width="40"/>
+            <ej:Column Field="ShipAddress" HeaderText="Ship Address" Width="100" />
+        </Columns>
+        <ClientSideEvents TemplateRefresh="refresh" />
+    </ej:Grid>
+</asp:Content>
+
+
+{% endhighlight  %}
+{% highlight c# %}
+
+
+namespace WebSampleBrowser.Grid
+{
+    public partial class _Default : Page
+    {
+        List<Orders> order = new List<Orders>();
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            this.Grid.DataSource = order;
+            this.Grid.DataBind();
+        }
+    }
+}
+
+
+{% endhighlight  %}
+{% endtabs %} 
+
+
 ## Resize to fit 
 
 The `AllowResizeToFit` property enable the Grid to set width to columns based on maximum width of the particular column's content to facilitate full visibility of data in all the grid rows. This automatic behavior is applicable only for the columns which does not have width specified. 
