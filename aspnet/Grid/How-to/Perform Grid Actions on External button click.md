@@ -175,8 +175,7 @@ The following code example explains the above behavior.
         var two = $('#<%= filtercolumntwo.ClientID %>').data("ejDropDownList");
         var One = one.getValue();
         var Two = two.getValue();
-        obj.filterColumn("OrderID", "equal", One, "and", true);
-        obj.filterColumn("EmployeeID", "equal", Two, "and", true);
+        obj.filterColumn([{field:"OrderID",operator:"equal",value:One,predicate:"and", matchcase:true},{field:"EmployeeID",operator:"equal",value:Two,predicate:"and", matchcase:true}]);
     }
     function clearfilterfn(args) {
         var gridObj = $("#<%= FlatGrid.ClientID %>").data("ejGrid");
