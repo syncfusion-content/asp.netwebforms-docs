@@ -33,19 +33,27 @@ The following code example explains the above behavior.
 {% highlight html %}
 <table>
     <tr>
-        <td><b>CRUD</b><br><button id="Addrecord">Addrecord</button><br><button id="Updaterecord">Updaterecord</button><br><button id="DeleteRecord">DeleteRecord</button></td>
-        <td><b>Filtering</b><br><br><input type="text" id="selectFilter" /><br> <button id="ClearFilter">Clear Filter</button></td>
-        <div id="Order"><ul><li>10248</li><li>10249</li><li>10250</li><li>10251</li><li>10252</li></ul></div>
-        <td><b>Grouping</b><br><br>
-            <select id="columnName" class="e-ddl" data-bind="value: field">
-                <option value="OrderID" selected="selected">Order ID</option>
-                <option value="CustomerID">Customer ID</option>
-                <option value="Freight">Freight</option>
-                <option value="ShipName">Ship Name</option>
-                <option value="Verified">Verified</option>
-            </select><br>
-            <button id="groupColumn">GroupColumn</button>
-            <button id="unGroupColumn">UnGroupColumn</button>
+        <td><b>CRUD</b><br><ej:Button Type="Button" ClientSideOnClick="addRecord" runat="server" Text="AddRecord"></ej:Button><br><ej:Button Type="Button" ClientSideOnClick="deleteRecord" runat="server" Text="DeleteRecord"></ej:Button><br><ej:Button Type="Button" ClientSideOnClick="deleteRecord" runat="server" Text="DeleteRecord"></ej:Button></td>
+        <td><b>Filtering</b><br><br><ej:DropDownList ID="OrderList" runat="server" DataTextField="OrderID"  WatermarkText="Select Filter value" Width="230" ClientSideOnSelect="Filterfn" >
+             <Items>
+                    <ej:DropDownListItem Text="10001" Value="10001"></ej:DropDownListItem>
+                    <ej:DropDownListItem Text="10002" Value="10002"></ej:DropDownListItem>
+                    <ej:DropDownListItem Text="10003" Value="10003"></ej:DropDownListItem>
+                    <ej:DropDownListItem Text="10004" Value="10004"></ej:DropDownListItem>
+                    <ej:DropDownListItem Text="10005" Value="10005"></ej:DropDownListItem>
+                </Items>
+            </ej:DropDownList><br><ej:Button Type="Button" ClientSideOnClick="clearfilterfn" runat="server" Text="Clear Filter"></td>
+        <td><b>Grouping</b><br><br><ej:DropDownList ID="OrderList" runat="server" DataTextField="OrderID"  SelectedItemIndex=0 Width="230" ClientSideOnChange="Groupfn" >
+             <Items>
+                    <ej:DropDownListItem Text="OrderID" Value="OrderID"></ej:DropDownListItem>
+                    <ej:DropDownListItem Text="CustomerID" Value="CustomerID"></ej:DropDownListItem>
+                    <ej:DropDownListItem Text="Freight" Value="Freight"></ej:DropDownListItem>
+                    <ej:DropDownListItem Text="ShipName" Value="ShipName"></ej:DropDownListItem>
+                    <ej:DropDownListItem Text="Verified" Value="Verified"></ej:DropDownListItem>
+                </Items>
+            </ej:DropDownList><br>
+            <ej:Button Type="Button" ClientSideOnClick="clicktoGroup" runat="server" Text="GroupColumn"></ej:Button>
+            <ej:Button Type="Button" ClientSideOnClick="clicktoGroup" runat="server" Text="UnGroupColumn"></ej:Button>
         </td>
         <td><b>Sorting</b><br><br>
             <select id="sortcolumnName" class="e-ddl" style="width: 100px" data-bind="value: field">
