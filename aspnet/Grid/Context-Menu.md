@@ -2,7 +2,7 @@
 layout: post
 title: Context Menu with Grid widget for Syncfusion Essential ASP.NET
 description: How to enable contextMenu and its functionalities
-platform: ejweb
+platform: aspnet
 control: Grid
 documentation: ug
 ---
