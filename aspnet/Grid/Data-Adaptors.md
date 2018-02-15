@@ -58,7 +58,7 @@ The WebMethod Adaptor is used to bind data source from remote services and code 
 
 For every operations, an AJAX post will be send to the specified data service. 
 
-When using `WebMethodAdaptor`, grid actions such as Paging, Filtering and Sorting should be handled at the server side itself. We have `DataOperation` class to handle the server side operations. Refer to the kb [link](https://www.syncfusion.com/kb/4300).
+When using `WebMethodAdaptor`, grid actions such as Paging, Filtering and Sorting should be handled at the server side itself. We have `DataOperation` class to handle the server side operations. Refer to the kb [link](https://www.syncfusion.com/kb/4300). These operations can also be done using the QueryableDataOperations class which accepts the IQueryable Data. Please refer the Kb [link](https://www.syncfusion.com/kb/8434/server-side-api-for-datamanager-operations-with-iqueryable-data).
 
 WebMethod Adaptor supports Model Binding, using `DataManager` class, for the Grid queries, such as sort, paging queries, etc., 
  
@@ -115,7 +115,7 @@ The following output is displayed as a result of the above code example.
 The Url Adaptor is the base adaptor that would interact with remote services. It can be enabled in Grid using `Adaptor` property of `DataSource` as `UrlAdaptor`. For every operations, an AJAX post will be send to the specified data service. 
 
 
-When using `UrlAdaptor`, grid actions such as Paging, Filtering and Sorting should be handled at the server side itself. We have `DataOperation` class to do these server side operations. Please refer to the kb [link](https://www.syncfusion.com/kb/4300).
+When using `UrlAdaptor`, grid actions such as Paging, Filtering and Sorting should be handled at the server side itself. We have `DataOperation` class to do these server side operations. Please refer to the kb [link](https://www.syncfusion.com/kb/4300). These operations can also be done using the QueryableDataOperations class which accepts the IQueryable Data. Please refer the Kb [link](https://www.syncfusion.com/kb/8434/server-side-api-for-datamanager-operations-with-iqueryable-data).
 
 The following code example describes the above behavior.
 
