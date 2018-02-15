@@ -94,7 +94,6 @@ The following code example explains the above behavior.
 <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowGrouping="true" AllowSorting="true"  AllowPaging="True">
      <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" EditMode="Normal"></EditSettings>
      <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
-     <ClientSideEvents ActionBegin="begin" />
      <Columns>
             <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
             <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="110"  />
@@ -196,36 +195,14 @@ The following code example explains the above behavior.
                 }
         }
     }
-    var group = true;
-    $(function () {
-        var gridObj = $("#<%= FlatGrid.ClientID %>").ejGrid("instance");
-        scrolWidth = gridObj.model.scrollSettings.width / $(".cols-sample-area").width();
-        if (gridObj.element.width() > $(".cols-sample-area").width()) {
-            var scrollerwidth = Math.floor($(".cols-sample-area").width())
-            gridObj.option("model.scrollSettings", { width: scrollerwidth })
-            scrolWidth = 1;
-        }
-        $("#<%= ungroupColumn.ClientID%> ").ejButton("disable");
-    });
-    function begin(args) {
-         if (args.requestType == "grouping") {
-             if (this.model.groupSettings.groupedColumns.length == this.model.columns.length) {
-                 args.cancel = true;
-                 alert("Atleast one column must be in grid");
-                 group = false;
-             }
-         }
-    }
     function clicktoGroup(args) {
         var gridObj = $('#<%= FlatGrid.ClientID %>').data("ejGrid");
         var dropdownobj = $('#<%= groupcolumnname.ClientID %>').data("ejDropDownList");
         var groupcolumnname = dropdownobj.getValue().replace(/\s*/g, "");
         if (this.element.attr('id').indexOf("ungroupColumn") == -1) {
         gridObj.groupColumn(groupcolumnname);
-        if (group) {
-                $("#<%= groupColumn.ClientID %>").ejButton("disable");
-                $("#<%= ungroupColumn.ClientID %>").ejButton("enable");
-            }
+        $("#<%= groupColumn.ClientID %>").ejButton("disable");
+        $("#<%= ungroupColumn.ClientID %>").ejButton("enable");
         }
         else {
                 gridObj.ungroupColumn(groupcolumnname);
