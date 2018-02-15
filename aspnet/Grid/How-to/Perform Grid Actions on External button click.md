@@ -241,4 +241,4 @@ The following code example explains the above behavior.
 
 {% endtabs %}
 The following output is displayed as a result of the above code example.
-![](externalsearch_images/Actionswithexternalbutton_img1.png)
+![](ExternalSearch_images/Actionswithexternalbutton_img1.png)
