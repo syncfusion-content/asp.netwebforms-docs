@@ -2,7 +2,7 @@
 layout: post
 title: Grouping with Grid widget for Syncfusion Essential ASP
 description: How to enable grouping and its functionalities
-platform: ejweb
+platform: aspnet
 control: Grid
 documentation: ug
 ---
