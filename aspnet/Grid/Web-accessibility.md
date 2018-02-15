@@ -2,7 +2,7 @@
 layout: post
 title: Web accessibility with Grid widget for Syncfusion Essential ASP.NET
 description: Web accessibilties standard used in Grid
-platform: ejweb
+platform: aspnet
 control: Grid
 documentation: ug
 ---

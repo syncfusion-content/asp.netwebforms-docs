@@ -2,7 +2,7 @@
 layout: post
 title: Localization with Grid widget for Syncfusion Essential ASP.NET
 description: How to use globalization and localization
-platform: ejweb
+platform: aspnet
 control: Grid
 documentation: ug
 ---

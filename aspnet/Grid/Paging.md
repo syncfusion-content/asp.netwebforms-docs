@@ -2,7 +2,7 @@
 layout: post
 title: Paging with Grid widget for Syncfusion Essential ASP
 description: How to enable paging and its functionalites.
-platform: ejweb
+platform: aspnet
 control: Grid
 documentation: ug
 ---

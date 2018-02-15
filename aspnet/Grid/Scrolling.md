@@ -2,7 +2,7 @@
 layout: post
 title: Scrolling with Grid widget for Syncfusion Essential ASP
 description: How to enable scrolling and its functionalities
-platform: ejweb
+platform: aspnet
 control: Grid
 documentation: ug
 ---
