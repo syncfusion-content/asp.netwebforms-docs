@@ -34,7 +34,7 @@ The following code example explains the above behavior.
 <table>
     <tr>
         <td><b>CRUD</b><br><ej:Button Type="Button" ClientSideOnClick="addRecord" runat="server" Text="AddRecord"></ej:Button><br><ej:Button Type="Button" ClientSideOnClick="deleteRecord" runat="server" Text="DeleteRecord"></ej:Button><br><ej:Button Type="Button" ClientSideOnClick="deleteRecord" runat="server" Text="DeleteRecord"></ej:Button></td>
-        <td><b>Filtering</b><br><br><ej:DropDownList ID="OrderList" runat="server" DataTextField="OrderID"  WatermarkText="Select Filter value" Width="230" ClientSideOnSelect="Filterfn" >
+        <td><b>Filtering</b><br><br><ej:DropDownList ID="filtercolumnone" runat="server" DataTextField="OrderID" SelectedItemIndex=0  WatermarkText="Select ID" Width="230" >
              <Items>
                     <ej:DropDownListItem Text="10001" Value="10001"></ej:DropDownListItem>
                     <ej:DropDownListItem Text="10002" Value="10002"></ej:DropDownListItem>
@@ -42,7 +42,16 @@ The following code example explains the above behavior.
                     <ej:DropDownListItem Text="10004" Value="10004"></ej:DropDownListItem>
                     <ej:DropDownListItem Text="10005" Value="10005"></ej:DropDownListItem>
                 </Items>
-            </ej:DropDownList><br><ej:Button Type="Button" ClientSideOnClick="clearfilterfn" runat="server" Text="Clear Filter"></td>
+            </ej:DropDownList>
+      <ej:DropDownList ID="filtercolumntwo" runat="server" DataTextField="EmployeeID" SelectedItemIndex=0  WatermarkText="Select ID" Width="230" >
+             <Items>
+                    <ej:DropDownListItem Text="1" Value="1"></ej:DropDownListItem>
+                    <ej:DropDownListItem Text="2" Value="2"></ej:DropDownListItem>
+                    <ej:DropDownListItem Text="3" Value="3"></ej:DropDownListItem>
+                    <ej:DropDownListItem Text="4" Value="4"></ej:DropDownListItem>
+                    <ej:DropDownListItem Text="5" Value="5"></ej:DropDownListItem>
+                </Items>
+            </ej:DropDownList><br><ej:Button Type="Button" ClientSideOnClick="Filterfn" runat="server" Text="Filter"></ej:Button><ej:Button Type="Button" ClientSideOnClick="clearfilterfn" runat="server" Text="Clear Filter"></td>
         <td><b>Grouping</b><br><br>
             <ej:DropDownList ID="groupcolumnname" runat="server" ClientSideOnChange="Onchange" SelectedItemIndex="0" Width="115px">
                 <Items>
@@ -161,10 +170,14 @@ The following code example explains the above behavior.
         var gridObj = $('#<%= FlatGrid.ClientID %>').data("ejGrid");
         gridObj.updateRecord("OrderID", { OrderID: 10249, EmployeeID: 3 }); 
     }
-    var group = true;
     function Filterfn(args) {
-        var gridObj = $("#<%= FlatGrid.ClientID %>").data("ejGrid");
-        gridObj.filterColumn("OrderID", "equal", args.value, "and", true);
+        var obj = $('#<%= FlatGrid.ClientID %>').data("ejGrid");
+        var one = $('#<%= filtercolumnone.ClientID %>').data("ejDropDownList");
+        var two = $('#<%= filtercolumntwo.ClientID %>').data("ejDropDownList");
+        var One = one.getValue();
+        var Two = two.getValue();
+        obj.filterColumn("OrderID", "equal", One, "and", true);
+        obj.filterColumn("EmployeeID", "equal", Two, "and", true);
     }
     function clearfilterfn(args) {
         var gridObj = $("#<%= FlatGrid.ClientID %>").data("ejGrid");
