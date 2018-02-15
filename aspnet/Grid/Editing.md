@@ -2,7 +2,7 @@
 layout: post
 title: Editing with Grid widget for Syncfusion Essential ASP.NET
 description:  How to perform editing and configure edit time functionalities like edit type, edit time controls etc
-platform: ejweb
+platform: aspnet
 control: Grid
 documentation: ug
 ---
