@@ -205,7 +205,7 @@ The below screenshot shows the control exported to Excel document showing its ow
 
 ## Exporting Customization
 
-You can add title, description and enable/disable styling to the exporting document by using title, description and exportWithStyle properties respectively obtained in the `BeforeExport` event.
+You can add title, description to the exporting document by using title, description properties respectively obtained in the `BeforeExport` event. Similarly, you can enable or disable styling on the exported document by using the `exportWithStyle` property.
 
 {% highlight html %}
 
@@ -314,17 +314,17 @@ void olapClientHelper_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook work
 
 ### Exporting complete data on Paging
 
-You can export the complete data when Paging option is enabled by setting the `EnableCompleteDataExport` property as true. It supports in both JSON and PivotEngine export for all kind of available exporting formats in PivotClient.
+When paging is enabled, you can export the complete data by enabling the `EnableCompleteDataExport` property. It is supported in both types of JSON and PivotEngine export and it is applicable for all kinds of exporting formats available in PivotClient.
 
 {% highlight html %}
 <html>
 //...
 <body>    
-    <ej:PivotClient ID="PivotClient1" runat="server" EnableCompleteDataExport="true">        
+    <ej:PivotClient ID="PivotClient1" runat="server" EnableCompleteDataExport="true">
     </ej:PivotClient>
 	//...
 </body>
-</html>                                            
+</html>
 
 {% endhighlight %}
 

@@ -396,7 +396,7 @@ function exportBtnClick(args)
     pGridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.PDF);
 }
 
-{% endhighlight %} 
+{% endhighlight %}
 
 ### CSV Export
 
@@ -449,7 +449,7 @@ N> By default excel document will be exported to ".xls" format using PivotEngine
     </script>
 </body>
 
-</html>                                            
+</html>
 
 {% endhighlight %}
 
@@ -502,7 +502,7 @@ public void Export(System.IO.Stream stream)
 
 ## Exporting Customization
 
-You can add title, description and enable/disable styling to the exporting document by using title, description and exportWithStyle properties respectively obtained in the `BeforeExport` event.
+You can add title, description to the exporting document by using title, description properties respectively obtained in the `BeforeExport` event. Similarly, you can enable or disable styling on the exported document by using the `exportWithStyle` property.
 
 {% highlight html %}
 
@@ -526,7 +526,7 @@ You can add title, description and enable/disable styling to the exporting docum
             args.description = "Displays both OLAP and Relational datasource in tabular format";
 			args.exportWithStyle = true;   // by default it sets as true. It improves performance on exporting huge data when it sets as false.
         }
-    </script>                                    
+    </script>
 
 {% endhighlight %}
 
@@ -648,17 +648,17 @@ void htmlHelper_CSVExport(object sender, string csvString)
 
 ### Exporting complete data on Paging
 
-You can export the complete data when Paging option is enabled by setting the `EnableCompleteDataExport` property as true. It supports in both JSON and PivotEngine export for all kind of available exporting formats in PivotGrid.
+When paging is enabled, you can export the complete data by enabling the `EnableCompleteDataExport` property. It is supported in both types of JSON and PivotEngine export and it is applicable for all kinds of exporting formats available in PivotGrid.
 
 {% highlight html %}
 <html>
 //...
 <body>
-    <ej:PivotGrid ID="PivotGrid1" runat="server" EnableCompleteDataExport="true">        
+    <ej:PivotGrid ID="PivotGrid1" runat="server" EnableCompleteDataExport="true">
     </ej:PivotGrid>
 	//...
 </body>
-</html>                                            
+</html>
 
 {% endhighlight %}
 
@@ -677,4 +677,3 @@ The below screenshot shows the PivotGrid control exported to PDF document.
 The below screenshot shows the PivotGrid control exported to CSV document.
 
 ![](Exporting_images/ExportPivotCSV.png)
-
