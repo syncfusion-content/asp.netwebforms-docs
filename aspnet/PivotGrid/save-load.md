@@ -436,3 +436,180 @@ To load a stored report of PivotGrid from local storage, we need to call the `Lo
 </script>
 
 {% endhighlight %}
+
+
+# Save and Load XML Report
+
+I> This feature is applicable only for Relational datasource only at Server Mode.
+
+Allows you to save the current report of PivotGrid as XML and render the control with the saved XML report later.
+
+N> The following are the list of additional dependency libraries that need to add into your Web Application.
+
+    * Syncfusion.PivotAnalysis.Wpf
+    * Syncfusion.Grid.Wpf
+
+## Save XML Report 
+
+By using 'saveXMLReport' method, we can save the current report of PivotGrid as XML file. 
+
+{% highlight HTML %}
+
+    <ej:PivotGrid ID="PivotGrid1" Url="/Relational" runat="server" ClientIDMode="Static"></ej:PivotGrid>
+    <ej:Button runat="server" ClientSideOnClick="saveReport" Text="Save"></ej:Button>
+
+<script>
+
+    function saveReport() {
+        pGridObj = $('#PivotGrid1').data("ejPivotGrid");
+        url = "/Relational/XmlExport";
+        pGridObj.saveXMLReport("XML", url); // YOu can specify XML file name here
+    }
+    
+</script>
+
+{% endhighlight %}
+
+A Service method needs to be added in WebAPI for export current report as XML.
+
+For WebAPI controller, the below method needs to be added.
+
+N> The following are the list of namespaces to be added on top of the main class inside WebAPI controller file.
+
+    * using System.IO;
+    * using System.Xml;
+    * using System.Xml.Serialization;
+    * using Syncfusion.Windows.Controls.PivotGrid;
+
+{% highlight c# %}
+
+        PivotGrid htmlHelper = new PivotGrid();
+
+        [System.Web.Http.ActionName("XmlExport")]
+        [System.Web.Http.HttpPost]
+        public void XmlExport()
+        {
+            string clientReport = HttpContext.Current.Request.Form.GetValues(0)[0];
+            string fileName = HttpContext.Current.Request.Form.GetValues(1)[0];
+            htmlHelper.ExportToXml(clientReport, fileName, HttpContext.Current.Response);
+        }
+
+{% endhighlight %}
+
+## Load XML Report
+
+By using below methods, we can load the XML report in PivotGrid.
+
+{% highlight HTML %}
+
+    <ej:PivotGrid ID="PivotGrid1" Url="/Relational" runat="server" ClientIDMode="Static"></ej:PivotGrid>
+
+{% endhighlight %}
+
+Service methods need to be added in WebAPI for loading the stored XML report.
+
+For WebAPI controller, the below methods need to be added.
+
+{% highlight c# %}
+
+        PivotGrid htmlHelper = new PivotGrid();
+        JavaScriptSerializer serializer = new JavaScriptSerializer();
+        Dictionary<string, bool> clientSideAPI = new Dictionary<string, bool>();
+        Syncfusion.Windows.Controls.PivotGrid.PivotGridSerializer xmlSerializer = new Syncfusion.Windows.Controls.PivotGrid.PivotGridSerializer();
+        string filePath = HttpContext.Current.Server.MapPath(".").Split(new string[] { "\\api" }, StringSplitOptions.None)[0] + "\\pivot.xml";
+
+        [System.Web.Http.ActionName("XmlImport")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> XmlImport()
+        {
+            Dictionary<string, object> dictionary = new Dictionary<string, object>();
+            StreamReader stream = null;
+            stream = new StreamReader(@"C:\\Users\\Desktop\\file.xml"); //here you can specify xml file path
+            string xmlString = stream.ReadToEnd();
+            XmlDocument doc = new XmlDocument();
+            doc.LoadXml(xmlString);
+            if (doc.DocumentElement.Name.ToString() == "PivotGridSerializer")
+            {
+                XmlSerializer GridSerializer = new XmlSerializer(typeof(PivotGridSerializer), new Type[] { typeof(DoubleTotalSummary), typeof(CountSummary), typeof(IntTotalSummary), typeof(DoubleAverageSummary), typeof(DoubleMaxSummary), typeof(DoubleMinSummary), typeof(DoubleStDevSummary), typeof(DoubleVarianceSummary), typeof(DecimalTotalSummary) });
+                PivotGridSerializer PivotGridControl = new PivotGridSerializer();
+                PivotReport pivotReport = new PivotReport();
+                using (TextReader reader = new StringReader(xmlString))
+                {
+                    if (doc.DocumentElement.Name.ToString() == "PivotGridSerializer")
+                        PivotGridControl = (PivotGridSerializer)GridSerializer.Deserialize(reader);
+
+                    htmlHelper.PivotReport = this.UpdateXMLReport(PivotGridControl, pivotReport, doc.DocumentElement.Name.ToString());
+
+                }
+            }
+            else if (doc.DocumentElement.Name.ToString() == "PivotReport")
+            {
+                htmlHelper.ImportFromXml(xmlString);
+            }
+            var ser = serializer.Serialize(clientSideAPI);
+            dictionary = htmlHelper.GetJsonData("xmlImport", ProductSales.GetSalesData(), ser, null);
+            return dictionary;
+        }
+
+
+        private PivotReport UpdateXMLReport(PivotGridSerializer PivotGridControl, PivotReport pivotReport, string documentName)
+        {
+            PivotReport report = new PivotReport();
+            if (documentName == "PivotGridSerializer")
+            {
+                foreach (PivotItem item in PivotGridControl.PivotRows)
+                    report.PivotRows.Add(item);
+                foreach (PivotItem item in PivotGridControl.PivotColumns)
+                    report.PivotColumns.Add(item);
+                foreach (PivotComputationInfo item in PivotGridControl.PivotCalculations)
+                    report.PivotCalculations.Add(item);
+                foreach (FilterExpression item in PivotGridControl.Filters)
+                {
+                    item.DimensionName = (string.IsNullOrEmpty(item.DimensionName)) ? item.DimensionHeader : item.DimensionName;
+                    report.Filters.Add(item);
+                }
+                foreach (var item1 in report.PivotColumns)
+                {
+                    var sortItem = PivotGridControl.GridSortCollection.Where(i => i.FieldMappingName == item1.FieldMappingName).FirstOrDefault();
+                    if (sortItem != null && sortItem.IsDescSort)
+                    {
+                        item1.Comparer = new Syncfusion.JavaScript.ReverseOrderComparer();
+                    }
+                }
+                foreach (var item1 in report.PivotRows)
+                {
+                    var sortItem = PivotGridControl.GridSortCollection.Where(i => i.FieldMappingName == item1.FieldMappingName).FirstOrDefault();
+                    if (sortItem != null && sortItem.IsDescSort)
+                    {
+                        item1.Comparer = new Syncfusion.JavaScript.ReverseOrderComparer();
+                    }
+                }
+                clientSideAPI.Add("ShowGroupingBar", PivotGridControl.ShowGroupingBar);
+                clientSideAPI.Add("ShowGrandTotals", PivotGridControl.ShowGrandTotals);
+                clientSideAPI.Add("AllowResizeColumns", PivotGridControl.AllowResizeColumns);
+                clientSideAPI.Add("ResizePivotGridToFit", PivotGridControl.ResizePivotGridToFit);
+                clientSideAPI.Add("AllowSelection", PivotGridControl.AllowSelection);
+                clientSideAPI.Add("DeferLayoutUpdate", PivotGridControl.DeferLayoutUpdate);
+                clientSideAPI.Add("FreezeHeaders", PivotGridControl.FreezeHeaders);
+                clientSideAPI.Add("ShowFieldList", PivotGridControl.ShowFieldList);
+                clientSideAPI.Add("ShowSubTotals", PivotGridControl.ShowSubTotals);
+            }
+            return report;
+        }
+
+        [System.Web.Http.ActionName("InitializeGrid")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> InitializeGrid(Dictionary<string, object> jsonResult)
+        {
+            StreamReader stream = null;
+            stream = new StreamReader(filePath); //here you can specify xml file path
+            string xmlString = stream.ReadToEnd();
+            XmlDocument doc = new XmlDocument();
+            doc.LoadXml(xmlString);
+            htmlHelper.ImportFromXml(xmlString);
+            var ser = serializer.Serialize(clientSideAPI);
+            dict = htmlHelper.GetJsonData("xmlImport", ProductSales.GetSalesData(), ser, null);
+            return dict;
+        }
+
+{% endhighlight %}
