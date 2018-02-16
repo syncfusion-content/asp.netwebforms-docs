@@ -2,7 +2,7 @@
 layout: post
 title: Searching with Grid widget for Syncfusion Essential ASP
 description: How to enable search option and its functionalities
-platform: ejweb
+platform: aspnet
 control: Grid
 documentation: ug
 --- 

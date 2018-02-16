@@ -2,7 +2,7 @@
 layout: post
 title: Toolbar with Grid widget for Syncfusion Essential ASP.NET
 description: How to enable toolbar and its actions 
-platform: ejweb
+platform: aspnet
 control: Grid
 documentation: ug
 ---

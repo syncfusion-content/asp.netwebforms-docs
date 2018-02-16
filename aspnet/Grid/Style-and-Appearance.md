@@ -2,7 +2,7 @@
 layout: post
 title: Style and Appearance with Grid widget for Syncfusion Essential ASP.NET
 description: How to apply styling and appearance
-platform: ejweb
+platform: aspnet
 control: Grid
 documentation: ug
 ---

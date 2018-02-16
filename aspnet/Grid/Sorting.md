@@ -2,7 +2,7 @@
 layout: post
 title: Sorting with Grid widget for Syncfusion Essential ASP.NET
 description: How to enable sorting and its functionalities
-platform: ejweb
+platform: aspnet
 control: Grid
 documentation: ug
 ---

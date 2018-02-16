@@ -2,7 +2,7 @@
 layout: post
 title: Filtering with Grid widget for Syncfusion Essential ASP.NET
 description: How to enable filtering and its functionalities
-platform: ejweb
+platform: aspnet
 control: Grid
 documentation: ug
 ---

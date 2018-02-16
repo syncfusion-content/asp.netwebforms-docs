@@ -2,7 +2,7 @@
 layout: post
 title: Server-side-event-arguments with Grid widget for Syncfusion Essential ASP.NET
 description: server side event arguments in asp grid
-platform: ejweb
+platform: aspnet
 control: Grid
 documentation: ug
 ---
