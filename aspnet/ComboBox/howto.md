@@ -235,3 +235,70 @@ In the following sample, showcase that how to work autofill with ComboBox.
 {% endtabs %}
 
 ![](HowTo-images/image2.png)
+
+## Validation of ComboBox using jQuery Validator
+
+Validation of ComboBox can be done on form submission using jQuery Validations by adding name attribute for ComboBox through `htmlAttributes` property. Also, you can remove this error message during item selection through select or change event of ComboBox
+
+N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
+
+{% tabs %}
+
+{% highlight html%}
+
+    <div class="frame">
+    <div class="row">
+        <div class="col-xs-8 col-sm-4">
+            <span class="txt">Select Country</span>
+            <ej:ComboBox ID="countryList" runat="server"         
+            AutoFill="true"
+             DataValueField="text" DataTextField="text" Placeholder="Select a Country" Width="100%"  ClientSideOnSelect="select">
+            </ej:ComboBox>
+            <asp:Label class="message" runat="server"></asp:Label>
+            <br />
+            <asp:Button ID="valid" runat="server" OnClientClick="validate()" Text="Validate" />
+        </div>                   
+    </div>
+    </div>
+    <script>
+        function validate() {
+            var rules = {};
+            $("form[id$=form1] input[name$=select]").each(function () {
+                rules[this.name] = "required";
+            });
+            $('form[id$="form1"]').validate({
+                rules: rules,
+                errorPlacement: function (error, element) {
+                    $(error).insertAfter($(".message"));
+                }
+            });
+        }
+        function select(args) {
+            if (args.value != "") {
+                $("label.error").css("display", "none")  //hide error message when value is selected.
+            }
+        }
+    </script>
+     
+{% endhighlight%}
+
+{% highlight c# %}
+
+        Dictionary<string, object> htmlAttributes = new Dictionary<string, object>();
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            htmlAttributes.Add("name", "select");
+            List<CountryList> countries = new List<CountryList>();
+            countries.Add(new CountryList(11, "a", "Algeria"));
+            countries.Add(new CountryList(12, "a", "Armenia"));
+            countries.Add(new CountryList(13, "a", "Bangladesh"));
+            countries.Add(new CountryList(14, "a", "Cuba"));
+            countries.Add(new CountryList(15, "b", "Denmark"));
+            countries.Add(new CountryList(16, "b", "Egypt"));
+            this.countryList.DataSource = countries;
+            this.countryList.HtmlAttributes = htmlAttributes;
+        }	
+		
+{% endhighlight %}
+
+{% endtabs %}
