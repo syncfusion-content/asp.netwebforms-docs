@@ -471,7 +471,7 @@ By using the 'saveXMLReport' method, you can save the current report of PivotGri
 
 The service method should be added in WebAPI for exporting the current report as XML.
 
-For **WebAPI controller**, the following mehod should be added:
+For **WebAPI controller**, the following method should be added:
 
 N> The following namespaces should be added on the top of the main class in WebAPI controller file.
 
