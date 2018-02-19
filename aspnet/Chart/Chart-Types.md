@@ -1711,7 +1711,7 @@ Polar chart is created by setting the series Type as **Polar** in the chart seri
 
 ### DrawType
 
-Polar **DrawType** property is used to change the series plotting type to *Line*, *scatter*, *rangeColumn*, *stackingArea*, *spline*, *Column* or *Area*. The default value of DrawType is **Line**.  
+Polar **DrawType** property is used to change the series plotting type to *Line*, *Column* or *Area*. The default value of DrawType is **Line**.  
 
 {% highlight html %}
 
@@ -1774,7 +1774,7 @@ To create a Radar chart, you can specify the series Type as **Radar** in the cha
 
 ### DrawType
 
-Radar **DrawType** property is used to change the series plotting type to *Line*, *scatter*, *rangeColumn*, *stackingArea*, *spline*, *Column* or *Area*. The default value of DrawType is **Line**.
+Radar **DrawType** property is used to change the series plotting type to *Line*, *Column* or *Area*. The default value of DrawType is **Line**.
 
 {% highlight html %}
 
