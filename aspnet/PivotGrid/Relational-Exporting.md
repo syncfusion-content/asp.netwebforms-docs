@@ -396,7 +396,7 @@ function exportBtnClick(args)
     pGridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.PDF);
 }
 
-{% endhighlight %}
+{% endhighlight %} 
 
 ### CSV Export
 
@@ -449,7 +449,7 @@ N> By default excel document will be exported to ".xls" format using PivotEngine
     </script>
 </body>
 
-</html>
+</html>                                            
 
 {% endhighlight %}
 
@@ -677,3 +677,4 @@ The below screenshot shows the PivotGrid control exported to PDF document.
 The below screenshot shows the PivotGrid control exported to CSV document.
 
 ![](Exporting_images/ExportPivotCSV.png)
+
