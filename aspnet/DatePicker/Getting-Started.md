@@ -96,7 +96,7 @@ Below code shows how to assign values at initialization
 
     <%--initialize DatePicker component with current date--%>
 
-    <ej:DatePicker runat="server" ID="datepicker" Value=<%= DateTime.Now.ToLongTimeString() %>>
+    <ej:DatePicker runat="server" ID="datePicker" Value=<%# DateTime.Now %>">
     </ej:DatePicker>
 
 {% endhighlight %}
@@ -112,7 +112,7 @@ You can assign values after initialization of EJWEB DatePicker (it helps to get 
 
             //create instance for datePicker.
             // only after control creation we can get dateObj otherwise it throws exception.
-            var dateObj = $("#datepicker").ejDatePicker('instance');
+            var dateObj = $("#datePicker").ejDatePicker('instance');
 
             //set value using date object
             dateObj.option('value', new Date());

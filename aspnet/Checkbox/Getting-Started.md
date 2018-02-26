@@ -178,7 +178,7 @@ Add the following code in the <body> element of the corresponding ASPX page.
                     <ej:CheckBox ID="Checkbox2" runat="server" Value="WAV">
                     </ej:CheckBox>
                     <label for="Checkbox2">
-                        *.wav</label>
+                        *.WAV</label>
                 </td>
             </tr>
         </table>
@@ -192,7 +192,7 @@ Add the following code in the <body> element of the corresponding ASPX page.
                     <ej:CheckBox ID="Checkbox3" runat="server" Value="AVI">
                     </ej:CheckBox>
                     <label for="Checkbox3">
-                        *.avi</label>
+                        *.AVI</label>
                 </td>
                 <td>
                     <ej:CheckBox ID="Checkbox4" runat="server" Value="MP4">
