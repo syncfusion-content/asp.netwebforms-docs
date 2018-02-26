@@ -17,7 +17,7 @@ This section covers the information required to populate a simple pivot gauge wi
 
 Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project **“PivotGaugeDemo”**.
 
-Now, add a web form to the ASP.NET empty web application. For adding a web form, right-click the project in the solution explorer and select **Add > New Item**. In the Add New Item window, select web form and name it Default.aspx, and then click Add.
+Now, add a Web Form to the ASP.NET empty web application. For adding a Web Form, right-click the project in the solution explorer and select **Add > New Item**. In the Add New Item window, select Web Form and name it Default.aspx, and then click Add.
 
 Now, add the following dependency libraries as references to your web application. To add them to your application, right-click **References** in the solution explorer and select Add Reference. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
 
@@ -183,7 +183,7 @@ N> ASP.NET empty web application contains a service that will transfer the data 
 
 Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project **“PivotGaugeDemo”**.
 
-Now, add a web form to the ASP.NET empty web application. For adding a web form, right-click the project in the solution explorer and select **Add > New Item**. In the Add New Item window, select web form and name it Default.aspx, and then click Add.
+Now, add a Web Form to the ASP.NET empty web application. For adding a Web Form, right-click the project in the solution explorer and select **Add > New Item**. In the Add New Item window, select Web Form and name it Default.aspx, and then click Add.
 
 Add the following dependency libraries as references to your web application. To add them to your application, right-click **References** in the solution explorer and select Add Reference. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 

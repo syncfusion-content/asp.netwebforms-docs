@@ -259,7 +259,7 @@ The following screenshot displays **step area chart**:
 Step Area Chart
 {:.caption}
 
-## Spline area cchart
+## Spline area chart
 
 The **spline area** chart is similar to the area chart, but differs by connecting data points in a series. This connects each series of points by a smooth **spline curve**.
 

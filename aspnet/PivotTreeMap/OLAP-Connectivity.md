@@ -282,7 +282,7 @@ The endpointBehaviors contain all behaviors for an endpoint. You can link each e
 
 {% endhighlight %}
 
-N> In this example, the **“PivotTreeMapDemo”** indicates the name and root namespace of the application that is created in the visual studio IDE and the **“OlapService”** indicates the name of the created WCF service.
+N> In this example, the **“PivotTreeMapDemo”** indicates the name and root namespace of the application that is created in the Visual Studio IDE and the **“OlapService”** indicates the name of the created WCF service.
 
 The above code will generate a simple pivot tree map showing customer count over different customer geographic locations across a period of fiscal years.
 

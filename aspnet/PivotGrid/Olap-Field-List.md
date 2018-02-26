@@ -134,7 +134,7 @@ The search option available in the field list allows you to search a specific va
 ![](PivotTable-Field-List_images/search.png)
 
 ## Filtering
-Values can be filtered by checking/unchecking the check box besides them in the filter pop-up window. At least, one value should in the checked state while filtering. If else, the Ok button will be disabled.
+Values can be filtered by checking/unchecking the check box besides them in the filter pop-up window. At least, one value should in the checked state while filtering. If else, the OK button will be disabled.
 
 ![](PivotTable-Field-List_images/filter.png) 
 

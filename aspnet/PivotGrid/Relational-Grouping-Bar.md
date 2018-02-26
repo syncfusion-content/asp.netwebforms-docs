@@ -75,7 +75,7 @@ The search option available in the grouping bar allows you to search a specific 
 
 ## Filtering values
 
-The filtering option available in the grouping bar allows you to select a specific set of values that should be displayed in the pivot grid control. Atleast, one value should be present in checked state while filtering, otherwise, the Ok button will be disabled.
+The filtering option available in the grouping bar allows you to select a specific set of values that should be displayed in the pivot grid control. At least, one value should be present in checked state while filtering, otherwise, the OK button will be disabled.
 
 ![](Grouping-Bar_images/filter.png)
 

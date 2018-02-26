@@ -47,7 +47,7 @@ Following are the navigation options available in the pager:
 
 ## Virtual scrolling
 
-The virtual ccrolling is a technique that allows you to view the pivot grid information page by page with the use of vertical and horizontal scrollbar. You can enable the virtual scrolling option in the pivot grid by setting the [`EnableVirtualScrolling`] property to true. You can provide the page size and current page details for each axis in the [`PagerOptions`] property.
+The virtual scrolling is a technique that allows you to view the pivot grid information page by page with the use of vertical and horizontal scrollbar. You can enable the virtual scrolling option in the pivot grid by setting the [`EnableVirtualScrolling`] property to true. You can provide the page size and current page details for each axis in the [`PagerOptions`] property.
 
 {% highlight html %}
 

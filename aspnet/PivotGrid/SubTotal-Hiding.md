@@ -7,7 +7,7 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Sub total thiding
+# Sub total hiding
 
 N> This feature is applicable only for the relational data source.
 

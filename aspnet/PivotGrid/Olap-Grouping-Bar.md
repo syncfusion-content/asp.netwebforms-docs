@@ -74,7 +74,7 @@ Search option available in the grouping bar allows you to search a specific valu
 
 ## Filtering values
 
-The filtering option available in the grouping bar allows you to select a specific set of values that should be displayed in the pivot grid control. At least, one value should present in the checked state while filtering. If else, the Ok button will be disabled.
+The filtering option available in the grouping bar allows you to select a specific set of values that should be displayed in the pivot grid control. At least, one value should present in the checked state while filtering. If else, the OK button will be disabled.
 
 ![](Grouping-Bar_images/OlapFilterIcon.png)
 

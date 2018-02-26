@@ -18,7 +18,7 @@ This section covers the information required to populate a simple pivot client w
 
 Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project **“PivotClientDemo”**.
 
-Now, add a web form to the empty web application. For adding a web form, right-click the project in the solution explorer and select **Add > New Item**. In the Add New Item window, select web form and name it  GettingStarted.aspx, and then click Add.
+Now, add a Web Form to the empty web application. For adding a Web Form, right-click the project in the solution explorer and select **Add > New Item**. In the Add New Item window, select Web Form and name it  GettingStarted.aspx, and then click Add.
 
 Now, add the following dependency libraries as references to your web application. To add them to your application, right-click **References** in the solution explorer and select Add Reference. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
 
@@ -168,7 +168,7 @@ N> ASP.NET MVC web application contains a service that will transfer the data to
 
 Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project **“PivotClientDemo”**.
 
-Now, add a web form to the empty web application. For adding a web form, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select web form and name it `GettingStarted.aspx`, and then click Add.
+Now, add a Web Form to the empty web application. For adding a Web Form, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select Web Form and name it `GettingStarted.aspx`, and then click Add.
 
 To set an appropriate start page, right-click the **“GettingStarted.aspx”** in the solution explorer and select **“Set As Start Page”**.
 

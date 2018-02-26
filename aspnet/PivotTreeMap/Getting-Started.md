@@ -17,7 +17,7 @@ This section covers the information required to populate a simple pivot tree map
 
 Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project **“PivotTreeMapDemo”**.
 
-Now, add a web form to the empty web application. For adding a web form, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select web form and name it `GettingStarted.aspx`, and then click Add.
+Now, add a Web Form to the empty web application. For adding a Web Form, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select Web Form and name it `GettingStarted.aspx`, and then click Add.
 
 To set an appropriate start page, right-click the **“GettingStarted.aspx”** in the solution explorer and select **“Set As Start Page”**.
 
@@ -146,7 +146,7 @@ N> This section is illustrated by creating a simple web application through the 
 ###Project initialization
 Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project **“PivotTreeMapDemo.”**
 
-Now, add a web form to the empty web application. For adding a web form, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select web form and name it `GettingStarted.aspx`, and then click Add.
+Now, add a Web Form to the empty web application. For adding a Web Form, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select Web Form and name it `GettingStarted.aspx`, and then click Add.
 
 To set an appropriate start page, right-click the **“GettingStarted.aspx”** in the solution explorer and select **“Set As Start Page”**.
 
@@ -222,7 +222,7 @@ After placing the control in the web page, add the **‘ScriptManager’** next 
 
 {% endhighlight %}
 
-The `url` property in the pivot tree map control points the service endpoint, where the data is processed and fetched in the form of JSON. The service used for the pivot tree map control as endpoint are WCF and WebAPI.
+The `Url` property in the pivot tree map control points the service endpoint, where the data is processed and fetched in the form of JSON. The service used for the pivot tree map control as endpoint are WCF and WebAPI.
 
 N> The above "GettingStarted.aspx" contains WebAPI URL, which is “/Olap”. If the WCF service is used as an endpoint, then the URL will look like "/OlapService.svc".
 
