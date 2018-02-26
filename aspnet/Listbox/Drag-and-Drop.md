@@ -135,7 +135,7 @@ Both the ListBox widgets are bound to a remote data source.
     </div>
     <div class="control">
         <div>Selected skills </div>
-        <ej:ListBox ID="selectedskills" runat="server" AllowDrop="true"></ej:ListBox>
+        <ej:ListBox ID="selectedSkills" runat="server" AllowDrop="true"></ej:ListBox>
     </div>
     <style>
         .control {
@@ -170,15 +170,15 @@ protected void Page_Load(object sender, EventArgs e)
 
 
 
-            selectedskills.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders";
+            selectedSkills.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders";
 
-            selectedskills.Query = "ej.Query().take(10)";
+            selectedSkills.Query = "ej.Query().take(10)";
 
-            selectedskills.AllowDrop = true;
+            selectedSkills.AllowDrop = true;
 
-            selectedskills.DataTextField = "CustomerID";
+            selectedSkills.DataTextField = "CustomerID";
 
-            selectedskills.ClientSideOnItemDrop = "itemDropped";
+            selectedSkills.ClientSideOnItemDrop = "itemDropped";
 
 
 

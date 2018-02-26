@@ -89,12 +89,28 @@ For client mode, the page setting for categorical and series axes should be set 
 
 For server mode, the page settings for categorical and series axes are done only through the OlapReport object that is created in the WebAPI or WCF file.
 
+For Relational data source
+
+{% highlight c# %}
+
+PivotReport pivotReport = new PivotReport();
+pivotReport.PagerOptions.SeriesPageSize = 4;
+pivotReport.PagerOptions.CategoricalPageSize = 5;
+pivotReport.PagerOptions.SeriesCurrentPage = 1;
+pivotReport.PagerOptions.CategoricalCurrentPage = 1;
+
+{% endhighlight %}
+
+For OLAP data source
+
 {% highlight c# %}
 
 OlapReport olapReport = new OlapReport();
 olapReport.CurrentCubeName = "Adventure Works";
 olapReport.EnablePaging = true;
 olapReport.PagerOptions.SeriesPageSize = 4;
-olapReport.PagerOptions.CategorialPageSize = 5;
+olapReport.PagerOptions.CategoricalPageSize = 5;
+olapReport.PagerOptions.CategoricalCurrentPage = 1;
+olapReport.PagerOptions.SeriesCurrentPage = 1;
 
 {% endhighlight %}

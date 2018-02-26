@@ -21,22 +21,22 @@ In the code behind page, create a data list which contains the details about tre
     
         public partial class TreeViewFeatures : System.Web.UI.Page
         {
-            List<Loaddata> treeData = new List<Loaddata>();
+            List<loadData> treeData = new List<loadData>();
             protected void Page_Load(object sender, EventArgs e)
             {
                 var storedData = System.Web.HttpContext.Current.Session["modifiedData"];
                 if (storedData == null)
                 {
-                    treeData.Add(new Loaddata { Id = 1, Parent = 0, Text = "Item 1", Expanded = true });
-                    treeData.Add(new Loaddata { Id = 2, Parent = 0, Text = "Item 2" });
-                    treeData.Add(new Loaddata { Id = 3, Parent = 0, Text = "Item 3" });
-                    treeData.Add(new Loaddata { Id = 4, Parent = 0, Text = "Item 4" });
-                    treeData.Add(new Loaddata { Id = 5, Parent = 1, Text = "Item 1.1" });
-                    treeData.Add(new Loaddata { Id = 6, Parent = 1, Text = "Item 1.2" });
-                    treeData.Add(new Loaddata { Id = 7, Parent = 1, Text = "Item 1.3" });
-                    treeData.Add(new Loaddata { Id = 8, Parent = 3, Text = "Item 3.1" });
-                    treeData.Add(new Loaddata { Id = 9, Parent = 3, Text = "Item 3.2" });
-                    treeData.Add(new Loaddata { Id = 10, Parent = 5, Text = "Item 1.1.1" });
+                    treeData.Add(new loadData { Id = 1, Parent = 0, Text = "Item 1", Expanded = true });
+                    treeData.Add(new loadData { Id = 2, Parent = 0, Text = "Item 2" });
+                    treeData.Add(new loadData { Id = 3, Parent = 0, Text = "Item 3" });
+                    treeData.Add(new loadData { Id = 4, Parent = 0, Text = "Item 4" });
+                    treeData.Add(new loadData { Id = 5, Parent = 1, Text = "Item 1.1" });
+                    treeData.Add(new loadData { Id = 6, Parent = 1, Text = "Item 1.2" });
+                    treeData.Add(new loadData { Id = 7, Parent = 1, Text = "Item 1.3" });
+                    treeData.Add(new loadData { Id = 8, Parent = 3, Text = "Item 3.1" });
+                    treeData.Add(new loadData { Id = 9, Parent = 3, Text = "Item 3.2" });
+                    treeData.Add(new loadData { Id = 10, Parent = 5, Text = "Item 1.1.1" });
                     this.treeView.DataSource = treeData;
                 }
                 else
@@ -44,13 +44,13 @@ In the code behind page, create a data list which contains the details about tre
     
             }
             [System.Web.Services.WebMethod]
-            public static void StoreData(List<Loaddata> data)
+            public static void StoreData(List<loadData> data)
             {
                 System.Web.HttpContext.Current.Session["modifiedData"] = (data.Count > 0 ? data : null);
             }
     
         }
-        public class Loaddata
+        public class loadData
         {
             public int Id { get; set; }
             public int Parent { get; set; }
@@ -113,6 +113,40 @@ In the view page, add TreeView element and specify the scripts for sending modif
         </script>
         
     {% endhighlight %}
+
+You can also get the updated data source for remote data binding after performing the operation like editing, selecting/unselecting, expanding/collapsing, checking/unchecking and removing node. You cannot get the updated data source when you perform operation like drag and drop, adding node for remote data binding.
+
+The updated data source also contains custom attributes ("ContactTitle", "OrderID", "EmployeeID", "Freight") if you return these from server.
+
+Refer the following code block to know more about how to get updated data with custom attributes from TreeView for remote data binding.
+
+In the view page, add TreeView element and specify the scripts for getting updated data source.
+
+{% highlight html %}
+<button id="btn1" onclick="getSelectedNodeObject()" type="button">GetSelectedNodeObject</button>
+
+<ej:TreeView runat="server" ID="tree1" DataIdField="CustomerID" DataTextField="CustomerID" Query="ej.Query().from('Orders').select('CustomerID,OrderID,EmployeeID,Freight').take(3)">
+    <DataManager URL="//js.syncfusion.com/ejServices/Wcf/Northwind.svc/" CrossDomain="true"></DataManager>
+    <Child Id="Country" ParentId="CustomerID" Text="ContactName" Query="ej.Query().from('Customers').select('CustomerID,ContactTitle,ContactName,Country')">
+        <DataManager URL="//js.syncfusion.com/ejServices/Wcf/Northwind.svc/" CrossDomain="true"></DataManager>
+    </Child>
+</ej:TreeView>
+
+<script>
+    function getSelectedNodeObject() {
+        var treeObj = $("#<%=tree1.ClientID%>").data("ejTreeView");
+        var nodeId = treeObj.getSelectedNode().attr("id"); //get selected node id
+        if (nodeId != null) {
+            var node = treeObj.getTreeData(nodeId); //get the given node object
+            if (node[0].OrderID != null)
+                alert("The OrderID of node '" + node[0].CustomerID + "' is: '" + node[0].OrderID + "'");
+            else
+                alert("The ContactTitle of node '" + node[0].ContactName + "' is: '" + node[0].ContactTitle + "'");
+        } else
+            alert("Select any node");
+    }
+</script>
+{% endhighlight %}
     
 ## TreeView context menu to process node operations.
 
@@ -194,7 +228,7 @@ In the view page, add TreeView element and specify context menu items.
             <ej:Menu
                 ID="Menu1"
                 MenuType="ContextMenu"
-                ClientSideOnClick="menuclick"
+                ClientSideOnClick="menuClick"
                 ClientSideOnBeforeContextOpen="beforeOpen"
                 OpenOnClick="false"
                 runat="server"
@@ -237,7 +271,7 @@ Define menu events in the script as follows,
                     treeviewObj.selectNode(selectedNode);
                 }
             }
-            function menuclick(args) {
+            function menuClick(args) {
                 if (args.events.text == "Add New Item") {
                     treeviewObj.addNode("Item" + tabIndex, null, selectedNode);
                     tabIndex++;
@@ -314,10 +348,10 @@ In the view page, add TreeView element and map the properties defined in to the
             Text="Sort Countries"
             Type="Button"
             runat="server"
-            ClientSideOnClick="sortConuntries">
+            ClientSideOnClick="sortCountries">
         </ej:Button>
         <script type="text/javascript">
-            function sortConuntries() {
+            function sortCountries() {
                 var tree = $("#<%= treeview.ClientID %>").data("ejTreeView");
                 TreeNodeData = sortResults(tree.model.fields.dataSource, "Text", true);
                 tree.model.fields.dataSource = TreeNodeData;
@@ -501,7 +535,7 @@ In the view page, add TreeView element and map the properties defined in to the
                 <!-- TextBox Element -->
                 <ej:MaskEdit
                     runat="server"
-                    ID="inputbox"
+                    ID="inputBox"
                     Width="100%"
                     InputMode="Text"
                     MaskFormat=""
@@ -520,17 +554,17 @@ In the view page, add TreeView element and map the properties defined in to the
             </div>
         </div>
         <script type="text/javascript">
-            var treeobj, inputObj, count = 0;
-            var onFirstChk = true;
+            var treeObj, inputObj, count = 0;
+            var onFirstCheck = true;
             window._temp = [];
             function onCreate(args) {
                 // Creating Objects for TreeView & MaskEdit TextBox
-                treeobj = $("#<%= treeview.ClientID %>").data("ejTreeView");
-                inputObj = $("#<%= inputbox.ClientID %>").data("ejMaskEdit");
+                treeObj = $("#<%= treeview.ClientID %>").data("ejTreeView");
+                inputObj = $("#<%= inputBox.ClientID %>").data("ejMaskEdit");
             }
             //Function triggers while change the TextBox input value and start new search
             function searchNodes(args) {
-                var treeElement = treeobj.element;
+                var treeElement = treeObj.element;
                 // Getting the Input String
                 var searchVal = inputObj.get_StrippedValue() ? inputObj.get_StrippedValue().toLowerCase() : "";
                 // If the string length is greater than 0 then Do searching.
@@ -548,7 +582,7 @@ In the view page, add TreeView element and map the properties defined in to the
                     }
                     // Find the matched nodes parent Li element and set Display "block"
                     var resultNodes = treeElement.find(matchedNode).closest("li").css("display", "block");
-                    // Find the unMatchednodes parent Li element and set Display "none"
+                    // Find the unmatched nodes parent Li element and set Display "none"
                     treeElement.find(otherNodes).closest("li").css("display", "none");
                     for (var i = 0; i < resultNodes.length; i++) {
                         var currentNode = $(resultNodes[i]);
@@ -556,16 +590,16 @@ In the view page, add TreeView element and map the properties defined in to the
                         var parentNode = currentNode.parents('ul').closest('li').css("display", "block");
                         if (parentNode.length > 0) {
                             // Call expandNode function If a parentNode has children
-                            treeobj.expandNode(parentNode);
-                            if (treeobj.model.expandedNodes.indexOf($(treeobj._liList).index(parentNode)) == -1)
+                            treeObj.expandNode(parentNode);
+                            if (treeObj.model.expandedNodes.indexOf($(treeObj._liList).index(parentNode)) == -1)
                                 window._temp.push(parentNode);
                         }
                         var childrenUl = currentNode.children('ul');
                         if (childrenUl.length > 0 && childrenUl.children('li:visible').length == 0) {
                             currentNode.children('ul').children('li').css("display", "block");
                             // Call expandNode function If a resultNodes[i] has children
-                            treeobj.expandNode(resultNodes[i]);
-                            if (treeobj.model.expandedNodes.indexOf($(treeobj._liList).index(resultNodes[i])) == -1)
+                            treeObj.expandNode(resultNodes[i]);
+                            if (treeObj.model.expandedNodes.indexOf($(treeObj._liList).index(resultNodes[i])) == -1)
                                 window._temp.push(resultNodes[i]);
                         }
                     }
@@ -575,7 +609,7 @@ In the view page, add TreeView element and map the properties defined in to the
                     // window._temp contains Li elements, which is expanded while searching.
                     treeElement.find('ul>li').css("display", "block");
                     for (var i = 0; i < window._temp.length; i++) {
-                        treeobj._collpaseNode(window._temp[i]);
+                        treeObj._collpaseNode(window._temp[i]);
                     }
                     window._temp = [];
                 }
@@ -617,7 +651,7 @@ TreeView allows us to bind and update tree data in mapped data component while a
                 <div style="width: 400px; float:left">
                     <button type="button" ng-click="add()">Add</button>
                     <button type="button" ng-click="remove()">Remove</button>
-                    <div id="treeView" e-allowediting="true" ej-treeview e-fields-datasource="dataList" e-fields-id="iid" e-fields-parentid="pid" e-fields-text="name" e-fields-haschild="hasChild" e-fields-expanded="expanded" e-showcheckbox="true" e-allowediting="true"></div>
+                    <div id="treeView" e-allowediting="true" ej-treeview e-fields-datasource="dataList" e-fields-id="fieldsId" e-fields-parentid="parentId" e-fields-text="name" e-fields-haschild="hasChild" e-fields-expanded="expanded" e-showcheckbox="true" e-allowediting="true"></div>
                 </div>
                 <div style="width: 400px; float:left">
                     <table>
@@ -625,7 +659,7 @@ TreeView allows us to bind and update tree data in mapped data component while a
                             <td>
                                 <p>direct to $scope.dataList</p>
                                 <div ng-repeat="icon in dataList">
-                                    <input type="text" ng-model="icon.name" class="sampleText" /><button type="button" ng-click="delete(icon.iid)">Delete</button><br />
+                                    <input type="text" ng-model="icon.name" class="sampleText" /><button type="button" ng-click="delete(icon.fieldsId)">Delete</button><br />
                                 </div>
                             </td>
                         </tr>
@@ -638,51 +672,51 @@ TreeView allows us to bind and update tree data in mapped data component while a
     <script>
     
         var phones = [
-                { iid: 1, name: "Fiction Book Lists", hasChild: true, expanded: true },
-                { iid: 2, pid: 1, name: "To Kill a Mockingbird " },
-                { iid: 3, pid: 1, name: "Pride and Prejudice " },
-                { iid: 4, pid: 1, name: "Harry Potter and the Sorcerer's Stone" },
-                { iid: 5, pid: 1, name: "The Hobbit " },
-                { iid: 6, name: "Mystery Book Lists", hasChild: true, expanded: true },
-                { iid: 7, pid: 6, name: "And Then There Were None " },
-                { iid: 8, pid: 6, name: "Angels & Demons" },
-                { iid: 9, pid: 6, name: "In Cold Blood " },
-                { iid: 10, pid: 6, name: "The Name of the Rose " },
-                { iid: 11, name: "Horror Novels", hasChild: true },
-                { iid: 12, pid: 11, name: "The Shining (The Shining, #1) " },
-                { iid: 13, pid: 11, name: "The Haunting of Hill House " },
-                { iid: 14, pid: 11, name: "The Silence of the Lambs (Hannibal Lecter, #2) " },
-                { iid: 15, name: "Novel Lists", hasChild: true },
-                { iid: 16, pid: 15, name: "Shadow Hills (Shadow Hills, #1) " },
-                { iid: 17, pid: 15, name: "After Forever Ends " },
-                { iid: 18, pid: 15, name: "Angel Star" },
-                { iid: 19, pid: 15, name: "Raised by Wolves" },
-                { iid: 20, pid: 15, name: "Falling From Grace" }];
+                { fieldsId: 1, name: "Fiction Book Lists", hasChild: true, expanded: true },
+                { fieldsId: 2, parentId: 1, name: "To Kill a Mockingbird " },
+                { fieldsId: 3, parentId: 1, name: "Pride and Prejudice " },
+                { fieldsId: 4, parentId: 1, name: "Harry Potter and the Sorcerer's Stone" },
+                { fieldsId: 5, parentId: 1, name: "The Hobbit " },
+                { fieldsId: 6, name: "Mystery Book Lists", hasChild: true, expanded: true },
+                { fieldsId: 7, parentId: 6, name: "And Then There Were None " },
+                { fieldsId: 8, parentId: 6, name: "Angels & Demons" },
+                { fieldsId: 9, parentId: 6, name: "In Cold Blood " },
+                { fieldsId: 10, parentId: 6, name: "The Name of the Rose " },
+                { fieldsId: 11, name: "Horror Novels", hasChild: true },
+                { fieldsId: 12, parentId: 11, name: "The Shining (The Shining, #1) " },
+                { fieldsId: 13, parentId: 11, name: "The Haunting of Hill House " },
+                { fieldsId: 14, parentId: 11, name: "The Silence of the Lambs (Hannibal Lecter, #2) " },
+                { fieldsId: 15, name: "Novel Lists", hasChild: true },
+                { fieldsId: 16, parentId: 15, name: "Shadow Hills (Shadow Hills, #1) " },
+                { fieldsId: 17, parentId: 15, name: "After Forever Ends " },
+                { fieldsId: 18, parentId: 15, name: "Angel Star" },
+                { fieldsId: 19, parentId: 15, name: "Raised by Wolves" },
+                { fieldsId: 20, parentId: 15, name: "Falling From Grace" }];
         var Nodes = ["1", "2"];
         angular.module('treeApp', ['ejangular']).controller('TreeCtrl', function ($scope) {
             $scope.dataList = phones;
     
             $scope.add = function () {
-                var treeobj = $("#<%= treeView.ClientID %>").data("ejTreeView"), obj;
-                //obj = [{ iid: 21, pid: 1, name: "Newnode" }];
-                obj = "New Textnode";
-                treeobj.addNode(obj);    // Twoway binding when add node
+                var treeObj = $("#<%= treeView.ClientID %>").data("ejTreeView"), obj;
+                //obj = [{ fieldsId: 21, parentId: 1, name: "Newnode" }];
+                obj = "New TextNode";
+                treeObj.addNode(obj);    // Two way binding when add node
             };
     
             $scope.remove = function () {
-                var treeobj = $("#<%= treeView.ClientID %>").data("ejTreeView");
-                var id = treeobj.getSelectedNode()[0].id;
-                treeobj.removeNode(treeobj.getSelectedNode());  // Twoway binding when remove node
+                var treeObj = $("#<%= treeView.ClientID %>").data("ejTreeView");
+                var id = treeObj.getSelectedNode()[0].id;
+                treeObj.removeNode(treeObj.getSelectedNode());  // Two way binding when remove node
             };
     
             // Delete from outside Tree
-            $scope.delete = function (iid) {
+            $scope.delete = function (fieldsId) {
                 for (var i = $scope.dataList.length - 1; i > -1; i--) {
-                    if ($scope.dataList[i].iid === iid)
+                    if ($scope.dataList[i].fieldsId === fieldsId)
                         $scope.dataList.splice(i, 1); // Delete parent node
                 }
                 for (var i = $scope.dataList.length - 1; i > -1; i--) {
-                    if ($scope.dataList[i].pid === iid)
+                    if ($scope.dataList[i].parentId === fieldsId)
                         $scope.dataList.splice(i, 1); // Delete child nodes
                 }
             };
@@ -957,8 +991,8 @@ In the view page, add TreeView element and specify the scripts for sending check
             $('#getNodes').click(function () {
                 tree = $("#<%= tree.ClientID %>").data("ejTreeView");
                 var data = [];
-                len = tree.getCheckedNodes().length;
-                for (i = 0; i < len ; i++) {
+                nodeLength = tree.getCheckedNodes().length;
+                for (i = 0; i < nodeLength ; i++) {
                     var nodeId = tree.getCheckedNodes()[i];
                     var nodeData = tree.getNode(nodeId);
                     data.push(nodeData);

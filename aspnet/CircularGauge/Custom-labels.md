@@ -15,7 +15,7 @@ Custom labels are the texts that you can use them in any location of the Gauge.
 
 ## Adding Custom Label Collection
 
-Custom labels collection is directly added to the scale object. Refer the following code to add custom labels collection in a Gauge control.
+Custom labels collection is directly added to the scale object. Refer the following code to add `CustomLabels` collection in a Gauge control.
 
 
 {% highlight html %}
@@ -53,9 +53,9 @@ Custom labels collection is directly added to the scale object. Refer the follow
 
 ### Basic Customization
 
-* You can customize custom labels using the properties such as textAngle, color and font. textAngle attribute is used to display the custom labels in the specified angles and color attribute is used to display the custom labels in specified color. 
-* You can use Value attribute to set the text value in the custom labels. To display the custom labels, set showCustomLabels as ‘true’. To set the location of the custom label in Circular Gauge, location property is used. By using x and y axis you can adjust the position of the custom labels.
-* Font option is also available on custom labels. The basic three properties of fonts such as size, family and style can be achieved by size, fontStyle and fontFamily attributes. 
+* You can customize custom labels using the properties such as `TextAngle`, `Color` and `Font`. **TextAngle** attribute is used to display the custom labels in the specified angles and **Color** attribute is used to display the custom labels in specified color. 
+* You can use `Value` attribute to set the text value in the custom labels. To display the custom labels, set `ShowCustomLabels` as ‘true’. To set the location of the custom label in Circular Gauge, `Position` property is used. By using `X` and `Y` axis you can adjust the position of the custom labels.
+* Font option is also available on  custom labels. The basic three properties of fonts such as size, family and style can be achieved by `Size`, `FontStyle` and `FontFamily` attributes. 
 
 
 
@@ -153,7 +153,7 @@ Execute the above code to render the following output.
 
 ## Outer Custom Label
 
-* Outer Custom Label is used to show custom labels outside the gauge control. The Outer Custom Label can be positioned with API called outerCustomLabelPosition. The value for this API is enumerable type and its possible values are,
+* Outer Custom Label is used to show custom labels outside the gauge control. The Outer Custom Label can be positioned with API called `OuterCustomLabelPosition`. The value for this API is enumerable type and its possible values are,
   
   1. Right
   
@@ -163,7 +163,7 @@ Execute the above code to render the following output.
   
   4. Bottom
   
-* When a custom label is to be displayed as an Outer Custom Label, set the API customLabelType as Outer. Refer to the following code example to get the Outer Custom Label.
+* When a custom label is to be displayed as an Outer Custom Label, set the API `PositionType` as Outer. Refer to the following code example to get the Outer Custom Label.
 
 {% highlight html %}
 
@@ -171,7 +171,7 @@ Execute the above code to render the following output.
 
         <ej:circulargauge runat="server" id="circularGaugeTooltip" backgroundcolor="transparent" enableanimation="false"
 
-        OuterCutomLabelPosition="Right">
+        OuterCustomLabelPosition="Right">
 
 
 

@@ -24,14 +24,14 @@ N> In the above data source definition, the “CategoryId” column is act as a 
 
 <div class="parentlistbox">
         <!--parent listbox element-->
-        <ej:ListBox ID="maincategory" runat="server"></ej:ListBox>
+        <ej:ListBox ID="MainCategory" runat="server"></ej:ListBox>
     </div>
     <div class="childlistbox">
         <!-- child listbox element-->
-        <ej:ListBox ID="subcategoryList" runat="server"></ej:ListBox>
+        <ej:ListBox ID="subCategoryList" runat="server"></ej:ListBox>
     </div>
     <style>
-        .parentlistbox, .childlistbox {
+        .e-parentlistbox, .e-childlistbox {
             padding: 10px;
             float: left;
         }
@@ -49,18 +49,18 @@ N> In the above data source definition, the “CategoryId” column is act as a 
                 category.Add(new MainCategory { CategoryId = 'b', Text = "Furniture" });
 
 
-                List<SubCategory> scategory = new List<SubCategory>();
-                scategory.Add(new SubCategory { SubCategoryId = 11, CategoryId = 'a', Text = "Men" });
-                scategory.Add(new SubCategory { SubCategoryId = 12, CategoryId = 'a', Text = "Women" });
-                scategory.Add(new SubCategory { SubCategoryId = 13, CategoryId = 'b', Text = "Home furniture" });
-                scategory.Add(new SubCategory { SubCategoryId = 14, CategoryId = 'b', Text = "Bedding" });
+                List<SubCategory> subCategory = new List<SubCategory>();
+                subCategory.Add(new SubCategory { SubCategoryId = 11, CategoryId = 'a', Text = "Men" });
+                subCategory.Add(new SubCategory { SubCategoryId = 12, CategoryId = 'a', Text = "Women" });
+                subCategory.Add(new SubCategory { SubCategoryId = 13, CategoryId = 'b', Text = "Home furniture" });
+                subCategory.Add(new SubCategory { SubCategoryId = 14, CategoryId = 'b', Text = "Bedding" });
 
 
-                maincategory.DataSource = category;
-                maincategory.DataValueField = "CategoryId";
-                maincategory.CascadeTo = "LayoutSection_subcategoryList";
+                MainCategory.DataSource = category;
+                MainCategory.DataValueField = "CategoryId";
+                MainCategory.CascadeTo = "LayoutSection_subCategoryList";
 
-                subcategoryList.DataSource = scategory;
+                subcategoryList.DataSource = subCategory;
                 subcategoryList.LoadDataOnInit = false;
             }
         }
@@ -97,11 +97,11 @@ In the code behind add the below codes.
 
 <div class="listboxcontrol">
         <!--parent listbox element-->
-        <ej:ListBox ID="maincategory" runat="server"></ej:ListBox>
+        <ej:ListBox ID="MainCategory" runat="server"></ej:ListBox>
     </div>
     <div class="listboxcontrol">
         <!-- First level child listbox element-->
-        <ej:ListBox ID="subcategoryList" runat="server"></ej:ListBox>
+        <ej:ListBox ID="subCategoryList" runat="server"></ej:ListBox>
     </div>
     <div class="listboxcontrol">
         <!-- second level child listbox element-->
@@ -109,7 +109,7 @@ In the code behind add the below codes.
     </div>
     <div class="listboxcontrol">
         <!-- second level child listbox element-->
-        <ej:ListBox ID="subproductList" runat="server"></ej:ListBox>
+        <ej:ListBox ID="subProductList" runat="server"></ej:ListBox>
     </div>
     <style>
         .listboxcontrol {
@@ -134,58 +134,58 @@ public partial class Cascading : System.Web.UI.Page
             category.Add(new MainCategory { CategoryId = 'a', Text = "Clothing" });
             category.Add(new MainCategory { CategoryId = 'b', Text = "Furniture" });
 
-            List<SubCategory> scategory = new List<SubCategory>();
-            scategory.Add(new SubCategory { SubCategoryId = 11, CategoryId = 'a', Text = "Men" });
-            scategory.Add(new SubCategory { SubCategoryId = 12, CategoryId = 'a', Text = "Women" });
-            scategory.Add(new SubCategory { SubCategoryId = 13, CategoryId = 'b', Text = "Home furniture" });
-            scategory.Add(new SubCategory { SubCategoryId = 14, CategoryId = 'b', Text = "Bedding" });
+            List<SubCategory> subCategory = new List<SubCategory>();
+            subCategory.Add(new SubCategory { SubCategoryId = 11, CategoryId = 'a', Text = "Men" });
+            subCategory.Add(new SubCategory { SubCategoryId = 12, CategoryId = 'a', Text = "Women" });
+            subCategory.Add(new SubCategory { SubCategoryId = 13, CategoryId = 'b', Text = "Home furniture" });
+            subCategory.Add(new SubCategory { SubCategoryId = 14, CategoryId = 'b', Text = "Bedding" });
 
-            List<ProductList> productlist = new List<ProductList>();
-            productlist.Add(new ProductList { SubCategoryId = 11, ProductId = 101, Text = "men shirts" });
-            productlist.Add(new ProductList { SubCategoryId = 11, ProductId = 102, Text = "men pants" });
-            productlist.Add(new ProductList { SubCategoryId = 12, ProductId = 103, Text = "Women shirts" });
-            productlist.Add(new ProductList { SubCategoryId = 12, ProductId = 104, Text = "Women pants" });
-            productlist.Add(new ProductList { SubCategoryId = 13, ProductId = 105, Text = "sofa" });
-            productlist.Add(new ProductList { SubCategoryId = 13, ProductId = 106, Text = "chairs" });
-            productlist.Add(new ProductList { SubCategoryId = 14, ProductId = 107, Text = "bedsheets" });
-            productlist.Add(new ProductList { SubCategoryId = 14, ProductId = 108, Text = "pillows" });
-
-
-            List<SubProductList> subproductlist = new List<SubProductList>();
-            subproductlist.Add(new SubProductList { ProductId = 101, Text = "red men shirts" });
-            subproductlist.Add(new SubProductList { ProductId = 101, Text = "blue men shirts" });
-            subproductlist.Add(new SubProductList { ProductId = 102, Text = "red men pants" });
-            subproductlist.Add(new SubProductList { ProductId = 102, Text = "blue men pants" });
-            subproductlist.Add(new SubProductList { ProductId = 103, Text = "red Women shirts" });
-            subproductlist.Add(new SubProductList { ProductId = 103, Text = "blue Women shirts" });
-            subproductlist.Add(new SubProductList { ProductId = 104, Text = "red Women pants" });
-            subproductlist.Add(new SubProductList { ProductId = 104, Text = "blue Women pants" });
-            subproductlist.Add(new SubProductList { ProductId = 105, Text = "red sofa" });
-            subproductlist.Add(new SubProductList { ProductId = 105, Text = "blue sofa" });
-            subproductlist.Add(new SubProductList { ProductId = 106, Text = "red chairs" });
-            subproductlist.Add(new SubProductList { ProductId = 106, Text = "blue chairs" });
-            subproductlist.Add(new SubProductList { ProductId = 107, Text = "blue bedsheets" });
-            subproductlist.Add(new SubProductList { ProductId = 107, Text = "red bedsheets" });
-            subproductlist.Add(new SubProductList { ProductId = 108, Text = "red pillows" });
-            subproductlist.Add(new SubProductList { ProductId = 108, Text = "blue pillows" });
+            List<ProductList> productList = new List<ProductList>();
+            productList.Add(new ProductList { SubCategoryId = 11, ProductId = 101, Text = "men shirts" });
+            productList.Add(new ProductList { SubCategoryId = 11, ProductId = 102, Text = "men pants" });
+            productList.Add(new ProductList { SubCategoryId = 12, ProductId = 103, Text = "Women shirts" });
+            productList.Add(new ProductList { SubCategoryId = 12, ProductId = 104, Text = "Women pants" });
+            productList.Add(new ProductList { SubCategoryId = 13, ProductId = 105, Text = "sofa" });
+            productList.Add(new ProductList { SubCategoryId = 13, ProductId = 106, Text = "chairs" });
+            productList.Add(new ProductList { SubCategoryId = 14, ProductId = 107, Text = "bedsheets" });
+            productList.Add(new ProductList { SubCategoryId = 14, ProductId = 108, Text = "pillows" });
 
 
-            maincategory.DataSource = category;
-            maincategory.DataValueField = "CategoryId";
-            maincategory.CascadeTo = "LayoutSection_subcategoryList";
+            List<SubProductList> subProductList = new List<SubProductList>();
+            subProductList.Add(new SubProductList { ProductId = 101, Text = "red men shirts" });
+            subProductList.Add(new SubProductList { ProductId = 101, Text = "blue men shirts" });
+            subProductList.Add(new SubProductList { ProductId = 102, Text = "red men pants" });
+            subProductList.Add(new SubProductList { ProductId = 102, Text = "blue men pants" });
+            subProductList.Add(new SubProductList { ProductId = 103, Text = "red Women shirts" });
+            subProductList.Add(new SubProductList { ProductId = 103, Text = "blue Women shirts" });
+            subProductList.Add(new SubProductList { ProductId = 104, Text = "red Women pants" });
+            subProductList.Add(new SubProductList { ProductId = 104, Text = "blue Women pants" });
+            subProductList.Add(new SubProductList { ProductId = 105, Text = "red sofa" });
+            subProductList.Add(new SubProductList { ProductId = 105, Text = "blue sofa" });
+            subProductList.Add(new SubProductList { ProductId = 106, Text = "red chairs" });
+            subProductList.Add(new SubProductList { ProductId = 106, Text = "blue chairs" });
+            subProductList.Add(new SubProductList { ProductId = 107, Text = "blue bedsheets" });
+            subProductList.Add(new SubProductList { ProductId = 107, Text = "red bedsheets" });
+            subProductList.Add(new SubProductList { ProductId = 108, Text = "red pillows" });
+            subProductList.Add(new SubProductList { ProductId = 108, Text = "blue pillows" });
 
-            subcategoryList.DataSource = scategory;
+
+            MainCategory.DataSource = category;
+            MainCategory.DataValueField = "CategoryId";
+            MainCategory.CascadeTo = "LayoutSection_subCategoryList";
+
+            subcategoryList.DataSource = subCategory;
             subcategoryList.LoadDataOnInit = false;
             subcategoryList.DataValueField = "SubCategoryId";
             subcategoryList.CascadeTo = "LayoutSection_productList";
 
-            productList.DataSource = productlist;
+            productList.DataSource = productList;
             productList.LoadDataOnInit = false;
             productList.DataValueField = "ProductId";
-            productList.CascadeTo = "LayoutSection_subproductList";
+            productList.CascadeTo = "LayoutSection_subProductList";
 
-            subproductList.DataSource = subproductlist;
-            subproductList.LoadDataOnInit = false;
+            subProductList.DataSource = subProductList;
+            subProductList.LoadDataOnInit = false;
         }
     }
     public class MainCategory

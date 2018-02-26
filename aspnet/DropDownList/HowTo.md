@@ -84,10 +84,10 @@ You can use HeaderTemplate property to add any HTML element. Code snippet to add
 
             function OnCreate(args) {
 
-                $("#check").ejCheckBox({ text: "Check All", change: "onallChange" });
+                $("#check").ejCheckBox({ text: "Check All", change: "Change" });
 
             }
-            function onallChange(args) {
+            function Change(args) {
                 window.flag = true;
                 var obj = $("#<%=DropDownList1.ClientID%>").ejDropDownList("instance");
                 if (args.isChecked) obj.checkAll();
@@ -144,24 +144,24 @@ The items can be added to the DropDownList in DataBound event using a generic Da
         {
             // Create a DataView to get the current datasource from DropDownList
             DataView ddDataSource = (DataView)DropDown.DataSource;
-            //Initialze a row element for the DataView created
-            DataRow dr = ddDataSource.Table.NewRow();
+            //Initialize a row element for the DataView created
+            DataRow row = ddDataSource.Table.NewRow();
             if (sender == DropDown)
             {
                 if (ddDataSource.Count == 0)
                 {      
                     //Add the fields using the corresponding names     
-                    dr["CustomerID"] = "11011";
-                    dr["ContactName"] = "John Peter";
+                    row["CustomerID"] = "11011";
+                    row["ContactName"] = "John Peter";
                     // Insert the new item to DataView Table
-                    ddDataSource.Table.Rows.InsertAt(dr, 0);
+                    ddDataSource.Table.Rows.InsertAt(row, 0);
                 }
                 else
                 {
-                    dr["CustomerID"] = "11012";
-                    dr["ContactName"] = "Nancy";
+                    row["CustomerID"] = "11012";
+                    row["ContactName"] = "Nancy";
                     //Insert at the index of 4
-                    ddDataSource.Table.Rows.InsertAt(dr, 4);
+                    ddDataSource.Table.Rows.InsertAt(row, 4);
                     
                 }
             }
@@ -232,3 +232,33 @@ To use the user control, make the web page aware of the control by using a Regis
     </asp:Content>
 
 {% endhighlight %}
+
+## Select a specific item in dropdownlist via code behind as like asp dropdownlist FindByValue/FindByText method
+
+You can select a specific item in dropdownlist via code behind by matching the search string with the dropdownlist item text. Initially, set the index value to dropdownlist by using the “SelectedIndex” property in the button click event as shown below code:
+
+{% highlight c# %}
+
+		protected void setValue_Click(object sender, EventArgs e) 
+        { 
+ 
+            selectCar.SelectedIndex = DropDownListIndex(selectCar.Items.ToList(), "Audi A6"); 
+        } 
+
+{% endhighlight %}
+
+Now, index value will be return in the DropDownListIndex method by matching the search string with the dropdownlist item text as shown below code:  
+
+{% highlight c# %}
+
+		public int DropDownListIndex(List<Syncfusion.JavaScript.Web.DropDownListItem> dropdownList,string search) 
+        { 
+ 
+            int indexVal = dropdownList.Select((item, i) => new { Item = item, Index = i }) 
+                .First(x => x.Item.Text == search).Index; 
+            return indexVal; 
+        } 
+
+{% endhighlight %}
+
+Please refer the following links for Sample: [Sample] ( http://www.syncfusion.com/downloads/support/directtrac/166189/ze/SyncfusionDropdown_(3)884590000 )

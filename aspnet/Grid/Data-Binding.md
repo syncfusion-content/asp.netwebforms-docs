@@ -65,7 +65,37 @@ The following output is displayed as a result of the above code example.
 {% seealso %} 
 Refer to this [link](https://msdn.microsoft.com/en-us/library/dz12d98w.aspx) for more information on SqlDataSource.
 {% endseealso %}
+
+
+### SqlDataSource with LoadOnDemand
+
+SqlDataSource control support has been added with on-demand data loading for paging, sorting, and filtering in grid. Each of these grid actions is performed on the server side and the result is returned to the client. This has been achieved by enabling the property as `EnableLoadOnDemand` in grid.
+
+N> The default value for `EnableLoadOnDemand` property will be false.
+The following code example describes the above behavior.
+
+{% tabs %}
+{% highlight html %}
+
+<ej:Grid ID="FlatGrid" runat="server" DataSourceID="SqlData" EnableLoadonDemand="true" AllowSorting="True" AllowPaging="True">
+    <Columns>
+        <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+        <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />
+        <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="110" />
+        <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="110" />
+    </Columns>
+</ej:Grid>
+<asp:SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings:NORTHWNDConnectionString %>" SelectCommand="SELECT * FROM [Orders]">
+</asp:SqlDataSource>
+
+{% endhighlight %}
+{% endtabs %}
+
+The following output is displayed as a result of the above code example.
+
+![](Data-Binding_images/Data-Binding_img21.png)
  
+
 ### ObjectDataSource
 
 The Grid can be bound with ObjectDataSource control as the datasource interface. The ObjectDataSource control allows developers to structure their applications using this traditional three-tiered architecture and still take advantage of the ease-of-use benefits of the declarative data binding model in ASP.NET.
@@ -78,7 +108,7 @@ The following code example describes the above behavior.
 
 {% tabs %} 
 {% highlight html %}
-<ej:Grid ID="EmployeesGrid" runat="server" DataSourceID="ObjectData" AllowSorting="True">
+<ej:Grid ID="EmployeesGrid" runat="server" DataSourceID="ObjectData" AllowSorting="true">
             <Columns>                
                 <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="100" />
                 <ej:Column Field="FirstName" HeaderText="First Name" Width="100" />
@@ -377,7 +407,7 @@ The following code example describes the above behavior.
 {% tabs %} 
 {% highlight html %}
 
-<ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+<ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
 </ej:Grid>
 
 {% endhighlight %} 
@@ -395,32 +425,32 @@ namespace EJGrid.Controllers
             cl = new DataColumn("Name");
             dt.Columns.Add(cl);
 
-            DataRow dr = dt.NewRow();
-            dr[0] = 1;
-            dr[1] = "John";
-            dt.Rows.Add(dr);
+            DataRow dataRow = dt.NewRow();
+            dataRow[0] = 1;
+            dataRow[1] = "John";
+            dt.Rows.Add(dataRow);
 
 
-            dr = dt.NewRow();
-            dr[0] = 2;
-            dr[1] = "Smith";
-            dt.Rows.Add(dr);
+            dataRow = dt.NewRow();
+            dataRow[0] = 2;
+            dataRow[1] = "Smith";
+            dt.Rows.Add(dataRow);
 
-            dr = dt.NewRow();
-            dr[0] = 3;
-            dr[1] = "Tomps";
-            dt.Rows.Add(dr);
+            dataRow = dt.NewRow();
+            dataRow[0] = 3;
+            dataRow[1] = "Tomps";
+            dt.Rows.Add(dataRow);
 
-            dr = dt.NewRow();
-            dr[0] = 4;
-            dr[1] = "Hanar";
-            dt.Rows.Add(dr);
+            dataRow = dt.NewRow();
+            dataRow[0] = 4;
+            dataRow[1] = "Hanar";
+            dt.Rows.Add(dataRow);
 
-            dr = dt.NewRow();
-            dr[0] = 5;
-            dr[1] = "Reek";
-            dt.Rows.Add(dr);
-            this.EmployeesGrid2.DataSource = dt;
+            dataRow = dt.NewRow();
+            dataRow[0] = 5;
+            dataRow[1] = "Reek";
+            dt.Rows.Add(dataRow);
+            this.FlatGrid.DataSource = dt;
         } 
     }
 }
@@ -447,7 +477,7 @@ The following code example describes the above behavior.
 {% tabs %} 
 {% highlight html %}
 
-<ej:Grid ID="FlatGrid" runat="server"  AllowGrouping="true" AllowPaging="True">
+<ej:Grid ID="FlatGrid" runat="server"  AllowGrouping="true" AllowPaging="true">
 </ej:Grid>
 
 {% endhighlight %} 
@@ -463,32 +493,32 @@ The following code example describes the above behavior.
         {
             // Get the 'shape' of the list. 
             // Only get the public properties marked with Browsable = true.
-            PropertyDescriptorCollection pdc = TypeDescriptor.GetProperties(
+            PropertyDescriptorCollection propertyDescriptorCollection = TypeDescriptor.GetProperties(
                 typeof(T),
                 new Attribute[] { new BrowsableAttribute(true) });
 
             // Sort the properties.
-            properties = pdc.Sort();
+            properties = propertyDescriptorCollection.Sort();
         }
 
         #region ITypedList Implementation
 
         public PropertyDescriptorCollection GetItemProperties(PropertyDescriptor[] listAccessors)
         {
-            PropertyDescriptorCollection pdc;
+            PropertyDescriptorCollection propertyDescriptorCollection;
 
             if (listAccessors != null && listAccessors.Length > 0)
             {
                 // Return child list shape.
-                pdc = ListBindingHelper.GetListItemProperties(listAccessors[0].PropertyType);
+                propertyDescriptorCollection = ListBindingHelper.GetListItemProperties(listAccessors[0].PropertyType);
             }
             else
             {
                 // Return properties in sort order.
-                pdc = properties;
+                propertyDescriptorCollection = properties;
             }
 
-            return pdc;
+            return propertyDescriptorCollection;
         }
 
         // This method is only used in the design-time framework 
@@ -514,7 +544,7 @@ namespace EJGrid.Controllers
             {
                 ord.Add(temp);
             }
-            this.EmployeesGrid2.DataSource = ord;
+            this.FlatGrid.DataSource = ord;
         }
     }
 }
@@ -539,7 +569,7 @@ The following code example describes the above behavior.
 
 {% tabs %} 
 {% highlight html %}
-<ej:Grid ID="EmployeesGrid2" runat="server" AllowPaging="True">
+<ej:Grid ID="EmployeesGrid2" runat="server" AllowPaging="true">
         <DataManager URL="WebService.asmx/Get" Adaptor="WebMethodAdaptor" />
         <Columns>
             <ej:Column Field="OrderID" />
@@ -572,7 +602,7 @@ The following code example describes the above behavior.
 
 {% tabs %} 
 {% highlight html %}
-<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true">
  <DataManager URL="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/"></DataManager>   
 <Columns>
                 <ej:Column Field="OrderID" />
@@ -600,7 +630,7 @@ The following code example describes the above behavior.
 
 {% tabs %} 
 {% highlight html %}
-<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true">
 <DataManager URL="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/"  Adaptor="ODataV4Adaptor"></DataManager>   
 <Columns>
                 <ej:Column Field="OrderID" />
@@ -629,7 +659,7 @@ The following code example describes the above behavior.
 
 {% tabs %} 
 {% highlight html %}
-<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true">
     <DataManager URL="/api/Orders/"  Adaptor="WebApiAdaptor"></DataManager>   
 <Columns>
                 <ej:Column Field="OrderID" />
@@ -761,7 +791,7 @@ The following code example describes the above behavior.
 {% tabs %} 
 {% highlight html %}
 
-<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true">
             <DataManager URL="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/"></DataManager>   
 <Columns>
                 <ej:Column Field="OrderID" />
@@ -792,7 +822,7 @@ The following code example describes the above behavior.
 {% tabs %} 
 {% highlight html %}
 
-<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true">
             <DataManager URL="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/" Offline="true"></DataManager>   
 <Columns>
                 <ej:Column Field="OrderID" />
@@ -813,8 +843,10 @@ The following output is displayed as a result of the above code example.
 
 
 ### Data caching
+
+#### Load on demand	
 	
-The `DataManager` can cache loaded data. The caching functionality can be enabled by setting the `EnableCaching` property in `DataManager`.
+The `DataManager` can cache on demand loaded data. The caching functionality can be enabled by setting the `EnableCaching` property in `DataManager`.
 
 The `TimeTillExpiration` and `CachingPageSize` properties are used to control the expiration time of data and the cache page size settings respectively.
 
@@ -841,6 +873,92 @@ The following code example describes the above behavior.
 The following output is displayed as a result of the above code example.
 
 ![](Data-Binding_images/Data-Binding_img17.png)
+
+
+#### Load at once
+
+DataSourceCachingMode can holds the datasource object and no need to initialize the datasource after each and every postback. It’s a enumeration type and it contains the following values.
+
+##### ViewState:
+
+The Data Source object will be serialized and added to the View State. So, no need to initialize the Data Source after each and every postback.
+
+##### None:
+
+This mode turns off data caching and the data source must be initialized for every postback.The default property of DataSourceCachingMode is None.
+
+##### Session:
+
+The reference to the Data Source object will be added to Session.
+
+{% tabs %} 
+{% highlight html %}
+<ej:Grid ID="FlatGrid" runat="server"  AllowPaging="true"  DataSourceCachingMode="ViewState" >
+    <Columns>
+        <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+        <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
+        <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" />
+        <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />
+        <ej:Column Field="OrderDate" HeaderText="Order Date" TextAlign="Right" Width="80" Format="{0:MM/dd/yyyy}" />
+        <ej:Column Field="ShipCity" HeaderText="Ship City" Width="110" />
+    </Columns>
+</ej:Grid>
+{% endhighlight %} 
+{% highlight c# %}
+    public partial class _Default : Page
+    {
+        List<Orders> order = new List<Orders>();
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+                BindDataSource();
+        }
+        private void BindDataSource()
+        {
+            int code = 10000;
+            for (int i = 1; i < 10; i++)
+            {
+                order.Add(new Orders(code + 1, "ALFKI", i + 0, 2.3 * i, new DateTime(1991, 05, 15), "Berlin"));
+                order.Add(new Orders(code + 2, "ANATR", i + 2, 3.3 * i, new DateTime(1990, 04, 04), "Madrid"));
+                order.Add(new Orders(code + 3, "ANTON", i + 1, 4.3 * i, new DateTime(1957, 11, 30), "Cholchester"));
+                order.Add(new Orders(code + 4, "BLONP", i + 3, 5.3 * i, new DateTime(1930, 10, 22), "Marseille"));
+                order.Add(new Orders(code + 5, "BOLID", i + 4, 6.3 * i, new DateTime(1953, 02, 18), "Tsawassen"));
+                code += 5;
+            }
+            this.FlatGrid.DataSource = order;
+            this.FlatGrid.DataBind();
+        }
+        [Serializable]
+        public class Orders
+        {
+            public Orders()
+            {
+
+            }
+            public Orders(long OrderId, string CustomerId, int EmployeeId, double Freight, DateTime OrderDate, string ShipCity)
+            {
+                this.OrderID = OrderId;
+                this.CustomerID = CustomerId;
+                this.EmployeeID = EmployeeId;
+                this.Freight = Freight;
+                this.OrderDate = OrderDate;
+                this.ShipCity = ShipCity;
+            }
+            public long OrderID { get; set; }
+            public string CustomerID { get; set; }
+            public int EmployeeID { get; set; }
+            public double Freight { get; set; }
+            public DateTime OrderDate { get; set; }
+            public string ShipCity { get; set; }
+        }
+    }
+{% endhighlight  %}
+{% endtabs %} 
+
+The following output is displayed as a result of the above code example.
+
+![](Data-Binding_images/Data-Binding_img22.png)
 
 
 ### Custom request parameters and HTTP Header

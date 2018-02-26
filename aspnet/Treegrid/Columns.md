@@ -63,9 +63,9 @@ namespace WebSampleBrowser.TreeGrid
 
         {
 
-            FileInfoCollection Fileinfocollection = new FileInfoCollection();
+            FileDataCollection collection = new FileDataCollection();
 
-            this.TreeGridColumnTemplate.DataSource = Fileinfocollection.GetFileInfoCollections();
+            this.TreeGridColumnTemplate.DataSource = collection.GetFileDataCollections();
 
             this.TreeGridColumnTemplate.DataBind();            
 
@@ -75,19 +75,19 @@ namespace WebSampleBrowser.TreeGrid
 
 
 
-    public class FileInfoCollection
+    public class FileDataCollection
 
     {
 
 
 
-        public List<FileInfo> GetFileInfoCollections()
+        public List<FileData> GetFileDataCollections()
 
         {
 
-            List<FileInfo> FileinfoCollection = new List<FileInfo>();
+            List<FileData> dataCollection = new List<FileData>();
 
-            FileinfoCollection.Add(new FileInfo()
+            dataCollection.Add(new FileData()
 
             {
 
@@ -103,11 +103,11 @@ namespace WebSampleBrowser.TreeGrid
 
 
 
-            FileinfoCollection[0].SubFolder = new List<FileInfo>();
+            dataCollection[0].SubFolder = new List<FileData>();
 
 
 
-            FileinfoCollection[0].SubFolder.Add(new FileInfo()
+            dataCollection[0].SubFolder.Add(new FileData()
 
             {
 
@@ -123,11 +123,11 @@ namespace WebSampleBrowser.TreeGrid
 
 
 
-            FileinfoCollection[0].SubFolder[0].SubFolder = new List<FileInfo>();
+            dataCollection[0].SubFolder[0].SubFolder = new List<FileData>();
 
 
 
-            FileinfoCollection[0].SubFolder[0].SubFolder.Add(new FileInfo()
+            dataCollection[0].SubFolder[0].SubFolder.Add(new FileData()
 
             {
 
@@ -143,9 +143,9 @@ namespace WebSampleBrowser.TreeGrid
 
 
 
-            FileinfoCollection[0].SubFolder[0].SubFolder[0].SubFolder = new List<FileInfo>();
+            dataCollection[0].SubFolder[0].SubFolder[0].SubFolder = new List<FileData>();
 
-            FileinfoCollection[0].SubFolder[0].SubFolder[0].SubFolder.Add(new FileInfo()
+            dataCollection[0].SubFolder[0].SubFolder[0].SubFolder.Add(new FileData()
 
             {
 
@@ -161,11 +161,11 @@ namespace WebSampleBrowser.TreeGrid
 
 
 
-            FileinfoCollection[0].SubFolder[0].SubFolder[0].SubFolder[0].SubFolder = new List<FileInfo>();
+            dataCollection[0].SubFolder[0].SubFolder[0].SubFolder[0].SubFolder = new List<FileData>();
 
 
 
-            FileinfoCollection[0].SubFolder[0].SubFolder[0].SubFolder[0].SubFolder.Add(new FileInfo()
+            dataCollection[0].SubFolder[0].SubFolder[0].SubFolder[0].SubFolder.Add(new FileData()
 
             {
 
@@ -185,7 +185,7 @@ namespace WebSampleBrowser.TreeGrid
            //...
 
 
-            return FileinfoCollection;
+            return dataCollection;
 
         }  
 
@@ -193,7 +193,7 @@ namespace WebSampleBrowser.TreeGrid
 
 
 
-    public class FileInfo
+    public class FileData
 
     {
 
@@ -205,7 +205,7 @@ namespace WebSampleBrowser.TreeGrid
 
         public string DateCreated { get; set; }
 
-        public List<FileInfo> SubFolder { get; set; }
+        public List<FileData> SubFolder { get; set; }
 
     }
 
@@ -228,7 +228,7 @@ namespace WebSampleBrowser.TreeGrid
 
        <div class='{{if expanded}}e-treegridexpand {{else hasChildRecords}}e-treegridcollapse {{/if}} {{if level===4}}e-doc{{/if}}' style='height:20px;width:30px;margin:auto;float:left;margin-left:10px;
 
-       style='float: left;display:inline-block; unselectable='on'></div>
+       style='float: left;display:inline-block;></div>
 
        <div class='e-cell' style='display:inline-block;width:100%' unselectable='on'>{{:#data['Name']}}</div>
 
@@ -422,3 +422,68 @@ You can also disable the visibility of the particular column in column collectio
 {% endhighlight %}
 
 ![](Columns_images/Columns_img4.png) 
+
+
+## Command Column
+
+### Default action buttons
+
+Using command columns in TreeGrid, we can display a separate column to perform CRUD operations.It is also possible to perform any custom actions by using custom command buttons. Command column can be defined in TreeGrid using `Commands` property.
+A command column can be customized by using `Type` and `ButtonOptions` properties.
+
+* **Type** – Using this property we can add required action buttons in TreeGrid command column such as edit,delete,save and cancel.
+* **ButtonOptions** - Using this property we can customize the button in the command column with the properties available in [Button](https://help.syncfusion.com/api/js/ejbutton#members "Button").
+
+{% highlight html %}
+<ej:TreeGrid runat="server" ID="TreeGridControlCommand">
+            <Columns>
+                <ej:TreeGridColumn HeaderText="Manage Records">
+                    <Command>
+                        <ej:TreeGridCommands Type="edit">
+                            <ButtonOptions Text="Edit" Width="58" />
+                        </ej:TreeGridCommands>
+                        <ej:TreeGridCommands Type="delete">
+                            <ButtonOptions Text="Delete" Width="58" />
+                        </ej:TreeGridCommands>
+                        <ej:TreeGridCommands Type="save">
+                            <ButtonOptions Text="save" Width="58" />
+                        </ej:TreeGridCommands>
+                        <ej:TreeGridCommands Type="cancel">
+                            <ButtonOptions Text="cancel" Width="58" />
+                        </ej:TreeGridCommands>
+                    </Command>
+                </ej:TreeGridColumn>
+            </Columns>
+    </ej:TreeGrid>
+{% endhighlight %}
+
+![](Columns_images/Columns_img5.png) 
+
+### Custom buttons
+
+We can also add custom buttons to the command column by specifying text value other than default buttons to the type property. We can also bind actions to the custom button using [Click](https://help.syncfusion.com/api/js/ejbutton#events:click "click") client side event of Button.
+
+{% highlight html %}
+<ej:TreeGrid runat="server" ID="TreeGridControlCommand">
+            <Columns>
+               <ej:TreeGridColumn HeaderText="Manage Records">
+                    <Command>
+                        <ej:TreeGridCommands Type="details">
+                            <ButtonOptions Text="Details" Width="58" click="onClick" />
+                        </ej:TreeGridCommands>                        
+                    </Command>
+                </ej:TreeGridColumn>
+            </Columns>
+</ej:TreeGrid>
+<script type="text/javascript">
+        function onClick(args) {
+            var $tr = $(args.e.target).closest('tr'),
+                treeObj = $("#TreeGridControlCommand").data("ejTreeGrid"),
+                rowIndex = treeObj.getIndexByRow($tr),
+                record = treeObj.model.currentViewData[rowIndex];
+            alert("Task Name: " + record.item.TaskName);
+        }       
+</script>
+{% endhighlight %}
+
+![](Columns_images/Columns_img6.png) 

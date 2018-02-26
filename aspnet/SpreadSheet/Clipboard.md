@@ -64,12 +64,12 @@ The following code example describes the above behavior.
 
  <script type="text/javascript">
 function loadComplete() {
-    var xlClip = this.XLClipboard;
+    var excelClip = this.XLClipboard;
     this.performSelection("G1:H3");
-    xlClip.cut(); // Cut the selected cells
-    //xlClip.copy();//Copy the selected cells.
+    exceClip.cut(); // Cut the selected cells
+    //exceClip.copy();//Copy the selected cells.
     this.performSelection("J4");
-    xlClip.paste();
+    exceClip.paste();
 }
 </script>
 {% endhighlight %}

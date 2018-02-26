@@ -102,35 +102,35 @@ By using “WebMethodAdaptor” we can bind data from WebService to the DropDown
         public object Get()
         {
 
-            List<Employee> EmpData = new List<Employee>();
-            EmpData.Add(new Employee
+            List<Employee> Data = new List<Employee>();
+            Data.Add(new Employee
             {
                 Name = "Erik Linden",
                 Role = "Executive"
                 
             });
-            EmpData.Add(new Employee
+            Data.Add(new Employee
             {
                 Name = "John Linden",
                 Role = "Representative"
                 
             });
-            EmpData.Add(new Employee
+            Data.Add(new Employee
             {
                 Name = "Louis",
                 Role = "Representative"
                
             });
-            EmpData.Add(new Employee
+            Data.Add(new Employee
             {
                 Name = "Lawrence",
                 Role = "Executive"
                
             });
-            dynamic count = EmpData.Count;
+            dynamic count = Data.Count;
             return new
             {
-                result = EmpData,
+                result = Data,
                 count = count
             };
 

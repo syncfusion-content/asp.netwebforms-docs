@@ -50,7 +50,7 @@ Tooltip and Custom Tooltip can be specified for each TabGroup controls.
 								<ContentDefaults Width="50" Height="75" Type="SplitButton" />
 								<ContentGroupCollection>
 									<ej:ContentGroup Id="paste" ToolTip="Paste">
-										<SplitButtonSettings ButtonMode="Dropdown" ArrowPosition="Bottom" TargetID="pasteul" ContentType="TextAndImage" PrefixIcon="e-ribbon e-ribbonpaste" />
+										<SplitButtonSettings ButtonMode="Dropdown" ArrowPosition="Bottom" TargetID="pasteul" ContentType="TextAndImage" PrefixIcon="e-icon e-ribbon e-ribbonpaste" />
 									</ej:ContentGroup>
 								</ContentGroupCollection>
 							</ej:TabContent>
@@ -178,7 +178,7 @@ Set `EnableGroupExpander` as true to show Group Expander for each TabGroup in Ri
 
 {% highlight html %}
 	
-	<ej:Ribbon ID="defaultRibbon" runat="server" Width="500px" GroupExpand="groupexpand">
+	<ej:Ribbon ID="defaultRibbon" runat="server" Width="500px" GroupExpand="groupExpand">
 		<ApplicationTab MenuItemID="ribbonmenu" Type="Menu">
 			<MenuSettings OpenOnClick="false"></MenuSettings>
 		</ApplicationTab>
@@ -201,7 +201,7 @@ Set `EnableGroupExpander` as true to show Group Expander for each TabGroup in Ri
 	</ul>
 	<button id="btn">Home button</button>	
 	<script type="text/javascript">
-		function groupexpand(arg) {
+		function groupExpand(arg) {
 			alert("Group expander click triggered")
 		}
 	</script>

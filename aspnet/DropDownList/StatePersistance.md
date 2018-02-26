@@ -61,14 +61,14 @@ Persisted state can be accessed through local storage using corresponding key na
 {% highlight js %}
 
 	// DropDownList state as string
-	var dropdownlistStateString = window.localStorage.ejDropDownListdropdown;
+	var dropdownlistStateString = window.localStorage.ejDropDownListDropDown;
 
 	//DropDownList state as object
-	var dropdownlistStateObject = JSON.parse(window.localStorage.ejDropDownListdropdown);
+	var dropdownlistStateObject = JSON.parse(window.localStorage.ejDropDownListDropDown);
 
 {% endhighlight %}
 
-N> In the above example, ‘ejDropDownList’ is plugin name and ‘dropdown’ is control id.           
+N> In the above example, ‘ejDropDownList’ is plugin name and ‘DropDown’ is control id.           
 
 ## Maintain data bound values after post back
 
@@ -169,7 +169,7 @@ Here data is bound only on initial page load and not on every post back.
             data.Add(new DropDownData(6, "Diesel Trains"));
             data.Add(new DropDownData(7, "Heavy Motor Vehicles"));
             data.Add(new DropDownData(8, "Light Motor Vehicles"));
-            data.Add(new DropDownData(9, "Aeroplanes"));
+            data.Add(new DropDownData(9, "Aero planes"));
             data.Add(new DropDownData(10, "Helicopters"));
             data.Add(new DropDownData(11, "Ships"));
             data.Add(new DropDownData(12, "Submarines"));

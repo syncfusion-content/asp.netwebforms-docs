@@ -2,7 +2,7 @@
 layout: post
 title: Localization with Grid widget for Syncfusion Essential ASP.NET
 description: How to use globalization and localization
-platform: ejweb
+platform: aspnet
 control: Grid
 documentation: ug
 ---
@@ -257,13 +257,13 @@ Last Page</td></tr>
 
 <script src="../Scripts/i18n/ej.culture.de-DE.min.js" type="text/javascript"></script>
 
-<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True" AllowPaging="True" Locale="de-DE">
+<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="true" AllowPaging="true" Locale="de-DE">
 
-            <GroupSettings EnableDropAreaAutoSizing="False"></GroupSettings>
+            <GroupSettings EnableDropAreaAutoSizing="false"></GroupSettings>
 
             <Columns>
 
-                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
                 <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90" />
 
@@ -612,12 +612,12 @@ Please find the code
 
 <script src="../Scripts/i18n/ej.culture.de-DE.min.js" type="text/javascript"></script>
 
-<ej:Grid ID="OrdersGrid" runat="server" AllowFiltering="True" AllowPaging="True" Locale="de-DE">
+<ej:Grid ID="OrdersGrid" runat="server" AllowFiltering="true" AllowPaging="true" Locale="de-DE">
 
 
             <Columns>
 
-                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
                 <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90" />
 
@@ -774,13 +774,13 @@ I> We have uploaded the predefined language packs for some commonly used culture
 
 <script src="../Scripts/i18n/ej.culture.de-DE.min.js" type="text/javascript"></script>
 
-<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True" AllowPaging="True" Locale="de-DE">
+<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="true" AllowPaging="true" Locale="de-DE">
 
-            <GroupSettings EnableDropAreaAutoSizing="False"></GroupSettings>
+            <GroupSettings EnableDropAreaAutoSizing="false"></GroupSettings>
 
             <Columns>
 
-                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
                 <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90" />
 
@@ -921,13 +921,13 @@ By default, Grid render its text and layout from left to right. To customize Gri
 
 <script src="../Scripts/i18n/ej.culture.de-DE.min.js" type="text/javascript"></script>
 
-<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True" AllowPaging="True" EnableRTL="True" Locale="de-DE">
+<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="true" AllowPaging="true" EnableRTL="true" Locale="de-DE">
 
-            <GroupSettings EnableDropAreaAutoSizing="False"></GroupSettings>
+            <GroupSettings EnableDropAreaAutoSizing="false"></GroupSettings>
 
             <Columns>
 
-                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
                 <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90" />
 

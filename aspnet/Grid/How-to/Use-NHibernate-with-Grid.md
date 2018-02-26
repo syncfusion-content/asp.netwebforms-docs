@@ -130,7 +130,7 @@ public partial class _Default : Page
 
        [ScriptMethod(ResponseFormat=ResponseFormat.Json)]
 
-       public static object PerforUpdate(int key, EmployeeMap value) { 
+       public static object PerformUpdate(int key, EmployeeMap value) { 
 
 
 
@@ -138,21 +138,21 @@ public partial class _Default : Page
 
 
 
-          var employeetoUpdate = session.Get<EmployeeMap>(key);
+          var employeeToUpdate = session.Get<EmployeeMap>(key);
 
 
 
-            employeetoUpdate.Designation = value.Designation;
+            employeeToUpdate.Designation = value.Designation;
 
-            employeetoUpdate.FirstName = value.FirstName;
+            employeeToUpdate.FirstName = value.FirstName;
 
-            employeetoUpdate.LastName = value.LastName;
+            employeeToUpdate.LastName = value.LastName;
 
 
 
              ITransaction transaction = session.BeginTransaction();              
 
-             session.Save(employeetoUpdate);
+             session.Save(employeeToUpdate);
 
              transaction.Commit();               
 

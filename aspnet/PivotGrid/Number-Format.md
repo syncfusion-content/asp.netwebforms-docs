@@ -20,6 +20,7 @@ Allows you to specify the required number format which is to be used in values o
 * scientific
 * accounting
 * fraction
+* string
 
 ## Relational
 

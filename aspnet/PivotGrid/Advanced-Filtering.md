@@ -17,10 +17,8 @@ In client mode, you can enable the Advanced Filtering and Sorting option in the 
 
 {% highlight html %}
 
-<ej:PivotGrid ID=" PivotGrid1" runat="server">
-    <DataSource EnableAdvancedFilter ="true">
-        //...
-    </DataSource>
+<ej:PivotGrid ID="PivotGrid1" EnableAdvancedFilter ="true" runat="server">
+    //...
 </ej:PivotGrid>
 
 {% endhighlight %}

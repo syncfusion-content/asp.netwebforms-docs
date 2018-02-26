@@ -9,8 +9,8 @@ documentation: ug
 ---
 # Server Data Binding
 
-Seamlessly data-bind to any .NET Framework data source controls such as SqlDataSource, ObjectDataSource, LinqDataSource and XmlDataSource to reduce our efforts. The data source control connects to a data source such as a database or middle-tier object and then retrieves or updates data. The data-bound control can then use this data. Simply set the data-bound control’s ID to DataSourceID property of the Control. Once it’s done, the control can retrieves/modifies the data which is provided by data services.
-DropDownList supports binding to all DataSource components, including:
+Seamlessly data-bind to any .NET Framework data source controls such as SqlDataSource, ObjectDataSource, LinqDataSource, and XmlDataSource to reduce our efforts. The data source control connects to a data source such as a database or middle-tier object, and then retrieves or updates data. The data-bound control can then use this data. Simply set the data-bound control’s ID to DataSourceID property of the Control. Once it is done, the control can retrieves/modifies the data that is provided by data services.
+DropDownList supports binding to all DataSource components that includes:
 
 * SqlDataSource
 * LinqDataSource
@@ -18,13 +18,13 @@ DropDownList supports binding to all DataSource components, including:
 * ObjectDataSource
 * XmlDataSource
 
-To bind to a DataSource component, all you need to do is set the DataSourceID property of DropDownList to the ID of the DataSource component. You should also set the DataTextField and DataValueField properties of DropDownList to map the Text and Value properties of the items to the respective columns / fields from the data source.
+To bind to a DataSource component, all you need to do is to set the DataSourceID property of DropDownList to the ID of the DataSource component. You should also set the DataTextField and DataValueField properties of DropDownList to map the Text and Value properties of the items to the respective columns/fields from the data source.
 
 ## SqlDataSource
 
 {% highlight html %}
 
-    <ej:DropDownList ID="DrpDwnsql" runat="server" 
+    <ej:DropDownList ID="DrpDwnsql" runat="server"
         DataTextField="text" 
         DataValueField="id" 
         DataSourceID="SqlDataSource1" WatermarkText="Select a Transport" Width="100%">
@@ -38,7 +38,7 @@ To bind to a DataSource component, all you need to do is set the DataSourceID pr
 
 {% endhighlight %}
 
-For more information, see  [Binding SqlDataSource To DropDownList](https://help.syncfusion.com/aspnet/dropdownlist/datasource#sqldatasource)
+For more information, see [Binding SqlDataSource To DropDownList](https://help.syncfusion.com/aspnet/dropdownlist/datasource#sqldatasource).
 
 ## LinqDataSource
 
@@ -52,12 +52,12 @@ For more information, see  [Binding SqlDataSource To DropDownList](https://help.
 
     <asp:LinqDataSource ID="LinqDataSource1" runat="server" 
         ContextTypeName="WebSampleBrowser.database.Linq_Common_DataDataContext" EntityTypeName="" 
-        TableName="Databindings">
+        TableName="DataBindings">
     </asp:LinqDataSource>
 
 {% endhighlight %}
 
-For more information, see  [Binding LinqDataSource To DropDownList](https://help.syncfusion.com/aspnet/dropdownlist/datasource#linqdatasource)
+For more information, see [Binding LinqDataSource To DropDownList](https://help.syncfusion.com/aspnet/dropdownlist/datasource#linqdatasource).
 
 ## EntityDataSource
 
@@ -77,7 +77,7 @@ For more information, see  [Binding LinqDataSource To DropDownList](https://help
 
 {% endhighlight %}
 
-For more information, see  [Binding EntityDataSource To DropDownList](https://help.syncfusion.com/aspnet/dropdownlist/datasource#entitydatasource)
+For more information, see [Binding EntityDataSource To DropDownList](https://help.syncfusion.com/aspnet/dropdownlist/datasource#entitydatasource).
 
 ## ObjectDataSource
 
@@ -95,7 +95,7 @@ For more information, see  [Binding EntityDataSource To DropDownList](https://he
 
 {% endhighlight %}
 
-GetItems methods returns the DropDownList's items, let we define the GetItems method as follows,
+The GetItems methods returns the DropDownList's items. It is defined as follows:
 
 {% highlight html %}
 
@@ -145,7 +145,7 @@ GetItems methods returns the DropDownList's items, let we define the GetItems me
 
 {% endhighlight %}
 
-For more information, see  [Binding ObjectDataSource To DropDownList](https://help.syncfusion.com/aspnet/dropdownlist/datasource#objectdatasource)
+For more information, see [Binding ObjectDataSource To DropDownList](https://help.syncfusion.com/aspnet/dropdownlist/datasource#objectdatasource).
 
 ## XmlDataSource
 
@@ -164,7 +164,7 @@ For more information, see  [Binding ObjectDataSource To DropDownList](https://he
 
 {% endhighlight %}
 
-When using an XmlDataSource, the XML file should have the format shown below:
+When using an XmlDataSource, the XML file should have the format as shown in the following.
 
 {% highlight html %}
 
@@ -188,7 +188,7 @@ When using an XmlDataSource, the XML file should have the format shown below:
 
 {% endhighlight %}
 
-For more information, see  [Binding XmlDataSource To DropDownList](https://help.syncfusion.com/aspnet/dropdownlist/datasource#xmldatasource)
+For more information, see [Binding XmlDataSource To DropDownList](https://help.syncfusion.com/aspnet/dropdownlist/datasource#xmldatasource).
 
 
 

@@ -85,7 +85,7 @@ And in code behind, create the data source and assign it as below.
 
         Select a skill</div>
 
-    <ej:listbox id="listboxsample" runat="server" DataTextField="Name" DataValueField="Name"  Width="240"></ej:listbox>
+    <ej:listbox id="listBoxSample" runat="server" DataTextField="Name" DataValueField="Name"  Width="240"></ej:listbox>
 
 </div>
 
@@ -97,7 +97,7 @@ And in code behind, create the data source and assign it as below.
 
         {
 
-listboxsample.DataSource = GetData();
+listBoxSample.DataSource = GetData();
 
         }
 
@@ -182,9 +182,9 @@ N> Use [ejQuery](http://help.syncfusion.com/js/api/ejquery) to set the Query pro
 
         {
 
-listboxsample.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/";
+listBoxSample.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/";
 
-            listboxsample.Query = "ej.Query().from('Customers').take(14)";
+            listBoxSample.Query = "ej.Query().from('Customers').take(14)";
 
         }
 
@@ -415,9 +415,9 @@ In the Design page, map the values for DataTextField and DataValueField. In the 
 
 protected void Page_Load(object sender, EventArgs e)
         {
-            listboxsample.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/";
-            listboxsample.Query = "ej.Query().from('Customers')";
-            listboxsample.AllowVirtualScrolling = true;
+            listBoxSample.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/";
+            listBoxSample.Query = "ej.Query().from('Customers')";
+            listBoxSample.AllowVirtualScrolling = true;
         }
         
 {% endhighlight %}
@@ -449,11 +449,11 @@ In the Design page, map the values for DataTextField and DataValueField. In the 
 
 protected void Page_Load(object sender, EventArgs e)
         {
-            listboxsample.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/";
-            listboxsample.Query = "ej.Query().from('Customers')";
-            listboxsample.AllowVirtualScrolling = true;
-            listboxsample.VirtualScrollMode = Syncfusion.JavaScript.VirtualScrollMode.Continuous;
-            listboxsample.ItemRequestCount = 10;
+            listBoxSample.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/";
+            listBoxSample.Query = "ej.Query().from('Customers')";
+            listBoxSample.AllowVirtualScrolling = true;
+            listBoxSample.VirtualScrollMode = Syncfusion.JavaScript.VirtualScrollMode.Continuous;
+            listBoxSample.ItemRequestCount = 10;
         }
         
 {% endhighlight %}
@@ -489,8 +489,8 @@ In remote binding, the server might not return data sometimes due to various rea
 
     protected void Page_Load(object sender, EventArgs e)
         {
-            listboxsample.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/";
-            listboxsample.Query = "ej.Query().from('Customers')";
+            listBoxSample.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/";
+            listBoxSample.Query = "ej.Query().from('Customers')";
         }
 
 

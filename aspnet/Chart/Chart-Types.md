@@ -110,7 +110,7 @@ You can change the color of the line segments by using the **Fill** property of 
 {% highlight html %}
 
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
             //   ...
             series: [{
                //  Change the color of a line 
@@ -1730,7 +1730,7 @@ Polar **DrawType** property is used to change the series plotting type to *Line*
 
 ### Stack columns in Polar chart
 
-By using the **IsStacking** property, you can specify whether the column has to be stacked when the DrawType is column. Its default value is **False**.
+By using the **IsStacking** property, you can specify whether the column has to be stacked when the DrawType is column. Its default value is **false**.
 
 {% highlight html %}
 
@@ -1794,7 +1794,7 @@ Radar **DrawType** property is used to change the series plotting type to *Line*
 
 ### Stack columns in Radar chart
 
-By using the **IsStacking** property, you can specify whether the column has to be stacked when the DrawType is set as Column. Its default value is set to *False*.
+By using the **IsStacking** property, you can specify whether the column has to be stacked when the DrawType is set as Column. Its default value is set to *false*.
 
 {% highlight html %}
 
@@ -2027,7 +2027,7 @@ To customize the errorBar cap visibility, length, width and fill color, you can 
 
 ## Box and Whisker Chart 
 
-To render a Box and Whisker Chart, set the series type as **boxandwhisker** .Box and Whisker chart requires2 fields (x and y) to plot a segment. The feild y requires n number of data or it  should contain minimum of five values to plot a segment.
+To render a Box and Whisker Chart, set the series type as **BoxAndWhisker** .Box and Whisker chart requires2 fields (x and y) to plot a segment. The field y requires n number of data or it  should contain minimum of five values to plot a segment.
 
 {% highlight html %}
 
@@ -2057,13 +2057,13 @@ To render a Box and Whisker Chart, set the series type as **boxandwhisker** .Box
     [Serializable]
     public class BoxPlotData
     {
-        public BoxPlotData(string xval,Double[] yvalue)
+        public BoxPlotData(string xVal,Double[] yValue)
         {
-            this.Xvalue = xval;
-            this.YValue1 = yvalue;
+            this.XValue = xVal;
+            this.YValue1 = yValue;
             
         }
-        public string Xvalue
+        public string XValue
         {
             get;
             set;
@@ -2085,7 +2085,7 @@ To render a Box and Whisker Chart, set the series type as **boxandwhisker** .Box
 <ej:Chart ID="Chart2" runat="server"> 
     <Series>
         <%--Set chart type and map dataSource to series--%>
-        <ej:Series Type="BoxAndWhisker" XName="Xvalue" YName="YValue1">
+        <ej:Series Type="BoxAndWhisker" XName="XValue" YName="YValue1">
         </ej:Series>
     </Series>
 </ej:Chart>
@@ -2143,3 +2143,83 @@ Outlier symbol, width and height can be customized using outlierSettings through
 ![](Chart-Types_images/Chart-Types_img92.png)
 
 [Click](http://asp.syncfusion.com/demos/web/chart/boxplot.aspx) here to view the Box and Whisker Chart online demo sample.
+
+## Pie Of Pie Chart
+To render the pie of pie chart, set the series `type` as **PieOfPie**. Pie of pie chart is used for displaying the data of a pie slice as another pie chart. The values in the second pie is displayed based on the **splitMode**  property.
+
+{% highlight html %}
+
+<Series>
+<ej:Series  SplitValue="10" GapWidth="100" Type="PieOfPie">
+<Points>
+<ej:points Text="58%" X="Saudi Arabia" Y="58" />
+<ej:points Text="15%" X="Persian Gulf" Y="15"/>
+<ej:points Text="13%" X="Canada" Y="13"/>
+<ej:points Text="8%" X="Venezuela" Y="8"/>
+<ej:points Text="3%" X="Mexico" Y="3"/>
+<ej:points Text="2%" X="Russia" Y="2"/>
+<ej:points Text="1%" X="Russia" Y="1"/>
+</Points>
+</ej:Series>
+</Series>
+            
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img93.png)
+
+[Click](http://asp.syncfusion.com/demos/web/chart/pieofpie.aspx) here to view the Pie Of Pie Chart online demo sample.
+
+### Split Mode and Split Value 
+
+The points to be displayed in the second pie is decided based on the `SplitMode` property.**SplitMode** property takes the following values. 
+* Position – Have to split the data points based on its position
+* Value – Have to split the data points based on its Y value
+* Percentage – Have to split the points based on the percentage value
+* Indexes – The data points with the specified indexes are split separately 
+ By default, the splitMode is set to  **Value**. 
+
+{% highlight html %}
+
+<Series>
+<ej:Series  SplitValue="3" SplitMode="Position">
+</ej:Series>
+</Series>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img94.png)
+
+### Changing Pie Of Pie Size
+The size of the second Pie can be customized by using the `PieOfPieCoefficient` property. The default value of pieOfPieCoefficient is **0.6**.Its value ranges from 0 to 1.
+
+{% highlight html %}
+
+<Series>
+<ej:Series PieOfPieCoefficient="1">
+</ej:Series>
+</Series>
+
+{% endhighlight %}
+
+The following screenshot represents the pie of pie series with pieOfPieCoefficient as 1
+
+![](Chart-Types_images/Chart-Types_img95.png)
+
+#### Customizing the Gap
+
+The distance between the two pies in the pie of pie chart can be controlled by using the `GapWidth` property. The default value is **50**.
+
+ {% highlight html %}
+
+<Series>
+      <ej:Series GapWidth="150">
+                 
+       </ej:Series>
+</Series>
+
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img96.png)
+
+

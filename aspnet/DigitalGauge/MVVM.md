@@ -49,7 +49,7 @@ angular.module('syncApp', ['ejangular'])
 
 .controller('DigitalGauge', function ($scope) {
 
-$scope.nvalue = "text";
+$scope.value = "text";
 
 });
 
@@ -131,7 +131,7 @@ Digital Gauge supports the two way biding for the property value as mentioned ea
 
 e-characterSetting-opacity="0.8" e-position-x="52"
 
-e-value="nvalue" e-position-y="52">
+e-value="value" e-position-y="52">
 
 </e-item>
 
@@ -139,7 +139,7 @@ e-value="nvalue" e-position-y="52">
 
 </ej-DigitalGauge>
 
-Type here <input type="text" id="txtValue" ng-model="nvalue" Style="width:110px"/>
+Type here <input type="text" id="txtValue" ng-model="value" Style="width:110px"/>
 
 <asp:Content>
 
@@ -161,7 +161,7 @@ angular.module('syncApp', ['ejangular'])
 
 .controller('DigitalGauge', function ($scope) {
 
-$scope.nvalue = "Syncfusion";
+$scope.value = "Syncfusion";
 
 });
 
@@ -213,7 +213,7 @@ Digital Gauge with two way binding in AngularJS
 
         window.viewModel = {
 
-        samplevalue: ko.observable(“Syncfusion”),
+        sampleValue: ko.observable(“Syncfusion”),
 
         };
 

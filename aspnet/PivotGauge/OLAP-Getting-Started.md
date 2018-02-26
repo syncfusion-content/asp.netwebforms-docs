@@ -22,6 +22,7 @@ Now, add a web form to the ASP.NET empty web application. For adding a web form,
 Now, add the following dependency libraries as references to your web application. To add them to your application, right-click **References** in the solution explorer and select Add Reference. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
 
 * Syncfusion.EJ
+* Syncfusion.EJ.Export
 * Syncfusion.EJ.Pivot
 
 Register the referenced assemblies in Web.config files available at the root of the application.
@@ -34,6 +35,7 @@ Register the referenced assemblies in Web.config files available at the root of 
         ……
         <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.EJ.Pivot, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.EJ.Export, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
 
     </assemblies>
 </compilation>
@@ -185,15 +187,16 @@ Now, add a web form to the ASP.NET empty web application. For adding a web form,
 
 Add the following dependency libraries as references to your web application. To add them to your application, right-click **References** in the solution explorer and select Add Reference. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
+N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. And if you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
+
 * Syncfusion.Compression.Base
 * Syncfusion.Linq.Base
 * Syncfusion.Olap.Base
 * Syncfusion.PivotAnalysis.Base
 * Syncfusion.EJ
 * Syncfusion.EJ.Web
+* Syncfusion.EJ.Export
 * Syncfusion.EJ.Pivot
-
-N> If any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility is installed, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET].
 
 Register the referenced assemblies in Web.config files available at the root of the application.
 

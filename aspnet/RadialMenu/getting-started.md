@@ -71,7 +71,7 @@ You can set the images for each item by giving the image URL to the **ImageURL**
 
 {% highlight html %}
 
-      <ej:RadialMenu ID="defaultradialmenu" runat="server" TargetElementId="radialtargetone" >         
+      <ej:RadialMenu ID="defaultRadialMenu" runat="server" TargetElementId="radialTargetOne" >         
             <Items>
            
                 <ej:RadialMenuItems ImageURL="asp.syncfusion.com/demos/web/Content/images/RadialMenu/copy.png" Text="Copy" ></ej:RadialMenuItems>
@@ -91,14 +91,14 @@ Refer to the following code example to add target content to the **Radial Menu**
 
      <div id="contentDiv">
 
-            <div id="radialtargetone" class="content-container-fluid">
+            <div id="radialTargetOne" class="content-container-fluid">
                 <div class="row">
                         <ej:RTE ID="rteSampleone" runat="server" Width="100%" ShowToolBar="false"  ClientSideOnSelect="radialShow">
                         <RTEContent>
                         <p>Model–view–controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
                         The model consists of application data, business rules, logic, and functions. A view can be any output representation of data, such as a chart or a diagram.
                         Multiple views of the same data are possible, such as a bar chart for management and a tabular view for accountants.
-                        The controller mediates input, converting it to commands for the model or view.The central ideas behind MVC are code reusability and in addition to dividing the application into three kinds of components, the MVC design defines the interactions between them.</p>
+                        The controller mediates input, converting it to commands for the model or view.The central ideas behind MVC are code reusable and in addition to dividing the application into three kinds of components, the MVC design defines the interactions between them.</p>
                         <p>A controller can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). It can also send commands to the model to update the model's state (e.g., editing a document).</p>
 
                         <p>A model notifies its associated views and controllers when there has been a change in its state. This notification allows the views to produce updated output, and the controllers to change the available set of commands. A passive implementation of MVC omits these notifications, because the application does not require them or the software platform does not support them.</p>
@@ -132,7 +132,7 @@ You can display the **Radial Menu** by performing desired action on the target c
 
            
             function radialShow(e) {
-            var target = $("#radialtargetone"), radialRadius = 150, radialDiameter = 2 * radialRadius,
+            var target = $("#radialTargetOne"), radialRadius = 150, radialDiameter = 2 * radialRadius,
             // To get Iframe positions
             iframeY = target.offset().top + e.event.clientY, iframeX = target.offset().left + e.event.clientX,
             // To set Radial Menu position within target

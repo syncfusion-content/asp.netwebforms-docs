@@ -11,7 +11,7 @@ documentation: ug
 
 ## Highlight
 
-EjRangeNavigator provides highlighting supports to the intervals on mouse hover. To enable the highlighting option, set the Enable property to true in the HighlightSettings of NavigatorStyleSettings.
+EjRangeNavigator provides highlighting supports to the intervals on mouse hover. To enable the highlighting option, set the `Enable` property to true in the `HighlightSettings` of `NavigatorStyleSettings`.
 
 {% highlight html %}
 
@@ -32,7 +32,7 @@ EjRangeNavigator provides highlighting supports to the intervals on mouse hover.
 
 ### Customize the highlight style
 
-To customize the highlighted intervals, use color, border and opacity options in the HighlightSettings.
+To customize the highlighted intervals, use `Color`, `Border` and `Opacity` options in the `HighlightSettings`.To customize border of highlighted interval, use `Color` and `Width` options in `Border`.
 
 {% highlight html %}
 
@@ -53,7 +53,7 @@ To customize the highlighted intervals, use color, border and opacity options in
 
 ## Selection
 
-EjRangeNavigator provides selection supports to the intervals by, clicking and dragging the highlighted intervals. To enable the selection option, set the Enable property to true in the SelectionSettings.
+EjRangeNavigator provides selection supports to the intervals by, clicking and dragging the highlighted intervals. To enable the selection option, set the `Enable` property to true in the `SelectionSettings`.
 
 {% highlight html %}
 
@@ -76,7 +76,7 @@ EjRangeNavigator provides selection supports to the intervals by, clicking and d
 
 ### Customize the selection style
 
-To customize the selected intervals, use color, border and opacity options in the selectionSettings.
+To customize the selected intervals, use `Color`, `Border` and `Opacity` options in the `SelectionSettings`. To customize border of selected interval, use`Color` and `Width` options in `Border`.
 
 {% highlight html %}
 
@@ -98,13 +98,13 @@ To customize the selected intervals, use color, border and opacity options in th
 
 ## Scrollbar
 
-* To render the Scrollbar in rangenavigator, you need to enable **EnableScrollbar** option.
+* To render the Scrollbar in RangeNavigator, you need to enable `EnableScrollbar` option.
  
-* **ScrollRangeSettings** of  rangenavigator *Start* and *End* value is used to set the minimum and maximum datasource value to be added in the rangenavigator.
+* `ScrollRangeSettings` of  rangenavigator `Start` and `End` value is used to set the minimum and maximum datasource value to be added in the rangenavigator.
  
-* Based on the ScrollRangeSettings *Start, End* value and dataSource *start, end* value scrollbar will be adjust.
+* Based on the ScrollRangeSettings *Start, End* value and dataSource *Start, End* value scrollbar will be adjust.
 
-* When you change the scrollbar position, *ScrollEnd* event returns the current position of start and end range value.
+* When you change the scrollbar position, `ScrollEnd` event returns the current position of start and end range value.
 
 {% highlight html %}
 

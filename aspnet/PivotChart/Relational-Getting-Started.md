@@ -22,6 +22,7 @@ Now, add a web form to the empty web application. For adding a web form, right-c
 Add the following dependency libraries as references to your web application. To add them to your application, right-click **References** in the solution explorer and select Add Reference. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
 
 * Syncfusion.EJ
+* Syncfusion.EJ.Export
 * Syncfusion.EJ.Pivot
 
 Register the referred assemblies in Web.config files available at the root of the application.
@@ -34,6 +35,7 @@ Register the referred assemblies in Web.config files available at the root of th
         ……
         <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.EJ.Pivot, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.EJ.Export, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     </assemblies>
 </compilation>
 {% endhighlight %}
@@ -262,6 +264,8 @@ Now, add a web form to the empty web application. For adding a web form, right-c
 
 Add the following dependency libraries as references to your web application. To add them to your application, right-click **References** in the solution explorer and select Add Reference. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
 
+N> If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
+
 * Syncfusion.Compression.Base
 * Syncfusion.Linq.Base
 * Syncfusion.Olap.Base
@@ -271,6 +275,7 @@ Add the following dependency libraries as references to your web application. To
 * Syncfusion.DocIO.Base
 * Syncfusion.EJ
 * Syncfusion.EJ.Web
+* Syncfusion.EJ.Export
 * Syncfusion.EJ.Pivot
 
 Register the referred assemblies in Web.config files available at the root of the application.
@@ -283,6 +288,7 @@ Register the referred assemblies in Web.config files available at the root of th
         ……
     <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <add assembly="Syncfusion.EJ.Pivot, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <add assembly="Syncfusion.EJ.Export, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <add assembly="Syncfusion.EJ.Web, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <add assembly="Syncfusion.Compression.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <add assembly="Syncfusion.Linq.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />

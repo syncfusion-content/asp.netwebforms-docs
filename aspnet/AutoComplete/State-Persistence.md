@@ -29,7 +29,7 @@ In the design page, add an AutoComplete element from ToolBox and set EnablePersi
 
 
 
-The following screenshot is the output for AutoComplete when EnablePersistence is set to True.
+The following screenshot is the output for AutoComplete when EnablePersistence is set to true.
 
 ![](State-Persistence_images/State-Persistence_img1.png)
 
@@ -121,7 +121,7 @@ namespace ASPWeb
 
             data.Add(new ObjectData(Text = "Denmark", Sprite = "flag-dk"));
 
-            data.Add(new ObjectData(Text = "Estonia", Sprite = "flag-ee"));
+            data.Add(new ObjectData(Text = "Estonia", Sprite = "flag-ea"));
 
             data.Add(new ObjectData(Text = "Egypt", Sprite = "flag-eg"));
 
@@ -149,7 +149,7 @@ namespace ASPWeb
 
             data.Add(new ObjectData(Text = "Poland", Sprite = "flag-pl"));
 
-            data.Add(new ObjectData(Text = "Qatar", Sprite = "flag-qa"));
+            data.Add(new ObjectData(Text = "Qatar", Sprite = "flag-qr"));
 
             return data;
 
@@ -175,7 +175,7 @@ Define the CSS classes for the sprite images, you can find the images in the fol
 
 <style type="text/css">
 
-        /* Sprite css for country flags */
+        /* Sprite CSS for country flags */
 
         .flag
 
@@ -215,7 +215,7 @@ Define the CSS classes for the sprite images, you can find the images in the fol
 
         .flag.flag-dz {background-position: -75px -15px}
 
-        .flag.flag-ee {background-position: -100px -15px}
+        .flag.flag-ea {background-position: -100px -15px}
 
         .flag.flag-eg {background-position: -125px -15px}
 
@@ -245,7 +245,7 @@ Define the CSS classes for the sprite images, you can find the images in the fol
 
         .flag.flag-pt {background-position: 0 -60px}
 
-        .flag.flag-qa {background-position: -25px -60px}
+        .flag.flag-qr {background-position: -25px -60px}
 
         .flag.flag-ro {background-position: -50px -60px}
 

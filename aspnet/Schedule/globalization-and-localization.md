@@ -68,7 +68,7 @@ The following code example shows how to localize the Schedule control in **fr-FR
                 EveryWeekDay: "chaque jour de la semaine",
                 Never: "jamais",
                 After: "après",
-                Occurence: "apparition",
+                Occurrence: "apparition",
                 On: "sur",
                 Edit: "Modifier",
                 RecurrenceDay: "Jour (s)",
@@ -233,23 +233,23 @@ namespace WebSampleBrowser.Schedule
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<TimeZoneCollections> timezonecollection = new List<TimeZoneCollections>();
-            timezonecollection.Add(new TimeZoneCollections { text="UTC -04:00", id= "10", value = "UTC -04:00" });
-            timezonecollection.Add(new TimeZoneCollections { text = "UTC -03:30", id = "11", value = "UTC -03:30" });
-            timezonecollection.Add(new TimeZoneCollections { text = "UTC -03:00", id = "12", value = "UTC -03:00" });
-            timezonecollection.Add(new TimeZoneCollections { text = "UTC -02:30", id = "13", value = "UTC -02:30" });
-            timezonecollection.Add(new TimeZoneCollections { text = "UTC -01:00", id = "14", value = "UTC -01:00" });
-            timezonecollection.Add(new TimeZoneCollections { text = "UTC +00:00", id = "15", value = "UTC +00:00" });
-            timezonecollection.Add(new TimeZoneCollections { text = "UTC +01:00", id = "16", value = "UTC +01:00" });
-            timezonecollection.Add(new TimeZoneCollections { text = "UTC +02:00", id = "17", value = "UTC +02:00" });
-            timezonecollection.Add(new TimeZoneCollections { text = "UTC +03:00", id = "18", value = "UTC +03:00" });
-            timezonecollection.Add(new TimeZoneCollections { text = "UTC +03:30", id = "19", value = "UTC +03:30" });
-            timezonecollection.Add(new TimeZoneCollections { text = "UTC +04:00", id = "20", value = "UTC +04:00" });
-            timezonecollection.Add(new TimeZoneCollections { text = "UTC +04:30", id = "22", value = "UTC +04:30" });
-            timezonecollection.Add(new TimeZoneCollections { text = "UTC +05:00", id = "23", value = "UTC +05:00" });
-            timezonecollection.Add(new TimeZoneCollections { text = "UTC +05:30", id = "24", value = "UTC +05:30" });
+            List<TimeZoneCollections> timeZoneCollection = new List<TimeZoneCollections>();
+            timeZoneCollection.Add(new TimeZoneCollections { text="UTC -04:00", id= "10", value = "UTC -04:00" });
+            timeZoneCollection.Add(new TimeZoneCollections { text = "UTC -03:30", id = "11", value = "UTC -03:30" });
+            timeZoneCollection.Add(new TimeZoneCollections { text = "UTC -03:00", id = "12", value = "UTC -03:00" });
+            timeZoneCollection.Add(new TimeZoneCollections { text = "UTC -02:30", id = "13", value = "UTC -02:30" });
+            timeZoneCollection.Add(new TimeZoneCollections { text = "UTC -01:00", id = "14", value = "UTC -01:00" });
+            timeZoneCollection.Add(new TimeZoneCollections { text = "UTC +00:00", id = "15", value = "UTC +00:00" });
+            timeZoneCollection.Add(new TimeZoneCollections { text = "UTC +01:00", id = "16", value = "UTC +01:00" });
+            timeZoneCollection.Add(new TimeZoneCollections { text = "UTC +02:00", id = "17", value = "UTC +02:00" });
+            timeZoneCollection.Add(new TimeZoneCollections { text = "UTC +03:00", id = "18", value = "UTC +03:00" });
+            timeZoneCollection.Add(new TimeZoneCollections { text = "UTC +03:30", id = "19", value = "UTC +03:30" });
+            timeZoneCollection.Add(new TimeZoneCollections { text = "UTC +04:00", id = "20", value = "UTC +04:00" });
+            timeZoneCollection.Add(new TimeZoneCollections { text = "UTC +04:30", id = "22", value = "UTC +04:30" });
+            timeZoneCollection.Add(new TimeZoneCollections { text = "UTC +05:00", id = "23", value = "UTC +05:00" });
+            timeZoneCollection.Add(new TimeZoneCollections { text = "UTC +05:30", id = "24", value = "UTC +05:30" });
 
-            Schedule1.TimeZoneCollection.DataSource = timezonecollection;
+            Schedule1.TimeZoneCollection.DataSource = timeZoneCollection;
         }
             public class TimeZoneCollections
             {

@@ -39,6 +39,7 @@ Appointments play a dynamic role within the Schedule control with which the user
 The appointments can be added/edited in the Scheduler using any one of the following ways,
 
 * Quick window
+* Inline creation/ editing
 * Default appointment window
 * [Context menu](/aspnet/schedule/context-menu)
 * Through programmatically
@@ -86,6 +87,53 @@ Another way to disable the quick window option at dynamic time can be achieved t
     <script type="text/javascript">
         function onCellClick(args) {
             args.cancel = true;// Prevents the display of quick window on clicking the cells.
+        }
+    </script>
+</asp:Content>
+
+{% endhighlight %}
+
+
+#### Inline Appointment Creation/Editing
+
+Another easier way, for adding or editing the appointment’s subject alone can be achieved using inline Add/Edit support. It allows the user to add and edit the appointments inline.
+
+To get familiar with inline adding mode, single click on any of the Scheduler cells or press `enter` key on the selected cells. When the inline adding mode is ON, a text box will get created within the clicked Scheduler cells with a blinking cursor in it requiring the user to enter the subject of the appointment. Once the subject is typed, the appointment will be saved on pressing the `enter` key. 
+
+To enable the inline edit mode, single click on any of the existing appointment’s subject, so that the user can edit the subject of that appointment. The edited subject of that appointment is then updated on pressing the `enter` key.
+
+The inline option can be enabled/disabled on Scheduler by using the `AllowInline` API, whereas its default value is set to **false**.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData" AllowInline="false" CurrentDate="5/2/2014">
+    <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule"/>
+</ej:Schedule>
+
+<asp:SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings:ScheduleConnectionString %>"
+            SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+{% endhighlight %}
+
+Enabling Inline Edit alone
+
+It is possible to disable the inline appointment creation and enabling only the editing mode of inline by making use of the `cellClick` event. The below code example shows the way to disable the inline appointment creation while clicking on the cells, but appointments can be edited while clicking on it’s subject.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData" AllowInline="true" CurrentDate="5/2/2014" CellClick="onCellClick">
+    <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule"/>
+</ej:Schedule>
+
+<asp:SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings:ScheduleConnectionString %>"
+            SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+            
+<asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
+    <script type="text/javascript">
+        function onCellClick(args) {
+            args.cancel = true; // Prevents inline appointment creation on clicking the cells.
         }
     </script>
 </asp:Content>
@@ -448,7 +496,7 @@ The following code example lets you drag and drop the external items from the tr
                             Description:
                         </td>
                         <td colspan="2">
-                            <textarea id="customdescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
+                            <textarea id="customDescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
                         </td>
                     </tr>
                     <tr>
@@ -487,8 +535,8 @@ The following code example lets you drag and drop the external items from the tr
             </table>
         </div>
         <div>
-            <button type="submit" onclick="cancel()" id="btncancel" style="float:right;margin-right:20px;margin-bottom:10px;">Cancel</button>
-            <button type="submit" onclick="save()" id="btnsubmit" style="float:right;margin-right:20px;margin-bottom:10px;">Save</button>
+            <button type="submit" onclick="cancel()" id="buttonCancel" style="float:right;margin-right:20px;margin-bottom:10px;">Cancel</button>
+            <button type="submit" onclick="save()" id="buttonSubmit" style="float:right;margin-right:20px;margin-bottom:10px;">Save</button>
         </div>
     </div>
 
@@ -511,8 +559,8 @@ The following code example lets you drag and drop the external items from the tr
                 close: "clearFields",
 
             });
-            $("#btncancel").ejButton({ width: '85px' });
-            $("#btnsubmit").ejButton({ width: '85px' });
+            $("#buttonCancel").ejButton({ width: '85px' });
+            $("#buttonSubmit").ejButton({ width: '85px' });
         });
         function onNodeDrag(e) {
             if (e.targetElementData.parentId == "") return false;
@@ -532,8 +580,8 @@ The following code example lets you drag and drop the external items from the tr
                 var _target = $($(e.target).context);
                 if ($(_target).hasClass("e-workcells") && (scheduleObj.model.showTimeScale) && scheduleObj.currentView() !== "month" && !(scheduleObj._isCustomView())) {
                     var time = scheduleObj.model.orientation == "vertical" ? scheduleObj.model.startHour + ($(e.event.target).parent().index() / 2) : scheduleObj.model.startHour + (($(e.event.target).index() - (((scheduleObj.model.endHour - scheduleObj.model.startHour) * 2) * index)) / 2);
-                    var timemin = time.toString().split(".");
-                    var cur_StartTime = new Date(curDate).setHours(parseInt(timemin[0]), parseInt(timemin[1]) == 5 ? 30 : 00);
+                    var timeMin = time.toString().split(".");
+                    var cur_StartTime = new Date(curDate).setHours(parseInt(timeMin[0]), parseInt(timeMin[1]) == 5 ? 30 : 00);
                     var min = (parseInt(new Date(cur_StartTime).getHours()) == 23 && parseInt(new Date(cur_StartTime).getMinutes()) == 30) ? new Date(cur_StartTime).getMinutes() + 29 : new Date(cur_StartTime).getMinutes() + 30;
                     var cur_EndTime = new Date(new Date(cur_StartTime).setMinutes(min));
                 }
@@ -554,10 +602,10 @@ The following code example lets you drag and drop the external items from the tr
                 // To find the resource details               
                 var resource = scheduleObj._getResourceValue($($(e.target).context));
 
-                // custom appointmnt window 
+                // custom appointment window 
 
                 $("#subject").val(e.droppedElementData.text);
-                $("#customdescription").val(e.droppedElementData.text);
+                $("#customDescription").val(e.droppedElementData.text);
                 $("#StartTime").ejDateTimePicker({ value: new Date(StartTime) });
                 $("#EndTime").ejDateTimePicker({ value: new Date(endTime) });
                 $("#resource").val(resource.text);
@@ -568,7 +616,7 @@ The following code example lets you drag and drop the external items from the tr
         function save() {
             var obj = {};
             obj["Subject"] = $("#subject")[0].value;
-            obj["Description"] = $("#customdescription")[0].value;
+            obj["Description"] = $("#customDescription")[0].value;
             obj["StartTime"] = new Date($("#StartTime")[0].value);
             obj["EndTime"] = new Date($("#EndTime")[0].value);
             obj["OwnerId"] = $("#ownerId")[0].value;
@@ -1122,6 +1170,26 @@ The default recurrence validation has been included for recurrence appointments 
 {% endhighlight %}
 
 N> You can parse the **RecurrenceRule** of an appointment from the server-side by making use of a new generic utility class **RecurrenceHelper**. Refer this [KB document](https://www.syncfusion.com/kb/5390/how-to-parse-the-recurrencerule-in-server-side).
+
+### Recurrence Edit and Delete options
+
+The recurring appointments can be edited or deleted in three ways as below:
+
+* Single occurrence
+* Following appointments
+* Entire series
+
+#### Single occurrence
+
+When an option "Only this Appointment" is selected, a single occurrence of the recurrence appointment alone will be edited or deleted.
+
+#### Following appointments
+
+When an option "Following Appointments" is selected, all the following events of the recurrence appointment from the current instance will be edited or deleted. The previous instances of the recurrence appointment before this current instances will be retained as it is on the Scheduler.
+
+#### Entire series
+
+The entire recurrence series will be edited / deleted, on selecting this option.
 
 ## Reminder
 

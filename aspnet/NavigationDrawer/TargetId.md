@@ -13,37 +13,48 @@ This property is used to define the target Id for Navigation Drawer. The drawer 
 
 {% highlight html %}
 
-<button id="drawerTarget" style="top:200px;left:600px;position:absolute"></button>
+       <div class="cols-sample-area" style="padding: 0px; position:relative;  margin: 0px; min-height: 451px; width: 100%;">
+              <button id="drawerTarget" style="top:200px;left:50%;position:absolute">Target Button</button>
 
+        <ej:NavigationDrawer runat="server"  ID="navpane"  EnableListView="true" TargetId="drawerTarget" >
+                        <ListViewSettings Width="300" SelectedItemIndex="0" />
+                        <Items>
+                            <ej:NavigationDrawerItems  Text="Home"  />
+                            <ej:NavigationDrawerItems  Text="Profile" />
+                            <ej:NavigationDrawerItems  Text="Photos" />
+                            <ej:NavigationDrawerItems  Text="Location" />
+                        </Items>
+                    </ej:NavigationDrawer>
+                </div>
 
+{% endhighlight %}
 
-<div id="navpane">
+Add following code in style section,
 
-        <ul>
+{% highlight css %}
 
-            <li>Settings</li>
+    <style type="text/css">
+       
+       .e-header {
+            padding-top: 8px;
+        }
 
-            <li>Read</li>
+        #container p {
+            padding: 10px;
+            text-align: justify;
+        }
 
-            <li>Help</li>
-
-            <li>About</li>
-
-        </ul>
-
-</div>
-
-<script>      
-
-        $("#navpane").ejNavigationDrawer({ position: "fixed", targetId: "drawerTarget", enableListView: true, listViewSettings: { width: 300 }});
-
-        $("#drawerTarget").ejButton({text:"Open Drawer"});
-
-    </script>
-
-
-
-
+        #container {
+           -moz-user-select: none;
+           -webkit-user-select: none;
+           -ms-user-select: none;
+           user-select: none;
+           position: relative;
+           overflow: hidden;
+           min-height: 451px;
+        }     
+    
+    </style>
 
 {% endhighlight %}
 
@@ -51,15 +62,11 @@ This property is used to define the target Id for Navigation Drawer. The drawer 
 
 
 
-The following screenshots illustrates the output.
 
-![](TargetId_images/TargetId_img1.png) 
+The following screenshot illustrates the output.
 
+![](TargetId_images/img1.png) 
 
-
-
-
-![](TargetId_images/TargetId_img2.png) 
 
 
 

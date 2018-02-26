@@ -25,6 +25,7 @@ To set an appropriate start page, right-click the **“GettingStarted.aspx”** 
 Now, add the following dependency libraries as references to your web application. To add them to your application, right-click **References** in the solution explorer and select Add Reference. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
 
 * Syncfusion.EJ
+* Syncfusion.EJ.Export
 * Syncfusion.EJ.Pivot
 
 Register the referenced assemblies in Web.config files available at the root of the application.
@@ -36,7 +37,8 @@ Register the referenced assemblies in Web.config files available at the root of 
         ……
         ……
         <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.EJ.Pivot, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />            
+        <add assembly="Syncfusion.EJ.Pivot, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />  
+        <add assembly="Syncfusion.EJ.Export, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />            
 
     </assemblies>
 </compilation>
@@ -182,7 +184,50 @@ You can sort a field to ascending or descending order by using the **"SortOrder"
 
 ![](Getting-Started_images/purejssorting.png)
 
-### Apply filtering
+### Sort Row/Column by Date
+
+You can sort a field either in ascending or descending order according for date type by using the **sortOrder** property. Sorting is applicable only for Row and Column fields. By default, fields are arranged in ascending order.
+
+N> To apply sorting by date, you need to specify the `format` and `formatString` in the field.
+
+{% highlight html %}
+
+<ej:PivotGrid ID="PivotGrid1" runat="server" ClientIDMode="Static">
+    <DataSource>
+        <Rows>
+            <ej:Field FieldName="Date" FieldCaption="Date" Format="date" FormatString="dd-MM-yyyy" SortOrder="Descending"></ej:Field>
+        </Rows>
+        <Columns>
+            <ej:Field FieldName="Day" FieldCaption="Day" Format="date" FormatString="ddd" SortOrder="Ascending"></ej:Field>
+        </Columns>
+        <Values>
+            <ej:Field FieldName="Amount" FieldCaption="Amount"></ej:Field>
+        </Values>
+    </DataSource>
+    <ClientSideEvents Load="onLoad" />
+</ej:PivotGrid>
+<asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+<script type="text/javascript">
+    function onLoad(args) {
+        args.model.dataSource.data = [
+            { Amount: 100, Date: "5-1-2017", Day: "Wednesday" },
+            { Amount: 200, Date: "1-2-2017", Day: "Sunday" },
+            { Amount: 300, Date: "1-1-2018", Day: "Thursday" },
+            { Amount: 150, Date: "5-1-2018", Day: "Wednesday" },
+            { Amount: 200, Date: "1-2-2017", Day: "Thursday" },
+            { Amount: 100, Date: "1-1-2018", Day: "Sunday" },
+            { Amount: 200, Date: "5-1-2017", Day: "Wednesday" },
+            { Amount: 250, Date: "1-2-2017", Day: "Sunday" }
+            //....
+        ];
+    }
+</script> 
+
+{% endhighlight %}
+
+![](Getting-Started_images/sortbydate.png)
+
+### Apply Filtering
 
 The filtering option allows you to specify a set of values that should be displayed or hidden. Also, the filtering option is applicable only for the row, column, and filter areas.
 
@@ -278,6 +323,8 @@ To set an appropriate start page, right-click the **“GettingStarted.aspx”** 
 
 Now, add the following dependency libraries as references to your web application. To add them to your application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
 
+N> If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
+
 * Syncfusion.Compression.Base
 * Syncfusion.Linq.Base
 * Syncfusion.Olap.Base
@@ -290,8 +337,6 @@ Now, add the following dependency libraries as references to your web applicatio
 * Syncfusion.EJ.Web
 * Syncfusion.EJ.Export
 * Syncfusion.EJ.Pivot
-
-N> If any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility is installed, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET].
 
 ### Scripts and CSS initialization
 

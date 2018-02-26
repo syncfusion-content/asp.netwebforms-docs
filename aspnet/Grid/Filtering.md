@@ -2,7 +2,7 @@
 layout: post
 title: Filtering with Grid widget for Syncfusion Essential ASP.NET
 description: How to enable filtering and its functionalities
-platform: ejweb
+platform: aspnet
 control: Grid
 documentation: ug
 ---
@@ -34,7 +34,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="true" >
            <Columns>
                 <ej:Column Field="OrderID" />
                 <ej:Column Field="EmployeeID"  />
@@ -111,13 +111,15 @@ You can enable menu filter by setting `FilterType` as `Menu` in `FilterSettings`
 
 There is an option to show or hide the additional filter options in the Menu by setting `ShowPredicate` as `true` or `false` in `FilterSettings` respectively.
 
+We can also filter a specified range of values by using the `between` operator for the column type `number`, `date` and `datetime`.
+
 The following code example describes the above behavior.
 
 {% tabs %}
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="true" >
            <FilterSettings FilterType="Menu" />  
            <Columns>
                 <ej:Column Field="OrderID" />
@@ -212,7 +214,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="true" >
            <FilterSettings FilterType="Excel" />  
            <Columns>
                 <ej:Column Field="OrderID" />
@@ -283,11 +285,11 @@ The following output is displayed as a result of the above code example.
 ![](Filtering_images/Filtering_img6.png)
 
 
-Checkbox list generation:
+### Checkbox list generation:
 
 By default, the checkbox list is generated from distinct values of the filter column from dataSource which gives an option to search and select the required items.
 
-Also on checkbox list generation, if the number of distinct values are greater than 1000, then the excel filter will display only first 1000 values to ensure the best performance on rendering and searching. However this limit has been customized according to your requirement by setting `MaxFilterChoices` with required limit in integer.
+Also on checkbox list generation, if the number of distinct values are greater than 1000, then the excel filter will display only first 1000 values and show "Not all items shown" label to ensure the best performance on rendering and searching. However this limit has been customized according to your requirement by setting `MaxFilterChoices` with required limit in integer.
 
 N> 1. Using excel filter events you can change the dataSource of the checkbox list. 
 N> 2. `Query` of checkbox list can also be changed using excel filter events.
@@ -298,7 +300,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="true" >
            <FilterSettings FilterType="Excel" MaxFilterChoices="4" /> 
             <Columns>
                 <ej:Column Field="OrderID" />
@@ -368,6 +370,15 @@ The following output is displayed as a result of the above code example.
 ![](Filtering_images/filtering_img7.png)
 
 
+### Add current selection to filter checkbox:
+
+When filtering is done multiple times on the same column then the previously filtered values on the column will be cleared. So, to retain the old values `Add current selection to filter` checkbox can be used which is displayed when data is searched in the search bar.
+
+The following image describes the above mentioned behavior.
+
+![](filtering_images/filtering_img12.png)
+
+
 ### Case Sensitivity
 
 To perform filter operation with case sensitive in excel styled filter menu mode by setting `EnableCaseSensitivity` as `true`.
@@ -378,7 +389,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="true" >
            <FilterSettings FilterType="Excel" EnableCaseSensitivity="true" /> 
             <Columns>
                 <ej:Column Field="OrderID" />
@@ -597,7 +608,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="true" >
            <FilterSettings FilterType="FilterBar"  /> 
              <Columns>
                 <ej:Column Field="OrderID" />
@@ -685,8 +696,8 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="True" AllowPaging="True" >
-            <FilterSettings ShowFilterBarStatus="True"  /> 
+           <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="true" >
+            <FilterSettings ShowFilterBarStatus="true"  /> 
               <Columns>
                 <ej:Column Field="OrderID" />
                 <ej:Column Field="EmployeeID"  />
@@ -896,3 +907,99 @@ List of Column type and Filter operators
         </tr>
     </table>
 
+## FilterBar Template
+
+Usually enabling AllowFiltering, will create default textbox in Grid FilterBar. So, Using [`FilterBarTemplate`] property of `Columns` we can render any other controls like AutoComplete, DropDownList etc in filterbar to filter the grid data for the particular column.  It has three functions. They are    
+
+1. `create` - It is used to create the control at time of initialize.
+2. `read`   - It is used to read the Filter value selected.
+3. `write`  - It is used to render the control and assign the value selected for filtering.
+
+
+The following code example describes the above behavior.
+{% tabs %}
+
+{% highlight html %}
+    
+        <ej:Grid ID="FlatGrid" runat="server" AllowFiltering="true" AllowPaging="true">
+            <Columns>
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
+                <ej:Column Field="CustomerID" HeaderText="CustomerID" Width="80" >
+                    <FilterBarTemplate Create="autoComplete_create" Write="autoComplete_write" Read ="autoComplete_read" />
+                </ej:Column>
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" TextAlign="Right" Width="75">
+                    <FilterBarTemplate Write="dropdown_write" Read="dropdown_read" />
+                </ej:Column>
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}">
+                    <FilterBarTemplate Write="numeric_write" Read ="numeric_read" />
+                </ej:Column>
+                <ej:Column Field="ShipCountry" HeaderText="Ship Country" Width="110" />  
+                <ej:column Field="Verified" HeaderText="Verified" width="75"/>                            
+            </Columns>            
+         </ej:Grid>
+{% endhighlight  %}
+
+{% highlight js %}
+
+     <script type="text/javascript">
+      
+        function autoComplete_create(args) {
+            return "<input>"
+        }
+
+        function autoComplete_write(args) {
+			var gridObj = $('#<%= FlatGrid.ClientID %>').data("ejGrid");
+            var data = ej.DataManager(gridObj.model.dataSource).executeLocal(new ej.Query().select("CustomerID"));
+            args.element.ejAutocomplete({ width: "100%", dataSource: data, enableDistinct: true, focusOut: ej.proxy(args.column.filterBarTemplate.read, this, args) });
+        }
+
+        function autoComplete_read(args) {
+            this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)
+        }
+
+        function dropdown_write(args) {
+            var data = [{ text: "clear", value: "clear" }, { text: "1", value: 1 }, { text: "2", value: 2 }, { text: "3", value: 3 }, { text: "4", value: 4 },
+                                                            { text: "5", value: 5 }, { text: "6", value: 6 }, { text: "7", value: 7 }, { text: "8", value: 8 }, { text: "9", value: 9 }
+            ]
+            args.element.ejDropDownList({ width: "100%", dataSource: data, change: ej.proxy(args.column.filterBarTemplate.read, this, args) })
+        }
+
+        function dropdown_read(args) {
+            if (args.element.val() == "clear") {
+                this.clearFiltering(args.column.field);
+                args.element.val("")
+            }
+            this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)
+        }
+        function numeric_write(args) {
+            args.element.ejNumericTextbox({ width: "100%",decimalPlaces: 2, focusOut: ej.proxy(args.column.filterBarTemplate.read, this, args) });
+        }
+
+        function numeric_read(args) {
+            this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)
+        }
+    </script>
+{% endhighlight %}
+
+{% highlight c# %}
+namespace WebSampleBrowser.Grid
+  {
+    public partial class DefaultFiltering : System.Web.UI.Page
+     {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+           var data = new NorthWndDataContext().Orders.ToList();
+            FlatGrid.DataSource = data;
+            FlatGrid.DataBind();
+        }
+     }
+ }
+{% endhighlight  %}
+    
+{% endtabs %}
+
+The following output is displayed as a result of the above code example.
+
+![](filtering_images/filtering_img11.png)
+{:caption}
+After Filtering

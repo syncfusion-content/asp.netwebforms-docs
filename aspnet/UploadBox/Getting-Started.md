@@ -32,7 +32,7 @@ Add the following code example to the ASPX page to render the UploadBox.
 
 {% highlight html %}
 
-<div class="posupload">
+<div class="upload">
 
     <b>Select a file to upload</b>
 
@@ -48,7 +48,7 @@ Add the given styles to show the UploadBox with margin alignments.
 
 {% highlight css %}
 
-.posupload
+.upload
 
 {
 
@@ -105,13 +105,13 @@ public void ProcessRequest(HttpContext context)
 
                 string fileName = uploadedFiles[i].FileName;
 
-                int indx = fileName.LastIndexOf("\\");
+                int index = fileName.LastIndexOf("\\");
 
-                if (indx > -1)
+                if (index > -1)
 
                 {
 
-                    fileName = fileName.Substring(indx + 1);
+                    fileName = fileName.Substring(index + 1);
 
                 }
 
@@ -184,30 +184,30 @@ Add the following code example to the script section.
 
 {% highlight css %}
 
-var uploadobject;
+var object;
 
-function allowfiletype()
+function allow()
 {
 
-    uploadobject = $("#<%=Upload1.ClientID%>").data("ejUploadbox");
+    object = $("#<%=Upload1.ClientID%>").data("ejUploadbox");
 
-    uploadobject.option('extensionsAllow', $("#fileallow").val());
+    object.option('extensionsAllow', $("#Allow").val());
 
-    uploadobject.option('extensionsDeny', "");
+    object.option('extensionsDeny', "");
 
-    $("#filedeny").val(');
+    $("#Deny").val(');
 
 }
 
-function denyfiletype() {
+function deny() {
 
-    uploadobject = $("#<%=Upload1.ClientID%>").data("ejUploadbox");
+    object = $("#<%=Upload1.ClientID%>").data("ejUploadbox");
 
-    uploadobject.option('extensionsAllow', "");
+    object.option('extensionsAllow', "");
 
-    uploadobject.option('extensionsDeny', $("#filedeny").val());
+    object.option('extensionsDeny', $("#Deny").val());
 
-    $("#fileallow").val(');
+    $("#Allow").val(');
 
 }
 
@@ -219,7 +219,7 @@ N> Add the following input elements and two button elements to give file extensi
 
 {% highlight html %}
 
-    <div class="posupload">
+    <div class="upload">
 
         <b>Select a file to upload</b>
 
@@ -265,13 +265,13 @@ N> Add the following input elements and two button elements to give file extensi
 
             <div class="col-md-3">
 
-                <input type="text" id="fileallow" class="tb6 ejinputtext" />
+                <input type="text" id="Allow" class="tb6 ejinputtext" />
 
             </div>
 
             <div class="col-md-3">
 
-                <ej:Button ID="upbutton1" Type="Button" CssClass="e-btn" Text="Allow" ClientSideOnClick="allowfiletype"
+                <ej:Button ID="upbutton1" Type="Button" CssClass="e-btn" Text="Allow" ClientSideOnClick="allow"
 
                     runat="server">
 
@@ -285,13 +285,13 @@ N> Add the following input elements and two button elements to give file extensi
 
             <div class="col-md-3">
 
-                <input type="text" id="filedeny" class="tb6 ejinputtext" />
+                <input type="text" id="Deny" class="tb6 ejinputtext" />
 
             </div>
 
             <div class="col-md-3">
 
-                <ej:Button ID="upbutton2" Type="Button" CssClass="e-btn" Text="Deny" ClientSideOnClick="denyfiletype"
+                <ej:Button ID="upbutton2" Type="Button" CssClass="e-btn" Text="Deny" ClientSideOnClick="deny"
 
                     runat="server">
 
@@ -310,7 +310,7 @@ Add the following Styles in the ASPX page to allow or deny files.
 
 {% highlight css %}
         
-.posupload
+.upload
 
 {
 

@@ -213,3 +213,7 @@ public static object GetAllItemDetails()
 {% endhighlight %}
 
 {% endtabs %}
+
+To save and retrieve the Spreadsheet data in the database, you can refer this [`Knowledge Base`](https://www.syncfusion.com/kb/7567/how-to-save-and-retrieve-the-spreadsheet-data-in-database "Knowledge Base") link.
+
+You can update data dynamically in the Spreadsheet by using [`updateRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:updaterange "updateRange") method.

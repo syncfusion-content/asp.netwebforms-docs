@@ -139,15 +139,15 @@ Add the following code example to the corresponding ASPX page to render the Rat
 Add the following scripts to render the Rating with Knockout support.
 
 {% highlight js %}
-var raingObj;
+var ratingObj;
 
     $(function () {
 
         // declaration           
 
-        raingObj = $("#apiRating").data("ejRating");
+        ratingObj = $("#apiRating").data("ejRating");
 
-        $("#btnGetValue").ejButton({ "click": "onGetValueClck", "width": "87px" });
+        $("#btnGetValue").ejButton({ "click": "onGetValueClick", "width": "87px" });
 
     });
 
@@ -161,13 +161,13 @@ var raingObj;
 
         ko.applyBindings(viewModel);
 
-        raingObj = $("#apiRating").data("ejRating");
+        ratingObj = $("#apiRating").data("ejRating");
 
     });
 
-    function onResetClck() {
+    function onResetClick() {
 
-        raingObj.reset();
+        ratingObj.reset();
 
     }
 {% endhighlight %}

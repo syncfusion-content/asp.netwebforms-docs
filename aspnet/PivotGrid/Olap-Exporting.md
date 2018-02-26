@@ -418,6 +418,44 @@ function exportBtnClick(args)
 
 {% endhighlight %} 
 
+### File format selection
+
+I> This option is applicable only for PivotGrid when exporting to Excel document.
+
+You can set the option for exporting the control to Excel document either in *.xls* or *.xlsx* format, using `fileFormat` property inside the `BeforeExport` event.
+
+N> By default excel document will be exported to ".xls" format using PivotEngine export.
+
+{% highlight html %}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+//...
+
+<body>
+    //...
+    <ej:PivotGrid ID="PivotGrid1" runat="server" Url="../OLAPService" IsResponsive="true">
+        <ClientSideEvents  BeforeExport="Export"/>
+    </ej:PivotGrid>
+
+    <ej:Button runat="server" ClientSideOnClick="exportBtnClick" Text="Export">
+    </ej:Button>
+
+    <script type="text/javascript">
+        function exportBtnClick(args) {
+            var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
+            pGridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.Excel);;
+        }
+        function Export(args) {
+            args.exportMode = ej.PivotGrid.ExportMode.PivotEngine;
+            args.fileFormat = ".xlsx"; //you can set the excel sheet format here
+        }
+    </script>
+</body>
+
+</html>                                            
+
+{% endhighlight %}
+
 ### Customize the export document name
 
 For customizing a name in the WebAPI controller, the following code snippet is used:
@@ -485,6 +523,7 @@ You can add the title and description to the exporting document by using the tit
         function Exporting(args) {
             args.title = "PivotGrid";
             args.description = "Displays both OLAP and Relational datasource in tabular format";
+			args.exportWithStyle = true;   // by default it sets as true. It improves performance on exporting huge data when it sets as false.
         }
     </script>
 
@@ -605,7 +644,23 @@ void htmlHelper_CSVExport(object sender, string csvString)
 
 {% endhighlight %}
 
-The following screenshot shows the pivot grid control exported to an Excel document:
+### Exporting complete data on Paging
+
+When paging is enabled, you can export the complete data by enabling the `EnableCompleteDataExport` property. It is supported in both types of JSON and PivotEngine export and it is applicable for all kinds of exporting formats available in PivotGrid.
+
+{% highlight html %}
+<html>
+//...
+<body>    
+    <ej:PivotGrid ID="PivotGrid1" runat="server" EnableCompleteDataExport="true">
+    </ej:PivotGrid>
+	//...
+</body>
+</html>
+
+{% endhighlight %}
+
+The below screenshot shows the PivotGrid control exported to Excel document.
 
 ![](Exporting_images/ExportOLAPExcel.png)
 

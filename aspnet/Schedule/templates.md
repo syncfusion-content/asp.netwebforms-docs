@@ -105,11 +105,11 @@ The cells can be customized with the following code example.
             {{"{{"}}else view == 'month' && resource.text == 'Party Hall-B' && date.getDay() == 5{{}}}}
                 <div style="background-color:lightblue">Conf.</div>
             {{"{{"}}else resource.text == 'Party Hall-B' && date.getDate() == 16{{"}}"}
-                <div style="background-color:darkkhaki">Happyday</div>
+                <div style="background-color:darkkhaki">HappyDay</div>
             {{"{{"}}else view != 'month' && resource.text == 'Party Hall-B' && date.getDay() == 5 && date.getHours() == 12{{}}}}
                 <div style="background-color:goldenrod">Conf.</div>
             {{"{{"}}else date.getDate() == 10 && date.getMonth() == 11{{}}}}
-                <div style="background-color:palegreen">Day Spl</div>
+                <div style="background-color:palegreen">Day Special</div>
             {{"{{"}}else date.getDate() == 25 && date.getMonth() == 11{{}}}}
                 <div style="background-color:sandybrown">Christmas</div>
             {{"{{"}}/if{{}}}}
@@ -346,7 +346,7 @@ When template is applied for the `PrioritySettings`, these default icons will be
 <asp:Content runat="server" ID="Style" ContentPlaceHolderID="StyleSection">
     <style type="text/css">
     .Critical,
-	.Ultracritical,
+	.UltraCritical,
 	.None {
 		height: 13px;
 		width: 13px;
@@ -363,7 +363,7 @@ When template is applied for the `PrioritySettings`, these default icons will be
 		background-position: -13px;
 	}
 
-	.Ultracritical {
+	.UltraCritical {
 		background-color: #56ca85;
 		background-position: -59px;
 	}

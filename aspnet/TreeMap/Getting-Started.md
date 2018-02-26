@@ -196,11 +196,11 @@ N> Population data is referred from [List of continents by population](http://en
 
 ### DataSource
 
-The DataSource property accepts the collection values as input. For example, you can provide the list of objects as input.
+The `DataSource` property accepts the collection values as input. For example, you can provide the list of objects as input.
 
 #### Weight Value Path 
 
-You can calculate the size of the object using WeightValuePath of TreeMap.
+You can calculate the size of the object using `WeightValuePath` of TreeMap.
 
 1. Populate the TreeMap with using the above properties.
 
@@ -239,15 +239,15 @@ The following image displays a TreeMap with default properties using the above c
 
 ### GroupTreeMap Items using Levels
 
-You can group TreeMapItems using levels in TreeMap.
+You can group TreeMap Items using `Levels` in TreeMap.
 
 #### Group Path
 
-You can use GroupPath property for every flat level of the TreeMap control. It is a path to a field on the source object that serves as the “Group” for the level specified. You can group the data based on the GroupPath in the TreeMap control. When the GroupPath is not specified, then the items are not grouped and the data is displayed in the order specified in the DataSource.
+You can use `GroupPath` property for every flat level of the TreeMap control. It is a path to a field on the source object that serves as the “Group” for the level specified. You can group the data based on the `GroupPath` in the TreeMap control. When the `GroupPath` is not specified, then the items are not grouped and the data is displayed in the order specified in the `DataSource`.
 
 #### Group Gap
 
-You can use GroupGap property to separate the items from every flat level and to differentiate the levels mentioned in the TreeMap control.
+You can use `GroupGap` property to separate the items from every flat level and to differentiate the levels mentioned in the TreeMap control.
 
 The following code sample explains how to group TreeMap Items using ‘Levels’.
 
@@ -292,11 +292,11 @@ The following screenshot displays grouping of TreeMapItems using Levels
 
 ### Customizing TreeMap Appearance by Range
 
-You can differentiate the nodes based on its value and color ranges using Range color. You can also define the color value range using From and To properties. 
+You can differentiate the nodes based on its value and color ranges using `RangeColorMapping`. You can also define the color value range using From and To properties. 
 
 #### Color Value Path
 
-The ColorValuePath of TreeMap is a path to a field on the source object. You can determine the color for the object using ColorValuePath of TreeMap.
+The `ColorValuePath` of TreeMap is a path to a field on the source object. You can determine the color for the object using ColorValuePath of TreeMap.
 
 The following code sample explains how to customize TreeMap Appearance by Range.
 
@@ -349,11 +349,11 @@ The following screenshot displays customized TreeMap Appearance by Range.
 
 ### Enable Tooltip
 
-You can enable the tooltip by setting ShowTooltip to ‘True’. By default, it takes the property of the bound object that is referred in the WeightValuePath and displays its content when the corresponding node is hovered. You can customize the template for tooltip using TooltipTemplate property.
+You can enable the tooltip by setting `ShowTooltip` to ‘true’. By default, it takes the property of the bound object that is referred in the `WeightValuePath` and displays its content when the corresponding node is hovered. You can customize the template for tooltip using `TooltipTemplate` property.
 
 #### Leaf Item Settings
 
-You can customize the Leaf level TreeMap items using LeafItemSettings. The Label and tooltip values take the property of bound object that is referred in the LabelPath when defined.
+You can customize the Leaf level TreeMap items using `LeafItemSettings`. The Label and tooltip values take the property of bound object that is referred in the `LabelPath` when defined.
 
 The following code sample displays how the tooltip is enabled.
 
@@ -412,9 +412,9 @@ TreeMap with tooltip option
 
 ### Legend
 
-You can set the color value of leaf nodes using TreeMapLegend. This legend is appropriate only for the TreeMap whose leaf nodes are colored using RangeColorMapping.
+You can set the color value of leaf nodes using TreeMap `LegendSettings`. This legend is appropriate only for the TreeMap whose leaf nodes are colored using `RangeColorMapping`.
 
-You can set ShowLegend property value to ‘True’ to make a Legend visible.
+You can set `ShowLegend` property value to ‘true’ to make a Legend visible.
 
 #### Label for Legend
 

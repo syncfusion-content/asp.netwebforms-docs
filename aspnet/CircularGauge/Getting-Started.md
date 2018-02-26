@@ -48,7 +48,7 @@ Run the above code to get a default CircularGauge with default values as follows
 
 ### Set Height and Width values
 
-Pointers have different height and width range so you can set the height and width of the gauge according to your requirements.Set the basic values of the gauge such as height and width of the canvas element.
+Pointers have different height and width range so you can set the `Height` and `Width` of the gauge according to your requirements.Set the basic values of the gauge such as height and width of the canvas element.
 
 #### Code:
 
@@ -72,7 +72,7 @@ Run the above code to get the following output.
 
 ### Set Background Color
 
-You can draw the speedometer with dark background and to vary the speed of the pointer you can set ReadOnly to ‘false’ for user Interaction. 
+You can draw the speedometer with dark `BackgroundColor` and to vary the speed of the pointer you can set `ReadOnly` to ‘false’ for user Interaction. 
 
 #### Code:
 
@@ -97,9 +97,10 @@ Run the above code to get the following output.
 
 ### Provide scale values
 
-* The pointer cap is customized with the following options. Cap radius, cap border color, cap background color, pointer cap border width are some of the properties that are customizable.
-* The speed limit in the gauge has maximum value of 200KmpH.So you can set maximum value for the gauge as 200.
-* Major Ticks have the interval value of 20 and minor ticks have the interval value of 5. Show ranges and show indicators are used to display the ranges and indicators in their respective positions.
+* The `Scales` values specifies the pointers, ticks, labels, indicators and ranges of **Circular Gauge**.
+* The `PointerCap` can be customized with the following options. Cap `Radius`, cap `BorderColor`, cap `BackgroundColor`, pointer cap `BorderWidth` are some of the properties that are customizable.
+* The speed limit in the gauge has maximum value of 200 kph. So you can set `Maximum` value for the gauge as 200.
+* Major Ticks have the `MajorIntervalValue` of 20 and minor ticks have the `MinorIntervalValue` of 5. `ShowRanges` and `ShowIndicators` are used to display the ranges and indicators in their respective positions.
 
 #### Code:
 
@@ -141,7 +142,7 @@ Run the above code to get the following output.
 
 ### Add Label Customization
 
-To display the value around the scale, labels are used. By customizing the label color it displays as specified 
+To display the value around the scales, `Labels` are used. By customizing the label `Color` it displays as specified.
 
 #### Code:
 
@@ -204,7 +205,7 @@ Run the above code to get the following output.
 
 ### Add pointers data
 
-Here, you have three pointers that denote the kilometer value, rotation per minute value and torque value.The torque value pointer needs not to be similar to the other two pointers. You can set torque pointer as marker pointer. And you can set other attributes for pointer such as background color, border color, Length, width and distance from scale.
+Here, you have three `Pointers` that denote the kilometer value, rotation per minute value and torque value.The torque value pointer needs not be similar to the other two pointers. You can set torque pointer as marker pointer. And you can set other attributes for pointer such as `Value`, `ShowBackNeedle`, `Type`, `MarkerType`, `NeedleType`, `BackgroundColor`, `Border` `Color`, `Length`, `Width`, `Radius` and `DistanceFromScale`.
 
 #### Code:
 
@@ -294,8 +295,10 @@ Run the above code to get the following output.
 
 ### Add Ticks Details
 
-You can set major ticks with their width and height greater than Minor ticks. Color must be given for better visibility in dark backgrounds.
-
+* You can set Major `Ticks` with their `Width` and `Height` equal to Minor `Ticks`. 
+* You can set `Color` according to your preference for better visibility in dark backgrounds.
+* You can specify the tick Type either major or minor type tick and `DistanceFromScale` values.
+* To display and customize the tick value add the following code example. 
 
 #### Code:
 
@@ -357,9 +360,9 @@ Run the above code to get the following output.
 
 ### Add Range Values
 
-* Ranges denote the property of the scale value in the speedometer. The color values of the ranges specify the speed variation. Set ShowRanges to ‘true’ for showing the ranges in the Circular Gauge.
-* For Low speed, you can mention it as safe zone; for moderate speed, you can  give as caution zone and for high speed, you can notify it as high speed.
-* You can customize the range with the properties such as start value, end value, start width, end width,  background color , border color, etc.,
+* Ranges denote the property of the scale value in the speedometer. The color values of the `Ranges` denote speed variation. Set `ShowRanges` as **true** for showing the ranges in the **Circular Gauge**.
+* For Low speed, you can mention it as safe zone; for moderate speed, you can call it as caution zone and for high speed, you can mark it as high speed.
+* You can customize the range with properties such as `StartValue`, `EndValue`, `StartWidth`, `EndWidth`, `BackgroundColor` , `Border` `Color`, `DistanceFromScale`,etc.,
 
 #### Code:
 
@@ -445,8 +448,9 @@ Run the above code to get the following output.
 
 ### Add Indicator Details
 
-* Indicators denote whether the pointers values are in their respective zones or not. Positioning the indicator on the respective range value gives the required changes.
-* By using Position property, you can set location of the indicator. StateRanges defines how the indicator should behave when the pointer is in certain values. 
+* Indicators denote whether the pointers values are in their respective zones or not. Positioning the `Indicators` on the respective range value gives you the required changes.
+* By using `Position` property, you can set the location of the indicator. You can also specify `Height`, `Width` and `Type` for indicators. `StateRanges` defines how the indicator should behave when the pointer is in certain values. 
+* You can customize state ranges with properties like `EndValue`, `StartValue`, `BackgroundColor`, `BorderColor`, `Text`, `TextColor`, etc.
 
 #### Code:
 
@@ -582,7 +586,7 @@ Run the above code to get the following output.
 
 ### Add Custom Label Details
 
-Custom labels are used to specify the texts that need to be displayed in the gauge .you can customize it using various properties.To display the three range description, custom texts are used here.
+`CustomLabels` are used to specify the texts that need to be displayed in the gauge. You can customize it through various properties such as `Value`, `Position`, `Color`, `Font` `Size`, `FontFamily` and `FontStyle`. To display the three range description, custom texts are used here.
 
 #### Code:
 

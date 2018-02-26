@@ -96,7 +96,7 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 {% highlight html %}
 
-<ej:Toolbar  ID="toolbarcontent"  runat="server" Width="300px" DataIdField="Id" DataTooltipTextField="Tooltip" DataSpriteCssClassField="Css"></ej:Toolbar >
+<ej:Toolbar  ID="toolbar"  runat="server" Width="300px" DataIdField="Id" DataTooltipTextField="Tooltip" DataSpriteCssClassField="Css"></ej:Toolbar >
 
 {% endhighlight %}
 
@@ -154,7 +154,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 	data.Add(new ToolData {Id ="1", Css = "ToolbarItems LeftAlign_tool", Tooltip = "left"});
 
-	data.Add(new ToolData {Id ="2", Css="ToolbarItems CenterAlign_tool", Tooltip="centre"});
+	data.Add(new ToolData {Id ="2", Css="ToolbarItems CenterAlign_tool", Tooltip="center"});
 
 	data.Add(new ToolData {Id="3", Css="ToolbarItems RightAlign_tool", Tooltip="right"});
 
@@ -170,7 +170,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 
 
-	this.toolbarcontent.DataSource = data;
+	this.toolbar.DataSource = data;
 
 }	
 
@@ -281,7 +281,7 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 {% highlight html %}
 
-<ej:Toolbar  ID="toolbarcontent" runat="server" Width="340px" Orientation="Horizontal" DataTextField="CustomerID" Query="ej.Query().from('Orders').take(6)"></ej:Toolbar >
+<ej:Toolbar  ID="toolbar" runat="server" Width="340px" Orientation="Horizontal" DataTextField="CustomerID" Query="ej.Query().from('Orders').take(6)"></ej:Toolbar >
 
 {% endhighlight %}
 
@@ -291,7 +291,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 {
 
- this.toolbarcontent.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/";
+ this.toolbar.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/";
 
 }
 
@@ -319,7 +319,7 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 <%--Refer Local data sections for styles--%>
 
-<ej:Toolbar ID="toolbarcontent" runat="server" Orientation="Horizontal" DataIdField="Id" DataSpriteCssClassField="IconCss" DataTooltipTextField="ToolTip" DataSourceID="SqlDataSource1" Width="600px"></ej:Toolbar>
+<ej:Toolbar ID="toolbar" runat="server" Orientation="Horizontal" DataIdField="Id" DataSpriteCssClassField="IconCss" DataTooltipTextField="ToolTip" DataSourceID="SqlDataSource1" Width="600px"></ej:Toolbar>
 
 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\TreeEntity.mdf;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT * FROM [ToolBarItems]"></asp:SqlDataSource>
 
@@ -344,7 +344,7 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 <%--Refer Local data sections for styles--%>
 
-<ej:Toolbar ID="toolbarcontent" runat="server" Width="300px" DataSourceID="ObjectDataSource1" DataTooltipTextField="Tooltip" DataIdField="Id" DataSpriteCssClassField="Css"></ej:Toolbar>
+<ej:Toolbar ID="toolbar" runat="server" Width="300px" DataSourceID="ObjectDataSource1" DataTooltipTextField="Tooltip" DataIdField="Id" DataSpriteCssClassField="Css"></ej:Toolbar>
 
 <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetToolItems" TypeName="ToolData"></asp:ObjectDataSource>
 
@@ -419,7 +419,7 @@ public class ToolData
 
          data.Add(new ToolData { Id = "1", Css = "ToolbarItems LeftAlign_tool", Tooltip = "left" });
 
-            data.Add(new ToolData { Id = "2", Css = "ToolbarItems CenterAlign_tool", Tooltip = "centre" });
+            data.Add(new ToolData { Id = "2", Css = "ToolbarItems CenterAlign_tool", Tooltip = "center" });
 
             data.Add(new ToolData { Id = "3", Css = "ToolbarItems RightAlign_tool", Tooltip = "right" });
 
@@ -459,7 +459,7 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 <%--Refer Local data sections for styles--%>
 
-<ej:Toolbar  ID="toolbarcontent" runat="server" Width="300px" DataIdField="Id" DataSpriteCssClassField="Sprite" DataTooltipTextField="Tooltip" DataMember="RootItem" DataSourceID="XmlDataSource1"></ej:Toolbar >
+<ej:Toolbar  ID="toolbar" runat="server" Width="300px" DataIdField="Id" DataSpriteCssClassField="Sprite" DataTooltipTextField="Tooltip" DataMember="RootItem" DataSourceID="XmlDataSource1"></ej:Toolbar >
 
 <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/App_Data/XMLTool.xml"></asp:XmlDataSource >
 
@@ -541,7 +541,7 @@ The LINQ DataSource is used to bind the Toolbar data via LINQ to SQL. The proper
 
 <%--Refer Local data sections for styles--%>
 
-<ej:Toolbar ID="toolbarcontent" runat="server" Orientation="Horizontal" DataIdField="Id" DataSpriteCssClassField="IconCss" DataTooltipTextField="ToolTip" DataSourceID="LinqDataSource1" Width="600px"></ej:Toolbar>
+<ej:Toolbar ID="toolbar" runat="server" Orientation="Horizontal" DataIdField="Id" DataSpriteCssClassField="IconCss" DataTooltipTextField="ToolTip" DataSourceID="LinqDataSource1" Width="600px"></ej:Toolbar>
 
 <asp:LinqDataSource ID="LinqDataSource1" runat="server" ContextTypeName=" DataClasses1DataContext" EntityTypeName="" TableName="ToolBarItems"> </asp:LinqDataSource>
 

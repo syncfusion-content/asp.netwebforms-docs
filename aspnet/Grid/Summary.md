@@ -28,7 +28,7 @@ There are some default summary types available for basic summary formula. The fo
 {% highlight html %}
 
 
-<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" ShowSummary="True">
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" ShowSummary="true">
 
 <DataManager URL="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/" Offline="true"></DataManager>
 
@@ -62,7 +62,7 @@ There are some default summary types available for basic summary formula. The fo
 
               <Columns>
 
-                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="80" />
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="80" />
 
                 <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="80" />
 
@@ -197,7 +197,7 @@ This property helps you to create custom summary formula for summary. The follow
 
 
 
-  <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" ShowSummary="True">
+  <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" ShowSummary="true">
 
             <PageSettings PageSize="5"></PageSettings>
 
@@ -217,7 +217,7 @@ This property helps you to create custom summary formula for summary. The follow
 
               <Columns>
 
-                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="80" />
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="80" />
 
                 <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="80" />
 
@@ -256,7 +256,7 @@ Custom Summary is used to create custom summary formula for summary. The followi
 
     <div>
 
-        <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" ShowSummary="True">
+        <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" ShowSummary="true">
 
 
 
@@ -278,7 +278,7 @@ Custom Summary is used to create custom summary formula for summary. The followi
 
             <Columns>
 
-                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="80" />
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="80" />
 
                  <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="80" />
 
@@ -300,9 +300,9 @@ Custom Summary is used to create custom summary formula for summary. The followi
 
             var rs = 100000;
 
-            var dol = 0.017
+            var interest = 0.017
 
-            return (rs * dol);
+            return (rs * interest);
 
         }
 
@@ -432,7 +432,7 @@ This property helps you to enable the group summary column in Grid. The followin
 
 
 
-<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True" ShowSummary="True">
+<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="true" ShowSummary="true">
 
             <PageSettings PageSize="10"></PageSettings>
 
@@ -440,7 +440,7 @@ This property helps you to enable the group summary column in Grid. The followin
 
             <SummaryRows>
 
-                <ej:SummaryRow ShowTotalSummary="False">
+                <ej:SummaryRow ShowTotalSummary="false">
 
                     <SummaryColumn>
 
@@ -454,7 +454,7 @@ This property helps you to enable the group summary column in Grid. The followin
 
             <Columns>
 
-                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="80" />
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="80" />
 
                     <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90" />
 
@@ -592,7 +592,7 @@ ShowCaptionSummary property used to achieve caption summary feature.
 
 
 
-<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="True" ShowSummary="True">
+<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="true" ShowSummary="true">
 
 
 
@@ -600,7 +600,7 @@ ShowCaptionSummary property used to achieve caption summary feature.
 
     <SummaryRows>
 
-  <ej:SummaryRow ShowCaptionSummary="True" ShowTotalSummary="False">
+  <ej:SummaryRow ShowCaptionSummary="true" ShowTotalSummary="false">
 
           <SummaryColumn>
 
@@ -616,7 +616,7 @@ ShowCaptionSummary property used to achieve caption summary feature.
 
     <Columns>
 
-     <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True"   TextAlign="Right" Width="80" />
+     <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true"   TextAlign="Right" Width="80" />
 
          <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
 
@@ -741,7 +741,85 @@ The following output is displayed as a result of the above code example.
 
 ![](Summary_images/Summary_img5.png)
 
+## Summary Template
 
+Using `Template` property of `SummaryColumns` you can render any type of JsRender templates or customizing the summary value.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight html %}
+
+<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="true" ShowSummary="true">
+    
+    <SummaryRows>
+
+        <ej:SummaryRow ShowCaptionSummary="true" ShowTotalSummary="false">
+
+          <SummaryColumn>
+
+                <ej:SummaryColumn SummaryType="Average" DisplayColumn="Freight" DataMember="Freight" Format="{0:C}" Template = "#templateData" />
+
+          </SummaryColumn>
+
+       </ej:SummaryRow>
+
+    </SummaryRows>
+
+    <Columns>
+
+         <ej:Column Field="OrderID" />
+
+         <ej:Column Field="EmployeeID" />
+
+         <ej:Column Field="Freight" Format="{0:C}" />
+
+    </Columns>
+
+</ej:Grid>
+
+
+{% endhighlight  %}
+{% highlight c# %}
+
+
+public partial class DefaultFunctionalities : System.Web.UI.Page
+
+    {
+
+        List<Orders> order = new List<Orders>();
+
+        protected void Page_Load(object sender, EventArgs e)
+
+        {
+
+            var DataSource = new NorthwindDataContext().OrdersViews.Take(5).ToList();
+            
+            this.OrdersGrid.DataSource = DataSource;
+            
+            this.OrdersGrid.DataBind();
+
+        }
+
+    }
+
+{% endhighlight  %}
+
+{% highlight js %}
+
+<script id="templateData" type="text/x-jsrender">
+     Freight has Average of {{:summaryValue}} in  dollars
+</script>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+The following output is displayed as a result of the above code example.
+
+![](Summary_images/summaryGrid_img7.PNG)
 
 ## Handling Aggregation in server side
 
@@ -757,13 +835,13 @@ The following code example describes the above behavior.
 
 <ej:DataManager runat="server" ID="FlatData" URL="/Default.aspx/Data" Adaptor="WebMethodAdaptor" />
     
-<ej:Grid ID="OrdersGrid" runat="server" DataManagerID="FlatData" ShowSummary="True" AllowPaging="True">
+<ej:Grid ID="OrdersGrid" runat="server" DataManagerID="FlatData" ShowSummary="true" AllowPaging="true">
 
     <PageSettings PageSize="10"></PageSettings>
 
     <SummaryRows>
 
-        <ej:SummaryRow ShowTotalSummary="True" Title="Avg">
+        <ej:SummaryRow ShowTotalSummary="true" Title="Avg">
 
             <SummaryColumn>
 
@@ -777,7 +855,7 @@ The following code example describes the above behavior.
 
     <Columns>
 
-        <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="80" />
+        <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="80" />
 
         <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90" />
 

@@ -39,7 +39,7 @@ The following image is the output for AutoComplete textbox with customized dimen
 
 ## Rounded corner
 
-By enabling the ShowRoundedCorner property, you can customize the shape of the AutoComplete control, from a regular rectangular shape to a rounded rectangle shape that is set to False by default.
+By enabling the ShowRoundedCorner property, you can customize the shape of the AutoComplete control, from a regular rectangular shape to a rounded rectangle shape that is set to false by default.
 
 ### Enabling Rounded corner property
 

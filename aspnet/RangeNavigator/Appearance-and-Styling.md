@@ -13,7 +13,11 @@ RangeNavigator is enriched with lots of customization options for labels, gridli
 
 ## Customize labels
 
-The labels are found along the range, displaying the value of the data it correspond, both on (higher level label) and below (lower level label) the RangeNavigator. RangeNavigator labels are further customized using “Font” property in label Settings. 
+The labels are found along the range, displaying the value of the data it correspond, both on (higher level label) and below (lower level label) the RangeNavigator. **RangeNavigator** labels are further customized using higher level label `Style` property of `Font` and lower level label `Style` property of `Font` property in `LabelSettings`.
+
+The higher level labels font `Color`, `FontFamily`, `FontStyle`, `FontWeight`, `Opacity` and `Size` can be customized using `HigherLevel` property.
+
+The lower level labels font `Color`, `FontFamily`, `FontStyle`, `FontWeight`, `Opacity` and `Size` can be customized using `LowerLevel` property. 
 
 {% highlight html %}
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="onchartloaded">
@@ -51,7 +55,7 @@ Customize labels
 
 ## Label Placement:
 
-Labels in RangeNavigator are placed inside or outside of the control. You can customize both the higher and lower level labels using LabelPlacement property in LabelSettings of RangeNavigator. By default LabelPlacement is “outside” for the both higher and lower level labels.
+Labels in RangeNavigator are placed inside or outside of the control. You can customize both the higher and lower level labels using `LabelPlacement` property in LabelSettings of RangeNavigator. By default LabelPlacement is “outside” for the both higher and lower level labels.
 
 The following screen shot illustrates both the lower and higher level labels that are placed outside the control with LabelPlacement specified as outside. 
 
@@ -87,9 +91,20 @@ RangeNavigator with labels inside the control
 
 ## Customize RangeNavigator
 
-RangeNavigator is customized using NavigatorStyleSettings properties. You can customize the selected and unselected region color using SelectedRegionColor, UnselectedRegionColor in NavigatorStyleSettings and the thumb of the slider using ThumbColor, ThumbRadius and ThumbStroke in NavigatorStyleSettings.  MajorGridLineStyle and MinorGridLineStyle are used to customize the grid line color and visibility. 
+### Customize NavigatorStyleSettings
+
+RangeNavigator is customized using `NavigatorStyleSettings` properties. You can customize the selected and unselected region color using `SelectedRegionColor` and `UnselectedRegionColor`, `SelectedRegionOpacity` and `UnselectedRegionOpacity` in **NavigatorStyleSettings** and the thumb of the slider using `ThumbColor`, `ThumbRadius` and `ThumbStroke` in NavigatorStyleSettings.  `MajorGridLineStyle` and `MinorGridLineStyle` are used to customize the major grid line `Color`, `Visible` property and minor gridline `Color` and `Visible`. You can customize the `Background`, `Opacity` and `Border` `Color`, `DashArray` and `Width` of navigatorStyleSettings.
+
+### Customize Labels
+
+The visibility of labels are enabled by setting `Visible` in higher level and `Visible` in lower level. The labels can be aligned by specifying `HorizontalAlignment` of higher level style and `HorizontalAlignment` of lower level style.
+
+You can customize the `Border` `Color` and `Width`, `Fill`, `GridLineStyle` `Color`, `DashArray` and `Width`, `Position` property of higher level labels in labelSettings.
+
+You can also customize the `Border` `Color` and `Width`, `Fill`, `GridLineStyle` `Color`, `DashArray` and `Width`, `Position` property for lower level labels of labelSettings.
 
 {% highlight html %}
+
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideRangeChanged="onchartloaded">
 
     <LabelSettings>
@@ -133,7 +148,7 @@ Customize RangeNavigator
 
 ## Themes
 
-RangeNavigator theme is a set of pre-defined options that are applied to the control before each RangeNavigator is instantiated. Following predefined themes are available in ASP.NET RangeNavigator.
+RangeNavigator `Theme` is a set of pre-defined options that are applied to the control before each RangeNavigator is instantiated. Following predefined themes are available in ASP.NET RangeNavigator.
 
 1. flatlight                  
 2. flatdark                  

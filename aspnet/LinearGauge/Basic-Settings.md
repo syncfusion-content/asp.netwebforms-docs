@@ -305,4 +305,96 @@ Execute the above code to render the following output.
 ![](Basic-Settings_images/Basic-Settings_img4.png)
 
 
+Responsiveness of the linear gauge is controlled by using `enableResize` property.
+
+
+{% highlight html %}
+
+<%-- For Linear Gauge rendering-- %>
+
+<%-- For enabling responsible layout-- %>
+
+<ej:LinearGauge runat="server" Orientation="Horizontal" LabelColor="black" EnableResize="true" ID="PointerGauge" Value="78" Width="400" Height="100" enableAnimation="false" Themes="flatLight" BackgroundColor="transparent">
+
+<%-- For Adding Scale collection-- %>
+
+<Scales>
+
+<ej:Scales direction="Clockwise"  BackgroundColor="transparent" ShowBarPointers="true" ShowMarkerPointers="false" >
+
+<Border Color="transparent" Width="0"></Border>
+
+<%-- For Adding bar pointer collection-- %>
+
+<BarPointerCollection>
+
+<ej:BarPointers Width="5" BarPointerBackgroundColor="grey"></ej:BarPointers>
+
+</BarPointerCollection>
+
+<%-- For Adding tick collection-- %>
+
+<TickCollection>
+
+<ej:LinearTicks Type="MajorInterval" Width="2" Color="#8c8c8c">
+
+<DistanceFromScale X="0" Y="0" />
+
+</ej:LinearTicks>
+
+<ej:LinearTicks Type="MinorInterval" Width="1" height="6" Color="#8c8c8c">
+
+<DistanceFromScale X="0" Y="0" />
+
+</ej:LinearTicks>
+
+</TickCollection>
+
+<%-- For Adding label collection-- %>
+
+<LabelCollection>
+
+<ej:Labels Angle="90">
+
+<DistanceFromScale X="5" Y="-5" />
+
+</ej:Labels>
+
+</LabelCollection>
+
+</ej:Scales>
+
+</Scales>
+
+<%-- For Adding Frame-- %>
+
+<Frame BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light1.png" />
+
+</ej:LinearGauge>
+
+{% endhighlight %}
+
+
+## Localization
+
+**LinearGauge** supports localization for its axis labels and tooltip. To render the gauge with specific culture you have to refer the corresponding globalize culture script and need to specify the culture name in `locale` property of gauge.
+
+**Enable Group Separator** is used to Convert the date object to string while using the locale settings, you can set `enableGroupSeparator` property as **true**.
+
+
+
+{% highlight html %}
+
+<%-- For Linear Gauge rendering-- %>
+
+<%-- For enabling responsible layout-- %>
+
+<ej:LinearGauge runat="server" Locale="en-fr" Orientation="Horizontal" LabelColor="black" EnableGroupSeperator="true" ID="PointerGauge" Value="78" Width="400" Height="100" enableAnimation="false" Themes="flatLight" BackgroundColor="transparent">
+
+</ej:LinearGauge>
+
+{% endhighlight %}
+
+
+
 

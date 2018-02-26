@@ -18,7 +18,18 @@ Refer below code example to set selected date at initialization
 
 {% highlight html %}
       
-      <ej:DatePicker ID="datepicker1" Value=<%= DateTime.Now.ToLongTimeString() %> runat="server"></ej:DatePicker>
+      <ej:DatePicker ID="datepicker1" Value="<%# DateTime.Now %>" runat="server"></ej:DatePicker>
+
+{% endhighlight %}
+
+In ASP.NET to bind all the data sources to their server controls, we can use Page.DataBind() in the code behind page. Please refer the below code example.
+
+{% highlight javascript %}
+
+    protected void Page_Load(object sender, EventArgs e)
+       {
+           Page.DataBind();
+       }
 
 {% endhighlight %}
 
@@ -67,7 +78,7 @@ Refer below code example to represent DatePicker as calendar.
 
 {% highlight html %}
 
-    <ej:DatePicker ID="daterange1" runat="server" DisplayInline="True"></ej:DatePicker>
+    <ej:DatePicker ID="daterange1" runat="server" DisplayInline="true"></ej:DatePicker>
 
 {% endhighlight %}
 

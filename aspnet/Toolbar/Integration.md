@@ -42,7 +42,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
 <head runat="server">
 
-    <title>Essential Studio for JavaScript :Angular JS Support for Toolbar</title>
+    <title>Essential Studio for JavaScript :AngularJS Support for Toolbar</title>
 
     <link href=" http://cdn.syncfusion.com/ {{site.releaseversion}}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
@@ -72,7 +72,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
                     <div id="toolbar1" ej-toolbar e-datasource="dataList" e-width="210px"
 
-                        e-fields-id="empid" e-fields-spritecssclass="spriteCss">
+                        e-fields-id="id" e-fields-spritecssclass="spriteCss">
 
                     </div>
 
@@ -96,41 +96,41 @@ Add the following code example into the corresponding ASPX page to render the To
 
 {
 
-    empid: "1",
+    id: "1",
 
-    spriteCss: "mailtools movetofolder",
-
-
-
-}, {
-
-    empid: "2",
-
-    spriteCss: "mailtools categorize",
+    spriteCss: "tools movetofolder",
 
 
 
 }, {
 
-    empid: "3",
+    id: "2",
 
-    spriteCss: "mailtools flag",
-
-
-
-}, {
-
-    empid: "4",
-
-    spriteCss: "mailtools forward",
+    spriteCss: "tools categorize",
 
 
 
 }, {
 
-    empid: "5",
+    id: "3",
 
-    spriteCss: "mailtools newmail",
+    spriteCss: "tools flag",
+
+
+
+}, {
+
+    id: "4",
+
+    spriteCss: "tools forward",
+
+
+
+}, {
+
+    id: "5",
+
+    spriteCss: "tools newmail",
 
 
 
@@ -138,9 +138,9 @@ Add the following code example into the corresponding ASPX page to render the To
 
  {
 
-     empid: "6",
+     id: "6",
 
-     spriteCss: "mailtools reply",
+     spriteCss: "tools reply",
 
 
 
@@ -148,9 +148,9 @@ Add the following code example into the corresponding ASPX page to render the To
 
  {
 
-     empid: "7",
+     id: "7",
 
-     spriteCss: "mailtools done",
+     spriteCss: "tools done",
 
 
 
@@ -176,7 +176,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
 <style type="text/css">
 
-     .darktheme .cols-sample-area .e-tooltxt .mailtools {
+     .darktheme .cols-sample-area .e-tooltxt .tools {
 
         background-image: url('../images/toolbar/maild.png');
 
@@ -184,7 +184,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
 
 
-    .cols-sample-area .e-tooltxt .mailtools {
+    .cols-sample-area .e-tooltxt .tools {
 
         display: block;
 
@@ -200,7 +200,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
 
 
-    .e-tooltxt:hover .mailtools, .darktheme .cols-sample-area .e-tooltxt:hover .mailtools {
+    .e-tooltxt:hover .tools, .darktheme .cols-sample-area .e-tooltxt:hover .tools {
 
         background-image: url('../images/toolbar/mailh.png');
 
@@ -208,7 +208,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
 
 
-    .mailtools.done {
+    .tools.done {
 
         background-position: -11px -140px;
 
@@ -216,7 +216,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
 
 
-    .mailtools.movetofolder {
+    .tools.movetofolder {
 
         background-position: -12px -40px;
 
@@ -224,7 +224,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
 
 
-    .mailtools.categorize {
+    .tools.categorize {
 
         background-position: -14px -248px;
 
@@ -232,7 +232,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
 
 
-    .mailtools.flag {
+    .tools.flag {
 
         background-position: -13px -282px;
 
@@ -240,7 +240,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
 
 
-    .mailtools.forward {
+    .tools.forward {
 
         background-position: -14px -314px;
 
@@ -248,7 +248,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
 
 
-    .mailtools.newmail {
+    .tools.newmail {
 
         background-position: -14px -348px;
 
@@ -256,7 +256,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
 
 
-    .mailtools.reply {
+    .tools.reply {
 
         background-position: -14px -388px;
 
@@ -318,7 +318,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
 <head runat="server">
 
-    <title>Essential Studio for JavaScript :Angular JS Support for Toolbar</title>
+    <title>Essential Studio for JavaScript :AngularJS Support for Toolbar</title>
 
     <link href=" http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
@@ -346,7 +346,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
         <div class="control">
 
-            <div id="toolbar1" data-bind="ejToolbar: { dataSource: dataList, fields: { id: 'edid', spriteCssClass: 'spriteCss', text: 'text' }, width: width }"></div>
+            <div id="toolbar1" data-bind="ejToolbar: { dataSource: dataList, fields: { id: 'id', spriteCssClass: 'spriteCss', text: 'text' }, width: width }"></div>
 
         </div>
 
@@ -370,7 +370,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
         {
 
-            edid: "1",
+            id: "1",
 
             spriteCss: "editTools cursor",
 
@@ -378,7 +378,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
         }, {
 
-            edid: "2",
+            id: "2",
 
             spriteCss: "editTools select",
 
@@ -386,7 +386,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
         }, {
 
-            edid: "3",
+            id: "3",
 
             spriteCss: "editTools move",
 
@@ -394,7 +394,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
         }, {
 
-            edid: "4",
+            id: "4",
 
             spriteCss: "editTools rectselect",
 
@@ -402,7 +402,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
         }, {
 
-            edid: "5",
+            id: "5",
 
             spriteCss: "editTools roundselect",
 
@@ -410,7 +410,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
         }, {
 
-            edid: "6",
+            id: "6",
 
             spriteCss: "editTools brush",
 
@@ -418,7 +418,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
         }, {
 
-            edid: "7",
+            id: "7",
 
             spriteCss: "editTools pen",
 
@@ -426,7 +426,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
         }, {
 
-            edid: "8",
+            id: "8",
 
             spriteCss: "editTools gradient",
 
@@ -434,7 +434,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
         }, {
 
-            edid: "9",
+            id: "9",
 
             spriteCss: "editTools crop",
 
@@ -442,7 +442,7 @@ Add the following code example into the corresponding ASPX page to render the To
 
         }, {
 
-            edid: "10",
+            id: "10",
 
             spriteCss: "editTools symbols",
 

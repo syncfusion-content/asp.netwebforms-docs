@@ -13,7 +13,7 @@ EJWEB DatePicker control supports the Server side events too. This allows you to
 
 {% highlight html %}
 
-    <ej:DatePicker ID="datepicker" OnSelect="datepicker_Select" runat="server">
+    <ej:DatePicker ID="datePicker" OnSelect="datePicker_Select" runat="server">
     </ej:DatePicker>
 
 {% endhighlight %}
@@ -21,7 +21,7 @@ EJWEB DatePicker control supports the Server side events too. This allows you to
 
 {% highlight cs %}
 
-    protected void datepicker_Select(object sender, Syncfusion.JavaScript.Web.DatePickerSelectEventArgs e)
+    protected void datePicker_Select(object sender, Syncfusion.JavaScript.Web.DatePickerSelectEventArgs e)
         {
             // write your custom code here
         }

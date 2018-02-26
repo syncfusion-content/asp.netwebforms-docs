@@ -25,7 +25,7 @@ File name: mvccontent.html
 
         Multiple views of the same data are possible, such as a bar chart for management and a tabular view for accountants. 
 
-        The controller mediates input, converting it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing the application into three kinds of components, 
+        The controller mediates input, converting it to commands for the model or view.The central ideas behind MVC are code reusable and in addition to dividing the application into three kinds of components, 
 
         the MVC design defines the interactions between them.
 

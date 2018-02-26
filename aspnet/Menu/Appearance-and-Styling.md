@@ -307,7 +307,7 @@ Add the following code example in your ASPX page.
 
                                 <div>
 
-                                    <span>Favourites</span>
+                                    <span>Favorites</span>
 
                                     <ul>
 

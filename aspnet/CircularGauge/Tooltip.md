@@ -14,8 +14,8 @@ documentation: ug
 
 ## Default Tooltip
 
-* Tooltip has three attributes in it. The first two attributes such as showLabelTooltip and showCustomLabelTooltip are for enabling the Tooltip for label as well as custom label in default appearance. 
-* ShowLabelTooltip is to enable the Tooltip for labels and showCustomLabelTooltip is for enabling the Tooltip option for customLabels.
+* `Tooltip` has three attributes in it. The first two attributes such as `ShowLabelTooltip` and `ShowCustomLabelTooltip` are for enabling the Tooltip for label as well as custom label in default appearance. 
+* `ShowLabelTooltip` is to enable the Tooltip for labels and `ShowCustomLabelTooltip` is for enabling the Tooltip option for customLabels.
 
 
   {% highlight html %}
@@ -80,7 +80,7 @@ Execute the above code to render the following output.
 
 ## Tooltip Template
 
-In Tooltip option, you can customize the Tooltip window by adding the tooltip template on that page with the help of API TemplateID. Refer to the following code example to know more about Tooltip template.
+In Tooltip option, you can customize the Tooltip window by adding the tooltip template on that page with the help of API `TemplateID`. Refer to the following code example to know more about Tooltip template.
 
 
 {% highlight html %}

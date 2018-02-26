@@ -69,12 +69,12 @@ In the code behind page, create a data list which contains the details about tre
     
             public TreeLocalDataSource() { }
     
-            public TreeLocalDataSource(int _id, int _parentid, string _text, string _hasChild)
+            public TreeLocalDataSource(int _id, int _parentId, string _text, string _hasChild)
             {
     
                 this.ID = _id;
     
-                this.ParentID = _parentid;
+                this.ParentID = _parentId;
     
                 this.Text = _text;
     

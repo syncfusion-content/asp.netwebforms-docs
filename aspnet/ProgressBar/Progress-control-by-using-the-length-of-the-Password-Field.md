@@ -34,7 +34,7 @@ $(function () {
 	      
 });
       
-var  progresObj, buttonObj, k = 10,
+var  progressObj, buttonObj, k = 10,
 
     timer = window.clearInterval(timer),
 	
@@ -60,9 +60,9 @@ $(document).keypress(function () {  /*Captures the keypress inside the documen
           
     else  if  (i > 7) {
                
-        var  pwd = $("input").val();
+        var  password = $("input").val();
               
-        if  (/^[a-zA-Z0-9- ]*$/.test(pwd) ==  false);
+        if  (/^[a-zA-Z0-9- ]*$/.test(password) ==  false);
 
                         {
                     
@@ -76,9 +76,9 @@ $(document).keypress(function () {  /*Captures the keypress inside the documen
       
 function  Strong() {  /*Changes the width and text of the progress ... called when the length is greater than 5*/
           
-    progresObj.option("text",  "strong");
+    progressObj.option("text",  "strong");
           
-    progresObj.option("percentage", k + 50);
+    progressObj.option("percentage", k + 50);
          
     $(".e-progress").css("background-color",  "#0055FF");
        
@@ -88,9 +88,9 @@ function  Strong() {  /*Changes the width and text of the progress ... called 
        
 function  veryStrong() { /*Changes the width and text of the progress ... called when the length is greater than 7*/
       
-    progresObj.option("text",  "Very strong");
+    progressObj.option("text",  "Very strong");
              
-    progresObj.option("percentage", k + 90);
+    progressObj.option("percentage", k + 90);
          
     $(".e-progress").css("background-color",  "Green");
           
@@ -100,9 +100,9 @@ function  veryStrong() { /*Changes the width and text of the progress ... calle
     
 function  weak() { /*Changes the width and text of the progress... called when the length is less than 5*/
           
-    progresObj.option("text",  "Weak");
+    progressObj.option("text",  "Weak");
   
-    progresObj.option("percentage", k + 20);
+    progressObj.option("percentage", k + 20);
          
     $(".e-progress").css("background-color",  "#DE0909");
           

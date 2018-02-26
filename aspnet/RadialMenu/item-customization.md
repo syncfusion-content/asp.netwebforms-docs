@@ -20,7 +20,7 @@ You can add the page content in RTE control by referring this section.
 {% highlight html %}
 
 
-     <ej:RadialMenu ID="defaultradialmenu" runat="server" TargetElementId="radialtargetone" >         
+     <ej:RadialMenu ID="defaultRadialMenu" runat="server" TargetElementId="radialTargetOne" >         
             <Items>
                 <ej:RadialMenuItems ImageURL="asp.syncfusion.com/demos/web/Content/images/RadialMenu/copy.png" Text="Copy" ></ej:RadialMenuItems>
                 <ej:RadialMenuItems ImageURL="asp.syncfusion.com/demos/web/Content/images/RadialMenu/paste.png" Text="Paste"></ej:RadialMenuItems>
@@ -36,13 +36,13 @@ You can display the **Radial Menu** by performing desired action on the target c
 {% highlight javascript %}
       
         function radialShow(e) {
-            var target = $("#radialtargetone"), radialRadius = 150, radialDiameter = 2 * radialRadius,
+            var target = $("#radialTargetOne"), radialRadius = 150, radialDiameter = 2 * radialRadius,
             // To get Iframe positions
             iframeY = target.offset().top + e.event.clientY, iframeX = target.offset().left + e.event.clientX,
             // To set Radial Menu position within target
             x = iframeX > target.width() - radialRadius ? target.width() - radialDiameter : (iframeX > radialRadius ? iframeX - radialRadius : 0),
             y = iframeY > target.height() - radialRadius ? target.height() - radialDiameter : (iframeY > radialRadius ? iframeY - radialRadius : 0);
-            $('#<%=defaultradialmenu.ClientID%>').ejRadialMenu("setPosition", x, y);
+            $('#<%=defaultRadialMenu.ClientID%>').ejRadialMenu("setPosition", x, y);
         }                           
 
 
@@ -63,7 +63,7 @@ You can add the page content in RTE control by referring to this section
 {% highlight html %}
 
 
-        <ej:RadialMenu ID="defaultradialmenu" runat="server" TargetElementId="radialtargetone" >         
+        <ej:RadialMenu ID="defaultRadialMenu" runat="server" TargetElementId="radialTargetOne" >         
                 <Items>
                     <ej:RadialMenuItems ImageURL="asp.syncfusion.com/demos/web/Content/images/RadialMenu/copy.png" Text="Copy" Click="copy"></ej:RadialMenuItems>
                     <ej:RadialMenuItems ImageURL="asp.syncfusion.com/demos/web/Content/images/RadialMenu/Font_letter.png" Text="Font"></ej:RadialMenuItems>
@@ -103,13 +103,13 @@ Add the following script in your code.
 {% highlight javascript %}
 
        function radialShow(e) {
-            var target = $("#radialtargetone"), radialRadius = 150, radialDiameter = 2 * radialRadius,
+            var target = $("#radialTargetOne"), radialRadius = 150, radialDiameter = 2 * radialRadius,
             // To get Iframe positions
             iframeY = target.offset().top + e.event.clientY, iframeX = target.offset().left + e.event.clientX,
             // To set Radial Menu position within target
             x = iframeX > target.width() - radialRadius ? target.width() - radialDiameter : (iframeX > radialRadius ? iframeX - radialRadius : 0),
             y = iframeY > target.height() - radialRadius ? target.height() - radialDiameter : (iframeY > radialRadius ? iframeY - radialRadius : 0);
-            $('#<%=defaultradialmenu.ClientID%>').ejRadialMenu("setPosition", x, y);
+            $('#<%=defaultRadialMenu.ClientID%>').ejRadialMenu("setPosition", x, y);
         }              
         function italic(e) {
             rteObj.executeCommand("italic");
@@ -138,7 +138,7 @@ The **Enabled** property to enable or disable badges. **Value** attribute is to 
 {% highlight html %}
 
 
-        <ej:RadialMenu ID="defaultradialmenu" runat="server" TargetElementId="radialtargetone" >         
+        <ej:RadialMenu ID="defaultRadialMenu" runat="server" TargetElementId="radialTargetOne" >         
                 <Items>
                     <ej:RadialMenuItems ImageURL="asp.syncfusion.com/demos/web/Content/images/RadialMenu/copy.png" Text="Copy" >
                     <Badge Enabled="true" Value="3" /></ej:RadialMenuItems>
@@ -155,13 +155,13 @@ You can display the **Radial Menu** by performing desired action on the target c
 {% highlight javascript %}
       
         function radialShow(e) {
-            var target = $("#radialtargetone"), radialRadius = 150, radialDiameter = 2 * radialRadius,
+            var target = $("#radialTargetOne"), radialRadius = 150, radialDiameter = 2 * radialRadius,
             // To get Iframe positions
             iframeY = target.offset().top + e.event.clientY, iframeX = target.offset().left + e.event.clientX,
             // To set Radial Menu position within target
             x = iframeX > target.width() - radialRadius ? target.width() - radialDiameter : (iframeX > radialRadius ? iframeX - radialRadius : 0),
             y = iframeY > target.height() - radialRadius ? target.height() - radialDiameter : (iframeY > radialRadius ? iframeY - radialRadius : 0);
-            $('#<%=defaultradialmenu.ClientID%>').ejRadialMenu("setPosition", x, y);
+            $('#<%=defaultRadialMenu.ClientID%>').ejRadialMenu("setPosition", x, y);
         }                           
 
 
@@ -185,7 +185,7 @@ You can add SliderSettings in radial menu items by referring this section.
 {% highlight html %}
 
 
-        <ej:RadialMenu ID="defaultradialmenu" runat="server" TargetElementId="radialtargetone" >         
+        <ej:RadialMenu ID="defaultRadialMenu" runat="server" TargetElementId="radialTargetOne" >         
                 <Items>
                     <ej:RadialMenuItems ImageURL="asp.syncfusion.com/demos/web/Content/images/RadialMenu/copy.png" Text="Copy" Click="copy"></ej:RadialMenuItems>
                     <ej:RadialMenuItems ImageURL="asp.syncfusion.com/demos/web/Content/images/RadialMenu/Font_letter.png" Text="Font" Type="Slider">
@@ -227,13 +227,13 @@ Add the following script in your code.
 {% highlight javascript %}
 
        function radialShow(e) {
-            var target = $("#radialtargetone"), radialRadius = 150, radialDiameter = 2 * radialRadius,
+            var target = $("#radialTargetOne"), radialRadius = 150, radialDiameter = 2 * radialRadius,
             // To get Iframe positions
             iframeY = target.offset().top + e.event.clientY, iframeX = target.offset().left + e.event.clientX,
             // To set Radial Menu position within target
             x = iframeX > target.width() - radialRadius ? target.width() - radialDiameter : (iframeX > radialRadius ? iframeX - radialRadius : 0),
             y = iframeY > target.height() - radialRadius ? target.height() - radialDiameter : (iframeY > radialRadius ? iframeY - radialRadius : 0);
-            $('#<%=defaultradialmenu.ClientID%>').ejRadialMenu("setPosition", x, y);
+            $('#<%=defaultRadialMenu.ClientID%>').ejRadialMenu("setPosition", x, y);
         }                      
 
 {% endhighlight %}
