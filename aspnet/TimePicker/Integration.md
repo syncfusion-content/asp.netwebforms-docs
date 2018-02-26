@@ -51,11 +51,11 @@ The following code example depicts you the way to bind data to the TimePicker co
                 <div class="cols-sample-area">
                     <div class="frame" style="width: 30%; height: 17px;">
                         <div id="control" style="float: left;width: 45%;">
-                            <input id="time" type="text" ej-timepicker e-value="tvalue" />
+                            <input id="time" type="text" ej-timepicker e-value="timeValue" />
                             <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px;">Note:Two Way AngularJS Support</span></h6>
                         </div>
                         <div id="binding" style=" float right;width 45%;">
-                            <input id="timectrl" type="text" ej-timepicker e-value="tvalue" e-interval="10" />
+                            <input id="timectrl" type="text" ej-timepicker e-value="timeValue" e-interval="10" />
                         </div>
                     </div>
                 </div>
@@ -64,7 +64,7 @@ The following code example depicts you the way to bind data to the TimePicker co
         <script type="text/javascript">
         angular.module('TimeCtrl', ['ejangular'])
                .controller('TimePickerCtrl', function ($scope) {
-                   $scope.tvalue = "12:50 AM";
+                   $scope.timeValue = "12:50 AM";
                });
         </script>
         <style type="text/css" class="cssStyles">
@@ -138,7 +138,7 @@ The following example depicts the way to bind data to the TimePicker control thr
                     <div class="frame">
                         <div class="control" style="width: 136px;">
                              <label style="width: 130px;">Select Show Time </label>
-                             <input id="time" type="text" data-bind="ejTimePicker:{value:tvalue }"/>
+                             <input id="time" type="text" data-bind="ejTimePicker:{value:timeValue }"/>
                         </div>
                      </div>                    
                 </div>
@@ -147,11 +147,11 @@ The following example depicts the way to bind data to the TimePicker control thr
                       <div class="row">
                          <div class="col-md-3">Time Value</div>
                          <div class="col-md-3">
-                             <input type="text" id="timeValue" class="input ejinputtext" value="" data-bind="value: tvalue" />
+                             <input type="text" id="timeValue" class="input ejinputtext" value="" data-bind="value: timeValue" />
                          </div>
                          <div class="col-md-3">Selected time</div>
                          <div class="col-md-3">
-                            <input type="button" class="e-btn inputBtn" id="gettime" value="Get Time" />
+                            <input type="button" class="e-btn inputBtn" id="getTime" value="Get Time" />
    				         </div>
                       </div>		
                   </div>
@@ -161,13 +161,13 @@ The following example depicts the way to bind data to the TimePicker control thr
     <script type="text/javascript">
        window.viewModel = {
             //TimePicker
-            tvalue: ko.observable("11:30 AM")       
+            timeValue: ko.observable("11:30 AM")       
         }
         $(function () {
             // Declaration
             ko.applyBindings(viewModel);
             var timeObj = $('#time').data("ejTimePicker");
-            $("#gettime").click(function () {
+            $("#getTime").click(function () {
                 alert("Selected time is : " + timeObj.getValue());
             });
             $("#sampleProperties").ejPropertiesPanel();

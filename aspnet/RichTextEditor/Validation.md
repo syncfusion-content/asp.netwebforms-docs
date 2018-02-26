@@ -36,11 +36,11 @@ minWordCount</td><td>
  Requires the value to be of given minimum words count.</td></tr>
 <tr>
 <td>
-minlength</td><td>
+minLength</td><td>
  Requires the value to be of given minimum characters count.</td></tr>
 <tr>
 <td>
-maxlength</td><td>
+maxLength</td><td>
  Requires the value to be of given maximum characters count.</td></tr>
 </table>
 

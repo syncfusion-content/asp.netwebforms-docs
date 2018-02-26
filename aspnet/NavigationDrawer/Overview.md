@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-EssentialJavaScriptNavigation Drawer is a sliding panel that displays the list of navigation options on demand. That is, by default, it is not visible but you can display it onto the left/right side of the screen by swiping or by clicking with desired target icon.
+The ASP.NET NavigationDrawer Control is a sliding panel that displays the list of navigation options on demand. That is, by default, it is not visible but you can display it onto the left/right side of the screen by swiping or by clicking with desired target icon.
 
 ## Key Features
 

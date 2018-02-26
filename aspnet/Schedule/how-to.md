@@ -43,9 +43,9 @@ The sample contains the fields like Subject, Description, StartTime and EndTime 
             })
 
             // To Validate the Description field.
-            $("#customdescription").focusout(function () {
-                if ($.trim($("#customdescription").val()) == "") {
-                    $("#customdescription").addClass("validation");
+            $("#customDescription").focusout(function () {
+                if ($.trim($("#customDescription").val()) == "") {
+                    $("#customDescription").addClass("validation");
                     return false;
                 }
             })
@@ -106,12 +106,12 @@ Initially, set the **Highlight** as false for the **WorkHours**, so as to disabl
 
                 this.option("workHours.highlight", (this.currentView() != "month") ? false : true);
 
-                // Get the Scheduler workcell rows
+                // Get the Scheduler work cell rows
                 var trElements = this.$WorkCellDiv.find("tr");
 
                 for (var i = 0; i < trElements.length; i++) {
 
-                    // Get the Scheduler workcell columns
+                    // Get the Scheduler work cell columns
                     var tdElements = $(trElements[i]).find("td");
 
                     for (var j = 0; j < tdElements.length; j++) {
@@ -201,7 +201,7 @@ Initially, set the **Highlight** as false for the **WorkHours**, so as to disabl
 
 namespace WebSampleBrowser.Schedule
 {
-    public partial class multipleresource : System.Web.UI.Page
+    public partial class multipleResource : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -268,7 +268,7 @@ The following code example depicts the way to achieve the customization of defau
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014" ShowLocationField="true" Create="onCreate" AppointmentWindowOpen="onAppointmentOpen">
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%" Height="525px" CurrentDate="5/2/2014" ShowLocationField="true" AppointmentWindowOpen="onAppointmentOpen">
     <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" Location="Location" RecurrenceRule="RecurrenceRule"/>
 </ej:Schedule>
 
@@ -277,23 +277,23 @@ The following code example depicts the way to achieve the customization of defau
 
 <asp:Content ID="ScriptContent" runat="server" ContentPlaceHolderID="ScriptSection">
     <script type="text/javascript">
-      
-        // This function executes when the checkboxes are checked/unchecked
-        function onCreate(args) {
-            var customDesign = "<tr class='customfields'><td class='e-textlabel'>Event Type</td><td><input class='apptype' type='text'/></td><td class='e-textlabel'>Event Status </td><td><input class='status' type='text'/></td></tr>";
-            $("." + this._id + "parrow").after(customDesign);
-        }
-
+    
         // This function executes before the appointment window gets opened.
         function onAppointmentOpen(args) {
-            if (!ej.isNullOrUndefined(args.appointment)) {
-                // if double clicked on the appointments, retrieve the custom field values from the appointment object and fills it in the appropriate fields.               this._appointmentAddWindow.find(".apptype").val(args.appointment.AppointmentType);
-                this._appointmentAddWindow.find(".status").val(args.appointment.Status);
-            } else {
-                // if double clicked on the cells, clears the field values.               
-                this._appointmentAddWindow.find(".apptype").val("");
-                this._appointmentAddWindow.find(".status").val("");
+            // to add custom element in default appointment window
+            if (this._appointmentAddWindow.find(".custom-fields").length == 0) {
+	            var customDesign = "<tr class='custom-fields'><td class='e-textlabel'>Event Type</td><td><input class='apptype' type='text'/></td><td class='e-textlabel'>Event Status </td><td><input class='status' type='text'/></td></tr>";
+		        $(customDesign).insertAfter(this._appointmentAddWindow.find("." + this._id + "parow"));
             }
+            
+	        if (!ej.isNullOrUndefined(args.appointment)) {
+	            // if double clicked on the appointments, retrieve the custom field values from the appointment object and fills it in the appropriate fields.               this._appointmentAddWindow.find(".apptype").val(args.appointment.AppointmentType);
+		        this._appointmentAddWindow.find(".status").val(args.appointment.Status);
+	        } else {
+	            // if double clicked on the cells, clears the field values.               
+		        this._appointmentAddWindow.find(".apptype").val("");
+		        this._appointmentAddWindow.find(".status").val("");
+	        }
         }
 
     </script>
@@ -436,26 +436,26 @@ namespace ScheduleCRUDCS
         public List<ScheduleAppointment> GetData()
         {
             Microsoft.Office.Interop.Outlook.Application oApp = new Microsoft.Office.Interop.Outlook.Application();
-            Microsoft.Office.Interop.Outlook.NameSpace mapiNamespace = oApp.GetNamespace("MAPI");
-            Microsoft.Office.Interop.Outlook.MAPIFolder CalendarFolder = mapiNamespace.GetDefaultFolder(Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderCalendar);
+            Microsoft.Office.Interop.Outlook.NameSpace MAPINamespace = oApp.GetNamespace("MAPI");
+            Microsoft.Office.Interop.Outlook.MAPIFolder CalendarFolder = MAPINamespace.GetDefaultFolder(Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderCalendar);
             Microsoft.Office.Interop.Outlook.Items outlookCalendarItems = CalendarFolder.Items;
-            List<Microsoft.Office.Interop.Outlook.AppointmentItem> lst = new List<Microsoft.Office.Interop.Outlook.AppointmentItem>();
+            List<Microsoft.Office.Interop.Outlook.AppointmentItem> appointmentList = new List<Microsoft.Office.Interop.Outlook.AppointmentItem>();
 
             foreach (Microsoft.Office.Interop.Outlook.AppointmentItem item in outlookCalendarItems)
             {
-                lst.Add(item);
+                appointmentList.Add(item);
             }
 
             List<ScheduleAppointment> newApp = new List<ScheduleAppointment>();
             // converting COM object into IEnumerable object
-            for (var i = 0; i < lst.Count; i++)
+            for (var i = 0; i < appointmentList.Count; i++)
             {
                 ScheduleAppointment app = new ScheduleAppointment();
                 app.Id = i;
-                app.Subject = lst[i].Subject;
-                app.AllDay = lst[i].AllDayEvent;
-                app.StartTime = Convert.ToDateTime(lst[i].Start.ToString());
-                string endTime = lst[i].End.ToString();
+                app.Subject = appointmentList[i].Subject;
+                app.AllDay = appointmentList[i].AllDayEvent;
+                app.StartTime = Convert.ToDateTime(appointmentList[i].Start.ToString());
+                string endTime = appointmentList[i].End.ToString();
                 DateTime appEndDate = Convert.ToDateTime(endTime);
                 if (endTime.Contains("12:00:00 AM") && app.AllDay)
                     app.EndTime = appEndDate.AddMinutes(-1);

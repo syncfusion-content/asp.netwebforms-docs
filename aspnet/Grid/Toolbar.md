@@ -2,7 +2,7 @@
 layout: post
 title: Toolbar with Grid widget for Syncfusion Essential ASP.NET
 description: How to enable toolbar and its actions 
-platform: ejweb
+platform: aspnet
 control: Grid
 documentation: ug
 ---
@@ -50,8 +50,8 @@ Search text in records</td></tr>
 
 {% highlight html %}
      
-        <ej:Grid ID="Grid" runat="server" AllowPaging="True" >
-             <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"></EditSettings>
+        <ej:Grid ID="Grid" runat="server" AllowPaging="true" >
+             <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
              <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
             <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true" HeaderText="Order ID" Width="90" TextAlign="Right"/>
@@ -136,11 +136,11 @@ Custom toolbar is used to create your own toolbar items in toolbar. It can add b
 
     <asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
         <div>
-            <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowGrouping="True">
+            <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" AllowGrouping="true">
                 <ClientSideEvents ToolbarClick="onToolBarClick" />
-                <EditSettings AllowAdding="True" AllowDeleting="True" AllowEditing="True"></EditSettings>
-                <GroupSettings ShowGroupedColumn="True" GroupedColumns="ShipCity"></GroupSettings>
-                <ToolbarSettings ShowToolbar="True">
+                <EditSettings AllowAdding="True" AllowDeleting="true" AllowEditing="true"></EditSettings>
+                <GroupSettings ShowGroupedColumn="true" GroupedColumns="ShipCity"></GroupSettings>
+                <ToolbarSettings ShowToolbar="true">
                     <CustomToolbarItem>
                         <ej:CustomToolbarItem Text="Expand" />
                         <ej:CustomToolbarItem Text="Collapse" />
@@ -148,7 +148,7 @@ Custom toolbar is used to create your own toolbar items in toolbar. It can add b
                     </CustomToolbarItem>
                 </ToolbarSettings>
                 <Columns>
-                    <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+                    <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
                     <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" />
                     <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" />
                     <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="70" Format="{0:C}" />

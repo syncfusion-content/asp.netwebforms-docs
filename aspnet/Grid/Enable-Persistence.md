@@ -2,7 +2,7 @@
 layout: post
 title: Enable Persistence with Grid widget for Syncfusion Essential ASP.NET
 description: How to persist grid state across page refresh
-platform: ejweb
+platform: aspnet
 control: Grid
 documentation: ug
 ---

@@ -34,14 +34,14 @@ The following code example depicts the way to generate the recurrence rule.
     <ej:RecurrenceEditor ID="RecurrenceEditor1" runat="server" SelectedRecurrenceType="2" Create="onCreate"></ej:RecurrenceEditor>
     
     <!--Place a button control - so that while clicking on it, generate the recurrence rule for the selected options in the recurrence editor-->
-    <ej:Button ID="donerecur1" runat="server"  Type="Button" Text="Generate Rule" ShowRoundedCorner="true" ClientSideOnClick="closerecurrence"></ej:Button>
+    <ej:Button ID="donerecur1" runat="server"  Type="Button" Text="Generate Rule" ShowRoundedCorner="true" ClientSideOnClick="closeRecurrence"></ej:Button>
 </asp:Content>
 
 <script type="text/javascript">
     function onCreate() {
-        this.element.find("#recurrencetype_wrapper").css("width", "33%");
+        this.element.find("#RecurrenceType_Wrapper").css("width", "33%");
     }
-    function closerecurrence() {
+    function closeRecurrence() {
         var obj = $("#RecurrenceEditor1").data("ejRecurrenceEditor");        
         alert(obj.getRecurrenceRule());
     }

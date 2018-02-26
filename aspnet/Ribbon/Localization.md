@@ -61,7 +61,7 @@ For further information on – how to refer the required culture scripts into yo
 								<ContentDefaults Width="50" Height="75" Type="SplitButton" />
 								<ContentGroupCollection>
 									<ej:ContentGroup Id="paste" ToolTip="Paste" QuickAccessMode="ToolBar" Text="paste">
-										<SplitButtonSettings ButtonMode="Dropdown" ArrowPosition="Bottom" TargetID="pasteul" ContentType="ImageOnly" PrefixIcon="e-ribbon e-ribbonpaste" />
+										<SplitButtonSettings ButtonMode="Dropdown" ArrowPosition="Bottom" TargetID="pasteul" ContentType="ImageOnly" PrefixIcon="e-icon e-ribbon e-ribbonpaste" />
 									</ej:ContentGroup>
 								</ContentGroupCollection>
 							</ej:TabContent>

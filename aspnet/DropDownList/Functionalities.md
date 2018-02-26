@@ -364,30 +364,30 @@ The below given example explains the behavior of grouping with List data binding
     
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<VegetableList> VegeList = new List<VegetableList>();
-            VegeList.Add(new VegetableList { Name = "Cabbage", Category = "Leafy and Salad" });
-            VegeList.Add(new VegetableList { Name = "Pea", Category = "Leafy and Salad" });
-            VegeList.Add(new VegetableList { Name = "Spinach", Category = "Leafy and Salad" });
-            VegeList.Add(new VegetableList { Name = "Wheatgrass", Category = "Leafy and Salad" });
-            VegeList.Add(new VegetableList { Name = "Yarrow", Category = "Leafy and Salad" });
-            VegeList.Add(new VegetableList { Name = "Chickpea", Category = "Beans" });
-            VegeList.Add(new VegetableList { Name = "Green bean", Category = "Beans" });
-            VegeList.Add(new VegetableList { Name = "Horse gram", Category = "Beans" });
-            VegeList.Add(new VegetableList { Name = "Peanut", Category = "Beans" });
-            VegeList.Add(new VegetableList { Name = "Pigeon pea", Category = "Beans" });
-            VegeList.Add(new VegetableList { Name = "Garlic", Category = "Bulb and Stem" });
-            VegeList.Add(new VegetableList { Name = "Garlic Chives", Category = "Bulb and Stem" });
-            VegeList.Add(new VegetableList { Name = "Lotus root", Category = "Bulb and Stem" });
-            VegeList.Add(new VegetableList { Name = "Nopal", Category = "Bulb and Stem" });
-            VegeList.Add(new VegetableList { Name = "Onion", Category = "Bulb and Stem" });
-            VegeList.Add(new VegetableList { Name = "Shallot", Category = "Bulb and Stem" });
-            VegeList.Add(new VegetableList { Name = "Beetroot", Category = "Root and Tuberous" });
-            VegeList.Add(new VegetableList { Name = "Carrot", Category = "Root and Tuberous" });
-            VegeList.Add(new VegetableList { Name = "Ginger", Category = "Root and Tuberous" });
-            VegeList.Add(new VegetableList { Name = "Potato", Category = "Root and Tuberous" });
-            VegeList.Add(new VegetableList { Name = "Radish", Category = "Root and Tuberous" });
-            VegeList.Add(new VegetableList { Name = "Turmeric", Category = "Root and Tuberous" });
-            DropDownList1.DataSource = VegeList;
+            List<VegetableList> Vegetables = new List<VegetableList>();
+            Vegetables.Add(new VegetableList { Name = "Cabbage", Category = "Leafy and Salad" });
+            Vegetables.Add(new VegetableList { Name = "Pea", Category = "Leafy and Salad" });
+            Vegetables.Add(new VegetableList { Name = "Spinach", Category = "Leafy and Salad" });
+            Vegetables.Add(new VegetableList { Name = "Wheat grass", Category = "Leafy and Salad" });
+            Vegetables.Add(new VegetableList { Name = "Yarrow", Category = "Leafy and Salad" });
+            Vegetables.Add(new VegetableList { Name = "Chickpea", Category = "Beans" });
+            Vegetables.Add(new VegetableList { Name = "Green bean", Category = "Beans" });
+            Vegetables.Add(new VegetableList { Name = "Horse gram", Category = "Beans" });
+            Vegetables.Add(new VegetableList { Name = "Peanut", Category = "Beans" });
+            Vegetables.Add(new VegetableList { Name = "Pigeon pea", Category = "Beans" });
+            Vegetables.Add(new VegetableList { Name = "Garlic", Category = "Bulb and Stem" });
+            Vegetables.Add(new VegetableList { Name = "Garlic Chives", Category = "Bulb and Stem" });
+            Vegetables.Add(new VegetableList { Name = "Lotus root", Category = "Bulb and Stem" });
+            Vegetables.Add(new VegetableList { Name = "Nopal", Category = "Bulb and Stem" });
+            Vegetables.Add(new VegetableList { Name = "Onion", Category = "Bulb and Stem" });
+            Vegetables.Add(new VegetableList { Name = "Shallot", Category = "Bulb and Stem" });
+            Vegetables.Add(new VegetableList { Name = "Beetroot", Category = "Root and Tuberous" });
+            Vegetables.Add(new VegetableList { Name = "Carrot", Category = "Root and Tuberous" });
+            Vegetables.Add(new VegetableList { Name = "Ginger", Category = "Root and Tuberous" });
+            Vegetables.Add(new VegetableList { Name = "Potato", Category = "Root and Tuberous" });
+            Vegetables.Add(new VegetableList { Name = "Radish", Category = "Root and Tuberous" });
+            Vegetables.Add(new VegetableList { Name = "Turmeric", Category = "Root and Tuberous" });
+            DropDownList1.DataSource = Vegetables;
             
         }
         public class VegetableList
@@ -502,8 +502,8 @@ Configuring the data items for cascading to the series of DropDownList is demons
     {% highlight js %}
 
         function onChange() {
-            var ctry = $('#<%=countryList.ClientID%>').data("ejDropDownList");
-            ctry.element.val("");
+            var country = $('#<%=countryList.ClientID%>').data("ejDropDownList");
+            country.element.val("");
         }
 
     {% endhighlight %}
@@ -533,7 +533,7 @@ Configuring the data items for cascading to the series of DropDownList is demons
             countries.Add(new CountryList(23, "e", "Romania", "flag-ro"));
             countries.Add(new CountryList(24, "e", "Singapore", "flag-sg"));
             countries.Add(new CountryList(25, "e", "Thailand", "flag-th"));
-            countries.Add(new CountryList(26, "e", "Ukraine", "flag-ua"));                        
+            countries.Add(new CountryList(26, "e", "Ukraine", "flag-uk"));                        
             this.countryList.DataSource = countries;
         }
         [Serializable]
@@ -543,12 +543,12 @@ Configuring the data items for cascading to the series of DropDownList is demons
             public string parentId { get; set; }
             public string text { get; set; }
             public string sprite { get; set; }           
-            public CountryList(int cvalue, string cid, string ctext, string sprt)
+            public CountryList(int value, string id, string text, string sprite)
             {
-                this.value = cvalue;
-                this.parentId = cid;
-                this.text = ctext;
-                this.sprite = sprt;
+                this.value = value;
+                this.parentId = id;
+                this.text = text;
+                this.sprite = sprite;
                
             }
         }
@@ -557,10 +557,10 @@ Configuring the data items for cascading to the series of DropDownList is demons
         {          
             public string parentId { get; set; }
             public string text { get; set; }
-            public GroupsList(string gID, string gtext)
+            public GroupsList(string gID, string group)
             {
                 this.parentId = gID;
-                this.text = gtext;
+                this.text = group;
             }
         }
     {% endhighlight %}
@@ -602,8 +602,8 @@ Bind the data source to the cascading DropDownList dynamically using ClientSideE
     {% highlight js %}
 
         function onChange() {
-            var ctry = $('#<%=DropDownList2.ClientID%>').data("ejDropDownList");
-            ctry.enable();
+            var country = $('#<%=DropDownList2.ClientID%>').data("ejDropDownList");
+            country.enable();
             var player = $('#<%=DropDownList3.ClientID%>').data("ejDropDownList");
             player.enable();
         }
@@ -636,10 +636,10 @@ Bind the data source to the cascading DropDownList dynamically using ClientSideE
         {
             public string parentId { get; set; }
             public string text { get; set; }
-            public Groups(string cid, string ctext)
+            public Groups(string id, string text)
             {
-                this.parentId = cid;
-                this.text = ctext;
+                this.parentId = id;
+                this.text = text;
             }
         }
         [Serializable]
@@ -647,10 +647,10 @@ Bind the data source to the cascading DropDownList dynamically using ClientSideE
         {
             public string parentId { get; set; }
             public string text { get; set; }
-            public Country(string cid, string ctext)
+            public Country(string id, string text)
             {
-                this.parentId = cid;
-                this.text = ctext;
+                this.parentId = id;
+                this.text = text;
             }
         }
         [Serializable]
@@ -658,10 +658,10 @@ Bind the data source to the cascading DropDownList dynamically using ClientSideE
         {
             public string parentId { get; set; }
             public string text { get; set; }
-            public Players(string cid, string ctext)
+            public Players(string id, string text)
             {
-                this.parentId = cid;
-                this.text = ctext;
+                this.parentId = id;
+                this.text = text;
             }
         }
     {% endhighlight %}
@@ -704,7 +704,7 @@ The below scenario can be explained with three DropDownList for the multi-level 
         countries.Add(new CountryList(23, "e", "Romania", "flag-ro"));
         countries.Add(new CountryList(24, "e", "Singapore", "flag-sg"));
         countries.Add(new CountryList(25, "e", "Thailand", "flag-th"));
-        countries.Add(new CountryList(26, "e", "Ukraine", "flag-ua"));
+        countries.Add(new CountryList(26, "e", "Ukraine", "flag-uk"));
         this.countryList.DataSource = countries;
 
         List<CapitalList> capital = new List<CapitalList>();
@@ -717,7 +717,7 @@ The below scenario can be explained with three DropDownList for the multi-level 
         capital.Add(new CapitalList(17, "Helsinki"));
         capital.Add(new CapitalList(15, "Havana"));
         capital.Add(new CapitalList(19, "Washington, D.C."));
-        capital.Add(new CapitalList(20, "Brasília"));
+        capital.Add(new CapitalList(20, "Brasilia"));
         capital.Add(new CapitalList(21, "Lima"));
         capital.Add(new CapitalList(22, "Canberra"));
         capital.Add(new CapitalList(23, "Wellington"));
@@ -730,10 +730,10 @@ The below scenario can be explained with three DropDownList for the multi-level 
     {
         public int value { get; set; }
         public string text { get; set; }
-        public CapitalList(int cvalue, string gtext)
+        public CapitalList(int value, string group)
         {
-            this.value = cvalue;
-            this.text = gtext;
+            this.value = value;
+            this.text = group;
         }
     }
     [Serializable]
@@ -743,12 +743,12 @@ The below scenario can be explained with three DropDownList for the multi-level 
         public string parentId { get; set; }
         public string text { get; set; }
         public string sprite { get; set; }
-        public CountryList(int cvalue, string cid, string ctext, string sprt)
+        public CountryList(int value, string id, string text, string sprite)
         {
-            this.value = cvalue;
-            this.parentId = cid;
-            this.text = ctext;
-            this.sprite = sprt;
+            this.value = value;
+            this.parentId = id;
+            this.text = text;
+            this.sprite = sprite;
 
         }
     }
@@ -757,10 +757,10 @@ The below scenario can be explained with three DropDownList for the multi-level 
     {
         public string parentId { get; set; }
         public string text { get; set; }
-        public GroupsList(string gID, string gtext)
+        public GroupsList(string gID, string group)
         {
             this.parentId = gID;
-            this.text = gtext;
+            this.text = group;
         }
     }
     
@@ -786,12 +786,12 @@ The below scenario can be explained with three DropDownList for the multi-level 
      
      <script type="text/javascript">
         function onChange() {
-            var ctry = $('#<%=countryList.ClientID%>').data("ejDropDownList");
-            ctry.element.val("");
+            var country = $('#<%=countryList.ClientID%>').data("ejDropDownList");
+            country.element.val("");
         }
         function onSelect() {
-            var ctry = $('#<%=capitalList.ClientID%>').data("ejDropDownList");
-            ctry.element.val("");
+            var country = $('#<%=capitalList.ClientID%>').data("ejDropDownList");
+            country.element.val("");
         }
     </script>
     
@@ -800,88 +800,4 @@ The below scenario can be explained with three DropDownList for the multi-level 
 {% endtabs %}
 
 First two DropDownList cascaded based on the parentId, and then from second to third, cascading performed based on the value field.
-
-## Search
-
-Items are searched based on the keyed in values to the textbox. There are two types of searches,
-
-* Incremental Search
-* Filter Search
-
-### Incremental Search
-
-Selects the item in the popup list based on the keyed in value. If the time taken to type exceeds 1000 milliseconds then filtered items will be reset based on the current input value. By default this mode of search is enabled. Incremental search can be case sensitive or case insensitive. To make case sensitive, you can use CaseSensitiveSearch property.
-
-{% tabs %}
-
-	{% highlight html %}
-        <ej:DropDownList ID="DropDownList1" runat="server" DataTextField="Text" DataValueField="Value" EnableIncrementalSearch="true" CaseSensitiveSearch="true"></ej:DropDownList>
-		
-	{% endhighlight %}
-    
-    {% highlight c# %}
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            List<Data> DropDownData = new List<Data>();
-            DropDownData.Add(new Data { Value = "emp1", Text = "Adams" });
-            DropDownData.Add(new Data { Value = "emp2", Text = "James"});
-            DropDownData.Add(new Data { Value = "emp3", Text = "Maria"});
-            DropDownData.Add(new Data { Value = "emp4", Text = "Jessica"});
-            DropDownData.Add(new Data { Value = "emp5", Text = "Jenneth" });
-            DropDownList1.DataSource = DropDownData;
-            
-        }
-        public class Data
-        {
-            public string Value { get; set; }
-            public string Text { get; set; }
-        }
-    
-    {% endhighlight %}
-    
-{% endtabs %}
-
-![](Functionalities_images/Functionalities_img8.jpeg)
-
-### Filter search
-
-You can quickly locate specific item within a large data source by filtering matches with a search box. A text box appears in the popup list for searching when EnableFilterSearch property is enabled. By default, filtering returns the matched items list based on text in search textbox. 
-You can configure the search filter by using FilterType property. There is two types of filter options,
-
-* Starts With 
-* Contains
-
-N> Items are filtered based on “contains” filter type by default.
-
-{% tabs %}
-
-	{% highlight html %}
-        <ej:DropDownList ID="DropDownList1" runat="server" DataTextField="Text" DataValueField="Value" EnableFilterSearch="true" FilterType="StartsWith"></ej:DropDownList>
-		
-	{% endhighlight %}
-    
-    {% highlight c# %}
-      protected void Page_Load(object sender, EventArgs e)
-        {
-            List<Data> DropDownData = new List<Data>();
-            DropDownData.Add(new Data { Value = "emp1", Text = "Adams" });
-            DropDownData.Add(new Data { Value = "emp2", Text = "James"});
-            DropDownData.Add(new Data { Value = "emp3", Text = "Maria"});
-            DropDownData.Add(new Data { Value = "emp4", Text = "Jessica"});
-            DropDownData.Add(new Data { Value = "emp5", Text = "Jenneth" });
-            DropDownList1.DataSource = DropDownData;
-            
-        }
-        public class Data
-        {
-            public string Value { get; set; }
-            public string Text { get; set; }
-        }
-    {% endhighlight %}
-    
-{% endtabs %}
-
-![](Functionalities_images/Functionalities_img9.jpeg)
-
-I> When VirtualScrolling enabled with searching, then filter will be applied only on the DropDownList items available at the moment.
 

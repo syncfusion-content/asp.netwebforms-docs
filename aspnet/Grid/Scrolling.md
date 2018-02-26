@@ -2,7 +2,7 @@
 layout: post
 title: Scrolling with Grid widget for Syncfusion Essential ASP
 description: How to enable scrolling and its functionalities
-platform: ejweb
+platform: aspnet
 control: Grid
 documentation: ug
 ---
@@ -50,12 +50,12 @@ The following code example describes the above behavior.
             int empId = 0;
             for (int i = 0; i < 9; i++)
               {
-                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", "France","59 rue de l'Abbaye",51100, 32.38));
-                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster","Brazil","Luisenstr. 48",44087, 11.61));
-                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro","France","2, rue du Commerce",05454-876, 45.34));
-                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon","Germany","Rua do Paço, 67",69004, 37.28));
-                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", "Germany","Hauptstr. 31",8010, 67.00));
-                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève","USA","Starenweg 5",1204, 23.32));
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET", "Reims", "France", "59 rue de l'Abbaye", 51100, 32.38));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster", "Brazil", "Luisenstr. 48", 44087, 11.61));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro", "France", "2, rue du Commerce", 05454-876, 45.34));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon", "Germany", "Rua do Paço, 67", 69004, 37.28));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD", "Bern", "Germany", "Hauptstr. 31", 8010, 67.00));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève", "USA", "Starenweg 5", 1204, 23.32));
                 orderId += 6;
                 empId += 6;
               }
@@ -69,15 +69,15 @@ The following code example describes the above behavior.
              {
 
              }
-             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             public Orders(int OrderId, int empId, string CustomerId, string shipCity, string shipCountry,string shipAddress,int shipPostalCode, double freight)
              {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
                 this.CustomerID = CustomerId;
-                this.ShipCity = shipcity;                
+                this.ShipCity = shipCity;                
                 this.ShipCountry = shipCountry;
-                this.ShipAddress = shipaddress
-                this.ShipPostalCode = shippostalcode;
+                this.ShipAddress = shipAddress
+                this.ShipPostalCode = shipPostalCode;
                 this.Freight = freight;
              }
              public int OrderID { get; set; }
@@ -138,12 +138,12 @@ The following code example describes the above behavior.
             int empId = 0;
             for (int i = 0; i < 9; i++)
               {
-                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", "France","59 rue de l'Abbaye",51100, 32.38));
-                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster","Brazil","Luisenstr. 48",44087, 11.61));
-                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro","France","2, rue du Commerce",05454-876, 45.34));
-                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon","Germany","Rua do Paço, 67",69004, 37.28));
-                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", "Germany","Hauptstr. 31",8010, 67.00));
-                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève","USA","Starenweg 5",1204, 23.32));
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET", "Reims", "France", "59 rue de l'Abbaye", 51100, 32.38));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster", "Brazil", "Luisenstr. 48", 44087, 11.61));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro", "France", "2, rue du Commerce", 05454-876, 45.34));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon", "Germany", "Rua do Paço, 67", 69004, 37.28));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD", "Bern", "Germany", "Hauptstr. 31", 8010, 67.00));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève", "USA", "Starenweg 5", 1204, 23.32));
                 orderId += 6;
                 empId += 6;
               }
@@ -157,14 +157,14 @@ The following code example describes the above behavior.
              {
 
              }
-             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             public Orders(int OrderId, int empId, string CustomerId, string shipCity, string shipCountry,string shipAddress,int shipPostalCode, double freight)
              {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
                 this.CustomerID = CustomerId;
-                this.ShipCity = shipcity;                
+                this.ShipCity = shipCity;                
                 this.ShipCountry = shipCountry;
-                this.ShipPostalCode = shippostalcode;
+                this.ShipPostalCode = shipPostalCode;
                 this.Freight = freight;
              }
              public int OrderID { get; set; }
@@ -225,12 +225,12 @@ The following code example describes the above behavior.
             int empId = 0;
             for (int i = 0; i < 9; i++)
               {
-                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", "France","59 rue de l'Abbaye",51100, 32.38));
-                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster","Brazil","Luisenstr. 48",44087, 11.61));
-                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro","France","2, rue du Commerce",05454-876, 45.34));
-                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon","Germany","Rua do Paço, 67",69004, 37.28));
-                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", "Germany","Hauptstr. 31",8010, 67.00));
-                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève","USA","Starenweg 5",1204, 23.32));
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET", "Reims", "France", "59 rue de l'Abbaye", 51100, 32.38));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster", "Brazil", "Luisenstr. 48", 44087, 11.61));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro", "France", "2, rue du Commerce", 05454-876, 45.34));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon", "Germany", "Rua do Paço, 67", 69004, 37.28));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD", "Bern", "Germany", "Hauptstr. 31", 8010, 67.00));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève", "USA", "Starenweg 5", 1204, 23.32));
                 orderId += 6;
                 empId += 6;
               }
@@ -244,15 +244,15 @@ The following code example describes the above behavior.
              {
 
              }
-             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             public Orders(int OrderId, int empId, string CustomerId, string shipCity, string shipCountry,string shipAddress,int shipPostalCode, double freight)
              {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
                 this.CustomerID = CustomerId;
-                this.ShipCity = shipcity;                
+                this.ShipCity = shipCity;                
                 this.ShipCountry = shipCountry;
-                this.ShipAddress = shipaddress;
-                this.ShipPostalCode = shippostalcode;
+                this.ShipAddress = shipAddress;
+                this.ShipPostalCode = shipPostalCode;
                 this.Freight = freight;
              }
              public int OrderID { get; set; }
@@ -314,12 +314,12 @@ The following code example describes the above behavior.
             int empId = 0;
             for (int i = 0; i < 9; i++)
               {
-                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", "France","59 rue de l'Abbaye",51100, 32.38));
-                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster","Brazil","Luisenstr. 48",44087, 11.61));
-                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro","France","2, rue du Commerce",05454-876, 45.34));
-                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon","Germany","Rua do Paço, 67",69004, 37.28));
-                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", "Germany","Hauptstr. 31",8010, 67.00));
-                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève","USA","Starenweg 5",1204, 23.32));
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET", "Reims", "France", "59 rue de l'Abbaye", 51100, 32.38));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster", "Brazil", "Luisenstr. 48", 44087, 11.61));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro", "France", "2, rue du Commerce", 05454-876, 45.34));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon", "Germany", "Rua do Paço, 67", 69004, 37.28));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD", "Bern", "Germany", "Hauptstr. 31", 8010, 67.00));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève", "USA", "Starenweg 5", 1204, 23.32));
                 orderId += 6;
                 empId += 6;
               }
@@ -333,15 +333,15 @@ The following code example describes the above behavior.
              {
 
              }
-             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             public Orders(int OrderId, int empId, string CustomerId, string shipCity, string shipCountry,string shipAddress,int shipPostalCode, double freight)
              {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
                 this.CustomerID = CustomerId;
-                this.ShipCity = shipcity;                
+                this.ShipCity = shipCity;                
                 this.ShipCountry = shipCountry;
-                this.ShipAddress=shipaddress;
-                this.ShipPostalCode = shippostalcode;
+                this.ShipAddress=shipAddress;
+                this.ShipPostalCode = shipPostalCode;
                 this.Freight = freight;
              }
              public int OrderID { get; set; }
@@ -404,12 +404,12 @@ The following code example describes the above behavior.
             int empId = 0;
             for (int i = 0; i < 9; i++)
               {
-                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", "France","59 rue de l'Abbaye",51100, 32.38));
-                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster","Brazil","Luisenstr. 48",44087, 11.61));
-                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro","France","2, rue du Commerce",05454-876, 45.34));
-                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon","Germany","Rua do Paço, 67",69004, 37.28));
-                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", "Germany","Hauptstr. 31",8010, 67.00));
-                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève","USA","Starenweg 5",1204, 23.32));
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET", "Reims", "France", "59 rue de l'Abbaye", 51100, 32.38));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster", "Brazil", "Luisenstr. 48", 44087, 11.61));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro", "France", "2, rue du Commerce", 05454-876, 45.34));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon", "Germany", "Rua do Paço, 67", 69004, 37.28));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD", "Bern", "Germany", "Hauptstr. 31", 8010, 67.00));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève", "USA", "Starenweg 5", 1204, 23.32));
                 orderId += 6;
                 empId += 6;
               }
@@ -423,15 +423,15 @@ The following code example describes the above behavior.
              {
 
              }
-             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             public Orders(int OrderId, int empId, string CustomerId, string shipCity, string shipCountry,string shipAddress,int shipPostalCode, double freight)
              {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
                 this.CustomerID = CustomerId;
-                this.ShipCity = shipcity;                
+                this.ShipCity = shipCity;                
                 this.ShipCountry = shipCountry;
-                this.ShipAddress=shipaddress;
-                this.ShipPostalCode = shippostalcode;
+                this.ShipAddress=shipAddress;
+                this.ShipPostalCode = shipPostalCode;
                 this.Freight = freight;
              }
              public int OrderID { get; set; }
@@ -494,12 +494,12 @@ The following code example describes the above behavior.
             int empId = 0;
             for (int i = 0; i < 9; i++)
               {
-                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", 32.38,"07/04/1996", "France","59 rue de l'Abbaye",51100));
-                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster", 11.61,"07/05/1996","Brazil","Luisenstr. 48",44087));
-                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro", 45.34,"07/09/1996","France","2, rue du Commerce",05454-876));
-                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon", 37.28,"07/11/1996","Germany","Rua do Paço, 67",69004));
-                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", 67.00,"07/15/1996", "Germany","Hauptstr. 31",8010));
-                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève", 23.32,"07/16/1996","USA","Starenweg 5",1204));
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET", "Reims", 32.38, "07/04/1996", "France", "59 rue de l'Abbaye", 51100));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster", 11.61, "07/05/1996", "Brazil", "Luisenstr. 48", 44087));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro", 45.34, "07/09/1996", "France", "2, rue du Commerce", 05454-876));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon", 37.28, "07/11/1996", "Germany", "Rua do Paço, 67", 69004));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD", "Bern", 67.00, "07/15/1996", "Germany", "Hauptstr. 31", 8010));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève", 23.32, "07/16/1996", "USA", "Starenweg 5", 1204));
                 orderId += 6;
                 empId += 6;
               }
@@ -513,17 +513,17 @@ The following code example describes the above behavior.
              {
 
              }
-             public Orders(int OrderId, int empId, string CustomerId, double freight,DateTime orderdate,string shipcity, string shipCountry,string shipaddress,int shippostalcode)
+             public Orders(int OrderId, int empId, string CustomerId, double freight,DateTime orderDate,string shipCity, string shipCountry,string shipAddress,int shipPostalCode)
              {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
                 this.CustomerID = CustomerId;
                 this.Freight = freight;
-                this.OrderDate = orderdate;
-                this.ShipCity = shipcity;                
+                this.OrderDate = orderDate;
+                this.ShipCity = shipCity;                
                 this.ShipCountry = shipCountry;
-                this.ShipAddress=shipaddress;
-                this.ShipPostalCode = shippostalcode;                
+                this.ShipAddress=shipAddress;
+                this.ShipPostalCode = shipPostalCode;                
              }
              public int OrderID { get; set; }
              public int EmployeeID { get; set; }
@@ -555,6 +555,7 @@ The following output is displayed as a result of the above code example.
  Detail Template
  Hierarchy Grid 
  Batch Editing
+ Virtual Scrolling
 
 If any one of the above feature is enabled along with Frozen Rows and Columns, then "Frozen Columns and Rows are not supported for Grouping, Row Template, Detail Template, Hierarchy Grid and Batch Editing" alert message is thrown.
 
@@ -600,12 +601,12 @@ The following code example describes the above behavior.
             int empId = 0;
             for (int i = 0; i < 9; i++)
               {
-                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", "France","59 rue de l'Abbaye",51100, 32.38));
-                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster","Brazil","Luisenstr. 48",44087, 11.61));
-                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro","France","2, rue du Commerce",05454-876, 45.34));
-                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon","Germany","Rua do Paço, 67",69004, 37.28));
-                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", "Germany","Hauptstr. 31",8010, 67.00));
-                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève","USA","Starenweg 5",1204, 23.32));
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET", "Reims", "France", "59 rue de l'Abbaye", 51100, 32.38));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster", "Brazil", "Luisenstr. 48", 44087, 11.61));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro", "France", "2, rue du Commerce", 05454-876, 45.34));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon", "Germany", "Rua do Paço, 67", 69004, 37.28));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD", "Bern", "Germany", "Hauptstr. 31", 8010, 67.00));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève", "USA", "Starenweg 5", 1204, 23.32));
                 orderId += 6;
                 empId += 6;
               }
@@ -619,15 +620,15 @@ The following code example describes the above behavior.
              {
 
              }
-             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             public Orders(int OrderId, int empId, string CustomerId, string shipCity, string shipCountry,string shipAddress,int shipPostalCode, double freight)
              {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
                 this.CustomerID = CustomerId;
-                this.ShipCity = shipcity;                
+                this.ShipCity = shipCity;                
                 this.ShipCountry = shipCountry;
-                this.ShipAddress=shipaddress;
-                this.ShipPostalCode = shippostalcode;
+                this.ShipAddress=shipAddress;
+                this.ShipPostalCode = shipPostalCode;
                 this.Freight = freight;
              }
              public int OrderID { get; set; }
@@ -689,12 +690,12 @@ The following code example describes the above behavior.
             int empId = 0;
             for (int i = 0; i < 9; i++)
               {
-                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", "France","59 rue de l'Abbaye",51100, 32.38));
-                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster","Brazil","Luisenstr. 48",44087, 11.61));
-                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro","France","2, rue du Commerce",05454-876, 45.34));
-                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon","Germany","Rua do Paço, 67",69004, 37.28));
-                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", "Germany","Hauptstr. 31",8010, 67.00));
-                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève","USA","Starenweg 5",1204, 23.32));
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET", "Reims", "France", "59 rue de l'Abbaye", 51100, 32.38));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster", "Brazil", "Luisenstr. 48", 44087, 11.61));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro", "France", "2, rue du Commerce", 05454-876, 45.34));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon", "Germany", "Rua do Paço, 67", 69004, 37.28));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD", "Bern", "Germany", "Hauptstr. 31", 8010, 67.00));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève", "USA", "Starenweg 5", 1204, 23.32));
                 orderId += 6;
                 empId += 6;
               }
@@ -708,15 +709,15 @@ The following code example describes the above behavior.
              {
 
              }
-             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             public Orders(int OrderId, int empId, string CustomerId, string shipCity, string shipCountry,string shipAddress,int shipPostalCode, double freight)
              {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
                 this.CustomerID = CustomerId;
-                this.ShipCity = shipcity;                
+                this.ShipCity = shipCity;                
                 this.ShipCountry = shipCountry;
-                this.ShipAddress=shipaddress;
-                this.ShipPostalCode = shippostalcode;
+                this.ShipAddress=shipAddress;
+                this.ShipPostalCode = shipPostalCode;
                 this.Freight = freight;
              }
              public int OrderID { get; set; }
@@ -754,9 +755,8 @@ N> 1. Grouping
 N> 2. Frozen Rows 
 N> 3. Cell merging 
 N> 4. Detail template 
-N> 5. Row template 
-N> 6. Hierarchy
-N> 7. Editing
+N> 5. Hierarchy
+N> 6. Editing
 
 ### Normal Mode:
 
@@ -797,12 +797,12 @@ The following code example describes the above behavior.
             int empId = 0;
             for (int i = 0; i < 9; i++)
               {
-                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", "France","59 rue de l'Abbaye",51100, 32.38));
-                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster","Brazil","Luisenstr. 48",44087, 11.61));
-                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro","France","2, rue du Commerce",05454-876, 45.34));
-                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon","Germany","Rua do Paço, 67",69004, 37.28));
-                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", "Germany","Hauptstr. 31",8010, 67.00));
-                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève","USA","Starenweg 5",1204, 23.32));
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET", "Reims", "France", "59 rue de l'Abbaye", 51100, 32.38));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster", "Brazil", "Luisenstr. 48", 44087, 11.61));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro", "France", "2, rue du Commerce", 05454-876, 45.34));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon", "Germany", "Rua do Paço, 67", 69004, 37.28));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD", "Bern", "Germany", "Hauptstr. 31", 8010, 67.00));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève", "USA", "Starenweg 5", 1204, 23.32));
                 orderId += 6;
                 empId += 6;
               }
@@ -816,15 +816,15 @@ The following code example describes the above behavior.
              {
 
              }
-             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             public Orders(int OrderId, int empId, string CustomerId, string shipCity, string shipCountry,string shipAddress,int shipPostalCode, double freight)
              {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
                 this.CustomerID = CustomerId;
-                this.ShipCity = shipcity;                
+                this.ShipCity = shipCity;                
                 this.ShipCountry = shipCountry;
-                this.ShipAddress=shipaddress;
-                this.ShipPostalCode = shippostalcode;
+                this.ShipAddress=shipAddress;
+                this.ShipPostalCode = shipPostalCode;
                 this.Freight = freight;
              }
              public int OrderID { get; set; }
@@ -884,12 +884,12 @@ The following code example describes the above behavior.
             int empId = 0;
             for (int i = 0; i < 9; i++)
               {
-                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", "France","59 rue de l'Abbaye",51100, 32.38));
-                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster","Brazil","Luisenstr. 48",44087, 11.61));
-                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro","France","2, rue du Commerce",05454-876, 45.34));
-                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon","Germany","Rua do Paço, 67",69004, 37.28));
-                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", "Germany","Hauptstr. 31",8010, 67.00));
-                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève","USA","Starenweg 5",1204, 23.32));
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET", "Reims", "France", "59 rue de l'Abbaye", 51100, 32.38));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster", "Brazil", "Luisenstr. 48", 44087, 11.61));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro", "France", "2, rue du Commerce", 05454-876, 45.34));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon", "Germany", "Rua do Paço, 67", 69004, 37.28));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD", "Bern", "Germany", "Hauptstr. 31", 8010, 67.00));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève", "USA", "Starenweg 5", 1204, 23.32));
                 orderId += 6;
                 empId += 6;
               }
@@ -903,15 +903,15 @@ The following code example describes the above behavior.
              {
 
              }
-             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             public Orders(int OrderId, int empId, string CustomerId, string shipCity, string shipCountry,string shipAddress,int shipPostalCode, double freight)
              {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
                 this.CustomerID = CustomerId;
-                this.ShipCity = shipcity;                
+                this.ShipCity = shipCity;                
                 this.ShipCountry = shipCountry;
-                this.ShipAddress=shipaddress;
-                this.ShipPostalCode = shippostalcode;
+                this.ShipAddress=shipAddress;
+                this.ShipPostalCode = shipPostalCode;
                 this.Freight = freight;
              }
              public int OrderID { get; set; }
@@ -973,12 +973,12 @@ The following code example describes the above behavior.
             int empId = 0;
             for (int i = 0; i < 9; i++)
               {
-                order.Add(new Orders(orderId + 1, empId + 1, "VINET","Reims", "France","59 rue de l'Abbaye",51100, 32.38));
-                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster","Brazil","Luisenstr. 48",44087, 11.61));
-                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro","France","2, rue du Commerce",05454-876, 45.34));
-                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon","Germany","Rua do Paço, 67",69004, 37.28));
-                order.Add(new Orders(orderId + 5, empId + 5, "DRACD","Bern", "Germany","Hauptstr. 31",8010, 67.00));
-                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève","USA","Starenweg 5",1204, 23.32));
+                order.Add(new Orders(orderId + 1, empId + 1, "VINET", "Reims", "France", "59 rue de l'Abbaye", 51100, 32.38));
+                order.Add(new Orders(orderId + 2, empId + 2, "TRADH", "Münster", "Brazil", "Luisenstr. 48", 44087, 11.61));
+                order.Add(new Orders(orderId + 3, empId + 3, "VICTE", "Rio de Janeiro", "France", "2, rue du Commerce", 05454-876, 45.34));
+                order.Add(new Orders(orderId + 4, empId + 4, "FRANK", "Lyon", "Germany", "Rua do Paço, 67", 69004, 37.28));
+                order.Add(new Orders(orderId + 5, empId + 5, "DRACD", "Bern", "Germany", "Hauptstr. 31", 8010, 67.00));
+                order.Add(new Orders(orderId + 6, empId + 6, "RATTC", "Genève", "USA", "Starenweg 5", 1204, 23.32));
                 orderId += 6;
                 empId += 6;
               }
@@ -992,15 +992,15 @@ The following code example describes the above behavior.
              {
 
              }
-             public Orders(int OrderId, int empId, string CustomerId, string shipcity, string shipCountry,string shipaddress,int shippostalcode, double freight)
+             public Orders(int OrderId, int empId, string CustomerId, string shipCity, string shipCountry,string shipAddress,int shipPostalCode, double freight)
              {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
                 this.CustomerID = CustomerId;
-                this.ShipCity = shipcity;                
+                this.ShipCity = shipCity;                
                 this.ShipCountry = shipCountry;
-                this.ShipAddress=shipaddress;
-                this.ShipPostalCode = shippostalcode;
+                this.ShipAddress=shipAddress;
+                this.ShipPostalCode = shipPostalCode;
                 this.Freight = freight;
              }
              public int OrderID { get; set; }

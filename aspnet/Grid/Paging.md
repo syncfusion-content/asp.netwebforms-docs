@@ -2,7 +2,7 @@
 layout: post
 title: Paging with Grid widget for Syncfusion Essential ASP
 description: How to enable paging and its functionalites.
-platform: ejweb
+platform: aspnet
 control: Grid
 documentation: ug
 ---
@@ -276,4 +276,28 @@ The following code example describes the above behavior.
 
 ![](Paging_images/Paging_img3.png)
 
+## Pager with pageSettings
+
+We can customize the default page settings, such as [`pageCount`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-pagecount "pageCount"), [`pageSize`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-pagesize "pageSize")  of the Grid's pager by using [`pageSettings`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings "pageSettings") property of Grid control. 
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+	$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+        dataSource: window.gridData,
+        allowPaging: true,
+        pageSettings: { pageSize: 8, pageCount:3}
+    });
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](paging_images/paging_img6.png)
  

@@ -209,9 +209,9 @@ public class RowTemplateData
 
   {
 
-      List<TemplateData> datas = new List<TemplateData>();
+      List<TemplateData> data = new List<TemplateData>();
 
-      datas.Add(new TemplateData()
+      data.Add(new TemplateData()
 
       {
 
@@ -233,15 +233,15 @@ public class RowTemplateData
 
       });
 
-      datas[0].Children = new List<TemplateData>();
+      data[0].Children = new List<TemplateData>();
 
-      datas[0].Children.Add(new TemplateData()
+      data[0].Children.Add(new TemplateData()
 
       {
 
-         Name = "David william",
+         Name = "David Williamson",
 
-         FullName = "David william",
+         FullName = "David Williamson",
 
          Designation = "Vice President",
 
@@ -263,7 +263,7 @@ public class RowTemplateData
 
            // ...
 
-    return datas;
+    return data;
 
   }
 

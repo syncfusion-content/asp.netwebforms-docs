@@ -98,7 +98,7 @@ Next, you can add the below-mentioned dependency libraries to your web applicati
  
 To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
-N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]
+N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. And if you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
 * Microsoft.AnalysisServices.AdomdClient
 * Syncfusion.Compression.Base
@@ -338,6 +338,10 @@ namespace PivotClientDemo
         public Dictionary<string, object> CubeChanged(string action, string cubeName, string clientParams)
         {
             OlapDataManager DataManager = new OlapDataManager(connectionString);
+            if (olapReport != "")
+                DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(olapReport));
+            if (clientReports != "")
+                DataManager.Reports = pivotClientHelper.DeserializedReports(clientReports);
             return pivotClientHelper.GetJsonData(action, DataManager, cubeName, clientParams);
         }
 
@@ -391,13 +395,12 @@ namespace PivotClientDemo
                 cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
             }
             cmd1.Parameters.Add("@ReportName", reportName);
-            if (operationalMode.ToLower() == "servermode" && analysisMode == "olap")
-                cmd1.Parameters.Add("@Reports", OLAPUTILS.Utils.GetReportStream(clientReports).ToArray());
-            else
-                cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(clientReports).ToArray());
+            cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(clientReports).ToArray());
             cmd1.ExecuteNonQuery();
             con.Close();
-            return null;
+            Dictionary<string, object> dictionary = new Dictionary<string, object>();
+            dictionary.Add("CurrentAction", "Save");
+            return dictionary;
         }
 
         public Dictionary<string, object> RemoveReportFromDB(string reportName, string operationalMode, string analysisMode)
@@ -415,7 +418,9 @@ namespace PivotClientDemo
             }
             cmd1.ExecuteNonQuery();
             con.Close();
-            return null;
+            Dictionary<string, object> dictionary = new Dictionary<string, object>();
+            dictionary.Add("CurrentAction", "Remove");
+            return dictionary;
         }
 
         public Dictionary<string, object> RenameReportInDB(string selectedReport, string renameReport, string operationalMode, string analysisMode)
@@ -435,7 +440,9 @@ namespace PivotClientDemo
             cmd1.Parameters.Add("@RenameReport", renameReport);
             cmd1.ExecuteNonQuery();
             con.Close();
-            return null;
+            Dictionary<string, object> dictionary = new Dictionary<string, object>();
+            dictionary.Add("CurrentAction", "Rename");
+            return dictionary;
         }
 
         public Dictionary<string, object> FetchReportListFromDB(string action, string operationalMode, string analysisMode)
@@ -459,7 +466,6 @@ namespace PivotClientDemo
 
         public Dictionary<string, object> LoadReportFromDB(string reportName, string operationalMode, string analysisMode, string olapReport, string clientReports)
         {
-
             PivotReport report = new PivotReport();
             Dictionary<string, object> dictionary = new Dictionary<string, object>();
             string currentRptName = string.Empty;
@@ -468,14 +474,36 @@ namespace PivotClientDemo
                 currentRptName = (row.ItemArray[0] as string).Replace("##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower(), "");
                 if (currentRptName.Equals(reportName))
                 {
+                    byte[] reportByte = new byte[2 * 1024];
+                    reportByte = (row.ItemArray[1] as byte[]);
                     if (operationalMode.ToLower() == "servermode" && analysisMode == "olap")
                     {
-                        var reportString = "";
+                        var repCol = Encoding.UTF8.GetString(reportByte);
                         OlapDataManager DataManager = new OlapDataManager(connectionString);
-                        reportString = OLAPUTILS.Utils.CompressData(row.ItemArray[1] as byte[]);
-                        DataManager.Reports = pivotClientHelper.DeserializedReports(reportString);
-                        DataManager.SetCurrentReport(DataManager.Reports[0]);
-                        return pivotClientHelper.GetJsonData("toolbarOperation", DataManager, "Load Report", reportName);
+                        if (repCol.IndexOf("<?xml version") == 0)
+                        {
+                            var reportString = "";
+                            reportString = Syncfusion.JavaScript.Olap.Utils.CompressData(row.ItemArray[1] as byte[]);
+                            DataManager.Reports = pivotClientHelper.DeserializedReports(reportString);
+                            DataManager.SetCurrentReport(DataManager.Reports[0]);
+                            return pivotClientHelper.GetJsonData("toolbarOperation", DataManager, "Load Report", reportName);
+                        }
+                        else
+                        {
+                            dynamic customData = serializer.Deserialize<dynamic>(repCol.ToString());
+                            DataManager.Reports = pivotClientHelper.DeserializedReports(customData[customData[customData.Length - 1]["cubeIndex"]]["Reports"]);
+                            DataManager.SetCurrentReport(DataManager.Reports[customData[customData[customData.Length - 1]["cubeIndex"]]["ReportIndex"]]);
+                            dictionary = pivotClientHelper.GetJsonData("toolbarOperation", DataManager, "Load Report", reportName);
+                            dictionary.Add("Collection", repCol);
+                        }
+                    }
+                    else
+                    {
+                        if (analysisMode.ToLower() == "pivot" && operationalMode.ToLower() == "servermode")
+                            dictionary = pivotClientHelper.GetJsonData("LoadReport", ProductSales.GetSalesData(), Encoding.UTF8.GetString(reportByte));
+                        else
+                            dictionary.Add("report", Encoding.UTF8.GetString(reportByte));
+                        break;
                     }
                 }
             }

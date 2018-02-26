@@ -11,9 +11,13 @@ documentation: ug
 
 The Autocomplete allows list of data to be displayed in several columns and column collection can be defined and customized through the **MultiColumnSettings** property.
 
-In AutoComplete Multiple Column search is based on **stringFormat** property which specifies column indices.
+In AutoComplete Multiple Column search is based on **searchColumnIndices** property which allows user to search text for any number of fields in the suggestion list without modifying the selected text format.
 
-N> **stringFormat** as “{0} ({1}) ({2})” means search based on 0, 1 and 2 columns data.
+N> if we use **searchColumnIndices** as “[0,1,2]” means search based on 0, 1 and 2 columns data alone.
+
+In AutoComplete Multiple Column searched value is updated to autocomplete input box based on **StringFormat** property which specifies values to updated.
+
+N> **StringFormat** as “{0} ({1}) ({2})” means search based on 0, 1 and 2 columns data.
 
 <table><tr><th>Name</th><th>Description</th></tr>
 <tr><td>Enable</td><td>Allow list of data to be displayed in several columns.</td></tr>
@@ -35,7 +39,8 @@ In the design page, define the AutoComplete control and configure its **MultiCol
 
 <%--Refer the ObjectDataSource binding for DataBinding to this code snippet--%>
 
-
+Add the below code in corresponding code behind. 
+  <%--this.AutoCompleteBelmt.MultiColumnSettings.SearchColumnIndices = new List<int> { 0,1,2 };--%>
 
     <div style="width: 600px">
 
@@ -44,7 +49,7 @@ In the design page, define the AutoComplete control and configure its **MultiCol
     <span style="display:block; margin-bottom:12px">Using Delimiter</span>    
     <ej:Autocomplete ID="AutoCompleteBelmt" runat="server" DataSourceID="ObjectDataSource1" 
 
-    <MultiColumnSettings Enable="true" ShowHeader="true" StringFormat="{0} {1} {2}"   >
+    <MultiColumnSettings Enable="true" ShowHeader="true" StringFormat="{0}"   >
     <Columns>
     <ej:Columns Field="ID" HeaderText="ID" />
     <ej:Columns Field="Text" HeaderText="Text" />

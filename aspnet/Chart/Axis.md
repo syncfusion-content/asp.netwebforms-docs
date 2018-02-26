@@ -82,7 +82,7 @@ To display the labels after a fixed interval n, you can set the **Interval** pro
 
      .PrimaryXAxis(
           //Displaying labels after 2 intervals
-          px=>px.Range(ra=>ra.Interval(2))
+          axis=>axis.Range(range=>range.Interval(2))
      )
         // ...
     )
@@ -761,9 +761,27 @@ Axis will be placed in the opposite side if value of *CrossesAt* property is gre
 
 ![](Axis_images/axis_img54.png)
 
+#### Positioning the axis elements while crossing
+
+The `ShowNextToAxisLine` property is used for controlling the axis elements movement along with the axis line while axis crossing is performed. When the showNextToAxisLine is set as false only the axis line and the tick lines are placed at the crossing Value and the axis elements will be placed outside the chart area. The default value of `ShowNextToAxisLine` is **true**.  
+
+{% highlight html %}
+
+	<ej:Chart ID="Chart1" runat="server">
+		
+		<%--Crosses primary Y axis at the value 0 --%>
+		<PrimaryXAxis CrossesAt="0" ShowNextToAxisLine="false" >
+		</PrimaryXAxis>
+		
+	</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img67.png)
+
 ### Axis Visibility
 
-Axis visibility can be controlled by using the **Visible** property of the axis. The default value of the Visible property is **True**. 
+Axis visibility can be controlled by using the **Visible** property of the axis. The default value of the Visible property is **true**. 
 
 {% highlight html %}
 
@@ -828,6 +846,44 @@ The **Font** property of the axis provides options to customize the FontFamily, 
 
 ![](Axis_images/axis_img28.png)
 
+#### Axis Labels Line Break
+
+Axis Labels can be placed in multiple lines by specifying **<br>** for data points x value and in label format.
+
+For category value type, **<br>** can be specified in x value of data points.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server"> 
+    <Series>
+       <ej:Series>
+           <Points>
+               <ej:Points X="India" Y="61.3"></ej:Points>
+               <ej:Points X="United<br>States<br>of<br>America" Y="31"></ej:Points>
+               <ej:Points X="South<br>Korea" Y="39.4"></ej:Points>
+               <ej:Points X="United<br>Arab<br>Emirates" Y="65.1"></ej:Points>
+               <ej:Points X="United<br>Kingdom" Y="75.9"></ej:Points>
+           </Points>
+       </ej:Series>
+    </Series>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img68.png)
+
+For numeric, datetime and datetimeCategory value type, **<br>** can be specified in labelFormat.
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server">
+    <PrimaryXAxis LabelFormat="MMM<br>dd<br>yyyy" ValueType="Datetime">
+    </PrimaryXAxis>
+</ej:Chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img69.png)
 
 ### Label and tick positioning
  
@@ -910,7 +966,7 @@ The **MajorTickLines** and **MinorTickLines** properties in the axis are used to
   
 ### Inversing axis
 
-Axis can be inversed by using the **IsInversed** property of the axis. The default value of the IsInversed property is **False**.
+Axis can be inversed by using the **IsInversed** property of the axis. The default value of the IsInversed property is **false**.
 
 {% highlight html %}
 
@@ -934,7 +990,7 @@ Axis can be inversed by using the **IsInversed** property of the axis. The defau
 
 ### Place axes at the opposite side
 
-The **OpposedPosition** property of axis can be used to place the axis at the opposite side of its default position. The default value of the OpposedPosition property is **False**. 
+The **OpposedPosition** property of axis can be used to place the axis at the opposite side of its default position. The default value of the OpposedPosition property is **false**. 
 
 {% highlight html %}
 

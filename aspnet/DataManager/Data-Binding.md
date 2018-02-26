@@ -135,7 +135,7 @@ Refer to the following code example for consuming Web API data using DataManager
     public class EmployeeController : ApiController
     {
         static readonly IEmployeeRepository repository = new EmployeeRepository();
-        // GET api/<controller>
+        // GET API/<controller>
         [HttpGet]
         public object Get()
         {
@@ -193,22 +193,22 @@ Create a sample using ASP.NET Web Services
         public DataTable Get()
         {
             SqlCommand getData = new SqlCommand();
-            getData.CommandText = "usp_DEV_ChangeLog_Select"; // Stored procedure for retrieve data from suppliers table
+            getData.CommandText = "USP_DEV_ChangeLog_Select"; // Stored procedure for retrieve data from suppliers table
             getData.CommandType = CommandType.StoredProcedure;
             getData.Connection = con;
             if (con.State != ConnectionState.Open)
                 con.Open();
-            DataTable sqldata = new DataTable();
-            SqlDataAdapter sqladapter = new SqlDataAdapter(getData);
-            sqldata.TableName = "Suppliers";
-            sqladapter.Fill(sqldata);
-            return sqldata;
+            DataTable sqlData = new DataTable();
+            SqlDataAdapter sqlAdapter = new SqlDataAdapter(getData);
+            sqlData.TableName = "Suppliers";
+            sqlAdapter.Fill(sqlData);
+            return sqlData;
         }
     }
 
 {% endhighlight %}
 
-In the above code snippet, we have created webservices by using the ASP.NET web service and bound dataSource to Grid, in code behind GetDataSource method.
+In the above code snippet, we have created web services by using the ASP.NET web service and bound dataSource to Grid, in code behind GetDataSource method.
 
 {% highlight html %}
 
@@ -217,9 +217,9 @@ In the above code snippet, we have created webservices by using the ASP.NET web 
     public static object GetDataSource()
     {
         CRUD_Service.WebService1 service = new CRUD_Service.WebService1();
-        var sqldata = service.Get();   // Get data from webservices
+        var sqlData = service.Get();   // Get data from web services
         DataResult result = new DataResult();
-        List<EditableCustomer> data = (from ord in sqldata.AsEnumerable() // Perform skip take for on demand load paging
+        List<EditableCustomer> data = (from ord in sqlData.AsEnumerable() // Perform skip take for on demand load paging
                                         select new EditableCustomer
                                         {
                                             OrderID = ord.ItemArray[0].ToString(),
@@ -255,3 +255,72 @@ In the above code snippet, we have created webservices by using the ASP.NET web 
 {% endhighlight %}
 
 ![](Data-Binding_images/Data-Binding_img7.png)
+
+## Complex Data Sorting
+
+You can perform a data operation based on nested column data and bind to the data control. Here, if you want to perform the server side data operation for the nested dataSource like sorting, grouping, filtering, searching, take, or skip then we have to define the generic type of dataSource.
+
+{% highlight CSHTML %}
+
+ <ej:Grid  runat="server"  ID="grid1" EnableViewState="false" AllowPaging="true" Load="OnLoad" >
+         <DataManager  URL="Default.aspx/GetAllRecords"   Adaptor="WebMethodAdaptor"/> 
+        <Columns>
+ 
+            <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
+            <ej:Column Field="EmployeeID" HeaderText="Employee ID" Width="75" />
+            
+            <ej:Column Field="Freight" HeaderText="Freight" Width="75" />
+            <ej:Column Field="ShipCountry" HeaderText="Ship Country" Width="75" />
+            <ej:Column Field="ShipCity" HeaderText="Ship City" Width="75" />
+            <ej:Column Field="customer.0.CustomerNumber" HeaderText="Customer Number0" Width="60" />
+            <ej:Column Field="customer.0.OtherAddress" HeaderText="Customer Address2 0" Width="60" />
+            <ej:Column Field="customer.1.CustomerNumber" HeaderText="Customer Number1" Width="60" />
+            <ej:Column Field="customer.1.OtherAddress" HeaderText="Customer Address2 1" Width="60" />
+        </Columns>
+       <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True" ></EditSettings>
+                    <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings> 
+    </ej:Grid>
+
+{%endhighlight%}
+
+{% highlight C# %}
+
+        [WebMethod()]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public static object GetAllRecords()
+        {
+                int code = 10000;
+                Customer[] cs = { new Customer { CustomerNumber = 4, OtherAddress = "Hello" }, new Customer { CustomerNumber = 986, OtherAddress = "bOther" } };
+                Customer[] cos = { new Customer { OtherAddress = "a", CustomerNumber = 5 }, new Customer { CustomerNumber = 777, OtherAddress = "other" } };
+
+                for (int i = 1; i < 10; i++)
+                {
+
+                    order.Add(new Orders(code + 1, "ALFKI", i + 0, 2.3 * i, "Chicago", "Berlin",cs));
+                    order.Add(new Orders(code + 2, "ANATR", i + 2, 3.3 * i, "Sydney", "Madrid",cos));
+                    order.Add(new Orders(code + 3, "ANTON", i + 1, 4.3 * i, "NY", "Cholchester",cs));
+                    order.Add(new Orders(code + 4, "BLONP", i + 3, 5.3 * i, "LA", "Marseille",cos));
+                    order.Add(new Orders(code + 5, "BOLID", i + 4, 6.3 * i, "Cochin", "Tsawassen",cs));
+                   
+                    code += 5;
+                }
+               
+               
+                IEnumerable<Orders> List = order;          
+                Sort sortingObject = new Sort();           
+                sortingObject.Name = "customer.0.OtherAddress";            
+                sortingObject.Direction = "ascending";
+                List <Sort> listToSort = new List<Sort>();
+                listToSort.Add(sortingObject);
+                Syncfusion.JavaScript.DataSources.DataOperations operation = new Syncfusion.JavaScript.DataSources.DataOperations();
+                List= operation.PerformSorting(List, listToSort);
+                return new { result =List, count = List.AsQueryable().Count() };
+               
+            }
+
+{%endhighlight%}
+
+![](WEBFORMS_Sorting_images/complexdata.png)
+
+

@@ -174,6 +174,8 @@ To set an appropriate start page, right-click the **“GettingStarted.aspx”** 
 
 Now, add the following dependency libraries as references to your web application. To add them to your application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
 
+N> If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
+
 * Syncfusion.Compression.Base
 * Syncfusion.Linq.Base
 * Syncfusion.Olap.Base
@@ -186,8 +188,6 @@ Now, add the following dependency libraries as references to your web applicatio
 * Syncfusion.EJ.Web
 * Syncfusion.EJ.Export
 * Syncfusion.EJ.Pivot
-
-N> If any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility is installed, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET].
 
 ### Scripts and CSS initialization
 
@@ -540,14 +540,16 @@ namespace PivotClientDemo
             cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(jsonResult["clientReports"].ToString()).ToArray());
             cmd1.ExecuteNonQuery();
             con.Close();
-            return null;
+            Dictionary<string, object> dictionary = new Dictionary<string, object>();
+            dictionary.Add("CurrentAction", "Save");
+            return dictionary;
         }
 
         [System.Web.Http.ActionName("RemoveReportFromDB")]
         [System.Web.Http.HttpPost]
         public Dictionary<string, object> RemoveReportFromDB(Dictionary<string, object> jsonResult)
         {
-            string operationalMode = jsonResult["operationalMode"].ToString(), analysisMode = jsonResult["analysisMode"].ToString(), reportName = string.Empty;
+  	    string operationalMode = jsonResult["operationalMode"].ToString(), analysisMode = jsonResult["analysisMode"].ToString(), reportName = string.Empty;
             SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
             con.Open();
             reportName = jsonResult["reportName"].ToString() + "##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower();
@@ -561,7 +563,9 @@ namespace PivotClientDemo
             }
             cmd1.ExecuteNonQuery();
             con.Close();
-            return null;
+            Dictionary<string, object> dictionary = new Dictionary<string, object>();
+            dictionary.Add("CurrentAction", "Remove");
+            return dictionary;
         }
 
         [System.Web.Http.ActionName("RenameReportInDB")]
@@ -584,7 +588,9 @@ namespace PivotClientDemo
             cmd1.Parameters.Add("@RenameReport", renameReport);
             cmd1.ExecuteNonQuery();
             con.Close();
-            return null;
+            Dictionary<string, object> dictionary = new Dictionary<string, object>();
+            dictionary.Add("CurrentAction", "Rename");
+            return dictionary;
         }
 
         [System.Web.Http.ActionName("FetchReportListFromDB")]

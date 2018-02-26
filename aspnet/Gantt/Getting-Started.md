@@ -359,7 +359,7 @@ Gantt control has the sorting functionality for arranging the tasks in ascending
 
 #### Multicolumn sorting:
 
-Enable the multicolumn sorting in Gantt by setting AllowMultiSorting to “True”. You can sort multiple columns in Gantt by selecting the desired column header while holding the CTRL key.
+Enable the multicolumn sorting in Gantt by setting AllowMultiSorting to `true`. You can sort multiple columns in Gantt by selecting the desired column header while holding the CTRL key.
 
 
 
@@ -423,7 +423,7 @@ Note: Both cellEditing and normal editing operations are performed through doubl
 
 #### Enable Context Menu
 
-You can enable the context menu in Gantt by setting the EnableContextMenu to “True”.
+You can enable the context menu in Gantt by setting the EnableContextMenu to `true`.
 
 {% highlight html %}
 
@@ -554,7 +554,7 @@ public class ResourceList
 
         resourceDetails.Add(new ResourceListData() { ResourceID = 3, ResourceName = "Developer" });
 
-        resourceDetails.Add(new ResourceListData() { ResourceID = 4, ResourceName = "Testing Engi-neer" });
+        resourceDetails.Add(new ResourceListData() { ResourceID = 4, ResourceName = "Testing Engineer" });
 
 
 

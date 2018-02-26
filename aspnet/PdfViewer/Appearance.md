@@ -25,6 +25,11 @@ Following are the built-in themes available in PDF viewer.
 * gradient-lime-dark
 * gradient-saffron
 * gradient-saffron-dark
+* bootstrap
+* high-contrast-01
+* high-contrast-02
+* material
+* office-365
 
 By default, ‘flat-azure’ theme is applied to PDF viewer. You can change the theme by changing the stylesheet reference. You can apply ‘gradient-saffron’ theme to ejPdfViewer by using the stylesheet reference as follows
 

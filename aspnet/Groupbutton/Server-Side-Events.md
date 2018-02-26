@@ -75,11 +75,11 @@ The event Argument `e.Arguments` in Postback event contains the following key va
 </tr>
 <tr>
 <td class="index">[1]</td>
-<td class="key">{[selected, True]}</td>
+<td class="key">{[selected, true]}</td>
 </tr>
 <tr>
 <td class="index">[2]</td>
-<td class="key">{[disabled, False]}</td>
+<td class="key">{[disabled, false]}</td>
 </tr>
 <tr>
 <td class="index">[3]</td>

@@ -19,7 +19,7 @@ Using `search` method of grid, you can search the string in grid externally with
 <div class="prop-grid">
 <div class="row">
 <div class="col-md-3">
-<input type="text" id="srchstr" class="e-ejinputtext" />
+<input type="text" id="inputText" class="e-ejinputtext" />
 <ej:Button ID="search" runat="server" ClientSideOnClick="onSearching" Text="Searching"></ej:Button>
 </div>
 </div>
@@ -46,7 +46,7 @@ Using `search` method of grid, you can search the string in grid externally with
 {% highlight js %}
 function onSearching(args) {
 var obj = $("#Grid").ejGrid("instance");
-var val = $("#srchstr").val();
+var val = $("#inputText").val();
 obj.search(val);
 }
 

@@ -51,6 +51,8 @@ You can add the below-mentioned dependency libraries to your web application. Th
  
 To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
 
+N> If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
+
 * Syncfusion.Compression.Base
 * Syncfusion.Linq.Base
 * Syncfusion.Olap.Base
@@ -331,7 +333,9 @@ namespace PivotClientDemo
             cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(clientReports).ToArray());
             cmd1.ExecuteNonQuery();
             con.Close();
-            return null;
+            Dictionary<string, object> dictionary = new Dictionary<string, object>();
+            dictionary.Add("CurrentAction", "Save");
+            return dictionary;
         }
 
         public Dictionary<string, object> RemoveReportFromDB(string reportName, string operationalMode, string analysisMode)
@@ -349,7 +353,9 @@ namespace PivotClientDemo
             }
             cmd1.ExecuteNonQuery();
             con.Close();
-            return null;
+            Dictionary<string, object> dictionary = new Dictionary<string, object>();
+            dictionary.Add("CurrentAction", "Remove");
+            return dictionary;
         }
 
         public Dictionary<string, object> RenameReportInDB(string selectedReport, string renameReport, string operationalMode, string analysisMode)
@@ -369,7 +375,9 @@ namespace PivotClientDemo
             cmd1.Parameters.Add("@RenameReport", renameReport);
             cmd1.ExecuteNonQuery();
             con.Close();
-            return null;
+            Dictionary<string, object> dictionary = new Dictionary<string, object>();
+            dictionary.Add("CurrentAction", "Rename");
+            return dictionary;
         }
 
         public Dictionary<string, object> FetchReportListFromDB(string action, string operationalMode, string analysisMode)

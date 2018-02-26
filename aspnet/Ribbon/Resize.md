@@ -109,10 +109,10 @@ Set `IsResponsive` as true to enable responsive mode in Ribbon.
                                                         <toggleButtonSettings ContentType="ImageOnly" ActiveText="Italic" ActivePrefixIcon="e-icon e-ribbon e-resitalic" DefaultPrefixIcon="e-icon e-ribbon e-resitalic" />
                                                     </ej:ContentGroup>
                                                     <ej:ContentGroup Id="underline" Text="Underline" IsMobileOnly="true"  Type="ToggleButton">
-                                                        <toggleButtonSettings ContentType="ImageOnly" ActiveText="Underline" ActivePrefixIcon="e-icon e-ribbon e-resunderline" DefaultPrefixIcon="e-ribbon e-icon e-resunderline"  />
+                                                        <toggleButtonSettings ContentType="ImageOnly" ActiveText="Underline" ActivePrefixIcon="e-icon e-ribbon e-resunderline" DefaultPrefixIcon="e-icon e-ribbon e-icon e-resunderline"  />
                                                     </ej:ContentGroup>
                                                     <ej:ContentGroup Id="strikethrough" Text="strikethrough"  Type="ToggleButton">
-                                                        <toggleButtonSettings ContentType="ImageOnly" ActiveText="Strikethrough" ActivePrefixIcon="e-icon e-ribbon strikethrough" DefaultPrefixIcon="e-ribbon e-icon strikethrough"  />
+                                                        <toggleButtonSettings ContentType="ImageOnly" ActiveText="Strikethrough" ActivePrefixIcon="e-icon e-ribbon strikethrough" DefaultPrefixIcon="e-icon e-ribbon e-icon strikethrough"  />
                                                     </ej:ContentGroup>
                                                     <ej:ContentGroup Id="superscript" Text="superscript" >
                                                         <ButtonSettings ContentType="ImageOnly" Type="Button" PrefixIcon="e-icon e-ribbon  e-superscripticon" />
@@ -165,10 +165,10 @@ N> To make the Ribbon control to react as responsive in mobile devices, it is ne
                                                         <toggleButtonSettings ContentType="ImageOnly" ActiveText="Italic" ActivePrefixIcon="e-icon e-ribbon e-resitalic" DefaultPrefixIcon="e-icon e-ribbon e-resitalic" />
                                                     </ej:ContentGroup>
                                                     <ej:ContentGroup Id="underline" Text="Underline" IsMobileOnly="true"  Type="ToggleButton">
-                                                        <toggleButtonSettings ContentType="ImageOnly" ActiveText="Underline" ActivePrefixIcon="e-icon e-ribbon e-resunderline" DefaultPrefixIcon="e-ribbon e-icon e-resunderline"  />
+                                                        <toggleButtonSettings ContentType="ImageOnly" ActiveText="Underline" ActivePrefixIcon="e-icon e-ribbon e-resunderline" DefaultPrefixIcon="e-icon e-ribbon e-icon e-resunderline"  />
                                                     </ej:ContentGroup>
                                                     <ej:ContentGroup Id="strikethrough" Text="strikethrough"  Type="ToggleButton">
-                                                        <toggleButtonSettings ContentType="ImageOnly" ActiveText="Strikethrough" ActivePrefixIcon="e-icon e-ribbon strikethrough" DefaultPrefixIcon="e-ribbon e-icon strikethrough"  />
+                                                        <toggleButtonSettings ContentType="ImageOnly" ActiveText="Strikethrough" ActivePrefixIcon="e-icon e-ribbon strikethrough" DefaultPrefixIcon="e-icon e-ribbon e-icon strikethrough"  />
                                                     </ej:ContentGroup>
                                                     <ej:ContentGroup Id="superscript" Text="superscript" >
                                                         <ButtonSettings ContentType="ImageOnly" Type="Button" PrefixIcon="e-icon e-ribbon  e-superscripticon" />
@@ -232,7 +232,7 @@ For each group shirked for resizing, Custom Class will be added based on group t
                                 <ContentDefaults Width="50" Height="70" />
                                 <ContentGroupCollection>
                                     <ej:ContentGroup Id="paste" ToolTip="Paste">
-                                        <ButtonSettings ContentType="ImageOnly" PrefixIcon="e-ribbon e-ribbonpaste" />
+                                        <ButtonSettings ContentType="ImageOnly" PrefixIcon="e-icon e-ribbon e-ribbonpaste" />
                                     </ej:ContentGroup>
                                 </ContentGroupCollection>
                             </ej:TabContent>
@@ -240,10 +240,10 @@ For each group shirked for resizing, Custom Class will be added based on group t
                                 <ContentDefaults Width="60" Height="40" IsBig="false" />
                                 <ContentGroupCollection>
                                     <ej:ContentGroup Id="cut" ToolTip="Cut" Text="Cut">
-                                        <ButtonSettings ContentType="TextAndImage" Type="Button" PrefixIcon="e-ribbon e-ribboncut" />
+                                        <ButtonSettings ContentType="TextAndImage" Type="Button" PrefixIcon="e-icon e-ribbon e-ribboncut" />
                                     </ej:ContentGroup>
                                     <ej:ContentGroup Id="copy" ToolTip="Copy" Text="Copy">
-                                        <ButtonSettings ContentType="TextAndImage" Type="Button" PrefixIcon="e-ribbon e-ribboncopy" />
+                                        <ButtonSettings ContentType="TextAndImage" Type="Button" PrefixIcon="e-icon e-ribbon e-ribboncopy" />
                                     </ej:ContentGroup>
     
                                 </ContentGroupCollection>
@@ -255,7 +255,7 @@ For each group shirked for resizing, Custom Class will be added based on group t
                             <ej:TabContent>
                                 <ContentDefaults Height="28" Type="DropDownList" IsBig="false" />
                                 <ContentGroupCollection>
-                                    <ej:ContentGroup Id="fontfamily" ToolTip="Font" Type="DropDownList">
+                                    <ej:ContentGroup Id="fontFamily" ToolTip="Font" Type="DropDownList">
                                         <DropdownSettings Text="Segoe UI" Width="150" Select="executeAction"></DropdownSettings>
                                     </ej:ContentGroup>
                                     <ej:ContentGroup Id="fontsize" ToolTip="FontSize" Type="DropDownList">
@@ -270,7 +270,7 @@ For each group shirked for resizing, Custom Class will be added based on group t
                             <ej:TabContent>
                                 <ContentGroupCollection>
                                     <ej:ContentGroup Id="new" Text="New" ToolTip="New" Type="Button">
-                                        <ButtonSettings Type="Button" ContentType="ImageOnly" ImagePosition="ImageTop" PrefixIcon="e-ribbon e-new" />
+                                        <ButtonSettings Type="Button" ContentType="ImageOnly" ImagePosition="ImageTop" PrefixIcon="e-icon e-ribbon e-new" />
                                     </ej:ContentGroup>
                                 </ContentGroupCollection>
                                 <ContentDefaults Width="60" Height="40" Type="Button" />
@@ -283,10 +283,10 @@ For each group shirked for resizing, Custom Class will be added based on group t
                                 <ContentDefaults Type="Button" Height="70" Width="40" />
                                 <ContentGroupCollection>
                                     <ej:ContentGroup Id="undo" Text="Undo" ToolTip="Undo" IsBig="false">
-                                        <ButtonSettings ContentType="TextAndImage" ImagePosition="ImageTop" PrefixIcon="e-ribbon e-undo" Click="executeAction" Type="Button" />
+                                        <ButtonSettings ContentType="TextAndImage" ImagePosition="ImageTop" PrefixIcon="e-icon e-ribbon e-undo" Click="executeAction" Type="Button" />
                                     </ej:ContentGroup>
                                     <ej:ContentGroup Id="redo" Text="Redo" ToolTip="Redo">
-                                        <ButtonSettings ContentType="TextAndImage" ImagePosition="ImageTop" PrefixIcon="e-ribbon e-redo" Click="executeAction" Type="Button" />
+                                        <ButtonSettings ContentType="TextAndImage" ImagePosition="ImageTop" PrefixIcon="e-icon e-ribbon e-redo" Click="executeAction" Type="Button" />
                                     </ej:ContentGroup>
                                 </ContentGroupCollection>
                             </ej:TabContent>
@@ -302,7 +302,7 @@ For each group shirked for resizing, Custom Class will be added based on group t
                                 <ContentDefaults Height="70" Width="80" Type="Button" />
                                 <ContentGroupCollection>
                                     <ej:ContentGroup Id="printlayout" Text="Print Layout" ToolTip="Print Layout">
-                                        <ButtonSettings Type="Button" ContentType="TextAndImage" ImagePosition="ImageTop" PrefixIcon="e-ribbon e-printlayout" />
+                                        <ButtonSettings Type="Button" ContentType="TextAndImage" ImagePosition="ImageTop" PrefixIcon="e-icon e-ribbon e-printlayout" />
                                     </ej:ContentGroup>
                                 </ContentGroupCollection>
                             </ej:TabContent>
@@ -346,9 +346,9 @@ For each group shirked for resizing, Custom Class will be added based on group t
 
      protected void Page_Load(object sender, EventArgs e)
         {
-            var fontlist = new List<string> { "Segoe UI", "Arial", "Times New Roman", "Tahoma", "Helvetica" };
+            var fontList = new List<string> { "Segoe UI", "Arial", "Times New Roman", "Tahoma", "Helvetica" };
             var fontsize = new List<string>() { "1pt", "2pt", "3pt", "4pt", "5pt" };
-            this.fontfamily.DropdownSettings.DataSource = fontlist;
+            this.fontFamily.DropdownSettings.DataSource = fontList;
             this.fontsize.DropdownSettings.DataSource = fontsize;
         }
 

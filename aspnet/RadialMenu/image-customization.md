@@ -17,7 +17,7 @@ You can add the page content with text-area by referring to this section.
 
 {% highlight html %}
 
-    <ej:RadialMenu ID="nestedradialmenu" runat="server" ImageClass="imageclass" BackImageClass="backimageclass" TargetElementId="radialtargettwo" ClientSideOnClick="click">
+    <ej:RadialMenu ID="nestedRadialMenu" runat="server" ImageClass="imageclass" BackImageClass="backimageclass" TargetElementId="radialTargetTwo" ClientSideOnClick="click">
                 <Items>
                     <ej:RadialMenuItems Text="Copy" ImageURL="asp.syncfusion.com/demos/web/Content/images/RadialMenu/copy.png">
                     </ej:RadialMenuItems>
@@ -68,13 +68,13 @@ Add the following script in your code.
 {% highlight javascript %}
 
             function radialShow(e) {
-            var target = $("#radialtargetone"), radialRadius = 150, radialDiameter = 2 * radialRadius,
+            var target = $("#radialTargetOne"), radialRadius = 150, radialDiameter = 2 * radialRadius,
                 // To get Iframe positions
                 iframeY = target.offset().top + e.event.clientY, iframeX = target.offset().left + e.event.clientX,
                 // To set Radial Menu position within target
                 x = iframeX > target.width() - radialRadius ? target.width() - radialDiameter : (iframeX > radialRadius ? iframeX - radialRadius : 0),
                 y = iframeY > target.height() - radialRadius ? target.height() - radialDiameter : (iframeY > radialRadius ? iframeY - radialRadius : 0);
-                $('#<%=nestedradialmenu.ClientID%>').ejRadialMenu("setPosition", x, y);
+                $('#<%=nestedRadialMenu.ClientID%>').ejRadialMenu("setPosition", x, y);
             }
         
 {% endhighlight %}

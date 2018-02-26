@@ -97,7 +97,7 @@ Next, you can add the below-mentioned dependency libraries to your web applicati
  
 To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
 
-N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]
+N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. And if you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
 * Microsoft.AnalysisServices.AdomdClient
 * Syncfusion.Compression.Base
@@ -106,6 +106,7 @@ N> If you have installed any version of SQL Server Analysis Service (SSAS) or Mi
 * Syncfusion.PivotAnalysis.Base
 * Syncfusion.EJ
 * Syncfusion.EJ.Web
+* Syncfusion.EJ.Export
 * Syncfusion.EJ.Pivot
 
 **List of namespaces**

@@ -2,7 +2,7 @@
 layout: post
 title: Server-side-event-arguments with Grid widget for Syncfusion Essential ASP.NET
 description: server side event arguments in asp grid
-platform: ejweb
+platform: aspnet
 control: Grid
 documentation: ug
 ---
@@ -42,11 +42,11 @@ It indicates the action performed in the grid.</td></tr>
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" OnServerAddRow="OrdersGrid_ServerAddRow">
 
-       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="True"></EditSettings>
+       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
 
        <Columns>                                   
 
-           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
@@ -114,11 +114,11 @@ It contains the details of the added, modified and deleted records.</td></tr>
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" OnServerBatchEditRow="OrdersGrid_ServerbatchEditRow"> 
 
-       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="True"></EditSettings>
+       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
 
        <Columns>                                   
 
-           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
@@ -190,11 +190,11 @@ It indicates the action performed in the grid.</td></tr>
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" OnServerDeleteRow="OrdersGrid_ServerDeleteRow"> 
 
-       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="True"></EditSettings>
+       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
 
        <Columns>                                   
 
-           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
@@ -204,7 +204,7 @@ It indicates the action performed in the grid.</td></tr>
 
        </Columns>
 
-       <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+       <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 
    </ej:Grid> 
 
@@ -266,11 +266,11 @@ It indicates the action performed in the grid.</td></tr>
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" OnServerEditRow="OrdersGrid_ServerEditRow"> 
 
-       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="True"></EditSettings>
+       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
 
        <Columns>                                   
 
-           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
@@ -280,7 +280,7 @@ It indicates the action performed in the grid.</td></tr>
 
        </Columns>
 
-       <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+       <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 
    </ej:Grid> 
 
@@ -346,11 +346,11 @@ It contains the model of the ejButton clicked.</td></tr>
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" OnServerCommandButtonClick="OrdersGrid_ServerCommandButtonClick"> 
 
-       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="True"></EditSettings>
+       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
 
        <Columns>                                   
 
-           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
@@ -378,7 +378,7 @@ It contains the model of the ejButton clicked.</td></tr>
 
        </Columns>
 
-       <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+       <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 
    </ej:Grid> 
 
@@ -440,11 +440,11 @@ It contains the JSON data of the selected record.</td></tr>
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" OnServerRecordClick="OrdersGrid_ServerRecordClick"> 
 
-       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="True"></EditSettings>
+       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
 
        <Columns>                                   
 
-           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
@@ -454,7 +454,7 @@ It contains the JSON data of the selected record.</td></tr>
 
        </Columns>
 
-       <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+       <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 
    </ej:Grid> 
 
@@ -516,11 +516,11 @@ It consists of the JSON data of the double clicked record.</td></tr>
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" OnServerRecordDoubleClick="OrdersGrid_ServerRecordDoubleClick"> 
 
-       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="True"></EditSettings>
+       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
 
        <Columns>                                   
 
-           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
@@ -530,7 +530,7 @@ It consists of the JSON data of the double clicked record.</td></tr>
 
        </Columns>
 
-       <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+       <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 
    </ej:Grid> 
 
@@ -596,11 +596,11 @@ It returns the previously selected row index.</td></tr>
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" OnServerRowSelected="OrdersGrid_ServerRowSelected"> 
 
-       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="True"></EditSettings>
+       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
 
        <Columns>                                   
 
-           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
@@ -610,7 +610,7 @@ It returns the previously selected row index.</td></tr>
 
        </Columns>
 
-       <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+       <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 
    </ej:Grid> 
 
@@ -692,11 +692,11 @@ It returns the toolbar model in a dictionary format.</td></tr>
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" OnServerToolBarClick="OrdersGrid_ServerToolBarClick"> 
 
-       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="True"></EditSettings>
+       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
 
        <Columns>                                   
 
-           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
@@ -706,7 +706,7 @@ It returns the toolbar model in a dictionary format.</td></tr>
 
        </Columns>
 
-       <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+       <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
 
    </ej:Grid> 
 
@@ -764,11 +764,11 @@ It returns the grid model details.</td></tr>
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" OnServerExcelExporting="OrdersGrid_ServerExcelExporting"> 
 
-       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="True"></EditSettings>
+       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
 
        <Columns>                                   
 
-           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
@@ -778,7 +778,7 @@ It returns the grid model details.</td></tr>
 
        </Columns>
 
-       <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel,excelExport,wordExport,pdfExport "></ToolbarSettings>
+       <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel,excelExport,wordExport,pdfExport "></ToolbarSettings>
 
    </ej:Grid> 
 
@@ -838,11 +838,11 @@ object of type IRange class from Syncfusion.XlsIO which returns the properties o
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" OnServerExcelQueryCellInfo="OrdersGrid_ServerExcelQueryCellInfo" OnServerExcelExporting="OrdersGrid_ServerExcelExporting"> 
 
-       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="True"></EditSettings>
+       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
 
        <Columns>                                   
 
-           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
@@ -852,7 +852,7 @@ object of type IRange class from Syncfusion.XlsIO which returns the properties o
 
        </Columns>
 
-       <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel,excelExport,wordExport,pdfExport "></ToolbarSettings>
+       <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel,excelExport,wordExport,pdfExport "></ToolbarSettings>
 
    </ej:Grid> 
 
@@ -923,11 +923,11 @@ object of type IRange class from Syncfusion.XlsIO which returns the properties o
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" OnServerExcelRowInfo="OrdersGrid_ServerExcelRowInfo" OnServerExcelExporting="OrdersGrid_ServerExcelExporting"> 
 
-       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="True"></EditSettings>
+       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
 
        <Columns>                                   
 
-           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
@@ -937,7 +937,7 @@ object of type IRange class from Syncfusion.XlsIO which returns the properties o
 
        </Columns>
 
-       <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel,excelExport,wordExport,pdfExport "></ToolbarSettings>
+       <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel,excelExport,wordExport,pdfExport "></ToolbarSettings>
 
    </ej:Grid> 
 
@@ -1009,11 +1009,11 @@ It returns the grid model details</td></tr>
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" OnServerPdfExporting="OrdersGrid_ServerPdfExporting"> 
 
-       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="True"></EditSettings>
+       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
 
        <Columns>                                   
 
-           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
@@ -1023,7 +1023,7 @@ It returns the grid model details</td></tr>
 
        </Columns>
 
-       <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel,excelExport,wordExport,pdfExport "></ToolbarSettings>
+       <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel,excelExport,wordExport,pdfExport "></ToolbarSettings>
 
    </ej:Grid> 
 
@@ -1083,11 +1083,11 @@ object of type PdfGridCell that returns the various properties of the PdfGridCel
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" OnServerPdfQueryCellInfo="OrdersGrid_ServerPdfQueryCellInfo" OnServerPdfExporting="OrdersGrid_ServerPdfExporting"> 
 
-       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="True"></EditSettings>
+       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
 
        <Columns>                                   
 
-           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
@@ -1097,7 +1097,7 @@ object of type PdfGridCell that returns the various properties of the PdfGridCel
 
        </Columns>
 
-       <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel,excelExport,wordExport,pdfExport "></ToolbarSettings>
+       <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel,excelExport,wordExport,pdfExport "></ToolbarSettings>
 
    </ej:Grid> 
 
@@ -1169,11 +1169,11 @@ object of type PdfGridRow that returns the various properties of the PdfGridRow 
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" OnServerPdfRowInfo="OrdersGrid_ServerPdfRowInfo" OnServerPdfExporting="OrdersGrid_ServerPdfExporting"> 
 
-       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="True"></EditSettings>
+       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
 
        <Columns>                                   
 
-           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
@@ -1183,7 +1183,7 @@ object of type PdfGridRow that returns the various properties of the PdfGridRow 
 
        </Columns>
 
-       <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel,excelExport,wordExport,pdfExport "></ToolbarSettings>
+       <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel,excelExport,wordExport,pdfExport "></ToolbarSettings>
 
    </ej:Grid> 
 
@@ -1253,11 +1253,11 @@ It returns the grid model details.</td></tr>
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" OnServerWordExporting="OrdersGrid_ServerWordExporting"> 
 
-       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="True"></EditSettings>
+       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
 
        <Columns>                                   
 
-           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
@@ -1267,7 +1267,7 @@ It returns the grid model details.</td></tr>
 
        </Columns>
 
-       <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel,excelExport,wordExport,pdfExport "></ToolbarSettings>
+       <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel,excelExport,wordExport,pdfExport "></ToolbarSettings>
 
    </ej:Grid> 
 
@@ -1327,11 +1327,11 @@ Object of type WTableCell that returns the properties of the WTableCell Class of
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" OnServerWordQueryCellInfo="OrdersGrid_ServerWordQueryCellInfo" OnServerWordExporting="OrdersGrid_ServerWordExporting"> 
 
-       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="True"></EditSettings>
+       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
 
        <Columns>                                   
 
-           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
@@ -1341,7 +1341,7 @@ Object of type WTableCell that returns the properties of the WTableCell Class of
 
        </Columns>
 
-       <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel,excelExport,wordExport,pdfExport "></ToolbarSettings>
+       <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel,excelExport,wordExport,pdfExport "></ToolbarSettings>
 
    </ej:Grid> 
 
@@ -1411,11 +1411,11 @@ Object of type WTableRow that returns the properties corresponding to the WTable
 
 <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" OnServerWordRowInfo="OrdersGrid_ServerWordRowInfo" OnServerWordExporting="OrdersGrid_ServerWordExporting"> 
 
-       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="True"></EditSettings>
+       <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
 
        <Columns>                                   
 
-           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+           <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
 
            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="75" />
 
@@ -1425,7 +1425,7 @@ Object of type WTableRow that returns the properties corresponding to the WTable
 
        </Columns>
 
-       <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel,excelExport,wordExport,pdfExport "></ToolbarSettings>
+       <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel,excelExport,wordExport,pdfExport "></ToolbarSettings>
 
    </ej:Grid> 
 

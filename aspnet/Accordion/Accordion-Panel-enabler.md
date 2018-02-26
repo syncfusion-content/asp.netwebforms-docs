@@ -29,7 +29,7 @@ You can enable or disable the Accordion control on initial rendering by using th
 
                 <ContentSection>
 
-                     Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe. 
+                     Orubase is the only mobile application development Framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame. 
 
                 </ContentSection>
 
@@ -39,7 +39,7 @@ You can enable or disable the Accordion control on initial rendering by using th
 
                 <ContentSection>
 
-                    Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, pdf viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+                    Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
 
                 </ContentSection>
 
@@ -99,7 +99,7 @@ In an ASPX page, define a &lt;div&gt; element that is a container for Accordi
 
             <contentsection>
 
-                Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe. 
+                Orubase is the only mobile application development Framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame. 
 
             </contentsection>
 
@@ -109,7 +109,7 @@ In an ASPX page, define a &lt;div&gt; element that is a container for Accordi
 
             <contentsection>
 
-                Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, pdf viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+                Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
 
             </contentsection>
 
@@ -143,13 +143,13 @@ protected void Page_Load(object sender, EventArgs e)
 
         {
 
-            List<int> enableditem = new List<int>() { 1, 2 };
+            List<int> enabledItem = new List<int>() { 1, 2 };
 
-            List<int> disableditem = new List<int>() { 0 };
+            List<int> disabledItem = new List<int>() { 0 };
 
-            this.BasicAccordion.EnabledItems = enableditem;
+            this.BasicAccordion.EnabledItems = enabledItem;
 
-            this.BasicAccordion.DisableItems = disableditem;
+            this.BasicAccordion.DisableItems = disabledItem;
 
         }
 
@@ -191,7 +191,7 @@ In an ASPX page, define a &lt;div&gt; element that is a container for Accordi
 
             <contentsection>
 
-                Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe. 
+                Orubase is the only mobile application development Framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame. 
 
             </contentsection>
 
@@ -201,7 +201,7 @@ In an ASPX page, define a &lt;div&gt; element that is a container for Accordi
 
             <contentsection>
 
-                Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, pdf viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+                Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, PDF viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
 
             </contentsection>
 

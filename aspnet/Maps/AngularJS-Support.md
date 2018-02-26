@@ -23,11 +23,11 @@ Apply the plugin and property assigning the Map element through the directive 
 
    <div ng-controller="MapController"> 
 
-       <div id="AngularMap" style="width:700px;height:400px" ej-map e-zoomsettings-enablezoom="nenablezoom">
+       <div id="AngularMap" style="width:700px;height:400px" ej-map e-zoomsettings-enablezoom="enableZoom">
 
           <div e-layers>
 
-              <div e-layer e-shapedata="nshapedata" e-shapesettings-fill="nfill" e-shapesettings-strokethickness="nstrokethickness" e-shapesettings-stroke="nstroke" >
+              <div e-layer e-shapedata="shapeData" e-shapesettings-fill="nfill" e-shapesettings-strokethickness="strokeThickness" e-shapesettings-stroke="stroke" >
 
               </div>
 
@@ -37,7 +37,7 @@ Apply the plugin and property assigning the Map element through the directive 
 
        <div>
 
-           Shape Color:  <input type="text" id="Text11" ng-model="nfill" style="width: 110px">
+           Shape Color:  <input type="text" id="Text11" ng-model="fill" style="width: 110px">
 
        </div>  
 
@@ -47,15 +47,15 @@ Apply the plugin and property assigning the Map element through the directive 
 
                .controller('MapController', function ($scope) {                  
 
-                   $scope.nenablezoom = true,                                    
+                   $scope.enableZoom = true,                                    
 
-                   $scope.nshapedata = world_map;            
+                   $scope.shapeData = world_map;            
 
-                   $scope.nfill = "#4E7EC4";
+                   $scope.fill = "#4E7EC4";
 
-                   $scope.nstrokethickness = "0.5";
+                   $scope.strokeThickness = "0.5";
 
-                   $scope.nstroke = "white";                               
+                   $scope.stroke = "white";                               
 
                });    
 

@@ -75,6 +75,90 @@ Unassigned
 </td><td>
 Unassigned
 </td></tr>
+<tr>
+<td>
+AddCard
+</td><td>
+Add Card
+</td></tr>
+<tr>
+<td>
+EditCard
+</td><td>
+Edit Card
+</td></tr>
+<tr>
+<td>
+DeleteCard
+</td><td>
+Delete Card
+</td></tr>
+<tr>
+<td>
+TopofRow
+</td><td>
+Top of Row
+</td></tr>
+<tr>
+<td>
+BottomofRow
+</td><td>
+Bottom of Row
+</td></tr>
+<tr>
+<td>
+MoveUp
+</td><td>
+Move Up
+</td></tr>
+<tr>
+<td>
+MoveDown
+</td><td>
+Move Down
+</td></tr>
+<tr>
+<td>
+MoveLeft
+</td><td>
+Move Left
+</td></tr>
+<tr>
+<td>
+MoveRight
+</td><td>
+Move Right
+</td></tr>
+<tr>
+<td>
+MovetoSwimlane
+</td><td>
+Move to Swimlane
+</td></tr>
+<tr>
+<td>
+HideColumn
+</td><td>
+Hide Column
+</td></tr>
+<tr>
+<td>
+VisibleColumns
+</td><td>
+Visible Columns
+</td></tr>
+<tr>
+<td>
+PrintCard
+</td><td>
+Print Card
+</td></tr>
+<tr>
+<td>
+Search
+</td><td>
+Search
+</td></tr>
 </table>
 
 The following code example describes the above behavior. 
@@ -201,7 +285,7 @@ The following code example describes the above behavior.
           List<Tasks> Task = new List<Tasks>();  
           protected void Page_Load(object sender, EventArgs e)
           {
-            Task.Add(new Tasks(1, "Open", "تحليل المتطلبات الجديدة التي تم جمعها من العملاء.", "قصة", "منخفض", " تحليل, زبون", 3.5, "Davloio  نانسي", "../content/images/kanban/1.png", 1));
+            Task.Add(new Tasks(1, "Open", "تحليل المتطلبات الجديدة التي تم جمعها من العملاء.", "قصة", "منخفض", " تحليل, زبون", 3.5, "Davolio  نانسي", "../content/images/kanban/1.png", 1));
             Task.Add(new Tasks(2, "InProgress", "تحسين أداء التطبيقات.", " تحسين", "عادي", " تحسين", 6, " أندرو فولر", "../content/images/kanban/2.png", 1));
             Task.Add(new Tasks(3, "Open", " ترتيب لقاء على شبكة الإنترنت مع العملاء للحصول على المتطلبات الجديدة.", "آخرون", "حرج", "لقاء", 5.5, "جانيت Leverling", "../content/images/kanban/3.png", 2));
             Task.Add(new Tasks(4, "في تَقَدم", "إصلاح المشكلات التي أعلن عنها في متصفح إنترنت إكسبلورر.", "بق", "قواطع الإفراج", "أي", 2.5, "جانيت Leverling", "../content/images/kanban/3.png", 4));
@@ -209,13 +293,13 @@ The following code example describes the above behavior.
             Task.Add(new Tasks(6, "Close", " ترتيب شبكة لقاء مع زبون للحصول على صفحة تسجيل الدخول المتطلبات.", "آخرون", "منخفض", "لقاء", 2, "مايكل أسعد", "../content/images/kanban/6.png", 1));
             Task.Add(new Tasks(7, "Validate", " تحقق المتطلبات الجديدة تحقق المتطلبات الجديدة", " تحسين", "منخفض", " التحقق من صحة", 1.5, "روبرت الملك", "../content/images/kanban/7.png", 5));
             Task.Add(new Tasks(8, "Close", " التحقق من صحة الصفحة الدخول", " قصة", " قواطع الإفراج", " التحقق من صحة,حل", 2.5, "لورا كالاهان", "../content/images/kanban/8.png", 2));
-            Task.Add(new Tasks(9, "Testing", "إصلاح المشكلات التي أعلن عنها في متصفح سفاري.", "بق", "قواطع الإفراج", "حل, رحلات السفاري", 1.5, "Davloio  نانسي", "../content/images/kanban/1.png", 2));
-            Task.Add(new Tasks(10, "Close", "Test the application in the أي browser.", " قصة", "منخفض", "تجريب,أي", 5.5, " مارغريت hamilt", "../content/images/kanban/4.png", 3));
+            Task.Add(new Tasks(9, "Testing", "إصلاح المشكلات التي أعلن عنها في متصفح سفاري.", "بق", "قواطع الإفراج", "حل, رحلات السفاري", 1.5, "Davolio  نانسي", "../content/images/kanban/1.png", 2));
+            Task.Add(new Tasks(10, "Close", "Test the application in the أي browser.", " قصة", "منخفض", "تجريب,أي", 5.5, " مارغريت Hamilton", "../content/images/kanban/4.png", 3));
             Task.Add(new Tasks(11, "Validate", "التحقق من صحة the issues reported by the  زبون.", " قصة", "عالي", " التحقق من صحة,حل", 1, "ستيفن ووكر", "../content/images/kanban/5.png", 6));
             Task.Add(new Tasks(12, "Testing", "Check Login page  التحقق من صحة.", " قصة", "قواطع الإفراج", "تجريب", 0.5, "مايكل أسعد", "../content/images/kanban/6.png", 3));
             Task.Add(new Tasks(13, "Open", " تحسينات API.", " تحسين", "عالي", "شبكة,API", 3.5, " روبرت الملك", "../content/images/kanban/7.png", 3));
             Task.Add(new Tasks(14, "InProgress", " إضافة دعم استجابة لطلب.", "الملحمي", "حرج", "Responsive", 6, "لورا كالاهان", "../content/images/kanban/8.png", 2));
-            Task.Add(new Tasks(15, "Open", " عرض البيانات التي تم استردادها من الملقم في مراقبة الشبكة.", " قصة", "عالي", " قاعدة البيانات,SQL", 5.5, " مارغريت hamilt", "../content/images/kanban/4.png", 4));
+            Task.Add(new Tasks(15, "Open", " عرض البيانات التي تم استردادها من الملقم في مراقبة الشبكة.", " قصة", "عالي", " قاعدة البيانات,SQL", 5.5, " مارغريت Hamilton", "../content/images/kanban/4.png", 4));
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
         }

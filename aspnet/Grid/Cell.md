@@ -22,7 +22,7 @@ Three types of `WrapMode` are available and they are,
  
 N> 1. By default the `WrapMode` will be set as `Both`. 
 
-N> 2. While using `TextWrapSettings` then it is must to set `AllowTextWrap` as `True`.
+N> 2. While using `TextWrapSettings` then it is must to set `AllowTextWrap` as `true`.
  
 ## Both
 
@@ -35,7 +35,7 @@ The following code example describes the above behavior.
 {% highlight html %}
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True"  AllowTextWrap="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true"  AllowTextWrap="true">
       <TextWrapSettings WrapMode="Both" />
         <Columns>
                 <ej:Column Field="OrderID"   Width="90" />
@@ -57,7 +57,7 @@ The following code example describes the above behavior.
         {
         protected void Page_Load(object sender, EventArgs e)
             {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -83,7 +83,7 @@ The following code example describes the above behavior.
 {% highlight html %}
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True"  AllowTextWrap="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true"  AllowTextWrap="true">
       <TextWrapSettings WrapMode="Header" />
         <Columns>
                 <ej:Column Field="OrderID"   Width="90" />
@@ -105,7 +105,7 @@ The following code example describes the above behavior.
         {
         protected void Page_Load(object sender, EventArgs e)
             {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -131,7 +131,7 @@ The following code example describes the above behavior.
 {% highlight html %}
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True"  AllowTextWrap="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true"  AllowTextWrap="true">
       <TextWrapSettings WrapMode="Content" />
         <Columns>
                 <ej:Column Field="OrderID"   Width="90" />
@@ -153,7 +153,7 @@ The following code example describes the above behavior.
         {
         protected void Page_Load(object sender, EventArgs e)
             {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -170,16 +170,21 @@ The following output is displayed as a result of the above code example.
 
 ## Cell Merging
 
-The Grid has options to merge the Grid cells based on the required conditions. This can be enabled by setting `AllowCellMerging` property as `True` and the merge conditions can be defined in `MergeCellInfo` event. In this event, you can get the column details and data of that particular row and column which is helpful in defining conditions. 
+The Grid has options to merge the Grid cells based on the required conditions. This can be enabled by setting `AllowCellMerging` property as `true` and the merge conditions can be defined in `MergeCellInfo` event. In this event, you can get the column details and data of that particular row and column which is helpful in defining conditions. 
 
 You can merge the rows and cells of grid, using `rowMerge`, `colMerge` and `merge` functions available in `MergeCellInfo` event's argument.
+
+N> The following features are not supported with Cell Merging
+N> 1. Normal Mode Editing
+N> 2. Inline Mode Editing
+N> 3. Inline TemplateForm Mode Editing
 
 The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True" AllowCellMerging="true">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" AllowCellMerging="true">
         <ClientSideEvents MergeCellInfo="mergeCellInfo" />
         <Columns>
             <ej:Column Field="OrderID" />
@@ -194,11 +199,11 @@ The following code example describes the above behavior.
 {% highlight js %}
     <script type="text/javascript">
         function mergeCellInfo(args) {
-            if (args.column.field == "EmployeeID" && args.data.OrderID == 10261)
+            if (args.column.field == "EmployeeID" && args.rowData.OrderID == 10261)
                 args.rowMerge(3);
-            else if (args.column.field == "ShipCity" && args.data.OrderID == 10265)
+            else if (args.column.field == "ShipCity" && args.rowData.OrderID == 10265)
                 args.colMerge(3);
-            else if (args.column.field == "ShipCity" && args.data.OrderID == 10268)
+            else if (args.column.field == "ShipCity" && args.rowData.OrderID == 10268)
                 args.merge(0, 3);
         }
     </script>
@@ -210,7 +215,7 @@ namespace WebSampleBrowser.Grid
     {
          protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -228,7 +233,7 @@ The following output is displayed as a result of the above code example.
 
 You can add `Custom attribute` for particular column `td` element by using `CustomAttributes` property of the column.
 
-Based on custom attribute you can customize the style and appearance of the `td` element or handling jQuery functionalities. 
+Based on custom attribute you can customize the style and appearance of the `td` element for particular column or handling jQuery functionalities. 
 
 You can use JsRender syntax in the template.For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "the link").
 
@@ -237,13 +242,13 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="OrderID" />
             <ej:Column Field="CustomerID" />
             <ej:Column Field="EmployeeID" HeaderText="Employee Name">
                 <CustomAttribute>
-                    <ej:KeyValue Key="employeeid" Value="''" />
+                    <ej:KeyValue Key="employeeid" Value="5" />
                 </CustomAttribute>
             </ej:Column>
             <ej:Column Field="ShipCity" />
@@ -253,7 +258,8 @@ The following code example describes the above behavior.
 </asp:Content>
 {% endhighlight  %}
 {% highlight css %}
-  .e-rowcell[employeeid = "5"] {
+    <style>
+        .e-rowcell[employeeid = "5"] {
             color: red;
         }	
     </style>
@@ -265,7 +271,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -287,10 +293,10 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="OrderID" />
-            <ej:Column Field="CustomerID" HeaderText="<div>Cust ID</div>" disableHtmlEncode="true"/>
+            <ej:Column Field="CustomerID" HeaderText="<div>Customer ID</div>" disableHtmlEncode="true"/>
             <ej:Column Field="EmployeeID" HeaderText="<div>Employee ID</div>" disableHtmlEncode="false"/>
             <ej:Column Field="ShipCountry" />
         </Columns>
@@ -304,7 +310,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -333,7 +339,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="OrderID" />
             <ej:Column Field="EmployeeID" />
@@ -355,7 +361,7 @@ namespace WebSampleBrowser.Grid
     {
        protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -390,7 +396,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
      <Columns>
             <ej:Column Field="OrderID" />
             <ej:Column Field="ShipCity" />
@@ -407,7 +413,7 @@ namespace WebSampleBrowser.Grid
     {
        protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -429,7 +435,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
      <Columns>
             <ej:Column Field="OrderID" />
             <ej:Column Field="ShipCity" />
@@ -446,7 +452,7 @@ namespace WebSampleBrowser.Grid
     {
        protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -471,7 +477,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
      <Columns>
             <ej:Column Field="OrderID" />
             <ej:Column Field="ShipCity" />
@@ -493,7 +499,7 @@ namespace WebSampleBrowser.Grid
     {
        protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }

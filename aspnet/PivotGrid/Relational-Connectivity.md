@@ -51,6 +51,8 @@ Next, you can add the below-mentioned dependency libraries to your web applicati
  
 To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
+N> If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
+
 * Syncfusion.Compression.Base
 * Syncfusion.Linq.Base
 * Syncfusion.Olap.Base

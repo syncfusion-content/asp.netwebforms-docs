@@ -29,7 +29,7 @@ Set `EnableOnDemand` as true to enable load tab and backstage contents dynamical
                             <div class="e-accuser e-newpageicon"></div>
                             <div class="e-userCon">
                                 <div>user</div>
-                                <div>xyz@syncfusion.com</div>
+                                <div>any@syncfusion.com</div>
                             </div>
                         </div>
                     </div>
@@ -105,7 +105,7 @@ Set `EnableOnDemand` as true to enable load tab and backstage contents dynamical
               width: 225,
               contentType: "textandimage",
               imagePosition: "imagetop",
-              prefixIcon: "e-blank e-infopageicon"
+              prefixIcon: "e-icon e-blank e-infopageicon"
            });
      </script>
     
@@ -164,7 +164,7 @@ While using initially collapsible ribbon with `EnableOnDemand` feature improves 
                             <div class="e-accuser e-newpageicon"></div>
                             <div class="e-userCon">
                                 <div>user</div>
-                                <div>xyz@syncfusion.com</div>
+                                <div>any@syncfusion.com</div>
                             </div>
                         </div>
                     </div>
@@ -240,7 +240,7 @@ While using initially collapsible ribbon with `EnableOnDemand` feature improves 
               width: 225,
               contentType: "textandimage",
               imagePosition: "imagetop",
-              prefixIcon: "e-blank e-infopageicon"
+              prefixIcon: "e-icon e-blank e-infopageicon"
            });
      </script>
     

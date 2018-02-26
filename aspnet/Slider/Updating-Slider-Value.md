@@ -81,3 +81,26 @@ The following screenshot displays the output of the above code example.
 In the above example, for Default Slider, the slider value starts from 40 (min value) and ends at 80 (max value). So, the Slider handle is placed at the center of the Slider while specifying the value as 60.
 
 For Range Slider, the value starts from 10 (min value) and ends at 90 (max value). The range shadow occupies the entire Slider, since the range (values) is specified as [10, 90].
+
+## Buttons
+
+Slider includes the button support for increment or decrement the values of the slider.
+
+### Enabling Buttons
+
+Use the ShowButtons property to enable the button support. By default this property is disabled. Data type of this property is “Boolean”.
+
+The following steps explains you on how to enable button support in Slider.
+
+In an ASPX page, define the Slider control and set the ShowButtons property to true.
+
+{% highlight html %}
+
+  <ej:Slider ID="RangeSlider" runat="server" Width="500" Values="30,60" SliderType="Range" ShowButtons="true"></ej:Slider>
+
+{% endhighlight %}
+
+
+The following screenshot displays the output of the above code example.
+
+![](Button-Support_images/Button-Support_img1.png)

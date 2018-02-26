@@ -22,7 +22,7 @@ The following code example shows auto-generate columns behavior.
 {% tabs %}
 {% highlight html %}
   	<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-       <ej:Grid id="FlatGrid"  runat="server"  AllowPaging="True">
+       <ej:Grid id="FlatGrid"  runat="server"  AllowPaging="true">
        </ej:Grid>
      </asp:Content>          
 {% endhighlight  %}
@@ -87,16 +87,16 @@ The following output is displayed as a result of the above code example.
 
 ### How to set isPrimaryKey for auto generated columns when editing is enabled:
 
-Using `DataBound` event, you can set `IsPrimaryKey` value as `True` by two ways. The following code example demonstrates the above behavior.
+Using `DataBound` event, you can set `IsPrimaryKey` value as `true` by two ways. The following code example demonstrates the above behavior.
 
 1. If primary key "column index" is known then refer the following code example
 
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True" >
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" >
        <ClientSideEvents Databound="dataBound" />
-       <EditSettings AllowEditing="True"></EditSettings>
+       <EditSettings AllowEditing="true"></EditSettings>
     </ej:Grid>
 </asp:Content>
 {% endhighlight  %}
@@ -119,7 +119,7 @@ namespace WebSampleBrowser.Grid
     {
          protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -132,9 +132,9 @@ namespace WebSampleBrowser.Grid
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True" >
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" >
        <ClientSideEvents Databound="dataBound" />
-        <EditSettings AllowEditing="True"></EditSettings>
+        <EditSettings AllowEditing="true"></EditSettings>
     </ej:Grid>
 </asp:Content>
 {% endhighlight  %}
@@ -155,7 +155,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }   
@@ -177,7 +177,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="OrderID" HeaderText="Order ID" />
             <ej:Column Field="EmployeeID" HeaderText="Emp ID" />
@@ -195,7 +195,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -222,7 +222,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="OrderID" HeaderText="Order ID" />
             <ej:Column Field="EmployeeID" HeaderText="Emp ID"  HeaderTextAlign = "Right" />
@@ -240,7 +240,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -267,7 +267,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="OrderID" HeaderText="Order ID" />
             <ej:Column Field="EmployeeID" HeaderText="Emp ID" HeaderTemplateID="#empTemplate" />
@@ -291,7 +291,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -321,7 +321,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="OrderID" TextAlign="Right" />
             <ej:Column Field="EmployeeID" TextAlign="Right" />
@@ -339,7 +339,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -364,7 +364,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="OrderID" />
             <ej:Column Field="EmployeeID" />
@@ -382,7 +382,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -405,7 +405,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="OrderID" Width="10%" />
             <ej:Column Field="EmployeeID" Width="15%" />
@@ -423,7 +423,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -437,6 +437,81 @@ The following output is displayed as a result of the above code example.
 ![](Columns_images/Columns_img7.png)
 
 
+## Resizing
+
+
+The `AllowResizing` property enables the grid to set the width to columns based on resizing the grid column manually.
+
+
+### Resizing modes
+
+
+`ResizeMode` property of `ResizeSettings` is used to change the resizing modes. It indicates whether to define mode of resizing.
+
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Normal</td>
+<td class="description">New column size will be adjusted by all other Columns</td>
+</tr>
+<tr>
+<td class="name">NextColumn</td>
+<td class="description">New column Size will be adjusted using next column.</td>
+</tr>
+<tr>
+<td class="name">Control</td>
+<td class="description">New column Size will be adjusted using entire control</td>
+</tr>
+</table>
+
+
+The following code example describes the above behavior.
+
+
+{% tabs %}
+{% highlight html %}
+
+
+<asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+<ej:Grid ID="Grid" runat="server" ClientIDMode="Static" AllowPaging="true" AllowResizing="true"> 
+        <ResizeSettings ResizeMode="NextColumn"></ResizeSettings>
+        <Columns>
+            <ej:Column Field="ShipCity" HeaderText="Ship City" Width="80"/>
+            <ej:Column Field="ShipPostalCode" HeaderText="Ship Postal Code" Width="40"/>
+            <ej:Column Field="ShipName" HeaderText="Ship Name" Width="40"/>
+            <ej:Column Field="ShipAddress" HeaderText="Ship Address" Width="100" />
+        </Columns>
+        <ClientSideEvents TemplateRefresh="refresh" />
+    </ej:Grid>
+</asp:Content>
+
+
+{% endhighlight  %}
+{% highlight c# %}
+
+
+namespace WebSampleBrowser.Grid
+{
+    public partial class _Default : Page
+    {
+        List<Orders> order = new List<Orders>();
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            this.Grid.DataSource = order;
+            this.Grid.DataBind();
+        }
+    }
+}
+
+
+{% endhighlight  %}
+{% endtabs %} 
+
+
 ## Resize to fit 
 
 The `AllowResizeToFit` property enable the Grid to set width to columns based on maximum width of the particular column's content to facilitate full visibility of data in all the grid rows. This automatic behavior is applicable only for the columns which does not have width specified. 
@@ -448,7 +523,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True" AllowResizeToFit="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" AllowResizeToFit="true">
         <Columns>
             <ej:Column Field="OrderID" Width="100" />
             <ej:Column Field="EmployeeID" />
@@ -466,7 +541,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -481,7 +556,7 @@ The following output is displayed as a result of the above code example.
 
 ## Reorder
 
-Reordering can be done by drag and drop the particular column header from one index to another index within the Grid. Reordering can be enabled by setting `AllowReordering` property as `True`.
+Reordering can be done by drag and drop the particular column header from one index to another index within the Grid. Reordering can be enabled by setting `AllowReordering` property as `true`.
 
 The following code example describes the above behavior.
 
@@ -489,7 +564,7 @@ The following code example describes the above behavior.
 {% highlight html %}
 </asp:Content>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True"  AllowReordering="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true"  AllowReordering="true">
         <Columns>
             <ej:Column Field="OrderID" />
             <ej:Column Field="EmployeeID"  />
@@ -507,7 +582,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -523,17 +598,17 @@ The following output is displayed as a result of the above code example.
 
 ## Visibility
 
-You can hide particular column in Grid view by setting `Visible` property of it as `False`.
+You can hide particular column in Grid view by setting `Visible` property of it as `false`.
 
 The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="EmployeeID" />
-            <ej:Column Field="OrderID" Visible="False" />
+            <ej:Column Field="OrderID" Visible="false" />
             <ej:Column Field="Freight" />
             <ej:Column Field="ShipCity" />
             <ej:Column Field="ShipCountry" />
@@ -548,7 +623,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -573,21 +648,21 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <EditSettings AllowDeleting="True"></EditSettings>
         <Columns>
-            <ej:Column Field="OrderID" IsPrimaryKey="True" />
+            <ej:Column Field="OrderID" IsPrimaryKey="true" />
             <ej:Column Field="CustomerID" />
             <ej:Column Field="EmployeeID" />
             <ej:Column Field="Freight" />
-            <ej:Column HeaderText="" Format="<a onclick = clk(this) href=#>Delete</a>" />
+            <ej:Column HeaderText="" Format="<a onclick = click(this) href=#>Delete</a>" />
         </Columns>
     </ej:Grid>
 </asp:Content>
 {% endhighlight  %}
 {% highlight js %}	
     <script type="text/javascript">
-        function clk(e) {
+        function click(e) {
             var obj = $("#MainContent_FlatGrid").data("ejGrid");
             obj.deleteRecord("OrderID", obj.getSelectedRecords()[0]);
         }
@@ -600,7 +675,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -627,7 +702,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <PageSettings PageSize="4"></PageSettings>
         <Columns>
             <ej:Column HeaderText="Photo" Template="<img style='width: 75px; height: 70px' src='/13.2.0.29/themes/web/images/employees/{{:EmployeeID}}.png' alt='{{:EmployeeID}}.png' />" TextAlign="Center" />
@@ -700,11 +775,11 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True" AllowFiltering="true" AllowGrouping="true" AllowSorting="true" AllowResizing="true">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" AllowFiltering="true" AllowGrouping="true" AllowSorting="true" AllowResizing="true">
         <EditSettings AllowEditing="True"></EditSettings>
         <Columns>
-            <ej:Column Field="OrderID" IsPrimaryKey="True" />
-            <ej:Column Field="EmployeeID" AllowEditing="True" AllowGrouping="true" AllowFiltering="true" AllowSorting="true" AllowResizing="true" />
+            <ej:Column Field="OrderID" IsPrimaryKey="true" />
+            <ej:Column Field="EmployeeID" AllowEditing="true" AllowGrouping="true" AllowFiltering="true" AllowSorting="true" AllowResizing="true" />
             <ej:Column Field="Freight" />
             <ej:Column Field="ShipCity" />
             <ej:Column Field="ShipCountry" />
@@ -719,7 +794,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -730,18 +805,18 @@ namespace WebSampleBrowser.Grid
 
 ## Read only
 
-To make a column as "read-only" then set `AllowEditing` property of `Columns` as `False`.
+To make a column as "read-only" then set `AllowEditing` property of `Columns` as `false`.
 
 The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <EditSettings AllowEditing="True"></EditSettings>
         <Columns>
-            <ej:Column Field="OrderID" IsPrimaryKey="True" />
-            <ej:Column Field="EmployeeID" AllowEditing="False" />
+            <ej:Column Field="OrderID" IsPrimaryKey="true" />
+            <ej:Column Field="EmployeeID" AllowEditing="false" />
             <ej:Column Field="Freight" />
             <ej:Column Field="ShipCity" />
             <ej:Column Field="ShipCountry" />
@@ -756,7 +831,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -783,8 +858,8 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
-        <EditSettings AllowEditing="True"></EditSettings>
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
+        <EditSettings AllowEditing="true"></EditSettings>
         <Columns>
             <ej:Column Field="FoodName" />
             <ej:Column Field="Protein" />
@@ -823,9 +898,9 @@ namespace WebSampleBrowser.Grid
             {
 
             }
-            public Orders(string foodname, int protein, int fat, int carbohydrate)
+            public Orders(string name, int protein, int fat, int carbohydrate)
             {
-                this.FoodName = foodname;
+                this.FoodName = name;
                 this.Protein = protein;
                 this.Fat = fat;
                 this.Carbohydrate = carbohydrate;
@@ -863,10 +938,10 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
-        <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"></EditSettings>
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
+        <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
         <Columns>
-            <ej:Column Field="OrderID" IsPrimaryKey="True" />
+            <ej:Column Field="OrderID" IsPrimaryKey="true" />
             <ej:Column Field="EmployeeID" />
             <ej:Column Field="Freight" />
             <ej:Column Field="ShipCountry" />
@@ -897,7 +972,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -921,8 +996,8 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
-        <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"></EditSettings>
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
+        <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
         <Columns>
             <ej:Column Field="EmployeeID" />
             <ej:Column HeaderText="Employee Details" Width="130" TextAlign="Center">
@@ -953,7 +1028,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -968,16 +1043,16 @@ The following output is displayed as a result of the above code example.
 
 ## Column Chooser
 
-Column chooser contains the list of all the columns which are defined in the `Columns` property. Using this you can control the visibility of columns in Grid. You can prevent to show the particular column name in column chooser by setting `ShowInColumnChooser` property of `Columns` as `False`. 
+Column chooser contains the list of all the columns which are defined in the `Columns` property. Using this you can control the visibility of columns in Grid. You can prevent to show the particular column name in column chooser by setting `ShowInColumnChooser` property of `Columns` as `false`. 
 
-Column Chooser would be shown in the top right corner of Grid. To enable column chooser, set `ShowColumnChooser` property as `True`. 
+Column Chooser would be shown in the top right corner of Grid. To enable column chooser, set `ShowColumnChooser` property as `true`. 
 
 The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True" ShowColumnChooser="true">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" ShowColumnChooser="true">
         <Columns>
             <ej:Column Field="OrderID" HeaderText="Order ID" />
             <ej:Column Field="EmployeeID" HeaderText="Employee Name" ShowInColumnChooser="false" />
@@ -995,7 +1070,7 @@ namespace WebSampleBrowser.Grid
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -1015,7 +1090,7 @@ Lookup data source can be bound to `DataSource` property of `Columns`. Data `Fie
 
 In the `DataSource` property, we can bound local and remote data. 
 
-I> For foreign key column the sorting and grouping is based on `ForeignKeyField` instead of `ForeignKeyValue`.
+I> For foreign key column the sorting and grouping is based on `ForeignKeyField` instead of `ForeignKeyValue`. You can refer [Foreign Key Adaptor](https://help.syncfusion.com/aspnet/grid/data-adaptors#foreign-key-adaptor) to sort and group the foreign key column based on `ForeignKeyField`.
 
 N> In remote data, server should be configured to perform select and filter operations since the Grid will try to fetch required columns using select operation and required data using filter operation.
 
@@ -1024,8 +1099,8 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
-	  <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"></EditSettings>
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
+	  <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
         <Columns>
             <ej:Column Field="OrderID" HeaderText="Order ID" />
             <ej:Column Field="EmployeeID" HeaderText="Employee Name" ForeignKeyField="EmployeeID"
@@ -1075,7 +1150,7 @@ namespace WebSampleBrowser.Grid
             employee.Add(new Employee(9, "Steven"));
             employee.Add(new Employee(10, "James"));
             employee.Add(new Employee(11, "Smith"));
-            employee.Add(new Employee(12, "Jhonson"));
+            employee.Add(new Employee(12, "Johnson"));
             employee.Add(new Employee(13, "George"));
 
             var index = this.FlatGrid.Columns.FindIndex(col => col.Field == "EmployeeID");
@@ -1140,13 +1215,13 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight css %}
     <style>
-        .customcss.e-headercell {
+        .customizes.e-headercell {
             background-color: #2382c3;
             color: white;
             font-family: 'Bell MT';
             font-size: 20px;
         }
-         .customcss.e-rowcell {
+         .customizes.e-rowcell {
             background-color: #ecedee;
             font-family: 'Bell MT';
             color: red;
@@ -1156,11 +1231,11 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="OrderID" />
             <ej:Column Field="CustomerID" />
-            <ej:Column Field="EmployeeID" CssClass="customcss" />
+            <ej:Column Field="EmployeeID" CssClass="customizes" />
             <ej:Column Field="Freight" />
         </Columns>
     </ej:Grid>
@@ -1173,7 +1248,7 @@ namespace WebSampleBrowser.Grid
     {
        protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -1243,7 +1318,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="True">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true">
         <Columns>
             <ej:Column Field="OrderID" />
             <ej:Column Field="CustomerID" Type="string" />
@@ -1261,7 +1336,7 @@ namespace WebSampleBrowser.Grid
     {
        protected void Page_Load(object sender, EventArgs e)
         {
-            var data = new NorthWndDataContext().Orders.ToList();
+            var data = new NorthWindDataContext().Orders.ToList();
             FlatGrid.DataSource = data;
             FlatGrid.DataBind();
         }
@@ -1274,4 +1349,45 @@ The following output is displayed as a result of the above code example.
 
 ![](Columns_images/Columns_img24.png)
 
+## Column Layout
+
+You can set the Grid's columns layout based on either Grid width or its columns width using `ColumnLayout` property of Grid. There are two ways to set the column layout, they are 
+
+1. Auto
+2. Fixed
+
+{% tabs %}
+{% highlight html %}
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" ColumnLayout="Fixed">
+        <Columns>
+            <ej:Column Field="OrderID" Width="80" />
+            <ej:Column Field="EmployeeID" Width="80" />
+            <ej:Column Field="ShipCity" Width="90" />
+            <ej:Column Field="ShipName" Width="110" />
+            <ej:Column Field="ShipCountry" Width="100" />
+            <ej:Column Field="Freight" Width="80" />
+        </Columns>
+    </ej:Grid>
+</asp:Content>
+{% endhighlight  %}
+{% highlight c# %}
+namespace WebSampleBrowser.Grid
+{
+    public partial class _Default : Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            var data = new NorthWindDataContext().Orders.ToList();
+            FlatGrid.DataSource = data;
+            FlatGrid.DataBind();
+        }
+    }
+}
+{% endhighlight  %}
+{% endtabs %} 
+
+The following output is displayed as a result of the above code example.
+
+![](columns_images/columns_img25.png)
 

@@ -368,7 +368,7 @@ namespace ASP_Doc.Gantt
 
                     case "Windows Forms":
 
-                        cellValue = "wf.png";
+                        cellValue = "forms.png";
 
                         break;
 
@@ -376,7 +376,7 @@ namespace ASP_Doc.Gantt
 
                     case "Windows Phone":
 
-                        cellValue = "wp.png";
+                        cellValue = "phone.png";
 
                         break;
 

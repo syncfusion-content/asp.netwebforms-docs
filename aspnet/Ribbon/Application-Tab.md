@@ -80,7 +80,7 @@ Application Menu can be rendered using JSON Data Source. Please refer [`this`](h
 							<ej:TabContent>
 								<ContentGroupCollection>
 									<ej:ContentGroup id="bold" Text="Bold" IsBig="true">
-										<ButtonSettings ContentType="ImageOnly" PrefixIcon="e-ribbon e-bold" />
+										<ButtonSettings ContentType="ImageOnly" PrefixIcon="e-icon e-ribbon e-bold" />
 									</ej:ContentGroup>
 								</ContentGroupCollection>
 							</ej:TabContent>
@@ -188,7 +188,7 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
 				<div class="e-accuser e-newpageicon"></div>
 				<div class="e-userCon">
 					<div>user</div>
-					<div>xyz@syncfusion.com</div>
+					<div>any@syncfusion.com</div>
 				</div>
 			</div>
 		</div>
@@ -202,7 +202,7 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
 			width: 205,
 			contentType: "textandimage",
 			imagePosition: "imagetop",
-			prefixIcon: "e-blank e-infopageicon"
+			prefixIcon: "e-icon e-blank e-infopageicon"
 		});
 	</script>
 	<style type="text/css">

@@ -37,7 +37,7 @@ Using the Range property and AddComment method of the XlsIO IRange Class, we wil
     { 
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.FlatGrid.DataSource = OrderRepository.GetAllrecords().ToList();
+            this.FlatGrid.DataSource = OrderRepository.GetAllRecords().ToList();
             this.FlatGrid.DataBind();
         }        
 
@@ -84,7 +84,7 @@ We can add comments to the word document using the AppendComment method in the W
     { 
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.FlatGrid.DataSource = OrderRepository.GetAllrecords().ToList();
+            this.FlatGrid.DataSource = OrderRepository.GetAllRecords().ToList();
             this.FlatGrid.DataBind();
         }        
 
@@ -93,7 +93,7 @@ We can add comments to the word document using the AppendComment method in the W
             WordExport exp = new WordExport();
             IWordDocument document = exp.Export(FlatGrid.Model, (IEnumerable)FlatGrid.DataSource, "Export.docx", false, false, "flat-lime", true);
             var table = document.Sections[0].Tables[0];
-            table.AddRow();//Add new row to the gridtable                    
+            table.AddRow();//Add new row to the grid table                    
             var para = table.Rows[0].Cells[0].AddParagraph().AppendComment("*Add Comments");
             document.Save("Export.docx", FormatType.Docx, System.Web.HttpContext.Current.Response, HttpContentDisposition.Attachment);
         }
@@ -132,14 +132,14 @@ We can add comments to a PDF documents using the annotation support provided in 
     { 
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.FlatGrid.DataSource = OrderRepository.GetAllrecords().ToList();
+            this.FlatGrid.DataSource = OrderRepository.GetAllRecords().ToList();
             this.FlatGrid.DataBind();
         }        
 
         protected void FlatGrid_ServerPdfExporting(object sender, Syncfusion.JavaScript.Web.GridEventArgs e)
         {
          PdfExport exp = new PdfExport();
-            PdfDocument pdfdocument = exp.Export(FlatGrid.Model, (IEnumerable)FlatGrid.DataSource, "Export.pdf", false, false, "flat-lime", true);
+            PdfDocument pdfDocument = exp.Export(FlatGrid.Model, (IEnumerable)FlatGrid.DataSource, "Export.pdf", false, false, "flat-lime", true);
             RectangleF rectangle = new RectangleF(100, 0, 5, 80);
             //Creates a new pop-up annotation.
             PdfPopupAnnotation popupAnnotation = new PdfPopupAnnotation(rectangle, "*Add Comments");
@@ -152,8 +152,8 @@ We can add comments to a PDF documents using the annotation support provided in 
             popupAnnotation.Icon = PdfPopupIcon.Comment;            
 
             //Adds the annotation to page.
-            pdfdocument.Pages[0].Annotations.Add(popupAnnotation);
-            pdfdocument.Save("Export.pdf", Response, HttpReadType.Save);
+            pdfDocument.Pages[0].Annotations.Add(popupAnnotation);
+            pdfDocument.Save("Export.pdf", Response, HttpReadType.Save);
         }
 
 

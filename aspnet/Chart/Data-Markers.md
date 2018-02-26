@@ -84,7 +84,7 @@ The following code example shows how to enable data label and set its horizontal
     <Series>
         <ej:Series>
             <Marker>
-                <%--Set text alignment to datalabel text--%>
+                <%--Set text alignment to data label text--%>
                 <DataLabel Visible="true" HorizontalTextAlignment="Center" VerticalTextAlignment="Far"></DataLabel>
             </Marker>
         </ej:Series>
@@ -179,7 +179,7 @@ The following code example shows how to set textPosition to display data label i
     <Series>
         <ej:Series>
             <Marker>
-                <%--Place the datalabel text position in the centre of the rectangle--%>
+                <%--Place the data label text position in the centre of the rectangle--%>
                 <DataLabel TextPosition="Middle">
                 </DataLabel>
             </Marker>
@@ -210,7 +210,7 @@ The following code example shows how to set the LabelPosition,
                 <ej:Points X="France" Y="22" Text="France 22%"></ej:Points>
             </Points>
             <Marker>
-                <%--Place the datalabel text position in the centre of the rectangle--%>
+                <%--Place the data label text position in the centre of the rectangle--%>
                 <DataLabel Visible="true" Shape="Rectangle">
                     <Font Color="white"></Font>
                 </DataLabel>
@@ -256,6 +256,87 @@ The label can be wrapped for pie, doughnut, funnel, and pyramid series by settin
 
 ![](Data-Markers_images/Data-Markers_img13.png)
 
+
+
+
+## Binding label from the datasource
+
+You can bind the text value to the data label from the datasource and then you need to map the text value field with the **TextMappingName** property respectively.
+
+
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server" OnClientLoad="onChartLoad"> 
+    <Series>
+       <ej:Series>       
+                //.... . . 
+                    <Marker>
+                        <DataLabel Visible=’true’ TextMappingName= "text"/>
+                    </Marker>
+                //.... . .                          
+       </ej:Series>
+    </Series>
+</ej:Chart>
+ 
+{% endhighlight %}
+
+
+{% highlight js %}
+
+//data source for chart with label 
+var chartData = [
+          { month: 'Jan', sales: 35 , text: 'January' },
+          { month: 'Feb', sales: 28 , text: 'February' }
+];
+          
+function onChartLoad(sender) {
+    var data = GetData();
+    sender.model.series[0].dataSource = chartData;
+    sender.model.series[0].xName = "month";
+    sender.model.series[0].yName = "sales";
+}
+   
+{% endhighlight %}
+
+
+## Binding fill color to the points from the datasource
+
+You can bind the color value to the points from the datasource and then you need to map the color value field to the **PointColorMappingName** property respectively.
+
+
+
+{% highlight html %}
+
+<ej:Chart ID="Chart1" runat="server" OnClientLoad="onChartLoad"> 
+    <Series>
+       <ej:Series PointColorMappingName="color">       
+                //.... . .                                                             
+       </ej:Series>
+    </Series>
+</ej:Chart>
+ 
+{% endhighlight %}
+
+
+{% highlight js %}
+
+//data source for chart with fill color
+var chartData = [
+          { month: 'Jan', sales: 35 , color: 'red' },
+          { month: 'Feb', sales: 28 , color: 'blue' }
+];
+          
+function onChartLoad(sender) {
+    var data = GetData();
+    sender.model.series[0].dataSource = chartData;
+    sender.model.series[0].xName = "month";
+    sender.model.series[0].yName = "sales";
+}
+   
+{% endhighlight %}
+
+
 ## Customize specific points
 
 By using the ejChart, you can also customize the individual/specific markers with different colors, shapes and also with different images.
@@ -300,7 +381,7 @@ When the data is provided by using the Points option, you can add marker for eac
                 <ej:Points X="Dec" Y="32"></ej:Points>
             </Points>
             <Marker>
-                <%--Place the datalabel text position in the centre of the rectangle--%>
+                <%--Place the data label text position in the centre of the rectangle--%>
                 <DataLabel Visible="true" Shape="Rectangle">
                     <Font Color="white"></Font>
                 </DataLabel>
@@ -400,7 +481,7 @@ This feature is used to connect label and data point by using a line. It can be 
 
 ## SmartLabels
 
-Overlapping of the labels can be avoided by enabling the **EnableSmartLabels** property. The default value is *True* for *Accumulation type series* and *False* for *other series types*.
+Overlapping of the labels can be avoided by enabling the **EnableSmartLabels** property. The default value is *true* for *Accumulation type series* and *false* for *other series types*.
 
 The following code example shows how to enable smart labels,
 

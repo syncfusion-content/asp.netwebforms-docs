@@ -2,7 +2,7 @@
 layout: post
 title: Grouping with Grid widget for Syncfusion Essential ASP
 description: How to enable grouping and its functionalities
-platform: ejweb
+platform: aspnet
 control: Grid
 documentation: ug
 ---
@@ -18,7 +18,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
     
-           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True"  AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="true"  AllowPaging="true" >
            <Columns>
                 <ej:Column Field="OrderID" />
                 <ej:Column Field="EmployeeID" />
@@ -97,7 +97,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
      
-           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True"  AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="true"  AllowPaging="true" >
            <GroupSettings  GroupedColumns="ShipCountry"></GroupSettings>
            <Columns>
                 <ej:Column Field="OrderID" />
@@ -179,7 +179,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
      
-           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True"  AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="true"  AllowPaging="true" >
            <GroupSettings  GroupedColumns="ShipCountry,CustomerID"></GroupSettings>
             <Columns>
                 <ej:Column Field="OrderID" />
@@ -260,8 +260,8 @@ The following code example describes the above behavior.
 
 {% highlight html %}
      
-           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True" AllowPaging="True" >
-           <GroupSettings  ShowToggleButton="True" ></GroupSettings>
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="true" AllowPaging="true" >
+           <GroupSettings  ShowToggleButton="true" ></GroupSettings>
             <Columns>
                 <ej:Column Field="OrderID" />
                 <ej:Column Field="EmployeeID" />
@@ -342,8 +342,8 @@ The following code example describes the above behavior.
 
 {% highlight html %}
      
-           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True" AllowSorting="True" AllowPaging="True" >
-           <GroupSettings  ShowUngroupButton="False"  ></GroupSettings>
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="true" AllowSorting="true" AllowPaging="true" >
+           <GroupSettings  ShowUngroupButton="false"  ></GroupSettings>
             <Columns>
                 <ej:Column Field="OrderID" />
                 <ej:Column Field="EmployeeID" />
@@ -423,8 +423,8 @@ The following code example describes the above behavior.
 
 {% highlight html %}
      
-           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True"  AllowPaging="True" >
-           <GroupSettings ShowGroupedColumn="False" ></GroupSettings>
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="true"  AllowPaging="true" >
+           <GroupSettings ShowGroupedColumn="false" ></GroupSettings>
             <Columns>
                 <ej:Column Field="OrderID" />
                 <ej:Column Field="EmployeeID" />
@@ -504,8 +504,8 @@ The following code example describes the above behavior.
 
 {% highlight html %}
      
-           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True"  AllowPaging="True" >
-           <GroupSettings EnableDropAreaAutoSizing="False" ></GroupSettings>
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="true"  AllowPaging="true" >
+           <GroupSettings EnableDropAreaAutoSizing="false" ></GroupSettings>
             <Columns>
                 <ej:Column Field="OrderID" />
                 <ej:Column Field="EmployeeID" />
@@ -580,8 +580,8 @@ The following code example describes the above behavior.
 
 {% highlight html %}
      
-           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True" AllowPaging="True" >
-           <GroupSettings ShowDropArea="False" GroupedColumns="ShipCountry" ></GroupSettings>
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="true" AllowPaging="true" >
+           <GroupSettings ShowDropArea="false" GroupedColumns="ShipCountry" ></GroupSettings>
             <Columns>
                 <ej:Column Field="OrderID" />
                 <ej:Column Field="EmployeeID" />
@@ -666,7 +666,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
            
-           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="True"  AllowPaging="True" >
+           <ej:Grid ID="FlatGrid" runat="server" AllowGrouping="true"  AllowPaging="true" >
            <GroupSettings CaptionFormat="#template" ></GroupSettings>
              <Columns>
                 <ej:Column Field="OrderID" />

@@ -75,7 +75,7 @@ Add the following ASPX to render sub Tab with AJAX content.
 
                         </ej:TabItem>
 
-                        <ej:TabItem ID="paneertikka" Text="Paneer-Tikka" Url="Content/paneerTikka.html">
+                        <ej:TabItem ID="paneerTikka" Text="Paneer-Tikka" Url="Content/paneerTikka.html">
 
                         </ej:TabItem>
 

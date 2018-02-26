@@ -58,7 +58,7 @@ The WebMethod Adaptor is used to bind data source from remote services and code 
 
 For every operations, an AJAX post will be send to the specified data service. 
 
-When using `WebMethodAdaptor`, grid actions such as Paging, Filtering and Sorting should be handled at the server side itself. We have `DataOperation` class to handle the server side operations. Refer to the kb [link](https://www.syncfusion.com/kb/4300).
+When using `WebMethodAdaptor`, grid actions such as Paging, Filtering and Sorting should be handled at the server side itself. We have `DataOperation` class to handle the server side operations. Refer to the kb [link](https://www.syncfusion.com/kb/4300). These operations can also be done using the `QueryableDataOperations` class which accepts the IQueryable Data. Please refer the Kb [link](https://www.syncfusion.com/kb/8434).
 
 WebMethod Adaptor supports Model Binding, using `DataManager` class, for the Grid queries, such as sort, paging queries, etc., 
  
@@ -74,7 +74,7 @@ You can use the following code example to use WebMethod adaptor.
 {% tabs %} 
 {% highlight html %}
 
-        <ej:Grid ID="EmployeesGrid2" runat="server" AllowPaging="True">
+        <ej:Grid ID="EmployeesGrid2" runat="server" AllowPaging="true">
           <DataManager URL="Default.aspx/DataSource" Adaptor="WebMethodAdaptor" />
             <Columns>
                 <ej:Column Field="OrderID" />
@@ -115,7 +115,7 @@ The following output is displayed as a result of the above code example.
 The Url Adaptor is the base adaptor that would interact with remote services. It can be enabled in Grid using `Adaptor` property of `DataSource` as `UrlAdaptor`. For every operations, an AJAX post will be send to the specified data service. 
 
 
-When using `UrlAdaptor`, grid actions such as Paging, Filtering and Sorting should be handled at the server side itself. We have `DataOperation` class to do these server side operations. Please refer to the kb [link](https://www.syncfusion.com/kb/4300).
+When using `UrlAdaptor`, grid actions such as Paging, Filtering and Sorting should be handled at the server side itself. We have `DataOperation` class to do these server side operations. Please refer to the kb [link](https://www.syncfusion.com/kb/4300). These operations can also be done using the `QueryableDataOperations` class which accepts the IQueryable Data. Please refer the Kb [link](https://www.syncfusion.com/kb/8434).
 
 The following code example describes the above behavior.
 
@@ -177,7 +177,7 @@ You can use the following code example to use OData adaptor.
 {% tabs %} 
 {% highlight html %}
 
-     <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
+     <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true">
          <DataManager URL=http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/ Adaptor="ODataAdaptor></DataManager>   
            <Columns>
                 <ej:Column Field="OrderID" />
@@ -205,7 +205,7 @@ You can use the following code example to use ODataV4 adaptor.
 {% tabs %} 
 {% highlight html %}
 
-        <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
+        <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true">
             <DataManager URL= http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/ Adaptor="ODataAdaptor></DataManager>   
               <Columns>
                   <ej:Column Field="OrderID" />
@@ -233,7 +233,7 @@ You can use the following code example to use WebAPI adaptor.
 {% tabs %} 
 {% highlight html %}
 	
-        <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
+        <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true">
             <DataManager URL=http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/ Adaptor="WebApiAdaptor></DataManager>   
                <Columns>
                    <ej:Column Field="OrderID" />
@@ -282,11 +282,11 @@ You can use the following code example to use RemoteSave adaptor.
 {% tabs %} 
 {% highlight html %}
     
-       <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True"> 
-            <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"></EditSettings>
-            <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
+       <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true"> 
+            <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
+            <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
             <Columns>
-                <ej:Column Field="OrderID" IsPrimaryKey="True" />
+                <ej:Column Field="OrderID" IsPrimaryKey="true" />
                 <ej:Column Field="EmployeeID" />
                 <ej:Column Field="CustomerID" />
                 <ej:Column Field="ShipCountry" />

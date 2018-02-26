@@ -2,7 +2,7 @@
 layout: post
 title: Context Menu with Grid widget for Syncfusion Essential ASP.NET
 description: How to enable contextMenu and its functionalities
-platform: ejweb
+platform: aspnet
 control: Grid
 documentation: ug
 ---
@@ -143,8 +143,8 @@ Please find the below table for default context menu items and its actions.
  </table>
  {% tabs %}
 {% highlight html %}
-  <ej:Grid ID="Grid" runat="server" AllowPaging="True" AllowSorting="true" AllowGrouping="true">
-        <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"></EditSettings>
+  <ej:Grid ID="Grid" runat="server" AllowPaging="true" AllowSorting="true" AllowGrouping="true">
+        <EditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></EditSettings>
           <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
            <ContextMenuSettings EnableContextMenu="true"></ContextMenuSettings>
             <Columns>
@@ -243,7 +243,7 @@ Custom context menu is used to create your own menu item and its action. To add 
 
     <asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
         <div>
-            <ej:Grid ID="Grid" runat="server" AllowPaging="True" AllowSorting="true" AllowGrouping="true">
+            <ej:Grid ID="Grid" runat="server" AllowPaging="true" AllowSorting="true" AllowGrouping="true">
                 <ClientSideEvents ContextClick="contextClick" />
                 <ContextMenuSettings EnableContextMenu="true" DisableDefaultItems="true">
                     <CustomContextMenuItem>
@@ -342,7 +342,7 @@ Sub context menu is used to add customized sub menu to the custom context menu i
 
     <asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">
         <div>
-            <ej:Grid ID="Grid" runat="server" AllowPaging="True" AllowSorting="true" AllowGrouping="true">
+            <ej:Grid ID="Grid" runat="server" AllowPaging="true" AllowSorting="true" AllowGrouping="true">
                 <ClientSideEvents ContextClick="contextClick" />
                 <ContextMenuSettings EnableContextMenu="true" DisableDefaultItems="true">
                 <CustomContextMenuItem>

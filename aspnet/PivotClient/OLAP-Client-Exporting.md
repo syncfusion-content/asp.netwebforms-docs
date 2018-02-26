@@ -91,8 +91,6 @@ To export by using the pivot engine available in server-side, the 'exportMode' p
     
 {% endhighlight %}
 
-
-
 For WebAPI controller, the following method should be added:
 
 {% highlight C# %}
@@ -121,6 +119,29 @@ For WCF service, the following service method should be added:
             string fileName = "Sample";
             olapClientHelper.ExportPivotClient(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
         }
+    
+{% endhighlight %}
+
+### File format selection
+
+I> This option is applicable only for PivotClient when exporting to Excel document.
+
+You can set the option for exporting the control to Excel document either in *.xls* or *.xlsx* format, using `fileFormat` property inside the `BeforeExport` event.
+
+N> By default excel document will be exported to ".xls" format using PivotEngine export.
+
+{% highlight html %}
+
+   <ej:PivotClient ID="PivotClient1" Url="/OlapService" runat="server" ClientExportMode="ChartAndGrid">
+        <ClientSideEvents BeforeExport="export"/>
+    </ej:PivotClient>
+
+    <script type="text/javascript">
+        function Export(args) {
+                args.exportMode = ej.PivotGrid.ExportMode.PivotEngine;
+                args.fileFormat = ".xlsx"; //you can set the excel sheet format here
+        }
+    </script>
     
 {% endhighlight %}
 
@@ -157,7 +178,32 @@ For customizing name in the WCF service, the following code snippet is used:
 
 {% endhighlight %}
 
-## Exporting customization
+## PivotChart - Exporting Format
+
+I> This option is applicable only for PivotChart in PivotClient specifically when exported to Excel document.
+
+You can set an option to export PivotChart to an Excel document, either as image or PivotChart format itself by setting the boolean property `exportChartAsImage`, inside the `BeforeExport` event.
+
+N> By default PivotChart will be exported as image format to Excel document.
+
+{% highlight html %}
+
+<ej:PivotClient ID="PivotClient1" Url="/OlapService" runat="server" ClientExportMode="ChartOnly">
+    <ClientSideEvents BeforeExport="export"/>
+</ej:PivotClient>
+<script type="text/javascript">
+    function export(args) {
+        args.exportChartAsImage = false; //You can set the chart format here
+    }
+</script>
+    
+{% endhighlight %} 
+
+The below screenshot shows the control exported to Excel document showing its own format (Pivoting Chart).
+
+![](Exporting_images/Export_ExcelChartClient.png)
+
+## Exporting Customization
 
 You can add the title and description to the exporting document by using the title and description property obtained in the "BeforeExport" event.
 
@@ -176,6 +222,7 @@ You can add the title and description to the exporting document by using the tit
             
             args.title = "PivotClient";
             args.description = "Visualizes both OLAP and Relational datasource in tabular and graphical formats";
+			args.exportWithStyle = true;   // by default it sets as true. It improves performance on exporting huge data when it sets as false.
         }
     </script>
     
@@ -263,8 +310,23 @@ void olapClientHelper_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook work
 
 {% endhighlight %}
 
+### Exporting complete data on Paging
 
-The following screenshot shows the pivot grid and pivot chart controls exported to an Excel document:
+When paging is enabled, you can export the complete data by enabling the `EnableCompleteDataExport` property. It is supported in both types of JSON and PivotEngine export and it is applicable for all kinds of exporting formats available in PivotClient.
+
+{% highlight html %}
+<html>
+//...
+<body>    
+    <ej:PivotClient ID="PivotClient1" runat="server" EnableCompleteDataExport="true">
+    </ej:PivotClient>
+	//...
+</body>
+</html>
+
+{% endhighlight %}
+
+The below screenshot shows the PivotGrid and PivotChart controls exported to Excel document.
 
 ![](Exporting_images/exportexcel.png) 
 

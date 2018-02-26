@@ -13,12 +13,14 @@ When you provide data to RangeNavigator, it produces limited set of data. You ca
 
 ## Add series to the RangeNavigator
 
-The Series property provides access to a collection of all series that are defined explicitly within a RangeNavigator control. Each series is assigned with type and name. It contains collection of data point, each point contains x value and y values. You can add data points to the series through DataSource property.
+The `Series` property provides access to a collection of all series that are defined explicitly within a RangeNavigator control. Each series is assigned with `Type` and name. It contains collection of data point, each point contains x value and y values. You can add data points to the series through `DataSource` property by providing field name to get the values from the DataSource in `xName` and `yName` options.
 
-{% tabs %}
+Animation can be enabled by setting `EnableAnimation` property as true and the series color can be customized by using `Fill` property in series.
+
+
 
 {% highlight html %}
-<ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideLoad="loadingdata">
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" onClientSideLoad="loadingData">
 
          <Series>
 
@@ -34,7 +36,7 @@ The Series property provides access to a collection of all series that are defin
 {% highlight js %}
 <script type="text/javascript">
 
-function loadingdata(sender) {
+function loadingData(sender) {
 
                  data = GetData();
 
@@ -46,7 +48,7 @@ function loadingdata(sender) {
 
        }
 
-// Method to get data in json format
+// Method to get data in JSON format
 
 function GetData() {
 
@@ -93,7 +95,7 @@ function GetData() {
 </script>         
 {% endhighlight %}
 
-{% endtabs %}
+
 
 The following screenshot illustrates the RangeNavigator that is populated with data using DataSource property in series.
 

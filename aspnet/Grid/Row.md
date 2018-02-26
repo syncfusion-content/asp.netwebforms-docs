@@ -21,17 +21,17 @@ Details Template feature provides a detailed view about additional information o
 
     <script id="tabGridContents" type="text/x-jsrender">
 
-    <div id="contact{{:EmployeeID}}" style="font-weight: bold; padding: 5px;">
+    <div id="contact{{"{{"}}:EmployeeID {{}}}}" style="font-weight: bold; padding: 5px;">
 
         <div id="cont">
 
-            contact:{{:Address}}<br />
+            contact:{{"{{"}}:Address {{}}}}<br />
 
-            city:{{:City}}<br />
+            city:{{"{{"}}:City {{}}}}<br />
 
-            Country:{{:Country}}<br />
+            Country:{{"{{"}}:Country {{}}}}<br />
 
-            phone:{{:HomePhone}}<br />
+            phone:{{"{{"}}:HomePhone {{}}}}<br />
 
         </div>
 
@@ -126,7 +126,7 @@ In this section, you can learn how to use the Hierarchy in GridView. The followi
 
         </div>
 
-        <label id="employeeDet" style="display: none">{{:EmployeeID}}</label>
+        <label id="employeeData" style="display: none">{{"{{"}}:EmployeeID {{}}}}</label>
 
     </div>
 
@@ -138,7 +138,7 @@ In this section, you can learn how to use the Hierarchy in GridView. The followi
 
     function detailGridData(e) {
 
-        var filteredData = e.detailsElement.find("#employeeDet").text();
+        var filteredData = e.detailsElement.find("#employeeData").text();
 
         // the datasource "window.ordersView" is referred from jsondata.min.js
 
@@ -290,7 +290,7 @@ Row template is used to render your template in every row. It is used to place e
 
         <td class="photo">
 
-            <img style="width: 130px; height: 160px" src="http://js.syncfusion.com/demos/web/themes/images/Employees//{{:EmployeeID}}.png" alt="{{:EmployeeID}}" />
+            <img style="width: 130px; height: 160px" src="http://js.syncfusion.com/demos/web/themes/images/Employees//{{"{{"}}:EmployeeID {{}}}}.png" alt="{{"{{"}}:EmployeeID {{}}}}" />
 
         </td>
 
@@ -312,7 +312,7 @@ Row template is used to render your template in every row. It is used to place e
 
                         <td class="CardHeader">First Name: </td>
 
-                        <td style="padding: 20px">{{:FirstName}} </td>
+                        <td style="padding: 20px">{{"{{"}}:FirstName {{}}}} </td>
 
                     </tr>
 
@@ -324,7 +324,7 @@ Row template is used to render your template in every row. It is used to place e
 
                         </td>
 
-                        <td style="padding: 20px">{{:BirthDate.toLocaleDateString()}}
+                        <td style="padding: 20px">{{"{{"}}:BirthDate.toLocaleDateString(){{}}}}
 
                         </td>
 
@@ -338,7 +338,7 @@ Row template is used to render your template in every row. It is used to place e
 
                         </td>
 
-                        <td style="padding: 20px">{{:HireDate.toLocaleDateString()}}
+                        <td style="padding: 20px">{{"{{"}}:HireDate.toLocaleDateString(){{}}}}
 
                         </td>
 
@@ -374,7 +374,7 @@ Row template is used to render your template in every row. It is used to place e
 {% endhighlight  %}
 {% highlight html %}
 
-<ej:Grid ID="Grid" runat="server" AllowScrolling="True" RowTemplate="#templateData">
+<ej:Grid ID="Grid" runat="server" AllowScrolling="true" RowTemplate="#templateData">
 
     <ScrollSettings Height="480" Width="500" />
 
@@ -527,7 +527,7 @@ EnableAltRow and EnableRowHover are graphical features in Grid that are used to 
 
 {% endhighlight  %}
 {% highlight html %}
-<ej:Grid ID="Grid" runat="server" AllowPaging="True" EnableAltRow="True" EnableRowHover="True">
+<ej:Grid ID="Grid" runat="server" AllowPaging="true" EnableAltRow="true" EnableRowHover="true">
 
     <PageSettings PageSize="5"></PageSettings>
 
@@ -570,10 +570,10 @@ The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight html %}
-<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowRowDragAndDrop="true" Selectiontype="Multiple">
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" AllowRowDragAndDrop="true" Selectiontype="Multiple">
             <RowDropSettings DropMapper="DragAndDrop.aspx/Reordering"/>
             <Columns>
-                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
                 <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
                 <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" />
                 <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />
@@ -636,11 +636,11 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight html %}
 <div style="float:left;width:49%">
-        <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowRowDragAndDrop="true" Selectiontype="Multiple">
+        <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" AllowRowDragAndDrop="true" Selectiontype="Multiple">
             <RowDropSettings DragMapper="DragAndDrop.aspx/GridDragHandler" DropMapper="DragAndDrop.aspx/GridDropHandler"/>
             <EditSettings AllowEditing="true"/>
             <Columns>
-                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
                 <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
                 <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" />
                 <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />
@@ -649,10 +649,10 @@ The following code example describes the above behavior.
         </ej:Grid>
             </div>
         <div style="float:right;width:49%">
-            <ej:Grid ID="DestGrid" runat="server" AllowPaging="True" AllowRowDragAndDrop="true" Selectiontype="Multiple">
-                <RowDropSettings DragMapper="DragAndDrop.aspx/DestGridDragHandler" DropMapper="DragAndDrop.aspx/DestGridDropHandler"/>
+            <ej:Grid ID="EmployeeGrid" runat="server" AllowPaging="true" AllowRowDragAndDrop="true" Selectiontype="Multiple">
+                <RowDropSettings DragMapper="DragAndDrop.aspx/EmployeeGridDragHandler" DropMapper="DragAndDrop.aspx/EmployeeGridDropHandler"/>
             <Columns>
-                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
                 <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
                 <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" />
                 <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />
@@ -672,7 +672,7 @@ public partial class RowTemplate : System.Web.UI.Page
             var data2 = OrderRepository.GetAllRecords2();
                           
             this.OrdersGrid.DataManager = new DataSource() { Json = data, Adaptor = "remoteSaveAdaptor" };
-            this.DestGrid.DataManager = new DataSource() { Json = data2, Adaptor = "remoteSaveAdaptor" };
+            this.EmployeeGrid.DataManager = new DataSource() { Json = data2, Adaptor = "remoteSaveAdaptor" };
 
         }
 
@@ -686,7 +686,7 @@ public partial class RowTemplate : System.Web.UI.Page
         
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public static object DestGridDragHandler(List<Orders> deleted)
+        public static object EmployeeGridDragHandler(List<Orders> deleted)
         {
             OrderRepository.Delete2(deleted);
             return deleted;
@@ -712,7 +712,7 @@ public partial class RowTemplate : System.Web.UI.Page
       
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public static object DestGridDropHandler(List<Orders> added)
+        public static object EmployeeGridDropHandler(List<Orders> added)
         {
             RowDropModel dropDetails = (RowDropModel)ser.Deserialize(Request.Headers["rowDropDetails"], typeof(RowDropModel));
             var count = 0;
@@ -758,10 +758,10 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight  html %}
 <div style="float:left;width:49%">
-<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True" AllowRowDragAndDrop="true" Selectiontype="Multiple">
+<ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" AllowRowDragAndDrop="true" Selectiontype="Multiple">
             <ClientSideEvents RowDrop="rowDropHandler"/>
             <Columns>
-                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
                 <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
                 <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" />
                 <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />
@@ -812,7 +812,7 @@ public partial class RowTemplate : System.Web.UI.Page
 <script type="text/javascript">
     function rowDropHandler(args) {
         for (var key in args.data[0]) {
-            $('#dropForm input[name=' + key + ']').val(args.data[0][key]);
+            $('#dropForm input[name=' + key + ']').val(args.rowData[0][key]);
         }
     }
 </script>
@@ -829,3 +829,5 @@ The following output is displayed after dropping the rows on Form.
 
 ![](Row_images/Row_img10.png)
 {:After Drop}
+
+N>   The default behavior of drag and drop between Grid or any other controls is as cut and paste. For copy and paste behavior specify the drag behavior in `DragBehavior` property of `RowDropSettings` as "Copy".

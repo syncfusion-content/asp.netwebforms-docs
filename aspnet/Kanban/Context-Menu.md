@@ -126,7 +126,7 @@ Please find the below table for default context menu items and its actions.
         </tr>
         <tr>
             <td>
-               Move Swimlane
+               Move to Swimlane
             </td>
             <td>
                Move the card to Swim lane which is chosen from given list
@@ -275,7 +275,7 @@ The following code example describes the above behavior.
                         <ej:CustomMenuItem Text="Move to Column" Template="#template" />
                     </CustomMenuItems>
                 </ContextMenuSettings>
-                <ClientSideEvents ContextClick="contextclick" />
+                <ClientSideEvents ContextClick="context" />
                 <Fields Content="Summary" PrimaryKey="Id" Tag="Tags" SwimlaneKey="Assignee" />
             </ej:Kanban>
 
@@ -285,7 +285,7 @@ The following code example describes the above behavior.
                 <li><a>Close</a></li>
             </ul>
             <script type="text/javascript">
-                function contextclick(args) {
+                function context(args) {
                     if (args.text == "Clear Selection")
                         this.clearSelection();
                 }

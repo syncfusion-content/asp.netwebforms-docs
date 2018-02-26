@@ -14,6 +14,15 @@ Bullet Graph supports title and subtitle to convey what is represented in Bullet
 ## Title
 
 Title is set to Bullet Graph using text property in CaptionSettings. Caption settings also include properties like Location, Font, and TextAngle for customizing the caption of Bullet Graph.
+
+### Location
+
+Using `location` option, you can set the `X` and `Y` position of caption text.
+
+### Font
+
+Using `font` property, you can customize `font color`, `font family`, `font style`, `font weight`, `opacity`, `size` options.
+
 {% highlight html %}
 
 
@@ -47,6 +56,15 @@ The following screenshot displays a Bullet Graph with customized caption using t
 ## Subtitle
 
 Subtitle is added to Bullet Graph using Text property of SubTitle in CaptionSettings. SubTitle also provides properties like Location, TextAngle and Font to customize subtitle similar to caption.
+
+
+### Location
+
+Using `location` option, you can set the `X` and `Y` position of caption text.
+
+### Font
+
+Using `font` property, you can customize `font color`, `font family`, `font style`, `font weight`, `opacity`, `size` options.
 
 
 {% highlight html %}
@@ -162,7 +180,7 @@ The title, subtitle and indicator text can be overlapped to the scale group. You
 
 <ej:BulletGraph Value="8" ComparativeMeasureValue="8" Width="650" Height="150" runat="server">
 
-      <CaptionSettings Text="Bullet Graph Title" EnableTrim=True />
+      <CaptionSettings Text="Bullet Graph Title" EnableTrim=true />
 
 </ej:BulletGraph>
 

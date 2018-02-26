@@ -31,7 +31,7 @@ Add necessary Textbox control and initialize the corresponding Textboxes cont
 
         </div>
 
-        <div class="ele-txt" style="">Electricity Bill Calculator</div>
+        <div class="element-txt" style="">Electricity Bill Calculator</div>
 
         <br />
 
@@ -113,7 +113,7 @@ Add necessary Textbox control and initialize the corresponding Textboxes cont
 
         </table>
 
-        <div class="paybill">
+        <div class="pay-bill">
 
            <ej:Button ID="Button" runat="server" Text="Calculate" Type="Button"Size="Small">
 
@@ -133,7 +133,7 @@ The following styles are added to arrange the Textboxes.
 
 {% highlight css %}
 
-.ele-txt
+.element-txt
 
 {
 
@@ -185,7 +185,7 @@ The following styles are added to arrange the Textboxes.
 
 }
 
-.paybill
+.pay-bill
 
 {
 
@@ -231,7 +231,7 @@ In the above mentioned use case scenario, you can set the MinValue, MaxValue 
 
         </div>
 
-        <div class="ele-txt" style="">Electricity Bill Calculator</div>
+        <div class="element-txt" style="">Electricity Bill Calculator</div>
 
         <br />
 
@@ -311,7 +311,7 @@ In the above mentioned use case scenario, you can set the MinValue, MaxValue 
 
         </table>
 
-        <div class="paybill">
+        <div class="pay-bill">
 
             <ej:Button ID="Button" runat="server" Text="Calculate" Type="Button"Size="Small">
 
@@ -339,11 +339,11 @@ You can set the “EnableStrictMode” option to restrict entering values defi
 
    <div class="editors">
 
-        <div class="ele-icon">
+        <div class="element-icon">
 
         </div>
 
-        <div class="ele-txt" style="">Electricity Bill Calculator</div>
+        <div class="element-txt" style="">Electricity Bill Calculator</div>
 
         <br />
 
@@ -427,7 +427,7 @@ You can set the “EnableStrictMode” option to restrict entering values defi
 
         </table>
 
-        <div class="paybill">
+        <div class="pay-bill">
 
             <ej:Button ID="Button" runat="server" Text="Calculate" Type="Button"Size="Small">
 
@@ -455,7 +455,7 @@ To customize the button,you can set the ContentType as TextAndImage to inclu
 
         // Please refer the table format for textboxes customization
 
-        <div class="paybill">
+        <div class="pay-bill">
 
             <ej:Button ID="Button" runat="server" Text="Calculate" Type="Button"Size="Small" ClientSideOnClick="calculateBill">
 
@@ -475,27 +475,27 @@ function calculateBill() {
 
              // Declares Necessary variable creation
 
-        var kmcalc, servtax, amuntperkm;
+        var unitMeter, serviceTax, amountPerKm;
 
-        umcalc = $("#NumericTextBox").data("ejNumericTextbox");// Object of Numeric
+        unitMeter = $("#NumericTextBox").data("ejNumericTextbox");// Object of Numeric
 
-        servtax = $("#PercentageTextBox").data("ejPercentageTextbox");// Object of Percentage
+        serviceTax = $("#PercentageTextBox").data("ejPercentageTextbox");// Object of Percentage
 
-        amuntperkm = $("#CurrencyTextBox").data("ejCurrencyTextbox"); // Object of Currency
+        amountPerKm = $("#CurrencyTextBox").data("ejCurrencyTextbox"); // Object of Currency
 
-        cusmob = $("#MaskEdit").data("ejMaskEdit"); // Object of MaskEdit       
+        mobileNumber = $("#MaskEdit").data("ejMaskEdit"); // Object of MaskEdit       
 
          // This is used to calculate the Net amount
 
-        var netamunt = umcalc.model.value * amuntperkm.model.value;
+        var netAmount = unitMeter.model.value * amountPerKm.model.value;
 
         // This is used to calculate the service tax amount
 
-        var sTax = (netamunt * servtax.model.value) / 100;
+        var sTax = (netAmount * serviceTax.model.value) / 100;
 
         // This shows the calculated amount for the units
 
-        alert("The amount $" + (netamunt + sTax) + " has been sent as message to " + cusmob.model.value + ".");
+        alert("The amount $" + (netAmount + sTax) + " has been sent as message to " + mobileNumber.model.value + ".");
 
     } 
 

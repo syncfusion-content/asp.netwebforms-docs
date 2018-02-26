@@ -44,6 +44,24 @@ The following code example renders the scheduler from 7.00 AM to 6.00 PM.
 
 {% endhighlight %}
 
+## Hide Weekend days
+
+The Scheduler can be customized to display only the working days, thus hiding the weekend days from it. The working days render based on the values given in the `WorkWeek` property. The days that are not mentioned in the `WorkWeek` collection is considered to be the weekend days and it can be hidden from the Scheduler by setting `false` to the `ShowWeekend` property.
+
+The following code example renders the Scheduler by hiding the weekend days.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" DataSourceID="SqlData" Width="100%"  Height="525px" CurrentDate="5/2/2014" ShowWeekend="false">
+    <AppointmentSettings Id="Id" Subject="Subject" AllDay="AllDay" StartTime="StartTime" EndTime="EndTime" Description="Description" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule"/>
+</ej:Schedule>
+
+<asp:SqlDataSource ID="SqlData" runat="server" ConnectionString="<%$ ConnectionStrings:ScheduleConnectionString %>"
+            SelectCommand="SELECT * FROM [DefaultSchedule]"></asp:SqlDataSource>
+
+{% endhighlight %}
+
 ### Working Hours
 
 Working hours indicates the work hour limit within the Scheduler, which is highlighted visually with white colored work cells. To enable the highlighting of work hours on the Scheduler, set the **Highlight** option available within the `WorkHours` property to **true**. By default, it is set to true. `WorkHours` property includes the below options,
@@ -175,7 +193,7 @@ The following code example lets you create the custom appointment window (using 
                             <td>Description:
                             </td>
                             <td colspan="2">
-                                <textarea id="customdescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
+                                <textarea id="customDescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
                             </td>
                         </tr>
                         <tr>
@@ -196,7 +214,7 @@ The following code example lets you create the custom appointment window (using 
                             <td colspan="3">
                                 <div class="customcheck">AllDay:</div>
                                 <div class="customcheck">
-                                    <input id="allday" type="checkbox" name="AllDay" onchange="alldayCheck()" />
+                                    <input id="allDay" type="checkbox" name="AllDay" onchange="allDayCheck()" />
                                 </div>
                                 <div class="customcheck">Recurrence:</div>
                                 <div>
@@ -204,25 +222,25 @@ The following code example lets you create the custom appointment window (using 
                                 </div>
                             </td>
                         </tr>
-                        <tr id="summarytr" style="display: none;">
+                        <tr id="summaryTr" style="display: none;">
                             <td colspan="3">
-                                <div class="recsummary">Summary:</div>
+                                <div class="recSummary">Summary:</div>
                                 <div>
-                                    <label id="recsummary" name="Summary"></label>
+                                    <label id="recSummary" name="Summary"></label>
                                 </div>
                             </td>
                         </tr>
-                        <tr id="edittr" style="display: none;">
+                        <tr id="editor" style="display: none;">
                             <td colspan="3">
-                                <div><a id="recedit" onclick="Recurrencerule()">Edit</a></div>
+                                <div><a id="recEdit" onclick="recurrenceRule()">Edit</a></div>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div>
-                <button type="submit" onclick="cancel()" id="btncancel" style="float: right; margin-right: 20px; margin-bottom: 10px;">Cancel</button>
-                <button type="submit" onclick="save()" id="btnsubmit" style="float: right; margin-right: 20px; margin-bottom: 10px;">Submit</button>
+                <button type="submit" onclick="cancel()" id="buttonCancel" style="float: right; margin-right: 20px; margin-bottom: 10px;">Cancel</button>
+                <button type="submit" onclick="save()" id="buttonSubmit" style="float: right; margin-right: 20px; margin-bottom: 10px;">Submit</button>
             </div>
         </div>
         <div id="recWindow" style="display: none">
@@ -230,8 +248,8 @@ The following code example lets you create the custom appointment window (using 
                 <ej:RecurrenceEditor ClientIDMode="Static" ID="recurrenceEditor" SelectedRecurrenceType="0" Frequencies="daily,weekly,monthly,yearly,everyweekday" runat="server"></ej:RecurrenceEditor>
             </div>
             <div>
-                <button type="submit" id="reccancel">Cancel</button>
-                <button type="submit" id="recsubmit">Submit</button>
+                <button type="submit" id="recCancel">Cancel</button>
+                <button type="submit" id="recSubmit">Submit</button>
             </div>
         </div>
        </div>
@@ -280,10 +298,10 @@ The following function needs to be defined within script section, which gets cal
     <script type="text/javascript">
     $(function () {
             // defining sub-controls used within custom appointment window
-            $("#btncancel").ejButton({ width: '85px' });
-            $("#btnsubmit").ejButton({ width: '85px' });
+            $("#buttonCancel").ejButton({ width: '85px' });
+            $("#buttonSubmit").ejButton({ width: '85px' });
             $("#recurrence").ejCheckBox({ change: "recurCheck" });
-            $("#reccancel,#recsubmit").ejButton({ click: "onRecurrenceClick" });
+            $("#recCancel,#recSubmit").ejButton({ click: "onRecurrenceClick" });
         });
 
      function onAppointmentWindowOpen(args) {
@@ -295,12 +313,12 @@ The following function needs to be defined within script section, which gets cal
             $("#recWindow").css("display", "none");
             $("#appWindow").css("display", "");
             if (!ej.isNullOrUndefined(args.target)) {
-                // When double clicked on the Scheduler cells, if the target is allday or month cells – only then enable check mark on the allday checkbox
+                // When double clicked on the Scheduler cells, if the target is all day or month cells – only then enable check mark on the all day checkbox
                 if ($(args.target.currentTarget).hasClass("e-alldaycells") || (args.startTime.getHours() == 0 && args.endTime.getHours() == 23))
-                    $("#allday").prop("checked", true);
+                    $("#allDay").prop("checked", true);
                 else
-                    args.model.currentView == "month" ? $("#allday").prop("checked", true) : $("#allday").prop("checked", false);
-                // If the target is allday or month cells – disable the StartTime and EndTime fields
+                    args.model.currentView == "month" ? $("#allDay").prop("checked", true) : $("#allDay").prop("checked", false);
+                // If the target is all day or month cells – disable the StartTime and EndTime fields
                 $("#StartTime,#EndTime").ejDateTimePicker({
                     enabled: ($(args.target.currentTarget).hasClass("e-alldaycells") || (args.startTime.getHours() == 0 && args.endTime.getHours() == 23) || $(args.target.currentTarget).hasClass("e-monthcells") || args.model.currentView == "month") ? false : true
                 });
@@ -313,9 +331,9 @@ The following function needs to be defined within script section, which gets cal
                 $("#EndTime").ejDateTimePicker({ value: new Date(args.appointment.EndTime) });
                 $("#recurrence").ejCheckBox({ checked: args.appointment.Recurrence });
                 if (args.appointment.Recurrence) {
-                    $("#edittr").css("display", "");
-                    $("#recsummary").html(args.appointment.RecurrenceRule);
-                    $("#summarytr").css("display", "");
+                    $("#editor").css("display", "");
+                    $("#recSummary").html(args.appointment.RecurrenceRule);
+                    $("#summaryTr").css("display", "");
                     recObj._recRule = args.appointment.RecurrenceRule; // app recurrence rule is stored in Recurrence editor object
                     recObj.recurrenceRuleSplit(args.appointment.RecurrenceRule, args.appointment.recurrenceExDate); //splitting the recurrence rule
                     recObj.showRecurrenceSummary(args.appointment.Id); // updating the recurrence rule in Recurrence editor
@@ -341,14 +359,14 @@ On clicking the **Submit** button within the Custom Appointment window, the foll
                 return false;
             }
             var obj = {}, temp = {}, rType;
-            var formelement = $("#customWindow").find("#custom").get(0);
+            var formElement = $("#customWindow").find("#custom").get(0);
             // looping through the custom form elements to get each value and form a JSON object
             obj["Id"] = $("#customId").val() == "" ? $("#customId").val() : parseInt($("#customId").val());
             obj["Subject"] = $("#subject")[0].value;
-            obj["Description"] = $("#customdescription")[0].value;
+            obj["Description"] = $("#customDescription")[0].value;
             obj["StartTime"] = new Date($("#StartTime")[0].value);
             obj["EndTime"] = new Date($("#EndTime")[0].value);
-            obj["AllDay"] = $("#allday")[0].checked;
+            obj["AllDay"] = $("#allDay")[0].checked;
             obj["Recurrence"] = $("#recurrence")[0].checked;
             obj["RecurrenceRule"] = (obj.Recurrence) ? recurRule : null;
             $("#customWindow").ejDialog("close");
@@ -359,16 +377,16 @@ On clicking the **Submit** button within the Custom Appointment window, the foll
 
         // This function executes when the submit/cancel button in the recurrence editor window is pressed.
         function onRecurrenceClick(args) {
-            if ($(args.e.currentTarget).attr("id") == "recsubmit") {
+            if ($(args.e.currentTarget).attr("id") == "recSubmit") {
                 recObj = $("#recurrenceEditor").ejRecurrenceEditor('instance');
                 recObj.closeRecurPublic();
                 recurRule = recObj._recRule;
-                $("#recsummary").html(recurRule);
+                $("#recSummary").html(recurRule);
             }
             else
-                if (($(args.e.currentTarget).attr("id") == "reccancel")) {
-                    if ($("#recsummary").html() == "") {
-                        $("#edittr").css("display", "none");
+                if (($(args.e.currentTarget).attr("id") == "recCancel")) {
+                    if ($("#recSummary").html() == "") {
+                        $("#editor").css("display", "none");
                         $("#recurrence").ejCheckBox({ checked: false });
                     }
                     else
@@ -376,8 +394,8 @@ On clicking the **Submit** button within the Custom Appointment window, the foll
                 }
             $("#recWindow").css("display", "none");
             $("#appWindow").css("display", "");
-            if ($("#recsummary").html() != "")
-                $("#summarytr").css("display", "");
+            if ($("#recSummary").html() != "")
+                $("#summaryTr").css("display", "");
         }
 
         // Clears all the field values of the custom window after saving appointments
@@ -385,10 +403,10 @@ On clicking the **Submit** button within the Custom Appointment window, the foll
             $("#customId").val("");
             recObj.clearRecurrenceFields();
             $("#subject").val("");
-            $("#recsummary").html("");
-            $("#summarytr").css("display", "none");
+            $("#recSummary").html("");
+            $("#summaryTr").css("display", "none");
             $("#recurrence").ejCheckBox({ checked: false });
-            $("#edittr").css("display", "none");
+            $("#editor").css("display", "none");
             $("#StartTime,#EndTime").ejDateTimePicker({ enabled: true });
         }
 
@@ -398,22 +416,22 @@ On clicking the **Submit** button within the Custom Appointment window, the foll
                 if ($("#recurrence").get(0).checked == true) {  // Displays the recurrence field, when recurrence checkbox is checked.
                     $("#recWindow").css("display", "");
                     $("#appWindow").css("display", "none");
-                    $("#edittr").css("display", "");
+                    $("#editor").css("display", "");
 
                 }
                 else {
                     $("#recWindow").css("display", "none");
-                    $("#edittr").css("display", "none");
-                    $("#recsummary").html("");
-                    $("#summarytr").css("display", "none");
+                    $("#editor").css("display", "none");
+                    $("#recSummary").html("");
+                    $("#summaryTr").css("display", "none");
                 }
             }
         }
 
         // This function executes when the All-day checkbox is checked in the custom appointment window
-        function alldayCheck() {
+        function allDayCheck() {
             // Disables and sets the specific hours to the StartTime and EndTime fields, when the all-day checkbox is checked
-            if ($("#allday").prop("checked")) {
+            if ($("#allDay").prop("checked")) {
                 var a = $("#StartTime").data("ejDateTimePicker").model.value;
                 a.setHours(0, 0, 0);
                 var b = $("#EndTime").data("ejDateTimePicker").model.value;
@@ -438,16 +456,16 @@ On clicking the **Submit** button within the Custom Appointment window, the foll
 
         // This function executes when the submit/cancel button in the recurrence editor window is pressed.
         function onRecurrenceClick(args) {
-            if ($(args.e.currentTarget).attr("id") == "recsubmit") {
+            if ($(args.e.currentTarget).attr("id") == "recSubmit") {
                 recObj = $("#recurrenceEditor").ejRecurrenceEditor('instance');
                 recObj.closeRecurPublic();
                 recurRule = recObj._recRule;
-                $("#recsummary").html(recurRule);
+                $("#recSummary").html(recurRule);
             }
             else
-                if (($(args.e.currentTarget).attr("id") == "reccancel")) {
-                    if ($("#recsummary").html() == "") {
-                        $("#edittr").css("display", "none");
+                if (($(args.e.currentTarget).attr("id") == "recCancel")) {
+                    if ($("#recSummary").html() == "") {
+                        $("#editor").css("display", "none");
                         $("#recurrence").ejCheckBox({ checked: false });
                     }
                     else
@@ -455,17 +473,17 @@ On clicking the **Submit** button within the Custom Appointment window, the foll
                 }
             $("#recWindow").css("display", "none");
             $("#appWindow").css("display", "");
-            if ($("#recsummary").html() != "")
-                $("#summarytr").css("display", "");
+            if ($("#recSummary").html() != "")
+                $("#summaryTr").css("display", "");
         }
 
         // This function executes when the Edit anchor tag in the edit appointment window is clicked.
-        function Recurrencerule() {
+        function recurrenceRule() {
             $("#recWindow").css("display", "");
             $("#appWindow").css("display", "none");
         }
 
-        // This function executes when the subject text field is currently being focussed
+        // This function executes when the subject text field is currently being focused
         function temp() {
             $("#subject").removeClass("error");
         }

@@ -9,8 +9,8 @@ documentation: ug
 
 # Exporting
 
-* Circular Gauge has an exporting feature that converts Gauge control into image format and then export in client side. The method API exportImage is used to export the Circular Gauge. 
-* It has two arguments such as file name and file format to specify the file name and file formats. For exporting refer the following code example.
+* Circular Gauge has an exporting feature that converts Gauge control into image format and then export in client side. The method API `exportImage` is used to export the Circular Gauge. 
+* It has two arguments such as **file name** and **file format** to specify the file name and file formats. For exporting refer the following code example.
 
   {% highlight html %}
 
@@ -78,15 +78,15 @@ documentation: ug
 
         $("#sampleProperties").ejPropertiesPanel();
 
-        $("#Button1").ejButton({ width: "100px", click: "buttonclickevent" });
+        $("#Button1").ejButton({ width: "100px", click: "buttonClickEvent" });
 
         });
 
-        function buttonclickevent() {
+        function buttonClickEvent() {
 
         var FileName = $("#fileName").val();
 
-        var FileFormat = $("#ddlExportImage").ejDropDownList("option", "value");
+        var FileFormat = $("#ddExportImage").ejDropDownList("option", "value");
 
         $("#CoreExportGauge").ejCircularGauge("exportImage", FileName, FileFormat);
 

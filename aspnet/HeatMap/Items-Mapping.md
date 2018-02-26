@@ -43,11 +43,11 @@ public partial class CellMapBinding : System.Web.UI.Page
         CellMapping.Row = new PropertyMapping() { PropertyName = "Year", DisplayName = "Year" };
         CellMapping.Value = new PropertyMapping() { PropertyName = "Value" };
         Collection columnMapping = new Collection();
-        columnMapping.Add(new HeaderMapping() { PropertyName = "Vegie-spread", DisplayName = "Vegie-spread" });
-        columnMapping.Add(new HeaderMapping() { PropertyName = "Tofuaa", DisplayName = "Tofuaa" });
+        columnMapping.Add(new HeaderMapping() { PropertyName = "Veggie-spread", DisplayName = "Veggie-spread" });
+        columnMapping.Add(new HeaderMapping() { PropertyName = "Tofu", DisplayName = "Tofu" });
         columnMapping.Add(new HeaderMapping() { PropertyName = "Alice Mutton", DisplayName = "Alice Mutton" });
-        columnMapping.Add(new HeaderMapping() { PropertyName = "Konbu", DisplayName = "Konbu" });
-        columnMapping.Add(new HeaderMapping() { PropertyName = "Fløtemysost", DisplayName = "Fløtemysost" });
+        columnMapping.Add(new HeaderMapping() { PropertyName = "Donut", DisplayName = "Donut" });
+        columnMapping.Add(new HeaderMapping() { PropertyName = "Burger", DisplayName = "Burger" });
         columnMapping.Add(new HeaderMapping() { PropertyName = "Perth Pasties", DisplayName = "Perth Pasties" });
         CellMapping.ColumnMapping = columnMapping;
         HeaderMapping headerMapping = new HeaderMapping() { PropertyName = "Year", DisplayName = "Year", ColumnStyle = new ColumnStyle() { Width = 105, TextAlign = HeatMapTextAlign.Right } };
@@ -59,7 +59,7 @@ public partial class CellMapBinding : System.Web.UI.Page
     public Collection GetCellSource()
     {
         Collection collection = new Collection();
-        string[] name = { "Vegie-spread", "Tofuaa", "Alice Mutton", "Konbu", "Fløtemysost", "Perth Pasties" };
+        string[] name = { "Veggie-spread", "Tofu", "Alice Mutton", "Donut", "Burger", "Perth Pasties" };
         Random random = new Random();
 
         foreach (string item in name)
@@ -135,7 +135,7 @@ protected void Page_Load(object sender, EventArgs e)
     {
         Collection collection = new Collection();
         Random random = new Random();
-        string[] rows = { "Vegie-spread", "Tofuaa", "Alice Mutton", "Konbu", "Fløtemysost", "Perth Pasties", "Boston Crab Meat", "Raclette Courdavault" };
+        string[] rows = { "Veggie-spread", "Tofu", "Alice Mutton", "Donut", "Burger", "Perth Pasties", "Boston Crab Meat", "Rachele Burger" };
         for (int i = 0; i < 8; i++)
         {
             collection.Add(new SampleTableData()

@@ -184,7 +184,7 @@ When you move the editor’s wrapper element into another DOM element, the edito
 <script type="text/javascript">
     function appendTo() {
         var editor = $("#<%=RTE1.ClientID%>").ejRTE("instance");
-        editor._rteWapper.appendTo($("#<%=Dialog1.ClientID%>"));
+        editor._rteWrapper.appendTo($("#<%=Dialog1.ClientID%>"));
     }
     function refresh() {
         var editor = $("#<%=RTE1.ClientID%>").ejRTE("instance");
@@ -240,10 +240,10 @@ N> •	By default, the editor’s < iframe > is initialized with “Segoe UI” 
 <script type="text/javascript">
     function onChange() {
         var editor = $("#<%=RTE1.ClientID%>").ejRTE("instance");
-        var ddl = editor._fontStyleDDL.ejDropDownList("instance");
-        ddl.selectItemByIndex(7);
-        var ddlSize = editor._fontSizeDDL.ejDropDownList("instance");
-        ddlSize.selectItemByIndex(5);
+        var object = editor._fontStyleDDL.ejDropDownList("instance");
+        object.selectItemByIndex(7);
+        var dropdownSize = editor._fontSizeDDL.ejDropDownList("instance");
+        dropdownSize.selectItemByIndex(5);
     }
 </script>
 
@@ -326,12 +326,12 @@ If you want to add additional font names and sizes to font drop-down, pass the f
         var editor = $("#<%=RTE1.ClientID%>").ejRTE("instance");
         editor.defaults.fontName.push({ text: "Calibri Light", value: "CalibriLight" }, { text: "Calibri", value: "Calibri" });
         editor.defaults.fontSize.push({ text: "8 (42pt)", value: "8" });
-        var ddl = editor._fontStyleDDL.ejDropDownList("instance");
-        var ddlSize = editor._fontSizeDDL.ejDropDownList("instance");
-        ddl.option({ "dataSource": editor.defaults.fontName });
-        ddlSize.option({ "dataSource": editor.defaults.fontSize });
-        ddl.selectItemByValue("CalibriLight");
-        ddlSize.selectItemByValue("8");
+        var object = editor._fontStyleDDL.ejDropDownList("instance");
+        var dropdownSize = editor._fontSizeDDL.ejDropDownList("instance");
+        object.option({ "dataSource": editor.defaults.fontName });
+        dropdownSize.option({ "dataSource": editor.defaults.fontSize });
+        object.selectItemByValue("CalibriLight");
+        dropdownSize.selectItemByValue("8");
     }
 </script>
 

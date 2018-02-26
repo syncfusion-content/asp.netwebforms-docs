@@ -115,7 +115,7 @@ RangeNavigator with a range from 2010 January 1st to December 31st.
 
 ### Add series
 
-To add a series to RangeNavigator, you need to set DataSource property, as given in the following code example. 
+To add a series to RangeNavigator, you need to set `DataSource` property, as given in the following code example. 
 
 You can add JSON data to the Range Navigator using the Datasource property.
 
@@ -147,7 +147,7 @@ class NavigatorData
 
         {
 
-            private DateTime xdate;
+            private DateTime date;
 
 
 
@@ -155,15 +155,15 @@ class NavigatorData
 
             {
 
-                get { return xdate; }
+                get { return date; }
 
-                set { xdate = value; }
+                set { date = value; }
 
             }
 
 
 
-            private double yvalue;
+            private double value;
 
 
 
@@ -171,21 +171,21 @@ class NavigatorData
 
             {
 
-                get { return yvalue; }
+                get { return value1; }
 
-                set { yvalue = value; }
+                set { value1 = value; }
 
             }
 
 
 
-            public NavigatorData(DateTime xdate, double yvalue)
+            public NavigatorData(DateTime date, double value)
 
             {
 
-                this.xdate = xdate;
+                this.date = date;
 
-                this.yvalue = yvalue;
+                this.value = value;
 
             }
 
@@ -208,7 +208,7 @@ RangeNavigator with the type series as “line”.
 
 ### Enable tooltip
 
-Tooltip can be customized for RangeNavigator using Tooltip option. You can also use TooltipDisplayMode option in Tooltip to display the tooltip “always” or “ondemand” (displays tooltip only while dragging the sliders). You can also specify label format for tooltip using LabelFormat.
+Tooltip can be customized for RangeNavigator using `TooltipSettings` option. You can also use `TooltipDisplayMode` option in Tooltip to display the tooltip “always” or “ondemand” (displays tooltip only while dragging the sliders). You can also specify label format for tooltip using `LabelFormat`.
 
 {% highlight html %}
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" XName="xDate" YName="yValue">
@@ -230,9 +230,9 @@ RangeNavigator is used along with the controls like chart and grid to view the r
 
 In order to update chart, whenever the selected range changes in RangeNavigator, you need to use RangeChanged event of RangeNavigator and then update the chart with the selected data in this event. 
 
-Now, add the DataSource to the series and provide the field name to get the values from the DataSource in XName and YName options and also trigger the RangeChanged event for updating the chart.
+Now, add the DataSource to the series and provide the field name to get the values from the DataSource in `XName` and `YName` options and also trigger the RangeChanged event for updating the chart.
 
-{% tabs %}
+
 
 {% highlight c# %}
 List<NavigatorData> dataTable = new List<NavigatorData>();
@@ -281,25 +281,25 @@ this.RangeNavigator1.DataBind();
 
 </ej:Chart> 
 
-<ej:RangeNavigator ID="RangeNavigator1" runat="server" XName="xDate" YName="yValue" onClientSideRangeChanged="onrangechanged">
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" XName="xDate" YName="yValue" onClientSideRangeChanged="onRangeChanged">
 
 </ej:RangeNavigator>
 {% endhighlight %}
 
-{% endtabs %}
 
-The following code example illustrates how to use the RangeChanged event of RangeNavigator for updating the chart with the selected data.
+
+The following code example illustrates how to use the `RangeChanged` event of RangeNavigator for updating the chart with the selected data.
 
 {% highlight js %}
 <script type="text/javascript" language="javascript">
 
-function onrangechanged(sender) {
+function onRangeChanged(sender) {
 
-        var chartobj = $("#Chart1").data("ejChart");
+        var chartObj = $("#Chart1").data("ejChart");
 
-        if (chartobj != null) {
+        if (chartObj != null) {
 
-            chartobj.model.series[0].dataSource = sender.selectedData;
+            chartObj.model.series[0].dataSource = sender.selectedData;
 
             $("#Chart1").ejChart("redraw");
 
@@ -318,7 +318,7 @@ RangeNavigator is updated when the selected range is changed.
 
 ### Set value type
 
-RangeNavigator can also be used with numerical values. You can specify the data type using ValueType option. 
+RangeNavigator can also be used with numerical values. You can specify the data type using `ValueType` option. 
 
 First let’s create a DataSource for Chart Series with integer Values. 
 
@@ -347,45 +347,45 @@ class NavigatorData
 
 {
 
-	private double xdate;
+	private double date;
 
 	public double xDate
 
 	{
 
 		get {
-			return xdate;
+			return date;
 		}
 
 		set {
-			xdate = value;
+			date = value;
 		}
 
 	}
 
-	private double yvalue;
+	private double value1;
 
 	public double yValue
 
 	{
 
 		get {
-			return yvalue;
+			return value1;
 		}
 
 		set {
-			yvalue = value;
+			value1 = value;
 		}
 
 	}
 
-	public NavigatorData(double xdate, double yvalue)
+	public NavigatorData(double date, double value1)
 
 	{
 
-		this.xdate = xdate;
+		this.date = date;
 
-		this.yvalue = yvalue;
+		this.value1 = value1;
 
 	}
 

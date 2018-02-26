@@ -2,7 +2,7 @@
 layout: post
 title: Selection with Grid widget for Syncfusion Essential ASP
 description: How to enable selection and its functionalities
-platform: ejweb
+platform: aspnet
 control: Grid
 documentation: ug
 ---
@@ -81,11 +81,11 @@ The following code example describes the above behavior.
             {
 
             }
-            public Orders(int OrderId, int empId, string  shipcity, string shipCountry, double freight)
+            public Orders(int OrderId, int empId, string  shipCity, string shipCountry, double freight)
             {
                 this.OrderID = OrderId;
                 this.EmployeeID = empId;
-                this.ShipCity =  shipcity
+                this.ShipCity =  shipCity
                 this.ShipCountry = shipCountry;
                 this.Freight = freight;
             }
@@ -110,6 +110,7 @@ Select multiple rows in grid by using Checkbox column and it can be enabled by s
 
 If the `Field` property of Checkbox column is not defined, then it acts as a template column. So `Field` property is necessary to perform grid actions like sorting, editing, etc., for the corresponding Checkbox column.
 
+
 The following code example describes the above behavior.
 
 {% tabs %} 
@@ -118,7 +119,7 @@ The following code example describes the above behavior.
         <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" AllowSelection="true">
                <Columns>                
                   <ej:Column Type="checkbox" Width="50"/>
-                  <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+                  <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
                   <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
                   <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" />
                   <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}"/>
@@ -201,11 +202,11 @@ The following code example describes the above behavior.
                {
 
                }
-              public Orders(int OrderId, int empId, string  shipcity, string shipCountry, double freight)
+              public Orders(int OrderId, int empId, string  shipCity, string shipCountry, double freight)
                {
                  this.OrderID = OrderId;
                  this.EmployeeID = empId;
-                 this.ShipCity =  shipcity
+                 this.ShipCity =  shipCity
                  this.ShipCountry = shipCountry;
                  this.Freight = freight;
                }
@@ -285,11 +286,11 @@ The following code example describes the above behavior.
                {
 
                }
-              public Orders(int OrderId, int empId, string  shipcity, string shipCountry, double freight)
+              public Orders(int OrderId, int empId, string  shipCity, string shipCountry, double freight)
                {
                  this.OrderID = OrderId;
                  this.EmployeeID = empId;
-                 this.ShipCity =  shipcity
+                 this.ShipCity =  shipCity
                  this.ShipCountry = shipCountry;
                  this.Freight = freight;
                }
@@ -365,11 +366,11 @@ The following code example describes the above behavior.
                {
 
                }
-              public Orders(int OrderId, int empId, string  shipcity, string shipCountry, double freight)
+              public Orders(int OrderId, int empId, string  shipCity, string shipCountry, double freight)
                {
                  this.OrderID = OrderId;
                  this.EmployeeID = empId;
-                 this.ShipCity =  shipcity
+                 this.ShipCity =  shipCity
                  this.ShipCountry = shipCountry;
                  this.Freight = freight;
                }
@@ -444,11 +445,11 @@ The following code example describes the above behavior.
                {
 
                }
-              public Orders(int OrderId, int empId, string  shipcity, string shipCountry, double freight)
+              public Orders(int OrderId, int empId, string  shipCity, string shipCountry, double freight)
                {
                  this.OrderID = OrderId;
                  this.EmployeeID = empId;
-                 this.ShipCity =  shipcity
+                 this.ShipCity =  shipCity
                  this.ShipCountry = shipCountry;
                  this.Freight = freight;
                }
@@ -526,11 +527,11 @@ The following code example describes the above behavior.
                {
 
                }
-              public Orders(int OrderId, int empId, string  shipcity, string shipCountry, double freight)
+              public Orders(int OrderId, int empId, string  shipCity, string shipCountry, double freight)
                {
                  this.OrderID = OrderId;
                  this.EmployeeID = empId;
-                 this.ShipCity =  shipcity
+                 this.ShipCity =  shipCity
                  this.ShipCountry = shipCountry;
                  this.Freight = freight;
                }
