@@ -9,13 +9,13 @@ documentation: ug
 
 # Paging
 
-I> This feature is applicable only for OLAP data source.
+I> This feature is applicable only for the OLAP data source.
 
-Paging helps to improve the rendering performance of the PivotClient control by dividing large amount of data into sections and displaying one section at a time.
+Paging helps to improve the rendering performance of the pivot client control by dividing the large amount of data into sections and displaying one section at a time.
 
-## Using Pager 
+## Using pager 
 
-You can enable Pager in PivotClient by setting the [`EnablePaging`] property to true. You can provide the page size and current page details for each axis through [`PagerOptions`] property.
+You can enable the pager in the pivot client by setting the [`EnablePaging`] property to true. You can provide the page size and current page details for each axis through [`PagerOptions`] property.
 
 ### Client Mode
 
@@ -30,7 +30,7 @@ You can enable Pager in PivotClient by setting the [`EnablePaging`] property to 
 
 {% endhighlight %}
 
-### Server Mode
+### Server mode
 
 {% highlight html %}
 
@@ -38,22 +38,22 @@ You can enable Pager in PivotClient by setting the [`EnablePaging`] property to 
 
 {% endhighlight %}
 
-Following are the navigation option available in Pager.
+Following are the navigation options available in the pager:
 
-* Move First - Navigates to the first page.
-* Move Last - Navigates to the last page. 
-* Move Previous - Navigates to the previous page from the current page.
-* Move Next - Navigates to the next page from the current page.
-* Numeric Box - Navigates to the desired page by entering an appropriate page number in numeric value.
+* Move first: Navigates to the first page.
+* Move last: Navigates to the last page. 
+* Move previous: Navigates to the previous page from the current page.
+* Move next: Navigates to the next page from the current page.
+* Numeric box: Navigates to the desired page by entering an appropriate page number in numeric value.
 
 ![](Paging_images/paging.png)
 
 
-## Using Virtual Scrolling
+## Using virtual scrolling
 
-Virtual Scrolling is a technique that allows user to view the PivotClient information page by page with the use of vertical and horizontal scrollbar. You can enable Virtual Scrolling option in PivotClient by setting the [`EnableVirtualScrolling`] property to true. You can provide the page size and current page details for each axis through [`PagerOptions`] property. 
+The virtual scrolling is a technique that allows you to view the pivot client information page by page with the use of vertical and horizontal scrollbar. You can enable the virtual scrolling option in the pivot client by setting the [`EnableVirtualScrolling`] property to true. You can provide the page size and current page details for each axis through the [`PagerOptions`] property. 
 
-### Client Mode
+### Client mode
 
 {% highlight html %}
 
@@ -66,7 +66,7 @@ Virtual Scrolling is a technique that allows user to view the PivotClient inform
 
 {% endhighlight %}
 
-### Server Mode
+### Server mode
 
 {% highlight html %}
 
@@ -76,16 +76,16 @@ Virtual Scrolling is a technique that allows user to view the PivotClient inform
 
 ![](Paging_images/virtual-scrolling.png)
 
-## Page Settings
+## Page settings
 
 The properties associated to paging are:
-* EnablePaging – This property is used to enable/disable paging in PivotClient control.
-* PagerOptions.CategoricalPageSize - Specifies the number of categorical columns to be displayed within a page of the PivotClient control.
-* PagerOptions.SeriesPageSize - Specifies the number of series rows to be displayed within a page of the PivotClient control.
-* PagerOptions.CategoricalCurrentPage - Sets the current page of the categorical axis in PivotClient control.
-* PagerOptions.SeriesCurrentPage - Sets the current page of the series axis in PivotClient control.
+* EnablePaging: Enables/disables the paging in the pivot client control.
+* PagerOptions.CategoricalPageSize: Specifies the number of categorical columns to be displayed within a page of the pivot client control.
+* PagerOptions.SeriesPageSize: Specifies the number of series rows to be displayed within a page of the pivot client control.
+* PagerOptions.CategoricalCurrentPage: Sets the current page of the categorical axis in the pivot client control.
+* PagerOptions.SeriesCurrentPage: Sets the current page of the series axis in the pivot client control.
 
-For client mode, the page setting for categorical and series axes are mandatorily needed to be set in data source property by using the following properties.
+For client mode, the page setting for categorical and series axes should be set in the `DataSource` property by using the following properties:
 
 {% highlight html %}
 
@@ -98,7 +98,7 @@ For client mode, the page setting for categorical and series axes are mandatoril
 
 {% endhighlight %}
 
-For server mode, the page settings for categorical and series axes are done only through OlapReport object, created inside WebAPI or WCF file.
+For server mode, the page settings for categorical and series axes are done only through the OlapReport object that is created in the WebAPI or WCF file.
 
 {% highlight c# %}
 

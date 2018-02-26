@@ -7,11 +7,11 @@ control: PivotGauge
 documentation: ug
 ---
 
-# Layout 
+# Layout
 
-## Row-wise Layout
+## Row-wise layout
 
-Gauges can be arranged in specified number of rows by using the `RowsCount` property.
+The gauges can be arranged in specified number of rows by using the `RowsCount` property.
 
 {% highlight html %}
 
@@ -22,9 +22,9 @@ Gauges can be arranged in specified number of rows by using the `RowsCount` prop
 
 ![](Layout_images/RowBased.png) 
 
-## Column-wise Layout
+## Column-wise layout
 
-Gauges can be arranged in specified number of columns by using the `ColumnsCount` property.
+The gauges can be arranged in specified number of columns by using the `ColumnsCount` property.
 
 {% highlight html %}
 

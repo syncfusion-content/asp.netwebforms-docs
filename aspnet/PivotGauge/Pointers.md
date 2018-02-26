@@ -9,14 +9,14 @@ documentation: ug
 
 # Pointers
 
-## Pointer Types
+## Pointer types
 
-PivotGauge pointers has two types such as,
+The pivot gauge has two types of pointers namely,
 
 * Needle
 * Marker
 
-Needle type pointers are the default pointers which is always located at the center of the Gauge. Following shapes that are supported for the needle pointers are:
+Needle type pointer is the default pointer which is always located at the center of the gauge. Following are the supported shapes for needle pointers:
 
 * Rectangle
 * Triangle
@@ -40,7 +40,7 @@ Needle type pointers are the default pointers which is always located at the cen
 
 ![](Pointers_images/NeedlePointer.png) 
 
-For marker pointer, the available shapes are Rectangle, Triangle, Ellipse, Diamond, Pentagon, Circle, Slider, Pointer, Wedge, Trapezoid, RoundedRectangle and Image.
+For marker pointer, the available shapes are Rectangle, Triangle, Ellipse, Diamond, Pentagon, Circle, Slider, Pointer, Wedge, Trapezoid, RoundedRectangle, and Image.
 
 {% highlight html %}
 
@@ -58,9 +58,9 @@ For marker pointer, the available shapes are Rectangle, Triangle, Ellipse, Diamo
 
 ![](Pointers_images/MarkerPointer.png) 
 
-## Adding Pointer Collection
+## Adding pointer collection
 
-Pointer collection can be directly added to the scales option within the PivotGauge control. 
+The pointer collection can be directly added to the scales option within the pivot gauge control.
 
 {% highlight html %}
 
@@ -79,16 +79,16 @@ Pointer collection can be directly added to the scales option within the PivotGa
 
 ![](Pointers_images/AddingPointerCollection.png)
 
-## Appearance Customization
+## Appearance customization
 
-The appearance of the pointer can be customized through the following properties.
+The appearance of the pointer can be customized through the following properties:
 
-* **Border** – sets the “Color” and “Width” of the pointer border.
-* **BackgroundColor** – sets the background color of the pointer.
-* **Length** – sets the length of the pointer.
-* **Width** – sets the width of the pointer.
-* **Opacity** – sets the opacity of the pointer.  By default, the value is 1.
-* **Type** – sets the type of the pointer.  By default, the type is “Needle”.
+* **Border**: Sets the color and width of the pointer border.
+* **BackgroundColor**: Sets the background color of the pointer.
+* **Length**: Sets the length of the pointer.
+* **Width**: Sets the width of the pointer.
+* **Opacity**: Sets the opacity of the pointer. By default, the value is 1.
+* **Type**: Sets the type of the pointer. By default, the type is needle.
 
 {% highlight html %}
 
@@ -113,14 +113,14 @@ The appearance of the pointer can be customized through the following properties
 
 ![](Pointers_images/AppearanceCustomization.png) 
 
-## Pointer Position
+## Pointer position
 
-Pointer can be positioned with the help of below two properties.
+The pointer can be positioned with the help of the following two properties:
 
-* **DistanceFromScale** -  defines the distance between scale and pointer. By default, the value is 0.
-* **Placement** -  defines the location of the pointer. By default, the value is “Center”.
+* **DistanceFromScale**: Defines the distance between the scale and the pointer. By default, the value is 0.
+* **Placement**: Defines the location of the pointer. By default, the value is center.
 
-N> Both the properties can be applied only if the pointer type is set to “Marker”. Needle pointer type appears only at the center of the control, which is its default position.
+N> Both the properties can be applied only if the pointer type is set to marker. The needle type pointer appears only at the center of the control, which is its default position.
 
 {% highlight html %}
 
@@ -139,9 +139,9 @@ N> Both the properties can be applied only if the pointer type is set to “Mark
 
 ![](Pointers_images/PointerPosition.png)
 
-## Pointer Image
+## Pointer image
 
-It is possible to replace the pointers with image. To view the pointers as image, we need to set the appropriate location in the `ImageUrl` property.
+It is possible to replace the pointers with an image. To view the pointers as an image, set the appropriate location in the `ImageUrl` property.
 
 {% highlight html %}
 
@@ -162,16 +162,16 @@ It is possible to replace the pointers with image. To view the pointers as image
 
 ![](Pointers_images/PointerImage.png)
 
-## Pointer Value Text
+## Pointer value text
 
-To display the current value of the pointers in PivotGauge control, **"PointerValueText"** option inside pointers is used.  Following are the properties used to enable and customize the pointer value text.
+To display the current value of pointers in the pivot gauge control, the **"PointerValueText"** option is used. Following are the properties used to enable and customize the pointer value text:
  
-* **ShowValue** – enables the pointer value text by setting the property to “true”. By default, its value is “true”.
-* **Distance** – sets the distance between pointer and text.
-* **Color** – sets the color of the text.
-* **Opacity** – sets the opacity of the text. By default, its value is 1.
-* **Angle** – sets the rotation angle of the text. By default, its value is 0.
-* **Font** – sets the font size, font style and font family of the text.
+* **ShowValue**: Enables the pointer value text by setting the property to true. By default, its value is true.
+* **Distance**: Sets the distance between pointer and text.
+* **Color**: Sets the color of the text.
+* **Opacity**: Sets the opacity of the text. By default, its value is 1.
+* **Angle**: Sets the rotation angle of the text. By default, its value is 0.
+* **Font**: Sets the font size, font style, and font family of the text.
 
 {% highlight html %}
 

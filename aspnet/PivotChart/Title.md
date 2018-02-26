@@ -9,9 +9,9 @@ documentation: ug
 
 # Title
 
-## Title Text
+## Title text
 
-By using the `Title.text` property, you can add the title text for PivotChart.
+By using the `Title.text` property, you can add the title text for the pivot chart control.
 
 {% highlight html %}
 
@@ -25,9 +25,9 @@ By using the `Title.text` property, you can add the title text for PivotChart.
 
 ![](Title_images/Title_img1.png)
 
-## Title Alignment
+## Title alignment
 
-By using the `Title.TextAlignment` property, you can align the PivotChart controls title text to center, far or near.
+By using the `Title.TextAlignment` property, you can align the title text to center, far, or near of the pivot chart control.
 
 {% highlight html %}
 
@@ -41,9 +41,9 @@ By using the `Title.TextAlignment` property, you can align the PivotChart contro
 
 ![](Title_images/Title_img2.png)
 
-## Title Customization
+## Title customization
 
-By using the `Title` property, you can add the title text for X-axis and Y-axis. Also title text can be customized by using the `Text` and `Font` properties. On setting `EnableTrim` to true, title text could be trimmed based on its length.
+By using the `Title` property, you can add the title text for X-axis and Y-axis. The title text can be customized by using the `Text` and `Font` properties. By setting the `EnableTrim` to true, the title text can be trimmed based on its length.
 
 {% highlight html %}
 

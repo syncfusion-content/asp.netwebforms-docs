@@ -9,7 +9,7 @@ documentation: ug
 
 # Animation
 
-The animation option makes the pointer to rotate from minimum value to actual value with animation effects.  Animation could be enabled/disabled by using the `EnableAnimation` property.  Speed of the pointer could be controlled by using the `AnimationSpeed` property. Time is represented in milliseconds.
+The animation option makes the pointer to rotate from minimum value to actual value with animation effects. This option can be enabled/disabled by using the `EnableAnimation` property. The speed of the pointer can be controlled by using the `AnimationSpeed` property. The time is represented in milliseconds.
 
 {% highlight html %}
 

@@ -9,11 +9,11 @@ documentation: ug
 
 # Legend
 
-## Legend Visibility
+## Legend visibility
 
-You can enable or disable legend using the `Visible` property inside the `Legend` object.
+You can enable or disable the legend by using the `Visible` property in the `Legend` object.
 
-N> By default, the legend is visible in PivotChart.
+N> By default, the legend is visible in the pivot chart.
 
 {% highlight html %}
 
@@ -27,9 +27,9 @@ N> By default, the legend is visible in PivotChart.
 
 ![](Legend_images/Legend_img1.png) 
 
-## Legend Shape
+## Legend shape
 
-You can customize the legend `Shape` in PivotChart control. Default value of legend shape is “rectangle”. Following legend shapes that are supported:
+You can customize the legend `Shape` in the pivot chart control. The default value of legend shape is rectangle. Following are the supported legend shapes:
 
 * rectangle
 * circle
@@ -53,11 +53,11 @@ You can customize the legend `Shape` in PivotChart control. Default value of leg
 
 ![](Legend_images/Legend_img2.png) 
 
-## Legend Position
+## Legend position
 
-By using the `Position` property, you can place the legend at top, bottom, left or right of the PivotChart. 
+By using the `Position` property, you can place the legend at top, bottom, left, or right of the pivot chart.
 
-N> Default value of legend position is "bottom" in PivotChart.
+N> The default value of legend position is bottom in the pivot chart.
 
 {% highlight html %}
 
@@ -71,9 +71,9 @@ N> Default value of legend position is "bottom" in PivotChart.
 
 ![](Legend_images/Legend_img3.png) 
 
-## Legend Title
+## Legend title
 
-To add the legend title, you have to specify the title text in `Title.text` property.
+To add the legend title, you should specify the title text in the `Title.text` property.
 
 {% highlight html %}
 
@@ -89,9 +89,9 @@ To add the legend title, you have to specify the title text in `Title.text` prop
 
 ![](Legend_images/Legend_img4.png) 
 
-## Legend Alignment
+## Legend alignment
 
-You can align the legend to center, far and near based on its position in the Chart area using the `Alignment` option.
+You can align the legend to center, far, and near based on its position in the chart area by using the `Alignment` option.
  
 {% highlight html %}
 
@@ -105,9 +105,9 @@ You can align the legend to center, far and near based on its position in the Ch
 
 ![](Legend_images/Legend_img5.png)
 
-## Legend Items - Size and Border
+## Legend items - size and border
 
-By using the legend `ItemStyle.Width`, `ItemStyle.Height` and `ItemStyle.Border` properties, you can change the legend items - size and border.
+By using the legend `ItemStyle.Width`, `ItemStyle.Height`, and `ItemStyle.Border` properties, you can change the size and border of the legend items.
 
 {% highlight html %}
 
@@ -121,9 +121,9 @@ By using the legend `ItemStyle.Width`, `ItemStyle.Height` and `ItemStyle.Border`
 
 ![](Legend_images/Legend_img6.png)
  
-## Legend Border
+## Legend border
 
-By using the `Border` option in legend, you can customize border color and width.
+By using the `Border` option in the legend, you can customize the border color and width.
 
 {% highlight html %}
 
@@ -137,9 +137,9 @@ By using the `Border` option in legend, you can customize border color and width
 
 ![](Legend_images/Legend_img7.png)
 
-## Legend Text
+## Legend text
 
-By using the `Font` option, you can customize the font family, font style, font weight and size of the legend text. 
+By using the `Font` option, you can customize the font family, font style, font weight, and size of the legend text.
 
 {% highlight html %}
 

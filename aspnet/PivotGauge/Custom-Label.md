@@ -9,9 +9,9 @@ documentation: ug
 
 # Custom labels
 
-## Adding Custom Label Collection
+## Adding custom label collection
 
-You can apply custom custom label Collection by using `CustomLabelCollection` which can be directly added to the scales option within the PivotGauge control.
+You can apply the custom label collection by using the `CustomLabelCollection` which can be directly added to the scales option within the pivot gauge control.
 
 {% highlight html %}
 
@@ -29,14 +29,14 @@ You can apply custom custom label Collection by using `CustomLabelCollection` wh
 
 {% endhighlight %}
 
-## Appearance Customization
+## Appearance customization
 
-The appearance of the custom labels can be changed through the following properties.
+The appearance of the custom labels can be changed through the following properties:
 
-* **Position** – used to set the position of the labels.
-* **Font** – sets the font size, font style and font family of the label text.
-* **Color** – sets the color of the label text.
-* **TextAngle** – rotates the label to a specified angle. By default, the value is 0.
+* **Position**: Sets the position of the labels.
+* **Font**: Sets the font size, font style, and font family of the label text.
+* **Color**: Sets the color of the label text.
+* **TextAngle**: Rotates the label to a specified angle. By default, the value is 0.
 
 {% highlight html %}
 
@@ -57,9 +57,9 @@ The appearance of the custom labels can be changed through the following propert
 
 ![](Custom-Label_images/AppearanceCustomization.png) 
 
-## Multiple Custom Labels
+## Multiple custom labels
 
-Multiple ranges can be added in `CustomLabelCollection` to the scales option within the PivotGauge control.
+Multiple ranges can be added in the `CustomLabelCollection` to the scales option within the pivot gauge control.
 
 {% highlight html %}
 
