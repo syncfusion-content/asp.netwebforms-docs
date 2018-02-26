@@ -9,9 +9,9 @@ documentation: ug
 
 # Tooltip
 
-Tooltip can be enabled by using the `EnableTooltip` property. 
+The tooltip can be enabled by using the `EnableTooltip` property. 
 
-N> By default, this property is set to "false".
+N> By default, the property is set to false.
 
 {% highlight html %}
 
@@ -20,7 +20,7 @@ N> By default, this property is set to "false".
 
 {% endhighlight  %}
 
-Tooltip appearance can be customized by overriding its CSS class.
+The tooltip appearance can be customized by overriding its CSS class.
 
 {% highlight css %}
 

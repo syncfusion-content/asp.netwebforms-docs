@@ -7,9 +7,9 @@ control: PivotClient
 documentation: ug
 ---
 
-# Responsive Layout
+# Responsive layout
 
-PivotClient control supports responsive rendering based on the target device (desktop & tablet) resolution. It supports resolution upto 1024x600. You can enable responsiveness in PivotClient by setting `IsResponsive` property to true.
+The pivot client control supports responsive rendering based on the target device (desktop and tablet) resolution. It supports resolution upto 1024x600. You can enable responsiveness in the pivot client by setting the `IsResponsive` property to true.
 
 {% highlight html %}
 

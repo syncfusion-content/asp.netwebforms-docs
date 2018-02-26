@@ -8,19 +8,19 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting started
 
-## Creating a simple application with PivotClient and Relational datasource (Client Mode)
+## Creating a simple application with pivot client and relational data sources (client mode)
 
-This section covers the information that you need to know to populate a simple PivotClient with Relational data completely on the client-side.
+This section covers the information required to populate a simple pivot client with relational data completely on the client-side.
 
-## Project Initialization
+## Project initialization
 
-Create a new **ASP.NET Empty Web Application** using Visual Studio IDE and name the project as **“PivotClientDemo”**.
+Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project **“PivotClientDemo”**.
 
-Now add a “Web Form” to the Empty Web Application. For adding a “Web Form”, right-click on the project in Solution Explorer and select **Add > New Item**. In the Add New Item window, select “Web Form” and name it as GettingStarted.aspx and click “Add”.
+Now, add a Web Form to the empty web application. For adding a Web Form, right-click the project in the solution explorer and select **Add > New Item**. In the Add New Item window, select Web Form and name it  GettingStarted.aspx, and then click Add.
 
-Now add the following dependency libraries as references into your Web Application. In order to add them to your application, right-click on **References** in Solution Explorer and select Add Reference. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
+Now, add the following dependency libraries as references to your web application. To add them to your application, right-click **References** in the solution explorer and select Add Reference. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
 
 * Syncfusion.EJ
 * Syncfusion.EJ.Pivot
@@ -41,16 +41,16 @@ Register the referred assemblies in Web.config files available at the root of th
 </compilation>
 {% endhighlight %}
 
-### Scripts and CSS References  
+### Scripts and CSS references  
 
-create a GettingStarted.aspx page and scripts and style sheets that are mandatorily required to render PivotClient control in a Web Application are mentioned in an appropriate order below:
+Create a GettingStarted.aspx page, and scripts and style sheets that are required to render the pivot client control in a web application are mentioned below in an appropriate order:
 
 1. ej.web.all.min.css
 2. jQuery-3.0.0.min.js
 3. ej.web.all.min.js
 4. jsrender.min.js
 
-Scripts and style sheets are referred under the <head> tag in GettingStarted.aspx page.
+Scripts and style sheets are referred under the <head> tag in the GettingStarted.aspx page.
 
 {% highlight html %}    
 
@@ -64,11 +64,11 @@ Scripts and style sheets are referred under the <head> tag in GettingStarted.asp
 
 {% endhighlight %}
 
-### Initialize PivotClient
+### Initialize pivot client
 
-Either drag and drop the PivotClient control from the toolbox (under Syncfusion BI Web category) or manually define the control like in the below code sample inside "GettingStarted.aspx" page.
+You can drag and drop the pivot client control from the toolbox (under Syncfusion BI Web category) or manually define the control as shown in the following code sample of the "GettingStarted.aspx" page.
 
-Once the control is placed into the web page, add **'ScriptManager'** next to it in-order to generate appropriate scripts.
+After placing the control into the web page, add **'ScriptManager'** next to it to generate appropriate scripts.
 
 {% highlight html %}
 
@@ -91,8 +91,8 @@ Once the control is placed into the web page, add **'ScriptManager'** next to it
 
 {% endhighlight %}
 
-### Populate PivotClient With Data
-Let us now see how to populate the PivotClient control using a sample JSON data as shown below.
+### Populate pivot client with data
+This section illustrates how to populate the pivot client control by using a sample JSON data as shown below:
 
 {% highlight html %}
 
@@ -133,7 +133,7 @@ Let us now see how to populate the PivotClient control using a sample JSON data 
      
 {% endhighlight %}
      
-The JSON data is set to the **"data"** property present inside the **"dataSource"** object. **"dataSource"** object allows us to set both datasource as well as the fields that needs to be displayed in the row, column, value and filter section of the PivotClient control.
+The JSON data is set to the **"Data"** property present in the **"DataSource"** object. The **"DataSource"** object allows you to set both data source and fields that should be displayed in the row, column, value, and filter section of the pivot client control.
 
 {% highlight html %}
   
@@ -154,25 +154,25 @@ The JSON data is set to the **"data"** property present inside the **"dataSource
 
 {% endhighlight %}
 
-Now, PivotClient is rendered with PivotChart and PivotGrid with "Country" field in Row, "Product" field in Column and "Amount" field in Value section.
+Now, the pivot client is rendered with pivot chart, and the pivot grid is rendered with "Country" field in the row, "Product" field in the column, and "Amount" field in the value section.
 
 ![](Getting-Started_images/purejs.png)
 
-## Creating a simple application with PivotClient and Relational datasource(Server Mode)
+## Creating a simple application with pivot client and relational data sources(server mode)
 
-This section covers the information required to create a simple PivotClient bound to Relational datasource. 
+This section covers the information required to create a simple pivot client bound to relational data source.
 
-N> ASP.NET MVC Web Application will contain a service that transfers data to server-side, processes and returns back to client-side for control rendering and re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement.
+N> ASP.NET MVC web application contains a service that will transfer the data to server-side, process it, and return it to client-side for control rendering and re-rendering. The service utilized for communication can be WCF or WebAPI based on user requirement.
 
-### Project Initialization
+### Project initialization
 
-Create a new **ASP.NET Empty Web Application** using Visual Studio IDE and name the project as **“PivotClientDemo”**.
+Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project **“PivotClientDemo”**.
 
-Now add a “Web Form” to the Empty Web Application. For adding a “Web Form”, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select “Web Form” and name it as `GettingStarted.aspx` and click “Add”.
+Now, add a Web Form to the empty web application. For adding a Web Form, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select Web Form and name it `GettingStarted.aspx`, and then click Add.
 
-To set an appropriate start page, right-click on the **“GettingStarted.aspx”** in Solution Explorer and select **“Set As Start Page”**.
+To set an appropriate start page, right-click the **“GettingStarted.aspx”** in the solution explorer and select **“Set As Start Page”**.
 
-Now add the following dependency libraries as references into your Web Application. In order to add them to your application, right-click on **References** in Solution Explorer and select **Add Reference**. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.  
+Now, add the following dependency libraries as references to your web application. To add them to your application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
 
 N> If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
@@ -189,18 +189,18 @@ N> If you have installed any version of Essential Studio, then the location of S
 * Syncfusion.EJ.Export
 * Syncfusion.EJ.Pivot
 
-### Scripts and CSS Initialization
+### Scripts and CSS initialization
 
-The scripts and style sheets that are mandatorily required to render PivotClient control in a Web Application are mentioned in an appropriate order below:
+The scripts and style sheets that are required to render the pivot client control in a web application are mentioned below in an appropriate order:
 
 1. ej.web.all.min.css
 2. jQuery-3.0.0.min.js
 3. ej.web.all.min.js
 4. jsrender.min.js
 
-[Click here](http://help.syncfusion.com/js/cdn) to know more about scripts and style sheets available online (CDN Link).
+[Click here](http://help.syncfusion.com/js/cdn) to know more about scripts and style sheets available in online (CDN link).
 
-Scripts and style sheets are referred under the <head> tag in **GettingStarted.aspx** page.
+Scripts and style sheets are referred under the <head> tag in the **GettingStarted.aspx** page.
 
 {% highlight html %}
 
@@ -213,11 +213,11 @@ Scripts and style sheets are referred under the <head> tag in **GettingStarted.a
 
 {% endhighlight %}
 
-### Control Initialization
+### Control initialization
 
-Either drag and drop the **PivotClient** control from the toolbox (under **Syncfusion BI Web** category) or manually define the control like in the below code sample inside **"GettingStarted.aspx"** page.
+You can drag and drop the **pivot client** control from the toolbox (under **Syncfusion BI Web** category) or manually define the control as shown in the following code sample of the **"GettingStarted.aspx"** page:
  
-Once the control is placed into the web page, add **'ScriptManager'** next to it in-order to generate appropriate scripts.
+After placing the control into the web page, add **'ScriptManager'** next to it to generate appropriate scripts.
 
 {% highlight html %}
 
@@ -237,11 +237,11 @@ Once the control is placed into the web page, add **'ScriptManager'** next to it
 
 {% endhighlight %}
 
-The **“Url”** property in PivotClient control points the service endpoint, where data are processed and fetched in the form of JSON. The services used in PivotClient control as endpoint are WCF and WebAPI.
+The **“Url”** property in the pivot client control points the service endpoint, where the data is processed and fetched in the form of JSON. The services used in the pivot client control as endpoint are WCF and WebAPI.
 
-N> The above “GettingStarted.aspx” contains WebAPI URL, which is “/Relational”. If WCF service is used as endpoint, the URL would look like “/RelationalService.svc”.
+N> The above “GettingStarted.aspx” contains WebAPI URL, which is “/Relational”. If the WCF service is used as an endpoint, then the URL will look like “/RelationalService.svc”.
 
-If you are manually entering the code instead of drag and drop operation from toolbox, then you need to register the referenced assemblies in Web.config file. 
+If you enter the code manually instead of drag and drop from the toolbox, then you can register the referenced assemblies in the Web.config file.
 
 {% highlight xml %}
 
@@ -268,15 +268,15 @@ If you are manually entering the code instead of drag and drop operation from to
 
 ### WebAPI
 
-**Adding a WebAPI Controller**
+**Adding a WebAPI controller**
 
-To add a WebAPI controller in an existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **WebAPI Controller Class** and name it as `RelationalController.cs`, click Add.
+To add a WebAPI controller in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **WebAPI Controller Class** and name it `RelationalController.cs`, and then click Add.
 
-Now, WebAPI controller is added to the application successfully containing the file **"RelationalController.cs"**.
+Now, the WebAPI controller is added to the application that comprises the **"RelationalController.cs"** file.
 
-N> While adding WebAPI Controller Class, name it with the suffix 'Controller' that is mandatory. For example, in this demo the controller is named as "RelationalController".
+N> While adding the WebAPI controller class, add the mandatory suffix 'Controller'. For example, in this demo, the controller is named as "RelationalController".
 
-Next, remove all the existing methods such as "Get", "Post", "Put" and "Delete" present inside `RelationalController.cs` file.
+Next, remove all existing methods such as "Get", "Post", "Put", and "Delete" present in the `RelationalController.cs` file.
 
 {% highlight c# %}
 
@@ -290,9 +290,9 @@ namespace PivotClientDemo
 
 {% endhighlight %}
 
-**Adding the List of Namespaces**
+**Adding the list of namespaces**
 
-The following are the list of namespaces to be added on top of the main class inside `RelationalController.cs` file.
+The following is the list of namespaces to be added on top of the main class in the `RelationalController.cs` file:
 
 {% highlight c# %}
 
@@ -319,9 +319,9 @@ namespace PivotClientDemo
 
 {% endhighlight %}
 
-**Datasource Initialization**
+**Data source initialization**
 
-A simple collection is provided as a datasource for our PivotClient in this demo section. This datasource is placed inside a separate class named "ProductSales" in `RelationalController.cs` file. Please find the code sample below.
+A simple collection is provided as a data source for the pivot client in this demo section. This data source is placed inside a separate class named "ProductSales" in the `RelationalController.cs` file. Please find the code sample below:
 
 {% highlight c# %}
 
@@ -434,9 +434,9 @@ internal class ProductSales
 
 {% endhighlight %}
 
-**Service methods in WebAPI Controller**
+**Service methods in WebAPI controller**
 
-Now you need to define the service methods inside RelationalController class, found inside `RelationalController.cs` file, created while adding WebAPI Controller Class to your Web Application.
+Now, you can define the service methods in the RelationalController class, find in the `RelationalController.cs` file which was created while adding the WebAPI controller class to your web application.
 
 {% highlight c# %}
 
@@ -661,9 +661,9 @@ namespace PivotClientDemo
 
 {% endhighlight %}
 
-**Configure routing in Global Application Class**
+**Configure routing in the global application class**
 
-To add a Global.asax, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **Global Application Class** and name it as `Global.asax`, click **Add**. After the addition of **Global.asax** file, immediately add the namespace **“using System.Web.Http;”** and then you can configure routing like in the following code example.
+To add a Global.asax, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **Global Application Class** and name it `Global.asax`, and then click **Add**. After adding the **Global.asax** file, immediately add the namespace **“using System.Web.Http;”**, and then configure the routing as shown in the following code example:
 
 {% highlight c# %}
 
@@ -681,13 +681,13 @@ public class Global: System.Web.HttpApplication
 
 {% endhighlight %}
 
-Now, **PivotClient** is rendered with PivotChart and PivotGrid with "Country" field in Row, "Product" field in Column and "Amount" field in Value section.
+Now, the **pivot client** is rendered with the pivot chart, and the pivot grid is rendered with "Country" field in the row, "Product" field in the column, and "Amount" field in the value section.
 
 ![](Getting-Started_images/relaionalwebapi.png) 
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotClient. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/pivotclient/relational-connectivity#wcf-1).
+This section demonstrates the utilization of WCF service as endpoint binding the relational data source to a simple pivot client. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/pivotclient/relational-connectivity#wcf-1).
 
 
 

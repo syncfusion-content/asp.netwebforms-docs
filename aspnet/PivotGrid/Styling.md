@@ -9,7 +9,7 @@ documentation: ug
 
 # Styling
 
-By default, PivotGrid supports **17** different themes.
+By default, the pivot grid supports the following **17** different types of themes:
 
 * default-theme
 * flat-azure-dark
@@ -29,13 +29,13 @@ By default, PivotGrid supports **17** different themes.
 * material
 * office-365
 
-You can also customize the appearance of the following component manually.
+You can customize the appearance of the following component manually:
 
-* PivotGrid
-* Grouping Bar 
-* PivotTable Field List
+* Pivot grid
+* Grouping bar 
+* Pivot table field list
 
-To change the appearance of PivotGrid, apply the below customized CSS.
+To change the appearance of the pivot grid, apply the below customized CSS:
 
 {% highlight CSS %}
 
@@ -70,7 +70,7 @@ To change the appearance of PivotGrid, apply the below customized CSS.
 
 ![](Styling_images/customtheme-pivotgrid.png)
 
-To change the appearance of Grouping Bar, apply the below customized CSS.
+To change the appearance of the grouping bar, apply the below customized CSS:
 
 {% highlight CSS %}
 
@@ -99,7 +99,7 @@ To change the appearance of Grouping Bar, apply the below customized CSS.
 
 ![](Styling_images/customtheme-groupingbar.png)
 
-To change the appearance of PivotTable Field List, apply the below customized CSS.
+To change the appearance of the pivot table field list, apply the below customized CSS:
 
 {% highlight CSS %}
 
@@ -125,5 +125,5 @@ To change the appearance of PivotTable Field List, apply the below customized CS
 
 ![](Styling_images/customtheme-fieldist.png)
 
-You can also customize the appearance of the Pivot component using our Theme Studio utility. To know more about Theme Studio [click here](/aspnet/pivotgrid/styling). 
+You can also customize the appearance of the pivot component by using the theme studio utility. To know more about the theme studio [click here](/aspnet/pivotgrid/styling).
 

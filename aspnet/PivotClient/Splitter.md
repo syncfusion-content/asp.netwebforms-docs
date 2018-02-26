@@ -9,9 +9,9 @@ documentation: ug
 
 # Splitter
 
-I> This feature is not applicable for OLAP datasource  bound from server-side. 
+I> This feature is not applicable for the OLAP data source that is bound from the server-side.
 
-You can resize Cube Dimension Browser and Axis Element Builder by setting EnableSplitter property to true.This property is disabled by default.
+You can resize the cube dimension browser and axis element builder by setting the `EnableSplitter` property to true. This property is disabled by default.
 
 {% highlight html %}
 

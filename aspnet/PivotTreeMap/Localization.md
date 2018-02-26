@@ -9,11 +9,11 @@ documentation: ug
 
 # Localization
 
-## Localization and Globalization of Cube Info (Client Mode)
+## Localization and globalization of cube info (client mode)
 
-Content displayed within the PivotTreeMap control are obtained from the OLAP Cube. So following are the steps that needs to be done to get the localized and globalized Cube content.
+The content displayed within the pivot tree map control is obtained from the OLAP cube. The following are the steps that should be done to get the localized and globalized cube content:
 
-* To get localized data from OLAP Cube, we need to set **"Locale Identifier"** in the connection string to a specific culture in the **"data"** property present inside **"dataSource"**. 
+* To get the localized data from the OLAP cube, set the **"Locale Identifier"** in the connection string to a specific culture of the **"Data"** property present in the **"DataSource"**.
 
 {% highlight js %}
 
@@ -26,12 +26,12 @@ Content displayed within the PivotTreeMap control are obtained from the OLAP Cub
 
 {% endhighlight %}
 
-## Localization and Globalization of Cube Info (Server Mode)
+## Localization and globalization of cube info (server mode)
 
-Content displayed within the PivotTreeMap control are obtained from the OLAP Cube. So following are the steps that needs to be done to get the localized and globalized Cube content.
+The content displayed within the pivot tree map control is obtained from the OLAP cube. The following are the steps that should be done to get the localized and globalized cube content.
 
-* To get the localized string based on different cultures, from OLAP Cube, we need to set **"Locale Identifier"** in the connection string to a specific culture. 
-* To bind the globalized content in PivotTreeMap control, we need to set **"Culture"** and **"OverrideDefaultFormatStrings"** properties in OlapDataManager class to a specific culture. 
+* To get the localized string based on different cultures, set the **"Locale Identifier"** in the connection string to a specific culture in the OLAP cube. 
+* To bind the globalized content in the pivot tree map control, set **"Culture"** and **"OverrideDefaultFormatStrings"** properties in the OlapDataManager class to a specific culture.
  
 {% highlight c# %}
 

@@ -7,19 +7,19 @@ control: PivotChart
 documentation: ug
 ---
 
-# 3D Visualization
+# 3D visualization
 
-The PivotChart control allows you to view the data in a 3D view. Following are the chart types that are supported:
+The pivot chart control allows you to view the data in a 3D view. Following are the chart types that are supported:
 
 * Bar
 * Column
-* Stacking Bar
-* Stocking Column 
+* Stacking bar
+* Stacking column 
 * Pie
 
-## 3D Column Chart
+## 3D column chart
 
-3D Column Chart is rendered by specifying the chart type as **“Column”** in the **“CommonSeriesOptions”** enumeration property as well as by setting the `Enable3D` property to **“true”.**
+The 3D column chart is rendered by specifying the chart type as **“Column”** in the **“CommonSeriesOptions”** enumeration property and setting the `Enable3D` property to **true.**
 
 {% highlight html %}
 
@@ -33,9 +33,9 @@ The PivotChart control allows you to view the data in a 3D view. Following are t
 
 ![](3D-Visualization_images/column3d.png)
 
-## 3D Bar Chart
+## 3D bar chart
 
-3D Bar Chart is rendered by specifying the chart type as **“Bar”** in the **“CommonSeriesOptions”** enumeration property as well as by setting the `Enable3D` property to **“true”.**
+The 3D bar chart is rendered by specifying the chart type as **“Bar”** in the **“CommonSeriesOptions”** enumeration property and setting the `Enable3D` property to **true.**
 
 {% highlight html %}
 
@@ -49,9 +49,9 @@ The PivotChart control allows you to view the data in a 3D view. Following are t
 
 ![](3D-Visualization_images/bar3d.png)
 
-## 3D Stacking Bar Chart
+## 3D stacking bar chart
 
-3D Stacking Bar Chart is rendered by specifying the chart type as **“Stacking Bar”** in the **“CommonSeriesOptions”** enumeration property as well as by setting the `Enable3D` property to **“true”.**
+3D stacking bar chart is rendered by specifying the chart type as **“Stacking Bar”** in the **“CommonSeriesOptions”** enumeration property and setting the `Enable3D` property to **true.**
 
 {% highlight html %}
 
@@ -65,9 +65,9 @@ The PivotChart control allows you to view the data in a 3D view. Following are t
 
 ![](3D-Visualization_images/stackingbar3d.png)
 
-## 3D Stacking Column Chart
+## 3D stacking column chart
 
-3D Stacking Column Chart is rendered by specifying the chart type as **“Stacking Column”** in the **“CommonSeriesOptions”** enumeration property as well as by setting the `Enable3D` property to **“true”.**
+The 3D stacking column chart is rendered by specifying the chart type as **“Stacking Column”** in the **“CommonSeriesOptions”** enumeration property and setting the `Enable3D` property to **true.**
 
 {% highlight html %}
 
@@ -81,9 +81,9 @@ The PivotChart control allows you to view the data in a 3D view. Following are t
 
 ![](3D-Visualization_images/stackingcolumn3d.png)
 
-## 3D Pie Chart
+## 3D pie chart
 
-3D Pie Chart is rendered by specifying the chart type as **"Pie"** in the **"CommonSeriesOptions"** enumeration property as well as by setting the `Enable3D` property to **“true”.**
+The 3D pie chart is rendered by specifying the chart type as **"Pie"** in the **"CommonSeriesOptions"** enumeration property and setting the `Enable3D` property to **true.**
 
 {% highlight html %}
 
@@ -97,9 +97,9 @@ The PivotChart control allows you to view the data in a 3D view. Following are t
 
 ![](3D-Visualization_images/pie3d.png)
 
-## Rotating 3D Chart
+## Rotating 3D chart
 
-We can rotate the 3D Chart towards left or right by setting an appropriate angle value to the `Rotation` property. The direction of the Chart display depends upon the positive or negative angle value.
+You can rotate the 3D chart towards left or right by setting an appropriate angle value to the `Rotation` property. The direction of the chart display depends on the positive or negative angle value.
 
 {% highlight html %}
 

@@ -7,11 +7,11 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Summary Type
+# Summary type
 
-I> This feature is applicable only for Relational datasource only at Client Mode.
+I> This feature is applicable only for the relational data source only at client mode.
 
-Allow us to specify the required summary type that PivotGrid should use in its summary cells. “Sum” is the default summary type. Following summary types that are supported:
+Allows you to specify the required summary type to be used in the summary cells of the pivot grid. The sum is the default summary type. Following are the summary types that are supported:
 
 * Sum
 * Average

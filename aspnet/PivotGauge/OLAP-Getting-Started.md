@@ -7,19 +7,19 @@ control: PivotGauge
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
-## Creating a simple application with PivotGauge and OLAP datasource (Client Mode)
+## Creating a simple application with pivot gauge and OLAP data sources (client mode)
 
-This section covers the information required to populate a simple PivotGauge with OLAP data completely on the client-side.
+This section covers the information required to populate a simple pivot gauge with OLAP data completely on the client-side.
 
-## Project Initialization
+## Project initialization
 
-Create a new **ASP.NET Empty Web Application** using Visual Studio IDE and name the project as **“PivotGaugeDemo”**.
+Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project **“PivotGaugeDemo”**.
 
-Now add a “Web Form” to the ASP.NET Empty Web Application. For adding a “Web Form”, right-click on the project in Solution Explorer and select **Add > New Item**. In the Add New Item window, select “Web Form” and name it as Default.aspx and click “Add”.
+Now, add a Web Form to the ASP.NET empty web application. For adding a Web Form, right-click the project in the solution explorer and select **Add > New Item**. In the Add New Item window, select Web Form and name it Default.aspx, and then click Add.
 
-Now add the following dependency libraries as references into your Web Application. In order to add them to your application, right-click on **References** in Solution Explorer and select Add Reference. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
+Now, add the following dependency libraries as references to your web application. To add them to your application, right-click **References** in the solution explorer and select Add Reference. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
 
 * Syncfusion.EJ
 * Syncfusion.EJ.Export
@@ -41,17 +41,17 @@ Register the referenced assemblies in Web.config files available at the root of 
 </compilation>
 {% endhighlight %}
 
-### Scripts and CSS Initialization
+### Scripts and CSS initialization
 
-The scripts and style sheets that are mandatorily required to render PivotGauge widget in a  Web Application are mentioned in an appropriate order below:
+The scripts and style sheets that are required to render the pivot gauge widget in a web application are mentioned below in an appropriate order:
 
 1. ej.web.all.min.css
 2. jQuery-3.0.0.min.js
 3. ej.web.all.min.js
 
-[Click here](http://help.syncfusion.com/js/cdn) here to know more about scripts and style sheets available online (CDN Link).
+[Click here](http://help.syncfusion.com/js/cdn) here to know more about scripts and style sheets available in online (CDN link).
 
-Scripts and style sheets are referred under the <head> tag in **Default.aspx** file.
+Scripts and style sheets are referred under the <head> tag in the **Default.aspx** file.
     
 {% highlight html %}
 
@@ -62,9 +62,9 @@ Scripts and style sheets are referred under the <head> tag in **Default.aspx** f
 </head>
 {% endhighlight %}
 
-### Initialize PivotGauge
+### Initialize pivot gauge
 
-Either drag and drop the **PivotGauge** control from the toolbox (under Syncfusion BI Web category) or manually define the widget like in the below code sample inside “Default.aspx” page.
+You can drag and drop the **pivot gauge** control from the toolbox (under Syncfusion BI Web category) or manually define the widget as shown in the following code sample in the “Default.aspx” page.
 
 {% highlight html %}
 
@@ -86,9 +86,9 @@ Either drag and drop the **PivotGauge** control from the toolbox (under Syncfusi
 </html>
 {% endhighlight %}
 
-### Populate PivotGauge With DataSource
+### Populate pivot gauge With data source
 
-Initializes the OLAP datasource for PivotGauge widget as shown below.
+Initializes the OLAP data source for the pivot gauge widget as shown below:
 
 {% highlight html %}
 
@@ -169,23 +169,23 @@ Initializes the OLAP datasource for PivotGauge widget as shown below.
 
 {% endhighlight %}
 
-The above code will generate a simple PivotGauge as shown in below figure.
+The above code will generate a simple pivot gauge as shown in the following screenshot:
 
 ![](OLAP-Getting-Started_images/PopulatePivotGaugeWithDataSource.png) 
 
-## Creating a simple application with PivotGauge and OLAP datasource (Server Mode)
+## Creating a simple application with pivot gauge and OLAP data sources (server mode)
  
-This section covers the information required to create a simple PivotGauge bound to OLAP datasource.
+This section covers the information required to create a simple pivot gauge bound to OLAP data source.
 
-N> ASP.NET Empty Web Application will contain a service that transfers data to server-side, processes and returns back to client-side for control rendering and re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement.
+N> ASP.NET empty web application contains a service that will transfer the data to server-side, process it, and return it to client-side for control rendering and re-rendering. The service utilized for communication can be WCF or WebAPI based on user requirement.
 
-### Project Initialization
+### Project initialization
 
-Create a new **ASP.NET Empty Web Application** using Visual Studio IDE and name the project as **“PivotGaugeDemo”**.
+Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project **“PivotGaugeDemo”**.
 
-Now add a “Web Form” to the ASP.NET Empty Web Application. For adding a “Web Form”, right-click on the project in Solution Explorer and select **Add > New Item**. In the Add New Item window, select “Web Form” and name it as Default.aspx and click “Add”.
+Now, add a Web Form to the ASP.NET empty web application. For adding a Web Form, right-click the project in the solution explorer and select **Add > New Item**. In the Add New Item window, select Web Form and name it Default.aspx, and then click Add.
 
-Now add the following dependency libraries as references into your Web Application. In order to add them to your application, right-click on **References** in Solution Explorer and select Add Reference. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries will be found.
+Add the following dependency libraries as references to your web application. To add them to your application, right-click **References** in the solution explorer and select Add Reference. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
 N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. And if you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
@@ -219,9 +219,9 @@ Register the referenced assemblies in Web.config files available at the root of 
 {% endhighlight %}
 
 
-### Scripts and CSS Initialization
+### Scripts and CSS initialization
 
-The scripts and style sheets that are mandatorily required to render PivotGauge widget in a Web Application are mentioned in an appropriate order below:
+The scripts and style sheets that are required to render the pivot gauge widget in a web application are mentioned below in an appropriate order:
 
 1. ej.web.all.min.css
 2. jQuery-3.0.0.min.js
@@ -242,9 +242,9 @@ Scripts and style sheets are referred under the **head** tag in **Default.aspx**
 
 
 
-### Control Initialization
+### Control initialization
 
-Either drag and drop the **PivotGauge** control from the toolbox (under Syncfusion BI Web category) or manually define the widget like in the below code sample inside “Default.aspx” page.
+Drag and drop the **pivot gauge** control from the toolbox (under Syncfusion BI Web category) or manually define the widget as shown in the following code sample of the “Default.aspx” page.
 
 {% highlight html %}
 
@@ -304,24 +304,24 @@ Either drag and drop the **PivotGauge** control from the toolbox (under Syncfusi
     
 {% endhighlight %}
 
-The **“Url”** property in PivotGauge widget points the service endpoint, where data are processed and fetched in the form of JSON. The services used in PivotGauge widget as endpoint are WCF and WebAPI.
+The **“Url”** property in the pivot gauge widget points the service endpoint, where the data is processed and fetched in the form of JSON. The services used in the pivot gauge widget as an endpoint are WCF and WebAPI.
 
-N> The above "Default.aspx" contains WebAPI URL, which is "/Olap". If WCF service is used as endpoint, the URL would look like "/OlapService.svc".
+N> The above "Default.aspx" contains WebAPI URL, which is "/Olap". If the WCF service is used as an endpoint, then the URL will look like "/OlapService.svc".
 
 
 ### WebAPI
 
-**Adding a WebAPI Controller**
+**Adding a WebAPI controller**
 
-To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as “OlapController.cs”, click **Add.**
+To add a WebAPI controller in your existing web application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it “OlapController.cs”, and then click **Add.**
 
-Now WebAPI controller is added into your application successfully which in-turn comprise of the following file. The utilization of this file will be explained in the following sections.
+Now, the WebAPI controller is added to your application, which, in-turn, comprises the following file. The utilization of this file will be explained in the following sections:
  
 * OlapController.cs
 
-N> While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in demo the controller is named as “OlapController”.
+N> While adding the WebAPI controller class, add the mandatory suffix “Controller”. For example, in the demo, the controller is named “OlapController”.
 
-Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `OlapController.cs` file. 
+Next, remove all the existing methods such as “Get”, “Post”, “Put”, and “Delete” present in the `OlapController.cs` file.
 
 {% highlight c# %}
 
@@ -335,9 +335,9 @@ namespace PivotGaugeDemo
 
 {% endhighlight %}
 
-**List of Namespaces**
+**List of namespaces**
 
-Following are the list of namespaces to be added on top of the main class inside `OlapController.cs` file.
+Following are the list of namespaces to be added on top of the main class in the `OlapController.cs` file:
 
 {% highlight c# %}
 
@@ -355,9 +355,9 @@ namespace PivotGaugeDemo
 
 {% endhighlight %}
 
-**Datasource Initialization**
+**Data source initialization**
 
-Now, the connection string to connect OLAP Cube, PivotGauge instances are created immediately inside the main class in `OlapController.cs` file.
+Now, the connection string to connect OLAP cube and pivot gauge instances is created immediately in the main class of the `OlapController.cs` file.
 
 {% highlight c# %}
 
@@ -373,9 +373,9 @@ namespace PivotGaugeDemo
 
 {% endhighlight %}
 
-**Service methods in WebAPI Controller**
+**Service methods in WebAPI controller**
 
-Now you need to define the service methods inside OlapController class, found inside `OlapController.cs` file, created while adding WebAPI Controller Class to your Web Application.
+Now, you can define the service methods in the OlapController class, find in the `OlapController.cs` file which was created while adding the WebAPI controller class to your web application.
  
 {% highlight c# %}
 
@@ -428,11 +428,11 @@ namespace PivotGaugeDemo
 
 {% endhighlight %}
 
-**Configure routing in Global Application Class**
+**Configure routing in global application class**
 
-To add a Global.asax in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New** Item. In the **Add New Item** window, select **Global Application** Class and name it as **“Global.asax”**, click **Add.**
+To add a Global.asax in your existing web application, right-click the project in the solution explorer and select **Add > New** item. In the **Add New Item** window, select **Global Application** class and name it **“Global.asax”**, and then click **Add.**
  
-Once you finish adding the **Global.asax** file, delete all the methods inside the **Global** class and add the namespace **“using System.Web.Http;”** and then you can configure routing like in the following code example.
+After adding the **Global.asax** file, delete all methods in the **Global** class and add the namespace **“using System.Web.Http;”**, and then configure the routing as shown in the following code example:
 
 {% highlight c# %}
 
@@ -451,12 +451,12 @@ public class Global : System.Web.HttpApplication
 {% endhighlight %}
 
 
-Now, PivotGauge will be rendered with the provided data as shown below.
+Now, the pivot gauge will be rendered with the provided data as shown below:
 
 ![](OLAP-Getting-Started_images/ServerMode.png) 
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotGauge. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/PivotGauge/olap-connectivity#wcf).
+This section demonstrates the utilization of WCF service as endpoint binding the OLAP data source to a simple pivot gauge. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/PivotGauge/olap-connectivity#wcf).
 
 

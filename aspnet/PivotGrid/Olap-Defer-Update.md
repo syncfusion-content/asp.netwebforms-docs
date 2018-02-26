@@ -7,11 +7,11 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Defer Update
+# Defer update
 
-I> This feature is applicable for OLAP datasource only at Server Mode.
+I> This feature is applicable for the OLAP data source only at server mode.
 
-Defer Update support allows you to refresh the control only on-demand and not during every UI interaction.
+The defer update support allows you to refresh the control only on-demand and not during every UI interaction.
 
 {% highlight html %} 
 

@@ -7,9 +7,9 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Resizing Column
+# Column resizing
 
-Allows the user to change the column width by holding and dragging the column border using the mouse pointer.
+Allows you to resize the column by changing its width while holding and dragging the column border by using the mouse.
 
 ## Column Width Based on Size
 

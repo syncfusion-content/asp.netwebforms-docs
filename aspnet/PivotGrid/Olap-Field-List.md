@@ -7,17 +7,17 @@ control: PivotGrid
 documentation: ug
 ---
 
-# PivotTable Field List
+# Pivot table field list
 
 ## Initialization  
 
-Field List, also known as Pivot Schema Designer, allows user to add, rearrange, filter and remove fields to show data in PivotGrid exactly the way they want.
+Field list, also known as Pivot Schema Designer, allows you to add, rearrange, filter, and remove the fields to show the data in pivot grid exactly the way as you desired.
 
-Based on the datasource, OLAP, bound to the PivotGrid control, PivotTable Field List will be automatically populated with Cube Information or Field Names. PivotTable Field List provides an Excel like appearance and behavior.
+Based on the data source and OLAP bound to the pivot grid control, the pivot table field list will be automatically populated with the cube information or field names. The pivot table field list provides an Excel like appearance and behavior.
 
-In-order to initialize PivotTable Field List, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for the control. Then you need to initialize the PivotTable Field List by using the **"PivotSchemaDesigner"** method.
+To initialize the pivot table field list, first you can define a “div” tag with an appropriate “id” attribute which acts as a container for the control. Then, you can initialize the pivot table field list by using the **"PivotSchemaDesigner"** method.
 
-### Client Mode
+### Client mode
 
 {% highlight html %}
 
@@ -61,7 +61,7 @@ In-order to initialize PivotTable Field List, first you need to define a “div�
 
 ![](PivotTable-Field-List_images/OlapClientMode.png)
 
-### Server Mode 
+### Server mode
 
 {% highlight html %}
 
@@ -90,51 +90,51 @@ In-order to initialize PivotTable Field List, first you need to define a “div�
 ![](PivotTable-Field-List_images/pivotschema.png)
 
 
-## Layout 
+## Layout
 
-The top portion of the layout shows Field or Cube items in a categorized way. They can be dynamically added into the report either by drag and drop option or through simple check box selection.
+The top portion of the layout shows the field or cube items in a categorized way. The field or cube items can be dynamically added to the report either by drag and drop option or through the simple check box selection.
  
-On item(s) selection they will be placed in Row section by default except numeric based item(s) or measures, which will alone be placed in the Value section by default.
+On item(s) selection, they will be placed in the row section by default except numeric based item(s) or measures, which will alone be placed in the value section by default.
 
-The bottom portion of the layout is segregated as below.
+The bottom portion of the layout is segregated as below:
 
-* Report Filter: Exclusively designed to filter an item(s) placed in this particular position of the layout. 
-* Value Section: The value label usually displays the numeric value item(s) present in the report.
-* Column Section: It is used to display item(s) as column header and values in the PivotGrid control. 
-* Row Section: It is used to display item(s) as row header and values in the PivotGrid control.
+* Report filter: Exclusively designed to filter the item(s) placed in the particular position of the layout. 
+* Value section: The value label usually displays the numeric value item(s) present in the report.
+* Column section: Displays the item(s) as column header and values in the pivot grid control.
+* Row section: Displays the item(s) as row header and values in the pivot grid control.
 
-## UI Interactions 
+## UI interactions
 
-### By Drag and Drop
+### By drag and drop
 
-You can alter the report on fly through drag-and-drop operation. You can drag any item from Field List and drop into column, row, value or filter section available at the bottom of the Field List.
+You can alter the report on fly through the drag-and-drop operation. You can drag any item from the field list and drop into the column, row, value, or filter section available at the bottom of the field list.
 
 ![](PivotTable-Field-List_images/schema.png) 
 
-### By Treeview Selection
+### By tree view selection
 
-You can also alter the report on fly through check and uncheck option as an alternate. By default, fields will be added to the Row Label when checked.
+You can alter the report on fly through the check and uncheck option as an alternate. By default, the fields will be added to the row label when checked.
 
 ![](PivotTable-Field-List_images/check-uncheck.png) 
 
-### By Context Menu
+### By context menu
 
-You can also alter the report by using context menu.
+You can also alter the report by using the context menu.
 
 ![](PivotTable-Field-List_images/Olap_Pivotbutton_Context.png)
 
 ![](PivotTable-Field-List_images/Olap_Treeview_Context.png)
 
-## Searching Values
+## Searching values
 
-Search option available in Field List allows you to search a specific value that needs to be filtered from the list of values inside the filter pop-up window.
+The search option available in the field list allows you to search a specific value that should be filtered from the list of values in the filter pop-up window.
 
 ![](PivotTable-Field-List_images/filter.png)
 
 ![](PivotTable-Field-List_images/search.png)
 
 ## Filtering
-Values can be filtered by checking/unchecking the check box besides them, inside the filter pop-up window. At least one value needed to be checked state while filtering otherwise “Ok” button will be disabled.
+Values can be filtered by checking/unchecking the check box besides them in the filter pop-up window. At least, one value should in the checked state while filtering. If else, the OK button will be disabled.
 
 ![](PivotTable-Field-List_images/filter.png) 
 
