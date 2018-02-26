@@ -96,7 +96,7 @@ Below code shows how to assign values at initialization
 
     <%--initialize DatePicker component with current date--%>
 
-    <ej:DatePicker runat="server" ID="datePicker" Value=<%# DateTime.Now %>">
+    <ej:DatePicker runat="server" ID="datePicker" Value="<%# DateTime.Now %>">
     </ej:DatePicker>
 
 {% endhighlight %}
