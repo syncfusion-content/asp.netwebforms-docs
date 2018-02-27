@@ -1993,7 +1993,7 @@ The `OnClientRangeMouseMove` event is triggered when moving mouse on ranges.
 
 {% highlight html %}
 
-<ej:CircularGauge ID="ScaleCircularGauge" runat="server" OnClientRenderComplete="onRangeMouseMove"> 
+<ej:CircularGauge ID="ScaleCircularGauge" runat="server" OnClientRangeMouseMove="onRangeMouseMove"> 
 </ej:CircularGauge>
 
 {% endhighlight %}
@@ -2001,6 +2001,44 @@ The `OnClientRangeMouseMove` event is triggered when moving mouse on ranges.
 {% highlight js %}
 
     function onRangeMouseMove(sender) { 
+        // do something
+    }
+
+{% endhighlight %}
+
+### DoubleClick
+
+The `DoubleClick` event is triggered when double clicking the gauges.
+
+{% highlight html %}
+
+<ej:CircularGauge ID="ScaleCircularGauge" runat="server" OnClientDoubleClick="onDoubleClick"> 
+</ej:CircularGauge>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+    function onDoubleClick(sender) { 
+        // do something
+    }
+
+{% endhighlight %}
+
+### RightClick
+
+The `RightClick` event is triggered when right clicking the gauges.
+
+{% highlight html %}
+
+<ej:CircularGauge ID="ScaleCircularGauge" runat="server" OnClientRightClick="onRightClick"> 
+</ej:CircularGauge>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+    function onRightClick(sender) { 
         // do something
     }
 
