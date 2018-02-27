@@ -324,6 +324,74 @@ function onLoad(){
 {% endhighlight %}
 
 
+### Click
+
+Click event fires on clicking the bullet graph.
+
+{% highlight html %}
+
+<ej:Bulletgraph ClientIDMode="Static" OnClientClick="onClick" runat="server" ID="bullet1">
+
+</ej:Bulletgraph>
+
+{% endhighlight %}
+
+{% highlight js %}
+ 
+function onClick(){
+    // Do Something
+}
+
+{% endhighlight %}
+
+
+### DoubleClick
+
+DoubleClick event fires on double clicking the bullet graph.
+
+
+{% highlight html %}
+
+<ej:Bulletgraph ClientIDMode="Static" OnClientDoubleClick="onDoubleClick" runat="server" ID="bullet1">
+
+</ej:Bulletgraph>
+
+{% endhighlight %}
+
+{% highlight js %}
+ 
+function onDoubleClick(){
+    // Do Something
+}
+
+{% endhighlight %}
+
+
+### RightClick
+
+RightClick event fires on right clicking the bullet graph.
+
+{% highlight html %}
+
+<ej:Bulletgraph ClientIDMode="Static" OnClientRightClick="onRightClick" runat="server" ID="bullet1">
+
+</ej:Bulletgraph>
+
+{% endhighlight %}
+
+{% highlight js %}
+ 
+function onRightClick(){
+    // Do Something
+}
+
+{% endhighlight %}
+
+
+
+
+
+
 
 
 

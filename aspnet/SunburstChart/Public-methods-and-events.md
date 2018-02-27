@@ -370,4 +370,71 @@ function onLegendItemClick(){
 {% endhighlight %}
 
 
+### Click
+
+Fires when clicking the sunburst points, you can use `Click` event.
+
+
+
+{% highlight html %}
+
+<ej:SunburstChart ClientIDMode="Static" OnClientClick="onClick" runat="server" ID="Sunburst">
+
+</ej:SunburstChart>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+function onClick(){
+    // Do Something
+}
+
+{% endhighlight %}
+
+### DoubleClick
+
+Fires when double clicking the sunburst points, you can use `DoubleClick` event.
+
+
+
+{% highlight html %}
+
+<ej:SunburstChart ClientIDMode="Static" OnClientDoubleClick="onDoubleClick" runat="server" ID="Sunburst">
+
+</ej:SunburstChart>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+function onDoubleClick(){
+    // Do Something
+}
+
+{% endhighlight %}
+
+### RightClick
+
+Fires when right clicking the sunburst points, you can use `RightClick` event.
+
+
+{% highlight html %}
+
+<ej:SunburstChart ClientIDMode="Static" OnRightClick="onRightClick" runat="server" ID="Sunburst">
+
+</ej:SunburstChart>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+function onRightClick(){
+    // Do Something
+}
+
+{% endhighlight %}
+
+
+
 

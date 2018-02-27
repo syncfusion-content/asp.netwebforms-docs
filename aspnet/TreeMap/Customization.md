@@ -13,7 +13,24 @@ TreeMap control supports color customization to determine the exact combination 
 
 ### Color Customization
 
-You can customize the colors of the leaf nodes of TreeMap using the ColorMapping support of the TreeMap. 
+You can customize the color of leaf nodes in **Treemap** either using ColorMapping support of the **Treemap** or mapping a field in the datasource.
+
+## Binding color from the datasource
+
+You can set color for each leaf items from data source by using `ColorPath` property. 
+
+N> While setting color, do not set any other color mapping for treemap because color mapping has higher priority than `ColorPath` property. And also, if `ColorPath` is set, the legend will be generated for each leaf item in treemap. 
+
+{% highlight html %}
+
+<ej:Treemap ID="treemap" runat="server" ColorPath="fill">
+
+</ej:Treemap>
+
+{% endhighlight %}
+
+![](Customization_images/Customization_img5.png)
+
 
 ColorMapping is categorized into three different types such as,
 
