@@ -9,9 +9,9 @@ documentation: ug
 
 # Appearance
 
-## Built-in Themes
+## Built-in themes
 
-Following are the built-in themes available in the PivotChart.
+Following are the built-in themes available in the pivot chart:
 
 * flatlight
 * gradientlight
@@ -30,7 +30,7 @@ Following are the built-in themes available in the PivotChart.
 * office365
 * bootstrap
 
-By using the `Theme` property, you can set the desired theme in PivotChart. By default, **"Flat Light"** theme is applied to PivotChart.
+By using the `Theme` property, you can set the desired theme in the pivot chart. By default, the **"FlatLight"** theme is applied to the pivot chart.
 
 {% highlight html %}
 
@@ -43,11 +43,11 @@ By using the `Theme` property, you can set the desired theme in PivotChart. By d
 
 ![](Appearance_images/themes.png)
 
-## PivotChart - Area Customization
+## Pivot chart - area customization
 
-### Border Customization
+### Border customization
 
-To customize the PivotChart border, use `Border` property in PivotChart.
+To customize the pivot chart border, use the `Border` property in the pivot chart.
 
 {% highlight html %}
 
@@ -60,9 +60,9 @@ To customize the PivotChart border, use `Border` property in PivotChart.
 
 ![](Appearance_images/bordercustomize.png)
 
-### Background Customization
+### Background customization
 
-The PivotChart control background can be customized by using the `Background` property in the Chart area.
+The background of the pivot chart control can be customized by using the `Background` property in the chart area.
 
 {% highlight html %}
 
@@ -76,9 +76,9 @@ The PivotChart control background can be customized by using the `Background` pr
 
 ![](Appearance_images/backgroundcutomize.png)
 
-### Grid Bands Customization
+### Grid bands customization
 
-By using the `AlternateGridBand` property of the axis, you can provide different color for grid rows and columns formed by the grid lines in the Chart area. The properties `Odd` and `Even` are used to customize the grid bands at odd and even positions respectively.
+By using the `AlternateGridBand` property of the axis, you can provide different colors for grid rows and columns that are formed by grid lines in the chart area. The `Odd` and `Even` properties are used to customize the grid bands at odd and even positions respectively.
 
 {% highlight html %}
 
@@ -96,7 +96,7 @@ By using the `AlternateGridBand` property of the axis, you can provide different
 
 ### Animation
 
-You can enable animation by using the `EnableAnimation` property under `CommonSeriesOptions` of the PivotChart control. This animates the Chart series on two occasions - when the Chart is loaded for the first time and when you change the series type by using the `Type` property.
+You can enable the animation by using the `EnableAnimation` property under the `CommonSeriesOptions` of the pivot chart control. It animates the chart series on two occasions - when the chart is loaded for the first time and when you change the series type by using the `Type` property.
 
 {% highlight html %}
 

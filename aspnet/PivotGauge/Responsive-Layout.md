@@ -7,9 +7,9 @@ control: PivotGauge
 documentation: ug
 ---
 
-# Responsive Layout
+# Responsive layout
 
-PivotGauge control supports responsive rendering based on the target device (desktop & tablet) resolution. It supports resolution upto 1024x600. You can enable responsiveness in PivotGauge by setting `IsResponsive` property to true.
+The pivot gauge control supports responsive rendering based on the target device (desktop and tablet) resolution. It supports resolution upto 1024x600. You can enable responsiveness in the pivot gauge by setting the `IsResponsive` property to true.
 
 {% highlight html %}
 

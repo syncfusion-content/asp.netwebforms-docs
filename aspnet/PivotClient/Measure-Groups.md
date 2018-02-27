@@ -7,11 +7,11 @@ control: PivotClient
 documentation: ug
 ---
 
-# Measure Groups 
+# Measure groups 
 
-I> This feature is applicable only for OLAP data source bound from server-side.
+I> This feature is applicable only for the OLAP data source bound from the server-side.
 
-In Cube Dimension Browser, treeview can be viewed in a filtered manner through the Measure Groups option. This feature allows you to view the list of measures and dimensions associated with the selected measure group from the cube. For enabling this, the `EnableMeasureGroups` property is set to true. By default, its value is set to false.
+In Cube Dimension Browser, the tree view can be viewed in a filtered manner through the measure groups option. This feature allows you to view the list of measures and dimensions associated with the selected measure group from the cube. For enabling this, the `EnableMeasureGroups` property is set to true. By default, its value is set to false.
 
 {% highlight html %}
 
@@ -19,7 +19,7 @@ In Cube Dimension Browser, treeview can be viewed in a filtered manner through t
 
 {% endhighlight %}
 
-On selecting a measure group from the drop-down list, the Cube Dimension Browser treeview displays the related measures and dimensions as follows.
+By selecting a measure group from the drop-down list, the Cube Dimension Browser tree view displays the related measures and dimensions as follows:
 
 ![](Measure-Groups_images/measuregroup.png) 
 

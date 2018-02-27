@@ -7,13 +7,13 @@ control: PivotClient
 documentation: ug
 ---
 
-# Layout Customization
+# Layout customization
 
 # Size
 
-Allows you to render PivotClient in different sizes. You can set height and width under `size` property.
+Allows you to render the pivot client in different sizes. You can set the height and width under the `size` property.
 
-## Set size in Pixels
+## Set size in pixels
 
 {% highlight html %}
 
@@ -35,15 +35,15 @@ Allows you to render PivotClient in different sizes. You can set height and widt
 
 {% endhighlight  %}
 
-PivotClient with decreased size from default size
+The pivot client with decreased size from default size.
 
 ![](Layout-Customization_images/small-size.png)
 
-## Set size in Percentage
+## Set size in percentage
 
-You can set the PivotClient size in percentage also.
+You can set the pivot client size in percentage also.
 
-N> Size of the parent container Should be set in Pixels.
+N> The size of the parent container should be set in pixels.
 
 {% highlight html %}
 //...
@@ -51,11 +51,11 @@ N> Size of the parent container Should be set in Pixels.
 
 {% endhighlight  %}
 
-## Control Placement
+## Control placement
 
-### Tab View
+### Tab view
 
-In Tab View representation, both Grid and Chart will be displayed in separate tabs.  This could be set by using the `ControlPlacement` property under the `DisplaySettings` option.  By default, **Tab** value is set.
+In tab view representation, both the grid and chart will be displayed in separate tabs. This can be set by using the `ControlPlacement` property under the `DisplaySettings` option. By default, the **Tab** value is set.
 
 {% highlight html %}
 
@@ -79,9 +79,9 @@ In Tab View representation, both Grid and Chart will be displayed in separate ta
 
 ![](Layout-Customization_images/tabview.png) 
 
-### Tile View
+### Tile view
 
-In Tile View representation, both Grid and Chart will be displayed one above the other, in the same layout.  Tile view can be set by using the `ControlPlacement` property under the `DisplaySettings` option.
+In tile view representation, both the grid and chart will be displayed one above the other in the same layout. The tile view can be set by using the `ControlPlacement` property under the `DisplaySettings` option.
 
 {% highlight html %}
 
@@ -105,11 +105,11 @@ In Tile View representation, both Grid and Chart will be displayed one above the
 
 ![](Layout-Customization_images/tileview.png) 
 
-## Default View
+## Default view
 
-### Grid View
+### Grid view
 
-To display Grid control by default, set `DefaultView` property under `DisplaySettings` option to **Grid**, which is the default value of the property.
+To display grid control by default, set the `DefaultView` property under the `DisplaySettings` option to **Grid**, which is the default value of the property.
 
 {% highlight html %}
 
@@ -133,9 +133,9 @@ To display Grid control by default, set `DefaultView` property under `DisplaySet
 
 ![](Layout-Customization_images/gridview.png) 
 
-### Chart View
+### Chart view
 
-To display Chart control by default, set the property `DefaultView` property to **Chart**.
+To display the chart control by default, set the `DefaultView` property to the **Chart**.
 
 {% highlight html %}
 
@@ -159,11 +159,11 @@ To display Chart control by default, set the property `DefaultView` property to 
 
 ![](Layout-Customization_images/chartview.png) 
 
-## Display Mode
+## Display mode
 
-### Grid Only
+### Grid only
 
-By the `Mode` property under `DisplaySettings` option to **GridOnly**, PivotGrid component alone will get rendered and PivotChart will not be rendered.
+In the `Mode` property, the `DisplaySettings` option is set to **GridOnly**, such that the pivot grid component alone will get rendered and the pivot chart will not be rendered.
 
 {% highlight html %}
 
@@ -188,9 +188,9 @@ By the `Mode` property under `DisplaySettings` option to **GridOnly**, PivotGrid
 ![](Layout-Customization_images/gridonlyview.png) 
 
 
-### Chart Only
+### Chart only
 
-By the `Mode` property under `DisplaySettings` option to **ChartOnly**, PivotChart component alone will get rendered and PivotChart will not be rendered .
+In the `Mode` property, the `DisplaySettings` option is set to **ChartOnly**, such that the pivot chart component alone will get rendered and the pivot grid will not be rendered.
 
 {% highlight html %}
 
@@ -214,9 +214,9 @@ By the `Mode` property under `DisplaySettings` option to **ChartOnly**, PivotCha
 
 ![](Layout-Customization_images/chartonlyview.png) 
 
-### Both Chart and Grid
+### Both chart and grid
 
-By the `Mode` property under `DisplaySettings` option to **ChartAndGrid**, data is displayed in both Grid and Chart.  This is the default value of the property.
+In the `Mode` property, set the `DisplaySettings` option to **ChartAndGrid**, the data is displayed in both the grid and the chart. This is the default value of the property.
 
 {% highlight html %}
 
@@ -240,9 +240,9 @@ By the `Mode` property under `DisplaySettings` option to **ChartAndGrid**, data 
 
 ![](Layout-Customization_images/tileview.png) 
 
-## Toggle Panel
+## Toggle panel
 
-Toggle panel option lets the user to toggle the visibility of Axis Element Builder and Cube Dimension Browser panels in PivotClient with a use of a button. The button could be added to the control by enabling the `EnableTogglePanel` property under `DisplaySettings` option.  This property is disabled by default.
+Toggle panel option allows you to toggle the visibility of axis element builder and cube dimension browser panels in the pivot client by using a button. The button can be added to the control by enabling the `EnableTogglePanel` property under the `DisplaySettings` option. This property is disabled by default.
 
 {% highlight html %}
 
@@ -293,7 +293,7 @@ Allows the user to hide “Cube Browser” and “Axis Element Builder” panels
 
 ## Maximized/Full Screen View
 
-Full screen view helps to visualize the PivotGrid and PivotChart controls inside PivotClient precisely according to the browser window size.  By selecting full screen icon in the toolbar, the control which is in the view gets maximized.  Drilldown action can also be performed in both PivotGrid and PivotChart in the maximized view.  This option is enabled by setting the `EnableFullScreen` property under `DisplaySettings` option to true.  The value is false by default.
+The full screen view helps to visualize the pivot grid and pivot chart controls in the pivot client precisely according to the browser window size. By selecting the full screen icon in the toolbar, the control which is in the view gets maximized. The drilldown action can also be performed in both pivot grid and pivot chart in maximized view. This option is enabled by setting the `EnableFullScreen` property under `DisplaySettings` option to true. The value is false by default.
 
 
 {% highlight html %}
@@ -318,14 +318,14 @@ Full screen view helps to visualize the PivotGrid and PivotChart controls inside
 
 ![](Layout-Customization_images/maximizedview.png) 
 
-The following screenshot shows the maximized view of PivotGrid.
+The following screenshot shows the maximized view of the pivot grid:
 
 ![](Layout-Customization_images/maximizedview1.png) 
 
 
-## Chart Types
+## Chart types
 
-While loading the PivotClient initially, the PivotChart widget can be rendered in any one of the available chart types using the `ChartType` property.
+While loading the pivot client initially, the pivot chart widget can be rendered in anyone of the available chart types by using the `ChartType` property.
 
 {% highlight html %}
 
@@ -346,19 +346,19 @@ While loading the PivotClient initially, the PivotChart widget can be rendered i
 
 {% endhighlight  %}	
 
-The `ChartType` property takes Column Chart by default. The types available are Column, Stacking Column, Bar, Stacking Bar, Line, Spline, Step Line, Area, Spline Area, Step Area, Stacking Area, Pie, Funnel and Pyramid.
+The `ChartType` property takes column chart by default. The available types are column, stacking column, bar, stacking bar, line, spline, step line, area, spline area, step area, stacking area, pie, funnel, and pyramid.
 
-The Chart Type can also be changed dynamically through the toolbar icon.
+The chart type can also be changed dynamically through the toolbar icon.
 
 ![](Layout-Customization_images/charttypes.png) 
 
 ![](Layout-Customization_images/linechart.png)  
 
-### PivotTreeMap
+### Pivot tree map
 
-I> This feature is applicable only for OLAP data source bound from server-side.
+I> This feature is applicable only for the OLAP data source bound from the server-side.
 
-You can include the PivotTreeMap component as one of the chart types by setting `EnablePivotTreeMap` property to true.
+You can include the pivot tree map component as one of the chart types by setting the `EnablePivotTreeMap` property to true.
 
 {% highlight html %}
 
@@ -384,9 +384,9 @@ You can include the PivotTreeMap component as one of the chart types by setting 
 ![](Layout-Customization_images/TreeMap2.png)
 
 
-## Report Toolbar
+## Report toolbar
 
-You can customize the display of toolbar by enabling/disabling the visibility of each of the icons. This can be achieved by setting the properties under `ToolbarIconSettings` option to false. The values are true by default.​​​
+You can customize the display of toolbar by enabling/disabling the visibility of each icon. This can be achieved by setting the properties under `ToolbarIconSettings` option to false. The values are true by default.​​​
 
 {% highlight html %}
 
@@ -399,6 +399,6 @@ You can customize the display of toolbar by enabling/disabling the visibility of
 
 ![](Layout-Customization_images/toolbarIconSettings1.png)
 
-The following screenshot shows after disabling the toolbar icons.
+The following screenshot shows after disabling the toolbar icons:
 
 ![](Layout-Customization_images/toolbarIconSettings2.png)

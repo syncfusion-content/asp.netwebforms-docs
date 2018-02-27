@@ -7,27 +7,27 @@ control: PivotClient
 documentation: ug
 ---
 
-# Drill Through
+# Drill through
 
-I> This feature is applicable only for OLAP data source.
+I> This feature is applicable only for the OLAP data source.
 
-Drill-through retrieves the raw items that are used to create a specified cell. To enable drill-through support, set [`enableDrillThrough`] property to true. Raw items are obtained through the [`drillThrough`] event, using which user can bind them to an external widget for precise view. 
+The drill-through retrieves the raw items that are used to create a specified cell. To enable drill-through support, set the [`EnableDrillThrough`] property to true. Raw items are obtained through the [`DrillThrough`] event, using which you can bind them to an external widget for a precise view.
 
-N> Drill-through is supported in PivotGrid only when we configure and enable drill-through action at the Cube. 
+N> Drill-through is supported in the pivot grid only when you configure and enable the drill-through action at the cube.
 
 ![](DrillThrough_images/pivotclient.png)
 
-On clicking any value cell, the "Drill Through Information" dialog will be opened. It consists of Grid with data which are associated with the measure values of the clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and the values of the dimensions which are associated with this measure are alone displayed in the Grid. 
+By clicking any value cell, the Drill Through Information dialog will be opened. It consists of grid with the data that are associated with measure values of the clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and the values of the dimensions that are associated with this measure are alone displayed in the grid.
 
 ![](DrillThrough_images/DrillThroughData.png)
 
-On clicking the "Hierarchy Selector" button which is displayed below the Grid, the "Hierarchy Selector" dialog will be opened. It consists of the dimensions which are associated with the measure of clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and the dimensions associated with this measure are alone displayed in the dialog. 
+By clicking the Hierarchy Selector button that is displayed below the grid, the Hierarchy Selector dialog will be opened. It consists of dimensions that are associated with the measure of clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and the dimensions associated with this measure are alone displayed in the dialog. 
 
 ![](DrillThrough_images/hierarchy_selector.png)
 
-Drag and drop the respective hierarchies and finally click “OK” button. Drill through MDX query will be framed and executed internally and provides back the raw items through "drillThrough" event. In this example, we have bound the raw items obtained to our ejGrid widget. Please refer the code sample and screen-shot below.
+Drag and drop the respective hierarchies and click OK. The drill through MDX query will be framed and executed internally and provides back the raw items through "DrillThrough" event. In this example, the obtained raw items are bounded to the ejGrid widget. Refer to the following code sample and screenshot:
 
-## Client Mode
+## Client mode
 
 {% highlight html %}
 
@@ -61,7 +61,7 @@ Drag and drop the respective hierarchies and finally click “OK” button. Dril
 
 {% endhighlight %}
 
-## Server Mode
+## Server mode
 
 {% highlight html %}
 
@@ -101,9 +101,9 @@ Drag and drop the respective hierarchies and finally click “OK” button. Dril
 
 {% endhighlight %}
 
-When PivotGrid is rendered in server mode, below service methods need to be added in WCF/WebAPI for drill through operation.
+When, the pivot grid is rendered in server mode, the following service methods should be added in the WCF/WebAPI for drill through operation:
 
-For WebAPI controller, the below methods need to be added.
+For WebAPI controller, the following methods should be added:
 
 {% highlight c# %}
 
@@ -127,7 +127,7 @@ public Dictionary<string, object> DrillThroughDataTable(Dictionary<string, objec
 
 {% endhighlight %}
 
-For WCF service, the below methods need to be added. 
+For WCF service, the following methods should be added:
 
 {% highlight c# %}
 

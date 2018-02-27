@@ -9,12 +9,12 @@ documentation: ug
 
 # Localization
 
-## Localization in PivotGauge Control
- We can localize the PivotGauge control texts with a collection of localized strings using **"ej.PivotGauge.Locale"** for different cultures.
+## Localization in pivot gauge control
+ You can localize the pivot gauge control texts with a collection of localized strings by using the **"ej.PivotGauge.Locale"** for different cultures.
  
- N> By default, the PivotGauge control is localized in **"en-US"**.
+ N> By default, the pivot gauge control is localized in **"en-US"**.
  
-Following code example illustrates on how to localize PivotGauge based on **"French"** culture.
+Following code example illustrates how to localize the pivot gauge based on the **"French"** culture:
 
 {% highlight html %}
 
@@ -31,7 +31,7 @@ Following code example illustrates on how to localize PivotGauge based on **"Fre
 
 {% endhighlight %}
 
-Following table localizes the in-built keywords to **"French"** culture for PivotGauge.
+Following table localizes the in-built keywords to **"French"** culture for the pivot gauge:
 
 <table>
 <tr>
@@ -48,11 +48,11 @@ RevenueValue</td><td>
 "Valeur du chiffre d'affaires "</td></tr>
 </table>
 
-## Localization and Globalization of Cube Info
+## Localization and globalization of cube info
 
-Content displayed within the PivotGauge control are obtained from the OLAP Cube. So following are the steps that needs to be done to get the localized and globalized Cube content.
+The content displayed within the pivot gauge control is obtained from the OLAP cube. The following are the steps that should be done to get the localized and globalized cube content.
 
-To get the localized string based on different cultures, from OLAP Cube, we need to set **"Locale Identifier"** in the connection string to a specific culture. The attribute is set for PivotGauge in Client Mode as shown below
+To get the localized string based on different cultures, set the **"Locale Identifier"** in the connection string to a specific culture in the OLAP cube. The attribute is set for the pivot gauge in client mode as shown below:
 
 {% highlight html %}
 
@@ -62,7 +62,7 @@ To get the localized string based on different cultures, from OLAP Cube, we need
 
 {% endhighlight %}
 
-For Server Mode, we need to set **"Culture"** and **"OverrideDefaultFormatStrings"** properties in OlapDataManager class to a specific culture along with setting **"Locale Identifier"** in connection string. 
+For server mode, set the **"Culture"** and **"OverrideDefaultFormatStrings"** properties in the OlapDataManager class to a specific culture along with the setting **"Locale Identifier"** in the connection string.
 
 {% highlight C# %}
 

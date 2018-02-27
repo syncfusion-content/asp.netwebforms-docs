@@ -7,30 +7,30 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Data Binding
+# Data binding
 
-## Binding PivotGrid to Collection
+## Binding pivot grid to collection
 
-This section demonstrates binding of a collection to the PivotGrid control as datasource. For more information on this datasource refer the following links.
+This section demonstrates binding a collection to the pivot grid control as data source. For more information on this data source, refer the following links:
 
-If you are using WebAPI controller, refer the "Datasource Initialization" section under the following [link](http://help.syncfusion.com/aspnet/pivotgrid/relational-getting-started#creating-a-simple-application-with-pivotgrid-and-relational-datasource-server-mode).
+If you are using the WebAPI controller, refer the "Datasource Initialization" section under the following [link](http://help.syncfusion.com/aspnet/pivotgrid/relational-getting-started#creating-a-simple-application-with-pivotgrid-and-relational-datasource-server-mode).
 
-If you are using WCF Service, refer the "Datasource Initialization" section below.
+If you are using the WCF Service, refer the "Datasource Initialization" section below:
 
 ## WCF
-**Adding a WCF Service**
+**Adding a WCF service**
 
-To add a WCF service in an existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it as `RelationalService.svc`, click Add.
+To add a WCF service in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select the WCF service and name it `RelationalService.svc`, and then click Add.
 
-Now, WCF service is added into the application successfully that comprises of the following files. The utilization of these files is explained in the immediate sections
+Now, the WCF service is added to the application, which, in-turn, comprises the following files. The utilization of these files will be explained in the immediate sections.
 
 * RelationalService.svc
 * RelationalService.svc.cs
 * IRelationalService.cs
 
-**Configuring WCF Service Class**
+**Configuring WCF service class**
 
-Remove the **“DoWork”** method present inside both `RelationalService.svc.cs` and `IRelationalService.cs` files.  Next, add **“AspNetCompatibilityRequirements”** attribute on top of main class present inside `RelationalService.svc.cs` and set **“RequirementsMode”** value to **“Allowed”**.
+Remove the **“DoWork”** method present in both `RelationalService.svc.cs` and `IRelationalService.cs` files. Next, add **“AspNetCompatibilityRequirements”** attribute on top of the main class present in the `RelationalService.svc.cs` and set the **“RequirementsMode”** value to **“Allowed”**.
 
 {% highlight c# %}
 
@@ -45,11 +45,11 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
-**List of Dependency Libraries**
+**List of dependency libraries**
 
-Next you need to add the below mentioned dependency libraries into your Web Application. These libraries could be found in GAC (Global Assembly Cache) as well.
+Next, you can add the below-mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
  
-To add them to your Web Application, right-click on **References** in Solution Explorer and select **Add Reference**. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
+To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
 N> If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
@@ -66,9 +66,9 @@ N> If you have installed any version of Essential Studio, then the location of S
 * Syncfusion.EJ.Pivot
 * Syncfusion.EJ.Web
 
-**List of Namespaces**
+**List of namespaces**
 
-Following are the list of namespaces to be added on top of the main class inside `RelationalService.svc.cs` file.
+Following are the list of namespaces to be added on top of the main class in the `RelationalService.svc.cs` file:
 
 {% highlight c# %}
 
@@ -97,9 +97,9 @@ namespace PivotGridDemo
 {% endhighlight %}
 
 
-**Datasource Initialization**
+**Data source initialization**
 
-A simple collection is provided as a datasource for our PivotGrid in this demo section. This datasource is placed inside a separate class named "ProductSales" in **RelationalService.svc.cs** file. Please find the code sample below.
+A simple collection is provided as a data source for the pivot grid in this demo section. The data source is placed in a separate class named "ProductSales" in the **RelationalService.svc.cs** file. Refer the following code sample:
 
 {% highlight c# %}
 
@@ -217,9 +217,9 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
-**Service methods in WCF Service**
+**Service methods in WCF service**
 
-First, declare the service methods inside **IRelationalService** interface, found in `IRelationalService.cs` file created while adding WCF Service to the Application.
+First, declare the service methods in the **IRelationalService** interface, find in the `IRelationalService.cs` file which was created while adding the WCF service to the application.
 
 {% highlight c# %}
 
@@ -257,7 +257,7 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
-Then, elaborate the service methods inside the main class, found in `RelationalService.svc.cs` file.
+Then, elaborate the service methods in the main class that is found in the `RelationalService.svc.cs` file.
 
 {% highlight c# %}
 
@@ -435,15 +435,15 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
-**Configuring Web Configuration File**
+**Configuring web configuration file**
 
-The services could be exposed through the properties, binding, contract and address by using an endpoint.
+The services can be exposed through the properties such as binding, contract, and address by using an endpoint.
 
-* Contract: This property indicates that the contract of the endpoint is exposing. Here you are referring to **IRelationalService** contract and hence it is **PivotGridDemo.IRelationalService**.
-* Binding: In your application, you use webHttpBinding to post and receive the requests and responses between the client-end and the service.
-* BehaviorConfiguration: This property contains the name of the behavior to be used in the endpoint
+* Contract: This property indicates that the contract of the endpoint is exposed. Refer to the **IRelationalService** contract, and thus it is **PivotGridDemo.IRelationalService**.
+* Binding: In your application, you can use webHttpBinding to post and receive requests and responses between the client-end and the service.
+* BehaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
 
-The endpointBehaviors are illustrated as follows
+The endpointBehaviors are illustrated as follows:
 
 {% highlight xml %}
 
@@ -460,7 +460,7 @@ The endpointBehaviors are illustrated as follows
 
 {% endhighlight %}
 
-The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property.
+The endpointBehaviors contain all behaviors for an endpoint. You can link each endpoint to the respective behavior only by using the name property.
 
 {% highlight xml %}
 
@@ -478,10 +478,10 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
 
 {% endhighlight %}
 
-N> In this example, **"PivotGridDemo"** indicates the name and root namespace of the Web Application created in Visual Studio IDE and **"RelationalService"** indicates the name of the WCF service created.
+N> In this example, the **"PivotGridDemo"** indicates the name and root namespace of the web application created in the Visual Studio IDE, and the **"RelationalService"** indicates the name of the created WCF service.
 
-Now, **PivotGrid** will be rendered with Sales Amount over a set of products across different customer geographic locations.
+Now, **pivot grid** will be rendered with sales amount over a set of products across different customer geographic locations.
 
-![](Getting-Started_images/relational.png)   
+![](Getting-Started_images/relational.png)
 
 

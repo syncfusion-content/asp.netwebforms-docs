@@ -7,11 +7,11 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Grid Layout
+# Grid layout
 
-## Normal Layout
+## Normal layout
 
-A layout in which summary cells are positioned at the bottom of each parent member and their child members appear next to them. Normal layout is the default layout in PivotGrid control. The enumeration property `Layout` needs to be set to **"Normal"** in-order to view PivotGrid in normal layout. 
+A layout in summary cells, which are positioned at the bottom of each parent member and their child members appear next to them. Normal layout is the default layout in the pivot grid control. The `Layout` enumeration property should be set to **"Normal"** to view the pivot grid in normal layout.
 
 {% highlight html %}
 
@@ -21,11 +21,11 @@ A layout in which summary cells are positioned at the bottom of each parent memb
 
 ![](Grid-Layout_images/layout-normal.png) 
 
-## No Summaries Layout
+## No summaries layout
 
-I> This feature is applicable only for OLAP datasource.
+I> This feature is applicable only for the OLAP data source.
 
-A layout in which summary cells are completely hidden and the child members appear next to their parent member.  The enumeration property `Layout` needs to be set to **"NoSummaries"** in-order to view PivotGrid without summaries. 
+A layout in summary cells, which are completely hidden and the child members appear next to their parent member. The `Layout` enumeration property should be set to **"NoSummaries"** to view the pivot grid without summaries.
 
 {% highlight html %}
 
@@ -36,9 +36,9 @@ A layout in which summary cells are completely hidden and the child members appe
 ![](Grid-Layout_images/layout-nosummary.png) 
 
 
-## Excel-like Layout
+## Excel-like layout
 
-A layout in which summary cells are positioned besides each parent member and their child members appear next to them. The enumeration property `Layout` needs to be set to **"ExcelLikeLayout"** in-order to view PivotGrid in excel-like layout.
+A layout in summary cells, which are positioned besides each parent member and their child members appear next to them. The `Layout` enumeration property should be set to **"ExcelLikeLayout"** to view the pivot grid in Microsoft Excel.
 
 {% highlight html %}
 
@@ -48,11 +48,11 @@ A layout in which summary cells are positioned besides each parent member and th
 
 ![](Grid-Layout_images/layout-excel.png) 	
 
-## Top Summary Layout 
+## Top summary Layout 
 
-I> This feature is applicable only for OLAP datasource only at Server Mode.
+I> This feature is applicable only for the OLAP data source at server mode.
 
-A layout in which summary cells are positioned at the top of each parent member and their child members appear next to them. The enumeration property `Layout` needs to be set to **"NormalTopSummary"** in-order to view PivotGrid in top summaries layout.
+A layout in summary cells, which are positioned at the top of each parent member and their child members appear next to them. The `Layout` enumeration property should be set to **"NormalTopSummary"** to view the pivot grid in the top summaries layout.
 
 {% highlight html %}
 

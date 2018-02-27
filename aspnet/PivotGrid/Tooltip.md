@@ -7,9 +7,9 @@ control: PivotGrid
 documentation: ug
 ---
 
-# ToolTip
+# Tooltip
 
-Allows you to display the details of the cell on hovering value cells. By default, tooltip is enabled.  You can disable tooltip in PivotGrid by setting the `enableToolTip` property to false.
+Allows you to display the details of the cell upon hovering the value cells. By default, the tooltip is enabled. You can disable the tooltip in the pivot grid by setting the `EnableToolTip` property to false.
 
 {% highlight html %}
 
@@ -19,9 +19,9 @@ Allows you to display the details of the cell on hovering value cells. By defaul
 {% endhighlight %}
 
 
-## ToolTip Animation
+## Tooltip animation
 
-The PivotGrid provides option to animate tooltip displayed in the grid.  The animation enhances the appearance of tooltip by displaying it slowly.  You can enable animation in tooltip by setting `EnableToolTipAnimation` property to true.
+The pivot grid provides an option to animate the tooltip displayed in the grid. The animation enhances the appearance of tooltip by displaying it slowly. You can enable the animation in the tooltip by setting the `EnableToolTipAnimation` property to true.
 
 
 {% highlight html %}

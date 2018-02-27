@@ -7,11 +7,13 @@ control: PivotClient
 documentation: ug
 ---
 
-# Member Editor Paging
+# Member editor paging
 
-Member editor paging helps to improve the rendering performance of the dialog by dividing large amount of data into sections and displaying them.
+I> This feature is applicable only for the OLAP data source.
 
-You can enable member editor paging and set member editor page size in PivotClient control by setting the [`EnableMemberEditorPaging`] and [`MemberEditorPageSize`] properties.
+The member editor paging helps you to improve the rendering performance of the dialog by dividing the large amount of data into sections and displaying them.
+
+You can enable the member editor paging and set the member editor page size in the pivot client control by setting the [`EnableMemberEditorPaging`] and [`MemberEditorPageSize`] properties.
 
 
 {% highlight html %}
@@ -22,12 +24,12 @@ You can enable member editor paging and set member editor page size in PivotClie
 
 {% endhighlight %}
 
-Following are the navigation option available in Member Editor Pager.
-* Move First - Navigates to the first page.
-* Move Previous - Navigates to the previous page from the current page.
-* Move Next - Navigates to the next page from the current page.
-* Move Last - Navigates to the last page.
-* Numeric Box - Navigates to the desired page by entering an appropriate page number in numeric value.
+Following are the navigation options available in the member editor pager:
+* Move first: Navigates to the first page.
+* Move previous: Navigates to the previous page from the current page.
+* Move next: Navigates to the next page from the current page.
+* Move last: Navigates to the last page.
+* Numeric box: Navigates to the desired page by entering an appropriate page number in numeric value.
 
 
 ![](Member_Editor_images/member_editor.png)

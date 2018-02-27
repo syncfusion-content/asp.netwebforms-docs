@@ -7,10 +7,10 @@ control: PivotTreeMap
 documentation: ug
 ---
 
-# DataBinding 
+# Data binding
 
-## Binding PivotTreeMap to Offline Cube
-To connect an OLAP Cube available in local machine, physical path of the Cube needs to be set in the connection string. Below code sample illustrates the same.
+## Binding pivot tree map to offline cube
+To connect to an OLAP cube available in the local machine, the physical path of the cube should be set in the connection string. The following code sample illustrates this process:
 
 {% highlight c# %}
 
@@ -19,8 +19,8 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-## Binding PivotTreeMap to Cube in local SQL Server
-To connect an OLAP Cube available in SQL Server Analysis Service in local machine, server name and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
+## Binding pivot tree map to cube in local SQL Server
+To connect to an OLAP cube available in the SQL Server Analysis Service of the local machine, the server name and database name should be set in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code sample illustrates this process:
 
 {% highlight c# %}
 
@@ -29,8 +29,8 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-## Binding PivotTreeMap to Cube in online SQL Server
-To connect an OLAP Cube available in SQL Server Analysis Service in online server through **XML/A**, host server link and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
+## Binding pivot tree map to cube in online SQL Server
+To connect to an OLAP cube available in SQL Server Analysis Service in online server through **XML/A**, the host server link and database name should be set in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code sample illustrates this process:
 
 {% highlight c# %}
 
@@ -39,8 +39,8 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-## Binding PivotTreeMap to Cube in online Mondrian Server
-To connect an OLAP Cube available in Mondrian Server through **XML/A**, host server link and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
+## Binding pivot tree map to cube in online Mondrian Server
+To connect to an OLAP cube available in Mondrian Server through **XML/A**, the host server link and database name should be set in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code sample illustrates this process:
 
 {% highlight c# %}
 
@@ -50,8 +50,8 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 
 {% endhighlight %}
 
-## Binding PivotTreeMap to Cube in online ActivePivot Server
-To connect an OLAP Cube available in ActivePivot Server through **XML/A**, host server link and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
+## Binding pivot tree map to cube in online Active Pivot Server
+To connect to an OLAP cube available in Active Pivot Server through **XML/A**, the host server link and database name should be set in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code sample illustrates this process:
 
 {% highlight c# %}
 
@@ -63,19 +63,19 @@ DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.Act
 
 
 ## WCF
-**Adding a WCF Service**
+**Adding a WCF service**
 
-To add a WCF service in an existing Web application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it as `OlapService.svc`, click **Add**.
+To add a WCF service in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select the WCF service and name it `OlapService.svc`, and then click **Add**.
  
-Now WCF service is added into your application successfully which in-turn comprise of the following files. The utilization of these files will be explained in the immediate sections. 
+The WCF service is added to your application, which, in-turn, comprises the following files. The utilization of these files will be explained in the immediate sections.
 
 * OlapService.svc
 * OlapService.svc.cs
 * IOlapService.cs
 
-**Configuring WCF Service Class**
+**Configuring WCF service class**
 
-Remove the **“DoWork”** method present inside both `OlapService.svc.cs` and `IOlapService.cs files`. Next, add **“AspNetCompatibilityRequirements”** attribute on top of main class present inside OlapService.svc.cs and set **“RequirementsMode”** value to **“Allowed”**.
+Remove the **“DoWork”** method present in both `OlapService.svc.cs` and `IOlapService.cs files`. Next, add **“AspNetCompatibilityRequirements”** attribute on top of the main class present in OlapService.svc.cs and set the **“RequirementsMode”** value to **“Allowed”**.
 
 {% highlight c# %}
 
@@ -91,11 +91,11 @@ namespace PivotTreeMapDemo
 
 {% endhighlight %}
 
-**List of Dependency Libraries**
+**List of dependency libraries**
 
-Next you need to add the below mentioned dependency libraries into your Web Application. These libraries could be found in GAC (Global Assembly Cache) as well.
+Next, you can add the below-mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
  
-To add them to your Web Application, right-click on **References** in Solution Explorer and select **Add Reference**. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
+To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
 
 N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. And if you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
@@ -109,9 +109,9 @@ N> If you have installed any version of SQL Server Analysis Service (SSAS) or Mi
 * Syncfusion.EJ.Export
 * Syncfusion.EJ.Pivot
 
-**List of Namespaces**
+**List of namespaces**
 
-Following are the list of namespaces to be added on top of the main class inside `OlapService.svc.cs` file.
+Following is the list of namespaces to be added on top of the main class in the `OlapService.svc.cs` file:
 
 {% highlight c# %}
 
@@ -138,9 +138,9 @@ namespace PivotTreeMaptDemo
 
 {% endhighlight %}
 
-**Datasource Initialization**
+**Data source initialization**
 
-Now the connection string to connect OLAP Cube and PivotTreeMap instances are created immediately inside the main class in `OlapService.svc.cs` file.
+Now, the connection string to connect the OLAP cube and pivot tree map instances is created immediately in the main class of the `OlapService.svc.cs` file.
 
 {% highlight c# %}
 
@@ -158,9 +158,9 @@ namespace PivotTreeMaptDemo
 
 {% endhighlight %}
 
-**Service methods in WCF Service**
+**Service methods in WCF service**
 
-First, declare the service methods inside **IOlapService** interface, found in `IOlapService.cs` file, created while adding WCF Service to the Application.
+First, declare the service methods in the **IOlapService** interface, find in the `IOlapService.cs` file which was created while adding the WCF service to the application.
 
  {% highlight c# %}
 
@@ -178,7 +178,7 @@ namespace PivotTreeMaptDemo
 }
 
 {% endhighlight %}
-Then, elaborate the service methods inside the main class, found in `OlapService.svc.cs` file. 
+Then, elaborate the service methods in the main class, found in the `OlapService.svc.cs` file.
 
 {% highlight c# %}
 
@@ -239,15 +239,15 @@ namespace PivotTreeMaptDemo
 
 {% endhighlight %}
 
-**Configuring Web Configuration File**
+**Configuring web configuration file**
 
-The services could be exposed through the properties, binding, contract and address by using an endpoint.
+The services can be exposed through the properties such as binding, contract, and address by using an endpoint.
 
-* Contract: This property indicates that the contract of the endpoint is exposing. Here you are referring to `IOlapService` contract and hence it is `PivotTreeMapDemo.IOlapService`.
-* Binding: In your application, you use `webHttpBinding` to post and receive the requests and responses between the client-end and the service.
+* Contract: This property indicates that the contract of the endpoint is exposed. Refer to the `IOlapService` contract and it is written as `PivotTreeMapDemo.IOlapService`.
+* Binding: In your application, you can use `webHttpBinding` to post and receive requests and responses between the client-end and the service.
 * BehaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
 
-The endpointBehaviors are illustrated as follows. 
+The endpointBehaviors are illustrated as follows:
  
 {% highlight xaml %}
 
@@ -263,7 +263,7 @@ The endpointBehaviors are illustrated as follows.
 
 {% endhighlight %}
 
-The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using this name property.
+The endpointBehaviors contain all behaviors for an endpoint. You can link each endpoint to the respective behavior only by using the name property.
 
 {% highlight xaml %}
 
@@ -282,9 +282,9 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
 
 {% endhighlight %}
 
-N> In this example, **“PivotTreeMapDemo”** indicates the name and root namespace of the Application created in Visual Studio IDE and **“OlapService”** indicates the name of the WCF service created.
+N> In this example, the **“PivotTreeMapDemo”** indicates the name and root namespace of the application that is created in the Visual Studio IDE and the **“OlapService”** indicates the name of the created WCF service.
 
-The above code will generate a simple PivotTreeMap showing Customer Count over different customer geographic locations across a period of fiscal years.
+The above code will generate a simple pivot tree map showing customer count over different customer geographic locations across a period of fiscal years.
 
 {% include image.html url="/js/PivotTreeMap/OLAP-Connectivity_images/olapwebapi.png" %}
 

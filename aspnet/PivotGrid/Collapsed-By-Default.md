@@ -9,9 +9,9 @@ documentation: ug
 
 # Collapse by default
 
-I> This feature is applicable only for Relational datasource.
+I> This feature is applicable only for the relational data source.
 
-Allows you to collapse all members displayed in the grid. You can enable collapsing all members by default in PivotGrid by setting `EnableCollapseByDefault` property to true.
+Allows you to collapse all members that are displayed in the grid. You can enable collapsing all members by default in the pivot grid by setting the `EnableCollapseByDefault` property to true.
 
 
 {% highlight html %}

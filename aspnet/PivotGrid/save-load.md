@@ -7,16 +7,16 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Save and Load Report
+# Save and load report
 
-Allows you to save the current report of PivotGrid and render the control with the saved report later. We can save and load the report in two ways:
+Allows you to save the current report of the pivot grid and render the control with the saved report later. You can save and load the report in the following two ways:
 
 * Database
-* Local Storage
+* Local storage
 
-## Save Report to Database
+## Save report to database
 
-By using current report name, storage option and url, we can save the current report of PivotGrid to database.  
+By using the current report name, storage option, and url, you can save the current report of the pivot grid to the database.
 
 {% highlight html %}
 
@@ -36,9 +36,9 @@ By using current report name, storage option and url, we can save the current re
 
 {% endhighlight %}
 
-Service method needs to be added in WCF/WebAPI for storing current report of PivotGrid to database.
+The service method should be added to the WCF/WebAPI for storing the current report of the pivot grid to the database.
 
-For WebAPI controller, the below method needs to be added.
+For WebAPI controller, the following method should be added:
 
 {% highlight c# %}
 
@@ -75,7 +75,7 @@ public Dictionary<string, object> SaveReport(Dictionary<string, object> jsonResu
 
 {% endhighlight %}
 
-For WCF service, the below method needs to be added.
+For WCF service, the following method should be added:
 
 {% highlight c# %}
 
@@ -111,9 +111,9 @@ public Dictionary<string, object> SaveReport(string reportName, string operation
 
 {% endhighlight %}
 
-## Save Report to Local Storage
+## Save report to local storage
 
-To save the current report of PivotGrid to local storage, we need to call the `SaveReport` method in PivotGrid.
+To save the current report of the pivot grid to local storage, you can call the `saveReport` method in the pivot grid.
 
 {% highlight html %}
 
@@ -137,9 +137,9 @@ To save the current report of PivotGrid to local storage, we need to call the `S
 {% endhighlight %}
 
 
-## Load Report from Database
+## Load report from database
 
-By using the stored report name, database name and url, we can load the saved report of PivotGrid from database.  
+By using the stored report name, database name and url, you can load the saved report of the pivot grid from the database.
 
 {% highlight html %}
 
@@ -159,11 +159,11 @@ By using the stored report name, database name and url, we can load the saved re
 
 {% endhighlight %}
 
-Service methods need to be added in WCF/WebAPI for loading a stored report in database.
+Service methods should be added to the WCF/WebAPI for loading a stored report in the database.
 
 ### Relational
 
-For WebAPI controller, the below methods need to be added.
+For WebAPI controller, the following method should be added:
 
 {% highlight c# %}
 
@@ -222,7 +222,7 @@ private DataTable GetDataTable()
 
 {% endhighlight %}
 
-For WCF service, the below methods need to be added.
+For WCF service, the following method should be added:
 
 {% highlight c# %}
 
@@ -279,7 +279,7 @@ private DataTable GetDataTable()
 
 ### OLAP
 
-For WebAPI controller, the below methods need to be added.
+For WebAPI controller, the following method should be added:
 
 {% highlight c# %}
 
@@ -346,7 +346,7 @@ private DataTable GetDataTable()
 
 {% endhighlight %}
 
-For WCF service, the below methods need to be added.
+For WCF service, the following method should be added:
 
 {% highlight c# %}
 
@@ -411,9 +411,9 @@ private DataTable GetDataTable()
         
 {% endhighlight %}
 
-## Load Report from Local Storage
+## Load report from local storage
 
-To load a stored report of PivotGrid from local storage, we need to call the `LoadReport` method in PivotGrid.
+To load a stored report of the pivot grid from the local storage, you can call the `loadReport` method in the pivot grid.
 
 {% highlight html %}
 
