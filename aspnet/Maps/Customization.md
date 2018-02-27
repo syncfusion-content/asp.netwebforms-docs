@@ -250,6 +250,85 @@ Here “Map.aspx.cs” is populated with data of USA Election in “Map.aspx.cs�
 
 _Map with fill color_
 
+## Binding color from the datasource
+
+By using `ColorPath` property, you can bind the specific field in the datasource to the map, and the shapes will be rendered based the color values available from the field you bind. 
+
+N> While setting color for map by using `ColorPath` property, do not set any other color mapping hence color mapping is having higher priority than `ColorPath`. 
+
+
+{% highlight html %}
+
+
+
+    <ej:Map ID="map" runat="server">    
+
+
+
+        <Layers>
+
+            <ej:ShapeLayer ShapeDataPath = "State" ShapePropertyPath= "name">
+
+                <ShapeSettings AutoFill = "false" Stroke = "white" ValuePath = "Electors" ColorPath = "shapeFill">
+                     
+                </ShapeSettings>             
+
+            </ej:ShapeLayer>
+
+        </Layers>
+
+
+
+    </ej:Map>
+
+
+
+{% endhighlight %}
+
+![](Customization_images/Customization_img8.png) 
+
+While binding color path for map, it is possible to render legend for each shape in the map. To achieve this, set the `TextPath` for legend. `TextPath` contains another field name in the datasource. As per the text, content in the field legend will be generated. 
+
+
+{% highlight html %}
+
+
+
+    <ej:Map ID="map" runat="server">    
+
+
+
+        <Layers>
+
+            <ej:ShapeLayer ShapeDataPath = "State" ShapePropertyPath= "name">
+
+                <ShapeSettings AutoFill = "false" Stroke = "white" ValuePath = "Electors" ColorPath = "shapeFill">
+                     
+                </ShapeSettings> 
+
+                <LegendSettings showLegend = "true" Textpath = "fill">            
+                
+                </ej:LegendSettings>
+
+            </ej:ShapeLayer>
+
+        </Layers>
+
+
+
+    </ej:Map>
+
+
+
+{% endhighlight %}
+
+
+
+![](Customization_images/Customization_img9.png) 
+
+            
+
+
 
 ## ColorPalette
 

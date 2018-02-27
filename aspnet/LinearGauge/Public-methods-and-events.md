@@ -349,6 +349,53 @@ function onRenderComplete(){
 {% endhighlight %}
 
 
+### DoubleClick
+
+Triggers when the double click is released, you can use `DoubleClick` event.
+
+
+{% highlight html %}
+
+<ej:LinearGauge ClientIDMode="Static" OnClientDoubleClick="onDoubleClick" runat="server" ID="LinearGaugeTooltip">
+
+</ej:LinearGauge>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+function onDoubleClick(){
+    // Do Something
+}
+
+{% endhighlight %}
+
+
+### RightClick
+
+Triggers when the right click is released, you can use `RightClick` event.
+
+
+{% highlight html %}
+
+<ej:LinearGauge ClientIDMode="Static" OnClientRightClick="onRightClick" runat="server" ID="LinearGaugeTooltip">
+
+</ej:LinearGauge>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+function onRightClick(){
+    // Do Something
+}
+
+{% endhighlight %}
+
+
+
+
+
 ## Methods
 
 

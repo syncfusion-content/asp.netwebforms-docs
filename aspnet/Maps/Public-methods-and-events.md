@@ -305,3 +305,156 @@ function onZoomedOut(){
 }
 
 {% endhighlight %}
+
+
+### shapeRendering
+
+Triggers while rendering rendering each shape, you can use `ShapeRendering` event.
+
+{% highlight html %}
+
+<ej:Map ClientIDMode="Static" OnClientShapeRendering="onShapeRendering" runat="server" ID="Map1">
+
+</ej:Map>
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+function onShapeRendering(){
+    // Do Something
+}
+
+{% endhighlight %}
+
+### bubbleRendering
+
+Triggers while rendering each bubble, you can use `BubbleRendering` event.
+
+{% highlight html %}
+
+<ej:Map ClientIDMode="Static" OnClientZoomedOut="onBubbleRendering" runat="server" ID="Map1">
+
+</ej:Map>
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+function onBubbleRendering(){
+    // Do Something
+}
+
+{% endhighlight %}
+
+
+### legendItemRendering
+
+Triggers while rendering each bubble, you can use `LegendItemRendering` event.
+
+{% highlight html %}
+
+<ej:Map ClientIDMode="Static" OnClientLegendItemRendering="onLegendItemRendering" runat="server" ID="Map1">
+
+</ej:Map>
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+function onLegendItemRendering(){
+    // Do Something
+}
+
+{% endhighlight %}
+
+
+
+### Click
+
+Triggers while clicking on the layers of the map, you can use `Click` event.
+
+
+{% highlight html %}
+
+<ej:Map ClientIDMode="Static" OnClientClick="onClick" runat="server" ID="Map1">
+
+</ej:Map>
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+function onClick(){
+    // Do Something
+}
+
+{% endhighlight %}
+
+### DoubleClick
+
+Triggers while double clicking on the layers of the map, you can use `DoubleClick` event.
+
+{% highlight html %}
+
+<ej:Map ClientIDMode="Static" OnClientDoubleClick="onDoubleClick" runat="server" ID="Map1">
+
+</ej:Map>
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+function onDoubleClick(){
+    // Do Something
+}
+
+{% endhighlight %}
+
+### RightClick
+
+Triggers while right clicking on the layers of the map, you can use `RightClick` event.
+
+
+{% highlight html %}
+
+<ej:Map ClientIDMode="Static" OnClientRightClick="onRightClick" runat="server" ID="Map1">
+
+</ej:Map>
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+function onRightClick(){
+    // Do Something
+}
+
+{% endhighlight %}
+
+### Load
+
+Triggers before loading the map, you can use `Load` event.
+
+{% highlight html %}
+
+<ej:Map ClientIDMode="Static" OnClientLoad="onLoad" runat="server" ID="Map1">
+
+</ej:Map>
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+function onLoad(){
+    // Do Something
+}
+
+{% endhighlight %}

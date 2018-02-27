@@ -15,7 +15,6 @@ documentation: ug
 
 `refresh()` method is used to reload the treemap with updated values.
 
-#### Returns: void
 
 {% highlight html %}
 
@@ -227,6 +226,128 @@ If the treemap drilldown item is selected, then `DrillDownItemSelected` event wi
    
    <script type="text/javascript">
     function onGroupSelected(sender) { 
+        // do something
+    }
+    </script>
+
+{% endhighlight %}
+
+
+## itemRendering
+
+`ItemRendering` event will trigger while rendering each item in treemap.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Returns each leaf items in treemap</td>
+        </tr>
+    </tbody>
+</table>
+
+{% highlight html %}
+
+   <ej:TreeMap ID="treemap" runat="server" OnClientItemRendering="onItemRendering">
+   </ej:TreeMap>
+   
+   <script type="text/javascript">
+    function onItemRendering(sender) { 
+        // do something
+    }
+    </script>
+
+{% endhighlight %}
+
+## legendItemRendering
+
+`LegendItemRendering` event will trigger while rendering each legend item in treemap.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Returns each legend item in treemap</td>
+        </tr>
+    </tbody>
+</table>
+
+{% highlight html %}
+
+   <ej:TreeMap ID="treemap" runat="server" OnClientLegendItemRendering="onLegendItemRendering">
+   </ej:TreeMap>
+   
+   <script type="text/javascript">
+    function onLegendItemRendering(sender) { 
+        // do something
+    }
+    </script>
+
+{% endhighlight %}
+
+
+## Click
+
+`Click` event will trigger while clicking an item in the treemap.
+
+{% highlight html %}
+
+   <ej:TreeMap ID="treemap" runat="server" OnClientClick="onClick">
+   </ej:TreeMap>
+   
+   <script type="text/javascript">
+    function onClick(sender) { 
+        // do something
+    }
+    </script>
+
+{% endhighlight %}
+
+## DoubleClick
+
+`DoubleClick` event will trigger while double clicking an item in the treemap
+
+{% highlight html %}
+
+   <ej:TreeMap ID="treemap" runat="server" OnClientDoubleClick="onDoubleClick">
+   </ej:TreeMap>
+   
+   <script type="text/javascript">
+    function onDoubleClick(sender) { 
+        // do something
+    }
+    </script>
+
+{% endhighlight %}
+
+## RightClick
+
+`RightClick` event will trigger while right clicking an item in the treemap.
+
+
+{% highlight html %}
+
+   <ej:TreeMap ID="treemap" runat="server" OnClientRightClick="onRightClick">
+   </ej:TreeMap>
+   
+   <script type="text/javascript">
+    function onRightClick(sender) { 
         // do something
     }
     </script>
