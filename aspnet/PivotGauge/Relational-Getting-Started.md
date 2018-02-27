@@ -1,4 +1,4 @@
-s---
+---
 layout: post
 title: Relational Getting Started | PivotGauge| ASP.NET | Syncfusion
 description: relational getting started
