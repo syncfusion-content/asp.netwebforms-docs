@@ -275,11 +275,15 @@ You can add border around a cell or range of cells to define a section of worksh
 
 7) Thick Box Border
 
-8) Thick Bottom Border
+8) Bottom Double Border
 
-9) Top and Bottom Border
+9) Thick Bottom Border
 
-10) Top and Thick Bottom Border
+10) Top and Bottom Border
+
+11) Top and Thick Bottom Border
+
+12) Top and Bottom Double Border
 
 
 You can apply border for a cell or range of cells through following ways,
