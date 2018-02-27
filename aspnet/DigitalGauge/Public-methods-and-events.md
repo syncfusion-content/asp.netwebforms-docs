@@ -271,4 +271,68 @@ function onRenderComplete(){
 {% endhighlight %}
 
 
+### Click
+
+`Click` event triggers on clicking the gauges. 
+
+{% highlight html %}
+
+<ej:DigitalGauge ClientIDMode="Static" OnClientClick="onClick" runat="server" ID="bullet1">
+
+</ej:DigitalGauge>
+
+{% endhighlight %}
+
+{% highlight js %}
+ 
+function onClick(){
+    // Do Something
+}
+
+{% endhighlight %}
+
+### DoubleClick
+
+The `DoubleClick` event is triggered when double clicking the gauges.
+
+
+
+{% highlight html %}
+
+<ej:DigitalGauge ClientIDMode="Static" OnClientDoubleClick="onDoubleClick" runat="server" ID="bullet1">
+
+</ej:DigitalGauge>
+
+{% endhighlight %}
+
+{% highlight js %}
+ 
+function onDoubleClick(){
+    // Do Something
+}
+
+{% endhighlight %}
+
+
+### RightClick
+
+The `RightClick` event is triggered when right clicking the gauges.
+
+
+
+{% highlight html %}
+
+<ej:DigitalGauge ClientIDMode="Static" OnClientRightClick="onRightClick" runat="server" ID="bullet1">
+
+</ej:DigitalGauge>
+
+{% endhighlight %}
+
+{% highlight js %}
+ 
+function onRightClick(){
+    // Do Something
+}
+
+{% endhighlight %}
 

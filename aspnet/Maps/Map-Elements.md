@@ -262,6 +262,89 @@ N> Tooltip and Color Mappings for bubble is to be set as similar to tooltip and 
 Map with bubbles
 {:.caption} 
 
+
+You can set color for each bubble by using `ColorPath` property in bubble settings. 
+
+N> While settings color for bubbles by using `ColorPath`, do not set any other color mapping hence color mapping is having higher priority than `ColorPath`. 
+
+
+{% highlight html %}
+
+
+
+  <ej:Map ID="map" runat="server" >    
+
+         <Layers>
+
+            <ej:ShapeLayer  EnableMouseHover="true">
+
+             <ShapeSettings Fill = "#9CBF4E" StrokeThickness = "0.5" Stroke = "white" ColorPath="shapeFill">
+
+              </ShapeSettings>
+
+
+
+              <BubbleSettings   ShowBubble=”true” ValuePath = "Population" MinValue = "20" MaxValue = "40" Color = "#C99639" ColorPath="fill">
+
+              </BubbleSettings>
+
+            </ej:ShapeLayer>
+
+
+
+        </Layers>
+
+    </ej:Map>
+
+
+
+{% endhighlight %}
+
+
+![](Map-Elements_images/Map-Elements_img7.png)
+
+While binding `ColorPath` for bubbles, it is possible to render the legend for each bubble. To achieve this, set the `TextPath` for legend. `TextPath` contains another field name in the datasource. As per the text, content in the field legend will be generated. 
+
+{% highlight html %}
+
+
+
+  <ej:Map ID="map" runat="server" >    
+
+         <Layers>
+
+            <ej:ShapeLayer  EnableMouseHover="true">
+
+             <ShapeSettings Fill = "#9CBF4E" StrokeThickness = "0.5" Stroke = "white" ColorPath="shapeFill">
+
+              </ShapeSettings>
+
+
+
+              <BubbleSettings   ShowBubble=”true” ValuePath = "Population" MinValue = "20" MaxValue = "40" Color = "#C99639" ColorPath="fill">
+
+              </BubbleSettings>
+
+
+              <LegendSettings ShowLegend="true” Height="20" Width = "60" PositionX="80" PositionY="90" TextPath="name">
+
+            </LegendSettings>
+
+            </ej:ShapeLayer>
+
+
+
+        </Layers>
+
+    </ej:Map>
+
+
+
+{% endhighlight %}
+
+![](Map-Elements_images/Map-Elements_img8.png)
+
+
 ## Legend
 
 A legend is a key used on a map, contains swatches of symbols with descriptions. It provides valuable information for interpreting what the map is displaying you, and can be represented in various colors, shapes or other identifiers based on the data. It gives a breakdown of what each symbol represents throughout the map.
