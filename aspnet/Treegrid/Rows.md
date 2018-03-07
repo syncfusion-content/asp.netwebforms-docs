@@ -379,9 +379,9 @@ The following code shows how to render row drag tooltip with tooltip template.
 
  ![](Rows_images/Rows_img3.png) 
  
-## Multiple Row drag and drop
+## Multiple row drag and drop
 		
-Using Multiple row drag and drop we can re-order multiple rows at a time.Using this we can drop the rows as above, below and child position as like single row drag and drop.
+TreeGrid provides support for multiple row reordering with mouse drag and drop interaction. The selected rows can be dropped above and below as a siblings or as child records similar to single row reordering.
 In TreeGrid we can enable the multiple drag and drop by setting `SelectionSettings.SelectionType` as `Multiple` or  `Checkbox` and also we should enable the `AllowDragAndDrop` property.
 
 Please find the code example below to enable multiple drag and drop in TreeGrid.
