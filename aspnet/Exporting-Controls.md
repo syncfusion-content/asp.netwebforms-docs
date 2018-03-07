@@ -18,8 +18,7 @@ The following code example describes the above behavior.
 {% tabs %}
 
 {% highlight html %}
-
-<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
+ <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
 
    <ej:Button ID="ExcelExport" runat="server" Size="Medium" ShowRoundedCorner="true" Type="Button" Text="Excel Export" ClientSideOnClick="Export">
 
