@@ -59,6 +59,8 @@ The following code example describes the above behavior.
             <ej:Series Name="Person" EnableAnimation="True" Type="Column" XName="Xvalue" YName="YValue1"></ej:Series>
         </Series>
     </ej:Chart>
+
+</asp:Content>
   
 {% endhighlight  %}
 
