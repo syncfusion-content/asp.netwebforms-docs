@@ -13,7 +13,7 @@ documentation: ug
 
 The **ShowGoToPage** property of Pager renders a textbox within the Pager element.
 
-{% highlight  %}
+{% highlight javascript %}
 
         <ej:Pager ID="Pager" TotalRecordsCount="7" PageCount="3" PageSize="1" ShowGoToPage="true" runat="server"></ej:Pager>
      
