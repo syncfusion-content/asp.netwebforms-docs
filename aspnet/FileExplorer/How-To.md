@@ -843,3 +843,22 @@ In the view page, add the custom column in grid using “[GridSettings](http://h
         
     {% endhighlight %}
     
+## Customize the Root Folder name in FileExplorer
+
+You can set the alias name to the root folder of FileExplorer by using 'rootFolderName' API. It is used to replace the actual root folder name in the FileExplorer UI. Refer to the below code block to set the alias name for the root folder of FileExplorer.
+
+{% highlight html %}
+    
+        <ej:FileExplorer
+            ID="fileexplorer"
+            runat="server"
+            AjaxAction="DefaultFunctionalities.aspx/FileActionDefault"
+            Path="~/FileBrowser/" 
+            RootFolderName ="This PC">        
+            <AjaxSettings>
+                <Download Url="downloadFile.ashx{0}" />
+                <Upload Url="uploadFiles.ashx{0}" />
+            </AjaxSettings>       
+        </ej:FileExplorer>
+        
+    {% endhighlight %}
