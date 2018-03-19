@@ -196,7 +196,7 @@ You can customize the legend border by using the **Border** option in the legend
 
 ### Scrollbar for legend
 
-You can enable or disable the legend scrollbar by using the **EnableScrollbar** option of the legend. When you disable the scrollbar option, the legend does not consider the default size and chart draws in the reaming space. The default value of EnableScrollbar option is **true**.  
+You can enable or disable the legend scrollbar by using the **EnableScrollbar** option of the legend. When you disable the scrollbar option, the legend does not consider the default size and chart draws in the remaining space. If you have specified the **size** to the legend with the scrollbar disabled, then the legends beyond this limit will get clipped. The default value of EnableScrollbar option is **true**.  
 
 {% highlight html %}
 
