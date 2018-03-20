@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Text markup annotation | PDF viewer | ASP .NET | Syncfusion
+title: Text markup annotation | PDF viewer | ASP.NET Webforms | Syncfusion
 description: Text markup annotation
-platform: ASP .NET
+platform: aspnet
 control: PDF viewer
 documentation: ug
 ---

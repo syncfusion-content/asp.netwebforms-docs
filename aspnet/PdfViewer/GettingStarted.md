@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started | PDF viewer | ASP .NET | Syncfusion
+title: Getting Started | PDF viewer | ASP.NET Webforms | Syncfusion
 description: getting started
-platform: ASP .NET
+platform: aspnet
 control: PDF viewer
 documentation: ug
 ---
