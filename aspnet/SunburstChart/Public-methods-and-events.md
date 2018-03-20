@@ -2,7 +2,7 @@
 layout: post
 title: Public Methods and Events
 description: Public Methods and Events in Sunburst Chart.
-platform: ts
+platform: aspnet 
 control: SunburstChart
 documentation: ug
 ---
