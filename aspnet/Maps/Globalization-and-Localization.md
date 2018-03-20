@@ -26,16 +26,16 @@ Right-to-Left or RTL describes the ability of application to handle and responds
 
 In default legend, after setting `EnableRTL` is set as true, legend text will be rendered first, and then legend icon will be rendered. 
 
-![](Globalization-and-Localization_images/Globalization-and-Localization_images1.png)
+![](Globalization-and-Localization _images/Globalization-and-Localization_images1.png)
 
 ## Interactive legend
 
 If `EnableRTL` is set as true, then whole interactive legend will be rendered from right-to-left, which means left label will be rendered at right side, and right label will be rendered at left side. Also, navigation arrow position will be changed to right side.
 
-![](Globalization-and-Localization_images/Globalization-and-Localization_images2.png)
+![](Globalization-and-Localization _images/Globalization-and-Localization_images2.png)
 
 ## Tooltip
 
 If `EnableRTL` is set as true, tooltip will be rendered at the left side of the mouse cursor. 
 
-![](Globalization-and-Localization_images/Globalization-and-Localization_images3.png)
+![](Globalization-and-Localization _images/Globalization-and-Localization_images3.png)
