@@ -2,7 +2,7 @@
 layout: post
 title: Toolbar customization of Syncfusion Essential ASP.NET PDF viewer.
 description: Toolbar customization of Syncfusion Essential ASP.NET PDF viewer.
-platform: ASP.NET
+platform: aspnet
 control: PDF viewer
 documentation: ug
 keywords: pdfviewer, PDF viewer
