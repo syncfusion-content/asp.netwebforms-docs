@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | PDF viewer | ASP.NET | Syncfusion
+title: Overview | PDF viewer | ASP.NET Webforms | Syncfusion
 description: Overview
-platform: ASP.NET
+platform: aspnet
 control: PDF viewer
 documentation: ug
 ---
 
-#Overview
+# Overview
 
 PDF viewer for JavaScript is a visualization component to view PDF documents in web pages. It is powered by HTML5/JavaScript and provides various customization.
 

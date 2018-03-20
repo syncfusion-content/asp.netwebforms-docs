@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Localization of Syncfusion Essential ASP .NET PDF viewer.
-description: Localization of Syncfusion Essential ASP .NET PDF viewer.
-platform: ASP .NET
+title: Localization of Syncfusion Essential ASP.NET PDF viewer.
+description: Localization of Syncfusion Essential ASP.NET PDF viewer.
+platform: aspnet
 control: PDF viewer
 documentation: ug
 keywords: PDF viewer, pdfviewer
