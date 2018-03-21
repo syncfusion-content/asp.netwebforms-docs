@@ -2,7 +2,7 @@
 layout: post
 title: Supported and unsupported elements of Syncfusion Essential ASP .NET PDF viewer.
 description: Supported and unsupported elements of Syncfusion Essential ASP .NET PDF viewer.
-platform: ASP .NET
+platform: aspnet
 control: PDF viewer
 documentation: ug
 keywords: PDF viewer, pdfviewer
