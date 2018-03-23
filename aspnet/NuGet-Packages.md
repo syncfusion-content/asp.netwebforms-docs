@@ -11,15 +11,15 @@ documentation: ug
 
 NuGet is a package manager for the .NET framework. The NuGet client tools simplify the process of installing and upgrading packages. This can be used to automatically add files and references to your Visual Studio projects.
 
-> Note: You can use the Syncfusion ASP.NET Web Forms NuGet packages without installing the Essential Studio or ASP.NET Web Forms platform installation to implement the Syncfusion ASP.NET controls.
+N> You can use the Syncfusion ASP.NET Web Forms NuGet packages without installing the Essential Studio or ASP.NET Web Forms platform installation to implement the Syncfusion ASP.NET controls.
 
 ## Get the Syncfusion NuGet feed URL
 
 You should get the private Syncfusion ASP.NET Web Forms NuGet feed URL to install or upgrade the Syncfusion ASP.NET Web Forms NuGet packages. To get the URL from Syncfusion website use the following steps:
 
-1. Navigate to [nuget.syncfusion.com](https://nuget.syncfusion.com/), and select **DESKTOP** tab.     
+1. Navigate to [nuget.syncfusion.com](https://nuget.syncfusion.com/), and select **WEB** tab.     
 
-2. Click the Copy URL label under ASP.NET Web Forms platform to copy the Syncfusion ASP.NET Web Forms platform NuGet feed to clipboard or directly use the following URL: 
+2. Navigate to **WEB (Essential JS1)**, click the Copy URL label under ASP.NET Web Forms platform to copy the Syncfusion ASP.NET Web Forms platform NuGet feed to clipboard or directly use the following URL: 
 
     [http://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet](http://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet) 
 
@@ -76,7 +76,7 @@ You should get the private Syncfusion ASP.NET Web Forms NuGet feed URL to instal
 
 The NuGet Package Manager can be used to search and install NuGet packages in the Visual Studio solution or project:
 
-1.	On the **Tools**, menu, NuGet **Package Manager | Manage NuGet Packages for Solution...**
+1.	On the **Tools**, menu, NuGet `Package Manager | Manage NuGet Packages for Solution...`
 
     ![](NuGet_Packages_Images/img6.png)
 
@@ -87,6 +87,7 @@ The NuGet Package Manager can be used to search and install NuGet packages in th
      ![](NuGet_Packages_Images/img7.png)             
 
 3.	The Syncfusion ASP.NET Web Forms NuGet Packages are listed and available in the package source feed URL. Search and install the required packages in your application, by clicking **Install** button.
+
 
 ### Using Package Manager Console
 
@@ -120,7 +121,9 @@ To reference the Syncfusion ASP.NET Web Forms component using the Package Manage
     Install-Package Syncfusion.AspNet -ProjectName SyncfusionDemoApplication
     ~~~
 
+
 ### Using Visual Studio for macOS
+
 
 Add packages can be used to search and install NuGet packages to the Visual Studio project in macOS:
 
@@ -141,7 +144,7 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
 ### Configure NuGet feed URL 
 
 1.	Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
-    > Note: To update the existing nuget.exe to latest version use the following command:
+    N> To update the existing nuget.exe to latest version use the following command:
 
     ~~~
     nuget update -self
@@ -158,6 +161,7 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
     ~~~
 
     **For example:**
+
     ~~~
     #For Windows platform
     nuget.exe Sources Add –Name “Syncfusion Source” –Source “http://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet”
@@ -178,9 +182,10 @@ nuget.exe install <Package name | ConfigFilePath > <Options>
 mono nuget.exe install <Package name | ConfigFilePath > <Options>
 ~~~
 
-> Note: <configFilePath> is optional. This identifies the packages.config or solutions file that lists the packages utilized in the project. 
+N> configFilePath is optional. This identifies the packages.config or solutions file that lists the packages utilized in the project. 
 
 **For example:**
+
 ~~~
 #install specific package for Windows 
 nuget.exe install “Syncfusion.AspNet”
@@ -188,16 +193,16 @@ nuget.exe install “Syncfusion.AspNet”
 #install all package which mention in package.config path for Windows 
 nuget.exe install “C:\Users\SyncfusionApplication\package.config”
 
-# install specific Syncfusion NuGet package with Syncfusion ASP.NET Web Forms NuGet feed for Windows 
+#install specific Syncfusion NuGet package with Syncfusion ASP.NET Web Forms NuGet feed for Windows 
 nuget.exe install “Syncfusion.AspNet” –Source "http://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet”
 
-# install specific package for Mac and Linux 
+#install specific package for Mac and Linux 
 mono nuget.exe install “Syncfusion.AspNet”
 
 #install all package which mention in package.config path for Mac and Linux 
 mono nuget.exe install “C:\Users\SyncfusionApplication\package.config”
 
-# install specific Syncfusion NuGet package with Syncfusion ASP.NET Web Forms NuGet feed for Mac and Linux 
+#install specific Syncfusion NuGet package with Syncfusion ASP.NET Web Forms NuGet feed for Mac and Linux 
 mono nuget.exe install “Syncfusion.AspNet” –Source “http://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet”
 ~~~
 
@@ -222,7 +227,7 @@ Using **Update** context menu from Visual Studio for Mac application, NuGet pack
 
 2.	This will update the NuGet package to the latest version. You can double-click Add packages and choose the specific version.
 
-> Note: To update all the projects from solution, use update option in the solution level. 
+N> To update all the projects from solution, use update option in the solution level. 
 
 ### Using Package Manger Console
 
@@ -264,7 +269,8 @@ To update the installed Syncfusion ASP.NET Web Forms NuGet packages using the Pa
 Using the NuGet CLI, all the NuGet packages in the project can be updated to the available latest version: 
 
 1.	Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
-    > Note: To update the existing nuget.exe to latest version use the following command: 
+    N> To update the existing nuget.exe to latest version use the following command:
+
     ~~~
     nuget update -self
     ~~~
@@ -279,9 +285,10 @@ Using the NuGet CLI, all the NuGet packages in the project can be updated to the
     nuget update -Source <Source Location> [optional]
     ~~~      
 
-    > Note: <configFilePath> is optional. This identifies the packages.config or solutions file lists the packages utilized in the project. 
+    N> configPath is optional. This identifies the packages.config or solutions file lists the packages utilized in the project. 
 	
     **For example:**
+
     ~~~          
     #Update all NuGet packages from config file
     nuget update “C:\Users\SyncfusionApplication\package.config”
@@ -290,7 +297,7 @@ Using the NuGet CLI, all the NuGet packages in the project can be updated to the
     nuget update -Source “http://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet”
     ~~~
 
-    > Note: Update command is not working as expected in Mono (Mac and Linux) and projects using PackageReference format.
+    N> Update command is not working as expected in Mono (Mac and Linux) and projects using PackageReference format.
    
 
 
