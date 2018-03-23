@@ -1,7 +1,7 @@
 ---
 layout: post
-title: NuGet Packages in Windows | ASP.NET | Syncfusion
-description: NuGet Packages in Windows
+title: NuGet Packages | ASP.NET | Syncfusion
+description: NuGet Packages
 platform: ASP.NET
 control: NuGet Packages
 documentation: ug
