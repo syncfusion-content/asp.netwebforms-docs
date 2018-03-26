@@ -2,7 +2,7 @@
 layout: post
 title: NuGet Packages | ASP.NET | Syncfusion
 description: NuGet Packages
-platform: ASP.NET
+platform: aspnet
 control: NuGet Packages
 documentation: ug
 ---
