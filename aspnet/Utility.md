@@ -2,7 +2,7 @@
 layout: post
 title: The Syncfusion ASP.NET Extensions
 description: Syncfusion ASP.NET Extensions
-platform: ASP.NET
+platform: aspnet
 control: Introduction
 documentation: ug
 
