@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ASP.NET | NuGet Packages | Syncfusion
+title: ASP.NET NuGet Packages | Syncfusion
 description: 
 platform: aspnet
 control: NuGet Packages
