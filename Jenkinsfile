@@ -1,7 +1,7 @@
 node('content')
 { 
  timestamps
-  {
+  { 
      timeout(time: 7200000, unit: 'MILLISECONDS') {
 String platform='ASP.NET';
    try
@@ -17,17 +17,18 @@ String platform='ASP.NET';
            {
 		     checkout scm
 			 
-			 //get the changelog by using git difference command
-			 
-			 String ChangeDetails = bat returnStdout: true, script: 'git diff --name-only '+env.gitlabSourceBranch+'..origin/'+env.gitlabTargetBranch
-			 
-			 def ChangeFiles=ChangeDetails.split('\n')
-			 
-			 for(int i=2;i<ChangeFiles.size();i++)
-               {
-			      Content+= env.WORKSPACE+"\\Spell-Checker\\"+ChangeFiles[i]+"\r\n";
-               }
-		    
+			 def branchCommit = '"' + 'https://gitlab.syncfusion.com/api/v4/projects/' + env.projectId + '/merge_requests/' + env.MergeRequestId + '/changes'
+            String branchCommitDetails = bat returnStdout: true, script: 'curl -s --request GET --header PRIVATE-TOKEN:' + env.BuildAutomation_PrivateToken + " " + branchCommit
+
+            def ChangeFiles= branchCommitDetails.split('\n')[2];
+            ChangeFiles = ChangeFiles.split('"new_path":')
+
+            for (int i= 1; i < ChangeFiles.size();i++)
+            {
+            def ChangeFile= ChangeFiles[i].split(',')[0].replace('"', '')
+            Content += env.WORKSPACE + "\\Spell-Checker\\" + ChangeFile + "\r\n";
+            }
+ 
 		      if (Content) {  
                  writeFile file: env.WORKSPACE+"/cireports/content.txt", text: Content
               }
