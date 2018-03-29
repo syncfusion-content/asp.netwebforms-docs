@@ -159,3 +159,29 @@ The value `Auto`, automatically calculates the schedule header depending on the 
 ![](Schedule-Modes_images/Schedule-Modes_img6.png)
 
 [Click](http://asp.syncfusion.com/demos/web/gantt/schedulemodes.aspx) here to view the timescale modes in Gantt.
+
+## Customize automatic timescale update action
+
+In Gantt, schedule timeline will be automatically updated when the tasks are edited beyond the schedule start date and end date range. This can be enabled/disabled by using [`UpdateTimescaleView`](/api/js/ejgantt#members:scheduleheadersettings-updatetimescaleview) property.
+The following code snippets shows how to prevent the automatic timescale update in Gantt.
+ 
+{% highlight html %}
+	<ej:Gantt ID="Gantt" runat="server" Load="load">
+		<ScheduleHeaderSettings ScheduleHeaderType="Week" 
+		UpdateTimescaleView = false/>
+	</ej:Gantt>
+{% endhighlight %}
+
+The following screenshot shows the output of above code example.
+
+![](Schedule-Modes_images/Schedule-Modes_img7.png)
+At Initial load
+{:.caption}
+
+![](Schedule-Modes_images/Schedule-Modes_img8.png)
+`UpdateTimescaleView` property as `false`
+{:.caption}
+
+![](Schedule-Modes_images/Schedule-Modes_img9.png)
+`UpdateTimescaleView` property as `true`
+{:.caption}
