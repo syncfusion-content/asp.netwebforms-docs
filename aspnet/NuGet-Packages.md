@@ -37,7 +37,7 @@ You should get the private Syncfusion ASP.NET Web Forms NuGet feed URL to instal
 
 3.	Expand the **NuGet Package Manager** and select **Package Sources**.
 
-4.	Click the **Add** button (green plus), and enter the ‘Package Name’ and ‘Package Source URL’ of the Syncfusion ASP.NET Web FormsNuGet packages.
+4.	Click the **Add** button (green plus), and enter the ‘Package Name’ and ‘Package Source URL’ of the Syncfusion ASP.NET Web Forms NuGet packages.
     
     **Name:** Name of the package listed in the available package sources.
     
