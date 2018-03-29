@@ -809,7 +809,7 @@ public partial class DefaultFunctionalities : System.Web.UI.Page
 {% highlight js %}
 
 <script id="templateData" type="text/x-jsrender">
-     Freight has Average of {{:summaryValue}} in  dollars
+     Freight has Average of {{"{{"}}:summaryValue{{"}}"}} in  dollars
 </script>
 
 {% endhighlight %}
