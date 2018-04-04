@@ -272,7 +272,7 @@ A task’s schedule can be changed by left resizing, right resizing or dragging 
 ![](Resource-Allocation-View_images/ResourceView_12.png)
 
 #### Update task values dynamically
-In resource allocation view also, we can update the task details dynamically on any action like external button click by using [`updateRecordByTaskId`](/api/js/ejgantt#methods:updaterecordbytaskid "updateRecordByTaskId(data)" method. The below code example explains how to use this method in resource allocation view.
+In resource allocation view also, we can update the task details dynamically on any action like external button click by using [`updateRecordByTaskId`](/api/js/ejgantt#methods:updaterecordbytaskid "updateRecordByTaskId(data)") method. The below code example explains how to use this method in resource allocation view.
 
 {% highlight html %}
 
