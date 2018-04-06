@@ -195,5 +195,5 @@ public void PdfExportAll()
 
 The following output is displayed as a result of the above code example.
 
-![](Exporting-Controls_images/Exporting-Controls_img1.png)
+![](Exporting-Control_images/Exporting-Controls_img1.png)
 
