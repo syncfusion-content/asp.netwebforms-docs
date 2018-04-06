@@ -695,6 +695,8 @@ HTML templates can be specified in the `Template` property of the particular col
 
 You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [this link](http://www.jsviews.com/#jsrapi "this link"). 
 
+For template manipulation using JavaScript, either you can use JSRender [helper](https://www.jsviews.com/#helpers) function or `TemplateRefresh` grid event. For more information on `TemplateRefresh` event, refer [this link](https://help.syncfusion.com/aspnet/grid/how-to/display-other-syncfusion-controls-in-grid-columns "this link").
+
 N> If `Field` is not specified, you will not able to perform editing, grouping, filtering, sorting, search and summary functionalities in particular column.
 
 The following code example describes the above behavior.
