@@ -140,7 +140,7 @@ function filtering(e) {
 
 ## Case sensitive filtering
 
-Data items can be filtered either with or without case sensitivity using the DataManager. This can be done by passing the fourth optional parameter of the [where](/data/api-query.html#where) clause.
+Data items can be filtered either with or without case sensitivity using the DataManager. This can be done by passing the fourth optional parameter of the [where](https://help.syncfusion.com/api/js/ejquery#methods:where) clause.
 
 The following example shows how to perform case-sensitive filter.
 

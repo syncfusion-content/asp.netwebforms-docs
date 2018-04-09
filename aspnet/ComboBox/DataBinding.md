@@ -84,7 +84,7 @@ public class Employee
 
 ## Binding Remote Data
 
-The ComboBox supports retrieval of data from remote data services with the help of [DataManager](/data/api-dataManager.html) component. The [Query](/data/api-query.html) property is used to fetch
+The ComboBox supports retrieval of data from remote data services with the help of [DataManager](/aspnet/datamanager) component. The [Query](https://help.syncfusion.com/api/js/ejquery) property is used to fetch
 data from the database and bind it to the ComboBox.
 
 In the following sample, displayed first 6 contacts from the `customer` table of `Northwind` Data Service.
