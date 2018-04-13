@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Responsive with Grid widget for Syncfusion EJASPNet
+title: Responsive with Grid widget for Syncfusion ASP.NET
 description: How to set the grid, responsive to screen resolutions
 platform: aspnet
 control: Grid
