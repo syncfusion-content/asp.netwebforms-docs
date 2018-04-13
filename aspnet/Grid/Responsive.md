@@ -31,39 +31,34 @@ Enabling responsive row makes the grid to render the record values in vertical o
 
 {% tabs %}
 
-{% highlight razor %}
+{% highlight html %}
 
-     @(Html.EJ().Grid<OrdersView>("Grid")
-     	.Datasource((IEnumerable<object>)ViewBag.datasource)
-	    .IsResponsive(true)
-        .EnableResponsiveRow(true)
-	    .AllowPaging()
-	    .PageSettings(p => p.PageCount(3).PageSize(7))
-     	.Columns(col =>
-       	 {
-		    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Add();
-		    col.Field("CustomerID").HeaderText("Customer ID").Add();
-		    col.Field("EmployeeID").HeaderText("Employee ID").Add();
-		    col.Field("ShipCity").HeaderText("Ship City").Add();
-		    col.Field("Freight").HeaderText("Freight").Format("{0:C}").Add();
-     	})
-     )
+    <ej:Grid ID="FlatGrid" runat="server"  MinWidth="600" IsResponsive="true" AllowPaging="True" EnableResponsiveRow="true">
+        <PageSettings PageCount="3" PageSize="7" />
+        <Columns>
+            <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True"></ej:Column>
+            <ej:Column Field="CustomerID" HeaderText="Customer ID" ></ej:Column>
+			<ej:Column Field="EmployeeID" HeaderText="Employee ID" />
+			<ej:Column Field="ShipCity" Width="120" HeaderText="Ship City" />
+            <ej:Column Field="Freight" HeaderText="Freight" Format="{0:C}"></ej:Column>
+        </Columns>
+    </ej:Grid>
 
 {% endhighlight %}
 {% highlight c# %}
 
-      namespace SyncfusionMvcApplication3.Controllers
-     {
-       public class HomeController : Controller
-         {
-          public ActionResult Index()
-           {
-            var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-            ViewBag.datasource = DataSource;
-            return View();
-           }
-         }
-      }
+   namespace WebSampleBrowser.Grid
+   {
+        public partial class _Default : Page
+        {
+            List<Orders> order = new List<Orders>();
+            protected void Page_Load(object sender, EventArgs e)
+            { 
+                this.FlatGrid.DataSource = order;
+                this.FlatGrid.DataBind();
+    		}
+        }
+    }
 
 {% endhighlight  %}
 {% endtabs %} 
@@ -109,58 +104,50 @@ Searching in mobile layout
 
 {% tabs %}
 
-{% highlight razor %}
+{% highlight html %}
 
-     @using Syncfusion.JavaScript.Models
-
-       @(Html.EJ().Grid<OrdersView>("Grid")
-	   .Datasource((IEnumerable<object>)ViewBag.datasource)
-	   .IsResponsive(true)
-       .EnableResponsiveRow(true)
-	   .AllowPaging()
-	   .EditSettings(d => d.AllowAdding(true).AllowDeleting(true).AllowEditing(true))
-              .ToolbarSettings(toolbar =>
-              {
-                  toolbar.ShowToolbar().ToolbarItems(items =>
-                  {
-                      items.AddTool(ToolBarItems.Add);
-                      items.AddTool(ToolBarItems.Edit);
-                      items.AddTool(ToolBarItems.Delete);
-                      items.AddTool(ToolBarItems.Update);
-                      items.AddTool(ToolBarItems.Cancel);
-                      items.AddTool(ToolBarItems.Search);
-                  });
-              })
-	 .PageSettings(p => p.PageCount(3).PageSize(7))
-	 .AllowFiltering()
-	 .AllowSorting()
-     .AllowMultiSorting()
-	 .FilterSettings(filterSettings => filterSettings.FilterType(FilterType.Menu))
-	 .Columns(col =>
-	  {
-	 	col.Field("OrderID").HeaderText("Order ID").Width("90").IsPrimaryKey(true).ValidationRules(v => v.AddRule("required", true).AddRule("number", true)).TextAlign(TextAlign.Right).Add();
-        col.Field("CustomerID").HeaderText("Customer ID").Width("100").ValidationRules(v => v.AddRule("required", true)).Add();
-        col.Field("EmployeeID").HeaderText("Employee ID").EditType(EditingType.Dropdown).TextAlign(TextAlign.Right).Width("90").Add();           
-        col.Field("ShipCity").HeaderText("Ship City").Width("120").EditType(EditingType.Dropdown).Add();
-	 	col.Field("Freight").HeaderText("Freight").Width("110").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties() { DecimalPlaces = 2 }).Format("{0:C}").Add();
-	  })
-    )
+<ej:Grid ID="FlatGrid" runat="server"  MinWidth="600" IsResponsive="true" AllowPaging="True" EnableResponsiveRow="true" AllowSorting="true" AllowMultiSortig="true" AllowFiltering="true">
+        <ClientSideEvents  ActionComplete="actionComplete"/>
+        <PageSettings PageCount="3" PageSize="7" />
+        <FilterSettings FilterType="Menu" />
+        <EditSettings AllowEditing="True" AllowAdding="True" AllowDeleting="True"></EditSettings>
+        <ToolbarSettings ShowToolbar="True" ToolbarItems="add,edit,delete,update,cancel,search"></ToolbarSettings>
+        <FilterSettings FilterType="Menu"></FilterSettings>
+        <Columns>
+            <ej:Column Field="OrderID" HeaderText="Order ID" Width="90" IsPrimaryKey="True" TextAlign="Right">
+                <ValidationRule>
+                    <ej:KeyValue Key="required" Value="true" />
+                    <ej:KeyValue Key="number" Value="true" />
+                </ValidationRule>
+            </ej:Column>
+            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" >
+                <ValidationRule>
+                    <ej:KeyValue Key="required" Value="true" />
+                </ValidationRule>
+            </ej:Column>
+			<ej:Column Field="EmployeeID" HeaderText="Employee ID"  Width="90" EditType="Dropdown" TextAlign="Right" />
+			<ej:Column Field="ShipCity" Width="120" HeaderText="Ship City" EditType="Dropdown" />
+            <ej:Column Field="Freight" HeaderText="Freight" Width="80" EditType="Numeric" TextAlign="Right" Format="{0:C}">
+                <NumericEditOptions DecimalPlaces="2"></NumericEditOptions>
+            </ej:Column>
+        </Columns>
+    </ej:Grid>
     
 {% endhighlight %}
 {% highlight c# %}
 
-     namespace SyncfusionMvcApplication3.Controllers
-     {
-      public class HomeController : Controller
-       {
-       public ActionResult Index()
-         {
-            var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-            ViewBag.datasource = DataSource;
-            return View();
-          }
+    namespace WebSampleBrowser.Grid
+    {
+        public partial class _Default : Page
+        {
+            List<Orders> order = new List<Orders>();
+            protected void Page_Load(object sender, EventArgs e)
+            { 
+                this.FlatGrid.DataSource = order;
+                this.FlatGrid.DataBind();
+    		}
         }
-      }
+    }
 
 
 {% endhighlight  %}
@@ -174,38 +161,33 @@ If the client width is between 321px and 800px, then the grid will render in tab
 
 {% highlight razor %}
 
-     @(Html.EJ().Grid<OrdersView>("Grid")
- 	  .Datasource((IEnumerable<object>)ViewBag.datasource)
-   	  .IsResponsive(true)
- 	  .AllowFiltering()
- 	  .FilterSettings(filterSettings => filterSettings.FilterType(FilterType.Menu))
- 	  .AllowPaging()
- 	  .PageSettings(p => p.PageCount(3).PageSize(8))
- 	  .Columns(col =>
- 	   {
- 		col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Width("90").Add();
- 		col.Field("CustomerID").HeaderText("Customer ID").Width("100").Add();
- 		col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width("90").Add();
- 		col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
- 		col.Field("Freight").HeaderText("Freight").Width("80").Format("{0:C}").Add();
-   	  })
-     )
+    <ej:Grid ID="FlatGrid" runat="server"  MinWidth="600" IsResponsive="true" AllowPaging="True" AllowFiltering="true">
+        <PageSettings PageCount="3" PageSize="8" />
+        <FilterSettings FilterType="Menu"></FilterSettings>
+        <Columns>
+            <ej:Column Field="OrderID" HeaderText="Order ID" Width="90" IsPrimaryKey="True" TextAlign="Right"></ej:Column>
+            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" ></ej:Column>
+			<ej:Column Field="EmployeeID" HeaderText="Employee ID"  Width="90" TextAlign="Right" />
+			<ej:Column Field="ShipCity" Width="120" HeaderText="Ship City" />
+            <ej:Column Field="Freight" HeaderText="Freight" Width="80" TextAlign="Right" Format="{0:C}"></ej:Column>
+        </Columns>
+    </ej:Grid>
 
 {% endhighlight %}
 {% highlight c# %}
 
-     namespace SyncfusionMvcApplication3.Controllers
-     {
-      public class HomeController : Controller
-       {
-       public ActionResult Index()
-         {
-           var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-           ViewBag.datasource = DataSource;
-           return View();
+    namespace WebSampleBrowser.Grid
+    {
+        public partial class _Default : Page
+        {
+            List<Orders> order = new List<Orders>();
+            protected void Page_Load(object sender, EventArgs e)
+            { 
+                this.FlatGrid.DataSource = order;
+                this.FlatGrid.DataBind();
+    		}
         }
-       }
-      }
+    }
 
 
 {% endhighlight  %}
@@ -227,33 +209,31 @@ By default, the grid is adaptable to its parent container. It can adjust its wid
 
 {% tabs %}
 
-{% highlight razor %}
-
-     @(Html.EJ().Grid<OrdersView>("Grid")
-   	   .Datasource((IEnumerable<object>)ViewBag.datasource)
- 	   .Columns(col =>
- 	    {
- 		  col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Width("10%").Add();
- 		  col.Field("CustomerID").HeaderText("Customer ID").Width("15%").Add();
- 		   col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width("10%").Add();
-	    })
-      )
+{% highlight html %}
+     
+    <ej:Grid ID="FlatGrid" runat="server"  MinWidth="600" IsResponsive="true">
+        <Columns>
+            <ej:Column Field="OrderID" HeaderText="Order ID" Width="10%" IsPrimaryKey="True" TextAlign="Right"></ej:Column>
+            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="15%" ></ej:Column>
+			<ej:Column Field="EmployeeID" HeaderText="Employee ID"  Width="10%" TextAlign="Right" />
+        </Columns>
+    </ej:Grid>
 
 {% endhighlight %}
 {% highlight c# %}
 
-     namespace SyncfusionMvcApplication3.Controllers
-      { 
-       public class HomeController : Controller
-       {
-        public ActionResult Index()
+    namespace WebSampleBrowser.Grid
+    {
+        public partial class _Default : Page
         {
-            var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-            ViewBag.datasource = DataSource;
-            return View();
-         }
+            List<Orders> order = new List<Orders>();
+            protected void Page_Load(object sender, EventArgs e)
+            { 
+                this.FlatGrid.DataSource = order;
+                this.FlatGrid.DataBind();
+    		}
         }
-      }
+    }
 
 
 {% endhighlight  %}
@@ -268,36 +248,31 @@ Min width is used to maintain minimum width for the grid. To enable min width, `
 {% tabs %}
 
 {% highlight razor %}
-
-     @(Html.EJ().Grid<OrdersView>("Grid")
- 	   .Datasource((IEnumerable<object>)ViewBag.datasource)
- 	   .AllowPaging()
- 	   .MinWidth(700)
- 	   .Columns(col =>
-	   {
-	 	col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Width("90").Add();
-	 	col.Field("CustomerID").HeaderText("Customer ID").Width("100").Add();
-	 	col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width("90").Add();
-	 	col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
-	 	col.Field("Freight").HeaderText("Freight").Width("110").Format("{0:C}").Add();
-	  })
-     )
+    <ej:Grid ID="FlatGrid" runat="server"  MinWidth="700" IsResponsive="true" AllowPaging="True" AllowFiltering="true">
+        <Columns>
+            <ej:Column Field="OrderID" HeaderText="Order ID" Width="90" IsPrimaryKey="True" TextAlign="Right"></ej:Column>
+            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" ></ej:Column>
+			<ej:Column Field="EmployeeID" HeaderText="Employee ID"  Width="90" TextAlign="Right" />
+			<ej:Column Field="ShipCity" Width="120" HeaderText="Ship City" />
+            <ej:Column Field="Freight" HeaderText="Freight" Width="110" TextAlign="Right" Format="{0:C}"></ej:Column>
+        </Columns>
+    </ej:Grid>
 
 {% endhighlight %}
 {% highlight c# %}
 
-     namespace SyncfusionMvcApplication3.Controllers
-      {
-       public class HomeController : Controller
+    namespace WebSampleBrowser.Grid
+    {
+        public partial class _Default : Page
         {
-          public ActionResult Index()
-           {
-            var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-            ViewBag.datasource = DataSource;
-            return View();
-           }
-         }
+            List<Orders> order = new List<Orders>();
+            protected void Page_Load(object sender, EventArgs e)
+            { 
+                this.FlatGrid.DataSource = order;
+                this.FlatGrid.DataBind();
+    		}
         }
+    }
 
 
 {% endhighlight  %}
@@ -314,35 +289,31 @@ Priority makes column to be visible or hidden based on the `Priority` value and 
 {% tabs %}
 
 {% highlight razor %}
-
-     @(Html.EJ().Grid<OrdersView>("Grid")
- 	  .Datasource((IEnumerable<object>)ViewBag.datasource)
- 	  .AllowPaging()
- 	  .Columns(col =>
- 	   {
- 	   	col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Priority(1).TextAlign(TextAlign.Right).Width("90").Add();
- 		col.Field("CustomerID").HeaderText("Customer ID").Width("100").Priority(2).Add();
- 		col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Priority(1).Width("90").Add();
- 		col.Field("ShipCity").HeaderText("Ship City").Width("120").Priority(3).Add();
- 		col.Field("Freight").HeaderText("Freight").Width("110").Format("{0:C}").Priority(4).Add();
-	  })
-     )
+    <ej:Grid ID="FlatGrid" runat="server"  AllowPaging="True">
+        <Columns>
+            <ej:Column Field="OrderID" HeaderText="Order ID" Width="90" Priority="1" IsPrimaryKey="True" TextAlign="Right"></ej:Column>
+            <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="100" Priority="2" ></ej:Column>
+			<ej:Column Field="EmployeeID" HeaderText="Employee ID"  Width="90" Priority="1" TextAlign="Right" />
+			<ej:Column Field="ShipCity" Width="120" HeaderText="Ship City" Priority="3" />
+            <ej:Column Field="Freight" HeaderText="Freight" Width="80" TextAlign="Right" Priority="4" Format="{0:C}"></ej:Column>
+        </Columns>
+    </ej:Grid>
 
 {% endhighlight %}
 {% highlight c# %}
 
-     namespace SyncfusionMvcApplication3.Controllers
-     {
-      public class HomeController : Controller
-      {
-        public ActionResult Index()
+    namespace WebSampleBrowser.Grid
+    {
+        public partial class _Default : Page
         {
-            var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-            ViewBag.datasource = DataSource;
-            return View();
-         }
-      }
-     }
+            List<Orders> order = new List<Orders>();
+            protected void Page_Load(object sender, EventArgs e)
+            { 
+                this.FlatGrid.DataSource = order;
+                this.FlatGrid.DataBind();
+    		}
+        }
+    }
 
 {% endhighlight  %}
 {% endtabs %} 
