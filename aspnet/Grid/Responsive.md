@@ -159,7 +159,7 @@ If the client width is between 321px and 800px, then the grid will render in tab
 
 {% tabs %}
 
-{% highlight razor %}
+{% highlight html %}
 
     <ej:Grid ID="FlatGrid" runat="server"  MinWidth="600" IsResponsive="true" AllowPaging="True" AllowFiltering="true">
         <PageSettings PageCount="3" PageSize="8" />
@@ -247,7 +247,7 @@ Min width is used to maintain minimum width for the grid. To enable min width, `
 
 {% tabs %}
 
-{% highlight razor %}
+{% highlight html %}
     <ej:Grid ID="FlatGrid" runat="server"  MinWidth="700" IsResponsive="true" AllowPaging="True" AllowFiltering="true">
         <Columns>
             <ej:Column Field="OrderID" HeaderText="Order ID" Width="90" IsPrimaryKey="True" TextAlign="Right"></ej:Column>
@@ -288,7 +288,7 @@ Priority makes column to be visible or hidden based on the `Priority` value and 
 
 {% tabs %}
 
-{% highlight razor %}
+{% highlight html %}
     <ej:Grid ID="FlatGrid" runat="server"  AllowPaging="True">
         <Columns>
             <ej:Column Field="OrderID" HeaderText="Order ID" Width="90" Priority="1" IsPrimaryKey="True" TextAlign="Right"></ej:Column>
