@@ -397,7 +397,7 @@ The following screenshot illustrates the Tab with customized Width.
 
 ## Theme
 
-Tab control’s style and appearance are controlled based on the CSS classes. In order to apply styles to the Tab control, you can refer to the files, ej.controls.core.min.css and ej.theme.min.css. When the file ej.controls.all.min.css is referred, it is not necessary to include the files ej.controls.core.min.css and ej.theme.min.css in your project, as ej.controls.all.min.css is the combination of these two files. 
+Tab control’s style and appearance are controlled based on the CSS classes. In order to apply styles to the Tab control, you can refer to the files, ej.widgets.core.min.css and ej.theme.min.css. When the file ej.web.all.min.css is referred, it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project, as ej.web.all.min.css is the combination of these two files. 
 
 By default, there are 13 themes available for Tab control,
 
