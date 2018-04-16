@@ -23,6 +23,8 @@ We can bind datasource in one of the following two ways
 *	Using `DataManager` nested property of Grid Control in View Page and code behind.
 *	Using `DataSource` Grid property in Code behind.
 
+N> To update the dataSource after Grid rendered, use `dataSource` method of Grid. Refer to this [link](https://help.syncfusion.com/aspnet/grid/how-to/set-dynamic-datasource-to-grid) for more information.
+
 In the following section, let us see on how to bind various datasources to Grid using `DataSource` and `DataManager` API.
 
 ## Binding with Datasource controls
