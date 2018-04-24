@@ -420,7 +420,7 @@ namespace WebSampleBrowser.Grid
 
 {% endtabs %}
 
-![](Summary_images/Summary_img3.png)
+![](Summary_images/Summary_img3.PNG)
 
 
 
