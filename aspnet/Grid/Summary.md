@@ -285,6 +285,8 @@ Custom Summary is used to create custom summary formula for summary. The followi
                 <ej:Column Field="ShipCity" HeaderText="Ship City" Width="90" />
 
                 <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="80" Format="{0:C}" />
+                
+                <ej:Column Field="Amount" HeaderText="Amount" TextAlign="Right" Width="80" Format="{0:C2}" />
 
             </Columns>
 
@@ -296,13 +298,11 @@ Custom Summary is used to create custom summary formula for summary. The followi
 
     <script type="text/javascript">
 
-        function currency() {
+        function currency(args,data) {
 
-            var rs = 100000;
+             var value = ej.sum(data, "Freight") + ej.sum(data, "Amount");
 
-            var interest = 0.017
-
-            return (rs * interest);
+             return value;
 
         }
 
@@ -348,15 +348,15 @@ namespace WebSampleBrowser.Grid
 
             {
 
-                order.Add(new Orders(code + 1, i + 0, "Berlin", 2.3 * i));
+                order.Add(new Orders(code + 1, i + 0, "Berlin", 2.3 * i, 3.5 * i));
 
-                order.Add(new Orders(code + 2, i + 2, "Madrid", 3.3 * i));
+                order.Add(new Orders(code + 2, i + 2, "Madrid", 3.3 * i, 4.5 * i));
 
-                order.Add(new Orders(code + 3, i + 1, "Cholchester", 4.3 * i));
+                order.Add(new Orders(code + 3, i + 1, "Cholchester", 4.3 * i, 9.5 * i));
 
-                order.Add(new Orders(code + 4, i + 3, "Marseille", 5.3 * i));
+                order.Add(new Orders(code + 4, i + 3, "Marseille", 5.3 * i, 7.5 * i));
 
-                order.Add(new Orders(code + 5, i + 4, "London", 6.3 * i));
+                order.Add(new Orders(code + 5, i + 4, "London", 6.3 * i, 8.5 * i));
 
                 code += 5;
 
@@ -384,7 +384,7 @@ namespace WebSampleBrowser.Grid
 
             }
 
-            public Orders(long OrderId, int EmployeeId, string ShipCity, double Freight)
+            public Orders(long OrderId, int EmployeeId, string ShipCity, double Freight, double Amount)
 
             {
 
@@ -395,6 +395,8 @@ namespace WebSampleBrowser.Grid
                 this.ShipCity = ShipCity;
 
                 this.Freight = Freight;
+                
+                this.Amount = Amount;
 
             }
 
@@ -405,6 +407,8 @@ namespace WebSampleBrowser.Grid
             public string ShipCity { get; set; }
 
             public double Freight { get; set; }
+            
+            public double Amount { get; set; }
 
         }
 
@@ -456,7 +460,7 @@ This property helps you to enable the group summary column in Grid. The followin
 
                 <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="80" />
 
-                    <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90" />
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90" />
 
                 <ej:Column Field="ShipCity" HeaderText="Ship City" Width="90" />
 
