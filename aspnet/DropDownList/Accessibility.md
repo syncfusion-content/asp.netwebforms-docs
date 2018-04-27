@@ -2,7 +2,7 @@
 layout: post
 title: Web Accessbility in DropDownList control for Syncfusion Essential ASP.NET
 description: Web accessibliy support to DropDownList control for Syncfusion Essential ASP.NET
-platform: Webform
+platform: aspnet
 control: DropDownList
 documentation: ug
 keywords: Keyboard Navigation, DropDownList, Accessibility
