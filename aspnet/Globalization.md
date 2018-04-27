@@ -2,7 +2,7 @@
 layout: post
 title: Globalization Syncfusion ASP.NET controls
 description: How to globalize the syncfusion ASP.NET controls during application loading or dynamically.
-platform: ASP.NET
+platform: aspnet
 control: Introduction
 documentation: ug
 

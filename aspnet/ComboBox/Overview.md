@@ -2,7 +2,7 @@
 layout: post
 title: Overview of ComboBox control for Syncfusion Essential WebForm
 description: Descripes about overview of ComboBox by adding references.
-platform: WebForm
+platform: aspnet
 control: ComboBox
 documentation: ug
 keywords: ComboBox, combobox, overview of ComboBox, Data binding, Custom values, Grouping, Sorting, Filtering, Templates, Accessibility

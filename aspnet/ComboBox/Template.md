@@ -2,7 +2,7 @@
 layout: post
 title: Templates in ComboBox widget for Syncfusion Essential WebForm
 description: Describes about the templates in ComboBox widget for Syncfusion Essential WebForm
-platform: WebForm
+platform: aspnet
 control: ComboBox
 documentation: ug
 keywords: ComboBox, combobox, Item template, Group template, Header template, Footer template

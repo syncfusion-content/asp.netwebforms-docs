@@ -2,7 +2,7 @@
 layout: post
 title: Localizing Syncfusion ASP.NET controls
 description: How to localize the syncfusion ASP.NET controls during application loading or dynamically.
-platform: ASP.NET
+platform: aspnet
 control: Introduction
 documentation: ug
 

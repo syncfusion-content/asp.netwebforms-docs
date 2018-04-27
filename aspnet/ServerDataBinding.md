@@ -2,7 +2,7 @@
 layout: post
 title: Server Data Binding to Syncfusion ASP.NET controls
 description: Server Data Binding to Syncfusion ASP.NET controls
-platform: ASP.NET
+platform: aspnet
 control: Introduction
 documentation: ug
 
