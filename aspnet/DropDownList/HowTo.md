@@ -2,7 +2,7 @@
 layout: post
 title: How to - DropDownList control for Syncfusion ASP.NET Webform
 description: How To Section in DropDownList control for Syncfusion ASP.NET Webform
-platform: js
+platform: aspnet
 control: DropDownList
 documentation: ug
 ---

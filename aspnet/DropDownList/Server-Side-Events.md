@@ -2,7 +2,7 @@
 layout: post
 title: Server Side Events for DropDownList in Syncfusion ASP.NET Webforms
 description: Server Side Events for DropDownList in Syncfusion ASP.NET Webforms
-platform: WebForms
+platform: aspnet
 control: DropDownList
 documentation: ug
 keywords: Server Side Events, DropDownList, dropdown, server side, events

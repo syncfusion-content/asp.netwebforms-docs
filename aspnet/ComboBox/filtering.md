@@ -2,7 +2,7 @@
 layout: post
 title: Filtering in ComboBox widget for Syncfusion Essential ASP.NET WebForm
 description: Describes about the filtering in ComboBox widget for Syncfusion Essential ASP.NET WebForm
-platform: ASP.NET WebForm
+platform: aspnet
 control: ComboBox
 documentation: ug
 keywords: ComboBox, combobox, Filtering, minimum filter character, filter type

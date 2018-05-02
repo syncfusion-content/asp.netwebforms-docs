@@ -2,7 +2,7 @@
 layout: post
 title: Smart tag Syncfusion ASP.NET controls
 description: Smart tag Syncfusion ASP.NET controls
-platform: ASP.NET
+platform: aspnet
 control: Introduction
 documentation: ug
 

@@ -2,7 +2,7 @@
 layout: post
 title: Data binding in ComboBox widget for Syncfusion Essential WebForm
 description: Describes about the data binding in ComboBox widget for Syncfusion Essential WebForm
-platform: WebForm
+platform: aspnet
 control: ComboBox
 documentation: ug
 keywords: ComboBox, combobox, data binding, REStFul Binding, WebAPI, Web Method, OData, OData4

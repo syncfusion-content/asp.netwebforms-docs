@@ -3,7 +3,7 @@
 layout: post
 title: Load on demand in DropDownList control for Syncfusion ASP.NET WebForm
 description: Describes about the load on demand in DropDownList control for Syncfusion ASP.NET WebForm
-platform: Web
+platform: aspnet
 control: DropDownList
 documentation: ug
 keywords: DropDownList, dropdown, loadOnDemand

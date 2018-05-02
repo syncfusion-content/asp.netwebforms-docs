@@ -2,7 +2,7 @@
 layout: post
 title: Accessibility with ComboBox control for Syncfusion ASP.NET WebForm.
 description: Describes about the accessibility in ComboBox control for Syncfusion Essential WebForm.
-platform: WebForm
+platform: aspnet
 control: ComboBox
 documentation: ug
 keywords: ComboBox, ComboBox, Accessibility, ARIA attributes, Keyboard interaction
