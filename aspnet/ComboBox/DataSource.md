@@ -2,7 +2,7 @@
 layout: post
 title: DataSource with ComboBox widget for Syncfusion ASP.NET WebForm
 description: Describes about data source functionalities in ComboBox control for Syncfusion ASP.NET WebForm
-platform: WebForm
+platform: aspnet
 control: ComboBox
 documentation: ug
 keywords: ComboBox, ComboBox, data binding, SQL, LINQ, Xml, Entity, Access

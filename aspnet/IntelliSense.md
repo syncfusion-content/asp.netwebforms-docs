@@ -2,7 +2,7 @@
 layout: post
 title: IntelliSense for Syncfusion ASP.NET controls
 description: IntelliSense
-platform: ASP.NET
+platform: aspnet
 control: Introduction
 documentation: ug
 

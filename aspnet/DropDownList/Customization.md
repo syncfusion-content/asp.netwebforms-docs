@@ -2,7 +2,7 @@
 layout: post
 title: Customization in DropDownList control for Syncfusion ASP.NET WebForm
 description: Customization in DropDownList control for Syncfusion ASP.NET WebForm
-platform: web
+platform: aspnet
 control: DropDownList
 documentation: ug
 keywords: Customization, DropDownList, dropdown, watermark text

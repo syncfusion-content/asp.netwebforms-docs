@@ -2,7 +2,7 @@
 layout: post
 title: CheckBox with DropDownList widget for Syncfusion ASP.NET WebForm
 description: Describes about Checkbox functionalities in DropDownList control for Syncfusion ASP.NET WebForm
-platform: web
+platform: aspnet
 control: DropDownList
 documentation: ug
 keywords: DropDownList, dropdown, data binding, SQL, LINQ, Xml, Entity, Access

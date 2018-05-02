@@ -2,7 +2,7 @@
 layout: post
 title: Server Side Events for ComboBox in Syncfusion ASP.NET Webforms
 description: Server Side Events for ComboBox in Syncfusion ASP.NET Webforms
-platform: WebForms
+platform: aspnet
 control: ComboBox
 documentation: ug
 keywords: Server Side Events, ComboBox, ComboBox, server side, events

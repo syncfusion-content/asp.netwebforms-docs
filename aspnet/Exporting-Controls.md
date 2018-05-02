@@ -2,7 +2,7 @@
 layout: post
 title: Exporting Multiple Syncfusion Controls | ASP.NET | Syncfusion
 description: Exporting Multiple Syncfusion Controls
-platform: ASP.NET
+platform: aspnet
 control: Common 
 documentation: ug
 ---
