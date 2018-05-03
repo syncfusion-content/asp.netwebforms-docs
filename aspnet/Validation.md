@@ -2,7 +2,7 @@
 layout: post
 title: Validation of Syncfusion Essential ASP.NET
 description: How to validate the Syncfusion controls.
-platform: ASP.NET
+platform: aspnet
 control: Introduction
 documentation: ug
 

@@ -2,7 +2,7 @@
 layout: post
 title: Data adaptor in ComboBox control for Syncfusion ASP.NET WebForm
 description: Describes about the data adaptor in ComboBox control for Syncfusion ASP.NET WebForm
-platform: Web
+platform: aspnet
 control: ComboBox
 documentation: ug
 keywords: ComboBox, ComboBox, data binding, REStFul Binding, WebAPI, Web Method, OData, OData4

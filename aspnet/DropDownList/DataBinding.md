@@ -2,7 +2,7 @@
 layout: post
 title: Data binding in DropDownList control for Syncfusion ASP.NET WebForm
 description: Describes about the data binding in DropDownList control for Syncfusion ASP.NET WebForm
-platform: Web
+platform: aspnet
 control: DropDownList
 documentation: ug
 keywords: DropDownList, dropdown, data binding, Local data, Remote data

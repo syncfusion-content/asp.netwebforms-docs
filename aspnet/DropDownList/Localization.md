@@ -2,7 +2,7 @@
 layout: post
 title: Localization in DropDownList widget for Syncfusion Essential ASP.NET
 description: Localization in DropDownList widget for Syncfusion Essential ASP.NET
-platform: ASP.NET
+platform: aspnet
 control: DropDownList
 documentation: ug
 keywords: Localization, DropDownList, dropdown

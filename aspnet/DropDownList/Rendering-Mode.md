@@ -2,7 +2,7 @@
 layout: post
 title: Rendering Mode in DropDownList control for Syncfusion ASP.NET 
 description: Describes about rendering mode in DropDownList control for Syncfusion ASP.NET.
-platform: Webform
+platform: aspnet
 control: DropDownList
 documentation: ug
 keywords: Rendering, DropDownList, dropdown, Rendering Mode

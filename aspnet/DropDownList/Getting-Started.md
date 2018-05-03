@@ -2,7 +2,7 @@
 layout: post
 title: Getting started with DropDownList control for Syncfusion ASP.NET WebForm
 description: To get start with DropDownList by adding references.
-platform: WebForms
+platform: aspnet
 control: DropDownList
 documentation: ug
 keywords: DropDownList, dropdown, Populating data

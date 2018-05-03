@@ -2,7 +2,7 @@
 layout: post
 title: Accessibility of Essential Syncfusion ASP.NET controls
 description: WAI-ARIA accessibility compliance of Syncfusion ASP.NET controls
-platform: ASP.NET
+platform: aspnet
 control: Introduction
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Compatibility and Prerequisites | ASP.NET  | Syncfusion
 description: Compatibility and System Requirements
-platform: ASP.NET
+platform: aspnet
 control: Common 
 documentation: ug
 ---

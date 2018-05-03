@@ -2,6 +2,7 @@
 layout: post
 title: Functionalities in the DropDownList control for Syncfusion ASP.NET WebForm
 description: Functionalities in the DropDownList control for Syncfusion ASP.NET WebForm
+platform: aspnet
 control: DropDownList
 documentation: ug
 keywords: DropDownList, dropdown, Selection, Grouping, Sorting
