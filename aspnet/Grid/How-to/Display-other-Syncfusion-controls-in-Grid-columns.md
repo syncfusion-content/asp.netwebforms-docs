@@ -15,19 +15,18 @@ We can display the other Syncfusion controls using `Template` property of Grid c
 {% highlight js %}
 
 <script type="text/x-jsrender" id="columnTemplate">
-    {{if EmployeeID<3}}
+    {{"{{"}}if EmployeeID<3{{"}}"}}
 
-    <input type="text" class="rating" value="3" />
+        <input type="text" class="rating" value="3" />
 
-    {{else EmployeeID>2 && EmployeeID<5}}
+    {{"{{"}}else EmployeeID>2 && EmployeeID<5{{"}}"}}
 
-    <input type="text" class="rating" value="3" />
+        <input type="text" class="rating" value="3" />
 
-    {{else EmployeeID>4}}
+    {{"{{"}}else EmployeeID>4{{"}}"}}
+        <input type="text" class="rating" value="5" />
 
-    <input type="text" class="rating" value="5" />
-
-    {{/if}}
+    {{"{{"}}/if{{"}}"}}
 </script>
 
 <script type="text/javascript">
