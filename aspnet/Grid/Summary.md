@@ -286,7 +286,6 @@ Custom Summary is used to create custom summary formula for summary. The followi
 
                 <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="80" Format="{0:C}" />
                 
-                <ej:Column Field="Amount" HeaderText="Amount" TextAlign="Right" Width="80" Format="{0:C2}" />
 
             </Columns>
 
@@ -300,7 +299,7 @@ Custom Summary is used to create custom summary formula for summary. The followi
 
         function currency(args,data) {
 
-             var value = ej.sum(data, "Freight") + ej.sum(data, "Amount");
+             var value = ej.sum(data, "Freight");
 
              return value;
 
