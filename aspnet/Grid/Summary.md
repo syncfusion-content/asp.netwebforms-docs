@@ -347,15 +347,15 @@ namespace WebSampleBrowser.Grid
 
             {
 
-                order.Add(new Orders(code + 1, i + 0, "Berlin", 2.3 * i, 3.5 * i));
+                order.Add(new Orders(code + 1, i + 0, "Berlin", 2.3 * i));
 
-                order.Add(new Orders(code + 2, i + 2, "Madrid", 3.3 * i, 4.5 * i));
+                order.Add(new Orders(code + 2, i + 2, "Madrid", 3.3 * i));
 
-                order.Add(new Orders(code + 3, i + 1, "Cholchester", 4.3 * i, 9.5 * i));
+                order.Add(new Orders(code + 3, i + 1, "Cholchester", 4.3 * i));
 
-                order.Add(new Orders(code + 4, i + 3, "Marseille", 5.3 * i, 7.5 * i));
+                order.Add(new Orders(code + 4, i + 3, "Marseille", 5.3 * i));
 
-                order.Add(new Orders(code + 5, i + 4, "London", 6.3 * i, 8.5 * i));
+                order.Add(new Orders(code + 5, i + 4, "London", 6.3 * i));
 
                 code += 5;
 
@@ -383,7 +383,7 @@ namespace WebSampleBrowser.Grid
 
             }
 
-            public Orders(long OrderId, int EmployeeId, string ShipCity, double Freight, double Amount)
+            public Orders(long OrderId, int EmployeeId, string ShipCity, double Freight)
 
             {
 
@@ -395,8 +395,6 @@ namespace WebSampleBrowser.Grid
 
                 this.Freight = Freight;
                 
-                this.Amount = Amount;
-
             }
 
             public long OrderID { get; set; }
@@ -407,8 +405,6 @@ namespace WebSampleBrowser.Grid
 
             public double Freight { get; set; }
             
-            public double Amount { get; set; }
-
         }
 
     }
