@@ -186,6 +186,74 @@ public partial class ExcelExporting : System.Web.UI.Page
 
 ![](Exporting_images/Exporting_img1.png)
 
+##  Multiple exporting
+
+We can handle the multiple Grid exporting in server side while exporting the Grid to various files such as Excel, PDF, Word.
+
+{% tabs %}
+
+{% highlight html %}
+
+<div>
+        Employee Grid
+    </div>
+    <div>
+        <ej:Grid ID="EmployeesGrid" runat="server" OnServerExcelExporting="EmployeesGrid_ServerExcelExporting" OnServerWordExporting="EmployeesGrid_ServerWordExporting" OnServerPdfExporting="EmployeesGrid_ServerPdfExporting" AllowSelection="True">
+            <ToolbarSettings ShowToolbar="true" ToolbarItems="excelExport,wordExport,pdfExport"></ToolbarSettings>
+            <Columns>
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" IsPrimaryKey="true" TextAlign="Right" Width="100" />
+                <ej:Column Field="FirstName" HeaderText="First Name" Width="100" />
+                <ej:Column Field="LastName" HeaderText="Last Name" Width="100" />
+                <ej:Column Field="Title" HeaderText="Title" Width="90" />
+                <ej:Column Field="BirthDate" HeaderText="Birth Date" Width="100" TextAlign="Right" Format="{0:MM/dd/yyyy}" />
+                <ej:Column Field="Country" HeaderText="Country" Width="120" />
+            </Columns>
+        </ej:Grid>
+    </div>
+    <div>
+        Orders Grid
+    </div>
+    <div>
+        <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="False">
+            <Columns>
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="75" />
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" />
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />
+                <ej:Column Field="OrderDate" HeaderText="Order Date" Width="80" TextAlign="Right" Format="{0:MM/dd/yyyy}" />
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="110" />
+            </Columns>
+        </ej:Grid>
+    </div>
+
+{% endhighlight  %}
+{% highlight c# %}
+
+        protected void EmployeesGrid_ServerExcelExporting(object sender, Syncfusion.JavaScript.Web.GridEventArgs e)
+        {
+            ExcelExport exp = new ExcelExport();
+            IWorkbook workbook = exp.Export(EmployeesGrid.Model, (IEnumerable)EmployeesGrid.DataSource, "Export.xlsx", ExcelVersion.Excel2010, true, true, "flat-lime", true);
+            exp.Export(OrdersGrid.Model, (IEnumerable)OrdersGrid.DataSource, "Export.xlsx", ExcelVersion.Excel2010, true, true, "flat-lime", false, workbook, MultipleExportType.AppendToSheet, "Orders Grid");
+        }
+
+        protected void EmployeesGrid_ServerWordExporting(object sender, Syncfusion.JavaScript.Web.GridEventArgs e)
+        {
+            WordExport exp = new WordExport();
+            IWordDocument document = exp.Export(EmployeesGrid.Model, (IEnumerable)EmployeesGrid.DataSource, "Export.docx", true, true, "flat-lime", true);
+            exp.Export(OrdersGrid.Model, (IEnumerable)OrdersGrid.DataSource, "Export.docx", true, true, "flat-lime", false, document, "Second Grid");
+        }
+
+        protected void EmployeesGrid_ServerPdfExporting(object sender, Syncfusion.JavaScript.Web.GridEventArgs e)
+        {
+            PdfExport exp = new PdfExport();
+            PdfDocument document = exp.Export(EmployeesGrid.Model, (IEnumerable)EmployeesGrid.DataSource, "Export.pdf", true, true, "flat-lime", true);
+            exp.Export(OrdersGrid.Model, (IEnumerable)OrdersGrid.DataSource, "Export.pdf", true, true, "flat-lime", false, document, "Second Grid");
+        }
+        
+{% endhighlight  %}
+
+{% endtabs %}
+
 ## ColumnTemplate Exporting
 
 To export the grid with columnTemplate we have to set `IsTemplateColumnIncluded` as true in the parameter of the export method. You can handle the template elements in server side event while exporting grid to various files such as Excel, PDF and Word.
