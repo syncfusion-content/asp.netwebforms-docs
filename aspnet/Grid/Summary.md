@@ -285,7 +285,7 @@ Custom Summary is used to create custom summary formula for summary. The followi
                 <ej:Column Field="ShipCity" HeaderText="Ship City" Width="90" />
 
                 <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="80" Format="{0:C}" />
-
+                
             </Columns>
 
         </ej:Grid>
@@ -296,13 +296,11 @@ Custom Summary is used to create custom summary formula for summary. The followi
 
     <script type="text/javascript">
 
-        function currency() {
+        function currency(args,data) {
 
-            var rs = 100000;
+             var value = ej.sum(data, "Freight");
 
-            var interest = 0.017
-
-            return (rs * interest);
+             return value;
 
         }
 
@@ -395,7 +393,7 @@ namespace WebSampleBrowser.Grid
                 this.ShipCity = ShipCity;
 
                 this.Freight = Freight;
-
+                
             }
 
             public long OrderID { get; set; }
@@ -405,7 +403,7 @@ namespace WebSampleBrowser.Grid
             public string ShipCity { get; set; }
 
             public double Freight { get; set; }
-
+            
         }
 
     }
@@ -416,7 +414,7 @@ namespace WebSampleBrowser.Grid
 
 {% endtabs %}
 
-![](Summary_images/Summary_img3.png)
+![](Summary_images/Summary_img3.PNG)
 
 
 
@@ -456,7 +454,7 @@ This property helps you to enable the group summary column in Grid. The followin
 
                 <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="80" />
 
-                    <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90" />
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="90" />
 
                 <ej:Column Field="ShipCity" HeaderText="Ship City" Width="90" />
 
