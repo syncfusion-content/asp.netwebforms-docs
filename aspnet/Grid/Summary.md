@@ -286,7 +286,6 @@ Custom Summary is used to create custom summary formula for summary. The followi
 
                 <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="80" Format="{0:C}" />
                 
-
             </Columns>
 
         </ej:Grid>
