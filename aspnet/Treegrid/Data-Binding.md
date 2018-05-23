@@ -546,16 +546,13 @@ Similarly, if the user navigates to a new page, the root nodes of that specific 
 N> 1. Load on demand support in TreeGrid can be enabled only for remote data.
 N> 2. For better initial load time performance, we need to define the “HasChildMapping” property.
 
-Load on demand support in TreeGrid can be enabled by the following ways,
-
-1. By enabling [`EnableLoadOnDemand`](https://help.syncfusion.com/api/js/ejtreegrid#members:enableLoadOnDemand "enableLoadOnDemand") property of TreeGrid control
-2. By enabling **CrossDomain** property while binding data source using ejDataManager control.
+Load on demand support in TreeGrid can be enabled by using the property `EnableLoadOnDemand`.
 
 The following code explains how to use Load on Demand in TreeGrid Control,
 
 {% highlight javascript %}
 
- <ej:TreeGrid runat="server" ID="TreeGridLoadonDemand" IdMapping="TaskID" ParentIdMapping="ParentID" HasChildMapping="isParent" EnableVirtualization="true">
+ <ej:TreeGrid runat="server" ID="TreeGridLoadonDemand" IdMapping="TaskID" ParentIdMapping="ParentID" HasChildMapping="isParent" EnableLoadOnDemand="true" EnableVirtualization="true">
     <DataManager URL="http://js.syncfusion.com/demos/ejServices/Wcf/TreeGridGantt/TreeGantt.svc/SelfReferenceDatas" CrossDomain="true"></DataManager>
     <Columns>
         <ej:TreeGridColumn HeaderText="Task Id" Field="TaskID" Width="45" />
@@ -572,18 +569,6 @@ The output for load on demand support in TreeGrid:
 
 ![](Data-Binding_images/Data-Binding_img3.png)
 ![](Data-Binding_images/Data-Binding_img4.png)
-
-The following code snippet shows on how to enable load on demand support using  [`EnableLoadOnDemand`](https://help.syncfusion.com/api/js/ejtreegrid#members:enableLoadOnDemand "enableLoadOnDemand") property.
-
-{% highlight javascript %}
-
- <ej:TreeGrid runat="server" ID="TreeGridLoadonDemand"
-     //...
-    EnableLoadOnDemand="true">
-    <DataManager URL="http://js.syncfusion.com/demos/ejServices/Wcf/TreeGridGantt/TreeGantt.svc/SelfReferenceDatas" CrossDomain="true"></DataManager>  
-</ej:TreeGrid>
-
-{% endhighlight %}
 
 The following output shows how load on demand works for expanding action
 
