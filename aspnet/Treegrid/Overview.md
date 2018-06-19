@@ -40,3 +40,11 @@ Essential TreeGrid is an efficient control designed for representing the hierarc
 * **User Interaction** - Supports cell tooltip, expand collapse at ease, single and multiple row selection, columns resizing, contextual menu.
 
 * **Column Template** - To render custom columns along with customized expand-collapse icon.
+
+* **Command Column** - Allows you to perform custom action or default CRUD actions using TreeGrid column.
+
+* **Row Template** - To customize the TreeGrid rows.
+
+* **Column Reordering** - Provides support to re-arrange the column order.
+
+* **Resize columns** - Provides option for resizing the columns.

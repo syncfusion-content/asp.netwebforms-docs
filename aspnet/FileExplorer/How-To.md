@@ -12,16 +12,16 @@ keywords: FileExplorer,  Syncfusion, ASP.NET Web FileExplorer, UG document, How 
 
 In code behind page, we have specified some built-in classes at "**FileActionDefault**" action method. It helps to perform the server side operation of FileExplorer and you can find the details about these classes at below.
 
-When you have made AJAX request on client-side, “FileActionDefault” method is triggered and it calls the corresponding built-in methods of “[FileExplorerOperations](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations_members.html#)” class using “ActionType” property.
+When you have made AJAX request on client-side, “FileActionDefault” method is triggered and it calls the corresponding built-in methods of “[FileExplorerOperations](http://help.syncfusion.com/CR/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations_members.html#)” class using “ActionType” property.
 
 
 **BasicFileOperations class**
 
-“BasicFileOperations” is an abstract class and it is useful for handling file operations in server end. By inheriting this class, easily you can implement a new custom class for handling file operations in server end. Refer [class reference](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.BasicFileOperations.html#) of “BasicFileOperations”.
+“BasicFileOperations” is an abstract class and it is useful for handling file operations in server end. By inheriting this class, easily you can implement a new custom class for handling file operations in server end. Refer [class reference](http://help.syncfusion.com/CR/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.BasicFileOperations.html#) of “BasicFileOperations”.
 
 **FileExplorerOperations class**
 
-This class is useful for handling file operations in server end. This class inherits the “BasicFileOperations” class and its abstract methods has been implemented here for managing files in **underlying machine's physical file system**. Refer [class reference](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations.html#) of “FileExplorerOperations”.
+This class is useful for handling file operations in server end. This class inherits the “BasicFileOperations” class and its abstract methods has been implemented here for managing files in **underlying machine's physical file system**. Refer [class reference](http://help.syncfusion.com/CR/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations.html#) of “FileExplorerOperations”.
 
 N> Here “ActionType” specifies following operations such as “Read”, “CreateFolder”, “Paste”, “Remove”, “Rename”, “GetDetails”, “Download”, “Upload”, “Search”. Following [section](#abstract-methods-in-basicfileoperations-class) contains the details about each operation.
 
@@ -29,11 +29,11 @@ N> Here “ActionType” specifies following operations such as “Read”, “C
 
 ## Customizing AJAX handling functions
 
-In FileExplorer, server side functionalities are necessary to handle the AJAX request of FileExplorer. Here “Syncfusion.EJ” assembly contains built-in “[BasicFileOperations](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.BasicFileOperations.html#)” abstract class and implementation of “[FileExplorerOperations](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations.html#)” class for providing the content to FileExplorer and handling AJAX requests. If is it necessary, you can customize the server side functionalities of FileExplorer as per your requirement. 
+In FileExplorer, server side functionalities are necessary to handle the AJAX request of FileExplorer. Here “Syncfusion.EJ” assembly contains built-in “[BasicFileOperations](http://help.syncfusion.com/CR/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.BasicFileOperations.html#)” abstract class and implementation of “[FileExplorerOperations](http://help.syncfusion.com/CR/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations.html#)” class for providing the content to FileExplorer and handling AJAX requests. If is it necessary, you can customize the server side functionalities of FileExplorer as per your requirement. 
 
 ### Override the existing Syncfusion.JavaScript.FileExplorerOperations class
 
-Using “[FileExplorerOperations](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations.html#)” class, you can manage the underlying machine's physical file system with the help of FileExplorer control. Here you can override the necessary methods that is available in “**FileExplorerOperations**” by sub classing the existing “**FileExplorerOperations**” class.
+Using “[FileExplorerOperations](http://help.syncfusion.com/CR/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations.html#)” class, you can manage the underlying machine's physical file system with the help of FileExplorer control. Here you can override the necessary methods that is available in “**FileExplorerOperations**” by sub classing the existing “**FileExplorerOperations**” class.
 
 Below code example shows how to override “**GetDetails**” method, which is available in “**FileExplorerOperations**”
 
@@ -80,7 +80,7 @@ Below code example shows how to override “**GetDetails**” method, which is a
     
 ### Implement a new custom class to handle AJAX request and provide content for FileExplorer
 
-When overriding the particular methods were not enough, you can create a new custom class using “[BasicFileOperations](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.BasicFileOperations.html#)” abstract class. It helps to provide different file sources to be used the content for FileExplorer control, such as database system, physical system or online storage system such as Azure. 
+When overriding the particular methods were not enough, you can create a new custom class using “[BasicFileOperations](http://help.syncfusion.com/CR/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.BasicFileOperations.html#)” abstract class. It helps to provide different file sources to be used the content for FileExplorer control, such as database system, physical system or online storage system such as Azure. 
 
 #### Notes to Implementers
 
@@ -157,7 +157,7 @@ Response data should be in JSON format with key name as "{{'**files**'| markdown
 }
 <br/><br/>
 
-Note: If needed, customer can also add additional data along with existing properties of “{{'[FileExplorerDirectoryContent](https://help.syncfusion.com/cr/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerDirectoryContent.html#)'| markdownify }}” class.
+Note: If needed, customer can also add additional data along with existing properties of “{{'[FileExplorerDirectoryContent](https://help.syncfusion.com/cr/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerDirectoryContent.html#)'| markdownify }}” class.
 <br/>
 </td>
 <td>
@@ -248,7 +248,7 @@ specifies the new file name <br/><br/>
 {{'**Description:**'| markdownify }}
 It contains the details about selected items, which is going to be renamed<br/><br/>
 {{'**Name**'| markdownify }}: commonFiles<br/>
-{{'**Type  :** '| markdownify }}IEnumerable<{{'[CommonFileDetails](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.CommonFileDetails.html#)'| markdownify }}><br/>
+{{'**Type  :** '| markdownify }}IEnumerable<{{'[CommonFileDetails](http://help.syncfusion.com/CR/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.CommonFileDetails.html#)'| markdownify }}><br/>
 {{'**Description:**'| markdownify }}
 It contains the details about already existing files, which contains same name and type as given in new file with same parent folder.<br/><br/>
 
@@ -287,7 +287,7 @@ specifies the operation type “move” or “copy”.<br/><br/>
 {{'**Description:**'| markdownify }}
 It contains the details about selected items, which is going to be pasted<br/><br/> 
 {{'**Name**'| markdownify }}: commonFiles<br/>
-{{'**Type  :** '| markdownify }}IEnumerable<{{'[CommonFileDetails](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.CommonFileDetails.html#)'| markdownify }}><br/>
+{{'**Type  :** '| markdownify }}IEnumerable<{{'[CommonFileDetails](http://help.syncfusion.com/CR/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.CommonFileDetails.html#)'| markdownify }}><br/>
 {{'**Description:**'| markdownify }}
 It contains the details about already existing files in destination folder, which contains the files in same name and type as same as newly copied files.<br/><br/>
 {{'**Name**'| markdownify }}: targetFolder<br/>
@@ -526,7 +526,7 @@ Also we have option to configure the AJAX request in client side, please refer l
 
 ### Managing files that is available in SQL database
 
-You can manage the files that are available in database using our FileExplorer control. Here you may use this custom “**SQLFileExplorerOperations**" class for handling file management related operations using SQL database. This class is used to simplify the process on server side. It contains some built-in methods that are used to handle file operations (like read, copy, move, delete, etc.) using SQL database. This class is created by inheriting the abstract class “[BasicFileOperations](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.BasicFileOperations.html#)”. If is it necessary, you may override the methods in “**SQLFileExplorerOperations**” class.
+You can manage the files that are available in database using our FileExplorer control. Here you may use this custom “**SQLFileExplorerOperations**" class for handling file management related operations using SQL database. This class is used to simplify the process on server side. It contains some built-in methods that are used to handle file operations (like read, copy, move, delete, etc.) using SQL database. This class is created by inheriting the abstract class “[BasicFileOperations](http://help.syncfusion.com/CR/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.BasicFileOperations.html#)”. If is it necessary, you may override the methods in “**SQLFileExplorerOperations**” class.
 
 * To make connection with SQL database (FileManager.mdf) services, please specify connection string in "Web.config" file as specified in the following code example. 
 
@@ -716,7 +716,7 @@ To get image from server, you have to create a handler file “getImage.ashx” 
     
 ## Adding Custom column in grid view of FileExplorer
 
-You can add custom column in grid view of FileExplorer. To achieve this requirement, in the code behind page you have to add the custom column with existing AJAX response by overriding the “Read” method, which is available in “[FileExplorerOperations](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations.html#)”. 
+You can add custom column in grid view of FileExplorer. To achieve this requirement, in the code behind page you have to add the custom column with existing AJAX response by overriding the “Read” method, which is available in “[FileExplorerOperations](http://help.syncfusion.com/CR/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations.html#)”. 
 
 Add the following code example in code behind page to specify the custom column in grid view of FileExplorer.
     
