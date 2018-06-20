@@ -86,10 +86,13 @@ To initialize the PDF viewer control, use the ServiceUrl property that is necess
 The Web API action methods must be available in the server (Web API controller) to load and process the PDF documents. The available API methods in the controller are Load, FileUpload, Download, and Unload. However, we can modify the name of the server action methods as used in the controller using the ServerActionSettings property in the PDF viewer control.
 
 {% highlight c# %}
-     Syncfusion.JavaScript.Models.PDFViewer.PdfViewerServerActionSettings serverActionSettings = new Syncfusion.JavaScript.Models.PDFViewer.PdfViewerServerActionSettings();
-     serverActionSettings.Load = "LoadAction";
-     serverActionSettings.Download = "DownloadAction";
-     serverActionSettings.FileUpload = "FileUploadAction";
+    protected void Page_Load(object sender, EventArgs e)
+        {
+            PdfViewer1.ServerActionSettings = new Syncfusion.JavaScript.Models.PDFViewer.PdfViewerServerActionSettings();
+            PdfViewer1.ServerActionSettings.Load = "LoadAction";
+            PdfViewer1.ServerActionSettings.Download = "DownloadAction";
+            PdfViewer1.ServerActionSettings.FileUpload = "FileUploadAction";
+        }
 {% endhighlight %}
 
 #### 3.Load PDF documents from client side
