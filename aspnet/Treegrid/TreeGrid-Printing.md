@@ -20,10 +20,6 @@ TreeGrid provides support to print the contents. To print the TreeGrid the print
 
 {% endhighlight %}
 
-The below screen shot shows TreeGrid with printing enabled.
-
-![](Printing_images/Printing_img1.png)
-
 The print preview window will be opened by clicking on this toolbar icon. 
 
 ## Print Mode
@@ -44,7 +40,7 @@ In this case only the visible records in the current page will be send to printi
 
 ## BeforePrint Event 
 
-`BeforePrint` event will be triggered once after printing initiated in TreeGrid. This event contains the treegrid element which is going to be printing. The following code explains this.
+BeforePrint event will be triggered once after printing initiated in TreeGrid. This event contains the treegrid element which is going to be printing. The following code explains this.
 
 {% highlight js %}
  
@@ -58,5 +54,3 @@ In this case only the visible records in the current page will be send to printi
 </script>
 
 {% endhighlight %}
-
-[Click](https://asp.syncfusion.com/demos/web/treegrid/treegridprinting.aspx) here to view the online demo sample Printing.
