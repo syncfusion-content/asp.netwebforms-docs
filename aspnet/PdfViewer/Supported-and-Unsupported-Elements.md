@@ -10,7 +10,7 @@ keywords: PDF viewer, pdfviewer
 
 ## Supported and Unsupported Elements
 
-Supported and un-supported elements of PDF viewer ASP .NET are listed in the below table.
+The supported and un-supported elements of the PDF viewer control are:
 
 <table>
 <tr>
@@ -429,8 +429,8 @@ No
 </tr>
 </table>
 
-Supported only for shapes and texts*
+Supported only for shapes and text*
 
 Supports only text markup annotations**
 
-When the document contains texts that uses TrueType System Fonts to be rendered, then the content in the PDF document is rendered using the font installed in the system/machine in the PDF Viewer control. If the required font is not installed in the system, then the contents would be rendered using **Arial** font.***
+When the document contains text that uses TrueType System Fonts to be rendered, the content in the PDF document is rendered using the font installed in the system or machine in the PDF Viewer control. If the required font is not installed in the system, the contents would be rendered using **Arial** font.***
