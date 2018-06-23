@@ -10,9 +10,19 @@ keywords: PDF viewer, pdfviewer
 
 ## Localization
 
-We can localize the text labels provided in the PDF viewer control with the collection of localized strings using ej.PdfViewer.Locale for different cultures. By default, ejPdfViewer is localized in “**en-US**” culture.
+The text labels provided in the PDF viewer control can be localized using the collection of localized strings using ej.PdfViewer.Locale for different cultures. By default, the PDF viewer control is localized in “**en-US**” culture.
 
-Following table shows the default values for the components in the PDF viewer control in ‘en-US’ culture
+The different locale value for the PDF viewer control can be specified using the locale property. 
+
+{% highlight javascript %}
+ <ej:pdfviewer id="PdfViewer1" Height="800"  
+            ServiceUrl="../api/PdfViewer" Locale="de-DE"
+            PdfService="Local"
+            runat="server">
+        </ej:pdfviewer>
+{% endhighlight %}
+
+The following table shows the default values for the components in the PDF viewer control in ‘en-US’ culture:
 
 <table>
 <tr>
@@ -181,7 +191,7 @@ Zoom
 contentText
 </td>
 <td>
-Zoom in or out on the PDF document.
+Zoom in or out of the PDF document.
 </td>
 </tr>
 <tr>
@@ -744,7 +754,7 @@ The following code snippet illustrates you to change the localization to German 
                     },
                     search: {
                         headerText: 'Suche Text',
-                        contentText: 'Suchen Sie Text in den PDF-Seiten.',
+                        contentText: 'Suchen Sie Text in den PDF-Seiten.'
                     },
                     highlight: {
                         headerText: 'hervorheben Text',
@@ -778,7 +788,7 @@ The following code snippet illustrates you to change the localization to German 
                     googleSearch: {
                         contentText: 'Google suchen',
                     },
-                    Find: {
+                    find: {
                         contentText: 'Finden:',
                     },
                     matchCase: {
@@ -790,7 +800,7 @@ The following code snippet illustrates you to change the localization to German 
                     openPopup: {
                         contentText: 'Open Pop-Up Note',
                     },
-                    Delete: {
+                    delete: {
                         contentText: 'Löschen',
                     },
                     properties: {
@@ -842,10 +852,10 @@ The following code snippet illustrates you to change the localization to German 
                     }
                 },
                 signatureWindow: {
-                    Signature: {
+                    signature: {
                         contentText: "Signatur hinzufügen"
                     },
-                    Add: {
+                    add: {
                         contentText: "Hinzufügen"
                     },
                     clear: {
@@ -854,7 +864,7 @@ The following code snippet illustrates you to change the localization to German 
                 }
             };
         });
-    </script>
+</script>
     <style>
         .frame {
             height: 600px;
@@ -864,6 +874,10 @@ The following code snippet illustrates you to change the localization to German 
 </body>
 </html>
 {% endhighlight %}
+
+**Sample**
+
+<http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_Localization669598339>
 
 The following screenshot shows the PDF viewer with tooltip in German language.
 

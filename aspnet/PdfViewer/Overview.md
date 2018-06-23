@@ -16,16 +16,17 @@ PDF viewer for JavaScript is a visualization component to view PDF documents in 
 
 The key features of the **PDF viewer** control are listed as follows:
 
-* Supports uploading PDF document into the server as byte array or as stream and supports displaying the same in the client.
-* Supports viewing password protected/encrypted PDF documents.
-* Supports customizing the default toolbar or creation of a toolbar as per the application requirements.
-* Supports zooming tools and viewing modes for better viewing experience.
+* Uploads the PDF document into the server as byte array or stream and displays the same in the client.
+* Views password protected or encrypted PDF documents.
+* Allows customization of the default toolbar and creation of your own toolbar.
+* Provides magnification tools and view modes for better viewing experience.
 * Supports built-in themes for enhancing appearance.
-* Supports printing the PDF document.
 * Supports responsive rendering while resizing the control/window.
-* Supports downloading the PDF document being displayed.
 * Supports text selection and search.
 * Supports text markup annotations.
-* Supports including hand written signatures in the PDF document.
-* Compatible with all the modern browsers that provides support for HTML5/CSS3/JavaScript.
+* Includes handwritten signatures in the PDF document.
+* Prints the PDF document with the changes made.
+* Downloads the PDF document with the changes made.
+* Supports localization to adopt to the machines culture and language.
+* Compatible with all the modern browsers that provides HTML5/CSS3/JavaScript support.
 
