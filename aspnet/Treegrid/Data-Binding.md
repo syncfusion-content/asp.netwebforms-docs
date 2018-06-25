@@ -22,132 +22,180 @@ Two types of Data Binding are possible with TreeGrid control,
 
 ### Hierarchy Datasource Binding
 
-The `ChildMapping` property is used to map the child records in hierarchical datasource.
-
 The following code example shows you how to bind the Hierarchical local data into the TreeGrid control.
 {% tabs %}
 {% highlight c# %}
 
-public partial class TreeGridDefault : System.Web.UI.Page
+TreeGrid.aspx.cs
+using Syncfusion.JavaScript;
+
+using Syncfusion.JavaScript.Models;
+
+using System;
+
+using System.Collections.Generic;
+
+using System.Data;
+
+using System.Linq;
+
+using System.Web;
+
+using System.Web.UI;
+
+using System.Web.UI.WebControls;
+
+using WebSampleBrowser.TreeGrid.Model;
+
+namespace WebSampleBrowser.TreeGrid
+
+{
+    public partial class TreeGridDefault : System.Web.UI.Page
+
     {
         protected void Page_Load(object sender, EventArgs e)
+
         {
+
             TaskDetailsCollection TaskCollection = new TaskDetailsCollection();
-            this.TreeGridControlDefault.DataSource = TaskCollection.GetData();
+
+            this.TreeGridControlDefault.DataSource = TaskCollection.GetDataSource();
+
             this.TreeGridControlDefault.DataBind();
-        }
+
+        }  
+
      }
 
-    public class TaskDetailsCollection{
-        private List<BusinessObject> GetData()
+    public class TaskDetailsCollection
+
+    {
+
+        public List<TaskDetails> GetDataSource()
+
         {
-            List<BusinessObject> dataCollection = new List<BusinessObject>();
 
-            BusinessObject Record1 = new BusinessObject()
+            List<TaskDetails> tasks = new List<TaskDetails>();
+
+
+
+
+
+            tasks.Add(new TaskDetails()
+
             {
-                TaskId = 1,
+
+                TaskID = 1,
+
                 TaskName = "Planning",
-                StartDate = "02/03/2017",
+
+                StartDate = "02/03/2014",
+
+                EndDate = "02/07/2014",
+
+                Progress = "100",
+
                 Duration = 5,
-                Children = new List<BusinessObject>(),
-            };
 
-            BusinessObject Child1 = new BusinessObject()
+            });
+
+            tasks[0].SubTasks = new List<TaskDetails>();
+
+            tasks[0].SubTasks.Add(new TaskDetails()
+
             {
-                TaskId = 2,
+                TaskID = 2,
+
                 TaskName = "Plan timeline",
-                StartDate = "02/03/2017",
-                Duration = 5
-            };
 
-            BusinessObject Child2 = new BusinessObject()
+                StartDate = "02/03/2014",
+
+                EndDate = "02/07/2014",
+
+                Duration = 5,
+
+                Progress = "100"
+
+            });
+
+            tasks[0].SubTasks.Add(new TaskDetails()
+
             {
-                TaskId = 3,
+                TaskID = 3,
+
                 TaskName = "Plan budget",
-                StartDate = "02/03/2017",
-                Duration = 5
-            };
 
-            BusinessObject Child3 = new BusinessObject()
+                StartDate = "02/03/2014",
+
+                EndDate = "02/07/2014",
+
+                Duration = 5,
+
+                Progress = "100"
+
+            });
+
+            tasks[0].SubTasks.Add(new TaskDetails()
+
             {
-                TaskId = 4,
+                TaskID = 4,
+
                 TaskName = "Allocate resources",
-                StartDate = "02/03/2017",
-                Duration = 5
-            };
 
-            BusinessObject Child4 = new BusinessObject()
+                StartDate = "02/03/2014",
+
+                EndDate = "02/07/2014",
+
+                Duration = 5,
+
+                Progress = "100"
+
+            });
+
+            tasks[0].SubTasks.Add(new TaskDetails()
+
             {
-                TaskId = 5,
+                TaskID = 5,
+
                 TaskName = "Planning complete",
-                StartDate = "02/07/2017",
-                Duration = 0
-            };
 
-            Record1.Children.Add(Child1);
-            Record1.Children.Add(Child2);
-            Record1.Children.Add(Child3);
-            Record1.Children.Add(Child4);
+                StartDate = "02/07/2014",
 
-            BusinessObject Record2 = new BusinessObject()
-            {
-                TaskId = 6,
-                TaskName = "Design",
-                StartDate = "02/10/2017",
-                Duration = 3,
-                Children = new List<BusinessObject>(),
-            };
+                EndDate = "02/07/2014",
 
-            BusinessObject Child5 = new BusinessObject()
-            {
-                TaskId = 7,
-                TaskName = "Software Specification",
-                StartDate = "02/10/2017",
-                Duration = 3
-            };
+                Duration = 0,
 
-            BusinessObject Child6 = new BusinessObject()
-            {
-                TaskId = 8,
-                TaskName = "Develop prototype",
-                StartDate = "02/10/2017",
-                Duration = 3
-            };
+                Progress = "0"
 
-            BusinessObject Child7 = new BusinessObject()
-            {
-                TaskId = 9,
-                TaskName = "Get approval from customer",
-                StartDate = "02/13/2017",
-                Duration = 2
-            };
+            });
 
-            BusinessObject Child8 = new BusinessObject()
-            {
-                TaskId = 10,
-                TaskName = "Design complete",
-                StartDate = "02/14/2017",
-                Duration = 0
-            };
+    //...
 
-            Record2.Children.Add(Child5);
-            Record2.Children.Add(Child6);
-            Record2.Children.Add(Child7);
-            Record2.Children.Add(Child8);
-            dataCollection.Add(Record1);
-            dataCollection.Add(Record2);
-            return dataCollection;
+    //...
+            return tasks;
+
         }
+
     }
 
-    public class BusinessObject
-        {
-            public int TaskId { get; set; }
-            public string TaskName { get; set; }
-            public string StartDate { get; set; }
-            public int Duration { get; set; }
-            public List<BusinessObject> Children { get; set; }
-        }
+    public class TaskDetails
+
+    {
+        public int TaskID { get; set; }
+
+        public string TaskName { get; set; }
+
+        public string StartDate { get; set; }
+
+        public string EndDate { get; set; }
+
+        public int Duration { get; set; }
+
+        public string Progress { get; set; }
+
+        public List<TaskDetails> SubTasks { get; set; }     
+
+    }
 }
 
 {% endhighlight %} 
@@ -166,17 +214,47 @@ public partial class TreeGridDefault : System.Web.UI.Page
 
 <asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">           
 
-    <div>
-        <ej:TreeGrid runat="server" ID="TreeGridControlDefault"
-             ChildMapping="Children" >
+       <div>                  
+
+        <ej:TreeGrid runat="server" ID="TreeGridControlDefault" 
+
+             ChildMapping="SubTasks" 
+
+             TreeColumnIndex="1">
+
             <columns>
-                <ej:TreeGridColumn HeaderText="Task Id" Field="TaskId" EditType="Numeric" />
-                <ej:TreeGridColumn HeaderText="Task Name" Field="TaskName" EditType="String" />
-                <ej:TreeGridColumn HeaderText="Start Date" Field="StartDate" EditType="Datepicker"/>
-                <ej:TreeGridColumn HeaderText="Duration" Field="Duration" EditType="Numeric" />
+
+                <ej:TreeGridColumn HeaderText="Task Id" Field="TaskID" Width="45" />
+
+                <ej:TreeGridColumn HeaderText="Task Name" Field="TaskName" />
+
+                <ej:TreeGridColumn HeaderText="Start Date" Field="StartDate" />
+
+                <ej:TreeGridColumn HeaderText="End Date" Field="EndDate" />
+
+                <ej:TreeGridColumn HeaderText="Duration" Field="Duration" />
+
+                <ej:TreeGridColumn HeaderText="Progress" Field="Progress" />
+
             </columns>            
+
         </ej:TreeGrid>
-    </div>
+
+       </div>
+
+</asp:Content>
+
+<asp:Content ID="Content2" runat="server" ContentPlaceHolderID="ScriptSection">
+
+    <style type="text/css">
+
+        #TreeGridControlDefault{                       
+
+            width:950px;       
+
+        }
+
+    </style>
 
 </asp:Content>
 
@@ -187,171 +265,197 @@ The output of the above steps is as follows:
 
  ![](Data-Binding_images/Data-Binding_img1.png)
 
- [Click](https://asp.syncfusion.com/demos/web/treegrid/localbinding.aspx) here to view the online demo sample for hierarchical databinding.
-
 
 
 ### Self-Referential Data Binding (Flat Data)
 
-TreeGrid is rendered from Self-Referential data structures by providing two fields, **ID** field and **Parent ID** field.
+TreeGrid is rendered from Self-Referential data structures by providing two fields: ID field and parent ID field.
 
-* **ID Field**: This field contains unique values used to identify nodes. Its name is assigned to the `IdMapping` property.
-* **Parent ID Field**: This field contains values that indicate parent nodes. Its name is assigned to the `ParentIdMapping` property.
+* ID Field- This field contains unique values used to identify nodes. Its name is assigned to the IdMapping property.
+
+* Parent ID Field- This field contains values that indicate parent nodes. Its name is assigned to the ParentIdMapping property.
 
 {% tabs %}
 {% highlight c# %}
 
-public partial class TreeGridDefault : System.Web.UI.Page
+TreeGrid.aspx.cs
+
+using System.Linq;
+
+using System.Web;
+
+using System.Web.UI;
+
+using System.Web.UI.WebControls;
+
+using WebSampleBrowser.TreeGrid.Model;
+
+namespace WebSampleBrowser.TreeGrid
+
+{
+    public partial class TreeGridDefault : System.Web.UI.Page
+
     {
         protected void Page_Load(object sender, EventArgs e)
+
         {
+
             TaskDetailsCollection TaskCollection = new TaskDetailsCollection();
-            this.TreeGridControlDefault.DataSource = TaskCollection.GetData();
+
+            this.TreeGridControlDefault.DataSource = TaskCollection.GetDataSource();
+
             this.TreeGridControlDefault.DataBind();
+
         }
-    }	    
+    }
 	
-    public class TaskDetailsCollection {
-        public List<TaskDetails> GetData()
+    public class TaskDetails
+
+    {
+        public string StartDate { get; set; }
+		
+        public int Id { get; set; }
+
+        public int ParentId { get; set; }
+
+        public string Name { get; set; }
+
+        public int Duration { get; set; }
+
+        public int PercentDone { get; set; }
+
+        public List<Data> Children { get; set; }
+
+    }
+	
+    public class TaskDetailsCollection
+
+    {
+
+        public List<TaskDetails> GetDataSource()
+
         {
-            List<BusinessObject> BusinessObjectCollection = new List<BusinessObject>();
-            BusinessObjectCollection.Add(new BusinessObject()
+
+            List<TaskDetails> list = new List<TaskDetails>();
+
+            list.Add(new TaskDetails()
+
             {
-                TaskId = 1,
-                TaskName = "Parent Task 1",
-                StartDate = "10/23/2017",
-                Duration = 10,               
-                ParentId = null
-            });
-            BusinessObjectCollection.Add(new BusinessObject()
-            {
-                TaskId = 2,
-                TaskName = "Child task 1",
-                StartDate = "10/23/2017",
-                Duration = 4,               
-                ParentId = 1
-            });
-            BusinessObjectCollection.Add(new BusinessObject()
-            {
-                TaskId = 3,
-                TaskName = "Child Task 2",
-                StartDate = "10/24/2017",
-                Duration = 5,               
-                ParentId = 1
-            });
-            BusinessObjectCollection.Add(new BusinessObject()
-            {
-                TaskId = 4,
-                TaskName = "Child task 3",
-                StartDate = "10/25/2017",
-                Duration = 6,                
-                ParentId = 1
-            });
-            BusinessObjectCollection.Add(new BusinessObject()
-            {
-                TaskId = 5,
-                TaskName = "Parent Task 2",
-                StartDate = "10/23/2017",
-                Duration = 10,                
-                ParentId = null
-            });
-            BusinessObjectCollection.Add(new BusinessObject()
-            {
-                TaskId = 6,
-                TaskName = "Child task 1",
-                StartDate = "10/23/2017",
-                Duration = 4,               
-                ParentId = 5
-            });
-            BusinessObjectCollection.Add(new BusinessObject()
-            {
-                TaskId = 7,
-                TaskName = "Child Task 2",
-                StartDate = "10/24/2017",
-                Duration = 5,              
-                ParentId = 5
-            });
-            BusinessObjectCollection.Add(new BusinessObject()
-            {
-                TaskId = 8,
-                TaskName = "Child task 3",
-                StartDate = "10/25/2017",
-                Duration = 6,             
-                ParentId = 5
-            });
-            BusinessObjectCollection.Add(new BusinessObject()
-            {
-                TaskId = 9,
-                TaskName = "Child task 4",
-                StartDate = "10/25/2017",
-                Duration = 6,          
-                ParentId = 5
-            });
-            BusinessObjectCollection.Add(new BusinessObject()
-            {
-                TaskId = 10,
-                TaskName = "Parent Task 3",
-                StartDate = "10/23/2017",
-                Duration = 10,              
-                ParentId = null
-            });
-            BusinessObjectCollection.Add(new BusinessObject()
-            {
-                TaskId = 11,
-                TaskName = "Child task 1",
-                StartDate = "10/23/2017",
-                Duration = 4,
-             
-                ParentId = 10
-            });
-            BusinessObjectCollection.Add(new BusinessObject()
-            {
-                TaskId = 12,
-                TaskName = "Child Task 2",
-                StartDate = "10/24/2017",
-                Duration = 5,
-               
-                ParentId = 10
-            });
-            BusinessObjectCollection.Add(new BusinessObject()
-            {
-                TaskId = 13,
-                TaskName = "Child task 3",
-                StartDate = "10/25/2017",
-                Duration = 6,
-                
-                ParentId = 10
-            });
-            BusinessObjectCollection.Add(new BusinessObject()
-            {
-                TaskId = 14,
-                TaskName = "Child task 4",
-                StartDate = "10/25/2017",
-                Duration = 6,
-              
-                ParentId = 10
-            });
-            BusinessObjectCollection.Add(new BusinessObject()
-            {
-                TaskId = 15,
-                TaskName = "Child task 5",
-                StartDate = "10/25/2017",
-                Duration = 6,
-              
-                ParentId = 10
+
+                Id = 1,
+
+                Name = "Parent Task 1",
+
+                StartDate = "02/03/2014",
+
+                Duration = 5
+
             });
 
-            return BusinessObjectCollection;                            
+            list.Add(new TaskDetails()
+
+            {
+
+                Id = 2,
+
+                Name = " Child Task 1",
+
+                ParentId = 1,
+
+                StartDate = "02/03/2014",
+
+                Duration = 5,
+
+            });
+			
+            list.Add(new TaskDetails()
+
+            {
+                Id = 3,
+
+                ParentId = 1,
+
+                Name = "Child Task 2",
+
+                StartDate = "02/03/2014",
+
+                Duration = 5,
+
+                PercentDone = 100,
+
+            });
+
+            list.Add(new TaskDetails()
+
+            {
+                Id = 4,
+
+                ParentId = 1,
+
+                Name = "Child Task 3",
+
+                StartDate = "02/03/2014",
+
+                Duration = 5,
+
+                PercentDone = 40,
+
+            });
+
+            list.Add(new TaskDetails()
+
+            {
+                Id = 5,
+
+                Name = "Parent Task 2",
+
+                StartDate = "02/03/2014",
+
+                Duration = 5,
+
+                PercentDone = 100,
+
+            });
+
+            list.Add(new TaskDetails()
+
+            {
+       			Id = 6,
+
+                ParentId = 5,
+
+                Name = " Child Task 1",
+
+                StartDate = "02/03/2014",
+
+                Duration = 5,
+
+            });
+
+            list.Add(new TaskDetails()
+
+            {
+                Id = 7,
+
+                ParentId = 5,
+
+                Name = " Child Task 2",
+
+                StartDate = "02/03/2014",
+
+                Duration = 5,
+
+                PercentDone = 100,
+
+            });
+
+     //...
+
+    //...
+	return list;
+
         }
 	}
-    public class BusinessObject
-    {
-        public int TaskId { get; set; }
-        public string TaskName { get; set; }
-        public string StartDate { get; set; }
-        public int Duration { get; set; }
-        public int? ParentId { get; set; }            
-    }
 }
 {% endhighlight %} 
 
@@ -371,17 +475,48 @@ TreeGrid.aspx
 
 <asp:Content ID="ControlContent" runat="server" ContentPlaceHolderID="ControlsSection">           
 
-<div>                  
-<ej:TreeGrid runat="server" ID="TreeGridControlDefault"   
-   IdMapping="TaskID" ParentIdMapping="ParentID">
-    <columns>
-        <ej:TreeGridColumn HeaderText="Task Id" Field="TaskId" EditType="Numeric" />
-        <ej:TreeGridColumn HeaderText="Task Name" Field="TaskName" EditType="String" />
-        <ej:TreeGridColumn HeaderText="Start Date" Field="StartDate" EditType="Datepicker"/>
-        <ej:TreeGridColumn HeaderText="Duration" Field="Duration" EditType="Numeric" />
-    </columns>            
-</ej:TreeGrid>
-</div>
+       <div>                  
+
+        <ej:TreeGrid runat="server" ID="TreeGridControlDefault" 
+
+             TreeColumnIndex="1"
+
+             IdMapping="Id"
+
+             ParentIdMapping="ParentId">
+
+            <columns>
+
+                <ej:TreeGridColumn HeaderText="Task Id" Field="Id" Width="45" />
+
+                <ej:TreeGridColumn HeaderText="Task Name" Field="Name" />
+
+                <ej:TreeGridColumn HeaderText="Start Date" Field="StartDate" />
+
+                <ej:TreeGridColumn HeaderText="Duration" Field="Duration" />
+
+                <ej:TreeGridColumn HeaderText="Progress" Field="PercentDone" />
+
+            </columns>            
+
+        </ej:TreeGrid>
+
+       </div>
+
+</asp:Content>
+
+<asp:Content ID="Content2" runat="server" ContentPlaceHolderID="ScriptSection">
+
+    <style type="text/css">
+
+        #TreeGridControlDefault{                       
+
+            width:950px;       
+
+        }
+
+    </style>
+
 </asp:Content>
 
 {% endhighlight %}
@@ -389,9 +524,7 @@ TreeGrid.aspx
 
 The following screenshot shows the output of the above steps,
 
-![](Data-Binding_images/Data-Binding_img2.png)
-
-[Click](https://asp.syncfusion.com/demos/web/treegrid/selfreference.aspx) here to view the online demo sample for self-referential databinding
+![](Data-Binding_images/Data-Binding_img2.png) 
 
 ## Remote data binding
 
@@ -413,22 +546,26 @@ Similarly, if the user navigates to a new page, the root nodes of that specific 
 N> 1. Load on demand support in TreeGrid can be enabled only for remote data.
 N> 2. For better initial load time performance, we need to define the “HasChildMapping” property.
 
-Load on demand support in TreeGrid can be enabled by using the property [`enableLoadOnDemand`](/api/js/ejtreegrid#members:enableloadondemand).
+Load on demand support in TreeGrid can be enabled by the following ways,
+
+1. By enabling [`EnableLoadOnDemand`](https://help.syncfusion.com/api/js/ejtreegrid#members:enableLoadOnDemand "enableLoadOnDemand") property of TreeGrid control
+2. By enabling **CrossDomain** property while binding data source using ejDataManager control.
 
 The following code explains how to use Load on Demand in TreeGrid Control,
 
 {% highlight javascript %}
 
- <ej:TreeGrid runat="server" ID="TreeGridLoadonDemand" IdMapping="TaskID" ParentIdMapping="ParentID" EnableLoadOnDemand="true" HasChildMapping="isParent" EnableVirtualization="true">
+ <ej:TreeGrid runat="server" ID="TreeGridLoadonDemand" IdMapping="TaskID" ParentIdMapping="ParentID" HasChildMapping="isParent" EnableVirtualization="true">
     <DataManager URL="http://js.syncfusion.com/demos/ejServices/Wcf/TreeGridGantt/TreeGantt.svc/SelfReferenceDatas" CrossDomain="true"></DataManager>
     <Columns>
         <ej:TreeGridColumn HeaderText="Task Id" Field="TaskID" Width="45" />
         <ej:TreeGridColumn HeaderText="Task Name" Field="TaskName" />
-        <ej:TreeGridColumn HeaderText="Start Date" Field="StartDate" />
-        <ej:TreeGridColumn HeaderText="End Date" Field="EndDate"/>
+        <ej:TreeGridColumn HeaderText="Start Date" Field="StartDate" EditType="datetimepicker" />
+        <ej:TreeGridColumn HeaderText="End Date" Field="EndDate" EditType="datetimepicker" />
         <ej:TreeGridColumn HeaderText="Progress" Field="Progress" />
     </Columns>
 </ej:TreeGrid>
+
 {% endhighlight %}
 
 The output for load on demand support in TreeGrid:
@@ -436,48 +573,45 @@ The output for load on demand support in TreeGrid:
 ![](Data-Binding_images/Data-Binding_img3.png)
 ![](Data-Binding_images/Data-Binding_img4.png)
 
+The following code snippet shows on how to enable load on demand support using  [`EnableLoadOnDemand`](https://help.syncfusion.com/api/js/ejtreegrid#members:enableLoadOnDemand "enableLoadOnDemand") property.
+
+{% highlight javascript %}
+
+ <ej:TreeGrid runat="server" ID="TreeGridLoadonDemand"
+     //...
+    EnableLoadOnDemand="true">
+    <DataManager URL="http://js.syncfusion.com/demos/ejServices/Wcf/TreeGridGantt/TreeGantt.svc/SelfReferenceDatas" CrossDomain="true"></DataManager>  
+</ej:TreeGrid>
+
+{% endhighlight %}
+
 The following output shows how load on demand works for expanding action
 
 ![](Data-Binding_images/Data-Binding_img5.png)
 
-[Click](https://asp.syncfusion.com/demos/web/treegrid/loadondemand.aspx) here to view the online demo sample for Load on demand.
-
 ### Load at once:
 
-On remote data binding, for every action such as paging, sorting, filtering the data will be fetched from the remote server each time. To avoid requesting the data from the remote server for each action, we can set TreeGrid to load all the data on initialization and make all the data operations in client side. To enable this, we have to set `Offline` property of `ej.DataManager` as `true`, the following code example explains this.
+On remote data binding, for every action such as paging, sorting, filtering, the data will be fetched from remote server each time. To avoid requesting the data from the remote server for each action, we can set TreeGrid to load all the data on initialization and make all the data operations in client side. To enable this, we can use Offline property of `ej.DataManager`. the following code example explains this.
 
 {% highlight javascript %}
 
- <ej:TreeGrid runat="server" ID="TreeGridLoadonDemand" IdMapping="TaskID" ParentIdMapping="ParentID"  HasChildMapping="isParent" EnableVirtualization="true">
+ <ej:TreeGrid runat="server" ID="TreeGridLoadonDemand" IdMapping="TaskID" ParentIdMapping="ParentID" HasChildMapping="isParent" EnableVirtualization="true">
     <DataManager URL="http://js.syncfusion.com/demos/ejServices/Wcf/TreeGridGantt/TreeGantt.svc/SelfReferenceDatas" Offline="true"></DataManager>
     <Columns>
         <ej:TreeGridColumn HeaderText="Task Id" Field="TaskID" Width="45" />
         <ej:TreeGridColumn HeaderText="Task Name" Field="TaskName" />
-        <ej:TreeGridColumn HeaderText="Start Date" Field="StartDate" />
-        <ej:TreeGridColumn HeaderText="End Date" Field="EndDate"/>
+        <ej:TreeGridColumn HeaderText="Start Date" Field="StartDate" EditType="datetimepicker" />
+        <ej:TreeGridColumn HeaderText="End Date" Field="EndDate" EditType="datetimepicker" />
         <ej:TreeGridColumn HeaderText="Progress" Field="Progress" />
     </Columns>
 </ej:TreeGrid>
 
 {% endhighlight %}
 
-Please refer the [link](https://help.syncfusion.com/aspnet/datamanager/adavancedfunctionalities#offline-support) for further reference on offline property
+Please refer the [link](https://help.syncfusion.com/js/datamanager/data-binding#offline-mode "offline") for further reference on offline property
 
 **Limitations**:
 
 1. Mapping the expand state of a record using `ExpandStateMapping` property is not supported in load on demand feature.
 2. If a root or parent node is in collapsed state (child nodes not yet loaded), then that parent node will not be expanded while inserting new child to that parent node using toolbar icon or drag and drop actions.
 
-## Virtual rendering
-Virtualization support is used to render large number of records in TreeGrid with effective performance. In this mode all the records are fetched from data source initially, but only few records will be displayed in the document object model (DOM) which should be visible to the user. While scrolling, the visible records are updated in DOM as per the scrolled position. This mode can be enabled by setting `EnableVirtualization` property as `true`. 
-
-The below code example shows how to use this property.
-
-{% highlight html %}
-
-<ej:TreeGrid ID="TreeGridContainer" EnableVirtualization="true">
-</ej:TreeGrid>
-
-{% endhighlight %}
-
-[Click](https://asp.syncfusion.com/demos/web/treegrid/virtualization.aspx) here to view the online demo sample for virtualization.

@@ -27,14 +27,12 @@ The output of the TreeGrid with paging enabled is displayed below
 
 ## Paging settings
 
-The paging in TreeGrid can be customized by using the `PageSettings` property.
-
-* **PageSize** - Using this property we can limit the number of records to be displayed per page.
-* **PageSizeMode** - By setting this property as `Root` we can limit the number of root nodes or the 0th level records to be displayed per page . 
-When the `PageSizeMode` property is set as `Root` the number of records to be displayed per page which is defined in the the `PageSize` property will be considered only for the root nodes or the 0th level records.
-* **PageCount** - It is used to display the page number to be displayed in the pager.
-* **CurrentPage** - This property is used to set the active page to be displayed initially.
-* **TotalRecordsCount** - This property is used to limit the total number of records from the data source to be displayed in TreeGrid.
+The paging in TreeGrid can be customized by using `PageSettings` property.
+The number of records to be displayed per page can be limited by using the `PageSettings.PageSize` property. 
+The number of root nodes or the 0th level records to be displayed per page can be limited by setting the `PageSettings.PageSizeMode` property as `Root`. When pageSettings.pageSizeMode property is set as `Root` the number of records to displayed per page which is defined in the `PageSettings.PageSize` property will be considered only for the root nodes or the 0th level records.
+`PageSettings.PageCount` property is used to display the page number to be displayed in the pager.
+`PageSettings.CurrentPage` property is used to set the active page to displayed initially.
+`PageSettings.TotalRecordsCount` property is used to limit the total number of records from the data source to be displayed in TreeGrid.
  The following code example explains the properties in pageSettings. 
 
 {% highlight html %}
@@ -123,24 +121,16 @@ You can also find the demo for TreeGrid with pager template [here](http://asp.sy
 The below image displays TreeGrid with paging template.
 ![](Paging_images/Paging_img2.png)
 
-It is possible to navigate to a specific page with a custom action instead of clicking pager button by using the [`gotoPage`]( /api/js/ejtreegrid#methods:gotopage "gotoPage") method.
-
-The below code snippet explains how to navigate to 3rd page in TreeGrid by using `gotoPage` method
-
-{% highlight js %}
-<script>
-    var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
-        treeObject.gotoPage(3);
-</script>
-{% endhighlight %}
-
 ## Paging - Touch Option
 
 With paging and responsive mode enabled in TreeGrid, it is possible to change the current page using swipe action.
 
+The following code example describes how to enable multiple selection in TreeGrid.	
+
 {% highlight html %}
 
- <ej:TreeGrid ID="TreeGridControlPagerTemplate" AllowPaging="true" IsResponsive="true">       
+ <ej:TreeGrid ID="TreeGridControlPagerTemplate" AllowPaging="true" IsResponsive="true">            
+       //...
  </ej:TreeGrid>
 
 {% endhighlight %}
