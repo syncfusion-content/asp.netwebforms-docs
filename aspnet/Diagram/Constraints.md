@@ -19,7 +19,7 @@ Diagram constraints allow to enable or disable the following behaviors.
 * Zoom and Pan
 * Undo Redo
 
-For more information about Diagram constraints, refer to [Diagram Constraints](http://help.syncfusion.com/cr/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.DiagramProperties~Constraints.html  "Diagram Constraints").
+For more information about Diagram constraints, refer to [Diagram Constraints](http://help.syncfusion.com/cr/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.DiagramProperties~Constraints.html  "Diagram Constraints").
 
 **Example**
 
@@ -63,7 +63,7 @@ NodeConstraints allows to enable or disable the following behaviors of node.
 * Drag label
 * Define tooltip
 
-For more information about node constraints, refer to [Node Constraints](http://help.syncfusion.com/cr/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.NodeBase~Constraints.html "Node Constraints")
+For more information about node constraints, refer to [Node Constraints](http://help.syncfusion.com/cr/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.NodeBase~Constraints.html "Node Constraints")
 
 **Example**
 
@@ -95,7 +95,7 @@ ConnectorConstraints allow to enable or disable certain behaviors of Connectors.
 * Bridging
 * Label dragging
 
-For more information about connector constraints, refer to [Connector Constraints](http://help.syncfusion.com/cr/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.Connector~Constraints.html  "Connector Constraints")
+For more information about connector constraints, refer to [Connector Constraints](http://help.syncfusion.com/cr/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.Connector~Constraints.html  "Connector Constraints")
 
 **Example**
 
@@ -118,7 +118,7 @@ You can enable or disable certain behaviors of Port. They are as follows.
 
 * Connect
 
-For more information about port constraints, refer to [Port Constraints](http://help.syncfusion.com/cr/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.Port~Constraints.html "Port Constraints")
+For more information about port constraints, refer to [Port Constraints](http://help.syncfusion.com/cr/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.Port~Constraints.html "Port Constraints")
 
 **Example**
 
@@ -140,7 +140,7 @@ Selector visually represents the selected elements with certain editable thumbs.
 * Rotator
 * User handles
 
-For more information about Selector constraints, refer to [Selector Constraints](http://help.syncfusion.com/cr/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.SelectedItems~Constraints.html  "Selector Constraints")
+For more information about Selector constraints, refer to [Selector Constraints](http://help.syncfusion.com/cr/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.SelectedItems~Constraints.html  "Selector Constraints")
 
 **Example**
 
@@ -164,7 +164,7 @@ Snap Constraints control the visibility of gridlines and enable/disable snapping
 * Snap to either horizontal or vertical gridlines
 * Snap to both horizontal and vertical gridlines
 
-For more information about snap constraints, refer to [Snap Constraints](http://help.syncfusion.com/cr/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.SnapSettings~SnapConstraints.html "Snap Constraints")
+For more information about snap constraints, refer to [Snap Constraints](http://help.syncfusion.com/cr/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.SnapSettings~SnapConstraints.html "Snap Constraints")
 
 **Example**
 

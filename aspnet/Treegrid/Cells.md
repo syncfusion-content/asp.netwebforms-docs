@@ -27,14 +27,14 @@ Please find the example describes the above behavior.
 
 The following output shows the result of above code example.
 ![](Cell/tooltip.png)
-Cell Tooltip
-{:.caption}
 
+{:caption}
+Cell Tooltip
 
 ![](Cell/headerTooltip.png)
-Header Tooltip
-{:.caption}
 
+{:caption}
+Header Tooltip
 
 
 ### Tooltip Template
