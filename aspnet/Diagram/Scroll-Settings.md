@@ -13,7 +13,7 @@ Diagram's `ScrollSettings` enables you to read the current scroll status, view p
 
 ## Get current scroll status
 
-Scroll settings allows you to read the scroll status, view port size, and current zoom factor with a set of properties. To explore those properties, see [Scroll Settings](http://help.syncfusion.com/cr/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.ScrollSettings_members.html "Scroll Settings")
+Scroll settings allows you to read the scroll status, view port size, and current zoom factor with a set of properties. To explore those properties, see [Scroll Settings](http://help.syncfusion.com/cr/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.ScrollSettings_members.html "Scroll Settings")
 
 ## Define scroll status
 Diagram allows you to pan the Diagram before loading, so that any desired region of a large Diagram is made to view. You can programmatically pan the Diagram with the `HorizontalOffset` and `VerticalOffset` properties of scroll settings. The following code illustrates how to set pan the Diagram programmatically.
@@ -90,7 +90,7 @@ The scroll limit allows you to define the scrollable region of the Diagram. It i
 * Allows to scroll within the specified scrollable area.
 
 `ScrollLimit` property of scroll settings helps to limit the scrolling. For the accepted values of the scrollLimit, refer to 
-[Scroll Limit](http://help.syncfusion.com/CR/cref_files/aspnet/ejweb/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.PageSettings~ScrollLimit.html "Scroll Limit").
+[Scroll Limit](http://help.syncfusion.com/CR/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.PageSettings~ScrollLimit.html "Scroll Limit").
 
 The following code example illustrates how to specify the scroll limit.
 
