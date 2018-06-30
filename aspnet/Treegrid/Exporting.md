@@ -81,7 +81,7 @@ Currently server helper function allows following two types of exporting.
 * PDF
 
 ## Multiple exporting
-Multiple export is used for export more than one TreeGrid object in the same file. 
+Multiple export is used for export more than one TreeGrid object in the same file. Multiple export in TreeGrid can be enabled by setting `AllowMultipleExporting` property to `true`. TreeGrid properties of all the TreeGrid which are available in current page are passed as string array parameter to controller action method. 
 
 The following code example describes exporting multiple TreeGrid in PDF
 
