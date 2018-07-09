@@ -67,4 +67,4 @@ The following code example describes the above behavior.
 
 {% endtabs %}
 
-N>  This solution will work only for local data.
+N>  This solution is applicable only for local data.
