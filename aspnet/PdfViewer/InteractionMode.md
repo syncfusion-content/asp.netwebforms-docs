@@ -2,7 +2,7 @@
 layout: post
 title: InteractionMode | PDF viewer | ASP .NET | Syncfusion
 description: InteractionMode | PDF viewer | ASP .NET | Syncfusion
-platform: ASP .NET
+platform: aspnet
 control: PDF viewer
 documentation: ug
 ---

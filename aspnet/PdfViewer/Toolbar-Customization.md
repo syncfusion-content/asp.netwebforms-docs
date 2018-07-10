@@ -511,4 +511,4 @@ N> Ensure the icon images available in the referred location for the custom tool
 
 Run the sample. You can view the PDF viewer with custom toolbar.
 
-<http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewerWeb-1747609725>
+<http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewerWeb_Toolbar-1881961262>

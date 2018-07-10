@@ -2,7 +2,7 @@
 layout: post
 title: Hand written signature | PDF viewer | ASP .NET | Syncfusion
 description: Hand written signature | PDF viewer | ASP .NET | Syncfusion
-platform: ASP .NET
+platform: aspnet
 control: PDF viewer
 documentation: ug
 ---
