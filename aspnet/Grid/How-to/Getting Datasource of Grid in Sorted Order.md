@@ -32,7 +32,7 @@ The following code example describes the above behavior.
 <script type="text/javascript">
 
  function GetSortedData(args) {
-            var obj = $(".e-grid").ejGrid("instance");   
+            var obj = $("#FlatGrid").ejGrid("instance");   
             var Sort = obj.model.sortSettings.sortedColumns;  
             var query = ej.Query();               
             if(obj.model.sortSettings.sortedColumns.length){
