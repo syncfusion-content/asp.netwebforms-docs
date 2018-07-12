@@ -368,7 +368,7 @@ Map the controller absolutely in the production environment by using the **Virtu
 
 **Sample:**
 
-<http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_ASP.NET-715739565>
+<http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewerWeb_GettingStarted1465969179>
 
 Run the sample and you will see the PDF viewer control as in the below screenshot.
 
