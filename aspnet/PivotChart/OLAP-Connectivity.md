@@ -115,6 +115,7 @@ using System.ServiceModel.Activation;
 using Syncfusion.Olap.Manager;
 using Syncfusion.Olap.Reports;
 using Syncfusion.JavaScript;
+using System.Collections.Generic;
 
 namespace PivotChartDemo
 {
