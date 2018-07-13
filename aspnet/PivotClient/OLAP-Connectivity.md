@@ -206,7 +206,7 @@ namespace PivotClientDemo
         [OperationContract]
         Dictionary<string, object> NodeDropped(string action, string dropType, string nodeInfo, string olapReport, string clientReports);
         [OperationContract]
-        Dictionary<string, object> CubeChanged(string action, string cubeName, string clientParams);
+        Dictionary<string, object> CubeChanged(string action, string cubeName, string clientParams,string olapReport, string clientReports);
         [OperationContract]
         Dictionary<string, object> MeasureGroupChanged(string action, string measureGroupName);
         [OperationContract]
@@ -335,7 +335,7 @@ namespace PivotClientDemo
             return pivotClientHelper.GetJsonData(action, DataManager, dropType, nodeInfo);
         }
 
-        public Dictionary<string, object> CubeChanged(string action, string cubeName, string clientParams)
+        public Dictionary<string, object> CubeChanged(string action, string cubeName, string clientParams, string olapReport, string clientReports)
         {
             OlapDataManager DataManager = new OlapDataManager(connectionString);
             if (olapReport != "")
@@ -496,14 +496,6 @@ namespace PivotClientDemo
                             dictionary = pivotClientHelper.GetJsonData("toolbarOperation", DataManager, "Load Report", reportName);
                             dictionary.Add("Collection", repCol);
                         }
-                    }
-                    else
-                    {
-                        if (analysisMode.ToLower() == "pivot" && operationalMode.ToLower() == "servermode")
-                            dictionary = pivotClientHelper.GetJsonData("LoadReport", ProductSales.GetSalesData(), Encoding.UTF8.GetString(reportByte));
-                        else
-                            dictionary.Add("report", Encoding.UTF8.GetString(reportByte));
-                        break;
                     }
                 }
             }
