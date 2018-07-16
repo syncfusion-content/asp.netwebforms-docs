@@ -433,4 +433,5 @@ The following output is displayed as a result of the above code example.
 
 ![](Sorting_images/Sorting_img5.png)
 
+N> To get the sorted data of the grid after sorting a column you can refer the [`How To`](https://help.syncfusion.com/aspnet/grid/how-to "Getting Datasource of Grid in Sorted Order").
 
