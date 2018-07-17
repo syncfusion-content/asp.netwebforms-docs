@@ -187,7 +187,7 @@ The output of the above steps is as follows:
 
  ![](Data-Binding_images/Data-Binding_img1.png)
 
- [Click](https://asp.syncfusion.com/demos/web/treegrid/localbinding.aspx) here to view the online demo sample for hierarchical databinding.
+ [Click](https://asp.syncfusion.com/demos/web/treegrid/localbinding.aspx) here to view the online demo sample for hierarchical data binding.
 
 
 
@@ -391,7 +391,7 @@ The following screenshot shows the output of the above steps,
 
 ![](Data-Binding_images/Data-Binding_img2.png)
 
-[Click](https://asp.syncfusion.com/demos/web/treegrid/selfreference.aspx) here to view the online demo sample for self-referential databinding
+[Click](https://asp.syncfusion.com/demos/web/treegrid/selfreference.aspx) here to view the online demo sample for self-referential data binding
 
 ## Remote data binding
 
