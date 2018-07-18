@@ -1,3 +1,12 @@
+---
+layout: post
+title: Getting Datasource of Grid in Sorted Order | Grid | ASP.NET Webforms | Syncfusion
+description: Getting Datasource of Grid in Sorted Order
+platform: aspnet
+control: Grid
+documentation: ug
+---
+
 ## Getting Datasource of Grid in Sorted Order
 
 Grid column can be sorted and after sorting, the datasource can be obtained in the same order using `sortBy` query and `executeLocal` method of DataManager.
