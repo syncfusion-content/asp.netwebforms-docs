@@ -32,7 +32,7 @@ The following code example describes the above behavior.
 <script type="text/javascript">
 
  function GetSortedData(args) {
-            var obj = $("#FlatGrid").ejGrid("instance");   
+            var obj = $(".e-grid").ejGrid("instance");   
             var Sort = obj.model.sortSettings.sortedColumns;  
             var query = ej.Query();               
             if(obj.model.sortSettings.sortedColumns.length){
@@ -67,4 +67,4 @@ The following code example describes the above behavior.
 
 {% endtabs %}
 
-N>  This solution is applicable only for local data.
+N>  This solution will work only for local data.
