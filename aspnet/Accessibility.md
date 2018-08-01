@@ -42,8 +42,7 @@ The basic steps for converting a common widget into accessible are as follows:
 i.	The above code will make the button widget accessible, as it was defined with aria-disabled state set to false. It states that if none of that button actions are currently available, then the button is said to be in an aria-disabled state. <BR>
 ii.	The property aria-describedby has been assigned with some related button text that denotes the button description to be notified to the user.
 
-N> Note: If your button is a togglebutton, it can be defined with an additional aria-pressed state that returns the value true if the button undergoes toggling, else the state remains as false.<BR>
-An example with button control that has been made accessible can be referred from this [link](http://www.oaa-accessibility.org/examplep/button1/).
+N> Note: If your button is a togglebutton, it can be defined with an additional aria-pressed state that returns the value true if the button undergoes toggling, else the state remains as false.
 
 ## Usage of Accessibility in Syncfusion Widgets
 
