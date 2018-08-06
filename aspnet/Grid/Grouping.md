@@ -774,6 +774,7 @@ The following code example describes the above behavior.
 
 <ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" AllowGrouping="true" AllowSorting="true">
             <DataManager URL="_Default.aspx/UrlDataSource" Adaptor="WebMethodAdaptor" />
+            <GroupSettings  GroupedColumns="EmployeeID"></GroupSettings>
             <Columns>
                 <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75"/>
                 <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
