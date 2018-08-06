@@ -760,11 +760,105 @@ The following output is displayed as a result of the above code example.
 
 ![](Grouping_images/Grouping_img10.png)
 
+## Handling grouped records count in server-side    
 
+When binding remote data to grid with on-demand data loading, only current page data knowledge is available to grid and so grouped records count would be shown based on current Page only. 
 
+This can be rectified when binding data to grid using [WebMethodAdaptor](https://help.syncfusion.com/aspnet/grid/data-adaptors#webmethod-adaptor) of DataManager. The grouped column values should be passed into the `groupDs` property of return object from server-side along with datasource and count.
 
+The following code example describes the above behavior.
 
+{% tabs %}
+ 
+{% highlight razor %}
 
+<ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" AllowGrouping="true" AllowSorting="true">
+            <DataManager URL="_Default.aspx/UrlDataSource" Adaptor="WebMethodAdaptor" />
+            <GroupSettings  GroupedColumns="EmployeeID"></GroupSettings>
+            <Columns>
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="True" TextAlign="Right" Width="75"/>
+                <ej:Column Field="CustomerID" HeaderText="Customer ID" Width="80" />
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="75" />
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" Format="{0:C}" />
+                <ej:Column Field="OrderDate" HeaderText="Order Date" TextAlign="Right" Width="80" Format="{0:MM/dd/yyyy}">
+                </ej:Column>
+            </Columns>
+        </ej:Grid>
 
+{% endhighlight  %}
 
+{% highlight c# %}
 
+    namespace WebSampleBrowser.Grid
+        {
+            public partial class _Default : Page
+              { 
+                List<Orders> order = new List<Orders>();
+
+              [WebMethod]
+              [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+              public static object UrlDataSource(DataManager value)
+              {
+                IEnumerable data = BindDataSource();
+                DataOperations ds = new DataOperations();
+                IEnumerable GroupDs = new List<object>(); 
+                var count = data.AsQueryable().Count();
+
+                List<string> str = new List<string>();
+                if (value.Group != null)
+                    GroupDs = ds.PerformSelect(data, str); // Grouped records
+
+                if (value.Sorted != null && value.Sorted.Count > 0) //Sorting
+                {
+                    data = ds.PerformSorting(data, value.Sorted);
+                }
+
+                data = ds.PerformSkip(data, value.Skip);    //Paging
+                data = ds.PerformTake(data, value.Take);
+
+                return new { result = data, count = count, groupDs = GroupDs };
+              }
+                 private void BindDataSource()
+                  {   
+                     int code = 10000;
+                     for (int i = 1; i < 10; i++)
+                     {
+                      order.Add(new Orders(code + 1, "ALFKI", i + 0, "France",34.3 * i));
+                      order.Add(new Orders(code + 2, "ANATR", i + 2, "Germany",35.3 * i));
+                      order.Add(new Orders(code + 3, "ANTON", i + 1, "Brazil" ,325.3 * i));
+                      order.Add(new Orders(code + 4, "BLONP", i + 3, "Italy",435.3 * i, ));
+                      order.Add(new Orders(code + 5, "BOLID", i + 4, "Mexico",46.3 * i));
+                      code += 5;
+                    }
+                    this.FlatGrid.DataSource = order;
+                    this.FlatGrid.DataBind();
+                  }
+                  [Serializable]
+                  public class Orders
+                   {
+                     public Orders()
+                      {
+
+                      }
+                     public Orders(long OrderId, int EmployeeId, string CustomerId, string ShipCountry,double Freight)
+                      {
+                        this.OrderID = OrderId;
+                        this.EmployeeID = EmployeeId;
+                        this.CustomerID = CustomerId;
+                        this.Freight = Freight;
+                        this.ShipCountry = ShipCountry;
+                      }
+                     public long OrderID { get; set; }
+                     public int EmployeeID { get; set; }
+                     public string CustomerID { get; set; }
+                     public string ShipCountry { get; set; }
+                     public double Freight { get; set; }
+                   }
+              }
+        } 
+{% endhighlight  %}   
+{% endtabs %}  
+
+The following output is displayed as a result of the above code example.
+
+![](Grouping_images/Grouping_img11.png)
