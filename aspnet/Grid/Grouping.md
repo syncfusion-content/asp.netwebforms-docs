@@ -764,7 +764,7 @@ The following output is displayed as a result of the above code example.
 
 When binding remote data to grid with on-demand data loading, only current page data knowledge is available to grid and so grouped records count would be shown based on current Page only. 
 
-This can be rectified when bindng data to grid using [WebMethodAdaptor](https://help.syncfusion.com/aspnet/grid/data-adaptors#webmethod-adaptor) of DataManager. The grouped column values should be passed into the `groupDs` property of return object from server-side along with datsource and count.
+This can be rectified when binding data to grid using [WebMethodAdaptor](https://help.syncfusion.com/aspnet/grid/data-adaptors#webmethod-adaptor) of DataManager. The grouped column values should be passed into the `groupDs` property of return object from server-side along with datasource and count.
 
 The following code example describes the above behavior.
 
