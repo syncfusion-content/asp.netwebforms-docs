@@ -2,7 +2,8 @@
 layout: post
 title: Searching in the DropDownList control for Syncfusion ASP.NET WebForm
 description: Describes about the searching in the DropDownList control for Syncfusion ASP.NET WebForm
-control: aspnet
+platform: aspnet
+control: DropDownList
 documentation: ug
 keywords: DropDownList, dropdown, Filtering, Server Filtering, Searching, Incremental Search, Filter Search
 ---
