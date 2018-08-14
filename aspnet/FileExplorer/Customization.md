@@ -77,7 +77,7 @@ Also you can change the layout using toolbar option. While clicking this tool, p
 
 ![](Customization_images/Customization_img2.jpeg)
 
-Also the layout views can be changed through the “[Layout](http://help.syncfusion.com/js/api/ejfileexplorer#members:layout)” property.
+Also the layout views can be changed through the “[Layout](http://help.syncfusion.com/js/api/ejfileexplorer#members:layout)” property. The [layoutChange](https://help.syncfusion.com/api/js/ejfileexplorer#events:layoutchange) event will be triggered whenever the layout view type is changed.
 
 In the view page, add FileExplorer element and specify the layout type as shown below
     

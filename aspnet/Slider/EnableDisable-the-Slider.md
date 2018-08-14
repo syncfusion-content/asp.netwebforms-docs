@@ -13,7 +13,7 @@ Slider control includes an option to enable/disable it. When you disable the Sl
 
 ## Enabled     
 
-By using this Enabled property, you can enable/disable the Slider. Data type of this property is Boolean.
+By using this Enabled property, you can enable/disable the Slider. Data type of this property is Boolean. Also you can enable/disable the **Slider** by using [enable](https://help.syncfusion.com/api/js/ejslider#methods:enable) and [disable](https://help.syncfusion.com/api/js/ejslider#methods:disable) methods.
 
 In an ASPX page, define the Slider control and set the Enabled property to false to disable the Slider. 
 

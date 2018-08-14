@@ -102,6 +102,8 @@ The output for CurrencyTextbox with and without the EnableStrictMode.
 
 The CurrencyTextbox control has an option to enable or disable its elements. You can set the Enabled property to true to enable the CurrencyTextbox control. Enabled property accepts Boolean value. By default, the value of the Enabled is set to true.
 
+Also you can enable/disable the **CurrencyTextBox** by using [enable](https://help.syncfusion.com/api/js/ejtextboxes#methods:enable) and [disable](https://help.syncfusion.com/api/js/ejtextboxes#methods:disable) methods.
+
 ### Configure Enabled or Disabled 
 
 The following steps explain the implementation of Enabled in the CurrencyTextbox.
@@ -212,6 +214,7 @@ The output for CurrencyTextbox with Name.
 ## Define Value
 
 The value of the CurrencyTextbox can be assigned by using the Value property. The default value for Value property is null.
+You can get the value of **CurrencyTextBox** by using [getValue](https://help.syncfusion.com/api/js/ejtextboxes#methods:getvalue) method.
 
 ### Configure Value
 

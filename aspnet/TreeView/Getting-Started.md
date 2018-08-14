@@ -50,6 +50,8 @@ In the view page, add an element to render the TreeView with specified items.
 
 Another way of creating TreeView is binding with the data source, you can bind local data source to create a TreeView. 
 
+The [beforeLoad](https://help.syncfusion.com/api/js/ejtreeview#events:beforeload) event will be triggered before loading nodes into TreeView.
+
 Render TreeView with local data source.
 
 In the code behind page, create a data list which contains the details about tree nodes and map the list data to the DataSource property of TreeView.
