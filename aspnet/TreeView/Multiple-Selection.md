@@ -96,7 +96,7 @@ In the ASPX page, add TreeView element with following properties. We you can sel
 
 ## Get Selected Nodes
 
-To get the selected Nodes of TreeView, you can use [getSelectedNodes](http://help.syncfusion.com/js/api/ejtreeview#methods:getselectednodes) method. It returns the collections of TreeView selected nodes.
+To get the selected Nodes of TreeView, you can use [getSelectedNodes](http://help.syncfusion.com/js/api/ejtreeview#methods:getselectednodes) method. It returns the collections of TreeView selected nodes. You can use [getSelectedNodesIndex](https://help.syncfusion.com/api/js/ejtreeview#methods:getselectednodesindex) method to get the index positions of currently selected nodes.
 
 In the ASPX page, add TreeView element with following properties. We you can get selected nodes from TreeView by using **getSelectedNodes** method.
 
