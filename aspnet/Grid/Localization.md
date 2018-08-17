@@ -73,10 +73,6 @@ ConfirmDelete</td><td>
 Are you sure you want to Delete Record?</td></tr>
 <tr>
 <td>
-PagerInfo</td><td>
-{0} of {1} pages ({2} items)</td></tr>
-<tr>
-<td>
 FrozenColumnsViewAlert</td><td>
 Frozen columns should be in grid view area</td></tr>
 <tr>
