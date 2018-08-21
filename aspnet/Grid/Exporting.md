@@ -13,7 +13,7 @@ Exporting feature provides support to export Grid data into excel, word and PDF 
 
 ## Server dependencies
 
-Export Helper functions are available in the assembly `Syncfusion.EJ.Export`, which is available in the Essential Studio builds. Full list of assemblies needed for the grid export is as follows.
+Export Helper functions are available in the assembly `Syncfusion.EJ.Export`, which is available in the Essential Studio builds. The list of assemblies needed for the grid export is as follows.
 
     1.  Syncfusion.EJ
     2.  Syncfusion.EJ.Export
