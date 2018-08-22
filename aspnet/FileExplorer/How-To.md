@@ -862,3 +862,79 @@ You can set the alias name to the root folder of FileExplorer by using 'rootFold
         </ej:FileExplorer>
         
     {% endhighlight %}
+
+## Use the FTP connection using FileExplorer
+
+You can access your FTP service using our FileExplorer component and can manage your files easily.
+
+### FTP Login
+
+First you will need the FTP account login information. You can connect with the primary username and password or an FTP account. The FTP server is open to the public, using anonymous access. But most of the FTP servers are password protected. 
+Username: username or user@example.com
+Password: The password that was created for the user you are using.
+
+### FTP with FileExplorer server
+
+In this FTP application, we have provided “FTPFileOperationController” file, which contains “FileActionDefault” action method. When you make AJAX request to this controller part, “FileActionDefault” method will be called after based on ActionType” parameter value, then it calls the corresponding built-in FTP file handling methods such as ‘Read’, ‘Search’, ‘Download’, ‘Upload’, ‘Remove’, ‘Rename’ which are available in our “FTPFileExplorerOperations” class.
+
+### Steps to create FileExplorer application to access FTP server
+
+**Step 1:** Create a new ASP.NET Web project using Visual Studio.
+
+**Step 2:** Include **“FTPFileExplorerOperations”** file in that application. This file contains built-in file handling methods which helps to connect our FileExplorer with FTP service.
+
+**Step 3:** Add **“FileExplorerController.cs”** file in the controller part of FTP project.
+
+This file, contains action handler methods. Based on the request parameters, it helps to call the built-in file handling methods of **FTPFileExplorerOperations** and perform corresponding actions.
+
+{% highlight c# %}
+
+public static object FileActionDefault(string ActionType, string Path, string ExtensionsAllow, string LocationFrom, string LocationTo, string Name, string[] Names, string NewName, string Action, bool CaseSensitive, string SearchString, IEnumerable<CommonFileDetails> CommonFiles)
+        {
+            FTPFileExplorerOperations operation = new FTPFileExplorerOperations();
+            switch (ActionType)
+            {
+                case "Read":
+                    return (operation.Read(Path, ExtensionsAllow));
+                case "CreateFolder":
+                    return (operation.CreateFolder(Path, Name));
+                case "Paste":
+                    operation.Paste(LocationFrom, LocationTo, Names, Action, CommonFiles);
+                    break;
+                case "Remove":
+                    operation.Remove(Names, Path);
+                    break;
+                case "Rename":
+                    operation.Rename(Path, Name, NewName, CommonFiles);
+                    break;
+                case "GetDetails":
+                    return (operation.GetDetails(Path, Names));
+                case "Search":
+                    return (operation.Search(Path, ExtensionsAllow, SearchString, CaseSensitive));
+            }
+            return "";
+        }  
+
+{% endhighlight %}
+
+**Step 4:** Add FTP Storage path that is viewed by FileExplorer.
+You will create FTP URL like “ftp://localhost/FileBrowser/” (Port number may vary).
+After that, you need to specify the FTP folder path and AJAX action handler name as shown in below code block.
+
+{% highlight html %}
+
+<ej:FileExplorer ID="fileexplorer" runat="server" IsResponsive="true" Width="100%" AjaxAction="FileExplorerFeatures.aspx/FileActionDefault" Path="ftp://localhost/FileBrowser/" Locale="en-US" FileTypes="*.png, *.gif, *.jpg, *.jpeg, *.doc, *.docx">
+        <AjaxSettings>
+            <Download Url="downloadFile.ashx{0}" />
+            <Upload Url="uploadFiles.ashx{0}" />
+            <GetImage Url="getImages.ashx{0}" />
+        </AjaxSettings>
+  </ej:FileExplorer>
+
+{% endhighlight %}
+
+We have prepared a demo based on above steps, please refer this.
+
+[http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPFileExplorerOperations-1690670324.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPFileExplorerOperations-1690670324.zip#)
+
+
