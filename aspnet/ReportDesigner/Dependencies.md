@@ -32,7 +32,7 @@ And the internal dependencies are tabulated below.
             ej.core.min.js
         </td>
         <td>
-            Must be referred always before using all the {{ '_ASP.NET MVC_'  | markdownify }} controls.
+            Must be referred always before using all the {{ '_ASP.NET_'  | markdownify }} controls.
         </td>
     </tr>
     <tr>
@@ -40,7 +40,7 @@ And the internal dependencies are tabulated below.
             ej.data.js
         </td>
         <td>
-            Used to handle data operation and should be used while binding data to {{ '_ASP.NET MVC_' | markdownify }} controls.
+            Used to handle data operation and should be used while binding data to {{ '_ASP.NET_' | markdownify }} controls.
         </td>
     </tr>
     <tr>
@@ -48,7 +48,7 @@ And the internal dependencies are tabulated below.
             ej.draggable.js
         </td>
         <td>
-          Used to handle drag on drop operation in all {{ '_ASP.NET MVC_' | markdownify }} controls.
+          Used to handle drag on drop operation in all {{ '_ASP.NET_' | markdownify }} controls.
         </td>
     </tr>
     <tr>
@@ -56,7 +56,7 @@ And the internal dependencies are tabulated below.
             ej.scroller.js
         </td>
         <td>
-           Used to handle scrolling operation in all {{ '_ASP.NET MVC_' | markdownify }} controls.
+           Used to handle scrolling operation in all {{ '_ASP.NET_' | markdownify }} controls.
         </td>
     </tr>
     <tr>

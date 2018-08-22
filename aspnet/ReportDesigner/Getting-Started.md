@@ -78,8 +78,6 @@ To create a new Web Forms in the application
 
    > Refer System.Web.Http, System.Web.WebHost, System.Net.Http.WebRequest and System.Net.Http.Formatting assemblies from ASP.NET WebApi NuGet package.
 
-3. Click OK.
-
 #### Add Scripts and Styles
 
 Add the script files and CSS files in the &lt;head&gt; tag of the default.aspx page.
@@ -114,12 +112,7 @@ N> Use the following code example while adding scripts and styles.
    
    ReportDesigner Control in Toolbox
    {:.caption} 
-   
-   ![](Getting-Started_images/Getting-Started_img6.png)
-   
-   ReportDesigner Control in Source Tab Section
-   {:.caption} 
-   
+
 2. Set the desired ReportPath and ServiceUrl to ReportDesigner.
    
    ~~~ html   
@@ -319,7 +312,7 @@ namespace ReportDesignerDemo
 
 ### WebAPI Routing
 
-1. Right-click the project and select Add and select Global.asax file from the listed templates.
+1. Right-click the project and select Add and select Global Application Class file from the listed templates.
 
    ![](Getting-Started_images/Getting-Started_img8.png) 
    
