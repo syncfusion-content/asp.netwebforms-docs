@@ -43,7 +43,7 @@ The following screenshot displays the output of the above code example.
 
 ## Enable Small Ticks
 
-Slider control provides you an option to enable/disable the small ticks present in the scale. By default, when you enable showScale property, small ticks are displayed in the scale. Use the ShowSmallTicks property to disable the small ticks present in the scale. Data type of this property is Boolean.
+Slider control provides you an option to enable/disable the small ticks present in the scale. By default, when you enable showScale property, small ticks are displayed in the scale. Use the ShowSmallTicks property to disable the small ticks present in the scale. Data type of this property is Boolean. The [renderingTicks](https://help.syncfusion.com/api/js/ejslider#events:renderingticks) event will be triggered while creating each slider scale tick.
 
 In an ASPX page, define the Slider control with Default and RangeSliders and set the ShowSmallTicks property to false to disable the small ticks in the Slider. 
 
