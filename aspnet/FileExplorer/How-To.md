@@ -937,6 +937,6 @@ After that, you need to specify the FTP folder path and AJAX action handler name
 
 We have prepared a demo based on above steps, please refer this.
 
-[http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPASPNET1171063995.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPASPNET1171063995.zip#)
+[http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPASPNET-1718686214.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPASPNET-1718686214.zip#)
 
 
