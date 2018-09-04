@@ -12,9 +12,9 @@ The Data adaptor is a mechanism through which the `DataManager` interact with th
 
 In Grid, the adaptor can be specified using the `Adaptor` property of the `DataManager`.
 
-##  Json Adaptor
+##  JSON Adaptor
 
-The Json Adaptor is used when the grid is bound with local datasource. It can be enabled in Grid using `Adaptor` property as ` JsonAdaptor`. The `JsonAdaptor` is the default adaptor used by `DataManager` when bind with datasource controls such as SqlDataSource, ObjectDataSource and also while using datasource such as IEnumerable, DataTable etc.
+The JSON Adaptor is used when the grid is bound with local datasource. It can be enabled in Grid using `Adaptor` property as ` JsonAdaptor`. The `JsonAdaptor` is the default adaptor used by `DataManager` when bind with datasource controls such as SqlDataSource, ObjectDataSource and also while using datasource such as IEnumerable, DataTable etc.
 
 The following code example describes the above behavior.
 
