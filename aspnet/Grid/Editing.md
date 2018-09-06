@@ -1922,7 +1922,8 @@ The following code example describes the above behavior.
       [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
       public static object Insert(Order value)
         {
-           //Insert record in database
+           OrderRepository.Add(value);
+            var data = OrderRepository.GetAllRecords();
         }
 
 {% endhighlight %}
@@ -1944,7 +1945,8 @@ The following code example describes the above behavior.
       [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
       public static object Update(Order value)
         {
-            //Update record in database
+            OrderRepository.Update(value);
+            var data = OrderRepository.GetAllRecords();
         }    
          
 {% endhighlight %}
@@ -1966,7 +1968,8 @@ The following code example describes the above behavior.
       [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
       public static object Remove(Order value)
         {
-           //Remove record in database
+            OrderRepository.Delete(key);
+            var data = OrderRepository.GetAllRecords();
         }    
      
 {% endhighlight %}
@@ -2007,9 +2010,26 @@ The following code example describes the above behavior.
 {% highlight c# %}
       
       
-       public static object CrudUpdate(EditableOrder value, string action)
+       
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public static void CrudUpdate(EditableOrder value ,string action, int key)
         {
-	           //Insert record in database
+            if (action == "update")
+            {
+                OrderRepository.Update(value);
+                var data = OrderRepository.GetAllRecords();               
+            }
+            if (action == "insert")
+            {
+                OrderRepository.Add(value);
+                var data = OrderRepository.GetAllRecords();
+            }
+            if (action == "remove")
+            {
+                OrderRepository.Delete(key);
+                var data = OrderRepository.GetAllRecords();
+            }
         }
 {% endhighlight %}
 
@@ -2051,10 +2071,17 @@ The following code example describes the above behavior.
 
 {% highlight c# %}
 
-     public static object  BatchUpdate(string action, List<Order> added, List<Order> changed, List<Order> deleted)
-		  {
-				//Save the batch changes in database
-	    }
+         [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public static void BatchUpdate(List<EditableOrder> added, List<EditableOrder> changed, List<EditableOrder> deleted, int key)
+        {
+            if (changed != null)
+                OrderRepository.Update(changed);
+            if (deleted != null)
+                OrderRepository.Delete(deleted);
+            if (added != null)
+                OrderRepository.Add(added);
+        }
 
 {% endhighlight %}
 
