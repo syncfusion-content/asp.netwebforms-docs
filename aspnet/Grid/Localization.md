@@ -25,6 +25,10 @@ EmptyRecord</td><td>
 No records to display</td></tr>
 <tr>
 <td>
+PagerInfo</td><td>
+{0} of {1} pages ({2} items)</td></tr>
+<tr>
+<td>
 GroupDropArea</td><td>
 Drag a column header here to group its column</td></tr>
 <tr>
