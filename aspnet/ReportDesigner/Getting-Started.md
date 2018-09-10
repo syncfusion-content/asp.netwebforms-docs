@@ -113,19 +113,17 @@ N> Use the following code example while adding scripts and styles.
    ReportDesigner Control in Toolbox
    {:.caption} 
 
-2. Set the desired ReportPath and ServiceUrl to ReportDesigner.
+2. Set the desired ServiceUrl to ReportDesigner.
    
    ~~~ html   
    <form id="form1" runat="server">
        <div style="height: 650px;width: 950px;min-height:404px;">
-           <ej:ReportDesigner runat="server" ID="designer"  ReportPath="~/App_Data/Sales Dashboard.rdl" ServiceUrl="/api/ReportDesigner">
+           <ej:ReportDesigner runat="server" ID="designer" ServiceUrl="/api/ReportDesigner">
            </ej:ReportDesigner>
        </div>
    </form>   
    ~~~
    
-   N> Add your report files to your application’s App_Data folder.You can obtain sample rdl/rdlc files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Common\Data\ejReportTemplate). {{ site.releaseversion }} is the Essential Studio Release Version.
-	
 ### Add WebAPI controller for ReportDesigner
 
 The ASP.NET ReportDesigner uses WebApi services to process the report file and process the request from control.
