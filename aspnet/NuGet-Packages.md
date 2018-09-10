@@ -21,7 +21,7 @@ You should get the private Syncfusion ASP.NET Web Forms NuGet feed URL to instal
 
 2. Navigate to **WEB (Essential JS1)**, click the Copy URL label under ASP.NET Web Forms platform to copy the Syncfusion ASP.NET Web Forms platform NuGet feed to clipboard or directly use the following URL: 
 
-    [http://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet](http://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet) 
+    [https://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet](https://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet) 
 
     ![](NuGet_Packages_Images/img1.png)
 
@@ -42,7 +42,7 @@ You should get the private Syncfusion ASP.NET Web Forms NuGet feed URL to instal
     **Name:** Name of the package listed in the available package sources.
     
     **Source:** Syncfusion ASP.NET NuGet Feed URL      
-    [http://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet](http://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet).
+    [https://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet](https://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet).
 
 5.	Click the **Update** button to add the name and source details to package sources. 
 
@@ -64,7 +64,7 @@ You should get the private Syncfusion ASP.NET Web Forms NuGet feed URL to instal
    
     **Name:** Enter the name (For e.g., Syncfusion ASP.NET Web Forms Packages).
    
-    **Location:** Enter the following URL – [http://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet](http://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet).
+    **Location:** Enter the following URL – [https://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet](https://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet).
 
     ![](NuGet_Packages_Images/img5.png)
  
@@ -115,7 +115,7 @@ To reference the Syncfusion ASP.NET Web Forms component using the Package Manage
     Install-Package Syncfusion.AspNet
 
     #install specified package in default project with specified Package Source
-    Install-Package Syncfusion.AspNet -Source “http://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet”
+    Install-Package Syncfusion.AspNet -Source “https://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet”
 
     #install specified package in specified project 
     Install-Package Syncfusion.AspNet -ProjectName SyncfusionDemoApplication
@@ -165,10 +165,10 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
 
     ~~~
     #For Windows platform
-    nuget.exe Sources Add –Name “Syncfusion Source” –Source “http://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet”
+    nuget.exe Sources Add –Name “Syncfusion Source” –Source “https://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet”
 
     #For MAC/Linux platform
-    mono nuget.exe Sources Add –Name “Syncfusion Source” –Source “http://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet”
+    mono nuget.exe Sources Add –Name “Syncfusion Source” –Source “https://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet”
     ~~~
 
 ### NuGet installation
@@ -195,7 +195,7 @@ nuget.exe install “Syncfusion.AspNet”
 nuget.exe install “C:\Users\SyncfusionApplication\package.config”
 
 #install specific Syncfusion NuGet package with Syncfusion ASP.NET Web Forms NuGet feed for Windows 
-nuget.exe install “Syncfusion.AspNet” –Source "http://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet”
+nuget.exe install “Syncfusion.AspNet” –Source "https://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet”
 
 #install specific package for Mac and Linux 
 mono nuget.exe install “Syncfusion.AspNet”
@@ -204,7 +204,7 @@ mono nuget.exe install “Syncfusion.AspNet”
 mono nuget.exe install “C:\Users\SyncfusionApplication\package.config”
 
 #install specific Syncfusion NuGet package with Syncfusion ASP.NET Web Forms NuGet feed for Mac and Linux 
-mono nuget.exe install “Syncfusion.AspNet” –Source “http://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet”
+mono nuget.exe install “Syncfusion.AspNet” –Source “https://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet”
 ~~~
 
 ## Upgrading NuGet packages
@@ -259,7 +259,7 @@ To update the installed Syncfusion ASP.NET Web Forms NuGet packages using the Pa
     Update-Package Syncfusion.AspNet
 
     #Update specified package in default project with specified Package Source
-    Update-Package Syncfusion.AspNet –Source “http://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet” 
+    Update-Package Syncfusion.AspNet –Source “https://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet” 
 
     #Update specified package in specified project 
     Update-Package Syncfusion.AspNet -ProjectName SyncfusionDemoApplication
@@ -296,7 +296,7 @@ Using the NuGet CLI, all the NuGet packages in the project can be updated to the
     nuget update “C:\Users\SyncfusionApplication\package.config”
 
     #Update all NuGet packages from specified Packages Source
-    nuget update -Source “http://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet”
+    nuget update -Source “https://nuget.syncfusion.com/nuget_aspnet/nuget/getsyncfusionpackages/aspnet”
     ~~~
 
     N> Update command is not working as expected in Mono (Mac and Linux) and projects using PackageReference format.

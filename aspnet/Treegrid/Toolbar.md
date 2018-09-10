@@ -27,7 +27,7 @@ Using TreeGrid default toolbar items we can perform below operations.
 		   
 * **CollapseAll**- To collapse all the TreeGrid rows.
 		   
-* **PdfExport**- To export TreeGrid in Pdf format.
+* **PdfExport**- To export TreeGrid in PDF format.
 		   
 * **ExcelExport**- To export TreeGrid in Excel format.
 
