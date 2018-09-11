@@ -26,14 +26,9 @@ Project Creation Wizard
 
 To create a new Web Forms in the application
 
-1. Right-Click on the project and select Add
+1. Right-Click on the project and select `Add`.
 
-   ![](Getting-Started_images/Getting-Started_img2.png) 
-   
-   New Item Wizard
-   {:.caption}
-   
-2. Click New Item and select Web Form from the listed templates
+2. Click `New Item` and select `Web Form` from the listed templates
 
    ![](Getting-Started_images/Getting-Started_img3.png) 
    
@@ -47,7 +42,7 @@ To create a new Web Forms in the application
 
 #### Add References
 
-1. In the Solution Explorer, right-click the References folder and then click Add Reference.
+1. In the Solution Explorer, right-click the project `References` folder and then click `Add Reference`.
 
    ![](Getting-Started_images/Getting-Started_img4.png) 
    
@@ -74,7 +69,7 @@ To create a new Web Forms in the application
    * Syncfusion.Gauge.Wpf
    * Syncfusion.SfMaps.Wpf
    
-   > Refer the above assemblies from the installed location, C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies
+   > Refer the above assemblies from the installed location, C:\Program Files (x86)\Syncfusion\Essential Studio\ASP.NET\{{ site.releaseversion }}\Assemblies
 
    > Refer System.Web.Http, System.Web.WebHost, System.Net.Http.WebRequest and System.Net.Http.Formatting assemblies from ASP.NET WebApi NuGet package.
 
@@ -82,7 +77,7 @@ To create a new Web Forms in the application
 
 Add the script files and CSS files in the &lt;head&gt; tag of the default.aspx page.
 
-N> Use the following code example while adding scripts and styles.
+Use the following code example while adding scripts and styles.
 
 {% highlight html %}
 
@@ -113,7 +108,7 @@ N> Use the following code example while adding scripts and styles.
    ReportDesigner Control in Toolbox
    {:.caption} 
 
-2. Set the desired ServiceUrl to ReportDesigner.
+2. Set the desired `ServiceUrl` to ReportDesigner.
    
    ~~~ html   
    <form id="form1" runat="server">
@@ -135,7 +130,7 @@ Adding WebApi Controller
 
 ### Inherit the ReportDesigner IReportController
 
-The ApiController inherits the IReportController and you can add the following code example to its methods definition in order to process the report file. The interface IReportController contains the required actions and helper methods declaration to process the report. The ReportHelper class contains helper methods that helps to process Post/Get request from control and return the response to control.
+The ApiController inherits the `IReportController` and you can add the following code example to its methods definition in order to process the report file. The interface IReportController contains the required actions and helper methods declaration to process the report. The ReportHelper class contains helper methods that helps to process Post/Get request from control and return the response to control.
 
 
 {% highlight C# %}
@@ -310,7 +305,7 @@ namespace ReportDesignerDemo
 
 ### WebAPI Routing
 
-1. Right-click the project and select Add and select Global Application Class file from the listed templates.
+1. Right-click the project and select `Add` and select `Global Application Class file` from the listed templates.
 
    ![](Getting-Started_images/Getting-Started_img8.png) 
    
@@ -351,39 +346,6 @@ namespace ReportDesignerDemo
 Run the sample application and you can see the ReportDesigner on the page as displayed in the following screenshot.
 
 ![](Getting-Started_images/Getting-Started_img9.png)  
-
-# Integrate the component with Report Server
-
-Report Designer can be integrated with the Report Server by using below code snippet. After integrating you can open, browse and edit the reports in the Report Server using Report designer.
-
-Set the Report Server `serviceUrl` and `serviceAuthorizationToken` in the ReportDesigner properties.
-
-{% highlight html %}
-<div id="container" style="position: absolute; height: 100%; width: 100%;"></div>
-<script type="text/javascript">
-   $(function () {
-            var dataValue = "";
-            var apiRequest = new Object();
-            apiRequest.password = "demo";
-            apiRequest.userid = "guest";
-            $.ajax({
-                type: "POST",
-                url: "http://reportserver.syncfusion.com/api/get-user-key",
-                data: apiRequest,
-                success: function (data) {
-                    dataValue = data.Token;
-                    var token = JSON.parse(dataValue);
-                    $("#container").ejReportDesigner(
-                    {
-                       serviceUrl: 'http://reportserver.syncfusion.com/ReportService/api/Designer',
-                       serviceAuthorizationToken: token['token_type'] + ' ' + token['access_token']
-                    });
-                }
-            });
-   });
-</script>
-
-{% endhighlight %}
 
 ## Integrate the component with External Server
 
@@ -489,7 +451,6 @@ namespace EJServices.Controllers
 {% endhighlight %}
 
 >NOTE: 
-You can refer the External Server sample and service from the installed location 
-sample: %public%\Documents\Syncfusion\ASP.NET\{{ site.releaseversion }}\Samples\Web\Dashboard\ReportBuilderTemplate.aspx
-API Service: %public%\Documents\Syncfusion\ASP.NET\{{ site.releaseversion }}\ejservices\Controllers\ReportDesignerController.cs
-External Server: %public%\Documents\Syncfusion\ASP.NET\{{ site.releaseversion }}\ejservices\Controllers\ExternalReportServer.cs
+You can refer the External Server sample and service from the installed location :
+API Service: %public%\Documents\Syncfusion\ASP.NET\{{ site.releaseversion }}\Samples\Web\WebAPI\ReportDesignerController.cs .
+External Server: %public%\Documents\Syncfusion\ASP.NET\{{ site.releaseversion }}\Samples\Web\WebAPI\ExternalReportServer.cs

@@ -22,6 +22,3 @@ Report Designer helps to create and modify the RDL 2008/2008R2 specification sta
 **Report Parameter** --- Parameters are used to specify the data to use in a report, connect related reports together and vary report presentation.
 
 **Expression** --- Expressions are used throughout the report definition to specify or calculate values for parameters, queries, filters, report item properties, group and sort definitions, textbox properties, dynamic page header and footer content and images.
-
-## Create a support incident
-Still, if you are not able to find the information that you are looking for report designer in the self-help resources mentioned above, please [contact us](http://www.syncfusion.com/support/) by creating a support ticket.
