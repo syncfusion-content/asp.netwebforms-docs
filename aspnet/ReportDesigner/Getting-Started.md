@@ -28,6 +28,8 @@ To create a new Web Forms in the application
 
 1. Right-Click on the project and select `Add`.
 
+    ![](Getting-Started_images/Getting-Started_img2.png)
+
 2. Click `New Item` and select `Web Form` from the listed templates
 
    ![](Getting-Started_images/Getting-Started_img3.png) 
@@ -57,7 +59,9 @@ To create a new Web Forms in the application
    * System.Net.Http
    * System.Net.Http.WebRequest
    * System.Net.Http.Formatting
-   * Syncfusion.Compression.Base   
+   * Syncfusion.Compression.Base
+   * Syncfusion.EJ
+   * Syncfusion.EJ.Web
    * Syncfusion.EJ.ReportDesigner
    * Syncfusion.EJ.ReportDesigner
    * Syncfusion.Pdf.Base
@@ -149,7 +153,7 @@ using Syncfusion.EJ.ReportDesigner;
 using System.IO;
 using Reporting.ExternalServer;
 
-namespace ReportDesignerDemo
+namespace ReportDesignerSample
 {
     public class ReportDesignerController : ApiController, Syncfusion.EJ.ReportDesigner.IReportDesignerController
     {
@@ -303,6 +307,11 @@ namespace ReportDesignerDemo
 
 {% endhighlight %}
 
+>NOTE: 
+You can refer the External Server sample and service from the installed location :
+API Service: %public%\Documents\Syncfusion\ASP.NET\{{ site.releaseversion }}\Samples\Web\WebAPI\ReportDesignerController.cs .
+External Server: %public%\Documents\Syncfusion\ASP.NET\{{ site.releaseversion }}\Samples\Web\WebAPI\ExternalReportServer.cs
+
 ### WebAPI Routing
 
 1. Right-click the project and select `Add` and select `Global Application Class file` from the listed templates.
@@ -346,111 +355,3 @@ namespace ReportDesignerDemo
 Run the sample application and you can see the ReportDesigner on the page as displayed in the following screenshot.
 
 ![](Getting-Started_images/Getting-Started_img9.png)  
-
-## Integrate the component with External Server
-
-Report Designer can be integrated with the External Server or Server file browsing by using below code snippet. After integrating you can open, browse and edit the reports in External Server or Application Data using Report designer.
-
-   ~~~ html 
-   <form id="form1" runat="server">
-       <div style="height: 650px;width: 950px;min-height:404px;">
-           <ej:ReportDesigner runat="server" ID="designer" ServiceUrl="/api/ReportDesigner">
-           </ej:ReportDesigner>
-       </div>
-   </form>
-   ~~~
-
-{% highlight C# %}
-
-using Syncfusion.EJ.ReportViewer;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
-using Syncfusion.Reports.EJ;
-using System.Collections;
-using System.Web;
-using Syncfusion.EJ.ReportDesigner;
-using System.IO;
-using Reporting.ExternalServer;
-
-namespace EJServices.Controllers
-{
-    public class ReportDesignerController : ApiController, Syncfusion.EJ.ReportDesigner.IReportDesignerController
-    {
-        public ReportDesignerController()
-        {
-            ExternalServer externalServer = new ExternalServer();
-            externalServer.ReportServerUrl = "Your Path";
-            ReportDesignerHelper.ReportingServer = externalServer;
-        }
-
-        public FileModel GetFile(string filename, bool isOverride)
-        {
-            throw new NotImplementedException();
-        }
-
-        public string GetFilePath(string key)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<FileModel> GetFiles(FileType fileType)
-        {
-            throw new NotImplementedException();
-        }
-
-        [HttpGet]
-        public object GetImage(string key, string image)
-        {
-            throw new NotImplementedException();
-        }
-
-        [HttpPost]
-        public object PostDesignerAction(Dictionary<string, object> jsonResult)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool UploadFile(HttpPostedFile httpPostedFile)
-        {
-            throw new NotImplementedException();
-        }
-
-        [HttpPost]
-        public void UploadReportAction()
-        {
-            throw new NotImplementedException();
-        }
-
-        public object GetResource(string key, string resourcetype, bool isPrint)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void OnInitReportOptions(ReportViewerOptions reportOption)
-        {
-            reportOption.ReportModel.ReportingServer = this.Server;
-            reportOption.ReportModel.ReportServerUrl = this.ServerURL;
-            reportOption.ReportModel.ReportServerCredential = new NetworkCredential("Sample", "Password");
-        }
-
-        public void OnReportLoaded(ReportViewerOptions reportOption)
-        {
-            throw new NotImplementedException();
-        }
-
-        public object PostReportAction(Dictionary<string, object> jsonResult)
-        {
-            throw new NotImplementedException();
-        }
-    }
-}
-
-{% endhighlight %}
-
->NOTE: 
-You can refer the External Server sample and service from the installed location :
-API Service: %public%\Documents\Syncfusion\ASP.NET\{{ site.releaseversion }}\Samples\Web\WebAPI\ReportDesignerController.cs .
-External Server: %public%\Documents\Syncfusion\ASP.NET\{{ site.releaseversion }}\Samples\Web\WebAPI\ExternalReportServer.cs
