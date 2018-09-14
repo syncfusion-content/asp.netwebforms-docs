@@ -155,15 +155,8 @@ namespace ReportDesignerSample
 {
     public class ReportDesignerController : ApiController, Syncfusion.EJ.ReportDesigner.IReportDesignerController
     {
-       internal string ServerURL
-        {
-            get;
-            set;
-        }
-
         public ReportDesignerController()
         {
-            this.ServerURL = "Sample";
         }
 
         [HttpPost]
