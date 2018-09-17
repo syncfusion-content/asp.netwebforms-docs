@@ -61,19 +61,16 @@ Let us create and add a `node` with specific position, size, label and shape.
 
 {% highlight c# %}
 
-    DiagramWebControl.Nodes.Add(CreateNode("Start", 140, 50, 300, 50, FlowShapes.Terminator, "Start"));
+    DiagramWebControl.Nodes.Add(CreateNode("Start", 50, FlowShapes.Terminator, "Start"));
     
-    FlowShape CreateNode(string name, int width, int height, int offsetX, int offsetY, FlowShapes shape, string text)
+    FlowShape CreateNode(string name, int offsetY, FlowShapes shape, string text)
     {
        FlowShape node = new FlowShape()
        {
-           Shape = shape,
-           Name = name,
-           Width = width,
-           Height = height,
-           OffsetX = offsetX,
-           OffsetY = offsetY,
-           Labels = new Collection() { new Label() { Text = text } }
+            Shape = shape,
+            Name = name,
+            OffsetY = offsetY,
+            Labels = new Collection() { new Label() { Text = text } }
        };
        return node;
     }
@@ -96,17 +93,14 @@ Added node will be displayed in diagram as shown below.
        DiagramWebControl.Nodes.Add(CreateNode("Init", 140, 50, 300, 140, FlowShapes.Process, "var i = 0;"));      
        
        //Helper method
-       FlowShape CreateNode(string name, int width, int height, int offsetX, int offsetY, FlowShapes shape, string text)
+       FlowShape CreateNode(string name, int offsetY, FlowShapes shape, string text)
        {
            FlowShape node = new FlowShape()
            {
-               Shape = shape,
-               Name = name,
-               Width = width,
-               Height = height,
-               OffsetX = offsetX,
-               OffsetY = offsetY,
-               Labels = new Collection() { new Label() { Text = text } }
+                Shape = shape,
+                Name = name,
+                OffsetY = offsetY,
+                Labels = new Collection() { new Label() { Text = text } }
            };
            return node;
        }
@@ -122,16 +116,16 @@ Connect these two nodes by adding a `connector` into `Connectors` collection wit
     DiagramWebControl.Connectors.Add(ConnectNodes("connector1", "Start", "Init"));
     
     //Helper method
-    Connector ConnectNodes(string name, string source, string target)
+    Connector ConnectNodes(string name, string source, string target, string text = "", Segment segment = null)
     {
         return new Connector()
         {
             Name = name,
             SourceNode = source,
             TargetNode = target,
+            Labels = new Collection() { new Label() { Text = text } },
             Segments = new Collection() { 
-                new Segment(Segments.Orthogonal)
-            }
+            segment != null? segment: new Segment(Segments.Orthogonal)
         };
     }
 
@@ -163,13 +157,16 @@ Connect these two nodes by adding a `connector` into `Connectors` collection wit
     DiagramWebControl.Connectors.Add(ConnectNodes("connector1", "Start", "Init"));
      
     //Helper methods  
-    Connector ConnectNodes(string name, string source, string target)
+    Connector ConnectNodes(string name, string source, string target, string text = "", Segment segment = null)
     {
         return new Connector()
         {
             Name = name,
             SourceNode = source,
-            TargetNode = target
+            TargetNode = target,
+            Labels = new Collection() { new Label() { Text = text } },
+            Segments = new Collection() { 
+            segment != null? segment: new Segment(Segments.Orthogonal)
         };
     }
 
@@ -192,7 +189,12 @@ Connect these two nodes by adding a `connector` into `Connectors` collection wit
 Similarly we can add required nodes and connectors to form a complete flow diagram.
 
 {% highlight c# %}
-
+    
+    using Syncfusion.JavaScript.DataVisualization.DiagramEnums;
+    using Syncfusion.JavaScript.DataVisualization.Models;
+    using Syncfusion.JavaScript.DataVisualization.Models.Collections;
+    using Syncfusion.JavaScript.DataVisualization.Models.Diagram;
+    
       //Default Settings
     DiagramWebControl.Model.DefaultSettings.Node = new Node()
     {
