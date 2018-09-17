@@ -23,7 +23,8 @@ We can bind datasource in one of the following two ways
 *	Using `DataManager` nested property of Grid Control in View Page and code behind.
 *	Using `DataSource` Grid property in Code behind.
 
-N> To update the dataSource after Grid rendered, use `dataSource` method of Grid. Refer to this [link](https://help.syncfusion.com/aspnet/grid/how-to/set-dynamic-datasource-to-grid) for more information.
+N> 1. To update the dataSource after Grid rendered, use `dataSource` method of Grid. Refer to this [link](https://help.syncfusion.com/aspnet/grid/how-to/set-dynamic-datasource-to-grid) for more information.
+N> 2. DateTime values, retrieved from server-end or database, will be converted based on the local time zone. To avoid the local time zone conversion, refer this knowledge base [link](https://www.syncfusion.com/kb/8613/how-to-convert-dates-to-utc-format).
 
 In the following section, let us see on how to bind various datasources to Grid using `DataSource` and `DataManager` API.
 
