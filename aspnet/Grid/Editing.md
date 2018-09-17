@@ -151,11 +151,11 @@ The following code example describes the above behavior
            <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
            <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
-                <ej:Column Field="CustomerID" EditType="String"/>
-                <ej:Column Field="Freight" EditType="Numeric"><NumericEditOptions DecimalPlaces="2"></NumericEditOptions></ej:Column>
-                <ej:Column Field="ShipCountry" EditType="Dropdown"/>
+                <ej:Column Field="CustomerID" EditType="StringEdit"/>
+                <ej:Column Field="Freight" EditType="NumericEdit"><NumericEditOptions DecimalPlaces="2"></NumericEditOptions></ej:Column>
+                <ej:Column Field="ShipCountry" EditType="DropdownEdit"/>
                 <ej:Column Field="OrderDate" Format="{0:MM/dd/yyyy}" EditType="DatePicker"><DateEditOptions ButtonText="now"/></ej:Column>
-                <ej:column Field="Verified" EditType="Boolean"/>
+                <ej:column Field="Verified" EditType="BooleanEdit"/>
           </Columns> 
           </ej:Grid>                  
          
@@ -348,9 +348,9 @@ The following code example describes the above behavior.
            <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
            <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
-                <ej:Column Field="CustomerID" EditType="String"/>
-                <ej:Column Field="Freight" EditType="Numeric"/>
-                <ej:Column Field="ShipCountry" EditType="Dropdown"/>
+                <ej:Column Field="CustomerID" EditType="StringEdit"/>
+                <ej:Column Field="Freight" EditType="NumericEdit"/>
+                <ej:Column Field="ShipCountry" EditType="DropdownEdit"/>
                 <ej:Column Field="OrderDate"  EditType="DatePicker" Format="{0:MM/dd/yyyy}"/>
            </Columns>
         </ej:Grid >                    
@@ -432,9 +432,9 @@ The following code example describes the above behavior.
            <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
            <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
-                <ej:Column Field="CustomerID" EditType="String"/>
-                <ej:Column Field="Freight" EditType="Numeric"/>
-                <ej:Column Field="ShipCountry" EditType="Dropdown" />
+                <ej:Column Field="CustomerID" EditType="StringEdit"/>
+                <ej:Column Field="Freight" EditType="NumericEdit"/>
+                <ej:Column Field="ShipCountry" EditType="DropdownEdit" />
                 <ej:Column Field="OrderDate" EditType="DatePicker" Format="{0:MM/dd/yyyy}"/>
            </Columns>
          </ej:Grid >                   
@@ -652,9 +652,9 @@ The following code example describes the above behavior.
            <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
            <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
-                <ej:Column Field="CustomerID" EditType="String"/>
-                <ej:Column Field="Freight" EditType="Numeric"/>
-                <ej:Column Field="ShipCountry" EditType="Dropdown"/>
+                <ej:Column Field="CustomerID" EditType="StringEdit"/>
+                <ej:Column Field="Freight" EditType="NumericEdit"/>
+                <ej:Column Field="ShipCountry" EditType="DropdownEdit"/>
                 <ej:Column Field="OrderDate" EditType="DatePicker" Format="{0:MM/dd/yyyy}"/>
            </Columns>
            </ej:Grid >  
@@ -870,9 +870,9 @@ The following code example describes the above behavior.
            <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
            <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true" />
-                <ej:Column Field="CustomerID" EditType="String"/>
-                <ej:Column Field="Freight" EditType="Numeric">
-                <ej:Column Field="ShipCountry" EditType="Dropdown"/>
+                <ej:Column Field="CustomerID" EditType="StringEdit"/>
+                <ej:Column Field="Freight" EditType="NumericEdit">
+                <ej:Column Field="ShipCountry" EditType="DropdownEdit"/>
                 <ej:Column Field="OrderDate" EditType="DatePicker" Format="{0:MM/dd/yyyy}"/>
            </Columns>
            </ej:Grid >  
@@ -958,9 +958,9 @@ The following code example describes the above behavior.
            <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
            <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true" />
-                <ej:Column Field="CustomerID" EditType="String"/>
-                <ej:Column Field="Freight" EditType="Numeric"/>
-                <ej:Column Field="ShipCountry" EditType="Dropdown"/>
+                <ej:Column Field="CustomerID" EditType="StringEdit"/>
+                <ej:Column Field="Freight" EditType="NumericEdit"/>
+                <ej:Column Field="ShipCountry" EditType="DropdownEdit"/>
            </Columns>
          </ej:Grid >             
          
@@ -1175,9 +1175,9 @@ The following code example describes the above behavior.
            <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
              <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true" />
-                <ej:Column Field="CustomerID" EditType="String" />
-                <ej:Column Field="Freight"  EditType="Numeric"/>
-                <ej:Column Field="ShipCountry" EditType="Dropdown"/>
+                <ej:Column Field="CustomerID" EditType="StringEdit" />
+                <ej:Column Field="Freight"  EditType="NumericEdit"/>
+                <ej:Column Field="ShipCountry" EditType="DropdownEdit"/>
                 <ej:Column Field="OrderDate" EditType="DatePicker"  Format="{0:MM/dd/yyyy}"/>
              </Columns>
           </ej:Grid >              
@@ -1260,9 +1260,9 @@ The following code example describes the above behavior.
            <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
             <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true" />
-                <ej:Column Field="CustomerID" EditType="String"/>
-                <ej:Column Field="Freight"  EditType="Numeric"/>
-                <ej:Column Field="ShipCountry" EditType="Dropdown"/>
+                <ej:Column Field="CustomerID" EditType="StringEdit"/>
+                <ej:Column Field="Freight"  EditType="NumericEdit"/>
+                <ej:Column Field="ShipCountry" EditType="DropdownEdit"/>
                 <ej:Column Field="OrderDate" EditType="DatePicker" Format="{0:MM/dd/yyyy}"/>
             </Columns>
           </ej:Grid >                    
@@ -1343,9 +1343,9 @@ The following code example describes the above behavior.
            <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
             <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
-                <ej:Column Field="CustomerID" EditType="String"/>
-                <ej:Column Field="Freight"  EditType="Numeric"/>
-                <ej:Column Field="ShipCountry" EditType="Dropdown"/>
+                <ej:Column Field="CustomerID" EditType="StringEdit"/>
+                <ej:Column Field="Freight"  EditType="NumericEdit"/>
+                <ej:Column Field="ShipCountry" EditType="DropdownEdit"/>
                 <ej:Column Field="OrderDate"  EditType="DatePicker"  Format="{0:MM/dd/yyyy}"/>
             </Columns>
            </ej:Grid >   
@@ -1517,20 +1517,20 @@ The following code example describes the above behavior.
                        <ej:KeyValue Key="number" Value="true"/>
                    </ValidationRule>
                 </ej:Column>
-                <ej:Column Field="CustomerID"  EditType="String" >
+                <ej:Column Field="CustomerID"  EditType="StringEdit" >
                     <ValidationRule>
                        <ej:KeyValue Key="required" Value="true" />
                        <ej:KeyValue Key="minlength" Value="true"/>
                     </ValidationRule>
                 </ej:Column>
-                <ej:Column Field="ShipCity" EditType="Dropdown"/>
-                <ej:Column Field="Freight" EditType="Numeric">
+                <ej:Column Field="ShipCity" EditType="DropdownEdit"/>
+                <ej:Column Field="Freight" EditType="NumericEdit">
                     <ValidationRule>
                       <ej:KeyValue Key="required" Value="true" />
                       <ej:KeyValue Key="range" Value="[0,1000]" />
                     </ValidationRule>
                 </ej:Column>
-                <ej:Column Field="ShipCountry" EditType="Dropdown"/>
+                <ej:Column Field="ShipCountry" EditType="DropdownEdit"/>
             </Columns> 
             </ej:Grid>                 
          
@@ -1613,18 +1613,18 @@ The following code example describes the above behavior.
            <ToolbarSettings ShowToolbar="true" ToolbarItems="add,edit,delete,update,cancel"></ToolbarSettings>
            <Columns>
                 <ej:Column Field="OrderID" IsPrimaryKey="true" />
-                <ej:Column Field="CustomerID" EditType="String" >
+                <ej:Column Field="CustomerID" EditType="StringEdit" >
                    <ValidationRule>
                      <ej:KeyValue Key="customRegex" Value="5" />
                    </ValidationRule>
                 </ej:Column>
-                <ej:Column Field="Freight" EditType="Numeric">
+                <ej:Column Field="Freight" EditType="NumericEdit">
                    <ValidationRule>
                      <ej:KeyValue Key="customCompare" Value="[0,1000]"/>
                    </ValidationRule>
                 </ej:Column>
-                <ej:Column Field="ShipCity" EditType="Dropdown" />
-                <ej:Column Field="ShipCountry" EditType="Dropdown"/>
+                <ej:Column Field="ShipCity" EditType="DropdownEdit" />
+                <ej:Column Field="ShipCountry" EditType="DropdownEdit"/>
            </Columns> 
            </ej:Grid>                 
          
@@ -1735,7 +1735,7 @@ The following code example describes the above behavior.
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
                 <ej:Column Field="CustomerID" />
                 <ej:Column Field="EmployeeID"/>
-                <ej:Column Field="Freight" EditType="Numeric"><NumericEditOptions DecimalPlaces="2"></NumericEditOptions></ej:Column>
+                <ej:Column Field="Freight" EditType="NumericEdit"><NumericEditOptions DecimalPlaces="2"></NumericEditOptions></ej:Column>
                 <ej:Column Field="ShipName" />
                 <ej:Column Field="ShipCountry"/>
             </Columns>
@@ -1999,7 +1999,7 @@ The following code example describes the above behavior.
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
                 <ej:Column Field="CustomerID" />
                 <ej:Column Field="EmployeeID"/>
-                <ej:Column Field="Freight"  EditType="Numeric"><NumericEditOptions DecimalPlaces="2"></NumericEditOptions></ej:Column>
+                <ej:Column Field="Freight"  EditType="NumericEdit"><NumericEditOptions DecimalPlaces="2"></NumericEditOptions></ej:Column>
                 <ej:Column Field="ShipName" />
                 <ej:Column Field="ShipCountry"/>
             </Columns>
@@ -2061,7 +2061,7 @@ The following code example describes the above behavior.
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
                 <ej:Column Field="CustomerID"/>
                 <ej:Column Field="EmployeeID"/>
-                <ej:Column Field="Freight" EditType="Numeric"><NumericEditOptions DecimalPlaces="2"></NumericEditOptions></ej:Column>
+                <ej:Column Field="Freight" EditType="NumericEdit"><NumericEditOptions DecimalPlaces="2"></NumericEditOptions></ej:Column>
                 <ej:Column Field="ShipName" />
                 <ej:Column Field="ShipCountry"/>
             </Columns>
@@ -2109,7 +2109,7 @@ The following code example describes the above behavior.
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
                 <ej:Column Field="CustomerID" />
                 <ej:Column Field="ShipCity"/>
-                <ej:Column Field="Freight" EditType="Numeric"><NumericEditOptions DecimalPlaces="2"></NumericEditOptions></ej:Column>
+                <ej:Column Field="Freight" EditType="NumericEdit"><NumericEditOptions DecimalPlaces="2"></NumericEditOptions></ej:Column>
                 <ej:Column Field="ShipCountry"/>
             </Columns>
          </ej:Grid >                      
@@ -2193,7 +2193,7 @@ The following code example describes the above behavior.
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
                 <ej:Column Field="CustomerID" />
                 <ej:Column Field="ShipCity"/>
-                <ej:Column Field="Freight" EditType="Numeric"><NumericEditOptions DecimalPlaces="2"></NumericEditOptions></ej:Column>
+                <ej:Column Field="Freight" EditType="NumericEdit"><NumericEditOptions DecimalPlaces="2"></NumericEditOptions></ej:Column>
                 <ej:Column Field="ShipCountry"/>
             </Columns>
          </ej:Grid >                   
@@ -2278,7 +2278,7 @@ The following code example describes the above behavior.
                 <ej:Column Field="OrderID" IsPrimaryKey="true"/>
                 <ej:Column Field="CustomerID" />
                 <ej:Column Field="ShipCity" DefaultValue="Bern" />
-                <ej:Column Field="Freight" EditType="Numeric" DefaultValue="45" />
+                <ej:Column Field="Freight" EditType="NumericEdit" DefaultValue="45" />
                 <ej:Column Field="ShipCountry" DefaultValue="Brazil" />
            </Columns>                   
          </ej:Grid>
