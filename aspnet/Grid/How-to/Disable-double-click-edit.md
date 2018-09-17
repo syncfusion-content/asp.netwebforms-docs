@@ -33,7 +33,7 @@ The AllowEditOnDblClick property can be set as True to enable editing the record
 
                 <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="70" EditType=" Numeric" />
 
-                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" EditType="Dropdown" />
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="100" EditType="DropdownEdit" />
 
 
 
