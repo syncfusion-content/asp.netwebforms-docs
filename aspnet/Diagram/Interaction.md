@@ -185,7 +185,7 @@ Diagram provides support to drop a node/connector over another node/connector. D
         Name = "canvas",
         OffsetX = 400,
         OffsetY = 400,
-        //to enable the allow drop on the group node...
+        //to enable allow drop contraints for the group node...
         Constraints = NodeConstraints.Default | NodeConstraints.AllowDrop
     };
     group.Children.Add(node1);
@@ -194,7 +194,7 @@ Diagram provides support to drop a node/connector over another node/connector. D
 {% endhighlight %}
 {% endtabs %}
 
-The following code examples illustrates how to insert a child to a group interactively.
+The following code examples illustrates how to insert a child to a group while dropping a node onto a group interactively.
 
 {% highlight aspx-cs %}
      <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px" OnClientDrop="ondrop">

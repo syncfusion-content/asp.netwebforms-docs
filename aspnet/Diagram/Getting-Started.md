@@ -50,7 +50,16 @@ This section explains briefly you on how to create a Diagram in your application
 
 ### Create and add Node
 
-Let us create and add a `node` with specific position, size, label and shape.
+Let us create and add a `node` with specific position, size, label and shape. 
+
+We need to add below namespaces for using diagram instances in aspx-cs file.
+
+   * using Syncfusion.JavaScript.DataVisualization.DiagramEnums;
+   * using Syncfusion.JavaScript.DataVisualization.Models;
+   * using Syncfusion.JavaScript.DataVisualization.Models.Collections;
+   * using Syncfusion.JavaScript.DataVisualization.Models.Diagram;
+
+The following code example to create and add nodes into the diagram.
 
 {% tabs %}
 {% highlight aspx-cs %}
@@ -79,6 +88,19 @@ Let us create and add a `node` with specific position, size, label and shape.
 
 N> `Labels` property is an array, which indicates that more than one label can be added to a node.
 
+* Default values for all nodes can be set using default settings. For example if all nodes have same `Width` and `Height`, we can move such properties into `DefaultSettings by using below code example.
+
+{% highlight c# %}
+    //Default Settings
+    DiagramWebControl.Model.DefaultSettings.Node = new Node()
+    {
+        Type = Shapes.Flow,
+        Width = 140,
+        Height = 50,
+        OffsetX = 300
+    };
+{% endhighlight %}
+
 Added node will be displayed in diagram as shown below.
 
 ![](/aspnet/Diagram/Getting-Started_images/Getting-Started_img2.png)
@@ -103,8 +125,7 @@ Added node will be displayed in diagram as shown below.
                 Labels = new Collection() { new Label() { Text = text } }
            };
            return node;
-       }
-    
+       }   
     
 {% endhighlight %}
 
@@ -135,53 +156,15 @@ Connect these two nodes by adding a `connector` into `Connectors` collection wit
 
 ![](/aspnet/Diagram/Getting-Started_images/Getting-Started_img3.png)
 
-* Default values for all nodes and connectors can be set using default settings. For example if all nodes have same `Width` and `Height`, we can move such properties into `DefaultSettings`. Above code can be rewritten as shown below.
+* Default values for all connectors can be set using default settings. For example if all nodes have same 'Labels', we can move such properties into `DefaultSettings`by using below below code example.
 
 {% highlight c# %}
     //Default Settings
-    DiagramWebControl.Model.DefaultSettings.Node = new Node()
-    {
-        Type = Shapes.Flow,
-        Width = 140,
-        Height = 50,
-        OffsetX = 300
-    };
     DiagramWebControl.Model.DefaultSettings.Connector = new Connector()
     {
         Labels = new Collection() { new Label() { FillColor = "white" } },
         Segments = new Collection() { new Segment(Segments.Orthogonal) }
     };
-
-    DiagramWebControl.Nodes.Add(CreateNode("Start", 50, FlowShapes.Terminator, "Start"));
-    DiagramWebControl.Nodes.Add(CreateNode("Init", 140, FlowShapes.Process, "var i = 0;"));
-    DiagramWebControl.Connectors.Add(ConnectNodes("connector1", "Start", "Init"));
-     
-    //Helper methods  
-    Connector ConnectNodes(string name, string source, string target, string text = "", Segment segment = null)
-    {
-        return new Connector()
-        {
-            Name = name,
-            SourceNode = source,
-            TargetNode = target,
-            Labels = new Collection() { new Label() { Text = text } },
-            Segments = new Collection() { 
-            segment != null? segment: new Segment(Segments.Orthogonal)
-        };
-    }
-
-    FlowShape CreateNode(string name, int offsetY, FlowShapes shape, string text)
-    {
-        FlowShape node = new FlowShape()
-        {
-            Shape = shape,
-            Name = name,
-            OffsetY = offsetY,
-            Labels = new Collection() { new Label() { Text = text } }
-        };
-        return node;
-    }
-
 {% endhighlight %}
 
 ### Complete flow diagram
