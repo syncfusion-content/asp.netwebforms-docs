@@ -201,14 +201,14 @@ In your application’s web.config file, add the following assembly information 
 
 1.	Add the following ReportDesigner code into the body section of the Default.aspx file, as shown in the image following it.
 
-    {% highlight html %}
-    
-    <form id="form1" runat="server">
-        <div style="height: 650px;width: 950px;">
-            <ej:ReportDesigner ID="designer" runat="server"></ej:ReportDesigner>
-        </div>
-    </form>   
-    {% endhighlight %}
+        {% highlight html %}
+        
+        <form id="form1" runat="server">
+            <div style="height: 650px;width: 950px;">
+                <ej:ReportDesigner ID="designer" runat="server"></ej:ReportDesigner>
+            </div>
+        </form>   
+        {% endhighlight %}
 
 2.	Also register the required assemblies within the Default.aspx page at the top where you are using the control as shown in the following.
 
