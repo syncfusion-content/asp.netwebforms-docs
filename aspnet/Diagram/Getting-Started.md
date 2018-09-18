@@ -48,9 +48,21 @@ This section explains briefly you on how to create a Diagram in your application
 
 ![](/aspnet/Diagram/Getting-Started_images/Getting-Started_img1.png)
 
+
+#### Adding the List of Namespaces
+
+The following list of namespaces needs to be added on the top of the aspx code file for creating the diagram objects such as nodes and connectors.  
+
+    * using Syncfusion.JavaScript.DataVisualization.DiagramEnums;
+    * using Syncfusion.JavaScript.DataVisualization.Models;
+    * using Syncfusion.JavaScript.DataVisualization.Models.Collections;
+    * using Syncfusion.JavaScript.DataVisualization.Models.Diagram;
+
 ### Create and add Node
 
-Let us create and add a `node` with specific position, size, label and shape.
+Let us create and add a `node` with specific position, size, label and shape. 
+
+The following code example to create and add nodes into the diagram.
 
 {% tabs %}
 {% highlight aspx-cs %}
@@ -61,19 +73,16 @@ Let us create and add a `node` with specific position, size, label and shape.
 
 {% highlight c# %}
 
-    DiagramWebControl.Nodes.Add(CreateNode("Start", 140, 50, 300, 50, FlowShapes.Terminator, "Start"));
+    DiagramWebControl.Nodes.Add(CreateNode("Start", 50, FlowShapes.Terminator, "Start"));
     
-    FlowShape CreateNode(string name, int width, int height, int offsetX, int offsetY, FlowShapes shape, string text)
+    FlowShape CreateNode(string name, int offsetY, FlowShapes shape, string text)
     {
        FlowShape node = new FlowShape()
        {
-           Shape = shape,
-           Name = name,
-           Width = width,
-           Height = height,
-           OffsetX = offsetX,
-           OffsetY = offsetY,
-           Labels = new Collection() { new Label() { Text = text } }
+            Shape = shape,
+            Name = name,
+            OffsetY = offsetY,
+            Labels = new Collection() { new Label() { Text = text } }
        };
        return node;
     }
@@ -81,6 +90,19 @@ Let us create and add a `node` with specific position, size, label and shape.
 {% endtabs %}
 
 N> `Labels` property is an array, which indicates that more than one label can be added to a node.
+
+* Default values for all nodes can be set using default settings. For example if all nodes have same `Width` and `Height`, we can move such properties into `DefaultSettings.Node` by using below code example.
+
+{% highlight c# %}
+    //Default Settings
+    DiagramWebControl.Model.DefaultSettings.Node = new Node()
+    {
+        Type = Shapes.Flow,
+        Width = 140,
+        Height = 50,
+        OffsetX = 300
+    };
+{% endhighlight %}
 
 Added node will be displayed in diagram as shown below.
 
@@ -96,21 +118,17 @@ Added node will be displayed in diagram as shown below.
        DiagramWebControl.Nodes.Add(CreateNode("Init", 140, 50, 300, 140, FlowShapes.Process, "var i = 0;"));      
        
        //Helper method
-       FlowShape CreateNode(string name, int width, int height, int offsetX, int offsetY, FlowShapes shape, string text)
+       FlowShape CreateNode(string name, int offsetY, FlowShapes shape, string text)
        {
            FlowShape node = new FlowShape()
            {
-               Shape = shape,
-               Name = name,
-               Width = width,
-               Height = height,
-               OffsetX = offsetX,
-               OffsetY = offsetY,
-               Labels = new Collection() { new Label() { Text = text } }
+                Shape = shape,
+                Name = name,
+                OffsetY = offsetY,
+                Labels = new Collection() { new Label() { Text = text } }
            };
            return node;
-       }
-    
+       }   
     
 {% endhighlight %}
 
@@ -122,16 +140,16 @@ Connect these two nodes by adding a `connector` into `Connectors` collection wit
     DiagramWebControl.Connectors.Add(ConnectNodes("connector1", "Start", "Init"));
     
     //Helper method
-    Connector ConnectNodes(string name, string source, string target)
+    Connector ConnectNodes(string name, string source, string target, string text = "", Segment segment = null)
     {
         return new Connector()
         {
             Name = name,
             SourceNode = source,
             TargetNode = target,
+            Labels = new Collection() { new Label() { Text = text } },
             Segments = new Collection() { 
-                new Segment(Segments.Orthogonal)
-            }
+            segment != null? segment: new Segment(Segments.Orthogonal)
         };
     }
 
@@ -141,50 +159,15 @@ Connect these two nodes by adding a `connector` into `Connectors` collection wit
 
 ![](/aspnet/Diagram/Getting-Started_images/Getting-Started_img3.png)
 
-* Default values for all nodes and connectors can be set using default settings. For example if all nodes have same `Width` and `Height`, we can move such properties into `DefaultSettings`. Above code can be rewritten as shown below.
+* Default values for all connectors can be set using default settings. For example if all connectors have same 'Labels' appearance, we can move such properties into `DefaultSettings.Connector` by using below below code example.
 
 {% highlight c# %}
     //Default Settings
-    DiagramWebControl.Model.DefaultSettings.Node = new Node()
-    {
-        Type = Shapes.Flow,
-        Width = 140,
-        Height = 50,
-        OffsetX = 300
-    };
     DiagramWebControl.Model.DefaultSettings.Connector = new Connector()
     {
         Labels = new Collection() { new Label() { FillColor = "white" } },
         Segments = new Collection() { new Segment(Segments.Orthogonal) }
     };
-
-    DiagramWebControl.Nodes.Add(CreateNode("Start", 50, FlowShapes.Terminator, "Start"));
-    DiagramWebControl.Nodes.Add(CreateNode("Init", 140, FlowShapes.Process, "var i = 0;"));
-    DiagramWebControl.Connectors.Add(ConnectNodes("connector1", "Start", "Init"));
-     
-    //Helper methods  
-    Connector ConnectNodes(string name, string source, string target)
-    {
-        return new Connector()
-        {
-            Name = name,
-            SourceNode = source,
-            TargetNode = target
-        };
-    }
-
-    FlowShape CreateNode(string name, int offsetY, FlowShapes shape, string text)
-    {
-        FlowShape node = new FlowShape()
-        {
-            Shape = shape,
-            Name = name,
-            OffsetY = offsetY,
-            Labels = new Collection() { new Label() { Text = text } }
-        };
-        return node;
-    }
-
 {% endhighlight %}
 
 ### Complete flow diagram
@@ -192,8 +175,8 @@ Connect these two nodes by adding a `connector` into `Connectors` collection wit
 Similarly we can add required nodes and connectors to form a complete flow diagram.
 
 {% highlight c# %}
-
-      //Default Settings
+    
+    //Default Settings
     DiagramWebControl.Model.DefaultSettings.Node = new Node()
     {
         Type = Shapes.Flow,
