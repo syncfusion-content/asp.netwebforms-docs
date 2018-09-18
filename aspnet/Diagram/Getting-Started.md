@@ -48,16 +48,19 @@ This section explains briefly you on how to create a Diagram in your application
 
 ![](/aspnet/Diagram/Getting-Started_images/Getting-Started_img1.png)
 
+
+#### Adding the List of Namespaces
+
+The following list of namespaces needs to be added on the top of the aspx code file for creating the diagram objects such as nodes and connectors.  
+
+    * using Syncfusion.JavaScript.DataVisualization.DiagramEnums;
+    * using Syncfusion.JavaScript.DataVisualization.Models;
+    * using Syncfusion.JavaScript.DataVisualization.Models.Collections;
+    * using Syncfusion.JavaScript.DataVisualization.Models.Diagram;
+
 ### Create and add Node
 
 Let us create and add a `node` with specific position, size, label and shape. 
-
-We need to add below namespaces for using diagram instances in aspx-cs file.
-
-   * using Syncfusion.JavaScript.DataVisualization.DiagramEnums;
-   * using Syncfusion.JavaScript.DataVisualization.Models;
-   * using Syncfusion.JavaScript.DataVisualization.Models.Collections;
-   * using Syncfusion.JavaScript.DataVisualization.Models.Diagram;
 
 The following code example to create and add nodes into the diagram.
 
@@ -88,7 +91,7 @@ The following code example to create and add nodes into the diagram.
 
 N> `Labels` property is an array, which indicates that more than one label can be added to a node.
 
-* Default values for all nodes can be set using default settings. For example if all nodes have same `Width` and `Height`, we can move such properties into `DefaultSettings by using below code example.
+* Default values for all nodes can be set using default settings. For example if all nodes have same `Width` and `Height`, we can move such properties into `DefaultSettings.Node` by using below code example.
 
 {% highlight c# %}
     //Default Settings
@@ -156,7 +159,7 @@ Connect these two nodes by adding a `connector` into `Connectors` collection wit
 
 ![](/aspnet/Diagram/Getting-Started_images/Getting-Started_img3.png)
 
-* Default values for all connectors can be set using default settings. For example if all nodes have same 'Labels', we can move such properties into `DefaultSettings`by using below below code example.
+* Default values for all connectors can be set using default settings. For example if all connectors have same 'Labels' appearance, we can move such properties into `DefaultSettings.Connector` by using below below code example.
 
 {% highlight c# %}
     //Default Settings
@@ -173,12 +176,7 @@ Similarly we can add required nodes and connectors to form a complete flow diagr
 
 {% highlight c# %}
     
-    using Syncfusion.JavaScript.DataVisualization.DiagramEnums;
-    using Syncfusion.JavaScript.DataVisualization.Models;
-    using Syncfusion.JavaScript.DataVisualization.Models.Collections;
-    using Syncfusion.JavaScript.DataVisualization.Models.Diagram;
-    
-      //Default Settings
+    //Default Settings
     DiagramWebControl.Model.DefaultSettings.Node = new Node()
     {
         Type = Shapes.Flow,
