@@ -883,7 +883,7 @@ In this FTP application, we have provided “FTPFileOperationController” file,
 
 **Step 2:** Include **“FTPFileExplorerOperations”** file in that application. This file contains built-in file handling methods which helps to connect our FileExplorer with FTP service.
 
-[http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPFileExplorerOperations-1690670324.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPFileExplorerOperations-1690670324.zip#)
+[http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPFileExplorerOperations901960089.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPFileExplorerOperations901960089.zip#)
 
 **Step 3:** Add **“FileExplorerController.cs”** file in the controller part of FTP project.
 
@@ -937,6 +937,6 @@ After that, you need to specify the FTP folder path and AJAX action handler name
 
 We have prepared a demo based on above steps, please refer this.
 
-[http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPASPNET-1718686214.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPASPNET-1718686214.zip#)
+[http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPASPNET-1612924042.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPASPNET-1612924042.zip#)
 
 
