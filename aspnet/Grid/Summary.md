@@ -749,11 +749,11 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 
-<ej:Grid ID="OrdersGrid" runat="server" AllowGrouping="true" ShowSummary="true">
+<ej:Grid ID="OrdersGrid" runat="server" ShowSummary="true">
     
     <SummaryRows>
 
-        <ej:SummaryRow ShowCaptionSummary="true" ShowTotalSummary="false">
+        <ej:SummaryRow Title="Average">
 
           <SummaryColumn>
 
