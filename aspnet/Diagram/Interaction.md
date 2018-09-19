@@ -145,7 +145,7 @@ Source and target points of the selected connectors are represented with two han
 ## Drag and drop nodes over other elements
 
 Diagram provides support to drop a node/connector over another node/connector. Drop event is raised to notify that an element is dropped over another one and it is disabled by default. It can enabled with the `Constraints` property. The following code illustrates how to enable **dropping**.
-
+{% tabs %}
 {% highlight aspx-cs %}
 
     <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px" OnClientDrop="ondrop">
@@ -161,8 +161,40 @@ Diagram provides support to drop a node/connector over another node/connector. D
     </ej:Diagram>
 
 {% endhighlight %}
+{% highlight c# %}
+    BasicShape node1 = new BasicShape()
+    {
+        Name = "node1",
+        FillColor = "darkCyan",
+        Width = 100,
+        Height = 100,
+        OffsetX = 100,
+        OffsetY = 100
+    };
+    BasicShape node2 = new BasicShape()
+    {
+        Name = "node2",
+        FillColor = "white",
+        Width = 100,
+        Height = 100,
+        OffsetX = 150,
+        OffsetY = 150
+    };
+    Group group = new Group()
+    {
+        Name = "canvas",
+        OffsetX = 400,
+        OffsetY = 400,
+        //to enable allow drop contraints for the group node...
+        Constraints = NodeConstraints.Default | NodeConstraints.AllowDrop
+    };
+    group.Children.Add(node1);
+    group.Children.Add(node2);
+    DiagramWebControl.Model.Nodes.Add(group);
+{% endhighlight %}
+{% endtabs %}
 
-The following code examples illustrates how to insert a child to a group interactively.
+The following code examples illustrates how to insert a child to a group while dropping a node onto a group interactively.
 
 {% highlight aspx-cs %}
      <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px" OnClientDrop="ondrop">

@@ -372,7 +372,7 @@ The `Task` property of node allows you to define the `Type` of task such as send
             <Nodes>
                 <%-- Defines the FlowShape shape type, type of the Event as Path , Event and Task  --%>
                 <ej:BPMNNode OffsetX="100" OffsetY="100" Height="70" Width="100"
-                    BorderWidth="2" BorderColor="black" Shape="Event" Activity="Task">
+                    BorderWidth="2" BorderColor="black" Shape="Activity" Activity="Task">
                     <%-- Defines the type of the Task  --%>
                     <Task Type="Send"></Task>
                 </ej:BPMNNode>
