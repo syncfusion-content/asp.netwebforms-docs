@@ -760,6 +760,16 @@ The following code example describes the above behavior.
 
 {% endhighlight %}
 
+{% highlight js %}
+<script type="text/javascript">
+    function currency() {
+            var rs = 100000;
+            var value = 0.017;
+            return (rs * value);
+    }
+</script>
+{% endhighlight  %}
+
 {% highlight c# %}
 
 public partial class CustomSummaryExporting : System.Web.UI.Page
