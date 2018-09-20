@@ -192,8 +192,7 @@ The following code examples illustrates how to create a connection between the n
             //Element that is being dropped
             var node = args.element;
             //Element over which another element is dropped
-            var target = args.target;            
-            
+            var target = args.target; 
             
             if (diagram.getObjectType(target) == "node") {         
                 node.offsetX = target.offsetX + 200;
