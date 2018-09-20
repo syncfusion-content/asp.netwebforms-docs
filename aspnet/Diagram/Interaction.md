@@ -185,12 +185,15 @@ The following code examples illustrates how to create a connection between the n
 	 
   	 function ondrop(args) {
     	 	if (args.target && args.element) {
+            //Cancelling the drop event to prevent to dropping of node in diagram
             args.cancel = true;
             var diagram = $("#DiagramContent").ejDiagram("instance");
             //Element that is being dropped
             var node = args.element;
             //Element over which another element is dropped
-            var target = args.target;
+            var target = args.target;            
+            
+            //To check whether a target element is node and estalish a connection between source and target node...
             if (diagram.getObjectType(target) == "node") {         
                 node.offsetX = target.offsetX + 200;
                 node.width = 100;
